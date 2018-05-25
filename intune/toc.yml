@@ -488,6 +488,30 @@
           href: conditional-access-assign-jamf.md
     - name: 장치 데이터 보호
       items:
+        - name: 개인 정보 및 개인 데이터
+          href: privacy-personal-data.md
+          items:
+            - name: 데이터 수집
+              href: privacy-data-collect.md
+            - name: 데이터 저장소 및 처리
+              href: privacy-data-store-process.md
+            - name: 데이터 보안 및 공유
+              href: privacy-data-secure-share.md
+              items:
+                - name: Apple이 Intune에 보내는 데이터
+                  href: data-apple-sends-to-intune.md
+                - name: Google이 Intune에 보내는 데이터
+                  href: data-google-sends-to-intune.md
+                - name: Intune이 Apple에 보내는 데이터
+                  href: data-intune-sends-to-apple.md
+                - name: Intune이 Google에 보내는 데이터
+                  href: data-intune-sends-to-google.md
+                - name: Jamf Pro에서 Intune으로 공유된 정보
+                  href: conditional-access-integrate-jamf.md
+            - name: 개인 데이터 보기 및 수정
+              href: privacy-data-view-correct.md
+            - name: '감사, 내보내기, 삭제'
+              href: privacy-data-audit-export-delete.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
