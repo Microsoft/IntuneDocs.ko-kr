@@ -28,11 +28,11 @@ Intune for Education은 학교 데이터를 보호하면서 교사와 학생의 
 
 Intune for Education에서는 Intune에서 제공되는 전체 MDM 기능을 사용하여 Windows 10 장치를 관리할 수 있습니다. Intune에서는 iOS 및 Android와 같은 추가 플랫폼도 관리할 수 있고 같은 콘솔에서 전체 정책 집합에 액세스할 수 있습니다.
 
-Intune for Education은 단독으로 사용하거나 [Intune에서 제공되는 전체 장치 관리 환경](introduction-intune.md)과 함께 사용할 수 있습니다. [Microsoft 교육](https://microsoft.com/education)에서 제공되는 나머지 도구와 함께 사용할 수도 있으므로 Intune for Education을 Microsoft에서 제공되는 다른 유용한 교육 도구와 함께 손쉽게 사용할 수 있습니다.
+Intune for Education은 단독으로 사용되거나 [Intune에서 제공되는 전체 장치 관리 환경](introduction-intune.md)과 함께 사용할 수 있습니다. [Microsoft Education](https://microsoft.com/education)에서 제공되는 나머지 도구와 함께 사용할 수도 있으므로 Intune for Education을 Microsoft에서 제공하는 다른 유용한 교육 도구와 함께 손쉽게 사용할 수 있습니다.
 
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
-Intune 및 Intune for Education에서 둘 다 다음을 수행할 수 있습니다.
+Intune 및 Intune for Education에서 다음을 수행할 수 있습니다.
 * 직원과 학생이 데이터에 액세스하는 데 사용하는 모바일 장치를 관리합니다.
 * 사용자가 매일 액세스하는 모바일 앱을 관리합니다.
 * 사용자가 조직 정보에 액세스하여 이를 공유하는 방법을 제어할 수 있게 하여 조직 정보를 보호합니다.
