@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 643ac4c96297ffc24d9460546fe183d2a1316654
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6262fee0051827794c49ebe10361b1a3b280b140
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34470800"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout의 통합 문제 해결
 
@@ -36,7 +37,7 @@ Lookout MTP를 통해, 구성된 Azure AD 그룹의 사용자만 서비스에 �
 
 * 메일: enterprisesupport@lookout.com
 * [MTP 콘솔](http://aad.lookout.com)에 로그인한 다음 **지원** 모듈로 이동합니다.
-* <https://enterprise.support.lookout.com/hc/requests>로 이동하고 지원을 요청합니다.
+* <<https://enterprise.support.lookout.com/hc/requests>>로 이동하고 지원을 요청합니다.
 
 ## <a name="unable-to-sign-in"></a>로그인할 수 없음
 Azure AD 전역 관리자가 초기 Lookout 설정을 수락하지 않은 경우 다음 오류가 표시됩니다.
@@ -81,7 +82,7 @@ Lookout MTP 콘솔에서, 활성 장치에 장치 ID가 없으면 장치 사용�
 새 사용자가 Lookout MTP 등록 그룹에 속해 있는 경우 Azure AD에서 장치를 새 사용자에 연결하면 장치가 표시됩니다.
 
 ## <a name="compliance-remediation-workflows"></a>규정 준수 수정 워크플로
-- [Android 장치에 Lookout for Work를 설치하라는 메시지가 표시됨]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+- [Android 장치에 Lookout for Work를 설치하라는 메시지가 표시됨](http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 - [Lookout for Work가 Android 장치에서 발견한 위협을 해결해야 함](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [iOS 장치에서 Lookout for Work가 발견한 위협을 해결해야 함](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
