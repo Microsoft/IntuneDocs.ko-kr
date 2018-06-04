@@ -73,7 +73,7 @@ Get-AppxPackage 구문은 다음과 같습니다.
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>컴퓨터에 설치되어 있지 않은 앱에 대한 PFN 찾기
 
-1.  https://www.microsoft.com/store/apps으로 이동합니다.
+1.  https://www.microsoft.com/store/apps 으로 이동합니다.
 2.  검색 표시줄에 앱의 이름을 입력합니다. 이 예제에서는 OneNote를 검색합니다.
 3.  앱에 대한 링크를 선택합니다. URL은 끝부분에 일련의 문자가 있다는 점에 유의하세요. 이 예제에서 URL은 `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`과 같습니다.
 4.  다른 탭에서 URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`를 붙여 넣습니다. 여기에서 `<app id>`를 https://www.microsoft.com/store/apps에서 가져온 앱 ID 즉, 3단계에서 보았듯이 URL의 끝부분에 있는 일련의 문자로 바꿉니다. OneNote 예제에서는 `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`를 붙여넣습니다.
