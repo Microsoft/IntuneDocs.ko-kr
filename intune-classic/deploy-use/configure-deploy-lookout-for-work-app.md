@@ -14,11 +14,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b08ac6049bc7bbbf5c2203f156a6c03b6fc7a51
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d997e9db7aa2af4e598d47ab3c9a678e889632e8
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34569394"
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Lookout for Work 앱 구성 및 배포
 
@@ -85,11 +86,11 @@ ms.lasthandoff: 04/16/2018
 
    Lookout 앱을 사용자 장치에 설치하도록 하는 **필수 설치** 옵션를 선택합니다.
 
-## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>장치에서 배포된 앱을 열 때 수행되는 작업
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md사용자가 장치에서 Lookout for Work를 열면 앱을 활성화하고 Azure Active Directory를 사용하여 로그인 옵션을 선택하라는 메시지가 표시됩니다. 최종 사용자 흐름을 사용하는 자세한 연습은 다음 항목에서 확인할 수 있습니다.
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>장치에서 배포된 앱을 열 때 수행되는 작업 
+사용자가 장치에서 Lookout for Work를 열면 앱을 활성화하고 Azure Active Directory를 사용하여 로그인 옵션을 선택하라는 메시지가 표시됩니다. 최종 사용자 흐름을 사용하는 자세한 연습은 다음 항목에서 확인할 수 있습니다.
 
 * [Android 장치에 Lookout for Work를 설치하라는 메시지가 표시됨](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-
+    
 * [Lookout for Work가 Android 장치에서 발견한 위협을 해결해야 함](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>다음 단계

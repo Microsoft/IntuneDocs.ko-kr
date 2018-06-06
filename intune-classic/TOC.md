@@ -17,7 +17,6 @@
 ### [사용자 및 장치 구성](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [정책 및 앱 배포](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [회사 포털 사용자 지정](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [장치 등록](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [구성 후 작업](get-started/post-configuration-tasks.md)
 ## 다음 단계
 ### [Office 365 모바일 앱에서 회사 데이터 누수 방지](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [관리되는 iOS 장치 복원](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android 및 Samsung KNOX 설정](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [사용자 지정 정책을 사용하여 미리 공유한 키로 Wi-Fi 프로필 만들기](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [사용자 지정 정책을 사용하여 Android 장치용 앱별 VPN 프로필 만들기](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [사용자 지정 정책을 사용하여 Samsung KNOX 장치에 대해 앱을 허용하거나 차단](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Android for Work 설정](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 및 Windows 8.1 설정](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [장치 사용 중지](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [앱 추가](deploy-use/add-apps.md)
-### [등록된 장치용 앱 추가](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Windows 앱 사이드로드](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [앱 배포](deploy-use/deploy-apps.md)
-### [장치 및 PC에 앱 배포](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [Android for Work 장치에 앱 배포](deploy-use/android-for-work-apps.md)
-### [앱 모니터링](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [대량 구매 앱 관리](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [대량 구매 iOS 앱 관리](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [대량 구매 Windows 앱 관리](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## 앱 구성
 ### [앱 업데이트](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [앱 기반 CA로 앱 사용](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [ADAL 없는 앱 차단](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [네트워크에 대한 액세스 보호(Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [장치, 네트워크 및 응용 프로그램 위험에 따라 액세스 보호](deploy-use/mobile-threat-defense.md)
 #### [Lookout 모바일 위협 방어 커넥터](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [앱 보호 정책 유효성 검사](deploy-use/validate-mobile-application-management.md)
 #### [앱 보호 정책 준수 모니터링](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [iOS 앱 간의 데이터 전송 관리](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [MAM 정책에 대한 Intune 관리 콘솔](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [MAM용 기간 업무 앱 준비](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## 앱 및 데이터 사용 중지
 ### [전체 또는 선택적 초기화 사용](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [앱 사용 중지](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [관리되는 업무용 앱 데이터 초기화](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [MDM 기관 변경](deploy-use/change-mdm-authority.md)
