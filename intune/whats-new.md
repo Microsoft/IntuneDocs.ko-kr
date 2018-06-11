@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 06/04/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 81e6dba8cabb9339c7c83a3ac95fd7cf7c0a1fa7
-ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
+ms.openlocfilehash: f1f6cac720e753e78bbabe091ce1c68cc58b7917
+ms.sourcegitcommit: 21b08737c3366b81b0f3b981b29008563f63f036
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34758153"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,15 +32,110 @@ ms.lasthandoff: 05/17/2018
 
 
 <!-- Common categories:  
-  ### App management
-  ### Device enrollment
-  ### Device management
-  ### Device configuration
-  ### Intune apps
-  ### Monitor and troubleshoot
-  ### Role-based access control
+### App management
+### Device enrollment
+### Device management
+### Device configuration
+### Intune apps
+### Monitor and troubleshoot
+### Role-based access control
 
 -->   
+
+## <a name="week-of-june-4-2018"></a>2018년 6월 4일 주
+
+### <a name="app-management"></a>앱 관리
+
+#### <a name="retrieve-the-associated-app-user-model-id-aumid-for-microsoft-store-for-business-apps-in-kiosk-mode----1560077----"></a>키오스크 모드에서 비즈니스용 Microsoft 스토어 앱에 대한 연결된 앱 사용자 모델 ID(AUMID) 검색 <!-- 1560077 ! -->
+Intune에서는 이제 WSfB(비즈니스용 Microsoft 스토어) 앱에 대한 AUMID(응용 프로그램 사용자 모델 ID)를 검색하여 향상된 키오스크 프로필 구성을 제공할 수 있습니다.
+
+비즈니스용 Microsoft 스토어에서 앱에 대한 자세한 내용은 [비즈니스용 Microsoft 스토어에서 앱 관리](windows-store-for-business.md)를 참조하세요.
+
+#### <a name="new-company-portal-branding-page----1916370---"></a>새 회사 포털 브랜딩 페이지 <!-- 1916370 -->
+회사 포털 브랜딩 페이지에는 새로운 레이아웃, 메시지 및 도구 설명이 있습니다.
+
+
+### <a name="device-configuration"></a>장치 구성
+
+#### <a name="support-for-palo-alto-networks-globalprotect-vpn-profiles----1333680-eeready----"></a>Palo Alto Networks GlobalProtect VPN 프로필 <!-- 1333680 eeready ! --> 지원
+이 업데이트에서는 Palo Alto Networks GlobalProtect를 Intune의 VPN 프로필에 대한 VPN 연결 형식으로 선택할 수 있습니다(**장치 구성** > **프로필** > **프로필 만들기** > **프로필 형식** > **VPN**). 이 릴리스에서 지원되는 플랫폼은 다음과 같습니다. 
+
+- iOS
+- Windows 10
+
+#### <a name="additions-to-local-device-security-options-settings----1403702---"></a>로컬 장치 보안 옵션 설정에 대한 추가 <!-- 1403702 -->
+Windows 10 장치에 대한 추가 로컬 장치 보안 옵션 설정을 구성할 수 있습니다. 추가 설정은 Microsoft 네트워크 클라이언트, Microsoft 네트워크 서버, 네트워크 액세스/보안 및 대화형 로그온 영역에서 사용할 수 있습니다. Windows 10 장치 구성 정책을 만들 때 Endpoint Protection 범주에서 이러한 설정을 찾아보세요.
+
+#### <a name="enable-kiosk-mode-on-windows-10-devices----1560072----"></a>Windows 10 장치에서 키오스크 모드 사용 <!-- 1560072 ! -->
+Windows 10 장치에서 구성 프로필을 만들고 키오스크 모드를 사용하도록 설정할 수 있습니다(**장치 구성** > **프로필** > **프로필 만들기** > **Windows 10** > **장치 제한 사항** > **키오스크**). 이 업데이트에서 **키오스크(미리 보기)** 설정은 **키오스크(사용되지 않음)** 로 이름이 바뀝니다. **키오스크(사용되지 않음)** 는 더 이상 사용하지 않는 것이 좋지만 7월 업데이트까지 계속 작동합니다. **키오스크(사용되지 않음)** 는 새로운 **키오스크** 프로필 유형(**프로필 만들기** > **Windows 10** > **키오스크(미리 보기)**)으로 바뀌고 이 프로필 유형에는 Windows 10 RS4 이상에서 키오스크를 구성하는 설정이 포함됩니다.
+
+Windows 10 이상에 적용됩니다.
+
+#### <a name="device-profile-graphical-user-chart-is-back----2160133---"></a>장치 프로필 그래픽 사용자 차트가 다시 표시됨 <!-- 2160133 -->
+장치 프로필 그래픽 차트(**장치 구성** > **프로필** > 기존 프로필 선택 > **개요**)에 표시되는 개수를 개선하기 위해 그래픽 사용자 차트가 일시적으로 제거되었습니다.
+
+이 업데이트를 사용하면 그래픽 사용자 차트가 Azure Portal에 다시 표시됩니다.
+
+### <a name="device-enrollment"></a>장치 등록
+
+#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>사용자 인증이 없는 Windows Autopilot 등록 지원 <!-- 1165118 wnready -->
+Intune에서는 이제 사용자 인증 없이 Windows Autopilot 등록을 지원합니다. 여기에는 Windows Autopilot 배포 프로필인 "Autopilot 배포 모드"가 "자체 배포"로 설정된 새 옵션이 있습니다.  이러한 유형의 등록을 인증하려면 장치에서 Windows 10 빌드 1803 이상을 실행하고 TPM 2.0을 갖추고 있어야 합니다. 사용자 인증이 필요하지 않으므로 물리적으로 제어할 수 있는 장치에만 이 옵션을 할당해야 합니다.
+
+#### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766-eeready---"></a>Autopilot에 대한 OOBE를 구성할 경우, 새 언어 지역 설정 <!-- 1821766 eeready -->
+새 구성 설정은 독창적인 환경(Out of Box Experience)에서 Autopilot 프로필에 대한 언어와 지역을 설정하는 데 사용할 수 있습니다. 새 설정을 확인하려면 **장치 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기** > **배포 모드** = **자체 배포** > **기본값 구성됨**을 차례로 선택합니다.
+
+#### <a name="new-setting-for-configuring-device-keyboard----1821768---"></a>장치 키보드 구성에 대한 새 설정 <!-- 1821768 -->
+새 설정을 통해 첫 실행 경험 중에 Autopilot 프로필에 대한 키보드를 구성할 수 있습니다. 새 설정을 확인하려면 **장치 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기** > **배포 모드** = **자체 배포** > **기본값 구성됨**을 차례로 선택합니다.
+
+#### <a name="autopilot-profiles-moving-to-group-targeting----1877935---"></a>Autopilot 프로필을 대상 지정 그룹으로 이동 <!-- 1877935 -->
+AutoPilot 배포 프로필을 AutoPilot 장치를 포함하는 Azure AD 그룹에 할당할 수 있습니다.
+
+### <a name="device-management"></a>장치 관리
+
+#### <a name="set-compliance-by-device-location----851881----"></a>장치 위치별 준수 설정 <!-- 851881 ! -->
+상황에 따라 회사 리소스에 대한 액세스를 네트워크 연결로 정의된 특정 위치로 제한할 수 있습니다. 이제 장치의 IP 주소를 기반으로 하여 준수 정책을 만들 수 있습니다(**장치 준수** > **위치**). IP 범위를 벗어난 장치는 회사 리소스에 액세스할 수 없습니다.
+
+적용 대상: 회사 포털 앱이 업데이트된 Android 장치 6.0 이상 
+
+#### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Windows 10 Enterprise RS4 Autopilot 장치에서 소비자 앱과 경험을 방지<!-- 1621980 -->
+Windows 10 Enterprise RS4 AutoPilot 장치에서 소비자 앱 및 환경을 설치하지 못하도록 방지할 수 있습니다. 이 기능을 확인하려면 **Intune** > **장치 구성** > **프로필** > **프로필 만들기** > **플랫폼** = **Windows 10 이상** > **프로필 유형** = **장치 제한** > **구성** > **Windows 추천** > **소비자 기능**으로 차례로 이동합니다. 
+
+#### <a name="uninstall-the-latest-from-windows-10-software-updates----1732948-eeready---"></a>Windows 10 소프트웨어 업데이트에서 최신 버전 제거 <!-- 1732948 eeready -->
+Windows 10 컴퓨터에서 주요 문제가 발견되면 최신 기능 업데이트 또는 최신 품질 업데이트를 제거(롤백)하도록 선택할 수 있습니다. 기능 또는 품질 업데이트의 제거는 장치가 켜져 있는 서비스 채널에서만 사용할 수 있습니다. 제거하면 Windows 10 컴퓨터에서 이전 업데이트를 복원하는 정책이 트리거됩니다. 특히 기능 업데이트의 경우 최신 버전 제거를 적용할 수 있는 시간을 2-60일로 제한할 수 있습니다. 소프트웨어 업데이트 제거 옵션을 설정하려면 Azure Portal의 **Microsoft Intune** 블레이드에서 **소프트웨어 업데이트**를 선택합니다. 그런 다음, **소프트웨어 업데이트** 블레이드에서 **Windows 10 업데이트 링**을 선택합니다. 그런 다음, **개요** 섹션에서 **제거** 옵션을 선택할 수 있습니다.
+
+#### <a name="search-all-devices-for-imei-and-serial-number----1793685---"></a>모든 장치에서 IMEI 및 일련 번호 검색 <!-- 1793685 -->
+이제 모든 장치 블레이드에서 IMEI 및 일련 번호를 검색할 수 있습니다(이메일, UPN, 장치 이름 및 관리 이름을 계속 사용할 수 있음). Intune에서 **장치** > **모든 장치**를 차례로 선택한 다음, 검색 상자에서 검색 항목을 입력합니다.
+
+#### <a name="management-name-field-will-be-editable----1875989---"></a>관리 이름 필드를 편집할 수 있음 <!-- 1875989 -->
+이제 장치의 **속성** 블레이드에서 관리 이름 필드를 편집할 수 있습니다. 이 필드를 편집하려면 **장치** > **모든 장치**를 선택하고, 장치를 선택한 다음, **속성**을 선택합니다. 관리 이름 필드를 사용하여 장치를 고유하게 식별할 수 있습니다.
+
+#### <a name="new-all-devices-filter-device-category----1878520---"></a>새로운 모든 장치 필터: 장치 범주 <!-- 1878520 -->
+이제 장치 범주별로 **모든 장치** 목록을 필터링할 수 있습니다. 이렇게 하려면 **장치** > **모든 장치** > **필터** > **장치 범주**를 차례로 선택합니다.
+
+#### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices----1985547---"></a>TeamViewer를 사용하여 iOS 및 MacOS 장치의 화면 공유 <!-- 1985547 -->
+관리자는 이제 [TeamViewer](device-profile-android-teamviewer.md)에 연결하고 iOS 및 macOS 장치에서 화면 공유 세션을 시작할 수 있습니다. iPhone, iPad 및 macOS 사용자는 자신의 화면을 다른 데스크톱 또는 모바일 장치와 실시간으로 공유할 수 있습니다. 
+
+#### <a name="multiple-exchange-connector-support----2070451---"></a>여러 Exchange Connector 지원 <!-- 2070451 -->
+더 이상 테넌트당 하나의 Microsoft Intune Exchange Connector로 제한되지 않습니다. Intune에서는 이제 여러 온-프레미스 Exchange 조직에서 Intune 조건부 액세스를 설정할 수 있도록 여러 Exchange Connector를 지원합니다.
+
+Intune 온-프레미스 Exchange Connector를 사용하여 장치가 Intune에 등록했는지 여부 및 Intune 장치 준수 정책을 준수하는지 여부에 따라 온-프레미스 Exchange 사서함에 대한 장치 액세스를 관리할 수 있습니다. 커넥터를 설정하려면 Azure Portal에서 Intune 온-프레미스 Exchange Connector를 다운로드해 이를 Exchange 조직의 서버에 설치합니다. Microsoft Intune 대시보드에서 **온-프레미스 액세스**를 선택한 다음, **설치** 아래에서 **Exchange ActiveSync Connector**를 선택합니다. Exchange 온-프레미스 Connector를 다운로드하고 Exchange 조직의 서버에 설치합니다. 더 이상 테넌트당 하나의 Exchange Connector로 제한되지 않으므로 추가 Exchange 조직이 있는 경우 동일한 다운로드 절차를 따라 각 추가 Exchange 조직에 대해 커넥터를 설치할 수 있습니다.
+
+#### <a name="new-device-hardware-detail-ccid----2156657---"></a>새로운 장치 하드웨어 세부 정보: CCID <!-- 2156657 -->
+이제 각 장치에 대한 CCID(칩 카드 인터페이스 장치) 정보가 포함됩니다. 이를 확인하려면 **장치** > **모든 장치**를 차례로 선택하고, 장치를 선택하고, **하드웨어**를 선택한 다음, **네트워크 정보**> 아래에서 확인합니다.
+
+#### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>모든 사용자 및 모든 장치를 범위 그룹으로 할당 <!-- 2196803 -->
+이제 범위 그룹에서 모든 사용자, 모든 장치 및 모든 사용자/장치를 할당할 수 있습니다. 이렇게 하려면 **Intune 역할** > **모든 역할** > **정책 및 프로필 관리자** > **할당**을 차례로 선택하고, 할당을 선택한 다음, **범위(그룹)** 를 선택합니다.
+
+#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>iOS 및 macOS 장치에 대한 UDID 정보 포함 <!-- 2219806 wnready-->
+iOS 및 macOS 장치에 대한 UDID(고유 장치 식별자)를 확인하려면 **장치** > **모든 장치**로 차례로 이동하고, 장치를 선택한 다음, **하드웨어**를 선택합니다. UDID는 **장치** > **모든 장치** > 장치 선택 > **속성** > **장치 소유권** 아래에 설정한 회사 장치에만 사용할 수 있습니다.
+
+### <a name="intune-apps"></a>Intune 앱
+
+#### <a name="improved-troubleshooting-for-app-installation----928990---"></a>앱 설치에 대한 향상된 문제 해결 <!-- 928990 -->
+Microsoft Intune MDM 관리 장치에서 앱 설치에 실패하는 경우도 있습니다. 이러한 앱 설치에 실패할 경우, 실패 이유를 파악하거나 문제를 해결하기 어려울 수 있습니다. Microsoft에서는 앱 문제 해결 기능의 공개 미리 보기를 제공합니다. 개별 장치 아래에서 **관리 앱**이라는 새 노드를 확인할 수 있습니다. 여기에는 Intune MDM을 통해 전달된 앱이 나열됩니다. 노드 내부에는 앱 설치 상태 목록이 표시됩니다. 개별 앱을 선택하면 해당 앱에 대한 문제 해결 보기가 표시됩니다. 문제 해결 보기에는 응용 프로그램이 언제 생성, 수정, 대상 지정 및 장치에 전달되었는지를 포함한 앱의 전체 수명 주기기 표시됩니다. 또한 앱 설치에 실패할 경우, 오류 코드 및 오류의 원인에 대한 유용한 메시지가 표시됩니다. 
+
+#### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Intune 앱 보호 정책 및 Microsoft Edge <!-- 1818968 -->
+모바일 장치(iOS 및 Android)용 Microsoft Edge 브라우저에서는 이제 Microsoft Intune 앱 보호 정책을 지원합니다. Edge 응용 프로그램에서 회사 Azure AD 계정으로 로그인하는 iOS 및 Android 장치 사용자는 Intune에서 보호됩니다. iOS 장치에서 **웹 콘텐츠에 대한 Managed Browser 필요** 정책을 사용하면 사용자가 관리되는 Edge에서 링크를 열 수 있습니다.
 
 ## <a name="week-of-may-14-2018"></a>2018년 5월 14일 주
 
