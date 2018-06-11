@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bbcfa2de4b2d6ef7bff481817a289f56e746ee7f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34718032"
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune에 대한 일반적인 문제 해결 팁
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 Microsoft Intune을 배포한 후에 구성이나 클라이언트 장치에서 문제가 발생할 수 있습니다. 다음 리소스를 사용하면 문제를 해결하기 위해 문제의 원인을 파악할 수 있습니다.
 
 > [!NOTE]
-> 지원 요청을 만들거나 기존 요청을 보려면 [Office 365 관리 센터를 방문](https://portal.office.com/admin/default.aspx)합니다. 지원 옵션에 대한 자세한 내용은 [Microsoft Intune에 대한 지원을 받는 방법](how-to-get-support-for-microsoft-intune.md)을 참조하세요.
+> 지원 요청을 만들거나 기존 요청을 보려면 [Azure 도움말 + 지원](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 페이지를 방문하세요. 지원 옵션에 대한 자세한 내용은 [Microsoft Intune에 대한 지원을 받는 방법](how-to-get-support-for-microsoft-intune.md)을 참조하세요.
 
 ## <a name="define-the-problem"></a>문제 정의
 

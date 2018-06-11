@@ -15,11 +15,12 @@ ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 169d0a32fdc86b5cd3f36421e6057cdeae1a078f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: edd0ec0d717d4303ad2a452c5d60009ac09aa05f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703318"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 수동으로 추가
 
@@ -73,7 +74,7 @@ Intune이 유니버설 앱의 종속성을 처리하는 방식에 대한 자세�
 
 앱을 사이드로드해야 하며 Symantec 인증서로 서명하지 않고 Windows 8.1 회사 포털을 할당한 경우에는 이 문서의 이전 섹션에 설명된 단계를 완료하여 업그레이드를 완료합니다.
 
-앱을 사이드로드해야 하며 Symantec 코드 서명 인증서로 Windows 8.1 회사 포털을 서명 및 할당한 경우에는 그 다음 섹션의 단계를 따릅니다.  
+앱을 사이드로드해야 하고 Symantec 코드 서명 인증서로 Windows 8.1 회사 포털 앱을 서명하고 할당한 경우 다음 섹션의 단계를 수행합니다.
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>서명 및 사이드로드된 Windows Phone 8.1 회사 포털 앱이나 Windows 8.1 회사 포털 앱을 어떻게 Windows 10 회사 포털 앱으로 업그레이드하나요?
 권장되는 마이그레이션 경로는 할당 작업을 **제거**로 설정하여 Windows Phone 8.1 회사 포털 앱 또는 Windows 8.1 회사 포털 앱의 기존 할당을 삭제하는 것입니다. 이 설정을 선택하면 Windows 10 회사 포털 앱을 정상적으로 할당할 수 있습니다.  

@@ -15,11 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f0dd0d968cde26ed4fcd4a628db5ff98316bee7
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 6fccfcbceecc9aa0667aa9fd6656c2fcc524d363
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34569360"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune에서 Mobile Threat Defense 커넥터를 사용하도록 설정
 
@@ -53,7 +54,7 @@ Mobile Threat Defense(MTD)를 설치하는 동안 MTD 파트너 콘솔에서 위
 - **Android 4.1+ 장치를 [MTD 파트너 이름] for Work MTD에 연결**: 이 옵션을 사용하도록 설정하는 경우 Android 4.1 이상 장치가 보안 위험을 Intune에 다시 보고하도록 지정할 수 있습니다.
     - **데이터를 받지 못한 경우 비규격으로 표시**: Intune이 MTD 파트너로부터 이 플랫폼에 대한 데이터를 받지 못한 경우 해당 장치를 비규격으로 간주합니다.
 <br></br>
-- **iOS 8.0+ 장치를 [MTD 파트너 이름] for Work MTD에 연결**: 이 옵션을 사용하도록 설정하는 경우 Android 4.1 이상 장치가 보안 위험을 Intune에 다시 보고하도록 지정할 수 있습니다.
+- **iOS 8.0+ 장치를 작업 MTD에 대한 [MTD 파트너 이름]에 연결**: 이 옵션을 사용하도록 설정하는 경우 iOS 8.0 이상 장치에서 보안 위험을 Intune에 다시 보고하도록 지정할 수 있습니다.
     - **데이터를 받지 못한 경우 비규격으로 표시**: Intune이 MTD 파트너로부터 이 플랫폼에 대한 데이터를 받지 못한 경우 해당 장치를 비규격으로 간주합니다.
 <br></br>
 - **iOS 장치에 대해 앱 동기화 사용**: 이 Mobile Threat Defense 파트너가 위협 분석 복적으로 사용할 iOS 응용 프로그램의 메타데이터를 Intune에서 요청하도록 합니다.

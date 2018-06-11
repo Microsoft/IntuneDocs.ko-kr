@@ -37,7 +37,7 @@ Lookout MTP를 통해, 구성된 Azure AD 그룹의 사용자만 서비스에 �
 
 * 메일: enterprisesupport@lookout.com
 * [MTP 콘솔](http://aad.lookout.com)에 로그인한 다음 **지원** 모듈로 이동합니다.
-* <<https://enterprise.support.lookout.com/hc/requests>>로 이동하고 지원을 요청합니다.
+* <https://enterprise.support.lookout.com/hc/requests>로 이동하고 지원을 요청합니다.
 
 ## <a name="unable-to-sign-in"></a>로그인할 수 없음
 Azure AD 전역 관리자가 초기 Lookout 설정을 수락하지 않은 경우 다음 오류가 표시됩니다.

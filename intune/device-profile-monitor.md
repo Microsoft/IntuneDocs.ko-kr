@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c2eb08db58940ed575b3dea011395edd6711fc
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744791"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 장치 프로필 모니터링
 
@@ -41,19 +42,27 @@ Intune에는 장치 구성 프로필을 모니터링하고 관리하는 데 도�
 1. 기존 프로필을 선택합니다. 예를 들어, macOS 프로필을 선택합니다.
 2. **개요** 탭을 선택합니다.
 
-    그래픽 차트에는 특정 장치 프로필에 할당된 장치 수가 표시됩니다. 예를 들어, 구성 장치 프로필이 macOS 장치에 적용되는 경우 차트는 macOS 장치의 개수가 나열됩니다.
+    위쪽 그래픽 차트에는 특정 장치 프로필에 할당된 장치 수가 표시됩니다. 예를 들어, 구성 장치 프로필이 macOS 장치에 적용되는 경우 차트는 macOS 장치의 개수가 나열됩니다.
 
     또한 동일한 장치 프로필이 할당된 기타 플랫폼의 장치 수도 표시됩니다. 예를 들어, macOS 이외의 장치 수가 표시됩니다.
 
     ![장치 프로필에 할당된 장치 수 보기](./media/device-configuration-profile-graphical-chart.png)
 
-3. 그래픽 차트에서 원을 선택합니다. **장치 상태**가 열립니다.
+    아래쪽 그래픽 차트에는 특정 장치 프로필에 할당된 사용자 수가 표시됩니다. 예를 들어 구성 장치 프로필이 macOS 사용자에게 적용되는 경우 차트에는 macOS 사용자 수가 나열됩니다.
+
+3. 위쪽 그래픽 차트에서 원을 선택합니다. **장치 상태**가 열립니다.
 
     프로필에 할당된 장치가 나열되고 프로필이 성공적으로 배포되었는지 여부가 표시됩니다. 또한 특정 플랫폼(예: macOS)이 있는 장치만 나열됩니다.
 
-    장치 상태 세부 정보를 닫습니다.
+    **장치 상태** 세부 정보를 닫습니다.
 
-4. 프로필의 속성(**프로필** > 특정 프로필 선택)에서 기존 속성을 변경할 수도 있습니다.
+4. 아래쪽 그래픽 차트에서 원을 선택합니다. **사용자 상태**가 열립니다. 
+
+    프로필에 할당된 사용자가 나열되고 프로필이 성공적으로 배포되었는지 여부가 표시됩니다. 또한 특정 플랫폼(예: macOS)이 있는 사용자만 나열됩니다.
+
+    **사용자 상태** 세부 정보를 닫습니다.
+
+5. **프로필** 목록으로 돌아가서 특정 프로필을 선택합니다. 또한 다음과 같은 기존 속성을 변경할 수도 있습니다.
   - **속성**: 이름을 변경하거나 기존 설정을 업데이트합니다.
   - **할당**: 정책을 적용해야 하는 장치를 포함하거나 제외합니다. **선택된 그룹**을 선택하여 특정 그룹을 선택합니다.
   - **장치 상태**: 프로필에 할당된 장치가 나열되고 프로필이 성공적으로 배포되었는지 여부가 표시됩니다. 특정 장치를 선택하여 설치된 앱을 비롯한 더 많은 세부 정보를 얻을 수 있습니다.

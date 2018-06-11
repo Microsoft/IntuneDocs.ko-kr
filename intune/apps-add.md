@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744995"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가
 
@@ -153,6 +154,9 @@ Intune에 앱을 추가하는 경우 원하는 범주를 선택할 수 있는 �
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Intune에서 자동으로 추가된 앱
 
 이전에는 Intune에 신속하게 할당할 수 있는 많은 기본 제공 앱이 포함되어 있었습니다. Intune 고객 피드백에 따라 이 목록은 제거되었으며, 기본 제공 앱이 더 이상 표시되지 않습니다. 그러나 기본 제공 앱을 이미 할당한 경우 해당 앱은 앱 목록에 계속 표시됩니다. 필요에 따라 앱을 계속 할당할 수 있습니다.
+
+> [!NOTE]
+> 필요한 비기간 업무 앱을 설치하기 위해 Intune에서는 앱이 검색되지 않고 앱의 설치 상태가 *설치 보류 중*이 아닌 경우 장치에서 체크 인할 때마다 설치 명령을 보내서 앱을 설치하려고 합니다.
 
 ## <a name="installing-updating-or-removing-required-apps"></a>필수 앱 설치, 업데이트 또는 제거
 

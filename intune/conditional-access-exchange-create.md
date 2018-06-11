@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744774"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange 온-프레미스 및 레거시 Exchange Online Dedicated에 대한 조건부 액세스 정책 만들기
 
@@ -37,9 +38,9 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 - Intune을 온-프레미스 Exchange에 연결하는 [Exchange Active Sync 온-프레미스 Exchange 커넥터](exchange-connector-install.md)를 사용해야 합니다.
 
     >[!IMPORTANT]
-    >온-프레미스 Exchange 커넥터는 Intune 테넌트별로 다르며 다른 테넌트에서는 사용할 수 없습니다. 또한 테넌트용 Exchange Connector가 **한 대의 컴퓨터**에만 설치되어 있는지 확인해야 합니다.
+    >온-프레미스 Exchange 커넥터는 Intune 테넌트별로 다르며 다른 테넌트에서는 사용할 수 없습니다. 이제 Intune은 구독당 여러 온-프레미스 Exchange Connector를 지원합니다. 둘 이상의 온-프레미스 Exchange 조직이 있는 경우 각 Exchange 조직에 대해 별도의 커넥터를 설정할 수 있습니다.
 
-- Exchange 서버와 통신할 수 있기만 하면 모든 컴퓨터에 커넥터를 설치할 수 있습니다.
+- 컴퓨터에서 Exchange Server와 통신할 수 있는 한 해당되는 모든 컴퓨터에 온-프레미스 Exchange 조직에 대한 커넥터를 설치할 수 있습니다.
 
 - 이 커넥터는 **Exchange CAS 환경**을 지원합니다. 원할 경우 Exchange CAS 서버에 직접 커넥터를 설치하는 것도 기술적으로 가능하지만 서버의 부하가 증가하므로 권장되지 않습니다. 커넥터를 구성할 때는 커넥터가 Exchange CAS 서버 중 하나와 통신하도록 설정해야 합니다.
 
@@ -49,7 +50,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
     - Intune에 **등록**되어 있거나 도메인에 가입된 PC여야 합니다.
     - **Azure Active Directory에 등록**되어야 합니다. 또한 클라이언트 Exchange ActiveSync ID가 Azure Active Directory에 등록되어 있어야 합니다.
 <br></br>
-- Intune 및 Office 365 고객의 경우에는 AAD DRS가 자동으로 활성화됩니다. ADFS 장치 등록 서비스를 이미 배포한 고객의 온-프레미스 Active Directory에는 등록된 장치가 표시되지 않습니다. **Windows PC 및 Windows Phone 장치에는 적용되지 않습니다**.
+- Azure AD DRS(Device Registration Service)는 Intune 및 Office 365 고객에 대해 자동으로 활성화됩니다. ADFS 장치 등록 서비스를 이미 배포한 고객의 온-프레미스 Active Directory에는 등록된 장치가 표시되지 않습니다. **Windows PC 및 Windows Phone 장치에는 적용되지 않습니다**.
 
 - 해당 장치에 배포된 장치 준수 정책을 **준수**해야 합니다.
 
@@ -89,11 +90,11 @@ Windows 8.1 이상에 설치된 기본 **메일** 응용 프로그램(Intune에 
 1. **Exchange 온-프레미스 액세스** 창에서 **예**를 선택하여 Exchange 온-프레미스 액세스 제어를 사용하도록 설정합니다.
 
     > [!NOTE]
-    > Exchange Active Sync 온-프레미스 커넥터를 구성하지 않은 경우에는 이 옵션을 사용할 수 없습니다.  Exchange 온-프레미스에 대한 조건부 액세스를 설정하려면 먼저 이 커넥터를 설치하고 구성해야 합니다. 자세한 내용은 [Intune 온-프레미스 Exchange Connector 설치](exchange-connector-install.md)를 참조하세요.
+    > Exchange Active Sync 온-프레미스 커넥터를 구성하지 않은 경우 이 옵션은 사용할 수 없습니다.  Exchange 온-프레미스에 대한 조건부 액세스를 사용하도록 설정하기 전에 먼저 하나 이상의 커넥터를 설치하고 구성해야 합니다. 자세한 내용은 [Intune 온-프레미스 Exchange Connector 설치](exchange-connector-install.md)를 참조하세요.
 
 1. **할당** 아래에서 **그룹 포함됨**을 선택합니다.  조건부 액세스를 적용해야 하는 보안 사용자 그룹을 사용합니다. 이 작업은 사용자가 Intune에 장치를 등록하고 준수 프로필을 준수하도록 요구합니다.
 
-1. 특정 사용자 그룹을 제외하려면 **그룹 제외됨**을 선택한 다음 장치 등록 및 준수 대상에서 제외할 사용자 그룹을 선택하면 됩니다.
+1. 특정 사용자 그룹을 제외하려면 **그룹 제외됨**을 선택하고 장치 등록 및 준수 대상에서 제외할 사용자 그룹을 선택하면 됩니다.
 
 1. **설정** 아래에서 **사용자 알림**을 선택하여 기본 메일 메시지를 수정합니다. 이 메시지는 해당 장치가 준수되지 않으며 Exchange 온-프레미스에 액세스하려는 사용자에게 전송됩니다. 메시지 템플릿에는 마크업 언어가 사용됩니다.  입력할 때 메시지 모양에 대한 미리 보기도 표시될 수 있습니다.
     > [!TIP]

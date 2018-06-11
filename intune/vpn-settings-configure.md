@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744604"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune에서 VPN 프로필 만들기
 
@@ -41,18 +42,19 @@ VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전
 
 |연결 형식|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|예|예|예|예|예|예|
-|Cisco(IPsec)|아니요|예|아니요|아니요|아니요|아니요|
-|Citrix|예|예|아니요|아니요|아니요|예|
-|F5 Edge Client|예|예|예|예|예|예|
-|SonicWall Mobile Connect|예|예|예|예|예|예|
+|자동|아니요|아니요|아니요|아니요|아니요|예|
 |검사점 캡슐 VPN|예|예|예|예|예|예|
 |Cisco AnyConnect|예|예|예|아니요|아니요|아니요|
-|자동|아니요|아니요|아니요|아니요|아니요|예|
+|SonicWall Mobile Connect|예|예|예|예|예|예|
+|F5 Edge Client|예|예|예|예|예|예|
+|Palo Alto Networks GlobalProtect|아니요|예|아니요|아니요|아니요|예|
+|Pulse Secure|예|예|예|예|예|예|
+|Cisco(IPsec)|아니요|예|아니요|아니요|아니요|아니요|
+|Citrix|예(Android에만 해당)|예|아니요|아니요|아니요|예|
 |IKEv2|아니요|아니요|아니요|아니요|아니요|예|
 |L2TP|아니요|아니요|아니요|아니요|아니요|예|
 |PPTP|아니요|아니요|아니요|아니요|아니요|예|
-|사용자 지정|아니요|예|예|아니요|아니요|아니요|
+|사용자 지정 VPN|아니요|예|예|아니요|아니요|아니요|
 
 > [!IMPORTANT]
 > 장치에 할당된 VPN 프로필을 사용하려면 프로필에 적용 가능한 VPN 앱을 설치해야 합니다. [Microsoft Intune의 앱 관리란?](app-management.md) 아티클의 정보를 참조하여 Intune을 사용해 앱을 할당할 수 있습니다.  

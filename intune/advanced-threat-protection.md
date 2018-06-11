@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744672"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP 사용
 
@@ -51,19 +52,19 @@ Intune에서 ATP를 사용하려면 다음을 구성했으며 사용할 준비�
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **장치 준수** > **Windows Defender ATP** > **Windows Defender Advanced Threat Protection 관리 콘솔 열기**를 선택합니다.
+3. **장치 준수** > **Windows Defender ATP** > **Windows Defender 보안 센터 열기**를 차례로 선택합니다.
 
-    ![대체 텍스트](./media/atp-device-compliance-open-windows-defender.png)
+    ![Windows Defender 보안 센터 열기 선택](./media/atp-device-compliance-open-windows-defender.png)
 
 4. **Windows Defender 보안 센터**에서 다음을 수행합니다.
     1. **설정** > **고급 기능**을 선택합니다.
     2. **Microsoft Intune 연결**에서 **켜기**를 선택합니다.
 
-        ![대체 텍스트](./media/atp-security-center-intune-toggle.png)
+        ![Intune에 대한 연결을 사용하도록 설정](./media/atp-security-center-intune-toggle.png)
 
     3. **기본 설정 저장**을 선택합니다.
 
-5. Intune, **장치 준수** > **Windows Defender ATP**로 돌아갑니다. **Windows Defender Advanced Threat Protection에 Windows 10.0.15063 이상 장치 연결**을 **켜기**로 설정합니다.
+5. Intune, **장치 준수** > **Windows Defender ATP**로 돌아갑니다. **Windows 장치 버전 10.0.15063 이상을 Windows Defender ATP에 연결**을 **켜기**로 설정합니다.
 6. **저장**을 선택합니다.
 
 일반적으로 이 작업은 한 번 수행합니다. 따라서 Intune 리소스에서 이미 ATP를 사용하도록 설정한 경우에는 다시 이 작업을 수행하지 않아도 됩니다.
@@ -115,9 +116,9 @@ Windows Defender에는 장치에 설치되는 온보드 구성 패키지가 포�
 2. **장치 준수** > **정책** > **정책 만들기**를 선택합니다.
 3. **이름**과 **설명**을 입력합니다.
 4. **플랫폼**에서 **Windows 10 이상**을 선택합니다.
-5. **장치 상태** 설정에서 **장치가 장치 위협 수준이나 그 아래에 있어야 함**을 원하는 수준으로 설정합니다.
+5. **Windows Defender ATP** 설정에서 **장치가 머신 위험 점수나 그 아래에 있어야 함**을 기본 설정 수준으로 설정합니다.
 
-  - **보안됨**: 가장 안전한 수준입니다. 장치가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 장치는 비규격으로 평가됩니다.
+  - **지우기**: 이 수준이 가장 안전합니다. 장치가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 장치는 비규격으로 평가됩니다.
   - **낮음**: 낮은 수준의 위협만 있는 장치는 규격 장치입니다. 보통 또는 높은 위협 수준의 장치는 비규격 장치입니다.
   - **보통**: 낮음 또는 보통 수준의 위협이 있는 장치는 규격 장치입니다. 높은 수준의 위협이 검색되는 경우 해당 장치는 비규격으로 간주됩니다.
   - **높음**: 이 수준은 최소 보안이며 모든 위협 수준을 허용합니다. 따라서 높음, 보통 또는 낮은 위협 수준의 장치가 규격으로 간주됩니다.

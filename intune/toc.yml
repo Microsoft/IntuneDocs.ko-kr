@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: 키오스크 설정 구성
+          href: kiosk-settings.md
         - name: 메일 설정 구성
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 및 Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: 교육
+          items:
+            - name: iOS 공유 장치
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: Windows 10 버전 업그레이드 설정 구성
           href: edition-upgrade-configure-windows-10.md
-        - name: Windows 10 Education 설정 구성
-          href: education-settings-configure.md
-        - name: iOS 교육 공유 장치 구성
-          href: education-settings-configure-ios-shared.md
         - name: iOS 업데이트 정책 구성
           href: software-updates-ios.md
         - name: 인증서 구성
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows 정책 만들기
           href: compliance-policy-create-windows.md
+        - name: 위치 기반 정책
+          href: use-network-locations.md
         - name: 정책 평가
           href: policy-evaluate.md
         - name: 비준수에 대한 작업

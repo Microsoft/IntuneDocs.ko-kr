@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744944"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune의 Windows 10 이상용 Endpoint Protection 설정
 
@@ -300,15 +301,21 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
 
 - **화면 보호기가 활성화될 때까지 잠금 화면 비활성 시간(분)**: 화면 보호기가 실행될 때까지 대화형 데스크톱의 로그인 화면에서 비활성 상태인 최대 시간을 정의합니다.
 - **로그온하려면 Ctrl+Alt+Del을 눌러야 함**: 사용자가 로그온하려면 먼저 Ctrl+Alt+Del을 눌러야 합니다.
-- **스마트 카드 제거 동작**: 로그온한 사용자의 스마트 카드가 스마트 카드 판독기에서 제거될 때 수행되는 동작을 결정합니다.
-[LocalPoliciesSecurity 옵션](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior)에서 자세한 정보를 제공합니다.
+- **스마트 카드 제거 동작**: 로그온한 사용자의 스마트 카드가 스마트 카드 판독기에서 제거될 때 수행되는 동작을 결정합니다. 옵션은 다음과 같습니다.
+
+  - **워크스테이션 잠금**: 스마트 카드를 제거하면 워크스테이션이 잠깁니다. 이 옵션을 사용하면 사용자가 해당 영역을 그대로 두고, 스마트 카드를 사용하고, 보호된 세션을 계속 유지할 수 있습니다.
+  - **강제 로그오프**: 스마트 카드를 제거하면 사용자가 자동으로 로그오프됩니다.
+  - **원격 데스크톱 서비스 세션인 경우 연결 끊기**: 스마트 카드를 제거하면 사용자를 로그오프하지 않고 세션의 연결이 끊어집니다. 이 옵션을 사용하면 사용자가 다시 로그인하지 않고도 스마트 카드를 삽입하고, 나중에 세션을 다시 시작하거나 다른 스마트 카드 판독기가 장착된 컴퓨터에서 다시 시작할 수 있습니다. 세션이 로컬이면 이 정책은 워크스테이션 잠금과 동일하게 작동합니다.
+
+    [LocalPoliciesSecurity 옵션](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior)에서 자세한 정보를 제공합니다.
 
 #### <a name="display"></a>표시
 
 - **잠금 화면의 사용자 정보**: 세션이 잠겨 있을 때 표시되는 사용자 정보를 구성합니다. 구성하지 않으면 사용자 표시 이름, 도메인 및 사용자 이름이 표시됩니다.
+  - **구성되지 않음**: 사용자 표시 이름, 도메인 및 사용자 이름
+  - **사용자 표시 이름, 도메인 및 사용자 이름**
   - **사용자 표시 이름만**
   - **사용자 정보 표시 안 함**
-  - **구성되지 않음**: 사용자 표시 이름, 도메인 및 사용자 이름
 - **마지막으로 로그인한 사용자 숨기기**: 이 장치에 마지막으로 로그인한 사용자의 사용자 이름을 표시하지 않습니다.
 - **로그인 시 사용자 이름 숨기기**: 자격 증명이 입력된 후, 장치의 바탕 화면이 표시되기 전에 이 장치에 로그인하는 사용자의 사용자 이름을 표시하지 않습니다.
 - **로그온 메시지 제목**: 로그인하려는 사용자에 대한 메시지 제목을 설정합니다.
@@ -316,13 +323,13 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
 
 ### <a name="network-access-and-security"></a>네트워크 액세스 및 보안
 
-- **명명된 파이프 및 공유에 대한 익명 액세스**: 공유 및 명명된 파이프 설정에 대한 익명 액세스를 제한합니다. 익명으로 액세스할 수 있는 설정에 적용됩니다.
-- **SAM 계정의 익명 열거**: 익명 사용자가 SAM 계정을 열거할 수 있도록 합니다. Windows에서는 익명 사용자가 도메인 계정 및 네트워크 공유의 이름을 열거할 수 있습니다.
-- **SAM 계정 및 공유의 익명 열거**: SAM 계정 및 공유의 익명 열거를 차단할 수 있습니다. Windows에서는 익명 사용자가 도메인 계정 및 네트워크 공유의 이름을 열거할 수 있습니다.
-- **암호 변경 시 LAN Manager 해시 값 저장됨**: 다음 암호 변경 시 새 암호의 LM(LAN Manager) 해시 값을 저장할지 여부를 선택합니다. 기본적으로 저장되지 않습니다.
-- **PKU2U 인증 요청**: 온라인 ID를 사용하기 위한 이 장치에 대한 PKU2U 인증 요청을 차단합니다.
-- **원격 RPC 연결을 SAM으로 제한**: 기본 SDDL(Security Descriptor Definition Language) 문자열을 편집하여 사용자 및 그룹이 SAM에 대한 원격 호출을 수행하도록 허용하거나 수행을 거부합니다.
-- **보안 설명자**
+- **명명된 파이프 및 공유에 대한 익명 액세스**: **구성되지 않음**(기본값)은 공유 및 명명된 파이프 설정에 대한 익명 액세스를 제한합니다. 익명으로 액세스할 수 있는 설정에 적용됩니다.
+- **SAM 계정의 익명 열거**: 익명 사용자가 SAM 계정을 열거할 수 있도록 **허용**합니다. Windows에서는 익명 사용자가 도메인 계정 및 네트워크 공유의 이름을 열거할 수 있습니다.
+- **SAM 계정 및 공유의 익명 열거**: **구성되지 않음**(기본값)은 익명 사용자가 도메인 계정 및 네트워크 공유의 이름을 열거할 수 있음을 의미합니다. SAM 계정 및 공유의 익명 열거를 방지하려면 **차단**으로 설정합니다.
+- **암호 변경 시 LAN Manager 해시 값 저장됨**: 다음 암호 변경 시 LM(LAN Manager)에서 새 암호에 대한 해시 값을 저장할 수 있도록 **허용**합니다. **구성되지 않음**(기본값)으로 설정하면 해시 값이 저장되지 않습니다.
+- **PKU2U 인증 요청**: 온라인 ID를 사용하도록 장치에 대한 PKU2U 인증 요청을 **차단**합니다. **구성되지 않음**(기본값)은 이러한 요청을 허용합니다.
+- **원격 RPC 연결을 SAM으로 제한**: 기본 Security Descriptor Definition Language 문자열을 사용하여 사용자 및 그룹에서 SAM에 대한 원격 호출을 거부하도록 **허용**합니다. **구성되지 않음**(기본값)은 기본 Security Descriptor Definition Language 문자열을 사용하여 사용자 및 그룹에서 SAM에 대한 원격 호출을 수행하도록 허용합니다.
+  - **보안 설명자**
 
 ### <a name="recovery-console-and-shutdown"></a>복구 콘솔 및 종료
 
@@ -359,13 +366,13 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
 
 ### <a name="microsoft-network-client"></a>Microsoft 네트워크 클라이언트
 
-- **통신에 디지털 서명(서버가 동의한 경우)**: SMB 클라이언트에서 SMB 패킷 서명 협상을 시도할지 여부를 결정합니다. 사용 가능한 경우(기본값), Microsoft 네트워크 클라이언트는 세션 설정 시 SMB 패킷 서명을 수행하도록 서버에 요청합니다. 서버에서 패킷 서명이 사용 가능한 경우, 패킷 서명이 협상됩니다. 이 정책이 사용할 수 없는 경우 SMB 클라이언트는 SMB 패킷 서명을 협상하지 않습니다.
+- **통신에 디지털 서명(서버가 동의한 경우)**: SMB 클라이언트에서 SMB 패킷 서명 협상을 시도할지 여부를 결정합니다. 사용하도록 설정되면(구성되지 않음) Microsoft 네트워크 클라이언트에서 세션 설정 시 SMB 패킷 서명을 수행하도록 서버에 요청합니다. 서버에서 패킷 서명을 사용하도록 설정되면 패킷 서명이 협상됩니다. 이 정책이 사용할 수 없는 경우 SMB 클라이언트는 SMB 패킷 서명을 협상하지 않습니다.
 - **암호화되지 않은 암호를 타사 SMB 서버로 보내기**: 사용 가능한 경우, SMB(Server Message Block) 리디렉터는 인증하는 동안 암호의 암호화를 지원하지 않는 Microsoft 이외 SMB 서버로 일반 텍스트 암호를 보낼 수 있습니다.
 
 ### <a name="microsoft-network-server"></a>Microsoft 네트워크 서버
 
-- **통신에 디지털 서명(클라이언트가 동의한 경우)**: SMB 서버가 SMB 패킷 서명을 요청하는 클라이언트와 이 서명을 협상할지 여부를 결정합니다. 사용 가능한 경우, Microsoft 네트워크 서버는 클라이언트가 요청한 대로 SMB 패킷 서명을 협상합니다. 즉, 클라이언트에서 패킷 서명이 사용 가능한 경우, 패킷 서명이 협상됩니다. 사용할 수 없는 경우(기본값) SMB 클라이언트는 SMB 패킷 서명을 협상하지 않습니다.
-- **통신에 디지털 서명(항상)**: SMB 서버 구성 요소가 패킷 서명을 요구할지 여부를 결정합니다. 사용 가능한 경우, Microsoft 네트워크 서버는 클라이언트가 SMB 패킷 서명을 수행하는데 동의하지 않는 한 Microsoft 네트워크 클라이언트와 통신하지 않습니다. 사용할 수 없는 경우(기본값) SMB 패킷 서명이 클라이언트와 서버 간에 협상됩니다.
+- **통신에 디지털 서명(클라이언트가 동의한 경우)**: SMB 서버가 SMB 패킷 서명을 요청하는 클라이언트와 이 서명을 협상할지 여부를 결정합니다. 사용 가능한 경우, Microsoft 네트워크 서버는 클라이언트가 요청한 대로 SMB 패킷 서명을 협상합니다. 즉, 클라이언트에서 패킷 서명이 사용 가능한 경우, 패킷 서명이 협상됩니다. **구성되지 않음**이거나 사용하지 않도록 설정된 경우(기본값) SMB 클라이언트에서 SMB 패킷 서명을 협상하지 않습니다.
+- **통신에 디지털 서명(항상)**: SMB 서버 구성 요소가 패킷 서명을 요구할지 여부를 결정합니다. 사용 가능한 경우, Microsoft 네트워크 서버는 클라이언트가 SMB 패킷 서명을 수행하는데 동의하지 않는 한 Microsoft 네트워크 클라이언트와 통신하지 않습니다. **구성되지 않음**을 사용하지 않도록 설정된 경우(기본값) 클라이언트와 서버 간에 SMB 패킷 서명을 협상합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

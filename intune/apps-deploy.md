@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,21 +15,20 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b31c9d2028bcde6926f1bf1169de85d2f09efd82
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34717981"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune에 앱을 추가한 후, 사용자와 장치에 앱을 할당할 수 있습니다.
+Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 장치에 해당 앱을 할당할 수 있습니다. Intune에서 장치를 관리하는지 여부에 관계없이 장치에 앱을 할당할 수 있다는 점에 유의해야 합니다. 
 
-Intune에서 장치를 관리하는지 여부에 관계없이 앱을 장치에 할당할 수 있습니다. 
-
-다음 표에는 사용자 및 장치에 앱을 할당하기 위한 다양한 옵션이 나와 있습니다.
+다음 표에는 사용자와 장치에 앱을 할당하기 위한 다양한 옵션이 나와 있습니다.
 
 ||||
 |-|-|-|-|
@@ -117,7 +116,8 @@ Intune에서 장치를 관리하는지 여부에 관계없이 앱을 장치에 �
 |사용자 등록 없이 사용 가능|장치 제거|제거 및 등록 없이 사용 가능<br><br>사용자가 회사 포털에서 앱을 설치하지 않은 경우 제거가 적용됩니다.<br><br>사용자는 회사 포털에서 앱을 설치하는 경우 설치가 제거보다 우선 적용됩니다.|
 
 > [!NOTE]
-> 관리되는 iOS 스토어 앱의 경우에만 이러한 앱을 Microsoft Intune에 추가하고 **필수**로 할당할 때 앱은 **필수** 및 **사용 가능** 의도로 자동으로 생성됩니다.
+> 관리되는 iOS 스토어 앱의 경우에만 이러한 앱을 Microsoft Intune에 추가하고 **필수**로 할당할 때 앱은 **필수** 및 **사용 가능** 의도로 자동으로 생성됩니다.<br><br>
+> 의도적인 대상으로 지정된 iOS 스토어 앱(iOS VPP 앱이 아님)은 장치 체크 인 시 장치에 적용되며 회사 포털 앱에도 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

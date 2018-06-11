@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744706"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune에서 Android 장치에 대한 장치 준수 정책 추가
 
@@ -122,6 +123,17 @@ Android에 대한 Intune 장치 준수 정책은 Android 장치가 준수하는 
 - **회사 포털 앱 런타임 무결성**: 회사 포털 앱에 기본 런타임 환경이 설치되어 있고, 제대로 서명되었으며, 디버그 모드가 아니고, 알려진 소스에서 설치되었는지 확인합니다.
 - **장치에서 USB 디버깅 차단**(Android 4.2 이상): 장치에서 USB 디버깅 기능을 사용할 수 없도록 하려면 선택합니다.
 - **최소 보안 패치 수준**(Android 6.0 이상): 장치에서 사용할 수 있는 가장 오래된 보안 패치 수준을 선택합니다. 최소한 이 패치 수준이 아닌 장치는 비규격 장치가 됩니다. `YYYY-MM-DD` 형식으로 날짜를 입력해야 합니다.
+
+## <a name="locations"></a>위치
+
+정책에서 기존 위치를 선택합니다. 아직 위치가 없나요? [Intune에서 위치(네트워크 펜스) 사용](use-network-locations.md)에서 몇 가지 지침을 제공하고 있습니다.
+
+1. **위치 선택**을 선택합니다.
+2. 목록에서 사용자의 위치를 확인하고 **선택**을 선택합니다.
+3. 정책을 **저장**합니다.
+4. **비준수에 대한 작업**을 선택합니다. 기본 작업에서 장치가 비준수로 즉시 표시됩니다. 이 작업은 하나 이상의 위치를 선택하고 장치가 선택한 위치에 연결되어 있지 않은 경우에 적용됩니다.
+
+  장치가 비준수(예: 하루 후)로 표시되면 일정을 업데이트하도록 이 작업을 변경할 수 있습니다. 또한 장치에서 더 이상 사용자의 위치를 준수하지 않는 경우 사용자에게 이메일을 보내는 두 번째 작업을 구성할 수도 있습니다.
 
 ## <a name="assign-user-groups"></a>사용자 그룹 할당
 

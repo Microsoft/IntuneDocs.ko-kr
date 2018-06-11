@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/30/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,31 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
+ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753895"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS 장치용 Intune에서 앱당 VPN 설정
 
 Intune이 관리하는 iOS 장치에서 관리되는 앱이 VPN을 사용할 수 있도록 지정합니다. Intune에서 앱당 VPN을 만들면 최종 사용자가 회사 문서에 액세스할 때 VPN을 통해 자동으로 연결합니다.
 
-현재 앱당 VPN을 사용할 수 있는 공급자는 다음과 같습니다. 
+현재 앱당 VPN을 사용할 수 있는 공급자는 다음과 같습니다.
 
- - Checkpoint Remote Access VPN
+ - Check Point Remote Access VPN
  - Cisco AnyConnect
+ - Citrix
  - F5
  - Pulse Connect Secure
  - SonicWall
-
+ - Palo Alto Networks GlobalProtect
 
 ## <a name="prerequisites-for-per-app-vpn"></a>앱별 VPN의 필수 조건
+
+> [!IMPORTANT]
+> VPN 공급업체에는 특정 하드웨어 또는 라이선스와 같이 앱별 VPN에 대한 다른 특정 요구 사항이 있을 수 있습니다. Intune에서 앱별 VPN을 설정하기 전에 먼저 관련 설명서를 확인하고 해당 필수 구성 요소를 충족해야 합니다.
 
 해당 ID를 증명하기 위해 장치의 프롬프트 없이 동의해야 하는 인증서가 VPN 서버에 표시됩니다. 인증서의 자동 승인을 보장하려면 CA(인증 기관)에서 발급한 VPN 서버의 루트 인증서가 포함된 신뢰할 수 있는 인증서 프로필을 만듭니다. 
 
@@ -162,14 +167,15 @@ VPN 프로필을 추가한 후에 앱 및 Azure AD 그룹을 프로필에 연결
 
 ### <a name="before-you-attempt-to-connect"></a>연결하려고 하기 전에
 
- - iOS 7 이상을 실행하고 있는지 확인합니다.
+ - iOS 9 이상을 실행하고 있는지 확인합니다.
  - 위에 언급한 *모든* 정책이 동일한 사용자 그룹에 배포되도록 합니다. 실패하는 경우 앱당 VPN 환경이 가장 확실하게 중단됩니다.  
  - 지원되는 타사 VPN 앱이 설치되었는지 확인합니다. 지원되는 VPN 앱은 다음과 같습니다.
-    - Pulse Secure
-    - Checkpoint
+    - Check Point Capsule Connect
     - Cisco AnyConnect
-    - F5
-    - SonicWall
+    - Citrix VPN
+    - F5 Access
+    - Pulse Secure
+    - SonicWall Mobile Connect
 
 ### <a name="connect-using-the-per-app-vpn"></a>앱당 VPN을 사용하여 연결
 

@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703284"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
 ##  <a name="using-apps-with-multi-identity-support"></a>다중 ID가 지원되는 앱 사용
 
-사용자가 작업 관련 데이터에 액세스하려 할 때만 앱 보호 정책이 적용됩니다.  사용자가 사적 용도로 앱에 액세스하는 경우 다른 동작이 표시될 수 있습니다. 
+사용자가 작업 관련 데이터에 액세스하려고 할 때만 앱 보호 정책이 적용됩니다. 사용자가 개인용 앱에 액세스하려고 하면 다른 동작이 표시될 수 있습니다. 또한 정책은 아직 저장되지 않은 새 콘텐츠에 적용되지 않습니다. 새 콘텐츠는 SharePoint 또는 비즈니스용 OneDrive와 같은 회사 위치에 저장된 후에만 회사 정보로 간주됩니다.
 
 다중 ID를 지원하는 앱에 대해 Intune은 사용자가 작업 데이터에 액세스하는 경우만 앱 보호 정책을 적용합니다.  예를 들어 사용자는 PIN 프롬프트를 얻을 수 있습니다.  **Outlook 앱**에서 사용자가 앱을 시작하는 경우 프롬프트가 표시됩니다. **OneDrive 앱**에서는 사용자가 회사 계정을 입력할 때 프롬프트가 표시됩니다.  Microsoft **Word**, **PowerPoint** 및 **Excel**에서 프롬프트는 사용자가 회사의 OneDrive 문서에 액세스할 때 나타납니다.
 ##  <a name="managing-user-accounts-on-the-device"></a>장치에서 사용자 계정 관리

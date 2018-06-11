@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3ceaaa1cce79483c446342b12d9918bb6beac42
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 356997859942443ace0749ece8954bf609f9d91e
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703301"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Intune을 사용하여 Windows 장치의 암호 재설정
 
@@ -25,10 +26,10 @@ Windows 장치에 대한 암호를 재설정할 수 있습니다. 암호 재설�
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
-- Windows 10 크리에이터스 업데이트 이상(Azure AD 연결)
+- 크리에이터스 업데이트 이상을 실행하는 Windows 10 Mobile(Azure AD 조인)
 
 지원되는 **않는** 플랫폼은 다음과 같습니다.
-- Windows Phone
+- Windows
 - iOS
 - macOS
 - Android
