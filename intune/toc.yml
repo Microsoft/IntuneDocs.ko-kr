@@ -270,6 +270,8 @@
           items:
             - name: 앱 포함 및 제외
               href: apps-inc-exl-assignments.md
+            - name: Windows 10 앱 배포
+              href: apps-windows-10-app-deploy.md
         - name: 앱 모니터링
           href: apps-monitor.md
         - name: 앱 구성
@@ -644,6 +646,8 @@
       items:
         - name: 사용자가 문제 해결할 수 있도록 도움
           href: help-desk-operators.md
+        - name: 회사 리소스 액세스 문제 해결
+          href: troubleshoot-company-resource-access-problems.md
         - name: Intune 활동에 대한 감사 로그
           href: monitor-audit-logs.md
         - name: 앱 보호 로그 검토
@@ -693,7 +697,9 @@
           href: app-wrapper-prepare-android.md
         - name: Android용 Intune 앱 SDK
           href: app-sdk-android.md
-        - name: Intune 앱 SDK Xamarin 구성 요소
+        - name: Intune 앱 SDK Cordova 플러그 인
+          href: app-sdk-cordova.md
+        - name: Intune 앱 SDK Xamarin 바인딩
           href: app-sdk-xamarin.md
     - name: Intune 데이터 웨어하우스 사용
       href: reports-nav-create-intune-reports.md

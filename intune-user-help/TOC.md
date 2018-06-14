@@ -137,6 +137,7 @@
 ### [수동으로 장치 동기화](sync-your-device-manually-windows.md)
 
 ### [Windows의 일반적인 문제 해결](troubleshoot-your-device-windows.md)
+### [액세스 지점 제한 해결](resolve-access-point-restrictions.md)
 #### [내 Windows 10 장치가 등록되지 않음](troubleshoot-your-windows-10-device-windows.md)
 #### [Windows 장치 업데이트](you-need-to-update-your-windows-device.md)
 #### [회사 포털 앱에서 로그 전송](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [장치 제거](remove-your-device-cpwebsite.md)
 ### [장치 암호 재설정](reset-your-passcode-cpwebsite.md)
 ### [장치 재설정 및 지우기](reset-erase-your-device-cpwebsite.md)
-### [수동으로 장치 동기화](sync-your-device-manually-cpwebsite.md)
