@@ -189,6 +189,10 @@
               href: apple-configurator-enroll-ios.md
         - name: macOS 등록 설정
           href: macos-enroll.md
+        - name: Windows PC에 Intune 소프트웨어 클라이언트 설치
+          href: install-the-windows-pc-client-with-microsoft-intune.md
+        - name: 장치 등록 문제 해결
+          href: troubleshoot-device-enrollment-in-intune.md
     - name: 장치 관리
       href: device-management.md
       items:
@@ -259,6 +263,8 @@
                   href: lob-apps-windows-phone.md
                 - name: Windows LOB 앱
                   href: lob-apps-windows.md
+                - name: Windows LOB 앱 사이드로드
+                  href: app-sideload-windows.md
                 - name: macOS LOB 앱
                   href: lob-apps-macos.md
             - name: 웹앱
@@ -678,8 +684,6 @@
               href: custom-settings-windows-holographic.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
-        - name: Windows 기간 업무 앱 사이드로드
-          href: app-sideload-windows.md
 - name: 개발자 지침
   items:
     - name: Intune 앱 SDK를 사용하여 앱 보호
