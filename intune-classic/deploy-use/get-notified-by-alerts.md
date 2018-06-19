@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021067"
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>경고를 사용하여 Microsoft Intune 알림 받기
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021016"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>사용자 및 데이터 액세스를 관리하는 그룹 만들기
 

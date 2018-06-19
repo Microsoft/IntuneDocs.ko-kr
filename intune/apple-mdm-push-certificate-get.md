@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025674"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM 푸시 인증서 가져오기
 

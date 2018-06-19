@@ -19,6 +19,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31833351"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>문제 해결 포털을 사용하여 회사 내 사용자 지원
 

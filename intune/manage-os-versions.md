@@ -1,21 +1,22 @@
 ---
-title: "Microsoft Intune을 사용하여 운영 체제 버전 관리"
-description: "Microsoft Intune을 사용하여 여러 플랫폼에서 운영 체제 버전을 관리하는 방법을 알아봅니다."
-keywords: 
+title: Microsoft Intune을 사용하여 운영 체제 버전 관리
+description: Microsoft Intune을 사용하여 여러 플랫폼에서 운영 체제 버전을 관리하는 방법을 알아봅니다.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 ms.openlocfilehash: 1e5b902053290c314aa53b8f17f11ff92247d37e
 ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29720309"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune을 사용하여 운영 체제 버전 관리
 최신 모바일 및 데스크톱 플랫폼에서 주요 업데이트, 패치 및 새 버전은 빠른 속도로 출시됩니다. Windows에서는 업데이트와 패치를 완벽하게 관리할 수 있는 컨트롤이 있지만, iOS 및 Android와 같은 다른 플랫폼에서는 최종 사용자가 프로세스에 참여해야 합니다.  Microsoft Intune에는 다양한 플랫폼에서 운영 체제 버전 관리를 구성하는 데 도움이 되는 기능이 있습니다.

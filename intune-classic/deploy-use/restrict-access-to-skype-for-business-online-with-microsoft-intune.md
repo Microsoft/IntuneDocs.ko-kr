@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31022716"
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Microsoft Intune을 사용하여 비즈니스용 Skype Online에 대한 액세스 보호
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 모바일 장치의 Exchange 액세스 규칙
 description: EAS를 통한 장치 연결을 허용하거나 차단할 Exchange ActiveSync 액세스 규칙
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018739"
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>모바일 장치의 Exchange 액세스 규칙
 

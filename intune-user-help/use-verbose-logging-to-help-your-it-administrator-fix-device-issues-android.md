@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016767"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>자세한 정보 로깅으로 회사 지원팀의 장치 문제 해결 돕기
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31031807"
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>TEM(Telecom Expense Management)에 iOS 장치 등록
 

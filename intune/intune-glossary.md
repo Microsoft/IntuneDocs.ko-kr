@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31026655"
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 용어
 Microsoft Intune에서 사용되는 일반적인 용어의 정의에 대해 알아봅니다.

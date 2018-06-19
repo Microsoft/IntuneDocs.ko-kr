@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025708"
 ---
 # <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>Intune에서 iOS 장치에 대한 Intune 앱 알림 설정 구성
 

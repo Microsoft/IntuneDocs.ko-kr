@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31024416"
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>장치를 보다 쉽게 관리하도록 그룹으로 분류하기
 

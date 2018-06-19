@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30752957"
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>Intune에서 macOS 장치 등록 취소
 

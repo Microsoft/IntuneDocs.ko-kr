@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014183"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>장치가 잠기기까지 걸리는 기간을 설정하는 방법
 

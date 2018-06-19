@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021186"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>사용 중인 Android 장치가 루팅되어 연결할 수 없는 경우
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017039"
 ---
 # <a name="how-to-enable-user-access-control"></a>사용자 계정 컨트롤을 사용하도록 설정하는 방법
 

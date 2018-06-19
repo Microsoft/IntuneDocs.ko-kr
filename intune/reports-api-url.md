@@ -20,6 +20,7 @@ ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/21/2018
+ms.locfileid: "34224231"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 데이터 웨어하우스 API 끝점
 

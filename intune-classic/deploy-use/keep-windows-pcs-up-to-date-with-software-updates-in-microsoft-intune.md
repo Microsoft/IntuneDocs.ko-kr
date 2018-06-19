@@ -1,4 +1,4 @@
-﻿---
+---
 title: Windows PC의 소프트웨어 업데이트
 description: Intune은 최신 패치 및 소프트웨어 업데이트를 빠르게 설치하여 관리되는 컴퓨터를 최신 상태로 유지하도록 도와줍니다.
 keywords: ''
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31029611"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune에서 소프트웨어 업데이트를 사용하여 Windows PC를 최신 상태로 유지
 

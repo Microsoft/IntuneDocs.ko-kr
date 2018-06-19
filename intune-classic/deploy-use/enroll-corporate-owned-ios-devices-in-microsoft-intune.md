@@ -1,4 +1,4 @@
-﻿---
+---
 title: 회사 소유의 iOS 장치 등록
 description: Apple DEP(장치 등록 프로그램) 또는 Apple Configurator를 사용하여 회사 소유 iOS 장치 등록
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31020914"
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Microsoft Intune에서 회사 소유의 iOS 장치 등록
 

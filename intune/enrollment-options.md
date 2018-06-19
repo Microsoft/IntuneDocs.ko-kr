@@ -1,22 +1,23 @@
 ---
-title: "Microsoft Intune에서 관리되는 장치에 대한 등록 옵션"
-titleSuffix: 
-description: "Microsoft Intune에서 관리되는 장치에 대해 관리자가 설정할 수 있는 등록 옵션 목록입니다."
-keywords: 
+title: Microsoft Intune에서 관리되는 장치에 대한 등록 옵션
+titleSuffix: ''
+description: Microsoft Intune에서 관리되는 장치에 대해 관리자가 설정할 수 있는 등록 옵션 목록입니다.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
 ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
 ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29748721"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Intune에서 관리되는 장치에 대한 등록 옵션
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31020778"
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>공유 iOS 장치에서 사용자 제거
 

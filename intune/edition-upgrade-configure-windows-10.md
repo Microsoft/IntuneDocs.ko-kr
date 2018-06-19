@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025436"
 ---
 # <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Intune에서 Windows 10 버전 업그레이드 설정 구성
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

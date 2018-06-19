@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021883"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune에서 사용자 지정 설정을 사용하여 프로필 만들기
 

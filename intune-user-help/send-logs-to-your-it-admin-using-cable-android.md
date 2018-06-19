@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015611"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>USB 케이블을 사용하여 회사 지원팀에 로그 보내기
 

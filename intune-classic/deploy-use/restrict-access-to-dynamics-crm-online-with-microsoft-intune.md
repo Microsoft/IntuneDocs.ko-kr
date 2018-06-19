@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021798"
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Intune을 사용하여 Dynamics CRM Online에 대한 액세스 보호
 

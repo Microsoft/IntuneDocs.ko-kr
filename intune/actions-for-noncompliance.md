@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32017960"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>이메일 자동화 및 비준수 장치 - Intune에 대한 작업 추가
 

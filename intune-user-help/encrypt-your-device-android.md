@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754997"
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>암호화를 사용하여 Android 장치를 보호하는 방법
 

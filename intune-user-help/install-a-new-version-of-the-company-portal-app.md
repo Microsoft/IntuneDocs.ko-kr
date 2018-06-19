@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016444"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>회사 포털 앱을 업데이트하는 방법
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '담당자 전화 지원에 문의 '
 description: 다음은 Microsoft Intune 지원 전화 번호입니다.
 keywords: 업무 시간
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030444"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune의 담당자 전화 지원
 

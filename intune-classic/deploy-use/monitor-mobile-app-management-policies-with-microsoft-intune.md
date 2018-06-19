@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021523"
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune을 사용하여 앱 보호 정책 모니터링
 사용자에게 적용한 앱 보호 정책의 준수 상태를 모니터링할 수 있습니다. 앱 보호 정책, 준수 상태 및 사용자에게 발생할 수 있는 문제의 영향을 받는 사용자에 대한 정보를 확인할 수 있습니다.

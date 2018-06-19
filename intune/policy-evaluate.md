@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018450"
 ---
 # <a name="evaluate-how-many-users-are-targeted-by-a-policy"></a>정책의 대상인 사용자 수 평가
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

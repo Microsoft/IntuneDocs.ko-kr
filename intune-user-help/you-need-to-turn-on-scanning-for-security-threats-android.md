@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073821"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>장치에서 보안 위협 검사 사용 
 자신도 모르게 안전하지 않은 앱을 설치하는 경우 장치 데이터가 위험해질 수 있습니다. 장치에서 데이터를 보호하기 위해 다음을 수행하는 것이 좋습니다. 

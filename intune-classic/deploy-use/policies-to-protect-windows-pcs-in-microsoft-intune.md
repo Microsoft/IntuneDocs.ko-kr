@@ -1,4 +1,4 @@
-﻿---
+---
 title: Windows PC를 보호하는 정책
 description: 이러한 정책을 사용하여 Intune 클라이언트 소프트웨어에 의해 관리될 때 Windows PC의 보안을 보장할 수 있습니다.
 keywords: ''
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015560"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>정책을 사용하여 Intune 클라이언트 소프트웨어를 실행하는 Windows PC를 보호합니다.
 

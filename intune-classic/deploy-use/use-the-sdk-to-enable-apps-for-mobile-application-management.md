@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015305"
 ---
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>SDK를 사용하여 모바일 응용 프로그램 관리에 앱을 사용하도록 설정
 

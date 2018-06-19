@@ -1,4 +1,4 @@
-﻿---
+---
 title: iOS 장치에 Lookout for Work를 설치해야 하는 경우 | Microsoft 문서
 description: iOS용 Lookout for Work를 설치하는 방법에 대해 알아봅니다.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755439"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>iOS 장치에 Lookout for Work 설치
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 회사 프로필을 사용하여 장치 등록 | Microsoft 문서
 description: 작업 프로필을 사용하여 Android 장치를 더 안전하게 만드는 방법.
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30753926"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>업무용 프로필을 만들고 Intune에서 장치 등록
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: iOS에서 Lookout for Work가 발견한 위협 해결 | Microsoft 문서
 description: iOS에서 Lookout for Work로 발견한 위협을 해결하는 방법에 대해 알아봅니다.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30751971"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work가 발견한 위협 해결
 

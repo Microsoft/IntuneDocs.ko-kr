@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exchange에서 관리하는 모바일 장치 초기화
 description: Microsoft Intune을 사용하면 Intune Exchange Connector를 통해 EAS(Exchange ActiveSync)를 사용하여 관리되는 모바일 장치를 초기화하거나 재설정할 수 있습니다.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016087"
 ---
 # <a name="wipe-for-exchange-managed-mobile-devices"></a>Wipe for Exchange-managed mobile devices
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014863"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>회사 포털 앱을 사용하는 동안 오류가 발생하는 경우
 

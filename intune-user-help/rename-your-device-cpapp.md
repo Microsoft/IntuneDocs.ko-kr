@@ -22,6 +22,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915831"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 장치 이름 바꾸기
 다른 장치에서 더 쉽게 인식할 수 있도록 장치 이름을 바꿉니다. Windows용 회사 포털 앱을 사용하면 연결된 Windows, iOS 및 Android 장치의 이름을 바꿀 수 있습니다. 

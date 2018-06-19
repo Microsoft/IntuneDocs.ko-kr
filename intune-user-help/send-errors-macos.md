@@ -22,6 +22,7 @@ ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190522"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>관리되는 macOS 장치를 사용하여 올바른 사람에게 오류 제출
 

@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Intune을 사용한 Check Point SandBlast MTD"
-titlesuffix: 
-description: "회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Check Point SandBlast MTD(Mobile Threat Defense)를 사용하여 Intune을 통합하는 방법을 알아봅니다."
-keywords: 
+title: Microsoft Intune을 사용한 Check Point SandBlast MTD
+titlesuffix: ''
+description: 회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Check Point SandBlast MTD(Mobile Threat Defense)를 사용하여 Intune을 통합하는 방법을 알아봅니다.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29776008"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune과 Check Point SandBlast Mobile Threat Defense 커넥터
 
@@ -58,7 +59,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 
-네트워크에서 **메시지 가로채기(man-in-the-middle)**와 같은 위협을 감지하고 장치 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
+네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 위협을 감지하고 장치 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
 
 **Wi-Fi를 통한 네트워크 액세스 차단:**
 
@@ -70,7 +71,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
 
-네트워크에서 **메시지 가로채기(man-in-the-middle)**와 같은 공격을 감지하여, 장치 위험에 따라 회사 파일 동기화를 금지합니다.
+네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 공격을 감지하여, 장치 위험에 따라 회사 파일 동기화를 금지합니다.
 
 **네트워크 위협이 감지할 경우 SharePoint Online 차단:**
 

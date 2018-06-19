@@ -22,6 +22,7 @@ ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33927324"
 ---
 # <a name="install-apps-on-your-device"></a>장치에 앱 설치
 Windows용 회사 포털 앱에서 장치에 앱을 설치합니다.

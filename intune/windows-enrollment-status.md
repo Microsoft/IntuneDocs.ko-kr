@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6bd5867c41fb5288fde114dbfcc127dd206f7148
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34235623"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>등록 상태 페이지 설정
  

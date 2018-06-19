@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021118"
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>Intune에서 Windows 장치 등록을 취소하면 어떻게 되나요?
 

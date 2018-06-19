@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030262"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune의 담당자 전화 지원
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: GPO 및 Intune 정책 충돌 해결
 description: 그룹 정책 및 Intune 구성 정책 간의 충돌을 해결하는 방법을 알아봅니다.
 keywords: ''
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31031824"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>GPO(그룹 정책 개체) 및 Microsoft Intune 정책 충돌 해결
 

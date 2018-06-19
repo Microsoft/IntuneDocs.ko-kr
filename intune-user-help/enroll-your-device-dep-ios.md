@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016410"
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>장비 등록 프로그램을 통해 Intune에서 iOS 장치 등록
 

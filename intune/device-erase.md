@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31020931"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>macOS 장치에서 모든 데이터 지우기
 

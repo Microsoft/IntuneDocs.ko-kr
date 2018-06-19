@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017804"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>암호가 회사 지원팀의 요구 사항을 충족하지 않음
 

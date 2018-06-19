@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34224401"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 앱 및 전자책 관리
 

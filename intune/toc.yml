@@ -11,6 +11,8 @@
       items:
         - name: 그룹 변경 내용
           href: groups-get-started.md
+        - name: 레거시 Intune PC 클라이언트
+          href: intune-legacy-pc-client.md
     - name: 무료 평가판 등록
       href: free-trial-sign-up.md
     - name: 새로운 기능
@@ -70,6 +72,8 @@
       href: common-scenarios.md
     - name: MAM FAQ
       href: mam-faq.md
+    - name: 정책 및 프로필 FAQ
+      href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 배포 계획
   items:
     - name: 계획 가이드
@@ -176,6 +180,8 @@
           items:
             - name: Android 등록 설정
               href: android-enroll.md
+            - name: Android for Work 장치 관리
+              href: android-enterprise-overview.md
             - name: 삼성 Knox 모바일 등록
               href: android-samsung-knox-mobile-enroll.md
         - name: iOS 등록 설정
@@ -196,6 +202,8 @@
     - name: 장치 관리
       href: device-management.md
       items:
+        - name: 장치 관리 기능
+          href: device-management-capabilities.md
         - name: 활성화 잠금 무시
           href: device-activation-lock-bypass.md
         - name: Windows 새로 시작 관리
@@ -658,6 +666,14 @@
           href: monitor-audit-logs.md
         - name: 앱 보호 로그 검토
           href: app-protection-policy-settings-log.md
+        - name: 메일 프로필 문제 해결
+          href: troubleshoot-email-profiles-in-microsoft-intune.md
+        - name: 소프트웨어 업데이트 문제 해결
+          href: troubleshoot-software-updates-in-microsoft-intune.md
+        - name: Endpoint Protection 문제 해결
+          href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: 정책 문제 해결
+          href: troubleshoot-policies-in-microsoft-intune.md
     - name: 자동화 및 사용자 지정
       items:
         - name: 사용자 지정 장치 설정 구성

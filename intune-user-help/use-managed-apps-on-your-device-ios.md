@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31031654"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS 장치에서 관리되는 앱 사용
 

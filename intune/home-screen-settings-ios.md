@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31832564"
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>iOS를 실행하는 장치에 대해 Microsoft Intune 홈 화면 레이아웃 설정
 

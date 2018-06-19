@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31830419"
 ---
 # <a name="monitor-device-compliance-in-intune"></a>Intune에서 장치 준수 모니터
 

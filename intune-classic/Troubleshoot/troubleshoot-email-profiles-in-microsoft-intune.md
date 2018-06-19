@@ -1,4 +1,4 @@
-﻿---
+---
 title: 메일 프로필 문제 해결
 description: 전자 메일 프로필 문제와 이 문제를 해결하는 방법입니다.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013741"
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune에서 전자 메일 프로필 문제 해결
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755252"
 ---
 # <a name="set-up-access-to-your-company-resources"></a>회사 리소스에 대한 액세스 설정
 

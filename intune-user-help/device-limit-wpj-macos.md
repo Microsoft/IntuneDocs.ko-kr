@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754317"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>등록할 수 있는 장치의 한도에 도달했음
 

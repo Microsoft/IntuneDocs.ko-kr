@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018076"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Windows 장치의 운영 체제 버전이 아직 지원되지 않는 경우
 

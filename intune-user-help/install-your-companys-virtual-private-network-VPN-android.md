@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014013"
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>회사의 VPN(가상 사설망)을 설치하는 방법
 

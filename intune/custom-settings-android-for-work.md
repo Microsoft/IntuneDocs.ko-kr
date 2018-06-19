@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31832952"
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work 장치에 대한 Intune 사용자 지정 프로필 설정 만들기
 

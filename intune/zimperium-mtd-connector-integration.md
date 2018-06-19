@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Intune과 Zimperium MTD 통합"
-titleSuffix: 
-description: "회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Microsoft Intune을 사용하여 Zimperium MTD(Mobile Threat Defense) 솔루션을 설정하는 방법입니다."
-keywords: 
+title: Microsoft Intune과 Zimperium MTD 통합
+titleSuffix: ''
+description: 회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Microsoft Intune을 사용하여 Zimperium MTD(Mobile Threat Defense) 솔루션을 설정하는 방법입니다.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29777622"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Intune 및 Zimperium 통합
 

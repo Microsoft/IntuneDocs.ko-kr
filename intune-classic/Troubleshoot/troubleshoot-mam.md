@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028780"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>모바일 응용 프로그램 관리 문제 해결
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327809"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Android 장치에 SandBlast Mobile Protect를 설치해야 함
 

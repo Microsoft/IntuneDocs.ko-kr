@@ -21,6 +21,7 @@ ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "34308877"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>장치를 등록하면 회사에 어떤 정보가 표시되나요?
 

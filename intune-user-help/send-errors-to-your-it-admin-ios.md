@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327707"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS 장치의 문제에 대해 회사 지원팀에 오류 보내기
 경우에 따라 iOS 장치에서 회사 포털 앱을 사용하는 동안 오류가 발생할 수 있습니다. 이 경우 회사의 지원 담당자에게 오류에 대한 세부 정보를 이메일 발송할 수 있습니다. 이러한 세부 정보는 사용자에 대한 문제를 해결하는 데 필요한 컨텍스트를 제공합니다.

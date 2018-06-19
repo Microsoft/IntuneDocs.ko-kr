@@ -19,6 +19,7 @@ ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34285027"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune을 사용한 앱 기반 조건부 액세스 정책 설정
 

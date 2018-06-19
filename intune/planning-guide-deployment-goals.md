@@ -1,16 +1,16 @@
 ---
-title: "배포 목적, 목표 및 과제 확인"
+title: 배포 목적, 목표 및 과제 확인
 titlesuffix: Microsoft Intune
-description: "이 문서의 정보를 활용하여 Microsoft Intune 클라우드 전용 구현을 위한 배포 목적, 목표 및 과제를 확인할 수 있습니다."
-keywords: 
+description: 이 문서의 정보를 활용하여 Microsoft Intune 클라우드 전용 구현을 위한 배포 목적, 목표 및 과제를 확인할 수 있습니다.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29961473"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>배포 목적, 목표 및 과제 확인
 

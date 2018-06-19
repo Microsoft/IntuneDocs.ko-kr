@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31029811"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>공유 iPad 장치에 대한 Intune 교육 설정을 구성하는 방법
 

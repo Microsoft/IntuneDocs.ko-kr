@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018365"
 ---
 # <a name="how-to-remove-your-android-device-from-intune"></a>Intune에서 Android 장치를 제거하는 방법
 

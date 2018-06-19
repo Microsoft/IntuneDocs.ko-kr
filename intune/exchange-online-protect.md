@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31022393"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>장치를 관리할 필요 없이 Office 365 Exchange Online 보호
 

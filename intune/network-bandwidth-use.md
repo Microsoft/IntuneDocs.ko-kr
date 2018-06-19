@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31029406"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 네트워크 구성 요구 사항 및 대역폭
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31023685"
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>보고서를 사용하는 Microsoft Intune 작업 이해
 

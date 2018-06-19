@@ -18,6 +18,7 @@ ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34216261"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>iOS 장치 Single Sign-On용 Microsoft Intune 구성
 

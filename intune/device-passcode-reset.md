@@ -18,6 +18,7 @@ ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34216312"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune에서 장치 암호 다시 설정 또는 제거
 

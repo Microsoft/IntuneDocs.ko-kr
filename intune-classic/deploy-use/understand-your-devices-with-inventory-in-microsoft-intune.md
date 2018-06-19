@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31023396"
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Microsoft Intune에서 인벤토리를 사용하는 장치 이해
 

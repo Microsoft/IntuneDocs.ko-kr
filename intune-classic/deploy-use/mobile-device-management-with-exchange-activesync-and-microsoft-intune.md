@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exchange ActiveSync 장치 관리
 description: Exchange Connector를 사용한 EAS(Exchange ActiveSync) 관리를 통해 모바일 장치 관리
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016750"
 ---
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Microsoft Intune을 사용한 Exchange ActiveSync 모바일 장치 관리
 

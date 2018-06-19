@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755490"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>회사 포털을 사용하여 Windows 장치를 다시 설정하면 어떻게 되나요?
 

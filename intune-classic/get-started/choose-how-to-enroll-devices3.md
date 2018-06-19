@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025606"
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>모바일 장치를 등록하는 방법 선택
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Intune 소프트웨어 클라이언트를 실행하는 PC의 소프트웨어 사용권 계약 관리
 description: Intune에서는 Microsoft 볼륨 라이선스 계약을 통해 구매한 소프트웨어와 다른 방법으로 구매한 소프트웨어에 대한 사용권 계약을 관리할 수 있습니다.
 keywords: ''
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030091"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune에서 Windows PC 소프트웨어의 사용권 계약 관리
 

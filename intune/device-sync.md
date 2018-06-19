@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31833368"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>장치를 동기화하여 Intune에서 최신 정책과 작업 가져오기
 

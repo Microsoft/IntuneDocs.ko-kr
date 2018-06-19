@@ -20,6 +20,7 @@ ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32046420"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Intune과 Symantec Endpoint Protection Mobile 통합 설정
 

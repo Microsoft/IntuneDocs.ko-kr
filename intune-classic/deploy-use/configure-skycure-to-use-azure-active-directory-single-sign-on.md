@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015220"
 ---
 # <a name="configure-skycure-to-use-azure-active-directory-single-sign-on-sso"></a>Azure Active Directory SSO(Single Sign-On)을 사용하도록 Skycure 구성
 

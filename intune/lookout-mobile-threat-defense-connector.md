@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Intune을 사용한 Lookout MTD 커넥터"
-titlesuffix: 
-description: "회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Lookout MTD(모바일 위협 방어)를 사용하여 Intune을 통합하는 방법을 알아봅니다."
-keywords: 
+title: Microsoft Intune을 사용한 Lookout MTD 커넥터
+titlesuffix: ''
+description: 회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Lookout MTD(모바일 위협 방어)를 사용하여 Intune을 통합하는 방법을 알아봅니다.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29775786"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Intune과 Lookout 모바일 위협 방어 커넥터
 

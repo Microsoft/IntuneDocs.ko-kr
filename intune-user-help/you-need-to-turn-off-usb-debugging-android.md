@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021783"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>USB 디버깅 옵션을 해제해야 함
 

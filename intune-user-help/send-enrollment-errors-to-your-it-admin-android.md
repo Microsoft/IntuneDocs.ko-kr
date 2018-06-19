@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016733"
 ---
 # <a name="send-enrollment-errors-to-your-company-support"></a>회사 지원팀에 등록 오류 보내기
 

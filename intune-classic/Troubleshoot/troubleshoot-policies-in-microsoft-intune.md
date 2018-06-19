@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018110"
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Microsoft Intune의 정책 문제 해결
 

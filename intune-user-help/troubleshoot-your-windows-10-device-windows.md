@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018178"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 장치 등록 문제 해결
 [Intune에서 Windows 10 Mobile 또는 Windows 10 데스크톱 장치 등록](enroll-your-w10-phone-or-w10-pc-windows.md)의 단계를 수행했지만 여전히 회사 또는 학교 전자 메일/파일에 액세스할 수 없다면 다음 문제 해결 단계를 시도하세요.

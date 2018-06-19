@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31836930"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune 장치 관리란?
 

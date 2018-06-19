@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016308"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>설정 앱의 회사 지원팀에 Windows 10에 대한 로그 보내기
 

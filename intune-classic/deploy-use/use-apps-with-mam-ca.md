@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018484"
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>앱 기반 CA가 적용된 앱을 사용할 경우 어떤가요?
 

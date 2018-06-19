@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754623"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>회사 포털 개발자에게 iOS 장치에 대한 로그 보내기
 

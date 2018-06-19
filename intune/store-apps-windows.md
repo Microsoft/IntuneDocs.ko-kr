@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34224265"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Intune에 Microsoft Store 앱 추가
 

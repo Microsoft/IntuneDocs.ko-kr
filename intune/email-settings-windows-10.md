@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31831161"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>Windows 10을 실행하는 장치용 Microsoft Intune에서 이메일 프로필 설정
 

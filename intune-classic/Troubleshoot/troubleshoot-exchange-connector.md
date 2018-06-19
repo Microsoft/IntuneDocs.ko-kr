@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exchange Connector 문제 해결
 description: Intune Exchange 커넥터와 관련된 문제를 해결합니다.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015033"
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector 문제 해결
 

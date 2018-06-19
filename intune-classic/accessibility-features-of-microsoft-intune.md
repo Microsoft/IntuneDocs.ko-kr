@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013061"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune의 내게 필요한 옵션 기능
 Microsoft Windows의 내게 필요한 옵션 기능과 도구 외에 다음 바로 가기 키를 사용해서도 장애가 있는 사용자가 Microsoft Intune을 더욱 쉽게 사용할 수 있습니다.

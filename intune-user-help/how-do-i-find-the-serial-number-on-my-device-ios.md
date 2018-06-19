@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014897"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>장치에 일련 번호를 찾으려면 어떻게 하나요?
 

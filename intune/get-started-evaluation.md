@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31831686"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune이 회사를 위해 할 수 있는 일은 무엇일까요?
 

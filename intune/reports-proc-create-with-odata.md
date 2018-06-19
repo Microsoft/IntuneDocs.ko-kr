@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34224854"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 보고서 만들기
 
