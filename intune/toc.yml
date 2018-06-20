@@ -674,6 +674,10 @@
           href: troubleshoot-endpoint-protection-in-microsoft-intune.md
         - name: 정책 문제 해결
           href: troubleshoot-policies-in-microsoft-intune.md
+        - name: 조건부 액세스 문제 해결
+          href: troubleshoot-conditional-access.md
+        - name: Exchange Connector 문제 해결
+          href: troubleshoot-exchange-connector.md
     - name: 자동화 및 사용자 지정
       items:
         - name: 사용자 지정 장치 설정 구성
