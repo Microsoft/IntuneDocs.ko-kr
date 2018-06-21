@@ -135,6 +135,7 @@
 ### [장치를 초기화하면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-windows.md)
 ### [수동으로 장치 동기화](sync-your-device-manually-windows.md)
+### [Windows 10 장치에서 원격으로 장치 잠금](remote-lock-your-device-cp-app.md) 
 
 ### [Windows의 일반적인 문제 해결](troubleshoot-your-device-windows.md)
 ### [액세스 지점 제한 해결](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [UAC를 사용하도록 설정해야 하는 경우](you-need-to-enable-uac-windows.md)
 #### [Windows를 업데이트해야 하는 경우](you-need-to-update-os-build-version-windows.md)
 #### [Windows Defender를 켜야 하는 경우](turn-on-defender-windows.md)
-## [Windows용 회사 포털 앱에서 장치를 원격으로 잠금](remote-lock-your-device-cp-app.md) 
+
 ## [Intune 회사 포털 웹 사이트 사용](using-the-intune-company-portal-website.md)
 ### [장치 원격 잠금](remote-lock-your-device-cpwebsite.md)
 ### [장치 이름 바꾸기](rename-your-device-cpwebsite.md)
