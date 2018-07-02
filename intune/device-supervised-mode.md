@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09b94ad2109c41ad02e8da7267690c31ba296bae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 183acfc36e77aab85fa086452e00561c521dd830
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34475611"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>iOS 감독 모드 설정
 
@@ -33,7 +34,7 @@ Intune은 Apple [DEP(장치 등록 프로그램)](device-enrollment-program-enro
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>등록 중 감독 모드 설정
 
-Intune에서 [DEP에 Apple 등록 프로필을 만들](https://docs.microsoft.com/en-us/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile) 때 장치에 대해 감독 모드를 설정할 수 있습니다. **장치 관리 설정** 아래에서 **감독 됨** 상자를 확인합니다.
+Intune에서 [DEP에 Apple 등록 프로필을 만들](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile) 때 장치에 대해 감독 모드를 설정할 수 있습니다. **장치 관리 설정** 아래에서 **감독 됨** 상자를 확인합니다.
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>등록 후 감독 모드 설정
 

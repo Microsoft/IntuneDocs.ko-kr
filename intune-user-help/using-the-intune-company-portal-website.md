@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca19c189a48e8173232cfe6fde9e33eb6fb1090
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762232"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune 회사 포털 웹 사이트 사용
 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)는 최종 사용자가 Intune에서 등록한 컴퓨터와 장치를 관리하는 데 사용할 수 있는 웹 페이지입니다.
@@ -37,8 +38,6 @@ ms.lasthandoff: 04/16/2018
 -   [장치 암호 재설정](reset-your-passcode-cpwebsite.md)
 
 -   [장치 원격 잠금](remote-lock-your-device-cpwebsite.md)
-
--   [앱을 더 신속하게 설치하도록 수동으로 장치 동기화](sync-your-device-manually-cpwebsite.md)
 
 -   회사 지원팀의 연락처 정보를 구성한 경우 찾기
 
