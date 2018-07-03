@@ -557,6 +557,11 @@
               items:
                 - name: Zimperium 및 Intune 통합
                   href: zimperium-mtd-connector-integration.md
+            - name: Pradeo 설정
+              href: pradeo-mobile-threat-defense-connector.md
+              items:
+                - name: Pradeo와 Intune 통합
+                  href: pradeo-mtd-connector-integration.md
             - name: MTD를 위한 Intune 설정
               items:
                 - name: MTD 앱 추가
