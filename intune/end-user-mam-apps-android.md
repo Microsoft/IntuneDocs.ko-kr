@@ -14,12 +14,12 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 88fa0d58bc982148b44233e7486a4ce0a2e8598a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e479ae9e3cd2caf6b893cb75f9af8fde2340f0c
+ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023039"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37133989"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 앱이 앱 보호 정책에 의해 관리될 때 예상되는 상황
 
@@ -72,9 +72,9 @@ Google Play 스토어에서 이 앱을 다운로드합니다.
 * **문서:** PDF, PPDF
 
 
-|**pfile**|**텍스트**|
-|----|----|
-|pfile은 암호화된 콘텐츠와 Azure Information Protection 라이선스를 캡슐화하는 보호된 파일용 일반 "래퍼" 형식입니다. pfile을 사용하면 모든 파일 형식을 보호할 수 있습니다.|XML, CSV 등을 포함하는 텍스트 파일은 보호되는 경우에도 앱에서 열어서 볼 수 있습니다. 해당하는 파일 형식은 .txt, .ptxt, .csv, .pcsv, .log, .plog, .xml, .pxml입니다.|
+|**pfile**|
+|----|
+|pfile은 암호화된 콘텐츠와 Azure Information Protection 라이선스를 캡슐화하는 보호된 파일용 일반 "래퍼" 형식입니다. pfile을 사용하면 모든 파일 형식을 보호할 수 있습니다.|
 
 ## <a name="next-steps"></a>다음 단계
 [iOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황](end-user-mam-apps-ios.md)
