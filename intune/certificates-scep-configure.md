@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
+ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745029"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36297908"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -36,12 +36,16 @@ ms.locfileid: "34745029"
 - **NDES 서버**: Windows Server 2012 R2 이상을 실행하는 서버에 NDES(네트워크 장치 등록 서비스)를 설치해야 합니다. 엔터프라이즈 CA를 실행하는 서버에 NDES가 실행되는 경우 Intune는 사용을 지원하지 않습니다. 네트워크 장치 등록 서비스를 호스트하도록 Windows Server 2012 R2를 구성하는 방법에 대한 지침은 [네트워크 장치 등록 서비스 지침](http://technet.microsoft.com/library/hh831498.aspx)을 참조하세요.
 NDES 서버는 CA를 호스트하는 도메인에 가입해야 하며 CA와 동일한 서버에 있지 않아야 합니다. 별도의 포리스트, 격리된 네트워크 또는 내부 도메인에 NDES 서버를 배포하는 방법에 대한 자세한 내용은 [네트워크 장치 등록 서비스와 함께 정책 모듈 사용](https://technet.microsoft.com/library/dn473016.aspx) 항목에서 찾아볼 수 있습니다.
 
-- **Microsoft Intune 인증서 커넥터**: Azure Portal을 사용하여 **인증서 커넥터** 설치 관리자(**ndesconnectorssetup.exe**)를 다운로드합니다. 그런 다음, 인증서 커넥터를 설치하려는 NDES(Network Device Enrollment Service) 역할을 호스트하는 서버에서 **ndesconnectorssetup.exe**를 실행할 수 있습니다. 
+- **Microsoft Intune Certificate Connector**: Azure Portal을 사용하여 **인증서 커넥터** 설치 관리자(**NDESConnectorSetup.exe**)를 다운로드합니다. 그런 다음, 인증서 커넥터를 설치하려는 NDES(Network Device Enrollment Service) 역할을 호스트하는 서버에서 **NDESConnectorSetup.exe**를 실행할 수 있습니다.
+
+  - NDES 인증서 커넥터는 FIPS(Federal Information Processing Standard) 모드도 지원합니다. FIPS가 필수는 아니지만 활성화되면 인증서를 발급하고 해지할 수 있습니다.
+
 - **웹 응용 프로그램 프록시 서버**(선택 사항): Windows Server 2012 R2 이상을 WAP(웹 응용 프로그램 프록시) 서버로 실행하는 서버를 사용합니다. 이 구성의 특징은 다음과 같습니다.
-  -  장치에서 인터넷 연결을 사용하여 인증서를 받을 수 있습니다.
-  -  장치가 인터넷을 통해 연결하여 인증서를 받고 갱신하는 경우 보안상 안전합니다.
+  - 장치에서 인터넷 연결을 사용하여 인증서를 받을 수 있습니다.
+  - 장치가 인터넷을 통해 연결하여 인증서를 받고 갱신하는 경우 보안상 안전합니다.
 
 #### <a name="additional"></a>추가 정보
+
 - WAP를 호스팅하는 서버에는 네트워크 장치 등록 서비스에서 사용하는 긴 URL을 지원할 수 있도록 하는 [업데이트를 설치](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 해야 합니다. 이 업데이트는 [2014년 12월 업데이트 롤업](http://support.microsoft.com/kb/3013769)에 포함되어 있으며, [KB3011135](http://support.microsoft.com/kb/3011135)에서 개별적으로 다운로드할 수도 있습니다.
 - WAP 서버에는 외부 클라이언트에 게시된 이름과 일치하는 SSL 인증서가 있어야 하며 NDES 서버에서 사용되는 SSL 인증서를 신뢰해야 합니다. 이러한 인증서를 통해 WAP 서버는 클라이언트와의 SSL 연결을 종료하고 NDES 서버로의 새 SSL 연결을 생성할 수 있습니다.
 
@@ -71,17 +75,7 @@ NDES 서버는 CA를 호스트하는 도메인에 가입해야 하며 CA와 동�
 |**NDES 서비스 계정**|NDES 서비스 계정으로 사용할 도메인 사용자 계정을 입력합니다.|
 
 ## <a name="configure-your-infrastructure"></a>인프라 구성
-인증서 프로필을 구성하려면 다음 작업을 완료해야 합니다. 이러한 태스크를 수행하려면 Windows Server 2012 R2 및 ADCS(Active Directory 인증서 서비스)에 대한 지식이 있어야 합니다.
-
-**1단계**: NDES 서비스 계정 만들기
-
-**2단계**: 인증 기관에서 인증서 템플릿 구성
-
-**3단계**: NDES 서버에서 필수 구성 요소 구성
-
-**4단계**: Intune에 사용할 수 있도록 NDES 구성
-
-**5단계**: Intune 인증서 커넥터 사용, 설치 및 구성
+인증서 프로필을 구성하려면 다음 단계를 완료해야 합니다. 이러한 단계를 완료하려면 Windows Server 2012 R2 이상 및 ADCS(Active Directory 인증서 서비스)에 대한 지식이 있어야 합니다.
 
 #### <a name="step-1---create-an-ndes-service-account"></a>1단계 - NDES 서비스 계정 만들기
 
@@ -226,7 +220,6 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534(10진수) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534(10진수) |
 
-
 4. IIS 관리자에서 **기본 웹 사이트** > **요청 필터링** > **기능 설정 편집**을 선택합니다. 다음과 같이 **최대 URL 길이** 및 **최대 쿼리 문자열**을 *65534*로 변경합니다.
 
     ![IIS 최대 URL 및 쿼리 길이](./media/SCEP_IIS_max_URL.png)
@@ -291,13 +284,17 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 - 해당 환경의 서버인 NDES(Network Device Enrollment Service) 역할을 호스트하는 서버에서 인증서 커넥터를 다운로드, 설치 및 구성합니다. 조직에서 NDES 구현의 규모를 확대하려면 각 NDES 서버에 Microsoft Intune 인증서 커넥터가 있는 여러 NDES 서버를 설치할 수 있습니다.
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>인증서 커넥터의 다운로드, 설치 및 구성
+
 ![ConnectorDownload](./media/certificates-download-connector.png)
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
 3. **장치 구성**을 선택한 다음, **인증 기관**을 선택합니다.
 4. **추가**를 선택하고 **커넥터 파일을 다운로드**합니다. 설치할 서버에서 액세스할 수 있는 위치에 다운로드를 저장합니다.
-5. 다운로드가 완료되면 NDES(Network Device Enrollment Service) 역할을 호스트하는 서버에서 다운로드한 설치 관리자(**ndesconnectorssetup.exe**)를 실행합니다. 설치 관리자가 NDES에 대한 정책 모듈 및 CRP 웹 서비스도 설치합니다. CRP 웹 서비스 CertificateRegistrationSvc는 IIS에서 응용 프로그램으로 실행됩니다.
+5. 다운로드가 완료되면 NDES(네트워크 장치 등록 서비스) 역할을 호스트하는 서버로 이동합니다. 그런 다음:
+
+    1. NDES 인증서 커넥터에 필요하므로 .NET 4.5 Framework가 설치되어 있는지 확인합니다. .NET 4.5 Framework는 Windows Server 2012 R2 및 최신 버전에 자동으로 포함됩니다.
+    2. 설치 관리자(**NDESConnectorSetup.exe**)를 실행합니다. 설치 관리자가 NDES에 대한 정책 모듈 및 CRP 웹 서비스도 설치합니다. CRP 웹 서비스 CertificateRegistrationSvc는 IIS에서 응용 프로그램으로 실행됩니다.
 
     > [!NOTE]
     > 독립 실행형 Intune에 NDES를 설치하면 CRP 서비스가 인증서 커넥터와 함께 자동으로 설치됩니다. 구성 관리자와 함께 Intune을 사용할 때는 별도의 사이트 시스템 역할로 인증서 등록 지점을 설치합니다.
@@ -305,7 +302,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 6. 인증서 커넥터용 클라이언트 인증서를 선택하라는 메시지가 표시되면 **선택**을 선택하고 작업 3에서 NDES 서버에 설치한 **클라이언트 인증** 인증서를 선택합니다.
 
     클라이언트 인증 인증서를 선택하고 나면 **Microsoft Intune 인증서 커넥터용 클라이언트 인증서** 화면으로 돌아가게 됩니다. 선택한 인증서는 표시되지 않지만 **다음**을 선택하면 해당 인증서의 속성을 볼 수 있습니다. **다음**을 선택한 다음, **설치**를 선택합니다.
-    
+
     > [!IMPORTANT]
     > Internet Explorer 보안 강화 구성이 사용되는 장치에는 Intune Certificate Connector를 등록할 수 없습니다. Intune Certificate Connector를 사용하려면 [IE 보안 강화 구성을 사용하지 않도록 설정](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)합니다.
 
@@ -335,10 +332,13 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
 
+> [!NOTE]
+> TLS 1.2 지원은 NDES 인증서 커넥터에 포함되어 있습니다. 따라서 NDES 인증서 커넥터가 설치된 서버가 TLS 1.2를 지원하는 경우 TLS 1.2가 사용됩니다. 서버가 TLS 1.2를 지원하지 않으면 TLS 1.1이 사용됩니다. 현재 TLS 1.1은 장치와 서버 간 인증에 사용됩니다.
+
 ## <a name="create-a-scep-certificate-profile"></a>SCEP 인증서 프로필 만들기
 
 1. Azure Portal에서 Microsoft Intune을 엽니다.
-2. **장치 구성**을 선택하고 **프로필**을 선택한 다음, **프로필 만들기**를 선택합니다.
+2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. SCEP 인증서 프로필에 대한 **이름** 및 **설명**을 입력합니다.
 4. **플랫폼** 드롭다운 목록에서 이 SCEP 인증서에 대한 장치 플랫폼을 선택합니다. 현재, 장치 제한 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
    - **OWA(Outlook Web Access)**
@@ -406,12 +406,16 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
     > [!NOTE]
     > iOS의 경우 동일한 인증서 프로필을 사용하는 여러 리소스 프로필을 배포하는 경우 관리 프로필에 인증서의 여러 복사본이 표시됩니다.
-    
-프로필을 할당하는 방법에 대한 내용은 [장치 프로필을 할당하는 방법](device-profile-assign.md)을 참조하세요.
+
+프로필을 할당하는 방법에 대한 자세한 내용은 [장치 프로필 할당](device-profile-assign.md)을 참조하세요.
+
+## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Intune Connector 설정 확인 및 문제 해결
+
+문제를 해결하고 Intune Connector 설정을 확인하려면 [인증 기관 스크립트 샘플](https://aka.ms/intuneconnectorverificationscript)을 참조하세요.
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune Connector 이벤트 및 진단 코드
 
-6.1803.x.x 버전부터 Intune Connector 서비스는 **이벤트 뷰어**(**응용 프로그램 및 서비스 로그** > **Microsoft Intune Connector**)에 이벤트를 기록합니다. 이러한 이벤트를 사용하여 Intune Connector 구성의 잠재적 문제를 해결할 수 있습니다. 이러한 이벤트는 작업의 성공과 실패를 기록하고, IT 관리자가 문제를 해결하는 데 도움이 되는 메시지와 함께 진단 코드를 포함합니다.
+6.1806.x.x 버전부터 Intune Connector 서비스는 **이벤트 뷰어**(**응용 프로그램 및 서비스 로그** > **Microsoft Intune Connector**)에 이벤트를 기록합니다. 이러한 이벤트를 사용하여 Intune Connector 구성의 잠재적 문제를 해결할 수 있습니다. 이러한 이벤트는 작업의 성공과 실패를 기록하고, IT 관리자가 문제를 해결하는 데 도움이 되는 메시지와 함께 진단 코드를 포함합니다.
 
 ### <a name="event-ids-and-descriptions"></a>이벤트 ID 및 설명
 
@@ -430,10 +434,10 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 | 20102 | PkcsCertIssue_Failure  | PKCS 인증서를 발급하지 못했습니다. 이 이벤트와 관련된 장치 ID, 사용자 ID, CA 이름, 인증서 템플릿 이름 및 인증서 지문에 대한 이벤트 세부 정보를 검토하세요. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | 인증서를 해지했습니다. 이 이벤트와 관련된 장치 ID, 사용자 ID, CA 이름 및 인증서 일련 번호에 대한 이벤트 세부 정보를 검토하세요. | 0x00000000, 0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | 인증서를 해지하지 못했습니다. 이 이벤트와 관련된 장치 ID, 사용자 ID, CA 이름 및 인증서 일련 번호에 대한 이벤트 세부 정보를 검토하세요. 자세한 내용은 NDES SVC 로그를 참조하세요.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Download_Success | 인증서 서명, 클라이언트 인증서 다운로드 또는 인증서 해지에 대한 요청을 다운로드했습니다. 다운로드 세부 정보에 대한 이벤트 세부 정보를 검토하세요.  | 0x00000000, 0x0FFFFFFF |
-| 20302 | Download_Failure | 인증서 서명, 클라이언트 인증서 다운로드 또는 인증서 해지에 대한 요청을 다운로드하지 못했습니다. 다운로드 세부 정보에 대한 이벤트 세부 정보를 검토하세요. | 0x00000000, 0x0FFFFFFF |
-| 20400 | Upload_Success | 인증서의 요청 또는 해지 데이터를 업로드했습니다. 업로드 세부 정보에 대한 이벤트 세부 정보를 검토하세요. | 0x00000000, 0x0FFFFFFF |
-| 20402 | Upload_Failure | 인증서의 요청 또는 해지 데이터를 업로드하지 못했습니다. 이벤트 세부 정보 > 업로드 상태를 차례로 검토하여 실패 지점을 확인하세요.| 0x00000000, 0x0FFFFFFF |
+| 20300 | Upload_Success | 인증서의 요청 또는 해지 데이터를 업로드했습니다. 업로드 세부 정보에 대한 이벤트 세부 정보를 검토하세요. | 0x00000000, 0x0FFFFFFF |
+| 20302 | Upload_Failure | 인증서의 요청 또는 해지 데이터를 업로드하지 못했습니다. 이벤트 세부 정보 > 업로드 상태를 차례로 검토하여 실패 지점을 확인하세요.| 0x00000000, 0x0FFFFFFF |
+| 20400 | Download_Success | 인증서 서명, 클라이언트 인증서 다운로드 또는 인증서 해지에 대한 요청을 다운로드했습니다. 다운로드 세부 정보에 대한 이벤트 세부 정보를 검토하세요.  | 0x00000000, 0x0FFFFFFF |
+| 20402 | Download_Failure | 인증서 서명, 클라이언트 인증서 다운로드 또는 인증서 해지에 대한 요청을 다운로드하지 못했습니다. 다운로드 세부 정보에 대한 이벤트 세부 정보를 검토하세요. | 0x00000000, 0x0FFFFFFF |
 | 20500 | CRPVerifyMetric_Success  | 인증서 등록 지점에서 클라이언트 요청을 확인했습니다. | 0x00000000, 0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | 인증서 등록 지점에서 완료했지만 요청을 거부했습니다. 자세한 내용은 진단 코드 및 메시지를 참조하세요. | 0x00000000, 0x00000411, 0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | 인증서 등록 지점에서 클라이언트 챌린지를 확인하지 못했습니다. 자세한 내용은 진단 코드 및 메시지를 참조하세요. 챌린지에 해당하는 장치 ID에 대한 이벤트 메시지 세부 정보를 참조하세요. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |

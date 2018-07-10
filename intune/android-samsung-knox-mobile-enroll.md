@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88cb733c688019b2fc5455a0184e968d91e77806
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
+ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915814"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964711"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 장치 자동 등록
 
@@ -120,6 +120,8 @@ MDM 프로필을 만들고 할당하고, 사용자 이름을 연결하고, Intun
 - **Google 장치 소유자 모드:** KME를 사용하여 Google 장치 소유자 모드에서 등록하는 기능은 이 미리 보기에서 지원되지 않습니다. 이 시나리오는 현재 조사 중입니다.
 
 - **“암호” 필드가 무시됨:** Knox 포털의 **장치 세부 정보**에서 채워져 있는 **암호** 필드는 Intune 회사 포털 앱에서 무시됩니다. 장치 등록을 완료하려면 최종 사용자가 장치에서 암호를 입력해야 합니다.
+
+- **"Android Enterprise 등록** KME는 Android Enterprise 등록을 지원하지 않습니다.
 
 ## <a name="getting-support"></a>지원 받기
 [삼성 KME에 대한 지원을 받는 방법](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm)에 대해 자세히 알아보세요.

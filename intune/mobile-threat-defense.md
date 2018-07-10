@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d840bf62682621e4ec3848538a96066c0fd228fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 8c8fa146f01caae08f35ae824563ceb328c9d7f4
+ms.sourcegitcommit: 7daa778b3a5adb41acfe23495cb63754afda1c58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046267"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123404"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune과 Mobile Threat Defense의 통합이란?
 
@@ -41,10 +41,12 @@ Intune 모바일 위협 방어 커넥터를 사용하면 선택한 모바일 위
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune은 Mobile Threat Defense를 위해 어떤 데이터를 수집하나요?
 
-Intune은 개인 및 회사 소유 장치 모두에서 앱 인벤토리 정보를 수집하여 Lookout for Work와 같은 MTD(Mobile Thread Defense) 공급자가 페치할 수 있도록 합니다. iOS 11+ 장치의 사용자로부터 앱 인벤토리를 수집할 수 있습니다.
+사용 설정하면 Intune이 개인 및 회사 소유 장치 모두에서 앱 인벤토리 정보를 수집하여 Lookout for Work와 같은 MTD(Mobile Threat Defense) 공급자가 페치할 수 있도록 합니다. iOS 장치의 사용자로부터 앱 인벤토리를 수집할 수 있습니다.
+
+이 서비스는 옵트인된 것입니다. 기본적으로 앱 인벤토리 정보는 공유되지 않습니다. Intune 관리자는 앱 인벤토리 정보를 공유하기 전에 서비스 설정에서 iOS 장치에 대한 앱 동기화를 설정해야 합니다.
 
 **앱 인벤토리**  
-회사 소유의 iOS 11+ 및 개인적으로 소유한 장치 모두의 인벤토리가 사용자의 MTD 서비스 공급자에게 전송됩니다. 앱 인벤토리의 데이터에는 다음이 포함됩니다.
+iOS 장치용 앱 동기화를 사용하면 회사 및 개인 소유 iOS 장치 모두의 인벤토리가 MTD 서비스 공급자에게 전송됩니다. 앱 인벤토리의 데이터에는 다음이 포함됩니다.
 
  - 앱 ID
  - 앱 버전
@@ -53,7 +55,7 @@ Intune은 개인 및 회사 소유 장치 모두에서 앱 인벤토리 정보�
  - 앱 번들 크기
  - 앱 동적 크기
  - 앱의 유효성 검사 여부
- - 앱의 관리 여부
+ - 앱이 관리되는지 여부
 
 ## <a name="sample-scenarios"></a>샘플 시나리오:
 
@@ -76,3 +78,4 @@ Mobile Threat Defense 솔루션에서 장치가 감염된 것으로 간주되는
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
+- [Pradeo](pradeo-mobile-threat-defense-connector.md)

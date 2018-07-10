@@ -1,25 +1,26 @@
 ---
-title: "Jamf 장치에 대한 장치 준수 정책"
+title: Jamf 장치에 대한 장치 준수 정책
 titlesuffix: Microsoft Intune
-description: "보안 Jamf 관리 장치를 도우려면 Azure Active Directory의 조건부 액세스와 함께 Microsoft Intune 준수 정책을 사용합니다."
-keywords: 
+description: 보안 Jamf 관리 장치를 도우려면 Azure Active Directory의 조건부 액세스와 함께 Microsoft Intune 준수 정책을 사용합니다.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482338"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro로 관리되는 Mac에서 준수 적용
 
@@ -34,6 +35,9 @@ Azure Active Directory 및 Microsoft Intune의 조건부 액세스 정책을 사
 
 1. Microsoft Azure를 열고 **Intune** > **장치 준수** > **정책**으로 이동합니다. 비준수 사용자 및 그룹에 대한 일련의 작업(예: 경고 메일 보내기) 선택을 포함하여 macOS에 대한 정책을 만들 수 있습니다.
 2. 원하는 그룹을 검색한 후 정책을 적용합니다.
+
+> [!Note]
+> Intune에서 정책을 준수하려면 전체 디스크 암호화가 필요합니다.
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Jamf Pro에서 macOS용 회사 포털 앱 배포
 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/18/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 2effa1d63be57c938a4e5763090bce8f20f48192
+ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042806"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -84,7 +85,7 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
    > [!NOTE]
    > 프레임워크를 사용하는 경우 앱을 앱 스토어에 제출하기 전에 수동으로 범용 프레임워크에서 시뮬레이터 아키텍처를 제거해야 합니다. 자세한 내용은 [앱 스토어에 앱 제출](#Submit-your-app-to-the-App-Store)을 참조하세요.
 
-2. **옵션 2**: `libIntuneMAM.a` 라이브러리에 연결합니다. 프로젝트 대상의 **연결된 프레임워크 및 라이브러리** 목록으로 `libIntuneMAM.a` 라이브러리를 끌어옵니다.
+   **옵션 2**: `libIntuneMAM.a` 라이브러리에 연결합니다. 프로젝트 대상의 **연결된 프레임워크 및 라이브러리** 목록으로 `libIntuneMAM.a` 라이브러리를 끌어옵니다.
 
     ![Intune 앱 SDK iOS - 연결된 프레임워크 및 라이브러리](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -99,7 +100,7 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
 
      ![Intune 앱 SDK iOS - 번들 리소스 복사](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-     프로젝트에 다음 iOS 프레임워크를 추가합니다.  
+2. 프로젝트에 다음 iOS 프레임워크를 추가합니다.  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
@@ -152,6 +153,9 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
    |- o |  (선택 사항) `<Path to the output plist>` |
 
 '-o' 매개 변수를 지정하지 않으면 입력 파일이 현재 위치에서 수정됩니다. 이 도구는 멱등적이며 앱의 Info.plist 또는 자격을 변경할 때마다 다시 실행해야 합니다. 또한 Info.plist 구성 요구 사항이 최신 릴리스에서 변경된 경우 Intune SDK를 업데이트할 때 최신 버전의 도구를 다운로드하여 실행해야 합니다.
+
+> [!NOTE]
+> 앱에서 이미 FaceID를 사용하지 않는 경우 `NSFaceIDUsageDescription` info.plist 키가 기본 메시지로 구성되었는지 확인합니다. 이는 iOS가 앱이 FaceID를 어떻게 사용하려고 하는지 사용자에게 알려주기 위해 필요합니다. Intune 앱 보호 정책 설정을 사용하면 IT 관리자가 구성할 때 FaceID를 앱 액세스 방법으로 사용할 수 있습니다.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure ADAL(Active Directory 인증 라이브러리) 구성
 

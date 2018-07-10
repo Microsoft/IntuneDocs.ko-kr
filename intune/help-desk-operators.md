@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 5d924e216dd6d0fe13bc4c7718b5368db1d35f8c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833351"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36329878"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>문제 해결 포털을 사용하여 회사 내 사용자 지원
 
@@ -234,6 +234,15 @@ Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리�
 | 장치 유형 | 장치 유형의 이름                                                       |
 | 정책    | 장치 소유권의 유형 - **회사**, **개인** 및 **알 수 없음**일 수 있습니다. |
 | 마지막 동기화   | 장치가 Intune과 마지막으로 동기화한 타임스탬프                   |
+
+## <a name="collect-available-data-from-mobile-device"></a>모바일 장치에서 사용 가능한 데이터 수집
+
+사용자의 장치 문제를 해결할 때 다음 리소스를 사용하여 장치 데이터를 수집할 수 있습니다.
+  - [IT 관리자에게 iOS 등록 오류 보내기](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [자세한 정보 로깅으로 회사 지원팀의 장치 문제 해결 돕기](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [USB 케이블을 사용하여 회사 지원팀에 Android 로그 보내기](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [메일을 사용하여 IT 관리자에게 Android 진단 데이터 로그 보내기](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [IT 관리자에게 Android 등록 오류 보내기](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>다음 단계
 

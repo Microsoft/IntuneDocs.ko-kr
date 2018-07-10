@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34444917"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Intune을 사용하여 분실했거나 도난당한 iOS 장치 찾기
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/28/2018
     ![Azure에서 Intune을 사용하여 장치 찾기 스크린샷](./media/locate-device.png)
 
 >[!NOTE]
->개인 정보 보호 차원에서 맵을 확대할 수 있는 거리가 제한됩니다.
+>개인 정보 보호 차원에서 맵을 확대할 수 있는 거리가 반경 300미터로 제한됩니다.
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>iOS 장치에서 분실 모드 알림음 활성화
 
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/28/2018
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>분실 모드의 보안 및 개인 정보와 장치 찾기 작업
 - 이 작업을 켤 때까지 장치 위치 정보는 Intune에 전송되지 않습니다.
-- 장치 찾기 작업을 사용하면 장치의 위도/경도 좌표가 Intune으로 전송되고 Azure Portal에 표시됩니다.
+- 장치 찾기 작업을 사용하는 경우 Graph API를 사용하여 장치의 위도/경도 좌표를 검색할 수 있습니다.
 - 데이터는 24시간 동안 저장되었다가 제거됩니다. 위치 데이터를 수동으로 제거할 수 없습니다.
 - 위치 데이터는 저장된 동안 및 전송되는 동안 모두 암호화됩니다.
 - 분실 모드를 구성할 때 잠금 화면에 표시되는 메시지를 사용자 지정할 수 있습니다. 이 메시지에서 장치를 찾는 사용자를 돕기 위해 분실된 장치를 반환하는 특정 세부 정보를 포함해야 합니다.

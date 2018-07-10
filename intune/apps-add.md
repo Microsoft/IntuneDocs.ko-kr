@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744995"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263407"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가
 
@@ -56,8 +56,8 @@ Intune은 다양한 앱 유형을 지원합니다. 사용 가능한 옵션은 �
 | macOS용 Office 365 앱 | 스토어 앱(Office 365) | **앱 유형**으로 **Office 365 제품군** 아래의 **macOS**를 선택한 다음 Office 365 앱 제품군을 선택합니다. |
 | Android LOB(기간 업무) 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.apk**인 Android 설치 파일을 입력합니다.  |
 | iOS LOB 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.ipa**인 iOS 설치 파일을 입력합니다.  |
-| Windows Phone LOB 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.xap**인 iOS 설치 파일을 입력합니다.  |
-| Windows LOB 앱 | LOB 앱 | 앱 유형으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.msi**, **.appx** 또는 **.appxbundle**인 iOS 설치 파일을 입력합니다. |
+| Windows Phone LOB 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.xap**인 Windows Phone 설치 파일을 입력합니다.  |
+| Windows LOB 앱 | LOB 앱 | 앱 유형으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.msi**, **.appx** 또는 **.appxbundle**인 Windows 설치 파일을 입력합니다. |
 | 기본 제공 iOS 앱  | 기본 제공 앱 | **앱 유형**으로 **기본 제공 앱**을 선택한 다음, 제공된 앱 목록에서 기본 제공 앱을 선택합니다.  |
 | 기본 제공 Android 앱  | 기본 제공 앱 | **앱 유형**으로 **기본 제공 앱**을 선택한 다음, 제공된 앱 목록에서 기본 제공 앱을 선택합니다.  |
 | 웹앱  | 웹앱  | **앱 유형**으로 **웹 링크**를 선택하고 웹앱을 가리키는 유효한 URL을 입력합니다.  |

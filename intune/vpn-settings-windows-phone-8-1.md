@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3572022b491439d2cf624b2ed3f1d53ffaf54d7d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291447"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1을 실행하는 장치용 Microsoft Intune에서 VPN 설정 구성
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/26/2018
 - **역할**(Pulse Secure만) - 이 연결에 대한 액세스 권한이 있는 사용자 역할의 이름을 지정합니다. 사용자 역할은 개인 설정과 옵션을 정의하고, 특정 액세스 기능을 사용 또는 사용하지 않도록 설정합니다.
 - **영역**(Pulse Secure만) - 사용하려는 인증 영역의 이름을 지정합니다. 인증 영역은 Pulse Secure 연결 형식에서 사용하는 인증 리소스 그룹입니다.
 
-- **DNS 접미사 검색 목록** - 하나 이상의 DNS 접미사를 **추가**합니다. 지정하는 각 DNS 접미사는 짧은 이름을 사용하여 웹 사이트에 연결할 때 검색됩니다. 예를 들어 DNS 접미사 **domain1.contoso.com** 및 **domain2.contoso.com**을 지정하고, URL **http://mywebsite**로 이동하고, **http://mywebsite.domain1.contoso.com** 및 **http://mywebsite.domain2.contoso.com이라는 URL을 검색합니다**.
+- **DNS 접미사 검색 목록** - 하나 이상의 DNS 접미사를 **추가**합니다. 지정하는 각 DNS 접미사는 짧은 이름을 사용하여 웹 사이트에 연결할 때 검색됩니다. 예를 들어 DNS 접미사 **domain1.contoso.com** 및 **domain2.contoso.com**을 지정하고, URL `http://mywebsite`로 이동하고, `http://mywebsite.domain1.contoso.com` 및 `http://mywebsite.domain2.contoso.com`이라는 URL을 검색합니다.
 
 - **사용자 지정 XML** - VPN 연결을 구성하는 사용자 지정 XML 명령을 지정합니다.
 

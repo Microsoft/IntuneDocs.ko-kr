@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032594"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232939"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure에서 Intune 기능은 어디에 있나요?
-Intune 기능을 Azure Portal로 이동하면서 일부 작업을 더 논리적으로 구성할 수 있게 되었습니다. 하지만 개선 작업을 진행할 때마다 항상 새 구성을 학습하는 비용이 발생하게 됩니다. 따라서 클래식 콘솔의 Intune에는 완전히 익숙하지만 Azure Portal의 Intune에서 작업을 수행하는 방법을 궁금해하는 사용자를 위해 이 참조 가이드를 만들었습니다. 찾고 있는 기능이 이 문서에서 다루어지지 않은 경우 Microsoft에서 문서를 업데이트할 수 있도록 문서 하단에 의견을 남겨주세요.
+Intune 기능을 Azure Portal로 이동하면서 일부 작업을 더 논리적으로 구성할 수 있게 되었습니다. 하지만 개선 작업을 진행할 때마다 항상 새 구성을 학습하는 비용이 발생하게 됩니다. 이 참조 가이드는 클래식 포털의 Intune에 완전히 익숙하고 Azure Portal의 Intune에서 작업을 수행하는 방법을 궁금해하는 사용자를 위한 것입니다. 찾고 있는 기능이 이 문서에서 다루어지지 않은 경우 Microsoft에서 문서를 업데이트할 수 있도록 문서 하단에 의견을 남겨주세요.
 ## <a name="quick-reference-guide"></a>빠른 참조 가이드
 
 |기능 |클래식 포털의 경로|Azure Portal의 Intune 경로|
@@ -53,19 +53,29 @@ Azure Portal의 Intune은 [Azure AD(Active Directory)](https://docs.microsoft.co
 
 ![Azure 모바일 장치 등록 제한의 이미지](./media/02-azure-enroll-restrictions.png)
 
-기본 [장치 개수 제한]은 클래식 포털의 [장치 등록 제한]에 해당됩니다.
+기본 장치 개수 제한은 클래식 포털의 장치 등록 제한에 해당됩니다.
 
 ![Azure 장치 개수 제한의 이미지](./media/03-azure-device-limit.png)
 
-기본 [장치 유형 제한]은 클래식 포털의 [플랫폼 제한]에 해당됩니다.
+기본 장치 유형 제한은 클래식 포털의 플랫폼 제한에 해당됩니다.
 
 ![Azure 장치 유형 제한의 이미지](./media/04-azure-platform-restrictions.png)
 
-개인이 소유하는 장치를 허용하거나 차단할 수 있는 기능은 이제 [장치 유형 제한]의 [플랫폼 구성]에서 관리됩니다.
+개인이 소유하는 장치를 허용하거나 차단할 수 있는 기능은 이제 장치 유형 제한의 플랫폼 구성에서 관리됩니다.
 
 ![Azure 개인 장치 차단 설정의 이미지](./media/05-azure-personal-block.png)
 
 새로운 제한 기능은 Azure Portal에만 추가됩니다.
+
+## <a name="where-did-my-conditional-access-policies-go"></a>조건부 액세스 정책은 어디로 이동했습니까?
+테넌트가 Azure Portal로 마이그레이션된 후 테넌트의 조건부 액세스 정책이 계속 적용됩니다. 그러나 Azure Portal에서는 Intune의 조건부 액세스 정책을 보고 수정할 수 없습니다.
+
+Azure Portal에서 조건부 액세스 정책을 보고 변경하려면 클래식 포털에서 이전 정책을 제거해야 합니다. 그런 다음, Azure Portal에서 다시 만듭니다. 조건부 액세스 정책을 마이그레이션하는 방법에 대한 자세한 내용은 [Azure Portal에서 클래식 정책 마이그레이션](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration)을 참조하세요. 
+
+## <a name="where-did-my-compliance-policies-go"></a>준수 정책이 어디로 이동했습니까?
+테넌트가 Azure Portal로 마이그레이션된 후 테넌트의 준수 정책이 계속 적용됩니다. 그러나 Azure Portal에서는 Intune의 조건부 액세스 정책을 보고 수정할 수 없습니다.
+
+Azure Portal에서 준수 정책을 보고 변경하려면 클래식 포털에서 이전 정책을 제거해야 합니다. 그런 다음, Azure Portal에서 다시 만듭니다. 장치 준수 정책에 대한 자세한 내용은 [Intune에서 장치 준수 정책 시작](https://docs.microsoft.com/en-us/intune/known-issues#compliance)을 참조하세요. 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP는 어디에 있나요?
 클래식 포털에서는 Apple 장비 등록 프로그램과 통합되도록 Intune을 설정하고 Apple 서비스와의 동기화를 수동으로 요청할 수 있었습니다.

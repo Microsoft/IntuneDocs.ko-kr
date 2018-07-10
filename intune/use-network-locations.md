@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745139"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843126"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune에서 위치(네트워크 펜스) 사용
 
@@ -35,7 +35,7 @@ ms.locfileid: "34745139"
 2. 이러한 장치를 회사 네트워크에 연결해야 하는 준수 정책을 만들고 이 정책을 할당합니다.
 3. 장치가 제조 공장의 외부로 나가면 장치가 비준수 장치로 간주되어 회사 리소스에 액세스할 수 없게 됩니다.
 
-Intune 정책을 사용하면 비준수 알림을 보내고 장치를 잠글 수 있습니다. 장치가 온-프레미스 및 네트워크 위치에 다시 들어오면 장치 잠금을 해제하고 회사 리소스에 다시 액세스할 수 있습니다.
+또한 [비준수에 대한 작업](#configure-the-actions-for-noncompliance)을 추가할 수 있습니다. 장치가 온-프레미스 및 네트워크 위치에 다시 들어오면 회사 리소스에 다시 액세스할 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 

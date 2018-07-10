@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803842"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune에서 Windows 10(및 이상) 설정을 위한 장치 제한
 이 아티클에서는 Windows 10을 실행하는 장치에 대해 구성할 수 있는 모든 Microsoft Intune 장치 제한 설정을 보여줍니다.
@@ -152,7 +153,7 @@ Windows 10 Mobile을 실행 중인 장치: 지정한 횟수만큼 로그인이 �
 
 -   **Microsoft Edge 브라우저(모바일 전용)** - 장치에서 Edge 웹 브라우저 사용을 허용합니다.
 -   **주소 표시줄 드롭다운(데스크톱 전용)** – 입력 시 Edge에서 드롭다운 목록에 제안 목록을 표시하지 않도록 하려면 이 옵션을 사용합니다. 이렇게 하면 Edge와 Microsoft 서비스 간의 네트워크 대역폭 사용을 최소화할 수 있습니다.
--   **Microsoft 브라우저 간 즐겨찾기 동기화(데스크톱 전용)** – Windows에서 Internet Explorer와 Microsoft Edge 간에 즐겨찾기를 동기화하도록 허용합니다.
+-   **Microsoft 브라우저 간 즐겨찾기 동기화(데스크톱 전용)** – Windows에서 Internet Explorer와 Edge 간에 즐겨찾기를 동기화하도록 허용합니다.
 -   **추적 방지 헤더 보내기** - 사용자가 방문하는 웹 사이트에 Do Not Track 헤더를 보내도록 Edge 브라우저를 구성합니다
 -   **쿠키** - 브라우저에서 장치에 인터넷 쿠키를 저장할 수 있도록 합니다.
 -   **JavaScript** - Edge 브라우저에서 JavaScript 등의 스크립트가 실행되도록 허용합니다.
@@ -167,7 +168,7 @@ Windows 10 Mobile을 실행 중인 장치: 지정한 횟수만큼 로그인이 �
 -   **InPrivate 브라우징** - 최종 사용자가 InPrivate 브라우징 세션을 열 수 없습니다.
 -   **처음 실행 페이지 표시** - Edge를 처음 실행할 때 소개 페이지가 표시되지 않도록 합니다.
     -   **첫 실행 URL** – 사용자가 Edge를 처음 실행할 때 표시되는 페이지의 URL을 지정합니다(Windows 10 Mobile에만 해당).
--   **홈페이지** - Microsoft Edge 브라우저의 홈페이지로 사용할 사이트 목록을 추가합니다(데스크톱 전용).
+-   **홈페이지** - Edge 브라우저의 홈페이지로 사용할 사이트 목록을 추가합니다(데스크톱 전용).
 -   **시작 페이지 변경 내용** – 사용자가 Edge를 열 때 표시되는 시작 페이지를 변경하도록 허용합니다. 홈페이지 설정을 사용하여 Edge를 시작할 때 열리는 페이지 또는 페이지 목록을 만들 수 있습니다.
 -   **About 플래그에 대한 액세스 차단** - 최종 사용자가 개발자 및 실험 설정이 포함된 Edge의 about:flags 페이지에 액세스할 수 없도록 합니다.
 -   **WebRtc 로컬 호스트 IP 주소** - 웹 RTC 프로토콜을 사용하여 전화 통화를 할 때 사용자의 로컬 호스트 IP 주소가 표시되지 않도록 차단합니다.
@@ -249,7 +250,9 @@ Windows 10 Mobile을 실행 중인 장치: 지정한 횟수만큼 로그인이 �
 
   GDI DPI 조정을 사용하면 DPI를 인식하지 않는 앱이 모니터별 DPI 인식 앱이 될 수 있습니다. GDI DPI 조정이 켜져 있는 레거시 앱을 지정합니다. 앱에서 GDI DPI 조정을 켜기 및 끄기 둘 다로 구성하면 앱에 대한 조정이 꺼집니다.
 
-## <a name="kiosk-preview"></a>키오스크(미리 보기)
+## <a name="kiosk-preview---obsolete"></a>키오스크(미리 보기) - 사용되지 않음
+
+이러한 설정은 이동 중이며 다음 릴리스에서 제거됩니다. 새 설정을 사용하려면 [Windows 10 이상에서 키오스크 설정](kiosk-settings.md)을 참조하세요.
 
 키오스크 장치는 일반적으로 하나의 앱 또는 특정 앱 집합을 실행합니다. 사용자는 키오스크 앱의 외부에 있는 장치에서 모든 기능 또는 함수에 액세스할 수 없습니다.
 
@@ -262,9 +265,12 @@ Windows 10 Mobile을 실행 중인 장치: 지정한 횟수만큼 로그인이 �
 #### <a name="single-app-kiosks"></a>단일 앱 키오스크
 다음 설정을 입력합니다.
 
-- **사용자 계정** - 키오스크 앱과 연결된 로컬(장치에 대한) 사용자 계정 또는 Azure AD 계정 로그인을 입력합니다. Azure AD 도메인에 가입된 계정의 경우 `domain\username@tenant.org` 형식을 사용하여 계정을 입력합니다. 
+- **사용자 계정** - 키오스크 앱과 연결된 (장치에 대한) 로컬 사용자 계정, AD 도메인 계정 또는 Azure AD 계정 로그인을 입력합니다.
+  - 로컬 계정: `devicename\accountname`, `.\accountname` 또는 `accountname`으로 입력합니다.
+  - 도메인 계정: `domain\accountname`으로 입력합니다.
+  - Azure AD 계정: `AzureAD\emailaddress`로 입력합니다. 고정 도메인 이름이므로 "AzureAD"를 입력해야 합니다. 그런 다음, Azure AD 이메일 주소를 따릅니다. 예를 들어 다음과 같이 입력합니다. `AzureAD\user@contoso.onmicrosoft.com`
 
-    자동 로그온을 사용할 수 있는 공용 환경의 키오스크에서는 최소한의 권한(예: 로컬 표준 사용자 계정)을 지닌 사용자 유형을 사용해야 합니다. 키오스크 모드에 대해 Azure AD(Active Directory) 계정을 구성하려면 `AzureAD\user@contoso.com` 형식을 사용합니다.
+    자동 로그온을 사용할 수 있는 공용 환경의 키오스크에서는 최소한의 권한(예: 로컬 표준 사용자 계정)을 지닌 사용자 유형을 사용해야 합니다. 키오스크 모드로 Azure AD 계정을 사용하는 경우 `AzureAD\user@yourorganization.com`을 입력해야 합니다.
 
 - **앱의 AUMID(응용 프로그램 사용자 모델 ID)** - 키오스크 앱의 AUMID를 입력합니다. 자세한 내용은 [설치된 앱의 응용 프로그램 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
 

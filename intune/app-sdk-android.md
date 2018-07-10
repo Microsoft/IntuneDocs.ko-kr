@@ -14,11 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ecf7b66be25f0f93456d5419ef1f57b8ca7efe
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34449873"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -462,7 +463,7 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 
 필요한 경우 Authority와 NonBrokerRedirectURI를 지정할 수 있습니다.
 
-Intune SDK 팀은 앱의 응용 프로그램 ID(클라이언트 ID)를 요구합니다. 이것은 [Azure Portal](https://portal.azure.com/)을 통해 확인할 수 있으며 **모든 응용 프로그램** 아래 **응용 프로그램 ID** 열에 나와 있습니다. AAD에 응용 프로그램을 등록하는 방법에 대한 정보는 [여기](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)를 참조하세요. msintuneappsdk@microsoft.com에서 Intune SDK 팀에 연결할 수 있습니다.
+Intune SDK 팀은 앱의 응용 프로그램 ID(클라이언트 ID)를 요구합니다. 이것은 [Azure Portal](https://portal.azure.com/)을 통해 확인할 수 있으며 **모든 응용 프로그램** 아래 **응용 프로그램 ID** 열에 나와 있습니다. Azure AD에 응용 프로그램을 등록하는 방법에 대한 정보는 [여기](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)를 참조하세요. msintuneappsdk@microsoft.com에서 Intune SDK 팀에 연결할 수 있습니다.
 
 [조건부 액세스](#conditional-access)를 위한 요구 사항도 참조하세요.
 
@@ -472,22 +473,30 @@ Intune SDK 팀은 앱의 응용 프로그램 ID(클라이언트 ID)를 요구합
     |--|--|
     | ClientID | 앱의 ClientID(앱을 등록할 때 Azure AD에서 생성함) |
     | SkipBroker | **True** |
+    
+    필요한 경우 Authority와 NonBrokerRedirectURI를 지정할 수 있습니다.
 
-필요한 경우 Authority와 NonBrokerRedirectURI를 지정할 수 있습니다.
 
 ### <a name="conditional-access"></a>조건부 액세스
-조건부 액세스(CA)는 AAD 리소스에 대한 액세스 제어에 사용할 수 있는 Azure Active Directory [기능](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)입니다.  [Intune 관리자는](https://docs.microsoft.com/en-us/intune/conditional-access) Intune에서 관리하는 장치 또는 앱으로부터의 리소스 액세스만 허용하는 CA 규칙을 정의할 수 있습니다. 앱이 적절한 때 리소스에 액세스할 수 있게 하려면 아래 단계를 따라야 합니다. 앱이 AAD 액세스 토큰을 획득하지 않아도 되거나, CA로 보호할 수 없는 리소스에만 액세스하는 경우 이 단계를 생략할 수 있습니다.
+
+조건부 액세스(CA)는 AAD 리소스에 대한 액세스 제어에 사용할 수 있는 Azure Active Directory [기능](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)입니다. [Intune 관리자는](https://docs.microsoft.com/intune/conditional-access) Intune에서 관리하는 장치 또는 앱으로부터의 리소스 액세스만 허용하는 CA 규칙을 정의할 수 있습니다. 앱이 적절한 때 리소스에 액세스할 수 있게 하려면 아래 단계를 따라야 합니다. 앱이 AAD 액세스 토큰을 획득하지 않아도 되거나, CA로 보호할 수 없는 리소스에만 액세스하는 경우 이 단계를 생략할 수 있습니다.
 
 1. [ADAL 통합 지침](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)을 따릅니다. 
    특히 11단계에서 브로커 사용을 참조하세요.
-2. [Azure Active Directory 테넌트에 응용 프로그램 등록](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration). 
-   리디렉션 URI는 위의 ADAL 통합 지침에서 찾을 수 있습니다.
+
+2. [Azure Active Directory에 응용 프로그램을 등록](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)합니다. 리디렉션 URI는 위의 ADAL 통합 지침에서 찾을 수 있습니다.
+
 3. 위의 [공통 ADAL 구성](#common-adal-configurations), 항목 2에 따라 매니페스트 메타데이터 매개 변수를 설정합니다.
-4. [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)에서 [장치 기반 CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use)를 사용하도록 설정하고 확인하여 모든 항목이 제대로 구성되었는지 테스트
-    - 앱에 로그인하면 Intune Company Portal 설치 및 등록을 위한 프롬프트 표시
-    - 등록 후 앱 로그인이 완료됩니다.
-5. 앱이 Intune 앱 SDK 통합을 탑재한 후에는 msintuneappsdk@microsoft.com에 문의하여 [앱 기반 조건부 액세스](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) 승인 앱 목록에 추가되게 합니다.
-6. 앱이 승인 목록에 추가되면 [앱 기반 CA를 구성하고](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create) 앱 로그인이 제대로 완료되는지 확인하여 유효성을 검사합니다.
+
+4. [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)에서 [장치 기반 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)를 사용하도록 설정하고 확인하여 모든 항목이 제대로 구성되었는지 테스트
+* 앱에 로그인하면 Intune Company Portal 설치 및 등록을 위한 프롬프트 표시
+* 등록 후 앱 로그인이 완료됩니다.
+
+5. 앱이 Intune APP SDK 통합을 탑재한 후에는 msintuneappsdk@microsoft.com에 문의하여 [앱 기반 조건부 액세스](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) 승인 앱 목록에 추가되게 합니다.
+
+6. 앱이 승인 목록에 추가되면 [앱 기반 CA를 구성하고](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) 앱 로그인이 제대로 완료되는지 확인하여 유효성을 검사합니다.
+
+
 ## <a name="app-protection-policy-without-device-enrollment"></a>장치 등록이 없는 앱 보호 정책
 
 ### <a name="overview"></a>개요
@@ -1371,7 +1380,6 @@ Android에서 MAM 대상 앱 구성 정책을 만드는 방법에 대한 자세�
 
 ### <a name="how-to-customize"></a>사용자 지정 방법
 Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정의 XML 파일을 만들어야 합니다. 이 파일은 앱의 “/res/xml” 디렉터리에 두어야 하며 원하는 대로 이름을 지정할 수 있습니다. 다음은 이 파일이 따라야 하는 형식의 예입니다.
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1401,7 +1409,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 | 강조 색 | 강조 표시할 때 PIN 상자 테두리 <br> 하이퍼링크 |accent_color | 색상 |
 | 앱 로고 | Intune 앱 PIN 화면에 표시되는 큰 아이콘 | logo_image | 그리기 가능 |
 
-## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>APP-WE 서비스 등록, SDK 통합 Android LOB 앱 및 ADAL SSO(선택 사항) 사용
+## <a name="default-enrollment-optional"></a>기본 등록(선택 사항)
 <!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 다음은 자동 APP-WE 서비스 등록(이 섹션에서는 **기본값 등록**이라고 함)을 위해 앱 시작 시 사용자 프롬프트를 요구하는 것에 관한 지침으로, Intune 보호 사용자만 SDK 통합 Android LOB 앱을 사용할 수 있도록 허용하는 Intune 앱 보호 정책을 요구합니다. 또한 SDK 통합 Android LOB 앱에 SSO를 사용하는 방법에 관해서도 설명합니다. 이것은 Intune 이외의 사용자가 사용할 수 있는 스토어 앱에서는 **지원되지 않습니다.**
@@ -1413,7 +1421,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 * Intune SDK 팀은 앱의 응용 프로그램 ID를 필요로 합니다. ID는 [Azure Portal](https://portal.azure.com/)을 통해 확인할 수 있으며 **모든 응용 프로그램** 아래 **응용 프로그램 ID** 열에 나와 있습니다. Intune SDK 팀에는 이메일(msintuneappsdk@microsoft.com)을 통해 연락하는 것이 좋습니다.
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK 사용
-이러한 지침은 최종 사용자 장치에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱에만 적용됩니다.
+이러한 지침은 최종 사용자 장치에서 앱을 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱 개발자에게만 적용됩니다.
 
 1. [Android 가이드용 Intune SDK](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)에 정의된 단계에 따라 ADAL을 구성합니다.
    > [!NOTE] 

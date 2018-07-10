@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803825"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 장치 제한 설정
 
@@ -97,7 +98,7 @@ iOS 감독 모드는 Apple의 장치 등록 프로그램을 통하거나 Apple C
     -   **필수 암호 유형** - 필요한 암호의 유형(예: 숫자만 또는 영숫자)을 지정합니다.
     -   **암호에 포함해야 하는 영숫자가 아닌 문자 수** - 암호에 포함해야 하는 기호 문자 수(예: **#** 또는 **@**)를 지정합니다.
     -   **최소 암호 길이** - 암호에 최소 문자 수를 지정합니다.
-    -   **장치를 초기화하기 전 로그인 오류 발생 횟수** - 이 설정으로 장치가 초기화되기 전까지 허용되는 로그인 실패 횟수를 지정합니다.
+    -   **장치를 초기화하기 전까지 허용되는 로그인 오류 발생 횟수** - 이 설정으로 장치가 초기화되기 전까지 허용되는 고유한 잘못된 암호 시도 횟수를 지정합니다.
     -   **화면 잠금 후 암호를 요구하기 전까지 최대 시간(분)**<sup>1</sup> - 사용자가 암호를 다시 입력해야 하기 전까지 장치가 유휴 상태로 있을 수 있는 시간을 지정합니다.
     -   **화면이 잠기기 전까지 최대 비활성 시간(분)**<sup>1</sup> - 장치 화면이 꺼지기 전까지의 시간(분)을 지정합니다.
     -   **암호 만료(일)** - 장치 암호를 변경해야 할 때까지의 기간(일)을 지정합니다.

@@ -15,11 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843143"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune에 대한 지원을 받는 방법
 
@@ -33,7 +34,8 @@ Microsoft는 Microsoft Intune에 대한 세계적인 기술 지원, 판매 전 �
 ## <a name="create-an-online-support-ticket"></a>온라인 지원 티켓 만들기
 
 IT 관리자의 경우 다음 단계에 따라 Azure Portal에서 지원 티켓을 제출할 수 있습니다.
-
+>[!NOTE]
+>온라인 지원 티켓을 만들려면 Intune 서비스 관리자 또는 전역 관리자여야 합니다. 자세한 내용은 [관리자 역할 할당](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)을 참조하세요.
 1. Intune 관리자 자격 증명으로 Azure Portal(<https://portal.azure.com>)에 로그온하고 Portal의 오른쪽 위에 있는 <strong>?</strong> 아이콘을 선택한 다음 <strong>도움말+지원</strong>을 선택하여 [Azure 도움말+지원](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 페이지로 이동합니다.
 
     ![도움말+지원 링크가 강조 표시된 Azure Portal 도움말 및 지원 물음표 링크 스크린샷](./media/azure-get-support.png)

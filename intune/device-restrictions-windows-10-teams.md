@@ -1,5 +1,5 @@
 ---
-title: Windows 10 Team에 대한 Windows Intune 장치 제한
+title: Windows 10 Team에 대한 Microsoft Intune 장치 제한
 titlesuffix: ''
 description: Windows 10 Team을 실행하는 장치에 사용할 수 있는 장치 제한을 알아봅니다.
 keywords: ''
@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 124c44a18daa2c8967b40b5d535d2b7002bce1dd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: c251a45f8c319bdebbc6904c10fbf423bb1c1128
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34562163"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 Team 장치 제한 설정
 

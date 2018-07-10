@@ -15,11 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474449"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 장치 등록 프로그램을 통해 iOS 장치를 자동으로 등록
 
@@ -206,13 +207,17 @@ Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 D
 ## <a name="renew-a-dep-token"></a>DEP 토큰 갱신  
 1. deploy.apple.com으로 이동합니다.  
 2. **서버 관리**에서 갱신할 토큰 파일과 연결된 MDM 서버를 선택합니다.
-3. **새 토큰 생성**을 선택합니다.  
+3. **새 토큰 생성**을 선택합니다.
+
+    ![새 토큰 생성의 스크린샷입니다.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
+
 4. **서버 토큰**을 선택합니다.  
-5. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택합니다.  
-6. 토큰을 선택한 다음, **토큰 갱신**을 선택합니다.  
-7. 원래 토큰을 만드는 데 사용되는 Apple ID를 입력합니다.  
+5. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 토큰을 선택합니다.
+    ![등록 프로그램 토큰의 스크린샷입니다.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+
+6. **토큰 갱신**을 선택하고 원래 토큰을 만드는 데 사용되는 Apple ID를 입력합니다.  
+    ![새 토큰 생성의 스크린샷입니다.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+
 8. 새로 다운로드된 토큰을 업로드합니다.  
 9. **토큰 갱신**을 선택합니다. 토큰이 갱신되었다는 확인 메시지가 표시됩니다.   
-
-
-
+    ![확인의 스크린샷입니다.](./media/device-enrollment-program-enroll-ios/confirmation.png)
