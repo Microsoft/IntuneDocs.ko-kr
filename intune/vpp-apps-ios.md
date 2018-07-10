@@ -15,11 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 122f0b70392df65076622354722b6d546f4fe7b7
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34547406"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 앱을 관리하는 방법
 
@@ -162,7 +163,7 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 예. Intune 관리자는 앱을 초과 구독할 수 있습니다. 예를 들어 관리자가 XYZ 앱에 대한 100개의 라이선스를 구입한 다음, 500명의 멤버를 포함한 그룹에 앱을 대상으로 지정하는 경우 처음 100명의 멤버(사용자 또는 장치)는 라이선스를 할당받습니다. 그리고 나머지 멤버는 라이선스 할당에 실패합니다.
 
 #### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Intune이 Apple과 앱 라이선스를 매일 자동으로 동기화하는 것이 맞나요?
-Intune에서는 Apple과 15시간마다 앱 라이선스를 동기화합니다.
+Intune에서는 Apple과 하루에 두 번 앱 라이선스를 동기화합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

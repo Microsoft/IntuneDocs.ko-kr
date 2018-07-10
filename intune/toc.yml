@@ -180,7 +180,13 @@
           items:
             - name: Android 등록 설정
               href: android-enroll.md
-            - name: Android for Work 장치 관리
+            - name: Intune에서 Android 엔터프라이즈 연결
+              href: connect-intune-android-enterprise.md
+            - name: Android 회사 프로필 등록 설정
+              href: android-work-profile-enroll.md
+            - name: Android 키오스크 등록 설정
+              href: android-kiosk-enroll.md
+            - name: Android 회사 프로필 장치 관리
               href: android-enterprise-overview.md
             - name: 삼성 Knox 모바일 등록
               href: android-samsung-knox-mobile-enroll.md
@@ -255,7 +261,7 @@
                   items:
                     - name: 수동으로 회사 포털 앱 추가
                       href: store-apps-company-portal-app.md
-                - name: Android for Work 앱
+                - name: Android 회사 프로필 앱
                   href: apps-add-android-for-work.md
                 - name: Windows 10용 Office 365 앱
                   href: apps-add-office365.md
@@ -326,6 +332,8 @@
                       href: app-protection-policy-settings-android.md
                     - name: iOS 설정
                       href: app-protection-policy-settings-ios.md
+                    - name: 액세스 작업
+                      href: app-protection-policies-access-actions.md
                     - name: 데이터 전송 예외
                       href: app-protection-policies-exception.md
                 - name: 앱 보호 정책 유효성 검사
@@ -379,7 +387,7 @@
               href: device-restrictions-windows-10-teams.md
             - name: Windows Holographic for Business
               href: device-restrictions-windows-holographic.md
-            - name: Android for Work
+            - name: Android 회사 프로필
               href: device-restrictions-android-for-work.md
         - name: Endpoint Protection 구성
           href: endpoint-protection-configure.md
@@ -390,6 +398,10 @@
               href: endpoint-protection-windows-10.md
         - name: 키오스크 설정 구성
           href: kiosk-settings.md
+        - name: Android 키오스크 설정 구성
+          href: android-kiosk-settings.md
+        - name: Android 엔터프라이즈 키오스크 설정
+          href: android-enterprise-settings.md
         - name: 메일 설정 구성
           href: email-settings-configure.md
           items:
@@ -465,7 +477,7 @@
       items:
         - name: Android 정책 만들기
           href: compliance-policy-create-android.md
-        - name: Android for Work 정책 만들기
+        - name: Android 작업 프로필 정책 만들기
           href: compliance-policy-create-android-for-work.md
         - name: Google Play Protect를 사용하기 위한 정책 만들기
           href: compliance-policy-create-google-play-protect.md
@@ -691,7 +703,7 @@
               href: custom-settings-windows-10.md
             - name: Windows Holographic for Business
               href: custom-settings-windows-holographic.md
-            - name: Android for Work
+            - name: Android 회사 프로필
               href: custom-settings-android-for-work.md
 - name: 개발자 지침
   items:

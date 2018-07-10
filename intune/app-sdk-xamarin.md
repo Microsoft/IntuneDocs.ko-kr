@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 03/19/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c9f81761e7e24393471f44da4cf619f017e9bbd
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f8f5e397c314088c7b26edba486f9cbaf9718096
+ms.sourcegitcommit: 1eddded65ae9e442dd3bebd16b9428af76a67f34
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/09/2018
+ms.locfileid: "35250947"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -73,6 +74,9 @@ Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발�
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+      
+> [!NOTE] 
+> iOS용 리매퍼가 없습니다. Xamarin.Forms 앱에 통합하는 것은 일반 Xamarin.iOS 프로젝트와 동일합니다. 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Android 모바일 앱에서 Intune 앱 보호 정책을 사용하도록 설정
 
@@ -102,6 +106,7 @@ Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발�
 
 > [!NOTE]
 > 이 작업은 Visual Studio가 Intellisense 자동 완성을 위해 사용하는 종속성을 다시 작성하기 때문에 Intellisense가 변경 내용을 올바로 인식하도록 처음 Remapper를 실행한 후 Visual Studio를 다시 시작해야 할 수 있습니다. 
+
 
 ## <a name="support"></a>Support
 

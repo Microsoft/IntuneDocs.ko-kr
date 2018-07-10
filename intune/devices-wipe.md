@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
-ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
+ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
+ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37091730"
 ---
-# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>공장 기본 설정으로 복원을 사용하여 장치를 제거하거나 회사 데이터 제거
+# <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>출하 시 설정으로 리셋을 사용하거나, 회사 데이터를 제거하거나, 장치를 수동으로 등록 취소하여 장치 제거
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 

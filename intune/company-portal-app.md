@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744587"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844983"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -56,7 +56,7 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 |**전화 번호** | 20 | 직원이 지원을 요청할 수 있도록 이 연락처 번호는 **IT 담당자** 페이지에 표시됩니다. |
 |**메일 주소**| 40 | 이 연락처 주소는 **IT 담당자** 페이지에 표시됩니다. 유효한 메일 주소를 `alias@domainname.com` 형식으로 입력해야 합니다. |
 |**웹 사이트 이름**| 40 | 이 이름은 지원 웹 사이트의 URL에 대해 표시되는 식별 이름입니다. 지원 웹 사이트 URL을 지정하고 식별 이름을 지정하지 않으면 IT 웹 사이트로 이동이 회사 포털의 **IT 담당자** 페이지에 표시됩니다. |
-|**웹 사이트 URL**| 150 | 최종 사용자가 사용할 지원 웹 사이트가 있는 경우 여기에서 URL을 지정합니다. URL은 **https://www.contoso.com** 형식이어야 합니다. URL을 지정하지 않으면 회사 포털의 **IT 담당자** 페이지에서 지원 웹 사이트에 대해 아무 내용도 표시되지 않습니다. |
+|**웹 사이트 URL**| 150 | 최종 사용자가 사용할 지원 웹 사이트가 있는 경우 여기에서 URL을 지정합니다. URL은 `https://www.contoso.com` 형식이어야 합니다. URL을 지정하지 않으면 회사 포털의 **IT 담당자** 페이지에서 지원 웹 사이트에 대해 아무 내용도 표시되지 않습니다. |
 | **추가 정보**| 120 | **IT 담당자** 페이지에 표시됩니다. |
 
 

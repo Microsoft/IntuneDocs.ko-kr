@@ -3,10 +3,10 @@ title: 관리되는 Android 장치용 앱 구성 정책 추가
 titlesuffix: Microsoft Intune
 description: Microsoft Intune에서 앱 구성 정책을 사용하여 사용자가 Android for Work 앱을 실행할 때 설정을 제공할 수 있습니다.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34470868"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>관리되는 Android 장치용 앱 구성 정책 추가
 
@@ -35,15 +36,12 @@ Microsoft Intune에서 앱 구성 정책을 사용하여 Android for Work 앱에
 3. **모바일 앱** 워크로드를 선택합니다.
 4. **관리** 그룹에서 **앱 구성 정책**을 선택한 다음 **추가**를 선택합니다.
 5. 다음 세부 정보를 설정합니다.
-    - **Name**  
-      Azure Portal에 표시되는 프로필의 이름입니다.
-    - **설명**  
-      Azure Portal에 표시되는 프로필의 설명입니다.
-    - **장치 등록 유형**  
-      **관리되는 장치**를 선택합니다.
+    - **이름** - Azure Portal에 표시되는 프로필의 이름입니다.
+    - **설명** - Azure Portal에 표시되는 프로필의 설명입니다.
+    - **장치 등록 형식** - **관리 장치**를 선택합니다.
 6. **플랫폼**으로 **Android for Work**를 선택합니다.
 7. **연결된 앱**을 선택하여 앱 구성 정책을 정의할 앱을 선택합니다. 승인했으며 Intune과 동기화한 앱을 Android for Work 앱 목록에서 선택합니다.
-8. **구성 설정**을 선택합니다. 다음을 사용하여 구성을 설정할 수 있습니다.
+8. **사용 권한**을 선택합니다. 다음을 사용하여 구성을 설정할 수 있습니다.
     - [구성 디자이너](#Use-the-configuration-designer)
     - [JSON 편집기](#Enter-the-JSON-editor)
 9. **확인**을 선택한 다음 **추가**를 선택합니다.
