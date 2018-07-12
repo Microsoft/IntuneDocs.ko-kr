@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune을 사용하는 장치에서 회사 데이터 제거 - Azure | Microsoft Docs
-description: Microsoft Intune을 사용하여 장치의 회사 데이터를 제거하거나 Android, Android for work, iOS, macOS 또는 Windows 장치에서 출하 시 설정으로 리셋합니다. 또한 Azure Active Directory에서 장치를 삭제합니다.
+description: Microsoft Intune을 사용하여 장치의 회사 데이터를 제거하거나 Android, Android 회사 프로필, iOS, macOS 또는 Windows 장치에서 출하 시 설정으로 리셋합니다. 또한 Azure Active Directory에서 장치를 삭제합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091730"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906059"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>출하 시 설정으로 리셋을 사용하거나, 회사 데이터를 제거하거나, 장치를 수동으로 등록 취소하여 장치 제거
 
@@ -31,7 +31,7 @@ ms.locfileid: "37091730"
 
 ## <a name="factory-reset"></a>공장 기본 설정
 
-**출하 시 설정으로 리셋** 작업은 장치를 해당 공장 기본 설정으로 복원합니다. **등록 상태 및 사용자 계정 유지** 확인란 선택 여부에 따라 사용자 데이터가 유지되거나 초기화됩니다.
+**출하 시 설정으로 리셋** 작업은 장치를 해당 공장 기본 설정으로 복원합니다. **등록 상태 및 사용자 계정 유지** 확인란을 선택한 경우 사용자 데이터가 유지됩니다. 그렇지 않으면 드라이브가 안전하게 지워집니다.
 
 |초기화 작업|**등록 상태 및 사용자 계정 유지**|Intune 관리에서 제거됨|설명|
 |:-------------:|:------------:|:------------:|------------|
@@ -108,9 +108,13 @@ MDM 정책은 다음에 장치가 Intune에 연결될 때 다시 적용됩니다
 |Azure AD 가입 취소|Azure AD 레코드가 제거됩니다.|Azure AD 레코드가 제거됩니다.|
 |연락처 |앱에서 기본 주소록에 직접 동기화된 연락처가 제거됩니다. 기본 주소록에서 다른 외부 소스에 동기화된 연락처는 제거할 수 없습니다. <br /> <br />현재는 Outlook 앱만 지원됩니다.|앱에서 기본 주소록에 직접 동기화된 연락처가 제거됩니다. 기본 주소록에서 다른 외부 소스에 동기화된 연락처는 제거할 수 없습니다. <br /> <br />현재는 Outlook 앱만 지원됩니다.
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Android 회사 프로필
 
-Android for Work 장치에서 회사 데이터를 제거하면 해당 장치의 회사 프로필에서 모든 데이터, 앱 및 설정이 제거됩니다. 장치가 Intune을 사용하는 관리에서 사용 중지됩니다. 공장 기본 설정 복원은 Android for Work에 지원되지 않습니다.
+Android 회사 프로필 장치에서 회사 데이터를 제거하면 해당 장치의 회사 프로필에서 모든 데이터, 앱 및 설정이 제거됩니다. 장치가 Intune을 사용하는 관리에서 사용 중지됩니다. 공장 기본 설정 복원은 Android 회사 프로필에 대해 지원되지 않습니다.
+
+### <a name="android-enterprise-kiosk-devices"></a>Android 엔터프라이즈 키오스크 장치
+
+Android 키오스크 장치를 공장 기본 설정으로 리셋할 수 있습니다. Android 키오스크 장치에서 회사 데이터를 제거할 수 없습니다.
 
 
 ### <a name="macos"></a>macOS
@@ -150,6 +154,15 @@ Intune 포털에서 장치를 제거하려면 특정 장치 창에서 해당 장
 
 1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에 로그인합니다.
 2. **장치** > **모든 장치** > 삭제할 장치 > **삭제**를 선택합니다.
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>정리 규칙을 사용하여 장치를 자동으로 삭제
+Intune을 구성하여 비활성, 부실 또는 응답하지 않는 것 같은 장치를 자동으로 삭제할 수 있습니다. 이러한 정리 규칙은 장치 레코드가 현재 상태를 유지하도록 장치 인벤토리를 지속적으로 모니터링합니다. 이 방식으로 삭제된 장치는 Intune 관리에서도 제거됩니다.
+1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에 로그인합니다.
+2. **장치** > **장치 정리 규칙** > **예**를 선택합니다.
+3. **이토록 많은 날 동안 체크 인하지 않은 장치 삭제** 상자에 90~270 사이의 숫자를 입력합니다.
+4. **저장**을 선택합니다.
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Azure Active Directory 포털에서 장치 삭제
 

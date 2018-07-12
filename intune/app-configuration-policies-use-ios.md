@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232236"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905838"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>관리되는 iOS 장치용 앱 구성 정책 추가
 
@@ -158,6 +158,9 @@ Intune에서는 속성 목록의 다음 데이터 형식을 지원합니다.
 - \{\{username\}\}—예: **John Doe**
 - \{\{serialnumber\}\}—예: **F4KN99ZUG5V2**(iOS 장치)
 - \{\{serialnumberlast4digits\}\}—예: **G5V2**(iOS 장치)
+
+## <a name="monitor-ios--app-configuration-status-per-device"></a>장치별 iOS 앱 구성 상태 모니터링 
+구성 정책이 할당되면 각 관리 장치에 대한 iOS 앱 구성 상태를 모니터링할 수 있습니다. Azure Portal의 **Microsoft Intune**에서 **장치** > **모든 장치**를 차례로 선택합니다. 관리 장치 목록에서 장치에 대한 블레이드를 표시할 특정 장치를 선택합니다. 장치 블레이드에서 **앱 구성**을 선택합니다.  
 
 ## <a name="next-steps"></a>다음 단계
 

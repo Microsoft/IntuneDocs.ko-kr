@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81330083830eb2e3e1fe3e36217d403a77094a65
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964728"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905158"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune에서 장치 암호 다시 설정 또는 제거
 
@@ -30,6 +30,7 @@ ms.locfileid: "36964728"
 
 - 작업 프로필에 등록된 Android 장치 버전 8.0 이상
 - 버전 6.0 이하의 Android 장치
+- Android 엔터프라이즈 키오스크 장치
 - iOS 
      
 ## <a name="unsupported-platforms"></a>지원되지 않는 플랫폼
@@ -46,13 +47,13 @@ ms.locfileid: "36964728"
 3. **장치**를 선택한 다음, **모든 장치**를 선택합니다.
 4. 관리하는 장치 목록에서 장치를 선택하고 **자세히...** 를 선택합니다. 그런 다음, **암호 제거** 장치 원격 작업을 선택합니다.
 
-## <a name="resetting-android-for-work-passcodes"></a>Android for Work 암호 다시 설정
+## <a name="resetting-android-work-profile-passcodes"></a>Android 회사 프로필 암호 다시 설정
 
-지원되는 Android for Work 장치는 최종 사용자에 대한 관리되는 새 프로필 잠금 해제 암호 또는 관리되는 프로필 질문을 수신합니다. 작업 프로필이 있는 Android 8.0 이상 장치의 경우 등록 완료된 후 즉시 재설정 암호 토큰을 활성화하려면 최종 사용자에게 알림이 제공됩니다. 작업 프로필 암호가 필요하고 설정된 경우 알림이 표시됩니다. 암호를 입력하면 알림은 해제됩니다.
+지원되는 Android 회사 프로필 장치는 최종 사용자에 대한 관리되는 새 프로필 잠금 해제 암호 또는 관리되는 프로필 질문을 수신합니다. Android 8.0 회사 프로필 장치의 경우 최종 사용자는 등록이 완료된 후 바로 암호 재설정을 활성화하라는 알림을 받습니다. 작업 프로필 암호가 필요하고 설정된 경우 알림이 표시됩니다. 암호를 입력하면 알림은 해제됩니다.
 
 ## <a name="resetting-ios-passcodes"></a>iOS 암호 다시 설정
 
-iOS 장치에서 암호가 제거됩니다. 준수 정책이 설정된 암호가 있는 경우 장치의 설정에서 새 암호를 설정하라는 메시지가 사용자에게 나타납니다. 
+iOS 장치에서 암호가 제거됩니다. 설정된 암호 준수 정책이 있는 경우 장치의 설정에서 새 암호를 설정하라는 메시지가 사용자에게 나타납니다. 
 
 ## <a name="next-steps"></a>다음 단계
 

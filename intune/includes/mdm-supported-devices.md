@@ -10,7 +10,7 @@
   확인된 Samsung Knox Standard 장치의 전체 목록은 [Android 및 Samsung Knox Standard 정책 설정](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)에서 확인할 수 있습니다.
 
 
-- Android for Work [요구 사항](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+- Android 엔터프라이즈 [요구 사항](https://support.google.com/work/android/answer/6174145?hl=en).
 
 ### <a name="microsoft"></a>Microsoft
 

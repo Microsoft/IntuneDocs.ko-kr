@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232939"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905379"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure에서 Intune 기능은 어디에 있나요?
 Intune 기능을 Azure Portal로 이동하면서 일부 작업을 더 논리적으로 구성할 수 있게 되었습니다. 하지만 개선 작업을 진행할 때마다 항상 새 구성을 학습하는 비용이 발생하게 됩니다. 이 참조 가이드는 클래식 포털의 Intune에 완전히 익숙하고 Azure Portal의 Intune에서 작업을 수행하는 방법을 궁금해하는 사용자를 위한 것입니다. 찾고 있는 기능이 이 문서에서 다루어지지 않은 경우 Microsoft에서 문서를 업데이트할 수 있도록 문서 하단에 의견을 남겨주세요.
@@ -36,7 +36,7 @@ Intune 기능을 Azure Portal로 이동하면서 일부 작업을 더 논리적�
 |IMEI 기준 그룹(모든 플랫폼)| 그룹 > 모든 장치 > 회사에서 사전 등록한 장치 > IMEI 기준(모든 플랫폼) | [장치 등록 > 회사 장치 식별자](#by-imei-all-platforms)|
 | 회사 장치 등록 프로필| 정책 > 회사 장치 등록 | [장치 등록 > Apple 등록 > 등록 프로그램 프로필](#where-did-corporate-pre-enrolled-devices-go) |
 | 회사 장치 등록 프로필 | 정책 > 회사 장치 등록 | [장치 등록 > Apple 등록 > AC 프로필](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | 관리 > 모바일 장치 관리 > Android for Work | 장치 등록 > Android for Work 등록 |
+| Android for Work | 관리 > 모바일 장치 관리 > Android for Work | 장치 등록 > Android 등록 |
 | 사용 약관 | 정책 > 사용 약관 정보 | 장치 등록 > 사용 약관 |
 회사 포털 설정|관리 > 회사 포털|**관리** > 모바일 앱<br> **설정** > 회사 포털 브랜딩
 

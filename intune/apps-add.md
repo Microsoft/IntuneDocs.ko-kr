@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263407"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905991"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가
 
@@ -51,13 +51,13 @@ Intune은 다양한 앱 유형을 지원합니다. 사용 가능한 옵션은 �
 | iOS 스토어 앱  | 스토어 앱  | **앱 유형**으로 **iOS**를 선택하고 앱을 검색한 다음 Intune에서 앱을 선택합니다. |
 | Windows Phone 8.1 스토어 앱  | 스토어 앱  | **앱 유형**으로 **Windows Phone 8.1**을 선택하고 앱의 Microsoft Store URL을 입력합니다. |
 | Microsoft Store 앱  | 스토어 앱  | **앱 유형**으로 **Windows**를 선택하고 앱의 Microsoft Store URL을 입력합니다. |
-| Android for Work 앱 | 스토어 앱  | Google Play for Work 스토어에서 Android for Work 앱을 찾아 승인합니다.  |
+| Android 회사 앱 | 스토어 앱  | 관리되는 Google Play 스토어에서 Android 회사 프로필 앱을 찾고 승인합니다.  |
 | Windows 10용 Office 365 앱  | 스토어 앱(Office 365) | **앱 유형**으로 **Office 365 제품군** 아래의 **Windows 10**을 선택한 다음 설치할 Office 365 앱을 선택합니다.  |
 | macOS용 Office 365 앱 | 스토어 앱(Office 365) | **앱 유형**으로 **Office 365 제품군** 아래의 **macOS**를 선택한 다음 Office 365 앱 제품군을 선택합니다. |
 | Android LOB(기간 업무) 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.apk**인 Android 설치 파일을 입력합니다.  |
 | iOS LOB 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.ipa**인 iOS 설치 파일을 입력합니다.  |
-| Windows Phone LOB 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.xap**인 Windows Phone 설치 파일을 입력합니다.  |
-| Windows LOB 앱 | LOB 앱 | 앱 유형으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.msi**, **.appx** 또는 **.appxbundle**인 Windows 설치 파일을 입력합니다. |
+| Windows Phone LOB 앱 | LOB 앱 | **앱 유형**으로 **LOB(기간 업무)** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.xap**인 Windows Phone 설치 파일을 입력합니다.  |
+| Windows LOB 앱 | LOB 앱 | 앱 유형으로 **LOB(기간 업무)** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.msi**, **.appx** 또는 **.appxbundle**인 Windows 설치 파일을 입력합니다. |
 | 기본 제공 iOS 앱  | 기본 제공 앱 | **앱 유형**으로 **기본 제공 앱**을 선택한 다음, 제공된 앱 목록에서 기본 제공 앱을 선택합니다.  |
 | 기본 제공 Android 앱  | 기본 제공 앱 | **앱 유형**으로 **기본 제공 앱**을 선택한 다음, 제공된 앱 목록에서 기본 제공 앱을 선택합니다.  |
 | 웹앱  | 웹앱  | **앱 유형**으로 **웹 링크**를 선택하고 웹앱을 가리키는 유효한 URL을 입력합니다.  |
@@ -117,7 +117,7 @@ Intune 관리 앱은 등록 없이 앱 보호를 사용할 수도 있으므로 �
 ### <a name="understanding-licensed-apps"></a>라이선스 앱 이해
 웹앱, 스토어 앱, LOB 앱을 이해하는 것은 물론 다음과 같은 대량 구매 프로그램 앱과 사용이 허가된 앱의 대상도 알고 있어야 합니다. 
 - **비즈니스용 Apple 대량 구매 프로그램(iOS 및 MacOS)**: iOS 앱 스토어를 통해 회사에서 실행하려는 앱의 라이선스를 여러 개 구매할 수 있습니다. 여러 복사본을 구매하면 회사에서 앱을 효율적으로 관리할 수 있습니다. 자세한 내용은 [iOS 대량 구매 앱 관리](vpp-apps-ios.md)를 참조하세요.
-- **Android for Work(Android)**: Android for Work 장치에 앱을 할당하는 방법은 표준 Android 장치에 앱을 할당하는 방법과 다릅니다. Android for Work에 대해 설치하는 모든 앱은 Google Play for Work 스토어에서 받습니다. 스토어에 로그인한 다음 원하는 앱을 찾아서 승인합니다. 그러면 Azure Portal의 **사용이 허가된 앱** 노드에 앱이 표시되며, 다른 앱과 마찬가지로 앱의 할당을 관리할 수 있습니다.
+- **Android 회사 프로필**: Android 회사 프로필 장치에 앱을 할당하는 방법은 표준 Android 장치에 앱을 할당하는 방법과 다릅니다. Android 회사 프로필에 대해 설치하는 모든 앱은 Google Play 스토어에서 제공됩니다. 스토어에 로그인한 다음 원하는 앱을 찾아서 승인합니다. 그러면 Azure Portal의 **사용이 허가된 앱** 노드에 앱이 표시되며, 다른 앱과 마찬가지로 앱의 할당을 관리할 수 있습니다.
 - **비즈니스용 Microsoft Store(Windows 10)**: 비즈니스용 Microsoft Store를 통해 조직에서 사용할 앱을 찾아 개별적으로 또는 대량으로 구매할 수 있습니다. 스토어를 Microsoft Intune에 연결하면 Azure Portal에서 대량 구매 앱을 관리할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft 스토어에서 앱 관리](windows-store-for-business.md)를 참조하세요.
 
 ## <a name="before-you-add-apps"></a>앱을 추가하기 전에

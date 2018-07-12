@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232921"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906042"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>모바일 장치 관리 기관 설정
 
@@ -41,9 +41,11 @@ MDM(모바일 장치 관리) 기관 설정에 따라 장치를 관리하는 방�
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM 기관을 Intune으로 설정
 
+MDM 기관을 아직 설정하지 않은 경우 다음 단계를 수행합니다. MDM 기관을 변경하려면 아래의 [MDM 기관 변경](#prepare-to-change-the-mdm-authority-to-configuration-manager) 섹션을 참조합니다.
+
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. 주황색 배너를 선택하여 **모바일 장치 관리 기관** 설정을 엽니다.
+3. 주황색 배너를 선택하여 **모바일 장치 관리 기관** 설정을 엽니다. 주황색 배너는 MDM 기관을 아직 설정하지 않은 경우만 표시됩니다.
 4. **모바일 장치 관리 기관** 아래에서, 다음 옵션 중에서 MDM 기관을 선택합니다.
    - **Intune MDM 기관**
    - **Configuration Manager MDM 기관**
@@ -57,7 +59,7 @@ MDM(모바일 장치 관리) 기관 설정에 따라 장치를 관리하는 방�
 Android 또는 Apple 장치 관리를 사용하는 경우 Intune은 이러한 타사 서비스와 통합하는 장치 및 사용자 정보를 보내 해당 장치를 관리합니다.
 
 데이터 공유 동의를 추가하는 시나리오는 다음과 같습니다.
-- Android for Work 사용.
+- Android 회사 프로필을 사용합니다.
 - Apple MDM 푸시 인증서를 사용하고 업로드.
 - DEP(장비 등록 프로그램), School Manager, Volume Purchasing Program 등의 Apple 서비스 중 하나를 사용.
 

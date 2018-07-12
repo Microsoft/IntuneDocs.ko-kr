@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/29/2018
+ms.date: 07/05/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 229c97723c5774b6823699c7d0b0bc9f9b194690
-ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
+ms.openlocfilehash: e6d3640d63f16b80588860c3c36aba1a81ffbe09
+ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37134023"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37927032"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,95 @@ ms.locfileid: "37134023"
 ### Role-based access control
 
 -->   
+## <a name="week-of-july-2-2018"></a>2018년 7월 2일 주
+
+### <a name="app-management"></a>앱 관리
+
+#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Windows 설치 관리자에 대한 보안 설정 추가 <!-- 2282430 -->
+사용자가 앱 설치를 제어하도록 허용할 수 있습니다. 사용하도록 설정한 경우 그렇지 않으면 보안 위반으로 인해 중지될 수 있는 설치를 계속 진행하도록 허용합니다. 시스템에 모든 프로그램을 설치할 경우 Windows 설치 관리자가 상승된 권한을 사용하도록 명령할 수 있습니다. 또한 인덱싱될 WIP(Windows Information Protection) 항목 및 암호화되지 않은 위치에 저장된 WIP 항목에 대한 메타데이터를 사용할 수 있습니다. 정책을 사용하지 않을 때 WIP로 보호되는 항목은 인덱싱되지 않고 Cortana 또는 파일 탐색기의 결과에도 표시되지 않습니다. 이러한 옵션에 대한 기능은 기본적으로 사용할 수 없게 설정되어 있습니다. 
+
+#### <a name="monitor-ios--app-configuration-status-per-device----880037---"></a>장치별 iOS 앱 구성 상태 모니터링 <!-- 880037 -->
+Microsoft Intune 관리자는 각 관리 장치에 대한 iOS 앱 구성 상태를 모니터링할 수 있습니다. Azure Portal의 **Microsoft Intune**에서 **장치** > **모든 장치**를 차례로 선택합니다. 관리 장치 목록에서 장치에 대한 블레이드를 표시할 특정 장치를 선택합니다. 장치 블레이드에서 **앱 구성**을 선택합니다.
+
+#### <a name="access-actions-for-app-protection-policies----1483510---"></a>앱 보호 정책에 대한 액세스 작업 <!-- 1483510 -->
+규정을 준수하지 않는 장치를 명시적으로 초기화, 차단 또는 경고하도록 앱 보호 정책을 구성할 수 있습니다. *초기화* 작업은 장치에서 회사의 회사 데이터를 제거합니다. 초기화가 수행되면 장치 사용자에게는 초기화 및 수정 단계의 이유가 포함된 알림이 제공됩니다. 최소 OS 버전과 같은 일부 설정의 경우 차단 및 초기화와 같은 여러 작업을 적용할 수 있습니다. 앱이 시작되면 이러한 작업이 트리거됩니다.
+
+#### <a name="selective-wipe-of-organizations-app-data----1507030---"></a>선택적으로 조직의 앱 데이터 지우기 <!-- 1507030 -->
+APP(응용 프로그램 보호 정책) 액세스 설정 조건이 충족되지 않으면 관리자가 이제 조직의 데이터를 선택적으로 지우도록 구성할 수 있습니다.  이 기능을 사용하면 관리자가 미리 구성된 기준에 따라 응용 프로그램에서 중요한 조직 데이터를 자동으로 보호하고 제거할 수 있습니다.
+
+#### <a name="revoking-an-ios-app-purchased-through-vpp----1777384---"></a>VPP를 통해 구매한 iOS 앱 해지 <!-- 1777384 -->
+Microsoft Intune 관리자는 VPP(대량 구매 프로그램)를 통해 구매한 iOS 앱에 대한 모든 라이선스를 선택적으로 해지할 수 있습니다. 사용자 라이선스된 앱이 더 이상 할당되지 않는 경우 사용자에게 알릴 수 있습니다. 앱 라이선스를 철회해도 장치에서 관련 VPP 앱이 제거되지 않습니다. VPP 앱을 제거하려면 할당 작업을 **제거**로 변경해야 합니다. 회수된 라이선스 수는 Intune의 **앱** 워크로드의 **사용이 허가된 앱** 노드에 반영됩니다. iOS VPP 앱과 관련된 자세한 내용은 [Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 앱을 관리하는 방법](vpp-apps-ios.md)을 참조하세요.
+
+#### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>회사 포털 앱의 규정을 준수하지 않는 메시지 업데이트 <!-- 1832222 -->
+장치가 규정을 준수하지 않을 때 장치 사용자에게 표시되는 메시지를 수정했습니다. 메시지의 원래 의미는 그대로 유지되지만 더 친숙한 언어와 덜 전문적인 용어로 업데이트되었습니다. 또한 설명서 및 수정 단계에 대한 링크를 최신 상태로 유지하기 위해 새로 고쳤습니다.
+다음에서 볼 수 있는 전후 텍스트는 메시징 향상 기능의 한 예입니다.
+- **이전**: *이 장치는 IT 관리자가 요구한 특정 기간 내에 Intune 서비스에 연결되지 않았습니다 이 문제를 해결하려면 장치에서 회사 포털 앱을 열고 준수 확인 단추를 클릭합니다.*
+- **이후**: *장치가 얼마 동안 조직에 체크 인되지 않았습니다. 연결을 다시 설정하려면 장치에서 회사 포털 앱을 열고 장치의 설정 확인을 누릅니다.*
+
+#### <a name="revoke-ios-vpp-app-license----1863797---"></a>iOS VPP 앱 라이선스 해지 <!-- 1863797 -->
+관리자는 사용자 또는 장치에 할당된 iOS VPP 앱 라이선스를 회수할 수 있습니다. iOS VPP 앱을 제거하면 앱 라이선스를 회수할 수도 있습니다. 앱을 제거하기 전에 먼저 사용자 또는 장치가 앱의 대상인 그룹에서 제거되어야 합니다. 사용자 또는 장치를 그룹에서 제거하면 앱의 재설치를 방지할 수 있습니다. 이러한 단계가 완료되면 해당 앱 라이선스를 다른 사용자 또는 장치에 할당하도록 선택할 수 있습니다. iOS VPP 앱 라이선스에 대한 자세한 내용은 [Microsoft Intune에서 iOS 볼륨을 구매한 앱 관리](vpp-apps-ios.md)를 참조하세요.
+
+#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>macOS에 대한 LOB(기간 업무) 앱 지원 <!-- 1895847 -->
+Microsoft Intune은 macOS LOB 앱을 **요청** 또는 **등록 시 사용 가능**으로 배포하게 허용합니다. 최종 사용자는 macOS용 회사 포털 또는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 사용하여 **사용 가능**으로 앱을 배포할 수 있습니다.
+
+### <a name="device-configuration"></a>장치 구성
+
+#### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eenotready---"></a>회사 또는 학교 액세스 설정을 사용하여 장치 범주 선택 <!-- 1058963 eenotready --> 
+[장치 그룹 매핑](https://docs.microsoft.com/en-us/intune/device-group-mapping)을 사용하도록 설정한 경우, Windows 10의 사용자에게 **설정** > **계정** > **회사 또는 학교 액세스**의 **연결** 단추를 통해 등록한 후 장치 범주를 선택하라는 메시지가 표시됩니다. 
+
+#### <a name="use-samaccountname-as-the-account-username-for-email-profiles----1500307---"></a>sAMAccountName을 이메일 프로필에 대한 계정 사용자 이름으로 사용 <!-- 1500307 -->
+온-프레미스 **sAMAccountName**을 Android, iOS 및 Windows 10용 이메일 프로필에 대한 계정 사용자 이름으로 사용할 수 있습니다. Azure AD(Azure Active Directory)의 `domain` 또는 `ntdomain` 특성에서 도메인을 가져올 수도 있습니다. 또는 사용자 지정 정적 도메인을 입력합니다.
+
+이 기능을 사용하려면 온-프레미스 Active Directory 환경의 `sAMAccountName` 특성을 Azure AD에 동기화해야 합니다.
+
+[Andoid](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 이상](email-settings-windows-10.md)에 적용
+
+#### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a><!-- 1556983 --> 충돌에서 장치 구성 프로필 참조
+**장치 구성**에 기존 프로필의 목록이 표시됩니다. 이 업데이트를 사용하면 충돌하는 프로필에 대한 세부 정보를 제공하는 새 열이 추가됩니다. 충돌하는 행을 선택하여 충돌이 있는 설정 및 프로필을 볼 수 있습니다. 
+
+[구성 프로필 관리](device-profile-monitor.md#view-conflicts)에 대한 자세한 정보입니다.
+
+#### <a name="new-status-for-devices-in-device-compliance----2308882---"></a>장치 준수의 새로운 장치 상태 <!-- 2308882 -->
+**장치 준수** > **정책** > 정책 선택 > **개요**에서 다음과 같은 새 상태가 추가됩니다.
+- 성공
+- 오류
+- 충돌
+- 보류 중
+- 해당 없음. 다른 플랫폼의 장치 수를 보여 주는 이미지도 표시됩니다. 예를 들어 iOS 프로필을 보고 있는 경우 이 프로필에도 할당된 비iOS 장치의 수가 새 타일에 표시됩니다. [장치 준수 정책](compliance-policy-monitor.md#view-status-of-device-policies)을 참조합니다.
+
+#### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>장치 준수에서 타사 바이러스 백신 솔루션 지원 <!-- 2325484 -->
+장치 준수 정책(**장치 준수** > **정책** > **정책 만들기** > **플랫폼: Windows 10 이상** > **설정** > **시스템 보안**)을 만들면 다음과 같은 새 **[장치 보안](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** 옵션이 제공됩니다. 
+- **바이러스 백신**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 Windows Security Center에 등록된 바이러스 백신 솔루션을 사용하여 준수를 확인할 수 있습니다. 
+- **스파이웨어 방지**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 Windows Security Center에 등록된 스파이웨어 방지 솔루션을 사용하여 준수를 확인할 수 있습니다. 
+
+적용 대상: Windows 10 이상 
+
+### <a name="device-enrollment"></a>장치 등록
+
+####  <a name="devices-without-profiles-column-in-the-list-of-enrollment-program-tokens----1853904---"></a>등록 프로그램 토큰 목록에서 프로필이 없는 장치 열 <!-- 1853904 -->
+프로필이 할당되지 않는 장치 수를 보여주는 새 열이 등록 프로그램 토큰 목록에 제공됩니다. 이렇게 하면 관리자는 프로필을 사용자에게 전달하기 전에 이러한 장치에 할당할 수 있습니다. 새 열을 보려면 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**으로 이동합니다.
+
+### <a name="device-management"></a>장치 관리
+
+#### <a name="google-name-changes-for-android-for-work-and-play-for-work---842873---"></a>Android for Work 및 Play for Work에 대한 Google 이름 변경 <!--842873 -->
+Intune은 Google 브랜딩 변경 내용을 반영하도록 "Android for Work" 용어를 업데이트했습니다. "Android for Work" 및 "Play for Work" 용어는 더 이상 사용되지 않습니다. 컨텍스트에 따라 서로 다른 용어가 사용됩니다.
+- "Android 엔터프라이즈"는 전반적인 최신 Android 관리 스택을 나타냅니다.
+- "회사 프로필" 또는 "프로필 소유자"는 회사 프로필을 통해 관리되는 BYOD 장치를 가리킵니다.
+- "관리되는 Google Play"는 Google 앱 스토어를 나타냅니다.
+
+#### <a name="rules-for-removing-devices----1609459---"></a>장치 제거에 대한 규칙 <!-- 1609459 -->
+설정한 일 수 동안 체크 인하지 않은 장치를 자동으로 제거할 수 있는 새 규칙이 제공됩니다. 새 규칙을 보려면 **Intune** 창으로 이동하여 **장치**를 선택하고 **장치 정리 규칙**을 선택합니다.
+
+#### <a name="corporate-owned-single-cosu-use-support-for-android-devices----1630973---"></a>Android 장치에 대한 COSU(회사 소유의 단일 사용) 지원 <!-- 1630973 -->
+
+Intune은 이제 고도로 관리되고 잠겨 있는 키오스크 스타일의 Android 장치를 지원합니다. 관리자는 이를 통해 장치 사용을 하나의 앱 또는 작은 앱 집합에 추가로 잠그고 사용자가 다른 앱을 사용하거나 장치에서 다른 작업을 수행하지 못하도록 차단할 수 있습니다. Android 키오스크를 설정하려면 Intune > **장치 등록** > **Android 등록** > **키오스크 및 작업 장치 등록**으로 이동합니다. 자세한 내용은 [Android 엔터프라이즈 키오스크 장치 등록 설정](android-kiosk-enroll.md)을 참조합니다.
+
+#### <a name="per-row-review-of-duplicate-corporate-device-identifiers-uploaded----2203794--"></a>중복된 회사 장치 식별자의 행 단위 검토 업로드 <!-- 2203794-->
+회사 ID를 업로드할 때 Intune에서 모든 중복된 항목의 목록을 제공하고, 기존 정보를 대체하거나 유지할 수 있는 옵션을 제공합니다. **장치 등록** > **회사 장치 식별자** > **식별자 추가**를 차례로 선택한 후에 중복된 항목이 있으면 보고서가 표시됩니다. 
+
+#### <a name="manually-add-corporate-device-identifiers----2203803---"></a>수동으로 회사 장치 식별자 추가 <!-- 2203803 -->
+수동으로 회사 장치 ID를 추가할 수 있습니다. **장치 등록** > **회사 장치 식별자** > **추가**를 차례로 선택합니다. 
+
 ## <a name="week-of-june-25-2018"></a>2018년 6월 25일 주
 
 ### <a name="pradeo---new-mobile-threat-defense-partner----1169249---"></a>Pradeo - 새 Mobile Threat Defense 파트너 <!-- 1169249 -->
@@ -340,8 +429,7 @@ iOS용 새 VPN 프로필을 만들 때 이제 **Cisco AnyConnect** 및 **Cisco L
 macOS 회사 포털 버전 1.3 및 1.4에서는 Jamf 장치가 Intune에 등록되지 않았습니다. macOS 포털 버전 1.4.2에서 이 문제가 해결되었습니다.
 
 
-## <a name="week-of-april-9-2018"></a>2018년 4월 9일 주간
-
+## <a name="week-of-april-9-2018"></a>2018년 4월 9일 주간  
 #### <a name="updated-help-experience-in-company-portal-app-for-android----1631531---"></a>Android용 회사 포털 앱에서 업데이트된 도움말 환경 <!-- 1631531 -->
 
 Android 플랫폼에 대한 모범 사례에 맞추기 위해 Android용 회사 포털 앱에서 도움말 환경을 업데이트했습니다. 이제 사용자 앱에서 문제가 발생하는 경우 **메뉴** > **도움말**을 누르면 됩니다.
@@ -560,7 +648,7 @@ Windows 10 RS1 이상에서 장치가 실행 중인 경우 스토어에서 Windo
 ### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>모든 장치를 IE, Edge 또는 Chrome의 CSV 파일로 내보내기 <!-- 2258071 -->
 **장치** > **모든 장치**에서 장치를 CSV로 서식이 지정된 목록으로 **내보낼** 수 있습니다. 10,000개 이상의 장치가 있는 IE(Internet Explorer) 사용자는 해당 장치를 여러 파일로 성공적으로 내보낼 수 있습니다. 각 파일에는 최대 10,000개의 장치가 있습니다.
 
-30,000개 이상의 장치가 있는 Microsoft Edge 및 Chrome 사용자는 해당 장치를 여러 파일로 성공적으로 내보낼 수 있습니다. 각 파일에는 최대 30,000개의 장치가 있습니다.
+30,000개 이상의 장치가 있는 Edge 및 Chrome 사용자는 해당 장치를 여러 파일로 성공적으로 내보낼 수 있습니다. 각 파일에는 최대 30,000개의 장치가 있습니다.
 
 [장치 관리](device-management.md)에서는 관리하는 장치에서 수행할 수 있는 작업에 대한 자세한 세부 정보를 제공합니다.
 
@@ -929,6 +1017,25 @@ Intune에서 거부된 앱을 지정할 수 있습니다. 앱이 거부되면 �
 
 ## <a name="notices"></a>알림
 
+### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>변경 계획: Intune 9월에 iOS 10 이상 지원하기 위해 이동 예정 <!-- 2454656 -->
+9월에 Apple은 iOS 12를 릴리스할 예정입니다. 릴리스 직후 Intune 등록, 회사 포털 및 관리 브라우저를 이동하여 iOS 10 이상을 지원할 것입니다.  
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?  
+Office 365 모바일 앱은 iOS 10 이상에서 지원되므로 OS 또는 장치를 이미 업그레이드했을 수도 있습니다. 업그레이드했으면 이 이동은 영향을 주지 않습니다.  
+
+그러나 아래에 나열된 모든 장치가 있거나 아래에 나열된 모든 장치를 등록하려는 경우 iOS 9 이하만 지원한다는 것을 잊지 마세요.  Intune 회사 포털에 액세스를 계속하려면 이러한 장치를 9월까지 iOS 10 이상을 지원하는 장치로 업그레이드해야 합니다.  
+
+* iPhone 4S  
+* iPod Touch  
+* iPad 2  
+* iPad(3세대)  
+* iPad 미니(1세대)  
+
+7월부터 iOS 9 및 회사 포털 모두를 사용하는 MDM 등록 장치에는 해당 OS 또는 장치를 업그레이드하라는 메시지가 표시됩니다. 앱 보호 정책을 사용하는 경우 "최소 iOS 운영 체제 필수(경고만)" 액세스 설정을 설정할 수 있습니다.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?   
+조직에서 영향을 받는 장치 또는 사용자를 확인합니다. Azure Portal의 Intune에서 장치 > 모든 장치로 이동하고 OS로 필터링합니다.  OS 버전과 같은 세부 정보를 노출하려면 열을 클릭합니다. 사용자는 9월 전에 지원되는 OS 버전으로 자신의 장치를 업그레이드하도록 요청합니다.  
+
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>변경 계획: Intune이 TLS 1.2로 이동
 2018년 10월 31일부터 Intune은 TLS(전송 계층 보안) 프로토콜 버전 1.2를 지원하여 동급 최강의 암호화 기능을 제공하고, 서비스가 기본적으로 더 안전하며, Microsoft Office 365와 같은 다른 Microsoft 서비스와 일치하도록 보장할 예정입니다. Office는 MC128929에서 이러한 변경 내용을 전달했습니다.
 
@@ -982,9 +1089,9 @@ Intune은 2018년 5월 1일 [Microsoft Intune App SDK Cordova 플러그인](app-
 UI 업데이트, 간소화된 워크플로 및 내게 필요한 옵션 기능 향상을 사용하여 4월에 새로운 회사 포털 웹 사이트 환경을 도입할 예정입니다. 여기에는 앱 공유 및 전반적인 성능 향상과 같은 고객 기반 고급 기능이 포함되어 보다 편리한 사용자 환경을 제공합니다.
 고객의 의견에 따라 몇 가지 새로운 기능을 추가했습니다. 그러면 다음과 같은 기존 기능과 유용성을 크게 향상시킵니다.
 
--   웹 사이트 전체 UI 개선 사항
--   앱에 대한 직접 링크를 공유하는 기능
-- 대규모 앱 카탈로그의 성능 향상
+* 웹 사이트 전체 UI 개선 사항
+* 앱에 대한 직접 링크를 공유하는 기능
+* 대규모 앱 카탈로그의 성능 향상
 
 이 변경 내용을 준비하기 위해 조치를 취할 필요가 없습니다. 업데이트된 회사 포털 웹 사이트가 제공될 때 알려드리겠습니다. 그러나 결국 업데이트된 스크린샷을 포함한 최종 사용자 문서를 업데이트해야 할 수 있습니다. 웹 사이트에서 iOS 앱의 **앱** 섹션을 제공하므로 iOS에서 회사 포털 앱에 대한 설명서를 업데이트해야 할 수도 있습니다. [앱 UI의 새로운 기능](whats-new-app-ui.md) 페이지에서 이에 대한 샘플 이미지를 확인할 수 있습니다.
 
