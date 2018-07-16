@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22470356c921eea17e4d2b3d57f796fe51568ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224486"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905039"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Android 기간 업무 앱 추가
 
@@ -29,7 +29,7 @@ ms.locfileid: "34224486"
 LOB(기간 업무) 앱은 앱 설치 파일에서 추가하는 앱입니다. 이러한 종류의 앱은 일반적으로 사내에서 작성됩니다. Intune이 사용자 장치에 LOB 앱을 설치합니다. 
 
 > [!Note]
-> Google Play for Work 스토어의 LOB 앱에 대한 자세한 내용은 [Google Play for Work 스토어의 기간 업무 앱 사용](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-google-play-for-work-store)을 참조하세요. 
+> 관리되는 Google Play 스토어의 LOB 앱에 대한 자세한 내용은 [관리되는 Google Play 스토어의 기간 업무 앱 사용](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store)을 참조하세요. 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>1단계: 소프트웨어 설치 파일 지정
 

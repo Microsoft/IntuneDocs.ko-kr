@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce8791eaf72f5fda969401c19e72c6cc8b538d6
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: b514efa27a2a037f2fa0492ae519e6b8c774e369
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291464"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869545"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>장치 등록 없이 관리되는 앱용 앱 구성 정책 추가
 
@@ -49,7 +49,7 @@ Intune 앱 SDK를 사용할 수 있는 앱은 키-값 쌍의 구성을 지원합
 
 Intune은 특정 토큰을 생성하여 관리되는 응용 프로그램에 보낼 수 있습니다. 예를 들어 앱 구성에서 전자 메일 설정을 사용할 수 있는 경우 토큰을 사용하여 동적 전자 메일을 추가할 수 있습니다. 앱에서 예상되는 이름을 **이름** 필드에 입력한 다음, **값** 필드에 `\{\{mail\}\}`을 입력합니다.
 
-Intune은 구성 설정에서 다음과 같은 토큰 형식을 지원합니다.
+Intune은 구성 설정에서 다음과 같은 토큰 형식을 지원합니다. 다른 사용자 지정 키/값 쌍은 지원되지 않습니다.
 
 - \{\{userprincipalname\}\}—예: **John@contoso.com**
 - \{\{mail\}\}—예: **John@contoso.com**

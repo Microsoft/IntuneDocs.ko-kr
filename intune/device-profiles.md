@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f52c0dfc955406fa237d43632cd10c09ca0b798f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744757"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905192"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune 장치 프로필이란?
 
@@ -157,3 +157,7 @@ VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전
 - iOS
 - macOS
 - Windows Phone 8.1
+
+## <a name="manage-and-troubleshoot"></a>관리 및 문제 해결
+
+[프로필을 관리](device-profile-monitor.md)하여 장치 및 할당 된 프로필의 상태를 확인합니다. 또한 충돌을 일으키는 설정과 이러한 설정이 포함된 프로필을 확인하여 충돌을 해결할 수 있습니다. [일반적인 문제 및 해결 방법](device-profile-troubleshoot.md)은 프로필 삭제 시 발생하는 상황, 장치로 보내는 알림의 원인 등 프로필 관련 작업에 도움이 되는 Q&A 목록을 제공합니다.

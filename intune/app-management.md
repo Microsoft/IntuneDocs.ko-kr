@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d11de1e20f46fb6e13d6d3ef5c9f4a9ee0f98c1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223784"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906110"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune 앱 관리란?
 
@@ -114,8 +114,8 @@ Intune은 앱을 실행하려는 장치에서 필요한 앱을 얻도록 도와�
 - **회사 포털 브랜딩**: 회사 포털을 사용자 지정하여 회사 브랜딩을 제공할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
     - [회사 포털 구성](company-portal-app.md)
 - **앱 범주**: 앱 범주 이름을 추가, 고정 및 삭제할 수 있습니다.
-- **Android for Work**: 앱을 승인하고, 승인한 앱을 엔터프라이즈에 대해 동기화할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
-    - [Android for Work 앱](apps-add-android-for-work.md)
+- **Android 회사 프로필**: 엔터프라이즈용으로 승인한 앱을 승인하고 동기화할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+    - [Android 회사 프로필 앱](apps-add-android-for-work.md).
 
 ### <a name="help-and-support"></a>도움말 및 지원
 - **도움말 및 지원**: 문제를 해결하거나, 지원을 요청하거나, Intune 상태를 볼 수 있습니다. 자세한 내용은 다음을 참조하십시오.

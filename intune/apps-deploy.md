@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 581d3c9762145a4681b421ededaaf9099e8ceb80
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34717981"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905889"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
@@ -59,7 +59,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 장치에 �
 7. **그룹 추가**를 선택하여 앱과 관련된 **그룹 추가** 창을 엽니다.
 8. 특정 앱의 경우 **할당 유형**을 선택합니다.
    - **등록 장치에 대해 사용 가능**: 사용자가 회사 포털 앱 또는 웹 사이트에서 앱을 설치합니다.
-   - **등록없이 사용 가능**: 이 앱을 Intune에 등록되지 않은 장치의 사용자 그룹에 할당합니다. **Android for Work 앱** 유형은 이 옵션을 지원하지 않습니다. 
+   - **등록없이 사용 가능**: 이 앱을 Intune에 등록되지 않은 장치의 사용자 그룹에 할당합니다. 관리되는 Google Play 및 macOS LOB 앱의 앱은 이 옵션을 지원하지 않습니다. 
    - **필수**: 앱이 선택한 그룹의 장치에 설치됩니다.
    - **제거**: 앱이 선택한 그룹의 장치에서 제거됩니다.
 

@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744706"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906195"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune에서 Android 장치에 대한 장치 준수 정책 추가
 
@@ -77,9 +77,9 @@ Android에 대한 Intune 장치 준수 정책은 Android 장치가 준수하는 
 - **앱에서 위협 검색**: Android **앱 확인** 기능을 사용하도록 설정해야 합니다.
 
   > [!NOTE]
-  > 레거시 Android 플랫폼에서 이 기능은 준수 설정입니다. Intune에서는 장치 수준에서 이 설정이 사용하도록 설정되어 있는지만 확인할 수 있습니다. 회사 프로필(Android for Work)이 있는 장치에서 이 설정은 구성 정책 설정으로 찾을 수 있습니다. 이를 통해 관리자는 장치에 대한 설정을 사용하도록 설정할 수 있습니다.
+  > 레거시 Android 플랫폼에서 이 기능은 준수 설정입니다. Intune에서는 장치 수준에서 이 설정이 사용하도록 설정되어 있는지만 확인할 수 있습니다. Android 회사 프로필이 있는 장치에서 이 설정은 구성 정책 설정으로 찾을 수 있습니다. 이를 통해 관리자는 장치에 대한 설정을 사용하도록 설정할 수 있습니다.
 
-  엔터프라이즈에서 Android 회사 프로필을 사용하는 경우 등록된 장치에 대해 **앱에서 위협 검색**을 사용하도록 설정할 수 있습니다. 장치 프로필을 설정하고 시스템 보안 설정이 필요합니다. 자세한 내용은 [Intune의 Android for Work 장치 제한 설정](device-restrictions-android-for-work.md)을 참조하세요.
+  엔터프라이즈에서 Android 회사 프로필을 사용하는 경우 등록된 장치에 대해 **앱에서 위협 검색**을 사용하도록 설정할 수 있습니다. 장치 프로필을 설정하고 시스템 보안 설정이 필요합니다. 자세한 내용은 [Intune의 Android 회사 프로필 장치 제한 설정](device-restrictions-android-for-work.md)을 참조하세요.
 
 - **SafetyNet 장치 증명**: 충족해야 하는 [SafetyNet 증명](https://developer.android.com/training/safetynet/attestation.html) 수준을 입력합니다. 옵션은 다음과 같습니다.
   - **구성되지 않음**

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d99812c57596e10d0cdfa2c0f4504f8a6ac583c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223801"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869341"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Microsoft Intune에서 앱 추가 시작
 
@@ -31,6 +31,9 @@ Intune을 사용하여 기업 장치에 다음 앱 유형을 추가하고 할당
 - **사내에서 작성한 앱(기간 업무)**: 사용자 장치에 다운로드되는 파일을 업로드하는 경우.
 - **기본 제공되는 앱** - Office 365 앱과 같이 엄격히 관리되는 앱을 iOS 및 Android 장치에 할당하는 경우.
 - **웹앱** - Intune이 장치 홈 화면에 웹앱의 바로 가기를 만드는 경우.
+
+> [!NOTE]
+> 동적 장치 그룹에 적용되는 새 정책은 그룹의 모든 장치에 전파하는 데 최대 8시간이 걸릴 수 있습니다.
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>공용 저장소 앱을 할당하려면 어떻게 하나요?
 

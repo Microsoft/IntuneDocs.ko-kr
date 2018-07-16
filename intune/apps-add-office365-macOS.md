@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223614"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869504"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 macOS 장치에 Office 365 할당
 
-이 *스토어 앱* 유형을 사용하면 macOS 장치에 Office 365 앱을 쉽게 할당할 수 있습니다. 이 앱 유형을 사용하면 Word, Excel, PowerPoint, Outlook 및 OneNote를 설치할 수 있습니다. 앱을 더 안전하게 최신 상태로 유지하기 위해 앱과 함께 MAU(Microsoft 자동 업데이트)가 제공됩니다. 원하는 앱이 Intune 콘솔의 앱 목록에 하나의 앱으로 표시됩니다.
+이 앱 유형을 사용하면 macOS 장치에 Office 365 2016 앱을 쉽게 할당할 수 있습니다. 이 앱 유형을 사용하면 Word, Excel, PowerPoint, Outlook 및 OneNote를 설치할 수 있습니다. 앱을 더 안전하게 최신 상태로 유지하기 위해 앱과 함께 MAU(Microsoft 자동 업데이트)가 제공됩니다. 원하는 앱이 Intune 콘솔의 앱 목록에 하나의 앱으로 표시됩니다.
 
 
 ## <a name="before-you-start"></a>시작하기 전에
@@ -70,7 +70,7 @@ macOS 장치에 Office 365를 추가하기 전에 다음 세부 정보를 파악
 2. **Office 365** 창에서 **할당**을 선택합니다.
 3. 앱 제품군을 사용할 그룹을 추가하려면 **그룹 추가**를 선택합니다.  
     **그룹 추가** 창이 표시됩니다.
-4. **할당 유형**을 **필수**로 설정합니다.
+4. **할당 유형**을 **필수** 또는 **사용 가능**으로 설정합니다.
 5. 선택한 그룹에 제품군을 할당합니다. 자세한 내용은 [Microsoft Intune을 사용하여 그룹에 앱 할당](apps-deploy.md)을 참조하세요.
 
     >[!Note]

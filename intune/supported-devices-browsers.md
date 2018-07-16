@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033377"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434269"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>지원되는 운영 체제 및 브라우저
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033377"
 
 Microsoft Intune을 설정하기 전에 지원되는 운영 체제 및 브라우저를 검토합니다.
 
-장치에서 Intune을 설치하는 방법에 대한 도움말은 [관리되는 장치를 사용하여 작업 완료](/intune-user-help/company-portal-frequently-asked-questions)를 참조하세요. 또한 [Intune 네트워크 대역폭 사용량](network-bandwidth-use.md)([클래식 포털](/intune-classic/get-started/network-bandwidth-use))을 잘 이해해야 합니다.
+장치에 Intune을 설치하는 방법에 대한 도움말은 [관리 장치를 사용하여 작업 완료](/intune-user-help/company-portal-frequently-asked-questions) 및 [Intune 네트워크 대역폭 사용](network-bandwidth-use.md)([클래식 포털](/intune-classic/get-started/network-bandwidth-use))을 참조하세요.
 
 ## <a name="intune-supported-operating-systems"></a>Intune에서 지원하는 운영 체제
 
@@ -38,12 +38,12 @@ Microsoft Intune을 설정하기 전에 지원되는 운영 체제 및 브라우
 
 ### <a name="supported-samsung-knox-standard-devices"></a>지원되는 Samsung Knox Standard 장치
 
-회사 포털 앱은 장치가 [지원되는 Knox 장치 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 표시되는 경우에만 MDM 등록 중에 Samsung Knox 활성화를 시도합니다. 그러면 Knox 활성화 오류로 인해 MDM 등록이 차단되는 경우를 방지할 수 있습니다. Samsung Knox 활성화를 지원하지 않는 장치는 표준 Android 장치로 등록됩니다. 모든 Samsung 장치에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. Samsung 장치를 구매하고 배포하기 전에 장치 재판매인의 KNOX 호환성을 검사합니다.
+MDM 등록을 방해하는 Knox 활성화 오류를 방지하기 위해 회사 포털 앱은 장치가 [지원되는 Knox 장치 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 표시되는 경우에만 MDM 등록 중에 Samsung Knox 활성화를 시도합니다. Samsung Knox 활성화를 지원하지 않는 장치는 표준 Android 장치로 등록됩니다. 모든 Samsung 장치에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. Samsung 장치를 구매하고 배포하기 전에 장치 재판매인의 Knox 호환성을 검사합니다.
 
 > [!NOTE]
 > Samsung Knox 장치를 등록하는 경우 [Samsung 서버에 대한 액세스를 허용](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)해야 할 수도 있습니다. 
 
-다음 Samsung 장치 모델 목록은 Knox를 지원하지 않으며 Android용 회사 포털 앱에서 네이티브 Android 장치로 등록됩니다.
+다음 Samsung 장치 모델 목록은 Knox를 지원하지 않습니다. Android용 회사 포털 앱에서 네이티브 Android 장치로 등록됩니다.
 
 | **장치 이름** | **장치 모델 번호** |
 | --- | --- |
@@ -103,7 +103,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 - Microsoft Internet Explorer 11
 - Safari(최신 버전, Mac만)
 - Chrome(최신 버전)
-- Silverlight가 지원되는 Mozilla Firefox [자세히 알아보기(버전 52 이전 버전)](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox(최신 버전)
 
 
 

@@ -1,52 +1,61 @@
 ---
-title: Windows 10을 실행하는 장치에 대한 Microsoft Intune 이메일 설정
-titleSuffix: ''
-description: Windows 10을 실행하는 장치에서 이메일 설정을 구성하는 데 사용할 수 있는 Microsoft Intune 설정에 대해 알아봅니다.
+title: Microsoft Intune에서 Windows 10 장치에 대한 이메일 설정 - Azure | Microsoft Docs
+description: Exchange 서버를 사용하여 장치 구성 이메일 프로필을 만들고 Azure Active Directory에서 특성을 검색합니다. 또한 SSL을 사용하도록 설정하고 Microsoft Intune을 사용하여 Windows 10 장치에서 이메일 및 일정을 동기화할 수도 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 6/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a04f2267bd4a232fb687f7f77f66e439e6804099
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 04834f21e5fd2f6ed0f7454988936397d3249987
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831161"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904971"
 ---
-# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>Windows 10을 실행하는 장치용 Microsoft Intune에서 이메일 프로필 설정
+# <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>Windows 10을 실행하는 장치의 이메일 설정 - Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+이메일 프로필 설정을 사용하여 Windows 10을 실행하는 장치를 구성합니다.
 
-이 아티클에서는 Windows 10을 실행하는 장치에 대해 구성할 수 있는 이메일 프로필 설정을 보여줍니다.
+- **이메일 서버**: Exchange 서버의 호스트 이름을 입력합니다.
+- **계정 이름**: 이메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 장치에서 사용자에게 표시됩니다.
+- **AAD의 사용자 이름 특성**: 이 이름은 Intune이 AAD(Azure Active Directory)에서 가져오는 특성입니다. Intune은 이 프로필에서 사용되는 사용자 이름을 동적으로 생성합니다. 옵션은 다음과 같습니다.
+  - **사용자 계정 이름**: `user1` 또는 `user1@contoso.com`과 같은 이름을 가져옵니다.
+  - **기본 SMTP 주소**: `user1@contoso.com`과 같은 이메일 주소 형식의 이름을 가져옵니다.
+  - **sAM 계정 이름**: `domain\user1`과 같은 도메인이 필요합니다.
 
+    또한 다음을 입력합니다.  
+    - **사용자 도메인 이름 원본**: **AAD**(Azure Active Directory) 또는 **사용자 지정**을 선택합니다.
 
-- **메일 서버** - Exchange Server의 호스트 이름입니다.
-- **계정 이름** - 장치에서 사용자에게 표시되는 전자 메일 계정의 표시 이름입니다.
-- **AAD의 사용자 이름 특성** - 이것은 이메일 프로필에 대한 사용자 이름을 생성하는 데 사용되는 Active Directory(AD) 또는 Azure AD의 특성입니다. **user1@contoso.com**와 같은 **기본 SMTP 주소** 또는 **user1**, **user1@contoso.com**와 같은 **사용자 계정 이름**을 선택합니다.
-- **AAD의 메일 주소 특성** - 각 장치에서 사용자의 메일 주소가 생성되는 방식을 선택합니다. **기본 SMTP 주소**를 선택하여 Exchange에 로그인하는 기본 SMTP 주소를 사용하거나 **사용자 계정 이름**을 사용하여 메일 주소와 전체 사용자 이름을 사용합니다.
+      **AAD**에서 특성을 가져오도록 선택할 때 다음을 입력합니다.
+      - **AAD의 사용자 도메인 이름 특성**: 사용자의 **전체 도메인 이름** 또는 **NetBIOS 이름** 특성을 가져오도록 선택
 
+      **사용자 지정** 특성을 사용하도록 선택할 때 다음을 입력합니다.
+      - **사용할 사용자 지정 도메인 이름**: Intune이 도메인 이름(예: `contoso.com` 또는 `contoso`)에 사용하는 값을 입력합니다.
+
+- **AAD의 이메일 주소 특성**: 사용자의 이메일 주소가 생성되는 방식을 선택합니다. **사용자 계정 이름**(`user1@contoso.com` 또는 `user1`)을 선택하여 전체 계정 이름을 이메일 주소로 사용하거나, **기본 SMTP 주소**(`user1@contoso.com`)를 사용하여 Exchange에 로그인합니다.
 
 ## <a name="security-settings"></a>보안 설정
 
-- **SSL** - 메일을 전송하거나 수신할 때와 Exchange Server와 통신할 때 SSL(Secure Sockets Layer) 통신을 사용합니다.
-
-
+- **SSL**: 이메일을 전송하거나 수신할 때와 Exchange Server와 통신할 때 SSL(Secure Sockets Layer) 통신을 사용합니다.
 
 ## <a name="synchronization-settings"></a>동기화 설정
 
-- **동기화할 메일 양** - 동기화할 메일의 일 수를 선택하거나, **무제한**을 선택하여 사용 가능한 모든 메일을 동기화합니다.
-- **동기화 일정** - 장치가 Exchange 서버의 데이터를 동기화하는 일정을 선택합니다. 데이터가 도착하는 즉시 동기화하는 **메시지가 도착할 때**를 선택하거나 또는 장치의 사용자가 동기화를 시작해야 하는 **수동**을 선택할 수도 있습니다.
+- **동기화할 이메일 양**: 동기화할 이메일의 일 수를 선택합니다. 또는 **무제한**을 선택하여 사용 가능한 모든 이메일을 동기화합니다.
+- **동기화 일정**: Exchange 서버에서 데이터를 동기화할 장치의 일정을 선택합니다. 데이터가 도착하는 즉시 동기화하는 **메시지가 도착할 때**를 선택하거나 또는 장치의 사용자가 동기화를 시작해야 하는 **수동**을 선택할 수도 있습니다.
 
 ## <a name="content-sync-settings"></a>콘텐츠 동기화 설정
 
-- **동기화할 콘텐츠 형식** - 장치에 동기화할 콘텐츠 형식을 선택합니다.
-    - **연락처**
-    - **일정**
-    - **태스크**
+- **동기화할 콘텐츠 형식**: 장치에 동기화할 콘텐츠 형식을 선택합니다.
+  - **연락처**
+  - **일정**
+  - **태스크**
+
+## <a name="next-steps"></a>다음 단계
+[Intune에서 이메일 설정 구성](email-settings-configure.md)

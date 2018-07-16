@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744774"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905532"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange 온-프레미스 및 레거시 Exchange Online Dedicated에 대한 조건부 액세스 정책 만들기
 
@@ -54,7 +54,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 
 - 해당 장치에 배포된 장치 준수 정책을 **준수**해야 합니다.
 
-- 장치가 조건부 액세스 설정을 충족되지 않으면 사용자가 로그인할 때 다음 메시지 중 하나가 표시됩니다.
+- 장치가 조건부 액세스 설정을 충족하지 않으면 사용자가 로그인할 때 다음 메시지 중 하나가 표시됩니다.
     - 장치를 Intune에 등록하지 않았거나 Azure Active Directory에 등록하지 않은 경우, 회사 포털 앱을 설치하고 장치를 등록하며 메일을 활성화하는 방법에 대한 지침이 포함된 메시지가 표시됩니다. 이 프로세스는 또한 장치의 Exchange ActiveSync ID를 Azure Active Directory의 장치 레코드와 연결합니다.
     - 장치가 정책을 준수하지 않으면 사용자가 문제에 관한 정보를 찾을 수 있는 Intune 웹 포털 또는 회사 포털 앱과 문제를 해결하는 방법을 알려주는 메시지가 표시됩니다.
 
@@ -63,7 +63,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 - Windows Phone 8.1 이상
 - iOS의 기본 메일 앱
 - EAS 메일 클라이언트(예: Android 4 이상의 Gmail).
-- EAS 메일 클라이언트 **Android for Work 장치**: **업무용 프로필**에서 **Gmail** 및 **Nine Work** 앱만 Android for Work에 대해 지원됩니다. 조건부 액세스가 Android for Work에서 작동하려면 Gmail 또는 Nine Work 앱에 대한 메일 프로필을 배포하며, 이러한 앱을 필수 설치로 배포해야 합니다.
+- EAS 메일 클라이언트 **Android 회사 프로필 장치:** **회사 프로필**의 **Gmail** 및 **Nine Work** 앱만 Android 회사 프로필에 대해 지원됩니다. 조건부 액세스가 Android 회사 프로필에서 작동하려면 Gmail 또는 Nine Work 앱에 대한 이메일 프로필을 배포하며, 이러한 앱을 필수 설치로 배포해야 합니다.
 
 > [!NOTE]
 > Android 및 iOS용 Microsoft Outlook 앱은 지원되지 않습니다. 

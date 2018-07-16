@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45ab6434245c0dd412b2e9d23e394f72871a459a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ae114b9aec2794556a8162604a533c24c11bafba
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829767"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905141"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Intune을 사용하여 장치 원격 잠금
 
@@ -31,12 +31,14 @@ ms.locfileid: "31829767"
 **원격 잠금**은 다음 플랫폼에서 지원됩니다.
 
 - Android
+- Android 엔터프라이즈 키오스크 장치
+- Android 엔터프라이즈 회사 프로필 장치
 - iOS
 - macOS
 - Windows 10 Mobile
 - Windows Phone 8.1 이상
 
-**원격 잠금**은 다음에 지원되지 *않습니다*.
+**원격 잠금**은 다음에 지원되지 않습니다.
 - Windows 10 Desktop
 
 > [!NOTE]

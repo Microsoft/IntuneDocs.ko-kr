@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216329"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905226"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>장치 등록 관리자 계정을 사용하여 장치 등록
 
@@ -35,7 +35,7 @@ ms.locfileid: "34216329"
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>장치 등록 관리자 시나리오의 예
 
-식당에는 서빙 직원을 위한 50대의 POS 태블릿과 주방 직원을 위한 주문 모니터를 공급하기를 원합니다. 직원은 회사 데이터에 액세스하거나 사용자로 로그인할 필요가 없습니다. Intune 관리자는 장치 등록 관리자 계정을 만들고 DEM 계정에 식당 감독자를 추가합니다. 이제 감독자에는 DEM 기능이 있습니다. 이제 감독자는 DEM 자격 증명을 사용하여 50대의 태블릿 장치를 등록할 수 있습니다.
+식당에는 서빙 직원을 위한 50대의 POS 태블릿과 주방 직원을 위한 주문 모니터를 공급하기를 원합니다. 직원은 회사 데이터에 액세스하거나 사용자로 로그인할 필요가 없습니다. Intune 관리자는 식당 감독자에 대한 새 장치 등록 관리자 계정을 만듭니다.  이 계정은 감독자의 기본 계정과 별도로 intune에 공유 장치를 등록하는 용도로만 사용됩니다. 이제 감독자는 DEM 자격 증명을 사용하여 50대의 태블릿 장치를 등록할 수 있습니다.
 
 [Azure Portal](https://portal.azure.com)의 사용자만 장치 등록 관리자가 될 수 있습니다. 장치 등록 관리자 사용자는 Intune 관리자일 수 없습니다.
 
@@ -54,7 +54,7 @@ DEM 사용자는 다음 작업을 수행할 수 있습니다.
   - 회사 포털 앱 또는 웹 사이트에 로컬 장치만 표시됩니다.
   - 앱 관리에 대한 사용자별 Apple ID 요구 사항으로 인해 사용자 라이선스를 통해 Apple VPP(Volume Purchase Program) 앱을 사용할 수 없습니다.
   - (iOS에만 해당) DEM을 사용하여 iOS 장치를 등록하는 경우 Apple Configurator, Apple DEP(장치 등록 프로그램) 또는 ASM(Apple School Manager)를 사용하여 장치를 등록할 수 없습니다.
-  - (Android에만 해당) 단일 DEM 계정으로 등록할 수 있는 Android for Work 장치의 수에는 제한이 있습니다. DEM 계정당 10개까지 Android 회사 프로필 장치를 등록할 수 있습니다. 이 제한은 기존 Android 등록에는 적용되지 않습니다.
+  - (Android에만 해당) 단일 DEM 계정으로 등록할 수 있는 Android 회사 프로필 장치의 수에는 제한이 있습니다. DEM 계정당 10개까지 Android 회사 프로필 장치를 등록할 수 있습니다. 이 제한은 기존 Android 등록에는 적용되지 않습니다.
   - 장치 라이선스가 있는 경우 장치는 VPP 앱을 설치할 수 있습니다.
   - 각 장치에 장치 라이선스가 필요합니다. [사용자 및 장치 라이선스](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)에 대해 자세히 알아보세요.
 

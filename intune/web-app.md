@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d62341e35bf851bb429b15a582183bec62a9d4a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223393"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905243"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune에 웹앱 추가
 
@@ -31,7 +31,7 @@ Intune은 웹앱을 포함하여 다양한 앱 유형을 지원합니다. 웹앱
 사용자의 앱을 관리하고 할당하려면 먼저 Intune에 앱을 추가합니다. Intune이 사용자의 장치 홈 화면에 웹앱 바로 가기를 만듭니다.
 
 > [!Note]
-> Android for Work 및 macOS에서는 웹앱이 지원되지 않습니다.
+> Android 회사 프로필 및 macOS에서는 웹앱이 지원되지 않습니다.
 
 ## <a name="add-a-web-app-to-intune"></a>Intune에 웹앱 추가
 Intune에 앱을 웹용 앱의 바로 가기로 추가하려면 다음 작업을 수행하세요.

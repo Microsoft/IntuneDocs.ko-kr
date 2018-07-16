@@ -1,42 +1,47 @@
 ---
 title: Android를 실행하는 장치용 Microsoft Intune Wi-Fi 설정 구성
 titleSuffix: ''
-description: Android 및 Android for Work를 실행하는 장치에서 Intune Wi-Fi 구성 설정에 대해 알아봅니다.
+description: iOS를 실행하는 장치에서 Intune Wi-Fi 구성 설정에 대해 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee82da997a794bb2f65929a6fd9e0de0cc776a6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0157815322488525a4ce7a3d6d2c90cbb8d3ff2a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831064"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905668"
 ---
-# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android 및 Android for Work를 실행하는 장치에 대해 Microsoft Intune에서 Wi-Fi 설정 구성  
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-android-work-profiles-and-android-kiosk-devices"></a>Android, Android 회사 프로필 및 Android 키오스크 장치를 실행하는 장치에 대해 Microsoft Intune에서 Wi-Fi 설정 구성
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클에서는 Android 및 Android for Work을 실행하는 장치에 대해 Microsoft Intune에서 구성할 수 있는 Wi-Fi 설정을 설명합니다.
+이 문서에서는 Android 및 Android 회사 프로필을 실행하는 장치에 대해 Microsoft Intune에서 구성할 수 있는 Wi-Fi 설정을 설명합니다.
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>기본 및 엔터프라이즈 프로필에 대한 Wi-Fi 설정
 
-Android 및 Android for Work 장치 둘 다에 대해 다음 Wi-Fi 설정을 사용할 수 있습니다.
+Android 및 Android 회사 프로필 장치 둘 다에 대해 다음 Wi-Fi 설정을 사용할 수 있습니다.
 
 - **네트워크 이름** - 이 Wi-Fi 네트워크 설정에 대한 이름을 입력합니다. 사용자가 장치에서 사용 가능한 연결 목록을 찾아볼 때 확인하는 이름입니다.
 - **SSID** - Service Set Identifier(서비스 집합 ID)의 약어입니다. 장치에 연결할 무선 네트워크의 실제 이름입니다. 그러나 사용자에게는 연결을 선택할 때 구성한 네트워크 이름만 표시됩니다.
 - **자동으로 연결** - 이 네트워크 범위에 있을 때마다 장치를 연결합니다.
 - **숨겨진 네트워크** - 이 네트워크가 장치의 사용 가능한 네트워크 목록에 표시되지 않도록 합니다.
 
+## <a name="wi-fi-settings-available-for-enterprise-kiosk-profiles"></a>엔터프라이즈 키오스크 프로필에 사용할 수 있는 Wi-Fi 설정
+- **Wi-Fi 유형**: 이러한 Wi-Fi 유형 설정은 **프로필 유형** > **장치 소유자만** > **Wi-Fi**를 선택한 경우에만 사용할 수 있습니다.
+    - **열기(인증 안함)**
+    - **WEP 미리 공유한 키**: **미리 공유한 키** 상자에 암호를 입력해야 합니다.
+    - **WPA 미리 공유한 키**: **미리 공유한 키** 상자에 암호를 입력해야 합니다.
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>엔터프라이즈 프로필에만 적용되는 Wi-Fi 설정
+## <a name="wi-fi-settings-for-android-legacy-and-android-work-profiles-only"></a>Android 레거시 및 Android 회사 프로필 전용 Wi-Fi 설정
 
 - **EAP 유형** -보안 무선 연결을 인증하는 데 사용되는 EAP(확장할 수 있는 인증 프로토콜) 유형을 선택합니다.
     - **EAP-TLS**

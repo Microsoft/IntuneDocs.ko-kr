@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744604"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905107"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune에서 VPN 프로필 만들기
 
@@ -27,7 +27,7 @@ VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전
 
 예를 들어 기업 네트워크에서 파일 공유에 연결하는 데 필요한 설정을 사용하여 모든 iOS 장치를 프로비전하려고 할 수 있습니다. 기업 네트워크에 연결하는 설정을 포함하는 VPN 프로필을 만듭니다. 그런 다음, iOS 장치를 사용하는 모든 사용자에게 이 프로필을 할당합니다. 사용자에게는 지원되는 네트워크 목록에서 VPN 연결이 표시되어 최소한의 노력으로 연결할 수 있습니다.
 
-사용자 지정 구성 정책을 사용하여 다음 플랫폼에 대한 VPN 프로필을 만들 수 있습니다.
+Intune 사용자 지정 구성 정책을 사용하여 다음 플랫폼에 대한 VPN 프로필을 만들 수 있습니다.
 
 * Android 4 이상
 * Windows 8.1 이상을 실행하는 등록된 장치
@@ -40,7 +40,7 @@ VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전
 
 다음의 연결 유형을 사용하여 VPN 프로필을 만들 수 있습니다.
 
-|연결 형식|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|연결 형식|Android<br>Android 회사 프로필|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |자동|아니요|아니요|아니요|아니요|아니요|예|
 |검사점 캡슐 VPN|예|예|예|예|예|예|
@@ -68,21 +68,21 @@ VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전
 3. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 4. VPN 프로필의 **이름** 및 **설명**을 입력합니다.
 5. **플랫폼** 드롭다운 목록에서 VPN 설정을 적용할 장치 플랫폼을 선택합니다. 현재 VPN 장치 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
-  - **OWA(Outlook Web Access)**
-  - **Android for Work**
-  - **Android**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 이상**
-  - **Windows 10 이상**
+   - **OWA(Outlook Web Access)**
+   - **Android 엔터프라이즈**
+   - **iOS**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 이상**
+   - **Windows 10 이상**
 6. **프로필** 유형 드롭다운 목록에서 선택 **VPN**을 선택합니다.
 7. 선택한 플랫폼에 따라 구성할 수 있는 설정이 다릅니다. 각 플랫폼에 대한 자세한 설정을 보려면 다음 항목 중 하나로 이동하세요.
-  - [Android and Android for Work 설정](vpn-settings-android.md)
-  - [iOS 설정](vpn-settings-ios.md)
-  - [macOS 설정](vpn-settings-macos.md)
-  - [Windows Phone 8.1 설정](vpn-settings-windows-phone-8-1.md)
-  - [Windows 8.1 설정](vpn-settings-windows-8-1.md)
-  - [Windows 10 설정](vpn-settings-windows-10.md)(Windows Holographic for Business 포함)
+   - [Android 및 Android 회사 프로필 설정](vpn-settings-android.md)
+   - [iOS 설정](vpn-settings-ios.md)
+   - [macOS 설정](vpn-settings-macos.md)
+   - [Windows Phone 8.1 설정](vpn-settings-windows-phone-8-1.md)
+   - [Windows 8.1 설정](vpn-settings-windows-8-1.md)
+   - [Windows 10 설정](vpn-settings-windows-10.md)(Windows Holographic for Business 포함)
 8. 작업이 완료되면 프로필을 **만듭니다**.
 
 프로필이 만들어지고 프로필 목록에 표시됩니다. 이 프로필을 그룹에 할당하려면 [장치 프로필 할당](device-profile-assign.md)을 참조하세요.

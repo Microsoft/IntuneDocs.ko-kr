@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b71c004a165bd6d38cd1907eadc05ac20f27bd1a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834213"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905311"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune에서 메일 설정을 구성하는 방법
 
@@ -31,7 +31,7 @@ ms.locfileid: "31834213"
 전자 메일 프로필을 사용하여 다음 장치 유형에서 네이티브 전자 메일 클라이언트를 구성할 수 있습니다.
 
 - Android Samsung Knox Standard 4.0 이상
-- Android for Work
+- Android 회사 프로필 장치
 - iOS 8.0 이상
 - Windows Phone 8.1 이상
 - Windows 10(데스크톱) 및 Windows 10 Mobile
@@ -48,15 +48,15 @@ ms.locfileid: "31834213"
 4. **프로필 만들기** 창에서 이메일 프로필에 대한 **이름** 및 **설명**을 입력합니다.
 5. **플랫폼** 드롭다운 목록에서 메일 설정을 적용할 장치 플랫폼을 선택합니다. 현재 메일 장치 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
     - **Android**(Samsung Android Knox Standard만 해당)
-    - **Android for Work**
-    - **Android**
+    - **Android 엔터프라이즈**
+    - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 이상**
     - **Windows 10 이상**
 6. **프로필** 유형 드롭다운 목록에서 선택 **메일**을 선택합니다.
 7. 선택한 플랫폼에 따라 구성할 수 있는 설정이 다릅니다. 각 플랫폼에 대한 자세한 설정을 보려면 다음 항목 중 하나로 이동하세요.
-    - [Android for Work 및 Samsung Knox Standard 설정](email-settings-android.md)
+    - [Android 회사 프로필 및 Samsung Knox Standard 설정](email-settings-android.md)
     - [iOS 설정](email-settings-ios.md)
     - [Windows Phone 8.1 설정](email-settings-windows-phone-8-1.md)
     - [Windows 10 설정](email-settings-windows-10.md)
@@ -89,7 +89,7 @@ Intune에서 인증서 프로필을 만들고 사용하는 방법에 대한 자�
 - **Windows**: 호스트 이름 및 메일 주소를 기반으로 기존에 중복된 메일 프로필이 검색됩니다. Intune은 사용자가 만든 기존 전자 메일 프로필을 덮어씁니다.
 - **Android Samsung Knox Standard**: 메일 주소를 기준으로 중복된 기존 메일 프로필을 검색한 다음 Intune 프로필로 덮어씁니다.
 Android에서는 프로필 식별에 호스트 이름을 사용하지 않으므로 여러 호스트에서 동일한 메일 주소에 사용할 메일 프로필을 여러 개 만들지 않는 것이 좋습니다. 이렇게 하면 각각 덮어쓰게 됩니다.
-- **Android for Work**: Intune은 Android for Work 전자 메일 프로필 2개(Gmail 및 Nine Work 전자 메일 앱용으로 하나씩)를 제공합니다. 이러한 앱은 Google Play 스토어에서 제공되며 장치 작업 프로필에 설치되므로 프로필이 중복될 수 없습니다. 두 앱 모두 Exchange에 대한 연결을 지원합니다. 메일 연결을 사용하도록 설정하려면 사용자의 장치에 이러한 메일 앱 중 하나를 배포한 후 적절한 메일 프로필을 만들어 배포합니다. Nine Work 등의 메일 앱은 무료가 아닐 수도 있습니다. 앱의 라이선스 정보를 검토하거나, 질문이 있으면 앱 회사에 문의하세요.
+- **Android 회사 프로필**: Intune은 Android 회사 프로필 이메일 프로필 2개(Gmail 및 Nine Work 이메일 앱용으로 하나씩)를 제공합니다. 이러한 앱은 Google Play 스토어에서 제공되며 장치 작업 프로필에 설치되므로 프로필이 중복될 수 없습니다. 두 앱 모두 Exchange에 대한 연결을 지원합니다. 메일 연결을 사용하도록 설정하려면 사용자의 장치에 이러한 메일 앱 중 하나를 배포한 후 적절한 메일 프로필을 만들어 배포합니다. Nine Work 등의 메일 앱은 무료가 아닐 수도 있습니다. 앱의 라이선스 정보를 검토하거나, 질문이 있으면 앱 회사에 문의하세요.
 
 ### <a name="update-an-email-profile"></a>전자 메일 프로필 업데이트
 

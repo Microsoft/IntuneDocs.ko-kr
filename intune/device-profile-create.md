@@ -14,12 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3f62e306574606ffa1eb1e6f242c3cb30b1a9c1b
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: a9fb84fd15eb68f007e820e473dd9edf55b37777
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744655"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905022"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune에서 장치 프로필 만들기
 
@@ -37,8 +37,8 @@ ms.locfileid: "34744655"
    - **플랫폼**: 플랫폼 형식을 선택 합니다.  
 
        - **OWA(Outlook Web Access)**
-       - **Android for Work**
-       - **Android**
+       - **Android 회사 프로필**
+       - **iOS**
        - **macOS**
        - **Windows Phone 8.1**
        - **Windows 8.1 이상**

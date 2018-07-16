@@ -1,23 +1,23 @@
 ---
 title: Microsoft Intune에서 Windows 장치 규정 준수 정책 만들기 - Azure | Microsoft Docs
-description: Windows Phone 8.1, Windows 8.1 이상, Windows 10 이상 장치에 대한 Microsoft Intune 장치 준수 정책을 만들거나 구성합니다. 최소 및 최대 운영 체제에서 준수 확인, 암호 제한 및 길이 설정, BitLocker 요구, 허용되는 위협 수준 설정, Surface Hub 및 Windows Holographic for Business를 비롯한 데이터 저장소에서 암호화 사용 등을 수행합니다.
+description: Windows Phone 8.1, Windows 8.1 이상, Windows 10 이상 장치에 대한 Microsoft Intune 장치 준수 정책을 만들거나 구성합니다. 최소 및 최대 운영 체제에서 준수 확인, 암호 제한 및 길이 설정, bitlocker 요구, 타사(3자) AV 솔루션, 허용되는 위협 수준 설정, Surface Hub 및 Windows Holographic for Business를 비롯한 데이터 저장소에서 암호화 사용 등을 수행합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744910"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909340"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune에서 Windows 장치에 대한 장치 준수 정책 추가
 
@@ -115,6 +115,8 @@ Windows 8.1 PC는 **3** 버전을 반환합니다. Windows에 대한 OS 버전 �
 
 HAS 서비스의 작동 방식에 대한 자세한 내용은 [상태 증명 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)를 참조하세요.
 
+방어 위협 서비스로 Windows Defender ATP(Advanced Threat Protection)를 설정하려면[조건부 액세스로 Windows Defender ATP 사용](advanced-threat-protection.md)을 참조하세요.
+
 ### <a name="device-properties"></a>장치 속성
 
 - **최소 OS 버전**: 허용되는 최소 버전을 **주 버전.부 버전.빌드.CU 번호** 형식으로 입력합니다. 올바른 값을 얻으려면 명령 프롬프트를 열고 `ver`을 입력합니다. `ver` 명령은 버전을 다음 형식으로 반환합니다.
@@ -164,6 +166,11 @@ HAS 서비스의 작동 방식에 대한 자세한 내용은 [상태 증명 CSP]
 #### <a name="encryption"></a>암호화
 
 - **장치의 데이터 저장소 암호화**: **필요**를 선택하면 장치의 데이터 저장소가 암호화됩니다.
+
+#### <a name="device-security"></a>장치 보안
+
+- **바이러스 백신**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 Windows Security Center에 등록된 바이러스 백신 솔루션을 사용하여 준수를 확인할 수 있습니다. **구성되지 않은** 경우 Intune은 장치에 설치된 모든 AV 솔루션을 확인하지 않습니다.
+- **스파이웨어 방지**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 Windows Security Center에 등록된 스파이웨어 방지 솔루션을 사용하여 준수를 확인할 수 있습니다. **구성되지 않은** 경우 Intune은 장치에 설치된 스파이웨어 방지 솔루션을 확인하지 않습니다.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 

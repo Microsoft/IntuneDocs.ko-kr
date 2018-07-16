@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d917d2449e75b89db00d453b72940a93efb03321
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021883"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905005"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune에서 사용자 지정 설정을 사용하여 프로필 만들기
 
@@ -39,8 +39,8 @@ Intune에는 필요하거나 원하는 모든 기본 제공 설정이 없을 수
 5. **플랫폼** 드롭다운 목록에서 사용자 지정 설정을 적용할 장치 플랫폼을 선택합니다. 다음 플랫폼 중 하나를 선택할 수 있습니다.
 
     - **OWA(Outlook Web Access)**
-    - **Android for Work**
-    - **Android**
+    - **Android 엔터프라이즈**
+    - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 이상**
@@ -55,7 +55,7 @@ Intune에는 필요하거나 원하는 모든 기본 제공 설정이 없을 수
     - [Windows Phone 8.1 설정](custom-settings-windows-phone-8-1.md)
     - [Windows 10 설정](custom-settings-windows-10.md)
     - [Windows Holographic for Business 설정](custom-settings-windows-holographic.md)
-    - [Android for Work 설정](custom-settings-android-for-work.md)
+    - [Android 회사 프로필 설정](custom-settings-android-for-work.md)
 
 8. 작업이 완료되면 **만들기**를 선택합니다.
 

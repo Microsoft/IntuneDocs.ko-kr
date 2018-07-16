@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456353"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921351"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>iOS 장치에 대한 웹 콘텐츠 필터 설정
 
@@ -58,7 +58,7 @@ URL을 지정하지 않으면 최종 사용자는 microsoft.com, microsoft.net �
 ## <a name="specific-websites-only"></a>특정 웹사이트만
 
 1. **웹 콘텐츠 필터** 페이지에서 허용하려는 각 웹 사이트에 대해 다음 설정을 구성합니다.
-    - **URL** - 허용할 웹 사이트의 URL을 입력합니다(예: **http://www.contoso.com**).
+    - **URL** - 허용할 웹 사이트의 URL을 입력합니다(예: `https://www.contoso.com`).
     - **책갈피 경로** - 책갈피를 저장할 위치 경로를 입력합니다(예: **/Contoso/Business Apps**). 경로를 추가하지 않으면 장치의 기본 책갈피 폴더에 책갈피가 추가됩니다.
     - **제목** - 책갈피에 대한 설명이 포함된 제목을 입력합니다.
 2. 각 웹 사이트에 대한 정보를 입력한 후 **추가**를 클릭합니다.

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09a4d528a95d682bf12e6610480b1aa1bcbdb83
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6b68d7eda57d50c3a1cb55979590e8b07d9daf50
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829328"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904951"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Intune을 사용하여 원격으로 장치 다시 시작
 
@@ -31,12 +31,13 @@ ms.locfileid: "31829328"
 
 - Windows - Windows 8.1 이상에서 지원됨
 - Windows Phone - Windows Phone 8.1 이상에서 지원됨
+- Android 키오스크 장치 - 지원됨
 - iOS - 지원됨
 
     > [!Note]  
     > 이 명령은 감독되는 장치 및 **장치 잠금** 액세스 권한에 필요합니다. 장치를 즉시 다시 시작합니다. 암호로 잠긴 iOS 장치는 다시 시작한 후에 Wi-Fi 네트워크에 다시 연결되지 않습니다. 장치는 다시 시작한 후에 서버와 통신하지 못할 수 있습니다.
 - macOS - 지원되지 않음
-- Android - 지원되지 않음
+- Android 및 Android 작업 프로필 장치 - 지원되지 않음
 
 ## <a name="restart-a-device"></a>장치 다시 시작
 

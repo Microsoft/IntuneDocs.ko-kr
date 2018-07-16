@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 Android for Work 장치 준수 정책 만들기 - Azure | Microsoft Docs
-description: Android for Work 장치에 대한 Microsoft Intune 장치 준수 정책을 만들거나 구성합니다. 탈옥 상태의 장치 허용, 허용되는 위협 수준 설정, Google Play 확인, 최소 및 최대 운영 체제 버전 입력, 암호 요구 사항 선택, 테스트용으로 응용 프로그램 로드 허용 등을 수행합니다.
+title: Microsoft Intune에서 Android 회사 프로필 준수 정책 만들기 - Azure | Microsoft Docs
+description: Android 회사 프로필 장치에 대한 Microsoft Intune 장치 준수 정책을 만들거나 구성합니다. 탈옥 상태의 장치 허용, 허용되는 위협 수준 설정, Google Play 확인, 최소 및 최대 운영 체제 버전 입력, 암호 요구 사항 선택, 테스트용으로 응용 프로그램 로드 허용 등을 수행합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047988"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905090"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Intune에서 Android for Work 장치에 대한 장치 준수 정책 추가
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Intune에서 Android 회사 프로필 장치에 대한 장치 준수 정책 추가
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android for Work에 대한 Intune 장치 준수 정책은 규격 장치로 간주되기 위해 충족해야 하는 규칙과 설정을 지정합니다. 이러한 정책을 조건부 액세스와 함께 사용하여 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 장치 보고서를 가져오고 비규격에 대한 조치를 취할 수도 있습니다. Intune Azure Portal에서 여러 플랫폼에 대한 장치 준수 정책을 만듭니다. 준수 정책 및 모든 필수 조건에 대한 자세한 내용은 [장치 준수 시작](device-compliance-get-started.md)을 참조하세요.
+Android 회사 프로필 장치에 대한 Intune 장치 준수 정책은 규격 장치로 간주되기 위해 충족해야 하는 규칙과 설정을 지정합니다. 이러한 정책을 조건부 액세스와 함께 사용하여 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 장치 보고서를 가져오고 비규격에 대한 조치를 취할 수도 있습니다. Intune Azure Portal에서 여러 플랫폼에 대한 장치 준수 정책을 만듭니다. 준수 정책 및 모든 필수 조건에 대한 자세한 내용은 [장치 준수 시작](device-compliance-get-started.md)을 참조하세요.
 
 다음 표에서는 준수 정책을 조건부 액세스 정책과 함께 사용할 경우 비준수 설정을 관리하는 방법을 설명합니다.
 
 --------------------------
 
-|**정책 설정**| **Android for Work** |
+|**정책 설정**| **Android 회사 프로필** |
 | --- | --- |
 | **PIN 또는 암호 구성** |  격리됨 |
 | **장치 암호화** |  격리됨 |
@@ -51,7 +51,7 @@ Android for Work에 대한 Intune 장치 준수 정책은 규격 장치로 간�
 ## <a name="create-a-device-compliance-policy"></a>장치 준수 정책 만들기
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **플랫폼**에서 **Android for Work**를 선택합니다. **설정 구성**을 선택하고 **장치 상태**, **장치 속성** 및 **시스템 보안** 설정을 입력합니다. 작업을 마쳤으면 **확인**, **만들기**를 차례로 선택합니다.
+5. **플랫폼**에서 **Android 엔터프라이즈**를 선택합니다. **설정 구성**을 선택하고 **장치 상태**, **장치 속성** 및 **시스템 보안** 설정을 입력합니다. 작업을 마쳤으면 **확인**, **만들기**를 차례로 선택합니다.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,9 +77,9 @@ Android for Work에 대한 Intune 장치 준수 정책은 규격 장치로 간�
 
 #### <a name="threat-scan-on-apps"></a>앱에서 위협 검색
 
-회사 프로필(Android for Work)이 있는 장치에서, **앱에서 위협 검색** 설정은 구성 정책 설정으로 찾을 수 있습니다. 관리자는 장치에 대해 이 설정을 사용하도록 설정할 수 있습니다.
+Android 회사 프로필이 있는 장치에서, **앱에서 위협 검색** 설정은 구성 정책 설정으로 찾을 수 있습니다. 관리자는 장치에 대해 이 설정을 사용하도록 설정할 수 있습니다.
 
-엔터프라이즈에서 Android 회사 프로필을 사용하는 경우 등록된 장치에 대해 **앱에서 위협 검색**을 사용하도록 설정할 수 있습니다. 장치 프로필을 설정하고 시스템 보안 설정이 필요합니다. 자세한 내용은 [Intune의 Android for Work 장치 제한 설정](device-restrictions-android-for-work.md)을 참조하세요.
+엔터프라이즈에서 Android 회사 프로필을 사용하는 경우 등록된 장치에 대해 **앱에서 위협 검색**을 사용하도록 설정할 수 있습니다. 장치 프로필을 설정하고 시스템 보안 설정이 필요합니다. 자세한 내용은 [Intune에서 장치 제한 사항 설정 작업](device-restrictions-android-for-work.md)을 참조하세요.
 
 ## <a name="device-property-settings"></a>장치 속성 설정
 
@@ -106,13 +106,13 @@ Android for Work에 대한 Intune 장치 준수 정책은 규격 장치로 간�
 
 ### <a name="encryption"></a>암호화
 
-- **모바일 장치 암호화 필요:** Android for Work 장치에는 암호화가 시행되므로 이 설정을 구성하지 않아도 됩니다.
+- **모바일 장치 암호화 필요:** Android 회사 프로필 장치에는 암호화가 시행되므로 이 설정을 구성하지 않아도 됩니다.
 
 ### <a name="device-security"></a>장치 보안
 
-- **알 수 없는 출처의 앱 차단**: Android for Work 장치는 알 수 없는 소스에서의 설치를 항상 제한하므로 이 설정을 구성할 필요가 없습니다.
+- **알 수 없는 출처의 앱 차단**: Android 회사 프로필 장치는 알 수 없는 소스에서의 설치를 항상 제한하므로 이 설정을 구성할 필요가 없습니다.
 - **회사 포털 앱 런타임 무결성**: 회사 포털 앱에 기본 런타임 환경이 설치되어 있고, 제대로 서명되었으며, 디버그 모드가 아니고, 알려진 소스에서 설치되었는지 확인합니다.
-- **장치에서 USB 디버깅 차단**: Android for Work 장치에서는 USB 디버깅을 사용할 수 없으므로 이 설정을 구성할 필요가 없습니다.
+- **장치에서 USB 디버깅 차단**: Android 회사 프로필 장치에서는 USB 디버깅을 사용할 수 없으므로 이 설정을 구성할 필요가 없습니다.
 - **최소 보안 패치 수준**: 장치에서 사용할 수 있는 가장 오래된 보안 패치 수준을 선택합니다. 최소한 이 패치 수준이 아닌 장치는 비규격 장치가 됩니다. `YYYY-MM-DD` 형식으로 날짜를 입력해야 합니다.
 
 ## <a name="assign-user-groups"></a>사용자 그룹 할당

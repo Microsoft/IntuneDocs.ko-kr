@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832311"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905334"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune에서 Wi-Fi 설정을 구성하는 방법
 
@@ -37,7 +37,7 @@ Microsoft Intune Wi-Fi 프로필을 사용하여 무선 네트워크 설정을 �
 Wi-Fi 프로필은 다음 장치 플랫폼을 지원합니다.
 
 - Android 4 이상
-- Android for Work
+- Android 회사 프로필
 - iOS 8.0 이상
 - macOS(Mac OS X 10.11 이상)
 
@@ -55,8 +55,8 @@ Windows 8.1, Windows 10, Windows 10 Mobile 및 Windows Holographic for Business�
 4. **프로필 만들기** 창에서 Wi-Fi 프로필에 대한 **이름** 및 **설명**을 입력합니다.
 5. **플랫폼** 드롭다운 목록에서 Wi-Fi 설정을 적용할 장치 플랫폼을 선택합니다. 현재 Wi-Fi 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
     - **OWA(Outlook Web Access)**
-    - **Android for Work**
-    - **Android**
+    - **Android 엔터프라이즈**
+    - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 이상**
@@ -69,7 +69,7 @@ Windows 8.1, Windows 10, Windows 10 Mobile 및 Windows Holographic for Business�
 
    **Wi-Fi 가져오기** 프로필(Windows 8.1 이상)을 사용하여 이전에 다른 장치에서 내보낸 XML 파일로 Wi-Fi 설정을 가져올 수 있습니다.
 1. 선택한 플랫폼에 따라 구성할 수 있는 설정이 다릅니다. 각 플랫폼에 대한 자세한 설정을 보려면 다음 항목 중 하나로 이동하세요.
-    - [Android and Android for Work 설정](wi-fi-settings-android.md)
+    - [Android 및 Android 회사 프로필 설정](wi-fi-settings-android.md)
     - [iOS 설정](wi-fi-settings-ios.md)
     - [macOS 설정](wi-fi-settings-macos.md)
     - [Windows 8.1 이상 설정](wi-fi-settings-import-windows-8-1.md)(Windows Holographic for Business 포함)

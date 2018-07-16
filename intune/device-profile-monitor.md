@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune에서 장치 프로필 확인 - Azure | Microsoft Docs
-description: Microsoft Intune에서 장치 구성 프로필 세부 정보를 보고 관리하며, 프로필에 할당된 장치 수의 그래픽 차트를 보고, 프로필이 할당되거나 배포된 장치를 확인합니다.
+description: Microsoft Intune에서 장치 구성 프로필 세부 정보를 보고 관리하며, 프로필에 할당된 장치 수의 그래픽 차트를 보고, 프로필이 할당되거나 배포된 장치를 확인합니다. 충돌 설정이 있는 프로필의 문제를 해결할 수도 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/23/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: dda53c7b21a743136bf1b16cc7bcf864c7b900fd
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744791"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905923"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 장치 프로필 모니터링
 
@@ -33,7 +33,7 @@ Intune에는 장치 구성 프로필을 모니터링하고 관리하는 데 도�
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
 3. **장치 구성** > **프로필**을 선택합니다.
 
-모든 기존 프로필이 나열되고 이러한 프로필은 플랫폼 정보 및 프로필이 장치에 할당되었는지 여부 등의 세부 정보를 포함합니다.
+모든 기존 프로필이 나열되고 이러한 프로필은 플랫폼과 같은 세부 정보가 포함되며 프로필이 모든 장치에 할당되었는지 여부가 표시됩니다.
 
 ## <a name="view-details-on-a-profile"></a>프로필에 대한 세부 정보 보기
 
@@ -68,6 +68,16 @@ Intune에는 장치 구성 프로필을 모니터링하고 관리하는 데 도�
   - **장치 상태**: 프로필에 할당된 장치가 나열되고 프로필이 성공적으로 배포되었는지 여부가 표시됩니다. 특정 장치를 선택하여 설치된 앱을 비롯한 더 많은 세부 정보를 얻을 수 있습니다.
   - **사용자 상태**: 이 프로필의 영향을 받는 장치를 가진 사용자 이름 및 프로필이 성공적으로 배포되었는지 여부를 나열합니다. 특정 사용자를 선택하여 더 많은 세부 정보를 얻을 수 있습니다.
   - **설정별 상태**: 프로필 내의 개별 설정을 표시하여 출력을 필터링하고 설정이 성공적으로 적용되었는지 여부를 표시합니다.
+
+## <a name="view-conflicts"></a>충돌 보기
+
+**장치** > **모든 장치**에서 충돌을 유발시키는 모든 설정을 볼 수 있습니다. 충돌이 발생하면 이 설정을 포함하는 모든 구성 프로필도 표시됩니다. 관리자는 이 기능을 사용하여 문제를 해결하고 프로필과의 불일치를 해결할 수 있습니다.
+
+1. Intune에서 **장치** > **모든 장치** 선택 > 목록에서 기존 장치를 선택합니다. 최종 사용자는 회사 포털 앱에서 장치 이름을 가져올 수 있습니다.
+2. **장치 구성**을 선택합니다. 장치에 적용되는 모든 구성 정책이 나열됩니다.
+3. 정책을 선택합니다. 장치에 적용되는 해당 정책의 모든 설정이 표시됩니다. 장치에 **충돌** 상태가 있는 경우 해당 행을 선택합니다. 새 창에서 모든 프로필과 충돌을 일으키는 설정이 있는 프로필 이름이 표시됩니다.
+
+충돌하는 설정과 해당 설정을 포함하는 정책을 파악했으므로 충돌을 쉽게 해결할 수 있습니다. 
 
 ## <a name="next-steps"></a>다음 단계
 [사용자 및 장치 프로필 할당](device-profile-assign.md)  

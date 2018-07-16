@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026332"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905821"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -39,14 +39,14 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 - 등록된 장치의 최대 수
 - 등록할 수 있는 장치 플랫폼:
   - Android:
-  - Android for Work
+  - Android 회사 프로필
   - iOS
   - macOS
   - 지원합니다.
-- iOS, Android, Android for Work 및 Windows용 플랫폼 운영 체제 버전 (Windows 10 버전만을 사용할 수 있습니다. Windows 8.1을 허용하는 경우 이 항목을 비워둡니다.)
+- iOS, Android, Android 회사 프로필 및 Windows용 플랫폼 운영 체제 버전입니다. (Windows 10 버전만을 사용할 수 있습니다. Windows 8.1을 허용하는 경우 이 항목을 비워둡니다.)
   - 최소 버전
   - 최대 버전
-- 개인 소유 장치 제한(iOS, Android, Android for Work 및 macOS만 해당)
+- 개인 소유 장치 제한(iOS, Android, Android 회사 프로필, macOS만 해당).
 
 ## <a name="default-restrictions"></a>기본 제한 사항
 
@@ -78,7 +78,7 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 5. 제한 이름(기본 제한의 **모든 사용자**)에서 **플랫폼**을 선택합니다. 각 플랫폼 목록에 대해 **허용** 또는 **차단**을 선택합니다.
 6. **저장**을 선택합니다.
 7. 제한 이름(기본 제한의 **모든 사용자**)에서 **플랫폼 구성**을 선택합니다. 그럼 다음, 나열된 플랫폼에 대한 최소 및 최대 **버전**을 선택합니다. 지원되는 버전은 다음과 같습니다.
-    - Android 및 Android for Work는 major.minor.rev.build를 지원합니다.
+    - Android 회사 프로필은 major.minor.rev.build를 지원합니다.
     - iOS는 major.minor.rev를 지원합니다.
     - Windows는 Windows 10용 major.minor.rev.build만 지원합니다.
   운영 체제 버전은 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator 앱에 등록되는 Apple 장치에 적용되지 않습니다.
@@ -88,9 +88,9 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 
 
 >[!NOTE]
->- 개인적으로 소유한 Android 장치의 등록을 차단하는 경우에도 개인적으로 소유한 Android for Work 장치는 계속 등록할 수 있습니다.
->- 기본적으로 Android for Work 장치 설정은 Android 장치에 대한 설정과 동일합니다. Android for Work 설정을 변경하면 달라집니다.
->- 개인적인 Android for Work 등록을 차단하는 경우 회사 Android 장치만 Android for Work로 등록할 수 있습니다.
+>- 개인적으로 소유한 Android 장치의 등록을 차단하는 경우에도 개인적으로 소유한 Android 회사 프로필 장치는 계속 등록할 수 있습니다.
+>- 기본적으로 Android 회사 프로필 장치 설정은 Android 장치에 대한 설정과 동일합니다. Android 회사 프로필 설정을 변경하면 달라집니다.
+>- 개인적인 Android 회사 프로필 등록을 차단하는 경우 회사 Android 장치만 Android 회사 프로필로 등록할 수 있습니다.
 
 ## <a name="set-device-limit-restrictions"></a>장치 개수 제한
 

@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771808"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905209"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune에서 장치에 대한 인증서 프로필 구성
 
@@ -43,7 +43,7 @@ Intune을 사용하여 관리하는 장치에 이러한 인증서를 할당할 �
     - iOS 8.0 이상
     - macOS 10.11 이상
     - Android 4.0 이상
-    - Android for Work
+    - Android 회사 프로필
     - Windows 8.1 이상
     - Windows Phone 8.1 이상
     - Windows 10 이상
@@ -52,7 +52,7 @@ Intune을 사용하여 관리하는 장치에 이러한 인증서를 할당할 �
 
    - iOS 8.0 이상
    - Android 4.0 이상
-   - Android for Work
+   - Android 회사 프로필
    - Windows 10(데스크톱 및 모바일) 이상
 
    다음 플랫폼을 실행하는 장치에 대해서만 **SCEP** 인증서 프로필을 사용할 수 있습니다.
@@ -95,8 +95,8 @@ SCEP 또는 PKCS 인증서 프로필을 만들기 전에 신뢰할 수 있는 �
 5. **플랫폼** 드롭다운 목록에서 이 신뢰할 수 있는 인증서에 대한 장치 플랫폼을 선택합니다. 현재 인증서 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
 
     - **OWA(Outlook Web Access)**
-    - **Android for Work**
-    - **Android**
+    - **Android 엔터프라이즈**
+    - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 이상**

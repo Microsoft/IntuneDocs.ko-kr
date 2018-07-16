@@ -15,12 +15,12 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d0725240840e93522fe80668fdb96cbe4de1236
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 05c99d2431e89f96e293bbd9edbee0753c6a26ad
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224384"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906127"
 ---
 # <a name="reference-for-devices-entities"></a>장치 엔터티에 대한 참조
 
@@ -65,7 +65,7 @@ ms.locfileid: "34224384"
 | 14 |MacMDM |기본 MDM 에이전트로 관리되는 Mac OS X 장치 |
 | 15 |HoloLens |Holo Lens 장치 |
 | 16 |SurfaceHub |Surface Hub 장치 |
-| 17 |AndroidForWork |Android for Work Profile Owner로 관리되는 Android 장치 |
+| 17 |AndroidForWork |Android Profile Owner로 관리되는 Android 장치 |
 | 100 |Blackberry |Blackberry 장치 |
 | 101 |Palm |Palm 장치 |
 | 255 |Unknown |알 수 없는 장치 유형 |

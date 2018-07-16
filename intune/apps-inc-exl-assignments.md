@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2afba3eafb32a06ff19e2cbbf3b87d27edccf0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224666"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905413"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune에서 앱 할당 포함 및 제외
 
@@ -37,7 +37,7 @@ Intune은 그룹을 제외할 때 사용자와 장치 간의 연결을 고려하
 >
 > Intune은 콘솔에서 미리 생성된 **모든 사용자** 및 **모든 장치** 그룹을 제공합니다. 그룹에는 편의를 위해 기본 제공 최적화가 포함됩니다. 이들 그룹을 사용하여 직접 만든 “모든 사용자” 또는 “모든 장치” 그룹 대신 모든 사용자와 모든 장치를 대상으로 지정하는 것이 좋습니다.  
 >
-> Android Enterprise(이전의 Android for Work)는 그룹 포함 및 제외를 지원합니다. Android Enterprise 앱 할당을 위해 기본 제공된 **모든 사용자** 및 **모든 장치** 그룹을 활용할 수 있습니다. 
+> Android 엔터프라이즈는 그룹 포함 및 제외를 지원합니다. Android 엔터프라이즈 앱 할당을 위해 기본 제공된 **모든 사용자** 및 **모든 장치** 그룹을 활용할 수 있습니다. 
 
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>앱을 할당할 때 그룹 포함 및 제외 

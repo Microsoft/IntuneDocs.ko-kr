@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 Android for Work에 대한 장치 제한 사항 - Azure | Microsoft Docs
-description: Android for Work를 실행하는 장치에서 복사 및 붙여넣기, 표시 알림, 앱 사용 권한, 데이터 공유, 암호 길이, 로그인 오류, 잠금에 지문 사용, 암호 다시 사용 및 작업 연락처 Bluetooth 공유 설정을 비롯한 장치의 일부 설정을 제한할 수 있습니다.
+title: Microsoft Intune에서 Android 회사 프로필에 대한 장치 제한 사항 - Azure | Microsoft Docs
+description: Android 회사 프로필 장치에서 복사 및 붙여넣기, 표시 알림, 앱 사용 권한, 데이터 공유, 암호 길이, 로그인 오류, 잠금에 지문 사용, 암호 다시 사용 및 작업 연락처 Bluetooth 공유 설정을 비롯한 장치의 일부 설정을 제한할 수 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046318"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905940"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune에서 장치 제한 사항 설정 작업
 
-이 아티클에서는 Android for Work을 실행하는 장치에 대해 구성할 수 있는 모든 Microsoft Intune 장치 제한 사항 설정을 나열합니다.
+이 문서에서는 Android 회사 프로필 장치에 대해 구성할 수 있는 Microsoft Intune 장치 제한 사항 설정을 나열합니다.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "32046318"
 ### <a name="general-settings"></a>일반 설정
 
 - **회사 및 개인 프로필 간 복사 및 붙여넣기**: 회사 앱과 개인 앱 간 복사 및 붙여넣기를 제어합니다. 차단을 사용하려면 **차단**을 선택합니다. 차단을 사용하지 않으려면 **구성되지 않음**을 선택합니다.
-- **회사 프로필과 개인 프로필 간 데이터 공유**: 회사 프로필의 앱이 개인 프로필의 앱과 공유할 수 있는지 여부를 제어합니다. 이 설정은 응용 프로그램 내의 공유 작업(예: Chrome 브라우저 앱의 **공유...** 옵션)을 제어하며 복사/붙여넣기 클립보드 동작에는 적용되지 않습니다. [앱 보호 정책 설정](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)과 달리 장치 제한 설정은 Intune 포털에서 관리되며, Android for Work 작업 프로필 파티션을 사용하여 관리되는 앱을 격리합니다. 다음 중에서 선택합니다.
+- **회사 프로필과 개인 프로필 간 데이터 공유**: 회사 프로필의 앱이 개인 프로필의 앱과 공유할 수 있는지 여부를 제어합니다. 이 설정은 응용 프로그램 내의 공유 작업(예: Chrome 브라우저 앱의 **공유...** 옵션)을 제어하며 복사/붙여넣기 클립보드 동작에는 적용되지 않습니다. [앱 보호 정책 설정](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)과 달리 장치 제한 설정은 Intune 포털에서 관리되며, Android 회사 프로필 파티션을 사용하여 관리되는 앱을 격리합니다. 다음 중에서 선택합니다.
   - **기본 공유 제한**: 장치의 기본 공유 동작은 Android 버전에 따라 달라집니다. 기본적으로 개인 프로필에서 회사 프로필로의 공유가 허용됩니다. 또한 기본적으로 회사 프로필에서 개인 프로필로의 공유는 차단됩니다. 이 설정을 통해 회사 프로필에서 개인 프로필로의 데이터 공유를 방지합니다. Google의 경우 6.0 이상 버전을 실행 중인 장치에서는 개인 프로필에서 회사 프로필로의 공유를 차단하는 방법을 제공하지 않습니다.
   - **회사 프로필의 앱에서 개인 프로필의 공유 요청을 처리할 수 있음**: 개인 프로필에서 회사 프로필로의 공유를 허용하는 Android의 기본 제공 기능을 사용하도록 설정합니다. 이 옵션이 사용하도록 설정되어 있으면 개인 프로필에 있는 앱의 공유 요청이 회사 프로필에 있는 앱과 데이터를 공유할 수 있습니다. 이 설정은 6.0 이전 버전을 실행 중인 Android 장치의 기본 동작입니다.
   - **경계를 넘은 공유 허용**: 두 방향 모두에서 회사 프로필 경계를 벗어난 공유가 가능합니다. 이 설정을 선택하면 회사 프로필에 있는 앱이 개인 프로필의 배지가 달리지 않은 앱과 데이터를 공유할 수 있습니다. 이 설정을 사용할 경우 회사 프로필의 관리되는 앱이 장치의 관리되지 않는 부분에 있는 앱과 데이터를 공유할 수 있으므로 주의해야 합니다.
@@ -48,7 +48,7 @@ ms.locfileid: "32046318"
 
    최종 사용자가 작업 프로필의 계정을 수동으로 추가 또는 삭제하지 못하게 방지합니다.
 
-   예를 들어 Android for Work 프로필에 Gmail 앱을 배포할 경우 최종 사용자가 해당 작업 프로필에 계정 추가나 제거를 방지할 수 있습니다.
+   예를 들어 Android 회사 프로필에 Gmail 앱을 배포할 경우 최종 사용자가 해당 작업 프로필에 계정 추가나 제거를 방지할 수 있습니다.
 
 - **Bluetooth를 통한 연락처 공유**: Bluetooth를 사용하여 쌍을 이루는 자동차 등의 다른 장치에서 작업 연락처에 액세스할 수 있습니다. 기본적으로 이 설정은 구성되지 않고 작업 프로필 연락처는 표시되지 않습니다. 이 공유를 허용하고 작업 프로필 연락처를 표시하려면 **사용**을 선택합니다. 이 설정은 Android OS v6.0 이상의 Android 작업 프로필 장치에 적용됩니다. 이 옵션을 사용하도록 설정하면 특정 Bluetooth 장치가 처음 연결할 때 회사 연락처를 캐시할 수 있습니다. 초기 페어링/동기화 후에 이 정책을 사용하지 않도록 설정할 경우 Bluetooth 장치에서 회사 연락처가 제거되지 않을 수 있습니다.
 

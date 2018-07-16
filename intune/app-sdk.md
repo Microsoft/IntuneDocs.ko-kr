@@ -1,27 +1,20 @@
----
-title: Intune 앱 SDK의 이점
-titlesuffix: Microsoft Intune
-description: Intune 앱 SDK는 iOS 및 Android 플랫폼 둘 다에 사용할 수 있으며 Microsoft Intune을 통해 모바일 앱 관리 기능을 사용할 수 있게 합니다.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-ms.reviewer: aanavath
-ms.suite: ems
+--
+# <a name="required-metadata"></a>필수 메타데이터
+
+제목: Intune 앱 SDK titlesuffix의 이점: Intune 앱 SDK는 iOS 및 Android 플랫폼 둘 다에 사용할 수 있으며 Microsoft Intune을 통해 모바일 앱 관리 기능을 사용할 수 있습니다.
+keywords: author: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+
+# <a name="optional-metadata"></a>선택적 메타데이터
+
+#<a name="robots"></a>ROBOTS:
+#<a name="audience"></a>대상 그룹:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: aanavath ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-classic
-ms.openlocfilehash: 33e1cb6953891fa6d62841d10bc8011768938ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223580"
+
 ---
+
 # <a name="intune-app-sdk-overview"></a>Intune 앱 SDK 개요
 iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱을 앱 보호 정책에 사용할 수 있도록 설정할 수 있습니다. Intune 앱 SDK는 앱 개발자에게서 필요한 코드 변경의 양을 최소화하려고 합니다. 앱의 동작을 변경하지 않고 대부분의 SDK 기능을 사용하도록 설정할 수 있습니다. 최종 사용자 및 IT 관리자 환경을 개선하기 위해 API를 활용하여 앱 참여를 요구하는 기능에 대한 앱 동작을 사용자 지정할 수 있습니다.
 
@@ -70,3 +63,8 @@ IT 관리자가 최종 사용자가 앱에 액세스하기 전에 장치 상태 
 개인 장치가 있는 많은 사용자는 MDM(모바일 장치 관리) 공급자에 개인 장치를 등록하지 않고 회사 데이터에 액세스하여 사용할 수 있기를 원합니다. MDM 등록 시 장치에 대한 전역 제어를 요구하므로 사용자는 대개 개인 장치에 대한 제어를 회사에 부여하는 것을 주저합니다.
 
 장치 등록이 제외된 앱 보호를 사용하면 Microsoft Intune 서비스가 장치 관리 채널을 통해 정책을 배포하지 않고 직접 앱 보호 정책을 앱에 배포할 수 있습니다.
+
+### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Citrix mVPN을 통한 주문형 응용 프로그램 VPN 
+Citrix XenMobile MDX와 Microsoft Intune의 조합으로 장치와 앱을 관리할 수 있습니다. 이 조합은 Citrix의 mVPN 기술을 사용하는 동안 Intune 앱 보호 정책으로 앱을 관리할 수 있음을 의미합니다. Citrix와의 통합은 iOS 및 Android용 Intune 앱 SDK, iOS 및 Android용 Intune 앱 Wrapping Tool(-citrix flag 포함)을 사용할 수 있습니다.
+ 
+Citrix MDX에 대한 자세한 내용은 [MDX Toolkit 정보](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [iOS용 Citrix MDX 앱 래퍼](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) 및 [Android용 Citrix MDX 앱 래퍼](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)를 참조하세요.
