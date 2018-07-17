@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7c961be9789309fdea57d1a97073c4292b20149
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 998df5181b553b33b570cd78d7f0e490336d7e95
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906076"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039389"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 최종 사용자가 이번 Microsoft Intune 릴리스에서 보게 될 앱의 UI가 어떻게 업데이트되었는지 알아봅니다. 이러한 업데이트를 이해하면 사용자 커뮤니케이션 및 배포를 지원하기 위해 만든 사용자 지정 설명서 업데이트에 도움이 될 것입니다. 사용자가 회사 포털을 사용하여 지원 센터에 전화해 지원을 요청하는 경우 사용자에게 발생하는 문제를 더 잘 해결하는 방법을 이해하는 데에도 도움이 될 수 있습니다.
@@ -29,7 +29,7 @@ ms.locfileid: "37906076"
 
 ## <a name="week-of-april-23-2018"></a>2018년 4월 23일 주간
 #### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10 <!-- 1195010 -->용 회사 포털 앱의 탐색 보기 업데이트됨
-Windows 10용 Intune 회사 포털 앱이 [Fluent Design System의 탐색 보기](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics)로 업데이트되었습니다. 앱의 옆쪽에 모든 최상위 페이지의 정적 세로 목록이 표시됩니다. 링크를 클릭하여 빠르게 페이지를 보고 페이지 간에 전환할 수 있습니다. 이 업데이트는 Intune에서 더욱 공감할 수 있고 친숙한 적응형 환경을 만들려는 Microsoft의 지속적인 노력의 일부로 여러 업데이트 중 첫 번째로 선보이는 것입니다. 
+Windows 10용 Intune 회사 포털 앱이 [Fluent Design System의 탐색 보기](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)로 업데이트되었습니다. 앱의 옆쪽에 모든 최상위 페이지의 정적 세로 목록이 표시됩니다. 링크를 클릭하여 빠르게 페이지를 보고 페이지 간에 전환할 수 있습니다. 이 업데이트는 Intune에서 더욱 공감할 수 있고 친숙한 적응형 환경을 만들려는 Microsoft의 지속적인 노력의 일부로 여러 업데이트 중 첫 번째로 선보이는 것입니다. 
 
 ![Fluent Design 탐색 보기를 보여주는 회사 포털 앱 대시보드의 스크린샷](./media/1804_WindowsCP_Fluent_01.png)
 
@@ -429,7 +429,7 @@ __이후__ ![이제 설치 진행률 표시줄이 표시되는 업데이트된 �
 
 ### <a name="ui-iwp"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트<!--2000968-->
 
-UI 업데이트, 간소화된 워크플로 및 내게 필요한 옵션 기능 향상을 사용하여 4월에 새로운 회사 포털 웹 사이트 환경을 도입할 예정입니다. 여기에는 앱 공유 및 전반적인 성능 향상과 같은 고객 기반 고급 기능이 포함되어 보다 편리한 사용자 환경을 제공합니다.
+UI 업데이트, 간소화된 워크플로 및 향상된 접근성 기능을 통해 8월부터 새로운 회사 포털 웹 사이트 환경을 도입할 예정입니다. 여기에는 앱 공유 및 전반적인 성능 향상과 같은 고객 기반 고급 기능이 포함되어 보다 편리한 사용자 환경을 제공합니다.
 
 고객의 의견에 따라 몇 가지 새로운 기능을 추가했습니다. 그러면 다음과 같은 기존 기능과 유용성을 크게 향상시킵니다.
 
