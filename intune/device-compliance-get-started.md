@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905073"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225445"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune에서 장치 준수 정책 시작
 
@@ -88,7 +88,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 장치가 Intune에 등록되면 Azure AD 등록 프로세스가 시작되고 장치 특성이 Azure AD로 업데이트됩니다. 주요 정보 중 하나는 장치 준수 상태입니다. 이 장치 준수 상태는 조건부 액세스 정책에서 이메일 및 기타 회사 리소스에 대한 액세스를 차단하거나 허용하는 데 사용됩니다.
 
-[Azure AD 등록 프로세스](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)에 자세한 정보가 나와 있습니다.
+[Azure AD 등록 프로세스](https://docs.microsoft.com/azure/active-directory/device-management-introduction)에 자세한 정보가 나와 있습니다.
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>결과 장치 구성 프로필 상태 할당
 
