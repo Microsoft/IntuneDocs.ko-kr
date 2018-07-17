@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905991"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028731"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가
 
@@ -51,7 +51,7 @@ Intune은 다양한 앱 유형을 지원합니다. 사용 가능한 옵션은 �
 | iOS 스토어 앱  | 스토어 앱  | **앱 유형**으로 **iOS**를 선택하고 앱을 검색한 다음 Intune에서 앱을 선택합니다. |
 | Windows Phone 8.1 스토어 앱  | 스토어 앱  | **앱 유형**으로 **Windows Phone 8.1**을 선택하고 앱의 Microsoft Store URL을 입력합니다. |
 | Microsoft Store 앱  | 스토어 앱  | **앱 유형**으로 **Windows**를 선택하고 앱의 Microsoft Store URL을 입력합니다. |
-| Android 회사 앱 | 스토어 앱  | 관리되는 Google Play 스토어에서 Android 회사 프로필 앱을 찾고 승인합니다.  |
+| Android 회사 프로필 앱 | 스토어 앱  | 관리되는 Google Play 스토어에서 Android 회사 프로필 앱을 찾고 승인합니다.  |
 | Windows 10용 Office 365 앱  | 스토어 앱(Office 365) | **앱 유형**으로 **Office 365 제품군** 아래의 **Windows 10**을 선택한 다음 설치할 Office 365 앱을 선택합니다.  |
 | macOS용 Office 365 앱 | 스토어 앱(Office 365) | **앱 유형**으로 **Office 365 제품군** 아래의 **macOS**를 선택한 다음 Office 365 앱 제품군을 선택합니다. |
 | Android LOB(기간 업무) 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.apk**인 Android 설치 파일을 입력합니다.  |

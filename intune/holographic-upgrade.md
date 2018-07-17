@@ -13,17 +13,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08763aa527f24ff7b357603be5e3bd4da5083b45
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e6a71d48e81914808b9af037692a44e4f651bf55
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830436"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224772"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Windows Holographic을 실행하는 장치를 Windows Holographic for Business로 업그레이드
 
 
-Microsoft Intune으로 Windows Holographic를 실행하는 장치를 관리하려면 Windows Holographic에서 Windows Holographic for Business로 장치를 업그레이드해야 합니다. 업그레이드 작업을 수행하여 버전 업그레이드 프로필을 만들 수 있습니다. Microsoft HoloLens의 경우 Commercial Suite를 구입하여 업그레이드에 필요한 라이선스를 얻을 수 있습니다. 자세한 내용은 [Windows Holographic for Business 기능 잠금 해제](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise)를 참조하세요.
+Microsoft Intune으로 Windows Holographic를 실행하는 장치를 관리하려면 Windows Holographic에서 Windows Holographic for Business로 장치를 업그레이드해야 합니다. 업그레이드 작업을 수행하여 버전 업그레이드 프로필을 만들 수 있습니다. Microsoft HoloLens의 경우 Commercial Suite를 구입하여 업그레이드에 필요한 라이선스를 얻을 수 있습니다. 자세한 내용은 [Windows Holographic for Business 기능 잠금 해제](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)를 참조하세요.
 
 ## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>버전 업그레이드 장치 구성 프로파일을 설정하려면
 
