@@ -15,12 +15,12 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b860b68bbf8940a89533159885f471f5337ca0e8
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: 34174568570700e0b15d5bce1bb0bf239251b577
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216142"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039157"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune 모바일 응용 프로그램 관리(MAM) 데이터 전송 정책에 대한 예외를 만드는 방법
 
@@ -38,6 +38,9 @@ Intune Application Protection Policy 내에서 **앱이 다른 앱으로 데이�
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS 데이터 전송 예외
 IOS를 대상으로 하는 정책의 경우 URL 프로토콜에서 데이터 전송 예외를 구성할 수 있습니다. 예외를 추가하려면 지원되는 URL 프로토콜 정보 찾기 응용 프로그램의 개발자가 제공한 설명서를 확인합니다. IOS 데이터 전송 예외에 대한 자세한 내용은 [iOS 응용 프로그램 보호 정책 설정 - 데이터 전송 예외](app-protection-policy-settings-ios.md#data-transfer-exemptions)를 참조합니다.
+
+> [!NOTE]
+> Microsoft는 타사 응용 프로그램에 대한 앱 예외를 만들기 위한 URL 프로토콜을 수동으로 찾을 수 있는 방법이 없습니다. 
 
 ## <a name="android-data-transfer-exceptions"></a>Android 데이터 전송 예외
 Android 대상으로 하는 정책의 경우 응용 프로그램 패키지 이름으로 데이터 전송 예외를 구성할 수 있습니다. 예외를 추가하고자 하는 응용 프로그램에 대해 **Google Play** 스토어 페이지를 확인해 응용 프로그램 패키지 이름을 찾을 수 있습니다. Android 데이터 전송 예외에 대한 자세한 내용은 [Android 응용 프로그램 보호 정책 설정 - 데이터 전송 예외](app-protection-policy-settings-android.md#data-transfer-exemptions)를 참조합니다.

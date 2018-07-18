@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906025"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949495"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Microsoft Intune 초기 버전 - 2018년 7월
 
@@ -40,6 +40,9 @@ ms.locfileid: "37906025"
 ## <a name="intune-in-the-azure-portal"></a>Azure Portal의 Intune
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>Windows <!-- 2683177 -->용 회사 포털 앱에서 더 많은 동기화 기회 제공
+Windows용 회사 포털 앱은 Windows 작업 표시줄 및 시작 메뉴 점프 목록에 장치 동기화 작업을 추가합니다. 두 위치 중 하나를 클릭하면 장치를 빠르게 동기화하고 회사 리소스에 액세스할 수 있습니다.  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Windows 10용 회사 포털 앱에서 장치 암호 다시 설정 <!-- 2101282 --> 
 직원들은 곧 Windows 10용 회사 포털 앱에서 장치의 PIN 또는 암호를 직접 다시 설정할 수 있습니다. 이 기능은 암호 다시 설정을 지원하는 원격 및 로컬 Intune 관리 장치에서 제공됩니다. 장치의 유형에 따라 원격 장치에 대한 요청은 장치의 현재 암호를 제거하거나 임시 암호를 만듭니다. 로컬 장치에 대한 다시 설정을 요청하는 사용자는 장치의 설정 앱으로 리디렉션됩니다.  

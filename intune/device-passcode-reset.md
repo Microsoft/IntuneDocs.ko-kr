@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905158"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039304"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune에서 장치 암호 다시 설정 또는 제거
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-장치에 새 암호를 만들려면 **암호 제거** 작업을 사용합니다.
+장치에 새 암호를 만들려면 **암호 제거** 작업을 사용합니다. 이 작업은 회사 프로필에 대해서만 PIN 다시 설정을 요구합니다. Android 회사 프로필에서는 장치 PIN 다시 설정이 지원되지 않습니다.
 
-## <a name="supported-platforms"></a>지원되는 플랫폼
+## <a name="work-profile-pin-reset-supported-platforms"></a>회사 프로필 PIN 다시 설정이 지원되는 플랫폼
 
-- 작업 프로필에 등록된 Android 장치 버전 8.0 이상
+- 회사 프로필에 등록된 Android 장치 버전 8.0 이상 
 - 버전 6.0 이하의 Android 장치
 - Android 엔터프라이즈 키오스크 장치
 - iOS 
@@ -49,7 +49,9 @@ ms.locfileid: "37905158"
 
 ## <a name="resetting-android-work-profile-passcodes"></a>Android 회사 프로필 암호 다시 설정
 
-지원되는 Android 회사 프로필 장치는 최종 사용자에 대한 관리되는 새 프로필 잠금 해제 암호 또는 관리되는 프로필 질문을 수신합니다. Android 8.0 회사 프로필 장치의 경우 최종 사용자는 등록이 완료된 후 바로 암호 재설정을 활성화하라는 알림을 받습니다. 작업 프로필 암호가 필요하고 설정된 경우 알림이 표시됩니다. 암호를 입력하면 알림은 해제됩니다.
+지원되는 Android 회사 프로필 장치는 최종 사용자에 대한 관리되는 새 프로필 잠금 해제 암호 또는 관리되는 프로필 질문을 수신합니다. 
+
+Android 8.0 회사 프로필 장치의 경우 최종 사용자는 등록이 완료된 후 바로 암호 재설정을 활성화하라는 알림을 받습니다. 작업 프로필 암호가 필요하고 설정된 경우 알림이 표시됩니다. 암호를 입력하면 알림은 해제됩니다.
 
 ## <a name="resetting-ios-passcodes"></a>iOS 암호 다시 설정
 

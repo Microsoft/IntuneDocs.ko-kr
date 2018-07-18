@@ -15,12 +15,12 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021564"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949478"
 ---
 # <a name="get-started-managing-users"></a>사용자 관리 시작
 
@@ -31,8 +31,10 @@ ms.locfileid: "31021564"
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
 3. **Microsoft Intune** 창을 열면 **사용자**를 선택합니다. **모든 사용자** 페이지에서 **+ 새 사용자**를 선택합니다.
-4. **이름** 및 **사용자 이름**과 같은 사용자 정보를 입력합니다. 사용자 이름의 도메인 이름 부분은 초기 기본 도메인 이름인 "contoso.onmicrosoft.com" 도메인 이름 또는 "contoso.com"과 같은 페더레이션되지 않은 확인된 도메인 이름이어야 합니다.
-5. **그룹**에서 사용자를 추가할 테스트 그룹을 선택합니다.
+4. **이름** 및 **사용자 이름**과 같은 사용자 정보를 입력합니다. 사용자 이름의 도메인 이름 부분은 다음 도메인 중 하나여야 합니다.
+    - 초기 기본 도메인 이름은 'contoso.onmicrosoft.com' 도메인 이름 또는
+    - 확인된 비 연합 도메인 이름(예: “contoso.com.”)
+5. **그룹**에서 사용자를 추가할 [그룹](get-started-groups.md)을 선택합니다.
 6. 테스트 장치에 로그인하는 데 사용할 수 있도록 자동으로 생성된 사용자 암호를 저장합니다. 기억할 수 있는 일반적인 암호로 변경할 수 있도록 이 암호를 사용자에게 제공해야 합니다.
 7. **사용자** 창에서 **만들기**를 선택합니다.
 

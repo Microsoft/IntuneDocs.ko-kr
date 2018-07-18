@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8b647e7b2a4d252041e60792b6fc49df8b961066
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37967241"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune에서 Managed Browser 정책을 사용하여 인터넷 액세스 관리
 
@@ -35,7 +36,7 @@ Managed Browser는 조직에서 사용하기 위해 공개 앱 스토어에서 �
 - 화면 캡처 방지
 - 사용자가 선택한 콘텐츠에 대한 링크가 다른 관리되는 앱에서만 열리도록 확인.
 
-자세한 내용은 [앱 보호 정책이란?](/intune/app-protection-policy.md)을 참조하세요.
+자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
 
 이러한 설정을 적용할 수 있는 장치는 다음과 같습니다.
 
@@ -141,7 +142,7 @@ Intune Managed Browser와 [Azure AD 응용 프로그램 프록시]( https://docs
 ### <a name="before-you-start"></a>시작하기 전에
 
 - Azure AD 응용 프로그램 프록시를 통해 내부 응용 프로그램을 설정합니다.
-    - 응용 프로그램 프록시를 구성하고 응용 프로그램을 게시하려면 [설정 설명서]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)를 참조하세요. 
+    - 응용 프로그램 프록시를 구성하고 응용 프로그램을 게시하려면 [설정 설명서](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)를 참조하세요. 
 - 최소 버전 1.2.0의 Managed Browser 앱을 사용해야 합니다.
 - Managed Browser 앱의 사용자는 [Intune 앱 보호 정책]( app-protection-policy.md)이 앱에 할당되어 있습니다.
 
@@ -167,7 +168,7 @@ Intune Managed Browser와 [Azure AD 응용 프로그램 프록시]( https://docs
 
 |                                Key                                |                                                           값                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 유효한 URL을 지정합니다. 잘못된 URL은 보안 조치로 차단됩니다.<br>예: <strong><https://www.bing.com></strong> |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 유효한 URL을 지정합니다. 잘못된 URL은 보안 조치로 차단됩니다.<br>예: `<https://www.bing.com>` |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Managed Browser의 책갈피를 구성하는 방법
 
@@ -181,7 +182,7 @@ Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 �
 
 |                                Key                                 |                                                                                                                                                                                                                                                         값                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 <strong>&#124;</strong> 문자로 구분합니다.<br><br>예: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>여러 책갈피를 구성하려면 각 쌍을 이중 문자 <strong>&#124;&#124;</strong>로 구분합니다.<br><br>예: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 <strong>&#124;</strong> 문자로 구분합니다.<br><br>예:<br> 'Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Managed Browser에 대해 허용 URL 및 차단 URL을 지정하는 방법
 
@@ -189,7 +190,7 @@ Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 �
 
 |Key|값|
 |-|-|
-|다음 중에서 선택합니다.<br><br>- 허용되는 URL 지정(이러한 URL만 허용되고 다른 사이트는 액세스할 수 없음): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 차단되는 URL 지정(다른 모든 사이트는 액세스할 수 있음): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|키에 해당하는 값은 URL 목록입니다. 허용하거나 차단할 모든 URL을 파이프 **&#124;** 문자로 구분된 단일 값으로 입력합니다.<br><br>예:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
+|다음 중에서 선택합니다.<br><ul><li>허용되는 URL을 지정합니다(이러한 URL만 허용되며 다른 사이트에 액세스할 수 없음).<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>차단되는 URL을 지정합니다(다른 모든 사이트는 액세스할 수 있음).<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|키에 해당하는 값은 URL 목록입니다. 허용하거나 차단할 모든 URL을 파이프 **&#124;** 문자로 구분된 단일 값으로 입력합니다.<br><br>예:<br><br>'URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >두 키를 모두 지정하지 마세요. 두 키가 동일한 사용자를 대상으로 하는 경우 가장 제한적인 옵션인 허용 키가 사용됩니다.
@@ -208,42 +209,42 @@ Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 �
 
   -   https의 경우 포트 443
 
-  포트 번호에 대한 와일드 카드 사용은 지원되지 않습니다. 예를 들어 <strong>http&colon;//www&period;contoso&period;com:*;</strong> 및 <strong>http&colon;//www&period;contoso&period;com: /*;</strong>은 지원되지 않습니다.
+  포트 번호에 대한 와일드 카드 사용은 지원되지 않습니다. 예를 들어 `http://www.contoso.com:;` 및 `http://www.contoso.com: /;`은 지원되지 않습니다.
 
 - 다음 표를 사용하여 URL을 지정할 때 사용할 수 있는 패턴에 대해 알아볼 수 있습니다.
 
 |                  URL                  |                     세부 정보                      |                                                일치하는 항목                                                |                                일치하지 않는 항목                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              단일 페이지와 일치               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              단일 페이지와 일치               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>     | www.contoso.com으로 시작하는 모든 URL과 일치 |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
-|    http://&#42;.contoso.com/&#42;     |     contoso.com 아래의 모든 하위 도메인과 일치     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             단일 폴더와 일치              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
-|       http://www.contoso.com:80       |  포트 번호를 사용하여 단일 페이지와 일치   |                                       http://www.contoso.com:80                                       |                                                                               |
-|        https://www.contoso.com        |          안전한 단일 페이지와 일치           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42> |    단일 폴더 및 모든 하위 폴더와 일치    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+|        `http://www.contoso.com`         |              단일 페이지와 일치               |                                            `www.contoso.com`                                            |  `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`contoso.com`/   |
+|          `http://contoso.com`           |              단일 페이지와 일치               |                                             `contoso.com/`                                              | `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com` |
+|    `http://www.contoso.com/&#42;`     | `www.contoso.com`으로 시작하는 모든 URL과 일치 |      `www.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com/videos/tvshows`      |              `host.contoso.com`<br /><br />`host.contoso.com/images`              |
+|    `http://*.contoso.com/*`     |     contoso.com 아래의 모든 하위 도메인과 일치     | `developer.contoso.com/resources`<br /><br />`news.contoso.com/images`<br /><br />`news.contoso.com/videos` |                               `contoso.host.com`                                |
+|     `http://www.contoso.com/images`     |             단일 폴더와 일치              |                                        `www.contoso.com/images`                                         |                          `www.contoso.com/images/dogs`                          |
+|       `http://www.contoso.com:80`       |  포트 번호를 사용하여 단일 페이지와 일치   |                                       `http://www.contoso.com:80`                                       |                                                                               |
+|        `https://www.contoso.com`        |          안전한 단일 페이지와 일치           |                                        `https://www.contoso.com`                                        |                            `http://www.contoso.com`                             |
+| `http://www.contoso.com/images/&#42;` |    단일 폴더 및 모든 하위 폴더와 일치    |                  `www.contoso.com/images/dogs`<br /><br />`www.contoso.com/images/cats`                   |                            `www.contoso.com/videos`                             |
 
 - 다음은 지정할 수 없는 몇몇 입력의 예입니다.
 
-  - &#42;.com
+  - `*.com`
 
-  - &#42;.contoso/&#42;
+  - `*.contoso/*`
 
-  - www.contoso.com/&#42;images
+  - `www.contoso.com/*images`
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - `www.contoso.com/*images*pigs`
 
-  - www.contoso.com/page&#42;
+  - `www.contoso.com/page*`
 
   - IP 주소
 
-  - https://&#42;
+  - `https://*`
 
-  - http://&#42;
+  - `http://*`
 
-  - http://www.contoso.com:&#42
+  - `http://www.contoso.com:*`
 
-  - http://www.contoso.com: /&#42;
+  - `http://www.contoso.com: /*`
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS에서 Managed Browser를 사용하여 관리되는 앱 로그에 액세스하는 방법
 
@@ -291,4 +292,4 @@ Microsoft는 Microsoft 제품 및 서비스를 개선하기 위해 Managed Brows
 
 ## <a name="next-steps"></a>다음 단계
 
-- [앱 보호 정책이란?](app-protection-policy.md)
+- [앱 보호 정책이란?](app-protection-policy.md) 

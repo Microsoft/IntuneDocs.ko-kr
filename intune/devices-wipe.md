@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906059"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028748"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>출하 시 설정으로 리셋을 사용하거나, 회사 데이터를 제거하거나, 장치를 수동으로 등록 취소하여 장치 제거
 
@@ -175,3 +175,24 @@ Intune을 구성하여 비활성, 부실 또는 응답하지 않는 것 같은 �
 5. 삭제하려는 장치와 연결된 사용자를 선택합니다.
 6.  **장치**를 선택합니다.
 7.  장치를 적절하게 제거합니다. 예를 들어 더 이상 사용하지 않는 장치 또는 정의가 부정확한 장치를 제거할 수 있습니다.
+
+## <a name="retire-an-apple-dep-device-from-intune"></a>Intune에서 Apple DEP 장치 사용 중지
+
+Intune에서 Apple DEP 장치를 관리에서 완전히 제거하려면 이러한 단계를 따릅니다.
+
+1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에 로그인합니다.
+2. **장치** > **모든 장치** > 장치 선택 > **회사 데이터 제거**를 선택합니다.
+![회사 데이터 제거에 대한 스크린샷](./media/devices-wipe/remove-company-data.png)
+3. **장치 등록** > **Apple 등록** > **등록 프로그램 토큰** > 토큰 선택 > **장치** > 장치에 대한 확인란 선택 >  **삭제** > **예**를 선택합니다.
+![장치 삭제에 대한 스크린샷](./media/devices-wipe/delete-device.png)
+4. [deploy.apple.com](http://deploy.apple.com)을 방문하여 해당 일련 번호로 장치를 검색합니다.
+5. **할당할** 메뉴에서 **할당되지 않음**을 선택합니다.
+
+6. **재할당**을 선택합니다.
+
+    ![Apple 재할당에 대한 스크린샷](./media/devices-wipe/apple-reassign.png)
+
+## <a name="next-steps"></a>다음 단계
+
+삭제된 장치를 다시 등록하려면 [등록 옵션](enrollment-options.md)을 선택합니다.
+
