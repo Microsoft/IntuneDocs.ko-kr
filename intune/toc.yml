@@ -724,8 +724,6 @@
           href: app-wrapper-prepare-android.md
         - name: Android용 Intune 앱 SDK
           href: app-sdk-android.md
-        - name: Intune 앱 SDK Cordova 플러그 인
-          href: app-sdk-cordova.md
         - name: Intune 앱 SDK Xamarin 바인딩
           href: app-sdk-xamarin.md
     - name: Intune 데이터 웨어하우스 사용
