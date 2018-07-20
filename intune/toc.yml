@@ -521,6 +521,7 @@
         - name: Jamf Pro로 관리되는 Mac에서 준수 적용
           href: conditional-access-assign-jamf.md
     - name: 장치 데이터 보호
+      href: device-protect.md
       items:
         - name: 개인 정보 및 개인 데이터
           href: privacy-personal-data.md
