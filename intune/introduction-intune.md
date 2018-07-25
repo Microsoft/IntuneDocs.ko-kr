@@ -36,8 +36,7 @@ Intune은 회사 데이터를 보호하면서 직원이 생산성을 높일 수 
 * [모바일 장치에서 액세스할 수 있도록 온-프레미스 메일 및 데이터 보호](common-scenarios.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [모바일 장치에서 안전하게 액세스할 수 있도록 Office 365 메일 및 데이터 보호](common-scenarios.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [직원에게 회사 소유의 휴대폰 발급](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
-* 
-  [모든 직원에게 BYOD(Bring Your Own Device) 또는 개인 장치 프로그램 제공](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
+* [모든 직원에게 BYOD(Bring Your Own Device) 또는 개인 장치 프로그램 제공](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
 * [직원이 관리되지 않는 공용 키오스크에서 Office 365에 안전하게 액세스하도록 지원](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 * [작업자에게 사용이 제한된 공유 태블릿 발급](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
