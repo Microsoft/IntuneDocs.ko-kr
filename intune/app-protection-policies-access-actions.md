@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
+ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993737"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138699"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -91,7 +91,7 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 - 지정됨(지정되지 않은 경우 초기화)
 
 **IT 관리자가 동일한 Intune 사용자의 동일한 앱을 대상으로 하는 정책 간 다른 Android 제조업체 목록을 입력하면 어떻게 되나요?**<br>
-구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 Android 제조업체의 교차점이 됩니다. 예를 들어 *정책A*는 "Google, Samsung"을 지정하고 *정책 B*는 "Google"을 지정합니다. *정책A*와 *정책 B* 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 "Google"이 됩니다. 
+구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 Android 제조업체의 교차점이 됩니다. 예를 들어 *정책A*는 “Google; Samsung”을 지정하고 *정책 B*는 “Google”을 지정합니다. *정책A*와 *정책 B* 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 “Google”이 됩니다. 
 
 ### <a name="additional-settings-and-actions"></a>추가 설정 및 작업 
 

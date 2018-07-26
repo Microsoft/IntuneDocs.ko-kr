@@ -15,18 +15,18 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 853b602781b221ba681d802ae0119fc184ab8d6b
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225155"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164555"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager를 통해 iOS 장치 등록 기능 사용
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 항목의 정보를 참조하여 [Apple School Manager](https://school.apple.com/) 프로그램을 통해 구매한 iOS 장치를 등록할 수 있습니다. Intune을 Apple School Manager와 함께 사용하면 많은 수의 iOS 장치를 직접 조작하지 않고 쉽게 등록할 수 있습니다. 학생이나 교사가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 관리용으로 등록됩니다.
+이 문서의 정보를 참조하여 [Apple School Manager](https://school.apple.com/) 프로그램을 통해 구매한 장치에 대해 iOS 장치 등록을 수행할 수 있습니다. Intune을 Apple School Manager와 함께 사용하면 많은 수의 iOS 장치를 직접 조작하지 않고 쉽게 등록할 수 있습니다. 학생이나 교사가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 관리용으로 등록됩니다.
 
 Apple School Manager 등록을 활성화하려면 Intune과 Apple School Manager 포털을 모두 사용해야 합니다. 관리용으로 Intune에 장치를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 장치에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다.
 
@@ -36,7 +36,7 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 - [MDM 기관](mdm-authority-set.md)
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
-- 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 끝점](https://technet.microsoft.com/library/adfs2-help-endpoints)이 필요합니다. [자세히 알아봅니다](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+- ADFS를 사용하는 경우 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 끝점](https://technet.microsoft.com/library/adfs2-help-endpoints)이 필요합니다. [자세히 알아봅니다](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - [Apple School Management](http://school.apple.com) 프로그램으로 구입한 장치
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Apple 토큰 가져오기 및 장치 할당
@@ -80,11 +80,13 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 1. [Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택합니다.
 2. 토큰을 선택하고 **프로필**을 선택한 다음 **프로필 만들기**를 선택합니다.
+
 3. **프로필 만들기**에서 관리 목적으로 프로필의 **이름** 및 **설명**을 입력합니다. 사용자는 이러한 세부 정보를 볼 수 없습니다. 이 **이름** 필드를 사용하여 Azure Active Directory에 동적 그룹을 만들 수 있습니다. 이 등록 프로필로 장치를 할당하기 위해 프로필 이름을 사용하여 enrollmentProfileName 매개 변수를 정의합니다. [Azure Active Directory 동적 그룹](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)에 대해 자세히 알아보세요.
-    ![프로필 이름 및 설명입니다.](./media/device-enrollment-program-enroll-ios/image05.png)
+
+    ![프로필 이름 및 설명](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. **사용자 선호도**에서 이 프로필이 있는 장치가 할당된 사용자로 등록되어야 하는지, 할당된 사용자 없이 등록되어야 하는지 선택합니다.
-    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털을 사용하려는 장치의 경우 이 옵션을 선택합니다. 이 옵션을 사용하면 사용자가 회사 포털을 통해 장치를 인증할 수도 있습니다. 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 끝점](https://technet.microsoft.com/library/adfs2-help-endpoints)이 필요합니다. [자세히 알아봅니다](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Apple School Manager의 공유 iPad 모드에서는 사용자가 사용자 선호도를 사용하지 않고 등록해야 합니다.
+    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털을 사용하려는 장치의 경우 이 옵션을 선택합니다. 이 옵션을 사용하면 사용자가 회사 포털을 통해 장치를 인증할 수도 있습니다. ADFS를 사용하는 경우 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 끝점](https://technet.microsoft.com/library/adfs2-help-endpoints)이 필요합니다. [자세히 알아봅니다](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Apple School Manager의 공유 iPad 모드에서는 사용자가 사용자 선호도를 사용하지 않고 등록해야 합니다.
 
     - **사용자 선호도를 사용하지 않고 등록** - 공유 장치와 같이 단일 사용자로 등록되지 않은 장치의 경우 이 옵션을 선택합니다. 로컬 사용자 데이터에 액세스하지 않고 작업을 수행하는 장치에 이 옵션을 사용합니다. 회사 포털 앱과 같은 앱이 작동하지 않습니다.
 
@@ -108,7 +110,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 7. 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할지 여부를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 장치 등록 후 장치를 초기화하지 않고는 이 설정을 변경할 수 없습니다. 이러한 장치는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
 
-8. 여러 사용자가 관리되는 Apple ID를 사용하여 등록된 iPad에 로그온할 수 있게 하려면 **공유 iPad**에서 **예**를 선택합니다. 이 경우 **사용자 선호도를 사용하지 않고 등록** 및 **감독됨** 모드를 **예**로 설정해야 합니다. 관리되는 Apple ID는 Apple School Manager 포털에서 작성됩니다. [공유 iPad](education-settings-configure-ios-shared.md)에 대해 자세히 알아보세요. [Apple의 공유된 iPad 요구 사항](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)도 검토해야 합니다.
+8. 여러 사용자가 관리되는 Apple ID를 사용하여 등록된 iPad에 로그온할 수 있게 하려면 **공유 iPad**에서 **예**를 선택합니다(이 옵션을 사용하려면 **사용자 선호도를 사용하지 않고 등록** 및 **감독됨** 모드를 **예**로 설정해야 함). 관리되는 Apple ID는 Apple School Manager 포털에서 작성됩니다. [공유 iPad](education-settings-configure-ios-shared.md) 및 [Apple의 공유 iPad 요구 사항](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)에 대해 자세히 알아보세요.
 
 9. 이 프로필을 사용하는 장치가 **컴퓨터와 동기화**할 수 있도록 할지 여부를 선택합니다. **인증서로 Apple Configurator 허용**을 선택한 경우 **Apple Configurator 인증서** 아래에서 인증서를 선택해야 합니다.
 
@@ -151,7 +153,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 ## <a name="sync-managed-devices"></a>관리되는 장치 동기화
 
-이제 Intune에 Apple School Manager 장치 관리 권한이 할당되었으므로 Intune을 Apple 서비스와 동기화하여 Intune에서 관리 장치를 확인할 수 있습니다.
+Intune에 Apple School Manager 장치 관리 권한이 할당된 후 Intune을 Apple 서비스와 동기화하여 Intune에서 관리 장치를 확인합니다.
 
 [Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택한 다음 **장치** > **동기화**를 선택합니다. ![등록 프로그램 장치 노드가 선택되고 동기화 링크를 선택하는 스크린샷](./media/device-enrollment-program-enroll-ios/image06.png)
 
@@ -168,7 +170,7 @@ Intune에서 관리하는 Apple School Manager 장치를 등록하려면 등록 
 
 1. [Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택한 다음 목록에서 토큰을 선택합니다.
 2. **장치**를 선택하고 목록에서 장치를 선택한 다음 **프로필 할당**을 선택합니다.
-3. **프로필 할당**에서 장치의 프로필을 선택한 다음 **할당**을 선택합니다.
+3. **프로필 할당**에서 장치의 프로필을 선택한 다음, **할당**을 선택합니다.
 
 ## <a name="distribute-devices-to-users"></a>사용자에게 장치 배포
 
