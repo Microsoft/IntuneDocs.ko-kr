@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833368"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117874"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>장치를 동기화하여 Intune에서 최신 정책과 작업 가져오기
 
@@ -43,6 +43,7 @@ ms.locfileid: "31833368"
 4. 관리하는 장치 목록에서 장치를 선택하고 **자세히**를 선택한 다음, **동기화**를 선택합니다.
 5. 확인하려면 **예**를 선택합니다.
 
+동기화 작업의 상태를 확인하려면 **장치** > **장치 작업**을 선택합니다.
 
 ## <a name="retryable-error-codes"></a>다시 시도 가능 오류 코드
 
@@ -65,4 +66,5 @@ ms.locfileid: "31833368"
 
 ## <a name="next-steps"></a>다음 단계
 
-- 동기화 작업의 상태를 확인하려면 **장치 작업**을 선택합니다. 
+장치의 [세부 정보를 확인](device-inventory.md)할 수 있습니다.
+ 

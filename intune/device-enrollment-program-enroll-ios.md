@@ -15,18 +15,18 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: bfc42775424ac84737af6c713a04295e24859f79
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219903"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203257"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 장치 등록 프로그램을 통해 iOS 장치를 자동으로 등록
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 항목의 정보를 참조하여 Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 장치에 대해 iOS 장치 등록을 사용할 수 있습니다. 장치를 건드리지 않고 다수의 장치에 대한 DEP 등록을 사용할 수 있습니다. iPhones 및 iPads와 같은 장치를 직접 사용자에게 제공할 수 있습니다. 사용자가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 관리용으로 등록됩니다.
+이 아티클을 통해 Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 장치에 대해 iOS 장치 등록을 사용할 수 있습니다. 장치를 건드리지 않고 다수의 장치에 대한 DEP 등록을 사용할 수 있습니다. iPhones 및 iPads와 같은 장치를 직접 사용자에게 제공할 수 있습니다. 사용자가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 관리용으로 등록됩니다.
 
 DEP 등록을 사용하도록 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 관리용으로 Intune에 장치를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 장치에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다.
 
@@ -115,7 +115,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
     ![프로필 이름 및 설명](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. **사용자 선호도**에서 이 프로필이 있는 장치가 할당된 사용자로 등록되어야 하는지, 할당된 사용자 없이 등록되어야 하는지 선택합니다.
-    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털을 사용하려는 장치의 경우 이 옵션을 선택합니다. 이 옵션을 사용하면 사용자가 회사 포털을 통해 장치를 인증할 수도 있습니다. 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 끝점](https://technet.microsoft.com/library/adfs2-help-endpoints)이 필요합니다. [자세히 알아봅니다](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털을 사용하려는 장치의 경우 이 옵션을 선택합니다. 이 옵션을 사용하면 사용자가 회사 포털을 통해 장치를 인증할 수도 있습니다. ADFS를 사용하는 경우 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 엔드포인트](https://technet.microsoft.com/library/adfs2-help-endpoints)가 필요합니다. [자세히 알아봅니다](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
     - **사용자 선호도를 사용하지 않고 등록** - 단일 사용자로 등록되지 않은 장치의 경우 이 옵션을 선택합니다. 로컬 사용자 데이터에 액세스하지 않고 작업을 수행하는 장치에 이 옵션을 사용합니다. 회사 포털 앱과 같은 앱이 작동하지 않습니다.
 
@@ -178,7 +178,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 1. Azure Portal의 Intune에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택한 다음 **장치** > **동기화**를 선택합니다. ![등록 프로그램 장치 노드가 선택되고 동기화 링크를 선택하는 스크린샷](./media/device-enrollment-program-enroll-ios/image06.png)
 
    허용되는 등록 프로그램 트래픽에 대한 Apple 약관을 준수하기 위해 Intune에서는 다음과 같은 제한 사항을 적용합니다.
-   - 전체 동기화는 7일마다 한 번씩만 실행할 수 있습니다. 전체 동기화 중에 Intune은 Intune에 연결된 Apple MDM 서버에 할당된 일련 번호의 전체 업데이트된 목록을 가져옵니다. Intune 포털에서 등록 프로그램 장치가 삭제된 후에는 전체 동기화가 실행될 때까지 해당 장치를 다시 가져올 수 없습니다.   
+   - 전체 동기화는 7일마다 한 번씩만 실행할 수 있습니다. 전체 동기화 중에 Intune은 Intune에 연결된 Apple MDM 서버에 할당된 일련 번호의 전체 업데이트된 목록을 가져옵니다. DEP 포털의 Apple MDM 서버에서 할당을 취소하지 않고 등록 프로그램 장치를 Intune 포털에서 삭제하면 전체 동기화가 실행될 때까지 Intune으로 다시 가져오지 않습니다.   
    - 동기화는 24시간마다 자동으로 실행됩니다. **동기화** 단추를 클릭하여 동기화할 수도 있습니다(15분마다 한 번만). 모든 동기화 요청은 완료하는 데 15분이 주어집니다. **동기화** 단추는 동기화가 완료될 때까지 사용할 수 없습니다. 이 동기화는 기존 장치 상태를 새로 고치고 Apple MDM 서버에 할당된 새 장치를 가져옵니다.   
 
 

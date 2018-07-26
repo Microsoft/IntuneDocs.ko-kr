@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05d93f1518427201d9d96dbc22c772967fe4fa0f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d35c9e32b7a0720d5d84a93a7edde6f2bd51911f
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744570"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146631"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>iOS를 실행하는 장치용 Microsoft Intune에서 VPN 설정 구성
 
@@ -63,10 +63,10 @@ ms.locfileid: "34744570"
 - **VPN 식별자**: 사용 중인 VPN 앱의 식별자이며, VPN 공급자에서 제공합니다.
 - **사용자 지정 VPN 특성에 대한 키 및 값 쌍 입력**: VPN 연결을 사용자 지정하는 **키** 및 **값**을 추가하거나 가져옵니다. 이러한 값은 일반적으로 VPN 공급자가 제공합니다.
 
-## <a name="apps-per-app-vpn-settings"></a>앱(앱별 VPN) 설정
+## <a name="automatic-vpn-settings"></a>자동 VPN 설정
 
-- **앱별 VPN**: Safari 브라우저에서 방문할 때 URL에서 VPN 연결을 사용하려면 이 옵션을 사용하도록 설정합니다. 앱별 VPN을 구성하려면 기본 VPN 설정에서 **인증서**를 인증 방법으로 선택해야 합니다.
-  - **이 VPN을 트리거하는 Safari URL**: 하나 이상의 웹 사이트 URL을 추가하도록 선택합니다. 이러한 URL을 방문하는 경우 VPN 연결이 사용하도록 설정됩니다.
+- **앱별 VPN**: 이 옵션을 사용하면 앱별 VPN을 사용하도록 설정하여 특정 앱을 열 때 VPN 연결을 자동으로 트리거할 수 있습니다. 이 옵션을 선택하는 것 외에도 이 VPN 프로필과 앱을 연결해야 합니다. 자세한 내용은 [iOS용 앱별 VPN을 설정하기 위한 지침](vpn-setting-configure-per-app.md)을 참조하세요. 
+  - **이 VPN을 트리거하는 Safari URL**: 하나 이상의 웹 사이트 URL을 추가하도록 선택합니다. 장치에서 Safari 브라우저를 사용하여 이러한 URL을 방문할 때 VPN 연결이 자동으로 설정됩니다.
 
 - **주문형 VPN**: VPN 연결이 시작되는 시기를 제어하는 조건부 규칙을 구성합니다. 예를 들어 장치가 회사 Wi-Fi 네트워크에 연결되지 않은 경우에만 VPN 연결이 사용되는 조건을 만듭니다. 또는 장치에서 지정한 DNS 검색 도메인에 액세스할 수 없는 경우 VPN 연결이 시작되지 않는 조건을 만듭니다.
 

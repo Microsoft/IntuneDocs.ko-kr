@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015611"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117857"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>USB 케이블을 사용하여 회사 지원팀에 로그 보내기
 
@@ -35,7 +35,7 @@ Android 장치에서 회사 포털 앱을 사용할 때 오류가 표시되면 �
 
 2. USB 케이블로 컴퓨터에 장치를 연결합니다. 일반적으로 이 케이블은 콘센트를 통해 장치를 충전할 때 사용하는 것과 동일한 케이블입니다.
 
-3. 컴퓨터에서 장치 이름을 가진 디렉터리를 찾습니다. 해당 디렉터리에서 <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>을 찾습니다.
+3. 컴퓨터에서 장치 이름을 가진 디렉터리를 찾습니다. 해당 디렉터리에서 <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong>를 찾습니다.
 
 4. 파일을 선택하고 전자 메일에 첨부합니다. 회사 지원팀에 이 전자 메일을 보냅니다.
 

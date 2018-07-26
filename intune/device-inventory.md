@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051609"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117925"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 장치 세부 정보 참조
 
@@ -57,6 +57,49 @@ Intune은 회사 소유 장치에서만 앱 목록을 수집합니다. 앱이 �
 |iOS|관리되는 앱만|장치에 설치되는 모든 앱|
 |macOS|장치에 설치되는 모든 앱|장치에 설치되는 모든 앱|  
 |Android|관리되는 앱만|장치에 설치되는 모든 앱|  
+
+## <a name="hardware-device-details"></a>하드웨어 장치 세부 정보
+
+### <a name="windows-and-ios-device-details"></a>Windows 및 iOS 장치 세부 정보:
+|세부 정보|설명|  
+|--------------|----------------------|  
+|이름|서버의 이름입니다.|
+|관리 이름|콘솔에서만 사용되는 장치 이름입니다. 이 이름을 변경해도 장치의 이름을 변경하지 않습니다.|
+|UDID|장치의 고유한 장치 식별자입니다.|
+|Intune 장치 ID|장치를 고유하게 식별하는 GUID입니다.|
+|일련 번호|제조업체에서 장치의 일련 번호입니다.|
+|공유 장치|**예**인 경우 장치가 둘 이상의 사용자에 의해 공유됩니다.|
+|사용자 승인 등록|**예**인 경우 장치에는 관리자가 장치에서 특정 보안 설정을 관리할 수 있는 사용자 승인 등록이 있습니다.|
+|운영 체제|장치에서 사용된 운영 체제입니다.|
+|운영 체제 버전|장치의 운영 체제 버전입니다.|
+|운영 체제 언어|장치의 운영 체제에 대해 설정된 언어입니다.|
+|총 저장소 공간|장치에서 총 저장소 공간(기가바이트)입니다.|
+|사용 가능한 저장소 공간|장치에서 사용되지 않은 저장소 공간(기가바이트)입니다.|
+
+
+### <a name="windows-ios-and-macos-device-details"></a>Windows, iOS 및 macOS 장치 세부 정보
+|세부 정보|설명|  
+|--------------|----------------------|  
+|IMEI|장치의 IMEI(International Mobile Equipment Identity)입니다.|
+|MEID|장치의 MEID(Mobile Equipment Identifier)입니다.|
+|제조업체|장치의 제조업체입니다.|
+|모델|장치의 모델입니다.|
+|전화 번호|장치에 할당된 전화 번호입니다.|
+|구독자의 통신사|장치의 무선 통신사입니다.|
+|셀룰러 기술|장치에서 사용하는 라디오 시스템입니다.|
+|Wi-Fi MAC|장치의 미디어 액세스 제어 주소입니다.|
+|ICCID|집적 회로 카드 식별자, 즉, SIM 카드의 고유한 ID 번호입니다.|
+|등록된 날짜|Intune에서 장치를 등록한 날짜 및 시간입니다.|
+|마지막 연결 시간|Intune에 장치를 마지막으로 연결한 날짜 및 시간입니다.|
+|활성화 잠금 무시 코드|활성화 잠금을 무시할 수 있는 코드입니다.|
+|Azure AD 등록됨|**예**인 경우 장치가 Azure Active Directory에 등록되어 있습니다.|
+|준수|장치의 준수 상태입니다.|
+|EAS 활성화됨|**예**인 경우 장치는 교환 사서함과 동기화됩니다.|
+|EAS 활성화 ID|장치의 Exchange ActiveSync 식별자입니다.|
+|감독됨|**예**인 경우 관리자는 장치에 대한 제어를 강화했습니다.|
+|암호화됨|**예**인 경우 장치에 저장된 데이터가 암호화됩니다.|
+
+
 
 ## <a name="next-steps"></a>다음 단계
 Intune을 사용하여 [장치를 관리](device-management.md)하기 위해 수행할 수 있는 작업을 참조하세요.

@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd6aee30a88906c3f6ae078e338732589d88a5f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909136"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212038"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android 엔터프라이즈 키오스크 장치 등록 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android는 COSU(회사 소유, 일회용) 솔루션 집합을 통해 키오스크 스타일의 장치를 지원합니다. 이러한 장치는 몇 가지 예로서 디지털 간판, 티켓 인쇄, 재고 관리와 같은 단일 용도로 사용됩니다. 관리자는 제한된 앱 및 웹 링크 집합에 대한 장치 사용을 잠급니다. 또한 사용자가 다른 앱을 추가하거나 장치에서 다른 작업을 수행하는 것을 방지합니다.
+Android는 회사 소유의 일회용 솔루션 집합을 통해 키오스크 스타일의 장치를 지원합니다. 이러한 장치는 몇 가지 예로서 디지털 간판, 티켓 인쇄, 재고 관리와 같은 단일 용도로 사용됩니다. 관리자는 제한된 앱 및 웹 링크 집합에 대한 장치 사용을 잠급니다. 또한 사용자가 다른 앱을 추가하거나 장치에서 다른 작업을 수행하는 것을 방지합니다.
 
 Intune을 통해 Android 키오스크 장치에 앱 및 설정을 배포할 수 있습니다. Android 엔터프라이즈에 대한 특정 세부 정보는 [Android 엔터프라이즈 요구 사항](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)을 참조하세요.
 

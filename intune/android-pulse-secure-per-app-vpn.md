@@ -15,12 +15,12 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75a4d6f91323992cf7aa2c8bae6db419b14d1942
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5d8357a63f80552ff4b6ebd6d1da2998e675dd00
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831229"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146682"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune 사용자 지정 프로필을 사용하여 Android 장치에 대한 앱별 VPN 프로필 만들기
 
@@ -63,7 +63,7 @@ VPN 프로필을 만들 때 지정하는 **연결 이름** 값을 적어 두세�
 7. **설정** > **구성**을 선택합니다.
 3. **사용자 지정 OMA-URI 설정** 창에서 **추가**를 선택합니다.
     - 설정 이름을 입력합니다.
-    - **OMA-URI**로 **./Vendor/MSFT/VPN/Profile/*Name*/PackageList** 문자열을 지정합니다. 여기서 *Name*은 1단계에서 적어둔 VPN 프로필 이름입니다. 이 예제에서 문자열은 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**입니다.
+    - **OMA-URI**로 **./Vendor/MSFT/VPN/Profile/*Name*/PackageList** 문자열을 지정합니다. 여기서 *Name*은 1단계에서 적어둔 연결 이름입니다. 이 예제에서 문자열은 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**입니다.
     - **데이터 형식**으로 **문자열**을 지정합니다.
     - **값**으로 프로필에 연결할 패키지가 세미콜론으로 구분된 목록을 만듭니다. 예를 들어 Excel 및 Google Chrome 브라우저에서 VPN 연결을 사용하려면 **com.microsoft.office.excel;com.android.chrome**과 같이 입력합니다.
 

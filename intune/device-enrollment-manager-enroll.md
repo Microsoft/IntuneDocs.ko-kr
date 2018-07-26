@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905226"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203223"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>장치 등록 관리자 계정을 사용하여 장치 등록
 
@@ -56,7 +56,7 @@ DEM 사용자는 다음 작업을 수행할 수 있습니다.
   - (iOS에만 해당) DEM을 사용하여 iOS 장치를 등록하는 경우 Apple Configurator, Apple DEP(장치 등록 프로그램) 또는 ASM(Apple School Manager)를 사용하여 장치를 등록할 수 없습니다.
   - (Android에만 해당) 단일 DEM 계정으로 등록할 수 있는 Android 회사 프로필 장치의 수에는 제한이 있습니다. DEM 계정당 10개까지 Android 회사 프로필 장치를 등록할 수 있습니다. 이 제한은 기존 Android 등록에는 적용되지 않습니다.
   - 장치 라이선스가 있는 경우 장치는 VPP 앱을 설치할 수 있습니다.
-  - 각 장치에 장치 라이선스가 필요합니다. [사용자 및 장치 라이선스](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)에 대해 자세히 알아보세요.
+  - Intune 장치 라이선스에는 DEM을 사용하지 않아도 됩니다. [사용자 및 장치 라이선스](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)에 대해 자세히 알아보세요.
 
 
 > [!NOTE]

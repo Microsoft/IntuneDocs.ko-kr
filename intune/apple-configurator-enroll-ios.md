@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 180988f296894c285b078f6906c4e77b832006f9
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840277"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212123"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator를 사용한 iOS 장치 등록
 
@@ -135,7 +135,7 @@ Apple Configurator를 사용하여 iOS 장치를 직접 등록하는 경우 장�
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>프로필을 .mobileconfig로 iOS 장치에 내보내기
 
 1. [Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Apple 등록** > **Apple Configurator** > **프로필**을 선택하고 내보낼 프로필을 선택한 다음 **프로필 내보내기**를 선택합니다.
-2. **직접 등록**에서 **프로필 다운로드**를 선택하고 파일을 저장합니다.
+2. **직접 등록**에서 **프로필 다운로드**를 선택하고 파일을 저장합니다. 등록 프로필 파일은 2주 동안만 유효합니다. 이 때에 다시 만들어야 합니다.
 3. [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)를 실행하는 Mac 컴퓨터에 파일을 전송하여 iOS 장치에 관리 프로필로 직접 푸시합니다.
 4. 다음 단계를 사용하여 Apple Configurator로 장치를 준비합니다.
     1. Mac 컴퓨터에서 Apple Configurator 2.0을 엽니다.
