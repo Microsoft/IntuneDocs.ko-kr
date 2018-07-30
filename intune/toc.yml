@@ -396,12 +396,12 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
-        - name: 키오스크 설정 구성
-          href: kiosk-settings.md
-        - name: Android 키오스크 설정 구성
+        - name: Android 키오스크 설정
           href: android-kiosk-settings.md
         - name: Android 엔터프라이즈 키오스크 설정
           href: android-enterprise-settings.md
+        - name: Windows 10 키오스크 설정
+          href: kiosk-settings.md
         - name: 메일 설정 구성
           href: email-settings-configure.md
           items:
@@ -439,7 +439,9 @@
               href: wi-fi-settings-ios.md
             - name: macOS
               href: wi-fi-settings-macos.md
-            - name: Windows 8.1 및 Windows 10
+            - name: Windows 10
+              href: wi-fi-settings-windows.md
+            - name: Windows 8.1
               href: wi-fi-settings-import-windows-8-1.md
         - name: 교육
           items:
@@ -458,6 +460,10 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: S/MIME를 사용하여 메일 암호화
+              href: certificates-s-mime-encryption-sign.md
+            - name: SCEP를 사용하여 타사 인증 기관 사용
+              href: certificate-authority-add-scep-overview.md
             - name: Symantec PKI Manager Web Service
               href: certificates-symantec-configure.md
         - name: Windows Information Protection 설정 구성
@@ -710,6 +716,8 @@
               href: custom-settings-android-for-work.md
 - name: 개발자 지침
   items:
+    - name: 타사 인증 기관을 추가하는 API
+      href: scep-libraries-apis.md
     - name: Intune 앱 SDK를 사용하여 앱 보호
       href: app-sdk.md
       items:
