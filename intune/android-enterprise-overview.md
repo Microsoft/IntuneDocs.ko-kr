@@ -15,12 +15,12 @@ ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c3184ff01252d2f53b5bfcce286df3424da23c2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ecbc15c4888ae42c34c5ff9f488d639fc321853e
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909170"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279409"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune으로 Android 회사 프로필 장치 관리
 
@@ -66,7 +66,7 @@ Android 회사 프로필 장치에 Exchange ActiveSync 조건부 액세스를 �
 
 VPN 지원은 Android VPN 프로필과 비슷합니다. Android 엔터프라이즈 관리를 위해 동일한 VPN 공급자 및 기본 구성 옵션을 다음과 같은 두 가지 방식으로 사용할 수 있습니다.
 
--  **회사 프로필 범위 VPN** – VPN 연결이 회사 프로필에 배포된 앱으로 제한됩니다. Android 엔터프라이즈로 관리되는 앱만 VPN 연결을 사용할 수 있습니다. 장치의 개인 앱은 관리되는 VPN 연결을 사용할 수 없습니다. 자세한 내용은 [Android 엔터프라이즈 VPN 설정](vpn-settings-android.md#android-work-profile-device-vpn-settings)을 참조하세요.
+-  **회사 프로필 범위 VPN** – VPN 연결이 회사 프로필에 배포된 앱으로 제한됩니다. Android 엔터프라이즈로 관리되는 앱만 VPN 연결을 사용할 수 있습니다. 장치의 개인 앱은 관리되는 VPN 연결을 사용할 수 없습니다. 자세한 내용은 [Android 엔터프라이즈 VPN 설정](vpn-settings-android.md#android-for-work-vpn-settings)을 참조하세요.
 
 -  **앱별 VPN** – VPN 공급자가 지원하는 경우 Intune에서 앱별 VPN을 구성할 수 있습니다.
     - 앱별 VPN에 대한 구성
