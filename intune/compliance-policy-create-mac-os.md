@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442579"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321444"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune에서 macOS 장치에 대한 장치 준수 정책 추가
 
@@ -83,6 +83,13 @@ Intune macOS 장치 준수 정책은 macOS 장치가 규격 장치가 되기 위
 ### <a name="encryption"></a>암호화
 
 - **장치의 데이터 저장소 암호화**: **필요**를 선택하면 장치의 데이터 저장소가 암호화됩니다.
+
+### <a name="device-security"></a>장치 보안
+방화벽은 권한이 없는 네트워크 액세스로부터 장치를 보호합니다. 방화벽을 사용하여 응용 프로그램별로 연결을 제어할 수 있습니다. 
+
+- **방화벽**: 무단 액세스로부터 장치를 보호하려면 **활성화**합니다. 이 기능을 사용하면 들어오는 인터넷 연결을 처리하고 은폐 모드를 사용할 수 있습니다. **구성되지 않음**(기본값)은 방화벽을 해제하고 네트워크 트래픽을 허용합니다(차단되지 않음).
+- **들어오는 연결**: DHCP, Bonjour 및 IPSec과 같은 기본 인터넷 서비스에 필요한 연결을 제외한 모든 들어오는 네트워크 연결을 **차단**합니다. 또한 이 설정은 화면 공유, 원격 액세스, iTunes 음악 공유 등을 비롯한 모든 공유 서비스를 차단합니다. **구성되지 않음**(기본값)은 들어오는 연결과 공유 서비스를 허용합니다. 
+- **은폐 모드**: 악의적인 사용자가 만든 검사 요청에 장치가 응답하지 못하도록 은폐 모드를 **활성화**합니다. 활성화되면 장치는 권한이 부여된 앱에 대해 들어오는 요청에 계속 응답합니다. **구성되지 않음**(기본값)은 은폐 모드를 해제 상태로 유지합니다.
 
 ## <a name="assign-user-groups"></a>사용자 그룹 할당
 

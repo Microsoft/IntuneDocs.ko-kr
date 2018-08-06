@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909085"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279426"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Intune 계정을 Android 엔터프라이즈 계정에 연결
 
@@ -51,7 +51,7 @@ Android 회사 프로필 장치 및 Android 키오스크 장치를 지원하려�
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Android 엔터프라이즈 관리 계정 연결 끊기
 
-Android 엔터프라이즈 등록 및 관리를 해제할 수 있습니다. Intune 관리 콘솔에서 **연결 끊기**를 선택하면 등록된 모든 Android 회사 프로필 장치 및 키오스크 장치가 등록에서 제거됩니다. Android 엔터프라이즈 계정과 Intune 사이의 관계도 제거됩니다.
+Android 엔터프라이즈 등록 및 관리를 해제할 수 있습니다. 이렇게 하려면 먼저 등록된 Android 회사 프로필 장치를 모두 사용 중지해야 합니다. 그런 다음, Intune 관리 콘솔에서 **연결 끊기**를 선택하여 등록된 모든 Android 회사 프로필 장치 및 키오스크 장치를 등록에서 제거합니다. Android 엔터프라이즈 계정과 Intune 사이의 관계도 제거됩니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 Intune 관리자로 **모든 서비스** > **모니터링 + 관리** > **Intune**을 선택합니다.
 2. **장치 등록** > **Android 등록** > **관리되는 Google Play** > **연결 끊기**를 선택합니다.

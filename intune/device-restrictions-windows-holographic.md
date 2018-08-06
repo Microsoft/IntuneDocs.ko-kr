@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321757"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Windows Holographic for Business에 대한 장치 제한 설정
 
@@ -68,7 +69,9 @@ ms.lasthandoff: 05/03/2018
 
 - **시스템 시간 수정** - 최종 사용자가 장치 날짜 및 시간을 변경할 수 없습니다.
 
-## <a name="kiosk"></a>키오스크
+## <a name="kiosk---obsolete"></a>키오스크 - 사용되지 않음
+
+이러한 설정은 읽기 전용이며 변경할 수 없습니다. 키오스크 모드를 구성하려면 [키오스크 설정](kiosk-settings.md#windows-holographic-for-business)을 참조하세요.
 
 키오스크 장치는 일반적으로 특정 앱을 실행합니다. 사용자는 키오스크 앱 외부의 장치에서 모든 기능 또는 함수에 액세스할 수 없습니다.
 

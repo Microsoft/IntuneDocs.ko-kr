@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803842"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321223"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune에서 Windows 10(및 이상) 설정을 위한 장치 제한
 이 아티클에서는 Windows 10을 실행하는 장치에 대해 구성할 수 있는 모든 Microsoft Intune 장치 제한 설정을 보여줍니다.
@@ -252,7 +252,7 @@ Windows 10 Mobile을 실행 중인 장치: 지정한 횟수만큼 로그인이 �
 
 ## <a name="kiosk-preview---obsolete"></a>키오스크(미리 보기) - 사용되지 않음
 
-이러한 설정은 이동 중이며 다음 릴리스에서 제거됩니다. 새 설정을 사용하려면 [Windows 10 이상에서 키오스크 설정](kiosk-settings.md)을 참조하세요.
+이러한 설정은 읽기 전용이며 변경할 수 없습니다. 키오스크 모드를 구성하려면 [Windows 10 이상의 키오스크 설정](kiosk-settings.md)을 참조하세요.
 
 키오스크 장치는 일반적으로 하나의 앱 또는 특정 앱 집합을 실행합니다. 사용자는 키오스크 앱의 외부에 있는 장치에서 모든 기능 또는 함수에 액세스할 수 없습니다.
 

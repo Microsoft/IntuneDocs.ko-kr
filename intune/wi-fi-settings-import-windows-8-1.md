@@ -1,34 +1,39 @@
 ---
-title: Windows 8.1 이상에 대한 Wi-Fi 설정 가져오기
-titleSuffix: Microsoft Intune
-description: Windows에서 Wi-Fi 설정을 Intune Wi-Fi 프로필로 가져오는 방법입니다.
+title: Microsoft Intune에서 Windows 장치에 대한 Wi-Fi 설정 가져오기 - Azure | Microsoft Docs
+description: netsh wlan을 사용하여 Windows 장치에서 Wi-Fi 설정을 XML 파일로 내보냅니다. 그런 다음, Intune에서 이 파일을 가져와 Windows 8.1, Windows 10 및 Windows Holographic for Business를 실행하는 장치에 대한 Wi-Fi 프로필을 만듭니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 157416738e4607d5022f1c3c7ed8251a8e32fe3e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6ce5cdd9509ed3407491714ccfa853613eb43973
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834019"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321138"
 ---
-# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Microsoft Intune에서 Windows 8.1 이상 장치에 대한 Wi-Fi 설정 가져오기
+# <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Intune에서 Windows 장치에 대한 Wi-Fi 설정 가져오기
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Windows 8.1, Windows 10 Desktop 또는 Mobile을 실행하는 장치의 경우에는 이전에 파일로 내보낸 Wi-Fi 구성 프로필을 가져올 수 있습니다.
+Windows를 실행하는 장치의 경우 이전에 파일로 내보낸 Wi-Fi 구성 프로필을 가져올 수도 있습니다. **Windows 10 이상 장치의 경우 Intune에서 직접 [Wi-Fi 프로필을 생성](wi-fi-settings-windows.md)할 수 있습니다**.
+
+적용 대상:  
+- Windows 8.1 이상
+- Windows 10 이상
+- Windows 10 데스크톱 또는 모바일
+- Windows Holographic for Business
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Windows 장치에서 Wi-Fi 설정 내보내기
 
-Windows에서 **netsh wlan** 유틸리티를 사용하여 기존 Wi-Fi 프로필을 Intune에서 읽을 수 있는 XML 파일로 내보낼 수 있습니다. 프로필을 사용하기 위해 일반 텍스트로 키를 내보내야 합니다.
+Windows에서 **netsh wlan**을 사용하여 기존 Wi-Fi 프로필을 Intune에서 읽을 수 있는 XML 파일로 내보냅니다. 프로필을 사용하기 위해 일반 텍스트로 키를 내보내야 합니다.
 
 필수 WiFi 프로필이 이미 설치되어 있는 Windows 컴퓨터에서 다음 단계를 사용합니다.
 

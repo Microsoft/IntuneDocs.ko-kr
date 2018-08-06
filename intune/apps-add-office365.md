@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869375"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321478"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 장치에 할당
 
@@ -60,9 +60,6 @@ ms.locfileid: "37869375"
     또한 Microsoft Project Online 데스크톱 클라이언트 및 Microsoft Visio Pro for Office 365에 대한 라이선스가 있는 경우 관련 앱을 설치할 수 있습니다.
 3. **확인**을 선택합니다.
 
->[!IMPORTANT]
-> 앱 제품군을 만든 후에는 해당 속성을 편집할 수 없습니다. 다른 속성을 구성하려면 앱 패키지를 삭제하고 새 앱 패키지를 만듭니다.
-
 ## <a name="configure-app-information"></a>앱 정보 구성
 
 이 단계에서는 앱 제품군에 대한 정보를 제공합니다. 이 정보를 사용하여 Intune에서 앱 제품군을 식별할 수 있으며, 사용자가 회사 포털에서 앱 제품군을 찾을 수도 있습니다.
@@ -95,11 +92,8 @@ ms.locfileid: "37869375"
         - **반년마다**
         - **반년마다(대상 지정됨)**
     - **Automatically accept the app end user license agreement**(앱 최종 사용자 사용권 계약 자동으로 동의): 최종 사용자가 사용권 계약에 동의하도록 요구하지 않으려면 이 옵션을 선택합니다. Intune에서 자동으로 계약에 동의합니다.
-    - **공유 컴퓨터 인증 사용**: 여러 사용자가 컴퓨터를 공유할 경우 이 옵션을 사용합니다. 자세한 내용은 Office 365의 공유 컴퓨터 인증 개요를 참조하세요.
+    - **공유 컴퓨터 인증 사용**: 여러 사용자가 컴퓨터를 공유할 경우 이 옵션을 사용합니다. 자세한 내용은 [Office 365의 공유 컴퓨터 인증 개요](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)를 참조하세요.
     - **언어**: Office는 최종 사용자 장치에 Windows와 함께 설치된 지원 언어로 자동으로 설치됩니다. 앱 패키지와 함께 추가 언어를 설치하려면 이 옵션을 선택합니다.
-
->[!IMPORTANT]
-> 앱 제품군을 만든 후에는 해당 속성을 편집할 수 없습니다. 다른 속성을 구성하려면 앱 패키지를 삭제하고 새 앱 패키지를 만듭니다.
 
 ## <a name="finish-up"></a>끝내기
 

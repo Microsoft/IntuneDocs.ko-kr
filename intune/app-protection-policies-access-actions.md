@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138699"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254487"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -44,7 +44,7 @@ Intune 앱 보호 정책을 사용하면 최종 사용자가 회사 앱 또는 �
 8. 사용자가 요구 사항을 충족하지 않을 경우 **작업**을 선택합니다. 경우에 따라 단일 설정에 대해 여러 작업을 구성할 수 있습니다. 자세한 내용은 [앱 보호 정책을 만들고 할당하는 방법](app-protection-policies.md)을 참조하세요.
 
 >[!NOTE]
-> **장치 모델** 설정을 사용하려면 세미콜론으로 구분된 모델 식별자 목록을 입력합니다. 
+> **장치 모델 또는 장치 제조업체** 설정을 사용하려면 세미콜론으로 구분된 모델 식별자 목록을 입력합니다. 여러 값의 목록에서 공백을 방지합니다. 이러한 값은 대/소문자를 구분하지 않습니다. 
 
 ## <a name="policy-settings"></a>정책 설정 
 
@@ -83,7 +83,10 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 -  장치 제조업체
 
 **장치 제조업체** 설정을 사용하려면 세미콜론으로 구분된 Android 제조업체 목록을 입력합니다. 장치의 Android 제조업체는 장치 설정에서 찾을 수 있습니다.<br>
-입력의 예: *제조업체 A; 제조업체 B; Google* 
+입력의 예: *제조업체 A; 제조업체 B* 
+
+>[!NOTE]
+> Intune을 사용하는 장치에서 보고하는 일반적인 제조업체로는 Asu; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk 등이 있으며, 이를 입력 값으로 사용할 수 있습니다.
 
 최종 사용자 장치에서 Intune 클라이언트는 응용 프로그램 보호 정책에 대한 Intune에 지정된 장치 모델 문자열의 단순 일치를 기반으로 동작을 수행합니다. 일치 여부는 전적으로 장치가 보고하는 내용에 따라 결정됩니다. 사용자(IT 관리자)는 다양한 장치 제조업체 및 모델을 기반으로 하며 소규모 사용자 그룹을 대상으로 이 설정을 테스트하여 의도한 동작이 발생하도록 합니다. 기본값은 **구성되지 않음**입니다.<br>
 다음 작업 중 하나를 설정합니다. 

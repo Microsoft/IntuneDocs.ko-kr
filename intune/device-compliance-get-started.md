@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225445"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268909"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune에서 장치 준수 정책 시작
 
@@ -167,7 +167,7 @@ Remember that you need to implement conditional access policies in addition to c
   이 설정을 사용하면 장치를 다음과 같이 설정해야 합니다.
   - OS 수준에서 위치 서비스 사용
   - 회사 포털에서 위치 서비스를 사용하도록 허용
-  - 최소 72시간에 한 번 Intune에 해당 탈옥 상태를 평가 및 보고합니다. 그렇지 않은 경우 장치가 준수하지 않음으로 표시됩니다.
+  - 최소 72시간에 한 번 Intune에 해당 탈옥 상태를 평가 및 보고합니다. 그렇지 않은 경우 장치가 준수하지 않음으로 표시됩니다. 평가는 회사 포털 앱을 열거나 장치를 500미터 이상 물리적으로 이동하면 트리거됩니다.
 
 - **준수 상태 유효 기간(일)**: 장치가 모든 수신된 준수 정책에 대한 상태를 보고하는 시간 간격을 입력합니다. 이 기간 내에 상태를 반환하지 않는 장치는 비준수로 처리됩니다. 기본값은 30일입니다.
 

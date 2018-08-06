@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a8c14e523d33c9e0994134ff1ef468b290b3992
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
+ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022512"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39356576"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune을 사용하여 감독된 iOS 장치에서 활성화 잠금 무시
 
@@ -66,15 +66,23 @@ Intune에서는 iOS 8.0 이상을 실행하는 감독된 장치의 활성화 잠
 ## <a name="how-to-use-activation-lock-bypass"></a>활성화 잠금 무시 사용 방법
 
 >[!IMPORTANT]
->장치에서 활성화 잠금을 무시하도록 설정한 후 나의 iPhone 찾기 앱을 열면 새 활성화 잠금이 자동으로 적용됩니다. 따라서 **이 절차를 수행하려면 장치를 실제로 보유해야 합니다**.
+>장치에서 활성화 잠금을 무시하도록 설정한 후 나의 iPhone 찾기 앱을 시작하면 새 활성화 잠금이 자동으로 적용됩니다. 따라서 **이 절차를 수행하려면 장치를 실제로 보유해야 합니다**.
 
-Intune **활성화 잠금 무시** 원격 장치 작업에서는 사용자의 Apple ID와 암호 없이 iOS 장치에서 활성화 잠금을 제거합니다. 활성화 잠금을 무시한 후 내 iPhone 앱 찾기가 시작되면 장치에서 활성화 잠금이 다시 켜집니다. 장치에 실제로 액세스할 수 있는 경우에만 활성화 잠금을 무시합니다.
+Intune **활성화 잠금 무시** 원격 장치 작업으로 사용자의 Apple ID와 암호를 요구하지 않으면서 iOS 장치에서 활성화 잠금을 제거합니다. 활성화 잠금을 무시한 후 내 iPhone 찾기 앱이 시작되면 장치에서 활성화 잠금이 다시 켜집니다. 장치에 실제로 액세스하는 경우에만 활성화 잠금을 무시합니다.
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
+2. **모든 서비스** > **Intune**을 선택합니다.
 3. **Intune** 블레이드에서 **장치**를 선택합니다.
 4. **장치** 블레이드에서 **모든 장치**를 선택합니다.
-5. 관리하는 장치 목록에서 감독된 iOS 장치를 선택하고 **자세히...** 를 선택한 다음, **활성화 잠금 무시** 장치 원격 작업을 선택합니다.
+5. 관리하는 장치 목록에서 **활성화 잠금 무시** 장치 원격 작업을 선택합니다.
+6. 장치의 "하드웨어" 섹션으로 이동한 다음, **조건부 액세스**에서 **활성화 잠금 무시 코드** 값을 복사합니다.
+
+    >[!NOTE]
+    >장치를 출하 시 설정으로 리셋하기 전에 무시 코드를 복사합니다. 코드를 복사하기 전에 장치 설정을 다시 설정하는 경우 코드가 Azure에서 제거됩니다.
+
+7.  장치에 대한 **개요** 블레이드로 이동한 다음, **출하 시 설정으로 리셋**을 선택합니다.
+8.  장치를 다시 설정한 후 *Apple ID* 및 *암호*를 묻는 메시지가 표시됩니다. *ID* 필드를 공란으로 내버려둔 다음, *암호*에 대해 **무시 코드**를 입력합니다. 이렇게 하면 장치에서 계정이 제거됩니다. 
+
 
 ## <a name="next-steps"></a>다음 단계
 

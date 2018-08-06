@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f907272f74886612eba9b5b28118f298caa2f36d
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223908"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321121"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Windows 기간 업무 앱 추가
 
@@ -40,7 +40,11 @@ LOB(기간 업무) 앱은 앱 설치 파일로 추가합니다. 이러한 종류
 ## <a name="step-2-configure-the-app-package-file"></a>2단계: 앱 패키지 파일 구성
 
 1. **앱 추가** 창에서 **앱 패키지 파일**을 선택합니다.
-2. **앱 패키지 파일** 창에서 찾아보기 단추를 선택합니다. 그런 다음, 확장명이 **.msi**, **.appx** 또는 **.appxbundle**인 Windows 설치 파일을 선택합니다.
+2. **앱 패키지 파일** 창에서 찾아보기 단추를 선택합니다. 그런 다음, 확장명이 **.msi**, **.appx**, **.appxbundle**, **.msix** 또는 **.msixbundle**인 Windows 설치 파일을 선택합니다.
+
+    > [!NOTE]
+    > Windows 앱의 파일 확장명에는 **.msi**, **.appx**, **.appxbundle**, **.msix** 및 **.msixbundle**이 포함됩니다.  
+
 3. 작업을 마쳤으면 **확인**을 선택합니다.
 
 

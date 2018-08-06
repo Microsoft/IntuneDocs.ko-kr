@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/16/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449873"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254402"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -463,7 +463,20 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 
 필요한 경우 Authority와 NonBrokerRedirectURI를 지정할 수 있습니다.
 
-Intune SDK 팀은 앱의 응용 프로그램 ID(클라이언트 ID)를 요구합니다. 이것은 [Azure Portal](https://portal.azure.com/)을 통해 확인할 수 있으며 **모든 응용 프로그램** 아래 **응용 프로그램 ID** 열에 나와 있습니다. Azure AD에 응용 프로그램을 등록하는 방법에 대한 정보는 [여기](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)를 참조하세요. msintuneappsdk@microsoft.com에서 Intune SDK 팀에 연결할 수 있습니다.
+다음 단계에 따라 Azure AD에 앱을 등록합니다.
+
+Azure Portal에서:
+1.  **Azure Active Directory** 블레이드로 이동합니다.
+2.  응용 프로그램의 **앱 등록** 설정을 선택합니다.
+3.  **API 액세스** 제목 아래의 **설정**에서 **필수 사용 권한**을 선택합니다. 
+4.  **+ 추가**를 클릭합니다.
+5.  **API 선택**을 클릭합니다. 
+6.  검색 상자에 **Microsoft 모바일 응용 프로그램 관리**를 입력합니다.
+7.  API 목록에서 **Microsoft 모바일 응용 프로그램 관리**를 선택하고 선택을 클릭합니다.
+8.  **사용자의 앱 관리 데이터 읽기 및 쓰기**를 선택합니다.
+9.  **완료**를 클릭합니다.
+
+Azure AD에 응용 프로그램을 등록하는 방법에 대한 정보는 [여기](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)를 참조하세요. 
 
 [조건부 액세스](#conditional-access)를 위한 요구 사항도 참조하세요.
 
@@ -1418,7 +1431,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 > **기본값 등록**의 이점에는 장치의 앱에 관한 APP-WE 서비스에서 정책을 얻는 단순화된 방법이 포함됩니다.
 
 ### <a name="general-requirements"></a>일반 요구 사항
-* Intune SDK 팀은 앱의 응용 프로그램 ID를 필요로 합니다. ID는 [Azure Portal](https://portal.azure.com/)을 통해 확인할 수 있으며 **모든 응용 프로그램** 아래 **응용 프로그램 ID** 열에 나와 있습니다. Intune SDK 팀에는 이메일(msintuneappsdk@microsoft.com)을 통해 연락하는 것이 좋습니다.
+* [일반적인 ADAL 구성 #2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations)의 단계에 따라 앱이 Intune 모바일 응용 프로그램 관리 서비스에 등록되어 있는지 확인합니다.
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK 사용
 이러한 지침은 최종 사용자 장치에서 앱을 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱 개발자에게만 적용됩니다.

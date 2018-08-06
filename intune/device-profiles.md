@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 07/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
+ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905192"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335829"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune 장치 프로필이란?
 
@@ -113,6 +113,13 @@ VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전
 - iOS
 - macOS
 - Windows 8.1(가져오기만 해당)
+
+## <a name="esim-cellular---public-preview"></a>eSIM 셀룰러 - 공개 미리 보기
+
+[eSIM 셀룰러 프로필](esim-device-configuration.md)은 인터넷 및 데이터 액세스용 관리 장치에서 셀룰러 데이터 계획을 구성하는 기능을 제공합니다.  모바일 운영자로부터 활성화 코드를 가져온 후 Intune을 사용하여 이러한 활성화 코드를 가져온 다음, eSIM 지원 장치에 할당할 수 있습니다.
+
+이 기능은 다음을 지원합니다.
+- Windows 10 Fall Creators Update 이상
 
 ## <a name="education"></a>교육
 [교육 설정 - Windows 10](education-settings-configure.md)은 [Windows Take a Test(Windows 시험 응시) 앱](https://education.microsoft.com/gettrained/win10takeatest)에 대한 옵션을 구성합니다. 이 설정을 구성할 경우 테스트가 완료될 때까지 장치에서 다른 앱을 실행할 수 없습니다.

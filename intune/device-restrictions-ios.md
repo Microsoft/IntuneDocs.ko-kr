@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803825"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321495"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 장치 제한 설정
 
@@ -182,8 +182,8 @@ iOS 감독 모드는 Apple의 장치 등록 프로그램을 통하거나 Apple C
 
 앱 표시 또는 숨기기 목록에서 다음 목록 중 하나를 구성할 수 있습니다(iOS 9.3 이상을 실행하는 감독된 장치 필요).
 
-**숨겨진 앱** 목록 - 사용자로부터 숨겨진 앱 목록을 지정합니다. 사용자는 이러한 앱을 보거나 시작할 수 없습니다.
-**표시된 앱** 목록 - 사용자가 보고 시작할 수 있는 앱 목록을 지정합니다. 다른 앱은 보거나 시작할 수 없습니다.
+- **숨겨진 앱** 목록 - 사용자로부터 숨겨진 앱 목록을 지정합니다. 사용자는 이러한 앱을 보거나 시작할 수 없습니다.
+- **표시된 앱** 목록 - 사용자가 보고 시작할 수 있는 앱 목록을 지정합니다. 다른 앱은 보거나 시작할 수 없습니다.
 
 목록을 구성하려면 **추가**를 클릭한 다음 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.
 
@@ -259,54 +259,8 @@ iOS 감독 모드는 Apple의 장치 등록 프로그램을 통하거나 Apple C
 - **가져오기** - 앱 이름 및 앱 관련 번들 ID 목록을 포함하는 쉼표로 구분된 값(.csv) 파일을 가져옵니다.
 - **내보내기** - 구성한 앱 이름 및 연관된 번들 ID를 쉼표로 구분된 값(.csv) 파일로 내보냅니다.
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>기본 제공 iOS 앱에 대한 번들 ID 참조
-
-이 목록에서는 몇 가지 일반적인 기본 제공 iOS 앱의 번들 ID를 보여줍니다. 다른 앱의 번들 ID를 찾으려면 소프트웨어 공급업체에 문의하세요.
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>키오스크(감독 모드만 해당)
--   **키오스크 모드에서 실행되는 앱** - **관리되는 앱**을 선택하여 Intune에 추가한 앱을 선택하거나 **스토어 앱**을 선택하여 스토어의 앱에 대한 URL을 지정합니다. 다른 앱은 장치에서 실행할 수 없습니다. 도움말은 이 항목의 뒷부분에 나오는 “앱 스토어에 URL을 지정하는 방법”을 참조하세요.
+-   **키오스크 모드에서 실행되는 앱** - **관리되는 앱**을 선택하여 Intune에 추가한 앱을 선택하고, **스토어 앱**을 선택하여 스토어의 앱에 대한 URL을 지정하거나 **기본 제공 앱**을 선택하여 기본 제공 앱의 번들 ID를 지정합니다. 자세한 내용은 [기본 제공 iOS 앱에 대한 번들 ID 참조](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps) 및 [스토어의 앱에 대한 URL을 지정하는 방법](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1)을 참조하세요.
     -   **보조 터치** - 어려울 수 있는 화면 제스처를 수행하도록 지원하는, 내게 필요한 옵션 설정 **보조 터치**를 사용하거나 사용하지 않도록 설정합니다.
     -   **색 반전** - 시각 장애가 있는 사용자에게 도움이 되도록 화면을 조정하는, 내게 필요한 옵션 설정 색 반전을 사용하거나 사용하지 않도록 설정합니다.
     -   **모노 오디오** - 내게 필요한 옵션 설정 모노 오디오를 사용하거나 사용하지 않도록 설정합니다.
@@ -327,6 +281,51 @@ iOS 감독 모드는 Apple의 장치 등록 프로그램을 통하거나 Apple C
 >[!NOTE]
 > 키오스크 모드에 대해 iOS 장치를 구성하려면 먼저 Apple Configurator Tool 또는 Apple 장치 등록 프로그램을 사용하여 장치를 감독 모드로 전환합니다. Apple Configurator 도구에 대한 자세한 내용은 Apple 설명서를 참조하세요.
 >프로필을 할당한 후 지정한 iOS 앱을 설치하면 장치를 다시 시작할 때까지 키오스크 모드가 시작되지 않습니다.
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>기본 제공 iOS 앱에 대한 번들 ID 참조
+
+이 목록에서는 몇 가지 일반적인 기본 제공 iOS 앱의 번들 ID를 보여줍니다. 다른 앱의 번들 ID를 찾으려면 소프트웨어 공급업체에 문의하세요.
+
+| 번들 ID                   | 앱 이름     | 게시자 |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | 앱 스토어    | Apple     |
+| com.apple.calculator        | 계산기   | Apple     |
+| com.apple.mobilecal         | 일정     | Apple     |
+| com.apple.camera            | 카메라       | Apple     |
+| com.apple.mobiletimer       | 시계        | Apple     |
+| com.apple.compass           | 나침반      | Apple     |
+| com.apple.MobileAddressBook | 연락처     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | 친구 찾기 | Apple     |
+| com.apple.mobileme.fmip1    | 나의 iPhone 찾기  | Apple     |
+| com.apple.gamecenter        | 게임 센터  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | 상태       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | 키노트      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | 메시지     | Apple     |
+| com.apple.Music             | 음악        | Apple     |
+| com.apple.news              | 뉴스         | Apple     |
+| com.apple.mobilenotes       | 참고        | Apple     |
+| com.apple.Numbers           | 숫자      | Apple     |
+| com.apple.Pages             | 페이지        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | 사진       | Apple     |
+| com.apple.podcasts          | Podcasts     | Apple     |
+| com.apple.reminders         | 미리 알림    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | 설정     | Apple     |
+| com.apple.stocks            | 주식       | Apple     |
+| com.apple.tips              | 팁         | Apple     |
+| com.apple.videos            | 동영상       | Apple     |
+| com.apple.VoiceMemos        | 음성 메모   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | 보기        | Apple     |
+| com.apple.weather           | 날씨      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **Safari(감독 모드인 경우에만)** - 장치에서 Safari 브라우저를 사용할 수 있는지 여부를 지정합니다.

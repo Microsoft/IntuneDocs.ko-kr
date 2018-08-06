@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964711"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321189"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 장치 자동 등록
 
@@ -32,9 +32,8 @@ ms.locfileid: "36964711"
     1. [MDM 프로필 만들기](#create-mdm-profile)
     2. [장치 추가](#add-devices)
     3. [장치에 MDM 프로필 할당](#assign-an-mdm-profile-to-devices)
-2. Azure Portal에서 [회사 소유의 장치를 식별](#identify-devices-as-corporate-owned)합니다.
-3. Knox 포털에서 [최종 사용자 로그인을 구성](#configure-how-end-users-sign-in)합니다.
-4. [장치를 배포](#distribute-devices)합니다.
+2. Knox 포털에서 [최종 사용자 로그인을 구성](#configure-how-end-users-sign-in)합니다.
+3. [장치를 배포](#distribute-devices)합니다.
 
 
 Knox 배포 프로그램에 참여하는 공인 재판매인으로부터 장치를 구매하면 장치 식별자(일련 번호 및 IMEI) 목록이 자동으로 Knox 포털에 추가됩니다.
@@ -79,22 +78,6 @@ MDM 프로필을 장치에 할당하려면 다음 방법 중 하나를 사용하
 ## <a name="assign-an-mdm-profile-to-devices"></a>장치에 MDM 프로필 할당
 등록하려면 먼저 Knox 포털에서 추가된 장치에 MDM 프로필을 할당해야 합니다. [장치 구성에 대해 알아보려면 삼성 Knox 등록 사용자 가이드를 참조하세요](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
 
-## <a name="identify-devices-as-corporate-owned"></a>회사 소유의 장치 식별
-KME를 사용하여 등록된 장치를 회사 소유 장치로 식별할 수 있습니다. 장치를 등록하기 전에 이를 수행해야 합니다. 이 작업을 통해 추가 관리 작업을 수행하고 전체 전화 번호와 앱의 인벤토리와 같은 추가 정보를 수집할 수 있습니다.
-
-장치를 회사 소유 장치로 식별하려면 다음 단계를 수행합니다.
-
-1. Knox 포털의 장치 목록을 CSV 파일로 내보냅니다.
-
-2. [여기](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number)에 표시된 대로 IMEI 또는 일련 번호를 사용하여 CSV 파일의 형식을 지정합니다.
-
-3. Azure Portal에서 CSV 파일을 **장치 등록** > **회사 장치 식별자** > **추가**에 업로드합니다.
-
-이제 등록하는 식별된 장치가 회사 소유로 표시됩니다.
-
-> [!NOTE]
->Intune에서는 [장치 등록 관리자](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll) 계정을 사용하여 등록된 장치에 회사 소유 상태를 자동으로 할당합니다.
-
 ## <a name="configure-how-end-users-sign-in"></a>최종 사용자가 로그인하는 방법 구성
 
 KME를 사용하여 Intune에 등록된 장치의 경우, 최종 사용자가 로그인하는 방법을 다음과 같이 구성할 수 있습니다.
@@ -121,7 +104,7 @@ MDM 프로필을 만들고 할당하고, 사용자 이름을 연결하고, Intun
 
 - **“암호” 필드가 무시됨:** Knox 포털의 **장치 세부 정보**에서 채워져 있는 **암호** 필드는 Intune 회사 포털 앱에서 무시됩니다. 장치 등록을 완료하려면 최종 사용자가 장치에서 암호를 입력해야 합니다.
 
-- **"Android Enterprise 등록** KME는 Android Enterprise 등록을 지원하지 않습니다.
+- **"Android Enterprise 등록:** KME는 Android Enterprise 등록을 지원하지 않습니다.
 
 ## <a name="getting-support"></a>지원 받기
 [삼성 KME에 대한 지원을 받는 방법](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm)에 대해 자세히 알아보세요.

@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224938"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254538"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -339,7 +339,7 @@ iOS용 앱 래핑 도구에는 전체 기능을 보장하기 위해 충족해야
 
     b.  적절한 기능을 켭니다. 각 기능 및 올바른 값을 결정하는 방법에 대한 자세한 내용은 iOS 개발자 라이브러리의 [기능 추가](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)를 참조하세요.
 
-    c.  프로세스 중에 만든 ID를 확인합니다.
+    c.  프로세스 중에 만든 ID를 확인합니다. 이를 `AppIdentifierPrefix` 값이라고도 합니다.
 
     d.  래핑할 앱을 빌드하고 서명합니다.
 
@@ -349,7 +349,7 @@ iOS용 앱 래핑 도구에는 전체 기능을 보장하기 위해 충족해야
 
     b.  앱용 프로비저닝 프로필을 만듭니다. 자세한 지침은 [iOS용 Intune 앱 줄 바꿈 도구에 대한 필수 구성 요소를 가져오는 방법](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)을 참조하세요.
 
-    c.  프로비저닝 프로필에서 앱에 있는 것과 동일한 자격을 설정합니다. 앱을 개발하는 동안 지정한 것과 동일한 ID를 제공해야 합니다.
+    c.  프로비저닝 프로필에서 앱에 있는 것과 동일한 자격을 설정합니다. 앱을 개발하는 동안 지정한 것과 동일한 ID(`AppIdentifierPrefix` 값)를 제공해야 합니다. 
 
     d.  프로비저닝 프로필 마법사를 완료하고 파일을 다운로드합니다.
 

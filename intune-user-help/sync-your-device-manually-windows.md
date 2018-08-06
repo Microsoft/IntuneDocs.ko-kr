@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34048022"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236058"
 ---
 # <a name="sync-your-windows-device-manually"></a>수동으로 Windows 장치 동기화
 
@@ -40,7 +40,7 @@ Intune은 회사 포털 앱 및 장치 설정 앱에서 수동 동기화를 지�
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
-## <a name="sync-from-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 동기화
+## <a name="sync-directly-from-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 직접 동기화
 크리에이터스 업데이트(버전 1703) 이상을 실행하는 Windows 10 장치를 수동으로 동기화하려면 다음 단계를 완료합니다.
 
 1.  장치에서 회사 포털 앱을 엽니다.
@@ -49,7 +49,7 @@ Intune은 회사 포털 앱 및 장치 설정 앱에서 수동 동기화를 지�
 
     ![회사 포털 앱의 홈페이지 스크린샷, 설정 강조 표시됨](./media/RS1_homePage_settings_04.png)  
     
-    ![회사 포털 앱의 설정 페이지 스크린샷, 동기화 단추 강조 표시됨](./media/RS1_settingspage_sync05.png)    
+    ![회사 포털 앱의 설정 페이지 스크린샷, 동기화 단추 강조 표시됨](./media/RS1_settingspage_sync05.png)  
 
 ## <a name="sync-from-settings-app"></a>설정 앱에서 동기화 
 설정 앱에서 Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile 또는 Windows Phone 8.1 장치를 수동으로 동기화하려면 다음 단계를 완료합니다.

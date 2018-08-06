@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
-ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
+ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36297908"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321240"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -462,4 +462,6 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 | 0x0FFFFFFFF | Unknown_Error  | 서버 쪽 오류가 발생하여 요청을 완료할 수 없습니다. 다시 시도하세요. |
 
 ## <a name="next-steps"></a>다음 단계
-[PKCS 인증서를 사용](certficates-pfx-configure.md)하거나 [Symantec PKI 관리자 웹 서비스에서 PKCS 인증서를 발급](certificates-symantec-configure.md)합니다.
+
+- [PKCS 인증서 사용](certficates-pfx-configure.md) 또는 [Symantec PKI 관리자 웹 서비스에서 PKCS 인증서 발급](certificates-symantec-configure.md)
+- [Intune으로 SCEP를 사용하기 위해 타사 CA 추가](certificate-authority-add-scep-overview.md)

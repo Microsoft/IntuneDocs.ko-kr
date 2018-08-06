@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905532"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323245"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange 온-프레미스 및 레거시 Exchange Online Dedicated에 대한 조건부 액세스 정책 만들기
 
@@ -63,7 +63,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 - Windows Phone 8.1 이상
 - iOS의 기본 메일 앱
 - EAS 메일 클라이언트(예: Android 4 이상의 Gmail).
-- EAS 메일 클라이언트 **Android 회사 프로필 장치:** **회사 프로필**의 **Gmail** 및 **Nine Work** 앱만 Android 회사 프로필에 대해 지원됩니다. 조건부 액세스가 Android 회사 프로필에서 작동하려면 Gmail 또는 Nine Work 앱에 대한 이메일 프로필을 배포하며, 이러한 앱을 필수 설치로 배포해야 합니다.
+- EAS 메일 클라이언트 **Android 회사 프로필 장치:** **회사 프로필**의 **Gmail** 및 **Nine Work for Android Enterprise**만 Android 회사 프로필에 대해 지원됩니다. 조건부 액세스가 Android 회사 프로필에서 작동하려면 Gmail 또는 Nine Work for Android Enterprise 앱에 대한 이메일 프로필을 배포하며, 이러한 앱을 필수 설치로 배포해야 합니다.
 
 > [!NOTE]
 > Android 및 iOS용 Microsoft Outlook 앱은 지원되지 않습니다. 

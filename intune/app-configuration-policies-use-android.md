@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c837f9a5a2cb1a6f267f85f888453725da6acb66
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905753"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268875"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>관리되는 Android 장치용 앱 구성 정책 추가
 
@@ -63,7 +63,7 @@ Android 앱에 대한 구성 디자이너를 사용하여 구성을 지원할 �
 값 형식으로 변수를 선택하는 경우 다음 옵션을 선택할 수 있습니다.
 - 사용자 계정 이름 — 예: **John@contoso.com**
 - 메일 — 예: **John@contoso.com**
-- Partian UPN — 예: **John**
+- 부분 UPN — 예: **John**
 - 계정 ID — 예: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
 - 장치 ID — 예: **b9841cd9-9843-405f-be28-b2265c59ef97**
 - 사용자 ID — 예: **3ec2c00f-b125-4519-acf0-302ac3761822**
