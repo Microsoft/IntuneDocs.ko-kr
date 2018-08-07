@@ -587,7 +587,7 @@ catch {
 
 또한 다음 작업도 수행합니다.
 
-- https://portal.office.com을 사용하여 사용자 계정에 Intune 라이선스를 할당합니다.
+- 을 사용하여 사용자 계정에 Intune https://portal.office.com 라이선스를 할당합니다.
 
 - 응용 프로그램 코드를 업데이트하여 자체 도메인이 아닌 클라이언트의 Azure AD 테넌트 도메인에 인증합니다.
 
