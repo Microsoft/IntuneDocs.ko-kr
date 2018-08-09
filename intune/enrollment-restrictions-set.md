@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
+ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905821"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501152"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -77,7 +77,7 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 4. **장치 유형 제한**에서 설정하려는 제한을 선택합니다.
 5. 제한 이름(기본 제한의 **모든 사용자**)에서 **플랫폼**을 선택합니다. 각 플랫폼 목록에 대해 **허용** 또는 **차단**을 선택합니다.
 6. **저장**을 선택합니다.
-7. 제한 이름(기본 제한의 **모든 사용자**)에서 **플랫폼 구성**을 선택합니다. 그럼 다음, 나열된 플랫폼에 대한 최소 및 최대 **버전**을 선택합니다. 지원되는 버전은 다음과 같습니다.
+7. 제한 이름(기본 제한의 **모든 사용자**)에서 **플랫폼 구성**을 선택합니다. 그럼 다음, 나열된 플랫폼에 대한 최소 및 최대 **버전**을 선택합니다. 지원되는 버전 형식은 다음과 같습니다.
     - Android 회사 프로필은 major.minor.rev.build를 지원합니다.
     - iOS는 major.minor.rev를 지원합니다.
     - Windows는 Windows 10용 major.minor.rev.build만 지원합니다.

@@ -15,12 +15,12 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f03c60c12bfd759c738de50d320787bf4b85f99d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909187"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400354"
 ---
 # <a name="enroll-android-devices"></a>Android 장치 등록
 
@@ -38,7 +38,7 @@ Samsung Knox Standard를 실행하는 장치가 Intune의 다중 사용자 관�
 
 ## <a name="set-up-android-enrollment"></a>Android 등록 설정
 
-기본적으로 Intune에서는 Android 및 Samsung Knox Standard 장치 등록을 허용합니다. 사전 요구 사항을 모두 충족한 후 관리자는 [사용자에게 장치를 등록하는 방법을 알리기](/intune-user-help/enroll-your-device-in-intune-android.md)만 하면 됩니다.
+기본적으로 Intune에서는 Android 및 Samsung Knox Standard 장치 등록을 허용합니다. 사전 요구 사항이 충족되면 관리자는 [사용자에게 자신의 장치를 등록하는 방법을 알리기](/intune-user-help/enroll-your-device-in-intune-android)만 하면 됩니다.
 
 사용자가 등록한 후 [규정 준수 정책 할당](compliance-policy-create-android.md), [앱 관리](app-management.md) 등을 포함한 Intune에서 장치 관리를 시작할 수 있습니다.
 

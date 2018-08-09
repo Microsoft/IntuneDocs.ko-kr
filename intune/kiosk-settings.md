@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321804"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481124"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune의 Windows 10(이상)용 키오스크 설정
 
@@ -25,9 +25,18 @@ ms.locfileid: "39321804"
 
 ## <a name="kiosk-settings"></a>키오스크 설정
 
-1. 키오스크 환경을 만들려면 **추가**를 선택합니다.
-2. 키오스크에 대한 **키오스크 구성 이름**을 입력합니다. 이 이름은 응용 프로그램 그룹, 시작 메뉴 상의 이러한 앱에 대한 레이아웃 및 이 키오스크 구성에 할당된 사용자를 식별합니다.
-3. **키오스크 모드**를 선택합니다. **키오스크 모드**는 정책에서 지원되는 키오스크 모드 유형을 식별합니다. 다음 옵션을 사용할 수 있습니다.
+1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음, **Microsoft Intune**을 선택합니다.
+2. **장치 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
+3. 다음 속성을 입력합니다.
+
+   - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.
+   - **설명**: 설정에 대한 설명을 입력합니다. 선택 사항이지만 입력하는 것이 좋습니다.
+   - **플랫폼**: **Windows 10 이상**을 선택합니다.
+   - **프로필 유형**: **키오스크(미리 보기)** 를 선택합니다.
+   
+4. **키오스크** > **추가**를 차례로 선택합니다.
+5. 키오스크에 대한 **키오스크 구성 이름**을 입력합니다. 이 이름은 응용 프로그램 그룹, 시작 메뉴 상의 이러한 앱에 대한 레이아웃 및 이 키오스크 구성에 할당된 사용자를 식별합니다.
+6. **키오스크 모드**를 선택합니다. **키오스크 모드**는 정책에서 지원되는 키오스크 모드 유형을 식별합니다. 다음 옵션을 사용할 수 있습니다.
 
     - **구성되지 않음**(기본값): 키오스크 모드를 사용하도록 설정하지 않는 정책입니다.
     - **단일 전체 화면 앱 키오스크**: 프로필을 사용하면 장치를 단일 사용자 계정으로 실행하고, 단일 UWP(유니버설 Windows 플랫폼) 앱에 잠글 수 있습니다. 이에 따라 사용자가 로그인하면 특정 앱이 시작됩니다. 또한 이 모드는 사용자가 새 앱을 열거나 실행 중인 앱을 변경하는 것을 제한합니다.

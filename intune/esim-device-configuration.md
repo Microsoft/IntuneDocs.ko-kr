@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336081"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400286"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune에서 eSIM 셀룰러 프로필 구성 - 공개 미리 보기
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336081"
 
 ## <a name="introduction"></a>소개
 
-eSIM는 내장형 SIM 칩이며, [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro) 같은 eSIM 지원 장치에서 셀룰러 데이터 연결을 통해 인터넷에 연결할 수 있습니다. eSIM을 사용하면 모바일 운영자에게서 SIM 카드를 가져올 필요가 없으며, 모바일 운영자와 데이터 요금제 간에 빠르게 전환할 수 있습니다.
+eSIM는 내장형 SIM 칩이며, [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro) 같은 eSIM 지원 장치에서 셀룰러 데이터 연결을 통해 인터넷에 연결할 수 있습니다. eSIM을 사용하면 모바일 운영자에서 SIM 카드를 가져올 필요가 없습니다. 전 세계 여행자는 모바일 운영자와 데이터 요금제 간에 전환하여 연결 상태를 항상 유지할 수도 있습니다.
 
 예를 들어 회사용 셀룰러 데이터 요금제 및 개인 용도로 다른 모바일 운영자를 통한 다른 데이터 요금제가 있습니다. 여행할 때 해당 지역의 데이터 요금제에 맞는 모바일 운영자를 찾아 인터넷에 액세스할 수 있습니다.
 

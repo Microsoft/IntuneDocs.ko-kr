@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321743"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575052"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API를 사용하여 SCEP에 대한 타사 CA를 Intune에 추가
 
@@ -41,11 +41,18 @@ Microsoft가 GitHub.com에 게시하는 오픈 소스 라이브러리를 사용�
 - 인증 기관의 신뢰할 수 있는 루트 인증서
 - 인증서 특성 등
 
-Intune으로 체크 인하는 장치는 SCEP 프로필을 할당받고, 이러한 매개 변수로 구성됩니다. 동적으로 생성되는 SCEP 암호가 Intune을 통해 생성된 다음, 장치에 할당됩니다.
+Intune으로 체크 인하는 장치는 SCEP 프로필을 할당받고, 이러한 매개 변수로 구성됩니다. 동적으로 생성되는 SCEP 챌린지 암호는 Intune에서 만들어진 다음, 장치에 할당됩니다.
 
-이 암호에는 장치가 SCEP 서버에 발급하는 CSR(인증서 서명 요청)에 필요한 매개 변수에 대한 세부 정보를 포함합니다. 암호에는 인증 질문 만료 시간도 포함됩니다. Intune은 정보를 암호화하고 암호화된 BLOB에 서명한 다음, 이러한 세부 정보를 SCEP 암호로 패키징합니다.
+이 챌린지에 포함되는 항목은 다음과 같습니다.
 
-장치가 SCEP 서버에 접속하여 인증서를 요청한 다음, 이 SCEP 암호를 제공합니다. SCEP 서버가 장치에 인증서를 발급하려면 이 암호가 유효성 검사를 통과해야 합니다. SCEP 암호의 유효성을 검사할 때는 다음과 같은 검사가 수행됩니다.
+- 동적으로 생성된 챌린지 암호
+- 장치에서 SCEP 서버에 발급하는 CSR(인증서 서명 요청)에 필요한 매개 변수에 대한 세부 정보
+- 챌린지 만료 시간
+
+Intune은 이 정보를 암호화하고, 암호화된 Blob에 서명한 다음, 이러한 세부 정보를 SCEP 챌린지 암호로 패키지합니다.
+
+그러면 SCEP 서버에 연결하여 인증서를 요청한 장치에서 이 SCEP 챌린지 암호를 제공합니다. SCEP 서버는 유효성 검사를 위해 CSR 및 암호화된 SCEP 챌린지 암호를 Intune으로 보냅니다.  이 챌린지 암호 및 CSR은 인증서를 장치에 발급하는 SCEP 서버에 대한 유효성 검사를 통과해야 합니다. SCEP 챌린지의 유효성을 검사하는 경우 수행되는 검사는 다음과 같습니다.
+
 
 - 암호화된 BLOB의 서명 유효성 검사
 - 인증 질문이 만료되지 않았는지 검사

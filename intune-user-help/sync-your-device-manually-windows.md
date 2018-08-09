@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.openlocfilehash: 04737d1e800094f21a8bdaf42047f8bce7f48e6a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236058"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362027"
 ---
 # <a name="sync-your-windows-device-manually"></a>수동으로 Windows 장치 동기화
 
 앱 설치 속도가 최적 속도보다 느린 경우 수동 장치 동기화를 시작합니다. 수동 동기화는 최신 업데이트 및 통신을 위해 장치를 Intune과 강제로 연결합니다. 장치 동기화가 완료된 후에 설치 속도가 증가할 수 있습니다.
 
-Intune은 회사 포털 앱 및 장치 설정 앱에서 수동 동기화를 지원합니다. 
+Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴 및 장치 설정 앱에서 수동 동기화를 지원합니다. 
 
 회사 포털 앱 기능은 크리에이터스 업데이트(1703) 이상을 실행하는 Windows 10 장치에서 지원됩니다. 
 * [회사 포털 앱에서 동기화](#Sync-from-Company-Portal-app-for-Windows)  
@@ -51,8 +51,19 @@ Intune은 회사 포털 앱 및 장치 설정 앱에서 수동 동기화를 지�
     
     ![회사 포털 앱의 설정 페이지 스크린샷, 동기화 단추 강조 표시됨](./media/RS1_settingspage_sync05.png)  
 
+## <a name="sync-from-device-taskbar-or-start-menu"></a>장치 작업 표시줄 또는 시작 메뉴에서 동기화   
+
+장치의 바탕 화면에서 앱 외부의 동기화 컨트롤에 액세스할 수도 있습니다. 이 방법은 앱이 작업 표시줄 또는 시작 메뉴에 직접 고정되어 있고 빠르게 동기화하려는 경우에 유용합니다.  
+
+1. 작업 표시줄 또는 시작 메뉴에서 회사 포털 앱 아이콘을 찾습니다.  
+2. 해당 메뉴(점프 목록이라고도 함)가 표시되도록 앱의 아이콘을 마우스 오른쪽 단추로 클릭합니다.  
+
+    ![장치의 바탕 화면에 있는 Windows 작업 표시줄의 스크린샷입니다. 회사 포털 앱 아이콘을 클릭하여 "작업 표시줄에 고정", "창 닫기" 및 "이 장치 동기화" 작업 옵션이 있는 메뉴를 표시했습니다.](./media/sync-device-from-start-menu-1807.png)  
+
+3. **이 장치 동기화**를 선택합니다. 회사 포털 앱에서 **설정** 페이지가 열리고 동기화가 시작됩니다.  
+
 ## <a name="sync-from-settings-app"></a>설정 앱에서 동기화 
-설정 앱에서 Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile 또는 Windows Phone 8.1 장치를 수동으로 동기화하려면 다음 단계를 완료합니다.
+설정 앱에서 Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile 또는 Windows Phone 8.1 장치를 수동으로 동기화하려면 다음 단계를 완료합니다.  
 
 ### <a name="windows-10-desktop"></a>Windows 10 Desktop
 1. 장치에서 **시작** > **설정**을 선택합니다.
