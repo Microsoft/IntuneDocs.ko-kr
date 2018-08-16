@@ -1,12 +1,11 @@
 ---
-title: Android에 대한 Microsoft Intune 장치 제한 설정
-titlesuffix: ''
-description: Android를 실행하는 장치에서 장치 설정 및 기능을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
+title: Microsoft Intune - Azure에서 Android용 장치 제한 설정 | Microsoft Docs
+description: Microsoft Intune에서 제어하고 제한할 수 있는 모든 Android 장치 설정 목록을 참조하세요. 이러한 설정을 사용하여 암호를 제어하고, Google Play에 액세스하고, 앱을 허용하거나 금지하고, 브라우저 설정을 제어하고, 앱을 차단하고, Google 클라우드에 백업하고, 메시지, 음성, 데이터 로밍, Wi-Fi 및 Bluetooth 연결 옵션을 제어할 수 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +13,14 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
+ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190659"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39587026"
 ---
-# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 및 Samsung Knox Standard 장치 제한 설정 
+# <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android 및 Samsung Knox Standard 장치 제한 설정 - Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -53,7 +52,7 @@ ms.locfileid: "34190659"
     > 삼성 Knox 장치는 MDM 등록 중에 4자리 PIN을 자동으로 요구합니다. 네이티브 Android 장치는 조건부 액세스와의 호환을 위해 자동으로 PIN을 요구할 수 있습니다.
 
 - **최소 암호 길이** - 사용자가 구성해야 하는 암호의 최소 길이(4~16자)를 입력합니다.
-- **화면이 잠기기 전까지 최대 비활성 시간(분)** - 장치가 자동으로 잠길 때까지 비활성 상태로 유지되는 시간(분)을 지정합니다.
+- **화면이 잠기기 전까지 최대 비활성 시간(분)** - 장치에서 화면이 잠기기 전까지 비활성 상태로 유지될 수 있는 최대 시간(분)을 입력합니다. 장치의 최종 사용자는 프로필에 구성된 시간보다 큰 시간 값은 설정할 수 없습니다. 더 작은 시간 값은 설정할 수 있습니다. 예를 들어 프로필이 15분으로 설정된 경우 최종 사용자가 값을 5분으로 설정할 수 있습니다. 값을 30분으로 설정할 수는 없습니다. 
 - **장치를 초기화하기 전 로그인 오류 발생 횟수** - 장치를 초기화하기 전까지 허용되는 로그인 오류 횟수를 지정합니다.
 - **암호 만료(일)** - 장치 암호를 변경해야 할 때까지의 기간(일)을 지정합니다.
 -  **필수 암호 형식** - 필요한 암호 복잡도 수준과 생체 인식 장치 사용 가능 여부를 지정합니다. 다음 중에서 선택합니다.

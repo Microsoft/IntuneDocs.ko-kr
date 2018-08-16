@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575086"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001913"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Microsoft Intune 초기 버전 - 2018년 8월
 
@@ -59,7 +59,7 @@ Windows 10 장치를 S 모드에서 전환하거나 사용자가 S 모드에서 
 향후 업데이트에서 지원하는 iOS VPN 클라이언트는 다음과 같습니다. 
 - F5 Access(버전 3.0.1 이상)
 - Citrix SSO
-- Palo Alto Networks GlobalProtect(버전 5.0 이상)또한 향후 업데이트에서 다음과 같이 변경됩니다.
+- Palo Alto Networks GlobalProtect(버전 5.0 이상). 또한 향후 업데이트에서는 다음과 같이 적용됩니다.
 - F5 브랜딩 업데이트에 따라 기존 **F5 Access** 연결 형식의 이름이 **F5 Access Legacy**로 변경됩니다.
 - Palo Alto 브랜딩 업데이트에 따라 기존 **Palo Alto Networks GlobalProtect** 연결 형식의 이름이 **Legacy Palo Alto Networks GlobalProtect**로 변경됩니다. 
 
@@ -75,7 +75,7 @@ DEP 등록 중에 설정 도우미 대신 회사 포털을 통해 사용자를 �
 역할 할당에 범위 태그를 추가하려면 **Intune 역할** > **모든 역할** > **정책 및 프로필 관리자** > **할당** > **범위(태그)** 를 차례로 선택합니다.
 범위 태그를 구성 프로필에 추가하려면 **장치 구성** > **프로필** > 프로필 선택 > **속성** > **범위(태그)** 를 차례로 선택합니다.
 
-### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>AutoPilot 장치에 사용자 및 식별 이름 할당 <!--1346521 -->
+### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Autopilot 장치에 사용자 및 식별 이름 할당 <!--1346521 -->
 향후의 공개 미리 보기를 통해 관리자는 사용자를 단일 AutoPilot 장치에 할당할 수 있습니다.  또한 관리자는 AutoPilot을 사용하여 장치를 설정할 때 사용자에게 친숙한 식별 이름도 지정할 수 있습니다.
 
 적용 대상: Windows 참가자 1809 이상 빌드(미리 보기 동안).
@@ -86,7 +86,7 @@ Intune과 다른 MDM에서 모두 Apple VPP(대량 구매 프로그램) 토큰�
 ### <a name="packet-tunnel-support-for-ios-per-app-vpn-profiles-for-custom-and-pulse-secure-connection-types----1520957---"></a>사용자 지정 및 Pulse Secure 연결 형식에 대한 iOS 앱당 VPN 프로필의 패킷 터널 지원 <!-- 1520957 -->
 iOS 앱당 VPN 프로필을 사용할 때 앱 계층 터널링(app-proxy) 또는 패킷 수준 터널링(packet-tunnel)을 사용할 수 있습니다. 이러한 옵션을 사용할 수 있는 연결 형식은 다음과 같습니다.
 - 사용자 지정 VPN
-- Pulse Secure사용할 값을 모르는 경우 VPN 공급자의 설명서를 참조하세요.
+- Pulse Secure. 사용할 값을 모르는 경우 VPN 공급자의 설명서를 참조하세요.
 적용 대상: iOS
 
 ### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858-eeready---"></a>Zscaler는 iOS의 VPN 프로필에 사용할 수 있는 연결임 <!-- 1769858 eeready -->
@@ -99,30 +99,29 @@ Intune에서 [모바일 장치 관리](windows-enroll.md)를 사용하여 Window
 이 제한 사항을 설정하더라도 이미 등록된 장치에는 아무런 영향을 주지 않습니다.
 제한 사항이 설정되면 Intune에서 각각의 새 Windows 등록 요청이 회사 등록 권한으로 부여되었는지 확인합니다. 다음은 회사 등록 권한으로 부여된 것으로 인정되는 방법입니다.
 - 등록하는 사용자가 [장치 등록 관리자 계정]( device-enrollment-manager-enroll.md)을 사용하고 있습니다.
-
-- 장치에서 [Windows AutoPilot](enrollment-autopilot.md)을 통해 등록합니다.
+- 장치에서 [Windows Autopilot](enrollment-autopilot.md)을 통해 등록합니다.
 - 장치의 IMEI 번호가 **장치 등록** > **[회사 장치 식별자]( corporate-identifiers-add.md)** 에 나열되어 있습니다.
 - 장치에서 [대량 프로비전 패키지](windows-bulk-enroll.md)를 통해 등록합니다.
 - 장치에서 [SCCM에서 공동 관리를 위한 자동 등록](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management)을 통해 등록합니다.
-권한이 없는 등록은 차단됩니다.
-Intune에서 회사로 표시되지만 Intune 관리자가 장치별 제어를 제공하지 않으므로 차단되는 등록은 다음과 같습니다.
+
+권한이 없는 등록은 차단됩니다. Intune에서 회사로 표시되지만 Intune 관리자가 장치별 제어를 제공하지 않으므로 차단되는 등록은 다음과 같습니다.
 - [Windows 설치 중에 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).
 - [Windows 설치 프로그램에서 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).
+
 또한 차단되는 개인 등록 방법도 다음과 같습니다.
 - [Windows 설정에서 회사 계정 추가](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup)를 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment)
-
 - Windows 설정의 [MDM 등록만]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) 옵션
 
-### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>AutoPilot 프로필에 머신 이름 패턴 지정 <!--1849855-->
-AutoPilot 등록 중에 컴퓨터 이름 템플릿을 지정하여 [컴퓨터 이름](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)을 생성하고 설정할 수 있습니다. 이 패턴은 **장치 등록** > **Windows 등록** > **Windows Autopilot 배포 서비스** > **프로필**에 있는 AutoPilot 프로필에서 지정해야 합니다. 영숫자 및 하이픈 문자만 사용할 수 있습니다.
+### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Autopilot 프로필에 머신 이름 패턴 지정 <!--1849855-->
+Autopilot 등록 중에 컴퓨터 이름 템플릿을 지정하여 [컴퓨터 이름](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)을 생성하고 설정할 수 있습니다. 이 패턴은 **장치 등록** > **Windows 등록** > **Windows Autopilot 배포 서비스** > **프로필**에 있는 Autopilot 프로필에서 지정해야 합니다. 영숫자 및 하이픈 문자만 사용할 수 있습니다.
 적용 대상: Windows 참가자 1809 이상 빌드(미리 보기 동안).
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>iOS 버전 번호 및 빌드 번호 표시 <!-- 1892471 -->
 **준수 준수** > **장치 준수**에서 iOS 운영체제 버전이 표시됩니다. 향후 업데이트에서는 빌드 번호도 표시됩니다.
 보안 업데이트가 릴리스되는 경우 Apple에서는 일반적으로 버전 번호는 그대로 유지하지만 빌드 번호는 업데이트합니다. 빌드 번호가 표시되면 취약성 업데이트가 설치되어 있는지 쉽게 확인할 수 있습니다.
 
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows AutoPilot 프로필의 경우 회사 로그인 페이지 및 도메인 오류 페이지에서 계정 변경 옵션을 숨김 <!--1901669 -->
-공개 미리 보기에는 관리자가 회사 로그인 및 도메인 오류 페이지에서 변경 계정 옵션을 숨기는 새 Windows AutoPilot 프로필 옵션이 포함됩니다. 이러한 옵션을 숨기려면 Azure Active Directory에서 회사 브랜딩을 구성해야 합니다. 적용 대상: Windows 참가자 1809 이상 빌드(미리 보기 동안).
+### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows Autopilot 프로필의 경우 회사 로그인 페이지 및 도메인 오류 페이지에서 계정 변경 옵션을 숨김 <!--1901669 -->
+공개 미리 보기에는 관리자가 회사 로그인 및 도메인 오류 페이지에서 계정 변경 옵션을 숨기는 새 Windows Autopilot 프로필 옵션이 포함됩니다. 이러한 옵션을 숨기려면 Azure Active Directory에서 회사 브랜딩을 구성해야 합니다. 적용 대상: Windows 참가자 1809 이상 빌드(미리 보기 동안).
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>장치에 표시될 때의 iOS 소프트웨어 업데이트 지연 <!-- 1949583 -->
 Intune > **소프트웨어 업데이트** > **iOS용 정책 업데이트**에서 장치에 업데이트를 설치하지 않으려는 일 수와 시간을 구성할 수 있습니다. 향후 업데이트에서는 소프트웨어 업데이트가 장치에 표시될 때 해당 업데이트를 1-90일 동안 지연시킬 수 있습니다. 
@@ -167,6 +166,13 @@ macOS 등록 프로필을 만들 때, 사용자가 설정 도우미를 수행할
 Azure 클래식 포털에서 만든 준수 정책은 더 이상 사용되지 않습니다.  이 경우 기존 정책은 검토하여 삭제할 수 있지만 업데이트할 수는 없습니다. 정책을 쉼표로 구분된 파일(.csv 파일)로 내보낼 수 있습니다. 그런 다음, 파일의 세부 정보를 사용하여 Intune Azure Portal에서 이러한 정책을 다시 만듭니다.
 > [!IMPORTANT]
 > Azure 클래식 포털이 사용 중지되면 정책을 볼 수 없는 경우를 포함하여 정책에 액세스할 수 없습니다. 따라서 Azure 클래식 포털이 사용 중지되기 전에 Azure Portal에서 이러한 정책을 내보내고 다시 만들어야 합니다.
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>“사용 중지” 및 “초기화” 용어 변경 <!-- 2175759 -->
+Graph API와 일관성을 유지하도록 Intune 사용자 인터페이스 및 설명서에서 다음 용어가 변경됩니다.
+- **회사 데이터 제거**가 **사용 중지**로 변경됩니다.
+- **출하 시 설정으로 초기화**가 **초기화**로 변경됩니다.
+
+
 
 <!-- 1807 start -->
 

@@ -1,41 +1,36 @@
 ---
-title: iOS 장치 등록 - 장비 등록 프로그램
+title: macOS 장치 등록 - 장비 등록 프로그램
 titleSuffix: Microsoft Intune
-description: 장비 등록 프로그램을 사용하여 회사 소유 iOS 장치를 등록하는 방법을 알아봅니다.
+description: 장비 등록 프로그램을 사용하여 회사 소유 macOS 장치를 등록하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
+ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3b835f9fb2c1f7695919fa7d7f237c3989bd470
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: d6f9035b5a31d04e7d6ec6c5ec5b8f69a7c0943f
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001930"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40090139"
 ---
-# <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 장치 등록 프로그램을 통해 iOS 장치를 자동으로 등록
+# <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Apple 장비 등록 프로그램을 통해 macOS 장치를 자동으로 등록
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클을 통해 Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 장치에 대해 iOS 장치 등록을 사용할 수 있습니다. 장치를 건드리지 않고 다수의 장치에 대한 DEP 등록을 사용할 수 있습니다. iPhones 및 iPads와 같은 장치를 직접 사용자에게 제공할 수 있습니다. 사용자가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 관리용으로 등록됩니다.
+이 아티클을 통해 Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 장치에 대해 iOS 장치 등록을 설정할 수 있습니다. 장치를 건드리지 않고 다수의 장치에 대한 DEP 등록을 설정할 수 있습니다. macOS 장치를 직접 사용자에게 제공할 수 있습니다. 사용자가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 Intune 관리용으로 등록됩니다.
 
-DEP 등록을 사용하도록 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 관리용으로 Intune에 장치를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 장치에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다.
+DEP 등록을 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 등록 중에 장치에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다.
 
 그러나 DEP 등록은 [장치 등록 관리자](device-enrollment-manager-enroll.md)에서 작동할 수 없습니다.
-
-## <a name="what-is-supervised-mode"></a>감독됨 모드란?
-Apple은 iOS 5에서 감독됨 모드를 도입했습니다. 감독됨 모드에서 iOS 장치를 더 세밀하게 관리할 수 있습니다. 이와 같이 회사 소유 장치에 특히 유용합니다. Intune은 Apple DEP(장치 등록 프로그램)의 일부로 감독됨 모드의 장치를 구성하도록 지원합니다. 
-
-iOS 11에서는 감독되지 않는 DEP 장치에 대한 지원이 중단됩니다. iOS 11 이상에서는 DEP 구성 장치가 항상 감독됩니다. 향후 iOS 릴리스에서는 DEP is_supervised 플래그가 무시됩니다.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -47,12 +42,13 @@ iOS 11에서는 감독되지 않는 DEP 장치에 대한 지원이 중단됩니�
 -->
 ## <a name="prerequisites"></a>전제 조건
 - [Apple의 장치 등록 프로그램](http://deploy.apple.com)에서 구매한 장치
+- 일련 번호 또는 구매 주문 번호 목록입니다. 
 - [MDM 기관](mdm-authority-set.md)
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-dep-token"></a>Apple DEP 토큰 가져오기
 
-iOS 장치를 DEP에 등록하려면 Apple의 DEP 토큰(.p7m) 파일이 필요합니다. Intune에서는 이 토큰을 통해 회사에서 소유한 DEP 장치에 대한 정보를 동기화할 수 있습니다. 또한 Apple에 등록 프로필을 업로드하고 이러한 프로필에 장치를 할당할 수 있습니다.
+macOS 장치를 DEP를 통해 등록하려면 Apple의 DEP 토큰(.p7m) 파일이 필요합니다. Intune에서는 이 토큰을 통해 회사에서 소유한 DEP 장치에 대한 정보를 동기화할 수 있습니다. 또한 Intune에서 등록 프로필을 Apple에 업로드하고 해당 프로필을 장치에 업로드할 수 있게 합니다.
 
 Apple DEP 포털을 사용하여 DEP 토큰을 만듭니다. 관리용으로 Intune에 장치를 할당하는 데도 DEP 포털을 사용할 수 있습니다.
 
@@ -101,7 +97,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 ![등록 프로그램 토큰을 만드는 데 사용되는 Apple ID를 지정하고 등록 프로그램 토큰을 찾는 스크린샷](./media/device-enrollment-program-enroll-ios/image03.png)
 
 ### <a name="step-4-upload-your-token"></a>4단계. 토큰 업로드
-**Apple 토큰** 상자에서 인증서(.pem) 파일을 찾은 다음 **열기**, **만들기**를 차례로 선택합니다. Push Certificate가 있으면 Intune에서 등록된 모바일 장치에 정책을 푸시하여 iOS 장치를 등록하고 관리할 수 있습니다. Intune이 Apple과 자동으로 동기화되어 등록 프로그램 계정을 확인합니다.
+**Apple 토큰** 상자에서 인증서(.pem) 파일을 찾은 다음 **열기**, **만들기**를 차례로 선택합니다. Push Certificate가 있으면 Intune에서 등록된 장치에 정책을 푸시하여 macOS 장치를 등록하고 관리할 수 있습니다. Intune이 Apple과 자동으로 동기화되어 등록 프로그램 계정을 확인합니다.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 등록 프로필 만들기
 
@@ -114,53 +110,29 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 3. **프로필 만들기**에서 관리 목적으로 프로필의 **이름** 및 **설명**을 입력합니다. 사용자는 이러한 세부 정보를 볼 수 없습니다. 이 **이름** 필드를 사용하여 Azure Active Directory에 동적 그룹을 만들 수 있습니다. 이 등록 프로필로 장치를 할당하기 위해 프로필 이름을 사용하여 enrollmentProfileName 매개 변수를 정의합니다. [Azure Active Directory 동적 그룹](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)에 대해 자세히 알아보세요.
 
-    ![프로필 이름 및 설명](./media/device-enrollment-program-enroll-ios/image05.png)
+    ![프로필 이름 및 설명](./media/device-enrollment-program-enroll-macos/createprofile.png)
 
-4. **사용자 선호도**에서 이 프로필이 있는 장치가 할당된 사용자로 등록되어야 하는지, 할당된 사용자 없이 등록되어야 하는지 선택합니다.
-    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털을 사용하려는 장치의 경우 이 옵션을 선택합니다. ADFS 및 등록 프로필을 사용하는데 **Authenticate with Company Portal instead of Setup Assistant**(설정 도우미 대신 회사 포털로 인증)가 **아니요**로 설정된 경우 [WS-Trust 1.3 사용자 이름/혼합 엔드포인트](https://technet.microsoft.com/library/adfs2-help-endpoints)([자세한 정보](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint))가 필요합니다.
+4. **플랫폼**에서 **macOS**를 선택합니다.
+
+5. **사용자 선호도**에서 이 프로필이 있는 장치가 할당된 사용자로 등록되어야 하는지, 할당된 사용자 없이 등록되어야 하는지 선택합니다.
+    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털 앱을 사용하려는 장치의 경우 이 옵션을 선택합니다. ADFS를 사용하는 경우 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 엔드포인트](https://technet.microsoft.com/library/adfs2-help-endpoints)가 필요합니다. [자세한 정보](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint). 사용자 선호도를 사용하는 macOS DEP 장치에는 다단계 인증이 지원되지 않습니다.
 
     - **사용자 선호도를 사용하지 않고 등록** - 단일 사용자로 등록되지 않은 장치의 경우 이 옵션을 선택합니다. 로컬 사용자 데이터에 액세스하지 않고 작업을 수행하는 장치에 이 옵션을 사용합니다. 회사 포털 앱과 같은 앱이 작동하지 않습니다.
 
-5. **사용자 선호도를 사용하여 등록**을 선택한 경우 사용자가 Apple 설정 도우미 대신 회사 포털에서 인증할 수 있도록 하는 옵션이 있습니다.
+6. **장치 관리 설정**을 선택한 다음 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할 것인지 선택합니다. **잠긴 환경**을 사용하면 **시스템 기본 설정** 메뉴 또는 **터미널**에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 장치 등록 후 장치를 초기화하지 않고는 이 설정을 변경할 수 없습니다.
 
-    ![회사 포털에서 인증합니다.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
+    ![장치 관리 설정 스크린샷](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
+ 
+7. **확인**을 선택합니다.
 
-    > [!NOTE]
-    > 다음 중 하나를 수행하려면 **Authenticate with Company Portal instead of Apple Setup Assistant**(Apple 설정 도우미 대신 회사 포털로 인증)를 **예**로 설정합니다.
-    >    - 다단계 인증 사용
-    >    - 처음 로그인할 때 암호를 변경해야 하는 사용자에게 메시지 표시
-    >    - 등록 중에 만료된 암호를 재설정하도록 사용자에게 메시지 표시. Apple 설정 도우미로 인증하는 경우에는 지원되지 않습니다.
-
-6. **장치 관리 설정**을 선택한 다음 이 프로필을 사용하는 장치를 감독할지 여부를 선택합니다.
-
-    ![장치 관리 설정 스크린샷](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
-
-    **감독**되는 장치의 경우 더 많은 관리 옵션이 제공되며 기본적으로 활성화 잠금을 사용할 수 없습니다. 특히 많은 수의 iOS 장치를 배포하는 조직의 경우 감독됨 모드를 사용하기 위한 메커니즘으로 DEP를 사용하는 것이 좋습니다.
-
-    사용자는 해당 장치가 감독된다는 알림을 다음 두 가지 방법으로 받습니다.
-
-   - 잠금 화면에 “이 iPhone은 Contoso에서 관리됩니다.”라는 메시지가 표시됩니다.
-   - **설정** > **일반** > **정보** 화면에 “이 iPhone은 감독됩니다. Contoso는 사용자의 인터넷 트래픽을 모니터링하고 이 장치를 찾습니다."라는 메시지를
-
-     > [!NOTE]
-     > 감독 없이 등록된 장치는 Apple Configurator를 사용하여 감독으로만 다시 설정할 수 있습니다. 이러한 방식으로 장치를 다시 설정하려면 iOS 장치를 Mac에 USB 케이블로 연결해야 합니다. 이에 대해 [Apple Configurator 문서](http://help.apple.com/configurator/mac/2.3)에서 자세히 알아보세요.
-
-7. 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할지 여부를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 장치 등록 후 장치를 초기화하지 않고는 이 설정을 변경할 수 없습니다. 이러한 장치는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
-
-8. 이 프로필을 사용하는 장치가 **컴퓨터와 동기화**할 수 있도록 할지 여부를 선택합니다. **인증서로 Apple Configurator 허용**을 선택한 경우 **Apple Configurator 인증서** 아래에서 인증서를 선택해야 합니다.
-
-9. 이전 단계에서 **인증서로 Apple Configurator 허용**을 선택한 경우 가져올 Apple Configurator 인증서를 선택합니다.
-
-10. **확인**을 선택합니다.
-
-11. **설정 도우미 설정**을 선택하여 다음 프로필 설정을 구성합니다. ![설정 도우미 사용자 지정](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+8. **설정 도우미 설정**을 선택하여 다음 프로필 설정을 구성합니다. ![설정 도우미 사용자 지정](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
 
     |                 Setting                  |                                                                                               설명                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>부서 이름</strong>     |                                                             정품 인증을 하는 동안 사용자가 <strong>구성 정보</strong>를 탭하면 표시됩니다.                                                              |
     |    <strong>부서 전화</strong>     |                                                          정품 인증을 하는 동안 사용자가 <strong>도움이 필요하세요?</strong> 단추를 클릭하면 표시됩니다.                                                          |
-    | <strong>설정 도우미 옵션</strong> |                                                     다음 선택적 설정은 나중에 iOS <strong>설정</strong> 메뉴에서 지정할 수 있습니다.                                                      |
+    | <strong>설정 도우미 옵션</strong> |                                                     다음 선택적 설정은 나중에 macOS <strong>설정</strong> 메뉴에서 지정할 수 있습니다.                                                      |
     |        <strong>암호</strong>         | 정품 인증을 하는 동안 암호를 묻는 메시지가 표시됩니다. 장치가 보안된 상태가 아니거나 다른 방식으로 액세스가 제어된 상태(즉, 하나의 앱만 사용할 수 있도록 장치를 제한하는 키오스크 모드)가 아니면 항상 암호를 요구합니다. |
     |    <strong>위치 서비스</strong>    |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 서비스를 확인하는 메시지가 표시됩니다.                                                                  |
     |         <strong>복원</strong>         |                                                                이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 iCloud 백업을 확인하는 메시지가 표시됩니다.                                                                 |
@@ -171,11 +143,14 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
     |          <strong>확대/축소</strong>           |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.                                                                 |
     |          <strong>Siri</strong>           |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.                                                                 |
     |     <strong>진단 데이터</strong>     |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.                                                                 |
+    |     <strong>FileVault</strong>           |  |
+    |     <strong>iCloud 진단</strong>  |  |
+    |     <strong>등록</strong>        |  |
 
 
-12. **확인**을 선택합니다.
+10. **확인**을 선택합니다.
 
-13. 프로필을 저장하려면 **만들기**를 선택합니다.
+11. 프로필을 저장하려면 **만들기**를 선택합니다.
 
 ## <a name="sync-managed-devices"></a>관리되는 장치 동기화
 이제 Intune에 장치 관리 권한이 있으므로 Intune을 Apple과 동기화하여 Azure 포털의 Intune에서 관리되는 장치를 확인할 수 있습니다.
@@ -190,24 +165,19 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 ## <a name="assign-an-enrollment-profile-to-devices"></a>장치에 등록 프로필 할당
 먼저 등록 프로그램 프로필을 장치에 할당해야 장치를 등록할 수 있습니다.
 
->[!NOTE]
->**Apple 일련 번호** 블레이드에서 프로필에 일련 번호를 할당할 수도 있습니다.
-
 1. Azure Portal의 Intune에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택한 다음 목록에서 토큰을 선택합니다.
 2. **장치**를 선택하고 목록에서 장치를 선택한 다음 **프로필 할당**을 선택합니다.
 3. **프로필 할당**에서 장치의 프로필을 선택한 다음 **할당**을 선택합니다.
 
 ### <a name="assign-a-default-profile"></a>기본 프로필 할당
 
-특정 토큰에 등록하는 모든 장치에 적용할 기본 프로필을 선택할 수 있습니다.
+특정 토큰을 사용하여 등록하는 모든 장치에 적용할 기본 macOS 및 iOS 프로필을 선택할 수 있습니다. 
 
 1. Azure Portal의 Intune에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택한 다음 목록에서 토큰을 선택합니다.
 2. **기본 프로필 설정**을 선택하고 드롭다운 목록에서 프로필을 선택한 다음 **저장**을 선택합니다. 이 프로필은 토큰에 등록하는 모든 장치에 적용됩니다.
 
 ## <a name="distribute-devices"></a>장치 배포
 Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 DEP 장치를 등록할 수 있는 프로필을 할당했습니다. 이제 사용자에게 장치를 배포할 수 있습니다. 사용자 선호도가 있는 장치의 경우 각 사용자에게 Intune 라이선스를 할당해야 합니다. 사용자 선호도를 사용하지 않는 장치에는 장치 라이선스가 필요합니다. 활성화된 장치는 초기화될 때까지 등록 프로필을 적용할 수 없습니다.
-
-[장비 등록 프로그램을 통해 Intune에서 iOS 장치 등록](/intune-user-help/enroll-your-device-dep-ios)을 참조하세요.
 
 ## <a name="renew-a-dep-token"></a>DEP 토큰 갱신  
 1. deploy.apple.com으로 이동합니다.  
@@ -226,3 +196,7 @@ Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 D
 8. 새로 다운로드된 토큰을 업로드합니다.  
 9. **토큰 갱신**을 선택합니다. 토큰이 갱신되었다는 확인 메시지가 표시됩니다.   
     ![확인의 스크린샷입니다.](./media/device-enrollment-program-enroll-ios/confirmation.png)
+
+## <a name="next-steps"></a>다음 단계
+
+macOS 장치를 등록한 후에는 [장치 관리](device-management.md)를 시작할 수 있습니다.

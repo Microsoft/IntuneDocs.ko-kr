@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6fca4251ab9ff5433318f19bf039a867c095b3f
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 1ef61cac4e8a50043adc48dd7ebd1b13aac9e76a
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117942"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001964"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 앱 보호 정책 설정
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -66,7 +66,7 @@ Intune 앱 보호 정책에서 특정 시나리오의 데이터 송수신을 허
 | **액세스하려면 PIN 필요** | 이 앱을 사용하는 데 PIN을 요구하려면 **예**를 선택합니다. 회사 또는 학교 컨텍스트에서 앱을 처음으로 실행할 때 이 PIN을 설정하라는 메시지가 표시됩니다. PIN은 온라인 또는 오프라인으로 작업할 때 적용됩니다. 기본값은 **예**입니다.<br><br> PIN 강도에 대한 다음 설정을 구성합니다. <ul><li>**유형 선택**: 앱 보호 정책이 적용된 앱에 액세스하기 전에 숫자 또는 암호 유형 PIN의 요구 사항을 설정합니다. 숫자 요구 사항에는 숫자만 포함되고, 암호는 1자 이상의 알파벳 문자 **또는** 1자 이상의 특수 문자로 정의할 수 있습니다. <br><br> **참고:** 암호 형식을 구성하려면 앱에 Intune SDK 버전 7.1.12 이상이 설치되어야 합니다. 숫자 형식에는 Intune SDK 버전 제한이 없습니다. 허용되는 특수 문자에는 iOS 영어 키보드에서 기호 및 특수 문자가 포함됩니다. 기본값은 **숫자**입니다.<br><br></li><li>**PIN 초기화 전 시도 횟수**: 초기화하기 전까지 PIN을 성공적으로 입력하기 위해 시도할 수 있는 횟수를 지정합니다. 이 정책 설정 형식은 양의 정수를 지원합니다. 기본값 = **5**.<br><br></li><li> **단순한 PIN 허용**: 사용자가 1234, 1111, abcd 또는 aaaa와 같은 단순한 PIN 시퀀스를 사용할 수 있도록 허용하려면 **예**를 선택합니다. 단순한 순서를 사용하는 것을 방지하려면 **아니요**를 선택합니다. <br><br>**참고**: 암호 형식 PIN을 구성하고, 단순 PIN 허용을 예로 설정한 경우 사용자 PIN에 1자 이상의 문자 **또는** 1자 이상의 특수 문자가 포함되어야 합니다. 암호 형식 PIN을 구성하고, 단순 PIN 허용을 아니요로 설정한 경우 사용자 PIN에 1자 이상의 숫자 **및** 1자 이상의 문자 **및** 1자 이상의 특수 문자가 포함되어야 합니다. 기본값은 **예**입니다. <br><br></li><li>**PIN 길이**: PIN 시퀀스의 최소 자릿수를 지정합니다.<br><br>**참고**: 일부 iOS 장치에서 PIN 길이가 6 미만으로 구성된 경우 사용자에게 UI에서 텍스트 입력 필드가 표시되지만 역시 "형식 선택" 설정에서 정한 형식의 PIN을 입력해야 합니다. 기본값은 **4**입니다. <br><br></li><li> **PIN 대신 지문 허용(iOS 8.0 이상)**: 사용자가 앱 액세스를 위해 PIN 대신 [Touch ID](https://support.apple.com/HT201371)를 사용하도록 허용하려면 **예**를 선택합니다. 기본값은 **예**입니다.<br><br></li><li> **PIN 대신 안면 인식 허용(iOS 11 이상)**: 사용자가 앱 액세스를 위해 PIN 대신 [Face ID](https://support.apple.com/HT208109)를 사용하도록 허용하려면 **예**를 선택합니다. <br><br>**참고:** 안면 인식을 구성하려면 앱에 Intune SDK 버전 7.1.19 이상이 설치되어야 합니다. 기본값은 **예**입니다. 사용자가 회사 계정으로 앱에 액세스하는 경우 안면 식별을 제공하라는 메시지가 표시됩니다.<br><br></li><li> **장치 PIN을 관리하는 경우 앱 PIN 사용 안 함**: 등록된 장치에서 장치 잠금이 검색되는 경우 앱 PIN을 사용하지 않도록 설정하려면 **예**를 선택합니다. <br><br> **참고:** 앱에 Intune SDK 버전 7.0.1 이상이 있어야 합니다. 기본값은 **아니요**입니다.</li></ul> iOS 장치에서 사용자가 PIN 대신 [Touch ID](https://support.apple.com/HT201371) 또는 [Face ID](https://support.apple.com/HT208109)를 사용하여 자신의 ID를 증명하도록 허용할 수 있습니다. Intune은 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API를 사용하여 Touch ID 및 Face ID를 통해 사용자를 인증합니다. Touch ID 및 Face ID에 대한 자세한 내용은 [iOS 보안 가이드](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)를 참조하세요. 회사 또는 학교 계정으로 이 앱을 열려고 하면 PIN을 입력하는 대신 해당 지문 ID 또는 안면 ID를 제공하라는 메시지가 표시됩니다. 이 설정을 사용하는 경우 회사 또는 학교 계정을 사용하는 동안 최근 실행 앱 미리 보기 이미지가 흐리게 표시됩니다. </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 액세스하려면 PIN 필요: 예 <br><br> 유형 선택: 숫자 <br><br> PIN 초기화 시도 횟수: 5 <br><br> 단순한 PIN 허용: 예 <br><br> PIN 길이: 4 <br><br> 지문 허용: 예 <br><br> 안면 인식 허용: 예 <br><br> 앱 PIN 사용 안 함: 아니요 |
 | **액세스 시 회사 자격 증명 필요** | 앱 액세스에 PIN을 입력하는 대신 해당 회사 또는 학교 계정으로 로그인하도록 요구하려면 **예**를 선택합니다. 이를 **예**로 설정하였고 PIN 또는 생체 인식 프롬프트를 사용하는 경우 회사 자격 증명과, PIN 또는 생체 인식 프롬프트가 표시됩니다. | 아니요 |
 | **관리되는 앱이 무단 해제 또는 루팅된 장치를 실행할 수 없도록 차단** |  이 앱이 무단 해제 또는 루팅된 장치에서 실행되는 것을 차단하려면 **예**를 선택합니다. 개인적인 작업에 이 앱을 계속 사용할 수 있지만 이 앱의 회사 또는 학교 데이터에 액세스하려면 다른 장치를 사용해야 합니다. | 예 |
-| **액세스 요구 사항을 다시 확인할 시간(분)** | 다음 설정을 구성합니다. <ul><li>**제한 시간**: 이전에 정책에서 정의된 액세스 요구 사항이 다시 확인되기까지 걸리는 시간(분)입니다. 예를 들어 관리자가 정책에서 장치에 루팅된 PIN 및 블록을 설정하고, 사용자가 Intune 관리 앱을 열 때, PIN을 입력해야 하고 루팅되지 않은 장치에서 앱을 사용해야 합니다. 이 설정을 사용하는 경우 사용자가 **30분**(기본값) 동안은 Intune 관리 앱에서 PIN을 다시 입력하거나 또 다른 root-detection 확인을 할 필요가 없습니다.  <br><br>**참고:** iOS의 경우 PIN은 **같은 게시자**의 모든 Intune 관리 앱 간에서 공유됩니다. 앱이 장치에서 포그라운드를 나가면 특정 PIN에 대한 PIN 타이머가 재설정됩니다. 사용자는 이 설정에서 정의한 시간 동안 PIN을 공유하는 Intune 관리 앱에 PIN을 입력할 필요가 없습니다. 이 정책 설정 형식은 양의 정수를 지원합니다.<br><br></li><li>**오프라인 유예 기간**: MAM 앱이 오프라인으로 실행할 수 있는 시간(분)입니다. 앱에 대한 액세스 요구 사항을 다시 확인하기 전의 시간(분)을 지정합니다. 기본값 = **720**분(12시간). 이 기간이 만료된 후에 앱을 계속 실행하려면 Azure AD(Azure Active Directory)에 대한 사용자 인증이 필요하며, **회사 자격 증명 필요**가 **예**로 설정되어야 합니다. 이 정책 설정 형식은 양의 정수를 지원합니다.</li></ul>| 시간 제한: 30 <br><br> 오프라인: 720 |
+| **액세스 요구 사항을 다시 확인할 시간(분)** | 다음 설정을 구성합니다. <ul><li>**제한 시간**: 이전에 정책에서 정의된 액세스 요구 사항이 다시 확인되기까지 걸리는 시간(분)입니다. 예를 들어 관리자가 정책에서 장치에 루팅된 PIN 및 블록을 설정하고, 사용자가 Intune 관리 앱을 열 때, PIN을 입력해야 하고 루팅되지 않은 장치에서 앱을 사용해야 합니다. 이 설정을 사용하는 경우 사용자가 **30분**(기본값) 동안은 Intune 관리 앱에서 PIN을 다시 입력하거나 또 다른 root-detection 확인을 할 필요가 없습니다.  <br><br>**참고:** iOS의 경우 PIN은 **같은 게시자**의 모든 Intune 관리 앱 간에서 공유됩니다. 앱이 장치에서 포그라운드를 나가면 특정 PIN에 대한 PIN 타이머가 재설정됩니다. 사용자는 이 설정에서 정의한 시간 동안 PIN을 공유하는 Intune 관리 앱에 PIN을 입력할 필요가 없습니다. 이 정책 설정 형식은 양의 정수를 지원합니다.<br><br></li><li>**오프라인 유예 기간**: MAM 앱이 오프라인으로 실행할 수 있는 시간(분)입니다. 앱에 대한 액세스 요구 사항을 다시 확인하기 전의 시간(분)을 지정합니다. 기본값 = **720**분(12시간). 이 기간이 만료되면 네트워크에 액세스할 수 있을 때까지 앱이 회사 또는 학교 데이터에 대한 액세스를 차단합니다. 이 정책 설정 형식은 양의 정수를 지원합니다.</li></ul>| 시간 제한: 30 <br><br> 오프라인: 720 |
 | **앱 데이터를 초기화하기 전의 오프라인 간격(일)** | 이 오랜 기간(관리자가 정의) 동안 오프라인으로 실행되고 나면 앱에서 사용자가 네트워크에 연결하고 다시 인증해야 합니다. 성공적으로 인증하고 나면 데이터에 계속 액세스할 수 있으며 오프라인 간격이 재설정됩니다.  사용자가 인증에 실패하면 앱에서 사용자 계정과 데이터를 선택적으로 초기화합니다.  선택적 초기화로 제거되는 데이터에 대한 자세한 내용은 [Intune-관리 앱에서 회사 데이터만 초기화하는 방법](https://docs.microsoft.com/intune/apps-selective-wipe)을 참조하세요. 이 정책 설정 형식은 양의 정수를 지원합니다. <br> | 90일 |
 | **Require minimum iOS operating system**(최소 iOS 운영 체제 필요) | 이 앱을 사용하기 위한 최소 iOS 운영 체제를 요구하려면 **예**를 선택합니다. 장치의 iOS 버전이 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다. <br><br> **참고:** 앱에 Intune SDK 버전 7.0.1 이상이 있어야 합니다. | 아니요 |
 | **Require minimum iOS operating system (Warning only)**(최소 iOS 운영 체제 필요(경고)) | 이 앱을 사용하기 위한 최소 iOS 운영 체제를 요구하려면 **예**를 선택합니다. 장치의 iOS 버전이 요구 사항을 충족하지 않으면 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다. <br><br> **참고:** 앱에 Intune SDK 버전 7.0.1 이상이 있어야 합니다. | 아니요 |
@@ -79,7 +79,7 @@ Intune 앱 보호 정책에서 특정 시나리오의 데이터 송수신을 허
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook 앱용 추가 기능
 
-최근에 iOS용 Outlook에 인기 있는 앱을 메일 클라이언트와 통합할 수 있는 추가 기능이 적용되었습니다. Outlook용 추가 기능은 웹, Windows, Mac 및 iOS용 Outlook에서 사용할 수 있습니다. 추가 기능은 Microsoft Exchange를 통해 관리되기 때문에 사용자는 Outlook 및 관리되지 않는 추가 기능 응용 프로그램에서 데이터와 메시지를 공유할 수 있습니다(Exchange에서 사용자에 대해 추가 기능을 해제하지 않은 경우).
+최근에 iOS용 Outlook에 인기 있는 앱을 메일 클라이언트와 통합할 수 있는 추가 기능이 적용되었습니다. Outlook용 추가 기능은 웹, Windows, Mac 및 iOS용 Outlook에서 사용할 수 있습니다. Intune SDK 및 Intune 앱 보호 정책에는 Outlook용 추가 기능 관리를 위한 지원이 포함되어 있지 않으나 사용을 제한하는 다른 방법이 있습니다. 추가 기능은 Microsoft Exchange를 통해 관리되기 때문에 사용자는 Outlook 및 관리되지 않는 추가 기능 응용 프로그램에서 데이터와 메시지를 공유할 수 있습니다(Exchange에서 사용자에 대해 추가 기능을 해제하지 않은 경우).
 
 최종 사용자가 Outlook 추가 기능에 액세스하고 설치하는 것을 중지하려면(이는 모든 Outlook 클라이언트에 영향을 줌) Exchange 관리 센터에서 역할을 다음과 같이 변경해야 합니다.
 
@@ -99,7 +99,7 @@ LinkedIn 계정 연결을 사용하면 특정 Microsoft 앱 내에서 LinkedIn �
 > [!NOTE]
 > 미국 정부 고객과, 오스트레일리아, 캐나다, 중국, 프랑스, 독일, 인도, 대한민국, 영국, 일본, 남아공에서 호스팅되는 Exchange Online 메일박스를 사용하는 조직에서는 현재 LinkedIn 통합을 사용할 수 없습니다. 
 
-전체 조직에 대해 LinkedIn 계정 연결을 사용하지 않게 설정하거나, 조직 내 선별된 사용자 그룹에 대해 LinkedIn 계정 연결을 사용하도록 설정할 수 있습니다. 이 설정은 모든 플랫폼(웹, 모바일, 데스크톱)의 Office 365 앱 전체에서 LinkedIn 연결에 영향을 미칩니다. 다음과 같습니다.
+Intune SDK 및 Intune 앱 보호 정책에는 LinkedIn 계정 연결 관리를 위한 지원이 포함되어 있지 않으나 계정 연결을 관리하는 다른 방법이 있습니다. 전체 조직에 대해 LinkedIn 계정 연결을 사용하지 않게 설정하거나, 조직 내 선별된 사용자 그룹에 대해 LinkedIn 계정 연결을 사용하도록 설정할 수 있습니다. 이 설정은 모든 플랫폼(웹, 모바일, 데스크톱)의 Office 365 앱 전체에서 LinkedIn 연결에 영향을 미칩니다. 다음과 같습니다.
 
 - Azure Portal에서 테넌트에 대해 LinkedIn 계정 연결을 사용하거나 사용하지 않게 설정합니다. 
 - 그룹 정책을 사용하여 조직의 Office 2016 앱에 대해 LinkedIn 계정 연결을 사용하거나 사용하지 않게 설정합니다.
