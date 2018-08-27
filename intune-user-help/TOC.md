@@ -4,8 +4,6 @@
 
 ## [회사에서 Intune을 사용하여 볼 수 있는 정보는 무엇인가요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [내 장치 다시 설정](what-happens-if-you-reset-your-device-cpwebsite.md)
-
 ## [내 암호 업데이트](password-does-not-meet-it-administrator-requirements.md)
 
 ## [회사 포털에 로그인](sign-in-to-the-company-portal.md)
@@ -105,8 +103,8 @@
 ## [macOS 장치 사용](using-your-macos-device-with-intune.md)
 ### [macOS 장치를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS 장치 등록](enroll-your-device-in-intune-macos-cp.md)
-### [macOS 장치 등록 취소](unenroll-your-device-from-intune-macos.md)
-
+### [회사에서 제공한 macOS 장치 등록](enroll-company-device-macos.md)  
+### [macOS 장치 등록 취소](unenroll-your-device-from-intune-macos.md)  
 ### [macOS의 일반적인 문제 해결](troubleshoot-your-device-macos.md)
 #### [내 macOS 버전이 아직 지원되지 않음](your-macos-version-isnt-yet-supported.md)
 #### [macOS 장치 업데이트](you-need-to-update-your-macos-device.md)
