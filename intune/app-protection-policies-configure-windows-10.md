@@ -15,21 +15,18 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d0956f56da4fd0e93bdcd26e06c7d48aa252f9b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0f8e5c6319e01404500f5a31fabd1baeb3520067
+ms.sourcegitcommit: 0f8d46d644f78609fae8bf91197ae77c7af45d23
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831212"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251608"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10용 앱 보호 정책 구성 준비 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Azure AD에서 MAM 공급자를 설정하여 Windows 10용 MAM(모바일 응용 프로그램 관리)을 사용하도록 설정합니다. Azure AD에서 MAM 공급자를 설정하면 Intune을 사용하여 새 WIP(Windows Information Protection) 정책을 만들 때 등록 상태를 정의할 수 있습니다. 등록 상태는 MAM 또는 MDM(모바일 장치 관리)일 수 있습니다.
-
-> [!NOTE]
-> MAM 등록 상태의 장치는 Azure AD와 조인되어야 합니다.
 
 ## <a name="to-configure-the-mam-provider"></a>MAM 공급자를 구성하려면
 
@@ -48,7 +45,7 @@ Azure AD에서 MAM 공급자를 설정하여 Windows 10용 MAM(모바일 응용 
    MAM 사용 약관 URL은 Microsoft Intune에서 지원되지 않습니다. 이 입력 상자는 보호 정책을 적용하도록 비워 두어야 합니다.
 
    **MAM 검색 URL**  
-   MAM 서비스 등록 끝점의 URL입니다. 등록 끝점은 MAM 서비스에서 관리할 장치를 등록하는 데 사용됩니다.
+   MAM 서비스 등록 엔드포인트의 URL입니다. 등록 엔드포인트는 MAM 서비스에서 관리할 장치를 등록하는 데 사용됩니다.
 
    **MAM 준수 URL**  
    MAM 준수 URL은 Microsoft Intune에서 지원되지 않습니다. 이 입력 상자는 보호 정책을 적용하도록 비워 두어야 합니다. 

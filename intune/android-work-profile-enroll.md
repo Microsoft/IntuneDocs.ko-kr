@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909068"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255069"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Android 회사 프로필 장치 등록 설정
 
@@ -34,7 +34,7 @@ Android 회사 프로필 관리를 설정하려면 다음 단계를 따릅니다
 2. Android 회사 프로필 등록 설정을 지정합니다. Android 회사 프로필은 [특정 Android 장치에서만 지원](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22)됩니다. Android 회사 프로필을 지원하는 장치는 기본 Android 관리도 지원합니다. Intune에서는 Android 회사 프로필을 지원하는 장치를 [등록 제한](enrollment-restrictions-set.md) 내에서 관리하는 방법을 지정할 수 있습니다.
     - **차단(기본적으로 설정됨)**:Android 회사 프로필을 지원하는 장치를 비롯한 모든 Android 장치가 기존 Android 장치로 등록됩니다.
     - **허용**: Android 회사 프로필을 지원하는 모든 장치가 Android 회사 프로필 장치로 등록됩니다. Android 회사 프로필을 지원하지 않는 Android 장치는 기본 Android 장치로 등록됩니다.
-3. [사용자에게 장치를 등록하는 방법을 알려 줍니다](/intune-user-help/enroll-your-device-in-intune-android.md).
+3. [사용자에게 장치를 등록하는 방법을 알려 줍니다](/intune-user-help/enroll-your-device-in-intune-android).
 
 
 Android 회사 프로필에서 장치를 등록하려고 하지만 해당 장치가 이미 정규 Android 장치로 등록된 경우 먼저 해당 장치 등록을 취소한 다음, 다시 등록해야 합니다.

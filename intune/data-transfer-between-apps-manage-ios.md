@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c6ba08a89417222e9741a69cdf899a4889794b67
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: 2991aa947a693d2eb71a355047ed266838dd92a4
+ms.sourcegitcommit: be67f8293b47cc08a46d328a44a50a7ab67c2052
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926998"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251612"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법
 ## <a name="manage-ios-apps"></a>IOS 앱 관리
@@ -70,7 +70,7 @@ iOS 장치의 **관리에서 열기** 기능은 **MDM 채널**을 통해 장치�
 
 |타사 MDM 공급자| 구성 키 | 값 형식 | 구성 값|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | 문자열 | {UserPrincipalName}|
+|Microsoft Intune| IntuneMAMUPN | 문자열 | {{UserPrincipalName}}|
 |VMware AirWatch| IntuneMAMUPN | 문자열 | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | 문자열 | ${userUPN} **또는** ${userEmailAddress} |
 |ManageEngine 모바일 장치 관리자 | IntuneMAMUPN | 문자열 | %upn% |

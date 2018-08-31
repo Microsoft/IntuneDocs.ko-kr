@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
-ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
+ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39501152"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251883"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -30,9 +30,6 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 
 >[!NOTE]
 >등록 제한은 보안 기능이 아닙니다. 손상된 장치는 해당 문자를 잘못 표시할 수 있습니다. 이러한 제한은 무해한 사용자를 위한 최선의 장벽입니다.
-
->[!NOTE]
->이 아티클에서 언급된 그룹 할당 등록 제한 및 우선 순위 기능은 Intune 고객 기반에 롤아웃되고 있습니다. 이 롤아웃이 완료될 때까지 그룹 및 우선 순위 기능에 액세스하지 못할 수 있습니다.
 
 만들 수 있는 등록 제한 사항은 다음과 같습니다.
 

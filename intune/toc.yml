@@ -675,30 +675,6 @@ items:
       href: data-apple-sends-to-intune.md
     - name: Google이 Intune에 보내는 데이터
       href: data-google-sends-to-intune.md
-  - name: 모니터링 및 문제 해결
-    items:
-    - name: 사용자가 문제 해결할 수 있도록 도움
-      href: help-desk-operators.md
-    - name: 회사 리소스 액세스 문제 해결
-      href: troubleshoot-company-resource-access-problems.md
-    - name: 앱 설치 문제 해결
-      href: troubleshoot-app-install.md
-    - name: Intune 활동에 대한 감사 로그
-      href: monitor-audit-logs.md
-    - name: 앱 보호 로그 검토
-      href: app-protection-policy-settings-log.md
-    - name: 메일 프로필 문제 해결
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: 소프트웨어 업데이트 문제 해결
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Endpoint Protection 문제 해결
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: 정책 문제 해결
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: 조건부 액세스 문제 해결
-      href: troubleshoot-conditional-access.md
-    - name: Exchange Connector 문제 해결
-      href: troubleshoot-exchange-connector.md
   - name: 자동화 및 사용자 지정
     items:
     - name: 사용자 지정 장치 설정 구성
@@ -760,7 +736,7 @@ items:
     items:
     - name: REST 클라이언트를 사용하여 데이터 웨어하우스 API에서 데이터 가져오기
       href: reports-proc-data-rest.md
-    - name: 데이터 웨어하우스 API 끝점
+    - name: 데이터 웨어하우스 API 엔드포인트
       href: reports-api-url.md
     - name: 데이터 웨어하우스 응용 프로그램 전용 인증
       href: data-warehouse-app-only-auth.md
@@ -796,11 +772,35 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: 리소스
   items:
+  - name: 문제 해결
+    items:
+    - name: 사용자가 문제 해결할 수 있도록 도움
+      href: help-desk-operators.md
+    - name: 회사 리소스 액세스 문제 해결
+      href: troubleshoot-company-resource-access-problems.md
+    - name: 앱 설치 문제 해결
+      href: troubleshoot-app-install.md
+    - name: Intune 활동에 대한 감사 로그
+      href: monitor-audit-logs.md
+    - name: 앱 보호 로그 검토
+      href: app-protection-policy-settings-log.md
+    - name: 메일 프로필 문제 해결
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: 소프트웨어 업데이트 문제 해결
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Endpoint Protection 문제 해결
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: 정책 문제 해결
+      href: troubleshoot-policies-in-microsoft-intune.md
+    - name: 조건부 액세스 문제 해결
+      href: troubleshoot-conditional-access.md
+    - name: Exchange Connector 문제 해결
+      href: troubleshoot-exchange-connector.md
   - name: 용어 설명
     href: intune-glossary.md
-ms.openlocfilehash: ab5b79b56ff430575cf3c9021ce33b573b4d0f22
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: 696173c0e1ecc8121637139ce4ada0b497ab7506
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42822953"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241765"
