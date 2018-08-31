@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: dc5d9f47a8d950c6c5de9f362bd618d1724055f4
+ms.sourcegitcommit: 3e3e2af98dd92f7ba710f393841cfdb3dbcc4867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444917"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42912154"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Intune을 사용하여 분실했거나 도난당한 iOS 장치 찾기
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-맵에서 분실하거나 도난당한 iOS 장치의 위치를 가져오려면 **장치 찾기** 작업을 사용합니다. 장치는 장비 등록 프로그램을 통해 등록되고 감독 모드 상태인 회사 소유의 iOS 장치여야 합니다. 이 작업을 사용하기 전에 장치가 [분실 모드](device-lost-mode.md) 상태인지 확인합니다.
+맵에서 분실하거나 도난당한 iOS 장치의 위치를 가져오려면 **장치 찾기** 작업을 사용합니다. 장치는 감독 모드 상태여야 합니다. 이 작업을 사용하기 전에 장치가 [분실 모드](device-lost-mode.md) 상태인지 확인합니다.
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 

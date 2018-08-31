@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212038"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903146"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android 엔터프라이즈 키오스크 장치 등록 설정
 
@@ -56,7 +56,7 @@ Android 키오스크 관리를 설정하려면 다음 단계를 따릅니다.
 1. [Intune 포털](https://portal.azure.com)로 이동하여 **장치 등록** > **Android 등록** > **키오스크 및 작업 장치 등록**을 선택합니다.
 2. **만들기**를 선택하고 필수 필드를 작성합니다.
     - **이름**: 프로필을 동적 장치 그룹에 할당할 때 사용할 이름을 입력합니다.
-    - **토큰 만료 날짜**: 토큰이 만료되는 날짜입니다. Google은 최대 30일을 적용합니다.
+    - **토큰 만료 날짜**: 토큰이 만료되는 날짜입니다. Google은 최대 90일을 적용합니다.
 3. **만들기**를 선택하여 프로필을 저장합니다.
 
 ### <a name="create-a-device-group"></a>장치 그룹 만들기
@@ -110,7 +110,7 @@ NFC를 지원하는 Android 5.1 이상 장치의 경우 특별한 형식의 NFC 
 
 ### <a name="enroll-by-using-a-token"></a>토큰을 사용하여 등록
 
-Android 6 이상 장치의 경우 토큰을 사용하여 장치를 등록할 수 있습니다.
+Android 6 이상 장치의 경우 토큰을 사용하여 장치를 등록할 수 있습니다. **aft#setup** 등록 메서드를 사용하는 경우 Android 6.1 이상 버전에서는 QR 코드 검사를 활용할 수도 있습니다.
 
 1. 초기화 장치를 켭니다.
 2. **시작** 화면에서 언어를 선택합니다.
@@ -125,6 +125,9 @@ Android 6 이상 장치의 경우 토큰을 사용하여 장치를 등록할 수
 ### <a name="enroll-by-using-a-qr-code"></a>QR 코드를 사용하여 등록
 
 Android 7 및 이상 장치에서는 등록 프로필에서 QR 코드를 스캔하여 장치를 등록할 수 있습니다.
+
+> [!Note]
+> 브라우저 확대/축소로 인해 장치가 QR 코드를 검사할 수 없게 될 수 있습니다. 브라우저를 더 확대/축소시키면 문제가 해결됩니다.
 
 1. Android 장치에서 QR 읽기를 시작하려면 초기화 후 표시되는 첫 번째 화면을 여러 번 누릅니다.
 2. Android 7 및 8 장치의 경우 QR reader를 설치하라는 메시지가 표시됩니다. Android 9 이상 장치에는 이미 QR reader가 설치되어 있습니다.

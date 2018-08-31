@@ -64,7 +64,7 @@
 ### [iOS 장치를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [회사 포털 설치 및 로그인](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS 장치 등록](enroll-your-device-in-intune-ios.md)
-### [장치 등록 프로그램 iOS 장치 등록](enroll-your-device-dep-ios.md)
+### [조직 제공 iOS 장치 등록](enroll-your-device-dep-ios.md)
 
 ### [장치에서 관리되는 앱 사용](use-managed-apps-on-your-device-ios.md)
 ### [암호 설정 또는 변경](set-or-change-your-passcode-ios.md)
@@ -103,7 +103,7 @@
 ## [macOS 장치 사용](using-your-macos-device-with-intune.md)
 ### [macOS 장치를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS 장치 등록](enroll-your-device-in-intune-macos-cp.md)
-### [회사에서 제공한 macOS 장치 등록](enroll-company-device-macos.md)  
+### [조직 제공 macOS 장치 등록](enroll-company-device-macos.md)  
 ### [macOS 장치 등록 취소](unenroll-your-device-from-intune-macos.md)  
 ### [macOS의 일반적인 문제 해결](troubleshoot-your-device-macos.md)
 #### [내 macOS 버전이 아직 지원되지 않음](your-macos-version-isnt-yet-supported.md)

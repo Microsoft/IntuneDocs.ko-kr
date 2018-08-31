@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3b835f9fb2c1f7695919fa7d7f237c3989bd470
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: cf1b47b578c5abe0051b94c9f4c2127cd48f0e76
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001930"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092280"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 장치 등록 프로그램을 통해 iOS 장치를 자동으로 등록
 
@@ -110,7 +110,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 1. Azure Portal의 Intune에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택합니다.
 2. 토큰을 선택하고 **프로필**을 선택한 다음 **프로필 만들기**를 선택합니다.
 
-    ![프로필 만들기 스크린샷](./media/device-enrollment-program-enroll-ios/image04.png)
+    ![프로필 스크린샷을 만듭니다.](./media/device-enrollment-program-enroll-ios/image04.png)
 
 3. **프로필 만들기**에서 관리 목적으로 프로필의 **이름** 및 **설명**을 입력합니다. 사용자는 이러한 세부 정보를 볼 수 없습니다. 이 **이름** 필드를 사용하여 Azure Active Directory에 동적 그룹을 만들 수 있습니다. 이 등록 프로필로 장치를 할당하기 위해 프로필 이름을 사용하여 enrollmentProfileName 매개 변수를 정의합니다. [Azure Active Directory 동적 그룹](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)에 대해 자세히 알아보세요.
 
@@ -129,9 +129,17 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
     > 다음 중 하나를 수행하려면 **Authenticate with Company Portal instead of Apple Setup Assistant**(Apple 설정 도우미 대신 회사 포털로 인증)를 **예**로 설정합니다.
     >    - 다단계 인증 사용
     >    - 처음 로그인할 때 암호를 변경해야 하는 사용자에게 메시지 표시
-    >    - 등록 중에 만료된 암호를 재설정하도록 사용자에게 메시지 표시. Apple 설정 도우미로 인증하는 경우에는 지원되지 않습니다.
+    >    - 등록 중에 만료된 암호를 재설정하도록 사용자에게 요청
+    >
+    > Apple 설정 도우미를 사용하여 인증하는 경우에는 지원되지 않습니다.
 
-6. **장치 관리 설정**을 선택한 다음 이 프로필을 사용하는 장치를 감독할지 여부를 선택합니다.
+
+6. **Apple 설치 도우미 대신 회사 포털을 통한 인증**을 위해 **예**를 선택한 경우, VPP(볼륨 구매 프로그램) 토큰을 사용하여 사용자가 Apple ID를 제공하지 않고 회사 포털을 장치에 자동으로 설치할 수 있습니다. VPP 토큰을 사용하여 회사 포털을 설치하려면 **VPP로 회사 포털 설치** 아래에 토큰을 선택합니다. 토큰이 만료되지 않았고 회사 포털 앱에 대한 충분한 장치 라이선스가 있는지 확인합니다. 토큰이 만료되거나 라이선스가 부족한 경우 Intune은 대신 App Store 회사 포털을 설치하고 Apple ID에 대한 메시지를 표시합니다.
+
+    ![vpp를 사용한 회사 포털 설치의 스크린샷.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
+
+
+7. **장치 관리 설정**을 선택한 다음 이 프로필을 사용하는 장치를 감독할지 여부를 선택합니다.
 
     ![장치 관리 설정 스크린샷](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -145,37 +153,42 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
      > [!NOTE]
      > 감독 없이 등록된 장치는 Apple Configurator를 사용하여 감독으로만 다시 설정할 수 있습니다. 이러한 방식으로 장치를 다시 설정하려면 iOS 장치를 Mac에 USB 케이블로 연결해야 합니다. 이에 대해 [Apple Configurator 문서](http://help.apple.com/configurator/mac/2.3)에서 자세히 알아보세요.
 
-7. 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할지 여부를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 장치 등록 후 장치를 초기화하지 않고는 이 설정을 변경할 수 없습니다. 이러한 장치는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
+8. 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할지 여부를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 장치 등록 후 장치를 초기화하지 않고는 이 설정을 변경할 수 없습니다. 이러한 장치는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
 
-8. 이 프로필을 사용하는 장치가 **컴퓨터와 동기화**할 수 있도록 할지 여부를 선택합니다. **인증서로 Apple Configurator 허용**을 선택한 경우 **Apple Configurator 인증서** 아래에서 인증서를 선택해야 합니다.
+9. 이 프로필을 사용하는 장치가 **컴퓨터와 동기화**할 수 있도록 할지 여부를 선택합니다. **인증서로 Apple Configurator 허용**을 선택한 경우 **Apple Configurator 인증서** 아래에서 인증서를 선택해야 합니다.
 
-9. 이전 단계에서 **인증서로 Apple Configurator 허용**을 선택한 경우 가져올 Apple Configurator 인증서를 선택합니다.
+10. 이전 단계에서 **인증서로 Apple Configurator 허용**을 선택한 경우 가져올 Apple Configurator 인증서를 선택합니다.
 
-10. **확인**을 선택합니다.
+11. **확인**을 선택합니다.
 
-11. **설정 도우미 설정**을 선택하여 다음 프로필 설정을 구성합니다. ![설정 도우미 사용자 지정](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+12. **설정 도우미 설정**을 선택하여 다음 프로필 설정을 구성합니다. ![설정 도우미 사용자 지정](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
-
-    |                 Setting                  |                                                                                               설명                                                                                               |
+    | 부서 설정 | 설명 |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |     <strong>부서 이름</strong>     |                                                             정품 인증을 하는 동안 사용자가 <strong>구성 정보</strong>를 탭하면 표시됩니다.                                                              |
-    |    <strong>부서 전화</strong>     |                                                          정품 인증을 하는 동안 사용자가 <strong>도움이 필요하세요?</strong> 단추를 클릭하면 표시됩니다.                                                          |
-    | <strong>설정 도우미 옵션</strong> |                                                     다음 선택적 설정은 나중에 iOS <strong>설정</strong> 메뉴에서 지정할 수 있습니다.                                                      |
-    |        <strong>암호</strong>         | 정품 인증을 하는 동안 암호를 묻는 메시지가 표시됩니다. 장치가 보안된 상태가 아니거나 다른 방식으로 액세스가 제어된 상태(즉, 하나의 앱만 사용할 수 있도록 장치를 제한하는 키오스크 모드)가 아니면 항상 암호를 요구합니다. |
-    |    <strong>위치 서비스</strong>    |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 서비스를 확인하는 메시지가 표시됩니다.                                                                  |
-    |         <strong>복원</strong>         |                                                                이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 iCloud 백업을 확인하는 메시지가 표시됩니다.                                                                 |
-    |   <strong>iCloud 및 Apple ID</strong>   |                         이 옵션을 사용하도록 설정하면 설정 도우미에서 Apple ID로 로그인하라는 메시지가 표시되고, 앱 및 데이터 화면을 통해 iCloud 백업에서 장치를 복원할 수 있습니다.                         |
-    |  <strong>계약조건</strong>   |                                                   이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 Apple 사용 약관에 동의하라는 메시지가 표시됩니다.                                                   |
-    |        <strong>터치 ID</strong>         |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.                                                                 |
-    |        <strong>Apple Pay</strong>        |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.                                                                 |
-    |          <strong>확대/축소</strong>           |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.                                                                 |
-    |          <strong>Siri</strong>           |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.                                                                 |
-    |     <strong>진단 데이터</strong>     |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.                                                                 |
+    | <strong>부서 이름</strong> | 정품 인증을 하는 동안 사용자가 <strong>구성 정보</strong>를 탭하면 표시됩니다. |
+    |    <strong>부서 전화</strong>     |                                                          정품 인증을 하는 동안 사용자가 <strong>도움이 필요하세요?</strong> 단추를 클릭하면 표시됩니다. |
+
+  사용자가 설정할 때 장치에 다양한 설치 도우미 화면을 표시하거나 숨기도록 선택할 수 있습니다.
+  - **숨기기**를 선택하면 설정 중에 화면이 표시되지 않습니다. 장치를 설정한 후에도 사용자는 여전히 **설정** 메뉴로 이동하여 기능을 설정할 수 있습니다.
+  - **표시**를 선택하면 설정 중에 화면이 표시됩니다. 사용자는 경우에 따라 작업을 수행하지 않고 화면을 건너뛸 수 있습니다. 그러나 나중에 장치의 **설정** 메뉴로 이동하여 기능을 설정할 수 있습니다. 
+
+| 설치 도우미 화면 설정 | **표시**를 선택하면 설정 중에 장치는... |
+    |------------------------------------------|------------------------------------------|
+    | <strong>암호</strong> | 사용자에게 암호를 묻는 메시지를 표시합니다. 장치가 보안된 상태가 아니거나 다른 방식으로 액세스가 제어된 상태(즉, 하나의 앱만 사용할 수 있도록 장치를 제한하는 키오스크 모드)가 아니면 항상 암호를 요구합니다. |
+    | <strong>위치 서비스</strong> | 사용자에게 해당 위치를 묻는 메시지를 표시합니다. |
+    | <strong>복원</strong> | **앱 및 데이터** 화면을 표시합니다. 이 화면은 장치를 설치할 때 iCloud Backup에서 데이터를 복원하거나 전송하는 옵션을 제공합니다. |
+    | <strong>iCloud 및 Apple ID</strong> | 사용자에게 **Apple ID**로 로그인하고 **iCloud**를 사용할 수 있는 옵션을 제공합니다.                         |
+    | <strong>계약조건</strong> | 사용자가 Apple의 사용 약관에 동의해야 합니다. |
+    | <strong>터치 ID</strong> | 사용자에게 장치에 대한 지문 식별을 설정하는 옵션을 제공합니다. |
+    | <strong>Apple Pay</strong> | 사용자에게 장치에서 Apple Pay를 설정하는 옵션을 제공합니다. |
+    | <strong>확대/축소</strong> | 장치를 설정할 때 디스플레이를 확대/축소하는 옵션을 사용자에게 제공합니다. |
+    | <strong>Siri</strong> | 사용자에게 Siri를 설정할 수 있는 옵션을 제공합니다. |
+    | <strong>진단 데이터</strong> | 사용자에게 **진단** 화면을 표시합니다. 이 화면은 사용자에게 진단 데이터를 Apple에 전송하는 옵션을 제공합니다. |
 
 
-12. **확인**을 선택합니다.
+13. **확인**을 선택합니다.
 
-13. 프로필을 저장하려면 **만들기**를 선택합니다.
+14. 프로필을 저장하려면 **만들기**를 선택합니다.
 
 ## <a name="sync-managed-devices"></a>관리되는 장치 동기화
 이제 Intune에 장치 관리 권한이 있으므로 Intune을 Apple과 동기화하여 Azure 포털의 Intune에서 관리되는 장치를 확인할 수 있습니다.
@@ -195,7 +208,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 1. Azure Portal의 Intune에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택한 다음 목록에서 토큰을 선택합니다.
 2. **장치**를 선택하고 목록에서 장치를 선택한 다음 **프로필 할당**을 선택합니다.
-3. **프로필 할당**에서 장치의 프로필을 선택한 다음 **할당**을 선택합니다.
+3. **프로필 할당** 아래에서 장치의 프로필 > **할당**을 선택합니다.
 
 ### <a name="assign-a-default-profile"></a>기본 프로필 할당
 
