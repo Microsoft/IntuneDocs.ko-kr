@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 2f1b71513ad5e22f62c783ac8d305acb9eac4cca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c377c2a4e9640443eb38a85b2e1806c9d9e64a82
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021783"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147196"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>USB 디버깅 옵션을 해제해야 함
 
@@ -30,4 +30,4 @@ USB 디버깅을 해제하려면 **설정** > **개발자 옵션**으로 이동�
 
 **USB 디버깅**을 해제한 후에는 몇 분 정도 기다려야 Android 장치를 사용하여 평소처럼 회사 또는 학교 데이터에 액세스할 수 있습니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

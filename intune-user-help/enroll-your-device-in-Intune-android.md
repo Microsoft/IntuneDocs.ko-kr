@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a48e43a024358b35c88014d2b4a05f2245f13a3f
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 5eb00734c8095202b5b633f1db105a42d40e4567
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449839"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149038"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Intune에서 Android 장치 등록
 
@@ -94,7 +94,7 @@ ms.locfileid: "34449839"
 
     이 작업은 보안상 수행되는 작업임을 염두에 두어야 합니다. 회사 지원팀은 이유 없이 사용자의 개인 정보를 침해하거나 정보를 지우지는 않지만 회사 데이터가 안전하게 유지되는지 확인하려고 합니다.
 
-    Microsoft는 이 메시지를 규제하지 않습니다. 또한 이러한 표현이 다소 극단적으로 보일 수도 있음을 알고 있습니다. 하지만 회사 포털에서 조직과 관련된 제한 사항 및 액세스 권한만 표시하는 것은 적절한 방법이 아닙니다. 모든 작업이 이 화면에서 한 번에 제공됩니다. 개별 조직의 사용 관련 질문이 있는 경우 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)의 연락처 정보를 사용하여 회사 지원팀에 자세한 내용을 문의하세요.
+    Microsoft는 이 메시지를 규제하지 않습니다. 또한 이러한 표현이 다소 극단적으로 보일 수도 있음을 알고 있습니다. 하지만 회사 포털에서 조직과 관련된 제한 사항 및 액세스 권한만 표시하는 것은 적절한 방법이 아닙니다. 모든 작업이 이 화면에서 한 번에 제공됩니다. 개별 조직의 사용 관련 질문이 있는 경우 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)의 연락처 정보를 사용하여 회사 지원팀에 자세한 내용을 문의하세요.
 
 11. 지시에 따라 PIN이나 암호를 입력합니다. 이미 이 장치에서 암호나 PIN을 설정했다면 이 화면에 표시되지 않거나 새 PIN이나 암호를 입력할 필요가 없습니다.
 
@@ -131,4 +131,4 @@ ms.locfileid: "34449839"
 
 Intune에서 장치를 등록하는 동안 오류가 발생할 경우 [회사 지원팀에 등록 오류를 보낼](send-enrollment-errors-to-your-it-admin-android.md) 수 있습니다.
 
-여전히 도움이 필요하세요? 회사 지원팀에 문의하거나(연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog) 확인) <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 팀</a>으로 메일을 보내세요.
+여전히 도움이 필요하세요? 회사 지원팀에 문의하거나(연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980) 확인) <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 팀</a>으로 메일을 보내세요.

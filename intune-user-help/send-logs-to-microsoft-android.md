@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8eaaf103802ad2cf51d18d9fab3947622e9c96c3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dacadd92ebb29bb2295d94aebb7922bb62226e2f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020013"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149399"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>회사 포털 개발자에게 Android 장치에 대한 로그 보내기
 
@@ -46,4 +46,4 @@ ms.locfileid: "31020013"
 
 Android 담당 회사 포털 팀에게 직접 연락하려면 <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>으로 이메일을 보냅니다. 
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

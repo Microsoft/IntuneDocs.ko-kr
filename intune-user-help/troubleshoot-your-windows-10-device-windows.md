@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018178"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150699"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 장치 등록 문제 해결
 [Intune에서 Windows 10 Mobile 또는 Windows 10 데스크톱 장치 등록](enroll-your-w10-phone-or-w10-pc-windows.md)의 단계를 수행했지만 여전히 회사 또는 학교 전자 메일/파일에 액세스할 수 없다면 다음 문제 해결 단계를 시도하세요.
@@ -59,6 +59,6 @@ ms.locfileid: "31018178"
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>“회사 또는 학교 계정 설정”이 표시되는 경우 따라야 하는 문제 해결 절차
 
-<strong>입력한 사용자 이름과 일치하는 관리 끝점을 자동 검색할 수 없습니다.라는 메시지가 표시되면, 사용자 이름을 확인하고 다시 시도하세요. 관리 끝점의 URL을 알면 입력하세요.</strong>이면 사용자 이름과 암호를 다시 입력해야 합니다. 여전히 작동하지 않으면 <strong>관리 끝점</strong> 텍스트 상자에 제공해야 하는 웹 사이트를 회사 지원팀에 확인하세요. 이 웹 사이트는 <strong>www.yourcompany.onmicrosoft.com</strong>과 같을 가능성이 큽니다.
+<strong>입력한 사용자 이름과 일치하는 관리 엔드포인트를 자동 검색할 수 없습니다.라는 메시지가 표시되면, 사용자 이름을 확인하고 다시 시도하세요. 관리 엔드포인트의 URL을 알면 입력하세요.</strong>이면 사용자 이름과 암호를 다시 입력해야 합니다. 여전히 작동하지 않으면 <strong>관리 엔드포인트</strong> 텍스트 상자에 제공해야 하는 웹 사이트를 회사 지원팀에 확인하세요. 이 웹 사이트는 <strong>www.yourcompany.onmicrosoft.com</strong>과 같을 가능성이 큽니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

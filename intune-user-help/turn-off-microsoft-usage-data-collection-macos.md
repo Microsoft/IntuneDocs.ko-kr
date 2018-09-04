@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 64a3a4710b8841dcc80c159d0622735fdd862e7a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 604c08e771548b9cd071ae87ba9cdcb3f9bb2d3a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031671"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147471"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft 데이터 수집을 끄는 방법
 
@@ -30,4 +30,4 @@ Microsoft는 제품 및 서비스에 대한 특정 데이터를 자동으로 수
 
 macOS 장치에서 사용 데이터 수집을 끄려면 회사 포털 앱을 열고 **회사 포털** 메뉴를 선택합니다. **기본 설정**을 열고 **사용 데이터를 Microsoft에 보내기**에서 **Microsoft가 데이터를 수집하도록 허용** 확인란의 선택을 취소합니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

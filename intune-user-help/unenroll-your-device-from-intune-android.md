@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ec3c0a1c8ce4e04f4d23fb01e7c2525d8f2eed5b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 683b5ec7b07d7c270ea30ac438e7fc839b13d5fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018365"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150347"
 ---
 # <a name="how-to-remove-your-android-device-from-intune"></a>Intune에서 Android 장치를 제거하는 방법
 
@@ -49,4 +49,4 @@ Android용 회사 포털 앱이 장치에 저장하는 모든 데이터를 제�
 -   응용 프로그램에서 앱 데이터 지우기 -> 앱 클릭 -> "데이터 지우기" 단추 클릭
 -   '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal' 폴더 삭제
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

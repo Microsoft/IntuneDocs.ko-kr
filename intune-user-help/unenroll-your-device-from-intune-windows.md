@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481192"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148781"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Intune 관리에서 Windows 장치 제거
 
@@ -82,4 +82,4 @@ Intune에서 Windows 8.1 모바일 장치를 제거하려면 다음 단계를 �
 
 * 회사 포털 앱을 다시 설정합니다. **설정** 앱을 열고 **앱** > **회사 포털** > **고급 옵션** > **초기화**를 선택합니다. 
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

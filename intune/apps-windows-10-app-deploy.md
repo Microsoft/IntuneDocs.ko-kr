@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0bffb0ab4003cc02ceddcd0199b951113ff1e4fd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321752"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347435"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
 현재 Microsoft Intune은 Windows 10 장치에서 다양한 앱 형식 및 배포 시나리오를 지원합니다. Intune에 앱이 추가되면 사용자와 장치에 해당 앱을 할당할 수 있습니다. 다음 정보에서는 지원되는 Windows 10 시나리오와 관련된 자세한 세부 정보를 제공합니다. 또한 Windows에 앱을 배포할 때 참고할 키 정보도 제공합니다. 
 
-기간 업무(LOB) 앱 및 비즈니스용 Microsoft 스토어 앱은 Windows 10 장치에서 지원되는 앱 형식입니다. Windows 앱에 대한 파일 확장명에는 **.msi**, **.appx**, **.appxbundle**, **.msix** 및 **.msixbundle**이 있습니다.  
+기간 업무(LOB) 앱 및 비즈니스용 Microsoft 스토어 앱은 Windows 10 장치에서 지원되는 앱 형식입니다.
 
 > [!Note]
 > 장치 컨텍스트에서 앱을 배포하는 데 필요한 Windows 10 업데이트는 최소 [2018년 5월 23일-KB4100403(OS 빌드 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403)입니다.

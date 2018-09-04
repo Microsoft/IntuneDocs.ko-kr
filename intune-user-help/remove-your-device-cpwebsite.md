@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308860"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150327"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>회사 포털에서 장치 제거
 
-회사나 조직에서 장치를 더 이상 관리하지 않도록 하려면 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 통해 회사 포털에서 장치를 제거할 수 있습니다. 장치를 제거하면 더 이상 회사 포털에 나열되지 않습니다. 또한 조직의 데이터, 앱 및 이메일에 액세스하지 못할 수 있습니다.
+회사나 조직에서 장치를 더 이상 관리하지 않도록 하려면 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 통해 회사 포털에서 장치를 제거할 수 있습니다. 장치를 제거하면 더 이상 회사 포털에 나열되지 않습니다. 또한 조직의 데이터, 앱 및 이메일에 액세스하지 못할 수 있습니다.
 
 장치를 제거하려면:
 
-1. [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)에서 __메뉴__ 단추 ![세 개의 가로 막대가 병렬로 누적된 메뉴 단추의 작은 이미지](/Intune/whats-new/media/CP_hamburger_menu.png)를 탭한 다음 __내 장치__를 선택합니다.
+1. [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 __메뉴__ 단추 ![세 개의 가로 막대가 병렬로 누적된 메뉴 단추의 작은 이미지](/Intune/whats-new/media/CP_hamburger_menu.png)를 탭한 다음 __내 장치__를 선택합니다.
 
    ![화면 왼쪽에 홈, 모든 앱, 내 장치, 기술 지원팀 및 로그 아웃 단추가 포함된 확장된 측면 메뉴가 있는 회사 포털 웹 사이트의 이미지](/media/iwp-expanded-sidebar.png)
 
@@ -44,4 +44,4 @@ ms.locfileid: "34308860"
 
 4. 경고 메시지를 읽고 **제거**를 탭하여 회사 포털에서 장치를 제거합니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

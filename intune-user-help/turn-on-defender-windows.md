@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9190282edb8d356d7d43a634d10991a4b4c19c16
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e305848ca77aef49050df382151db75c5b03e2a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018501"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147984"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Windows Defender를 켜서 회사 리소스에 액세스
 
@@ -50,4 +50,4 @@ ms.locfileid: "31018501"
 
 **시작**으로 이동하고 **Windows Defender 보안 센터**를 검색하여 바이러스 백신 정의가 최신인지 확인합니다. **보호 업데이트**와 **업데이트 확인**을 선택하여 장치가 최신 바이러스로부터 보호되도록 하십시오. 이 옵션이 표시되지 않으면 [실시간 보호 켜기](turn-on-defender-windows.md#turn-on-real-time-protection)의 단계를 수행하십시오.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. IT 관리자의 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. IT 관리자의 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a3e0ffd583d1709a9127dc346d0271578820a10e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 874007e161f4271fc4faed9d939046c17e52ac7b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014863"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147304"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>회사 포털 앱을 사용하는 동안 오류가 발생하는 경우
 
@@ -34,4 +34,4 @@ iOS 장치에서 회사 포털 앱을 사용할 때 오류가 표시되면 오�
 
 -   회사 포털 앱에 있는 동안 장치를 흔든 다음, 진단 경고가 표시되면 **메일**을 탭합니다. 장치를 흔들어도 이 경고가 나타나지 않으면 **설정** > **회사 포털**을 열고 **흔들기 제스처** 옵션이 켜져 있는지 확인합니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ab5e424469f0fd83e063db5361fa843b2c6f1e76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1f9bb0fc434b1cba2d9b48f6f8cef4cf6b06e932
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016206"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147321"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Windows 장치를 업데이트해야 함
 
@@ -37,4 +37,4 @@ Windows를 실행하는 컴퓨터의 경우 **운영 체제**를 검색하고 �
 
 Windows 10 및 Windows 8.1의 경우 __검색 창__에 __Windows 버전__을 입력합니다. __Can I help?__(도와드릴까요?)에서 __Windows 버전__을 선택합니다. 버전 번호가 표시됩니다. 이 번호는 __10.0.14393.447__과 같이 표시됩니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

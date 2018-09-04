@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 449413a87c79645240bc18be41fb6e88d4c071f8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ddf075828ca9b9a7d8030a88a2d7f58efbc0e980
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327707"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150125"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS 장치의 문제에 대해 회사 지원팀에 오류 보내기
 경우에 따라 iOS 장치에서 회사 포털 앱을 사용하는 동안 오류가 발생할 수 있습니다. 이 경우 회사의 지원 담당자에게 오류에 대한 세부 정보를 이메일 발송할 수 있습니다. 이러한 세부 정보는 사용자에 대한 문제를 해결하는 데 필요한 컨텍스트를 제공합니다.
@@ -37,4 +37,4 @@ ms.locfileid: "32327707"
 
 -   회사 포털 앱에 있는 동안 장치를 흔든 다음, 진단 경고가 표시되면 **진단 보고서 보내기**를 탭합니다. 장치를 흔들어도 이 경고가 나타나지 않으면 **설정** > **회사 포털**을 열고 **흔들기 제스처** 옵션이 켜져 있는지 확인합니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

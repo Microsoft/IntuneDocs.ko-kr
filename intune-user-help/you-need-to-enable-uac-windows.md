@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8b433a20aaa2ca25f54d051e3bed58989ef9dec7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c9532cc58b392aecb821ae38e8e4d284d971b7d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017039"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146302"
 ---
 # <a name="how-to-enable-user-access-control"></a>사용자 계정 컨트롤을 사용하도록 설정하는 방법
 
@@ -34,4 +34,4 @@ ms.locfileid: "31017039"
 2. **보안 및 유지 관리** > **사용자 계정 컨트롤 설정 변경**을 엽니다.
 3. **컴퓨터 변경 내용에 대한 알림 조건 선택** 페이지에서 슬라이더를 **항상 알림**에 가장 가까운 맨 위 두 단계 중 하나로 이동합니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

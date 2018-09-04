@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ff8a2650b0264662084a4bf3a8186808f5980faf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 40cc6ec2daab92a226051e2d9bc11d7ac0fb105b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013979"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150466"
 ---
 # <a name="you-need-to-update-your-android-device-to-install-the-outlook-app"></a>Outlook 앱을 설치하려면 Android 장치를 업그레이드해야 함
 
@@ -36,4 +36,4 @@ Outlook 앱을 통해 수백만 명의 사용자가 [Android](https://play.googl
 
 **설정**으로 이동한 후 **업데이트** 또는 **시스템 업데이트** 옵션을 사용합니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

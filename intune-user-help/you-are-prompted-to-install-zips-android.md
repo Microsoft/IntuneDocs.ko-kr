@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: bf6b674750eeaf857fdb7595963d399662893c4d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: be4b91eaaa2187678fb4325a93dc561df08225b7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753960"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150398"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Android 장치에 Zimperium zIPS 설치
 
@@ -58,4 +58,4 @@ ms.locfileid: "30753960"
 
 제어할 수 없는 기술 문제로 인해 설치가 실패할 수 있습니다. 이런 경우에 [Play 스토어에서 수동으로](https://play.google.com/store/apps/details?id=com.zimperium.zips) Zimperium zIPS를 설치해 보세요.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6c4e89524047b99b9c9eb3f0e65fe482a8ae85a2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb7bf238fab91495a8c9dd498be4918669aa2579
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016648"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150521"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>등록할 때 장치를 식별해야 하는 경우
 
@@ -32,4 +32,4 @@ Intune에 iOS 장치를 등록하는 동안 장치를 식별하라는 화면이 
 2. **계속**을 탭합니다.
 3. Intune에서 장치가 등록되었음을 확인할 수 있도록 장치 일련 번호의 마지막 4자를 입력합니다. 일련 번호를 찾으려면 [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md)(장치에서 일련 번호를 찾으려면 어떻게 하나요?)를 참조하세요.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

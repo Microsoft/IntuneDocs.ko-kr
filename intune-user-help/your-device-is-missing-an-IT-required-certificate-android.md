@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b12dcafa4ff7d45dd1d41c0311a2658b08acf12e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 19128e9de06239fb82266654fe038b4be9ce7d41
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019860"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149784"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android 장치에는 회사 지원팀에 필요한 인증서가 누락되었습니다.
 
@@ -37,9 +37,9 @@ ms.locfileid: "31019860"
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>회사 또는 학교 PC를 확인하여 누락된 인증서를 식별합니다.
 
-1. PC에서 Internet Explorer를 엽니다. 이 용도로 사용할 PC가 없으면 회사 지원팀에 문의하세요. 회사 지원팀의 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 확인하세요.
+1. PC에서 Internet Explorer를 엽니다. 이 용도로 사용할 PC가 없으면 회사 지원팀에 문의하세요. 회사 지원팀의 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 확인하세요.
 
-2. [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)로 이동한 후 회사 또는 학교 자격 증명으로 로그인합니다.
+2. [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)로 이동한 후 회사 또는 학교 자격 증명으로 로그인합니다.
 
 3. 브라우저의 주소 표시줄 맨 오른쪽에서 다음 스크린샷과 같이 자물쇠 모양의 기호를 선택합니다.
 
@@ -71,4 +71,4 @@ ms.locfileid: "31019860"
 
 7. 회사 포털 앱을 다시 엽니다. 이제 회사 포털 앱에 로그인할 수 있습니다. 도움이 필요하면 회사 지원팀에 문의하세요.
 
-앞서 표시된 것과 동일한 "인증서 없음" 메시지가 표시되고 해당 절차를 이미 진행했다면 회사 지원팀에서 설치하기 위해 필요한 다른 인증서가 있을 수 있습니다. 도움이 필요하면 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)에 제공되는 연락처 정보를 사용하여 회사 지원팀에 문의하세요.
+앞서 표시된 것과 동일한 "인증서 없음" 메시지가 표시되고 해당 절차를 이미 진행했다면 회사 지원팀에서 설치하기 위해 필요한 다른 인증서가 있을 수 있습니다. 도움이 필요하면 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에 제공되는 연락처 정보를 사용하여 회사 지원팀에 문의하세요.

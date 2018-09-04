@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915497"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146522"
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>회사 포털 앱의 회사 지원팀에 Windows 10에 대한 로그 보내기
 
@@ -39,4 +39,4 @@ Windows 10 장치에서 회사 포털 앱을 사용할 때 오류가 표시되�
 
 회사 지원팀이 확인한 문제를 보다 쉽게 해결할 수 있도록 [설정 앱에서 로그](send-logs-to-your-it-admin-settings-windows.md)를 전송해야 할 수도 있습니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

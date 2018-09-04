@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c61a4807e55c3af5038c67c05157b9ad14002347
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018552"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150755"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>장치에 필요한 인증서가 없습니다.
 
@@ -40,4 +40,4 @@ Android 장치가 Intune에 등록되어 있지 않고 회사 지원팀에 필�
 
 이 작업이 제대로 진행되지 않을 경우 회사 지원팀에서는 [추가 보안을 위해 두 번째 인증서를 설치하도록 요청](your-device-is-missing-an-IT-required-certificate-android.md)할 수 있습니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

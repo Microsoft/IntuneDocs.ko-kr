@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9805dfdba67299a5a1cd9433bbc061f8bd96bc9e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 8bc441dd07191ec3eb1280330be380ca425f53cc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190522"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150849"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>관리되는 macOS 장치를 사용하여 올바른 사람에게 오류 제출
 
@@ -48,4 +48,4 @@ ms.locfileid: "34190522"
 2.  **도움말** 메뉴 > **진단 보고서 보내기**를 클릭합니다.  로그가 업로드된 후 인시던트 ID가 표시됩니다. ID를 복사하고 저장합니다.
 3.  <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">이 템플릿</a>을 사용하여 Microsoft에 메일을 보냅니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

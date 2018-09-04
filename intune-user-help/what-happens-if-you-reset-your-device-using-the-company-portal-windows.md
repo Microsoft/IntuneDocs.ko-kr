@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755490"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149126"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>회사 포털을 사용하여 Windows 장치를 다시 설정하면 어떻게 되나요?
 
@@ -34,4 +34,4 @@ ms.locfileid: "30755490"
 |장치가 회사 전자 메일에만 액세스할 수 있습니다.|**Windows Phone 8.1**<br />장치가 더 이상 회사 포털에 나타나지 않으며, 회사 메일 계정 및 저장하지 않은 메일이 삭제됩니다.<br /><br />**Windows 7 또는 Windows Vista**<br />Windows 7 이전 버전을 실행하며 메일 전용으로 사용되는 컴퓨터는 원래대로 복원할 수 없습니다.<br /><br />**Windows 8.1 및 Windows 8**<br />장치가 더 이상 회사 포털에 나타나지 않으며, 회사 메일 계정 및 저장하지 않은 메일이 삭제됩니다.|
 |PC 및 노트북|**Windows 8.1 및 Windows 8**<br />Windows 8 또는 Windows 8.1을 실행하며 메일 전용이 아닌 컴퓨터는 원래대로 복원할 수 없습니다.<br /><br />**Windows 7 또는 Windows Vista**<br />Windows 7 이전 버전을 실행하는 컴퓨터는 원래대로 복원할 수 없습니다.|
 
-질문이 있다면 회사 지원팀에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+질문이 있다면 회사 지원팀에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6395dc0d14b8947093d53865eb1d97f6ef56db25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017294"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147115"
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Intune에서 Windows 10 장치 등록
 
@@ -51,4 +51,4 @@ Microsoft Intune에 장치를 등록하면 Windows 10 장치를 사용하여 메
 3.  __장치 정보__ 아래에서 __자세히__를 누릅니다. 장치에 대한 정보 목록이 표시됩니다. 이 목록에서 __버전__을 찾습니다.        
 4.  버전이 __1607 이상인 경우__ [이 단계를 따릅니다](enroll-your-w10-device-access-work-or-school.md). 버전이 __1511 이하__인 경우 [이 단계](enroll-your-w10-device-your-account.md)를 계속 진행합니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. IT 관리자의 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. IT 관리자의 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

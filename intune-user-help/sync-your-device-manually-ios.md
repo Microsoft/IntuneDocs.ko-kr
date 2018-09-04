@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a896e4a86cbeaacc07bdb4a32606a67b0049e3e1
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e31eacb0d106fa7200275fcc369a2ea22cf36219
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30756014"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147270"
 ---
 # <a name="sync-your-ios-device-manually"></a>수동으로 iOS 장치 동기화
 
@@ -40,5 +40,5 @@ ms.locfileid: "30756014"
 
    ![사용자가 설정 확인을 클릭한 후 로드 중인 막대를 표시하는 장치 세부 정보의 스크린샷입니다.](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.
 

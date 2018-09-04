@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fb2f225d47d1589e7bccbafc4a23f3cecec12897
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2bd36a0327472f24a3a99b7975e736c9fa5385eb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018773"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149066"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>올바른 암호로 장치의 안전 강화
 
@@ -46,4 +46,4 @@ Windows 장치가 회사 지원팀의 암호 정책을 준수하지 않는 경�
 3. **새 암호** 상자에 새 암호를 입력한 후 **암호 확인** 상자에 해당 암호를 다시 입력합니다.
 4. **완료**를 선택합니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

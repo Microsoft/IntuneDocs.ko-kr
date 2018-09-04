@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 085d6c9e21cff3ef79097ac0cc2e3a2151c5b391
-ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
+ms.openlocfilehash: 5d77a4c2b5d55a3cd6086af61de0804afc3e5245
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33927324"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149621"
 ---
 # <a name="install-apps-on-your-device"></a>장치에 앱 설치
 Windows용 회사 포털 앱에서 장치에 앱을 설치합니다.
@@ -41,4 +41,4 @@ Windows용 회사 포털 앱에서 장치에 앱을 설치합니다.
 
  회사의 크기에 따라 회사 포털에서 다운로드할 수 있는 여러 버전의 Office가 있을 수 있습니다. Windows 장치용 Office 제품군에 대한 자세한 내용은 [Windows 장치에 Office 365 설치](./install-office-windows.md)를 참조하세요.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

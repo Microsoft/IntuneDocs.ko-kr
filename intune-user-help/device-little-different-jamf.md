@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 345b62c115525fb3be2a2bcfdffc5388df7417af
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9e6935dd5f25e14a5cef44d899c647d2927ebbbb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751750"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147080"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Jamf에서 관리하는 macOS 장치에서 작업 수행
 
@@ -34,4 +34,4 @@ __“AccountNotOnboarded” 또는 “장치가 이미 등록되어 있습니다
 
 회사 포털 앱을 여는 동안 “AccountNotOnboarded”라는 메시지가 나타나는 경우 회사 포털 앱을 종료하고 **응용 프로그램** > **셀프 서비스**로 이동해야 합니다. 사용자 회사에 설치해야 하는 장치 등록 정책이 있습니다. 정책을 클릭하여 설치한 다음 회사 포털을 다시 엽니다.
 
-여전히 도움이 필요하세요? 회사 지원팀과 확인하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)에서 찾을 수 있습니다.
+여전히 도움이 필요하세요? 회사 지원팀과 확인하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.

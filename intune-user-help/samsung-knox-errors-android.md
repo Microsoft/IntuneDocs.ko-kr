@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 1ce260b010658ade6c78361b980ca928a992d113
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 235356e88dc2ba25b789ebe262c1ae9b32840793
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751444"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150888"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Samsung Knox 장치의 일반적인 문제 해결
 
@@ -51,4 +51,4 @@ Samsung Knox 장치에서 문제 해결을 통해 해결할 수 있는 문제가
 |---|---|
 |**Samsung Knox 활성화 오류** - Samsung Knox 라이선스를 활성화할 수 없습니다. 절전 모드가 켜져 있기 때문일 수 있습니다. 장치 설정에서 절전 모드를 끈 후 다시 시도하세요. |장치의 전원 설정이 회사 리소스를 사용하는 데 적합하지 않을 수 있습니다. [절전 모드 설정](power-saving-mode-android.md)에 대해 자세히 알아보세요.|
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

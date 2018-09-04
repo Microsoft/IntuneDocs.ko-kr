@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547491"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148800"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Intune에서 iOS 장치 제거
 
@@ -74,4 +74,4 @@ Intune에서 장치를 제거하려면 다음 단계를 따르거나 이 비디�
 -   **키 집합**: 사용자 장치는 키 집합에 로그인을 위해 사용된 암호 및 기타 정보를 저장합니다. Microsoft 앱은 Microsoft Outlook 및 Microsoft Authenticator를 포함해 장치에 있는 모든 Microsoft 개발 앱에서 로그인 정보를 공유합니다. Apple 분석처럼 이 정보는 장치를 출하 시 설정으로 다시 설정해야만 제거할 수 있습니다. 이렇게 하면 장치에서 모든 개인 정보를 지웁니다. 이를 수행하려면 **설정** > **일반** > **다시 설정** > **모든 콘텐츠 및 설정 지우기**를 차례로 엽니다.
 
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

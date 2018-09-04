@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0edd35aa1b202b9494c31d91a0ca5584f1cc251
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: db65c33fe90497ccb511f18c8668a876c0d352fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755269"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146402"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>iOS 장치의 일반적인 문제 해결
 
-iOS 장치에서 문제 해결을 통해 해결할 수 있는 문제가 발생하는 경우가 있습니다. 먼저 직접 해결해 볼 수 있는 몇 가지 일반적인 문제는 다음과 같습니다. 좀 더 복잡한 문제의 경우 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)에 있는 연락처 정보를 통해 회사 지원팀에 문의하는 것이 좋습니다.
+iOS 장치에서 문제 해결을 통해 해결할 수 있는 문제가 발생하는 경우가 있습니다. 먼저 직접 해결해 볼 수 있는 몇 가지 일반적인 문제는 다음과 같습니다. 좀 더 복잡한 문제의 경우 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에 있는 연락처 정보를 통해 회사 지원팀에 문의하는 것이 좋습니다.
 
 - [손상된 iOS 장치를 다시 연결해야 함](how-to-reconnect-a-compromised-ios-device.md)
 - [회사 지원팀에 오류를 보내야 함](send-errors-to-your-it-admin-ios.md)

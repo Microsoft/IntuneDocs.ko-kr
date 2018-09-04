@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836930"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313261"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune 장치 관리란?
 
@@ -37,7 +37,7 @@ IT 관리자의 경우 관리되는 장치가 위험으로부터 해당 데이�
    - **개요**는 등록된 장치에 대한 시각적 스냅숏을 표시하고 또한 얼마나 많은 장치가 Android, iOS 등을 포함한 다른 플랫폼을 사용하는지를 표시합니다.
    - **모든 장치** - 관리하는 등록된 장치의 목록을 표시합니다.
 
-     **내보내기** 기능을 사용하여 10,000개(Internet Explorer) 또는 30,000개(Microsoft Edge, Chrome)씩 늘어나도록 모든 장치의 .csv 목록을 만듭니다.
+     **내보내기** 기능을 사용하여 10,000개(Internet Explorer) 또는 30,000개(Edge, Chrome)씩 늘어나도록 모든 장치의 .csv 목록을 만듭니다.
 
      하드웨어 세부 정보, 설치된 앱, 해당 준수 정책 상태 등을 포함해 [해당 장치에 대한 추가 세부 정보 보기](device-inventory.md)하려면 모든 장치를 선택합니다.
 
@@ -55,8 +55,8 @@ IT 관리자의 경우 관리되는 장치가 위험으로부터 해당 데이�
 
 - [장치 인벤토리 보기](device-inventory.md)
 - 다음의 원격 장치 작업을 실행합니다.
-    - [회사 데이터 제거](devices-wipe.md#remove-company-data)
-    - [초기화](devices-wipe.md#factory-reset)
+    - [사용 중지](devices-wipe.md#retire)
+    - [초기화](devices-wipe.md#wipe)
     - [원격 잠금](device-remote-lock.md)
     - [암호 초기화](device-passcode-reset.md)
     - [활성화 잠금 무시](device-activation-lock-bypass.md)(iOS만 해당)
