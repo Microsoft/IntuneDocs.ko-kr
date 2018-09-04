@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: e453cf1af0d065a367d636c3e6cc8e8ddd79cfda
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f667564443115ba350cf244009d3509fe8d760d0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327809"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148361"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Android 장치에 SandBlast Mobile Protect를 설치해야 함
 
@@ -58,4 +58,4 @@ ms.locfileid: "32327809"
 
 제어할 수 없는 기술 문제로 인해 설치가 실패할 수 있습니다. 이런 경우에 [Play 스토어에서 수동으로](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) SandBlast Mobile Protect를 설치해 보세요.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

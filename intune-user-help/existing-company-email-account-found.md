@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e5e44f563e0ebfc3685c07fc7792df72dcf32a5b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7d7c6b4f0634fdb2d4c28b897dc5782111ebdec9
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015424"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148243"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>기존 회사 메일 계정 찾음
 
@@ -36,4 +36,4 @@ ms.locfileid: "31015424"
 
 3.  장치에 자동으로 적용 될 새 전자 메일 설정에 대해 잠시 기다립니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. IT 관리자의 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. IT 관리자의 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

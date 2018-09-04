@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d3772ab6a35513125d48c36255e0aa37117b7785
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 404954359541ddaebf69b97bbc91b8083776f3bd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018076"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148507"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Windows 장치의 운영 체제 버전이 아직 지원되지 않는 경우
 
 기술이 빠른 속도로 개발됨에 따라, 사용 중인 장치의 운영 체제 버전을 회사 지원팀이 아직 테스트하지 못했을 수도 있습니다. 즉, 최신 버전의 Windows는 회사의 일부 다른 도구와 연동되지 않을 수도 있습니다. 
 
-이 문제를 해결하려면 회사 지원팀에 문의해야 합니다. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+이 문제를 해결하려면 회사 지원팀에 문의해야 합니다. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.
