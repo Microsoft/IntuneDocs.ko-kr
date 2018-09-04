@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: c96f211f18168c8ae55f0ca2391c6c140caef649
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: b3c374e4ce6baeab8cc6fde3f6c45c63c48e34dd
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138723"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903078"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows AutoPilot을 사용하여 Windows 장치 등록
 Windows AutoPilot은 장치 프로비전을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 장치에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 AutoPilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 장치에 적용할 필요 없이 최종 사용자에게 새 장치를 제공할 수 있습니다. Intune을 사용하여 AutoPilot 장치를 관리하는 경우 장치를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows AutoPilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -72,8 +72,8 @@ AutoPilot 배포 프로필은 AutoPilot 장치를 구성하는 데 사용됩니�
     - **자체 배포(미리 보기)**: 이 프로필을 사용하는 (Windows 10 Insider Preview 빌드 17672 이상) 장치는 장치를 등록하는 사용자와 연결되지 않습니다. 장치를 프로비전하는 데 사용자 자격 증명이 필요하지 않습니다.
 4. **다음으로 Azure AD에 조인** 상자에서 **Azure AD 조인됨**을 선택합니다.
 5. **OOBE(기본 제공 환경)** 를 선택하고, 다음 옵션을 구성한 다음, **저장**을 선택합니다.
-    - **언어(지역)***: 장치에 사용할 언어를 선택합니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
-    - **키보드 자동으로 구성***: **언어(지역)** 을 선택한 경우 키보드 선택 영역 페이지를 건너뜁니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
+    - **언어(지역)**\*: 장치에 사용할 언어를 선택합니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
+    - **키보드 자동으로 구성**\*: **언어(지역)** 을 선택한 경우 키보드 선택 영역 페이지를 건너뜁니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
     - **EULA(최종 사용자 사용권 계약)**: 사용자에게 EULA를 표시할지 여부를 선택합니다(Windows 10 버전 1709 이상).
     - **개인 정보 설정**: 사용자에게 개인 정보 설정을 표시할지 여부를 선택합니다.
     - **사용자 계정 유형**: 사용자 계정 유형이 **관리자** 또는 **표준** 사용자인지 여부를 선택합니다. 

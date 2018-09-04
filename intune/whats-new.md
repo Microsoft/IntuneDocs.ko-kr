@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 08/14/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
-ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
+ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39614516"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092178"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,21 @@ ms.locfileid: "39614516"
 
 -->   
 
+
+## <a name="week-of-august-27-2018"></a>2018년 8월 27일 주
+
+### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP 장치 라이선스를 사용하여 DEP 등록 중 회사 포털 사전 프로비전 <!-- 1608345 -->
+이제 VPP(대량 구매 프로그램) 장치 라이선스를 사용하여 DEP(장비 등록 프로그램) 등록 중 회사 포털을 사전 프로비전할 수 있습니다. 이렇게 하려면 [등록 프로필을 만들거나 편집](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)할 때 회사 포털을 설치하는 데 사용하려는 VPP 토큰을 지정합니다. 토큰이 만료되지 않았고 회사 포털 앱에 대한 충분한 라이선스가 있는지 확인합니다. 토큰이 만료되거나 라이선스가 부족한 경우 Intune은 App Store 회사 포털을 대신 푸시합니다(Apple ID에 대한 메시지를 표시함).
+
+
+## <a name="week-of-august-14-2018"></a>2018년 8월 14일 주
+
+### <a name="macos-support-for-apple-device-enrollment-program----747651---"></a>Apple 장비 등록 프로그램에 대한 macOS 지원 <!-- 747651 -->
+이제 Intune은 macOS 장치를 Apple DEP(장비 등록 프로그램)에 등록할 수 있도록 지원합니다. 자세한 내용은 [Apple 장비 등록 프로그램을 통해 자동으로 macOS 장치 등록](device-enrollment-program-enroll-macos.md)을 참조하세요.
+
 ## <a name="week-of-july-23-2018"></a>2018년 7월 23일 주
 
 ### <a name="app-management"></a>앱 관리
-
-####  <a name="windows-apps-file-extensions----1884873---"></a>Windows 앱 파일 확장명 <!-- 1884873 -->
-이제 Windows 앱에 대한 파일 확장명에는 *.msi*, *.appx*, *.appxbundle*, *.msix* 및 *.msixbundle*이 포함됩니다. **모바일 앱** > **앱** > **추가**를 선택하여 Microsoft Intune에서 앱을 추가할 수 있습니다. **앱 유형**을 선택할 수 있는 **앱 추가** 창이 표시됩니다. 앱 패키지 파일을 업로드할 수 있는 앱 유형을 선택하고 **앱 패키지 파일**을 선택한 다음, 적절한 확장명이 있는 설치 파일을 입력합니다.
 
 #### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>macOS에 대한 LOB(기간 업무) 앱 지원 <!-- 1895847 -->
 Microsoft Intune은 macOS LOB 앱을 **요청** 또는 **등록 시 사용 가능**으로 배포하게 허용합니다. 최종 사용자는 macOS용 회사 포털 또는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 사용하여 **사용 가능**으로 앱을 배포할 수 있습니다.
@@ -1129,6 +1138,16 @@ Intune에서 거부된 앱을 지정할 수 있습니다. 앱이 거부되면 �
 
 ## <a name="notices"></a>알림
 
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>작업 수행: Intune에서 Android 장치 제한 또는 규정 준수 정책 암호 설정을 업데이트하세요.
+Intune은 Android 4.4 이상의 장치에 사용 가능한 암호 유형 "장치 기본값"을 제거합니다. Android 플랫폼과 장치 기본값의 차이로 인해 해당 정책은 종종 장치에서 선택 사항으로 처리됩니다. Android에서 이 설정을 적용할 때 혼동을 없애기 위해 향후 출시될 UI에서 이 설정을 제거할 예정입니다. 
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+- 장치에 암호가 필요한 경우 "장치 기본값"을 사용하는 대신 Android 플랫폼 프로필을 편집하여 필요한 암호 유형을 명확히 밝히는 것이 좋습니다.
+- 최종 사용자가 암호를 만들지 여부를 결정하도록 하려면 "구성되지 않음" 단추를 선택합니다. UI에서 이 설정을 제거할 때 설정이 여전히 설정된 경우, 다음 프로필 편집 시 "장치 기본값" 이외의 값을 선택하라는 메시지가 표시됩니다.
+이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+Android 및 Android 엔터프라이즈 장치 제한 및 규정 준수 정책의 암호 설정을 검토하세요. 이러한 설정은 규정 준수 정책의 시스템 보안 및 장치 제한에 대한 장치 암호 또는 작업 프로필 설정 중 하나에서 나열됩니다. 추가 정보에는 이러한 설정이 구성된 위치에 대한 자세한 정보 및 스크린샷 링크가 있습니다.
+####<a name="additional-information"></a>추가 정보
+https://aka.ms/PasswordSettings 
+
 ### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>변경 계획: Intune에 추가되는 다음 인증에서 암호 변경<!-- 1873216 -->
 9월 서비스 릴리스에서 Intune은 macOS 버전 10.13 이상을 실행하는 장치에 대해 새로 릴리스된 Apple의 **다음 인증에서 암호 변경** 설정을 통합할 계획입니다. 이 설정을 사용하기 전에 MDM 공급자는 장치 암호가 호환되도록 변경되었는지 확인할 수 없습니다. Intune의 구성 및 준수 정책은 다음에 장치 암호가 변경될 때 해당 암호가 준수 상태로 표시되는지만 검증합니다. 이 새로운 Apple 기능이 추가되면 암호가 호환되는 경우에도 macOS 사용자는 암호를 업데이트하라는 요청을 받게 됩니다.
 
@@ -1171,22 +1190,6 @@ Office 365 모바일 앱은 iOS 10 이상에서 지원되므로 OS 또는 장치
 
 **추가 정보**: [Intune이 암호화를 위해 TLS 1.2로 이동](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
-### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>변경 계획: Intune에서 키오스크 구성에 대한 새로운 Windows 10 설정 <!-- 1560072 -->
-Intune Azure Portal에서 Windows 10 1709 이상(RS3 이상) 데스크톱을 구성하는 방법 및 위치를 변경할 예정입니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요? 
-레코드에서는 Windows 10 > 장치 제한 사항 > 키오스크(미리 보기) 설정을 사용한다고 나타냅니다. 5월에 UI에서 Windows 10 > 장치 제한 사항 > 키오스크(사용되지 않음)로 이름이 바뀌어서 더 이상 사용하지 않는 것이 좋음을 의미합니다. 하지만 Intune에 대한 7월 업데이트까지는 계속 작동합니다. 이후에는 백 엔드에서 사용되지 않고 더 이상 작동하지 않습니다. 대신 5월 Windows 10 > 키오스크에서는 Windows 10 RS4 이상에서 키오스크를 구성하는 설정을 비롯하여 새 장치 구성 프로필을 릴리스할 예정입니다.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?  
-Intune이 5월 말에 5월 서비스 업데이트를 릴리스하는 경우 Windows 10 RS3에서 Windows 10 RS4로 키오스크 구성을 마이그레이션할 수 있는지 테스트하고 확인하는 지침을 공유합니다. 키오스크에 대한 새 장치 구성 프로필을 사용하여 장치를 키오스크로 구성하려면 이러한 지침을 사용합니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-이 변경 사항은 Intune 독립 실행형 고객 및 하이브리드(Configuration Manager를 사용하는 Intune) 고객 모두에게 영향을 미칩니다. 이 통합은 클라우드 관리를 단순화하는 데 도움이 됩니다. 이제, 그룹, 정책, 앱 및 모바일 장치 관리를 제어할 때 Azure에서 Intune 블레이드 하나만 이용하면 됩니다.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
-Intune 앱 보호 서비스 블레이드 대신 Intune을 즐겨찾기로 태그를 지정하고 Intune 내 모바일 앱 블레이드의 앱 보호 정책 워크플로에 익숙해지도록 합니다. 짧은 시간 동안 리디렉션된 다음, 앱 보호 블레이드가 제거됩니다. Intune에서 모든 앱 보호 정책은 이미 설정되어 있으며, 다음 설명서를 수행하면 조건부 액세스 정책을 수정할 수 있습니다. [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca)
-
-**추가 정보**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>변경 계획: Microsoft Intune App SDK for Cordova 플러그인 지원의 변경
 Intune은 2018년 5월 1일 [Microsoft Intune App SDK Cordova 플러그인](app-sdk-cordova.md)에 대한 지원을 종료합니다. Intune에서 관리 및 가용성을 위해 Cordova 기반 앱을 준비하려면 Intune 앱 래핑 도구를 대신 사용하는 것이 좋습니다. 이 변경 내용이 적용되면 Cordova 플러그인용 Microsoft Intune APP SDK가 더 이상 유지 관리되지 않거나 업데이트를 수신하지 않습니다. 앱 개발자는 이 플러그인을 사용할 수 없습니다. Intune은 Cordova로 빌드된 앱을 계속 지원할 계획입니다. 그러나 Cordova 플러그인용 Microsoft Intune APP SDK를 사용하여 빌드된 앱은 Intune에서 기능이 저하될 수 있습니다. Intune 앱 래핑 도구로 래핑하면 평소처럼 최종 사용자에게 앱을 배포할 수 있습니다. Google Play 스토어에 릴리스된 Cordova 기반 Android 앱의 경우:
