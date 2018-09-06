@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
-ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
+ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305436"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251937"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>앱 보호 정책을 만들고 할당하는 방법
 
@@ -30,11 +30,11 @@ Microsoft Intune 앱 보호 정책을 만들고 사용자에게 할당하는 방
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-Intune 클래식 포털 관련 지침을 확인하려면 [앱 보호 정책을 만드는 방법](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)을 참조하세요.
-
 앱 보호 정책은 Intune에서 관리하거나 관리하지 않을 수 있는 장치에서 실행되는 앱에 적용할 수 있습니다. 앱 보호 정책의 작동 방식 및 Intune 앱 보호 정책으로 지원되는 시나리오에 대한 자세한 설명은 [Microsoft Intune 앱 보호 정책이란](app-protection-policy.md)을 참조하세요.
 
 MAM을 지원하는 앱 목록을 확인하려면 [MAM 앱 목록](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)을 참조하세요.
+
+앱 보호 정책을 준비하기 위해 Microsoft Intune에 조직의 LOB(기간 업무) 앱을 추가하는 방법은 [Microsoft Intune에 앱 추가](apps-add.md)를 참조하세요.
 
 ##  <a name="create-an-app-protection-policy"></a>앱 보호 정책 만들기
 1. **모바일 앱** 워크로드의 **관리** 섹션에서 **앱 보호 정책**을 선택합니다. **앱 보호 정책** 세부내용이 열리고, 여기서 새 정책을 만들고 기존 정책을 편집할 수 있습니다.

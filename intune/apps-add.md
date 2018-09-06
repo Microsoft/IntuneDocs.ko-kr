@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321291"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251912"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가
 
@@ -129,6 +129,9 @@ Intune 관리 앱은 등록 없이 앱 보호를 사용할 수도 있으므로 �
 - 스토어에서 앱을 추가하고 할당하는 경우 해당 스토어에 사용자 계정이 있어야 앱을 설치할 수 있습니다.
 - 할당한 앱 또는 항목 중 일부는 기본 제공 iOS 앱에 종속될 수 있습니다. 예를 들어 iOS 스토어에서 책을 할당하는 경우 iBooks 앱이 장치에 있어야 합니다. iBooks 기본 제공 앱을 제거한 경우에는 Intune을 사용하여 복구할 수 없습니다.
 
+> [!IMPORTANT]
+> 앱을 배포하고 설치한 뒤에 Intune Azure Portal에서 앱의 이름을 변경하면 더 이상 명령을 사용하여 앱을 대상으로 지정할 수 없습니다.
+
 ## <a name="cloud-storage-space"></a>클라우드 저장소 공간
 소프트웨어 설치 관리자 설치 유형(예: 기간 업무 앱)을 사용하여 만든 모든 앱은 패키징된 후 Intune 클라우드 저장소로 업로드됩니다. Intune의 평가판 구독에는 관리 앱 및 업데이트를 저장하는 데 사용되는 클라우드 기반의 2GB 저장소가 포함됩니다. 전체 구독에서는 총 저장소 공간 크기에 제한이 없습니다.
 
@@ -170,6 +173,10 @@ Intune은 다음 조건에 따라 필수 앱을 자동으로 재설치, 업데�
 - 필수 앱 설치가 실패하거나 앱이 장치에 없는 경우 Intune은 이 일정이 경과하면 규정 준수를 평가하고 앱을 다시 설치합니다.  
 - 관리자는 사용자 그룹에 사용할 수 있는 앱을 대상으로 하고 최종 사용자는 회사 포털의 앱을 장치에 설치합니다. 나중에 관리자가 앱을 v1에서 v2로 업데이트합니다. 여전히 이전 버전 앱이 장치에 남이 있는 경우 Intune은 이 일정이 경과하면 앱을 업데이트합니다.
 - 관리자가 제거 의도를 배포하고, 앱이 장치에 있고, 제거에 실패할 경우 Intune은 이 일정이 경과하면 규정 준수를 평가하고 앱을 제거합니다.   
+
+## <a name="app-installation-errors"></a>앱 설치 오류
+
+Intune 앱 설치 오류에 대한 자세한 내용은 [앱 설치 오류](troubleshoot-app-install.md#app-installation-errors)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329878"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251615"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>문제 해결 포털을 사용하여 회사 내 사용자 지원
 
@@ -65,7 +65,7 @@ ms.locfileid: "36329878"
 | 2.   | 사용자를 선택합니다.  | 현재 선택된 사용자의 이름입니다. **사용자 변경**을 클릭하여 새 사용자를 선택합니다.       |
 | 3.   | 사용자 상태  | 사용자의 Intune 라이선스, 장치 수, 각 장치의 준수, 앱 수 및 앱의 준수에 대한 상태가 표시됩니다.       |
 | 4.   | 사용자 정보  | 이 목록을 사용하여 창에서 검토할 세부 정보를 선택합니다. <br>선택할 수 있는 항목은 다음과 같습니다. <ul><li>모바일 앱<li>앱 보호 정책<li>규정 준수 정책<li> 구성 정책</ul>      |
-| 5.   | 그룹 구성원 자격  | Yadda       |
+| 5.   | 그룹 구성원 자격  | 선택한 사용자가 구성원인 현재 그룹을 보여 줍니다.       |
 
 ## <a name="mobile-apps-reference"></a>모바일 앱 참조
 

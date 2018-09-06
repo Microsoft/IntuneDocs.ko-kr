@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753895"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40252453"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS 장치용 Intune에서 앱당 VPN 설정
 
@@ -35,7 +35,7 @@ Intune이 관리하는 iOS 장치에서 관리되는 앱이 VPN을 사용할 수
  - SonicWall
  - Palo Alto Networks GlobalProtect
 
-## <a name="prerequisites-for-per-app-vpn"></a>앱별 VPN의 필수 조건
+## <a name="prerequisites-for-per-app-vpn"></a>앱당 VPN의 필수 조건
 
 > [!IMPORTANT]
 > VPN 공급업체에는 특정 하드웨어 또는 라이선스와 같이 앱별 VPN에 대한 다른 특정 요구 사항이 있을 수 있습니다. Intune에서 앱별 VPN을 설정하기 전에 먼저 관련 설명서를 확인하고 해당 필수 구성 요소를 충족해야 합니다.
@@ -145,21 +145,32 @@ VPN 프로필을 추가한 후에 앱 및 Azure AD 그룹을 프로필에 연결
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-2. **모바일 앱**을 선택합니다.
-3. **앱**을 클릭합니다.
-4. 앱 목록에서 앱을 선택합니다.
-5. **할당**을 클릭합니다.
-6. **작업 추가**를 클릭합니다.
-7. **그룹 추가** 창에서 **할당 형식**으로 **필수**를 선택합니다.
-6. 앞에서 정의한 그룹을 선택하고 **이 앱을 필수로 설정**을 선택합니다.
-8. **VPN**에서 VPN 정의를 선택합니다.
+3. **모바일 앱**을 선택합니다.
+4. **앱**을 클릭합니다.
+5. 앱 목록에서 앱을 선택합니다.
+6. **할당**을 클릭합니다.
+7. **작업 추가**를 클릭합니다.
+8. **그룹 추가** 창에서 **할당 형식**으로 **필수**를 선택합니다.
+9. 앞에서 정의한 그룹을 선택하고 **이 앱을 필수로 설정**을 선택합니다.
+10. **VPN**에서 VPN 정의를 선택합니다.
  
     > [!NOTE]  
     > 경우에 따라 VPN 정의가 값을 검색하는 데 최대 1분이 걸립니다. **저장**을 클릭하기 전에 3~5분을 기다립니다.
 
-9. **확인**을 클릭하고 **저장**을 클릭합니다.
+11. **확인**을 클릭하고 **저장**을 클릭합니다.
 
     ![VPN과 앱 연결](./media/vpn-per-app-app-to-vpn.png)
+
+다음과 같은 조건에서는 다음번 장치 체크인 시에 앱과 프로필 사이의 연결이 제거됩니다.
+- 앱이 필수 설치 의도와 함께 대상으로 지정되었습니다.
+- 프로필과 앱이 모두 동일한 그룹으로 대상 지정되었습니다.
+- 사용자가 앱 할당에서 앱당 VPN 구성을 제거했습니다.
+
+다음과 같은 조건에서는 최종 사용자가 회사 포털에서 재설치를 요청하기 전까지 앱과 프로필 사이의 연결이 계속 유지됩니다.
+- 앱이 사용 가능한 설치 의도와 함께 대상으로 지정되었습니다.
+- 프로필과 앱이 모두 동일한 그룹으로 대상 지정되었습니다.
+- 최종 사용자가 회사 포털에서 앱 설치를 요청한 결과, 앱과 프로필이 장치에 설치되었습니다.
+- 사용자가 앱 할당에서 앱당 VPN 구성을 제거했습니다.
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>iOS 장치에 대한 연결 확인
 
@@ -191,7 +202,7 @@ iOS 장치에 대한 연결을 확인합니다.
 2. **연결**을 누릅니다.  
 VPN은 추가 프롬프트 없이 성공적으로 연결합니다.
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

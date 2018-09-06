@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c7f3229c2cb4c5f3f57d84d348053f25eeeb9c9
-ms.sourcegitcommit: f70d6aaea59b52cd0d7bd3008afd243868967fd6
+ms.openlocfilehash: c64c267623db93128177d56ced29586d3a877b19
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37066218"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823055"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune을 사용하여 MTD(Mobile Threat Defense) 앱 추가 및 할당
 
@@ -56,6 +56,7 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
   - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
+  - [더 향상된 모바일](#configure-better-mobile-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work 앱 구성
 
@@ -129,6 +130,16 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 
     - [Microsoft Intune에 iOS 스토어 앱 추가](store-apps-ios.md) 지침을 참조하세요. **앱 정보 구성** 섹션의 **12단계**에서 이 [Pradeo 앱 스토어 URL](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8)을 사용합니다.
 
+### <a name="configure-better-mobile-apps"></a>Better Mobile 앱 구성
+
+ - **OWA(Outlook Web Access)**
+
+    - [Microsoft Intune에 Android 스토어 앱 추가](store-apps-android.md) 지침을 참조하세요. **7단계**에서 이 [Active Shield 앱 스토어 URL](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise)을 사용합니다.
+
+ - **iOS**
+
+    - [Microsoft Intune에 iOS 스토어 앱 추가](store-apps-ios.md) 지침을 참조하세요. **앱 정보 구성** 섹션의 **12단계**에서 이 [ActiveShield 앱 스토어 URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4)을 사용합니다.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>iOS 앱 구성 정책으로 MTD 앱 구성
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 앱 구성 정책
@@ -177,6 +188,22 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 <string>{{serialnumber}}</string>
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
+</dict>
+```
+
+### <a name="better-mobile-app-configuration-policy"></a>Better Mobile 앱 구성 정책
+
+- Better Mobile iOS 앱 구성 정책을 추가하려면 [iOS에 대해 Microsoft Intune 앱 구성 정책 사용](app-configuration-policies-use-ios.md) 지침을 참조하세요.
+    - **8단계**에서 **XML 데이터 입력** 옵션을 사용하고 아래 콘텐츠를 복사하여 구성 정책 본문에 붙여넣습니다. `https://client.bmobi.net` URL을 적절한 콘솔 URL로 바꿉니다.
+
+```
+<dict>
+<key>better_server_url</key>
+<string>https://client.bmobi.net</string>
+<key>better_udid</key>
+<string>{{aaddeviceid}}</string>
+<key>better_user</key>
+<string>{{userprincipalname}}</string>
 </dict>
 ```
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905974"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823072"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 앱을 관리하는 방법
 
@@ -148,6 +148,10 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 <!-- 820870 -->  
 지정된 VPP 토큰에 대해 모든 VPP 앱 라이선스를 해지하려면 먼저 토큰과 연결된 모든 앱 라이선스를 해지한 다음, 해당 토큰을 삭제해야 합니다.
+
+## <a name="renewing-app-licenses"></a>앱 라이선스 갱신
+
+Apple Volume Purchase Program 포털에서 새로운 토큰을 다운로드하고 Intune에서 기존 토큰을 업데이트하여 Apple VPP 토큰을 갱신할 수 있습니다.
 
 ## <a name="further-information"></a>추가 정보
 

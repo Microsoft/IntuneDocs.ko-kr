@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025915"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251770"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune에서 조건부 액세스를 사용하는 일반적인 방법이란?
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025915"
 Intune을 사용하는 조건부 액세스에는 장치 기반 조건부 액세스 및 앱 기반 조건부와 같은 두 가지 방법이 있습니다. 조직에서 조건부 액세스 규정 준수를 추진하는 관련 규정 준수 정책을 구성해야 합니다. 일반적으로 조건부 액세스를 사용하여 Exchange 온-프레미스에 대한 액세스를 허용하거나 차단하는 작업, 네트워크에 대한 액세스를 제어하는 작업 또는 Mobile Threat Defense 솔루션과 통합하는 작업 등을 수행합니다.
 
 아래 정보는 Intune 모바일 *장치* 규정 준수 기능 및 Intune 모바일 *응용 프로그램* 관리(MAM) 기능 사용 방법의 이해에 도움이 됩니다. 
+
+> [!NOTE]
+> 조건부 액세스는 Azure Active Directory Premium 라이선스에 포함된 Azure Active Directory 기능입니다. Intune은 솔루션에 모바일 장치 호환성과 모바일 앱 관리 기능을 추가하여 이 기능을 향상합니다.
 
 ## <a name="device-based-conditional-access"></a>장치 기반 조건부 액세스
 
@@ -122,9 +125,9 @@ PC에 대한 조건부 액세스는 모바일 장치에 사용할 수 있는 것
 
 #### <a name="corporate-owned"></a>회사 소유
 
--   **온-프레미스 AD 도메인 가입:** AD 그룹 정책 및/또는 System Center Configuration Manager를 통해 PC를 이미 적절하게 관리하고 있는 조직에서 가장 흔히 사용되는 조건부 액세스 배포 옵션입니다.
+-   **온-프레미스 AD 도메인 가입:** 기존에 자사에서 AD 그룹 정책 및/또는 System Center Configuration Manager로 PC를 관리하는 방식에 어느 정도 익숙한 조직에서 흔히 사용되는 옵션입니다.
 
--   **Azure AD 도메인 가입 및 Intune 관리:** 이 시나리오는 대개 장치가 회사 네트워크에 거의 연결되지 않는 CYOD(Choose Your Own Device) 및 로밍 노트북 시나리오에서 사용됩니다. 이 경우 장치는 Azure AD에 가입한 다음 Intune에 등록되므로 온-프레미스 AD 및 도메인 컨트롤러에 종속되지 않습니다. 회사 리소스에 액세스할 때는 이 시나리오를 조건부 액세스 기준으로 사용할 수 있습니다.
+-   **Azure Active Directory 도메인 가입 및 Intune 관리:** 이 시나리오는 대개 장치가 회사 네트워크에 거의 연결되지 않는 CYOD(Choose Your Own Device) 및 로밍 노트북 시나리오에서 사용됩니다. 이 경우 장치는 Azure AD에 가입한 다음 Intune에 등록되므로 온-프레미스 AD 및 도메인 컨트롤러에 종속되지 않습니다. 회사 리소스에 액세스할 때는 이 시나리오를 조건부 액세스 기준으로 사용할 수 있습니다.
 
 -   **AD 도메인 가입 및 System Center Configuration Manager:** 현재 분기를 기준으로 할 때 System Center Configuration Manager는 도메인에 가입된 PC 이외에 다음과 같은 특정 준수 기준도 평가할 수 있는 조건부 액세스 기능을 제공합니다.
 

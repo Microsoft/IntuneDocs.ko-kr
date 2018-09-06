@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906110"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255381"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune 앱 관리란?
 
@@ -38,23 +38,22 @@ Intune은 앱을 실행하려는 장치에서 필요한 앱을 얻도록 도와�
 
 ## <a name="app-management-capabilities-by-platform"></a>플랫폼별 앱 관리 기능
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8.1|Windows 10|
-|장치 및 사용자에게 앱 추가 및 할당|예|예|예|예|
-|Intune에 등록되지 않은 장치에 앱 할당|예|예|아니요|아니요|
-|앱 구성 정책을 사용하여 앱의 시작 동작 제어|아니요|예|아니요|아니요|
-|모바일 앱 프로비전 정책을 사용하여 만료된 앱 갱신|아니요|예|아니요|아니요|
-|앱 보호 정책이 적용되는 앱에서 회사 데이터 보호|예|예|아니요|아니요<sup>1</sup>|
-|설치된 앱에서 회사 데이터만 제거(앱 선택적 초기화)|예|예|예|예|
-|앱 할당 모니터링|예|예|예|예|
-|앱 스토어에서 대량 구매 앱 할당 및 추적|아니요|아니요|아니요|예|
-|장치에 앱 필수 설치(필수)<sup>2</sup>|예|예|예|예|
-|회사 포털에서 장치에 선택적 설치(사용 가능한 설치)|예|예|예|예|
-|웹에서 앱에 바로 가기 설치(웹 칭크)|예|예|예|예|
-|사내(기간 업무) 앱|예|예|아니요|예|
-|스토어의 앱|예|예|예|예|
-|앱 업데이트|예|예|예|예|
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| 장치 및 사용자에게 앱 추가 및 할당 | 예 | 예 | 예 | 예 | 예 |
+| Intune에 등록되지 않은 장치에 앱 할당 | 예 | 예 | 아니요 | 아니요 | 아니요 |
+| 앱 구성 정책을 사용하여 앱의 시작 동작 제어 | 아니요 | 예 | 아니요 | 아니요 | 아니요 |
+| 모바일 앱 프로비전 정책을 사용하여 만료된 앱 갱신 | 아니요 | 예 | 아니요 | 아니요 | 아니요 |
+| 앱 보호 정책이 적용되는 앱에서 회사 데이터 보호 | 예 | 예 | 아니요 | 아니요1 | 아니요 |
+| 설치된 앱에서 회사 데이터만 제거(앱 선택적 초기화) | 예 | 예 | 아니요 | 예 | 예 |
+| 앱 할당 모니터링 | 예 | 예 | 예 | 예 | 예 |
+| 앱 스토어에서 대량 구매 앱 할당 및 추적 | 아니요 | 아니요 | 아니요 | 예 | 아니요 |
+| 장치에 앱 필수 설치(필수)2 | 예 | 예 | 예 | 예 | 예 |
+| 회사 포털에서 장치에 선택적 설치(사용 가능한 설치) | 예 | 예 | 예 | 예 | 예 |
+| 웹에서 앱에 바로 가기 설치(웹 링크) | 예 | 예 | 예 | 예 | 예 |
+| 사내(기간 업무) 앱 | 예 | 예 | 예 | 예 | 아니요 |
+| 스토어의 앱 | 예 | 예 | 아니요 | 예 | 예 |
+| 앱 업데이트 | 예 | 예 | 아니요 | 예 | 예 |
 
 <sup>1</sup> Windows 10을 실행하는 장치에서 앱을 보호하려면 [Windows Information Protection](windows-information-protection-configure.md)을 사용하는 것이 좋습니다.
 
@@ -95,8 +94,8 @@ Intune은 앱을 실행하려는 장치에서 필요한 앱을 얻도록 도와�
 - **앱 라이선스**: 앱 스토어에서 대량 구매 앱을 보고, 할당하고, 모니터링할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
     - [iOS VPP(대량 구매 프로그램) 앱](vpp-apps-ios.md)
     - [비즈니스용 Microsoft Store 대량 구매 앱](windows-store-for-business.md)
-- **검색된 앱**: Intune에서 할당하고 장치에 설치된 모든 앱을 표시합니다.
-- **앱 설치 상태**: 만든 앱 할당의 상태를 표시합니다.
+- **검색된 앱**: Intune에서 할당하고 장치에 설치된 모든 앱을 표시합니다. 자세한 내용은 [Microsoft Intune으로 앱 정보 및 할당을 모니터링 하는 방법](apps-monitor.md#device-and-user-status-graphs)을 참조하세요.
+- **앱 설치 상태**: 만든 앱 할당의 상태를 표시합니다. 자세한 내용은 [Microsoft Intune으로 앱 정보 및 할당을 모니터링 하는 방법](apps-monitor.md#device-and-user-status-graphs)을 참조하세요.
 - **앱 보호 상태**: 선택한 사용자에 대한 앱 보호 정책의 상태를 표시합니다.
 - **감사 로그**: 모든 IT 관리자의 Intune 앱 관련 활동을 표시합니다.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,16 +14,17 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c795acb5ca6590b165b89c3a974038069b1c56ef
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a86b53e34cc4fa24ec683657a646f8545396166e
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321512"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910839"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+> [!IMPORTANT]
+> 이 문서에서 설명하는 S/MIME 기능에 몇 가지 개선 사항을 적용하고 있습니다. 그 결과 Intune에서 S/MIME 기능이 일시적으로 제거되었습니다. 이 기능이 릴리스되면 본 메모를 제거하겠습니다.
 
 인증서는 VPN 또는 WiFi 네트워크 같은 회사 리소스에 대한 액세스를 인증하고 보호합니다. 이 아티클에서는 PKCS 인증서를 내보낸 다음, 인증서를 Intune 프로필에 추가하는 방법을 설명합니다.
 

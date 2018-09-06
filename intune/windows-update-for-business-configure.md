@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822724"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255238"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune에서 소프트웨어 업데이트 관리
 
@@ -115,11 +115,10 @@ Windows as a Service는 Windows 10 장치를 업데이트하는 방법입니다.
 3. 마치면 **선택**을 선택하여 할당을 완료합니다.
 
 ## <a name="update-compliance-reporting"></a>업데이트 준수 보고
-Intune에서 업데이트 준수를 확인하거나 OMS(Operations Management Suite)에서 업데이트 준수라는 무료 솔루션을 사용하여 확인할 수 있습니다.
+Intune에서 업데이트 준수를 확인하거나 업데이트 준수라는 무료 솔루션을 사용하여 확인할 수 있습니다.
 
 ### <a name="review-update-compliance-in-intune"></a>Intune에서 업데이트 준수 확인 
-<!-- 1352223 -->
-정책 보고서를 검토하여 구성한 Windows 10 업데이트 링의 배포 상태를 확인합니다.
+<!-- 1352223 --> 정책 보고서를 검토하여 구성한 Windows 10 업데이트 링의 배포 상태를 확인합니다.
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
@@ -137,7 +136,7 @@ Intune에서 업데이트 준수를 확인하거나 OMS(Operations Management Su
       - **사용자 상태**
 
 ### <a name="review-update-compliance-using-oms"></a>OMS를 사용하여 업데이트 준수 검토
-OMS(Operations Management Suite)에서 Update Compliance라는 무료 솔루션을 사용하여 Windows 10 업데이트 출시를 모니터링할 수 있습니다. 자세한 내용은 [Monitor Windows Updates with Update Compliance(Update Compliance를 사용하여 Windows 업데이트 모니터링)](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)를 참조하세요. 이 솔루션을 사용하면 업데이트 준수를 보고할 Intune 관리 Windows 10 장치에 상용 ID를 배포할 수 있습니다.
+업데이트 준수라는 무료 솔루션을 사용하여 Windows 10 업데이트 롤아웃을 모니터링할 수 있습니다. 자세한 내용은 [Monitor Windows Updates with Update Compliance(Update Compliance를 사용하여 Windows 업데이트 모니터링)](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)를 참조하세요. 이 솔루션을 사용하면 업데이트 준수를 보고할 Intune 관리 Windows 10 장치에 상용 ID를 배포할 수 있습니다.
 
 Intune 콘솔에서 사용자 지정 정책의 OMA-URI 설정을 사용하여 상용 ID를 구성할 수 있습니다. 자세한 내용은 [Microsoft Intune의 Windows 10 장치용 Intune 정책 설정](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)을 참조하세요.   
 

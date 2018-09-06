@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
-ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
+ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39450793"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251506"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>앱 보호 정책에 대해 LOB(기간 업무) 앱 준비
 
@@ -28,7 +28,7 @@ ms.locfileid: "39450793"
 Intune 앱 래핑 도구 또는 Intune 앱 SDK를 사용하여 앱에서 앱 보호 정책을 사용할 수 있게 할 수 있습니다. 이 정보를 사용하여 이러한 두 가지 방법 및 사용 시기에 대해 알아보세요.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune 앱 래핑 도구
-앱 래핑 도구는 내부 LOB(기간 업무) 앱에 주로 사용됩니다. 이 도구는 앱을 둘러싸는 래퍼를 만들어 앱이 Intune 앱 보호 정책에 의해 관리될 수 있게 하는 명령줄 응용 프로그램입니다.
+앱 래핑 도구는 **내부** LOB(기간 업무) 앱에 주로 사용됩니다. 이 도구는 앱을 둘러싸는 래퍼를 만들어 앱이 Intune 앱 보호 정책에 의해 관리될 수 있게 하는 명령줄 응용 프로그램입니다. ISV(Independent Software Vendor)가 제공하는 앱을 보호할 때는 ISV가 래핑된 앱을 계속해서 지원할지 여부를 명시하는 것이 중요합니다.
 
 도구를 사용하기 위해 소스 코드가 필요하지는 않지만 서명 자격 증명이 필요합니다. 서명 자격 증명에 대한 자세한 내용은 [Intune 블로그](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)를 참조하세요. 앱 래핑 도구 설명서는 [Android App Wrapping Tool](app-wrapper-prepare-android.md)(앱 래핑 도구) 및 [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)(iOS 앱 래핑 도구) 항목을 참조하세요.
 
@@ -48,7 +48,7 @@ Intune에 등록되지 않은 장치의 앱 보호 정책에 대한 앱 래핑 �
 
 |**앱 래핑 도구** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |아니요 – [Intune 앱 SDK Xamarin 바인딩](app-sdk-xamarin.md)을 사용합니다.|예|
+|**iOS** |예|예|
 |**OWA(Outlook Web Access)**|아니요 – [Intune 앱 SDK Xamarin 바인딩](app-sdk-xamarin.md)을 사용합니다.|예|
 
 ## <a name="intune-app-sdk"></a>Intune 앱 SDK

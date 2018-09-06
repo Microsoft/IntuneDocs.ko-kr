@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/7/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 3be9be3c290a6cbb2e68358a6810aa2dc1636065
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "35679447"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251796"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 Android 앱 준비
 
@@ -50,6 +50,9 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
     > 일부 경우에 32비트 버전의 Java에서 메모리 문제가 발생할 수 있습니다. 64비트 버전을 설치하는 것이 좋습니다.
 
 - Android는 모든 앱 패키지(.apk)를 서명해야 합니다. 기존 인증서와 전체 서명 인증서 **재사용** 지침은 [서명 인증서 재사용 및 앱 래핑](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)을 참조하세요. Java 실행 파일 keytool.exe를 사용하여 래핑된 출력 앱에 서명하는 데 필요한 **새** 자격 증명을 생성합니다. 설정된 모든 암호에는 보안이 적용되어야 하지만, 나중에 앱 래핑 도구를 실행하는 데 필요하므로 암호를 적어 두세요.
+
+> [!NOTE]
+> Intune 앱 래핑 도구는 앱 서명 시 Google의 v2 서명 방식과 향후 예정된 v3 서명 방식을 지원하지 않습니다. Intune 앱 래핑 도구를 사용하여 .apk 파일을 래핑한 경우, [Google에서 제공하는 Apksigner 도구]( https://developer.android.com/studio/command-line/apksigner)를 사용하는 것을 추천합니다. 이렇게 하면 앱이 최종 사용자 장치에서 Android 표준에 의해 올바르게 실행됩니다. 
 
 - (선택 사항) 입력 앱 내에서 Multidex를 사용합니다. 경우에 따라 앱은 래핑 중에 추가된 Intune MAM SDK 클래스로 인해 DEX(Dalvik 실행 파일) 크기 제한에 도달할 수 있습니다. DEX 파일은 Android 앱 컴파일의 일부입니다. 이 시나리오에서 모범 사례는 앱 자체 내에서 Multidex를 사용하도록 설정하는 것입니다. 특정 조직에서는 앱을 컴파일하는 사용자(예: 앱 빌드 팀)와 함께 작업해야 할 수 있습니다. 
 

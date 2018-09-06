@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7faba9a0bfb6f07a80c4c0af947efbca9b33ae03
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022342"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251655"
 ---
 # <a name="whats-conditional-access"></a>조건부 액세스란?
 
@@ -38,7 +38,7 @@ Enterprise Mobility + Security(EMS) 조건부 액세스는 독립 실행형 제�
 
 ## <a name="conditional-access-with-intune"></a>Intune을 사용하는 조건부 액세스
 
-Intune은 EMS 조건부 액세스 솔루션을 지원하기 위해 모바일 장치 준수 및 앱 관리 정책을 추가적으로 제공합니다.
+조건부 액세스는 Azure Active Directory Premium 라이선스에 포함된 Azure Active Directory 기능입니다. Intune은 솔루션에 모바일 장치 호환성과 모바일 앱 관리 기능을 추가하여 이 기능을 향상합니다. 
 
 ![EMS 사용 시의 Intune 및 조건부 액세스](./media/intune-with-ca-1.png)
 

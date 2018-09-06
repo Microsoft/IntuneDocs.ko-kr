@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 640d1a5cbd785248cb309bc250c95631295955b3
-ms.sourcegitcommit: 71497f0215fc8bed454ac318b0548b1281a8fe0f
+ms.openlocfilehash: 141fcc4550b69d01d67e8d4aa9f0e6e05717353a
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33914158"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40252586"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune 및 Exchange Online용 Exchange 서비스 커넥터 구성
 
@@ -50,7 +50,7 @@ ms.locfileid: "33914158"
 
 ## <a name="set-up-the-service-to-service-connector"></a>서비스 간 커넥터 설정
 
-1. Exchange 관리자 권한 및 [앞에서 설명한](#exchange-cmdlet-requirements) cmdlet에 대한 권한을 가진 사용자 계정으로 [Azure Portal](http://portal.azure.com)에 로그인합니다. Microsoft Intune은 현재 로그인된 사용자의 메일 주소를 사용하여 연결을 설정합니다.
+1. Exchange 관리자 권한, [앞에서 설명한](#exchange-cmdlet-requirements) cmdlet에 대한 권한, 유효한 Intune 라이선스 및 전역 관리자 역할을 가진 사용자 계정으로 [Azure Portal](http://portal.azure.com)에 로그인합니다. Microsoft Intune은 현재 로그인된 사용자의 메일 주소를 사용하여 연결을 설정합니다.
 
 2. 왼쪽 메뉴에서 **모든 서비스**를 선택한 다음, 텍스트 상자 필터에 **Intune**을 입력합니다.
 

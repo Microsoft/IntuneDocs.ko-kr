@@ -15,12 +15,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a22aafdca8c049367d4c88d27a07a7c1825a01e3
-ms.sourcegitcommit: e6e93419f46e8647d4661eeca09eb1e2e460ad2b
+ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966921"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910656"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune 소프트웨어 클라이언트를 통해 Windows PC를 컴퓨터로 관리
 
@@ -53,10 +53,10 @@ Intune에서는 소프트웨어 클라이언트를 사용하여 최대 7,000대�
 
 |요구 사항|추가 정보|
 |---------------|--------------------|
-|운영 체제 | Windows 7 SP1 이상이 실행되는 Windows 장치. </br></br>**Home Edition 버전은 지원되지 않습니다.**|
+|운영 체제 | Windows 7 SP1 및 Windows 8.1 이상을 실행하는 Windows 장치 </br></br>**Home Edition 버전은 지원되지 않습니다.**|
 |관리자 권한|클라이언트 소프트웨어를 설치하는 계정에는 해당 장치에 대한 로컬 관리자 권한이 있어야 합니다.|
 |Windows Installer 3.1|PC에 최소 Windows Installer 3.1이 설치되어 있어야 합니다.<br /><br />PC의 Windows Installer 버전을 확인하려면<br /><br />  PC에서 **%windir%\System32\msiexec.exe**를 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.<br /><br />Windows Installer의 최신 버전은 Microsoft Developer Network 웹 사이트의 [Windows Installer Redistributables(Windows Installer 재배포 가능 구성 요소)](http://go.microsoft.com/fwlink/?LinkID=234258) 에서 다운로드할 수 있습니다.|
-|호환되지 않는 클라이언트 소프트웨어를 제거합니다.|Intune 클라이언트 소프트웨어를 설치하기 전에 해당 PC에서 구성 관리자, Operations Manager, Operations Management Suite 및 Service Manager 클라이언트 소프트웨어를 모두 제거하세요.|
+|호환되지 않는 클라이언트 소프트웨어를 제거합니다.|Intune 클라이언트 소프트웨어를 설치하기 전에 해당 PC에서 Configuration Manager, Operations Manager 및 Service Manager 클라이언트 소프트웨어를 모두 제거하세요.|
 
 ## <a name="deploying-the-intune-software-client"></a>Intune 소프트웨어 클라이언트 배포
 Intune 관리자는 Intune 소프트웨어 클라이언트를 다양한 방법으로 사용자에게 제공할 수 있습니다. 자세한 내용은 [Windows PC에 Intune 소프트웨어 클라이언트 설치](install-the-windows-pc-client-with-microsoft-intune.md)를 참조하세요.

@@ -15,20 +15,20 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
-ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
+ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203223"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255541"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>장치 등록 관리자 계정을 사용하여 장치 등록
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-조직에서는 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. *DEM(장치 등록 관리자)* 계정은 1000개까지 장치를 등록할 수 있는 특수한 사용자 계정입니다. 기존 사용자를 DEM 계정에 추가하여 특수 DEM 기능을 제공합니다. 등록된 각 장치는 단일 라이선스를 사용합니다. 이 계정을 통해 등록한 장치는 개인("BYOD") 장치가 아닌 공유 장치로 사용하는 것이 좋습니다.  
+조직에서는 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. *DEM(장치 등록 관리자)* 계정은 1000개까지 장치를 등록할 수 있는 특수한 사용자 계정입니다. 기존 사용자를 DEM 계정에 추가하여 특수 DEM 옵션을 제공합니다. 등록된 각 장치는 단일 라이선스를 사용합니다. 이 계정을 통해 등록한 장치는 개인("BYOD") 장치가 아닌 공유 장치로 사용하는 것이 좋습니다.  
 
-장치 등록 관리자로 추가하려면 [Azure Portal](https://portal.azure.com)에 사용자가 존재해야 합니다. 보안 최적화를 위해 DEM 사용자는 Intune 관리자여서도 안 됩니다.
+장치 등록 관리자로 추가하려면 [Azure Portal](https://portal.azure.com)에 사용자가 존재해야 합니다. 보안 최적화를 위해 DEM 사용자는 동시에 Intune 관리자이면 안 됩니다.
 
 >[!NOTE]
 >DEM 등록 방법은 [Apple Configurator에서 설정 도우미 사용](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator에서 직접 등록](apple-configurator-direct-enroll-ios.md), [ASM(Apple School Manager) 사용](apple-school-manager-set-up-ios.md) 또는 [DEP(장치 등록 프로그램) 사용](device-enrollment-program-enroll-ios.md) 등의 다른 등록 방법과 함께 사용할 수 없습니다.
@@ -74,25 +74,24 @@ DEM 사용자는 다음 작업을 수행할 수 있습니다.
 
 ## <a name="permissions-for-dem"></a>DEM에 대한 권한
 
-Admin Portal에서 DEM 등록 관련 작업을 수행하려면 전역 또는 Intune 서비스 관리자 Azure AD 역할이 필요합니다. 또한 사용자 지정 사용자 역할 아래에 RBAC 권한이 나열되어 있고 사용 가능하더라도 모든 DEM 사용자를 보려면 이러한 역할이 필요합니다. 전역 관리자 또는 Intune 서비스 관리자 역할은 할당되지 않고 장치 등록 관리자 역할에 대한 읽기 권한은 있는 사용자의 경우 자신이 만든 DEM 사용자만 볼 수 있습니다. 이러한 기능에 필요한 RBAC 역할 지원이 향후 발표될 예정입니다.
+다음 작업에는 전역 또는 Intune 서비스 관리자 Azure Active Directory 역할이 필요합니다.
+- Admin Portal에서 DEM 등록과 관련된 작업 수행
+- 사용자 지정 사용자 역할 아래에 RBAC 권한이 나열되어 있고 사용 가능하더라도 모든 DEM 사용자 보기
 
-전역 관리자 또는 Intune 서비스 관리자 역할은 할당되지 않고 장치 등록 관리자 역할용으로 사용하도록 설정된 읽기 권한은 할당된 사용자의 경우 자신이 만든 DEM 사용자만 볼 수 있습니다.
+전역 관리자 또는 Intune 서비스 관리자 역할은 할당되지 않고 장치 등록 관리자 역할에 대한 읽기 권한은 있는 사용자의 경우 자신이 만든 DEM 사용자만 볼 수 있습니다. 이러한 기능에 필요한 RBAC 역할 지원이 향후 발표될 예정입니다.
+
 
 ## <a name="remove-a-device-enrollment-manager"></a>장치 등록 관리자 제거
 
-장치 등록 관리자를 제거해도 등록된 장치에는 영향을 주지 않습니다. 장치 등록 관리자를 제거하는 경우:
+장치 등록 관리자를 제거하는 경우:
 
 -   등록된 장치는 영향을 받지 않으며 계속 완전하게 관리됩니다.
--   제거된 장치 등록 관리자 계정 자격 증명은 계속 유효합니다.
--   제거된 장치 등록 관리자는 여전히 장치를 초기화하거나 사용 중지할 수 없습니다.
--   제거된 장치 등록 관리자는 Intune 관리자가 구성한 사용자별 제한 수까지만 장치를 등록할 수 있습니다.
+-   제거된 DEM 계정 자격 증명은 여전히 유효합니다.
+-   제거된 DEM은 여전히 장치를 초기화하거나 사용 중지할 수 없습니다.
+-   제거된 DEM은 Intune 관리자가 구성한 사용자별 제한 수까지만 장치를 등록할 수 있습니다.
 
 **장치 등록 관리자를 제거하려면**
 
 1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록**을 선택한 다음, **장치 등록 관리자**를 선택합니다.
 2. **장치 등록 관리자** 블레이드에서 DEM 사용자를 선택하고 **삭제**를 선택합니다.
 
-## <a name="view-the-properties-of-a-device-enrollment-manager"></a>장치 등록 관리자의 속성 보기
-
-1. [Azure Portal](https://portal.azure.com)에서 **장치 등록**을 선택한 다음, **장치 등록 관리자**를 선택합니다.
-2. **장치 등록 관리자** 블레이드에서 DEM 사용자를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.

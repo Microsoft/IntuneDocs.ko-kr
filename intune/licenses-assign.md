@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225411"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751653"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune에 장치를 등록할 수 있도록 사용자에게 라이선스 할당
 
@@ -61,7 +61,7 @@ SDS에 대한 자세한 내용은 이 [학교 데이터 동기화 및 강의실 
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>사용자 및 장치 라이선스가 서비스 액세스에 영향을 주는 방식
 * 사용자 소프트웨어 라이선스를 할당하는 각 **사용자**는 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)에 액세스하여 최대 15대의 장치와 응용 프로그램을 관리하는 데 해당 서비스와 소프트웨어를 사용할 수 있습니다.
-* 장치 소프트웨어 라이선스를 할당하는 각 **장치**는 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)에 액세스하여 사용자 수에 관계없이 해당 서비스와 소프트웨어를 사용할 수 있습니다.
+* 사용자 라이선스와 별도로 모든 장치에 대해 라이선스를 구입할 수 있습니다. 장치에는 장치 라이선스를 할당할 필요가 없습니다. 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)를 액세스하고 사용하는 각 장치에는 장치 라이선스가 할당되어야 합니다.
 * 여러 사용자가 장치를 사용하는 경우 각 사용자에게 장치 소프트웨어 라이선스가 있어야 하거나, 모든 사용자에게 사용자 소프트웨어 라이선스가 있어야 합니다.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>구입한 라이선스 형식 이해

@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993720"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255479"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Microsoft Intune에 macOS LOB(사업 부문) 앱을 추가하는 방법
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993720"
 
 이 문서의 정보를 사용하면 Microsoft Intune에 macOS 사업 부문 앱을 추가하는 데 도움이 됩니다. 사업 부문 파일을 Microsoft Intune에 업로드하기 전에 *.pkg* 파일을 전처리하려면 외부 도구를 다운로드해야 합니다. *.pkg* 파일의 전처리는 macOS 장치에서 수행해야 합니다.
 
->[!NOTE]
->macOS 장치 사용자는 주식, 지도 같은 기본 제공 macOS 앱 중 일부를 제거할 수 있으나 Intune을 사용하여 해당 앱을 다시 배포할 수는 없습니다. 최종 사용자가 이러한 앱을 삭제하는 경우 앱 스토어로 이동하여 수동으로 다시 설치해야 합니다.
->
->macOS LOB 앱을 Microsoft Intune에 업로드하는 데는 *.pkg* 파일만 사용할 수 있습니다. *.dmg*와 다른 형식의 *.pkg*로의 변환은 지원되지 않습니다.
+> [!NOTE]
+> macOS 장치 사용자는 주식, 지도 같은 기본 제공 macOS 앱 중 일부를 제거할 수 있으나 Intune을 사용하여 해당 앱을 다시 배포할 수는 없습니다. 최종 사용자가 이러한 앱을 삭제하는 경우 앱 스토어로 이동하여 수동으로 다시 설치해야 합니다.
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>1단계 - 소프트웨어 설정 파일 전처리
+## <a name="before-your-start"></a>시작하기 전에
 
-Mac용 Intune 앱 래핑 도구를 사용하여 Microsoft Intune에서 Mac 앱을 관리할 수 있도록 합니다.
+사업 부문 파일을 Microsoft Intune에 업로드하기 전에 *.pkg* 파일을 전처리하려면 외부 도구를 다운로드해야 합니다. *.pkg* 파일의 전처리는 macOS 장치에서 수행해야 합니다. Mac용 Intune 앱 래핑 도구를 사용하여 Microsoft Intune에서 Mac 앱을 관리할 수 있도록 합니다.
+
+> [!IMPORTANT]
+> macOS LOB 앱을 Microsoft Intune에 업로드하는 데는 *.pkg* 파일만 사용할 수 있습니다. *.dmg*와 다른 형식의 *.pkg*로의 변환은 지원되지 않습니다.
 
 1. [Mac용 Intune 앱 래핑 도구](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac)를 다운로드하여 실행합니다.
 
@@ -55,7 +56,7 @@ Mac용 Intune 앱 래핑 도구를 사용하여 Microsoft Intune에서 Mac 앱�
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     이 명령은 생성된 *.intunemac* 파일에 대해 발견된 매개 변수 및 버전을 추출합니다.
 
-## <a name="step-2---specify-the-software-setup-file"></a>2단계: 소프트웨어 설치 파일 지정
+## <a name="step-1---specify-the-software-setup-file"></a>단계 1 - 소프트웨어 설치 파일 지정
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
@@ -64,14 +65,14 @@ Mac용 Intune 앱 래핑 도구를 사용하여 Microsoft Intune에서 Mac 앱�
 5. 앱 목록 위에서 **추가**를 선택합니다.
 6. **앱 추가** 창에서 **LOB(기간 업무) 앱**을 선택합니다.
 
-## <a name="step-3---configure-the-app-package-file"></a>3단계: 앱 패키지 파일 구성
+## <a name="step-2---configure-the-app-package-file"></a>2단계: 앱 패키지 파일 구성
 
 1. **앱 추가** 창에서 **앱 패키지 파일**을 선택합니다.
 2. **앱 패키지 파일** 창에서 [찾아보기] 단추를 선택하고 확장명 *.intunemac*가 포함된 macOS 설치 파일을 선택합니다.
 3. 작업이 끝나면 **확인**을 선택합니다.
 
 
-## <a name="step-4---configure-app-information"></a>4단계 - 앱 정보 구성
+## <a name="step-3---configure-app-information"></a>3단계 - 앱 정보 구성
 
 1. **앱 추가** 창에서 **앱 정보**를 선택합니다.
 2. **앱 정보** 창에서 앱의 세부 정보를 추가합니다. 선택한 앱에 따라 이 창의 일부 값이 자동으로 채워질 수 있습니다.
@@ -89,7 +90,7 @@ Mac용 Intune 앱 래핑 도구를 사용하여 Microsoft Intune에서 Mac 앱�
     - **로고** - 앱과 연결된 아이콘을 업로드합니다. 사용자가 회사 포털을 찾아볼 때 이 아이콘이 앱과 함께 표시됩니다.
 3. 작업이 끝나면 **확인**을 선택합니다.
 
-## <a name="step-5---finish-up"></a>5단계 - 끝내기
+## <a name="step-4---finish-up"></a>4단계 - 끝내기
 
 1. **앱 추가** 창에서 앱의 세부 정보가 올바른지 확인합니다.
 2. **추가**를 선택하여 Intune에 앱을 업로드합니다.
@@ -99,7 +100,7 @@ Mac용 Intune 앱 래핑 도구를 사용하여 Microsoft Intune에서 Mac 앱�
 > [!NOTE]
 > *.pkg* 파일에 여러 앱 또는 앱 설치 관리자가 포함되어 있는 경우 Microsoft Intune은 설치된 모든 앱이 장치에서 발견될 경우에만 ‘앱’이 성공적으로 설치되어 있다고 보고합니다.
 
-## <a name="step-6---update-a-line-of-business-app"></a>6단계 - 사업 부문 앱 업데이트
+## <a name="step-5---update-a-line-of-business-app"></a>5단계 - 기간 업무(line-of-business) 앱 업데이트
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

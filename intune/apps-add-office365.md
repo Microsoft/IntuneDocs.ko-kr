@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321478"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251527"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 장치에 할당
 
@@ -29,8 +29,8 @@ ms.locfileid: "39321478"
 
 ## <a name="before-you-start"></a>시작하기 전에
 
->[!IMPORTANT]
->이 Office 설치 방법은 Microsoft Office의 다른 버전이 장치에 설치된 경우에만 지원됩니다.
+> [!IMPORTANT]
+> 최종 사용자 장치에 .msi Office 앱이 있으면 **MSI 제거** 기능을 사용하여 이러한 앱을 안전하게 제거해야 합니다. 이렇게 하지 않으면 Intune에서 제공하는 Office 365 앱이 설치되지 않습니다.
 
 - 이러한 앱을 배포할 장치에서 Windows 10 크리에이터스 업데이트 이상을 실행하고 있어야 합니다.
 - Intune에서는 Office 365 제품군에서 Office 앱을 추가하는 기능만 지원합니다.
@@ -91,6 +91,7 @@ ms.locfileid: "39321478"
         - **매월(대상 지정됨)**
         - **반년마다**
         - **반년마다(대상 지정됨)**
+    - **최종 사용자 장치에서 다른 버전의 Office(MSI) 제거**: 이 기능을 사용하면 최종 사용자 머신에서 기존의 모든 Office(MSI)를 제거할 수 있습니다. **앱 제품군 구성**에서 설치를 위해 선택한 앱뿐만 아니라 최종 사용자 장치에 있는 모든 Office(MSI) 앱이 제거됩니다.
     - **Automatically accept the app end user license agreement**(앱 최종 사용자 사용권 계약 자동으로 동의): 최종 사용자가 사용권 계약에 동의하도록 요구하지 않으려면 이 옵션을 선택합니다. Intune에서 자동으로 계약에 동의합니다.
     - **공유 컴퓨터 인증 사용**: 여러 사용자가 컴퓨터를 공유할 경우 이 옵션을 사용합니다. 자세한 내용은 [Office 365의 공유 컴퓨터 인증 개요](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)를 참조하세요.
     - **언어**: Office는 최종 사용자 장치에 Windows와 함께 설치된 지원 언어로 자동으로 설치됩니다. 앱 패키지와 함께 추가 언어를 설치하려면 이 옵션을 선택합니다.

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0d58cb3199405a8a32d169e74e4f0009841f5d09
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046250"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251846"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune에서 macOS 장치 등록 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune을 통해 macOS 장치를 관리할 수 있습니다. 장치 관리를 사용하려면 사용자가 [회사 포털 웹 사이트](http://portal.manage.microsoft.com)로 이동하여 장치를 등록하고 메시지를 따라야 합니다. macOS 장치가 관리 상태에 있으면 [macOS 장치에 대한 사용자 지정 설정을 만들](custom-settings-macos.md) 수 있습니다. 더 많은 기능이 곧 제공됩니다.
+Intune에서는 macOS 장치를 관리하여 사용자에게 회사 전자 메일 및 앱에 대한 액세스 권한을 부여할 수 있습니다.
+
+Intune 관리자는 회사 소유 macOS 장치와 개인 소유 macOS 장치("Bring Your Own Device" 또는 BYOD)에 대해 등록을 설정할 수 있습니다. 
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -39,27 +41,25 @@ macOS 장치 등록을 설정하기 전에 다음 필수 구성 요소를 완료
 - [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)에서 사용자 라이선스 할당
 - [Apple MDM Push Certificate 가져오기](apple-mdm-push-certificate-get.md)
 
-## <a name="user-owned-ios-devices-byod"></a>사용자 소유 iOS 장치(BYOD)
+## <a name="user-owned-macos-devices-byod"></a>사용자 소유 macOS 장치(BYOD)
 
-사용자가 Intune 관리에 대해 개인 장치를 등록하도록 할 수 있습니다. 이를 "Bring Your Own Device" 또는 BYOD라고 합니다. 필수 구성 요소를 완료하고 사용자 라이선스를 할당하면 앱 스토어에서 macOS 회사 포털 앱을 다운로드하고 앱에서 등록 지침을 수행할 수 있습니다.
-
-## <a name="company-owned-ios-devices"></a>회사 소유 iOS 장치
-사용자를 위해 장치를 구입하는 조직의 경우, Intune은 [장치 등록 관리자](device-enrollment-manager-enroll.md) 계정을 사용해 회사 소유 macOS 장치 등록 방법을 지원합니다.
-
-## <a name="set-up-macos-enrollment"></a>macOS 등록 설정
-
-기본적으로 Intune에서는 이미 macOS 장치 등록을 허용합니다.
-
-등록에서 macOS 장치를 차단하려면 [Set device type restrictions](enrollment-restrictions-set.md)(장치 유형 제한 설정)를 참조하세요.
-
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>회사 리소스에 액세스할 수 있도록 사용자에게 장치를 등록하는 방법 설명
-
-최종 사용자에게 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)로 가서 메시지를 따라 장치를 등록하도록 알립니다. 또한 온라인 등록 단계: [macOS Intune에서 장치 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)에 대한 링크를 최종 사용자에게 전송할 수 있습니다.
+사용자가 Intune 관리에 대해 개인 장치를 등록하도록 할 수 있습니다. 이를 "Bring Your Own Device" 또는 BYOD라고 합니다. 필수 사전 작업을 완료하고 사용자 라이선스를 할당하면 사용자는 다음과 같은 방법으로 장치를 등록할 수 있습니다.
+- [회사 포털 웹 사이트](https://portal.manage.microsoft.com)로 이동
+- 회사 포털 앱 다운로드
+또한 온라인 등록 단계: [macOS Intune에서 장치 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)에 대한 링크를 최종 사용자에게 전송할 수 있습니다.
 
 최종 사용자의 다른 작업에 대한 정보는 다음 문서를 참조하세요.
 
 - [Microsoft Intune에서 최종 사용자 환경 관련 리소스](end-user-educate.md)
 - [Intune에서 macOS 장치 사용](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="company-owned-macos-devices"></a>회사 소유 macOS 장치
+사용자를 위해 장치를 구입하는 조직의 경우, Intune은 다음과 같은 macOS 회사 소유 장치 등록 방법을 지원합니다.
+- [Apple의 DEP(장비 등록 프로그램)](device-enrollment-program-enroll-macos.md): 조직은 Apple의 DEP(장비 등록 프로그램)를 통해 iOS 장치를 구매할 수 있습니다. DEP를 통해 등록 프로필을 "무선"으로 배포하여 장치를 관리할 수 있습니다.
+- [DEM(장치 등록 관리자)](device-enrollment-manager-enroll.md): DEM 계정을 사용하여 최대 1,000개의 장치를 등록할 수 있습니다.
+
+## <a name="block-macos-enrollment"></a>macOS 등록 차단
+기본적으로 Intune에서는 macOS 장치의 등록이 허용됩니다. 등록에서 macOS 장치를 차단하려면 [Set device type restrictions](enrollment-restrictions-set.md)(장치 유형 제한 설정)를 참조하세요.
 
 ## <a name="enroll-virtual-macos-machines-for-testing"></a>테스트를 위해 macOS 가상 머신 등록
 
@@ -79,3 +79,7 @@ VMware Fusion의 경우 [.vmx 파일을 편집](https://kb.vmware.com/s/article/
 사용자가 승인되려면 최종 사용자가 macOS 회사 포털을 사용하여 등록한 후에 시스템 환경설정을 사용하여 수동으로 승인을 제공해야 합니다. 이 작업에 대한 지침은 macOS 10.13.2 이상에서 사용자의 macOS 회사 포털을 통해 제공됩니다.
 
 장치가 사용자 승인됨 상태인지 확인하려면 Intune 포털로 이동한 다음, **장치** > **모든 장치** > 장치 > **하드웨어**를 선택합니다. **사용자 승인됨** 필드를 확인합니다.
+
+## <a name="next-steps"></a>다음 단계
+
+macOS 장치가 등록되면 [macOS 장치용 사용자 지정 설정을 생성](custom-settings-macos.md)할 수 있습니다.

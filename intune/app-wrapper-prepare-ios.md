@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254538"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251651"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -172,19 +172,14 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 
 3. **동의**를 선택하여 EULA에 동의하면 패키지가 컴퓨터에 탑재됩니다.
 
-4.  **IntuneMAMPackager** 폴더를 열고 폴더 내용을 macOS 컴퓨터에 저장합니다. 이제 앱 래핑 도구를 실행할 수 있습니다.
-
-> [!NOTE]
-> Intune MAM Packager를 macOS 컴퓨터에 별도로 탑재할 수 있으며 래핑 명령을 실행하면 "파일을 찾을 수 없습니다" 오류가 발생할 수 있습니다. 따라서 IntuneMAMPackager 폴더의 내용을 이동하면 래핑하는 동안 패키지 경로를 찾을 수 있습니다.
-
 ## <a name="run-the-app-wrapping-tool"></a>앱 래핑 도구 실행
 
 ### <a name="use-terminal"></a>터미널 사용
 
-macOS 터미널 프로그램을 열고 앱 래핑 도구 파일을 저장한 폴더로 이동합니다. 실행 가능한 도구의 이름은 IntuneMAMPackager이고 IntuneMAMPackager/Contents/MacOS에 위치합니다. 다음과 같이 명령을 실행합니다.
+macOS 터미널을 열고 다음 명령을 실행합니다.
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
@@ -405,6 +400,29 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 -   파일 업로드 대화 상자를 포함하는 iOS 앱에서는 사용자가 앱에 적용된 잘라내기, 복사, 붙여넣기 제한을 우회할 수 있습니다. 예를 들어 사용자가 파일 업로드 대화 상자를 사용하여 앱 데이터의 스크린샷을 업로드할 수 있습니다.
 
 -   래핑된 앱 내에서 장치의 문서 폴더를 모니터링할 때는 .msftintuneapplauncher라는 폴더가 표시될 수 있습니다. 이 파일을 변경하거나 삭제하면 제한된 앱이 정상적으로 작동하지 않을 수 있습니다.
+
+## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>iOS용 Intune 앱 래핑 도구(Citrix MDX mVPN 포함)
+이 기능은 앱 래핑 도구를 iOS용 Citrix MDX 앱 래퍼에 통합합니다. 통합이 수행되면 일반 Intune 앱 래핑 도구에 추가적인 선택적 명령줄 플래그 `-citrix`가 추가됩니다.
+
+### <a name="requirements"></a>요구 사항
+
+`-citrix` 플래그를 사용하려면 동일한 macOS 머신에 [iOS용 Citrix MDX 앱 래퍼](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)를 설치해야 합니다. 다운로드 파일은 [Citrix XenMobile 다운로드](https://www.citrix.com/downloads/xenmobile/)에서 확인할 수 있으며, 로그인한 Citrix 고객만 다운로드할 수 있습니다. 기본 위치 `/Applications/Citrix/MDXToolkit`에 iOS용 Citrix MDX 앱 래퍼가 설치되어 있는지 확인합니다. 
+
+> [!NOTE] 
+> Intune과 Citrix 통합에 대한 지원은 iOS 10 이상의 장치에서만 지원됩니다.
+
+### <a name="use-the--citrix-flag"></a>`-citrix` 플래그 사용
+일반적인 앱 래핑 명령에 `-citrix` 플래그를 덧붙여 실행합니다. 현재 `-citrix` 플래그는 인수를 지원하지 않습니다.
+
+**사용 형식**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
+```
+
+**명령 예**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
+```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>래핑된 응용 프로그램에 대한 로그 가져오기
 문제 해결 중에 래핑된 응용 프로그램에 대한 로그를 가져오려면 다음 단계를 따르세요.

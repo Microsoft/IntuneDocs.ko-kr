@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
+ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744672"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40251497"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP 사용
 
@@ -44,7 +44,7 @@ Intune을 사용하여 허용되는 위험 수준을 결정하는 준수 정책�
 
 Intune에서 ATP를 사용하려면 다음을 구성했으며 사용할 준비가 되었는지 확인합니다.
 
-- Enterprise Mobility + Security E5 및 Windows E5(또는 Microsoft 365 Enterprise E5)에 대한 라이선스가 부여된 테넌트
+- Enterprise Mobility + Security E3 및 Windows E5(또는 Microsoft 365 Enterprise E5)에 대한 라이선스가 부여된 테넌트
 - Azure AD에 연결된 [Intune 관리](windows-enroll.md) Windows 10 장치가 포함된 Microsoft Intune 환경
 - [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 및 Windows Defender 보안 센터(ATP 포털)에 대한 액세스 권한
 

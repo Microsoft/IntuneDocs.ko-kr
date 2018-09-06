@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5658bf2e1ee250ef9fd405b3f7ec1772b166f338
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6b66cd00f734cab3ca85f6d87f056f8c482a377d
+ms.sourcegitcommit: 2811df0f851ca6b08f6ae8c926fb2e6971c41690
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020999"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251733"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Intune을 통해 새로 시작 기능을 사용하여 Windows 10 장치 다시 설정
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**새로 시작** 장치 작업은 크리에이터스 업데이트를 실행하는 Windows 10 PC에 설치된 모든 앱을 제거합니다. 그런 다음, PC를 최신 버전의 Windows로 자동으로 업데이트합니다.
+**새로 시작** 장치 작업은 Windows 10 버전 1703 이상을 실행하는 PC에 설치된 모든 앱을 제거합니다. 새로 시작을 통해 일반적으로 새로운 PC에 설치되는 사전 설치된(OEM) 앱을 제거할 수 있습니다.  
 
-이 작업을 통해 새로운 PC에서 일반적으로 설치된 사전 설치된(OEM) 앱을 제거할 수 있습니다. 사용자의 홈 폴더의 콘텐츠를 유지하고 앱 및 설정을 제거하려면 `if user data is retained` 설정을 사용합니다.
-
-> [!IMPORTANT]
-> 새로 시작은 Intune에서 장치 등록을 취소하지만 장치가 Azure Active Directory에 계속 가입됩니다.
-
-## <a name="use-fresh-start"></a>새로 시작 사용
-
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
-2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **장치**를 선택한 다음, **모든 장치**를 선택합니다.
-4. 관리하는 장치 목록에서 Windows 10 데스크톱 장치를 선택한 다음, **새로 시작**을 선택합니다.
-
-## <a name="next-steps"></a>다음 단계
-
-이 작업의 상태를 보려면 **장치 작업**(**Microsoft Intune** > **장치**)을 선택합니다.
+1. [Azure Portal](https://portal.azure.com)에 로그인하고 **Microsoft Intune** > **장치** > **모든 장치**로 이동합니다.
+2. 관리하는 장치 목록에서 Windows 10 데스크톱 장치를 선택합니다.
+3. **새로 시작**을 클릭합니다. 
+4. **이 장치에 사용자 데이터 유지**를 선택합니다. 이렇게 하면
+   * 장치의 Azure Active Directory를 조인된 상태로 유지할 수 있습니다.
+    * 모바일 장치 관리에 장치가 등록된 상태로 유지할 수 있습니다. 
+    * 장치 사용자의 홈 폴더에 있는 콘텐츠를 유지하고 앱과 설정을 제거할 수 있습니다.  
+  > [!IMPORTANT]
+ > 사용자 데이터를 유지하지 않으면 장치가 초기 상태로 복원되고 Azure Active Directory 및 모바일 장치 관리에서 등록이 취소됩니다. 
+ 
+5. **확인**을 클릭합니다.   
+6. 이 작업의 상태를 보려면 **장치**로 돌아가서 **장치 작업**을 클릭합니다.  

@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905243"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251668"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune에 웹앱 추가
 
@@ -45,7 +45,11 @@ Intune에 앱을 웹용 앱의 바로 가기로 추가하려면 다음 작업을
 6. **앱 추가** 창의 **앱 유형** 드롭다운 목록에서 **웹 링크** 유형을 선택합니다.
 7. **구성**을 선택합니다.
 8. **앱 정보** 창에서 다음 정보를 추가합니다.
-    - **이름**: 회사 포털에 표시되는 앱 이름을 입력합니다.
+    - **이름**: 회사 포털에 표시하려는 앱 이름을 입력합니다. 
+    
+        > [!NOTE]
+        > 앱을 배포하고 설치한 뒤에 Intune Azure Portal에서 앱의 이름을 변경하면 더 이상 명령을 사용하여 앱을 대상으로 지정할 수 없습니다.
+    
     - **설명**: 앱에 대한 설명을 입력합니다. 이 설명은 회사 포털에서 사용자에게 표시됩니다.
     - **게시자**: 이 앱의 게시자 이름을 입력합니다.
     - **앱 URL**: 할당할 앱을 호스트하는 웹 사이트의 URL을 입력합니다.

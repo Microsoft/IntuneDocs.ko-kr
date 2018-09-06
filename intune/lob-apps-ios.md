@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e76e8940334e90f41fe5e5132f9210d69359f74a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 9ee132a1b1c79e9829e5d28dc33b5cac2e52c8ac
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224248"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251949"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 iOS 기간 업무 앱 추가
 
@@ -72,6 +72,9 @@ ms.locfileid: "34224248"
 2. **추가**를 선택하여 Intune에 앱을 업로드합니다.
 
 이제 만든 앱이 앱 목록에 나타납니다. 목록에서 선택한 그룹에 앱을 할당할 수 있습니다. 도움말은 [그룹에 앱을 할당하는 방법](apps-deploy.md)을 참조하세요.
+
+> [!NOTE]
+> iOS LOB 앱의 프로비전 프로필은 만료되기 30일 전에 만료 사실이 안내됩니다.
 
 ## <a name="step-5-update-a-line-of-business-app"></a>5단계: 기간 업무 앱 업데이트
 
