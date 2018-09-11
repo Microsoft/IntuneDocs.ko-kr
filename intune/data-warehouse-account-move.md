@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b34bb7c3f3db9ebb3cdd89b429aaeb530d7ad796
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330299"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141633"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune 데이터 웨어하우스 계정 데이터 이동 
 
@@ -63,8 +63,6 @@ Azure Portal 보기의 일부 추세 차트가 다시 설정됩니다. **그래�
 ## <a name="device-enrollment-charts"></a>장치 등록 차트
 1. Azure Portal에서 **Microsoft Intune** -> **DeviceEnrollment**로 이동합니다.
 2. Microsoft [그래프 탐색기](https://developer.microsoft.com/graph/graph-explorer)를 사용하여 차트의 기본 데이터를 다운로드합니다.
-    - 등록 상태는 다음을 참조하세요. 
-    - 이번 주의 상위 등록 실패를 보려면 
     - 등록 상태를 보려면 이 [등록 상태 쿼리](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content)를 복사하여 [그래프 탐색기](https://developer.microsoft.com/graph/graph-explorer)에 붙여넣습니다.
     - 이번 주의 상위 등록 실패를 보려면 이 [등록 실패 쿼리](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content)를 복사하여 [그래프 탐색기](https://developer.microsoft.com/graph/graph-explorer)에 붙여넣습니다.
 
