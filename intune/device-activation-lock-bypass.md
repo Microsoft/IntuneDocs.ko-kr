@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
-ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
+ms.openlocfilehash: b37c210425fd5abf8fd0b0501966fef8196b451b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39356576"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312624"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune을 사용하여 감독된 iOS 장치에서 활성화 잠금 무시
 
@@ -78,9 +78,9 @@ Intune **활성화 잠금 무시** 원격 장치 작업으로 사용자의 Apple
 6. 장치의 "하드웨어" 섹션으로 이동한 다음, **조건부 액세스**에서 **활성화 잠금 무시 코드** 값을 복사합니다.
 
     >[!NOTE]
-    >장치를 출하 시 설정으로 리셋하기 전에 무시 코드를 복사합니다. 코드를 복사하기 전에 장치 설정을 다시 설정하는 경우 코드가 Azure에서 제거됩니다.
+    >장치를 초기화하기 전에 무시 코드를 복사합니다. 코드를 복사하기 전에 장치 설정을 다시 설정하는 경우 코드가 Azure에서 제거됩니다.
 
-7.  장치에 대한 **개요** 블레이드로 이동한 다음, **출하 시 설정으로 리셋**을 선택합니다.
+7.  장치에 대한 **개요** 블레이드로 이동한 다음, **초기화**를 선택합니다.
 8.  장치를 다시 설정한 후 *Apple ID* 및 *암호*를 묻는 메시지가 표시됩니다. *ID* 필드를 공란으로 내버려둔 다음, *암호*에 대해 **무시 코드**를 입력합니다. 이렇게 하면 장치에서 계정이 제거됩니다. 
 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
-ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
+ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251883"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313720"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -35,15 +35,15 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 
 - 등록된 장치의 최대 수
 - 등록할 수 있는 장치 플랫폼:
-  - Android:
+  - Android
   - Android 회사 프로필
   - iOS
   - macOS
-  - 지원합니다.
+  - Windows
 - iOS, Android, Android 회사 프로필 및 Windows용 플랫폼 운영 체제 버전입니다. (Windows 10 버전만을 사용할 수 있습니다. Windows 8.1을 허용하는 경우 이 항목을 비워둡니다.)
   - 최소 버전
   - 최대 버전
-- 개인 소유 장치 제한(iOS, Android, Android 회사 프로필, macOS만 해당).
+- 개인 소유 장치 제한(iOS, Android, Android 회사 프로필, macOS, Windows만 해당).
 
 ## <a name="default-restrictions"></a>기본 제한 사항
 
@@ -66,28 +66,46 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 
 ## <a name="set-device-type-restrictions"></a>장치 유형 제한 설정
 
-장치 유형 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다.
+장치 유형 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다. 이러한 제한 사항은 이미 등록된 장치에 적용되지 않습니다. [Intune PC 에이전트](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다.
 
 1. Azure Portal에 로그인합니다.
 2. **추가 서비스**를 선택하고 **Intune**을 검색한 다음, **Intune**을 선택합니다.
 3. **장치 등록** > **등록 제한**을 선택합니다.
-4. **장치 유형 제한**에서 설정하려는 제한을 선택합니다.
-5. 제한 이름(기본 제한의 **모든 사용자**)에서 **플랫폼**을 선택합니다. 각 플랫폼 목록에 대해 **허용** 또는 **차단**을 선택합니다.
-6. **저장**을 선택합니다.
-7. 제한 이름(기본 제한의 **모든 사용자**)에서 **플랫폼 구성**을 선택합니다. 그럼 다음, 나열된 플랫폼에 대한 최소 및 최대 **버전**을 선택합니다. 지원되는 버전 형식은 다음과 같습니다.
+4. **장치 유형 제한**에서 설정하려는 제한 **속성** > **플랫폼 선택**을 선택합니다. 각 플랫폼 목록에 대해 **허용** 또는 **차단**을 선택합니다.
+    ![플랫폼 허용 또는 차단에 대한 화면 제한](media/enrollment-restrictions-set/platform-allow-block.png)
+5. **확인**을 선택합니다.
+6. **플랫폼 구성**을 선택합니다.
+    ![플랫폼 구성에 대한 화면 제한](media/enrollment-restrictions-set/configure-platforms.png)
+7. 나열된 플랫폼에 대한 최소 및 최대 **버전**을 선택합니다. 지원되는 버전 형식은 다음과 같습니다.
     - Android 회사 프로필은 major.minor.rev.build를 지원합니다.
-    - iOS는 major.minor.rev를 지원합니다.
+    - iOS는 major.minor.rev를 지원합니다. 운영 체제 버전은 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator 앱에 등록되는 Apple 장치에 적용되지 않습니다.
     - Windows는 Windows 10용 major.minor.rev.build만 지원합니다.
-  운영 체제 버전은 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator 앱에 등록되는 Apple 장치에 적용되지 않습니다.
-8. 나열된 각 플랫폼에서 **개인적으로 소유한**장치를 **허용**할지 **차단**할지 지정합니다.
-    ![개인적으로 소유한 설정이 구성된 기본 장치 플랫폼 구성이 표시되는 장치 제한 작업 영역](media/device-restrictions-platform-configurations.png)
-9. **저장**을 선택합니다.
+8. 나열된 각 플랫폼에서 **개인적으로 소유한** 장치를 **허용**할지 **차단**할지 선택합니다.
+9. **확인**을 선택합니다.
 
+### <a name="android-device-type-restrictions"></a>Android 장치 유형 제한
+- 개인적으로 소유한 Android 장치의 등록을 차단하는 경우에도 개인적으로 소유한 Android 회사 프로필 장치는 계속 등록할 수 있습니다.
+- 기본적으로 Android 회사 프로필 장치 설정은 Android 장치에 대한 설정과 동일합니다. Android 회사 프로필 설정을 변경하면 달라집니다.
+- 개인적인 Android 회사 프로필 등록을 차단하는 경우 회사 Android 장치만 Android 회사 프로필로 등록할 수 있습니다.
 
->[!NOTE]
->- 개인적으로 소유한 Android 장치의 등록을 차단하는 경우에도 개인적으로 소유한 Android 회사 프로필 장치는 계속 등록할 수 있습니다.
->- 기본적으로 Android 회사 프로필 장치 설정은 Android 장치에 대한 설정과 동일합니다. Android 회사 프로필 설정을 변경하면 달라집니다.
->- 개인적인 Android 회사 프로필 등록을 차단하는 경우 회사 Android 장치만 Android 회사 프로필로 등록할 수 있습니다.
+### <a name="windows-device-type-restrictions"></a>Windows 장치 유형 제한
+Windows 플랫폼 장치 유형 제한 사항이 **차단**으로 설정되면 Intune에서 각각의 새 Windows 등록 요청이 회사 등록 권한으로 부여되었는지 확인합니다. 권한이 없는 등록은 차단됩니다.
+
+다음은 Windows 회사 등록 권한으로 부여된 것으로 인정되는 방법입니다.
+ - 등록하는 사용자가 [장치 등록 관리자 계정]( device-enrollment-manager-enroll.md)을 사용하고 있습니다.
+- 장치에서 [Windows AutoPilot](enrollment-autopilot.md)을 통해 등록합니다.
+- 장치의 IMEI 번호가 **장치 등록** > **[회사 장치 식별자](corporate-identifiers-add.md)** 에 나열되어 있습니다. (Windows Phone 8.1에 대해 지원되지 않음)
+- 장치에서 [대량 프로비전 패키지](windows-bulk-enroll.md)를 통해 등록합니다.
+- 장치에서 [SCCM에서 공동 관리를 위한 자동 등록](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)을 통해 등록합니다.
+ 
+Intune에서 회사로 표시되지만 Intune 관리자가 장치별 제어를 제공하지 않으므로 차단되는 등록은 다음과 같습니다.
+ - [Windows 설치 중에 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- [Windows 설정에서 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).
+ 
+또한 차단되는 개인 등록 방법도 다음과 같습니다.
+- [Windows 설정에서 회사 계정 추가](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)를 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment)
+- Windows 설정의 [MDM 등록만]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) 옵션
+
 
 ## <a name="set-device-limit-restrictions"></a>장치 개수 제한
 

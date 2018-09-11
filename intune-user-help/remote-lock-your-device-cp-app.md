@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4774cdc54a526f25b006c0c3d1a745ab96005c3a
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 5b3fbd677eea9143bf5cb297253303330129ef25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33676633"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148581"
 ---
-# <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>Windows 10용 회사 포털 앱에서 장치 원격 잠금
+# <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Windows 10용 회사 포털 앱에서 장치 잠금
 
-Windows 10용 회사 포털 앱에서 분실 또는 도난당한 장치 원격 잠금. 장치에서 지원되는 경우 장치가 어디에 있든 회사 포털 앱이 장치 화면을 잠급니다. 잠금을 해제하려면 암호가 필요합니다.
+Windows 10용 회사 포털 앱에서 분실 또는 도난당한 장치 원격 잠금. 장치에서 지원되는 경우 장치가 어디에 있든 이 설정이 장치의 화면을 잠급니다. 사용자는 장치를 잠금 해제 및 다시 사용하려면 먼저 올바른 암호를 입력해야 합니다.
 
 원격 잠금은 다음 운영 체제를 실행하는 장치에서 지원됩니다.
 
@@ -43,4 +43,4 @@ Windows 10용 회사 포털 앱에서 분실 또는 도난당한 장치 원격 �
    ![회사 포털 앱, 장치 세부 정보 페이지, 원격 잠금 확인 프롬프트 스크린샷.](./media/1804_remote_lock_Windows_CPapp_06.png)  
 4. 장치를 찾은 경우 암호를 입력하여 장치 잠금을 해제할 수 있습니다.  
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

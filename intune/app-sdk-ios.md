@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
-ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
+ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39249729"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241884"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -241,7 +241,7 @@ AccentColor | 문자열| PIN 화면의 테마 컬러(예: 단추 텍스트 색 �
 MAMTelemetryDisabled| 부울| SDK가 원격 분석 데이터를 해당 백 엔드로 보내는지를 지정합니다.| 선택 사항입니다. 기본값은 no입니다. |
 MAMTelemetryUsePPE | 부울 | MAM SDK가 PPE 원격 분석 백 엔드에 데이터를 전송할지 여부를 지정합니다. 테스트 원격 분석 데이터가 고객 데이터와 혼합되지 않도록 Intune 정책을 사용하여 앱을 테스트하는 경우 이 설정을 사용합니다. | 선택 사항입니다. 기본값은 no입니다. |
 MaxFileProtectionLevel | 문자열 | 선택 사항입니다. 앱에서 지원할 수 있는 최대 `NSFileProtectionType`을 지정할 수 있습니다. 이 값은 서비스에서 보낸 정책이 응용 프로그램에서 지원할 수 있는 수준보다 높은 경우 해당 정책을 재정의합니다. 가능한 값은 `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`입니다.|
-OpenInActionExtension | 부울 | Open-In Action 확장은 YES로 설정합니다. 자세한 내용은 UIActivityViewController를 통한 데이터 공유 섹션을 참조하세요. |
+OpenInActionExtension | 부울 | Open in Action 확장은 YES로 설정합니다. 자세한 내용은 UIActivityViewController를 통한 데이터 공유 섹션을 참조하세요. |
 WebViewHandledURLSchemes | 문자열 배열 | 앱의 WebView에서 처리하는 URL 스키마를 지정합니다. | 앱에서 링크 및/또는 javascript를 통해 URL을 처리하는 WebView를 사용하는 경우 필요합니다. |
 
 ## <a name="receive-app-protection-policy"></a>앱 보호 정책 받기
@@ -465,7 +465,7 @@ Intune 앱 SDK는 릴리스 8.0.2부터 `UIActivityViewController` 작업을 필
 
 ### <a name="copy-to-actions"></a>‘복사’ 작업
 
-`UIActivityViewController` 및 `UIDocumentInteractionController`를 통해 문서를 공유하는 경우 iOS에서 공유되는 문서의 열기를 지원하는 각 응용 프로그램에 대해 ‘복사’ 작업이 표시됩니다. 응용 프로그램은 Info.plist에 있는 `CFBundleDocumentTypes` 설정을 통해 지원하는 문서 종류를 선언합니다. 정책에서 관리되지 않는 응용 프로그램에 공유를 금지하는 경우에는 이 유형의 공유를 더 이상 사용할 수 없습니다. 대신, 응용 프로그램에서 UI가 아닌 작업 확장을 해당 응용 프로그램에 추가하고 Intune 앱 SDK에 연결해야 합니다. 작업 확장은 스텁에 불과합니다. SDK는 파일 공유 동작을 구현합니다. 아래 단계를 따릅니다.
+`UIActivityViewController` 및 `UIDocumentInteractionController`를 통해 문서를 공유하는 경우 iOS에서 공유되는 문서의 열기를 지원하는 각 응용 프로그램에 대해 ‘복사’ 작업이 표시됩니다. 응용 프로그램은 Info.plist에 있는 `CFBundleDocumentTypes` 설정을 통해 지원하는 문서 종류를 선언합니다. 정책에서 관리되지 않는 응용 프로그램에 공유를 금지하는 경우에는 이 유형의 공유를 더 이상 사용할 수 없습니다. 대신, 사용자는 UI가 아닌 작업 확장을 해당 응용 프로그램에 추가하고 Intune 앱 SDK에 연결해야 합니다. 작업 확장은 스텁에 불과합니다. SDK는 파일 공유 동작을 구현합니다. 아래 단계를 따릅니다.
 
 1. 응용 프로그램의 Info.plist `CFBundleURLTypes` 아래에 schemeURL이 하나 이상 정의되어 있어야 합니다.
 

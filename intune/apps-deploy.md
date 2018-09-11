@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 96b95fcbfdc970976e24553972c5890f35cfddb2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164572"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329481"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
@@ -52,7 +52,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 장치에 �
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 메뉴에서 **모바일 앱**을 선택합니다.
+3. **Intune** 메뉴에서 **클라이언트 앱**을 선택합니다.
 4. 메뉴의 **관리** 섹션에서 **앱**을 선택합니다.
 5. **앱** 창에서 할당하려는 앱을 선택합니다.
 6. 메뉴의 **관리** 섹션에서 **할당**을 선택합니다.

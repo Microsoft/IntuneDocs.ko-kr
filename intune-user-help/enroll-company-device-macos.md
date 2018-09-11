@@ -1,11 +1,11 @@
 ---
-title: 회사 소유 또는 제공된 macOS 장치 관리 등록 | Microsoft Docs
+title: 관리에 조직 제공 macOS 장치 등록 | Microsoft Docs
 description: 조직에서 구입하여 제공한 Intune에서 macOS 장치를 등록하는 방법에 대해 설명합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 272a82f7d3d62d117fa5506ccf446b3169ff514f
-ms.sourcegitcommit: bb56ada81e6d4950f130415918c4acc455bb52dd
+ms.openlocfilehash: a5808a0ac80390b76058827d2ca0870249b043b9
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016230"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241833"
 ---
-# <a name="get-your-company-owned-macos-device-managed"></a>회사 소유 macOS 장치 관리
+# <a name="enroll-your-organization-provided-macos-device-in-management"></a>관리에 조직 제공 macOS 장치 등록
 
-Intune에서 자동으로 관리되는 새 macOS 장치를 가져오는 방법에 대해 알아봅니다.
+Intune에서 새 macOS 장치를 관리하는 방법을 알아봅니다.  
 
-회사 및 학교 소유 장치는 받기 전에 미리 구성된 경우가 많습니다. 장치를 켜고 처음 로그인할 때 조직에서는 미리 구성된 설정을 장치로 보냅니다. 장치에서 설정을 완료한 후 회사 또는 학교 리소스에 액세스할 수 있습니다. 
+회사 또는 학교에서 제공되는 장치는 받기 전에 종종 미리 구성됩니다. 장치를 켜고 처음 로그인하면 조직에서는 이러한 미리 구성된 설정을 장치로 보냅니다. 장치에서 설정을 완료한 후 회사 또는 학교 리소스에 액세스할 수 있습니다. 
 
 관리 설정을 시작하려면 장치의 전원을 켜고 회사 또는 학교 자격 증명으로 로그인합니다. 이 문서의 나머지 부분에서는 설정 도우미를 통해 볼 수 있는 단계와 화면에 대해 설명합니다.   
 
 ## <a name="what-is-apple-dep"></a>Apple DEP란?
-회사 소유 장치가 있는 경우 Apple DEP(장치 등록 프로그램)에서 구입했을 수 있습니다. 일부 조직은 Apple DEP를 통해 iOS 또는 macOS 장치를 구입합니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 장치 관리 공급자 내에서 장치를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 macOS 장치 등록](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)을 참조하세요.  
+조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 장치를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 장치를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 장치 관리 공급자 내에서 해당 장치를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 macOS 장치 등록](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)을 참조하세요.  
 
 ## <a name="set-up-your-macos-device"></a>macOS 장치 설정  
-macOS 장치를 관리에 등록하려면 다음 단계를 완료합니다. 회사 소유 장치가 아닌 자신의 장치를 사용하는 경우 [개인용 및 개인 소유 장치 가져오기](enroll-your-device-in-intune-macos-cp.md)의 단계를 따릅니다.  
+macOS 장치를 관리에 등록하려면 다음 단계를 완료합니다. 조직 제공 장치가 아닌 자신의 장치를 사용하는 경우 [개인용 및 개인 소유 장치 가져오기](enroll-your-device-in-intune-macos-cp.md)의 단계를 따릅니다.  
 
 1. macOS 장치 전원을 켭니다. 
 2. **언어**를 선택하고 **계속**을 클릭합니다.  
@@ -64,4 +64,4 @@ macOS 장치를 관리에 등록하려면 다음 단계를 완료합니다. 회�
 ## <a name="get-the-company-portal-app"></a>회사 포털 앱 가져오기      
 App Store로 이동하여 장치에서 Intune 회사 포털 앱을 가져옵니다. 이 앱을 사용하면 관리에서 장치를 모니터링, 동기화, 추가 및 제거하고 앱을 설치할 수 있습니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

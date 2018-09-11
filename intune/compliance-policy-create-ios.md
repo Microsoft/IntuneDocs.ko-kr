@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442647"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313088"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune에서 iOS 장치에 대한 장치 준수 정책 추가
 
@@ -106,6 +106,11 @@ Intune iOS 장치 준수 정책은 iOS 장치가 준수하도록 충족해야 �
 - **암호를 요구하기 전까지 최대 비활성 시간(분)**: 사용자가 해당 시간 내에 자신의 암호를 다시 입력해야 하는 유휴 시간을 입력합니다.
 - **암호 만료(일)**: 암호가 만료되기 전에 새로 만들어야 하는 일수를 선택합니다.
 - **재사용을 방지하기 위한 이전 암호 수**: 사용할 수 없는, 이전에 사용된 암호 수를 입력합니다.
+
+### <a name="restricted-applications"></a>제한된 응용 프로그램 
+정책에 해당 번들 ID를 추가하여 앱을 제한할 수 있습니다. 그런 다음, 장치에 앱이 설치되어 있으면 장치는 비준수로 표시됩니다. 
+- **앱 이름**: 번들 ID를 식별할 수 있도록 친숙한 이름을 입력합니다. 
+- **앱 번들 ID**: 앱 공급자가 할당한 고유한 번들 식별자를 입력합니다. 번들 ID를 찾으려면 [iOS 앱에 대한 번들 ID를 찾는 방법](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)을 참조하세요.  
 
 ## <a name="assign-user-groups"></a>사용자 그룹 할당
 

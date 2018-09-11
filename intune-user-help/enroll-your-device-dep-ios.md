@@ -1,11 +1,11 @@
 ---
-title: 장비 등록 프로그램을 통해 iOS 장치 등록 | Microsoft Docs
-description: DEP를 통해 Intune에서 iOS 장치를 등록하는 방법을 설명합니다.
+title: 관리에 조직 제공 iOS 장치를 등록합니다. | Microsoft 문서
+description: 조직에서 구입하여 제공한 Intune에서 iOS 장치를 등록하는 방법에 대해 설명합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9d1154d942069ad69294d4235c894f88513dd848
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b93f02011b0900b1a64ae6cb10a84a52cd40187a
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016410"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241799"
 ---
-# <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>장비 등록 프로그램을 통해 Intune에서 iOS 장치 등록
+# <a name="enroll-your-organization-provided-ios-device-in-management"></a>관리에 조직 제공 iOS 장치 등록
 
-장비 등록 프로그램은 회사가 쉽게 많은 수의 iOS 장치를 관리할 수 있도록 Apple에서 제공하는 기능입니다. 회사에서 BYOD(Bring Your Own Device)를 허용하는 경우 이 페이지의 단계가 아니라 [일반 iOS 등록 단계](enroll-your-device-in-intune-ios.md)를 따르세요. 회사로부터 iOS 장치를 제공받았고 장비 등록 프로그램의 일부라고 들은 경우 다음 내용을 계속 읽어 보세요.
+Intune에서 새 iOS 장치를 관리하는 방법을 알아봅니다.  
+
+회사 또는 학교에서 제공되는 iOS 장치는 받기 전에 종종 미리 구성됩니다. 장치를 켜고 처음 로그인하면 조직에서는 이러한 미리 구성된 설정을 장치로 보냅니다. 장치에서 설정을 완료한 후 회사 또는 학교 리소스에 액세스할 수 있습니다.  
+
+설정을 시작하려면 장치의 전원을 켜고 회사 또는 학교 자격 증명으로 로그인합니다. 이 문서의 나머지 부분에서는 설정 도우미를 통해 볼 수 있는 단계와 화면에 대해 설명합니다. 
+
+## <a name="what-is-apple-dep"></a>Apple DEP란?
+조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 장치를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 장치를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 장치 관리 공급자 내에서 해당 장치를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 iOS 장치 등록](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)을 참조하세요.  
+
+## <a name="set-up-your-ios-device"></a>iOS 장치 설정  
+조직 제공 장치가 아닌 자신의 iOS 장치를 사용하는 경우 [개인용 및 개인 소유 장치 가져오기](enroll-your-device-in-intune-ios.md)의 단계를 따릅니다.  
 
 1. iOS 장치를 켭니다. 
 2. **언어**를 선택하고 장치를 Wi-Fi에 연결합니다.
@@ -46,4 +56,4 @@ ms.locfileid: "31016410"
 6. **사용 약관**에 동의하고 진단 정보를 Apple로 보낼 것인지 결정합니다.
 7. 등록이 완료되면 추가 작업을 수행하라는 메시지가 장치에 표시됩니다. 이러한 단계에서 이메일 액세스를 위한 암호를 입력하거나 암호를 설정합니다.
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

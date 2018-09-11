@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254487"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329413"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -33,7 +33,7 @@ Intune 앱 보호 정책을 사용하면 최종 사용자가 회사 앱 또는 �
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다.  
     Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱** > **앱 보호 정책**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱** > **앱 보호 정책**을 선택합니다.
 4. **정책 추가**(기존 정책을 편집할 수도 있음)를 클릭합니다. 
 5. **필요한 설정 구성**을 클릭하여 정책에 대해 구성할 수 있는 설정 목록을 볼 수 있습니다. 
 6. 설정 창에서 아래로 스크롤하면 편집 가능한 테이블이 있는 **액세스 작업**이라는 섹션이 표시됩니다.

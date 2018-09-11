@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bea51227798e239bb74154e4d97e3efd6d55f807
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232270"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313601"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune에서 개인 데이터 감사, 내보내기 또는 삭제
 
@@ -64,8 +64,8 @@ Intune에서 최종 사용자의 개인 데이터를 삭제하려면 관리자�
 ### <a name="user-self-removal-from-intune-management"></a>Intune 관리 대상에서 사용자 자체 제외
 사용자는 관리자의 도움 없이 [Android, Apple 또는 Windows](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) 개인 장치를 Intune 관리 대상에서 제외할 수 있습니다.   
 
-### <a name="remove-company-data"></a>회사 데이터 제거
-회사 데이터를 제거하면 회사 응용 프로그램과 같은 Intune 제공 데이터, Intune이 관리하는 앱 관련 데이터, 정책 설정 및 Intune을 통해 제공되는 이메일 프로필이 제거됩니다. 이 작업은 장치에 사용자의 개인 데이터를 남깁니다.
+### <a name="retire"></a>사용 중지
+**사용 중지** 작업은 회사 응용 프로그램과 같은 Intune 제공 데이터, Intune이 관리하는 앱 관련 데이터, 정책 설정 및 Intune을 통해 프로비전되는 이메일 프로필을 제거합니다. 이 작업은 장치에 사용자의 개인 데이터를 남깁니다.
 
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>Microsoft Intune에서 테넌트 삭제
 

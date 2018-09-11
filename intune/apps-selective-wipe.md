@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c394be6130a874e7ce2fb1b6e3c244cad98f80
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905277"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329548"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune 관리 앱에서 회사 데이터만 초기화하는 방법
 
@@ -40,7 +40,7 @@ ms.locfileid: "37905277"
 
 1.  [Azure 포털](https://portal.azure.com)에 로그인합니다.
 
-2.  **모든 서비스**를 선택하고 필터 텍스트 상자에 **Intune**을 입력하고 **Intune**을 선택합니다. Intune 창이 열리면 **모바일 앱** 창을 선택합니다.
+2.  **모든 서비스**를 선택하고 필터 텍스트 상자에 **Intune**을 입력하고 **Intune**을 선택합니다. Intune 창이 열리면 **클라이언트 앱** 창을 선택합니다.
 
     ![Microsoft Intune 창 스크린샷](./media/apps-selective-wipe01.png)
 

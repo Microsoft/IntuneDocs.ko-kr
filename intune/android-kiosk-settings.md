@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949546"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329386"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune에서 Android 장치에 대한 키오스크 설정
 
@@ -55,7 +55,7 @@ ms.locfileid: "37949546"
 
 1. [Google Play에서 관리되는 홈 화면 페이지](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise)로 이동하여 다른 관리되는 Google Play 앱에 사용하는 동일한 계정으로 로그인합니다.
 2. **승인**을 선택합니다.
-3. [Intune 포털](https://portal.azure.com)로 이동하여 **모바일 앱** > **관리되는 Google Play** > **동기화**를 선택합니다.
+3. [Intune 포털](https://portal.azure.com)로 이동하여 **클라이언트 앱** > **관리되는 Google Play** > **동기화**를 선택합니다.
 4. **앱** > **관리되는 홈 화면** > **할당** > **그룹 추가**를 선택합니다.
 5. **할당 유형** 아래에서 **필수**를 선택합니다.
 6. **그룹 포함** > **포함할 그룹 선택** > 키오스크 장치용으로 만든 장치 그룹 선택 > **선택** > **확인** > **확인** > **저장**을 선택합니다.
@@ -65,13 +65,13 @@ ms.locfileid: "37949546"
 키오스크 장치에서 사용하려는 각 앱에 대해 다음 단계를 따릅니다.
 
 1. [Intune에 앱 추가](store-apps-android.md).
-2. **모바일 앱** > **앱** > 앱 선택 > **할당** > **그룹 추가**를 선택합니다.
+2. **클라이언트 앱** > **앱** > 앱 선택 > **할당** > **그룹 추가**를 선택합니다.
 3. **할당 유형** 아래에서 **필수**를 선택합니다.
 4. **그룹 포함** > **포함할 그룹 선택** > 키오스크 장치용으로 만든 장치 그룹 선택 > **선택** > **확인** > **확인** > **저장**을 선택합니다.
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>키오스크 모드에서 사용할 수 있는 웹 링크 추가
 
-1. [Intune 포털](https://portal.azure.com)로 이동하여 **모바일 앱** > **앱** > **추가**를 선택합니다.
+1. [Intune 포털](https://portal.azure.com)로 이동하여 **클라이언트 앱** > **앱** > **추가**를 선택합니다.
 2. **앱 유형** 아래에서 **웹 링크**를 선택합니다.
 3. **구성**을 선택하고 필요한 정보를 제공합니다. 로고 이미지는 웹 사이트의 favicon.ico에서 자동으로 검색되므로 추가할 필요가 없습니다.
 4. **확인** > **추가**를 선택합니다.

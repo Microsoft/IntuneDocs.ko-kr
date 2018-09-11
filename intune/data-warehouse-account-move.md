@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f1b2af2723ddb4c89f7f3d6409ced12f7a16883a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223665"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330299"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune 데이터 웨어하우스 계정 데이터 이동 
 
@@ -45,7 +45,7 @@ Azure Portal 보기의 일부 추세 차트가 다시 설정됩니다. **그래�
 3. 보고서를 로컬에 저장합니다.
  
 ### <a name="app-protection-reports"></a>앱 보호 보고서  
-1. Azure Portal에서 **Microsoft Intune** -> **Mobile Apps** -> **앱 보호 상태**로 이동합니다.
+1. Azure Portal에서 **Microsoft Intune** -> **클라이언트 앱** -> **앱 보호 상태**로 이동합니다.
 2. 다운로드 아이콘( ⤓ )을 클릭하여 각 보고서를 저장합니다.
 
 ### <a name="device-configuration-charts"></a>장치 구성 차트 

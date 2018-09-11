@@ -15,18 +15,18 @@ ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: c3b0ba5fc46ad489dcb004554abfee4044a74195
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 95525e66cce1e9691c60799df3da184954d6bf4b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310439"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312664"
 ---
 # <a name="retire-a-windows-pc"></a>Windows PC 사용 중지
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-데스크톱에서 Intune 소프트웨어 클라이언트를 실행하여 PC로 관리하는 데스크톱 사용을 중지하려면 다음 단계를 따르세요. PC를 사용 중지하면 Intune 관리에서 PC가 제거됩니다. Intune에서 PC를 출하 시 설정으로 초기화하여 원래 공장 설정으로 되돌릴 수 없습니다.
+데스크톱에서 Intune 소프트웨어 클라이언트를 실행하여 PC로 관리하는 데스크톱 사용을 중지하려면 다음 단계를 따르세요. PC를 사용 중지하면 Intune 관리에서 PC가 제거됩니다. Intune에서 PC를 초기화하여 원래 공장 설정으로 되돌릴 수 없습니다.
 
 1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** &gt; **모든 장치**(또는 사용 중지하려는 PC가 포함된 다른 그룹)를 선택합니다.
 
@@ -44,7 +44,7 @@ PC 사용 중지하는 경우:
 
 -   Intune이 PC에서 소프트웨어 클라이언트를 제거합니다. PC가 Intune 서비스에 연결되어 있지 않은 경우 다음번에 서비스에 연결할 때 소프트웨어 클라이언트가 제거됩니다.
 
--   Microsoft Intune Endpoint Protection이 PC에서 제거됩니다. PC에 다른 끝점 앱이 설치되어 있지만 사용되지 않도록 설정된 경우, Microsoft Intune Endpoint Protection을 제거하면 이 응용 프로그램이 다시 사용되도록 설정되어 PC가 보호될 수 있습니다.
+-   Microsoft Intune Endpoint Protection이 PC에서 제거됩니다. PC에 다른 엔드포인트 앱이 설치되어 있지만 사용되지 않도록 설정된 경우, Microsoft Intune Endpoint Protection을 제거하면 이 응용 프로그램이 다시 사용되도록 설정되어 PC가 보호될 수 있습니다.
 
 -   PC에서 정책을 제거하면 해당 정책으로 설정된 값이 변경됩니다.
 

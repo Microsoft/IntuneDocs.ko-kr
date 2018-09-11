@@ -7,19 +7,19 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: ''
-ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.custom: get-started
+ms.openlocfilehash: 3f8f0dce416c943dbc244d0e2a4366b12b305708
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032645"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253785"
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure Portal의 Microsoft Intune 소개
 
@@ -41,7 +41,7 @@ Azure Portal에서 Microsoft Intune 환경의 주요 특징은 다음과 같습�
 - 모든 Azure 응용 프로그램에서 호환성을 제공하는 Azure AD(Active Directory) 그룹
 - 대부분의 최신 웹 브라우저 지원
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전
 
 Azure Portal에서 Intune을 사용하려면 Intune 관리 및 테넌트 계정이 있어야 합니다. 계정이 아직 없는 경우 [계정에 등록](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)하세요.
 
@@ -80,7 +80,7 @@ Azure Portal은 대부분의 최신 PC, Mac 및 태블릿에서 실행됩니다.
 | [계획 및 디자인](planning-guide.md)                         | Microsoft Intune 환경을 성공적으로 계획하고 설계하는 데 유용한 지침입니다.                                                                                                                                                                                                             |
 | [장치 등록](device-enrollment.md)                    | Microsoft Intune이 Intune 서비스에 장치를 등록하여 작업자의 장치를 관리하도록 도움을 주는 방법을 이해합니다. 작업자의 장치를 등록하는 몇 가지 방법이 있습니다.                                                                                                         |
 | [장치 정책 준수](device-compliance.md)                    | Intune 장치 준수 정책은 장치가 Microsoft Intune에서 준수되는 것으로 간주하기 위해 준수해야 하는 규칙 및 설정을 정의합니다. 예를 들어 장치 액세스에 대한 암호 필요, 장치를 암호화, 최소 OS 버전 요구 등은 모두 규정 준수의 예입니다. |
-| [장치 구성](device-profiles.md)                   | 장치 프로필을 만들어 Microsoft Intune을 사용하여 관리하는 모든 장치의 설정 및 기능을 구성합니다. 예를 들어, 알림, 데이터 공유, 이메일 지원, wifi 연결, 인증서 및 끝점 보호와 같은 기능을 구성할 수 있습니다.              |
+| [장치 구성](device-profiles.md)                   | 장치 프로필을 만들어 Microsoft Intune을 사용하여 관리하는 모든 장치의 설정 및 기능을 구성합니다. 예를 들어, 알림, 데이터 공유, 이메일 지원, wifi 연결, 인증서 및 엔드포인트 보호와 같은 기능을 구성할 수 있습니다.              |
 | [장치](device-management.md)                              | 관리하는 장치가 위험으로부터 회사 데이터를 보호하는 동안 최종 사용자가 해당 작업을 수행해야 하는 리소스를 제공하도록 해야 합니다. 작업자 장치 인벤토리를 검토하고 원격 장치 작업을 수행하여 장치를 관리합니다.                                                      |
 | [모바일 앱](app-management.md)                             | 앱을 추가, 배포, 모니터링, 구성 및 보호하는 방법을 이해합니다.                                                                                                                                                                                                                             |
 | [조건부 액세스](conditional-access.md)                  | 회사 데이터에 액세스를 게이트로 제어하는 장치 및 앱 기반 조건을 정의합니다.                                                                                                                                                                                                            |

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117925"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313181"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 장치 세부 정보 참조
 
@@ -34,11 +34,14 @@ ms.locfileid: "39117925"
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
 3. **장치** > **모든 장치** 선택 > 해당 세부 정보를 열려면 나열된 장치 중 하나를 선택합니다.
 
-   - **개요**는 장치 이름을 표시하고, 체크 인할 경우 BYOD(bring-your-own-device) 장치인지 여부 등을 포함한 장치의 몇 가지 주요 속성을 나열합니다. **자세히**를 선택하여 다음을 수행합니다.
-     - 회사 데이터 제거
-     - 장치 삭제
-     - 장치 원격 잠금
-     - 지우기
+   - **개요**는 장치 이름을 표시하고, 체크 인할 경우 BYOD(bring-your-own-device) 장치인지 여부 등을 포함한 장치의 몇 가지 주요 속성을 나열합니다. 장치에서 다음 작업을 수행할 수 있습니다.
+      - [사용 중지](devices-wipe.md#retire)
+        - [초기화](devices-wipe.md#wipe)
+        - [원격 잠금](device-remote-lock.md)
+        - [장치 동기화](device-sync.md)
+        - [암호 초기화](device-passcode-reset.md)
+        - [다시 시작](device-restart.md)(Windows만 해당)
+        - [새로 시작](device-fresh-start.md)(Windows만 해당)
      - 원격 지원 세션 시작
    - **속성**을 사용하여 [만든 장치 범주](device-group-mapping.md)를 할당하고, 장치 소유권을 개인 장치나 회사 장치로 변경합니다.
    - **하드웨어**에는 장치 ID, 운영 체제 및 버전, 저장소 공간, 모델 및 제조업체, 조건부 액세스 설정 및 자세한 세부 정보를 포함한 장치에 대한 많은 세부 정보가 포함됩니다.

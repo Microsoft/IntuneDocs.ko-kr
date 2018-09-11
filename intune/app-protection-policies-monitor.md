@@ -15,12 +15,12 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 282666de444e9da0dd5e406cb45cdf1b9e66c1b2
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b7dea97ef74489e3caae7433e8ebbe2b9ed39aa3
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833157"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330044"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>앱 보호 정책을 모니터링하는 방법
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,8 +42,8 @@ ms.locfileid: "31833157"
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 작업에서 **모니터** > **앱 보호 상태**를 선택하여 요약 보기를 표시합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 워크로드에서 **모니터** > **앱 보호 상태**를 선택하여 요약 보기를 표시합니다.
 
 ![Intune 모바일 응용 프로그램 관리 창의 요약 타일](./media/app-protection-user-status-summary.png)
 

@@ -7,23 +7,24 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.custom: get-started
+ms.openlocfilehash: becd0c62d57517a8c1566657b5278a46d68b9c17
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29748721"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254023"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Intune에서 관리되는 장치에 대한 등록 옵션
 
 Intune 관리자는 장치 등록을 구성하여 사용자에게 도움을 주고 Intune 기능을 사용하도록 설정할 수 있습니다.  Intune에서 제공하는 등록 옵션은 다음과 같습니다.
 
-## <a name="terms-and-conditions"></a>Terms and conditions
+## <a name="terms-and-conditions"></a>사용 약관
 
 사용자가 회사의 사용 약관에 동의해야만 회사 포털을 통해 장치를 등록하고 회사 앱 및 메일 같은 리소스에 액세스하도록 요구할 수 있습니다. 사용 약관의 구성은 선택 사항입니다. [사용 약관](terms-and-conditions-create.md)에 대해 자세히 알아보세요.
 

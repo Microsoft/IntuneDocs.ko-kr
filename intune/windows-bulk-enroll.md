@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444883"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313241"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 장치에 대한 대량 등록
 
@@ -85,10 +85,10 @@ Azure AD 사용자는 이러한 장치에서 표준 사용자이며 할당된 In
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Windows 대량 등록 문제 해결
 
 ### <a name="provisioning-issues"></a>프로비전 문제
-프로비전은 새로운 Windows 장치에 사용하도록 고안되었습니다. 프로비전 오류가 발생할 경우 부팅 이미지에서 장치를 복구하거나 장치의 공장 기본 설정이 필요할 수도 있습니다. 이 예제에서는 프로비전 오류에 대한 몇 가지 이유에 대해 설명합니다.
+프로비전은 새로운 Windows 장치에 사용하도록 고안되었습니다. 프로비전 오류가 발생할 경우 부팅 이미지에서 장치를 복구하거나 장치의 초기화가 필요할 수도 있습니다. 이 예제에서는 프로비전 오류에 대한 몇 가지 이유에 대해 설명합니다.
 
 - 로컬 계정을 만들지 않는 Active Directory 도메인 또는 Azure Active Directory 테넌트에 연결하려는 프로비전 패키지의 경우 네트워크 연결 중단으로 인해 도메인 연결 프로세스가 실패하는 경우 장치에 연결할 수 없습니다.
-- 프로비저닝 패키지에서 실행된 스크립트는 시스템 컨텍스트에서 실행됩니다. 스크립트는 장치 파일 시스템과 구성을 임의로 변경할 수 있습니다. 악의적이거나 잘못된 스크립트는 장치를 이미지로 다시 설치하거나 공장 기본값으로 설정하는 방법으로만 복구할 수 있는 상태를 만듭니다.
+- 프로비저닝 패키지에서 실행된 스크립트는 시스템 컨텍스트에서 실행됩니다. 스크립트는 장치 파일 시스템과 구성을 임의로 변경할 수 있습니다. 악의적이거나 잘못된 스크립트는 장치를 이미지로 다시 설치하거나 초기화하는 방법으로만 복구할 수 있는 상태를 만듭니다.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>대량 등록 및 회사 포털 문제
 사용자가 회사 포털을 사용하여 이전에 대량 등록된 장치를 등록하려고 하면 해당 장치에 추가 작업(설정 또는 등록)이 필요하다는 경고가 표시됩니다. 장치가 등록되지만 회사 포털 앱 또는 웹 사이트에서 등록이 인식되지 않습니다.

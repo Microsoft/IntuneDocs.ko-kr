@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 287e644e50b1f6b41f404cfd2102a8efc0fbaad9
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 2a0c230e89944b4330582fe4c6933ca1fe717aec
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474567"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329993"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Microsoft Intune에서 RBAC(역할 기반 관리 제어)
 
@@ -79,7 +79,7 @@ RBAC를 사용하면 조직 내에서 다양한 Intune 작업을 수행할 수 �
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **Intune 역할**을 선택한 다음, **모든 역할**을 선택합니다.
+3. **Intune** 창에서 **역할** > **모든 역할**을 선택합니다.
 1. **Intune 역할 - 모든 역할** 창에서 할당할 기본 제공 역할을 선택합니다.
 
 2. <*역할 이름*> - **개요** 창에서 **관리**, **할당**을 차례로 선택합니다.
@@ -114,17 +114,15 @@ RBAC를 사용하면 조직 내에서 다양한 Intune 작업을 수행할 수 �
 
 2. 왼쪽 메뉴에서 **모든 서비스**를 선택한 다음, 텍스트 상자 필터에 **Intune**을 입력합니다.
 
-3. **Intune**을 선택하면 열리는 Intune 대시보드에서 **Intune 역할**을 선택합니다.
+3. **Intune** > **역할** > **모든 역할** > **사용자 지정 추가**를 선택합니다.
 
-4. **Intune 역할** 창에서 **모든 역할**, **사용자 지정 추가**를 차례로 선택합니다.
+4. **사용자 지정 역할 추가** 창에서 새 역할의 이름 및 설명을 입력하고 **권한**을 클릭합니다.
 
-5. **사용자 지정 역할 추가** 창에서 새 역할의 이름 및 설명을 입력하고 **권한**을 클릭합니다.
+5. **사용 권한** 창에서 이 역할에 사용할 사용 권한을 선택합니다. [Intune RBAC 테이블](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)을 활용하여 적용할 권한을 결정할 수 있습니다.
 
-3. **사용 권한** 창에서 이 역할에 사용할 사용 권한을 선택합니다. [Intune RBAC 테이블](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)을 활용하여 적용할 권한을 결정할 수 있습니다.
+6. 작업이 끝나면 **확인**을 선택합니다.
 
-4. 작업이 끝나면 **확인**을 선택합니다.
-
-5. **사용자 지정 역할 추가** 창에서 **만들기**를 클릭합니다. **Intune 역할 - 모든 역할** 창의 목록에 새 역할이 표시됩니다.
+7. **사용자 지정 역할 추가** 창에서 **만들기**를 클릭합니다. **Intune 역할 - 모든 역할** 창의 목록에 새 역할이 표시됩니다.
 
 ### <a name="to-assign-a-custom-role"></a>사용자 지정 역할을 할당하려면
 

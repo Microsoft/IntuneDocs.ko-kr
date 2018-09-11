@@ -7,20 +7,20 @@ author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 08/16/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 4e9dbda4c768bf9963a4ec168d6a613dca197995
-ms.sourcegitcommit: c5cba0f4bf01eb9a9492e4e3fb6cd756f0737057
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251882"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253683"
 ---
 # <a name="what-are-app-protection-policies"></a>앱 보호 정책이란?
 
@@ -136,5 +136,5 @@ MDM 솔루션에 등록되지 않은 BYOD 장치의 경우 앱 보호 정책을 
 
 [Microsoft Intune으로 앱 보호 정책을 만들고 배포하는 방법](app-protection-policies.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>См. также
 Salesforce 모바일 앱과 같은 타사 앱은 Intune을 특정 방식으로 사용하여 회사 데이터를 보호합니다. 특히 Salesforce 앱이 Intune에서 작동하는 방식(MDM 앱 구성 설정 포함)에 대한 자세한 내용은 [Salesforce 앱 및 Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf)을 참조하세요.

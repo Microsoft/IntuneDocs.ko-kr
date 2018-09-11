@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587026"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313702"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android 및 Samsung Knox Standard 장치 제한 설정 - Intune
 
@@ -35,7 +35,7 @@ ms.locfileid: "39587026"
 - **복사 및 붙여넣기(Samsung Knox만 해당)** - 장치의 복사 및 붙여넣기 기능을 사용할 수 있습니다.
 - **앱 간의 클립보드 공유(Samsung Knox만 해당)** - 클립보드를 사용하여 앱 간에 복사하여 붙여넣을 수 있습니다.
 - **진단 데이터 제출(Samsung Knox만 해당)** - 사용자가 장치에서 진단 데이터를 제출하는 것을 중지합니다.
-- **초기화(Samsung Knox만 해당)** - 사용자가 장치를 공장 기본 설정으로 복원할 수 있습니다.
+- **초기화(Samsung Knox만 해당)** - 사용자가 장치에서 [초기화](devices-wipe.md)를 수행할 수 있습니다.
 - **지리적 위치(Samsung Knox만 해당)** - 장치에서 위치 정보를 활용할 수 있습니다.
 - **전원 끄기(Samsung Knox만 해당)** - 사용자가 장치의 전원을 끌 수 있습니다.<br>사용하지 않도록 설정하면 **장치를 초기화하기 전 로그인 오류 발생 횟수**를 설정할 수 없습니다.
 - **화면 캡처(Samsung Knox만 해당)** - 사용자가 화면 콘텐츠를 이미지로 캡처할 수 있습니다.

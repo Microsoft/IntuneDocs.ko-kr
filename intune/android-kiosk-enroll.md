@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903146"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313464"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android 엔터프라이즈 키오스크 장치 등록 설정
 
@@ -112,7 +112,7 @@ NFC를 지원하는 Android 5.1 이상 장치의 경우 특별한 형식의 NFC 
 
 Android 6 이상 장치의 경우 토큰을 사용하여 장치를 등록할 수 있습니다. **aft#setup** 등록 메서드를 사용하는 경우 Android 6.1 이상 버전에서는 QR 코드 검사를 활용할 수도 있습니다.
 
-1. 초기화 장치를 켭니다.
+1. 초기화된 장치를 켭니다.
 2. **시작** 화면에서 언어를 선택합니다.
 3. **Wifi**에 연결한 후, **다음**을 선택합니다.
 4. Google 사용 약관에 동의한 후, **다음**을 선택합니다.

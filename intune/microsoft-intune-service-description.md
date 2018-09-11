@@ -6,20 +6,20 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 05/30/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: a5440a181961a1ee263b1edb50af5fde450f50a9
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.custom: intune-classic; get-started
+ms.openlocfilehash: 48f15493d25ba431cedc76533c35c7307fd0f848
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34583726"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254142"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 서비스 설명
 
@@ -47,7 +47,7 @@ Intune을 사용하여 장치 및 앱을 관리하고 회사 데이터를 보호
 
 For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).--->
 ## <a name="intune-onboarding-benefit"></a>Intune 등록 혜택
-Microsoft는 적합한 계획의 적합한 서비스에 대해 Intune 온보딩 혜택을 제공합니다. 등록 혜택을 이용하면 Microsoft 전문가와 원격으로 함께 작업하여 Intune 환경을 즉시 사용하도록 준비할 수 있습니다. 등록 혜택에 대한 자세한 내용은 [Microsoft Intune 등록 혜택 설명](http://go.microsoft.com/fwlink/?LinkId=619281)을 참조하세요.
+Microsoft는 적합한 플랜의 적합한 서비스에 대해 Intune 온보딩 혜택을 제공합니다. 등록 혜택을 이용하면 Microsoft 전문가와 원격으로 함께 작업하여 Intune 환경을 즉시 사용하도록 준비할 수 있습니다. 등록 혜택에 대한 자세한 내용은 [Microsoft Intune 등록 혜택 설명](http://go.microsoft.com/fwlink/?LinkId=619281)을 참조하세요.
 
 
 ## <a name="learn-how-intune-service-updates-affect-you"></a>Intune 서비스 업데이트가 영향을 주는 방식 알아보기

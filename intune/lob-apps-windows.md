@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5c64b915f240cab2faac84a6a78b213a5fffa0a6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321121"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347901"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Windows 기간 업무 앱 추가
 
@@ -32,19 +32,15 @@ LOB(기간 업무) 앱은 앱 설치 파일로 추가합니다. 이러한 종류
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 워크로드에서 **관리** > **앱**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 워크로드에서 **관리** > **앱**을 차례로 선택합니다.
 5. 앱 목록 위에서 **추가**를 선택합니다.
 6. **앱 추가** 창에서 **기간 업무 앱**을 선택합니다.
 
 ## <a name="step-2-configure-the-app-package-file"></a>2단계: 앱 패키지 파일 구성
 
 1. **앱 추가** 창에서 **앱 패키지 파일**을 선택합니다.
-2. **앱 패키지 파일** 창에서 찾아보기 단추를 선택합니다. 그런 다음, 확장명이 **.msi**, **.appx**, **.appxbundle**, **.msix** 또는 **.msixbundle**인 Windows 설치 파일을 선택합니다.
-
-    > [!NOTE]
-    > Windows 앱의 파일 확장명에는 **.msi**, **.appx**, **.appxbundle**, **.msix** 및 **.msixbundle**이 포함됩니다.  
-
+2. **앱 패키지 파일** 창에서 찾아보기 단추를 선택합니다. 그런 다음, 확장명이 **.msi**, **.appx** 또는 **.appxbundle**인 Windows 설치 파일을 선택합니다.
 3. 작업을 마쳤으면 **확인**을 선택합니다.
 
 

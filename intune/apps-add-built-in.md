@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b67b50a5bd372541cf0842696e5012ca991d8b8
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b9520343f3b631fdc2732690b462c6d8fd010c82
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224163"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329498"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune에 기본 제공 앱 추가
 
@@ -36,8 +36,8 @@ ms.locfileid: "34224163"
 Microsoft Intune에서 사용 가능한 앱에 기본 제공 앱을 추가하려면 다음을 수행합니다.
 1. Azure Portal에 로그인합니다.
 2. Microsoft Intune 창을 표시하려면 **추가 서비스** > **모니터링 + 관리** > **Intune**을 선택합니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 창의 **관리** 아래에서 **앱**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 창의 **관리** 아래에서 **앱**을 선택합니다.
 5. **추가**를 선택합니다.
 6. **추가** 앱 창의 **앱 유형** 목록에서 **기본 제공 앱**을 선택합니다.
 7. **앱 선택**을 선택합니다.

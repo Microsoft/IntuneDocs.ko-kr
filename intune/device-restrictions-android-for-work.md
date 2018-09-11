@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 51e52e26357143d214c4bcf7856dfdb75a68653c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905940"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329772"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune에서 장치 제한 사항 설정 작업
 
@@ -42,7 +42,7 @@ ms.locfileid: "37905940"
   - **자동 허용**
   - **자동 거부**
 
-    **모바일 앱** > **앱 구성 정책** 아래에서 개별 앱에 대해 앱 구성 정책을 사용하여 특정 앱에 대한 권한 부여 상태를 추가로 정의할 수 있습니다.
+    **클라이언트 앱** > **앱 구성 정책** 아래에서 개별 앱에 대해 앱 구성 정책을 사용하여 특정 앱에 대한 권한 부여 상태를 추가로 정의할 수 있습니다.
 
 - **계정 추가 및 제거**
 

@@ -15,12 +15,12 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c00904097986d1cf70031f1b17171221da64abc0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1b43e7df72e709cfdd929085b1d6718f1afcdf9f
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224803"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347355"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 전자책을 관리하는 방법
 
@@ -55,8 +55,8 @@ Microsoft Intune을 사용하면 이 프로그램을 통해 구매한 책을 동
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-1.  **Mobile Apps** 워크로드에서 **설정** > **iOS VPP 토큰**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+1.  **클라이언트 앱** 워크로드에서 **설정** > **iOS VPP 토큰**을 선택합니다.
 2.  VPP 토큰 목록 창에서 **만들기**를 클릭합니다.
 3.  **새 VPP 토큰** 창에서 다음 정보를 지정합니다.
     - **VPP 토큰 파일** - 비즈니스 또는 교육용 대량 구매 프로그램에 등록했는지 확인합니다. 그런 다음 계정용 Apple VPP 토큰을 다운로드하고 여기서 선택합니다.

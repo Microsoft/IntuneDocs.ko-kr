@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329929"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312801"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 및 앱 보호에 대한 질문과 대답
 
@@ -112,10 +112,12 @@ PIN(개인 식별 번호)은 올바른 사용자가 응용 프로그램에서 �
 
     - **PIN은 사용 가능성을 향상시키기 위해 동일한 게시자의 앱 간에서 공유됩니다.** iOS의 경우 **동일한 앱 게시자의** 모든 앱 간에서 하나의 앱 PIN이 공유됩니다. Android의 경우 하나의 앱 PIN이 모든 앱 간에서 공유됩니다.
     - **장치를 재부팅한 후 '다음 시간(분) 후에 액세스 요구 사항 다시 확인' 동작:** "PIN 타이머"는 다음에 Intune 앱 PIN을 표시할 시기를 결정하는 비활성 시간(분)을 추적합니다. iOS에서 PIN 타이머는 장치 재부팅에 영향을 받지 않습니다. 따라서 장치 다시 시작은 Intune PIN 정책을 사용하는 iOS 앱에서 사용자가 비활성화된 시간(분)에 영향을 주지 않습니다. Android에서는 PIN 타이머가 장치 재부팅 시 다시 설정됩니다. 따라서 Intune PIN 정책을 사용하는 Android 앱은 **장치 재부팅 후** ‘다음 시간(분) 후에 액세스 요구 사항 다시 확인’ 설정 값에 상관없이 앱 PIN을 묻는 메시지를 표시합니다.  
-    - **PIN과 관련된 타이머의 롤링 특성:** 앱(앱 A)에 액세스하기 위해 PIN을 입력하고 앱이 장치에서 포그라운드(기본 입력 포커스)를 나가면, PIN 타이머가 해당 PIN을 재설정합니다. 이 PIN을 공유하는 어떠한 앱(앱 B)도 타이머가 재설정되었기 때문에 사용자에게 PIN 입력을 요구하지는 않습니다. '다음 시간(분) 후에 액세스 요구 사항 다시 확인' 값이 다시 충족되면 메시지가 다시 나타납니다. 
+    - **PIN과 관련된 타이머의 롤링 특성:** 앱(앱 A)에 액세스하기 위해 PIN을 입력하고 앱이 장치에서 포그라운드(기본 입력 포커스)를 나가면, PIN 타이머가 해당 PIN을 재설정합니다. 이 PIN을 공유하는 어떠한 앱(앱 B)도 타이머가 재설정되었기 때문에 사용자에게 PIN 입력을 요구하지는 않습니다. '다음 시간(분) 후에 액세스 요구 사항 다시 확인' 값이 다시 충족되면 메시지가 다시 나타납니다.
+
+iOS 장치의 경우 PIN이 다른 게시자의 앱 간에 공유되는 경우에도 **다음 시간(분) 후에 액세스 요구 사항 다시 확인** 값이 주 입력 포커스가 아닌 앱에 다시 충족할 때 프롬프트가 다시 표시됩니다. 따라서 예를 들어 사용자에게 게시자 _X_의 앱 _A_와 게시자 _Y_의 앱 _B_가 있는 경우 이러한 두 앱은 동일한 PIN을 공유합니다. 사용자는 앱 _A_(전경)에 중점을 두고, 앱 _B_는 최소화됩니다. **다음 시간(분) 후에 액세스 요구 사항 다시 확인** 값이 충족되고 사용자가 앱 _B_로 전환한 후 PIN이 필요합니다.
 
       >[!NOTE] 
-      > 특히 자주 사용하는 앱의 경우 사용자의 액세스 요구 사항을 보다 자주 확인하려면(즉, PIN 프롬프트) ‘다음 시간(분) 후에 액세스 요구 사항 다시 확인’ 설정 값을 줄이는 것이 좋습니다. 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **Intune PIN이 Outlook 및 OneDrive용 기본 제공 앱 PIN으로 작동하는 방법은?**<br></br>
 Intune PIN은 비활성 타이머(즉, '다음 시간(분) 후에 액세스 요구 사항 다시 확인' 값)를 기반으로 작동합니다. 따라서 Intune PIN 프롬프트는 기본적으로 앱 실행과 연결된 경우가 많은 Outlook 및 OneDrive용 기본 제공 앱 PIN 프롬프트와 별도로 표시됩니다. 사용자가 두 PIN 프롬프트를 동시에 받는 경우 Intune PIN이 우선적으로 표시되어야 합니다. 
@@ -137,13 +139,13 @@ IT 관리자는 앱 데이터 암호화를 요구하는 앱 보호 정책을 배
 - **암호화되는 대상은 무엇인가요?**<br></br> IT 관리자의 앱 보호 정책에 따라 "회사"로 표시된 데이터만 암호화됩니다. 데이터는 비즈니스 위치에서 시작될 경우 "회사" 데이터로 간주됩니다. Office 앱의 경우 Intune은 전자 메일(Exchange) 또는 클라우드 저장소(비즈니스용 OneDrive 계정이 있는 OneDrive 앱)를 비즈니스 위치로 간주합니다. Intune 앱 래핑 도구에서 관리되는 기간 업무 앱의 경우 모든 앱 데이터가 “회사” 데이터로 간주됩니다.
 
 **Intune에서는 어떻게 원격으로 데이터를 초기화하나요?**<br></br>
-Intune에서는 전체 장치 초기화, MDM에 대한 선택적 초기화 및 MAM 선택적 초기화라는 세 가지 방법으로 앱 데이터를 초기화할 수 있습니다. MDM의 원격 초기화에 대한 자세한 내용은 [초기화를 사용하여 장치 제거 또는 회사 데이터 제거](devices-wipe.md#factory-reset)를 참조하세요. MAM을 사용하는 선택적 초기화에 대한 자세한 내용은 [회사 데이터 제거](devices-wipe.md#remove-company-data) 및 [앱에서 회사 데이터만 초기화하는 방법](apps-selective-wipe.md)을 참조하세요.
+Intune에서는 전체 장치 초기화, MDM에 대한 선택적 초기화 및 MAM 선택적 초기화라는 세 가지 방법으로 앱 데이터를 초기화할 수 있습니다. MDM의 원격 초기화에 대한 자세한 내용은 [초기화 또는 사용 중지를 사용하여 장치 제거](devices-wipe.md)를 참조하세요. MAM을 사용하는 선택적 초기화에 대한 자세한 내용은 [사용 중지 작업](devices-wipe.md#retire) 및 [앱에서 회사 데이터만 초기화하는 방법](apps-selective-wipe.md)을 참조하세요.
 
-- **초기화란 무엇인가요?**<br></br> [초기화](devices-wipe.md)는 장치를 출하 시 기본 설정으로 복원하여 **장치**에서 모든 사용자 데이터 및 설정을 제거합니다. 그리고 장치가 Intune에서 제거됩니다.
+- **초기화란?**<br></br> [초기화](devices-wipe.md)는 장치를 출하 시 기본 설정으로 복원하여 **장치**에서 모든 사용자 데이터 및 설정을 제거합니다. 그리고 장치가 Intune에서 제거됩니다.
   >[!NOTE]
   > 초기화는 Intune MDM(모바일 장치 관리)에 등록된 장치에서만 수행할 수 있습니다.
 
-- **MDM에 대한 선택적 초기화란?**<br></br> 회사 데이터를 제거하는 방법에 대한 자세한 내용은 [장치 제거 - 회사 데이터 제거](devices-wipe.md#remove-company-data)를 참조하세요.
+- **MDM에 대한 선택적 초기화란?**<br></br> 회사 데이터를 제거하는 방법에 대한 자세한 내용은 [장치 제거 -사용 중지](devices-wipe.md#retire)를 참조하세요.
 
 - **MAM에 대한 선택적 초기화란?**<br></br> MAM에 대한 선택적 초기화는 단순히 앱에서 업무용 앱 데이터를 제거합니다. 이 요청은 Intune Azure Portal 포털에서 시작됩니다. 초기화 요청을 시작하는 방법을 알아보려면 [앱에서 회사 데이터만 초기화하는 방법](apps-selective-wipe.md)을 참조하세요.
 

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321223"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313856"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune에서 Windows 10(및 이상) 설정을 위한 장치 제한
 이 아티클에서는 Windows 10을 실행하는 장치에 대해 구성할 수 있는 모든 Microsoft Intune 장치 제한 설정을 보여줍니다.
@@ -37,7 +37,7 @@ ms.locfileid: "39321223"
 - **이동식 저장소** - 장치에 SD 카드와 같은 외부 저장 장치를 사용할 수 있는지 여부를 지정합니다.
 - **지리적 위치** - 장치에서 위치 서비스 정보를 사용할 수 있는지 여부를 지정합니다.
 - **인터넷 공유** - 장치에서 인터넷 연결 공유를 사용하도록 허용합니다.
-- **휴대폰 초기화** - 사용자가 장치를 공장 기본 설정으로 초기화할 수 있는지 여부를 제어합니다.
+- **휴대폰 초기화** - 사용자가 장치를 초기화할 수 있는지 여부를 제어합니다.
 - **USB 연결(모바일 전용)** - 장치가 USB 연결을 통해 외부 저장 장치에 액세스할 수 있는지 여부를 제어합니다.
 - **AntiTheft 모드(모바일 전용)** - Windows Antitheft 모드 사용 여부를 구성합니다.
 - **Cortana** - Cortana 음성 도우미를 사용하거나 사용하지 않도록 설정합니다.
@@ -50,6 +50,7 @@ ms.locfileid: "39321223"
 - **SIM 카드 오류 대화 상자(모바일 전용)** - SIM 카드가 검색되지 않는 경우에는 오류 메시지가 장치에 표시되지 않습니다.
 - **잉크 작업 영역** - 사용자가 잉크 작업 영역에 액세스하는 것을 차단 합니다. 이 설정이 구성되지 않은 경우 잉크 작업 영역을 활성화되고(기능이 켜짐), 사용자는 잠금 화면에서 이를 사용할 수 있습니다.
 - **자동 재배포** - 관리 권한을 가진 사용자가 장치 잠금 화면에서 **CTRL + Win + R**을 사용하여 모든 사용자 데이터 및 설정을 삭제할 수 있습니다. 장치가 자동으로 재구성되고 관리에 다시 등록됩니다.
+- **사용자가 장치를 설치하는 동안 네트워크에 연결하도록 요구(Windows Insider에만 해당)** - Windows 10을 설치하는 동안 네트워크 페이지를 지나 계속 진행하기 전에 장치를 네트워크에 연결하도록 요구하려면 **필요**를 선택합니다. 이 기능이 미리 보기 상태인 동안 이 설정을 사용하려면 Windows Insider build 1809 이상이 필요합니다.
 
 ## <a name="password"></a>암호
 -   **암호** - 최종 사용자에게 장치에 액세스하려면 암호를 입력하도록 요구합니다.
@@ -370,11 +371,11 @@ Windows 10 Mobile을 실행 중인 장치: 지정한 횟수만큼 로그인이 �
 
 ## <a name="cloud-printer"></a>클라우드 프린터
 
-- **프린터 검색 URL** - 클라우드 프린터를 검색하기 위한 끝점입니다.
-- **프린터 액세스 권한 URL** - OAuth 토큰을 얻기 위한 인증 끝점입니다.
+- **프린터 검색 URL** - 클라우드 프린터를 검색하기 위한 엔드포인트입니다.
+- **프린터 액세스 권한 URL** - OAuth 토큰을 얻기 위한 인증 엔드포인트입니다.
 - **Azure 네이티브 클라이언트 앱 GUID** - OAuthAuthority에서 OAuth 토큰을 검색할 수 있는 권한이 있는 클라이언트 응용 프로그램의 GUID입니다.
 - **인쇄 서비스 리소스 URI** - Azure Portal에 구성된 인쇄 서비스의 OAuth 리소스 URI입니다.
-- **쿼리할 최대 프린터 수(모바일 전용)** - 검색 끝점에서 쿼리해야 하는 최대 프린터 수입니다.
+- **쿼리할 최대 프린터 수(모바일 전용)** - 검색 엔드포인트에서 쿼리해야 하는 최대 프린터 수입니다.
 - **프린터 검색 서비스 리소스 URI** - Azure Portal에 구성된 프린터 검색 서비스의 OAuth 리소스 URI입니다.
 
 ## <a name="local-printer"></a>로컬 프린터

@@ -5,21 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
-ms.topic: get-started-article
+ms.date: 08/28/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 590ce850b97502b357dec86932e1445718860af2
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335829"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253547"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune 장치 프로필이란?
 
@@ -54,6 +54,7 @@ Microsoft Intune은 조직 내의 다른 장치에서 사용하거나 사용하�
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>장치 제한 사항
 [장치 제한](device-restrictions-configure.md)은 장치에서 보안, 하드웨어, 데이터 공유 및 많은 설정을 제어합니다. 예를 들어 iOS 장치의 사용자가 장치 카메라를 사용하지 못하도록 하는 장치 제한 프로필을 만듭니다. 
 
@@ -68,10 +69,17 @@ Microsoft Intune은 조직 내의 다른 장치에서 사용하거나 사용하�
 ## <a name="endpoint-protection"></a>Endpoint Protection
 [Windows 10에 대한 Endpoint Protection 설정](endpoint-protection-windows-10.md)은 Windows 10 장치에 대한 BitLocker 및 Windows Defender 설정을 구성합니다.
 
-Microsoft Intune에서 WDATP(Windows Defender Advanced Threat Protection)을 온보드하려면 [MDM(모바일 장치 관리) 도구를 사용하여 끝점 구성](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection)을 참조하세요.
+Microsoft Intune에서 WDATP(Windows Defender Advanced Threat Protection)을 온보드하려면 [MDM(모바일 장치 관리) 도구를 사용하여 엔드포인트 구성](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection)을 참조하세요.
 
 이 기능은 다음을 지원합니다.
 - Windows 10 이상
+
+## <a name="identity-protection"></a>ID 보호
+[ID 보호](identity-protection-configure.md)는 Windows 10 및 Windows 10 모바일 장치에서 비즈니스용 Windows Hello 환경을 제어합니다. 사용자 및 장치가 비즈니스용 Windows Hello를 사용할 수 있도록 하고, 장치 PIN 및 제스처에 대한 요구 사항을 지정하도록 이러한 설정을 구성합니다.  
+
+이 기능은 다음을 지원합니다.  
+- Windows 10 이상
+- Windows Holographic for Business  
 
 ## <a name="kiosk"></a>키오스크
 

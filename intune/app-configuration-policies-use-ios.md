@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905838"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330265"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>관리되는 iOS 장치용 앱 구성 정책 추가
 
@@ -47,7 +47,7 @@ Microsoft Intune에서 앱 구성 정책을 사용하여 iOS 앱에 대한 사�
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **모바일 앱** 워크로드를 선택합니다.
+3. **클라이언트 앱** 워크로드를 선택합니다.
 4. **관리** 그룹에서 **앱 구성 정책**을 선택한 다음 **추가**를 선택합니다.
 5. 다음 세부 정보를 설정합니다.
     - **이름** - Azure Portal에 표시되는 프로필의 이름입니다.
@@ -133,6 +133,8 @@ XML 속성 목록에 대한 자세한 내용을 보려면 다음을 수행합니
   <string>{{serialnumberlast4digits}}</string>
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
+  <key>aaddeviceid</key>
+  <string>{{aaddeviceid}}</string>
 </dict>
 ```
 ### <a name="supported-xml-plist-data-types"></a>지원되는 XML PList 데이터 형식
@@ -158,6 +160,7 @@ Intune에서는 속성 목록의 다음 데이터 형식을 지원합니다.
 - \{\{username\}\}—예: **John Doe**
 - \{\{serialnumber\}\}—예: **F4KN99ZUG5V2**(iOS 장치)
 - \{\{serialnumberlast4digits\}\}—예: **G5V2**(iOS 장치)
+- \{\{aaddeviceid\}\}-예: **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>장치별 iOS 앱 구성 상태 모니터링 
 구성 정책이 할당되면 각 관리 장치에 대한 iOS 앱 구성 상태를 모니터링할 수 있습니다. Azure Portal의 **Microsoft Intune**에서 **장치** > **모든 장치**를 차례로 선택합니다. 관리 장치 목록에서 장치에 대한 블레이드를 표시할 특정 장치를 선택합니다. 장치 블레이드에서 **앱 구성**을 선택합니다.  

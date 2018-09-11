@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268841"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313499"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Intune에서 iOS 업데이트 정책 구성
 
@@ -32,7 +32,7 @@ ms.locfileid: "39268841"
 4. 정책의 이름과 설명을 입력합니다.
 5. **설정**을 선택합니다. 
 
-    iOS 장치가 최신 업데이트를 설치하지 않도록 할 시기에 대한 세부 정보를 입력합니다. 이러한 설정은 제한 시간 범위를 만듭니다. 요일, 표준 시간대, 시작 시간 및 종료 시간을 구성할 수 있습니다.
+    iOS 장치가 최신 업데이트를 설치하지 않도록 할 시기에 대한 세부 정보를 입력합니다. 이러한 설정은 제한 시간 범위를 만듭니다. **요일**, **표준 시간대**, **시작 시간**, **종료 시간** 및 사용자를 입력할 **소프트웨어 업데이트의 표시 지연(일)** 여부를 구성할 수 있습니다. 소프트웨어 업데이트의 지연 범위를 1일~90일로 선택할 수 있습니다. 소프트웨어 업데이트 지연 설정을 옵트아웃하려면 0을 입력합니다. 이러한 업데이트 설정은 감독되는 iOS 장치에만 적용됩니다.
 
 6. **확인**을 선택하여 변경 내용을 저장합니다. **만들기**를 선택하여 정책을 만듭니다.
 

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039338"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312899"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune에서 Android 엔터프라이즈 키오스크 설정
 
@@ -33,7 +33,7 @@ Android 키오스크 프로필은 다음 구성 설정을 지원합니다. 프�
     - **자동 허용**: 사용 권한이 자동으로 부여됩니다.
     - **자동 거부**: 사용 권한이 자동으로 거부됩니다.
 - **볼륨 변경**: **차단**을 선택하여 사용자가 장치의 볼륨을 변경하지 못하도록 합니다.
-- **초기화**: **차단**을 선택하여 사용자가 장치를 초기화하지 못하도록 합니다.
+- **초기화**: 사용자가 장치를 초기화하지 못하도록 하려면 **차단**을 선택합니다.
 - **안전 부팅**: **차단**을 선택하여 장치를 안전 모드로 다시 부팅하지 못하도록 합니다.
 - **상태 표시줄**: **차단**을 선택하여 사용자가 알림 및 빠른 설정을 포함한 상태 표시줄에 액세스하지 못하도록 합니다.
 - **Wi-Fi 설정 변경**: **차단**을 선택하여 사용자가 장치 소유자가 만든 wi-fi 구성을 변경하지 못하도록 합니다. 사용자는 자신의 wi-fi 구성을 만들 수 있습니다.

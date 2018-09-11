@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,44 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279494"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347697"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 최종 사용자가 이번 Microsoft Intune 릴리스에서 보게 될 앱의 UI가 어떻게 업데이트되었는지 알아봅니다. 이러한 업데이트를 이해하면 사용자 커뮤니케이션 및 배포를 지원하기 위해 만든 사용자 지정 설명서 업데이트에 도움이 될 것입니다. 사용자가 회사 포털을 사용하여 지원 센터에 전화해 지원을 요청하는 경우 사용자에게 발생하는 문제를 더 잘 해결하는 방법을 이해하는 데에도 도움이 될 수 있습니다.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-august-27-2018"></a>2018년 8월 27일 주  
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트<!--2000968 -->  
+고객으로부터의 피드백에 기반한 새 기능을 회사 포털 웹 사이트에 추가했습니다. 장치의 기존 기능과 유용성이 크게 향상됩니다. 사이트 영역&ndash;예: 장치 세부 정보, 피드백, 지원 및 장치 개요&ndash;은 응답성이 높은 최신의 새로운 디자인을 제공합니다. [Intune 회사 포털 웹 사이트 설명서](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)는 이러한 변경 내용을 반영하도록 업데이트되었습니다.   
+
+표시되는 업데이트는 다음을 포함합니다.  
+
+- 모든 장치 플랫폼에서 간소화된 워크플로
+- 향상된 장치 식별 및 등록 흐름
+- 더 유용한 오류 메시지
+- 더 친숙한 언어, 더 이해하기 쉬운 기술 용어
+- 앱에 대한 직접 링크를 공유하는 기능
+- 대규모 앱 카탈로그의 성능 향상
+- 향상된 모든 사용자에 대한 접근성  
+
+|업데이트됨|이전|
+|---|---|
+|![업데이트된 장치 페이지는 더 이상 전체 목록 위에 팝업으로 표시하지 않고 장치 정보 위에 바르게 정렬된 장치를 표시합니다.](./media/iwp-device-after-1803.png)|![이전 버전의 장치 페이지입니다.](./media/iwp-device-before-1803.png)|
+|![업데이트된 앱 설치 페이지는 게시 날짜, 버전 및 앱 형식 등 설명 및 다양한 설치 정보 위에 앱을 바르게 보여줍니다.](./media/iwp-app-install-after-1803.png)|![이전 버전의 앱 설치 페이지입니다.](./media/iwp-app-install-before-1803.png)|  
+
 ## <a name="week-of-july-16-2018"></a>2018년 7월 16일 주  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 동기화할 수 있는 더 많은 기회   
 이제 Windows용 회사 포털 앱을 사용하여 Windows 작업 표시줄 및 시작 메뉴에서 직접 동기화를 시작할 수 있습니다. 이 기능은 장치를 동기화하고 회사 리소스에 액세스하는 작업만 수행하는 경우에 특히 유용합니다. 새 기능에 액세스하려면 작업 표시줄 또는 시작 메뉴에 고정되어 있는 회사 포털 아이콘을 마우스 오른쪽 단추로 클릭합니다. 메뉴 옵션(점프 목록이라고도 함)에서 **이 장치 동기화**를 선택합니다. 회사 포털에 **설정** 페이지가 열리고 동기화가 시작됩니다.  
 
-![장치의 바탕 화면에 있는 Windows 작업 표시줄의 스크린샷. 회사 포털 앱 프로그램 아이콘을 클릭하여 "작업 표시줄에 고정", "창 닫기" 및 "이 장치 동기화" 작업 옵션이 있는 메뉴를 표시합니다.](./media/sync-device-from-start-menu-1807.png)  
+![장치의 바탕 화면에 있는 Windows 작업 표시줄의 스크린샷 회사 포털 앱 프로그램 아이콘을 클릭하여 "작업 표시줄에 고정", "창 닫기" 및 "이 장치 동기화" 작업 옵션이 있는 메뉴를 표시합니다.](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱의 새 검색 환경  
 
@@ -42,7 +62,7 @@ ms.locfileid: "39279494"
 
 타일 보기를 보여 주는 예제 스크린샷:  
  
-![설치된 앱을 타일 보기로 보여주는 Windows용 Intune 회사 포털 앱의 스크린샷.](/intune/media/tiles-installed-view-cpapp-1807.png)  
+![설치된 앱을 타일 보기로 보여주는 Windows용 Intune 회사 포털 앱의 스크린샷](/intune/media/tiles-installed-view-cpapp-1807.png)  
 
 세부 정보 보기를 보여 주는 예제 스크린샷:  
 
@@ -112,7 +132,7 @@ Android의 [자료 디자인](https://material.io/) 지침에 따르도록 Andro
 iOS용 회사 포털 앱에서 장치 설정 워크플로를 개선했습니다. 언어는 더욱 친숙하게 변경되었으며, 최대한 화면을 결합했습니다. 또한 전체 설정 텍스트에서 회사 이름을 사용하여 언어가 회사에 더욱 구체적으로 변경되었습니다.
 
 > [!NOTE]
-> **Microsoft Intune** > **Mobile Apps** > **회사 포털 브랜딩** > **회사 이름**에는 Azure Portal에서 설정한 회사 이름이 사용됩니다. 이 값을 설정하지 않으면 **Azure Active Directory** > **속성** > **이름**에 설정된 테넌트 이름이 사용됩니다. 회사 포털 브랜딩에서 회사 이름을 설정하지 않았고 테넌트 이름을 표시하지 않으려면 [회사 포털 브랜딩] 탭에서 회사 이름을 설정하는 것이 좋습니다. 이 문자열을 회사 포털의 헤더에 표시하지 않으려면 “로고 옆에 회사 이름 표시” 확인란을 선택 취소하면 됩니다.
+> **Microsoft Intune** > **클라이언트 앱** > **회사 포털 브랜딩** > **회사 이름**에는 Azure Portal에서 설정한 회사 이름이 사용됩니다. 이 값을 설정하지 않으면 **Azure Active Directory** > **속성** > **이름**에 설정된 테넌트 이름이 사용됩니다. 회사 포털 브랜딩에서 회사 이름을 설정하지 않았고 테넌트 이름을 표시하지 않으려면 [회사 포털 브랜딩] 탭에서 회사 이름을 설정하는 것이 좋습니다. 이 문자열을 회사 포털의 헤더에 표시하지 않으려면 “로고 옆에 회사 이름 표시” 확인란을 선택 취소하면 됩니다.
 
 |이전|이러한|
 |---|---|
@@ -458,12 +478,7 @@ UI 업데이트, 간소화된 워크플로 및 향상된 접근성 기능을 통
 -   앱에 대한 직접 링크를 공유하는 기능
 - 대규모 앱 카탈로그의 성능 향상
 
-이 변경 내용을 준비하기 위해 조치를 취할 필요가 없습니다. 업데이트된 회사 포털 웹 사이트가 제공될 때 알려드리겠습니다. 그러나 결국 업데이트된 스크린샷을 포함한 최종 사용자 문서를 업데이트해야 할 수 있습니다. 웹 사이트에서 iOS 앱의 **앱** 섹션을 제공하므로 iOS에서 회사 포털 앱에 대한 설명서를 업데이트해야 할 수도 있습니다.
-
-|업데이트됨|이전|
-|---|---|
-|![업데이트된 장치 페이지는 더 이상 전체 목록 위에 팝업으로 표시하지 않고 장치 정보 위에 바르게 정렬된 장치를 표시합니다.](./media/iwp-device-after-1803.png)|![이전 버전의 장치 페이지입니다.](./media/iwp-device-before-1803.png)|
-|![업데이트된 앱 설치 페이지는 게시 날짜, 버전 및 앱 형식 등 설명 및 다양한 설치 정보 위에 앱을 바르게 보여줍니다.](./media/iwp-app-install-after-1803.png)|![이전 버전의 앱 설치 페이지입니다.](./media/iwp-app-install-before-1803.png)|
+이 변경 내용을 준비하기 위해 조치를 취할 필요가 없습니다. 업데이트된 회사 포털 웹 사이트가 제공될 때 알려드리겠습니다. 그러나 결국 업데이트된 스크린샷을 포함한 최종 사용자 문서를 업데이트해야 할 수 있습니다. 웹 사이트에서 iOS 앱의 **앱** 섹션을 제공하므로 iOS에서 회사 포털 앱에 대한 설명서를 업데이트해야 할 수도 있습니다.  
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>회사 포털 웹 사이트의 UI 업데이트 <!--1313244 part 2-->
 

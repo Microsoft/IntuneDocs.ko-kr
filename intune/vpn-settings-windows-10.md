@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 8/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 61310f5baa64c43d2e818df6c61a36d232922c1c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744740"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312853"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune의 Windows 10 VPN 설정
 
@@ -42,6 +42,8 @@ Intune을 사용하여 VPN 연결을 구성할 수 있습니다. 이 아티클�
   - **기본 서버**: 이 서버를 장치에서 연결을 설정하는 데 사용할 기본 서버로 사용합니다. 기본적으로 하나의 서버만 설정합니다.
   - **가져오기**: 설명, IP 주소 또는 FQDN, 기본 서버 형식의 서버 목록을 포함하는 쉼표로 구분된 파일로 이동합니다. **확인**을 선택하여 이러한 서버를 **서버** 목록으로 가져옵니다.
   - **내보내기**: 서버 목록을 쉼표로 구분된 값(csv) 파일로 내보내기
+
+- **내부 DNS를 사용하여 IP 주소 등록**: 내부 DNS를 사용하여 VPN 인터페이스에 할당된 IP 주소를 동적으로 등록하도록 Windows 10 VPN 프로필을 구성하려면 **사용**을 선택하거나 IP 주소를 동적으로 등록하지 않으려면 **사용 안 함**을 선택합니다.
 
 - **연결 형식**: 다음 공급업체 목록에서 VPN 연결 형식을 선택합니다.
 

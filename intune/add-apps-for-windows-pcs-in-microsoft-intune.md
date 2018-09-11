@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 041b31373e774c86373762a6365b913de9708b51
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: df8b6effea08bcb03022511158cde2d4da4ca2e6
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310507"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241915"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Intune 소프트웨어 클라이언트를 실행하는 Windows PC에 앱 추가
 
@@ -33,6 +33,8 @@ ms.locfileid: "36310507"
 
 PC에 앱을 설치하려면 앱이 사용자 조작 없이 자동으로 설치될 수 있어야 합니다. 그렇지 않은 경우 설치가 실패합니다.
 
+## <a name="additional-security-settings-for-windows-installer"></a>Windows 설치 관리자에 대한 추가 보안 설정
+사용자가 앱 설치를 제어하도록 허용할 수 있습니다. 사용하도록 설정한 경우 그렇지 않으면 보안 위반으로 인해 중지될 수 있는 설치를 계속 진행하도록 허용합니다. 시스템에 모든 프로그램을 설치할 경우 Windows 설치 관리자가 상승된 권한을 사용하도록 명령할 수 있습니다. 또한 인덱싱될 WIP(Windows Information Protection) 항목 및 암호화되지 않은 위치에 저장된 WIP 항목에 대한 메타데이터를 사용할 수 있습니다. 정책을 사용하지 않을 때 WIP로 보호되는 항목은 인덱싱되지 않고 Cortana 또는 파일 탐색기의 결과에도 표시되지 않습니다. 이러한 옵션에 대한 기능은 기본적으로 사용할 수 없게 설정되어 있습니다. 
 
 ## <a name="add-the-app"></a>앱 추가
 다음 절차를 사용하여 Intune 소프트웨어 게시자를 사용하여 앱 속성을 구성한 다음 클라우드 저장소 공간에 앱을 업로드합니다.

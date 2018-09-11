@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026876"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312952"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>일반적인 문제와 Microsoft Intune에서 장치 프로필을 사용한 해결
 
@@ -35,11 +35,11 @@ Intune 장치 프로필을 사용해 일반적인 문제를 해결 합니다.
 일부 추가 권장 사항.  
 
 - 연결하려는 Wi-Fi 네트워크에 암호가 사용되므로 Wi-Fi 라우터에 직접 연결할 수 있는지 확인합니다. iOS 장치로 테스트할 수 있습니다.
-- Wi-Fi 끝점(Wi-Fi 라우터)에 연결을 완료한 후 사용한 SSID와 자격 증명(이 값은 암호)을 기록해 둡니다.
+- Wi-Fi 엔드포인트(Wi-Fi 라우터)에 연결을 완료한 후 사용한 SSID와 자격 증명(이 값은 암호)을 기록해 둡니다.
 - 미리 공유한 키 필드에 SSID와 자격 증명(암호)을 입력합니다. 
 - 사용자 수가 제한된 테스트 그룹(가급적 IT 팀)에 배포합니다. 
 - iOS 장치를 Intune에 동기화합니다. 아직 등록하지 않은 경우 등록합니다. 
-- 동일한 Wi-Fi 끝점에 다시 연결을 테스트합니다(첫 번째 단계 참조).
+- 동일한 Wi-Fi 엔드포인트에 다시 연결을 테스트합니다(첫 번째 단계 참조).
 - 더 큰 그룹에 롤아웃하고 최종적으로 조직의 모든 예상 사용자에게 롤아웃합니다. 
 
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>정책 또는 앱을 할당한 후 모바일 장치에서 해당 정책 또는 앱을 수신할 때까지 걸리는 시간
@@ -117,7 +117,7 @@ Intune은 Apple 구성 파일 또는 사용자 지정 OMA-URI(Open Mobile Allian
         - Wi-Fi 테더링 허용
         - 무료 Wi-Fi 핫스팟에 자동 연결 허용
         - Wi-Fi 핫스팟 보고 허용
-        - 공장 재설정 허용
+        - 초기화 허용
         - Bluetooth 허용
         - NFC 허용
         - Wi-Fi 허용

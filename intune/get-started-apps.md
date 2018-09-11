@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 6b69934edc70e10ee01394cf5b6a4fed75334660
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869341"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330061"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Microsoft Intune에서 앱 추가 시작
 
@@ -39,7 +39,7 @@ Intune을 사용하여 기업 장치에 다음 앱 유형을 추가하고 할당
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Mobile Apps**를 선택한 다음 **앱**을 선택합니다.
+3. **클라이언트 앱**을 선택한 다음, **앱**을 선택합니다.
 4. **추가**를 선택한 다음, **iOS**를 **앱 형식**으로 선택합니다.
 5. **앱 선택**을 선택하여 **앱 스토어 검색** 창을 표시합니다.
 6. 텍스트 상자에서 장치에 할당할 앱을 검색합니다. 앱을 선택하고 **선택**을 클릭합니다.

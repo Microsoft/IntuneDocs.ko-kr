@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321495"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329821"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 장치 제한 설정
 
@@ -81,7 +81,7 @@ iOS 감독 모드는 Apple의 장치 등록 프로그램을 통하거나 Apple C
 - Apple Watch와 페어링 
 
 > [!NOTE]
-> Apple은 2018년에 특정 설정을 감독 전용으로 이동할 예정입니다. Apple이 감독 전용으로 마이그레이션하기를 기다리지 않고 이러한 설정을 사용하는 경우 다음을 고려하는 것이 좋습니다.
+> Apple은 2019년에 특정 설정을 감독 전용으로 이동할 예정입니다. Apple이 감독 전용으로 마이그레이션하기를 기다리지 않고 이러한 설정을 사용하는 경우 다음을 고려하는 것이 좋습니다.
 > - 최종 사용자에 의한 앱 설치
 > - 앱 제거
 > - FaceTime
@@ -91,6 +91,7 @@ iOS 감독 모드는 Apple의 장치 등록 프로그램을 통하거나 Apple C
 > - iCloud 문서 및 데이터
 > - 다중 접속 게임
 > - 게임 센터 친구 추가
+> - Siri
 
 ## <a name="password"></a>암호
 -   **암호** - 최종 사용자에게 장치에 액세스하려면 암호를 입력하도록 요구합니다.

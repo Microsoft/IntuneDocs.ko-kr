@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 47922a30d8106c4d60b6caa43c8855195e3a0220
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905413"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330248"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune에서 앱 할당 포함 및 제외
 
@@ -44,8 +44,8 @@ Intune은 그룹을 제외할 때 사용자와 장치 간의 연결을 고려하
 포함 및 제외 할당을 사용하여 그룹에 앱을 할당하려면:
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 메뉴에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 창에서 **앱**을 선택합니다. 추가된 앱 목록이 표시됩니다.
+3. **Intune** 메뉴에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 창에서 **앱**을 선택합니다. 추가된 앱 목록이 표시됩니다.
 5. 할당하려는 앱을 선택합니다. 대시보드에는 앱에 대한 정보가 표시됩니다. 
 6. 메뉴의 **관리** 섹션에서 **할당**을 선택합니다. 
 

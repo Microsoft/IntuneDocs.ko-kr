@@ -7,20 +7,20 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/23/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: ''
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: e295ca95ebffd4814bb00c3f3d5223560610444a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 8066cd8c2e0fa1d0a9244383497ea6b417f6531b
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831686"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253734"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune이 회사를 위해 할 수 있는 일은 무엇일까요?
 
@@ -41,7 +41,7 @@ Intune은 직원이 회사 데이터를 보호하면서 생산성을 높일 수 
 * [장치 등록 시작](get-started-enroll.md) - iOS 장치의 전체 등록 과정을 안내하여 등록 과정을 알아봅니다.
 * [앱 추가 시작](get-started-apps.md) - 앱을 찾고 장치에 추가하여 직원이 작업을 수행할 수 있게 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 조건
 
 시작하기 전에 Intune 관리자 및 테넌트 계정이 활성화되어 있어야 합니다. [여기](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)서 이러한 계정에 등록할 수 있습니다. 현재 구독자는 라이브 테넌트에서 이러한 작업을 완료할 수도 있습니다. 이러한 시작 문서에서는 사용자가 테스트 장치에 대해 작업 중이라고 가정합니다.
 

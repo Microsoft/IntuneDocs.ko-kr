@@ -15,12 +15,12 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac96c66dd6f09a7bd7a1b1c8c37f2f0eda24828c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 04d7acb5aa0e1a534fb6ad31519c094123aa90bb
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223512"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347680"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Microsoft Intune에 iOS 스토어 앱 추가
 
@@ -41,8 +41,8 @@ ms.locfileid: "34223512"
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다.  
     Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
 5. **앱** 창에서 **추가**를 선택합니다.
 6. **앱 유형** 목록의 **스토어 앱** 유형 아래에서 **iOS**를 선택합니다.
 7. **앱 스토어 검색**을 선택합니다.

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400286"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314026"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune에서 eSIM 셀룰러 프로필 구성 - 공개 미리 보기
 
@@ -179,7 +179,7 @@ Azure AD 그룹에서 장치를 제거하면 eSIM 프로필도 제거됩니다. 
 2. Azure AD 그룹으로 이동하고 그룹에서 장치를 제거합니다.
 3. 제거된 장치에서 Intune에 연결하는 경우 업데이트된 정책이 평가되고 eSIM 프로필이 제거됩니다.
 
-사용자가 장치를 등록 취소할 경우 또는 [회사 데이터 제거](devices-wipe.md#remove-company-data)나 [장치 원격 작업 다시 설정](devices-wipe.md#factory-reset)이 장치에서 실행되는 경우 eSIM 프로필도 제거됩니다.
+장치가 [사용 중지](devices-wipe.md#retire)되거나 사용자가 장치를 등록 취소하는 경우 또는 [장치 원격 작업 다시 설정](devices-wipe.md#wipe)이 장치에서 실행되는 경우 eSIM 프로필도 제거됩니다.
 
 > [!NOTE]
 > 프로필 제거하면 청구가 중지되지 않을 수 있습니다. 장치에 대한 청구 상태를 확인하려면 모바일 운영자에게 문의합니다.

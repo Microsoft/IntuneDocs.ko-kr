@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1bd9cff2148857ab6b0ea6d6e3c940e1e731c44b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909204"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313164"
 ---
 # <a name="what-is-device-enrollment"></a>장치 등록이란?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,7 +34,7 @@ Intune을 사용하여 직원의 장치 및 앱을 관리하고 회사 데이터
 
 | **방법** |  **초기화 필요** |    [**사용자 선호도**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **잠김** | **세부 정보** |
 |:---:|:---:|:---:|:---:|:---:|
-| | 장치는 등록 중에 초기화됩니다. |  각 장치를 사용자와 연결합니다.| 사용자가 장치 등록을 해제할 수 없습니다.  | |
+| | 장치는 등록 중 초기화됩니다. |  각 장치를 사용자와 연결합니다.| 사용자가 장치 등록을 해제할 수 없습니다.  | |
 |**[BYOD](#bring-your-own-device)** | 아니요|   예 |   아니요 | [추가 정보](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| 아니요 |아니요 |아니요  | [추가 정보](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**|   예 |   선택 사항 |  선택 사항|[추가 정보](./device-enrollment-program-enroll-ios.md)|
@@ -95,7 +95,7 @@ IT 관리자는 USB를 통해 Apple Configurator를 사용하여 등록할 각 �
 - [Configurator 및 설정 도우미를 사용하여 iOS 장치 등록](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-직접 등록의 경우 관리자가 등록 정책을 만들고 Apple Configurator로 내보내어 각 장치를 수동으로 등록해야 합니다. USB로 연결된 회사 소유의 장치는 직접 등록되고 출하 시 설정으로 초기화할 필요가 없습니다. 장치는 사용자가 지정되지 않은 장치로 관리됩니다. 장치는 잠기거나 감독이 되지 않으며, 조건부 액세스, 탈옥 검색, 모바일 응용 프로그램 관리를 지원할 수 없습니다.
+직접 등록의 경우 관리자가 등록 정책을 만들고 Apple Configurator로 내보내어 각 장치를 수동으로 등록해야 합니다. USB로 연결된 회사 소유의 장치는 직접 등록되고 초기화할 필요가 없습니다. 장치는 사용자가 지정되지 않은 장치로 관리됩니다. 장치는 잠기거나 감독이 되지 않으며, 조건부 액세스, 탈옥 검색, 모바일 응용 프로그램 관리를 지원할 수 없습니다.
 
 iOS 등록에 대한 자세한 내용은 다음을 참조하세요.
 

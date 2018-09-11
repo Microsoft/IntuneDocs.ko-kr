@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073838"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347800"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune의 알려진 문제
 
@@ -33,6 +33,13 @@ ms.locfileid: "34073838"
 Intune의 새로운 기능을 요청하려면 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) 사이트에서 보고서를 제출하는 것이 좋습니다.
 
 ## <a name="migration"></a>마이그레이션
+
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>Intune Azure Portal에서 이러한 정책을 다시 만들도록 Azure 클래식 포털 준수 정책 내보내기
+
+Azure 클래식 포털에서 만든 준수 정책은 더 이상 사용되지 않습니다. 기존 준수 정책을 검토하고 삭제할 수 있지만 업데이트할 수는 없습니다. 준수 정책을 현재 Intune Azure Portal로 마이그레이션하려는 경우 쉼표로 구분된 파일로 정책을 내보낼 수 있습니다(.csv 파일). 그런 다음, 파일의 세부 정보를 사용하여 Intune Azure Portal에서 이러한 정책을 다시 만듭니다.
+
+> [!IMPORTANT]
+> Azure 클래식 포털에서 사용 중지하는 경우 더 이상 준수 정책에 액세스하거나 볼 수 없습니다. 따라서 Azure 클래식 포털이 사용 중지되기 전에 Azure Portal에서 정책을 내보내고 다시 만들어야 합니다.
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune 레거시 PC 클라이언트 기능은 Silverlight 콘솔에서만 사용 가능합니다.
 
@@ -52,7 +59,7 @@ Azure 클래식 포털에서 마이그레이션한 정책의 상태 정보는 Az
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>특정 VPP 앱에 대한 여러 앱 설치 프롬프트
 최종 사용자 장치에 이미 설치된 특정 VPP 앱에 대한 여러 앱 설치 프롬프트를 볼 수 있습니다. 이 문제는 **자동 앱 업데이트** 옵션이 Intune Azure Portal에 업로드한 VPP 토큰에 대해 **켜짐**으로 설정된 경우 발생합니다.    
 
-이 문제를 해결하려면 VPP 토큰에 대해 **자동 앱 업데이트** 옵션을 사용하지 못하게 설정할 수 있습니다. 이렇게 하려면 Azure Portal에서 Microsoft Intune을 엽니다. Intune에서 **모바일 앱** > **iOS VPP 토큰**을 선택합니다. 다음으로 영향을 받는 앱을 배포한 VPP 토큰을 선택하고 **편집** > **자동 앱 업데이트** > **꺼짐** > **저장**을 선택합니다. 또는 영향을 받는 앱을 VPP 앱으로 배포하는 것을 중지할 수 있습니다. 그러면 프롬프트도 중지됩니다.    
+이 문제를 해결하려면 VPP 토큰에 대해 **자동 앱 업데이트** 옵션을 사용하지 못하게 설정할 수 있습니다. 이렇게 하려면 Azure Portal에서 Microsoft Intune을 엽니다. Intune에서 **클라이언트 앱** > **iOS VPP 토큰**을 선택합니다. 다음으로 영향을 받는 앱을 배포한 VPP 토큰을 선택하고 **편집** > **자동 앱 업데이트** > **꺼짐** > **저장**을 선택합니다. 또는 영향을 받는 앱을 VPP 앱으로 배포하는 것을 중지할 수 있습니다. 그러면 프롬프트도 중지됩니다.    
 
 현재 릴리스에서 알려진 문제입니다. 이 문제를 해결하게 될 예정된 수정 내용이 있습니다. 수정이 구현되면 사용자에게 더 이상 여러 앱 설치 프롬프트가 표시되지 않습니다.
 

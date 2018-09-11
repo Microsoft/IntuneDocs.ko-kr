@@ -15,12 +15,12 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8b3e34e72775061dcc3b40f60e75243972cedd2
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ae7723e29d23575314fc632c75af01eb9e59f72
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223597"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347663"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Microsoft Intune에 Windows Phone 8.1 스토어 앱 추가
 
@@ -34,8 +34,8 @@ ms.locfileid: "34223597"
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다.  
     Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
 5. **앱** 창에서 **추가**를 선택합니다.
 6. **앱 추가** 창에서 **앱 형식**을 **Windows Phone 8.1**로 선택하고 **앱 정보**를 선택합니다.
 7. **앱 정보** 창에서 앱 정보를 추가합니다. 선택한 앱에 따라 이 창의 일부 값이 자동으로 채워질 수 있습니다.

@@ -1,11 +1,11 @@
 ---
-title: Android에서 SandBlast Mobile Protect로 발견한 위협 해결 | Microsoft 문서
-description: Android에서 Mobile Protect로 발견한 위협을 해결하는 방법에 대해 알아봅니다.
+title: Android용 SandBlast Mobile Protect로 발견한 위협 해결 | Microsoft Docs
+description: Android용 SandBlast Mobile Protect로 발견한 위협을 해결하는 방법에 대해 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,40 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3413ebed27bc11c88616c4c2f07d5cf182ccf1f0
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: be3f728a4f2764a0c2494686c943cdfb43b32bd2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753722"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147558"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>SandBlast Mobile Protect로 발견한 위협 해결
 
-SandBlast Mobile Protect가 장치에서 잠재적인 위협을 발견했기 때문에 회사 또는 학교 메일, 앱 및 파일에 다시 액세스하려면 문제를 해결해야 합니다. 표시되는 메시지는 장치에서 SandBlast Mobile Protect가 발견한 문제에 따라 달라집니다.
+SandBlast Mobile Protect는 Android 장치에서 잠재적인 위협을 식별하는 Mobile Threat Defender 서비스입니다. 회사 포털 앱에서 볼 수 있는 위협을 보고합니다. 위협은 확인되지 않은 비규격 문제로 앱에 나타납니다. 이러한 위협이 있는 한 다음 작업을 수행할 수 없습니다.   
 
-문제를 해결하려면 SandBlast Mobile Protect 앱을 열고 표시되는 지침을 따릅니다.
+* 회사 이메일에 연결
+* 회사 Wi-Fi에 연결
+* SharePoint Online에 연결
+* OneDrive와 회사 파일 동기화
+* 회사 앱에 액세스
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>등록된 장치가 메일 또는 파일에 액세스할 수 없는 경우 표시될 수 있는 메시지
+이 문서에서는 Sandblast Mobile Protect 위협 경고를 인식하는 방법 및 이를 해결하기 위해 수행할 작업을 설명합니다.  
 
-등록된 장치에 바이러스 또는 다른 보안 위협이 있을 때 회사 메일이나 파일에 액세스하려고 하면 SandBlast Mobile Protect 메시지가 메시지를 표시해 조치를 취하라고 경고합니다.
+## <a name="troubleshoot-virus-or-security-threat"></a>바이러스 또는 보안 위협 해결  
+바이러스 또는 보안 위협이 감지되면 SandBlast Mobile Protect 앱은 조직의 액세스 정책에 따라 작동합니다. 회사의 액세스 정책은 회사의 네트워크, 앱 및 이메일에 액세스하지 못하도록 할 수 있습니다.  
 
-**장치 관리 포털** 링크를 탭하여 문제 해결 방법 지침이 나와 있는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)로 이동합니다.
+![SEP Mobile 앱 경고 메시지의 예제 스크린샷](./media/skycure-list-of-potential-issues-android.png)  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>SandBlast Mobile Protect에서 위협으로 간주하는 앱의 예
+그러나 SandBlast Mobile Protect는 분실한 액세스 권한을 다시 얻는 작업을 수행하도록 메시지를 표시합니다. 위협을 선택하고 문제를 해결하도록 앱 내의 지침을 따릅니다.
 
-SandBlast Mobile Protect에서 위협으로 간주하는 앱을 설치한 경우 신뢰할 수 없는 앱이 장치에 설치되었다고 경고합니다.
+앱은 회사의 MDM 공급자와 통합되므로 회사 포털 앱에서 제한된 액세스에 대한 경고도 표시됩니다. 경고는 Sandblast Mobile Protect를 열어 바이러스 또는 보안 위협을 해결하도록 합니다.
 
-이 경우 앱을 제거하면 회사 메일 및 데이터에 즉시 다시 액세스할 수 있습니다. 앱을 제거하지 않으면 앱을 제거할 때까지 메일 및 데이터에 액세스할 수 없습니다.
+  ![SandBlast Mobile Protect 경고를 보여주는 회사 포털 장치 페이지의 예제 스크린샷](./media/CP-lookout-virus-banner-1808.png)  
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com#HelpDeskDialog)를 참조하세요.
+## <a name="troubleshoot-an-app-threat"></a>앱 위협 해결  
+
+장치에 위협으로 표시되는 앱을 설치하면 SandBlast Mobile Protect 내에서 알림을 받게 됩니다. 장치에 영향을 받는 앱이 남아 있으면 회사 리소스에 액세스할 수 없습니다.  
+
+해결하려면 SandBlast Mobile Protect의 위협 목록에서 앱을 선택합니다. 그런 다음, 지침을 따라 앱을 제거합니다.     
+
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

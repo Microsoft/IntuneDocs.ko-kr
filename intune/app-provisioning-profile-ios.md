@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d3cc718c0bfd0bba68480b4cd4003cd52489a50
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5ed39a13c8866786ac044d77ca61d91becd5b89f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34225041"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329567"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>iOS 앱 프로비전 프로필을 사용하여 모바일 앱이 만료되지 않도록 방지
 
@@ -43,8 +43,8 @@ iPhone 및 iPad에 할당된 Apple iOS LOB(기간 업무) 앱은 포함된 프�
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-1.  **모바일 앱** 워크로드에서 **관리** > **iOS 앱 프로비전 프로필**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+1.  **클라이언트 앱** 워크로드에서 **관리** > **iOS 앱 프로비전 프로필**을 선택합니다.
 2.  프로필 목록 창에서 **프로필 만들기**를 선택합니다.
 3. **프로필 만들기** 창에서 다음 값을 구성합니다.
     - **이름** - 이 모바일 프로비전 프로필의 이름을 제공합니다.

@@ -3,8 +3,8 @@ title: Microsoft Intune 앱 SDK Xamarin 바인딩
 description: Intune 앱 SDK Xamarin 바인딩은 Xamarin에 내장된 iOS 및 Android 앱의 Intune 앱 보호 정책을 사용하도록 설정합니다.
 keywords: sdk, Xamarin, intune
 author: Erikre
-manager: dougeby
 ms.author: erikre
+manager: dougeby
 ms.date: 06/08/2018
 ms.topic: article
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1cfbaa0cbdcc2263f6e8d1d3fc8562678e410537
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 079b27c73a466ae19dad950564ba0d56d8e20f8d
+ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400320"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44031272"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -49,7 +49,7 @@ Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발�
 
 이제 Intune 앱 SDK Xamarin 바인딩이 내장된 Xamarin 앱에서는 Intune 모바일 장치 관리(MDM)가 등록된 장치 및 등록되지 않은 장치 모두에서 Intune 앱 보호 정책을 받을 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 조건
 
 [사용 약관](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)을 검토합니다. 기록을 위해 사용 조건의 사본을 인쇄하여 보관하세요. Intune 앱 SDK Xamarin 바인딩을 다운로드하여 이러한 사용 조건에 동의합니다. 동의하지 않는 경우 소프트웨어를 사용하지 마세요.
 
@@ -108,7 +108,7 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 > 이 작업은 Visual Studio가 Intellisense 자동 완성을 위해 사용하는 종속성을 다시 작성하기 때문에 Intellisense가 변경 내용을 올바로 인식하도록 처음 Remapper를 실행한 후 Visual Studio를 다시 시작해야 할 수 있습니다. 
 
 
-## <a name="support"></a>Support
+## <a name="support"></a>지원
 
 앱에 구성 요소를 빌드하기 위한 기본 단계를 완료했습니다. 이제 Xamarin.android 샘플 앱에 포함된 단계를 수행할 수 있습니다. Xamarin.Forms의 샘플과 Android의 샘플이 제공되어 있습니다.
 

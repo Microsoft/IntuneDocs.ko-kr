@@ -5,21 +5,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
-ms.topic: get-started-article
+ms.date: 09/06/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.custom: apps
-ms.openlocfilehash: 69bf4b1dc85a8a17312fe78b6a17564a8a6ff642
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: apps; get-started
+ms.openlocfilehash: ad9eea41d0d40eed9aee07bcf5a77118c0efdab8
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225394"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253754"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune에 대한 앱 수명 주기 개요
 
@@ -33,7 +33,7 @@ Microsoft Intune 앱 수명 주기는 앱이 추가될 때 시작되어 앱을 �
 
 앱 배포의 첫 단계는 관리 및 할당할 앱을 Intune에 추가하는 것입니다. 작업할 수 있는 앱 형식은 다양하지만, 기본 절차는 같습니다. Intune을 사용하면 사내에서 작성한 앱(기간 업무), 스토어의 앱, 기본 제공 앱, 웹앱 등 다양한 앱 유형을 추가할 수 있습니다. 이러한 앱 유형 각각에 대한 자세한 내용은 [Microsoft Intune에 앱을 추가하는 방법](apps-add.md)을 참조하세요. 
 
-## <a name="deploy"></a>배포
+## <a name="deploy"></a>배포:
 
 앱을 Intune에 추가한 후 [관리하는 사용자와 장치에 앱을 할당](apps-deploy.md)할 수 있습니다. Intune은 이 과정을 쉽게 수행할 수 있게 해주며 앱이 배포된 후 Azure Portal 내의 Intune에서 배포의 [성공 여부를 모니터링](apps-monitor.md)할 수 있습니다. 또한 [Apple](vpp-apps-ios.md) 및 [Windows](windows-store-for-business.md) 앱 스토어와 같은 일부 앱 스토어에서 회사용 앱 라이선스를 대량으로 구매할 수 있습니다. Intune은 데이터를 이러한 스토어와 동기화하여 이러한 형식의 앱에 대한 라이선스 사용을 Intune 관리 콘솔에서 바로 배포 및 추적할 수 있습니다.
 

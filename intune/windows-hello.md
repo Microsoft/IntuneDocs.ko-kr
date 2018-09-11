@@ -6,19 +6,19 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5220d9c2e1ba98873658631798240af9e7587758
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ff3b482f974641dd7255dc98d3af62542d802de9
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834773"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313737"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Microsoft Intune과 비즈니스용 Windows Hello 통합
 
@@ -31,7 +31,10 @@ ms.locfileid: "31834773"
 
 Intune은 다음 두 가지 방법으로 비즈니스용 Hello에 통합됩니다.
 
--   Intune 정책을 사용하여 사용자가 로그인하는 데 사용할 수 있는 제스처와 사용할 수 없는 제스처를 제어할 수 있습니다.
+-   **장치 등록**에서 Intune 정책을 만들 수 있습니다. 이 정책은 전체 조직(테넌트 수준)을 대상으로 합니다. Windows AutoPilot OOBE(out-of-box-experience)를 지원하며 장치를 등록하는 경우 적용됩니다. 
+-  **장치 구성**에서 ID 보호 프로필을 만들 수 있습니다. 이 프로필은 할당된 사용자 및 장치를 대상으로 하고, 체크 인하는 동안 적용됩니다. 
+
+이 문서를 사용하여 전체 조직을 대상으로 하는 기본 비즈니스용 Windows Hello 정책을 만듭니다. 사용자 및 장치 그룹 선택에 적용되는 ID 보호 프로필을 만들려면 [ID 보호 프로필 구성](identity-protection-configure.md)을 참조하세요.  
 
 <!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 
@@ -57,7 +60,7 @@ Intune은 다음 두 가지 방법으로 비즈니스용 Hello에 통합됩니�
 
 4. **모든 사용자** 창에서 **속성**을 클릭한 다음, 비즈니스용 Windows Hello 설정에 대한 **이름** 및 선택적 **설명**을 입력합니다.
 
-5. **모든 사용자** 창에서 **설정**을 클릭한 다음, **비즈니스용 Windows Hello 구성**에서 다음 중 하나를 선택합니다.
+5. **모든 사용자** 창에서 **설정**을 클릭한 다음, **비즈니스용 Windows Hello 구성**에서 다음 옵션 중 하나를 선택합니다.
 
     - **Disabled**. 비즈니스용 Windows Hello를 사용하지 않으려면 이 설정을 선택합니다. 화면의 다른 모든 설정은 사용할 수 없게 됩니다.
     - **Enabled**. 비즈니스용 Windows Hello 설정을 구성하려면 이 설정을 선택합니다.

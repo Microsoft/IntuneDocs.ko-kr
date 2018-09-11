@@ -15,12 +15,12 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca0c0151bd90051d287c76f5d264030112b85cfd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 53f6adba610f1ddb817e04ac8e9a0fdb2665b21a
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834087"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347817"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune에서 Telecom Expense Management 서비스 설정
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -109,9 +109,9 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
 다음 단계에 따라 Intune에서 각 플랫폼용 Datalert 앱을 만듭니다. 다음 단계에서는 iOS를 예로 듭니다.
 
-1. [Azure portal](https://portal.azure.com)의 **Intune** 창에서 **모바일 앱**을 선택합니다.
+1. [Azure Portal](https://portal.azure.com)의 **Intune** 창에서 **클라이언트 앱**을 선택합니다.
 
-2. **모바일 앱** 창에서 **관리** > **앱**을 선택합니다.
+2. **클라이언트 앱** 창에서 **관리** > **앱**을 선택합니다.
 
 3. **추가**를 선택하여 앱을 추가합니다.
 

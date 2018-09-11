@@ -15,12 +15,12 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
-ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
+ms.openlocfilehash: 6c92b1b660856fb52f6259514ad9075ab96fb2fc
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146699"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313295"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune에 iOS 장치 등록
 

@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321738"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329650"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune에서 Windows 10 이상 장치에 대한 Wi-Fi 설정
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune에서 Windows 10 이상 장치에 대한 Wi-Fi 설정
 
 Wi-Fi 설정은 Windows 10 이상을 실행하는 장치에 적용되는 구성 프로필에 사용됩니다. 다음과 같은 선택 사항이 있습니다.
 
@@ -77,25 +78,36 @@ Wi-Fi 설정은 Windows 10 이상을 실행하는 장치에 적용되는 구성 
   - **EAP-TTLS**
   - **보호된 PEAP**(PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>EAP 유형을 선택할 때의 추가 옵션
+    **EAP-TLS, EAP-TTLS 및 PEAP 추가 설정**:
+    
+    > [!NOTE]
+    > 현재 EAP 유형을 사용하는 경우 SCEP 인증서 프로필만 지원됩니다. PKCS 인증서 프로필은 지원되지 않습니다. 인증서를 입력하라는 메시지가 표시될 때마다 SCEP 인증서를 선택해야 합니다.
 
-> [!NOTE]
-> 현재 EAP 유형을 사용하는 경우 SCEP 인증서 프로필만 지원됩니다. PKCS 인증서 프로필은 지원되지 않습니다. 인증서를 입력하라는 메시지가 표시될 때마다 SCEP 인증서를 선택해야 합니다.
+      - **서버 트러스트**  
 
-#### <a name="server-trust"></a>서버 트러스트
+        **인증서 서버 이름**: **EAP-TLS**, **EAP-TTLS** 또는 **PEAP** EAP 형식으로 사용합니다. 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 입력합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 장치에 표시되는 동적 신뢰 대화 상자를 무시할 수 있습니다.  
 
-|설정 이름|추가 정보|사용하는 경우|
-|--------------|-------------|----------|
-|**인증서 서버 이름**|신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 입력합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 장치에 표시되는 동적 신뢰 대화 상자를 무시할 수 있습니다.|EAP 유형이 **EAP-TLS**, **EAP-TTLS** 또는 **PEAP**인 경우|
-|**서버 유효성 검사에 대한 루트 인증서**|연결을 인증하는 데 사용되는 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. |EAP 유형이 **EAP-TLS**, **EAP-TTLS** 또는 **PEAP**인 경우|
-|**ID 개인 정보 사용(외부 ID)**|EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 원하는 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.|EAP 유형이 **PEAP**인 경우|
+        **서버 유효성 검사에 대한 루트 인증서**: **EAP-TLS**, **EAP-TTLS** 또는 **PEAP** EAP 형식으로 사용합니다. 연결을 인증하는 데 사용되는 신뢰할 수 있는 루트 인증서 프로필을 선택합니다.  
 
-#### <a name="client-authentication"></a>클라이언트 인증
+        **ID 개인 정보 사용(외부 ID)**: **PEAP** EAP 형식으로 사용합니다. EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 원하는 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.  
 
-| 설정 이름 | 추가 정보 | 사용하는 경우 |
-|---|---|---|
-| **클라이언트 인증에 사용할 클라이언트 인증서(ID 인증서)** |  연결을 인증하는 데 사용할 SCEP 인증서 프로필을 선택합니다. | EAP 유형이 **EAP-TLS**인 경우 |
-| **인증 방법** | 연결에 대한 인증 방법을 선택합니다.<br><br>- **인증서**: 서버에 제공되는 ID 인증서인 SCEP 클라이언트 인증서를 선택합니다.<br><br>- **사용자 이름 및 암호**: 인증에 **EAP 이외의 방법(내부 ID)** 을 입력합니다. 옵션은 다음과 같습니다.<br><br>- **암호화되지 않은 암호(PAP)**<br>- **Challenge Handshake(CHAP)**<br>- **MS-CHAP(Microsoft CHAP)**<br>- **MS-CHAP v2(Microsoft CHAP 버전 2)**<br><br>- **ID 개인 정보(외부 ID)**: EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 원하는 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다. | EAP 유형이 **EAP-TTLS**인 경우 |
+      - **클라이언트 인증**
+
+        **클라이언트 인증에 사용할 클라이언트 인증서(ID 인증서)**: **EAP-TLS** EAP 형식으로 사용합니다. 연결을 인증하는 데 사용할 인증서 프로필을 선택합니다.
+
+        **인증 방법**: **EAP-TTLS** EAP 형식으로 사용합니다. 연결에 대한 인증 방법을 선택합니다.  
+
+          - **인증서**: 서버에 제공되는 ID 인증서인 클라이언트 인증서를 선택합니다.
+          - **사용자 이름 및 암호**: 인증에 **EAP 이외의 방법(내부 ID)** 을 입력합니다. 옵션은 다음과 같습니다.
+
+            - **암호화되지 않은 암호(PAP)**
+            - **CHAP(Challenge Handshake)**
+            - **MS-CHAP(Microsoft CHAP)**
+            - **MS-CHAP v2(Microsoft CHAP 버전 2)**
+
+        **ID 개인 정보 사용(외부 ID)**: **EAP-TTLS** EAP 형식으로 사용합니다. EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 원하는 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
+
+- **FIPS(Federal Information Processing Standard)로 준수되도록 Wi-Fi 프로필 강제 적용**: FIPS 140-2 표준에 대해 유효성 검사를 할 때 **예**를 선택합니다. 이 표준은 암호화 기반 보안 시스템을 사용하여 디지털로 저장되는 중요하지만 분류되지 않은 정보를 보호하는 모든 미국 연방 정부 기관에 필요합니다. FIPS를 준수하지 않으려면 **아니요**를 선택합니다.
 
 ## <a name="use-an-imported-settings-file"></a>가져온 설정 파일 사용
 

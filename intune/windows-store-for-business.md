@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0fb7d432edf62de48e81f65b1ac2f67c6dbad70a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 143b4f3390d3058177f4bfde4cbfe0d210f57e86
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224956"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347919"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune을 사용하여 비즈니스용 Microsoft 스토어에서 구입한 앱을 관리하는 방법
 
@@ -47,7 +47,7 @@ ms.locfileid: "34224956"
 - 이 기능을 사용하려면 장치가 Active Directory Domain Services에 가입하거나 작업 공간에 연결되어 있어야 합니다.
 - 등록된 장치가 1511 릴리스의 Windows 10 이상을 사용 중이어야 합니다.
 
-또한 비즈니스용 Microsoft 스토어에서 동기화된 오프 라인 사용이 허가된 앱 및 관련 집합은 이제 UI에서 단일 앱 항목으로 통합되게 됩니다. 개별 패키지에서의 모든 배포 세부 정보는 단일 항목으로 마이그레이션됩니다. Azure Portal에서 관련 집합을 보려면 **모바일 앱** 블레이드에서 **앱 라이선스**를 선택합니다.
+또한 비즈니스용 Microsoft 스토어에서 동기화된 오프 라인 사용이 허가된 앱 및 관련 집합은 이제 UI에서 단일 앱 항목으로 통합되게 됩니다. 개별 패키지에서의 모든 배포 세부 정보는 단일 항목으로 마이그레이션됩니다. Azure Portal에서 관련 집합을 보려면 **클라이언트 앱** 블레이드에서 **앱 라이선스**를 선택합니다.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>비즈니스용 Microsoft 스토어 계정을 Intune에 연결
 Intune 콘솔에서 동기화를 사용하기 전에 관리 도구로 Intune을 사용하도록 스토어 계정을 구성해야 합니다.
@@ -64,8 +64,8 @@ Intune 콘솔에서 동기화를 사용하기 전에 관리 도구로 Intune을 
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-1. **모바일 앱** 창에서 **설치** > **비즈니스용 Microsoft Store**를 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+1. **클라이언트 앱** 창에서 **설치** > **비즈니스용 Microsoft Store**를 선택합니다.
 2. **사용**을 클릭합니다.
 3. 아직 수행하지 않은 경우에는 링크를 클릭하여 비즈니스용 Microsoft 스토어에 등록하고 이전에 설명된 대로 계정을 연결합니다.
 5. **언어** 드롭다운 목록에서 비즈니스용 Microsoft Store의 앱이 Azure Portal에 표시되는 언어를 선택합니다. 표시되는 언어에 관계없이 사용 가능한 경우 최종 사용자의 언어로 설치됩니다.
@@ -73,7 +73,7 @@ Intune 콘솔에서 동기화를 사용하기 전에 관리 도구로 Intune을 
 
 ## <a name="synchronize-apps"></a>앱 동기화
 
-1. **모바일 앱** 작업에서 **설정** > **비즈니스용 Microsoft 스토어**를 선택합니다.
+1. **클라이언트 앱** 워크로드에서 **설치** > **비즈니스용 Microsoft Store**를 선택합니다.
 2. **동기화**를 클릭하여 Microsoft 스토어에서 구입한 앱을 Intune으로 가져옵니다.
 
 ## <a name="assign-apps"></a>앱 할당

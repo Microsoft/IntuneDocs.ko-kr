@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 08/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
-ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
+ms.openlocfilehash: 0205715a8e35d009401886af4bd0bf88fb9cf662
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43092178"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347290"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,148 @@ ms.locfileid: "43092178"
 
 -->   
 
-
 ## <a name="week-of-august-27-2018"></a>2018년 8월 27일 주
 
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP 장치 라이선스를 사용하여 DEP 등록 중 회사 포털 사전 프로비전 <!-- 1608345 -->
+### <a name="app-management"></a>앱 관리
+
+#### <a name="packet-tunnel-support-for-ios-per-app-vpn-profiles-for-custom-and-pulse-secure-connection-types----1520957---"></a>사용자 지정 및 Pulse Secure 연결 형식에 대한 iOS 앱당 VPN 프로필의 패킷 터널 지원 <!-- 1520957 -->
+iOS 앱당 VPN 프로필을 사용할 때 앱 계층 터널링(app-proxy) 또는 패킷 수준 터널링(packet-tunnel)을 사용하도록 선택할 수 있습니다. 이러한 옵션을 사용할 수 있는 연결 형식은 다음과 같습니다.
+- 사용자 지정 VPN
+- Pulse Secure. 사용할 값을 모르는 경우 VPN 공급자의 설명서를 참조하세요.
+
+#### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>장치에 표시될 때의 iOS 소프트웨어 업데이트 지연 <!-- 1949583 -->
+Intune > **소프트웨어 업데이트** > **iOS용 정책 업데이트**에서 장치에 업데이트를 설치하지 않으려는 일 수와 시간을 구성할 수 있습니다. 향후 업데이트에서는 소프트웨어 업데이트가 장치에 표시될 때 해당 업데이트를 1-90일 동안 지연시킬 수 있습니다. 
+[Microsoft Intune에서 iOS 업데이트 정책 구성](software-updates-ios.md)에는 현재 설정이 나열되어 있습니다.
+
+#### <a name="office-365-proplus-version----2213968---"></a>Office 365 ProPlus 버전 <!-- 2213968 -->
+Intune을 사용하여 Office 365 ProPlus 앱을 Windows 10 장치에 할당하는 경우 Office 버전을 선택할 수 있습니다. Azure Portal에서 **Microsoft Intune** > **앱** > **앱 추가**를 차례로 선택합니다. 그런 다음, **형식** 드롭다운 목록에서 **Office 365 ProPlus 제품군(Windows 10)** 을 선택합니다. 연결된 블레이드를 표시하려면 **앱 제품군 설정**을 선택합니다. **업데이트 채널**을 **매월**과 같은 값으로 설정합니다. 필요에 따라 **예**를 선택하여 최종 사용자 장치에서 다른 버전의 Office(msi)를 제거합니다. 최종 사용자 장치에서 선택한 채널에 대한 특정 버전의 Office를 설치하려면 **특정**을 선택합니다. 여기서는 사용할 Office의 **특정 버전**을 선택할 수 있습니다. 사용 가능한 버전은 시간이 지남에 따라 변경됩니다. 따라서 새 배포를 만들 때 사용 가능한 버전이 최신 버전일 수 있으며 이전 버전이 제공되지 않을 수 있습니다. 현재 배포에서는 이전 버전을 계속 배포하지만, 버전 목록은 채널별로 지속적으로 업데이트됩니다. 자세한 내용은 [Office 365 ProPlus의 업데이트 채널 개요](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)를 참조하세요.
+
+#### <a name="support-for-register-dns-setting-for-windows-10-vpn----2282852---"></a>Windows 10 VPN에 대한 DNS 등록 설정 지원 <!-- 2282852 -->
+이 업데이트를 사용하여 사용자 지정 프로필을 사용하지 않고도 VPN 인터페이스에 할당된 IP 주소를 내부 DNS와 동적으로 등록하도록 Windows 10 VPN 프로필을 구성할 수 있습니다.
+현재 사용 가능한 VPN 프로필 설정에 대한 자세한 내용은 [Windows 10 VPN 설정](vpn-settings-windows-10.md)을 참조하세요. 
+
+#### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>이제 macOS 회사 포털 설치 관리자는 설치 관리자 파일 이름에 버전 번호를 포함함 <!--2652728-->
+
+#### <a name="ios-automatic-app-updates----2729759-wnready---"></a>iOS 자동 앱 업데이트 <!-- 2729759 wnready -->
+자동 앱 업데이트는 iOS 버전 11.0 이상의 장치 및 사용자에게 사용이 허가된 앱 모두에서 작동합니다.
+
+
+
+
+### <a name="device-configuration"></a>장치 구성
+
+#### <a name="windows-hello-will-target-users-and-devices----1106609---"></a>Windows Hello는 사용자 및 장치를 대상으로 함 <!-- 1106609 -->
+[비즈니스용 Windows Hello](windows-hello.md) 정책을 만들면 조직 내의 모든 사용자(테넌트 수준)에게 적용됩니다. 이 업데이트를 사용하면 장치 구성 정책을 사용하여 특정 사용자 또는 특정 장치에 정책을 적용할 수도 있습니다(**장치 구성** > **프로필** > **프로필 만들기** > **ID 보호** > **비즈니스용 Windows Hello**).
+Windows Hello 구성 및 설정은 이제 Azure Portal의 Intune에서 **장치 등록** 및 **장치 구성**에 모두 존재합니다. **장치 등록**은 전체 조직(테넌트 수준)을 대상으로 하며 Windows AutoPilot(OOBE)을 지원합니다. **장치 구성**은 체크 인 중에 적용되는 정책을 사용하는 장치와 사용자를 대상으로 합니다.
+이 기능은 다음에 적용됩니다.  
+- Windows 10 이상
+- Windows Holographic for Business
+
+#### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858-eeready---"></a>Zscaler는 iOS의 VPN 프로필에 사용할 수 있는 연결임 <!-- 1769858 eeready -->
+iOS VPN 장치 구성 프로필을 만드는 경우(**장치 구성** > **프로필** > **프로필 만들기** > **iOS** 플랫폼 > **VPN** 프로필 유형), Cisco, Citrix 등과 같은 몇 가지 연결 형식이 있습니다. 이 업데이트는 연결 형식으로 Zscaler를 추가합니다. 
+[iOS를 실행하는 장치에 대한 VPN 설정](vpn-settings-ios.md)에는 사용 가능한 연결 형식이 나열되어 있습니다.
+
+#### <a name="fips-mode-for-enterprise-wi-fi-profiles-for-windows-10----1879077-eeready---"></a>Windows 10용 엔터프라이즈 Wi-Fi 프로필에 대한 FIPS 모드 <!-- 1879077 eeready -->
+이제 Intune Azure Portal에서 Windows 10용 엔터프라이즈 Wi-Fi 프로필에 대해 FIPS(Federal Information Processing Standards) 모드를 사용할 수 있습니다. Wi-Fi 프로필에서 사용하는 경우 Wi-Fi 인프라에서 FIPS 모드가 활성화되어 있어야 합니다.
+[Intune에서 Windows 10 이상 장치에 대한 Wi-Fi 설정](wi-fi-settings-windows.md)은 Wi-Fi 프로필을 만드는 방법을 보여줍니다.
+
+#### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>Windows 10 이상의 장치에서 S 모드 제어 - 공개 미리 보기 <!-- 1958649 -->
+이 기능 업데이트를 사용하여 Windows 10 장치를 S 모드에서 전환하거나 사용자가 S 모드에서 장치를 전환하지 못하게 하는 장치 구성 프로필을 만들 수 있습니다. 이 기능은 Intune > **장치 구성** > **프로필** >  **Windows 10 이상** > **버전 업그레이드 및 모드 전환**에 있습니다.
+[Windows 10 S 모드 소개](https://www.microsoft.com/windows/s-mode)에서 S 모드에 대한 자세한 정보를 제공합니다.
+적용 대상: Windows 10 이상(1809 이상)
+
+#### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>구성 프로필에 자동으로 추가된 Windows Defender ATP 구성 패키지 <!-- 2144658 -->
+Intune에서 [고급 위협 보호 및 온보딩](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) 장치를 사용하는 경우 이전에 구성 패키지를 다운로드하고, 구성 프로필에 추가해야 했습니다. 이 업데이트를 사용하여 Intune은 Windows Defender Security Center에서 패키지를 자동으로 가져오고, 프로필에 추가합니다.
+Windows 10 이상에 적용됩니다.
+
+#### <a name="require-users-to-connect-during-device-setup---2311457--"></a>사용자는 장치 설정 중에 연결해야 함 <!--2311457-->
+이제 Windows 10을 설치하는 동안 네트워크 페이지를 지나 계속 진행하기 전에 네트워크에 장치를 연결하도록 요구하는 장치 프로필을 설정할 수 있습니다. 이 기능이 미리 보기 상태인 동안 이 설정을 사용하려면 Windows Insider build 1809 이상이 필요합니다.
+
+#### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>앱을 제한하고, iOS 및 Android Enterprise 장치의 회사 리소스에 대한 액세스를 차단함 <!-- 2451462 -->
+**장치 준수** > **정책** > **정책 만들기** > **iOS** > **시스템 보안**에는 새로운 **제한된 응용 프로그램** 설정이 있습니다. 특정 응용 프로그램이 장치에 설치되어 있는 경우 이 새로운 설정은 준수 정책을 사용하여 회사 리소스에 대한 액세스를 차단합니다. 제한된 응용 프로그램이 장치에서 제거될 때까지 장치는 정책을 준수하지 않는 것으로 간주됩니다.
+적용 대상: iOS
+
+#### <a name="modern-vpn-support-updates-for-ios----2459928-1819876-and-2650856---"></a>iOS에 대한 최신 VPN 지원 업데이트 <!-- 2459928, 1819876, and 2650856 -->
+이 업데이트는 다음 iOS VPN 클라이언트 지원을 추가합니다. 
+- F5 Access(버전 3.0.1 이상)
+- Citrix SSO
+- Palo Alto Networks GlobalProtect 버전 5.0 이상 또한 이 업데이트에서는 다음과 같이 적용됩니다.
+- 기존 **F5 Access** 연결 형식의 이름은 iOS에 대해 **F5 Access Legacy**로 변경됩니다.
+- 기존 **Palo Alto Networks GlobalProtect** 연결 형식의 이름이 iOS에 대해 **Palo Alto Networks GlobalProtect(레거시)** 로 변경됩니다.
+이러한 연결 형식의 기존 프로필은 해당 레거시 VPN 클라이언트에서 계속 사용됩니다. iOS에서 Cisco Legacy AnyConnect, F5 Access Legacy, Citrix VPN 또는 Palo Alto Networks GlobalProtect 버전 4.1 이전을 사용하는 경우 새 앱으로 전환해야 합니다. iOS 장치에서 iOS 12로 업데이트하는 대로 가능한 한 빨리 이 작업을 수행하여 VPN 액세스를 사용할 수 있도록 합니다.
+iOS 12 및 VPN 프로필에 대한 자세한 내용은 [Microsoft Intune 지원 팀 블로그](https://go.microsoft.com/fwlink/?linkid=2013806)를 참조하세요.
+
+#### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal----2469637---"></a>Intune Azure Portal에서 이러한 정책을 다시 만들도록 Azure 클래식 포털 준수 정책 내보내기 <!-- 2469637 -->
+Azure 클래식 포털에서 만든 준수 정책은 더 이상 사용되지 않습니다. 기존 준수 정책을 검토하고 삭제할 수 있지만 업데이트할 수는 없습니다. 준수 정책을 현재 Intune Azure Portal로 마이그레이션하려는 경우 쉼표로 구분된 파일로 정책을 내보낼 수 있습니다(*.csv* 파일). 그런 다음, 파일의 세부 정보를 사용하여 Intune Azure Portal에서 이러한 정책을 다시 만듭니다.
+
+> [!IMPORTANT]
+> Azure 클래식 포털에서 사용 중지하는 경우 더 이상 준수 정책에 액세스하거나 볼 수 없습니다. 따라서 Azure 클래식 포털이 사용 중지되기 전에 Azure Portal에서 정책을 내보내고 다시 만들어야 합니다.
+
+#### <a name="better-mobile---new-mobile-threat-defense-partner----22662717---"></a>Better Mobile - 새 Mobile Threat Defense 파트너 <!-- 22662717 -->
+Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 Better Mobile에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 장치에서 회사 리소스에 대한 액세스를 제어할 수 있습니다.
+
+### <a name="device-enrollment"></a>장치 등록
+
+#### <a name="lock-the-company-portal-in-single-app-mode-until-user-sign-in---1067692---"></a>사용자가 로그인할 때까지 회사 포털을 단일 앱 모드로 잠금 <!--1067692 --> 
+DEP 등록 중에 설정 도우미 대신 회사 포털을 통해 사용자를 인증하는 경우 이제 회사 포털을 단일 앱 모드에서 실행할 수 있습니다. 이 옵션을 사용하면 설정 도우미가 완료되는 즉시 장치를 잠그므로 사용자가 장치에 액세스하려면 로그인해야 합니다. 이 프로세스는 장치가 온보딩을 완료하고 사용자가 연결되지 않은 상태에서 분리되지 않도록 합니다.
+
+#### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Autopilot 장치에 사용자 및 식별 이름 할당 <!--1346521 -->
+이제 [단일 Autopilot 장치에 사용자를 할당](enrollment-autopilot.md)할 수 있습니다. 또한 관리자는 AutoPilot을 사용하여 장치를 설정할 때 사용자에게 친숙한 식별 이름도 지정할 수 있습니다.
+적용 대상: Windows 참가자 1809 이상 빌드(미리 보기 동안).
+
+#### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP 장치 라이선스를 사용하여 DEP 등록 중 회사 포털 사전 프로비전 <!-- 1608345 -->
 이제 VPP(대량 구매 프로그램) 장치 라이선스를 사용하여 DEP(장비 등록 프로그램) 등록 중 회사 포털을 사전 프로비전할 수 있습니다. 이렇게 하려면 [등록 프로필을 만들거나 편집](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)할 때 회사 포털을 설치하는 데 사용하려는 VPP 토큰을 지정합니다. 토큰이 만료되지 않았고 회사 포털 앱에 대한 충분한 라이선스가 있는지 확인합니다. 토큰이 만료되거나 라이선스가 부족한 경우 Intune은 App Store 회사 포털을 대신 푸시합니다(Apple ID에 대한 메시지를 표시함).
 
+#### <a name="block-windows-personal-device-enrollments----1849498---"></a>Windows 개인 장치 등록 차단 <!-- 1849498 -->
+Intune에서 [모바일 장치 관리](windows-enroll.md)를 사용하여 [Windows 개인 장치를 등록하지 못하도록 차단](enrollment-restrictions-set.md#set-device-type-restrictions)할 수 있습니다. [Intune PC 에이전트](manage-windows-pcs-with-microsoft-intune.md)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다.
+
+#### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Autopilot 프로필에 머신 이름 패턴 지정 <!--1849855-->
+Autopilot 등록 중에 [컴퓨터 이름 템플릿을 지정](enrollment-autopilot.md#create-an-autopilot-deployment-profile)하여 [컴퓨터 이름](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)을 생성하고 설정할 수 있습니다.
+
+#### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows Autopilot 프로필의 경우 회사 로그인 페이지 및 도메인 오류 페이지에서 계정 변경 옵션을 숨김 <!--1901669 -->
+관리자가 회사 로그인 및 도메인 오류 페이지에서 계정 변경 옵션을 숨기는 [새 Windows Autopilot 프로필 옵션](enrollment-autopilot.md#create-an-autopilot-deployment-profile)이 포함됩니다. 이러한 옵션을 숨기려면 Azure Active Directory에서 회사 브랜딩을 구성해야 합니다. 적용 대상: Windows 참가자 1809 이상 빌드(미리 보기 동안).
+
+#### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP 장치 라이선스를 사용하여 DEP 등록 중 회사 포털 사전 프로비전 <!-- 1608345 -->
+이제 VPP(대량 구매 프로그램) 장치 라이선스를 사용하여 DEP(장비 등록 프로그램) 등록 중 회사 포털을 사전 프로비전할 수 있습니다. 이렇게 하려면 [등록 프로필을 만들거나 편집](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)할 때 회사 포털을 설치하는 데 사용하려는 VPP 토큰을 지정합니다. 토큰이 만료되지 않았고 회사 포털 앱에 대한 충분한 라이선스가 있는지 확인합니다. 토큰이 만료되거나 라이선스가 부족한 경우 Intune은 App Store 회사 포털을 대신 푸시합니다(Apple ID에 대한 메시지를 표시함).
+
+### <a name="device-management"></a>장치 관리
+
+#### <a name="delete-jamf-devices----2653306--"></a>Jamf 장치 삭제 <!-- 2653306-->
+**장치** > Jamf 장치 선택 > **삭제**로 이동하여 JAMF 관리 장치를 삭제할 수 있습니다.
+
+#### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>“사용 중지” 및 “초기화” 용어 변경 <!-- 2175759 -->
+Graph API와 일관성을 유지하도록 Intune 사용자 인터페이스 및 설명서에서 다음 용어가 변경됩니다.
+- **회사 데이터 제거**가 "사용 중지"로 변경됩니다.
+- **출하 시 설정으로 초기화**가 **초기화**로 변경됩니다.
+
+#### <a name="confirmation-dialog-if-admin-tries-to-delete-mdm-push-certificate----297909500--"></a>관리자가 MDM Push 인증서를 삭제하려고 하는 경우 확인 대화 상자 <!-- 297909500-->
+Apple MDM Push 인증서를 삭제하려는 경우 확인 대화 상자는 관련된 iOS 및 macOS 장치의 수를 표시합니다. 인증서가 삭제되는 경우 이러한 장치를 다시 등록해야 합니다.
+
+### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Windows 설치 관리자에 대한 보안 설정 추가 <!-- 2282430 -->
+사용자가 앱 설치를 제어하도록 허용할 수 있습니다. 사용하도록 설정한 경우 그렇지 않으면 보안 위반으로 인해 중지될 수 있는 설치를 계속 진행하도록 허용합니다. 시스템에 모든 프로그램을 설치할 경우 Windows 설치 관리자가 상승된 권한을 사용하도록 명령할 수 있습니다. 또한 인덱싱될 WIP(Windows Information Protection) 항목 및 암호화되지 않은 위치에 저장된 WIP 항목에 대한 메타데이터를 사용할 수 있습니다. 정책을 사용하지 않을 때 WIP로 보호되는 항목은 인덱싱되지 않고 Cortana 또는 파일 탐색기의 결과에도 표시되지 않습니다. 이러한 옵션에 대한 기능은 기본적으로 사용할 수 없게 설정되어 있습니다. 
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트<!--2000968 -->
+고객으로부터의 피드백에 기반한 새 기능을 회사 포털 웹 사이트에 추가했습니다. 장치의 기존 기능과 유용성이 크게 향상됩니다. 사이트 영역&ndash;예: 장치 세부 정보, 피드백, 지원 및 장치 개요&ndash;은 응답성이 높은 최신의 새로운 디자인을 제공합니다. 또한 다음을 확인할 수 있습니다.
+
+- 모든 장치 플랫폼에서 간소화된 워크플로
+- 향상된 장치 식별 및 등록 흐름
+- 더 유용한 오류 메시지
+- 더 친숙한 언어, 더 이해하기 쉬운 기술 용어
+- 앱에 대한 직접 링크를 공유하는 기능
+- 대규모 앱 카탈로그의 성능 향상
+- 향상된 모든 사용자에 대한 접근성  
+
+[Intune 회사 포털 웹 사이트 설명서](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)는 이러한 변경 내용을 반영하도록 업데이트되었습니다. 향상된 앱의 예제를 보려면 [Intune 최종 사용자 앱 UI 업데이트](whats-new-app-ui.md)를 참조하세요.  
+
+### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
+
+#### <a name="enhanced-jailbreak-detection-in-compliance-reporting---2198738---"></a>준수 보고에서 향상된 탈옥 검색<!-- 2198738 -->
+향상된 탈옥 검색 상태는 이제 관리 콘솔의 모든 준수 보고에 나타납니다.
+
+### <a name="role-based-access-control"></a>역할 기반 액세스 제어
+
+#### <a name="scope-tags-for-policies---1081974-eeready--"></a>정책에 대한 범위 태그 <!--1081974 eeready-->
+[범위 태그를 만들어](scope-tags.md) Intune 리소스에 대한 액세스를 제한할 수 있습니다. 역할 할당에 범위 태그를 추가한 다음, 범위 태그를 구성 프로필에 추가합니다. 역할은 일치하는 범위 태그가 있거나 범위 태그가 없는 구성 프로필이 있는 리소스에만 액세스할 수 있습니다.
 
 ## <a name="week-of-august-14-2018"></a>2018년 8월 14일 주
 
@@ -65,7 +201,7 @@ Microsoft Intune은 macOS LOB 앱을 **요청** 또는 **등록 시 사용 가�
 스토어 앱 및 관리되는 앱 외에도 iOS 장치에서 키오스크 모드로 실행되는 기본 제공 앱(예: Safari)을 이제 선택할 수 있습니다.
 
 #### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>Office 365 Pro Plus 앱 배포 편집 <!-- 2150145 -->
-Microsoft Intune 관리자가 Office 365 Pro Plus 앱 배포를 편집할 수 있는 기능이 향상되었습니다. 또한 제품군의 속성을 변경하기 위해 더 이상 배포를 삭제할 필요가 없습니다. Azure Portal에서 **Microsoft Intune** > **모바일 앱** > **앱**을 차례로 선택합니다. 앱 목록에서 Office 365 Pro Plus 제품군을 선택합니다.  
+Microsoft Intune 관리자가 Office 365 Pro Plus 앱 배포를 편집할 수 있는 기능이 향상되었습니다. 또한 제품군의 속성을 변경하기 위해 더 이상 배포를 삭제할 필요가 없습니다. Azure Portal에서 **Microsoft Intune** > **클라이언트 앱** > **앱**을 차례로 선택합니다. 앱 목록에서 Office 365 Pro Plus 제품군을 선택합니다.  
 
 
 #### <a name="updated-intune-app-sdk-for-android-is-now-available----2744271--"></a>업데이트된 Android용 Intune 앱 SDK 사용 가능 <!-- 2744271-->
@@ -163,7 +299,7 @@ Intune IT 관리자는 Intune 앱 보호 정책을 통해 지정된 Android 제�
 
 정책을 통한 요구 사항이 충족되지 않으면 사용자가 대상 응용 프로그램에 액세스할 수 없습니다. 설정에 따라 사용자는 차단되거나 앱 내의 해당 회사 데이터에서 선택적으로 초기화될 수 있습니다. iOS 장치에서 이 기능을 사용하려면 응용 프로그램(예: WXP, Outlook, Managed Browser, Yammer)에 참여하여 대상 응용 프로그램에 이 기능을 적용하기 위해 Intune APP SDK를 통합해야 합니다. 이 통합은 롤링 기반으로 특정 응용 프로그램 팀에서 수행합니다. Android에서 이 기능을 사용하려면 최신 회사 포털이 필요합니다. 
 
-최종 사용자 장치에서 Intune 클라이언트는 응용 프로그램 보호 정책에 대한 Intune 블레이드에 지정된 문자열의 단순 일치를 기반으로 동작을 수행합니다. 이 동작은 전적으로 장치가 보고하는 값에 따라 결정됩니다. 따라서 IT 관리자는 의도한 동작이 정확한지 확인하는 것이 좋습니다. 이를 확인하려면 작은 사용자 그룹을 대상으로 하는 다양한 장치 제조업체 및 모델을 기반으로 이 설정을 테스트하면 됩니다. Microsoft Intune에서 **모바일 앱** > **앱 보호 정책**을 선택하여 앱 보호 정책을 보고 추가합니다. 앱 보호 정책에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md) 및 [Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화](app-protection-policies-access-actions.md)를 참조하세요.
+최종 사용자 장치에서 Intune 클라이언트는 응용 프로그램 보호 정책에 대한 Intune 블레이드에 지정된 문자열의 단순 일치를 기반으로 동작을 수행합니다. 이 동작은 전적으로 장치가 보고하는 값에 따라 결정됩니다. 따라서 IT 관리자는 의도한 동작이 정확한지 확인하는 것이 좋습니다. 이를 확인하려면 작은 사용자 그룹을 대상으로 하는 다양한 장치 제조업체 및 모델을 기반으로 이 설정을 테스트하면 됩니다. Microsoft Intune에서 **클라이언트 앱** > **앱 보호 정책**을 선택하여 앱 보호 정책을 보고 추가합니다. 앱 보호 정책에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md) 및 [Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화](app-protection-policies-access-actions.md)를 참조하세요.
 
 ### <a name="access-to-macos-company-portal-pre-release-build----1734766---"></a>macOS 회사 포털 시험판 빌드에 액세스 <!-- 1734766 -->
 Microsoft 자동 업데이트를 사용하여 등록할 수 있으며 Insider 프로그램에 참여하여 빌드를 조기에 받을 수 있습니다. 등록하면 업데이트된 회사 포털을 사용해 본 이후에 최종 사용자에게 제공할 수 있습니다. 자세한 내용은 [Microsoft Intune 블로그](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/)를 참조하세요.
@@ -403,7 +539,7 @@ Azure Portal에서 Intune 앱 보호 서비스 블레이드로 이동하는 대�
 Intune 관리자는 숫자 MAM PIN 대신 암호를 적용하는 응용 프로그램 시작 요구 사항을 설정할 수 있습니다. 항목이 구성되면 사용자는 MAM 지원 응용 프로그램에 대한 액세스 권한을 가져오기 전에 메시지가 표시될 때 암호를 설정하고 사용해야 합니다. 암호는 하나 이상의 특수 문자 또는 대/소문자 알파벳을 포함한 숫자 PIN으로 정의됩니다. Intune은 기존 숫자 PIN과 유사한 방식으로 암호를 지원합니다. 즉, 최소 길이를 설정하며 관리자 콘솔을 통해 반복 문자 및 시퀀스를 허용합니다. 이 기능을 사용하려면 Android에서 회사 포털의 최신 버전이 필요합니다. 현재 iOS에서는 이 기능을 사용할 수 있습니다.
 
 #### <a name="line-of-business-lob-app-support-for-macos----1473977---"></a>macOS에 대한 LOB(기간 업무) 앱 지원 <!-- 1473977 -->
-Microsoft Intune은 Azure Portal에서 macOS LOB 앱을 설치하는 기능을 제공할 예정입니다. GitHub에서 사용할 수 있는 도구에서 미리 처리된 macOS LOB 앱을 Intune에 추가할 수 있습니다. Azure Portal에서 **Intune** 블레이드의 **모바일 앱**을 선택합니다. **모바일 앱** 블레이드에서 **앱** > **추가**를 선택합니다. **앱 추가** 블레이드에서 **LOB(기간 업무) 앱**을 선택합니다. 
+Microsoft Intune은 Azure Portal에서 macOS LOB 앱을 설치하는 기능을 제공할 예정입니다. GitHub에서 사용할 수 있는 도구에서 미리 처리된 macOS LOB 앱을 Intune에 추가할 수 있습니다. Azure Portal에서 **Intune** 블레이드의 **클라이언트 앱**을 선택합니다. **클라이언트 앱** 블레이드에서 **앱** > **추가**를 선택합니다. **앱 추가** 블레이드에서 **LOB(기간 업무) 앱**을 선택합니다. 
 
 #### <a name="built-in-all-users-and-all-devices-group-for-android-for-work-afw-app-assignment----1813073---"></a>AFW(Android for Work) 앱 할당을 위한 기본 제공된 모든 사용자 및 모든 장치 그룹 <!-- 1813073 -->
 AFW 앱 할당을 위해 기본 제공 **모든 사용자** 및 **모든 장치** 그룹을 활용할 수 있습니다. 자세한 내용은 [Microsoft Intune에서 앱 할당 포함 및 제외](apps-inc-exl-assignments.md)를 참조하세요.
@@ -591,7 +727,7 @@ iOS용 회사 포털 앱에 대한 주요 사용자 환경 업데이트가 릴�
 업데이트된 형태를 보려면 [앱 UI 의 새로운 기능](whats-new-app-ui.md)으로 이동하세요.
 
 #### <a name="protect-on-premises-exchange-data-using-intune-app-and-ca----1056954---"></a>Intune APP 및 CA를 사용하여 온-프레미스 Exchange 데이터 보호 <!-- 1056954 -->
-이제 Intune APP(앱 정책 보호) 및 CA(조건부 액세스)를 사용하여 Outlook Mobile에서 온-프레미스 Exchange 데이터에 대한 액세스를 보호할 수 있습니다. Azure Portal 내에서 앱 보호 정책을 추가하거나 수정하려면 **Microsoft Intune** > **모바일 앱** > **앱 보호 정책**을 선택합니다. 이 기능을 사용하기 전에 [iOS 및 Android 요구 사항에 대한 Outlook](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)을 충족하는지 확인합니다.
+이제 Intune APP(앱 정책 보호) 및 CA(조건부 액세스)를 사용하여 Outlook Mobile에서 온-프레미스 Exchange 데이터에 대한 액세스를 보호할 수 있습니다. Azure Portal 내에서 앱 보호 정책을 추가하거나 수정하려면 **Microsoft Intune** > **클라이언트 앱** > **앱 보호 정책**을 선택합니다. 이 기능을 사용하기 전에 [iOS 및 Android 요구 사항에 대한 Outlook](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)을 충족하는지 확인합니다.
 
 ## <a name="week-of-march-26-2018"></a>2018년 3월 26일 주간
 
@@ -603,7 +739,7 @@ Azure Portal에서 Intune은 막 만료될 iOS LOB(기간 업무) 애플리케�
 
 #### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>16진수 코드를 사용하여 회사 포털 테마 사용자 지정 <!--1049561 -->
 
-16진수 코드를 사용하여 회사 포털 앱에서 테마 색을 사용자 지정할 수 있습니다. 16진수 코드를 입력하면 Intune은 텍스트 색과 배경색 간의 대비가 가장 높은 텍스트 색을 결정합니다. **모바일 앱** > **회사 포털**에서 텍스트 색과 회사 로고를 미리 볼 수 있습니다.
+16진수 코드를 사용하여 회사 포털 앱에서 테마 색을 사용자 지정할 수 있습니다. 16진수 코드를 입력하면 Intune은 텍스트 색과 배경색 간의 대비가 가장 높은 텍스트 색을 결정합니다. **클라이언트 앱** > **회사 포털**에서 텍스트 색과 회사 로고를 미리 볼 수 있습니다.
 
 ### <a name="including-and-excluding-app-assignment-based-on-groups-for-android-enterprise----1813081---"></a>Android Enterprise에 대한 그룹에 따라 앱 할당 포함 및 제외 <!-- 1813081 -->
 
@@ -854,7 +990,7 @@ WIP(Windows Information Protection) 정책의 설정을 사용하면 WIP 암호�
 버전 확인 프로세스를 무시하도록 알려진 자체 업데이트 모바일 MSI 앱을 구성할 수 있습니다. 이 기능은 경합 상태를 방지하는 데 유용합니다. 예를 들어 이런 유형의 경합 상태는 앱 개발자가 앱을 자동 업데이트하는 동시에 Intune에서도 앱을 업데이트하는 경우 발생할 수 있습니다. 둘 다 Windows 클라이언트에서 앱 버전을 적용하려 시도할 수 있으며, 이로 인해 충돌이 발생할 수 있습니다. 이러한 자동으로 업데이트된 MSI 앱의 경우 **앱 정보** 블레이드에서 **앱 버전 무시** 설정을 구성할 수 있습니다. 이 설정이 **예**로 전환될 경우 Microsoft Intune에서 Windows 클라이언트에 설치 된 앱 버전을 무시하게 됩니다.
 
 #### <a name="related-sets-of-app-licenses-supported-in-intune----1864117---"></a>Intune에서 지원되는 관련 앱 라이선스 집합 <!-- 1864117 -->
-이제 Azure Portal의 Intune은 관련 앱 라이선스 집합을 UI에서 단일 앱 항목으로 지원합니다. 또한 비즈니스용 Microsoft 스토어에서 동기화되는 오프라인 라이선스 앱은 단일 앱 항목으로 통합되고, 개별 패키지의 배포 세부 정보는 단일 항목으로 마이그레이션됩니다. Azure Portal에서 관련 앱 라이선스 집합을 보려면 **모바일 앱** 블레이드에서 **앱 라이선스**를 선택합니다.
+이제 Azure Portal의 Intune은 관련 앱 라이선스 집합을 UI에서 단일 앱 항목으로 지원합니다. 또한 비즈니스용 Microsoft 스토어에서 동기화되는 오프라인 라이선스 앱은 단일 앱 항목으로 통합되고, 개별 패키지의 배포 세부 정보는 단일 항목으로 마이그레이션됩니다. Azure Portal에서 관련 앱 라이선스 집합을 보려면 **클라이언트 앱** 블레이드에서 **앱 라이선스**를 선택합니다.
 
 ### <a name="device-configuration"></a>장치 구성
 #### <a name="windows-information-protection-wip-file-extensions-for-automatic-encryption----1463582---"></a>자동 암호화를 위한 WIP(Windows Information Protection) 파일 확장명 <!-- 1463582 -->
@@ -1022,7 +1158,7 @@ Windows 장치를 사용하는 최종 사용자는 회사 포털 앱에서 비�
 
 #### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>새 WDSC(Windows Defender 보안 센터) 장치 구성 프로필 설정 <!-- 1335507 -->
 
-Intune은 **Windows Defender 보안 센터**라는 끝점 보호가 적용되는 장치 구성 프로필 설정의 새 섹션을 추가합니다. IT 관리자는 최종 사용자가 액세스할 수 있는 Windows Defender 보안 센터 앱 영역을 구성할 수 있습니다. IT 관리자가 Windows Defender 보안 센터 앱 영역을 숨기면 숨겨진 영역에 관련된 모든 알림이 사용자 장치에 표시되지 않습니다.
+Intune은 **Windows Defender 보안 센터**라는 엔드포인트 보호가 적용되는 장치 구성 프로필 설정의 새 섹션을 추가합니다. IT 관리자는 최종 사용자가 액세스할 수 있는 Windows Defender 보안 센터 앱 영역을 구성할 수 있습니다. IT 관리자가 Windows Defender 보안 센터 앱 영역을 숨기면 숨겨진 영역에 관련된 모든 알림이 사용자 장치에 표시되지 않습니다.
 
 관리자는 Windows Defender 보안 센터 장치 구성 프로필 설정에서 이러한 영역을 숨길 수 있습니다.
 - 바이러스 및 위협 방지

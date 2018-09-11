@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b514efa27a2a037f2fa0492ae519e6b8c774e369
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: cad4e1d6bcb47981dfb40a1146a3f5148724e08a
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869545"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330095"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>장치 등록 없이 관리되는 앱용 앱 구성 정책 추가
 
@@ -30,7 +30,7 @@ ms.locfileid: "37869545"
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **모바일 앱** 워크로드를 선택합니다.
+3. **클라이언트 앱** 워크로드를 선택합니다.
 4. **관리** 그룹에서 **앱 구성 정책**을 선택한 다음 **추가**를 선택합니다.
 5. 다음 세부 정보를 설정합니다.
     - **Name**  

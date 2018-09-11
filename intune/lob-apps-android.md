@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a49811200cd84882fe9f80708edefde7614e5cee
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905039"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347868"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Android 기간 업무 앱 추가
 
@@ -35,8 +35,8 @@ LOB(기간 업무) 앱은 앱 설치 파일에서 추가하는 앱입니다. 이
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 워크로드에서 **관리** > **앱**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 워크로드에서 **관리** > **앱**을 차례로 선택합니다.
 5. 앱 목록 위에서 **추가**를 선택합니다.
 6. **앱 추가** 창에서 **기간 업무 앱**을 선택합니다.
 
