@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
-ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
+ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2018
-ms.locfileid: "40252453"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347477"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS 장치용 Intune에서 앱당 VPN 설정
 
@@ -34,6 +34,7 @@ Intune이 관리하는 iOS 장치에서 관리되는 앱이 VPN을 사용할 수
  - Pulse Connect Secure
  - SonicWall
  - Palo Alto Networks GlobalProtect
+ - Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>앱당 VPN의 필수 조건
 
@@ -145,7 +146,7 @@ VPN 프로필을 추가한 후에 앱 및 Azure AD 그룹을 프로필에 연결
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **모바일 앱**을 선택합니다.
+3. **클라이언트 앱**을 선택합니다.
 4. **앱**을 클릭합니다.
 5. 앱 목록에서 앱을 선택합니다.
 6. **할당**을 클릭합니다.
@@ -187,6 +188,10 @@ VPN 프로필을 추가한 후에 앱 및 Azure AD 그룹을 프로필에 연결
     - F5 Access
     - Pulse Secure
     - SonicWall Mobile Connect
+    - Zscaler 앱
+
+    > [!NOTE]
+    > Pulse Secure VPN 앱을 사용하는 경우 앱 계층 또는 패킷 계층 터널링을 사용하도록 선택할 수 있습니다. **ProviderType** 값은 앱 계층 터널링의 경우 **app-proxy**로 설정하고, 패킷 계층 터널링의 경우 **packet-tunnel**로 설정합니다.
 
 ### <a name="connect-using-the-per-app-vpn"></a>앱당 VPN을 사용하여 연결
 

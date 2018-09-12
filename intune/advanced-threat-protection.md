@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
-ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
+ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40251497"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313794"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP 사용
 
@@ -71,27 +71,15 @@ Intune에서 ATP를 사용하려면 다음을 구성했으며 사용할 준비�
 
 ## <a name="onboard-devices-using-a-configuration-profile"></a>구성 프로필을 사용하여 장치 등록
 
-Windows Defender에는 장치에 설치되는 온보드 구성 패키지가 포함되어 있습니다. 설치된 경우 패키지는 [Windows Defender ATP 서비스](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)와 통신하여 파일을 검색하고, 위협을 감지하며, Windows Defender ATP에 위험을 보고합니다. Intune을 통해 이 구성 패키지를 사용하는 구성 프로필을 만들 수 있습니다. 그런 다음, 처음 등록하는 장치에 이 프로필을 할당합니다.
+최종 사용자가 Intune에 등록하면 구성 프로필을 사용하여 다른 설정을 장치에 푸시할 수 있습니다. 이는 Windows Defender ATP에도 적용됩니다.
 
-구성 패키지를 사용하여 장치를 등록하고 나면 다시 등록할 필요가 없습니다. 일반적으로 일회성 작업입니다.
+Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)와 통신하여 파일을 검색하고, 위협을 탐지하며, Windows Defender ATP에 위험을 보고하는 등록 구성 패키지가 포함되어 있습니다.
 
-[그룹 정책 또는 SCCM(System Center Configuration Manager)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection)을 사용하여 장치를 등록할 수도 있습니다.
+등록하면 Intune에서 Windows Defender ATP를 통해 자동 생성된 구성 패키지를 가져옵니다. 프로필이 장치에 푸시되거나 배포되면 이 구성 패키지도 장치에 푸시됩니다. 이렇게 하면 Windows Defender ATP에서 장치에 대한 위협을 모니터링할 수 있습니다.
 
-다음 단계에서는 Intune을 사용하여 등록하는 방법을 보여 줍니다.
+구성 패키지를 사용하여 장치를 등록하고 나면 다시 등록할 필요가 없습니다. [그룹 정책 또는 SCCM(System Center Configuration Manager)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection)을 사용하여 장치를 등록할 수도 있습니다.
 
-#### <a name="download-configuration-package"></a>구성 패키지 다운로드
-
-1. [Windows Defender 보안 센터](https://securitycenter.windows.com)에서 **설정** > **온보딩**을 선택합니다.
-2. 다음 설정을 입력합니다.
-  - **운영 체제**: Windows 10
-  - **시스템 등록** > **배포 방법**: 모바일 장치 관리/Microsoft Intune
-3. **패키지 다운로드**를 선택하고 **WindowsDefenderATPOnboardingPackage.zip** 파일을 저장합니다. 파일을 추출합니다.
-
-이 zip 파일에 포함된 **WindowsDefenderATP.onboarding**은 다음 단계에서 필요합니다.
-
-#### <a name="create-the-atp-configuration-profile"></a>ATP 구성 프로필 만들기
-
-이 프로필은 이전 단계에서 다운로드한 온보딩 패키지를 사용합니다.
+### <a name="create-the-configuration-profile"></a>구성 프로필 만들기
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
 2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
@@ -100,10 +88,9 @@ Windows Defender에는 장치에 설치되는 온보드 구성 패키지가 포�
 5. **프로필 유형**에서 **Windows Defender ATP(Windows 10 Desktop)** 를 선택합니다.
 6. 설정을 구성합니다.
 
-  - **구성 패키지 등록**: 다운로드한 **WindowsDefenderATP.onboarding** 파일을 찾아서 선택합니다. 이 파일을 통해 설정이 활성화되며, 장치가 Windows Defender ATP 서비스에 보고할 수 있습니다.
-  - **모든 파일에 대한 샘플 공유**: 샘플을 수집하고 Windows Defender ATP와 공유할 수 있습니다. 예를 들어 의심스러운 파일을 발견할 경우 심층 분석을 위해 Windows Defender ATP에 제출할 수 있습니다.
-  - **원격 분석 보고 주기 단축**: 높은 위험이 있는 장치의 경우 이 설정을 사용하도록 설정하여 Windows Defender ATP 서비스에 원격 분석을 더 자주 보고합니다.
-  - **구성 패키지 등록 취소**: Windows Defender ATP 모니터링을 제거하거나 “등록 취소”하려는 경우 [Windows Defender 보안 센터](https://securitycenter.windows.com)에서 오프로드 패키지를 다운로드하고 추가할 수 있습니다. 이러한 경우가 아니면 이 속성을 건너뜁니다.
+  - **Windows Defender ATP 클라이언트 구성 패키지 유형**: **등록**을 선택하여 프로필에 구성 패키지를 추가합니다. **등록 취소**를 선택하여 프로필에서 구성 패키지를 제거합니다.
+  - **모든 파일에 대해 샘플 공유**: **사용**을 사용하면 샘플을 수집하고 Windows Defender ATP와 공유할 수 있습니다. 예를 들어 의심스러운 파일을 발견할 경우 심층 분석을 위해 Windows Defender ATP에 제출할 수 있습니다. **구성되지 않음**은 Windows Defender ATP에 샘플을 공유하지 않습니다.
+  - **원격 분석 보고 주기 단축**: 위험이 높은 장치의 경우 이 설정을 **사용**하여 원격 분석을 Windows Defender ATP 서비스에 더 자주 보고합니다.
 
     [System Center Configuration Manager를 사용하여 Windows 10 컴퓨터 등록](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection)에는 Windows Defender ATP 설정에 대한 자세한 정보가 포함되어 있습니다.
 

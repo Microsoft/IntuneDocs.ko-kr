@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 2d099d049892d71c36e4b01fb1a8af6f7ad25df1
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751805"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313412"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager를 통해 iOS 장치 등록 기능 사용
 
@@ -113,7 +113,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
      > [!NOTE]
      > 감독 없이 등록된 장치는 Apple Configurator를 사용하여 감독으로만 다시 설정할 수 있습니다. 이러한 방식으로 장치를 다시 설정하려면 iOS 장치를 Mac에 USB 케이블로 연결해야 합니다. 이에 대해 [Apple Configurator 문서](http://help.apple.com/configurator/mac/2.3)에서 자세히 알아보세요.
 
-7. 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할지 여부를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 장치 등록 후 장치를 초기화하지 않고는 이 설정을 변경할 수 없습니다. 이러한 장치는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
+7. 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할지 여부를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 장치를 등록한 후에 이 설정을 변경하려면 장치를 초기화해야 합니다. 이러한 장치는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
 
 8. 여러 사용자가 관리되는 Apple ID를 사용하여 등록된 iPad에 로그온할 수 있게 하려면 **공유 iPad**에서 **예**를 선택합니다(이 옵션을 사용하려면 **사용자 선호도를 사용하지 않고 등록** 및 **감독됨** 모드를 **예**로 설정해야 함). 관리되는 Apple ID는 Apple School Manager 포털에서 작성됩니다. [공유 iPad](education-settings-configure-ios-shared.md) 및 [Apple의 공유 iPad 요구 사항](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)에 대해 자세히 알아보세요.
 
@@ -179,4 +179,4 @@ Intune에서 관리하는 Apple School Manager 장치를 등록하려면 등록 
 
 ## <a name="distribute-devices-to-users"></a>사용자에게 장치 배포
 
-Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 Apple School 장치의 등록을 허용하는 프로필을 할당했습니다. 이제 사용자에게 장치를 배포할 수 있습니다. 켜져 있는 iOS Apple School Manager 장치는 Intune에서 관리하도록 등록됩니다. 장치가 활성화되었으며 사용 중인 경우에는 장치를 초기화할 때까지 프로필을 적용할 수 없습니다.
+Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 Apple School 장치의 등록을 허용하는 프로필을 할당했습니다. 이제 사용자에게 장치를 배포할 수 있습니다. 켜져 있는 iOS Apple School Manager 장치는 Intune에서 관리하도록 등록됩니다. 장치가 활성화되어 사용 중이면 장치를 초기화할 때까지 프로필을 적용할 수 없습니다.

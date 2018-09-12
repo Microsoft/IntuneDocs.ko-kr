@@ -15,20 +15,20 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 5653e5fda04295041ebc549977007e7060b5508b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751720"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312683"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator를 사용한 iOS 장치 등록
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune은 Mac 컴퓨터에서 실행되는 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)를 사용하여 iOS 장치를 등록하도록 지원합니다. Apple Configurator를 사용하여 장치를 등록하려면 각 iOS 장치를 USB로 Mac 컴퓨터에 연결하여 회사 등록을 설정해야 합니다. 다음 두 가지 방법으로 Apple Configurator를 사용하여 Intune에 장치를 등록할 수 있습니다.
-- **설정 도우미 등록** - 장치를 공장 기본 설정으로 복원하고, 설정 도우미 중에 등록하도록 준비합니다.
-- **직접 등록** - 장치를 공장 기본 설정으로 복원하지 않고 iOS 설정을 통해 장치를 등록합니다. 이 방법은 **사용자 선호도가 없는** 장치만 지원합니다.
+- **설정 도우미 등록** - 장치를 초기화하고, 설정 도우미 중에 등록하도록 준비합니다.
+- **직접 등록** - 장치를 초기화하지 않고, iOS 설정을 통해 장치를 등록합니다. 이 방법은 **사용자 선호도가 없는** 장치만 지원합니다.
 
 Apple Configurator 등록 방법은 [장치 등록 관리자](device-enrollment-manager-enroll.md)에서 사용할 수 없습니다.
 
@@ -134,7 +134,7 @@ Apple Configurator 등록을 위해 iOS 일련 번호를 가져올 때 등록 �
 사용자가 장치를 받으면 설정 도우미를 완료해야 합니다. 사용자 선호도로 구성한 장치에서 회사 포털 앱을 설치하고 실행하여 앱을 다운로드하고 장치를 관리할 수 있습니다.
 
 ## <a name="direct-enrollment"></a>직접 등록
-Apple Configurator를 사용하여 iOS 장치를 직접 등록하는 경우 장치의 일련 번호를 몰라도 장치를 등록할 수 있습니다. 또한 등록 중에 Intune에서 장치 이름을 확인하기 전에 식별을 위해 장치에 이름을 지정할 수도 있습니다. 직접 등록된 장치의 경우 회사 포털 앱이 지원되지 않습니다. 이 방법을 사용하면 장치를 초기화하지 않아도 됩니다.
+Apple Configurator를 사용하여 iOS 장치를 직접 등록하는 경우 장치의 일련 번호를 몰라도 장치를 등록할 수 있습니다. 또한 등록 중에 Intune에서 장치 이름을 확인하기 전에 식별을 위해 장치에 이름을 지정할 수도 있습니다. 직접 등록된 장치의 경우 회사 포털 앱이 지원되지 않습니다. 이 방법은 장치를 초기화하지 않습니다.
 
 기간 업무 앱을 설치하는 데 사용하는 회사 포털 앱 등 사용자 정보가 필요한 앱은 설치할 수 없습니다.
 

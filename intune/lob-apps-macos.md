@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: f907ddb631c974a9c7626483446600eae149a12c
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255479"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347399"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Microsoft Intune에 macOS LOB(사업 부문) 앱을 추가하는 방법
 
@@ -60,8 +60,8 @@ ms.locfileid: "40255479"
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 워크로드에서 **관리** > **앱**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 워크로드에서 **관리** > **앱**을 차례로 선택합니다.
 5. 앱 목록 위에서 **추가**를 선택합니다.
 6. **앱 추가** 창에서 **LOB(기간 업무) 앱**을 선택합니다.
 

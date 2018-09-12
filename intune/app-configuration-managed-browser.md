@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40252455"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329755"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Microsoft Intune에서 보호되는 브라우저 정책을 사용하여 인터넷 액세스 관리
 
@@ -108,7 +108,7 @@ Intune Managed Browser에서 SSO하려면 장치를 iOS 또는 Android의 Intune
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3.  관리 목록의 **모바일 앱** 블레이드에서 **앱 구성 정책**을 선택합니다.
+3.  [관리] 목록의 **클라이언트 앱** 블레이드에서 **앱 구성 정책**을 선택합니다.
 4.  **앱 구성 정책** 블레이드에서 **추가**를 선택합니다.
 5.  **구성 정책 추가** 블레이드에서 앱 구성 설정에 대한 **이름** 및 **설명**(선택 사항)을 입력합니다.
 6.  **장치 등록** 유형에 **관리되는 앱**를 선택합니다.
@@ -126,7 +126,7 @@ Intune Managed Browser에서 SSO하려면 장치를 iOS 또는 Android의 Intune
 
 Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대상이 지정된 보호되는 브라우저 앱을 설치한 경우에는 지정한 설정을 통해 앱이 관리됩니다.
 
-1. Intune 모바일 응용 프로그램 관리 대시보드의 **모바일 앱** 블레이드에서 **앱 구성 정책**을 선택합니다.
+1. Intune 모바일 응용 프로그램 관리 대시보드의 **클라이언트 앱** 블레이드에서 **앱 구성 정책**을 선택합니다.
 2. 앱 구성 목록에서 할당하려는 구성을 선택합니다.
 3. 다음 블레이드에서 **할당**을 선택합니다.
 4. **할당** 블레이드에서 앱 구성을 할당할 Azure AD 그룹을 선택하고 **확인**을 선택합니다.

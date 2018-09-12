@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ee132a1b1c79e9829e5d28dc33b5cac2e52c8ac
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 1461089beafd6501d6ebc87ab1a89963fa4aac57
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251949"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347776"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 iOS 기간 업무 앱 추가
 
@@ -35,8 +35,8 @@ ms.locfileid: "40251949"
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 워크로드에서 **관리** > **앱**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 워크로드에서 **관리** > **앱**을 차례로 선택합니다.
 5. 앱 목록 위에서 **추가**를 선택합니다.
 6. **앱 추가** 창에서 **기간 업무 앱**을 선택합니다.
 

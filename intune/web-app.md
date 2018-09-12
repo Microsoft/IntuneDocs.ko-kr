@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251668"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347460"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune에 웹앱 추가
 
@@ -39,8 +39,8 @@ Intune에 앱을 웹용 앱의 바로 가기로 추가하려면 다음 작업을
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다.  
     Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
 5. **앱** 창에서 **추가**를 선택합니다.
 6. **앱 추가** 창의 **앱 유형** 드롭다운 목록에서 **웹 링크** 유형을 선택합니다.
 7. **구성**을 선택합니다.

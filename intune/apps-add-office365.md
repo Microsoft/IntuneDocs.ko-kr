@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: c8c87b5a76a69809e46fe3f4c5d74019546a819d
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251527"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330231"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 장치에 할당
 
@@ -38,14 +38,15 @@ ms.locfileid: "40251527"
 - 이 설치 방법은 Windows 10 S, Windows Home, Windows Team, Windows Holographic 또는 Windows Holographic for Business 장치에서 지원되지 않습니다.
 - Intune은 Microsoft 스토어의 365 데스크톱 앱(Office Centennial 앱)을 이미 Intune으로 Office 365 앱을 배포한 장치에 설치하는 것을 지원하지 않습니다. 이 구성을 설치할 경우 데이터 손실이나 손상이 발생할 수 있습니다.
 - 다수의 필수 또는 사용 가능한 앱 할당은 추가되지 않습니다. 이후 앱 할당은 기존에 설치된 앱 할당을 덮어씁니다. 예를 들어, 첫 번째 Office 앱 집합에 Word가 포함되어 있고 이후 Office 앱에는 포함되어 있지 않으면 Word가 제거됩니다. 이 조건은 모든 Visio 또는 Project 응용 프로그램에 적용되지 않습니다.
-
+- **Office 버전** - Office의 32비트 또는 64비트 비전을 할당할지 여부를 선택합니다. 32비트 버전은 32비트 및 64비트 장치에 모두 설치할 수 있지만, 64비트 버전은 64비트 장치에만 설치할 수 있습니다.
+- **최종 사용자 장치에서 MSI 제거** - 최종 사용자 장치에서 기존 Office .MSI 앱을 제거할지 여부를 선택합니다. 최종 사용자 장치에 기존 .MSI 앱이 있으면 설치가 실패합니다. 최종 사용자 장치에서 모든 Office(MSI) 앱을 제거하므로 제거할 앱은 **앱 제품군 구성**에서 설치하도록 선택한 앱으로만 제한되지 않습니다. 자세한 내용은 [Office 365 ProPlus로 업그레이드 시 기존 MSI 버전의 Office 제거](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)를 참조하세요. 
 
 ## <a name="get-started"></a>시작
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **모바일 앱**을 선택합니다.
-4. **모바일 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
+4. **클라이언트 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
 5. **추가**를 선택합니다.
 6. **앱 추가** 창의 **앱 유형** 목록에 있는 **Office 365 제품군** 아래에서 **Windows 10**을 선택합니다.
 
@@ -91,7 +92,16 @@ ms.locfileid: "40251527"
         - **매월(대상 지정됨)**
         - **반년마다**
         - **반년마다(대상 지정됨)**
-    - **최종 사용자 장치에서 다른 버전의 Office(MSI) 제거**: 이 기능을 사용하면 최종 사용자 머신에서 기존의 모든 Office(MSI)를 제거할 수 있습니다. **앱 제품군 구성**에서 설치를 위해 선택한 앱뿐만 아니라 최종 사용자 장치에 있는 모든 Office(MSI) 앱이 제거됩니다.
+
+        채널이 선택되면 필요에 따라 **특정**을 선택하여 최종 사용자 장치에서 선택한 채널에 대한 특정 버전의 Office를 설치할 수 있습니다. 그런 다음, 사용할 Office의 **특정 버전**을 선택합니다.
+        
+        사용 가능한 버전은 시간이 지남에 따라 변경됩니다. 따라서 새 배포를 만들 때 사용 가능한 버전이 최신 버전일 수 있으며 이전 버전이 제공되지 않을 수 있습니다. 현재 배포에서는 이전 버전을 계속 배포하지만, 버전 목록은 채널별로 지속적으로 업데이트됩니다.
+        
+        고정된 버전을 업데이트하거나 다른 속성을 업데이트하고 사용 가능한 장치로 배포되는 장치의 경우, 장치를 체크 인할 때까지 이전 버전이 설치되어 있으면 보고 상태가 [설치됨]으로 표시됩니다. 장치가 체크 인되면 상태가 일시적으로 [알 수 없음]으로 변경되지만 사용자에게는 표시되지 않습니다. 사용자가 사용 가능한 최신 버전의 설치를 시작하면 상태가 [설치됨]으로 표시됩니다.
+        
+        자세한 내용은 [Office 365 ProPlus의 업데이트 채널 개요](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)를 참조하세요.
+
+    - **최종 사용자 장치에서 MSI 제거** - 최종 사용자 장치에서 기존 Office .MSI 앱을 제거할지 여부를 선택합니다. 최종 사용자 장치에 기존 .MSI 앱이 있으면 설치가 실패합니다. 최종 사용자 장치에서 모든 Office(MSI) 앱을 제거하므로 제거할 앱은 **앱 제품군 구성**에서 설치하도록 선택한 앱으로만 제한되지 않습니다. 자세한 내용은 [Office 365 ProPlus로 업그레이드 시 기존 MSI 버전의 Office 제거](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)를 참조하세요. 
     - **Automatically accept the app end user license agreement**(앱 최종 사용자 사용권 계약 자동으로 동의): 최종 사용자가 사용권 계약에 동의하도록 요구하지 않으려면 이 옵션을 선택합니다. Intune에서 자동으로 계약에 동의합니다.
     - **공유 컴퓨터 인증 사용**: 여러 사용자가 컴퓨터를 공유할 경우 이 옵션을 사용합니다. 자세한 내용은 [Office 365의 공유 컴퓨터 인증 개요](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)를 참조하세요.
     - **언어**: Office는 최종 사용자 장치에 Windows와 함께 설치된 지원 언어로 자동으로 설치됩니다. 앱 패키지와 함께 추가 언어를 설치하려면 이 옵션을 선택합니다.

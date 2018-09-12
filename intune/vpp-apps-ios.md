@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823072"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347521"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 앱을 관리하는 방법
 
@@ -83,9 +83,9 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-1.  **Intune** 창의 **설정** 아래에서 **모바일 앱** > **iOS VPP 토큰**을 차례로 선택합니다.
-2.  VPP 토큰 목록 창에서 **만들기**를 선택합니다.
-4. **VPP 토큰 만들기** 창에서 다음 정보를 지정합니다.
+3.  **Intune** 창의 **설정** 아래에서 **클라이언트 앱** > **iOS VPP 토큰**을 차례로 선택합니다.
+4.  VPP 토큰 목록 창에서 **만들기**를 선택합니다.
+5. **VPP 토큰 만들기** 창에서 다음 정보를 지정합니다.
     - **VPP 토큰 파일** - 아직 수행하지 않은 경우 비즈니스용 Volume Purchase Program 또는 교육용 Volume Purchase Program에 등록합니다. 등록한 후 계정에 대한 Apple VPP 토큰을 다운로드하여 선택합니다.
     - **Apple ID** - 대량 구매 프로그램과 연결된 계정의 Apple ID를 입력합니다.
     - **국가/지역** - VPP 국가별 스토어를 선택합니다.  Intune은 지정된 VPP 국가 스토어의 모든 로캘에 대해 VPP 앱을 동기화합니다.
@@ -93,9 +93,10 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
         > 국가를 변경하면 이 토큰으로 만든 앱에 대한 Apple 서비스를 통한 다음 동기화에서 앱 메타데이터와 스토어 URL이 업데이트됩니다. 앱이 새 국가별 스토어에 없으면 해당 앱은 업데이트되지 않습니다.
 
     - **VPP 계정 유형** - **비즈니스** 또는 **교육**을 선택합니다.
-    - **자동 앱 업데이트** - **켜기**를 **끄기**로 선택하여 자동 업데이트를 사용하도록 설정합니다. 이 기능을 사용하면 장치가 검사할 때 Intune은 Intune 서비스를 통해 지정된 토큰에서 구입한 모든 앱을 업데이트합니다.
-또한 앱 스토어 내의 VPP 앱 업데이트를 검색하고 장치가 체크 인하면 자동으로 장치에 푸시합니다.
-4. 작업이 완료되면 **만들기**를 선택합니다.
+    - **자동 앱 업데이트** - **켜기**를 **끄기**로 선택하여 자동 업데이트를 사용하도록 설정합니다. 사용하도록 설정되면 Intune에서 앱 스토어 내의 VPP 앱 업데이트를 검색하고, 장치가 체크 인하면 업데이트를 장치에 푸시합니다.
+        > [!NOTE]
+        > 자동 앱 업데이트는 iOS 버전 11.0 이상용 장치 및 사용자에게 사용이 허가된 앱 모두에서 작동합니다.
+6. 작업이 완료되면 **만들기**를 선택합니다.
 
 토큰은 토큰 목록 창에 표시됩니다.
 
@@ -103,7 +104,7 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 ## <a name="to-assign-a-volume-purchased-app"></a>대량 구매 앱을 할당하려면
 
-1.  **Intune** 창의 **관리** 아래에서 **Mobile Apps** > **앱**을 선택합니다.
+1.  **Intune** 창의 **관리** 아래에서 **클라이언트 앱** > **앱**을 차례로 선택합니다.
 2.  앱 목록 창에서 할당할 앱을 선택한 다음, **할당**을 선택합니다.
 3.  ***앱 이름*** - **할당**에서 **그룹 선택**을 선택한 다음, **그룹 추가** 창에서 **할당 형식**을 선택하고, 앱을 할당하려는 Azure AD 사용자 또는 장치 그룹을 선택합니다.
 5.  선택한 각 그룹에 대해 다음 설정을 선택합니다.
@@ -153,9 +154,17 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 Apple Volume Purchase Program 포털에서 새로운 토큰을 다운로드하고 Intune에서 기존 토큰을 업데이트하여 Apple VPP 토큰을 갱신할 수 있습니다.
 
-## <a name="further-information"></a>추가 정보
+## <a name="deleting-an-ios-vpp-app"></a>iOS VPP 앱 삭제
+
+현재 iOS VPP 앱은 Microsoft Intune에서 삭제할 수 없습니다.
+
+## <a name="additional-information"></a>추가 정보
 
 적합한 장치를 가진 사용자가 장치에 VPP 앱을 처음 설치하려고 하면 Apple Volume Purchase Program에 가입하라는 메시지가 표시됩니다. 가입해야만 앱 설치가 진행됩니다. Apple 대량 구매 프로그램 참여 초대를 받으려면 사용자가 iOS 장치에서 iTunes 앱을 사용할 수 있어야 합니다. iTunes Store 앱을 사용하지 않도록 하는 정책을 설정한 경우에는 VPP 앱용 사용자 기반 라이선싱이 적용되지 않습니다. 이 경우에는 정책을 제거하여 iTunes 앱을 허용하거나, 장치 기반 라이선싱을 사용하면 됩니다.
+
+Apple에서는 VPP 토큰을 만들고 갱신하기 위한 직접적인 지원을 제공합니다. 자세한 내용은 Apple 설명서의 일부인 [VPP(볼륨 구매 프로그램)를 이용하여 사용자에게 콘텐츠 배포하기](https://go.microsoft.com/fwlink/?linkid=2014661)를 참조하세요. 
+
+Intune 포털에 **외부 MDM에 할당됨**이 표시되는 경우 관리자는 Intune에서 VPP 토큰을 사용하기 전에 타사 MDM에서 VPP 토큰을 제거해야 합니다.
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
 
