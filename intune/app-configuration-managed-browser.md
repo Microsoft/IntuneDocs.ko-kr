@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329755"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43675018"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Microsoft Intune에서 보호되는 브라우저 정책을 사용하여 인터넷 액세스 관리
 
@@ -185,7 +185,7 @@ Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다�
 
 |                                Key                                 |                                                                                                                                                                                                                                                         값                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 <strong>&#124;</strong> 문자로 구분합니다.<br><br>예:<br> 'Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 <strong>&#124;</strong> 문자로 구분합니다.<br><br>예:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>여러 책갈피를 구성하려면 각 쌍을 이중 문자 <strong>&#124;&#124;</strong>로 구분합니다.<br><br>예:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>보호되는 브라우저에 대해 허용 URL 및 차단 URL을 지정하는 방법
 
@@ -193,7 +193,7 @@ Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다�
 
 |Key|값|
 |-|-|
-|다음 중에서 선택합니다.<br><ul><li>허용되는 URL을 지정합니다(이러한 URL만 허용되며 다른 사이트에 액세스할 수 없음).<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>차단되는 URL을 지정합니다(다른 모든 사이트는 액세스할 수 있음).<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|키에 해당하는 값은 URL 목록입니다. 허용하거나 차단할 모든 URL을 파이프 **&#124;** 문자로 구분된 단일 값으로 입력합니다.<br><br>예:<br><br>'URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
+|다음 중에서 선택합니다.<br><ul><li>허용되는 URL을 지정합니다(이러한 URL만 허용되며 다른 사이트에 액세스할 수 없음).<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>차단되는 URL을 지정합니다(다른 모든 사이트는 액세스할 수 있음).<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|키에 해당하는 값은 URL 목록입니다. 허용하거나 차단할 모든 URL을 파이프 **&#124;** 문자로 구분된 단일 값으로 입력합니다.<br><br>예:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
 >[!IMPORTANT]
 >두 키를 모두 지정하지 마세요. 두 키가 동일한 사용자를 대상으로 하는 경우 가장 제한적인 옵션인 허용 키가 사용됩니다.
