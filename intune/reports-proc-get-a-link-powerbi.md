@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac71716ed09e39817743ebe4301c08a898e8f41f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5020b1653dd92587805e471e80808e34f3007a84
+ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223478"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494033"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI를 통해 데이터 웨어하우스에 연결
 
@@ -62,7 +62,7 @@ Power BI 파일(pbix)은 테넌트에 대한 연결 정보와 데이터 웨어�
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>OData 링크를 사용하여 Power BI에서 데이터 로드
 
-클라이언트가 Azure AD에 인증되면 OData URL이 데이터 모델을 보고하는 클라이언트에 노출하는 데이터 웨어하우스 API의 RESTful 끝점에 연결합니다. 다음 지침에 따라 Power BI Desktop을 사용하여 연결하고 직접 보고서를 만드세요. Power BI Desktop으로 제한되지 않으므로 자주 사용하는 다른 분석 도구를 OData URL과 사용할 수도 있습니다. 단 클라이언트가 OAUTH2.0 인증 및 OData v4.0 표준을 지원해야 합니다.
+클라이언트가 Azure AD에 인증되면 OData URL이 데이터 모델을 보고하는 클라이언트에 노출하는 데이터 웨어하우스 API의 RESTful 엔드포인트에 연결합니다. 다음 지침에 따라 Power BI Desktop을 사용하여 연결하고 직접 보고서를 만드세요. Power BI Desktop으로 제한되지 않으므로 자주 사용하는 다른 분석 도구를 OData URL과 사용할 수도 있습니다. 단 클라이언트가 OAUTH2.0 인증 및 OData v4.0 표준을 지원해야 합니다.
 
 1.  Azure 포털에 로그인하고 **모니터링 + 관리** > **Intune**을 선택합니다. **Intune**에 대한 리소스를 검색할 수도 있습니다.  
 2.  **Microsoft Intune Data Warehouse API(미리 보기)** 블레이드를 엽니다.

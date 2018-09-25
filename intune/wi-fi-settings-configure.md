@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: df2e2f81008c6dedf5660a8a9eff4bf2cfe2ec6b
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905334"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505736"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune에서 Wi-Fi 설정을 구성하는 방법
 
@@ -62,8 +62,6 @@ Windows 8.1, Windows 10, Windows 10 Mobile 및 Windows Holographic for Business�
     - **Windows 8.1 이상**
     - **Windows 10 이상**
 
-   > [!IMPORTANT]
-   > Windows Holographic for Business를 포함하여 Windows 10을 실행하는 장치용 프로필을 만드는 경우 **Windows 8.1 이상** 플랫폼을 선택해야 합니다. **Windows 10 이상** 플랫폼에는 Wi-Fi 프로필 유형이 포함되지 않습니다. 
 
 6. Apple 또는 Android 장치의 경우, **WiFi 유형** 드롭다운 목록에서 **기본** 또는 **엔터프라이즈**를 선택합니다. **기본**을 사용하여 네트워크 이름 및 SSID와 같은 기본 기능을 제공할 수 있습니다. **엔터프라이즈**를 사용하여 EAP(확장 인증 프로토콜)와 같은 보다 고급 정보를 제공할 수 있습니다(Wi-Fi 네트워크에서 이 프로토콜을 사용하는 경우). 
 

@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313067"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028650"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 장치 자동 등록
 
@@ -84,7 +84,7 @@ KME를 사용하여 Intune에 등록된 장치의 경우, 최종 사용자가 �
 
 - **사용자 이름 연결 없음:** Knox 포털의 **장치 세부 정보** 아래에서 추가된 장치의 **사용자 ID** 및 **암호** 필드를 비워 둡니다. 이 작업을 수행하려면 Intune에 등록할 때 최종 사용자가 사용자 이름과 암호를 모두 입력해야 합니다.
 
-- **사용자 이름 연결 사용:** Knox 포털의 **장치 세부 정보** 아래에서 추가된 장치의 **사용자 ID**(예: 할당된 사용자 또는 [장치 등록 관리자](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll) 계정의 사용자 이름)를 입력합니다. 이 필드의 경우 사용자 이름이 미리 채워져 있고 최종 사용자가 Intune에 등록할 때 암호를 입력해야 합니다.
+- **사용자 이름 연결 사용:** Knox 포털의 **장치 세부 정보** 아래에서 추가된 장치의 **사용자 ID**(예: 할당된 사용자 또는 [장치 등록 관리자](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) 계정의 사용자 이름)를 입력합니다. 이 필드의 경우 사용자 이름이 미리 채워져 있고 최종 사용자가 Intune에 등록할 때 암호를 입력해야 합니다.
 
 > [!NOTE]
 >

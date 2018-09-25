@@ -14,12 +14,12 @@ ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9bead87f80cf8d1f102f396bdd6c9573786c1b9e
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: b9efb60d169ba6f88b4765d3fc651f3a0596b230
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474635"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028582"
 ---
 # <a name="view-and-correct-personal-data"></a>개인 데이터 보기 및 수정
 
@@ -33,7 +33,7 @@ Intune 관리자는 액세스 권한을 기반으로 일부 개인 데이터를 
 관리자는 Intune UI의 다양한 블레이드에서 최종 사용자의 개인 정보를 볼 수 있습니다. 다음 문서에서는 관리자가 액세스할 수 있는 정보와 액세스할 수 없는 정보에 대해 설명합니다.
 - Intune의 [장치 세부 정보 보기](device-inventory.md)는 최종 사용자의 장치에 대한 세부 정보를 검토하는 방법을 설명합니다.
 - [앱 정보 및 할당 모니터링](apps-monitor.md)은 최종 사용자의 장치에 설치된 앱에 대한 세부 정보를 확인하는 방법을 설명합니다.
-- [장치를 등록하면 회사에 어떤 정보가 표시되나요? 문서](https://docs.microsoft.com/en-us/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)는 최종 사용자에게 회사에서 볼 수 있거나 없는 데이터 목록을 제공합니다. 수집하는 데이터의 종류와 수집 이유를 사용자에게 명확하게 알리는 것이 가장 좋습니다. 이 문서는 투명성의 첫 번째 단계가 될 수 있습니다.
+- [장치를 등록하면 회사에 어떤 정보가 표시되나요? 문서](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)는 최종 사용자에게 회사에서 볼 수 있거나 없는 데이터 목록을 제공합니다. 수집하는 데이터의 종류와 수집 이유를 사용자에게 명확하게 알리는 것이 가장 좋습니다. 이 문서는 투명성의 첫 번째 단계가 될 수 있습니다.
 
 ### <a name="who-can-view-the-data"></a>누가 데이터를 볼 수 있습니까?
 
