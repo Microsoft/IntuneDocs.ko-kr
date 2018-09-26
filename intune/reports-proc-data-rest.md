@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0187555a087f6ca8ab391b839f2c905181c33cb6
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 2a79bac39e6d5529196d63394d86922a6d57bda5
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223682"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602217"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST 클라이언트를 사용하여 Intune 데이터 웨어하우스 API에서 데이터 가져오기
 
-RESTful 끝점을 통해 Intune 데이터 웨어하우스 데이터 모델에 액세스할 수 있습니다. 데이터에 대한 액세스 권한을 얻으려면 클라이언트가 OAuth 2.0을 사용하여 Microsoft Azure AD(Azure Active Directory)에 대한 권한을 부여해야 합니다. 액세스할 수 있게 하려면 먼저 Azure에서 네이티브 앱을 설정하고 Microsoft Intune API에 권한을 부여합니다. 로컬 클라이언트가 권한을 부여받은 다음 클라이언트는 네이티브 앱을 통해 데이터 웨어하우스 끝점과 통신할 수 있습니다.
+RESTful 엔드포인트를 통해 Intune 데이터 웨어하우스 데이터 모델에 액세스할 수 있습니다. 데이터에 대한 액세스 권한을 얻으려면 클라이언트가 OAuth 2.0을 사용하여 Microsoft Azure AD(Azure Active Directory)에 대한 권한을 부여해야 합니다. 액세스할 수 있게 하려면 먼저 Azure에서 네이티브 앱을 설정하고 Microsoft Intune API에 권한을 부여합니다. 로컬 클라이언트가 권한을 부여받은 다음 클라이언트는 네이티브 앱을 통해 데이터 웨어하우스 엔드포인트와 통신할 수 있습니다.
 
 데이터 웨어하우스 API에서 데이터를 가져오도록 클라이언트를 설정하는 단계에서는 다음과 같이 해야 합니다.
 
@@ -88,20 +88,20 @@ Postman을 사용하여 REST 호출을 수행하려면 다음 정보가 필요�
 | 범위(선택 사항) | 비어 있음                                                                                                                                                                               | 필드를 비워 둘 수 있습니다.                                                                     |
 | 권한 부여 유형       | 토큰은 인증 코드입니다.                                                                                                                                                  | 인증 코드                                                                            |
 
-### <a name="odata-endpoint"></a>OData 끝점
+### <a name="odata-endpoint"></a>OData 엔드포인트
 
-끝점도 필요합니다. 데이터 웨어하우스 끝점을 가져오려면 사용자 지정 피드 URL이 필요합니다. 데이터 웨어하우스 창에서 OData 끝점을 가져올 수 있습니다.
+엔드포인트도 필요합니다. 데이터 웨어하우스 엔드포인트를 가져오려면 사용자 지정 피드 URL이 필요합니다. 데이터 웨어하우스 창에서 OData 엔드포인트를 가져올 수 있습니다.
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
 3. **기타 작업**에서 **Intune 데이터 웨어하우스 설정**을 선택합니다.
 4. **타사 보고 서비스 사용** 아래에서 사용자 지정 피드 URL을 복사합니다. 다음과 유사합니다. `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-끝점은 다음과 같은 형식입니다. `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
+엔드포인트는 다음과 같은 형식입니다. `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
 
 예를 들어 **dates** 엔터티는 다음과 같습니다. `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
-자세한 내용은 [Intune 데이터 웨어하우스 API 끝점](reports-api-url.md)을 참조하세요.
+자세한 내용은 [Intune 데이터 웨어하우스 API 엔드포인트](reports-api-url.md)를 참조하세요.
 
 ### <a name="make-the-rest-call"></a>REST 호출하기
 
@@ -111,7 +111,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 
 1.  아직 설치하지 않은 경우 Postman을 다운로드합니다. Postman을 다운로드하려면 [www.getpostman](https://www.getpostman.com)을 참조하세요.
 2.  Postman을 엽니다. HTTP 작업 **GET**을 선택합니다.
-3.  끝점 URL을 주소에 붙여넣습니다. 다음과 유사합니다.  
+3.  엔드포인트 URL을 주소에 붙여넣습니다. 다음과 유사합니다.  
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4.  **Authorization**(권한 부여) 탭을 선택하고 **Type**(형식) 목록에서 **OAuth 2.0**을 선택합니다.
@@ -138,7 +138,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 13. Active AD 권한 부여 페이지에서 자격 증명을 입력합니다. Postman의 토큰 목록에 이제 `Bearer`라는 토큰이 들어 있습니다.
 14. **Use Token**(토큰 사용)을 선택합니다. 헤더 목록에는 권한 부여의 새 키 값과 `Bearer <your-authorization-token>` 값이 포함되어 있습니다.
 
-#### <a name="send-the-call-to-the-endpoint-using-postman"></a>Postman을 사용하여 끝점으로 호출 보내기
+#### <a name="send-the-call-to-the-endpoint-using-postman"></a>Postman을 사용하여 엔드포인트로 호출 보내기
 
 1.  **보내기**를 선택합니다.
 2.  반환 데이터는 Postman 응답 본문에 표시됩니다.
@@ -226,6 +226,6 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 
 ## <a name="next-steps"></a>다음 단계
 
-[Intune 데이터 웨어하우스 API 사용](reports-api-url.md)에서 권한 부여, API URL 구조 및 OData 끝점에 대한 자세한 내용을 확인할 수 있습니다.
+[Intune 데이터 웨어하우스 API 사용](reports-api-url.md)에서 권한 부여, API URL 구조 및 OData 엔드포인트에 대한 자세한 내용을 확인할 수 있습니다.
 
 Intune 데이터 웨어하우스 데이터 모델을 참조하여 API에 포함된 데이터 엔터티를 찾을 수도 있습니다. 자세한 내용은 [Intune 데이터 웨어하우스 API 데이터 모델](reports-ref-data-model.md)을 참조하세요.

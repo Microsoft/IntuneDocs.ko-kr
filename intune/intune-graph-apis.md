@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ca5b09d415466d2ab6ce2f70a53f7fd8444d28f
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 07c07caa7d64e18aae8b44810a4fdcb2b645b9fa
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835553"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562938"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD를 사용하여 Microsoft Graph의 Intune API에 액세스하는 방법
 
@@ -162,7 +162,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 - **액세스 사용** 설정: __Microsoft Intune 앱 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
-    - Mobile Apps
+    - 클라이언트 앱
     - 모바일 앱 범주
     - 앱 보호 정책
     - 앱 구성
@@ -175,7 +175,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
 - 다음 엔터티의 변경도 허용합니다.
 
-    - Mobile Apps
+    - 클라이언트 앱
     - 모바일 앱 범주
     - 앱 보호 정책
     - 앱 구성
