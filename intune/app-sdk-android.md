@@ -3,8 +3,8 @@ title: Android용 Microsoft Intune 앱 SDK 개발자 가이드
 description: Android용 Microsoft Intune 앱 SDK를 사용하면 Android 앱에 Intune MAM(모바일 앱 관리)을 통합할 수 있습니다.
 keywords: SDK
 author: Erikre
-manager: dougeby
 ms.author: erikre
+manager: dougeby
 ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: 4c26d9914173c07096caad428afcbd9174625ef7
+ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254402"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44031306"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -59,13 +59,13 @@ Android용 Intune 앱 SDK가 작동하려면 장치에 앱 보호 정책을 사�
 
 Intune 앱 SDK는 외부 종속성이 없는 표준 Android 라이브러리입니다. **Microsoft.Intune.MAM.SDK.aar**에는 앱 보호 정책 사용에 필요한 인터페이스와 Microsoft Intune Company Portal 앱과의 상호 운용에 필요한 코드가 모두 포함되어 있습니다.
 
-**Microsoft.Intune.MAM.SDK.aar**은 Android 라이브러리 참조로 지정해야 합니다. 이렇게 하려면 Android Studio에서 앱 프로젝트를 열고 **파일 > 새로 만들기 > 새 모듈**로 이동하고 **.JAR/.AAR 패키지 가져오기**를 선택합니다. 그런 다음, .AAR에 대한 모듈을 만들기 위해 Android 아카이브 패키지 Microsoft.Intune.MAM.SDK.aar을 선택합니다. 앱 코드가 포함된 하나 이상의 모듈을 마우스 오른쪽 단추로 클릭하고 **모듈 설정** > **종속성 탭** > **+ 아이콘**  >  **모듈 종속성**으로 이동한 다음, 방금 만든 MAM SDK AAR 모듈 > **확인**을 선택합니다. 이렇게 하면 프로젝트를 빌드할 때 모듈이 MAM SDK와 함께 컴파일됩니다.
+**Microsoft.Intune.MAM.SDK.aar**은 Android 라이브러리 참조로 지정해야 합니다. **Microsoft.Intune.MAM.SDK.aar**을 Android 라이브러리 참조로 지정하려면 Android Studio에서 앱 프로젝트를 열고 **파일 > 새로 만들기 > 새 모듈**로 이동하여 **.JAR/.AAR 패키지 가져오기**를 선택합니다. 그런 다음, *.AAR*의 모듈을 만들기 위해 Android 아카이브 패키지 **Microsoft.Intune.MAM.SDK.aar**을 선택합니다. 앱 코드가 포함된 하나 이상의 모듈을 마우스 오른쪽 단추로 클릭하고 **모듈 설정** > **종속성 탭** > **+ 아이콘** > **모듈 종속성** > 방금 만든 MAM SDK AAR 모듈 > **확인**을 선택합니다. 이렇게 하면 프로젝트를 빌드할 때 모듈이 MAM SDK와 함께 컴파일됩니다.
 
 또한 **Microsoft.Intune.MAM.SDK.Support.v4** 및 **Microsoft.Intune.MAM.SDK.Support.v7**에는 각각 `android.support.v4` 및 `android.support.v7`의 Intune 변형이 포함되어 있습니다. 앱에 지원 라이브러리를 포함하지 않으려는 경우를 대비하여 Microsoft.Intune.MAM.SDK.aar에 빌드되지 않습니다. 이는 Android 라이브러리 프로젝트가 아니라 표준 JAR 파일입니다.
 
 #### <a name="proguard"></a>ProGuard
 
-[ProGuard](http://proguard.sourceforge.net/)(또는 기타 축소/난독 처리 메커니즘)가 빌드 단계로 사용되면 Intune SDK 클래스를 제외해야 합니다. 빌드에 .aar을 포함할 때는 규칙이 ProGuard 단계에 자동으로 통합되고 필요한 클래스 파일이 유지됩니다.  
+[ProGuard](http://proguard.sourceforge.net/)(또는 기타 축소/난독 처리 메커니즘)가 빌드 단계로 사용되면 Intune SDK 클래스를 제외해야 합니다. 빌드에 *.AAR*을 포함할 때는 규칙이 ProGuard 단계에 자동으로 통합되고 필요한 클래스 파일이 유지됩니다. 
 
 Azure ADAL(Active Directory Authentication Libraries)에는 고유 ProGuard 제한 사항이 있습니다. 앱에서 ADAL을 통합하는 경우 이러한 제한 사항에 대한 ADAL 문서를 따라야 합니다.
 
@@ -80,7 +80,7 @@ Intune 앱 SDK가 작동하려면 앱 보호 정책을 사용하도록 Intune �
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>클래스, 메서드, 작업 등을 동등한 MAM 항목으로 바꾸기
 
-Android 기본 클래스를 동등한 개별 MAM 클래스로 바꿔야 합니다. 이렇게 하려면 아래 표에 나와 있는 클래스의 모든 인스턴스를 찾아서 동등한 Intune 앱 SDK 클래스로 바꾸세요. 이들 대부분은 앱 클래스가 상속하는 클래스이지만 일부(예: MediaPlayer)는 전달하지 않고 앱이 사용하는 클래스입니다.
+Android 기본 클래스를 동등한 개별 MAM 클래스로 바꿔야 합니다. 이렇게 하려면 아래 표에 나와 있는 클래스의 모든 인스턴스를 찾아서 동등한 Intune 앱 SDK 클래스로 바꾸세요. 이들 대부분은 앱 클래스가 상속하는 클래스이지만 일부(예: MediaPlayer)는 파생하지 않고 앱이 사용하는 클래스입니다.
 
 | Android 기본 클래스 | Intune 앱 SDK 대체 항목 |
 |--|--|
@@ -135,7 +135,7 @@ Android 기본 클래스를 동등한 개별 MAM 클래스로 바꿔야 합니�
 |android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 
 ### <a name="renamed-methods"></a>이름이 바뀐 메서드
-대부분의 경우, Android 클래스에서 사용할 수 있는 메서드가 MAM 대체 클래스에서 최종본으로 표시되어 있습니다. 이 경우 MAM 대체 클래스는 대신 재정의할 유사한 이름의 메서드(일반적으로 접미사 `MAM`이 붙음)를 제공합니다. 예를 들어 `onCreate()`를 재정의하고 `super.onCreate()`를 호출하는 대신 `MAMActivity`에서 파생하는 경우 `Activity`는 `onMAMCreate()`를 재정의하고 `super.onMAMCreate()`를 호출해야 합니다. Java 컴파일러는 동등한 MAM 메서드 대신 원래 메서드가 실수로 재정의되는 것을 방지하기 위해 최종 제한을 적용해야 합니다.
+대부분의 경우, Android 클래스에서 사용할 수 있는 메서드가 MAM 대체 클래스에서 최종본으로 표시되어 있습니다. 이 경우 MAM 대체 클래스는 대신 재정의할 유사한 이름의 메서드(접미사 `MAM`이 붙음)를 제공합니다. 예를 들어 `onCreate()`를 재정의하고 `super.onCreate()`를 호출하는 대신 `MAMActivity`에서 파생하는 경우 `Activity`는 `onMAMCreate()`를 재정의하고 `super.onMAMCreate()`를 호출해야 합니다. Java 컴파일러는 동등한 MAM 메서드 대신 원래 메서드가 실수로 재정의되는 것을 방지하기 위해 최종 제한을 적용해야 합니다.
 
 ### <a name="mamapplication"></a>MAMApplication
 앱이 `android.app.Application` 서브클래스를 만드는 경우 대신 `com.microsoft.intune.mam.client.app.MAMApplication`의 서브클래스를 **만들어야** 합니다. 앱이 `android.app.Application` 서브클래스를 만들지 않는 경우 AndroidManifest.xml의 `<application>` 태그에서 `"com.microsoft.intune.mam.client.app.MAMApplication"`을 `"android:name"` 특성으로 설정해야 **합니다**.
@@ -150,7 +150,7 @@ Java 코드 외에도 매니페스트에서 위의 클래스 대체를 수행해
 
 Intune 앱 SDK에는 SDK를 통합하는 앱에 대한 세 가지 [Android 시스템 권한](https://developer.android.com/guide/topics/security/permissions.html)이 있어야 합니다.
 
-* `android.permission.GET_ACCOUNTS`(필요한 경우 런타임에 요청됨)
+* `android.permission.GET_ACCOUNTS`(필요한 경우 런타임 시 요청됨)
 
 * `android.permission.MANAGE_ACCOUNTS`
 
@@ -206,7 +206,7 @@ public interface AppPolicy {
 
 /**
  * Restrict where an app can save personal data.
- * This function is now deprecated. Please use getIsSaveToLocationAllowed(SaveLocation, String) instead
+ * This function is now deprecated. Use getIsSaveToLocationAllowed(SaveLocation, String) instead
  * @return True if the app is allowed to save to personal data stores; false otherwise.
  */
 @Deprecated
@@ -399,7 +399,7 @@ public interface MAMNotificationReceiver {
 
 * **WIPE_USER_AUXILIARY_DATA**: Intune 앱 SDK에서 기본 선택적 초기화 동작을 수행하며 초기화 발생 시 일부 보조 데이터도 제거되도록 하려면 앱에서 이 알림을 등록할 수 있습니다. 이 알림은 단일 ID 앱에는 사용할 수 없고 다중 ID 앱에만 보내집니다.
 
-* **REFRESH_POLICY**: 이 알림은 `MAMUserNotification`을 통해 전송됩니다. 이 알림이 수신되면 캐시된 Intune 정책은 무효화되고 업데이트되어야 합니다. 이 작업은 일반적으로 SDK에서 처리되지만 정책이 영구적인 방식으로 사용되는 경우에는 앱에서 처리해야 합니다.
+* **REFRESH_POLICY**: 이 알림은 `MAMUserNotification`을 통해 전송됩니다. 이 알림이 수신되면 캐시된 Intune 정책은 무효화되고 업데이트되어야 합니다. 이 작업은 SDK에서 처리되지만 정책이 영구적인 방식으로 사용되는 경우에는 앱에서 처리해야 합니다.
 
 * **MANAGEMENT_REMOVED**: 이 알림은 `MAMUserNotification`을 통해 전송되며 앱이 비관리 상태가 될 것임을 알립니다. 비관리 상태가 되면 더 이상 암호화된 파일을 읽거나, MAMDataProtectionManager로 암호화된 데이터를 읽거나, 암호화된 클립보드와 상호 작용하거나, 관리 앱 에코시스템에 참여할 수 없습니다.
 
@@ -408,7 +408,7 @@ public interface MAMNotificationReceiver {
 > 앱에서 `WIPE_USER_DATA`와 `WIPE_USER_AUXILIARY_DATA` 알림 모두를 둘 다 등록할 수 없습니다.
 
 
-## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure ADAL(Active Directory Authentication Library) 구성
+## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure ADAL(Active Directory 인증 라이브러리) 구성
 
 먼저 [GitHub의 ADAL 리포지토리](https://github.com/AzureAD/azure-activedirectory-library-for-android)에 있는 ADAL 통합 지침을 읽어 보세요.
 
@@ -448,7 +448,7 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 
 ### <a name="common-adal-configurations"></a>일반적인 ADAL 구성
 
-앱에서 ADAL을 구성할 수 있는 일반적인 방법은 다음과 같습니다. 앱의 구성을 찾아 ADAL 메타데이터 매개변수(위에 설명됨)를 필요한 값으로 설정해야 합니다. 모든 경우 기본이 아닌 환경에서 원하면 Authority를 지정할 수 있으나 일반적으로는 필요하지 않습니다.
+앱에서 ADAL을 구성할 수 있는 일반적인 방법은 다음과 같습니다. 앱의 구성을 찾아 ADAL 메타데이터 매개변수(위에 설명됨)를 필요한 값으로 설정해야 합니다. 모든 경우 기본이 아닌 환경에서 필요한 경우 Authority를 지정할 수 있으나 필요하지 않습니다.
 
 1. **앱이 ADAL을 통합하지 않는 경우:**
 
@@ -492,7 +492,7 @@ Azure AD에 응용 프로그램을 등록하는 방법에 대한 정보는 [여�
 
 ### <a name="conditional-access"></a>조건부 액세스
 
-조건부 액세스(CA)는 AAD 리소스에 대한 액세스 제어에 사용할 수 있는 Azure Active Directory [기능](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)입니다. [Intune 관리자는](https://docs.microsoft.com/intune/conditional-access) Intune에서 관리하는 장치 또는 앱으로부터의 리소스 액세스만 허용하는 CA 규칙을 정의할 수 있습니다. 앱이 적절한 때 리소스에 액세스할 수 있게 하려면 아래 단계를 따라야 합니다. 앱이 AAD 액세스 토큰을 획득하지 않아도 되거나, CA로 보호할 수 없는 리소스에만 액세스하는 경우 이 단계를 생략할 수 있습니다.
+조건부 액세스(CA)는 AAD 리소스에 대한 액세스 제어에 사용할 수 있는 Azure Active Directory [기능](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)입니다. [Intune 관리자는 Intune에서 관리하는 장치 또는 앱으로부터의 리소스 액세스만 허용하는 CA 규칙](https://docs.microsoft.com/intune/conditional-access)을 정의할 수 있습니다. 앱이 적절한 때 리소스에 액세스할 수 있게 하려면 아래 단계를 따라야 합니다. 앱이 AAD 액세스 토큰을 획득하지 않아도 되거나, CA로 보호할 수 없는 리소스에만 액세스하는 경우 이 단계를 생략할 수 있습니다.
 
 1. [ADAL 통합 지침](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)을 따릅니다. 
    특히 11단계에서 브로커 사용을 참조하세요.
@@ -502,7 +502,7 @@ Azure AD에 응용 프로그램을 등록하는 방법에 대한 정보는 [여�
 3. 위의 [공통 ADAL 구성](#common-adal-configurations), 항목 2에 따라 매니페스트 메타데이터 매개 변수를 설정합니다.
 
 4. [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)에서 [장치 기반 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)를 사용하도록 설정하고 확인하여 모든 항목이 제대로 구성되었는지 테스트
-* 앱에 로그인하면 Intune Company Portal 설치 및 등록을 위한 프롬프트 표시
+* 앱에 로그인하면 Intune 회사 포털 설치 및 등록을 위한 프롬프트 표시
 * 등록 후 앱 로그인이 완료됩니다.
 
 5. 앱이 Intune APP SDK 통합을 탑재한 후에는 msintuneappsdk@microsoft.com에 문의하여 [앱 기반 조건부 액세스](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) 승인 앱 목록에 추가되게 합니다.
@@ -537,7 +537,7 @@ APP-WE 통합을 구현하려면 앱에서 MAM SDK에 사용자 계정을 등록
 
 2. 사용자 계정을 만들고 사용자가 ADAL로 로그인하고 나면 앱이 `registerAccountForMAM()`을 호출_해야_ 합니다.
 
-3. 사용자 계정이 완전히 제거되면 앱에서 `unregisterAccountForMAM()`을 호출하여 Intune 관리에서 계정을 제거해야 합니다.
+3. 사용자 계정이 제거되면 앱에서 `unregisterAccountForMAM()`을 호출하여 Intune 관리에서 계정을 제거해야 합니다.
 
     > [!NOTE]
     > 사용자가 임시로 앱에서 로그아웃하면 앱에서 `unregisterAccountForMAM()`을 호출하지 않아도 됩니다. 이 호출에서 초기화를 시작하여 사용자의 회사 데이터를 완전히 제거할 수 있습니다.
@@ -623,7 +623,7 @@ void unregisterAccountForMAM(String upn);
 Result getRegisteredAccountStatus(String upn);
 ```
 
-1. 관리 계정을 등록하려면 앱에서 `registerAccountForMAM()`을 호출해야 합니다. 사용자 계정은 UPN과 AAD 사용자 ID 모두를 사용하여 식별합니다. 등록 데이터를 사용자의 AAD 테넌트와 연결하려면 테넌트 ID도 필요합니다. 사용자 권한을 제공하여 특정 소버린 클라우드에 대한 등록을 허용할 수도 있습니다. 자세한 내용은 [Sovereign 클라우드 등록](#sovereign-cloud-registration)을 참조하세요.  SDK가 MAM 서비스에서 지정된 사용자의 앱을 등록하려고 시도할 수 있습니다. 등록에 실패하면 계정을 등록 취소할 때까지 주기적으로 등록을 시도합니다. 재시도 기간은 일반적으로 12~24시간입니다. SDK에서는 알림을 통해 비동기적으로 등록 시도 상태를 제공합니다.
+1. 관리 계정을 등록하려면 앱에서 `registerAccountForMAM()`을 호출해야 합니다. 사용자 계정은 UPN과 AAD 사용자 ID 모두를 사용하여 식별합니다. 등록 데이터를 사용자의 AAD 테넌트와 연결하려면 테넌트 ID도 필요합니다. 사용자 권한을 제공하여 특정 소버린 클라우드의 등록을 허용할 수도 있습니다. 자세한 내용은 [소버린 클라우드 등록](#sovereign-cloud-registration)을 참조하세요.  SDK가 MAM 서비스에서 지정된 사용자의 앱을 등록하려고 시도할 수 있습니다. 등록에 실패하면 계정을 등록 취소할 때까지 주기적으로 등록을 시도합니다. 재시도 기간은 일반적으로 12~24시간입니다. SDK에서는 알림을 통해 비동기적으로 등록 시도 상태를 제공합니다.
 
 2. AAD 인증이 필요하므로 사용자가 앱에 로그인한 후 ADAL을 사용하여 성공적으로 인증되고 나면 사용자 계정을 등록하는 것이 좋습니다.
     * [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) 개체의 일부로 사용자의 AAD ID와 테넌트 ID가 ADAL 인증 호출에서 반환됩니다. 테넌트 ID는 `AuthenticationResult.getTenantID()` 메서드를 통해 제공됩니다.
@@ -708,7 +708,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 `COMPANY_PORTAL_REQUIRED` 결과를 받으면 SDK에서 등록이 요청된 ID를 사용하는 활동의 사용을 차단합니다. 대신 SDK에서는 해당 활동이 회사 포털을 다운로드하도록 프롬프트를 표시합니다. 앱에서 이 동작을 방지하려면 활동을 통해 `MAMActivity.onMAMCompanyPortalRequired`를 구현할 수 있습니다.
 
-이 메서드는 SDK에서 기본 차단 UI를 표시하기 전에 호출됩니다. 앱에서 활동 ID를 변경하거나 등록을 시도한 사용자의 등록을 취소하면 SDK가 활동을 차단하지 않습니다. 이 경우 앱에서 회사 데이터가 누수되지 않게 합니다. 다중 ID 앱(나중에 논의)만 작업 권한을 변경할 수 있습니다.
+이 메서드는 SDK에서 기본 차단 UI를 표시하기 전에 호출됩니다. 앱에서 활동 ID를 변경하거나 등록을 시도한 사용자의 등록을 취소하면 SDK가 활동을 차단하지 않습니다. 이 경우 앱에서 회사 데이터가 누수되지 않게 합니다. 다중 ID 앱(뒷부분에서 설명)만 작업 ID를 변경할 수 있습니다.
 
 ### <a name="notifications"></a>알림
 
@@ -722,7 +722,7 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 
 `getEnrollmentResult()` 메서드에서 등록 요청의 결과를 반환합니다.  `MAMEnrollmentNotification`에서 `MAMUserNotification`을 확장하므로 등록을 시도하는 사용자의 ID도 사용 가능합니다. [SDK에서 알림 등록](#register-for-notifications-from-the-sdk) 섹션에 자세히 설명된 대로 앱에서 이러한 알림을 받도록 `MAMNotificationReceiver` 인터페이스를 구현해야 합니다.
 
-등록 알림을 받으면 등록된 사용자 계정의 상태가 변경될 수 있지만, 일부 경우에는 변경되지 않습니다(예: `WRONG_USER`와 같은 자세한 정보를 포함하는 결과 다음에 `AUTHORIZATION_NEEDED` 알림을 받으면, 자세한 정보를 포함하는 결과가 계정의 상태로 유지 관리함).
+등록 알림을 받으면 등록된 사용자 계정의 상태가 변경될 수 있지만, 일부 경우에는 변경되지 않습니다(예: `WRONG_USER`와 같은 자세한 정보를 포함하는 결과 다음에 `AUTHORIZATION_NEEDED` 알림을 받으면, 자세한 정보를 포함하는 결과가 계정의 상태로 유지 관리됨).
 
 
 ## <a name="protecting-backup-data"></a>백업 데이터 보호
@@ -827,9 +827,9 @@ BackupAgent를 사용하면 백업되는 데이터에 대해 훨씬 더 명확�
 ## <a name="multi-identity-optional"></a>다중 ID(선택사항)
 
 ### <a name="overview"></a>개요
-기본적으로 Intune 앱 SDK는 앱에 전체적으로 정책을 적용합니다. 다중 ID는 정책을 ID 수준별로 적용하기 위해 설정할 수 있는 선택적 Intune 앱 보호 기능입니다. 이 기능을 사용하려면 다른 앱 보호 기능보다 훨씬 더 많은 앱 참여가 필요합니다.
+기본적으로 Intune 앱 SDK는 앱에 전체적으로 정책을 적용합니다. 다중 ID는 정책을 ID 수준별로 적용하기 위해 설정할 수 있는 선택적 Intune 앱 보호 기능입니다. 이 기능을 사용하려면 다른 앱 보호 기능보다 더 많은 앱 참여가 필요합니다.
 
-앱은 활성 ID를 변경하려는 경우 SDK에 *알려야 합니다*. 경우에 따라 SDK는 ID 변경이 필요한 경우 앱에도 알립니다. 그러나 대부분의 경우 MAM은 어떤 데이터가 UI에 표시되거나 특정 시점에 스레드에서 사용되고 있고 데이터 누수를 피하기 위해 올바른 ID를 설정하는 데 앱을 사용하는지 알 수 없습니다. 다음에 나오는 섹션에서는 앱 작업이 필요한 일부 특정 시나리오가 설명됩니다.
+앱은 활성 ID를 변경하려는 경우 SDK에 *알려야 합니다*. 경우에 따라 SDK는 ID 변경이 필요한 경우 앱에도 알립니다. 그러나 대부분의 경우 MAM은 어떤 데이터가 UI에 표시되거나 특정 시점에 스레드에서 사용되고 있고 데이터 누수를 피하기 위해 올바른 ID를 설정하는 데 앱을 사용하는지 알 수 없습니다. 다음에 나오는 섹션에는 앱 작업이 필요한 일부 특정 시나리오에 대한 설명이 나옵니다.
 
 > [!NOTE]
 >  올바른 앱 참여가 없으면 데이터가 누수되고 다른 보안 문제가 발생할 수 있습니다.
@@ -839,7 +839,7 @@ BackupAgent를 사용하면 백업되는 데이터에 대해 훨씬 더 명확�
 > [!NOTE]
 > 현재 Intune 관리 ID는 장치당 하나만 지원됩니다.
 
-ID는 단순히 문자열로 정의됩니다. ID는 **대/소문자를 구분하지 않음**이며, ID와 관련한 SDK에 대한 요청은 ID를 설정할 때 원래 사용된 것과 같은 대/소문자를 반환하지 않을 수도 있습니다.
+ID는 문자열로 정의됩니다. ID는 **대/소문자를 구분하지 않음**이며, ID와 관련한 SDK에 대한 요청은 ID를 설정할 때 원래 사용된 것과 같은 대/소문자를 반환하지 않을 수도 있습니다.
 
 ### <a name="enabling-multi-identity"></a>다중 ID 사용
 
@@ -940,7 +940,7 @@ ID를 설정하는 데 사용된 모든 메서드는 `MAMIdentitySwitchResult`�
 
 앱의 ID 설정 기능 이외에도, 앱 보호 정책이 적용된 다른 Intune 관리 앱의 데이터 수신에 따라 스레드 또는 컨텍스트의 ID가 변경될 수 있습니다.
 
-#### <a name="examples"></a>예
+#### <a name="examples"></a>예제
 
   1. 다른 MAM 앱에서 보낸 `Intent`에서 작업이 시작된 경우에는 `Intent`가 전송된 시점의 다른 앱에서 유효한 ID에 따라 작업 ID가 설정됩니다.
 
@@ -1004,7 +1004,7 @@ ID를 설정하는 데 사용된 모든 메서드는 `MAMIdentitySwitchResult`�
     > [!NOTE]
     > 다중 ID 앱은 항상 관리되는 앱과 관리되지 않는 앱에서 들어오는 데이터를 둘 다 수신합니다. 앱은 관리되는 ID의 데이터를 관리되는 방식으로 처리해야 합니다.
 
-  요청된 ID가 관리되지만(`MAMPolicyManager.getIsIdentityManaged`를 사용하여 확인) 앱이 해당 계정을 사용할 수 없다면(예: 앱에서 메일 계정 등의 계정을 첫 번째로 설정해야 하기 때문에) ID 전환이 거부됩니다.
+  요청된 ID가 관리되지만(`MAMPolicyManager.getIsIdentityManaged`를 사용하여 확인) 앱이 메일 계정 등의 계정을 먼저 설정해야 하기 때문에 해당 계정을 사용할 수 없다면 ID 전환이 거부됩니다.
 
 ### <a name="preserving-identity-in-async-operations"></a>비동기 작업에서 ID 유지
 UI 스레드의 작업에서 백그라운드 작업을 다른 스레드에 발송하는 것은 일반적입니다. 다중 ID 앱은 이러한 백그라운드 작업이 적절한 ID로 작동하는지 확인하려고 합니다. 적절한 ID는 ID를 발송한 작업에 사용되는 ID와 동일한 경우가 많습니다. MAM SDK는 ID 보존에 도움이 되도록 편의를 위해 `MAMAsyncTask`와 `MAMIdentityExecutors`를 제공합니다.
@@ -1236,15 +1236,15 @@ public final class MAMDataProtectionManager {
 
 ### <a name="selective-wipe"></a>선택적 초기화
 
-`WIPE_USER_DATA` 알림에 대해 다중 ID 앱을 등록할 경우, 해당 사용자에게 속한 것으로 ID 태그된 모든 파일을 포함하여 초기화된 사용자에 대한 모든 데이터를 제거할 책임이 앱에 있습니다. 앱이 파일에서 사용자 데이터를 제거하지만 다른 데이터는 파일에 남겨둘 경우 파일의 ID를 변경*해야 합니다*(`MAMFileProtectionManager.protect`를 통해, 개인 데이터 또는 빈 ID로 변경). 암호화 정책을 사용할 경우 정리되는 사용자에 속한 모든 나머지 파일은 암호 해독되지 않으며 초기화 후에 앱에 액세스할 수 없게 됩니다.
+`WIPE_USER_DATA` 알림에 대해 다중 ID 앱을 등록할 경우, 해당 사용자에게 속한 것으로 ID 태그된 모든 파일을 포함하여 초기화된 사용자의 모든 데이터를 제거할 책임이 앱에 있습니다. 앱이 파일에서 사용자 데이터를 제거하지만 다른 데이터는 파일에 남겨둘 경우 파일의 ID를 변경*해야 합니다*(`MAMFileProtectionManager.protect`를 통해, 개인 데이터 또는 빈 ID로 변경). 암호화 정책을 사용할 경우 정리되는 사용자에 속한 모든 나머지 파일은 암호 해독되지 않으며 초기화 후에 앱에 액세스할 수 없게 됩니다.
 
 `WIPE_USER_DATA`에 등록한 앱에는 SDK 기본 선택적 초기화 동작이 적용되지 않습니다. 다중 ID 인식 앱의 경우 MAM 기본 선택적 초기화는 초기화의 대상이 되는 ID가 있는 파일만 초기화하므로 더 많이 유실될 수 있습니다. 다중 ID 인식 응용 프로그램에서 MAM 기본 선택 초기화를 수행하고 _**및**_ 에서 초기화 시 고유 작업을 수행하려는 경우 `WIPE_USER_AUXILIARY_DATA` 알림을 등록해야 합니다. 이 알림은 MAM 기본 선택적 초기화를 수행하기 직전에 SDK에서 즉시 전송합니다. 앱에서 WIPE_USER_DATA와 WIPE_USER_AUXILIARY_DATA를 둘 다 등록하지 않아야 합니다.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android 응용 프로그램에 대해 MAM 대상 구성 사용(선택 사항)
-Intune 콘솔에서 응용 프로그램 특정 키-값 쌍을 구성해야 합니다. 이러한 키-값 쌍은 Intune에서 전혀 해석되지 않고 앱에 전달되기만 합니다. 해당 구성을 수신하려고 하는 응용 프로그램은 `MAMAppConfigManager` 및 `MAMAppConfig` 클래스를 사용하여 구성을 수신할 수 있습니다. 동일한 앱에서 여러 정책을 대상으로 지정하면 동일한 키에 사용할 수 있는 여러 개의 충돌 값이 발생할 수 있습니다.
+Intune 콘솔에서 응용 프로그램 특정 키-값 쌍을 구성해야 합니다. 이러한 키-값 쌍은 Intune에서 전혀 해석되지 않고 앱에 전달됩니다. 해당 구성을 수신하려고 하는 응용 프로그램은 `MAMAppConfigManager` 및 `MAMAppConfig` 클래스를 사용하여 구성을 수신할 수 있습니다. 동일한 앱에서 여러 정책을 대상으로 지정하면 동일한 키에 사용할 수 있는 여러 개의 충돌 값이 발생할 수 있습니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 ```
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
@@ -1425,7 +1425,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 ## <a name="default-enrollment-optional"></a>기본 등록(선택 사항)
 <!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
-다음은 자동 APP-WE 서비스 등록(이 섹션에서는 **기본값 등록**이라고 함)을 위해 앱 시작 시 사용자 프롬프트를 요구하는 것에 관한 지침으로, Intune 보호 사용자만 SDK 통합 Android LOB 앱을 사용할 수 있도록 허용하는 Intune 앱 보호 정책을 요구합니다. 또한 SDK 통합 Android LOB 앱에 SSO를 사용하는 방법에 관해서도 설명합니다. 이것은 Intune 이외의 사용자가 사용할 수 있는 스토어 앱에서는 **지원되지 않습니다.**
+다음은 자동 APP-WE 서비스 등록(이 섹션에서는 **기본값 등록**이라고 함)을 위해 앱 시작 시 사용자 프롬프트를 요구하는 것에 관한 지침으로, Intune 보호 사용자만 SDK 통합 Android LOB 앱을 사용할 수 있도록 허용하는 Intune 앱 보호 정책을 요구합니다. 또한 SDK 통합 Android LOB 앱에 SSO를 사용하는 방법에 관해서도 설명합니다. 이것은 Intune 이외의 사용자가 사용할 수 있는 스토어 앱에서는 **지원되지 않습니다**.
 
 > [!NOTE] 
 > **기본값 등록**의 이점에는 장치의 앱에 관한 APP-WE 서비스에서 정책을 얻는 단순화된 방법이 포함됩니다.
@@ -1455,14 +1455,14 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 
 [ProGuard](http://proguard.sourceforge.net/) 없이 실행되는 대규모 코드 기반의 경우 ,Dalvik 실행 파일 형식의 제한 사항이 문제가 될 수 있습니다. 특히 다음과 같은 제한 사항이 발생할 수 있습니다.
 
-1.  필드의 경우 65K로 제한됩니다.
-2.  메서드의 경우 65K로 제한됩니다.
+1.  필드에 대한 65-K 제한입니다.
+2.  메소드에 대한 65-K 제한입니다.
 
 ### <a name="policy-enforcement-limitations"></a>정책 적용 제한 사항
 
 * **화면 캡처**: SDK는 이미 Activity.onCreate 처리한 작업에서 새로운 화면 캡처 설정 값을 적용할 수 없습니다. 이로 인해 앱에서 스크린샷을 사용하지 않도록 구성했지만 여전히 스크린샷을 만들 수 있는 기간이 발생합니다.
 
-* **콘텐츠 확인자 사용**: “전송 또는 수신” Intune 정책이 다른 앱에서 콘텐츠 확인자를 사용하여 콘텐츠 공급자에 액세스하는 것을 차단하거나 부분적으로 차단할 수 있습니다. 이로 인해 ContentResolver 메서드에서 null이 반환되거나 오류 값이 발생합니다(예: 차단된 경우 `openOutputStream` 에서 `FileNotFoundException` 이 발생함). 앱에서는 콘텐츠 확인자를 통한 데이터 쓰기가 정책으로 인해 실패했거나 정책으로 인해 실패할 것인지 여부를 다음을 호출하여 확인할 수 있습니다.
+* **콘텐츠 확인자 사용**: “전송 또는 수신” Intune 정책이 다른 앱에서 콘텐츠 확인자를 사용하여 콘텐츠 공급자에 액세스하는 것을 차단하거나 부분적으로 차단할 수 있습니다. 이로 인해 ContentResolver 메서드에서 null이 반환되거나 오류 값이 발생합니다(예: 차단된 경우 `openOutputStream`에서 `FileNotFoundException`이 발생함). 앱에서는 콘텐츠 확인자를 통한 데이터 쓰기가 정책으로 인해 실패했거나 정책으로 인해 실패할 것인지 여부를 다음을 호출하여 확인할 수 있습니다.
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
@@ -1481,7 +1481,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 ### <a name="reflection-limitations"></a>리플렉션 제한 사항
 일부 MAM 기본 클래스(예: MAMActivity, MAMDocumentsProvider)는 특정 API 수준 위에만 존재하는 반환 형식 또는 매개 변수를 사용하는 메서드(원래 Android 기본 클래스를 기반으로)를 포함합니다. 이런 이유 때문에 리플렉션을 사용하여 앱 구성 요소의 모든 메서드를 열거하는 것이 항상 가능하지는 않습니다. 이 제한 사항은 MAM에 국한되지 않으며 앱 자체가 Android 기본 클래스에서 이러한 메서드를 구현하는 경우 적용되는 것과 동일한 제한 사항입니다.
 ### <a name="roboelectric"></a>Roboelectric
-Roboelectic에서는 MAM SDK 동작 테스트가 지원되지 않습니다. Robelectric에서는 실제 장치나 에뮬레이터에서 동작을 정확하게 재현하지는 못하기 때문에 Robelectric에서의 MAM SDK 실행에는 알려진 문제가 있습니다. 
+Roboelectic에서는 MAM SDK 동작 테스트가 지원되지 않습니다. Robelectric에서는 실제 장치나 에뮬레이터에서 동작을 정확하게 재현하지는 못하기 때문에 Robelectric에서의 MAM SDK 실행에는 알려진 문제가 있습니다.
 
 Roboelectric에서 응용 프로그램을 테스트해야 할 경우 권장되는 해결 방법은 응용 프로그램 클래스 논리를 도우미로 이동하고 MAMApplication에서 상속하지 않는 응용 프로그램 클래스로 단위 테스트 apk를 생성하는 것입니다.
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK 소비자의 기대

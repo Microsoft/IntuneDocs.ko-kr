@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255541"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141612"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>장치 등록 관리자 계정을 사용하여 장치 등록
 
@@ -53,7 +53,7 @@ DEM 사용자는 다음 작업을 수행할 수 있습니다.
   - DEM 사용자는 회사 포털을 사용하여 장치 자체에서 DEM에 등록된 장치 등록을 해제할 수 없습니다. Intune 관리는 등록을 해제할 수 있습니다.
   - 회사 포털 앱 또는 웹 사이트에 로컬 장치만 표시됩니다.
   - 앱 관리에 대한 사용자별 Apple ID 요구 사항으로 인해 사용자 라이선스를 통해 Apple VPP(Volume Purchase Program) 앱을 사용할 수 없습니다.
-  - (iOS에만 해당) DEM을 사용하여 iOS 장치를 등록하는 경우 Apple Configurator, Apple DEP(장치 등록 프로그램) 또는 ASM(Apple School Manager)를 사용하여 장치를 등록할 수 없습니다.
+  - (iOS에만 해당) DEM을 사용하여 iOS 장치를 등록하는 경우 Apple Configurator, Apple DEP(장치 등록 프로그램) 또는 ASM(Apple School Manager)를 사용하여 장치를 등록할 수 없습니다. 즉, 장치를 감독 모드로 전환할 수 없으므로 일부 구성 옵션에 액세스할 수 없습니다.
   - (Android에만 해당) 단일 DEM 계정으로 등록할 수 있는 Android 회사 프로필 장치의 수에는 제한이 있습니다. DEM 계정당 10개까지 Android 회사 프로필 장치를 등록할 수 있습니다. 이 제한은 기존 Android 등록에는 적용되지 않습니다.
   - 장치 라이선스가 있는 경우 장치는 VPP 앱을 설치할 수 있습니다.
   - Intune 장치 라이선스에는 DEM을 사용하지 않아도 됩니다. [사용자 및 장치 라이선스](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)에 대해 자세히 알아보세요.

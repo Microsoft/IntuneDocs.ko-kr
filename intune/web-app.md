@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 7e974a17506be36c725dddfa21329269c8fcebc8
+ms.sourcegitcommit: 572287c3bb0020b6b75e4e2ac27019c20c699159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347460"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44340272"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune에 웹앱 추가
 
@@ -62,6 +62,8 @@ Intune에 앱을 웹용 앱의 바로 가기로 추가하려면 다음 작업을
 
 > [!Note]
 > 사용자는 자신의 홈 화면에 Intune 위젯을 추가하여 Android 장치에 할당된 웹앱을 표시해야 합니다.
+>
+> 현재, iOS 장치로 Intune 웹앱 배포는 관리 프로필과 연결되어 있어 수동으로 제거할 수 없습니다. Intune 포털에서 배포 유형을 **제거**로 변경하면 웹앱을 자동으로 제거할 수 있습니다. 그러나 앱 할당 의도를 **제거**로 변경하기 전에 배포를 제거하면 장치가 Intune에서 등록 취소될 때까지 웹앱은 영구히 남아 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
