@@ -3,8 +3,8 @@ title: Microsoft Intune 온-프레미스 Exchange 커넥터 설정
 titleSuffix: ''
 description: 온-프레미스 Exchange 커넥터를 사용하여 Intune 등록 및 EAS(Exchange Active Sync)에 따라 Exchange 사서함에 장치 액세스를 관리합니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7de97ac8a9149d2574bbc97df67408f85b243a11
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: e12ab106b44d217d7e7b4b1a466fd5b12a9fb528
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744689"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231834"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure에서 Intune 온-프레미스 Exchange Connector 설정
 

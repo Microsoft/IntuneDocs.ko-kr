@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ffa0207729a6e0855b4534d40aa598bcb04e7847
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5866314c03eff5613b4c0cc5d46d2f2eace29a13
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150204"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828026"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work가 발견한 위협 해결  
 
@@ -42,7 +42,9 @@ Lookout for Work 앱에서 보안 또는 앱 위협을 감지하는 경우 회�
     ![회사 포털 웹 사이트에 대한 링크 및 파란색 확인 단추가 있는 Lookout for Work 오류 메시지의 예제 스크린샷](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. 장치를 선택합니다.  
-3. 장치 아래에 표시된 경고를 읽습니다. Lookout for Work를 열어 바이러스 또는 보안 위협을 해결하도록 안내합니다.   
+3. 장치 아래에 표시된 경고를 읽습니다. Lookout for Work를 열어 바이러스 또는 보안 위협을 해결하도록 안내합니다.     
+
+    ![Lookout for Work 경고를 보여주는 회사 포털 장치 페이지의 예제 스크린샷](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>앱 위협 해결   
 Lookout for Work에서 위협으로 식별하는 앱을 설치하는 경우 아래 스크린샷에 표시된 것과 같은 메시지를 받게 됩니다.  
@@ -50,5 +52,5 @@ Lookout for Work에서 위협으로 식별하는 앱을 설치하는 경우 아�
 ![Lookout for Work에서 감지된 Active 및 Resolved 앱 위협 목록을 표시하는 예제 스크린샷](./media/ios-lfw-threat-example.png)    
 화면 맨 위에 표시된 앱 이름을 선택합니다. 그런 다음, 지침을 따라 앱을 제거합니다. 장치에 해당 앱이 있는 한 회사 리소스에 액세스할 수 없습니다.    
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.  
+여전히 도움이 필요하세요? 회사 지원팀과 확인하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.    
 

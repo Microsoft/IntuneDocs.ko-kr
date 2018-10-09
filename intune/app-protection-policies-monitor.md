@@ -3,8 +3,8 @@ title: 앱 보호 정책을 모니터링하는 방법
 titleSuffix: Microsoft Intune
 description: Intune에서 모바일 앱 관리 정책의 준수 상태를 모니터링합니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7dea97ef74489e3caae7433e8ebbe2b9ed39aa3
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 9486bb6d0d9747101535cef9f45931fa1b2cefe6
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330044"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231445"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>앱 보호 정책을 모니터링하는 방법
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

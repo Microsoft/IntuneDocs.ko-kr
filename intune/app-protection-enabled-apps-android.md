@@ -3,8 +3,8 @@ title: 앱 보호 정책을 사용하는 Android 앱
 titlesuffix: Microsoft Intune
 description: 보호 정책이 있는 Android 앱에서 예상되는 상황을 알아봅니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16cef0b3e72c2e7815aada1c45c0e312b84931ab
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e8c606f9b304f91e02ba977c801bd8de18682612
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833020"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231698"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 앱이 앱 보호 정책에 의해 관리될 때 예상되는 상황 
 

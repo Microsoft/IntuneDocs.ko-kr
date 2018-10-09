@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure와 네트워크 액세스 제어 통합 | Microsoft Docs
 description: NAC(네트워크 액세스 제어) 솔루션은 Intune을 사용하여 장치에 대한 준수 및 등록을 확인합니다. NAC는 조건부 액세스를 사용한 특정 동작 및 작업을 포함합니다. 등록된 단계를 참조하고 파트너 솔루션 목록을 가져옵니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf796afcfc42f2cdf778713f4dceadb2597a12e2
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: edac1701de22fd94eac3990949d18389841a5444
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834070"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231539"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Intune과 NAC(네트워크 액세스 제어) 통합
 

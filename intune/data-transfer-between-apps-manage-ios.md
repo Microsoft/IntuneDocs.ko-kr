@@ -3,8 +3,8 @@ title: iOS 앱 간의 데이터 전송 관리
 titlesuffix: Microsoft Intune
 description: 앱 간 데이터 전송을 관리하려면 Microsoft Intune에서 모바일 앱 관리를 사용하는 법을 이해합니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2991aa947a693d2eb71a355047ed266838dd92a4
-ms.sourcegitcommit: be67f8293b47cc08a46d328a44a50a7ab67c2052
+ms.openlocfilehash: 23e18ef2d7870a22699d898ad937febf9e61b804
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251612"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231665"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법
 ## <a name="manage-ios-apps"></a>IOS 앱 관리

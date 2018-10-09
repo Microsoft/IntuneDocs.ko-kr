@@ -3,8 +3,8 @@ title: Microsoft Intune에서 Mobile Threat Defense 사용
 titleSuffix: ''
 description: MTD(Mobile Threat Defense) 파트너와 함께 Intune MTD(Mobile Threat Defense)를 사용하여 장치 위험에 따라 회사 리소스에 대한 액세스를 보호합니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6dae7f6973f6259284fc21e5e4b8e98b67517102
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: b94b4014fdf8226696f1979b87d730d2f4cccd1c
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823004"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231527"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune과 Mobile Threat Defense의 통합이란?
 

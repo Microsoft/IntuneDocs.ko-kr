@@ -3,8 +3,8 @@ title: Microsoft Intune과 Lookout 통합 설정
 titlesuffix: ''
 description: 회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Lookout MTD(Mobile Threat Defense)와 Intune을 통합하는 방법을 알아봅니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029868"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232186"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune과 Lookout Mobile Threat Defense 통합 설정
 
@@ -88,12 +88,12 @@ Lookout Mobility Endpoint Security 테넌트가 Azure AD 구독과 연결되어 
     > [!NOTE] 
     > 식별되고 지원되는 Azure AD 내 등록 그룹 사용자의 모든 Lookout 지원, Intune 등록 장치가 Lookout MTD 콘솔에 등록되며 활성화할 수 있습니다.
 
-2. [Lookout 콘솔](https://aad.lookout.com)의 **시스템** 모듈에서 **커넥터** 탭, **등록 관리**를 차례로 선택하여 Lookout에서 해당 장치를 등록해야 하는 사용자 집합을 정의합니다. 등록할 Azure AD 보안 그룹 **표시 이름**을 추가합니다.
+2. [Lookout 콘솔](https://aad.lookout.com)의 **시스템** 모듈에서 Lookout에 장치를 등록해야 하는 사용자 집합을 정의하려면 **커넥터** 탭을 선택하고 **등록 관리**를 선택합니다. 등록할 Azure AD 보안 그룹 **표시 이름**을 추가합니다.
 
     ![Intune Connector 등록 페이지의 스크린샷](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > Azure Portal에서 보안 그룹의 **속성**에 나와 있는 것처럼 **표시 이름**은 대/소문자가 구분됩니다. 제목이 모두 소문자이지만 아래 이미지에 나와 있는 것처럼 보안 그룹의 **표시 이름**은 카멜 표기법(camelCase)을 따릅니다. Lookout 콘솔에서 보안 그룹에 대한 **표시 이름**의 대/소문자를 일치시키세요.
+    > Azure Portal에서 보안 그룹의 **속성**에 나와 있는 것처럼 **표시 이름**은 대/소문자가 구분됩니다. 아래 그림에 표시된 것처럼 보안 그룹의 **표시 이름**은 카멜식 대/소문자입니다. 반면 제목은 모두 소문자입니다. Lookout 콘솔에서 보안 그룹에 대한 **표시 이름**의 대/소문자를 일치시키세요.
     >![Azure Portal의 Azure Active Directory 서비스 속성 페이지의 스크린샷](./media/aad-group-display-name.png)
 
     >[!NOTE] 
