@@ -7,20 +7,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/29/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
-/ms.custom: intune-azure
-ms.openlocfilehash: 0205715a8e35d009401886af4bd0bf88fb9cf662
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: e3049fe461553ad1ba2e714d2274e0d39d169852
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347290"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254091"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -90,7 +90,8 @@ iOS VPN 장치 구성 프로필을 만드는 경우(**장치 구성** > **프로
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>Windows 10 이상의 장치에서 S 모드 제어 - 공개 미리 보기 <!-- 1958649 -->
 이 기능 업데이트를 사용하여 Windows 10 장치를 S 모드에서 전환하거나 사용자가 S 모드에서 장치를 전환하지 못하게 하는 장치 구성 프로필을 만들 수 있습니다. 이 기능은 Intune > **장치 구성** > **프로필** >  **Windows 10 이상** > **버전 업그레이드 및 모드 전환**에 있습니다.
 [Windows 10 S 모드 소개](https://www.microsoft.com/windows/s-mode)에서 S 모드에 대한 자세한 정보를 제공합니다.
-적용 대상: Windows 10 이상(1809 이상)
+적용 대상: 최신 [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) 빌드(미리 보기 중)
+
 
 #### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>구성 프로필에 자동으로 추가된 Windows Defender ATP 구성 패키지 <!-- 2144658 -->
 Intune에서 [고급 위협 보호 및 온보딩](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) 장치를 사용하는 경우 이전에 구성 패키지를 다운로드하고, 구성 프로필에 추가해야 했습니다. 이 업데이트를 사용하여 Intune은 Windows Defender Security Center에서 패키지를 자동으로 가져오고, 프로필에 추가합니다.
@@ -98,6 +99,8 @@ Windows 10 이상에 적용됩니다.
 
 #### <a name="require-users-to-connect-during-device-setup---2311457--"></a>사용자는 장치 설정 중에 연결해야 함 <!--2311457-->
 이제 Windows 10을 설치하는 동안 네트워크 페이지를 지나 계속 진행하기 전에 네트워크에 장치를 연결하도록 요구하는 장치 프로필을 설정할 수 있습니다. 이 기능이 미리 보기 상태인 동안 이 설정을 사용하려면 Windows Insider build 1809 이상이 필요합니다.
+적용 대상: 최신 [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) 빌드(미리 보기 중)
+
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>앱을 제한하고, iOS 및 Android Enterprise 장치의 회사 리소스에 대한 액세스를 차단함 <!-- 2451462 -->
 **장치 준수** > **정책** > **정책 만들기** > **iOS** > **시스템 보안**에는 새로운 **제한된 응용 프로그램** 설정이 있습니다. 특정 응용 프로그램이 장치에 설치되어 있는 경우 이 새로운 설정은 준수 정책을 사용하여 회사 리소스에 대한 액세스를 차단합니다. 제한된 응용 프로그램이 장치에서 제거될 때까지 장치는 정책을 준수하지 않는 것으로 간주됩니다.
@@ -129,19 +132,24 @@ DEP 등록 중에 설정 도우미 대신 회사 포털을 통해 사용자를 �
 
 #### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Autopilot 장치에 사용자 및 식별 이름 할당 <!--1346521 -->
 이제 [단일 Autopilot 장치에 사용자를 할당](enrollment-autopilot.md)할 수 있습니다. 또한 관리자는 AutoPilot을 사용하여 장치를 설정할 때 사용자에게 친숙한 식별 이름도 지정할 수 있습니다.
-적용 대상: Windows 참가자 1809 이상 빌드(미리 보기 동안).
+적용 대상: 최신 [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) 빌드(미리 보기 중)
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP 장치 라이선스를 사용하여 DEP 등록 중 회사 포털 사전 프로비전 <!-- 1608345 -->
 이제 VPP(대량 구매 프로그램) 장치 라이선스를 사용하여 DEP(장비 등록 프로그램) 등록 중 회사 포털을 사전 프로비전할 수 있습니다. 이렇게 하려면 [등록 프로필을 만들거나 편집](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)할 때 회사 포털을 설치하는 데 사용하려는 VPP 토큰을 지정합니다. 토큰이 만료되지 않았고 회사 포털 앱에 대한 충분한 라이선스가 있는지 확인합니다. 토큰이 만료되거나 라이선스가 부족한 경우 Intune은 App Store 회사 포털을 대신 푸시합니다(Apple ID에 대한 메시지를 표시함).
 
+### <a name="confirmation-required-to-delete-vpp-token-that-is-being-used-for-company-portal-pre-provisioning----2237634---"></a>회사 포털 사전 프로비전에 사용되는 VPP 토큰을 삭제하는 데 필요한 확인 <!-- 2237634 -->
+DEP 등록 중 회사 포털을 사전 프로비전하는 데 VPP(대량 구매 프로그램) 토큰이 사용되는 경우 이를 삭제하는 데 이제는 확인이 필요합니다.
+
 #### <a name="block-windows-personal-device-enrollments----1849498---"></a>Windows 개인 장치 등록 차단 <!-- 1849498 -->
-Intune에서 [모바일 장치 관리](windows-enroll.md)를 사용하여 [Windows 개인 장치를 등록하지 못하도록 차단](enrollment-restrictions-set.md#set-device-type-restrictions)할 수 있습니다. [Intune PC 에이전트](manage-windows-pcs-with-microsoft-intune.md)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다.
+Intune에서 [모바일 장치 관리](windows-enroll.md)를 사용하여 [Windows 개인 장치를 등록하지 못하도록 차단](enrollment-restrictions-set.md#set-device-type-restrictions)할 수 있습니다. [Intune PC 에이전트](manage-windows-pcs-with-microsoft-intune.md)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다. 이 기능은 향후 2주 이내에 출시 예정이기 때문에 당장은 사용자 인터페이스에서 보이지 않을 수 있습니다.
 
 #### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Autopilot 프로필에 머신 이름 패턴 지정 <!--1849855-->
-Autopilot 등록 중에 [컴퓨터 이름 템플릿을 지정](enrollment-autopilot.md#create-an-autopilot-deployment-profile)하여 [컴퓨터 이름](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)을 생성하고 설정할 수 있습니다.
+Autopilot 등록 중에 [컴퓨터 이름 템플릿을 지정](enrollment-autopilot.md#create-an-autopilot-deployment-profile)하여 [컴퓨터 이름](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)을 생성하고 설정할 수 있습니다. 적용 대상: 최신 [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) 빌드(미리 보기 중)
+
 
 #### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows Autopilot 프로필의 경우 회사 로그인 페이지 및 도메인 오류 페이지에서 계정 변경 옵션을 숨김 <!--1901669 -->
-관리자가 회사 로그인 및 도메인 오류 페이지에서 계정 변경 옵션을 숨기는 [새 Windows Autopilot 프로필 옵션](enrollment-autopilot.md#create-an-autopilot-deployment-profile)이 포함됩니다. 이러한 옵션을 숨기려면 Azure Active Directory에서 회사 브랜딩을 구성해야 합니다. 적용 대상: Windows 참가자 1809 이상 빌드(미리 보기 동안).
+관리자가 회사 로그인 및 도메인 오류 페이지에서 계정 변경 옵션을 숨기는 [새 Windows Autopilot 프로필 옵션](enrollment-autopilot.md#create-an-autopilot-deployment-profile)이 포함됩니다. 이러한 옵션을 숨기려면 Azure Active Directory에서 회사 브랜딩을 구성해야 합니다. 적용 대상: 최신 [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) 빌드(미리 보기 중)
+
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP 장치 라이선스를 사용하여 DEP 등록 중 회사 포털 사전 프로비전 <!-- 1608345 -->
 이제 VPP(대량 구매 프로그램) 장치 라이선스를 사용하여 DEP(장비 등록 프로그램) 등록 중 회사 포털을 사전 프로비전할 수 있습니다. 이렇게 하려면 [등록 프로필을 만들거나 편집](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)할 때 회사 포털을 설치하는 데 사용하려는 VPP 토큰을 지정합니다. 토큰이 만료되지 않았고 회사 포털 앱에 대한 충분한 라이선스가 있는지 확인합니다. 토큰이 만료되거나 라이선스가 부족한 경우 Intune은 App Store 회사 포털을 대신 푸시합니다(Apple ID에 대한 메시지를 표시함).
@@ -1273,6 +1281,25 @@ Intune에서 거부된 앱을 지정할 수 있습니다. 앱이 거부되면 �
 
 
 ## <a name="notices"></a>알림
+
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>변경 계획: 프리미어 고객을 위한 새로운 Intune 지원 환경 
+Microsoft 프리미어 고객은 현재 MPO(Microsoft 프리미어 온라인) 포털(premier.microsoft.com)과 Azure의 Intune(portal.azure.com)에서 Intune에대 한 지원 요청을 생성할 수 있습니다. 2018년 12월 3일부터 프리미어 지원 환경을 지속적으로 개선하기 위해 Azure의 Intune에서만 지원 요청을 생성할 수 있습니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+12 월 3일 이후에는 MPO에서 지원 요청을 생성할 수 없게 됩니다.  지원 요청을 생성하려고 하면 해제할 수 없다는 메시지가 표시되고 Azure의 Intune으로 리디렉션됩니다. 여기서 지원 요청을 생성할 수 있는데, 그러면 Intune 전담 Microsoft 지원 팀으로 연결되어 적절한 시기에 문제를 진단 후 해결할 수 있습니다. MPO 포털에서 만든 지원 요청은 Azure Portal에서 확인할 수 없습니다. 따라서 MPO에서 지원 요청을 만들면 안 됩니다.  
+
+하이브리드 MDM(하이브리드 모바일 장치 관리) 또는 공동 관리를 사용하는 경우 MPO를 사용해 ConfigMgr에 대한 지원 요청을 계속해서 만들 수 있지만 Intune에 대한 지원 요청은 Azure Portal을 사용해 만들 수 있습니다. 참고로, 하이브리드 MDM은 사용하지 않게 되므로 가급적 빨리 Azure의 Intune로 이전할 계획을 세워야 합니다. 자세한 내용은 하이브리드 모바일 장치 관리에서 Azure의 Intune으로 이전을 참조하세요.
+
+전역 관리자, Intune 서비스 관리자 및 서비스 지원 관리자 역할이 있는 사용자만 Azure Portal에서 지원 티켓을 만들 수 있습니다.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
+- MPO 사용을 중지하고 Azure의 Intune에서 모든 Intune 지원 요청을 만들고 관리하세요.  
+- 기술 지원팀에 알리고 필요한 경우 문서를 업데이트하세요.
+- 전역 관리자 또는 Intune 서비스 관리자 역할이 없는 사용자가 MPO에서 현재 지원 티켓을 만드는 경우에는 Azure Active Directory에서 해당 사용자에게 서비스 지원 관리자 역할을 할당해 Azure Portal에서 계속해서 지원 티켓을 만들 수 있도록 해주세요.
+- 자세한 정보 및 유용한 링크를 보려면 추가 정보를 클릭하세요.
+
+#### <a name="additional-information"></a>추가 정보
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>작업 수행: Intune에서 Android 장치 제한 또는 규정 준수 정책 암호 설정을 업데이트하세요.
 Intune은 Android 4.4 이상의 장치에 사용 가능한 암호 유형 "장치 기본값"을 제거합니다. Android 플랫폼과 장치 기본값의 차이로 인해 해당 정책은 종종 장치에서 선택 사항으로 처리됩니다. Android에서 이 설정을 적용할 때 혼동을 없애기 위해 향후 출시될 UI에서 이 설정을 제거할 예정입니다. 
