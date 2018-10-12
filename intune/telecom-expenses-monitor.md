@@ -15,12 +15,12 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53f6adba610f1ddb817e04ac8e9a0fdb2665b21a
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347817"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562904"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune에서 Telecom Expense Management 서비스 설정
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -129,7 +129,7 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>회사 장치 그룹에 Datalert 앱 할당
 
-1. **모바일 앱 - 앱** 창에서 이전 단계에서 만든 iOS Datalert 앱을 선택합니다.
+1. **클라이언트 앱 - 앱** 창에서 이전 단계에서 만든 iOS Datalert 앱을 선택합니다.
 
 2. **앱** 창에서 **관리** > **할당**을 선택합니다.
 

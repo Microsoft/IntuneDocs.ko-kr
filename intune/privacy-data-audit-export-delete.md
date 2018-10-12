@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c646e134f6311e7c365fe38301a9015a752b553f
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313601"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028616"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune에서 개인 데이터 감사, 내보내기 또는 삭제
 
@@ -56,13 +56,13 @@ Intune 관리자는 감사 로그를 사용하여 개인 데이터와 관련된 
 
 ### <a name="delete-a-user-from-intune"></a>Intune에서 사용자 삭제
 
-Intune에서 최종 사용자의 개인 데이터를 삭제하려면 관리자가 [AAD(Azure Active Directory)에서 사용자를 삭제](https://docs.microsoft.com/en-us/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)해야 합니다. 사용자가 AAD에서 삭제되면(하드 삭제) Intune은 AAD에서 삭제 신호를 수신한 다음, Intune 서비스에서 해당 사용자의 모든 개인 데이터를 자동으로 삭제하기 시작합니다. 사용자의 정보는 제거 작업 후 30일 내에 Intune 서비스에서 삭제됩니다.
+Intune에서 최종 사용자의 개인 데이터를 삭제하려면 관리자가 [AAD(Azure Active Directory)에서 사용자를 삭제](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)해야 합니다. 사용자가 AAD에서 삭제되면(하드 삭제) Intune은 AAD에서 삭제 신호를 수신한 다음, Intune 서비스에서 해당 사용자의 모든 개인 데이터를 자동으로 삭제하기 시작합니다. 사용자의 정보는 제거 작업 후 30일 내에 Intune 서비스에서 삭제됩니다.
 
 ### <a name="reset-device-to-factory-settings"></a>장치를 초기 설정으로 다시 설정
 초기 설정으로 다시 설정하면 모든 회사 및 개인 데이터와 설정이 원래 초기 설정으로 복원됩니다. 다음 직원에게 장치를 제공하는 데 유용합니다. 사용자 파일, 사용자 설치 응용 프로그램 및 기본값이 아닌 설정이 제거되고, 이 데이터는 제거 작업 후 30일 내에 Intune 서비스에서 삭제됩니다.
 
 ### <a name="user-self-removal-from-intune-management"></a>Intune 관리 대상에서 사용자 자체 제외
-사용자는 관리자의 도움 없이 [Android, Apple 또는 Windows](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) 개인 장치를 Intune 관리 대상에서 제외할 수 있습니다.   
+사용자는 관리자의 도움 없이 [Android, Apple 또는 Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md) 개인 장치를 Intune 관리 대상에서 제외할 수 있습니다.   
 
 ### <a name="retire"></a>사용 중지
 **사용 중지** 작업은 회사 응용 프로그램과 같은 Intune 제공 데이터, Intune이 관리하는 앱 관련 데이터, 정책 설정 및 Intune을 통해 프로비전되는 이메일 프로필을 제거합니다. 이 작업은 장치에 사용자의 개인 데이터를 남깁니다.

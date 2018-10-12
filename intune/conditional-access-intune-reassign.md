@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4714b0bbe566589d970a5d959f1f361940e5701b
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027471"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187838"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Intune 클래식 포털에서 Azure 포털로 조건부 액세스 정책 다시 할당
 
@@ -179,6 +179,9 @@ Intune 클래식 포털에서 Exchange Online 정책의 일부로 Exchange Activ
 12. **새** 조건부 액세스 정책 블레이드에서 **정책 사용**을 설정한 다음 **만들기**를 클릭합니다.
 
     ![Intune 및 Azure 포털 간 사용하는 조건부 액세스 정책 UI 비교를 보여주는 이미지](./media/reassign-ca-17.png)
+
+> [!NOTE]
+> **장치 플랫폼**을 구성하는 경우 정책을 저장하는 작업이 "정책 구성이 지원되지 않습니다."라는 오류로 실패합니다. Exchange ActiveSync는 연결된 장치에서 사용 중인 플랫폼을 식별할 수 없습니다. 따라서 Exchange ActiveSync 장치에 대한 정책을 만들 때 특정 장치 플랫폼을 구성하도록 지원하지 않습니다.
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Intune 클래식 포털에서 조건부 액세스 정책 사용 안 함
 

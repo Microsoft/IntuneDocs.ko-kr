@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481124"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562870"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune의 Windows 10(이상)용 키오스크 설정
 
@@ -45,7 +45,7 @@ ms.locfileid: "39481124"
 #### <a name="single-full-screen-app-kiosks"></a>단일 전체 화면 앱 키오스크
 다음 설정을 입력합니다.
 
-- **UWP(유니버설 Windows 플랫폼) 앱 식별자**: 키오스크 앱의 **AUMID(응용 프로그램 사용자 모델 ID)** 를 입력합니다. 또는 [모바일 앱](apps-add.md)을 사용하여 추가한 기존 관리되는 앱을 선택합니다.
+- **UWP(유니버설 Windows 플랫폼) 앱 식별자**: 키오스크 앱의 **AUMID(응용 프로그램 사용자 모델 ID)** 를 입력합니다. 또는 [클라이언트 앱](apps-add.md)을 사용하여 추가한 기존 관리되는 앱을 선택합니다.
 
     [설치된 앱의 응용 프로그램 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
 
@@ -62,7 +62,7 @@ ms.locfileid: "39481124"
 다음 설정을 입력합니다.
 
 - **Win32 앱 추가**: Win32 앱은 기존의 데스크톱 앱입니다. **앱 이름** 및 **식별자**를 입력합니다. **식별자**는 장치와 관련하여 실행 파일의 정규화된 경로 이름입니다.
-- **관리되는 앱 추가**: [Intune의 모바일 앱](apps-add.md)을 사용하여 추가한 기존 관리되는 앱을 선택합니다.
+- **관리되는 앱 추가**: [Intune의 클라이언트 앱](apps-add.md)을 사용하여 추가한 기존 관리되는 앱을 선택합니다.
 - **AUMID로 앱 추가**: [앱의 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(UWP 앱)를 입력합니다.
 - **작업 표시줄**: 키오스크에서 작업 표시줄을 **사용**(표시)하도록 선택하거나 **구성되지 않음**(숨김)으로 유지합니다.
 - **시작 메뉴 레이아웃**: 시작 메뉴에 앱의 순서를 포함하여 앱이 표시되는 방법을 설명하는 XML 파일을 입력합니다. [시작 레이아웃 사용자 지정 및 내보내기](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)에는 몇 가지 지침 및 샘플 XML이 제공됩니다.
@@ -75,7 +75,7 @@ ms.locfileid: "39481124"
 
 ## <a name="kiosk-web-browser-settings"></a>키오스크 웹 브라우저 설정
 
-이러한 설정은 키오스크에서 웹 브라우저 앱을 제어합니다. [모바일 앱](apps-add.md)을 사용하여 키오스크 장치에 웹 브라우저 앱을 배포했는지 확인합니다.
+이러한 설정은 키오스크에서 웹 브라우저 앱을 제어합니다. [클라이언트 앱](apps-add.md)을 사용하여 키오스크 장치에 웹 브라우저 앱을 배포했는지 확인합니다.
 
 1. 다음 설정을 입력합니다.
 
@@ -115,7 +115,7 @@ Windows Holographic for Business 장치에서 이러한 장치가 단일 앱 키
 
 다음 설정을 입력합니다.
 
-- **관리되는 앱 추가**: [Intune의 모바일 앱](apps-add.md)을 사용하여 추가한 기존 관리되는 앱을 선택합니다.
+- **관리되는 앱 추가**: [Intune의 클라이언트 앱](apps-add.md)을 사용하여 추가한 기존 관리되는 앱을 선택합니다.
 - **AUMID로 앱 추가**: [앱의 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(UWP 앱)를 입력합니다.
 - **시작 메뉴 레이아웃**: 시작 메뉴에 앱의 순서를 포함하여 앱이 표시되는 방법을 설명하는 XML 파일을 입력합니다. [시작 레이아웃 사용자 지정 및 내보내기](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens)는 몇 가지 지침을 제공하며, Windows Holographic for Business 장치에 대한 특정 XML 파일을 포함합니다.
 - **사용자 계정 유형**: 추가하는 앱을 사용할 수 있는 사용자 계정을 하나 이상 추가합니다. 지원되는 옵션은 다음과 같습니다. 

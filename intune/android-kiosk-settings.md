@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329386"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602183"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune에서 Android 장치에 대한 키오스크 설정
 
@@ -27,7 +27,7 @@ ms.locfileid: "43329386"
 
 키오스크 장치의 제한 프로필이 **키오스크 모드** = **단일 앱 키오스크**로 설정된 경우 사용자는 단일 앱에만 액세스할 수 있습니다. 이 모드로 구성된 장치가 시작되면 특정 앱이 시작됩니다. 사용자가 새 앱을 열거나 실행 중인 앱을 변경하는 것을 제한합니다.
 
-1. 키오스크 장치에서 사용할 앱이 [장치에 배포](apps-deploy.md)되어 있고 키오스크 장치용으로 만든 장치 그룹에 앱을 할당했는지 확인합니다.
+1. 키오스크 장치에서 사용하려는 앱이 [장치에 배포](apps-deploy.md)되어 있고, 키오스크 장치용으로 만든 장치 그룹에 앱을 할당했는지 확인합니다.
 2. [Intune 포털](https://portal.azure.com)로 이동하여 **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. **프로필 만들기** 블레이드에서 다음 필드를 설정합니다.
      - **Name**
@@ -51,7 +51,7 @@ ms.locfileid: "43329386"
 2. [키오스크 모드에서 사용할 수 있는 앱 추가 및 할당](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (선택 사항) [키오스크 모드에서 사용할 수 있는 웹 링크 추가](#add-web-links-that-can-be-used-in-kiosk-mode)
 
-### <a name="import-and-deply-the-managed-home-screen-app"></a>관리되는 홈 화면 앱을 가져오기 및 배포
+### <a name="import-and-deploy-the-managed-home-screen-app"></a>관리되는 홈 화면 앱을 가져오기 및 배포
 
 1. [Google Play에서 관리되는 홈 화면 페이지](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise)로 이동하여 다른 관리되는 Google Play 앱에 사용하는 동일한 계정으로 로그인합니다.
 2. **승인**을 선택합니다.
@@ -59,6 +59,9 @@ ms.locfileid: "43329386"
 4. **앱** > **관리되는 홈 화면** > **할당** > **그룹 추가**를 선택합니다.
 5. **할당 유형** 아래에서 **필수**를 선택합니다.
 6. **그룹 포함** > **포함할 그룹 선택** > 키오스크 장치용으로 만든 장치 그룹 선택 > **선택** > **확인** > **확인** > **저장**을 선택합니다.
+
+> [!NOTE]
+> 관리되는 홈 화면 앱을 다중 앱 키오스크 프로필에 추가하는 경우 아이콘이 추가됩니다. 하지만 아이콘을 선택할 경우에는 아무 일도 발생하지 않습니다. 결과적으로 관리되는 홈 화면 앱을 다중 앱 키오스크 프로필에 추가하지 않아도 됩니다.
 
 ### <a name="add-and-assign-apps-that-can-be-used-in-kiosk-mode"></a>키오스크 모드에서 사용할 수 있는 앱 추가 및 할당
 
@@ -76,7 +79,7 @@ ms.locfileid: "43329386"
 3. **구성**을 선택하고 필요한 정보를 제공합니다. 로고 이미지는 웹 사이트의 favicon.ico에서 자동으로 검색되므로 추가할 필요가 없습니다.
 4. **확인** > **추가**를 선택합니다.
 
-[모바일 앱](apps-add.md)을 사용하여 키오스크 장치에 웹 브라우저 앱을 배포했는지 확인합니다.
+키오스크 장치에 웹앱을 배포했는지 확인합니다. 자세한 내용은 [Microsoft Intune에 웹앱 추가](web-app.md)를 참조하세요.
 
 ### <a name="create-a-multi-app-kiosk-profile"></a>다중 앱 키오스크 프로필 만들기
 

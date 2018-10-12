@@ -1,61 +1,123 @@
 ---
-title: Microsoft Intune의 30일 무료 평가판 등록
-titleSuffix: Microsoft Intune
-description: Microsoft Intune의 30일 무료 평가판에 등록하는 방법에 대해 알아봅니다.
+title: 빠른 시작 - Microsoft Intune 평가판 체험
+titlesuffix: ''
+description: 이 빠른 시작에서는 평가판 구독을 만들고, 지원되는 구성 및 네트워킹 요구 사항을 이해하고, 필요에 따라 도메인 이름을 구성해 보겠습니다.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/04/2018
-ms.topic: conceptual
+ms.date: 09/13/2018
+ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
+ms.reviewer: ''
 ms.suite: ems
-ms.custom: get-started
-ms.openlocfilehash: 6492b757376c95c366d45a63b05f2ec60bdd791b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.custom: intune-azure
+ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
+ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254125"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46581396"
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune 무료 평가판 등록
+# <a name="quickstart-try-microsoft-intune-for-free"></a>빠른 시작: Microsoft Intune 평가판 체험 
 
+Microsoft Intune을 사용하면 장치 및 앱을 관리하여 직원의 회사 데이터를 보호할 수 있습니다. 이 빠른 시작에서는 평가판 구독을 만들고 테스트 환경에서 Intune을 사용해 봅니다.
 
-이 문서에서는 Azure Portal용 Intune 독립 실행형 평가판에 등록하는 과정을 안내합니다.
+Intune은 Microsoft Azure portal을 통해 관리되는 안전한 클라우드 기반 서비스에서 MDM(모바일 장치 관리) 및 MAM(모바일 앱 관리)을 제공합니다. Intune을 사용하면 직원의 회사 리소스(데이터, 장치 및 앱)가 올바르게 구성, 액세스 및 업데이트되고 회사의 준수 정책 및 요구 사항을 충족합니다. 
 
-1. [Intune 등록](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) 페이지를 방문하여 평가판 구독에 등록하는 양식을 작성합니다.
-2. 회사 또는 학교 계정이 있고 Intune 평가판에 이 계정을 사용하려면 대신 [이 로그인 지침](/intune/account-sign-up)을 따르세요.
+## <a name="prerequisites"></a>전제 조건
+Microsoft Intune을 설정하기 전에, 다음 요구 사항을 검토하세요.
 
-* 대부분의 IT 작업자 및 사용자가 여러분과 다른 로캘에 있는 경우 **회사 위치는 어디입니까?** 아래에서 로캘을 선택할 수 있습니다.
+   - [지원되는 운영 체제 및 브라우저](supported-devices-browsers.md) 
+   - [네트워크 구성 요구 사항 및 대역폭](network-bandwidth-use.md)
 
-2. 등록 프로세스가 끝나면 새 계정 정보가 포함된 메시지가 제공됩니다. <br/> 
+## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune 무료 평가판 등록
 
-![계정 정보 이미지](./media/2-end-of-sign-up-process.png) <br/>
+Intune 평가판은 30일 동안 무료로 사용할 수 있습니다. 회사 또는 학교 계정이 이미 있는 경우 해당 계정으로 **로그인**하고 구독에 Intune을 추가합니다. 그렇지 않은 경우 조직에서 Intune을 사용하기 위한 새 계정을 **등록**해야 합니다.
 
-이제 **준비가 되었습니다.** 를 클릭하면 테스트 환경에 사용자를 추가할 수 있는 Office 365 관리 센터로 이동합니다. <br/><br/>그러나 Intune Azure Portal로 직접 이동하려면 새 브라우저 창을 열고 주소 표시줄에 **https://portal.azure.com** 을 입력합니다. 그러면 제공된 자격 증명을 사용하여 로그인할 수 있는 Azure 로그인 페이지로 이동합니다. Intune 평가판에 로그인할 때마다 이 주소를 사용합니다. <br/> ![Azure Portal 로그인 페이지 이미지](./media/azure-portal-signin.png)
+> [!IMPORTANT]
+> 새 계정을 등록한 후에는 기존 회사 또는 학교 계정을 결합할 수 없습니다.
 
-Intune [Azure portal](https://portal.azure.com)에 처음으로 로그온한 경우 Azure 대시보드에 Intune이 표시되지 않을 수 있습니다. Azure 대시보드에 Intune 서비스를 추가하려면 다음을 수행합니다.
-1. 대시보드의 왼쪽에 있는 Azure 서비스 목록에서 **모든 서비스 >** 를 선택하고 검색 상자에 **Intune**을 입력합니다.
-2. 목록에서 **Intune**을 선택하고, 별표를 선택하여 서비스 목록에 서비스를 추가합니다.<br/> ![Azure Portal 내에서 Microsoft Intune 선택 이미지](./media/azure-add-intune1.png)
-3. 그런 다음 서비스 목록에서 **Intune**을 선택하면 Intune 대시보드가 열립니다.
+1. [Microsoft Intune 평가판](https://go.microsoft.com/fwlink/?linkid=2019088) 페이지로 이동하여 양식을 작성합니다.
 
-평가판에 등록하는 경우 등록 과정 중에 제공한 메일 주소로 계정 정보가 포함된 메일 메시지도 제공됩니다. 이 전자 메일을 통해 평가판이 활성화된 것을 확인합니다.
+    ![Microsoft Intune 평가판 계정 등록 웹 페이지의 스크린샷](./media/account-sign-up-site-full-browser.png)
 
-## <a name="keeping-the-admin-experiences-straight"></a>관리자 환경 계속 유지
+    대부분의 IT 작업 및 사용자가 여러분과 다른 로캘에 있는 경우 **국가 또는 지역**에서 해당 로캘을 선택할 수 있습니다. Azure는 지역 정보를 사용하여 적절한 서비스를 제공합니다. 이 설정은 나중에 변경할 수 없습니다.
+
+2. 회사 이름 뒤에 **.onmicrosoft.com**을 붙여서 계정을 만듭니다. 
+
+    ![Microsoft Intune 평가판 계정 등록 웹 페이지의 스크린샷](./media/account-sign-up-site-user-id.png)
+
+    **.onmicrosoft.com** 없이 사용하고 싶은 조직의 고유한 사용자 지정 도메인이 있는 경우 이 문서의 뒷부분에 나오는 Office 365 관리 포털에서 변경할 수 있습니다.
+
+3. 등록 프로세스가 끝나면 새 계정 정보를 확인합니다.
+
+    ![계정 정보 이미지](./media/intune-end-of-sign-up-process.png) 
+
+## <a name="sign-in-to-the-azure-portal"></a>Azure Portal에 로그인
+
+1. 새 브라우저 창을 열고 주소 표시줄에 **https://portal.azure.com**을 입력합니다. 
+2. 위의 단계에서 제공된 자격 증명을 사용하여 로그인합니다.
+
+    ![Azure Portal 로그인 페이지의 이미지](./media/azure-portal-signin.png)
+
+3. Azure Portal에서 Microsoft Intune을 보려면 페이지 왼쪽에 있는 사이드바에서 **모든 서비스**를 선택합니다.
+4. 필터 상자에서 **Microsoft Intune**을 검색하여 선택합니다.
+5. **별**을 선택하여 Intune을 자주 사용하는 서비스 목록 맨 아래에 추가하고 Intune 대시보드를 엽니다.
+
+평가판에 등록하는 경우 등록 과정 중에 입력한 이메일 주소로 계정 정보가 포함된 이메일 메시지가 전송됩니다. 이 전자 메일을 통해 평가판이 활성화된 것을 확인합니다.
+
+## <a name="set-the-mdm-authority-to-intune"></a>MDM 기관을 Intune으로 설정
+
+MDM(모바일 장치 관리) 기관 설정에 따라 장치를 관리하는 방법이 결정됩니다. IT 관리자가 MDM 기관을 설정해야 사용자가 관리를 위해 장치를 등록할 수 있습니다.
+
+MDM 기관을 Intune으로 설정하려면 다음 단계를 수행합니다.
+
+1. 새 브라우저 창을 열고 주소 표시줄에 **https://portal.azure.com**을 입력합니다. 
+2. **모든 서비스** > **Microsoft Intune**을 선택합니다.
+3. 주황색 배너를 선택하여 **모바일 장치 관리 기관** 설정을 엽니다. 
+
+    > [!NOTE]
+    > 주황색 배너는 MDM 기관을 아직 설정하지 않은 경우만 표시됩니다.
+
+4. **모바일 장치 관리 기관** 아래에서 MDM 기관을 **Intune MDM 기관**으로 설정합니다.
+
+## <a name="configure-your-custom-domain-name-optional"></a>사용자 지정 도메인 이름 구성(선택 사항)
+
+위에서 언급했듯이, **.onmicrosoft.com** 없이 사용하고 싶은 조직의 고유한 사용자 지정 도메인이 있는 경우 Office 365 관리 포털에서 변경할 수 있습니다. 사용자 지정 도메인 이름을 추가, 확인 및 구성합니다.  
+
+> [!IMPORTANT]
+> 초기 **onmicrosoft.com** 도메인 이름을 변경하거나 제거할 수 없습니다. 비즈니스 ID가 명확히 유지되도록 Intune에서 사용할 사용자 지정 도메인 이름을 추가, 확인 또는 제거할 수 있습니다.
+
+1. [Office 365 관리 포털](https://portal.office.com/Admin/Default.aspx)로 이동한 후 관리자 계정을 사용하여 로그인합니다.
+
+2. 탐색 창에서 **설치** > **도메인** > **도메인 추가**를 선택합니다.
+
+3. 사용자 지정 도메인 이름을 입력합니다. **다음**을 선택합니다.
+
+   ![설정 > 도메인이 선택되고 새 도메인 이름이 추가된 Office 365 관리 센터 스크린샷](./media/domain-custom-add.png)
+
+4. 이전 단계에서 입력한 도메인의 소유자인지 확인합니다. 
+    
+    **이메일을 통해 코드 전송**을 선택하면 도메인의 등록된 연락처로 이메일이 전송됩니다. 이메일을 받은 후, 코드를 복사하여 **여기에 확인 코드 입력** 필드에 입력합니다. 확인 코드가 일치하면 도메인이 테넌트에 추가됩니다. 익숙하지 않은 이메일이 표시될 수 있습니다. 일부 등록 기관은 도메인 등록 시 입력된 이메일 주소를 숨깁니다.
+
+   ![Office 365 관리 센터 - 추가되는 도메인 이름 확인 스크린샷](./media/domain-custom-verify.png)
+
+   > [!NOTE]
+   > TXT 레코드 확인 세부 정보는 [Office 365에 대한 DNS 호스팅 공급자에서 DNS 레코드 만들기](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166)를 참조하세요.
+
+## <a name="admin-experiences"></a>관리자 환경
 
 사용할 수 있는 포털이 두 개 있습니다.
-- [Intune의 기능](what-is-intune.md)을 탐색할 수 있는 Azure의 Intune 대시보드([portal.azure.com](https://portal.azure.com))입니다. 일반적으로 Intune 대시보드에서 작업을 수행합니다.
-- Azure Active Directory를 사용하지 않는 경우 사용자를 추가 및 관리할 수 있는Office 365 관리 센터([portal.office.com](https://portal.office.com))입니다. 또한 대금 청구 및 지원을 포함하여 계정의 다른 측면을 관리할 수 있습니다.
+- Azure의 Intune 대시보드([portal.azure.com](https://portal.azure.com))에서는 [Intune의 기능](what-is-intune.md)을 탐색할 수 있습니다. 일반적으로 Intune 대시보드에서 작업을 수행합니다.
+- Azure Active Directory를 사용하지 않는 경우 Office 365 관리 센터([portal.office.com](https://portal.office.com))에서 사용자를 추가 및 관리할 수 있습니다. 또한 대금 청구 및 지원을 포함하여 계정의 다른 측면을 관리할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-### <a name="integration-with-other-products"></a>다른 제품과의 통합
-Intune에서 Azure Active Directory 사용자 계정을 사용하는 방법을 자세히 알아봅니다.
-- [ID 요구 사항](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [디렉터리 동기화 요구 사항](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [다단계 인증 요구 사항](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+이 빠른 시작에서는 평가판 구독을 만들어서 테스트 환경에서 Intune을 사용하고 필요에 따라 사용자 지정 도메인을 구성했습니다. Microsoft Intune에 대한 자세한 내용은 사용자를 추가하고 라이선스를 할당하는 방법에 대한 다음 빠른 시작을 참조하세요.
 
-[System Center Configuration Manager와 함께 Intune](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)를 사용하는 방법에 대해 자세히 알아보기
+> [!div class="nextstepaction"]
+> [사용자 만들기](get-started-users.md)

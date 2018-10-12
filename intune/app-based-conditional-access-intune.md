@@ -14,12 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 317a1fa5fd83cbfe95afa51894466f93131bd278
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34561976"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562768"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune을 사용하는 앱 기반 조건부 액세스
 
@@ -27,7 +27,7 @@ ms.locfileid: "34561976"
 
 [Intune 앱 보호 정책](app-protection-policy.md)을 사용하면 Intune에 등록된 장치에서 회사 데이터를 보호하는 데 도움이 됩니다. Intune에서 관리를 위해 등록되지 않은 직원 소유 장치에서 앱 보호 정책을 사용할 수도 있습니다. 이 경우 회사에서 장치를 관리하지 않더라도 여전히 회사 데이터와 리소스가 보호되고 있음을 확인해야 합니다.
 
-앱 기반 조건부 액세스 및 모바일 앱 관리는 Intune 앱 보호 정책을 지원하는 모바일 앱만 Exchange Online 및 기타 Office 365 서비스에 액세스할 수 있도록 함으로써 보안 계층을 추가합니다.
+앱 기반 조건부 액세스 및 클라이언트 앱 관리는 Intune 앱 보호 정책을 지원하는 클라이언트 앱만 Exchange Online 및 기타 Office 365 서비스에 액세스할 수 있도록 함으로써 보안 계층을 추가합니다.
 
 > [!NOTE]
 > 관리되는 앱은 앱 보호 정책이 적용되어 있으며 Intune을 통해 관리할 수 있는 앱입니다.

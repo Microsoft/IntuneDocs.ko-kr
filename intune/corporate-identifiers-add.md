@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e46951be5048e0bcf2af5b2d4320744f6d6e47e8
+ms.sourcegitcommit: 3785e506ef5fbc474b3e09e87412d4b673bbdbb8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905872"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46541958"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>회사 소유의 장치 식별
 
@@ -33,7 +33,7 @@ Intune 관리자로서 사용자는 장치를 회사 소유로 식별하여 관�
 - [장치 등록 관리자](device-enrollment-manager-enroll.md) 계정을 사용하여 등록됨(모든 플랫폼)
 - Apple [장비 등록 프로그램](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) 또는 [Apple Configurator](apple-configurator-enroll-ios.md)를 사용하여 등록됨(iOS만 해당)
 - IMEI(International Mobile Equipment Identifier) 번호(IMEI 번호가 있는 모든 플랫폼) 또는 일련 번호(iOS 및 Android)를 사용하여 [등록 전에 회사 소유로 식별됨](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- Azure Active Directory 또는 Enterprise Mobility + Security에 Windows 10 Enterprise 장치로 등록됨
+- Windows 10 Enterprise 장치로 Azure Active Directory에 조인
 - [장치 속성 목록](#change-device-ownership)에서 회사로 설정
 
 등록 후 **개인**과 **회사** 사이에서 [소유권 설정을 변경](#change-device-ownership)할 수 있습니다.

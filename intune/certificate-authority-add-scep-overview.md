@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee5a39ee8a146fbc6a85a9f4438b8e14a408a735
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 772c800e75f52d9826992bf0adfbfdcf3faba107
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321729"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46329983"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP를 사용하여 Intune에 파트너 인증 기관 추가
 
@@ -123,6 +123,7 @@ Azure AD 앱을 등록하는 데 필요한 권한이 있는지 확인합니다. 
 다음 타사 인증 기관은 Intune을 지원합니다.
 
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [EJBCA GitHub 오픈 소스 버전](https://github.com/agerbergt/intune-ejbca-connector)
 
 Intune과 제품을 통합하는 데 관심이 있는 타사 CA인 경우 API 지침을 검토합니다.
 

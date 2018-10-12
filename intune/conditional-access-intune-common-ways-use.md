@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: ee14a7983451ae37113462e1c8f0aac5785f2f09
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253612"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187872"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune에서 조건부 액세스를 사용하는 일반적인 방법이란?
 
@@ -45,6 +45,13 @@ Exchange Online 및 기타 Office 365 제품용 장치 기반 조건부 액세�
 -   [Intune 장치 준수](device-compliance.md)에 대해 자세히 확인해 보세요.
 
 -   [Intune에서 조건부 액세스를 사용하여 전자 메일, Office 365 및 기타 서비스 보호](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)에 대해 자세히 알아보세요.
+
+> [!NOTE]
+> Android 장치에서 Sharepoint Online에 대해 장치 기반 액세스를 사용하면 사용자는 다음과 같이 등록된 장치에서 **브라우저 액세스 사용** 옵션을 사용해야 합니다.
+> 1. **회사 포털 앱**을 시작합니다.
+> 2. 세 개의 점(...) 또는 하드웨어 메뉴 단추에서 **설정** 페이지로 이동합니다.
+> 3. **브라우저 액세스 사용** 단추를 누릅니다. 
+> 4. Chrome 브라우저에서, Office 365에서 로그아웃하고 Chrome을 다시 시작합니다.
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Exchange 온-프레미스에 대한 조건부 액세스
 

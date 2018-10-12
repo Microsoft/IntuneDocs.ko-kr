@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 079b27c73a466ae19dad950564ba0d56d8e20f8d
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: c3ccd2db88df4e5b7a51e0aa2446a99f33256432
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031272"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028718"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -49,9 +49,11 @@ Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발�
 
 이제 Intune 앱 SDK Xamarin 바인딩이 내장된 Xamarin 앱에서는 Intune 모바일 장치 관리(MDM)가 등록된 장치 및 등록되지 않은 장치 모두에서 Intune 앱 보호 정책을 받을 수 있습니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
 
 [사용 약관](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)을 검토합니다. 기록을 위해 사용 조건의 사본을 인쇄하여 보관하세요. Intune 앱 SDK Xamarin 바인딩을 다운로드하여 이러한 사용 조건에 동의합니다. 동의하지 않는 경우 소프트웨어를 사용하지 마세요.
+
+SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) 및 조건부 시작 시나리오를 위한 [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)이 필요하며, 이 경우 앱에 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)를 구성해야 합니다. 구성 값은 AndroidManifest 메타데이터를 통해 SDK에 전달됩니다. [앱에 대한 ADAL 구성](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) 설명서를 읽어보세요.
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS 모바일 앱에서 Intune 앱 보호 정책을 사용하도록 설정
 1. [Microsoft.Intune.MAM.Xamarin.iOS NuGet 패키지](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS)를 Xamarin.iOS 프로젝트에 추가합니다.
@@ -108,7 +110,7 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 > 이 작업은 Visual Studio가 Intellisense 자동 완성을 위해 사용하는 종속성을 다시 작성하기 때문에 Intellisense가 변경 내용을 올바로 인식하도록 처음 Remapper를 실행한 후 Visual Studio를 다시 시작해야 할 수 있습니다. 
 
 
-## <a name="support"></a>지원
+## <a name="support"></a>Support
 
 앱에 구성 요소를 빌드하기 위한 기본 단계를 완료했습니다. 이제 Xamarin.android 샘플 앱에 포함된 단계를 수행할 수 있습니다. Xamarin.Forms의 샘플과 Android의 샘플이 제공되어 있습니다.
 
@@ -117,12 +119,22 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 다음은 Xamarin 기반 Android LOB 앱을 해당 장치에서 Intune 보호된 사용자만 사용할 수 있는지 확인하기 위한 지침입니다. 
 
 ### <a name="general-requirements"></a>일반 요구 사항
-* Intune SDK 팀은 앱의 응용 프로그램 ID를 필요로 합니다. 이것은 **응용 프로그램 ID** 열의 **모든 응용 프로그램** 아래의 [Azure Portal](https://portal.azure.com/)에서 확인할 수 있습니다. Intune SDK 팀에는 이메일(msintuneappsdk@microsoft.com)을 통해 연락하는 것이 좋습니다.
-     
+* 앱의 응용 프로그램 ID를 등록합니다. 이것은 **응용 프로그램 ID** 열의 **모든 응용 프로그램** 아래의 [Azure Portal](https://portal.azure.com/)에서 확인할 수 있습니다. Azure Portal에서:
+1.  **Azure Active Directory** 블레이드로 이동합니다.
+2.  응용 프로그램의 **앱 등록** 설정을 선택합니다.
+3.  **API 액세스** 제목 아래의 **설정**에서 **필수 사용 권한**을 선택합니다. 
+4.  **+ 추가**를 클릭합니다.
+5.  **API 선택**을 클릭합니다. 
+6.  검색 상자에 **Microsoft 모바일 응용 프로그램 관리**를 입력합니다.
+7.  API 목록에서 **Microsoft 모바일 응용 프로그램 관리**를 선택하고 선택을 클릭합니다.
+8.  **사용자의 앱 관리 데이터 읽기 및 쓰기**를 선택합니다.
+9.  **완료**를 클릭합니다.
+10. **권한 부여**, **예**를 차례로 클릭합니다. 
+    
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK 사용
 이러한 지침은 최종 사용자 장치에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱에만 적용됩니다.
 
-1. [Android 가이드용 Intune SDK](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)에 정의된 단계에 따라 ADAL을 구성합니다.
+1. [Android 가이드용 Intune SDK](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)에 정의된 단계에 따라 ADAL을 구성합니다.
 > [!NOTE] 
 > “클라이언트 ID”라는 용어는 앱에 연결된 Azure Portal의 “응용 프로그램 ID”라는 용어와 같습니다. 
 * SSO를 사용하려면 “일반적인 ADAL 구성” #2가 필요합니다.

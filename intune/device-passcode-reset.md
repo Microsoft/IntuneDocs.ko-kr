@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 09/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,45 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
+ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039304"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46300462"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune에서 장치 암호 다시 설정 또는 제거
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-장치에 새 암호를 만들려면 **암호 제거** 작업을 사용합니다. 이 작업은 회사 프로필에 대해서만 PIN 다시 설정을 요구합니다. Android 회사 프로필에서는 장치 PIN 다시 설정이 지원되지 않습니다.
+이 문서에서는 Android 엔터프라이즈(이전에는 Android for Work 또는 AfW라고 함) 장치에서의 회사 프로필 암호 재설정과 함께 장치 수준 암호 재설정에 대해 설명합니다. 각각에 대한 요구 사항이 달라질 수 있으므로 이 구분에 대해 알아두는 것이 중요합니다. 장치 수준 암호 재설정은 전체 장치에 대한 암호를 다시 설정합니다. 회사 프로필 암호 재설정은 Android 엔터프라이즈 장치에서 사용자의 회사 프로필에 대한 암호만 다시 설정합니다.
 
-## <a name="work-profile-pin-reset-supported-platforms"></a>회사 프로필 PIN 다시 설정이 지원되는 플랫폼
+## <a name="supported-platforms-for-device-level-passcode-reset"></a>장치 수준 암호 재설정을 위해 지원되는 플랫폼
 
-- 회사 프로필에 등록된 Android 장치 버전 8.0 이상 
-- 버전 6.0 이하의 Android 장치
-- Android 엔터프라이즈 키오스크 장치
-- iOS 
-     
-## <a name="unsupported-platforms"></a>지원되지 않는 플랫폼
+| 플랫폼 | 지원 여부 |
+| ---- | ---- |
+| 버전 6.x 이하의 Android 장치 | 예 |
+| 키오스크 모드의 Android 엔터프라이즈 장치 | 예 |
+| iOS 장치 | 예 |
+| 회사 프로필에 등록된 버전 7.0 이하의 Android 장치 | 아니요 |
+| 버전 7.0 이상의 Android 장치 | 아니요 |
+| macOS | 아니요 |
+| Windows | 아니요 |
 
-- 작업 프로필에 등록된 Android 장치 버전 7.0 이하
-- 버전 7.0 이상의 Android 장치
-- macOS
-- Windows
+Android 장치의 경우 사실상 해당 장치 수준 암호 재설정은 6.x 이하를 실행하는 장치 또는 키오스크 모드에서 실행되는 Android 엔터프라이즈 장치에서만 지원됩니다. Google이 장치 관리자가 부여한 앱 내에서 Android 7 장치의 암호 재설정에 대한 지원을 제거했으며, 모든 MDM 공급 업체에 적용되었기 때문입니다.
+
+## <a name="supported-platforms-for-android-enterprise-work-profile-passcode-reset"></a>Android 엔터프라이즈 회사 프로필 암호 재설정에 대해 지원되는 플랫폼
+
+| 플랫폼 | 지원 여부 |
+| ---- | ---- |
+| 회사 프로필에 등록되고 8.0 이상 버전을 실행 중인 Android 엔터프라이즈 장치 | 예 |
+| 회사 프로필에 등록되고 7.x 이하 버전을 실행 중인 Android 엔터프라이즈 장치 | 아니요 |
+| 7.x 이하 버전을 실행 중인 Android 장치 | 아니요 |
+| iOS | 아니요 |
+| macOS | 아니요 |
+| iOS | 아니요 |
+
+새 회사 프로필 암호를 만들려면 암호 재설정 작업을 사용합니다. 이 작업은 암호 재설정 메시지를 표시하고 회사 프로필에만 사용할 새로운 임시 암호를 만듭니다. 
 
 ## <a name="reset-a-passcode"></a>암호 재설정
 
@@ -47,15 +60,16 @@ ms.locfileid: "39039304"
 3. **장치**를 선택한 다음, **모든 장치**를 선택합니다.
 4. 관리하는 장치 목록에서 장치를 선택하고 **자세히...** 를 선택합니다. 그런 다음, **암호 제거** 장치 원격 작업을 선택합니다.
 
-## <a name="resetting-android-work-profile-passcodes"></a>Android 회사 프로필 암호 다시 설정
+## <a name="reset-android-work-profile-passcodes"></a>Android 회사 프로필 암호 다시 설정
 
-지원되는 Android 회사 프로필 장치는 최종 사용자에 대한 관리되는 새 프로필 잠금 해제 암호 또는 관리되는 프로필 질문을 수신합니다. 
+회사 프로필에 등록된 지원되는 Android 엔터프라이즈 장치는 최종 사용자에 대한 관리되는 새 프로필 잠금 해제 암호 또는 관리되는 프로필 질문을 수신합니다.
 
-Android 8.0 회사 프로필 장치의 경우 최종 사용자는 등록이 완료된 후 바로 암호 재설정을 활성화하라는 알림을 받습니다. 작업 프로필 암호가 필요하고 설정된 경우 알림이 표시됩니다. 암호를 입력하면 알림은 해제됩니다.
+8.x 이상 버전을 실행 중이고 회사 프로필에 등록된 Android 엔터프라이즈 장치의 경우 등록이 완료된 직후에 재설정된 암호를 활성화한다는 알림이 최종 사용자에게 표시됩니다. 회사 프로필 암호가 필요하고 설정된 경우 알림이 표시됩니다. 암호를 입력하면 알림은 해제됩니다.
 
-## <a name="resetting-ios-passcodes"></a>iOS 암호 다시 설정
 
-iOS 장치에서 암호가 제거됩니다. 설정된 암호 준수 정책이 있는 경우 장치의 설정에서 새 암호를 설정하라는 메시지가 사용자에게 나타납니다. 
+## <a name="remove-ios-passcodes"></a>iOS 암호 제거
+
+다시 설정하는 대신 iOS 장치에서 암호가 제거됩니다. 암호 준수 정책이 설정되어 있는 경우 장치는 설정에서 새 암호를 설정하라는 메시지를 사용자에게 표시합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

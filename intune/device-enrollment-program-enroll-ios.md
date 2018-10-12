@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27995fb643e4373e2fa6a34c7147c69905f9ccc0
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 841cfdeea1d33876c1b678a531c88663aea3759e
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312647"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403598"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 장치 등록 프로그램을 통해 iOS 장치를 자동으로 등록
 
@@ -153,7 +153,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
      > [!NOTE]
      > 감독 없이 등록된 장치는 Apple Configurator를 사용하여 감독으로만 다시 설정할 수 있습니다. 이러한 방식으로 장치를 다시 설정하려면 iOS 장치를 Mac에 USB 케이블로 연결해야 합니다. 이에 대해 [Apple Configurator 문서](http://help.apple.com/configurator/mac/2.3)에서 자세히 알아보세요.
 
-9. 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할지 여부를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 장치 등록 후 장치를 초기화하지 않고는 이 설정을 변경할 수 없습니다. 이러한 장치는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
+9. 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할지 여부를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 장치를 등록한 후에 이 설정을 변경하려면 장치를 초기화해야 합니다. 이러한 장치는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
 
 10. 이 프로필을 사용하는 장치가 **컴퓨터와 동기화**할 수 있도록 할지 여부를 선택합니다. **인증서로 Apple Configurator 허용**을 선택한 경우 **Apple Configurator 인증서** 아래에서 인증서를 선택해야 합니다.
 
@@ -220,7 +220,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 2. **기본 프로필 설정**을 선택하고 드롭다운 목록에서 프로필을 선택한 다음 **저장**을 선택합니다. 이 프로필은 토큰에 등록하는 모든 장치에 적용됩니다.
 
 ## <a name="distribute-devices"></a>장치 배포
-Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 DEP 장치를 등록할 수 있는 프로필을 할당했습니다. 이제 사용자에게 장치를 배포할 수 있습니다. 사용자 선호도가 있는 장치의 경우 각 사용자에게 Intune 라이선스를 할당해야 합니다. 사용자 선호도를 사용하지 않는 장치에는 장치 라이선스가 필요합니다. 활성화된 장치는 장치가 초기화될 때까지 등록 프로필을 적용할 수 없습니다.
+Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 DEP 장치를 등록할 수 있는 프로필을 할당했습니다. 이제 사용자에게 장치를 배포할 수 있습니다. 사용자 선호도가 있는 장치의 경우 각 사용자에게 Intune 라이선스를 할당해야 합니다. 사용자 선호도를 사용하지 않는 장치에는 장치 라이선스가 필요합니다. 활성화된 장치는 장치를 초기화할 때까지 등록 프로필을 적용할 수 없습니다.
 
 [장비 등록 프로그램을 통해 Intune에서 iOS 장치 등록](/intune-user-help/enroll-your-device-dep-ios)을 참조하세요.
 

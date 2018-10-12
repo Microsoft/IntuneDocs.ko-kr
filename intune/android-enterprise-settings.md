@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312899"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119106"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune에서 Android 엔터프라이즈 키오스크 설정
 
@@ -45,9 +45,9 @@ Android 키오스크 프로필은 다음 구성 설정을 지원합니다. 프�
 - **알 수 없는 소스에서 설치 허용**: **허용**을 선택하면 사용자가 알 수 없는 소스에서 설치할 수 있습니다.
 - **시스템 업데이트**: 장치가 무선 업데이트를 통해 처리하는 방법을 정의하는 옵션을 선택합니다.
     - **장치 기본값**: 장치의 기본 설정을 사용합니다.
-    - **자동**: 업데이트가 자동으로 설치됩니다.
-    - **연기**: 업데이트 이후 날짜까지 연기됩니다.
-    - **유지 관리 기간**: 사용자가 유지 관리 기간에 업데이트를 승인하도록 메시지가 표시됩니다.
+    - **자동**: 업데이트가 사용자 상호 작용 없이 자동으로 설치됩니다. 이 정책을 설정하면 즉시 보류 중인 모든 업데이트가 설치됩니다.
+    - **연기**: 업데이트가 30일 동안 연기됩니다. 30일의 끝에 사용자에게 Android에서 업데이트를 설치하라는 메시지가 표시됩니다. 장치 제조업체 또는 이동 통신 사업자가 중요한 보안 업데이트가 연기되는 것을 방지(제외)할 수 있습니다. 제외된 업데이트는 장치의 사용자에게 시스템 알림을 보여줍니다. 
+    - **유지 관리 기간**: Intune에서 설정하는 일별 유지 관리 기간 동안 업데이트가 자동으로 설치됩니다. 설치는 30일 동안 매일 시도되지만 부족한 공간 또는 배터리 수준으로 인해 실패할 수 있습니다. 30일 뒤 사용자에게 Android에서 설치하라는 메시지가 표시됩니다. 이 기간은 Play 앱의 업데이트 설치에도 사용됩니다. 단일 앱 키오스크 전경 앱을 업데이트할 수 있는 것처럼 이 옵션은 키오스크와 같은 전용 장치에 권장됩니다. 
 
 ## <a name="kiosk-settings"></a>키오스크 설정
 

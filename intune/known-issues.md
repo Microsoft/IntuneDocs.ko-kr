@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4e523e4fb6505b2faaa0aa776b89454524130ba8
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347800"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187855"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune의 알려진 문제
 
@@ -106,6 +106,15 @@ iOS 장치의 경우 새로운 Cisco AnyConnect 클라이언트에서 NAC(네트
 
 <!-- ## Enrollment -->
 
+## <a name="conditional-access"></a>조건부 액세스
+
+### <a name="conditional-access-settings-from-intune-do-not-show-up-in-new-console"></a>Intune의 조건부 액세스 설정이 새 콘솔에 표시되지 않음
+
+테넌트가 Azure Portal로 마이그레이션된 후에 조건부 액세스 설정을 계속 적용할 수 있습니다. 하지만 Azure Intune 포털에는 나타나지 않습니다. 
+
+Azure Portal에서 해당 설정을 보고 관리하려는 경우 클래식 포털에서 이전 설정을 제거하고 Azure Portal에서 다시 만들어야 합니다. 
+
+자세한 내용은 [Azure Active Directory에서 조건부 액세스에 대한 모범 사례](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)를 참조하세요.
 
 ## <a name="data-protection"></a>데이터 보호
 

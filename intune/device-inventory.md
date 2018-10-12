@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313181"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187804"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 장치 세부 정보 참조
 
@@ -63,44 +63,38 @@ Intune은 회사 소유 장치에서만 앱 목록을 수집합니다. 앱이 �
 
 ## <a name="hardware-device-details"></a>하드웨어 장치 세부 정보
 
-### <a name="windows-and-ios-device-details"></a>Windows 및 iOS 장치 세부 정보:
-|세부 정보|설명|  
-|--------------|----------------------|  
-|이름|서버의 이름입니다.|
-|관리 이름|콘솔에서만 사용되는 장치 이름입니다. 이 이름을 변경해도 장치의 이름을 변경하지 않습니다.|
-|UDID|장치의 고유한 장치 식별자입니다.|
-|Intune 장치 ID|장치를 고유하게 식별하는 GUID입니다.|
-|일련 번호|제조업체에서 장치의 일련 번호입니다.|
-|공유 장치|**예**인 경우 장치가 둘 이상의 사용자에 의해 공유됩니다.|
-|사용자 승인 등록|**예**인 경우 장치에는 관리자가 장치에서 특정 보안 설정을 관리할 수 있는 사용자 승인 등록이 있습니다.|
-|운영 체제|장치에서 사용된 운영 체제입니다.|
-|운영 체제 버전|장치의 운영 체제 버전입니다.|
-|운영 체제 언어|장치의 운영 체제에 대해 설정된 언어입니다.|
-|총 저장소 공간|장치에서 총 저장소 공간(기가바이트)입니다.|
-|사용 가능한 저장소 공간|장치에서 사용되지 않은 저장소 공간(기가바이트)입니다.|
-
-
-### <a name="windows-ios-and-macos-device-details"></a>Windows, iOS 및 macOS 장치 세부 정보
-|세부 정보|설명|  
-|--------------|----------------------|  
-|IMEI|장치의 IMEI(International Mobile Equipment Identity)입니다.|
-|MEID|장치의 MEID(Mobile Equipment Identifier)입니다.|
-|제조업체|장치의 제조업체입니다.|
-|모델|장치의 모델입니다.|
-|전화 번호|장치에 할당된 전화 번호입니다.|
-|구독자의 통신사|장치의 무선 통신사입니다.|
-|셀룰러 기술|장치에서 사용하는 라디오 시스템입니다.|
-|Wi-Fi MAC|장치의 미디어 액세스 제어 주소입니다.|
-|ICCID|집적 회로 카드 식별자, 즉, SIM 카드의 고유한 ID 번호입니다.|
-|등록된 날짜|Intune에서 장치를 등록한 날짜 및 시간입니다.|
-|마지막 연결 시간|Intune에 장치를 마지막으로 연결한 날짜 및 시간입니다.|
-|활성화 잠금 무시 코드|활성화 잠금을 무시할 수 있는 코드입니다.|
-|Azure AD 등록됨|**예**인 경우 장치가 Azure Active Directory에 등록되어 있습니다.|
-|준수|장치의 준수 상태입니다.|
-|EAS 활성화됨|**예**인 경우 장치는 교환 사서함과 동기화됩니다.|
-|EAS 활성화 ID|장치의 Exchange ActiveSync 식별자입니다.|
-|감독됨|**예**인 경우 관리자는 장치에 대한 제어를 강화했습니다.|
-|암호화됨|**예**인 경우 장치에 저장된 데이터가 암호화됩니다.|
+|세부 정보|설명|플랫폼| 
+|--------------|----------------------|----|  
+|이름|서버의 이름입니다.|Windows, iOS|
+|관리 이름|콘솔에서만 사용되는 장치 이름입니다. 이 이름을 변경해도 장치의 이름을 변경하지 않습니다.|Windows, iOS|
+|UDID|장치의 고유한 장치 식별자입니다.|Windows, iOS|
+|Intune 장치 ID|장치를 고유하게 식별하는 GUID입니다.|Windows, iOS|
+|일련 번호|제조업체에서 장치의 일련 번호입니다.|Windows, iOS|
+|공유 장치|**예**인 경우 장치가 둘 이상의 사용자에 의해 공유됩니다.|Windows, iOS|
+|사용자 승인 등록|**예**인 경우 장치에는 관리자가 장치에서 특정 보안 설정을 관리할 수 있는 사용자 승인 등록이 있습니다.|Windows, iOS|
+|운영 체제|장치에서 사용된 운영 체제입니다.|Windows, iOS|
+|운영 체제 버전|장치의 운영 체제 버전입니다.|Windows, iOS|
+|운영 체제 언어|장치의 운영 체제에 대해 설정된 언어입니다.|Windows, iOS|
+|총 저장소 공간|장치에서 총 저장소 공간(기가바이트)입니다.|Windows, iOS|
+|사용 가능한 저장소 공간|장치에서 사용되지 않은 저장소 공간(기가바이트)입니다.|Windows, iOS|
+|IMEI|장치의 IMEI(International Mobile Equipment Identity)입니다.|Windows, iOS, Android|
+|MEID|장치의 MEID(Mobile Equipment Identifier)입니다.|Windows, iOS, Android|
+|제조업체|장치의 제조업체입니다.|Windows, iOS, Android|
+|모델|장치의 모델입니다.|Windows, iOS, Android|
+|전화 번호|장치에 할당된 전화 번호입니다.|Windows, iOS, Android|
+|구독자의 통신사|장치의 무선 통신사입니다.|Windows, iOS, Android|
+|셀룰러 기술|장치에서 사용하는 라디오 시스템입니다.|Windows, iOS, Android|
+|Wi-Fi MAC|장치의 미디어 액세스 제어 주소입니다.|Windows, iOS, Android|
+|ICCID|집적 회로 카드 식별자, 즉, SIM 카드의 고유한 ID 번호입니다.|Windows, iOS, Android|
+|등록된 날짜|Intune에서 장치를 등록한 날짜 및 시간입니다.|Windows, iOS, Android|
+|마지막 연결 시간|Intune에 장치를 마지막으로 연결한 날짜 및 시간입니다.|Windows, iOS, Android|
+|활성화 잠금 무시 코드|활성화 잠금을 무시할 수 있는 코드입니다.|Windows, iOS, Android|
+|Azure AD 등록됨|**예**인 경우 장치가 Azure Active Directory에 등록되어 있습니다.|Windows, iOS, Android|
+|준수|장치의 준수 상태입니다.|Windows, iOS, Android|
+|EAS 활성화됨|**예**인 경우 장치는 교환 사서함과 동기화됩니다.|Windows, iOS, Android|
+|EAS 활성화 ID|장치의 Exchange ActiveSync 식별자입니다.|Windows, iOS, Android|
+|감독됨|**예**인 경우 관리자는 장치에 대한 제어를 강화했습니다.|Windows, iOS, Android|
+|암호화됨|**예**인 경우 장치에 저장된 데이터가 암호화됩니다.|Windows, iOS, Android|
 
 
 

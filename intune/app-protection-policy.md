@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 08/16/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253683"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727580"
 ---
 # <a name="what-are-app-protection-policies"></a>앱 보호 정책이란?
 
@@ -103,7 +103,7 @@ MDM 솔루션에서 다음을 수행합니다.
 
 -   회사 데이터가 소비자 앱과 서비스에 누출되지 않도록 보호
 
--   모바일 앱에 제한(다른 이름으로 저장, 클립보드, PIN 등) 적용
+-   클라이언트 앱에 제한(다른 이름으로 저장, 클립보드, PIN 등) 적용
 
 -   장치에서 해당 앱을 제거하지 않고 앱에서 회사 데이터 초기화
 
@@ -123,6 +123,18 @@ MDM 솔루션에 등록되지 않은 BYOD 장치의 경우 앱 보호 정책을 
 
 -   해당 장치에서 회사 Wi-Fi 및 VPN 설정을 프로비전할 수 없습니다.
 
+## <a name="app-protection-global-policy"></a>앱 보호 글로벌 정책
+
+OneDrive 관리자가 **admin.office.com**을 탐색하고 **장치** 액세스를 선택하는 경우 OneDrive 및 SharePoint 클라이언트 앱에 **모바일 응용 프로그램 관리** 제어를 설정할 수 있습니다. 
+
+OneDrive 관리자 콘솔에 사용 가능하게 만든 설정은 **글로벌** 정책이라는 특별한 Intune 앱 보호 정책을 구성합니다. 이 글로벌 정책은 테넌트에서 모든 사용자에게 적용할 수 있으므로 정책 대상을 제어할 방법이 없습니다. 
+
+사용하도록 설정되면 iOS 및 Android용 OneDrive 및 SharePoint 앱은 기본적으로 선택한 설정을 통해 보호됩니다. 만들어지면 IT Pro는 Intune 콘솔에서 이 정책을 편집하고, 대상 앱을 더 많이 추가하고, 모든 정책 설정을 수정할 수 있습니다. 
+
+기본적으로 테넌트당 한 개의 **글로벌** 정책만 있을 수 있습니다. 그러나 [Intune Graph API](intune-graph-apis.md)는 테넌트당 추가 글로벌 정책을 만드는 데 사용할 수 있지만 권장되지는 않습니다. 이러한 정책 구현의 문제 해결이 복잡해질 수 있으므로 추가 정책 만들기는 권장되지 않습니다.
+
+**글로벌** 정책이 테넌트의 모든 사용자에게 적용되는 반면, 모든 표준 Intune 앱 보호 정책은 이러한 설정을 재정의합니다.
+
 
 ## <a name="multi-identity"></a>다중 ID
 
@@ -136,5 +148,5 @@ MDM 솔루션에 등록되지 않은 BYOD 장치의 경우 앱 보호 정책을 
 
 [Microsoft Intune으로 앱 보호 정책을 만들고 배포하는 방법](app-protection-policies.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>참고 항목
 Salesforce 모바일 앱과 같은 타사 앱은 Intune을 특정 방식으로 사용하여 회사 데이터를 보호합니다. 특히 Salesforce 앱이 Intune에서 작동하는 방식(MDM 앱 구성 설정 포함)에 대한 자세한 내용은 [Salesforce 앱 및 Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf)을 참조하세요.

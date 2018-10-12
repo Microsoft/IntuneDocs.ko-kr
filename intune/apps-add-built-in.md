@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 908135e93fd3980af9d9e80d9c5cf3b4a8abddc3
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 62a7f2f45ccd98612e56e253945974a8eb193f25
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058753"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562717"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune에 기본 제공 앱 추가
 
@@ -48,7 +48,7 @@ Microsoft Intune에서 사용 가능한 앱에 기본 제공 앱을 추가하려
 ## <a name="configure-app-information"></a>앱 정보 구성
 
 기본 제공 앱에 대한 정보를 수정할 수 있습니다. 이 정보를 사용하여 Intune에서 앱을 식별하고 사용자가 회사 포털에서 앱을 찾을 수 있습니다.
-1. **모바일 앱 - 앱** 창에서 수정할 기본 제공 앱을 선택합니다.  
+1. **클라이언트 앱 - 앱** 창에서 수정하려는 기본 제공 앱을 선택합니다.  
     기본 제공 앱에 대한 창이 표시됩니다.
 2. **관리**에서 **속성** 옵션을 선택합니다.
 3. 기본 제공 앱 정보를 수정하려면 **구성** 옵션을 선택합니다.

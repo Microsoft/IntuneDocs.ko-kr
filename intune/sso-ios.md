@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216261"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864611"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>iOS 장치 Single Sign-On용 Microsoft Intune 구성
 
@@ -84,7 +84,7 @@ iOS 장치 Single Sign-On을 활용하려면 다음 조건이 있어야 합니�
 > [!NOTE]
 > 이러한 URL은 올바른 형식의 FQDN이어야 합니다. Apple에서는 `http://<yourURL.domain>` 형식의 FQDN이어야 합니다.
 
-URL 일치 패턴은 `http://` 또는 `https://`로 시작해야 합니다. 단순 문자열 일치가 수행되므로 URL 접두사 `http://www.contoso.com/`은 `http://www.contoso.com:80/`과 일치하지 않습니다. 그러나 iOS 9.0 이상에서는 단일 와일드카드 \*를 사용하여 일치하는 모든 값을 지정할 수 있습니다. 예를 들어 `http://*.contoso.com/`은 `http://store.contoso.com/` 및 `http://www.contoso.com` 둘 다와 일치합니다.
+URL 일치 패턴은 `http://` 또는 `https://`로 시작해야 합니다. 단순 문자열 일치가 수행되므로 URL 접두사 `http://www.contoso.com/`은 `http://www.contoso.com:80/`과 일치하지 않습니다. 그러나 iOS 10.0 이상에서는 단일 와일드카드 \*를 사용하여 일치하는 모든 값을 지정할 수 있습니다. 예를 들어 `http://*.contoso.com/`은 `http://store.contoso.com/` 및 `http://www.contoso.com` 둘 다와 일치합니다.
 `http://.com` 및 `https://.com` 패턴은 각각 모든 HTTP 및 HTTPS URL과 일치합니다.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Single Sign-On을 사용할 앱

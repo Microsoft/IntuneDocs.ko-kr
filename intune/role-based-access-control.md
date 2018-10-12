@@ -2,8 +2,8 @@
 title: Microsoft Intune에서 RBAC
 description: RBAC(역할 기반 액세스 제어)를 통해 Microsoft Intune에서 작업을 수행하고 변경할 수 있는 방법을 알아봅니다.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ad5bf36eeb81c5deabc2c3efd73cddcc3db8a70c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253700"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028701"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Microsoft Intune에서 RBAC(역할 기반 관리 제어)
 
@@ -42,6 +42,7 @@ RBAC를 사용하면 조직 내에서 다양한 Intune 작업을 수행할 수 �
 
     > [!IMPORTANT]
     > Intune 서비스 관리자 역할은 Azure AD의 조건부 액세스 설정을 관리하는 기능은 제공하지 않습니다.
+    > Intune 역할의 멤버에는 Intune 라이선스가 필요합니다.
 
     > [!TIP]
     > Intune에는 **사용자**, **그룹** 및 **조건부 액세스**의 3개 Azure AD 확장도 표시됩니다. Azure AD RBAC를 사용하여 이러한 확장을 제어합니다. 또한 **사용자 계정 관리자**는 AAD 사용자/그룹 활동만 수행하며, Intune에서 모든 활동을 수행하기 위한 모든 권한은 없습니다. 자세한 내용은 [Azure AD를 통한 RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)를 참조하세요.

@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/28/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb608fd5f74dfdaf8c59dd94bc4c7a3fbe0471e6
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 121c740cb07e3c15c673f936c1da468ada4e809d
+ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039355"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46466713"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune의 Android 앱 보호 정책 설정
 이 문서에서는 Android 장치에 대한 앱 보호 정책 설정을 설명합니다. 설명하는 정책 설정은 Azure Portal의 **설정** 블레이드에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.
@@ -33,7 +33,7 @@ ms.locfileid: "39039355"
 | **Android 백업 차단** | 이 앱에서 회사 또는 학교 데이터를 [Android 백업 서비스](https://developer.android.com/google/backup/index.html)로 백업하지 않도록 하려면 **예**를 선택하고 이 앱에서 회사 또는 학교 데이터를 백업할 수 있도록 하려면 **아니요**를 선택합니다.| 예 |
 | **앱이 다른 앱으로 데이터를 전송하도록 허용** | 이 앱에서 데이터를 받을 수 있는 앱을 지정합니다. <ul><li> **정책 관리 앱**: 다른 정책 관리 앱으로만 데이터를 전송하도록 허용합니다.</li> <li>**모든 앱**: 모든 앱으로의 전송을 허용합니다. </li> <li>**없음**: 다른 정책 관리 앱을 포함한 모든 앱에 대한 데이터 전송을 허용하지 않습니다.</li></ul> <p>Intune에서 기본적으로 데이터를 전송할 수 있는 몇 가지 예외적인 앱 및 서비스가 있습니다. 또한, Intune APP을 지원하지 않는 앱에 전송될 데이터를 허용해야 하는 경우 사용자만의 예외를 만들 수 있습니다. 자세한 내용은 [데이터 전송 예외](#Data-transfer-exemptions)를 참조합니다.<p>이 정책은 웹 콘텐츠의 동작에도 영향을 줍니다. 이 정책이 **차단됨**으로 설정되면 Managed Browser를 포함하여 모든 브라우저에 대한 http 링크를 열 수 없습니다. 또한 이 정책이 **정책 관리 전용**으로 설정되면 Managed Browser에서만 http 링크를 열 수 있습니다.<p>**참고:** Intune은 Android 인스턴트 앱 기능을 현재 지원하지 않습니다. Intune은 앱 간에 모든 데이터 연결을 차단합니다.  [Android 인스턴트 앱](https://developer.android.com/topic/instant-apps/index.html)에 대한 자세한 내용은 Android 개발자 설명서를 참조하세요.</p>| 모든 앱 |
 | **앱이 다른 앱의 데이터를 받도록 허용** | 이 앱에 데이터를 전송할 수 있는 앱을 지정합니다. <ul><li>**정책 관리 앱**: 다른 정책으로 관리된 앱에서만 데이터를 전송하도록 허용합니다.</li><li>**모든 앱**: 모든 앱의 데이터 전송을 허용합니다.</li><li>**없음**: 다른 정책 관리 앱을 포함한 모든 앱에서의 데이터 전송을 허용하지 않습니다. </li></ul> <p>예외적으로 intune이 데이터를 전송받을 수 있는 몇 가지 앱 및 서비스가 있습니다. 전체 앱 및 서비스 목록은 [데이터 전송 예외](#Data-transfer-exemptions)를 참조하세요. | 모든 앱 |
-| **"다른 이름으로 저장" 차단** | 이 앱에서 다른 이름으로 저장 옵션을 사용할 수 없도록 설정하려면 **예**를 선택합니다. 다른 이름으로 저장을 사용할 수 있도록 설정하려면 **아니요**를 선택합니다. <p><br>**회사 데이터를 저장할 저장소 서비스 선택** <br>사용자가 선택한 서비스(비즈니스용 OneDrive, SharePoint 및 로컬 저장소)에 저장할 수 있습니다. 기타 서비스는 모두 차단됩니다.</p> | 아니요 <br><br> 0개 선택됨 |
+| **"다른 이름으로 저장" 차단** | 이 앱에서 다른 이름으로 저장 옵션을 사용할 수 없도록 설정하려면 **예**를 선택합니다. 다른 이름으로 저장을 사용할 수 있도록 설정하려면 **아니요**를 선택합니다. **참고:** 이 설정은 Microsoft Excel, OneNote, PowerPoint 및 Word에 지원됩니다. 또한 타사 및 LOB 앱에서도 지원될 수 있습니다. <p>**회사 데이터를 저장할 저장소 서비스 선택** <br>사용자가 선택한 서비스(비즈니스용 OneDrive, SharePoint 및 로컬 저장소)에 저장할 수 있습니다. 기타 서비스는 모두 차단됩니다.</p> | 아니요<p>&nbsp;</p><p>&nbsp;</p>0개 선택됨 |
 | **다른 앱에서 잘라내기, 복사 및 붙여넣기 제한** | 이 앱에서 잘라내기, 복사 및 붙여넣기 동작을 사용할 수 있는 경우를 지정합니다. 다음 중에서 선택합니다. <ul><li>**차단됨**: 이 앱과 다른 앱 간에 잘라내기, 복사 및 붙여넣기 작업을 허용하지 않습니다.</li><li>**정책 관리 앱**: 이 앱과 다른 정책 관리 앱 간에만 잘라내기, 복사 및 붙여넣기 작업을 허용합니다.</li><li>**정책 관리 앱에 붙여넣기**: 이 앱과 다른 정책 관리 앱 간에 잘라내기 또는 복사를 허용합니다. 모든 앱의 데이터를 이 앱에 붙여넣을 수 있습니다.</li><li>**모든 앱**: 이 앱과 다른 앱 간의 잘라내기, 복사 및 붙여넣기에 대한 제한이 없습니다. | 모든 앱 |
 |**Managed Browser에서 표시할 수 있는 웹 콘텐츠 제한** | 앱의 웹 링크를 Managed Browser 앱에서 열 수 있도록 적용하려면 **예**를 선택합니다. <br><br> Intune에 등록되지 않은 장치의 경우 Managed Browser 앱에서만 정책 관리 앱의 웹 링크를 열 수 있습니다. <br><br> Intune을 사용하여 장치를 관리하는 경우 [Microsoft Intune에서 Managed Browser 정책을 사용하여 인터넷 액세스 관리](app-configuration-managed-browser.md)를 참조하세요.<br><br> 모바일 장치(iOS 및 Android)용 Microsoft Edge 브라우저는 Intune 앱 보호 정책을 지원합니다. Edge 브라우저 응용 프로그램에서 회사 Azure AD 계정으로 로그인하는 사용자는 Intune에서 보호됩니다. Edge 브라우저는 MAM SDK를 통합하고, 다음과 같은 방지를 제외하고는 모든 데이터 보호 정책을 지원합니다.<ul><li>**다른 이름으로 저장**: Microsoft Edge 브라우저에서 사용자가 클라우드 저장소 공급자(예: OneDrive)에 직접 앱 내 연결을 추가할 수 없습니다.</li><li>**연락처 동기화**: Microsoft Edge 브라우저는 기본 연락처 목록에 저장하지 않습니다.</li></ul> | 아니요 |
 | **앱 데이터 암호화** | 이 앱에서 회사 또는 학교 데이터의 암호화를 적용하려면 **예**를 선택합니다. Intune에서는 Android 키 저장소 시스템과 함께 OpenSSL, 128비트 AES 암호화 체계를 사용하여 앱 데이터를 안전하게 암호화합니다. 데이터는 파일 I/O 작업 동안 동기적으로 암호화됩니다. 장치 저장소의 콘텐츠는 항상 암호화됩니다. <br><br> 이 암호화 방법은 FIPS 140-2의 인증을 받지 **않았습니다**.  | 예 |

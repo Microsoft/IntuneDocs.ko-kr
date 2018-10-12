@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321240"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028735"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -82,7 +82,7 @@ NDES 서버는 CA를 호스트하는 도메인에 가입해야 하며 CA와 동�
 NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다. NDES를 설치하고 구성하기 전에 발급하는 CA에서 템플릿을 구성할 때 이 계정을 입력합니다. 사용자에게 기본 권한(**로컬 로그온**, **서비스로 로그온** 및 **일괄 작업으로 로그온** 권한)이 있는지 확인합니다. 일부 조직에는 해당 권한을 사용하지 않도록 설정하는 보안 강화 정책이 있습니다.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>2단계 - 인증 기관에서 인증서 템플릿 구성
-이 작업에서는 다음을 수행합니다.
+이 단계에서는 다음을 수행합니다.
 
 - NDES의 인증서 템플릿 구성
 - NDES의 인증서 템플릿 게시
@@ -145,7 +145,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 3. **인증서 템플릿** 폴더에서 게시된 템플릿을 확인하여 유효성을 검사합니다.
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>3단계 - NDES 서버에서 필수 구성 요소 구성
-이 작업에서는 다음을 수행합니다.
+이 단계에서는 다음을 수행합니다.
 
 - Windows Server에 NDES를 추가하고 NDES를 지원하도록 IIS 구성
 - IIS_IUSR 그룹에 NDES 서비스 계정 추가
@@ -156,7 +156,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
    1. 마법사에서 **Active Directory 인증서 서비스** 를 선택하여 AD CS 역할 서비스에 대한 액세스 권한을 받습니다. **네트워크 장치 등록 서비스**를 선택하고 **인증 기관**선택을 취소한 다음 마법사를 완료합니다.
 
       > [!TIP]
-      > **설치 진행률**에서 **닫기**를 선택하지 않습니다. 대신 **대상 서버에서 Active Directory 인증서 서비스 구성** 링크를 선택하세요. 다음 작업에 사용할 **AD CS 구성** 마법사가 열립니다. AD CS 구성이 열리면 역할 및 기능 추가 마법사를 닫을 수 있습니다.
+      > **설치 진행률**에서 **닫기**를 선택하지 않습니다. 대신 **대상 서버에서 Active Directory 인증서 서비스 구성** 링크를 선택하세요. 다음 단계에 사용할 **AD CS 구성** 마법사가 열립니다. AD CS 구성이 열리면 역할 및 기능 추가 마법사를 닫을 수 있습니다.
 
    2. NDES를 서버에 추가할 때는 마법사에서 IIS도 설치합니다. IIS에서 다음과 같은 구성을 사용하는지 확인합니다.
 
@@ -181,7 +181,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>4단계 - Intune에 사용할 수 있도록 NDES 구성
-이 작업에서는 다음을 수행합니다.
+이 단계에서는 다음을 수행합니다.
 
 - 발급 CA에 사용할 수 있도록 NDES 구성
 - IIS에서 서버 인증(SSL) 인증서 바인딩
@@ -190,7 +190,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 1. NDES 서버에서 AD CS 구성 마법사를 연 다음, 다음과 같이 업데이트합니다.
 
     > [!TIP]
-    > 이전 작업에서 링크를 클릭한 경우 이 마법사는 이미 열려 있는 상태입니다. 링크를 클릭하지 않은 경우에는 서버 관리자를 열어 Active Directory 인증서 서비스의 배포 후 구성에 액세스합니다.
+    > 이전 단계에서 링크를 클릭했으면 이 마법사가 이미 열려 있습니다. 링크를 클릭하지 않은 경우에는 서버 관리자를 열어 Active Directory 인증서 서비스의 배포 후 구성에 액세스합니다.
 
    - **역할 서비스**에서 **네트워크 장치 등록 서비스**를 선택합니다.
    - **NDES의 서비스 계정**에서 NDES 서비스 계정을 입력합니다.
@@ -202,7 +202,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
 
-    이 키를 업데이트하려면 인증서 템플릿의 **목적**을 확인합니다(**요청 처리** 탭에서 찾을 수 있음). 그런 다음, 기존 데이터를 작업 1에서 지정한 인증서 템플릿의 이름(템플릿의 표시 이름이 아님)으로 바꾸어 해당 레지스트리 항목을 업데이트합니다. 다음 표는 인증서 템플릿 목적을 레지스트리의 값에 매핑합니다.
+    이 키를 업데이트하려면 인증서 템플릿의 **목적**을 확인합니다(**요청 처리** 탭에서 찾을 수 있음). 그런 다음, 기존 데이터를 2단계에서 지정한 인증서 템플릿의 이름(템플릿의 표시 이름이 아님)으로 바꾸어 해당 레지스트리 항목을 업데이트합니다. 다음 표는 인증서 템플릿 목적을 레지스트리의 값에 매핑합니다.
 
     |요청 처리 탭에 나와 있는 인증서 템플릿 용도|편집할 레지스트리 값|SCEP 프로필의 Intune 관리 콘솔에 표시되는 값|
     |---|---|---|
@@ -225,11 +225,11 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
     ![IIS 최대 URL 및 쿼리 길이](./media/SCEP_IIS_max_URL.png)
 
 5. 서버를 다시 시작합니다. 서버에서 **iisreset**을 실행하는 것으로 이러한 변경을 마무리하지는 못합니다.
-6. `http://*FQDN*/certsrv/mscep/mscep.dll`을 찾아봅니다. 다음과 유사한 NDES 페이지가 표시됩니다.
+6. 을 찾아봅니다 `http://*FQDN*/certsrv/mscep/mscep.dll` . 다음과 유사한 NDES 페이지가 표시됩니다.
 
     ![NDES 테스트](./media/SCEP_NDES_URL.png)
 
-    **503 서비스를 사용할 수 없음** 오류가 발생하는 경우 이벤트 뷰어를 확인합니다. 응용 프로그램 풀이 NDES 사용자 권한에 대한 누락으로 인해 중지되었을 가능성이 높습니다. 이러한 권한은 작업 1에 설명되어 있습니다.
+    **503 서비스를 사용할 수 없음** 오류가 발생하는 경우 이벤트 뷰어를 확인합니다. 응용 프로그램 풀이 NDES 사용자 권한에 대한 누락으로 인해 중지되었을 가능성이 높습니다. 이러한 권한은 1단계에 설명되어 있습니다.
 
 ##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>NDES 서버에서 인증서를 설치 및 바인딩
 
@@ -278,7 +278,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 4. NDES 서버를 다시 부팅합니다. 이제 서버가 인증서 커넥터를 지원할 수 있습니다.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5단계 - Intune 인증서 커넥터 사용, 설치 및 구성
-이 작업에서는 다음을 수행합니다.
+이 단계에서는 다음을 수행합니다.
 
 - Intune에서 NDES를 지원하도록 설정
 - 해당 환경의 서버인 NDES(Network Device Enrollment Service) 역할을 호스트하는 서버에서 인증서 커넥터를 다운로드, 설치 및 구성합니다. 조직에서 NDES 구현의 규모를 확대하려면 각 NDES 서버에 Microsoft Intune 인증서 커넥터가 있는 여러 NDES 서버를 설치할 수 있습니다.
@@ -299,7 +299,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
     > [!NOTE]
     > 독립 실행형 Intune에 NDES를 설치하면 CRP 서비스가 인증서 커넥터와 함께 자동으로 설치됩니다. 구성 관리자와 함께 Intune을 사용할 때는 별도의 사이트 시스템 역할로 인증서 등록 지점을 설치합니다.
 
-6. 인증서 커넥터용 클라이언트 인증서를 선택하라는 메시지가 표시되면 **선택**을 선택하고 작업 3에서 NDES 서버에 설치한 **클라이언트 인증** 인증서를 선택합니다.
+6. 인증서 커넥터용 클라이언트 인증서를 선택하라는 메시지가 표시되면 **선택**을 선택하고 4단계에서 NDES 서버에 설치한 **클라이언트 인증** 인증서를 선택합니다.
 
     클라이언트 인증 인증서를 선택하고 나면 **Microsoft Intune 인증서 커넥터용 클라이언트 인증서** 화면으로 돌아가게 됩니다. 선택한 인증서는 표시되지 않지만 **다음**을 선택하면 해당 인증서의 속성을 볼 수 있습니다. **다음**을 선택한 다음, **설치**를 선택합니다.
 
@@ -450,7 +450,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 성공  | 성공 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 인증 기관이 유효하지 않거나 연결할 수 없습니다. 인증 기관을 사용할 수 있고 서버에서 이 인증 기관과 통신할 수 있는지 확인하세요. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | 로컬 인증서 저장소에 Symantec 클라이언트 인증 인증서가 없습니다. 자세한 내용은 [Symantec Registration Authorization 인증서 설치](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) 문서를 참조하세요.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | 로컬 인증서 저장소에 Symantec 클라이언트 인증 인증서가 없습니다. 자세한 내용은 [Symantec Registration Authorization 인증서 설치](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) 문서를 참조하세요.  |
 | 0x00000402 | RevokeCert_AccessDenied  | 지정한 계정에 CA에서 인증서를 해지할 수 있는 권한이 없습니다. 이벤트 메시지 세부 정보의 CA 이름 필드를 참조하여 발급하는 CA를 확인하세요.  |
 | 0x00000403 | CertThumbprint_NotFound  | 사용자 입력과 일치하는 인증서를 찾을 수 없습니다. 인증서 커넥터를 등록하고 다시 시도하세요. |
 | 0x00000404 | Certificate_NotFound  | 제공된 입력과 일치하는 인증서를 찾을 수 없습니다. 인증서 커넥터를 다시 등록하고 다시 시도하세요. |

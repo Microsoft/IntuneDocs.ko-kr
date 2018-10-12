@@ -3,10 +3,10 @@ title: Microsoft Intune에 대한 지원을 받는 방법
 titlesuffix: Microsoft Intune
 description: Microsoft Intune 유료 및 무료 평가판 구독에 대해 온라인 및 전화 지원을 받습니다.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
+ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843143"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187787"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune에 대한 지원을 받는 방법
 
@@ -30,17 +30,27 @@ Microsoft는 Microsoft Intune에 대한 세계적인 기술 지원, 판매 전 �
 
 >[!IMPORTANT]
 > Intune과 연동되는 타사 제품(Saaswedo, Cisco, Lookout)에 대한 기술 지원을 받으려면 먼저 해당 제품의 공급자에게 문의하세요. Intune 지원에서 요청을 열기 전에 다른 제품을 올바르게 구성했는지 확인합니다.
+> 
+> Microsoft Intune과 관련된 문제 해결에 대한 자세한 내용은 Intune 설명서의 [문제 해결 섹션](help-desk-operators.md)을 참조하세요.
+
+IT 관리자 권한으로 **도움말 + 지원** 옵션을 사용하여 Azure Portal에서 Intune에 대한 온라인 지원 티켓을 저장할 수 있습니다. 지원 티켓을 만들려면 계정이 다음 [Azure Active Directory에서 관리자 역할](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) 중 하나로 할당되어야 합니다. 
+
+- Intune 관리자 
+- 전역 관리자 
+- 서비스 관리자  
+
+
+## <a name="get-context-sensitive-help"></a>상황에 맞는 도움말 가져오기 
+Azure Portal에 로그인하고 Intune을 열면 Azure Portal의 Intune 블레이드에서 **도움말 및 지원**을 선택하여 Intune의 해당 영역에서 발생하는 일반적인 문제에 대한 솔루션을 볼 수 있습니다. 
+
+공통 솔루션이 도움이 되지 않는 경우 **지원 요청**을 선택하여 Azure *도움말 + 지원* 페이지의 **기본 사항** 블레이드에서 열리는 새 지원 요청을 만들 수 있습니다. 계속해서 지원 티켓을 만들려면 다음 절차인 [온라인 지원 티켓 만들기](#create-an-online-support-ticket)에서 *3단계*로 이동합니다. 
 
 ## <a name="create-an-online-support-ticket"></a>온라인 지원 티켓 만들기
 
-IT 관리자의 경우 다음 단계에 따라 Azure Portal에서 지원 티켓을 제출할 수 있습니다.
->[!NOTE]
->온라인 지원 티켓을 만들려면 Intune 서비스 관리자 또는 전역 관리자여야 합니다. 자세한 내용은 [관리자 역할 할당](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)을 참조하세요.
-1. Intune 관리자 자격 증명으로 Azure Portal(<https://portal.azure.com>)에 로그온하고 Portal의 오른쪽 위에 있는 <strong>?</strong> 아이콘을 선택한 다음 <strong>도움말+지원</strong>을 선택하여 [Azure 도움말+지원](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 페이지로 이동합니다.
-
+1. Intune 관리자 자격 증명으로 Azure Portal(<https://portal.azure.com>)에 로그인하고 포털의 오른쪽 위에 있는 <strong>?</strong> 아이콘을 선택한 다음 <strong>도움말+지원</strong>을 선택하여 [Azure 도움말+지원](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 페이지로 이동합니다.
     ![도움말+지원 링크가 강조 표시된 Azure Portal 도움말 및 지원 물음표 링크 스크린샷](./media/azure-get-support.png)
 
-2. Azure 도움말 및 지원 페이지에서 **새로운 지원 요청**을 선택합니다.
+2. Azure *도움말 _+_ 지원* 페이지에서 **새로운 지원 요청**을 선택합니다.
 
     ![새로운 지원 요청 링크가 강조 표시된 Azure Portal 도움말 및 지원 페이지 스크린샷](./media/azure-support-ticket-link.png)
 
@@ -72,7 +82,7 @@ IT 관리자의 경우 다음 단계에 따라 Azure Portal에서 지원 티켓�
    - **시간**
    - **추가 데이터**
 
-     **다음**을 선택합니다.
+   **다음**을 선택합니다.
 
 5. 이 지원 요청에 대한 **연락처 정보**를 제공합니다. Microsoft 지원은 이 정보를 사용하여 사용자에게 연락합니다.
 6. **만들기**를 선택하여 지원 요청을 제출합니다.
@@ -80,7 +90,15 @@ IT 관리자의 경우 다음 단계에 따라 Azure Portal에서 지원 티켓�
 >[!IMPORTANT]
 >청구 또는 구독과 관련된 문의 사항이 있는 경우 [Office 관리 센터](https://portal.office.com/Support/SupportEntry.aspx)를 통해 사례를 열어 지원을 받을 수 있습니다.
 
+## <a name="view-support-requests"></a>지원 요청 보기
+Azure Portal 내에서 지원 요청을 볼 수 있습니다. 확인 방법은 다음과 같습니다.
+
+1. Intune 관리자 자격 증명으로 Azure(<https://portal.azure.com>)에 로그인하고 포털의 오른쪽 위에 있는 <strong>?</strong> 아이콘을 선택한 다음 <strong>도움말+지원</strong>을 선택하여 [Azure 도움말+지원](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 페이지로 이동합니다.
+
+2. **도움말 + 지원** 페이지에서 **최근 지원 요청** 목록을 보고 선택하여 추가 세부 정보를 볼 수 있습니다.
+
 ## <a name="additional-resources"></a>추가 리소스
 - [Microsoft Intune의 담당자 전화 지원](phone-support-contact.md)
 - [청구 및 구독 관리 지원](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [볼륨 라이선스](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Intune 문제 해결](help-desk-operators.md)

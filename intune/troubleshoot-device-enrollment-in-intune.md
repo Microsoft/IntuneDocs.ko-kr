@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b540cd2b2751712604c0ae7172015cb109c9c1d8
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
+ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039440"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47237666"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune에서 장치 등록 문제 해결
 
@@ -39,7 +39,7 @@ ms.locfileid: "39039440"
 사용자 장치의 시간과 날짜가 올바르게 설정되었는지 확인할 수도 있습니다.
 
 1. 장치를 다시 시작합니다.
-2. 시간과 날짜가 최종 사용자의 표준 시간대를 기준으로 GMT 표준(+ 또는 - 12시간)에 가깝게 설정되었는지 확인합니다.
+2. 시간과 날짜가 최종 사용자의 표준 시간대에 대해 GMT 표준(+ 또는 - 12시간)에 가깝게 설정되었는지 확인합니다.
 3. Intune 회사 포털을 제거하고 다시 설치합니다(해당하는 경우).
 
 관리되는 장치 사용자는 여러분이 검토할 등록 및 진단 로그를 수집할 수 있습니다. 로그 수집에 대한 지침은 다음과 같이 제공됩니다.
@@ -52,13 +52,13 @@ ms.locfileid: "39039440"
 이러한 문제는 모든 장치 플랫폼에서 발생할 수 있습니다.
 
 ### <a name="device-cap-reached"></a>장치 최대값 도달
-**문제:** iOS 장치에서 발생하는 **회사 포털을 일시적으로 사용할 수 없음** 오류와 같은 오류가 등록하는 동안 사용자에게 표시되고, Configuration Manager의 DMPdownloader.log에 **DeviceCapReached**라는 오류가 포함됩니다.
+**문제:** 사용자에게는 **회사 포털을 일시적으로 사용할 수 없음**과 같은 오류가 등록하는 동안 표시되고, Configuration Manager의 DMPdownloader.log에는 **DeviceCapReached**라는 오류가 포함됩니다.
 
 **해결 방법:**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>등록된 장치 수와 및 허용된 장치 수 확인
 
-다음 단계에 따라 사용자에게 최대 장치 수를 초과하여 할당되지 않았는지 확인합니다.
+다음 단계에 따라 사용자가 최대 장치 수를 초과하여 할당받지 않았는지 확인합니다.
 
 1. Intune에서 **장치 등록** > **등록 제한** > **장치 개수 제한**을 선택합니다. **장치 제한** 열의 값을 확인합니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "39039440"
 
 4.  이것이 하면 사용자의 자격 증명이 Azure Active Directory와 올바로 동기화했는지 확인합니다.
 
-5.  사용자가 성공적으로 로그인하면 iOS 장치에 Intune 회사 포털 앱을 설치하고 등록하라는 메시지가 나타납니다. Android 장치에서는 Intune 회사 포털 앱을 수동으로 설치해야 합니다. 그 다음에 다시 등록할 수 있습니다.
+5.  사용자가 성공적으로 로그인하면 iOS 장치에 Intune 회사 포털 앱을 설치하고 등록하라는 메시지가 나타납니다. Android 장치에서는 Intune 회사 포털 앱을 수동으로 설치해야 합니다. 그런 후에 다시 등록할 수 있습니다.
 
 ### <a name="mdm-authority-not-defined"></a>MDM 기관이 정의되지 않았습니다
 **문제:** 사용자에게 **MDM 기관이 정의되지 않았습니다.** 오류가 표시됩니다.
@@ -98,8 +98,8 @@ ms.locfileid: "39039440"
 
 1.  MDM 기관이 [적절하게 설정](mdm-authority-set.md)되었는지 확인합니다.
     
-2.  사용자 UPN이 Office 365 포털에서 Active Directory 정보와 일치하는지 확인하여 사용자의 자격 증명이 Azure Active Directory와 올바른 동기화했는지 확인합니다.
-    UPN은 Active Directory 정보와 일치하지 않으면
+2.  사용자의 자격 증명이 Azure Active Directory와 올바로 동기화되었는지 확인합니다. 사용자의 UPN이 Office 365 포털에서 Active Directory 정보와 일치하는지 확인할 수 있습니다.
+    UPN이 Active Directory 정보와 일치하지 않으면 다음을 수행합니다.
 
     1.  로컬 서버에서 DirSync를 해제합니다.
 
@@ -109,7 +109,7 @@ ms.locfileid: "39039440"
 
     4.  DirSync를 다시 설정하고 이제 사용자가 제대로 동기화되었는지 확인합니다.
 
-3.  System Center Configuration Manager with Intune을 사용하는 상황에서는 사용자에게 유효한 클라우드 사용자 ID가 있는지 확인합니다.
+3.  Intune에서 System Center Configuration Manager를 사용하는 시나리오에서는 사용자에게 유효한 클라우드 사용자 ID가 있는지 확인합니다.
 
     1.  SQL Management Studio를 엽니다.
 
@@ -121,9 +121,9 @@ ms.locfileid: "39039440"
 
         -   모든 사용자를 보려면: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   특정 사용자를 보려면 다음 쿼리를 사용합니다. 여기서 %testuser1%은 조회하려는 사용자에 대한 username@domain.com을 나타냅니다. `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   특정 사용자를 보려면 다음 쿼리를 사용합니다. 여기서 %testuser1%은 조회하려는 사용자에 대한 username@domain.com의 자리 표시자입니다. `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        쿼리를 작성한 후 **!Execute(!실행)** 를 선택합니다.
+        쿼리를 작성한 후에 **!Execute**를 선택합니다.
         결과가 반환되면 클라우드 사용자 ID를 찾습니다.  ID를 찾을 수 없으면 Intune을 사용할 라이선스가 없는 것입니다.
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>회사 이름에 특수 문자가 포함되어 있으면 정책을 만들거나 장치를 등록할 수 없습니다.
@@ -132,10 +132,15 @@ ms.locfileid: "39039440"
 **해결 방법:** [Office 365 관리 센터](https://portal.office.com/)에서, 회사 이름의 특수 문자를 제거하고 회사 정보를 저장합니다.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>확인된 도메인이 여럿이면 로그인하거나 장치를 등록할 수 없습니다.
-**문제:** ADFS에 두 번째 확인된 도메인을 추가하는 경우, UPN(사용자 계정 이름) 접미사가 두 번째 도메인인 사용자가 포털에 로그인하거나 장치를 등록할 수 없습니다.
+**문제:** ADFS에 두 번째 확인된 도메인을 추가하면 이 문제가 발생할 수 있습니다. 두 번째 도메인을 UPN(사용자 계정 이름) 접미사로 사용하는 사용자는 포털에 로그인하거나 장치를 등록할 수 없습니다.
 
 
-<strong>해결 방법:</strong> AD FS 2.0을 통해 SSO(Single Sign-On)를 사용하며, 조직 내에 사용자 UPN 접미사에 대한 최상위 도메인이 있는 Microsoft Office 365 고객(예: @contoso.com 또는 @fabrikam.com)은 각 접미사에 대해 AD FS 2.0 페더레이션 서비스를 개별적으로 배포해야 합니다. 추가적인 AD FS 2.0 서버를 필요로 하지 않고 AD FS 서버가 이 시나리오를 지원할 수 있도록 하는, <strong>SupportMultipleDomain</strong> 스위치와 함께 작동하는 [AD FS 2.0 롤업](http://support.microsoft.com/kb/2607496)이 있습니다. 자세한 정보는 [이 블로그](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)를 참조하세요.
+<strong>해결 방법:</strong> Microsoft Office 365 고객은 다음과 같은 경우 각 접미사에 대해 AD FS 2.0 페더레이션 서비스의 별도 인스턴스를 배포해야 합니다.
+- AD FS 2.0을 통해 SSO(Single Sign-On) 사용 및
+- 조직 내 사용자의 UPN 접미사에 대해 여러 최상위 도메인 보유(예: @contoso.com 또는 @fabrikam.com)
+
+
+[AD FS 2.0 롤업](http://support.microsoft.com/kb/2607496)은 <strong>SupportMultipleDomain</strong> 스위치와 함께 작동하여 AD FS 서버가 추가적인 AD FS 2.0 서버를 필요로 하지 않고 이 시나리오를 지원할 수 있도록 합니다. 자세한 내용은 [이 블로그](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)를 참조하세요.
 
 
 ## <a name="android-issues"></a>Android 문제
@@ -146,8 +151,8 @@ ms.locfileid: "39039440"
 
 |오류 메시지|문제|해결 방법|
 |---|---|---|
-|**IT 관리자가 액세스에 대한 라이선스를 할당해야 함**<br>IT 관리자가 이 앱을 사용할 수 있도록 액세스 권한을 할당하지 않았습니다. IT 관리자에게 도움을 받거나 나중에 다시 시도하세요.|사용자 계정에 필요한 라이선스가 없으므로 장치를 등록할 수 없습니다.|사용자가 장치를 등록하려면 먼저 필요한 라이선스를 할당받아야 합니다. 이 메시지는 지정된 모바일 장치 관리 기관에 맞지 않는 라이선스 유형이 있음을 의미합니다. 예를 들어 Intune이 모바일 장치 관리 기관으로 지정되었는데 System Center 2012 R2 Configuration Manager 라이선스를 사용하는 경우 이 오류가 표시됩니다.<br><br>자세한 내용은 [사용자 계정에 Intune 라이선스 할당](/intune/licenses-assign)을 참조하세요.
-|**IT 관리자가 MDM 기관을 설정해야 함**<br>IT 관리자가 MDM 기관을 설정하지 않은 것 같습니다. IT 관리자에게 도움을 받거나 나중에 다시 시도하세요.|모바일 장치 관리 기관이 정의되지 않았습니다.|Intune에서 모바일 장치 관리 기관이 지정되지 않았습니다. [모바일 장치 관리 기관을 설정](/intune/mdm-authority-set)하는 방법을 참조하세요.|
+|**IT 관리자가 액세스에 대한 라이선스를 할당해야 함**<br>IT 관리자는 사용자에게 이 앱을 사용할 수 있는 액세스 권한을 할당하지 않았습니다. IT 관리자에게 도움을 받거나 나중에 다시 시도하세요.|사용자 계정에 필요한 라이선스가 없으므로 장치를 등록할 수 없습니다.|사용자가 장치를 등록하려면 먼저 필요한 라이선스를 할당받아야 합니다. 이 메시지는 모바일 장치 관리 기관에 맞지 않는 라이선스 형식이 있음을 의미합니다. 예를 들어 다음 두 가지가 모두 true인 경우 이 오류가 표시됩니다.<ol><li>Intune이 모바일 장치 관리 기관으로 설정되었습니다.</li><li>System Center 2012 R2 Configuration Manager를 사용하고 있습니다.</li></ol>자세한 내용은 [사용자 계정에 Intune 라이선스 할당](/intune/licenses-assign)을 참조하세요.|
+|**IT 관리자가 MDM 기관을 설정해야 함**<br>IT 관리자가 MDM 기관을 설정하지 않은 것 같습니다. IT 관리자에게 도움을 받거나 나중에 다시 시도하세요.|모바일 장치 관리 기관이 정의되지 않았습니다.|모바일 장치 관리 기관이 Intune에서 설정되지 않았습니다. [모바일 장치 관리 기관을 설정](/intune/mdm-authority-set)하는 방법을 참조하세요.|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>장치가 Intune 서비스에 체크 인되지 않고 Intune 관리 콘솔에서 "비정상"으로 표시됨
@@ -157,7 +162,7 @@ ms.locfileid: "39039440"
 - 관리자 콘솔에서 관리 상태가 **비정상**으로 표시됩니다.
 - 조건부 액세스 정책으로 보호되는 사용자가 회사 리소스에 액세스할 수 없게 될 수 있습니다.
 
-삼성에 따르면 일부 삼성 장치에 함께 제공되는 Samsung Smart Manager 소프트웨어는 Intune 회사 포털 및 해당 구성 요소를 비활성화할 수 있다고 합니다. 회사 포털이 비활성화된 상태이면 백그라운드에서 실행될 수 없으므로 Intune 서비스에 연결할 수 없습니다.
+특정 Samsung 장치에 탑재되는 Samsung Smart Manager 소프트웨어는 Intune 회사 포털 및 해당 구성 요소를 비활성화할 수 있습니다. 회사 포털이 비활성화된 상태이면 백그라운드에서 실행될 수 없으므로 Intune 서비스에 연결할 수 없습니다.
 
 **해결 방법 1:**
 
@@ -168,7 +173,7 @@ ms.locfileid: "39039440"
 
 **해결 방법 2:**
 
-사용자에게 Android 6.0으로 업그레이드해 보도록 요청합니다. Android 6.0 장치에서는 비활성화 문제가 발생하지 않습니다. 업데이트를 사용할 수 있는지 확인하려면 **설정** > **장치 정보** > **수동으로 업데이트 다운로드**로 이동하고 장치에 표시되는 메시지를 따릅니다.
+사용자에게 Android 6.0으로 업그레이드해 보도록 요청합니다. Android 6.0 장치에서는 비활성화 문제가 발생하지 않습니다. 업데이트를 사용할 수 있는지 확인하려면 **설정** > **장치 정보** > **수동으로 업데이트 다운로드**로 이동하고 프롬프트를 따릅니다.
 
 **3:**
 
@@ -204,15 +209,17 @@ ms.locfileid: "39039440"
 
 **해결 방법:**
 
-1.  사용 중인 Intune 서비스 버전에 적절한 라이선스를 사용자에게 할당했는지 확인합니다.
+1.  사용자가 사용 중인 Intune 서비스 버전에 적절한 라이선스를 할당받았는지 확인합니다.
 
-2.  장치가 아직 다른 MDM 공급자에게 등록하지 않았는지 또는 아직 관리 프로필을 설치하지 않았는지 확인합니다.
+2.  장치가 다른 MDM 공급자에 등록되지 않았는지 확인합니다.
 
-3.  Android용 Chrome이 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
+3. 장치에 관리 프로필이 설치되지 않았는지 확인합니다.
+
+4.  Android용 Chrome이 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
 
 ### <a name="android-certificate-issues"></a>Android 인증서 문제
 
-**문제**: 장치에서 *필요한 인증서가 장치에 없으므로 로그인할 수 없습니다.* 라는 메시지가 표시됩니다.
+**문제**: 사용자에게는 장치에서 *필수 인증서가 장치에 누락되었으므로 로그인할 수 없습니다.* 라는 메시지가 표시됩니다.
 
 **해결 방법 1**:
 
@@ -220,7 +227,7 @@ ms.locfileid: "39039440"
 
 **해결 방법 2**:
 
-사용자가 회사 자격 증명을 입력하고 페더레이션 로그인을 위해 리디렉션된 후에도 인증서가 없다는 오류가 계속 표시되는 경우 AD FS(Active Directory Federation Services) 서버에 중간 인증서가 없는 것일 수 있습니다.
+회사 자격 증명을 입력하고 페더레이션된 로그인에 대해 리디렉션된 후에 사용자에게는 누락된 인증서 오류가 계속 표시될 수 있습니다. 이 경우에 오류는 중간 인증서가 AD FS(Active Directory Federation Services) 서버에서 누락되었음을 의미할 수 있습니다.
 
 Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.microsoft.com/library/cc783349.aspx)에 포함되어야 하므로 인증서 오류가 발생합니다. 현재, 기본 AD FS 서버 또는 WAP - AD FS 프록시 서버 설치에서는 SSL 클라이언트 hello에 대한 SSL 서버 hello 응답에 AD FS 서비스 SSL 인증서만 전송합니다.
 
@@ -232,7 +239,7 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 4.  **인증 경로** 탭을 선택하여 해당 인증서의 상위 인증서를 확인합니다.
 5.  각 상위 인증서에서 **인증서 보기**를 선택합니다.
 6.  **세부 정보** > **파일에 복사...** 를 선택합니다.
-7.  마법사의 메시지에 따라 상위 인증서의 공개 키를 원하는 파일 위치에 내보내거나 저장합니다.
+7.  마법사의 프롬프트에 따라 부모 인증서의 공개 키를 선택한 파일 위치에 내보내거나 저장합니다.
 8.  **인증서** > **모든 작업** > **가져오기**를 마우스 오른쪽 단추로 클릭합니다.
 9.  마법사의 메시지에 따라 상위 인증서를 **LocalComputer\Personal\Certificates**로 가져옵니다.
 10. AD FS 서버를 다시 시작합니다.
@@ -256,16 +263,16 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 다음 표에서는 Intune에 iOS 장치를 등록하는 동안 최종 사용자에게 표시될 수 있는 오류를 보여 줍니다.
 
 |오류 메시지|문제|해결 방법|
-|-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------|-----|----------|
 |NoEnrollmentPolicy|등록 정책을 찾을 수 없음|APNs(Apple Push Notification Service)와 같은 모든 등록 필수 구성 요소가 설정되었는지와 "플랫폼으로 iOS 사용"이 설정되었는지 확인합니다. 자세한 내용은 [iOS 및 Mac 장치 관리 설정](ios-enroll.md)을 참조하세요.|
 |DeviceCapReached|너무 많은 모바일 장치가 이미 등록되어 있습니다.|사용자는 다른 모바일 장치를 등록하기 전에 현재 등록된 모바일 장치 중 하나를 회사 포털에서 제거해야 합니다. [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) 중에서 사용 중인 장치 유형에 대한 지침을 참조하세요.|
-|APNSCertificateNotValid|모바일 장치와 회사 네트워크 간 통신을 허용하는 인증서에 문제가 있습니다.<br /><br />|APNs(Apple Push Notification Service)에서 등록된 iOS 장치에 연결할 수 있는 채널을 제공합니다. APNs 인증서를 가져오는 단계를 수행하지 않았거나 APNs 인증서가 만료된 경우에는 등록 시도가 실패하고 이 메시지가 나타납니다.<br /><br />[Active Directory를 동기화하고 Intune에 사용자 추가](users-add.md) 및 [사용자 및 장치 구성](groups-add.md)에서 사용자를 설정하는 방법에 대한 정보를 검토하세요.|
-|AccountNotOnboarded|모바일 장치와 회사 네트워크 간 통신을 허용하는 인증서에 문제가 있습니다.<br /><br />|APNs(Apple Push Notification Service)에서 등록된 iOS 장치에 연결할 수 있는 채널을 제공합니다. APNs 인증서를 가져오는 단계를 수행하지 않았거나 APNs 인증서가 만료된 경우에는 등록 시도가 실패하고 이 메시지가 나타납니다.<br /><br />자세한 내용은 [Microsoft Intune을 사용한 iOS 및 Mac 관리 설정](ios-enroll.md)을 검토하세요.|
-|DeviceTypeNotSupported|사용자가 비 iOS 장치를 사용하여 등록하려고 했을 수 있습니다. 등록하려는 모바일 장치 유형이 지원되지 않습니다.<br /><br />장치가 iOS 버전 8.0 이상을 실행하고 있는지 확인합니다.<br /><br />|사용자 장치가 iOS 버전 8.0 이상을 실행 중인지 확인합니다.|
-|UserLicenseTypeInvalid|사용자 계정이 아직 필수 사용자 그룹의 구성원이 아니어서 장치를 등록할 수 없습니다.<br /><br />|사용자가 장치를 등록하려면 올바른 사용자 그룹의 구성원이어야 합니다. 이 메시지는 지정된 모바일 장치 관리 기관에 맞지 않는 라이선스 유형이 있음을 의미합니다. 예를 들어 Intune이 모바일 장치 관리 기관으로 지정되었는데 System Center 2012 R2 Configuration Manager 라이선스를 사용하는 경우 이 오류가 표시됩니다.<br /><br />자세한 내용은 다음 문서를 검토하세요.<br /><br />[Microsoft Intune을 사용한 iOS 및 Mac 관리 설정](ios-enroll.md)과 [Active Directory를 동기화하고 Intune에 사용자 추가](users-add.md) 및 [사용자 및 장치 구성](groups-add.md)의 사용자를 설정하는 방법에 대한 정보를 검토하세요.|
-|MdmAuthorityNotDefined|모바일 장치 관리 기관이 정의되지 않았습니다.<br /><br />|Intune에서 모바일 장치 관리 기관이 지정되지 않았습니다.<br /><br />[Microsoft Intune 30일 평가판으로 시작하기](free-trial-sign-up.md)에서 "6단계: 모바일 장치 등록 및 앱 설치" 섹션의 항목 #1을 검토합니다.|
+|APNSCertificateNotValid|모바일 장치가 회사 네트워크와 통신할 수 있도록 하는 인증서에 문제가 있습니다.<br /><br />|APNs(Apple Push Notification Service)에서 등록된 iOS 장치에 연결할 수 있는 채널을 제공합니다. 다음과 같은 경우 등록에 실패하면 이 메시지가 표시됩니다.<ul><li>APNs 인증서를 가져오는 단계가 완료되지 않았거나</li><li>APNs 인증서가 만료되었습니다.</li></ul>[Active Directory를 동기화하고 Intune에 사용자 추가](users-add.md) 및 [사용자 및 장치 구성](groups-add.md)에서 사용자를 설정하는 방법에 대한 정보를 검토하세요.|
+|AccountNotOnboarded|모바일 장치가 회사 네트워크와 통신할 수 있도록 하는 인증서에 문제가 있습니다.<br /><br />|APNs(Apple Push Notification Service)에서 등록된 iOS 장치에 연결할 수 있는 채널을 제공합니다. 다음과 같은 경우 등록에 실패하면 이 메시지가 표시됩니다.<ul><li>APNs 인증서를 가져오는 단계가 완료되지 않았거나</li><li>APNs 인증서가 만료되었습니다.</li></ul>자세한 내용은 [Microsoft Intune을 사용한 iOS 및 Mac 관리 설정](ios-enroll.md)을 검토하세요.|
+|DeviceTypeNotSupported|사용자가 비 iOS 장치를 사용하여 등록하려고 했을 수 있습니다. 등록하려는 모바일 장치 유형이 지원되지 않습니다.<br /><br />장치가 iOS 버전 8.0 이상을 실행하고 있는지 확인합니다.<br /><br />|사용자 장치가 iOS 버전 8.0 이상을 실행하고 있어야 합니다.|
+|UserLicenseTypeInvalid|사용자 계정이 아직 필수 사용자 그룹의 멤버가 아니므로 장치를 등록할 수 없습니다.<br /><br />|사용자가 장치를 등록하려면 올바른 사용자 그룹의 구성원이어야 합니다. 이 메시지는 모바일 장치 관리 기관에 맞지 않는 라이선스 형식이 있음을 의미합니다. 예를 들어 다음 두 가지가 모두 true인 경우 이 오류가 표시됩니다.<ol><li>Intune이 모바일 장치 관리 기관으로 설정되었습니다.</li><li>System Center 2012 R2 Configuration Manager를 사용하고 있습니다.</li></ol>자세한 내용은 다음 문서를 검토하세요.<br /><br />[Microsoft Intune을 사용한 iOS 및 Mac 관리 설정](ios-enroll.md)과 [Active Directory를 동기화하고 Intune에 사용자 추가](users-add.md) 및 [사용자 및 장치 구성](groups-add.md)의 사용자를 설정하는 방법에 대한 정보를 검토하세요.|
+|MdmAuthorityNotDefined|모바일 장치 관리 기관이 정의되지 않았습니다.<br /><br />|모바일 장치 관리 기관이 Intune에서 설정되지 않았습니다.<br /><br />[Microsoft Intune 30일 평가판으로 시작하기](free-trial-sign-up.md)에서 "6단계: 모바일 장치 등록 및 앱 설치" 섹션의 항목 #1을 검토합니다.|
 
-### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>장치가 비활성 상태이거나, 관리 콘솔에서 통신할 수 없음
+### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>장치가 비활성 상태이거나, 관리 콘솔에서 통신할 수 없습니다.
 **문제:** iOS 장치가 Intune 서비스에서 체크 인되지 않습니다. 장치는 보호되는 회사 리소스에 대한 액세스를 유지하기 위해 서비스와 정기적으로 체크 인해야 합니다. 장치가 체크 인되지 않으면 다음과 같이 됩니다.
 
 - 장치가 Intune 서비스에서 정책, 앱 및 원격 명령을 받을 수 없습니다.
@@ -274,7 +281,7 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 
 **해결 방법:** 최종 사용자에게 다음 해결 방법을 공유하여 회사 리소스에 대한 액세스 권한을 다시 얻도록 지원합니다.
 
-사용자는 iOS 회사 포털 앱을 시작하는 경우 장치와 Intune과의 연결이 끊겼는지 알 수 있습니다. 연결이 끊겼다고 감지되면 다시 연결하기 위해 Intune과 동기화를 자동으로 시도하며 사용자에게 **동기화하는 중...** 이라는 인라인 알림이 표시됩니다.
+사용자는 iOS 회사 포털 앱을 시작하는 경우 장치와 Intune과의 연결이 끊겼는지 알 수 있습니다. 연결이 끊겼다고 감지되면 다시 연결하기 위해 Intune과 동기화를 자동으로 시도합니다(사용자에게는 **동기화하는 중...** 이라는 메시지가 표시됨).
 
   ![동기화하는 중 알림](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
@@ -293,15 +300,17 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 등록하고 나면 장치는 정상 상태로 되돌아가고 회사 리소스에 대한 액세스 권한을 다시 얻게 됩니다.
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>WS-Trust 1.3이 사용하도록 설정되어 있는지 확인
-**문제** DEP(장치 등록 프로그램) iOS 장치를 등록할 수 없음
+**문제** DEP(장치 등록 프로그램) iOS 장치를 등록할 수 없습니다.
 
-사용자 선호도가 포함된 장치 등록 프로그램 장치를 등록하려면 사용자 토큰을 요청하기 위해 WS-Trust 1.3 사용자 이름/혼합 끝점을 사용하도록 설정해야 합니다. 기본적으로 Active Directory에서는 이 끝점을 사용하도록 설정합니다. Get-AdfsEndpoint PowerShell cmdlet을 사용하고 trust/13/UsernameMixed 끝점을 조회하여 사용하도록 설정된 끝점 목록을 가져옵니다. 예를 들면 다음과 같습니다.
+사용자 선호도를 사용하여 DEP 장치를 등록하려면 WS-Trust 1.3 사용자 이름/혼합 엔드포인트를 사용하도록 설정하여 사용자 토큰을 요청해야 합니다. 기본적으로 Active Directory에서는 이 엔드포인트를 사용하도록 설정합니다. 설정된 엔드포인트 목록을 가져오려면 Get-AdfsEndpoint PowerShell cmdlet을 사용하고 trust/13/UsernameMixed 엔드포인트를 조회합니다. 예를 들면 다음과 같습니다.
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
 자세한 내용은 [Get-AdfsEndpoint 설명서](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)를 참조하세요.
 
-자세한 내용은 [Active Directory Federation Services 보안에 대한 모범 사례](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs)를 참조하세요. ID 페더레이션 공급자에서 WS-Trust 1.3 사용자 이름/혼합이 사용하도록 설정되어 있는지 확인 시 추가 도움이 필요한 경우에는 ADFS 또는 타사 ID 공급업체를 사용하고 있으면 Microsoft 지원에 문의하세요.
+자세한 내용은 [Active Directory Federation Services 보안에 대한 모범 사례](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs)를 참조하세요. WS-Trust 1.3 사용자 이름/혼합을 ID 페더레이션 공급자에 사용할지 여부를 결정하는 도움말의 경우:
+- ADFS를 사용한다면 Microsoft 지원에 문의하세요.
+- 타사 ID 공급 업체에 문의하세요.
 
 
 ### <a name="profile-installation-failed"></a>프로필 설치 실패
@@ -309,19 +318,21 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>실패한 프로필 설치에 대한 문제 해결 절차
 
-1.  사용 중인 Intune 서비스 버전에 적절한 라이선스를 사용자에게 할당했는지 확인합니다.
+1.  사용자가 사용 중인 Intune 서비스 버전에 적절한 라이선스를 할당받았는지 확인합니다.
 
-2.  장치가 아직 다른 MDM 공급자에게 등록하지 않았는지 또는 아직 관리 프로필을 설치하지 않았는지 확인합니다.
+2.  장치가 다른 MDM 공급자에 등록되지 않았는지 확인합니다.
 
-3.  [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)으로 이동하고 메시지가 표시되면 프로필을 설치하도록 시도합니다.
+3. 장치에 관리 프로필이 설치되지 않았는지 확인합니다.
 
-4.  iOS용 Safari가 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
+4.  [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)으로 이동하고 메시지가 표시되면 프로필을 설치하도록 시도합니다.
+
+5.  iOS용 Safari가 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune에서 System Center Configuration Manager를 사용하면, 등록된 iOS 장치가 콘솔에 표시되지 않습니다.
-**문제:** 사용자가 iOS 장치를 등록하지만 Configuration Manager 관리 콘솔에 나타나지 않습니다. 장치가 등록되었다는 것을 나타내지 않습니다. 가능한 원인:
+**문제:** 사용자가 iOS 장치를 등록하지만 Configuration Manager 관리 콘솔에 표시되지 않습니다. 장치가 등록되었다는 것을 표시하지 않습니다. 가능한 원인:
 
 - Configuration Manager 사이트의 Microsoft Intune 커넥터가 Intune 서비스와 통신하지 못합니다.
-- Data Discovery Manager(ddm) 구성 요소 또는 상태 관리자(statmgr) 구성 요소가 Intune 서비스의 메시지를 처리하지 못합니다.
+- Data Discovery Manager(ddm) 구성 요소 또는 상태 관리자(statmgr) 구성 요소가 Intune 서비스의 메시지를 처리하지 않습니다.
 - 하나의 계정으로 MDM 인증서를 다운로드하고 다른 계정에서 사용했을 수 있습니다.
 
 
@@ -334,11 +345,61 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 이러한 로그 파일에서 어떤 내용을 찾을지 보여 주는 예가 곧 추가될 예정입니다.
 
 
+### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>10분 넘게 사용자의 iOS 장치가 등록 화면에서 중단되었습니다.
+
+**문제**: 등록 중인 장치가 두 화면 중 하나에서 중단되었을 수 있습니다.
+- "Microsoft"에서 최종 구성 대기 중
+- 안내된 액세스 앱을 사용할 수 없음 관리자에게 문의하세요.
+
+이 문제는 다음과 같은 경우에 발생할 수 있습니다.
+- Apple 서비스에서 임시 중단이 발생했거나
+- iOS 등록은 테이블에 표시된 대로 VPP 토큰을 사용하도록 설정되어 있지만 VPP 토큰에 문제가 발생했습니다.
+
+| 등록 설정 | 값 |
+| ---- | ---- |
+| 플랫폼 | iOS |
+| 사용자 선호도 | 사용자 선호도를 사용하여 등록 |
+|Apple 설정 도우미 대신 회사 포털을 사용하여 인증 | 예 |
+| VPP를 사용하여 회사 포털 설치 | 토큰 사용: 토큰 주소 |
+| 인증할 때까지 회사 포털을 단일 앱 모드로 실행 | 예 |
+
+**해결 방법**:이 문제를 해결하려면 다음을 수행해야 합니다.
+1. VPP 토큰에서 문제가 발생했는지 확인하고 해결합니다.
+2. 차단된 장치를 식별합니다.
+3. 영향을 받는 장치를 초기화합니다.
+4. 등록 프로세스를 다시 시작한다고 사용자에게 알립니다.
+
+#### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>VPP 토큰에서 문제가 발생했는지 확인
+1. **Intune** > **장치 등록** > **Apple 등록** > **등록 프로그램 토큰** > 토큰 이름 > **프로필** > 프로필 이름 > **관리** > **속성**으로 이동합니다.
+2. 속성을 검토하여 다음과 유사한 오류가 표시되는지 확인합니다.
+    - 이 토큰은 만료되었습니다.
+    - 이 토큰은 회사 포털 라이선스에 해당되지 않습니다.
+    - 다른 서비스에서 이 토큰을 사용 중입니다.
+    - 다른 테넌트에서 이 토큰을 사용 중입니다.
+    - 이 토큰은 삭제되었습니다.
+3. 토큰에 대한 문제를 해결합니다.
+
+#### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>VPP 토큰에서 차단된 장치 식별
+1. **Intune** > **장치 등록** > **Apple 등록** > **등록 프로그램 토큰** > 토큰 이름 > **장치**로 이동합니다.
+2. **프로필 상태** 열을 **차단됨**으로 필터링합니다.
+3. **차단됨** 상태인 모든 장치에 대한 일련 번호를 기록해 둡니다.
+
+#### <a name="remotely-wipe-the-blocked-devices"></a>원격으로 차단된 장치 초기화
+VPP 토큰에서 발생한 문제를 해결한 후에 차단된 장치를 초기화해야 합니다.
+1. **Intune** > **장치** > **모든 장치** > **열** > **일련 번호** > **적용**으로 이동합니다. 
+2. 차단된 장치 각각의 경우 **모든 장치** 목록에서 선택한 다음, **초기화** > **예**를 선택합니다.
+
+#### <a name="tell-the-users-to-restart-the-enrollment-process"></a>등록 프로세스를 다시 시작한다고 사용자에게 알립니다.
+차단된 장치를 초기화한 후에 등록 프로세스를 다시 시작한다고 사용자에게 알릴 수 있습니다.
+
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager with Intune 사용 시 문제
 ### <a name="mobile-devices-disappear"></a>모바일 장치가 사라집니다.
-**문제:** 모바일 장치를 Configuration Manager에 성공적으로 등록한 후 모바일 장치가 모바일 장치 컬렉션에서 사라집니다. 하지만 장치에는 여전히 관리 프로필이 있고 CSS 게이트웨이에는 이 장치가 나열됩니다.
+**문제:** 모바일 장치를 Configuration Manager에 성공적으로 등록하면 모바일 장치가 모바일 장치 컬렉션에서 사라집니다. 하지만 장치에는 여전히 관리 프로필이 있고 CSS 게이트웨이에는 이 장치가 나열됩니다.
 
-**해결 방법:** 이런 일은 도메인에 가입되지 않은 장치를 제거하는 사용자 지정 프로세스가 있거나 사용자가 장치를 가입에서 더 이상 사용하지 않으면 발생할 수 있습니다. 어느 프로세스나 사용자 계정이 Configuration Manager 콘솔에서 장치를 제거했는지 확인하려면 다음 절차를 수행하세요.
+**해결 방법:** 다음의 원인으로 이 문제가 발생할 수 있습니다.
+- 도메인에 조인되지 않은 장치를 제거하는 사용자 지정 프로세스가 있거나 
+- 사용자가 구독에서 장치를 사용 중지했습니다.
+어느 프로세스나 사용자 계정이 Configuration Manager 콘솔에서 장치를 제거했는지 확인하려면 다음 절차를 수행하세요.
 
 #### <a name="check-how-device-was-removed"></a>장치가 제거된 방법 확인
 
@@ -352,29 +413,26 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 
     ![장치 삭제 진단 스크린샷](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  Configuration Manager에 예약된 작업, 스크립트, 또는 도메인이 아닌, 모바일 또는 관련 장치를 자동으로 제거할 수 있는 기타 프로세스가 없는지 확인합니다.
-
-
-
+5.  Configuration Manager에 예약된 작업, 스크립트 또는 기타 프로세스가 없는지 확인합니다. 이러한 항목은 도메인이 아닌, 모바일 또는 관련 장치를 자동으로 제거할 수 있습니다.
 
 ### <a name="other-ios-enrollment-errors"></a>기타 iOS 등록 오류
 [Microsoft Intune에서 iOS 장치 등록 문제 해결](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune)의 설명서에서 iOS 등록 오류 목록이 제공됩니다.
 
 ## <a name="pc-issues"></a>PC 문제
 
-
 |오류 메시지|문제|해결 방법|
 |---|---|---|
-|**IT 관리자가 액세스에 대한 라이선스를 할당해야 함**<br>IT 관리자가 이 앱을 사용할 수 있도록 액세스 권한을 할당하지 않았습니다. IT 관리자에게 도움을 받거나 나중에 다시 시도하세요.|사용자 계정에 필요한 라이선스가 없으므로 장치를 등록할 수 없습니다.|사용자가 장치를 등록하려면 먼저 필요한 라이선스를 할당받아야 합니다. 이 메시지는 지정된 모바일 장치 관리 기관에 맞지 않는 라이선스 유형이 있음을 의미합니다. 예를 들어 Intune이 모바일 장치 관리 기관으로 지정되었는데 System Center 2012 R2 Configuration Manager 라이선스를 사용하는 경우 이 오류가 표시됩니다.<br>[사용자 계정에 Intune 라이선스를 할당하는 방법](https://docs.microsoft.com/intune/licenses-assign)에 대한 정보를 참조하세요.|
+|**IT 관리자가 액세스에 대한 라이선스를 할당해야 함**<br>IT 관리자는 사용자에게 이 앱을 사용할 수 있는 액세스 권한을 할당하지 않았습니다. IT 관리자에게 도움을 받거나 나중에 다시 시도하세요.|사용자 계정에 필요한 라이선스가 없으므로 장치를 등록할 수 없습니다.|사용자가 장치를 등록하려면 먼저 필요한 라이선스를 할당받아야 합니다. 이 메시지는 모바일 장치 관리 기관에 맞지 않는 라이선스 형식이 있음을 의미합니다. 예를 들어 다음 두 가지가 모두 true인 경우 이 오류가 표시됩니다. <ol><li>Intune이 모바일 장치 관리 기관으로 설정되었습니다.</li><li>System Center 2012 R2 Configuration Manager를 사용하고 있습니다.</li></ol>[사용자 계정에 Intune 라이선스를 할당하는 방법](https://docs.microsoft.com/intune/licenses-assign)에 대한 정보를 참조하세요.|
 
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>컴퓨터가 이미 등록되었습니다. - 오류: hr 0x8007064c
 **문제:** **컴퓨터가 이미 등록되었습니다.** 라는 오류와 함께 등록에 실패합니다. 등록 로그에 **hr 0x8007064c** 오류가 표시됩니다.
 
-컴퓨터가 이전에 등록되었거나, 등록된 컴퓨터의 복제 이미지를 사용하기 때문일 수 있습니다. 이전 계정의 계정 인증서가 컴퓨터에 아직 존재합니다.
-
-
+이 오류는 컴퓨터가 다음과 같은 상태이기 때문에 발생할 수 있습니다.
+- 이전에 등록되었거나
+- 이미 등록된 컴퓨터의 복제된 이미지를 포함합니다.
+이전 계정의 계정 인증서가 컴퓨터에 아직 존재합니다.
 
 **해결 방법:**
 
@@ -385,7 +443,7 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 1. Sc_Online_Issuing에서 발급한 Intune 인증서를 찾아서 있으면 삭제합니다.
 1. 다음 레지스트리 키가 있으면 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** 및 모든 하위 키를 삭제합니다.
 1. 다시 등록해 보세요.
-1. 여전히 PC를 등록할 수 없는 경우에는 **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95** 키를 찾아서 있으면 삭제합니다.
+1. 여전히 PC를 등록할 수 없는 경우 **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95** 키를 찾고 있으면 삭제합니다.
 1. 다시 등록해 보세요.
 
     > [!IMPORTANT]
@@ -397,13 +455,13 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 |오류 코드|가능한 문제|권장되는 해결 방법|
 |--------------|--------------------|----------------------------------------|
 |0x80CF0437 |클라이언트 컴퓨터의 시계가 올바른 시간으로 설정되어 있지 않습니다.|클라이언트 컴퓨터의 시계 및 표준 시간대가 올바른 시간 및 표준 시간대로 설정되어 있는지 확인합니다.|
-|0x80240438, 0x80CF0438, 0x80CF402C|Intune 서비스에 연결할 수 없습니다. 클라이언트 프록시 설정을 확인합니다.|클라이언트 컴퓨터의 프록시 구성을 Intune에서 지원하는지 그리고 클라이언트 컴퓨터가 인터넷에 연결되어 있는지 확인합니다.|
-|0x80240438, 0x80CF0438|Internet Explorer 및 로컬 시스템의 프록시 설정이 구성되어 있지 않습니다.|Intune 서비스에 연결할 수 없습니다. 클라이언트 프록시 설정을 확인하고 클라이언트 컴퓨터의 프록시 구성이 Intune에서 지원되는 지와 클라이언트 컴퓨터에서 인터넷에 연결할 수 있는지 확인하세요.|
+|0x80240438, 0x80CF0438, 0x80CF402C|Intune 서비스에 연결할 수 없습니다. 클라이언트 프록시 설정을 확인합니다.|Intune이 클라이언트 컴퓨터의 프록시 구성을 지원하는지 확인합니다. 클라이언트 컴퓨터가 인터넷에 연결되어 있는지 확인합니다.|
+|0x80240438, 0x80CF0438|Internet Explorer 및 로컬 시스템의 프록시 설정이 구성되어 있지 않습니다.|Intune 서비스에 연결할 수 없습니다. 클라이언트 프록시 설정을 확인합니다. Intune이 클라이언트 컴퓨터의 프록시 구성을 지원하는지 확인합니다. 클라이언트 컴퓨터가 인터넷에 연결되어 있는지 확인합니다.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|등록 패키지가 오래되었습니다.|관리 작업 영역에서 최신 클라이언트 소프트웨어 패키지를 다운로드하여 설치합니다.|
-|0x80043002, 0x80CF3002|계정이 유지 관리 모드에 있습니다.|계정이 유지 관리 모드에 있는 경우 새 클라이언트 컴퓨터를 등록할 수 없습니다. 계정 설정을 보려면 자신의 계정으로 로그인합니다.|
+|0x80043002, 0x80CF3002|계정이 유지 관리 모드에 있습니다.|계정이 유지 관리 모드인 경우 새 클라이언트 컴퓨터를 등록할 수 없습니다. 계정 설정을 보려면 자신의 계정으로 로그인합니다.|
 |0x80043003, 0x80CF3003|계정이 삭제되었습니다.|Intune에 대한 계정과 구독이 계속 활성 상태인지 확인하십시오. 계정 설정을 보려면 자신의 계정으로 로그인합니다.|
 |0x80043005, 0x80CF3005|클라이언트 컴퓨터가 사용 중지되었습니다.|몇 시간 기다렸다가 이전 버전의 클라이언트 소프트웨어를 컴퓨터에서 제거한 다음 클라이언트 소프트웨어를 다시 설치해 봅니다.|
-|0x80043006, 0x80CF3006|계정에 허용되는 최대 사용자 수에 도달했습니다.|서비스에 클라이언트 컴퓨터를 더 등록하려면 조직에서 추가 사용자 수를 구매해야 합니다.|
+|0x80043006, 0x80CF3006|계정에 허용되는 최대 사용자 수에 도달했습니다.|서비스에 클라이언트 컴퓨터를 더 등록하려면 조직에서 추가 사용자 수를 구입해야 합니다.|
 |0x80043007, 0x80CF3007|설치 관리자 프로그램과 같은 폴더에서 인증서 파일을 찾을 수 없습니다.|모든 파일을 추출한 후에 설치를 시작합니다. 추출된 파일의 이름이나 위치를 바꾸지 마십시오. 모든 파일은 같은 폴더에 있어야 합니다. 그렇지 않으면 설치할 수 없습니다.|
 |0x8024D015, 0x00240005, 0x80070BC2, 0x80070BC9, 0x80CFD015|클라이언트 컴퓨터를 다시 시작하는 작업이 보류되어 소프트웨어를 설치할 수 없습니다.|컴퓨터를 다시 시작한 다음 클라이언트 소프트웨어를 다시 설치해 봅니다.|
 |0x80070032|클라이언트 컴퓨터에 클라이언트 소프트웨어를 설치하기 위한 필수 구성 요소가 하나 이상 없습니다.|클라이언트 컴퓨터에 필수 업데이트가 모두 설치되었는지 확인한 다음 클라이언트 소프트웨어를 다시 설치해 봅니다.|
@@ -411,7 +469,7 @@ Android 장치의 경우 중간 인증서가 [SSL 서버 hello](https://technet.
 |0x80043009, 0x80CF3009|클라이언트 컴퓨터가 이미 서비스에 등록되어 있습니다.|클라이언트 컴퓨터를 서비스에 다시 등록하기 전에 사용 중지해야 합니다.|
 |0x8004300B, 0x80CF300B|클라이언트를 실행 중인 Windows 버전이 지원되지 않으므로 클라이언트 소프트웨어 설치 패키지를 실행할 수 없습니다.|Intune에서 클라이언트 컴퓨터에서 실행 중인 Windows 버전을 지원하지 않습니다.|
 |0xAB2|Windows Installer에서 사용자 지정 작업에 대한 VBScript 런타임에 액세스할 수 없습니다.|이 오류는 DLL(동적 연결 라이브러리)에 기반한 사용자 지정 작업으로 인해 발생합니다. DLL 문제를 해결하려면 [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues(Microsoft 지원 기술 자료 198038: 패키지 및 배포 문제에 유용한 도구)](https://support.microsoft.com/kb/198038)에 설명된 도구를 사용해야 할 수 있습니다.|
-|0x80cf0440|서비스 끝점에 대한 연결이 종료되었습니다.|평가판 또는 유료 계정 일시 중단되었습니다. 새 평가판 또는 유료 계정을 만들고 다시 등록합니다.|
+|0x80cf0440|서비스 엔드포인트에 대한 연결이 종료되었습니다.|평가판 또는 유료 계정 일시 중단되었습니다. 새 평가판 또는 유료 계정을 만들고 다시 등록합니다.|
 
 
 

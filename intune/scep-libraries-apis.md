@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 31c083dcd2087de99830317d892750a42cc5ae6d
+ms.sourcegitcommit: ae62a269778cdbf1d207cd017de522f934b030e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575052"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700985"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API를 사용하여 SCEP에 대한 타사 CA를 Intune에 추가
 
@@ -125,6 +125,13 @@ IntuneScepServiceClient(
     - AAD_APP_KEY="등록 프로세스 중에 얻은 Azure 응용 프로그램 키"
     - TENANT="등록 프로세스 중에 얻은 테넌트 ID"
     - PROVIDER_NAME_AND_VERSION="제품 및 해당 버전을 식별하는 데 사용되는 정보"
+    
+솔루션에 인증을 사용하거나 사용하지 않는 프록시가 필요한 경우 다음 속성을 추가할 수 있습니다.
+
+    - PROXY_HOST="프록시가 호스팅되는 호스트입니다."
+    - PROXY_PORT="프록시에서 수신 대기 중인 포트입니다."
+    - PROXY_USER="프록시에서 기본 인증을 사용하는 경우 사용할 사용자 이름입니다."
+    - PROXY_PASS="프록시에서 기본 인증을 사용하는 경우 사용할 암호입니다."
 
 Throws:
 

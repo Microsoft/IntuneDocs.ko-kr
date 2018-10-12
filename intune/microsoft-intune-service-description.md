@@ -14,18 +14,18 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 48f15493d25ba431cedc76533c35c7307fd0f848
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 9cba874c9288b86f5676b38e587a68c227913200
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254142"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562816"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 서비스 설명
 
 Intune은 직원이 회사 데이터를 보호하면서 생산성을 높일 수 있도록 하는 클라우드 기반 엔터프라이즈 이동성 관리(EMM) 서비스입니다. Intune을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
 * 직원이 회사 데이터에 액세스하는 데 사용하는 모바일 장치를 관리합니다.
-* 직원이 사용하는 모바일 앱을 관리합니다.
+* 직원이 사용하는 클라이언트 앱을 관리합니다.
 * 직원이 회사 정보에 액세스하여 이를 공유하는 방법을 제어할 수 있게 하여 회사 정보를 보호합니다.
 * 장치와 앱이 회사 보안 요구 사항을 준수하는지 확인합니다.
 

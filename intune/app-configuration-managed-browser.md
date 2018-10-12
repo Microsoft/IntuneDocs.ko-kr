@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: eb4a80a9de03844c6fffa5e56f09c375645f9188
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43675018"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864544"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Microsoft Intune에서 보호되는 브라우저 정책을 사용하여 인터넷 액세스 관리
 
@@ -53,10 +53,9 @@ Managed Browser는 SSLv3(Secure Sockets Layer 버전 3) 암호화 프로토콜�
 
 -   Android 4 이상을 실행하는 장치
 
--   iOS 8.0 이상을 실행하는 장치
+-   iOS 10.0 이상을 실행하는 장치
 
 >[!IMPORTANT]
->2017년 10월을 기준으로 Android 앱에서 Intune Managed Browser 앱은 Android 4.4 이상을 실행하는 장치만 지원합니다. iOS의 Intune Managed Browser 앱은 iOS 9.0 이상을 실행하는 장치만 지원합니다.
 >Android 및 iOS 이전 버전에서도 계속 Managed Browser를 사용할 수는 있지만 새로운 버전의 앱을 설치할 수 없고 모든 기능을 액세스하지 못할 수 있습니다. 이러한 장치를 지원되는 운영 체제 버전으로 업데이트하는 것이 좋습니다.
 
 

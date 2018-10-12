@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fccfcbceecc9aa0667aa9fd6656c2fcc524d363
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 370b02d06276cefa21339d3617068d5777cb8668
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34569360"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168933"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune에서 Mobile Threat Defense 커넥터를 사용하도록 설정
 
@@ -31,13 +31,13 @@ Mobile Threat Defense(MTD)를 설치하는 동안 MTD 파트너 콘솔에서 위
 
 ## <a name="to-enable-the-mtd-connector"></a>MTD 커넥터를 사용하도록 설정하려면
 
-1. [Azure Portal](https://portal.azure.com)로 이동한 다음 Intune 자격 증명을 사용하여 로그인합니다. 정상적으로 로그인되면 **Azure 대시보드**가 표시됩니다.
+1. [Azure Portal](https://portal.azure.com)로 이동한 다음 Intune 자격 증명을 사용하여 로그인합니다. 성공적으로 로그인한 후 **Azure 대시보드**를 참조합니다.
 
 2. **Azure 대시보드**의 왼쪽 메뉴에서 **모든 서비스**를 선택한 다음, 텍스트 상자 필터에 **Intune**을 입력합니다.
 
 3. **Intune**을 선택하면 **Intune 대시보드**가 열립니다.
 
-4. **Intune 대시보드**에서 **장치 준수**를 선택하고 **설치** 섹션 아래에서 **Mobile Threat Defense**를 선택합니다.
+4. **Intune 대시보드**에서 **장치 규정 준수**를 선택한 다음, **설치** 섹션 아래에서 **Mobile Threat Defense**를 선택합니다.
 
 5. **Mobile Threat Defense** 창에서 **추가**를 선택합니다.
 
@@ -45,11 +45,11 @@ Mobile Threat Defense(MTD)를 설치하는 동안 MTD 파트너 콘솔에서 위
 
     ![Intune Azure Portal의 MTD 설치](./media/enable-mtd-connector-1.png)
 
-7. 조직의 요구 사항에 따라 전환 옵션을 사용하도록 설정합니다.
+7. 조직의 요구 사항에 따라 전환 옵션을 사용하도록 설정합니다. 표시되는 설정/해제 옵션은 MTD 파트너에 따라 다릅니다.
 
 ## <a name="mtd-toggle-options"></a>MTD 설정/해제 옵션
 
-조직의 요구 사항에 따라 사용하도록 설정해야 하는 MTD 설정/해제 옵션을 결정할 수 있습니다. 아래에 자세한 내용이 나와 있습니다.
+조직의 요구 사항에 따라 사용 하도록 설정해야 하는 MTD 설정/해제 옵션을 결정할 수 있습니다. 아래에 자세한 내용이 나와 있습니다.
 
 - **Android 4.1+ 장치를 [MTD 파트너 이름] for Work MTD에 연결**: 이 옵션을 사용하도록 설정하는 경우 Android 4.1 이상 장치가 보안 위험을 Intune에 다시 보고하도록 지정할 수 있습니다.
     - **데이터를 받지 못한 경우 비규격으로 표시**: Intune이 MTD 파트너로부터 이 플랫폼에 대한 데이터를 받지 못한 경우 해당 장치를 비규격으로 간주합니다.

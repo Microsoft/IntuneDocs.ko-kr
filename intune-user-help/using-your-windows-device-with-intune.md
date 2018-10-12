@@ -1,11 +1,11 @@
 ---
 title: Intune에서 Windows 장치 사용 | Microsoft 문서
-description: Intune에서 장치가 등록될 때 사용자가 Windows 장치에서 수행할 수 있는 작업으로 연결되는 링크 목록
+description: 회사 포털에서 Windows 장치 문제 해결 또는 관리 링크 검색
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,36 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 645e87ef731cf911824ab16673c01e962c91fb70
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4018c73c2160a3db5d5c8b8843e803b56f2caa3
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017260"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168967"
 ---
-# <a name="using-your-windows-device-with-intune"></a>Intune에서 Windows 장치 사용
+# <a name="using-your-windows-device-with-intune-company-portal"></a>Intune 회사 포털에서 Windows 장치 사용
 
-편리한 업무를 위해 Intune에서 다양한 작업을 수행할 수 있습니다. 다음은 회사에서 요청될 수 있는 가장 일반적인 작업 목록입니다.
+이 문서에서는 Windows용 회사 포털과 관련된 작업 및 정보를 나열합니다. 이 문서는 Windows 장치의 문제를 해결하고 관리하는 데 사용됩니다. 자세한 세부 정보, 단계 및 스크린샷을 보려면 링크를 클릭하세요.  
 
 ## <a name="supported-versions"></a>지원되는 버전
 
-Intune은 현재 다음 버전의 Windows를 지원합니다.
+회사 포털은 현재 다음 Windows 버전을 지원합니다.
 
 * Windows 10(Home, Pro, Education, S 및 Enterprise 버전)
 * Windows Phone 8.1 이상
 * Windows 8.1 RT
 * Windows 8.1
 
-[Windows 10 Holographic](https://www.microsoft.com/hololens)과 같이 Intune에서 지원되는 다른 Windows 버전도 있습니다. 이러한 버전은 매우 특별한 용도로 사용되므로 여기에 나열되어 있지 않습니다.
+[Windows 10 Holographic](https://www.microsoft.com/hololens) 같은 그 외의 Windows 버전도 회사 포털에서 지원됩니다. 이러한 버전은 용도가 매우 한정적이기 때문에 이 문서에서 다루지 않습니다.
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune에 등록하고 회사 포털 설치
+## <a name="enrolling-your-device-and-installing-the-company-portal"></a>장치를 등록하고 회사 포털 설치
 
 - [Intune에서 Windows 장치 등록](enroll-your-device-in-intune-windows.md)
 - [Intune에서 회사 포털 앱을 설치하고 장치를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [Intune에서 장치를 등록하면 회사에 어떤 정보가 표시되나요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [분실하거나 도난당한 장치 초기화(지우기)](reset-erase-your-device-cpwebsite.md)
 
-## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>장치가 Intune에 등록되어 있는 경우 수행할 수 있는 작업
+## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>장치를 관리에 등록한 후 수행할 수 있는 작업
 
 - [장치 암호화](encrypt-your-device-windows.md)
 - [암호 설정 또는 변경](set-or-change-your-password-windows.md)

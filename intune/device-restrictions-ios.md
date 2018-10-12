@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329821"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46330000"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 장치 제한 설정
 
@@ -114,7 +114,7 @@ iOS 감독 모드는 Apple의 장치 등록 프로그램을 통하거나 Apple C
 
 -   **장치가 잠겨 있는 동안 제어 센터 액세스** - 장치가 잠겨 있을 때도 사용자가 제어 센터 앱에 액세스할 수 있습니다.
 -   **장치가 잠겨 있는 동안 알림** - 사용자에게 잠금 화면에서 알림 보기에 대한 액세스를 허용합니다.
--   **장치가 잠겨 있는 동안 암호 목록** - 장치가 잠겨 있는 동안 사용자에게 Passbook 앱에 대한 액세스를 허용합니다.
+-   **장치가 잠겨 있는 동안 Wallet 알림** - 장치가 잠겨 있는 동안 Wallet 앱에 대한 사용자 액세스를 허용합니다.
 -   **장치가 잠겨 있는 동안 오늘 보기** - 장치가 잠겨 있는 동안 사용자에게 오늘 보기를 볼 수 있도록 허용합니다.
 
 ## <a name="app-store-doc-viewing-gaming"></a>앱 스토어, 문서 보기, 게임

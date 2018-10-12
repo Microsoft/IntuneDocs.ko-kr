@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: 77f6391637b8d6f8f2ed47dd84885c11b8b6f476
+ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031323"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46466781"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -32,7 +32,7 @@ iOS용 Microsoft Intune 앱 SDK를 사용하면 네이티브 iOS 앱에 Intune �
 
 * Xcode 9 이상이 설치된 OS X 10.8.5 이상의 Mac OS 컴퓨터에서 실행해야 합니다.
 
-* 앱은 iOS 9.3.5 이상을 대상으로 해야 합니다.
+* 앱은 iOS 10 이상을 대상으로 해야 합니다.
 
 * [iOS용 Intune 앱 SDK 사용 조건](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)을 확인하세요. 기록을 위해 사용 조건의 사본을 인쇄하여 보관하세요. iOS용 Intune 앱 SDK를 다운로드하여 이러한 사용 조건에 동의합니다.  동의하지 않는 경우 소프트웨어를 사용하지 마세요.
 
@@ -40,13 +40,13 @@ iOS용 Microsoft Intune 앱 SDK를 사용하면 네이티브 iOS 앱에 Intune �
 
 ## <a name="whats-in-the-sdk"></a>SDK에 포함된 내용
 
-iOS용 Intune 앱 SDK에는 정적 라이브러리, 리소스 파일, API 헤더, 디버그 설정 .plist 파일 및 구성기 도구가 포함되어 있습니다. 모바일 앱은 단순히 리소스 파일을 포함하고 대부분 정책 적용을 위해 라이브러리에 정적으로 연결할 수 있습니다. 고급 Intune APP 기능은 API를 통해 적용됩니다.
+iOS용 Intune 앱 SDK에는 정적 라이브러리, 리소스 파일, API 헤더, 디버그 설정 .plist 파일 및 구성기 도구가 포함되어 있습니다. 클라이언트 앱은 단순히 리소스 파일을 포함하고 대부분 정책 적용을 위해 라이브러리에 정적으로 연결할 수 있습니다. 고급 Intune APP 기능은 API를 통해 적용됩니다.
 
 이 가이드에서는 iOS용 Intune 앱 SDK의 다음 구성 요소 사용을 설명합니다.
 
-* **libIntuneMAM.a**: Intune 앱 SDK 정적 라이브러리입니다. 앱에서 확장을 사용하지 않는 경우 이 라이브러리를 프로젝트에 연결하여 Intune 모바일 응용 프로그램 관리에 대해 앱을 사용하도록 설정합니다.
+* **libIntuneMAM.a**: Intune 앱 SDK 정적 라이브러리입니다. 앱에서 확장을 사용하지 않는 경우 이 라이브러리를 프로젝트에 연결하여 Intune 클라이언트 응용 프로그램 관리에 대해 앱을 사용하도록 설정합니다.
 
-* **IntuneMAM.framework**: Intune 앱 SDK 프레임워크입니다. 이 프레임워크를 프로젝트에 연결하여 Intune 모바일 응용 프로그램 관리에 대해 앱을 사용하도록 설정합니다. 앱에서 확장을 사용하는 경우, 프로젝트에서 정적 라이브러리의 복사본을 여러 개 만들지 않도록 정적 라이브러리 대신 프레임워크를 사용합니다.
+* **IntuneMAM.framework**: Intune 앱 SDK 프레임워크입니다. 이 프레임워크를 프로젝트에 연결하여 Intune 클라이언트 응용 프로그램 관리에 대해 앱을 사용하도록 설정합니다. 앱에서 확장을 사용하는 경우, 프로젝트에서 정적 라이브러리의 복사본을 여러 개 만들지 않도록 정적 라이브러리 대신 프레임워크를 사용합니다.
 
 * **IntuneMAMResources.bundle**: SDK에서 사용하는 리소스가 있는 리소스 번들입니다.
 

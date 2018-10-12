@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,19 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 99570a30130d35a651701749628cd918acf858e0
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031586"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864561"
 ---
-# <a name="using-your-ios-device-with-intune"></a>Intune에서 iOS 장치 사용
-
-편리한 업무를 위해 Intune에서 다양한 작업을 수행할 수 있습니다. 다음은 회사에서 요청될 수 있는 가장 일반적인 작업 목록입니다.
+# <a name="using-your-ios-device-with-intune-company-portal"></a>Intune 회사 포털에서 iOS 장치 사용
+이 문서에서는 iOS용 회사 포털에 특정된 작업 및 정보를 나열합니다. iOS 장치의 문제를 해결하고 관리하는 데 사용합니다. 자세한 세부 정보, 단계 및 스크린샷을 보려면 링크를 클릭합니다.
 
 ## <a name="supported-versions"></a>지원되는 버전
 
-Intune은 현재 iOS 9.0 이상을 지원합니다.
+iOS용 회사 포털은 현재 iOS 10.0 이상을 지원합니다.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune에 등록하고 회사 포털 설치
 

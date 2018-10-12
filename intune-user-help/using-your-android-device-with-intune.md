@@ -1,11 +1,11 @@
 ---
 title: Intune에서 Android 장치 사용 | Microsoft 문서
-description: Intune에서 장치가 등록될 때 최종 사용자가 Android 모바일 장치에서 수행할 수 있는 작업으로 연결되는 링크 목록
+description: Intune에 등록된 Android 장치를 관리하고 문제를 해결할 수 있는 링크 목록
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018671"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168950"
 ---
-# <a name="using-your-android-device-with-intune"></a>Intune에서 Android 장치 사용
+# <a name="using-your-android-device-with-intune-company-portal"></a>Intune 회사 포털에서 Android 장치 사용
 
-편리한 업무를 위해 Intune에서 다양한 작업을 수행할 수 있습니다. 다음은 회사에서 요청될 수 있는 가장 일반적인 작업 목록입니다.
+이 문서에서는 Android용 회사 포털과 관련된 작업 및 정보를 나열합니다. 이 문서는 Android 장치의 문제를 해결하고 관리하는 데 사용됩니다. 자세한 세부 정보, 단계 및 스크린샷을 보려면 링크를 클릭하세요. 
 
 ## <a name="supported-versions"></a>지원되는 버전
 
-Intune은 현재 Android 4.4 이상을 지원합니다. Samsung Knox 4.4 이상 장치가 포함됩니다.
+회사 포털은 현재 Android 4.4 이상을 지원합니다. Samsung Knox 4.4 이상 장치에 대한 지원도 포함되어 있습니다.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune에 등록하고 회사 포털 설치
 

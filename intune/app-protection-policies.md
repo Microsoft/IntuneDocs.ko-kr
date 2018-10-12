@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83320c78d461981f1bfff52d2fddf4f121a88b8c
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 45c394f3aadde63299b8397974f4547c4968c192
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329668"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169035"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>앱 보호 정책을 만들고 할당하는 방법
 
@@ -30,7 +30,7 @@ Microsoft Intune 앱 보호 정책을 만들고 사용자에게 할당하는 방
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-앱 보호 정책은 Intune에서 관리하거나 관리하지 않을 수 있는 장치에서 실행되는 앱에 적용할 수 있습니다. 앱 보호 정책의 작동 방식 및 Intune 앱 보호 정책으로 지원되는 시나리오에 대한 자세한 설명은 [Microsoft Intune 앱 보호 정책이란](app-protection-policy.md)을 참조하세요.
+앱 보호 정책은 Intune에서 관리하거나 관리하지 않을 수 있는 장치에서 실행되는 앱에 적용할 수 있습니다. 앱 보호 정책의 작동 방식 및 Intune 앱 보호 정책으로 지원되는 시나리오에 대한 자세한 설명은 [Microsoft Intune 앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
 
 MAM을 지원하는 앱 목록을 확인하려면 [MAM 앱 목록](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)을 참조하세요.
 
@@ -56,24 +56,22 @@ MAM을 지원하는 앱 목록을 확인하려면 [MAM 앱 목록](https://www.m
    정책 설정에는 기본값이 있습니다. 이 기본값이 요구 사항을 충족하는 경우 변경할 필요가 없습니다.
 
    > [!TIP]
-   > 이러한 정책 설정은 회사 컨텍스트에서 앱을 사용하는 경우에만 적용됩니다. 최종 사용자가 앱을 사용하여 개인 작업을 수행하는 경우에는 이러한 정책의 영향을 받지 않습니다.
+   > 이러한 정책 설정은 회사 컨텍스트에서 앱을 사용하는 경우에만 적용됩니다. 최종 사용자가 앱을 사용하여 개인 작업을 수행하는 경우에는 이러한 정책의 영향을 받지 않습니다. 새 파일을 만들면 해당 파일은 개인 파일로 간주됩니다. 
 
-7. **확인**을 선택하여 이 구성을 저장합니다. 이제 **정책 추가** 창으로 돌아옵니다. **만들기**를 클릭하여 정책을 만들고 설정을 저장합니다.
-8. **확인**을 선택하여 이 구성을 저장합니다. 이제 **정책 추가** 창으로 돌아옵니다.
-9. **만들기**를 클릭하여 정책을 만들고 설정을 저장합니다.
+7. **확인**을 선택하여 이 구성을 저장합니다. 이제 **정책 추가** 창으로 돌아옵니다.
+8. **만들기**를 클릭하여 정책을 만들고 설정을 저장합니다.
 
 이전 절차에서 설명한 대로 정책 만들기를 완료하면 사용자에게 배포되지 않습니다. 정책을 배포하려면 [사용자에게 정책 배포](app-protection-policies.md#deploy-a-policy-to-users)를 참조하세요.
 
 ## <a name="deploy-a-policy-to-users"></a>사용자에게 정책 배포
 
-
 1. **앱 보호 정책** 창에서 정책을 선택합니다.
 
-1. **정책** 창에서 **할당**을 선택하면 **Intune 앱 보호-할당** 창이 열립니다. **할당** 창에서 **포함할 그룹 선택**을 선택해 **포함할 그룹 선택** 창을 엽니다.
+2. **정책** 창에서 **할당**을 선택하면 **Intune 앱 보호-할당** 창이 열립니다. **할당** 창에서 **포함할 그룹 선택**을 선택해 **포함할 그룹 선택** 창을 엽니다.
 
    ![강조 표시된 포함할 그룹 선택 메뉴 옵션을 사용하는 할당 창의 스크린샷](./media/app-protection-policy-add-users.png)
 
-2.  사용자 그룹 목록이 **사용자 그룹 추가** 창에 표시됩니다. 이는 **Azure Active Directory**에 있는 모든 보안 그룹의 목록입니다. 이 정책을 적용할 사용자 그룹을 선택하고 **선택**을 선택합니다. **선택**을 선택하면 정책이 사용자에게 배포됩니다.
+3.  사용자 그룹 목록이 **사용자 그룹 추가** 창에 표시됩니다. 이는 **Azure Active Directory**에 있는 모든 보안 그룹의 목록입니다. 이 정책을 적용할 사용자 그룹을 선택하고 **선택**을 선택합니다. **선택**을 선택하면 정책이 사용자에게 배포됩니다.
 
     ![Azure Active Directory 사용자 목록을 보여 주는 사용자 그룹 추가 창의 스크린 샷](./media/azure-ad-user-group-list.png)
 
@@ -125,12 +123,14 @@ Microsoft Intune 라이선스가 할당된 사용자만 정책에 의해 영향�
 
 Intune 앱 보호 정책은 사용자의 ID를 대상으로 하기 때문에 사용자에 대한 보호 설정은 일반적으로 등록된 장치(관리된 MDM) 및 미등록된 장치(관리되지 않는 MDM) 모두에 적용됩니다. 따라서 Intune 등록 또는 미등록 iOS 및 Android 장치에 Intune 앱 보호 정책을 대상으로 지정할 수 있습니다. 엄격한 DLP(데이터 손실 방지) 컨트롤이 적절한 관리되지 않는 장치에 대한 하나의 보호 정책 및 DLP 컨트롤이 조금 더 느슨할 수 있는 MDM 관리되는 장치에 대한 별도의 보호 정책이 있을 수 있습니다. 
 
-이러한 정책을 만들려면 Intune 콘솔에서 **클라이언트 앱** > **앱 보호** 정책으로 이동하고 **정책 추가**를 클릭합니다. 기존 앱 보호 정책을 편집할 수도 있습니다. 앱 보호 정책을 관리되는 장치 및 관리되지 않는 장치 모두에 적용하려면 **모든 앱 형식의 대상**을 기본값인 **예**로 설정했는지 확인합니다. 관리 상태에 따라 세부적으로 할당하려는 경우 **모든 앱 형식의 대상** 옵션을 **아니요**로 설정합니다. 
+이러한 정책을 만들려면 Intune 콘솔에서 **클라이언트 앱** > **앱 보호 정책**으로 이동하고 **정책 추가**를 클릭합니다. 기존 앱 보호 정책을 편집할 수도 있습니다. 앱 보호 정책을 관리되는 장치 및 관리되지 않는 장치 모두에 적용하려면 **모든 앱 형식의 대상**을 기본값인 **예**로 설정했는지 확인합니다. 관리 상태에 따라 세부적으로 할당하려는 경우 **모든 앱 형식의 대상** 옵션을 **아니요**로 설정합니다. 
 
-iOS 앱을 "관리 대상"으로 간주하려면 각 앱에 **IntuneMAMUPN** 구성 정책 설정을 배포해야 합니다. 자세한 내용은 [Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)을 참조하세요.
+![모든 앱 형식을 대상으로 선택한 정책 추가 블레이드 스크린샷](./media/app-protection-policies-target-all.png)
+
+iOS 앱을 "관리 대상"으로 간주하려면 각 앱에 **IntuneMAMUPN** 구성 정책 설정을 배포해야 합니다. 자세한 내용은 [Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)을 참조하세요.
 
 > [!NOTE]
-> 장치 관리 상태에 따른 앱 보호 정책에 대한 특정 iOS 지원 내용은 [관리 상태에 따라 대상으로 지정된 MAM 보호 정책](whats-new.md#mam-protection-policies-targeted-based-on-management-state-)을 참조합니다.
+> 장치 관리 상태에 따른 앱 보호 정책에 대한 특정 iOS 지원 내용은 [관리 상태에 따라 대상으로 지정된 MAM 보호 정책](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-)을 참조합니다.
 
 ## <a name="policy-settings"></a>정책 설정
 iOS 및 Android에 대한 정책 설정의 전체 목록을 보려면 다음 링크 중 하나를 선택합니다.
