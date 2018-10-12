@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 9/21/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56c98f1cf310632e91845b5a3e852df1f1ca8366
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 600c6a00910647983cc2329f9256b613560aaf14
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864458"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866323"
 ---
 # <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Microsoft Intune 설명서 &#40;Ignite 특수 버전&#41;
 Microsoft Ignite 2018을 시작합니다. 방문해 주셔서 감사합니다. Microsoft Ignite 2018에서는 준비된 일부 Intune 리소스를 확인하세요.
@@ -45,7 +45,7 @@ Microsoft Ignite 2018을 시작합니다. 방문해 주셔서 감사합니다. M
 
 ## <a name="contribute-to-docs"></a>문서에 참여
 - [Intune 설명서 기여자 되기](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/README.md)  
-- [이번 달 상위 Intune 문서 기여자](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-10-01&to=2018-10-31&type=c)  
+- [이번 달 상위 Intune 문서 기여자](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-09-01&to=2018-11-30&type=c)  
 
 ## <a name="start-using-intune"></a>Intune 사용 시작
 - [Intune을 포함하는 라이선스](licenses.md)
