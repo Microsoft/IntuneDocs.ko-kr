@@ -1,12 +1,12 @@
 ---
-title: Intune 데이터 웨어하우스 API 끝점
+title: Intune 데이터 웨어하우스 API 엔드포인트
 titlesuffix: Microsoft Intune
 description: 참조 항목에서는 Intune 데이터 웨어하우스 API URL 구조를 설명합니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 10/09/2018
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05251e3aeb0c290a51c378f8c67f3d55149b63dc
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: c6709d68ce4bf847be3eb5cd5ae427db6d11aba8
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254504"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903593"
 ---
-# <a name="intune-data-warehouse-api-endpoint"></a>Intune 데이터 웨어하우스 API 끝점
+# <a name="intune-data-warehouse-api-endpoint"></a>Intune 데이터 웨어하우스 API 엔드포인트
 
 특정 역할 기반 액세스 제어 및 Azure AD 자격 증명을 포함한 계정으로 Intune 데이터 웨어하우스 API를 사용할 수 있습니다. 그런 다음 OAuth 2.0을 사용하여 Azure AD와 REST 클라이언트를 승인할 수 있습니다. 마지막으로 데이터 웨어하우스 리소스를 호출할 의미 있는 URL을 형성합니다.
 
@@ -36,7 +36,7 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 
 ## <a name="api-url-structure"></a>API URL 구조
 
-데이터 웨어하우스 API 끝점이 각 세트에 대한 엔터티를 읽습니다. API는 **GET** HTTP 동사와 쿼리 옵션 하위 집합을 지원합니다.
+데이터 웨어하우스 API 엔드포인트가 각 세트에 대한 엔터티를 읽습니다. API는 **GET** HTTP 동사와 쿼리 옵션 하위 집합을 지원합니다.
 
 Intune URL은 다음 형식을 사용합니다.  
 `https://fef.{location}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity-collection}?api-version={api-version}`
