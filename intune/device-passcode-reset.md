@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
-ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
+ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46300462"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424920"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune에서 장치 암호 다시 설정 또는 제거
 
@@ -49,7 +49,6 @@ Android 장치의 경우 사실상 해당 장치 수준 암호 재설정은 6.x 
 | 7.x 이하 버전을 실행 중인 Android 장치 | 아니요 |
 | iOS | 아니요 |
 | macOS | 아니요 |
-| iOS | 아니요 |
 
 새 회사 프로필 암호를 만들려면 암호 재설정 작업을 사용합니다. 이 작업은 암호 재설정 메시지를 표시하고 회사 프로필에만 사용할 새로운 임시 암호를 만듭니다. 
 

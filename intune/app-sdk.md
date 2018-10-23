@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 55df1b152ee32456d577afacedd034583e591e3e
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: fc49d7ba7cdc5b986c06f8a84ececc8339a812a2
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058723"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425107"
 ---
 # <a name="intune-app-sdk-overview"></a>Intune 앱 SDK 개요
 iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱을 앱 보호 정책에 사용할 수 있도록 설정할 수 있습니다. Intune 앱 SDK는 앱 개발자에게서 필요한 코드 변경의 양을 최소화하려고 합니다. 앱의 동작을 변경하지 않고 대부분의 SDK 기능을 사용하도록 설정할 수 있습니다. 최종 사용자 및 IT 관리자 환경을 개선하기 위해 API를 활용하여 앱 참여를 요구하는 기능에 대한 앱 동작을 사용자 지정할 수 있습니다.
@@ -44,7 +44,7 @@ IT 관리자는 앱에서 장치에 저장하는 데이터가 암호화되도록
 IT 관리자는 Intune 관리 앱에서 회사 데이터를 원격으로 초기화할 수 있습니다. 이 기능은 ID 기반이며 최종 사용자의 회사 ID와 연결된 파일만 삭제합니다. 이렇게 하려면 기능에 앱 참여가 필요합니다. 앱은 사용자 설정에 따라 초기화를 수행할 ID를 지정할 수 있습니다. 앱에서 지정된 이러한 사용자 설정이 없을 경우 기본 동작은 응용 프로그램 디렉터리를 초기화하고 최종 사용자에게 액세스가 제거되었음을 알리는 것입니다.
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>Managed Browser 사용 적용
-IT 관리자가 앱의 웹 링크를 [Intune Managed Browser 앱](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)에서 열도록 강제할 수 있습니다. 이 기능은 회사 환경에 표시되는 링크가 Intune 관리 앱의 도메인 내에 유지되게 합니다.
+IT 관리자가 앱의 웹 링크를 [Intune Managed Browser 앱](app-configuration-managed-browser.md)에서 열도록 강제할 수 있습니다. 이 기능은 회사 환경에 표시되는 링크가 Intune 관리 앱의 도메인 내에 유지되게 합니다.
 
 ### <a name="enforce-a-pin-policy"></a>PIN 정책 적용
 IT 관리자가 앱의 회사 데이터에 액세스하기 전에 PIN을 입력하도록 최종 사용자에게 요구할 수 있습니다. 이렇게 하면 앱을 사용하는 사용자가 회사 또는 학교 계정으로 처음 로그인한 사용자와 동일하도록 보장됩니다. 최종 사용자가 해당 PIN을 구성할 때 Intune 앱 SDK는 Azure Active Directory를 사용하여 등록된 Intune 계정과 최종 사용자의 자격 증명을 비교하여 확인합니다.

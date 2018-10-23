@@ -14,12 +14,12 @@ ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5613c1284110e85a910db8f156ff4f62a54af4ad
-ms.sourcegitcommit: dc6979f2b14d522530577cc7f212cc822356acc9
+ms.openlocfilehash: 6dc722a3d10d68c4aec30fc6d10a2867f5f0b2d7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453547"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425328"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune의 데이터 보안 및 공유
 
@@ -68,7 +68,7 @@ Microsoft 에이전트 역할을 하는 모든 타사는 [온라인 서비스 �
 
 Microsoft Intune은 System Center Configuration Manager와 데이터를 공유하지 않습니다. System Center Configuration Manager는 고객이 직접 배포하고, 관리하고, 운영하는 온-프레미스 제품입니다. Configuration Manager에서 수집하는 진단 및 사용 현황 데이터는 향후 릴리스의 설치 환경, 품질 및 보안을 개선하기 위해서만 사용됩니다.
 
-자세한 내용은 [SCCM의 진단 및 사용 현황 데이터](https://docs.microsoft.com/en-us/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요. 
+자세한 내용은 [SCCM의 진단 및 사용 현황 데이터](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요. 
 
 
 ## <a name="next-steps"></a>다음 단계

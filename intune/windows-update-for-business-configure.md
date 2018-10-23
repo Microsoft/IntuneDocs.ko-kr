@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255238"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425158"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune에서 소프트웨어 업데이트 관리
 
@@ -34,7 +34,7 @@ Windows as a Service는 Windows 10 장치를 업데이트하는 방법입니다.
   - Windows Insider &#8208; 느림
   - Windows Insider 릴리스 
       
-  지원되는 서비스 채널에 대한 세부 정보는 [서비스인 Windows에 대한 개요](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels)를 참조하세요.
+  지원되는 서비스 채널에 대한 세부 정보는 [서비스인 Windows에 대한 개요](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)를 참조하세요.
 - **지연 설정**: 장치 그룹의 업데이트 설치를 연기하도록 업데이트 지연 설정을 구성합니다. 이러한 설정을 사용하여 업데이트 출시를 스테이징하므로 과정을 검토할 수 있습니다.
 - **일시 중지**: 업데이트 출시 과정에서 언제든지 문제를 발견하는 경우 업데이트의 설치를 연기합니다.
 - **유지 관리 기간**: 업데이트를 설치할 수 있는 시간을 구성합니다.
