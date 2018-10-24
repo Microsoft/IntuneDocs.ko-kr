@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b39afeaf6daf8b08c58becd0b4af07299bd79e7a
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: 7d9cd8c4a6f460be9b6964197fa53cd11f303ca0
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101996"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425209"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>관리되는 iOS 장치용 앱 구성 정책 추가
 
@@ -116,7 +116,6 @@ Intune에서 XML 형식의 유효성을 검사합니다. 그러나 Intune은 해
 
 XML 속성 목록에 대한 자세한 내용을 보려면 다음을 수행합니다.
 
-  -  [Microsoft Intune에서 모바일 앱 구성 정책을 사용하여 iOS 앱 구성](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)을 읽어 보세요.
   -  iOS 개발자 라이브러리에서 [XML 속성 목록 이해](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)를 참조하세요.
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>앱 구성 XML 파일의 형식 예

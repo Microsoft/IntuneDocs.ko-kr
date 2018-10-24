@@ -15,12 +15,12 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9513673b68522c6838a2f2090c597343d65d7004
-ms.sourcegitcommit: b7789fd2f34528275c13a717699cf53a289ed04e
+ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890998"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357107"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 독립 실행형 - Win32 앱 관(공개 미리 보기)
 
@@ -51,7 +51,7 @@ GitHub에서 [Microsoft Intune Win32 앱 업로드 준비 도구](https://github
 |    `-h`     |    도움말    |
 |    `-c <setup_folder>`     |    모든 설치 파일에 대한 설정 폴더    |
 |   ` -s <setup_file>`     |    설치 파일(예: *setup.exe* 또는 *setup.msi*)    |
-|    `-o <output_file>`     |    생성된 *.intunewin* 파일의 출력 폴더    |
+|    `-o <output_folder>`     |    생성된 *.intunewin* 파일의 출력 폴더    |
 |    `-q`       |    자동 모드    |
 
 ### <a name="example-commands"></a>예제 명령

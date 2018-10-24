@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 606005c3d8abafe989b35841cebf8c11e1f6b04e
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075883"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652141"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>Microsoft Intune 초기 버전 - 2018년 10월
 
@@ -44,9 +44,6 @@ ms.locfileid: "49075883"
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Microsoft 권장 설정을 보안 기준과 함께 사용<!-- 2055484 -->
 Intune은 Windows Defender ATP 및 Office 365 ATP를 비롯하여 보안에 중점을 둔 다른 서비스와 통합됩니다. 고객은 Microsoft 365 서비스에서 공통 전략 및 조화로운 종단 간 보안 워크플로 집합을 요청하고 있습니다. 우리의 목표는 보안 작업 및 공통 관리자 작업을 연결하는 솔루션을 빌드하기 위한 전략을 조정하는 것입니다. Intune에서는 Microsoft 권장 “보안 기준” 집합(**Intune** > **보안 기준**)을 게시하여 이 목표를 달성하고자 합니다.  관리자는 이러한 기준에서 직접 보안 정책을 만든 후 이를 사용자에게 배포할 수 있습니다. 또한 조직의 요구 사항을 충족하도록 최선의 권장 사항을 사용자 지정할 수도 있습니다. Intune은 장치가 이러한 기준을 계속 준수하는지 확인하고 준수하지 않는 장치나 사용자에 대해 관리자에게 알립니다.
 
-### <a name="remove-ability-for-admins-to-wipe-personal-devices-and-reset-passcodes----2934699---"></a>관리자가 개인 장치를 초기화하고 암호를 재설정하는 기능 제거 <!-- 2934699 -->
-회사 관리자가 사용자의 개인 장치를 초기화할지 모른다는 사용자의 불안감을 완화시키기 위해 [초기화](devices-wipe.md#wipe) 및 [암호 재설정](device-passcode-reset.md) 원격 작업은 더 이상 개인 장치에 적용되지 않습니다. 사용자는 회사 포털 웹 사이트를 사용하여 암호를 재설정하고 장치를 초기화할 수 있습니다.
-
 ### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>하이브리드 Azure Active Directory가 조인된 장치에 대한 Autopilot 지원 <!-- 1048100 -->
 Autopilot을 사용하여 하이브리드 Azure Active Directory가 조인된 장치를 설정할 수 있습니다. 하이브리드 Autopilot 기능을 사용하려면 장치가 조직의 네트워크에 조인되어 있어야 합니다.
 
@@ -56,7 +53,7 @@ Autopilot을 사용하여 하이브리드 Azure Active Directory가 조인된 �
 역할 할당에 범위 태그를 추가하려면 **Intune 역할** > **모든 역할** > **정책 및 프로필 관리자** > **할당** > **범위(태그)** 를 차례로 선택합니다.
 범위 태그를 구성 프로필에 추가하려면 **장치 구성** > **프로필** > 프로필 선택 > **속성** > **범위(태그)** 를 차례로 선택합니다.
 
-## <a name="tenant-health-dashboard----1124854---"></a>테넌트 상태 대시보드 <!-- 1124854 -->
+### <a name="tenant-health-dashboard----1124854---"></a>테넌트 상태 대시보드 <!-- 1124854 -->
 Intune의 테넌트 상태 페이지는 단일 위치에서 테넌트 상태 정보를 제공합니다. 페이지는 4개 섹션으로 구분됩니다.  
 - **테넌트 세부사항**: MDM 권한, 테넌트에 등록된 총 장치 수, 라이선스 수와 같은 정보를 포함합니다. 이 섹션은 테넌트에 대한 최신 서비스 릴리스도 제공합니다.
 - **커넥터 상태**: Apple VPP, 비즈니스용 Windows 스토어, 인증서 커넥터와 같은 구성된 커넥터에 대한 정보를 포함합니다. 현재 상태에 따라 커넥터는 ‘정상’, ‘경고’ 또는 ‘비정상’으로 플래그 지정됩니다.

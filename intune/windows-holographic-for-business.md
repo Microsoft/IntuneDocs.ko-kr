@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81a11ce35cbf0f256f59bf26d317933977750d6e
-ms.sourcegitcommit: b33ff64514abdc5e939ff59ea722b3704cd56c78
+ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49065767"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425294"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune에서 Windows Holographic 및 HoloLens 장치 관리 및 사용
 
@@ -73,7 +73,7 @@ Microsoft Intune은 Windows Holographic for Business를 실행하는 Microsoft H
 - Microsoft HoloLens용 앱 개발에 대한 자세한 내용은 [Microsoft HoloLens용 혼합 현실 앱](https://www.microsoft.com/hololens/apps)을 참조하세요. 
 
 > [!NOTE]
-> Windows 10 Holographic for Business 1607을 실행하는 HoloLens 장치는 비즈니스용 Microsoft Store에서 구입한, 온라인 사용이 허가된 앱을 지원하지 않습니다. 자세한 내용은 [HoloLens에 앱 설치](https://docs.microsoft.com/en-us/hololens/hololens-install-apps)를 참조하세요.
+> Windows 10 Holographic for Business 1607을 실행하는 HoloLens 장치는 비즈니스용 Microsoft Store에서 구입한, 온라인 사용이 허가된 앱을 지원하지 않습니다. 자세한 내용은 [HoloLens에 앱 설치](https://docs.microsoft.com/hololens/hololens-install-apps)를 참조하세요.
 
 ## <a name="device-actions"></a>장치 작업
 Intune에는 IT 관리자가 장치에서 로컬로 또는 Azure Portal에서 Intune을 사용하여 원격으로 다른 작업을 수행할 수 있는 몇 가지 기본 제공 작업이 있습니다. 또한 사용자가 Intune 회사 포털에서 Intune에 등록된 개인적으로 소유한 장치로 원격 명령을 실행할 수 있습니다.
