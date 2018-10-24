@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40251651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169501"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -39,13 +39,13 @@ iOS용 Microsoft Intune 앱 래핑 도구를 사용하면 앱 자체의 코드�
 
 * GitHub에서 [iOS용 Microsoft Intune 앱 래핑 도구](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)를 다운로드합니다.
 
-* Xcode 도구 집합 버전 5 이상이 설치된 OS X 10.8.5 이상의 macOS 컴퓨터에서 실행해야 합니다.
+* OS X 10.8.5 이상을 실행하고 Xcode 도구 집합 버전 9 이상이 설치된 macOS 컴퓨터에서 실행해야 합니다.
 
 * 회사나 ISV(Independent Software Vendor)에서 개발하고 서명한 입력 iOS 앱이어야 합니다.
 
   * 입력 앱 파일의 확장명은 **.ipa** 또는 **.app**이어야 합니다.
 
-  * 입력 앱은 iOS 8.0 이상에 대해 컴파일되어야 합니다.
+  * iOS 10 이상에 대한 입력 앱을 컴파일해야 합니다.
 
   * 입력 앱은 암호화할 수 없습니다.
 

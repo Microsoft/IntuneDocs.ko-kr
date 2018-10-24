@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66258a79e0a73a60dc7e4c1b0c67ab4761bc37ec
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: f0d9a4ab46aa8f4086c30fc7d93d7d1335b3d9ba
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799543"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102075"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
@@ -44,6 +44,9 @@ Microsoft Intune에서 앱 구성 정책을 사용하여 iOS 또는 Android 앱�
 Intune을 사용한 앱 구성을 사용하는 방법에는 두 가지 옵션이 있습니다.
  - **관리 장치** - 장치는 MDM(모바일 장치 관리) 공급자로 Intune에서 관리됩니다.
  - **관리되는 앱** - 앱이 장치 등록 없이 관리됩니다.
+
+> [!NOTE]
+> Microsoft Intune 관리자는 관리되는 장치에서 Microsoft Office 응용 프로그램에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 장치에서 개인 계정을 차단할 수 있습니다. 지원 응용 프로그램이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.
 
 ## <a name="apps-that-support-app-configuration"></a>앱 구성을 지원하는 앱
 

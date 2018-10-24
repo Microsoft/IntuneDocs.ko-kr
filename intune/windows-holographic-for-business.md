@@ -1,31 +1,31 @@
 ---
-title: Microsoft Intune-Azure를 사용해 Windows Holographic 장치 관리 | Microsoft Docs
-description: Microsoft Intune을 사용하여 회사 포털 구성, 준수 정책 만들기, OMA-URI 설정 사용자 지정, 앱 배포, 장치를 그룹으로 분류, 프로필 만들기, 장치 제한, 소프트웨어 업데이트 사용하도록 설정, 사용 약관 설정, VPN 및 Wi-Fi 설정 구성 및 Hello for Business 사용을 포함하여 Windows Holographic for Business를 실행하는 장치에서 다른 작업을 완료할 수 있습니다.
+title: Microsoft Intune-Azure를 사용해 Windows Holographic 장치 사용 | Microsoft Docs
+description: Microsoft Intune을 사용하여 회사 포털 구성, 준수 정책 만들기, OMA-URI 설정 사용자 지정, 앱 배포, 장치를 그룹으로 분류, 프로필 만들기, 장치 제한, 소프트웨어 업데이트 사용하도록 설정, 사용 약관 설정, VPN 및 Wi-Fi 설정 구성 및 Hello for Business 사용을 포함하여 Windows Holographic for Business 및 HoloLens를 실행하는 장치에서 다른 작업을 관리 및 완료할 수 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/11/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 81a11ce35cbf0f256f59bf26d317933977750d6e
+ms.sourcegitcommit: b33ff64514abdc5e939ff59ea722b3704cd56c78
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317969"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49065767"
 ---
-# <a name="customize-devices-running-windows-holographic-with-intune"></a>Intune을 사용하여 Windows Holographic을 실행하는 장치 사용자 지정
+# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune에서 Windows Holographic 및 HoloLens 장치 관리 및 사용
 
-Microsoft Intune은 [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/)와 같이 Windows Holographic for Business를 실행하는 장치를 지원합니다.
+Microsoft Intune에는 [Microsoft HoloLens](https://docs.microsoft.com/hololens/) 같은 Windows Holographic for Business를 실행하는 장치를 관리하는 데 도움이 되는 여러 기능이 포함되어 있습니다. Intune을 사용하여 장치가 조직의 규칙을 준수하는지 확인하고 VPN 또는 WiFi 프로필을 추가하여 장치를 사용자 지정할 수 있습니다. 다른 주요 기능은 장치를 키오스크로 사용하고 특정 앱 또는 특정 앱 집합을 실행하는 것입니다.
 
-Microsoft Intune을 사용하여 Windows Holographic을 실행하는 장치를 관리하려면 버전 업그레이드 프로필을 만들어야 합니다. 이 업그레이드 프로필은 Windows Holographic 장치를 Windows Holographic for Business로 업그레이드합니다. Microsoft HoloLens의 경우 Commercial Suite를 구입하여 업그레이드에 필요한 라이선스를 얻을 수 있습니다. 자세한 내용은 [Windows Holographic을 실행하는 장치를 Windows Holographic for Business로 업그레이드](holographic-upgrade.md)를 참조하세요.
+이 문서의 작업은 Windows Holographic for Business(소프트웨어 업데이트 포함)를 실행하고 비즈니스용 Windows Hello를 사용하는 장치를 관리, 사용자 지정 및 보호하는 데 도움이 됩니다.
 
-Windows Holographic for Business를 실행하는 장치를 사용자 지정하고 관리하려면 이 문서의 작업을 사용할 수 있습니다. 예를 들어 VPN 설정 구성, 소프트웨어 업데이트 등을 관리할 수 있습니다.
+Intune에서 Windows Holographic 장치를 사용하려면 버전 업그레이드 프로필을 만드세요. 이 업그레이트 프로필은 Windows Holographic 장치를 Windows Holographic for Business로 업그레이드합니다. Microsoft HoloLens의 경우 Commercial Suite를 구입하여 업그레이드에 필요한 라이선스를 얻을 수 있습니다. 자세한 내용은 [Windows Holographic을 실행하는 장치를 Windows Holographic for Business로 업그레이드](holographic-upgrade.md)를 참조하세요.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 

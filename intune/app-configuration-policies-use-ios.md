@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b39afeaf6daf8b08c58becd0b4af07299bd79e7a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330265"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101996"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>관리되는 iOS 장치용 앱 구성 정책 추가
 
@@ -31,7 +31,8 @@ Microsoft Intune에서 앱 구성 정책을 사용하여 iOS 앱에 대한 사�
 앱 구성 정책을 추가하면 앱 구성 정책에 대한 할당을 설정할 수 있습니다. 정책에 대한 할당을 설정할 때 정책이 적용될 사용자 그룹을 포함할지 제외할지 선택할 수 있습니다. 하나 이상의 그룹을 포함하도록 선택하면 기본 제공 그룹을 포함하거나 선택하기 위해 특정 그룹을 선택할 수 있습니다. 기본 제공 그룹에는 **모든 사용자**, **모든 장치** 및 **모든 사용자 + 모든 장치**가 포함됩니다. 
 
 >[!NOTE]
->Intune은 편의를 위해 콘솔에서 미리 만든 **모든 사용자** 및 **모든 장치** 그룹에 기본 최적화 기능을 제공합니다. 이들 그룹을 사용하여 직접 만든 '모든 사용자' 또는 '모든 장치' 그룹 대신 모든 사용자와 모든 장치를 지정하는 것이 좋습니다.
+>Intune은 편의를 위해 콘솔에서 미리 만든 **모든 사용자** 및 **모든 장치** 그룹에 기본 최적화 기능을 제공합니다. 이들 그룹을 사용하여 직접 만든 '모든 사용자' 또는 '모든 장치' 그룹 대신 모든 사용자와 모든 장치를 지정하는 것이 좋습니다.<p></p>
+>Microsoft Intune 관리자는 관리되는 장치에서 Microsoft Office 응용 프로그램에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 장치에서 개인 계정을 차단할 수 있습니다. 지원 응용 프로그램이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.
 
 응용 프로그램 구성 정책에 대해 포함된 그룹을 선택하면 제외할 특정 그룹을 선택할 수도 있습니다. 자세한 내용은 [Microsoft Intune에서 앱 할당 포함 및 제외](apps-inc-exl-assignments.md)를 참조하세요.
 
@@ -58,7 +59,7 @@ Microsoft Intune에서 앱 구성 정책을 사용하여 iOS 앱에 대한 사�
 8.  **구성 정책 추가** 창서 **구성 설정**을 선택합니다.
 9. **구성 설정 형식**을 선택합니다. XML 정보를 추가하려면 다음 중 하나를 선택합니다.
     - **구성 디자이너 사용**
-    - **XML 데이터 입력**<br></br>
+    - **XML 데이터 입력**<br><br>
     구성 디자이너 사용에 대한 자세한 내용은 [구성 디자이너 사용](#use-configuration-designer)을 참조하세요. XML 데이터 입력에 대한 자세한 내용은 [XML 데이터 입력](#enter-xml-data)을 참조하세요. 
 10. XML 정보를 추가했으면 **확인**을 선택한 다음, **추가**를 선택하여 구성 정책을 추가합니다. 구성 정책에 대한 개요 창이 표시됩니다.
 11. **할당**을 선택하여 포함 및 제외 옵션을 표시합니다. 
@@ -95,6 +96,17 @@ Microsoft Intune은 앱에 고유한 구성 설정을 제공합니다. Microsoft
 2. **삭제**를 선택합니다.
 
 \{\{ 및 \}\} 문자는 토큰 형식에만 사용되며 다른 용도로 사용하면 안 됩니다.
+
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>다중 ID 앱에서 구성된 조직 계정만 허용 
+
+Android 장치의 경우 다음 키/값 쌍을 사용합니다.
+
+| **Key** | IntuneMAMAllowedAccountsOnly |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **값** | <ul><li>**활성화됨**: 유일하게 허용되는 계정은 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 키로 정의된 관리되는 사용자 계정입니다.</li><li>**비활성화됨**(또는 **활성화됨**과 대소문자를 구분하지 않고 일치하는 모든 값): 모든 계정이 허용됩니다.</li></ul> |
+
+   > [!NOTE]
+   > 다중 ID로 구성된 조직 계정만 허용하는 경우에는 iOS용 OneDrive 10.34 이상 및 iOS용 Outlook 2.99.0 이상을 사용해야 합니다.
 
 ## <a name="enter-xml-data"></a>XML 데이터 입력
 

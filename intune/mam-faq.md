@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d42133d8a2e52300a2414de9105db2ef26bae445
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 635853cb744395e6ae519985eaed62b53e88578e
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307426"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 및 앱 보호에 대한 질문과 대답
 
@@ -88,9 +88,7 @@ Intune MAM은 다음과 같은 두 가지 구성을 지원합니다.
 Intune에서는 앱의 모든 데이터를 "회사" 또는 "개인" 데이터로 표시합니다. 데이터는 비즈니스 위치에서 시작될 경우 "회사" 데이터로 간주됩니다. Office 앱의 경우 Intune은 전자 메일(Exchange) 또는 클라우드 저장소(비즈니스용 OneDrive 계정이 있는 OneDrive 앱)를 비즈니스 위치로 간주합니다.
 
 **비즈니스용 Skype 사용에 대한 추가 요구 사항은 무엇인가요?**<br></br>
-[비즈니스용 Skype](https://products.office.com/skype-for-business/it-pros) 라이선스 요구 사항을 참조하세요.
-  >[!NOTE]
-  > 비즈니스용 Skype 모바일 앱은 현재 비즈니스용 Skype Online만 지원합니다.
+[비즈니스용 Skype](https://products.office.com/skype-for-business/it-pros) 라이선스 요구 사항을 참조하세요. SfB(비즈니스용 Skype) 하이브리드 및 온-프레미스 구성에 대해서는 [Hybrid Modern Auth for SfB and Exchange goes GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756)(SfB 및 Exchange의 하이브리드 최신 인증이 GA(일반 공급) 상태가 됨) 및 [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910)(AAD를 사용한 SfB 온-프레미스의 최신 인증)를 각각 참조하세요.
 
 ## <a name="app-protection-features"></a>앱 보호 기능
 

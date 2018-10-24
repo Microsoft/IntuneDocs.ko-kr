@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268909"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102058"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune에서 장치 준수 정책 시작
 
@@ -153,7 +153,7 @@ Remember that you need to implement conditional access policies in addition to c
 ## <a name="ways-to-deploy-device-compliance-policies"></a>장치 준수 정책을 배포하는 방법
 준수 정책을 사용자 그룹의 사용자 또는 장치 그룹의 장치에 배포할 수 있습니다. 준수 정책을 사용자에게 배포하면 사용자의 모든 장치에서 준수가 확인됩니다.
 
-**준수 정책 설정**(Azure Portal > 장치 준수)에는 다음이 포함됩니다.
+기본 **준수 정책 설정**(Azure Portal > 장치 준수)에는 다음이 포함됩니다.
 
 - **준수 정책 없이 장치를 다음으로 표시**: 이 속성에는 두 개의 값이 있습니다.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/27/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313794"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102126"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP 사용
 
@@ -89,6 +89,10 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 6. 설정을 구성합니다.
 
   - **Windows Defender ATP 클라이언트 구성 패키지 유형**: **등록**을 선택하여 프로필에 구성 패키지를 추가합니다. **등록 취소**를 선택하여 프로필에서 구성 패키지를 제거합니다.
+  
+    > [!NOTE] 
+    > Windows Defender ATP와의 연결을 제대로 설정한 경우 Intune에서 구성 프로필을 자동으로 **등록**합니다.
+  
   - **모든 파일에 대해 샘플 공유**: **사용**을 사용하면 샘플을 수집하고 Windows Defender ATP와 공유할 수 있습니다. 예를 들어 의심스러운 파일을 발견할 경우 심층 분석을 위해 Windows Defender ATP에 제출할 수 있습니다. **구성되지 않음**은 Windows Defender ATP에 샘플을 공유하지 않습니다.
   - **원격 분석 보고 주기 단축**: 위험이 높은 장치의 경우 이 설정을 **사용**하여 원격 분석을 Windows Defender ATP 서비스에 더 자주 보고합니다.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 838ed3a932d6ff495b9a433d3cabedfa6227ad32
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169518"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 이 문서에서는 Intune을 통해 인프라를 구성한 다음, SCEP(단순 인증서 등록 프로토콜) 인증서 프로필을 만들고 할당하는 방법을 보여 줍니다.
 
@@ -43,6 +41,8 @@ NDES 서버는 CA를 호스트하는 도메인에 가입해야 하며 CA와 동�
 - **웹 응용 프로그램 프록시 서버**(선택 사항): Windows Server 2012 R2 이상을 WAP(웹 응용 프로그램 프록시) 서버로 실행하는 서버를 사용합니다. 이 구성의 특징은 다음과 같습니다.
   - 장치에서 인터넷 연결을 사용하여 인증서를 받을 수 있습니다.
   - 장치가 인터넷을 통해 연결하여 인증서를 받고 갱신하는 경우 보안상 안전합니다.
+  
+- **Azure AD 응용 프로그램 프록시**(선택 사항): Azure AD 응용 프로그램 프록시를 전용 WAP(웹 응용 프로그램 프록시) 서버 대신 사용하여 NDES Server를 인터넷에 게시할 수 있습니다. 자세한 내용은 온 [온-프레미스 응용 프로그램에 보안된 원격 액세스를 제공하는 방법](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)을 참조하세요.
 
 #### <a name="additional"></a>추가 정보
 
@@ -140,7 +140,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
    - **net start certsvc**
 
 2. 발급 CA에서 인증 기관 스냅인을 사용하여 인증서 템플릿을 게시합니다.
-   **인증서 템플릿** 노드를 선택하고 **작업** > **새로 만들기** > **발급할 인증서 템플릿**을 클릭한 다음, 2단계에서 만든 템플릿을 선택합니다.
+   **인증서 템플릿** 노드를 선택하고 **작업** > **새로 만들기** > **발급할 인증서 템플릿**을 클릭한 후에 2단계에서 만든 템플릿을 선택합니다.
 
 3. **인증서 템플릿** 폴더에서 게시된 템플릿을 확인하여 유효성을 검사합니다.
 
@@ -350,6 +350,113 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 5. **프로필** 유형 드롭다운 목록에서 **SCEP 인증서**를 선택합니다.
 6. **SCEP 인증서** 창에서 다음 설정을 구성합니다.
 
+   - **인증서 유형**: 사용자 인증서에 대한 **사용자**를 선택합니다. 키오스크와 같은 사용자가 지정되지 않은 **장치**를 선택합니다. **장치** 인증서는 다음 플랫폼에서 사용할 수 있습니다.  
+     - iOS
+     - Windows 8.1 이상
+     - Windows 10 이상
+
+   - **주체 이름 형식**: 인증서 요청 시 Intune에서 자동으로 주체 이름을 만드는 방식을 선택합니다. **사용자** 인증서 유형 또는 **장치** 인증서 유형을 선택하면 이 옵션이 변경됩니다. 
+
+        **사용자 인증서 유형**  
+
+        주체 이름에 사용자의 메일 주소를 포함할 수 있습니다. 다음 중에서 선택합니다.
+
+        - **구성되지 않음**
+        - **일반 이름**
+        - **메일이 포함된 일반 이름**
+        - **메일인 일반 이름**
+        - **IMEI(International Mobile Equipment Identity)**
+        - **일련 번호**
+        - **사용자 지정**: 이 옵션을 선택하면 **사용자 지정** 텍스트 상자도 표시됩니다. 이 필드를 사용하여 변수를 포함한 사용자 지정 주체 이름 형식을 입력합니다. 사용자 지정 형식은 **CN(일반 이름)** 및 **E(이메일)** 의 두 가지 변수를 지원합니다. **CN(일반 이름)** 은 다음 변수 중 하나로 설정할 수 있습니다.
+
+            - **CN={{UserName}}**: 사용자의 사용자 계정 이름입니다(예: janedoe@contoso.com).
+            - **CN={{AAD_Device_ID}}**: Azure AD(Active Directory)에서 장치를 등록하는 경우 할당된 ID입니다. 이 ID는 일반적으로 Azure AD로 인증하는 데 사용됩니다.
+            - **CN={{SERIALNUMBER}}**: 일반적으로 장치를 식별하는 제조업체에서 사용되는 고유한 SN(일련 번호)입니다.
+            - **CN={{IMEINumber}}**: 휴대폰을 식별하는 데 사용되는 IMEI(International Mobile Equipment Identity) 고유 번호입니다.
+            - **CN={{OnPrem_Distinguished_Name}}**: 쉼표로 구분된 상대 고유 이름의 시퀀스입니다(예: `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`).
+
+                `{{OnPrem_Distinguished_Name}}` 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하는 `onpremisesdistingishedname` 사용자 특성을 Azure AD와 동기화해야 합니다.
+
+            - **CN={{onPremisesSamAccountName}}**: 관리자는 Azure AD Connect를 사용하여 Azure AD에 대한 Active Directory의 samAccountName 특성을 `onPremisesSamAccountName` 특성으로 동기화할 수 있습니다. Intune에서는 해당 변수를 SCEP 인증서의 제목에 있는 인증 발급 요청의 일부로 대체할 수 있습니다.  samAccountName 특성은 이전 버전의 Windows(Windows 2000 이전)에서 클라이언트 및 서버를 지원하는 데 사용되는 사용자 로그온 이름입니다. 사용자 로그온 이름 형식은 `DomainName\testUser`이거나 `testUser`만 사용합니다.
+
+                `{{onPremisesSamAccountName}}` 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하는 `onPremisesSamAccountName` 사용자 특성을 Azure AD와 동기화해야 합니다.
+
+            이러한 변수 및 정적 문자열을 한 개 이상 조합하여 다음과 같은 사용자 지정 주체 이름 형식을 만들 수 있습니다.  
+
+            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+
+            이 예에서는 CN 및 E 변수 외에 조직 구성 단위, 조직, 위치, 상태 및 국가 값에 해당하는 문자열을 사용하는 주체 이름 형식을 만들었습니다. [CertStrToName 함수](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)에서는 이 함수와 지원되는 문자열을 보여 줍니다.
+
+        **장치 인증서 유형**  
+
+        **장치** 인증서 유형을 사용할 때 값에 다음 장치 인증서 변수를 사용할 수도 있습니다.  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        사용자 지정 값 텍스트 상자에 정적 텍스트와 함께 이러한 변수를 추가할 수 있습니다. 예를 들어 일반 이름을 `CN = {{DeviceName}}text`로 추가할 수 있습니다.
+
+        > [!IMPORTANT]
+        >  - 주체의 정적 텍스트에서 변수를 중괄호 **{}** 로 묶지 않으면 오류가 해결됩니다. 
+        >  - 장치 인증서 변수를 사용할 때 변수를 중괄호 **{ }** 로 묶습니다.
+        >  - `{{FullyQualifiedDomainName}}`은 Windows 및 도메인에 가입된 장치에서만 작동합니다. 
+        >  -  장치 인증서의 주체 또는 SAN에서 장치 속성(예: IMEI, 일련 번호 및 정규화된 도메인 이름)을 사용하는 경우 이러한 속성은 해당 장치의 액세스 권한을 가진 사람이 스푸핑할 수 있습니다.
+        >  - 지정된 장치 변수가 지원되지 않는 경우 프로필이 장치에 설치되지 않습니다. 예를 들어, IMEI 번호가 없는 장치에 지정된 SCEP 프로필의 주체 이름에 {{IMEI}}를 사용하는 경우 프로필 설치에 실패합니다. 
+
+
+   - **주체 대체 이름**: Intune에서 인증서 요청의 SAN(주체 대체 이름) 값을 자동으로 만드는 방법을 입력합니다. **사용자** 인증서 유형 또는 **장치** 인증서 유형을 선택하면 이 옵션이 변경됩니다. 
+
+        **사용자 인증서 유형**  
+
+        다음 특성을 사용할 수 있습니다.
+
+        - 전자 메일 주소
+        - UPN(사용자 계정 이름)
+
+            예를 들어 사용자 인증서 유형을 선택한 경우 주체 대체 이름에 UPN(사용자 계정 이름)을 포함할 수 있습니다. 클라이언트 인증서가 네트워크 정책 서버에 대한 인증에 사용되는 경우 주체 대체 이름을 UPN으로 설정합니다. 
+
+        **장치 인증서 유형**  
+
+        사용자 지정할 수 있는 테이블 형식 텍스트 상자입니다. 다음 특성을 사용할 수 있습니다.
+
+        - DNS
+
+        **장치** 인증서 유형을 사용하면 값에 다음 장치 인증서 변수를 사용할 수 있습니다.  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        사용자 지정 값 텍스트 상자에 정적 텍스트와 함께 이러한 변수를 추가할 수 있습니다. 예를 들어, DNS 특성을 `DNS name = {{AzureADDeviceId}}.domain.com`으로 추가할 수 있습니다.
+
+        > [!IMPORTANT]
+        >  - SAN의 정적 텍스트에서 중괄호 **{}**, 파이프 기호 **|** 및 세미콜론 **;** 이 작동하지 않습니다. 
+        >  - 장치 인증서 변수를 사용할 때 변수를 중괄호 **{ }** 로 묶습니다.
+        >  - `{{FullyQualifiedDomainName}}`은 Windows 및 도메인에 가입된 장치에서만 작동합니다. 
+        >  -  장치 인증서의 주체 또는 SAN에서 장치 속성(예: IMEI, 일련 번호 및 정규화된 도메인 이름)을 사용하는 경우 이러한 속성은 해당 장치의 액세스 권한을 가진 사람이 스푸핑할 수 있습니다.
+        >  - 지정된 장치 변수가 지원되지 않는 경우 프로필이 장치에 설치되지 않습니다. 예를 들어 {{IMEI}}가 IMEI 번호가 없는 장치에 지정된 SCEP 프로필의 주체 대체 이름에 사용되는 경우 프로필 설치가 실패합니다.  
+
    - **인증서 유효 기간**: 발급 CA에 대해 사용자 지정 유효 기간을 허용하는 `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` 명령을 실행한 경우 인증서가 만료될 때까지 남은 기간을 입력할 수 있습니다.<br>인증서 템플릿에서 유효 기간보다 작은 값은 입력할 수 있지만 높은 값은 입력할 수 없습니다. 예를 들어 인증서 템플릿의 인증서 유효 기간이 2년이면 값을 1년으로 입력할 수는 있어도 5년으로는 입력할 수 없습니다. 또한 이 값은 발급 CA 인증서의 남은 유효 기간보다 작아야 합니다. 
    - **KSP(키 저장소 공급자)**(Windows Phone 8.1, Windows 8.1, Windows 10): 인증서의 키가 저장될 위치를 입력합니다. 다음 값 중 하나를 선택합니다.
      - **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈) KSP에 등록, 그렇지 않으면 소프트웨어 KSP에 등록**
@@ -357,40 +464,17 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
      - **Passport에 등록, 그러지 않으면 실패(Windows 10 이상)**
      - **소프트웨어 KSP에 등록**
 
-   - **주체 이름 형식**: 인증서 요청 시 Intune에서 자동으로 주체 이름을 만드는 방식을 목록에서 선택합니다. 사용자용 인증서인 경우 주체 이름에 사용자의 전자 메일 주소를 포함할 수도 있습니다. 다음 중에서 선택합니다.
-     - **구성되지 않음**
-     - **일반 이름**
-     - **메일이 포함된 일반 이름**
-     - **메일인 일반 이름**
-     - **IMEI(International Mobile Equipment Identity)**
-     - **일련 번호**
-     - **사용자 지정**: 이 옵션을 선택하면 다른 드롭다운 필드가 표시됩니다. 이 필드를 사용하여 사용자 지정 주체 이름 형식을 입력합니다. 사용자 지정 형식은 **CN(일반 이름)** 및 **E(이메일)** 의 두 가지 변수를 지원합니다. **CN(일반 이름)** 은 다음 변수 중 하나로 설정할 수 있습니다.
-       - **CN={{UserName}}**: 사용자의 사용자 계정 이름입니다(예: janedoe@contoso.com).
-       - **CN={{AAD_Device_ID}}**: Azure AD(Active Directory)에서 장치를 등록하는 경우 할당된 ID입니다. 이 ID는 일반적으로 Azure AD로 인증하는 데 사용됩니다.
-       - **CN={{SERIALNUMBER}}**: 일반적으로 장치를 식별하는 제조업체에서 사용되는 고유한 SN(일련 번호)입니다.
-       - **CN={{IMEINumber}}**: 휴대폰을 식별하는 데 사용되는 IMEI(International Mobile Equipment Identity) 고유 번호입니다.
-       - **CN={{OnPrem_Distinguished_Name}}**: 쉼표로 구분된 상대 고유 이름의 시퀀스입니다(예: `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`).
-
-          `{{OnPrem_Distinguished_Name}}` 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하는 `onpremisesdistingishedname` 사용자 특성을 Azure AD와 동기화해야 합니다.
-
-       - **CN={{onPremisesSamAccountName}}**: 관리자는 Azure AD Connect를 사용하여 Azure AD에 대한 Active Directory의 samAccountName 특성을 `onPremisesSamAccountName` 특성으로 동기화할 수 있습니다. Intune에서는 해당 변수를 SCEP 인증서의 제목에 있는 인증 발급 요청의 일부로 대체할 수 있습니다.  samAccountName 특성은 이전 버전의 Windows(Windows 2000 이전)에서 클라이언트 및 서버를 지원하는 데 사용되는 사용자 로그온 이름입니다. 사용자 로그온 이름 형식은 `DomainName\testUser`이거나 `testUser`만 사용합니다.
-
-          `{{onPremisesSamAccountName}}` 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하는 `onPremisesSamAccountName` 사용자 특성을 Azure AD와 동기화해야 합니다.
-
-       이러한 변수와 정적 문자열을 하나 또는 여러 개 조합으로 사용하는 경우 사용자 지정 주체 이름 형식을 만들 수 있습니다(예: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**). <br/> 이 예에서는 CN 및 E 변수 외에 조직 구성 단위, 조직, 위치, 상태 및 국가 값에 해당하는 문자열을 사용하는 주체 이름 형식을 만들었습니다. [CertStrToName 함수](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)에서는 이 함수와 지원되는 문자열을 보여 줍니다.
-
-- **주체 대체 이름**: Intune에서 인증서 요청의 SAN(주체 대체 이름) 값을 자동으로 만드는 방법을 입력합니다. 예를 들어 사용자 인증서 유형을 선택한 경우 주체 대체 이름에 UPN(사용자 계정 이름)을 포함할 수 있습니다. 클라이언트 인증서가 네트워크 정책 서버에 대한 인증에 사용되는 경우 주체 대체 이름을 UPN으로 설정해야 합니다.
-- **키 사용**: 인증서에 대한 키 사용 옵션을 입력합니다. 옵션은 다음과 같습니다.
-  - **키 암호화**: 키가 암호화된 경우에만 키 교환을 허용합니다.
-  - **디지털 서명**: 디지털 서명으로 키를 보호하는 경우에만 키 교환을 허용합니다.
-- **키 크기(비트)**: 키에 포함된 비트 수를 선택합니다.
-- **해시 알고리즘**(Android, Windows Phone 8.1, Windows 8.1, Windows 10): 이 인증서와 함께 사용할 수 있는 해시 알고리즘 유형 중 하나를 선택합니다. 연결 장치에서 지원되는 가장 강력한 보안 수준을 선택합니다.
-- **루트 인증서**: 이전에 구성하고 사용자 또는 장치에 할당한 루트 CA 인증서 프로필을 선택합니다. 이 CA 인증서는 이 인증서 프로필에서 구성하려는 인증서를 발급할 CA에 대한 루트 인증서여야 합니다.
-- **확장 키 사용**: 인증서의 용도에 대한 값을 **추가**합니다. 대부분의 경우 인증서는 사용자 또는 장치가 서버에 인증할 수 있도록 **클라이언트 인증**이 필요합니다. 그러나 필요에 따라 다른 키 사용을 추가할 수 있습니다.
-- **등록 설정**
-  - **갱신 임계값(%)**: 장치에서 인증서 갱신을 요청하기 전까지 남은 인증서 수명을 백분율로 입력합니다.
-  - **SCEP 서버 URL**: SCEP를 통해 인증서를 발급하는 NDES 서버의 URL을 하나 이상 입력합니다.
-  - **확인**, 프로필 **만들기**를 차례로 선택합니다.
+   - **키 사용**: 인증서에 대한 키 사용 옵션을 입력합니다. 옵션은 다음과 같습니다.
+     - **키 암호화**: 키가 암호화된 경우에만 키 교환을 허용합니다.
+     - **디지털 서명**: 디지털 서명으로 키를 보호하는 경우에만 키 교환을 허용합니다.
+   - **키 크기(비트)**: 키에 포함된 비트 수를 선택합니다.
+   - **해시 알고리즘**(Android, Windows Phone 8.1, Windows 8.1, Windows 10): 이 인증서와 함께 사용할 수 있는 해시 알고리즘 유형 중 하나를 선택합니다. 연결 장치에서 지원되는 가장 강력한 보안 수준을 선택합니다.
+   - **루트 인증서**: 이전에 구성하고 사용자 또는 장치에 할당한 루트 CA 인증서 프로필을 선택합니다. 이 CA 인증서는 이 인증서 프로필에서 구성하려는 인증서를 발급할 CA에 대한 루트 인증서여야 합니다.
+   - **확장 키 사용**: 인증서의 용도에 대한 값을 **추가**합니다. 대부분의 경우 인증서는 사용자 또는 장치가 서버에 인증할 수 있도록 **클라이언트 인증**이 필요합니다. 그러나 필요에 따라 다른 키 사용을 추가할 수 있습니다.
+   - **등록 설정**
+     - **갱신 임계값(%)**: 장치에서 인증서 갱신을 요청하기 전까지 남은 인증서 수명을 백분율로 입력합니다.
+     - **SCEP 서버 URL**: SCEP를 통해 인증서를 발급하는 NDES 서버의 URL을 하나 이상 입력합니다.
+     - **확인**, 프로필 **만들기**를 차례로 선택합니다.
 
 프로필이 만들어지고 프로필 목록 창에 표시됩니다.
 

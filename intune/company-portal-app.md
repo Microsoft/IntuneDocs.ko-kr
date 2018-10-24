@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd388131445715a4037cc0480c194d338212dbb0
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307409"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -34,7 +34,7 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 회사 포털을 사용자 지정하면 최종 사용자에게 친숙하고 유용한 환경을 제공하는 데 도움이 됩니다. 이렇게 하려면 **클라이언트 앱** 워크로드에서 **설정** > **회사 포털 브랜딩**을 선택한 다음, 필요한 설정을 구성합니다.  
 
 > [!Note]       
-> 이제 Windows 10용 회사 포털은 사용자가 문제에 대한 도움을 받기 위해 워크플로를 시작할 때 Microsoft에 직접 앱 로그를 전송합니다. 이렇게 하면 Microsoft에 제기된 문제를 더 쉽게 해결할 수 있습니다.  
+> Azure Government를 사용하는 경우 문제에 대한 도움말을 얻을 수 있는 절차를 시작할 때 공유할 방법을 결정하도록 최종 사용자에게 앱 로그가 제공됩니다. 그러나 Azure Government를 사용하지 않는 경우 Windows 10용 회사 포털은 사용자가 문제에 대한 도움을 받기 위해 프로세스를 시작할 때 Microsoft에 직접 앱 로그를 보냅니다. 앱 로그를 Microsoft에 보내면 문제를 더 쉽게 해결할 수 있습니다. 
 
 ## <a name="company-information-and-privacy-statement"></a>회사 정보 및 개인정보처리방침        
 회사 이름은 회사 포털의 제목으로 표시됩니다. 개인정보취급방침은 사용자가 개인정보취급방침 링크를 클릭하면 표시됩니다.
@@ -61,7 +61,7 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 
 
 ## <a name="company-branding-customization"></a>회사 브랜딩 사용자 지정       
-회사 로고, 회사 이름, 테마 색 및 배경으로 회사 포털을 사용자 지정할 수 있습니다.     
+회사 로고, 회사 이름, 테마 색 및 배경으로 회사 포털을 사용자 지정할 수 있습니다. 테스트 장치 없이 브랜딩 구성을 빠르게 미리 보려면 [portal.manage.microsoft.com](https://portal.manage.microsoft.com)으로 이동합니다. 업로드한 로고는 메일 템플릿에 사용됩니다.      
 
 ### <a name="theme-color"></a>테마 색
 회사 포털에 테마 색을 적용합니다. 표준 색을 선택하거나 사용자 지정 색에 대한 6자리 16진수 코드를 입력합니다.
@@ -82,3 +82,30 @@ Intune 사용자 환경 전체에서 볼 수 있도록 회사 로고를 업로�
 |**로고 옆에 회사 이름 표시**| 업로드한 로고 옆에 입력한 회사 이름을 표시하려면 이 옵션을 선택합니다. |
 
 변경 내용이 저장되면 블레이드의 위쪽에서 **Intune 웹 포털에서 설정을 미리 봅니다.** 를 선택하여 구성의 모양을 확인할 수 있습니다.
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 회사 포털 바로 가기 키
+
+최종 사용자는 바로 가기 키(액셀러레이터 키)를 사용하여 Windows 회사 포털에서 탐색, 앱 및 장치 작업을 트리거할 수 있습니다.
+
+다음 바로 가기 키는 Windows 회사 포털 앱에서 사용할 수 있습니다.
+
+| 영역 | 설명 | 키보드 바로 가기 키 |
+|:------------------:|:--------------:|:-----------------:|
+| 탐색 메뉴 | 탐색 | Alt+M |
+|  | 홈 | Alt+H |
+|  | 모든 앱 | Alt+A |
+|  | 설치된 앱 | Alt+I |
+|  | 피드백 보내기 | Alt+F |
+|  | 내 프로필 | Alt+U |
+|  | 설정 | Alt+T |
+| 홈 - 장치 타일 | 이름 바꾸기 | F2 |
+|  | 제거 | Ctrl+D 또는 삭제 |
+|  | 액세스 확인 | Ctrl+M 또는 F9 |
+| 장치 세부 정보 | 이름 바꾸기 | F2 |
+|  | 제거 | Ctrl+D 또는 삭제 |
+|  | 액세스 확인 | Ctrl+M 또는 F9 |
+| 앱 세부 정보 | 설치 | Ctrl+I |
+
+## <a name="next-steps"></a>다음 단계
+
+- [Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 수동으로 추가](store-apps-company-portal-app.md)

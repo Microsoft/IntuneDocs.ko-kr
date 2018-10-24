@@ -14,12 +14,12 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 72aa45d154cc3913f5b2e3895486a8296bb7f1cf
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169450"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>사용자 지정 장치 프로필을 사용하여 미리 공유한 키로 Wi-Fi 프로필 만들기 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -70,7 +70,7 @@ Android, Windows 또는 EAP 기반 Wi-Fi 프로필에서 미리 공유한 키를
 
 ## <a name="android-or-windows-wi-fi-profile-example"></a>Android 또는 Windows Wi-Fi 프로필 예제
 
-다음 예제에는 Android 또는 Windows Wi-Fi 프로필의 XML 코드가 포함됩니다. 
+다음 예제에는 Android 또는 Windows Wi-Fi 프로필의 XML 코드가 포함됩니다. 이 예제는 적절한 형식을 표시하고 자세한 내용을 제공하기 위해 제공된 것입니다. 이는 예시일 뿐이며, 사용자 환경에 대한 권장 구성으로 제공된 것은 아닙니다.
 
 > [!IMPORTANT]
 >
@@ -122,7 +122,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>EAP 기반 Wi-Fi 프로필 예제
-다음 예제에는 EAP 기반 Wi-Fi 프로필의 XML 코드가 포함됩니다.
+다음 예제에는 EAP 기반 Wi-Fi 프로필에 대한 XML 코드가 포함되어 있습니다. 이 예제는 올바른 형식을 표시하고 자세한 내용을 제공하기 위해 제공된 것입니다. 이는 예시일 뿐이며, 사용자 환경에 대한 권장 구성으로 제공된 것은 아닙니다.
+
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -215,7 +216,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 3. 올바른 XML 파일을 찾았으면 XML 코드를 복사하여 OMA-URI 설정 페이지의 **데이터** 필드에 붙여넣습니다.
 
 ## <a name="best-practices"></a>모범 사례
-- PSK를 사용하여 Wi-Fi 프로필을 배포하기 전에 장치를 끝점에 직접 연결할 수 있는지 확인합니다.
+- PSK를 사용하여 Wi-Fi 프로필을 배포하기 전에 장치를 엔드포인트에 직접 연결할 수 있는지 확인합니다.
 
 - 키(암호)를 회전하는 경우 가동 중지 시간을 예상하고 그에 따라 배포를 계획합니다. 근무 외 시간에 새 Wi-Fi 프로필을 푸시하는 것이 좋습니다. 연결에 영향을 받을만한 사용자에게 경고도 하는 것이 좋습니다.
 

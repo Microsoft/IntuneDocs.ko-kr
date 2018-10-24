@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 77f6391637b8d6f8f2ed47dd84885c11b8b6f476
-ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
+ms.openlocfilehash: 06ede788575c3995f7e9fd0b0dd92a32aa8e7809
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46466781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169535"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -144,7 +144,9 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
 
 5. 앱이 `UIApplication canOpenURL`에 전달하는 각 프로토콜을 앱 Info.plist 파일의 `LSApplicationQueriesSchemes` 배열에 포함합니다. 다음 단계로 진행하기 전에 변경 내용을 저장해야 합니다.
 
-6. [SDK 리포지토리](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)에 포함된 IntuneMAMConfigurator 도구를 사용하여 앱의 Info.plist 구성을 완료합니다. 이 도구에는 3가지 매개 변수가 있습니다.
+6. 앱에서 FaceID를 아직 사용하지 않는 경우 [NSFaceIDUsageDescription Info.plist 키](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)가 기본 메시지로 구성되었는지 확인합니다. 이는 iOS가 앱이 FaceID를 어떻게 사용하려고 하는지 사용자에게 알려주기 위해 필요합니다. Intune 앱 보호 정책 설정을 사용하면 IT 관리자가 구성할 때 FaceID를 앱 액세스 방법으로 사용할 수 있습니다.
+
+7. [SDK 리포지토리](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)에 포함된 IntuneMAMConfigurator 도구를 사용하여 앱의 Info.plist 구성을 완료합니다. 도구에는 다음과 같은 세 개의 매개 변수가 있습니다.
 
    |속성|사용 방법|
    |---------------|--------------------------------|
@@ -153,9 +155,6 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
    |- o |  (선택 사항) `<Path to the output plist>` |
 
 '-o' 매개 변수를 지정하지 않으면 입력 파일이 현재 위치에서 수정됩니다. 이 도구는 멱등적이며 앱의 Info.plist 또는 자격을 변경할 때마다 다시 실행해야 합니다. 또한 Info.plist 구성 요구 사항이 최신 릴리스에서 변경된 경우 Intune SDK를 업데이트할 때 최신 버전의 도구를 다운로드하여 실행해야 합니다.
-
-> [!NOTE]
-> 앱에서 이미 FaceID를 사용하지 않는 경우 `NSFaceIDUsageDescription` info.plist 키가 기본 메시지로 구성되었는지 확인합니다. 이는 iOS가 앱이 FaceID를 어떻게 사용하려고 하는지 사용자에게 알려주기 위해 필요합니다. Intune 앱 보호 정책 설정을 사용하면 IT 관리자가 구성할 때 FaceID를 앱 액세스 방법으로 사용할 수 있습니다.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure ADAL(Active Directory 인증 라이브러리) 구성
 
@@ -207,7 +206,7 @@ ADAL 바이너리에 앱을 연결하려면 다음 단계를 수행합니다.
 
 ### <a name="if-your-app-does-not-use-adal"></a>앱에서 ADAL을 사용하지 않는 경우
 
-앱에서 ADAL을 사용하지 않는 경우 Intune 앱 SDK는 ADAL 매개 변수에 대한 기본값을 제공하며, Azure AD에 대한 인증을 처리합니다. 위에 나열된 ADAL 설정에 대한 값을 지정할 필요가 없습니다.
+위에서 언급했듯이 Intune 앱 SDK는 해당 인증 및 조건부 시작 시나리오에 [Azure Active Directory 인증 라이브러리](https://github.com/AzureAD/azure-activedirectory-library-for-objc)를 사용합니다. 또한 ADAL을 사용하여 장치 등록 시나리오가 없는 관리를 위해 MAM 서비스에 사용자 ID를 등록합니다. **앱에서 고유한 인증 메커니즘에 ADAL을 사용하지 않는 경우** Intune 앱 SDK는 ADAL 매개 변수에 대한 기본값을 제공하며, Azure AD에 대한 인증을 처리합니다. 위에 나열된 ADAL 설정에 대한 값을 지정할 필요가 없습니다. 앱에서 사용하는 인증 메커니즘이 있는 경우 ADAL 프롬프트의 맨 위에 표시됩니다. 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune 앱 SDK에 대한 설정 구성
 

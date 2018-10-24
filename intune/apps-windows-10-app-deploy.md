@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,21 +15,23 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 61bb874fd914c69669197110ee5901ccfbc3f594
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347435"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075613"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
 현재 Microsoft Intune은 Windows 10 장치에서 다양한 앱 형식 및 배포 시나리오를 지원합니다. Intune에 앱이 추가되면 사용자와 장치에 해당 앱을 할당할 수 있습니다. 다음 정보에서는 지원되는 Windows 10 시나리오와 관련된 자세한 세부 정보를 제공합니다. 또한 Windows에 앱을 배포할 때 참고할 키 정보도 제공합니다. 
 
-기간 업무(LOB) 앱 및 비즈니스용 Microsoft 스토어 앱은 Windows 10 장치에서 지원되는 앱 형식입니다.
+기간 업무(LOB) 앱 및 비즈니스용 Microsoft 스토어 앱은 Windows 10 장치에서 지원되는 앱 형식입니다. Windows 앱의 파일 확장명에는 **.msi**, **.appx** 및 **.appxbundle**이 포함됩니다.  
 
 > [!Note]
-> 장치 컨텍스트에서 앱을 배포하는 데 필요한 Windows 10 업데이트는 최소 [2018년 5월 23일-KB4100403(OS 빌드 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403)입니다.
+> 최신 앱을 배포하는 데 필요한 최소 Windows 10 업데이트는 다음과 같습니다.
+> - Windows 10 1803의 경우, [2018년 5월 23일—KB4100403(OS 빌드 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)입니다.
+> - Windows 10 1709의 경우, [2018년 6월 21일—KB4284822(OS 빌드 16299.522)](https://support.microsoft.com/help/4284822)입니다.
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 기간 업무 앱
 
@@ -44,11 +46,13 @@ ms.locfileid: "43347435"
 
 - **사용자 컨텍스트**: 사용자 컨텍스트에서 앱을 배포할 경우 관리되는 앱은 사용자가 장치에 로그인할 때 해당 사용자를 위해 장치에 설치됩니다. 사용자가 장치에 로그인할 때까지 앱 설치는 성공할 수 없습니다. 
     - 최신 기간 업무 앱 및 비즈니스용 Microsoft 스토어 앱(온라인 및 오프라인)은 사용자 컨텍스트에서 배포될 수 있으며 필수적이고 사용 가능한 의도를 지원합니다.
+    - **사용자 모드** 또는 **이중 모드**로 빌드된 Win32 앱은 사용자 컨텍스트에서 배포할 수 있으며 **필수** 및 **사용 가능** 의도를 모두 지원합니다. 
 - **장치 컨텍스트**: 장치 컨텍스트에서 앱을 배포하면 Intune에서 관리되는 앱을 장치에 직접 설치합니다.
     - 최신 기간 업무 앱 및 온라인에서 라이선스된 비즈니스용 Microsoft 스토어 앱은 장치 컨텍스트에서 배포될 수 있으며 필수적인 의도만 지원합니다.
+    - **컴퓨터 모드** 또는 **이중 모드**로 빌드된 Win32 앱은 사용자 컨텍스트에서 배포할 수 있으며 **필수** 의도만 지원합니다.
 
-> [!Note]
-> 장치 컨텍스트에서 MDM을 통한 MSI의 배포는 Windows 10 장치에서 아직 지원되지 않습니다.
+> [!NOTE]
+> **이중 모드** 앱으로 빌드된 Win32 앱의 경우 관리자는 해당 인스턴스와 연결된 모든 할당에 대해 앱이 **사용자 모드** 또는 **컴퓨터 모드** 중 어떤 모드의 앱으로 작동하도록 할지 선택해야 합니다. 배포 컨텍스트를 할당마다 변경할 수는 없습니다.  
 
 장치 컨텍스트에서 앱을 배포하면 설치가 장치 컨텍스트를 지원하는 장치를 대상으로 하는 경우에만 성공할 수 있습니다. 또한 장치 컨텍스트에서 배포가 지원하는 조건은 다음과 같습니다.
 - 앱이 장치 컨텍스트에서 배포되고 사용자를 대상으로 하는 경우 관리자 콘솔에 표시되는 다음 상태 및 오류로 인해 설치가 실패합니다.

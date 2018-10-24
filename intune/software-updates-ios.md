@@ -5,25 +5,25 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313499"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101956"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Intune에서 iOS 업데이트 정책 구성
 
-소프트웨어 업데이트 정책을 통해 감독된 iOS 장치에서 사용 가능한 최신 OS 업데이트를 자동으로 설치하도록 할 수 있습니다. 이 기능은 감동된 장치에만 제공됩니다. 정책을 구성할 때 장치에 업데이트를 설치하지 않을 날짜와 시간을 추가할 수 있습니다. 
+소프트웨어 업데이트 정책을 통해 감독된 iOS 장치에서 사용 가능한 최신 OS 업데이트를 자동으로 설치하도록 할 수 있습니다. 이 기능은 감독되는 장치에만 제공됩니다. 정책을 구성할 때 장치에 업데이트를 설치하지 않을 날짜와 시간을 추가할 수 있습니다. 
 
 장치는 약 8시간마다 Intune에 체크 인합니다. 제한 시간이 아닐 때 사용 가능한 업데이트가 있으면 장치는 최신 OS 업데이트를 다운로드하여 설치합니다. 장치를 업데이트하기 위해 사용자 상호 작용이 필요하지 않습니다. 이 정책은 사용자가 OS를 수동으로 업데이트하는 것을 방지하지 않습니다.
 
-이 기능은 iOS 10.3 이상을 실행하는 장치를 지원합니다.
+이 기능은 iOS 10.3 이상 버전을 실행하는 장치를 지원합니다. 지연 설정은 iOS 11.3 이상 버전에서 사용할 수 있습니다.
 
 ## <a name="configure-the-policy"></a>정책 구성
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.

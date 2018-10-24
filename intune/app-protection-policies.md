@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 368c804fa044dc303b22e2ae9cf8d273d6cd051a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 3478308e8e2c219631d0df864ca2add6cc57cda2
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231817"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075866"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>앱 보호 정책을 만들고 할당하는 방법
 
@@ -127,7 +127,10 @@ Intune 앱 보호 정책은 사용자의 ID를 대상으로 하기 때문에 사
 
 ![모든 앱 형식을 대상으로 선택한 정책 추가 블레이드 스크린샷](./media/app-protection-policies-target-all.png)
 
-iOS 앱을 "관리 대상"으로 간주하려면 각 앱에 **IntuneMAMUPN** 구성 정책 설정을 배포해야 합니다. 자세한 내용은 [Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)을 참조하세요.
+iOS의 경우 Intune에 등록된 장치의 앱에 APP 설정을 지정하려면 추가 앱 구성 설정이 필요합니다.
+- 모든 MDM 관리되는 응용 프로그램에 대해 **IntuneMAMUPN**을 구성해야 합니다.  자세한 내용은 [Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)을 참조하세요.
+- 모든 타사 및 LOB MDM 관리되는 응용 프로그램에 대해 **IntuneMAMDeviceID**를 구성해야 합니다. **IntuneMAMDeviceID**는 장치 ID 토큰으로 구성되어야 합니다. 정의합니다(예: `key=IntuneMAMDeviceID, value={{deviceID}}`). 자세한 내용은 [관리되는 iOS 장치용 앱 구성 정책 추가](https://docs.microsoft.com/intune/app-configuration-policies-use-ios)를 참조하세요.
+- **IntuneMAMDeviceID**만 구성된 경우 Intune 앱은 장치를 관리되지 않는 것으로 간주합니다.  
 
 > [!NOTE]
 > 장치 관리 상태에 따른 앱 보호 정책에 대한 특정 iOS 지원 내용은 [관리 상태에 따라 대상으로 지정된 MAM 보호 정책](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-)을 참조합니다.

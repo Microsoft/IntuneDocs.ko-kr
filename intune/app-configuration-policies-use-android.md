@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdf927eff77b6a97e4c763ec0d75c7e44e4c6840
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799583"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102041"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>관리되는 Android 장치용 앱 구성 정책 추가
 
@@ -29,7 +29,9 @@ ms.locfileid: "48799583"
 Microsoft Intune에서 앱 구성 정책을 사용하여 Android 회사 프로필 앱에 설정을 제공할 수 있습니다. 앱에 대한 구성 설정을 지정하려면 앱 개발자는 Android 관리되는 앱 구성 설정을 공개해야 합니다. 설정을 적용하려는 사용자 그룹에 앱 구성 정책을 할당합니다.  정책 설정은 앱에서 해당 설정을 확인할 때(일반적으로는 앱을 처음 실행할 때) 사용됩니다.
 
 > [!Note]  
-> 모든 앱이 앱 구성을 지원하지는 않습니다. 앱 구성 정책을 지원하도록 앱을 빌드했는지 앱 개발자와 확인하세요.
+> 모든 앱이 앱 구성을 지원하지는 않습니다. 앱 구성 정책을 지원하도록 앱을 빌드했는지 앱 개발자와 확인하세요.<p></p>
+> Microsoft Intune 관리자는 관리되는 장치에서 Microsoft Office 응용 프로그램에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 장치에서 개인 계정을 차단할 수 있습니다. 지원 응용 프로그램이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.<p></p>
+> Microsoft Word, Microsoft Excel, Microsoft PowerPoint의 경우 Android 16.0.9327.1000 이상을 사용해야 합니다.
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
@@ -69,6 +71,16 @@ Android 앱에 대한 구성 디자이너를 사용하여 구성을 지원할 �
 - 사용자 ID — 예: **3ec2c00f-b125-4519-acf0-302ac3761822**
 - 사용자 이름 — 예: **John Doe**
 
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>다중 ID 앱에서 구성된 조직 계정만 허용 
+
+Android 장치의 경우 다음 키/값 쌍을 사용합니다.
+
+| **Key** | com.microsoft.intune.mam.AllowedAccountUPNs |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **값** | <ul><li>하나 이상의 <code>;</code>으로 구분된 UPN입니다.</li><li>허용된 계정만 이 키로 정의된 관리되는 사용자 계정입니다.</li><li> Intune 등록 장치의 경우 <code>{{userprincipalname}}</code> 토큰을 사용하여 등록된 사용자 계정을 나타낼 수 있습니다.</li></ul> |
+
+   > [!NOTE]
+   > 다중 ID를 사용하는 구성된 조직 계정만 허용하는 경우 Android용 Outlook 2.2.222 이상을 사용해야 합니다. 
 
 ## <a name="enter-the-json-editor"></a>JSON 편집기 입력
 

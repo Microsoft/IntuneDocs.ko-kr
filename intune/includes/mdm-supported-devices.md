@@ -1,8 +1,8 @@
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 9.0 이상
-- Mac OS X 10.11 이상
+- Apple iOS 10.0 이상
+- Mac OS X 10.11 이상(2018년 12월부터 지원되는 버전이 10.12 이상으로 변경됩니다.)
 
 ### <a name="google"></a>Google
 - Android 4.4 이상(Samsung Knox Standard 4.4 이상 포함)
