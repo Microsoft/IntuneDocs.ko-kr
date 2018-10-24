@@ -59,7 +59,7 @@ Intune 평가판은 30일 동안 무료로 사용할 수 있습니다. 회사 �
 
 ## <a name="sign-in-to-the-azure-portal"></a>Azure Portal에 로그인
 
-1. 새 브라우저 창을 열고 주소 표시줄에 **https://portal.azure.com**을 입력합니다. 
+1. 새 브라우저 창을 열고 주소 표시줄에 **https://portal.azure.com** 을 입력합니다. 
 2. 위의 단계에서 제공된 자격 증명을 사용하여 로그인합니다.
 
     ![Azure Portal 로그인 페이지의 이미지](./media/azure-portal-signin.png)
@@ -76,7 +76,7 @@ MDM(모바일 장치 관리) 기관 설정에 따라 장치를 관리하는 방�
 
 MDM 기관을 Intune으로 설정하려면 다음 단계를 수행합니다.
 
-1. 새 브라우저 창을 열고 주소 표시줄에 **https://portal.azure.com**을 입력합니다. 
+1. 새 브라우저 창을 열고 주소 표시줄에 **https://portal.azure.com** 을 입력합니다. 
 2. **모든 서비스** > **Microsoft Intune**을 선택합니다.
 3. 주황색 배너를 선택하여 **모바일 장치 관리 기관** 설정을 엽니다. 
 
