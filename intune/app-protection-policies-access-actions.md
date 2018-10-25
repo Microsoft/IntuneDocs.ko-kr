@@ -6,21 +6,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
-ms.reviewer: mghadial
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: f96ca3075bab5c8bacaea62bb4fc04bd957cf01e
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329413"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863181"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -61,15 +61,15 @@ iOS의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대한 �
 -  장치 모델
 
 **장치 모델** 설정을 사용하려면 세미콜론으로 구분된 iOS 모델 식별자 목록을 입력합니다. [HockeyApp의 지원 문서](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)의 장치 유형 열 아래에서 iOS 모델 식별자를 찾을 수 있습니다.<br>
-입력의 예: *iPhone5,2; iPhone5,3*
+입력의 예: *iPhone5,2;iPhone5,3*
 
-최종 사용자 장치에서 Intune 클라이언트는 응용 프로그램 보호 정책에 대한 Intune에 지정된 장치 모델 문자열의 단순 일치를 기반으로 작업을 수행합니다. 일치 여부는 전적으로 장치가 보고하는 내용에 따라 결정됩니다. 사용자(IT 관리자)는 다양한 장치 제조업체 및 모델을 기반으로 하며 소규모 사용자 그룹을 대상으로 이 설정을 테스트하여 의도한 동작이 발생하는지 확인하는 것이 좋습니다. 기본값은 **구성되지 않음**입니다.<br>
+최종 사용자 장치에서 Intune 클라이언트는 응용 프로그램 보호 정책에 대한 Intune에 지정된 장치 모델 문자열의 단순 일치를 기반으로 동작을 수행합니다. 일치 여부는 전적으로 장치가 보고하는 내용에 따라 결정됩니다. 사용자(IT 관리자)는 다양한 장치 제조업체 및 모델을 기반으로 하며 소규모 사용자 그룹을 대상으로 이 설정을 테스트하여 의도한 동작이 발생하는지 확인하는 것이 좋습니다. 기본값은 **구성되지 않음**입니다.<br>
 다음 작업 중 하나를 설정합니다. 
 - 지정됨(비지정 차단)
 - 지정됨(비지정 초기화)
 
 **IT 관리자가 동일한 Intune 사용자의 동일한 앱을 대상으로 하는 정책 간 다른 iOS 모델 식별자 목록을 입력하면 어떻게 되나요?**<br>
-구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 iOS 모델 식별자의 교차점이 됩니다. 예를 들어 *정책A*는 "iPhone5,2; iPhone5,3"을 지정하고 *정책 B*는 "iPhone5,3"을 지정합니다. *정책A*와 *정책 B* 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 "iPhone5,3"이 됩니다. 
+구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 iOS 모델 식별자의 교차점이 됩니다. 예를 들어 ‘정책 A’는 “iPhone5,2;iPhone5,3”을 지정하고 ‘정책 B’는 “iPhone5,3”을 지정합니다. ‘정책 A’와 ‘정책 B’ 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 “iPhone5,3”이 됩니다. 
 
 ### <a name="android-policy-settings"></a>Android 정책 설정
 
@@ -83,10 +83,10 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 -  장치 제조업체
 
 **장치 제조업체** 설정을 사용하려면 세미콜론으로 구분된 Android 제조업체 목록을 입력합니다. 장치의 Android 제조업체는 장치 설정에서 찾을 수 있습니다.<br>
-입력의 예: *제조업체 A; 제조업체 B* 
+입력의 예: ‘제조업체 A;제조업체 B’ 
 
 >[!NOTE]
-> Intune을 사용하는 장치에서 보고하는 일반적인 제조업체로는 Asu; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk 등이 있으며, 이를 입력 값으로 사용할 수 있습니다.
+> Intune을 사용하는 장치에서 보고하는 일반적인 제조업체로는 Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk 등이 있으며, 이를 입력 값으로 사용할 수 있습니다.
 
 최종 사용자 장치에서 Intune 클라이언트는 응용 프로그램 보호 정책에 대한 Intune에 지정된 장치 모델 문자열의 단순 일치를 기반으로 동작을 수행합니다. 일치 여부는 전적으로 장치가 보고하는 내용에 따라 결정됩니다. 사용자(IT 관리자)는 다양한 장치 제조업체 및 모델을 기반으로 하며 소규모 사용자 그룹을 대상으로 이 설정을 테스트하여 의도한 동작이 발생하도록 합니다. 기본값은 **구성되지 않음**입니다.<br>
 다음 작업 중 하나를 설정합니다. 
@@ -94,7 +94,7 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 - 지정됨(지정되지 않은 경우 초기화)
 
 **IT 관리자가 동일한 Intune 사용자의 동일한 앱을 대상으로 하는 정책 간 다른 Android 제조업체 목록을 입력하면 어떻게 되나요?**<br>
-구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 Android 제조업체의 교차점이 됩니다. 예를 들어 *정책A*는 “Google; Samsung”을 지정하고 *정책 B*는 “Google”을 지정합니다. *정책A*와 *정책 B* 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 “Google”이 됩니다. 
+구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 Android 제조업체의 교차점이 됩니다. 예를 들어 ‘정책 A’는 “Google;Samsung”을 지정하고 ‘정책 B’는 “Google”을 지정합니다. ‘정책 A’와 ‘정책 B’ 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 “Google”이 됩니다. 
 
 ### <a name="additional-settings-and-actions"></a>추가 설정 및 작업 
 
@@ -119,5 +119,3 @@ Intune 앱 보호 정책에 대한 자세한 내용은 다음을 참조하세요
 - [앱 보호 정책을 만들고 할당하는 방법](app-protection-policies.md)
 - [iOS 앱 보호 정책 설정](app-protection-policy-settings-ios.md)
 - [Microsoft Intune의 Android 앱 보호 정책 설정](app-protection-policy-settings-android.md) 
-
-

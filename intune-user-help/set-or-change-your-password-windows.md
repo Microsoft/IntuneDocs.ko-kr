@@ -1,11 +1,11 @@
 ---
-title: 암호 설정 또는 변경 | Microsoft 문서
+title: 장치 암호 설정 또는 변경 | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bd36a0327472f24a3a99b7975e736c9fa5385eb
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: ed2069b3b5627dd844fadc37b898aa2688f301bc
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149066"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260235"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>올바른 암호로 장치의 안전 강화
 

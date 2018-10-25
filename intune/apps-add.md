@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141680"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863147"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가
 
@@ -57,10 +57,11 @@ Intune은 다양한 앱 유형을 지원합니다. 사용 가능한 옵션은 �
 | Android LOB(기간 업무) 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.apk**인 Android 설치 파일을 입력합니다.  |
 | iOS LOB 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.ipa**인 iOS 설치 파일을 입력합니다.  |
 | Windows Phone LOB 앱 | LOB 앱 | **앱 유형**으로 **LOB(기간 업무)** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.xap**인 Windows Phone 설치 파일을 입력합니다.  |
-| Windows LOB 앱 | LOB 앱 | 앱 유형으로 **LOB(기간 업무)** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.msi**, **.appx**, **.appxbundle**, **.msix** 및 **.msixbundle**인 Windows 설치 파일을 입력합니다. |
+| Windows LOB 앱 | LOB 앱 | 앱 유형으로 **사업 부문** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.msi**, **.appx**, **.appxbundle**, **.msix** 및 **.msixbundle**인 Windows 설치 파일을 입력합니다. |
 | 기본 제공 iOS 앱  | 기본 제공 앱 | **앱 유형**으로 **기본 제공 앱**을 선택한 다음, 제공된 앱 목록에서 기본 제공 앱을 선택합니다.  |
 | 기본 제공 Android 앱  | 기본 제공 앱 | **앱 유형**으로 **기본 제공 앱**을 선택한 다음, 제공된 앱 목록에서 기본 제공 앱을 선택합니다.  |
 | 웹앱  | 웹앱  | **앱 유형**으로 **웹 링크**를 선택하고 웹앱을 가리키는 유효한 URL을 입력합니다.  |
+| Windows 앱(Win32)  | LOB 앱  | **앱 유형**으로 **Windows 앱(Win32)** 을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.intunewin**인 설치 파일을 선택합니다.  |
 
 Microsoft Intune에서 **클라이언트 앱** > **앱** > **추가**를 차례로 선택하여 앱을 추가할 수 있습니다. **앱 추가** 창이 표시되고 **앱 유형**을 선택할 수 있습니다. 
 
@@ -90,7 +91,7 @@ Intune을 사용하여 장치를 관리하지 않고 MAM으로 앱을 관리하�
 
 먼저 앱에 포함된 데이터의 중요도에 따라 앱에 액세스할 수 있는 그룹을 결정해야 합니다. 조직 내의 특정 역할 유형을 포함하거나 제외해야 할 수도 있습니다. 예를 들어 영업 그룹은 특정 LOB 앱만 필요한 반면 엔지니어링, 재무, HR 또는 법무 관련 직원들은 LOB 앱을 사용할 필요가 없을 수 있습니다. 또한 영업 그룹은 모바일 장치에서 내부 회사 서비스에 액세스할 수 있는 권한과 추가 데이터 보호 기능이 필요할 수 있습니다. 이 그룹이 앱을 사용하여 리소스에 연결하는 방식을 결정해야 합니다. 앱이 액세스하는 데이터가 클라우드에 있나요, 아니면 온-프레미스에 있나요? 또한 사용자가 앱을 사용하여 어떻게 리소스에 연결하나요? 
 
-또한 Intune에서는 기간 업무 앱 서버와 같은 온-프레미스 데이터에 대한 보안 액세스가 필요한 모바일 앱에 대한 액세스를 지원합니다. 이러한 유형의 액세스는 일반적으로 경계에 있는 표준 VPN 게이트웨이 또는 프록시(예: Azure Active Directory 응용 프로그램 프록시)와 더불어 액세스 제어에 [Intune 관리 인증서](certificates-configure.md)를 사용하여 제공됩니다. Intune [앱 래핑 도구 및 앱 SDK](apps-prepare-mobile-application-management.md)를 사용하면 소비자 앱 또는 서비스에 회사 데이터를 전달할 수 없도록 액세스한 데이터를 기간 업무 앱에 포함할 수 있습니다.
+또한 Intune에서는 사업 부문 앱 서버와 같은 온-프레미스 데이터에 대한 보안 액세스가 필요한 클라이언트 앱에 대한 액세스를 지원합니다. 이러한 유형의 액세스는 일반적으로 경계에 있는 표준 VPN 게이트웨이 또는 프록시(예: Azure Active Directory 응용 프로그램 프록시)와 더불어 액세스 제어에 [Intune 관리 인증서](certificates-configure.md)를 사용하여 제공됩니다. Intune [앱 래핑 도구 및 앱 SDK](apps-prepare-mobile-application-management.md)를 사용하면 소비자 앱 또는 서비스에 회사 데이터를 전달할 수 없도록 액세스한 데이터를 기간 업무 앱에 포함할 수 있습니다.
 
 [Intune 배포 계획, 설계 및 구현 가이드](planning-guide.md)를 사용하여 각 사용 사례 및 하위 사용 사례 앱 시나리오와 연결된 조직 그룹을 식별하는 방법을 확인하세요. 그룹에 앱을 할당하는 방법에 대한 자세한 내용은 [Microsoft intune을 사용하여 그룹에 앱 할당](apps-deploy.md)을 참조하세요.
 
@@ -194,3 +195,4 @@ Intune 앱 설치 오류에 대한 자세한 내용은 [앱 설치 오류](troub
 - [Windows 10용 Office 365 앱](apps-add-office365.md)
 - [macOS용 Office 365 앱](apps-add-office365-macos.md)
 - [기본 제공 앱](apps-add-built-in.md)
+- [Win32 앱](apps-win32-app-management.md) 

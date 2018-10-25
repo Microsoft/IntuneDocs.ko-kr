@@ -3,8 +3,8 @@ title: Jamf 장치에 대한 장치 준수 정책
 titlesuffix: Microsoft Intune
 description: 보안 Jamf 관리 장치를 도우려면 Azure Active Directory의 조건부 액세스와 함께 Microsoft Intune 준수 정책을 사용합니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
+ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34482338"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48812824"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro로 관리되는 Mac에서 준수 적용
 
@@ -73,7 +73,7 @@ Azure Active Directory 및 Microsoft Intune의 조건부 액세스 정책을 사
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Intune에서 Jamf 관리 장치를 제거합니다.
 
-Intune에서 Jamf 관리 장치를 제거할 수 없습니다. Jamf Pro에서 Jamf 관리 장치를 제거해야 합니다. 그러면 자체를 Intune에서 제거합니다. 
+**모든 장치** 보기에서 **삭제**를 선택하여 Intune 콘솔에서 Jamf 관리 장치를 제거할 수 있습니다. 여러 장치를 선택하고 **삭제**를 클릭하여 대량 장치 삭제를 사용하도록 설정할 수 있습니다.
 
 [Jamf 관리 장치를 Jamf Pro 문서에서 제거](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)하는 방법에 대해 알아봅니다. 또한 추가 도움을 위해 지원 티켓을 [Jamf 지원](https://www.jamf.com/support/)와 함께 제출할 수 있습니다. 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: fd58fae2f48791e8c63b9391a825838040b1202f
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150327"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863113"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>회사 포털에서 장치 제거
 
@@ -30,18 +30,19 @@ ms.locfileid: "43150327"
 
 장치를 제거하려면:
 
-1. [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 __메뉴__ 단추 ![세 개의 가로 막대가 병렬로 누적된 메뉴 단추의 작은 이미지](/Intune/whats-new/media/CP_hamburger_menu.png)를 탭한 다음 __내 장치__를 선택합니다.
+1. [회사 포털 웹 사이트](https://portal.manage.microsoft.com)에서 __메뉴__ 단추 > __장치__를 선택합니다.  
 
-   ![화면 왼쪽에 홈, 모든 앱, 내 장치, 기술 지원팀 및 로그 아웃 단추가 포함된 확장된 측면 메뉴가 있는 회사 포털 웹 사이트의 이미지](/media/iwp-expanded-sidebar.png)
+2. 제거할 장치를 선택합니다.  
 
-2. __내 장치__ 페이지에서 이동할 장치의 이름을 선택합니다.
+    ![식별되지 않은 일반적으로 명명된 장치를 보여주는 2개의 타일이 포함된 장치 페이지의 스크린샷 회색 배너는 장치 바로 아래에 있으며 사용 중인 장치를 식별하거나 새 장치를 추가하라는 메시지를 표시합니다.](./media/rename-reset-device-step2-1808.png) 
 
-    ![목록에 없는 장치를 등록하거나 식별되지 않은 장치를 식별하라는 배너 프롬프트 위에 몇 개의 식별되지 않은 장치가 표시된 내 장치 페이지의 스크린샷](./media/macOS_enroll_002_tap_here_banner.png)
+3. **제거**를 선택합니다. 제거 옵션이 페이지의 맨 위에 보이지 않는 경우 **자세히(...)** > **제거**를 선택합니다.  
 
-3. 장치가 팝업 창에서 열립니다. **제거** 단추를 탭합니다.
+   ![이름 바꾸기, 제거, 장치 재설정, 암호 재설정, 원격 잠금을 표시하는 맨 위의 링크 목록과 함께 회사 포털 웹 사이트에서 선택한 장치에 대한 장치 세부 정보 페이지 ](./media/rename-reset-device-1808.png)  
+  
 
-   ![이름 바꾸기, 제거, 장치 다시 설정, 암호 다시 설정, 원격 잠금 등 회사 포털 웹 사이트에서 선택한 장치에 대한 모든 옵션 ](./media/iwp-screen-with-all-options.png)
+    ![빨간색 화살표로 강조 표시된 자세히 아이콘의 확대된 보기](./media/rename-reset-device-step3-more-1808.png)   
 
-4. 경고 메시지를 읽고 **제거**를 탭하여 회사 포털에서 장치를 제거합니다.
+4. 장치를 제거하려고 한다는 경고 메시지가 나타납니다. **제거**를 선택하여 제거할 것임을 확인합니다.  
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

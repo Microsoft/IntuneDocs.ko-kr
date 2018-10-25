@@ -2,10 +2,10 @@
 title: Microsoft Intune에서 Android 회사 프로필 준수 정책 만들기 - Azure | Microsoft Docs
 description: Android 회사 프로필 장치에 대한 Microsoft Intune 장치 준수 정책을 만들거나 구성합니다. 탈옥 상태의 장치 허용, 허용되는 위협 수준 설정, Google Play 확인, 최소 및 최대 운영 체제 버전 입력, 암호 요구 사항 선택, 테스트용으로 응용 프로그램 로드 허용 등을 수행합니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905090"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828162"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Intune에서 Android 회사 프로필 장치에 대한 장치 준수 정책 추가
 
@@ -113,7 +113,11 @@ Android 회사 프로필이 있는 장치에서, **앱에서 위협 검색** 설
 - **알 수 없는 출처의 앱 차단**: Android 회사 프로필 장치는 알 수 없는 소스에서의 설치를 항상 제한하므로 이 설정을 구성할 필요가 없습니다.
 - **회사 포털 앱 런타임 무결성**: 회사 포털 앱에 기본 런타임 환경이 설치되어 있고, 제대로 서명되었으며, 디버그 모드가 아니고, 알려진 소스에서 설치되었는지 확인합니다.
 - **장치에서 USB 디버깅 차단**: Android 회사 프로필 장치에서는 USB 디버깅을 사용할 수 없으므로 이 설정을 구성할 필요가 없습니다.
-- **최소 보안 패치 수준**: 장치에서 사용할 수 있는 가장 오래된 보안 패치 수준을 선택합니다. 최소한 이 패치 수준이 아닌 장치는 비규격 장치가 됩니다. `YYYY-MM-DD` 형식으로 날짜를 입력해야 합니다.
+- **최소 보안 패치 수준**: 장치에서 사용할 수 있는 가장 오래된 보안 패치 수준을 선택합니다. 최소한 이 패치 수준이 아닌 장치는 비규격 장치가 됩니다. 날짜는 *YYYY-MM-DD* 형식으로 입력해야 합니다.
+- **제한된 앱**: 정책에 해당 번들 ID를 추가하여 앱을 제한할 수 있습니다. 그런 다음, 장치에 앱이 설치되어 있으면 장치는 비준수로 표시됩니다. 
+   - **앱 이름**: 번들 ID를 식별할 수 있도록 친숙한 이름을 입력합니다. 
+   - **앱 번들 ID**: 앱 공급자의 고유한 번들 식별자를 입력합니다. Android의 경우 앱 번들 ID는 앱의 스토어 URL에서 가져옵니다. 예를 들어, 스토어에 있는 앱 URL이 *https://play.google.com/store/apps/details?id=com.Slack*이면 앱 번들 ID는 *com.Slack*입니다.
+
 
 ## <a name="assign-user-groups"></a>사용자 그룹 할당
 

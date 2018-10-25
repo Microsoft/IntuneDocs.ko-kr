@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/26/2018
+ms.date: 9/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: faf07b58c4480689d5f6f44bf09d6100a2eae9db
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312853"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827856"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune의 Windows 10 VPN 설정
 
@@ -43,7 +43,7 @@ Intune을 사용하여 VPN 연결을 구성할 수 있습니다. 이 아티클�
   - **가져오기**: 설명, IP 주소 또는 FQDN, 기본 서버 형식의 서버 목록을 포함하는 쉼표로 구분된 파일로 이동합니다. **확인**을 선택하여 이러한 서버를 **서버** 목록으로 가져옵니다.
   - **내보내기**: 서버 목록을 쉼표로 구분된 값(csv) 파일로 내보내기
 
-- **내부 DNS를 사용하여 IP 주소 등록**: 내부 DNS를 사용하여 VPN 인터페이스에 할당된 IP 주소를 동적으로 등록하도록 Windows 10 VPN 프로필을 구성하려면 **사용**을 선택하거나 IP 주소를 동적으로 등록하지 않으려면 **사용 안 함**을 선택합니다.
+- **내부 DNS를 사용하여 IP 주소 등록**: 내부 DNS를 사용하여 VPN 인터페이스에 할당된 IP 주소를 동적으로 등록하도록 Windows 10 VPN 프로필을 구성하려면 **사용**을 선택합니다. IP 주소를 동적으로 등록하지 않으려면 **사용 안 함**을 선택합니다.
 
 - **연결 형식**: 다음 공급업체 목록에서 VPN 연결 형식을 선택합니다.
 
@@ -59,7 +59,7 @@ Intune을 사용하여 VPN 연결을 구성할 수 있습니다. 이 아티클�
   - **PPTP**
 
   VPN 연결 형식을 선택하면 다음 설정을 요청하는 메시지가 표시될 수도 있습니다.  
-    - **Always On**: 다음과 같은 경우 VPN 연결에 자동으로 연결하도록 합니다. 
+    - **Always On**: 다음과 같은 이벤트가 발생할 경우 VPN 연결에 자동으로 연결하도록 **설정**합니다. 
       - 자신의 장치에 사용자가 로그인하는 경우
       - 장치의 네트워크가 변경되는 경우
       - 장치의 화면이 꺼졌다가 다시 켜지는 경우 
@@ -114,7 +114,7 @@ Intune을 사용하여 VPN 연결을 구성할 수 있습니다. 이 아티클�
 
 ## <a name="conditional-access"></a>조건부 액세스
 
-- **이 VPN 연결에 대한 조건부 액세스**: 클라이언트에서 장치 준수 흐름이 가능하게 합니다. 사용하도록 설정하면, VPN 클라이언트가 인증에 사용할 인증서를 가져오기 위해 Azure AD(Active Directory)와 통신하려고 합니다. 인증서 인증을 사용하려면 VPN을 설정해야 하고, VPN 서버가 Azure AD에서 반환된 서버를 신뢰해야 합니다.
+- **이 VPN 연결에 대한 조건부 액세스**: 클라이언트에서 장치 준수 흐름이 가능하게 합니다. 사용하도록 설정하면, VPN 클라이언트가 인증에 사용할 인증서를 가져오기 위해 Azure AD(Active Directory)와 통신합니다. 인증서 인증을 사용하려면 VPN을 설정해야 하고, VPN 서버가 Azure AD에서 반환된 서버를 신뢰해야 합니다.
 
 - **대체 인증서를 사용한 SSO(Single Sign-On)**: 장치 준수에 대해 Kerberos 인증을 위한 VPN 인증 인증서와 다른 인증서를 사용합니다. 다음 설정으로 인증서를 입력합니다.
 
@@ -124,7 +124,17 @@ Intune을 사용하여 VPN 연결을 구성할 수 있습니다. 이 아티클�
 
 ## <a name="dns-settings"></a>DNS 설정
 
-**이 VPN 연결의 도메인 및 서버**: VPN에 사용할 도메인 및 DNS 서버를 추가합니다. 연결이 설정된 후 VPN 연결에 사용할 DNS 서버를 선택할 수 있습니다. 각 서버에 대해 다음을 입력합니다.
+- **DNS 접미사 검색 목록**: **DNS 접미사**에서 DNS 접미사를 입력하고 **Add**를 입력합니다. 여러 접미사를 추가할 수 있습니다.
+
+  DNS 접미사를 사용하는 경우 FQDN(정규화된 도메인 이름) 대신 짧은 이름을 사용해 네트워크 리소스를 검색할 수 있습니다. 짧은 이름을 사용하여 검색하는 경우 접미사는 DNS 서버에서 자동으로 결정됩니다. 예를 들어 `utah.contoso.com`은 DNS 접미사 목록에 있습니다. `DEV-comp`을 ping합니다. 이 시나리오에서는 `DEV-comp.utah.contoso.com`으로 확인됩니다.
+
+  DNS 접미사는 나열된 순서로 확인되며 이 순서는 변경 가능합니다. 예를 들어, `colorado.contoso.com` 및 `utah.contoso.com`은 DNS 접미사 목록에 있으며 둘 다 `DEV-comp`이라는 리소스를 포함합니다. `colorado.contoso.com`은 목록의 맨 처음에 나오므로 `DEV-comp.colorado.contoso.com`으로 확인됩니다.
+  
+  순서를 변경하려면 DNS 접미사 왼쪽의 점을 클릭하고 해당 접미사를 맨 위로 끕니다.
+
+  ![세 개의 점을 선택하고 클릭한 후 끌어 dns 접미사 이동](./media/vpn-settings-windows10-move-dns-suffix.png)
+
+- **이 VPN 연결의 도메인 및 서버**: VPN에 사용할 도메인 및 DNS 서버를 추가합니다. 연결이 설정된 후 VPN 연결에 사용할 DNS 서버를 선택할 수 있습니다. 각 서버에 대해 다음을 입력합니다.
 - **도메인**
 - **DNS 서버**
 - **프록시**

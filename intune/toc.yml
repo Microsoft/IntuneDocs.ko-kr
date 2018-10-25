@@ -6,13 +6,6 @@ items:
     href: what-is-intune.md
   - name: Intune for Education이란?
     href: introduction-intune-education.md
-  - name: Azure의 Intune 기능
-    href: ui-changes.md
-    items:
-    - name: 그룹 변경 내용
-      href: groups-get-started.md
-    - name: 레거시 Intune PC 클라이언트
-      href: intune-legacy-pc-client.md
   - name: 무료 평가판 등록
     href: free-trial-sign-up.md
   - name: 새로운 기능
@@ -20,10 +13,6 @@ items:
     items:
     - name: 앱 UI의 새로운 기능
       href: whats-new-app-ui.md
-    - name: 새로운 기능 아카이브(Azure Portal)
-      href: whats-new-archive.md
-    - name: 새로운 기능 아카이브(클래식 포털)
-      href: whats-new-archive-classic.md
   - name: 서비스 설명
     href: microsoft-intune-service-description.md
   - name: 알려진 문제
@@ -34,18 +23,20 @@ items:
 - name: 빠른 시작
   href: get-started-evaluation.md
   items:
-  - name: Azure Portal 탐색
-    href: get-started-azure.md
+  - name: 무료로 Intune 체험하기
+    href: free-trial-sign-up.md
   - name: 사용자 만들기
-    href: get-started-users.md
+    href: quickstart-create-user.md
   - name: 그룹 만들기
-    href: get-started-groups.md
-  - name: 정책 할당
-    href: get-started-policies.md
-  - name: 장치 등록
-    href: get-started-enroll.md
-  - name: 앱 할당
-    href: get-started-apps.md
+    href: quickstart-create-group.md
+  - name: 정책 만들기
+    href: quickstart-create-policy.md
+  - name: 자동 등록 설정
+    href: quickstart-setup-auto-enrollment.md
+  - name: 사용자 지정 역할 만들기 및 할당
+    href: quickstart-create-custom-role.md
+  - name: 메일 장치 프로필 만들기
+    href: quickstart-email-profile.md
 - name: 시나리오 구현 가이드
   items:
   - name: Exchange Online 보호
@@ -60,6 +51,10 @@ items:
     href: byod-technology-decisions.md
 - name: 개념
   items:
+  - name: 장치 관리란?
+    href: what-is-device-management.md
+  - name: Azure Portal 탐색
+    href: get-started-azure.md
   - name: 상위 수준 아키텍처
     href: high-level-architecture.md
   - name: 장치 및 앱 수명 주기
@@ -169,6 +164,8 @@ items:
         href: device-group-mapping.md
     - name: Windows 등록 설정
       items:
+      - name: 등록 방법 기능
+        href: enrollment-method-capab.md
       - name: Windows 등록
         href: windows-enroll.md
       - name: 대량 등록
@@ -273,6 +270,8 @@ items:
           href: apps-add-office365-macos.md
       - name: 앱 빌드(LOB)
         items:
+        - name: Win32 앱 관리
+          href: apps-win32-app-management.md
         - name: Android LOB 앱
           href: lob-apps-android.md
         - name: iOS LOB 앱
@@ -322,6 +321,8 @@ items:
         href: company-portal-app.md
       - name: Managed Browser 구성
         href: app-configuration-managed-browser.md
+      - name: Outlook 구성
+        href: app-configuration-policies-outlook.md
     - name: 앱 보호
       items:
       - name: 선택적으로 앱 지우기
@@ -377,6 +378,8 @@ items:
       items:
       - name: Android
         href: device-restrictions-android.md
+      - name: Android Enterprise
+        href: device-restrictions-android-for-work.md
       - name: iOS
         href: device-restrictions-ios.md
       - name: macOS
@@ -391,8 +394,6 @@ items:
         href: device-restrictions-windows-10-teams.md
       - name: Windows Holographic for Business
         href: device-restrictions-windows-holographic.md
-      - name: Android 회사 프로필
-        href: device-restrictions-android-for-work.md
     - name: Endpoint Protection 구성
       href: endpoint-protection-configure.md
       items:
@@ -491,7 +492,7 @@ items:
     items:
     - name: Android 정책 만들기
       href: compliance-policy-create-android.md
-    - name: Android 작업 프로필 정책 만들기
+    - name: Android 엔터프라이즈 프로필 정책 만들기
       href: compliance-policy-create-android-for-work.md
     - name: Google Play Protect를 사용하기 위한 정책 만들기
       href: compliance-policy-create-google-play-protect.md
@@ -703,7 +704,7 @@ items:
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android 회사 프로필
+      - name: Android Enterprise
         href: custom-settings-android-for-work.md
 - name: 개발자 지침
   items:
@@ -780,6 +781,8 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: 리소스
   items:
+  - name: Microsoft Intune 문서 가이드
+    href: intune-documentation.md
   - name: 문제 해결
     items:
     - name: 사용자가 문제 해결할 수 있도록 도움
@@ -804,11 +807,25 @@ items:
       href: troubleshoot-conditional-access.md
     - name: Exchange Connector 문제 해결
       href: troubleshoot-exchange-connector.md
+  - name: 아카이브
+    items:
+    - name: 새로운 기능 아카이브
+      items:
+      - name: 새로운 기능 아카이브(Azure Portal)
+        href: whats-new-archive.md
+      - name: 새로운 기능 아카이브(클래식 포털)
+        href: whats-new-archive-classic.md
+    - name: Azure의 Intune 클래식 기능
+      href: ui-changes.md
+    - name: Intune 클래식 그룹
+      href: groups-get-started.md
+    - name: 레거시 Intune PC 클라이언트
+      href: intune-legacy-pc-client.md
   - name: 용어 설명
     href: intune-glossary.md
-ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: a2820903d6a3609df50290af18843200ef076158
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821119"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828060"

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5eba9f6f920b4bf868e26b47e4043babe62a8945
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148034"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828043"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>SandBlast Mobile Protect로 발견한 위협 해결
 
@@ -37,7 +37,12 @@ SandBlast Mobile Protect는 iOS 장치에서 잠재적인 위협을 식별하고
 ## <a name="troubleshoot-virus-or-security-threat"></a>바이러스 또는 보안 위협 해결  
 바이러스 또는 보안 위협이 감지되면 SandBlast Mobile Protect 앱은 조직의 액세스 정책에 따라 작동합니다. 액세스 정책은 회사의 네트워크, 앱 및 이메일에 액세스하지 못하도록 할 수 있습니다.  
 
-SandBlast Mobile Protect는 분실한 액세스 권한을 다시 얻는 작업을 수행하도록 메시지를 표시합니다. 위협을 선택하고 문제를 해결하도록 앱 내의 지침을 따릅니다.  
+![SEP Mobile 앱 경고 메시지의 예제 스크린샷](./media/skycure-list-of-potential-issues-android.png)  
+SandBlast Mobile Protect는 분실한 액세스 권한을 다시 얻는 작업을 수행하도록 메시지를 표시합니다. 위협을 선택하고 문제를 해결하도록 앱 내의 지침을 따릅니다.
+
+앱은 회사의 MDM 공급자와 통합되므로 회사 포털 앱에서 제한된 액세스에 대한 경고도 표시됩니다. 경고는 Sandblast Mobile Protect를 열어 바이러스 또는 보안 위협을 해결하도록 합니다.  
+
+  ![Sandblast Mobile Protect 경고를 보여주는 회사 포털 장치 페이지의 예제 스크린샷](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>앱 위협 해결  
 
@@ -45,4 +50,4 @@ SandBlast Mobile Protect는 분실한 액세스 권한을 다시 얻는 작업�
 
 해결하려면 SandBlast Mobile Protect의 위협 목록에서 앱을 선택합니다. 그런 다음, 지침을 따라 앱을 제거합니다.  
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.
+여전히 도움이 필요하세요? 회사 지원팀과 확인하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.  

@@ -3,10 +3,10 @@ title: WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배�
 titlesuffix: Microsoft Intune
 description: Microsoft Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347310"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799628"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
 
@@ -46,19 +46,27 @@ WIP 정책을 추가할 때 몇 가지 개념에 대해 이해해야 합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
-WIP 앱 보호 정책을 만들려면 먼저 MAM 공급자를 구성해야 합니다. [Intune을 사용하여 MAM 공급자를 구성하는 방법](app-protection-policies-configure-windows-10.md)에 대해 자세히 알아보세요.
+WIP 앱 보호 정책을 만들려면 먼저 MAM 공급자를 구성해야 합니다. [Intune을 사용하여 MAM 공급자를 구성하는 방법](app-protection-policies-configure-windows-10.md)에 대해 자세히 알아보세요.  
+
+> [!IMPORTANT]
+> WIP에서는 여러 ID를 사용할 수 없으며 한 번에 하나의 관리 ID만 사용할 수 있습니다.
 
 다음과 같은 라이센스와 업데이트도 필요합니다.
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 라이선스
 -   [Windows 크리에이터 업데이트](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP에서는 여러 ID를 사용할 수 없으며 한 번에 하나의 관리 ID만 사용할 수 있습니다.
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>WIP 앱 보호 정책을 추가하려면
 
 조직에 Intune을 설치한 후에 WIP 관련 정책을 만들 수 있습니다.
+
+> [!TIP]  
+> 사용 가능한 설정 및 구성 방법을 비롯한 Intune용 WIP 정책 만들기 관련 정보를 보려면 Windows 보안 설명서 라이브러리의 [Microsoft Intune용 Azure Portal을 사용하여 MAM이 포함된 WIP(Windows Information Protection) 정책 만들기](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure)를 참조하세요. 
+
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다.
@@ -123,7 +131,7 @@ WIP 지원 앱 및 WIP 알 수 없는 앱으로 작업하는 경우, 보호되�
 ### <a name="what-are-the-protection-modes"></a>보호 모드의 종류
 
 #### <a name="block"></a>차단
-WIP가 부적절한 데이터 공유 사례를 찾아 사용자의 작업 완료를 중지시킵니다. 부적절한 데이터 공유 사례에는 회사에서 보호하지 않는 앱 간에 정보를 공유하는 행위, 조직 외부의 타인과 장치 간에 회사 데이터를 공유하는 행위 등이 포함될 수 있습니다.
+WIP가 부적절한 데이터 공유 사례를 찾아 사용자의 작업 완료를 중지시킵니다. 차단된 작업에는 부적절한 데이터 공유 사례에는 회사에서 보호하지 않는 앱 간에 정보를 공유하는 행위, 조직 외부의 타인과 장치 간에 회사 데이터를 공유하는 행위 등이 포함될 수 있습니다.
 
 #### <a name="allow-overrides"></a>재정의 허용
 WIP가 부적절한 데이터 공유를 찾은 다음, 사용자가 안전하지 않을 수 있는 작업을 수행할 때 경고를 표시합니다. 그러나 이 모드에서는 사용자가 정책을 재정의하고 데이터를 공유할 수 있습니다. 그러면 해당 작업이 감사 로그에 로깅됩니다.

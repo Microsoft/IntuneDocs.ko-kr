@@ -3,10 +3,10 @@ title: Android 앱 보호 정책 설정
 titlesuffix: Microsoft Intune
 description: 이 항목에서는 Android 장치에 대한 앱 보호 정책 설정을 설명합니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 121c740cb07e3c15c673f936c1da468ada4e809d
-ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
+ms.openlocfilehash: 3778675366a19eb6ba1774f26bbb3523cdcdf92f
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46466713"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828332"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune의 Android 앱 보호 정책 설정
 이 문서에서는 Android 장치에 대한 앱 보호 정책 설정을 설명합니다. 설명하는 정책 설정은 Azure Portal의 **설정** 블레이드에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.
@@ -69,7 +69,8 @@ ms.locfileid: "46466713"
 
   |앱/서비스 이름 | 설명 | 예외 조건|
   | ------ | ---- | --- |
-  | com.android.chrome | Google Chrome 브라우저 | Chrome은 Android 7.0 이상에서 일부 WebView 구성 요소에 사용되며 보기에서 숨겨지지 않습니다. 그러나 앱으로 들어오거나 앱에서 나가는 데이터 흐름은 항상 제한됩니다.  | com.skype.raider | Skype | Skype 앱은 전화를 걸게 되는 특정 작업에 대해서만 허용됩니다. |
+  | com.android.chrome | Google Chrome 브라우저 | Chrome은 Android 7.0 이상에서 일부 WebView 구성 요소에 사용되며 보기에서 숨겨지지 않습니다. 그러나 앱으로 들어오거나 앱에서 나가는 데이터 흐름은 항상 제한됩니다.  |
+  | com.skype.raider | Skype | Skype 앱은 전화를 걸게 되는 특정 작업에 대해서만 허용됩니다. |
   | com.android.providers.media | Android 미디어 콘텐츠 공급자 | 미디어 콘텐츠 공급자는 벨소리 선택 작업에 대해서만 허용됩니다. |
   | com.google.android.gms; com.google.android.gsf | Google Play 서비스 패키지 | 이러한 패키지는 푸시 알림 등의 Google Cloud Messaging 작업에 대해서 허용됩니다. |
 
@@ -77,21 +78,21 @@ ms.locfileid: "46466713"
 
 ##  <a name="access-settings"></a>액세스 설정
 
-| Setting | 사용 방법 | 기본값 |
-|------|------|------|
-| **액세스하려면 PIN 필요** | 이 앱을 사용하는 데 PIN을 요구하려면 **예**를 선택합니다. 회사 또는 학교 컨텍스트에서 앱을 처음으로 실행할 때 이 PIN을 설정하라는 메시지가 표시됩니다. 기본값은 **예**입니다.<br><br> PIN 강도에 대한 다음 설정을 구성합니다. <ul><li>**유형 선택**: 앱 보호 정책이 적용된 앱에 액세스하기 전에 숫자 또는 암호 유형 PIN의 요구 사항을 설정합니다. 숫자 요구 사항에는 숫자만 포함되고, 암호는 1자 이상의 알파벳 문자 **또는** 1자 이상의 특수 문자로 정의할 수 있습니다. <br><br> **참고:** 허용되는 특수 문자에는 Android 영어 키보드의 기호 및 특수 문자가 포함됩니다. 기본값은 **숫자**입니다.<br><br></li><li>**PIN 초기화 전 시도 횟수**: 초기화하기 전까지 PIN을 성공적으로 입력하기 위해 시도할 수 있는 횟수를 지정합니다. 기본값 = **5**.<br><br></li><li> **단순한 PIN 허용**: 사용자가 1234, 1111, abcd 또는 aaaa와 같은 단순한 PIN 시퀀스를 사용할 수 있도록 허용하려면 **예**를 선택합니다. 단순한 순서를 사용하는 것을 방지하려면 **아니요**를 선택합니다. <br><br>**참고**: 암호 형식 PIN을 구성하고, 단순 PIN 허용을 예로 설정한 경우 사용자 PIN에 1자 이상의 문자 **또는** 1자 이상의 특수 문자가 포함되어야 합니다. 암호 형식 PIN을 구성하고, 단순 PIN 허용을 아니요로 설정한 경우 사용자 PIN에 1자 이상의 숫자 **및** 1자 이상의 문자 **및** 1자 이상의 특수 문자가 포함되어야 합니다. 기본값은 **예**입니다. <br><br></li><li> **PIN 길이**: PIN 시퀀스의 최소 자릿수를 지정합니다. 기본값은 **4**입니다.<br><br></li><li> **PIN 대신 지문 허용(Android 6.0 이상)**: 앱 액세스에 PIN 대신 [지문 인증](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)을 사용하도록 허용하려면 **예**를 선택합니다. 기본값은 **예**입니다. <br><br>**참고**: 이 기능은 Android 장치에서 생체 인식을 위한 일반 컨트롤을 지원합니다. OEM 특정 생체 인식 설정(예: "Samsung Pass")은 지원되지 않습니다. <br><br>Android에서 PIN 대신 [Android 지문 인증](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)을 사용하여 ID를 증명하도록 허용할 수 있습니다. 회사 또는 학교 계정으로 이 앱을 열려고 하면 PIN을 입력하는 대신 해당 지문 ID를 제공하라는 메시지가 표시됩니다. <br><br> Android 회사 프로필은 **PIN 대신 지문 허용** 정책을 적용하려면 별도의 지문을 등록해야 합니다. 이 정책은 Android 회사 프로필에 설치된 정책 관리 앱에만 적용됩니다. 회사 포털에서 등록하여 Android 회사 프로필을 만든 후 별도의 지문을 장치에 등록해야 합니다. Android 회사 프로필을 사용하는 회사 프로필 지문에 대한 자세한 내용은 [회사 프로필 잠금](https://support.google.com/work/android/answer/7029958)을 참조하세요. </li></ul>| PIN 필요: 예 <br><br> PIN 초기화 시도 횟수: 5 <br><br> 단순한 PIN 허용: 예 <br><br> PIN 길이: 4 <br><br> 지문 허용: 예 |
-| **액세스 시 회사 자격 증명 필요** | 앱 액세스에 PIN을 입력하는 대신 해당 회사 또는 학교 계정으로 로그인하도록 요구하려면 **예**를 선택합니다. 이를 **예**로 설정하였고 PIN 또는 생체 인식 프롬프트를 사용하는 경우 회사 자격 증명과, PIN 또는 생체 인식 프롬프트가 표시됩니다. | 아니요 |
-| **관리되는 앱이 무단 해제 또는 루팅된 장치를 실행할 수 없도록 차단** |이 앱이 무단 해제 또는 루팅된 장치에서 실행되는 것을 차단하려면 **예**를 선택합니다. 개인적인 작업에 이 앱을 계속 사용할 수 있지만 이 앱의 회사 또는 학교 데이터에 액세스하려면 다른 장치를 사용해야 합니다. | 예 |
-| **액세스 요구 사항을 다시 확인할 시간(분)** | 다음 설정을 구성합니다. <ul><li>**제한 시간**: 이전에 정책에서 정의된 액세스 요구 사항이 다시 확인되기까지 걸리는 시간(분)입니다. 예를 들어 관리자가 정책에서 장치에 루팅된 PIN 및 블록을 설정하고, 사용자가 Intune 관리 앱을 열 때, PIN을 입력해야 하고 루팅되지 않은 장치에서 앱을 사용해야 합니다. 이 설정을 사용하는 경우 사용자가 **30분**(기본값) 동안은 Intune 관리 앱에서 PIN을 다시 입력하거나 또 다른 root-detection 확인을 할 필요가 없습니다. <br><br> **참고:** Android에서는 PIN이 모든 Intune 관리 앱 간에 공유됩니다. 앱이 장치에서 포그라운드를 나가면 PIN 타이머가 재설정됩니다. 사용자는 이 설정에서 정의한 시간 동안 PIN을 공유하는 Intune 관리 앱에 PIN을 입력할 필요가 없습니다. <br><br> 이 정책 설정 형식은 양의 정수를 지원합니다.<br><br></li><li>**오프라인 유예 기간**: MAM 앱이 오프라인 상태로 실행될 수 있는 시간(분)으로, 앱의 액세스 요구 사항이 다시 확인되기까지 걸리는 시간(분)을 지정합니다. 기본값 = **720**분(12시간). 이 기간이 만료된 후에 앱을 계속 실행하려면 Azure AD(Azure Active Directory)에 대한 사용자 인증이 필요합니다.<br><br> 이 정책 설정 형식은 양의 정수를 지원합니다.</li></ul>| 시간 제한: 30 <br><br> 오프라인: 720 |
-| **앱 데이터를 초기화하기 전의 오프라인 간격(일)** | 이 오랜 기간(관리자가 정의) 동안 앱이 오프라인으로 실행된 후에 사용자가 네트워크에 연결하고 다시 인증해야 합니다. 성공적으로 인증하고 나면 데이터에 계속 액세스할 수 있으며 오프라인 간격이 재설정됩니다.  사용자가 인증에 실패하면 앱에서 사용자 계정과 데이터를 선택적으로 초기화합니다.  선택적 초기화로 제거되는 데이터에 대한 자세한 내용은 [Intune-관리 앱에서 회사 데이터만 초기화하는 방법](https://docs.microsoft.com/intune/apps-selective-wipe)을 참조하세요.<br><br> 이 정책 설정 형식은 양의 정수를 지원합니다. | 90일 |
-| **화면 캡처 및 Android Assistant 차단(Android 6.0 이상)** | 이 앱을 사용할 때 장치의 화면 캡처 및 **Android Assistant** 기능을 차단하려면 **예**를 선택합니다. **예**를 선택하면 회사 또는 학교 계정으로 이 앱을 사용할 때 최근 사용 앱 미리 보기 이미지도 흐리게 표시됩니다. | 아니요 |
-| **장치 PIN을 관리하는 경우 앱 PIN 사용 안 함** | 등록된 장치에서 장치 잠금이 검색되는 경우 앱 PIN을 사용하지 않도록 설정하려면 **예**를 선택합니다.<br><br>**참고** Intune은 iOS에서 타사 EMM 솔루션을 사용한 장치 등록을 검색할 수 없습니다.  | 아니요 |
-| **최소 Android 운영 체제 필요** | 이 앱을 사용하기 위한 최소 Android 운영 체제를 요구하려면 **예**를 선택합니다. 장치의 Android 버전이 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다.<br><br> 이 정책 설정 형식은 major.minor, major.minor.build, major.minor.build.revision을 지원합니다.| 아니요 |
-| **최소 Android 운영 체제 필요(경고)** | 이 앱을 사용하기 위한 최소 Android 운영 체제를 요구하려면 **예**를 선택합니다. 장치의 Android 버전이 요구 사항을 충족하지 않으면 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다.<br><br> 이 정책 설정 형식은 major.minor, major.minor.build, major.minor.build.revision을 지원합니다. | 아니요 |
-| **Require minimum app version**(최소 앱 버전 필요) | 앱을 사용할 최소 앱 버전을 요구하려면 **예**를 선택합니다. 장치의 앱 버전이 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다.<br><br>응용 프로그램 간에 서로 다른 버전 지정 체계를 종종 있는 하나의 앱 (예를 들어 "Outlook 버전 정책")을 대상으로 하는 하나의 최소 응용 프로그램 버전으로는 정책을 만듭니다. <br><br> 이 정책 설정 형식은 major.minor, major.minor.build, major.minor.build.revision을 지원합니다.| 아니요 |
-| **Require minimum app version (Warning only)**(최소 앱 버전 필요(경고)) | 이 앱을 사용하기 위한 최소 앱 버전을 권장하려면 **예**를 선택합니다. 장치의 앱 버전이 요구 사항을 충족하지 않으면 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다.<br><br>응용 프로그램 간에 서로 다른 버전 지정 체계를 종종 있는 하나의 앱 (예를 들어 "Outlook 버전 정책")을 대상으로 하는 하나의 최소 응용 프로그램 버전으로는 정책을 만듭니다. <br><br> 이 정책 설정 형식은 major.minor, major.minor.build, major.minor.build.revision을 지원합니다.| 아니요 |
-| **최소 Android 패치 버전 필요** | Google이 출시한 최소 Android 보안 패치를 요구하려면 **예**를 선택합니다. 장치의 Android 보안 패치가 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다.<br><br> 이 정책 설정 형식은 YYYY-MM-DD 날짜 형식을 지원합니다. | 아니요 |
-| **최소 Android 패치 버전 필요(경고)** | Google이 출시한 최소 Android 보안 패치를 요구하려면 **예**를 선택합니다. 장치의 Android 보안 패치가 요구 사항을 충족하지 않으면 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다.<br><br> 이 정책 설정 형식은 YYYY-MM-DD 날짜 형식을 지원합니다. | 아니요 |
+| Setting | 사용 방법 |  
+|------|------| 
+| **액세스하려면 PIN 필요** | 이 앱을 사용하는 데 PIN을 요구하려면 **예**를 선택합니다. 회사 또는 학교 컨텍스트에서 앱을 처음으로 실행할 때 이 PIN을 설정하라는 메시지가 표시됩니다. <br><br> 기본값은 **예**입니다.<br><br> PIN 강도에 대한 다음 설정을 구성합니다. <br> <ul><li>**유형 선택**: 앱 보호 정책이 적용된 앱에 액세스하기 전에 숫자 또는 암호 유형 PIN의 요구 사항을 설정합니다. 숫자 요구 사항에는 숫자만 포함되고, 암호는 1자 이상의 알파벳 문자 **또는** 1자 이상의 특수 문자로 정의할 수 있습니다. <br><br> 기본값 = **숫자**<br><br> **참고:** 허용되는 특수 문자에는 Android 영어 키보드의 기호 및 특수 문자가 포함됩니다.</li></ul>  <ul><li>**PIN 초기화 전 시도 횟수**: 초기화하기 전까지 PIN을 성공적으로 입력하기 위해 시도할 수 있는 횟수를 지정합니다. <br><br> 기본값 = **5** </li> <br> <li> **단순한 PIN 허용**: 사용자가 *1234*, *1111*, *abcd* 또는 *aaaa*와 같은 단순한 PIN 시퀀스를 사용할 수 있도록 허용하려면 **예**를 선택합니다. 단순한 순서를 사용하는 것을 방지하려면 **아니요**를 선택합니다. <br><br>기본값은 **예**입니다. <br><br>**참고**: 암호 형식 PIN을 구성하고, 단순 PIN 허용을 예로 설정한 경우 사용자 PIN에 1자 이상의 문자 **또는** 1자 이상의 특수 문자가 포함되어야 합니다. 암호 형식 PIN을 구성하고, 단순 PIN 허용을 아니요로 설정한 경우 사용자 PIN에 1개 이상의 숫자 **및** 1자 이상의 문자**와** 1자 이상의 특수 문자가 포함되어야 합니다. </li> <br> <li>  **PIN 길이**: PIN 시퀀스의 최소 자릿수를 지정합니다. <br><br>기본값 = **4** </li> <br> <li> **PIN 대신 지문 허용(Android 6.0 이상)**: 앱 액세스에 PIN 대신 [지문 인증](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)을 사용하도록 허용하려면 **예**를 선택합니다. <br><br>기본값 = **예** <br><br>***참고**: 이 기능은 Android 장치에서 생체 인식을 위한 일반 컨트롤을 지원합니다. * Samsung Pass와 같은 OEM 특정 생체 인식 설정은 ‘지원되지 않습니다.’ <br><br>Android에서 PIN 대신 [Android 지문 인증](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)을 사용하여 ID를 증명하도록 허용할 수 있습니다. 회사 또는 학교 계정으로 이 앱을 열려고 하면 PIN을 입력하는 대신 해당 지문 ID를 제공하라는 메시지가 표시됩니다. <br><br> Android 회사 프로필은 **PIN 대신 지문 허용** 정책을 적용하려면 별도의 지문을 등록해야 합니다. 이 정책은 Android 회사 프로필에 설치된 정책 관리 앱에만 적용됩니다. 회사 포털에서 등록하여 Android 회사 프로필을 만든 후 별도의 지문을 장치에 등록해야 합니다. Android 회사 프로필을 사용하는 회사 프로필 지문에 대한 자세한 내용은 [회사 프로필 잠금](https://support.google.com/work/android/answer/7029958)을 참조하세요.| 
+| **액세스 시 회사 자격 증명 필요** | 앱 액세스에 PIN을 입력하는 대신 해당 회사 또는 학교 계정으로 로그인하도록 요구하려면 **예**를 선택합니다. **예**로 설정하고 PIN 또는 생체 인식 프롬프트를 사용하는 경우 회사 자격 증명과, PIN 또는 생체 인식 프롬프트가 표시됩니다. <br><br>기본값은 **아니요**입니다. |
+| **관리되는 앱이 무단 해제 또는 루팅된 장치를 실행할 수 없도록 차단** |이 앱이 무단 해제 또는 루팅된 장치에서 실행되는 것을 차단하려면 **예**를 선택합니다. 개인적인 작업에 이 앱을 계속 사용할 수 있지만 이 앱의 회사 또는 학교 데이터에 액세스하려면 다른 장치를 사용해야 합니다. <br><br>기본값은 **예**입니다. |
+| **액세스 요구 사항을 다시 확인할 시간(분)** | 다음 설정을 구성합니다. <ul><li>**제한 시간**: 이전에 정책에서 정의된 액세스 요구 사항이 다시 확인되기까지 걸리는 시간(분)입니다. 예를 들어 관리자가 정책에서 장치에 루팅된 PIN 및 블록을 설정하고, 사용자가 Intune 관리 앱을 열 때, PIN을 입력해야 하고 루팅되지 않은 장치에서 앱을 사용해야 합니다. 이 설정을 사용하는 경우 사용자가 구성된 값과 같은 기간에 Intune 관리 앱에서 PIN을 다시 입력하거나 또 다른 root-detection 확인을 할 필요가 없습니다.  <br><br>이 정책 설정 형식은 양의 정수를 지원합니다. <br><br> 기본값 = **30분** <br><br> **참고:** Android에서는 PIN이 모든 Intune 관리 앱 간에 공유됩니다. 앱이 장치에서 포그라운드를 나가면 PIN 타이머가 재설정됩니다. 사용자는 이 설정에서 정의한 제한 시간 동안 PIN을 공유하는 Intune 관리 앱에 PIN을 입력할 필요가 없습니다. <br><br></li><li>**오프라인 유예 기간**: MAM 앱이 오프라인으로 실행할 수 있는 시간(분)입니다. 앱에 대한 액세스 요구 사항을 다시 확인하기 전의 시간(분)을 지정합니다. 이 기간이 만료된 후에 앱을 계속 실행하려면 Azure AD(Azure Active Directory)에 대한 사용자 인증이 필요합니다. <br><br>이 정책 설정 형식은 양의 정수를 지원합니다. <br><br>기본값 = **720**분(12시간)</li></ul>|
+| **앱 데이터를 초기화하기 전의 오프라인 간격(일)** | 이 오랜 기간(관리자가 정의) 앱이 오프라인으로 실행된 후에 사용자가 네트워크에 연결하고 다시 인증해야 합니다. 성공적으로 인증하고 나면 데이터에 계속 액세스할 수 있으며 오프라인 간격이 재설정됩니다. 사용자가 인증에 실패하면 앱에서 사용자 계정과 데이터를 선택적으로 초기화합니다. 선택적 초기화로 제거되는 데이터에 대한 자세한 내용은 [Intune-관리 앱에서 회사 데이터만 초기화하는 방법](https://docs.microsoft.com/intune/apps-selective-wipe)을 참조하세요. <br><br>이 정책 설정 형식은 양의 정수를 지원합니다. <br><br>기본값 = **90일** |
+| **화면 캡처 및 Android Assistant 차단(Android 6.0 이상)** | 이 앱을 사용할 때 장치의 화면 캡처 및 **Android Assistant** 기능을 차단하려면 **예**를 선택합니다. **예**를 선택하면 회사 또는 학교 계정으로 이 앱을 사용할 때 최근 사용 앱 미리 보기 이미지도 흐리게 표시됩니다. <br><br>기본값은 **아니요**입니다. |
+| **장치 PIN을 관리하는 경우 앱 PIN 사용 안 함** | 등록된 장치에서 장치 잠금이 검색되는 경우 앱 PIN을 사용하지 않도록 설정하려면 **예**를 선택합니다. <br><br>**참고:** Intune은 Android에서 타사 EMM 솔루션을 사용한 장치 등록을 검색할 수 없습니다. <br><br>기본값은 **아니요**입니다. |
+| **최소 Android 운영 체제 필요** | 이 앱을 사용하기 위한 최소 Android 운영 체제를 요구하려면 **예**를 선택합니다. 장치의 Android 버전이 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다. <br><br>이 정책 설정 형식은 major.minor, major.minor.build, major.minor.build.revision을 지원합니다. <br><br>기본값은 **아니요**입니다. |
+| **최소 Android 운영 체제 필요(경고)** | 이 앱을 사용하기 위한 최소 Android 운영 체제를 요구하려면 **예**를 선택합니다. 장치의 Android 버전이 요구 사항을 충족하지 않으면 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다.<br><br> 이 정책 설정 형식은 major.minor, major.minor.build, major.minor.build.revision을 지원합니다. <br><br>기본값은 **아니요**입니다. |
+| **Require minimum app version**(최소 앱 버전 필요) | 앱을 사용할 최소 앱 버전을 요구하려면 **예**를 선택합니다. 장치의 앱 버전이 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다.<br><br>응용 프로그램 간에 서로 다른 버전 지정 체계를 종종 있는 하나의 앱을 대상으로 하는 하나의 최소 응용 프로그램 버전으로는 정책(예를 들어 ‘Outlook 버전 정책’)을 만듭니다. <br><br> 이 정책 설정 형식은 major.minor, major.minor.build, major.minor.build.revision을 지원합니다. <br><br>기본값은 **아니요**입니다. |
+| **Require minimum app version (Warning only)**(최소 앱 버전 필요(경고)) | 이 앱을 사용하기 위한 최소 앱 버전을 권장하려면 **예**를 선택합니다. 장치의 앱 버전이 요구 사항을 충족하지 않으면 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다.<br><br>응용 프로그램 간에 서로 다른 버전 지정 체계를 종종 있는 하나의 앱을 대상으로 하는 하나의 최소 응용 프로그램 버전으로는 정책(예를 들어 ‘Outlook 버전 정책’)을 만듭니다. <br><br> 이 정책 설정 형식은 major.minor, major.minor.build, major.minor.build.revision을 지원합니다. <br><br>기본값은 **아니요**입니다. |
+| **최소 Android 패치 버전 필요** | Google이 출시한 최소 Android 보안 패치를 요구하려면 **예**를 선택합니다. 장치의 Android 보안 패치가 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다.<br><br> 이 정책 설정 형식은 *YYYY-MM-DD* 날짜 형식을 지원합니다.  <br><br>기본값은 **아니요**입니다. |
+| **최소 Android 패치 버전 필요(경고)** | Google이 출시한 최소 Android 보안 패치를 요구하려면 **예**를 선택합니다. 장치의 Android 보안 패치가 요구 사항을 충족하지 않으면 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다.<br><br> 이 정책 설정 형식은 *YYYY-MM-DD* 날짜 형식을 지원합니다.  <br><br>기본값은 **아니요**입니다.|
 
 > [!NOTE]
 > 동일한 앱과 사용자 집합에 대한 액세스 섹션에서 구성된 여러 Intune 앱 보호 설정이 Android에서 작동하는 방법에 대해 자세히 알아보려면 [Intune MAM 질문과 대답](mam-faq.md) 및 [Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화](app-protection-policies-access-actions.md)를 참조하세요.

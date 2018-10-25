@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 841cfdeea1d33876c1b678a531c88663aea3759e
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: af1804f657041055467e302c4dc8913e1035749d
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403598"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799662"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 장치 등록 프로그램을 통해 iOS 장치를 자동으로 등록
 
@@ -138,6 +138,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
     ![vpp를 사용한 회사 포털 설치의 스크린샷.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. **VPP를 사용한 회사 포털 설치**에 대한 토큰을 선택한 경우 설정 도우미가 완료된 직후 단일 앱 모드(특히 회사 포털 앱)에서 장치를 잠글 수 있는 옵션이 있습니다. **인증될 때까지 단일 앱 모드에서 회사 포털 실행**에 대해 **예**를 선택하여 이 옵션을 설정합니다. 장치를 사용하려면 사용자는 먼저 회사 포털을 사용하여 로그인하여 인증해야 합니다.
+    이 기능은 iOS 11.3.1 이상에서 가장 잘 실행됩니다. 이전 버전을 사용하면 설치하는 데 시간이 오래 걸릴 수 있습니다.
 
 8. **장치 관리 설정**을 선택한 다음 이 프로필을 사용하는 장치를 감독할지 여부를 선택합니다.
 

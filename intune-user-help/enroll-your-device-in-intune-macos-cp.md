@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147720"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260252"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>회사 포털 앱을 사용하여 Intune에 macOS 장치 등록
 
@@ -80,8 +80,17 @@ Intune 회사 포털 앱으로 macOS 장치를 등록하여 조직의 이메일,
 
 9. 회사 포털 앱에 표시되는 첫 번째 화면은 **로그인**을 묻는 메시지를 표시합니다. 회사 포털 웹 사이트에 로그인하는 데 사용한 동일한 회사 또는 학교 계정을 사용합니다.
 
-10. 회사 포털에서 사용자의 계정 정보를 확인하고, **장치 등록** 및 **장치 준수** 상태를 표시합니다. 노란색 삼각형은 학교 또는 회사의 macOS 장치를 보호하기 위해 수행해야 하는 작업을 강조 표시합니다. **시작**을 클릭하여 등록을 시작합니다. 장치를 등록하는 경우 [조직에서 볼 수 있는 내용](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)을 알아봅니다.
+10. 회사 포털에서 사용자의 계정 정보를 확인하고, **장치 등록** 및 **장치 준수** 상태를 표시합니다. 노란색 삼각형은 학교 또는 회사의 macOS 장치를 보호하기 위해 수행해야 하는 작업을 강조 표시합니다. **시작**을 클릭하여 등록을 시작합니다. 
 
-11. 컴퓨터의 로그인 정보를 제공하라는 메시지가 표시될 수 있습니다. 관리에서 장치를 등록하는 데 몇 분 정도 걸릴 수 있습니다. 그 동안 장치에서 다른 작업을 수행할 수 있습니다. 회사 액세스 설정이 완료되면 알려드리겠다는 메시지를 받게 됩니다.  
+11. 메시지가 표시되면 컴퓨터의 로그인 정보를 입력합니다.  
+
+관리에서 장치를 등록하는 데 몇 분 정도 걸릴 수 있습니다. 그 동안 장치에서 다른 작업을 수행할 수 있습니다. 회사 액세스 설정이 완료되면 알려드리겠다는 메시지를 받게 됩니다.  
+
+## <a name="unverified-profiles"></a>확인되지 않은 프로필
+macOS 장치에 설치된 MDM(모바일 장치 관리) 프로필을 보면 일부 프로필의 상태가 **확인되지 않음**으로 표시될 수 있습니다. **관리 프로필**에 **확인됨** 상태가 표시되는 한, 염려할 필요가 없습니다.  
+
+관리 프로필은 MDM 채널 연결을 정의합니다. 관리 프로필이 확인되는 한, 채널을 통해 머신에 전달되는 다른 프로필은 관리 프로필의 보안 특성을 상속합니다.
+
+또한 다른 프로필은 개별 확인이 필요하지 않기 때문에 더 빠르게 생성되어 장치에 전달됩니다. 
 
 여전히 도움이 필요하세요? 회사 지원팀과 확인하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.  
