@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0af5fb071c6abb01a2819a5d9c73f4e01bf7cb7a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
+ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312835"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410366"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 장치 준수 정책 모니터링
 
@@ -140,6 +140,9 @@ ms.locfileid: "43312835"
 ![다른 정책에서 모든 설정의 목록 확인](./media/compliance-policy-monitor/idc-10.png)
 
 특정 설정을 선택하면 해당 설정에서 대상으로 지정한 각 장치에 대한 **준수 상태**, **사용자의 이메일 별칭**, **장치 모델** 및 **위치**를 볼 수 있습니다.
+
+> [!NOTE]
+> Azure AD에 가입된 Windows 10 장치는 시스템 계정을 준수하지 않는 사용자로 표시할 수 있습니다. 이는 예상되는 동작이고 전체 장치 준수에 영향을 주지 않습니다. 
 
 ## <a name="view-status-of-device-policies"></a>장치 정책 상태 보기
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune에서 Android 장치의 Wi-Fi 설정 구성 - Azure | Microsoft Docs
+title: Android 엔터프라이즈 및 키오스크 장치의 Wi-Fi 설정 구성 - Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Android의 WiFi 장치 구성 프로필을 만들거나 추가합니다. Microsoft Intune에서 인증서 추가, EAP 유형 선택 및 인증 방법 선택을 포함하여 다양한 설정을 확인합니다.
+description: Android 엔터프라이즈 및 Android 키오스크의 WiFi 장치 구성 프로필을 만들거나 추가합니다. Microsoft Intune에서 인증서 추가, EAP 유형 선택 및 인증 방법 선택을 포함하여 다양한 설정을 확인합니다. 키오스크 장치의 경우 네트워크의 미리 공유한 키도 입력합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,18 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7c0d11e7670134c6a2cd9ce2eb72714ba64aa03
+ms.openlocfilehash: c2983f2f7b7079f73c857bf7caafe4236373c5dc
 ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424988"
+ms.locfileid: "49431948"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune에서 Android를 실행하는 장치의 Wi-Fi 설정 추가
+# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Microsoft Intune에서 Android 엔터프라이즈 및 Android 키오스크를 실행하는 장치의 Wi-Fi 설정 추가
 
-특정 WiFi 설정을 사용하여 프로필을 만든 후 Android 장치에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, PKS 또는 SCEP 인증서 사용 등을 포함한 많은 기능을 제공합니다.
-
-이러한 Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정의 두 범주로 구분됩니다.
+특정 WiFi 설정을 사용하여 프로필을 만든 후 Android 엔터프라이즈 및 Android 키오스크 장치에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, 미리 공유한 키 사용 등을 포함한 많은 기능을 제공합니다.
 
 이 문서에서는 이러한 설정을 설명합니다.
 
@@ -32,7 +30,25 @@ ms.locfileid: "49424988"
 
 [장치 프로필 만들기](device-profile-create.md).
 
-## <a name="basic-profile"></a>기본 프로필
+## <a name="device-owner-only---kiosk"></a>장치 소유자만 - 키오스크
+
+Android 엔터프라이즈 장치를 키오스크로 사용하는 경우 이 옵션을 선택합니다.
+
+- **네트워크 이름**: 이 Wi-Fi 연결의 이름을 입력합니다. 이 값은 사용자가 장치에서 사용 가능한 연결 목록을 찾아볼 때 확인하는 이름입니다.
+- **SSID**: **서비스 집합 ID**의 약어입니다. 이 설정은 장치에 연결할 무선 네트워크의 실제 이름입니다. 그러나 사용자에게는 연결을 선택할 때 구성한 **네트워크 이름**만 표시됩니다.
+- **자동으로 연결**: **사용**을 선택하면 장치가 범위 내에 있을 때 이 네트워크에 자동으로 연결합니다. **사용 안 함**을 선택하면 장치가 자동으로 연결되지 않습니다.
+- **숨겨진 네트워크**: **사용**을 선택하면 이 네트워크가 장치의 사용 가능한 네트워크 목록에 숨겨집니다. SSID는 브로드캐스트되지 않습니다. **사용 안 함**을 선택하면 이 네트워크가 장치의 사용 가능한 네트워크 목록에 표시됩니다.
+- **Wi-Fi 유형**: Wi-Fi 네트워크에 인증하기 위한 보안 프로토콜을 선택합니다. 옵션은 다음과 같습니다.
+
+  - **열기(인증 없음)**: 네트워크가 안전하지 않은 경우에만 이 옵션을 사용합니다.
+  - **WEP 미리 공유한 키**: **미리 공유한 키**에 암호를 입력합니다. 조직의 네트워크를 설정하거나 구성할 때 암호 또는 네트워크 키도 구성합니다. PSK 값에 이 암호 또는 네트워크 키를 입력합니다.
+  - **WPA 미리 공유한 키**: **미리 공유한 키**에 암호를 입력합니다. 조직의 네트워크를 설정하거나 구성할 때 암호 또는 네트워크 키도 구성합니다. PSK 값에 이 암호 또는 네트워크 키를 입력합니다.
+
+**확인**을 선택하여 변경 내용을 저장합니다.
+
+## <a name="work-profile-only"></a>작업 프로필만
+
+### <a name="basic-settings"></a>기본 설정
 
 - **Wi-Fi 유형**: **기본**을 선택합니다.
 - **SSID**: **서비스 집합 ID**의 약어입니다. 이 설정은 장치에 연결할 무선 네트워크의 실제 이름입니다.
@@ -103,6 +119,5 @@ ms.locfileid: "49424988"
 
 ## <a name="more-resources"></a>기타 참고 자료
 
+- [Android를 실행하는 장치의 Wi-Fi 설정](wi-fi-settings-android.md)에서 Android 장치에 사용 가능한 설정을 참조하세요.
 - 다른 플랫폼을 포함한 [Wi-Fi 설정 개요](wi-fi-settings-configure.md).
-
-- Android 엔터프라이즈 또는 Android 키오스크 장치를 사용 중인가요? 그렇다면 [Android 엔터프라이즈 및 Android 키오스크를 실행하는 장치의 Wi-Fi 설정](wi-fi-settings-android-enterprise.md)을 확인하세요.

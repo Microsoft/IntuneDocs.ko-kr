@@ -15,18 +15,15 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9486bb6d0d9747101535cef9f45931fa1b2cefe6
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 2f3b28a7a5c1f97871a40f108a5fae6cc6b93424
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231445"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424886"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>앱 보호 정책을 모니터링하는 방법
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-이 항목에서는 **Azure Portal을 사용하지 않는 경우** Intune 클래식 포털에서 [앱 보호 정책을 만드는 방법](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)을 설명합니다.
-
 
 [Azure Portal](https://portal.azure.com)의 Intune 앱 보호 창에서 사용자에게 적용한 MAM(모바일 앱 관리) 정책의 준수 상태를 모니터링합니다. MAM 정책, 준수 상태 및 사용자에게 발생할 수 있는 문제의 영향을 받는 사용자에 대한 정보를 확인합니다.
 
@@ -37,6 +34,9 @@ ms.locfileid: "48231445"
 -   상세 보기
 
 -   보고 보기
+
+> [!NOTE]
+> 앱 보호 정책 만들기에 대한 자세한 내용은 [앱 보호 정책을 만들고 할당하는 방법](app-protection-policies.md)을 참조하세요.
 
 ## <a name="summary-view"></a>요약 보기
 

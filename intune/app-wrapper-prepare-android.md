@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3025c673f695282611fdd0ded6f466036847c4a7
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: b4b10d3dfa83e3fcfda6ba34bebc1257b19d83ac
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031153"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642987"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 Android 앱 준비
 
@@ -82,7 +82,7 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
 
    다음 표에 **invoke-AppWrappingTool** 명령의 속성이 자세히 나와 있습니다.
 
-|속성|정보 산업|예|
+|속성|정보 산업|예제|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|원본 Android 앱(.apk)의 경로입니다.| |
  |**-OutputPath**&lt;String&gt;|출력 Android 앱의 경로입니다. InputPath와 동일한 디렉터리 경로일 경우 패키징이 실패합니다.| |
@@ -174,7 +174,7 @@ Android의 경우 Android 장치에 설치하려면 유효한 인증서로 모�
    > [!NOTE] 
    > 이렇게 하면 사용자는 장치에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
 
-### <a name="see-also"></a>См. также
+### <a name="see-also"></a>참고 항목
 - [Microsoft Intune으로 모바일 응용 프로그램 관리용 앱을 준비하는 방법 결정](apps-prepare-mobile-application-management.md)
 
 - [Android용 Microsoft Intune 앱 SDK 개발자 가이드](app-sdk-android.md)

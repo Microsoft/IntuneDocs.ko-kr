@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581654"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391555"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>빠른 시작: Windows 10 장치에 대한 장치 준수 정책 추가
 Windows에 대한 Intune 장치 준수 정책은 Windows 장치가 준수하는 것으로 간주되려면 충족해야 하는 규칙과 설정을 지정합니다. 이러한 정책을 [조건부 액세스](https://docs.microsoft.com/intune/conditional-access)와 함께 사용하여 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 장치 보고서를 가져오 고 비준수에 대해 조치를 할 수 있습니다.
@@ -53,4 +53,4 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 이 빠른 시작에서는 간단한 장치 준수 정책을 만들고 할당했습니다. 정책을 수신할 Windows 10 장치를 등록하려면 자동 등록을 설정하는 방법에 대한 빠른 시작을 계속 진행하세요. 
  
 > [!div class="nextstepaction"]
-> [자동 등록 설정](quickstart-setup-auto-enrollment.md)
+> [장치 암호 길이 설정](quickstart-set-password-length-android.md)

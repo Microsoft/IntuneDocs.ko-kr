@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.custom: intune
+ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058951"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425039"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -161,9 +161,9 @@ iOS 또는 Android 앱을 Intune 앱 SDK와 통합하는 데 필요한 단계를
 
     * 스토어에 게시하지 않을 LOB(기간 업무) 앱을 개발 중인 경우에는 조직을 통해 Microsoft Intune에 대한 액세스 권한을 가져야 합니다. [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)에서 한 달 무료 평가판도 신청할 수 있습니다.
 
-* **Intune 앱 보호 정책**: 모든 Intune 앱 보호 정책에 대해 앱을 테스트하려면 각 정책 설정에 대해 예상되는 동작이 무엇인지 알고 있어야 합니다. [iOS 앱 보호 정책](/intune-classic/deploy-use/ios-mam-policy-settings) 및 [Android 앱 보호 정책](/intune-classic/deploy-use/android-mam-policy-settings)에 대한 설명을 참조하세요.
+* **Intune 앱 보호 정책**: 모든 Intune 앱 보호 정책에 대해 앱을 테스트하려면 각 정책 설정에 대해 예상되는 동작이 무엇인지 알고 있어야 합니다. [iOS 앱 보호 정책](app-protection-policy-settings-ios.md) 및 [Android 앱 보호 정책](app-protection-policy-settings-android.md)에 대한 설명을 참조하세요.
 
-* **문제 해결**: 앱의 사용자 환경을 수동으로 테스트하는 동안 문제가 발생하면 [Troubleshooting MAM](/intune-classic/troubleshoot/troubleshoot-mam)(MAM 문제 해결)을 확인하세요. 이 문서에서는 Intune 관리 앱에서 발생할 수 있는 일반적인 문제, 대화 및 오류 메시지에 관한 도움말을 제공합니다. 
+* **문제 해결**: 앱의 설치 사용자 환경을 수동으로 테스트하는 동안 문제가 발생하면 [앱 설치 문제 해결](troubleshoot-app-install.md)을 참조하세요. 
 
 ### <a name="badge-your-app-optional"></a>앱에 배지 지정(선택 사항)
 

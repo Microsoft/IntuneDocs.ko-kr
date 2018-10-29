@@ -5,19 +5,19 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 1c0c197536cb6d6b452ff5e3607ad1af2d5a4ca8
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058900"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425226"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune으로 Windows 장치에 기간 업무 앱을 배포할 수 있도록 앱에 서명
 
@@ -77,7 +77,7 @@ Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Win
 
     -   WinPhoneCompanyPortal.ps1 – 회사 포털 앱 파일을 Windows Phone 8.1 장치에 배포할 수 있도록 서명하는 데 사용할 수 있는 PowerShell 스크립트
 
-    또는 [비즈니스용 Microsoft 스토어](http://businessstore.microsoft.com/)에서 Windows Phone 8.1 회사 포털(오프라인 사용이 허가된 패키지) 또는 Windows 10 회사 포털(오프라인 사용이 허가된 패키지)을 다운로드할 수 있습니다. 회사 포털 앱과 함께 오프라인 라이선스 및 오프라인에서 사용하기 위해 다운로드한 적절한 패키지를 얻어야 합니다. 선택 영역의 Windows 8 및 Windows Phone 8 플랫폼 목록은 상응하는 8.1 플랫폼을 나타냅니다. Intune을 사용하여 이 작업을 수행하는 방법에 대한 자세한 내용은 [비즈니스용 Microsoft 스토어에서 구입한 앱 관리](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)를 참조하세요.
+    또는 [비즈니스용 Microsoft 스토어](http://businessstore.microsoft.com/)에서 Windows Phone 8.1 회사 포털(오프라인 사용이 허가된 패키지) 또는 Windows 10 회사 포털(오프라인 사용이 허가된 패키지)을 다운로드할 수 있습니다. 회사 포털 앱과 함께 오프라인 라이선스 및 오프라인에서 사용하기 위해 다운로드한 적절한 패키지를 얻어야 합니다. 선택 영역의 Windows 8 및 Windows Phone 8 플랫폼 목록은 상응하는 8.1 플랫폼을 나타냅니다. Intune을 사용하여 이 작업을 수행하는 방법에 대한 자세한 내용은 [비즈니스용 Microsoft 스토어에서 구입한 앱 관리](windows-store-for-business.md)를 참조하세요.
 
 2.  **Windows Phone SDK 다운로드** Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570)을 다운로드하고 이 SDK를 컴퓨터에 설치합니다. 이 SDK는 응용 프로그램 등록 토큰을 생성하는 데 필요합니다.
 
@@ -119,7 +119,7 @@ Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Win
 
     -   `-EnterpriseId` - 엔터프라이즈 ID입니다. 이 인수 또는 'AetxPath'를 제공해야 합니다. 이 인수를 제공하지 않으면 AETX 파일에서 엔터프라이즈 ID를 읽습니다. 예: 1000000001
 
-6.  Windows Phone 8.1 회사 포털(SSP.appx) 앱을 배포합니다. 관련 지침은 [Windows Phone LOB(기간 업무) 앱을 추가하는 방법](lob-apps-windows-phone.md)([클래식 포털](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune))을 참조하세요.
+6.  Windows Phone 8.1 회사 포털(SSP.appx) 앱을 배포합니다. 관련 지침은 [Windows Phone LOB(기간 업무) 앱을 추가하는 방법](lob-apps-windows-phone.md)을 참조하세요.
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Symantec 엔터프라이즈 코드 서명 인증서를 갱신하는 방법
 

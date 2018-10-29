@@ -12,17 +12,20 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652158"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune에서 Windows 10(및 이상) 설정을 위한 장치 제한
 이 아티클에서는 Windows 10을 실행하는 장치에 대해 구성할 수 있는 모든 Microsoft Intune 장치 제한 설정을 보여줍니다.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+> [!Note]
+> 모든 Windows 버전에서 모든 옵션을 사용할 수 있는 것은 아닙니다.
 
 ## <a name="general"></a>일반
 - **화면 캡처(모바일 전용)** - 장치 화면을 이미지로 캡처하도록 허용합니다.
@@ -400,3 +403,6 @@ Windows 10 Mobile을 실행 중인 장치: 지정한 횟수만큼 로그인이 �
 - **메시지 동기화(모바일 전용)** - 어디서나 메시지 주고받기와 문자 메시지 백업 및 복원을 사용하지 않도록 설정합니다.
 - **MMS(모바일 전용)** - 장치에서 MMS 보내기/받기 기능을 사용하지 않도록 설정합니다.
 - **PKI(모바일 전용)** - 장치에서 Rich Communication Services 보내기/받기 기능을 사용하지 않도록 설정합니다.
+
+## <a name="more-information"></a>자세한 정보
+각 설정에 대한 추가 기술 세부 정보 및 지원되는 Windows 버전을 보려면 [Windows 10 정책 CSP 참조](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)를 참조하세요.

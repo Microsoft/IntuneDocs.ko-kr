@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/01/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,20 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6be3694a18cd0df09b52b535a0fcd2050bf7a98
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 46d28ba8d9d8c6ec2adf2b41adbb9e7336676811
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231247"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642992"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune 및 Exchange Online용 Exchange 서비스 커넥터 구성
-
 이 문서에서는 Microsoft Intune 서비스를 Exchange Online 또는 새로운 Exchange Online 전용 서비스에 연결하는 방법을 보여줍니다. Exchange Online Dedicated 환경이 **신규** 또는 **기존** 버전인지 확인하려면 계정 관리자에게 문의하세요.
 
+**Service to Service Connector**를 사용하면 EAS(Exchange ActiveSync) 및 Intune 관리 장치를 모두 단일 관리 콘솔에서 관리할 수 있습니다.  커넥터는 Exchange Online의 조건부 액세스를 사용하도록 설정할 필요가 없습니다.
+
 ## <a name="service-to-service-connector-requirements"></a>Service to Service Connector 요구 사항
-**Service to Service Connector**는 Exchange Online 또는 Exchange Online Dedicated만 지원하며 온-프레미스 인프라에 대한 요구 사항은 없습니다.
+**Service to Service Connector**는 Exchange Online 또는 Exchange Online Dedicated만 지원하며 온-프레미스 인프라에 대한 요구 사항은 없습니다. 
 
 
 |              요구 사항               |                                                                                                            추가 정보                                                                                                            |
@@ -68,5 +69,4 @@ Exchange Service to Service Connector를 성공적으로 구성한 후 **조건�
 
 **연결 상태** 및 마지막으로 성공한 동기화 시도의 시간과 날짜를 확인할 수도 있습니다.
 
-## <a name="next-steps"></a>다음 단계
-[Microsoft Intune에서 Exchange 조건부 액세스 모니터링](conditional-access-exchange-monitor.md)
+ 

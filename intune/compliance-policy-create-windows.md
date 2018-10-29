@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 Windows 장치 규정 준수 정책 만들기 - Azure | Microsoft Docs
-description: Windows Phone 8.1, Windows 8.1 이상, Windows 10 이상 장치에 대한 Microsoft Intune 장치 준수 정책을 만들거나 구성합니다. 최소 및 최대 운영 체제에서 준수 확인, 암호 제한 및 길이 설정, bitlocker 요구, 타사(3자) AV 솔루션, 허용되는 위협 수준 설정, Surface Hub 및 Windows Holographic for Business를 비롯한 데이터 저장소에서 암호화 사용 등을 수행합니다.
+description: Windows Phone 8.1, Windows 8.1 이상, Windows 10 이상 장치에 대한 Microsoft Intune 장치 준수 정책을 만들거나 구성합니다. 최소 및 최대 운영 체제에서 준수 확인, 암호 제한 및 길이 설정, bitlocker 요구, 타사 AV 솔루션, 허용되는 위협 수준 설정, Surface Hub 및 Windows Holographic for Business를 비롯한 데이터 저장소에서 암호화 사용 등을 수행합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602319"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642910"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune에서 Windows 장치에 대한 장치 준수 정책 추가
 
@@ -119,8 +119,6 @@ Windows 8.1 PC는 **3** 버전을 반환합니다. Windows에 대한 OS 버전 �
 
 HAS 서비스의 작동 방식에 대한 자세한 내용은 [상태 증명 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)를 참조하세요.
 
-방어 위협 서비스로 Windows Defender ATP(Advanced Threat Protection)를 설정하려면[조건부 액세스로 Windows Defender ATP 사용](advanced-threat-protection.md)을 참조하세요.
-
 ### <a name="device-properties"></a>장치 속성
 
 - **최소 OS 버전**: 허용되는 최소 버전을 **주 버전.부 버전.빌드.CU 번호** 형식으로 입력합니다. 올바른 값을 얻으려면 명령 프롬프트를 열고 `ver`을 입력합니다. `ver` 명령은 버전을 다음 형식으로 반환합니다.
@@ -183,6 +181,8 @@ HAS 서비스의 작동 방식에 대한 자세한 내용은 [상태 증명 CSP]
   - **낮음**: 낮은 수준의 위협만 있는 경우 장치가 규정 준수로 평가됩니다. 더 높은 수준의 위협이 발생하면 장치는 규정 비준수 상태가 됩니다.
   - **보통**: 장치의 기존 위협이 낮음 또는 보통 수준인 경우 장치가 규격으로 평가됩니다. 높은 수준의 위협이 있는 것으로 감지되면 장치가 규정 비준수로 결정됩니다.
   - **높음**: 이 옵션은 최소 보안이며 모든 위협 수준을 허용합니다. 이 수준은 이 솔루션을 보고 용도로만 사용하는 경우에 유용할 수 있습니다.
+  
+  방어 위협 서비스로 Windows Defender ATP(Advanced Threat Protection)를 설정하려면[조건부 액세스로 Windows Defender ATP 사용](advanced-threat-protection.md)을 참조하세요.
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

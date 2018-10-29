@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41296e2c5fd1bddfc65bb343d86f4891fff9452d
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906042"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425192"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>모바일 장치 관리 기관 설정
 
@@ -32,7 +32,10 @@ MDM(모바일 장치 관리) 기관 설정에 따라 장치를 관리하는 방�
 
 - **Intune 독립 실행형** - Azure Portal을 사용하여 구성하는 클라우드 전용 관리입니다. Intune에서 제공하는 모든 기능 집합을 포함합니다. [Intune 콘솔에서 MDM 기관을 설정합니다](#set-mdm-authority-to-intune).
 
-- **Intune 하이브리드** - Intune 클라우드 솔루션과 System Center Configuration Manager의 통합입니다. Configuration Manager 콘솔을 사용하여 Intune을 구성합니다. [Configuration Manager에서 MDM 기관을 설정합니다](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription).
+- **Intune 하이브리드** - Intune 클라우드 솔루션과 System Center Configuration Manager의 통합입니다. Configuration Manager 콘솔을 사용하여 Intune을 구성합니다. [Configuration Manager에서 MDM 기관을 설정합니다](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+
+    > [!Important]
+    >향후 릴리스에서는 새 하이브리드 MDM 고객의 온보딩이 꺼집니다. 자세한 내용은 [MC146431 변경 계획 블로그](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/)를 참조하세요.
 
 - **Office 365용 모바일 장치 관리**  - Office 365와 Intune 클라우드 솔루션의 통합입니다. Office 365 관리 센터에서 Intune을 구성합니다. Intune 독립 실행형에서 제공되는 기능 중 일부를 포함합니다. Office 365 관리 센터에서 MDM 기관을 설정합니다.
 
@@ -63,7 +66,7 @@ Android 또는 Apple 장치 관리를 사용하는 경우 Intune은 이러한 �
 - Apple MDM 푸시 인증서를 사용하고 업로드.
 - DEP(장비 등록 프로그램), School Manager, Volume Purchasing Program 등의 Apple 서비스 중 하나를 사용.
 
-각각의 경우에 동의는 IT 관리자가 등록을 위해 Google 또는 Apple 장치를 인증했는지 확인하는 것처럼 모바일 장치 관리 서비스 실행에 대해 엄격히 적용됩니다. 새 워크플로가 가동될 때 어떤 정보가 공유되는지 알려주는 설명서는 다음 위치에 있습니다.
+각 경우에 동의는 모바일 장치 관리 서비스의 실행과 관련하여 엄격히 적용됩니다. 예를 들어 IT 관리자는 등록을 위해 Google 또는 Apple 장치를 인증했는지 확인합니다. 새 워크플로가 가동될 때 어떤 정보가 공유되는지 알려주는 설명서는 다음 위치에 있습니다.
 - [Intune이 Google에 보내는 데이터](https://aka.ms/Data-intune-sends-to-google)
 - [Intune이 Apple에 보내는 데이터](https://aka.ms/data-intune-sends-to-apple)
 
@@ -79,7 +82,7 @@ Android 또는 Apple 장치 관리를 사용하는 경우 Intune은 이러한 �
 다음 정보를 검토하여 MDM 기관 변경을 준비하세요.
 - MDM 기관을 변경하는 옵션을 사용하려면 Configuration Manager 버전 1610 이상이 있어야 합니다.
 - 새 MDM 기관으로 변경한 후에 장치가 서비스에 연결되는 데 최대 8시간이 걸릴 수 있습니다.
-- Configuration Manager 콘솔에서 Intune 구독을 설정할 때 사용할 Intune 독립 실행형에서 현재 관리되는 모든 사용자가 포함된 Configuration Manager 사용자 컬렉션을 만듭니다. 이 작업은 사용자 및 해당 장치에 Configuration Manager 라이선스가 할당되고 MDM 기관 변경 후에 하이브리드 환경에서 관리되도록 하는 데 도움이 됩니다.
+- Configuration Manager 콘솔에서 Intune 구독을 설정할 때 사용할 Intune 독립 실행형에서 현재 관리되는 모든 사용자가 포함된 Configuration Manager 사용자 컬렉션을 만듭니다. 이 컬렉션은 사용자 및 해당 장치에 Configuration Manager 라이선스가 할당되고 MDM 기관 변경 후에 하이브리드 환경에서 관리되도록 하는 데 도움이 됩니다.
 - IT 관리 사용자도 이 사용자 컬렉션에 포함되어야 합니다.  
 - 변경 전에 MDM 기관은 Intune 관리 콘솔에서 **Microsoft Intune으로 설정**(독립 실행형)으로 표시됩니다.
 - MDM 기관 변경 전에 Microsoft Intune 관리 콘솔에서 MDM 기관에는 **Microsoft Intune으로 설정**(독립 실행형 테넌트)이 표시되어야 합니다.
@@ -88,7 +91,7 @@ Android 또는 Apple 장치 관리를 사용하는 경우 Intune은 이러한 �
 
 - [Microsoft Intune 관리 콘솔](http://manage.microsoft.com)에서 장치 등록 관리자 역할을 제거합니다. 자세한 내용은 [Intune에서 장치 등록 관리자 삭제](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune)를 참조하세요.
 - 구성된 모든 장치 그룹 매핑을 해제합니다. 자세한 내용은 [Microsoft Intune에서 장치 그룹 매핑을 사용하여 장치 분류](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)를 참조하세요.
-- MDM 기관을 변경하는 동안 최종 사용자에게 거의 영향을 주지 않아야 합니다. 그러나 사용자가 장치를 켜고 변경 즉시 서비스에 연결하도록 이러한 변경 사항을 사용자에게 알릴 수 있습니다. 이렇게 하면 최대한 많은 장치가 가능한 한 빨리 새 기관을 통해 서비스에 연결되고 등록됩니다.
+- MDM 기관을 변경하는 동안 최종 사용자에게 거의 영향을 주지 않아야 합니다. 그러나 사용자가 장치를 켜고 변경 즉시 서비스에 연결하도록 이러한 변경 사항을 사용자에게 알릴 수 있습니다. 이 예방 조치를 통해 최대한 많은 장치가 가능한 한 빨리 새 기관을 통해 서비스에 연결되고 등록됩니다.
 - MDM 기관 변경 전에 Intune 독립 실행형을 사용하여 iOS 장치를 관리하는 경우 이전에 Intune에서 사용했던 동일한 APNs(Apple Push Notification Service) 인증서가 갱신되고 Configuration Manager(하이브리드)에서 테넌트를 다시 설정하는 데 사용되도록 해야 합니다.    
 
     > [!IMPORTANT]  
@@ -102,7 +105,7 @@ Android 또는 Apple 장치 관리를 사용하는 경우 Intune은 이러한 �
 4. 새 하이브리드 MDM 기관에서 계속 관리할 모든 사용자를 포함하는 사용자 컬렉션을 선택합니다.
 5. **다음** 을 클릭하여 마법사를 완료합니다. 이제 MDM 기관이 **Configuration Manager**로 변경됩니다.
 6. 동일한 Intune 테넌트를 사용하여 [Microsoft Intune 관리 콘솔](http://manage.microsoft.com)에 로그인하고 MDM 기관이 **Configuration Manager로 설정**으로 변경되었는지 확인합니다.
-7. MDM 기관을 구성 관리자로 변경한 후 [iOS 등록](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) 및 [Android 등록](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-android)을 설정할 수 있습니다.
+7. MDM 기관을 구성 관리자로 변경한 후 [iOS 등록](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) 및 [Android 등록](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android)을 설정할 수 있습니다.
 8. Configuration Manager 콘솔에서 새 MDM 기관(하이브리드)의 새로운 설정 및 앱을 구성하고 배포합니다.
 
 다음 번에 장치가 서비스에 연결되면 새 MDM 기관과 동기화하여 새 설정을 받습니다.
@@ -125,13 +128,13 @@ MDM 기관을 Unknown으로 다시 변경할 수 없습니다. MDM 기관은 Mic
 
 ## <a name="what-to-expect-after-changing-the-mdm-authority"></a>MDM 기관 변경 후 예상되는 상황
 
-- Intune 서비스에서 테넌트의 MDM 기관이 변경되었음을 감지하면 서비스에 체크 인하고 동기화하기 위해 등록된 모든 장치에 알림 메시지를 보냅니다(정기적으로 예약된 체크 인이 아님). 따라서 테넌트의 MDM 기관이 Intune 독립 실행형에서 하이브리드로 변경된 후에 전원이 켜져 있고 온라인 상태인 모든 장치는 서비스에 연결되고, 새 MDM 기관을 수신하고, 하이브리드에서 관리되게 됩니다. 이러한 서비스의 관리 및 보호가 중단되는 일은 없습니다.
+- Intune 서비스에서 테넌트의 MDM 기관이 변경되었음을 감지하면 서비스에 체크 인하고 동기화하기 위해 등록된 모든 장치에 알림 메시지를 보냅니다(이 알림은 정기적으로 예약된 체크 인을 벗어남). 따라서 테넌트의 MDM 기관이 Intune 독립 실행형에서 하이브리드로 변경된 후에 전원이 켜져 있고 온라인 상태인 모든 장치는 서비스에 연결되고, 새 MDM 기관을 수신하고, 하이브리드에서 관리되게 됩니다. 이러한 서비스의 관리 및 보호가 중단되는 일은 없습니다.
 - MDM 기관을 변경하는 동안(또는 직후에) 전원이 켜져 있고 온라인 상태인 장치의 경우에도 장치가 새 MDM 기관의 서비스에 등록되기까지 최대 8시간의 지연이 있습니다(예약된 다음 정기 체크 인 타이밍에 따라).    
 
   > [!IMPORTANT]    
   > MDM 기관을 변경하는 시간과 갱신된 APNs 인증서를 새 기관으로 업로드하는 시간 사이의 iOS 장치에 대한 새 장치 등록 및 장치 체크 인에 실패합니다. 따라서 MDM 기관을 변경한 후 가능한 한 빨리 APNs 인증서를 갱신하고 새 인증 기관에 업로드하는 것이 중요합니다.
 
-- 사용자는 장치에서 서비스로의 체크 인을 수동으로 시작하여 새 MDM 기관을 빠르게 변경할 수 있습니다. 회사 포털 앱을 사용하고 장치 준수 검사를 시작하여 이 작업을 쉽게 수행할 수 있습니다.
+- 사용자는 장치에서 서비스로의 체크 인을 수동으로 시작하여 새 MDM 기관을 빠르게 변경할 수 있습니다. 사용자는 회사 포털 앱을 사용하고 장치 준수 검사를 시작하여 이 변경을 쉽게 수행할 수 있습니다.
 - MDM 기관이 변경되고, 장치가 체크 인되고 서비스와 동기화된 후 작업이 제대로 진행되는지 확인하려면 Configuration Manager 콘솔에서 장치를 찾아보세요. 이전에 Intune에서 관리되던 장치는 이제 Configuration Manager 콘솔에서 관리되는 장치로 표시됩니다.    
 - MDM 기관 변경 동안 장치가 오프라인 상태일 때와 장치가 서비스로 체크 인될 때까지의 중간 기간이 있습니다. 이 중간 기간 동안 장치가 보호되고 제대로 작동되도록 하기 위해 최대 7일 동안(또는 장치가 새 MDM 기관에 연결되고 기존 설정을 덮어쓰는 새 설정을 받을 때까지) 장치에서 다음 프로필이 그대로 유지됩니다.
     - 전자 메일 프로필
