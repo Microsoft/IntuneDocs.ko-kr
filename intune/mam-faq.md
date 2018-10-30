@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/12/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635853cb744395e6ae519985eaed62b53e88578e
-ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
+ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307426"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643028"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 및 앱 보호에 대한 질문과 대답
 
@@ -169,7 +169,11 @@ Intune APP SDK는 자사 및 타사의 SDK 버전 모두에 고급 ADAL 기능�
 다른 두 유형의 설정을 처리할 경우 앱 버전 요구 사항이 우선하고 이어 Android 운영 체제 버전 요구 사항 및 Android 패치 버전 요구 사항이 차례로 처리됩니다. 그런 다음, 동일한 순서로 설정의 모든 형식에 대한 모든 경고를 확인합니다.
 
 ## <a name="app-experience-on-ios"></a>iOS의 앱 환경
-
+**장치에 지문 또는 얼굴을 추가하거나 제거하면 어떻게 되나요?**
+Intune 앱 보호 정책을 사용하면 Intune의 사용이 허가된 사용자에 대해서만 앱 액세스를 제어할 수 있습니다. 앱에 대한 액세스를 제어하는 한 가지 방법으로, 지원되는 장치에서 Apple의 Touch ID 또는 Face ID를 요구하는 방법이 있습니다. Intune은 장치의 생체 인식 데이터베이스에 변경 사항이 있는 경우 동작을 구현하며, Intune은 다음 비활성 시간 제한 값이 충족될 때 사용자에게 PIN을 요구하는 메시지를 표시합니다. 생체 인식 데이터의 변경 사항에는 지문 또는 얼굴의 추가나 제거가 포함됩니다. Intune 사용자에게 설정한 PIN이 없는 경우 Intune PIN 설정으로 안내됩니다.
+ 
+Intune PIN은 앱 내의 조직 데이터를 앱 수준에서 보호하고 계속 안전하게 유지하기 위한 것입니다. 이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 9.0.1 이상을 통합하는 응용 프로그램의 참여가 필요합니다. 대상 응용 프로그램에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 응용 프로그램 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다. 
+  
 **데이터 전송 정책이 "관리되는 앱만" 또는 "앱 없음"으로 설정된 경우에도 iOS 공유 확장을 사용하여 관리되지 않는 앱에서 회사 또는 학교 데이터를 열 수 있습니다. 데이터가 유출되지는 않나요?**<br></br>
 Intune 앱 보호 정책은 장치를 관리하지 않고는 iOS 공유 확장을 제어할 수 없습니다. 따라서 Intune은 _**"회사" 데이터를 앱 외부에서 공유하기 전에 먼저 암호화합니다**_. 관리되는 앱 외부에서 "회사" 파일 열기를 시도하여 이를 확인할 수 있습니다. 파일이 암호화되어야 하며, 관리되는 앱 외부에서 파일을 열 수 없어야 합니다.
 

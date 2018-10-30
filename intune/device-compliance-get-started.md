@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/28/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102058"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391572"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune에서 장치 준수 정책 시작
 
@@ -151,7 +151,7 @@ Remember that you need to implement conditional access policies in addition to c
 또한 조건부 액세스 없이 장치 준수 정책을 사용할 수 있습니다. 준수 정책을 독립적으로 사용하는 경우 대상 장치는 평가되고 준수 상태와 함께 보고됩니다. 예를 들어 암호화되지 않은 장치의 수나 무단 해제 또는 루팅된 장치에 대한 보고서를 가져올 수 있습니다. 조건부 액세스 없이 준수 정책을 사용하는 경우 회사 리소스에 대한 액세스 제한이 없습니다.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>장치 준수 정책을 배포하는 방법
-준수 정책을 사용자 그룹의 사용자 또는 장치 그룹의 장치에 배포할 수 있습니다. 준수 정책을 사용자에게 배포하면 사용자의 모든 장치에서 준수가 확인됩니다.
+준수 정책을 사용자 그룹의 사용자 또는 장치 그룹의 장치에 배포할 수 있습니다. 준수 정책을 사용자에게 배포하면 사용자의 모든 장치에서 준수가 확인됩니다. Windows 10 버전 1803 이상 장치에서 기본 사용자가 장치를 등록하지 않은 *경우* 장치 그룹에 배포하는 것이 좋습니다. 이 시나리오에서 장치 그룹을 사용하면 준수 보고에 도움이 됩니다.
 
 기본 **준수 정책 설정**(Azure Portal > 장치 준수)에는 다음이 포함됩니다.
 
