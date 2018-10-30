@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: f807bd479ddbbc4ca6e83072c352bb8bd60cf5a9
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425039"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225423"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -140,7 +140,7 @@ Intune|iOS|Android|설명|
 
 - **CFBundleShortVersionString**  
     번들의 릴리스 버전 번호를 지정합니다. 이 번호는 앱의 릴리스된 버전을 식별합니다. 최종 사용자가 앱을 참조하는 데 사용되는 번호입니다.
-  - **CFBundleVersion**  
+- **CFBundleVersion**  
     번들의 빌드 버전으로, 번들의 반복을 식별합니다. 번호는 릴리스 또는 릴리스되지 않은 번들을 식별할 수도 있습니다. 번호는 앱 검색에 사용됩니다.
 
 #### <a name="android"></a>Android

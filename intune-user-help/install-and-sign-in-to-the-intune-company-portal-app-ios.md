@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.openlocfilehash: 870590df70474db02dc4b3e4ba5a8251aeeb2f26
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260201"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959471"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>회사 포털 앱 설치 및 로그인
 
@@ -32,7 +32,7 @@ iOS 장치에 회사 포털 앱을 설치하여 회사 및 학교 앱, 메일 �
 
 2.  **Intune 회사 포털 앱**을 다운로드합니다.
 
-    ![앱 스토어에서 Intune 회사 포털 앱이 표시되는 방식의 스크린샷입니다.](./media/cp_iosredesign_after_1803_04.png)
+    ![앱 스토어에서 Intune 회사 포털 앱이 표시되는 방식의 스크린샷입니다.](./media/CP_iosRedesign_after_1803_04.PNG)
 
 3.  회사 포털 앱을 열고 회사 또는 학교 메일 주소와 암호를 입력한 다음 **로그인**을 탭합니다.
 
