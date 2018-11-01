@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6a633b73856b5f9f50ffe0b9993713b888b969b
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 2a521eadea2bcf118b4b0c643802fd8478f7ace2
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828145"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652107"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune에서 장치 제한 사항 설정 작업
 
@@ -124,6 +124,7 @@ ms.locfileid: "48828145"
     > [!IMPORTANT]
     >  - 선택한 VPN 클라이언트는 장치에 설치되어 있어야 하고 회사 프로필의 앱별 VPN을 지원해야 합니다. 그렇지 않으면 오류가 발생합니다. 
     >  - **관리 Google Play 스토어**에 있는 VPN 클라이언트 앱을 승인하고 Intune과 앱을 동기화하고, 앱을 장치에 배포해야 합니다. 이렇게 하면 앱이 사용자의 회사 프로필에 설치됩니다.
+    >  - Android 3.0.3용 F5 Access와 함께 앱별 VPN을 사용할 때 알려진 문제가 있습니다. 자세한 내용은 [Android 3.0.3용 F5 Access에 대한 F5의 릴리스 노트](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android)를 참조하세요.
 
 - **잠금 모드**: 강제로 모든 네트워크 트래픽이 VPN 터널을 사용하도록 하려면 **사용**을 설정합니다. VPN에 연결되어 있지 않으면 장치에 네트워크 액세스 권한이 없습니다.
 
