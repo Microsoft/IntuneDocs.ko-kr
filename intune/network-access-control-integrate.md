@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune - Azure와 네트워크 액세스 제어 통합 | Microsoft Docs
+title: Microsoft Intune과 네트워크 액세스 제어 통합 - Azure | Microsoft Docs
 description: NAC(네트워크 액세스 제어) 솔루션은 Intune을 사용하여 장치에 대한 준수 및 등록을 확인합니다. NAC는 조건부 액세스를 사용한 특정 동작 및 작업을 포함합니다. 등록된 단계를 참조하고 파트너 솔루션 목록을 가져옵니다.
 keywords: ''
 author: brenduns
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a2d2d7eb609db07d4f41254f2937120412f2f4b1
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 8d78d850d68b8c6eb6e5b1282acddb3b93963ca4
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643045"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959522"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Intune과 NAC(네트워크 액세스 제어) 통합
 
@@ -63,5 +63,5 @@ NAC는 조건부 액세스와 연동하여 액세스 제어 결정을 제공합�
 
 - [Intune과 Cisco ISE 통합](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Intune과 Citrix NetScaler 통합](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
-- [Intune과 HP Aruba Clear Pass 통합](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [Intune과 HP Aruba ClearPass 통합](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Intune을 사용한 Squadra 보안 이동식 미디어 관리자(secRMM) 통합](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

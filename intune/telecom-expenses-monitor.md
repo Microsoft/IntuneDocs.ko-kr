@@ -15,17 +15,17 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: e4c44552a0df369767bb91749351674af9eab4b3
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562904"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959556"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune에서 Telecom Expense Management 서비스 설정
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune을 사용하면 회사 소유의 모바일 장치에서 데이터 사용으로 발생하는 통신 비용을 관리할 수 있습니다. 이 기능을 지원하기 위해 Intune에는 타사 소프트웨어 개발자인 Saaswedo의 Datalert Telecom Expense Management 솔루션이 통합되어 있습니다. Datalert는 통신 데이터 사용량을 관리할 수 있는 실시간 통신 비용 관리 소프트웨어입니다. 이 소프트웨어는 Intune 관리 장치에 대해 로밍 초과분과 비용이 많이 들고 예기치 않은 데이터를 방지하게 해줍니다.
+Intune을 사용하면 회사 소유의 모바일 장치에서 데이터 사용으로 발생하는 통신 비용을 관리할 수 있습니다. 이 기능을 지원하기 위해 Intune에는 타사 소프트웨어 개발자인 Saaswedo의 [Datalert Telecom Expense Management](http://datalert.biz/get-started) 솔루션이 통합되어 있습니다. Datalert는 통신 데이터 사용량을 관리할 수 있는 실시간 통신 비용 관리 소프트웨어입니다. 이 소프트웨어는 Intune 관리 장치에 대해 로밍 초과분과 비용이 많이 들고 예기치 않은 데이터를 방지하게 해줍니다.
 
 Intune은 Datalert와의 통합을 통해 로밍 및 국내 데이터 사용량 제한을 중앙에서 설정, 모니터링 및 적용할 수 있도록 지원합니다. 정의된 임계값을 초과할 경우 자동화된 경고가 작동됩니다. 사용자가 (임계값을 초과하거나 로밍을 해제하는 등) 개인 또는 최종 사용자 그룹에 여러 작업을 적용하도록 서비스를 구성할 수 있습니다. Datalert 관리 콘솔에서 데이터 사용량 및 모니터링 정보를 제공하는 보고서를 사용할 수 있습니다.
 
@@ -61,19 +61,31 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
 2. Datalert 관리 콘솔에서 **설정** 탭으로 이동한 다음 **MDM configuration**(MDM 구성)으로 이동합니다.
 
-3. 페이지에 설정을 입력할 수 있도록 **잠금 해제**를 선택합니다.
+3. 페이지 하단에서 **차단 해제**를 선택하면 페이지의 설정을 수정할 수 있습니다.
 
-4. **Server MDM**(서버 MDM)에서 **Microsoft Intune**을 선택합니다.
+4. **Intune / Datalert Connection** 섹션에서 **Server MDM**에 대해 **Microsoft Intune**을 선택합니다.    
 
-5. **Azure AD domain**(Azure AD 도메인)에 Azure 테넌트 ID를 입력한 다음 **연결** 단추를 선택합니다.
+5. **Azure AD 도메인**에 Azure 테넌트 ID를 입력한 다음, **연결**을 선택합니다.
 
     **연결**을 선택하면 Datalert 서비스가 Intune에 체크 인되어 Datalert와 Intune의 기존 연결이 없는지 확인합니다. 몇 초 후 Microsoft 로그인 페이지가 표시되고 Datalert Azure 인증이 시작됩니다.
 
-6. Microsoft 인증 페이지에서 **동의함**을 선택합니다. Datalert "thank you." 페이지로 리디렉션됩니다. 이 페이지는 몇 초 후 닫힙니다. Datalert에서 연결의 유효성을 검사하고 유효성이 확인된 항목 목록 옆에 녹색 확인 표시를 표시합니다. 유효성 검사에 실패하는 경우 메시지가 빨간색으로 표시되면 Datalert 지원 팀에 문의해 도움을 요청하십시오.
+6. Microsoft 인증 페이지에서 **동의함**을 선택합니다. Datalert **thank you** 페이지로 리디렉션됩니다. 이 페이지는 몇 초 후 닫힙니다. Datalert에서 연결의 유효성을 검사하고 유효성이 확인된 항목 목록 옆에 녹색 확인 표시를 표시합니다. 유효성 검사에 실패하는 경우 메시지가 빨간색으로 표시되면 Datalert 지원 팀에 문의해 도움을 요청하십시오.
 
     다음 스크린샷에서는 연결되면 볼 수 있는 녹색 확인 표시를 보여 줍니다.
 
-   ![연결 성공을 보여 주는 Datalert 페이지](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![연결 성공을 보여 주는 Datalert 페이지](./media/tem-datalert-connection.png)
+
+7. **Datalert App / ADAL Consent** 섹션에서 스위치를 **켜기**로 설정합니다. Microsoft 인증 페이지에서 **동의함**을 선택합니다. Datalert **thank you** 페이지로 리디렉션됩니다. 이 페이지는 몇 초 후 닫힙니다. Datalert에서 연결의 유효성을 검사하고 유효성이 확인된 항목 목록 옆에 녹색 확인 표시를 표시합니다. 유효성 검사에 실패하는 경우 메시지가 빨간색으로 표시되면 Datalert 지원 팀에 문의해 도움을 요청하십시오.    
+
+    다음 스크린샷에서는 연결되면 볼 수 있는 녹색 확인 표시를 보여 줍니다.
+
+   ![연결 성공을 보여 주는 Datalert 페이지](./media/tem-datalert-adal-consent.png)
+
+8. **MDM 프로필 관리(선택 사항)** 섹션에서 스위치를 **켜기**로 설정하여 Datalert가 정책을 설정하는 데 도움이 되도록 Intune에서 사용할 수 있는 프로필을 읽도록 허용합니다. Microsoft 인증 페이지에서 **동의함**을 선택합니다. Datalert **thank you** 페이지로 리디렉션됩니다. 이 페이지는 몇 초 후 닫힙니다. Datalert에서 연결의 유효성을 검사하고 유효성이 확인된 항목 목록 옆에 녹색 확인 표시를 표시합니다. 유효성 검사에 실패하는 경우 메시지가 빨간색으로 표시되면 Datalert 지원 팀에 문의해 도움을 요청하십시오.    
+
+    다음 스크린샷에서는 연결되면 볼 수 있는 녹색 확인 표시를 보여 줍니다.
+
+   ![연결 성공을 보여 주는 Datalert 페이지](./media/tem-datalert-mdm-profiles.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2단계: Intune에서 Telecom Expense Management 기능이 활성 상태인지 확인
 

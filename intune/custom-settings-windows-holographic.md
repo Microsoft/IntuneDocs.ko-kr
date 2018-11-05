@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure의 Windows Holographic for Business 장치에 대한 사용자 지정 설정 | Microsoft Docs
-description: Microsoft Intune에서 Windows Holographic for Business를 실행하는 장치 OMA-URI 설정을 사용하려면 사용자 지정 프로필을 만듭니다. AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates 및 ApplicationLaunchRestrictions 정책 CSP(구성 서비스 공급자) 설정을 설정할 수 있습니다.
+title: Microsoft Intune에서 Windows Holographic for Business 장치에 대한 사용자 지정 설정 - Azure | Microsoft Docs
+description: Microsoft Hololens를 비롯하여 Microsoft Intune에서 Windows Holographic for Business를 실행하는 장치의 OMA-URI 설정을 사용하려면 사용자 지정 프로필을 추가하거나 만듭니다. AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates 및 ApplicationLaunchRestrictions 정책 CSP(구성 서비스 공급자) 설정을 설정할 수 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/26/2018
+ms.date: 10/24/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,39 +13,57 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8ba5078d304c0e9d6b10e4efb868642323c901c
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: 863ef32d05fed601eaf38f749aa30e1c4b657cc9
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403581"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983162"
 ---
-# <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Intune에서 Windows Holographic for Business를 실행하는 장치에 사용자 지정 장치 설정
+# <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune에서 Windows Holographic for Business 장치에 대한 사용자 지정 설정 사용
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Microsoft Intune을 사용하면 "사용자 지정 프로필"을 사용하여 Windows Holographic for Business 장치에 대한 사용자 지정 설정을 추가하거나 만들 수 있습니다. 사용자 지정 프로필은 Intune의 기능입니다. Intune에 기본 제공되지 않은 장치 설정 및 기능을 추가하도록 설계되었습니다.
 
- 장치의 기능을 제어하는 데 사용할 수 있는 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 배포하려면 Windows Holographic for Business용 Microsoft Intune **사용자 지정** 프로필을 사용합니다. Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설정을 사용할 수 있게 합니다. CSP 개요는 [IT 전문가용 구성 CSP(구성 서비스 공급자) 소개](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers)를 참조하세요. Windows Holographic에서 지원되는 특정 CSP의 경우 [Windows Holographic에서 지원되는 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)를 참조하세요.
+Windows Holographic for Business 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 다른 기능을 구성합니다. 이러한 설정은 일반적으로 모바일 장치 제조업체에서 장치에서 기능을 제어하기 위해 사용합니다.
 
-특정 설정을 찾고 있는 경우 [Windows Holographic for Business 장치 제한 프로필](device-restrictions-windows-holographic.md)에 기본 제공 설정이 많기 때문에 사용자 지정 값을 지정할 필요가 없습니다.
+Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설정을 사용할 수 있게 합니다. CSP 개요는 [IT 전문가용 구성 CSP(구성 서비스 공급자) 소개](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers)를 참조하세요. Windows Holographic에서 지원되는 특정 CSP의 경우 [Windows Holographic에서 지원되는 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)를 참조하세요.
 
-## <a name="create-the-custom-oma-uri-profile"></a>사용자 지정 OMA-URI 프로필 만들기
+특정 설정을 찾을 경우 [Windows Holographic for Business 장치 제한 프로필](device-restrictions-windows-holographic.md)에 많은 기본 제공 설정이 있습니다. 따라서 사용자 지정 값을 입력할 필요가 없습니다.
 
-1. [Microsoft Intune에서 사용자 지정 장치 설정 구성](custom-settings-configure.md)의 지침을 사용하여 시작합니다.
-2. **프로필 만들기**에서 **설정**을 선택하여 하나 이상의 OMA-URI 설정을 추가합니다.
-3. **사용자 지정 OMA-URI 설정**에서 **추가**를 클릭하여 새 값을 추가합니다. **내보내기**를 클릭하여 쉼표로 구분된 값(.csv) 파일로 구성한 모든 값의 목록을 만들 수도 있습니다.
-4. 추가하려는 각 OMA-URI 설정에 대해 다음 정보를 입력합니다.
-  - **설정 이름**: 설정 목록에서 쉽게 식별할 수 있도록 OMA-URI 설정에 대한 고유한 이름을 입력합니다.
-  - **설정 설명**: 필요에 따라 설정에 대한 설명을 입력합니다.
-  - **데이터 형식**: 다음 중에서 선택합니다.
-    - **문자열**
-    - **문자열(XML)**
-    - **날짜 및 시간**
-    - **정수**
-    - **부동 소수점**
-    - **부울**
-  - **OMA-URI(대/소문자 구분)**: 설정을 제공할 OMA-URI를 입력합니다.
-  - **값**: 입력한 OMA-URI와 연결할 값을 입력합니다.
-5. 완료되면 **프로필 만들기**로 돌아와서 **만들기**를 클릭합니다. 프로필이 만들어지고 프로필 목록에 표시됩니다.
+이 문서는 Windows Holographic for Business 장치의 사용자 지정 프로필을 만드는 방법을 보여줍니다. 권장된 OMA-URI 설정 목록도 포함합니다.
+
+## <a name="create-the-profile"></a>프로필 만들기
+
+1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
+2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+3. 다음 설정을 입력합니다.
+
+    - **이름**: `hololens custom profile` 등의 프로필의 이름을 입력합니다.
+    - **설명**: 설정에 대한 설명을 입력합니다.
+    - **플랫폼**: **Windows 10 이상**을 선택합니다.
+    - **프로필 유형**: **사용자 지정**을 선택합니다.
+
+4. **사용자 지정 OMA-URI 설정**에서 **추가**를 선택합니다. 다음 설정을 입력합니다.
+
+    - **이름**: 설정 목록에서 쉽게 식별할 수 있도록 OMA-URI 설정에 대한 고유한 이름을 입력합니다.
+    - **설명**: 설정에 대한 개요와 기타 중요한 모든 세부 정보를 제공하는 설명을 입력합니다.
+    - **OMA-URI**(대/소문자 구분): 설정으로 사용할 OMA-URI를 입력합니다.
+    - **데이터 형식**: 이 OMA URI 설정에 사용할 데이터 형식을 선택합니다. 옵션은 다음과 같습니다.
+
+        - 문자열
+        - 문자열(XML 파일)
+        - 날짜 및 시간
+        - 정수
+        - 부동 소수점
+        - 부울
+        - Base64(파일)
+
+    - **값**: 입력한 OMA-URI와 연결할 데이터를 입력합니다. 값은 선택한 데이터 형식에 따라 달라집니다. 예를 들어 **날짜 및 시간**을 선택한 경우 날짜 선택에서 값을 선택합니다.
+
+    일부 설정을 추가한 후 **내보내기**를 선택할 수 있습니다. **내보내기**는 쉼표로 구분된 값(.csv) 파일에서 추가한 모든 값의 목록을 만듭니다.
+
+5. **확인**을 선택하여 변경 내용을 저장합니다. 필요에 따라 더 많은 설정을 계속 추가합니다.
+6. 끝나면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **장치 구성 - 프로필** 목록에 나타납니다.
 
 ## <a name="recommended-custom-settings"></a>권장되는 사용자 지정 설정
 
@@ -145,6 +163,12 @@ ms.locfileid: "47403581"
 
 ## <a name="find-the-policies-you-can-configure"></a>구성할 수 있는 정책 찾기
 
-[Windows Holographic에서 지원되는 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)에서 Windows Holographic이 지원하는 모든 CSP(구성 서비스 공급자)의 전체 목록을 찾을 수 있습니다. 일부 Windows Holographic 버전과 호환되지 않는 설정도 있습니다. Windows 아티클의 표에서 각 CSP에 지원되는 버전을 알려줍니다.
+[Windows Holographic에서 지원되는 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)에서 Windows Holographic이 지원하는 모든 CSP(구성 서비스 공급자)의 전체 목록을 찾을 수 있습니다. 일부 Windows Holographic 버전과 호환되지 않는 설정도 있습니다. [Windows Holographic에서 지원되는 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)의 표에는 각 CSP에 지원되는 버전을 나열합니다.
 
-또한, Intune은 아티클에 나열된 설정 모두를 지원하지 않습니다. 원하는 설정을 Intune에서 지원하는지 확인하려면 해당 설정에 대한 아티클을 엽니다. 각 설정 페이지에 지원되는 작업이 표시되어 있습니다. Intune으로 작업하려면 설정에서 **추가** 또는 **대체** 작업을 지원해야 합니다.
+또한, Intune은 [Windows Holographic에서 지원되는 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)에 나열된 설정 모두를 지원하지 않습니다. 원하는 설정을 Intune에서 지원하는지 확인하려면 해당 설정에 대한 아티클을 엽니다. 각 설정 페이지는 지원되는 작업이 표시됩니다. Intune으로 작업하려면 설정에서 **추가** 또는 **대체** 작업을 지원해야 합니다.
+
+## <a name="next-steps"></a>다음 단계
+
+프로필이 만들어지지만 아직 아무것도 하지 않습니다. 그런 다음, [프로필을 할당합니다](device-profile-assign.md).
+
+[Windows 10 장치](custom-settings-windows-10.md)에 대한 사용자 지정 프로필을 만드는 방법을 참조하세요.

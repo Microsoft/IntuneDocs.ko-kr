@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: a13d9b6ee37dc42e90d7c99538c9fd2e5e0d1b7b
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652141"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001595"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>Microsoft Intune 초기 버전 - 2018년 10월
 
@@ -79,8 +79,8 @@ Intune의 iOS 메일 프로필은 iOS 12 OAuth를 지원합니다. 이 기능을
 1. 이미 대상으로 지정된 장치에 새 프로필이 발행됩니다.
 2. 최종 사용자에게 자격 증명을 묻는 메시지가 다시 표시됩니다.
 
-### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Android, Android Enterprise에 대한 새 “필수 암호 유형” 기본 설정<!-- 2649963 -->
-새 규정 준수 정책을 만들 때(플랫폼 > 시스템 보안에서 **Intune** > **장치 규정 준수** > **정책** > **정책 만들기** > **Android** 또는 **Android Enterprise** 선택) **필수 암호 유형**의 기본값이 장치 기본값에서 최소 숫자 값으로 변경됩니다. 이는 Android 및 Android Enterprise에 적용됩니다
+### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Android, Android 엔터프라이즈에 대한 새 “필수 암호 유형” 기본 설정<!-- 2649963 -->
+새 규정 준수 정책을 만들 때(플랫폼 > 시스템 보안에서 **Intune** > **장치 규정 준수** > **정책** > **정책 만들기** > **Android** 또는 **Android 엔터프라이즈** 선택) **필수 암호 유형**의 기본값이 장치 기본값에서 최소 숫자 값으로 변경됩니다. 이는 Android 및 Android 엔터프라이즈에 적용됩니다
 
 ### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Autopilot 프로필을 모든 장치 가상 그룹에 할당 <!--2715522 -->
 Autopilot 프로필을 모든 장치 가상 그룹에 할당할 수 있습니다. 그렇게 하려면 **장치 등록** > **Windows 등록** > **배포 프로필** > 프로필 선택 > **할당**을 선택하고 **할당 대상**에서 **모든 장치**를 선택합니다.
@@ -118,8 +118,9 @@ Intune 방문 페이지의 업데이트에는 데이터 시각화 개선을 위�
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>다른 MDM에서 사용하는 Apple VPP 토큰 <!-- 1488946 -->
 Intune과 다른 MDM에서 모두 Apple VPP(대량 구매 프로그램) 토큰을 사용하고 있으면 Intune에서 세부 정보를 검색하고 표시합니다.
 
-### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>iOS 버전 번호 및 빌드 번호 표시 <!-- 1892471 -->
-**준수 준수** > **장치 준수**에서 iOS 운영체제 버전이 표시됩니다. 향후 업데이트에서는 빌드 번호도 표시됩니다.
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>iOS 및 macOS 버전 번호와 빌드 번호가 <!-- 1892471 -->로 표시됩니다.
+**장치 준수** > **장치 준수**에서 iOS 및 macOS 운영체제 버전이 표시됩니다. 향후 업데이트에서는 두 플랫폼에 대한 빌드 번호도 표시됩니다.
+
 보안 업데이트가 릴리스되는 경우 Apple에서는 일반적으로 버전 번호는 그대로 유지하지만 빌드 번호는 업데이트합니다. 빌드 번호가 표시되면 취약성 업데이트가 설치되어 있는지 쉽게 확인할 수 있습니다.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>장치 준수 대시보드에 사용 중지된 장치가 있음 <!-- 1981119 -->

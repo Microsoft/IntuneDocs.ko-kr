@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c94357d90f89e77be03df0db9ba9e2d89836623b
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799526"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136967"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>장치 등록 없이 관리되는 앱용 앱 구성 정책 추가
 
@@ -39,7 +39,7 @@ ms.locfileid: "48799526"
       Azure Portal에 표시되는 프로필의 설명입니다.
     - **장치 등록 유형**  
       **앱 관리**를 선택합니다.
-6. **연결된 앱**을 선택하여 구성할 앱을 선택합니다. 승인했으며 Intune과 동기화한 앱을 앱 목록에서 선택합니다.
+6.  **연결된 앱** 을 선택하여 구성할 앱을 선택합니다. 승인했으며 Intune과 동기화한 앱을 앱 목록에서 선택합니다.
 7. 앱에서 지원하는 각 구성 설정의 경우 **이름** 및 **값**을 입력하고 줄임표(**...**)를 선택합니다.  
     구성을 삭제하려면 줄임표(**...**)를 선택하고 **삭제**를 선택합니다.  
     
@@ -51,13 +51,13 @@ Intune은 특정 토큰을 생성하여 관리되는 응용 프로그램에 보�
 
 Intune은 구성 설정에서 다음과 같은 토큰 형식을 지원합니다. 다른 사용자 지정 키/값 쌍은 지원되지 않습니다.
 
-- \{\{userprincipalname\}\}—예: **John@contoso.com**
-- \{\{mail\}\}—예: **John@contoso.com**
-- \{\{partialupn\}\}—예: **John**
-- \{\{accountid\}\}—예: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{userid\}\}—예: **3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\}—예: **John Doe**
-- \{\{PrimarySMTPAddress\}\}—예: **testuser@ad.domain.com** 
+- \{\{userprincipalname\}\}—예: John@contoso.com
+- \{\{mail\}\}—예: John@contoso.com
+- \{\{partialupn\}\}—예: John
+- \{\{accountid\}\}—예: fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- \{\{userid\}\}—예: 3ec2c00f-b125-4519-acf0-302ac3761822
+- \{\{username\}\}—예: John Doe
+- \{\{PrimarySMTPAddress\}\}—예: testuser@ad.domain.com
 
 
 > [!Note]  

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 9aac9d7523673d6907bf75bf91e1e9802a381ec2
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905311"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149056"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune에서 메일 설정을 구성하는 방법
 
@@ -67,9 +67,13 @@ ms.locfileid: "37905311"
 
 ## <a name="further-information"></a>추가 정보
 
-### <a name="remove-an-email-profile"></a>메일 프로필 제거
+## <a name="remove-an-email-profile"></a>메일 프로필 제거
 
-장치에서 메일 프로필을 제거하려면 할당을 편집하고 장치가 멤버로 포함된 그룹을 모두 제거합니다. 이메일 프로필이 장치에 있는 유일한 메일 프로필인 경우 이 방식으로 이메일 프로필을 제거할 수 없습니다.
+이메일 프로필은 사용자 그룹이 아닌 장치 그룹에 할당됩니다. 장치에 이메일 프로필이 하나뿐인 경우에도 장치에서 이메일 프로필을 제거하는 여러 가지 방법이 있습니다.
+
+- **옵션 1**: 이메일 프로필을 열고(**장치 구성** > **프로필**) **할당**을 선택합니다. **포함** 탭은 프로필에 할당된 그룹을 보여줍니다. 그룹을 마우스 오른쪽 단추로 클릭하고 **제거**를 선택합니다. 변경 내용을 **저장**합니다.
+
+- **옵션 2**: [장치를 초기화 또는 사용 중지합니다](devices-wipe.md). 이러한 작업을 통해 데이터 및 설정을 선택적으로 또는 완전히 제거할 수 있습니다.
 
 ### <a name="securing-email-access"></a>메일 액세스 보안
 

@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 57c69c1610168aa25d33c8124c38f585eb715251
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643028"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225457"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 및 앱 보호에 대한 질문과 대답
 
@@ -181,6 +181,15 @@ Intune 앱 보호 정책은 장치를 관리하지 않고는 iOS 공유 확장�
 액세스에 대한 Intune 앱 보호 정책은 최종 사용자 장치가 회사 계정에서 대상 앱에 액세스하려 하기 때문에 해당 장치에 지정된 순서에 따라 적용됩니다. 일반적으로 초기화가 우선 적용되고, 차단이 적용된 다음, 무시할 수 있는 경고가 적용됩니다. 예를 들어 특정 사용자/앱에 적용되는 경우 사용자의 액세스를 차단하는 최소 iOS 운영 체제 설정 적용 후 iOS 버전을 업그레이드하도록 사용자에게 경고하는 최소 iOS 운영 체제 설정이 적용됩니다. 따라서 IT 관리자가 최소 iOS 운영 체제를 11.0.0.0으로, 최소 iOS 운영 체제(경고에서만 해당)를 11.1.0.0으로 구성하는 반면 앱에 액세스하려는 장치는 iOS 10인 시나리오에서 최종 사용자는 결국 액세스 차단을 야기하는 최소 iOS 운영 체제에 대한 더 제한적인 설정을 기반으로 차단되게 됩니다.
 
 다른 유형의 설정을 처리할 경우 Intune 앱 SDK 버전 요구 사항이 우선하고 이어 앱 버전 요구 사항, iOS 운영 체제 버전 요구 사항이 처리됩니다. 그런 다음, 동일한 순서로 설정의 모든 형식에 대한 모든 경고를 확인합니다. Intune 앱 SDK 버전 요구 사항은 필수 차단 시나리오의 경우 Intune 제품 팀의 안내에 따라 구성하는 것이 좋습니다.
+
+## <a name="app-protection-policies---policy-refresh"></a>앱 보호 정책 - 정책 새로 고침
+- 앱은 30분마다 APP 서비스에 체크 인합니다.
+- 30분 임계값은 타이머를 기반으로 합니다.
+    - 앱이 30분에 활성화된 경우 30분에 체크 인합니다.
+    - 앱이 30분에 중지 중인 경우 다음 포커스에 체크 인합니다.
+- 사용자에게 할당된 정책이 없으면 8시간마다 체크 인됩니다.
+- Intune 라이선스가 할당되지 않은 경우, 24시간마다 체크 인됩니다.
+
 
 ## <a name="see-also"></a>참고 항목
 - [Intune 계획 구현](planning-guide-onboarding.md)

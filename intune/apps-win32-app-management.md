@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune에 Win32 앱 추가
 titlesuffix: ''
-description: Microsoft Intune에 Win32 앱을 추가 및 관리하는 방법을 알아보세요.
+description: Microsoft Intune으로 Win32 앱을 추가, 제공 및 관리하는 방법을 알아보세요. 이 항목에서는 Intune Win32 앱 제공 및 관리 기능에 대한 개요와 Win32 앱 문제 해결 정보를 제공합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357107"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959590"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 독립 실행형 - Win32 앱 관(공개 미리 보기)
 
-Intune 독립 실행형은 보다 나은 Win32 앱 관리 기능을 제공합니다. 클라우드로 연결된 고객은 Win32 앱 관리를 위한 Configuration Manager를 사용할 수 있지만, Intune 전용 고객은 Win32 LOB(사업 부문) 앱에 대한 보다 나은 관리 기능을 사용할 수 있습니다. 이 문서에서는 Intune Win32 앱 관리 기능과 문제 해결 정보에 대한 개요를 제공합니다.
+Intune 독립 실행형은 보다 나은 Win32 앱 관리 기능을 제공합니다. 클라우드로 연결된 고객은 Win32 앱 관리를 위한 Configuration Manager를 사용할 수 있지만, Intune 전용 고객은 Win32 LOB(사업 부문) 앱에 대한 보다 나은 관리 기능을 사용할 수 있습니다. 이 항목에서는 Intune Win32 앱 관리 기능과 문제 해결 정보에 대한 개요를 제공합니다.
 
 ## <a name="prerequisites-for-public-preview"></a>공개 미리 보기의 필수 구성 요소
 

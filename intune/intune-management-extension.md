@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: af80dd180e8fdbaeb633bdffaad90ccdf02d5380
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289026"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959573"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 장치를 위한 Intune에서의 PowerShell 스크립트 관리
 Intune 관리 확장을 사용하면 Windows 10 장치에서 실행되도록 Intune에서 PowerShell 스크립트를 업로드할 수 있습니다. 관리 확장은 Windows 10 MDM(모바일 장치 관리) 기능을 보완하며 사용자가 최신 관리로 더 손쉽게 이행할 수 있도록 합니다.
@@ -33,7 +33,7 @@ Intune 관리 확장은 Windows 10 MDM의 기본 기능을 보완합니다. 필�
 
 ## <a name="prerequisites"></a>전제 조건
 Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다.
-- 장치가 Azure AD에 연결되어야 합니다. 하이브리드 AD 연결 장치는 여기에 포함되지 않습니다.
+- 장치가 Azure AD에 연결되어야 합니다. Intune 관리 확장은 Azure Active Directory 조인, 하이브리드 도메인 조인 및 공동 관리하는 등록 Windows 장치를 지원합니다.
 - 장치에서 Windows 10 버전 1607 이상을 실행해야 합니다.
 - [Azure AD에서 자동 MDM 등록을 사용](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)하도록 설정해야 하며, 장치가 Intune에 자동으로 등록되어야 합니다.
 
