@@ -29,12 +29,14 @@ items:
     href: quickstart-create-user.md
   - name: 그룹 만들기
     href: quickstart-create-group.md
-  - name: 정책 만들기
-    href: quickstart-create-policy.md
-  - name: 장치 암호 길이 설정
-    href: quickstart-set-password-length-android.md
   - name: 자동 등록 설정
     href: quickstart-setup-auto-enrollment.md
+  - name: Windows 10 장치 등록
+    href: quickstart-enroll-windows-device.md
+  - name: 장치 준수 정책 만들기
+    href: quickstart-set-password-length-android.md
+  - name: 비규격 장치로 알림 보내기
+    href: quickstart-send-notification.md
   - name: 사용자 지정 역할 만들기 및 할당
     href: quickstart-create-custom-role.md
   - name: 메일 장치 프로필 만들기
@@ -839,9 +841,9 @@ items:
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: 용어 설명
     href: intune-glossary.md
-ms.openlocfilehash: 58768bc109a5c0e079779959a7d176565582a138
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: b103a34f2e937d528e1ac350b190a112b598bd68
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50971434"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225886"

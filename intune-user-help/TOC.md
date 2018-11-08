@@ -107,11 +107,13 @@
 #### [내 macOS 버전이 아직 지원되지 않음](your-macos-version-isnt-yet-supported.md)
 #### [macOS 장치 업데이트](you-need-to-update-your-macos-device.md)
 #### [회사 포털 오류 제출](send-errors-macos.md)
+#### [다른 사용자에게 할당된 장치](unable-to-get-macOS-device-managed.md)
 #### [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-macos.md)
 #### [이 장치는 약간 다릅니다.](device-little-different-jamf.md)
 #### [일련 번호 찾기](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [장치 식별](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 #### [장치 제한에 도달함](device-limit-wpj-macos.md)
+#### [MacOS VM 관리에 문제 발생](unable-to-get-macOS-device-managed.md) 
 
 ## [Windows 장치 사용](using-your-windows-device-with-intune.md)
 ### [Windows 10 장치를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
