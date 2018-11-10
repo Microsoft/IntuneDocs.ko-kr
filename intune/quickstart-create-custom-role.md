@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581666"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410772"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>빠른 시작: 사용자 지정 역할 만들기 및 할당
 
@@ -47,7 +47,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 보안 운영자가 새 권한을 사용하려면, 먼저 보안 사용자가 포함된 그룹에 역할을 할당해야 합니다.
 
-1. Intune에서 **역할** > **모든 역할** > **원격 장치 지원 센터**를 선택합니다.
+1. Intune에서 **역할** > **모든 역할** > **보안 작업**을 선택합니다.
 2. **Intune 역할** 아래에서 **할당** > **할당**을 선택합니다.
 3. **할당 이름** 상자에 *보안 작업*을 입력합니다.
 4. **멤버(그룹)** > **추가**를 선택합니다.

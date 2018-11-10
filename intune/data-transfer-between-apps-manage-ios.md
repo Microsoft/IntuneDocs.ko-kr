@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23e18ef2d7870a22699d898ad937febf9e61b804
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 491d2884f73d9178f54b6b2861bfe6f248c41c63
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231665"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236563"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법
 ## <a name="manage-ios-apps"></a>IOS 앱 관리
@@ -37,7 +37,7 @@ iOS 장치의 **관리에서 열기** 기능은 **MDM 채널**을 통해 장치�
 
 -   **직원 소유 장치는 MDM 솔루션에서 관리되지 않음:** 앱 보호 정책 설정을 **앱이 데이터를 전송하도록 허용: 정책 관리된 앱**으로 설정할 수 있습니다. 정책 관리된 앱의 다음에서 열기 동작에서는 다른 정책 관리된 앱만 공유 옵션으로 표시됩니다. 사용자가 정책으로 보호된 파일을 기본 메일에서 OneDrive의 첨부 파일로 보내려고 하는 경우 해당 파일을 읽을 수 없습니다.
 
--   **Intune에서 관리되는 장치:** Intune에 등록된 장치의 경우 앱 보호 정책이 있는 앱과 Intune을 통해 배포된 다른 관리되는 iOS 앱 간의 데이터 전송은 자동으로 허용됩니다. 앱 보호 정책이 있는 앱 간에 데이터 전송을 허용하려면 **앱에서 관리되는 앱으로만 데이터 전송 허용** 설정을 사용하도록 설정합니다. **관리에서 열기** 기능을 사용하여 Intune을 통해 배포된 앱 간의 데이터 전송을 제어할 수 있습니다.   
+-   **Intune에서 관리되는 장치:** Intune에 등록된 장치의 경우 앱 보호 정책이 있는 앱과 Intune을 통해 배포된 다른 관리되는 iOS 앱 간의 데이터 전송은 자동으로 허용됩니다. 데이터가 다른 앱으로 전송할 수 있도록 허용하는 방법을 지정하려면 **앱이 다른 앱으로 데이터를 전송할 수 있도록 허용** 설정을 사용하고 기본 설정 수준의 공유를 선택합니다. 앱이 다른 앱에서 데이터를 수신할 수 있도록 허용하는 방법을 지정하려면 **앱이 다른 앱에서 데이터를 수신할 수 있도록 허용** 설정을 사용하고 기본 설정 수준의 데이터 수신을 선택합니다. **관리에서 열기** 기능을 사용하여 Intune을 통해 배포된 앱 간의 데이터 전송을 제어할 수 있습니다. 앱 데이터를 수신하고 공유하는 방법에 대한 자세한 내용은 [데이터 재배치 설정](app-protection-policy-settings-ios.md#data-relocation-settings)을 참조하세요.   
 
 -   **타사 MDM 솔루션으로 관리되는 장치:** iOS **관리에서 열기** 기능을 사용하여 관리되는 앱으로만 데이터 전송을 제한할 수 있습니다.
 타사 MDM 솔루션을 사용하여 배포하는 앱도 Intune에서 구성한 앱 보호 정책과 연결되도록 하려면 [사용자 UPN 설정 구성](#configure-user-upn-setting-for-third-party-emm) 연습에서 설명한 대로 사용자 UPN 설정을 구성해야 합니다.  사용자 UPN 설정으로 앱을 배포하면 최종 사용자가 회사 계정을 사용하여 로그인할 때 앱 보호 정책이 앱에 적용됩니다.

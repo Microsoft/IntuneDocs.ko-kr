@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391572"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915702"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune에서 장치 준수 정책 시작
 
@@ -153,7 +153,7 @@ Remember that you need to implement conditional access policies in addition to c
 ## <a name="ways-to-deploy-device-compliance-policies"></a>장치 준수 정책을 배포하는 방법
 준수 정책을 사용자 그룹의 사용자 또는 장치 그룹의 장치에 배포할 수 있습니다. 준수 정책을 사용자에게 배포하면 사용자의 모든 장치에서 준수가 확인됩니다. Windows 10 버전 1803 이상 장치에서 기본 사용자가 장치를 등록하지 않은 *경우* 장치 그룹에 배포하는 것이 좋습니다. 이 시나리오에서 장치 그룹을 사용하면 준수 보고에 도움이 됩니다.
 
-기본 **준수 정책 설정**(Azure Portal > 장치 준수)에는 다음이 포함됩니다.
+일단의 기본 제공 **준수 정책 설정**(Azure Portal > 장치 준수)은 Intune에 등록된 모든 장치에서 평가됩니다. 확인할 수 있습니다.
 
 - **준수 정책 없이 장치를 다음으로 표시**: 이 속성에는 두 개의 값이 있습니다.
 
@@ -171,7 +171,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 - **준수 상태 유효 기간(일)**: 장치가 모든 수신된 준수 정책에 대한 상태를 보고하는 시간 간격을 입력합니다. 이 기간 내에 상태를 반환하지 않는 장치는 비준수로 처리됩니다. 기본값은 30일입니다.
 
-모든 장치에는 **기본 장치 준수 정책**(Azure Portal > 장치 준수 > 정책 준수)이 있습니다. 이 기본 정책을 사용하여 이러한 설정을 모니터링합니다.
+모든 장치에는 **기본 제공 장치 준수 정책**(Azure Portal > 장치 준수 > 정책 준수)이 있습니다. 이 기본 제공 정책을 사용하여 이러한 설정을 모니터링합니다.
 
 정책이 배포된 후 모바일 장치가 정책을 수신하기까지 걸리는 시간에 대해 알아보려면 [ 장치 프로필 문제 해결](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)을 참조하세요.
 

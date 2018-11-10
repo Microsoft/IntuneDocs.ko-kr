@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075849"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025171"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune 앱 관리란?
 
@@ -94,7 +94,7 @@ Intune은 앱을 실행하려는 장치에서 필요한 앱을 얻도록 도와�
 - **앱 라이선스**: 앱 스토어에서 대량 구매 앱을 보고, 할당하고, 모니터링할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
     - [iOS VPP(대량 구매 프로그램) 앱](vpp-apps-ios.md)
     - [비즈니스용 Microsoft Store 대량 구매 앱](windows-store-for-business.md)
-- **검색된 앱**: Intune에서 할당하고 장치에 설치된 모든 앱을 표시합니다. 자세한 내용은 [Microsoft Intune으로 앱 정보 및 할당을 모니터링 하는 방법](apps-monitor.md#device-and-user-status-graphs)을 참조하세요.
+- **검색된 앱**: Intune에서 할당되었거나 장치에 설치된 앱을 표시합니다. 자세한 내용은 [Microsoft Intune을 사용하여 장치 세부 정보 보기](device-inventory.md)를 참조하세요.
 - **앱 설치 상태**: 만든 앱 할당의 상태를 표시합니다. 자세한 내용은 [Microsoft Intune으로 앱 정보 및 할당을 모니터링 하는 방법](apps-monitor.md#device-and-user-status-graphs)을 참조하세요.
 - **앱 보호 상태**: 선택한 사용자에 대한 앱 보호 정책의 상태를 표시합니다.
 - **감사 로그**: 모든 IT 관리자의 Intune 앱 관련 활동을 표시합니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,25 +14,25 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d6d67454409cf8a8749d28cba6ac76f591da9e3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: ba5035dfcbab4b938b1ed31786ad0f70dceb2d8c
+ms.sourcegitcommit: b165a38b5d6de396f2edab6411742cb50a9b8816
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231290"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50253473"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune을 사용한 앱 기반 조건부 액세스 정책 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클에서는 승인된 앱 목록에 포함된 앱에 대해 앱 기반 조건부 액세스 정책을 설정하는 방법을 설명합니다. 승인된 앱 목록은 Microsoft에서 테스트한 앱으로 구성됩니다.
+승인된 앱 목록에 포함된 앱에 대해 앱 기반 조건부 액세스 정책을 설정합니다. 승인된 앱 목록은 Microsoft에서 테스트한 앱으로 구성됩니다.
 
 > [!IMPORTANT]
 > 이 문서는 앱 기반 조건부 액세스 정책을 추가하는 단계를 안내합니다. 승인된 앱 목록에서 SharePoint Online, Microsoft Teams 및 Microsoft Exchange Online 등의 앱을 추가할 때 동일한 단계를 사용할 수 있습니다.
 
 ## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Azure AD 워크로드에서 앱 기반 조건부 액세스 정책 만들기
 
-IT 관리자는 Azure AD 워크로드에서 앱 기반 조건부 액세스 정책을 만들 수 있습니다. 그러면 Azure와 Intune 워크로드 간을 전환할 필요가 없으므로 편리합니다.
+IT 관리자는 Azure AD 워크로드에서 앱 기반 조건부 액세스 정책을 만들 수 있습니다. 이 액세스로 인해 Azure와 Intune 워크로드 간을 전환할 필요가 없습니다.
 
 > [!IMPORTANT]
 > Intune Azure Portal에서 Azure AD 조건부 액세스 정책을 만들려면 Azure AD Premium 라이선스가 있어야 합니다.

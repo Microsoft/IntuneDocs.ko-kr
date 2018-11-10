@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune과 네트워크 액세스 제어 통합 - Azure | Microsoft Docs
+title: Microsoft Intune - Azure와 네트워크 액세스 제어 통합 | Microsoft Docs
 description: NAC(네트워크 액세스 제어) 솔루션은 Intune을 사용하여 장치에 대한 준수 및 등록을 확인합니다. NAC는 조건부 액세스를 사용한 특정 동작 및 작업을 포함합니다. 등록된 단계를 참조하고 파트너 솔루션 목록을 가져옵니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d78d850d68b8c6eb6e5b1282acddb3b93963ca4
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959522"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236155"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Intune과 NAC(네트워크 액세스 제어) 통합
 
@@ -27,7 +27,7 @@ Intune은 장치가 온-프레미스 리소스에 액세스하려고 할 때 조
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune 및 NAC 솔루션은 조직 리소스를 어떻게 보호하나요?
 
-NAC 솔루션은 액세스 제어 결정을 내리기 위해 Intune에서 장치 등록 및 규정 준수 상태를 확인합니다. 장치가 등록되지 않았거나 등록되었으나 Intune 장치 준수 정책을 준수하지 않을 경우 등록 및/또는 장치 준수 확인을 위해 Intune에 리디렉션되어야 합니다.
+NAC 솔루션은 액세스 제어 결정을 내리기 위해 Intune에서 장치 등록 및 규정 준수 상태를 확인합니다. 장치가 등록되지 않았거나 등록되었으나 Intune 장치 준수 정책을 준수하지 않을 경우 등록 또는 장치 준수 확인을 위해 Intune에 리디렉션되어야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -37,7 +37,7 @@ NAC 솔루션은 액세스 제어 결정을 내리기 위해 Intune에서 장치
 
 Intune에 능동적으로 동기화하는 장치는 **준수** / **비준수**에서 **동기화되지 않음**(또는 **알 수 없음**)으로 이동할 수 없습니다. **알 수 없음** 상태는 아직 준수 여부가 평가되지 않은 새로 등록된 장치에 예약되었습니다.
 
-리소스에 대한 액세스가 차단된 장치의 경우, 차단 서비스가 모든 사용자를 [관리 포털](https://portal.manage.microsoft.com)로 리디렉션하여 장치가 차단된 이유를 확인할 수 있도록 해야 합니다.  사용자가 이 페이지를 방문하면 해당 장치의 준수 여부가 동기적으로 재평가됩니다.
+리소스에 대한 액세스가 차단된 장치의 경우, 차단 서비스가 모든 사용자를 [관리 포털](https://portal.manage.microsoft.com)로 리디렉션하여 장치가 차단된 이유를 확인할 수 있도록 해야 합니다.  사용자가 이 페이지를 방문하면 해당 장치의 준수 여부가 동기적으로 재평가됩니다.
 
 ## <a name="nac-and-conditional-access"></a>NAC 및 조건부 액세스
 
@@ -55,9 +55,19 @@ NAC는 조건부 액세스와 연동하여 액세스 제어 결정을 제공합�
 4. 사용자가 회사 Wi-Fi 액세스 지점에 연결하거나 VPN 연결 요청을 수행합니다.
 5. NAC 파트너 솔루션이 장치 정보를 Intune에 전달하고 장치 등록 및 준수 상태를 Intune에 요청합니다.
 6. 장치가 규격이 아니거나 등록되지 않은 경우 NAC 파트너 솔루션이 사용자에게 등록하거나 장치 준수를 수정하도록 알립니다.
-7. 장치가 해당 준수 및/또는 등록 상태를 확인하려고 합니다.
+7. 해당하는 경우 장치가 규정 준수 및 등록 상태를 재확인하려고 합니다.
 8. 장치가 등록되고 규격이면 NAC 파트너 솔루션이 Intune에서 상태를 가져옵니다.
 9. 성공적으로 연결되어 장치가 회사 리소스에 액세스할 수 있게 됩니다.
+
+## <a name="use-nac-on-your-ios-devices"></a>iOS 장치에서 NAC 사용
+
+iOS의 다음 VPN 클라이언트에는 현재 네트워크 액세스 제어가 지원되지 않습니다.
+-   Cisco AnyConnect
+-   F5 Access
+-   Citrix SSO  
+
+Microsoft는 이러한 최신 클라이언트를 위한 NAC 솔루션을 출시하기 위해 파트너와 협업하고 있습니다. 솔루션이 준비되면 이 문서를 추가 세부 정보로 업데이트할 것입니다. 
+
 
 ## <a name="next-steps"></a>다음 단계
 

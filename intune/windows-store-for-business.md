@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d1fe40b1cb5a496b3111b2630718a3dd17486ab
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494016"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915753"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune을 사용하여 비즈니스용 Microsoft 스토어에서 구입한 앱을 관리하는 방법
 
@@ -89,4 +89,15 @@ Intune 콘솔에서 동기화를 사용하기 전에 관리 도구로 Intune을 
 * 충분한 라이선스를 보유한 사용자만 대상으로 하도록 현재 할당 범위를 줄입니다.
 * 비즈니스용 Microsoft 스토어에서 더 많은 앱 사본을 구입합니다.
 
+## <a name="remove-apps"></a>앱 제거
 
+비즈니스용 Microsoft Store에서 동기화된 앱을 제거하려면 비즈니스용 Microsoft Store에 로그인하여 앱을 반환해야 합니다.
+
+![앱 세부 정보 제거의 스크린샷](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> 개인 스토어에서 앱의 가시성을 제거해도 Intune에서 동기화되지 않습니다. 앱을 반환해야 합니다.
+
+## <a name="next-steps"></a>다음 단계
+
+- [Microsoft Intune을 사용하여 대량 구매 앱 및 전자책 관리](vpp-apps.md)

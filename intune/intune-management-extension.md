@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af80dd180e8fdbaeb633bdffaad90ccdf02d5380
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959573"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236342"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 장치를 위한 Intune에서의 PowerShell 스크립트 관리
 Intune 관리 확장을 사용하면 Windows 10 장치에서 실행되도록 Intune에서 PowerShell 스크립트를 업로드할 수 있습니다. 관리 확장은 Windows 10 MDM(모바일 장치 관리) 기능을 보완하며 사용자가 최신 관리로 더 손쉽게 이행할 수 있도록 합니다.
@@ -56,7 +56,8 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
 
 > [!NOTE]
 > - PowerShell 스크립트는 컴퓨터 그룹에 적용할 수 없습니다.
-> - PowerShell 스크립트는 Azure AD(Active Directory) 사용자가 장치에 로그인한 경우에만 장치에서 실행됩니다.
+> - 최종 사용자는 PowerShell 스크립트를 실행할 장치에 로그인할 필요가 없습니다. 
+> - Intune의 PowerShell 스크립트는 AAD 장치 보안 그룹을 대상으로 할 수 있습니다.
 
 Intune 관리 확장은 1시간마다 Intune으로 동기화합니다. Azure AD 그룹에 정책이 지정되면 PowerShell 스크립트가 실행되고 실행 결과가 보고됩니다. 
  

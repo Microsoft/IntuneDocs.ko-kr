@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312952"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679307"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>일반적인 문제와 Microsoft Intune에서 장치 프로필을 사용한 해결
 
@@ -130,9 +130,9 @@ Intune은 Apple 구성 파일 또는 사용자 지정 OMA-URI(Open Mobile Allian
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>장치 제한 프로필을 변경했지만 변경 내용이 적용되지 않습니다.
 Windows Phone은 MDM 또는 EAS를 사용해 보안 정책을 설정하면 이 정책의 보안 강도가 줄어드는 것을 허용하지 않습니다. 예를 들어 **문자 암호의 최소 수**를 8로 설정한 다음, 4로 줄이려고 합니다. 더 제한적인 프로필이 이미 장치에 적용되었습니다.
 
-장치 플랫폼에 따라서는 프로필을 덜 안전한 값으로 변경하려는 경우 보안 정책을 다시 설정합니다. 예를 들어, 데스크톱의 Windows에서는, 오른쪽에서 안쪽으로 살짝 밀어 **설정** > **제어판**을 선택합니다. **사용자 계정** 애플릿을 선택합니다.
+프로필을 덜 안전한 값으로 변경하려는 경우 보안 정책을 다시 설정합니다. 예를 들어, 데스크톱의 Windows 8.1에서 오른쪽에서 안쪽으로 살짝 밀어 **설정** > **제어판**을 선택합니다. **사용자 계정** 애플릿을 선택합니다. 왼쪽 탐색 메뉴에서 (아래쪽에) **보안 정책 재설정** 링크가 있습니다. 이를 선택한 다음, **정책 다시 설정**을 선택합니다.
 
-왼쪽 탐색 메뉴에서 (아래쪽에) **보안 정책 재설정** 링크가 있습니다. 이를 선택한 다음, **정책 다시 설정**을 선택합니다. Android, Windows Phone 8.1 이상 및 iOS와 같은 기타 MDM 장치의 경우 제한적인 프로필을 적용할 수 있도록 사용을 중지하고 서비스에 다시 등록해야 해야 합니다.
+Android, Windows Phone 8.1 이상, iOS 및 Windows 10과 같은 기타 MDM 장치의 경우 제한적이지 않은 프로필을 적용할 수 있도록 사용을 중지하고 서비스에 다시 등록해야 해야 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 추가 도움이 필요하십니까? [Microsoft Intune에 대한 지원을 받는 방법](get-support.md)을 참조하십시오.

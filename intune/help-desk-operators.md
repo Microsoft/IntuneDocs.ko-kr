@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
-ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
+ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229078"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236665"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>문제 해결 포털을 사용하여 회사 내 사용자 지원
 
@@ -96,13 +96,14 @@ Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리�
 | 소유권          | 장치 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다.                                               |
 | Intune 준수   | 장치 유형의 이름                                                                                                     |
 | Azure AD 준수 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
+| 앱 설치 | 앱 설치 실패 또는 성공이 개별 장치에서 발생했는지를 나타냅니다. |
 | OS                 | 장치에 설치된 운영 체제                                                                                       |
 | OS 버전         | 장치의 운영 체제 버전 번호                                                                                  |
 | 마지막 체크 인      | 장치 유형의 이름                                                                                                     |
 
 ### <a name="app-protection-status"></a>앱 보호 상태
 
-앱 보호 정책은 EMS(Enterprise Mobility Solution) 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
+앱 보호 정책은 EMS(Enterprise Mobility Solution) 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
 
 | 속성    | 설명                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -115,7 +116,7 @@ Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리�
 
 ## <a name="app-protection-policies-reference"></a>앱 보호 정책 참조
 
-앱 보호 정책은 EMS 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
+앱 보호 정책은 EMS 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
 
 ### <a name="properties"></a>속성
 
@@ -180,7 +181,7 @@ Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리�
 
 ### <a name="app-protection-policies"></a>앱 보호 정책
 
-앱 보호 정책은 EMS 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
+앱 보호 정책은 EMS 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
 
 | 속성    | 설명                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -193,7 +194,7 @@ Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리�
 
 ## <a name="configuration-policies-reference"></a>구성 정책 참조
 
-앱 구성 정책은 공급업체별 구성을 통해 모바일 앱에서 사용할 수 있습니다. 
+앱 구성 정책은 공급업체별 구성을 통해 모바일 앱에서 사용할 수 있습니다. 
 
 ### <a name="properties"></a>속성
 
@@ -226,7 +227,7 @@ Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리�
 
 ### <a name="app-protection-policies"></a>앱 보호 정책
 
-앱 보호 정책은 EMS 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
+앱 보호 정책은 EMS 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
 
 | 속성    | 설명                                                                           |
 |-------------|---------------------------------------------------------------------------------------|

@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d8784d560d37068fd4559a2e67ecf35044ee498e
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: da10455cd6dc3cfbda23726832c539c206aea18c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494050"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025154"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Intune에 Microsoft Store 앱 추가
 
@@ -54,7 +54,7 @@ ms.locfileid: "46494050"
 8. **확인**을 선택합니다.
 9. **추가**를 선택합니다.
 
-만든 앱이 앱 목록에 표시되며, 여기서 이 앱을 선택한 그룹에 할당할 수 있습니다. 
+만든 앱이 앱 목록에 표시되며, 여기서 이 앱을 선택한 그룹에 할당할 수 있습니다. Microsoft Store 앱은 **등록된 장치에 사용 가능**(사용자가 회사 포털 앱 또는 웹 사이트에서 앱을 설치함) 할당 유형의 그룹에만 할당할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 - [그룹에 앱 할당](apps-deploy.md)

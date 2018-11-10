@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187787"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410840"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune에 대한 지원을 받는 방법
 
@@ -96,6 +96,64 @@ Azure Portal 내에서 지원 요청을 볼 수 있습니다. 확인 방법은 �
 1. Intune 관리자 자격 증명으로 Azure(<https://portal.azure.com>)에 로그인하고 포털의 오른쪽 위에 있는 <strong>?</strong> 아이콘을 선택한 다음 <strong>도움말+지원</strong>을 선택하여 [Azure 도움말+지원](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 페이지로 이동합니다.
 
 2. **도움말 + 지원** 페이지에서 **최근 지원 요청** 목록을 보고 선택하여 추가 세부 정보를 볼 수 있습니다.
+
+
+## <a name="new-help-and-support-experience"></a>새 도움말 및 지원 환경 
+*다음 정보는 장치 관리 포털을 사용하는 경우에만 적용되고 새 도움말 및 지원 환경 출시의 일부입니다. 이 출시에 대한 참가자는 지원되는 Intune 테넌트 중에서 임의로 선택됩니다.*  
+
+Intune에 대한 도움말 및 지원에 대한 업데이트는 일부 테넌트에 대한 [Microsoft 365 장치 관리 포털](http://devicemanagement.microsoft.com)에서 사용할 수 있는 새로운 환경입니다. 이 새로운 환경은 [Microsoft 365 관리 센터](https://portal.office.com/AdminPortal/Home)에서 표시되는 환경과 비슷하고, 장치 관리 콘솔의 일부 위치에서 액세스되는 경우 이전 도움말 및 지원 환경을 대체합니다.  
+
+장치 관리 포털에서 **문제 해결** 블레이드를 제외한 **모든 서비스** > **장치 관리** 아래에 있는 모든 블레이드에서 **도움말 및 지원**을 선택하면 새로운 환경에 액세스합니다. 콘솔 배너의 오른쪽 위에 있는 **?** 옵션을 사용하여 **문제 해결**과 같은 다른 위치에서 도움말 및 지원에 액세스하는 경우 또는 서비스의 왼쪽 창 목록에서 **도움말 + 지원**을 선택하는 경우 원래 환경에 액세스합니다.  
+
+새 환경에서 다음 이미지와 같이 **도움이 필요하십니까?** 보기에 액세스할 수 있습니다.  
+![장치 관리 대시보드 및 도움이 필요하십니까? 페이지](./media/get-support/help-support-dashboard.png)
+
+이 보기에서 다음 작업을 수행할 수 있습니다.
+
+1. 도움이 필요한 특정 문제에 대한 [세부 정보 지정](#specify-details-about-an-issue)  
+2. 지정한 세부 정보를 기반으로 하는 관련 솔루션 및 [상황에 맞는 도움말 보기](#view-context-sensitive-help)  
+3. 이메일 또는 전화를 사용하여 [지원 받기](#get-support)  
+4. 이 새 워크플로를 사용하여 이전에 열었던 [지원 사례 보기](#view-support-cases)  
+
+### <a name="specify-details-about-an-issue"></a>문제에 대한 정보 지정
+새로운 환경에서 지원되는 위치에서 도움말 및 지원을 여는 경우 **도움이 필요하십니까?**  페이지가 열립니다. 이 페이지에서는 문제에 대한 정보를 지정할 수 있습니다. 세부 정보를 입력하면 콘솔에서는 사용할 키워드를 기반으로 하는 일반적인 쿼리를 제공합니다. 제안된 선택 항목을 선택하거나 고유한 문제 설명을 완료할 수 있습니다. 고유한 설명을 입력하려면 **도움말 보기**를 선택하여 제출합니다. 쿼리를 제출한 후에 콘솔에서는 문제를 해결 하는 데 도움이 될 수 있는 것이 아닌 상황에 맞는 정보를 반환합니다.
+
+제출할 수 있는 예제 쿼리는 다음과 같습니다.
+  
+- *iOS 장치를 복원할 수 없습니다.*  
+- *조건부 액세스 정책을 만들 수 없습니다.*  
+
+![도움이 필요하십니까? 페이지에서 문제 지정](./media/get-support/describe-the-issue.png)
+
+
+### <a name="view-context-sensitive-help"></a>상황에 맞는 도움말 보기
+제안된 선택 항목을 선택하거나 고유한 쿼리를 제출한 후에 **솔루션 보기**에 상황에 맞는 결과가 나타납니다. 이러한 결과에는 Intune 관련 자가 진단 지침 및 쿼리 조건에 따라 웹 검색에서 반환된 추가 결과가 모두 포함됩니다.  
+![View-results](./media/get-support/view-results.png)
+
+### <a name="get-support"></a>지원 받기  
+자가 진단 또는 웹 기반 지침이 문제를 해결하는 데 도움이 되지 않으면 콘솔을 사용하여 이메일 또는 전화 지원 문제를 제기할 수 있습니다.  
+**도움이 필요하십니까?** 페이지에서 사용할 옵션을 선택합니다.  
+
+- 이메일 요청에서 이메일 주소를 입력하고 필요에 따라 제출에 첨부 파일을 추가할 수 있습니다. **보내기**를 선택하여 요청을 엽니다.  
+
+  ![이메일 요청](./media/get-support/email-support.png)
+  
+- 전화 요청에서 전화 번호를 입력합니다. 필요에 따라 이메일 주소를 포함하고 제출에 대한 첨부 파일을 추가할 수 있습니다. 전화 걸기를 선택하여 요청을 제출합니다.  
+
+   ![전화 요청](./media/get-support/phone-support.png)
+
+### <a name="view-support-cases"></a>지원 사례 보기
+사용자가 만든 지원 인시던트를 보려면 기록 단추를 선택합니다.  
+
+![지원 사례 보기](./media/get-support/view-support-tickets.png)
+
+- 새 워크플로 사용하여 열 수 있는 지원 사례만 이 워크플로 내에 표시됩니다. 해당 지원 사례를 보려면 새 환경의 일부인 장치 관리 콘솔에서 도움말 및 지원 보기를 사용합니다. 이러한 사례에는 8자리 번호가 포함됩니다. Microsoft 365 관리 센터에서 이러한 사례를 볼 수도 있습니다.  
+
+- 계정이 새 도움말 및 지원 환경에 추가되기 전에 열리는 사례는 변경되지 않습니다. 해당 사용 사례를 보려면 새 환경 출시의 일부가 아닌 도움말 및 지원 보기를 사용해야 합니다. 이러한 사례에는 **117** 또는 **118**로 시작하고 15자리 길이인 번호가 포함됩니다.  새 환경에 추가되기 전에 열린 지원 사례를 보려면 Azure Portal을 사용합니다. 확인 방법은 다음과 같습니다.
+
+    1. Intune 관리자 자격 증명으로 Azure(<https://portal.azure.com>)에 로그인하고 포털의 오른쪽 위에 있는 *?* 아이콘을 선택한 다음 *도움말+지원*을 선택하여 [Azure 도움말+지원](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 페이지로 이동합니다.
+
+    2. **도움말 + 지원** 페이지에서 **최근 지원 요청** 목록을 보고 선택하여 추가 세부 정보를 볼 수 있습니다.
 
 ## <a name="additional-resources"></a>추가 리소스
 - [Microsoft Intune의 담당자 전화 지원](phone-support-contact.md)

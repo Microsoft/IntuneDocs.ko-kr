@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 359f423e7b1bd098136670db1d43b2ddec6031a3
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679324"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune에서 Windows 장치에 대한 장치 준수 정책 추가
 
@@ -168,6 +168,9 @@ HAS 서비스의 작동 방식에 대한 자세한 내용은 [상태 증명 CSP]
 #### <a name="encryption"></a>암호화
 
 - **장치의 데이터 저장소 암호화**: **필요**를 선택하면 장치의 데이터 저장소가 암호화됩니다.
+
+  > [!NOTE]
+  > **장치에서 데이터 저장소 암호화** 설정은 일반적으로 장치가 암호화되었는지 확인합니다. 보다 강력한 암호화 설정을 위해 **BitLocker 필요**를 사용하는 것이 좋습니다. 그러면 Windows 장치 상태 증명을 활용하여 TPM 수준에서 Bitlocker 상태의 유효성을 검사합니다.
 
 #### <a name="device-security"></a>장치 보안
 

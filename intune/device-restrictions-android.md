@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313702"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915736"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android 및 Samsung Knox Standard 장치 제한 설정 - Intune
 
@@ -39,7 +39,7 @@ ms.locfileid: "43313702"
 - **지리적 위치(Samsung Knox만 해당)** - 장치에서 위치 정보를 활용할 수 있습니다.
 - **전원 끄기(Samsung Knox만 해당)** - 사용자가 장치의 전원을 끌 수 있습니다.<br>사용하지 않도록 설정하면 **장치를 초기화하기 전 로그인 오류 발생 횟수**를 설정할 수 없습니다.
 - **화면 캡처(Samsung Knox만 해당)** - 사용자가 화면 콘텐츠를 이미지로 캡처할 수 있습니다.
-- **음성 도우미(Samsung Knox만 해당)** - 장치에서 음성 도우미 소프트웨어를 사용할 수 있습니다.
+- **음성 도우미(Samsung Knox만 해당)** - 장치에서 S 음성 서비스 및 앱을 사용할 수 있습니다. 이는 Bixby 또는 화면 내용을 소리를 내어 읽는 내게 필요한 옵션에 대한 음성 도우미에는 적용되지 않습니다.
 - **YouTube(Samsung Knox만 해당)** - 장치에서 YouTube 앱을 사용할 수 있습니다.
 - **공유 장치(Samsung Knox만 해당)** - 관리되는 Samsung Knox Standard 장치를 공유 장치로 구성합니다. 이 모드에서는 최종 사용자가 Azure AD 자격 증명을 사용하여 장치 로그인/로그아웃을 수행할 수 있습니다. 장치는 사용 중인지 여부에 관계없이 관리되는 상태로 유지됩니다.<br>이 기능을 SCEP 인증서 프로필과 함께 사용하면 최종 사용자가 모든 사용자에 대해 동일한 앱 집합으로 장치를 공유할 수 있습니다. 단 자신의 SCEP 사용자 인증서를 사용해야 합니다.  사용자가 로그아웃하면 모든 앱 데이터가 지워집니다.  이 기능은 LOB 앱으로만 제한됩니다.
 - **날짜 및 시간 변경 차단(Samsung Knox)** - 사용자가 장치의 날짜 및 시간 설정을 변경할 수 없도록 합니다. 

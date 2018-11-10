@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fae8faf54c7b41bb547912853285cf09ec9c46d5
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 953b468337d3317027344573d147b65d765e3db3
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828111"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236444"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>이메일 자동화 및 비준수 장치 - Intune에 대한 작업 추가
 
@@ -71,7 +71,7 @@ ms.locfileid: "48828111"
 
    ![Intune에서 준수 알림 메시지의 예](./media/actionsfornoncompliance-1.PNG)
 
-4. 정보 추가를 완료하면 **만들기**를 선택합니다. 알림 메시지 템플릿을 사용할 준비가 됐습니다.
+4. 정보 추가를 완료하면 **만들기**를 선택합니다. 알림 메시지 템플릿을 사용할 준비가 됐습니다. 회사 포털 브랜딩의 일부로 업로드하는 로고는 이메일 템플릿에 사용됩니다. 회사 포털 브랜딩에 대한 자세한 내용은 [회사 ID 브랜딩 사용자 지정](company-portal-app.md#company-identity-branding-customization)을 참조하세요.  
 
 > [!NOTE]
 > 이전에 만든 알림 템플릿을 편집할 수도 있습니다.

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425294"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236393"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune에서 Windows Holographic 및 HoloLens 장치 관리 및 사용
 
@@ -68,6 +68,10 @@ Intune을 사용하여 Windows Holographic for Business를 실행하는 장치�
 
 Microsoft Intune은 Windows Holographic for Business를 실행하는 Microsoft HoloLens 장치에 유니버설 Windows 앱을 배포할 수 있습니다. Intune Azure Portal에서 앱 패키지를 직접 업로드하거나, 비즈니스용 Microsoft Store에서 배포할 수 있습니다. 관련 영역에 대한 자세한 내용은 다음 문서를 참조하세요.
 - Intune Azure Portal을 사용하여 LOB(기간 업무) 앱을 배포하려면 [Microsoft Intune에 Windows 기간 업무 앱을 추가하는 방법](lob-apps-windows.md)을 참조하세요.
+
+    > [!NOTE]
+    > Intune은 최대 패키지 크기 8GB를 허용합니다. 이 패키지 크기는 Intune에 업로드된 LOB 앱에만 사용 가능합니다.
+
 - 비즈니스용 Microsoft Store를 사용하여 앱을 배포하려면 [Microsoft Intune을 사용하여 비즈니스용 Microsoft Store에서 구입한 앱을 관리하는 방법](windows-store-for-business.md)을 참조하세요. 
 - Microsoft Intune을 사용하는 앱 관리에 대한 자세한 내용은 [Microsoft Intune의 앱 관리란?](app-management.md)을 참조하세요.
 - Microsoft HoloLens용 앱 개발에 대한 자세한 내용은 [Microsoft HoloLens용 혼합 현실 앱](https://www.microsoft.com/hololens/apps)을 참조하세요. 

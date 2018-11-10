@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321444"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236410"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune에서 macOS 장치에 대한 장치 준수 정책 추가
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune macOS 장치 준수 정책은 macOS 장치가 규격 장치가 되기 위해 충족해야 하는 규칙과 설정을 결정합니다. 조건부 액세스 정책을 사용하여 장치 준수 정책을 사용하는 경우 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 장치 보고서를 가져오 고 비준수에 대해 조치를 할 수 있습니다. Intune Azure Portal에서 각 플랫폼에 대한 장치 준수 정책을 만듭니다. 준수 정책 및 모든 필수 조건에 대한 자세한 내용은 [장치 준수 시작](device-compliance-get-started.md)을 참조하세요.
 
@@ -90,6 +88,17 @@ Intune macOS 장치 준수 정책은 macOS 장치가 규격 장치가 되기 위
 - **방화벽**: 무단 액세스로부터 장치를 보호하려면 **활성화**합니다. 이 기능을 사용하면 들어오는 인터넷 연결을 처리하고 은폐 모드를 사용할 수 있습니다. **구성되지 않음**(기본값)은 방화벽을 해제하고 네트워크 트래픽을 허용합니다(차단되지 않음).
 - **들어오는 연결**: DHCP, Bonjour 및 IPSec과 같은 기본 인터넷 서비스에 필요한 연결을 제외한 모든 들어오는 네트워크 연결을 **차단**합니다. 또한 이 설정은 화면 공유, 원격 액세스, iTunes 음악 공유 등을 비롯한 모든 공유 서비스를 차단합니다. **구성되지 않음**(기본값)은 들어오는 연결과 공유 서비스를 허용합니다. 
 - **은폐 모드**: 악의적인 사용자가 만든 검사 요청에 장치가 응답하지 못하도록 은폐 모드를 **활성화**합니다. 활성화되면 장치는 권한이 부여된 앱에 대해 들어오는 요청에 계속 응답합니다. **구성되지 않음**(기본값)은 은폐 모드를 해제 상태로 유지합니다.
+
+### <a name="gatekeeper"></a>게이트키퍼
+
+**이러한 위치에서 다운로드된 앱 허용**: 지원되는 응용 프로그램을 여러 위치의 장치에 설치할 수 있습니다. 위치 옵션:
+
+- **구성되지 않음**: 기본값입니다. Gatekeeper 옵션은 규정 준수 또는 비준수에 영향을 주지 않습니다. 
+- **Mac 앱 스토어**: Mac 앱 스토어의 앱만 설치합니다. 제3자나 식별된 개발자의 앱은 설치할 수 없습니다. 사용자가 Gatekeeper를 선택하여 Mac 앱 스토어 외부의 앱을 설치하면 장치가 규정을 준수하지 않는 것으로 간주됩니다.
+- **Mac 앱 스토어 및 식별된 개발자**: Mac 앱 스토어 및 식별된 개발자의 앱을 설치합니다. macOS는 개발자의 ID를 확인하고 앱 무결성을 확인하기 위한 몇 가지 다른 검사를 수행합니다. 사용자가 Gatekeeper를 선택하여 이러한 옵션 외부의 앱을 설치하면 장치가 규정을 준수하지 않는 것으로 간주됩니다.
+- **모든 위치**: 모든 위치에서 모든 개발자가 앱을 설치할 수 있습니다. 가장 보안 수준이 낮은 옵션입니다.
+
+Apple 설명서의 자세한 내용을 보려면 [macOS의 Gatekeeper](https://support.apple.com/HT202491)를 참조하세요.
 
 ## <a name="assign-user-groups"></a>사용자 그룹 할당
 

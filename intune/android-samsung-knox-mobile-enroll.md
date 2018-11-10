@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: b722dad629006ac3ea12d59e02a87f359f02e485
+ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028650"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50971417"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 장치 자동 등록
 
@@ -44,7 +44,7 @@ Knox 배포 프로그램에 참여하는 공인 재판매인으로부터 장치�
 KME를 사용하여 Intune에 등록하려면 먼저 다음 단계에 따라 삼성 Knox 포털에 회사를 등록해야 합니다.
 1.  [해당 지역에서 KME를 사용할 수 있는지 확인](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME는 55개 이상의 국가에서 사용할 수 있습니다. 해당 국가의 배포가 지원되는지 확인합니다.
 
-2.  [지원되는 장치](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME는 Knox 2.4 이상이 설치된 모든 삼성 장치에서 사용할 수 있습니다.
+2.  [지원되는 장치](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME는 Android 등록의 경우 Knox 2.4 이상, Android 엔터프라이즈 등록의 경우 Knox 2.8 이상인 모든 Samsung 장치에서 사용할 수 있습니다.
 
 3.  [네트워크 요구 사항](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): 필요한 방화벽 및 네트워크 액세스 규칙이 네트워크에서 허용되는지 확인합니다.
 
@@ -54,7 +54,25 @@ KME를 사용하여 Intune에 등록하려면 먼저 다음 단계에 따라 삼
 
 ## <a name="create-mdm-profile"></a>MDM 프로필 만들기
 
-회사가 성공적으로 등록되면 아래 정보를 사용하여 Knox 포털에서 Microsoft Intune용 MDM 프로필을 만들 수 있습니다. 단계별 지침은 [Samsung Knox Profile Setup Wizard](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm)(삼성 Knox 프로필 설정 마법사)를 참조하세요.
+회사가 성공적으로 등록되면 아래 정보를 사용하여 Knox 포털에서 Microsoft Intune용 MDM 프로필을 만들 수 있습니다. Knox 포털에서 Android 및 Android 엔터프라이즈용 MDM 프로필을 만들 수 있습니다. 
+
+### <a name="for-android-enterprise"></a>Android 엔터프라이즈용
+
+| MDM 프로필 필드| 필수 여부 | 값 | 
+|-------------------|-----------|-------| 
+|MDM 서버 URI     | 아니요        |이 필드를 비워 둡니다. 
+|프로필 이름       | 예       |선택한 프로필 이름을 입력합니다. 
+|설명        | 아니요        |프로필을 설명하는 텍스트를 입력합니다. 
+|MDM 에이전트 APK      | 예       |https://aka.ms/intune_kme_deviceowner 
+|이 앱을 Google 장치 소유자로 사용 | 예 | Android 엔터프라이즈에 등록하려면 이 옵션을 선택합니다. 
+|지원되는 MDM      | 예       |Microsoft Intune 
+|모든 시스템 앱을 사용하도록 설정된 상태로 유지 | 아니요 | 모든 앱을 사용하도록 설정하고 프로필에 사용할 수 있도록 하려면 이 옵션을 선택합니다. 이 옵션을 선택하지 않으면 매우 제한된 시스템 앱 집합만 장치의 앱 트레이에 표시됩니다. 이메일 앱과 같은 앱은 숨겨져 있습니다. 
+|사용자 지정 JSON        | 아니요        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Intune 등록 토큰 문자열 입력"}. [등록 프로필을 만드는 방법](android-kiosk-enroll.md)을 알아보세요. 
+| 법적 계약 추가 | 아니요 | 이 필드를 비워 둡니다. 
+
+### <a name="for-android"></a>Android의 경우
+
+단계별 지침은 [Samsung Knox Profile Setup Wizard](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm)(삼성 Knox 프로필 설정 마법사)를 참조하세요.
 
 | MDM 프로필 필드| 필수 여부 | 값 |
 |-------------------|-----------|-------|
@@ -62,10 +80,11 @@ KME를 사용하여 Intune에 등록하려면 먼저 다음 단계에 따라 삼
 |프로필 이름       | 예       |선택한 프로필 이름을 입력합니다.
 |description        | 아니요        |프로필을 설명하는 텍스트를 입력합니다.
 |MDM 에이전트 APK      | 예       |https://aka.ms/intune_kme
+|이 앱을 Google 장치 소유자로 사용 | 아니요 | Android의 경우 이 옵션을 선택하지 않은 상태로 둡니다. 이 옵션은 Android 엔터프라이즈에만 적용됩니다.
 |설정 마법사 건너뛰기  | 아니요        |최종 사용자 대신 표준 장치 설정 프롬프트를 건너뛰려면 이 옵션을 선택합니다.
 |최종 사용자가 등록을 취소하도록 허용 | 아니요 | 사용자가 KME를 취소하도록 허용하려면 이 옵션을 선택합니다.
 |사용자 지정 JSON        | 아니요        |이 필드를 비워 둡니다.
-| EULA, 서비스 약관 및 사용자 계약| 아니요 | 사용자 동의를 위해 Knox 관련 계약을 표시하려면 이 옵션을 선택합니다.
+| 법적 계약 추가 | 아니요 | 이 필드를 비워 둡니다.
 이 프로필과 Knox 라이선스 연결 | 아니요 | 이 옵션을 선택 취소한 상태로 둡니다. KME를 사용하여 Intune에 등록하는 데는 Knox 라이선스가 필요하지 않습니다.
 
 ## <a name="add-devices"></a>장치 추가
@@ -80,7 +99,7 @@ MDM 프로필을 장치에 할당하려면 다음 방법 중 하나를 사용하
 
 ## <a name="configure-how-end-users-sign-in"></a>최종 사용자가 로그인하는 방법 구성
 
-KME를 사용하여 Intune에 등록된 장치의 경우, 최종 사용자가 로그인하는 방법을 다음과 같이 구성할 수 있습니다.
+Android용 KME를 사용하여 Intune에 등록된 장치의 경우 최종 사용자가 로그인하는 방법을 다음과 같이 구성할 수 있습니다.
 
 - **사용자 이름 연결 없음:** Knox 포털의 **장치 세부 정보** 아래에서 추가된 장치의 **사용자 ID** 및 **암호** 필드를 비워 둡니다. 이 작업을 수행하려면 Intune에 등록할 때 최종 사용자가 사용자 이름과 암호를 모두 입력해야 합니다.
 
@@ -88,7 +107,7 @@ KME를 사용하여 Intune에 등록된 장치의 경우, 최종 사용자가 �
 
 > [!NOTE]
 >
->사용자 연결이 정의된 경우 연결된 사용자만 KME를 사용하여 장치를 등록할 수 있습니다. 장치를 초기화한 후에도 마찬가지입니다. 사용자 연결이 Knox 포털에서 정의되어 있지 않으면 유효한 Intune 라이선스를 가진 모든 사용자가 KME를 사용하여 장치를 등록할 수 있습니다.
+>사용자 연결은 Android 등록에만 적용됩니다. 사용자 연결이 정의된 경우 연결된 사용자만 KME를 사용하여 장치를 등록할 수 있습니다. 장치를 출하 시 설정으로 리셋한 후에도 마찬가지입니다. Knox 포털에 사용자 연결이 정의되어 있지 않은 경우 유효한 Intune 라이선스를 가진 사용자는 KME를 사용하여 장치를 등록할 수 있습니다.
 >
 
 ## <a name="distribute-devices"></a>장치 배포
@@ -98,13 +117,15 @@ MDM 프로필을 만들고 할당하고, 사용자 이름을 연결하고, Intun
 여전히 도움이 필요하세요? 전체 [Knox 모바일 등록 사용자 가이드](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)를 체크 아웃하세요.
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
-- **Google Play 계정:** Google Play 계정은 장치를 Microsoft Intune에 등록하는 데 필요하지 않습니다. 그러나 이후 Intune 회사 포털 앱을 업데이트하려면 장치에서 Google Play 계정이 필요할 수 있습니다.
 
-- **Google 장치 소유자 모드:** KME를 사용하여 Google 장치 소유자 모드에서 등록하는 기능은 이 미리 보기에서 지원되지 않습니다. 이 시나리오는 현재 조사 중입니다.
+- **장치 소유자 지원:** Intune에서는 Android 엔터프라이즈를 사용하여 키오스크 모드로만 장치를 등록할 수 있습니다. Intune에서 사용할 수 있게 되면 다른 Android 엔터프라이즈 장치 소유자 모드가 지원됩니다.
 
-- **“암호” 필드가 무시됨:** Knox 포털의 **장치 세부 정보**에서 채워져 있는 **암호** 필드는 Intune 회사 포털 앱에서 무시됩니다. 장치 등록을 완료하려면 최종 사용자가 장치에서 암호를 입력해야 합니다.
+- **Android 엔터프라이즈에 등록하기 위해 출하 시 설정으로 리셋:** 이미 설정된 장치를 다른 용도로 사용하는 경우 Android 엔터프라이즈에 등록할 때 장치를 출하 시 설정으로 리셋해야 합니다.
 
-- **"Android Enterprise 등록:** KME는 Android Enterprise 등록을 지원하지 않습니다.
+- **Google Play 계정을 사용하여 업데이트:** Google Play 계정은 장치를 Microsoft Intune에 등록하는 데 필요하지 않습니다. 그러나 이후 Intune 회사 포털 앱을 업데이트하려면 장치에서 Google Play 계정이 필요할 수 있습니다. Google 장치 소유자에 등록하는 경우 Google Play 계정이 필요하지 않습니다.
+
+- **"암호" 필드가 무시됨:** Knox 포털의 **장치 세부 정보**에 채워져 있는 **암호** 필드는 Android 등록 중에 Intune 회사 포털 앱에서 무시됩니다. 장치 등록을 완료하려면 최종 사용자가 장치에서 암호를 입력해야 합니다.
+
 
 ## <a name="getting-support"></a>지원 받기
 [삼성 KME에 대한 지원을 받는 방법](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm)에 대해 자세히 알아보세요.
