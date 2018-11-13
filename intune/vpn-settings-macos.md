@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d1224c00a1f7e8cf303304b3a0f038ade79b9633
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e4330d8e8095df49b14ab60c4b08aae44d134452
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834613"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679222"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>macOS를 실행하는 장치용 Microsoft Intune에서 VPN 설정 구성
 
@@ -56,6 +56,6 @@ ms.locfileid: "31834613"
 
 ## <a name="proxy-settings"></a>프록시 설정
 
-- **자동 구성 스크립트** - 파일을 사용하여 프록시 서버를 구성합니다. 구성 파일이 포함된 **프록시 서버 URL**(예: **http://proxy.contoso.com**)을 입력합니다.
+- **자동 구성 스크립트** - 파일을 사용하여 프록시 서버를 구성합니다. 구성 파일이 포함된 **프록시 서버 URL**(예: `** http://proxy.contoso.com**`)을 입력합니다.
 - **주소** - 프록시 서버 주소를 IP 주소로 입력합니다.
 - **포트 번호** - 프록시 서버와 연결된 포트 번호를 입력합니다.

@@ -46,7 +46,7 @@ Intune 회사 포털 앱으로 macOS 장치를 등록하여 조직의 이메일,
 다음 단계를 사용하여 OS X El Capitan 10.11 이상을 실행하는 macOS 장치를 등록합니다.   
 
 
-1. 회사 포털 웹 사이트에 액세스하려면 __Safari__에서 새 창을 열고, https://portal.manage.microsoft.com으로 이동합니다.  
+1. 회사 포털 웹 사이트에 액세스하려면 __Safari__에서 새 창을 열고, https://portal.manage.microsoft.com 으로 이동합니다.  
 
 2. 회사 또는 학교 계정을 사용하여 회사 포털 웹 사이트에 로그인합니다.
 

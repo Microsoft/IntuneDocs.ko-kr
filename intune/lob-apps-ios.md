@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbf02fc9633cca5059a6c58c3ef021f05469be60
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 43ca9d165bd44684a23f7e82eaed04f833b30449
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075596"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212345"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 iOS 기간 업무 앱 추가
 
@@ -55,7 +55,6 @@ ms.locfileid: "49075596"
     - **설명**: 앱에 대한 설명을 입력합니다. 설명은 회사 포털에 표시됩니다.
     - **게시자**: 앱의 게시자 이름을 입력합니다.
     - **최소 운영 체제**: 목록에서 앱을 설치할 수 있는 최소 운영 체제 버전을 선택합니다. 이전 버전의 운영 체제를 사용하는 장치에 앱을 할당할 경우 앱이 설치되지 않습니다.
-    - **앱 버전 무시**: 앱 개발자가 앱을 자동으로 업데이트하는 경우 **예**로 설정합니다.
     - **범주**: 기본 제공 앱 범주를 하나 이상 선택하거나 직접 만든 범주를 선택합니다. 범주를 사용하면 사용자가 회사 포털을 탐색할 때 앱을 더 쉽게 찾을 수 있습니다.
     - **회사 포털에서 이 항목을 추천 앱으로 표시**: 사용자가 앱을 찾을 때 회사 포털의 기본 페이지에서 앱이 눈에 잘 띄게 표시됩니다.
     - **정보 URL**: 선택적으로, 이 앱에 대한 정보가 포함된 웹 사이트의 URL을 입력합니다. URL은 회사 포털에 표시됩니다.

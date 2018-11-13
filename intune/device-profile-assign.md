@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024807"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298074"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 사용자 및 장치 프로필 할당
 
@@ -48,9 +48,6 @@ Intune 장치 구성 프로필을 통해 정책 할당에서 그룹을 제외할
 제외는 그룹의 직접 구성원만 해당하며 사용자와 연결된 장치는 포함하지 않습니다. 그러나 사용자가 없는 장치는 정책을 얻지 못합니다. 이는 이러한 장치가 **모든 사용자** 그룹과 아무 관계도 없기 때문에 발생합니다.
 
 **모든 장치**를 포함하고 **모든 사용자**를 제외하면 모든 장치에 정책이 적용됩니다. 이 시나리오의 의도는 연결된 사용자가 있는 장치를 이 정책에서 제외하기 위한 것입니다. 하지만 제외는 직접적인 그룹 구성원만 비교하기 때문에 장치는 제외하지 않습니다.
-
->[!TIP]
->준수 정책 또는 앱 할당에는 제외를 사용할 수 없습니다. 할당에서 구성원을 제외하려면 **사용 가능** 및 **적용할 수 없음** 할당을 사용할 수 있습니다. 예를 들어 **사용 가능** 의도로 **모든 회사 사용자**에게, 그리고 **적용할 수 없음** 의도로 **Senior Management Staff**에게 앱을 할당합니다. **Senior Management Staff** 그룹의 사용자를 *제외한* 모든 사용자에게 앱이 할당됩니다. **필요** 의도로 **모든 회사 사용자**에게 앱을 할당하면 **Senior Management Staff** 그룹의 사용자도 포함됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 장치 프로필 할당을 모니터링하는 데 지침은 [장치 프로필을 모니터링하는 방법](device-profile-monitor.md)을 참조하세요.

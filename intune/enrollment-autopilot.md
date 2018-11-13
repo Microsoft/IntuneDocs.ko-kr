@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075900"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025188"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Windows 장치 등록  
 Windows Autopilot이 장치 등록을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 장치에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 장치에 적용할 필요 없이 최종 사용자에게 새 장치를 제공할 수 있습니다. Intune을 사용하여 Autopilot 장치를 관리하는 경우 장치를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -26,6 +26,12 @@ Windows Autopilot이 장치 등록을 간소화합니다. 사용자 지정 운�
 ## <a name="prerequisites"></a>전제 조건
 - [Windows 자동 등록 사용](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 구독](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="how-to-get-the-csv-for-import-in-intune"></a>InTune에서 가져올 CSV를 얻는 방법
+
+사용 방법에 대한 자세한 내용은 'PowerShell cmdlet 이해'를 참조하세요.
+
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
 ## <a name="add-devices"></a>장치 추가
 
@@ -37,7 +43,7 @@ Windows Autopilot이 장치 등록을 간소화합니다. 사용자 지정 운�
 
 2. **Windows Autopilot 장치 추가** 에서 추가할 장치를 나열하는 CSV 파일로 이동합니다. 파일에는 일련 번호, Windows 제품 ID, 하드웨어 해시 및 장치의 선택적 주문 ID가 나열되어야 합니다.
 
-    ![Windows Autopilot 장치 추가 스크린샷](media/enrollment-autopilot/autopilot-import-device2.png)
+    ![Windows AutoPilot 장치 추가 스크린샷](media/enrollment-autopilot/autopilot-import-device2.png)
 
 3. **가져오기**를 선택하여 장치 정보 가져오기를 시작합니다. 가져오기는 몇 분 정도 걸릴 수 있습니다.
 
@@ -53,7 +59,7 @@ Windows Autopilot이 장치 등록을 간소화합니다. 사용자 지정 운�
     2. **그룹 이름** 및 **그룹 설명**을 입력합니다.
     3. **멤버 자격 형식**에서 **할당** 또는 **동적 장치**를 선택합니다.
 3. 이전 단계에서 **멤버 자격 형식**에 대해 **할당됨**을 선택했다면 **그룹** 블레이드에서 **멤버**를 선택하고 Autopilot 장치를 그룹에 추가합니다.
-    아직 등록되지 않은 Autopilot 장치는 장치 이름이 장치의 일련 번호와 동일한 장치입니다.
+    아직 등록되지 않은 AutoPilot 장치는 장치 이름이 장치의 일련 번호와 동일한 장치입니다.
 4. 위의 **멤버 자격 형식**에 대해 **동적 장치**를 선택했다면 **그룹** 블레이드에서 **동적 장치 멤버**를 선택하고 **고급 규칙** 상자에서 다음 코드를 입력합니다.
     - Autopilot 장치를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`를 입력합니다.
     - 특별 주문 ID를 사용하여 Autopilot 장치를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `를 입력합니다.
@@ -140,7 +146,7 @@ Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분
 
 2. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Windows 등록** > **장치**를 선택합니다.
 
-3. **Windows Autopilot 장치**에서 삭제할 장치를 선택한 다음, **삭제**를 선택합니다.
+3. **Windows AutoPilot 장치**에서 삭제할 장치를 선택한 다음, **삭제**를 선택합니다.
 
 4. **예**를 선택하여 삭제를 확인합니다. 삭제하는 데 몇 분 정도 걸릴 수 있습니다.
 
@@ -153,15 +159,14 @@ Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분
 - 다른 포털에서 수행한 프로필 할당 동기화
 - 다른 포털에서 만든 장치 목록에 대한 변경 내용 표시
 
-## <a name="redeploying-windows-autopilot"></a>Windows Autopilot 다시 배포
+## <a name="windows-autopilot-for-existing-devices"></a>기존 장치에 대한 Windows Autopilot
 
-Configuration Manager를 통해 [기존 장치에 대해 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)을 사용하여 등록할 때 관련자 ID로 Windows 장치를 그룹화할 수 있습니다. 관련자 ID는 Autopilot 구성 파일의 매개 변수입니다. [Azure AD 장치 속성 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects)은 "OfflineAutopilotprofile-<correlator ID>"과 같게 자동 설정됩니다. 이것으로 오프라인 Autopilot 등록을 위한 enrollmentprofileName 특성을 사용하여 관련자 ID를 기반으로 임의의 Azure AD 동적 그룹을 만들 수 있습니다.
+Configuration Manager를 통해 [기존 장치에 대해 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)을 사용하여 등록할 때 관련자 ID로 Windows 장치를 그룹화할 수 있습니다. 관련자 ID는 Autopilot 구성 파일의 매개 변수입니다. Azure AD 장치 특성인 [enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects)은 자동으로 "OfflineAutopilotprofile-\<관련자 ID\>"와 동일하게 설정됩니다. 이렇게 하면 enrollmentprofileName 특성을 사용하여 관련자 ID에 따라 임의의 Azure AD 동적 그룹을 만들 수 있습니다.
 
-Autopilot 등록을 지원하지 않는 이전 Windows 버전을 업그레이드하는 경우 오프라인 Autopilot 프로필을 사용할 수 있습니다. Autopilot는 Windows 10 1809 이상을 새로 설치하는 동안 도움이 될 수 있습니다. 오프라인 프로필의 일부로 관련자 ID를 지정할 수 있습니다. 
-
-경고: 관련자 ID는 Intune에 미리 나열되지 않으므로 사용자는 원하는 관련자 ID에 등록하기로 선택할 수 있습니다. 사용자가 Autopilot 또는 Apple DEP 프로필 이름과 일치하는 관련자 ID를 만드는 경우 enrollmentProfileName 특성을 기반으로 하는 동적 Azure AD 장치 그룹에 장치가 추가됩니다. 이 충돌을 방지하려면:
-- 항상 ‘전체’ enrollmentProfileName 값과 일치하는 동적 그룹 규칙을 생성합니다.
-- “OfflineAutopilotprofile-”로 시작하는 Autopilot 또는 Apple DEP 프로필은 절대 이름으로 설정하지 마세요.
+>[!WARNING] 
+> 관련자 ID는 Intune에 미리 나열되지 않으므로 장치에서 원하는 관련자 ID를 보고할 수 있습니다. 사용자가 Autopilot 또는 Apple DEP 프로필 이름과 일치하는 관련자 ID를 만드는 경우 enrollmentProfileName 특성을 기반으로 하는 동적 Azure AD 장치 그룹에 장치가 추가됩니다. 이 충돌을 방지하려면:
+> - 항상 ‘전체’ enrollmentProfileName 값과 일치하는 동적 그룹 규칙을 생성합니다.
+> - “OfflineAutopilotprofile-”로 시작하는 Autopilot 또는 Apple DEP 프로필은 절대 이름으로 설정하지 마세요.
 
 ## <a name="next-steps"></a>다음 단계
 등록한 Windows 10 장치에 대해 Windows Autopilot을 구성한 후에는 이러한 장치를 관리하는 방법을 알아봅니다. 자세한 내용은 [Microsoft Intune 장치 관리란?](https://docs.microsoft.com/intune/device-management)을 참조하세요.
