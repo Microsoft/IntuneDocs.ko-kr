@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 Android 장치에 대한 VPN 설정 구성 - Azure | Microsoft Docs
-description: Android 및 Android for Work 장치의 VPN 구성 프로필을 만들 때 연결 이름, VPN 서버의 IP 주소 또는 FQDN을 입력하고 VPN 서버를 통한 사용자 인증 방법을 선택한 다음, Citrix, SonicWall, Check Point Capsule, Pulse Secure 및 Edge 연결 유형을 선택합니다.
+description: Android 및 Android for Work 디바이스의 VPN 구성 프로필을 만들 때 연결 이름, VPN 서버의 IP 주소 또는 FQDN을 입력하고 VPN 서버를 통한 사용자 인증 방법을 선택한 다음, Citrix, SonicWall, Check Point Capsule, Pulse Secure 및 Microsoft Edge 연결 유형을 선택합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f02a76def463c4ef1c3ee24b021df3185d263ecf
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 113d2e52783f3c7e9f013d2cc239efad45408c87
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279324"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576820"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>Intune에서 Android를 실행하는 장치에 대한 VPN 설정 구성
 

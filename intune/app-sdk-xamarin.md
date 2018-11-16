@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 68cc4bb576f567787e702ccd88026579b6ed5b12
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: d2531cc203c5c2b255378e836099feb0a9216d45
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425311"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298125"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -64,17 +64,22 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
       ```csharp
       using Microsoft.Intune.MAM;
       ```
-4. 앱 보호 정책을 받기 시작하려면 앱이 Intune MAM 서비스에 등록되어 있어야 합니다. 앱이 이미 Azure ADAL(Active Directory Authentication Library)을 사용하여 사용자를 인증하는 경우 앱에서 성공적으로 인증한 후 IntuneMAMEnrollmentManager의 registerAndEnrollAccount 메서드에 사용자 UPN을 제공해야 합니다.
-      ```csharp
-      IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
-      ```
-      **중요**: Intune 앱 SDK의 기본 ADAL 설정을 앱 설정으로 재정의해야 합니다. [iOS용 Intune 앱 SDK 개발자 가이드](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)에 설명된 대로 앱의 Info.plist에 있는 IntuneMAMSettings 사전을 통해 재정의하거나, IntuneMAMPolicyManager 인스턴스의 AAD 재정의 속성을 사용할 수 있습니다. Info.plist 접근 방법은 ADAL 설정이 정적인 응용 프로그램에 권장되고, 재정의 속성은 런타임에 이러한 값을 확인하는 응용 프로그램에 권장됩니다. 
-      
-      앱이 ADAL을 사용하지 않고 Intune SDK를 사용하여 인증을 처리하려는 경우에는 앱에서 IntuneMAMEnrollmentManager의 loginAndEnrollAccount 메서드를 호출해야 합니다.
+4. 앱 보호 정책을 받기 시작하려면 앱이 Intune MAM 서비스에 등록되어 있어야 합니다. 앱이 사용자 인증을 위해 [Azure Active Directory 인증 라이브러리](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory)(ADAL) 또는 [Microsoft 인증 라이브러리](https://www.nuget.org/packages/Microsoft.Identity.Client)(MSAL)를 사용하지 않고 Intune SDK에서 인증을 처리하도록 하려는 경우, 앱은 사용자의 UPN을 IntuneMAMEnrollmentManager의 LoginAndEnrollAccount 메서드에 제공해야 합니다.
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+      호출 시 사용자의 UPN을 알 수 없는 경우 앱이 null에 전달할 수 있습니다. 이 경우 사용자에게 이메일 주소와 암호를 모두 입력하라는 메시지가 표시됩니다.
       
+      앱이 이미 ADAL 또는 MSAL을 사용하여 사용자를 인증하는 경우 앱과 Intune SDK 간에 SSO(single sign-on) 환경을 구성할 수 있습니다. 먼저 iOS용 Intune Xamarin Bindings(com.microsoft.adalcache)에서 사용하는 것과 동일한 키체인 액세스 그룹에 토큰을 저장하도록 ADAL/MSAL을 구성해야 합니다. ADAL의 경우 [AuthenticationContext의 KeychainSecurityGroup 속성을 설정](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Token-cache-serialization#enable-token-cache-sharing-across-ios-applications)하여 이 작업을 수행할 수 있습니다. MSAL의 경우 [PublicClientApplication의 KeychainSecurityGroup 속성을 설정](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/msal-net-2-released#you-can-now-enable-sso-between-adal-and-msal-apps-on-xamarinios)해야 합니다. 그런 다음, 앱과 함께 Intune SDK에서 사용하는 기본 AAD 설정을 재정의해야 합니다. [iOS용 Intune 앱 SDK 개발자 가이드](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)에 설명된 대로 앱의 Info.plist에 있는 IntuneMAMSettings 사전을 통해 재정의하거나, IntuneMAMPolicyManager 인스턴스의 AAD 재정의 속성을 사용할 수 있습니다. Info.plist 접근 방법은 ADAL 설정이 정적인 응용 프로그램에 권장되고, 재정의 속성은 런타임에 이러한 값을 확인하는 응용 프로그램에 권장됩니다. 모든 SSO 설정이 구성되면 앱은 성공적으로 인증된 후 사용자의 UPN을 IntuneMAMEnrollmentManager의 RegisterAndEnrollAccount 메서드에 제공해야 합니다.
+      ```csharp
+      IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
+      ```
+      앱은 IntuneMAMEnrollmentDelegate의 하위 클래스에서 EnrollmentRequestWithStatus 메서드를 구현하고 IntuneMAMEnrollmentManager의 대리자 속성을 해당 클래스의 인스턴스로 설정하여 등록 시도의 결과를 확인할 수 있습니다. 예를 들어 [샘플 Xamarin.iOS 애플리케이션](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)을 참조하세요.
+
+      등록이 성공하면 앱은 다음 속성을 쿼리하여 등록된 계정의 UPN(이전에 알 수 없는 경우)을 확인할 수 있습니다. 
+      ```csharp
+       string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
+      ```      
 > [!NOTE] 
 > iOS용 리매퍼가 없습니다. Xamarin.Forms 앱에 통합하는 것은 일반 Xamarin.iOS 프로젝트와 동일합니다. 
 

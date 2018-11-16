@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
+ms.openlocfilehash: 17b99c4a089fc426ecfeea803737fa8704f3b0a6
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505719"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212311"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>macOS 장치의 일반적인 문제 해결
 
@@ -33,3 +33,6 @@ ms.locfileid: "46505719"
 - [내 Jamf에서 관리되는 장치가 호환되지 않는 경우](device-little-different-jamf.md)
 - [일련 번호를 찾을 수 없음](how-do-i-find-the-serial-number-on-my-device-macos.md)
 - [내 장치를 식별하라는 메시지가 표시됨](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [macOS 가상 머신을 등록하는 동안 오류가 발생했습니다.](unable-to-get-macOS-device-managed.md)  
+- [내 macOS 디바이스 일련 번호가 제한되었다는 메시지를 받았습니다.](unable-to-get-macOS-device-managed.md)  
+- [내 디바이스가 이미 다른 사용자에게 할당되었을 수 있습니다.](unable-to-get-macOS-device-managed.md)  

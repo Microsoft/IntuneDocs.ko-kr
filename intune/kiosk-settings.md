@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
-ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
+ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751646"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298142"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune의 Windows 10(이상)용 키오스크 설정
 
@@ -77,8 +77,15 @@ Intune은 장치당 하나의 키오스크 프로필을 지원합니다. 단일 
   - **유휴 시간 후에 브라우저 새로 고침**: 키오스크 브라우저가 새로 시작 상태에서 다시 시작될 때까지 소요되는 유휴 시간(1-1440분)을 입력합니다. 유휴 시간은 사용자의 마지막 조작 이후 소요된 시간(분)입니다. 기본적으로 이 값은 비어 있거나 공백이며, 이는 유휴 시간 제한이 없음을 나타냅니다.
 
   - **허용된 웹 사이트**: 특정 웹 사이트가 열리도록 허용하려면 이 설정을 사용합니다. 즉, 장치에서 웹 사이트를 제한하거나 차단하려면 이 기능을 사용합니다. 예를 들어 `http://contoso.com*`의 모든 웹 사이트가 열리도록 허용할 수 있습니다. 기본적으로 모든 웹 사이트가 허용됩니다.
+ 
+      특정 웹 사이트를 허용하려면 허용되는 웹 사이트 목록이 포함된 파일을 별도의 줄에 업로드합니다. 파일을 추가하지 않으면 모든 웹 사이트가 허용됩니다. Intune은 *(별표)를 와일드카드로 지원합니다.
 
-    특정 웹 사이트를 허용하려면 허용되는 웹 사이트 목록을 포함하는 .csv 파일을 업로드합니다. .csv 파일을 추가하지 않으면 모든 웹 사이트가 허용됩니다. Intune은 *(별표)를 와일드카드로 지원합니다.
+      샘플 파일은 다음 목록과 비슷해야 합니다.
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   **확인**을 선택하여 변경 내용을 저장합니다.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2018
+ms.date: 11/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bacaf8ff4119d4cd40483b65ea45e283d98a51f1
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 2f21df636ab429969429c6dbdf540daaa67a8f88
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025205"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576769"
 ---
 # <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Microsoft Intune 초기 버전 - 2018년 11월
 
@@ -44,11 +44,6 @@ ms.locfileid: "51025205"
 ### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>회사 소유의 감독되는 iOS 장치에서 앱 제거 <!-- 1281677 -->
 회사 소유의 감독되는 iOS 장치에서 앱을 제거할 수 있습니다. **제거** 할당 유형을 사용하여 사용자 또는 장치 그룹을 대상으로 하여 앱을 제거할 수 있습니다. 개인 또는 감독되지 않은 iOS 장치의 경우 Intune을 사용하여 설치된 앱만 계속 제거할 수 있습니다.
 
-### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>iOS 메일 프로필에서 iOS 12 OAuth 지원 <!--2155106 -->
-Intune의 iOS 메일 프로필은 iOS 12 OAuth를 지원합니다. 이 기능을 표시하려면 **Intune** > **장치 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다. 프로필 만들기 블레이드에서 **OAuth**를 사용하거나 사용하지 않도록 설정할 수 있습니다. 이 설정이 작동되면 발생하는 두 가지 상황은 다음과 같습니다.
-1. 이미 대상으로 지정된 장치에 새 프로필이 발행됩니다.
-2. 최종 사용자에게 자격 증명을 묻는 메시지가 다시 표시됩니다.
-
 ### <a name="track-installation-of-office-proplus---2620217--"></a>Office ProPlus 설치 추적 <!--2620217-->
 [등록 상태 페이지](windows-enrollment-status.md)를 사용하여 [Office ProPlus](apps-add-office365.md)의 설치 진행률을 추적할 수 있습니다.
 
@@ -69,7 +64,7 @@ Android 엔터프라이즈, 다중 앱, 키오스크 모드 장치에서 관리 
 앱 보호 정책 할당은 더 효율적으로 제어할 수 있습니다. 앱 보호 정책 할당을 저장하고 적용하면 의도한 사용자만 앱 보호 할당 정책의 영향을 직접 받습니다.
 
 ### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Windows 10 이상에 대한 새 Microsoft Edge 브라우저 설정 <!-- 3174639 -->
-장치에서 Microsoft Edge 브라우저를 제어하고 관리하는 데 도움이 되는 새 설정이 추가됩니다. 현재 설정 목록은 [Windows 10(이상)에 대한 장치 제한](device-restrictions-windows-10.md#edge-browser)을 참조하세요.
+장치에서 Microsoft Edge 브라우저를 제어하고 관리하는 데 도움이 되는 새 설정이 추가됩니다. 현재 설정 목록은 [Windows 10(이상)에 대한 장치 제한](device-restrictions-windows-10.md#microsoft-edge-browser)을 참조하세요.
 
 ### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>등록 상태 페이지에서 추적되는 앱 선택 <!-- 2531007 -->
 등록 상태 페이지에서 추적할 앱을 선택할 수 있습니다.
@@ -113,10 +108,10 @@ Android 및 iOS 장치의 웹 콘텐츠에 대한 APP 정책 설정은 iOS 유�
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>다른 MDM에서 사용하는 Apple VPP 토큰 <!-- 1488946 -->
 Intune과 다른 MDM에서 모두 Apple VPP(대량 구매 프로그램) 토큰을 사용하고 있으면 Intune에서 세부 정보를 검색하고 표시합니다.
 
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>iOS 및 macOS 버전 번호와 빌드 번호가 <!-- 1892471 -->로 표시됩니다.
-**장치 준수** > **장치 준수**에서 iOS 및 macOS 운영체제 버전이 표시됩니다. 향후 업데이트에서는 두 플랫폼에 대한 빌드 번호도 표시됩니다.
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>iOS 및 macOS 버전 번호 및 빌드 번호는 준수 정책 <!-- 1892471 -->에서 사용할 수 있습니다.
+**디바이스 준수** > **디바이스 준수**에서 iOS 및 macOS 운영체제 버전이 표시되고 준수 정책에 사용할 수 있습니다. 향후 업데이트에서는 두 플랫폼에 대해서도 빌드 번호를 구성할 수 있습니다.
 
-보안 업데이트가 릴리스되는 경우 Apple에서는 일반적으로 버전 번호는 그대로 유지하지만 빌드 번호는 업데이트합니다. 빌드 번호가 표시되면 취약성 업데이트가 설치되어 있는지 쉽게 확인할 수 있습니다.
+보안 업데이트가 릴리스되는 경우 Apple에서는 일반적으로 버전 번호는 그대로 유지하지만 빌드 번호는 업데이트합니다. 준수 정책의 빌드 번호를 사용하면 취약성 업데이트가 설치되어 있는지 쉽게 확인할 수 있습니다.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>장치 준수 대시보드에 사용 중지된 장치가 있음 <!-- 1981119 -->
 향후 업데이트에서는 사용 중지된 장치가 장치 준수 대시보드에서 제거됩니다. 이에 따라 규정 준수 번호도 변경됩니다.

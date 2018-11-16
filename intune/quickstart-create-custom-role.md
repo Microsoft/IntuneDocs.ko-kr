@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410772"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561927"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>빠른 시작: 사용자 지정 역할 만들기 및 할당
 
@@ -64,7 +64,9 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="next-steps"></a>다음 단계
 
-이 빠른 시작에서는 사용자 지정 보안 작업 역할을 만들고 그룹에 할당했습니다. 다음 문서에서는 보안 문제에 대해 자세히 알아볼 수 있습니다.
+이 빠른 시작에서는 사용자 지정 보안 작업 역할을 만들고 그룹에 할당했습니다. Intune의 역할에 대한 자세한 내용은 [Microsoft Intune을 통한 RBAC(역할 기반 관리 제어)](role-based-access-control.md)를 참조하세요.
+
+Intune 빠른 시작의 이 시리즈를 수행하려면 다음 빠른 시작을 계속 진행하세요.
 
 > [!div class="nextstepaction"]
-> [장치 준수 정책 시작](device-compliance-get-started.md)
+> [빠른 시작: iOS에 대한 이메일 디바이스 프로필 만들기](quickstart-email-profile.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ee53d0c5801a80319e33637ee68fb7b701a127
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391691"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212532"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -28,13 +28,13 @@ ms.locfileid: "49391691"
 
 - **Active Directory 도메인**: 웹 응용 프로그램 프록시 서버를 제외하고 이 섹션에 나열된 모든 서버는 Active Directory 도메인에 가입되어 있어야 합니다.
 
-- **인증 기관**(CA): Windows Server 2008 R2 이상에서 실행되는 엔터프라이즈 CA(인증 기관)입니다. 독립 실행형 CA는 지원되지 않습니다. 자세한 내용은 [인증 기관 설치](http://technet.microsoft.com/library/jj125375.aspx)를 참조하세요.
+- **인증 기관**(CA): Windows Server 2008 R2 이상에서 실행되는 Microsoft 엔터프라이즈 CA(인증 기관)여야 합니다. 독립 실행형 CA는 지원되지 않습니다. 자세한 내용은 [인증 기관 설치](http://technet.microsoft.com/library/jj125375.aspx)를 참조하세요.
     CA에서 Windows Server 2008 R2를 실행하는 경우에는 [KB2483564의 핫픽스를 설치](http://support.microsoft.com/kb/2483564/)해야 합니다.
 
-- **NDES 서버**: Windows Server 2012 R2 이상을 실행하는 서버에 NDES(네트워크 장치 등록 서비스)를 설치해야 합니다. 엔터프라이즈 CA를 실행하는 서버에서 NDES가 실행되는 경우 Intune은 NDES 사용을 지원하지 않습니다. 네트워크 장치 등록 서비스를 호스트하도록 Windows Server 2012 R2를 구성하는 방법에 대한 지침은 [네트워크 장치 등록 서비스 지침](http://technet.microsoft.com/library/hh831498.aspx)을 참조하세요.
-NDES 서버는 CA를 호스트하는 도메인에 가입해야 하며 CA와 동일한 서버에 있지 않아야 합니다. 별도의 포리스트, 격리된 네트워크 또는 내부 도메인에 NDES 서버를 배포하는 방법에 대한 자세한 내용은 [네트워크 장치 등록 서비스와 함께 정책 모듈 사용](https://technet.microsoft.com/library/dn473016.aspx) 항목에서 찾아볼 수 있습니다.
+- **NDES 서버**: Windows Server 2012 R2 이상에서는 NDES(네트워크 디바이스 등록 서비스) 서버 역할을 설정해야 합니다. Intune은 엔터프라이즈 CA도 실행하는 서버에서 NDES 사용을 지원하지 않습니다. NDES를 호스트하도록 Windows Server 2012 R2를 구성하는 방법에 대한 지침은 [네트워크 디바이스 등록 서비스 지침](http://technet.microsoft.com/library/hh831498.aspx)을 참조하세요.
+NDES 서버는 엔터프라이즈 CA와 동일한 포리스트 내의 도메인에 조인해야 합니다. 별도의 포리스트, 격리된 네트워크 또는 내부 도메인에 NDES 서버를 배포하는 방법에 대한 자세한 내용은 [네트워크 장치 등록 서비스와 함께 정책 모듈 사용](https://technet.microsoft.com/library/dn473016.aspx) 항목에서 찾아볼 수 있습니다.
 
-- **Microsoft Intune Certificate Connector**: Azure Portal을 사용하여 **인증서 커넥터** 설치 관리자(**NDESConnectorSetup.exe**)를 다운로드합니다. 그런 다음, 인증서 커넥터를 설치하려는 NDES(Network Device Enrollment Service) 역할을 호스트하는 서버에서 **NDESConnectorSetup.exe**를 실행할 수 있습니다.
+- **Microsoft Intune 인증서 커넥터**: Intune 관리 포털에서 **인증서 커넥터** 설치 관리자(**NDESConnectorSetup.exe**)를 다운로드합니다. NDES 역할이 있는 서버에서 이 설치 관리자를 실행합니다.  
 
   - NDES 인증서 커넥터는 FIPS(Federal Information Processing Standard) 모드도 지원합니다. FIPS가 필수는 아니지만, 활성화되면 인증서를 발급하고 해지할 수 있습니다.
 
@@ -53,29 +53,29 @@ NDES 서버는 CA를 호스트하는 도메인에 가입해야 하며 CA와 동�
 
 ### <a name="network-requirements"></a>네트워크 요구 사항
 
-인터넷에서 경계 네트워크까지, NDES 서버가 연결된 인터넷에 있는 모든 호스트/IP 주소에서 포트 443을 허용해야 합니다.
+WAP 또는 Azure AD 앱 프록시와 같은 역방향 프록시를 사용하지 않는 경우 인터넷의 모든 호스트/IP 주소에서 NDES 서버로 보내는 포트 443의 TCP 트래픽을 허용합니다.
 
-경계 네트워크에서 신뢰할 수 있는 네트워크까지, 도메인에 가입된 NDES 서버에서 도메인 액세스에 필요한 모든 포트 및 프로토콜을 허용해야 합니다. NDES 서버는 인증서 서버, DNS 서버, Configuration Manager 서버 및 도메인 컨트롤러에 액세스해야 합니다.
+NDES 서버와 모든 지원 인프라 간에 필요한 모든 포트 및 프로토콜을 허용합니다. 예를 들어 NDES 서버는 CA, DNS 서버, Configuration Manager 서버, 도메인 컨트롤러 및 가능한 경우 사용자 환경 내의 다른 서비스와 통신해야 합니다.
 
-[Azure AD 응용 프로그램 프록시](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [웹 액세스 프록시](https://technet.microsoft.com/library/dn584107.aspx) 또는 타사 프록시와 같은 프록시를 통해 NDES 서버를 게시하는 것이 좋습니다.
+[Azure AD 애플리케이션 프록시](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [웹 액세스 프록시](https://technet.microsoft.com/library/dn584107.aspx) 또는 타사 프록시와 같은 역방향 프록시를 통해 NDES 서버를 게시하는 것이 좋습니다.
 
-### <a name="certificates-and-templates"></a>인증서 및 템플릿
+### <a name="certificates-and-templates"></a>인증서 및 템플릿  
 
 |개체|세부 정보|
 |----------|-----------|
 |**인증서 템플릿**|발급 CA에서 이 템플릿을 구성합니다.|
 |**클라이언트 인증 인증서**|발급 CA 또는 공용 CA에서 요청되었습니다. 이 인증서를 NDES 서버에 설치합니다.|
-|**서버 인증 인증서**|발급 CA 또는 공용 CA에서 요청되었습니다. 이 SSL 인증서를 NDES 서버의 IIS에 설치 및 바인딩합니다.|
+|**서버 인증 인증서**|발급 CA 또는 공용 CA에서 요청되었습니다. 이 SSL 인증서를 NDES 서버의 IIS에 설치 및 바인딩합니다. 인증서에 클라이언트 및 서버 인증 키 사용이 설정된 경우(**고급 키 사용**) 동일한 인증서를 사용할 수 있습니다.|
 |**신뢰할 수 있는 루트 CA 인증서**|루트 CA 또는 루트 CA를 신뢰하는 장치에서 이 인증서를 **.cer** 파일로 내보냅니다. 그런 다음, 신뢰할 수 있는 CA 인증서 프로필을 사용하여 장치에 할당합니다.<br /><br />운영 체제 플랫폼당 하나의 신뢰할 수 있는 루트 CA 인증서를 사용하고, 새로 만드는 각 신뢰할 수 있는 루트 인증서 프로필과 연결합니다.<br /><br />필요하면 신뢰할 수 있는 루트 CA 인증서를 추가로 사용할 수 있습니다. 예를 들어, Wi-Fi 액세스 지점의 서버 인증 인증서에 서명하는 CA에 신뢰를 제공하기 위해 사용하게 될 수도 있습니다.|
 
 ### <a name="accounts"></a>계정
 
 |이름|세부 정보|
 |--------|-----------|
-|**NDES 서비스 계정**|NDES 서비스 계정으로 사용할 도메인 사용자 계정을 입력합니다.|
+|**NDES 서비스 계정**|NDES 서비스 계정으로 사용할 도메인 사용자 계정을 입력합니다. |
 
 ## <a name="configure-your-infrastructure"></a>인프라 구성
-인증서 프로필을 구성하려면 다음 단계를 완료해야 합니다. 이러한 단계를 완료하려면 Windows Server 2012 R2 이상 및 ADCS(Active Directory 인증서 서비스)에 대한 지식이 있어야 합니다.
+인증서 프로필을 구성하려면 다음 단계를 완료해야 합니다. 이러한 단계를 완료하려면 Windows Server 2012 R2 이상 및 ADCS(Active Directory 인증서 서비스)에 대한 지식이 필요합니다.
 
 #### <a name="step-1---create-an-ndes-service-account"></a>1단계 - NDES 서비스 계정 만들기
 
@@ -152,7 +152,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 - Windows Server에 NDES를 추가하고 NDES를 지원하도록 IIS 구성
 - IIS_IUSR 그룹에 NDES 서비스 계정 추가
-- NDES 서비스 계정의 SPN 설정
+- NDES 서비스 계정에 대한 SPN(서비스 사용자 이름) 설정
 
 1. NDES를 호스트하는 서버에서 **엔터프라이즈 관리자**로 로그인한 다음, [역할 및 기능 추가 마법사](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11))를 사용하여 NDES를 설치합니다.
 
@@ -177,7 +177,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
        - **관리 도구** > **IIS 6 관리 호환성** > **IIS 6 WMI 호환성**
 
-       - 서버에서 NDES 서비스 계정을 **IIS_IUSR** 그룹의 구성원으로 추가합니다.
+       - 서버에서 NDES 서비스 계정을 로컬 **IIS_IUSR** 그룹의 구성원으로 추가합니다.
 
 2. 관리자 권한 명령 프롬프트에서 다음 명령을 실행하여 NDES 서비스 계정의 SPN을 설정합니다.
 
@@ -243,7 +243,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 1. NDES 서버에서 내부 CA 또는 공용 CA로부터 **서버 인증** 인증서를 요청하여 설치합니다. 그런 다음 IIS에서 SSL 인증서를 바인딩합니다.
 
     > [!TIP]
-    > IIS에서 SSL 인증서를 바인딩한 후 클라이언트 인증 인증서를 설치합니다. 이 인증서는 NDES 서버에서 신뢰하는 모든 CA가 발급할 수 있습니다. 가장 적절한 방식은 아니지만 서버 및 클라이언트 인증에 같은 인증서를 사용할 수도 있습니다. 하지만 이 경우 인증서에 서버 인증과 클라이언트 인증 둘 다를 위한 EKU(확장된 키 사용) 기능이 있어야 합니다. 이러한 인증 인증서에 대한 자세한 내용을 보려면 다음 단계를 검토하세요.
+    > IIS에서 SSL 인증서를 바인딩한 후 클라이언트 인증 인증서를 설치합니다. 이 인증서는 NDES 서버에서 신뢰하는 모든 CA가 발급할 수 있습니다. 인증서에 클라이언트 및 서버 인증 키 사용 설정(**고급 키 사용**)된 경우 동일한 인증서를 사용할 수 있습니다. 이러한 인증 인증서에 대한 자세한 내용을 보려면 다음 단계를 검토하세요.
 
    1. 서버 인증 인증서를 얻은 후 **IIS 관리자**를 열고 **기본 웹 사이트**를 선택합니다. **작업** 창에서 **바인딩**을 선택합니다.
 
@@ -314,7 +314,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
     클라이언트 인증 인증서를 선택하고 나면 **Microsoft Intune 인증서 커넥터용 클라이언트 인증서** 화면으로 돌아가게 됩니다. 선택한 인증서는 표시되지 않지만 **다음**을 선택하면 해당 인증서의 속성을 볼 수 있습니다. **다음**을 선택한 다음, **설치**를 선택합니다.
 
     > [!IMPORTANT]
-    > Internet Explorer 보안 강화 구성이 사용되는 장치에는 Intune Certificate Connector를 등록할 수 없습니다. Intune Certificate Connector를 사용하려면 [IE 보안 강화 구성을 사용하지 않도록 설정](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)합니다.
+    > Internet Explorer 보안 강화 구성은 Intune 인증서 커넥터를 호스팅하는 [NDES 서버에서 사용하지 않도록 설정해야 합니다](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
 6. 마법사를 완료한 후 마법사를 닫기 전에 **인증서 커넥터 UI를 시작**합니다.
 
@@ -325,7 +325,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 7. **인증서 커넥터** UI에서:
 
-    **로그인**을 선택하고 Intune 서비스 관리자 자격 증명 또는 전역 관리 권한이 있는 테넌트 관리자의 인증서 자격 증명을 입력합니다.
+    **로그인**을 선택하고 Intune 서비스 관리자 자격 증명 또는 전역 관리 권한이 있는 테넌트 관리자의 인증서 자격 증명을 입력합니다. 로그인하면 Intune 인증서 커넥터가 Intune에서 인증서를 다운로드합니다. 이 인증서는 커넥터와 Intune 간의 인증에 사용됩니다.
 
     > [!IMPORTANT]
     > 사용자 계정에 유효한 Intune 라이선스가 할당되어야 합니다. 사용자 계정에 유효한 Intune 라이선스가 없으면 NDESConnectorUI.exe가 실패합니다.

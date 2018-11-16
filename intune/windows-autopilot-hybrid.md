@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 120478644743619dbcfc5e8e36806a1109924331
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50972777"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298091"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 장치 배포(미리 보기)
 Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Directory 조인 장치를 설정할 수 있습니다. 이렇게 하려면 다음 단계를 수행합니다.
@@ -30,7 +30,7 @@ Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Direct
 
 ## <a name="prerequisites"></a>전제 조건
 
-- [하이브리드 Azure Active Directory 조인 장치](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains)를 성공적으로 구성합니다.
+- [하이브리드 Azure Active Directory 조인 장치](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)를 성공적으로 구성합니다.
     - [Get-MsolDevice cmdlet을 사용하여 등록을 확인]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)합니다.
 
 등록할 장치도 다음과 같아야 합니다.
@@ -65,7 +65,7 @@ Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Direct
 
 ## <a name="increase-the-computer-account-limit-in-the-organizational-unit"></a>조직 구성 단위에서 컴퓨터 계정 제한 증가
 
-Active Directory용 Intune Connector는 온-프레미스 Active Directory 도메인에 컴퓨터를 등록하는 Autopilot을 만듭니다. Intune Connector를 호스팅하는 컴퓨터에는 도메인 내에 컴퓨터 개체를 만들 수 있는 권한이 있어야 합니다. 
+Active Directory용 Intune Connector는 온-프레미스 Active Directory 도메인에 Autopilot 등록 컴퓨터를 만듭니다. Intune Connector를 호스팅하는 컴퓨터에는 도메인 내에 컴퓨터 개체를 만들 수 있는 권한이 있어야 합니다. 
 
 일부 도메인에서는 컴퓨터를 만들 수 있는 권한이 컴퓨터에 부여되지 않습니다. 또는 관리자가 도메인 전체의 컴퓨터 계정 제한을 늘리지 않으려고 할 수 있습니다. 이러한 상황에서는 하이브리드 Azure AD 조인 장치가 만들어지는 조직 구성 단위에 권한을 위임할 수 있습니다.
 
@@ -110,7 +110,7 @@ Active Directory용 Intune Connector는 온-프레미스 Active Directory 도메
 
 Active Directory용 Intune Connector는 인터넷 및 Active Directory에 액세스할 수 있는 Windows Server 2016을 실행하는 컴퓨터에 설치해야 합니다. 규모와 및 가용성을 늘리거나 여러 Active Directory 도메인을 지원하기 위해 환경에 여러 개의 커넥터를 설치할 수 있습니다. 다른 Intune 커넥터를 실행하지 않는 서버에 커넥터를 설치하는 것이 좋습니다.
 
-1. Azure Portal의 Intune에서 **장치 등록** > **Windows 등록** > **Active Directory용 Intune Connector(미리 보기)** > **커넥터 추가**를 차례로 선택합니다. 
+1. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **Active Directory용 Intune Connector(미리 보기)** > **커넥터 추가**를 차례로 선택합니다. 
 2. 지침에 따라 커넥터를 다운로드합니다.
 3. 다운로드한 커넥터 설치 파일(ODJConnectorBootstrapper.exe)을 열어 커넥터를 설치합니다.
 4. 설치가 완료되면 **구성**을 선택합니다.
@@ -124,7 +124,7 @@ Active Directory용 Intune Connector는 인터넷 및 Active Directory에 액세
 
 
 ## <a name="create-a-device-group"></a>장치 그룹 만들기
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **그룹** > **새 그룹**을 선택합니다.
+1. [Intune](https://aka.ms/intuneportal)에서 **그룹** > **새 그룹**을 선택합니다.
 2. **그룹** 블레이드에서:
     1. **그룹 형식**에서 **보안**을 선택합니다.
     2. **그룹 이름** 및 **그룹 설명**을 입력합니다.
@@ -175,7 +175,7 @@ Autopilot 장치가 등록되면 장치 이름이 장치의 호스트 이름으�
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Autopilot 배포 프로필 만들기 및 할당
 Autopilot 배포 프로필은 Autopilot 장치를 구성하는 데 사용됩니다.
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 선택합니다.
+1. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 선택합니다.
 2. **이름** 및 선택적 **설명**을 입력합니다.
 3. **배포 모드**에서 **사용자 기반**을 선택합니다.
 4. **Azure AD 조인 유형** 상자에서 **하이브리드 Azure AD 조인됨(미리 보기)** 을 선택합니다.
@@ -188,21 +188,21 @@ Autopilot 배포 프로필은 Autopilot 장치를 구성하는 데 사용됩니�
 
 ## <a name="turn-on-the-enrollment-status-page-optional"></a>등록 상태 페이지 설정(선택 사항)
 
-1.  [Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Windows 등록** > **등록 상태 페이지(미리 보기)** 를 선택합니다.
-2.  **등록 상태 페이지** 블레이드에서 **기본값** > **설정**을 선택합니다.
-3.  **프로필 및 앱 설치 진행률 표시**에서 **예**를 선택합니다.
+1. [Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Windows 등록** > **등록 상태 페이지(미리 보기)** 를 선택합니다.
+2. **등록 상태 페이지** 블레이드에서 **기본값** > **설정**을 선택합니다.
+3. **프로필 및 앱 설치 진행률 표시**에서 **예**를 선택합니다.
 4. 필요에 따라 다른 옵션을 구성합니다.
-5.  **저장**을 선택합니다.
+5. **저장**을 선택합니다.
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>도메인 조인 프로필 만들기 및 할당
 
-1. **Microsoft Intune**에서 **장치 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
+1. [Intune](https://aka.ms/intuneportal)에서 **디바이스 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
 2. 다음 속성을 입력합니다.
    - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.
    - **설명**: 설정에 대한 설명을 입력합니다.
    - **플랫폼**: **Windows 10 이상**을 선택합니다.
    - **프로필 유형**: **도메인 조인(미리 보기)** 을 선택합니다.
-3.  **설정**을 선택하고, **컴퓨터 이름 접두사**, **도메인 이름** 및 **조직 구성 단위**(선택 사항)를 제공합니다. 
+3. **설정**을 선택하고, **컴퓨터 이름 접두사**, **도메인 이름** 및 **조직 구성 단위**(선택 사항)를 제공합니다. 
 4. **확인** > **만들기**를 선택합니다. 프로필이 만들어지고 목록에 표시됩니다.
 5. 프로필을 할당하려면 [장치 프로필 할당](device-profile-assign.md#assign-a-device-profile) 아래의 단계를 수행합니다. 
 

@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c58cc56672409d954c4bf0b2829ea23d1b0a93df
-ms.sourcegitcommit: b01c607fc666254c560f5b60bd8a0def8e48197c
+ms.openlocfilehash: 3348f5e9673de410516cb2e2b774e20a4f17b036
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132472"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51577007"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune의 새로운 기능 - 지난 달
 
@@ -39,14 +39,14 @@ Azure Portal에서 Intune은 막 만료될 iOS LOB(기간 업무) 애플리케�
 
 16진수 코드를 사용하여 회사 포털 앱에서 테마 색을 사용자 지정할 수 있습니다. 16진수 코드를 입력하면 Intune은 텍스트 색과 배경색 간의 대비가 가장 높은 텍스트 색을 결정합니다. **클라이언트 앱** > **회사 포털**에서 텍스트 색과 회사 로고를 미리 볼 수 있습니다.
 
-### <a name="including-and-excluding-app-assignment-based-on-groups-for-android-enterprise----1813081---"></a>Android 엔터프라이즈에 대한 그룹에 따라 앱 할당 포함 및 제외 <!-- 1813081 -->
+### <a name="including-and-excluding-app-assignment-based-on-groups-for-android-enterprise----1813081---"></a>Android Enterprise에 대한 그룹에 따라 앱 할당 포함 및 제외 <!-- 1813081 -->
 
-Android 엔터프라이즈(이전의 Android for Work)는 그룹 포함 및 제외를 지원하지만 미리 만들어진 **모든 사용자** 및 **모든 장치** 기본 제공 그룹은 지원하지 않습니다. 자세한 내용은 [Microsoft Intune에서 앱 할당 포함 및 제외](apps-inc-exl-assignments.md)를 참조하세요.
+Android Enterprise(이전의 Android for Work)는 그룹 포함 및 제외를 지원하지만 미리 만들어진 **모든 사용자** 및 **모든 장치** 기본 제공 그룹은 지원하지 않습니다. 자세한 내용은 [Microsoft Intune에서 앱 할당 포함 및 제외](apps-inc-exl-assignments.md)를 참조하세요.
 
 
 ### <a name="device-management"></a>장치 관리
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>모든 장치를 IE, Edge 또는 Chrome의 CSV 파일로 내보내기 <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>모든 디바이스를 IE, Microsoft Edge 또는 Chrome의 CSV 파일로 내보내기 <!-- 2258071 -->
 **장치** > **모든 장치**에서 장치를 CSV로 서식이 지정된 목록으로 **내보낼** 수 있습니다. 10,000개 이상의 장치가 있는 IE(Internet Explorer) 사용자는 해당 장치를 여러 파일로 성공적으로 내보낼 수 있습니다. 각 파일에는 최대 10,000개의 장치가 있습니다.
 
 30,000개 이상의 장치가 있는 Edge 및 Chrome 사용자는 해당 장치를 여러 파일로 성공적으로 내보낼 수 있습니다. 각 파일에는 최대 30,000개의 장치가 있습니다.
@@ -218,7 +218,7 @@ Windows 10 RS1 이상에서 장치가 실행 중인 경우 스토어에서 Windo
 
 #### <a name="mam-protection-policies-targeted-based-on-management-state----1665993---"></a>관리 상태에 따라 대상으로 지정된 MAM 보호 정책 <!-- 1665993 -->
 장치의 관리 상태에 따라 MAM 정책을 대상으로 지정할 수 있습니다.
-- **Android 장치** - 관리되지 않는 장치, Intune 관리 장치 및 Intune 관리 Android 엔터프라이즈 프로필(이전의 Android for Work)을 대상으로 지정할 수 있습니다.
+- **Android 장치** - 관리되지 않는 장치, Intune 관리 장치 및 Intune 관리 Android Enterprise 프로필(이전의 Android for Work)을 대상으로 지정할 수 있습니다.
 - **iOS 장치** - 관리되지 않는 장치(MAM만 해당) 또는 Intune 관리 장치를 대상으로 지정할 수 있습니다.
 
     > [!NOTE]
@@ -296,8 +296,8 @@ Windows Defender의 상태를 이해하는 것은 Windows PC 관리의 핵심입
 - **사용자 작업 게시**: 작업 전환기에서 공유 경험 및 최근에 사용된 리소스 검색을 차단하려면 이 옵션을 **차단**으로 설정합니다.
 - **로컬 작업만**: 로컬 작업에 대해서만 작업 전환기에서 공유 경험 및 최근에 사용된 리소스 검색을 차단하려면 이 옵션을 **차단**으로 설정합니다.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Microsoft Edge 브라우저에 대한 새 설정 <!--1469166 -->
-Microsoft Edge 브라우저에서는 [두 가지 새로운 설정](device-restrictions-windows-10.md#edge-browser)인 **자주 사용하는 파일 경로** 및 **즐겨찾기에 대한 변경**을 사용할 수 있습니다.
+#### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Microsoft Edge 브라우저에 대한 새 설정 <!--1469166 -->
+Microsoft Edge 브라우저가 있는 디바이스에 대해 이제 [두 가지 새로운 설정](device-restrictions-windows-10.md#microsoft-edge-browser)인 **자주 사용하는 파일 경로** 및 **즐겨찾기에 대한 변경**을 사용할 수 있습니다.
 
 ### <a name="app-management"></a>앱 관리
 
@@ -1038,7 +1038,7 @@ Android용 회사 포털 앱은 [Play 스토어에서 회사 포털](https://pla
 
 ### <a name="block-unsupported-samsung-knox-device-enrollment----1490695---"></a>지원되지 않는 Samsung Knox 장치 등록 차단  <!-- 1490695 -->
 
-회사 포털 앱은 지원되는 Samsung Knox 장치만을 등록하려고 합니다. Knox 활성화 오류로 인해 MDM 등록이 차단되는 경우를 방지하기 위해 장치가 [Samsung에서 게시한 장치 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 나타나는 경우에만 장치 등록을 시도합니다. 모든 Samsung 장치에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. 구매하고 배포하기 전에 장치 재판매인과 함께 KNOX 호환성을 검사합니다. [Android 및 Samsung Knox Standard 정책 설정](/intune/supported-devices-browsers.md#intune-supported-web-browsers)에서 확인된 장치의 전체 목록을 찾을 수 있습니다.
+회사 포털 앱은 지원되는 Samsung KNOX 장치만을 등록하려고 합니다. Knox 활성화 오류로 인해 MDM 등록이 차단되는 경우를 방지하기 위해 장치가 [Samsung에서 게시한 장치 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 나타나는 경우에만 장치 등록을 시도합니다. 모든 Samsung 장치에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. 구매하고 배포하기 전에 장치 재판매인과 함께 KNOX 호환성을 검사합니다. [Android 및 Samsung Knox Standard 정책 설정](/intune/supported-devices-browsers.md#intune-supported-web-browsers)에서 확인된 장치의 전체 목록을 찾을 수 있습니다.
 
 ### <a name="end-of-support-for-android-43-and-lower----1171126-1326920---"></a>Android 4.3 및 이전 버전에 대한 지원 종료 <!-- 1171126, 1326920 -->
 관리되는 앱과 Android용 회사 포털 앱이 회사 리소스에 액세스하려면 Android 4.4 이상이 필요합니다. 12월까지 등록된 모든 장치는 12월에 강제 사용 중지되며, 따라서 회사 리소스에 액세스할 수 없게 됩니다. MDM 없이 앱 보호 정책을 사용 중인 경우 앱이 업데이트를 받지 못하며 해당 환경 품질이 시간이 흐름에 따라 저하됩니다.

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8ae7a15f623b82cabed5314c4770c2edef902414
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 891b50b2280636c7a5df8ecc1a01bb10723122b5
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253564"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576739"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune 장치 관리란?
 
@@ -37,7 +37,7 @@ IT 관리자의 경우 관리되는 장치가 위험으로부터 해당 데이�
    - **개요**는 등록된 장치에 대한 시각적 스냅숏을 표시하고 또한 얼마나 많은 장치가 Android, iOS 등을 포함한 다른 플랫폼을 사용하는지를 표시합니다.
    - **모든 장치** - 관리하는 등록된 장치의 목록을 표시합니다.
 
-     **내보내기** 기능을 사용하여 10,000개(Internet Explorer) 또는 30,000개(Edge, Chrome)씩 늘어나도록 모든 장치의 .csv 목록을 만듭니다.
+     **내보내기** 기능을 사용하여 10,000개(Internet Explorer) 또는 30,000개(Microsoft Edge, Chrome)씩 늘어나도록 모든 디바이스의 .csv 목록을 만듭니다.
 
      하드웨어 세부 정보, 설치된 앱, 해당 준수 정책 상태 등을 포함해 [해당 장치에 대한 추가 세부 정보 보기](device-inventory.md)하려면 모든 장치를 선택합니다.
 

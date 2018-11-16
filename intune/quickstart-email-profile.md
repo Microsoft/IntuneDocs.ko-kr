@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231953"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225750"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>빠른 시작: iOS에 대한 이메일 장치 프로필 만들기
 
@@ -69,7 +69,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="next-steps"></a>다음 단계
 
-이 빠른 시작에서는 iOS 장치에 대한 이메일 프로필을 만들었습니다. 이제 이 프로필을 사용하여 프로필과 일치하지 않는 iOS 장치를 비준수로 표시하는 준수 정책을 만들어서 iOS 장치의 규정 준수 여부를 확인할 수 있습니다. 보다 강력한 보호를 원하는 경우 비준수 iOS 장치의 이메일 액세스를 차단하는 조건부 액세스 정책을 만들면 됩니다.
+이 빠른 시작에서는 iOS 장치에 대한 이메일 프로필을 만들었습니다. 이제 이 프로필을 사용하여 프로필과 일치하지 않는 iOS 장치를 비준수로 표시하는 준수 정책을 만들어서 iOS 장치의 규정 준수 여부를 확인할 수 있습니다. 보다 강력한 보호를 원하는 경우 비준수 iOS 장치의 이메일 액세스를 차단하는 조건부 액세스 정책을 만들면 됩니다. 장치 준수 정책에 대한 자세한 내용은 [Intune에서 장치 준수 정책 시작](device-compliance-get-started.md)을 참조하세요.
 
 > [!div class="nextstepaction"]
-> [Intune에서 장치 준수 정책 시작](device-compliance-get-started.md)
+> [자습서: 관리 디바이스에서 Exchange Online 이메일 보호](tutorial-protect-email-on-enrolled-devices.md)

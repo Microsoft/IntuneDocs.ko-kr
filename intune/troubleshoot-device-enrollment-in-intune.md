@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237666"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511040"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune에서 장치 등록 문제 해결
 
@@ -391,6 +391,28 @@ VPP 토큰에서 발생한 문제를 해결한 후에 차단된 장치를 초기
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>등록 프로세스를 다시 시작한다고 사용자에게 알립니다.
 차단된 장치를 초기화한 후에 등록 프로세스를 다시 시작한다고 사용자에게 알릴 수 있습니다.
+
+## <a name="macos-issues"></a>macOS 문제
+
+### <a name="macos-enrollment-errors"></a>macOS 등록 오류
+**오류 메시지 1**: *가상 머신을 사용하는 것 같습니다. 일련 번호 및 하드웨어 모델을 포함하여 가상 머신을 완전히 구성했는지 확인합니다. 가상 머신이 아닌 경우 지원 부서에 문의하세요.*  
+
+**오류 메시지 2**: *디바이스를 관리하는 데 문제가 있습니다. 이 문제는 가상 머신을 사용 중이거나 제한된 일련 번호가 있거나 이 디바이스가 이미 다른 사용자에게 할당된 경우 발생할 수 있습니다. 이러한 문제를 해결하는 방법을 알아보거나 회사 지원 부서에 문의하세요.*
+
+**문제:** 이 메시지는 다음과 같은 이유로 인해 발생할 수 있습니다.  
+* macOS VM(가상 머신)이 올바르게 구성되지 않았습니다.  
+* 디바이스가 회사 소유이거나 Intune에 등록된 디바이스 일련 번호가 필요한 디바이스 제한을 사용하도록 설정했습니다.  
+* 디바이스가 이미 등록되어 있고 Intune의 다른 사용자에게 할당되어 있습니다.  
+
+**해결 방법:** 먼저 사용자에게 확인하여 디바이스에 영향을 주는 문제를 확인합니다. 그런 다음, 가장 관련성이 높은 다음 솔루션을 완료합니다.
+* 사용자가 테스트를 위해 VM을 등록하는 경우 Intune이 일련 번호와 하드웨어 모델을 인식할 수 있도록 VM이 완전히 구성되었는지 확인합니다. Intune에서 [VM을 설정](macos-enroll.md#enroll-virtual-macos-machines-for-testing)하는 방법에 대해 자세히 알아보세요.  
+* 조직에서 개인 macOS 디바이스를 차단하는 등록 제한을 설정하는 경우 수동으로 [개인 디바이스 일련 번호 추가](corporate-identifiers-add.md#manually-enter-corporate-identifiers)를 Intune에 추가해야 합니다.  
+* 디바이스가 Intune의 다른 사용자에게 여전히 할당된 경우 이전 소유자가 회사 포털 앱을 사용하여 디바이스를 제거하거나 재설정하지 않았습니다. Intune에서 부실 디바이스 레코드를 정리하려면:  
+
+    1. [Azure Portal의 Intune](https://portal.manage.microsoft.com)으로 이동하여 관리 자격 증명을 사용하여 로그인합니다.
+    2. Intune > **디바이스** > **모든 디바이스**로 이동합니다.  
+    3. 등록 문제가 있는 디바이스를 찾습니다. 디바이스 이름 또는 MAC/HW 주소로 검색하여 결과를 좁힙니다.
+    4. 디바이스 > **삭제**를 선택합니다. 디바이스와 연결된 다른 모든 항목을 삭제합니다.  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager with Intune 사용 시 문제
 ### <a name="mobile-devices-disappear"></a>모바일 장치가 사라집니다.

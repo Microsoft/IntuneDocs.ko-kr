@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150110"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561944"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune에서 SCEP 및 PKCS 인증서 제거
 
@@ -131,7 +131,7 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 관리자가 Azure AD에서 사용자 또는 그룹을 제거하는 경우
   - 관리자가 PKCS 프로필을 변경하거나 업데이트하는 경우
 
-## <a name="android--android-enterprise-devices"></a>Android 및 Android 엔터프라이즈 장치
+## <a name="android-knox-devices"></a>Android KNOX 디바이스
 
 #### <a name="scep-certificates"></a>SCEP 인증서
 
@@ -177,6 +177,10 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 관리자가 PKCS 프로필을 변경하거나 업데이트하는 경우
   - 구성 프로필은 그룹 할당에서 제거됩니다.
   - 준수 정책은 그룹 할당에서 제거됩니다. 
+  
+  
+> [!NOTE]
+> Android for work 디바이스는 위의 시나리오에 대해 유효성이 검사되지 않았습니다. Android 레거시 디바이스(삼성이 아닌 모든 비작업 프로필 디바이스)는 인증서를 제거할 수 없습니다. 
 
 ## <a name="macos-certificates"></a>macOS 인증서
 

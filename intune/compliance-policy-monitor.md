@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
-ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
+ms.openlocfilehash: 8711b4c71c3581bde9ed1de8a5cc02f6b1a07ca7
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410366"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576905"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 장치 준수 정책 모니터링
 
@@ -88,9 +88,7 @@ ms.locfileid: "49410366"
 
 ![해당 특정 상태의 장치에 대한 자세한 정보를 보여주는 대시보드 이미지](./media/compliance-policy-monitor/drill-down-details.png)
 
-특정 사용자가 소유하는 모든 장치를 보려는 경우 사용자의 이메일을 입력하여 차트 보고서를 필터링하면 됩니다.
-
-![해당 특정 사용자에 대한 모든 장치를 표시하도록 이메일 주소 필터링](./media/compliance-policy-monitor/idc-3.png)
+특정 사용자가 소유하는 모든 디바이스를 보려는 경우 사용자의 이메일을 입력하여 차트 보고서를 필터링할 수도 있습니다.
 
 #### <a name="filter-and-columns"></a>필터 및 열
 

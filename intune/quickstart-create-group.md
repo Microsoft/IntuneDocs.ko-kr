@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b52265bb9b3df800c0e13450a2154e46098a933
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: e85a88b984aaa05423a35f222de9c56d7366d15a
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410823"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511012"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>빠른 시작: 사용자 관리를 위한 그룹 만들기
 
@@ -57,7 +57,9 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="next-steps"></a>다음 단계
 
-이 빠른 시작에서는 Intune을 사용하여 기존 사용자를 기반으로 그룹을 만들었습니다.
+이 빠른 시작에서는 Intune을 사용하여 기존 사용자를 기반으로 그룹을 만들었습니다. Intune에 그룹을 추가하는 방법에 대한 자세한 내용은 [사용자 및 디바이스를 구성하는 그룹 추가](groups-add.md)를 참조하세요.
+
+Intune 빠른 시작의 이 시리즈를 수행하려면 다음 빠른 시작을 계속 진행하세요.
 
 > [!div class="nextstepaction"]
-> [장치 준수 정책 만들기](quickstart-create-policy.md)
+> [빠른 시작: Windows 10 디바이스에 대한 자동 등록 설정](quickstart-setup-auto-enrollment.md)

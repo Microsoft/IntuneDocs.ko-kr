@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: 0c2a4ff4654b937449f8e7a36778a67a978bd6db
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357090"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576871"
 ---
-# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 인터넷 액세스 관리
+# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 인터넷 액세스 관리
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -50,7 +50,7 @@ Android 및 iOS 이전 버전에서도 계속 Managed Browser를 사용할 수�
 
 ## <a name="application-protection-policies-for-protected-browsers"></a>보호되는 브라우저에 대한 응용 프로그램 보호 정책
 
-Edge와 Managed Browser에는 Intune SDK가 통합되어 있으므로 다음을 비롯한 앱 보호 정책을 적용할 수도 있습니다.
+Microsoft Edge와 Managed Browser에는 Intune SDK가 통합되어 있으므로 다음을 비롯한 앱 보호 정책을 적용할 수도 있습니다.
 - 잘라내기, 복사 및 붙여넣기 사용 제어
 - 화면 캡처 방지
 - 회사 링크가 관리되는 앱 및 브라우저 내에서만 열리는지 확인
@@ -65,7 +65,7 @@ Edge와 Managed Browser에는 Intune SDK가 통합되어 있으므로 다음을 
 
 >[!NOTE]
 >사용자가 앱 스토어에서 Managed Browser를 설치했는데 Intune에서 Managed Browser를 관리하지 않는 경우에는 Managed Browser를 기본 웹 브라우저로 사용할 수 있습니다. 이 경우 Microsoft MyApps 사이트를 통해 Single Sign-On이 지원됩니다. 사용자는 MyApps 사이트로 직접 이동되며, 여기서 프로비저닝된 모든 SaaS 응용 프로그램을 확인할 수 있습니다.
-Managed Browser 또는 Edge는 Intune에서 관리되지 않는 동시에 다른 Intune 관리 응용 프로그램의 데이터에 액세스할 수 없습니다. 
+Managed Browser 또는 Microsoft Edge는 Intune에서 관리되지 않는 동시에 다른 Intune 관리 애플리케이션의 데이터에 액세스할 수 없습니다. 
 
 
 ## <a name="conditional-access-for-protected-browsers"></a>보호된 브라우저에 대한 조건부 액세스
@@ -83,7 +83,7 @@ Azure AD 연결 웹앱이 모바일 플랫폼에서 Intune Managed Browser를 �
 
 5. **할당** 섹션에서 **조건** > **클라이언트 앱**을 선택합니다. **클라이언트 앱** 블레이드가 표시됩니다.
 6. **구성** 아래에서 **예**를 클릭하여 특정 클라이언트 앱에 정책을 적용합니다.
-7. **브라우저**가 클라이언트 앱으로 선택되었는지 확인합니다.
+7. **브라우저**가 클라이언트 앱으로 선택되었는지 확인하세요.
 
     ![Azure AD - Managed Browser - 클라이언트 앱 선택](./media/managed-browser-conditional-access-02.png)
 
@@ -151,30 +151,30 @@ Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 응용 프�
 - Azure AD 응용 프로그램 프록시를 통해 내부 응용 프로그램을 설정합니다.
     - 응용 프로그램 프록시를 구성하고 응용 프로그램을 게시하려면 [설정 설명서](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)를 참조하세요. 
 - 최소 버전 1.2.0의 Managed Browser 앱을 사용해야 합니다.
-- Managed Browser 또는 Edge 앱의 사용자는 [Intune 앱 보호 정책]( app-protection-policy.md)이 앱에 할당되어 있습니다.
+- Managed Browser 또는 Microsoft Edge 앱의 사용자에게는 [Intune 앱 보호 정책]( app-protection-policy.md)이 앱에 할당되어 있습니다.
 
     > [!NOTE]
-    > 업데이트된 응용 프로그램 프록시 리디렉션 데이터는 Managed Browser 및 Edge에 적용되는 데 최대 24시간이 걸릴 수 있습니다.
+    > 업데이트된 애플리케이션 프록시 리디렉션 데이터는 Managed Browser 및 Microsoft Edge에 적용되는 데 최대 24시간이 걸릴 수 있습니다.
 
 
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>1단계: Outlook에서 보호되는 브라우저로 자동 리디렉션 사용 설정
 **Managed Browser에서 표시할 수 있는 웹 콘텐츠 제한** 설정을 사용하도록 설정하는 앱 보호 정책으로 Outlook이 구성되어 있어야 합니다.
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>2단계: 보호되는 브라우저에 대해 할당되는 앱 구성 정책 할당
-이 절차에서는 앱 프록시 리디렉션을 사용하도록 Managed Browser 또는 Edge 앱을 구성합니다. Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
+이 절차에서는 앱 프록시 리디렉션을 사용하도록 Managed Browser 또는 Microsoft Edge 앱을 구성합니다. Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
 
 | Key                                                             | 값    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-온-프레미스 웹앱에 원활한(및 보호된) 액세스와 함께 Managed Browser, Edge 및 Azure Active Directory 응용 프로그램 프록시를 사용하는 방법에 대한 자세한 내용은 Enterprise Mobility + Security 블로그 게시물 [연계를 통해 성능 향상: 사용자 액세스를 개선하려는 Intune 및 Azure Active Directory 팀](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)을 참조하세요.
+온-프레미스 웹앱에 원활한(및 보호된) 액세스와 함께 Managed Browser, Microsoft Edge 및 Azure AD 애플리케이션 프록시를 사용하는 방법에 대한 자세한 내용은 Enterprise Mobility + Security 블로그 게시물 [연계를 통해 성능 향상: 사용자 액세스를 개선하려는 Intune 및 Azure Active Directory 팀](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)을 참조하세요.
 
 > [!NOTE]
-> Edge는 Managed Browser와 동일한 키와 값 쌍을 사용합니다. 
+> Microsoft Edge는 Managed Browser와 동일한 키와 값 쌍을 사용합니다. 
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>보호된 브라우저에 대해 홈페이지를 구성하는 방법
 
-이 설정을 사용하면 보호되는 브라우저를 시작하거나 새 탭을 만들 때 사용자에게 표시되는 홈페이지를 구성할 수 있습니다. Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
+이 설정을 사용하면 보호되는 브라우저를 시작하거나 새 탭을 만들 때 사용자에게 표시되는 홈페이지를 구성할 수 있습니다. Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
 
 |                                Key                                |                                                           값                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -182,13 +182,13 @@ Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 응용 프�
 
 ## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>보호된 브라우저에 대해 책갈피를 구성하는 방법
 
-이 설정을 사용하면 Edge 또는 Managed Browser의 사용자에게 제공되는 책갈피 집합을 구성할 수 있습니다.
+이 설정을 사용하면 Microsoft Edge 또는 Managed Browser의 사용자에게 제공되는 책갈피 집합을 구성할 수 있습니다.
 
 - 이 책갈피는 사용자가 삭제하거나 수정할 수 없습니다.
 - 이 책갈피는 목록 맨 위에 표시됩니다. 사용자가 만드는 모든 책갈피는 이 책갈피 아래에 표시됩니다.
 - 앱 프록시 리디렉션을 사용한 경우 내부 또는 외부 URL 중 하나를 사용하여 앱 프록시 웹앱을 추가할 수 있습니다.
 
-Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
+Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
 
 |                                Key                                 |                                                                                                                                                                                                                                                         값                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -196,7 +196,7 @@ Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다�
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>보호되는 브라우저에 대해 허용 URL 및 차단 URL을 지정하는 방법
 
-Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
+Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
 
 |Key|값|
 |-|-|

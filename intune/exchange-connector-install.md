@@ -15,12 +15,12 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12ab106b44d217d7e7b4b1a466fd5b12a9fb528
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: c24630dd3cc45b35e6313e9e66db74a548bb0851
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231834"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298108"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure에서 Intune 온-프레미스 Exchange Connector 설정
 
@@ -43,7 +43,7 @@ Microsoft Intune에서 온-프레미스 Exchange Server와 통신할 수 있도�
 |            요구 사항             |                                                                                                                                                                                                        추가 정보                                                                                                                                                                                                        |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         운영 체제          |                                                               Intune은 Windows Server 2008 SP2 64비트, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 또는 Windows Server 2016의 모든 버전을 실행하는 컴퓨터에서 온-프레미스 Exchange Connector를 지원합니다.<br /><br />이 커넥터는 Server Core 설치에서 지원되지 않습니다.                                                                |
-|         Microsoft Exchange         |                                                                           온-프레미스 커넥터를 사용하려면 Microsoft Exchange 2010 SP1 이상 또는 레거시 Exchange Online Dedicated가 필요합니다. Exchange Online Dedicated 환경이 <strong>신규</strong>인지 아니면 <strong>레거시</strong> 구성 상태인지 확인하려면 계정 관리자에게 문의하세요.                                                                           |
+|         Microsoft Exchange         |                                                                           온-프레미스 커넥터를 사용하려면 Microsoft Exchange 2010 SP3 이상 또는 레거시 Exchange Online Dedicated가 필요합니다. Exchange Online Dedicated 환경이 <strong>신규</strong>인지 아니면 <strong>레거시</strong> 구성 상태인지 확인하려면 계정 관리자에게 문의하세요.                                                                           |
 | 모바일 장치 관리 기관 |                                                                                                                              [Intune으로 모바일 장치 관리 기관 설정](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).                                                                                                                               |
 |              하드웨어              |                                                                                                                                                     커넥터를 설치하는 컴퓨터에는 1.6GHz CPU, 2GB RAM 및 10GB의 사용 가능한 디스크 공간이 필요합니다.                                                                                                                                                      |
 |  Active Directory 동기화  |                                                                                      커넥터를 사용하여 Exchange Server에 Intune을 연결하려면, 먼저 로컬 사용자 및 보안 그룹이 Azure Active Directory의 인스턴스와 동기화되도록 [Active Directory 동기화를 설정](users-add.md)해야 합니다.                                                                                      |
@@ -70,7 +70,7 @@ Microsoft Intune에서 온-프레미스 Exchange Server와 통신할 수 있도�
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>온-프레미스 Exchange Connector 소프트웨어 설치 패키지 다운로드
 
-1. 온-프레미스 Exchange Connector에 지원되는 Windows Server 운영 체제에서 [Azure Portal](http://portal.azure.com)을 열고, 온-프레미스 Exchange Server의 관리자이고 Exchange Server를 사용하기 위한 라이선스가 있는 사용자 계정으로 로그인합니다.
+1. 온-프레미스 Exchange Connector에 지원되는 Windows Server 운영 체제에서 [Azure Portal](http://portal.azure.com)을 열고, 온-프레미스 Exchange Server의 관리자이며 Exchange Server를 사용하기 위한 라이선스가 있는 사용자 계정으로 로그인합니다.
 
 2. 왼쪽 메뉴에서 **모든 서비스**를 선택한 다음, 텍스트 상자 필터에 **Intune**을 입력합니다.
 

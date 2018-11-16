@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025239"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576973"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-매주 Microsoft Intune에 추가되는 새로운 기능에 대해 알아봅니다. [예정된 변경](#whats-coming), 서비스 관련 [중요 공지](#notices) 및 [이전 릴리스](whats-new-archive.md) 관련 정보에 대해서도 알아볼 수 있습니다. 일부 기능은 몇 주에 걸쳐 출시될 수 있고 첫 번째 주에는 모든 고객에게 제공되지 않습니다.
+매주 Microsoft Intune에 추가되는 새로운 기능에 대해 알아봅니다. 예정된 변경, [중요 공지](#notices) 및 [이전 릴리스](whats-new-archive.md)에 대한 정보도 확인할 수 있습니다. 일부 기능은 몇 주에 걸쳐 출시될 수 있고 첫 번째 주에는 모든 고객에게 제공되지 않습니다.
 
 > [!Note]
 > 하이브리드 MDM(모바일 장치 관리)의 새로운 기능에 대한 자세한 내용은 [하이브리드의 새로운 기능 페이지](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)를 참조하세요.
@@ -41,6 +41,21 @@ ms.locfileid: "51025239"
 ### Role-based access control
 
 -->     
+## <a name="week-of-november-5-2018"></a>2018년 11월 5일 주
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>iOS 메일 프로필에서 iOS 12 OAuth 지원 <!--2155106 -->
+
+Intune의 iOS 이메일 프로필은 iOS 12 OAuth(Open Authorization)를 지원합니다. 이 기능을 확인하려면 새 프로필(플랫폼용 **디바이스 구성** > **프로필** > **프로필 만들기** > **iOS** > 프로필 유형에 대한 **이메일**)을 만들거나 기존 iOS 이메일 프로필을 업데이트합니다. 사용자에게 이미 배포된 프로필에서 OAuth를 사용하도록 설정하면 사용자에게 다시 인증하고 이메일을 다시 다운로드하라는 메시지가 표시됩니다.
+
+[iOS 이메일 프로필](email-settings-ios.md)에는 이메일 프로파일에서 OAuth 사용에 대한 자세한 정보가 있습니다.
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>하이브리드 Azure Active Directory 조인 장치에 대한 Autopilot 지원(미리 보기) <!-- 1048100-->
+이제 Autopilot을 사용하여 하이브리드 Azure Active Directory 조인 장치를 설정할 수 있습니다. 하이브리드 Autopilot 기능을 사용하려면 장치가 조직의 네트워크에 조인되어 있어야 합니다. 자세한 내용은 [Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure AD 조인 장치 배포](windows-autopilot-hybrid.md)를 참조하세요.
+이 기능은 앞으로 며칠 동안 사용자 기반 전체에 롤아웃됩니다. 따라서 계정에 롤아웃될 때까지 다음 단계를 수행하지 못할 수도 있습니다.
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>웹 데이터에 대한 APP(앱 보호 정책) 설정 <!-- 2662995  -->
+Android 및 iOS 디바이스의 웹 콘텐츠에 대한 APP 정책 설정은 iOS 유니버설 링크 및 Android 앱 링크를 통한 데이터 전송을 비롯하여 http 및 https 웹 링크를 모두 더 잘 처리하기 위해 업데이트됩니다.  
+
 ## <a name="week-of-october-29-2018"></a>2018년 10월 29일이 있는 주
 
 
@@ -112,10 +127,6 @@ Autopilot 프로필을 모든 장치 가상 그룹에 할당할 수 있습니다
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>새 Azure Active Directory 사용 약관 기능 <!-- 2870393 -->
 Azure Active Directory에는 기존 Intune 사용 약관을 대신 사용할 수 있는 사용 약관 기능이 있습니다. Azure AD 사용 약관은 표시할 조건 및 표시 방법에 있어서 유연성을 높이고 보다 나은 현지화 지원을 제공하며, 사용 약관을 렌더링하는 방식을 보다 잘 제어하고 보고 기능을 개선할 수 있도록 지원합니다. Azure AD 사용 약관 기능을 사용하려면 Enterprise Mobility + Security E3 도구 모음의 일부이기도 한 Azure Active Directory Premium P1이 필요합니다. 자세한 내용은 [사용자 액세스 문서에 대한 회사의 사용 약관 관리](terms-and-conditions-create.md)를 참조하세요.
 
-### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>하이브리드 Azure Active Directory 조인 장치에 대한 Autopilot 지원(미리 보기) <!-- 1048100-->
-이제 Autopilot을 사용하여 하이브리드 Azure Active Directory 조인 장치를 설정할 수 있습니다. 하이브리드 Autopilot 기능을 사용하려면 장치가 조직의 네트워크에 조인되어 있어야 합니다. 자세한 내용은 [Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure AD 조인 장치 배포](windows-autopilot-hybrid.md)를 참조하세요.
-이 기능은 앞으로 며칠 동안 사용자 기반 전체에 롤아웃됩니다. 따라서 계정에 롤아웃될 때까지 다음 단계를 수행하지 못할 수도 있습니다.
-
 ### <a name="android-device-owner-mode-support---3188762--"></a>Android 장치 소유자 모드 지원 <!--3188762-->
 Samsung Knox 모바일 등록의 경우 이제 Intune에서 장치를 Android 장치 소유자 모드로 등록할 수 있습니다. WiFi 또는 셀룰러 네트워크의 사용자는 장치를 처음 켤 때 몇 번만 탭하면 등록할 수 있습니다. 자세한 내용은 [삼성 Knox 모바일 등록을 사용하여 Android 장치 자동 등록](android-samsung-knox-mobile-enroll.md)을 참조하세요.
 
@@ -130,7 +141,10 @@ Intune 앱 보호 정책을 사용하면 Microsoft Outlook 및 Microsoft Word와
 - **액세스 요구 사항** - 이 그룹에는 최종 사용자가 작업 컨텍스트에 맞게 앱에 액세스하는 방법을 결정하는 앱별 PIN 옵션이 포함되어 있습니다.  
 - **조건부 시작** - 이 그룹에는 최소 OS 설정, 탈옥 및 루팅된 장치 검색, 오프라인 유예 기간과 같은 설정이 포함되어 있습니다.  
   
-설정의 기능은 변경되지 않았지만 정책 작성 흐름에서 작업할 때 더 쉽게 찾을 수 있습니다. 
+설정의 기능은 변경되지 않았지만 정책 작성 흐름에서 작업할 때 더 쉽게 찾을 수 있습니다.
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>새 Intune 디바이스 구독 SKU !--3312071-->
+엔터프라이즈 내 디바이스 관리 비용을 절감하기 위해 새 디바이스 기반 구독 SKU를 이제 사용할 수 있습니다. 이 Intune 디바이스 SKU는 월별로 디바이스당 사용이 허가됩니다. 가격은 라이선스 프로그램에 따라 다릅니다. 이 제품은 직접 채널, EA(기업 계약), Microsoft 제품 및 서비스 프로그램(MPSA), 개방형 및 CSP(Cloud Solution Provider)에서 사용할 수 있습니다.
 
 ### <a name="intune-apps"></a>Intune 앱
 
@@ -146,7 +160,7 @@ Intune에서 최종 사용자의 머신에 Office를 설치하면 최종 사용�
 ### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
 
 #### <a name="new-intune-support-experience-in-the-microsoft-365-device-management-portal----3076965---"></a>Microsoft 365 장치 관리 포털의 새로운 Intune 지원 환경 <!-- 3076965 -->
-[Microsoft 365 장치 관리 포털]( http://devicemanagement.microsoft.com)에서 Intune에 대한 새로운 도움말 및 지원 환경을 롤아웃하고 있습니다. 새 환경을 사용하면 문제를 사용자 고유의 언어로 설명하고, 문제 해결 인사이트와 웹 기반 수정 콘텐츠를 받을 수 있습니다. 이러한 솔루션은 사용자 문의에 따라 구동되는 규칙 기반 머신 러닝 알고리즘을 통해 제공됩니다.  
+[Microsoft 365 장치 관리 포털]( http://devicemanagement.microsoft.com)에서 Intune에 대한 새로운 도움말 및 지원 환경을 롤아웃하고 있습니다. 새 환경을 사용하면 문제를 사용자 고유의 언어로 설명하고, 문제 해결 인사이트와 웹 기반 수정 콘텐츠를 받을 수 있습니다. 이러한 솔루션은 사용자 문의에 따라 구동되는 규칙 기반 기계 학습 알고리즘을 통해 제공됩니다.  
 
 문제별 지침 외에도 새 사례 만들기 워크플로를 사용하여 이메일 또는 전화를 통해 지원 사례를 열 수도 있습니다.  
 
@@ -619,7 +633,7 @@ Microsoft Intune 관리자는 VPP(대량 구매 프로그램)를 통해 구매�
 
 이 기능을 사용하려면 온-프레미스 Active Directory 환경의 `sAMAccountName` 특성을 Azure AD에 동기화해야 합니다.
 
-[Andoid](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 이상](email-settings-windows-10.md)에 적용
+[Android](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 이상](email-settings-windows-10.md)에 적용
 
 #### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a><!-- 1556983 --> 충돌에서 장치 구성 프로필 참조
 **장치 구성**에 기존 프로필의 목록이 표시됩니다. 이 업데이트를 사용하면 충돌하는 프로필에 대한 세부 정보를 제공하는 새 열이 추가됩니다. 충돌하는 행을 선택하여 충돌이 있는 설정 및 프로필을 볼 수 있습니다. 
@@ -675,7 +689,7 @@ Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 Pradeo에서 �
 
 ## <a name="week-of-june-18-2018"></a>2018년 6월 18일 주
 
-### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune 앱 보호 정책용 Edge 모바일 지원<!-- 1817882 -->
+### <a name="microsoft-edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune 앱 보호 정책용 Microsoft Edge 모바일 지원<!-- 1817882 -->
 
 모바일 장치용 Microsoft Edge 브라우저는 이제 Intune에 정의된 앱 보호 정책을 지원합니다.
 
@@ -784,7 +798,7 @@ iOS 및 macOS 장치에 대한 UDID(고유 장치 식별자)를 확인하려면 
 Microsoft Intune MDM 관리 장치에서 앱 설치에 실패하는 경우도 있습니다. 이러한 앱 설치에 실패할 경우, 실패 이유를 파악하거나 문제를 해결하기 어려울 수 있습니다. Microsoft에서는 앱 문제 해결 기능의 공개 미리 보기를 제공합니다. 개별 장치 아래에서 **관리 앱**이라는 새 노드를 확인할 수 있습니다. 여기에는 Intune MDM을 통해 전달된 앱이 나열됩니다. 노드 내부에는 앱 설치 상태 목록이 표시됩니다. 개별 앱을 선택하면 해당 앱에 대한 문제 해결 보기가 표시됩니다. 문제 해결 보기에는 응용 프로그램이 언제 생성, 수정, 대상 지정 및 장치에 전달되었는지를 포함한 앱의 전체 수명 주기기 표시됩니다. 또한 앱 설치에 실패할 경우, 오류 코드 및 오류의 원인에 대한 유용한 메시지가 표시됩니다. 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Intune 앱 보호 정책 및 Microsoft Edge <!-- 1818968 -->
-모바일 장치(iOS 및 Android)용 Microsoft Edge 브라우저에서는 이제 Microsoft Intune 앱 보호 정책을 지원합니다. Edge 응용 프로그램에서 회사 Azure AD 계정으로 로그인하는 iOS 및 Android 장치 사용자는 Intune에서 보호됩니다. iOS 장치에서 **웹 콘텐츠에 대한 Managed Browser 필요** 정책을 사용하면 사용자가 관리되는 Edge에서 링크를 열 수 있습니다.
+모바일 장치(iOS 및 Android)용 Microsoft Edge 브라우저에서는 이제 Microsoft Intune 앱 보호 정책을 지원합니다. Edge 응용 프로그램에서 회사 Azure AD 계정으로 로그인하는 iOS 및 Android 장치 사용자는 Intune에서 보호됩니다. iOS 디바이스에서 **웹 콘텐츠에 대한 관리되는 요구** 정책을 사용하면 관리될 때 사용자가 Microsoft Edge에서 링크를 열 수 있습니다.
 
 ## <a name="week-of-may-14-2018"></a>2018년 5월 14일 주
 
@@ -1010,6 +1024,21 @@ iOS용 회사 포털 앱에 대한 주요 사용자 환경 업데이트가 릴�
 이제 Intune APP(앱 정책 보호) 및 CA(조건부 액세스)를 사용하여 Outlook Mobile에서 온-프레미스 Exchange 데이터에 대한 액세스를 보호할 수 있습니다. Azure Portal 내에서 앱 보호 정책을 추가하거나 수정하려면 **Microsoft Intune** > **클라이언트 앱** > **앱 보호 정책**을 선택합니다. 이 기능을 사용하기 전에 [iOS 및 Android 요구 사항에 대한 Outlook](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)을 충족하는지 확인합니다.
 
 ## <a name="notices"></a>알림
+
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>변경 계획: Intune for Education의 성능 업데이트 <!--1750215-->
+사용자 또는 디바이스에 설정을 할당할 때 속도 및 신뢰성을 높이기 위해 Intune for Education에 몇 가지 업데이트가 추가될 예정입니다. 이러한 변경의 일환으로 11월 말경에 정책 또는 설정 할당을 새 그룹으로 이전할 예정입니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+
+Intune for Education 고객으로서, 두 개의 동적 Azure AD(Azure Active Directory) 그룹인 "모든 사용자" 및 "모든 디바이스"를 갖게 됩니다. 이러한 업데이트를 통해 해당 "모든 사용자" 및 "모든 디바이스" Azure AD 그룹은 Intune for Education 콘솔에 표시되지 않습니다. 그러나 여전히 Azure 콘솔의 Intune에서 볼 수 있으며 "모든 사용자(폐기됨, 사용하지 마세요)" 및 "모든 디바이스(폐기됨, 사용하지 마세요)"로 이름이 변경됩니다.
+
+업데이트가 출시되면 더 이상 Azure AD 그룹을 사용하여 Intune에서 앱과 설정을 할당할 필요가 없습니다. 대신, 이전처럼 "모든 사용자" 및 "모든 디바이스"로 계속 표시되는 Intune for Education 콘솔의 새 그룹으로 설정 할당을 이동할 예정입니다. 이러한 변경 내용은 백엔드에 있으므로 Intune for Education 콘솔에서 다른 점을 발견하지 못합니다. 최종 사용자 또는 등록된 디바이스에 미치는 영향은 없습니다. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+정책 할당을 이동하는 동안 작업을 수행할 필요가 없습니다. 현재 Intune for Education 콘솔에 정책을 할당한 경우 계속 그렇게 수행합니다.
+
+현재 위의 언급한 Azure의 Intune에서 Azure AD 그룹에 정책을 할당하는 경우 대신 Intune for Education 콘솔의 모든 사용자 및 모든 디바이스 그룹에 정책을 할당합니다. 콘솔에서 Azure AD 그룹의 이름이 사용되지 않는 것으로 변경되면 Azure AD에서 정책 할당을 중지합니다. 이름이 변경된 그룹을 현재 다른 용도로 사용하지 않는 경우 삭제해야 합니다.
+
 
 ### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>변경 계획: Intune은 12월에 macOS 10.12 이상을 지원하도록 향상됨 <!--2970975--> 
 

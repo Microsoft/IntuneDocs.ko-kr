@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure에서 Windows Holographic for Business에 대한 장치 제한 | Microsoft Docs
-description: 등록 취소, 지리적 위치, 암호, 앱 스토어에서 앱 설치, Edge에서 쿠키 및 팝업, Windows Defender, 검색, 클라우드 및 저장소, Bluetooth 연결, 시스템 시간, Azure에서 사용량 데이터를 포함하여 Windows Holographic for Business에 대한 Microsoft Intune에서 장치 제한 설정을 읽고 구성합니다.
+description: 등록 취소, 지리적 위치, 암호, 앱 스토어에서 앱 설치, Microsoft Edge에서 쿠키 및 팝업, Windows Defender, 검색, 클라우드 및 스토리지, Bluetooth 연결, 시스템 시간 및 Azure에서 사용량 데이터를 포함하여 Windows Holographic for Business에 대한 Microsoft Intune에서 디바이스 제한 설정을 읽고 구성합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321757"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576803"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Windows Holographic for Business에 대한 장치 제한 설정
 
@@ -41,17 +41,17 @@ ms.locfileid: "39321757"
 -   **신뢰할 수 있는 앱 설치** - 신뢰할 수 있는 인증서로 서명된 앱을 테스트용으로 로드할 수 있습니다.
 -   **개발자의 잠금 해제** - Windows 개발자 설정을 허용합니다(예: 테스트용으로 로드된 앱을 최종 사용자가 수정하도록 허용).
 
-## <a name="edge-browser"></a>Microsoft Edge 브라우저
+## <a name="microsoft-edge-browser"></a>Microsoft Edge 브라우저
 
 -   **쿠키** - 브라우저에서 장치에 인터넷 쿠키를 저장할 수 있도록 합니다.
 -   **팝업** - 브라우저에서 팝업 창을 차단합니다(Windows 10 Desktop에만 적용).
 -   **검색 제안** - 검색 구문을 입력하면 검색 엔진에서 사이트를 제안할 수 있습니다.
--   **암호 관리자** - Edge 암호 관리자 기능을 사용하거나 사용하지 않습니다.
-- **추적 방지 헤더 보내기** - 사용자가 방문하는 웹 사이트에 Do Not Track 헤더를 보내도록 Microsoft Edge 브라우저를 구성합니다
+-   **암호 관리자** - Microsoft Edge 암호 관리자 기능을 사용하거나 사용하지 않습니다.
+- **추적 방지 헤더 보내기** - 사용자가 방문하는 웹 사이트에 추적 방지 헤더를 보내도록 Microsoft Edge 브라우저를 구성합니다.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
-- **Microsoft Edge용 SmartScreen** - 사이트 및 파일 다운로드에 액세스하는 데 Edge SmartScreen을 사용합니다.
+- **Microsoft Edge용 SmartScreen** - 사이트 및 파일 다운로드에 액세스하는 데 Microsoft Edge SmartScreen을 사용하도록 설정합니다.
 
 ## <a name="search"></a>검색
 - **위치 검색** - 검색에서 위치를 사용할 수 있는지를 지정합니다. 정보

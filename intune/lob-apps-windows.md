@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6880d3891891fe27a41d04a118e14ac9d4782b3
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 04c9c6b184fac2082649e8be8e60e6ac3f5a5669
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828179"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212430"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Windows 기간 업무 앱 추가
 
@@ -55,7 +55,7 @@ LOB(기간 업무) 앱은 앱 설치 파일로 추가합니다. 이러한 종류
     - **이름**: 회사 포털에 표시되는 앱 이름을 입력합니다. 사용하는 모든 앱 이름이 고유한지 확인합니다. 동일한 앱 이름을 두 번 사용하는 경우 앱 중 하나만 회사 포털에 표시됩니다.
     - **설명**: 앱에 대한 설명을 입력합니다. 설명은 회사 포털에 표시됩니다.
     - **게시자**: 앱의 게시자 이름을 입력합니다.
-    - **앱 버전 무시**: 앱 개발자가 앱을 자동으로 업데이트하는 경우 **예**로 설정합니다.
+    - **앱 버전 무시**: 앱 개발자가 앱을 자동으로 업데이트하는 경우 **예**로 설정합니다. 이 옵션은 모바일 .msi 앱에만 적용됩니다.
     - **범주**: 기본 제공 앱 범주를 하나 이상 선택하거나 직접 만든 범주를 선택합니다. 범주를 사용하면 사용자가 회사 포털을 탐색할 때 앱을 더 쉽게 찾을 수 있습니다.
     - **회사 포털에서 이 항목을 추천 앱으로 표시**: 사용자가 앱을 찾을 때 회사 포털의 기본 페이지에서 앱이 눈에 잘 띄게 표시됩니다.
     - **정보 URL**: 선택적으로, 앱에 대한 정보가 포함된 웹 사이트의 URL을 입력합니다. URL은 회사 포털에 표시됩니다.

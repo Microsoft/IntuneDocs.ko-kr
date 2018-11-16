@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
-ms.openlocfilehash: fb88f703048eaa122bb406d8adb1fc9face764c4
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: ffc1f0140f98b17e060df3308af779ddcb77549e
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410755"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510927"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>빠른 시작: 사용자를 만들고 라이선스 할당
 
@@ -61,7 +61,9 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="next-steps"></a>다음 단계
 
-이 빠른 시작에서는 사용자를 만들고 해당 사용자에게 라이선스를 할당했습니다. 이제 해당 사용자를 그룹에 할당할 수 있습니다.
+이 빠른 시작에서는 사용자를 만들고 해당 사용자에게 라이선스를 할당했습니다. Intune에 사용자를 추가하는 방법에 대한 자세한 내용은 [사용자 추가 및 Intune에 관리 권한 부여](users-add.md)를 참조하세요.
+
+Intune 빠른 시작의 이 시리즈를 수행하려면 다음 빠른 시작을 계속 진행하세요.
 
 > [!div class="nextstepaction"]
-> [그룹 만들기](quickstart-create-group.md)
+> [빠른 시작: 사용자 관리를 위한 그룹 만들기](quickstart-create-group.md)

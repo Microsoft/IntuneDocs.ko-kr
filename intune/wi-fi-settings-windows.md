@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236478"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298159"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune에서 Windows 10 이상 장치에 대한 Wi-Fi 설정 추가
 
@@ -57,6 +57,9 @@ ms.locfileid: "50236478"
   - **WPA/WPA2-개인**: 좀 더 안전한 옵션으로, Wi-fi 연결에 일반적으로 사용됩니다. 보안을 더욱 강화하려면 미리 공유한 키 암호나 네트워크 키를 입력하면 됩니다. 
 
     - **미리 공유한 키**(PSK): 선택 사항입니다. 보안 유형으로 **WPA/WPA2-개인**을 선택하면 표시됩니다. 조직의 네트워크를 설정하거나 구성할 때 암호 또는 네트워크 키도 구성합니다. PSK 값에 이 암호 또는 네트워크 키를 입력합니다. 8-64자의 문자열을 입력합니다. 암호 또는 네트워크 키가 64자일 경우 16진수 문자를 입력하세요.
+    
+      > [!NOTE]
+      > Wi-Fi 프로필을 저장하면 보안상의 이유로 입력한 PSK 값이 표시되지 않습니다. PSK가 프로필에 저장되더라도 미리 공유한 키 워터마크에는 **구성되지 않음**이 계속 표시됩니다. PSK를 변경하려면 새 키를 입력하고 프로필을 저장합니다. PSK를 저장하고 정책을 편집한 다음, PSK를 비워 두면 기존 PSK가 계속 사용됩니다.
 
 - **회사 프록시 설정**: 조직 내에서 프록시 설정을 사용하도록 선택합니다. 옵션은 다음과 같습니다.
   - **없음**: 프록시 설정을 구성하지 않습니다.

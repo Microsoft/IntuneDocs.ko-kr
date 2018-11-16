@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
+ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679256"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276118"
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>장치를 등록하면 회사에 어떤 정보가 표시되나요?
+# <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>내 디바이스를 등록하면 조직에 어떤 정보가 표시되나요?
 
-사용자가 Microsoft Intune에 장치를 등록할 때 사용자의 회사는 개인 정보를 볼 수 없습니다. 사용자는 장치를 등록할 때 장치 모델 및 일련 번호와 같은 장치의 특정 정보를 볼 수 있는 권한을 회사에 부여합니다. 회사는 이 정보를 사용하여 장치의 회사 데이터를 보호합니다.
+Microsoft Intune에 디바이스를 등록할 때 조직에서 개인 정보를 볼 수 없습니다. 디바이스를 등록할 때 디바이스 모델 및 일련 번호와 같은 디바이스의 특정 정보를 볼 수 있는 권한을 조직에 부여합니다. 조직은 이 정보를 사용하여 디바이스의 회사 데이터를 보호합니다.
 
-**회사에서 절대로 볼 수 없는 사항:**
+**조직에서 절대 볼 수 없는 항목:**
 
 - 호출 및 웹 검색 기록
 - 전자 메일 및 문자 메시지
@@ -35,20 +35,23 @@ ms.locfileid: "50679256"
 - 일정
 -   암호
 - 사진 앱 또는 카메라 앨범에 있는 사진을 비롯한 사진
+- 파일
 
-**회사에서 항상 볼 수 있는 사항:**
+**조직에서 항상 볼 수 있는 항목:**
 
 - Google Pixel 같은 장치 모델
-- 제조업체(예: Microsoft)
-- 운영 체제(예: iOS)
-- 앱 이름(예: Microsoft Word)
+- 디바이스 제조업체(예: Microsoft)
+- 운영 체제 및 버전(예: iOS 12.0.1)
+- Microsoft Word와 같은 앱 이름: 개인 디바이스에서 조직은 관리되는 앱 인벤토리만 볼 수 있습니다. 회사 소유 디바이스에서 조직은 모든 앱 인벤토리를 볼 수 있습니다.
 - 장치 소유자
 - 장치 이름
-- 일련 번호
+- 디바이스 일련 번호
+- IMEI
 
-**회사에서 볼 수도 있는 사항:**
+**조직에서 볼 수도 있는 항목:**
 
--  전화 번호: **회사** 소유 장치인 경우 전체 전화 번호를 볼 수 있습니다. **개인** 소유 장치인 경우 전화 번호의 마지막 네 자리만 회사에 표시됩니다. 장치의 **장치 세부 정보** 페이지를 열어 각 개별 장치의 **소유권 유형**을 확인할 수 있습니다.
--  위치: 감독되는 iOS 장치를 분실한 경우를 제외하고, 회사에서는 장치의 위치를 확인할 수 없습니다. [어떻게 알 수 있나요?](https://go.microsoft.com/fwlink/?linkid=853816)
-- 앱 인벤토리: 회사에서 Mobile Threat Defense를 사용하는 경우 iOS 장치에 있는 앱에 대한 세부 정보를 볼 수 있습니다. [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md)에 대해 자세히 알아보세요.
-- 네트워크 정보: Android 장치의 네트워크 연결에 대한 일부 정보를 회사 지원에 사용할 수 있습니다. 예를 들어, 장치를 회사의 특정 건물 내에서 유지해야 할 경우 이 장치는 연결된 네트워크를 식별합니다. 
+-  전화 번호: **회사** 소유 디바이스인 경우 전체 전화 번호를 볼 수 있습니다. **개인** 소유 디바이스인 경우 전화 번호의 마지막 네 자리만 조직에 표시됩니다. 장치의 **장치 세부 정보** 페이지를 열어 각 개별 장치의 **소유권 유형**을 확인할 수 있습니다.
+- 디바이스 스토리지 공간: 필수 앱을 설치할 수 없는 경우 조직은 디바이스의 스토리지 공간을 보고 공간이 너무 적은지 확인할 수 있습니다.  
+-  위치: 감독되는 iOS 디바이스를 분실한 경우를 제외하고, 조직에서는 디바이스의 위치를 확인할 수 없습니다. [어떻게 알 수 있나요?](https://go.microsoft.com/fwlink/?linkid=853816)
+- 앱 인벤토리: 조직에서 Mobile Threat Defense를 사용하는 경우 iOS 디바이스에 있는 앱에 대한 세부 정보를 볼 수 있습니다. [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md)에 대해 자세히 알아보세요.
+- 네트워크 정보: Android 디바이스의 네트워크 연결에 대한 일부 정보를 조직 지원에 사용할 수 있습니다. 예를 들어 디바이스를 조직의 특정 건물 내에서 유지해야 할 경우 디바이스는 연결된 네트워크를 식별합니다. 
