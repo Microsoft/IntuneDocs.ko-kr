@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: a38c5db1e608cb5d9a047dc72ee9109e840096e0
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255069"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618993"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Android 회사 프로필 장치 등록 설정
 
@@ -56,5 +56,5 @@ Intune 회사 포털을 승인하려면 다음 단계를 따르세요.
 5.  **앱이 새 권한을 요청할 때 승인 유지**를 선택하고 **저장**을 클릭합니다.
 
 ## <a name="next-steps-for-android-work-profiles"></a>Android 회사 프로필을 위한 다음 단계
-- [Android 회사 프로필 앱 배포](store-apps-android.md)
+- [Android 회사 프로필 앱 배포](apps-add-android-for-work.md)
 - [Android 회사 프로필 구성 정책 추가](device-profiles.md)

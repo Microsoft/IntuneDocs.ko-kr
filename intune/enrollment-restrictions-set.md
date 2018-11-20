@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 97543ec74225ef86208000bccb2a8ad7852dd9c1
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602149"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610059"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -66,7 +66,7 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 
 ## <a name="set-device-type-restrictions"></a>장치 유형 제한 설정
 
-장치 유형 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다. 이러한 제한 사항은 이미 등록된 장치에 적용되지 않습니다. [Intune PC 에이전트](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다.
+장치 유형 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다. 이러한 제한 사항은 이미 등록된 장치에 적용되지 않습니다. [Intune PC 에이전트](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다.
 
 1. Azure Portal에 로그인합니다.
 2. **추가 서비스**를 선택하고 **Intune**을 검색한 다음, **Intune**을 선택합니다.
@@ -100,11 +100,11 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 - 장치에서 [SCCM에서 공동 관리를 위한 자동 등록](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)을 통해 등록합니다.
  
 Intune에서 회사로 표시되지만 Intune 관리자가 장치별 제어를 제공하지 않으므로 차단되는 등록은 다음과 같습니다.
- - [Windows 설치 중에 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).
-- [Windows 설정에서 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment)*.
+ - [Windows 설치 중에 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- [Windows 설정에서 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment)*.
  
 또한 차단되는 개인 등록 방법도 다음과 같습니다.
-- [Windows 설정에서 회사 계정 추가](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*를 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- [Windows 설정에서 회사 계정 추가](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\*를 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).
 - Windows 설정의 [MDM 등록만]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) 옵션
 
 \* Autopilot에 등록된 경우 차단되지 않습니다.

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212532"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167538"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -365,6 +365,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
      - iOS
      - Windows 8.1 이상
      - Windows 10 이상
+     - Android Enterprise
 
    - **주체 이름 형식**: 인증서 요청 시 Intune에서 자동으로 주체 이름을 만드는 방식을 선택합니다. **사용자** 인증서 유형 또는 **장치** 인증서 유형을 선택하면 이 옵션이 변경됩니다. 
 
