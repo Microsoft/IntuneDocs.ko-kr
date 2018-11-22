@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5442b45ed180d10943dfd5d1a1ef1546d693b2b
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903423"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610110"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
@@ -58,7 +58,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 장치에 �
 6. 메뉴의 **관리** 섹션에서 **할당**을 선택합니다.
 7. **그룹 추가**를 선택하여 앱과 관련된 **그룹 추가** 창을 엽니다.
 8. 특정 앱의 경우 **할당 유형**을 선택합니다.
-   - **등록 장치에 대해 사용 가능**: 사용자가 회사 포털 앱 또는 웹 사이트에서 앱을 설치합니다.
+   - **Available for enrolled devices**(등록 디바이스에 대해 사용 가능): 회사 포털 앱 또는 웹 사이트에서 앱을 설치할 수 있는 사용자 그룹에 앱을 할당합니다.
    - **등록없이 사용 가능**: 이 앱을 Intune에 등록되지 않은 장치의 사용자 그룹에 할당합니다. 관리되는 Google Play의 앱은 이 옵션을 지원하지 않습니다. 
    - **필수**: 앱이 선택한 그룹의 장치에 설치됩니다.
    - **제거**: 앱이 선택한 그룹의 장치에서 제거됩니다.

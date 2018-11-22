@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,26 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps; get-started
-ms.openlocfilehash: ad9eea41d0d40eed9aee07bcf5a77118c0efdab8
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 77a8adb418759386fdd02409a51b16a734d79ba8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253754"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167394"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune에 대한 앱 수명 주기 개요
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Microsoft Intune 앱 수명 주기는 앱이 추가될 때 시작되어 앱을 제거할 때까지 추가 단계를 진행해 나갑니다. 이러한 단계를 이해해야 Intune에서 앱 관리를 시작 하는 데 필요한 세부 정보를 얻게 됩니다.
+Microsoft Intune 앱 수명 주기는 앱이 추가될 때 시작되어 앱을 제거할 때까지 추가 단계를 진행해 나갑니다. 이러한 단계를 이해해야 Intune에서 앱 관리를 시작하는 데 필요한 세부 정보를 얻게 됩니다.
 
 ![앱 수명 주기](./media/app-lifecycle.png "Intune 앱 수명 주기")
 
 ## <a name="add"></a>추가
 
-앱 배포의 첫 단계는 관리 및 할당할 앱을 Intune에 추가하는 것입니다. 작업할 수 있는 앱 형식은 다양하지만, 기본 절차는 같습니다. Intune을 사용하면 사내에서 작성한 앱(기간 업무), 스토어의 앱, 기본 제공 앱, 웹앱 등 다양한 앱 유형을 추가할 수 있습니다. 이러한 앱 유형 각각에 대한 자세한 내용은 [Microsoft Intune에 앱을 추가하는 방법](apps-add.md)을 참조하세요. 
+앱 배포의 첫 단계는 관리 및 할당할 앱을 Intune에 추가하는 것입니다. 작업할 수 있는 앱 형식은 다양하지만, 기본 절차는 같습니다. Intune을사용하면 사내에서 작성한 앱(사업 업무), 스토어의 앱, 기본 제공 앱, 웹앱 등 다양한 앱 유형을 추가할 수 있습니다. 이러한 앱 유형 각각에 대한 자세한 내용은 [Microsoft Intune에 앱을 추가하는 방법](apps-add.md)을 참조하세요. 
 
-## <a name="deploy"></a>배포:
+## <a name="deploy"></a>배포
 
 앱을 Intune에 추가한 후 [관리하는 사용자와 장치에 앱을 할당](apps-deploy.md)할 수 있습니다. Intune은 이 과정을 쉽게 수행할 수 있게 해주며 앱이 배포된 후 Azure Portal 내의 Intune에서 배포의 [성공 여부를 모니터링](apps-monitor.md)할 수 있습니다. 또한 [Apple](vpp-apps-ios.md) 및 [Windows](windows-store-for-business.md) 앱 스토어와 같은 일부 앱 스토어에서 회사용 앱 라이선스를 대량으로 구매할 수 있습니다. Intune은 데이터를 이러한 스토어와 동기화하여 이러한 형식의 앱에 대한 라이선스 사용을 Intune 관리 콘솔에서 바로 배포 및 추적할 수 있습니다.
 

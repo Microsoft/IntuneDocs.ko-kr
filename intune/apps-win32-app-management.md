@@ -1,10 +1,27 @@
 ---
-title: Microsoft Intune에 Win32 앱 추가 titlesuffix: description: Microsoft Intune을 사용하여 Win32 앱을 추가하고, 제공하고, 관리하는 방법을 알아봅니다. 이 항목에서는 Intune Win32 앱 제공 및 관리 기능에 대한 개요와 Win32 앱 문제 해결 정보를 제공합니다. keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: Microsoft Intune에 Win32 앱 추가
+titlesuffix: ''
+description: Microsoft Intune으로 Win32 앱을 추가, 제공 및 관리하는 방법을 알아보세요. 이 항목에서는 Intune Win32 앱 제공 및 관리 기능에 대한 개요와 Win32 앱 문제 해결 정보를 제공합니다.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830120"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 독립 실행형 - Win32 앱 관(공개 미리 보기)
 
 Intune 독립 실행형은 보다 나은 Win32 앱 관리 기능을 제공합니다. 클라우드로 연결된 고객은 Win32 앱 관리를 위한 Configuration Manager를 사용할 수 있지만, Intune 전용 고객은 Win32 LOB(사업 부문) 앱에 대한 보다 나은 관리 기능을 사용할 수 있습니다. 이 항목에서는 Intune Win32 앱 관리 기능과 문제 해결 정보에 대한 개요를 제공합니다.
@@ -43,6 +60,13 @@ GitHub에서 [Microsoft Intune Win32 앱 업로드 준비 도구](https://github
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    이 명령은 도구에 대한 사용 정보를 보여줍니다.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    이 명령은 지정된 원본 폴더 및 설치 파일에서 `.intunewin` 파일을 생성합니다. MSI 설치 파일의 경우 이 도구는 Intune에 필요한 정보를 검색합니다. `-q`가 지정되면 명령이 자동 모드로 실행되고, 출력 파일이 이미 있으면 덮어씁니다. 또한 출력 폴더가 없으면 자동으로 생성됩니다.    |
+
+*.intunewin* 파일을 생성하는 경우 참조해야 하는 모든 파일을 설치 폴더의 하위 폴더에 추가합니다. 그런 후, 상대 경로를 사용하여 필요한 특정 파일을 참조합니다. 예를 들면 다음과 같습니다.
+
+**설치 원본 폴더:** *c:\testapp\v1.0*<br>
+**라이선스 파일:** *c:\testapp\v1.0\licenses\license.txt*
+
+상대 경로 *licenses\license.txt*를 사용하여 *license.txt* 파일을 참조하세요.
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Win32 앱 만들기, 할당 및 모니터링
 

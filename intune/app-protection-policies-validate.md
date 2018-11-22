@@ -6,8 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/23/2017
-ms.topic: article
+ms.date: 11/13/2018
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cac03f35cdec3c1a4815559abc83108bd27d3472
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 5e0a207d3e845e3983dfe6ce3abbb70fcbbe65cf
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231140"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618976"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>앱 보호 정책 설정의 유효성을 검사하는 방법
 
@@ -34,7 +33,7 @@ ms.locfileid: "48231140"
 
 ### <a name="what-to-check"></a>확인할 사항
 
-테스트 결과 앱 보호 정책 동작이 예상과 다른 경우에는 다음 항목을 확인하는 것이 좋습니다.
+테스트 후에 앱 보호 정책 동작이 예상과 다른 경우에는 다음 항목을 확인하세요.
 
 - 사용자에게 앱 보호 사용이 허가되었는지 여부
 - 사용자에게 O365 사용이 허가되었는지 여부
@@ -43,9 +42,9 @@ ms.locfileid: "48231140"
 #### <a name="user-app-protection-status"></a>사용자 앱 보호 상태
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-1. **앱 관리** > **모니터** >  **앱 보호 상태** > **할당된 사용자**를 선택합니다.
-
-2. 목록에서 사용자를 선택하거나 사용자를 검색하여 선택한 다음, **사용자 선택**을 선택합니다. **앱 보고** 열 맨 위에 사용자에게 앱 보호 사용이 허가되었는지 여부가 표시됩니다. 사용자에게 O365 사용이 허가되었는지 여부와 해당 사용자의 모든 장치에 대한 앱 상태가 표시되는지 여부를 확인할 수 있습니다.
+3. **클라이언트 앱** > **모니터** >  **앱 보호 상태**를 선택하고 **할당된 사용자** 타일을 선택합니다. 
+4. **앱 보고** 페이지에서 **사용자 선택**을 선택하여 사용자 및 그룹 목록을 표시합니다. 
+5. 목록에서 사용자를 검색한 후 선택하고 **사용자 선택**을 선택합니다. **앱 보고** 창 맨 위에 사용자에게 앱 보호 사용이 허가되었는지 여부가 표시됩니다. 사용자에게 O365 사용이 허가되었는지 여부와 해당 사용자의 모든 디바이스에 대한 앱 상태가 표시되는지 여부를 확인할 수 있습니다.
 
 
 
@@ -53,7 +52,7 @@ ms.locfileid: "48231140"
 사용자 상태에 따라 수행할 작업은 다음과 같습니다.
 
 - 사용자에게 앱 보호 사용이 허가되지 않은 경우 해당 사용자에게 Intune 라이선스를 할당합니다.
-- 사용자에게 O365 사용이 허가되지 않은 경우 사용자용 라이선스를 받습니다.
+- O365 용 라이선스가 없는 것을 하는 경우 사용자용 라이선스를 가져옵니다.
 - 사용자의 앱이 목록에서 **체크 인되지 않음**으로 표시되는 경우 해당 앱에 대해 앱 보호 정책을 올바르게 구성했는지 확인합니다.
 - 앱 보호 정책을 적용할 모든 사용자에게 이러한 조건이 적용되는지 확인합니다.
 

@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d510596f021725292c7221e3056986c2c3fc93c
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: d7ff5a63b6afb619fbbe762d23208c1058e99943
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410789"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610144"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>장치 등록 관리자 계정을 사용하여 장치 등록
 
@@ -34,7 +34,7 @@ DEM 사용자 계정 및 DEM 사용자 계정을 사용하여 등록된 장치�
   - 회사 포털 앱 또는 웹 사이트에 로컬 장치만 표시됩니다.
   - DEM 사용자 계정은 앱 관리에 대한 사용자별 Apple ID 요구 사항으로 인해 Apple VPP 사용자 라이선스를 사용하여 Apple VPP(Volume Purchase Program) 앱을 사용할 수 없습니다.
   - Apple VPP 장치 라이선스가 있는 경우 장치는 VPP 앱을 설치할 수 있습니다.
-  
+  - Windows 10 1803+를 제외하고 디바이스에 대한 조건부 액세스가 차단됨
 
 
 ## <a name="add-a-device-enrollment-manager"></a>장치 등록 관리자 추가

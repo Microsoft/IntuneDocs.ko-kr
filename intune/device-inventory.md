@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187804"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610093"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 장치 세부 정보 참조
 
@@ -45,7 +45,7 @@ ms.locfileid: "47187804"
      - 원격 지원 세션 시작
    - **속성**을 사용하여 [만든 장치 범주](device-group-mapping.md)를 할당하고, 장치 소유권을 개인 장치나 회사 장치로 변경합니다.
    - **하드웨어**에는 장치 ID, 운영 체제 및 버전, 저장소 공간, 모델 및 제조업체, 조건부 액세스 설정 및 자세한 세부 정보를 포함한 장치에 대한 많은 세부 정보가 포함됩니다.
-   - **검색된 앱**은 Intune이 장치에 설치한 모든 앱 및 앱 버전을 표시합니다. 앱 목록을 .csv 파일로 **내보내기**할 수 있습니다.
+   - **검색된 앱**은 Intune이 장치에 설치한 모든 앱 및 앱 버전을 표시합니다. 앱 목록을 .csv 파일로 **내보내기**할 수 있습니다. 이 목록은 7일마다 업데이트됩니다.
    - **장치 준수**는 모든 할당된 준수 정책 및 장치가 준수 또는 비준수인지 여부를 표시합니다.
    - **장치 구성**은 장치에 할당된 모든 장치 구성 정책 및 정책이 성공 또는 실패인지 여부를 표시합니다.
 
@@ -60,8 +60,10 @@ Intune은 회사 소유 장치에서만 앱 목록을 수집합니다. 앱이 �
 |iOS|관리되는 앱만|장치에 설치되는 모든 앱|
 |macOS|장치에 설치되는 모든 앱|장치에 설치되는 모든 앱|  
 |Android|관리되는 앱만|장치에 설치되는 모든 앱|  
+|Android Enterprise|관리되는 앱만|작업 프로필에 설치된 앱만|  
 
 ## <a name="hardware-device-details"></a>하드웨어 장치 세부 정보
+디바이스별 이동 통신 사업자에 따라 일부 세부 정보를 수집하지 않을 수 있습니다.
 
 |세부 정보|설명|플랫폼| 
 |--------------|----------------------|----|  

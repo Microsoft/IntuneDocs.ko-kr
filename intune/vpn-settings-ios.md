@@ -5,23 +5,45 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b794ec40d05358ddd1aa3179c2f4060b2cd6fe1d
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 23e993f883b149e86ce83e0e028572f55468b84b
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236512"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947312"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 장치에서 VPN 설정 구성
 
 Microsoft Intune에는 iOS 장치에 배포할 수 있는 여러 VPN 설정이 포함됩니다. 조직의 네트워크에 VPN 연결을 만들고 구성하는 데 이러한 설정이 사용됩니다. 이 문서에서는 이러한 설정을 설명합니다. 일부 설정은 Citrix, Zscaler 등과 같은 일부 VPN 클라이언트에 대해서만 지원됩니다.
+
+## <a name="connection-type"></a>연결 형식
+
+다음 공급업체 목록에서 VPN 연결 형식을 선택합니다.
+
+- **검사점 캡슐 VPN**
+- **Cisco Legacy AnyConnect**: [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) 앱 버전 4.0.5x 이전에 적용할 수 있습니다.
+- **Cisco AnyConnect**: [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) 앱 버전 4.0.7x 이상에 적용할 수 있습니다.
+- **SonicWall Mobile Connect**
+- **F5 Access Legacy**: F5 Access 앱 버전 2.1 이전에 적용할 수 있습니다.
+- **F5 Access**: F5 Access 앱 버전 3.0 이상에 적용할 수 있습니다.
+- **Palo Alto Networks GlobalProtect(Legacy)**: Palo Alto Networks GlobalProtect 앱 버전 4.1 이전에 적용할 수 있습니다.
+- **Palo Alto Networks GlobalProtect**: Palo Alto Networks GlobalProtect 앱 버전 5.0 이상에 적용할 수 있습니다.
+- **Pulse Secure**
+- **Cisco(IPSec)**
+- **Citrix VPN**
+- **Citrix SSO**
+- **Zscaler**: Azure AD 계정과 ZPA(Zscaler Private Access)를 통합해야 합니다. 자세한 단계는 [Zscaler 설명서](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)를 참조하세요. 
+- **사용자 지정 VPN**
+
+> [!NOTE]
+> Cisco, Citrix, F5 및 Palo Alto는 해당 레거시 클라이언트가 iOS 12에서 작동하지 않는다고 발표했습니다. 가능한 한 빨리 새 앱으로 마이그레이션해야 합니다. 자세한 내용은 [Microsoft Intune 지원 팀 블로그](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409)를 참조하세요.
 
 ## <a name="base-vpn-settings"></a>기본 VPN 설정
 
@@ -37,44 +59,28 @@ Microsoft Intune에는 iOS 장치에 배포할 수 있는 여러 VPN 설정이 �
 
     > [!NOTE]
     > 사용자 이름과 암호를 Cisco IPsec VPN에 대한 인증 방법으로 사용하는 경우 사용자 지정 Apple Configurator 프로필을 통해 SharedSecret을 전달해야 합니다.
-  
-- **연결 형식**: 다음 공급업체 목록에서 VPN 연결 형식을 선택합니다.
-  - **검사점 캡슐 VPN**
-  - **Cisco Legacy AnyConnect**: [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) 앱 버전 4.0.5x 이전에 적용할 수 있습니다.
-  - **Cisco AnyConnect**: [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) 앱 버전 4.0.7x 이상에 적용할 수 있습니다.
-  - **SonicWall Mobile Connect**
-  - **F5 Access Legacy**: F5 Access 앱 버전 2.1 이전에 적용할 수 있습니다.
-  - **F5 Access**: F5 Access 앱 버전 3.0 이상에 적용할 수 있습니다.
-  - **Palo Alto Networks GlobalProtect(Legacy)**: Palo Alto Networks GlobalProtect 앱 버전 4.1 이전에 적용할 수 있습니다.
-  - **Palo Alto Networks GlobalProtect**: Palo Alto Networks GlobalProtect 앱 버전 5.0 이상에 적용할 수 있습니다.
-  - **Pulse Secure**
-  - **Cisco(IPSec)**
-  - **Citrix VPN**
-  - **Citrix SSO**
-  - **Zscaler**: Azure AD 계정과 ZPA(Zscaler Private Access)를 통합해야 합니다. 자세한 단계는 [Zscaler 설명서](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)를 참조하세요. 
-  - **사용자 지정 VPN**    
 
-    > [!NOTE]
-    > Cisco, Citrix, F5 및 Palo Alto는 해당 레거시 클라이언트가 iOS 12에서 작동하지 않는다고 발표했습니다. 가능한 한 빨리 새 앱으로 마이그레이션해야 합니다. 자세한 내용은 [Microsoft Intune 지원 팀 블로그](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409)를 참조하세요.
-
-* **제외된 URL**(Zscaler에만 해당): Zscaler VPN에 연결되면 Zscaler 클라우드 외부에서 나열된 URL에 액세스할 수 있습니다. 
+- **제외된 URL**(Zscaler에만 해당): Zscaler VPN에 연결되면 Zscaler 클라우드 외부에서 나열된 URL에 액세스할 수 있습니다. 
 
 - **분할 터널링**: 장치에서 트래픽에 따라 사용할 연결을 결정할 수 있도록 **사용** 또는 **사용 안 함**으로 설정합니다. 예를 들어 호텔에 있는 사용자는 VPN 연결을 사용하여 작업 파일에 액세스하지만, 일반적인 웹 검색에는 호텔의 표준 네트워크를 사용합니다.
 
-- **NAC(네트워크 액세스 제어) 사용**: 이 설정은 장치 ID가 NAC(네트워크 액세스 제어)에서 사용할 VPN 프로필에 배치되도록 하는 Citrix와 같은 VPN 클라이언트의 자리 표시자입니다. **동의함**을 선택하면 이 장치 ID는 VPN 프로필에 포함됩니다. 현재 장치가 준수 상태에 상관없이 VPN에 연결될 수 있도록 이 새로운 ID를 지원하는 VPN 클라이언트 또는 NAC 파트너 솔루션이 없습니다. 파트너가 ID에 대한 지원을 추가하는 경우 이 문서를 업데이트합니다.
+- **VPN 식별자**(사용자 지정 VPN, Zscaler 및 Citrix): 사용 중인 VPN 앱의 식별자이며, VPN 공급자에서 제공합니다.
+  - **조직의 사용자 지정 VPN 특성에 대한 키/값 쌍 입력**: VPN 연결을 사용자 지정하는 **키** 및 **값**을 추가하거나 가져옵니다. 이러한 값은 일반적으로 VPN 공급자가 제공합니다.
+
+- **NAC(네트워크 액세스 제어) 사용**(Citrix SSO만 해당): **동의**를 선택하는 경우 디바이스 ID가 VPN 프로필에 포함됩니다. 이 ID는 VPN에 대한 인증으로 네트워크 액세스를 허용하거나 차단하는 데 사용할 수 있습니다.
+
+  **게이트웨이에서 Citrix SSO를 사용하는 경우** 다음을 확인하세요.
+
+  - Citrix Gateway 12.0.59 이상을 사용 중인지 확인합니다.
+  - 사용자가 디바이스에 Citrix SSO 1.1.6 이상을 설치했는지 확인합니다.
+  - [NetScaler에 Microsoft Intune/Enterprise Mobility Suite 통합(LDAP+OTP 시나리오)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf)에 설명된 대로 NAC에 대한 Intune에 Citrix Gateway를 통합합니다.
+  - VPN 프로필에서 NAC를 사용하도록 설정합니다.
 
   중요한 세부 정보:  
 
-  - 이 설정을 사용하는 경우 VPN의 연결이 24시간마다 끊어졌습니다.
-  - 장치 ID는 프로필의 일부이지만 Intune 또는 프로필에서 표시될 수 없습니다. 이 ID는 Microsoft에서 저장되거나 공유되지 않습니다. VPN 파트너에 의해 지원되면 Citrix SSO와 같은 VPN 클라이언트는 ID를 가져오고 Intune을 쿼리하여 장치가 등록되었는지 및 VPN 프로필이 규격이거나 비규격인지 확인할 수 있습니다.
+  - NAC를 사용하도록 설정하는 경우 VPN의 연결이 24시간마다 끊어졌습니다.
+  - 디바이스 ID는 프로필의 일부이지만 Intune에 표시될 수 없습니다. 이 ID는 Microsoft에서 저장되거나 공유되지 않습니다. VPN 파트너에 의해 지원되면 Citrix SSO와 같은 VPN 클라이언트는 ID를 가져오고 Intune을 쿼리하여 장치가 등록되었는지 및 VPN 프로필이 규격이거나 비규격인지 확인할 수 있습니다.
   - 이 설정을 제거하려면 프로필을 다시 만들고 **동의함**을 선택하지 않습니다. 그런 다음, 프로필을 다시 할당합니다.
-
-## <a name="custom-vpn-settings"></a>사용자 지정 VPN 설정
-
-**사용자 지정 VPN**을 연결 형식으로 선택한 경우 다음과 같은 설정을 구성합니다. 이러한 설정은 Zscaler 및 Citrix 연결에 대해서도 표시됩니다.
-
-- **VPN 식별자**: 사용 중인 VPN 앱의 식별자이며, VPN 공급자에서 제공합니다.
-- **조직의 사용자 지정 VPN 특성에 대한 키/값 쌍 입력**: VPN 연결을 사용자 지정하는 **키** 및 **값**을 추가하거나 가져옵니다. 이러한 값은 일반적으로 VPN 공급자가 제공합니다.
 
 ## <a name="automatic-vpn-settings"></a>자동 VPN 설정
 

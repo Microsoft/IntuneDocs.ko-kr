@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978249"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610025"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune 소프트웨어 클라이언트를 통해 Windows PC를 컴퓨터로 관리
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Microsoft Intune을 사용하여 Windows PC를 [MDM(모바일 장치 관리)가 있는 모바일 장치](windows-enroll.md)로 관리하거나, 아래 설명된 대로 Intune 소프트웨어 클라이언트가 있는 컴퓨터로 관리할 수 있습니다. 그러나 고객은 가능한 한 [MDM 관리 솔루션을 사용](windows-enroll.md)하는 것이 좋습니다.
+> Microsoft Intune을 사용하여 Windows PC를 [MDM(모바일 장치 관리)가 있는 모바일 장치](windows-enroll.md)로 관리하거나, 아래 설명된 대로 Intune 소프트웨어 클라이언트가 있는 컴퓨터로 관리할 수 있습니다. 그러나 고객은 가능한 한 [MDM 관리 솔루션을 사용](windows-enroll.md)하는 것이 좋습니다. 자세한 내용은 [Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교](pc-management-comparison.md)를 참조하세요. 
 
 Intune은 조직에서 모바일 장치를 관리할 수 있는 포괄적 솔루션을 제공합니다. Intune에서는 Windows 10 운영 체제에 기본 제공된 최신 장치 관리 기능을 사용하여 Windows PC를 모바일 장치로 관리할 수 있습니다. 조직의 관리 요구 사항을 충족하기 위해 Intune에서는 Intune 소프트웨어 클라이언트를 사용하여 Windows PC를 컴퓨터로 관리할 수도 있습니다. 이 관리 방법에는 레거시 Windows 운영 체제의 기존 컴퓨터 관리 기능이 사용됩니다.
 
@@ -40,7 +40,8 @@ Intune에서는 소프트웨어 클라이언트를 사용하여 최대 7,000대�
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Intune PC 클라이언트 관리를 위한 요구 사항
 
-**하드웨어**: 다음은 Intune 클라이언트 소프트웨어를 설치하기 위한 최소 하드웨어 요구 사항입니다.
+**하드웨어**:  
+다음은 Intune 클라이언트 소프트웨어를 설치하기 위한 최소 하드웨어 요구 사항입니다.
 
 |요구 사항|추가 정보|
 |---------------|--------------------|
@@ -48,7 +49,8 @@ Intune에서는 소프트웨어 클라이언트를 사용하여 최대 7,000대�
 |프로세서 및 메모리|PC 운영 체제의 프로세서 및 RAM 요구 사항을 참조하세요.|
 |디스크 공간|클라이언트 소프트웨어를 설치하려면 먼저 200MB의 사용 가능한 디스크 공간이 필요합니다.|
 
-**소프트웨어**: 다음은 클라이언트 소프트웨어를 설치하기 위한 소프트웨어 요구 사항입니다.
+**소프트웨어**:  
+다음은 클라이언트 소프트웨어를 설치하기 위한 소프트웨어 요구 사항입니다.
 
 |요구 사항|추가 정보|
 |---------------|--------------------|

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a9761c57b15700e147bc092b7577fe1b32c78c18
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: c46a90d36ba8b50703e62fc663b1d090ac1bcfc7
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254159"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610127"
 ---
 # <a name="what-is-device-enrollment"></a>장치 등록이란?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,6 @@ Intune을 사용하여 직원의 장치 및 앱을 관리하고 회사 데이터
 |**[USB-Direct](#usb-direct)**| 아니요 |    아니요  | 아니요|[추가 정보](./apple-configurator-direct-enroll-ios.md)|
 
 ## <a name="macos-enrollment-methods"></a>macOS 등록 방법
-
 | **방법** |  **초기화 필요** |  **사용자 선호도** | **잠김** | **세부 정보**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | 아니요| 예 | 아니요 | [추가 정보](./macos-enroll.md)|
@@ -56,7 +55,11 @@ Intune을 사용하여 직원의 장치 및 앱을 관리하고 회사 데이터
 |**[BYOD](#bring-your-own-device)** | 아니요 |  예 |   아니요 | [추가 정보](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| 아니요 |아니요 |아니요  |[추가 정보](device-enrollment-manager-enroll.md)|
 |**자동 등록** | 아니요 |예 |아니요 | [추가 정보](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Autopilot** |예 |예 |아니요 | [자세한 정보](enrollment-autopilot.md)]
 |**대량 등록** |아니요 |아니요 |아니요 | [추가 정보](./windows-bulk-enroll.md) |
+|**공동 관리** |아니요 |예 |아니요 | [자세한 정보](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
+|**GPO** |아니요 |예 |아니요 | [자세한 정보](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+
 
 ## <a name="android-enrollment-methods"></a>Android 등록 방법
 

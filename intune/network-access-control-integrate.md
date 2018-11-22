@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 00f660d2ac228fbebe218c53482d00e59f09ce56
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236155"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947329"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Intune과 NAC(네트워크 액세스 제어) 통합
 
@@ -59,12 +59,21 @@ NAC는 조건부 액세스와 연동하여 액세스 제어 결정을 제공합�
 8. 장치가 등록되고 규격이면 NAC 파트너 솔루션이 Intune에서 상태를 가져옵니다.
 9. 성공적으로 연결되어 장치가 회사 리소스에 액세스할 수 있게 됩니다.
 
-## <a name="use-nac-on-your-ios-devices"></a>iOS 장치에서 NAC 사용
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>iOS 디바이스에서 VPN에 대한 NAC 사용  
+VPN 프로필에서 NAC를 사용하도록 설정하지 않아도 Cisco Legacy AnyConnect, F5 Access Legacy 및 Citrix VPN에 대한 NAC가 지원됩니다.
 
-iOS의 다음 VPN 클라이언트에는 현재 네트워크 액세스 제어가 지원되지 않습니다.
+Citrix SSO에 대한 NAC도 지원됩니다. iOS용 Citrix SSO에 대해 NAC을 사용하도록 설정하려면
+- Citrix Gateway 12.0.59 이상을 사용합니다.  
+- Citrix SSO 1.1.6 이상을 설치해야 합니다.
+- Citrix 제품 설명서에 설명된 대로 [NAC를 위해 Intune에 NetScaler를 통합](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)합니다.
+- 기본 VPN 설정 구성의 **NAC(네트워크 액세스 제어) 사용**에 대해 **동의** 확인란을 선택합니다.
+
+iOS용 Citrix SSO를 사용할 경우 보안상의 이유로 24시간마다 VPN 연결이 끊어집니다. VPN을 즉시 다시 연결할 수 있습니다.
+
+
+**iOS의 다음 VPN 클라이언트에는 현재 네트워크 액세스 제어가 지원되지 않습니다**.
 -   Cisco AnyConnect
 -   F5 Access
--   Citrix SSO  
 
 Microsoft는 이러한 최신 클라이언트를 위한 NAC 솔루션을 출시하기 위해 파트너와 협업하고 있습니다. 솔루션이 준비되면 이 문서를 추가 세부 정보로 업데이트할 것입니다. 
 

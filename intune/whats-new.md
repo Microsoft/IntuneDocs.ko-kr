@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: b96e9b79d70c538982aac52ca822b403d1c0e4f8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576973"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167589"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,15 @@ ms.locfileid: "51576973"
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-12-2018"></a>2018년 11월 12일 주
+
+### <a name="network-access-control-nac-support-for-citrix-sso-for-ios----3259404---"></a>iOS용 Citrix SSO에 대한 NAC(네트워크 액세스 제어) <!-- 3259404 -->지원
+
+Citrix는 Intune에서 iOS용 Citrix SSO에 대해 NAC(네트워크 액세스 제어)를 허용하도록 Citrix Gateway 업데이트를 출시했습니다. Intune에서 VPN 프로필 내에 디바이스 ID를 포함하도록 선택한 후 이 프로필을 iOS 디바이스에 푸시할 수 있습니다. 이 기능을 사용하려면 Citrix Gateway의 최신 업데이트를 설치해야 합니다.
+
+[iOS 디바이스에서 VPN 설정 구성](vpn-settings-ios.md#base-vpn-settings)에서는 몇 가지 추가 요구 사항을 포함하여 NAC 사용에 대한 자세한 정보를 제공합니다. 
+
 ## <a name="week-of-november-5-2018"></a>2018년 11월 5일 주
 
 ### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>iOS 메일 프로필에서 iOS 12 OAuth 지원 <!--2155106 -->
@@ -53,11 +62,7 @@ Intune의 iOS 이메일 프로필은 iOS 12 OAuth(Open Authorization)를 지원�
 이제 Autopilot을 사용하여 하이브리드 Azure Active Directory 조인 장치를 설정할 수 있습니다. 하이브리드 Autopilot 기능을 사용하려면 장치가 조직의 네트워크에 조인되어 있어야 합니다. 자세한 내용은 [Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure AD 조인 장치 배포](windows-autopilot-hybrid.md)를 참조하세요.
 이 기능은 앞으로 며칠 동안 사용자 기반 전체에 롤아웃됩니다. 따라서 계정에 롤아웃될 때까지 다음 단계를 수행하지 못할 수도 있습니다.
 
-### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>웹 데이터에 대한 APP(앱 보호 정책) 설정 <!-- 2662995  -->
-Android 및 iOS 디바이스의 웹 콘텐츠에 대한 APP 정책 설정은 iOS 유니버설 링크 및 Android 앱 링크를 통한 데이터 전송을 비롯하여 http 및 https 웹 링크를 모두 더 잘 처리하기 위해 업데이트됩니다.  
-
 ## <a name="week-of-october-29-2018"></a>2018년 10월 29일이 있는 주
-
 
 ### <a name="app-management"></a>앱 관리
 
@@ -120,9 +125,6 @@ Intune의 PowerShell 스크립트는 AAD 장치 보안 그룹을 대상으로 �
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>등록 중단 보고서 <!-- 1382924 -->
 중단된 등록에 대한 세부 정보를 제공하는 새 보고서는 **장치 등록** > **모니터**에서 사용할 수 있습니다. 자세한 내용은[회사 포털 중단 보고서](enrollment-report-company-portal-abandon.md)를 참조하세요.
-
-#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Autopilot 프로필을 모든 장치 가상 그룹에 할당 <!--2715522 -->
-Autopilot 프로필을 모든 장치 가상 그룹에 할당할 수 있습니다. 그렇게 하려면 **장치 등록** > **Windows 등록** > **배포 프로필** > 프로필 선택 > **할당**을 선택하고 **할당 대상**에서 **모든 장치**를 선택합니다. Autopilot 프로필에 대한 자세한 내용은 [Windows Autopilot을 사용하여 Windows 장치 등록](enrollment-autopilot.md)을 참조하세요.
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>새 Azure Active Directory 사용 약관 기능 <!-- 2870393 -->
 Azure Active Directory에는 기존 Intune 사용 약관을 대신 사용할 수 있는 사용 약관 기능이 있습니다. Azure AD 사용 약관은 표시할 조건 및 표시 방법에 있어서 유연성을 높이고 보다 나은 현지화 지원을 제공하며, 사용 약관을 렌더링하는 방식을 보다 잘 제어하고 보고 기능을 개선할 수 있도록 지원합니다. Azure AD 사용 약관 기능을 사용하려면 Enterprise Mobility + Security E3 도구 모음의 일부이기도 한 Azure Active Directory Premium P1이 필요합니다. 자세한 내용은 [사용자 액세스 문서에 대한 회사의 사용 약관 관리](terms-and-conditions-create.md)를 참조하세요.
@@ -504,17 +506,6 @@ Android P 릴리스를 지원하도록 Android용 Intune 앱 SDK의 업데이트
 
 
 ### <a name="device-configuration"></a>장치 구성
-
-#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>S/MIME를 사용하여 사용자의 여러 장치를 암호화 및 서명 <!-- 1333642 -->
-이 업데이트에는 가져온 새 인증서 프로필을 사용하는 S/MIME 이메일 암호화가 포함됩니다(**장치 구성** > **프로필** > **프로필 만들기** > 플랫폼 선택 > **PKCS 가져온 인증서** 프로필 유형). Intune에서 PFX 형식의 인증서를 가져올 수 있습니다. 그런 다음, Intune은 단일 사용자에 의해 등록된 여러 장치에 이러한 동일한 인증서를 제공할 수 있습니다. 다음도 포함되어 있습니다.
-
-- 네이티브 iOS 이메일 프로필은 PFX 형식의 가져온 인증서를 사용하는 S/MIME 암호화 활성화를 지원합니다.
-- Windows Phone 10 장치의 네이티브 메일 앱은 S/MIME 인증서를 자동으로 사용합니다.
-- 여러 플랫폼에서 개인 인증서를 제공할 수 있습니다. 하지만 모든 이메일 앱이 S/MIME를 지원하지는 않습니다.
-- 다른 플랫폼에서 S/MIME를 활성화하도록 메일 앱을 수동으로 구성해야 할 수 있습니다.  
-- S/MIME 암호화를 지원하는 이메일 앱은 해당 게시자의 인증서 저장소에서 읽기와 같은 MDM에서 지원할 수 없는 방식으로 S/MIME 이메일 암호화에 대한 인증서 가져오기를 처리할 수 있습니다.
-
-지원: Windows, Windows Phone 10, macOS, iOS, Android
 
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>macOS 장치에서 방화벽 설정을 사용하는 장치 준수 정책 만들기 <!-- 1497640 -->
 새 macOS 준수 정책을 만들면(**장치 준수** > **정책** > **정책 만들기** > **플랫폼: macOS** > **시스템 보안**) 다음과 같은 일부 새 **방화벽** 설정을 사용할 수 있습니다. 
