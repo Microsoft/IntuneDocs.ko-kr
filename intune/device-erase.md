@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ab396092-907a-44b7-a157-aabee62176a9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d99bef78d635f98f9c888d8096247f314ade6a52
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 64f8b31c4fab5b247ae466df52a0b965f1be813b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020931"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179969"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>macOS 장치에서 모든 데이터 지우기
 

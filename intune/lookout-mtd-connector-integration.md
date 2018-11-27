@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232186"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181074"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune과 Lookout Mobile Threat Defense 통합 설정
 
@@ -50,11 +51,11 @@ Lookout Mobility Endpoint Security 테넌트가 Azure AD 구독과 연결되어 
 
 다음 단계에 따라 Lookout 지원 팀에 제공해야 하는 정보를 수집합니다.
 
-1. [Azure Portal](https://portal.azure.com)에 로그인한 후 구독을 선택합니다. 
+1. [Azure Portal](https://portal.azure.com)에 로그인한 후 구독을 선택합니다. 
 
-2. 구독 이름을 선택하면 결과로 표시되는 URL에 구독 ID가 포함됩니다.  구독 ID를 찾는 데 문제가 있으면 [Microsoft 지원 문서](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)ID를 찾는 방법에 대한 팁을 확인하세요.
+2. 구독 이름을 선택하면 결과로 표시되는 URL에 구독 ID가 포함됩니다.  구독 ID를 찾는 데 문제가 있으면 [Microsoft 지원 문서](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)ID를 찾는 방법에 대한 팁을 확인하세요.
 
-3. Azure AD 그룹 ID를 찾습니다. Lookout 콘솔은 두 가지 수준의 액세스를 지원합니다.  
+3. Azure AD 그룹 ID를 찾습니다. Lookout 콘솔은 두 가지 수준의 액세스를 지원합니다.  
    * **모든 권한:** Azure AD 관리자는 모든 권한이 있는 사용자 그룹을 만들고, 선택적으로 제한된 권한이 있는 사용자 그룹을 만들 수 있습니다.  이러한 그룹의 사용자만 **Lookout 콘솔**에 로그인할 수 있습니다.
    * **제한된 권한:** 이 그룹의 사용자는 Lookout 콘솔의 여러 구성 및 등록 관련 모듈에 대한 액세스 권한이 없으며, Lookout 콘솔의 **보안 정책** 모듈에 대한 읽기 전용 액세스 권한을 갖습니다.  
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune - Azure의 macOS에서 끝점 보호 추가 | Microsoft Docs
+title: Microsoft Intune - Azure의 macOS에서 엔드포인트 보호 추가 | Microsoft Docs
 description: MacOS 장치에서 게이트키퍼를 사용하여 mac 앱 스토어를 포함해 앱을 설치할 수 있는 위치를 결정합니다. 또한 Microsoft Intune을 사용하여 방화벽이 특정 앱을 허용하도록 구성하거나 사용하도록 설정하고, 특정 앱을 차단하고, 은폐 모드를 사용하고 특정 유형의 들어오는 연결을 차단합니다.
 keywords: ''
 author: MandiOhlinger
@@ -11,17 +11,18 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 49194d49658042802cbc1148276445008ee1b09f
-ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
+ms.openlocfilehash: a9828f1b8a24e4f7d871f9e6e6f67e9f6c6fb197
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30254556"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182774"
 ---
-# <a name="macos-endpoint-protection-settings-in-intune"></a>Intune에서 macOS 끝점 보호 설정
+# <a name="macos-endpoint-protection-settings-in-intune"></a>Intune에서 macOS 엔드포인트 보호 설정
 
-이 아티클에서는 macOS를 실행하는 장치에 대해 구성할 수 있는 끝점 보호 설정을 보여줍니다. 이러한 설정은 이러한 장치에서 게이트키퍼 및 방화벽 설정을 포함하며 Microsoft Intune에서 장치 프로필을 사용하여 구성할 수 있습니다.
+이 아티클에서는 macOS를 실행하는 장치에 대해 구성할 수 있는 엔드포인트 보호 설정을 보여줍니다. 이러한 설정은 이러한 장치에서 게이트키퍼 및 방화벽 설정을 포함하며 Microsoft Intune에서 장치 프로필을 사용하여 구성할 수 있습니다.
 
 ## <a name="gatekeeper"></a>게이트키퍼
 

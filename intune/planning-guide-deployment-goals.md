@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961473"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189353"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>배포 목적, 목표 및 과제 확인
 
@@ -78,7 +79,7 @@ ms.locfileid: "29961473"
 
 배포 과제는 조직의 최우선 고려사항이 되는 문제로, 배포에 부정적인 영향을 줄 수 있습니다. 때로 배포 과제는 이전 프로젝트에서 발생했으며 방지하고자 하는 과거의 문제 또는 현재 배포 작업과 관련된 새로운 문제와 관계가 있습니다. Intune 배포 과제와 이러한 과제를 완화할 수 있는 방법의 몇 가지 예가 아래에 나열되어 있습니다.
 
--   지원 준비 및 최종 사용자 환경이 초기 프로젝트 범위에 포함되어 있지 않습니다. 이 경우 최종 사용자 도입률이 낮아지며 지원 조직의 문제가 발생합니다.
+-   지원 준비 및 최종 사용자 환경이 초기 프로젝트 범위에 포함되어 있지 않습니다. 이 경우 최종 사용자 도입률이 낮아지며 지원 조직의 문제가 발생합니다.
 
     -   **완화:** 지원 교육을 통합합니다. 배포 계획에서 성공 메트릭을 사용하여 최종 사용자 환경의 유효성을 검사합니다.
 

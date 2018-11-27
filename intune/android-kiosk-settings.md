@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602183"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185239"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune에서 Android 장치에 대한 키오스크 설정
 
@@ -47,7 +48,7 @@ ms.locfileid: "45602183"
 
 여러 앱용 Android 키오스크 장치를 설정하려면 다음의 기본 단계를 따릅니다.
 
-1. [관리되는 Google Play에서 관리되는 홈 화면 앱 가져오기 및 배포](#import-and -deploy-the-managed-home-screen-app)
+1. [관리되는 Google Play에서 관리되는 홈 화면 앱 가져오기 및 배포](#import-and-deploy-the-managed-home-screen-app)
 2. [키오스크 모드에서 사용할 수 있는 앱 추가 및 할당](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (선택 사항) [키오스크 모드에서 사용할 수 있는 웹 링크 추가](#add-web-links-that-can-be-used-in-kiosk-mode)
 

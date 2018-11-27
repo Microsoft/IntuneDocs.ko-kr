@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune에서 사용자 지정 장치 설정 사용 - Azure | Microsoft Docs
+title: Microsoft Intune - Azur에서 사용자 지정 장치 설정 사용 | Microsoft Docs
 description: Microsoft Intune을 사용하여 Windows Phone, Windows 8.1, Windows 10 이상, Android, Android 엔터프라이즈, macOS 및 iOS 장치에 대한 사용자 지정 설정을 사용할 프로필 추가 또는 만들기
 keywords: ''
 author: MandiOhlinger
@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3106f71b59019a1cf71680c51be6dfcb4ce10b0d
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: 808d2036cb30c4d396da41f5fe33f4f196baa8c2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983077"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182893"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune에서 사용자 지정 설정을 사용하여 프로필 만들기
 
@@ -36,7 +37,7 @@ Microsoft Intune에는 장치의 여러 기능을 제어하는 많은 기본 제
 사용자 지정 프로필은 기본 제공 프로필과 유사하게 만들어지며 다음 플랫폼에서 사용할 수 있습니다.
 
 - [OWA(Outlook Web Access)](custom-settings-android.md)
-- [Android 엔터프라이즈](custom-settings-android-for-work.md)
+- [Android Enterprise](custom-settings-android-for-work.md)
 - [iOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
@@ -48,7 +49,7 @@ Microsoft Intune에는 장치의 여러 기능을 제어하는 많은 기본 제
 플랫폼을 선택하고 다음을 시작합니다.
 
 - [OWA(Outlook Web Access)](custom-settings-android.md)
-- [Android 엔터프라이즈](custom-settings-android-for-work.md)
+- [Android Enterprise](custom-settings-android-for-work.md)
 - [iOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)

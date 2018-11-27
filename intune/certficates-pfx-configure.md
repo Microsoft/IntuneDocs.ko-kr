@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 573cdf8746b9eaf593a33cd943b69a2dd83030ae
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 70d1594220b3315db2c7d7eeb01a915aaf2ec995
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391606"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186736"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -117,7 +118,7 @@ VPN, WiFi 또는 기타 리소스를 통해 인증하려면 각 장치에 루트
 ### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune 인증서 커넥터
 
 > [!IMPORTANT] 
-> Microsoft Intune Certificate Connector를 별도의 Windows 서버에 **설치**해야 합니다. 발급 CA(인증 기관)에 설치할 수는 없습니다.
+> Microsoft Intune Certificate Connector를 별도의 Windows 서버에 **설치해야** 합니다. 발급 CA(인증 기관)에 설치할 수는 없습니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
 2. **장치 구성** > **인증 기관** > **추가**를 선택합니다.
@@ -142,7 +143,7 @@ VPN, WiFi 또는 기타 리소스를 통해 인증하려면 각 장치에 루트
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>Microsoft Intune용 PFX 인증서 커넥터
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 구성** > **인증 기관** > **추가** 선택
+2. **장치 구성** > **인증 기관** > **추가**를 선택합니다.
 3. Microsoft Intune용 PFX Certificate Connector을 다운로드하여 저장합니다. 커넥터를 설치하려는 서버에서 액세스할 수 있는 위치에 저장합니다.
 4. 다운로드가 완료되면 서버에 로그인합니다. 그런 다음:
 

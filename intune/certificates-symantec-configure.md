@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9c9027964648ad83c552f7dd7067598cacf560e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: cf5146946fef464d2d74271e0ad801dabbdce13e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836528"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186871"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Symantec PKI 관리자 웹 서비스에 대한 Intune Certificate Connector 설정
 
@@ -113,8 +114,7 @@ Microsoft CA 및 Symantec CA에 Intune Certificate Connector를 사용하려면 
 
    b. 지정된 텍스트 상자에 인증서 이름을 제공합니다.
 
-   c. 
-              **Continue(계속)** 를 클릭합니다.
+   c. **Continue(계속)** 를 클릭합니다.
 
       RA 인증서에 대한 다운로드 가능한 링크가 표시됩니다.
 

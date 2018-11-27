@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: ca4b289f059cc4fc8bc77518e06e9cee0f8e7864
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: f4ead71e626316b515646d474cc006be7cf2f774
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291624"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190373"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune 관련 회사 리소스 액세스 문제 해결
 

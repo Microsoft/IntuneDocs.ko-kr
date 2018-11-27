@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
-ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
+search.appverid: MET150
+ms.openlocfilehash: 21257169e069a139ac94dcdecbe6074ab0778aeb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37844966"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179561"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Microsoft EMS(Enterprise Mobility + Security)를 사용하여 BYOD를 활성화하기 위한 기술 결정
 

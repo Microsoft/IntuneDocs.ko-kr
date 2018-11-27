@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864594"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186497"
 ---
 # <a name="create-a-design"></a>설계 만들기
 
@@ -34,11 +35,11 @@ Intune 설계는 [이 가이드의 다른 섹션](planning-guide.md)을 완료�
 
 -   장치 플랫폼 고려 사항
 
--   배달하기 위한 요구 사항  
+-   배달하기 위한 요구 사항  
 
 온-프레미스 인프라 요구 사항이 매우 적긴 하지만 설계 계획을 하면 목적 및 목표에 부합되고 요구 사항을 충족하는 적절한 모바일 장치 관리 솔루션을 완성하는 데 여전히 유용합니다.
 
-이러한 각 영역에 대해 더 자세히 살펴보겠습니다. 
+이러한 각 영역에 대해 더 자세히 살펴보겠습니다. 
 
 ## <a name="record-your-current-environment"></a>현재 환경 기록
 또한 구현 및 테스트 단계 중에 설계가 변경되는 것이 일반적입니다. 설계 계획을 사용하여 이러한 변경사항을 문서화하고 변경의 이유를 기록하세요.

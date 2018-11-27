@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 78ed923c7502744ccd7f23e341049ce8ee8a8d86
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: d87d8c8da5511f641b785f28bad7d7ef6739d888
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983213"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184457"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Intune에서 Windows 10 장치에 대한 사용자 지정 사용
 

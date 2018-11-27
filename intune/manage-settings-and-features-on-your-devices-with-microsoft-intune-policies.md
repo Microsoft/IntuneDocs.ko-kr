@@ -14,13 +14,14 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ROBOTS: ''
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e8a7a7405fe40d3568e736c244d9fcb308350709
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3b1115a91707c639caba6410ace3c2e255e40a39
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43318005"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185001"
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-intune-policies"></a>Intune 정책을 사용하여 장치의 설정 및 기능 관리
 

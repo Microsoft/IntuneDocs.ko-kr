@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 08/28/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+search.appverid: MET150
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: ec3535004dccedb5b0310f4ecc10bb5c93f0ea43
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313975"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186888"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune 장치 프로필이란?
 

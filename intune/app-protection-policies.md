@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3a7285edfa2dcb50cc5fd28e4fefc1be4c3b9e10
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679276"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185972"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>앱 보호 정책을 만들고 할당하는 방법
 
@@ -51,9 +52,9 @@ MAM을 지원하는 앱 목록을 확인하려면 [MAM 앱 목록](https://www.m
 6. **정책 추가** 블레이드에서 **필수 설정 구성**을 선택하여 **설정**을 엽니다.
 
    정책 설정의 범주에는 다음과 같은 3가지가 있습니다.
-   - **데이터 재배치** - 이 그룹에는 잘라내기, 복사, 붙여넣기 및 다른 이름으로 저장 제한 사항과 같은 DLP(데이터 손실 방지) 컨트롤이 포함됩니다. 이러한 설정은 사용자가 앱에서 데이터와 상호 작용하는 방법을 결정합니다.
-   - **액세스 요구 사항** - 이 그룹에는 최종 사용자가 회사 컨텍스트에서 앱에 액세스하는 방법을 결정하는 앱당 PIN 옵션이 포함됩니다.  
-   - **조건부 시작** - 이 그룹에는 최소 OS 설정, 탈옥 및 루팅된 장치 검색 및 오프라인 유예 기간과 같은 설정이 포함됩니다.
+   - **데이터 재배치** - 이 그룹에는 잘라내기, 복사, 붙여넣기 및 다른 이름으로 저장 제한과 같은 DLP(데이터 손실 방지) 컨트롤이 포함되어 있습니다. 이러한 설정은 사용자가 앱의 데이터와 상호 작용하는 방식을 결정합니다.
+   - **액세스 요구 사항** - 이 그룹에는 최종 사용자가 작업 컨텍스트에 맞게 앱에 액세스하는 방법을 결정하는 앱별 PIN 옵션이 포함되어 있습니다.  
+   - **조건부 시작** - 이 그룹에는 최소 OS 설정, 탈옥 및 루팅된 장치 검색, 오프라인 유예 기간과 같은 설정이 포함되어 있습니다.
 
    정책 설정에는 기본값이 있습니다. 이 기본값이 요구 사항을 충족하는 경우 변경할 필요가 없습니다.
 

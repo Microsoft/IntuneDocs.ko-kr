@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ff1f4f6a728fc041241371a413ce9d2dfdf89605
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: a606f63bd22ce2ed543b6c5863ddc4f35d7ea212
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236461"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186208"
 ---
 # <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Intune에서 Android 엔터프라이즈 장치에 대한 장치 준수 정책 추가
 

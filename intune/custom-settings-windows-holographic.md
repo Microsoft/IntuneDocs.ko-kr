@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune에서 Windows Holographic for Business 장치에 대한 사용자 지정 설정 - Azure | Microsoft Docs
+title: Microsoft Intune - Azure의 Windows Holographic for Business 장치에 대한 사용자 지정 설정 | Microsoft Docs
 description: Microsoft Hololens를 비롯하여 Microsoft Intune에서 Windows Holographic for Business를 실행하는 장치의 OMA-URI 설정을 사용하려면 사용자 지정 프로필을 추가하거나 만듭니다. AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates 및 ApplicationLaunchRestrictions 정책 CSP(구성 서비스 공급자) 설정을 설정할 수 있습니다.
 keywords: ''
 author: MandiOhlinger
@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.topic: article
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 863ef32d05fed601eaf38f749aa30e1c4b657cc9
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983162"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185579"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune에서 Windows Holographic for Business 장치에 대한 사용자 지정 설정 사용
 

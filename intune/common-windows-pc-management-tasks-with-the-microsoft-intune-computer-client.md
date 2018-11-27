@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 86472559687db18fe3c888f28bc8c9a58773b00b
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 56084e43d10a5594b37f5335bc0d9f1897414466
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310966"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184544"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Intune 소프트웨어 클라이언트를 사용하는 일반 Windows PC 관리 태스크
 

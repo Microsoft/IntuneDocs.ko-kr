@@ -13,12 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
-ms.openlocfilehash: a90f53bfc5841cc0f773751e7df917d8fc8b6cf8
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49431937"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187738"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>자습서: Autopilot을 사용하여 Intune에서 Windows 장치 등록
 Windows Autopilot이 장치 등록을 간소화합니다. Microsoft Intune 및 AutoPilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드, 유지 관리 및 적용할 필요 없이 최종 사용자에게 새 장치를 제공할 수 있습니다. 

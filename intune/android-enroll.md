@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 2b2b3ba5443cd95cd81bdca6d386ab95a2c831eb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400354"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190118"
 ---
 # <a name="enroll-android-devices"></a>Android 장치 등록
 
@@ -30,7 +31,7 @@ Intune 관리자는 다음 Android 장치를 관리할 수 있습니다.
 - Samsung Knox Standard 장치를 포함한 Android 장치입니다.
 - [Android 회사 프로필 장치](#enable-enrollment-of-android-for-work-devices) 및 Android 키오스크 장치를 포함한 Android 엔터프라이즈 장치입니다.
 
-Samsung Knox Standard를 실행하는 장치가 Intune의 다중 사용자 관리에서 지원됩니다. 즉, 사용자가 Azure AD 자격 증명을 사용하여 장치에 로그인하고 로그아웃할 수 있습니다. 장치는 사용 여부와 관계없이 중앙에서 관리됩니다. 사용자가 로그인하면 앱에 액세스할 수 있고 앱에 정책을 적용할 수도 있습니다. 사용자가 로그아웃하면 모든 앱 데이터가 지워집니다.
+Samsung Knox Standard를 실행하는 장치가 Intune의 다중 사용자 관리에서 지원됩니다. 즉, 사용자가 Azure AD 자격 증명을 사용하여 장치에 로그인하고 로그아웃할 수 있습니다. 장치는 사용 여부와 관계없이 중앙에서 관리됩니다. 사용자가 로그인하면 앱에 액세스할 수 있고 앱에 정책을 적용할 수도 있습니다. 사용자가 로그아웃하면 모든 앱 데이터가 지워집니다.
 
 ## <a name="prerequisite"></a>필수 구성 요소
 

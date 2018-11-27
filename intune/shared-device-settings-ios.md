@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7c735486ad93bd76350435861482505a1ab0d30a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 638b4b3ebc83917faae0d34ec407b8ad47b4a4fb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834230"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183386"
 ---
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>iOS 장치 잠금 화면에 메시지를 표시하기 위한 공유 장치 구성 설정
 

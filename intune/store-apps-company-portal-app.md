@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 109ba2ddeca3af3f1dbb9834e206330f6146b819
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727563"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190271"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 수동으로 추가
 

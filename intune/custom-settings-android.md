@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f9e98575c92d403d51708f7403109bea2184176e
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: 74d23c8433c741927f28bb1d6b9f55393e38f7db
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983128"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182978"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune의 Android 장치에 대한 사용자 지정 설정 사용
 
@@ -31,7 +32,7 @@ Android 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resou
 
 - [미리 공유한 키를 사용하여 Wi-Fi 프로필 만들기](/intune/wi-fi-profile-shared-key)
 - [앱당 VPN 프로필 만들기](/intune/android-pulse-secure-per-app-vpn)
-- [Samsung Knox Standard 장치에 대해 앱 허용 및 차단](/intune/samsung-knox-apps-allow-block)
+- [Samsung KNOX Standard 장치에 대해 앱 허용 및 차단](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
 > 나열된 설정만이 사용자 지정 프로필에 의해 구성될 수 있습니다. Android 장치는 구성할 수 있는 OMA-URI 설정의 전체 목록을 노출하지 않습니다. 더 많은 설정을 참조하려는 경우 [Intune Uservoice 사이트](https://microsoftintune.uservoice.com/forums/291681-ideas)에서 더 많은 설정에 투표하십시오.

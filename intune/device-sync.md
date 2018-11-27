@@ -12,20 +12,21 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: c408c19a630daff9ca1b238afcef9bb9193f5c98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117874"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179511"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>장치를 동기화하여 Intune에서 최신 정책과 작업 가져오기
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-장치 **동기화** 작업은 선택한 장치가 Intune을 사용하여 즉시 체크 인하도록 강제합니다. 장치가 체크 인하면 장치에 할당된 보류 중인 작업 또는 정책을 즉시 받게 됩니다. 이 기능을 통해 예약된 다음 체크 인을 기다리지 않고 즉시 할당한 정책의 유효성을 검사하고 문제를 해결할 수 있습니다.
+장치 **동기화** 작업은 선택한 장치가 Intune을 사용하여 즉시 체크 인하도록 강제합니다. 장치가 체크 인하면 장치에 할당된 보류 중인 작업 또는 정책을 즉시 받게 됩니다. 이 기능을 통해 예약된 다음 체크 인을 기다리지 않고 즉시 할당한 정책의 유효성을 검사하고 문제를 해결할 수 있습니다.
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
