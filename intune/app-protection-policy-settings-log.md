@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/15/2017
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,17 +14,26 @@ ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05502c901f01ba134475ec69df3c42aa6e0e7480
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231761"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189846"
 ---
 # <a name="review-client-app-protection-logs"></a>클라이언트 앱 보호 로그 검토
 
-앱 보호 로그에서 검토할 수 있는 설정에 대해 알아봅니다. 모바일 클라이언트에서 응용 프로그램에 대한 Intune 진단 모드를 사용하도록 설정하여 로그에 액세스합니다. 다음 표에는 로그에 기록된 설정에 대한 이름 및 설명이 나와 있습니다.
+앱 보호 로그에서 검토할 수 있는 설정에 대해 알아봅니다. 모바일 클라이언트에서 Intune Diagnostics를 활성화하여 로그에 액세스합니다. 
+
+로그를 활성화하고 수집하는 프로세스는 플랫폼별로 다릅니다.
+- **Android 디바이스** - *회사 포털*을 사용합니다. [회사 지원팀에 이메일 로그](/intune-user-help/send-logs-to-your-it-admin-by-email-android)를 참조하세요
+- **iOS 디바이스** - Managed Browser를 사용하거나 *Microsoft Edge*를 사용하여 로그를 수집합니다. 자세한 내용은 Intune 지원 팀 블로그 [Intune Managed Browser의 로그 제출을 위한 새 Intune 진단 콘솔](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser)을 참조하세요. 
+- **Windows 10 디바이스** - *MDMDiag* 및 이벤트 로그를 사용합니다. 참고 항목: Windows 클라이언트에서 [Windows 10의 MDM 진단 오류](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) 및 블로그 [Windows 10 Intune 정책 실패 문제 해결](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
+
+
+다음 표에는 로그에 기록된 설정에 대한 이름 및 설명이 나열되어 있습니다.
 
 ## <a name="app-protection-policy-settings"></a>앱 보호 정책 설정
 

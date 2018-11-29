@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: c9920e914a80ec3bb02f5066e6d6e34b2236c860
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: db9f0ca860186222491906aa35baf1e92d14e548
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212498"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181346"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -126,7 +127,7 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
 
 4. 키 집합 공유를 사용하도록 설정한 후 다음 단계에 따라 Intune 앱 SDK에서 데이터를 저장할 별도의 액세스 그룹을 만듭니다. UI를 사용하거나 자격 파일을 사용하여 키 집합 액세스 그룹을 만들 수 있습니다. UI를 사용하여 키 집합 액세스 그룹을 만드는 경우 다음 단계를 수행해야 합니다.
 
-   1. 모바일 앱에 키 집합 액세스 그룹이 정의되어 있지 않으면 앱의 번들 ID를 첫 번째 그룹으로 추가합니다.
+   1. 모바일 앱에 키 집합 액세스 그룹이 정의되어 있지 않으면 앱의 번들 ID를 **첫 번째** 그룹으로 추가합니다.
 
    2. 공유 키 집합 그룹 `com.microsoft.intune.mam`을 기존 액세스 그룹에 추가합니다. Intune 앱 SDK에서 이 액세스 그룹을 사용하여 데이터를 저장합니다.
 
@@ -140,7 +141,7 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
       > [!NOTE]
-      > 자격 파일은 모바일 응용 프로그램에 고유한 XML 파일입니다. iOS 앱에서 특수한 권한 및 기능을 지정하는 데 사용됩니다. 이전에 앱에 자격 파일이 없었던 경우 키 집합 공유를 사용하도록 설정하면(3단계) Xcode에서 해당 앱용 자격 파일을 생성했을 것입니다.
+      > 자격 파일은 모바일 응용 프로그램에 고유한 XML 파일입니다. iOS 앱에서 특수한 권한 및 기능을 지정하는 데 사용됩니다. 이전에 앱에 자격 파일이 없었던 경우 키 집합 공유를 사용하도록 설정하면(3단계) Xcode에서 해당 앱용 자격 파일을 생성했을 것입니다. 앱의 번들 ID가 목록의 첫 번째 항목인지 확인합니다.
 
 5. 앱이 `UIApplication canOpenURL`에 전달하는 각 프로토콜을 앱 Info.plist 파일의 `LSApplicationQueriesSchemes` 배열에 포함합니다. 다음 단계로 진행하기 전에 변경 내용을 저장해야 합니다.
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: cbefc5ae5ef159c3c58a475f01a1513abb46ee90
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254074"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181499"
 ---
 # <a name="configure-a-custom-domain-name"></a>사용자 지정 도메인 이름 구성
 
@@ -32,7 +33,7 @@ ms.locfileid: "44254074"
 
 사용자 계정을 만들거나 온-프레미스 Active Directory를 동기화하기 전에 .onmicrosoft.com 도메인만 사용할지 아니면 사용자 지정 도메인 이름을 하나 이상 추가할지를 결정하는 것이 좋습니다. 사용자 관리가 간소화되도록 사용자를 추가하기 전에 사용자 지정 도메인을 설정합니다. 이렇게 하면 사용자가 다른 도메인 리소스에 액세스하는 데 사용하는 자격 증명으로 로그인할 수 있습니다.
 
-Microsoft의 클라우드 기반 서비스에 가입한 경우 해당 서비스의 인스턴스는 클라우드 기반 서비스의 ID 및 디렉터리 서비스를 제공하는 Microsoft [Azure AD 테넌트](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)가 됩니다. 조직의 사용자 지정 도메인 이름을 사용하도록 Intune을 구성하는 작업은 다른 Azure AD 테넌트의 경우와 동일하므로 [도메인 추가](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)에 설명된 정보 및 절차를 사용할 수 있습니다.
+Microsoft의 클라우드 기반 서비스에 가입한 경우 해당 서비스의 인스턴스는 클라우드 기반 서비스의 ID 및 디렉터리 서비스를 제공하는 Microsoft [Azure AD 테넌트](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)가 됩니다. 또한, 조직의 사용자 지정 도메인 이름을 사용하도록 Intune을 구성하는 작업은 다른 Azure AD 테넌트의 경우와 동일하므로 [도메인 추가](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)에 설명된 정보 및 프로시저를 사용할 수 있습니다.
 
 > [!TIP]
 > 사용자 지정 도메인에 대해 자세히 알아보려면 [Azure Active Directory에서 사용자 지정 도메인 이름의 개념적 개요](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/)를 참조하세요.

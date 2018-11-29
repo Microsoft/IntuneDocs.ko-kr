@@ -13,17 +13,18 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ff5686e2d83831259bd21bee164b3c187e1c0ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231358"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180581"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune에서 온-프레미스 Exchange 및 Exchange Online에 대한 조건부 액세스 준수 모니터링
 
-Intune 1704 릴리스부터는 관리자가 온-프레미스 Exchange Connector 또는 Intune 서비스 간 커넥터(Exchange Online 커넥터)를 통해 Intune과 동기화되는 Exchange ActiveSync 장치 레코드 관련 보고 정보를 확인할 수 있습니다. 조건부 액세스 준수 보고 기능은 다음과 같은 여러 동기화 상태가 설정된 장치의 요약 정보를 제공합니다.
+Intune 1704 릴리스부터는 관리자가 온-프레미스 Exchange Connector 또는 Intune 서비스 간 커넥터(Exchange Online 커넥터)를 통해 Intune과 동기화되는 Exchange ActiveSync 디바이스 레코드 관련 보고 정보를 확인할 수 있습니다. 조건부 액세스 준수 보고 기능은 다음과 같은 여러 동기화 상태가 설정된 디바이스의 요약 정보를 제공합니다.
 
 -   **허용**
 
@@ -37,9 +38,9 @@ Intune 1704 릴리스부터는 관리자가 온-프레미스 Exchange Connector 
 
 2.  정상적으로 로그인되면 **Azure 대시보드**가 표시됩니다.
 
-3.  왼쪽 메뉴에서 **모든 서비스**를 선택한 다음, 텍스트 상자 필터에 **Intune**을 입력합니다.
+3.  왼쪽 메뉴에서  **모든 서비스**를 선택한 다음, 텍스트 상자 필터에  **Intune**을 입력합니다.
 
-4.  **Intune**을 선택하면 **Intune 대시보드**가 표시됩니다.
+4.   **Intune**을 선택하면 **Intune 대시보드**가 표시됩니다.
 
 5.  **조건부 액세스**와 **개요**를 차례로 선택합니다.
 
@@ -49,7 +50,7 @@ Intune 1704 릴리스부터는 관리자가 온-프레미스 Exchange Connector 
 
 세 영역 중 하나를 선택하면 허용, 차단 또는 격리 중인 장치에 대한 추가 세부 정보를 확인할 수 있습니다.
 
-특정 장치로 드릴다운하여 더 자세한 정보를 확인할 수도 있습니다. 예를 들어 다음의 이미지에서 선택된 장치는 차단된 상태입니다. Intune에서는 조건부 액세스 준수 보고서 창에서 회사 데이터를 제거할 수 있는 옵션을 제공합니다.
+특정 디바이스로 드릴다운하여 더 자세한 정보를 확인할 수도 있습니다. 예를 들어 다음의 이미지에서 선택된 장치는 차단된 상태입니다. Intune에서는 조건부 액세스 준수 보고서 창에서 회사 데이터를 제거할 수 있는 옵션을 제공합니다.
 
 ![조건부 액세스 장치 세부 보고 이미지](./media/CA-reporting-intune-3.png)
 

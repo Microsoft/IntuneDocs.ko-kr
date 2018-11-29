@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425022"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179087"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC에 Intune 소프트웨어 클라이언트 설치
 
@@ -256,7 +257,7 @@ Intune 관리 콘솔을 사용하여 소프트웨어 클라이언트 등록을 �
 
 등록 취소 프로세스는 OnlineManagement 폴더를 제거하지 않습니다. 제거 후 30분 정도 기다린 후 이 명령을 실행합니다. 너무 빨리 실행하면 제거가 알 수 없는 상태로 남을 수 있습니다. 폴더를 제거하려면 관리자 권한 프롬프트를 시작하고 다음을 실행합니다.
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>다음 단계
 [Microsoft Intune에서 장치 관리](device-management.md)

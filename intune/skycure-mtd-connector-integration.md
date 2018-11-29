@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00ae29b831bebb770b70c38b5e76d7f19bab10ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231400"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180156"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Intune과 Symantec Endpoint Protection Mobile 통합 설정
 
@@ -83,7 +84,7 @@ SEP Mobile은 Intune과의 통합을 두 가지 모드로 지원합니다.
 
 SEP Mobile을 실행하는 모든 장치가 포함된 Azure AD 보안 그룹을 추가해야 합니다.
 
--  SEP Mobile을 실행하는 장치의 보안 그룹을 모두 입력하여 선택한 다음, 변경 내용을 저장합니다.
+-  SEP Mobile을 실행하는 디바이스의 보안 그룹을 모두 입력하여 선택한 다음, 변경 내용을 저장합니다.
 
     ![SEP Mobile 앱에 대한 사용자 그룹을 보여주는 이미지](./media/symantec-portal-basic-groups.png)   
 

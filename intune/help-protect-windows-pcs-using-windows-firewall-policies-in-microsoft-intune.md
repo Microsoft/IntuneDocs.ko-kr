@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a38ff69b878880ffa16e327eace0afe64d336f43
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310575"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181125"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune에서 Windows 방화벽 정책을 사용하여 Windows PC 보호
 
@@ -38,7 +39,7 @@ Windows 방화벽 정책을 통해 관리 PC의 Windows 방화벽을 제어하�
 > [!NOTE]
 > Microsoft Intune 정책 및 그룹 정책이 PC의 동일한 설정을 관리하도록 구성된 경우 그룹 정책 설정이 Microsoft Intune 정책을 재정의합니다. Intune 정책과 그룹 정책 간의 충돌을 방지하는 방법에 대한 정보는 [GPO 및 Microsoft Intune 정책 충돌 해결](resolve-gpo-and-microsoft-intune-policy-conflicts.md)을 참조하세요.
 >
-> Windows Vista를 실행하는 컴퓨터에 Windows 방화벽 설정을 배포하려는 경우에는 먼저 컴퓨터에 [핫픽스 KB971800](http://support2.microsoft.com/kb/971800)을 설치해야 합니다.
+> Windows Vista를 실행하는 컴퓨터에 Windows 방화벽 설정을 배포하려는 경우에는 먼저 해당 컴퓨터에 [핫픽스 KB971800](http://support2.microsoft.com/kb/971800)을 설치해야 합니다.
 
 > [!IMPORTANT]
 > Intune을 사용하여 Windows 방화벽을 관리하려면 다음 두 서비스가 관리할 컴퓨터에서 설정되어 있는지 확인하세요.

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
+ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610110"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52267257"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
@@ -65,6 +66,8 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 장치에 �
 
      > [!NOTE]
      > **iOS 앱 전용**: 앱당 VPN 설정을 포함하는 iOS VPN 프로필을 만든 경우 **VPN**에서 VPN 프로필을 선택할 수 있습니다. 앱을 실행하면 VPN 연결이 열립니다. 자세한 내용은 [iOS 장치의 VPN 설정](vpn-settings-ios.md)을 참조하세요.
+     >
+     > **Android 앱의 경우에만 해당**: **등록 여부에 상관없이 사용 가능**으로 Android 앱을 배포하는 경우, 보고 상태는 등록된 디바이스에서만 사용할 수 있습니다.
 
 9. 이 앱 할당에서 영향을 주는 사용자 그룹을 선택하려면 **포함되는 그룹**을 선택합니다.
 10. 포함할 하나 이상의 그룹을 선택한 후, **선택**을 선택합니다.

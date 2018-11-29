@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5766c4ebe7b261356248b00d0ca2d8937d3db79a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 3600cae373dceb88122852e3d260e91e2618d516
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231528"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180428"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune과 Check Point SandBlast Mobile Threat Defense 커넥터
 
@@ -59,7 +60,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 
-네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 위협을 감지하고 장치 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
+네트워크에서  **메시지 가로채기(Man-in-the-middle)** 와 같은 위협을 감지하고 디바이스 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
 
 **Wi-Fi를 통한 네트워크 액세스 차단:**
 
@@ -71,7 +72,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
 
-네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 공격을 감지하여, 장치 위험에 따라 회사 파일 동기화를 금지합니다.
+네트워크에서  **메시지 가로채기(Man-in-the-middle)** 와 같은 공격을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 
 **네트워크 위협이 감지할 경우 SharePoint Online 차단:**
 

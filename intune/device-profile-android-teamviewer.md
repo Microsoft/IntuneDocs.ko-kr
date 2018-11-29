@@ -5,20 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744638"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186191"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer를 사용하여 Intune 장치 원격 관리
 
@@ -58,7 +59,10 @@ TeamViewer를 사용하면 Intune Connector용 TeamViewer가 TeamViewer 세션�
 
 ![TeamViewer를 사용하여 Android 장치 원격 관리 - 예](./media/android-teamviewer.png)
 
-원격 세션을 시작하면 최종 사용자 장치의 회사 포털 앱 아이콘에 알림 플래그가 표시됩니다. 앱을 열 때 알림이 표시됩니다. 그러면 사용자는 원격 지원 요청을 수락할 수 있습니다.
+원격 세션을 시작하면 사용자는 디바이스의 회사 포털 앱 아이콘에 알림 플래그를 볼 수 있습니다. 앱이 열릴 때 알림도 표시됩니다. 그러면 사용자는 원격 지원 요청을 수락할 수 있습니다.
+
+> [!NOTE]
+> DEM 및 WCD와 같은 "사용자 없는" 메서드를 사용하여 등록된 Windows 디바이스는 회사 포털 앱에 TeamViewer 알림을 표시하지 않습니다. 이러한 시나리오에서는 TeamViewer 포털을 사용하여 세션을 생성하는 것이 좋습니다.
 
 TeamViewer에서 장치 제어를 포함해 장치에서 작업 범위를 완료할 수 있습니다. 수행 가능한 작업에 대한 자세한 내용은 [TeamViewer 지침](https://www.teamviewer.com/support/documents/)을 참조합니다.
 
