@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59736ad188cf88c994ff93b4a505731afad8f550
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
+ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186327"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52618189"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>사용자 지정 장치 프로필을 사용하여 미리 공유한 키로 Wi-Fi 프로필 만들기 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,9 +34,8 @@ ms.locfileid: "52186327"
 ## <a name="before-you-begin"></a>시작하기 전에
 
 - 나중에 이 아티클에서 설명한 대로 해당 네트워크에 연결된 컴퓨터에서 코드를 쉽게 복사할 수 있습니다.
-- Android의 경우 [Android PSK 생성기](http://intunepskgenerator.johnathonb.com/)를 사용할 수도 있습니다.
 - 더 많은 OMA-URI 설정을 추가하여 여러 네트워크와 키를 추가할 수 있습니다.
-- iOS의 경우 Mac 스테이션의 Apple Configurator를 사용하여 프로필을 설정합니다. 또는 [iOS PSK 모바일 구성 생성기](http://intunepskgenerator.johnathonb.com/)를 사용합니다.
+- iOS의 경우 Mac 스테이션의 Apple Configurator를 사용하여 프로필을 설정합니다.
 - PSK는 64자리 16진수 문자열 또는 인쇄 가능한 8~63자의 ASCII 문자를 요구합니다. 별표(*) 등의 일부 문자는 지원되지 않습니다.
 
 ## <a name="create-a-custom-profile"></a>사용자 지정 프로필 만들기
