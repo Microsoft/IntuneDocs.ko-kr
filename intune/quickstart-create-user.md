@@ -30,7 +30,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="create-a-user"></a>사용자 만들기
 
-사람들이 Intune 장치 관리에 등록하려면 사용자 계정이 있어야 합니다.
+Intune 장치 관리에 등록하려면 사용자 계정이 있어야 합니다.
 
 1. Intune에서 **사용자** > **모든 사용자** > **새 사용자**를 선택합니다.
 ![브라우저](media/quickstart-create-user/create-user.png)
@@ -57,7 +57,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
    > 이 설정은 이 사용자의 라이선스 중 하나를 사용합니다. 평가판 환경을 사용하는 경우 나중에 라이브 환경에서 실제 사용자에게 이 라이선스를 다시 할당합니다.
 6. **저장** > **닫기**를 선택합니다.
 
-이제 새 활성 Intune 사용자는 **Intune** 라이선스를 사용하고 있다고 표시됩니다.
+이제 새롭게 생성된 Intune 사용자는 **Intune** 라이선스를 사용하고 있다고 표시됩니다.
 
 ## <a name="clean-up-resources"></a>리소스 정리
 
@@ -67,7 +67,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 이 빠른 시작에서는 사용자를 만들고 해당 사용자에게 라이선스를 할당했습니다. Intune에 사용자를 추가하는 방법에 대한 자세한 내용은 [사용자 추가 및 Intune에 관리 권한 부여](users-add.md)를 참조하세요.
 
-Intune 빠른 시작의 이 시리즈를 수행하려면 다음 빠른 시작을 계속 진행하세요.
+다음 Intune 빠른 시작을 진행하기 위해서는 아래 빠른 시작 링크를 클릭하세요.
 
 > [!div class="nextstepaction"]
 > [빠른 시작: 사용자 관리를 위한 그룹 만들기](quickstart-create-group.md)
