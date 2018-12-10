@@ -27,7 +27,7 @@ ms.locfileid: "52186259"
 
 이 빠른 시작에서는 Microsoft Intune을 사용하여 비규격 디바이스가 있는 직원의 구성원에게 이메일 알림을 보냅니다.
 
-기본적으로 Intune에서 준수하지 않는 장치를 검색한 경우 Intune은 즉시 장치를 비준수로 표시합니다. AAD(Azure Active Directory) [조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)는 디바이스를 차단합니다. 디바이스가 비준수 상태일 경우 Intune을 사용하면 비준수 작업을 추가할 수 있으며, 이를 통해 수행할 작업을 유연하게 결정할 수 있습니다. 예를 들어 비규격 디바이스를 차단하기 전에 사용자에게 준수 유예 기간을 지정할 수 있습니다.
+기본적으로 Intune에서 준수하지 않는 장치를 검색한 경우 Intune은 즉시 디바이스를 비준수로 표시합니다. AAD(Azure Active Directory) [조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)는 디바이스를 차단합니다. 디바이스가 비준수 상태일 경우 Intune을 사용하면 비준수 작업을 추가할 수 있으며, 이를 통해 수행할 작업을 유연하게 결정할 수 있습니다. 예를 들어 비규격 디바이스를 차단하기 전에 사용자에게 준수 유예 기간을 지정할 수 있습니다.
 
 디바이스가 규정을 준수하지 않을 때 수행할 수 있는 작업 중 하나는 해당 최종 사용자에게 이메일을 보내는 것입니다. 이메일 알림을 최종 사용자에게 보내기 전에 사용자 정의할 수도 있습니다. 특히 회사 로고, 연락처 정보를 비롯하여 받는 사람, 제목 및 메시지 본문을 사용자 지정할 수 있습니다. Intune은 비규격 디바이스에 대한 세부 정보도 이메일 알림에 포함합니다.
 
@@ -42,7 +42,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="create-a-notification-message-template"></a>알림 메시지 템플릿 만들기
 
-사용자에게 메일을 보내려면 알림 메시지 템플릿을 만듭니다. 장치가 비준수 상태이면 템플릿에 입력한 세부 사항이 사용자에게 보낸 메일에 표시됩니다.
+사용자에게 메일을 보내려면 알림 메시지 템플릿을 만듭니다. 디바이스가 비준수 상태이면 템플릿에 입력한 세부 사항이 사용자에게 보낸 메일에 표시됩니다.
 
 1. Intune에서 **디바이스 준수** > **알림** > **알림 만들기**를 선택합니다. 
 2. 다음 정보를 입력합니다.
@@ -101,7 +101,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
     > [!NOTE]
     > 준수 정책을 할당할 때 그룹을 포함하거나 제외할 수 있습니다.
 
-4. **Save**을 클릭합니다.
+4. **저장**을 클릭합니다.
 
 정책을 성공적으로 만들고 저장하면 **디바이스 준수 - 정책** 목록에 표시됩니다. 목록에서 **할당됨**이 **예**로 설정되어 있음을 확인합니다.
 
@@ -109,7 +109,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 이 빠른 시작에서는 Intune을 사용하여 직원의 Windows 10 디바이스에 최소 6자 길이의 암호를 요구하는 준수 정책을 만들고 할당했습니다. Windows 디바이스에 대한 준수 정책 만들기에 대한 자세한 내용은 [Intune에서 Windows 디바이스에 대한 디바이스 준수 정책 추가](compliance-policy-create-windows.md)를 참조하세요.
 
-Intune 빠른 시작의 이 시리즈를 수행하려면 다음 빠른 시작을 계속 진행하세요.
+다음 Intune 빠른 시작을 진행하기 위해서는 아래 빠른 시작 링크를 클릭하세요.
 
 > [!div class="nextstepaction"]
 > [빠른 시작: 클라이언트 앱 추가 및 할당](quickstart-add-assign-app.md)
