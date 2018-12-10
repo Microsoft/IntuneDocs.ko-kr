@@ -44,19 +44,19 @@ Intune이 앱의 측면을 관리할 수 있도록 앱을 포함할 수 있습�
 다음 단계에 따라 Intune에 앱을 추가할 수 있습니다.
 
 1. [Intune](https://aka.ms/intuneportal)에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다. 
-2. **앱 유형** 드롭다운 상자의 **Office 365 Suite** 섹션에서 **Windows 10**을 선택합니다.
-3. **App Suite 구성**을 선택하여 Intune 사용자에게 할당할 Office 앱을 선택합니다.
+2. **앱 유형** 드롭다운 상자의 **Office 365 제품군** 섹션에서 **Windows 10**을 선택합니다.
+3. **앱 제품군 구성**을 선택하여 Intune 사용자에게 할당할 Office 앱을 선택합니다.
 4. **확인**을 클릭하여 기본 선택 앱을 적용합니다.
-5. **App Suite 정보**를 선택합니다.
-6. **Microsoft Office 365 앱 도구 모음**을 **도구 모듬 이름**으로 입력합니다.
-7. **Microsoft Office 365 앱 도구 모음**을 **도구 모음 설명**으로 입력합니다.
+5. **앱 제품군 정보**를 선택합니다.
+6. **제품군 이름**을 **OMicrosoft Office 365 앱 도구 모음 이름**으로 입력합니다.
+7. **제품군 설명**을 **OMicrosoft Office 365 앱 도구 모음 설명**으로 입력합니다.
 8. **회사 포털에 이 항목을 추천 앱으로 표시** 옆에 있는 **예**를 클릭합니다.
 9. **확인**을 클릭합니다.
 
     ![앱 정보를 추가하는 스크린샷](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. **App Suite 설정**을 선택합니다.
-9. **업데이트 채널** 드롭다운 상자에서 **월간**을 선택합니다.
+8. **앱 제품군 설정**을 선택합니다.
+9. **업데이트 채널** 드롭다운 상자에서 **매월**을 선택합니다.
 10. **확인** > **추가**를 클릭합니다.
 
 ## <a name="assign-the-app-to-a-group"></a>그룹에 앱 할당
@@ -78,7 +78,7 @@ Microsoft Intune에 앱을 추가한 후 사용자와 다바이스 그룹에 해
 
 ## <a name="install-the-app-on-the-enrolled-device"></a>등록된 디바이스에 앱 설치
 
-회사 포털 앱을 설치하고 사용하여 Intune에서 사용할 수 있도록 만든 **Contoso의 할 일** 앱을 설치해야 합니다. 다음 단계에 따라 등록된 디바이스의 사용자가 앱을 사용할 수 있는지 확인합니다.
+회사 포털 앱을 설치하고 사용하여 Intune에서 사용할 수 있도록 만든 **Contoso의 할 일(To-Do)** 앱을 설치해야 합니다. 다음 단계에 따라 등록된 디바이스의 사용자가 앱을 사용할 수 있는지 확인합니다.
 
 1. 등록된 Windows 10 Desktop 디바이스에 로그인합니다.
 
@@ -100,7 +100,7 @@ Microsoft Intune에 앱을 추가한 후 사용자와 다바이스 그룹에 해
 
 이 빠른 시작에서는 intune에 앱을 추가하고 Windows 10 Desktop 디바이스에 앱을 설치합니다. Intune에서 앱을 관리하는 방법에 대한 자세한 내용은 [Microsoft Intune 앱 관리란?](app-management.md)을 참조하세요.
 
-Intune 빠른 시작의 이 시리즈를 수행하려면 다음 빠른 시작을 계속 진행하세요.
+다음 Intune 빠른 시작을 진행하기 위해서는 아래 빠른 시작 링크를 클릭하세요.
 
 > [!div class="nextstepaction"]
 > [빠른 시작: 앱 보호 정책 만들기 및 할당](quickstart-create-assign-app-policy.md)
