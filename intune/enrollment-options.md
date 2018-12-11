@@ -25,7 +25,7 @@ ms.locfileid: "52182871"
 
 Intune 관리자는 장치 등록을 구성하여 사용자에게 도움을 주고 Intune 기능을 사용하도록 설정할 수 있습니다.  Intune에서 제공하는 등록 옵션은 다음과 같습니다.
 
-## <a name="terms-and-conditions"></a>Terms and conditions
+## <a name="terms-and-conditions"></a>사용 약관
 
 사용자가 회사의 사용 약관에 동의해야만 회사 포털을 통해 장치를 등록하고 회사 앱 및 메일 같은 리소스에 액세스하도록 요구할 수 있습니다. 사용 약관의 구성은 선택 사항입니다. [사용 약관](terms-and-conditions-create.md)에 대해 자세히 알아보세요.
 
