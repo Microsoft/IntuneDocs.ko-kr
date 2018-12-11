@@ -15,12 +15,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 27f3a184e355f63d20a79fd92e8326206f6eee15
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9bbf6f30b7a7490608f9896ae8fe54e27341ccae
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185630"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112326"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure의 Intune 콘솔 및 레거시 Intune PC 클라이언트
 
@@ -53,7 +53,7 @@ MDM을 사용하여 관리할 수 없는 Windows 7의 경우 Silverlight 콘솔�
 
 ## <a name="mdm-capabilities"></a>MDM 기능
 
-PC 클라이언트와 MDM 기능 간의 자세한 비교는 [Windows PC를 컴퓨터로 관리하는 방식과 모바일 장치로 관리하는 방식 비교](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison)를 참조하세요. MDM 업데이트는 Win 32 앱에 대한 옵션을 평가하는 기능을 포함하여 새로운 관리 기능을 MDM에 등록된 Windows 10 장치로 계속 가져옵니다. 서비스에 추가된 최신 릴리스는 [새로운 기능](https://docs.microsoft.com/intune/whats-new)을 확인하세요.
+PC 클라이언트와 MDM 기능 간의 자세한 비교는 [Windows PC를 컴퓨터로 관리하는 방식과 모바일 장치로 관리하는 방식 비교](pc-management-comparison.md)를 참조하세요. MDM 업데이트는 Win 32 앱에 대한 옵션을 평가하는 기능을 포함하여 새로운 관리 기능을 MDM에 등록된 Windows 10 장치로 계속 가져옵니다. 서비스에 추가된 최신 릴리스는 [새로운 기능](https://docs.microsoft.com/intune/whats-new)을 확인하세요.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>PC 클라이언트에서 MDM으로 전환
 

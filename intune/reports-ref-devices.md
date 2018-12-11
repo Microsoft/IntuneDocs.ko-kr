@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181454"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112938"
 ---
 # <a name="reference-for-devices-entities"></a>장치 엔터티에 대한 참조
 
@@ -316,7 +316,7 @@ ms.locfileid: "52181454"
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-**MdmDeviceInventoryHistories** 엔터티 지난 90일 동안 MDM 관리 장치에 대한 인벤토리 데이터의 일일 스냅숏을 포함합니다. DateKey 열은 행에 대한 날짜를 나타냅니다. 일부 속성은 모든 장치에 대해 적용되지 않거나 입력되지 않을 수 있으므로 이 페이지에서 자세한 내용을 참조하세요. 자세한 내용은 [Microsoft Intune에서 인벤토리를 사용하는 장치 이해](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune)를 참조하세요.
+**MdmDeviceInventoryHistories** 엔터티 지난 90일 동안 MDM 관리 장치에 대한 인벤토리 데이터의 일일 스냅숏을 포함합니다. DateKey 열은 행에 대한 날짜를 나타냅니다. 일부 속성은 모든 장치에 대해 적용되지 않거나 입력되지 않을 수 있으므로 이 페이지에서 자세한 내용을 참조하세요. 자세한 내용은 [Microsoft Intune에서 인벤토리를 사용하는 장치 이해](device-inventory.md)를 참조하세요.
 
 | 속성  | 설명 |
 |---------|------------|

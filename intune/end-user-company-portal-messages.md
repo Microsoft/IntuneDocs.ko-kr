@@ -15,12 +15,12 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 44e7307997df67ad1c1ae6170da3bcc13e99070d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c4e5e18c0b995ad84340cdbc07a8a11b09e4f3a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185052"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112785"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>최종 사용자가 회사 포털 앱 메시지를 이해할 수 있도록 지원
 
@@ -108,7 +108,7 @@ Intune이 회사 계정을 만들어 해당 장치에 등록된 사용자의 Azu
 
 ### <a name="what-it-means"></a>의미
 
-WIP(Windows Information Protection) 앱 보호 정책에서 회사 포털 **허용된 앱** 또는 **예외 앱** 목록을 추가합니다. 자세한 내용은 [Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)를 참조하세요.
+WIP(Windows Information Protection) 앱 보호 정책에서 회사 포털 **허용된 앱** 또는 **예외 앱** 목록을 추가합니다. 자세한 내용은 [Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포](windows-information-protection-policy-create.md)를 참조하세요.
 
 ### <a name="see-also"></a>참고 항목
 [Intune 사용 방법에 대해 최종 사용자에게 알릴 내용](end-user-educate.md)
