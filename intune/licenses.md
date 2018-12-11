@@ -33,9 +33,9 @@ ms.locfileid: "52179000"
 | Intune | Intune | [자세한 정보](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
 | Enterprise Mobility + Security E3 | Intune | [자세한 정보](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
 | Enterprise Mobility + Security E5 | Intune | [자세한 정보](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 Education A1 | 교육에 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A3 | 교육에 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A5 | 교육에 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
+| Microsoft 365 Education A1 | 교육용 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
+| Microsoft 365 Education A3 | 교육용 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
+| Microsoft 365 Education A5 | 교육용 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
 | Microsoft 365 E3 | Intune | [자세한 정보](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 E5 | Intune | [자세한 정보](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 F1 | Intune | [자세한 정보](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
