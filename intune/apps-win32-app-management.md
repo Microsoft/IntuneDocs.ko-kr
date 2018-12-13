@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187297"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829150"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 독립 실행형 - Win32 앱 관(공개 미리 보기)
 
@@ -29,15 +29,11 @@ Intune 독립 실행형은 보다 나은 Win32 앱 관리 기능을 제공합니
 
 ## <a name="prerequisites-for-public-preview"></a>공개 미리 보기의 필수 구성 요소
 
-- Windows 10 버전 1607 이상(Enterprise)
+- Windows 10 버전 1607 이상(Enterprise, Pro 및 Education 버전)
 - Windows 10 클라이언트의 필수 요건은 다음과 같습니다. 
     - AAD(Azure Active Directory) 또는 Hybrid Azure Active Directory에 가입해야 합니다.
     - Intune(MDM-managed)에 등록되어 있어야 합니다.
 - Windows 응용 프로그램 크기는 공개 미리 보기 상태에서 앱당 8GB로 제한됩니다. 
-
-> [!NOTE]
-> 현재 Windows 10 버전 1607의 Pro 및 Education 버전에 대한 테스트를 진행하고 있으며, 고객의 피드백을 기다립니다.
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>업로드할 Win32 앱 콘텐츠 준비
 
@@ -228,15 +224,19 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 
 현재 Intune에 Win32 앱을 추가하는 단계를 완료한 상태입니다. 앱 할당 및 모니터링에 대한 자세한 내용은 [Microsoft Intune으로 그룹에 앱 할당](https://docs.microsoft.com/intune/apps-deploy) 및 [Microsoft Intune으로 앱 정보 및 할당 모니터링](https://docs.microsoft.com/intune/apps-monitor)을 참조하세요.
 
+## <a name="delivery-optimization"></a>배달 최적화
+
+Windows 10 RS3 이상 클라이언트는 Windows 10 클라이언트의 배달 최적화 구성 요소를 사용하여 Intune Win32 앱 콘텐츠를 다운로드합니다. 배달 최적화는 기본적으로 켜져 있는 피어 투 피어 기능을 제공합니다. 배달 최적화는 그룹 정책을 통해 구성되고 나중에는 Intune MDM을 통해 구성될 수 있습니다. 자세한 내용은 [Windows 10 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)를 참조하세요. 
+
 ## <a name="install-required-and-available-apps-on-devices"></a>장치에 사용 가능한 필수 앱 설치
 
 최종 사용자는 사용 가능한 필수 앱 설치에 대한 Windows 알림 메시지를 받게 됩니다. 다음 이미지는 장치가 다시 시작될 때까지 앱 설치가 완료되지 않았다는 알림 메시지를 나타낸 것입니다. 
 
 ![앱 설치에 대한 Windows 알림 메시지 스크린샷 예](./media/apps-win32-app-08.png)    
 
-다음은 장치에 앱 변경이 적용되고 있음을 최종 사용자에게 알리는 이미지입니다.
+다음은 디바이스에 앱 변경이 적용되고 있음을 최종 사용자에게 알리는 이미지입니다.
 
-![장치에 앱 변경이 적용되고 있음을 최종 사용자에게 알리는 스크린샷 예](./media/apps-win32-app-09.png)    
+![디바이스에 앱 변경이 적용되고 있음을 최종 사용자에게 알리는 스크린샷 예](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 앱 문제 해결
 클라이언트 컴퓨터에 대한 에이전트 로그는 일반적으로 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`에 있습니다. `CMTrace.exe`를 이용하여 이러한 로그 파일을 볼 수 있습니다. [SCCM 클라이언트 도구](https://docs.microsoft.com/sccm/core/support/tools)에서 *CMTrace.exe*를 다운로드할 수 있습니다. 

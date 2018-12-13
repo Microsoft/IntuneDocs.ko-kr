@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180989"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579169"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune에서 SCEP 및 PKCS 인증서 제거
 
@@ -43,8 +43,7 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 관리자가 [초기화](devices-wipe.md#wipe) 작업을 실행하는 경우
   - 관리자가 [사용 중지](devices-wipe.md#retire) 작업을 실행하는 경우
   - 장치는 Azure Active Directory(AD) 그룹에서 제거됩니다.
-  - 준수 정책은 그룹 할당에서 제거됩니다.
-  - 구성 프로필은 그룹 할당에서 제거됩니다.
+  - 인증서 프로필은 그룹 할당에서 제거됩니다.
 
 - 다음과 같은 경우 SCEP 인증서가 해지됩니다.
   - 관리자가 SCEP 프로필을 변경하거나 업데이트하는 경우
@@ -53,7 +52,6 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 최종 사용자가 등록 취소하는 경우
   - 관리자가 [초기화](devices-wipe.md#wipe) 작업을 실행하는 경우
   - 관리자가 [사용 중지](devices-wipe.md#retire) 작업을 실행하는 경우
-  - 준수 정책은 그룹 할당에서 제거됩니다.
 
 - 다음과 같은 경우 SCEP 인증서가 장치에 **남아 있습니다**(인증서는 해지되거나 제거되지 않음).
   - 최종 사용자가 Intune 라이선스를 상실하는 경우
@@ -78,8 +76,7 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 관리자가 Intune 라이선스를 철회하는 경우
   - 관리자가 Azure AD에서 사용자 또는 그룹을 제거하는 경우
   - 관리자가 PKCS 프로필을 변경하거나 업데이트하는 경우
-  - 구성 프로필은 그룹 할당에서 제거됩니다.
-  - 준수 정책은 그룹 할당에서 제거됩니다. 
+  - 인증서 프로필은 그룹 할당에서 제거됩니다.
 
 
 ## <a name="ios-devices"></a>iOS 장치
@@ -92,8 +89,7 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 관리자가 [초기화](devices-wipe.md#wipe) 작업을 실행하는 경우
   - 관리자가 [사용 중지](devices-wipe.md#retire) 작업을 실행하는 경우
   - 장치는 Azure Active Directory(AD) 그룹에서 제거됩니다.
-  - 준수 정책은 그룹 할당에서 제거됩니다.
-  - 구성 프로필은 그룹 할당에서 제거됩니다.
+  - 인증서 프로필은 그룹 할당에서 제거됩니다.
 
 - 다음과 같은 경우 SCEP 인증서가 해지됩니다.
   - 관리자가 SCEP 프로필을 변경하거나 업데이트하는 경우
@@ -102,7 +98,6 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 최종 사용자가 등록 취소하는 경우
   - 관리자가 [초기화](devices-wipe.md#wipe) 작업을 실행하는 경우
   - 관리자가 [사용 중지](devices-wipe.md#retire) 작업을 실행하는 경우
-  - 준수 정책은 그룹 할당에서 제거됩니다.
 
 - 다음과 같은 경우 SCEP 인증서가 장치에 **남아 있습니다**(인증서는 해지되거나 제거되지 않음).
   - 최종 사용자가 Intune 라이선스를 상실하는 경우
@@ -118,8 +113,7 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 관리자가 [사용 중지](devices-wipe.md#retire) 작업을 실행하는 경우
 
 - 다음과 같은 경우 PKCS 인증서가 제거됩니다.
-  - 준수 정책은 그룹 할당에서 제거됩니다.
-  - 구성 프로필은 그룹 할당에서 제거됩니다.
+  - 인증서 프로필은 그룹 할당에서 제거됩니다.
   
 - 다음과 같은 경우 루트 인증서가 제거됩니다.
   - 최종 사용자가 등록 취소하는 경우
@@ -143,8 +137,7 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
 - 다음과 같은 경우 SCEP 인증서가 해지됩니다.
   - 관리자가 [사용 중지](devices-wipe.md#retire) 작업을 실행하는 경우
   - 장치는 Azure Active Directory(AD) 그룹에서 제거됩니다.
-  - 준수 정책은 그룹 할당에서 제거됩니다.
-  - 구성 프로필은 그룹 할당에서 제거됩니다.
+  - 인증서 프로필은 그룹 할당에서 제거됩니다.
   - 관리자가 Azure Active Directory(AD)에서 사용자 또는 그룹을 제거하는 경우
   - 관리자가 SCEP 프로필을 변경하거나 업데이트하는 경우
 
@@ -176,8 +169,7 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 관리자가 Intune 라이선스를 철회하는 경우
   - 관리자가 Azure AD에서 사용자 또는 그룹을 제거하는 경우
   - 관리자가 PKCS 프로필을 변경하거나 업데이트하는 경우
-  - 구성 프로필은 그룹 할당에서 제거됩니다.
-  - 준수 정책은 그룹 할당에서 제거됩니다. 
+  - 인증서 프로필은 그룹 할당에서 제거됩니다.
   
   
 > [!NOTE]
@@ -191,8 +183,7 @@ Microsoft Intune에서 장치에 SCEP 및 PKCS 인증서를 추가할 수 있습
   - 최종 사용자가 등록 취소하는 경우
   - 관리자가 [사용 중지](devices-wipe.md#retire) 작업을 실행하는 경우
   - 장치는 Azure Active Directory(AD) 그룹에서 제거됩니다.
-  - 준수 정책은 그룹 할당에서 제거됩니다.
-  - 구성 프로필은 그룹 할당에서 제거됩니다.
+  - 인증서 프로필은 그룹 할당에서 제거됩니다.
 
 - 다음과 같은 경우 SCEP 인증서가 해지됩니다.
   - 관리자가 SCEP 프로필을 변경하거나 업데이트하는 경우

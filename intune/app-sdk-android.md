@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190407"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829184"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -640,20 +640,8 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 필요한 경우 Authority와 NonBrokerRedirectURI를 지정할 수 있습니다.
 
 다음 단계에 따라 Azure AD에 앱을 등록합니다.
-
-Azure Portal에서:
-1.  **Azure Active Directory** 블레이드로 이동합니다.
-2.  응용 프로그램의 **앱 등록** 설정을 선택합니다.
-3.  **API 액세스** 제목 아래의 **설정**에서 **필수 사용 권한**을 선택합니다. 
-4.  **+ 추가**를 클릭합니다.
-5.  **API 선택**을 클릭합니다. 
-6.  검색 상자에 **Microsoft 모바일 응용 프로그램 관리**를 입력합니다.
-7.  API 목록에서 **Microsoft 모바일 응용 프로그램 관리**를 선택하고 선택을 클릭합니다.
-8.  **사용자의 앱 관리 데이터 읽기 및 쓰기**를 선택합니다.
-9.  **완료**를 클릭합니다.
-10. **권한 부여**, **예**를 차례로 클릭합니다. 
-
-Azure AD에 응용 프로그램을 등록하는 방법에 대한 정보는 [여기](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)를 참조하세요. 
+* Azure AD에 응용 프로그램을 등록하는 방법에 대한 정보는 [여기](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)를 참조하세요. 
+* APP(앱 보호 정책) 서비스에 대한 Android 앱 권한을 부여하는 단계를 따라야 합니다. 앱에 Intune 앱 보호 서비스에 대한 액세스 권한 부여(선택 사항)에서 [Intune SDK 시작 가이드](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)의 지침을 따릅니다. 
 
 [조건부 액세스](#conditional-access)를 위한 요구 사항도 참조하세요.
 

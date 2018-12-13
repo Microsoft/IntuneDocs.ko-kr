@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185972"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728823"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>앱 보호 정책을 만들고 할당하는 방법
 
@@ -74,10 +74,14 @@ MAM을 지원하는 앱 목록을 확인하려면 [MAM 앱 목록](https://www.m
 
    ![강조 표시된 포함할 그룹 선택 메뉴 옵션을 사용하는 할당 창의 스크린샷](./media/app-protection-policy-add-users.png)
 
-3.  **Azure Active Directory**에 있는 모든 보안 그룹의 목록이 표시됩니다. 이 정책을 적용할 사용자 그룹을 선택한 다음, **선택**을 선택합니다. **선택**을 선택하면 정책이 사용자에게 배포됩니다.
+3.  **Azure Active Directory**에 있는 모든 보안 그룹의 목록이 표시됩니다. 이 정책을 적용할 사용자 그룹을 선택한 다음, **선택**을 선택합니다. 
 
     ![Azure Active Directory 사용자 목록을 보여 주는 사용자 그룹 추가 창의 스크린 샷](./media/azure-ad-user-group-list.png)
 
+4.  그룹을 포함 및 제외한 후 **저장**을 선택하여 구성을 저장하고 사용자에게 정책을 배포합니다. 구성을 저장하기 전에 **취소**를 선택하면 *포함* 및 *제외* 탭에서 변경한 모든 내용이 취소됩니다.   
+ 
+     ![저장 및 취소 옵션 보여 주는 스크린샷](./media/save-assignment.png)
+  
 이제 정책을 만들고 사용자에게 배포했습니다.
 
 Microsoft Intune 라이선스가 할당된 사용자만 정책에 의해 영향을 받습니다. Intune 라이선스가 할당되지 않은 선택된 보안 그룹의 사용자는 영향을 받지 않습니다.
@@ -109,9 +113,13 @@ Microsoft Intune 라이선스가 할당된 사용자만 정책에 의해 영향�
 
 2.  *Intune 앱 보호* 창에서 **할당**을 선택하여 해당 정책을 가진 현재 사용자 그룹 목록이 표시된 **Intune 앱 보호-할당** 창을 엽니다.
 
-3.  새 사용자 그룹을 정책에 추가하려면 **포함** 탭에서 **포함할 그룹 선택**을 선택한 다음, 사용자 그룹을 선택합니다. **선택**을 선택하여 선택한 그룹에 정책을 배포합니다.
+3.  새 사용자 그룹을 정책에 추가하려면 *포함* 탭에서 **포함할 그룹 선택**을 선택한 다음, 사용자 그룹을 선택합니다. **선택**을 선택하여 그룹을 추가합니다. 
 
-4.  새 사용자 그룹을 삭제하려면 **제외** 탭에서 **제외할 그룹 선택**을 선택한 다음, 사용자 그룹을 선택합니다. **선택**을 선택하여 사용자 그룹을 제거합니다.
+4.  사용자 그룹을 제외하려면 *제외* 탭에서 **제외할 그룹 선택**을 선택하고 사용자 그룹을 선택합니다. **선택**을 선택하여 사용자 그룹을 제거합니다.  
+
+5.  이전에 추가된 그룹을 삭제하려면 *포함* 또는 *제외* 탭에서 줄임표(...)를 선택하고 **삭제**를 선택합니다. 
+
+5.  할당 변경이 완료되면 **저장**을 선택하여 구성을 저장하고 새 사용자 세트에 정책을 배포합니다. 구성을 저장하기 전에 **취소**를 선택하면 *포함* 및 *제외* 탭에서 변경한 모든 내용이 취소됩니다.
 
 ### <a name="to-change-policy-settings"></a>정책 설정을 변경하려면
 

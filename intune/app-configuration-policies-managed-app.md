@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2407225bfd0cdb5892663bf2e66de36157aaf4e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182009"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829107"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>장치 등록 없이 관리되는 앱용 앱 구성 정책 추가
 
@@ -40,7 +40,7 @@ ms.locfileid: "52182009"
       Azure Portal에 표시되는 프로필의 설명입니다.
     - **장치 등록 유형**  
       **앱 관리**를 선택합니다.
-6.  **연결된 앱** 을 선택하여 구성할 앱을 선택합니다. 승인했으며 Intune과 동기화한 앱을 앱 목록에서 선택합니다.
+6. **연결된 앱**을 선택하여 구성할 앱을 선택합니다.  승인했으며 Intune과 동기화한 앱을 앱 목록에서 선택합니다.
 7. 앱에서 지원하는 각 구성 설정의 경우 **이름** 및 **값**을 입력하고 줄임표(**...**)를 선택합니다.  
     구성을 삭제하려면 줄임표(**...**)를 선택하고 **삭제**를 선택합니다.  
     

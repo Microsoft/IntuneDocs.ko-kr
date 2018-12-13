@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d86df4c38e0d4313dbff6ff2cd9111b2126dbaba
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180938"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630020"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 인터넷 액세스 관리
 
@@ -175,7 +175,12 @@ Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 응용 프�
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>보호된 브라우저에 대해 홈페이지를 구성하는 방법
 
-이 설정을 사용하면 보호되는 브라우저를 시작하거나 새 탭을 만들 때 사용자에게 표시되는 홈페이지를 구성할 수 있습니다. Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
+이 설정을 사용하면 보호되는 브라우저를 시작하거나 새 탭을 만들 때 사용자에게 표시되는 홈페이지를 구성할 수 있습니다. 
+- 이 설정은 Managed Browser에서 웹 페이지를 표시합니다.  Edge는 홈페이지 바로 가기를 표시합니다.
+- 홈페이지 바로 가기 아이콘은 검색 컨트롤 아래에 아이콘으로 나타납니다.  편집하거나 삭제할 수 없습니다.
+- 홈페이지 바로 가기에는 구분을 위해 조직 이름이 표시됩니다.  항상 첫 번째 아이콘으로 표시됩니다.
+
+Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행할 때 다음 키와 값 쌍을 제공합니다.
 
 |                                Key                                |                                                           값                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

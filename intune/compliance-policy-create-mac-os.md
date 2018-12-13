@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184185"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52828997"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune에서 macOS 장치에 대한 장치 준수 정책 추가
 
@@ -49,7 +49,8 @@ Intune macOS 장치 준수 정책은 macOS 장치가 규격 장치가 되기 위
 ## <a name="create-a-device-compliance-policy"></a>장치 준수 정책 만들기
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **플랫폼**에서 **macOS**를 선택합니다. **설정 구성**을 선택하고 **장치 상태**, **장치 속성** 및 **시스템 보안** 설정을 입력합니다. 작업을 마쳤으면 **확인**, **만들기**를 차례로 선택합니다.
+4. **플랫폼**에서 **macOS**를 선택합니다. 
+5. **설정 구성**을 선택하고 이 문서에 설명된 **디바이스 상태**, **디바이스 속성** 및 **시스템 보안** 설정을 입력합니다. 작업을 마쳤으면 **확인**, **만들기**를 차례로 선택합니다.
 
 ## <a name="device-health"></a>장치 상태
 
@@ -59,6 +60,8 @@ Intune macOS 장치 준수 정책은 macOS 장치가 규격 장치가 되기 위
 
 - **최소 OS 버전**: 장치가 OS 최소 버전 요구 사항을 충족하지 못할 경우 비규격 장치로 보고됩니다. 업그레이드 방법에 대한 정보를 제공하는 링크가 표시됩니다. 최종 사용자는 해당 장치를 업그레이드한 후 회사 리소스에 액세스할 수 있습니다.
 - **최대 OS 버전**: 장치가 규칙에 지정된 버전보다 최신 OS 버전을 사용하는 경우 회사 리소스에 대한 액세스가 차단됩니다. IT 관리자에게 문의하라는 메시지가 사용자에게 표시됩니다. OS 버전을 허용하도록 규칙이 변경될 때까지 이 장치는 회사 리소스에 액세스할 수 없습니다.
+- **최소 OS 빌드 버전**: Apple이 보안 업데이트를 게시하면 일반적으로 OS 버전이 아니라 빌드 번호가 업데이트됩니다. 이 기능을 사용하여 디바이스에 허용되는 최소 빌드 번호를 입력합니다.
+- **최대 OS 빌드 버전**: Apple이 보안 업데이트를 게시하면 일반적으로 OS 버전이 아니라 빌드 번호가 업데이트됩니다. 이 기능을 사용하여 디바이스에 허용되는 최대 빌드 번호를 입력합니다.
 
 ## <a name="system-security-settings"></a>시스템 보안 설정
 

@@ -1,12 +1,12 @@
 ---
-title: macOS 장치 등록 - 장비 등록 프로그램
+title: macOS 디바이스 등록 - 장비 등록 프로그램 또는 Apple School Manager
 titleSuffix: Microsoft Intune
 description: 장비 등록 프로그램을 사용하여 회사 소유 macOS 장치를 등록하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 92ddad3e7e8de4a10c67f9feae10d2441ec560bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180768"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728755"
 ---
-# <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Apple 장비 등록 프로그램을 통해 macOS 장치를 자동으로 등록
+# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>장비 등록 프로그램 또는 Apple School Manager를 사용하여 macOS 디바이스 자동 등록
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클을 통해 Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 장치에 대해 iOS 장치 등록을 설정할 수 있습니다. 장치를 건드리지 않고 다수의 장치에 대한 DEP 등록을 설정할 수 있습니다. macOS 장치를 직접 사용자에게 제공할 수 있습니다. 사용자가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 Intune 관리용으로 등록됩니다.
+이 문서에서는 Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com) 또는 [Apple School Manager](https://school.apple.com/)를 통해 구매한 디바이스에 대해 macOS 디바이스 등록을 설정할 수 있습니다. 디바이스를 건드리지 않고 다수의 디바이스에서 이러한 등록 중 하나를 사용할 수 있습니다. macOS 장치를 직접 사용자에게 제공할 수 있습니다. 사용자가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 Intune 관리용으로 등록됩니다.
 
-DEP 등록을 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 등록 중에 장치에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다.
+등록을 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 등록 프로필을 만듭니다.
 
-DEP 등록은 [장치 등록 관리자](device-enrollment-manager-enroll.md) 또는 [Apple School Manager](apple-school-manager-set-up-ios.md)에서 작동되지 않습니다.
+DEP 등록 및 Apple School Manager는 [디바이스 등록 관리자](device-enrollment-manager-enroll.md)와 함께 사용할 수 없습니다.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -42,19 +42,19 @@ DEP 등록은 [장치 등록 관리자](device-enrollment-manager-enroll.md) 또
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## <a name="prerequisites"></a>전제 조건
-- [Apple의 장치 등록 프로그램](http://deploy.apple.com)에서 구매한 장치
+- [Apple School Manager](https://school.apple.com/) 또는 [Apple의 장비 등록 프로그램](http://deploy.apple.com)에서 구매한 디바이스
 - 일련 번호 또는 구매 주문 번호 목록입니다. 
 - [MDM 기관](mdm-authority-set.md)
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-dep-token"></a>Apple DEP 토큰 가져오기
 
-macOS 장치를 DEP를 통해 등록하려면 Apple의 DEP 토큰(.p7m) 파일이 필요합니다. Intune에서는 이 토큰을 통해 회사에서 소유한 DEP 장치에 대한 정보를 동기화할 수 있습니다. 또한 Intune에서 등록 프로필을 Apple에 업로드하고 해당 프로필을 장치에 업로드할 수 있게 합니다.
+macOS 디바이스를 DEP 또는 Apple School Manager를 통해 등록하려면 Apple의 DEP 토큰(.p7m) 파일이 필요합니다. Intune에서는 이 토큰을 통해 조직에서 소유한 디바이스의 정보를 동기화할 수 있습니다. 또한 Intune에서 등록 프로필을 Apple에 업로드하고 해당 프로필을 장치에 업로드할 수 있게 합니다.
 
-Apple DEP 포털을 사용하여 DEP 토큰을 만듭니다. 관리용으로 Intune에 장치를 할당하는 데도 DEP 포털을 사용할 수 있습니다.
+Apple 포털을 사용하여 토큰을 만듭니다. 관리용으로 Intune에 디바이스를 할당하는 데도 Apple 포털을 사용할 수 있습니다.
 
 > [!NOTE]
-> Azure로 마이그레이션하기 전에 Intune 클래식 포털에서 토큰을 삭제하면 Intune이 삭제된 Apple DEP 토큰을 복원할 수 있습니다. Azure Portal에서 DEP 토큰을 다시 삭제할 수 있습니다.
+> Azure로 마이그레이션하기 전에 Intune 클래식 포털에서 토큰을 삭제하면 Intune이 삭제된 Apple 토큰을 복원할 수 있습니다. Azure Portal에서 토큰을 다시 삭제할 수 있습니다.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1단계. 토큰을 만드는 데 필요한 Intune 공개 키 인증서 다운로드
 
@@ -66,15 +66,14 @@ Apple DEP 포털을 사용하여 DEP 토큰을 만듭니다. 관리용으로 Int
 
    ![공개 키를 다운로드하기 위한 Apple 인증서 작업 영역의 등록 프로그램 토큰 창 스크린샷](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. **공개 키 다운로드**를 선택하여 암호화 키(.pem) 파일을 다운로드하고 로컬로 저장합니다. .pem 파일은 Apple 장비 등록 프로그램 포털에서 트러스트 관계 인증서를 요청하는 데 사용됩니다.
+3. **공개 키 다운로드**를 선택하여 암호화 키(.pem) 파일을 다운로드하고 로컬로 저장합니다. .pem 파일은 Apple 포털에서 트러스트 관계 인증서를 요청하는 데 사용됩니다.
 
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>2단계. 키를 사용하여 Apple에서 토큰 다운로드
 
-1. **Apple 장비 등록 프로그램에 대한 토큰 만들기**를 선택하여 Apple 배포 프로그램 포털을 열고 회사 Apple ID로 로그인합니다. 이 Apple ID를 사용하여 DEP 토큰을 갱신할 수 있습니다.
-2.  Apple [배포 프로그램 포털](https://deploy.apple.com)에서 **장비 등록 프로그램**에 대해 **시작**을 선택합니다.
-
-3. **서버 관리** 페이지에서 **MDM 서버 추가**를 선택합니다.
+1. **Apple 장비 등록 프로그램에 대한 토큰 만들기** 또는 **Apple School Manager를 통해 토큰 만들기**를 선택하여 해당 Apple 포털을 열고 회사 Apple ID로 로그인합니다. 이 Apple ID를 사용하여 토큰을 갱신할 수 있습니다.
+2.  DEP의 경우 Apple 포털에서 **장비 등록 프로그램**에 대해 **시작**을 선택한 후  > **서버 관리** > **MDM 서버 추가**를 선택합니다.
+3.  Apple School Manager의 경우 Apple 포털에서 **MDM 서버** > **MDM 서버 추가**를 선택합니다.
 4. **MDM 서버 이름**을 입력하고 **다음**을 선택합니다. 서버 이름은 참조용으로 MDM(모바일 장치 관리) 서버를 식별하기 위한 것으로, Microsoft Intune 서버의 이름 또는 URL이 아닙니다.
 
 5. **&lt;ServerName&gt; 추가** 대화 상자가 열리고 **공개 키 업로드**가 표시됩니다. **파일 선택...** 을 선택하여 .pem 파일을 업로드하고 **다음**을 선택합니다.
@@ -89,8 +88,6 @@ Apple DEP 포털을 사용하여 DEP 토큰을 만듭니다. 관리용으로 Int
 
 8. **작업 선택**에서 **서버에 할당**, Microsoft Intune에 지정된 &lt;ServerName&gt; 및 **확인**을 순서대로 선택합니다. Apple Portal에서 관리를 위해 지정된 장치를 Intune 서버에 할당한 다음 **할당 완료**를 표시합니다.
 
-   Apple Portal에서 **배포 프로그램** &gt; **장비 등록 프로그램** &gt; **할당 기록 보기**로 이동하여 장치 목록 및 해당 MDM 서버 할당을 확인합니다.
-
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3단계: 이 토큰을 만드는 데 사용되는 Apple ID 저장
 
 Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제공합니다.
@@ -102,7 +99,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 등록 프로필 만들기
 
-이제 토큰을 설치했으므로 DEP 장치의 등록 프로필을 만들 수 있습니다. 장치 등록 프로필은 등록 중에 장치 그룹에 적용되는 설정을 정의합니다.
+이제 토큰을 설치했으므로 디바이스의 등록 프로필을 만들 수 있습니다. 장치 등록 프로필은 등록 중에 장치 그룹에 적용되는 설정을 정의합니다.
 
 1. Azure Portal의 Intune에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택합니다.
 2. 토큰을 선택하고 **프로필**을 선택한 다음 **프로필 만들기**를 선택합니다.
@@ -185,7 +182,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 2. **기본 프로필 설정**을 선택하고 드롭다운 목록에서 프로필을 선택한 다음 **저장**을 선택합니다. 이 프로필은 토큰에 등록하는 모든 장치에 적용됩니다.
 
 ## <a name="distribute-devices"></a>장치 배포
-Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 DEP 장치를 등록할 수 있는 프로필을 할당했습니다. 이제 사용자에게 장치를 배포할 수 있습니다. 사용자 선호도가 있는 장치의 경우 각 사용자에게 Intune 라이선스를 할당해야 합니다. 사용자 선호도를 사용하지 않는 장치에는 장치 라이선스가 필요합니다. 활성화된 장치는 장치를 초기화할 때까지 등록 프로필을 적용할 수 없습니다.
+Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 디바이스를 등록할 수 있는 프로필을 할당했습니다. 이제 사용자에게 장치를 배포할 수 있습니다. 사용자 선호도가 있는 장치의 경우 각 사용자에게 Intune 라이선스를 할당해야 합니다. 사용자 선호도를 사용하지 않는 장치에는 장치 라이선스가 필요합니다. 활성화된 장치는 장치를 초기화할 때까지 등록 프로필을 적용할 수 없습니다.
 
 ## <a name="renew-a-dep-token"></a>DEP 토큰 갱신  
 1. deploy.apple.com으로 이동합니다.  

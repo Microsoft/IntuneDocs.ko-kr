@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186087"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729044"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>등록 상태 페이지 설정
  
@@ -61,6 +61,16 @@ ms.locfileid: "52186087"
 2. 목록의 프로필을 마우스로 가리키세요.
 3. 세로 점 세 개를 사용하여 목록의 원하는 위치로 프로필을 끕니다.
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>특정 애플리케이션이 설치될 때까지 디바이스 액세스 차단
+
+사용자가 바탕 화면에 액세스하기 전에 설치해야 하는 앱을 지정할 수 있습니다.
+
+1. Intune에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지(미리 보기)** 를 선택합니다.
+2. 프로필 > **설정**을 선택합니다.
+3. **프로필 및 앱 설치 진행률 표시**에서 **예**를 선택합니다.
+4. **모든 앱 및 프로필이 설치될 때까지 디바이스 차단**에서 **예**를 선택합니다.
+5. **이러한 필수 앱이 사용자/디바이스에 할당된 경우 이러한 필수 앱이 설치될 때까지 디바이스 사용 차단**에서 **선택됨**을 선택합니다.
+ 6. **앱 선택**을 선택하고, 앱을 선택한 다음, **선택** > **저장**을 선택합니다.
 
 ## <a name="enrollment-status-page-tracking-information"></a>등록 상태 페이지 추적 정보
 

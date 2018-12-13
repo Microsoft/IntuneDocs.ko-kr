@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 79df4e20a1dcd4a5cbc30ab0c887d53bf205ebbf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ff7876ef5c04eb59d1e89ac03b640d4f443cca6
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184746"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728959"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 앱 보호 정책 설정
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "52184746"
 
 정책 설정에는 *데이터 재배치*, *액세스 요구 사항* 및 *조건부 시작*의 세 가지 범주가 있습니다. 이 문서에서 ***정책 관리 앱***이라는 용어는 앱 보호 정책으로 구성된 앱을 나타냅니다.
 
-##  <a name="data-relocation-settings"></a>데이터 재배치 설정
+##  <a name="data-protection-settings"></a>데이터 보호 설정
 
 | Setting | 사용 방법 |  
 |------|------| 
@@ -47,7 +47,7 @@ ms.locfileid: "52184746"
 
 
 > [!NOTE]
-> 데이터 재배치 설정으로는 iOS 장치에서 Apple의 관리되는 여는 위치 기능을 제어할 수 없습니다. Apple의 관리되는 여는 위치를 관리하려면[Microsoft Intune으로 iOS 앱 간의 데이터 전송 관리](data-transfer-between-apps-manage-ios.md)를 참조하세요.
+> 데이터 보호 설정으로는 iOS 디바이스에서 Apple의 관리형 여는 위치 기능을 제어할 수 없습니다. Apple의 관리되는 여는 위치를 관리하려면[Microsoft Intune으로 iOS 앱 간의 데이터 전송 관리](data-transfer-between-apps-manage-ios.md)를 참조하세요.
 
 ## <a name="data-transfer-exemptions"></a>데이터 전송 예외
 

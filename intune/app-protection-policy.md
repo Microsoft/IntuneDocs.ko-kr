@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179170"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389872"
 ---
 # <a name="what-are-app-protection-policies"></a>앱 보호 정책이란?
 
@@ -66,9 +66,9 @@ Microsoft Intune 앱 보호 정책은 회사 데이터를 보호하고 데이터
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>앱 보호 정책을 지원하는 플랫폼
-Intune 앱 보호 정책 플랫폼 지원은 Office 모바일 응용 프로그램 플랫폼 지원에 맞춰 조정됩니다. 자세한 내용은 [Office 시스템 요구 사항](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)의 **모바일 앱** 섹션을 참조하세요.
+Intune 앱 보호 정책 플랫폼 지원은 Android 및 iOS 디바이스용 Office 모바일 애플리케이션 플랫폼 지원에 맞춰 조정됩니다. 자세한 내용은 [Office 시스템 요구 사항](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)의 **모바일 앱** 섹션을 참조하세요.
 
-Windows 장치는 현재 지원되지 않습니다. 그러나 Windows 10 장치를 Intune에 등록할 경우 유사한 기능을 제공하는 Windows Information Protection을 사용할 수 있습니다. 자세한 내용은 [WIP(Windows Information Protection)를 사용하여 엔터프라이즈 데이터 보호](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)를 참조하세요.
+Windows 장치는 현재 지원되지 않습니다. 그러나 유사한 기능을 제공하는 Windows Information Protection을 사용할 수 있습니다. 자세한 내용은 [WIP(Windows Information Protection)를 사용하여 엔터프라이즈 데이터 보호](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)를 참조하세요.
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>앱 보호 정책으로 앱 데이터를 보호하는 방법
@@ -146,7 +146,9 @@ OneDrive 관리자 콘솔에 사용 가능하게 만든 설정은 **글로벌** 
 
 다중 ID를 지원하는 앱을 사용하면 앱이 업무용으로 사용되는 경우 앱 보호 정책이 적용되는 동안 다른 계정(회사 및 개인)을 사용하여 동일한 앱에 액세스할 수 있습니다.
 
-예를 들어 회사 계정을 사용하여 OneDrive 앱을 시작하는 사용자를 고려해 보세요. 업무용에서는 파일을 개인 저장소 위치로 이동할 수 없습니다. 나중에 사용자가 개인 계정으로 OneDrive를 사용하는 경우 개인 OneDrive에서 제한 없이 데이터를 복사 및 이동할 수 있습니다.
+개인 컨텍스트의 예로 Word에서 새 문서를 시작하는 사용자를 고려합니다. 이는 개인 컨텍스트로 간주되므로 Intune 앱 보호 정책이 적용되지 않습니다. 회사 OneDrive 계정에 문서가 저장되면 이는 회사 컨텍스트로 간주되므로 Intune 앱 보호 정책이 적용됩니다.
+
+회사 컨텍스트는 예로 회사 계정을 사용하여 OneDrive 앱을 시작하는 사용자를 고려합니다. 업무용에서는 파일을 개인 저장소 위치로 이동할 수 없습니다. 나중에 사용자가 개인 계정으로 OneDrive를 사용하는 경우 개인 OneDrive에서 제한 없이 데이터를 복사 및 이동할 수 있습니다.
 
 - Intune을 통해 [MAM 및 다중 ID](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)를 지원하는 앱에 대해 자세히 알아봅니다.
 

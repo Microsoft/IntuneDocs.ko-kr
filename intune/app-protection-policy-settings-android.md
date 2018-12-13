@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 531b09f4ef35e47b7415f63ad3d43fd5a66a72ec
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 87decc0153377b522eee3d0f6b7ef2a996e75f60
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181054"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829167"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune의 Android 앱 보호 정책 설정
 이 문서에서는 Android 장치에 대한 앱 보호 정책 설정을 설명합니다. 설명하는 정책 설정은 Azure Portal의 **설정** 블레이드에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.
-데이터 재배치 설정 및 액세스 설정의 두 가지 정책 설정 범주가 있습니다. 이 문서에서 *정책 관리 앱*이라는 용어는 앱 보호 정책으로 구성된 앱을 나타냅니다.
+데이터 보호 설정 및 액세스 설정의 두 가지 정책 설정 범주가 있습니다. 이 문서에서 *정책 관리 앱*이라는 용어는 앱 보호 정책으로 구성된 앱을 나타냅니다.
 
-##  <a name="data-relocation-settings"></a>데이터 재배치 설정
+##  <a name="data-protection-settings"></a>데이터 보호 설정
 
 | Setting | 사용 방법 | 기본값 |
 |------|------|------|
@@ -82,7 +82,7 @@ ms.locfileid: "52181054"
 
 | Setting | 사용 방법 |  
 |------|------| 
-| **액세스하려면 PIN 필요** | 이 앱을 사용하는 데 PIN을 요구하려면 **예**를 선택합니다. 회사 또는 학교 컨텍스트에서 앱을 처음으로 실행할 때 이 PIN을 설정하라는 메시지가 표시됩니다. <br><br> 기본값은 **예**입니다.<br><br> PIN 강도에 대한 다음 설정을 구성합니다. <br> <ul><li>**유형 선택**: 앱 보호 정책이 적용된 앱에 액세스하기 전에 숫자 또는 암호 유형 PIN의 요구 사항을 설정합니다. 숫자 요구 사항에는 숫자만 포함되고, 암호는 1자 이상의 알파벳 문자 **또는** 1자 이상의 특수 문자로 정의할 수 있습니다. <br><br> 기본값 = **숫자**<br><br> **참고:** 허용되는 특수 문자에는 Android 영어 키보드의 기호 및 특수 문자가 포함됩니다.</li></ul>  <ul><li> **단순한 PIN 허용**: 사용자가 *1234*, *1111*, *abcd* 또는 *aaaa*와 같은 단순한 PIN 시퀀스를 사용할 수 있도록 허용하려면 **예**를 선택합니다. 단순한 순서를 사용하는 것을 방지하려면 **아니요**를 선택합니다. <br><br>기본값은 **예**입니다. <br><br>_**참고***: 암호 형식 PIN을 구성하고, 단순 PIN 허용을 예로 설정한 경우 사용자 PIN에 1자 이상의 문자 **또는** 1자 이상의 특수 문자가 포함되어야 합니다. 암호 형식 PIN을 구성하고, 단순 PIN 허용을 아니요로 설정한 경우 사용자 PIN에 1개 이상의 숫자 **및** 1자 이상의 문자**와** 1자 이상의 특수 문자가 포함되어야 합니다._ </li> <br> <li>  **PIN 길이**: PIN 시퀀스의 최소 자릿수를 지정합니다. <br><br>기본값은 **4**입니다. </li> <br> <li> **PIN 대신 지문 허용(Android 6.0 이상)**: 앱 액세스에 PIN 대신 [지문 인증](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)을 사용하도록 허용하려면 **예**를 선택합니다. <br><br>기본값은 **예**입니다. <br><br>***참고**: 이 기능은 Android 디바이스에서 생체 인식을 위한 일반 컨트롤을 지원합니다.*  Samsung Pass와 같은 OEM 특정 생체 인식 설정은 *지원되지 않습니다.* <br><br>Android에서 PIN 대신 [Android 지문 인증](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)을 사용하여 ID를 증명하도록 허용할 수 있습니다. 사용자가 회사 또는 학교 계정으로 이 앱을 열려고 하면 PIN을 입력하는 대신 해당 지문 ID를 입력하라는 메시지가 표시됩니다. <br><br> Android 회사 프로필은 **PIN 대신 지문 허용** 정책을 적용하려면 별도의 지문을 등록해야 합니다. 이 정책은 Android 회사 프로필에 설치된 정책 관리 앱에만 적용됩니다. 회사 포털에서 등록하여 Android 회사 프로필을 만든 후 별도의 지문을 장치에 등록해야 합니다. Android 회사 프로필을 사용하는 회사 프로필 지문에 대한 자세한 내용은 [회사 프로필 잠금](https://support.google.com/work/android/answer/7029958)을 참조하세요. </li> <br><ul><li>** 다음 시간(분) 이후 생체 인식 대신 PIN으로 재정의 **: 이 설정을 사용하려면 **예**를 선택하고 비활성화 시간 제한을 구성합니다. <br><br>기본값 = **아니요** </li></ul> <br> <ul><li>** 비활성화 시간 제한**: PIN에서 지문 사용을 재정의할 시간(분)을 지정합니다. </li></ul> <br><li> **장치 PIN을 관리하는 경우 앱 PIN 사용 안 함**: 등록된 장치에서 장치 잠금이 검색되는 경우 앱 PIN을 사용하지 않도록 설정하려면 **예**를 선택합니다.   <br><br> 기본값은 **아니요**입니다. </li></ul>|
+| **액세스하려면 PIN 필요** | 이 앱을 사용하는 데 PIN을 요구하려면 **예**를 선택합니다. 회사 또는 학교 컨텍스트에서 앱을 처음으로 실행할 때 이 PIN을 설정하라는 메시지가 표시됩니다. <br><br> 기본값은 **예**입니다.<br><br> PIN 강도에 대한 다음 설정을 구성합니다. <br> <ul><li>**유형 선택:** 앱 보호 정책이 적용된 앱에 액세스하기 전에 숫자 또는 암호 유형 PIN의 요구 사항을 설정합니다. 숫자 요구 사항에는 숫자만 포함되고, 암호는 1자 이상의 알파벳 문자 **또는** 1자 이상의 특수 문자로 정의할 수 있습니다. <br><br> 기본값 = **숫자**<br><br> **참고:** 허용되는 특수 문자에는 Android 영어 키보드의 기호 및 특수 문자가 포함됩니다.*</li></ul>  <ul><li>**PIN 초기화 전 시도 횟수:** 초기화하기 전까지 PIN을 성공적으로 입력하기 위해 시도할 수 있는 횟수를 지정합니다. <br><br> 기본값 = **5** </li> <br> <li> **단순 PIN 허용**: 사용자가 *1234*, *1111*, *abcd* 또는 *aaaa*와 같은 단순 PIN 시퀀스를 사용할 수 있도록 허용하려면 **예**를 선택합니다. 단순한 순서를 사용하는 것을 방지하려면 **아니요**를 선택합니다. <br><br>기본값은 **예**입니다. <br><br>**참고:** 암호 형식 PIN을 구성하고, 단순 PIN 허용을 예로 설정한 경우 사용자 PIN에 1자 이상의 문자 **또는** 1자 이상의 특수 문자가 포함되어야 합니다. 암호 형식 PIN을 구성하고, 단순 PIN 허용을 아니요로 설정한 경우 사용자 PIN에 1개 이상의 숫자 **및** 1자 이상의 문자**와** 1자 이상의 특수 문자가 포함되어야 합니다.* </li> <br> <li>  **PIN 길이:** PIN 시퀀스의 최소 자릿수를 지정합니다. <br><br>기본값은 **4**입니다. </li> <br> <li> **PIN 대신 지문 허용(Android 6.0 이상):** 앱 액세스에 PIN 대신 [지문 인증](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)을 사용하도록 허용하려면 **예**를 선택합니다. <br><br>기본값은 **예**입니다. <br><br>**참고:** 이 기능은 Android 디바이스에서 생체 인식을 위한 일반 컨트롤을 지원합니다. * Samsung Pass와 같은 OEM 특정 생체 인식 설정은 ‘지원되지 않습니다.’ <br><br>Android에서 PIN 대신 [Android 지문 인증](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)을 사용하여 ID를 증명하도록 허용할 수 있습니다. 회사 또는 학교 계정으로 이 앱을 열려고 하면 PIN을 입력하는 대신 해당 지문 ID를 제공하라는 메시지가 표시됩니다. <br><br> Android 회사 프로필은 **PIN 대신 지문 허용** 정책을 적용하려면 별도의 지문을 등록해야 합니다. 이 정책은 Android 회사 프로필에 설치된 정책 관리 앱에만 적용됩니다. 회사 포털에서 등록하여 Android 회사 프로필을 만든 후 별도의 지문을 장치에 등록해야 합니다. Android 회사 프로필을 사용하는 회사 프로필 지문에 대한 자세한 내용은 [회사 프로필 잠금](https://support.google.com/work/android/answer/7029958)을 참조하세요.| 
 | **액세스 시 회사 자격 증명 필요** | 앱 액세스에 PIN을 입력하는 대신 해당 회사 또는 학교 계정으로 로그인하도록 요구하려면 **예**를 선택합니다. **예**로 설정하고 PIN 또는 생체 인식 프롬프트를 사용하는 경우 회사 자격 증명 및 PIN 또는 생체 인식 프롬프트가 표시됩니다. <br><br>기본값은 **아니요**입니다. |
 | **액세스 요구 사항을 다시 확인할 시간(분)** | 다음 설정을 구성합니다. <ul><li>**제한 시간**: 이전에 정책에서 정의된 액세스 요구 사항이 다시 확인되기까지 걸리는 시간(분)입니다. 예를 들어 관리자가 정책에서 장치에 루팅된 PIN 및 블록을 설정하고, 사용자가 Intune 관리 앱을 열 때, PIN을 입력해야 하고 루팅되지 않은 장치에서 앱을 사용해야 합니다. 이 설정을 사용하는 경우 사용자가 구성된 값과 같은 기간에 Intune 관리 앱에서 PIN을 다시 입력하거나 또 다른 root-detection 검사를 수행할 필요가 없습니다.  <br><br>이 정책 설정 형식은 양의 정수를 지원합니다. <br><br> 기본값 = **30분** <br><br> **참고:** Android에서는 PIN이 모든 Intune 관리 앱 간에 공유됩니다. 앱이 장치에서 포그라운드를 나가면 PIN 타이머가 재설정됩니다. 사용자는 이 설정에서 정의한 제한 시간 동안 PIN을 공유하는 Intune 관리 앱에 PIN을 입력할 필요가 없습니다.* <br><br></li> |
 | **화면 캡처 및 Android Assistant 차단** | 이 앱을 사용할 때 장치의 화면 캡처 및 **Android Assistant** 기능을 차단하려면 **예**를 선택합니다. **예**를 선택하면 회사 또는 학교 계정으로 이 앱을 사용할 때 최근 사용 앱 미리 보기 이미지도 흐리게 표시됩니다. <br><br>기본값은 **아니요**입니다. |

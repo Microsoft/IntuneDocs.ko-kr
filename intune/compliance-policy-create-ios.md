@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 56427f5b6d72d952ce9c388b4d5289d3075b7df0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182275"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728874"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune에서 iOS 장치에 대한 장치 준수 정책 추가
 
@@ -54,7 +54,8 @@ Intune iOS 장치 준수 정책은 iOS 장치가 준수하도록 충족해야 �
 ## <a name="create-a-device-compliance-policy"></a>장치 준수 정책 만들기
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **플랫폼**에서 **iOS**를 선택합니다. **설정 구성**을 선택하고 **메일**, **장치 상태**, **장치 속성** 및 **시스템 보안** 설정을 입력합니다. 작업을 마쳤으면 **확인**, **만들기**를 차례로 선택합니다.
+4. **플랫폼**에서 **iOS**를 선택합니다. 
+5. **설정 구성**을 선택하고 이 항목에 설명된 **메일**, **디바이스 상태**, **디바이스 속성** 및 **시스템 보안** 설정을 입력합니다. 작업을 마쳤으면 **확인**, **만들기**를 차례로 선택합니다.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,6 +89,8 @@ Intune iOS 장치 준수 정책은 iOS 장치가 준수하도록 충족해야 �
 
 - **필요한 최소 OS**: 장치가 OS 최소 버전 요구 사항을 충족하지 못하면 비준수 장치로 보고됩니다. 업그레이드 방법에 대한 정보를 제공하는 링크가 표시됩니다. 사용자는 장치를 업그레이드하도록 선택할 수 있습니다. 그런 다음 회사 리소스에 액세스할 수 있습니다.
 - **허용된 최대 OS 버전**: 장치가 규칙에 지정된 버전 이상의 OS 버전을 사용하는 경우 회사 리소스에 대한 액세스가 차단됩니다. 그런 다음, 사용자에게는 IT 관리자에게 문의하라는 메시지가 표시됩니다. OS 버전 허용 규칙이 변경될 때까지 이 장치는 회사 리소스에 액세스할 수 없습니다.
+- **최소 OS 빌드 버전**: Apple이 보안 업데이트를 게시하면 일반적으로 OS 버전이 아니라 빌드 번호가 업데이트됩니다. 이 기능을 사용하여 디바이스에 허용되는 최소 빌드 번호를 입력합니다. 이 규정 준수 확인은 iOS 8.0 이상을 실행하는 디바이스를 지원합니다. 
+- **최대 OS 빌드 버전**: Apple이 보안 업데이트를 게시하면 일반적으로 OS 버전이 아니라 빌드 번호가 업데이트됩니다. 이 기능을 사용하여 디바이스에 허용되는 최대 빌드 번호를 입력합니다. 이 규정 준수 확인은 iOS 8.0 이상을 실행하는 디바이스를 지원합니다.
 
 ## <a name="system-security"></a>시스템 보안
 

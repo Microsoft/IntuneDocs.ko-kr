@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/5/2018
+ms.date: 12/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: fbe8cc0fc3e835ee5807dfbe56ea1aa3c728547e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d00c367cdcd0b8172d64c3ebbcd0dec2165407c9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184729"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829133"
 ---
-# <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Microsoft Intune 초기 버전 - 2018년 11월
+# <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune 초기 버전 - 2018년 12월
 
 > [!Note]
 > NDA 알림: Intune에 대해 다음 변경 사항을 개발 중입니다. 이 정보는 매우 제한된 기준에 따라 NDA에서 공유됩니다. Twitter, UserVoice, Reddit 등과 같은 소셜 미디어 또는 공개 웹 사이트에 이 정보를 게시하지 마세요. 
@@ -40,40 +40,105 @@ ms.locfileid: "52184729"
  
 ## <a name="intune-in-the-azure-portal"></a>Azure Portal의 Intune
 
-<!-- 1811 start -->
+<!-- 1812 start -->
 
-### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>회사 소유의 감독되는 iOS 장치에서 앱 제거 <!-- 1281677 -->
-회사 소유의 감독되는 iOS 장치에서 앱을 제거할 수 있습니다. **제거** 할당 유형을 사용하여 사용자 또는 장치 그룹을 대상으로 하여 앱을 제거할 수 있습니다. 개인 또는 감독되지 않은 iOS 장치의 경우 Intune을 사용하여 설치된 앱만 계속 제거할 수 있습니다.
+### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Android 엔터프라이즈 APP-WE 앱 배포 <!-- 1171203 -->
+등록되지 않은 APP-WE(등록이 없는 앱 보호 정책) 배포 시나리오에 있는 Android 디바이스의 경우 관리형 Google Play를 사용하여 스토어 앱 및 LOB 앱을 사용자에게 배포할 수 있습니다. 특히 IT 부서에서는 최종 사용자에게 알 수 없는 소스에서 설치를 허용하여 해당 디바이스의 보안 상태를 느슨하게 하도록 더 이상 요구하지 않는 앱 카탈로그 및 설치 환경을 최종 사용자에게 제공할 수 있습니다. 또한 이 배포 시나리오는 향상된 최종 사용자 환경을 제공합니다.
 
-### <a name="track-installation-of-office-proplus---2620217--"></a>Office ProPlus 설치 추적 <!--2620217-->
-[등록 상태 페이지](windows-enrollment-status.md)를 사용하여 [Office ProPlus](apps-add-office365.md)의 설치 진행률을 추적할 수 있습니다.
+### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Windows 10 이상 디바이스에서 DNS 설정을 사용할 때 자동으로 규칙을 연결 및 유지하는 새 옵션 <!-- 1333665, 2999078 -->
+Windows 10 이상 디바이스에서는 contoso.com과 같은 도메인 확인을 위한 DNS 서버 목록을 포함하는 VPN 구성 프로필을 만들 수 있습니다. 여기에는 이름 확인(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에서 **Windows 10 이상** 선택 > 프로필 유형에서 **VPN** 선택 > **DNS 설정** >**추가**)이 포함됩니다. 
 
-### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133--"></a>Apple School Manager 계정에 대한 macOS 장비 등록 프로그램 지원 <!--3006133-->
-Intune은 Apple School Manager 계정에 대한 macOS 장치에서 장비 등록 프로그램을 사용할 수 있도록 지원합니다.
+- **자동으로 연결**: **사용하도록 설정**한 경우 디바이스가 입력한 도메인(예: contoso.com)에 연결되면 디바이스가 자동으로 VPN에 연결됩니다.
+- **영구**: 기본적으로 모든 NRPT(이름 확인 정책 테이블) 규칙은 디바이스가 이 VPN 프로필을 사용하여 연결되어 있는 한 활성 상태입니다. NRPT 규칙에서 이 설정이 **사용하도록 설정**되면 VPN 연결이 끊어지거나 VPN 프로필이 제거되더라도 디바이스에서 규칙이 활성 상태로 유지됩니다. 규칙은 PowerShell 등을 사용하여 수동으로 제거될 때까지 유지됩니다.
 
-### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Android 장치에서 키오스크 모드를 일시적으로 중지하여 변경 <!-- 3041935 -->
-다중 앱 키오스크 모드에서 Android 장치를 사용하는 경우 IT 관리자가 장치를 변경해야 할 수 있습니다. 새 다중 앱 키오스크 설정은 IT 관리자가 PIN을 사용하여 일시적으로 키오스크 모드를 중지하고 전체 장치에 액세스할 수 있게 합니다.
-현재 키오스크 설정을 확인하려면 [Android 키오스크 설정](android-kiosk-settings.md)을 참조하세요.
+[Windows 10 VPN 설정](vpn-settings-windows-10.md)에서는 현재 설정 목록을 설명합니다. 
 
-### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>관리 홈 화면(Managed Home Screen) 앱에서 사용자 지정 배경 설정 <!-- 3041945 -->
-Android 엔터프라이즈, 다중 앱, 키오스크 모드 장치에서 관리 홈 화면 앱의 배경 모양을 사용자 지정할 수 있는 설정을 추가합니다.  **사용자 지정 URL 배경**을 구성하려면 Azure Portal에서 Intune > 장치 구성으로 차례로 이동합니다. 현재 장치 구성 프로필을 선택하거나 새 프로필을 만들어 키오스크 설정을 편집합니다.
+### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Windows 회사 포털 앱의 도움말 및 지원 페이지 <!-- 1488939 -->
+새 페이지가 Windows 회사 포털 앱에 추가됩니다. 도움말 및 지원 페이지에서는 헬프 데스크 연락처 정보를 제공합니다. 또한 최종 사용자는 문제가 있는 경우 회사 포털 로그를 보낼 수 있습니다. 이 페이지에서는 최종 사용자를 지원하기 위한 FAQ 섹션도 제공합니다.
 
-### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Android 엔터프라이즈 키오스크 장치에서 가상 홈 단추 사용 <!-- 3042021 -->
-사용자는 새 설정을 통해 해당 장치의 소프트 키 단추를 탭하여 관리 홈 화면 앱과 다중 앱 키오스크 장치에 할당된 다른 앱 간에 전환할 수 있습니다. 이 설정은 사용자의 키오스크 앱에서 "뒤로" 단추에 적절하게 응답하지 않는 시나리오에서 특히 유용합니다. 회사 소유의 단일 사용 Android 장치에 이 설정을 구성할 수 있습니다. **가상 홈 단추**를 사용하거나 사용하지 않도록 설정하려면 Azure Portal에서 Intune > 장치 구성으로 차례로 이동합니다. 현재 장치 구성 프로필을 선택하거나 새 프로필을 만들어 키오스크 설정을 편집합니다.
+### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Windows 10 디바이스의 VPN 프로필에 신뢰할 수 있는 네트워크 검색 사용 <!-- 1500165 -->
+신뢰할 수 있는 네트워크 검색을 사용하는 경우 사용자가 이미 신뢰할 수 있는 네트워크에 있을 때 VPN 프로필에서 자동으로 VPN에 연결되지 않도록 할 수 있습니다. DNS 접미사를 추가하여 Windows 10 이상을 실행하는 디바이스에서 신뢰할 수 있는 네트워크 검색을 사용하도록 설정할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 프로필의 **Windows 10 이상** > 프로필 유형의 **VPN**).
+[Windows 10 VPN 설정](vpn-settings-windows-10.md)에는 현재 VPN 설정이 나열됩니다.
 
-### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>앱 보호 정책 할당 저장 및 적용 <!-- 3104570 -->
-앱 보호 정책 할당은 더 효율적으로 제어할 수 있습니다. 앱 보호 정책 할당을 저장하고 적용하면 의도한 사용자만 앱 보호 할당 정책의 영향을 직접 받습니다.
+### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>Android 회사 소유의 완전 관리형 디바이스 지원 <!-- 574342 -->
+Intune은 디바이스가 IT 부서에서 긴밀하게 관리되고 개별 사용자와 관련된 회사 소유 “디바이스 소유자” 시나리오인 완전 관리형 Android 디바이스를 지원합니다. 이를 통해 관리자는 전체 디바이스를 관리하고, 확장된 범위의 정책 제어를 회사 프로필에 사용할 수 없게 할 수 있고 사용자가 관리형 Google Play의 앱만 설치하도록 제한합니다. Android 완전 관리형 디바이스를 설정하려면 **디바이스 등록** > **Android 등록** > **회사 소유의 완전 관리형 사용자 디바이스**로 이동합니다.
 
-### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Windows 10 이상에 대한 새 Microsoft Edge 브라우저 설정 <!-- 3174639 -->
-장치에서 Microsoft Edge 브라우저를 제어하고 관리하는 데 도움이 되는 새 설정이 추가됩니다. 현재 설정 목록은 [Windows 10(이상)에 대한 장치 제한](device-restrictions-windows-10.md#microsoft-edge-browser)을 참조하세요.
+### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune 앱 SDK는 256비트 암호화 키를 지원함 <!-- 1832174 -->
+iOS용 Intune 앱 SDK는 앱 보호 정책에서 암호화를 사용하도록 설정할 때 256비트 암호화 키를 사용합니다. SDK는 이전 SDK 버전을 사용하는 콘텐츠 및 앱과 호환성을 위해 128비트 키 지원을 계속 제공합니다.
 
-### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>등록 상태 페이지에서 추적되는 앱 선택 <!-- 2531007 -->
-등록 상태 페이지에서 추적할 앱을 선택할 수 있습니다.
+### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Intune 프로필에서 공유 PC 설정 사용 <!-- 1907917 -->
+현재는 사용자 지정 OMA-URI 설정을 사용하여 Windows 10 데스크톱 디바이스에서 공유 PC 설정을 구성할 수 있습니다. 새 프로필을 추가하여 공유 PC 설정을 구성합니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10 이상** > **공유 다중 사용자 디바이스**).
+적용 대상: Windows 10 이상, Windows Holographic for Business
 
-### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune 앱 보호 정책 UI 업데이트 <!-- 3251427 -->
+### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune 정책에서 인증 방법 및 회사 포털 앱 설치를 업데이트함 <!-- 1927359 -->
+Intune은 App Store에서 설치될 경우 회사 포털 앱을 특정 디바이스에서 더 이상 지원하지 않습니다. 이 변경은 등록 중에 Apple 설정 도우미로 인증하는 경우에만 적용됩니다. 또한 이 변경은 다음을 통해 등록된 iOS 디바이스에만 영향을 줍니다.  
+* Apple Configurator
+* Apple Business Manager
+* Apple School Manager
+* Apple DEP(장비 등록 프로그램)
 
-Intune 앱 보호 정책을 사용하면 Microsoft Outlook 및 Word와 같이 Intune으로 보호되는 앱에 대한 다양한 데이터 보호 설정을 구성할 수 있습니다. 설정과 단추 레이블을 변경하여 각각을 더 쉽게 이해할 수 있게 합니다. **예**/**아니요** 컨트롤에서 기본 **차단**/**허용** 및 **사용 안 함**/**사용** 컨트롤로 변경되고, 레이블도 쉽게 구별할 수 있도록 업데이트됩니다. 설정도 다시 포맷되므로 설정과 레이블이 컨트롤에 나란히 있어 탐색이 더 효율적으로 향상됩니다. 기본 설정과 설정 수는 동일하게 유지되지만, 이 변경으로 인해 사용자가 선택한 앱 보호 정책을 적용하기 위해 설정을 더 쉽게 이해, 탐색 및 활용할 수 있습니다.
+사용자가 App Store에서 회사 포털 앱을 설치한 다음, 이 앱을 통해 이러한 디바이스를 등록하는 경우 오류가 발생합니다. 이 디바이스는 등록 중에 Intune에서 자동으로 푸시된 경우에만 회사 포털을 사용해야 합니다. Azure Portal에서 Intune의 등록 프로필이 업데이트되므로 디바이스 인증 방법 및 디바이스가 회사 포털 앱을 받는 방법을 지정할 수 있습니다. DEP 디바이스 사용자가 회사 포털을 사용하도록 하려면 등록 프로필에서 기본 설정을 지정해야 합니다. 또한 회사 포털 앱에서 **디바이스 식별** 화면이 더 이상 사용되지 않습니다.  
+이미 등록된 DEP 디바이스에 회사 포털을 설치하려면 Intune > 클라이언트 앱으로 이동하고 앱 구성 정책을 사용하여 이 앱을 관리형 앱으로 푸시해야 합니다. 이러한 단계를 수행하는 방법에 대한 자세한 내용은 이후 문서에서 간략하게 설명합니다.
 
+### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379---"></a>관리자가 아닌 사용자는 Azure AD에 조인된 Windows 10 디바이스에서 BitLocker를 사용하도록 설정할 수 있음 <!-- 2147379 -->
+Windows 10 디바이스에서 BitLocker를 사용하도록 설정할 때(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10 이상**(플랫폼) > **Endpoint Protection**(프로필 유형) > **Windows 암호화**) BitLocker 설정을 추가합니다. 이 업데이트에는 표준 사용자(관리자가 아닌 사용자)가 암호화를 사용하도록 설정하게 허용하는 새 BitLocker 설정이 포함됩니다. 현재 설정을 보려면 [Windows 10용 Endpoint Protection 설정](endpoint-protection-windows-10.md#windows-encryption)을 참조하세요.
+
+### <a name="intune-app-pin----2298397---"></a>Intune 앱 PIN <!-- 2298397 -->
+IT 관리자는 최종 사용자의 Intune 앱 PIN을 변경해야 할 때까지 최종 사용자가 대기할 수 있는 기간(일)을 구성할 수 있습니다. Azure Portal에서 **Intune** > **클라이언트 앱** > **앱 보호 정책** > **정책 만들기** > **설정** > **액세스 요구 사항**을 선택하여 새 설정을 사용할 수 있습니다. 이 기능은 iOS 및 Android 디바이스에서 사용할 수 있습니다. 이 설정은 양의 정수 값을 지원합니다.
+
+### <a name="new-windows-10-update-settings----2626030-2512994---"></a>새 Windows 10 업데이트 설정 <!-- 2626030 2512994 -->
+Windows 10 업데이트 링의 경우 다음을 수행할 수 있습니다.
+- ‘2018년 10월 업데이트’를 실행 중인 컴퓨터의 Windows 10 컴퓨터에서 원래 자동 업데이트 설정 복원
+- 사용자가 컴퓨터의 ‘설정’에서 업데이트 설치를 일시 중지하는 기능을 차단 또는 허용할 수 있는 새 소프트웨어 업데이트 설정 구성 
+
+
+
+### <a name="ios-email-profiles-can-use-smime-signing-and-encryption----2662949---"></a>iOS 메일 프로필은 S/MIME 서명 및 암호화를 사용할 수 있음 <!-- 2662949 -->
+다양한 설정을 포함하는 메일 프로필을 만들 수 있습니다. 여기에는 iOS 디바이스에서 메일 통신 서명 및 암호화에 사용할 수 있는 S/MIME 설정이 포함됩니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에서 **iOS** 선택 > **메일**(프로필 유형)).
+
+[iOS 메일 구성 설정](email-settings-ios.md)에는 현재 설정이 나열됩니다.
+
+### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>iOS DEP 디바이스에서 설정 도우미 화면 건너뛰기 <!-- 2687509 -->
+현재 건너뛸 수 있는 화면 외에도 사용자가 디바이스를 등록할 때 설정 도우미에서 표시음, 개인 정보, Android 마이그레이션, 홈 단추, iMessage 및 FaceTime, 온보딩, 마이그레이션 보기, 모양, 화면 시간, 소프트웨어 업데이트, SIM 설치 화면을 건너뛰도록 iOS DEP 디바이스를 설정할 수 있습니다.
+건너뛸 화면을 선택하려면 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** > 토큰 선택 > **프로필** > 프로필 선택 > **속성** > **설정 도우미 사용자 지정** > 건너뛸 화면의 **숨기기** 선택 > **확인**으로 이동합니다.
+
+### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>일부 BitLocker 설정은 Windows 10 Pro Edition을 지원함 <!-- 2727036 -->
+BitLocker를 포함하여 Windows 10 디바이스에서 Endpoint Protection 설정을 설정하는 구성 프로필을 만들 수 있습니다. 이를 통해 BitLocker 설정에 대한 Windows 10 Professional Edition 지원이 추가됩니다. 현재 Windows 10 에디션 설정을 보려면 [Windows 10용 Endpoint Protection 설정](endpoint-protection-windows-10.md#windows-encryption)을 참조하세요.
+Intune은 Android 제조업체, 모델 및 보안 패치 버전을 비롯한 추가 디바이스 보고 필드와 iOS 모델을 제공합니다. Intune에서 이러한 필드를 사용하려면 **클라이언트 앱** > **앱 보호 상태**를 선택하고 **앱 보호 보고서: iOS, Android**를 선택합니다. 또한 이러한 매개 변수를 사용하여 디바이스 제조업체(Android)의 **허용** 목록, 디바이스 모델(Android 및 iOS)의 **허용** 목록 및 최소 Android 보안 패치 버전 설정을 구성할 수 있습니다. 
+
+### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>공유 디바이스 구성은 Azure Portal에서 iOS 디바이스의 잠금 화면 메시지로 이름이 바뀜 <!-- 2809362 -->
+iOS 디바이스용 구성 프로필을 만들 경우 **공유 디바이스 구성** 설정에 추가하여 잠금 화면에 특정 텍스트를 표시할 수 있습니다. 여기에는 다음 변경 내용이 포함됩니다. 
+
+- Azure Portal의 **공유 디바이스 구성** 설정은 “잠금 화면 메시지(감독 모드인 경우에만)”으로 이름이 바뀝니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에서 **iOS** 선택 > 프로필 유형에서 **디바이스 기능** 선택 > **잠금 화면 메시지**).
+- 잠금 화면 메시지를 추가하면 일련 번호, 디바이스 이름 또는 또 다른 디바이스별 값을 **자산 태그 정보**의 변수로 삽입할 수 있습니다. 예를 들어 중괄호를 사용하여 `Device name: {{device name}}` 또는 `Serial number is {{serial number}}`를 입력할 수 있습니다. [iOS 토큰](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)에는 사용할 수 있는 사용 가능한 토큰이 나열됩니다.
+
+[잠금 화면에 메시지를 표시하기 위한 설정](shared-device-settings-ios.md)에는 현재 설정이 나열됩니다.
+
+### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564--"></a>자세한 등록 제한 실패 메시징 <!-- 3111564-->
+등록 제한 사항이 충족되지 않으면 더 자세한 오류 메시지가 제공됩니다. 이러한 메시지를 보려면 **Intune** > **문제 해결**로 이동하고 등록 실패 테이블을 확인합니다.
+
+### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Android 엔터프라이즈 디바이스 소유자 디바이스의 새 알림, 힌트 및 Keyguard 설정 <!-- 3201839 3201843 -->
+이 업데이트에는 디바이스 소유자로 실행할 경우 Android 엔터프라이즈 디바이스의 여러 가지 새로운 기능이 포함됩니다. 이러한 기능을 사용하려면 **디바이스 구성** > **프로필** > **프로필 만들기** > **플랫폼**에서 **Android 엔터프라이즈** 선택 > **프로필 유형**에서 **디바이스 소유자만** 선택 > **디바이스 제한 사항**으로 이동합니다.
+새로운 기능은 다음과 같습니다. 
+- 들어오는 호출, 시스템 경고, 시스템 오류 등을 포함하여 시스템 알림이 표시되지 않도록 설정
+- 처음 열린 앱에 대한 시작 자습서 및 힌트 건너뛰기 제안
+- 카메라, 알림, 지문 잠금 해제 등의 고급 Keyguard 설정 사용 안 함
+
+현재 설정을 보려면 [Android 엔터프라이즈 디바이스 제한 사항 설정](device-restrictions-android-for-work.md)으로 이동합니다.
+
+### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android 엔터프라이즈 디바이스 소유자 디바이스는 Always On VPN 연결을 사용할 수 있음 <!-- 3202194 -->
+이 업데이트에서는 Android 엔터프라이즈 디바이스 소유자 디바이스에서 Always on VPN 연결을 사용할 수 있습니다. 상시 VPN 연결은 계속 연결된 상태로 유지되거나 사용자가 장치를 잠금 해제한 경우, 장치가 다시 시작된 경우 또는 무선 네트워크가 변경된 경우 바로 다시 연결됩니다. 또한 VPN 연결이 활성화될 때까지 모든 네트워크 트래픽을 차단하는 “잠금” 모드로 연결 상태를 전환할 수도 있습니다.
+**디바이스 구성** > **프로필** > **프로필 만들기** > **Android 엔터프라이즈**(플랫폼) > **디바이스 제한 사항**(디바이스 소유자만) > **연결** 설정에서 Always-on VPN을 사용하도록 설정할 수 있습니다. 현재 설정을 보려면 [Android 엔터프라이즈 디바이스 제한 사항 설정](device-restrictions-android-for-work.md)으로 이동합니다.
+
+### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Windows 10 디바이스의 작업 관리자에서 프로세스를 종료하는 새로운 설정 <!-- 3285177 --> 
+이 업데이트에는 Windows 10 디바이스의 작업 관리자를 사용하여 프로세스를 종료하는 새로운 설정이 포함됩니다. 디바이스 구성 프로필(**디바이스 구성** > **프로필** > **프로필 만들기** > **플랫폼**에서 **Windows 10** 선택 > **프로필 유형**에서 **디바이스 제한 사항** 선택 > **일반** 설정)을 사용하여 이 설정을 허용하거나 차단하도록 선택합니다.
+현재 설정을 보려면 [Windows 10 디바이스 제한 사항 설정](device-restrictions-windows-10.md)으로 이동합니다.
+적용 대상: Windows 10 이상
+
+### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>관리 템플릿은 공개 미리 보기로 제공되고 자체 구성 프로필 로 이동됨 <!-- 3322847 -->
+Intune의 관리 템플릿(**디바이스 구성** > **관리 템플릿**)은 현재 비공개 미리 보기로 제공됩니다. 이 업데이트 포함: 관리 템플릿에는 Intune에서 관리할 수 있는 약 300개 설정을 포함됩니다. 이전에는 이러한 설정이 그룹 정책 편집기에만 있었습니다.
+관리 템플릿은 공개 미리 보기로 제공 됩니다. 관리 템플릿은 **디바이스 구성** > **관리 템플릿**에서 **디바이스 구성** > **프로필** >**프로필 만들기** > **플랫폼**에서 **Windows 10 이상** 선택, **프로필 유형**에서 **관리 템플릿** 선택으로 이동됩니다.
+보고는 사용하도록 설정됩니다. 적용 대상: Windows 10 이상
 
 
 <!-- 1810 start -->
@@ -109,11 +174,6 @@ Android 및 iOS 장치의 웹 콘텐츠에 대한 APP 정책 설정은 iOS 유�
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>다른 MDM에서 사용하는 Apple VPP 토큰 <!-- 1488946 -->
 Intune과 다른 MDM에서 모두 Apple VPP(대량 구매 프로그램) 토큰을 사용하고 있으면 Intune에서 세부 정보를 검색하고 표시합니다.
 
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>iOS 및 macOS 버전 번호 및 빌드 번호는 준수 정책 <!-- 1892471 -->에서 사용할 수 있습니다.
-**디바이스 준수** > **디바이스 준수**에서 iOS 및 macOS 운영체제 버전이 표시되고 준수 정책에 사용할 수 있습니다. 향후 업데이트에서는 두 플랫폼에 대해서도 빌드 번호를 구성할 수 있습니다.
-
-보안 업데이트가 릴리스되는 경우 Apple에서는 일반적으로 버전 번호는 그대로 유지하지만 빌드 번호는 업데이트합니다. 준수 정책의 빌드 번호를 사용하면 취약성 업데이트가 설치되어 있는지 쉽게 확인할 수 있습니다.
-
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>장치 준수 대시보드에 사용 중지된 장치가 있음 <!-- 1981119 -->
 향후 업데이트에서는 사용 중지된 장치가 장치 준수 대시보드에서 제거됩니다. 이에 따라 규정 준수 번호도 변경됩니다.
 
@@ -130,12 +190,7 @@ Intune과 다른 MDM에서 모두 Apple VPP(대량 구매 프로그램) 토큰�
 
 적용 대상: Windows 10 이상
 
-### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>VPP 토큰 만료 또는 회사 포털 라이선스 부족에 대한 경고 <!-- 2237572 -->
-VPP(대량 구매 프로그램)를 사용하여 DEP 등록 중 회사 포털을 사전 프로비전하는 경우 Intune은 VPP 토큰이 만료되려고 하는 경우 및 회사 포털에 대한 라이선스가 부족한 경우 경고를 표시합니다.
 
-
-
-<!-- the following are present prior to 1711 -->
 
 ## <a name="notices"></a>알림
 
