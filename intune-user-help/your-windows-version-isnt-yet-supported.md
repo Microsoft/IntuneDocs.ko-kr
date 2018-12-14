@@ -1,11 +1,12 @@
 ---
 title: Windows 버전이 아직 지원되지 않는 경우 | Microsoft 문서
-description: ''
+titlesuffix: Microsoft Intune
+description: Windows 디바이스의 운영 체제 버전이 아직 지원되지 않습니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 404954359541ddaebf69b97bbc91b8083776f3bd
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: 26fe26bbbde30a2cdae80b69b8ad62cbf91f0f1d
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148507"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031775"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Windows 장치의 운영 체제 버전이 아직 지원되지 않는 경우
 

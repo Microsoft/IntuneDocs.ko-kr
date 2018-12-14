@@ -1,7 +1,7 @@
 ---
-title: Apple MDM Push Certificate 가져오기
-titlesuffix: Microsoft Intune
-description: Intune에서 iOS 장치를 관리하기 위해 Apple MDM Push Certificate를 가져오는 단계를 알아봅니다.
+title: Intune용 Apple MDM Push Certificate 가져오기
+titlesuffix: ''
+description: Intune에서 iOS 디바이스를 관리하기 위해 Apple MDM Push Certificate를 가져옵니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 927da6f2e7584cb3b43bede77cfbc19ec91b568a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 053e3f42553268aaeff0502e2cfe05b33b18618b
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189472"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032166"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM 푸시 인증서 가져오기
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune은 iPad, iPhone 및 Mac 컴퓨터의 MDM(모바일 장치 관리)을 가능하게 하고, 사용자가 회사 메일 및 앱에 액세스할 수 있게 해줍니다. Apple MDM Push Certificate는 Intune에서 iOS 및 macOS 장치를 관리하는 데 필요합니다. 인증서를 Intune에 추가하면 사용자는 다음을 사용하여 장치를 등록할 수 있습니다.
+Apple MDM Push Certificate는 Intune에서 iOS 및 macOS 장치를 관리하는 데 필요합니다. 인증서를 Intune에 추가하면 사용자는 다음을 사용하여 장치를 등록할 수 있습니다.
 
 - 회사 포털 앱.
 

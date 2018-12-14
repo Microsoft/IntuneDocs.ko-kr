@@ -15,21 +15,21 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic; get-started
-ms.openlocfilehash: 5983a31aeb2bf6c10d3f6fe828157c88a5a9364f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0cea1b958849d6c2422461e85eba57577a65e884
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179272"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112598"
 ---
-# <a name="supported-operating-systems-and-browsers"></a>지원되는 운영 체제 및 브라우저
+# <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune의 지원되는 운영 체제 및 브라우저
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune을 설정하기 전에 지원되는 운영 체제 및 브라우저를 검토합니다.
 
-장치에 Intune을 설치하는 방법에 대한 도움말은 [관리 장치를 사용하여 작업 완료](/intune-user-help/company-portal-frequently-asked-questions) 및 [Intune 네트워크 대역폭 사용](network-bandwidth-use.md)([클래식 포털](/intune-classic/get-started/network-bandwidth-use))을 참조하세요.
+디바이스에 Intune을 설치하는 방법에 대한 도움말은 [관리 디바이스를 사용하여 작업 완료](/intune-user-help/company-portal-frequently-asked-questions) 및 [Intune 네트워크 대역폭 사용](network-bandwidth-use.md)을 참조하세요.
 
 ## <a name="intune-supported-operating-systems"></a>Intune에서 지원하는 운영 체제
 
@@ -86,11 +86,11 @@ MDM 등록을 방해하는 Knox 활성화 오류를 방지하기 위해 회사 �
 
 ### <a name="windows-pc-software-client"></a>Windows PC 소프트웨어 클라이언트
 
-Windows PC에서는 대체 등록 방법으로 [Intune 소프트웨어 클라이언트](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)를 배포하고 설치할 수 있습니다. 이 기능은 Intune 클래식 포털을 통해서만 사용할 수 있습니다. Intune 소프트웨어 클라이언트를 사용하면 Windows 7 이상 버전(Windows 10 Home Edition은 제외)을 실행하는 PC를 관리할 수 있습니다.
+Windows PC에서는 대체 등록 방법으로 [Intune 소프트웨어 클라이언트](manage-windows-pcs-with-microsoft-intune.md)를 배포하고 설치할 수 있습니다. 이 기능은 Intune 클래식 포털을 통해서만 사용할 수 있습니다. Intune 소프트웨어 클라이언트를 사용하면 Windows 7 이상 버전(Windows 10 Home Edition은 제외)을 실행하는 PC를 관리할 수 있습니다.
 
 <!--  ### Exchange ActiveSync management
 
-You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) from the Intune console. This option provides a limited set of management capabilities when compared to the other methods. See [Capabilities of built-in Mobile Device Management in Office 365](https://support.office.com/article/Capabilities-of-built-in-Mobile-Device-Management-for-Office-365-a1da44e5-7475-4992-be91-9ccec25905b0) for a list of supported devices.  -->
+You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-management-with-exchange-activesync-and-intune) from the Intune console. This option provides a limited set of management capabilities when compared to the other methods. See [Capabilities of built-in Mobile Device Management in Office 365](https://support.office.com/article/Capabilities-of-built-in-Mobile-Device-Management-for-Office-365-a1da44e5-7475-4992-be91-9ccec25905b0) for a list of supported devices.  -->
 
 ## <a name="intune-supported-web-browsers"></a>Intune 지원 웹 브라우저
 

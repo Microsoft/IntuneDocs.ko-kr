@@ -1,11 +1,12 @@
 ---
 title: Windows 장치를 업데이트해야 함 | Microsoft 문서
-description: ''
+titlesuffix: Microsoft Intune
+description: Windows를 실행하는 모바일 디바이스의 경우 디바이스를 업데이트해야 합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 1f9bb0fc434b1cba2d9b48f6f8cef4cf6b06e932
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: 0f51c9091dfa4ad91ad4e648e954b6b5ca0fe3d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147321"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031792"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Windows 장치를 업데이트해야 함
 

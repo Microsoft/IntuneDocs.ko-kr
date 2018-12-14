@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune을 사용하는 조건부 액세스
-titlesuffix: ''
+title: 조건부 액세스 시나리오
+titlesuffix: Microsoft Intune
 description: Intune 조건부 액세스를 장치 및 앱 기반 조건부 액세스에 일반적으로 사용하는 방법에 대해 알아봅니다.
 keywords: ''
 author: brenduns
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7c47e7e82928ea40d0b39dfbb17472441eac4f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; get-started; seodec18
+ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187670"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112479"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune에서 조건부 액세스를 사용하는 일반적인 방법이란?
 
@@ -45,7 +45,7 @@ Exchange Online 및 기타 Office 365 제품용 장치 기반 조건부 액세�
 
 -   [Intune 장치 준수](device-compliance.md)에 대해 자세히 확인해 보세요.
 
--   [Intune에서 조건부 액세스를 사용하여 전자 메일, Office 365 및 기타 서비스 보호](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)에 대해 자세히 알아보세요.
+-   [Intune에서 조건부 액세스를 사용하여 전자 메일, Office 365 및 기타 서비스 보호](app-based-conditional-access-intune.md)에 대해 자세히 알아보세요.
 
 > [!NOTE]
 > Android 장치에서 Sharepoint Online에 대해 장치 기반 액세스를 사용하면 사용자는 다음과 같이 등록된 장치에서 **브라우저 액세스 사용** 옵션을 사용해야 합니다.
@@ -125,7 +125,7 @@ Intune은 보안 솔루션을 제공하는 Mobile Threat Defense 공급업체와
 
 Intune과 Mobile Threat Defense 통합은 장치 위험 기반 조건부 액세스를 결정할 때 중요한 요인으로 작용합니다.
 
--   [Intune Mobile Threat Defense](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense)에 대해 자세히 알아보세요.
+-   [Intune Mobile Threat Defense](mobile-threat-defense.md)에 대해 자세히 알아보세요.
 
 ### <a name="conditional-access-for-windows-pcs"></a>Windows PC에 대한 조건부 액세스
 
@@ -135,7 +135,7 @@ PC에 대한 조건부 액세스는 모바일 장치에 사용할 수 있는 것
 
 -   **온-프레미스 AD 도메인 가입:** 기존에 자사에서 AD 그룹 정책 및/또는 System Center Configuration Manager로 PC를 관리하는 방식에 어느 정도 익숙한 조직에서 흔히 사용되는 옵션입니다.
 
--   **Azure Active Directory 도메인 가입 및 Intune 관리:** 이 시나리오는 대개 장치가 회사 네트워크에 거의 연결되지 않는 CYOD(Choose Your Own Device) 및 로밍 노트북 시나리오에서 사용됩니다. 이 경우 장치는 Azure AD에 가입한 다음 Intune에 등록되므로 온-프레미스 AD 및 도메인 컨트롤러에 종속되지 않습니다. 회사 리소스에 액세스할 때는 이 시나리오를 조건부 액세스 기준으로 사용할 수 있습니다.
+-   **Azure AD 도메인 가입 및 Intune 관리:** 이 시나리오는 대개 디바이스가 회사 네트워크에 거의 연결되지 않는 CYOD(Choose Your Own Device) 및 로밍 노트북 시나리오에서 사용됩니다. 이 경우 장치는 Azure AD에 가입한 다음 Intune에 등록되므로 온-프레미스 AD 및 도메인 컨트롤러에 종속되지 않습니다. 회사 리소스에 액세스할 때는 이 시나리오를 조건부 액세스 기준으로 사용할 수 있습니다.
 
 -   **AD 도메인 가입 및 System Center Configuration Manager:** 현재 분기를 기준으로 할 때 System Center Configuration Manager는 도메인에 가입된 PC 이외에 다음과 같은 특정 준수 기준도 평가할 수 있는 조건부 액세스 기능을 제공합니다.
 
@@ -147,7 +147,7 @@ PC에 대한 조건부 액세스는 모바일 장치에 사용할 수 있는 것
 
 #### <a name="bring-your-own-device-byod"></a>BYOD(Bring Your Own Device)
 
--   **작업 공간 연결 및 Intune 관리:** 이 경우 사용자는 개인 장치에 연결하여 회사 리소스 및 서비스에 액세스할 수 있습니다. 작업 공간 연결을 사용하여 장치를 Intune에 등록하면 장치 수준 정책을 수신할 수 있습니다. 이러한 방식은 조건부 액세스 기준을 평가할 수 있는 또 다른 옵션이기도 합니다.
+-   **작업 공간 연결 및 Intune 관리:** 이 경우 사용자는 개인 디바이스에 연결하여 회사 리소스 및 서비스에 액세스할 수 있습니다. 작업 공간 연결을 사용하여 장치를 Intune에 등록하면 장치 수준 정책을 수신할 수 있습니다. 이러한 방식은 조건부 액세스 기준을 평가할 수 있는 또 다른 옵션이기도 합니다.
 
 ## <a name="app-based-conditional-access"></a>앱 기반 조건부 액세스
 

@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 74ef09c8979e6867d49c119668ad329570cee424
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 42b554f025f80546a0a2dd93de92549f2f037b3f
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189829"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112878"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 Android 앱 준비
 
@@ -28,7 +28,7 @@ ms.locfileid: "52189829"
 
 Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드를 변경하지 않고도 앱 기능을 제한하여 사내 Android 앱의 동작을 변경합니다.
 
-이 도구는 PowerShell에서 실행되고 Android 앱 주위에 래퍼를 생성하는 Windows 명령줄 응용 프로그램입니다. 앱을 래핑한 후에는 Intune에서 [모바일 응용 프로그램 관리 정책](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)을 구성하여 앱의 기능을 변경할 수 있습니다.
+이 도구는 PowerShell에서 실행되고 Android 앱 주위에 래퍼를 생성하는 Windows 명령줄 응용 프로그램입니다. 앱을 래핑한 후에는 Intune에서 [모바일 응용 프로그램 관리 정책](app-protection-policies.md)을 구성하여 앱의 기능을 변경할 수 있습니다.
 
 
 도구를 실행하기 전에 [앱 래핑 도구를 실행하기 위한 보안 고려 사항](#security-considerations-for-running-the-app-wrapping-tool)을 검토하세요. 이 도구를 다운로드하려면 GitHub의 [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)(Android용 Microsoft Intune 앱 래핑 도구)로 이동하세요.

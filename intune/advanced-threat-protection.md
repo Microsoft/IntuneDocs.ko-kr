@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180237"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53167997"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP 사용
 
 Windows Defender ATP(Advanced Threat Protection) 및 Microsoft Intune은 함께 작동하여 보안 위반을 방지하고 조직 내에서 위반 영향을 제한합니다.
 
-이 기능은 Windows 10 장치에 적용됩니다.
+이 기능은 다음에 적용됩니다. Windows 10 장치
 
 예를 들어 누군가가 포함된 악성 코드가 있는 Word 첨부 파일을 조직 내의 사용자에게 전송합니다. 사용자가 첨부 파일을 열고 콘텐츠를 활성화합니다. 상승된 권한 공격이 시작되고, 원격 컴퓨터의 공격자가 공격 대상 장치에 대한 관리자 권한을 갖게 됩니다. 그런 다음, 공격자가 사용자의 다른 장치에 원격으로 액세스합니다.
 
@@ -89,13 +89,13 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 5. **프로필 유형**에서 **Windows Defender ATP(Windows 10 Desktop)** 를 선택합니다.
 6. 설정을 구성합니다.
 
-  - **Windows Defender ATP 클라이언트 구성 패키지 유형**: **등록**을 선택하여 프로필에 구성 패키지를 추가합니다. **등록 취소**를 선택하여 프로필에서 구성 패키지를 제거합니다.
+  - **Windows Defender ATP 클라이언트 구성 패키지 유형**: 프로필에 구성 패키지를 추가하려면 **온보드**를 선택합니다. **등록 취소**를 선택하여 프로필에서 구성 패키지를 제거합니다.
   
     > [!NOTE] 
-    > Windows Defender ATP와의 연결을 제대로 설정한 경우 Intune에서 구성 프로필을 자동으로 **등록**합니다.
+    > Windows Defender ATP와 적절히 연결한 경우 Intune은 구성 프로필을 자동으로 **온보드**하며, **Windows Defender ATP 클라이언트 구성 패키지 유형** 설정을 사용할 수 없게 됩니다.
   
   - **모든 파일에 대해 샘플 공유**: **사용**을 사용하면 샘플을 수집하고 Windows Defender ATP와 공유할 수 있습니다. 예를 들어 의심스러운 파일을 발견할 경우 심층 분석을 위해 Windows Defender ATP에 제출할 수 있습니다. **구성되지 않음**은 Windows Defender ATP에 샘플을 공유하지 않습니다.
-  - **원격 분석 보고 주기 단축**: 위험이 높은 장치의 경우 이 설정을 **사용**하여 원격 분석을 Windows Defender ATP 서비스에 더 자주 보고합니다.
+  - **원격 분석 보고 주기 단축**: 위험이 큰 디바이스의 경우 이 설정을 **사용**하여 원격 분석을 Windows Defender ATP 서비스에 더 자주 보고합니다.
 
     [System Center Configuration Manager를 사용하여 Windows 10 컴퓨터 등록](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection)에는 Windows Defender ATP 설정에 대한 자세한 정보가 포함되어 있습니다.
 
@@ -111,8 +111,8 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 5. **Windows Defender ATP** 설정에서 **장치가 머신 위험 점수나 그 아래에 있어야 함**을 기본 설정 수준으로 설정합니다.
 
   - **지우기**: 이 수준이 가장 안전합니다. 장치가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 장치는 비규격으로 평가됩니다.
-  - **낮음**: 낮은 수준의 위협만 있는 장치는 규격 장치입니다. 보통 또는 높은 위협 수준의 장치는 비규격 장치입니다.
-  - **보통**: 낮음 또는 보통 수준의 위협이 있는 장치는 규격 장치입니다. 높은 수준의 위협이 검색되는 경우 해당 장치는 비규격으로 간주됩니다.
+  - **낮음**: 낮은 수준의 위협만 있는 디바이스는 규격 디바이스입니다. 보통 또는 높은 위협 수준의 장치는 비규격 장치입니다.
+  - **보통**: 낮음 또는 보통 수준의 위협이 있는 디바이스는 규격 디바이스입니다. 높은 수준의 위협이 검색되는 경우 해당 장치는 비규격으로 간주됩니다.
   - **높음**: 이 수준은 최소 보안이며 모든 위협 수준을 허용합니다. 따라서 높음, 보통 또는 낮은 위협 수준의 장치가 규격으로 간주됩니다.
 
 6. **확인**, **만들기**를 차례로 선택하여 변경 내용을 저장하고 정책을 만듭니다.

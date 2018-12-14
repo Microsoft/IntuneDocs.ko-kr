@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184831"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031996"
 ---
-# <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android 엔터프라이즈 키오스크 장치 등록 설정
+# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Android 엔터프라이즈 키오스크 디바이스의 Intune 등록 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -56,7 +56,7 @@ Android 키오스크 관리를 설정하려면 다음 단계를 따릅니다.
 
 1. [Intune 포털](https://portal.azure.com)로 이동하여 **장치 등록** > **Android 등록** > **키오스크 및 작업 장치 등록**을 선택합니다.
 2. **만들기**를 선택하고 필수 필드를 작성합니다.
-    - **이름**: 프로필을 동적 장치 그룹에 할당할 때 사용할 이름을 입력합니다.
+    - **이름**: 프로필을 동적 디바이스 그룹에 할당할 때 사용할 이름을 입력합니다.
     - **토큰 만료 날짜**: 토큰이 만료되는 날짜입니다. Google은 최대 90일을 적용합니다.
 3. **만들기**를 선택하여 프로필을 저장합니다.
 
@@ -67,8 +67,8 @@ Android 키오스크 관리를 설정하려면 다음 단계를 따릅니다.
 1. [Intune 포털](https://portal.azure.com)로 이동하여 **그룹** > **모든 그룹** > **새 그룹**을 선택합니다.
 2. **그룹** 블레이드에서 다음과 같은 필수 필드를 입력합니다.
     - **그룹 유형**: 보안
-    - **그룹 이름**: 직관적인 이름(예: 팩터리 1 장치)
-    - **멤버 자격 유형**: 동적 장치
+    - **그룹 이름**: 직관적인 이름(예: 팩터리 1 디바이스)
+    - **멤버 자격 유형**: 동적 디바이스
 3. **동적 쿼리 추가**를 선택합니다.
 4. **동적 멤버 관리 규칙** 블레이드에서 다음과 같은 필드를 입력합니다.
     - **동적 멤버 관리 규칙 추가**: 단순 규칙

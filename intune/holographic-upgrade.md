@@ -1,25 +1,25 @@
 ---
-title: Windows Holographic에서 Windows Holographic for Business로 업그레이드
+title: Windows Holographic for Business으로 업그레이드
 titleSuffix: Microsoft Intune
 description: Windows Holographic을 실행하는 장치를 Windows Holographic for Business로 업그레이드하는 방법을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 735cd658e78a68156957d54be02f32b41812495e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 4839206db5e34a039c9e99dd74f5ab1bad328418
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179204"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112343"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Windows Holographic을 실행하는 장치를 Windows Holographic for Business로 업그레이드
 

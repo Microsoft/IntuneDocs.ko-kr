@@ -1,5 +1,5 @@
 ---
-title: Intune 마이그레이션 중 장치 준수 및 앱 관리 정책 구성
+title: Intune 마이그레이션 중 디바이스 및 앱 준수 구성
 titlesuffix: Microsoft Intune
 description: 이 아티클의 목적은 Microsoft Intune 마이그레이션 중 장치 준수 및 앱 관리 정책을 구성하는 데 필요한 단계를 제공하는 것입니다.
 keywords: ''
@@ -15,12 +15,13 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 651612ac403db01ff2c5b7574216459c7ee2bd16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183803"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031826"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune에 마이그레이션할 때 장치 준수 및 앱 관리 정책 구성
 
@@ -41,7 +42,7 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 장치를 Intune�
 
 ## <a name="task-list-for-device-compliance-policies"></a>장치 준수 정책에 대한 작업 목록
 
-### <a name="task-1-add-device-groups-optional"></a>작업 1: 장치 그룹 추가(선택 사항)
+### <a name="task-1-add-device-groups-optional"></a>작업 1: 디바이스 그룹 추가(선택 사항)
 
 사용자 ID 대신 장치 ID에 따라 관리 작업을 수행해야 할 때 장치 그룹을 만들 수 있습니다.
 
@@ -53,7 +54,7 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 장치를 Intune�
 
 리소스 액세스 프로필은 인증서 및 등록된 장치에 대한 액세스 구성을 제공합니다. 인증서 기반 인증을 사용하는 경우 [인증서 구성](certificates-configure.md)을 수행합니다.
 
-### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>작업 3: 장치 구성 프로필 만들기 및 배포
+### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>작업 3: 디바이스 구성 프로필 만들기 및 배포
 
 장치 수준 설정을 적용할 장치 구성 프로필(예: 카메라 사용 안 함, 앱 스토어, 단일 앱 모드 구성, 홈 화면 등)을 만들어야 합니다. [장치 프로필](device-profiles.md)에 대해 자세히 알아보세요.
 
@@ -61,11 +62,11 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 장치를 Intune�
 
 -   **Apple Configurator iOS 프로필(iOS 7.1 이상):** 기존 MDM 솔루션에서 Apple Configurator 프로필(.mobileconfig 파일)을 사용하는 경우 Intune에서 해당 프로필을 사용자 지정 구성 정책으로 직접 가져올 수 있습니다.
 
--   **iOS 모바일 응용 프로그램 구성 정책:** 기존 MDM 솔루션에서 iOS 모바일 응용 프로그램 구성 정책을 사용하는 경우 해당 정책이 Apple에서 속성 목록에 대해 지정한 XML 형식을 충족하는 한 Intune에서 이 정책을 직접 가져올 수 있습니다.
+-   **iOS 모바일 애플리케이션 구성 정책:** 기존 MDM 솔루션에서 iOS 모바일 애플리케이션 구성 정책을 사용하는 경우 해당 정책이 Apple에서 속성 목록에 대해 지정한 XML 형식을 충족하는 한 Intune에서 이 정책을 직접 가져올 수 있습니다.
 
 - [iOS](custom-settings-ios.md) 사용자 지정 정책을 추가하는 방법에 대해 알아보세요.
 
-### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>작업 4: 장치 준수 정책 만들기 및 배포(선택 사항)
+### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>작업 4: 디바이스 준수 정책 만들기 및 배포(선택 사항)
 
 장치 준수 정책은 보안 지향 설정을 평가하고 장치가 회사 표준을 준수하는지 여부를 보여 주는 보고를 제공합니다. 이러한 설정은 다음과 같습니다.
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: a715fe518331d20b9a47d8374a37ce66ec59055d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189312"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112768"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune에서 소프트웨어 업데이트 관리
 
@@ -28,7 +28,7 @@ Windows as a Service는 Windows 10 장치를 업데이트하는 방법입니다.
 
 비즈니스용 Windows 업데이트를 사용하여 업데이트 관리 환경을 간소화할 수 있습니다. 장치 그룹에 대해 개별 업데이트를 승인할 필요가 없습니다. 업데이트 출시 전략을 구성하여 환경에서 위험을 관리할 수 있습니다. 그리고 Windows 업데이트에서는 적절한 시기에 업데이트가 설치되었는지 확인합니다. Microsoft Intune에서는 장치에서 업데이트 설정을 구성하는 기능 및 업데이트 설치를 지연하는 기능을 제공합니다. Intune에서는 업데이트를 저장하지 않고 업데이트 정책 할당만 저장합니다. 장치에서 Windows 업데이트에 직접 액세스하여 업데이트합니다. Intune을 사용하여 **Windows 10 업데이트 링**을 구성하고 관리합니다. 업데이트 링에는 Windows 10 업데이트 설치 시기와 방법을 구성하는 설정 그룹이 포함됩니다. 예를 들어 다음 설정을 구성할 수 있습니다.
 
-- **Windows 10 서비스 채널**: 업데이트를 받을 장치 그룹에서 서비스 채널을 선택합니다. 다음과 같은 채널이 지원됩니다. 
+- **Windows 10 서비스 채널**: 업데이트를 받을 디바이스 그룹에서 서비스 채널을 선택합니다. 다음과 같은 채널이 지원됩니다. 
   - Semi&#8208;연간 채널
   - Semi&#8208;연간 채널(대상 지정)
   - Windows Insider &#8208; 빠름
@@ -36,7 +36,7 @@ Windows as a Service는 Windows 10 장치를 업데이트하는 방법입니다.
   - Windows Insider 릴리스 
       
   지원되는 서비스 채널에 대한 세부 정보는 [서비스인 Windows에 대한 개요](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)를 참조하세요.
-- **지연 설정**: 장치 그룹의 업데이트 설치를 연기하도록 업데이트 지연 설정을 구성합니다. 이러한 설정을 사용하여 업데이트 출시를 스테이징하므로 과정을 검토할 수 있습니다.
+- **지연 설정**: 디바이스 그룹의 업데이트 설치를 연기하도록 업데이트 지연 설정을 구성합니다. 이러한 설정을 사용하여 업데이트 출시를 스테이징하므로 과정을 검토할 수 있습니다.
 - **일시 중지**: 업데이트 출시 중에 문제가 있는 경우 업데이트 설치를 연기할 수 있습니다. 
 - **유지 관리 기간**: 업데이트를 설치할 수 있는 시간을 구성합니다.
 - **업데이트 형식**: 설치되는 업데이트의 형식을 선택합니다. 예를 들어 품질 업데이트, 기능 업데이트 또는 드라이버가 있습니다.
@@ -78,27 +78,27 @@ Windows as a Service는 Windows 10 장치를 업데이트하는 방법입니다.
 3. 이름, 설명(선택 사항)을 입력한 다음, **구성**을 선택합니다.
 4. **설정**에서 다음 정보를 입력합니다.
 
-   - **서비스 채널**: 장치가 Windows 업데이트를 받을 채널을 설정합니다.
+   - **서비스 채널** 디바이스가 Windows 업데이트를 받을 채널을 설정합니다.
    - **Microsoft 제품 업데이트**: Microsoft 업데이트에서 앱 업데이트를 검사하도록 선택합니다.
    - **Windows 드라이버**: 업데이트 도중에 Windows 업데이트 드라이버를 제외하도록 선택합니다.
-   - **자동 업데이트 동작**: 자동 업데이트를 설치하는 방법, 다시 시작 또는 다시 부팅하는 시기를 선택합니다. 자세한 내용은 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate)를 참조하세요.
-     - **자동 동작 주파수**: 업데이트 동작에 대해 **예약된 시간에 자동 설치 및 다시 시작**를 선택하는 경우 이 설정이 표시됩니다. 이 설정을 사용하여 주, 일, 시간을 비롯하여 업데이트가 설치되는 시기를 예약합니다.
+   - **자동 업데이트 동작** 자동 업데이트를 설치하는 방법, 다시 시작 또는 다시 부팅하는 시기를 선택합니다. 자세한 내용은 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate)를 참조하세요.
+     - **자동 동작 빈도**: 업데이트 동작에 대해 **예약된 시간에 자동 설치 및 다시 시작**를 선택하는 경우 이 설정이 표시됩니다. 이 설정을 사용하여 주, 일, 시간을 비롯하여 업데이트가 설치되는 시기를 예약합니다.
 
    - **검사 다시 시작**: 기본적으로 사용하도록 설정되어 있습니다. 장치를 다시 시작하면 활성 사용자, 배터리 수준, 실행 중인 게임 등에 대한 검사를 비롯하여 일부 검사가 발생합니다. 장치를 다시 시작할 때 이러한 검사를 건너뛰려면 **건너뛰기**를 선택합니다.
 
-   - **품질 업데이트 지연 기간(일)**: 품질 업데이트가 지연되는 일 수를 입력합니다. 릴리스되고나서 최대 30일로 이러한 품질 업데이트 수신을 연기할 수 있습니다.
+   - **품질 업데이트 지연 기간(일)**: 품질 업데이트가 지연되는 일의 수를 입력합니다. 릴리스되고나서 최대 30일로 이러한 품질 업데이트 수신을 연기할 수 있습니다.
 
      품질 업데이트는 일반적으로 기존 Windows 기능에 대한 수정 및 개선 사항이며 매월 두 번째 화요일에 게시됩니다. 비즈니스용 Windows 업데이트를 통한 품질 업데이트는 Microsoft에서 언제든지 다른 업데이트를 릴리스할 수 있지만 해당 업데이트('B' 릴리스)만 수신합니다. Windows 업데이트에서 사용 가능해지면 품질 업데이트 수신을 연기할지 여부와 기간을 정의할 수 있습니다. 자세한 내용은 [비즈니스용 Windows 업데이트를 사용하여 업데이트 배포](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)를 참조하세요.
 
-   - **기능 업데이트 지연 기간(일)**: 기능 업데이트가 지연되는 일 수를 입력합니다. 릴리스되고나서 최대 180일로 기능 업데이트 수신을 연기할 수 있습니다.
+   - **기능 업데이트 지연 기간(일)**: 기능 업데이트가 지연되는 일의 수를 입력합니다. 릴리스되고나서 최대 180일로 기능 업데이트 수신을 연기할 수 있습니다.
 
      기능 업데이트는 일반적으로 Windows의 새로운 기능입니다. **서비스 채널** 설정을 구성한 후에 Windows 업데이트에서 기능 업데이트가 사용 가능해지면 수신을 연기할지 여부와 기간을 정의할 수 있습니다.
 
-     예를 들어, **서비스 채널이 반기 채널(대상 지정)로 설정되어 있고 지연 기간이 30일인 경우**: 기능 업데이트 X가 Windows 업데이트에서 1월에 반기 채널(대상 지정)로 처음 공개적으로 제공된다고 가정하겠습니다. 디바이스는 2월, 즉 30일 이후까지 업데이트를 수신하지 않습니다.
+     예를 들면 다음과 같습니다. **서비스 채널이 반기 채널(대상 지정)로 설정되고 지연 기간이 30일인 경우**: 기능 업데이트 X가 1월에 최초로 반기 채널(대상 지정)로 Windows 업데이트에서 공개적으로 사용할 수 있다고 가정합니다. 디바이스는 2월, 즉 30일 이후까지 업데이트를 수신하지 않습니다.
 
-     **서비스 채널이 반기 채널로 설정되어 있고 지연 기간이 30일인 경우**: 기능 업데이트 X가 Windows 업데이트에서 1월에 반기 채널(대상 지정)로 처음 공개적으로 제공된다고 가정하겠습니다. 4개월 후 4월에 기능 업데이트 X는 반기 채널로 릴리스됩니다. 장치는 이 반기 채널 릴리스 30일 후에 기능 업데이트를 수신하며 5월에 업데이트됩니다.
+     **서비스 채널이 반기 채널로 설정되고 지연 기간이 30일인 경우**: 기능 업데이트 X가 1월에 최초로 반기 채널(대상 지정)로 Windows 업데이트에서 공개적으로 사용할 수 있다고 가정합니다. 4개월 후 4월에 기능 업데이트 X는 반기 채널로 릴리스됩니다. 장치는 이 반기 채널 릴리스 30일 후에 기능 업데이트를 수신하며 5월에 업데이트됩니다.
 
-   - **배달 최적화 다운로드 모드**: 장치가 Windows 업데이트를 다운로드하는 방법을 선택합니다. 자세한 내용은 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)를 참조하세요.
+   - **전송 최적화 다운로드 모드**: 디바이스가 Windows 업데이트를 다운로드하는 방법을 선택합니다. 자세한 내용은 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)를 참조하세요.
 
 5. 작업을 완료하면 **확인**을 선택합니다. **업데이트 링 만들기**에서 **만들기**를 선택합니다.
 
@@ -131,7 +131,7 @@ Intune에서 업데이트 준수를 확인하거나 업데이트 준수라는 �
 ### <a name="review-update-compliance-using-oms"></a>OMS를 사용하여 업데이트 준수 검토
 업데이트 준수라는 무료 솔루션을 사용하여 Windows 10 업데이트 롤아웃을 모니터링할 수 있습니다. 자세한 내용은 [Monitor Windows Updates with Update Compliance(Update Compliance를 사용하여 Windows 업데이트 모니터링)](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)를 참조하세요. 이 솔루션을 사용하면 업데이트 준수를 보고할 Intune 관리 Windows 10 장치에 상용 ID를 배포할 수 있습니다.
 
-Intune에서 사용자 지정 정책의 OMA-URI 설정을 사용하여 상용 ID를 구성할 수 있습니다. 자세한 내용은 [Microsoft Intune의 Windows 10 장치용 Intune 정책 설정](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)을 참조하세요.   
+Intune에서 사용자 지정 정책의 OMA-URI 설정을 사용하여 상용 ID를 구성할 수 있습니다. 자세한 내용은 [Microsoft Intune의 Windows 10 장치용 Intune 정책 설정](custom-settings-windows-10.md)을 참조하세요.   
 
 상용 ID 구성을 위한 OMA-URI 경로(대/소문자 구분)는 /Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID입니다.
 
@@ -140,7 +140,7 @@ Intune에서 사용자 지정 정책의 OMA-URI 설정을 사용하여 상용 ID
 - **설정 이름**: Windows 분석 상용 ID
 - **설정 설명**: Windows Analytics 솔루션에 대한 상용 ID 구성
 - **OMA-URI**(대/소문자 구분): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **데이터 형식:** 문자열
+- **데이터 형식**: 문자열
 - **값**: <*OMS 작업 영역에서 Windows 원격 분석 탭에 표시되는 GUID 사용*>
 
 ![OMA-URI 설정 - 행 편집](./media/commID-edit.png)
@@ -174,4 +174,4 @@ Windows Holographic for Business는 다음과 같은 설정을 지원합니다.
 
 - **자동 업데이트 동작**
 - **Microsoft 제품 업데이트**
-- **서비스 채널**: **반기 채널** 및 **반기 채널(대상 지정)** 옵션 지원
+- **서비스 채널** **반기 채널** 및 **반기 채널(대상 지정)** 옵션 지원

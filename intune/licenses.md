@@ -1,11 +1,11 @@
 ---
-title: Intune 라이선스
+title: Microsoft Intune의 사용 가능한 라이선스
 description: Intune은 이러한 라이선스로 사용 가능합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/14/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4a94440c-11cb-11e8-b642-0ed5f89f718b
 ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 30918cb407f6290baeaf24bd9d5e9a2c3976e23c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: d6020207ab32a4e7c18f59f74caeedc9e4f17bf4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179000"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031690"
 ---
 # <a name="licenses-that-include-intune"></a>Intune을 포함하는 라이선스
 
@@ -33,9 +33,9 @@ ms.locfileid: "52179000"
 | Intune | Intune | [자세한 정보](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
 | Enterprise Mobility + Security E3 | Intune | [자세한 정보](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
 | Enterprise Mobility + Security E5 | Intune | [자세한 정보](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 Education A1 | 교육용 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A3 | 교육용 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A5 | 교육용 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
+| Microsoft 365 Education A1 | 교육에 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
+| Microsoft 365 Education A3 | 교육에 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
+| Microsoft 365 Education A5 | 교육에 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
 | Microsoft 365 E3 | Intune | [자세한 정보](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 E5 | Intune | [자세한 정보](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 F1 | Intune | [자세한 정보](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |

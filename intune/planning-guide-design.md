@@ -1,5 +1,5 @@
 ---
-title: 설계 만들기
+title: Microsoft Intune 설계 만들기
 titlesuffix: Microsoft Intune
 description: 이 문서의 정보를 활용하여 Microsoft Intune 클라우드 전용 설계 및 구현을 위한 설계를 만들 수 있습니다.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186497"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112989"
 ---
 # <a name="create-a-design"></a>설계 만들기
 
@@ -211,7 +211,7 @@ Intune에서 모바일 장치를 관리하여 회사 데이터를 보호하고 �
 
 Intune에서는 회사 소유 장치 및 개인 장치를 모두 지원합니다. 장치가 장치 등록 관리자 또는 장치 등록 프로그램을 통해 등록된 경우 회사 소유로 간주됩니다. 예를 들어 Apple DEP(장비 등록 프로그램)를 통해 장치를 등록하고 회사 소유로 표시하고 대상 회사 정책 및 앱을 수신하는 장치 그룹에 배치할 수 있습니다.
 
-회사 및 BYOD 사용 사례에 대한 자세한 내용은 [섹션 3: 사용 사례 시나리오 요구 사항 확인](planning-guide-requirements.md)을 참조하세요.
+회사 및 BYOD 사용 사례에 대한 자세한 내용은 [ 섹션 3: 사용 사례 시나리오 요구 사항 확인](planning-guide-requirements.md)을 참조하세요.
 
 ### <a name="bulk-enrollment"></a>대량 등록
 
@@ -259,8 +259,8 @@ Intune에서는 회사 소유 장치 및 개인 장치를 모두 지원합니다
 |:---:|:---:|:---:|:---:|
 | 회사 - iOS | iOS | PIN은 필수, 길이는 6자, 클라우드 백업 제한 | 회사 장치 |                                                           
 | 회사 - Android | Android | PIN은 필수, 길이는 6자, 클라우드 백업 제한 | 회사 장치 |                                                           
-| BYOD - iOS  | iOS | PIN은 필수, 길이는 4자 | BYOD 장치 |
-| BYOD - Android  | Android | PIN은 필수, 길이는 4자 | BYOD 장치 |
+| BYOD - iOS  | iOS | PIN은 필수, 길이는 4 | BYOD 장치 |
+| BYOD - Android  | Android | PIN은 필수, 길이는 4 | BYOD 장치 |
 
 
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 구성 정책 요구 사항을 파악할 수 있습니다.
@@ -402,7 +402,7 @@ Intune을 사용하여 여러 방법으로 사용자 또는 장치에 앱을 제
 
 온라인 액세스의 경우 조건부 액세스 정책에서 대상으로 지정할 플랫폼 및 사용자 그룹을 결정하세요. 또한 Exchange Online 또는 Exchange 온-프레미스용 Intune Service-to-Service Connector를 설치 또는 구성해야 하는지 여부를 결정합니다. 다음에서 Intune Service-to-Service Connector를 설치하고 구성하는 방법을 자세히 알아보세요. <!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange 온-프레미스](exchange-connector-install.md)
 

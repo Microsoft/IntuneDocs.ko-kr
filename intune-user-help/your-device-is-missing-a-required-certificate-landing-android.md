@@ -1,11 +1,12 @@
 ---
 title: 장치에 필요한 인증서가 없는 경우 | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: 디바이스에 회사 지원팀에 필요한 인증서가 누락되었습니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: e40ac2fd81375b84084dd229f4cb5a6ab3e9915f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150755"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032217"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>장치에 필요한 인증서가 없습니다.
 
@@ -38,6 +39,6 @@ Android 장치가 Intune에 등록되어 있지 않고 회사 지원팀에 필�
 
 수행해야 할 첫 번째 단계는 장치에 [일반적으로 사전 설치되어 제공되는 인증서가 누락되었는지를](your-device-is-missing-a-preinstalled-certificate-android.md) 확인하는 것입니다.
 
-이 작업이 제대로 진행되지 않을 경우 회사 지원팀에서는 [추가 보안을 위해 두 번째 인증서를 설치하도록 요청](your-device-is-missing-an-IT-required-certificate-android.md)할 수 있습니다.
+인증서 문제가 제대로 해결되지 않을 경우 회사 지원팀에서는 [추가 보안을 위해 두 번째 인증서를 설치하도록 요청](your-device-is-missing-an-IT-required-certificate-android.md)할 수 있습니다.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

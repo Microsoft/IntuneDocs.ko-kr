@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187840"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112955"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -67,7 +67,7 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 
 ## <a name="set-device-type-restrictions"></a>장치 유형 제한 설정
 
-장치 유형 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다. 이러한 제한 사항은 이미 등록된 장치에 적용되지 않습니다. [Intune PC 에이전트](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다.
+장치 유형 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다. 이러한 제한 사항은 이미 등록된 장치에 적용되지 않습니다. [Intune PC 에이전트](manage-windows-pcs-with-microsoft-intune.md)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다.
 
 1. Azure Portal에 로그인합니다.
 2. **추가 서비스**를 선택하고 **Intune**을 검색한 다음, **Intune**을 선택합니다.
@@ -123,7 +123,7 @@ Intune에서 회사로 표시되지만 Intune 관리자가 장치별 제어를 �
 6. **저장**을 선택합니다.
 
 
-등록된 장치 수가 한도에 다다랐을 때 사용자에게 알림이 표시됩니다. 예를 들어, iOS에서는 다음과 같습니다.
+BYOD 등록 중에 등록된 디바이스 수가 한도에 다다랐을 때 사용자에게 알림이 표시됩니다. 예를 들어, iOS에서는 다음과 같습니다.
 
 ![iOS 장치 제한 알림](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

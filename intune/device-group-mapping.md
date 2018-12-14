@@ -1,5 +1,5 @@
 ---
-title: Intune에서 장치를 그룹으로 분류하는 방법
+title: Intune에서 디바이스를 그룹으로 분류
 titleSuffix: Microsoft Intune
 description: 장치를 보다 쉽게 관리하도록 그룹으로 분류하는 방법을 알아봅니다.
 keywords: ''
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189523"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031765"
 ---
-# <a name="categorize-devices-into-groups-for-easier-management"></a>장치를 보다 쉽게 관리하도록 그룹으로 분류하기
+# <a name="categorize-devices-into-groups"></a>디바이스를 그룹으로 분류
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune 장치 범주를 사용하여 정의된 범주에 따라 자동으로 장치를 그룹에 추가할 수 있습니다. 이렇게 하면 더욱 쉽게 해당 장치를 관리할 수 있습니다.
+디바이스를 보다 쉽게 관리하기 위해 Microsoft Intune 디바이스 범주를 사용하여 정의된 범주에 따라 자동으로 디바이스를 그룹에 추가할 수 있습니다.
 
 장치 범주에는 다음 워크플로가 사용됩니다.
 1. 사용자가 자신의 장치를 등록할 때 선택할 수 있는 범주를 만듭니다.
@@ -42,7 +42,7 @@ Microsoft Intune 장치 범주를 사용하여 정의된 범주에 따라 자동
 
 ## <a name="how-to-configure-device-categories"></a>장치 범주를 구성하는 방법
 
-### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>1단계: Azure Portal의 Intune 블레이드에서 장치 범주 만들기
+### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>1단계: Azure Portal의 Intune 블레이드에서 디바이스 범주 만들기
 1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록**을 선택합니다.
 2. **장치 등록** 블레이드에서 **장치 범주**를 선택합니다.
 3. **장치 범주** 페이지에서 **만들기**를 선택하여 새 범주를 추가합니다.

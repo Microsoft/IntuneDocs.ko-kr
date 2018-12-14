@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85a05f4816692d3bccfe695c7e69f54d007f3b59
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187007"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112411"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune에서 macOS 장치 등록 설정
 
@@ -37,7 +37,7 @@ macOS 장치 등록을 설정하기 전에 다음 필수 구성 요소를 완료
 
 - [도메인 구성](custom-domain-name-configure.md)
 - [MDM 기관 설정](mdm-authority-set.md)
-- [그룹 만들기](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [그룹 만들기](groups-add.md)
 - [회사 포털 구성](company-portal-app.md)
 - [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)에서 사용자 라이선스 할당
 - [Apple MDM Push Certificate 가져오기](apple-mdm-push-certificate-get.md)
@@ -47,7 +47,7 @@ macOS 장치 등록을 설정하기 전에 다음 필수 구성 요소를 완료
 사용자가 Intune 관리에 대해 개인 장치를 등록하도록 할 수 있습니다. 이를 "Bring Your Own Device" 또는 BYOD라고 합니다. 필수 사전 작업을 완료하고 사용자 라이선스를 할당하면 사용자는 다음과 같은 방법으로 장치를 등록할 수 있습니다.
 - [회사 포털 웹 사이트](https://portal.manage.microsoft.com)로 이동
 - 회사 포털 앱 다운로드
-또한 온라인 등록 단계: [macOS Intune에서 장치 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)에 대한 링크를 최종 사용자에게 전송할 수 있습니다.
+또한 온라인 등록 단계: [Intune에서 macOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)에 대한 링크를 최종 사용자에게 전송할 수 있습니다.
 
 최종 사용자의 다른 작업에 대한 정보는 다음 문서를 참조하세요.
 
@@ -56,8 +56,8 @@ macOS 장치 등록을 설정하기 전에 다음 필수 구성 요소를 완료
 
 ## <a name="company-owned-macos-devices"></a>회사 소유 macOS 장치
 사용자를 위해 장치를 구입하는 조직의 경우, Intune은 다음과 같은 macOS 회사 소유 장치 등록 방법을 지원합니다.
-- [Apple의 DEP(장비 등록 프로그램)](device-enrollment-program-enroll-macos.md): 조직은 Apple의 DEP(장비 등록 프로그램)를 통해 iOS 장치를 구매할 수 있습니다. DEP를 통해 등록 프로필을 "무선"으로 배포하여 장치를 관리할 수 있습니다.
-- [DEM(장치 등록 관리자)](device-enrollment-manager-enroll.md): DEM 계정을 사용하여 최대 1,000개의 장치를 등록할 수 있습니다.
+- [Apple의 DEP(장비 등록 프로그램)](device-enrollment-program-enroll-macos.md): 조직은 Apple의 DEP(장비 등록 프로그램)를 통해 macOS 디바이스를 구매할 수 있습니다. DEP를 통해 등록 프로필을 "무선"으로 배포하여 장치를 관리할 수 있습니다.
+- [DEM(디바이스 등록 관리자)](device-enrollment-manager-enroll.md): DEM 계정을 사용하여 최대 1,000개의 디바이스를 등록할 수 있습니다.
 
 ## <a name="block-macos-enrollment"></a>macOS 등록 차단
 기본적으로 Intune에서는 macOS 장치의 등록이 허용됩니다. 등록에서 macOS 장치를 차단하려면 [Set device type restrictions](enrollment-restrictions-set.md)(장치 유형 제한 설정)를 참조하세요.

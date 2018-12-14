@@ -1,12 +1,12 @@
 ---
-title: IOS 장치용 Apple School Manager 프로그램 등록 설정
+title: iOS 디바이스용 Apple School Manager 프로그램 등록
 titleSuffix: Microsoft Intune
 description: Intune을 사용하여 회사 소유 iOS 장치에 대해 Apple School Manager 프로그램 등록을 설정하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: ecd669f534fac9d359b542cbf1f2e6b543ed34f2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: fdda0edd8c7bf67dbfce9d428f1b3ce0266b3726
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190339"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032421"
 ---
-# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager를 통해 iOS 장치 등록 기능 사용
+# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager를 통해 iOS 장치 등록 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서의 정보를 참조하여 [Apple School Manager](https://school.apple.com/) 프로그램을 통해 구매한 장치에 대해 iOS 장치 등록을 수행할 수 있습니다. Intune을 Apple School Manager와 함께 사용하면 많은 수의 iOS 장치를 직접 조작하지 않고 쉽게 등록할 수 있습니다. 학생이나 교사가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 관리용으로 등록됩니다.
+[Apple School Manager](https://school.apple.com/) 프로그램을 통해 구입한 iOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. Intune을 Apple School Manager와 함께 사용하면 많은 수의 iOS 장치를 직접 조작하지 않고 쉽게 등록할 수 있습니다. 학생이나 교사가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 관리용으로 등록됩니다.
 
 Apple School Manager 등록을 활성화하려면 Intune과 Apple School Manager 포털을 모두 사용해야 합니다. 관리용으로 Intune에 장치를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 장치에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다.
 
@@ -108,8 +108,8 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
     사용자는 해당 장치가 감독된다는 알림을 다음 두 가지 방법으로 받습니다.
 
-   - 잠금 화면에 “이 iPhone은 Contoso에서 관리됩니다.”라는 메시지가 표시됩니다.
-   - **설정** > **일반** > **정보** 화면에 “이 iPhone은 감독됩니다. Contoso는 사용자의 인터넷 트래픽을 모니터링하고 이 장치를 찾습니다."라는 메시지를
+   - 잠금 화면에는 다음이 표시됩니다. “이 iPhone은 Contoso에서 관리됩니다.”
+   - **설정** > **일반** > **정보** 화면에 다음이 표시됩니다. “이 iPhone은 감독됩니다. Contoso는 사용자의 인터넷 트래픽을 모니터링하고 이 장치를 찾습니다.”라는 메시지를
 
      > [!NOTE]
      > 감독 없이 등록된 장치는 Apple Configurator를 사용하여 감독으로만 다시 설정할 수 있습니다. 이러한 방식으로 장치를 다시 설정하려면 iOS 장치를 Mac에 USB 케이블로 연결해야 합니다. 이에 대해 [Apple Configurator 문서](http://help.apple.com/configurator/mac/2.3)에서 자세히 알아보세요.
@@ -124,7 +124,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 11. **확인**을 선택합니다.
 
-12. **설정 도우미 설정**을 선택하여 다음 프로필 설정을 구성합니다. ![설정 도우미 사용자 지정](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+12. **설정 도우미 설정**을 선택하여 다음 프로필 설정을 구성합니다. ![설정 도우미 사용자 지정.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
     |                 Setting                  |                                                                                               설명                                                                                               |

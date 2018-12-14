@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183046"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112377"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune의 알려진 문제
 
@@ -31,7 +31,7 @@ ms.locfileid: "52183046"
 
 여기에 나열되지 않은 버그를 보고하려면 [지원 요청을 시작](get-support.md)하세요.
 
-Intune의 새로운 기능을 요청하려면 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) 사이트에서 보고서를 제출하는 것이 좋습니다.
+Intune의 새로운 기능을 요청하려면 [Microsoft Intune 피드백](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) 보고서를 제출하는 것이 좋습니다.
 
 ## <a name="migration"></a>마이그레이션
 
@@ -44,13 +44,13 @@ Azure 클래식 포털에서 만든 준수 정책은 더 이상 사용되지 않
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune 레거시 PC 클라이언트 기능은 Silverlight 콘솔에서만 사용 가능합니다.
 
-Azure Portal의 Intune에서 Windows 10을 관리하는 기능은 Windows MDM 등록을 통해 사용할 수 있습니다. 자세한 내용은 [Azure용 Intune 콘솔 및 레거시 Intune PC 클라이언트](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure)을 참조하세요.
+Azure Portal의 Intune에서 Windows 10을 관리하는 기능은 Windows MDM 등록을 통해 사용할 수 있습니다. 자세한 내용은 [Azure용 Intune 콘솔 및 레거시 Intune PC 클라이언트](intune-legacy-pc-client.md)을 참조하세요.
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>마이그레이션 도중 Intune이 만든 그룹은 다른 Microsoft 제품의 기능에 영향을 줄 수 있습니다.
 
 Intune에서 Azure Portal로 마이그레이션할 때 **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421**이라는 이름의 새 그룹이 보일 수 있습니다. 이 그룹에는 Intune의 사용이 허가된 사용자뿐만 아니라 Azure Active Directory의 모든 사용자도 포함됩니다. 이러한 사용 방식으로 인해 일부 기존 또는 새로운 사용자가 어떤 그룹의 멤버도 아니라면 다른 Microsoft 제품에서 문제가 발생할 수 있습니다.
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>마이그레이션한 정책에 대한 상태 블레이드가 작동하지 않음
+### <a name="status-blades-for-migrated-policies-dont-work"></a>마이그레이션한 정책에 대한 상태 블레이드가 작동하지 않음
 
 Azure 클래식 포털에서 마이그레이션한 정책의 상태 정보는 Azure Portal에서 확인할 수 없습니다. 그러나 클래식 포털에서는 이러한 정책에 대한 보고서를 계속 확인할 수 있습니다. 마이그레이션한 구성 정책에 대한 상태 정보를 확인하려면 Azure Portal에서 정책을 다시 만드세요.
 
@@ -58,11 +58,11 @@ Azure 클래식 포털에서 마이그레이션한 정책의 상태 정보는 Az
 
 
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>특정 VPP 앱에 대한 여러 앱 설치 프롬프트
-최종 사용자 장치에 이미 설치된 특정 VPP 앱에 대한 여러 앱 설치 프롬프트를 볼 수 있습니다. 이 문제는 **자동 앱 업데이트** 옵션이 Intune Azure Portal에 업로드한 VPP 토큰에 대해 **켜짐**으로 설정된 경우 발생합니다.    
+최종 사용자 디바이스에 이미 설치된 특정 VPP 앱에 대한 여러 앱 설치 프롬프트를 볼 수 있습니다. 이 문제는 **자동 앱 업데이트** 옵션이 Intune Azure Portal에 업로드한 VPP 토큰에 대해 **켜짐**으로 설정된 경우 발생합니다.    
 
 이 문제를 해결하려면 VPP 토큰에 대해 **자동 앱 업데이트** 옵션을 사용하지 못하게 설정할 수 있습니다. 이렇게 하려면 Azure Portal에서 Microsoft Intune을 엽니다. Intune에서 **클라이언트 앱** > **iOS VPP 토큰**을 선택합니다. 다음으로 영향을 받는 앱을 배포한 VPP 토큰을 선택하고 **편집** > **자동 앱 업데이트** > **꺼짐** > **저장**을 선택합니다. 또는 영향을 받는 앱을 VPP 앱으로 배포하는 것을 중지할 수 있습니다. 그러면 프롬프트도 중지됩니다.    
 
-현재 릴리스에서 알려진 문제입니다. 이 문제를 해결하게 될 예정된 수정 내용이 있습니다. 수정이 구현되면 사용자에게 더 이상 여러 앱 설치 프롬프트가 표시되지 않습니다.
+현재 릴리스에서 알려진 문제입니다. 이 문제를 해결할 예정된 수정 내용이 있습니다. 수정이 구현되면 사용자에게 더 이상 여러 앱 설치 프롬프트가 표시되지 않습니다.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>기본 Intune 테넌트 언어에서만 iOS 대량 구매 앱을 사용할 수 있음
 iOS 대량 구매 앱은 Intune 계정과 동일한 국가 코드에 대해서만 표시되며 할당할 수 있습니다. Intune은 Intune 테넌트 계정 국가 코드와 동일한 iTunes 로캘의 앱만 동기화합니다. 예를 들어 미국 스토어에서만 사용할 수 있는 앱을 구매했는데 Intune 계정이 독일어라면 Intune에 해당 앱이 표시되지 않습니다.

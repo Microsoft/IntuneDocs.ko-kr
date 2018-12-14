@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189200"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861016"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>초기화, 사용 중지 또는 수동으로 장치 등록을 취소하여 장치 제거
 
@@ -81,7 +81,7 @@ MDM 정책은 다음에 장치가 Intune에 연결될 때 다시 적용됩니다
 
 |데이터 형식|iOS|
 |-------------|-------|
-|Intune에서 설치한 회사 앱 및 관련 데이터|앱이 제거됩니다. 회사 앱 데이터가 제거됩니다.<br /><br />모바일 앱 관리를 사용하는 Microsoft 앱의 앱 데이터가 제거됩니다. 앱은 제거되지 않습니다.|
+|Intune에서 설치한 회사 앱 및 관련 데이터|**회사 포털을 사용하여 설치한 앱:**: 모든 앱 데이터와 앱이 제거됩니다. 이러한 앱에는 App Store에서 처음에 설치되고, 나중에 회사 앱으로 관리된 앱이 포함됩니다. <br /><br /> **모바일 앱 관리를 사용하고 App Store에서 설치한 Microsoft 앱:** 개인 앱 데이터가 제거됩니다. 회사 앱 데이터와 앱은 제거되지 않습니다.|
 |설정|Intune 정책에서 설정한 구성은 더 이상 적용되지 않습니다. 사용자는 설정을 변경할 수 있습니다.|
 |Wi-Fi 및 VPN 프로필 설정|제거됩니다.|
 |인증서 프로필 설정|인증서가 제거되고 해지됩니다.|

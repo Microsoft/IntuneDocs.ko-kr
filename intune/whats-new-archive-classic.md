@@ -15,12 +15,12 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5a76a54de62ead26ec4b3c7a8e34db3cd639b6c1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 56d5d9c773a11b3884b4e72b55fab27e7044f1e9
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181703"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112904"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 클래식 포털의 새로운 기능 - 지난 달
 
@@ -48,7 +48,7 @@ Android 회사 포털 앱의 업데이트에는 사용자가 앱을 시작하거
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>앱의 SharePoint Online 액세스 차단 <!-- 679339 -->
 
-이제 앱 보호 정책이 적용되지 않은 앱이 [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online)에 액세스하지 않도록 차단하는 앱 기반 조건부 액세스 정책을 만들 수 있습니다. 앱 기반 조건부 액세스 시나리오에서는 Azure Portal을 사용하여 SharePoint Online에 액세스할 앱을 지정할 수 있습니다.
+이제 앱 보호 정책이 적용되지 않은 앱이 [SharePoint Online](app-based-conditional-access-intune-create.md)에 액세스하지 않도록 차단하는 앱 기반 조건부 액세스 정책을 만들 수 있습니다. 앱 기반 조건부 액세스 시나리오에서는 Azure Portal을 사용하여 SharePoint Online에 액세스할 앱을 지정할 수 있습니다.
 
 #### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>iOS용 회사 포털에서 iOS용 Outlook으로의 Single Sign-On 지원 <!--834012-->
 사용자는 같은 장치에서 같은 계정으로 iOS용 회사 포털 앱에 로그인되어 있는 경우 더 이상 Outlook 앱에 로그인할 필요가 없습니다. 사용자는 Outlook 앱을 시작할 때 계정을 선택하여 자동으로 로그인할 수 있습니다. 이 기능을 다른 Microsoft 앱에 추가하는 작업도 진행하는 중입니다.
@@ -67,7 +67,7 @@ Windows 10 회사 포털 앱에서 시작되는 앱 설치에 대한 새로운 �
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 장치 대량 등록 <!-- 747607 -->
 
-이제 WCD(Windows 구성 디자이너)를 사용하여 Azure Active Directory 및 Intune에 대한 Windows 10 크리에이터스 업데이트를 실행하는 많은 장치를 연결할 수 있습니다. Azure AD 테넌트에 대한 [대량 MDM 등록](/intune-classic/deploy-use/bulk-enroll-windows)을 사용하도록 설정하려면 Windows 구성 디자이너를 사용하여 Azure AD 테넌트에 장치를 연결하는 프로비전 패키지를 만들고, 이 패키지를 대량으로 등록 및 관리할 회사 소유 장치에 적용합니다. 패키지가 장치에 적용되면, 장치가 Azure AD에 연결되고 Intune에 등록되며 Azure AD 사용자가 로그온할 수 있는 준비를 하게 됩니다.  Azure AD 사용자는 이러한 장치에서 표준 사용자이며 할당된 정책 및 필수 앱을 수신합니다. 셀프 서비스 및 회사 포털 시나리오의 경우 이번에는 지원되지 않습니다.
+이제 WCD(Windows 구성 디자이너)를 사용하여 Azure Active Directory 및 Intune에 대한 Windows 10 크리에이터스 업데이트를 실행하는 많은 장치를 연결할 수 있습니다. Azure AD 테넌트에 대한 [대량 MDM 등록](windows-bulk-enroll.md)을 사용하도록 설정하려면 Windows 구성 디자이너를 사용하여 Azure AD 테넌트에 장치를 연결하는 프로비전 패키지를 만들고, 이 패키지를 대량으로 등록 및 관리할 회사 소유 장치에 적용합니다. 패키지가 장치에 적용되면, 장치가 Azure AD에 연결되고 Intune에 등록되며 Azure AD 사용자가 로그온할 수 있는 준비를 하게 됩니다.  Azure AD 사용자는 이러한 장치에서 표준 사용자이며 할당된 정책 및 필수 앱을 수신합니다. 셀프 서비스 및 회사 포털 시나리오의 경우 이번에는 지원되지 않습니다.
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure Portal의 Intune 공개 미리 보기의 새로운 기능<!--736542-->
 
@@ -141,7 +141,7 @@ Apple에서는 ATS(Application Transport Security)에 대한 특정 요구 사�
 - 응용 프로그램 방어
 - 취약성 방어
 
-Intune 장치 준수 정책을 통해 사용하도록 설정된 Skycure 위험 평가에 따라 EMS 조건부 액세스 정책을 구성할 수 있습니다. 이러한 정책을 사용하여 검색된 위협에 따라 회사 리소스에 대한 비규격 장치 액세스를 허용하거나 차단할 수 있습니다. 자세한 내용은 [Skycure Mobile Threat Defense 커넥터](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)를 참조하세요.
+Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Skycure(Symantec Endpoint Protection Mobile) 위험 평가에 따라 EMS 조건부 액세스 정책을 구성할 수 있습니다. 이러한 정책을 사용하여 검색된 위협에 따라 회사 리소스에 대한 비규격 장치 액세스를 허용하거나 차단할 수 있습니다. 자세한 내용은 [Symantec Endpoint Protection Mobile Connector](skycure-mobile-threat-defense-connector.md)를 참조하세요.
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android용 회사 포털 앱의 새 사용자 환경 <!--621622-->
 
@@ -149,9 +149,9 @@ Android용 회사 포털 앱이 최신 모양과 느낌 및 더 나은 사용자
 
 - 색: 회사 포털 탭 머리글이 IT 관리자가 정의한 브랜드 색으로 지정됩니다.
 - 앱: **앱** 탭에서 **추천 앱** 및 **모든 앱** 단추가 업데이트됩니다.
-- 검색: **앱** 탭에서 **검색** 단추가 부동 작업 단추입니다.
+- Search: **앱** 탭에서 **검색** 단추가 부동 작업 단추입니다.
 - 앱 탐색: 보다 쉽게 탐색할 수 있도록 **모든 앱** 보기에 탭으로 구분된 **추천**, **전체** 및 **범주** 보기가 표시됩니다.
-- 지원: 가독성 향상을 위해 **내 장치** 및 **IT 담당자** 탭이 업데이트됩니다.
+- 지원: 가독성 향상을 위해 **내 디바이스** 및 **IT 담당자** 탭이 업데이트됩니다.
 
 이러한 변경에 대한 자세한 내용은 [Intune 최종 사용자 앱 UI 업데이트](whats-new-app-ui.md)를 참조하세요.
 
@@ -170,7 +170,7 @@ Windows 10 회사 포털 앱을 다운로드하거나 사이드로드해야 하�
 
 iOS 10.3 릴리스가 2017년 3월 27일에 iOS 사용자에게 배포되기 시작했습니다. 기존의 모든 Intune MDM 및 MAM 시나리오는 최신 버전의 Apple OS와 호환됩니다. 현재 iOS 장치 관리에 사용할 수 있는 기존의 모든 Intune 기능은 사용자가 장치 및 앱을 iOS 10.3으로 업그레이드할 때도 계속 작동할 것으로 예상합니다.
 
-현재 공유할 만한 알려진 문제는 없습니다. iOS 10.3 관련 문제가 발생하는 경우 [Intune 지원 팀](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)에 연락해 주시기 바랍니다.
+현재 공유할 만한 알려진 문제는 없습니다. iOS 10.3 관련 문제가 발생하는 경우 [Intune 지원 팀](get-support.md)에 연락해 주시기 바랍니다.
 
 #### <a name="improved-support-for-android-users-based-in-china---720444--"></a>중국에 거주하는 Android 사용자에 대한 지원 향상 <!--720444-->
 
@@ -213,7 +213,7 @@ Microsoft는 Microsoft Teams의 일반적인 가용성을 발표했습니다. iO
 마찬가지로 IT 관리자가 회사 장치 등록 프로필을 통해 타기팅되는 Intune 그룹이 무엇인지 변경할 경우, Intune에서는 새 프로필 할당을 반영한 새 동적 그룹을 생성하지만 이전 할당에 대해 생성된 동적 그룹을 제거하지는 않습니다t.
 
 ### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Windows 설정을 통해 Windows 데스크톱 장치 관리를 기본값으로 설정<!--663050-->
-Windows 10 데스크톱을 등록하는 기본 동작이 바뀌고 있습니다. 새 등록은 PC 에이전트를 통해서가 아니라 일반적인 MDM 에이전트 등록 흐름을 따릅니다. 회사 포털 웹 사이트는 Windows 10 데스크톱 사용자에게 모바일 장치로 Windows 10 데스크톱 컴퓨터를 추가하는 과정을 안내하는 등록 지침을 제공합니다. 현재 등록된 PC에는 영향을 주지 않으며, [원하는 경우](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune) 조직에서 PC 에이전트를 사용하여 Windows 10 데스크톱을 계속 관리할 수 합니다.
+Windows 10 데스크톱을 등록하는 기본 동작이 바뀌고 있습니다. 새 등록은 PC 에이전트를 통해서가 아니라 일반적인 MDM 에이전트 등록 흐름을 따릅니다. 회사 포털 웹 사이트는 Windows 10 데스크톱 사용자에게 모바일 장치로 Windows 10 데스크톱 컴퓨터를 추가하는 과정을 안내하는 등록 지침을 제공합니다. 현재 등록된 PC에는 영향을 주지 않으며, [원하는 경우](manage-windows-pcs-with-microsoft-intune.md) 조직에서 PC 에이전트를 사용하여 Windows 10 데스크톱을 계속 관리할 수 합니다.
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>선택적 초기화에 대한 모바일 앱 관리 지원 향상 <!--581242-->
 "앱 데이터를 초기화하기 전의 오프라인 간격" 정책으로 인해 데이터가 자동으로 제거되는 경우 회사 또는 학교 데이터에 다시 액세스하는 방법에 대한 추가 지침이 최종 사용자에게 제공됩니다.<!--, or the removal of the Intune Company Portal on Android.-->
@@ -230,12 +230,12 @@ Windows 및 Windows Phone 사용자가 MDM 서버 주소 입력 메시지가 표
 * __색__: 탭 헤더에 사용자 지정 색상표에 따라 색을 표시할 수 있습니다.
 * __인터페이스__: 앱 탭에서 추천 앱 및 모든 앱 단추가 업데이트되었습니다. 검색 단추는 이제 부동 작업 단추입니다.
 * __탐색__: 모든 앱은 쉽게 탐색할 수 있도록 추천, 전체 및 범주 탭으로 구분된 뷰를 표시합니다.
-* __서비스__: 내 장치 및 IT 담당자 탭 가독성을 개선했습니다.
+* __서비스__: 내 디바이스 및 IT 담당자 탭 가독성을 개선했습니다.
 
 [UI 업데이트 페이지](whats-new-app-ui.md)에서 이전 및 이후 이미지를 찾을 수 있습니다.
 
 ### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>비즈니스용 Microsoft 스토어와 여러 관리 도구 연결<!--926135-->
-둘 이상의 관리 도구를 사용하여 비즈니스용 Microsoft 스토어 앱을 배포하는 경우, 이전에는 그 중에 하나만 비즈니스용 Microsoft 스토어에 연결할 수 있었습니다. 이제 Intune 및 Configuration Manager와 같은 여러 관리 도구를 스토어에 연결할 수 있습니다. 자세한 내용은 [Microsoft Intune을 사용하여 비즈니스용 Microsoft 스토어에서 구입한 앱 관리](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)를 참조하세요.
+둘 이상의 관리 도구를 사용하여 비즈니스용 Microsoft 스토어 앱을 배포하는 경우, 이전에는 그 중에 하나만 비즈니스용 Microsoft 스토어에 연결할 수 있었습니다. 이제 Intune 및 Configuration Manager와 같은 여러 관리 도구를 스토어에 연결할 수 있습니다. 자세한 내용은 [Microsoft Intune을 사용하여 비즈니스용 Microsoft 스토어에서 구입한 앱 관리](windows-store-for-business.md)를 참조하세요.
 
 ## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Azure Portal의 Intune 공개 미리 보기의 새로운 기능 <!--736542-->
 
@@ -252,20 +252,20 @@ Azure의 Intune 미리 보기에 대한 새로운 기능은 [여기](whats-new.m
 ### <a name="new-capabilities"></a>새로운 기능
 
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>등록과 상관없는 MAM에 대한 콘솔 내 보고서<!--677961-->
-등록된 장치 및 등록되지 않은 장치 모두에 대한 새 앱 보호 보고서가 추가되었습니다. [intune을 사용하여 모바일 앱 관리 정책을 모니터링할 수 있는 방법은 여기](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)에서 확인하세요.
+등록된 장치 및 등록되지 않은 장치 모두에 대한 새 앱 보호 보고서가 추가되었습니다. [intune을 사용하여 모바일 앱 관리 정책을 모니터링](app-protection-policies-monitor.md)할 수 있는 방법을 자세히 알아보세요.
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 지원<!--694397-->
 Intune은 이제 Android 7.1.1을 완벽하게 지원하고 관리합니다.
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>iOS 장치가 비활성 상태이거나, 관리 콘솔에서 통신할 수 없는 경우 문제 해결 <!--unknown-->
-사용자 장치에서 Intune과의 연결이 끊기는 경우 회사 리소스에 대한 액세스 권한을 다시 얻도록 새로운 문제 해결 단계를 제공할 수 있습니다. [장치가 비활성 상태이거나, 관리 콘솔에서 통신할 수 없음](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)을 참조하세요.
+사용자 장치에서 Intune과의 연결이 끊기는 경우 회사 리소스에 대한 액세스 권한을 다시 얻도록 새로운 문제 해결 단계를 제공할 수 있습니다. [장치가 비활성 상태이거나, 관리 콘솔에서 통신할 수 없음](troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them)을 참조하세요.
 
 ### <a name="notices"></a>알림
 
 #### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Windows 설정을 통해 Windows 데스크톱 장치 관리를 기본값으로 설정<!--663050-->
 Windows 10 데스크톱을 등록하는 기본 동작이 바뀌고 있습니다. 새 등록은 PC 에이전트를 통해서가 아니라 일반적인 MDM 에이전트 등록 흐름을 따릅니다.
 
-회사 포털 웹 사이트는 Windows 10 데스크톱 사용자에게 모바일 장치로 Windows 10 데스크톱 컴퓨터를 추가하는 과정을 안내하는 등록 지침을 제공합니다. 현재 등록된 PC에는 영향을 주지 않으며, [원하는 경우](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune) 조직에서 PC 에이전트를 사용하여 Windows 10 데스크톱을 계속 관리할 수 합니다.
+회사 포털 웹 사이트는 Windows 10 데스크톱 사용자에게 모바일 장치로 Windows 10 데스크톱 컴퓨터를 추가하는 과정을 안내하는 등록 지침을 제공합니다. 현재 등록된 PC에는 영향을 주지 않으며, [원하는 경우](manage-windows-pcs-with-microsoft-intune.md) 조직에서 PC 에이전트를 사용하여 Windows 10 데스크톱을 계속 관리할 수 합니다.
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>선택적 초기화에 대한 모바일 앱 관리 지원 향상 <!--581242-->
 "앱 데이터를 초기화하기 전의 오프라인 간격" 정책으로 인해 데이터가 자동으로 제거되는 경우 회사 또는 학교 데이터에 다시 액세스하는 방법에 대한 추가 지침이 최종 사용자에게 제공됩니다.<!--, or the removal of the Intune Company Portal on Android.-->
@@ -301,7 +301,7 @@ iOS용 회사 포털은 수행되는 로드 프로세스에 대한 정보를 사
 
 Azure Portal의 관리 환경에서는 이미 발표된 새 그룹화 및 대상 지정 기능을 사용합니다. 따라서 기존 테넌트가 새 그룹화 환경으로 마이그레이션될 때 사용자도 마이그레이션되어 테넌트에 새 관리 환경의 미리 보기가 표시됩니다. Azure Portal에서 Microsoft Intune용으로 제공되는 기능에 대한 자세한 내용을 [새로운 설명서](/intune/what-is-intune)에서 확인해 보시기 바랍니다.
 
-__Azure Portal의 공개 미리 보기에 통신 지출 관리 통합__ <!--747605--> 이제 Azure Portal 내에서 타사 TEM(통신 지출 관리) 서비스와의 통합 미리 보기를 시작합니다. Intune을 사용하여 국내 및 로밍 데이터 사용량을 제한할 수 있습니다. 우선 [Saaswedo](http://www.saaswedo.com/)와의 통합으로 시작합니다. 평가판 테넌트에 이 기능을 사용하려면 [Microsoft 지원에 문의](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)하세요.
+__Azure Portal의 공개 미리 보기에 통신 지출 관리 통합__ <!--747605--> 이제 Azure Portal 내에서 타사 TEM(통신 지출 관리) 서비스와의 통합 미리 보기를 시작합니다. Intune을 사용하여 국내 및 로밍 데이터 사용량을 제한할 수 있습니다. 우선 [Saaswedo](http://www.saaswedo.com/)와의 통합으로 시작합니다. 평가판 테넌트에 이 기능을 사용하려면 [Microsoft 지원에 문의](get-support.md)하세요.
 
 ### <a name="new-capabilities"></a>새로운 기능
 
@@ -311,7 +311,7 @@ __모바일 장치 등록을 제한하는 기능__ <!--747596--> Intune은 등�
 * 모바일 장치 등록을 제한해도 PC 클라이언트 등록은 제한되지 않습니다.
 * iOS에 한해, 개인 소유 장치의 등록을 차단하는 한 가지 추가 옵션이 있습니다.
 
-Intune은 [이 문서](/intune-classic/deploy-use/manage-corporate-owned-devices)에 설명된 대로 IT 관리자가 회사 소유로 표시하기 위한 조치를 취하지 않은 한 모든 새 장치를 개인 소유 장치로 표시합니다.
+Intune은 [이 문서](device-enrollment.md)에 설명된 대로 IT 관리자가 회사 소유로 표시하기 위한 조치를 취하지 않은 한 모든 새 장치를 개인 소유 장치로 표시합니다.
 
 ### <a name="notices"></a>알림
 

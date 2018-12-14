@@ -1,7 +1,7 @@
 ---
 title: 장치 등록 관리자 계정을 사용하여 장치 등록
 titlesuffix: Microsoft Intune
-description: 장치 등록 관리자 계정을 사용하여 Intune에 장치를 등록합니다. "
+description: 장치 등록 관리자 계정을 사용하여 Intune에 장치를 등록합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,15 +15,15 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 1d3e01cdbc7c9e30034e83e9609c0df5f031c18a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184916"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031843"
 ---
-# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>장치 등록 관리자 계정을 사용하여 장치 등록
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>디바이스 등록 관리자 계정을 사용하여 Intune에서 디바이스 등록
 
 DEM(장치 등록 관리자) 계정을 사용하여 단일 Azure Active Directory 계정에서 최대 1,000개의 모바일 장치를 등록할 수 있습니다. DEM은 AAD 사용자 계정에 적용될 수 있는 Intune 사용 권한이며 이를 통해 사용자가 최대 1,000개의 장치를 등록할 수 있습니다. DEM 계정은 장치를 등록하고 장치의 사용자에게 전달하기 전에 준비하는 시나리오에 유용합니다.
 

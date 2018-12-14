@@ -1,12 +1,12 @@
 ---
-title: 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화
+title: 앱 보호 정책 액세스 작업을 사용하여 데이터 초기화
 titleSuffix: Microsoft Intune
 description: Microsoft Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터를 초기화하는 방법에 대해 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: f8173b409eb82a3bb98ef0a30570e489fac1fc49
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189702"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032064"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -87,7 +87,7 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 입력의 예: ‘제조업체 A;제조업체 B’ 
 
 >[!NOTE]
-> Intune을 사용하는 장치에서 보고하는 일반적인 제조업체로는 Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk 등이 있으며, 이를 입력 값으로 사용할 수 있습니다.
+> 다음은 Intune을 사용하여 디바이스에서 보고하는 일반적인 제조업체로, 입력으로 사용할 수 있습니다. Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 최종 사용자 장치에서 Intune 클라이언트는 응용 프로그램 보호 정책에 대한 Intune에 지정된 장치 모델 문자열의 단순 일치를 기반으로 동작을 수행합니다. 일치 여부는 전적으로 장치가 보고하는 내용에 따라 결정됩니다. 사용자(IT 관리자)는 다양한 장치 제조업체 및 모델을 기반으로 하며 소규모 사용자 그룹을 대상으로 이 설정을 테스트하여 의도한 동작이 발생하도록 합니다. 기본값은 **구성되지 않음**입니다.<br>
 다음 작업 중 하나를 설정합니다. 

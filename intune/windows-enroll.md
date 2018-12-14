@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188078"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112547"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows 장치에 대한 등록 설정
 
@@ -55,7 +55,7 @@ Intune에서는 Windows 10 크리에이터스 업데이트를 실행하고 Azure
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium을 사용하지 않고 Windows 등록 간소화
 등록을 간소화하려면 등록 요청을 Intune 서버에 리디렉션하는 DNS(도메인 이름 서버) 별칭(CNAME 레코드 형식)을 만듭니다. 그렇지 않으면, Intune에 연결하려는 사용자가 등록하는 동안 Intune 서버 이름을 입력해야 합니다.
 
-**1단계: CNAME 만들기**(선택 사항)<br>
+**1단계. CNAME 만들기**(선택 사항)<br>
 회사의 도메인에 대한 CNAME DNS 리소스 레코드를 만듭니다. 예를 들어, 회사의 웹 사이트가 contoso.com인 경우 DNS에 EnterpriseEnrollment.contoso.com을 enterpriseenrollment-s.manage.microsoft.com으로 리디렉션하는 CNAME을 만듭니다.
 
 CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 사용하면 사용자가 보다 쉽게 등록할 수 있습니다. 등록 CNAME 레코드가 없으면 사용자에게 MDM 서버 이름인 enrollment.manage.microsoft.com을 수동으로 입력하라는 메시지가 표시됩니다.
@@ -102,4 +102,4 @@ DNS 레코드 변경 내용이 전파되는 데는 최대 72시간이 걸릴 수
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Azure에서 Intune을 사용하여 Windows 장치를 관리할 때 고려 사항](/intune-classic/deploy-use/intune-on-azure)
+- [Azure에서 Intune을 사용하여 Windows 장치를 관리할 때 고려 사항](intune-legacy-pc-client.md)

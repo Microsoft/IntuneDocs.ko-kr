@@ -15,15 +15,15 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: e407b2059d986841541c969e387d77e71c5e5b4b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181363"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032302"
 ---
-# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>사용자 액세스에 대한 회사의 사용 약관 관리
+# <a name="terms-and-conditions-for-user-access"></a>사용자 액세스에 대한 사용 약관
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -57,7 +57,7 @@ Intune 관리자는 회사 포털을 사용하여 다음을 수행하기 전에 
    ![최종 사용자 약관 수락 화면 스크린샷과 약관 요약](./media/terms-summary-create.png)
 
    - **제목**: 위의 회사 포털에서 사용자에게 표시되는 약관의 이름은 **요약**입니다.
-   - **사용 약관 요약**: 사용자가 약관에 동의하는 경우 의미를 설명하는 텍스트입니다. 예를 들어 "장치를 등록하면 Contoso에서 설정한 사용 약관에 동의하게 됩니다. 계속하기 전에 사용 약관을 주의해서 읽어보세요."가 있습니다.
+   - **사용 약관 요약** 사용자가 약관에 동의하는 경우 의미를 설명하는 텍스트입니다. 예를 들어 "장치를 등록하면 Contoso에서 설정한 사용 약관에 동의하게 됩니다. 계속하기 전에 사용 약관을 주의해서 읽어보세요."가 있습니다.
    - **사용 약관**: 사용자에게 표시되며 사용자가 동의하거나 거부해야 하는 사용 약관입니다.
 
 5. **확인** > **만들기**를 선택합니다.

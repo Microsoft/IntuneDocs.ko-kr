@@ -5,22 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fd99a168747bd4a0f5852404e767d658b8400ba2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180836"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032268"
 ---
-# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune에서 Windows Holographic 및 HoloLens 장치 관리 및 사용
+# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Intune을 사용하여 Windows Holographic 및 HoloLens 디바이스의 다양한 디바이스 관리 기능 관리 및 사용
 
 Microsoft Intune에는 [Microsoft HoloLens](https://docs.microsoft.com/hololens/) 같은 Windows Holographic for Business를 실행하는 장치를 관리하는 데 도움이 되는 여러 기능이 포함되어 있습니다. Intune을 사용하여 장치가 조직의 규칙을 준수하는지 확인하고 VPN 또는 WiFi 프로필을 추가하여 장치를 사용자 지정할 수 있습니다. 다른 주요 기능은 장치를 키오스크로 사용하고 특정 앱 또는 특정 앱 집합을 실행하는 것입니다.
 
@@ -32,11 +32,11 @@ Intune에서 Windows Holographic 장치를 사용하려면 버전 업그레이�
 
 Azure AD(Active Directory)는 Windows Holographic for Business를 실행하는 장치의 관리 및 제어를 도와주는 유용한 리소스입니다. Intune 및 Azure AD를 사용하여 다음을 수행할 수 있습니다. 
 
-- **[Azure Active Directory 조인 장치 설정](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: Azure AD(Active Directory)에서 Windows Holographic for Business를 실행하는 장치를 포함하여 회사 소유의 Windows 10 장치를 추가할 수 있습니다. 이 기능은 Azure AD가 장치를 제어하도록 허용합니다. 이렇게 하면 사용자는 보안 및 규정 표준을 충족하는 장치에서 회사 리소스에 액세스할 수 있습니다.
+- **[Azure Active Directory에 디바이스 조인](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: Azure AD(Active Directory)에서 Windows Holographic for Business를 실행하는 디바이스를 포함하여 회사 소유의 Windows 10 디바이스를 추가할 수 있습니다. 이 기능은 Azure AD가 장치를 제어하도록 허용합니다. 이렇게 하면 사용자는 보안 및 규정 표준을 충족하는 장치에서 회사 리소스에 액세스할 수 있습니다.
 
-  자세한 내용은 [Azure AD의 장치 관리 소개](https://docs.microsoft.com/azure/active-directory/device-management-introduction)에 설명되어 있습니다.
+  자세한 내용은 [Azure AD의 디바이스 관리](https://docs.microsoft.com/azure/active-directory/devices/overview)에 설명되어 있습니다.
 
-- **[Windows 장치에 대한 대량 등록](windows-bulk-enroll.md)**: 대량의 새 Windows 장치를 Azure AD(Active Directory) 및 Intune에 조인할 수 있습니다. 이 기능을 대량 등록이라고 하며, 프로비전 패키지를 사용합니다. 이러한 패키지는 Windows Holographic for Business를 실행하는 장치를 Azure AD 테넌트에 조인하고, Intune에 등록합니다.
+- **[Windows 디바이스에 대한 대량 등록](windows-bulk-enroll.md)**: 여러 새로운 Windows 디바이스를 Azure AD(Active Directory) 및 Intune에 조인할 수 있습니다. 이 기능을 대량 등록이라고 하며, 프로비전 패키지를 사용합니다. 이러한 패키지는 Windows Holographic for Business를 실행하는 장치를 Azure AD 테넌트에 조인하고, Intune에 등록합니다.
 
 ## <a name="company-portal"></a>회사 포털
 **[회사 포털 앱 구성](company-portal-app.md)**
@@ -49,7 +49,6 @@ Intune은 사용자가 회사 데이터에 액세스하고, 장치를 등록하�
 - [장치 이름 바꾸기](/intune-user-help/rename-your-device-cpapp)
 - 장치에 [앱 설치](/intune-user-help/install-apps-cpapp-windows)
 - 설정 앱 또는 회사 포털 앱에서 [수동으로 장치 동기화](/intune-user-help/sync-your-device-manually-windows)
-
 
 ## <a name="compliance-policy"></a>준수 정책
 **[장치 준수 정책 만들기](compliance-policy-create-windows.md)**
@@ -85,11 +84,11 @@ Intune에는 IT 관리자가 장치에서 로컬로 또는 Azure Portal에서 In
 
 Windows Holographic for Business를 실행하는 장치를 사용할 때 다음 작업을 사용할 수 있습니다. 
 
-- **[초기화](devices-wipe.md#wipe)**: **초기화** 작업은 Intune에서 장치를 제거하고 공장 기본 설정으로 복원합니다. 이 작업은 새 사용자에게 장치를 제공하기 전에 또는 장치를 분실하거나 도난당했을 때 사용합니다.
+- **[초기화](devices-wipe.md#wipe)**: **초기화** 작업은 Intune에서 디바이스를 제거하고 공장 기본값으로 복원합니다. 이 작업은 새 사용자에게 장치를 제공하기 전에 또는 장치를 분실하거나 도난당했을 때 사용합니다.
 
-- **[사용 중지](devices-wipe.md#retire)**: **사용 중지** 작업은 Intune에서 장치를 제거합니다. 관리되는 앱 데이터, 설정 및 Intune에서 할당된 이메일 프로필도 제거합니다. 사용자의 개인 데이터는 장치에 유지됩니다.
+- **[사용 중지](devices-wipe.md#retire)**: **사용 중지** 작업은 Intune에서 디바이스를 제거합니다. 관리되는 앱 데이터, 설정 및 Intune에서 할당된 이메일 프로필도 제거합니다. 사용자의 개인 데이터는 장치에 유지됩니다.
 
-- **[장치를 동기화하여 최신 정책과 작업 가져오기](device-sync.md)**: **동기화** 작업은 Intune을 사용하여 장치를 즉시 체크 인합니다. 장치가 체크 인하면 장치에 할당된 보류 중인 작업 또는 정책을 즉시 받게 됩니다. 이 기능을 통해 예약된 다음 체크 인을 기다리지 않고 할당한 정책의 유효성을 검사하고 문제를 해결할 수 있습니다.
+- **[디바이스를 동기화하여 최신 정책과 작업 가져오기](device-sync.md)**: **동기화** 작업은 강제로 디바이스가 Intune을 사용하여 즉시 체크 인하도록 합니다. 장치가 체크 인하면 장치에 할당된 보류 중인 작업 또는 정책을 즉시 받게 됩니다. 이 기능을 통해 예약된 다음 체크 인을 기다리지 않고 할당한 정책의 유효성을 검사하고 문제를 해결할 수 있습니다.
 
 **[Microsoft Intune 장치 관리란?](device-management.md)** 은 Azure Portal을 사용하여 장치를 관리하는 방법에 대한 유용한 리소스입니다. 
 

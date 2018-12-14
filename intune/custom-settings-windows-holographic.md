@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure의 Windows Holographic for Business 장치에 대한 사용자 지정 설정 | Microsoft Docs
+title: 사용자 지정 설정 - Windows Holographic for Business 디바이스 - Microsoft Intune
 description: Microsoft Hololens를 비롯하여 Microsoft Intune에서 Windows Holographic for Business를 실행하는 장치의 OMA-URI 설정을 사용하려면 사용자 지정 프로필을 추가하거나 만듭니다. AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates 및 ApplicationLaunchRestrictions 정책 CSP(구성 서비스 공급자) 설정을 설정할 수 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 2c4e6041f00ad55b18f8b20996da8002f5ce0247
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185579"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032200"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune에서 Windows Holographic for Business 장치에 대한 사용자 지정 설정 사용
 
@@ -39,8 +39,8 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
-    - **이름**: `hololens custom profile` 등의 프로필의 이름을 입력합니다.
-    - **설명**: 설정에 대한 설명을 입력합니다.
+    - **이름**: `hololens custom profile`과 같은 프로필의 이름을 입력합니다.
+    - **설명**: 프로필에 대한 설명을 입력합니다.
     - **플랫폼**: **Windows 10 이상**을 선택합니다.
     - **프로필 유형**: **사용자 지정**을 선택합니다.
 
@@ -48,7 +48,7 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 
     - **이름**: 설정 목록에서 쉽게 식별할 수 있도록 OMA-URI 설정에 대한 고유한 이름을 입력합니다.
     - **설명**: 설정에 대한 개요와 기타 중요한 모든 세부 정보를 제공하는 설명을 입력합니다.
-    - **OMA-URI**(대/소문자 구분): 설정으로 사용할 OMA-URI를 입력합니다.
+    - **OMA-URI**(대/소문자 구분): 설정으로 사용하려는 OMA-URI를 입력합니다.
     - **데이터 형식**: 이 OMA URI 설정에 사용할 데이터 형식을 선택합니다. 옵션은 다음과 같습니다.
 
         - 문자열

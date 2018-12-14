@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune으로 모바일 응용 프로그램 관리용 앱을 준비하는 방법 결정
+title: Microsoft Intune을 사용하여 모바일 애플리케이션 관리용 앱 준비
 description: 이 항목의 정보는 LOB(기간 업무) 앱이 모바일 앱 관리 정책을 사용하도록 하기 위해 앱 줄 바꿈 도구 및 앱 SDK를 사용해야 하는 경우를 결정하는 데 도움이 됩니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 8841354b268f70634a61040fb06ed857120e9cfc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181975"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112428"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>앱 보호 정책에 대해 LOB(기간 업무) 앱 준비
 
@@ -35,7 +35,7 @@ Intune 앱 래핑 도구 또는 Intune 앱 SDK를 사용하여 앱에서 앱 보
 
 앱 래핑 도구는 Apple 앱 스토어 또는 Google Play 스토어에서 앱을 지원하지 **않습니다**. 개발자 통합이 필요한 특정 기능을 지원하지도 않습니다(다음 기능 비교 표 참조).
 
-Intune에 등록되지 않은 장치의 앱 보호 정책에 대한 앱 래핑 도구에 대한 자세한 내용은 [Microsoft Intune에 등록되지 않은 장치의 기간 업무 앱 및 데이터 보호](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)를 참조하세요.
+Intune에 등록되지 않은 장치의 앱 보호 정책에 대한 앱 래핑 도구에 대한 자세한 내용은 [Microsoft Intune에 등록되지 않은 장치의 기간 업무 앱 및 데이터 보호](apps-add.md)를 참조하세요.
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>앱 래핑 도구를 사용하는 이유
 * 앱에 기본 제공 데이터 보호 기능이 없습니다.
@@ -117,4 +117,4 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 
   - [Android 앱 래핑 도구](app-wrapper-prepare-android.md)</br>
   - [iOS 앱 래핑 도구](app-wrapper-prepare-ios.md)</br>
-  - [SDK를 사용하여 모바일 응용 프로그램 관리에 앱을 사용하도록 설정](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+  - [SDK를 사용하여 모바일 응용 프로그램 관리에 앱을 사용하도록 설정](app-sdk.md)

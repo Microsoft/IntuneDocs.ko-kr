@@ -1,12 +1,12 @@
 ---
-title: 정책
+title: 정책 엔터티에 대한 참조
 titlesuffix: Microsoft Intune
 description: Intune 데이터 웨어하우스 API에서 엔터티 컬렉션의 정책 범주에 대한 항목을 참조하세요.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 046dbe79dbaaee7de97fc83b80c40d5bf902c931
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 9fb05991b3e289d4a24cc2f3a5b2c398c12b1a15
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183505"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032438"
 ---
 # <a name="reference-for-policy-entities"></a>정책 엔터티에 대한 참조
 

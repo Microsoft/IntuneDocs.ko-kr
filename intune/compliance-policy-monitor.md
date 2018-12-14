@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f835f2bd2802454bbcdb27251524dfa4d2400f1a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178381"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977306"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 장치 준수 정책 모니터링
 
@@ -56,25 +56,28 @@ ms.locfileid: "52178381"
 
 ### <a name="device-compliance-status-report"></a>장치 준수 상태 보고서
 
-차트에서는 Intune에 등록된 모든 장치에 대한 준수 상태를 보여줍니다. 장치 준수 상태는 2개의 데이터베이스, 즉 Intune 및 Azure Active Directory에 보관됩니다. 
+차트에서는 Intune에 등록된 모든 장치에 대한 준수 상태를 보여줍니다. 디바이스 준수 상태는 2개의 데이터베이스, 즉 Intune 및 Azure Active Directory에 보관됩니다. 
+
+> [!IMPORTANT]
+> Intune은 디바이스의 모든 규정 준수 평가에 대한 디바이스 체크 인 일정을 따릅니다. [디바이스 체크 인 일정에 대해 자세히 알아봅니다](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 다양한 장치 준수 정책 상태의 설명:
 
-- **준수**: 하나 이상의 장치 준수 정책 설정이 장치에서 적용되었습니다.
+- **준수**: 하나 이상의 디바이스 준수 정책 설정이 디바이스에서 적용되었습니다.
 
-- **유예 기간:** 장치에 하나 이상의 장치 준수 정책 설정이 대상으로 지정되었습니다. 그러나 사용자는 정책을 아직 적용하지 않았습니다. 즉 장치는 규정을 준수하지 않지만 관리자가 정의한 유예 기간에 있습니다.
+- **유예 기간:** 디바이스에 하나 이상의 디바이스 준수 정책 설정이 대상으로 지정되었습니다. 그러나 사용자는 정책을 아직 적용하지 않았습니다. 즉 장치는 규정을 준수하지 않지만 관리자가 정의한 유예 기간에 있습니다.
 
   - [비규격 장치에 대한 작업](actions-for-noncompliance.md)에 대해 자세히 알아보세요.
 
-- **평가되지 않음**: 새로 등록된 장치에 대한 초기 상태입니다. 또는 준수 정책이 할당되지 않고 준수 여부를 확인하는 트리거가 없는 장치입니다.
+- **평가되지 않음**: 새로 등록된 디바이스에 대한 초기 상태입니다. 또는 준수 정책이 할당되지 않고 준수 여부를 확인하는 트리거가 없는 장치입니다.
 
-- **비준수**: 하나 이상의 장치 준수 정책 설정을 장치에서 적용하지 못했습니다. 또는 사용자가 정책을 준수하지 않았습니다.
+- **비준수:** 하나 이상의 디바이스 준수 정책 설정을 디바이스에서 적용하지 못했습니다. 또는 사용자가 정책을 준수하지 않았습니다.
 
-- **Device not synced**(장치 동기화 안 됨): 다음 중 하나의 이유로 인해 장치에서 장치 준수 정책 상태를 보고하지 못했습니다.
+- **디바이스 동기화 안 됨**: 다음 중 하나의 이유로 인해 디바이스에서 디바이스 준수 정책 상태를 보고하지 못했습니다.
 
-  - **알 수 없음**: 장치가 오프라인이거나 다른 이유로 인해 Intune 또는 Azure AD와 통신하지 못했습니다.
+  - **알 수 없음**: 디바이스가 오프라인이거나 다른 이유로 인해 Intune 또는 Azure AD와 통신하지 못했습니다.
 
-  - **오류**: 장치가 Intune 및 Azure AD와 통신하지 못했으며 이유가 포함된 오류 메시지를 받았습니다.
+  - **오류**: 디바이스가 Intune 및 Azure AD와 통신하지 못했으며 이유가 포함된 오류 메시지를 받았습니다.
 
 > [!IMPORTANT]
 > Intune에 등록되었지만 장치 준수 정책의 대상으로 지정되지 않은 장치는 이 보고서에서 **준수** 버킷 아래에 포함됩니다.
@@ -154,9 +157,9 @@ ms.locfileid: "52178381"
 
     - 성공: 정책이 적용됩니다.
     - 오류: 정책을 적용하지 못했습니다. 메시지는 일반적으로 설명으로 연결되는 오류 코드와 함께 표시됩니다. 
-    - 충돌: 두 설정이 같은 장치에 적용되고, Intune에서 충돌을 해결할 수 없습니다. 관리자가 검토해야 합니다.
-    - 보류 중: 아직 정책을 받기 위해 장치가 Intune을 사용하여 체크 인되지 않았습니다. 
-    - 적용할 수 없음: 장치가 정책을 받을 수 없습니다. 예를 들어 정책이 iOS 11.1에 관련된 설정을 업데이트하지만, 장치에서 iOS 10이 사용되고 있습니다. 
+    - 충돌: 두 설정이 같은 디바이스에 적용되고, Intune에서 충돌을 해결할 수 없습니다. 관리자가 검토해야 합니다.
+    - 보류 중: 아직 정책을 받기 위해 디바이스가 Intune을 사용하여 체크 인되지 않았습니다. 
+    - 해당 없음: 디바이스가 치가 정책을 받을 수 없습니다. 예를 들어 정책이 iOS 11.1에 관련된 설정을 업데이트하지만, 장치에서 iOS 10이 사용되고 있습니다. 
 
 3. 이 정책을 사용하여 장치의 세부 정보를 확인하려면 상태 중 하나를 선택합니다. 예를 들어 **성공**을 선택합니다. 다음 창에서 장치 이름 및 배포 상태를 포함한 특정 장치 세부 정보가 나열됩니다.
 

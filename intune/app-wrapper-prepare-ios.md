@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182111"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112877"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182111"
 
 iOS용 Microsoft Intune 앱 래핑 도구를 사용하면 앱 자체의 코드를 변경하지 않고 사내 iOS 앱에 대한 Intune 앱 보호 정책을 사용하도록 설정할 수 있습니다.
 
-이 도구는 앱 주위에 '래퍼'를 만드는 Mac OS 명령줄 응용 프로그램입니다. 앱이 처리된 후 해당 앱에 [앱 보호 정책](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)을 배포하여 앱의 기능을 변경할 수 있습니다.
+이 도구는 앱 주위에 '래퍼'를 만드는 Mac OS 명령줄 응용 프로그램입니다. 앱이 처리된 후 해당 앱에 [앱 보호 정책](app-protection-policies.md)을 배포하여 앱의 기능을 변경할 수 있습니다.
 
 이 도구를 다운로드하려면 GitHub에서 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)(iOS용 Microsoft Intune 앱 래핑 도구)를 참조하세요.
 
@@ -439,5 +439,5 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 
 ### <a name="see-also"></a>참고 항목
 - [Microsoft Intune으로 모바일 응용 프로그램 관리용 앱을 준비하는 방법 결정](apps-prepare-mobile-application-management.md)</br>
-- [Microsoft Intune 정책을 사용하여 장치의 설정 및 기능 관리](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [SDK를 사용하여 모바일 응용 프로그램 관리에 앱을 사용하도록 설정](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Microsoft Intune 정책을 사용하여 장치의 설정 및 기능 관리](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [SDK를 사용하여 모바일 응용 프로그램 관리에 앱을 사용하도록 설정](app-sdk.md)

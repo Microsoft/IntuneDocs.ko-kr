@@ -1,11 +1,12 @@
 ---
 title: iOS 장치를 업데이트해야 함 | Microsoft 문서
-description: ''
+titlesuffix: Microsoft Intune
+description: iOS 디바이스에 필요한 최소 운영 체제 버전이 없습니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 24064cb3cf02f0ac5c0ef94107d047435dec3ba0
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: 685f3a95e525f64ead427c7d2b32a62c7f85b59e
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146925"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031918"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS 장치에 필요한 최소 운영 체제 버전이 없는 경우
 

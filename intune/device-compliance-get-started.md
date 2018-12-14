@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186004"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977357"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune에서 장치 준수 정책 시작
 
@@ -40,6 +40,9 @@ ms.locfileid: "52186004"
 - 장치가 Mobile Threat Defense 수준 이하여야 함
 
 장치 준수 정책을 사용하여 장치에서 준수 상태를 모니터링할 수도 있습니다.
+
+> [!IMPORTANT]
+> Intune은 디바이스의 모든 규정 준수 평가에 대한 디바이스 체크 인 일정을 따릅니다. [디바이스 체크 인 일정에 대해 자세히 알아봅니다](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 <!---### Actions for noncompliance
 
@@ -156,21 +159,21 @@ Remember that you need to implement conditional access policies in addition to c
 
 일단의 기본 제공 **준수 정책 설정**(Azure Portal > 장치 준수)은 Intune에 등록된 모든 장치에서 평가됩니다. 확인할 수 있습니다.
 
-- **준수 정책 없이 장치를 다음으로 표시**: 이 속성에는 두 개의 값이 있습니다.
+- **준수 정책이 할당되지 않은 디바이스를 다음으로 표시**: 이 속성에는 두 개의 값이 있습니다.
 
   - **준수**: 보안 기능 해제
   - **비준수**(기본값): 보안 기능 켜기
 
   장치에 할당된 준수 정책이 없으면 이 장치는 준수하지 않음으로 간주됩니다. 기본적으로 장치는 **준수**로 표시됩니다. 조건부 액세스를 사용하는 경우 **비준수**로 설정을 변경하는 것이 좋습니다. 정책이 할당되지 않아 최종 사용자가 준수하지 않으면, 회사 포털에 `No compliance policies have been assigned`가 나열합니다.
 
-- **향상된 탈옥 검색**: 이 설정을 사용하도록 지정하면 iOS 장치에서 Intune으로 더 자주 체크 인할 수 있습니다. 이 속성을 사용하면 장치의 위치 서비스를 사용하고 배터리 사용에 영향을 줍니다. 사용자 위치 데이터는 Intune에서 저장되지 않습니다.
+- **향상된 탈옥 검색**: 이 설정을 사용하도록 지정하면 iOS 디바이스에서 Intune으로 더 자주 체크 인할 수 있습니다. 이 속성을 사용하면 장치의 위치 서비스를 사용하고 배터리 사용에 영향을 줍니다. 사용자 위치 데이터는 Intune에서 저장되지 않습니다.
 
   이 설정을 사용하면 장치를 다음과 같이 설정해야 합니다.
   - OS 수준에서 위치 서비스 사용
   - 회사 포털에서 위치 서비스를 사용하도록 허용
   - 최소 72시간에 한 번 Intune에 해당 탈옥 상태를 평가 및 보고합니다. 그렇지 않은 경우 장치가 준수하지 않음으로 표시됩니다. 평가는 회사 포털 앱을 열거나 장치를 500미터 이상 물리적으로 이동하면 트리거됩니다.
 
-- **준수 상태 유효 기간(일)**: 장치가 모든 수신된 준수 정책에 대한 상태를 보고하는 시간 간격을 입력합니다. 이 기간 내에 상태를 반환하지 않는 장치는 비준수로 처리됩니다. 기본값은 30일입니다.
+- **준수 상태 유효 기간(일)**: 디바이스가 수신된 모든 준수 정책의 상태를 보고하는 기간을 입력합니다. 이 기간 내에 상태를 반환하지 않는 장치는 비준수로 처리됩니다. 기본값은 30일입니다.
 
 모든 장치에는 **기본 제공 장치 준수 정책**(Azure Portal > 장치 준수 > 정책 준수)이 있습니다. 이 기본 제공 정책을 사용하여 이러한 설정을 모니터링합니다.
 

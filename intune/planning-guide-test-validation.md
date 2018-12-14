@@ -15,12 +15,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bbcf6e21b9f5dd0474461e88ff54d6dde97590aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179935"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112462"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 테스트 및 유효성 검사
 
@@ -32,15 +32,15 @@ Microsoft Intune 구현을 테스트할 때 기능 유효성 검사 및 사용 �
 
 다음을 문서화하는 것이 좋습니다.
 
--   **테스트 기준:** 비교 측정할 벤치마크를 확인합니다.
+-   **테스트 기준**: 비교 측정할 벤치마크를 확인합니다.
 
--   **설계 구성 요소:** 하나 이상의 테스트 기준에 존재해야 합니다.
+-   **설계 구성 요소**: 하나 이상의 테스트 기준에 존재해야 합니다.
 
 요구 사항 또는 시나리오에 맞는 설계 구성 요소가 하나 이상의 테스트 기준에 존재하지 않는 경우 설계 구성 요소가 필요한지 여부를 고려해야 합니다. 또한 다음 항목이 있는지 확인해야 합니다.
 
 -   **계정:** 모든 사용 사례 시나리오를 테스트하려면 EMS 및 Office 365에 대한 라이선스가 있는 테스트 계정이어야 합니다.
 
--   **장치:** 출하 시 기본값으로 초기화하거나 다시 설정할 수 있는 테스트 장치입니다.
+-   **디바이스:** 공장 기본값으로 초기화하거나 다시 설정할 수 있는 테스트 디바이스입니다.
 
 -   **통합 구성 요소:** 필요한 경우 모든 통합 구성 요소(Certificate Connector, Hosted Exchange용 Intune Service To Service Connector 및 Intune On-Premises Exchange Connector)를 설치하고 구성해야 합니다.
 
@@ -52,7 +52,7 @@ Microsoft Intune 구현을 테스트할 때 기능 유효성 검사 및 사용 �
 
 -   [Microsoft Intune에 대한 관리 지원을 받는 방법](get-support.md)
 
--   [Microsoft Intune의 담당자 전화 지원](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [Microsoft Intune의 담당자 전화 지원](get-support.md)
 
 ## <a name="functional-validation-testing"></a>기능 유효성 검사 테스트
 
