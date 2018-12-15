@@ -1,4 +1,4 @@
-﻿---
+---
 title: 빠른 시작 - Microsoft Intune에서 Windows 10 Desktop 디바이스 등록
 description: 빠른 시작 - 회사 포털을 사용하여 Microsoft Intune에서 Windows 10 Desktop 디바이스를 Microsoft Intune에 등록합니다.
 services: microsoft-intune
@@ -24,7 +24,7 @@ ms.locfileid: "52977340"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>빠른 시작: Windows 10 장치 등록
 
-이 빠른 시작에서는 먼저 Intune 사용자의 역할을 수행하고 Microsoft Intune에 Windows 10 디바이스를 등록한 후 Intune으로 돌아가 등록된 디바이스를 확인합니다.
+이 빠른 시작에서는 먼저 Intune 사용자의 역할을 수행하고 Microsoft Intune에 Windows 10 디바이스를 등록합니다. 그런 다음, Intune으로 돌아가 등록된 디바이스를 확인합니다.
 
 Microsoft Intune에 장치를 등록하면 Windows 10 장치를 사용하여 메일, 파일 및 기타 리소스를 포함한 조직의 보안 데이터에 액세스할 수 있습니다. Windows 10 데스크톱 및 Windows 10 모바일 장치의 경우도 마찬가지입니다. 장치를 등록하면 사용자와 조직 모두 이러한 액세스를 보호하고 작업 데이터를 개인 데이터와 별도로 보호할 수 있습니다.
 
@@ -79,7 +79,7 @@ Windows 10 Desktop을 등록하기 전에 설치한 Windows 버전을 확인해�
 
     회사 또는 학교에서 내 장치를 등록하고 있다는 메시지가 표시됩니다.
 
-4. **모두 설정되었습니다.** 화면에서 **완료**를 선택하여 작업을 완료합니다.
+4. **모두 설정되었습니다.** 화면에서 **완료**를 선택합니다. 작업을 완료했습니다.
 
 5. 이제 추가된 계정이 Windows Desktop의 **회사 또는 학교 액세스** 설정의 일부로 표시됩니다.
 
