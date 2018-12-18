@@ -1,6 +1,7 @@
 ---
-title: 초기 버전
-description: ''
+title: 초기 버전 | Microsoft Intune
+titlesuffix: ''
+description: Microsoft Intune 초기 버전
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,13 +16,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: d00c367cdcd0b8172d64c3ebbcd0dec2165407c9
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829133"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112836"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune 초기 버전 - 2018년 12월
 
@@ -53,15 +54,23 @@ Windows 10 이상 디바이스에서는 contoso.com과 같은 도메인 확인�
 
 [Windows 10 VPN 설정](vpn-settings-windows-10.md)에서는 현재 설정 목록을 설명합니다. 
 
+### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>S/MIME를 사용하여 사용자의 여러 장치를 암호화 및 서명 <!-- 1333642 eeready -->
+가져온 새 인증서 프로필을 사용하는 S/MIME 메일 암호화가 지원됩니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼 선택 > **PKCS 가져온 인증서** 프로필 유형). Intune에서 PFX 형식의 인증서를 가져올 수 있습니다. 그런 다음, Intune은 단일 사용자에 의해 등록된 여러 장치에 이러한 동일한 인증서를 제공할 수 있습니다. 다음도 포함되어 있습니다.
+
+- 네이티브 iOS 이메일 프로필은 PFX 형식의 가져온 인증서를 사용하는 S/MIME 암호화 활성화를 지원합니다.
+- Windows Phone 10 장치의 네이티브 메일 앱은 S/MIME 인증서를 자동으로 사용합니다.
+- 여러 플랫폼에서 개인 인증서를 제공할 수 있습니다. 하지만 모든 이메일 앱이 S/MIME를 지원하지는 않습니다.
+- 다른 플랫폼에서 S/MIME를 활성화하도록 메일 앱을 수동으로 구성해야 할 수 있습니다.  
+- S/MIME 암호화를 지원하는 이메일 앱은 해당 게시자의 인증서 저장소에서 읽기와 같은 MDM에서 지원할 수 없는 방식으로 S/MIME 이메일 암호화에 대한 인증서 가져오기를 처리할 수 있습니다.
+
+지원 됩니다. Windows, Windows Phone 10, macOS, iOS, Android
+
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Windows 회사 포털 앱의 도움말 및 지원 페이지 <!-- 1488939 -->
 새 페이지가 Windows 회사 포털 앱에 추가됩니다. 도움말 및 지원 페이지에서는 헬프 데스크 연락처 정보를 제공합니다. 또한 최종 사용자는 문제가 있는 경우 회사 포털 로그를 보낼 수 있습니다. 이 페이지에서는 최종 사용자를 지원하기 위한 FAQ 섹션도 제공합니다.
 
 ### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Windows 10 디바이스의 VPN 프로필에 신뢰할 수 있는 네트워크 검색 사용 <!-- 1500165 -->
 신뢰할 수 있는 네트워크 검색을 사용하는 경우 사용자가 이미 신뢰할 수 있는 네트워크에 있을 때 VPN 프로필에서 자동으로 VPN에 연결되지 않도록 할 수 있습니다. DNS 접미사를 추가하여 Windows 10 이상을 실행하는 디바이스에서 신뢰할 수 있는 네트워크 검색을 사용하도록 설정할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 프로필의 **Windows 10 이상** > 프로필 유형의 **VPN**).
 [Windows 10 VPN 설정](vpn-settings-windows-10.md)에는 현재 VPN 설정이 나열됩니다.
-
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>Android 회사 소유의 완전 관리형 디바이스 지원 <!-- 574342 -->
-Intune은 디바이스가 IT 부서에서 긴밀하게 관리되고 개별 사용자와 관련된 회사 소유 “디바이스 소유자” 시나리오인 완전 관리형 Android 디바이스를 지원합니다. 이를 통해 관리자는 전체 디바이스를 관리하고, 확장된 범위의 정책 제어를 회사 프로필에 사용할 수 없게 할 수 있고 사용자가 관리형 Google Play의 앱만 설치하도록 제한합니다. Android 완전 관리형 디바이스를 설정하려면 **디바이스 등록** > **Android 등록** > **회사 소유의 완전 관리형 사용자 디바이스**로 이동합니다.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune 앱 SDK는 256비트 암호화 키를 지원함 <!-- 1832174 -->
 iOS용 Intune 앱 SDK는 앱 보호 정책에서 암호화를 사용하도록 설정할 때 256비트 암호화 키를 사용합니다. SDK는 이전 SDK 버전을 사용하는 콘텐츠 및 앱과 호환성을 위해 128비트 키 지원을 계속 제공합니다.
@@ -99,11 +108,14 @@ Windows 10 업데이트 링의 경우 다음을 수행할 수 있습니다.
 [iOS 메일 구성 설정](email-settings-ios.md)에는 현재 설정이 나열됩니다.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>iOS DEP 디바이스에서 설정 도우미 화면 건너뛰기 <!-- 2687509 -->
-현재 건너뛸 수 있는 화면 외에도 사용자가 디바이스를 등록할 때 설정 도우미에서 표시음, 개인 정보, Android 마이그레이션, 홈 단추, iMessage 및 FaceTime, 온보딩, 마이그레이션 보기, 모양, 화면 시간, 소프트웨어 업데이트, SIM 설치 화면을 건너뛰도록 iOS DEP 디바이스를 설정할 수 있습니다.
+현재 건너뛸 수 있는 화면 외에도 사용자가 디바이스를 등록할 때 설정 도우미에서 다음 화면을 건너뛰도록 iOS DEP 디바이스를 설정할 수 있습니다. 표시음, 개인 정보, Android 마이그레이션, 홈 단추, iMessage 및 FaceTime, 온보딩, 마이그레이션 보기, 모양, 화면 시간, 소프트웨어 업데이트, SIM 설치.
 건너뛸 화면을 선택하려면 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** > 토큰 선택 > **프로필** > 프로필 선택 > **속성** > **설정 도우미 사용자 지정** > 건너뛸 화면의 **숨기기** 선택 > **확인**으로 이동합니다.
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>일부 BitLocker 설정은 Windows 10 Pro Edition을 지원함 <!-- 2727036 -->
 BitLocker를 포함하여 Windows 10 디바이스에서 Endpoint Protection 설정을 설정하는 구성 프로필을 만들 수 있습니다. 이를 통해 BitLocker 설정에 대한 Windows 10 Professional Edition 지원이 추가됩니다. 현재 Windows 10 에디션 설정을 보려면 [Windows 10용 Endpoint Protection 설정](endpoint-protection-windows-10.md#windows-encryption)을 참조하세요.
+Intune은 Android 제조업체, 모델 및 보안 패치 버전을 비롯한 추가 디바이스 보고 필드와 iOS 모델을 제공합니다. Intune에서 이러한 필드를 사용하려면 **클라이언트 앱** > **앱 보호 상태**를 선택하고 **앱 보호 보고서: iOS, Android**를 선택합니다. 또한 이러한 매개 변수를 사용하여 디바이스 제조업체(Android)의 **허용** 목록, 디바이스 모델(Android 및 iOS)의 **허용** 목록 및 최소 Android 보안 패치 버전 설정을 구성할 수 있습니다. 
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Intune 디바이스 보고 필드 <!-- 2748738 -->
 Intune은 Android 제조업체, 모델 및 보안 패치 버전을 비롯한 추가 디바이스 보고 필드와 iOS 모델을 제공합니다. Intune에서 이러한 필드를 사용하려면 **클라이언트 앱** > **앱 보호 상태**를 선택하고 **앱 보호 보고서: iOS, Android**를 선택합니다. 또한 이러한 매개 변수를 사용하여 디바이스 제조업체(Android)의 **허용** 목록, 디바이스 모델(Android 및 iOS)의 **허용** 목록 및 최소 Android 보안 패치 버전 설정을 구성할 수 있습니다. 
 
 ### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>공유 디바이스 구성은 Azure Portal에서 iOS 디바이스의 잠금 화면 메시지로 이름이 바뀜 <!-- 2809362 -->
@@ -136,7 +148,7 @@ iOS 디바이스용 구성 프로필을 만들 경우 **공유 디바이스 구�
 적용 대상: Windows 10 이상
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>관리 템플릿은 공개 미리 보기로 제공되고 자체 구성 프로필 로 이동됨 <!-- 3322847 -->
-Intune의 관리 템플릿(**디바이스 구성** > **관리 템플릿**)은 현재 비공개 미리 보기로 제공됩니다. 이 업데이트 포함: 관리 템플릿에는 Intune에서 관리할 수 있는 약 300개 설정을 포함됩니다. 이전에는 이러한 설정이 그룹 정책 편집기에만 있었습니다.
+Intune의 관리 템플릿(**디바이스 구성** > **관리 템플릿**)은 현재 비공개 미리 보기로 제공됩니다. 이 업데이트 포함: 관리 템플릿에는 Intune에서 관리할 수 있는 약 300개 설정이 포함됩니다. 이전에는 이러한 설정이 그룹 정책 편집기에만 있었습니다.
 관리 템플릿은 공개 미리 보기로 제공 됩니다. 관리 템플릿은 **디바이스 구성** > **관리 템플릿**에서 **디바이스 구성** > **프로필** >**프로필 만들기** > **플랫폼**에서 **Windows 10 이상** 선택, **프로필 유형**에서 **관리 템플릿** 선택으로 이동됩니다.
 보고는 사용하도록 설정됩니다. 적용 대상: Windows 10 이상
 
@@ -154,9 +166,9 @@ Intune은 Windows Defender ATP 및 Office 365 ATP를 비롯하여 보안에 중�
 
 ### <a name="tenant-health-dashboard----1124854---"></a>테넌트 상태 대시보드 <!-- 1124854 -->
 Intune의 테넌트 상태 페이지는 단일 위치에서 테넌트 상태 정보를 제공합니다. 페이지는 4개 섹션으로 구분됩니다.  
-- **테넌트 세부사항**: MDM 권한, 테넌트에 등록된 총 장치 수, 라이선스 수와 같은 정보를 포함합니다. 이 섹션은 테넌트에 대한 최신 서비스 릴리스도 제공합니다.
-- **커넥터 상태**: Apple VPP, 비즈니스용 Windows 스토어, 인증서 커넥터와 같은 구성된 커넥터에 대한 정보를 포함합니다. 현재 상태에 따라 커넥터는 ‘정상’, ‘경고’ 또는 ‘비정상’으로 플래그 지정됩니다.
-- **Intune 서비스 상태**: 테넌트에 대해 활성 인시던트 또는 중단 상태가 포함됩니다. 이 섹션의 정보는 Office Message Center([https://portal.office.com](https://portal.office.com))에서 직접 검색됩니다.
+- **테넌트 세부 정보**: MDM 권한, 테넌트에 등록된 총 디바이스 수, 라이선스 수와 같은 정보를 포함합니다. 이 섹션은 테넌트에 대한 최신 서비스 릴리스도 제공합니다.
+- **커넥터 상태**: Apple VPP, 비즈니스용 Microsoft Store, 인증서 커넥터와 같은 구성된 커넥터에 대한 정보를 포함합니다. 현재 상태에 따라 커넥터는 ‘정상’, ‘경고’ 또는 ‘비정상’으로 플래그 지정됩니다.
+- **Intune Service Health**: 테넌트에 대해 활성 인시던트 또는 중단 상태가 포함됩니다. 이 섹션의 정보는 Office Message Center([https://portal.office.com](https://portal.office.com))에서 직접 검색됩니다.
 - **Intune 뉴스**: 테넌트가 최신 Intune 기능을 수신했다는 알림과 같은 항목을 포함한 테넌트에 대한 활성 메시지가 포함됩니다. 이 섹션의 정보는 Office Message Center([https://portal.office.com](https://portal.office.com))에서 직접 검색됩니다.
 
 

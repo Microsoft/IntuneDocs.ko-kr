@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 12/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829184"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168031"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -35,14 +35,14 @@ Android용 Microsoft Intune 앱 SDK를 사용하면 네이티브 Android 앱에 
 Intune 앱 SDK는 다음 파일로 구성됩니다.
 
 * **Microsoft.Intune.MAM.SDK.aar**: 지원 라이브러리 JAR 파일을 제외한 SDK 구성 요소입니다.
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: Android v4 지원 라이브러리를 사용하는 앱 내에서 MAM을 사용하도록 설정하는 데 필요한 클래스입니다.
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: Android v7 지원 라이브러리를 사용하는 앱 내에서 MAM을 사용하도록 설정하는 데 필요한 클래스입니다.
+* **Microsoft.Intune.MAM.SDK.Supp또는t.v4.jar**: Android v4 지원 라이브러리를 사용하는 앱 내에서 MAM을 사용하도록 설정하는 데 필요한 클래스입니다.
+* **Microsoft.Intune.MAM.SDK.Supp또는t.v7.jar**: Android v7 지원 라이브러리를 사용하는 앱 내에서 MAM을 사용하도록 설정하는 데 필요한 클래스입니다.
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**: Android v17 지원 라이브러리를 사용하는 앱 내에서 MAM을 사용하도록 설정하는 데 필요한 클래스입니다. 
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**: `android.support.text` 패키지에서 Android 지원 라이브러리 클래스를 사용하는 앱 내에서 MAM을 사용하도록 설정하는 데 필요한 클래스입니다.
-* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: 이 jar 파일에는 최신 장치에만 있지만 MAMActivity의 메서드에 의해 참조되는 Android 시스템 클래스용 스텁이 포함됩니다. 새로운 장치는 이 스텁 클래스를 무시합니다. 이 jar 파일은 앱이 MAMActivity에서 파생되는 클래스에 리플렉션을 수행하는 경우에만 필요하며 대부분의 앱에는 포함할 필요가 없습니다. 이 jar 파일을 사용하는 경우 모든 클래스를 ProGuard에서 제외시키는 데 주의해야 합니다. 모두 "android" 루트 패키지 안에 있습니다.
-* **com.microsoft.intune.mam.build.jar**: [SDK 통합에 도움이 되는](#build-tooling) 도움이 되는 Gradle 플러그 인입니다.
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: 이 jar 파일에는 최신 디바이스에만 있지만 MAMActivity의 메서드에 의해 참조되는 Android 시스템 클래스용 스텁이 포함됩니다. 새로운 장치는 이 스텁 클래스를 무시합니다. 이 jar 파일은 앱이 MAMActivity에서 파생되는 클래스에 리플렉션을 수행하는 경우에만 필요하며 대부분의 앱에는 포함할 필요가 없습니다. 이 jar 파일을 사용하는 경우 모든 클래스를 ProGuard에서 제외시키는 데 주의해야 합니다. 모두 "android" 루트 패키지 안에 있습니다.
+* **com.microsoft.intune.mam.build.jar**: [SDK 통합에 도움이 되는](#build-tooling) Gradle 플러그 인입니다.
 * **CHANGELOG.txt**: 각 SDK 버전에서 변경된 내용의 레코드를 제공합니다.
-* **THIRDPARTYNOTICES.TXT**: 앱에 컴파일될 타사 및/또는 OSS 코드를 확인하는 특성 알림입니다.
+* **THIRDPARTYNOTICES.TXT**:  앱에 컴파일될 타사 및/또는 OSS 코드를 확인하는 특성 알림입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -486,7 +486,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>예: 장치 또는 클라우드 저장소에 저장이 허용되는지 확인
+### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>예: 디바이스 또는 클라우드 스토리지에 저장이 허용되는지 확인
 
 다수의 앱에서는 최종 사용자가 로컬에서나 클라우드 저장소 서비스에 파일을 저장할 수 있게 하는 기능을 구현합니다. Intune 앱 SDK에서는 IT 관리자가 조직에 적합하다고 판단하는 대로 정책 제한을 적용하여 데이터 누출을 방지할 수 있습니다.  IT 부서가 제어할 수 있는 정책 중 하나는 최종 사용자에게 관리되지 않는 “개인” 데이터 저장소에 저장하도록 허용하는지 여부입니다. 개인 데이터 저장소에는 로컬 위치, SD 카드, 타사 백업 서비스 등이 포함됩니다.
 
@@ -571,11 +571,11 @@ public interface MAMNotificationReceiver {
 
 다음과 같은 알림이 앱에 전송되고, 일부 알림의 경우 앱 참여가 필요할 수 있습니다.
 
-* **WIPE_USER_DATA**: 이 알림은 `MAMUserNotification` 클래스를 통해 전송됩니다. 이 알림이 수신되면 앱에서는 `MAMUserNotification`을 통해 전달된 "회사" ID와 연결된 모든 데이터를 삭제해야 합니다. 이 알림은 현재 APP-WE 서비스 등록 취소 과정에 전송됩니다. 사용자의 기본 이름은 일반적으로 등록 프로세스 동안 지정됩니다. 이 알림에 등록하는 경우 앱에서 모든 사용자 데이터가 삭제되었는지 확인해야 합니다. 이 알림에 등록하지 않는 경우는 기본 선별적 초기화 동작이 수행됩니다.
+* **WIPE_USER_DATA**: `MAMUserNotification` 클래스를 통해 전송되는 알림입니다. 이 알림이 수신되면 앱에서는 `MAMUserNotification`을 통해 전달된 "회사" ID와 연결된 모든 데이터를 삭제해야 합니다. 이 알림은 현재 APP-WE 서비스 등록 취소 과정에 전송됩니다. 사용자의 기본 이름은 일반적으로 등록 프로세스 동안 지정됩니다. 이 알림에 등록하는 경우 앱에서 모든 사용자 데이터가 삭제되었는지 확인해야 합니다. 이 알림에 등록하지 않는 경우는 기본 선별적 초기화 동작이 수행됩니다.
 
 * **WIPE_USER_AUXILIARY_DATA**: Intune 앱 SDK에서 기본 선택적 초기화 동작을 수행하며 초기화 발생 시 일부 보조 데이터도 제거되도록 하려면 앱에서 이 알림을 등록할 수 있습니다. 이 알림은 단일 ID 앱에는 사용할 수 없고 다중 ID 앱에만 보내집니다.
 
-* **REFRESH_POLICY**: 이 알림은 `MAMUserNotification`을 통해 전송됩니다. 이 알림이 수신되면 캐시된 Intune 정책은 무효화되고 업데이트되어야 합니다. 이 작업은 SDK에서 처리되지만 정책이 영구적인 방식으로 사용되는 경우에는 앱에서 처리해야 합니다.
+* **REFRESH_POLICY**: `MAMUserNotification`을 통해 전송되는 알림입니다. 이 알림이 수신되면 캐시된 Intune 정책은 무효화되고 업데이트되어야 합니다. 이 작업은 SDK에서 처리되지만 정책이 영구적인 방식으로 사용되는 경우에는 앱에서 처리해야 합니다.
 
 * **MANAGEMENT_REMOVED**: 이 알림은 `MAMUserNotification`을 통해 전송되며 앱이 비관리 상태가 될 것임을 알립니다. 비관리 상태가 되면 더 이상 암호화된 파일을 읽거나, MAMDataProtectionManager로 암호화된 데이터를 읽거나, 암호화된 클립보드와 상호 작용하거나, 관리 앱 에코시스템에 참여할 수 없습니다.
 
@@ -1616,9 +1616,8 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 4. 매니페스트에 다음 값을 입력하여 필요한 MAM 정책을 설정합니다. ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > 이렇게 하면 사용자는 장치에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
-
-> [!NOTE]
-    > 이것은 앱에서 유일한 MAM-WE 통합이어야 합니다. MAMEnrollmentManager API를 호출하려는 다른 시도가 있으면 충돌이 발생합니다.
+   >
+   > 이것은 앱에서 유일한 MAM-WE 통합이어야 합니다. MAMEnrollmentManager API를 호출하려는 다른 시도가 있으면 충돌이 발생합니다.
 
 3. 매니페스트에 다음 값을 입력하여 필요한 MAM 정책을 설정합니다.
 ```xml

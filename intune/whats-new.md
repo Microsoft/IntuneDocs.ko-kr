@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ed6a79142c2bbe3bd93b02c17e92f4f11f2583f3
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
+ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829201"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53200609"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,14 @@ ms.locfileid: "52829201"
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-december-10-2018"></a>2018년 12월 10일 주
+
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>macOS 디바이스에 필요한 Microsoft 자동 업데이트 버전 4.50 <!-- 3503442 -->
+회사 포털 및 기타 Office 애플리케이션에 대한 업데이트를 계속 받으려면 Intune에서 관리하는 macOS 디바이스는 Microsoft 자동 업데이트 4.5.0으로 업그레이드해야 합니다. 사용자가 해당 Office 앱에 이미 이 버전을 사용하고 있을 수 있습니다.
+
+### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Intune에는 macOS 10.12 이상이 필요함 <!-- 2827778 -->
+Intune에는 이제 macOS 버전 10.12 이상이 필요합니다. 이전 macOS 버전을 사용하는 디바이스는 Intune에 등록하는 데 회사 포털을 사용할 수 없습니다. 지원 및 새로운 기능을 받으려면 사용자는 해당 디바이스를 macOS 10.12 이상으로 업그레이드하고 회사 포털을 최신 버전으로 업그레이드해야 합니다.
 
 ## <a name="week-of-november-26-2018"></a>2018년 11월 26일 주
 
@@ -114,7 +122,7 @@ VPP(대량 구매 프로그램)를 사용하여 DEP 등록 중 회사 포털을 
 이제 Intune은 Apple School Manager 계정에 대한 macOS 디바이스에서 장비 등록 프로그램을 사용할 수 있도록 지원합니다.  자세한 내용은 [Apple School Manager 또는 장비 등록 프로그램을 통해 자동으로 macOS 디바이스 등록](device-enrollment-program-enroll-macos.md)을 참조하세요.
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>새 Intune 디바이스 구독 SKU <!--3312071-->
-엔터프라이즈 내 디바이스 관리 비용을 절감하기 위해 새 디바이스 기반 구독 SKU를 이제 사용할 수 있습니다. 이 Intune 디바이스 SKU는 월별로 디바이스당 사용이 허가됩니다. 가격은 라이선스 프로그램에 따라 다릅니다. 이 제품은 직접 채널, EA(기업 계약), Microsoft 제품 및 서비스 프로그램(MPSA), 개방형 및 CSP(Cloud Solution Provider)에서 사용할 수 있습니다.
+엔터프라이즈 내 디바이스 관리 비용을 절감하기 위해 새 디바이스 기반 구독 SKU를 이제 사용할 수 있습니다. 이 Intune 디바이스 SKU는 월별로 디바이스당 사용이 허가됩니다. 가격은 라이선스 프로그램에 따라 다릅니다. Office 관리 포털을 통해 바로 사용할 수 있으며 EA([기업계약](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2)), MPSA([Microsoft 제품 및 서비스 계약](https://www.microsoft.com/licensing/mpsa/default)), [Microsoft 오픈 계약](https://partner.microsoft.com/licensing/licensing-agreements) 및 CSP([클라우드 솔루션 공급자](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453))를 통해 사용할 수 있습니다.
 
 ### <a name="device-management"></a>장치 관리
 
@@ -187,9 +195,9 @@ Intune의 PowerShell 스크립트는 AAD 장치 보안 그룹을 대상으로 �
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Android, Android Enterprise에 대한 새 “필수 암호 유형” 기본 설정<!-- 2649963 -->
 새 준수 정책을 만들 때(**Intune** > **장치 준수** > **정책** > **정책 만들기** >  플랫폼에 대한 **Android** 또는 **Android 엔터프라이즈** > 시스템 보안) **필수 암호 유형**의 기본값은 다음과 같이 변경됩니다.
 
-장치 기본값에서 최소 숫자로
+시작: 디바이스 기본값 종료: 숫자 이상
 
-적용 대상: Android, Android 엔터프라이즈
+적용 대상: Android, Android Enterprise
 
 이러한 설정을 확인하려면 [Android](compliance-policy-create-android.md) 및 [Android 엔터프라이즈](compliance-policy-create-android-for-work.md)로 이동합니다.
 
@@ -213,15 +221,18 @@ Intune의 PowerShell 스크립트는 AAD 장치 보안 그룹을 대상으로 �
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>새 Azure Active Directory 사용 약관 기능 <!-- 2870393 -->
 Azure Active Directory에는 기존 Intune 사용 약관을 대신 사용할 수 있는 사용 약관 기능이 있습니다. Azure AD 사용 약관은 표시할 조건 및 표시 방법에 있어서 유연성을 높이고 보다 나은 현지화 지원을 제공하며, 사용 약관을 렌더링하는 방식을 보다 잘 제어하고 보고 기능을 개선할 수 있도록 지원합니다. Azure AD 사용 약관 기능을 사용하려면 Enterprise Mobility + Security E3 도구 모음의 일부이기도 한 Azure Active Directory Premium P1이 필요합니다. 자세한 내용은 [사용자 액세스 문서에 대한 회사의 사용 약관 관리](terms-and-conditions-create.md)를 참조하세요.
 
-### <a name="android-device-owner-mode-support---3188762--"></a>Android 장치 소유자 모드 지원 <!--3188762-->
+#### <a name="android-device-owner-mode-support---3188762--"></a>Android 장치 소유자 모드 지원 <!--3188762-->
 Samsung Knox 모바일 등록의 경우 이제 Intune에서 장치를 Android 장치 소유자 모드로 등록할 수 있습니다. WiFi 또는 셀룰러 네트워크의 사용자는 장치를 처음 켤 때 몇 번만 탭하면 등록할 수 있습니다. 자세한 내용은 [삼성 Knox 모바일 등록을 사용하여 Android 장치 자동 등록](android-samsung-knox-mobile-enroll.md)을 참조하세요.
 
 ### <a name="device-management"></a>장치 관리
+#### <a name="new-settings-for-software-updates------1907869--wnready---"></a>소프트웨어 업데이트를 위한 새 설정 <!-- 1907869  wnready -->  
+- 이제 일부 알림을 구성하여 최신 소프트웨어 업데이트 설치를 완료하는 데 필요한 다시 시작 알림을 최종 사용자에게 표시할 수 있습니다.   
+- 이제 BYOD 시나리오를 지원하는 작업 시간 외에 발생하는 다시 시작에 대한 다시 시작 경고 프롬프트를 구성할 수 있습니다.
 
-### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>관련자 ID로 Windows Autopilot에 등록된 장치 그룹화 <!-- 2075110 -->
+#### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>관련자 ID로 Windows Autopilot에 등록된 장치 그룹화 <!-- 2075110 -->
 Configuration Manager를 통해 [기존 장치에 대해 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)을 사용하여 등록할 때 이제 Intune에서 관련자 ID 기준으로 Windows 장치를 그룹화할 수 있도록 지원합니다. 관련자 ID는 Autopilot 구성 파일의 매개 변수입니다. Intune에서 자동으로 Azure AD 장치 특성인 [enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects)을 "OfflineAutopilotprofile-<correlator ID>"와 동일하게 설정합니다. 이것으로 오프라인 Autopilot 등록을 위한 enrollmentprofileName 특성을 통해 관련자 ID를 기반으로 임의의 Azure AD 동적 그룹을 만들 수 있습니다. 자세한 내용은 [기존 장치에 대한 Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)을 참조하세요.
 
-### <a name="intune-app-protection-policies----2984657---"></a>Intune 앱 보호 정책 <!-- 2984657 -->
+#### <a name="intune-app-protection-policies----2984657---"></a>Intune 앱 보호 정책 <!-- 2984657 -->
 Intune 앱 보호 정책을 사용하면 Microsoft Outlook 및 Microsoft Word와 같이 Intune으로 보호되는 앱에 대한 다양한 데이터 보호 설정을 구성할 수 있습니다. 개별 설정을 더 쉽게 찾을 수 있도록 [iOS](app-protection-policy-settings-ios.md) 및 [Android](app-protection-policy-settings-android.md) 모두에 대해 이러한 설정의 모양과 느낌을 변경했습니다. 정책 설정에는 다음 세 가지 범주가 있습니다.
 - **데이터 재배치** - 이 그룹에는 잘라내기, 복사, 붙여넣기 및 다른 이름으로 저장 제한과 같은 DLP(데이터 손실 방지) 컨트롤이 포함되어 있습니다. 이러한 설정은 사용자가 앱의 데이터와 상호 작용하는 방식을 결정합니다.
 - **액세스 요구 사항** - 이 그룹에는 최종 사용자가 작업 컨텍스트에 맞게 앱에 액세스하는 방법을 결정하는 앱별 PIN 옵션이 포함되어 있습니다.  
@@ -593,7 +604,7 @@ Android P 릴리스를 지원하도록 Android용 Intune 앱 SDK의 업데이트
 
 - **방화벽**: 사용자 환경에서 들어오는 연결을 처리하는 방법을 구성합니다.
 - **들어오는 연결**: DHCP, Bonjour 및 IPSec과 같은 기본 인터넷 서비스에 필요한 연결을 제외한 모든 들어오는 연결을 **차단**합니다. 이 설정은 모든 공유 서비스도 차단합니다.
-- **은폐 모드**: 장치에서 검색 요청에 응답하지 못하도록 은폐 모드를 **사용하도록 설정**합니다. 장치는 권한이 부여된 앱에 대해 들어오는 요청에 계속 응답합니다.
+- **은폐 모드**: 디바이스에서 검색 요청에 응답하지 못하도록 은폐 모드를 **사용하도록 설정**합니다. 장치는 권한이 부여된 앱에 대해 들어오는 요청에 계속 응답합니다.
 
 적용 대상: macOS 10.12 이상
 
@@ -689,8 +700,8 @@ Microsoft Intune 관리자는 VPP(대량 구매 프로그램)를 통해 구매�
 #### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>회사 포털 앱의 규정을 준수하지 않는 메시지 업데이트 <!-- 1832222 -->
 장치가 규정을 준수하지 않을 때 장치 사용자에게 표시되는 메시지를 수정했습니다. 메시지의 원래 의미는 그대로 유지되지만 더 친숙한 언어와 덜 전문적인 용어로 업데이트되었습니다. 또한 설명서 및 수정 단계에 대한 링크를 최신 상태로 유지하기 위해 새로 고쳤습니다.
 다음에서 볼 수 있는 전후 텍스트는 메시징 향상 기능의 한 예입니다.
-- **이전**: *이 장치는 IT 관리자가 요구한 특정 기간 내에 Intune 서비스에 연결되지 않았습니다 이 문제를 해결하려면 장치에서 회사 포털 앱을 열고 준수 확인 단추를 클릭합니다.*
-- **이후**: *장치가 얼마 동안 조직에 체크 인되지 않았습니다. 연결을 다시 설정하려면 장치에서 회사 포털 앱을 열고 장치의 설정 확인을 누릅니다.*
+- **이전**: 이 디바이스는 IT 관리자가 요구한 특정 기간 내에 Intune 서비스에 연결되지 않았습니다. *이 문제를 해결하려면 장치에서 회사 포털 앱을 열고 준수 확인 단추를 클릭합니다.*
+- **이후**: 디바이스가 얼마 동안 조직에 체크 인되지 않았습니다. *연결을 다시 설정하려면 장치에서 회사 포털 앱을 열고 장치의 설정 확인을 누릅니다.*
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>iOS VPP 앱 라이선스 해지 <!-- 1863797 -->
 관리자는 사용자 또는 장치에 할당된 iOS VPP 앱 라이선스를 회수할 수 있습니다. iOS VPP 앱을 제거하면 앱 라이선스를 회수할 수도 있습니다. 앱을 제거하기 전에 먼저 사용자 또는 장치가 앱의 대상인 그룹에서 제거되어야 합니다. 사용자 또는 장치를 그룹에서 제거하면 앱의 재설치를 방지할 수 있습니다. 이러한 단계가 완료되면 해당 앱 라이선스를 다른 사용자 또는 장치에 할당하도록 선택할 수 있습니다. iOS VPP 앱 라이선스에 대한 자세한 내용은 [Microsoft Intune에서 iOS 볼륨을 구매한 앱 관리](vpp-apps-ios.md)를 참조하세요.
@@ -721,7 +732,7 @@ Microsoft Intune 관리자는 VPP(대량 구매 프로그램)를 통해 구매�
 - 해당 없음. 다른 플랫폼의 장치 수를 보여 주는 이미지도 표시됩니다. 예를 들어 iOS 프로필을 보고 있는 경우 이 프로필에도 할당된 비iOS 장치의 수가 새 타일에 표시됩니다. [장치 준수 정책](compliance-policy-monitor.md#view-status-of-device-policies)을 참조합니다.
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>장치 준수에서 타사 바이러스 백신 솔루션 지원 <!-- 2325484 -->
-장치 준수 정책(**장치 준수** > **정책** > **정책 만들기** > **플랫폼: Windows 10 이상** > **설정** > **시스템 보안**)을 만들면 다음과 같은 새 **[장치 보안](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** 옵션이 제공됩니다. 
+디바이스 준수 정책(**디바이스 준수** > **정책** > **정책 만들기** > **플랫폼: Windows 10 이상** > **설정** > **시스템 보안**)을 만들면 다음과 같은 새 **[디바이스 보안](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** 옵션이 제공됩니다. 
 - **바이러스 백신**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 Windows Security Center에 등록된 바이러스 백신 솔루션을 사용하여 준수를 확인할 수 있습니다. 
 - **스파이웨어 방지**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 Windows Security Center에 등록된 스파이웨어 방지 솔루션을 사용하여 준수를 확인할 수 있습니다. 
 
@@ -830,7 +841,7 @@ AutoPilot 배포 프로필을 AutoPilot 장치를 포함하는 Azure AD 그룹�
 #### <a name="set-compliance-by-device-location----851881----"></a>장치 위치별 준수 설정 <!-- 851881 ! -->
 상황에 따라 회사 리소스에 대한 액세스를 네트워크 연결로 정의된 특정 위치로 제한할 수 있습니다. 이제 장치의 IP 주소를 기반으로 하여 준수 정책을 만들 수 있습니다(**장치 준수** > **위치**). IP 범위를 벗어난 장치는 회사 리소스에 액세스할 수 없습니다.
 
-적용 대상: 회사 포털 앱이 업데이트된 Android 장치 6.0 이상 
+적용 대상: 업데이트된 회사 포털 앱이 있는 Android 장치 6.0 이상
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Windows 10 Enterprise RS4 Autopilot 장치에서 소비자 앱과 경험을 방지<!-- 1621980 -->
 Windows 10 Enterprise RS4 AutoPilot 장치에서 소비자 앱 및 환경을 설치하지 못하도록 방지할 수 있습니다. 이 기능을 확인하려면 **Intune** > **장치 구성** > **프로필** > **프로필 만들기** > **플랫폼** = **Windows 10 이상** > **프로필 유형** = **장치 제한** > **구성** > **Windows 추천** > **소비자 기능**으로 차례로 이동합니다. 
@@ -844,7 +855,7 @@ Windows 10 컴퓨터에서 주요 문제가 발견되면 최신 기능 업데이
 #### <a name="management-name-field-will-be-editable----1875989---"></a>관리 이름 필드를 편집할 수 있음 <!-- 1875989 -->
 이제 장치의 **속성** 블레이드에서 관리 이름 필드를 편집할 수 있습니다. 이 필드를 편집하려면 **장치** > **모든 장치**를 선택하고, 장치를 선택한 다음, **속성**을 선택합니다. 관리 이름 필드를 사용하여 장치를 고유하게 식별할 수 있습니다.
 
-#### <a name="new-all-devices-filter-device-category----1878520---"></a>새로운 모든 장치 필터: 장치 범주 <!-- 1878520 -->
+#### <a name="new-all-devices-filter-device-category----1878520---"></a>새로운 모든 디바이스 필터: 디바이스 범주 <!-- 1878520 -->
 이제 장치 범주별로 **모든 장치** 목록을 필터링할 수 있습니다. 이렇게 하려면 **장치** > **모든 장치** > **필터** > **장치 범주**를 차례로 선택합니다.
 
 #### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices----1985547---"></a>TeamViewer를 사용하여 iOS 및 MacOS 장치의 화면 공유 <!-- 1985547 -->
@@ -855,7 +866,7 @@ Windows 10 컴퓨터에서 주요 문제가 발견되면 최신 기능 업데이
 
 Intune 온-프레미스 Exchange Connector를 사용하여 장치가 Intune에 등록했는지 여부 및 Intune 장치 준수 정책을 준수하는지 여부에 따라 온-프레미스 Exchange 사서함에 대한 장치 액세스를 관리할 수 있습니다. 커넥터를 설정하려면 Azure Portal에서 Intune 온-프레미스 Exchange Connector를 다운로드해 이를 Exchange 조직의 서버에 설치합니다. Microsoft Intune 대시보드에서 **온-프레미스 액세스**를 선택한 다음, **설치** 아래에서 **Exchange ActiveSync Connector**를 선택합니다. Exchange 온-프레미스 Connector를 다운로드하고 Exchange 조직의 서버에 설치합니다. 더 이상 테넌트당 하나의 Exchange Connector로 제한되지 않으므로 추가 Exchange 조직이 있는 경우 동일한 다운로드 절차를 따라 각 추가 Exchange 조직에 대해 커넥터를 설치할 수 있습니다.
 
-#### <a name="new-device-hardware-detail-ccid----2156657---"></a>새로운 장치 하드웨어 세부 정보: CCID <!-- 2156657 -->
+#### <a name="new-device-hardware-detail-ccid----2156657---"></a>새로운 디바이스 하드웨어 세부 정보: CCID <!-- 2156657 -->
 이제 각 장치에 대한 CCID(칩 카드 인터페이스 장치) 정보가 포함됩니다. 이를 확인하려면 **장치** > **모든 장치**를 차례로 선택하고, 장치를 선택하고, **하드웨어**를 선택한 다음, **네트워크 정보**> 아래에서 확인합니다.
 
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>모든 사용자 및 모든 장치를 범위 그룹으로 할당 <!-- 2196803 -->
@@ -944,7 +955,7 @@ Android Enterprise 작업 프로필 앱 할당을 위해 기본 제공된 **모�
 
 사용하도록 설정하면(구성하지 않음) 회사 연락처의 발신자 정보가 개인 프로필에 표시됩니다. 차단하면 회사 연락처의 발신자 번호가 개인 프로필에 표시되지 않습니다. 
 
-적용 대상: Android OS v6.0 이상의 Android 회사 프로필 장치
+적용 대상: Android OS v6.0 이상의 Android 회사 프로필 디바이스
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802-and-1804--"></a>엔드포인트 보호 설정에 추가된 새 Windows Defender Credential Guard 설정 <!--1102252 --><!--from 1802 and 1804-->
 
@@ -967,8 +978,8 @@ SCEP 인증서 프로필에서 사용자 지정 주체에 **OnPremisesSamAccount
 
 ####  <a name="block-camera-and-screen-captures-on-android-enterprise-work-profiles----1098977---"></a>Android Enterprise 작업 프로필에서 카메라 및 화면 캡처 차단 <!-- 1098977 -->
 두 개의 새로운 속성은 Android 장치에 대한 장치 제한을 구성할 때 차단하는 데 사용할 수 있습니다. 
-- 카메라: 장치에서 모든 카메라에 대한 액세스 차단
-- 화면 캡처: 화면 캡처를 차단하고, 안전하지 않은 비디오 출력의 디스플레이 장치에 콘텐츠가 표시되지 않도록 방지
+- 카메라: 디바이스에서 모든 카메라에 대한 액세스 차단
+- 화면 캡처: 화면 캡처를 차단하고, 안전하지 않은 동영상 출력의 디스플레이 디바이스에 콘텐츠가 표시되지 않도록 방지
 
 Android Enterprise 작업 프로필에 적용됩니다.
 
@@ -1123,7 +1134,7 @@ Exchange Online 및 조건부 액세스 환경을 간소화하기 위해 Exchang
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 
-Intune for Education 고객으로서, 두 개의 동적 Azure AD(Azure Active Directory) 그룹인 "모든 사용자" 및 "모든 디바이스"를 갖게 됩니다. 이러한 업데이트를 통해 해당 "모든 사용자" 및 "모든 디바이스" Azure AD 그룹은 Intune for Education 콘솔에 표시되지 않습니다. 그러나 여전히 Azure 콘솔의 Intune에서 볼 수 있으며 "모든 사용자(폐기됨, 사용하지 마세요)" 및 "모든 디바이스(폐기됨, 사용하지 마세요)"로 이름이 변경됩니다.
+Intune for Education 고객으로서, 두 개의 동적 Azure AD(Azure Active Directory) 그룹인 “모든 사용자” 및 “모든 디바이스”를 갖게 됩니다. 이러한 업데이트를 통해 해당 "모든 사용자" 및 "모든 디바이스" Azure AD 그룹은 Intune for Education 콘솔에 표시되지 않습니다. 그러나 여전히 Azure 콘솔의 Intune에서 볼 수 있으며 "모든 사용자(폐기됨, 사용하지 마세요)" 및 "모든 디바이스(폐기됨, 사용하지 마세요)"로 이름이 변경됩니다.
 
 업데이트가 출시되면 더 이상 Azure AD 그룹을 사용하여 Intune에서 앱과 설정을 할당할 필요가 없습니다. 대신, 이전처럼 "모든 사용자" 및 "모든 디바이스"로 계속 표시되는 Intune for Education 콘솔의 새 그룹으로 설정 할당을 이동할 예정입니다. 이러한 변경 내용은 백엔드에 있으므로 Intune for Education 콘솔에서 다른 점을 발견하지 못합니다. 최종 사용자 또는 등록된 디바이스에 미치는 영향은 없습니다. 
 
@@ -1162,6 +1173,8 @@ macOS 버전 10.12 이상은 현재 다음에서 지원됩니다.
  
 
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>변경 계획: 프리미어 고객을 위한 새로운 Intune 지원 환경 
+18/12/4 업데이트: MPO의 지원 요청 만들기가 12월 3일이 아닌 이후 날짜에도 비활성화되지 않도록 이 프로세스를 개선하고 있습니다. 이 변경 내용의 타임라인을 공유하기 위해 메시지 센터를 통해 알리고 이 게시물을 곧 업데이트할 것입니다.
+
 Microsoft 프리미어 고객은 현재 MPO(Microsoft 프리미어 온라인) 포털(premier.microsoft.com)과 Azure의 Intune(portal.azure.com)에서 Intune에대 한 지원 요청을 생성할 수 있습니다. 2018년 12월 3일부터 프리미어 지원 환경을 지속적으로 개선하기 위해 Azure의 Intune에서만 지원 요청을 생성할 수 있습니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
@@ -1181,7 +1194,7 @@ Microsoft 프리미어 고객은 현재 MPO(Microsoft 프리미어 온라인) �
 자세한 내용은 [Microsoft Intune 지원 팀 블로그 게시물](https://aka.ms/IntuneSupport_MPO_to_Azure)을 참조하세요.
 
 
-### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>작업 수행: Intune에서 Android 장치 제한 또는 규정 준수 정책 암호 설정을 업데이트하세요.
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>작업 수행: Intune에서 Android 디바이스 제한 또는 규정 준수 정책 암호 설정을 업데이트하세요.
 Intune은 Android 4.4 이상의 장치에 사용 가능한 암호 유형 "장치 기본값"을 제거합니다. Android 플랫폼과 장치 기본값의 차이로 인해 해당 정책은 종종 장치에서 선택 사항으로 처리됩니다. Android에서 이 설정을 적용할 때 혼동을 없애기 위해 향후 출시될 UI에서 이 설정을 제거할 예정입니다. 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 - 장치에 암호가 필요한 경우 "장치 기본값"을 사용하는 대신 Android 플랫폼 프로필을 편집하여 필요한 암호 유형을 명확히 밝히는 것이 좋습니다.

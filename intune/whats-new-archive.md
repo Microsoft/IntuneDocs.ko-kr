@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73be6facab5deb8a09462dc03c4683af3d34c027
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 290d60732130a82fb3daf7779142605ebc0bfeaa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829235"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53113006"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune의 새로운 기능 - 지난 달
 
@@ -108,7 +108,7 @@ Intune 관리자는 공유할 수 있도록 이러한 설정을 구성할 수 �
 
 #### <a name="configure-gatekeeper-to-control-macos-app-download-source----1690459---"></a>macOS 앱 다운로드 원본을 제어하려면 Gatekeeper 구성 <!-- 1690459 -->
 
-해당 앱을 어디서 다운로드할 수 있는지 제어하여 앱에서 장치를 보호하기 위해 Gatekeeper를 구성할 수 있습니다. **Mac 앱 스토어**, **Mac 앱 스토어 및 확인된 개발자** 또는 **원격** 등의 다운로드 원본을 구성할 수 있습니다. 사용자가 이러한 Gatekeeper 제어를 재정의하기 위해 Ctrl+클릭하여 앱을 설치할지 여부를 구성할 수 있습니다.
+해당 앱을 어디서 다운로드할 수 있는지 제어하여 앱에서 장치를 보호하기 위해 Gatekeeper를 구성할 수 있습니다. 다음 다운로드 소스를 구성할 수 있습니다. **Mac App Store**, **Mac App Store 및 확인된 개발자** 또는 **원격**. 사용자가 이러한 Gatekeeper 제어를 재정의하기 위해 Ctrl+클릭하여 앱을 설치할지 여부를 구성할 수 있습니다.
 
 이러한 설정은 **장치 구성** -> **프로필 만들기** -> **macOS** -> **끝점 보호** 아래에 있습니다.
 
@@ -148,7 +148,7 @@ Mac 응용 프로그램 방화벽을 구성할 수 있습니다. 포트당이 �
    이 모드를 사용하여 컴퓨터가 검색 요청에 응답하지 않게 합니다. 그래도 컴퓨터는 권한이 부여된 앱에 대해 들어오는 요청에는 응답합니다. ICMP(ping)와 같은 예기치 않은 요청은 무시합니다.
 
 #### <a name="disable-checks-on-device-restart---1805490---"></a>장치를 다시 시작에 대한 검사를 사용하지 않습니다.<!--1805490 -->
-Intune에서는 [소프트웨어 업데이트 관리]](windows-update-for-business-configure.md)를 제어합니다. 이 업데이트에서 <strong>검사 다시 시작</strong> 속성이 지원되고 기본적으로 설정됩니다. 장치를 다시 시작할 때 발생하는 일반적인 검사(예: 활성 사용자, 배터리 수준 등)를 건너뛰려면 <strong>건너뛰기</strong>를 선택합니다.
+Intune에서는 [소프트웨어 업데이트를 관리](windows-update-for-business-configure.md)하는 컨트롤을 제공합니다. 이 업데이트에서 <strong>검사 다시 시작</strong> 속성이 지원되고 기본적으로 설정됩니다. 장치를 다시 시작할 때 발생하는 일반적인 검사(예: 활성 사용자, 배터리 수준 등)를 건너뛰려면 <strong>건너뛰기</strong>를 선택합니다.
 
 #### <a name="new-windows-10-insider-preview-channels-available-for-deployment-rings----1746293---"></a>배포 링에 지원되는 새로운 Windows 10 Insider Preview 채널 <!-- 1746293 -->
 Windows 10 배포 링을 만들 때 다음 Windows 10 Insider Preview 채널 서비스를 선택하는 옵션이 있습니다.
@@ -161,7 +161,7 @@ Intune에서 배포 채널을 만드는 방법에 대한 자세한 내용은 [In
 
 ### <a name="new-windows-defender-exploit-guard-settings----1631893---"></a>새로운 Windows Defender Exploit Guard 설정 <!-- 1631893 -->
 
-이제 여섯 가지 새 <strong>공격 노출 영역 축소</strong> 설정 및 확장된 <strong>폴더 액세스 제어: 폴더 보호</strong> 기능이 제공됩니다. 이러한 설정은 Device configuration\Profiles\에서 찾을 수 있습니다.
+이제 여섯 가지 새 <strong>공격 노출 영역 축소</strong> 설정 및 확장된 <strong>폴더 액세스 제어: 폴더 보호</strong> 기능이 제공됩니다. 이러한 설정은 다음 위치에서 찾을 수 있습니다. 디바이스 구성\프로필\
 profile\Endpoint protection\Windows Defender Exploit Guard를 만드세요.
 
 #### <a name="attack-surface-reduction"></a>공격 노출 영역 축소
@@ -233,10 +233,10 @@ Windows 10 RS1 이상에서 장치가 실행 중인 경우 스토어에서 Windo
 #### <a name="new-additions-to-our-docs-about-user-privacy----1440709---"></a>사용자 개인 정보 보호에 대한 문서에 새로 추가된 기능 <!-- 1440709 -->
 최종 사용자에게 해당 데이터 및 개인 정보 보호에 대한 제어를 제공하려는 노력의 일환으로 회사 포털 앱에서 로컬로 저장된 데이터를 보고 제거하는 방법을 설명하는 문서에 업데이트를 게시했습니다. 다음에서 이러한 업데이트를 찾을 수 있습니다.
 
-- **Android**: [Intune에서 Android 장치를 제거하는 방법](/intune-user-help/unenroll-your-device-from-intune-android.md)
-- **사용자가 사용 약관을 거부한 경우 Android**: ["사용 약관" 거부한 경우 장치 관리를 제거합니다.](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
-- **iOS**: [Intune에서 iOS 장치 제거](/intune-user-help/unenroll-your-device-from-intune-ios.md)
-- **Windows**: [Intune에서 Windows 장치 제거](/intune-user-help/unenroll-your-device-from-intune-windows.md)
+- **Android**: [Intune에서 Android 디바이스를 제거하는 방법](/intune-user-help/unenroll-your-device-from-intune-android)
+- **사용자가 사용 약관을 거부한 경우 Android**: [“사용 약관”을 거부한 경우 디바이스 관리 제거](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **iOS**: [Intune에서 iOS 디바이스 제거](/intune-user-help/unenroll-your-device-from-intune-ios)
+- **Windows**: [Intune에서 Windows 디바이스 제거](/intune-user-help/unenroll-your-device-from-intune-windows)
 
 ## <a name="february-2018"></a>2018년 2월
 
@@ -294,8 +294,8 @@ Windows Defender의 상태를 이해하는 것은 Windows PC 관리의 핵심입
 
 #### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>장치 제안에 대한 새로운 개인 정보 설정 <!--1308926 -->
 장치에 [두 가지 새로운 개인 정보 설정](device-restrictions-windows-10.md#privacy)이 제공됩니다.
-- **사용자 작업 게시**: 작업 전환기에서 공유 경험 및 최근에 사용된 리소스 검색을 차단하려면 이 옵션을 **차단**으로 설정합니다.
-- **로컬 작업만**: 로컬 작업에 대해서만 작업 전환기에서 공유 경험 및 최근에 사용된 리소스 검색을 차단하려면 이 옵션을 **차단**으로 설정합니다.
+- **사용자 작업 게시**: 이 옵션을 **차단**으로 설정하면 작업 전환기에서 공유 경험 및 최근에 사용된 리소스 검색이 제한됩니다.
+- **로컬 작업만**: 이 옵션을 **차단**으로 설정하면 로컬 작업에 대해서만 작업 전환기에서 공유 경험 및 최근에 사용된 리소스 검색이 제한됩니다.
 
 #### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Microsoft Edge 브라우저에 대한 새 설정 <!--1469166 -->
 Microsoft Edge 브라우저가 있는 디바이스에 대해 이제 [두 가지 새로운 설정](device-restrictions-windows-10.md#microsoft-edge-browser)인 **자주 사용하는 파일 경로** 및 **즐겨찾기에 대한 변경**을 사용할 수 있습니다.
@@ -937,7 +937,7 @@ Intune에서 이제 [TeamViewer](https://www.teamviewer.com) 소프트웨어(별
 
 **빠른 검사**: 빠른 검사는 레지스트리 키 및 알려진 Windows 시작 폴더처럼 맬웨어 레지스터가 시작하는 위치를 검사합니다. 빠른 검사에는 평균 5분이 걸립니다. 파일을 열고 닫을 때와 사용자가 폴더를 탐색할 때마다 파일을 검사하는 **항상 실시간 보호** 설정과 결합된 빠른 검사는 시스템이나 커널에 있을 수 있는 맬웨어로부터 보호합니다. 검사가 완료되면 장치에 검사 결과가 표시됩니다. 
 
-**전체 검사**: 전체 검사는 맬웨어 위협이 발생한 장치에서 더 철저한 정리가 필요한 비활성 구성 요소가 있는지 확인할 때 유용할 수 있으며, 주문형 검사 실행에 유용합니다. 전체 검사는 실행하는 데 1시간이 걸릴 수 있습니다. 검사가 완료되면 장치에 검사 결과가 표시됩니다. 
+**전체 검사**: 전체 검사는 맬웨어 위협이 발생한 디바이스에서 더 철저한 정리가 필요한 비활성 구성 요소가 있는지 확인할 때 유용할 수 있으며, 주문형 검사 실행에 유용합니다. 전체 검사는 실행하는 데 1시간이 걸릴 수 있습니다. 검사가 완료되면 장치에 검사 결과가 표시됩니다. 
 
 **서명 업데이트**: 서명 업데이트 명령은 Windows Defender 바이러스 백신 맬웨어 정의 및 서명을 업데이트합니다. 이렇게 하면 Windows Defender 바이러스 백신에서 맬웨어를 검색하는 데 효과적입니다. 이 기능은 장치 인터넷 연결을 기다리는 Windows 10 장치 전용입니다. 
 
@@ -1039,7 +1039,7 @@ Android용 회사 포털 앱은 [Play 스토어에서 회사 포털](https://pla
 
 ### <a name="block-unsupported-samsung-knox-device-enrollment----1490695---"></a>지원되지 않는 Samsung Knox 장치 등록 차단  <!-- 1490695 -->
 
-회사 포털 앱은 지원되는 Samsung KNOX 장치만을 등록하려고 합니다. Knox 활성화 오류로 인해 MDM 등록이 차단되는 경우를 방지하기 위해 장치가 [Samsung에서 게시한 장치 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 나타나는 경우에만 장치 등록을 시도합니다. 모든 Samsung 장치에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. 구매하고 배포하기 전에 장치 재판매인과 함께 KNOX 호환성을 검사합니다. [Android 및 Samsung Knox Standard 정책 설정](/intune/supported-devices-browsers.md#intune-supported-web-browsers)에서 확인된 장치의 전체 목록을 찾을 수 있습니다.
+회사 포털 앱은 지원되는 Samsung KNOX 장치만을 등록하려고 합니다. Knox 활성화 오류로 인해 MDM 등록이 차단되는 경우를 방지하기 위해 장치가 [Samsung에서 게시한 장치 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 나타나는 경우에만 장치 등록을 시도합니다. 모든 Samsung 장치에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. 구매하고 배포하기 전에 장치 재판매인과 함께 KNOX 호환성을 검사합니다. [Android 및 Samsung Knox Standard 정책 설정](supported-devices-browsers.md#intune-supported-web-browsers)에서 확인된 장치의 전체 목록을 찾을 수 있습니다.
 
 ### <a name="end-of-support-for-android-43-and-lower----1171126-1326920---"></a>Android 4.3 및 이전 버전에 대한 지원 종료 <!-- 1171126, 1326920 -->
 관리되는 앱과 Android용 회사 포털 앱이 회사 리소스에 액세스하려면 Android 4.4 이상이 필요합니다. 12월까지 등록된 모든 장치는 12월에 강제 사용 중지되며, 따라서 회사 리소스에 액세스할 수 없게 됩니다. MDM 없이 앱 보호 정책을 사용 중인 경우 앱이 업데이트를 받지 못하며 해당 환경 품질이 시간이 흐름에 따라 저하됩니다.
@@ -1177,13 +1177,13 @@ Checkpoint SandBlast Mobile을 실행하는 장치에서 수집된 원격 분석
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-1--"></a>회사 포털 웹 사이트의 UI 업데이트 <!--1313244 part 1-->
 최종 사용자 경험을 향상시키기 위해 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)의 UI를 여러 개 업데이트했습니다.
 
-- __앱 타일 향상__ 앱 아이콘을 감지할 수 없는 경우 아이콘이 아이콘의 주요 색상을 기반으로 자동 생성된 배경과 함께 표시됩니다. 해당되는 경우 이 배경이 이전에 앱 타일에 표시된 회색 테두리를 대체합니다.
+- __앱 타일 향상__:  앱 아이콘을 감지할 수 없는 경우 아이콘이 아이콘의 주요 색상을 기반으로 자동 생성된 배경과 함께 표시됩니다. 해당되는 경우 이 배경이 이전에 앱 타일에 표시된 회색 테두리를 대체합니다.
 
     회사 포털 웹 사이트는 향후 릴리스에서 가능하면 큰 아이콘을 표시합니다. IT 관리자가 최소 크기가 120x120픽셀인 고해상도 아이콘을 사용하여 앱을 게시하는 것이 좋습니다. 
 
-- __탐색 변경 내용__: 탐색 모음 항목이 왼쪽 상단에 있는 햄버거 메뉴로 이동되었습니다. 범주 페이지가 제거되었습니다. 이제 사용자가 찾아보는 동안 범주별로 콘텐츠를 필터링할 수 있습니다.
+- __탐색 변경 내용__: 탐색 모음 항목이 왼쪽 위에 있는 햄버거 메뉴로 이동되었습니다. 범주 페이지가 제거되었습니다. 이제 사용자가 찾아보는 동안 범주별로 콘텐츠를 필터링할 수 있습니다.
 
-- __추천 앱 업데이트__ 사용자가 추천하기 위해 선택한 앱을 찾아볼 수 있는 사이트에 전용 페이지를 추가하고 홈페이지의 추천 섹션에서 UI를 일부 조정했습니다.
+- __추천 앱 업데이트__: 사용자가 추천하기 위해 선택한 앱을 찾아볼 수 있는 사이트에 전용 페이지를 추가하고 홈페이지의 추천 섹션에서 UI를 일부 조정했습니다.
 
 ### <a name="ibooks-support-for-the-company-portal-website---1231841--"></a>회사 포털 웹 사이트에 대한 iBooks 지원<!--1231841-->
 사용자가 iBooks를 찾고 다운로드할 수 있도록 회사 포털 웹 사이트에 전용 페이지를 추가했습니다. 
@@ -1548,7 +1548,7 @@ Intune은 등록할 수 있는 모바일 장치 플랫폼을 제어하는 새로
 * 모바일 장치 등록을 제한해도 PC 클라이언트 등록은 제한되지 않습니다.  
 * iOS 및 Android에 한해, 개인 소유 장치의 등록을 차단하는 한 가지 추가 옵션이 있습니다.
 
-Intune은 [이 문서](https://docs.microsoft.com/intune-classic/deploy-use/manage-corporate-owned-devices)에 설명된 대로 IT 관리자가 회사 소유로 표시하기 위한 조치를 취하지 않은 한 모든 새 장치를 개인 소유 장치로 표시합니다.
+Intune은 [이 문서](device-enrollment.md)에 설명된 대로 IT 관리자가 회사 소유로 표시하기 위한 조치를 취하지 않은 한 모든 새 장치를 개인 소유 장치로 표시합니다.
 
 ### <a name="view-all-actions-on-managed-devices---677150--"></a>관리 되는 장치에 관한 모든 작업 보기<!--677150-->
 새 __장치 작업__ 보고서에는 장치의 공장 재설정과 같은 원격 작업을 수행한 사람이 누구인지 표시되며, 추가로 작업의 상태도 표시됩니다. [장치 관리란?](device-management.md)을 참조하세요.

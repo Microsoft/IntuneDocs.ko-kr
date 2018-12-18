@@ -5,29 +5,31 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730408"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977272"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune에서 Windows 10 이상 배달 최적화 설정
 
-이 문서에서는 Windows 10 디바이스에 대해 구성할 수 있는 모든 배달 최적화 설정을 나열하고 설명합니다. 이러한 설정은 디바이스 구성 프로필에 추가된 후 Microsoft Intune을 사용하여 디바이스에 할당 또는 배포됩니다.
+이 문서에서는 Windows 10 디바이스에 대해 구성할 수 있는 모든 배달 최적화 설정을 나열하고 설명합니다. 이러한 설정은 디바이스 구성 프로필에 추가된 후 Microsoft Intune을 사용하여 디바이스에 할당 또는 배포됩니다. 
+
+[배달 최적화 업데이트](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10의 배달 최적화를 자세히 알아볼 수 있는 훌륭한 리소스입니다.
 
 ## <a name="settings"></a>설정
 
 **배달 최적화 다운로드 모드**: 업데이트가 디바이스에 배달되는 방법을 선택합니다. 옵션은 다음과 같습니다.
 
-- **구성되지 않음**: 최종 사용자는 OS에서 제공되는 **Windows 업데이트** 또는 **배달 최적화** 설정을 사용할 수 있는 고유한 방법으로 해당 디바이스를 업데이트합니다.
+- **구성되지 않음** 최종 사용자는 OS에서 제공되는 **Windows 업데이트** 또는 **배달 최적화** 설정을 사용할 수 있는 고유한 방법으로 해당 디바이스를 업데이트합니다.
 - **HTTP만, 피어링 없음**: 인터넷에서만 업데이트를 가져옵니다. 네트워크(피어링 또는 피어 투 피어라고 함)의 다른 컴퓨터에서 업데이트를 가져오지 마세요.
 - **비공개 그룹에서 피어링과 혼합된 동일한 NAT HTTP 뒤의 피어링과 혼합된 HTTP**: 인터넷 및 네트워크의 다른 컴퓨터에서 업데이트를 가져옵니다. 동일한 Active Directory 사이트(있는 경우) 또는 동일한 도메인의 디바이스에서 피어링이 발생합니다. 이 옵션을 선택하면 피어링이 NAT(Network Address Translation) IP 주소를 교차합니다.
 - **인터넷 피어링과 혼합된 HTTP**: 인터넷 및 네트워크의 다른 컴퓨터에서 업데이트를 가져옵니다.

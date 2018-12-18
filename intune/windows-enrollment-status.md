@@ -1,7 +1,7 @@
 ---
 title: 등록 상태 페이지 설정
 titleSuffix: Microsoft Intune
-description: Windows 10 장치를 등록하는 사용자에게 인사하세요.
+description: Windows 10 디바이스를 등록하는 사용자를 위한 인사말 페이지를 설정합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729044"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032098"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>등록 상태 페이지 설정
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-장치 설정 중에는 등록 상태 페이지에 장치에 관한 설치 정보가 표시됩니다. 사용자가 기본 등록을 완료하고 장치에 로그인할 때 일부 응용 프로그램, 프로필 및 인증서가 설치되지 않을 수 있습니다. 등록 상태 페이지는 사용자가 장치 설정 중에 장치 상태를 이해하는 데 도움이 됩니다. 여러 등록 상태 페이지 프로필을 만들고 여러 그룹에 적용할 수 있습니다. 프로필은 다음과 같이 설정할 수 있습니다.
+Intune을 사용하여 디바이스를 설정하는 중에는 등록 상태 페이지에 디바이스에 관한 설치 정보가 표시됩니다. 사용자가 기본 등록을 완료하고 장치에 로그인할 때 일부 응용 프로그램, 프로필 및 인증서가 설치되지 않을 수 있습니다. 등록 상태 페이지는 사용자가 장치 설정 중에 장치 상태를 이해하는 데 도움이 됩니다. 여러 등록 상태 페이지 프로필을 만들고 여러 그룹에 적용할 수 있습니다. 프로필은 다음과 같이 설정할 수 있습니다.
 - 설치 진행률 표시.
 - 설치가 완료될 때까지 사용 차단.
 - 장치 설정에 실패한 경우 사용자가 수행할 수 있는 작업 지정.

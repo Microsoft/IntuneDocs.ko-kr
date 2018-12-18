@@ -1,12 +1,12 @@
 ---
 title: macOS 디바이스 등록 - 장비 등록 프로그램 또는 Apple School Manager
-titleSuffix: Microsoft Intune
+titleSuffix: ''
 description: 장비 등록 프로그램을 사용하여 회사 소유 macOS 장치를 등록하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728755"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032353"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>장비 등록 프로그램 또는 Apple School Manager를 사용하여 macOS 디바이스 자동 등록
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서에서는 Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com) 또는 [Apple School Manager](https://school.apple.com/)를 통해 구매한 디바이스에 대해 macOS 디바이스 등록을 설정할 수 있습니다. 디바이스를 건드리지 않고 다수의 디바이스에서 이러한 등록 중 하나를 사용할 수 있습니다. macOS 장치를 직접 사용자에게 제공할 수 있습니다. 사용자가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 Intune 관리용으로 등록됩니다.
+Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com) 또는 [Apple School Manager](https://school.apple.com/)를 통해 구매한 macOS 디바이스에 대해 Intune 등록을 설정할 수 있습니다. 디바이스를 건드리지 않고 다수의 디바이스에서 이러한 등록 중 하나를 사용할 수 있습니다. macOS 장치를 직접 사용자에게 제공할 수 있습니다. 사용자가 장치를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 장치가 Intune 관리용으로 등록됩니다.
 
 등록을 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 등록 프로필을 만듭니다.
 
@@ -123,7 +123,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
  
 7. **확인**을 선택합니다.
 
-8. **설정 도우미 설정**을 선택하여 다음 프로필 설정을 구성합니다. ![설정 도우미 사용자 지정](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
+8. **설정 도우미 설정**을 선택하여 다음 프로필 설정을 구성합니다.  ![설정 도우미 사용자 지정.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | 부서 설정 | 설명 |
     |---|---|
