@@ -28,7 +28,7 @@ ms.locfileid: "52181873"
 
 이 자습서에서는 다음 작업을 수행하는 방법을 알아봅니다. 
 > [!div class="checklist"]
-> * Intune iOS 장치 준수 정책을 만들어 장치가 준수 상태로 간주하기 위해 충족해야 하는 조건을 설정합니다.
+> * Intune iOS 장치 준수 정책을 만들어 장치가 준수해야 하는 충족 조건을 설정합니다.
 > * iOS 장치가 Intune에 등록하고, Intune 정책을 준수하고, 승인된 Outlook 모바일 앱을 사용하여 Exchange Online 메일에 액세스하도록 요구하는 Azure AD(Azure Active Directory) 조건부 액세스 정책을 만듭니다.
 
 Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)하세요.
