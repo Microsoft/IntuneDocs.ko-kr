@@ -15,20 +15,20 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: af767ce47b9382012f01de48ccd280c29ccfc27c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829116"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112869"
 ---
-# <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Windows 장치 등록  
-Windows Autopilot이 장치 등록을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 장치에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 장치에 적용할 필요 없이 최종 사용자에게 새 장치를 제공할 수 있습니다. Intune을 사용하여 Autopilot 장치를 관리하는 경우 장치를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
+# <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
+Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 장치에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 장치에 적용할 필요 없이 최종 사용자에게 새 장치를 제공할 수 있습니다. Intune을 사용하여 Autopilot 장치를 관리하는 경우 장치를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
 
 
 ## <a name="prerequisites"></a>전제 조건
-- [Windows 자동 등록 사용](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+- [Windows 자동 등록 사용](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 구독](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>InTune에서 가져올 CSV를 얻는 방법
@@ -82,13 +82,13 @@ Autopilot 배포 프로필은 Autopilot 장치를 구성하는 데 사용됩니�
     - **자체 배포(미리 보기)**: (최신 [Windows 10 Insider Preview 빌드](https://docs.microsoft.com/windows-insider/at-work-pro/) 필요) 이 프로필을 사용하는 장치는 장치를 등록하는 사용자와 연결되지 않습니다. 장치를 등록하는 데 사용자 자격 증명이 필요하지 않습니다.
 5. **다음으로 Azure AD에 조인** 상자에서 **Azure AD 조인됨**을 선택합니다.
 6. **OOBE(기본 제공 환경)** 를 선택하고, 다음 옵션을 구성한 다음, **저장**을 선택합니다.
-    - **언어(지역)**\*: 장치에 사용할 언어를 선택합니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
-    - **키보드 자동으로 구성**\*: **언어(지역)** 을 선택한 경우 **예**를 선택하여 키보드 선택 영역 페이지를 건너뜁니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
+    - **언어(지역)**\*: 디바이스에 사용할 언어를 선택합니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
+    - **키보드 자동으로 구성**\*: **언어(지역)** 를 선택한 경우 **예**를 선택하여 키보드 선택 영역 페이지를 건너뜁니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
     - **EULA(최종 사용자 사용권 계약)**: 사용자에게 EULA를 표시할지 여부를 선택합니다(Windows 10 버전 1709 이상).
     - **개인 정보 설정**: 사용자에게 개인 정보 설정을 표시할지 여부를 선택합니다.
-    - **계정 변경 옵션 숨기기(Windows 참가자에게만 해당)**: **숨기기**를 선택하여 계정 변경 옵션이 회사 로그인 및 도메인 오류 페이지에서 표시되지 않도록 합니다. 이러한 옵션을 사용하려면 [Azure Active Directory에서 회사 브랜딩을 구성](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)해야 합니다.
+    - **계정 변경 옵션 숨기기(Windows 참가자에게만 해당)**: **숨기기**를 선택하면 계정 변경 옵션이 회사 로그인 및 도메인 오류 페이지에서 표시되지 않습니다. 이러한 옵션을 사용하려면 [Azure Active Directory에서 회사 브랜딩을 구성](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)해야 합니다.
     - **사용자 계정 유형**: 사용자 계정 유형(**관리자** 또는 **표준** 사용자)을 선택합니다.
-    - **컴퓨터 이름 템플릿 적용(Windows 참가자에게만 해당)**: **예**를 선택하여 등록하는 동안 장치의 이름을 지정할 때 사용할 템플릿을 만듭니다. 이름은 15자 이하여야 하고, 문자, 숫자 및 하이픈만 포함할 수 있습니다. 이름이 모두 숫자일 수는 없습니다. [%SERIAL% 매크로](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)를 사용하여 하드웨어별 일련 번호를 추가합니다. 또는 [%RAND:x% 매크로](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)를 사용하여 숫자의 임의 문자열을 추가합니다. 여기서 x는 추가할 자릿수입니다. 
+    - **컴퓨터 이름 템플릿 적용(Windows 참가자에게만 해당)**: **예**를 선택하여 등록하는 동안 디바이스의 이름을 지정할 때 사용할 템플릿을 만듭니다. 이름은 15자 이하여야 하고, 문자, 숫자 및 하이픈만 포함할 수 있습니다. 이름이 모두 숫자일 수는 없습니다. [%SERIAL% 매크로](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)를 사용하여 하드웨어별 일련 번호를 추가합니다. 또는 [%RAND:x% 매크로](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)를 사용하여 숫자의 임의 문자열을 추가합니다. 여기서 x는 추가할 자릿수입니다. 
 
 6. **만들기**를 선택하여 프로필을 만듭니다. 이제 Autopilot 배포 프로필을 장치에 할당할 수 있습니다.
 
@@ -125,7 +125,7 @@ Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분
 
 특정 Autopilot 장치에 사용자를 할당할 수 있습니다. 이렇게 할당하면 Windows를 설정하는 동안 [회사 브랜드](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) 로그인 페이지에 Azure Active Directory의 사용자를 미리 입력합니다. 사용자 지정 인사말 이름을 설정할 수도 있습니다. Windows 로그인을 미리 입력하거나 수정하지 않습니다. 사용이 허가된 Intune 사용자만이 이러한 방식으로 할당될 수 있습니다.
 
-필수 구성 요소: 구성된 Azure Active Directory 회사 포털 및 최신 [Windows 10 Insider Preview 빌드](https://docs.microsoft.com/windows-insider/at-work-pro/).
+필수 조건: 구성된 Azure Active Directory 회사 포털 및 최신 [Windows 10 Insider Preview 빌드](https://docs.microsoft.com/windows-insider/at-work-pro/).
 
 1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Windows 등록** > **장치** > 장치 선택 > **사용자 할당**을 선택합니다.
 
