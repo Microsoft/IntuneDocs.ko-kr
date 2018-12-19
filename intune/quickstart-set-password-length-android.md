@@ -25,7 +25,7 @@ ms.locfileid: "52179258"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>빠른 시작: Android 디바이스에 대한 준수 정책 만들기
 
-이 빠른 시작에서는 Microsoft Intune을 사용하여 Android 장치의 정보에 대한 액세스 권한이 부여되기 전에 업무용 Android 디바이스 사용자에게 특정 길이의 암호를 입력하도록 요구합니다. 
+이 빠른 시작에서는 Microsoft Intune을 사용하여 Android 장치의 정보에 대한 액세스 권한이 부여되기 전에 업무용 Android 디바이스 사용자에게 특정 길이의 암호를 입력하도록 요구합니다.
 
 Intune 디바이스 준수 정책은 디바이스가 준수하는 것으로 간주되기 위해 충족해야 하는 규칙과 설정을 지정합니다. 준수 정책을 조건부 액세스와 함께 사용하여 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 장치 보고서를 가져오 고 비준수에 대해 조치를 할 수 있습니다.
 
@@ -40,7 +40,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="create-a-device-compliance-policy"></a>장치 준수 정책 만들기
 
-이 빠른 시작을 위해 Intune을 사용하여 Android 디바이스의 정보에 대한 액세스 권한이 부여되기 전에 업무용 Android 디바이스 사용자에게 특정 길이의 암호를 입력하도록 요구합니다.
+이 빠른 시작에서는 Microsoft Intune을 사용하여 Android 장치의 정보에 대한 액세스 권한이 부여되기 전에 업무용 Android 사용자에게 특정 길이의 암호를 입력하도록 요구합니다.
 
 1. Intune에서 **장치 준수** > **정책** > **정책 만들기**를 선택합니다.
 2. **Android 준수**를 **이름**으로 추가합니다. 또한 **설명**을 추가합니다.
@@ -63,7 +63,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 이 빠른 시작에서는 Intune을 사용하여 최소 6자 길이의 암호를 요구하는 업무용 Android 디바이스 사용자에 대한 준수 정책을 만들었습니다. 준수 정책 만들기에 대한 자세한 내용은 [Intune에서 디바이스 준수 정책 시작](device-compliance-get-started.md)을 참조하세요.
 
-다음 Intune 빠른 시작을 진행하기 위해서는 아래 빠른 시작 링크를 클릭하세요.
+Intune 빠른 시작 시리즈를 계속하려면 아래의 다음 빠른 시작 단계를 클릭하세요.
 
 > [!div class="nextstepaction"]
 > [빠른 시작: 비규격 디바이스로 알림 보내기](quickstart-send-notification.md)
