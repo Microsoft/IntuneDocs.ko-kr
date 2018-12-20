@@ -25,7 +25,7 @@ ms.locfileid: "52179258"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>빠른 시작: Android 디바이스에 대한 준수 정책 만들기
 
-이 빠른 시작에서는 Microsoft Intune을 사용하여 Android 장치의 정보에 대한 액세스 권한이 부여되기 전에 업무용 Android 디바이스 사용자에게 특정 길이의 암호를 입력하도록 요구합니다.
+이 빠른 시작에서는 Microsoft Intune을 사용하여 Android 장치의 정보에 대한 액세스 권한이 부여되기 전에 업무용 Android 디바이스 사용자에게 특정 길이의 암호를 입력하도록 요구합니다. 
 
 Intune 디바이스 준수 정책은 디바이스가 준수하는 것으로 간주되기 위해 충족해야 하는 규칙과 설정을 지정합니다. 준수 정책을 조건부 액세스와 함께 사용하여 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 장치 보고서를 가져오 고 비준수에 대해 조치를 할 수 있습니다.
 

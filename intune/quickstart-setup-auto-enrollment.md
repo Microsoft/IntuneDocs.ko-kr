@@ -37,7 +37,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 이 예제에서는 회사 및 BYOD(bring-your-own-devices)를 모두 자동으로 등록할 수 있도록 MDM 등록을 사용합니다. Azure Active Directory Premium 무료 구독을 신청할 수 있습니다.
 
-1. Azure에서 Azure Active Directory > 모바일(MDM 및 MAM) 을 선택합니다.
+1. Azure에서 **Azure Active Directory** > **이동성(MDM 및 MAM)** 을 선택합니다.
 2. **Premium 평가판을 받아서 이 기능 사용**을 선택하세요. 이 옵션을 선택하면 Azure Active Directory Premium 평가판을 사용하여 자동 등록할 수 있습니다. 
 
     ![Azure Active Directory Premium 평가판 선택](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
@@ -54,12 +54,12 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
     ![구성 목록에서 '일부' 선택](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. 그룹 선택 > Contoso 테스터 > 선택 에서 할당된 그룹으로 선택합니다.
+5. **그룹 선택** > **Contoso 테스터** > **선택**에서 할당된 그룹으로 선택합니다.
 
     ![등록할 그룹 선택](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
 6. **MAM 사용자 범위**에서 **일부**를 선택하여 직원의 디바이스에서 데이터를 관리합니다.
-7. 그룹 선택 > Contoso 테스터 > 선택 에서 할당된 그룹으로 선택합니다.
+7. **그룹 선택** > **Contoso 테스터** > **선택**에서 할당된 그룹으로 선택합니다. 
 8. 나머지 구성 값에 기본값을 사용합니다.
 9. **저장**을 선택합니다.
 
