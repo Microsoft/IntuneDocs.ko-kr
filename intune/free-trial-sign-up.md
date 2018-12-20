@@ -65,9 +65,9 @@ Intune 평가판은 30일 동안 무료로 사용할 수 있습니다. 회사 �
 
     ![Azure Portal 로그인 페이지의 이미지](./media/azure-portal-signin.png)
 
-3. Azure Portal에서 Microsoft Intune을 보려면 페이지 왼쪽에 있는 사이드바에서 **모든 서비스**를 선택합니다.
-4. 필터 상자에서 **Microsoft Intune**을 검색하여 선택합니다.
-5. **별(☆)** 아이콘을 선택하여 Intune을 자주 사용하는 서비스 목록 맨 아래에 추가하고 Intune 대시보드를 엽니다.
+3. Azure Portal에서 Microsoft Intune을 보려면 페이지 왼쪽에 있는 사이드바에서 모든 서비스 를 선택합니다.
+4. 필터 상자에서 Microsoft Intune을 검색하여 선택합니다.
+5. 별 모양 아이콘을 선택하여 Intune을 자주 사용하는 서비스 목록 맨 아래에 추가하고 Intune 대시보드를 엽니다.
 
 평가판에 등록하는 경우 등록 과정 중에 입력한 이메일 주소로 계정 정보가 포함된 이메일 메시지가 전송됩니다. 이 전자 메일을 통해 평가판이 활성화된 것을 확인합니다.
 
