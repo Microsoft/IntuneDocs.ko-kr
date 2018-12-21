@@ -25,9 +25,9 @@ ms.locfileid: "52179799"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>장치를 관리할 필요 없이 Office 365 Exchange Online 보호
 
-장치 관리 시스템 설정에 대한 오버헤드 없이 직원에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우 그렇게 할 수 있습니다. Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있습니다. 필요한 단계를 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS 또는 Android 장치](supported-devices-browsers.md)가 있어야 합니다. 
+Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있어 장치 관리 시스템 설정에 대한 추가적인 리소스 투입 없이도 직원들에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우에 가능합니다. 필요한 관리 설정을 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS 또는 Android 장치](supported-devices-browsers.md)가 있어야 합니다. 
 
-장치 관리 시스템을 설정하려면 그렇게 할 수 있습니다. 이러한 유형의 앱 보호는 장치 관리와 독립적으로 작동합니다. 
+장치 관리 시스템을 설정하여 관리하고자 한다면 가능합니다. 이러한 유형의 앱 보호는 장치 관리와 독립적으로 작동하게 됩니다.
 
 ## <a name="action-plan"></a>작업 계획
 
@@ -50,4 +50,4 @@ ms.locfileid: "52179799"
 * 고의적이거나 고의적이지 않은 데이터 유출로부터 회사 데이터를 보호하기 위해 앱 보호 정책 설정 
 * 네트워크 외부에서 회사 데이터를 보호하기 위해 Azure Information Protection 활용 
 
-이 EMS 또는 다른 EMS나 Office 365 시나리오 사용에 어떤 도움이 필요하시나요? Microsoft 365, Enterprise Mobility + Security 또는 Azure Active Directory Premium에 대한 라이선스를 150개 이상 가지고 있는 경우 [FastTrack 혜택](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)을 사용하세요. 
+이와 같은 EMS 또는 다른 EMS나 Office 365 시나리오 등을 사용 및 활성화하기 위한 도움이 필요하시나요? Microsoft 365, Enterprise Mobility + Security 또는 Azure Active Directory Premium에 대한 라이선스를 150개 이상 가지고 있는 경우 [FastTrack 혜택](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)을 사용하세요.
