@@ -25,7 +25,7 @@ ms.locfileid: "52190016"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Microsoft Intune을 사용하여 회사 데이터에 대한 무단 액세스 방지
 
-권한이 부여된 사용자만이 데이터에 액세스할 수 있도록 Office 365 문서 및 전자 메일을 분류, 레이블 지정 및 보호할 수 있습니다. 설정은 IT 관리자 또는 사용자가 규칙과 조건을 설정하면 자동으로 관리됩니다. 또는 IT 팀에서 사용자가 따라야 할 권장 설정을 제공할 수 있습니다. 관리자와 사용자는 다른 기관의 도움 없이도 다른 사용자와 이미 공유된 데이터에 대한 액세스 권한을 취소할 수도 있습니다. 이 작업의 결과는 보호된 데이터가 회사 네트워크를 벗어나더라도 누군가가 열거나 업데이트 작업을 하는 경우에 대하여 제어하기 위함니다. 
+권한이 부여된 사용자만이 데이터에 액세스할 수 있도록 Office 365 문서 및 이메일을 분류, 레이블 지정 및 보호할 수 있습니다. 설정은 IT 관리자 또는 사용자가 규칙과 조건을 설정하면 자동으로 관리됩니다. 또는 IT 팀에서 사용자가 따라야 할 권장 설정을 제공할 수 있습니다. 관리자와 사용자는 다른 기관의 도움 없이도 다른 사용자와 이미 공유된 데이터에 대한 액세스 권한을 취소할 수도 있습니다. 이 작업의 결과는 보호된 데이터가 회사 네트워크를 벗어나더라도 누군가가 열거나 업데이트 작업을 하는 경우에 대하여 제어하기 위함니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -34,7 +34,7 @@ ms.locfileid: "52190016"
 * 회사에서 Office 365 Exchange Online, SharePoint Online, 비즈니스용 OneDrive 또는 Yammer를 사용합니다.
 * 회사에서 Microsoft 365, EMS(Enterprise Mobility + Security) 또는 Azure Information Protection에 대한 라이선스를 가지고 있습니다.
 * 회사에서 Windows 7 서비스 팩 1 이상을 실행하는 장치를 사용합니다.
-* 회사에서 Office 365 ProPlus 2016 앱 또는 2013 앱, Office Professional Plus 2016, Office Professional Plus 2013(서비스 팩 1 포함) 또는 Office Professional Plus 2010를 사용합니다.
+* 회사에서 Office 365 ProPlus 2016 앱 또는 2013 앱, Office Professional Plus 2016, Office Professional Plus 2013(서비스 팩 1 포함) 또는 Office Professional Plus 2010을 사용합니다.
 
 ## <a name="action-plan"></a>작업 계획
 
