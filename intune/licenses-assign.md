@@ -87,8 +87,8 @@ EMS 서비스에 대해 사용자 라이선스를 선택적으로 할당하려�
 다음 명령을 실행하여 Intune 서비스 계획을 제외할 수 있습니다. 같은 방법을 사용하여 전체 보안 그룹으로 확장하거나 보다 세분화된 필터를 사용할 수 있습니다.
 
 **예제 1**<br>
-명령줄은 새로운 사용자를 생성한 후 Intune 라이선스는 비활성화하고 EMS 라이선스를 할당합니다.
 
+ 명령줄에서 새로운 사용자를 만들고 라이선스의 Intune 부분을 비활성화한 상태로 EMS 라이선스를 할당합니다.   
     Connect-MsolService
 
     New-MsolUser -DisplayName “Test User” -FirstName FName -LastName LName -UserPrincipalName user@<TenantName>.onmicrosoft.com –Department DName -UsageLocation US
@@ -102,9 +102,9 @@ EMS 서비스에 대해 사용자 라이선스를 선택적으로 할당하려�
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
 **예제 2:**<br>
-이미 라이선스가 할당된 사용자의 EMS 라이선스에 Intune 부분을 비활성화합니다.
 
-    Connect-MsolService
+이미 라이선스가 할당된 사용자에 대해 EMS 라이선스의 Intune 부분을 비활성화합니다.
+Connect-MsolService
 
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -LicenseOptions $CustomEMS
