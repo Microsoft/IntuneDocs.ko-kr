@@ -50,4 +50,4 @@ Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공
 * 고의적이거나 고의적이지 않은 데이터 유출로부터 회사 데이터를 보호하기 위해 앱 보호 정책 설정 
 * 네트워크 외부에서 회사 데이터를 보호하기 위해 Azure Information Protection 활용 
 
-이와같은 EMS 또는 다른 EMS나 Office 365 시나리오등을 사용 및 활성화하기 위한 도움이 필요하시나요? Microsoft 365, Enterprise Mobility + Security 또는 Azure Active Directory Premium에 대한 라이선스를 150개 이상 가지고 있는 경우 [FastTrack 혜택](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)을 사용하세요. 
+이와 같은 EMS 또는 다른 EMS나 Office 365 시나리오 등을 사용 및 활성화하기 위한 도움이 필요하시나요? Microsoft 365, Enterprise Mobility + Security 또는 Azure Active Directory Premium에 대한 라이선스를 150개 이상 가지고 있는 경우 [FastTrack 혜택](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)을 사용하세요.
