@@ -76,4 +76,4 @@ Apple MDM 푸시 인증서는 1년 동안 유효하며 iOS 및 macOS 장치 관�
 6. **확인** 화면에서 **다운로드**를 선택하고 .pem 파일을 로컬로 저장합니다.
 7. [Azure Portal](https://portal.azure.com)에서 **Apple MDM 푸시 인증서** 찾아보기 아이콘을 선택하고 Apple에서 다운로드한 .pem 파일을 선택한 다음, **업로드**를 선택합니다.
 
-Apple MDM 푸시 인증서가 **Active**에 나타나고 365일 후 만료됩니다.
+Apple MDM 푸시 인증서가 **활성화**에 나타나고 365일 후 만료됩니다.

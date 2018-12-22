@@ -68,6 +68,7 @@ SDS에 대한 자세한 내용은 이 [학교 데이터 동기화 및 강의실 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>구입한 라이선스 형식 이해
 
 Intune을 구입한 방법에 따라 구독 정보를 확인하는 방법은 다음과 같습니다.
+
 - 기업계약을 통해 Intune을 구입한 경우 **구독**의 볼륨 라이선스 포털에서 구독 정보를 찾을 수 있습니다.
 - 클라우드 솔루션 공급자를 통해 Intune을 구입한 경우 재판매인으로부터 확인합니다.
 - CC# 또는 송장을 포함한 Intune을 구입한 경우 라이선스는 사용자 기반입니다.
@@ -76,9 +77,9 @@ Intune을 구입한 방법에 따라 구독 정보를 확인하는 방법은 다
 
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>PowerShell을 사용하여 EMS 사용자 라이선스를 선택적으로 관리
-Microsoft Enterprise Mobility + Security(이전 명칭 Enterprise Mobility Suite)를 사용하는 조직에는 EMS 패키지의 Intune 서비스 또는 Azure Active Directory Premium만 필요한 사용자가 있을 수 있습니다. [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx)을 사용하여 한 가지 서비스 또는 서비스 하위 집합에 할당할 수 있습니다.
+Microsoft Enterprise Mobility + Security(이전 명칭 Enterprise Mobility Suite)를 사용하는 조직에는 EMS 패키지의 Intune 서비스 또는 Azure Active Directory Premium만 필요한 사용자가 있을 수 있습니다. [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx)을 사용하여 한 가지 서비스 또는 서비스 하위 집합을 할당할 수 있습니다.
 
-EMS 서비스에 대해 사용자 라이선스를 선택적으로 할당하려면, [Windows PowerShell용 Azure Active Directory 모듈](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule)이 설치된 컴퓨터에서 관리자로 PowerShell을 실행합니다. PowerShell은 로컬 컴퓨터 또는 ADFS 서버에 설치할 수 있습니다.
+EMS 서비스에 대해 사용자 라이선스를 선택적으로 할당하려면, [Windows PowerShell용 Azure Active Directory 모듈](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule)이 설치된 컴퓨터에서 관리자로 PowerShell을 엽니다. PowerShell은 로컬 컴퓨터 또는 ADFS 서버에 설치할 수 있습니다.
 
 원하는 서비스 계획에만 적용되는 새로운 라이선스 SKU 정의를 만들어야 합니다. 이렇게 하려면, 적용하지 않을 계획은 비활성화합니다. 예를 들면, Intune 라이선스를 할당하지 않는 라이선스 SKU 정의를 만들 수 있습니다. 사용 가능한 서비스 목록을 보려면 다음을 입력합니다.
 
@@ -87,8 +88,8 @@ EMS 서비스에 대해 사용자 라이선스를 선택적으로 할당하려�
 다음 명령을 실행하여 Intune 서비스 계획을 제외할 수 있습니다. 같은 방법을 사용하여 전체 보안 그룹으로 확장하거나 보다 세분화된 필터를 사용할 수 있습니다.
 
 **예제 1**<br>
+명령줄에서 새로운 사용자를 만들고 라이선스의 Intune 부분을 비활성화한 상태로 EMS 라이선스를 할당합니다.
 
- 명령줄에서 새로운 사용자를 만들고 라이선스의 Intune 부분을 비활성화한 상태로 EMS 라이선스를 할당합니다.   
     Connect-MsolService
 
     New-MsolUser -DisplayName “Test User” -FirstName FName -LastName LName -UserPrincipalName user@<TenantName>.onmicrosoft.com –Department DName -UsageLocation US
@@ -102,9 +103,9 @@ EMS 서비스에 대해 사용자 라이선스를 선택적으로 할당하려�
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
 **예제 2:**<br>
-
 이미 라이선스가 할당된 사용자에 대해 EMS 라이선스의 Intune 부분을 비활성화합니다.
-Connect-MsolService
+
+    Connect-MsolService
 
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -LicenseOptions $CustomEMS

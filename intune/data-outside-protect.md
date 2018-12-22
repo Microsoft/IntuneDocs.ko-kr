@@ -25,7 +25,7 @@ ms.locfileid: "52190016"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Microsoft Intune을 사용하여 회사 데이터에 대한 무단 액세스 방지
 
-권한이 부여된 사용자만이 데이터에 액세스할 수 있도록 Office 365 문서 및 이메일을 분류, 레이블 지정 및 보호할 수 있습니다. 설정은 IT 관리자 또는 사용자가 규칙과 조건을 설정하면 자동으로 관리됩니다. 또는 IT 팀에서 사용자가 따라야 할 권장 설정을 제공할 수 있습니다. 관리자와 사용자는 다른 기관의 도움 없이도 다른 사용자와 이미 공유된 데이터에 대한 액세스 권한을 취소할 수도 있습니다. 이 작업의 결과는 보호된 데이터가 회사 네트워크를 벗어나더라도 누군가가 열거나 업데이트 작업을 하는 경우에 대하여 제어하기 위함니다.
+권한이 부여된 사용자만이 데이터에 액세스할 수 있도록 Office 365 문서 및 이메일을 분류, 레이블 지정 및 보호할 수 있습니다. 설정은 IT 관리자 또는 사용자가 규칙과 조건을 설정하면 자동으로 관리됩니다. 또는 IT 팀에서 사용자가 따라야 할 권장 설정을 제공할 수 있습니다. 관리자와 사용자는 다른 기관의 도움 없이도 다른 사용자와 이미 공유된 데이터에 대한 액세스 권한을 취소할 수도 있습니다. 이 작업의 결과는 보호된 데이터가 회사 네트워크를 벗어나더라도 누군가가 열거나 업데이트 작업을 하는 경우에 대하여 제어하기 위함니다. 
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -48,5 +48,5 @@ ms.locfileid: "52190016"
 
 다음 단계의 일부로, 다음을 비롯하여 회사 데이터의 보안을 향상할 수 있는 다른 방법에 대해 자세히 알아볼 수 있습니다. 
 
-* [iOS 및 Android 장치에서 Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)을 사용하는 방법에 대해 알아봅니다.
+* [iOS 및 Android 장치에서 Azure Information Protection]를 사용하는 방법에 대해 알아봅니다(https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
 * Windows Phone 및 Mac 컴퓨터의 경우 [Microsoft Rights Management 공유 응용 프로그램](https://technet.microsoft.com/dn451248)에 대해 알아봅니다.
