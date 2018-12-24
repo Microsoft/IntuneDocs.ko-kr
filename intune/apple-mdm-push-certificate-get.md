@@ -30,6 +30,7 @@ ms.locfileid: "52189472"
 Intune은 iPad, iPhone 및 Mac 컴퓨터의 MDM(모바일 장치 관리)을 가능하게 하고, 사용자가 회사 메일 및 앱에 액세스할 수 있게 해줍니다. Apple MDM Push Certificate는 Intune에서 iOS 및 macOS 장치를 관리하는 데 필요합니다. 인증서를 Intune에 추가하면 사용자는 다음을 사용하여 장치를 등록할 수 있습니다.
 
 - 회사 포털 앱.
+
 - Apple의 대량 등록 방법으로는 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator가 있습니다.
 
 등록 옵션에 대한 자세한 내용은 [iOS 장치를 등록하는 방법 선택](enrollment-method-choose-ios.md)을 참조하세요.
@@ -42,7 +43,6 @@ Intune은 iPad, iPhone 및 Mac 컴퓨터의 MDM(모바일 장치 관리)을 가�
 
 ### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>1단계. Apple에 사용자 및 장치 정보를 보내려면 Microsoft 권한 부여
 **동의**를 선택합니다. Microsoft가 Apple에 데이터를 전송하기 위한 권한 부여하는 설정입니다.
-
 
 ![MDM Push가 설정되지 않은 Configure MDM Push Certificate 화면입니다.](./media/create-mdm-push-certificate.png)
 
