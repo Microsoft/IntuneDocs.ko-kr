@@ -42,7 +42,7 @@ Intune은 iPad, iPhone 및 Mac 컴퓨터의 MDM(모바일 장치 관리)을 가�
 [Azure Portal](https://portal.azure.com)에서 **장치 등록** > **Apple 등록** > **Apple MDM Push Certificate**를 선택한 후 [Azure Portal](https://portal.azure.com)에서 이런 단계를 따릅니다.
 
 ### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>1단계. Apple에 사용자 및 장치 정보를 보내려면 Microsoft 권한 부여
-**동의**를 선택합니다. Microsoft가 Apple에 데이터를 전송하기 위한 권한 부여하는 설정입니다.
+**동의합니다.**를 선택하여 Apple에 데이터를 전송하기 위한 권한을 Microsoft에 부여합니다.
 
 ![MDM Push가 설정되지 않은 Configure MDM Push Certificate 화면입니다.](./media/create-mdm-push-certificate.png)
 
@@ -67,8 +67,8 @@ Apple MDM 푸시 인증서는 1년 동안 유효하며 iOS 및 macOS 장치 관�
 인증서는 인증서 생성에 사용된 Apple ID와 연결됩니다. MDM 푸시 인증서를 인증서 생성에 사용한 것과 같은 Apple ID로 갱신합니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 **장치 등록** > **Apple 등록**을 선택한 다음, 세부 정보 영역에서 **Apple MDM Push Certificate** 타일을 선택합니다.
-2. **CSR 다운로드**를 클릭하여 요청 파일을 로컬로 다운로드하고 저장합니다. 이 파일은 APC(Apple Push Certificate) 포털에서 트러스트 관계 인증서를 요청하는 데 사용됩니다.
-3. **MDM Push Certificate 만들기**를 클릭하여 APC(Apple Push Certificate) 포털로 이동합니다. 갱신할 인증서를 찾고 **갱신**을 선택합니다.
+2. **CSR 다운로드**를 선택하여 요청 파일을 로컬로 다운로드하고 저장합니다. 이 파일은 APC(Apple Push Certificate) 포털에서 트러스트 관계 인증서를 요청하는 데 사용됩니다.
+3. **MDM Push Certificate 만들기**를 선택하여 APC(Apple Push Certificate) 포털로 이동합니다. 갱신할 인증서를 찾고 **갱신**을 선택합니다.
 4. **푸시 인증서 갱신** 화면에서 나중에 인증서 구분에 도움이 되도록 메모를 입력하고 **파일 선택**을 선택하여 다운로드한 새로운 요청 파일을 선택한 후 **업로드**를 선택합니다.
    > [!TIP]
    > UID로 인증서를 식별할 수 있습니다. 인증서 세부 정보의 **주체 ID**를 검사하여 UID의 GUID 부분을 찾습니다. 또는 등록된 iOS 장치에서 **설정** > **일반** > **장치** **관리** > **관리 프로필** > **자세한 내용** > **관리 프로필**로 이동합니다. 두 번째 줄 항목 **토픽**에는 Apple Push Certificate 포털의 인증서와 일치시킬 수 있는 고유 GUID가 포함됩니다.
