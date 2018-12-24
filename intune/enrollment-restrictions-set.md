@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft Intune에서 등록 제한 설정
 titlesuffix: ''
 description: Intune에서 플랫폼별로 등록을 제한하고 디바이스 등록 제한을 설정합니다.
