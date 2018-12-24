@@ -25,7 +25,7 @@ ms.locfileid: "52189812"
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Windows 장치의 등록 방법에 따른 기능
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune을 사용하여 직원의 장치 및 앱을 관리하고 회사 데이터에 액세스하는 방법을 관리할 수 있습니다. 장치는 먼저 Intune 서비스에서 등록되어야 합니다. 작업자의 장치를 등록하는 몇 가지 방법이 있습니다. 아래 표에 나와 있는 것처럼 각 방법에는 다른 모범 사례 및 기능이 포함됩니다.
+Intune을 사용하여 직원의 디바이스 및 앱을 관리하고 회사 데이터에 액세스하는 방법을 관리할 수 있습니다. 먼저 Intune 서비스에 디바이스를 등록해야 합니다. 작업자의 디바이스를 등록하는 몇 가지 방법이 있습니다. 아래 표에 나와 있는 것처럼 각 방법에는 다른 모범 사례 및 기능이 포함됩니다.
 
 ## <a name="best-practices-by-enrollment-method"></a>등록 방법별 모범 사례
 | **모범 사례** | **[Azure AD 조인됨](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Autopilot을 사용하여 Azure AD 조인됨](enrollment-autopilot.md)** |**[대량](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
