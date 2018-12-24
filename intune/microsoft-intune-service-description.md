@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 서비스 설명
-description: Microsoft Intune은 Windows, iOS, Mac OS X, Android 및 Windows 모바일 장치를 관리하는 데 유용한 클라우드 기반 서비스입니다.
+description: Microsoft Intune은 Windows, iOS, Mac OS X, Android 및 Windows 모바일 디바이스를 관리하는 데 유용한 클라우드 기반 서비스입니다.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -25,14 +25,14 @@ ms.locfileid: "52184236"
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 서비스 설명
 
 Intune은 직원이 회사 데이터를 보호하면서 생산성을 높일 수 있도록 하는 클라우드 기반 엔터프라이즈 이동성 관리(EMM) 서비스입니다. Intune을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
-* 직원이 회사 데이터에 액세스하는 데 사용하는 모바일 장치를 관리합니다.
+* 직원이 회사 데이터에 액세스하는 데 사용하는 모바일 디바이스를 관리합니다.
 * 직원이 사용하는 클라이언트 앱을 관리합니다.
 * 직원이 회사 정보에 액세스하여 이를 공유하는 방법을 제어할 수 있게 하여 회사 정보를 보호합니다.
-* 장치와 앱이 회사 보안 요구 사항을 준수하는지 확인합니다.
+* 디바이스와 앱이 회사 보안 요구 사항을 준수하는지 확인합니다.
 
 Intune은 ID 및 액세스 제어를 위한 Azure AD(Azure Active Directory) 및 데이터 보호를 위한 Azure Information Protection과 긴밀하게 통합됩니다. System Center Configuration Manager와 통합하여 관리 기능을 확장할 수도 있습니다.
 
-Intune을 사용하여 장치 및 앱을 관리하고 회사 데이터를 보호하는 방법에 대한 자세한 내용은 [Intune 설명서](https://docs.microsoft.com/intune/)를 참조하세요.
+Intune을 사용하여 디바이스 및 앱을 관리하고 회사 데이터를 보호하는 방법에 대한 자세한 내용은 [Intune 설명서](https://docs.microsoft.com/intune/)를 참조하세요.
 
 ## <a name="30-day-free-trial"></a>30일 평가판
 100개의 사용자 라이선스를 포함하는 30일 무료 평가판으로 Intune 사용을 시작할 수 있습니다. 무료 평가판을 시작하려면 [Intune 등록 페이지로 이동하세요](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). 조직에서 기업 계약 또는 이와 동등한 볼륨 라이선스 계약을 맺은 경우 Microsoft 담당자에게 문의하여 무료 평가판을 설정하세요.
@@ -53,11 +53,11 @@ Microsoft는 적합한 플랜의 적합한 서비스에 대해 Intune 온보딩 
 
 ## <a name="learn-how-intune-service-updates-affect-you"></a>Intune 서비스 업데이트가 영향을 주는 방식 알아보기
 
-모바일 장치 관리 에코시스템은 운영 체제 업데이트 및 모바일 앱 릴리스로 자주 변경되므로, Microsoft는 Intune을 정기적으로 업데이트합니다. 세 가지 방법으로 Intune 서비스 변경 내용을 파악할 수 있습니다.
+모바일 디바이스 관리 에코시스템은 운영 체제 업데이트 및 모바일 앱 릴리스로 자주 변경되므로, Microsoft는 Intune을 정기적으로 업데이트합니다. 세 가지 방법으로 Intune 서비스 변경 내용을 파악할 수 있습니다.
 
 - [Microsoft Intune의 새로운 기능](whats-new.md). 이 항목은 월별 서비스 업데이트와 함께 업데이트되며 회사 포털 앱 등의 앱이 릴리스되는 경우 매주 업데이트됩니다.
 
-- 중요 서비스 업데이트는 [Office 365 관리 포털](https://portal.office.com/Admin/Default.aspx) 메시지 센터에서도 공지됩니다. 제공된 [Office 365 관리자 모바일 앱](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)을 설치한 경우 모바일 장치에서 알림을 받을 수 있습니다. [Office 365 메시지 센터](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)를 사용하는 방법을 자세히 알아봅니다.
+- 중요 서비스 업데이트는 [Office 365 관리 포털](https://portal.office.com/Admin/Default.aspx) 메시지 센터에서도 공지됩니다. 제공된 [Office 365 관리자 모바일 앱](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)을 설치한 경우 모바일 디바이스에서 알림을 받을 수 있습니다. [Office 365 메시지 센터](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)를 사용하는 방법을 자세히 알아봅니다.
 
     아래에는 그 외의 몇 가지 유용한 정보가 나와 있습니다.
 
@@ -67,7 +67,7 @@ Microsoft는 적합한 플랜의 적합한 서비스에 대해 Intune 온보딩 
 
     - Office 365 관리자 모바일 앱에서는 모든 메시지를 검색하여 조직의 동료와 공유하려는 알림을 전달할 수 있습니다.
 
-    - 메시지 센터 기본 설정 편집 아래에 **Intune**용 토글이 포함될 예정이므로, iNTUNE 구독에 대해 게시된 메시지를 확인할 수 있습니다. Office 365용 모바일 장치 관리는 Intune이 아닌 다른 서비스이므로 해당 메시지는 Intune과는 관련이 없습니다.
+    - 메시지 센터 기본 설정 편집 아래에 **Intune**용 토글이 포함될 예정이므로, iNTUNE 구독에 대해 게시된 메시지를 확인할 수 있습니다. Office 365용 모바일 디바이스 관리는 Intune이 아닌 다른 서비스이므로 해당 메시지는 Intune과는 관련이 없습니다.
 
 - 또한 다음 두 개의 블로그에서 EMS 메시지 및 Intune 지원 모범 사례가 제공됩니다.
 

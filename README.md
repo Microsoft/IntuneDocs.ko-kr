@@ -18,7 +18,7 @@ Microsoft의 클라우드 및 엔터프라이즈 분야에 관한 기술 콘텐�
   
 * **MSFT 직원**: GitHub 계정을 만든 후 Microsoft 이메일 주소에 연결합니다. 계정이 연결된 경우 업데이트를 하기 위해 라이선스 계약에 서명할 필요가 없습니다. 단계:
 
-  1. Corpnet를 사용하는 장치에서 [GitHub 계정 설정](https://review.docs.microsoft.com/en-us/help/contribute/contribute-get-started-setup-github?branch=master)으로 이동합니다. Corpnet에 있지 않은 경우 이 링크는 404를 반환합니다.
+  1. Corpnet를 사용하는 디바이스에서 [GitHub 계정 설정](https://review.docs.microsoft.com/en-us/help/contribute/contribute-get-started-setup-github?branch=master)으로 이동합니다. Corpnet에 있지 않은 경우 이 링크는 404를 반환합니다.
   
     GitHub 계정을 만들고 Microsoft 계정에 연결하는 것은 일회성 작업입니다. 계정이 연결된 경우 업데이트를 하기 위해 라이선스 계약에 서명할 필요가 없습니다. 
 

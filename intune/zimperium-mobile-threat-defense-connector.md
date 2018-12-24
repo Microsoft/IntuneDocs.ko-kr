@@ -1,7 +1,7 @@
 ---
 title: Intune 및 Zimperium MTD 커넥터 통합
 titleSuffix: Intune on Azure
-description: 회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Zimperium MTD(Mobile Threat Defense)와 Intune을 통합하는 방법을 알아봅니다.
+description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Zimperium MTD(Mobile Threat Defense)와 Intune을 통합하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -25,15 +25,15 @@ ms.locfileid: "52187466"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune 및 Zimperium MTD(Mobile Threat Defense) 커넥터 통합
 
-Microsoft Intune과 통합되는 MTD(Mobile Threat Defense) 솔루션인 Zimperium에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 장치에서 회사 리소스에 대한 액세스를 제어할 수 있습니다. 위험은 Zimperium 앱을 실행하는 장치에서 수집된 원격 분석에 기반하여 평가됩니다.
+Microsoft Intune과 통합되는 MTD(Mobile Threat Defense) 솔루션인 Zimperium에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 디바이스에서 회사 리소스에 대한 액세스를 제어할 수 있습니다. 위험은 Zimperium 앱을 실행하는 디바이스에서 수집된 원격 분석에 기반하여 평가됩니다.
 
-Intune 장치 준수 정책을 통해 사용하도록 설정된 Zimperium 위험 평가에 따라 조건부 액세스 정책을 구성할 수 있습니다. 이 정책을 사용하여 감지된 위협에 따라 비규격 장치의 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다.
+Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Zimperium 위험 평가에 따라 조건부 액세스 정책을 구성할 수 있습니다. 이 정책을 사용하여 감지된 위협에 따라 비규격 디바이스의 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune과 Zimperium이 회사 리소스를 어떻게 보호하나요?
 
-Android 및 iOS용 Zimperium 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 장치 및 응용 프로그램 원격 분석을 캡처한 다음, 원격 분석 데이터를 Zimperium 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
+Android 및 iOS용 Zimperium 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 디바이스 및 응용 프로그램 원격 분석을 캡처한 다음, 원격 분석 데이터를 Zimperium 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
 
-Intune 장치 준수 정책에는 Zimperium 위험 평가에 기반한 Zimperium Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 장치가 사용되는 정책을 준수하는지를 평가합니다. 장치가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 장치에 설치된 Zimperium 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
+Intune 디바이스 준수 정책에는 Zimperium 위험 평가에 기반한 Zimperium Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다. 디바이스가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 디바이스에 설치된 Zimperium 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
 
 ## <a name="sample-scenarios"></a>샘플 시나리오:
 
@@ -41,7 +41,7 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>악성 앱의 위협에 따라 액세스 제어
 
-맬웨어와 같은 악성 앱이 장치에서 감지되면 위협이 해결될 때까지 장치를 차단할 수 있습니다.
+맬웨어와 같은 악성 앱이 디바이스에서 감지되면 위협이 해결될 때까지 디바이스를 차단할 수 있습니다.
 
 -   회사 메일에 연결
 

@@ -102,17 +102,17 @@ Windows 방화벽 정책을 배포한 후 **정책** 작업 영역의 **모든 �
 |**BranchCache - 호스트 캐시 클라이언트**<br>(Windows 7 이상)|BranchCache 클라이언트에서 호스트 캐시를 사용할 수 있습니다. 이 설정에서는 HTTPS를 사용합니다.|
 |**BranchCache - 호스트 캐시 서버**|BranchCache 클라이언트에서 호스트 캐시를 사용하여 다른 클라이언트와 통신할 수 있습니다. 이 설정에서는 HTTPS를 사용합니다.|
 |**BranchCache - 피어 검색**<br>(Windows 7 이상)|BranchCache 클라이언트에서 WS 검색(웹 서비스 동적 검색) 프로토콜을 사용하여 로컬 서브넷에서 콘텐츠 가용성을 검색할 수 있습니다.|
-|**BITS 피어 캐싱**|클라이언트에서 BITS(Background Intelligent Transfer Service)를 사용하고 동일한 서브넷의 클라이언트에 있는 BITS 캐시에 저장된 파일을 공유할 수 있습니다. 이 설정에서는 장치 WSDAPI(Web Services on Devices) 및 RPC(원격 프로시저 호출)를 사용합니다.|
+|**BITS 피어 캐싱**|클라이언트에서 BITS(Background Intelligent Transfer Service)를 사용하고 동일한 서브넷의 클라이언트에 있는 BITS 캐시에 저장된 파일을 공유할 수 있습니다. 이 설정에서는 디바이스 WSDAPI(Web Services on Devices) 및 RPC(원격 프로시저 호출)를 사용합니다.|
 |**네트워크 프로젝터에 연결**|사용자가 유선 또는 무선 네트워크를 통해 프로젝터에 연결하여 프레젠테이션을 표시할 수 있습니다. 이 설정에서는 WSDAPI를 사용합니다.|
 |**핵심 네트워킹**|클라이언트에서 IPv4 및 IPv6을 사용하여 네트워크 리소스에 연결할 수 있습니다.|
 |**DTC(Distributed Transaction Coordinator)**|관리 컴퓨터에서 트랜잭션으로 보호되는 리소스(예: 데이터베이스, 메시지 큐, 파일 시스템)를 업데이트하는 트랜잭션을 조정할 수 있습니다.|
 |**파일 및 프린터 공유**|사용자가 네트워크의 다른 사용자와 로컬 파일 및 프린터를 공유할 수 있습니다. 이 설정에서는 NetBIOS, LLMNR(링크 로컬 멀티캐스트 이름 확인), SMB(서버 메시지 블록) 프로토콜 및 RPC를 사용합니다.|
 |**홈 그룹**<br>(Windows 7 이상)|관리 컴퓨터가 홈 그룹 네트워크에 참여할 수 있습니다.|
-|**iSCSI 서비스**|관리 컴퓨터에서 iSCSI 서버 및 장치에 연결할 수 있습니다.|
+|**iSCSI 서비스**|관리 컴퓨터에서 iSCSI 서버 및 디바이스에 연결할 수 있습니다.|
 |**키 관리 서비스**|컴퓨터에서 기업 환경의 라이선스 준수 현황을 파악할 수 있습니다.|
 |**Media Center Extender**|Media Center Extender가 Windows Media Center를 실행하는 컴퓨터와 통신할 수 있습니다. 이 설정에서는 SSDP(Simple Service Discovery Protocol) 및qWave를 사용합니다.|
 |**Netlogon 서비스**|사용자 및 서비스 인증을 위해 도메인 클라이언트와 도메인 컨트롤러 간 보안 채널을 구성합니다. 이 설정에서는 RPC를 사용합니다.|
-|**네트워크 검색**|컴퓨터가 네트워크의 다른 장치를 검색하거나 다른 장치에서 검색될 수 있습니다. 이 설정에서는 기능 검색 호스트 및 게시 서비스, SSDP, NetBIOS, LLMNR 및 UPnP 네트워크 프로토콜을 사용합니다.|
+|**네트워크 검색**|컴퓨터가 네트워크의 다른 디바이스를 검색하거나 다른 디바이스에서 검색될 수 있습니다. 이 설정에서는 기능 검색 호스트 및 게시 서비스, SSDP, NetBIOS, LLMNR 및 UPnP 네트워크 프로토콜을 사용합니다.|
 |**성능 로그 및 경고**|성능 로그 및 경고 서비스가 원격으로 관리될 수 있습니다. 이 설정에서는 RPC를 사용합니다.|
 |**원격 관리**|컴퓨터를 원격으로 관리할 수 있습니다.|
 |**원격 지원**|관리 컴퓨터의 사용자가 네트워크의 다른 사용자에게 원격 지원을 요청할 수 있습니다. 이 설정에서는 SSDP, PNRP(피어 이름 확인 프로토콜), Teredo 및 UPnP 네트워크 프로토콜을 사용합니다.|
@@ -124,17 +124,17 @@ Windows 방화벽 정책을 배포한 후 **정책** 작업 영역의 **모든 �
 |**라우팅 및 원격 액세스**|컴퓨터로 들어오는 VPN 및 원격 액세스 연결을 설정합니다.|
 |**SSTP(Secure Socket Tunneling Protocol)**|SSTP(Secure Socket Tunneling Protocol)를 통해 관리 컴퓨터에 들어오는 VPN 연결을 설정합니다. 이 설정에서는 HTTPS를 사용합니다.|
 |**SNMP 트랩**|관리 컴퓨터에서 SNMP(Simple Network Management Protocol) 트랩 서비스 트래픽을 받을 수 있습니다.|
-|**UPnP 프레임워크**|컴퓨터에서 UPnP 인증 장치를 검색 및 사용하도록 컴퓨터의 UPnP 프레임워크 서비스를 구성합니다.|
+|**UPnP 프레임워크**|컴퓨터에서 UPnP 인증 디바이스를 검색 및 사용하도록 컴퓨터의 UPnP 프레임워크 서비스를 구성합니다.|
 |**Windows 공동 작업 컴퓨터 이름 등록 서비스**|컴퓨터에서 SSDP와 PNRP를 사용하여 다른 컴퓨터를 찾아 통신할 수 있습니다.|
 |**Windows Media Player**|UDP(User Datagram Protocol)를 통해 스트리밍 미디어를 수신할 수 있습니다.|
 |**Windows Media Player 네트워크 공유 서비스**|네트워크를 통해 미디어를 공유할 수 있습니다. 이 설정에서는 SSDP, qWave 및 UPnP 네트워크 프로토콜을 사용합니다.|
 |**Windows Media Player 네트워크 공유 서비스(인터넷)**<br>(Windows 7 이상)|사용자가 네트워크를 통해 홈 미디어를 공유할 수 있습니다.|
 |**Windows Meeting Space**|사용자가 네트워크를 통해 협력하여 문서, 프로그램 및 데스크톱을 공유할 수 있습니다. 이 설정에서는 DFSR(분산 파일 시스템 복제) 및 P2P를 사용합니다.|
 |**Windows Peer to Peer Collaboration Foundation**|다양한 피어 투 피어 프로그램 및 기술에서 연결할 수 있도록 해당 프로그램 및 기술을 구성합니다. 이 설정에서는 SSDP 및 PNRP를 사용합니다.|
-|**Windows 원격 관리(호환성)**|운영 체제 및 장치의 원격 관리를 위해 WS-Management, 웹 서비스 기반 프로토콜을 사용하여 관리 컴퓨터를 원격으로 관리할 수 있습니다.|
-|**Windows 원격 관리**<br>(Windows 8 이상)|운영 체제 및 장치의 원격 관리를 위해 WS-Management, 웹 서비스 기반 프로토콜을 사용하여 관리 컴퓨터를 원격으로 관리할 수 있습니다.|
+|**Windows 원격 관리(호환성)**|운영 체제 및 디바이스의 원격 관리를 위해 WS-Management, 웹 서비스 기반 프로토콜을 사용하여 관리 컴퓨터를 원격으로 관리할 수 있습니다.|
+|**Windows 원격 관리**<br>(Windows 8 이상)|운영 체제 및 디바이스의 원격 관리를 위해 WS-Management, 웹 서비스 기반 프로토콜을 사용하여 관리 컴퓨터를 원격으로 관리할 수 있습니다.|
 |**Windows Virtual PC**<br>(Windows 7 이상)|가상 컴퓨터가 다른 컴퓨터와 통신할 수 있습니다.|
-|**무선 휴대용 장치**|MTP(미디어 전송 프로토콜)를 통해 네트워크 사용 카메라 또는 미디어 장치에서 관리 컴퓨터로 미디어를 전송할 수 있습니다. 이 설정에서는 SSDP 및 UPnP 네트워크 프로토콜을 사용합니다.|
+|**무선 휴대용 장치**|MTP(미디어 전송 프로토콜)를 통해 네트워크 사용 카메라 또는 미디어 디바이스에서 관리 컴퓨터로 미디어를 전송할 수 있습니다. 이 설정에서는 SSDP 및 UPnP 네트워크 프로토콜을 사용합니다.|
 
 ### <a name="see-also"></a>참고 항목
 [Windows PC를 보호하는 정책](policies-to-protect-windows-pcs-in-microsoft-intune.md)

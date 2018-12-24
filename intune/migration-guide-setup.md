@@ -77,7 +77,7 @@ Intune은 Azure Portal 또는 Configuration Manager 현재 분기 콘솔을 통�
 Intune Azure Portal을 사용하도록 설정하려면 MDM 기관을 **Intune**으로 설정합니다. 다른 MDM 기관을 사용하면 Intune에서 MDM 관리를 대체 Microsoft 관리 콘솔로 전송할 수 있습니다. 이러한 경우는 일반적이지 않습니다.
 
 > [!IMPORTANT]
-> 모바일 장치 관리를 Intune에 처음으로 전송할 경우 MDM 기관을 Intune으로 설정해야 합니다.
+> 모바일 디바이스 관리를 Intune에 처음으로 전송할 경우 MDM 기관을 Intune으로 설정해야 합니다.
 
 [모바일 관리 기관을 설정하는 방법](mdm-authority-set.md)에 대해 알아보세요.
 

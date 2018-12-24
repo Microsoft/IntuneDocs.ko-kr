@@ -159,7 +159,7 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure ADAL(Active Directory 인증 라이브러리) 구성
 
-Intune 앱 SDK는 해당 인증 및 조건부 시작 시나리오에 [Azure Active Directory 인증 라이브러리](https://github.com/AzureAD/azure-activedirectory-library-for-objc)를 사용합니다. 또한 ADAL을 사용하여 장치 등록 시나리오가 없는 관리를 위해 MAM 서비스에 사용자 ID를 등록합니다.
+Intune 앱 SDK는 해당 인증 및 조건부 시작 시나리오에 [Azure Active Directory 인증 라이브러리](https://github.com/AzureAD/azure-activedirectory-library-for-objc)를 사용합니다. 또한 ADAL을 사용하여 디바이스 등록 시나리오가 없는 관리를 위해 MAM 서비스에 사용자 ID를 등록합니다.
 
 일반적으로 ADAL에서는 앱이 AAD(Azure Active Directory)에 등록하고 고유 ID(클라이언트 ID) 및 기타 ID을 받아야 앱에 부여된 토큰의 보안이 보장됩니다. 따로 지정한 경우가 아니면, Intune 앱 SDK는 Azure AD에 연결할 때 기본 등록 값을 사용합니다.  
 
@@ -208,7 +208,7 @@ ADAL 바이너리에 앱을 연결하려면 다음 단계를 수행합니다.
 
 ### <a name="if-your-app-does-not-use-adal"></a>앱에서 ADAL을 사용하지 않는 경우
 
-위에서 언급했듯이 Intune 앱 SDK는 해당 인증 및 조건부 시작 시나리오에 [Azure Active Directory 인증 라이브러리](https://github.com/AzureAD/azure-activedirectory-library-for-objc)를 사용합니다. 또한 ADAL을 사용하여 장치 등록 시나리오가 없는 관리를 위해 MAM 서비스에 사용자 ID를 등록합니다. **앱에서 고유한 인증 메커니즘에 ADAL을 사용하지 않는 경우** Intune 앱 SDK는 ADAL 매개 변수에 대한 기본값을 제공하며, Azure AD에 대한 인증을 처리합니다. 위에 나열된 ADAL 설정에 대한 값을 지정할 필요가 없습니다. 앱에서 사용하는 인증 메커니즘이 있는 경우 ADAL 프롬프트의 맨 위에 표시됩니다. 
+위에서 언급했듯이 Intune 앱 SDK는 해당 인증 및 조건부 시작 시나리오에 [Azure Active Directory 인증 라이브러리](https://github.com/AzureAD/azure-activedirectory-library-for-objc)를 사용합니다. 또한 ADAL을 사용하여 디바이스 등록 시나리오가 없는 관리를 위해 MAM 서비스에 사용자 ID를 등록합니다. **앱에서 고유한 인증 메커니즘에 ADAL을 사용하지 않는 경우** Intune 앱 SDK는 ADAL 매개 변수에 대한 기본값을 제공하며, Azure AD에 대한 인증을 처리합니다. 위에 나열된 ADAL 설정에 대한 값을 지정할 필요가 없습니다. 앱에서 사용하는 인증 메커니즘이 있는 경우 ADAL 프롬프트의 맨 위에 표시됩니다. 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune 앱 SDK에 대한 설정 구성
 
@@ -249,7 +249,7 @@ WebViewHandledURLSchemes | 문자열 배열 | 앱의 WebView에서 처리하는 
 
 ### <a name="overview"></a>개요
 
-Intune 앱 보호 정책을 받으려면 앱에서 Intune MAM 서비스를 사용하여 등록 요청을 시작해야 합니다. 장치 등록 여부에 관계없이 Intune 콘솔에서 앱 보호 정책을 받도록 앱을 구성할 수 있습니다. 등록이 없는 앱 보호 정책(**APP-WE** 또는 MAM-WE라고도 함)을 사용하면 Intune MDM(모바일 장치 관리)에 장치를 등록할 필요 없이 Intune에서 앱을 관리할 수 있습니다. 두 경우 모두 정책을 받으려면 Intune MAM 서비스에 등록해야 합니다.
+Intune 앱 보호 정책을 받으려면 앱에서 Intune MAM 서비스를 사용하여 등록 요청을 시작해야 합니다. 디바이스 등록 여부에 관계없이 Intune 콘솔에서 앱 보호 정책을 받도록 앱을 구성할 수 있습니다. 등록이 없는 앱 보호 정책(**APP-WE** 또는 MAM-WE라고도 함)을 사용하면 Intune MDM(모바일 디바이스 관리)에 디바이스를 등록할 필요 없이 Intune에서 앱을 관리할 수 있습니다. 두 경우 모두 정책을 받으려면 Intune MAM 서비스에 등록해야 합니다.
 
 ### <a name="apps-that-use-adal"></a>ADAL을 사용하는 앱
 
@@ -287,7 +287,7 @@ ADAL을 사용하여 사용자를 로그인하지 않는 앱은 API를 호출하
  (void)loginAndEnrollAccount: (NSString *)identity;
 ```
 
-이 메서드를 호출하면 기존 토큰을 찾을 수 없는 경우 SDK에서 사용자에게 자격 증명을 묻는 메시지를 표시합니다. 그러면 SDK에서 제공된 사용자 계정을 대신하여 Intune MAM 서비스에 앱 등록을 시도합니다. "nil"을 ID로 사용하여 메서드를 호출할 수 있습니다. 이 경우 SDK는 장치의 기존 관리되는 사용자로 등록하거나(MDM), 기존 사용자가 없는 경우 사용자 이름을 입력하라는 메시지를 표시합니다.
+이 메서드를 호출하면 기존 토큰을 찾을 수 없는 경우 SDK에서 사용자에게 자격 증명을 묻는 메시지를 표시합니다. 그러면 SDK에서 제공된 사용자 계정을 대신하여 Intune MAM 서비스에 앱 등록을 시도합니다. "nil"을 ID로 사용하여 메서드를 호출할 수 있습니다. 이 경우 SDK는 디바이스의 기존 관리되는 사용자로 등록하거나(MDM), 기존 사용자가 없는 경우 사용자 이름을 입력하라는 메시지를 표시합니다.
 
 등록에 실패하는 경우 앱은 실패의 세부 정보에 따라 나중에 다시 이 API 호출을 고려해야 합니다. 앱은 대리자를 통해 모든 등록 요청의 결과에 대한 [알림](#Status-result-and-debug-notifications)을 수신할 수 있습니다.
 
@@ -458,7 +458,7 @@ Intune을 사용하여 IT 관리자는 관리되는 앱이 데이터를 저장�
 
 "개인"으로 알려진 위치는 `IntuneMAMSaveLocationOther` 상수로 표시됩니다.
 
-앱이 로컬 장치의 위치로 데이터를 저장할 때는 `IntuneMAMSaveLocationLocalDrive` 상수를 사용해야 합니다.
+앱이 로컬 디바이스의 위치로 데이터를 저장할 때는 `IntuneMAMSaveLocationLocalDrive` 상수를 사용해야 합니다.
 
 ## <a name="share-data-via-uiactivityviewcontroller"></a>UIActivityViewController를 통해 데이터 공유
 
@@ -584,7 +584,7 @@ iOS에서 MAM 대상 앱 구성 정책을 만드는 방법에 대한 자세한 �
 
 기본적으로 SDK는 앱에 전체적으로 정책을 적용합니다. 다중 ID는 ID 단위 수준에서 정책을 적용하기 위해 사용할 수 있는 MAM 기능입니다. 이 기능을 사용하려면 다른 MAM 기능보다 더 많은 앱 참여가 필요합니다.
 
-앱은 활성 ID를 변경하려는 경우 앱 SDK에 알려야 합니다. SDK는 ID 변경이 필요한 경우 앱에도 알립니다. 현재 관리 ID는 하나만 지원됩니다. 사용자가 장치 또는 앱을 등록하고 나면 SDK에서 이 ID를 사용하고 이를 기본 관리 ID로 간주합니다. 앱의 다른 사용자는 무제한 정책 설정이 적용되는 관리되지 않는 항목으로 처리됩니다.
+앱은 활성 ID를 변경하려는 경우 앱 SDK에 알려야 합니다. SDK는 ID 변경이 필요한 경우 앱에도 알립니다. 현재 관리 ID는 하나만 지원됩니다. 사용자가 디바이스 또는 앱을 등록하고 나면 SDK에서 이 ID를 사용하고 이를 기본 관리 ID로 간주합니다. 앱의 다른 사용자는 무제한 정책 설정이 적용되는 관리되지 않는 항목으로 처리됩니다.
 
 ID는 단순히 문자열로 정의됩니다. ID는 대/소문자를 구분하지 않습니다. ID와 관련한 SDK에 대한 요청은 ID를 설정할 때 원래 사용된 것과 같은 대/소문자를 반환하지 않을 수도 있습니다.
 
@@ -711,7 +711,7 @@ SDK는 백그라운드에서 주기적으로 다음 작업을 수행합니다.
 
 ## <a name="submit-your-app-to-the-app-store"></a>앱 스토어에 앱 제출
 
-Intune 앱 SDK의 정적 라이브러리 빌드와 프레임워크 빌드는 둘 다 범용 이진 파일입니다. 따라서 모든 장치와 시뮬레이터 아키텍처에 대한 코드가 있습니다. Apple은 앱에 시뮬레이터 코드가 있는 경우 앱 스토어에 제출된 앱을 거부합니다. 장치 전용 빌드의 정적 라이브러리에 대해 컴파일할 때 링커에서 시뮬레이터 코드를 자동으로 제거합니다. 앱 스토어에 앱을 업로드하기 전에 모든 시뮬레이터 코드를 제거하려면 다음 단계를 수행합니다.
+Intune 앱 SDK의 정적 라이브러리 빌드와 프레임워크 빌드는 둘 다 범용 이진 파일입니다. 따라서 모든 디바이스와 시뮬레이터 아키텍처에 대한 코드가 있습니다. Apple은 앱에 시뮬레이터 코드가 있는 경우 앱 스토어에 제출된 앱을 거부합니다. 디바이스 전용 빌드의 정적 라이브러리에 대해 컴파일할 때 링커에서 시뮬레이터 코드를 자동으로 제거합니다. 앱 스토어에 앱을 업로드하기 전에 모든 시뮬레이터 코드를 제거하려면 다음 단계를 수행합니다.
 
 1. 데스크톱에 `IntuneMAM.framework`가 있는지 확인합니다.
 
@@ -724,4 +724,4 @@ Intune 앱 SDK의 정적 라이브러리 빌드와 프레임워크 빌드는 둘
     ```bash
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
-    첫 번째 명령은 프레임워크의 DYLIB 파일에서 시뮬레이터 아키텍처를 제거합니다. 두 번째 명령은 장치 전용 DYLIB 파일을 프레임워크 디렉터리에 다시 복사합니다.
+    첫 번째 명령은 프레임워크의 DYLIB 파일에서 시뮬레이터 아키텍처를 제거합니다. 두 번째 명령은 디바이스 전용 DYLIB 파일을 프레임워크 디렉터리에 다시 복사합니다.

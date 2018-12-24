@@ -39,7 +39,7 @@ Intune 앱 SDK는 다음 파일로 구성됩니다.
 * **Microsoft.Intune.MAM.SDK.Supp또는t.v7.jar**: Android v7 지원 라이브러리를 사용하는 앱 내에서 MAM을 사용하도록 설정하는 데 필요한 클래스입니다.
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**: Android v17 지원 라이브러리를 사용하는 앱 내에서 MAM을 사용하도록 설정하는 데 필요한 클래스입니다. 
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**: `android.support.text` 패키지에서 Android 지원 라이브러리 클래스를 사용하는 앱 내에서 MAM을 사용하도록 설정하는 데 필요한 클래스입니다.
-* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: 이 jar 파일에는 최신 디바이스에만 있지만 MAMActivity의 메서드에 의해 참조되는 Android 시스템 클래스용 스텁이 포함됩니다. 새로운 장치는 이 스텁 클래스를 무시합니다. 이 jar 파일은 앱이 MAMActivity에서 파생되는 클래스에 리플렉션을 수행하는 경우에만 필요하며 대부분의 앱에는 포함할 필요가 없습니다. 이 jar 파일을 사용하는 경우 모든 클래스를 ProGuard에서 제외시키는 데 주의해야 합니다. 모두 "android" 루트 패키지 안에 있습니다.
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: 이 jar 파일에는 최신 디바이스에만 있지만 MAMActivity의 메서드에 의해 참조되는 Android 시스템 클래스용 스텁이 포함됩니다. 새로운 디바이스는 이 스텁 클래스를 무시합니다. 이 jar 파일은 앱이 MAMActivity에서 파생되는 클래스에 리플렉션을 수행하는 경우에만 필요하며 대부분의 앱에는 포함할 필요가 없습니다. 이 jar 파일을 사용하는 경우 모든 클래스를 ProGuard에서 제외시키는 데 주의해야 합니다. 모두 "android" 루트 패키지 안에 있습니다.
 * **com.microsoft.intune.mam.build.jar**: [SDK 통합에 도움이 되는](#build-tooling) Gradle 플러그 인입니다.
 * **CHANGELOG.txt**: 각 SDK 버전에서 변경된 내용의 레코드를 제공합니다.
 * **THIRDPARTYNOTICES.TXT**:  앱에 컴파일될 타사 및/또는 OSS 코드를 확인하는 특성 알림입니다.
@@ -50,12 +50,12 @@ Intune 앱 SDK는 다음 파일로 구성됩니다.
 
 
 ### <a name="company-portal-app"></a>회사 포털 앱
-Android용 Intune 앱 SDK가 작동하려면 장치에 앱 보호 정책을 사용하기 위한 [회사 포털](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 앱이 있어야 합니다. 회사 포털이 Intune 서비스에서 앱 보호 정책을 검색합니다. 앱을 초기화할 때 정책과 회사 포털에서 해당 정책을 적용하는 코드를 로드합니다.
+Android용 Intune 앱 SDK가 작동하려면 디바이스에 앱 보호 정책을 사용하기 위한 [회사 포털](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 앱이 있어야 합니다. 회사 포털이 Intune 서비스에서 앱 보호 정책을 검색합니다. 앱을 초기화할 때 정책과 회사 포털에서 해당 정책을 적용하는 코드를 로드합니다.
 
 > [!NOTE]
-> 회사 포털 앱이 장치에 없으면 Intune 관리 앱은 Intune 앱 보호 정책을 지원하지 않는 일반 앱처럼 작동합니다.
+> 회사 포털 앱이 디바이스에 없으면 Intune 관리 앱은 Intune 앱 보호 정책을 지원하지 않는 일반 앱처럼 작동합니다.
 
-장치 등록 없이 앱 보호를 사용하기 위해 사용자가 회사 포털 앱을 통해 장치를 등록할 필요가 _**없습니다**_.
+디바이스 등록 없이 앱 보호를 사용하기 위해 사용자가 회사 포털 앱을 통해 디바이스를 등록할 필요가 _**없습니다**_.
 
 ## <a name="sdk-integration"></a>SDK 통합
 
@@ -620,7 +620,7 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 * **SkipBroker**는 ClientID가 브로커 리디렉션 URI를 사용하도록 구성되지 않은 경우 사용됩니다. 기본값은 "false"입니다.
     * **ADAL을 통합하지 않고** **장치 수준에서 조정된 인증/SSO에 참여하지 않으려는** 앱의 경우 “true”로 설정되어야 합니다. 이 값이 “true”이면 유일하게 사용되는 리디렉션 URI는 NonBrokerRedirectURI입니다.
 
-    * 장치 수준 SSO 조정을 지원하는 앱의 경우 “false”입니다. 값이 "false"이면 시스템의 브로커 가용성을 기반으로 SDK에서 [`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android)의 결과와 NonBrokerRedirectURI 중에 브로커를 선택합니다. 일반적으로 브로커는 회사 포털 앱 또는 Azure Authenticator에서 사용할 수 있습니다.
+    * 디바이스 수준 SSO 조정을 지원하는 앱의 경우 “false”입니다. 값이 "false"이면 시스템의 브로커 가용성을 기반으로 SDK에서 [`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android)의 결과와 NonBrokerRedirectURI 중에 브로커를 선택합니다. 일반적으로 브로커는 회사 포털 앱 또는 Azure Authenticator에서 사용할 수 있습니다.
 
 ### <a name="common-adal-configurations"></a>일반적인 ADAL 구성
 
@@ -673,13 +673,13 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 6. 앱이 승인 목록에 추가되면 [앱 기반 CA를 구성하고](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) 앱 로그인이 제대로 완료되는지 확인하여 유효성을 검사합니다.
 
 
-## <a name="app-protection-policy-without-device-enrollment"></a>장치 등록이 없는 앱 보호 정책
+## <a name="app-protection-policy-without-device-enrollment"></a>디바이스 등록이 없는 앱 보호 정책
 
 ### <a name="overview"></a>개요
-장치 등록이 없는 Intune 앱 보호 정책(APP-WE 또는 MAM-WE라고도 함)은 Intune MDM에 장치를 등록하지 않고도 Intune에서 앱을 관리할 수 있도록 허용합니다. APP-WE는 장치 등록 유무에 상관없이 작동합니다. 장치에 여전히 회사 포털을 설치해야 하지만, 사용자가 회사 포털에 로그인하여 장치를 등록하지 않아도 됩니다.
+디바이스 등록이 없는 Intune 앱 보호 정책(APP-WE 또는 MAM-WE라고도 함)은 Intune MDM에 디바이스를 등록하지 않고도 Intune에서 앱을 관리할 수 있도록 허용합니다. APP-WE는 디바이스 등록 유무에 상관없이 작동합니다. 디바이스에 여전히 회사 포털을 설치해야 하지만, 사용자가 회사 포털에 로그인하여 디바이스를 등록하지 않아도 됩니다.
 
 > [!NOTE]
-> 모든 앱에서 장치 등록이 없는 앱 보호 정책을 지원해야 합니다.
+> 모든 앱에서 디바이스 등록이 없는 앱 보호 정책을 지원해야 합니다.
 
 ### <a name="workflow"></a>워크플로
 
@@ -859,12 +859,12 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 |AUTHORIZATION_NEEDED | 이 결과는 앱의 등록된 `MAMServiceAuthenticationCallback` 인스턴스에서 토큰을 제공하지 않거나 제공된 토큰이 유효하지 않음을 나타냅니다.  가능하면 앱에서 유효한 토큰을 획득하고 `updateToken()`을 호출해야 합니다. |
 | NOT_LICENSED | 사용자에게 Intune에 대한 사용권이 없거나 Intune MAM 서비스에 연결하려 했지만 실패했습니다.  앱은 비관리(정상) 상태로 지속되어야 하며 사용자를 차단하지 않아야 합니다.  사용자에게 나중에 사용권이 부여되는 경우를 대비하여 주기적으로 등록을 시도합니다. |
 | ENROLLMENT_SUCCEEDED | 등록에 성공하거나 사용자가 이미 등록되었습니다.  등록에 성공하면 이 알림 전에 정책 새로 고침 알림이 전송됩니다.  회사 데이터에 액세스하도록 허용해야 합니다. |
-| ENROLLMENT_FAILED | 등록에 실패했습니다.  자세한 내용은 장치 로그에 있습니다.  사용자에게 Intune에 대한 사용권이 있음이 이미 확인되었으므로 앱에서는 이 상태로 회사에 액세스하게 허용하지 않아야 합니다.|
-| WRONG_USER | MAM 서비스를 통해 장치당 한 명의 사용자만 앱을 등록할 수 있습니다.  다른 사용자로 등록하려면 등록된 모든 앱을 먼저 등록 취소해야 합니다.  그렇지 않으면 이 앱을 기본 사용자로 등록해야 합니다.  사용권을 확인한 다음 이 검사가 수행되므로, 앱을 성공적으로 등록할 때까지 사용자가 회사 데이터에 액세스하지 못하게 차단해야 합니다.|
+| ENROLLMENT_FAILED | 등록에 실패했습니다.  자세한 내용은 디바이스 로그에 있습니다.  사용자에게 Intune에 대한 사용권이 있음이 이미 확인되었으므로 앱에서는 이 상태로 회사에 액세스하게 허용하지 않아야 합니다.|
+| WRONG_USER | MAM 서비스를 통해 디바이스당 한 명의 사용자만 앱을 등록할 수 있습니다.  다른 사용자로 등록하려면 등록된 모든 앱을 먼저 등록 취소해야 합니다.  그렇지 않으면 이 앱을 기본 사용자로 등록해야 합니다.  사용권을 확인한 다음 이 검사가 수행되므로, 앱을 성공적으로 등록할 때까지 사용자가 회사 데이터에 액세스하지 못하게 차단해야 합니다.|
 | UNENROLLMENT_SUCCEEDED | 등록이 취소되었습니다.|
-| UNENROLLMENT_FAILED | 등록 취소 요청이 실패했습니다.  자세한 내용은 장치 로그에 있습니다. |
+| UNENROLLMENT_FAILED | 등록 취소 요청이 실패했습니다.  자세한 내용은 디바이스 로그에 있습니다. |
 | PENDING | 사용자의 초기 등록을 진행 중입니다.  등록 결과를 알 때까지 앱에서 회사 데이터에 대한 액세스를 차단할 수 있지만, 필수는 아닙니다. |
-| COMPANY_PORTAL_REQUIRED | Intune에 대한 사용권이 부여되지만, 장치에 회사 포털 앱을 설치해야 앱을 등록할 수 있습니다. Intune 앱 SDK에서 지정된 사용자가 앱에 액세스하지 못하게 차단하고 회사 포털 앱을 설치하도록 지시합니다(자세한 내용은 아래 참조). |
+| COMPANY_PORTAL_REQUIRED | Intune에 대한 사용권이 부여되지만, 디바이스에 회사 포털 앱을 설치해야 앱을 등록할 수 있습니다. Intune 앱 SDK에서 지정된 사용자가 앱에 액세스하지 못하게 차단하고 회사 포털 앱을 설치하도록 지시합니다(자세한 내용은 아래 참조). |
 
 
 ### <a name="company-portal-requirement-prompt-override-optional"></a>회사 포털 요구 사항 프롬프트 재정의(선택사항)
@@ -896,9 +896,9 @@ Android Marshmallow(API 23) 현재, Android에는 앱이 데이터를 백업하�
 
 ### <a name="auto-backup-for-apps"></a>앱에 대한 자동 백업
 
-Android는 앱의 대상 API에 관계없이 Android Marshmallow 장치에서 앱의 Google Drive에 [자동 전체 백업](https://developer.android.com/guide/topics/data/autobackup.html) 기능을 제공하기 시작했습니다. AndroidManifest.xml에서 `android:allowBackup`을 **false**로 명시적으로 설정하면 앱은 Android에서 수행하는 백업용 큐에 추가되지 않고 “회사” 데이터가 앱 내에서 유지됩니다. 이 경우 추가 작업이 필요하지 않습니다.
+Android는 앱의 대상 API에 관계없이 Android Marshmallow 디바이스에서 앱의 Google Drive에 [자동 전체 백업](https://developer.android.com/guide/topics/data/autobackup.html) 기능을 제공하기 시작했습니다. AndroidManifest.xml에서 `android:allowBackup`을 **false**로 명시적으로 설정하면 앱은 Android에서 수행하는 백업용 큐에 추가되지 않고 “회사” 데이터가 앱 내에서 유지됩니다. 이 경우 추가 작업이 필요하지 않습니다.
 
-그러나 매니페스트 파일에서 `android:allowBackup`을 지정하지 않더라도 기본적으로 `android:allowBackup` 특성은 true로 설정됩니다. 즉, 모든 앱 데이터가 사용자의 Google Drive 계정에 자동으로 백업되는, 이 동작은 **데이터 누출의 위험**이 있습니다. 따라서 데이터 보호가 적용되도록 아래 개략적인 설명대로 SDK를 변경해야 합니다.  Android Marshmallow 장치에서 앱을 실행하려면 아래의 지침에 따라 고객 데이터를 제대로 보호해야 합니다.  
+그러나 매니페스트 파일에서 `android:allowBackup`을 지정하지 않더라도 기본적으로 `android:allowBackup` 특성은 true로 설정됩니다. 즉, 모든 앱 데이터가 사용자의 Google Drive 계정에 자동으로 백업되는, 이 동작은 **데이터 누출의 위험**이 있습니다. 따라서 데이터 보호가 적용되도록 아래 개략적인 설명대로 SDK를 변경해야 합니다.  Android Marshmallow 디바이스에서 앱을 실행하려면 아래의 지침에 따라 고객 데이터를 제대로 보호해야 합니다.  
 
 Intune을 통해 XML에서 사용자 지정 규칙을 정의하는 기능을 비롯하여 Android에서 제공하는 모든 [자동 백업 기능](https://developer.android.com/guide/topics/data/autobackup.html)을 이용할 수 있지만 아래 단계에 따라 데이터를 보호해야 합니다.
 
@@ -996,10 +996,10 @@ BackupAgent를 사용하면 백업되는 데이터에 대해 훨씬 더 명확�
 > [!NOTE]
 >  올바른 앱 참여가 없으면 데이터가 누수되고 다른 보안 문제가 발생할 수 있습니다.
 
-사용자가 장치 또는 앱을 등록하고 나면 SDK에서 이 ID를 등록하고 이를 기본 Intune 관리 ID로 간주합니다. 앱의 다른 사용자는 무제한 정책 설정이 적용되는 관리되지 않는 항목으로 처리됩니다.
+사용자가 디바이스 또는 앱을 등록하고 나면 SDK에서 이 ID를 등록하고 이를 기본 Intune 관리 ID로 간주합니다. 앱의 다른 사용자는 무제한 정책 설정이 적용되는 관리되지 않는 항목으로 처리됩니다.
 
 > [!NOTE]
-> 현재 Intune 관리 ID는 장치당 하나만 지원됩니다.
+> 현재 Intune 관리 ID는 디바이스당 하나만 지원됩니다.
 
 ID는 단순히 문자열로 정의됩니다. ID는 **대/소문자를 구분하지 않음**이며, ID와 관련한 SDK에 대한 요청은 ID를 설정할 때 원래 사용된 것과 같은 대/소문자를 반환하지 않을 수도 있습니다.
 
@@ -1602,7 +1602,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 * [일반적인 ADAL 구성 #2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations)의 단계에 따라 앱이 Intune 모바일 응용 프로그램 관리 서비스에 등록되어 있는지 확인합니다.
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK 사용
-이러한 지침은 최종 사용자 장치에서 앱을 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱 개발자에게만 적용됩니다.
+이러한 지침은 최종 사용자 디바이스에서 앱을 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱 개발자에게만 적용됩니다.
 
 1. [Android 가이드용 Intune SDK](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)에 정의된 단계에 따라 ADAL을 구성합니다.
    > [!NOTE] 
@@ -1615,7 +1615,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 
 4. 매니페스트에 다음 값을 입력하여 필요한 MAM 정책을 설정합니다. ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
-   > 이렇게 하면 사용자는 장치에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
+   > 이렇게 하면 사용자는 디바이스에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
    >
    > 이것은 앱에서 유일한 MAM-WE 통합이어야 합니다. MAMEnrollmentManager API를 호출하려는 다른 시도가 있으면 충돌이 발생합니다.
 
@@ -1625,7 +1625,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 ```
 
 > [!NOTE] 
-> 이렇게 하면 사용자는 장치에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
+> 이렇게 하면 사용자는 디바이스에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
 
 ## <a name="limitations"></a>제한 사항
 
@@ -1660,7 +1660,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 일부 MAM 기본 클래스(예: MAMActivity, MAMDocumentsProvider)는 특정 API 수준 위에만 존재하는 반환 형식 또는 매개 변수를 사용하는 메서드(원래 Android 기본 클래스를 기반으로)를 포함합니다. 이런 이유 때문에 리플렉션을 사용하여 앱 구성 요소의 모든 메서드를 열거하는 것이 항상 가능하지는 않습니다. 이 제한 사항은 MAM에 국한되지 않으며 앱 자체가 Android 기본 클래스에서 이러한 메서드를 구현하는 경우 적용되는 것과 동일한 제한 사항입니다.
 
 ### <a name="robolectric"></a>Robolectric
-Robolectric에서는 MAM SDK 동작 테스트가 지원되지 않습니다. Robelectric에서는 실제 장치나 에뮬레이터에서 동작을 정확하게 재현하지는 못하기 때문에 Robelectric에서의 MAM SDK 실행에는 알려진 문제가 있습니다. 
+Robolectric에서는 MAM SDK 동작 테스트가 지원되지 않습니다. Robelectric에서는 실제 디바이스나 에뮬레이터에서 동작을 정확하게 재현하지는 못하기 때문에 Robelectric에서의 MAM SDK 실행에는 알려진 문제가 있습니다. 
 
 Roboelectric에서 응용 프로그램을 테스트해야 할 경우 권장되는 해결 방법은 응용 프로그램 클래스 논리를 도우미로 이동하고 MAMApplication에서 상속하지 않는 응용 프로그램 클래스로 단위 테스트 apk를 생성하는 것입니다.
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK 소비자의 기대

@@ -1,7 +1,7 @@
 ---
 title: Exchange Online용 Intune Exchange Connector
 titleSuffix: ''
-description: Intune을 Office 365 Exchange 서비스에 연결하여 Exchange ActiveSync MDM(모바일 장치 관리)을 지원합니다.
+description: Intune을 Office 365 Exchange 서비스에 연결하여 Exchange ActiveSync MDM(모바일 디바이스 관리)을 지원합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -35,7 +35,7 @@ ms.locfileid: "52184219"
 |              요구 사항               |                                                                                                            추가 정보                                                                                                            |
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exchange Online 구성 및 실행 |                                                                                 [Exchange Online](https://technet.microsoft.com/library/jj200580.aspx)                                                                                 |
-|   모바일 장치 관리 기관   |                                                       [Microsoft Intune으로 모바일 장치 관리 기관 설정](mdm-authority-set.md)                                                       |
+|   모바일 디바이스 관리 기관   |                                                       [Microsoft Intune으로 모바일 장치 관리 기관 설정](mdm-authority-set.md)                                                       |
 |       Microsoft Exchange 버전       |                                                                                      Exchange Online 또는 신규 Exchange Online Dedicated 서비스                                                                                      |
 |    Active Directory 동기화    | Intune Connector를 사용하려면 로컬 사용자 및 보안 그룹이 Azure Active Directory의 인스턴스와 동기화되도록 [Active Directory 동기화를 설정](/intune/users-add)해야 합니다. |
 

@@ -1,7 +1,7 @@
 ---
-title: 장치 등록 없이 관리되는 앱용 앱 구성 정책
+title: 디바이스 등록 없이 관리되는 앱용 앱 구성 정책
 titlesuffix: Microsoft Intune
-description: 장치 등록 없이 관리되는 앱용 앱 정책 구성하는 방법을 알아봅니다.
+description: 디바이스 등록 없이 관리되는 앱용 앱 정책 구성하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -23,11 +23,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/04/2018
 ms.locfileid: "52829107"
 ---
-# <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>장치 등록 없이 관리되는 앱용 앱 구성 정책 추가
+# <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>디바이스 등록 없이 관리되는 앱용 앱 구성 정책 추가
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-등록되지 않은 장치에도 Intune 앱 SDK를 지원하는 관리되는 앱으로 앱 구성 정책을 사용할 수 있습니다. 
+등록되지 않은 디바이스에도 Intune 앱 SDK를 지원하는 관리되는 앱으로 앱 구성 정책을 사용할 수 있습니다. 
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.

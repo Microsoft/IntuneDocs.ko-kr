@@ -1,6 +1,6 @@
 ---
-title: 암호화를 사용하여 Windows 장치를 보호하는 방법 | Microsoft 문서
-description: Windows 장치를 암호화하는 방법을 설명합니다.
+title: 암호화를 사용하여 Windows 디바이스를 보호하는 방법 | Microsoft 문서
+description: Windows 디바이스를 암호화하는 방법을 설명합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,17 +24,17 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43147143"
 ---
-# <a name="how-to-protect-your-windows-device-using-encryption"></a>암호화를 사용하여 Windows 장치를 보호하는 방법
+# <a name="how-to-protect-your-windows-device-using-encryption"></a>암호화를 사용하여 Windows 디바이스를 보호하는 방법
 
-장치를 암호화하면 장치의 정보를 보호 코드의 계층에 래핑하여 권한이 없는 사용자가 해당 정보에 액세스하는 것을 방지합니다. 정보 보안을 보장하기 위한 단계로서, 조직에서는 Windows 장치를 암호화하여 회사 또는 학교 데이터를 보호할 것을 요구합니다. 
+디바이스를 암호화하면 디바이스의 정보를 보호 코드의 계층에 래핑하여 권한이 없는 사용자가 해당 정보에 액세스하는 것을 방지합니다. 정보 보안을 보장하기 위한 단계로서, 조직에서는 Windows 디바이스를 암호화하여 회사 또는 학교 데이터를 보호할 것을 요구합니다. 
 
-Windows Phone이 있고 이를 등록한 경우 암호화가 필요하면 장치가 자동으로 암호화됩니다.
+Windows Phone이 있고 이를 등록한 경우 암호화가 필요하면 디바이스가 자동으로 암호화됩니다.
 
 > [!Note]
 > 암호화는 Windows 10 Home에서 지원되지 않습니다. [Windows 10 Home에서 Windows 10 Pro로](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro) 업그레이드하는 방법에 대해 알아보세요.
 
 
-데스크톱 장치가 있는 경우 다음 지침에서는 암호화하는 방법을 설명합니다.
+데스크톱 디바이스가 있는 경우 다음 지침에서는 암호화하는 방법을 설명합니다.
 
 1.  **BitLocker 관리** 앱을 검색한 다음 시작합니다.
 

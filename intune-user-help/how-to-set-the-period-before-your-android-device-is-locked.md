@@ -24,11 +24,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43148267"
 ---
-# <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Android 장치에서 화면이 잠기기까지 걸리는 기간을 설정하는 방법
+# <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Android 디바이스에서 화면이 잠기기까지 걸리는 기간을 설정하는 방법
 
-회사에 다시 연결하려면 사용 중인 장치 유형에 대한 단계에 따라 장치의 암호 제한 시간을 설정해야 합니다.
+회사에 다시 연결하려면 사용 중인 디바이스 유형에 대한 단계에 따라 디바이스의 암호 제한 시간을 설정해야 합니다.
 
-## <a name="native-non-samsung-knox-device"></a>네이티브(비 Samsung Knox) 장치
+## <a name="native-non-samsung-knox-device"></a>네이티브(비 Samsung Knox) 디바이스
 
 1.  장치의 **설정**에서 **보안** &gt; **자동으로 잠금**을 누릅니다(일부 장치에서는 **다음 시간 후 전화 잠금**으로 표시됨).
 
@@ -36,7 +36,7 @@ ms.locfileid: "43148267"
 
 2.  암호 제한 시간 값을 선택합니다.
 
-## <a name="samsung-knox-device"></a>Samsung Knox 장치
+## <a name="samsung-knox-device"></a>Samsung Knox 디바이스
 
 1.  장치의 **설정**에서 **잠금 화면 및 보안** &gt; **자동으로 잠금**을 누릅니다.
 

@@ -1,6 +1,6 @@
 ---
-title: Windows 10 장치용 Microsoft Intune에서 PowerShell 스크립트 추가 - Azure | Microsoft Docs
-description: PowerShell 스크립트를 추가하고, Azure Active Directory 그룹에 스크립트 정책을 할당하고, 보고서를 사용하여 스크립트를 모니터링하고, Microsoft Intune에서 Windows 10 장치에 추가한 스크립트를 삭제하는 단계를 참조합니다. 또한 몇 가지 일반적인 문제 및 해결 방법을 참조하세요.
+title: Windows 10 디바이스용 Microsoft Intune에서 PowerShell 스크립트 추가 - Azure | Microsoft Docs
+description: PowerShell 스크립트를 추가하고, Azure Active Directory 그룹에 스크립트 정책을 할당하고, 보고서를 사용하여 스크립트를 모니터링하고, Microsoft Intune에서 Windows 10 디바이스에 추가한 스크립트를 삭제하는 단계를 참조합니다. 또한 몇 가지 일반적인 문제 및 해결 방법을 참조하세요.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,13 +22,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/04/2018
 ms.locfileid: "52860965"
 ---
-# <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 장치를 위한 Intune에서의 PowerShell 스크립트 관리
+# <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 디바이스를 위한 Intune에서의 PowerShell 스크립트 관리
 
 Intune 관리 확장을 사용하여 Windows 10 디바이스에서 실행되도록 Intune에서 PowerShell 스크립트를 업로드합니다. 관리 확장은 Windows 10 MDM(모바일 디바이스 관리)을 개선하며 사용자가 최신 관리로 더 손쉽게 이행할 수 있도록 합니다.
 
 ## <a name="moving-to-modern-management"></a>최신 관리로 이동
 
-최종 사용자 컴퓨팅은 디지털 변형을 거치는 중입니다. 기존의 클래식 IT는 단일 장치 플랫폼, 회사 소유 장치, 사무실에서 일하는 사용자, 다양한 수동적인 IT 프로세스에 초점을 맞추고 있습니다. 최신 작업 공간에서는 사용자와 회사가 소유한 여러 플랫폼을 사용하고, 사용자가 장소에 구애받지 않고 일할 수 있으며, 자동화된 능동적 IT 프로세스를 제공합니다.
+최종 사용자 컴퓨팅은 디지털 변형을 거치는 중입니다. 기존의 클래식 IT는 단일 디바이스 플랫폼, 회사 소유 디바이스, 사무실에서 일하는 사용자, 다양한 수동적인 IT 프로세스에 초점을 맞추고 있습니다. 최신 작업 공간에서는 사용자와 회사가 소유한 여러 플랫폼을 사용하고, 사용자가 장소에 구애받지 않고 일할 수 있으며, 자동화된 능동적 IT 프로세스를 제공합니다.
 
 Microsoft Intune과 같은 MDM 서비스는 Windows 10을 실행하는 모바일 및 데스크톱 디바이스를 관리할 수 있습니다. 기본 제공 Windows 10 관리 클라이언트는 Intune과 통신하여 엔터프라이즈 관리 작업을 실행합니다. 고급 디바이스 구성, 문제 해결 및 현재 Windows 10 MDM에서 사용할 수 없는 레거시 Win32 앱 관리와 같은 일부 작업이 필요할 수도 있습니다. 이러한 기능의 경우 Windows 10 디바이스에서 Intune 소프트웨어 클라이언트를 실행할 수 있습니다. [Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교](pc-management-comparison.md)는 좋은 리소스입니다.
 
@@ -47,7 +47,7 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고, **Intune**을 기준으로 필터링한 다음, **Microsoft Intune**을 선택합니다.
 2. **장치 구성** > **PowerShell 스크립트** > **추가**를 차례로 선택합니다.
 3. PowerShell 스크립트에 대한 **이름** 및 **설명**을 입력합니다. **스크립트 위치**에 대한 PowerShell 스크립트를 찾습니다. 스크립트 크기는 200KB(ASCII) 또는 100KB(유니코드) 미만이어야 합니다.
-4. **구성**을 선택합니다. 그런 다음, 장치(**예**) 또는 시스템 컨텍스트(**아니요**)에서 사용자의 자격 증명을 사용하여 스크립트를 실행하도록 선택합니다. 기본적으로 스크립트는 시스템 컨텍스트에서 실행됩니다. 스크립트를 시스템 컨텍스트에서 실행해야 하는 경우 외에는 **예**를 선택합니다. 
+4. **구성**을 선택합니다. 그런 다음, 디바이스(**예**) 또는 시스템 컨텍스트(**아니요**)에서 사용자의 자격 증명을 사용하여 스크립트를 실행하도록 선택합니다. 기본적으로 스크립트는 시스템 컨텍스트에서 실행됩니다. 스크립트를 시스템 컨텍스트에서 실행해야 하는 경우 외에는 **예**를 선택합니다. 
   ![PowerShell 스크립트 추가 창](./media/mgmt-extension-add-script.png)
 5. 신뢰할 수 있는 게시자가 스크립트를 서명해야 하는지 여부를 선택합니다(**예**). 기본적으로 서명할 스크립트에 대한 요구 사항은 없습니다. 
 6. **확인**, **만들기**를 차례로 클릭하여 스크립트를 저장합니다.
@@ -70,7 +70,7 @@ Intune 관리 확장 클라이언트는 Intune으로 1시간에 한 번 확인�
 
 ## <a name="monitor-run-status-for-powershell-scripts"></a>PowerShell 스크립트에 대한 실행 상태 모니터
 
-Azure Portal에서 사용자 및 장치에 대한 PowerShell 스크립트의 실행 상태를 모니터링할 수 있습니다.
+Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트의 실행 상태를 모니터링할 수 있습니다.
 
 **PowerShell 스크립트**에서 모니터링할 스크립트를 선택하고, **모니터**를 선택한 다음, 다음 보고서 중 하나를 선택합니다.
 

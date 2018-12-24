@@ -45,7 +45,7 @@ Intune 장치 관리에 등록하려면 사용자 계정이 있어야 합니다.
 
 ## <a name="assign-a-license-to-the-user"></a>사용자에게 라이선스 할당
 
-사용자를 만든 후에는 [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)을 사용하여 해당 사용자에게 Intune 라이선스를 할당해야 합니다. 라이선스를 할당하지 않으면 사용자가 장치를 Intune에 등록할 수 없습니다. 
+사용자를 만든 후에는 [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)을 사용하여 해당 사용자에게 Intune 라이선스를 할당해야 합니다. 라이선스를 할당하지 않으면 사용자가 디바이스를 Intune에 등록할 수 없습니다. 
 
 1. Intune에 로그인하는 데 사용한 것과 동일한 자격 증명으로 [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)에 로그인합니다.
 2. **사용자** > **활성 사용자**를 선택하고 방금 만든 사용자를 선택합니다.

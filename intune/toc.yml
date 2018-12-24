@@ -32,11 +32,11 @@ items:
     href: quickstart-create-group.md
   - name: 자동 등록 설정
     href: quickstart-setup-auto-enrollment.md
-  - name: Windows 10 장치 등록
+  - name: Windows 10 디바이스 등록
     href: quickstart-enroll-windows-device.md
-  - name: 장치 준수 정책 만들기
+  - name: 디바이스 준수 정책 만들기
     href: quickstart-set-password-length-android.md
-  - name: 비규격 장치로 알림 보내기
+  - name: 비규격 디바이스로 알림 보내기
     href: quickstart-send-notification.md
   - name: 앱 추가 및 할당
     href: quickstart-add-assign-app.md
@@ -44,15 +44,15 @@ items:
     href: quickstart-create-assign-app-policy.md
   - name: 사용자 지정 역할 만들기 및 할당
     href: quickstart-create-custom-role.md
-  - name: 메일 장치 프로필 만들기
+  - name: 메일 디바이스 프로필 만들기
     href: quickstart-email-profile.md
 - name: 자습서
   items:
-  - name: 관리 장치의 이메일 보호
+  - name: 관리 디바이스의 이메일 보호
     href: tutorial-protect-email-on-enrolled-devices.md
   - name: 관리되지 않는 디바이스의 이메일 보호
     href: tutorial-protect-email-on-unmanaged-devices.md
-  - name: Autopilot을 사용하여 Windows 장치 등록
+  - name: Autopilot을 사용하여 Windows 디바이스 등록
     href: tutorial-use-autopilot-enroll-devices.md
 - name: 시나리오 구현 가이드
   items:
@@ -62,17 +62,17 @@ items:
     href: password-reset.md
   - name: 무단 액세스 방지
     href: data-outside-protect.md
-  - name: 관리되지 않는 장치에서 데이터 누수 방지
+  - name: 관리되지 않는 디바이스에서 데이터 누수 방지
     href: data-leak-prevention.md
 - name: 개념
   items:
-  - name: 장치 관리란?
+  - name: 디바이스 관리란?
     href: what-is-device-management.md
   - name: Azure Portal 탐색
     href: get-started-azure.md
   - name: 상위 수준 아키텍처
     href: high-level-architecture.md
-  - name: 장치 수명 주기
+  - name: 디바이스 수명 주기
     href: device-lifecycle.md
   - name: 앱 수명 주기
     href: app-lifecycle.md
@@ -115,7 +115,7 @@ items:
       items:
       - name: 기본 설정
         href: migration-guide-setup.md
-      - name: 장치 및 앱 관리 정책 구성
+      - name: 디바이스 및 앱 관리 정책 구성
         href: migration-guide-configure-policies.md
       - name: 앱 보호 정책 구성
         href: migration-guide-app-protection-policies.md
@@ -154,7 +154,7 @@ items:
       href: licenses.md
     - name: MDM 기관 설정
       href: mdm-authority-set.md
-  - name: 장치 등록
+  - name: 디바이스 등록
     href: device-enrollment.md
     items:
     - name: 등록 옵션
@@ -170,9 +170,9 @@ items:
         href: corporate-identifiers-add.md
       - name: Multi-factor Authentication
         href: multi-factor-authentication.md
-      - name: 장치 등록 관리자
+      - name: 디바이스 등록 관리자
         href: device-enrollment-manager-enroll.md
-      - name: 그룹에 장치 매핑
+      - name: 그룹에 디바이스 매핑
         href: device-group-mapping.md
     - name: Windows 등록 설정
       items:
@@ -198,14 +198,14 @@ items:
         href: android-work-profile-enroll.md
       - name: Android 키오스크 등록 설정
         href: android-kiosk-enroll.md
-      - name: Android 회사 프로필 장치 관리
+      - name: Android 회사 프로필 디바이스 관리
         href: android-enterprise-overview.md
       - name: 삼성 Knox 모바일 등록
         href: android-samsung-knox-mobile-enroll.md
     - name: iOS 등록 설정
       href: ios-enroll.md
       items:
-      - name: 장치 등록 프로그램
+      - name: 디바이스 등록 프로그램
         href: device-enrollment-program-enroll-ios.md
       - name: Apple School Manager
         href: apple-school-manager-set-up-ios.md
@@ -220,46 +220,46 @@ items:
       href: install-the-windows-pc-client-with-microsoft-intune.md
     - name: 중단 보고서
       href: enrollment-report-company-portal-abandon.md
-    - name: 장치 등록 문제 해결
+    - name: 디바이스 등록 문제 해결
       href: troubleshoot-device-enrollment-in-intune.md
-  - name: 장치 관리
+  - name: 디바이스 관리
     href: device-management.md
     items:
-    - name: 장치 관리 기능
+    - name: 디바이스 관리 기능
       href: device-management-capabilities.md
     - name: 활성화 잠금 무시
       href: device-activation-lock-bypass.md
     - name: Windows 새로 시작 관리
       href: device-fresh-start.md
-    - name: 분실한 iOS 장치 찾기
+    - name: 분실한 iOS 디바이스 찾기
       href: device-locate.md
     - name: iOS 분실 모드 사용
       href: device-lost-mode.md
     - name: iOS 감독 모드 설정
       href: device-supervised-mode.md
-    - name: 장치 잠금
+    - name: 디바이스 잠금
       href: device-remote-lock.md
     - name: 암호 초기화
       href: device-passcode-reset.md
-    - name: 장치 다시 시작
+    - name: 디바이스 다시 시작
       href: device-restart.md
     - name: 현재 사용자 로그아웃
       href: device-logout-user.md
     - name: 사용자 제거
       href: device-remove-user.md
-    - name: 장치 지우기
+    - name: 디바이스 지우기
       href: device-erase.md
-    - name: 원격 제어 모바일 장치
+    - name: 원격 제어 모바일 디바이스
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN 재설정
       href: device-windows-pin-reset.md
     - name: Exchange 서비스 커넥터 설치
       href: exchange-service-connector-configure.md
-    - name: 장치 동기화
+    - name: 디바이스 동기화
       href: device-sync.md
-    - name: 장치 인벤토리 검사
+    - name: 디바이스 인벤토리 검사
       href: device-inventory.md
-    - name: 장치 제거
+    - name: 디바이스 제거
       href: devices-wipe.md
   - name: 앱 관리
     href: app-management.md
@@ -318,9 +318,9 @@ items:
     - name: 앱 구성
       href: app-configuration-policies-overview.md
       items:
-      - name: iOS 관리되는 장치
+      - name: iOS 관리되는 디바이스
         href: app-configuration-policies-use-ios.md
-      - name: Android 관리되는 장치
+      - name: Android 관리되는 디바이스
         href: app-configuration-policies-use-android.md
       - name: 관리되는 앱
         href: app-configuration-policies-managed-app.md
@@ -371,12 +371,12 @@ items:
           href: windows-information-protection-policy-create.md
         - name: iOS 앱 간의 데이터 전송 관리
           href: data-transfer-between-apps-manage-ios.md
-  - name: 장치 구성
+  - name: 디바이스 구성
     href: device-profiles.md
     items:
-    - name: 장치 프로필 구성
+    - name: 디바이스 프로필 구성
       href: device-profile-create.md
-    - name: 장치 기능 구성
+    - name: 디바이스 기능 구성
       href: device-features-configure.md
       items:
       - name: iOS 및 MacOS용 AirPrint
@@ -387,13 +387,13 @@ items:
         href: home-screen-settings-ios.md
       - name: iOS용 앱 알림
         href: app-notification-settings-ios.md
-      - name: iOS용 공유 장치
+      - name: iOS용 공유 디바이스
         href: shared-device-settings-ios.md
-      - name: iOS 장치 Single Sign-On용 Intune 구성
+      - name: iOS 디바이스 Single Sign-On용 Intune 구성
         href: sso-ios.md
       - name: iOS용 웹 필터 설정
         href: web-content-filter-settings-ios.md
-    - name: 장치 제한 구성
+    - name: 디바이스 제한 구성
       href: device-restrictions-configure.md
       items:
       - name: Android
@@ -445,7 +445,7 @@ items:
         href: vpn-settings-android.md
       - name: iOS
         href: vpn-settings-ios.md
-      - name: iOS 장치용 앱당 VPN 구성
+      - name: iOS 디바이스용 앱당 VPN 구성
         href: vpn-setting-configure-per-app.md
       - name: macOS
         href: vpn-settings-macos.md
@@ -474,7 +474,7 @@ items:
       href: esim-device-configuration.md
     - name: 교육
       items:
-      - name: iOS 공유 장치
+      - name: iOS 공유 디바이스
         href: education-settings-configure-ios-shared.md
       - name: Windows 10
         href: education-settings-configure.md
@@ -509,7 +509,7 @@ items:
       href: device-profile-monitor.md
     - name: 프로필 문제 해결
       href: device-profile-troubleshoot.md
-  - name: 장치 준수 설정
+  - name: 디바이스 준수 설정
     href: device-compliance-get-started.md
     items:
     - name: Android 정책 만들기
@@ -530,7 +530,7 @@ items:
       href: policy-evaluate.md
     - name: 비준수에 대한 작업
       href: actions-for-noncompliance.md
-    - name: 장치 준수 모니터링
+    - name: 디바이스 준수 모니터링
       href: compliance-policy-monitor.md
   - name: 조건부 액세스 설정
     href: conditional-access.md
@@ -557,7 +557,7 @@ items:
       href: conditional-access-integrate-jamf.md
     - name: Jamf Pro로 관리되는 Mac에서 준수 적용
       href: conditional-access-assign-jamf.md
-  - name: 장치 데이터 보호
+  - name: 디바이스 데이터 보호
     href: device-protect.md
     items:
     - name: 개인 정보 및 개인 데이터
@@ -621,7 +621,7 @@ items:
         items:
         - name: MTD 앱 추가
           href: mtd-apps-ios-app-configuration-policy-add-assign.md
-        - name: MTD 장치 준수 정책 만들기
+        - name: MTD 디바이스 준수 정책 만들기
           href: mtd-device-compliance-policy-create.md
         - name: Intune에서 MTD 사용
           href: mtd-connector-enable.md
@@ -669,7 +669,7 @@ items:
       href: data-google-sends-to-intune.md
   - name: 자동화 및 사용자 지정
     items:
-    - name: 사용자 지정 장치 설정 구성
+    - name: 사용자 지정 디바이스 설정 구성
       href: custom-settings-configure.md
       items:
       - name: 미리 공유한 키를 사용하는 Wi-Fi 프로필
@@ -747,7 +747,7 @@ items:
           href: reports-ref-current-user.md
         - name: 날짜 엔터티에 대한 참조
           href: reports-ref-date.md
-        - name: 장치 엔터티에 대한 참조
+        - name: 디바이스 엔터티에 대한 참조
           href: reports-ref-devices.md
         - name: Intune 관리 확장 엔터티에 대한 참조
           href: reports-ref-intunemanagementextension.md
@@ -755,7 +755,7 @@ items:
           href: reports-ref-mobile-app-management.md
         - name: 정책 엔터티에 대한 참조
           href: reports-ref-policy.md
-        - name: 사용자 장치 연결 엔터티에 대한 참조
+        - name: 사용자 디바이스 연결 엔터티에 대한 참조
           href: reports-ref-user-device.md
         - name: 사용자 엔터티에 대한 참조
           href: reports-ref-user.md

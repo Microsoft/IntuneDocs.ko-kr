@@ -1,7 +1,7 @@
 ---
-title: iOS 장치에 대한 Microsoft Intune 웹 콘텐츠 필터 설정
+title: iOS 디바이스에 대한 Microsoft Intune 웹 콘텐츠 필터 설정
 titlesuffix: ''
-description: iOS를 실행하는 장치에서 웹 사이트에 대한 액세스를 허용하거나 차단하는 데 사용할 수 있는 Microsoft Intune 설정을 알아봅니다.
+description: iOS를 실행하는 디바이스에서 웹 사이트에 대한 액세스를 허용하거나 차단하는 데 사용할 수 있는 Microsoft Intune 설정을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,11 +22,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52187891"
 ---
-# <a name="web-content-filter-settings-for-ios-devices"></a>iOS 장치에 대한 웹 콘텐츠 필터 설정
+# <a name="web-content-filter-settings-for-ios-devices"></a>iOS 디바이스에 대한 웹 콘텐츠 필터 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클에서는 iOS를 실행하는 장치에서 브라우저 URL 액세스를 제어하는 데 사용할 수 있는 Microsoft Intune 설정을 보여줍니다.
+이 아티클에서는 iOS를 실행하는 디바이스에서 브라우저 URL 액세스를 제어하는 데 사용할 수 있는 Microsoft Intune 설정을 보여줍니다.
 
 다음과 같은 두 가지 방법을 사용하여 URL을 구성할 수 있습니다.
 
@@ -37,7 +37,7 @@ URL을 지정하지 않으면 최종 사용자는 microsoft.com, microsoft.net �
 
 ## <a name="get-started"></a>시작
 
-1. 장치 기능 페이지에서 **웹 콘텐츠 필터(감독 모드에서만 해당)** 를 선택합니다.
+1. 디바이스 기능 페이지에서 **웹 콘텐츠 필터(감독 모드에서만 해당)** 를 선택합니다.
 2. **웹 콘텐츠 필터** 창에서 구성할 **필터 형식**을 선택합니다.
     - **구성되지 않음** - 필터링하지 않습니다.
     - **URL 구성**
@@ -60,7 +60,7 @@ URL을 지정하지 않으면 최종 사용자는 microsoft.com, microsoft.net �
 
 1. **웹 콘텐츠 필터** 페이지에서 허용하려는 각 웹 사이트에 대해 다음 설정을 구성합니다.
     - **URL** - 허용할 웹 사이트의 URL을 입력합니다(예: `https://www.contoso.com`).
-    - **책갈피 경로** - 책갈피를 저장할 위치 경로를 입력합니다(예: **/Contoso/Business Apps**). 경로를 추가하지 않으면 장치의 기본 책갈피 폴더에 책갈피가 추가됩니다.
+    - **책갈피 경로** - 책갈피를 저장할 위치 경로를 입력합니다(예: **/Contoso/Business Apps**). 경로를 추가하지 않으면 디바이스의 기본 책갈피 폴더에 책갈피가 추가됩니다.
     - **제목** - 책갈피에 대한 설명이 포함된 제목을 입력합니다.
 2. 각 웹 사이트에 대한 정보를 입력한 후 **추가**를 클릭합니다.
 3. 작업을 마쳤으면 **확인**을 클릭합니다.
@@ -77,4 +77,4 @@ URL을 지정하지 않으면 최종 사용자는 microsoft.com, microsoft.net �
 
 ## <a name="next-steps"></a>다음 단계
 
-이제 선택한 그룹에 장치 프로필을 할당할 수 있습니다. 자세한 내용은 [장치 프로필을 할당하는 방법](device-profile-assign.md)을 참조하세요.
+이제 선택한 그룹에 디바이스 프로필을 할당할 수 있습니다. 자세한 내용은 [디바이스 프로필을 할당하는 방법](device-profile-assign.md)을 참조하세요.

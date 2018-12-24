@@ -33,7 +33,7 @@ Intune 관리자는 이 문서의 지침을 참조하여 Intune 서비스의 네
 이 표에는 각 클라이언트의 네트워크를 통해 전송되는 공통 콘텐츠의 대략적인 크기 및 주기가 정리되어 있습니다.
 
 > [!NOTE]
-> 장치가 Intune에서 업데이트 및 콘텐츠를 받을 수 있도록 하려면 해당 장치를 인터넷에 주기적으로 연결해야 합니다. 업데이트나 콘텐츠를 받는 데 필요한 시간은 경우에 따라 다르지만 매일 1시간 이상 인터넷에 계속 연결된 상태를 유지해야 합니다.
+> 디바이스가 Intune에서 업데이트 및 콘텐츠를 받을 수 있도록 하려면 해당 디바이스를 인터넷에 주기적으로 연결해야 합니다. 업데이트나 콘텐츠를 받는 데 필요한 시간은 경우에 따라 다르지만 매일 1시간 이상 인터넷에 계속 연결된 상태를 유지해야 합니다.
 
 |콘텐츠 유형|대략적인 크기|주기 및 세부 정보|
 |----------------|--------------------|-------------------------|
@@ -90,7 +90,7 @@ BranchCache를 사용하는 경우 조직의 다른 관리자와 함께 그룹 �
 
 ## <a name="network-communication-requirements"></a>네트워크 통신 요구 사항
 
-관리하는 장치와 클라우드 기반 서비스에 필요한 웹 사이트 간에 네트워크 통신을 사용하도록 설정합니다.
+관리하는 디바이스와 클라우드 기반 서비스에 필요한 웹 사이트 간에 네트워크 통신을 사용하도록 설정합니다.
 
 Intune은 Intune 소프트웨어를 실행하는 서버와 같은 온-프레미스 인프라를 사용하지 않지만 Exchange 및 Active Directory 동기화 도구를 비롯하여 온-프레미스 인프라를 사용할 수 있는 옵션은 있습니다.
 
@@ -105,7 +105,7 @@ Intune은 Intune 소프트웨어를 실행하는 서버와 같은 온-프레미�
 <!--
 > [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
-관리되는 장치를 사용하려면 **모든 사용자**가 방화벽을 통해 서비스에 액세스할 수 있도록 구성해야 합니다.
+관리되는 디바이스를 사용하려면 **모든 사용자**가 방화벽을 통해 서비스에 액세스할 수 있도록 구성해야 합니다.
 
 다음 표에는 Intune 클라이언트에서 액세스하는 포트 및 서비스가 정리되어 있습니다.
 
@@ -163,17 +163,17 @@ Intune은 Intune 소프트웨어를 실행하는 서버와 같은 온-프레미�
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 |enterpriseregistration.windows.net|52.175.211.189|
 
-### <a name="apple-device-network-information"></a>Apple 장치 네트워크 정보
+### <a name="apple-device-network-information"></a>Apple 디바이스 네트워크 정보
 
-|         호스트 이름         |                                        URL(IP 주소/서브넷)                                        |  프로토콜  |     포트     |                          장치                           |
+|         호스트 이름         |                                        URL(IP 주소/서브넷)                                        |  프로토콜  |     포트     |                          디바이스                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
 |      관리 사용자       |                                  gateway.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS 및 macOS                    |
 |      관리 사용자       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS 및 macOS                    |
 |      관리 사용자       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS 및 macOS                    |
 |        PI Server         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Apple iOS와 macOS 클라우드 메시징의 경우입니다.          |
-|     장치 서비스      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
-|     장치 서비스      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
-|     장치 서비스      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
-| 장치(인터넷/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 및 443 | Apple에만 해당합니다. &#39;#&#39;는 0~200 사이의 임의 숫자입니다. |
-| 장치(인터넷/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 또는 443   |                        Apple에만 해당합니다.                         |
+|     디바이스 서비스      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     디바이스 서비스      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     디바이스 서비스      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| 디바이스(인터넷/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 및 443 | Apple에만 해당합니다. &#39;#&#39;는 0~200 사이의 임의 숫자입니다. |
+| 디바이스(인터넷/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 또는 443   |                        Apple에만 해당합니다.                         |
 

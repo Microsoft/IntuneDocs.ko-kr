@@ -30,11 +30,11 @@ ms.locfileid: "52188052"
 
 ##  <a name="access-apps"></a>앱 액세스
 
-회사 포털 앱에는 Android 장치에서 앱 보호 정책과 관련된 모든 앱이 필요합니다.
+회사 포털 앱에는 Android 디바이스에서 앱 보호 정책과 관련된 모든 앱이 필요합니다.
 
-Intune에 등록되지 않은 장치의 경우 회사 포털 앱을 장치에 설치해야 합니다. 그러나 사용자는 앱 보호 정책에 의해 관리되는 앱을 사용하기 위해 먼저 회사 포털 앱을 시작하거나 회사 포털 앱에 로그인해야 할 필요가 없습니다.
+Intune에 등록되지 않은 디바이스의 경우 회사 포털 앱을 디바이스에 설치해야 합니다. 그러나 사용자는 앱 보호 정책에 의해 관리되는 앱을 사용하기 위해 먼저 회사 포털 앱을 시작하거나 회사 포털 앱에 로그인해야 할 필요가 없습니다.
 
-회사 포털 앱을 사용하면 Intune이 안전한 위치에서 데이터를 공유할 수 있습니다. 따라서 장치가 Intune에 등록되어 있지 않더라도 앱 보호 정책과 연결된 모든 앱에서는 회사 포털 앱을 사용해야 합니다.
+회사 포털 앱을 사용하면 Intune이 안전한 위치에서 데이터를 공유할 수 있습니다. 따라서 디바이스가 Intune에 등록되어 있지 않더라도 앱 보호 정책과 연결된 모든 앱에서는 회사 포털 앱을 사용해야 합니다.
 
 
 ##  <a name="use-apps-with-multi-identity-support"></a>다중 ID가 지원되는 앱 사용
@@ -43,7 +43,7 @@ Intune에 등록되지 않은 장치의 경우 회사 포털 앱을 장치에 �
 
 예를 들어 사용자가 업무 데이터에 액세스하면 PIN 프롬프트가 표시됩니다. **Outlook 앱**에서는 사용자가 앱을 시작할 때 PIN을 입력하라는 메시지가 표시됩니다. **OneDrive 앱**에서는 사용자가 회사 계정을 입력할 때 PIN을 입력하라는 메시지가 표시됩니다. Microsoft **Word**, **PowerPoint** 및 **Excel**의 경우에는 사용자가 회사의 비즈니스용 OneDrive 위치에 저장된 문서에 액세스할 때 PIN을 입력하라는 메시지가 표시됩니다.
 
-##  <a name="manage-user-accounts-on-the-device"></a>장치에서 사용자 계정 관리
+##  <a name="manage-user-accounts-on-the-device"></a>디바이스에서 사용자 계정 관리
 
 다중 ID 응용 프로그램에서 사용자는 계정을 여러 개 추가할 수 있습니다.  Intune 앱은 하나의 관리 계정만을 지원합니다.  Intune 앱은 관리되지 않는 계정 수를 제한하지 않습니다.
 
@@ -56,12 +56,12 @@ Intune에 등록되지 않은 장치의 경우 회사 포털 앱을 장치에 �
 사용자 A는 **회사 X** 및 **회사 Y**에서 일합니다. 사용자 A는 각 회사에 회사 계정을 보유하고 둘 다 Intune을 사용하여 앱 보호 정책을 배포합니다. **회사 X**는 **회사 Y**보다 **먼저** 앱 보호 정책을 배포합니다. **회사 X**와 연결된 계정은 앱 보호 정책을 가져오지만 회사 Y와 연결된 계정은 앱 보호 정책을 가져오지 않습니다. 회사 Y와 연결된 사용자 계정을 앱 보호 정책으로 관리하려는 경우에는 회사 X와 연결된 사용자 계정을 제거하고 회사 Y와 연결된 사용자 계정을 추가해야 합니다.
 ### <a name="add-a-second-account"></a>두 번째 계정 추가
 ####  <a name="android"></a>Android
-Android 장치를 사용하는 경우 기존 계정을 제거하고 새 계정을 추가하는 지침이 포함된 차단 메시지가 표시될 수 있습니다.  기존 계정을 제거하려면 **설정 &gt; 일반 &gt; 응용 프로그램 관리자 &gt; 회사 포털**로 이동합니다. 그런 후에 **데이터 지우기**를 선택합니다.
+Android 디바이스를 사용하는 경우 기존 계정을 제거하고 새 계정을 추가하는 지침이 포함된 차단 메시지가 표시될 수 있습니다.  기존 계정을 제거하려면 **설정 &gt; 일반 &gt; 응용 프로그램 관리자 &gt; 회사 포털**로 이동합니다. 그런 후에 **데이터 지우기**를 선택합니다.
 
 ![오류 메시지 및 계정을 제거하는 지침의 스크린 샷](./media/Android_SwitchUser.png)
 
 ##  <a name="view-media-files-with-the-azure-information-protection-app"></a>Azure Information Protection 앱을 사용하여 미디어 파일 보기
-Android 장치에서 회사 AV, PDF 및 이미지 파일을 보려면 [Azure Information Protection 앱](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)(이전 명칭은 Rights Management 공유 앱)을 사용합니다.
+Android 디바이스에서 회사 AV, PDF 및 이미지 파일을 보려면 [Azure Information Protection 앱](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)(이전 명칭은 Rights Management 공유 앱)을 사용합니다.
 
 Google Play 스토어에서 이 앱을 다운로드합니다.  
 

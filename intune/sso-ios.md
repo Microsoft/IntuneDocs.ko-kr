@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 iOS 장치용 Single Sign-On 추가 - Azure | Microsoft Docs
-description: Microsoft Intune에서 조직의 리소스 및 데이터에 대한 인증을 위해 iOS 장치가 암호 대신 SSO(Single Sign-On)를 사용하도록 만들거나 구성하거나 허용하거나 사용하도록 설정합니다. SSO를 사용하려면 장치 구성 프로필을 만들고 UPN, 장치 ID, 응용 프로그램 및 인증서를 입력하여 사용자와 장치를 인증합니다.
+title: Microsoft Intune에서 iOS 디바이스용 Single Sign-On 추가 - Azure | Microsoft Docs
+description: Microsoft Intune에서 조직의 리소스 및 데이터에 대한 인증을 위해 iOS 디바이스가 암호 대신 SSO(Single Sign-On)를 사용하도록 만들거나 구성하거나 허용하거나 사용하도록 설정합니다. SSO를 사용하려면 디바이스 구성 프로필을 만들고 UPN, 디바이스 ID, 응용 프로그램 및 인증서를 입력하여 사용자와 디바이스를 인증합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -20,15 +20,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52190203"
 ---
-# <a name="use-single-sign-on-ios-device-in-microsoft-intune"></a>Microsoft Intune에서 Single Sign-On iOS 장치 사용
+# <a name="use-single-sign-on-ios-device-in-microsoft-intune"></a>Microsoft Intune에서 Single Sign-On iOS 디바이스 사용
 
 대부분의 LOB(기간 업무) 앱이 보안을 지원하려면 일부 수준의 사용자 인증이 필요합니다. 대부분의 경우 이 인증은 사용자가 동일한 자격 증명을 여러 번 입력해야 하므로 번거롭습니다. 사용자 경험을 향상하기 위해 개발자는 SSO(Single Sign-On)을 사용하는 앱을 만들어 사용자가 자격 증명을 입력해야 하는 횟수를 줄일 수 있습니다.
 
-이 문서에서는 Microsoft Intune에서 장치 구성 프로필을 사용하여 iOS 장치에 대한 Single Sign-On을 설정하는 방법을 설명합니다.
+이 문서에서는 Microsoft Intune에서 디바이스 구성 프로필을 사용하여 iOS 디바이스에 대한 Single Sign-On을 설정하는 방법을 설명합니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-iOS 장치의 Single Sign-On 페이로드에서 사용자 자격 증명 저장소를 찾도록 코딩된 앱이 있습니다.
+iOS 디바이스의 Single Sign-On 페이로드에서 사용자 자격 증명 저장소를 찾도록 코딩된 앱이 있습니다.
 
 ## <a name="create-the-sso-profile"></a>SSO 프로필 만들기
 
@@ -47,7 +47,7 @@ iOS 장치의 Single Sign-On 페이로드에서 사용자 자격 증명 저장�
 
 5. 다음 설정을 입력합니다. 
 
-    - **AAD의 사용자 이름 특성**: Intune은 Azure AD에서 각 사용자에 대해 이 특성을 찾습니다. 그런 다음, Intune이 장치에 설치되는 XML 페이로드를 생성하기 전에 해당 필드(예: UPN)를 채웁니다. 옵션은 다음과 같습니다.
+    - **AAD의 사용자 이름 특성**: Intune은 Azure AD에서 각 사용자에 대해 이 특성을 찾습니다. 그런 다음, Intune이 디바이스에 설치되는 XML 페이로드를 생성하기 전에 해당 필드(예: UPN)를 채웁니다. 옵션은 다음과 같습니다.
     
         - **사용자 계정 이름**: UPN은 다음과 같은 방법으로 구문 분석을 합니다.
 
@@ -59,16 +59,16 @@ iOS 장치의 Single Sign-On 페이로드에서 사용자 자격 증명 저장�
 
         - **Intune 장치 ID**: Intune은 Intune 장치 ID를 자동으로 선택합니다. 
 
-            기본적으로 앱은 장치 ID만 사용해야 합니다. 그러나 앱이 영역 *및* 장치 ID를 사용하는 경우 **영역** 텍스트 상자에 영역을 입력할 수 있습니다.
+            기본적으로 앱은 디바이스 ID만 사용해야 합니다. 그러나 앱이 영역 *및* 디바이스 ID를 사용하는 경우 **영역** 텍스트 상자에 영역을 입력할 수 있습니다.
 
             > [!NOTE]
-            > 기본적으로 장치 ID를 사용하는 경우 영역을 비워 둡니다.
+            > 기본적으로 디바이스 ID를 사용하는 경우 영역을 비워 둡니다.
 
     - **영역**: URL의 도메인 부분입니다.
     
     - **Single Sign-On을 사용할 URL 접두사**: 사용자 Single Sign-On 인증이 필요한 조직의 모든 URL을 **추가**합니다. 
 
-        예를 들어 사용자가 이러한 사이트에 연결하는 경우 iOS 장치는 Single Sign-On 자격 증명을 사용합니다. 사용자는 추가 자격 증명을 입력할 필요가 없습니다. 그러나 다단계 인증을 사용하는 경우 사용자가 두 번째 인증을 입력해야 합니다.
+        예를 들어 사용자가 이러한 사이트에 연결하는 경우 iOS 디바이스는 Single Sign-On 자격 증명을 사용합니다. 사용자는 추가 자격 증명을 입력할 필요가 없습니다. 그러나 다단계 인증을 사용하는 경우 사용자가 두 번째 인증을 입력해야 합니다.
 
         > [!NOTE]
         > 이러한 URL은 올바른 형식의 FQDN이어야 합니다. Apple은 URL이 `http://<yourURL.domain>` 형식이어야 합니다.
@@ -85,10 +85,10 @@ iOS 장치의 Single Sign-On 페이로드에서 사용자 자격 증명 저장�
     
     - **자격 증명 갱신 인증서**: 인증에 인증서를 사용하는 경우(암호 아님) 인증 인증서로 사용자에게 배포되는 SCEP 또는 PFX 인증서를 선택합니다. 일반적으로 VPN, Wi-Fi, 이메일 등의 다른 프로필에 대해 사용자에게 배포되는 것과 동일한 인증서입니다.
 
-6. **확인** > **확인** > **만들기**를 차례로 선택하여 변경 내용을 저장하고 프로필을 만듭니다. 만들어지면 **장치 구성 - 프로필** 목록에 나타납니다. 
+6. **확인** > **확인** > **만들기**를 차례로 선택하여 변경 내용을 저장하고 프로필을 만듭니다. 만들어지면 **디바이스 구성 - 프로필** 목록에 나타납니다. 
 
 ## <a name="next-steps"></a>다음 단계
 
-장치 기능 구성에 대한 자세한 내용은 [Microsoft Intune에서 장치 기능 설정을 구성하는 방법](device-features-configure.md)을 참조하세요.
+디바이스 기능 구성에 대한 자세한 내용은 [Microsoft Intune에서 디바이스 기능 설정을 구성하는 방법](device-features-configure.md)을 참조하세요.
 
 iOS 장치에 [이 프로필을 할당합니다](device-profile-assign.md).

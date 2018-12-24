@@ -1,6 +1,6 @@
 ---
-title: iOS 장치 - Microsoft Intune - Azure에 대한 앱 알림 만들기 | Microsoft Docs
-description: Microsoft Intune에서 iOS 장치에 대한 앱 알림을 만들거나 추가합니다. 알림을 보낼 앱을 선택하고 잠금 화면에서 알림 설정을 구성하고 소리를 사용하고 경고 유형을 선택하고 배지를 추가합니다.
+title: iOS 디바이스 - Microsoft Intune - Azure에 대한 앱 알림 만들기 | Microsoft Docs
+description: Microsoft Intune에서 iOS 디바이스에 대한 앱 알림을 만들거나 추가합니다. 알림을 보낼 앱을 선택하고 잠금 화면에서 알림 설정을 구성하고 소리를 사용하고 경고 유형을 선택하고 배지를 추가합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,22 +22,22 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52182196"
 ---
-# <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>Intune에서 iOS 장치에 대한 Intune 앱 알림 설정 구성
+# <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>Intune에서 iOS 디바이스에 대한 Intune 앱 알림 설정 구성
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-iOS 장치에 설치된 앱에서 알림을 전송하는 방식을 구성합니다. 이 설정은 iOS 9.3 이상을 실행하는 감독 모드 장치를 지원합니다.
+iOS 디바이스에 설치된 앱에서 알림을 전송하는 방식을 구성합니다. 이 설정은 iOS 9.3 이상을 실행하는 감독 모드 디바이스를 지원합니다.
 
 ## <a name="add-the-app-notification"></a>앱 알림 추가
 
 1. [Azure Portal](https://portal.azure.com)에 로그인합니다.
-2. IOS 또는 macOS 프로필 내에서 **장치 기능**을 선택합니다. [iOS 또는 macOS 장치 기능](device-features-configure.md)이 프로필을 만드는 단계를 나열합니다.
+2. IOS 또는 macOS 프로필 내에서 **디바이스 기능**을 선택합니다. [iOS 또는 macOS 장치 기능](device-features-configure.md)이 프로필을 만드는 단계를 나열합니다.
 3. **앱 알림(감독 모드에서만 해당)** 을 선택한 다음, **추가** 선택: ![Intune에서 iOS 또는 macOS 프로필의 앱 알림 추가](./media/ios-macos-app-notifications.png)
 4. 다음 속성을 입력합니다.
 
    - **앱 번들 ID** - 구성할 앱의 **앱 번들 ID**를 입력합니다. 이 아티클의 **기본 제공 iOS 앱에 대한 번들 ID 참조**에서 도움말을 제공합니다.
-   - **앱 이름** - 구성할 앱 이름을 입력합니다. 이 이름은 장치에 표시되지 않으며, 목록에서 앱을 식별하는 데 사용됩니다.
-   - **게시자** - 구성할 앱의 게시자를 입력합니다. 게시자 이름은 장치에 표시되지 않으며, 목록에서 앱을 식별하는 용도로만 사용됩니다.
+   - **앱 이름** - 구성할 앱 이름을 입력합니다. 이 이름은 디바이스에 표시되지 않으며, 목록에서 앱을 식별하는 데 사용됩니다.
+   - **게시자** - 구성할 앱의 게시자를 입력합니다. 게시자 이름은 디바이스에 표시되지 않으며, 목록에서 앱을 식별하는 용도로만 사용됩니다.
    - **알림** - 앱에서 장치에 알림을 보내는 작업을 사용하도록 설정하거나, 사용하지 않도록 설정합니다. 이 설정을 사용하지 않도록 설정하면 다음 설정도 사용되지 않습니다.
      - **알림 센터에 표시** - 장치의 알림 센터에서 알림을 표시하도록 앱을 허용하려면 이 설정을 사용하도록 지정합니다.
      - **잠금 화면에 표시** - 장치 잠금 화면에 앱의 알림을 표시하려면 이 설정을 사용하도록 지정합니다.
@@ -99,4 +99,4 @@ iOS 장치에 설치된 앱에서 알림을 전송하는 방식을 구성합니�
 
 ## <a name="next-steps"></a>다음 단계
 
-선택한 그룹에 장치 프로필을 할당합니다. [장치 프로필을 할당하는 방법](device-profile-assign.md)에서 단계를 표시합니다.
+선택한 그룹에 디바이스 프로필을 할당합니다. [장치 프로필을 할당하는 방법](device-profile-assign.md)에서 단계를 표시합니다.

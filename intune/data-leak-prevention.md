@@ -1,8 +1,8 @@
 ---
-title: 관리되지 않는 장치에서 데이터 누수 방지
+title: 관리되지 않는 디바이스에서 데이터 누수 방지
 titlesuffix: Microsoft Intune
-description: Microsoft Intune을 사용하여 장치에서 회사 데이터에 대한 액세스를 허용하고 데이터 유출로부터 데이터를 보호합니다.
-keywords: 데이터 보호 누수 방지 장치 O365 Office 365
+description: Microsoft Intune을 사용하여 디바이스에서 회사 데이터에 대한 액세스를 허용하고 데이터 유출로부터 데이터를 보호합니다.
+keywords: 데이터 보호 누수 방지 디바이스 O365 Office 365
 ms.author: dougeby
 author: dougeby
 manager: dougeby
@@ -23,15 +23,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52190152"
 ---
-# <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Microsoft Intune을 사용하여 관리되지 않는 장치에서 데이터 유출 방지
+# <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Microsoft Intune을 사용하여 관리되지 않는 디바이스에서 데이터 유출 방지
 
-Office 365에서 호스팅하는 회사 데이터에 대한 액세스를 허용하면 의도적이거나 실수로 데이터가 유출될 위험 없이 사용자가 데이터를 공유하고 저장하는 방법을 제어할 수 있습니다. Microsoft Intune은 사용자 소유 장치에서 회사 데이터를 보호하도록 설정한 앱 보호 정책을 제공합니다. 장치는 Intune 서비스에 등록할 필요가 없습니다. 
+Office 365에서 호스팅하는 회사 데이터에 대한 액세스를 허용하면 의도적이거나 실수로 데이터가 유출될 위험 없이 사용자가 데이터를 공유하고 저장하는 방법을 제어할 수 있습니다. Microsoft Intune은 사용자 소유 디바이스에서 회사 데이터를 보호하도록 설정한 앱 보호 정책을 제공합니다. 디바이스는 Intune 서비스에 등록할 필요가 없습니다. 
 
-또한 Intune을 사용하여 설정된 앱 보호 정책은 Microsoft 이외의 장치 관리 솔루션으로 관리되는 장치에서도 작동합니다. 장치의 개인 데이터는 수정하지 않으며, 회사 데이터만을 IT부서가 관리합니다. 
+또한 Intune을 사용하여 설정된 앱 보호 정책은 Microsoft 이외의 디바이스 관리 솔루션으로 관리되는 디바이스에서도 작동합니다. 장치의 개인 데이터는 수정하지 않으며, 회사 데이터만을 IT부서가 관리합니다. 
 
-회사 데이터를 보호하기 위해 Windows, iOS 또는 Android를 실행하는 장치에서 Office 모바일 앱에 대한 앱 보호 정책을 설정할 수 있습니다. 이러한 정책을 통해 앱 기반 PIN 또는 회사 데이터 암호화와 같은 정책을 설정하거나, 관리되는 앱과 관리되지 않 앱 간에는 고급 설정으로 잘라내기, 복사, 붙여넣기 및 저장을 제한하는 설정이 가능합니다. 또한 사용자가 장치를 등록하지 않아도 회사 데이터를 원격으로 초기화할 수도 있습니다. 
+회사 데이터를 보호하기 위해 Windows, iOS 또는 Android를 실행하는 디바이스에서 Office 모바일 앱에 대한 앱 보호 정책을 설정할 수 있습니다. 이러한 정책을 통해 앱 기반 PIN 또는 회사 데이터 암호화와 같은 정책을 설정하거나, 관리되는 앱과 관리되지 않 앱 간에는 고급 설정으로 잘라내기, 복사, 붙여넣기 및 저장을 제한하는 설정이 가능합니다. 또한 사용자가 디바이스를 등록하지 않아도 회사 데이터를 원격으로 초기화할 수도 있습니다. 
 
-Intune 앱 보호 정책은 장치 관리와 별개입니다. 앱 보호 정책을 통해 Intune 비관리 및 관리 장치뿐만 아니라 Microsoft MDM이 아닌 솔루션으로 관리되는 장치에서도 Office 모바일 앱을 관리할 수 있습니다. 
+Intune 앱 보호 정책은 디바이스 관리와 별개입니다. 앱 보호 정책을 통해 Intune 비관리 및 관리 장치뿐만 아니라 Microsoft MDM이 아닌 솔루션으로 관리되는 장치에서도 Office 모바일 앱을 관리할 수 있습니다. 
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -39,18 +39,18 @@ Intune 앱 보호 정책은 장치 관리와 별개입니다. 앱 보호 정책�
 * 회사에서 클라우드로 안전하게 전환할 준비가 되었습니다.
 * 회사에서 Office 365 Exchange Online, SharePoint Online, 비즈니스용 OneDrive 또는 Yammer를 사용합니다.
 * 회사에서 Microsoft 365, EMS(Enterprise Mobility + Security) 또는 Azure Information Protection에 대한 라이선스를 가지고 있습니다.
-* 회사에서 사용자가 회사 소유 또는 개인 소유 Windows, iOS 또는 Android 장치의 회사 데이터에 액세스할 수 있도록 허용합니다. 
-* 회사에서 개인 소유 장치를 장치 관리 서비스에 등록하지 않도록 요구하려고 합니다. 
+* 회사에서 사용자가 회사 소유 또는 개인 소유 Windows, iOS 또는 Android 디바이스의 회사 데이터에 액세스할 수 있도록 허용합니다. 
+* 회사에서 개인 소유 디바이스를 디바이스 관리 서비스에 등록하지 않도록 요구하려고 합니다. 
 
 ## <a name="action-plan"></a>작업 계획
 
-iOS 및 Android 장치의 경우 
+iOS 및 Android 디바이스의 경우 
 
 1. [앱 보호 정책](app-protection-policy.md)이 작동하는 방법을 알아봅니다.
 2. Office 모바일 앱용 [앱 보호 정책을 만들어 배포하는 방법](app-protection-policies.md)을 알아봅니다. 
 3. 만들고 배포한 [앱 보호 정책을 모니터링](app-protection-policies-monitor.md)합니다. 
 
-Windows 10 장치의 경우 
+Windows 10 디바이스의 경우 
 
 1. [WIP(Windows Information Protection)가 작동하는 방법](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)을 알아봅니다. 
 2. [Windows 10용 앱 보호 정책](app-protection-policies-configure-windows-10.md)을 구성하도록 준비합니다.

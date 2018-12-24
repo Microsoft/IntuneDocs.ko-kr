@@ -75,25 +75,25 @@ iOS 대량 구매 앱은 Intune 계정과 동일한 국가 코드에 대해서�
 
 <!-- ## Groups -->
 
-## <a name="device-configuration"></a>장치 구성
+## <a name="device-configuration"></a>디바이스 구성
 
-### <a name="you-cannot-save-a-windows-information-protection-policy-for-some-devices"></a>일부 장치에 대해 Windows Information Protection 정책을 저장할 수 없음
+### <a name="you-cannot-save-a-windows-information-protection-policy-for-some-devices"></a>일부 디바이스에 대해 Windows Information Protection 정책을 저장할 수 없음
 
-Intune에 등록되지 않은 장치의 경우 Windows Information Protection 정책에 대한 설정의 **회사 ID** 필드에서 주 도메인만 지정할 수 있습니다.
+Intune에 등록되지 않은 디바이스의 경우 Windows Information Protection 정책에 대한 설정의 **회사 ID** 필드에서 주 도메인만 지정할 수 있습니다.
 **고급 설정** > **네트워크 경계** > **보호된 도메인 추가**를 사용하여 도메인을 더 추가하는 경우 정책을 저장할 수 없습니다. 표시되는 오류 메시지는 조만간 보다 정확하게 변경될 예정입니다.
 
 ### <a name="cisco-anyconnect-and-cisco-legacy-anyconnect-vpn-client-support---ios"></a>Cisco AnyConnect 및 Cisco Legacy AnyConnect VPN 클라이언트 지원 - iOS
 
-iOS 장치의 경우 새로운 Cisco AnyConnect 클라이언트에서 NAC(네트워크 액세스 제어) 통합이 작동하지 않습니다. Microsoft는 NAC 통합 기능을 제공하기 위해 Cisco와 협력하고 있습니다.
+iOS 디바이스의 경우 새로운 Cisco AnyConnect 클라이언트에서 NAC(네트워크 액세스 제어) 통합이 작동하지 않습니다. Microsoft는 NAC 통합 기능을 제공하기 위해 Cisco와 협력하고 있습니다.
 
 [Intune에서 VPN 프로필 만들기](vpn-settings-ios.md)에서는 Cisco AnyConnect 및 Cisco Legacy AnyConnect 클라이언트에 대한 자세한 정보를 제공합니다.
 
-### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>macOS Sierra 장치에서 숫자 암호 유형 사용
+### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>macOS Sierra 디바이스에서 숫자 암호 유형 사용
 
-현재는 macOS Sierra 장치에 대한 장치 제한 프로필에서 **숫자** **필수 암호 유형**을 선택하면 암호가 **영숫자**로 적용됩니다. 이러한 장치에 숫자 암호를 사용하려는 경우 이 설정을 구성하지 마세요.
+현재는 macOS Sierra 장치에 대한 장치 제한 프로필에서 **숫자** **필수 암호 유형**을 선택하면 암호가 **영숫자**로 적용됩니다. 이러한 디바이스에 숫자 암호를 사용하려는 경우 이 설정을 구성하지 마세요.
 이 문제는 향후 macOS 버전에서 해결될 수도 있습니다.
 
-이러한 설정에 대한 자세한 내용은 [Microsoft Intune의 macOS 장치 제한 설정](device-restrictions-macos.md)을 참조하세요.
+이러한 설정에 대한 자세한 내용은 [Microsoft Intune의 macOS 디바이스 제한 설정](device-restrictions-macos.md)을 참조하세요.
 
 ## <a name="compliance"></a>준수
 
@@ -103,7 +103,7 @@ iOS 장치의 경우 새로운 Cisco AnyConnect 클라이언트에서 NAC(네트
 
 또한 Azure Portal에서 만든 새 준수 정책은 클래식 포털에서는 보이지 않습니다.
 
-자세한 내용은 [장치 준수](device-compliance.md)를 참조하세요.
+자세한 내용은 [디바이스 준수](device-compliance.md)를 참조하세요.
 
 <!-- ## Enrollment -->
 
@@ -121,11 +121,11 @@ Azure Portal에서 해당 설정을 보고 관리하려는 경우 클래식 포�
 
 ### <a name="ios-app-protection-policies"></a>iOS 앱 보호 정책
 
-등록 없이 MAM(모바일 앱 관리)을 통해 관리되는 장치에서 사용자에게 제공되는 [iOS 앱 보호 정책](app-protection-policy-settings-ios.md)을 정의할 수 있습니다. 일시적인 오류로 인해 여러 개의 소수 자릿수가 아닌 단일 소수 자릿수를 가진 iOS 버전인 경우에만 이러한 정책을 정의할 수 있습니다. 최소 버전을 iOS 10.3.1로 설정하는 것이 아니라 iOS 10.3으로 설정합니다. 이 문제는 iOS SDK의 예정된 업데이트를 통해 해결될 것입니다.
+등록 없이 MAM(모바일 앱 관리)을 통해 관리되는 디바이스에서 사용자에게 제공되는 [iOS 앱 보호 정책](app-protection-policy-settings-ios.md)을 정의할 수 있습니다. 일시적인 오류로 인해 여러 개의 소수 자릿수가 아닌 단일 소수 자릿수를 가진 iOS 버전인 경우에만 이러한 정책을 정의할 수 있습니다. 최소 버전을 iOS 10.3.1로 설정하는 것이 아니라 iOS 10.3으로 설정합니다. 이 문제는 iOS SDK의 예정된 업데이트를 통해 해결될 것입니다.
 
 
 ## <a name="administration-and-accounts"></a>관리 및 계정
 
-전역 관리자(테넌트 관리자라고도 함)는 별도의 Intune 또는 EMS(Enterprise Mobility Suite) 라이선스 없이 일상적인 관리 작업을 계속 수행할 수 있습니다. 그러나 자신의 장치나 회사 장치 등록 또는 Intune 회사 포털 사용 등의 서비스를 사용하려는 전역 관리자에게는 Intune 또는 EMS 라이선스가 필요합니다.
+전역 관리자(테넌트 관리자라고도 함)는 별도의 Intune 또는 EMS(Enterprise Mobility Suite) 라이선스 없이 일상적인 관리 작업을 계속 수행할 수 있습니다. 그러나 자신의 디바이스나 회사 디바이스 등록 또는 Intune 회사 포털 사용 등의 서비스를 사용하려는 전역 관리자에게는 Intune 또는 EMS 라이선스가 필요합니다.
 
 <!-- ## Additional items -->

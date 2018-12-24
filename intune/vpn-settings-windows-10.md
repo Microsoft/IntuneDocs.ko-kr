@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 Windows 10 VPN 설정 구성 - Azure | Microsoft Docs
-description: 트래픽 규칙, 조건부 액세스, Windows 10 장치에 대한 DNS 및 프록시 설정, Windows Holographic for Business 장치를 포함해 Microsoft Intune에서 사용할 수 있는 VPN 설정, 사용 목적 및 수행 작업에 대해 읽고 알아봅니다.
+description: 트래픽 규칙, 조건부 액세스, Windows 10 디바이스에 대한 DNS 및 프록시 설정, Windows Holographic for Business 디바이스를 포함해 Microsoft Intune에서 사용할 수 있는 VPN 설정, 사용 목적 및 수행 작업에 대해 읽고 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -29,14 +29,14 @@ Intune을 사용하여 VPN 연결을 구성할 수 있습니다. 이 아티클�
 
 이러한 설정은 다음에 적용됩니다.
 
-- Windows 10을 실행하는 장치
-- Windows Holographic for Business를 실행하는 장치
+- Windows 10을 실행하는 디바이스
+- Windows Holographic for Business를 실행하는 디바이스
 
 선택하는 설정에 따라 일부 값은 구성할 수 없습니다.
 
 ## <a name="base-vpn-settings"></a>기본 VPN 설정
 
-- **연결 이름**: 이 연결에 대한 이름을 입력합니다. 최종 사용자가 장치에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
+- **연결 이름**: 이 연결에 대한 이름을 입력합니다. 최종 사용자가 디바이스에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
 - **서버**: 장치를 연결할 한 대 이상의 VPN 서버를 추가합니다. 서버를 추가할 때 다음 정보를 입력합니다.
   - **설명**: 서버의 설명이 포함된 이름(예: **Contoso VPN 서버**) 입력
   - **IP 주소 또는 FQDN**: 장치가 연결되는 VPN 서버(예: **192.168.1.1** 또는 **vpn.contoso.com**)의 IP 주소 또는 정규화된 도메인 이름 입력
@@ -61,9 +61,9 @@ Intune을 사용하여 VPN 연결을 구성할 수 있습니다. 이 아티클�
 
   VPN 연결 형식을 선택하면 다음 설정을 요청하는 메시지가 표시될 수도 있습니다.  
     - **Always On**: 다음과 같은 이벤트가 발생할 경우 VPN 연결에 자동으로 연결하도록 **설정**합니다. 
-      - 자신의 장치에 사용자가 로그인하는 경우
-      - 장치의 네트워크가 변경되는 경우
-      - 장치의 화면이 꺼졌다가 다시 켜지는 경우 
+      - 자신의 디바이스에 사용자가 로그인하는 경우
+      - 디바이스의 네트워크가 변경되는 경우
+      - 디바이스의 화면이 꺼졌다가 다시 켜지는 경우 
 
     - **인증 방법**: 사용자가 VPN 서버에 인증하도록 할 방법을 선택합니다. **인증서**를 사용하면 무인 환경, 주문형 VPN, 앱별 VPN 등의 향상된 기능이 제공됩니다.
     - **로그온 시 자격 증명 기억**: 인증 자격 증명을 캐시하려면 선택합니다.

@@ -27,7 +27,7 @@ ms.locfileid: "53031979"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Azure AD에서 MAM 공급자를 설정하여 Windows 10용 MAM(모바일 응용 프로그램 관리)을 사용하도록 설정합니다. Azure AD에서 MAM 공급자를 설정하면 Intune을 사용하여 새 WIP(Windows Information Protection) 정책을 만들 때 등록 상태를 정의할 수 있습니다. 등록 상태는 MAM 또는 MDM(모바일 장치 관리)일 수 있습니다.
+Azure AD에서 MAM 공급자를 설정하여 Windows 10용 MAM(모바일 응용 프로그램 관리)을 사용하도록 설정합니다. Azure AD에서 MAM 공급자를 설정하면 Intune을 사용하여 새 WIP(Windows Information Protection) 정책을 만들 때 등록 상태를 정의할 수 있습니다. 등록 상태는 MAM 또는 MDM(모바일 디바이스 관리)일 수 있습니다.
 
 ## <a name="to-configure-the-mam-provider"></a>MAM 공급자를 구성하려면
 
@@ -40,13 +40,13 @@ Azure AD에서 MAM 공급자를 설정하여 Windows 10용 MAM(모바일 응용 
 4. **구성** 블레이드의 **기본 MAM URL 복원** 그룹에서 설정을 구성합니다.
 
    **MAM 사용자 범위**  
-   MAM 자동 등록을 사용하여 직원의 Windows 장치에서 엔터프라이즈 데이터를 관리합니다. MAM 자동 등록은 Bring Your Own Device 시나리오용으로 구성됩니다.<ul><li>**없음**<br>사용자가 MAM에 등록될 수 없는 경우 선택합니다.</li><li>**일부**<br>MAM에 등록될 사용자가 포함된 Azure AD 그룹을 선택합니다.</li><li>**모두**<br>모든 사용자가 MAM에 등록될 수 있는 경우 선택합니다.</li></ul>
+   MAM 자동 등록을 사용하여 직원의 Windows 디바이스에서 엔터프라이즈 데이터를 관리합니다. MAM 자동 등록은 Bring Your Own Device 시나리오용으로 구성됩니다.<ul><li>**없음**<br>사용자가 MAM에 등록될 수 없는 경우 선택합니다.</li><li>**일부**<br>MAM에 등록될 사용자가 포함된 Azure AD 그룹을 선택합니다.</li><li>**모두**<br>모든 사용자가 MAM에 등록될 수 있는 경우 선택합니다.</li></ul>
 
    **MAM 사용 약관 URL**  
    MAM 사용 약관 URL은 Microsoft Intune에서 지원되지 않습니다. 이 입력 상자는 보호 정책을 적용하도록 비워 두어야 합니다.
 
    **MAM 검색 URL**  
-   MAM 서비스 등록 엔드포인트의 URL입니다. 등록 엔드포인트는 MAM 서비스에서 관리할 장치를 등록하는 데 사용됩니다.
+   MAM 서비스 등록 엔드포인트의 URL입니다. 등록 엔드포인트는 MAM 서비스에서 관리할 디바이스를 등록하는 데 사용됩니다.
 
    **MAM 준수 URL**  
    MAM 준수 URL은 Microsoft Intune에서 지원되지 않습니다. 이 입력 상자는 보호 정책을 적용하도록 비워 두어야 합니다. 

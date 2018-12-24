@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune과 Symantec 통합 설정
 titlesuffix: ''
-description: 회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Microsoft Intune을 사용하여 Symantec Endpoint Protection Mobile 솔루션을 설정하는 방법입니다.
+description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Microsoft Intune을 사용하여 Symantec Endpoint Protection Mobile 솔루션을 설정하는 방법입니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -43,7 +43,7 @@ SEP Mobile은 Intune과의 통합을 두 가지 모드로 지원합니다.
 
 -   **읽기 전용 통합(기본 설정):** Azure Active Directory에서 장치를 인벤토리에 포함하고 Symantec Endpoint Protection Mobile 관리 콘솔에서 해당 정보를 채우기만 합니다.
 <br>
-    -   Symantec Endpoint Protection Mobile 관리 콘솔에서 **Intune에 장치 상태 및 위험 보고** 및 **Intune에 보안 문제도 보고** 상자가 선택되지 않은 경우 통합은 읽기 전용이므로 Intune에서 장치 상태(준수 또는 미준수)가 변경되지 않습니다.
+    -   Symantec Endpoint Protection Mobile 관리 콘솔에서 **Intune에 디바이스 상태 및 위험 보고** 및 **Intune에 보안 문제도 보고** 상자가 선택되지 않은 경우 통합은 읽기 전용이므로 Intune에서 디바이스 상태(준수 또는 미준수)가 변경되지 않습니다.
 <br></br>
 -   **전체 통합:** 장치의 위험 및 보안 문제 세부 정보에 대해 SEP Mobile에서 보고하도록 허용합니다. 이렇게 하면 두 클라우드 서비스 간 양방향 통신이 이루어집니다.
 
@@ -82,13 +82,13 @@ SEP Mobile은 Intune과의 통합을 두 가지 모드로 지원합니다.
 
 ### <a name="add-an-azure-ad-security-group-into-sep-mobile"></a>SEP Mobile에 Azure AD 보안 그룹 추가
 
-SEP Mobile을 실행하는 모든 장치가 포함된 Azure AD 보안 그룹을 추가해야 합니다.
+SEP Mobile을 실행하는 모든 디바이스가 포함된 Azure AD 보안 그룹을 추가해야 합니다.
 
 -  SEP Mobile을 실행하는 디바이스의 보안 그룹을 모두 입력하여 선택한 다음, 변경 내용을 저장합니다.
 
     ![SEP Mobile 앱에 대한 사용자 그룹을 보여주는 이미지](./media/symantec-portal-basic-groups.png)   
 
-SEP Mobile은 Mobile Threat Defense 서비스를 실행하는 장치를 Azure AD 보안 그룹과 동기화합니다.
+SEP Mobile은 Mobile Threat Defense 서비스를 실행하는 디바이스를 Azure AD 보안 그룹과 동기화합니다.
 
 ![SEP Mobile 관리 콘솔에서 완료된 보안 그룹 구성을 보여주는 이미지](./media/symantec-portal-basic-status.png)
 
@@ -106,7 +106,7 @@ SEP Mobile은 Mobile Threat Defense 서비스를 실행하는 장치를 Azure AD
 
     ![Azure Portal에서 디렉터리 ID를 보여주는 이미지](./media/symantec-azure-portal-directory-ID.png)
 
-### <a name="optional-create-a-dedicated-security-group-for-devices-that-need-to-run-the-sep-mobile-apps"></a>(선택 사항) SEP Mobile 앱을 실행해야 하는 장치의 전용 보안 그룹을 만듭니다.
+### <a name="optional-create-a-dedicated-security-group-for-devices-that-need-to-run-the-sep-mobile-apps"></a>(선택 사항) SEP Mobile 앱을 실행해야 하는 디바이스의 전용 보안 그룹을 만듭니다.
 1. [Azure Portal](https://portal.azure.com)의 **관리**에서 **사용자 및 그룹**을 선택한 다음, **모든 그룹**을 선택합니다.
 
 2. **추가** 단추를 선택합니다. 그룹 **이름**을 입력합니다. **멤버 자격 유형**에서 **할당됨**을 선택합니다.
@@ -145,7 +145,7 @@ SEP Mobile은 Mobile Threat Defense 서비스를 실행하는 장치를 Azure AD
 
     ![SEP Mobile 앱에 대한 사용자 그룹을 보여주는 이미지](./media/symantec-portal-basic-groups.png)   
 
-11.  SEP Mobile은 선택된 그룹의 장치를 동기화하고 Intune에 정보를 보고하기 시작합니다. 전체 통합 섹션에서 이 데이터를 볼 수 있습니다. **설정** > **통합** > **Intune** > **전체 통합** 섹션으로 이동합니다.
+11.  SEP Mobile은 선택된 그룹의 디바이스를 동기화하고 Intune에 정보를 보고하기 시작합니다. 전체 통합 섹션에서 이 데이터를 볼 수 있습니다. **설정** > **통합** > **Intune** > **전체 통합** 섹션으로 이동합니다.
 
      ![SEP Mobile 전체 통합 완료를 보여주는 이미지](media/symantec-portal-basic-status.PNG)
 ## <a name="next-steps"></a>다음 단계

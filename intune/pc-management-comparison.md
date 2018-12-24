@@ -1,7 +1,7 @@
 ---
 title: Windows PC 관리 옵션 비교
 titlesuffix: Microsoft Intune
-description: Apple DEP(장비 등록 프로그램) 또는 Apple Configurator를 사용하여 회사 소유 iOS 장치 등록.
+description: Apple DEP(장비 등록 프로그램) 또는 Apple Configurator를 사용하여 회사 소유 iOS 디바이스 등록.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -23,11 +23,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52184644"
 ---
-# <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC를 컴퓨터로 관리하는 방식과 모바일 장치로 관리하는 방식 비교
+# <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-조직은 Microsoft Intune을 사용하여 Windows PC를 모바일 장치로 관리할 수도 있고 컴퓨터로 관리할 수도 있습니다. 모바일 장치로 관리하는 경우에는 MDM(모바일 장치 관리)을 사용하고, 컴퓨터로 관리하는 경우에는 Intune 소프트웨어 클라이언트를 사용합니다.  고객은 가능한 경우 항상 MDM 관리 솔루션을 사용하는 것이 좋습니다. 아래 차트에는 이러한 옵션 간의 차이점을 보다 명확하게 파악할 수 있도록 두 관리 옵션을 비교한 내용이 나와 있습니다.
+조직은 Microsoft Intune을 사용하여 Windows PC를 모바일 디바이스로 관리할 수도 있고 컴퓨터로 관리할 수도 있습니다. 모바일 디바이스로 관리하는 경우에는 MDM(모바일 디바이스 관리)을 사용하고, 컴퓨터로 관리하는 경우에는 Intune 소프트웨어 클라이언트를 사용합니다.  고객은 가능한 경우 항상 MDM 관리 솔루션을 사용하는 것이 좋습니다. 아래 차트에는 이러한 옵션 간의 차이점을 보다 명확하게 파악할 수 있도록 두 관리 옵션을 비교한 내용이 나와 있습니다.
 
 |**기능/시나리오** |**컴퓨터로 Wndows 관리**<br>Intune 소프트웨어 클라이언트 | **모바일 장치로 Windows 관리**<br>MDM |
 |--------------|-------------------------------|-------------------------------|
@@ -49,7 +49,7 @@ ms.locfileid: "52184644"
 
 
 ### <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows PC 관리의 이점
-최신 모바일 장치 관리를 통해 Windows PC를 관리하는 경우 다음과 같은 이점이 있습니다.
+최신 모바일 디바이스 관리를 통해 Windows PC를 관리하는 경우 다음과 같은 이점이 있습니다.
 - **확장성** - Intune 클라우드 관리와 함께 MDM 관리를 확장할 수 있습니다. Intune 소프트웨어 클라이언트의 경우 PC를 7000대까지만 관리할 수 있습니다.
 - **단순성** - 다운로드한 소프트웨어 클라이언트를 사용하지 않고 운영 체제에 포함된 최신 관리 기능을 사용할 수 있습니다.
 - **일관성** - 조직 <!-- - **Cloud optimization** - -->의 기타 모든 모바일 장치와 같이 Windows PC를 관리함

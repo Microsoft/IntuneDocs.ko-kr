@@ -29,8 +29,8 @@ ms.locfileid: "52184661"
 
 Intune 데이터 웨어하우스를 사용하여 기업 모바일 환경에 대한 정보를 제공하는 보고서를 만듭니다. 예를 들어 일부 보고서는 다음과 같은 내용을 포함합니다.
 -   라이선스 구매 최적화를 위한 Intune 등록 사용자 추세
--   모바일 장치 상태를 검토하기 위한 앱 및 OS 버전 분석
--   정책 업데이트를 원활하게 롤아웃하기 위한 등록 및 장치 규정 준수 추세
+-   모바일 디바이스 상태를 검토하기 위한 앱 및 OS 버전 분석
+-   정책 업데이트를 원활하게 롤아웃하기 위한 등록 및 디바이스 규정 준수 추세
 
 데이터 웨어하우스는 Azure 포털보다 모바일 환경에 대해 더 많은 정보를 제공합니다. Intune 데이터 웨어하우스를 통해 다음에 액세스할 수 있습니다.
 
@@ -39,7 +39,7 @@ Intune 데이터 웨어하우스를 사용하여 기업 모바일 환경에 대�
   -  OData 표준을 사용하는 데이터 모델
 
 > [!Note]
-> System Center Configuration Manager 및 Microsoft Intune과 함께 하이브리드 MDM(모바일 장치 관리)을 사용하는 경우 SCCM에서 데이터를 검색하고자 합니다. Intune 데이터 웨어하우스에는 Intune 데이터만 포함됩니다. 사용자 지정 보고서에 대한 SCCM Power BI 대시보드를 사용할 수 있습니다. 자세한 내용은 "[System Center Configuration Manager에 대한 Power BI 솔루션 템플릿 발표]( https://powerbi.microsoft.com/blog/sccm-solution-template)" 및 "[Dynamics 365의 Power BI 콘텐츠](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)"를 참조하세요.
+> System Center Configuration Manager 및 Microsoft Intune과 함께 하이브리드 MDM(모바일 디바이스 관리)을 사용하는 경우 SCCM에서 데이터를 검색하고자 합니다. Intune 데이터 웨어하우스에는 Intune 데이터만 포함됩니다. 사용자 지정 보고서에 대한 SCCM Power BI 대시보드를 사용할 수 있습니다. 자세한 내용은 "[System Center Configuration Manager에 대한 Power BI 솔루션 템플릿 발표]( https://powerbi.microsoft.com/blog/sccm-solution-template)" 및 "[Dynamics 365의 Power BI 콘텐츠](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)"를 참조하세요.
 
 > [!Important]  
 > 이제 쿼리 매개 변수  `api-version=v1.0`을(를) 설정하여 Intune 데이터 웨어하우스의 v1.0 버전을 사용할 수 있습니다. 데이터 웨어하우스에서 컬렉션 업데이트는 가산적이므로 기존 시나리오가 중단되지 않습니다.<br><br>

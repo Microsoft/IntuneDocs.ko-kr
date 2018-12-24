@@ -31,7 +31,7 @@ ms.locfileid: "52187415"
 
 1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** &gt; **모든 장치**(또는 사용 중지하려는 PC가 포함된 다른 그룹)를 선택합니다.
 
-2.  사용 중지하려는 장치를 선택한 후 **사용 중지/초기화**를 선택합니다.
+2.  사용 중지하려는 디바이스를 선택한 후 **사용 중지/초기화**를 선택합니다.
 
 PC를 Intune에 다시 등록하려면 [Microsoft Intune을 사용하여 Windows PC 클라이언트 설치](install-the-windows-pc-client-with-microsoft-intune.md)의 지침을 사용하여 PC에 소프트웨어 클라이언트를 다시 설치합니다.
 

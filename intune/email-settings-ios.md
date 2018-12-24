@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 iOS 장치에 대한 이메일 설정 - Azure | Microsoft Docs
-description: Exchange 서버를 사용하여 장치 구성 이메일 프로필을 만들고 Azure Active Directory에서 특성을 검색합니다. 또한 SSL을 활성화하고, 인증서 또는 사용자 이름/암호를 인증하고, Microsoft Intune을 사용하여 iOS 장치에서 이메일을 동기화할 수 있습니다.
+title: Microsoft Intune에서 iOS 디바이스에 대한 이메일 설정 - Azure | Microsoft Docs
+description: Exchange 서버를 사용하여 디바이스 구성 이메일 프로필을 만들고 Azure Active Directory에서 특성을 검색합니다. 또한 SSL을 활성화하고, 인증서 또는 사용자 이름/암호를 인증하고, Microsoft Intune을 사용하여 iOS 디바이스에서 이메일을 동기화할 수 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -20,9 +20,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52180190"
 ---
-# <a name="email-profile-settings-for-ios-devices---intune"></a>iOS 장치에 대한 이메일 프로필 설정 - Intune
+# <a name="email-profile-settings-for-ios-devices---intune"></a>iOS 디바이스에 대한 이메일 프로필 설정 - Intune
 
-이메일 프로필 설정을 사용하여 iOS를 실행하는 장치를 구성합니다.
+이메일 프로필 설정을 사용하여 iOS를 실행하는 디바이스를 구성합니다.
 
 > [!IMPORTANT]
 > 이 문서에서 설명하는 S/MIME 기능에 몇 가지 개선 사항을 적용하고 있습니다. 그 결과 Intune에서 S/MIME 기능이 일시적으로 제거되었습니다. 이 기능이 릴리스되면 본 메모를 제거하겠습니다.
@@ -30,7 +30,7 @@ ms.locfileid: "52180190"
 ## <a name="email-settings"></a>전자 메일 설정
 
 - **이메일 서버**: Exchange 서버의 호스트 이름을 입력합니다.
-- **계정 이름**: 이메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 장치에서 사용자에게 표시됩니다.
+- **계정 이름**: 이메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 디바이스에서 사용자에게 표시됩니다.
 - **AAD의 사용자 이름 특성**: 이 이름은 Intune이 AAD(Azure Active Directory)에서 가져오는 특성입니다. Intune은 이 프로필에서 사용되는 사용자 이름을 동적으로 생성합니다. 옵션은 다음과 같습니다.
   - **사용자 계정 이름**: `user1` 또는 `user1@contoso.com`과 같은 이름을 가져옵니다.
   - **기본 SMTP 주소**: `user1@contoso.com`과 같은 이메일 주소 형식의 이름을 가져옵니다.

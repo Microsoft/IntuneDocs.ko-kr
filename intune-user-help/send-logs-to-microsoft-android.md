@@ -24,9 +24,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43149399"
 ---
-# <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>회사 포털 개발자에게 Android 장치에 대한 로그 보내기
+# <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>회사 포털 개발자에게 Android 디바이스에 대한 로그 보내기
 
-회사 포털 앱이 예기치 않게 닫히는 경우가 있습니다. 앱 개발자는 예기치 않은 동작이 발생하는 경우 근본 원원을 찾아내고 이후 발생 시 방지할 수 있도록 사용자의 의견을 듣기를 원합니다. 이러한 오류는 장치의 _진단 로그_라는 특수 문서에 자세히 설명돼 있습니다. 회사 포털 팀은 문제를 진단하려면 회사 포털에 특정된 로그가 필요합니다.
+회사 포털 앱이 예기치 않게 닫히는 경우가 있습니다. 앱 개발자는 예기치 않은 동작이 발생하는 경우 근본 원원을 찾아내고 이후 발생 시 방지할 수 있도록 사용자의 의견을 듣기를 원합니다. 이러한 오류는 디바이스의 _진단 로그_라는 특수 문서에 자세히 설명돼 있습니다. 회사 포털 팀은 문제를 진단하려면 회사 포털에 특정된 로그가 필요합니다.
 
 > [!Note]
 > 회사 지원팀이 문제의 원인을 쉽게 파악할 수 있게 하려면 _자세한 정보 로깅_ 기능을 사용합니다. 자세한 정보 로깅은 오류에 대한 모든 세부 정보를 기록 하고 보고서에 이러한 세부 정보를 포함시킵니다. [여기에서 자세한 정보 로깅을 켜는](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) 방법을 확인해 보세요. 

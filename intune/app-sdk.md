@@ -39,7 +39,7 @@ IT 관리자가 앱의 회사 또는 학교 데이터를 이동할 수 있는 �
 IT 관리자는 Intune 관리 앱의 클립보드 동작을 구성할 수 있습니다. 예를 들어 최종 사용자가 앱에서 데이터를 잘라내거나 복사하여 관리되지 않는, 개인 앱에 붙여넣는 것을 방지하는 정책을 배포할 수 있습니다.
 
 ### <a name="enforce-encryption-on-saved-data"></a>저장된 데이터에 암호화 적용
-IT 관리자는 앱에서 장치에 저장하는 데이터가 암호화되도록 하는 정책을 적용할 수 있습니다.
+IT 관리자는 앱에서 디바이스에 저장하는 데이터가 암호화되도록 하는 정책을 적용할 수 있습니다.
 
 ### <a name="remotely-wipe-corporate-data"></a>원격으로 회사 데이터 초기화
 IT 관리자는 Intune 관리 앱에서 회사 데이터를 원격으로 초기화할 수 있습니다. 이 기능은 ID 기반이며 최종 사용자의 회사 ID와 연결된 파일만 삭제합니다. 이렇게 하려면 기능에 앱 참여가 필요합니다. 앱은 사용자 설정에 따라 초기화를 수행할 ID를 지정할 수 있습니다. 앱에서 지정된 이러한 사용자 설정이 없을 경우 기본 동작은 응용 프로그램 디렉터리를 초기화하고 최종 사용자에게 액세스가 제거되었음을 알리는 것입니다.
@@ -53,8 +53,8 @@ IT 관리자가 앱의 회사 데이터에 액세스하기 전에 PIN을 입력�
 ### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>앱 액세스를 위해 회사 또는 학교 계정으로 로그인하도록 요구
 IT 관리자가 앱에 액세스하려면 회사 또는 학교 계정으로 로그인하도록 사용자에게 요구할 수 있습니다. Intune 앱 SDK는 Azure Active Directory를 사용하여 입력된 자격 증명이 후속 로그인에 다시 사용되는 Single Sign-On 환경을 제공합니다. Azure Active Directory와 페더레이션된 ID 관리 솔루션의 인증도 지원됩니다.
 
-### <a name="check-device-health-and-compliance"></a>장치 상태 및 규정 준수 확인
-IT 관리자가 최종 사용자가 앱에 액세스하기 전에 장치 상태 및 Intune 정책 준수를 확인할 수 있습니다. iOS에서 이 정책은 장치가 무단 해제되었는지 여부를 확인합니다. Android에서 이 정책은 장치가 루팅되었는지 여부를 확인합니다.
+### <a name="check-device-health-and-compliance"></a>디바이스 상태 및 규정 준수 확인
+IT 관리자가 최종 사용자가 앱에 액세스하기 전에 디바이스 상태 및 Intune 정책 준수를 확인할 수 있습니다. iOS에서 이 정책은 디바이스가 무단 해제되었는지 여부를 확인합니다. Android에서 이 정책은 디바이스가 루팅되었는지 여부를 확인합니다.
 
 ### <a name="multi-identity-support"></a>다중 ID 지원
 다중 ID 지원은 단일 앱에서 정책 관리(회사) 계정과 관리되지 않는(개인) 계정을 동시에 사용할 수 있도록 지원하는 SDK의 기능입니다.
@@ -63,16 +63,16 @@ IT 관리자가 최종 사용자가 앱에 액세스하기 전에 장치 상태 
 
 다중 ID 기능은 조직이 개인 및 회사 계정을 둘 다 지원하는 스토어 앱에서 발생하는 데이터 보호 문제를 해결하는 데 도움이 됩니다.
  
-### <a name="app-protection-without-device-enrollment"></a>장치 등록이 제외된 앱 보호
+### <a name="app-protection-without-device-enrollment"></a>디바이스 등록이 제외된 앱 보호
 
 >[!IMPORTANT]
->장치 등록이 제외된 Intune 앱 보호는 Intune 앱 래핑 도구, Android용 Intune 앱 SDK, iOS용 Intune 앱 SDK, Intune App SDK Xamarin 바인딩에서 사용할 수 있습니다.
+>디바이스 등록이 제외된 Intune 앱 보호는 Intune 앱 래핑 도구, Android용 Intune 앱 SDK, iOS용 Intune 앱 SDK, Intune App SDK Xamarin 바인딩에서 사용할 수 있습니다.
 
-개인 장치가 있는 많은 사용자는 MDM(모바일 장치 관리) 공급자에 개인 장치를 등록하지 않고 회사 데이터에 액세스하여 사용할 수 있기를 원합니다. MDM 등록 시 장치에 대한 전역 제어를 요구하므로 사용자는 대개 개인 장치에 대한 제어를 회사에 부여하는 것을 주저합니다.
+개인 디바이스가 있는 많은 사용자는 MDM(모바일 디바이스 관리) 공급자에 개인 디바이스를 등록하지 않고 회사 데이터에 액세스하여 사용할 수 있기를 원합니다. MDM 등록 시 디바이스에 대한 전역 제어를 요구하므로 사용자는 대개 개인 디바이스에 대한 제어를 회사에 부여하는 것을 주저합니다.
 
-장치 등록이 제외된 앱 보호를 사용하면 Microsoft Intune 서비스가 장치 관리 채널을 통해 정책을 배포하지 않고 직접 앱 보호 정책을 앱에 배포할 수 있습니다.
+디바이스 등록이 제외된 앱 보호를 사용하면 Microsoft Intune 서비스가 디바이스 관리 채널을 통해 정책을 배포하지 않고 직접 앱 보호 정책을 앱에 배포할 수 있습니다.
 
 ### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Citrix mVPN을 통한 주문형 응용 프로그램 VPN 
-Citrix XenMobile MDX와 Microsoft Intune의 조합으로 장치와 앱을 관리할 수 있습니다. 이 조합은 Citrix의 mVPN 기술을 사용하는 동안 Intune 앱 보호 정책으로 앱을 관리할 수 있음을 의미합니다. Citrix와의 통합은 iOS 및 Android용 Intune 앱 SDK, iOS 및 Android용 Intune 앱 Wrapping Tool(-citrix flag 포함)을 사용할 수 있습니다.
+Citrix XenMobile MDX와 Microsoft Intune의 조합으로 디바이스와 앱을 관리할 수 있습니다. 이 조합은 Citrix의 mVPN 기술을 사용하는 동안 Intune 앱 보호 정책으로 앱을 관리할 수 있음을 의미합니다. Citrix와의 통합은 iOS 및 Android용 Intune 앱 SDK, iOS 및 Android용 Intune 앱 Wrapping Tool(-citrix flag 포함)을 사용할 수 있습니다.
  
 Citrix MDX에 대한 자세한 내용은 [MDX Toolkit 정보](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [iOS용 Citrix MDX 앱 래퍼](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) 및 [Android용 Citrix MDX 앱 래퍼](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)를 참조하세요.

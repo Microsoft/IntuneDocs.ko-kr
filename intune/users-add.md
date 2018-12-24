@@ -27,7 +27,7 @@ ms.locfileid: "52184576"
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-관리자는 사용자를 직접 추가할 수도 있고 온-프레미스 Active Directory에서 사용자를 동기화할 수도 있습니다. 추가된 사용자는 장치를 등록하고 회사 리소스에 액세스할 수 있습니다. *전역 관리자*, *서비스 관리자* 등의 추가 권한을 사용자에게 제공할 수도 있습니다.
+관리자는 사용자를 직접 추가할 수도 있고 온-프레미스 Active Directory에서 사용자를 동기화할 수도 있습니다. 추가된 사용자는 디바이스를 등록하고 회사 리소스에 액세스할 수 있습니다. *전역 관리자*, *서비스 관리자* 등의 추가 권한을 사용자에게 제공할 수도 있습니다.
 
 ## <a name="add-users-to-intune"></a>Intune에 사용자 추가
 [Office 365 포털](https://www.office.com/signin) 또는 [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)을 통해 Intune 구독에 사용자를 수동으로 추가할 수 있습니다. 관리자는 사용자 계정을 편집하여 Intune 라이선스를 할당할 수 있습니다. Office 365 포털 또는 Intune Azure Portal에서 라이선스를 할당할 수 있습니다. Office 365 포털 사용에 대한 자세한 내용은 [Office 365 포털에 개별적으로 또는 대량으로 사용자 추가](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)를 참조하세요.
@@ -69,7 +69,7 @@ ms.locfileid: "52184576"
    **만들기**를 선택하여 Intune에 새 사용자를 추가합니다.
 6. **프로필**을 선택한 다음 새 사용자의 **사용 위치**를 선택합니다. 새 사용자에게 Intune 라이선스를 할당하려면 사용 위치가 필요합니다. **저장**을 선택하여 계속합니다.
     ![사용 위치의 스크린샷](media/intune-add-user-loc.png)
-7. **라이선스**를 선택한 다음 **할당**을 선택하여 이 사용자에게 Intune 라이선스를 할당합니다. 장치를 등록하거나 회사 리소스에 액세스하려면 Intune 라이선스가 필요합니다. **제품**을 선택하고 라이선스 형식을 선택한 다음 **선택**, **할당**을 차례로 선택합니다.
+7. **라이선스**를 선택한 다음 **할당**을 선택하여 이 사용자에게 Intune 라이선스를 할당합니다. 디바이스를 등록하거나 회사 리소스에 액세스하려면 Intune 라이선스가 필요합니다. **제품**을 선택하고 라이선스 형식을 선택한 다음 **선택**, **할당**을 차례로 선택합니다.
 
 ## <a name="grant-admin-permissions"></a>관리자 권한 부여
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune - Azur에서 사용자 지정 장치 설정 사용 | Microsoft Docs
-description: Microsoft Intune을 사용하여 Windows Phone, Windows 8.1, Windows 10 이상, Android, Android 엔터프라이즈, macOS 및 iOS 장치에 대한 사용자 지정 설정을 사용할 프로필 추가 또는 만들기
+title: Microsoft Intune - Azur에서 사용자 지정 디바이스 설정 사용 | Microsoft Docs
+description: Microsoft Intune을 사용하여 Windows Phone, Windows 8.1, Windows 10 이상, Android, Android 엔터프라이즈, macOS 및 iOS 디바이스에 대한 사용자 지정 설정을 사용할 프로필 추가 또는 만들기
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,15 +24,15 @@ ms.locfileid: "52182893"
 
 ## <a name="what-are-custom-profiles"></a>사용자 지정 프로필이란
 
-Microsoft Intune에는 장치의 여러 기능을 제어하는 많은 기본 제공 설정이 있습니다. 사용자 지정 프로필을 만들 수도 있습니다. 사용자 지정 프로필은 Intune에 기본 제공되지 않은 장치 설정 및 기능을 사용하려는 경우 유용합니다. 이러한 프로필에는 조직에서 장치를 제어하기 위한 기능과 설정이 있습니다. 예를 들어, 모든 iOS 장치에 동일한 기능을 설정하는 사용자 지정 프로필을 만들 수 있습니다.
+Microsoft Intune에는 디바이스의 여러 기능을 제어하는 많은 기본 제공 설정이 있습니다. 사용자 지정 프로필을 만들 수도 있습니다. 사용자 지정 프로필은 Intune에 기본 제공되지 않은 디바이스 설정 및 기능을 사용하려는 경우 유용합니다. 이러한 프로필에는 조직에서 디바이스를 제어하기 위한 기능과 설정이 있습니다. 예를 들어, 모든 iOS 디바이스에 동일한 기능을 설정하는 사용자 지정 프로필을 만들 수 있습니다.
 
-구성 프로필에 대한 자세한 내용은 [Microsoft Intune 장치 프로필이란?](device-profiles.md)을 참조하세요. 
+구성 프로필에 대한 자세한 내용은 [Microsoft Intune 디바이스 프로필이란?](device-profiles.md)을 참조하세요. 
 
 이 문서에는 Android, Android 엔터프라이즈, iOS, macOS 및 Windows에 대한 사용자 지정 프로필을 만드는 데 필요한 링크가 있습니다.
 
 ## <a name="available-platforms"></a>사용 가능한 플랫폼
 
-사용자 지정 설정은 플랫폼마다 다르게 구성됩니다. 예를 들어 Android 및 Windows 장치에서 기능을 제어하려면 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 값을 입력할 수 있습니다. Apple 장치의 경우 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 또는 [Apple Profile Manager](https://support.apple.com/profile-manager)를 사용하여 만든 파일을 가져올 수 있습니다.
+사용자 지정 설정은 플랫폼마다 다르게 구성됩니다. 예를 들어 Android 및 Windows 디바이스에서 기능을 제어하려면 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 값을 입력할 수 있습니다. Apple 디바이스의 경우 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 또는 [Apple Profile Manager](https://support.apple.com/profile-manager)를 사용하여 만든 파일을 가져올 수 있습니다.
 
 사용자 지정 프로필은 기본 제공 프로필과 유사하게 만들어지며 다음 플랫폼에서 사용할 수 있습니다.
 

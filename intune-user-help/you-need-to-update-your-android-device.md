@@ -1,5 +1,5 @@
 ---
-title: Android 장치를 업데이트해야 함 | Microsoft 문서
+title: Android 디바이스를 업데이트해야 함 | Microsoft Docs
 description: Android 디바이스를 업데이트해야 합니다.
 keywords: ''
 author: lenewsad
@@ -24,7 +24,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/07/2018
 ms.locfileid: "53031877"
 ---
-# <a name="you-need-to-update-your-android-device"></a>Android 장치를 업데이트해야 함
+# <a name="you-need-to-update-your-android-device"></a>Android 디바이스를 업데이트해야 함
 
 [!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 

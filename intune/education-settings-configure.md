@@ -1,7 +1,7 @@
 ---
 title: Windows 10용 Intune 교육 설정 구성
 titleSuffix: Microsoft Intune
-description: 관리하는 장치에서 Intune을 사용하여 Windows 10 교육 설정을 구성하는 방법을 알아봅니다.
+description: 관리하는 디바이스에서 Intune을 사용하여 Windows 10 교육 설정을 구성하는 방법을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -27,11 +27,11 @@ ms.locfileid: "52187381"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-교육 프로필을 사용하면 계정 세부 정보 및 테스트 URL을 포함하여 Windows 시험 응시(Windows Take a Test) 앱을 구성하는 세부 정보를 지정할 수 있습니다. 이 설정을 구성할 경우 지정한 테스트와 함께 시험 응시(Take a Test) 앱이 열립니다. 테스트가 완료될 때까지 장치에서 다른 앱을 실행할 수 없습니다.
+교육 프로필을 사용하면 계정 세부 정보 및 테스트 URL을 포함하여 Windows 시험 응시(Windows Take a Test) 앱을 구성하는 세부 정보를 지정할 수 있습니다. 이 설정을 구성할 경우 지정한 테스트와 함께 시험 응시(Take a Test) 앱이 열립니다. 테스트가 완료될 때까지 디바이스에서 다른 앱을 실행할 수 없습니다.
 
 테스트 앱 사용에 대한 세부 정보는 [Windows 10에서 테스트 수행](https://docs.microsoft.com/education/windows/take-tests-in-windows-10)을 참조하세요.
 
-## <a name="create-a-device-profile-containing-education-profile-settings"></a>교육 프로필 설정을 포함하는 장치 프로필 만들기
+## <a name="create-a-device-profile-containing-education-profile-settings"></a>교육 프로필 설정을 포함하는 디바이스 프로필 만들기
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
@@ -53,7 +53,7 @@ ms.locfileid: "52187381"
 
 ## <a name="next-steps"></a>다음 단계
 
-계속해서 이 프로필을 그룹에 할당하려면 [장치 프로필을 할당하는 방법](device-profile-assign.md)을 참조하세요.
+계속해서 이 프로필을 그룹에 할당하려면 [디바이스 프로필을 할당하는 방법](device-profile-assign.md)을 참조하세요.
 
 
 

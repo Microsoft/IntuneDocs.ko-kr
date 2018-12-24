@@ -1,6 +1,6 @@
 ---
-title: 회사 지원팀에 Windows 10 장치에 대한 로그 보내기 | Microsoft Docs
-description: Windows 10 1511 이상 장치를 Intune에 등록
+title: 회사 지원팀에 Windows 10 디바이스에 대한 로그 보내기 | Microsoft Docs
+description: Windows 10 1511 이상 디바이스를 Intune에 등록
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -26,7 +26,7 @@ ms.locfileid: "43146522"
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>회사 포털 앱의 회사 지원팀에 Windows 10에 대한 로그 보내기
 
-Windows 10 장치에서 회사 포털 앱을 사용할 때 오류가 표시되면 메일로 오류 정보를 보내서 회사 지원팀이 문제를 해결하도록 도울 수 있습니다. 이 정보는 장치의 _진단 로그_라는 특수 문서에 저장됩니다.
+Windows 10 디바이스에서 회사 포털 앱을 사용할 때 오류가 표시되면 메일로 오류 정보를 보내서 회사 지원팀이 문제를 해결하도록 도울 수 있습니다. 이 정보는 디바이스의 _진단 로그_라는 특수 문서에 저장됩니다.
 
 > [!Note]       
 > Windows 10용 회사 포털은 사용자가 문제에 대한 도움을 받기 위해 워크플로를 시작할 때 Microsoft에 직접 앱 로그를 전송합니다. 이렇게 하면 Microsoft에 제기된 문제를 더 쉽게 해결할 수 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: iOS 장치에 Lookout for Work를 설치해야 하는 경우 | Microsoft 문서
+title: iOS 디바이스에 Lookout for Work를 설치해야 하는 경우 | Microsoft 문서
 description: iOS용 Lookout for Work를 설치하는 방법에 대해 알아봅니다.
 keywords: ''
 author: lenewsad
@@ -22,15 +22,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43149301"
 ---
-# <a name="install-lookout-for-work-on-your-ios-device"></a>iOS 장치에 Lookout for Work 설치
+# <a name="install-lookout-for-work-on-your-ios-device"></a>iOS 디바이스에 Lookout for Work 설치
 
 
-작업에 액세스하기 전에 회사에서는 잠재적 보안 위협을 찾아 장치를 보호하는 데 도움을 주는 Lookout for Work 앱을 설치하도록 요구합니다. IT 관리자가 Lookout for Work를 설치한 방식에 따라 장치에 다른 메시지가 표시될 수 있습니다.
+작업에 액세스하기 전에 회사에서는 잠재적 보안 위협을 찾아 디바이스를 보호하는 데 도움을 주는 Lookout for Work 앱을 설치하도록 요구합니다. IT 관리자가 Lookout for Work를 설치한 방식에 따라 디바이스에 다른 메시지가 표시될 수 있습니다.
 
 
 ## <a name="what-you-need-to-do"></a>수행해야 할 작업
 
-1.  다음과 같은 메시지가 표시되면 **설치**를 탭하여 Lookout for Work이 장치에 설치되도록 합니다.
+1.  다음과 같은 메시지가 표시되면 **설치**를 탭하여 Lookout for Work가 디바이스에 설치되도록 합니다.
 
       ![설치 및 취소 단추가 포함된 앱 설치 프롬프트의 스크린샷입니다.](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 
@@ -46,11 +46,11 @@ ms.locfileid: "43149301"
 
      ![설정 및 위치 서비스 탭하기](./media/ios-lfw-allow-notifications.png)
 
-   * Lookout for Work 설치가 끝나고 장치에서 보안 위협이 발견되지 않으면 다음 화면이 표시됩니다.
+   * Lookout for Work 설치가 끝나고 디바이스에서 보안 위협이 발견되지 않으면 다음 화면이 표시됩니다.
 
      ![Lookout for Work에서 보안 위협을 찾지 못함](./media/ios-lfw-no-threats-found.png)
 
-   * Lookout for Work에서 장치에 대한 보안 위협을 발견한 경우 문제 해결 방법에 대한 지침이 표시됩니다.
+   * Lookout for Work에서 디바이스에 대한 보안 위협을 발견한 경우 문제 해결 방법에 대한 지침이 표시됩니다.
 
 ## <a name="if-the-installation-doesnt-work"></a>설치가 작동하지 않는 경우
 

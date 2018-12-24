@@ -1,7 +1,7 @@
 ---
 title: Windows Holographic for Business으로 업그레이드
 titleSuffix: Microsoft Intune
-description: Windows Holographic을 실행하는 장치를 Windows Holographic for Business로 업그레이드하는 방법을 알아봅니다.
+description: Windows Holographic을 실행하는 디바이스를 Windows Holographic for Business로 업그레이드하는 방법을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -21,12 +21,12 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/08/2018
 ms.locfileid: "53112343"
 ---
-# <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Windows Holographic을 실행하는 장치를 Windows Holographic for Business로 업그레이드
+# <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Windows Holographic을 실행하는 디바이스를 Windows Holographic for Business로 업그레이드
 
 
-Microsoft Intune으로 Windows Holographic를 실행하는 장치를 관리하려면 Windows Holographic에서 Windows Holographic for Business로 장치를 업그레이드해야 합니다. 업그레이드 작업을 수행하여 버전 업그레이드 프로필을 만들 수 있습니다. Microsoft HoloLens의 경우 Commercial Suite를 구입하여 업그레이드에 필요한 라이선스를 얻을 수 있습니다. 자세한 내용은 [Windows Holographic for Business 기능 잠금 해제](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)를 참조하세요.
+Microsoft Intune으로 Windows Holographic를 실행하는 디바이스를 관리하려면 Windows Holographic에서 Windows Holographic for Business로 디바이스를 업그레이드해야 합니다. 업그레이드 작업을 수행하여 버전 업그레이드 프로필을 만들 수 있습니다. Microsoft HoloLens의 경우 Commercial Suite를 구입하여 업그레이드에 필요한 라이선스를 얻을 수 있습니다. 자세한 내용은 [Windows Holographic for Business 기능 잠금 해제](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)를 참조하세요.
 
-## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>버전 업그레이드 장치 구성 프로파일을 설정하려면
+## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>버전 업그레이드 디바이스 구성 프로파일을 설정하려면
 
 1. [Azure Portal](https://portal.azure.com)에 관리자 계정으로 로그인합니다.
 
@@ -46,7 +46,7 @@ Microsoft Intune으로 Windows Holographic를 실행하는 장치를 관리하�
 
 ## <a name="deploy-the-edition-upgrade-policy"></a>버전 업그레이드 정책 배포
 
-그 다음, 선택한 그룹 또는 장치에 버전 업그레이드 프로필을 할당합니다.
+그 다음, 선택한 그룹 또는 디바이스에 버전 업그레이드 프로필을 할당합니다.
 
 1. 이전 단계에서 만든 프로필에서 **할당**을 클릭합니다.
 
@@ -54,7 +54,7 @@ Microsoft Intune으로 Windows Holographic를 실행하는 장치를 관리하�
 
 ![그룹 포함 및 제외](media/Holographic-groups.PNG)
 
-이러한 사용자 또는 장치가 Intune에 등록되면 버전 업그레이드 프로필이 적용됩니다. 
+이러한 사용자 또는 디바이스가 Intune에 등록되면 버전 업그레이드 프로필이 적용됩니다. 
 
 ## <a name="next-steps"></a>다음 단계
 

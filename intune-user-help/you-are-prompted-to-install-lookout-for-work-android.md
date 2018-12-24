@@ -1,5 +1,5 @@
 ---
-title: Android 장치에 Lookout for Work를 설치해야 하는 경우 | Microsoft 문서
+title: Android 디바이스에 Lookout for Work를 설치해야 하는 경우 | Microsoft 문서
 description: Android용 Lookout for Work를 설치하는 방법에 대해 알아봅니다.
 keywords: ''
 author: lenewsad
@@ -24,7 +24,7 @@ ms.locfileid: "43150225"
 ---
 # <a name="install-lookout-for-work"></a>Lookout for Work 설치
 
-작업에 액세스하기 전에 회사 지원팀에서는 잠재적 보안 위협을 찾아 장치를 보호하는 데 도움을 주는 Lookout for Work 앱을 설치하도록 요구합니다.
+작업에 액세스하기 전에 회사 지원팀에서는 잠재적 보안 위협을 찾아 디바이스를 보호하는 데 도움을 주는 Lookout for Work 앱을 설치하도록 요구합니다.
 
 설치하는 데 문제가 있으면 이 항목 끝에 나오는 문제 해결 단계를 수행합니다.
 
@@ -34,9 +34,9 @@ ms.locfileid: "43150225"
 
    ![Lookout for Work를 설치하라는 메시지가 표시됨](./media/lookout-required-app-install-android.png)
 
-2. Play 스토어에서 Lookout for Work 설치 페이지로 이동합니다. Lookout for Work를 설치한 다음 **동의**를 탭하여 Lookout for Work에서 장치에 액세스할 수 있도록 허용합니다.
+2. Play 스토어에서 Lookout for Work 설치 페이지로 이동합니다. Lookout for Work를 설치한 다음 **동의**를 탭하여 Lookout for Work에서 디바이스에 액세스할 수 있도록 허용합니다.
 
-   ![Lookout for Work에서 장치에 액세스할 수 있도록 동의함을 탭함](./media/lookout-accept-store-permissions-android.png)
+   ![Lookout for Work에서 디바이스에 액세스할 수 있도록 동의함을 탭함](./media/lookout-accept-store-permissions-android.png)
 
 3. Lookout for Work를 열고 **활성화**를 탭합니다.
 
@@ -54,23 +54,23 @@ ms.locfileid: "43150225"
 
    ![동의를 탭하여 Lookout for Work에 사용자 프로필을 읽을 수 있는 권한 부여](./media/lookout-needs-permission-to-view-profile-android.png)
 
-7. Lookout에서 장치를 보호하는 방법에 대한 항목을 검토한 다음 **확인**을 탭합니다.
+7. Lookout에서 디바이스를 보호하는 방법에 대한 항목을 검토한 다음 **확인**을 탭합니다.
 
-   ![Lookout for Work에서 장치를 보호하는 방법 검토](./media/lookout-how-it-protects-your-device-android.png)
+   ![Lookout for Work에서 디바이스를 보호하는 방법 검토](./media/lookout-how-it-protects-your-device-android.png)
 
    다음 화면이 표시되면 Lookout이 설치되어 있고 현재 연결된 상태입니다.
 
    ![현재 Lookout for Work에 연결되어 있음](./media/lookout-you-are-now-connected-android.png)
 
-   Lookout for Work에서 장치의 보안 위협을 검사하기 시작합니다. 위협이 발견되지 않을 경우 다음 화면이 표시됩니다.
+   Lookout for Work에서 디바이스의 보안 위협을 검사하기 시작합니다. 위협이 발견되지 않을 경우 다음 화면이 표시됩니다.
 
    ![Lookout for Work에서 보안 위협을 찾지 못함](./media/lookout-scan-no-threats-found-android.png)
 
-   회사 포털의 장치 세부 정보 화면에 현재 회사의 보안 요구 사항을 준수하고 있다고 표시됩니다.
+   회사 포털의 디바이스 세부 정보 화면에 현재 회사의 보안 요구 사항을 준수하고 있다고 표시됩니다.
 
-    ![장치가 현재 정책을 준수함](./media/mtd-device-now-compliant-android.png)
+    ![디바이스가 현재 정책을 준수함](./media/mtd-device-now-compliant-android.png)
 
-   Lookout for Work에서 장치에 대한 보안 위협을 발견한 경우 문제 해결 방법에 대한 지침이 표시됩니다.
+   Lookout for Work에서 디바이스에 대한 보안 위협을 발견한 경우 문제 해결 방법에 대한 지침이 표시됩니다.
 
 ## <a name="if-the-installation-doesnt-work"></a>설치가 작동하지 않는 경우
 

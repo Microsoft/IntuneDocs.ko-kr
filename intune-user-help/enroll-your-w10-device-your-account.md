@@ -1,6 +1,6 @@
 ---
-title: Intune에서 Windows 10 장치 등록 | Microsoft 문서
-description: Windows 10 1511 장치를 Intune에 등록합니다.
+title: Intune에서 Windows 10 디바이스 등록 | Microsoft 문서
+description: Windows 10 1511 디바이스를 Intune에 등록합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,10 +24,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
 ms.locfileid: "31017328"
 ---
-# <a name="enroll-your-windows-10-device-in-intune"></a>Intune에서 Windows 10 장치 등록
+# <a name="enroll-your-windows-10-device-in-intune"></a>Intune에서 Windows 10 디바이스 등록
 
   > [!NOTE]
-  > Windows 10은 모든 유형의 장치에서 작동합니다. 데스크톱, 휴대폰 또는 태블릿에 따라 이 페이지의 그림과 다소 다르더라도 모두 동일한 단계를 따르면 됩니다.
+  > Windows 10은 모든 유형의 디바이스에서 작동합니다. 데스크톱, 휴대폰 또는 태블릿에 따라 이 페이지의 그림과 다소 다르더라도 모두 동일한 단계를 따르면 됩니다.
 
 1. **시작**으로 이동합니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "31017328"
 
 회사 또는 학교 메일, 파일 또는 기타 데이터에 여전히 액세스할 수 없나요? [사용자 계정으로 문제 해결](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)을 시도하여 액세스 문제를 해결해 보세요. 여전히 작동하지 않으면 회사 지원팀에 연락하여 도움을 요청하세요.
 
-회사 포털 앱에서 사용할 수 있는 연락처 정보를 찾고 일상 업무에 적합한 권장 앱과 필수 앱을 다운로드하여 간단하게 회사 지원팀의 도움을 받을 수 있습니다. 회사 포털 앱이 장치에 설치되어 있을 수도 있습니다. __모든 앱__ 목록에서 __회사 포털__을 찾아 빨리 확인할 수 있습니다.
+회사 포털 앱에서 사용할 수 있는 연락처 정보를 찾고 일상 업무에 적합한 권장 앱과 필수 앱을 다운로드하여 간단하게 회사 지원팀의 도움을 받을 수 있습니다. 회사 포털 앱이 디바이스에 설치되어 있을 수도 있습니다. __모든 앱__ 목록에서 __회사 포털__을 찾아 빨리 확인할 수 있습니다.
 
 앱 목록에 회사 포털이 표시되지 않으면 다음 단계를 따라 설치합니다.
 

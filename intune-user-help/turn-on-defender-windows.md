@@ -26,7 +26,7 @@ ms.locfileid: "43147984"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Windows Defender를 켜서 회사 리소스에 액세스
 
-직장이나 학교에서는 자체 리소스에 액세스하는 장치가 안전한지 확인해야 합니다. 악성 소프트웨어에 대한 Windows의 기본 보호 기능인 [Windows Defender](https://www.microsoft.com/safety/pc-security/windows-defender.aspx)를 사용하는 방법은 여러 가지가 있습니다.
+직장이나 학교에서는 자체 리소스에 액세스하는 디바이스가 안전한지 확인해야 합니다. 악성 소프트웨어에 대한 Windows의 기본 보호 기능인 [Windows Defender](https://www.microsoft.com/safety/pc-security/windows-defender.aspx)를 사용하는 방법은 여러 가지가 있습니다.
 
 액세스 문제가 있는 경우 해결하기 위해 Windows Defender에서 변경할 필요가 있는 설정이 몇 가지 있습니다. 이 단계를 수행하려면 컴퓨터의 여러 위치로 이동이 필요할 수 있습니다.
 

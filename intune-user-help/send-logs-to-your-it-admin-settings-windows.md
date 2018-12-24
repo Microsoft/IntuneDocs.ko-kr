@@ -1,6 +1,6 @@
 ---
-title: 회사 지원팀에 Windows 10 장치에 대한 로그 보내기 | Microsoft Docs
-description: Windows 10 1511 장치를 Intune에 등록합니다.
+title: 회사 지원팀에 Windows 10 디바이스에 대한 로그 보내기 | Microsoft Docs
+description: Windows 10 1511 디바이스를 Intune에 등록합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -26,7 +26,7 @@ ms.locfileid: "43146742"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>설정 앱의 회사 지원팀에 Windows 10에 대한 로그 보내기
 
-회사에서 관리하는 Windows 10 장치를 사용하는 동안 오류가 발생하면 전자 메일로 오류 정보를 보내 회사 지원팀이 문제를 해결하도록 도울 수 있습니다. 이 정보는 장치의 _진단 로그_라는 특수 문서에 저장됩니다.
+회사에서 관리하는 Windows 10 디바이스를 사용하는 동안 오류가 발생하면 전자 메일로 오류 정보를 보내 회사 지원팀이 문제를 해결하도록 도울 수 있습니다. 이 정보는 디바이스의 _진단 로그_라는 특수 문서에 저장됩니다.
 
 1. **시작 메뉴**로 이동한 다음 **설정** 단추를 선택하여 Windows **설정** 앱을 엽니다. 검색 표시줄에서 "설정"을 검색할 수도 있습니다.
 2. **계정** > **회사 또는 학교 액세스**를 선택합니다.

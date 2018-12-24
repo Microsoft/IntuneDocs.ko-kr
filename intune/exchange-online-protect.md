@@ -1,7 +1,7 @@
 ---
-title: 장치 관리하지 않고 교환
+title: 디바이스 관리하지 않고 교환
 titleSuffix: Microsoft Intune
-description: Microsoft Intune을 사용하면 장치 관리 시스템을 설정하지 않고 Office 365 Exchange Online 이메일에 대한 액세스 권한을 직원에게 제공할 수 있습니다.
+description: Microsoft Intune을 사용하면 디바이스 관리 시스템을 설정하지 않고 Office 365 Exchange Online 이메일에 대한 액세스 권한을 직원에게 제공할 수 있습니다.
 keywords: Office 365 Exchange 메일 액세스
 author: brenduns
 ms.author: brenduns
@@ -23,9 +23,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52179799"
 ---
-# <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>장치를 관리할 필요 없이 Office 365 Exchange Online 보호
+# <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>디바이스를 관리할 필요 없이 Office 365 Exchange Online 보호
 
-장치 관리 시스템 설정에 대한 오버헤드 없이 직원에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우 그렇게 할 수 있습니다. Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있습니다. 필요한 단계를 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS 또는 Android 장치](supported-devices-browsers.md)가 있어야 합니다. 
+디바이스 관리 시스템 설정에 대한 오버헤드 없이 직원에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우 그렇게 할 수 있습니다. Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있습니다. 필요한 단계를 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS 또는 Android 디바이스](supported-devices-browsers.md)가 있어야 합니다. 
 
 장치 관리 시스템을 설정하여 관리하고자 한다면 가능합니다. 이러한 유형의 앱 보호는 장치 관리와 독립적으로 작동하게 됩니다. 
 

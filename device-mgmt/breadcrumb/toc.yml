@@ -1,12 +1,12 @@
 items:
-- name: 장치 관리
+- name: 디바이스 관리
   tocHref: /intune/
   topicHref: /intune/index
   items:
   - name: Intune
     tocHref: /enterprise-mobility-security/intune/index
     topicHref: /device-mgmt/index
-- name: 장치 관리
+- name: 디바이스 관리
   tocHref: /azure/
   topicHref: /azure/index
   items:

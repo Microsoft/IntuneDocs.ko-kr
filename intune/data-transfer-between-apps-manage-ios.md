@@ -31,7 +31,7 @@ ms.locfileid: "52728670"
 
 -   **MDM 채널**을 통해 앱을 배포 및 관리합니다. 이 경우 MDM(모바일 디바이스 관리) 솔루션에 디바이스를 등록해야 합니다. 배포하는 앱은 **정책 관리** 앱 또는 다른 관리되는 앱일 수 있습니다.
 
-iOS 장치의 **관리에서 열기** 기능은 **MDM 채널**을 통해 장치에 배포된 앱 간에만 파일 전송이 발생하도록 제한할 수 있습니다. 구성 설정에서 *관리에서 열기* 제한 사항을 설정한 다음, MDM 솔루션을 사용하여 배포합니다.  사용자가 배포된 앱을 설치하면 설정한 제한 사항이 적용됩니다.
+iOS 디바이스의 **관리에서 열기** 기능은 **MDM 채널**을 통해 디바이스에 배포된 앱 간에만 파일 전송이 발생하도록 제한할 수 있습니다. 구성 설정에서 *관리에서 열기* 제한 사항을 설정한 다음, MDM 솔루션을 사용하여 배포합니다.  사용자가 배포된 앱을 설치하면 설정한 제한 사항이 적용됩니다.
 
 ##  <a name="use-app-protection-with-ios-apps"></a>iOS 앱에서 앱 보호 사용
 iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 다음과 같은 방법으로 회사 데이터를 보호할 수 있습니다.
@@ -44,7 +44,7 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
 타사 MDM 솔루션을 사용하여 배포하는 앱도 Intune 앱 보호 정책과 연결되도록 하려면 [사용자 UPN 설정 구성](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 섹션에서 설명된 대로 사용자 UPN 설정을 구성합니다. 사용자 UPN 설정으로 앱을 배포하면 사용자가 회사 계정을 사용하여 로그인할 때 앱 보호 정책이 앱에 적용됩니다.
 
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Microsoft Intune 또는 타사 EMM에 대한 사용자 UPN 설정 구성
-사용자 UPN 설정 구성은 Intune 또는 타사 EMM 솔루션으로 관리되는 장치에 **필요**합니다. UPN 구성은 Intune에서 배포하는 앱 보호 정책과 함께 작동합니다. 다음 프로시저는 UPN 설정 방법을 구성하는 방법과 그에 따른 사용자 환경에 대한 일반적인 흐름입니다.
+사용자 UPN 설정 구성은 Intune 또는 타사 EMM 솔루션으로 관리되는 디바이스에 **필요**합니다. UPN 구성은 Intune에서 배포하는 앱 보호 정책과 함께 작동합니다. 다음 프로시저는 UPN 설정 방법을 구성하는 방법과 그에 따른 사용자 환경에 대한 일반적인 흐름입니다.
 
 1.  [Azure Portal](https://portal.azure.com)에서 iOS에 대한 [앱 보호 정책을 만들고 할당](app-protection-policies.md)합니다. 회사 요구 사항에 따라 정책 설정을 구성하고 이 정책이 있어야 하는 iOS 앱을 선택합니다.
 
@@ -56,12 +56,12 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
 
       예: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-4.  등록된 장치에 Intune 또는 타사 MDM 공급자를 사용하여 다음에서 **열기 관리** 정책을 배포합니다.
+4.  등록된 디바이스에 Intune 또는 타사 MDM 공급자를 사용하여 다음에서 **열기 관리** 정책을 배포합니다.
 
 
 ### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>예제 1: Intune 또는 타사 MDM 콘솔의 관리 환경
 
-1. Intune 또는 타사 MDM 공급자의 관리 콘솔로 이동합니다. 등록된 iOS 장치에 응용 프로그램 구성 설정을 배포하는 콘솔 섹션으로 이동합니다.
+1. Intune 또는 타사 MDM 공급자의 관리 콘솔로 이동합니다. 등록된 iOS 디바이스에 응용 프로그램 구성 설정을 배포하는 콘솔 섹션으로 이동합니다.
 
 2. [응용 프로그램 구성] 섹션에서 다음 설정을 입력합니다.
 
@@ -74,7 +74,7 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
    |Microsoft Intune| IntuneMAMUPN | 문자열 | {{UserPrincipalName}}|
    |VMware AirWatch| IntuneMAMUPN | 문자열 | {UserPrincipalName}|
    |MobileIron | IntuneMAMUPN | 문자열 | ${userUPN} **또는** ${userEmailAddress} |
-   |ManageEngine 모바일 장치 관리자 | IntuneMAMUPN | 문자열 | %upn% |
+   |ManageEngine 모바일 디바이스 관리자 | IntuneMAMUPN | 문자열 | %upn% |
 
 
 ### <a name="example-2-end-user-experience"></a>예제 2: 최종 사용자 환경

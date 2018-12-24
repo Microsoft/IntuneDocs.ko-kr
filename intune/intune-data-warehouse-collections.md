@@ -76,38 +76,38 @@ ms.locfileid: "52190322"
 | 12        | Windows Phone LOB 앱           | Windows Phone 기간 업무 앱             |
 
 ## <a name="compliancepolicystatusdeviceactivities"></a>compliancePolicyStatusDeviceActivities
-다음 표는 장치에 준수 정책 할당 상태를 요약하여 보여줍니다. 각 준수 상태에서 찾을 수 있는 장치 수를 표시합니다.
+다음 표는 디바이스에 준수 정책 할당 상태를 요약하여 보여줍니다. 각 준수 상태에서 찾을 수 있는 디바이스 수를 표시합니다.
 
 |    속성   |                                                                                      설명                                                                                     |  예제 |
 |:-------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------:|
 | DateKey       | 규정 준수 정책에 대한 요약을 만들 때의 날짜 키                                                                                                                   | 20161204 |
-| Unknown       | 오프라인이거나 다른 이유로 인해 Intune 또는 Azure AD와 통신하지 못한 장치 수                                                                           | 5        |
-| NotApplicable | 관리자가 대상으로 지정한 장치 규정 준수 정책을 적용할 수 없는 장치 수                                                                                     | 201      |
-| 규정     | 관리자가 대상으로 지정한 하나 이상의 장치 준수 정책 설정이 성공적으로 적용된 장치 수                                                                        | 4083     |
-| InGracePeriod | 관리자가 정의한 유예 기간에 있지만, 해당 규정을 준수하지 않은 장치 수                                                                                  | 57       |
-| NonCompliant  | 관리자가 대상으로 지정한 하나 이상의 장치 준수 정책이 장치에서 적용되지 않았거나, 관리자가 대상으로 지정한 정책을 사용자가 준수하지 않는 장치 수 | 43       |
-|    오류      |    Intune 또는 Azure AD와 통신하지 못하고 오류 메시지를 반환한 장치 수                                                                          |    3     |
+| Unknown       | 오프라인이거나 다른 이유로 인해 Intune 또는 Azure AD와 통신하지 못한 디바이스 수                                                                           | 5        |
+| NotApplicable | 관리자가 대상으로 지정한 디바이스 규정 준수 정책을 적용할 수 없는 디바이스 수                                                                                     | 201      |
+| 규정     | 관리자가 대상으로 지정한 하나 이상의 디바이스 준수 정책 설정이 성공적으로 적용된 디바이스 수                                                                        | 4083     |
+| InGracePeriod | 관리자가 정의한 유예 기간에 있지만, 해당 규정을 준수하지 않은 디바이스 수                                                                                  | 57       |
+| NonCompliant  | 관리자가 대상으로 지정한 하나 이상의 디바이스 준수 정책이 디바이스에서 적용되지 않았거나, 관리자가 대상으로 지정한 정책을 사용자가 준수하지 않는 디바이스 수 | 43       |
+|    오류      |    Intune 또는 Azure AD와 통신하지 못하고 오류 메시지를 반환한 디바이스 수                                                                          |    3     |
 
 ## <a name="compliancepolicystatusdeviceperpolicyactivities"></a>compliancePolicyStatusDevicePerPolicyActivities
-다음 표는 정책별 및 정책 유형별 기반 위에 장치에 준수 정책 할당 상태를 요약하여 보여줍니다. 각 할당된 준수 정책에 대한 각 준수 상태에서 찾을 수 있는 장치 수를 표시합니다.
+다음 표는 정책별 및 정책 유형별 기반 위에 디바이스에 준수 정책 할당 상태를 요약하여 보여줍니다. 각 할당된 준수 정책에 대한 각 준수 상태에서 찾을 수 있는 디바이스 수를 표시합니다.
 
 |      속성     |                                                                                      설명                                                                                     |  예제 |
 |:-----------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------:|
 | DateKey           | 규정 준수 정책에 대한 요약을 만들 때의 날짜 키                                                                                                                   | 20161219 |
 | PolicyKey         | 요약이 생성된 규정 준수 정책의 키                                                                                                                   | 10178    |
 | PolicyPlatformKey | 요약이 생성된 규정 준수 정책의 플랫폼 형식의 키                                                                                            | 5        |
-| Unknown           | 오프라인이거나 다른 이유로 인해 Intune 또는 Azure AD와 통신하지 못한 장치 수                                                                           | 13       |
-| NotApplicable     | 관리자가 대상으로 지정한 장치 규정 준수 정책을 적용할 수 없는 장치 수                                                                                     | 3        |
-| 규정         | 관리자가 대상으로 지정한 하나 이상의 장치 준수 정책 설정이 성공적으로 적용된 장치 수                                                                        | 45       |
-| InGracePeriod     | 관리자가 정의한 유예 기간에 있지만, 해당 규정을 준수하지 않은 장치 수                                                                                  | 3        |
-| NonCompliant      | 관리자가 대상으로 지정한 하나 이상의 장치 준수 정책이 장치에서 적용되지 않았거나, 관리자가 대상으로 지정한 정책을 사용자가 준수하지 않는 장치 수 | 7        |
-| 오류             | Intune 또는 Azure AD와 통신하지 못하고 오류 메시지를 반환한 장치 수                                                                             | 3        |
+| Unknown           | 오프라인이거나 다른 이유로 인해 Intune 또는 Azure AD와 통신하지 못한 디바이스 수                                                                           | 13       |
+| NotApplicable     | 관리자가 대상으로 지정한 디바이스 규정 준수 정책을 적용할 수 없는 디바이스 수                                                                                     | 3        |
+| 규정         | 관리자가 대상으로 지정한 하나 이상의 디바이스 준수 정책 설정이 성공적으로 적용된 디바이스 수                                                                        | 45       |
+| InGracePeriod     | 관리자가 정의한 유예 기간에 있지만, 해당 규정을 준수하지 않은 디바이스 수                                                                                  | 3        |
+| NonCompliant      | 관리자가 대상으로 지정한 하나 이상의 디바이스 준수 정책이 디바이스에서 적용되지 않았거나, 관리자가 대상으로 지정한 정책을 사용자가 준수하지 않는 디바이스 수 | 7        |
+| 오류             | Intune 또는 Azure AD와 통신하지 못하고 오류 메시지를 반환한 디바이스 수                                                                             | 3        |
 ## <a name="compliancestates"></a>complianceStates
 
 |      속성      |                       설명                      |
 |:------------------:|:------------------------------------------------------:|
-| complianceStatus   | mdmStatusKey가 있는 장치의 준수 상태       |
-| complianceStateKey | 장치 및 준수 상태와 일치하는 준수 키 |
+| complianceStatus   | mdmStatusKey가 있는 디바이스의 준수 상태       |
+| complianceStateKey | 디바이스 및 준수 상태와 일치하는 준수 키 |
 | complianceStateID  | 이 준수 상태와 일치하는 ID                |
 
 ### <a name="example"></a>예제
@@ -116,11 +116,11 @@ ms.locfileid: "52190322"
 |:------------------:|:------------------------------------------------------:|
 |    Unknown         |    알 수 없습니다.                                                                        |
 |    규정       |    준수                                                                      |
-|    정책 위반    |       장치가 호환되지 않으며 회사 리소스에서 차단되었습니다.             |
+|    정책 위반    |       디바이스가 호환되지 않으며 회사 리소스에서 차단되었습니다.             |
 |    Conflict        |    다른 규칙과 충돌합니다.                                                      |
 |    오류           |       오류.                                                                       |
 |    ConfigManager   |    Config Manager가 관리합니다.                                                      |
-|    InGracePeriod   |       장치가 호환되지 않지만 계속해서 회사 리소스에 액세스할 수 있습니다.          |
+|    InGracePeriod   |       디바이스가 호환되지 않지만 계속해서 회사 리소스에 액세스할 수 있습니다.          |
 
 ## <a name="dates"></a>날짜
 **날짜** 엔터티는 여러 데이터 웨어하우스 엔터티에 걸쳐 참조되는 날짜를 나타냅니다.
@@ -150,27 +150,27 @@ ms.locfileid: "52190322"
 
 |      속성      |                                    설명                                   |                예제               |
 |:------------------:|:--------------------------------------------------------------------------------:|:------------------------------------:|
-| deviceCategoryID   | 장치 범주의 고유 식별자입니다.                                       | fb415ba2-7c08-41f6-a5e5-685b50da2c4c |
-| deviceCategoryKey  | 데이터 웨어하우스에서 장치 범주의 고유 식별자 - 서로게이트 키 | 1                                    |
-| deviceCategoryName | 장치 범주의 표시 이름                                            | Smartphones                          |
+| deviceCategoryID   | 디바이스 범주의 고유 식별자입니다.                                       | fb415ba2-7c08-41f6-a5e5-685b50da2c4c |
+| deviceCategoryKey  | 데이터 웨어하우스에서 디바이스 범주의 고유 식별자 - 서로게이트 키 | 1                                    |
+| deviceCategoryName | 디바이스 범주의 표시 이름                                            | Smartphones                          |
 
 ## <a name="deviceconfigurationprofiledeviceactivities"></a>deviceConfigurationProfileDeviceActivities
-**DeviceConfigurationProfileDeviceActivity** 엔터티는 하루에 성공, 보류, 실패 또는 오류 상태에 있는 장치의 수를 나열합니다. 숫자는 엔터티에 할당된 장치 구성 프로필을 반영합니다. 예를 들어 장치가 모든 할당된 정책에 대해 성공 상태에 있으면 그 날에 대해 성공 카운터를 1만큼 높입니다. 장치에 두 프로필이 할당된 경우(성공 상태에 하나, 오류 상태에 하나) 엔터티는 성공 카운터를 하나 늘리고 장치를 오류 상태에 놓습니다. 엔터티는 지난 30일 동안 특정 날짜에 해당 상태에 있는 장치가 몇 개인지 표시합니다.
+**DeviceConfigurationProfileDeviceActivity** 엔터티는 하루에 성공, 보류, 실패 또는 오류 상태에 있는 장치의 수를 나열합니다. 숫자는 엔터티에 할당된 디바이스 구성 프로필을 반영합니다. 예를 들어 디바이스가 모든 할당된 정책에 대해 성공 상태에 있으면 그 날에 대해 성공 카운터를 1만큼 높입니다. 디바이스에 두 프로필이 할당된 경우(성공 상태에 하나, 오류 상태에 하나) 엔터티는 성공 카운터를 하나 늘리고 디바이스를 오류 상태에 놓습니다. 엔터티는 지난 30일 동안 특정 날짜에 해당 상태에 있는 디바이스가 몇 개인지 표시합니다.
 
 |  속성 |                                          설명                                          |  예제 |
 |:---------:|:---------------------------------------------------------------------------------------------:|:--------:|
-| DateKey   | 데이터 웨어하우스에서 장치 구성 프로필 체크 인을 기록했을 때의 날짜 키 | 20160703 |
-| Pending   | 보류 중 상태에 있는 고유 장치의 수                                                    | 123      |
-| 성공 | 성공 상태에 있는 고유 장치의 수                                                    | 12       |
-| 오류     | 오류 상태에 있는 고유 장치의 수                                                      | 10       |
-| Failed    | 실패 상태에 있는 고유 장치의 수                                                     | 2        |
+| DateKey   | 데이터 웨어하우스에서 디바이스 구성 프로필 체크 인을 기록했을 때의 날짜 키 | 20160703 |
+| Pending   | 보류 중 상태에 있는 고유 디바이스의 수                                                    | 123      |
+| 성공 | 성공 상태에 있는 고유 디바이스의 수                                                    | 12       |
+| 오류     | 오류 상태에 있는 고유 디바이스의 수                                                      | 10       |
+| Failed    | 실패 상태에 있는 고유 디바이스의 수                                                     | 2        |
 
 ## <a name="deviceconfigurationprofileuseractivities"></a>deviceConfigurationProfileUserActivities 
-**DeviceConfigurationProfileUserActivity** 엔터티는 하루에 성공, 보류, 실패, 오류 상태에 있는 사용자 수를 표시합니다. 숫자는 엔터티에 할당된 장치 구성 프로필을 반영합니다. 예를 들어 사용자가 모든 할당된 정책에 대해 성공 상태에 있으면 해당 날짜에 대한 성공 카운터를 1만큼 높입니다. 사용자에게 두 프로필이 할당된 경우(하나는 성공 상태, 하나는 오류 상태) 오류 상태의 사용자를 카운트합니다. **DeviceConfigurationProfileUserActivity** 엔터티는 지난 30일 동안 특정 날짜에 해당 상태에 있는 사용자 수를 표시합니다. 
+**DeviceConfigurationProfileUserActivity** 엔터티는 하루에 성공, 보류, 실패, 오류 상태에 있는 사용자 수를 표시합니다. 숫자는 엔터티에 할당된 디바이스 구성 프로필을 반영합니다. 예를 들어 사용자가 모든 할당된 정책에 대해 성공 상태에 있으면 해당 날짜에 대한 성공 카운터를 1만큼 높입니다. 사용자에게 두 프로필이 할당된 경우(하나는 성공 상태, 하나는 오류 상태) 오류 상태의 사용자를 카운트합니다. **DeviceConfigurationProfileUserActivity** 엔터티는 지난 30일 동안 특정 날짜에 해당 상태에 있는 사용자 수를 표시합니다. 
 
 | 속성  | 설명  | 예제  |
 |------------|----------------------------------------------------------------------------------------------|-----------|
-| DateKey  | 데이터 웨어하우스에서 장치 구성 프로필 체크 인을 기록했을 때의 날짜 키  | 20160703  |
+| DateKey  | 데이터 웨어하우스에서 디바이스 구성 프로필 체크 인을 기록했을 때의 날짜 키  | 20160703  |
 | Pending  | 보류 중 상태에 있는 고유 사용자 수  | 123  |
 | 성공  | 성공 상태에 있는 고유 사용자 수  | 12  |
 | 오류  | 오류 상태에 있는 고유 사용자 수  | 10  |
@@ -181,16 +181,16 @@ ms.locfileid: "52190322"
 |          속성          |                                                                                      설명                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | DateKey                    | 날짜를 나타내는 날짜 테이블에 대한 참조                                                                                                                                          |
-| DeviceKey                  | 데이터 웨어하우스에서 장치의 고유 식별자는 서로게이트 키입니다. Intune 장치 ID가 포함된 장치 테이블의 참조입니다.                               |
-| DeviceName                 | 장치 이름 지정을 허용하는 플랫폼에서 장치의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 모든 장치에 대해 사용할 수 없습니다. |
-| DeviceRegistrationStateKey | 이 장치에 대한 장치 등록 상태 특성의 키입니다.                                                                                                                    |
-| OwnerTypeKey               | 이 장치의 소유자 유형 특성 키는 회사, 개인 또는 알 수 없음입니다.                                                                                                  |
-| ManagementStateKey         | 이 장치와 연결된 관리 상태의 키로 원격 작업의 마지막 상태나 탈옥/루팅 여부를 나타냅니다.                                                |
-| AzureADRegistered          | 장치가 Azure Active Directory에 등록되었는지 여부를 나타냅니다.                                                                                                                             |
+| DeviceKey                  | 데이터 웨어하우스에서 디바이스의 고유 식별자는 서로게이트 키입니다. Intune 디바이스 ID가 포함된 디바이스 테이블의 참조입니다.                               |
+| DeviceName                 | 디바이스 이름 지정을 허용하는 플랫폼에서 디바이스의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 모든 디바이스에 대해 사용할 수 없습니다. |
+| DeviceRegistrationStateKey | 이 디바이스에 대한 디바이스 등록 상태 특성의 키입니다.                                                                                                                    |
+| OwnerTypeKey               | 이 디바이스의 소유자 유형 특성 키는 회사, 개인 또는 알 수 없음입니다.                                                                                                  |
+| ManagementStateKey         | 이 디바이스와 연결된 관리 상태의 키로 원격 작업의 마지막 상태나 탈옥/루팅 여부를 나타냅니다.                                                |
+| AzureADRegistered          | 디바이스가 Azure Active Directory에 등록되었는지 여부를 나타냅니다.                                                                                                                             |
 | ComplianceStateKey         | ComplianceState에 대한 키입니다.                                                                                                                                                            |
 | OSVersion                  | OS 버전                                                                                                                                                                          |
-| 탈옥                 | 장치의 탈옥 또는 루팅 여부를 나타냅니다.                                                                                                                                         |
-| DeviceCategoryKey          | 이 장치의 장치 범주 특성 키입니다.                                                                                                                                    |
+| 탈옥                 | 디바이스의 탈옥 또는 루팅 여부를 나타냅니다.                                                                                                                                         |
+| DeviceCategoryKey          | 이 디바이스의 디바이스 범주 특성 키입니다.                                                                                                                                    |
 ## <a name="deviceregistrationstates"></a>deviceRegistrationStates
 **DeviceRegistrationState** 엔터티는 다른 데이터 웨어하우스 컬렉션에서 참조하는 등록 형식을 나타냅니다. 
 
@@ -201,7 +201,7 @@ ms.locfileid: "52190322"
 | deviceRegistrationStateName | 등록 상태                                                                  |
 |    NotRegistered                     |    등록 안 됨                                                                                                                                                                  |
 |    등록됨                        |       등록됨                                                                                                                                                                   |
-|    Revoked                           |       IT 관리자가 클라이언트를 차단했고 클라이언트가 차단 해제될 수 있음을 나타내는 상태입니다. 장치는 초기화 또는 사용 중지 후 취소 상태가 될 수 있습니다.        |
+|    Revoked                           |       IT 관리자가 클라이언트를 차단했고 클라이언트가 차단 해제될 수 있음을 나타내는 상태입니다. 디바이스는 초기화 또는 사용 중지 후 취소 상태가 될 수 있습니다.        |
 |    KeyConflict                       |    키 충돌                                                                                                                                                                    |
 |    ApprovalPending                   |    승인 보류 중                                                                                                                                                                |
 |    CertificateReset                  |    인증서 재설정                                                                                                                                                               |
@@ -213,79 +213,79 @@ ms.locfileid: "52190322"
 
 |          속성          |                                                                                       설명                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| DeviceKey                  | 데이터 웨어하우스에서 장치의 고유 식별자 - 서로게이트 키                                                                                                               |
-| DeviceId                   | 장치의 고유 식별자입니다.                                                                                                                                                     |
-| DeviceName                 | 장치 이름 지정을 허용하는 플랫폼에서 장치의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 모든 장치에 대해 사용할 수 없습니다. |
-| DeviceTypeKey              | 이 장치의 장치 유형 특성의 키                                                                                                                                    |
-| DeviceRegistrationState    | 이 장치의 클라이언트 등록 상태 특성의 키                                                                                                                      |
-| OwnerTypeKey               | 이 장치의 소유자 유형 특성 키는 회사, 개인 또는 알 수 없음입니다.                                                                                                    |
-| EnrolledDateTime           | 이 장치가 등록된 날짜 및 시간                                                                                                                                         |
-| LastSyncDateTime           | Intune에서 마지막으로 인식된 장치 체크 인                                                                                                                                              |
-| ManagementAgentKey         | 이 장치와 연결된 관리 에이전트의 키                                                                                                                             |
-| ManagementStateKey         | 이 장치와 연결된 관리 상태의 키로 원격 작업의 마지막 상태를 나타내거나 탈옥/루팅 여부를 나타냅니다.                                                |
-| AzureADDeviceId            | 이 장치의 Azure deviceID                                                                                                                                                  |
-| AzureADRegistered          | 장치가 Azure Active Directory에 등록되었는지 여부를 나타냅니다.                                                                                                                             |
-| DeviceCategoryKey          | 이 장치와 연결된 범주의 키                                                                                                                                     |
-| DeviceEnrollmentType       | 이 장치와 연결된 등록 유형 키로 등록 방법을 나타냅니다.                                                                                             |
-| ComplianceStateKey         | 이 장치와 연결된 준수 상태의 키입니다.                                                                                                                             |
+| DeviceKey                  | 데이터 웨어하우스에서 디바이스의 고유 식별자 - 서로게이트 키                                                                                                               |
+| DeviceId                   | 디바이스의 고유 식별자입니다.                                                                                                                                                     |
+| DeviceName                 | 디바이스 이름 지정을 허용하는 플랫폼에서 디바이스의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 모든 디바이스에 대해 사용할 수 없습니다. |
+| DeviceTypeKey              | 이 디바이스의 디바이스 유형 특성의 키                                                                                                                                    |
+| DeviceRegistrationState    | 이 디바이스의 클라이언트 등록 상태 특성의 키                                                                                                                      |
+| OwnerTypeKey               | 이 디바이스의 소유자 유형 특성 키는 회사, 개인 또는 알 수 없음입니다.                                                                                                    |
+| EnrolledDateTime           | 이 디바이스가 등록된 날짜 및 시간                                                                                                                                         |
+| LastSyncDateTime           | Intune에서 마지막으로 인식된 디바이스 체크 인                                                                                                                                              |
+| ManagementAgentKey         | 이 디바이스와 연결된 관리 에이전트의 키                                                                                                                             |
+| ManagementStateKey         | 이 디바이스와 연결된 관리 상태의 키로 원격 작업의 마지막 상태를 나타내거나 탈옥/루팅 여부를 나타냅니다.                                                |
+| AzureADDeviceId            | 이 디바이스의 Azure deviceID                                                                                                                                                  |
+| AzureADRegistered          | 디바이스가 Azure Active Directory에 등록되었는지 여부를 나타냅니다.                                                                                                                             |
+| DeviceCategoryKey          | 이 디바이스와 연결된 범주의 키                                                                                                                                     |
+| DeviceEnrollmentType       | 이 디바이스와 연결된 등록 유형 키로 등록 방법을 나타냅니다.                                                                                             |
+| ComplianceStateKey         | 이 디바이스와 연결된 준수 상태의 키입니다.                                                                                                                             |
 | OSVersion                  | 장치의 운영 체제 버전입니다.                                                                                                                                                |
-| EasDeviceId                | 장치의 Exchange ActiveSync ID입니다.                                                                                                                                                  |
+| EasDeviceId                | 디바이스의 Exchange ActiveSync ID입니다.                                                                                                                                                  |
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
-| UserId                     | 장치와 연결된 사용자의 고유 ID입니다.                                                                                                                           |
-| RowLastModifiedDateTimeUTC | 데이터 웨어하우스에서 장치를 마지막으로 수정한 UTC 날짜 및 시간                                                                                                       |
-| 제조업체               | 장치 제조업체                                                                                                                                                             |
-| 모델                      | 장치의 모델                                                                                                                                                                    |
-| OperatingSystem            | 장치 운영 체제는  Windows, iOS 등입니다.                                                                                                                                   |
-| IsDeleted                  | 장치가 삭제되었는지 여부를 표시하는 이진입니다.                                                                                                                                 |
+| UserId                     | 디바이스와 연결된 사용자의 고유 ID입니다.                                                                                                                           |
+| RowLastModifiedDateTimeUTC | 데이터 웨어하우스에서 디바이스를 마지막으로 수정한 UTC 날짜 및 시간                                                                                                       |
+| 제조업체               | 디바이스 제조업체                                                                                                                                                             |
+| 모델                      | 디바이스의 모델                                                                                                                                                                    |
+| OperatingSystem            | 디바이스 운영 체제는  Windows, iOS 등입니다.                                                                                                                                   |
+| IsDeleted                  | 디바이스가 삭제되었는지 여부를 표시하는 이진입니다.                                                                                                                                 |
 | AndroidSecurityPatchLevel  | Android 보안 패치 수준                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
-| isSupervised               | 장치가 감독되고 있습니다.                                                                                                                                                               |
+| isSupervised               | 디바이스가 감독되고 있습니다.                                                                                                                                                               |
 | FreeStorageSpaceInBytes    | 사용 가능한 저장소 공간(바이트)입니다.                                                                                                                                                                 |
 | TotalStorageSpaceInBytes   | 총 저장소 공간(바이트)입니다.                                                                                                                                                                |
-| EncryptionState            | 장치의 암호화 상태입니다.                                                                                                                                                      |
-| SubscriberCarrier          | 장치의 구독자 통신 회사입니다.                                                                                                                                                       |
-| PhoneNumber                | 장치의 전화 번호                                                                                                                                                             |
+| EncryptionState            | 디바이스의 암호화 상태입니다.                                                                                                                                                      |
+| SubscriberCarrier          | 디바이스의 구독자 통신 회사입니다.                                                                                                                                                       |
+| PhoneNumber                | 디바이스의 전화 번호                                                                                                                                                             |
 | IMEI                       | IMEI                                                                                                                                                                                   |
-| CellularTechnology         | 장치의 셀룰러 기술입니다.                                                                                                                                                    |
+| CellularTechnology         | 디바이스의 셀룰러 기술입니다.                                                                                                                                                    |
 | WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
 
 
 ## <a name="devicetypes"></a>deviceTypes
-**deviceType**엔터티는 다른 데이터 웨어하우스 엔터티에서 참조하는 장치 유형을 나타냅니다. 장치 유형은 일반적으로 장치 모델, 제조업체 또는 두 가지의 조합을 설명합니다.
+**deviceType**엔터티는 다른 데이터 웨어하우스 엔터티에서 참조하는 장치 유형을 나타냅니다. 디바이스 유형은 일반적으로 디바이스 모델, 제조업체 또는 두 가지의 조합을 설명합니다.
 
 |    속성    |                                  설명                                 |
 |:--------------:|:----------------------------------------------------------------------------:|
-| DeviceTypeID   | 장치 유형의 고유 식별자                                       |
-| DeviceTypeKey  | 데이터 웨어하우스의 장치 유형의 고유 식별자 - 서로게이트 키 |
-| DeviceTypeName | 장치 유형                                                                |
+| DeviceTypeID   | 디바이스 유형의 고유 식별자                                       |
+| DeviceTypeKey  | 데이터 웨어하우스의 디바이스 유형의 고유 식별자 - 서로게이트 키 |
+| DeviceTypeName | 디바이스 유형                                                                |
 
 ### <a name="example"></a>예제
 
 | deviceTypeID |        이름       |                      설명                      |
 |:------------:|:-----------------:|:-----------------------------------------------------:|
-| -1           | 사용할 수 없음   | 이 장치 유형을 사용할 수 없습니다.                     |
-| 0            | 데스크톱           | Windows 데스크톱 장치                              |
-| 1            | Windows           | Windows 장치                                      |
-| 2            | WinMO6            | Windows Mobile 6.0 장치                           |
-| 3            | Nokia             | Nokia 장치                                        |
-| 4            | WindowsPhone      | Windows Phone 장치                                |
-| 5            | Mac               | Mac 장치                                          |
-| 6            | WinCE             | Windows CE 장치                                   |
-| 7            | WinEmbedded       | Windows Embedded 장치                             |
-| 8            | iPhone            | iPhone 장치                                       |
-| 9            | iPad              | iPad 장치                                         |
-| 10           | IPod              | iPod 장치                                         |
-| 11           | Android           | Android 장치 - 장치 관리자로 관리   |
-| 12           | ISocConsumer      | iSoc 소비자 장치                                |
-| 13           | Unix              | Unix 장치                                         |
-| 14           | MacMDM            | 기본 MDM 에이전트로 관리되는 Mac OS X 장치 |
-| 15           | HoloLens          | Holo Lens 장치                                    |
-| 16           | SurfaceHub        | Surface Hub 장치                                  |
-| 17           | AndroidForWork    | Android Profile Owner로 관리되는 Android 장치  |
-| 18           | AndroidEnterprise | Android 엔터프라이즈 장치                          |
-| 100          | Blackberry        | Blackberry 장치                                   |
-| 101          | Palm              | Palm 장치                                         |
-| 255          | Unknown           | 알 수 없는 장치 유형                                 |
+| -1           | 사용할 수 없음   | 이 디바이스 유형을 사용할 수 없습니다.                     |
+| 0            | 데스크톱           | Windows 데스크톱 디바이스                              |
+| 1            | Windows           | Windows 디바이스                                      |
+| 2            | WinMO6            | Windows Mobile 6.0 디바이스                           |
+| 3            | Nokia             | Nokia 디바이스                                        |
+| 4            | WindowsPhone      | Windows Phone 디바이스                                |
+| 5            | Mac               | Mac 디바이스                                          |
+| 6            | WinCE             | Windows CE 디바이스                                   |
+| 7            | WinEmbedded       | Windows Embedded 디바이스                             |
+| 8            | iPhone            | iPhone 디바이스                                       |
+| 9            | iPad              | iPad 디바이스                                         |
+| 10           | IPod              | iPod 디바이스                                         |
+| 11           | Android           | Android 디바이스 - 디바이스 관리자로 관리   |
+| 12           | ISocConsumer      | iSoc 소비자 디바이스                                |
+| 13           | Unix              | Unix 디바이스                                         |
+| 14           | MacMDM            | 기본 MDM 에이전트로 관리되는 Mac OS X 디바이스 |
+| 15           | HoloLens          | Holo Lens 디바이스                                    |
+| 16           | SurfaceHub        | Surface Hub 디바이스                                  |
+| 17           | AndroidForWork    | Android Profile Owner로 관리되는 Android 디바이스  |
+| 18           | AndroidEnterprise | Android 엔터프라이즈 디바이스                          |
+| 100          | Blackberry        | Blackberry 디바이스                                   |
+| 101          | Palm              | Palm 디바이스                                         |
+| 255          | Unknown           | 알 수 없는 디바이스 유형                                 |
 
 ## <a name="deviceenrollmenttypes"></a>deviceEnrollmentTypes
 **deviceEnrollmentType** 엔터티는 장치를 등록하는 방식을 나타냅니다. 등록 형식은 등록 메서드를 캡처합니다. 예시는 서로 다른 등록 형식 및 그 의미를 표시합니다.
@@ -302,7 +302,7 @@ ms.locfileid: "52190322"
 |:----------------:|:----------------------------------:|:----------------------------------------------------------------------------------------:|
 | 0                | Unknown                            | 등록 형식이 수집되지 않았습니다.                                                      |
 | 1                | UserEnrollment                     | BYOD 채널을 통한 사용자 구동 등록입니다.                                           |
-| 2                | DeviceEnrollmentManager            | 장치 등록 관리자 계정을 사용하여 사용자 등록                              |
+| 2                | DeviceEnrollmentManager            | 디바이스 등록 관리자 계정을 사용하여 사용자 등록                              |
 | 3                | AppleBulkWithUser                  | 사용자 챌린지를 사용한 Apple 대량 등록 (DEP, Apple Configurator)                   |
 | 4                | AppleBulkWithoutUser               | 사용자 챌린지를 사용하지 않은 Apple 대량 등록   (DEP, Apple Configurator, 모바일 구성) |
 | 5                | WindowsAzureADJoin                 | Windows 10 Azure AD 조인                                                                |
@@ -310,7 +310,7 @@ ms.locfileid: "52190322"
 | 7                | WindowsAutoEnrollment              | Windows 10 자동 등록   (회사 계정 추가)                                    |
 | 8                | WindowsBulkAzureDomainJoin         | Windows 10 대량 Azure AD 조인                                                           |
 | 9                | WindowsCoManagement                | AutoPilot 또는 그룹 정책에 의해 트리거되는 Windows 10 공동 관리                       |
-| 10               | WindowsAzureADJoinsUsingDeviceAuth | 장치 인증을 사용하는 Windows 10 Azure AD 조인                                            |
+| 10               | WindowsAzureADJoinsUsingDeviceAuth | 디바이스 인증을 사용하는 Windows 10 Azure AD 조인                                            |
 
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -320,7 +320,7 @@ ms.locfileid: "52190322"
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
 | DateKey             | 날짜의 고유 식별자입니다.                                | 123     |
 | TenantKey           | 테넌트의 고유 식별자입니다.                              | 456     |
-| DeviceKey           | 장치의 고유 식별자입니다.                              | 789     |
+| DeviceKey           | 디바이스의 고유 식별자입니다.                              | 789     |
 | ExtensionVersionKey | IntuneManagementExtension 버전의 고유 식별자입니다. | 1       |
 | ExtensionStateKey   | 상태의 고유 식별자입니다.                            | 2       |
 
@@ -347,52 +347,52 @@ ms.locfileid: "52190322"
 |:-----------------------:|:---------------------------------------------------------------------------------------:|
 | ManagementAgentTypeID   | 관리 에이전트 유형에 대한 고유 식별자                                         |
 | ManagementAgentTypeKey  | 데이터 웨어하우스의 관리 에이전트 유형의 고유 식별자 - 서로게이트 키 |
-| ManagementAgentTypeName | 장치 관리에 사용되는 에이전트의 종류를 나타냅니다.                              |
+| ManagementAgentTypeName | 디바이스 관리에 사용되는 에이전트의 종류를 나타냅니다.                              |
 
 ### <a name="example"></a>예제
 
 | ManagementAgentTypeID |                이름               |                                  설명                                 |
 |:---------------------:|:---------------------------------:|:----------------------------------------------------------------------------:|
-| 1                     | EAS                               | 장치가 Exchange Active Sync를 통해 관리됨                         |
-| 2                     | MDM                               | 장치가 MDM 에이전트를 사용하여 관리됨                                   |
-| 3                     | EasMdm                            | 장치가 Exchange Active Sync와 MDM 에이전트를 둘 다 사용하여 관리됨        |
-| 4                     | IntuneClient                      | 장치가 Intune PC 에이전트로 관리됨                               |
-| 5                     | EasIntuneClient                   | 장치가 Exchange Active Sync와 Intune PC 에이전트를 둘 다 사용하여 관리됨 |
-| 8                     | ConfigManagerClient               | 장치가 System Center Configuration Manager 에이전트를 사용하여 관리됨     |
-| 10                    | ConfigurationManagerClientMdm     | 장치가 Configuration Manager 및 MDM에서 관리됩니다.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | 장치가 Configuration Manager, MDM 및 Eas에서 관리됩니다.               |
+| 1                     | EAS                               | 디바이스가 Exchange Active Sync를 통해 관리됨                         |
+| 2                     | MDM                               | 디바이스가 MDM 에이전트를 사용하여 관리됨                                   |
+| 3                     | EasMdm                            | 디바이스가 Exchange Active Sync와 MDM 에이전트를 둘 다 사용하여 관리됨        |
+| 4                     | IntuneClient                      | 디바이스가 Intune PC 에이전트로 관리됨                               |
+| 5                     | EasIntuneClient                   | 디바이스가 Exchange Active Sync와 Intune PC 에이전트를 둘 다 사용하여 관리됨 |
+| 8                     | ConfigManagerClient               | 디바이스가 System Center Configuration Manager 에이전트를 사용하여 관리됨     |
+| 10                    | ConfigurationManagerClientMdm     | 디바이스가 Configuration Manager 및 MDM에서 관리됩니다.                    |
+| 11                    | ConfigurationManagerCLientMdmEas  | 디바이스가 Configuration Manager, MDM 및 Eas에서 관리됩니다.               |
 | 16                    | Unknown                           | 알 수 없는 관리 에이전트 유형                                              |
-| 32                    | Jamf                              | 장치 특성은 Jamf에서 가져옵니다.                               |
-| 64                    | GoogleCloudDevicePolicyController |  장치가 Google의 CloudDPC에서 관리됩니다.                                 |
+| 32                    | Jamf                              | 디바이스 특성은 Jamf에서 가져옵니다.                               |
+| 64                    | GoogleCloudDevicePolicyController |  디바이스가 Google의 CloudDPC에서 관리됩니다.                                 |
 
 ## <a name="managementstates"></a>managementStates
-**ManagementState** 엔터티는 장치의 상태의 세부 정보를 제공합니다. 세부 정보는 원격 작업을 적용할 때, 장치를 탈옥 또는 루팅한 경우 유용합니다.
+**ManagementState** 엔터티는 장치의 상태의 세부 정보를 제공합니다. 세부 정보는 원격 작업을 적용할 때, 디바이스를 탈옥 또는 루팅한 경우 유용합니다.
 
 |       속성      |                                     설명                                    |
 |:-------------------:|:----------------------------------------------------------------------------------:|
 | managementStateID   | 관리 상태의 고유 식별자입니다.                                       |
 | managementStateKey  | 데이터 웨어하우스에서 관리 상태의 고유 식별자 - 서로게이트 키 |
-| managementStateName | 이 장치에 적용된 원격 작업의 상태를 나타냅니다.                 |
+| managementStateName | 이 디바이스에 적용된 원격 작업의 상태를 나타냅니다.                 |
 
 ### <a name="example"></a>예제
 
 | managementStateID |      이름      |                                                   설명                                                   |
 |:-----------------:|:--------------:|:---------------------------------------------------------------------------------------------------------------:|
 | 0                 | 관리 대상        | 보류 중인 원격 작업 없이 관리됩니다.                                                                       |
-| 1                 | RetirePending  | 장치에 대해 보류 중인 사용 중지 명령이 있습니다.                                                             |
-| 2                 | RetireFailed   | 장치에서 사용 중지 명령에 실패했습니다.                                                                      |
-| 3                 | WipePending    | 장치에 대해 보류 중인 초기화 명령이 있습니다.                                                               |
-| 4                 | WipeFailed     | 장치에서 초기화 명령에 실패했습니다.                                                                        |
+| 1                 | RetirePending  | 디바이스에 대해 보류 중인 사용 중지 명령이 있습니다.                                                             |
+| 2                 | RetireFailed   | 디바이스에서 사용 중지 명령에 실패했습니다.                                                                      |
+| 3                 | WipePending    | 디바이스에 대해 보류 중인 초기화 명령이 있습니다.                                                               |
+| 4                 | WipeFailed     | 디바이스에서 초기화 명령에 실패했습니다.                                                                        |
 | 5                 | Unhealthy      | 비정상 상태입니다.                                                                                              |
-| 6                 | DeletePending  | 장치에 대한 보류 중인 삭제 명령이 있습니다.                                                             |
-| 7                 | RetireIssued   | 장치에 대한 사용 중지 명령이 실행되었습니다.                                                               |
+| 6                 | DeletePending  | 디바이스에 대한 보류 중인 삭제 명령이 있습니다.                                                             |
+| 7                 | RetireIssued   | 디바이스에 대한 사용 중지 명령이 실행되었습니다.                                                               |
 | 8                 | WipeIssued     | 초기화 명령이 실행되었습니다.                                                                               |
 | 9                 | WipeCanceled   | 초기화 명령이 취소되었습니다.                                                                               |
 | 10                | RetireCanceled | 사용 중지 명령이 취소되었습니다.                                                                             |
-| 11                | Discovered     | Intune에서 장치를 새로 검색하고 해당 장치를 처음으로 체크 인하면 '관리됨' 상태가 됩니다. |
+| 11                | Discovered     | Intune에서 디바이스를 새로 검색하고 해당 디바이스를 처음으로 체크 인하면 '관리됨' 상태가 됩니다. |
 
 ## <a name="mobileappinstallstates"></a>mobileAppInstallStates
-MobileAppInstallState 엔터티는 장치, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 응용 프로그램의 설치 상태를 나타냅니다.
+MobileAppInstallState 엔터티는 디바이스, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 응용 프로그램의 설치 상태를 나타냅니다.
 
 |       속성      |                        설명                       |
 |:-------------------:|:--------------------------------------------------------:|
@@ -401,13 +401,13 @@ MobileAppInstallState 엔터티는 장치, 사용자 또는 둘 다를 포함하
 | AppInstallStateName | 앱 설치 상태의 이름입니다.                           |
 
 ## <a name="mobileappinstallstatuscounts"></a>mobileAppInstallStatusCounts
-Microsoft Intune을 통해 모바일 응용 프로그램 관리를 사용하여 지정된 대상 장치 유형의 모바일 앱 설치 상태를 나타냅니다.
+Microsoft Intune을 통해 모바일 응용 프로그램 관리를 사용하여 지정된 대상 디바이스 유형의 모바일 앱 설치 상태를 나타냅니다.
 
 |      속성      |                                                          설명                                                          |
 |:------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|
 | DateKey            | 앱 설치 상태가 기록된 날짜의 키입니다.                                                                     |
 | AppKey             | AppRevision 인스턴스를 식별하는 데 사용되는 모바일 앱의 키입니다.                                                          |
-| DeviceTypeKey      | 모바일 응용 프로그램과 연관된 장치 유형의 키입니다.                                                              |
+| DeviceTypeKey      | 모바일 응용 프로그램과 연관된 디바이스 유형의 키입니다.                                                              |
 | AppInstallStateKey | MobileAppInstallState 인스턴스를 식별하는 데 사용되는 앱 설치 상태의 키입니다.                                         |
 | 오류 코드          | 앱 설치 프로그램, 모바일 플랫폼 또는 서비스에서 반환된 앱 설치와 관련된 오류 코드입니다. |
 | 개수              | 총 개수입니다.                                                                                                                  |
@@ -419,7 +419,7 @@ Microsoft Intune을 통해 모바일 응용 프로그램 관리를 사용하여 
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | 소유자 유형에 대한 고유 식별자                                                                                                                                               |                            |
 | ownerTypeKey  | 데이터 웨어하우스의 소유자 유형의 고유 식별자 - 서로게이트 키                                                                                                       |                            |
-| ownerTypeName | 장치 소유자 유형을 나타냅니다: 회사 - 회사 소유 장치입니다.  개인 - 개인 소유 장치입니다(BYOD).   알 수 없음 - 이 장치에 대한 정보가 없습니다. | 회사 개인 알 수 없음 |
+| ownerTypeName | 디바이스 소유자 유형을 나타냅니다: 회사 - 회사 소유 디바이스입니다.  개인 - 개인 소유 디바이스입니다(BYOD).   알 수 없음 - 이 디바이스에 대한 정보가 없습니다. | 회사 개인 알 수 없음 |
 
 ## <a name="policies"></a>정책
 **정책** 엔터티는 장치 구성 프로필, 앱 구성 프로필 및 규정 준수 정책을 나열합니다. 정책을 MDM(Mobile Device Management)을 통해 기업 내 그룹에 할당할 수 있습니다.
@@ -436,16 +436,16 @@ Microsoft Intune을 통해 모바일 응용 프로그램 관리를 사용하여 
 | RowLastModifiedDateTimeUTC | 데이터 웨어하우스에서 정책을 마지막으로 수정한 UTC 날짜 및 시간입니다.                                                                        | 2016/11/23 0:00                      |
 
 ## <a name="policydeviceactivities"></a>policyDeviceActivities
-다음 표는 하루에 성공, 보류, 실패 또는 오류 상태에 있는 장치의 수를 나열합니다. 수는 데이터별 정책 유형 프로필을 반영합니다. 예를 들어 장치가 모든 할당된 정책에 대해 성공 상태에 있으면 그 날에 대해 성공 카운터를 1만큼 높입니다. 장치에 두 프로필이 할당된 경우(성공 상태에 하나, 오류 상태에 하나) 엔터티는 성공 카운터를 하나 늘리고 장치를 오류 상태에 놓습니다. **policyDeviceActivity** 엔터티는 지난 30일 동안 특정 날짜에 해당 상태에 있는 장치가 몇 개인지 표시합니다.
+다음 표는 하루에 성공, 보류, 실패 또는 오류 상태에 있는 디바이스의 수를 나열합니다. 수는 데이터별 정책 유형 프로필을 반영합니다. 예를 들어 디바이스가 모든 할당된 정책에 대해 성공 상태에 있으면 그 날에 대해 성공 카운터를 1만큼 높입니다. 디바이스에 두 프로필이 할당된 경우(성공 상태에 하나, 오류 상태에 하나) 엔터티는 성공 카운터를 하나 늘리고 디바이스를 오류 상태에 놓습니다. **policyDeviceActivity** 엔터티는 지난 30일 동안 특정 날짜에 해당 상태에 있는 장치가 몇 개인지 표시합니다.
 
 |  속성 |                                           설명                                           |        예제        |
 |:---------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
-| DateKey   | 데이터 웨어하우스에서 장치 구성 프로필 체크 인을 기록했을 때의 날짜 키 | 20160703              |
-| Pending   | 보류 중 상태에 있는 고유 장치의 수                                                    | 123                   |
-| 성공 | 성공 상태에 있는 고유 장치의 수                                                    | 12                    |
+| DateKey   | 데이터 웨어하우스에서 디바이스 구성 프로필 체크 인을 기록했을 때의 날짜 키 | 20160703              |
+| Pending   | 보류 중 상태에 있는 고유 디바이스의 수                                                    | 123                   |
+| 성공 | 성공 상태에 있는 고유 디바이스의 수                                                    | 12                    |
 | PolicyKey | 정책 키 - Policy와 조인하여 policyName을 가져올 수 있습니다.                                  | Windows 10 기준 |
-| 오류     | 오류 상태에 있는 고유 장치의 수                                                      | 10                    |
-| Failed    | 실패 상태에 있는 고유 장치의 수                                                     | 2                     |
+| 오류     | 오류 상태에 있는 고유 디바이스의 수                                                      | 10                    |
+| Failed    | 실패 상태에 있는 고유 디바이스의 수                                                     | 2                     |
 
 ## <a name="policyplatformtypes"></a>policyPlatformTypes
 
@@ -456,17 +456,17 @@ Microsoft Intune을 통해 모바일 응용 프로그램 관리를 사용하여 
 | PolicyPlatformTypeName | 정책 플랫폼 유형의 이름입니다.              | AndroidForWork |
 
 ## <a name="policytypeactivities"></a>policyTypeActivities
-**PolicyTypeActivity** 엔터티는 성공, 보류, 실패 또는 오류 상태에 있는 장치의 누적 수를 표시합니다. 하루의 장치 구성 프로필, 앱 구성 프로필, 규정 준수 정책에 대한 상태를 표시합니다.
+**PolicyTypeActivity** 엔터티는 성공, 보류, 실패 또는 오류 상태에 있는 장치의 누적 수를 표시합니다. 하루의 디바이스 구성 프로필, 앱 구성 프로필, 규정 준수 정책에 대한 상태를 표시합니다.
 
 |    속성   |                                          설명                                          |           예제           |
 |:-------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
-| DateKey       | 데이터 웨어하우스에서 장치 구성 프로필 체크 인을 기록했을 때의 날짜 키 | 20160703                    |
+| DateKey       | 데이터 웨어하우스에서 디바이스 구성 프로필 체크 인을 기록했을 때의 날짜 키 | 20160703                    |
 | PolicyKey     | 정책 키 - Policy와 조인하여 policyName을 가져올 수 있습니다.                                | Windows 10 기준         |
 | PolicyTypeKey | 정책 키 유형 - Policy Type과 조인하여 정책 유형 이름을 가져올 수 있습니다.             | Windows10 준수 정책 |
-| Pending       | 보류 중 상태에 있는 고유 장치의 수                                                    | 123                         |
-| 성공     | 성공 상태에 있는 고유 장치의 수                                                    | 12                          |
-| 오류         | 오류 상태에 있는 고유 장치의 수                                                      | 10                          |
-| Failed        | 실패 상태에 있는 고유 장치의 수                                                     | 2                           |
+| Pending       | 보류 중 상태에 있는 고유 디바이스의 수                                                    | 123                         |
+| 성공     | 성공 상태에 있는 고유 디바이스의 수                                                    | 12                          |
+| 오류         | 오류 상태에 있는 고유 디바이스의 수                                                      | 10                          |
+| Failed        | 실패 상태에 있는 고유 디바이스의 수                                                     | 2                           |
 
 ## <a name="policytypes"></a>policyTypes
 **PolicyType** 엔터티는 장치 구성 프로필, 앱 구성 프로필 및 규정 준수 정책 유형을 나열합니다. 정책을 MDM(Mobile Device Management)을 통해 기업 내 그룹에 할당할 수 있습니다.
@@ -482,14 +482,14 @@ Microsoft Intune을 통해 모바일 응용 프로그램 관리를 사용하여 
 
 |  속성 |                                          설명                                          |       예제       |
 |:---------:|:---------------------------------------------------------------------------------------------:|:-------------------:|
-| DateKey   | 데이터 웨어하우스에서 장치 구성 프로필 체크 인을 기록했을 때의 날짜 키 | 20160703            |
-| Pending   | 보류 중 상태에 있는 고유 장치의 수                                                    | 123                 |
-| 성공 | 성공 상태에 있는 고유 장치의 수                                                    | 12                  |
+| DateKey   | 데이터 웨어하우스에서 디바이스 구성 프로필 체크 인을 기록했을 때의 날짜 키 | 20160703            |
+| Pending   | 보류 중 상태에 있는 고유 디바이스의 수                                                    | 123                 |
+| 성공 | 성공 상태에 있는 고유 디바이스의 수                                                    | 12                  |
 | PolicyKey | 정책 키 - Policy와 조인하여 policyName을 가져올 수 있습니다.                                | Windows 10 기준 |
-| 오류     | 오류 상태에 있는 고유 장치의 수                                                      | 10                  |
+| 오류     | 오류 상태에 있는 고유 디바이스의 수                                                      | 10                  |
 
 ## <a name="termsandconditions"></a>termsAndConditions
-**termsAndConditions** 엔터티는 지정된 사용 약관(T&C) 정책의 메타데이터와 내용을 나타냅니다. T&C 정책의 내용은 사용자가 Intune에 처음으로 등록 시도를 한 경우와 이후에 관리자의 재수락이 필요한 내용을 편집한 경우 표시됩니다. 이를 통해 관리자는 Intune에 장치를 등록하기 위해 사용자가 동의해야 하는 조항을 전달할 수 있습니다.
+**termsAndConditions** 엔터티는 지정된 사용 약관(T&C) 정책의 메타데이터와 내용을 나타냅니다. T&C 정책의 내용은 사용자가 Intune에 처음으로 등록 시도를 한 경우와 이후에 관리자의 재수락이 필요한 내용을 편집한 경우 표시됩니다. 이를 통해 관리자는 Intune에 디바이스를 등록하기 위해 사용자가 동의해야 하는 조항을 전달할 수 있습니다.
 
 |    속성        |    설명    |    예제        |
 |----------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -498,7 +498,7 @@ Microsoft Intune을 통해 모바일 응용 프로그램 관리를 사용하여 
 |    termsAndConditionsVersion    |    이 사용 약관 항목의 버전입니다.    |    1    |
 |    (이름)    |    이 termsAndConditions 항목의 이름입니다.        |    Intune 사용 약관     |
 |    description    |    이러한 사용 약관의 설명입니다.     |         |
-|    title    |    이러한 사용 약관의 제목입니다.     |    장치 관리 회사 정책        |
+|    title    |    이러한 사용 약관의 제목입니다.     |    디바이스 관리 회사 정책        |
 |    summaryOfTerms    |    사용자에게 제공된 조건의 요약입니다.     |    사용 약관에 동의함    |
 |    termsAndConditionsBodyText    |    사용 약관의 텍스트 본문입니다.       |    *장치 암호화* - 6자리 PIN 적용    |
 |    isDeleted    |    이 값이 삭제되었는지 여부에 대한 참 또는 거짓 값입니다.     |    False    |
@@ -511,9 +511,9 @@ Microsoft Intune을 통해 모바일 응용 프로그램 관리를 사용하여 
 |        이름        |                                             설명                                            |     예제     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | 데이터 웨어하우스에서 사용자의 고유 식별자입니다.   (서로게이트 키입니다.)                            | 123             |
-| DeviceKey          | 데이터 웨어하우스의 장치에 대한 고유 식별자                                             | 123             |
-| CreatedDateTimeUTC | 사용자 장치 연결을 만든 날짜 및 시간입니다. UTC 형식을 사용합니다.                     | 2016/11/23 0:00 |
-| IsDeleted          | 사용자가 해당 장치를 등록 취소했으며 연결이 현재 더 이상 존재하지 않음을 나타냅니다. | True/False      |
+| DeviceKey          | 데이터 웨어하우스의 디바이스에 대한 고유 식별자                                             | 123             |
+| CreatedDateTimeUTC | 사용자 디바이스 연결을 만든 날짜 및 시간입니다. UTC 형식을 사용합니다.                     | 2016/11/23 0:00 |
+| IsDeleted          | 사용자가 해당 디바이스를 등록 취소했으며 연결이 현재 더 이상 존재하지 않음을 나타냅니다. | True/False      |
 | EndedDateTimeUTC   | IsDeleted를 True로 변경한 UTC 날짜 및 시간                                               | 2017/6/23 0:00  |
 
 ## <a name="users"></a>사용자

@@ -27,7 +27,7 @@ ms.locfileid: "52184544"
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-이 항목에서는 Intune 소프트웨어 클라이언트를 설치하여 PC로 관리하는 데스크톱을 관리하기 위해 수행할 수 있는 작업을 나열합니다. 그러나 PC를 모바일 장치로 관리하는 작업은 다루지 않습니다. PC에 클라이언트를 아직 설치하지 않은 경우에는 [Intune 소프트웨어 클라이언트 설치](install-the-windows-pc-client-with-microsoft-intune.md)를 참조하세요.
+이 항목에서는 Intune 소프트웨어 클라이언트를 설치하여 PC로 관리하는 데스크톱을 관리하기 위해 수행할 수 있는 작업을 나열합니다. 그러나 PC를 모바일 디바이스로 관리하는 작업은 다루지 않습니다. PC에 클라이언트를 아직 설치하지 않은 경우에는 [Intune 소프트웨어 클라이언트 설치](install-the-windows-pc-client-with-microsoft-intune.md)를 참조하세요.
 
 
 - [정책을 사용하여 PC 관리 간소화](use-policies-to-simplify-windows-pc-management.md) - Intune의 **컴퓨터 관리** 정책을 설명하고 Microsoft Intune Center에 대한 설정을 나열합니다.

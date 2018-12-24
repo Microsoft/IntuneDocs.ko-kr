@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune에서 등록 제한 설정
 titlesuffix: ''
-description: Intune에서 플랫폼별로 등록을 제한하고 장치 등록 제한을 설정합니다.
+description: Intune에서 플랫폼별로 등록을 제한하고 디바이스 등록 제한을 설정합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -27,15 +27,15 @@ ms.locfileid: "53112955"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치의 수와 유형을 정의하는 등록 제한을 만들고 관리할 수 있습니다. 다수의 제한을 만들어서 다른 사용자 그룹에 적용할 수 있습니다. 다양한 제한 사항에 대한 [우선 순위](#change-enrollment-restriction-priority)를 설정할 수 있습니다.
+Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바이스의 수와 유형을 정의하는 등록 제한을 만들고 관리할 수 있습니다. 다수의 제한을 만들어서 다른 사용자 그룹에 적용할 수 있습니다. 다양한 제한 사항에 대한 [우선 순위](#change-enrollment-restriction-priority)를 설정할 수 있습니다.
 
 >[!NOTE]
->등록 제한은 보안 기능이 아닙니다. 손상된 장치는 해당 문자를 잘못 표시할 수 있습니다. 이러한 제한은 무해한 사용자를 위한 최선의 장벽입니다.
+>등록 제한은 보안 기능이 아닙니다. 손상된 디바이스는 해당 문자를 잘못 표시할 수 있습니다. 이러한 제한은 무해한 사용자를 위한 최선의 장벽입니다.
 
 만들 수 있는 등록 제한 사항은 다음과 같습니다.
 
-- 등록된 장치의 최대 수
-- 등록할 수 있는 장치 플랫폼:
+- 등록된 디바이스의 최대 수
+- 등록할 수 있는 디바이스 플랫폼:
   - Android
   - Android 회사 프로필
   - iOS
@@ -44,11 +44,11 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 - iOS, Android, Android 회사 프로필 및 Windows용 플랫폼 운영 체제 버전입니다. (Windows 10 버전만을 사용할 수 있습니다. Windows 8.1을 허용하는 경우 이 항목을 비워둡니다.)
   - 최소 버전
   - 최대 버전
-- 개인 소유 장치 제한(iOS, Android, Android 회사 프로필, macOS, Windows만 해당).
+- 개인 소유 디바이스 제한(iOS, Android, Android 회사 프로필, macOS, Windows만 해당).
 
 ## <a name="default-restrictions"></a>기본 제한 사항
 
-기본 제한 사항은 장치 유형 및 장치 개수 등록 제한 모두에 자동으로 제공됩니다. 기본값에 대한 옵션을 변경할 수 있습니다. 기본 제한 사항은 모든 사용자 등록과 사용자가 없는 등록에 적용됩니다. 우선 순위가 더 높은 새로운 제한 사항을 만들어서 이러한 기본값을 재정의할 수 있습니다.
+기본 제한 사항은 디바이스 유형 및 디바이스 개수 등록 제한 모두에 자동으로 제공됩니다. 기본값에 대한 옵션을 변경할 수 있습니다. 기본 제한 사항은 모든 사용자 등록과 사용자가 없는 등록에 적용됩니다. 우선 순위가 더 높은 새로운 제한 사항을 만들어서 이러한 기본값을 재정의할 수 있습니다.
 
 ## <a name="create-a-restriction"></a>제한 사항 만들기
 
@@ -58,16 +58,16 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
 4. **제한 만들기**를 선택합니다.
 5. 제한의 이름과 설명을 입력합니다.
 6. **제한 유형**을 선택한 다음, **만들기**를 선택합니다.
-7. 장치 개수 제한은 **장치 제한**을 선택하여 사용자가 등록할 수 있는 장치의 최대 수를 설정합니다.
-8. 장치 유형 제한은 **플랫폼** 및 **플랫폼 구성**을 선택하여 다양한 플랫폼 및 버전을 허용하거나 차단합니다.
+7. 디바이스 개수 제한은 **디바이스 제한**을 선택하여 사용자가 등록할 수 있는 디바이스의 최대 수를 설정합니다.
+8. 디바이스 유형 제한은 **플랫폼** 및 **플랫폼 구성**을 선택하여 다양한 플랫폼 및 버전을 허용하거나 차단합니다.
 9. **할당** > **+ 그룹 선택**을 선택합니다.
 10. **그룹 선택**에서 그룹을 하나 이상 선택한 다음, **선택**을 선택합니다. 제한은 할당된 그룹에만 적용됩니다. 제한을 하나 이상의 그룹에 할당하지 않으면 아무런 효과가 없습니다.
 11. **저장**을 선택합니다.
 12. 새로운 제한은 기본값 바로 위의 우선 순위로 만들어집니다. [우선 순위는 변경](#change-enrollment-restriction-priority)할 수 있습니다.
 
-## <a name="set-device-type-restrictions"></a>장치 유형 제한 설정
+## <a name="set-device-type-restrictions"></a>디바이스 유형 제한 설정
 
-장치 유형 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다. 이러한 제한 사항은 이미 등록된 장치에 적용되지 않습니다. [Intune PC 에이전트](manage-windows-pcs-with-microsoft-intune.md)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다.
+디바이스 유형 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다. 이러한 제한 사항은 이미 등록된 디바이스에 적용되지 않습니다. [Intune PC 에이전트](manage-windows-pcs-with-microsoft-intune.md)를 통해 등록된 장치는 이 기능을 사용하여 차단할 수 없습니다.
 
 1. Azure Portal에 로그인합니다.
 2. **추가 서비스**를 선택하고 **Intune**을 검색한 다음, **Intune**을 선택합니다.
@@ -79,26 +79,26 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 장치
     ![플랫폼 구성에 대한 화면 제한](media/enrollment-restrictions-set/configure-platforms.png)
 7. 나열된 플랫폼에 대한 최소 및 최대 **버전**을 선택합니다. 지원되는 버전 형식은 다음과 같습니다.
     - Android 회사 프로필은 major.minor.rev.build를 지원합니다.
-    - iOS는 major.minor.rev를 지원합니다. 운영 체제 버전은 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator 앱에 등록되는 Apple 장치에 적용되지 않습니다.
+    - iOS는 major.minor.rev를 지원합니다. 운영 체제 버전은 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator 앱에 등록되는 Apple 디바이스에 적용되지 않습니다.
     - Windows는 Windows 10용 major.minor.rev.build만 지원합니다.
 8. 나열된 각 플랫폼에서 **개인적으로 소유한** 장치를 **허용**할지 **차단**할지 선택합니다.
 9. **확인**을 선택합니다.
 
-### <a name="blocking-personal-android-devices"></a>개인 Android 장치 차단
-- 개인적으로 소유한 Android 장치의 등록을 차단하는 경우에도 개인적으로 소유한 Android 회사 프로필 장치는 계속 등록할 수 있습니다.
-- 기본적으로 Android 회사 프로필 장치 설정은 Android 장치에 대한 설정과 동일합니다. Android 회사 프로필 설정을 변경하면 달라집니다.
-- 개인적인 Android 회사 프로필 등록을 차단하는 경우 회사 Android 장치만 Android 회사 프로필로 등록할 수 있습니다.
+### <a name="blocking-personal-android-devices"></a>개인 Android 디바이스 차단
+- 개인적으로 소유한 Android 디바이스의 등록을 차단하는 경우에도 개인적으로 소유한 Android 회사 프로필 디바이스는 계속 등록할 수 있습니다.
+- 기본적으로 Android 회사 프로필 디바이스 설정은 Android 디바이스에 대한 설정과 동일합니다. Android 회사 프로필 설정을 변경하면 달라집니다.
+- 개인적인 Android 회사 프로필 등록을 차단하는 경우 회사 Android 디바이스만 Android 회사 프로필로 등록할 수 있습니다.
 
-### <a name="blocking-personal-windows-devices"></a>개인 Windows 장치 차단
-개인 소유의 Windows 장치의 등록을 차단하는 경우 Intune에서 각각의 새 Windows 등록 요청이 회사 등록 권한으로 부여되었는지 확인합니다. 권한이 없는 등록은 차단됩니다.
+### <a name="blocking-personal-windows-devices"></a>개인 Windows 디바이스 차단
+개인 소유의 Windows 디바이스의 등록을 차단하는 경우 Intune에서 각각의 새 Windows 등록 요청이 회사 등록 권한으로 부여되었는지 확인합니다. 권한이 없는 등록은 차단됩니다.
 
 다음은 Windows 회사 등록 권한으로 부여된 것으로 인정되는 방법입니다.
- - 등록하는 사용자가 [장치 등록 관리자 계정]( device-enrollment-manager-enroll.md)을 사용하고 있습니다.
-- 장치에서 [Windows AutoPilot](enrollment-autopilot.md)을 통해 등록합니다.
-- 장치가 Windows Autopilot에 등록되어 있지만 Windows 설정의 MDM 등록만 옵션은 아닙니다.
-- 장치의 IMEI 번호가 **장치 등록** > **[회사 장치 식별자](corporate-identifiers-add.md)** 에 나열되어 있습니다. (Windows Phone 8.1에 대해 지원되지 않음)
-- 장치에서 [대량 프로비전 패키지](windows-bulk-enroll.md)를 통해 등록합니다.
-- 장치에서 [SCCM에서 공동 관리를 위한 자동 등록](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)을 통해 등록합니다.
+ - 등록하는 사용자가 [디바이스 등록 관리자 계정]( device-enrollment-manager-enroll.md)을 사용하고 있습니다.
+- 디바이스에서 [Windows AutoPilot](enrollment-autopilot.md)을 통해 등록합니다.
+- 디바이스가 Windows Autopilot에 등록되어 있지만 Windows 설정의 MDM 등록만 옵션은 아닙니다.
+- 디바이스의 IMEI 번호가 **디바이스 등록** > **[회사 디바이스 식별자](corporate-identifiers-add.md)** 에 나열되어 있습니다. (Windows Phone 8.1에 대해 지원되지 않음)
+- 디바이스에서 [대량 프로비전 패키지](windows-bulk-enroll.md)를 통해 등록합니다.
+- 디바이스에서 [SCCM에서 공동 관리를 위한 자동 등록](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)을 통해 등록합니다.
  
 Intune에서 회사로 표시되지만 Intune 관리자가 장치별 제어를 제공하지 않으므로 차단되는 등록은 다음과 같습니다.
  - [Windows 설치 중에 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).
@@ -110,9 +110,9 @@ Intune에서 회사로 표시되지만 Intune 관리자가 장치별 제어를 �
 
 \* Autopilot에 등록된 경우 차단되지 않습니다.
 
-## <a name="set-device-limit-restrictions"></a>장치 개수 제한
+## <a name="set-device-limit-restrictions"></a>디바이스 제한 한도 설정
 
-장치 개수 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다.
+디바이스 개수 제한에 대한 설정은 다음 단계를 수행하여 변경할 수 있습니다.
 
 1. Azure Portal에 로그인합니다.
 2. **추가 서비스**를 선택하고 **Intune**을 검색한 다음, **Intune**을 선택합니다.
@@ -125,7 +125,7 @@ Intune에서 회사로 표시되지만 Intune 관리자가 장치별 제어를 �
 
 BYOD 등록 중에 등록된 디바이스 수가 한도에 다다랐을 때 사용자에게 알림이 표시됩니다. 예를 들어, iOS에서는 다음과 같습니다.
 
-![iOS 장치 제한 알림](./media/enrollment-restrictions-ios-set-limit-notification.png)
+![iOS 디바이스 제한 알림](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
 ## <a name="change-enrollment-restriction-priority"></a>등록 제한 우선 순위 변경
 
@@ -133,7 +133,7 @@ BYOD 등록 중에 등록된 디바이스 수가 한도에 다다랐을 때 사�
 
 제한을 만들면 기본값 바로 위 목록에 추가됩니다.
 
-장치 등록에는 장치 유형 및 장치 개수 제한에 대한 기본 제한이 포함됩니다. 이러한 두 가지 제한은 우선 순위가 더 높은 제한으로 재정의된 경우가 아니면 모든 사용자에게 적용됩니다.
+디바이스 등록에는 디바이스 유형 및 디바이스 개수 제한에 대한 기본 제한이 포함됩니다. 이러한 두 가지 제한은 우선 순위가 더 높은 제한으로 재정의된 경우가 아니면 모든 사용자에게 적용됩니다.
 
 기본값 이외의 제한은 우선 순위를 변경할 수 있습니다.
 

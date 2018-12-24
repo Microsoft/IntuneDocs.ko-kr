@@ -37,7 +37,7 @@ ms.locfileid: "52186395"
 
 -   Office 365 구독(Office 앱 및 앱 보호 정책 관리 앱용)
 
--   Apple APNs 인증서(iOS 장치 플랫폼 관리를 사용하도록 설정하기 위해)
+-   Apple APNs 인증서(iOS 디바이스 플랫폼 관리를 사용하도록 설정하기 위해)
 
 -   Azure AD Connect(디렉터리 동기화용)
 
@@ -46,11 +46,11 @@ ms.locfileid: "52186395"
 -   Intune Certificate Connector(필요한 경우 SCEP 인증서 배포용)
 
 >[!TIP]
-> Intune으로 관리할 수 있는 장치의 전체 목록을 보려면 [지원되는 장치](supported-devices-browsers.md) 목록을 참조하세요.
+> Intune으로 관리할 수 있는 디바이스의 전체 목록을 보려면 [지원되는 디바이스](supported-devices-browsers.md) 목록을 참조하세요.
 
 ## <a name="intune-implementation-process"></a>Intune 구현 프로세스
 
-Intune 배포를 구현하기 위한 작업은 13가지입니다. 비즈니스 요구 사항, 기존 인프라 및 장치 관리 전략에 따라 이러한 작업 중 일부는 이미 완료되었을 수 있습니다. 다른 작업은 계획에 적용되지 않을 수 있습니다.
+Intune 배포를 구현하기 위한 작업은 13가지입니다. 비즈니스 요구 사항, 기존 인프라 및 디바이스 관리 전략에 따라 이러한 작업 중 일부는 이미 완료되었을 수 있습니다. 다른 작업은 계획에 적용되지 않을 수 있습니다.
 
 ### <a name="task-1-get-an-intune-subscription"></a>작업 1: Intune 구독 가져오기
 
@@ -80,15 +80,15 @@ EMS/Intune 및 Office 365 출시 대상으로 지정될 모든 사용자에게�
 
 -   [Intune 라이선스를 할당하는 방법](licenses-assign.md)에 대해 자세히 알아보세요.
 
-### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>작업 5: Intune으로 모바일 장치 관리 기관 설정
+### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>작업 5: Intune으로 모바일 디바이스 관리 기관 설정
 
-Intune을 사용하여 장치를 설치/구성/관리/등록하려면 먼저 장치 관리 기관을 Intune으로 설정해야 합니다.
+Intune을 사용하여 디바이스를 설치/구성/관리/등록하려면 먼저 디바이스 관리 기관을 Intune으로 설정해야 합니다.
 
 -   [장치 관리 기관을 설정하는 방법](mdm-authority-set.md)에 대해 자세히 알아보세요.
 
-### <a name="task-6-enable-device-platforms"></a>작업 6: 장치 플랫폼을 사용하도록 설정
+### <a name="task-6-enable-device-platforms"></a>작업 6: 디바이스 플랫폼을 사용하도록 설정
 
-기본적으로 Apple 장치(iOS 및 Mac)를 제외한 대부분의 장치 플랫폼을 사용하도록 설정할 수 있습니다. Intune에서 iOS 장치를 등록하고 관리하려면 먼저, 장치 플랫폼을 사용하도록 설정해야 합니다. 이렇게 하려면 MDM 푸시 인증서를 만들어 Intune에 추가해야 합니다.
+기본적으로 Apple 디바이스(iOS 및 Mac)를 제외한 대부분의 디바이스 플랫폼을 사용하도록 설정할 수 있습니다. Intune에서 iOS 디바이스를 등록하고 관리하려면 먼저, 디바이스 플랫폼을 사용하도록 설정해야 합니다. 이렇게 하려면 MDM 푸시 인증서를 만들어 Intune에 추가해야 합니다.
 
 -   [등록을 위해 Apple 장치를 사용하도록 설정하는 방법](apple-mdm-push-certificate-get.md)을 자세히 알아보세요.
 
@@ -128,9 +128,9 @@ Intune은 Exchange Online, Exchange 온-프레미스, SharePoint Online, 비즈�
 
 -   [조건부 액세스](conditional-access.md)에 대해 자세히 알아보세요.
 
-### <a name="task-13-enroll-devices"></a>작업 13: 장치 등록
+### <a name="task-13-enroll-devices"></a>작업 13: 디바이스 등록
 
-Intune은 iOS, Mac OS, Android, Windows 데스크톱 및 Windows 모바일 장치 플랫폼을 지원합니다. Intune 배포 사용 사례 및 요구 사항에 따라 적절히 모바일 장치 플랫폼을 등록합니다.
+Intune은 iOS, Mac OS, Android, Windows 데스크톱 및 Windows 모바일 디바이스 플랫폼을 지원합니다. Intune 배포 사용 사례 및 요구 사항에 따라 적절히 모바일 디바이스 플랫폼을 등록합니다.
 
 -   [장치를 등록하는 방법](device-enrollment.md)에 대해 자세히 알아보세요.
 

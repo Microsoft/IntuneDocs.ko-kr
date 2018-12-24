@@ -49,26 +49,26 @@ Azure Portal 보기의 일부 추세 차트가 다시 설정됩니다. **그래�
 1. Azure Portal에서 **Microsoft Intune** -> **클라이언트 앱** -> **앱 보호 상태**로 이동합니다.
 2. 다운로드 아이콘( ⤓ )을 클릭하여 각 보고서를 저장합니다.
 
-### <a name="device-configuration-charts"></a>장치 구성 차트 
+### <a name="device-configuration-charts"></a>디바이스 구성 차트 
 1. Azure Portal에서 **Microsoft Intune** -> **DeviceConfiguration**으로 이동합니다.
 2. Microsoft [그래프 탐색기](https://developer.microsoft.com/graph/graph-explorer)를 사용하여 차트의 기본 데이터를 다운로드합니다. 
-    - 모든 장치에 대한 모든 장치 구성 프로필의 배포 상태는 [장치 배포 상태](https://graph.microsoft.com/beta/reports/deviceConfigurationDeviceActivity/content)를 참조하세요.
+    - 모든 디바이스에 대한 모든 디바이스 구성 프로필의 배포 상태는 [디바이스 배포 상태](https://graph.microsoft.com/beta/reports/deviceConfigurationDeviceActivity/content)를 참조하세요.
 
-    - 모든 사용자에 대한 모든 장치 구성 프로필의 배포 상태는 [사용자 배포 상태](https://graph.microsoft.com/beta/reports/deviceConfigurationUserActivity/content)를 참조하세요.
+    - 모든 사용자에 대한 모든 디바이스 구성 프로필의 배포 상태는 [사용자 배포 상태](https://graph.microsoft.com/beta/reports/deviceConfigurationUserActivity/content)를 참조하세요.
 
     - 프로필 배포 상태는 [배포 상태 제공](https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations?$select=id,displayName,lastModifiedDateTime,deviceStatusOverview&$expand=deviceStatusOverview)을 참조하세요.
   
     > [!NOTE]
-    > 장치 구성 및 배포 상태 정보에 액세스하려면 유효한 인증 토큰이 있어야 합니다.
+    > 디바이스 구성 및 배포 상태 정보에 액세스하려면 유효한 인증 토큰이 있어야 합니다.
 
-## <a name="device-enrollment-charts"></a>장치 등록 차트
+## <a name="device-enrollment-charts"></a>디바이스 등록 차트
 1. Azure Portal에서 **Microsoft Intune** -> **DeviceEnrollment**로 이동합니다.
 2. Microsoft [그래프 탐색기](https://developer.microsoft.com/graph/graph-explorer)를 사용하여 차트의 기본 데이터를 다운로드합니다.
     - 등록 상태를 보려면 이 [등록 상태 쿼리](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content)를 복사하여 [그래프 탐색기](https://developer.microsoft.com/graph/graph-explorer)에 붙여넣습니다.
     - 이번 주의 상위 등록 실패를 보려면 이 [등록 실패 쿼리](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content)를 복사하여 [그래프 탐색기](https://developer.microsoft.com/graph/graph-explorer)에 붙여넣습니다.
 
     > [!NOTE]
-    > 장치 등록 데이터에 액세스하려면 유효한 인증 토큰이 있어야 합니다. 
+    > 디바이스 등록 데이터에 액세스하려면 유효한 인증 토큰이 있어야 합니다. 
 
 ## <a name="after-a-data-warehouse-account-move"></a>데이터 웨어하우스 계정 이동 후
 

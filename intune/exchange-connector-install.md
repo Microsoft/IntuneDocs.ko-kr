@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune 온-프레미스 Exchange 커넥터 설정
 titleSuffix: ''
-description: 온-프레미스 Exchange 커넥터를 사용하여 Intune 등록 및 EAS(Exchange Active Sync)에 따라 Exchange 사서함에 장치 액세스를 관리합니다.
+description: 온-프레미스 Exchange 커넥터를 사용하여 Intune 등록 및 EAS(Exchange Active Sync)에 따라 Exchange 사서함에 디바이스 액세스를 관리합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -25,7 +25,7 @@ ms.locfileid: "53112564"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure에서 Intune 온-프레미스 Exchange Connector 설정
 
-온-프레미스 Exchange Server 환경에서 Intune 조건부 액세스를 사용하여 Exchange 온-프레미스 사서함에 대한 액세스를 허용하거나 차단할 수 있습니다. Exchange Active Sync 온-프레미스 커넥터를 사용하여 Intune을 Exchange 조직에 연결하고 장치 준수 정책과 함께 Intune 조건부 액세스를 설정합니다. 그런 다음, 장치에서 Exchange에 연결하려고 하면 Intune에서 장치가 Intune에 등록되어 있고 호환되는지 확인합니다. Intune에 등록된 장치를 확인하기 위해 온-프레미스 Exchange Connector에서 Exchange Server의 EAS(Exchange Active Sync) 레코드를 Intune 레코드에 매핑합니다. 이 작동 방법에 대한 자세한 내용은 [Intune에서 조건부 액세스를 사용하는 일반적인 방법이란?](conditional-access-intune-common-ways-use.md)을 참조하세요.
+온-프레미스 Exchange Server 환경에서 Intune 조건부 액세스를 사용하여 Exchange 온-프레미스 사서함에 대한 액세스를 허용하거나 차단할 수 있습니다. Exchange Active Sync 온-프레미스 커넥터를 사용하여 Intune을 Exchange 조직에 연결하고 디바이스 준수 정책과 함께 Intune 조건부 액세스를 설정합니다. 그런 다음, 디바이스에서 Exchange에 연결하려고 하면 Intune에서 디바이스가 Intune에 등록되어 있고 호환되는지 확인합니다. Intune에 등록된 디바이스를 확인하기 위해 온-프레미스 Exchange Connector에서 Exchange Server의 EAS(Exchange Active Sync) 레코드를 Intune 레코드에 매핑합니다. 이 작동 방법에 대한 자세한 내용은 [Intune에서 조건부 액세스를 사용하는 일반적인 방법이란?](conditional-access-intune-common-ways-use.md)을 참조하세요.
 
 > [!IMPORTANT]
 > 이제 Intune은 구독당 여러 온-프레미스 Exchange Connector를 지원합니다. 둘 이상의 온-프레미스 Exchange 조직이 있는 경우 각 Exchange 조직에 대해 별도의 커넥터를 설정할 수 있습니다.
@@ -45,7 +45,7 @@ Microsoft Intune에서 온-프레미스 Exchange Server와 통신할 수 있도�
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         운영 체제          |                                                               Intune은 Windows Server 2008 SP2 64비트, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 또는 Windows Server 2016의 모든 버전을 실행하는 컴퓨터에서 온-프레미스 Exchange Connector를 지원합니다.<br /><br />이 커넥터는 Server Core 설치에서 지원되지 않습니다.                                                                |
 |         Microsoft Exchange         |                                                                           온-프레미스 커넥터를 사용하려면 Microsoft Exchange 2010 SP3 이상 또는 레거시 Exchange Online Dedicated가 필요합니다. Exchange Online Dedicated 환경이 <strong>신규</strong>인지 아니면 <strong>레거시</strong> 구성 상태인지 확인하려면 계정 관리자에게 문의하세요.                                                                           |
-| 모바일 장치 관리 기관 |                                                                                                                              [Intune으로 모바일 장치 관리 기관 설정](mdm-authority-set.md).                                                                                                                               |
+| 모바일 디바이스 관리 기관 |                                                                                                                              [Intune으로 모바일 장치 관리 기관 설정](mdm-authority-set.md).                                                                                                                               |
 |              하드웨어              |                                                                                                                                                     커넥터를 설치하는 컴퓨터에는 1.6GHz CPU, 2GB RAM 및 10GB의 사용 가능한 디스크 공간이 필요합니다.                                                                                                                                                      |
 |  Active Directory 동기화  |                                                                                      커넥터를 사용하여 Exchange Server에 Intune을 연결하려면, 먼저 로컬 사용자 및 보안 그룹이 Azure Active Directory의 인스턴스와 동기화되도록 [Active Directory 동기화를 설정](users-add.md)해야 합니다.                                                                                      |
 |        추가 소프트웨어         |                                                                                                                                           커넥터를 호스트하는 컴퓨터에 Microsoft .NET Framework 4.5 및 Windows PowerShell 2.0 전체 설치를 설치해야 합니다.                                                                                                                                           |
@@ -132,7 +132,7 @@ Intune 온-프레미스 Exchange Connector를 설치하려면 다음 단계를 �
 
 구성하는 동안 Exchange Connector에서 인터넷에 액세스할 수 있도록 프록시 설정을 저장합니다. 프록시 설정이 변경되면 업데이트된 프록시 설정이 Exchange Connector에 적용되도록 Exchange Connector를 다시 구성해야 합니다.
 
-Exchange Connector에서 연결이 설정되면 Exchange에서 관리되는 사용자와 연결된 모바일 장치가 자동으로 동기화되고 Exchange Connector에 추가됩니다. 이 동기화를 완료하는 데는 다소 시간이 걸릴 수 있습니다.
+Exchange Connector에서 연결이 설정되면 Exchange에서 관리되는 사용자와 연결된 모바일 디바이스가 자동으로 동기화되고 Exchange Connector에 추가됩니다. 이 동기화를 완료하는 데는 다소 시간이 걸릴 수 있습니다.
 
 > [!NOTE]
 > 온-프레미스 Exchange Connector를 설치한 경우와 어떤 시점에 Exchange 연결을 삭제한 경우에는 설치된 컴퓨터에서 온-프레미스 Exchange Connector를 제거해야 합니다.
@@ -163,11 +163,11 @@ Exchange Connector가 성공적으로 구성되면 연결 상태 및 마지막�
 Intune 1710 릴리스부터 [Exchange Connector 및 Intune 용 SCOM 관리 팩](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)을 사용할 수 있습니다. 이렇게 하면 문제를 해결해야 할 때 Exchange 커넥터를 모니터링하는 여러 가지 방법이 있습니다.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>수동으로 빠른 동기화 또는 전체 동기화 강제 적용
-온-프레미스 Exchange Connector는 정기적으로 EAS와 Intune 장치 레코드를 자동으로 동기화합니다. 장치의 준수 상태가 변경되면 자동 동기화 프로세스가 정기적으로 레코드를 업데이트하여 장치 액세스를 차단하거나 허용할 수 있습니다.
+온-프레미스 Exchange Connector는 정기적으로 EAS와 Intune 디바이스 레코드를 자동으로 동기화합니다. 디바이스의 준수 상태가 변경되면 자동 동기화 프로세스가 정기적으로 레코드를 업데이트하여 디바이스 액세스를 차단하거나 허용할 수 있습니다.
 
-   - **빠른 동기화**는 하루에 여러 번 정기적으로 수행됩니다. 빠른 동기화는 마지막 동기화 이후 변경된 Intune 사용 허가 및 온-프레미스 Exchange 조건부 액세스 대상 사용자에 대한 장치 정보를 검색합니다.
+   - **빠른 동기화**는 하루에 여러 번 정기적으로 수행됩니다. 빠른 동기화는 마지막 동기화 이후 변경된 Intune 사용 허가 및 온-프레미스 Exchange 조건부 액세스 대상 사용자에 대한 디바이스 정보를 검색합니다.
 
-   - **전체 동기화**는 기본적으로 하루에 한 번만 수행됩니다. 전체 동기화는 모든 Intune 사용 허가 및 온 프레미스 Exchange 조건부 액세스 대상 사용자에 대한 장치 정보를 검색합니다. 또한 전체 동기화는 Exchange Server 정보를 검색하고, Azure Portal의 Intune에서 지정한 구성이 Exchange Server에서 업데이트되도록 합니다. 
+   - **전체 동기화**는 기본적으로 하루에 한 번만 수행됩니다. 전체 동기화는 모든 Intune 사용 허가 및 온 프레미스 Exchange 조건부 액세스 대상 사용자에 대한 디바이스 정보를 검색합니다. 또한 전체 동기화는 Exchange Server 정보를 검색하고, Azure Portal의 Intune에서 지정한 구성이 Exchange Server에서 업데이트되도록 합니다. 
 
 Intune 대시보드에서 다음 단계를 통해 **빠른 동기화** 또는 **전체 동기화** 옵션을 사용하여 커넥터에서 동기화를 실행하도록 할 수 있습니다.
 

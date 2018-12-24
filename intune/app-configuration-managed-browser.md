@@ -43,7 +43,7 @@ Microsoft Edge 및 Intune Managed Browser는 공개 앱 스토어에서 다운�
 - Android 4 이상
 - iOS 8.0 이상
 
-Android 및 iOS 이전 버전에서도 계속 Managed Browser를 사용할 수는 있지만 새로운 버전의 앱을 설치할 수 없고 모든 기능을 액세스하지 못할 수 있습니다. 이러한 장치를 지원되는 운영 체제 버전으로 업데이트하는 것이 좋습니다.
+Android 및 iOS 이전 버전에서도 계속 Managed Browser를 사용할 수는 있지만 새로운 버전의 앱을 설치할 수 없고 모든 기능을 액세스하지 못할 수 있습니다. 이러한 디바이스를 지원되는 운영 체제 버전으로 업데이트하는 것이 좋습니다.
 
 >[!NOTE]
 >Managed Browser는 SSLv3(Secure Sockets Layer 버전 3) 암호화 프로토콜을 지원하지 않습니다.
@@ -60,9 +60,9 @@ Microsoft Edge와 Managed Browser에는 Intune SDK가 통합되어 있으므로 
 
 이러한 설정을 적용할 수 있는 장치는 다음과 같습니다.
 
-- Intune에 등록된 장치
+- Intune에 등록된 디바이스
 - 다른 MDM 제품에 등록된 장치
-- 관리되지 않는 장치
+- 관리되지 않는 디바이스
 
 >[!NOTE]
 >사용자가 앱 스토어에서 Managed Browser를 설치했는데 Intune에서 Managed Browser를 관리하지 않는 경우에는 Managed Browser를 기본 웹 브라우저로 사용할 수 있습니다. 이 경우 Microsoft MyApps 사이트를 통해 Single Sign-On이 지원됩니다. 사용자는 MyApps 사이트로 직접 이동되며, 여기서 프로비저닝된 모든 SaaS 응용 프로그램을 확인할 수 있습니다.
@@ -106,15 +106,15 @@ Azure AD 연결 웹앱이 모바일 플랫폼에서 Intune Managed Browser를 �
 
 iOS 및 Android의 Microsoft Edge 및 Intune Managed Browser는 Azure AD에 연결된 모든 웹앱(SaaS 및 온-프레미스)에 SSO를 활용할 수도 있습니다. Microsoft Authenticator 앱이 iOS 또는 Android의 Intune 회사 포털 앱에 표시되는 경우, 정책으로 보호되는 브라우저의 사용자는 자격 증명을 다시 입력하지 않고도 Azure AD 연결 웹앱에 액세스할 수 있습니다.
 
-SSO하려면 장치를 iOS 또는 Android의 Intune 회사 포털에 있는 Microsoft Authenticator 앱에 등록해야 합니다. 해당 장치가 다른 응용 프로그램에 등록되어 있지 않은 경우 Authenticator 앱 또는 Intune 회사 포털을 사용하는 사용자가 정책으로 보호되는 브라우저에서 Azure AD 연결 웹앱으로 이동할 때 해당 장치를 등록하라는 메시지가 표시됩니다. 장치가 Intune에서 관리되는 계정으로 등록되면 해당 계정은 Azure AD 연결 웹앱에서 SSO를 사용하도록 설정합니다. 
+SSO하려면 디바이스를 iOS 또는 Android의 Intune 회사 포털에 있는 Microsoft Authenticator 앱에 등록해야 합니다. 해당 디바이스가 다른 응용 프로그램에 등록되어 있지 않은 경우 Authenticator 앱 또는 Intune 회사 포털을 사용하는 사용자가 정책으로 보호되는 브라우저에서 Azure AD 연결 웹앱으로 이동할 때 해당 디바이스를 등록하라는 메시지가 표시됩니다. 디바이스가 Intune에서 관리되는 계정으로 등록되면 해당 계정은 Azure AD 연결 웹앱에서 SSO를 사용하도록 설정합니다. 
 
 > [!NOTE]
-> 장치 등록은 Azure AD 서비스를 사용하는 간단한 체크 인입니다. 전체 장치를 등록할 필요가 없고 장치에 대한 추가 권한을 부여하지 않습니다.
+> 디바이스 등록은 Azure AD 서비스를 사용하는 간단한 체크 인입니다. 전체 디바이스를 등록할 필요가 없고 디바이스에 대한 추가 권한을 부여하지 않습니다.
 
 ## <a name="create-a-protected-browser-app-configuration"></a>보호된 브라우저 앱 구성 만들기
 
 >[!IMPORTANT]
->앱 구성을 적용하려면 사용자의 보호되는 브라우저 또는 장치의 다른 앱이 [Intune 앱 보호 정책]( app-protection-policy.md)을 통해 이미 관리되고 있어야 합니다.
+>앱 구성을 적용하려면 사용자의 보호되는 브라우저 또는 디바이스의 다른 앱이 [Intune 앱 보호 정책]( app-protection-policy.md)을 통해 이미 관리되고 있어야 합니다.
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
@@ -142,9 +142,9 @@ Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대�
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>보호되는 브라우저에 대한 응용 프로그램 프록시 설정을 구성하는 방법
 
-Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 응용 프로그램 프록시]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 함께 사용하면 iOS 및 Android 장치 사용자에 대해 다음과 같은 시나리오를 지원할 수 있습니다.
+Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 응용 프로그램 프록시]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 함께 사용하면 iOS 및 Android 디바이스 사용자에 대해 다음과 같은 시나리오를 지원할 수 있습니다.
 
-- 사용자가 Microsoft Outlook 앱을 다운로드하고 로그인합니다. Intune 앱 보호 정책이 자동으로 적용됩니다. 저장된 데이터를 암호화하고 사용자가 장치에서 관리되지 않는 앱 또는 위치로 회사 파일을 전송할 수 없도록 차단합니다. 그런 다음 사용자가 Outlook에서 인트라넷 사이트에 대한 링크를 클릭할 때 해당 링크가 다른 브라우저 대신 보호되는 브라우저 응용 프로그램에서 열리도록 지정할 수 있습니다. 보호되는 브라우저는 이 인트라넷 사이트가 응용 프로그램 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 응용 프로그램 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있으며 Outlook의 링크가 예상대로 작동합니다.
+- 사용자가 Microsoft Outlook 앱을 다운로드하고 로그인합니다. Intune 앱 보호 정책이 자동으로 적용됩니다. 저장된 데이터를 암호화하고 사용자가 디바이스에서 관리되지 않는 앱 또는 위치로 회사 파일을 전송할 수 없도록 차단합니다. 그런 다음 사용자가 Outlook에서 인트라넷 사이트에 대한 링크를 클릭할 때 해당 링크가 다른 브라우저 대신 보호되는 브라우저 응용 프로그램에서 열리도록 지정할 수 있습니다. 보호되는 브라우저는 이 인트라넷 사이트가 응용 프로그램 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 응용 프로그램 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있으며 Outlook의 링크가 예상대로 작동합니다.
 - 원격 사용자가 보호되는 브라우저 응용 프로그램을 열고 내부 URL을 사용하여 인트라넷 사이트로 이동합니다. 보호되는 브라우저는 이 인트라넷 사이트가 응용 프로그램 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 응용 프로그램 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있습니다.
 
 ### <a name="before-you-start"></a>시작하기 전에
@@ -264,7 +264,7 @@ Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행�
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS에서 Managed Browser를 사용하여 관리되는 앱 로그에 액세스하는 방법
 
-iOS 장치에 Managed Browser가 설치된 최종 사용자는 Microsoft에서 게시한 모든 앱의 관리 상태를 볼 수 있습니다. 관리되는 iOS 앱의 문제를 해결하기 위해 로그를 보낼 수 있습니다.
+iOS 디바이스에 Managed Browser가 설치된 최종 사용자는 Microsoft에서 게시한 모든 앱의 관리 상태를 볼 수 있습니다. 관리되는 iOS 앱의 문제를 해결하기 위해 로그를 보낼 수 있습니다.
 
 1. iOS **설정**을 엽니다.
 2. 관리되는 **브라우저** 응용 프로그램 설정을 엽니다.
@@ -282,7 +282,7 @@ iOS 장치에 Managed Browser가 설치된 최종 사용자는 Microsoft에서 �
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser에 대한 보안 및 개인 정보
 
--   Managed Browser에서는 사용자가 자신의 장치에서 기본 제공 브라우저에 대해 구성하는 설정을 사용하지 않습니다. Managed Browser는 이러한 설정에 액세스할 수 없습니다.
+-   Managed Browser에서는 사용자가 자신의 디바이스에서 기본 제공 브라우저에 대해 구성하는 설정을 사용하지 않습니다. Managed Browser는 이러한 설정에 액세스할 수 없습니다.
 
 -   Managed Browser와 연결된 앱 보호 정책에서 **액세스용 단순 PIN 필요** 또는 **액세스용 회사 자격 증명 필요** 옵션을 구성하고 사용자가 인증 페이지에서 도움말 링크를 선택하는 경우에는, 정책의 차단 목록에 추가되었는지와 상관없이 모든 인터넷 사이트를 탐색할 수 있습니다.
 
@@ -291,9 +291,9 @@ iOS 장치에 Managed Browser가 설치된 최종 사용자는 Microsoft에서 �
 -   인증 및 Intune 문서에 대한 액세스를 허용하기 위해 허용 또는 차단 목록 설정에서 **&#42;.microsoft.com**이 제외됩니다. 이 값은 항상 허용됩니다.
 
 ### <a name="turn-off-usage-data"></a>사용 데이터 해제
-Microsoft는 Microsoft 제품 및 서비스를 개선하기 위해 Managed Browser의 성능 및 사용에 대한 익명의 데이터를 자동으로 수집합니다. 사용자는 장치에서 **사용 데이터** 설정을 사용하여 데이터의 수집을 해제할 수 있습니다. 이 데이터의 수집은 제어할 수 없습니다.
+Microsoft는 Microsoft 제품 및 서비스를 개선하기 위해 Managed Browser의 성능 및 사용에 대한 익명의 데이터를 자동으로 수집합니다. 사용자는 디바이스에서 **사용 데이터** 설정을 사용하여 데이터의 수집을 해제할 수 있습니다. 이 데이터의 수집은 제어할 수 없습니다.
 
--   iOS 장치에서 만료되거나 신뢰할 수 없는 인증서가 있는 웹 사이트를 사용자가 방문하면 해당 웹 사이트를 열 수 없습니다.
+-   iOS 디바이스에서 만료되거나 신뢰할 수 없는 인증서가 있는 웹 사이트를 사용자가 방문하면 해당 웹 사이트를 열 수 없습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

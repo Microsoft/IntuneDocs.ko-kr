@@ -1,6 +1,6 @@
 ---
 title: 사용자 지정 설정 - Windows Holographic for Business 디바이스 - Microsoft Intune
-description: Microsoft Hololens를 비롯하여 Microsoft Intune에서 Windows Holographic for Business를 실행하는 장치의 OMA-URI 설정을 사용하려면 사용자 지정 프로필을 추가하거나 만듭니다. AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates 및 ApplicationLaunchRestrictions 정책 CSP(구성 서비스 공급자) 설정을 설정할 수 있습니다.
+description: Microsoft Hololens를 비롯하여 Microsoft Intune에서 Windows Holographic for Business를 실행하는 디바이스의 OMA-URI 설정을 사용하려면 사용자 지정 프로필을 추가하거나 만듭니다. AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates 및 ApplicationLaunchRestrictions 정책 CSP(구성 서비스 공급자) 설정을 설정할 수 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -21,17 +21,17 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/07/2018
 ms.locfileid: "53032200"
 ---
-# <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune에서 Windows Holographic for Business 장치에 대한 사용자 지정 설정 사용
+# <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune에서 Windows Holographic for Business 디바이스에 대한 사용자 지정 설정 사용
 
-Microsoft Intune을 사용하면 "사용자 지정 프로필"을 사용하여 Windows Holographic for Business 장치에 대한 사용자 지정 설정을 추가하거나 만들 수 있습니다. 사용자 지정 프로필은 Intune의 기능입니다. Intune에 기본 제공되지 않은 장치 설정 및 기능을 추가하도록 설계되었습니다.
+Microsoft Intune을 사용하면 "사용자 지정 프로필"을 사용하여 Windows Holographic for Business 디바이스에 대한 사용자 지정 설정을 추가하거나 만들 수 있습니다. 사용자 지정 프로필은 Intune의 기능입니다. Intune에 기본 제공되지 않은 디바이스 설정 및 기능을 추가하도록 설계되었습니다.
 
-Windows Holographic for Business 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 다른 기능을 구성합니다. 이러한 설정은 일반적으로 모바일 장치 제조업체에서 장치에서 기능을 제어하기 위해 사용합니다.
+Windows Holographic for Business 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 다른 기능을 구성합니다. 이러한 설정은 일반적으로 모바일 디바이스 제조업체에서 디바이스에서 기능을 제어하기 위해 사용합니다.
 
 Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설정을 사용할 수 있게 합니다. CSP 개요는 [IT 전문가용 구성 CSP(구성 서비스 공급자) 소개](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers)를 참조하세요. Windows Holographic에서 지원되는 특정 CSP의 경우 [Windows Holographic에서 지원되는 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)를 참조하세요.
 
-특정 설정을 찾을 경우 [Windows Holographic for Business 장치 제한 프로필](device-restrictions-windows-holographic.md)에 많은 기본 제공 설정이 있습니다. 따라서 사용자 지정 값을 입력할 필요가 없습니다.
+특정 설정을 찾을 경우 [Windows Holographic for Business 디바이스 제한 프로필](device-restrictions-windows-holographic.md)에 많은 기본 제공 설정이 있습니다. 따라서 사용자 지정 값을 입력할 필요가 없습니다.
 
-이 문서는 Windows Holographic for Business 장치의 사용자 지정 프로필을 만드는 방법을 보여줍니다. 권장된 OMA-URI 설정 목록도 포함합니다.
+이 문서는 Windows Holographic for Business 디바이스의 사용자 지정 프로필을 만드는 방법을 보여줍니다. 권장된 OMA-URI 설정 목록도 포함합니다.
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
@@ -64,11 +64,11 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
     일부 설정을 추가한 후 **내보내기**를 선택할 수 있습니다. **내보내기**는 쉼표로 구분된 값(.csv) 파일에서 추가한 모든 값의 목록을 만듭니다.
 
 5. **확인**을 선택하여 변경 내용을 저장합니다. 필요에 따라 더 많은 설정을 계속 추가합니다.
-6. 끝나면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **장치 구성 - 프로필** 목록에 나타납니다.
+6. 끝나면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **디바이스 구성 - 프로필** 목록에 나타납니다.
 
 ## <a name="recommended-custom-settings"></a>권장되는 사용자 지정 설정
 
-다음 설정은 Windows Holographic for Business를 실행하는 장치에 유용합니다.
+다음 설정은 Windows Holographic for Business를 실행하는 디바이스에 유용합니다.
 
 ### <a name="allowfastreconnecthttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-authenticationauthentication-allowfastreconnect"></a>[AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)
 
@@ -96,7 +96,7 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0 – 구성되지 않음. 장치는 모든 적용 가능한 업데이트를 설치합니다.<br/>1 – 장치는 적용 가능한 업데이트뿐 아니라 승인된 업데이트 목록에 있는 업데이트도 설치합니다. 배포에 앞서 테스트가 필요한 경우처럼 장치에 업데이트의 배포를 IT로 제어하고자 하는 경우 이 정책을 1로 설정하십시오.|
+> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0 – 구성되지 않음. 디바이스는 모든 적용 가능한 업데이트를 설치합니다.<br/>1 – 디바이스는 적용 가능한 업데이트뿐 아니라 승인된 업데이트 목록에 있는 업데이트도 설치합니다. 배포에 앞서 테스트가 필요한 경우처럼 디바이스에 업데이트의 배포를 IT로 제어하고자 하는 경우 이 정책을 1로 설정하십시오.|
 
 ### <a name="scheduledinstalltimehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-scheduledinstalltime"></a>[ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
 
@@ -110,7 +110,7 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|문자열<br/>URL - 장치가 지정된 URL의 WSUS 서버에서 업데이트를 확인합니다.<br/>구성되지 않음 - 장치가 Microsoft Update에서 업데이트를 확인합니다.|
+> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|문자열<br/>URL - 디바이스가 지정된 URL의 WSUS 서버에서 업데이트를 확인합니다.<br/>구성되지 않음 - 디바이스가 Microsoft Update에서 업데이트를 확인합니다.|
 
 ### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
@@ -131,7 +131,7 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Integer<br/>0 - 장치가 현재 활성 사용자가 없는 상태로 돌아오는 경우 즉시 삭제<br/>1 - 저장소 용량 임계값(기본값)에서 삭제<br/>2 - 저장소 용량 임계값 및 프로필 비활성 임계값 모두에서 삭제|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Integer<br/>0 - 디바이스가 현재 활성 사용자가 없는 상태로 돌아오는 경우 즉시 삭제<br/>1 - 저장소 용량 임계값(기본값)에서 삭제<br/>2 - 저장소 용량 임계값 및 프로필 비활성 임계값 모두에서 삭제|
 
 ### <a name="enableprofilemanagerhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[EnableProfileManager](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 

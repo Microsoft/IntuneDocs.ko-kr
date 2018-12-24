@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 Windows 10 장치에 대한 사용자 지정 설정 추가 - Azure | Microsoft Docs
-description: Microsoft Intune에서 Windows 10을 실행하는 장치에 OMA-URI 설정을 사용하려면 사용자 지정 프로필을 추가하거나 만듭니다. 사용자 지정 프로필을 사용하여 사용자 지정 설정을 추가합니다.
+title: Microsoft Intune에서 Windows 10 디바이스에 대한 사용자 지정 설정 추가 - Azure | Microsoft Docs
+description: Microsoft Intune에서 Windows 10을 실행하는 디바이스에 OMA-URI 설정을 사용하려면 사용자 지정 프로필을 추가하거나 만듭니다. 사용자 지정 프로필을 사용하여 사용자 지정 설정을 추가합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -20,19 +20,19 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52184457"
 ---
-# <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Intune에서 Windows 10 장치에 대한 사용자 지정 사용
+# <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 대한 사용자 지정 사용
 
-Microsoft Intune을 사용하면 "사용자 지정 프로필"을 사용하여 Windows 10 장치에 대한 사용자 지정 설정을 추가하거나 만들 수 있습니다. 사용자 지정 프로필은 Intune의 기능입니다. Intune에 기본 제공되지 않은 장치 설정 및 기능을 추가하도록 설계되었습니다.
+Microsoft Intune을 사용하면 "사용자 지정 프로필"을 사용하여 Windows 10 디바이스에 대한 사용자 지정 설정을 추가하거나 만들 수 있습니다. 사용자 지정 프로필은 Intune의 기능입니다. Intune에 기본 제공되지 않은 디바이스 설정 및 기능을 추가하도록 설계되었습니다.
 
-Windows 10 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 다른 기능을 구성합니다. 이러한 설정은 일반적으로 모바일 장치 제조업체에서 장치에서 기능을 제어하기 위해 사용합니다. 
+Windows 10 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 다른 기능을 구성합니다. 이러한 설정은 일반적으로 모바일 디바이스 제조업체에서 디바이스에서 기능을 제어하기 위해 사용합니다. 
 
 Windows 10에서는 [정책 CSP(구성 서비스 공급자)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers)와 같은 다양한 CSP(구성 서비스 공급자) 설정을 사용할 수 있습니다.
 
-특정 설정을 찾을 경우 [Windows 10 장치 제한 프로필 ](device-restrictions-windows-10.md)에 많은 기본 제공 설정이 있습니다. 따라서 사용자 지정 값을 입력할 필요가 없습니다.
+특정 설정을 찾을 경우 [Windows 10 디바이스 제한 프로필 ](device-restrictions-windows-10.md)에 많은 기본 제공 설정이 있습니다. 따라서 사용자 지정 값을 입력할 필요가 없습니다.
 
 이 문서에서는 다음을 보여줍니다.
 
-- Windows 10 장치에 대한 사용자 지정 프로필을 만드는 방법
+- Windows 10 디바이스에 대한 사용자 지정 프로필을 만드는 방법
 - 권장된 OMA-URI 설정 목록을 포함합니다.
 - VPN 연결을 여는 사용자 지정 프로필의 예를 제공합니다.
 
@@ -67,11 +67,11 @@ Windows 10에서는 [정책 CSP(구성 서비스 공급자)](https://technet.mic
     일부 설정을 추가한 후 **내보내기**를 선택할 수 있습니다. **내보내기**는 쉼표로 구분된 값(.csv) 파일에서 추가한 모든 값의 목록을 만듭니다.
 
 5. **확인**을 선택하여 변경 내용을 저장합니다. 필요에 따라 더 많은 설정을 계속 추가합니다.
-6. 끝나면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **장치 구성 - 프로필** 목록에 나타납니다.
+6. 끝나면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **디바이스 구성 - 프로필** 목록에 나타납니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 **Connectivity/AllowVPNOverCellular** 설정이 사용됩니다. 이 설정을 사용하면 Windows 10 장치는 셀룰러 네트워크에서 VPN 연결을 열 수 있습니다.
+다음 예제에서는 **Connectivity/AllowVPNOverCellular** 설정이 사용됩니다. 이 설정을 사용하면 Windows 10 디바이스는 셀룰러 네트워크에서 VPN 연결을 열 수 있습니다.
 
 ![VPN 설정을 포함하는 사용자 지정 정책의 예](./media/custom-policy-example.png)
 

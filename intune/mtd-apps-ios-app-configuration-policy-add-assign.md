@@ -28,7 +28,7 @@ ms.locfileid: "52181176"
 > [!NOTE] 
 > 이 항목은 모든 Mobile Threat Defense 파트너에게 적용됩니다.
 
-Intune을 사용하면 최종 사용자가 모바일 장치에서 위협이 식별될 때 알림을 받을 수 있도록 MTD 앱을 추가 및 배포하고 위협을 해결하기 위한 지침을 받을 수 있습니다.
+Intune을 사용하면 최종 사용자가 모바일 디바이스에서 위협이 식별될 때 알림을 받을 수 있도록 MTD 앱을 추가 및 배포하고 위협을 해결하기 위한 지침을 받을 수 있습니다.
 
 
 ## <a name="before-you-begin"></a>시작하기 전에
@@ -41,10 +41,10 @@ Intune을 사용하면 최종 사용자가 모바일 장치에서 위협이 식�
   -   [iOS 앱 구성 정책 추가](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)
 
 > [!TIP]
-> Intune 회사 포털은 사용자의 ID가 Azure AD에서 확인될 수 있도록 Android 장치에서 브로커로 작동합니다.
+> Intune 회사 포털은 사용자의 ID가 Azure AD에서 확인될 수 있도록 Android 디바이스에서 브로커로 작동합니다.
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>iOS용 Microsoft Authenticator 구성
-iOS 장치의 경우 사용자의 ID가 Azure AD에서 확인될 수 있도록 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)가 필요합니다. 또한 Intune에서 사용할 MTD iOS 앱에 신호를 보내는 iOS 앱 구성 정책이 필요합니다.
+iOS 디바이스의 경우 사용자의 ID가 Azure AD에서 확인될 수 있도록 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)가 필요합니다. 또한 Intune에서 사용할 MTD iOS 앱에 신호를 보내는 iOS 앱 구성 정책이 필요합니다.
 
 [Microsoft Intune에 iOS 스토어 앱 추가](store-apps-ios.md) 지침을 참조하세요. **앱 정보 구성** 섹션의 **12단계**에서 이 [Microsoft Authenticator 앱 스토어 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)을 사용합니다.
 

@@ -20,15 +20,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52181245"
 ---
-# <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune으로 Windows 장치에 기간 업무 앱을 배포할 수 있도록 앱에 서명
+# <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune으로 Windows 디바이스에 기간 업무 앱을 배포할 수 있도록 앱에 서명
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Windows 및 Windows 10 Mobile 장치에 배포할 수 있습니다. Windows 10 및 Windows 10 Mobile 장치에 .appx 또는 .xap 앱을 배포하거나 Windows 8.1 또는 Windows Phone 8.1 장치에 LOB 앱을 배포하려면 **Symantec Enterprise 모바일 코드 서명 인증서**를 얻어야 합니다. 해당 Windows 장치에서 이러한 앱용으로 Symantec 인증서만 신뢰할 수 있습니다. Windows 10 앱 및 "유니버설" 앱에는 사용자 고유의 인증 기관을 사용할 수 있습니다. 이 인증서는 다음을 위해 필요합니다.
+Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Windows 및 Windows 10 Mobile 디바이스에 배포할 수 있습니다. Windows 10 및 Windows 10 Mobile 디바이스에 .appx 또는 .xap 앱을 배포하거나 Windows 8.1 또는 Windows Phone 8.1 디바이스에 LOB 앱을 배포하려면 **Symantec Enterprise 모바일 코드 서명 인증서**를 얻어야 합니다. 해당 Windows 디바이스에서 이러한 앱용으로 Symantec 인증서만 신뢰할 수 있습니다. Windows 10 앱 및 "유니버설" 앱에는 사용자 고유의 인증 기관을 사용할 수 있습니다. 이 인증서는 다음을 위해 필요합니다.
 
--   Windows PC, Windows 10 Mobile 장치 및 Windows Phone 장치에 배포하기 위해 회사 포털 앱에 서명
+-   Windows PC, Windows 10 Mobile 디바이스 및 Windows Phone 디바이스에 배포하기 위해 회사 포털 앱에 서명
 
--   Intune에서 회사 기간 업무 앱을 Windows 장치에 배포할 수 있도록 해당 앱에 서명
+-   Intune에서 회사 기간 업무 앱을 Windows 디바이스에 배포할 수 있도록 해당 앱에 서명
 
 아래 단계에 따라 필요한 인증서를 가져오고 앱에 서명할 수 있습니다. Microsoft 개발자로 등록한 다음 Symantec 인증서를 구매해야 합니다.
 
@@ -37,7 +37,7 @@ Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Win
    회사 계정을 구매하기 위해 로그인할 때 사용한 회사 계정 정보를 이용하여 [Microsoft 개발자로 등록](http://go.microsoft.com/fwlink/?LinkId=268442)합니다. 이 요청의 경우 코드 서명 인증서를 받기 전에 회사 관리자의 승인을 받아야 합니다.
 
 2. **회사 Symantec 인증서 가져오기**<br>
-  Symantec ID를 사용하여 [Symantec 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=268441) 에서 인증서를 구입합니다. 인증서를 구매하고 나면 Microsoft 개발자로 등록할 때 지정한 회사 승인자에게 인증서 요청을 승인하라는 전자 메일이 수신됩니다. Symantec 인증서 요구 사항에 대한 자세한 내용은 [Windows Phone에 Symantec 인증서가 필요한 이유는 무엇인가요?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec)를 참조하세요. Windows 장치 등록 FAQ.
+  Symantec ID를 사용하여 [Symantec 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=268441) 에서 인증서를 구입합니다. 인증서를 구매하고 나면 Microsoft 개발자로 등록할 때 지정한 회사 승인자에게 인증서 요청을 승인하라는 전자 메일이 수신됩니다. Symantec 인증서 요구 사항에 대한 자세한 내용은 [Windows Phone에 Symantec 인증서가 필요한 이유는 무엇인가요?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec)를 참조하세요. Windows 디바이스 등록 FAQ.
 
 3.  **인증서 가져오기**<br>
     요청이 승인되면 인증서 가져오기에 대한 지침이 포함된 전자 메일을 받습니다. 전자 메일의 지침에 따라 인증서를 가져옵니다.
@@ -65,9 +65,9 @@ Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Win
 
     4.  마법사를 완료합니다.
 
-## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>예: Windows 장치용 회사 포털 앱 다운로드, 서명 및 배포
+## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>예: Windows 디바이스용 회사 포털 앱 다운로드, 서명 및 배포
 
-회사 포털 앱을 Windows Phone 스토어에서 설치하지 않고 Intune을 사용해 Windows Phone 및 Windows 10 Mobile 장치를 비롯한 Microsoft 장치에 배포할 수 있습니다. 회사 포털 앱을 다운로드하고 인증서로 서명해야 합니다.  사용자가 회사 저장소를 사용하지 않으며 회사 포털을 Windows Phone 8.1 장치에 배포하려는 경우에만 필요합니다.
+회사 포털 앱을 Windows Phone 스토어에서 설치하지 않고 Intune을 사용해 Windows Phone 및 Windows 10 Mobile 디바이스를 비롯한 Microsoft 디바이스에 배포할 수 있습니다. 회사 포털 앱을 다운로드하고 인증서로 서명해야 합니다.  사용자가 회사 저장소를 사용하지 않으며 회사 포털을 Windows Phone 8.1 디바이스에 배포하려는 경우에만 필요합니다.
 
 
 1.  **회사 포털 다운로드**
@@ -76,7 +76,7 @@ Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Win
 
     -   CompanyPortal.appx – Windows Phone 8.1용 회사 포털 설치 앱
 
-    -   WinPhoneCompanyPortal.ps1 – 회사 포털 앱 파일을 Windows Phone 8.1 장치에 배포할 수 있도록 서명하는 데 사용할 수 있는 PowerShell 스크립트
+    -   WinPhoneCompanyPortal.ps1 – 회사 포털 앱 파일을 Windows Phone 8.1 디바이스에 배포할 수 있도록 서명하는 데 사용할 수 있는 PowerShell 스크립트
 
     또는 [비즈니스용 Microsoft 스토어](http://businessstore.microsoft.com/)에서 Windows Phone 8.1 회사 포털(오프라인 사용이 허가된 패키지) 또는 Windows 10 회사 포털(오프라인 사용이 허가된 패키지)을 다운로드할 수 있습니다. 회사 포털 앱과 함께 오프라인 라이선스 및 오프라인에서 사용하기 위해 다운로드한 적절한 패키지를 얻어야 합니다. 선택 영역의 Windows 8 및 Windows Phone 8 플랫폼 목록은 상응하는 8.1 플랫폼을 나타냅니다. Intune을 사용하여 이 작업을 수행하는 방법에 대한 자세한 내용은 [비즈니스용 Microsoft 스토어에서 구입한 앱 관리](windows-store-for-business.md)를 참조하세요.
 
@@ -169,8 +169,8 @@ Windows 및 Windows Phone 모바일 앱을 배포하는 데 사용되는 Symante
 
 Intune에서 유니버설 앱의 종속성을 처리하는 방식에 대한 자세한 내용은 [Deploying an appxbundle with dependencies via Microsoft Intune MDM(Microsoft Intune MDM을 통해 종속성이 포함된 appxbundle 배포)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)을 참조하세요.  
 
-### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>사용자가 이미 스토어에서 이전 앱을 설치한 경우 어떻게 사용자의 장치에서 회사 포털을 업데이트하나요?
-사용자가 이미 스토어에서 Windows 8.1 또는 Windows Phone 8.1 회사 포털 앱을 설치한 경우 관리자나 사용자의 별도 조치가 필요 없이 앱이 자동으로 새 버전으로 업데이트됩니다. 업데이트가 이루어지지 않는 경우 사용자에게 장치에서 스토어 앱에 대해 자동 업데이트를 활성화했는지 확인하도록 요청합니다.   
+### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>사용자가 이미 스토어에서 이전 앱을 설치한 경우 어떻게 사용자의 디바이스에서 회사 포털을 업데이트하나요?
+사용자가 이미 스토어에서 Windows 8.1 또는 Windows Phone 8.1 회사 포털 앱을 설치한 경우 관리자나 사용자의 별도 조치가 필요 없이 앱이 자동으로 새 버전으로 업데이트됩니다. 업데이트가 이루어지지 않는 경우 사용자에게 디바이스에서 스토어 앱에 대해 자동 업데이트를 활성화했는지 확인하도록 요청합니다.   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>사이드로드한 Windows 8.1 회사 포털 앱을 Windows 10 회사 포털 앱으로 어떻게 업그레이드하나요?
 권장되는 마이그레이션 경로는 배포 작업을 "제거"로 설정하여 Windows 8.1 회사 포털 앱의 배포를 삭제하는 것입니다. 이 작업이 완료되면 위의 옵션 중 하나를 사용하여 Windows 10 회사 포털 앱을 배포할 수 있습니다.  

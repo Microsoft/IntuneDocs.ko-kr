@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune과 Zimperium MTD 통합
 titleSuffix: ''
-description: 회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Microsoft Intune을 사용하여 Zimperium MTD(Mobile Threat Defense) 솔루션을 설정하는 방법입니다.
+description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Microsoft Intune을 사용하여 Zimperium MTD(Mobile Threat Defense) 솔루션을 설정하는 방법입니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -44,7 +44,7 @@ Intune과 Zimperium을 통합하는 과정을 시작하기 전에 다음의 구�
 
     -   디렉터리 데이터 읽기
 
-    -   Intune에 장치 정보 보내기
+    -   Intune에 디바이스 정보 보내기
 
 -   Zimperium MTD 콘솔에 액세스하기 위한 관리자 자격 증명
 
@@ -54,7 +54,7 @@ Zimperium 앱 권한 부여 프로세스는 다음과 같습니다.
 
 -   Zimperium 서비스에 디바이스 상태와 관련된 정보를 Intune으로 다시 전달하기 위한 권한을 부여합니다. 이러한 권한을 부여하려면 전역 관리자 자격 증명을 사용해야 합니다. 권한 부여는 일회성 작업입니다. 권한이 부여된 후에는 일별 작업을 위해 전역 관리자 자격 증명이 필요하지 않습니다.
 
--   Zimperium이 Azure Active Directory(AD) 등록 그룹 멤버 자격과 동기화하여 해당 장치의 데이터베이스를 채웁니다.
+-   Zimperium이 Azure Active Directory(AD) 등록 그룹 멤버 자격과 동기화하여 해당 디바이스의 데이터베이스를 채웁니다.
 
 -   Zimperium 관리 콘솔에서 Azure AD SSO(Single Sign-On)를 사용하도록 허용합니다.
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune에서 Android 장치의 Wi-Fi 설정 구성 - Azure | Microsoft Docs
+title: Microsoft Intune에서 Android 디바이스의 Wi-Fi 설정 구성 - Azure | Microsoft Docs
 titleSuffix: ''
-description: Android의 WiFi 장치 구성 프로필을 만들거나 추가합니다. Microsoft Intune에서 인증서 추가, EAP 유형 선택 및 인증 방법 선택을 포함하여 다양한 설정을 확인합니다.
+description: Android의 WiFi 디바이스 구성 프로필을 만들거나 추가합니다. Microsoft Intune에서 인증서 추가, EAP 유형 선택 및 인증 방법 선택을 포함하여 다양한 설정을 확인합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -21,9 +21,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52179658"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune에서 Android를 실행하는 장치의 Wi-Fi 설정 추가
+# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune에서 Android를 실행하는 디바이스의 Wi-Fi 설정 추가
 
-특정 WiFi 설정을 사용하여 프로필을 만든 후 Android 장치에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, PKS 또는 SCEP 인증서 사용 등을 포함한 많은 기능을 제공합니다.
+특정 WiFi 설정을 사용하여 프로필을 만든 후 Android 디바이스에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, PKS 또는 SCEP 인증서 사용 등을 포함한 많은 기능을 제공합니다.
 
 이러한 Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정의 두 범주로 구분됩니다.
 
@@ -36,14 +36,14 @@ ms.locfileid: "52179658"
 ## <a name="basic-profile"></a>기본 프로필
 
 - **Wi-Fi 유형**: **기본**을 선택합니다.
-- **SSID**: **서비스 집합 ID**의 약어입니다. 이 설정은 장치에 연결할 무선 네트워크의 실제 이름입니다.
+- **SSID**: **서비스 집합 ID**의 약어입니다. 이 설정은 디바이스에 연결할 무선 네트워크의 실제 이름입니다.
 - **자동으로 연결**: **사용**을 선택하면 장치가 범위 내에 있을 때 이 네트워크에 자동으로 연결합니다. **사용 안 함**을 선택하면 장치가 자동으로 연결되지 않습니다.
 - **숨겨진 네트워크**: **사용**을 선택하면 이 네트워크가 장치의 사용 가능한 네트워크 목록에 숨겨집니다. SSID는 브로드캐스트되지 않습니다. **사용 안 함**을 선택하면 이 네트워크가 장치의 사용 가능한 네트워크 목록에 표시됩니다.
 
 ## <a name="enterprise-profile"></a>엔터프라이즈 프로필
 
 - **Wi-Fi 유형**: **엔터프라이즈**를 선택합니다.
-- **SSID**: **서비스 집합 ID**의 약어입니다. 이 설정은 장치에 연결할 무선 네트워크의 실제 이름입니다.
+- **SSID**: **서비스 집합 ID**의 약어입니다. 이 설정은 디바이스에 연결할 무선 네트워크의 실제 이름입니다.
 - **자동으로 연결**: **사용**을 선택하면 장치가 범위 내에 있을 때 이 네트워크에 자동으로 연결합니다. **사용 안 함**을 선택하면 장치가 자동으로 연결되지 않습니다.
 - **숨겨진 네트워크**: **사용**을 선택하면 이 네트워크가 장치의 사용 가능한 네트워크 목록에 숨겨집니다. SSID는 브로드캐스트되지 않습니다. **사용 안 함**을 선택하면 이 네트워크가 장치의 사용 가능한 네트워크 목록에 표시됩니다.
 - **EAP 유형**: 보안 무선 연결을 인증하는 데 사용되는 EAP(확장할 수 있는 인증 프로토콜) 유형을 선택합니다. 옵션은 다음과 같습니다. 
@@ -54,7 +54,7 @@ ms.locfileid: "52179658"
 
       **확인**을 선택하여 변경 내용을 저장합니다.
 
-    - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)**: 장치에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 장치가 서버에 제공하는 ID입니다.
+    - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)**: 장치에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
       **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -71,7 +71,7 @@ ms.locfileid: "52179658"
 
           선택 사항: **암호화되지 않은 암호(PAP)**, **CHAP(Challenge Handshake 인증 프로토콜)**, **MS-CHAP(Microsoft CHAP)** 또는 **MS-CHAP v2(Microsoft CHAP 버전 2)**
 
-      - **인증서**: 장치에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 장치가 서버에 제공하는 ID입니다.
+      - **인증서**: 장치에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
         **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "52179658"
 
           선택 사항: **없음** 또는 **MS-CHAP v2(Microsoft CHAP 버전 2)**
 
-      - **인증서**: 장치에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 장치가 서버에 제공하는 ID입니다.
+      - **인증서**: 장치에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
         **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -106,4 +106,4 @@ ms.locfileid: "52179658"
 
 - 다른 플랫폼을 포함한 [Wi-Fi 설정 개요](wi-fi-settings-configure.md).
 
-- Android 엔터프라이즈 또는 Android 키오스크 장치를 사용 중인가요? 그렇다면 [Android 엔터프라이즈 및 Android 키오스크를 실행하는 장치의 Wi-Fi 설정](wi-fi-settings-android-enterprise.md)을 확인하세요.
+- Android 엔터프라이즈 또는 Android 키오스크 디바이스를 사용 중인가요? 그렇다면 [Android 엔터프라이즈 및 Android 키오스크를 실행하는 디바이스의 Wi-Fi 설정](wi-fi-settings-android-enterprise.md)을 확인하세요.

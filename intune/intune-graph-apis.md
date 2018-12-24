@@ -186,8 +186,8 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 - **액세스 사용** 설정: __Microsoft Intune 장치 구성 및 정책 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
-    - 장치 구성
-    - 장치 준수 정책
+    - 디바이스 구성
+    - 디바이스 준수 정책
     - 알림 메시지
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
@@ -197,15 +197,15 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 - __DeviceManagementConfiguration.Read.All__과 같은 작업을 허용합니다.
 
 - 앱은 다음 엔터티 만들기/할당/삭제/변경도 수행할 수 있습니다.
-    - 장치 구성
-    - 장치 준수 정책
+    - 디바이스 구성
+    - 디바이스 준수 정책
     - 알림 메시지
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
 - **액세스 사용** 설정: __Microsoft Intune 장치에서 사용자에게 영향을 주는 원격 작업 수행__
 
-- 관리 장치에서 다음과 같은 원격 작업을 허용합니다.
+- 관리 디바이스에서 다음과 같은 원격 작업을 허용합니다.
     - 사용 중지
     - 초기화
     - 암호 초기화/복구
@@ -213,15 +213,15 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
     - 분실 모드 사용/사용 안 함
     - PC 정리
     - 다시 부팅
-    - 공유 장치에서 사용자 삭제
+    - 공유 디바이스에서 사용자 삭제
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
 - **액세스 사용** 설정: __Microsoft Intune 장치 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
-    - 관리 장치
-    - 장치 범주
+    - 관리 디바이스
+    - 디바이스 범주
     - 검색된 앱
     - 원격 작업
     - 맬웨어 정보
@@ -233,11 +233,11 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 - __DeviceManagementManagedDevices.Read.All__과 같은 작업을 허용합니다.
 
 - 앱은 다음 엔터티 만들기/삭제/변경도 수행할 수 있습니다.
-    - 관리 장치
-    - 장치 범주
+    - 관리 디바이스
+    - 디바이스 범주
 
 - 다음과 같은 원격 작업도 허용됩니다.
-    - 장치 찾기
+    - 디바이스 찾기
     - 활성화 잠금 무시
     - 원격 지원 요청
 
@@ -265,7 +265,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 - **액세스 사용** 설정: __Microsoft Intune 구성 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
-    - 장치 등록
+    - 디바이스 등록
     - Apple Push Notification Certificate
     - Apple 장비 등록 프로그램
     - Apple Volume Purchase Program
@@ -283,7 +283,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 - DeviceManagementServiceConfig.Read.All_과 같은 작업을 허용합니다.
 
 - 앱은 다음 Intune 기능을 구성할 수도 있습니다.
-    - 장치 등록
+    - 디바이스 등록
     - Apple Push Notification Certificate
     - Apple 장비 등록 프로그램
     - Apple Volume Purchase Program
@@ -331,7 +331,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
 ### <a name="authenticate-azure-ad-in-c"></a>C에서 Azure AD 인증\#
 
-이 예제에서는 C#을 사용하여 Intune 계정과 연결된 장치 목록을 검색하는 방법을 보여 줍니다.
+이 예제에서는 C#을 사용하여 Intune 계정과 연결된 디바이스 목록을 검색하는 방법을 보여 줍니다.
 
 1.  Visual Studio를 시작한 다음 새 Visual C# 콘솔 앱(.NET Framework) 프로젝트를 만듭니다.
 
@@ -372,7 +372,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
     `application_ID`의 값은 앞에서 설명한 것처럼 최소한 `DeviceManagementManagedDevices.Read.All` 권한 범위가 부여된 ID와 일치하도록 변경해야 합니다.
 
-6. 장치 목록을 검색하는 메서드를 추가합니다.
+6. 디바이스 목록을 검색하는 메서드를 추가합니다.
 
     ``` csharp
     private static async Task<string> GetMyManagedDevices()

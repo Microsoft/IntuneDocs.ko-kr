@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune과 Lookout 통합 설정
 titlesuffix: ''
-description: 회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Lookout MTD(Mobile Threat Defense)와 Intune을 통합하는 방법을 알아봅니다.
+description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Lookout MTD(Mobile Threat Defense)와 Intune을 통합하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -87,7 +87,7 @@ Lookout Mobility Endpoint Security 테넌트가 Azure AD 구독과 연결되어 
 1. [Azure AD 관리 포털](https://manage.windowsazure.com)에서 Lookout 통합을 테스트할 적은 수의 사용자를 포함하는 Azure AD 보안 그룹을 만드는 것이 좋습니다.
 
     > [!NOTE] 
-    > 식별되고 지원되는 Azure AD 내 등록 그룹 사용자의 모든 Lookout 지원, Intune 등록 장치가 Lookout MTD 콘솔에 등록되며 활성화할 수 있습니다.
+    > 식별되고 지원되는 Azure AD 내 등록 그룹 사용자의 모든 Lookout 지원, Intune 등록 디바이스가 Lookout MTD 콘솔에 등록되며 활성화할 수 있습니다.
 
 2. [Lookout 콘솔](https://aad.lookout.com)의 **시스템** 모듈에서 Lookout에 장치를 등록해야 하는 사용자 집합을 정의하려면 **커넥터** 탭을 선택하고 **등록 관리**를 선택합니다. 등록할 Azure AD 보안 그룹 **표시 이름**을 추가합니다.
 
@@ -98,14 +98,14 @@ Lookout Mobility Endpoint Security 테넌트가 Azure AD 구독과 연결되어 
     >![Azure Portal의 Azure Active Directory 서비스 속성 페이지의 스크린샷](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >가장 좋은 방법은 새 장치의 확인 간격을 기본값(5분)으로 하는 것입니다. 현재 제한 사항, **Lookout은 그룹 표시 이름의 유효성을 검사할 수 없습니다.** Azure Portal의 **표시 이름** 필드가 Azure AD 보안 그룹과 정확히 일치하는지 확인합니다. **중첩 그룹을 만들 수 없습니다.** Lookout에 사용된 Azure AD 보안 그룹에는 사용자만 포함해야 하며, 다른 그룹은 포함할 수 없습니다.
+    >가장 좋은 방법은 새 디바이스의 확인 간격을 기본값(5분)으로 하는 것입니다. 현재 제한 사항, **Lookout은 그룹 표시 이름의 유효성을 검사할 수 없습니다.** Azure Portal의 **표시 이름** 필드가 Azure AD 보안 그룹과 정확히 일치하는지 확인합니다. **중첩 그룹을 만들 수 없습니다.** Lookout에 사용된 Azure AD 보안 그룹에는 사용자만 포함해야 하며, 다른 그룹은 포함할 수 없습니다.
 
-3.  그룹이 추가된 후 다음번에 사용자가 지원되는 해당 장치에서 Lookout for Work 앱을 열면 장치가 Lookout에서 활성화됩니다.
+3.  그룹이 추가된 후 다음번에 사용자가 지원되는 해당 디바이스에서 Lookout for Work 앱을 열면 디바이스가 Lookout에서 활성화됩니다.
 
 4.  결과에 만족한 경우 추가 사용자 그룹까지 등록을 확장합니다.
 
 ## <a name="configure-state-sync"></a>상태 동기화 구성
-**상태 동기화** 옵션에서 Intune에 전송해야 할 데이터 유형을 지정합니다.  Lookout Intune 통합이 제대로 작동하려면 장치 상태와 위협 상태가 둘 다 필요합니다. 이러한 설정은 기본적으로 사용됩니다.
+**상태 동기화** 옵션에서 Intune에 전송해야 할 데이터 유형을 지정합니다.  Lookout Intune 통합이 제대로 작동하려면 디바이스 상태와 위협 상태가 둘 다 필요합니다. 이러한 설정은 기본적으로 사용됩니다.
 
 ## <a name="configure-error-report-email-recipient-information"></a>오류 보고서를 메일로 받는 사람의 정보 구성
 **오류 관리** 옵션에서 오류 보고서를 받아야 하는 메일 주소를 입력합니다.
@@ -113,7 +113,7 @@ Lookout Mobility Endpoint Security 테넌트가 Azure AD 구독과 연결되어 
 ![Intune Connector 오류 관리 페이지의 스크린샷](./media/lookout-mtp-connector-error-notifications.png)
 
 ## <a name="configure-enrollment-settings"></a>등록 설정 구성
-**커넥터** 페이지의 **시스템** 모듈에서 장치 연결이 끊긴 것으로 간주되는 일 수를 지정합니다.  연결이 끊긴 장치는 Intune 조건부 액세스 정책을 기반으로 규정 비준수로 간주되어 회사 응용 프로그램 액세스가 차단됩니다. 1일에서 90일 사이의 값을 지정할 수 있습니다.
+**커넥터** 페이지의 **시스템** 모듈에서 장치 연결이 끊긴 것으로 간주되는 일 수를 지정합니다.  연결이 끊긴 디바이스는 Intune 조건부 액세스 정책을 기반으로 규정 비준수로 간주되어 회사 응용 프로그램 액세스가 차단됩니다. 1일에서 90일 사이의 값을 지정할 수 있습니다.
 
 ![Lookout 등록 설정](./media/lookout-console-enrollment-settings.png)
 
@@ -128,10 +128,10 @@ Lookout Mobile Threat Defense는 다양한 종류의 모바일 위협을 분류�
 ![위협 및 분류를 보여 주는 정책 페이지의 스크린샷](./media/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
-> 위험 수준은 Mobile Threat Defense의 중요한 측면으로, 런타임 시 이러한 위험 수준에 따라 Intune 통합에서 장치 규정 준수를 측정하기 때문입니다. Intune 관리자가 장치에 최소 수준의 활성 위협(**높음**, **중간** 또는 **낮음**)이 있다면 장치가 규정을 준수하지 않는 것으로 식별하도록 정책 규칙을 설정할 수 있습니다. Lookout Mobile Threat Defense의 위협 분류 정책을 통해 장치의 규정 준수 여부가 Intune에서 바로 측정됩니다.
+> 위험 수준은 Mobile Threat Defense의 중요한 측면으로, 런타임 시 이러한 위험 수준에 따라 Intune 통합에서 디바이스 규정 준수를 측정하기 때문입니다. Intune 관리자가 디바이스에 최소 수준의 활성 위협(**높음**, **중간** 또는 **낮음**)이 있다면 디바이스가 규정을 준수하지 않는 것으로 식별하도록 정책 규칙을 설정할 수 있습니다. Lookout Mobile Threat Defense의 위협 분류 정책을 통해 디바이스의 규정 준수 여부가 Intune에서 바로 측정됩니다.
 
 ## <a name="watching-enrollment"></a>등록 감시
-설치가 완료되면 Lookout Mobile Threat Defense에서 지정한 등록 그룹에 해당하는 장치를 Azure AD에 폴링하기 시작합니다.  장치 모듈에서 등록된 장치에 대한 정보를 찾을 수 있습니다.  장치의 초기 상태는 보류 중으로 표시됩니다.  장치에서 Lookout for Work 앱을 설치하고 열고 활성화하면 장치 상태가 변경됩니다.  Lookout for Work 앱을 장치에 푸시하는 방법에 대한 자세한 내용은 [Intune을 사용하여 Lookout for Work 앱 추가](mtd-apps-ios-app-configuration-policy-add-assign.md)를 참조하세요.
+설치가 완료되면 Lookout Mobile Threat Defense에서 지정한 등록 그룹에 해당하는 디바이스를 Azure AD에 폴링하기 시작합니다.  등록된 디바이스에 대한 정보는 디바이스 모듈에서 찾을 수 있습니다.  디바이스의 초기 상태는 보류 중으로 표시됩니다.  디바이스에서 Lookout for Work 앱을 설치하고 열고 활성화하면 디바이스 상태가 변경됩니다.  Lookout for Work 앱을 디바이스에 푸시하는 방법에 대한 자세한 내용은 [Intune을 사용하여 Lookout for Work 앱 추가](mtd-apps-ios-app-configuration-policy-add-assign.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
