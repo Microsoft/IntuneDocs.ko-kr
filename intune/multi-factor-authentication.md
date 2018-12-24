@@ -26,9 +26,9 @@ ms.locfileid: "52179714"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune은 장치 등록시 Azure AD(Active Directory) MFA(다단계 인증)를 사용하여 회사 리소스를 보호하는 데 도움을 줄 수 있습니다.
+Intune은 장치 등록 시 Azure AD(Active Directory) MFA(다단계 인증)를 사용하여 회사 리소스를 보호하는 데 도움을 줄 수 있습니다.
 
-MFA는 다음과 같은 검증 방법 중에 두 가지 이상 요구하는 방식으로 작동합니다.
+MFA는 다음과 같은 검증 방법 중 두 가지 이상을 요구하는 방식으로 작동합니다.
 
 - 사용자가 알고 있는 항목(대개 암호 또는 PIN)
 - 사용자가 가지고 있는 항목(휴대폰처럼 쉽게 복제할 수 없으며 신뢰할 수 있는 장치)
@@ -36,7 +36,7 @@ MFA는 다음과 같은 검증 방법 중에 두 가지 이상 요구하는 방�
 
 MFA는 iOS, Android, Windows 8.1 이상, Windows Phone 8.1 또는 Windows 10 Mobile 이상의 장치에서 지원됩니다.
 
-MFA를 사용하도록 설정하려면 최종 사용자가 장치를 등록하기 위해 두 가지 형식의 자격 증명을 제공해야 합니다.
+MFA를 사용하도록 설정하면 최종 사용자가 장치를 등록하기 위해 두 가지 형식의 자격 증명을 제공해야 합니다.
 
 ## <a name="configure-intune-to-require-multi-factor-authentication-at-device-enrollment"></a>장치 등록 단계에서 다단계 인증을 요구하도록 Intune 구성
 
