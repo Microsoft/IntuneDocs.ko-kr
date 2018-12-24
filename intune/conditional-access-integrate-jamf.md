@@ -1,7 +1,7 @@
 ---
 title: 준수를 위해 Microsoft Intune과 Jamf Pro 통합
 titlesuffix: ''
-description: 보안 Jamf 관리 장치를 도우려면 Azure Active Directory의 조건부 액세스와 함께 Microsoft Intune 준수 정책을 사용합니다.
+description: 보안 Jamf 관리 디바이스를 도우려면 Azure Active Directory의 조건부 액세스와 함께 Microsoft Intune 준수 정책을 사용합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -27,7 +27,7 @@ ms.locfileid: "52185018"
 
 적용 대상: Azure Portal의 Intune
 
-조직에서 [Jamf Pro](https://www.jamf.com)를 사용하여 최종 사용자의 Mac를 관리하는 경우 Azure Active Directory 조건부 액세스 권한을 가진 Microsoft Intune 준수 정책을 사용하여 조직의 장치가 규정을 준수하도록 합니다.
+조직에서 [Jamf Pro](https://www.jamf.com)를 사용하여 최종 사용자의 Mac를 관리하는 경우 Azure Active Directory 조건부 액세스 권한을 가진 Microsoft Intune 준수 정책을 사용하여 조직의 디바이스가 규정을 준수하도록 합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -35,7 +35,7 @@ Jamf Pro를 사용하여 조건부 액세스를 구성하려면 다음이 필요
 
 - Jamf Pro 10.1.0 이상
 - [macOS용 회사 포털 앱](https://aka.ms/macoscompanyportal)
-- OS X 10.11 Yosemite 이상의 macOS 장치
+- OS X 10.11 Yosemite 이상의 macOS 디바이스
 
 ## <a name="connecting-intune-to-jamf-pro"></a>Intune을 Jamf Pro에 연결
 
@@ -72,7 +72,7 @@ Jamf Pro를 사용하여 조건부 액세스를 구성하려면 다음이 필요
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune을 Jamf Pro와 통합할 수 있도록 설정
 
-1. Microsoft Azure Portal에서 **Microsoft Intune** > **장치 준수** > **Partner device management**(파트너 장지 관리)를 엽니다.
+1. Microsoft Azure Portal에서 **Microsoft Intune** > **디바이스 준수** > **Partner device management**(파트너 장지 관리)를 엽니다.
 2. 응용 프로그램 ID를 **Jamf Azure Active Directory 앱 ID** 필드에 붙여넣어 Jamf용 준수 커넥터를 사용하도록 설정합니다.
 3. **Save**을 클릭합니다.
 
@@ -83,15 +83,15 @@ Jamf Pro를 사용하여 조건부 액세스를 구성하려면 다음이 필요
 3. 이전 단계에서 저장한 **위치**, **도메인 이름** 및 **응용 프로그램 ID** 및 **응용 프로그램 키**를 포함하여 Azure 테넌트에 대한 필수 정보를 제공합니다.
 4. **Save**을 클릭합니다. Jamf Pro가 설정을 테스트하고 성공을 확인합니다.
 
-## <a name="set-up-compliance-policies-and-register-devices"></a>준수 정책 설정 및 장치 등록
+## <a name="set-up-compliance-policies-and-register-devices"></a>준수 정책 설정 및 디바이스 등록
 
-Intune과 Jamf 사이의 통합을 구성한 후에는 [준수 정책을 Jamf에서 관리되는 장치에 적용](conditional-access-assign-jamf.md)해야 합니다.
+Intune과 Jamf 사이의 통합을 구성한 후에는 [준수 정책을 Jamf에서 관리되는 디바이스에 적용](conditional-access-assign-jamf.md)해야 합니다.
 
 ## <a name="information-shared-from-jamf-pro-to-intune"></a>Jamf Pro에서 Intune으로 공유된 정보
 
-Jamf Pro는 관리되는 macOS 장치에 대한 인벤토리 정보를 캡처합니다. Jamf Pro는 다음 정보를 Intune에 보고합니다.
+Jamf Pro는 관리되는 macOS 디바이스에 대한 인벤토리 정보를 캡처합니다. Jamf Pro는 다음 정보를 Intune에 보고합니다.
 
-* 장치 Azure AD ID
+* 디바이스 Azure AD ID
 * JAMF 인벤토리 상태(최근 24시간 이내에 Jamf Pro를 통해 확인된 컴퓨터의 인벤토리 상태)
 * OS 버전
 * 사용자 Azure AD ID

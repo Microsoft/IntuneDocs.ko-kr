@@ -1,7 +1,7 @@
 ---
 title: 사용자 관리 시작
 titlesuffix: Microsoft Intune
-description: 모바일 장치에서 회사 리소스에 액세스할 수 있도록 라이선스 할당하고 Intune에 사용자를 추가합니다.
+description: 모바일 디바이스에서 회사 리소스에 액세스할 수 있도록 라이선스 할당하고 Intune에 사용자를 추가합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -36,12 +36,12 @@ ms.locfileid: "52182502"
     - 초기 기본 도메인 이름은 'contoso.onmicrosoft.com' 도메인 이름 또는
     - 확인된 비 연합 도메인 이름(예: “contoso.com.”)
 5. **그룹**에서 사용자를 추가할 [그룹](get-started-groups.md)을 선택합니다.
-6. 테스트 장치에 로그인하는 데 사용할 수 있도록 자동으로 생성된 사용자 암호를 저장합니다. 기억할 수 있는 일반적인 암호로 변경할 수 있도록 이 암호를 사용자에게 제공해야 합니다.
+6. 테스트 디바이스에 로그인하는 데 사용할 수 있도록 자동으로 생성된 사용자 암호를 저장합니다. 기억할 수 있는 일반적인 암호로 변경할 수 있도록 이 암호를 사용자에게 제공해야 합니다.
 7. **사용자** 창에서 **만들기**를 선택합니다.
 
 ## <a name="assigning-licenses-to-users"></a>사용자에게 라이선스 할당
 
-사용자를 만든 후 [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)을 사용하여 해당 사용자에게 Intune 라이선스를 할당해야 합니다. 라이선스를 할당하지 않으면 해당 장치를 관리에 등록할 수 없습니다.
+사용자를 만든 후 [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)을 사용하여 해당 사용자에게 Intune 라이선스를 할당해야 합니다. 라이선스를 할당하지 않으면 해당 디바이스를 관리에 등록할 수 없습니다.
 
 1. Intune에 로그인하는 데 사용한 것과 동일한 자격 증명으로 [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)에 로그인합니다.
 2. **사용자** > **활성 사용자**를 선택한 다음 이전에 만든 사용자를 선택합니다.

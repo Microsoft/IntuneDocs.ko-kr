@@ -54,11 +54,11 @@ Windows 10 이상 디바이스에서는 contoso.com과 같은 도메인 확인�
 
 [Windows 10 VPN 설정](vpn-settings-windows-10.md)에서는 현재 설정 목록을 설명합니다. 
 
-### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>S/MIME를 사용하여 사용자의 여러 장치를 암호화 및 서명 <!-- 1333642 eeready -->
-가져온 새 인증서 프로필을 사용하는 S/MIME 메일 암호화가 지원됩니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼 선택 > **PKCS 가져온 인증서** 프로필 유형). Intune에서 PFX 형식의 인증서를 가져올 수 있습니다. 그런 다음, Intune은 단일 사용자에 의해 등록된 여러 장치에 이러한 동일한 인증서를 제공할 수 있습니다. 다음도 포함되어 있습니다.
+### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>S/MIME를 사용하여 사용자의 여러 디바이스를 암호화 및 서명 <!-- 1333642 eeready -->
+가져온 새 인증서 프로필을 사용하는 S/MIME 메일 암호화가 지원됩니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼 선택 > **PKCS 가져온 인증서** 프로필 유형). Intune에서 PFX 형식의 인증서를 가져올 수 있습니다. 그런 다음, Intune은 단일 사용자에 의해 등록된 여러 디바이스에 이러한 동일한 인증서를 제공할 수 있습니다. 다음도 포함되어 있습니다.
 
 - 네이티브 iOS 이메일 프로필은 PFX 형식의 가져온 인증서를 사용하는 S/MIME 암호화 활성화를 지원합니다.
-- Windows Phone 10 장치의 네이티브 메일 앱은 S/MIME 인증서를 자동으로 사용합니다.
+- Windows Phone 10 디바이스의 네이티브 메일 앱은 S/MIME 인증서를 자동으로 사용합니다.
 - 여러 플랫폼에서 개인 인증서를 제공할 수 있습니다. 하지만 모든 이메일 앱이 S/MIME를 지원하지는 않습니다.
 - 다른 플랫폼에서 S/MIME를 활성화하도록 메일 앱을 수동으로 구성해야 할 수 있습니다.  
 - S/MIME 암호화를 지원하는 이메일 앱은 해당 게시자의 인증서 저장소에서 읽기와 같은 MDM에서 지원할 수 없는 방식으로 S/MIME 이메일 암호화에 대한 인증서 가져오기를 처리할 수 있습니다.
@@ -139,7 +139,7 @@ iOS 디바이스용 구성 프로필을 만들 경우 **공유 디바이스 구�
 현재 설정을 보려면 [Android 엔터프라이즈 디바이스 제한 사항 설정](device-restrictions-android-for-work.md)으로 이동합니다.
 
 ### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android 엔터프라이즈 디바이스 소유자 디바이스는 Always On VPN 연결을 사용할 수 있음 <!-- 3202194 -->
-이 업데이트에서는 Android 엔터프라이즈 디바이스 소유자 디바이스에서 Always on VPN 연결을 사용할 수 있습니다. 상시 VPN 연결은 계속 연결된 상태로 유지되거나 사용자가 장치를 잠금 해제한 경우, 장치가 다시 시작된 경우 또는 무선 네트워크가 변경된 경우 바로 다시 연결됩니다. 또한 VPN 연결이 활성화될 때까지 모든 네트워크 트래픽을 차단하는 “잠금” 모드로 연결 상태를 전환할 수도 있습니다.
+이 업데이트에서는 Android 엔터프라이즈 디바이스 소유자 디바이스에서 Always on VPN 연결을 사용할 수 있습니다. 상시 VPN 연결은 계속 연결된 상태로 유지되거나 사용자가 디바이스를 잠금 해제한 경우, 디바이스가 다시 시작된 경우 또는 무선 네트워크가 변경된 경우 바로 다시 연결됩니다. 또한 VPN 연결이 활성화될 때까지 모든 네트워크 트래픽을 차단하는 “잠금” 모드로 연결 상태를 전환할 수도 있습니다.
 **디바이스 구성** > **프로필** > **프로필 만들기** > **Android 엔터프라이즈**(플랫폼) > **디바이스 제한 사항**(디바이스 소유자만) > **연결** 설정에서 Always-on VPN을 사용하도록 설정할 수 있습니다. 현재 설정을 보려면 [Android 엔터프라이즈 디바이스 제한 사항 설정](device-restrictions-android-for-work.md)으로 이동합니다.
 
 ### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Windows 10 디바이스의 작업 관리자에서 프로세스를 종료하는 새로운 설정 <!-- 3285177 --> 
@@ -156,7 +156,7 @@ Intune의 관리 템플릿(**디바이스 구성** > **관리 템플릿**)은 �
 <!-- 1810 start -->
 
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Microsoft 권장 설정을 보안 기준과 함께 사용<!-- 2055484 -->
-Intune은 Windows Defender ATP 및 Office 365 ATP를 비롯하여 보안에 중점을 둔 다른 서비스와 통합됩니다. 고객은 Microsoft 365 서비스에서 공통 전략 및 조화로운 종단 간 보안 워크플로 집합을 요청하고 있습니다. 우리의 목표는 보안 작업 및 공통 관리자 작업을 연결하는 솔루션을 빌드하기 위한 전략을 조정하는 것입니다. Intune에서는 Microsoft 권장 “보안 기준” 집합(**Intune** > **보안 기준**)을 게시하여 이 목표를 달성하고자 합니다.  관리자는 이러한 기준에서 직접 보안 정책을 만든 후 이를 사용자에게 배포할 수 있습니다. 또한 조직의 요구 사항을 충족하도록 최선의 권장 사항을 사용자 지정할 수도 있습니다. Intune은 장치가 이러한 기준을 계속 준수하는지 확인하고 준수하지 않는 장치나 사용자에 대해 관리자에게 알립니다.
+Intune은 Windows Defender ATP 및 Office 365 ATP를 비롯하여 보안에 중점을 둔 다른 서비스와 통합됩니다. 고객은 Microsoft 365 서비스에서 공통 전략 및 조화로운 종단 간 보안 워크플로 집합을 요청하고 있습니다. 우리의 목표는 보안 작업 및 공통 관리자 작업을 연결하는 솔루션을 빌드하기 위한 전략을 조정하는 것입니다. Intune에서는 Microsoft 권장 “보안 기준” 집합(**Intune** > **보안 기준**)을 게시하여 이 목표를 달성하고자 합니다.  관리자는 이러한 기준에서 직접 보안 정책을 만든 후 이를 사용자에게 배포할 수 있습니다. 또한 조직의 요구 사항을 충족하도록 최선의 권장 사항을 사용자 지정할 수도 있습니다. Intune은 디바이스가 이러한 기준을 계속 준수하는지 확인하고 준수하지 않는 디바이스나 사용자에 대해 관리자에게 알립니다.
 
 ### <a name="scope-tags-for-apps---1081941---"></a>앱의 범위 태그 <!--1081941 -->
 범위 태그를 만들어 Intune 리소스에 대한 액세스를 제한할 수 있습니다. 역할 할당에 범위 태그를 추가한 다음, 범위 태그를 구성 프로필에 추가합니다. 역할은 일치하는 범위 태그가 있거나 범위 태그가 없는 구성 프로필이 있는 리소스에만 액세스할 수 있습니다.
@@ -173,21 +173,21 @@ Intune의 테넌트 상태 페이지는 단일 위치에서 테넌트 상태 정
 
 
 ### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>사용자 등록 없이 배포된 WIP 정책 <!-- 1434452 -->
-WIP(Windows Information Protection) 정책은 MDM 사용자가 Windows 10 장치를 등록하지 않고 배포할 수 있습니다. 이 구성을 사용하면 회사는 WIP 구성을 기반으로 회사 문서를 보호할 수 있는 한편 사용자는 자신의 Windows 장치를 관리할 수 있습니다. 문서가 WIP 정책으로 보호되면 Intune 관리자는 보호되는 데이터를 선택적으로 초기화할 수 있습니다. 사용자 및 장치를 선택하고 초기화 요청을 보내면 WIP 정책을 통해 보호된 모든 데이터를 사용할 수 없게 됩니다. Azure Portal의 Intune에서 **모바일 앱** > **앱 선택적 초기화**를 선택합니다.
+WIP(Windows Information Protection) 정책은 MDM 사용자가 Windows 10 디바이스를 등록하지 않고 배포할 수 있습니다. 이 구성을 사용하면 회사는 WIP 구성을 기반으로 회사 문서를 보호할 수 있는 한편 사용자는 자신의 Windows 디바이스를 관리할 수 있습니다. 문서가 WIP 정책으로 보호되면 Intune 관리자는 보호되는 데이터를 선택적으로 초기화할 수 있습니다. 사용자 및 디바이스를 선택하고 초기화 요청을 보내면 WIP 정책을 통해 보호된 모든 데이터를 사용할 수 없게 됩니다. Azure Portal의 Intune에서 **모바일 앱** > **앱 선택적 초기화**를 선택합니다.
 
 
 <!-- 1809 start -->  
 
 ### <a name="app-protection-policy-app-settings-for-web-data----2662995---"></a>웹 데이터에 대한 APP(앱 보호 정책) 설정 <!-- 2662995 -->
-Android 및 iOS 장치의 웹 콘텐츠에 대한 APP 정책 설정은 iOS 유니버설 링크 및 Android 앱 링크를 통한 데이터 전송을 비롯하여 http 및 https 웹 링크를 모두 더 잘 처리하기 위해 업데이트됩니다.  
+Android 및 iOS 디바이스의 웹 콘텐츠에 대한 APP 정책 설정은 iOS 유니버설 링크 및 Android 앱 링크를 통한 데이터 전송을 비롯하여 http 및 https 웹 링크를 모두 더 잘 처리하기 위해 업데이트됩니다.  
 
 <!-- 1808 start -->
 
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>다른 MDM에서 사용하는 Apple VPP 토큰 <!-- 1488946 -->
 Intune과 다른 MDM에서 모두 Apple VPP(대량 구매 프로그램) 토큰을 사용하고 있으면 Intune에서 세부 정보를 검색하고 표시합니다.
 
-### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>장치 준수 대시보드에 사용 중지된 장치가 있음 <!-- 1981119 -->
-향후 업데이트에서는 사용 중지된 장치가 장치 준수 대시보드에서 제거됩니다. 이에 따라 규정 준수 번호도 변경됩니다.
+### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>디바이스 준수 대시보드에 사용 중지된 디바이스가 있음 <!-- 1981119 -->
+향후 업데이트에서는 사용 중지된 디바이스가 디바이스 준수 대시보드에서 제거됩니다. 이에 따라 규정 준수 번호도 변경됩니다.
 
 
 ### <a name="change-in-the-update-process-for-on-premises-connectors----2277554---"></a>온-프레미스 커넥터에 대한 업데이트 프로세스 변경 <!-- 2277554 -->
@@ -196,9 +196,9 @@ Intune과 다른 MDM에서 모두 Apple VPP(대량 구매 프로그램) 토큰�
 <!-- 1807 start -->
 
 ### <a name="check-for-configuration-manager-compliance----2192052---"></a>Configuration Manager 준수 확인 <!-- 2192052 -->
-향후 업데이트에는 새 System Center Configuration Manager 준수 설정이 포함됩니다(**장치 준수** > **정책** > **정책 만들기** > **Windows 10**). Configuration Manager는 Intune 준수에 신호를 보냅니다. Intune 설정을 사용하여 모든 Configuration Manager 신호에 “준수”를 반환하도록 요구할 수 있습니다.
+향후 업데이트에는 새 System Center Configuration Manager 준수 설정이 포함됩니다(**디바이스 준수** > **정책** > **정책 만들기** > **Windows 10**). Configuration Manager는 Intune 준수에 신호를 보냅니다. Intune 설정을 사용하여 모든 Configuration Manager 신호에 “준수”를 반환하도록 요구할 수 있습니다.
 
-예를 들어 모든 소프트웨어 업데이트를 장치에 설치해야 합니다. Configuration Manager에서 이 요구 사항의 상태는 “설치됨”입니다. 장치의 프로그램이 알 수 없는 상태에 있는 경우 장치는 Intune에서 비준수가 됩니다.
+예를 들어 모든 소프트웨어 업데이트를 디바이스에 설치해야 합니다. Configuration Manager에서 이 요구 사항의 상태는 “설치됨”입니다. 디바이스의 프로그램이 알 수 없는 상태에 있는 경우 디바이스는 Intune에서 비준수가 됩니다.
 
 적용 대상: Windows 10 이상
 

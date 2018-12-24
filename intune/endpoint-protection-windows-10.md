@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure의 Windows 10에서 엔드포인트 보호 추가 | Microsoft Docs
-description: Windows 10 장치에서 엔드포인트 보호 설정을 사용하거나 추가하여 Windows Defender 기능을 사용하도록 설정합니다. 여기에는 Application Guard, 방화벽, SmartScreen, 암호화 및 bitlocker, Exploit Guard, Application Control, Security Center 및 Microsoft Intune의 로컬 장치에 대한 보안이 포함됩니다.
+description: Windows 10 디바이스에서 엔드포인트 보호 설정을 사용하거나 추가하여 Windows Defender 기능을 사용하도록 설정합니다. 여기에는 Application Guard, 방화벽, SmartScreen, 암호화 및 bitlocker, Exploit Guard, Application Control, Security Center 및 Microsoft Intune의 로컬 디바이스에 대한 보안이 포함됩니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -26,9 +26,9 @@ ms.locfileid: "52189999"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Endpoint Protection 프로필을 사용하면 BitLocker 및 Windows Defender와 같은 Windows 10 장치의 보안 기능을 제어할 수 있습니다.
+Endpoint Protection 프로필을 사용하면 BitLocker 및 Windows Defender와 같은 Windows 10 디바이스의 보안 기능을 제어할 수 있습니다.
 
-이 문서의 정보를 사용하여 Endpoint Protection 프로필을 만듭니다. Windows Defender 바이러스 백신을 구성하려면 [Windows 10 장치 차단](device-restrictions-windows-10.md#windows-defender-antivirus)을 참조하세요. 
+이 문서의 정보를 사용하여 Endpoint Protection 프로필을 만듭니다. Windows Defender 바이러스 백신을 구성하려면 [Windows 10 디바이스 차단](device-restrictions-windows-10.md#windows-defender-antivirus)을 참조하세요. 
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard
 
@@ -37,9 +37,9 @@ Endpoint Protection 프로필을 사용하면 BitLocker 및 Windows Defender와 
 - Enterprise 
 - Professional
 
-Microsoft Edge를 사용하는 동안 Windows Defender Application Guard는 조직에서 신뢰하지 않는 사이트로부터 환경을 보호합니다. 사용자가 격리된 네트워크 경계에 나열되지 않은 사이트를 방문하면 Hyper-V 가상 검색 세션에서 해당 사이트가 열립니다. 신뢰할 수 있는 사이트는 장치 구성에서 구성할 수 있는 네트워크 경계로 정의됩니다.
+Microsoft Edge를 사용하는 동안 Windows Defender Application Guard는 조직에서 신뢰하지 않는 사이트로부터 환경을 보호합니다. 사용자가 격리된 네트워크 경계에 나열되지 않은 사이트를 방문하면 Hyper-V 가상 검색 세션에서 해당 사이트가 열립니다. 신뢰할 수 있는 사이트는 디바이스 구성에서 구성할 수 있는 네트워크 경계로 정의됩니다.
 
-Application Guard는 Windows 10(64비트) 장치에서만 사용할 수 있습니다. 이 프로필을 사용하면 Win32 구성 요소가 설치되어 Application Guard를 활성화할 수 있습니다.
+Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 있습니다. 이 프로필을 사용하면 Win32 구성 요소가 설치되어 Application Guard를 활성화할 수 있습니다.
 
 - **Application Guard**: 이 기능을 작동하기 위해 **사용**으로 설정하면 가상화된 Hyper-V 검색 컨테이너에서 승인되지 않은 사이트가 열립니다. **구성되지 않음**(기본값)으로 설정하면 모든 사이트(승인 및 비승인)가 장치에서 열립니다.
 - **클립보드 동작**: 로컬 PC와 Application Guard 가상 브라우저 간에 허용되는 복사/붙여넣기 작업을 선택합니다.
@@ -132,8 +132,8 @@ Microsoft Edge가 설치된 다음 Windows 10 버전에서 지원됩니다.
   - 다른 공급자의 암호화를 사용하도록 설정되지 않았는지 확인합니다.
   - Bitlocker 드라이브 암호화를 해제한 다음, Bitlocker를 다시 설정해야 합니다.
     
-    다른 암호화 방법이 활성화된 상태에서 Windows 암호화를 켜면 장치가 불안정해질 수 있습니다. 
-- **저장소 카드 암호화(모바일만 해당)**: **필수**로 설정하면 장치에서 사용하는 이동식 저장소 카드를 암호화합니다. **구성되지 않음**(기본값)으로 설정하면 저장소 카드 암호화가 필요하지 않으며 사용자에게 이 암호화를 설정하도록 요구하지 않습니다. 이 설정은 Windows 10 모바일 장치에만 적용됩니다.
+    다른 암호화 방법이 활성화된 상태에서 Windows 암호화를 켜면 디바이스가 불안정해질 수 있습니다. 
+- **저장소 카드 암호화(모바일만 해당)**: **필수**로 설정하면 장치에서 사용하는 이동식 저장소 카드를 암호화합니다. **구성되지 않음**(기본값)으로 설정하면 저장소 카드 암호화가 필요하지 않으며 사용자에게 이 암호화를 설정하도록 요구하지 않습니다. 이 설정은 Windows 10 모바일 디바이스에만 적용됩니다.
 
 ### <a name="bitlocker-base-settings"></a>BitLocker 기본 설정
 
@@ -150,7 +150,7 @@ Microsoft Edge가 설치된 다음 Windows 10 버전에서 지원됩니다.
 - **암호화 방법 구성**: 이 설정을 **사용**으로 설정하면 운영 체제, 데이터 및 이동식 드라이브에 대한 암호화 알고리즘을 구성할 수 있습니다. **구성되지 않음**(기본값)으로 설정하면 BitLocker에서 XTS-AES 128 비트를 기본 암호화 방법으로 사용하거나 설치 스크립트에서 지정된 암호화 방법을 사용합니다.
   - **운영 체제 드라이브에 대한 암호화**: 운영 체제 드라이브에 대한 암호화 방법을 선택합니다. XTS-AES 알고리즘을 사용하는 것이 좋습니다.
   - **고정 데이터 드라이브에 대한 암호화**: 고정(기본 제공) 데이터 드라이브에 대한 암호화 방법을 선택합니다. XTS-AES 알고리즘을 사용하는 것이 좋습니다.
-  - **이동식 데이터 드라이브에 대한 암호화**: 이동식 데이터 드라이브에 대한 암호화 방법을 선택합니다. Windows 10을 실행하지 않는 장치에서 이동식 드라이브를 사용하는 경우 AES-CBC 알고리즘을 사용하는 것이 좋습니다.
+  - **이동식 데이터 드라이브에 대한 암호화**: 이동식 데이터 드라이브에 대한 암호화 방법을 선택합니다. Windows 10을 실행하지 않는 디바이스에서 이동식 드라이브를 사용하는 경우 AES-CBC 알고리즘을 사용하는 것이 좋습니다.
 
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker OS 드라이브 설정
 지원되는 Windows 10 버전은 다음과 같습니다.
@@ -318,7 +318,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 **감사만** 모드에서 실행되는 경우 응용 프로그램이 차단되지 않습니다. **감사 전용** 모드는 로컬 클라이언트 로그에 있는 모든 이벤트를 기록합니다.
 
-사용하도록 설정되면 응용 프로그램 제어는 **적용**에서 **감사 전용**으로 모드를 변경할 때에만 해제될 수 있습니다. 모드를 **적용**에서 **구성하지 않음**으로 변경하면 응용 프로그램 제어가 할당된 장치에 계속 적용됩니다.
+사용하도록 설정되면 응용 프로그램 제어는 **적용**에서 **감사 전용**으로 모드를 변경할 때에만 해제될 수 있습니다. 모드를 **적용**에서 **구성하지 않음**으로 변경하면 응용 프로그램 제어가 할당된 디바이스에 계속 적용됩니다.
 
 ## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard
 
@@ -337,12 +337,12 @@ Windows Defender Credential Guard는 자격 증명 도난 공격을 방어합니
     > [!NOTE]
     > 이 설정을 사용하고 나중에 Credential Guard를 사용하지 않으려는 경우 그룹 정책을 **사용 안 함**으로 설정해야 합니다. 그리고 각 컴퓨터에서 UEFI 구성 정보를 물리적으로 지웁니다. UEFI 구성이 지속되는 한, Credential Guard는 사용하도록 설정됩니다.
 
-- **UEFI 잠금 없이 사용**: 그룹 정책을 사용하여 Credential Guard를 원격으로 사용할 수 없도록 합니다. 이 설정을 사용하는 장치에서는 Windows 10 버전 1511 이상을 실행 중이어야 합니다.
+- **UEFI 잠금 없이 사용**: 그룹 정책을 사용하여 Credential Guard를 원격으로 사용할 수 없도록 합니다. 이 설정을 사용하는 디바이스에서는 Windows 10 버전 1511 이상을 실행 중이어야 합니다.
 
 Credential Guard를 사용하도록 설정할 경우 다음 필수 기능도 사용하도록 설정됩니다.
 
 - VBS(**가상화 기반 보안**): 다음 재부팅 중에 켜집니다. 가상화 기반 보안은 Windows 하이퍼바이저를 사용하여 보안 서비스에 대한 지원을 제공합니다.
-- **보안 부팅 및 DMA(직접 메모리 액세스)**: 보안 부팅 및 DMA(직접 메모리 액세스) 보호를 사용하여 VBS를 켭니다. DMA 보호는 하드웨어 지원이 필요하며 올바르게 구성된 장치에서만 작동합니다.
+- **보안 부팅 및 DMA(직접 메모리 액세스)**: 보안 부팅 및 DMA(직접 메모리 액세스) 보호를 사용하여 VBS를 켭니다. DMA 보호는 하드웨어 지원이 필요하며 올바르게 구성된 디바이스에서만 작동합니다.
 
 ## <a name="windows-defender-security-center"></a>Windows Defender 보안 센터
 
@@ -377,7 +377,7 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
 - **IT 부서 이메일 주소**
 - **IT 지원 웹 사이트 URL**
 
-## <a name="local-device-security-options"></a>로컬 장치 보안 옵션
+## <a name="local-device-security-options"></a>로컬 디바이스 보안 옵션
 
 지원되는 Windows 10 버전은 다음과 같습니다.
  
@@ -387,7 +387,7 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
 - Enterprise
 - 교육
 
-이러한 옵션을 사용하여 Windows 10 장치에서 로컬 보안 설정을 구성합니다.
+이러한 옵션을 사용하여 Windows 10 디바이스에서 로컬 보안 설정을 구성합니다.
 
 ### <a name="accounts"></a>계정
 
@@ -404,7 +404,7 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
 - **게스트 계정**: **사용**으로 설정하면 로컬 손님 계정을 허용합니다. **구성되지 않음**(기본값)으로 설정하면 로컬 게스트 계정을 비활성화합니다.
 - **게스트 계정 이름 바꾸기**: 게스트 계정의 SID(보안 ID)와 연결할 다른 계정 이름을 정의합니다.
 
-### <a name="devices"></a>장치
+### <a name="devices"></a>디바이스
 
 - **로그온 없이 장치 도킹 해제**: **차단**으로 설정하면 사용자가 도킹된 휴대용 장치의 물리적 꺼내기 단추를 눌러 장치를 안전하게 도킹 해제할 수 있습니다. **구성되지 않음**(기본값)으로 설정하면 사용자가 장치에 로그인하여 장치를 도킹 해제할 수 있는 권한을 부여받아야 합니다.
 - **공유 프린터에 대한 프린터 드라이버 설치**: **사용**으로 설정하면 모든 사용자가 공유 프린터에 연결하는 일환으로 프린터 드라이버를 설치할 수 있습니다. **구성되지 않음**(기본값)으로 설정하면 관리자만 공유 프린터에 연결하는 일환으로 프린터 드라이버를 설치할 수 있습니다.
@@ -452,7 +452,7 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
 ### <a name="recovery-console-and-shutdown"></a>복구 콘솔 및 종료
 
 - **종료할 때 가상 메모리 페이지 파일 지우기**: **사용**으로 설정하면 장치의 전원이 꺼질 때 가상 메모리 페이지 파일을 지웁니다. **구성되지 않음**(기본값)으로 설정하면 가상 메모리를 지우지 않습니다.
-- **로그온 없이 종료**: **차단**으로 설정하면 Windows 로그온 화면에서 종료 옵션이 숨겨집니다. 사용자가 장치에 로그인한 후에 종료해야 합니다. **구성되지 않음**(기본값)으로 설정하면 사용자가 Windows 로그온 화면에서 장치를 종료할 수 있습니다.
+- **로그온 없이 종료**: **차단**으로 설정하면 Windows 로그온 화면에서 종료 옵션이 숨겨집니다. 사용자가 디바이스에 로그인한 후에 종료해야 합니다. **구성되지 않음**(기본값)으로 설정하면 사용자가 Windows 로그온 화면에서 장치를 종료할 수 있습니다.
 
 ### <a name="user-account-control"></a>사용자 계정 컨트롤
 
@@ -494,4 +494,4 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
 
 ## <a name="next-steps"></a>다음 단계
 
-이 프로필을 그룹에 할당하려면 [장치 프로필을 할당하는 방법](device-profile-assign.md)을 참조하세요.
+이 프로필을 그룹에 할당하려면 [디바이스 프로필을 할당하는 방법](device-profile-assign.md)을 참조하세요.

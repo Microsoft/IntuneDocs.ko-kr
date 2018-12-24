@@ -1,5 +1,5 @@
 ---
-title: 내 iOS 장치에서 일련 번호를 어떻게 찾을 수 있나요? | Microsoft 문서
+title: 내 iOS 디바이스에서 일련 번호를 어떻게 찾을 수 있나요? | Microsoft 문서
 description: ''
 keywords: ''
 author: lenewsad
@@ -24,9 +24,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43149515"
 ---
-# <a name="how-do-i-find-the-serial-number-on-my-device"></a>장치에 일련 번호를 찾으려면 어떻게 하나요?
+# <a name="how-do-i-find-the-serial-number-on-my-device"></a>디바이스에 일련 번호를 찾으려면 어떻게 하나요?
 
-장치의 일련 번호는 해당 장치를 고유하게 식별하며, 기존 장치를 새 장치로 교체하는 등 회사 지원팀의 특정 작업을 돕습니다. 일련 번호를 찾으려면
+디바이스의 일련 번호는 해당 디바이스를 고유하게 식별하며, 기존 디바이스를 새 디바이스로 교체하는 등 회사 지원팀의 특정 작업을 돕습니다. 일련 번호를 찾으려면
 
 1. __홈__ 화면으로 이동합니다.
 2. __설정__ 앱을 탭한 다음 __일반__을 탭합니다.

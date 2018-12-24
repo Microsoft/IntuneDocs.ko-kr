@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune-Azure를 사용한 PKCS 인증서 사용 | Micrososft Docs
-description: 루트 인증서 내보내기 단계, 인증서 템플릿 구성 단계, Microsoft Intune Certificate Connector(NDES) 다운로드 및 설치 단계, 장치를 구성 프로필 만들기 단계, Azure 및 인증 기관에서 PKCS 인증서 프로필 만들기 단계를 포함해 Microsoft Intune을 사용하여 공개 키 암호화 표준 인증서를 추가하거나 생성합니다.
+description: 루트 인증서 내보내기 단계, 인증서 템플릿 구성 단계, Microsoft Intune Certificate Connector(NDES) 다운로드 및 설치 단계, 디바이스를 구성 프로필 만들기 단계, Azure 및 인증 기관에서 PKCS 인증서 프로필 만들기 단계를 포함해 Microsoft Intune을 사용하여 공개 키 암호화 표준 인증서를 추가하거나 생성합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -65,7 +65,7 @@ Intune에서 PKCS 인증서를 사용하려면 다음 인프라가 있어야 합
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>엔터프라이즈 CA에서 루트 인증서 내보내기
 
-VPN, WiFi 또는 기타 리소스를 통해 인증하려면 각 장치에 루트 또는 중간 CA 인증서가 필요합니다. 다음 단계에서는 엔터프라이즈 CA에서 필요한 인증서를 가져오는 방법을 설명합니다.
+VPN, WiFi 또는 기타 리소스를 통해 인증하려면 각 디바이스에 루트 또는 중간 CA 인증서가 필요합니다. 다음 단계에서는 엔터프라이즈 CA에서 필요한 인증서를 가져오는 방법을 설명합니다.
 
 1. 관리 권한이 있는 계정으로 엔터프라이즈 CA에 로그인합니다.
 2. 관리자 권한으로 명령 프롬프트를 엽니다.
@@ -106,7 +106,7 @@ VPN, WiFi 또는 기타 리소스를 통해 인증하려면 각 장치에 루트
 10. **보안**에서 Microsoft Intune Certificate Connector를 설치할 서버의 컴퓨터 계정을 추가합니다. 이 계정에 **읽기** 및 **등록** 권한을 허용합니다.
 11. **적용** > **확인**을 선택하여 인증서 템플릿을 저장합니다. **인증서 템플릿 콘솔**을 닫습니다.
 12. **인증 기관** 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고  >  **새로 만들기** > **발급할 인증서 템플릿**을 선택합니다. 이전 단계에서 만든 템플릿을 선택합니다. **확인**을 선택합니다.
-13. 서버에서 Intune 등록 장치 및 사용자를 대신하여 인증서를 관리하려면 다음 단계를 따릅니다.
+13. 서버에서 Intune 등록 디바이스 및 사용자를 대신하여 인증서를 관리하려면 다음 단계를 따릅니다.
 
     1. 인증 기관을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
     2. 보안 탭에서 커넥터(**Microsoft Intune Certificate Connector** 또는 **Microsoft Intune용 PFX 인증서 커넥터**)를 실행하는 서버의 컴퓨터 계정을 추가합니다. **인증서 발급 및 관리** 및 **인증서 요청** 허용 권한을 컴퓨터 계정에 부여합니다.
@@ -138,7 +138,7 @@ VPN, WiFi 또는 기타 리소스를 통해 인증하려면 각 장치에 루트
 8. Azure Portal(**Intune** > **장치 구성** > **인증 기관**)로 돌아갑니다. 잠시 후에 녹색 확인 표시가 나타나고 **연결 상태**가 **활성화**됩니다. 커넥터 서버가 이제 Intune과 통신할 수 있습니다.
 
 > [!NOTE]
-> TLS 1.2 지원은 Microsoft Intune Certificate Connector에 포함되어 있습니다. 따라서 Microsoft Intune Certificate Connector가 설치된 서버가 TLS 1.2를 지원하는 경우 TLS 1.2가 사용됩니다. 서버가 TLS 1.2를 지원하지 않으면 TLS 1.1이 사용됩니다. 현재 TLS 1.1은 장치와 서버 간 인증에 사용됩니다.
+> TLS 1.2 지원은 Microsoft Intune Certificate Connector에 포함되어 있습니다. 따라서 Microsoft Intune Certificate Connector가 설치된 서버가 TLS 1.2를 지원하는 경우 TLS 1.2가 사용됩니다. 서버가 TLS 1.2를 지원하지 않으면 TLS 1.1이 사용됩니다. 현재 TLS 1.1은 디바이스와 서버 간 인증에 사용됩니다.
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>Microsoft Intune용 PFX 인증서 커넥터
 
@@ -176,7 +176,7 @@ VPN, WiFi 또는 기타 리소스를 통해 인증하려면 각 장치에 루트
    ![ProfileSettings][ProfileSettings]
 
 4. **확인** > **만들기**를 선택하여 프로필을 저장합니다.
-5. 하나 이상의 장치에 새 프로필을 할당하려면 [Microsoft Intune 장치 프로필 할당](device-profile-assign.md)을 참조하세요.
+5. 하나 이상의 디바이스에 새 프로필을 할당하려면 [Microsoft Intune 디바이스 프로필 할당](device-profile-assign.md)을 참조하세요.
 
 ## <a name="create-a-pkcs-certificate-profile"></a>PKCS 인증서 프로필 만들기
 
@@ -200,11 +200,11 @@ VPN, WiFi 또는 기타 리소스를 통해 인증하려면 각 장치에 루트
     - **주체 대체 이름**: 별도로 필요한 경우가 아니면 이 옵션을 **UPN(사용자 계정 이름)** 으로 설정합니다.
 
 4. **확인** > **만들기**를 선택하여 프로필을 저장합니다.
-5. 하나 이상의 장치에 새 프로필을 할당하려면 [Microsoft Intune 장치 프로필 할당](device-profile-assign.md)을 참조하세요.
+5. 하나 이상의 디바이스에 새 프로필을 할당하려면 [Microsoft Intune 디바이스 프로필 할당](device-profile-assign.md)을 참조하세요.
 
 ## <a name="create-a-pkcs-imported-certificate-profile"></a>PKCS가 가져온 인증서 프로필 만들기
 
-특정 사용자에 대해 이전에 발급된 인증서를 모든 인증 기관에서 Intune으로 가져올 수 있습니다. 가져온 인증서는 사용자가 등록하는 각 장치에 설치됩니다. S/MIME 이메일 암호화는 기존 PFX 인증서를 Intune에 가져오는 가장 일반적인 시나리오입니다. 사용자는 이메일을 암호화하기 위한 여러 개의 인증서를 가질 수 있습니다. 이러한 인증서의 개인 키는 이전에 암호화된 이메일을 해독할 수 있도록 모든 사용자의 장치에 있어야 합니다.
+특정 사용자에 대해 이전에 발급된 인증서를 모든 인증 기관에서 Intune으로 가져올 수 있습니다. 가져온 인증서는 사용자가 등록하는 각 디바이스에 설치됩니다. S/MIME 이메일 암호화는 기존 PFX 인증서를 Intune에 가져오는 가장 일반적인 시나리오입니다. 사용자는 이메일을 암호화하기 위한 여러 개의 인증서를 가질 수 있습니다. 이러한 인증서의 개인 키는 이전에 암호화된 이메일을 해독할 수 있도록 모든 사용자의 디바이스에 있어야 합니다.
 
 인증서를 Intune에 가져오려면 [GitHub에서 제공하는 PowerShell cmdlet](https://github.com/Microsoft/Intune-Resource-Access)을 사용하면 됩니다.
 
@@ -225,7 +225,7 @@ Intune으로 인증서를 가져온 후 **PKCS가 가져온 인증서** 프로�
     - **KSP(키 저장소 공급자)**: Windows의 경우 장치에서 키를 저장할 위치를 선택합니다.
 
 4. **확인** > **만들기**를 선택하여 프로필을 저장합니다.
-5. 하나 이상의 장치에 새 프로필을 할당하려면 [Microsoft Intune 장치 프로필 할당](device-profile-assign.md)을 참조하세요.
+5. 하나 이상의 디바이스에 새 프로필을 할당하려면 [Microsoft Intune 디바이스 프로필 할당](device-profile-assign.md)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 [SCEP 인증서를 사용](certificates-scep-configure.md)하거나 [Symantec PKI 관리자 웹 서비스에서 PKCS 인증서를 발급](certificates-symantec-configure.md)합니다.

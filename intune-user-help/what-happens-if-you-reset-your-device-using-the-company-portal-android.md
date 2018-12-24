@@ -1,5 +1,5 @@
 ---
-title: Android 장치를 초기화하면 어떻게 되나요? | Microsoft 문서
+title: Android 디바이스를 초기화하면 어떻게 되나요? | Microsoft 문서
 description: ''
 keywords: ''
 author: lenewsad
@@ -24,11 +24,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43147338"
 ---
-# <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>회사 포털을 사용하여 Android 장치를 초기화하면 어떻게 되나요?
+# <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>회사 포털을 사용하여 Android 디바이스를 초기화하면 어떻게 되나요?
 
-회사 포털을 사용하여 Android 장치를 초기화하면 장치의 모든 앱, 설정 및 개인 데이터가 삭제됩니다. 그 결과 장치가 공장 기본 설정으로 다시 설정됩니다.
+회사 포털을 사용하여 Android 디바이스를 초기화하면 디바이스의 모든 앱, 설정 및 개인 데이터가 삭제됩니다. 그 결과 디바이스가 공장 기본 설정으로 다시 설정됩니다.
 
-삼성 Knox 장치가 있는 경우 회사 포털에서 **장치 제거** 옵션을 선택하여 “선택적 초기화”를 수행할 수 있습니다. 선택적 초기화를 수행하면 다음이 제거됩니다.
+삼성 Knox 디바이스가 있는 경우 회사 포털에서 **디바이스 제거** 옵션을 선택하여 “선택적 초기화”를 수행할 수 있습니다. 선택적 초기화를 수행하면 다음이 제거됩니다.
 
 - 회사 지원팀이 사용자가 사용할 수 있도록 만든 비즈니스 앱
 - 메일, VPN 및 Wi-Fi

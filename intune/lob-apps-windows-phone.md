@@ -27,7 +27,7 @@ ms.locfileid: "52183029"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서의 정보를 사용하여 Microsoft Intune에 Windows Phone LOB(기간 업무) 앱을 추가할 수 있습니다. LOB 앱은 앱 설치 파일에서 Intune에 추가하는 앱입니다. 이러한 종류의 앱은 일반적으로 사내에서 작성됩니다. Intune이 사용자 장치에 LOB 앱을 설치합니다. 
+이 문서의 정보를 사용하여 Microsoft Intune에 Windows Phone LOB(기간 업무) 앱을 추가할 수 있습니다. LOB 앱은 앱 설치 파일에서 Intune에 추가하는 앱입니다. 이러한 종류의 앱은 일반적으로 사내에서 작성됩니다. Intune이 사용자 디바이스에 LOB 앱을 설치합니다. 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>1단계: 소프트웨어 설치 파일 지정
 

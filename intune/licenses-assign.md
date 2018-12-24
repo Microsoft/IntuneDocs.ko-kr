@@ -22,11 +22,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52184695"
 ---
-# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune에 장치를 등록할 수 있도록 사용자에게 라이선스 할당
+# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune에 디바이스를 등록할 수 있도록 사용자에게 라이선스 할당
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-수동으로 사용자를 추가하든 아니면 온-프레미스 Active Directory에서 동기화하든 상관없이 먼저 각 사용자에게 Intune 라이선스를 할당해야 사용자가 Intune에 장치를 등록할 수 있습니다. 라이선스 목록은 [Intune을 포함하는 라이선스](licenses.md)를 참조하세요.
+수동으로 사용자를 추가하든 아니면 온-프레미스 Active Directory에서 동기화하든 상관없이 먼저 각 사용자에게 Intune 라이선스를 할당해야 사용자가 Intune에 디바이스를 등록할 수 있습니다. 라이선스 목록은 [Intune을 포함하는 라이선스](licenses.md)를 참조하세요.
 
 ## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Office 365 관리 센터에서 Intune 라이선스 할당
 
@@ -43,7 +43,7 @@ ms.locfileid: "52184695"
 4. 이제 사용자 계정은 서비스를 사용하고 장치를 관리하고 등록하는 데 필요한 권한이 생겼습니다.
 
 > [!NOTE]
-> 사용자는 장치를 등록한 후에만 관리 콘솔에 표시됩니다. 또한 사용자 그룹을 선택하여 동시에 편집할 수 있습니다. 즉, 선택한 모든 사용자에 대한 라이선스를 추가하거나 바꾸도록 선택할 수 있습니다.
+> 사용자는 디바이스를 등록한 후에만 관리 콘솔에 표시됩니다. 또한 사용자 그룹을 선택하여 동시에 편집할 수 있습니다. 즉, 선택한 모든 사용자에 대한 라이선스를 추가하거나 바꾸도록 선택할 수 있습니다.
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Azure Active Directory를 사용하여 Intune 라이선스 할당
 
@@ -60,10 +60,10 @@ Intune for Education 라이선스를 할당할 경우 Intune A Direct 라이선�
 
 SDS에 대한 자세한 내용은 이 [학교 데이터 동기화 및 강의실 개요](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)를 참조하세요.
 
-## <a name="how-user-and-device-licenses-affect-access-to-services"></a>사용자 및 장치 라이선스가 서비스 액세스에 영향을 주는 방식
-* 사용자 소프트웨어 라이선스를 할당하는 각 **사용자**는 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)에 액세스하여 최대 15대의 장치와 응용 프로그램을 관리하는 데 해당 서비스와 소프트웨어를 사용할 수 있습니다.
-* 사용자 라이선스와 별도로 모든 장치에 대해 라이선스를 구입할 수 있습니다. 장치에는 장치 라이선스를 할당할 필요가 없습니다. 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)를 액세스하고 사용하는 각 장치에는 장치 라이선스가 할당되어야 합니다.
-* 여러 사용자가 장치를 사용하는 경우 각 사용자에게 장치 소프트웨어 라이선스가 있어야 하거나, 모든 사용자에게 사용자 소프트웨어 라이선스가 있어야 합니다.
+## <a name="how-user-and-device-licenses-affect-access-to-services"></a>사용자 및 디바이스 라이선스가 서비스 액세스에 영향을 주는 방식
+* 사용자 소프트웨어 라이선스를 할당하는 각 **사용자**는 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)에 액세스하여 최대 15대의 디바이스와 응용 프로그램을 관리하는 데 해당 서비스와 소프트웨어를 사용할 수 있습니다.
+* 사용자 라이선스와 별도로 모든 디바이스에 대해 라이선스를 구입할 수 있습니다. 디바이스에는 디바이스 라이선스를 할당할 필요가 없습니다. 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)를 액세스하고 사용하는 각 디바이스에는 디바이스 라이선스가 할당되어야 합니다.
+* 여러 사용자가 디바이스를 사용하는 경우 각 사용자에게 디바이스 소프트웨어 라이선스가 있어야 하거나, 모든 사용자에게 사용자 소프트웨어 라이선스가 있어야 합니다.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>구입한 라이선스 형식 이해
 

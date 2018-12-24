@@ -22,15 +22,15 @@ ms.locfileid: "52179901"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Intune과 Pradeo Mobile Threat Defense 커넥터
 
-Microsoft Intune과 통합된 MTD(Mobile Threat Defense) 솔루션인 Pradeo에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 장치에서 회사 리소스에 대한 액세스를 제어할 수 있습니다. 위험은 Pradeo 앱을 실행하는 장치에서 수집된 원격 분석에 기반하여 평가됩니다.
+Microsoft Intune과 통합된 MTD(Mobile Threat Defense) 솔루션인 Pradeo에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 디바이스에서 회사 리소스에 대한 액세스를 제어할 수 있습니다. 위험은 Pradeo 앱을 실행하는 디바이스에서 수집된 원격 분석에 기반하여 평가됩니다.
 
-Intune 장치 준수 정책을 통해 사용하도록 설정된 Pradeo 위험 평가에 따라 조건부 액세스 정책을 구성할 수 있습니다. 이 정책을 사용하여 회사 리소스에 액세스하는 비규격 장치를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
+Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Pradeo 위험 평가에 따라 조건부 액세스 정책을 구성할 수 있습니다. 이 정책을 사용하여 회사 리소스에 액세스하는 비규격 디바이스를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune과 Pradeo가 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 
-Android 및 iOS용 Pradeo 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 장치 및 응용 프로그램 원격 분석을 캡처한 다음, 원격 분석 데이터를 Pradeo 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
+Android 및 iOS용 Pradeo 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 디바이스 및 응용 프로그램 원격 분석을 캡처한 다음, 원격 분석 데이터를 Pradeo 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
 
-Intune 장치 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pradeo Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 장치가 사용되는 정책을 준수하는지를 평가합니다. 장치가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 장치에 설치된 Pradeo 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
+Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pradeo Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다. 디바이스가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 디바이스에 설치된 Pradeo 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
 
 ## <a name="sample-scenarios"></a>샘플 시나리오:
 
@@ -38,7 +38,7 @@ Intune 장치 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pradeo M
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>악성 앱의 위협에 따라 액세스 제어
 
-맬웨어와 같은 악성 앱이 장치에서 감지되면 위협이 해결될 때까지 장치에서 다음 작업을 차단할 수 있습니다.
+맬웨어와 같은 악성 앱이 디바이스에서 감지되면 위협이 해결될 때까지 디바이스에서 다음 작업을 차단할 수 있습니다.
 
 -   회사 메일에 연결
 

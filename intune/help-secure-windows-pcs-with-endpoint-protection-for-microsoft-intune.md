@@ -177,7 +177,7 @@ Intune 콘솔의 오른쪽 아래 모서리에 있는 **원격 작업** 링크�
   ![Endpoint Protection 모니터링](media/pol-sa-ep-monitor.png)
 
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>컴퓨터에서 맬웨어에 대한 최근 검색 경로를 보는 방법
-Intune은 장치에서 맬웨어의 최근 검색된 인스턴스 최대 10개에 대한 경로를 표시할 수 있습니다. **최근 검색 경로**는 기본적으로 비활성화되어 있습니다. 이 보기를 사용하려면:
+Intune은 디바이스에서 맬웨어의 최근 검색된 인스턴스 최대 10개에 대한 경로를 표시할 수 있습니다. **최근 검색 경로**는 기본적으로 비활성화되어 있습니다. 이 보기를 사용하려면:
 
 1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** > **모든 장치** > **모든 컴퓨터**를 선택합니다.
 2. 최근 검색 경로를 확인할 컴퓨터를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.

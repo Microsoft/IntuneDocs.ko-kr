@@ -1,5 +1,5 @@
 ---
-title: Windows 8.1 또는 Windows RT 8.1 장치를 등록하는 방법 | Microsoft 문서
+title: Windows 8.1 또는 Windows RT 8.1 디바이스를 등록하는 방법 | Microsoft 문서
 description: ''
 keywords: ''
 author: lenewsad
@@ -24,12 +24,12 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43146559"
 ---
-# <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Intune에서 Windows 8.1 또는 Windows RT 8.1 장치를 등록하는 방법
+# <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Intune에서 Windows 8.1 또는 Windows RT 8.1 디바이스를 등록하는 방법
 
-회사 또는 학교에서 Microsoft Intune을 사용하는 경우 장치를 등록하여 회사 전자 메일, 파일 및 기타 리소스에 액세스 권한을 얻을 수 있습니다. 장치를 등록하면 조직에서 회사 데이터 보안을 유지할 수 있습니다. 등록에 대해 자세히 알아보려면 [Intune에서 회사 포털 앱을 설치하고 장치를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) 및 [회사 지원팀이 장치에서 확인할 수 있는 항목과 할 수 없는 항목](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)을 참조하세요.
+회사 또는 학교에서 Microsoft Intune을 사용하는 경우 디바이스를 등록하여 회사 전자 메일, 파일 및 기타 리소스에 액세스 권한을 얻을 수 있습니다. 디바이스를 등록하면 조직에서 회사 데이터 보안을 유지할 수 있습니다. 등록에 대해 자세히 알아보려면 [Intune에서 회사 포털 앱을 설치하고 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) 및 [회사 지원팀이 디바이스에서 확인할 수 있는 항목과 할 수 없는 항목](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)을 참조하세요.
 
 
-Windows 8.1 또는 Windows RT 8.1 장치를 등록하려면:
+Windows 8.1 또는 Windows RT 8.1 디바이스를 등록하려면:
 
 1.  장치에서 **설정** &gt; **PC 설정** &gt; **네트워크** &gt; **회사**를 탭합니다.
 
@@ -37,7 +37,7 @@ Windows 8.1 또는 Windows RT 8.1 장치를 등록하려면:
 
 2.  필요할 경우 사용자 ID에 대한 회사 또는 학교 메일을 입력하고 **가입**을 탭합니다.
 
-    사용자 ID가 필요하지 않은 경우에는 이 장치에 로그인할 때 입력한 메일 주소가 사용됩니다.
+    사용자 ID가 필요하지 않은 경우에는 이 디바이스에 로그인할 때 입력한 메일 주소가 사용됩니다.
 
 3.  회사 또는 학교 메일의 암호를 입력합니다.
 

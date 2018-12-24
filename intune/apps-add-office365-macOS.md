@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune을 사용하여 macOS 장치에 Office 365 설치
+title: Microsoft Intune을 사용하여 macOS 디바이스에 Office 365 설치
 titlesuffix: ''
-description: Microsoft Intune을 사용하여 macOS 장치에 Office 365 앱을 설치하는 방법을 알아봅니다.
+description: Microsoft Intune을 사용하여 macOS 디바이스에 Office 365 앱을 설치하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -23,16 +23,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52185409"
 ---
-# <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 macOS 장치에 Office 365 할당
+# <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 macOS 디바이스에 Office 365 할당
 
-이 앱 유형을 사용하면 macOS 장치에 Office 365 2016 앱을 쉽게 할당할 수 있습니다. 이 앱 유형을 사용하면 Word, Excel, PowerPoint, Outlook 및 OneNote를 설치할 수 있습니다. 앱을 더 안전하게 최신 상태로 유지하기 위해 앱과 함께 MAU(Microsoft 자동 업데이트)가 제공됩니다. 원하는 앱이 Intune 콘솔의 앱 목록에 하나의 앱으로 표시됩니다.
+이 앱 유형을 사용하면 macOS 디바이스에 Office 365 2016 앱을 쉽게 할당할 수 있습니다. 이 앱 유형을 사용하면 Word, Excel, PowerPoint, Outlook 및 OneNote를 설치할 수 있습니다. 앱을 더 안전하게 최신 상태로 유지하기 위해 앱과 함께 MAU(Microsoft 자동 업데이트)가 제공됩니다. 원하는 앱이 Intune 콘솔의 앱 목록에 하나의 앱으로 표시됩니다.
 
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-macOS 장치에 Office 365를 추가하기 전에 다음 세부 정보를 파악합니다.
+macOS 디바이스에 Office 365를 추가하기 전에 다음 세부 정보를 파악합니다.
 
-- 이 앱을 배포할 장치에서 macOS 10.10 이상을 실행하고 있어야 합니다.
+- 이 앱을 배포할 디바이스에서 macOS 10.10 이상을 실행하고 있어야 합니다.
 - Intune은 Mac용 Office 2016 제품군에 포함된 Office 앱 추가만 지원합니다.
 - Intune에서 앱 패키지를 설치할 때 Office 앱이 열리면 저장되지 않은 파일에서 사용자 데이터가 손실될 수 있습니다.
 
@@ -83,5 +83,5 @@ macOS 장치에 Office 365를 추가하기 전에 다음 세부 정보를 파악
 
 ## <a name="next-steps"></a>다음 단계
 
-- Windows 10 장치에 Office 365 앱을 추가하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 Windows 10 장치에 Office 365 ProPlus 2016 앱 할당](apps-add-office365.md)을 참조하세요.
+- Windows 10 디바이스에 Office 365 앱을 추가하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 Windows 10 디바이스에 Office 365 ProPlus 2016 앱 할당](apps-add-office365.md)을 참조하세요.
 - 사용자 그룹에 앱 할당을 포함하고 제외하는 방법에 대한 자세한 내용은 [앱 할당 포함 및 제외](apps-inc-exl-assignments.md)를 참조하세요.

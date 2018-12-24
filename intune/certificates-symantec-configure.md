@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune을 사용하여 Symantec PKCS 인증서 발급
 titlesuffix: ''
-description: Symantec PKI 관리자 웹 서비스에서 Intune으로 관리되는 장치에 대한 PKCS 인증서를 발급하려면 Intune Certificate Connector를 설치 및 구성합니다.
+description: Symantec PKI 관리자 웹 서비스에서 Intune으로 관리되는 디바이스에 대한 PKCS 인증서를 발급하려면 Intune Certificate Connector를 설치 및 구성합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -27,7 +27,7 @@ ms.locfileid: "52186871"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서에서는 Symantec PKI 관리자 웹 서비스에서 Intune으로 관리되는 장치에 대한 PKCS 인증서를 발급하려면 Intune Certificate Connector를 설치 및 구성하는 방법을 보여 줍니다.
+이 문서에서는 Symantec PKI 관리자 웹 서비스에서 Intune으로 관리되는 디바이스에 대한 PKCS 인증서를 발급하려면 Intune Certificate Connector를 설치 및 구성하는 방법을 보여 줍니다.
 
 이 문서에서는 Symantec PKI 관리자 웹 서비스를 Symantec CA라고 합니다. Microsoft CA(인증 기관)에서 PKCS 인증서와 SCEP 인증서를 발급하도록 이미 Intune Certificate Connector를 구성한 경우 동일한 Connector를 사용하여 PKCS 인증서를 구성하고 Symantec CA에서 발급할 수 있습니다. 이 경우 Intune Certificate Connector는 다음 인증서를 발급할 수 있습니다.
 
@@ -222,7 +222,7 @@ Intune Certificate Connector는 기본적으로 `%ProgramFiles%\Microsoft Intune
  
 ## <a name="create-a-trusted-certificate-profile"></a>신뢰할 수 있는 인증서 프로필 만들기
 
-Intune 관리 장치용으로 배포된 PKCS 인증서는 신뢰할 수 있는 루트 인증서와 연결되어야 합니다. 이렇게 하려면 Symantec CA에서 얻은 루트 인증서를 사용하여 Intune 신뢰할 수 있는 인증서 프로필을 만들어야 합니다.
+Intune 관리 디바이스용으로 배포된 PKCS 인증서는 신뢰할 수 있는 루트 인증서와 연결되어야 합니다. 이렇게 하려면 Symantec CA에서 얻은 루트 인증서를 사용하여 Intune 신뢰할 수 있는 인증서 프로필을 만들어야 합니다.
 
 1. Symantec CA에서 신뢰할 수 있는 루트 인증서를 가져옵니다.
 
@@ -248,7 +248,7 @@ Intune 관리 장치용으로 배포된 PKCS 인증서는 신뢰할 수 있는 �
 
     f. 프로필 만들기의 나머지 단계를 완료합니다. 
 
-    g. **할당**을 클릭하고 해당하는 그룹을 선택합니다.  하나 이상의 사용자 또는 장치는 할당된 그룹의 일부여야 합니다.
+    g. **할당**을 클릭하고 해당하는 그룹을 선택합니다.  하나 이상의 사용자 또는 디바이스는 할당된 그룹의 일부여야 합니다.
 
 ## <a name="get-the-certificate-profile-oid"></a>인증서 프로필 OID 가져오기
 
@@ -291,9 +291,9 @@ Intune 관리 장치용으로 배포된 PKCS 인증서는 신뢰할 수 있는 �
    > [!NOTE]
    > Windows 플랫폼용 PKCS 인증서 프로필은 신뢰할 수 있는 인증서 프로필과 연결할 필요가 없습니다. 그러나 Android와 같은 Windows 이외의 플랫폼 프로필에는 필요합니다.
 
-3. **할당**을 클릭하고 해당하는 그룹을 선택합니다.  하나 이상의 사용자 또는 장치는 할당된 그룹의 일부여야 합니다.
+3. **할당**을 클릭하고 해당하는 그룹을 선택합니다.  하나 이상의 사용자 또는 디바이스는 할당된 그룹의 일부여야 합니다.
  
-이전 단계를 완료한 후 Intune Certificate Connector는 Symantec CA에서 할당된 그룹의 Intune 관리 장치에 PKCS 인증서를 발급합니다. 이러한 인증서는 Intune 관리 장치에 있는 현재 사용자 인증서 저장소의 개인 저장소에서 사용할 수 있습니다.
+이전 단계를 완료한 후 Intune Certificate Connector는 Symantec CA에서 할당된 그룹의 Intune 관리 디바이스에 PKCS 인증서를 발급합니다. 이러한 인증서는 Intune 관리 디바이스에 있는 현재 사용자 인증서 저장소의 개인 저장소에서 사용할 수 있습니다.
 
 ### <a name="pkcs-certificate-profile-supported-attributes"></a>PKCS 인증서 프로필 지원 특성
 
@@ -316,8 +316,8 @@ Intune Certificate Connector 서비스 로그는 NDES Connector 컴퓨터의 `%P
 | Symantec 공급자 - Symantec 정책 “요청이 중단됨: SSL/TLS 보안 채널을 만들 수 없음”을 가져오지 못함 | 이 오류는 다음과 같은 경우에 발생합니다. <br><br> 1. Intune Certificate Connector 서비스에는 로컬 컴퓨터-개인 인증서 저장소에서 개인 키와 함께 리소스 권한 부여 인증서를 읽을 권한이 없습니다. 이 문제를 해결하려면 services.msc에서 컨텍스트 계정을 실행하는 커넥터 서비스를 확인합니다. 커넥터 서비스는 NT AUTHORITY\SYSTEM 컨텍스트에서 실행해야 합니다. <br><br> 2. Intune 관리 포털의 PKCS 인증서 프로필이 잘못된 Symantec CA 기본 서비스 FQDN으로 구성되었을 수 있습니다. FQDN은 `pki-ws.symauth.com`과 유사합니다. 이 문제를 해결하려면 Symantec 고객 지원과 함께 해당 URL이 구독에 적합한지 확인합니다. <br><br> 3. Intune Certificate Connector가 개인 키를 검색할 수 없으므로 리소스 권한 부여 인증서를 사용하여 Symantec CA로 인증하지 못했습니다. 이 문제를 해결하려면 로컬 컴퓨터-개인 인증서 저장소에 개인 키와 함께 리소스 권한 부여 인증서를 설치해야 합니다. <br><br> 문제가 계속되면 Symantec 고객 지원에 문의하세요. |
 | Symantec 공급자 - Symantec 정책 “요청 요소를 이해할 수 없음”을 가져오지 못함 | 클라이언트 프로필 OID가 Intune 인증서 프로필과 일치하지 않으므로 Intune Certificate Connector가 Symantec 인증서 프로필 템플릿을 가져오지 못했습니다. 다른 경우에 Intune Certificate Connector가 Symantec CA에서 지정된 클라이언트 프로필 OID와 연결된 인증서 프로필 템플릿을 찾을 수 없습니다. <br><br> 이 문제를 해결하려면 Symantec CA의 Symantec 인증서 템플릿에서 올바른 클라이언트 프로필 OID를 얻습니다. 그런 다음 Intune 관리 포털에서 PKCS 인증서 프로필을 업데이트합니다. <br><br> Symantec CA에서 클라이언트 프로필 OID를 얻습니다. <br> 1. Symantec CA 관리 포털에 로그온합니다. <br> 2. [인증서 프로필 관리]를 클릭합니다. <br> 3. 사용할 인증서 프로필을 선택합니다. <br> 4. 인증서 프로필 OID를 얻습니다. 다음 예제와 같이 표시됩니다. <br> `Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109` <br><br> 올바른 인증서 프로필 OID를 사용하여 PKCS 인증서 프로필 업데이트: <br>1. Intune 관리 포털에 로그온합니다. <br> 2. PKCS 인증서 프로필로 이동하여 **편집**을 클릭합니다. <br> 3. 인증서 템플릿 이름 필드의 업데이트에서 인증서 프로필 OID를 업데이트합니다. <br> 4. PKCS 인증서 프로필을 저장합니다. |
 | Symantec 공급자 - 정책 확인에 실패했습니다. <br><br> 특성이 Symantec 지원 인증서 템플릿 특성 목록에 포함되지 않음 | Symantec 인증서 프로필 템플릿과 Intune 인증서 프로필이 일치하지 않을 경우 Symantec CA가 이 메시지를 표시함 이 문제는 SubjectName 또는 SubjectAltName의 특성 불일치로 인해 발생했을 수 있습니다. <br><br> 이 문제를 해결하려면 Symantec 인증서 프로필 템플릿에서 SubjectName 및 SubjectAltName에 대한 Intune 지원 특성을 선택해야 합니다. 자세한 내용은 인증서 매개 변수 섹션에서 Intune 지원 특성을 참조하세요. |
-| 일부 사용자 장치가 Symantec CA에서 PKCS 인증서를 수신하지 않습니다. | 사용자 UPN에 밑줄 같은 특수 문자가 포함된 경우(예: `global_admin@intune.onmicrosoft.com`) 이 문제가 발생합니다. <br><br> Symantec CA는mail_firstname 및 mail_lastname에서 특수 문자를 지원하지 않습니다. <br><br> 이 문제를 해결하려면 다음 단계를 따릅니다. <br><br> 1.   Symantec CA 관리 포털에 로그온합니다. <br> 2. [인증서 프로필 관리]로 이동합니다. <br> 3.   Intune에 사용되는 인증서 프로필을 클릭합니다. <br> 4.  [옵션 사용자 지정] 링크를 클릭합니다. <br> 5.   [고급 옵션] 단추를 클릭합니다. <br> 6.  인증서 필드 - 주체 DN 아래에 CN(일반 이름) 필드를 추가하고 기존 CN(일반 이름) 필드를 삭제합니다. 추가 및 삭제는 함께 수행해야 합니다. <br> 7.    저장을 클릭합니다. <br><br> 이전 변경에 따라 Symantec 인증서 프로필이 mail_firstname 및 mail_lastname 대신 “CN=<upn>”을 요청합니다. |
-| 사용자가 장치에서 이미 배포된 인증서를 수동으로 삭제했습니다. | Intune은 다음 체크 인 또는 정책 적용 중에 동일한 인증서를 다시 배포합니다. 이 경우 NDES Connector는 PKCS 인증서 요청을 수신하지 않습니다. |
+| 일부 사용자 디바이스가 Symantec CA에서 PKCS 인증서를 수신하지 않습니다. | 사용자 UPN에 밑줄 같은 특수 문자가 포함된 경우(예: `global_admin@intune.onmicrosoft.com`) 이 문제가 발생합니다. <br><br> Symantec CA는mail_firstname 및 mail_lastname에서 특수 문자를 지원하지 않습니다. <br><br> 이 문제를 해결하려면 다음 단계를 따릅니다. <br><br> 1.   Symantec CA 관리 포털에 로그온합니다. <br> 2. [인증서 프로필 관리]로 이동합니다. <br> 3.   Intune에 사용되는 인증서 프로필을 클릭합니다. <br> 4.  [옵션 사용자 지정] 링크를 클릭합니다. <br> 5.   [고급 옵션] 단추를 클릭합니다. <br> 6.  인증서 필드 - 주체 DN 아래에 CN(일반 이름) 필드를 추가하고 기존 CN(일반 이름) 필드를 삭제합니다. 추가 및 삭제는 함께 수행해야 합니다. <br> 7.    저장을 클릭합니다. <br><br> 이전 변경에 따라 Symantec 인증서 프로필이 mail_firstname 및 mail_lastname 대신 “CN=<upn>”을 요청합니다. |
+| 사용자가 디바이스에서 이미 배포된 인증서를 수동으로 삭제했습니다. | Intune은 다음 체크 인 또는 정책 적용 중에 동일한 인증서를 다시 배포합니다. 이 경우 NDES Connector는 PKCS 인증서 요청을 수신하지 않습니다. |
 
 ## <a name="next-steps"></a>다음 단계
 

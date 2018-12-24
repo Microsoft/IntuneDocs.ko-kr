@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 iOS 장치에 VPN 설정 추가 - Azure | Microsoft Docs
-description: 기본 설정에서 연결 세부 정보, 인증 방법 및 분할 터널링을 비롯하여 식별자를 포함하는 사용자 지정 VPN 설정, Safari URL을 포함하는 앱당 VPN 설정, SSID 또는 DNS 검색 도메인을 포함하는 주문형 VPN 및 iOS를 실행하는 장치의 Microsoft Intune에서 구성 스크립트, IP 또는 FQDN 주소 및 TCP 포트를 포함하는 프록시 설정 등 VPN(가상 사설망) 구성 설정을 사용하는 VPN 구성 프로필을 추가하거나 만듭니다.
+title: Microsoft Intune에서 iOS 디바이스에 VPN 설정 추가 - Azure | Microsoft Docs
+description: 기본 설정에서 연결 세부 정보, 인증 방법 및 분할 터널링을 비롯하여 식별자를 포함하는 사용자 지정 VPN 설정, Safari URL을 포함하는 앱당 VPN 설정, SSID 또는 DNS 검색 도메인을 포함하는 주문형 VPN 및 iOS를 실행하는 디바이스의 Microsoft Intune에서 구성 스크립트, IP 또는 FQDN 주소 및 TCP 포트를 포함하는 프록시 설정 등 VPN(가상 사설망) 구성 설정을 사용하는 VPN 구성 프로필을 추가하거나 만듭니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -20,9 +20,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52185562"
 ---
-# <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 장치에서 VPN 설정 구성
+# <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 디바이스에서 VPN 설정 구성
 
-Microsoft Intune에는 iOS 장치에 배포할 수 있는 여러 VPN 설정이 포함됩니다. 조직의 네트워크에 VPN 연결을 만들고 구성하는 데 이러한 설정이 사용됩니다. 이 문서에서는 이러한 설정을 설명합니다. 일부 설정은 Citrix, Zscaler 등과 같은 일부 VPN 클라이언트에 대해서만 지원됩니다.
+Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설정이 포함됩니다. 조직의 네트워크에 VPN 연결을 만들고 구성하는 데 이러한 설정이 사용됩니다. 이 문서에서는 이러한 설정을 설명합니다. 일부 설정은 Citrix, Zscaler 등과 같은 일부 VPN 클라이언트에 대해서만 지원됩니다.
 
 ## <a name="connection-type"></a>연결 형식
 
@@ -80,7 +80,7 @@ Microsoft Intune에는 iOS 장치에 배포할 수 있는 여러 VPN 설정이 �
   중요한 세부 정보:  
 
   - NAC를 사용하도록 설정하는 경우 VPN의 연결이 24시간마다 끊어졌습니다.
-  - 디바이스 ID는 프로필의 일부이지만 Intune에 표시될 수 없습니다. 이 ID는 Microsoft에서 저장되거나 공유되지 않습니다. VPN 파트너에 의해 지원되면 Citrix SSO와 같은 VPN 클라이언트는 ID를 가져오고 Intune을 쿼리하여 장치가 등록되었는지 및 VPN 프로필이 규격이거나 비규격인지 확인할 수 있습니다.
+  - 디바이스 ID는 프로필의 일부이지만 Intune에 표시될 수 없습니다. 이 ID는 Microsoft에서 저장되거나 공유되지 않습니다. VPN 파트너에 의해 지원되면 Citrix SSO와 같은 VPN 클라이언트는 ID를 가져오고 Intune을 쿼리하여 디바이스가 등록되었는지 및 VPN 프로필이 규격이거나 비규격인지 확인할 수 있습니다.
   - 이 설정을 제거하려면 프로필을 다시 만들고 **동의함**을 선택하지 않습니다. 그런 다음, 프로필을 다시 할당합니다.
 
 ## <a name="automatic-vpn-settings"></a>자동 VPN 설정
@@ -88,12 +88,12 @@ Microsoft Intune에는 iOS 장치에 배포할 수 있는 여러 VPN 설정이 �
 - **앱당 VPN**: 앱당 VPN을 사용하도록 설정합니다. VPN 연결이 특정 앱을 열 때 자동으로 트리거될 수 있습니다. 이 VPN 프로필을 사용하여 앱을 연결할 수도 있습니다. 자세한 내용은 [iOS용 앱당 VPN을 설정하기 위한 지침](vpn-setting-configure-per-app.md)을 참조하세요.
   - **공급자 형식**: Pulse Secure 및 사용자 지정 VPN에 대해서만 지원됩니다.
   - Pulse Secure 또는 사용자 지정 VPN과 함께 iOS **앱당 VPN** 프로필을 사용하면 앱 계층 터널링(app-proxy) 또는 패킷 수준 터널링(packet-tunnel)을 선택합니다. **ProviderType** 값은 앱 계층 터널링의 경우 **app-proxy**로 설정하고, 패킷 계층 터널링의 경우 **packet-tunnel**로 설정합니다. 사용할 값을 모르는 경우 VPN 공급자의 설명서를 확인하세요.
-  - **이 VPN을 트리거하는 Safari URL**: 하나 이상의 웹 사이트 URL을 추가합니다. 장치에서 Safari 브라우저를 사용하여 이러한 URL을 방문할 때 VPN 연결이 자동으로 설정됩니다.
+  - **이 VPN을 트리거하는 Safari URL**: 하나 이상의 웹 사이트 URL을 추가합니다. 디바이스에서 Safari 브라우저를 사용하여 이러한 URL을 방문할 때 VPN 연결이 자동으로 설정됩니다.
 
-- **주문형 VPN**: VPN 연결이 시작되는 시기를 제어하는 조건부 규칙을 구성합니다. 예를 들어 장치가 회사 Wi-Fi 네트워크에 연결되지 않은 경우에만 VPN 연결이 사용되는 조건을 만듭니다. 또는 장치에서 입력한 DNS 검색 도메인에 액세스할 수 없는 경우 VPN 연결이 시작되지 않는 조건을 만듭니다.
+- **주문형 VPN**: VPN 연결이 시작되는 시기를 제어하는 조건부 규칙을 구성합니다. 예를 들어 디바이스가 회사 Wi-Fi 네트워크에 연결되지 않은 경우에만 VPN 연결이 사용되는 조건을 만듭니다. 또는 디바이스에서 입력한 DNS 검색 도메인에 액세스할 수 없는 경우 VPN 연결이 시작되지 않는 조건을 만듭니다.
 
   - **SSID 또는 DNS 검색 도메인**: 이 조건에서 무선 네트워크 **SSID** 또는 **DNS 검색 도메인**을 사용할지를 선택합니다. 하나 이상의 SSID 또는 검색 도메인을 구성하려면 **추가**를 선택합니다.
-  - **URL 문자열 프로브:**: 선택 사항입니다. 규칙이 테스트로 사용하는 URL을 입력합니다. 이 프로필을 포함한 장치에서 리디렉션 없이 이 URL에 액세스하는 경우 VPN 연결이 시작됩니다. 또한 장치가 대상 URL에 연결됩니다. 사용자에게 URL 문자열 프로브 사이트가 표시되지 않습니다. URL 문자열 프로브 예제는 VPN을 연결하기 전에 장치 준수를 확인하는 감사 웹 서버의 주소입니다. 또는 VPN을 통해 장치를 대상 URL에 연결하기 전에 URL에서 VPN이 사이트에 연결할 수 있는지 테스트할 수도 있습니다.
+  - **URL 문자열 프로브:**: 선택 사항입니다. 규칙이 테스트로 사용하는 URL을 입력합니다. 이 프로필을 포함한 디바이스에서 리디렉션 없이 이 URL에 액세스하는 경우 VPN 연결이 시작됩니다. 또한 디바이스가 대상 URL에 연결됩니다. 사용자에게 URL 문자열 프로브 사이트가 표시되지 않습니다. URL 문자열 프로브 예제는 VPN을 연결하기 전에 디바이스 준수를 확인하는 감사 웹 서버의 주소입니다. 또는 VPN을 통해 디바이스를 대상 URL에 연결하기 전에 URL에서 VPN이 사이트에 연결할 수 있는지 테스트할 수도 있습니다.
   - **도메인 작업**: 다음 항목 중 하나를 선택합니다.
     - 필요한 경우 연결
     - 연결 안 함

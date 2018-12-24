@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune에서 지원하는 운영 체제 및 브라우저
 titleSuffix: ''
-description: Intune 장치 관리용으로 지원되는 장치 플랫폼 및 브라우저를 나열합니다.
+description: Intune 디바이스 관리용으로 지원되는 디바이스 플랫폼 및 브라우저를 나열합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -33,18 +33,18 @@ Microsoft Intune을 설정하기 전에 지원되는 운영 체제 및 브라우
 
 ## <a name="intune-supported-operating-systems"></a>Intune에서 지원하는 운영 체제
 
-다음 운영 체제를 실행하는 장치를 관리할 수 있습니다.
+다음 운영 체제를 실행하는 디바이스를 관리할 수 있습니다.
 
 [!INCLUDE [mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-### <a name="supported-samsung-knox-standard-devices"></a>지원되는 Samsung Knox Standard 장치
+### <a name="supported-samsung-knox-standard-devices"></a>지원되는 Samsung Knox Standard 디바이스
 
-MDM 등록을 방해하는 Knox 활성화 오류를 방지하기 위해 회사 포털 앱은 장치가 [지원되는 Knox 장치 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 표시되는 경우에만 MDM 등록 중에 Samsung Knox 활성화를 시도합니다. Samsung Knox 활성화를 지원하지 않는 장치는 표준 Android 장치로 등록됩니다. 모든 Samsung 장치에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. Samsung 장치를 구매하고 배포하기 전에 장치 재판매인의 Knox 호환성을 검사합니다.
+MDM 등록을 방해하는 Knox 활성화 오류를 방지하기 위해 회사 포털 앱은 디바이스가 [지원되는 Knox 디바이스 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 표시되는 경우에만 MDM 등록 중에 Samsung Knox 활성화를 시도합니다. Samsung Knox 활성화를 지원하지 않는 디바이스는 표준 Android 디바이스로 등록됩니다. 모든 Samsung 디바이스에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. Samsung 디바이스를 구매하고 배포하기 전에 디바이스 재판매인의 Knox 호환성을 검사합니다.
 
 > [!NOTE]
-> Samsung Knox 장치를 등록하는 경우 [Samsung 서버에 대한 액세스를 허용](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)해야 할 수도 있습니다. 
+> Samsung Knox 디바이스를 등록하는 경우 [Samsung 서버에 대한 액세스를 허용](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)해야 할 수도 있습니다. 
 
-다음 Samsung 장치 모델 목록은 Knox를 지원하지 않습니다. Android용 회사 포털 앱에서 네이티브 Android 장치로 등록됩니다.
+다음 Samsung 디바이스 모델 목록은 Knox를 지원하지 않습니다. Android용 회사 포털 앱에서 네이티브 Android 디바이스로 등록됩니다.
 
 | **장치 이름** | **장치 모델 번호** |
 | --- | --- |

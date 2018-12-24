@@ -27,7 +27,7 @@ ms.locfileid: "52186463"
 
 그룹은 사용자를 관리하고 회사 리소스에 직원의 액세스를 제어하는 데 사용됩니다. 이러한 리소스는 디렉터리의 일부이거나 SaaS 앱 또는 SharePoint 사이트와 같은 외부 리소스일 수 있습니다.
 
-Microsoft Intune은 Azure AD(Azure Active Directory)를 사용하여 회사 리소스에 대한 액세스를 관리합니다. 이 액세스는 디렉터리의 역할을 사용하여 제어됩니다. 그런 다음 Intune은 모바일 장치에 대해 이 액세스를 관리하여 해당 그룹의 구성원이 리소스에 액세스할 수 있도록 합니다.
+Microsoft Intune은 Azure AD(Azure Active Directory)를 사용하여 회사 리소스에 대한 액세스를 관리합니다. 이 액세스는 디렉터리의 역할을 사용하여 제어됩니다. 그런 다음 Intune은 모바일 디바이스에 대해 이 액세스를 관리하여 해당 그룹의 구성원이 리소스에 액세스할 수 있도록 합니다.
 
 ## <a name="how-do-i-create-a-group"></a>그룹을 만들려면 어떻게 하나요?
 

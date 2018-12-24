@@ -1,6 +1,6 @@
 ---
-title: Android 장치의 일반적인 문제 해결 | Microsoft 문서
-description: Android 장치의 일반적인 문제를 해결하는 방법을 알아봅니다.
+title: Android 디바이스의 일반적인 문제 해결 | Microsoft 문서
+description: Android 디바이스의 일반적인 문제를 해결하는 방법을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -23,9 +23,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43148452"
 ---
-# <a name="fix-common-issues-with-your-android-device"></a>Android 장치의 일반적인 문제 해결
+# <a name="fix-common-issues-with-your-android-device"></a>Android 디바이스의 일반적인 문제 해결
 
-Android 장치에서 발생하는 문제가 문제 해결을 통해 해결되는 경우도 있습니다. 먼저 직접 해결해 볼 수 있는 몇 가지 일반적인 문제는 다음과 같습니다. 좀 더 복잡한 문제의 경우 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에 있는 연락처 정보를 통해 회사 지원팀에 문의하는 것이 좋습니다.
+Android 디바이스에서 발생하는 문제가 문제 해결을 통해 해결되는 경우도 있습니다. 먼저 직접 해결해 볼 수 있는 몇 가지 일반적인 문제는 다음과 같습니다. 좀 더 복잡한 문제의 경우 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에 있는 연락처 정보를 통해 회사 지원팀에 문의하는 것이 좋습니다.
 
 - [Android 장치에 대한 규정 준수 확인](check-compliance-on-your-device-android.md)
 - [자세한 정보 로깅을 사용하여 회사 지원팀의 장치 문제 해결 돕기](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

@@ -27,7 +27,7 @@ ms.locfileid: "52190271"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-장치를 관리하고 앱을 설치하려는 사용자는 Microsoft Store에서 직접 회사 포털 앱을 설치하면 됩니다. 그러나 비즈니스 요구 사항에 따라 회사 포털 앱을 할당해야 하는 경우에는 Intune에서 바로 Windows 10 회사 포털 앱을 수동으로 할당할 수 있습니다. Intune을 Microsoft Store for Business와 통합하지 않은 경우 통합할 수 있습니다.
+디바이스를 관리하고 앱을 설치하려는 사용자는 Microsoft Store에서 직접 회사 포털 앱을 설치하면 됩니다. 그러나 비즈니스 요구 사항에 따라 회사 포털 앱을 할당해야 하는 경우에는 Intune에서 바로 Windows 10 회사 포털 앱을 수동으로 할당할 수 있습니다. Intune을 Microsoft Store for Business와 통합하지 않은 경우 통합할 수 있습니다.
 
  > [!NOTE]
  > 이 문서에서 설명하는 옵션은 앱 업데이트가 발표될 때마다 수동 업데이트를 할당해야 합니다.
@@ -47,7 +47,7 @@ ms.locfileid: "52190271"
 5. **플랫폼**으로 **Windows 10 모든 장치**를 선택한 다음, 적절한 **최소 버전**, **아키텍처** 및 **앱 메타데이터 다운로드** 값을 선택합니다. 
 6. **다운로드**를 선택하여 로컬 컴퓨터에 파일을 저장합니다.
 
-    ![다운로드를 선택한 "Windows 10 모든 장치" 및 아키텍처 X86 패키지 세부 정보](./media/Win10CP-all-devices.png)
+    ![다운로드를 선택한 "Windows 10 모든 디바이스" 및 아키텍처 X86 패키지 세부 정보](./media/Win10CP-all-devices.png)
 
 7. **다운로드**를 선택하여 "필요한 프레임워크" 아래의 모든 패키지를 다운로드합니다.  
     이 작업은 x86, x64, ARM 아키텍처에 대해 수행해야 하므로 총 12개의 패키지가 됩니다.
@@ -67,8 +67,8 @@ ms.locfileid: "52190271"
 Intune이 유니버설 앱의 종속성을 처리하는 방식에 대한 자세한 내용은 [Microsoft Intune MDM을 통해 종속성이 포함된 appxbundle 배포](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)를 참조하세요.  
 
 ## <a name="frequently-asked-questions"></a>질문과 대답 
-### <a name="how-do-i-update-the-company-portal-app-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>사용자가 이미 스토어에서 이전 앱을 설치한 경우 어떻게 사용자의 장치에서 회사 포털 앱을 업데이트하나요?
-사용자가 이미 Microsoft Store에서 Windows 8.1 또는 Windows Phone 8.1 회사 포털 앱을 설치한 경우 관리자나 사용자의 별도 조치가 없어도 앱이 자동으로 최신 버전으로 업데이트됩니다. 앱이 업데이트되지 않는 경우 사용자에게 장치에서 스토어 앱에 자동 업데이트를 사용하도록 설정했는지 확인해 보라고 요청합니다.   
+### <a name="how-do-i-update-the-company-portal-app-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>사용자가 이미 스토어에서 이전 앱을 설치한 경우 어떻게 사용자의 디바이스에서 회사 포털 앱을 업데이트하나요?
+사용자가 이미 Microsoft Store에서 Windows 8.1 또는 Windows Phone 8.1 회사 포털 앱을 설치한 경우 관리자나 사용자의 별도 조치가 없어도 앱이 자동으로 최신 버전으로 업데이트됩니다. 앱이 업데이트되지 않는 경우 사용자에게 디바이스에서 스토어 앱에 자동 업데이트를 사용하도록 설정했는지 확인해 보라고 요청합니다.   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>사이드로드한 Windows 8.1 회사 포털 앱을 Windows 10 회사 포털 앱으로 어떻게 업그레이드하나요?
 권장되는 마이그레이션 경로는 할당 작업을 **제거**로 설정하여 Windows 8.1 회사 포털 앱의 할당을 삭제하는 것입니다. 이 설정을 선택한 후에는 이전에 설명한 옵션 중 하나를 사용하여 Windows 10 회사 포털 앱을 할당할 수 있습니다.  

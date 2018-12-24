@@ -1,6 +1,6 @@
 ---
-title: 회사 프로필을 사용하여 장치 등록 | Microsoft 문서
-description: 작업 프로필을 사용하여 Android 장치를 더 안전하게 만드는 방법.
+title: 회사 프로필을 사용하여 디바이스 등록 | Microsoft 문서
+description: 작업 프로필을 사용하여 Android 디바이스를 더 안전하게 만드는 방법.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,11 +24,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43148165"
 ---
-# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>업무용 프로필을 만들고 Intune에서 장치 등록
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>업무용 프로필을 만들고 Intune에서 디바이스 등록
 
-Android 장치를 등록하면 회사 메일, 앱 및 기타 업무용 데이터에 액세스할 수 있습니다. 등록 과정 중에 업무용 프로필을 설정합니다. 그러면 장치의 개인 데이터와 업무용 데이터가 분리됩니다.
+Android 디바이스를 등록하면 회사 메일, 앱 및 기타 업무용 데이터에 액세스할 수 있습니다. 등록 과정 중에 업무용 프로필을 설정합니다. 그러면 디바이스의 개인 데이터와 업무용 데이터가 분리됩니다.
 
-회사 지원팀은 업무용 데이터를 포함하는 업무용 프로필만 관리할 수 있습니다. 회사 지원팀은 사용자 장치의 개인 데이터를 관리할 수 없습니다. [업무용 프로필을 만들면 어떻게 되나요?](what-happens-when-you-create-a-work-profile-android.md)에서 자세한 내용을 알아보세요.
+회사 지원팀은 업무용 데이터를 포함하는 업무용 프로필만 관리할 수 있습니다. 회사 지원팀은 사용자 디바이스의 개인 데이터를 관리할 수 없습니다. [업무용 프로필을 만들면 어떻게 되나요?](what-happens-when-you-create-a-work-profile-android.md)에서 자세한 내용을 알아보세요.
 
 업무용 프로필을 만들려면
 
@@ -44,9 +44,9 @@ Android 장치를 등록하면 회사 메일, 앱 및 기타 업무용 데이터
 
     ![업무용 프로필을 만드는 이유](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  회사 지원팀이 장치에서 볼 수 있는 사항과 볼 수 없는 사항의 목록을 검토하고 **계속**을 누릅니다.
+4.  회사 지원팀이 디바이스에서 볼 수 있는 사항과 볼 수 없는 사항의 목록을 검토하고 **계속**을 누릅니다.
 
-    ![회사 지원팀이 장치에서 볼 수 있는 항목과 볼 수 없는 항목](/intune/media/android_cp_enroll_02_after_1710.png)
+    ![회사 지원팀이 디바이스에서 볼 수 있는 항목과 볼 수 없는 항목](/intune/media/android_cp_enroll_02_after_1710.png)
 
 5.  **다음 단계는?** 화면에서 등록하는 동안 발생하는 상황을 확인하고 **등록**을 누릅니다.
 
@@ -60,7 +60,7 @@ Android 장치를 등록하면 회사 메일, 앱 및 기타 업무용 데이터
 
     ![업무용 프로필에 대한 Google의 정보를 검토합니다.](./media/andr-afw-google-screen-what-it-can-do.png)
 
-    "업무용 프로필 설정 중" 및 "장치 등록 중" 등 여러 메시지가 표시됩니다.
+    "업무용 프로필 설정 중" 및 "디바이스 등록 중" 등 여러 메시지가 표시됩니다.
 
 8. **절반쯤 처리되었습니다.** 화면에서 회사 포털 앱이 열릴 때까지 몇 초 동안 대기합니다.
 
@@ -72,7 +72,7 @@ Android 장치를 등록하면 회사 메일, 앱 및 기타 업무용 데이터
 
     ![회사 액세스 설정에 업무용 프로필 설치가 완료되었음이 표시됨](./media/andr-afw-work-profile-now-set-up.png)
 
-    "장치 등록 중."이라는 메시지가 간단하게 표시됩니다.
+    "디바이스 등록 중."이라는 메시지가 간단하게 표시됩니다.
 
 11. **모든 설정이 끝났습니다.** 화면에서 모든 항목이 올바르게 설정되었음을 보여 주면 **완료**를 누릅니다.
 

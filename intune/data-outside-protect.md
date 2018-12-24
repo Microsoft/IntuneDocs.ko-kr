@@ -33,7 +33,7 @@ ms.locfileid: "52190016"
 * 회사에서 클라우드로 안전하게 전환할 준비가 되었습니다.
 * 회사에서 Office 365 Exchange Online, SharePoint Online, 비즈니스용 OneDrive 또는 Yammer를 사용합니다.
 * 회사에서 Microsoft 365, EMS(Enterprise Mobility + Security) 또는 Azure Information Protection에 대한 라이선스를 가지고 있습니다.
-* 회사에서 Windows 7 서비스 팩 1 이상을 실행하는 장치를 사용합니다.
+* 회사에서 Windows 7 서비스 팩 1 이상을 실행하는 디바이스를 사용합니다.
 * 회사에서 Office 365 ProPlus 2016 앱 또는 2013 앱, Office Professional Plus 2016, Office Professional Plus 2013(서비스 팩 1 포함) 또는 Office Professional Plus 2010을 사용합니다.
 
 ## <a name="action-plan"></a>작업 계획
@@ -48,5 +48,5 @@ ms.locfileid: "52190016"
 
 다음 단계의 일부로, 다음을 비롯하여 회사 데이터의 보안을 향상할 수 있는 다른 방법에 대해 자세히 알아볼 수 있습니다. 
 
-* [iOS 및 Android 장치에서 Azure Information Protection]를 사용하는 방법에 대해 알아봅니다(https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* [iOS 및 Android 디바이스에서 Azure Information Protection]를 사용하는 방법에 대해 알아봅니다(https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
 * Windows Phone 및 Mac 컴퓨터의 경우 [Microsoft Rights Management 공유 응용 프로그램](https://technet.microsoft.com/dn451248)에 대해 알아봅니다.

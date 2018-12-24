@@ -36,6 +36,6 @@ ms.locfileid: "43146347"
 
 3.  표시되는 메시지에 따라 컴퓨터와 사용자 계정을 연결합니다.
 
-장치를 등록 취소하려는 경우 [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) 또는 [Windows](unenroll-your-device-from-intune-windows.md) 중에서 보유하고 있는 장치 유형에 대한 지침을 사용하세요.
+디바이스를 등록 취소하려는 경우 [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) 또는 [Windows](unenroll-your-device-from-intune-windows.md) 중에서 보유하고 있는 디바이스 유형에 대한 지침을 사용하세요.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

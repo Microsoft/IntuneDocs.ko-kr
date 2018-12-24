@@ -1,5 +1,5 @@
 ---
-title: Mac 장치에서 회사 지원팀에 오류 보내기 | Microsoft Docs
+title: Mac 디바이스에서 회사 지원팀에 오류 보내기 | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
@@ -24,7 +24,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43150849"
 ---
-# <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>관리되는 macOS 장치를 사용하여 올바른 사람에게 오류 제출
+# <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>관리되는 macOS 디바이스를 사용하여 올바른 사람에게 오류 제출
 
 때때로 회사 포털 앱에서 설명할 수 없는 오류가 발생할 수 있습니다. 오류가 발생하면 회사의 지원 담당자에게 오류에 대한 세부 정보를 메일로 보낼 수 있습니다. 이러한 세부 정보는 사용자에 대한 문제를 해결하는 데 필요한 컨텍스트를 제공합니다.
 
@@ -38,9 +38,9 @@ ms.locfileid: "43150849"
 
 -   메일 앱이 구성된 경우 **도움말** > **진단 보고서 보내기**로 이동하여 진단 보고서를 보낼 수 있습니다. 로그가 업로드된 후 **메일 세부 정보**를 클릭합니다.
 
-## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>회사 포털 개발자에게 macOS 장치에 대한 오류 보내기
+## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>회사 포털 개발자에게 macOS 디바이스에 대한 오류 보내기
 
-회사 포털 앱이 예기치 않게 닫히는 경우가 있습니다. 앱 개발자는 예기치 않은 동작이 발생하는 경우 사용자의 의견을 듣기를 원합니다. 개발자는 오류 세부 정보를 사용하여 근본 원인을 찾아내고 이후 오류 발생을 방지합니다. 이러한 오류는 장치의 _진단 로그_라는 특수 문서에 자세히 설명돼 있습니다. 회사 포털 팀은 문제를 진단하려면 회사 포털에 특정된 로그가 필요합니다.
+회사 포털 앱이 예기치 않게 닫히는 경우가 있습니다. 앱 개발자는 예기치 않은 동작이 발생하는 경우 사용자의 의견을 듣기를 원합니다. 개발자는 오류 세부 정보를 사용하여 근본 원인을 찾아내고 이후 오류 발생을 방지합니다. 이러한 오류는 디바이스의 _진단 로그_라는 특수 문서에 자세히 설명돼 있습니다. 회사 포털 팀은 문제를 진단하려면 회사 포털에 특정된 로그가 필요합니다.
 
 로그를 Microsoft에 보내려면 다음과 같이 수행합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: Windows Defender 방화벽 사용 | Microsoft Docs
-description: Windows 10 장치에서 방화벽을 켜서 회사 리소스에 액세스할 수 있도록 하는 방법을 알아봅니다.
+description: Windows 10 디바이스에서 방화벽을 켜서 회사 리소스에 액세스할 수 있도록 하는 방법을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -26,7 +26,7 @@ ms.locfileid: "43150602"
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>Windows Defender 방화벽 켜기
 
-직장이나 학교에서는 자체 리소스에 액세스하는 장치가 안전한지 확인해야 합니다. 장치가 리소스에 액세스하도록 설정하는 방법 중 하나는 Windows Defender 방화벽을 켜는 것입니다. 켜는 방법은 다음과 같습니다.
+직장이나 학교에서는 자체 리소스에 액세스하는 디바이스가 안전한지 확인해야 합니다. 디바이스가 리소스에 액세스하도록 설정하는 방법 중 하나는 Windows Defender 방화벽을 켜는 것입니다. 켜는 방법은 다음과 같습니다.
 
 1. **시작**으로 이동하여 **제어판**을 엽니다.
 2. **시스템 및 보안** > **Windows Defender 방화벽**을 엽니다.

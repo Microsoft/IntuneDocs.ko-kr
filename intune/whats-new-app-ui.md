@@ -1,7 +1,7 @@
 ---
 title: Intune 최종 사용자 앱 UI 업데이트
 titlesuffix: Microsoft Intune
-description: Microsoft Intune을 사용하여 최종 사용자 장치에서 작동하는 앱의 UI가 어떻게 변경되었는지 알아봅니다.
+description: Microsoft Intune을 사용하여 최종 사용자 디바이스에서 작동하는 앱의 UI가 어떻게 변경되었는지 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -31,7 +31,7 @@ ms.locfileid: "52190033"
 ## <a name="week-of-november-12-2018"></a>2018년 11월 12일 주
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows 회사 포털 바로 가기 키 <!-- 2771518 -->
-최종 사용자는 바로 가기 키(액셀러레이터 키)를 사용하여 Windows 회사 포털에서 앱 및 장치 작업을 트리거할 수 있습니다.
+최종 사용자는 바로 가기 키(액셀러레이터 키)를 사용하여 Windows 회사 포털에서 앱 및 디바이스 작업을 트리거할 수 있습니다.
 
 ## <a name="week-of-october-22-2018"></a>2018년 10월 22일이 있는 주
 
@@ -43,12 +43,12 @@ Microsoft Intune 관리자는 iOS 회사 포털 앱의 사용자 프로필 페�
 ## <a name="week-of-august-27-2018"></a>2018년 8월 27일 주  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트<!--2000968 -->  
-고객으로부터의 피드백에 기반한 새 기능을 회사 포털 웹 사이트에 추가했습니다. 장치의 기존 기능과 유용성이 크게 향상됩니다. 사이트 영역&ndash;예: 장치 세부 정보, 피드백, 지원 및 장치 개요&ndash;은 응답성이 높은 최신의 새로운 디자인을 제공합니다. [Intune 회사 포털 웹 사이트 설명서](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)는 이러한 변경 내용을 반영하도록 업데이트되었습니다.   
+고객으로부터의 피드백에 기반한 새 기능을 회사 포털 웹 사이트에 추가했습니다. 디바이스의 기존 기능과 유용성이 크게 향상됩니다. 사이트 영역&ndash;예: 디바이스 세부 정보, 피드백, 지원 및 디바이스 개요&ndash;은 응답성이 높은 최신의 새로운 디자인을 제공합니다. [Intune 회사 포털 웹 사이트 설명서](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)는 이러한 변경 내용을 반영하도록 업데이트되었습니다.   
 
 표시되는 업데이트는 다음을 포함합니다.  
 
-- 모든 장치 플랫폼에서 간소화된 워크플로
-- 향상된 장치 식별 및 등록 흐름
+- 모든 디바이스 플랫폼에서 간소화된 워크플로
+- 향상된 디바이스 식별 및 등록 흐름
 - 더 유용한 오류 메시지
 - 전문 기술 용어는 줄이고 친근한 언어 사용
 - 앱에 대한 직접 링크를 공유하는 기능
@@ -57,15 +57,15 @@ Microsoft Intune 관리자는 iOS 회사 포털 앱의 사용자 프로필 페�
 
 |업데이트됨|이전|
 |---|---|
-|![업데이트된 장치 페이지는 더 이상 전체 목록 위에 팝업으로 표시하지 않고 장치 정보 위에 바르게 정렬된 장치를 표시합니다.](./media/iwp-device-after-1803.png)|![이전 버전의 장치 페이지입니다.](./media/iwp-device-before-1803.png)|
+|![업데이트된 디바이스 페이지는 더 이상 전체 목록 위에 팝업으로 표시하지 않고 디바이스 정보 위에 바르게 정렬된 디바이스를 표시합니다.](./media/iwp-device-after-1803.png)|![이전 버전의 디바이스 페이지입니다.](./media/iwp-device-before-1803.png)|
 |![업데이트된 앱 설치 페이지는 게시 날짜, 버전 및 앱 형식 등 설명 및 다양한 설치 정보 위에 앱을 바르게 보여줍니다.](./media/iwp-app-install-after-1803.png)|![이전 버전의 앱 설치 페이지입니다.](./media/iwp-app-install-before-1803.png)|  
 
 ## <a name="week-of-july-16-2018"></a>2018년 7월 16일 주  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 동기화할 수 있는 더 많은 기회   
-이제 Windows용 회사 포털 앱을 사용하여 Windows 작업 표시줄 및 시작 메뉴에서 직접 동기화를 시작할 수 있습니다. 이 기능은 장치를 동기화하고 회사 리소스에 액세스하는 작업만 수행하는 경우에 특히 유용합니다. 새 기능에 액세스하려면 작업 표시줄 또는 시작 메뉴에 고정되어 있는 회사 포털 아이콘을 마우스 오른쪽 단추로 클릭합니다. 메뉴 옵션(점프 목록이라고도 함)에서 **이 장치 동기화**를 선택합니다. 회사 포털에 **설정** 페이지가 열리고 동기화가 시작됩니다.  
+이제 Windows용 회사 포털 앱을 사용하여 Windows 작업 표시줄 및 시작 메뉴에서 직접 동기화를 시작할 수 있습니다. 이 기능은 디바이스를 동기화하고 회사 리소스에 액세스하는 작업만 수행하는 경우에 특히 유용합니다. 새 기능에 액세스하려면 작업 표시줄 또는 시작 메뉴에 고정되어 있는 회사 포털 아이콘을 마우스 오른쪽 단추로 클릭합니다. 메뉴 옵션(점프 목록이라고도 함)에서 **이 디바이스 동기화**를 선택합니다. 회사 포털에 **설정** 페이지가 열리고 동기화가 시작됩니다.  
 
-![장치의 바탕 화면에 있는 Windows 작업 표시줄의 스크린샷 회사 포털 앱 프로그램 아이콘을 클릭하여 "작업 표시줄에 고정", "창 닫기" 및 "이 장치 동기화" 작업 옵션이 있는 메뉴를 표시합니다.](./media/sync-device-from-start-menu-1807.png)  
+![디바이스의 바탕 화면에 있는 Windows 작업 표시줄의 스크린샷 회사 포털 앱 프로그램 아이콘을 클릭하여 "작업 표시줄에 고정", "창 닫기" 및 "이 디바이스 동기화" 작업 옵션이 있는 메뉴를 표시합니다.](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱의 새 검색 환경  
 
@@ -132,17 +132,17 @@ Android의 [자료 디자인](https://material.io/) 지침에 따르도록 Andro
 
 ## <a name="week-of-november-27-2017"></a>2017년 11월 27일 주
 
-### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Windows 10용 회사 포털 앱에 대한 설정 가이드의 새로운 "장치 범주" 단계 <!-- 1335292 -->
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Windows 10용 회사 포털 앱에 대한 설정 가이드의 새로운 "디바이스 범주" 단계 <!-- 1335292 -->
 
 [장치 그룹 매핑](device-group-mapping.md)을 사용하도록 설정한 경우 이제 Windows 10용 회사 포털 앱에서 사용자가 장치를 등록한 후 장치 범주를 선택하는 과정을 안내합니다.
 
-![장치 그룹 매핑 범주](./media/w10_cp_category_device_setup_after_1711.png)
+![디바이스 그룹 매핑 범주](./media/w10_cp_category_device_setup_after_1711.png)
 
 ## <a name="week-of-november-13-2017"></a>2017년 11월 13일 주
 
-### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>버전 2.9.0에 대한 iOS 회사 포털의 향상된 장치 설정 워크플로 기능<!-- 1417174 -->
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>버전 2.9.0에 대한 iOS 회사 포털의 향상된 디바이스 설정 워크플로 기능<!-- 1417174 -->
 
-iOS용 회사 포털 앱에서 장치 설정 워크플로를 개선했습니다. 언어는 더욱 친숙하게 변경되었으며, 최대한 화면을 결합했습니다. 또한 전체 설정 텍스트에서 회사 이름을 사용하여 언어가 회사에 더욱 구체적으로 변경되었습니다.
+iOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습니다. 언어는 더욱 친숙하게 변경되었으며, 최대한 화면을 결합했습니다. 또한 전체 설정 텍스트에서 회사 이름을 사용하여 언어가 회사에 더욱 구체적으로 변경되었습니다.
 
 > [!NOTE]
 > **Microsoft Intune** > **클라이언트 앱** > **회사 포털 브랜딩** > **회사 이름**에는 Azure Portal에서 설정한 회사 이름이 사용됩니다. 이 값을 설정하지 않으면 **Azure Active Directory** > **속성** > **이름**에 설정된 테넌트 이름이 사용됩니다. 회사 포털 브랜딩에서 회사 이름을 설정하지 않았고 테넌트 이름을 표시하지 않으려면 [회사 포털 브랜딩] 탭에서 회사 이름을 설정하는 것이 좋습니다. 이 문자열을 회사 포털의 헤더에 표시하지 않으려면 “로고 옆에 회사 이름 표시” 확인란을 선택 취소하면 됩니다.
@@ -189,8 +189,8 @@ iOS용 회사 포털 앱에서 장치 설정 워크플로를 개선했습니다.
 
 ## <a name="week-of-october-2-2017"></a>2017년 10월 2일이 있는 주
 
-### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>회사 포털의 향상된 장치 설정 워크플로 기능<!-- 1490692 -->
-Android용 회사 포털 앱에서 장치 설치 워크플로를 개선했습니다. 언어는 귀사를 위해 더욱 친숙하고 구체적으로 변경되었으며, 최대한 화면을 결합했습니다. 
+### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>회사 포털의 향상된 디바이스 설정 워크플로 기능<!-- 1490692 -->
+Android용 회사 포털 앱에서 디바이스 설치 워크플로를 개선했습니다. 언어는 귀사를 위해 더욱 친숙하고 구체적으로 변경되었으며, 최대한 화면을 결합했습니다. 
 
 |이전|이러한|
 |---|---|
@@ -199,7 +199,7 @@ Android용 회사 포털 앱에서 장치 설치 워크플로를 개선했습니
 |![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
 |![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
 
-Android 회사 프로필 장치에서 추가 단계가 개선되었습니다.
+Android 회사 프로필 디바이스에서 추가 단계가 개선되었습니다.
 
 |이전|이러한|
 |---|---|
@@ -235,11 +235,11 @@ Android 회사 프로필 장치에서 추가 단계가 개선되었습니다.
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 메일 앱의 OAuth 지원 <!-- 1196951 -->
 
-Intune을 사용하는 조건부 액세스는 OAuth를 통해 iOS 장치에서 더욱 안전한 인증을 지원합니다. 이를 지원하기 위해 iOS용 회사 포털 앱에 더욱 안전한 인증을 허용하는 다른 흐름이 생겼습니다. 최종 사용자가 메일 앱에서 새 Exchange 계정에 로그인하려고 할 때 웹 보기 메시지가 표시됩니다. Intune에 등록되면 기본 메일 앱이 인증서에 액세스하도록 허용할지를 묻는 메시지가 표시됩니다. 대부분의 최종 사용자에게 격리된 메일이 더 이상 표시되지 않습니다. 기존 메일 계정에서는 기본 인증 프로토콜을 계속 사용하므로 이러한 사용자에게는 격리 메일이 계속 배달됩니다. 최종 사용자에 대한 이 로그인 환경은 Office 모바일 앱의 로그인 환경과 비슷합니다.
+Intune을 사용하는 조건부 액세스는 OAuth를 통해 iOS 디바이스에서 더욱 안전한 인증을 지원합니다. 이를 지원하기 위해 iOS용 회사 포털 앱에 더욱 안전한 인증을 허용하는 다른 흐름이 생겼습니다. 최종 사용자가 메일 앱에서 새 Exchange 계정에 로그인하려고 할 때 웹 보기 메시지가 표시됩니다. Intune에 등록되면 기본 메일 앱이 인증서에 액세스하도록 허용할지를 묻는 메시지가 표시됩니다. 대부분의 최종 사용자에게 격리된 메일이 더 이상 표시되지 않습니다. 기존 메일 계정에서는 기본 인증 프로토콜을 계속 사용하므로 이러한 사용자에게는 격리 메일이 계속 배달됩니다. 최종 사용자에 대한 이 로그인 환경은 Office 모바일 앱의 로그인 환경과 비슷합니다.
 
 ![기본 메일 앱의 계정 유형을 선택합니다.](./media/ios-11-ca-email-after-1708-01.png)
 
-![Exchange를 선택하면 iOS 장치에서 메일 주소 및 계정 이름을 묻습니다.](./media/ios-11-ca-email-after-1708-02.png)
+![Exchange를 선택하면 iOS 디바이스에서 메일 주소 및 계정 이름을 묻습니다.](./media/ios-11-ca-email-after-1708-02.png)
 
 ![메일 주소 및 계정 이름을 제공합니다.](./media/ios-11-ca-email-after-1708-03.png)
 
@@ -247,7 +247,7 @@ Intune을 사용하는 조건부 액세스는 OAuth를 통해 iOS 장치에서 �
 
 ![Microsoft 페이지에 암호를 제공합니다.](./media/ios-11-ca-email-after-1708-05.png)
 
-![Microsoft에서 장치를 관리에 등록할지 묻습니다.](./media/ios-11-ca-email-after-1708-06.png)
+![Microsoft에서 디바이스를 관리에 등록할지 묻습니다.](./media/ios-11-ca-email-after-1708-06.png)
 
 ![회사 포털 웹 사이트에서 등록하라는 메시지가 사용자에게 표시됩니다.](./media/ios-11-ca-email-after-1708-07.png)
 
@@ -266,15 +266,15 @@ Intune MAM(모바일 응용 프로그램 관리) 대화 상자가 최신 모양�
 ![최신 인터페이스](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10용 회사 포털 앱의 “장치 세부 정보” 페이지에 대한 업데이트 <!-- 1287448 -->
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10용 회사 포털 앱의 “디바이스 세부 정보” 페이지에 대한 업데이트 <!-- 1287448 -->
 
-Windows 10용 회사 포털 앱이 __장치 세부 정보__ 페이지의 제목 아래에서 속성으로 __범주__ 태그가 이동됩니다.
+Windows 10용 회사 포털 앱이 __디바이스 세부 정보__ 페이지의 제목 아래에서 속성으로 __범주__ 태그가 이동됩니다.
 
-![Windows용 회사 포털 앱의 “장치 세부 정보” 화면으로, 이제 해당 화면의 제목 바로 아래가 아니라 속성으로 “범주” 필드가 표시됩니다.](./media/cp_win10_category_tag_move_after_1708.png)
+![Windows용 회사 포털 앱의 “디바이스 세부 정보” 화면으로, 이제 해당 화면의 제목 바로 아래가 아니라 속성으로 “범주” 필드가 표시됩니다.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="july-2017"></a>2017년 7월
 
-### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>앱 세부 정보 페이지에 Android 장치의 새 정보가 표시됨 <!--1287476-->
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>앱 세부 정보 페이지에 Android 디바이스의 새 정보가 표시됨 <!--1287476-->
 
 Android용 회사 포털 앱의 앱 세부 정보 페이지에는 이제 IT 관리자가 해당 앱에 대해 정의한 앱 범주가 표시됩니다.
 
@@ -282,9 +282,9 @@ Android용 회사 포털 앱의 앱 세부 정보 페이지에는 이제 IT 관�
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>모든 플랫폼에 대해 회사 포털 앱 전체에서 로그인 환경 개선됨 <!--User Story 1132123-->
 
-Android, iOS 및 Windows용 Intune 회사 포털 앱에 대한 로그인 환경을 개선하게 될 향후 몇 개월 내에 제공될 변경이 있음을 알려드립니다. Azure AD에서 이 변경 내용을 적용할 경우 회사 포털 앱에 대한 모든 플랫폼에서 새로운 사용자 환경이 자동으로 나타나게 됩니다. 또한 사용자가 이제 생성된 일회용 코드를 사용하여 다른 장치에서 회사 포털에 로그인할 수도 있습니다. 이 기능은 사용자가 자격 증명 없이 로그인해야 할 경우에 특히 유용합니다.  
+Android, iOS 및 Windows용 Intune 회사 포털 앱에 대한 로그인 환경을 개선하게 될 향후 몇 개월 내에 제공될 변경이 있음을 알려드립니다. Azure AD에서 이 변경 내용을 적용할 경우 회사 포털 앱에 대한 모든 플랫폼에서 새로운 사용자 환경이 자동으로 나타나게 됩니다. 또한 사용자가 이제 생성된 일회용 코드를 사용하여 다른 디바이스에서 회사 포털에 로그인할 수도 있습니다. 이 기능은 사용자가 자격 증명 없이 로그인해야 할 경우에 특히 유용합니다.  
 
-아래에서 이전 로그인 환경, 자격 증명을 사용하는 새 로그인 환경, 그리고 다른 장치로부터의 새 로그인 환경을 볼 수 있습니다.
+아래에서 이전 로그인 환경, 자격 증명을 사용하는 새 로그인 환경, 그리고 다른 디바이스로부터의 새 로그인 환경을 볼 수 있습니다.
 
 __이전 로그인 환경__
 
@@ -314,13 +314,13 @@ __다른 장치에서 로그인__ 링크를 누릅니다.
 
 브라우저를 시작하고 [https://aka.ms/devicelogin](https://aka.ms/devicelogin)으로 이동합니다.
 
-![회사 포털 앱이 아닌 작업 컴퓨터에서 사용자 브라우저 이미지 표시되는 "장치 로그인" 페이지에서 사용자에게 회사 포털 앱에서 받은 코드를 입력하라는 메시지가 나타납니다.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+![회사 포털 앱이 아닌 작업 컴퓨터에서 사용자 브라우저 이미지 표시되는 "디바이스 로그인" 페이지에서 사용자에게 회사 포털 앱에서 받은 코드를 입력하라는 메시지가 나타납니다.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
 회사 포털 앱에서 확인한 코드를 입력합니다. __계속__을 선택하면 스마트 카드와 같이 회사에서 지원되는 방법을 사용하여 인증할 수 있습니다.
 
-![사용자는 필드에 고유한 코드를 입력하고 "장치 로그인" 사이트에서 Intune 회사 포털이 로그인에 필요한 인증을 수신하는 올바른 앱인지 확인을 요구합니다.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+![사용자는 필드에 고유한 코드를 입력하고 "디바이스 로그인" 사이트에서 Intune 회사 포털이 로그인에 필요한 인증을 수신하는 올바른 앱인지 확인을 요구합니다.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
-![사용자가 장치에서 회사 포털 앱에 로그인했으며 이 페이지를 닫을 수 있음을 언급하는 확인 페이지](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+![사용자가 디바이스에서 회사 포털 앱에 로그인했으며 이 페이지를 닫을 수 있음을 언급하는 확인 페이지](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
 회사 포털 앱에서 로그인이 시작됩니다.
 
@@ -331,47 +331,47 @@ __다른 장치에서 로그인__ 링크를 누릅니다.
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>이제 Android용 회사 포털 앱에는 앱 보호 정책에 대한 새로운 최종 사용자 환경이 있습니다.
 고객 의견에 따라 Android용 회사 포털 앱에 **회사 콘텐츠 액세스** 단추가 표시됩니다. 이는 Intune 모바일 응용 프로그램 관리의 기능인 앱 보호 정책을 지원하는 앱만 액세스하면 되는 경우 최종 사용자가 불필요하게 등록 프로세스를 수행하지 않도록 하기 위한 것입니다.
 
-사용자는 장치 등록을 시작하는 대신 **회사 콘텐츠 액세스** 단추를 탭합니다.
+사용자는 디바이스 등록을 시작하는 대신 **회사 콘텐츠 액세스** 단추를 탭합니다.
 
 ![표준 사례처럼 즉각적인 등록 옵션을 제공하는 대신 중간에 큰 텍스트 "회사 콘텐츠 액세스"가 표시된 Android 회사 포털 앱 이미지](./media/and_access_company_content_after_1706.png)
 
-그러면 사용자가 장치에서 사용하기 위해 앱에 권한을 부여하도록 회사 포털 웹 사이트로 이동됩니다. 회사 포털 웹 사이트에서 사용자 자격 증명을 확인합니다.
+그러면 사용자가 디바이스에서 사용하기 위해 앱에 권한을 부여하도록 회사 포털 웹 사이트로 이동됩니다. 회사 포털 웹 사이트에서 사용자 자격 증명을 확인합니다.
 
 ![로그인을 확인하는 회사 포털 웹 사이트 이미지](./media/and_iwp_sign_in_auth_page_after_1706.png)
 
 **동작** 메뉴를 탭하면 전체 관리에 앱을 등록할 수 있습니다.
 
-![장치 등록 옵션이 있는 화면 오른쪽 위의 메뉴가 표시된 Android용 회사 포털 앱 이미지](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
+![디바이스 등록 옵션이 있는 화면 오른쪽 위의 메뉴가 표시된 Android용 회사 포털 앱 이미지](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
 
 ### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>Windows 10 크리에이터스 업데이트와 동기화하는 앱 개선 사항 <!--676505-->
 
-Windows 10용 회사 포털 앱은 이제 Windows 10 크리에이터스 업데이트(버전 1703)가 설치되어 있는 장치의 앱 설치 요청 동기화를 자동으로 시작합니다. 이렇게 하면 "동기화 보류 중" 상태에 있는 동안의 앱 설치 지연 문제를 줄일 수 있습니다. 사용자가 수동으로 앱 내에서 동기화를 시작할 수도 있습니다.
+Windows 10용 회사 포털 앱은 이제 Windows 10 크리에이터스 업데이트(버전 1703)가 설치되어 있는 디바이스의 앱 설치 요청 동기화를 자동으로 시작합니다. 이렇게 하면 "동기화 보류 중" 상태에 있는 동안의 앱 설치 지연 문제를 줄일 수 있습니다. 사용자가 수동으로 앱 내에서 동기화를 시작할 수도 있습니다.
 
 ![Microsoft Word 다운로드가 회사 포털 앱 스토어에서 보류 중 상태인 Windows 10 회사 포털 앱 이미지](./media/w10_download_pending_after_1706.png)
 
-![장치가 동기화 중이며 앱 다운로드를 시도하고 있음을 나타내는 상태 메시지와 함께 새 자동 동기화 상태가 표시된 Windows 10 회사 포털 앱 이미지](./media/w10_download_pending_syncing_after_1706.png)
+![디바이스가 동기화 중이며 앱 다운로드를 시도하고 있음을 나타내는 상태 메시지와 함께 새 자동 동기화 상태가 표시된 Windows 10 회사 포털 앱 이미지](./media/w10_download_pending_syncing_after_1706.png)
 
 ### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Windows 10 회사 포털에 대한 새로운 단계별 환경 <!---1058938--->
-Windows 10용 회사 포털 앱에 식별되거나 등록되지 않은 장치에 대한 단계별 Intune 연습 환경이 포함될 예정입니다. 새 환경에서는 Azure Active Directory 등록(조건부 액세스 기능에 필요) 및 MDM 등록(장치 관리 기능에 필요) 과정을 사용자에게 안내하는 단계별 지침을 제공합니다. 회사 포털 홈 페이지에서 안내 방식 환경에 액세스할 수 있습니다. 사용자는 이러한 등록을 완료하지 않아도 앱을 계속 사용할 수 있지만 제한된 기능만 사용할 수 있습니다.
+Windows 10용 회사 포털 앱에 식별되거나 등록되지 않은 디바이스에 대한 단계별 Intune 연습 환경이 포함될 예정입니다. 새 환경에서는 Azure Active Directory 등록(조건부 액세스 기능에 필요) 및 MDM 등록(디바이스 관리 기능에 필요) 과정을 사용자에게 안내하는 단계별 지침을 제공합니다. 회사 포털 홈 페이지에서 안내 방식 환경에 액세스할 수 있습니다. 사용자는 이러한 등록을 완료하지 않아도 앱을 계속 사용할 수 있지만 제한된 기능만 사용할 수 있습니다.
 
-이 업데이트는 Windows 10 1주년 업데이트(빌드 1607) 이상을 실행하는 장치에서만 표시됩니다.
+이 업데이트는 Windows 10 1주년 업데이트(빌드 1607) 이상을 실행하는 디바이스에서만 표시됩니다.
 
-![사용 중인 장치가 회사에서 사용하도록 아직 설정되지 않았으며 사용자가 설정을 시작하려면 메시지를 선택해야 한다고 사용자에게 알리는 상태 메시지가 "장치" 목록의 중간에 표시된 Windows 10 회사 포털 앱 방문 페이지 이미지](./media/win10_guided_enroll_select_setup_after_1706.png)
+![사용 중인 디바이스가 회사에서 사용하도록 아직 설정되지 않았으며 사용자가 설정을 시작하려면 메시지를 선택해야 한다고 사용자에게 알리는 상태 메시지가 "디바이스" 목록의 중간에 표시된 Windows 10 회사 포털 앱 방문 페이지 이미지](./media/win10_guided_enroll_select_setup_after_1706.png)
 
-![이 장치에 회사 계정을 추가해야 관리에 등록할 수 있다고 사용자에게 경고하는 Windows 10 회사 포털 앱 설정 페이지 이미지](./media/win10_guided_enroll_we_help_setup_after_1706.png)
+![이 디바이스에 회사 계정을 추가해야 관리에 등록할 수 있다고 사용자에게 경고하는 Windows 10 회사 포털 앱 설정 페이지 이미지](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
-![등록을 완료하려면 설정 앱으로 이동한 다음, "연결"을 선택해야 한다고 사용자에게 알리는 이 장치 페이지에 회사 계정을 추가하는 Windows 10 회사 포털 앱의 이미지 이렇게 하면 화면에서 회사 포털 앱으로 돌아가 등록을 완료해야 한다고 알립니다.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+![등록을 완료하려면 설정 앱으로 이동한 다음, "연결"을 선택해야 한다고 사용자에게 알리는 이 디바이스 페이지에 회사 계정을 추가하는 Windows 10 회사 포털 앱의 이미지 이렇게 하면 화면에서 회사 포털 앱으로 돌아가 등록을 완료해야 한다고 알립니다.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
-![이제 사용자 장치가 등록되었으며 계속하려면 '다음' 단추를 탭해야 한다고 알리는 완료 상태 메시지가 표시된 Windows 10 회사 포털 앱의 관리에 등록 화면 이미지](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
+![이제 사용자 디바이스가 등록되었으며 계속하려면 '다음' 단추를 탭해야 한다고 알리는 완료 상태 메시지가 표시된 Windows 10 회사 포털 앱의 관리에 등록 화면 이미지](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
-![사용자에게 모든 설정이 완료되었으며 회사 계정을 제대로 추가하여 장치가 등록되었음을 알리는 Windows 10 회사 포털 앱 완료 화면 이미지](./media/win10_guided_enroll_youre_all_set_after_1706.png)
+![사용자에게 모든 설정이 완료되었으며 회사 계정을 제대로 추가하여 디바이스가 등록되었음을 알리는 Windows 10 회사 포털 앱 완료 화면 이미지](./media/win10_guided_enroll_youre_all_set_after_1706.png)
 
 ### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>회사 포털을 쉽게 제거할 수 있는 새로운 메뉴 작업 <!--1164569-->
-사용자 여러분의 의견에 따라 장치에서 회사 포털 제거를 시작할 수 있는 새로운 메뉴 작업이 Android용 회사 포털 앱에 추가되었습니다. 이 작업을 수행하면 Intune 관리에서 장치가 제거되므로 사용자가 장치에서 앱을 제거할 수 있습니다.
+사용자 여러분의 의견에 따라 디바이스에서 회사 포털 제거를 시작할 수 있는 새로운 메뉴 작업이 Android용 회사 포털 앱에 추가되었습니다. 이 작업을 수행하면 Intune 관리에서 디바이스가 제거되므로 사용자가 디바이스에서 앱을 제거할 수 있습니다.
 
 ![오른쪽 위에 작업 메뉴가 열려 있는 Android 회사 포털 앱의 이미지 새로운 "회사 포털 제거" 옵션은 "내 프로필"과 "설정" 아래, 그리고 "사용 약관", "도움말 및 의견", "정보" 위에 있는 세 번째 옵션으로 제공됩니다.](./media/android_remove_cp_menu_action_after_1705.png)
 
-![작업 메뉴에서 새로운 "회사 포털 제거" 옵션을 선택하면 제공되는 확인 대화 상자 이미지 이 대화 상자에는 "회사 포털을 제거하면 장치를 더 이상 IT 관리자가 관리하지 않게 되며 회사 데이터, 회사 앱 및 회사 메일에 대한 액세스 권한이 제거될 수 있습니다."라는 알림이 표시됩니다. 그런 다음 "예"를 선택하여 회사 포털 앱을 제거할 것인지를 확인하라는 메시지가 표시됩니다.](./media/android_remove_cp_menu_confirmation_after_1705.png)
+![작업 메뉴에서 새로운 "회사 포털 제거" 옵션을 선택하면 제공되는 확인 대화 상자 이미지 이 대화 상자에는 "회사 포털을 제거하면 디바이스를 더 이상 IT 관리자가 관리하지 않게 되며 회사 데이터, 회사 앱 및 회사 메일에 대한 액세스 권한이 제거될 수 있습니다."라는 알림이 표시됩니다. 그런 다음 "예"를 선택하여 회사 포털 앱을 제거할 것인지를 확인하라는 메시지가 표시됩니다.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>iOS용 회사 포털 앱의 앱 타일 개선 사항 <!--1230777-->
 사용자가 회사 포털에 대해 설정하는 브랜딩 색을 반영하도록 홈 페이지의 앱 타일 디자인이 업데이트되었습니다.
@@ -385,7 +385,7 @@ Windows 10용 회사 포털 앱에 식별되거나 등록되지 않은 장치에
 ![조직에 맞는 색을 선택하는 기능이 반영된 업데이트 후의 iOS용 회사 포털 앱 이미지](./media/cp_ios_homepage_after_1705.png)
 
 ### <a name="account-picker-now-available-for-the-company-portal-app-for-ios"></a>이제 iOS용 회사 포털 앱에서 계정 선택기 사용 가능
-사용자가 회사 또는 학교 계정을 사용하여 iOS 장치에서 다른 Microsoft 앱에 로그인한 경우 처음으로 회사 포털에 로그인할 때 새로운 계정 선택기가 나타날 수 있습니다.
+사용자가 회사 또는 학교 계정을 사용하여 iOS 디바이스에서 다른 Microsoft 앱에 로그인한 경우 처음으로 회사 포털에 로그인할 때 새로운 계정 선택기가 나타날 수 있습니다.
 
 ![테스트 사용자 "Robin Swanson"이 두 전자 메일 주소 중 하나를 선택하는 방법을 보여 주는 계정 선택기 이미지 위 그림에 나와 있는 것처럼, 두 주소 아래에는 사용자가 다른 계정으로 로그인하는 데 사용할 수 있는 단추가 있습니다.](./media/cp_ios_multi-account-selector-after-1705.png)
 
@@ -435,7 +435,7 @@ Android 회사 포털 앱의 업데이트에는 사용자가 앱을 시작하거
 </html>
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 회사 포털 앱에 대해 앱 설치 상태 개선 <!--676495-->
-이제 Windows 10 회사 포털 앱에서는 앱 세부 정보 페이지에 설치 진행률 표시줄을 제공합니다. 이 진행률 표시줄은 Windows 10 1주년 업데이트 이상을 실행하는 장치의 최신 앱에서 지원됩니다.
+이제 Windows 10 회사 포털 앱에서는 앱 세부 정보 페이지에 설치 진행률 표시줄을 제공합니다. 이 진행률 표시줄은 Windows 10 1주년 업데이트 이상을 실행하는 디바이스의 최신 앱에서 지원됩니다.
 
 __이전__ ![상태가 ‘설치 중’으로 표시되는 이전 버전의 로딩 화면 이미지](./media/cp_win10_install_status_before_1704.png)
 
@@ -448,11 +448,11 @@ __이후__ ![이제 설치 진행률 표시줄이 표시되는 업데이트된 �
 
 * __색__: 탭 헤더에 사용자 지정 색상표에 따라 색을 표시할 수 있습니다.
 
-![왼쪽은 업데이트 전의 Android용 회사 포털 앱 이미지입니다. 오른쪽은 업데이트 후의 Android용 회사 포털 앱 이미지입니다. 두 이미지 모두에서 사용 가능한 세 탭인 앱, 장치 및 IT 담당자 중에 장치 탭이 선택된 탭으로 표시되어 있습니다.](./media/CP_Android_DevicesTab_BeforeAfter.png)
+![왼쪽은 업데이트 전의 Android용 회사 포털 앱 이미지입니다. 오른쪽은 업데이트 후의 Android용 회사 포털 앱 이미지입니다. 두 이미지 모두에서 사용 가능한 세 탭인 앱, 디바이스 및 IT 담당자 중에 디바이스 탭이 선택된 탭으로 표시되어 있습니다.](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
 * __인터페이스__: __앱__ 탭에서 __추천 앱__ 및 __모든 앱__ 단추가 업데이트되었습니다. __검색__ 단추는 이제 부동 작업 단추입니다.
 
-![왼쪽은 업데이트 전의 Android용 회사 포털 앱 이미지입니다. 오른쪽은 업데이트 후의 Android용 회사 포털 앱 이미지입니다. 두 이미지 모두에서 사용 가능한 세 탭인 앱, 장치, IT 담당자 중에서 앱 탭이 선택된 탭으로 표시되어 있습니다.](./media/CP_Android_AppsTab_BeforeAfter.png)
+![왼쪽은 업데이트 전의 Android용 회사 포털 앱 이미지입니다. 오른쪽은 업데이트 후의 Android용 회사 포털 앱 이미지입니다. 두 이미지 모두에서 사용 가능한 세 탭인 앱, 디바이스, IT 담당자 중에서 앱 탭이 선택된 탭으로 표시되어 있습니다.](./media/CP_Android_AppsTab_BeforeAfter.png)
 
 * __탐색__: 모든 앱은 쉽게 탐색할 수 있도록 __추천__, __전체__ 및 __범주__ 탭으로 구분된 뷰를 표시합니다. __IT 담당자__는 가독성 향상을 위해 간소화 되었습니다.
 
@@ -471,9 +471,9 @@ __이후__ ![이제 설치 진행률 표시줄이 표시되는 업데이트된 �
 ## <a name="january-2017"></a>2017년 1월
 
 ### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>회사 포털 웹 사이트 현대화 <!--753980, announced 1701-->
-2월부터 회사 포털 웹 사이트는 관리 장치가 없는 사용자를 대상으로 하는 앱을 지원합니다. 웹 사이트는 다른 Microsoft 제품과 마찬가지로 새로운 고대비 색 구성표, 동적 그림 및 "햄버거 메뉴"를 사용합니다. ![이제 회사 포털 웹 사이트 왼쪽 상단에 추가된 햄버거 메뉴의 작은 이미지에는](./media/CP_hamburger_menu.png) 기술 지원팀 연락처 세부 정보와 기존 관리되는 장치에 관한 정보가 포함됩니다. 방문 페이지는 추천 및 최근에 업데이트된 앱에 대한 슬라이드를 포함하여 사용자가 사용할 수 있는 앱을 강조하도록 재조정됩니다.
+2월부터 회사 포털 웹 사이트는 관리 디바이스가 없는 사용자를 대상으로 하는 앱을 지원합니다. 웹 사이트는 다른 Microsoft 제품과 마찬가지로 새로운 고대비 색 구성표, 동적 그림 및 "햄버거 메뉴"를 사용합니다. ![이제 회사 포털 웹 사이트 왼쪽 상단에 추가된 햄버거 메뉴의 작은 이미지에는](./media/CP_hamburger_menu.png) 기술 지원팀 연락처 세부 정보와 기존 관리되는 디바이스에 관한 정보가 포함됩니다. 방문 페이지는 추천 및 최근에 업데이트된 앱에 대한 슬라이드를 포함하여 사용자가 사용할 수 있는 앱을 강조하도록 재조정됩니다.
 
-![왼쪽은 이전 버전의 [앱], [내 장치] 및 [Featured and Categories]\(추천 및 범주) 보기를 포함하는 회사 포털 웹 사이트의 현재 버전 이미지입니다. 오른쪽은 새로 고쳐진 앱 슬라이드, [Recently Published]\(최근 게시) 앱 목록 및 업데이트된 [Categories]\(범주) 보기가 포함된 회사 포털 웹 사이트의 업데이트된 버전 이미지입니다.](./media/CP_Website_BeforeAfter_Feb2016.png)
+![왼쪽은 이전 버전의 [앱], [내 디바이스] 및 [Featured and Categories] (추천 및 범주) 보기를 포함하는 회사 포털 웹 사이트의 현재 버전 이미지입니다. 오른쪽은 새로 고쳐진 앱 슬라이드, [Recently Published]\(최근 게시) 앱 목록 및 업데이트된 [Categories]\(범주) 보기가 포함된 회사 포털 웹 사이트의 업데이트된 버전 이미지입니다.](./media/CP_Website_BeforeAfter_Feb2016.png)
 
 ## <a name="coming-soon-in-the-ui"></a>UI에서 곧 공개 예정
 이는 사용자 인터페이스를 업데이트하여 사용자 환경을 개선할 방법에 대한 계획입니다.

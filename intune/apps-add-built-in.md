@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune을 사용하여 모바일 장치에 기본 제공 앱 추가
+title: Microsoft Intune을 사용하여 모바일 디바이스에 기본 제공 앱 추가
 titlesuffix: ''
-description: Intune을 사용하여 모바일 장치에 기본 제공 앱을 더 쉽게 설치하는 방법을 알아봅니다.
+description: Intune을 사용하여 모바일 디바이스에 기본 제공 앱을 더 쉽게 설치하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -25,7 +25,7 @@ ms.locfileid: "52181550"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune에 기본 제공 앱 추가
 
-*기본 제공* 앱 유형을 사용하면 Office 365 앱과 같이 엄격히 관리되는 앱을 iOS 및 Android 장치에 쉽게 할당할 수 있습니다. Excel, OneDrive, Outlook, Skype 등의 특정 앱을 이 앱 유형에 할당할 수 있습니다. 앱을 추가하면 *기본 제공 iOS 앱* 또는 *기본 제공 Android 앱* 중 하나로 앱 유형이 표시됩니다. 기본 제공 앱 유형을 사용하여 어떤 앱을 장치 사용자에게 게시할지 선택할 수 있습니다.
+*기본 제공* 앱 유형을 사용하면 Office 365 앱과 같이 엄격히 관리되는 앱을 iOS 및 Android 장치에 쉽게 할당할 수 있습니다. Excel, OneDrive, Outlook, Skype 등의 특정 앱을 이 앱 유형에 할당할 수 있습니다. 앱을 추가하면 *기본 제공 iOS 앱* 또는 *기본 제공 Android 앱* 중 하나로 앱 유형이 표시됩니다. 기본 제공 앱 유형을 사용하여 어떤 앱을 디바이스 사용자에게 게시할지 선택할 수 있습니다.
 
 이전 버전의 Intune 콘솔에서 Intune은 Outlook, OneDrive 등의 몇 가지 관리되는 기본 Office 365 앱을 제공했습니다. 이 관리되는 앱의 앱 유형은 *관리되는 iOS 스토어 앱* 또는 *관리되는 Android 앱*으로 태그되었습니다. 이러한 앱 유형을 사용하는 대신 기본 제공 앱 유형을 사용하는 것이 좋습니다. 기본 제공 앱 유형을 사용하면 보다 유연하게 Office 365 앱을 편집하고 삭제할 수 있습니다.
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune - Azure에서 장치 제한 설정 구성 | Microsoft Docs
-description: Microsoft Intune에서 Android, macOS, iOS, Windows Phone 및 Windows 10 장치에서 기능을 제한하는 장치 프로필 추가
+title: Microsoft Intune - Azure에서 디바이스 제한 설정 구성 | Microsoft Docs
+description: Microsoft Intune에서 Android, macOS, iOS, Windows Phone 및 Windows 10 디바이스에서 기능을 제한하는 디바이스 프로필 추가
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -20,24 +20,24 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/01/2018
 ms.locfileid: "52728789"
 ---
-# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune에서 장치 제한 설정 구성
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 제한 설정 구성
 
-장치 제한을 통해 다음과 같은 다양한 범주에 걸쳐 관리하는 광범위한 설정 및 기능을 제어할 수 있습니다.
+디바이스 제한을 통해 다음과 같은 다양한 범주에 걸쳐 관리하는 광범위한 설정 및 기능을 제어할 수 있습니다.
 - 보안
 - 브라우저
 - 하드웨어
 - 데이터 공유 설정
 
-예를 들어 iOS 장치의 사용자가 장치 카메라에 액세스하지 못하도록 하는 장치 제한 프로필을 만들 수 있습니다.
+예를 들어 iOS 디바이스의 사용자가 디바이스 카메라에 액세스하지 못하도록 하는 디바이스 제한 프로필을 만들 수 있습니다.
 
-장치 제한 프로필 기본 사항을 학습한 다음, 각 플랫폼에 대한 더 많은 아티클을 읽어 장치 세부 사항을 알아봅니다.
+디바이스 제한 프로필 기본 사항을 학습한 다음, 각 플랫폼에 대한 더 많은 아티클을 읽어 디바이스 세부 사항을 알아봅니다.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>장치 제한 설정을 포함하는 장치 프로필 만들기
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>디바이스 제한 설정을 포함하는 디바이스 프로필 만들기
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고, **Intune**을 기준으로 필터링한 다음, **Intune**을 선택합니다.
 2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
-3. 장치 제한 프로필의 **이름** 및 **설명**을 입력합니다.
-4. **플랫폼** 드롭다운 목록에서 사용자 지정 설정을 적용할 장치 플랫폼을 선택합니다. 현재 장치 제한 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
+3. 디바이스 제한 프로필의 **이름** 및 **설명**을 입력합니다.
+4. **플랫폼** 드롭다운 목록에서 사용자 지정 설정을 적용할 장치 플랫폼을 선택합니다. 현재 디바이스 제한 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
 
     - **OWA(Outlook Web Access)**
     - **Android 엔터프라이즈**

@@ -1,7 +1,7 @@
 ---
 title: iOS 교실 앱에 대한 Intune 설정
 titleSuffix: Microsoft Intune
-description: iOS 장치에서 교실 앱에 대한 설정을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
+description: iOS 디바이스에서 교실 앱에 대한 설정을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -32,21 +32,21 @@ ms.locfileid: "52180411"
 ## <a name="introduction"></a>소개
 [교실](https://itunes.apple.com/app/id1085319084)은 교사들이 교실에서 학습을 지도하고 학생 장치를 제어하도록 도와주는 앱입니다. 예를 들어 앱을 통해 교사는 다음을 수행할 수 있습니다.
 
-- 학생 장치에서 앱 열기
+- 학생 디바이스에서 앱 열기
 - iPad 화면 잠금 및 잠금 해제
 - 학생 iPad의 화면 보기
 - 학생 iPad를 책의 책갈피 또는 장으로 이동
 - 학생 iPad의 화면을 Apple TV에 표시
 
-장치에서 교실을 설정하려면 Intune iOS 교육 장치 프로필을 만들고 구성해야 합니다.
+디바이스에서 교실을 설정하려면 Intune iOS 교육 디바이스 프로필을 만들고 구성해야 합니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 
 이러한 설정을 구성하기 전에 다음을 고려하세요.
 
 - 교사 및 학생 iPad가 Intune에 등록되어 있어야 합니다.
-- 교사의 장치에 [Apple 교실](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) 앱을 설치했는지 확인합니다. 앱을 수동으로 설치하거나 [Intune 앱 관리](app-management.md)를 사용할 수 있습니다.
-- 교사 장치와 학생 장치 간 연결을 인증하도록 인증서를 구성해야 합니다(2단계, Intune에서 iOS 교육 프로필 만들기 및 할당 참조).
+- 교사의 디바이스에 [Apple 교실](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) 앱을 설치했는지 확인합니다. 앱을 수동으로 설치하거나 [Intune 앱 관리](app-management.md)를 사용할 수 있습니다.
+- 교사 디바이스와 학생 디바이스 간 연결을 인증하도록 인증서를 구성해야 합니다(2단계, Intune에서 iOS 교육 프로필 만들기 및 할당 참조).
 - 교사 및 학생 iPad가 같은 Wi-Fi 네트워크에 있고 Bluetooth를 사용할 수 있어야 합니다.
 - 교실 앱은 iOS 9.3 이상을 실행하는 감독 모드 iPad에서 실행됩니다.
 - 이 릴리스의 Intune에서는 각 학생이 전용 iPad를 보유한 1:1 시나리오 관리를 지원합니다.
@@ -55,7 +55,7 @@ ms.locfileid: "52180411"
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>1단계 - Azure Active Directory로 학교 데이터 가져오기
 
 Microsoft SDS(학교 데이터 동기화)를 사용하여 기존 SIS(학교 정보 시스템)에서 Azure AD(Azure Active Directory)로 학교 레코드를 가져옵니다.
-SDS는 SIS의 정보를 동기화하고 Azure AD에 저장합니다. Azure AD는 사용자 및 장치를 구성하도록 도와주는 Microsoft 관리 시스템입니다. 이 데이터를 사용하여 학생 및 수업을 관리할 수 있습니다. [SDS를 배포하는 방법에 대해 알아보세요](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
+SDS는 SIS의 정보를 동기화하고 Azure AD에 저장합니다. Azure AD는 사용자 및 디바이스를 구성하도록 도와주는 Microsoft 관리 시스템입니다. 이 데이터를 사용하여 학생 및 수업을 관리할 수 있습니다. [SDS를 배포하는 방법에 대해 알아보세요](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 
 ### <a name="how-to-import-data-using-sds"></a>SDS를 사용하여 데이터를 가져오는 방법
 
@@ -86,7 +86,7 @@ SDS는 SIS의 정보를 동기화하고 Azure AD에 저장합니다. Azure AD는
 9.  **설정** > **구성**을 선택합니다.
 
 
-다음 섹션에서는 교사 및 학생 iPad 간에 트러스트 관계를 설정하기 위한 인증서를 만듭니다. 인증서는 사용자 이름 및 암호를 입력할 필요 없이 장치 간 연결을 원활하게 자동으로 인증하는 데 사용됩니다.
+다음 섹션에서는 교사 및 학생 iPad 간에 트러스트 관계를 설정하기 위한 인증서를 만듭니다. 인증서는 사용자 이름 및 암호를 입력할 필요 없이 디바이스 간 연결을 원활하게 자동으로 인증하는 데 사용됩니다.
 
 >[!IMPORTANT]
 >사용할 교사 및 학생 인증서는 서로 다른 CA(인증 기관)에서 발급되어야 합니다. 기존 인증서 인프라에 연결된 두 개의 새 하위 CA를 교사 및 학생에 대해 하나씩 만들어야 합니다.
@@ -151,12 +151,12 @@ iOS 교육 프로필은 PFX 인증서만 지원하고 SCEP 인증서는 지원�
     
 프로필이 만들어지고 프로필 목록 창에 표시됩니다.
 
-학교 데이터를 Azure AD와 동기화할 때 만들어진 교실 그룹의 학생 장치에 프로필을 할당합니다([장치 프로필을 할당하는 방법](device-profile-assign.md) 참조.
+학교 데이터를 Azure AD와 동기화할 때 만들어진 교실 그룹의 학생 디바이스에 프로필을 할당합니다([디바이스 프로필을 할당하는 방법](device-profile-assign.md) 참조.
 
 ## <a name="next-steps"></a>다음 단계
 
-이제 교사가 교실 앱을 사용할 때 학생 장치를 완전히 제어할 수 있습니다.
+이제 교사가 교실 앱을 사용할 때 학생 디바이스를 완전히 제어할 수 있습니다.
 
 교실 앱에 대한 자세한 내용은 Apple 웹 사이트에서 [교실 앱 도움말](https://help.apple.com/classroom/ipad/2.0/)을 참조하세요.
 
-학생용 공유 iPad 장치를 구성하려면 [공유 iPad 장치에 대한 Intune 교육 설정을 구성하는 방법](education-settings-configure-ios-shared.md)을 참조하세요.
+학생용 공유 iPad 디바이스를 구성하려면 [공유 iPad 디바이스에 대한 Intune 교육 설정을 구성하는 방법](education-settings-configure-ios-shared.md)을 참조하세요.

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune - Azure에서 장치 프로필 만들기 | Microsoft Docs
-description: 플랫폼 형식 선택과 Azure Portal 내에서 설정 구성을 비롯하여 Microsoft Intune에서 장치 프로필을 추가하거나 구성합니다.
+title: Microsoft Intune - Azure에서 디바이스 프로필 만들기 | Microsoft Docs
+description: 플랫폼 형식 선택과 Azure Portal 내에서 설정 구성을 비롯하여 Microsoft Intune에서 디바이스 프로필을 추가하거나 구성합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,7 +22,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/26/2018
 ms.locfileid: "52303858"
 ---
-# <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune에서 장치 프로필 만들기
+# <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필 만들기
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 

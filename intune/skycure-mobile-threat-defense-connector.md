@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune을 사용한 Symantec 커넥터
 titlesuffix: ''
-description: 회사 리소스에 대한 모바일 장치 액세스를 제어하기 위해 Symantec Endpoint Protection Mobile을 사용하여 Intune을 통합하는 방법을 알아봅니다.
+description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Symantec Endpoint Protection Mobile을 사용하여 Intune을 통합하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -25,7 +25,7 @@ ms.locfileid: "52187704"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 커넥터
 
-Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 SEP Mobile(Symantec Endpoint Protection Mobile)에서 수행한 위험 평가에 따라 조건부 액세스를 사용하여 회사 리소스에 대한 모바일 장치 액세스를 제어할 수 있습니다. 위험은 다음을 비롯하여 SEP Mobile을 실행하는 장치에서 수집된 원격 분석에 따라 평가됩니다.
+Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 SEP Mobile(Symantec Endpoint Protection Mobile)에서 수행한 위험 평가에 따라 조건부 액세스를 사용하여 회사 리소스에 대한 모바일 디바이스 액세스를 제어할 수 있습니다. 위험은 다음을 비롯하여 SEP Mobile을 실행하는 디바이스에서 수집된 원격 분석에 따라 평가됩니다.
 
 -   물리적 방어
 
@@ -35,15 +35,15 @@ Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 SEP Mobile(Syma
 
 -   취약성 방어
 
-Intune 장치 준수 정책을 통해 SEP Mobile을 사용하도록 설정한 다음, 조건부 액세스 정책을 사용하여 회사 리소스에 액세스하는 비규격 장치를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
+Intune 디바이스 준수 정책을 통해 SEP Mobile을 사용하도록 설정한 다음, 조건부 액세스 정책을 사용하여 회사 리소스에 액세스하는 비규격 디바이스를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune과 SEP Mobile이 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 
-Android 또는 iOS용 SEP Mobile 앱은 파일 시스템, 네트워크 스택, 장치 및 응용 프로그램 원격 분석(사용 가능한 경우)을 캡처한 다음, Symantec 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
+Android 또는 iOS용 SEP Mobile 앱은 파일 시스템, 네트워크 스택, 디바이스 및 응용 프로그램 원격 분석(사용 가능한 경우)을 캡처한 다음, Symantec 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
 
-Intune 장치 준수 정책에는 SEP Mobile 위험 평가를 기반으로 하는 SEP Mobile에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 장치가 사용되는 정책을 준수하는지를 평가합니다.
+Intune 디바이스 준수 정책에는 SEP Mobile 위험 평가를 기반으로 하는 SEP Mobile에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다.
 
-장치가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 리소스에 대한 액세스가 차단됩니다. 차단된 장치의 사용자는 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있도록 SEP Mobile 모바일 앱에서 지침을 받습니다.
+디바이스가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 리소스에 대한 액세스가 차단됩니다. 차단된 디바이스의 사용자는 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있도록 SEP Mobile 모바일 앱에서 지침을 받습니다.
 
 Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
@@ -57,7 +57,7 @@ Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>악성 앱의 위협에 따라 액세스 제어
 
-맬웨어와 같은 악성 앱이 장치에서 감지되면 위협이 해결될 때까지 장치를 차단할 수 있습니다.
+맬웨어와 같은 악성 앱이 디바이스에서 감지되면 위협이 해결될 때까지 디바이스를 차단할 수 있습니다.
 
 -   회사 메일에 연결
 
@@ -75,7 +75,7 @@ Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 
-네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 위협을 감지하고 장치 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
+네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 위협을 감지하고 디바이스 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
 
 **Wi-Fi를 통한 네트워크 액세스 차단:**
 
@@ -87,7 +87,7 @@ Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
 
-네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 공격을 감지하여, 장치 위험에 따라 회사 파일 동기화를 금지합니다.
+네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 공격을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 
 **네트워크 위협이 감지할 경우 SharePoint Online 차단:**
 

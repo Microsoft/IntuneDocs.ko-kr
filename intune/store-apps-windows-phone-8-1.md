@@ -27,7 +27,7 @@ ms.locfileid: "52182757"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-앱은 장치 또는 사용자 그룹에 할당하기 전에 먼저 앱을 Microsoft Intune에 추가해야 합니다. 
+앱은 디바이스 또는 사용자 그룹에 할당하기 전에 먼저 앱을 Microsoft Intune에 추가해야 합니다. 
 
 ## <a name="add-an-app-to-intune"></a>Intune에 앱 추가
 다음 단계를 수행하여 Azure Portal에서 Windows Phone 8.1 스토어 앱을 Intune에 추가할 수 있습니다.

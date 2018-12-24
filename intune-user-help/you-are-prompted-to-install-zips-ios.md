@@ -1,6 +1,6 @@
 ---
-title: iOS 장치에 Zimperium zIPS를 설치해야 함 | Microsoft Docs
-description: iOS 장치에 Zimperium zIPS를 설치하는 방법에 대해 알아봅니다.
+title: iOS 디바이스에 Zimperium zIPS를 설치해야 함 | Microsoft Docs
+description: iOS 디바이스에 Zimperium zIPS를 설치하는 방법에 대해 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -22,13 +22,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43150772"
 ---
-# <a name="install-zimperium-zips-on-your-ios-device"></a>iOS 장치에 Zimperium zIPS 설치
+# <a name="install-zimperium-zips-on-your-ios-device"></a>iOS 디바이스에 Zimperium zIPS 설치
 
-작업에 액세스하기 전에 회사에서는 잠재적 보안 위협을 찾아 장치를 보호하는 데 도움이 되는 Zimperium zIPS 앱을 설치하도록 요구합니다. 회사에서 Zimperium zIPS를 설치한 방식에 따라 장치에 다른 메시지가 표시될 수 있습니다.
+작업에 액세스하기 전에 회사에서는 잠재적 보안 위협을 찾아 디바이스를 보호하는 데 도움이 되는 Zimperium zIPS 앱을 설치하도록 요구합니다. 회사에서 Zimperium zIPS를 설치한 방식에 따라 디바이스에 다른 메시지가 표시될 수 있습니다.
 
 ## <a name="what-you-need-to-do"></a>수행해야 할 작업 
 
-1.  다음과 같은 메시지가 표시되면 **설치**를 눌러 Zimperium zIPS가 장치에 설치되도록 합니다.
+1.  다음과 같은 메시지가 표시되면 **설치**를 눌러 Zimperium zIPS가 디바이스에 설치되도록 합니다.
 
 2. 다음과 같은 메시지가 나타나면 **설정**을 탭하고 **위치 서비스**를 켠 다음 **계속**을 탭합니다.
 
@@ -38,9 +38,9 @@ ms.locfileid: "43150772"
 
 5. Zimperium zIPS 설치가 완료되고 시작 화면이 표시됩니다.
 
-6. 설치를 완료한 후 장치에서 보안 위협이 발견되지 않으면 다음 화면이 표시됩니다.
+6. 설치를 완료한 후 디바이스에서 보안 위협이 발견되지 않으면 다음 화면이 표시됩니다.
 
-Zimperium zIPS에서 장치에 대한 보안 위협을 발견한 경우 문제 해결 방법에 대한 지침이 표시됩니다.
+Zimperium zIPS에서 디바이스에 대한 보안 위협을 발견한 경우 문제 해결 방법에 대한 지침이 표시됩니다.
 
 ## <a name="if-the-installation-doesnt-work"></a>설치가 작동하지 않는 경우
 

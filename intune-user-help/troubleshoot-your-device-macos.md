@@ -1,6 +1,6 @@
 ---
-title: macOS 장치의 일반적인 문제 해결 | Microsoft Docs
-description: Intune에서 macOS 장치에 대한 일반적인 문제 해결
+title: macOS 디바이스의 일반적인 문제 해결 | Microsoft Docs
+description: Intune에서 macOS 디바이스에 대한 일반적인 문제 해결
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,7 +24,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/06/2018
 ms.locfileid: "51212311"
 ---
-# <a name="fix-common-issues-with-your-macos-device"></a>macOS 장치의 일반적인 문제 해결
+# <a name="fix-common-issues-with-your-macos-device"></a>macOS 디바이스의 일반적인 문제 해결
 
 등록하는 도중 또는 이후에 발생하는 일반적인 macOS 문제를 해결합니다. 발생한 문제가 아래에 나열되지 않은 경우 회사 지원팀에 문의합니다. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.
 

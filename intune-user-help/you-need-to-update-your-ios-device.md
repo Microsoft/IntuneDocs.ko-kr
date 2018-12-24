@@ -1,5 +1,5 @@
 ---
-title: iOS 장치를 업데이트해야 함 | Microsoft 문서
+title: iOS 디바이스를 업데이트해야 함 | Microsoft 문서
 titlesuffix: Microsoft Intune
 description: iOS 디바이스에 필요한 최소 운영 체제 버전이 없습니다.
 keywords: ''
@@ -25,7 +25,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/07/2018
 ms.locfileid: "53031918"
 ---
-# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS 장치에 필요한 최소 운영 체제 버전이 없는 경우
+# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS 디바이스에 필요한 최소 운영 체제 버전이 없는 경우
 
 [!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 

@@ -24,7 +24,7 @@ ms.locfileid: "48828043"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>SandBlast Mobile Protect로 발견한 위협 해결
 
-SandBlast Mobile Protect는 iOS 장치에서 잠재적인 위협을 식별하고 평가하는 Mobile Threat Defender 서비스입니다. 회사 포털 앱에서 볼 수 있도록 위협을 보고합니다. 위협은 확인되지 않은 비규격 문제로 앱에 나타납니다. 이러한 위협이 있는 한 다음 작업을 수행할 수 없습니다.   
+SandBlast Mobile Protect는 iOS 디바이스에서 잠재적인 위협을 식별하고 평가하는 Mobile Threat Defender 서비스입니다. 회사 포털 앱에서 볼 수 있도록 위협을 보고합니다. 위협은 확인되지 않은 비규격 문제로 앱에 나타납니다. 이러한 위협이 있는 한 다음 작업을 수행할 수 없습니다.   
 
 * 회사 이메일에 연결
 * 회사 Wi-Fi에 연결
@@ -42,11 +42,11 @@ SandBlast Mobile Protect는 분실한 액세스 권한을 다시 얻는 작업�
 
 앱은 회사의 MDM 공급자와 통합되므로 회사 포털 앱에서 제한된 액세스에 대한 경고도 표시됩니다. 경고는 Sandblast Mobile Protect를 열어 바이러스 또는 보안 위협을 해결하도록 합니다.  
 
-  ![Sandblast Mobile Protect 경고를 보여주는 회사 포털 장치 페이지의 예제 스크린샷](./media/CP-lookout-virus-banner-1808.png)  
+  ![Sandblast Mobile Protect 경고를 보여주는 회사 포털 디바이스 페이지의 예제 스크린샷](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>앱 위협 해결  
 
-장치에 위협으로 표시되는 앱을 설치하면 SandBlast Mobile Protect 내에서 알림을 받게 됩니다. 장치에 영향을 받는 앱이 남아 있으면 회사 리소스에 액세스할 수 없습니다.  
+디바이스에 위협으로 표시되는 앱을 설치하면 SandBlast Mobile Protect 내에서 알림을 받게 됩니다. 디바이스에 영향을 받는 앱이 남아 있으면 회사 리소스에 액세스할 수 없습니다.  
 
 해결하려면 SandBlast Mobile Protect의 위협 목록에서 앱을 선택합니다. 그런 다음, 지침을 따라 앱을 제거합니다.  
 

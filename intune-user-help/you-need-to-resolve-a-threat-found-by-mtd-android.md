@@ -1,6 +1,6 @@
 ---
-title: Android 장치용 Mobile Threat Defense 앱에서 발견된 보안 또는 앱 위협 해결
-description: Android 장치용 Mobile Threat Defense 앱을 사용하여 위협을 해결하는 방법에 대해 알아봅니다.
+title: Android 디바이스용 Mobile Threat Defense 앱에서 발견된 보안 또는 앱 위협 해결
+description: Android 디바이스용 Mobile Threat Defense 앱을 사용하여 위협을 해결하는 방법에 대해 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,9 +24,9 @@ ms.locfileid: "43149667"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Mobile Threat Defense 앱에서 발견한 위협 해결
 
-Mobile Threat Defense 앱은 장치에서 잠재적인 위협을 감지하고 경고합니다. 일부 조직에서는 Intune과 같은 MDM 공급자와 Mobile Threat Defense 서비스를 통합합니다. 통합되면 Mobile Threat Defense 서비스는 위협(예: 의심스러운 앱, 네트워크 및 OS 취약점)을 보고하고 회사 포털 앱에 알립니다. Mobile Threat Defense 앱에서 위협에 대한 세부 정보 및 수정 단계를 찾을 수 있습니다.
+Mobile Threat Defense 앱은 디바이스에서 잠재적인 위협을 감지하고 경고합니다. 일부 조직에서는 Intune과 같은 MDM 공급자와 Mobile Threat Defense 서비스를 통합합니다. 통합되면 Mobile Threat Defense 서비스는 위협(예: 의심스러운 앱, 네트워크 및 OS 취약점)을 보고하고 회사 포털 앱에 알립니다. Mobile Threat Defense 앱에서 위협에 대한 세부 정보 및 수정 단계를 찾을 수 있습니다.
 
-위협은 확인되지 않은 비규격 문제로 회사 포털에 나타납니다. 위협이 충분한 위험으로 분류되는 경우 회사는 회사 리소스에 대한 액세스 권한을 취소합니다. 이러한 위협이 장치에 있는 한 다음 작업을 수행할 수 없습니다.  
+위협은 확인되지 않은 비규격 문제로 회사 포털에 나타납니다. 위협이 충분한 위험으로 분류되는 경우 회사는 회사 리소스에 대한 액세스 권한을 취소합니다. 이러한 위협이 디바이스에 있는 한 다음 작업을 수행할 수 없습니다.  
 
 * 회사 이메일에 연결
 * 회사 Wi-Fi에 연결

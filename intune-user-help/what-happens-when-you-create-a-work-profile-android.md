@@ -1,6 +1,6 @@
 ---
 title: 회사 프로필을 만들면 어떻게 되나요? | Microsoft 문서
-description: Android 장치를 암호화하는 방법을 설명합니다.
+description: Android 디바이스를 암호화하는 방법을 설명합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -26,11 +26,11 @@ ms.locfileid: "43148728"
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>업무용 프로필을 만들면 어떻게 되나요?
 
-업무용 프로필은 개인 데이터와는 별도로 회사 또는 학교 메일, 앱 및 데이터에 액세스할 수 있도록 장치에 설정하는 항목입니다.
+업무용 프로필은 개인 데이터와는 별도로 회사 또는 학교 메일, 앱 및 데이터에 액세스할 수 있도록 디바이스에 설정하는 항목입니다.
 
 업무용 프로필을 만들 경우
 
-- 회사 지원팀은 장치에서 업무와 관련된 메일, 앱, 설정 및 데이터만 관리합니다. 개인 앱이나 데이터는 관리하지 않습니다.
+- 회사 지원팀은 디바이스에서 업무와 관련된 메일, 앱, 설정 및 데이터만 관리합니다. 개인 앱이나 데이터는 관리하지 않습니다.
 
 - 회사 앱은 Play Store for Work에서 가져옵니다. 개인 앱을 가져오려면 Google Play 스토어로 이동하여 계속 개인 앱을 가져올 수 있습니다. 회사 지원팀은 개인 앱을 보거나 관리할 수 없습니다.
 
@@ -41,8 +41,8 @@ ms.locfileid: "43148728"
     ![Android Play Store for Work](./media/afw-google-play-store-for-work.png)
 
 - 회사 또는 학교에서 업무용 프로필이 있는 경우 회사 지원팀은 사용자 프로필이나 회사 앱을 설치하거나 제거할 수는 있지만 개인 앱이나 데이터는 그럴 수 없습니다.
-- 회사 지원팀은 장치를 다시 설정하거나 초기화할 수 없습니다.
+- 회사 지원팀은 디바이스를 다시 설정하거나 초기화할 수 없습니다.
 
-업무용 프로필을 만드는 단계는 [업무용 프로필을 만들어 장치 등록](create-a-work-profile-and-enroll-your-device-in-intune-android.md)을 참조하세요.
+업무용 프로필을 만드는 단계는 [업무용 프로필을 만들어 디바이스 등록](create-a-work-profile-and-enroll-your-device-in-intune-android.md)을 참조하세요.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

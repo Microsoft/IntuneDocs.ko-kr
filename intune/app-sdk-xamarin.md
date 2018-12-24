@@ -44,11 +44,11 @@ Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발�
 
 ### <a name="intune-mobile-application-management-scenarios"></a>Intune 모바일 응용 프로그램 관리 시나리오
 
-* Intune APP-WE(장치 등록을 사용하지 않는)
-* Intune MAM 등록 장치
-* 타사 EMM 등록 장치
+* Intune APP-WE(디바이스 등록을 사용하지 않는)
+* Intune MAM 등록 디바이스
+* 타사 EMM 등록 디바이스
 
-이제 Intune 앱 SDK Xamarin 바인딩이 내장된 Xamarin 앱에서는 Intune 모바일 장치 관리(MDM)가 등록된 장치 및 등록되지 않은 장치 모두에서 Intune 앱 보호 정책을 받을 수 있습니다.
+이제 Intune 앱 SDK Xamarin 바인딩이 내장된 Xamarin 앱에서는 Intune 모바일 디바이스 관리(MDM)가 등록된 디바이스 및 등록되지 않은 디바이스 모두에서 Intune 앱 보호 정책을 받을 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -120,13 +120,13 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Xamarin 기반 Android LOB 앱(선택 사항)을 사용하려면 Intune 앱 보호 정책 필요 
 
-다음은 Xamarin 기반 Android LOB 앱을 해당 장치에서 Intune 보호된 사용자만 사용할 수 있는지 확인하기 위한 지침입니다. 
+다음은 Xamarin 기반 Android LOB 앱을 해당 디바이스에서 Intune 보호된 사용자만 사용할 수 있는지 확인하기 위한 지침입니다. 
 
 ### <a name="general-requirements"></a>일반 요구 사항
 * APP(앱 보호 정책) 서비스에 대한 Xamarin 앱 사용 권한을 부여하는 단계를 따라야 합니다. 앱에 Intune 앱 보호 서비스에 대한 액세스 권한 부여(선택 사항)에서 [Intune SDK 시작 가이드](app-sdk-get-started.md#next-steps-after-integration)의 지침을 따릅니다. 
     
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK 사용
-이러한 지침은 최종 사용자 장치에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱에만 적용됩니다.
+이러한 지침은 최종 사용자 디바이스에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱에만 적용됩니다.
 
 1. [Android 가이드용 Intune SDK](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)에 정의된 단계에 따라 ADAL을 구성합니다.
 > [!NOTE] 
@@ -139,10 +139,10 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 
 3. 매니페스트에 다음 값을 입력하여 필요한 MAM 정책을 설정합니다. ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
 > [!NOTE] 
-> 이렇게 하면 앱은 장치에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
+> 이렇게 하면 앱은 디바이스에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
 
 ### <a name="working-with-adal"></a>ADAL 작업
-이러한 지침은 최종 사용자 장치에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 .NET/Xamarin 앱의 요구 사항입니다.
+이러한 지침은 최종 사용자 디바이스에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 .NET/Xamarin 앱의 요구 사항입니다.
 
 1. [Android에 대한 조정된 인증](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android) 아래의 ADAL 설명서에서 정의된 모든 단계를 따릅니다.
 > [!NOTE] 

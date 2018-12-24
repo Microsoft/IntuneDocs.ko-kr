@@ -1,6 +1,6 @@
 ---
-title: Intune에서 Windows 10 장치 등록 | Microsoft 문서
-description: Windows 10, 버전 1607 이상 장치를 Intune에 등록
+title: Intune에서 Windows 10 디바이스 등록 | Microsoft 문서
+description: Windows 10, 버전 1607 이상 디바이스를 Intune에 등록
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,10 +24,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/03/2018
 ms.locfileid: "48260220"
 ---
-# <a name="enroll-your-windows-10-device-in-intune"></a>Intune에서 Windows 10 장치 등록
+# <a name="enroll-your-windows-10-device-in-intune"></a>Intune에서 Windows 10 디바이스 등록
 
 > [!NOTE]
-> Windows 10은 모든 유형의 장치에서 작동합니다. 데스크톱, 휴대폰 또는 태블릿에 따라 이 페이지의 그림과 다소 다르더라도 모두 동일한 단계를 따르면 됩니다.
+> Windows 10은 모든 유형의 디바이스에서 작동합니다. 데스크톱, 휴대폰 또는 태블릿에 따라 이 페이지의 그림과 다소 다르더라도 모두 동일한 단계를 따르면 됩니다.
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]
 
@@ -50,7 +50,7 @@ ms.locfileid: "48260220"
 
     ![회사 또는 학교 계정 추가](./media/w10-enroll-rs1-enter-your-credentials.png)
 
-    회사 또는 학교에서 내 장치를 등록하고 있다는 메시지가 표시됩니다.
+    회사 또는 학교에서 내 디바이스를 등록하고 있다는 메시지가 표시됩니다.
 
 6. **모두 설정되었습니다.** 화면이 표시되면 **닫기**를 선택합니다. 작업을 완료했습니다.
 

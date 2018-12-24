@@ -32,7 +32,7 @@ ms.locfileid: "52190101"
 ## <a name="unable-to-send-images-from--email-account"></a>전자 메일 계정에서 이미지를 보낼 수 없습니다.
 Azure 클래식 포털의 Intune에 적용됩니다.
 
-자동으로 구성된 전자 메일 계정의 사용자는 자신의 장치에서 그림이나 이미지를 보낼 수 없습니다. 이 시나리오는 **타사 애플리케이션에서 이메일을 보내도록 허용** 옵션이 활성화되지 않은 경우에 발생할 수 있습니다.
+자동으로 구성된 전자 메일 계정의 사용자는 자신의 디바이스에서 그림이나 이미지를 보낼 수 없습니다. 이 시나리오는 **타사 애플리케이션에서 이메일을 보내도록 허용** 옵션이 활성화되지 않은 경우에 발생할 수 있습니다.
 
 ### <a name="intune-solution"></a>Intune 솔루션
 
@@ -52,7 +52,7 @@ Azure 클래식 포털의 Intune에 적용됩니다.
 
 4. **동기화 설정** 탭에서 **타사 응용 프로그램에서 전자 메일을 보내도록 허용**을 선택합니다.
 
-## <a name="device-already-has-an-email-profile-installed"></a>장치에 메일 프로필이 이미 설치되어 있음
+## <a name="device-already-has-an-email-profile-installed"></a>디바이스에 메일 프로필이 이미 설치되어 있음
 
 Intune 프로필을 프로비저닝하기 전에 사용자가 이메일 프로필을 설치한 경우 Intune 이메일 프로필 배포 결과는 디바이스 플랫폼에 따라 달라집니다.
 
@@ -64,7 +64,7 @@ Intune 프로필을 프로비저닝하기 전에 사용자가 이메일 프로�
 
 삼성 KNOX는 호스트 이름을 사용하여 프로필을 식별하지 않습니다. 서로 다른 호스트의 동일한 이메일 주소로 배포할 여러 이메일 프로필을 만들지 말고 서로 덮어쓰는 것이 좋습니다.
 
-## <a name="error--0x87d1fde8-for-knox-standard-device"></a>KNOX Standard 장치에 대한 오류 0x87D1FDE8
+## <a name="error--0x87d1fde8-for-knox-standard-device"></a>KNOX Standard 디바이스에 대한 오류 0x87D1FDE8
 **문제**: 다양한 Android 디바이스에 대한 삼성 KNOX Standard용 Exchange Active Sync 이메일 프로필을 만들고 배포한 후 디바이스의 속성 > 정책 탭에 **0x87D1FDE8** 또는 **조정 실패**라는 오류가 보고됩니다.
 
 삼성 KNOX 및 소스 정책에 대한 EAS 프로필 구성을 확인하세요. Samsung KNOX 동기화 옵션은 더 이상 지원되지 않으며, 해당 옵션은 프로필에서 선택하면 안 됩니다. 디바이스가 최대 24시간까지 정책을 처리하기에 충분한 시간을 갖도록 합니다.

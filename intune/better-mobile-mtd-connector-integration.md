@@ -41,7 +41,7 @@ Intune과 Better Mobile을 통합하는 과정을 시작하기 전에 다음 항
 
     -   디렉터리 데이터 읽기
 
-    -   Intune에 장치 정보 보내기
+    -   Intune에 디바이스 정보 보내기
 
 -   Better Mobile 관리 콘솔에 액세스하기 위한 관리자 자격 증명
 
@@ -49,9 +49,9 @@ Intune과 Better Mobile을 통합하는 과정을 시작하기 전에 다음 항
 
 Better Mobile 앱 권한 부여 프로세스는 다음과 같습니다.
 
--   Better Mobile 서비스에서 장치 상태와 관련된 정보를 Intune으로 다시 전달하도록 허용합니다.
+-   Better Mobile 서비스에서 디바이스 상태와 관련된 정보를 Intune으로 다시 전달하도록 허용합니다.
 
--   Better Mobile은 Azure Active Directory 등록 그룹 멤버 자격과 동기화하여 해당 장치의 데이터베이스를 채웁니다.
+-   Better Mobile은 Azure Active Directory 등록 그룹 멤버 자격과 동기화하여 해당 디바이스의 데이터베이스를 채웁니다.
 
 -   Better Mobile 관리 콘솔에서 Azure Active Directory SSO(Single Sign On)를 사용하도록 허용합니다.
 
@@ -68,7 +68,7 @@ Better Mobile 앱 권한 부여 프로세스는 다음과 같습니다.
 4. **계정 이름** 옆에 설명자를 입력합니다. 
 5. **Microsoft 로그인** 창에 Intune 자격 증명을 입력합니다.
 6. **요청된 권한** 창에서 **수락**을 선택합니다.
-7. Better Mobile이 장치를 동기화할 Azure Active Directory 보안 그룹을 검색하고 목록에서 선택합니다. 그런 다음 **계속**을 선택합니다.
+7. Better Mobile이 디바이스를 동기화할 Azure Active Directory 보안 그룹을 검색하고 목록에서 선택합니다. 그런 다음 **계속**을 선택합니다.
 8. **완료**를 선택합니다.
 9. **계정 추가** 페이지가 다시 나타납니다. 페이지를 닫습니다. 
 

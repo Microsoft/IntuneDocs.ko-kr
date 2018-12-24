@@ -1,7 +1,7 @@
 ---
 title: 타사 인증 기관을 온보딩하기 위한 API
 titlesuffix: Microsoft Intune
-description: 타사 CA(인증 기관)용 SCEP GitHub 솔루션을 추가하거나 통합하여 Microsoft Intune의 장치에 SCEP 인증서를 발급합니다. 이 솔루션에는 유효성을 검사하고, 성공 및 실패 알림을 Intune에 보내고, Intune과 통신할 때 SSL 소켓 팩터리를 사용하는 Java 및 C# API가 포함됩니다. SCEP CA 구성을 테스트하는 단계에 대한 개요를 볼 수도 있습니다.
+description: 타사 CA(인증 기관)용 SCEP GitHub 솔루션을 추가하거나 통합하여 Microsoft Intune의 디바이스에 SCEP 인증서를 발급합니다. 이 솔루션에는 유효성을 검사하고, 성공 및 실패 알림을 Intune에 보내고, Intune과 통신할 때 SSL 소켓 팩터리를 사용하는 Java 및 C# API가 포함됩니다. SCEP CA 구성을 테스트하는 단계에 대한 개요를 볼 수도 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -29,39 +29,39 @@ Microsoft Intune에서 타사 CA(인증 기관)를 추가하고 SCEP(단순 인�
 Microsoft가 GitHub.com에 게시하는 오픈 소스 라이브러리를 사용하는 일부 개발자 작업도 있습니다. 라이브러리에는 다음과 같은 API가 포함되어 있습니다.
 
 - Intune에서 동적으로 생성된 SCEP 암호의 유효성 검사
-- SCEP 요청을 제출하는 장치에 생성된 인증서를 Intune에 알림
+- SCEP 요청을 제출하는 디바이스에 생성된 인증서를 Intune에 알림
 
-이 API를 사용하면 타사 SCEP 서버가 MDM 장치용 Intune SCEP 관리 솔루션과 통합됩니다. 라이브러리는 해당 사용자의 인증, 서비스 위치 및 ODATA Intune Service API와 같은 측면을 추상화합니다.
+이 API를 사용하면 타사 SCEP 서버가 MDM 디바이스용 Intune SCEP 관리 솔루션과 통합됩니다. 라이브러리는 해당 사용자의 인증, 서비스 위치 및 ODATA Intune Service API와 같은 측면을 추상화합니다.
 
 ## <a name="scep-management-solution"></a>SCEP 관리 솔루션
 
 ![타사 인증 기관 SCEP를 Microsoft Intune과 통합하는 방법](./media/scep-certificate-vendor-integration.png)
 
-관리자는 Intune을 사용하여 SCEP 프로필을 만든 다음, 이 프로필을 MDM 장치에 할당합니다. SCEP 프로필에는 다음과 같은 매개 변수가 포함됩니다.
+관리자는 Intune을 사용하여 SCEP 프로필을 만든 다음, 이 프로필을 MDM 디바이스에 할당합니다. SCEP 프로필에는 다음과 같은 매개 변수가 포함됩니다.
 
 - SCEP 서버의 URL
 - 인증 기관의 신뢰할 수 있는 루트 인증서
 - 인증서 특성 등
 
-Intune으로 체크 인하는 장치는 SCEP 프로필을 할당받고, 이러한 매개 변수로 구성됩니다. 동적으로 생성되는 SCEP 챌린지 암호는 Intune에서 만들어진 다음, 장치에 할당됩니다.
+Intune으로 체크 인하는 디바이스는 SCEP 프로필을 할당받고, 이러한 매개 변수로 구성됩니다. 동적으로 생성되는 SCEP 챌린지 암호는 Intune에서 만들어진 다음, 디바이스에 할당됩니다.
 
 이 챌린지에 포함되는 항목은 다음과 같습니다.
 
 - 동적으로 생성된 챌린지 암호
-- 장치에서 SCEP 서버에 발급하는 CSR(인증서 서명 요청)에 필요한 매개 변수에 대한 세부 정보
+- 디바이스에서 SCEP 서버에 발급하는 CSR(인증서 서명 요청)에 필요한 매개 변수에 대한 세부 정보
 - 챌린지 만료 시간
 
 Intune은 이 정보를 암호화하고, 암호화된 Blob에 서명한 다음, 이러한 세부 정보를 SCEP 챌린지 암호로 패키지합니다.
 
-그러면 SCEP 서버에 연결하여 인증서를 요청한 장치에서 이 SCEP 챌린지 암호를 제공합니다. SCEP 서버는 유효성 검사를 위해 CSR 및 암호화된 SCEP 챌린지 암호를 Intune으로 보냅니다.  이 챌린지 암호 및 CSR은 인증서를 장치에 발급하는 SCEP 서버에 대한 유효성 검사를 통과해야 합니다. SCEP 챌린지의 유효성을 검사하는 경우 수행되는 검사는 다음과 같습니다.
+그러면 SCEP 서버에 연결하여 인증서를 요청한 디바이스에서 이 SCEP 챌린지 암호를 제공합니다. SCEP 서버는 유효성 검사를 위해 CSR 및 암호화된 SCEP 챌린지 암호를 Intune으로 보냅니다.  이 챌린지 암호 및 CSR은 인증서를 디바이스에 발급하는 SCEP 서버에 대한 유효성 검사를 통과해야 합니다. SCEP 챌린지의 유효성을 검사하는 경우 수행되는 검사는 다음과 같습니다.
 
 
 - 암호화된 BLOB의 서명 유효성 검사
 - 인증 질문이 만료되지 않았는지 검사
-- 프로필이 여전히 장치를 대상으로 하는지 검사
-- CSR에 있는 장치에서 요청한 인증서 속성이 예상 값과 일치하는지 검사
+- 프로필이 여전히 디바이스를 대상으로 하는지 검사
+- CSR에 있는 디바이스에서 요청한 인증서 속성이 예상 값과 일치하는지 검사
 
-SCEP 관리 솔루션에는 보고 기능도 포함되어 있습니다. 관리자는 SCEP 프로필의 배포 상태 및 장치에 발급된 인증서에 대한 정보를 가져올 수 있습니다.
+SCEP 관리 솔루션에는 보고 기능도 포함되어 있습니다. 관리자는 SCEP 프로필의 배포 상태 및 디바이스에 발급된 인증서에 대한 정보를 가져올 수 있습니다.
 
 ## <a name="integrate-with-intune"></a>Intune과 통합
 
@@ -291,10 +291,10 @@ Throws:
 5. 테스트 인증 기관에 대한 [신뢰할 수 있는 루트 인증서 프로필을 생성](certificates-scep-configure.md)합니다.
 6. SCEP 프로필을 생성하여 [시나리오 테스트 매트릭스](https://github.com/Microsoft/Intune-Resource-Access/blob/develop/src/CsrValidation/doc/TestMatrix.csv)에 나열된 시나리오를 테스트합니다.
 7. 해당 장치를 등록한 사용자에게 [프로필을 할당](device-profile-assign.md)합니다.
-8. 장치가 Intune과 동기화될 때까지 기다립니다. 또는 수동으로 [장치를 동기화](device-sync.md)합니다.
-9. 신뢰할 수 있는 루트 인증서 및 SCEP [프로필이 장치에 배포되었는지](device-profile-monitor.md) 확인합니다.
-10. 모든 장치에 신뢰할 수 있는 루트 인증서가 설치되어 있는지 확인합니다.
-11. 할당된 프로필의 SCEP 인증서가 모든 장치에 설치되어 있는지 확인합니다.
+8. 디바이스가 Intune과 동기화될 때까지 기다립니다. 또는 수동으로 [디바이스를 동기화](device-sync.md)합니다.
+9. 신뢰할 수 있는 루트 인증서 및 SCEP [프로필이 디바이스에 배포되었는지](device-profile-monitor.md) 확인합니다.
+10. 모든 디바이스에 신뢰할 수 있는 루트 인증서가 설치되어 있는지 확인합니다.
+11. 할당된 프로필의 SCEP 인증서가 모든 디바이스에 설치되어 있는지 확인합니다.
 12. 설치된 인증서의 속성이 SCEP 프로필에 설정된 속성과 일치하는지 확인합니다.
 13. 발급된 인증서가 Intune 콘솔에 올바르게 나열되어 있는지 확인합니다.
 

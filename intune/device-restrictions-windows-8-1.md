@@ -1,7 +1,7 @@
 ---
-title: Windows 8.1을 실행하는 장치에 대한 Microsoft Intune 장치 제한 설정
+title: Windows 8.1을 실행하는 디바이스에 대한 Microsoft Intune 디바이스 제한 설정
 titleSuffix: ''
-description: Windows 8.1을 실행하는 장치에서 장치 설정 및 기능을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
+description: Windows 8.1을 실행하는 디바이스에서 디바이스 설정 및 기능을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -21,11 +21,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52180632"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 이상 장치 제한 설정
+# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 이상 디바이스 제한 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클에서는 Windows 8.1 이상을 실행하는 장치에 대해 구성할 수 있는 Microsoft Intune 장치 제한 설정을 보여줍니다.
+이 아티클에서는 Windows 8.1 이상을 실행하는 디바이스에 대해 구성할 수 있는 Microsoft Intune 디바이스 제한 설정을 보여줍니다.
 
 
 ## <a name="general"></a>일반
@@ -42,10 +42,10 @@ ms.locfileid: "52180632"
 -   **암호 만료(일)** - 장치 암호를 변경해야 할 때까지의 기간(일)을 지정합니다.
 -   **이전 암호 다시 사용 방지** - 사용자가 이전에 사용한 암호를 구성할 수 있을지 여부를 지정합니다.
 -   **사진 암호 및 PIN** - 사진 암호 및 PIN을 사용하도록 설정합니다. 그림 암호를 허용하면, 그림에 제스처를 사용하여 로그인할 수 있습니다. PIN을 허용하면, 4자리 코드를 사용하여 빠르게 로그인할 수 있습니다.
--   **암호화** - 장치의 파일을 암호화해야 합니다.<br>Windows 8.1을 실행하는 장치에 암호화를 적용하려면 각 장치에 [Windows용 December 2014 MDM 클라이언트 업데이트](https://support.microsoft.com/kb/3013816) 를 설치해야 합니다.
-Windows 8.1 장치에 대해 이 설정을 사용하려면 장치의 모든 사용자가 Microsoft 계정을 가지고 있어야 합니다.
-암호화가 작동하려면 장치가 [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) 하드웨어 인증 요구 사항을 만족해야 합니다.
-장치에 암호화를 적용하는 경우, 복구 키는 자신의 OneDrive 계정에서 액세스한 Microsoft 계정에서만 액세스할 수 있습니다. 사용자를 대신하여 이 키를 복구할 수 없습니다.     
+-   **암호화** - 장치의 파일을 암호화해야 합니다.<br>Windows 8.1을 실행하는 디바이스에 암호화를 적용하려면 각 디바이스에 [Windows용 December 2014 MDM 클라이언트 업데이트](https://support.microsoft.com/kb/3013816) 를 설치해야 합니다.
+Windows 8.1 디바이스에 대해 이 설정을 사용하려면 디바이스의 모든 사용자가 Microsoft 계정을 가지고 있어야 합니다.
+암호화가 작동하려면 디바이스가 [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) 하드웨어 인증 요구 사항을 만족해야 합니다.
+디바이스에 암호화를 적용하는 경우, 복구 키는 자신의 OneDrive 계정에서 액세스한 Microsoft 계정에서만 액세스할 수 있습니다. 사용자를 대신하여 이 키를 복구할 수 없습니다.     
 
 
 

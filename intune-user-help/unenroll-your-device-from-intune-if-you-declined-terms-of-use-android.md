@@ -1,5 +1,5 @@
 ---
-title: 사용 약관을 거부한 경우 관리에서 장치 제거 | Microsoft Docs
+title: 사용 약관을 거부한 경우 관리에서 디바이스 제거 | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
@@ -24,21 +24,21 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43149710"
 ---
-# <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>“사용 약관”을 거부한 경우 관리에서 장치 제거
+# <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>“사용 약관”을 거부한 경우 관리에서 디바이스 제거
 
-회사 포털 앱에 로그인을 시도하는 동안 사용 약관을 거부하면, 다음 시도 시 회사 포털 앱에 로그인이 금지되므로, 이 "해결 방법" 지침을 사용하여 Intune에서 장치를 제거합니다.
+회사 포털 앱에 로그인을 시도하는 동안 사용 약관을 거부하면, 다음 시도 시 회사 포털 앱에 로그인이 금지되므로, 이 "해결 방법" 지침을 사용하여 Intune에서 디바이스를 제거합니다.
 
-회사 포털 앱을 제거하면 Intune에서도 장치가 제거됩니다. 장치는 더 이상 회사 리소스에 액세스할 수 없습니다. 관리에서 장치를 제거할 때 발생하는 상황에 대한 자세한 내용은 [Intune에서 장치 등록을 취소하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-android.md)를 참조하세요.
+회사 포털 앱을 제거하면 Intune에서도 디바이스가 제거됩니다. 디바이스는 더 이상 회사 리소스에 액세스할 수 없습니다. 관리에서 디바이스를 제거할 때 발생하는 상황에 대한 자세한 내용은 [Intune에서 디바이스 등록을 취소하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-android.md)를 참조하세요.
 
-회사 포털 앱을 제거하려면 먼저 **장치 관리자** 설정으로 이동한 다음 **회사 포털**을 해제해야 합니다. 보유한 Android 장치에 따라 단계는 약간 다를 수도 있습니다.
+회사 포털 앱을 제거하려면 먼저 **디바이스 관리자** 설정으로 이동한 다음 **회사 포털**을 해제해야 합니다. 보유한 Android 디바이스에 따라 단계는 약간 다를 수도 있습니다.
 
-## <a name="removing-the-device-from-the-company-portal-app"></a>회사 포털 앱에서 장치 제거하기
+## <a name="removing-the-device-from-the-company-portal-app"></a>회사 포털 앱에서 디바이스 제거하기
 
-Intune에서 장치를 제거하고 회사 포털 앱을 제거하려면:
+Intune에서 디바이스를 제거하고 회사 포털 앱을 제거하려면:
 
 1.  **설정** &gt; **보안 및 화면 잠금** &gt; **장치 관리자**로 이동합니다.
 
-    이 단계를 완료하면 장치 등록이 즉시 취소됩니다.
+    이 단계를 완료하면 디바이스 등록이 즉시 취소됩니다.
 
 2.  옆에 있는 상자를 선택 취소하거나 **회사 포털**을 해제합니다.
 
@@ -46,7 +46,7 @@ Intune에서 장치를 제거하고 회사 포털 앱을 제거하려면:
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>회사 포털 앱에서 수집한 데이터 제거하기
 
-Android용 회사 포털 앱이 장치에 저장하는 모든 데이터를 제거하려면:
+Android용 회사 포털 앱이 디바이스에 저장하는 모든 데이터를 제거하려면:
 
   - 응용 프로그램에서 앱 데이터 지우기 -> 앱 클릭 -> "데이터 지우기" 단추 클릭
   - '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal' 폴더 삭제

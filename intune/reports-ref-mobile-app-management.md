@@ -51,7 +51,7 @@ ms.locfileid: "52190135"
 
 ## <a name="mamapplicationinstance"></a>MamApplicationInstance
 
-**MamApplicationInstance** 엔터티는 장치별 사용자당 단일 인스턴스로서 관리되는 모바일 앱 관리(MAM) 앱을 나열합니다. 엔터티 내 모든 사용자 및 장치에 MAM 정책이 하나 이상 할당되어 있으므로 모두 보호됩니다.
+**MamApplicationInstance** 엔터티는 장치별 사용자당 단일 인스턴스로서 관리되는 모바일 앱 관리(MAM) 앱을 나열합니다. 엔터티 내 모든 사용자 및 디바이스에 MAM 정책이 하나 이상 할당되어 있으므로 모두 보호됩니다.
 
 
 |          속성          |                                                                                                  설명                                                                                                  |               예제                |
@@ -62,11 +62,11 @@ ms.locfileid: "52190135"
 |       ApplicationId        |                                                                                        이 MAM 앱의 응용 프로그램 ID                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
 |     ApplicationVersion     |                                                                                     해당 MAM 앱의 응용 프로그램 버전                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 MAM 앱 인스턴스의 이 레코드를 만든 날짜입니다. 값은 null일 수 있습니다.                                                                 |        11/23/2016 12:00:00 AM        |
-|          플랫폼          |                                                                          해당 MAM 앱이 설치된 장치 플랫폼                                                                           |                  2                   |
-|      PlatformVersion       |                                                                      해당 MAM 앱이 설치된 장치의 플랫폼 버전                                                                       |                 2.2                  |
+|          플랫폼          |                                                                          해당 MAM 앱이 설치된 디바이스 플랫폼                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      해당 MAM 앱이 설치된 디바이스의 플랫폼 버전                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            해당 MAM 앱을 래핑한 MAM SDK 버전                                                                            |                 3.2                  |
-|          DeviceId          |                                                                          해당 MAM 앱이 설치된 장치의 장치 ID                                                                          | b66bc706-ffff-7437-0340-032819502773 |
-|         DeviceName         |                                                                         해당 MAM 앱이 설치된 장치의 장치 이름                                                                         |              "MyDevice"              |
+|          DeviceId          |                                                                          해당 MAM 앱이 설치된 디바이스의 디바이스 ID                                                                          | b66bc706-ffff-7437-0340-032819502773 |
+|         DeviceName         |                                                                         해당 MAM 앱이 설치된 디바이스의 디바이스 이름                                                                         |              "MyDevice"              |
 |         IsDeleted          | 이 MAM 앱 인스턴스 레코드가 업데이트되었는지 나타냅니다. <br>True-이 MAM 앱 인스턴스는 이 테이블에서 필드가 업데이트된 새 레코드를 가집니다. <br>False-이 MAM 앱 인스턴스의 최신 레코드입니다. |              True/False              |
 |   StartDateInclusiveUtc    |                                                              데이터웨어 하우스에서 해당 MAM 앱 인스턴스를 만든 UTC 날짜 및 시간                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             IsDeleted를 True로 변경한 UTC 날짜 및 시간                                                                              |        11/23/2016 12:00:00 AM        |
@@ -86,7 +86,7 @@ ms.locfileid: "52190135"
 | UserKey |해당 MAM 앱 체크 인에 연결된 사용자의 키 |1/12/1900 12:00:00 AM |
 | ApplicationKey |체크 인한 MAM 앱의 키 |1/10/1900 12:00:00 AM |
 | DeviceHealthKey |해당 MAM 앱 체크 인에 연결된 DeviceHealth의 키 |1/2/1900 12:00:00 AM |
-| PlatformKey |해당 MAM 앱 체크 인에 연결된 장치의 플랫폼을 나타냅니다. |1/1/1900 12:00:00 AM |
+| PlatformKey |해당 MAM 앱 체크 인에 연결된 디바이스의 플랫폼을 나타냅니다. |1/1/1900 12:00:00 AM |
 | EffectiveAppliedPolicyKey |체크인된 MAM 앱과 연결된 발효된 적용 정책을 나타냅니다. 특정 앱 및 사용자와 관련된 모든 정책을 병합하여 얻은 발효된 적용 정책 결과입니다. |5/2/1900 12:00:00 AM |
 | LastCheckInDate |이 MAM 앱이 마지막으로 체크인한 날짜와 시간입니다. 값은 null일 수 있습니다. |11/23/2016 12:00:00 AM |
 
@@ -96,10 +96,10 @@ ms.locfileid: "52190135"
 
 | 속성 | 설명 | 예제 |
 |---------|------------|--------|
-| DeviceHealthKey |데이터 웨어하우스의 장치 및 관련 상태에 대한 고유 식별자 - 서로게이트 키 |1/1/1900 12:00:00 AM |
-| DeviceHealth |장치 및 관련 상태에 대한 고유 식별자 - DeviceHealthKey와 비슷하지만 자연 키입니다 |1/1/1900 12:00:00 AM |
-| DeviceHealthName |장치 상태를 나타냅니다. <br>사용할 수 없음 - 이 장치에 대한 정보가 없습니다. <br>정상 - 장치가 탈옥되지 않았습니다. <br>비정상 - 장치가 탈옥되었습니다. |사용할 수 없음 정상 비정상 |
-| RowLastModifiedDateTimeUtc |데이터 웨어하우스에서 해당 특정 MAM 장치 상태를 마지막으로 수정한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
+| DeviceHealthKey |데이터 웨어하우스의 디바이스 및 관련 상태에 대한 고유 식별자 - 서로게이트 키 |1/1/1900 12:00:00 AM |
+| DeviceHealth |디바이스 및 관련 상태에 대한 고유 식별자 - DeviceHealthKey와 비슷하지만 자연 키입니다 |1/1/1900 12:00:00 AM |
+| DeviceHealthName |디바이스 상태를 나타냅니다. <br>사용할 수 없음 - 이 디바이스에 대한 정보가 없습니다. <br>정상 - 디바이스가 탈옥되지 않았습니다. <br>비정상 - 디바이스가 탈옥되었습니다. |사용할 수 없음 정상 비정상 |
+| RowLastModifiedDateTimeUtc |데이터 웨어하우스에서 해당 특정 MAM 디바이스 상태를 마지막으로 수정한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
 
 ## <a name="mameffectivepolicy"></a>MamEffectivePolicy
 

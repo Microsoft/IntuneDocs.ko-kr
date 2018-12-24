@@ -27,12 +27,12 @@ ms.locfileid: "52184289"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android 회사 프로필 장치 및 Android 키오스크 장치를 지원하려면 Intune 테넌트 계정을 Android 엔터프라이즈 계정에 연결해야 합니다. 
+Android 회사 프로필 디바이스 및 Android 키오스크 디바이스를 지원하려면 Intune 테넌트 계정을 Android 엔터프라이즈 계정에 연결해야 합니다. 
 
 > [!NOTE]
 > Google과 Microsoft 도메인 간 상호 작용으로 인해, 이 단계에서는 브라우저 설정을 조정해야 할 수 있습니다.  "portal.azure.com"과 "play.google.com"이 브라우저의 동일한 보안 영역에 있는지 확인하세요.
 
-1. 아직 설정하지 않은 경우 **Microsoft Intune**으로 [모바일 장치 관리 기관을 설정](mdm-authority-set.md)하여 모바일 장치 관리를 준비합니다.
+1. 모바일 디바이스 관리를 아직 준비하지 않은 경우  [모바일 디바이스 관리 기관](mdm-authority-set.md) 을 **Microsoft Intune**.
 2. [Azure Portal의 Intune](https://aka.ms/intuneportal)에 로그인하고, **장치 등록** > **Android 등록** > **관리되는 Google Play**를 선택합니다.  사용자 지정 Intune 관리자 역할을 사용할 경우 여기에 액세스하려면 조직 읽기 및 업데이트 권한이 필요합니다.
    
    ![Android 엔터프라이즈 등록 화면](./media/android-work-bind.png)
@@ -52,12 +52,12 @@ Android 회사 프로필 장치 및 Android 키오스크 장치를 지원하려�
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Android 엔터프라이즈 관리 계정 연결 끊기
 
-Android 엔터프라이즈 등록 및 관리를 해제할 수 있습니다. 이렇게 하려면 먼저 등록된 Android 회사 프로필 장치를 모두 사용 중지해야 합니다. 그런 다음, Intune 관리 콘솔에서 **연결 끊기**를 선택하여 등록된 모든 Android 회사 프로필 장치 및 키오스크 장치를 등록에서 제거합니다. Android 엔터프라이즈 계정과 Intune 사이의 관계도 제거됩니다.
+Android 엔터프라이즈 등록 및 관리를 해제할 수 있습니다. 이렇게 하려면 먼저 등록된 Android 회사 프로필 디바이스를 모두 사용 중지해야 합니다. 그런 다음, Intune 관리 콘솔에서 **연결 끊기**를 선택하여 등록된 모든 Android 회사 프로필 디바이스 및 키오스크 디바이스를 등록에서 제거합니다. Android 엔터프라이즈 계정과 Intune 사이의 관계도 제거됩니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 Intune 관리자로 **모든 서비스** > **모니터링 + 관리** > **Intune**을 선택합니다.
 2. **장치 등록** > **Android 등록** > **관리되는 Google Play** > **연결 끊기**를 선택합니다.
-3. Intune에서 모든 Android 엔터프라이즈 장치의 연결을 끊고 등록을 취소하려면 **예**를 선택합니다.
+3. Intune에서 모든 Android 엔터프라이즈 디바이스의 연결을 끊고 등록을 취소하려면 **예**를 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-Android 엔터프라이즈 계정에 연결한 후 [Android 회사 프로필 장치를 설정](android-work-profile-enroll.md)하고 [Android 키오스크 장치를 설정](android-kiosk-enroll.md)할 수 있습니다.
+Android 엔터프라이즈 계정에 연결한 후 [Android 회사 프로필 디바이스를 설정](android-work-profile-enroll.md)하고 [Android 키오스크 디바이스를 설정](android-kiosk-enroll.md)할 수 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: Intune 모바일 장치 관리 마이그레이션 가이드
+title: Intune 모바일 디바이스 관리 마이그레이션 가이드
 titlesuffix: Microsoft Intune
 description: 이 가이드에서는 타사 MDM 공급자에서 Microsoft Intune으로 마이그레이션하는 과정과 관련된 다양한 세부 정보를 단계적으로 안내합니다.
 keywords: ''
@@ -26,7 +26,7 @@ ms.locfileid: "52181414"
 
 ![Microsoft Intune MDM 마이그레이션 가이드 아트](./media/MDM-migration-guide-art.PNG)
 
-Microsoft Intune으로의 성공적인 마이그레이션은 현재 MDM(모바일 장치 관리) 환경, 비즈니스 목표 및 기술 요구 사항을 고려하는 견고한 계획에서 시작합니다. 또한 마이그레이션 계획을 지원하고 협력해 줄 주요 관련자가 포함되어야 합니다.
+Microsoft Intune으로의 성공적인 마이그레이션은 현재 MDM(모바일 디바이스 관리) 환경, 비즈니스 목표 및 기술 요구 사항을 고려하는 견고한 계획에서 시작합니다. 또한 마이그레이션 계획을 지원하고 협력해 줄 주요 관련자가 포함되어야 합니다.
 
 이 가이드에서는 타사 MDM 공급자에서 Intune으로 마이그레이션하는 과정과 관련된 다양한 세부 정보를 단계적으로 안내합니다.
 
@@ -64,7 +64,7 @@ Microsoft Intune으로의 성공적인 마이그레이션은 현재 MDM(모바�
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-새 Intune 배포는 이전 MDM 배포와 다를 수 있습니다. 기존의 MDM 서비스와 달리 Intune은 ID 기반의 액세스 제어에 중점을 두므로 조직의 네트워크 경계 외부에 있는 모바일 장치에서의 회사 데이터 액세스를 제어하는 데 네트워크 프록시 어플라이언스가 필요하지 않습니다. Microsoft는 Enterprise Client + Security 기능으로 통칭되는, 긴밀하게 통합된 클라우드 서비스 제품군을 통해 클라우드 자체 내에서 데이터 보안 서비스 솔루션을 제공합니다.
+새 Intune 배포는 이전 MDM 배포와 다를 수 있습니다. 기존의 MDM 서비스와 달리 Intune은 ID 기반의 액세스 제어에 중점을 두므로 조직의 네트워크 경계 외부에 있는 모바일 디바이스에서의 회사 데이터 액세스를 제어하는 데 네트워크 프록시 어플라이언스가 필요하지 않습니다. Microsoft는 Enterprise Client + Security 기능으로 통칭되는, 긴밀하게 통합된 클라우드 서비스 제품군을 통해 클라우드 자체 내에서 데이터 보안 서비스 솔루션을 제공합니다.
 
 -   [Intune을 사용하는 일반적인 방법](common-scenarios.md)을 읽어봅니다.
 

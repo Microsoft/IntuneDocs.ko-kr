@@ -1,5 +1,5 @@
 ---
-title: iOS 장치에 Mobile Threat Defense를 설치해야 함 | Microsoft 문서
+title: iOS 디바이스에 Mobile Threat Defense를 설치해야 함 | Microsoft 문서
 description: ''
 keywords: ''
 author: lenewsad
@@ -22,10 +22,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43148764"
 ---
-# <a name="install-mobile-threat-defense-on-your-ios-device"></a>iOS 장치에 Mobile Threat Defense 설치
+# <a name="install-mobile-threat-defense-on-your-ios-device"></a>iOS 디바이스에 Mobile Threat Defense 설치
 
 
-작업에 액세스하기 전에 회사는 잠재적 보안 위협을 찾아 장치를 보호하는 데 도움이 되는 Mobile Threat Defense 앱을 설치하도록 요구합니다. IT 관리자가 앱을 설치한 방식에 따라 장치에 다른 메시지가 표시될 수 있습니다.
+작업에 액세스하기 전에 회사는 잠재적 보안 위협을 찾아 디바이스를 보호하는 데 도움이 되는 Mobile Threat Defense 앱을 설치하도록 요구합니다. IT 관리자가 앱을 설치한 방식에 따라 디바이스에 다른 메시지가 표시될 수 있습니다.
 
 
 * [Lookout for Work](you-are-prompted-to-install-lookout-for-work-ios.md)
@@ -35,12 +35,12 @@ ms.locfileid: "43148764"
 
 ## <a name="additional-information-your-company-can-see"></a>회사에서 볼 수 있는 추가 정보
 
-Mobile Threat Defense는 회사에서 회사 정보를 도용하려는 앱으로부터 안전하게 장치를 보호할 수 있는 방법입니다. 이 보호 장치를 추가하려면 회사에서 사용 중인 Mobile Threat Defense 서비스에 보고할 장치의 앱에 대한 추가 정보가 필요합니다. 개인 앱의 데이터는 회사에서 볼 수 없습니다. 장치의 모든 앱은 Mobile Threat Defense 서비스를 사용할 때 [회사에서 볼 수 있는 항목](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)에 추가됩니다. 다음은 회사에서 볼 수 있는 앱에 대한 정보의 일부입니다.
+Mobile Threat Defense는 회사에서 회사 정보를 도용하려는 앱으로부터 안전하게 디바이스를 보호할 수 있는 방법입니다. 이 보호 디바이스를 추가하려면 회사에서 사용 중인 Mobile Threat Defense 서비스에 보고할 디바이스의 앱에 대한 추가 정보가 필요합니다. 개인 앱의 데이터는 회사에서 볼 수 없습니다. 디바이스의 모든 앱은 Mobile Threat Defense 서비스를 사용할 때 [회사에서 볼 수 있는 항목](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)에 추가됩니다. 다음은 회사에서 볼 수 있는 앱에 대한 정보의 일부입니다.
 
 *   앱 이름
 * 앱 ID: 앱 스토어에서 앱을 식별하는 고유한 이름
 *   앱 버전 및 짧은 버전 번호: 앱의 특정 릴리스 번호
-* 앱 번들 및 동적 크기: 장치에서 앱이 사용하는 공간의 크기
+* 앱 번들 및 동적 크기: 디바이스에서 앱이 사용하는 공간의 크기
 * 앱 유효성: 앱의 사용이 승인되었는지 여부
 *   앱 관리 상태: 회사에서 관리하는 앱인지 또는 개인 앱인지의 여부
 

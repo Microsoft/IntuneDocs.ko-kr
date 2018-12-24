@@ -25,7 +25,7 @@ ms.locfileid: "52185769"
 # <a name="evaluate-how-many-users-are-targeted-by-a-policy"></a>정책의 대상인 사용자 수 평가
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**평가** 단추를 사용해 장치 준수 또는 장치 구성 정책의 대상인 사용자 수를 확인할 수 있습니다. 이 기능은 장치가 아닌 사용자 수만 계산합니다.
+**평가** 단추를 사용해 장치 준수 또는 장치 구성 정책의 대상인 사용자 수를 확인할 수 있습니다. 이 기능은 디바이스가 아닌 사용자 수만 계산합니다.
 
 1.  [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 준수** 또는 **장치 구성**을 선택한 다음, **정책**을 선택합니다.
 2.  기존 정책 중 하나를 선택하거나 새 정책을 만든 다음, **할당**을 선택합니다.

@@ -1,7 +1,7 @@
 ---
-title: Windows 10 Team에 대한 Microsoft Intune 장치 제한
+title: Windows 10 Team에 대한 Microsoft Intune 디바이스 제한
 titlesuffix: ''
-description: Windows 10 Team을 실행하는 장치에 사용할 수 있는 장치 제한을 알아봅니다.
+description: Windows 10 Team을 실행하는 디바이스에 사용할 수 있는 디바이스 제한을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -21,11 +21,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52184865"
 ---
-# <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 Team 장치 제한 설정
+# <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 Team 디바이스 제한 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클에서는 Windows 10 Team을 실행하는 장치에 대해 구성할 수 있는 Microsoft Intune 장치 제한 설정을 보여줍니다.
+이 아티클에서는 Windows 10 Team을 실행하는 디바이스에 대해 구성할 수 있는 Microsoft Intune 디바이스 제한 설정을 보여줍니다.
 
 
 ## <a name="apps-and-experience"></a>앱 및 경험

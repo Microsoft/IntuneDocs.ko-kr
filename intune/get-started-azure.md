@@ -25,7 +25,7 @@ ms.locfileid: "52180904"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Azure Portal에서 Microsoft Intune 시작
 
-Azure portal은 Microsoft Intune 서비스를 찾을 수 있는 곳입니다. Azure에는 많은 서비스가 있으며, 이 중 상당수는 정기적으로 사용하지 않는 서비스일 것입니다. Azure 내에서 대시보드와 사이드바를 사용자 지정하면 Intune으로 관리하는 장치에 로그인할 때마다 적절한 정보를 빠르게 찾을 수 있습니다.
+Azure portal은 Microsoft Intune 서비스를 찾을 수 있는 곳입니다. Azure에는 많은 서비스가 있으며, 이 중 상당수는 정기적으로 사용하지 않는 서비스일 것입니다. Azure 내에서 대시보드와 사이드바를 사용자 지정하면 Intune으로 관리하는 디바이스에 로그인할 때마다 적절한 정보를 빠르게 찾을 수 있습니다.
 
 ## <a name="changing-the-sidebar"></a>사이드바 변경
 

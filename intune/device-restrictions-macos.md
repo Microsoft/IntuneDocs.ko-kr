@@ -1,7 +1,7 @@
 ---
-title: macOS에 대한 Microsoft Intune 장치 제한 설정
+title: macOS에 대한 Microsoft Intune 디바이스 제한 설정
 titlesuffix: ''
-description: macOS를 실행하는 장치에서 장치 설정 및 기능을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
+description: macOS를 실행하는 디바이스에서 디바이스 설정 및 기능을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -21,11 +21,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/01/2018
 ms.locfileid: "52728539"
 ---
-# <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune macOS 장치 제한 설정
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune macOS 디바이스 제한 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클에서는 macOS를 실행하는 장치에 대해 구성할 수 있는 Microsoft Intune 장치 제한 설정을 보여줍니다.
+이 아티클에서는 macOS를 실행하는 디바이스에 대해 구성할 수 있는 Microsoft Intune 디바이스 제한 설정을 보여줍니다.
 
 ## <a name="password"></a>암호
 - **암호** - 최종 사용자에게 장치에 액세스하려면 암호를 입력하도록 요구합니다.

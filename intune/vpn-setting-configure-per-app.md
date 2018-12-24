@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 iOS 장치용 앱당 VPN 설정 - Azure | Microsoft Docs
-description: 필수 조건을 참조하고 VPN(가상 사설망) 사용자에 대한 그룹을 만들고 SCEP 인증서 프로필을 추가하고 앱당 VPN 프로필을 구성하고 일부 앱을 iOS 장치의 Microsoft Intune에서 VPN 프로필을 할당합니다. 또한 장치에서 VPN 연결을 확인하기 위한 단계를 나열합니다.
+title: Microsoft Intune에서 iOS 디바이스용 앱당 VPN 설정 - Azure | Microsoft Docs
+description: 필수 조건을 참조하고 VPN(가상 사설망) 사용자에 대한 그룹을 만들고 SCEP 인증서 프로필을 추가하고 앱당 VPN 프로필을 구성하고 일부 앱을 iOS 디바이스의 Microsoft Intune에서 VPN 프로필을 할당합니다. 또한 디바이스에서 VPN 연결을 확인하기 위한 단계를 나열합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,9 +22,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52180734"
 ---
-# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS 장치용 Intune에서 앱당 VPN 설정
+# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS 디바이스용 Intune에서 앱당 VPN 설정
 
-Intune이 관리하는 iOS 장치에서 관리되는 앱이 VPN을 사용할 수 있도록 지정합니다. Intune에서 앱당 VPN을 만들면 최종 사용자가 회사 문서에 액세스할 때 VPN을 통해 자동으로 연결합니다.
+Intune이 관리하는 iOS 디바이스에서 관리되는 앱이 VPN을 사용할 수 있도록 지정합니다. Intune에서 앱당 VPN을 만들면 최종 사용자가 회사 문서에 액세스할 때 VPN을 통해 자동으로 연결합니다.
 
 현재 앱당 VPN을 사용할 수 있는 공급자는 다음과 같습니다.
 
@@ -42,7 +42,7 @@ Intune이 관리하는 iOS 장치에서 관리되는 앱이 VPN을 사용할 수
 > [!IMPORTANT]
 > VPN 공급업체에는 특정 하드웨어 또는 라이선스와 같이 앱별 VPN에 대한 다른 특정 요구 사항이 있을 수 있습니다. Intune에서 앱별 VPN을 설정하기 전에 먼저 관련 설명서를 확인하고 해당 필수 구성 요소를 충족해야 합니다.
 
-해당 ID를 증명하기 위해 장치의 프롬프트 없이 동의해야 하는 인증서가 VPN 서버에 표시됩니다. 인증서의 자동 승인을 보장하려면 CA(인증 기관)에서 발급한 VPN 서버의 루트 인증서가 포함된 신뢰할 수 있는 인증서 프로필을 만듭니다. 
+해당 ID를 증명하기 위해 디바이스의 프롬프트 없이 동의해야 하는 인증서가 VPN 서버에 표시됩니다. 인증서의 자동 승인을 보장하려면 CA(인증 기관)에서 발급한 VPN 서버의 루트 인증서가 포함된 신뢰할 수 있는 인증서 프로필을 만듭니다. 
 
 인증서를 내보내고 CA를 추가합니다.
 
@@ -50,7 +50,7 @@ Intune이 관리하는 iOS 장치에서 관리되는 앱이 VPN을 사용할 수
 2. VPN 서버에서 인증서 기반 인증을 사용하는지 확인합니다. 
 3. 신뢰할 수 있는 루트 인증서 파일을 내보냅니다. 해당 파일은 .cer 확장명이며 신뢰할 수 있는 인증서 프로필을 만들 때 추가됩니다.
 4. 인증을 위해 인증서를 발급한 CA의 이름을 VPN 서버에 추가합니다.
-    해당 장치에서 제공한 CA가 VPN 서버의 신뢰할 수 있는 CA 목록에 있는 CA와 일치하는 경우 VPN 서버는 성공적으로 장치를 인증합니다.
+    해당 디바이스에서 제공한 CA가 VPN 서버의 신뢰할 수 있는 CA 목록에 있는 CA와 일치하는 경우 VPN 서버는 성공적으로 디바이스를 인증합니다.
 
 ## <a name="create-a-group-for-your-vpn-users"></a>VPN 사용자 그룹 만들기
 
@@ -69,7 +69,7 @@ Azure AD(Azure Active Directory)에서 기존 그룹을 만들거나 선택하�
 
 ## <a name="create-a-trusted-certificate-profile"></a>신뢰할 수 있는 인증서 프로필 만들기
 
-Intune에서 만든 프로필에 CA에서 발급한 VPN 서버의 루트 인증서를 가져옵니다. 신뢰할 수 있는 인증서 프로필은 iOS 장치가 VPN 서버에서 제공한 CA를 자동으로 신뢰하도록 합니다.
+Intune에서 만든 프로필에 CA에서 발급한 VPN 서버의 루트 인증서를 가져옵니다. 신뢰할 수 있는 인증서 프로필은 iOS 디바이스가 VPN 서버에서 제공한 CA를 자동으로 신뢰하도록 합니다.
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
@@ -86,7 +86,7 @@ Intune에서 만든 프로필에 CA에서 발급한 VPN 서버의 루트 인증�
 
 ## <a name="create-a-scep-certificate-profile"></a>SCEP 인증서 프로필 만들기
 
-신뢰할 수 있는 루트 인증서 프로필을 사용하면 iOS가 자동으로 VPN 서버를 신뢰할 수 있습니다. SCEP 인증서를 사용하면 iOS VPN 클라이언트에서 VPN 서버에 자격 증명을 제공합니다. 인증서를 사용하면 장치에서 사용자 이름 및 암호의 iOS 장치 사용자를 확인하는 메시지 없이 자동으로 인증할 수 있습니다. 
+신뢰할 수 있는 루트 인증서 프로필을 사용하면 iOS가 자동으로 VPN 서버를 신뢰할 수 있습니다. SCEP 인증서를 사용하면 iOS VPN 클라이언트에서 VPN 서버에 자격 증명을 제공합니다. 인증서를 사용하면 디바이스에서 사용자 이름 및 암호의 iOS 디바이스 사용자를 확인하는 메시지 없이 자동으로 인증할 수 있습니다. 
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
@@ -163,7 +163,7 @@ VPN 프로필을 추가한 후에 앱 및 Azure AD 그룹을 프로필에 연결
 
     ![VPN과 앱 연결](./media/vpn-per-app-app-to-vpn.png)
 
-다음과 같은 조건에서는 다음번 장치 체크인 시에 앱과 프로필 사이의 연결이 제거됩니다.
+다음과 같은 조건에서는 다음번 디바이스 체크인 시에 앱과 프로필 사이의 연결이 제거됩니다.
 - 앱이 필수 설치 의도와 함께 대상으로 지정되었습니다.
 - 프로필과 앱이 모두 동일한 그룹으로 대상 지정되었습니다.
 - 사용자가 앱 할당에서 앱당 VPN 구성을 제거했습니다.
@@ -171,12 +171,12 @@ VPN 프로필을 추가한 후에 앱 및 Azure AD 그룹을 프로필에 연결
 다음과 같은 조건에서는 최종 사용자가 회사 포털에서 재설치를 요청하기 전까지 앱과 프로필 사이의 연결이 유지됩니다.
 - 앱이 사용 가능한 설치 의도와 함께 대상으로 지정되었습니다.
 - 프로필과 앱이 모두 동일한 그룹으로 대상 지정되었습니다.
-- 최종 사용자가 회사 포털에서 앱 설치를 요청한 결과, 앱과 프로필이 장치에 설치되었습니다.
+- 최종 사용자가 회사 포털에서 앱 설치를 요청한 결과, 앱과 프로필이 디바이스에 설치되었습니다.
 - 사용자가 앱 할당에서 앱당 VPN 구성을 제거하거나 변경했습니다.
 
-## <a name="verify-the-connection-on-the-ios-device"></a>iOS 장치에 대한 연결 확인
+## <a name="verify-the-connection-on-the-ios-device"></a>iOS 디바이스에 대한 연결 확인
 
-앱당 VPN을 설정하고 장치와 연결한 경우 장치에서 연결이 작동하는지 확인합니다.
+앱당 VPN을 설정하고 디바이스와 연결한 경우 디바이스에서 연결이 작동하는지 확인합니다.
 
 ### <a name="before-you-attempt-to-connect"></a>연결하려고 하기 전에
 
@@ -198,11 +198,11 @@ VPN 프로필을 추가한 후에 앱 및 Azure AD 그룹을 프로필에 연결
 
 VPN을 선택하거나 자격 증명을 입력하지 않고 연결하여 제로 터치 환경을 확인합니다. 제로 터치 환경은 다음을 의미합니다.
 
- - 장치에서는 VPN 서버를 신뢰하라는 메시지를 표시하지 않습니다. 즉, **동적 신뢰** 대화 상자가 표시됩니다.
+ - 디바이스에서는 VPN 서버를 신뢰하라는 메시지를 표시하지 않습니다. 즉, **동적 신뢰** 대화 상자가 표시됩니다.
  - 자격 증명을 입력할 필요는 없습니다.
  - 연결 단추를 누른 후에 VPN에 연결됩니다.
 
-iOS 장치에 대한 연결을 확인합니다.
+iOS 디바이스에 대한 연결을 확인합니다.
 
 1. VPN 앱을 누릅니다.
 2. **연결**을 누릅니다.  
@@ -222,5 +222,5 @@ To review event logs:
 
 ## <a name="next-steps"></a>다음 단계
 
-- iOS 설정을 검토하려면 [Microsoft Intune의 iOS 장치에 대한 VPN 설정](vpn-settings-ios.md)을 참조하세요.
+- iOS 설정을 검토하려면 [Microsoft Intune의 iOS 디바이스에 대한 VPN 설정](vpn-settings-ios.md)을 참조하세요.
 -  VPN 설정과 Intune에 대해 자세히 알아보려면 [Microsoft Intune에서 VPN 설정을 구성하는 방법](vpn-settings-configure.md)을 참조하세요.

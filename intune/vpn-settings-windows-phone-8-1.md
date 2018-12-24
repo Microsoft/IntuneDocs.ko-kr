@@ -1,7 +1,7 @@
 ---
-title: Windows Phone 8.1 장치에 대한 Microsoft Intune VPN 설정
+title: Windows Phone 8.1 디바이스에 대한 Microsoft Intune VPN 설정
 titleSuffix: ''
-description: Windows Phone 8.1을 실행하는 장치에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
+description: Windows Phone 8.1을 실행하는 디바이스에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -21,11 +21,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52182690"
 ---
-# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1을 실행하는 장치용 Microsoft Intune에서 VPN 설정 구성
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1을 실행하는 디바이스용 Microsoft Intune에서 VPN 설정 구성
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클에서는 Windows Phone 8.1을 실행하는 장치에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 설명합니다.
+이 아티클에서는 Windows Phone 8.1을 실행하는 디바이스에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 설명합니다.
 
 
 선택한 설정에 따라 다음 목록의 일부 값을 구성할 수 없습니다.
@@ -33,7 +33,7 @@ ms.locfileid: "52182690"
 ## <a name="base-vpn-settings"></a>기본 VPN 설정
 
 - **Windows Phone 8.1에만 모든 설정 적용** - Intune 클래식 포털에서 구성할 수 있는 설정입니다. Azure Portal에서는 이 설정을 변경할 수 없습니다. **구성됨**으로 설정된 경우 모든 설정이 Windows Phone 8.1 장치에만 적용됩니다. **구성되지 않음**으로 설정한 경우 Windows 10 Mobile 장치에도 이러한 설정이 적용됩니다.
-- **연결 이름** - 이 연결에 대한 이름을 입력합니다. 사용자가 장치에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
+- **연결 이름** - 이 연결에 대한 이름을 입력합니다. 사용자가 디바이스에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
 - **인증 방법** - 장치에서 VPN 서버에 인증하는 방법을 선택합니다.
     - **인증서** - **인증 인증서** 아래에서 이전에 연결을 인증하기 위해 만든 SCEP 또는 PKCS 인증서 프로필을 선택합니다. 인증서 프로필에 대한 자세한 내용은 [인증서를 구성하는 방법](certificates-configure.md)을 참조하세요.
     - **사용자 이름 및 암호** - 최종 사용자는 VPN 서버에 로그인하기 위해 사용자 이름 및 암호를 제공해야 합니다.

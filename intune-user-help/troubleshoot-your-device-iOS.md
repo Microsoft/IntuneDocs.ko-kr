@@ -1,6 +1,6 @@
 ---
-title: iOS 장치의 일반적인 문제 해결 | Microsoft 문서
-description: iOS 장치의 일반적인 문제를 해결하는 방법을 알아봅니다.
+title: iOS 디바이스의 일반적인 문제 해결 | Microsoft 문서
+description: iOS 디바이스의 일반적인 문제를 해결하는 방법을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,9 +24,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43146402"
 ---
-# <a name="fix-common-issues-with-your-ios-device"></a>iOS 장치의 일반적인 문제 해결
+# <a name="fix-common-issues-with-your-ios-device"></a>iOS 디바이스의 일반적인 문제 해결
 
-iOS 장치에서 문제 해결을 통해 해결할 수 있는 문제가 발생하는 경우가 있습니다. 먼저 직접 해결해 볼 수 있는 몇 가지 일반적인 문제는 다음과 같습니다. 좀 더 복잡한 문제의 경우 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에 있는 연락처 정보를 통해 회사 지원팀에 문의하는 것이 좋습니다.
+iOS 디바이스에서 문제 해결을 통해 해결할 수 있는 문제가 발생하는 경우가 있습니다. 먼저 직접 해결해 볼 수 있는 몇 가지 일반적인 문제는 다음과 같습니다. 좀 더 복잡한 문제의 경우 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에 있는 연락처 정보를 통해 회사 지원팀에 문의하는 것이 좋습니다.
 
 - [손상된 iOS 장치를 다시 연결해야 함](how-to-reconnect-a-compromised-ios-device.md)
 - [회사 지원팀에 오류를 보내야 함](send-errors-to-your-it-admin-ios.md)

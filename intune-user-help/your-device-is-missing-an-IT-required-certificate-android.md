@@ -1,5 +1,5 @@
 ---
-title: 장치에 인증서가 없는 경우 | Microsoft Docs
+title: 디바이스에 인증서가 없는 경우 | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
@@ -24,16 +24,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43149784"
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android 장치에는 회사 지원팀에 필요한 인증서가 누락되었습니다.
+# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android 디바이스에는 회사 지원팀에 필요한 인증서가 누락되었습니다.
 
-장치가 Intune에 등록되어 있지 않고 회사 지원팀에 필요한 특정 인증서가 없는 경우 회사 포털 앱에 로그인할 수 없습니다. 로그인하려고 시도하면 다음과 같은 메시지가 표시됩니다.
+디바이스가 Intune에 등록되어 있지 않고 회사 지원팀에 필요한 특정 인증서가 없는 경우 회사 포털 앱에 로그인할 수 없습니다. 로그인하려고 시도하면 다음과 같은 메시지가 표시됩니다.
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
 이 문제를 해결하고 필요한 인증서를 가져오려는 경우 다음 두 가지 주요 단계를 수행해야 합니다.
 
 - 회사 또는 학교 PC를 확인하여 누락된 인증서를 식별합니다.
-- 장치를 사용하여 인터넷에서 누락된 인증서를 다운로드합니다.
+- 디바이스를 사용하여 인터넷에서 누락된 인증서를 다운로드합니다.
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>회사 또는 학교 PC를 확인하여 누락된 인증서를 식별합니다.
 
@@ -53,13 +53,13 @@ ms.locfileid: "43149784"
 
 5. **인증서** 대화 상자에서 **인증 경로** 탭을 선택한 다음 인터넷에서 가져와야 하는 인증서를 식별합니다. 필요한 인증서의 이름은 앞의 예제 스크린샷에 강조 표시된 것과 같은 위치에 있습니다.
 
-## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Android 모바일 장치에서 누락된 인증서를 다운로드한 후 설치합니다.
+## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Android 모바일 디바이스에서 누락된 인증서를 다운로드한 후 설치합니다.
 
 1. Bing이나 Google 같은 검색 엔진을 사용하여 이전 섹션에서 식별한 누락된 인증서의 이름을 검색합니다. 인증서는 ".crt" 또는 ".pem" 등의 다른 "확장명"으로 끝날 수 있습니다.
 
 2. 웹 사이트에서 루트 인증서를 다운로드합니다.
 
-3. 인증서 다운로드 후 장치 맨 위에서 아래로 끌어 알림을 열고, 알림 목록에서 인증서 이름을 누릅니다.
+3. 인증서 다운로드 후 디바이스 맨 위에서 아래로 끌어 알림을 열고, 알림 목록에서 인증서 이름을 누릅니다.
 
 4. 다음 스크린샷에 표시된 **인증서 이름 지정** 대화 상자에서 기본 인증서 이름을 그대로 적용합니다.
 

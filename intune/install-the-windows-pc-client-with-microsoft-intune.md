@@ -26,7 +26,7 @@ ms.locfileid: "52179087"
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Microsoft Intune을 사용하여 Windows PC를 [MDM(모바일 장치 관리)가 있는 모바일 장치](windows-enroll.md)로 관리하거나, 아래 설명된 대로 Intune 소프트웨어 클라이언트가 있는 컴퓨터로 관리할 수 있습니다. 그러나 고객은 가능한 한 [MDM 관리 솔루션을 사용](windows-enroll.md)하는 것이 좋습니다.
+> Microsoft Intune을 사용하여 Windows PC를 [MDM(모바일 디바이스 관리)가 있는 모바일 디바이스](windows-enroll.md)로 관리하거나, 아래 설명된 대로 Intune 소프트웨어 클라이언트가 있는 컴퓨터로 관리할 수 있습니다. 그러나 고객은 가능한 한 [MDM 관리 솔루션을 사용](windows-enroll.md)하는 것이 좋습니다.
 
 
 Intune 클라이언트 소프트웨어를 설치하여 Windows PC를 등록할 수 있습니다. Intune 클라이언트 소프트웨어는 다음 방법으로 설치할 수 있습니다.
@@ -131,9 +131,9 @@ Intune 클라이언트 소프트웨어에는 PC를 Intune 관리에 등록하는
 
   ![플랫폼별 기본 등록 옵션](./media/install-the-windows-pc-client/default-enrollment-options-table.png)
 
-다음 스크린샷에서는 사용자가 소프트웨어 클라이언트를 사용하여 장치를 등록할 때 무엇이 표시되는지를 보여 줍니다.
+다음 스크린샷에서는 사용자가 소프트웨어 클라이언트를 사용하여 디바이스를 등록할 때 무엇이 표시되는지를 보여 줍니다.
 
-먼저 장치를 확인하거나 등록하라는 메시지가 표시됩니다.
+먼저 디바이스를 확인하거나 등록하라는 메시지가 표시됩니다.
 
   ![확인 식별 또는 등록](./media/install-the-windows-pc-client/identify-device-or-enroll.png)
 
@@ -161,7 +161,7 @@ Intune 클라이언트 소프트웨어에는 PC를 Intune 관리에 등록하는
 
   ![PC 클라이언트 설치 완료](./media/install-the-windows-pc-client/completed-the-setup-wizard.png)
 
-사용자가 Intune PC 클라이언트 소프트웨어를 사용하여 이미 등록한 PC를 모바일 장치로 등록하려고 하면 다음과 같은 오류 화면이 표시됩니다.
+사용자가 Intune PC 클라이언트 소프트웨어를 사용하여 이미 등록한 PC를 모바일 디바이스로 등록하려고 하면 다음과 같은 오류 화면이 표시됩니다.
 
   ![PC가 이미 등록된 경우 표시되는 화면](./media/install-the-windows-pc-client/page-shown-if-pc-already-enrolled.png)
 
@@ -172,7 +172,7 @@ Intune 클라이언트 소프트웨어에는 PC를 Intune 관리에 등록하는
 
 1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** &gt; **모든 장치** &gt; **모든 컴퓨터**를 클릭합니다.
 
-2.  목록에서 Intune과 통신하는 관리 컴퓨터를 찾거나, **장치 검색** 상자에 컴퓨터 이름이나 이름 중 일부를 입력하여 특정 관리 컴퓨터를 검색합니다.
+2.  목록에서 Intune과 통신하는 관리 컴퓨터를 찾거나, **디바이스 검색** 상자에 컴퓨터 이름이나 이름 중 일부를 입력하여 특정 관리 컴퓨터를 검색합니다.
 
 3.  콘솔 맨 아래 창에 있는 컴퓨터의 상태를 확인합니다. 오류가 있으면 해결합니다.
 

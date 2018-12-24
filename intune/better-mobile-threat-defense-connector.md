@@ -22,15 +22,15 @@ ms.locfileid: "52178497"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Intune과 Better Mobile Threat Defense 커넥터 사용
 
-Microsoft Intune과 통합된 MTD(Mobile Threat Defense) 솔루션인 Better Mobile에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 장치에서 회사 리소스에 대한 액세스를 제어할 수 있습니다. 위험은 Better Mobile 앱을 실행하는 장치에서 수집된 원격 분석에 기반하여 평가됩니다.
+Microsoft Intune과 통합된 MTD(Mobile Threat Defense) 솔루션인 Better Mobile에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 디바이스에서 회사 리소스에 대한 액세스를 제어할 수 있습니다. 위험은 Better Mobile 앱을 실행하는 디바이스에서 수집된 원격 분석에 기반하여 평가됩니다.
 
-Intune 장치 준수 정책을 통해 사용하도록 설정된 Better Mobile 위험 평가에 따라 조건부 액세스 정책을 구성할 수 있습니다. 이 정책을 사용하여 회사 리소스에 액세스하는 비규격 장치를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
+Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Better Mobile 위험 평가에 따라 조건부 액세스 정책을 구성할 수 있습니다. 이 정책을 사용하여 회사 리소스에 액세스하는 비규격 디바이스를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Intune과 Better Mobile이 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 
-Better Mobile 모바일 앱은 모바일 장치에서 설치되어 실행됩니다. 이 앱은 파일 시스템, 네트워크 스택, 장치 및 앱 원격 분석(사용 가능한 경우)을 캡처한 다음, Better Mobile 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
+Better Mobile 모바일 앱은 모바일 디바이스에서 설치되어 실행됩니다. 이 앱은 파일 시스템, 네트워크 스택, 디바이스 및 앱 원격 분석(사용 가능한 경우)을 캡처한 다음, Better Mobile 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
 
-Intune 장치 준수 정책에는 Better Mobile 위험 평가에 기반을 둔 Better Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 장치가 사용되는 정책을 준수하는지를 평가합니다. 장치가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 장치에 설치된 Better Mobile 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
+Intune 디바이스 준수 정책에는 Better Mobile 위험 평가에 기반을 둔 Better Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다. 디바이스가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 디바이스에 설치된 Better Mobile 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
 
 ## <a name="sample-scenarios"></a>샘플 시나리오:
 
@@ -38,7 +38,7 @@ Intune 장치 준수 정책에는 Better Mobile 위험 평가에 기반을 둔 B
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>악성 앱의 위협에 따라 액세스 제어
 
-맬웨어와 같은 악성 앱이 장치에서 감지되면 위협이 해결될 때까지 장치에서 다음 작업을 차단할 수 있습니다.
+맬웨어와 같은 악성 앱이 디바이스에서 감지되면 위협이 해결될 때까지 디바이스에서 다음 작업을 차단할 수 있습니다.
 
 -   회사 메일에 연결
 

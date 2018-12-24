@@ -84,13 +84,13 @@ _2017년 11월 출시됨_
 ## <a name="1709"></a>1709
 _2017년 10월 출시됨_
 
-### <a name="user-device-association-entity-collection-added-to-intune-data-warehouse-data-model----1187917---"></a>Intune 데이터 웨어하우스 데이터 모델에 추가된 사용자 장치 연결 엔터티 컬렉션 <!-- 1187917 -->
+### <a name="user-device-association-entity-collection-added-to-intune-data-warehouse-data-model----1187917---"></a>Intune 데이터 웨어하우스 데이터 모델에 추가된 사용자 디바이스 연결 엔터티 컬렉션 <!-- 1187917 -->
 
-이제 사용자와 장치 엔터티 컬렉션을 연결하는 사용자 장치 연결 정보를 사용하여 보고서 및 데이터 시각화를 작성할 수 있습니다. 데이터 모델은 데이터 웨어하우스 Intune 페이지에서 검색한 Power BI 파일(PBIX)이나 OData 엔드포인트를 통해 액세스하거나 사용자 지정 클라이언트를 개발하여 액세스할 수 있습니다. 자세한 내용은 [사용자 장치 연결](reports-ref-user-device.md)을 참조하세요.
+이제 사용자와 디바이스 엔터티 컬렉션을 연결하는 사용자 디바이스 연결 정보를 사용하여 보고서 및 데이터 시각화를 작성할 수 있습니다. 데이터 모델은 데이터 웨어하우스 Intune 페이지에서 검색한 Power BI 파일(PBIX)이나 OData 엔드포인트를 통해 액세스하거나 사용자 지정 클라이언트를 개발하여 액세스할 수 있습니다. 자세한 내용은 [사용자 디바이스 연결](reports-ref-user-device.md)을 참조하세요.
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>데이터 웨어하우스 데이터 모델의 새 엔터티 <!-- 1479526 --><!-- -->
 
- - 엔터티 [**UserDeviceAssociation**](reports-ref-user-device.md)이 추가되었습니다. **UserDeviceAssociation**에는 조직의 사용자 장치 연결이 포함되어 있습니다. 이제 사용자와 장치 엔터티 컬렉션을 연결하는 사용자 장치 연결 정보를 사용하여 보고서 및 데이터 시각화를 작성할 수 있습니다.  
+ - 엔터티 [**UserDeviceAssociation**](reports-ref-user-device.md)이 추가되었습니다. **UserDeviceAssociation**에는 조직의 사용자 장치 연결이 포함되어 있습니다. 이제 사용자와 디바이스 엔터티 컬렉션을 연결하는 사용자 디바이스 연결 정보를 사용하여 보고서 및 데이터 시각화를 작성할 수 있습니다.  
  - 엔터티 [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md)이 추가되었습니다. **IntuneManagementExtension**은 버전 및 설치 상태와 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
 
 ## <a name="next-steps"></a>다음 단계

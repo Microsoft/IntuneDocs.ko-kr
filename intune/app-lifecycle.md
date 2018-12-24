@@ -36,7 +36,7 @@ Microsoft Intune 앱 수명 주기는 앱이 추가될 때 시작되어 앱을 �
 
 ## <a name="deploy"></a>배포
 
-앱을 Intune에 추가한 후 [관리하는 사용자와 장치에 앱을 할당](apps-deploy.md)할 수 있습니다. Intune은 이 과정을 쉽게 수행할 수 있게 해주며 앱이 배포된 후 Azure Portal 내의 Intune에서 배포의 [성공 여부를 모니터링](apps-monitor.md)할 수 있습니다. 또한 [Apple](vpp-apps-ios.md) 및 [Windows](windows-store-for-business.md) 앱 스토어와 같은 일부 앱 스토어에서 회사용 앱 라이선스를 대량으로 구매할 수 있습니다. Intune은 데이터를 이러한 스토어와 동기화하여 이러한 형식의 앱에 대한 라이선스 사용을 Intune 관리 콘솔에서 바로 배포 및 추적할 수 있습니다.
+앱을 Intune에 추가한 후 [관리하는 사용자와 디바이스에 앱을 할당](apps-deploy.md)할 수 있습니다. Intune은 이 과정을 쉽게 수행할 수 있게 해주며 앱이 배포된 후 Azure Portal 내의 Intune에서 배포의 [성공 여부를 모니터링](apps-monitor.md)할 수 있습니다. 또한 [Apple](vpp-apps-ios.md) 및 [Windows](windows-store-for-business.md) 앱 스토어와 같은 일부 앱 스토어에서 회사용 앱 라이선스를 대량으로 구매할 수 있습니다. Intune은 데이터를 이러한 스토어와 동기화하여 이러한 형식의 앱에 대한 라이선스 사용을 Intune 관리 콘솔에서 바로 배포 및 추적할 수 있습니다.
 
 ## <a name="configure"></a>구성
 
@@ -47,8 +47,8 @@ Microsoft Intune 앱 수명 주기는 앱이 추가될 때 시작되어 앱을 �
 ## <a name="protect"></a>보호
 
 Intune은 앱의 데이터를 보호하는 데 도움이 되는 많은 방법을 제공합니다. 주요 방법은 다음과 같습니다.
-- [조건부 액세스](conditional-access.md)는 지정한 조건에 따라 이메일 및 기타 서비스에 대한 액세스를 제어합니다. 조건에는 장치 유형 또는 배포한 [장치 준수 정책](device-compliance.md)에 대한 준수가 포함됩니다.
-- [앱 보호 정책](app-protection-policy.md)은 개별 앱에 대해 작동하여 이러한 앱에서 사용하는 회사 데이터를 보호하는 데 도움을 줍니다. 예를 들어 관리되지 않는 앱과 관리하는 앱 간의 데이터 복사를 제한하거나, 탈옥되거나 루팅된 장치에서 앱이 실행되지 않도록 할 수 있습니다.
+- [조건부 액세스](conditional-access.md)는 지정한 조건에 따라 이메일 및 기타 서비스에 대한 액세스를 제어합니다. 조건에는 디바이스 유형 또는 배포한 [디바이스 준수 정책](device-compliance.md)에 대한 준수가 포함됩니다.
+- [앱 보호 정책](app-protection-policy.md)은 개별 앱에 대해 작동하여 이러한 앱에서 사용하는 회사 데이터를 보호하는 데 도움을 줍니다. 예를 들어 관리되지 않는 앱과 관리하는 앱 간의 데이터 복사를 제한하거나, 탈옥되거나 루팅된 디바이스에서 앱이 실행되지 않도록 할 수 있습니다.
 
 ## <a name="retire"></a>사용 중지
 

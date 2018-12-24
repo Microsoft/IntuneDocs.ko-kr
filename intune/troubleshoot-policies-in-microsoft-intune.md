@@ -29,42 +29,42 @@ Intune 정책을 배포하고 관리하는 데 문제가 있는 경우 여기서
 
 ## <a name="general-issues"></a>일반적인 문제
 
-### <a name="was-a-deployed-policy-applied-to-the-device"></a>배포된 정책이 장치에 적용되었나요?
+### <a name="was-a-deployed-policy-applied-to-the-device"></a>배포된 정책이 디바이스에 적용되었나요?
 **문제:** 정책이 올바르게 적용되었는지 확실하지 않습니다.
 
-Intune에서 **장치** > **모든 장치**로 이동해 장치 > **장치 구성**을 선택하면 각 장치마다 정책이 나열됩니다. 각 정책에는 **상태**가 있습니다. 상태는 장치에 적용되는 모든 정책 및 하드웨어와 운영 체제의 제한 사항과 요구 사항을 함께 고려할 때 적용되는 상태를 말합니다. 가능한 상태는 다음과 같습니다.
+Intune에서 **장치** > **모든 장치**로 이동해 장치 > **장치 구성**을 선택하면 각 장치마다 정책이 나열됩니다. 각 정책에는 **상태**가 있습니다. 상태는 디바이스에 적용되는 모든 정책 및 하드웨어와 운영 체제의 제한 사항과 요구 사항을 함께 고려할 때 적용되는 상태를 말합니다. 가능한 상태는 다음과 같습니다.
 
 - **준수**: 장치가 설정을 준수하는 정책 및 서비스에 대한 보고서를 받았습니다.
 
-- **적용할 수 없음**: 정책 설정을 적용할 수 없습니다. 예를 들어 iOS 장치의 메일 설정이 Android 장치에 적용되지 않습니다.
+- **적용할 수 없음**: 정책 설정을 적용할 수 없습니다. 예를 들어 iOS 디바이스의 메일 설정이 Android 디바이스에 적용되지 않습니다.
 
 - **보류 중**: 정책이 장치에 전송되었지만, 서비스에 상태를 보고하지 않았습니다. 예를 들어 Android에서의 암호화의 경우, 사용자가 암호화를 사용하도록 설정해야 하고 보류 중으로 표시될 수 있습니다.
 
 > [!NOTE]
-> 제한 수준이 다른 두 정책을 같은 장치나 사용자에 적용하면 보다 제한적인 정책이 적용됩니다.
+> 제한 수준이 다른 두 정책을 같은 디바이스나 사용자에 적용하면 보다 제한적인 정책이 적용됩니다.
 
-## <a name="issues-with-enrolled-devices"></a>등록된 장치 문제
+## <a name="issues-with-enrolled-devices"></a>등록된 디바이스 문제
 
 ### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>경고: Exchange에 액세스 규칙 저장 실패
 **문제**: 관리 콘솔에에 **Exchange에 액세스 규칙 저장 실패**  라는 경고가 표시됩니다.
 
 관리 콘솔의 Exchange 온-프레미스 정책 작업 영역에서 정책을 만들었지만, O365를 사용하고 있는 경우, 구성된 정책 설정이 Intune에 의해 적용되지 않습니다. 경고의 정책 소스를 확인합니다.  Exchange 온-프레미스 정책에 따라 작업 영역에서는 레거시 규칙을 삭제합니다. 레거시 규칙은 Intune 내에서 온-프레미스 Exchange의 전역 Exchange 규칙으로 O365와는 관계가 없습니다. 그런 다음 O365에 대한 새 정책을 만듭니다.
 
-### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>등록된 다양한 장치에 대한 보안 정책을 변경할 수 없음
-Windows Phone 장치는 MDM 또는 EAS를 통해 보안 정책을 설정하면 이 정책의 보안 강도가 줄어드는 것을 허용하지 않습니다. 예를 들어 **문자 암호의 최소 수** 를 8로 설정한 다음 4로 줄이려고 합니다. 더 제한적인 정책이 이미 장치에 적용되었습니다.
+### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>등록된 다양한 디바이스에 대한 보안 정책을 변경할 수 없음
+Windows Phone 디바이스는 MDM 또는 EAS를 통해 보안 정책을 설정하면 이 정책의 보안 강도가 줄어드는 것을 허용하지 않습니다. 예를 들어 **문자 암호의 최소 수** 를 8로 설정한 다음 4로 줄이려고 합니다. 더 제한적인 정책이 이미 디바이스에 적용되었습니다.
 
-장치 플랫폼에 따라서는 정책을 덜 안전한 값으로 변경하려는 경우 보안 정책을 다시 설정해야 할 수 있습니다.
+디바이스 플랫폼에 따라서는 정책을 덜 안전한 값으로 변경하려는 경우 보안 정책을 다시 설정해야 할 수 있습니다.
 
 예를 들어, Windows의 바탕 화면에서 오른쪽에서 살짝 밀어 **참 메뉴** 모음을 엽니다. **설정** > **제어판**을 선택하고 **사용자 계정**을 선택합니다. 왼쪽에서 **보안 정책 재설정** 링크를 선택하고 **정책 재설정**을 선택합니다.
 
-Android, Windows Phone 8.1 이상 및 iOS와 같은 기타 MDM 장치의 경우 제한적인 정책을 적용할 수 있도록 사용을 중지하고 서비스에 다시 등록해야 해야 합니다.
+Android, Windows Phone 8.1 이상 및 iOS와 같은 기타 MDM 디바이스의 경우 제한적인 정책을 적용할 수 있도록 사용을 중지하고 서비스에 다시 등록해야 해야 합니다.
 
 ## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Intune 소프트웨어 클라이언트를 실행하는 PC 관련 문제
 
 클래식 포털에 적용됩니다.
 
 ### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log의 Microsoft Intune 정책 관련 오류
-Intune 소프트웨어 클라이언트로 관리되는 Windows PC의 경우 policyplatform.log 파일의 정책 오류는 장치의 Windows UAC(사용자 계정 컨트롤)에서 기본값이 아닌 설정을 사용한 결과일 수 있습니다. 기본값이 아닌 일부 UAC 설정은 Microsoft Intune 클라이언트 설치와 정책 실행에 영향을 줄 수 있습니다.
+Intune 소프트웨어 클라이언트로 관리되는 Windows PC의 경우 policyplatform.log 파일의 정책 오류는 디바이스의 Windows UAC(사용자 계정 컨트롤)에서 기본값이 아닌 설정을 사용한 결과일 수 있습니다. 기본값이 아닌 일부 UAC 설정은 Microsoft Intune 클라이언트 설치와 정책 실행에 영향을 줄 수 있습니다.
 
 #### <a name="resolve-uac-issues"></a>UAC 문제 해결
 

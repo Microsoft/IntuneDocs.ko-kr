@@ -41,7 +41,7 @@ Intune과 Pradeo을 통합하는 과정을 시작하기 전에 다음 항목이 
 
     -   디렉터리 데이터 읽기
 
-    -   Intune에 장치 정보 보내기
+    -   Intune에 디바이스 정보 보내기
 
 -   Pradeo Security 콘솔에 액세스하기 위한 관리자 자격 증명.
 
@@ -49,9 +49,9 @@ Intune과 Pradeo을 통합하는 과정을 시작하기 전에 다음 항목이 
 
 Pradeo 앱 권한 부여 프로세스는 다음과 같습니다.
 
--   Pradeo 서비스에서 장치 상태와 관련된 정보를 Intune으로 다시 전달하도록 허용합니다.
+-   Pradeo 서비스에서 디바이스 상태와 관련된 정보를 Intune으로 다시 전달하도록 허용합니다.
 
--   Pradeo는 Azure AD 등록 그룹 멤버 자격과 동기화하여 해당 장치의 데이터베이스를 채웁니다.
+-   Pradeo는 Azure AD 등록 그룹 멤버 자격과 동기화하여 해당 디바이스의 데이터베이스를 채웁니다.
 
 -   Pradeo 관리 콘솔에서 Azure AD SSO(Single Sign On)를 사용하도록 허용합니다.
 
@@ -75,7 +75,7 @@ Pradeo 앱 권한 부여 프로세스는 다음과 같습니다.
 
 7. Pradeo-Intune Connector 창에서 **동의**를 선택합니다. 
 
-8. Pradeo 장치 API 커넥터 창에서 **동의**를 선택합니다.
+8. Pradeo 디바이스 API 커넥터 창에서 **동의**를 선택합니다.
 
 9. Pradeo 웹 페이지가 다시 열립니다. **3단계** 아래에서 **Microsoft에 연결** 단추를 선택합니다. 
 

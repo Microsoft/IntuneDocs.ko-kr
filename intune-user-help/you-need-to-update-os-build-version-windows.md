@@ -1,6 +1,6 @@
 ---
-title: Windows 10 장치 업데이트 | Microsoft Docs
-description: Windows 10 장치를 업데이트하여 회사 리소스에 액세스하는 방법을 알아봅니다.
+title: Windows 10 디바이스 업데이트 | Microsoft Docs
+description: Windows 10 디바이스를 업데이트하여 회사 리소스에 액세스하는 방법을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,9 +24,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43149690"
 ---
-# <a name="update-your-windows-10-device"></a>Windows 10 장치 업데이트
+# <a name="update-your-windows-10-device"></a>Windows 10 디바이스 업데이트
 
-직장이나 학교에서는 자체 리소스에 액세스하는 장치가 안전한지 확인해야 합니다. 장치가 해당 리소스에 액세스하도록 설정되어 있는지 확인하는 한 가지 방법은 장치가 최신 상태인지 확인하는 것입니다. 장치에서는 이것을 "OS 빌드"라고 합니다. Windows 10 장치를 업데이트하는 방법은 다음과 같습니다.
+직장이나 학교에서는 자체 리소스에 액세스하는 디바이스가 안전한지 확인해야 합니다. 디바이스가 해당 리소스에 액세스하도록 설정되어 있는지 확인하는 한 가지 방법은 디바이스가 최신 상태인지 확인하는 것입니다. 디바이스에서는 이것을 "OS 빌드"라고 합니다. Windows 10 디바이스를 업데이트하는 방법은 다음과 같습니다.
 
 1. **시작**에서 **설정**을 엽니다.
 2. **설정** > **시스템** > **정보** > **OS 빌드**로 이동합니다.

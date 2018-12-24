@@ -1,6 +1,6 @@
 ---
-title: Intune에서 Windows Phone 8.1 장치 등록 | Microsoft 문서
-description: Intune에서 Windows Phone 8.1 장치를 등록하는 방법을 설명합니다.
+title: Intune에서 Windows Phone 8.1 디바이스 등록 | Microsoft 문서
+description: Intune에서 Windows Phone 8.1 디바이스를 등록하는 방법을 설명합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,19 +24,19 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43147524"
 ---
-# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune에서 Windows Phone 8.1 장치 등록
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune에서 Windows Phone 8.1 디바이스 등록
 
-회사 또는 학교에서 Microsoft Intune을 사용하는 경우 장치를 등록하여 회사 전자 메일, 파일 및 기타 리소스에 액세스 권한을 얻을 수 있습니다. 장치를 등록하면 조직에서 회사 데이터 보안을 유지할 수 있습니다. 등록에 대해 자세히 알아보려면 [Intune에서 회사 포털 앱을 설치하고 장치를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) 및 [회사 지원팀이 장치에서 확인할 수 있는 항목과 할 수 없는 항목](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)을 참조하세요.
+회사 또는 학교에서 Microsoft Intune을 사용하는 경우 디바이스를 등록하여 회사 전자 메일, 파일 및 기타 리소스에 액세스 권한을 얻을 수 있습니다. 디바이스를 등록하면 조직에서 회사 데이터 보안을 유지할 수 있습니다. 등록에 대해 자세히 알아보려면 [Intune에서 회사 포털 앱을 설치하고 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) 및 [회사 지원팀이 디바이스에서 확인할 수 있는 항목과 할 수 없는 항목](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)을 참조하세요.
 
 
-Intune에 Phone 8.1 장치를 등록하려면 회사에 적용되는 지침을 따릅니다.
+Intune에 Phone 8.1 디바이스를 등록하려면 회사에 적용되는 지침을 따릅니다.
 
 -   [회사에서 Microsoft 스토어의 회사 포털 사용을 허용하는 경우](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
 -   [Windows Phone에서 Microsoft 스토어에 액세스할 수 없거나 Microsoft 계정이 없는 경우](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
 ## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>회사에서 Microsoft 스토어의 회사 포털 사용을 허용하는 경우
-장치에 회사 포털 앱을 설치합니다.
+디바이스에 회사 포털 앱을 설치합니다.
 
 1.  **시작** &gt; **스토어**를 탭합니다.
 
@@ -50,9 +50,9 @@ Intune에 Phone 8.1 장치를 등록하려면 회사에 적용되는 지침을 �
 
     ![회사 포털을 설치합니다.](./media/WP81-2-CP-install-v2.png)
 
-장치 등록:
+디바이스 등록:
 
-1.  장치에서 **Microsoft Intune 회사 포털** 앱을 엽니다.
+1.  디바이스에서 **Microsoft Intune 회사 포털** 앱을 엽니다.
 
 2.  자격 증명을 제공합니다. 해당하는 경우 회사의 계약조건을 수락하라는 요청받을 수 있습니다.
 
@@ -60,11 +60,11 @@ Intune에 Phone 8.1 장치를 등록하려면 회사에 적용되는 지침을 �
 
 4.  **이 장치를 등록하거나 식별하려면 탭하세요.** 를 탭합니다.
 
-    ![이 장치를 등록하거나 식별하려면 탭하세요.](./media/WP81-enroll-1-swipe-my-devices.png)
+    ![이 디바이스를 등록하거나 식별하려면 탭하세요.](./media/WP81-enroll-1-swipe-my-devices.png)
 
 5.  **이 장치 등록**을 탭합니다.
 
-    ![이 장치 화면을 등록합니다.](./media/WP81-enroll-2-enroll-this-device.png)
+    ![이 디바이스 화면을 등록합니다.](./media/WP81-enroll-2-enroll-this-device.png)
 
 6.  **계정 추가**를 탭합니다.
 

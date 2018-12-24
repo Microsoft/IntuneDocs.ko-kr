@@ -23,8 +23,8 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/08/2018
 ms.locfileid: "53112445"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 장치 배포(미리 보기)
-Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Directory 조인 장치를 설정할 수 있습니다. 이렇게 하려면 다음 단계를 수행합니다.
+# <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포(미리 보기)
+Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Directory 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 다음 단계를 수행합니다.
 
 > [!NOTE]
 > 이 기능은 앞으로 며칠 동안 사용자 기반 전체에 롤아웃됩니다. 따라서 계정에 롤아웃될 때까지 다음 단계를 수행하지 못할 수도 있습니다.
@@ -34,7 +34,7 @@ Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Direct
 - [하이브리드 Azure Active Directory 조인 장치](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)를 성공적으로 구성합니다.
     - [Get-MsolDevice cmdlet을 사용하여 등록을 확인]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)합니다.
 
-등록할 장치도 다음과 같아야 합니다.
+등록할 디바이스도 다음과 같아야 합니다.
 - [2018년 10월 업데이트](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)가 있는 Windows 10을 실행합니다.
 - 인터넷에 대한 액세스 권한이 있어야 합니다.
 - Active Directory에 대한 액세스 권한이 있어야 합니다(VPN 연결은 지원되지 않음).
@@ -54,7 +54,7 @@ Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Direct
 
    ![Azure Portal의 스크린샷](./media/auto-enroll-intune.png)
 
-4. Intune 및 Windows를 사용하여 Azure Active Directory에 조인된 장치를 배포하는 사용자가 **MDM 사용자 범위**에 속한 그룹의 멤버인지 확인합니다.
+4. Intune 및 Windows를 사용하여 Azure Active Directory에 조인된 디바이스를 배포하는 사용자가 **MDM 사용자 범위**에 속한 그룹의 멤버인지 확인합니다.
 
    ![Azure Portal의 스크린샷](./media/auto-enroll-scope.png)
 
@@ -125,23 +125,23 @@ Active Directory용 Intune Connector는 인터넷 및 Active Directory에 액세
 네트워킹 환경에 웹 프록시가 있는 경우 Active Directory용 Intune Connector가 제대로 작동할 수 있도록 [기존 온-프레미스 프록시 서버 작업](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)의 지침을 따릅니다.
 
 
-## <a name="create-a-device-group"></a>장치 그룹 만들기
+## <a name="create-a-device-group"></a>디바이스 그룹 만들기
 1. [Intune](https://aka.ms/intuneportal)에서 **그룹** > **새 그룹**을 선택합니다.
 2. **그룹** 블레이드에서:
     1. **그룹 형식**에서 **보안**을 선택합니다.
     2. **그룹 이름** 및 **그룹 설명**을 입력합니다.
     3. **멤버 자격 유형**을 선택합니다.
-3. 위의 **멤버 자격 형식**에 대해 **동적 장치**를 선택했다면 **그룹** 블레이드에서 **동적 장치 멤버**를 선택하고 **고급 규칙** 상자에서 다음 코드를 입력합니다.
-    - Autopilot 장치를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`를 입력합니다.
-    - 특별 주문 ID를 사용하여 Autopilot 장치를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `를 입력합니다.
-    - 특별 구매 주문 ID를 사용하여 Autopilot 장치를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`를 입력합니다.
+3. 위의 **멤버 자격 형식**에 대해 **동적 디바이스**를 선택했다면 **그룹** 블레이드에서 **동적 디바이스 멤버**를 선택하고 **고급 규칙** 상자에서 다음 코드를 입력합니다.
+    - Autopilot 디바이스를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`를 입력합니다.
+    - 특별 주문 ID를 사용하여 Autopilot 디바이스를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `를 입력합니다.
+    - 특별 구매 주문 ID를 사용하여 Autopilot 디바이스를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`를 입력합니다.
     
     **고급 규칙** 코드를 추가한 후에 **저장**을 선택합니다.
 5. **만들기**를 선택합니다.  
 
 ## <a name="register-your-autopilot-devices"></a>Autopilot 등록
 
-다음 방법 중 하나를 선택하여 Autopilot 장치를 등록합니다.
+다음 방법 중 하나를 선택하여 Autopilot 디바이스를 등록합니다.
 
 ### <a name="register-autopilot-devices-that-are-already-enrolled"></a>이미 등록된 Autopilot 등록
 
@@ -152,30 +152,30 @@ Active Directory용 Intune Connector는 인터넷 및 Active Directory에 액세
 
 ### <a name="register-autopilot-devices-that-arent-enrolled"></a>등록되지 않은 Autopilot 등록
 
-장치가 아직 등록되지 않은 경우 직접 등록할 수 있습니다. 자세한 내용은 [장치 추가](enrollment-autopilot.md#add-devices)를 참조하세요.
+디바이스가 아직 등록되지 않은 경우 직접 등록할 수 있습니다. 자세한 내용은 [디바이스 추가](enrollment-autopilot.md#add-devices)를 참조하세요.
 
-### <a name="register-devices-from-an-oem"></a>OEM에서 장치 등록
+### <a name="register-devices-from-an-oem"></a>OEM에서 디바이스 등록
 
-새 장치를 구입하는 경우 일부 OEM에서 장치를 등록할 수 있습니다. 자세한 내용은 [Windows Autopilot 페이지](http://aka.ms/WindowsAutopilot)를 참조하세요.
+새 디바이스를 구입하는 경우 일부 OEM에서 디바이스를 등록할 수 있습니다. 자세한 내용은 [Windows Autopilot 페이지](http://aka.ms/WindowsAutopilot)를 참조하세요.
 
-Autopilot 장치가 등록되면(그리고 Intune에 등록되기 전에) 이름이 해당 일련 번호로 설정된 장치가 다음 세 위치에 표시됩니다.
-- Azure Portal의 Intune에 있는 Autopilot 장치 블레이드(**장치 등록** > **Windows 등록** > **장치**)
-- Azure Portal의 Intune에 있는 Azure AD 장치 블레이드(**장치** > **Azure AD 장치**)
-- Azure Portal의 Azure Active Directory에 있는 Azure Active Directory의 AAD 모든 장치 블레이드(**장치** > **모든 장치**)
+Autopilot 디바이스가 등록되면(그리고 Intune에 등록되기 전에) 이름이 해당 일련 번호로 설정된 디바이스가 다음 세 위치에 표시됩니다.
+- Azure Portal의 Intune에 있는 Autopilot 디바이스 블레이드(**디바이스 등록** > **Windows 등록** > **디바이스**)
+- Azure Portal의 Intune에 있는 Azure AD 디바이스 블레이드(**디바이스** > **Azure AD 디바이스**)
+- Azure Portal의 Azure Active Directory에 있는 Azure Active Directory의 AAD 모든 디바이스 블레이드(**디바이스** > **모든 디바이스**)
 
-Autopilot 장치가 등록되면 다음 네 위치에 표시됩니다.
-- Azure Portal의 Intune에 있는 Autopilot 장치 블레이드(**장치 등록** > **Windows 등록** > **장치**)
-- Azure Portal의 Intune에 있는 Azure AD 장치 블레이드(**장치** > **Azure AD 장치**)
-- Azure Portal의 Azure Active Directory에 있는 Azure Active Directory의 AAD 모든 장치 블레이드(**장치** > **모든 장치**)
-- Azure Portal의 Intune에 있는 모든 장치 블레이드(**장치** > **모든 장치**)
+Autopilot 디바이스가 등록되면 다음 네 위치에 표시됩니다.
+- Azure Portal의 Intune에 있는 Autopilot 디바이스 블레이드(**디바이스 등록** > **Windows 등록** > **디바이스**)
+- Azure Portal의 Intune에 있는 Azure AD 디바이스 블레이드(**디바이스** > **Azure AD 디바이스**)
+- Azure Portal의 Azure Active Directory에 있는 Azure Active Directory의 AAD 모든 디바이스 블레이드(**디바이스** > **모든 디바이스**)
+- Azure Portal의 Intune에 있는 모든 디바이스 블레이드(**디바이스** > **모든 디바이스**)
 
-Autopilot 장치가 등록되면 장치 이름이 장치의 호스트 이름으로 변경됩니다. 기본적으로 "DESKTOP-"로 시작합니다.
+Autopilot 디바이스가 등록되면 디바이스 이름이 디바이스의 호스트 이름으로 변경됩니다. 기본적으로 "DESKTOP-"로 시작합니다.
 
 
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Autopilot 배포 프로필 만들기 및 할당
-Autopilot 배포 프로필은 Autopilot 장치를 구성하는 데 사용됩니다.
+Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용됩니다.
 
 1. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 선택합니다.
 2. **이름** 및 선택적 **설명**을 입력합니다.
@@ -186,7 +186,7 @@ Autopilot 배포 프로필은 Autopilot 장치를 구성하는 데 사용됩니�
 7. 프로필 블레이드에서 **할당**을 선택합니다.
 8. **그룹 선택** 블레이드에서 **그룹 선택**을 선택하고, 장치 그룹 > **선택**을 차례로 선택합니다.
 
-장치 프로필 상태가 **할당되지 않음**, **할당 중**, 마지막으로 **할당됨**으로 차례로 변경되는 데 약 15분이 걸립니다.
+디바이스 프로필 상태가 **할당되지 않음**, **할당 중**, 마지막으로 **할당됨**으로 차례로 변경되는 데 약 15분이 걸립니다.
 
 ## <a name="turn-on-the-enrollment-status-page-optional"></a>등록 상태 페이지 설정(선택 사항)
 
@@ -206,8 +206,8 @@ Autopilot 배포 프로필은 Autopilot 장치를 구성하는 데 사용됩니�
    - **프로필 유형**: **도메인 가입(미리 보기)** 을 선택합니다.
 3. **설정**을 선택하고, **컴퓨터 이름 접두사**, **도메인 이름** 및 **조직 구성 단위**(선택 사항)를 제공합니다. 
 4. **확인** > **만들기**를 선택합니다. 프로필이 만들어지고 목록에 표시됩니다.
-5. 프로필을 할당하려면 [장치 프로필 할당](device-profile-assign.md#assign-a-device-profile) 아래의 단계를 수행합니다. 
+5. 프로필을 할당하려면 [디바이스 프로필 할당](device-profile-assign.md#assign-a-device-profile) 아래의 단계를 수행합니다. 
 
 ## <a name="next-steps"></a>다음 단계
 
-Windows Autopilot이 구성되었으면 이러한 장치를 관리하는 방법을 알아봅니다. 자세한 내용은 [Microsoft Intune 장치 관리란?](device-management.md)을 참조하세요.
+Windows Autopilot이 구성되었으면 이러한 디바이스를 관리하는 방법을 알아봅니다. 자세한 내용은 [Microsoft Intune 디바이스 관리란?](device-management.md)을 참조하세요.

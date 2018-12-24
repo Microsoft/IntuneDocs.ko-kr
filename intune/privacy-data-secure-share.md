@@ -47,7 +47,7 @@ CRSI(Customer-Reportable Security Incident)가 확인되면 고객에게 알립�
 
 ## <a name="data-sharing"></a>데이터 공유
 
-테넌트 관리자가 Apple 장치 등록 프로그램과 같은 특정 기능을 설정하면 Microsoft Intune은 해당 타사와 데이터를 공유하기 위해 관리자의 동의를 구합니다. 이러한 경우 Intune은 다음 업체와 개인 데이터를 공유할 수 있습니다.
+테넌트 관리자가 Apple 디바이스 등록 프로그램과 같은 특정 기능을 설정하면 Microsoft Intune은 해당 타사와 데이터를 공유하기 위해 관리자의 동의를 구합니다. 이러한 경우 Intune은 다음 업체와 개인 데이터를 공유할 수 있습니다.
 
 - Microsoft의 에이전트 역할을 하는 타사.
 - Microsoft의 에이전트 역할을 하지 않지만 테넌트 관리자가 그러한 역할을 하는 Intune 권한을 명시적으로 부여한 타사.

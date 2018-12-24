@@ -1,5 +1,5 @@
 ---
-title: Windows 10 장치에 Office 365 설치 | Microsoft Docs
+title: Windows 10 디바이스에 Office 365 설치 | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
@@ -24,9 +24,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43147781"
 ---
-# <a name="installing-office-365-on-your-windows-10-device"></a>Windows 10 장치에 Office 365 설치
+# <a name="installing-office-365-on-your-windows-10-device"></a>Windows 10 디바이스에 Office 365 설치
 
-여러 가지 방법으로 Office 제품군을 Windows 10 장치에 설치할 수 있습니다. 회사의 크기에 따라 회사 포털에서 다운로드할 수 있는 여러 버전의 Office가 있을 수 있습니다.
+여러 가지 방법으로 Office 제품군을 Windows 10 디바이스에 설치할 수 있습니다. 회사의 크기에 따라 회사 포털에서 다운로드할 수 있는 여러 버전의 Office가 있을 수 있습니다.
 
 ![Office의 두 가지 버전을 나란히 보여주는 Windows 10용 회사 포털 앱입니다.](./media/multiple-office-installs-cp-win10.png)
 

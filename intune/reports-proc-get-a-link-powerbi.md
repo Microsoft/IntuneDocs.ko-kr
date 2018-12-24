@@ -29,15 +29,15 @@ ms.locfileid: "52187347"
 
 Intune 테넌트에 대해 동적으로 생성된 보고서인 인터랙티브 다운로드를 위해 Microsoft Power BI용 파일을 다운로드할 수 있습니다. 데이터 웨어하우스 Power BI 파일(pbix)은 테넌트에 대한 연결 설정과 다음 샘플 보고서 및 차트를 포함합니다.  
 
-  -  장치
+  -  디바이스
   -  등록
   -  앱 보호 정책
   -  준수 정책
-  -  장치 구성 프로필
+  -  디바이스 구성 프로필
   -  소프트웨어 업데이트
-  -  장치 인벤토리 로그
+  -  디바이스 인벤토리 로그
 
-등록, 규정 준수, 장치 구성 프로필, 소프트웨어 업데이트에 대한 트렌드도 하이라이트되어 있습니다. 샘플 차트와 보고서는 사용하기 쉬운 필터를 캔버스에 적용합니다. 고급 필터를 사용하려면 Power BI Desktop의 **필터** 창을 확인하세요.
+등록, 규정 준수, 디바이스 구성 프로필, 소프트웨어 업데이트에 대한 트렌드도 하이라이트되어 있습니다. 샘플 차트와 보고서는 사용하기 쉬운 필터를 캔버스에 적용합니다. 고급 필터를 사용하려면 Power BI Desktop의 **필터** 창을 확인하세요.
 
 다음 단계는 Power BI 파일을 다운로드하고 Power BI를 통해 OData 링크를 사용하는 방법을 설명합니다.
 
@@ -82,7 +82,7 @@ Power BI 파일(pbix)은 테넌트에 대한 연결 정보와 데이터 웨어�
 
 ## <a name="next-steps"></a>다음 단계
 
-지난주 동안 하루에 등록된 장치 수와 같이 환경에 관한 정보를 확인할 수 있습니다. Azure의 블레이드에서 검색한 Intune 데이터 웨어하우스 Power BI 파일(pbix)을 사용하는 보고서를 통해 Intune 테넌트와 클라이언트 인구에 대한 정보를 얻을 수 있습니다. 그러나 Intune은 데이터를 확장하거나 다시 사용할 수 있는 다양한 수단을 제공합니다. Power BI와 Intune 데이터 웨어하우스 API를 통해 다음과 같은 다양한 일을 할 수 있습니다.
+지난주 동안 하루에 등록된 디바이스 수와 같이 환경에 관한 정보를 확인할 수 있습니다. Azure의 블레이드에서 검색한 Intune 데이터 웨어하우스 Power BI 파일(pbix)을 사용하는 보고서를 통해 Intune 테넌트와 클라이언트 인구에 대한 정보를 얻을 수 있습니다. 그러나 Intune은 데이터를 확장하거나 다시 사용할 수 있는 다양한 수단을 제공합니다. Power BI와 Intune 데이터 웨어하우스 API를 통해 다음과 같은 다양한 일을 할 수 있습니다.
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  데이터에서 인사이트를 가져오도록 테넌트 데이터를 구성할 수 있습니다. 데이터 구성 방법에 대한 자세한 내용은 [데이터 웨어하우스 데이터 모델](reports-ref-data-model.md)을 참조하세요.

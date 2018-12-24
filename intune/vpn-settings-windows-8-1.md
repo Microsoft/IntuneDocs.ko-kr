@@ -1,7 +1,7 @@
 ---
-title: Windows 8.1 장치에 대한 Microsoft Intune VPN 설정
+title: Windows 8.1 디바이스에 대한 Microsoft Intune VPN 설정
 titleSuffix: ''
-description: Windows 8.1을 실행하는 장치에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
+description: Windows 8.1을 실행하는 디바이스에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -21,11 +21,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2018
 ms.locfileid: "52281125"
 ---
-# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Windows 8.1을 실행하는 장치용 Microsoft Intune에서 VPN 설정 구성
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Windows 8.1을 실행하는 디바이스용 Microsoft Intune에서 VPN 설정 구성
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클에서는 Windows 8.1을 실행하는 장치에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 설명합니다.
+이 아티클에서는 Windows 8.1을 실행하는 디바이스에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 설명합니다.
 
 선택한 설정에 따라 다음 목록의 일부 값을 구성할 수 없습니다.
 
@@ -33,7 +33,7 @@ ms.locfileid: "52281125"
 
 
 - **Windows 8.1에만 모든 설정 적용** - Intune 클래식 포털에서 구성할 수 있는 설정입니다. Azure Portal에서는 이 설정을 변경할 수 없습니다. **구성됨**으로 설정된 경우 모든 설정이 Windows 8.1 장치에만 적용됩니다. **구성되지 않음**으로 설정한 경우 Windows 10 장치에도 이러한 설정이 적용됩니다.
-- **연결 이름** - 이 연결에 대한 이름을 입력합니다. 사용자가 장치에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
+- **연결 이름** - 이 연결에 대한 이름을 입력합니다. 사용자가 디바이스에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
 - **서버** - 장치를 연결할 한 대 이상의 VPN 서버를 추가합니다.
     - **추가** - 다음 정보를 지정할 수 있는 **행 추가** 페이지를 엽니다.
         - **설명** - 서버의 설명이 포함된 이름(예: **Contoso VPN 서버**)을 지정합니다.

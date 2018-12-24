@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 Windows 10 장치에 대한 이메일 설정 - Azure | Microsoft Docs
-description: Exchange 서버를 사용하여 장치 구성 이메일 프로필을 만들고 Azure Active Directory에서 특성을 검색합니다. 또한 SSL을 사용하도록 설정하고 Microsoft Intune을 사용하여 Windows 10 장치에서 이메일 및 일정을 동기화할 수도 있습니다.
+title: Microsoft Intune에서 Windows 10 디바이스에 대한 이메일 설정 - Azure | Microsoft Docs
+description: Exchange 서버를 사용하여 디바이스 구성 이메일 프로필을 만들고 Azure Active Directory에서 특성을 검색합니다. 또한 SSL을 사용하도록 설정하고 Microsoft Intune을 사용하여 Windows 10 디바이스에서 이메일 및 일정을 동기화할 수도 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -20,12 +20,12 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52186140"
 ---
-# <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>Windows 10을 실행하는 장치의 이메일 설정 - Intune
+# <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>Windows 10을 실행하는 디바이스의 이메일 설정 - Intune
 
-이메일 프로필 설정을 사용하여 Windows 10을 실행하는 장치를 구성합니다.
+이메일 프로필 설정을 사용하여 Windows 10을 실행하는 디바이스를 구성합니다.
 
 - **이메일 서버**: Exchange 서버의 호스트 이름을 입력합니다.
-- **계정 이름**: 이메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 장치에서 사용자에게 표시됩니다.
+- **계정 이름**: 이메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 디바이스에서 사용자에게 표시됩니다.
 - **AAD의 사용자 이름 특성**: 이 이름은 Intune이 AAD(Azure Active Directory)에서 가져오는 특성입니다. Intune은 이 프로필에서 사용되는 사용자 이름을 동적으로 생성합니다. 옵션은 다음과 같습니다.
   - **사용자 계정 이름**: `user1` 또는 `user1@contoso.com`과 같은 이름을 가져옵니다.
   - **기본 SMTP 주소**: `user1@contoso.com`과 같은 이메일 주소 형식의 이름을 가져옵니다.

@@ -58,7 +58,7 @@ ms.locfileid: "52189371"
 |---------------------|-------------------------------------------------------------|---------|
 |       DateKey       |               날짜의 고유 식별자입니다.                |   123   |
 |      TenantKey      |              테넌트의 고유 식별자입니다.               |   456   |
-|      DeviceKey      |              장치의 고유 식별자입니다.               |   789   |
+|      DeviceKey      |              디바이스의 고유 식별자입니다.               |   789   |
 | ExtensionVersionKey | IntuneManagementExtension 버전의 고유 식별자입니다. |    1    |
 |  ExtensionStateKey  |             상태의 고유 식별자입니다.              |    2    |
 

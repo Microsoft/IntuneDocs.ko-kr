@@ -1,6 +1,6 @@
 ---
-title: Windows 장치의 일반적인 문제 해결 | Microsoft 문서
-description: Windows 장치의 일반적인 문제를 해결하는 방법을 알아봅니다.
+title: Windows 디바이스의 일반적인 문제 해결 | Microsoft 문서
+description: Windows 디바이스의 일반적인 문제를 해결하는 방법을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -23,9 +23,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/03/2018
 ms.locfileid: "48260269"
 ---
-# <a name="fix-common-issues-with-your-windows-device"></a>Windows 장치의 일반적인 문제 해결
+# <a name="fix-common-issues-with-your-windows-device"></a>Windows 디바이스의 일반적인 문제 해결
 
-Windows 장치에서 발생하는 문제가 문제 해결을 통해 해결되는 경우도 있습니다. 먼저 직접 해결해 볼 수 있는 몇 가지 일반적인 문제는 다음과 같습니다. 좀 더 복잡한 문제의 경우 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에 있는 연락처 정보를 통해 회사 지원팀에 문의하는 것이 좋습니다.
+Windows 디바이스에서 발생하는 문제가 문제 해결을 통해 해결되는 경우도 있습니다. 먼저 직접 해결해 볼 수 있는 몇 가지 일반적인 문제는 다음과 같습니다. 좀 더 복잡한 문제의 경우 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에 있는 연락처 정보를 통해 회사 지원팀에 문의하는 것이 좋습니다.
 
 - [내 Windows 10 장치가 등록되지 않음](troubleshoot-your-windows-10-device-windows.md)
 - [Windows 장치를 업데이트해야 함](you-need-to-update-your-windows-device.md)

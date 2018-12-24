@@ -1,7 +1,7 @@
 ---
-title: iOS 및 macOS 장치에 대한 Intune AirPrint 설정
+title: iOS 및 macOS 디바이스에 대한 Intune AirPrint 설정
 titlesuffix: Microsoft Intune
-description: Microsoft Intune을 사용하여 AirPrint 호환 프린터에 iOS 및 macOS 장치를 자동으로 연결하는 방법을 알아봅니다.
+description: Microsoft Intune을 사용하여 AirPrint 호환 프린터에 iOS 및 macOS 디바이스를 자동으로 연결하는 방법을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -23,15 +23,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52186293"
 ---
-# <a name="airprint-settings-for-ios-and-macos-devices"></a>iOS 및 macOS 장치에 대한 AirPrint 설정
+# <a name="airprint-settings-for-ios-and-macos-devices"></a>iOS 및 macOS 디바이스에 대한 AirPrint 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 설정을 사용하여 네트워크에서 AirPrint 호환 프린터에 자동으로 연결하도록 iOS 또는 macOS 장치를 구성합니다. 계속하려면 프린터의 IP 주소와 리소스 경로가 필요합니다.
+이 설정을 사용하여 네트워크에서 AirPrint 호환 프린터에 자동으로 연결하도록 iOS 또는 macOS 디바이스를 구성합니다. 계속하려면 프린터의 IP 주소와 리소스 경로가 필요합니다.
 
 ## <a name="find-airprint-printer-information"></a>AirPrint 프린터 정보 찾기
 
-이 절차를 사용하여 iOS 장치 사용자가 알려진 AirPrint 프린터로 인쇄할 수 있도록 AirPrint 페이로드에 AirPrint 정보를 추가합니다.
+이 절차를 사용하여 iOS 디바이스 사용자가 알려진 AirPrint 프린터로 인쇄할 수 있도록 AirPrint 페이로드에 AirPrint 정보를 추가합니다.
 
 1. AirPrint 프린터와 동일한 로컬 네트워크(서브넷)에 연결된 Mac에서 터미널을 엽니다(**/Applications/Utilities**).
 2. 터미널에서 **ippfind**를 입력한 다음 Enter 키를 누릅니다.
@@ -52,4 +52,4 @@ ms.locfileid: "52186293"
 
 ## <a name="next-steps"></a>다음 단계
 
-이제 선택한 그룹에 장치 프로필을 할당할 수 있습니다. 자세한 내용은 [장치 프로필을 할당하는 방법](device-profile-assign.md)을 참조하세요.
+이제 선택한 그룹에 디바이스 프로필을 할당할 수 있습니다. 자세한 내용은 [디바이스 프로필을 할당하는 방법](device-profile-assign.md)을 참조하세요.

@@ -24,9 +24,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43148898"
 ---
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Intune에서 회사 포털 앱을 설치하고 Windows 10 장치를 등록하면 어떻게 되나요?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Intune에서 회사 포털 앱을 설치하고 Windows 10 디바이스를 등록하면 어떻게 되나요?
 
-회사 포털 앱을 설치한 다음, 앱을 사용하여 Intune에서 Windows 10 Enterprise 또는 Professional 장치를 등록할 때 회사 포털 앱을 사용하여 다음 작업을 수행할 수 있습니다.
+회사 포털 앱을 설치한 다음, 앱을 사용하여 Intune에서 Windows 10 Enterprise 또는 Professional 디바이스를 등록할 때 회사 포털 앱을 사용하여 다음 작업을 수행할 수 있습니다.
 
 -   회사 네트워크, 메일 및 작업 파일 액세스
 
@@ -36,7 +36,7 @@ ms.locfileid: "43148898"
 
 -   분실하거나 도난당한 경우 전화를 공장 설정으로 다시 설정
 
-등록 단계에 대해서는 [Intune에서 Windows 10 Mobile 또는 Windows 10 Desktop 장치 등록](enroll-your-w10-phone-or-w10-pc-windows.md)을 참조하세요. 회사 지원팀이 내 장치에서 무엇을 볼 수 있는지 알아보려면 [Intune에서 장치를 등록하면 회사 지원팀에 무엇이 표시되나요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)를 참조하세요.
+등록 단계에 대해서는 [Intune에서 Windows 10 Mobile 또는 Windows 10 Desktop 디바이스 등록](enroll-your-w10-phone-or-w10-pc-windows.md)을 참조하세요. 회사 지원팀이 내 디바이스에서 무엇을 볼 수 있는지 알아보려면 [Intune에서 디바이스를 등록하면 회사 지원팀에 무엇이 표시되나요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)를 참조하세요.
 
 컴퓨터를 추가하는 경우
 

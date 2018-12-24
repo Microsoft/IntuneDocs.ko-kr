@@ -26,7 +26,7 @@ ms.locfileid: "52188095"
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune에서 Telecom Expense Management 서비스 설정
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune을 사용하면 회사 소유의 모바일 장치에서 데이터 사용으로 발생하는 통신 비용을 관리할 수 있습니다. 이 기능을 지원하기 위해 Intune에는 타사 소프트웨어 개발자인 Saaswedo의 [Datalert Telecom Expense Management](http://datalert.biz/get-started) 솔루션이 통합되어 있습니다. Datalert는 통신 데이터 사용량을 관리할 수 있는 실시간 통신 비용 관리 소프트웨어입니다. 이 소프트웨어는 Intune 관리 장치에 대해 로밍 초과분과 비용이 많이 들고 예기치 않은 데이터를 방지하게 해줍니다.
+Intune을 사용하면 회사 소유의 모바일 디바이스에서 데이터 사용으로 발생하는 통신 비용을 관리할 수 있습니다. 이 기능을 지원하기 위해 Intune에는 타사 소프트웨어 개발자인 Saaswedo의 [Datalert Telecom Expense Management](http://datalert.biz/get-started) 솔루션이 통합되어 있습니다. Datalert는 통신 데이터 사용량을 관리할 수 있는 실시간 통신 비용 관리 소프트웨어입니다. 이 소프트웨어는 Intune 관리 디바이스에 대해 로밍 초과분과 비용이 많이 들고 예기치 않은 데이터를 방지하게 해줍니다.
 
 Intune은 Datalert와의 통합을 통해 로밍 및 국내 데이터 사용량 제한을 중앙에서 설정, 모니터링 및 적용할 수 있도록 지원합니다. 정의된 임계값을 초과할 경우 자동화된 경고가 작동됩니다. 사용자가 (임계값을 초과하거나 로밍을 해제하는 등) 개인 또는 최종 사용자 그룹에 여러 작업을 적용하도록 서비스를 구성할 수 있습니다. Datalert 관리 콘솔에서 데이터 사용량 및 모니터링 정보를 제공하는 보고서를 사용할 수 있습니다.
 
@@ -104,17 +104,17 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
    ![Datalert 연결 상태가 활성임을 보여 주는 Intune 페이지](./media/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>3단계: 회사에 등록된 장치에 Datalert 앱 배포
+### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>3단계: 회사에 등록된 디바이스에 Datalert 앱 배포
 
 회사 소유의 선에서만 데이터 사용량이 수집되었는지 확인하려면 다음 두 가지 작업을 수행해야 합니다.
-- Intune에서 장치 범주 만들기
+- Intune에서 디바이스 범주 만들기
 - Datalert 앱은 회사 전화만 대상으로 합니다.
 
-#### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>장치 범주와 해당 범주에 매핑되는 장치 그룹 정의
+#### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>디바이스 범주와 해당 범주에 매핑되는 디바이스 그룹 정의
 
-조직의 필요에 따라 두 개 이상의 장치 범주(예: 회사 및 개인)를 만듭니다. 그런 다음, 각 범주에 대한 동적 장치 그룹을 만듭니다. 필요에 따라 조직에 맞는 범주를 추가로 만들 수 있습니다.
+조직의 필요에 따라 두 개 이상의 디바이스 범주(예: 회사 및 개인)를 만듭니다. 그런 다음, 각 범주에 대한 동적 디바이스 그룹을 만듭니다. 필요에 따라 조직에 맞는 범주를 추가로 만들 수 있습니다.
 
-이러한 범주는 사용자가 등록할 때 표시됩니다. 사용자가 선택하는 범주에 따라 등록된 장치는 해당하는 장치 그룹으로 이동됩니다. 장치 범주를 만드는 방법에 대한 단계는 [Map devices to groups](device-group-mapping.md)(그룹에 장치 매핑)를 참조하세요.
+이러한 범주는 사용자가 등록할 때 표시됩니다. 사용자가 선택하는 범주에 따라 등록된 디바이스는 해당하는 디바이스 그룹으로 이동됩니다. 디바이스 범주를 만드는 방법에 대한 단계는 [Map devices to groups](device-group-mapping.md)(그룹에 디바이스 매핑)를 참조하세요.
 
   ![정책 추가 창의 스크린 샷](./media/tem-dynamic-membership-rules.png)
 
@@ -140,7 +140,7 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
    ![정책 추가 창의 스크린 샷](./media/tem-steps-to-create-the-app.png)
 
-#### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>회사 장치 그룹에 Datalert 앱 할당
+#### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>회사 디바이스 그룹에 Datalert 앱 할당
 
 1. **클라이언트 앱 - 앱** 창에서 이전 단계에서 만든 iOS Datalert 앱을 선택합니다.
 
@@ -148,20 +148,20 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
 3. **그룹 추가**를 선택하고 단계에 따라 회사 장치 그룹을 선택합니다.
 
-4. 그룹에 대해 앱 설치를 필수 또는 선택 사항으로 설정할지 선택합니다. 다음 예제 스크린샷에서는 설치가 필수임을 보여 줍니다. 이 경우 사용자는 장치를 등록한 후 Datalert 앱을 설치해야 합니다.
+4. 그룹에 대해 앱 설치를 필수 또는 선택 사항으로 설정할지 선택합니다. 다음 예제 스크린샷에서는 설치가 필수임을 보여 줍니다. 이 경우 사용자는 디바이스를 등록한 후 Datalert 앱을 설치해야 합니다.
 
    ![정책 추가 창의 스크린 샷](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4단계: Datalert 콘솔에 회사 유료 전화 회선 추가
 
-지금까지 Intune 및 Datalert 서비스가 서로 통신할 수 있도록 구성했습니다. 이제 Datalert 콘솔에 회사 유료 전화 회선을 추가하고 셀룰러 또는 로밍 사용량에 대한 임계값과 위반 시 작업을 정의해야 합니다. 회사 유료 전화 회선을 Datalert 콘솔에 수동으로 추가하거나, 장치를 Intune에 등록한 후 자동으로 추가할 수 있습니다.
+지금까지 Intune 및 Datalert 서비스가 서로 통신할 수 있도록 구성했습니다. 이제 Datalert 콘솔에 회사 유료 전화 회선을 추가하고 셀룰러 또는 로밍 사용량에 대한 임계값과 위반 시 작업을 정의해야 합니다. 회사 유료 전화 회선을 Datalert 콘솔에 수동으로 추가하거나, 디바이스를 Intune에 등록한 후 자동으로 추가할 수 있습니다.
 
 이러한 항목을 설정하려면 [Microsoft Intune에 대한 Datalert 설정 페이지](http://www.datalert.fr/microsoft-intune/intune-setup)(http://www.datalert.fr/microsoft-intune/intune-setup))의 **설정** 탭에서 설정 마법사의 단계를 따르세요.
 
   ![정책 추가 창의 스크린 샷](./media/tem-add-phone-lines-to-datalert-console.png)
 
 
-이제 Datalert 서비스가 활성화되어 데이터 사용량을 모니터링하고 구성된 사용량 제한을 초과한 장치에서 셀룰러 및 로밍 데이터를 해제하는 등의 작업을 시작합니다.
+이제 Datalert 서비스가 활성화되어 데이터 사용량을 모니터링하고 구성된 사용량 제한을 초과한 디바이스에서 셀룰러 및 로밍 데이터를 해제하는 등의 작업을 시작합니다.
 
 ## <a name="client-enrollment-experience"></a>클라이언트 등록 환경
 클라이언트 등록 환경에 대해서는 다음을 참조하세요.
@@ -172,7 +172,7 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
 Azure Portal에서 Datalert 서비스를 해제한 경우
 
-- 이전의 사용량 제한 위반으로 인해 장치에 적용된 모든 작업이 실행 취소됩니다.
+- 이전의 사용량 제한 위반으로 인해 디바이스에 적용된 모든 작업이 실행 취소됩니다.
 - 사용자의 데이터 액세스 및 로밍이 더 이상 차단되지 않습니다.
 - Intune에서는 서비스에서 들어오는 신호를 계속 수신하지만 이를 무시합니다.
 

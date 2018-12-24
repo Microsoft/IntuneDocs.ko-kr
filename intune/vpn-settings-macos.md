@@ -1,7 +1,7 @@
 ---
-title: macOS 장치에 대한 Microsoft Intune VPN 설정
+title: macOS 디바이스에 대한 Microsoft Intune VPN 설정
 titlesuffix: ''
-description: macOS 장치에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
+description: macOS 디바이스에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -21,17 +21,17 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2018
 ms.locfileid: "52281074"
 ---
-# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>macOS를 실행하는 장치용 Microsoft Intune에서 VPN 설정 구성
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>macOS를 실행하는 디바이스용 Microsoft Intune에서 VPN 설정 구성
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 아티클에서는 macOS를 실행하는 장치에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 설명합니다.
+이 아티클에서는 macOS를 실행하는 디바이스에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 설명합니다.
 
 선택한 설정에 따라 다음 목록의 일부 값을 구성할 수 없습니다.
 
 ## <a name="base-vpn-settings"></a>기본 VPN 설정
 
-**연결 이름** - 이 연결에 대한 이름을 입력합니다. 최종 사용자가 장치에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
+**연결 이름** - 이 연결에 대한 이름을 입력합니다. 최종 사용자가 디바이스에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
 - **IP 주소 또는 FQDN** - 장치가 연결되는 VPN 서버의 IP 주소 또는 정규화된 도메인 이름을 입력합니다. 예: **192.168.1.1**, **vpn.contoso.com**.
 - **인증 방법** - 장치에서 VPN 서버에 인증하는 방법을 선택합니다.
     - **인증서** - **인증 인증서** 아래에서 이전에 연결을 인증하기 위해 만든 SCEP 또는 PKCS 인증서 프로필을 선택합니다. 인증서 프로필에 대한 자세한 내용은 [인증서를 구성하는 방법](certificates-configure.md)을 참조하세요.

@@ -48,7 +48,7 @@ ms.locfileid: "52184491"
 <br /><br />
 - Intune 클래식 포털에서 조건부 액세스 정책 설정이 EAS(Exchange ActiveSync)를 사용하도록 구성되어 있는 경우 **Azure 포털에서 EAS 조건부 액세스 정책 설정을 다시 할당**하는 [이 항목의 지침](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients)을 참조하세요.
 
-### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Intune 클래식 포털에서 장치 기반 조건부 액세스 정책을 확인하려면
+### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Intune 클래식 포털에서 디바이스 기반 조건부 액세스 정책을 확인하려면
 
 1.  [Intune 클래식 포털](https://manage.microsoft.com)로 이동한 다음 자격 증명을 사용하여 로그인합니다.
 
@@ -58,20 +58,20 @@ ms.locfileid: "52184491"
 
 4.  조건부 액세스 설정을 기록해 두고, Azure 포털에서 동일한 조건부 액세스 정책을 만들 때 이러한 정보를 참조합니다.
 
-### <a name="app-and-device-based-conditional-access-policies-working-together"></a>앱 및 장치 기반 조건부 액세스 정책의 연동
+### <a name="app-and-device-based-conditional-access-policies-working-together"></a>앱 및 디바이스 기반 조건부 액세스 정책의 연동
 
-Azure 포털의 **Intune 앱 보호** 블레이드를 통해 관리자는 Intune 앱 보호 정책을 지원하는 앱만 회사 리소스에 액세스할 수 있도록 앱 기반 조건부 규칙을 설정할 수 있습니다. 장치 기반 조건부 액세스 정책을 사용하여 이러한 앱 기반 조건부 액세스 정책을 겹치도록 선택할 수 있습니다. 장치 기반 및 앱 기반 조건부 정책을 결합(논리적 AND)하거나 두 옵션 중 하나를 제공(논리적 OR)할 수 있습니다. 조건부 액세스 정책 요구 사항이 다음과 같은 경우,
+Azure 포털의 **Intune 앱 보호** 블레이드를 통해 관리자는 Intune 앱 보호 정책을 지원하는 앱만 회사 리소스에 액세스할 수 있도록 앱 기반 조건부 규칙을 설정할 수 있습니다. 디바이스 기반 조건부 액세스 정책을 사용하여 이러한 앱 기반 조건부 액세스 정책을 겹치도록 선택할 수 있습니다. 디바이스 기반 및 앱 기반 조건부 정책을 결합(논리적 AND)하거나 두 옵션 중 하나를 제공(논리적 OR)할 수 있습니다. 조건부 액세스 정책 요구 사항이 다음과 같은 경우,
 
-- 준수 장치 필요 **AND** 승인된 앱 사용.
+- 준수 디바이스 필요 **AND** 승인된 앱 사용.
     - [Azure Active Directory 조건부 액세스 블레이드](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) 및 [Intune 앱 보호 블레이드](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)를 사용하여 조건부 액세스 정책을 설정해야 합니다.
 <br /><br />
-- 준수 장치 필요 **OR** 승인된 앱 사용.
+- 준수 디바이스 필요 **OR** 승인된 앱 사용.
     - [Intune 클래식 포털](https://manage.microsoft.com) 및 [Intune 앱 보호 블레이드](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)를 사용하여 조건부 액세스 정책을 설정해야 합니다.
 
 > [!TIP] 
 > 이 항목에서는 Intune 클래식 포털과 Azure 포털의 사용자 환경을 비교하는 스크린샷을 제공합니다.
 
-## <a name="reassign-intune-device-based-conditional-access-policies"></a>Intune 장치 기반 조건부 액세스 정책 다시 할당
+## <a name="reassign-intune-device-based-conditional-access-policies"></a>Intune 디바이스 기반 조건부 액세스 정책 다시 할당
 
 1. [Azure 포털의 조건부 액세스](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)로 이동한 다음 사용자 자격 증명으로 로그인합니다.
 
@@ -105,9 +105,9 @@ Azure 포털의 **Intune 앱 보호** 블레이드를 통해 관리자는 Intune
 
 11. **조건** 블레이드에서 **장치 플랫폼**을 선택한 다음 적용 가능한 장치 플랫폼을 선택합니다.
 
-12. 장치 플랫폼 선택을 마쳤으면 **완료**를 두 번 클릭합니다.
+12. 디바이스 플랫폼 선택을 마쳤으면 **완료**를 두 번 클릭합니다.
 
-    ![Intune 및 Azure Portal 간 장치 플랫폼 UI 비교를 보여주는 이미지](./media/reassign-ca-4.png)
+    ![Intune 및 Azure Portal 간 디바이스 플랫폼 UI 비교를 보여주는 이미지](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Intune 클래식 포털에서 개별 플랫폼을 선택한 경우 Azure 포털에서도 개별 플랫폼을 선택합니다.
@@ -129,15 +129,15 @@ Azure 포털의 **Intune 앱 보호** 블레이드를 통해 관리자는 Intune
 
 18. **액세스 제어 부여**에서 **준수 상태로 표시된 장치 필요**를 선택한 다음 **선택**을 클릭합니다.
 
-19. 도메인 가입 Windows 장치를 요구하는 정책이 있으며 Intune 등록 및 규격 Windows 장치도 허용하는 경우 **도메인 가입 장치 필요** 및 **준수 상태로 표시된 장치 필요**를 **선택된 컨트롤 중 하나가 필요함**과 함께 선택합니다.
+19. 도메인 가입 Windows 디바이스를 요구하는 정책이 있으며 Intune 등록 및 규격 Windows 디바이스도 허용하는 경우 **도메인 가입 디바이스 필요** 및 **준수 상태로 표시된 디바이스 필요**를 **선택된 컨트롤 중 하나가 필요함**과 함께 선택합니다.
 
-20. Intune 등록 및 규격 Windows 장치를 허용하지 않으면 현재 정책에서 Windows 정책을 제외합니다. 그런 다음 **장치 플랫폼**을 **Windows**로 설정하여 별도의 정책을 만들고 다른 조건을 위에 설정된 대로 포함한 다음 **액세스 제어 부여**에서 **도메인 가입 장치 필요**를 선택합니다.
+20. Intune 등록 및 규격 Windows 디바이스를 허용하지 않으면 현재 정책에서 Windows 정책을 제외합니다. 그런 다음 **디바이스 플랫폼**을 **Windows**로 설정하여 별도의 정책을 만들고 다른 조건을 위에 설정된 대로 포함한 다음 **액세스 제어 부여**에서 **도메인 가입 디바이스 필요**를 선택합니다.
 
 21. **새** 조건부 액세스 정책 블레이드에서 **정책 사용**을 설정한 다음 **만들기**를 클릭합니다.
 
     ![Intune 및 Azure 포털 간 사용하는 조건부 액세스 정책 UI 비교를 보여주는 이미지](./media/reassign-ca-11.png)
 
-## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>EAS 클라이언트에 대해 Intune 장치 기반 조건부 액세스 정책 다시 할당
+## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>EAS 클라이언트에 대해 Intune 디바이스 기반 조건부 액세스 정책 다시 할당
 
 Intune 클래식 포털에서 Exchange Online 정책의 일부로 Exchange ActiveSync 설정을 구성한 경우 Azure 포털에서 두 번째 조건부 액세스 정책을 만들어야 합니다.
 
@@ -182,7 +182,7 @@ Intune 클래식 포털에서 Exchange Online 정책의 일부로 Exchange Activ
     ![Intune 및 Azure 포털 간 사용하는 조건부 액세스 정책 UI 비교를 보여주는 이미지](./media/reassign-ca-17.png)
 
 > [!NOTE]
-> **장치 플랫폼**을 구성하는 경우 정책을 저장하는 작업이 "정책 구성이 지원되지 않습니다."라는 오류로 실패합니다. Exchange ActiveSync는 연결된 장치에서 사용 중인 플랫폼을 식별할 수 없습니다. 따라서 Exchange ActiveSync 장치에 대한 정책을 만들 때 특정 장치 플랫폼을 구성하도록 지원하지 않습니다.
+> **장치 플랫폼**을 구성하는 경우 정책을 저장하는 작업이 "정책 구성이 지원되지 않습니다."라는 오류로 실패합니다. Exchange ActiveSync는 연결된 디바이스에서 사용 중인 플랫폼을 식별할 수 없습니다. 따라서 Exchange ActiveSync 디바이스에 대한 정책을 만들 때 특정 디바이스 플랫폼을 구성하도록 지원하지 않습니다.
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Intune 클래식 포털에서 조건부 액세스 정책 사용 안 함
 
