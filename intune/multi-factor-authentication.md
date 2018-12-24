@@ -1,4 +1,4 @@
----
+﻿---
 title: Intune 디바이스 등록에 대한 다단계 인증 요구
 titlesuffix: Microsoft Intune
 description: Azure AD에서 Intune 디바이스를 등록하기 위해 다단계 인증을 요구하는 방법입니다.
@@ -28,7 +28,7 @@ ms.locfileid: "52179714"
 
 Intune은 디바이스 등록에 Azure AD(Active Directory) MFA(다단계 인증)를 사용하여 회사 리소스를 보호하는 데 도움을 줄 수 있습니다.
 
-MFA는 다음과 같은 확인 방법을 두 가지 이상 요구하는 방식으로 작동합니다.
+MFA는 다음과 같은 검증 방법 중 두 가지 이상을 요구하는 방식으로 작동합니다.
 
 - 사용자가 알고 있는 항목(대개 암호 또는 PIN)
 - 사용자가 가지고 있는 항목(휴대폰처럼 쉽게 복제할 수 없으며 신뢰할 수 있는 디바이스)
