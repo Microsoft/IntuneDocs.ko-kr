@@ -1,4 +1,4 @@
-﻿---
+---
 title: Intune 디바이스 등록에 대한 다단계 인증 요구
 titlesuffix: Microsoft Intune
 description: Azure AD에서 Intune 디바이스를 등록하기 위해 다단계 인증을 요구하는 방법입니다.
