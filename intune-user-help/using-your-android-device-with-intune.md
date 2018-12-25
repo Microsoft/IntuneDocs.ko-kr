@@ -1,6 +1,6 @@
 ---
-title: Intune에서 Android 장치 사용 | Microsoft 문서
-description: Intune에 등록된 Android 장치를 관리하고 문제를 해결할 수 있는 링크 목록
+title: Intune에서 Android 디바이스 사용 | Microsoft 문서
+description: Intune에 등록된 Android 디바이스를 관리하고 문제를 해결할 수 있는 링크 목록
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -24,13 +24,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/25/2018
 ms.locfileid: "50001561"
 ---
-# <a name="using-your-android-device-with-intune-company-portal"></a>Intune 회사 포털에서 Android 장치 사용
+# <a name="using-your-android-device-with-intune-company-portal"></a>Intune 회사 포털에서 Android 디바이스 사용
 
-이 문서에서는 Android용 회사 포털과 관련된 작업 및 정보를 나열합니다. 이 문서는 Android 장치의 문제를 해결하고 관리하는 데 사용됩니다. 자세한 세부 정보, 단계 및 스크린샷을 보려면 링크를 클릭하세요. 
+이 문서에서는 Android용 회사 포털과 관련된 작업 및 정보를 나열합니다. 이 문서는 Android 디바이스의 문제를 해결하고 관리하는 데 사용됩니다. 자세한 세부 정보, 단계 및 스크린샷을 보려면 링크를 클릭하세요. 
 
 ## <a name="supported-versions"></a>지원되는 버전
 
-회사 포털은 현재 Android 4.4 이상을 지원합니다. 여기에는 Android 4.4 이상 버전을 실행하는 Samsung Knox 장치가 있습니다.
+회사 포털은 현재 Android 4.4 이상을 지원합니다. 여기에는 Android 4.4 이상 버전을 실행하는 Samsung Knox 디바이스가 있습니다.
 
 ## <a name="enrolling-in-intune-and-installing-the-company-portal"></a>Intune에 등록하고 회사 포털 설치
 
@@ -38,7 +38,7 @@ ms.locfileid: "50001561"
 - [회사 프로필을 만들고 Intune에서 장치 등록](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [Intune에서 회사 포털 앱을 설치하고 장치를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>장치가 Intune에 등록되어 있는 경우 수행할 수 있는 작업
+## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>디바이스가 Intune에 등록되어 있는 경우 수행할 수 있는 작업
 
 - [장치에서 관리되는 앱 사용](use-managed-apps-on-your-device-android.md)
 - [장치 암호화](encrypt-your-device-android.md)
