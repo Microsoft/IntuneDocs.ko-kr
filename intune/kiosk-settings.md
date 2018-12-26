@@ -111,15 +111,15 @@ Intune은 디바이스당 하나의 키오스크 프로필을 지원합니다. �
 
   - **Win32 앱 추가**: Win32 앱은 Visual Studio Code 또는 Google Chrome과 같은 기존 데스크톱 앱입니다. 다음 속성을 입력합니다.
 
-    - **응용 프로그램 이름**: 필수입니다. 응용 프로그램의 이름을 입력합니다.
+    - **응용 프로그램 이름**: 필수입니다. 애플리케이션의 이름을 입력합니다.
     - **로컬 경로**: 필수입니다. `C:\Program Files (x86)\Microsoft VS Code\Code.exe` 또는 `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`와 같이 실행 파일의 경로를 입력합니다.
-    - **AUMID(응용 프로그램 사용자 모델 ID)**: Win32 앱의 AUMID(응용 프로그램 사용자 모델 ID)를 입력합니다. 이 설정에 따라 바탕 화면에 있는 타일의 시작 레이아웃이 결정됩니다. 이 ID를 가져오려면 [설치된 앱의 응용 프로그램 사용자 모델 ID 찾기](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)를 참조하세요.
+    - **AUMID(응용 프로그램 사용자 모델 ID)**: Win32 앱의 AUMID(응용 프로그램 사용자 모델 ID)를 입력합니다. 이 설정에 따라 바탕 화면에 있는 타일의 시작 레이아웃이 결정됩니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)를 참조하세요.
     - **타일 크기**: 필수입니다. 작은, 중간 크기, 넓은 또는 큰 앱 타일 크기를 선택합니다.
   
   - **AUMID로 추가**: 메모장 또는 계산기와 같은 받은 편지함 Windows 앱을 추가하려면 이 옵션을 사용합니다. 다음 속성을 입력합니다. 
 
-    - **응용 프로그램 이름**: 필수입니다. 응용 프로그램의 이름을 입력합니다.
-    - **AUMID(응용 프로그램 사용자 모델 ID)**: 필수입니다. Windows 앱의 AUMID(응용 프로그램 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 응용 프로그램 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
+    - **응용 프로그램 이름**: 필수입니다. 애플리케이션의 이름을 입력합니다.
+    - **AUMID(응용 프로그램 사용자 모델 ID)**: 필수입니다. Windows 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
     - **타일 크기**: 필수입니다. 작은, 중간 크기, 넓은 또는 큰 앱 타일 크기를 선택합니다.
 
   > [!TIP]
@@ -186,8 +186,8 @@ Windows Holographic for Business 디바이스에서 이러한 디바이스가 �
   - **Win32 앱 추가**: Windows Holographic for Business에서 지원되지 않습니다.
   - **AUMID로 추가**: 받은 편지함 Windows 앱을 추가하려면 이 옵션을 사용합니다. 다음 속성을 입력합니다. 
 
-    - **응용 프로그램 이름**: 필수입니다. 응용 프로그램의 이름을 입력합니다.
-    - **AUMID(응용 프로그램 사용자 모델 ID)**: 필수입니다. Windows 앱의 AUMID(응용 프로그램 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 응용 프로그램 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
+    - **응용 프로그램 이름**: 필수입니다. 애플리케이션의 이름을 입력합니다.
+    - **AUMID(응용 프로그램 사용자 모델 ID)**: 필수입니다. Windows 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
     - **타일 크기**: 필수입니다. 작은, 중간 크기, 넓은 또는 큰 앱 타일 크기를 선택합니다.
 
 - **키오스크 브라우저 설정**: Windows Holographic for Business에서 지원되지 않습니다.

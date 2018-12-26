@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 앱 SDK 시작
-description: Microsoft Intune을 통해 모바일 앱을 MAM(모바일 응용 프로그램 관리)에 사용할 수 있도록 빠르게 설정할 수 있습니다.
+description: Microsoft Intune을 통해 모바일 앱을 MAM(모바일 애플리케이션 관리)에 사용할 수 있도록 빠르게 설정할 수 있습니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -103,7 +103,7 @@ Microsoft Intune은 앱의 사용 통계에 대한 데이터를 수집합니다.
 
     * 앱에서 Microsoft Intune으로 SDK 원격 분석 데이터를 보내지 않으려면 IntuneMAMSettings 사전에서 `MAMTelemetryDisabled` 속성을 "YES"로 설정하여 원격 분석 전송을 사용하지 않도록 설정해야 합니다.
 
-* **Android용 Intune 앱 SDK**: Android용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 응용 프로그램은 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 PII(개인 식별 정보)를 수집하지 않습니다. 
+* **Android용 Intune 앱 SDK**: Android용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 애플리케이션은 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 PII(개인 식별 정보)를 수집하지 않습니다. 
 
     * 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 
 
@@ -127,7 +127,7 @@ Intune의 기간 업무 앱은 이제 iOS 및 Android 앱의 버전 번호를 �
 
 Android 및 iOS는 모두 앱과 관련하여 버전 및 빌드 번호를 사용합니다. 그러나 두 운영 체제는 모두 OS 특정적인 의미가 있습니다. 다음 표에 이러한 용어 간의 관계가 설명되어 있습니다.
 
-Intune에서 사용하기 위해 기간 업무 응용 프로그램을 개발 중인 경우 버전 및 빌드 번호를 모두 사용해야 합니다. Intune 앱 관리 기능은 의미 있는 **CFBundleVersion**(iOS의 경우) 및 **PackageVersionCode**(Android의 경우)를 사용합니다. 이러한 번호는 앱 매니페스트에서 포함됩니다. 
+Intune에서 사용하기 위해 기간 업무 애플리케이션을 개발 중인 경우 버전 및 빌드 번호를 모두 사용해야 합니다. Intune 앱 관리 기능은 의미 있는 **CFBundleVersion**(iOS의 경우) 및 **PackageVersionCode**(Android의 경우)를 사용합니다. 이러한 번호는 앱 매니페스트에서 포함됩니다. 
 
 Intune|iOS|Android|설명|
 |---|---|---|---|
@@ -170,12 +170,12 @@ iOS 또는 Android 앱을 Intune 앱 SDK와 통합하는 데 필요한 단계를
 Azure 테넌트 내에서 앱을 등록한 후에 해당 앱이 **모든 애플리케이션** 아래에 표시되면 앱에 Intune 앱 보호 서비스(이전의 MAM 서비스)에 대한 액세스 권한을 부여해야 합니다. Azure Portal에서:
 
 1.  **Azure Active Directory** 블레이드로 이동합니다.
-2.  응용 프로그램의 **앱 등록** 설정을 선택합니다.
+2.  애플리케이션의 **앱 등록** 설정을 선택합니다.
 3.  **API 액세스** 제목 아래의 **설정**에서 **필수 사용 권한**을 선택합니다. 
 4.  **+ 추가**를 클릭합니다.
 5.  **API 선택**을 클릭합니다. 
-6.  검색 상자에 **Microsoft 모바일 응용 프로그램 관리**를 입력합니다.
-7.  API 목록에서 **Microsoft 모바일 응용 프로그램 관리**를 선택하고 선택을 클릭합니다.
+6.  검색 상자에 **Microsoft 모바일 애플리케이션 관리**를 입력합니다.
+7.  API 목록에서 **Microsoft 모바일 애플리케이션 관리**를 선택하고 선택을 클릭합니다.
 8.  **사용자의 앱 관리 데이터 읽기 및 쓰기**를 선택합니다.
 9.  **완료**를 클릭합니다.
 10. **권한 부여**, **예**를 차례로 클릭합니다. 

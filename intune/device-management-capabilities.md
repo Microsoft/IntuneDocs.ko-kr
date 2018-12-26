@@ -49,10 +49,10 @@ Microsoft Intune에서 다양한 디바이스를 서비스에 *등록*하여 관
 |--------------|-----------|--------------------|
 |앱 배포 및 관리|설치 파일 및 앱 스토어를 통한 앱 배포, 자세한 앱 상태 모니터링, 앱 제거 등 수명 주기 동안 모바일 앱을 관리할 수 있는 다양한 도구를 제공합니다.|[Microsoft Intune에서 앱 배포](apps-deploy.md)|
 |규격 및 비규격 앱|규격 앱(사용자가 설치 가능) 및 비규격 앱(사용자가 설치 불가능) 목록을 지정할 수 있습니다.|[Microsoft Intune의 iOS 정책 설정](device-restrictions-ios.md)|
-|모바일 응용 프로그램 관리|Intune을 사용하여 관리되거나, Intune으로 관리되지 않는 디바이스 모두에 대해 모바일 응용 프로그램 관리를 사용하여 앱에 대한 제한을 구성합니다. 복사 및 붙여넣기, 데이터의 외부 백업, 앱 간 데이터 전송과 같은 작업을 제한하여 회사 데이터의 보안을 강화할 수 있습니다.|[Microsoft Intune 콘솔에서 모바일 응용 프로그램 관리 정책 구성 및 배포](app-wrapper-prepare-android.md)|
+|모바일 애플리케이션 관리|Intune을 사용하여 관리되거나, Intune으로 관리되지 않는 디바이스 모두에 대해 모바일 응용 프로그램 관리를 사용하여 앱에 대한 제한을 구성합니다. 복사 및 붙여넣기, 데이터의 외부 백업, 앱 간 데이터 전송과 같은 작업을 제한하여 회사 데이터의 보안을 강화할 수 있습니다.|[Microsoft Intune 콘솔에서 모바일 응용 프로그램 관리 정책 구성 및 배포](app-wrapper-prepare-android.md)|
 |iOS 모바일 앱 구성|모바일 앱 구성 정책을 사용하여 사용자가 앱을 실행할 때 필요할 수 있는 iOS 앱에 대한 설정을 제공할 수 있습니다. 예를 들어 앱에서 사용자가 포트 번호 또는 로그온 정보를 지정하도록 요구할 수 있습니다. 앱 구성을 간소화하고 지원 요청 횟수를 줄일 수 있습니다.|[Microsoft Intune에서 모바일 앱 구성 정책을 사용하여 iOS 앱 구성](app-configuration-policies-use-ios.md)|
 |iOS 모바일 앱 프로비전 프로필|곧 만료되는 iOS 앱에 프로비전 프로필을 배포하는 데 도움이 됩니다. |[iOS 모바일 프로비전 프로필 정책을 사용하여 모바일 앱이 만료되지 않도록 방지](app-provisioning-profile-ios.md)|
-|관리되는 브라우저|디바이스 사용자가 방문할 수 있는 웹 사이트를 제어하도록 관리되는 브라우저 정책을 구성합니다. 또한 관리되는 브라우저에 모바일 응용 프로그램 관리 정책을 적용할 수도 있습니다.|[Microsoft Intune에서 Managed Browser 정책을 사용하여 인터넷 액세스 관리](app-configuration-managed-browser.md)|
+|관리되는 브라우저|디바이스 사용자가 방문할 수 있는 웹 사이트를 제어하도록 관리되는 브라우저 정책을 구성합니다. 또한 관리되는 브라우저에 모바일 애플리케이션 관리 정책을 적용할 수도 있습니다.|[Microsoft Intune에서 Managed Browser 정책을 사용하여 인터넷 액세스 관리](app-configuration-managed-browser.md)|
 |비즈니스용 Windows Hello|온-프레미스 Active Directory를 사용하는 Windows 10 또는 Azure Active Directory에서 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 로그인 방법인 비즈니스용 Windows Hello를 통합할 수 있습니다.|[Microsoft Intune을 사용하는 장치에서 비즈니스용 Windows Hello 설정 제어](windows-hello.md)|
 |대량 구매 앱|앱 스토어에서 라이선스 정보를 가져오고, 사용한 라이선스 수를 추적하고, 소유한 라이선스보다 많은 앱을 설치하지 못하도록 차단하는 방식으로 대량 구매 프로그램을 통해 구매한 앱을 관리할 수 있습니다.|[Microsoft Intune을 사용하여 대량 구매 앱 관리](vpp-apps.md)|
 

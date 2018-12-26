@@ -27,7 +27,7 @@ ms.locfileid: "53168031"
 > [!NOTE]
 > 먼저 SDK의 현재 기능 및 지원되는 각 플랫폼에서 통합을 준비하는 방법을 설명하는 [Intune 앱 SDK 개요](app-sdk.md) 항목을 읽어보는 것이 좋습니다.
 
-Android용 Microsoft Intune 앱 SDK를 사용하면 네이티브 Android 앱에 Intune 앱 보호 정책(**APP** 또는 MAM 정책이라고도 함)을 통합할 수 있습니다. Intune 관리 응용 프로그램은 Intune 앱 SDK와 통합된 응용 프로그램입니다. Intune 관리자는 Intune으로 앱을 직접 관리할 때 Intune 관리 앱에 앱 보호 정책을 쉽게 배포할 수 있습니다.
+Android용 Microsoft Intune 앱 SDK를 사용하면 네이티브 Android 앱에 Intune 앱 보호 정책(**APP** 또는 MAM 정책이라고도 함)을 통합할 수 있습니다. Intune 관리 애플리케이션은 Intune 앱 SDK와 통합된 애플리케이션입니다. Intune 관리자는 Intune으로 앱을 직접 관리할 때 Intune 관리 앱에 앱 보호 정책을 쉽게 배포할 수 있습니다.
 
 
 ## <a name="whats-in-the-sdk"></a>SDK에 포함된 내용
@@ -161,7 +161,7 @@ intunemam {
 
 | 시나리오 | 포함 여부 |
 |--|--|
-| PDF 뷰어 라이브러리를 앱에 포함하고 사용자가 PDF를 보려고 할 때 응용 프로그램에서 `Activity` 뷰어를 사용합니다. | 예 |
+| PDF 뷰어 라이브러리를 앱에 포함하고 사용자가 PDF를 보려고 할 때 애플리케이션에서 `Activity` 뷰어를 사용합니다. | 예 |
 | 웹 성능 향상을 위해 앱에 HTTP 라이브러리를 포함합니다. | 아니요 |
 | `Activity` , `Application` 및 `Fragment`에서 파생된 클래스를 포함하는 React Native와 같은 라이브러리를 포함하고 앱에서 해당 클래스를 사용하거나 추가로 파생시킵니다. | 예 |
 | `Activity` , `Application` 및 `Fragment`에서 파생된 클래스를 포함하는 React Native와 같은 라이브러리를 포함하지만 정적 도우미 또는 유틸리티 클래스만 사용합니다. | 아니요 |
@@ -260,7 +260,7 @@ Intune 관리를 사용하도록 설정하려면 Android 기본 클래스를 동
 | android.widget.MultiAutoCompleteTextView | MAMMultiAutoCompleteTextView |
 
 > [!NOTE]
-> 응용 프로그램에 자체 파생된 `Application` 클래스가 필요하지 않은 경우에도 [아래 `MAMApplication`을 참조하십시오.](#mamapplication)
+> 애플리케이션에 자체 파생된 `Application` 클래스가 필요하지 않은 경우에도 [아래 `MAMApplication`을 참조하십시오.](#mamapplication)
 
 ### <a name="microsoftintunemamsdksupportv4jar"></a>Microsoft.Intune.MAM.SDK.Support.v4.jar:
 
@@ -338,7 +338,7 @@ Intune 앱 SDK에는 SDK를 통합하는 앱에 대한 세 가지 [Android 시�
 
 로깅된 데이터를 최대한 활용하려면 초기에 로깅을 초기화해야 합니다. 일반적으로 `Application.onMAMCreate()`는 로깅을 초기화하는 가장 좋은 위치입니다.
 
-앱에서 MAM 로그를 받으려면 [Java Handler](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html)를 만들어 `MAMLogHandlerWrapper`에 추가합니다. 그러면 응용 프로그램 핸들러에서 모든 로그 메시지에 대해 `publish()`를 호출합니다.
+앱에서 MAM 로그를 받으려면 [Java Handler](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html)를 만들어 `MAMLogHandlerWrapper`에 추가합니다. 그러면 애플리케이션 핸들러에서 모든 로그 메시지에 대해 `publish()`를 호출합니다.
 
 ```java
 /**
@@ -611,7 +611,7 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 
 * **Authority**는 사용 중인 AAD 권한입니다. 이 값이 없으면 AAD 공용 환경이 사용됩니다.
 > [!NOTE]
-> 응용 프로그램이 소버린 클라우드를 인식하는 경우 이 필드를 설정하지 않습니다.
+> 애플리케이션이 소버린 클라우드를 인식하는 경우 이 필드를 설정하지 않습니다.
 
 * **ClientID**는 사용할 AAD ClientID입니다. Azure AD로 등록된 경우 고유 앱의 ClientID를 사용해야 합니다. 이 값이 없는 경우 Intune 기본값이 사용됩니다.
 
@@ -640,7 +640,7 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 필요한 경우 Authority와 NonBrokerRedirectURI를 지정할 수 있습니다.
 
 다음 단계에 따라 Azure AD에 앱을 등록합니다.
-* Azure AD에 응용 프로그램을 등록하는 방법에 대한 정보는 [여기](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)를 참조하세요. 
+* Azure AD에 애플리케이션을 등록하는 방법에 대한 정보는 [여기](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)를 참조하세요. 
 * APP(앱 보호 정책) 서비스에 대한 Android 앱 권한을 부여하는 단계를 따라야 합니다. 앱에 Intune 앱 보호 서비스에 대한 액세스 권한 부여(선택 사항)에서 [Intune SDK 시작 가이드](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)의 지침을 따릅니다. 
 
 [조건부 액세스](#conditional-access)를 위한 요구 사항도 참조하세요.
@@ -696,7 +696,7 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 
 APP-WE 통합을 구현하려면 앱에서 MAM SDK에 사용자 계정을 등록해야 합니다.
 
-1. 앱에서 `MAMServiceAuthenticationCallback` 인터페이스의 인스턴스를 구현하고 등록_해야_ 합니다. 콜백 인스턴스는 앱의 수명 주기에서 최대한 빨리 등록해야 합니다(일반적으로 응용 프로그램 클래스의 `onMAMCreate()` 메서드 사용).
+1. 앱에서 `MAMServiceAuthenticationCallback` 인터페이스의 인스턴스를 구현하고 등록_해야_ 합니다. 콜백 인스턴스는 앱의 수명 주기에서 최대한 빨리 등록해야 합니다(일반적으로 애플리케이션 클래스의 `onMAMCreate()` 메서드 사용).
 
 2. 사용자 계정을 만들고 사용자가 ADAL로 로그인하고 나면 앱이 `registerAccountForMAM()`을 호출_해야_ 합니다.
 
@@ -979,7 +979,7 @@ BackupAgent를 사용하면 백업되는 데이터에 대해 훨씬 더 명확�
 
 **다중 ID 복원:**
 
-데이터 백업 안내서에서는 응용 프로그램의 데이터를 복원하는 일반 알고리즘을 지정하고 [BackupAgent 확장](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) 섹션에서 코드 샘플을 제공합니다. 다중 ID 복원에 성공하려면 이 코드 샘플에 제공된 일반 구조를 따르고 다음에 특히 주의해야 합니다.
+데이터 백업 안내서에서는 애플리케이션의 데이터를 복원하는 일반 알고리즘을 지정하고 [BackupAgent 확장](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) 섹션에서 코드 샘플을 제공합니다. 다중 ID 복원에 성공하려면 이 코드 샘플에 제공된 일반 구조를 따르고 다음에 특히 주의해야 합니다.
 
 1. `while(data.readNextHeader())`* 루프를 활용하여 백업 엔티티를 조사해야 합니다.
 
@@ -1406,11 +1406,11 @@ public final class MAMDataProtectionManager {
 
 `WIPE_USER_DATA` 알림에 대해 다중 ID 앱을 등록할 경우, 해당 사용자에게 속한 것으로 ID 태그된 모든 파일을 포함하여 초기화된 사용자의 모든 데이터를 제거할 책임이 앱에 있습니다. 앱이 파일에서 사용자 데이터를 제거하지만 다른 데이터는 파일에 남겨둘 경우 파일의 ID를 변경*해야 합니다*(`MAMFileProtectionManager.protect`를 통해, 개인 데이터 또는 빈 ID로 변경). 암호화 정책을 사용할 경우 정리되는 사용자에 속한 모든 나머지 파일은 암호 해독되지 않으며 초기화 후에 앱에 액세스할 수 없게 됩니다.
 
-`WIPE_USER_DATA`에 등록한 앱에는 SDK 기본 선택적 초기화 동작이 적용되지 않습니다. 다중 ID 인식 앱의 경우 MAM 기본 선택적 초기화는 초기화의 대상이 되는 ID가 있는 파일만 초기화하므로 더 많이 유실될 수 있습니다. 다중 ID 인식 응용 프로그램에서 MAM 기본 선택 초기화를 수행하고 _**및**_ 에서 초기화 시 고유 작업을 수행하려는 경우 `WIPE_USER_AUXILIARY_DATA` 알림을 등록해야 합니다. 이 알림은 MAM 기본 선택적 초기화를 수행하기 직전에 SDK에서 즉시 전송합니다. 앱에서 WIPE_USER_DATA와 WIPE_USER_AUXILIARY_DATA를 둘 다 등록하지 않아야 합니다.
+`WIPE_USER_DATA`에 등록한 앱에는 SDK 기본 선택적 초기화 동작이 적용되지 않습니다. 다중 ID 인식 앱의 경우 MAM 기본 선택적 초기화는 초기화의 대상이 되는 ID가 있는 파일만 초기화하므로 더 많이 유실될 수 있습니다. 다중 ID 인식 애플리케이션에서 MAM 기본 선택 초기화를 수행하고 _**및**_ 에서 초기화 시 고유 작업을 수행하려는 경우 `WIPE_USER_AUXILIARY_DATA` 알림을 등록해야 합니다. 이 알림은 MAM 기본 선택적 초기화를 수행하기 직전에 SDK에서 즉시 전송합니다. 앱에서 WIPE_USER_DATA와 WIPE_USER_AUXILIARY_DATA를 둘 다 등록하지 않아야 합니다.
 
 
-## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android 응용 프로그램에 대해 MAM 대상 구성 사용(선택 사항)
-Intune 콘솔에서 응용 프로그램 특정 키-값 쌍을 구성해야 합니다. 이러한 키-값 쌍은 Intune에서 전혀 해석되지 않고 앱에 전달되기만 합니다. 해당 구성을 수신하려고 하는 응용 프로그램은 `MAMAppConfigManager` 및 `MAMAppConfig` 클래스를 사용하여 구성을 수신할 수 있습니다. 동일한 앱에서 여러 정책을 대상으로 지정하면 동일한 키에 사용할 수 있는 여러 개의 충돌 값이 발생할 수 있습니다.
+## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android 애플리케이션에 대해 MAM 대상 구성 사용(선택 사항)
+Intune 콘솔에서 애플리케이션 특정 키-값 쌍을 구성해야 합니다. 이러한 키-값 쌍은 Intune에서 전혀 해석되지 않고 앱에 전달되기만 합니다. 해당 구성을 수신하려고 하는 애플리케이션은 `MAMAppConfigManager` 및 `MAMAppConfig` 클래스를 사용하여 구성을 수신할 수 있습니다. 동일한 앱에서 여러 정책을 대상으로 지정하면 동일한 키에 사용할 수 있는 여러 개의 충돌 값이 발생할 수 있습니다.
 
 ### <a name="example"></a>예제
 ```
@@ -1606,7 +1606,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 
 1. [Android 가이드용 Intune SDK](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)에 정의된 단계에 따라 ADAL을 구성합니다.
    > [!NOTE] 
-   > 앱에 연결된 “클라이언트 ID”라는 용어는 앱에 연결된 Azure Portal의 “응용 프로그램 ID”라는 용어와 같습니다. 
+   > 앱에 연결된 “클라이언트 ID”라는 용어는 앱에 연결된 Azure Portal의 “애플리케이션 ID”라는 용어와 같습니다. 
 2. SSO를 사용하려면 “일반적인 ADAL 구성” #2가 필요합니다.
 
 3. 매니페스트에 다음 값을 입력하여 기본 등록을 사용합니다. ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
@@ -1662,7 +1662,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 ### <a name="robolectric"></a>Robolectric
 Robolectric에서는 MAM SDK 동작 테스트가 지원되지 않습니다. Robelectric에서는 실제 디바이스나 에뮬레이터에서 동작을 정확하게 재현하지는 못하기 때문에 Robelectric에서의 MAM SDK 실행에는 알려진 문제가 있습니다. 
 
-Roboelectric에서 응용 프로그램을 테스트해야 할 경우 권장되는 해결 방법은 응용 프로그램 클래스 논리를 도우미로 이동하고 MAMApplication에서 상속하지 않는 응용 프로그램 클래스로 단위 테스트 apk를 생성하는 것입니다.
+Roboelectric에서 애플리케이션을 테스트해야 할 경우 권장되는 해결 방법은 애플리케이션 클래스 논리를 도우미로 이동하고 MAMApplication에서 상속하지 않는 애플리케이션 클래스로 단위 테스트 apk를 생성하는 것입니다.
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK 소비자의 기대
 
 Intune SDK는 Android API에서 제공되는 계약을 유지하지만, 정책 적용의 결과로 오류 상태가 더 빈번하게 트리거될 수 있습니다. 다음 Android 모범 사례는 오류 가능성을 줄입니다.
@@ -1677,7 +1677,7 @@ Intune SDK는 Android API에서 제공되는 계약을 유지하지만, 정책 �
 
 ## <a name="telemetry"></a>원격 분석
 
-Android 용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 응용 프로그램은 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 PII(개인 식별 정보)를 수집하지 않습니다.
+Android 용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 애플리케이션은 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 PII(개인 식별 정보)를 수집하지 않습니다.
 
 > [!NOTE]
 > 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 

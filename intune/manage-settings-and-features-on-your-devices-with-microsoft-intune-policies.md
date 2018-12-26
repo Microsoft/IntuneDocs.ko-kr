@@ -78,7 +78,7 @@ Intune 정책은 다음과 같은 범주로 분류됩니다. 사용하는 범주
 
 - 구성 정책 설정이 다른 구성 정책의 설정과 충돌하는 경우 이 충돌은 Intune에 표시됩니다. 수동으로 이러한 충돌을 해결합니다.
 
-### <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-applies-to-the-app"></a>모바일 응용 프로그램 관리 정책이 서로 충돌하는 경우 앱에 적용되는 대상
+### <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-applies-to-the-app"></a>모바일 애플리케이션 관리 정책이 서로 충돌하는 경우 앱에 적용되는 대상
 다시 설정 전까지의 PIN 입력 시도와 같이 숫자 입력 필드에 대한 설정을 제외하면, 충돌하는 값은 MAM 정책에서 사용 가능한 가장 제한적인 설정으로 지정됩니다.  권장 설정 옵션을 사용하여 콘솔에서 MAM 정책을 만든 것처럼 숫자 입력 필드는 값과 동일하게 설정됩니다.
 
 두 정책 설정이 동일하면 충돌이 발생합니다.  복사/붙여넣기 설정을 제외하면 동일한 두 MAM 정책을 구성한 경우를 예로 들 수 있습니다.  이 시나리오에서는 복사/붙여넣기 설정이 가장 제한적인 값으로 설정되지만, 나머지 설정은 구성된 대로 적용됩니다.

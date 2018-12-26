@@ -73,7 +73,7 @@ Intune PC 에이전트를 통해 관리되는 디바이스의 기존 배포에�
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure Portal에서 대체되는 관리 역할
 
-Intune 클래식 포털(Silverlight)에서 사용된 기존 MAM(모바일 응용 프로그램 관리) 관리 역할(참가자, 소유자 및 읽기 전용)은 Intune Azure Portal에서 새로운 RBAC(역할 기반 관리 제어)의 전체 집합으로 대체됩니다. Azure Portal로 마이그레이션한 후에 이러한 새 관리 역할에 관리자를 다시 할당해야 합니다. RBAC 및 새 역할에 대한 자세한 내용은 [Microsoft Intune에 대한 역할 기반 액세스 제어](/intune/role-based-access-control)를 참조하세요.
+Intune 클래식 포털(Silverlight)에서 사용된 기존 MAM(모바일 애플리케이션 관리) 관리 역할(참가자, 소유자 및 읽기 전용)은 Intune Azure Portal에서 새로운 RBAC(역할 기반 관리 제어)의 전체 집합으로 대체됩니다. Azure Portal로 마이그레이션한 후에 이러한 새 관리 역할에 관리자를 다시 할당해야 합니다. RBAC 및 새 역할에 대한 자세한 내용은 [Microsoft Intune에 대한 역할 기반 액세스 제어](/intune/role-based-access-control)를 참조하세요.
 
 ### <a name="whats-coming"></a>향후 예정 사항
 
@@ -108,7 +108,7 @@ Apple에서는 ATS(Application Transport Security)에 대한 특정 요구 사�
 
 - 물리적 방어
 - 네트워크 방어
-- 응용 프로그램 방어
+- 애플리케이션 방어
 - 취약성 방어
 
 Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Skycure 위험 평가에 따라 EMS 조건부 액세스 정책을 구성할 수 있습니다. 이러한 정책을 사용하여 검색된 위협에 따라 회사 리소스에 대한 비규격 디바이스 액세스를 허용하거나 차단할 수 있습니다. 자세한 내용은 [Skycure Mobile Threat Defense 커넥터](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)를 참조하세요.

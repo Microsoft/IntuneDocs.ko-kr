@@ -120,7 +120,7 @@ Azure Portal에서 Microsoft Intune 환경의 주요 특징은 다음과 같습�
 - 모든 EMS(Enterprise Mobility + Security) 구성 요소에 대한 통합 콘솔
 - 웹 표준을 기반으로 하는 HTML 기반 콘솔
 - 많은 작업을 자동화하는 Microsoft Graph API 지원
-- 모든 Azure 응용 프로그램에서 호환성을 제공하는 Azure AD(Active Directory) 그룹
+- 모든 Azure 애플리케이션에서 호환성을 제공하는 Azure AD(Active Directory) 그룹
 - 대부분의 최신 웹 브라우저 지원
 
 사용자 포털 환경을 사용자 지정하는 빠른 가이드는 [Azure Portal에서 Intune 시작](get-started-azure.md)을 참조하세요.

@@ -34,7 +34,7 @@ PC에서 Intune 소프트웨어 클라이언트를 실행하여 Windows 데스�
 ### <a name="manage-the-microsoft-intune-center"></a>Microsoft Intune Center 관리
 사용자에게는 Intune 소프트웨어 클라이언트가 **Microsoft Intune Center**로 표시됩니다. Microsoft Intune Center를 통해 사용자는 다음을 수행할 수 있습니다.
 
--   회사 포털에서 응용 프로그램 가져오기
+-   회사 포털에서 애플리케이션 가져오기
 
 -   업데이트 확인
 

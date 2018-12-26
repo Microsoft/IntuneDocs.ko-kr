@@ -46,7 +46,7 @@ ms.locfileid: "52181907"
 3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
 4. **클라이언트 앱** 워크로드에서 **모니터** > **앱 보호 상태**를 선택하여 요약 보기를 표시합니다.
 
-![Intune 모바일 응용 프로그램 관리 창의 요약 타일](./media/app-protection-user-status-summary.png)
+![Intune 모바일 애플리케이션 관리 창의 요약 타일](./media/app-protection-user-status-summary.png)
 
 -   **사용자**: 회사에서 업무 환경의 정책과 연결된 앱을 사용하는 총 사용자 수입니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "52181907"
 
 1.  사용자를 선택하려면 **요약** 타일을 선택합니다.
 
-    ![Intune 모바일 응용 프로그램 관리인 설정 블레이드에서 요약 타일을 강조 표시하는 스크린샷](./media/MAM-reporting-6.png)
+    ![Intune 모바일 애플리케이션 관리인 설정 블레이드에서 요약 타일을 강조 표시하는 스크린샷](./media/MAM-reporting-6.png)
 
 2. 열리는 **앱 보고** 창에서 **사용자 선택**을 선택하여 Azure Active Directory 사용자를 검색합니다.
 
@@ -127,9 +127,9 @@ ms.locfileid: "52181907"
 
 앱 보호 보고서를 생성하려면 다음 단계를 수행합니다.
 
-1. Intune 모바일 응용 프로그램 관리 창에서 **앱 보호 보고서**를 선택합니다.
+1. Intune 모바일 애플리케이션 관리 창에서 **앱 보호 보고서**를 선택합니다.
 
-    ![Intune 모바일 응용 프로그램 관리 창에서 앱 보호 다운로드 링크를 강조 표시하는 스크린샷](./media/app-protection-report-csv-2.png)
+    ![Intune 모바일 애플리케이션 관리 창에서 앱 보호 다운로드 링크를 강조 표시하는 스크린샷](./media/app-protection-report-csv-2.png)
 
 2. 예를 선택하여 보고서를 저장한 다음 다른 이름으로 저장을 선택하고 보고서를 저장할 폴더를 선택합니다.
 

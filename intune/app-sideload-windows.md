@@ -80,9 +80,9 @@ Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Win
 
     또는 [비즈니스용 Microsoft 스토어](http://businessstore.microsoft.com/)에서 Windows Phone 8.1 회사 포털(오프라인 사용이 허가된 패키지) 또는 Windows 10 회사 포털(오프라인 사용이 허가된 패키지)을 다운로드할 수 있습니다. 회사 포털 앱과 함께 오프라인 라이선스 및 오프라인에서 사용하기 위해 다운로드한 적절한 패키지를 얻어야 합니다. 선택 영역의 Windows 8 및 Windows Phone 8 플랫폼 목록은 상응하는 8.1 플랫폼을 나타냅니다. Intune을 사용하여 이 작업을 수행하는 방법에 대한 자세한 내용은 [비즈니스용 Microsoft 스토어에서 구입한 앱 관리](windows-store-for-business.md)를 참조하세요.
 
-2.  **Windows Phone SDK 다운로드** Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570)을 다운로드하고 이 SDK를 컴퓨터에 설치합니다. 이 SDK는 응용 프로그램 등록 토큰을 생성하는 데 필요합니다.
+2.  **Windows Phone SDK 다운로드** Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570)을 다운로드하고 이 SDK를 컴퓨터에 설치합니다. 이 SDK는 애플리케이션 등록 토큰을 생성하는 데 필요합니다.
 
-3.  **AETX 파일 생성** Windows Phone SDK 8.0의 일부인 AETGenerator.exe를 사용하여 Symantec PFX 에서 응용 프로그램 등록 토큰(.aetx) 파일을 생성합니다. AETX 파일을 생성하는 방법에 대한 지침은 [Windows Phone용 응용 프로그램 등록 토큰을 생성하는 방법](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)을 참조하세요.
+3.  **AETX 파일 생성** Windows Phone SDK 8.0의 일부인 AETGenerator.exe를 사용하여 Symantec PFX 에서 응용 프로그램 등록 토큰(.aetx) 파일을 생성합니다. AETX 파일을 생성하는 방법에 대한 지침은 [Windows Phone용 애플리케이션 등록 토큰을 생성하는 방법](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)을 참조하세요.
 
 4.  **Windows 8.1용 Windows SDK 다운로드** [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525)(http://go.microsoft.com/fwlink/?LinkId=613525)를 다운로드하여 설치합니다. 참고로 회사 포털 앱에 포함된 PowerShell 스크립트는 기본 설치 위치 `${env:ProgramFiles(x86)}\Windows Kits\8.1`을 사용합니다. 다른 위치에 설치하는 경우 cmdlet 매개 변수에 해당 위치를 포함해야 합니다.
 
@@ -140,11 +140,11 @@ Windows 및 Windows Phone 모바일 앱을 배포하는 데 사용되는 Symante
 
 2.  Azure Portal을 열고 **관리** &gt; **모바일 장치 관리** &gt; **Windows Phone**으로 이동한 후에 **서명된 앱 업로드**를 클릭합니다.
 
-3.  새로 서명된 회사 포털을 업로드합니다. 새로 서명된 SSP.xap와 Symantec에서 받은 새로운 .PFX 파일 또는 이러한 새 .PFX 파일로 생성한 응용 프로그램 등록 토큰이 필요합니다.
+3.  새로 서명된 회사 포털을 업로드합니다. 새로 서명된 SSP.xap와 Symantec에서 받은 새로운 .PFX 파일 또는 이러한 새 .PFX 파일로 생성한 애플리케이션 등록 토큰이 필요합니다.
 
 4.  업로드가 완료되면 **소프트웨어**  작업 영역에서 이전 회사 포털 버전을 제거합니다.
 
-5.  새 인증서를 사용하여 모든 신규 및 업데이트된 엔터프라이즈 기간 업무 앱에 서명합니다. 기존 응용 프로그램에 다시 서명하고 다시 배포할 필요가 없습니다.
+5.  새 인증서를 사용하여 모든 신규 및 업데이트된 엔터프라이즈 기간 업무 앱에 서명합니다. 기존 애플리케이션에 다시 서명하고 다시 배포할 필요가 없습니다.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Windows 10 회사 포털 앱 수동 배포
 비즈니스용 Microsoft 스토어와 Intune을 통합하지 않았더라도 Intune에서 곧바로 Windows 10 회사 포털 앱을 수동으로 배포할 수 있습니다.
@@ -164,7 +164,7 @@ Windows 및 Windows Phone 모바일 앱을 배포하는 데 사용되는 Symante
    ![APPXBUN 파일과 함께 저장된 Dependencies 폴더의 이미지](./media/Win10CP-Dependencies-save.png)
    2. Dependencies 폴더에 9개의 종속성 패키지를 배치합니다.  
    종속성을 이 형식으로 배치하지 않는 경우 Intune은 패키지 업로드 도중에 패키지를 인식 및 업로드할 수 없습니다. 이에 따라 업로드에 실패하고 다음과 같은 오류가 표시됩니다.  
-   ![이 소프트웨어 설치 관리자의 Windows 앱 종속성이 응용 프로그램 폴더에 없습니다. 이 응용 프로그램을 계속 만들고 배포할 수 있지만 누락된 Windows 앱 종속성이 제공될 때까지 실행되지 않습니다.](./media/Win10CP-error-message.png)
+   ![이 소프트웨어 설치 관리자의 Windows 앱 종속성이 애플리케이션 폴더에 없습니다. 이 애플리케이션을 계속 만들고 배포할 수 있지만 누락된 Windows 앱 종속성이 제공될 때까지 실행되지 않습니다.](./media/Win10CP-error-message.png)
 6. Intune으로 돌아간 후 회사 포털 앱을 새 앱으로 업로드합니다. 원하는 대상 사용자 집합에게 필수 앱으로 배포합니다.  
 
 Intune에서 유니버설 앱의 종속성을 처리하는 방식에 대한 자세한 내용은 [Deploying an appxbundle with dependencies via Microsoft Intune MDM(Microsoft Intune MDM을 통해 종속성이 포함된 appxbundle 배포)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)을 참조하세요.  

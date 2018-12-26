@@ -730,7 +730,7 @@ items:
       href: reports-proc-data-rest.md
     - name: 데이터 웨어하우스 API 엔드포인트
       href: reports-api-url.md
-    - name: 데이터 웨어하우스 응용 프로그램 전용 인증
+    - name: 데이터 웨어하우스 애플리케이션 전용 인증
       href: data-warehouse-app-only-auth.md
     - name: 데이터 웨어하우스 데이터 모델
       href: reports-ref-data-model.md
@@ -741,7 +741,7 @@ items:
         items:
         - name: Intune 데이터 웨어하우스의 사용자 수명 표시
           href: reports-ref-user-timeline.md
-        - name: 응용 프로그램 엔터티에 대한 참조
+        - name: 애플리케이션 엔터티에 대한 참조
           href: reports-ref-application.md
         - name: 현재 사용자 엔터티에 대한 참조
           href: reports-ref-current-user.md

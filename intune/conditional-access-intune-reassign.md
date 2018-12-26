@@ -25,7 +25,7 @@ ms.locfileid: "52184491"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Intune 클래식 포털에서 Azure 포털로 조건부 액세스 정책 다시 할당
 
-새 Azure Portal부터 조건부 액세스는 응용 프로그램당 여러 정책에 대한 지원과 더 많은 사용자 지정 기능을 제공합니다. Intune 클래식 포털에서 조건부 액세스 정책을 이전에 만든 경우 이 정책을 Azure Portal에 마이그레이션할 수 있습니다. 
+새 Azure Portal부터 조건부 액세스는 애플리케이션당 여러 정책에 대한 지원과 더 많은 사용자 지정 기능을 제공합니다. Intune 클래식 포털에서 조건부 액세스 정책을 이전에 만든 경우 이 정책을 Azure Portal에 마이그레이션할 수 있습니다. 
 
 ## <a name="before-you-begin"></a>시작하기 전에
 

@@ -28,7 +28,7 @@ ms.locfileid: "53112878"
 
 Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드를 변경하지 않고도 앱 기능을 제한하여 사내 Android 앱의 동작을 변경합니다.
 
-이 도구는 PowerShell에서 실행되고 Android 앱 주위에 래퍼를 생성하는 Windows 명령줄 응용 프로그램입니다. 앱을 래핑한 후에는 Intune에서 [모바일 응용 프로그램 관리 정책](app-protection-policies.md)을 구성하여 앱의 기능을 변경할 수 있습니다.
+이 도구는 PowerShell에서 실행되고 Android 앱 주위에 래퍼를 생성하는 Windows 명령줄 애플리케이션입니다. 앱을 래핑한 후에는 Intune에서 [모바일 애플리케이션 관리 정책](app-protection-policies.md)을 구성하여 앱의 기능을 변경할 수 있습니다.
 
 
 도구를 실행하기 전에 [앱 래핑 도구를 실행하기 위한 보안 고려 사항](#security-considerations-for-running-the-app-wrapping-tool)을 검토하세요. 이 도구를 다운로드하려면 GitHub의 [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)(Android용 Microsoft Intune 앱 래핑 도구)로 이동하세요.
@@ -37,7 +37,7 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
 
 -   앱 래핑 도구는 Windows 7 이상을 실행하는 Windows 컴퓨터에서 실행해야 합니다.
 
--   입력하는 앱은 파일 확장명이 .apk인 유효한 Android 응용 프로그램 패키지여야 합니다. 그리고
+-   입력하는 앱은 파일 확장명이 .apk인 유효한 Android 애플리케이션 패키지여야 합니다. 그리고
 
     -   암호화할 수 없습니다.
     -   Intune 앱 래핑 도구로 이미 래핑되지 않아야 합니다.
@@ -88,7 +88,7 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
 |**-InputPath**&lt;String&gt;|원본 Android 앱(.apk)의 경로입니다.| |
  |**-OutputPath**&lt;String&gt;|출력 Android 앱의 경로입니다. InputPath와 동일한 디렉터리 경로일 경우 패키징이 실패합니다.| |
 |**-KeyStorePath**&lt;String&gt;|서명을 위한 공개/개인 키 쌍이 포함된 키 저장소 파일의 경로입니다.|기본적으로 키 저장소 파일은 "C:\Program Files (x86)\Java\jreX.X.X_XX\bin"에 저장됩니다. |
-|**-KeyStorePassword**&lt;SecureString&gt;|키 저장소를 해독하는 데 사용되는 암호입니다. Android에서는 모든 응용 프로그램 패키지(.apk)가 서명되어야 합니다. Java keytool을 사용하여 KeyStorePassword를 생성합니다. 여기에서 Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)(키 저장소)에 대해 자세히 읽으세요.| |
+|**-KeyStorePassword**&lt;SecureString&gt;|키 저장소를 해독하는 데 사용되는 암호입니다. Android에서는 모든 애플리케이션 패키지(.apk)가 서명되어야 합니다. Java keytool을 사용하여 KeyStorePassword를 생성합니다. 여기에서 Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)(키 저장소)에 대해 자세히 읽으세요.| |
 |**-KeyAlias**&lt;String&gt;|서명에 사용할 키의 이름입니다.| |
 |**-KeyPassword**&lt;SecureString&gt;|서명에 사용될 개인 키의 암호를 해독하는 데 사용되는 암호입니다.| |
 |**-SigAlg**&lt;SecureString&gt;| (선택 사항) 서명에 사용할 서명 알고리즘의 이름입니다. 이 알고리즘은 개인 키와 호환해야 합니다.|예: SHA256withRSA, SHA1withRSA|
@@ -118,10 +118,10 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 
 래핑된 앱과 로그 파일이 생성되고 지정한 출력 경로에 저장됩니다.
 
-## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>Intune 앱 줄 바꿈 도구를 사용하여 Android 응용 프로그램을 얼마나 자주 다시 줄 바꿈해야 합니까?
-응용 프로그램을 다시 줄 바꿈해야 하는 주요 시나리오는 다음과 같습니다.
-* 응용 프로그램 자체가 새 버전을 릴리스했습니다. 이전 버전의 앱이 래핑되어 Intune 콘솔에 업로드되었습니다.
-* Android용 Intune 앱 줄 바꿈 도구는 주요 버그 수정 또는 새로운 특정 Intune 응용 프로그램 보호 정책 기능을 사용할 수 있는 새 버전을 릴리스했습니다. 이는 [Android용 Microsoft Intune 앱 줄 바꿈 도구](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)에 대한 GitHub 리포지토리를 통해 6-8주마다 발생합니다.
+## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>Intune 앱 줄 바꿈 도구를 사용하여 Android 애플리케이션을 얼마나 자주 다시 줄 바꿈해야 합니까?
+애플리케이션을 다시 줄 바꿈해야 하는 주요 시나리오는 다음과 같습니다.
+* 애플리케이션 자체가 새 버전을 릴리스했습니다. 이전 버전의 앱이 래핑되어 Intune 콘솔에 업로드되었습니다.
+* Android용 Intune 앱 줄 바꿈 도구는 주요 버그 수정 또는 새로운 특정 Intune 애플리케이션 보호 정책 기능을 사용할 수 있는 새 버전을 릴리스했습니다. 이는 [Android용 Microsoft Intune 앱 줄 바꿈 도구](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)에 대한 GitHub 리포지토리를 통해 6-8주마다 발생합니다.
 
 다시 줄 바꿈하기 위한 몇 가지 모범 사례는 다음과 같습니다. 
 * 빌드 프로세스 중에 사용된 서명 인증서를 유지 관리하려면 [서명 인증서 재사용 및 앱 래핑](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)을 참조하세요.
@@ -138,13 +138,13 @@ Android의 경우 Android 디바이스에 설치하려면 유효한 인증서로
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>앱 래핑 도구를 실행하기 위한 보안 고려 사항
 잠재적인 스푸핑, 정보 공개 및 권한 상승 공격을 방지하려면:
 
--   입력 LOB(기간 업무) 응용 프로그램, 출력 응용 프로그램 및 Java KeyStore가 앱 래핑 도구를 실행한 것과 같은 Windows 컴퓨터에 있는지 확인합니다.
+-   입력 LOB(기간 업무) 애플리케이션, 출력 애플리케이션 및 Java KeyStore가 앱 래핑 도구를 실행한 것과 같은 Windows 컴퓨터에 있는지 확인합니다.
 
--   출력 응용 프로그램을 도구가 실행 중인 것과 같은 컴퓨터의 Intune에 가져옵니다. Java keytool에 대한 자세한 내용은 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)을 참조하세요.
+-   출력 애플리케이션을 도구가 실행 중인 것과 같은 컴퓨터의 Intune에 가져옵니다. Java keytool에 대한 자세한 내용은 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)을 참조하세요.
 
--   출력 응용 프로그램 및 도구가 UNC(Universal Naming Convention) 경로에 있는데 도구와 입력 파일을 동일한 컴퓨터에서 실행하지 않는 경우, [IPsec(Internet Protocol Security)](http://wikipedia.org/wiki/IPsec) 또는 [SMB(Server Message Block) 서명](https://support.microsoft.com/kb/887429)을 사용하여 환경을 안전하게 설정합니다.
+-   출력 애플리케이션 및 도구가 UNC(Universal Naming Convention) 경로에 있는데 도구와 입력 파일을 동일한 컴퓨터에서 실행하지 않는 경우, [IPsec(Internet Protocol Security)](http://wikipedia.org/wiki/IPsec) 또는 [SMB(Server Message Block) 서명](https://support.microsoft.com/kb/887429)을 사용하여 환경을 안전하게 설정합니다.
 
--   응용 프로그램이 신뢰할 수 있는 소스에서 오는지 확인합니다.
+-   애플리케이션이 신뢰할 수 있는 소스에서 오는지 확인합니다.
 
 -   래핑된 앱을 포함하고 있는 출력 디렉터리를 보호합니다. 출력에 대한 사용자 수준 디렉터리를 사용하는 것이 좋습니다.
 
@@ -156,7 +156,7 @@ Android의 경우 Android 디바이스에 설치하려면 유효한 인증서로
 > **기본값 등록**의 이점에는 장치의 앱에 관한 APP-WE 서비스에서 정책을 얻는 단순화된 방법이 포함됩니다.
 
 ### <a name="general-requirements"></a>일반 요구 사항
-* Intune SDK 팀은 앱의 응용 프로그램 ID를 필요로 합니다. ID는 [Azure Portal](https://portal.azure.com/)을 통해 확인할 수 있으며 **모든 응용 프로그램** 아래 **응용 프로그램 ID** 열에 나와 있습니다. Intune SDK 팀에는 이메일(msintuneappsdk@microsoft.com)을 통해 연락하는 것이 좋습니다.
+* Intune SDK 팀은 앱의 애플리케이션 ID를 필요로 합니다. ID는 [Azure Portal](https://portal.azure.com/)을 통해 확인할 수 있으며 **모든 애플리케이션** 아래 **애플리케이션 ID** 열에 나와 있습니다. Intune SDK 팀에는 이메일(msintuneappsdk@microsoft.com)을 통해 연락하는 것이 좋습니다.
      
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK 사용
 이러한 지침은 최종 사용자 디바이스에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱에만 적용됩니다.
@@ -164,7 +164,7 @@ Android의 경우 Android 디바이스에 설치하려면 유효한 인증서로
 1. [Android 가이드용 Intune SDK](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)에 정의된 단계에 따라 ADAL을 구성합니다.
 
 > [!NOTE]
-> 앱에 연결된 “클라이언트 ID”라는 용어는 앱에 연결된 Azure Portal의 “응용 프로그램 ID”라는 용어와 같습니다. 
+> 앱에 연결된 “클라이언트 ID”라는 용어는 앱에 연결된 Azure Portal의 “애플리케이션 ID”라는 용어와 같습니다. 
 > * SSO를 사용하려면 “일반적인 ADAL 구성” #2가 필요합니다.
 
 2. 매니페스트에 다음 값을 입력하여 기본 등록을 사용합니다. ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```

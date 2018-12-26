@@ -358,7 +358,7 @@ ms.locfileid: "52728772"
 
     자동 로그온을 사용할 수 있는 공용 환경의 키오스크에서는 최소한의 권한(예: 로컬 표준 사용자 계정)을 지닌 사용자 유형을 사용해야 합니다. 키오스크 모드로 Azure AD 계정을 사용하는 경우 `AzureAD\user@yourorganization.com`을 입력해야 합니다.
 
-- **앱의 AUMID(애플리케이션 사용자 모델 ID)**: 키오스크 앱의 AUMID를 입력합니다. 자세한 내용은 [설치된 앱의 응용 프로그램 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
+- **앱의 AUMID(애플리케이션 사용자 모델 ID)**: 키오스크 앱의 AUMID를 입력합니다. 자세한 내용은 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
 
 #### <a name="multi-app-kiosks"></a>다중 앱 키오스크
 

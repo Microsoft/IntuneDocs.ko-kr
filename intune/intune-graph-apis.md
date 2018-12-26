@@ -27,21 +27,21 @@ ms.locfileid: "52187452"
 이제 [Microsoft Graph API](https://developer.microsoft.com/graph/)는 특정 API 및 권한 역할을 통해 Microsoft Intune을 지원합니다.  Microsoft Graph API는 Azure AD(Azure Active Directory)를 사용하여 인증 및 액세스 제어를 수행합니다.  
 Microsoft Graph에서 Intune API에 액세스하려면 다음 항목이 필요합니다.
 
-- 다음 권한/권한 범위가 있는 응용 프로그램 ID:
+- 다음 권한/권한 범위가 있는 애플리케이션 ID:
 
     - Azure AD 및 Microsoft Graph API를 호출할 수 있는 권한
-    - 특정 응용 프로그램 작업과 관련된 권한 범위
+    - 특정 애플리케이션 작업과 관련된 권한 범위
 
 - 다음 권한이 있는 사용자 자격 증명:
 
-    - 응용 프로그램과 연결된 Azure AD 테넌트 액세스 권한
-    - 응용 프로그램 권한 범위를 지원하는 데 필요한 역할 권한
+    - 애플리케이션과 연결된 Azure AD 테넌트 액세스 권한
+    - 애플리케이션 권한 범위를 지원하는 데 필요한 역할 권한
 
-- 최종 사용자가 Azure 테넌트에 대해 응용 프로그램 작업을 수행할 권한을 앱에 부여
+- 최종 사용자가 Azure 테넌트에 대해 애플리케이션 작업을 수행할 권한을 앱에 부여
 
 이 문서의 내용은 다음과 같습니다.
 
-- Microsoft Graph API 및 관련 권한 역할에 대한 액세스 권한으로 응용 프로그램을 등록하는 방법을 보여 줍니다.
+- Microsoft Graph API 및 관련 권한 역할에 대한 액세스 권한으로 애플리케이션을 등록하는 방법을 보여 줍니다.
 
 - Intune API 권한 역할에 대해 설명합니다.
 
@@ -70,21 +70,21 @@ Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니�
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  **새 응용 프로그램 등록**을 선택하여 새 응용 프로그램을 만들거나 기존 응용 프로그램을 선택합니다.  기존 응용 프로그램을 선택하는 경우 다음 단계는 건너뛰세요.
+3.  **새 응용 프로그램 등록**을 선택하여 새 응용 프로그램을 만들거나 기존 응용 프로그램을 선택합니다.  기존 애플리케이션을 선택하는 경우 다음 단계는 건너뛰세요.
 
 4.  **만들기** 블레이드에서 다음을 지정합니다.
 
-    1.  사용자가 로그인할 때 표시되는 응용 프로그램의 **이름**
+    1.  사용자가 로그인할 때 표시되는 애플리케이션의 **이름**
 
     2.  **응용 프로그램 유형** 및 **리디렉션 URI** 값
 
-        이러한 정보는 요구 사항에 따라 달라집니다. 예를 들어 ADAL(Azure AD [인증 라이브러리](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries))을 사용하는 경우에는 **응용 프로그램 유형**를 `Native`로, **리디렉션 URI**를 `urn:ietf:wg:oauth:2.0:oob`로 설정합니다.
+        이러한 정보는 요구 사항에 따라 달라집니다. 예를 들어 ADAL(Azure AD [인증 라이브러리](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries))을 사용하는 경우에는 **애플리케이션 유형**를 `Native`로, **리디렉션 URI**를 `urn:ietf:wg:oauth:2.0:oob`로 설정합니다.
 
         <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
         자세한 내용을 알아보려면 [Azure AD의 인증 시나리오](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)를 참조하세요.
 
-5.  응용 프로그램 블레이드에서 다음을 수행합니다.
+5.  애플리케이션 블레이드에서 다음을 수행합니다.
 
     1.  **응용 프로그램 ID** 값을 적어 둡니다.
 
@@ -102,7 +102,7 @@ Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니�
 
     관련 이름 왼쪽에 확인 표시를 하여 앱에 필요한 역할을 선택합니다.  특정 Intune 권한 범위에 대해 자세히 알아보려면 [Intune 권한 범위](#intune-permission-scopes)를 참조하세요.  다른 Graph API 권한 범위에 대해 자세히 알아보려면 [Microsoft Graph 권한 참조](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)를 참조하세요.
 
-    최상의 결과를 얻으려면 응용 프로그램을 구현하는 데 필요한 가장 적은 수의 역할을 선택합니다.
+    최상의 결과를 얻으려면 애플리케이션을 구현하는 데 필요한 가장 적은 수의 역할을 선택합니다.
 
     작업이 완료되면 **선택**, **완료**를 선택하여 변경 내용을 저장합니다.
 
@@ -112,7 +112,7 @@ Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니�
 
     이렇게 하려면 **권한 부여**를 선택하고 확인 메시지를 수락합니다.
 
-    응용 프로그램을 처음으로 실행하면 선택한 역할을 수행하기 위한 권한을 앱에 부여하라는 메시지가 표시됩니다.
+    애플리케이션을 처음으로 실행하면 선택한 역할을 수행하기 위한 권한을 앱에 부여하라는 메시지가 표시됩니다.
 
     <img src="media/azure-ad-grant-perm.png" width="351" height="162" alt="The Grant permissions button" />
 
@@ -120,7 +120,7 @@ Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니�
 
     확인 방법은 다음과 같습니다.
 
-  1. 응용 프로그램 블레이드에서 **매니페스트**를 선택합니다. 그러면 **매니페스트 편집** 블레이드가 열립니다.
+  1. 애플리케이션 블레이드에서 **매니페스트**를 선택합니다. 그러면 **매니페스트 편집** 블레이드가 열립니다.
 
      <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
@@ -298,7 +298,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
 이 섹션에서는 C# 및 PowerShell 프로젝트에 Azure AD를 통합하는 방법을 보여 줍니다.
 
-앞에서 설명한 것처럼 각 예제에서는 최소한 `DeviceManagementManagedDevices.Read.All` 권한 범위가 있는 응용 프로그램 ID를 지정해야 합니다.
+앞에서 설명한 것처럼 각 예제에서는 최소한 `DeviceManagementManagedDevices.Read.All` 권한 범위가 있는 애플리케이션 ID를 지정해야 합니다.
 
 각 예제를 테스트할 때는 다음과 같은 HTTP 상태 403(Forbidden) 오류가 표시될 수 있습니다.
 
@@ -322,7 +322,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
 이러한 오류가 발생하면 다음 사항을 확인하세요.
 
-- 응용 프로그램 ID를 Microsoft Graph API 및 `DeviceManagementManagedDevices.Read.All` 권한 범위를 사용하도록 권한이 부여된 ID로 업데이트했습니다.
+- 애플리케이션 ID를 Microsoft Graph API 및 `DeviceManagementManagedDevices.Read.All` 권한 범위를 사용하도록 권한이 부여된 ID로 업데이트했습니다.
 
 - 테넌트 자격 증명이 관리 기능을 지원합니다.
 
@@ -439,7 +439,7 @@ namespace IntuneGraphExample
 
 다음 PowerShell 스크립트는 인증을 위해 Azure AD PowerShell 모듈을 사용합니다.  자세한 내용을 알아보려면 [Azure Active Directory PowerShell 버전 2](https://docs.microsoft.com/powershell/azure/install-adv2?view=azureadps-2.0) 및 [Intune PowerShell 예제](https://github.com/microsoftgraph/powershell-intune-samples)를 참조하세요.
 
-이 예제에서는 유효한 응용 프로그램 ID와 일치하도록 `$clientID`의 값을 업데이트합니다.
+이 예제에서는 유효한 애플리케이션 ID와 일치하도록 `$clientID`의 값을 업데이트합니다.
 
 ``` powershell
 function Get-AuthToken {
@@ -548,13 +548,13 @@ catch {
 
 ## <a name="support-multiple-tenants-and-partners"></a>여러 테넌트 및 파트너 지원
 
-조직에서 자체 Azure AD 테넌트가 있는 조직을 지원하는 경우에는 클라이언트가 개별 테넌트에서 응용 프로그램을 사용하도록 허용할 수 있습니다.
+조직에서 자체 Azure AD 테넌트가 있는 조직을 지원하는 경우에는 클라이언트가 개별 테넌트에서 애플리케이션을 사용하도록 허용할 수 있습니다.
 
 확인 방법은 다음과 같습니다.
 
 1.  클라이언트 계정이 대상 Azure AD 테넌트에 있는지 확인합니다.
 
-2.  테넌트 계정이 사용자의 응용 프로그램 등록을 허용하는지 확인합니다(**사용자 설정** 참조).
+2.  테넌트 계정이 사용자의 애플리케이션 등록을 허용하는지 확인합니다(**사용자 설정** 참조).
 
 3.  각 테넌트 간의 관계를 설정합니다.  
 
@@ -590,11 +590,11 @@ catch {
 
 - 을 사용하여 사용자 계정에 Intune https://portal.office.com 라이선스를 할당합니다.
 
-- 응용 프로그램 코드를 업데이트하여 자체 도메인이 아닌 클라이언트의 Azure AD 테넌트 도메인에 인증합니다.
+- 애플리케이션 코드를 업데이트하여 자체 도메인이 아닌 클라이언트의 Azure AD 테넌트 도메인에 인증합니다.
 
     예를 들어 자체 테넌트 도메인은 `contosopartner.onmicrosoft.com`이고 클라이언트의 테넌트 도메인은 `northwind.onmicrosoft.com`인 경우 클라이언트의 테넌트에 인증하도록 코드를 업데이트합니다.
 
-    위의 예제를 기준으로 C# 응용 프로그램에서 코드를 업데이트하려면 다음 `authority` 변수의 값을 위에서 아래로 변경합니다.
+    위의 예제를 기준으로 C# 애플리케이션에서 코드를 업데이트하려면 다음 `authority` 변수의 값을 위에서 아래로 변경합니다.
 
     ``` csharp
     string authority = "https://login.microsoftonline.com/common/";

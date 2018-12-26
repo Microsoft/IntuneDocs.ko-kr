@@ -30,7 +30,7 @@ ms.locfileid: "43150225"
 
 ## <a name="what-you-need-to-do"></a>수행해야 할 작업
 
-1. 화면의 맨 위에서 아래로 끌어서 알림 표시줄을 연 다음 **필수 응용 프로그램 - Play 스토어에서 Lookout for Work 설치**를 탭합니다.
+1. 화면의 맨 위에서 아래로 끌어서 알림 표시줄을 연 다음 **필수 애플리케이션 - Play 스토어에서 Lookout for Work 설치**를 탭합니다.
 
    ![Lookout for Work를 설치하라는 메시지가 표시됨](./media/lookout-required-app-install-android.png)
 

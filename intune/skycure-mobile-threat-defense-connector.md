@@ -31,7 +31,7 @@ Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 SEP Mobile(Syma
 
 -   네트워크 방어
 
--   응용 프로그램 방어
+-   애플리케이션 방어
 
 -   취약성 방어
 

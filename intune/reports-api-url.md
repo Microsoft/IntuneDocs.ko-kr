@@ -31,9 +31,9 @@ ms.locfileid: "52180598"
 
 ## <a name="authorization"></a>권한 부여
 
-Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트의 웹 응용 프로그램과 웹 API에 액세스할 권한을 부여할 수 있게 합니다. 이 가이드는 언어에 독립적이며 오픈 소스 라이브러리를 사용하지 않고 HTTP 메시지를 보내고 받는 방법을 설명합니다. OAuth 2.0 인증 코드 흐름은 OAuth 2.0 사양의 [4.1섹션](https://tools.ietf.org/html/rfc6749#section-4.1)에 나와 있습니다.
+Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트의 웹 애플리케이션과 웹 API에 액세스할 권한을 부여할 수 있게 합니다. 이 가이드는 언어에 독립적이며 오픈 소스 라이브러리를 사용하지 않고 HTTP 메시지를 보내고 받는 방법을 설명합니다. OAuth 2.0 인증 코드 흐름은 OAuth 2.0 사양의 [4.1섹션](https://tools.ietf.org/html/rfc6749#section-4.1)에 나와 있습니다.
 
-자세한 내용은 [OAuth 2.0 및 Azure Active Directory를 사용하여 웹 응용 프로그램에 대한 액세스 권한 부여](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)에서 참조하세요.
+자세한 내용은 [OAuth 2.0 및 Azure Active Directory를 사용하여 웹 애플리케이션에 대한 액세스 권한 부여](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)에서 참조하세요.
 
 ## <a name="api-url-structure"></a>API URL 구조
 

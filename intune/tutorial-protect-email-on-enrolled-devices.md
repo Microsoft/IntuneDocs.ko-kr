@@ -83,7 +83,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
      
     1. **포함** 탭에서 **앱 선택**을 선택합니다.
     2. **선택**을 선택합니다. 
-    3. 응용 프로그램 목록에서 **Office 365 Exchange Online**을 선택한 후 **선택**을 선택합니다. 
+    3. 애플리케이션 목록에서 **Office 365 Exchange Online**을 선택한 후 **선택**을 선택합니다. 
     4. **완료**를 선택합니다.
   
     ![Office 365 Exchange Online 앱 선택](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)

@@ -49,7 +49,7 @@ Azure에서 네이티브 앱을 만듭니다. 이 네이티브 앱은 클라이�
 
      ![Intune 데이터 웨어하우스 API](./media/reports-get_rest_data_client_overview.png)
 
-5. 이 앱의 **응용 프로그램 ID**를 기록해 둡니다. 다음 섹션에서 이 ID를 사용합니다.
+5. 이 앱의 **애플리케이션 ID**를 기록해 둡니다. 다음 섹션에서 이 ID를 사용합니다.
 
 ## <a name="grant-the-client-app-access-to-the-microsoft-intune-api"></a>클라이언트 앱에 Microsoft Intune API에 대한 액세스 권한 부여
 
@@ -68,7 +68,7 @@ Azure에서 네이티브 앱을 만듭니다. 이 네이티브 앱은 클라이�
 
 9.  **선택**을 선택합니다.
 10.  **완료**를 선택합니다.
-11.  필요에 따라 필요한 권한 창에서 **사용 권한 부여**를 선택합니다. 그러면 현재 디렉터리의 모든 계정에 액세스 권한이 부여됩니다. 따라서 테넌트의 모든 사용자에게 동의 대화 상자가 나타나지 않습니다. 자세한 내용은 [Azure Active Directory와 응용 프로그램 통합](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)을 참조하세요.
+11.  필요에 따라 필요한 권한 창에서 **사용 권한 부여**를 선택합니다. 그러면 현재 디렉터리의 모든 계정에 액세스 권한이 부여됩니다. 따라서 테넌트의 모든 사용자에게 동의 대화 상자가 나타나지 않습니다. 자세한 내용은 [Azure Active Directory와 애플리케이션 통합](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)을 참조하세요.
 12.  **예**를 선택합니다.
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Postman을 사용하여 Microsoft Intune API에서 데이터 가져오기

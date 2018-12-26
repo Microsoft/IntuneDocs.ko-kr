@@ -30,7 +30,7 @@ ms.locfileid: "52180343"
 ## <a name="overview"></a>개요
 [Intune 앱 SDK Xamarin 바인딩](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)은 Xamarin에 내장된 iOS 및 Android 앱의 [Intune 앱 보호 정책](app-protection-policy.md)을 사용하도록 설정합니다. 개발자는 바인딩을 사용하여 Intune 앱 보호 기능을 Xamarin 기반 앱에 손쉽게 빌드할 수 있습니다.
 
-Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발한 앱에 Intune 앱 보호 정책(APP 또는 MAM 정책이라고도 함)을 통합할 수 있습니다. MAM 지원 응용 프로그램은 Intune 앱 SDK와 통합된 응용 프로그램입니다. IT 관리자는 Intune에서 앱을 적극적으로 관리할 때 모바일 앱에 앱 보호 정책을 배포할 수 있습니다.
+Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발한 앱에 Intune 앱 보호 정책(APP 또는 MAM 정책이라고도 함)을 통합할 수 있습니다. MAM 지원 애플리케이션은 Intune 앱 SDK와 통합된 애플리케이션입니다. IT 관리자는 Intune에서 앱을 적극적으로 관리할 때 모바일 앱에 앱 보호 정책을 배포할 수 있습니다.
 
 ## <a name="whats-supported"></a>지원되는 기능
 
@@ -42,7 +42,7 @@ Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발�
 * Android
 * iOS
 
-### <a name="intune-mobile-application-management-scenarios"></a>Intune 모바일 응용 프로그램 관리 시나리오
+### <a name="intune-mobile-application-management-scenarios"></a>Intune 모바일 애플리케이션 관리 시나리오
 
 * Intune APP-WE(디바이스 등록을 사용하지 않는)
 * Intune MAM 등록 디바이스
@@ -71,7 +71,7 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
       ```
       호출 시 사용자의 UPN을 알 수 없는 경우 앱이 null에 전달할 수 있습니다. 이 경우 사용자에게 이메일 주소와 암호를 모두 입력하라는 메시지가 표시됩니다.
       
-      앱이 이미 ADAL 또는 MSAL을 사용하여 사용자를 인증하는 경우 앱과 Intune SDK 간에 SSO(single sign-on) 환경을 구성할 수 있습니다. 먼저 iOS용 Intune Xamarin Bindings(com.microsoft.adalcache)에서 사용하는 것과 동일한 키체인 액세스 그룹에 토큰을 저장하도록 ADAL/MSAL을 구성해야 합니다. ADAL의 경우 [AuthenticationContext의 KeychainSecurityGroup 속성을 설정](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Token-cache-serialization#enable-token-cache-sharing-across-ios-applications)하여 이 작업을 수행할 수 있습니다. MSAL의 경우 [PublicClientApplication의 KeychainSecurityGroup 속성을 설정](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/msal-net-2-released#you-can-now-enable-sso-between-adal-and-msal-apps-on-xamarinios)해야 합니다. 그런 다음, 앱과 함께 Intune SDK에서 사용하는 기본 AAD 설정을 재정의해야 합니다. [iOS용 Intune 앱 SDK 개발자 가이드](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)에 설명된 대로 앱의 Info.plist에 있는 IntuneMAMSettings 사전을 통해 재정의하거나, IntuneMAMPolicyManager 인스턴스의 AAD 재정의 속성을 사용할 수 있습니다. Info.plist 접근 방법은 ADAL 설정이 정적인 응용 프로그램에 권장되고, 재정의 속성은 런타임에 이러한 값을 확인하는 응용 프로그램에 권장됩니다. 모든 SSO 설정이 구성되면 앱은 성공적으로 인증된 후 사용자의 UPN을 IntuneMAMEnrollmentManager의 RegisterAndEnrollAccount 메서드에 제공해야 합니다.
+      앱이 이미 ADAL 또는 MSAL을 사용하여 사용자를 인증하는 경우 앱과 Intune SDK 간에 SSO(single sign-on) 환경을 구성할 수 있습니다. 먼저 iOS용 Intune Xamarin Bindings(com.microsoft.adalcache)에서 사용하는 것과 동일한 키체인 액세스 그룹에 토큰을 저장하도록 ADAL/MSAL을 구성해야 합니다. ADAL의 경우 [AuthenticationContext의 KeychainSecurityGroup 속성을 설정](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Token-cache-serialization#enable-token-cache-sharing-across-ios-applications)하여 이 작업을 수행할 수 있습니다. MSAL의 경우 [PublicClientApplication의 KeychainSecurityGroup 속성을 설정](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/msal-net-2-released#you-can-now-enable-sso-between-adal-and-msal-apps-on-xamarinios)해야 합니다. 그런 다음, 앱과 함께 Intune SDK에서 사용하는 기본 AAD 설정을 재정의해야 합니다. [iOS용 Intune 앱 SDK 개발자 가이드](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)에 설명된 대로 앱의 Info.plist에 있는 IntuneMAMSettings 사전을 통해 재정의하거나, IntuneMAMPolicyManager 인스턴스의 AAD 재정의 속성을 사용할 수 있습니다. Info.plist 접근 방법은 ADAL 설정이 정적인 애플리케이션에 권장되고, 재정의 속성은 런타임에 이러한 값을 확인하는 애플리케이션에 권장됩니다. 모든 SSO 설정이 구성되면 앱은 성공적으로 인증된 후 사용자의 UPN을 IntuneMAMEnrollmentManager의 RegisterAndEnrollAccount 메서드에 제공해야 합니다.
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
@@ -90,14 +90,14 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android 통합
 
-1. [Microsoft.Intune.MAM.Xamarin.Android NuGet 패키지](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)의 최신 버전을 Xamarin.Android 프로젝트에 추가합니다. 이렇게 하면 Intune이 응용 프로그램을 사용하기에 필요한 참조를 제공합니다.
+1. [Microsoft.Intune.MAM.Xamarin.Android NuGet 패키지](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)의 최신 버전을 Xamarin.Android 프로젝트에 추가합니다. 이렇게 하면 Intune이 애플리케이션을 사용하기에 필요한 참조를 제공합니다.
 
 2. [Android용 Intune 앱 SDK 개발자 가이드](app-sdk-android.md)를 특별한 관심을 갖고 충분히 읽고 따르십시오.
 
     1. [전체 클래스 및 메서드 바꾸기 섹션](app-sdk-android.md#class-and-method-replacements)입니다. 
     2. [MAMApplication 섹션](app-sdk-android.md#mamapplication)입니다. 서브 클래스가 `[Application]` 특성으로 올바르게 데코레이팅되고 `(IntPtr, JniHandleOwnership)` 생성자를 재정의하는지 확인입니다.
     3. 앱이 AAD에 대한 인증을 수행하는 경우의 [ADAL 통합 섹션](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)입니다. 
-    4. 응용 프로그램의 MAM 서비스에서 정책을 가져오려고 계획한 경우의 [MAM-WE 등록 섹션](app-sdk-android.md#app-protection-policy-without-device-enrollment)입니다.
+    4. 애플리케이션의 MAM 서비스에서 정책을 가져오려고 계획한 경우의 [MAM-WE 등록 섹션](app-sdk-android.md#app-protection-policy-without-device-enrollment)입니다.
 
 > [!NOTE]
 > 가이드에서 코드 조각을 변환하는 경우 또는 `Microsoft.Intune.MAM.Xamarin.Android` 바인딩의 [Android용 Intune 앱 SDK 개발자 가이드](app-sdk-android.md)에서 동등한 API를 찾으려 시도하는 경우 Xamarin 바인딩 생성기가 다음과 같은 주목할 만한 방식으로 Android API를 수정할 수 있음을 알아야 합니다.
@@ -111,7 +111,7 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 
 1.  프로젝트에 [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet 패키지를 추가합니다. 이렇게 하면 아직 Intune 앱 SDK Xamarin 바인딩이 포함되지 않은 경우 자동으로 추가됩니다.
 
-2.  위의 2.2 단계에서 만든 `MAMApplication` 클래스의 `OnMAMCreate` 함수에서 `Xamarin.Forms.Forms.Init(Context, Bundle)`에 호출을 추가합니다. Intune 관리를 통해 응용 프로그램이 백그라운드에서도 시작할 수 있기 때문에 필요합니다.
+2.  위의 2.2 단계에서 만든 `MAMApplication` 클래스의 `OnMAMCreate` 함수에서 `Xamarin.Forms.Forms.Init(Context, Bundle)`에 호출을 추가합니다. Intune 관리를 통해 애플리케이션이 백그라운드에서도 시작할 수 있기 때문에 필요합니다.
 
 > [!NOTE]
 > 이 작업은 Visual Studio가 Intellisense 자동 완성을 위해 사용하는 종속성을 다시 작성하기 때문에 Intellisense가 변경 내용을 올바로 인식하도록 처음 Remapper를 실행한 후 Visual Studio를 다시 시작해야 할 수 있습니다. 
@@ -130,7 +130,7 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 
 1. [Android 가이드용 Intune SDK](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)에 정의된 단계에 따라 ADAL을 구성합니다.
 > [!NOTE] 
-> “클라이언트 ID”라는 용어는 앱에 연결된 Azure Portal의 “응용 프로그램 ID”라는 용어와 같습니다. 
+> “클라이언트 ID”라는 용어는 앱에 연결된 Azure Portal의 “애플리케이션 ID”라는 용어와 같습니다. 
 * SSO를 사용하려면 “일반적인 ADAL 구성” #2가 필요합니다.
 
 2. 매니페스트에 다음 값을 입력하여 기본 등록을 사용합니다. ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```

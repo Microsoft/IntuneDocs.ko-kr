@@ -107,7 +107,7 @@ Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 �
     - [iOS 대량 구매 앱](vpp-apps-ios.md)
 - **Windows 엔터프라이즈 인증서**: 관리되는 Windows 장치에 기간 업무 앱을 배포하는 데 사용되는 코드 서명 인증서의 상태를 적용하거나 볼 수 있습니다.
 - **Windows Symantec 인증서**: Windows 10 Mobile 장치에 XAP 및 WP8.x appx 파일을 배포하는 데 필요한 Symantec 코드 서명 인증서의 상태를 적용하거나 볼 수 있습니다.
-- **비즈니스용 Microsoft Store**: 비즈니스용 Microsoft Store에 대한 통합을 설정합니다. 그런 다음, 구매한 응용 프로그램을 Intune에 동기화하고 할당한 후 라이선스 사용 현황을 추적할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+- **비즈니스용 Microsoft Store**: 비즈니스용 Microsoft Store에 대한 통합을 설정합니다. 그런 다음, 구매한 애플리케이션을 Intune에 동기화하고 할당한 후 라이선스 사용 현황을 추적할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
     - [비즈니스용 Microsoft Store 대량 구매 앱](windows-store-for-business.md)
 - **Windows 테스트용 로드 키**: Windows 스토어에서 앱을 게시 및 다운로드하는 대신 장치에 직접 설치하는 데 사용할 수 있는 Windows 테스트용 로드 키를 추가할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
     - [Windows 앱 테스트용 로드](app-sideload-windows.md)

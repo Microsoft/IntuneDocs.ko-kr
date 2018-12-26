@@ -43,7 +43,7 @@ ms.locfileid: "52190135"
 |---------|------------|--------|
 | ApplicationKey |데이터 웨어하우스의 MAM 앱에 대한 고유 식별자 |123 |
 | ApplicationName |MAM 앱의 이름 |"Word" |
-| ApplicationId |MAM 앱의 응용 프로그램 ID |b66bc706-ffff-7437-0340-032819502773 |
+| ApplicationId |MAM 앱의 애플리케이션 ID |b66bc706-ffff-7437-0340-032819502773 |
 | IsDeleted |이 MAM 앱 레코드가 업데이트되었는지 나타냅니다. <br>True-MAM 앱이 이 테이블에서 필드가 업데이트된 새 레코드를 가집니다. <br>False-이 MAM 앱의 최신 레코드입니다. |True/False |
 | StartDateInclusiveUTC |데이터 웨어하우스에서 해당 MAM 앱을 만든 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |IsDeleted를 True로 변경한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
@@ -59,8 +59,8 @@ ms.locfileid: "52190135"
 |   ApplicationInstanceKey   |                                                               데이터 웨어하우스의 MAM 앱 인스턴스에 대한 고유 식별자 - 서로게이트 키                                                                |                 123                  |
 |           UserId           |                                                                              해당 MAM 앱을 설치한 사용자의 사용자 ID                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM 앱 인스턴스에 대한 고유 식별자 - ApplicationInstanceKey와 비슷하지만 자연 키입니다.                                              | b66bc706-ffff-7437-0340-032819502773 |
-|       ApplicationId        |                                                                                        이 MAM 앱의 응용 프로그램 ID                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
-|     ApplicationVersion     |                                                                                     해당 MAM 앱의 응용 프로그램 버전                                                                                      |                  2                   |
+|       ApplicationId        |                                                                                        이 MAM 앱의 애플리케이션 ID                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
+|     ApplicationVersion     |                                                                                     해당 MAM 앱의 애플리케이션 버전                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 MAM 앱 인스턴스의 이 레코드를 만든 날짜입니다. 값은 null일 수 있습니다.                                                                 |        11/23/2016 12:00:00 AM        |
 |          플랫폼          |                                                                          해당 MAM 앱이 설치된 디바이스 플랫폼                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      해당 MAM 앱이 설치된 디바이스의 플랫폼 버전                                                                       |                 2.2                  |
@@ -120,8 +120,8 @@ ms.locfileid: "52190135"
 |----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
 |       ApplicationKey       |          대리 키로 알려진 데이터 웨어하우스의 스토어 앱의 고유 식별자입니다.          |             123              |
 |       ApplicationId        | 스토어 앱의 고유 식별자입니다. ApplicationKey와 비슷하지만 자연 키 식별자입니다.  | com.microsoft.skydrive.<ios> |
-|      ApplicationName       |                                      MAM 전역 응용 프로그램 이름입니다.                                       |           Skydrive           |
-| RowLastModifiedDateTimeUtc | 데이터 웨어하우스에서 이 특정 MAM 글로벌 응용 프로그램을 마지막으로 수정한 UTC 날짜 및 시간입니다. |    11/23/2016 12:00:00 AM    |
+|      ApplicationName       |                                      MAM 전역 애플리케이션 이름입니다.                                       |           Skydrive           |
+| RowLastModifiedDateTimeUtc | 데이터 웨어하우스에서 이 특정 MAM 글로벌 애플리케이션을 마지막으로 수정한 UTC 날짜 및 시간입니다. |    11/23/2016 12:00:00 AM    |
 
 ## <a name="mamplatform"></a>MamPlatform
 

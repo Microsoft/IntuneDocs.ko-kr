@@ -48,7 +48,7 @@ iOS 디바이스의 경우 사용자의 ID가 Azure AD에서 확인될 수 있�
 
 [Microsoft Intune에 iOS 스토어 앱 추가](store-apps-ios.md) 지침을 참조하세요. **앱 정보 구성** 섹션의 **12단계**에서 이 [Microsoft Authenticator 앱 스토어 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)을 사용합니다.
 
-## <a name="configure-mtd-applications"></a>MTD 응용 프로그램 구성
+## <a name="configure-mtd-applications"></a>MTD 애플리케이션 구성
 
 MTD 공급자에 해당하는 섹션을 선택합니다.
 
@@ -85,7 +85,7 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
         5.  **위임된 권한**을 앱에 추가합니다.
 
         > [!NOTE] 
-        > 자세한 내용은 [Azure AD를 사용하여 네이티브 클라이언트 응용 프로그램 구성](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)을 참조하세요.
+        > 자세한 내용은 [Azure AD를 사용하여 네이티브 클라이언트 애플리케이션 구성](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)을 참조하세요.
 
      - **Lookout for Work ipa 파일을 추가합니다.**
 

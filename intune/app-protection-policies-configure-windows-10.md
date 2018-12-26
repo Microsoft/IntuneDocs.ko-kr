@@ -1,7 +1,7 @@
 ---
 title: Windows 10용 앱 보호 정책 구성
 titleSuffix: Microsoft Intune
-description: Azure AD에서 MAM(모바일 응용 프로그램 관리) 공급자 설정
+description: Azure AD에서 MAM(모바일 애플리케이션 관리) 공급자 설정
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -27,7 +27,7 @@ ms.locfileid: "53031979"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Azure AD에서 MAM 공급자를 설정하여 Windows 10용 MAM(모바일 응용 프로그램 관리)을 사용하도록 설정합니다. Azure AD에서 MAM 공급자를 설정하면 Intune을 사용하여 새 WIP(Windows Information Protection) 정책을 만들 때 등록 상태를 정의할 수 있습니다. 등록 상태는 MAM 또는 MDM(모바일 디바이스 관리)일 수 있습니다.
+Azure AD에서 MAM 공급자를 설정하여 Windows 10용 MAM(모바일 애플리케이션 관리)을 사용하도록 설정합니다. Azure AD에서 MAM 공급자를 설정하면 Intune을 사용하여 새 WIP(Windows Information Protection) 정책을 만들 때 등록 상태를 정의할 수 있습니다. 등록 상태는 MAM 또는 MDM(모바일 디바이스 관리)일 수 있습니다.
 
 ## <a name="to-configure-the-mam-provider"></a>MAM 공급자를 구성하려면
 

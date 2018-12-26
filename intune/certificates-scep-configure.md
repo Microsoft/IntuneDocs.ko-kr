@@ -43,7 +43,7 @@ NDES 서버는 엔터프라이즈 CA와 동일한 포리스트 내의 도메인�
   - 디바이스에서 인터넷 연결을 사용하여 인증서를 받을 수 있습니다.
   - 디바이스가 인터넷을 통해 연결하여 인증서를 받고 갱신하는 경우 보안상 안전합니다.
   
-- **Azure AD 응용 프로그램 프록시**(선택 사항): Azure AD 응용 프로그램 프록시를 전용 WAP(웹 응용 프로그램 프록시) 서버 대신 사용하여 NDES Server를 인터넷에 게시할 수 있습니다. 자세한 내용은 온 [온-프레미스 응용 프로그램에 보안된 원격 액세스를 제공하는 방법](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)을 참조하세요.
+- **Azure AD 응용 프로그램 프록시**(선택 사항): Azure AD 응용 프로그램 프록시를 전용 WAP(웹 응용 프로그램 프록시) 서버 대신 사용하여 NDES Server를 인터넷에 게시할 수 있습니다. 자세한 내용은 온 [온-프레미스 애플리케이션에 보안된 원격 액세스를 제공하는 방법](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)을 참조하세요.
 
 #### <a name="additional"></a>추가 정보
 
@@ -134,7 +134,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 ![템플릿, 발급 요구 사항 탭](./media/scep_ndes_issuance_reqs.jpg)
 
 > [!IMPORTANT]
-> 응용 프로그램 정책의 경우 필요한 응용 프로그램 정책만 추가합니다. 보안 관리자와 선택 사항을 확인합니다.
+> 애플리케이션 정책의 경우 필요한 애플리케이션 정책만 추가합니다. 보안 관리자와 선택 사항을 확인합니다.
 
 요청자가 유효 기간을 입력할 수 있도록 CA를 구성합니다.
 
@@ -237,7 +237,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
     ![NDES 테스트](./media/SCEP_NDES_URL.png)
 
-    **503 서비스를 사용할 수 없음** 오류가 발생하는 경우 이벤트 뷰어를 확인합니다. 응용 프로그램 풀이 NDES 사용자 권한에 대한 누락으로 인해 중지되었을 가능성이 높습니다. 이러한 권한은 1단계에 설명되어 있습니다.
+    **503 서비스를 사용할 수 없음** 오류가 발생하는 경우 이벤트 뷰어를 확인합니다. 애플리케이션 풀이 NDES 사용자 권한에 대한 누락으로 인해 중지되었을 가능성이 높습니다. 이러한 권한은 1단계에 설명되어 있습니다.
 
 ##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>NDES 서버에서 인증서를 설치 및 바인딩
 
@@ -305,7 +305,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 4. 다운로드가 완료되면 NDES(네트워크 디바이스 등록 서비스) 역할을 호스트하는 서버로 이동합니다. 그런 다음:
 
     1. NDES 인증서 커넥터에 필요하므로 .NET 4.5 Framework가 설치되어 있는지 확인합니다. .NET 4.5 Framework는 Windows Server 2012 R2 및 최신 버전에 자동으로 포함됩니다.
-    2. 설치 관리자(**NDESConnectorSetup.exe**)를 실행합니다. 설치 관리자가 NDES에 대한 정책 모듈 및 CRP 웹 서비스도 설치합니다. CRP 웹 서비스 CertificateRegistrationSvc는 IIS에서 응용 프로그램으로 실행됩니다.
+    2. 설치 관리자(**NDESConnectorSetup.exe**)를 실행합니다. 설치 관리자가 NDES에 대한 정책 모듈 및 CRP 웹 서비스도 설치합니다. CRP 웹 서비스 CertificateRegistrationSvc는 IIS에서 애플리케이션으로 실행됩니다.
 
     > [!NOTE]
     > 독립 실행형 Intune에 NDES를 설치하면 CRP 서비스가 인증서 커넥터와 함께 자동으로 설치됩니다. 구성 관리자와 함께 Intune을 사용할 때는 별도의 사이트 시스템 역할로 인증서 등록 지점을 설치합니다.
@@ -512,7 +512,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune Connector 이벤트 및 진단 코드
 
-6.1806.x.x 버전부터 Intune Connector 서비스는 **이벤트 뷰어**(**응용 프로그램 및 서비스 로그** > **Microsoft Intune Connector**)에 이벤트를 기록합니다. 이러한 이벤트를 사용하여 Intune Connector 구성의 잠재적 문제를 해결할 수 있습니다. 이러한 이벤트는 작업의 성공과 실패를 기록하고, IT 관리자가 문제를 해결하는 데 도움이 되는 메시지와 함께 진단 코드를 포함합니다.
+6.1806.x.x 버전부터 Intune Connector 서비스는 **이벤트 뷰어**(**애플리케이션 및 서비스 로그** > **Microsoft Intune Connector**)에 이벤트를 기록합니다. 이러한 이벤트를 사용하여 Intune Connector 구성의 잠재적 문제를 해결할 수 있습니다. 이러한 이벤트는 작업의 성공과 실패를 기록하고, IT 관리자가 문제를 해결하는 데 도움이 되는 메시지와 함께 진단 코드를 포함합니다.
 
 ### <a name="event-ids-and-descriptions"></a>이벤트 ID 및 설명
 

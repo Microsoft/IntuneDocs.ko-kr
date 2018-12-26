@@ -45,7 +45,7 @@ PC 사용 중지하는 경우:
 
 -   Intune이 PC에서 소프트웨어 클라이언트를 제거합니다. PC가 Intune 서비스에 연결되어 있지 않은 경우 다음번에 서비스에 연결할 때 소프트웨어 클라이언트가 제거됩니다.
 
--   Microsoft Intune Endpoint Protection이 PC에서 제거됩니다. PC에 다른 엔드포인트 앱이 설치되어 있지만 사용되지 않도록 설정된 경우, Microsoft Intune Endpoint Protection을 제거하면 이 응용 프로그램이 다시 사용되도록 설정되어 PC가 보호될 수 있습니다.
+-   Microsoft Intune Endpoint Protection이 PC에서 제거됩니다. PC에 다른 엔드포인트 앱이 설치되어 있지만 사용되지 않도록 설정된 경우, Microsoft Intune Endpoint Protection을 제거하면 이 애플리케이션이 다시 사용되도록 설정되어 PC가 보호될 수 있습니다.
 
 -   PC에서 정책을 제거하면 해당 정책으로 설정된 값이 변경됩니다.
 

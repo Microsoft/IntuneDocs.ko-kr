@@ -60,7 +60,7 @@ Intune 관리자는 감사 로그를 사용하여 개인 데이터와 관련된 
 Intune에서 최종 사용자의 개인 데이터를 삭제하려면 관리자가 [AAD(Azure Active Directory)에서 사용자를 삭제](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)해야 합니다. 사용자가 AAD에서 삭제되면(하드 삭제) Intune은 AAD에서 삭제 신호를 수신한 다음, Intune 서비스에서 해당 사용자의 모든 개인 데이터를 자동으로 삭제하기 시작합니다. 사용자의 정보는 제거 작업 후 30일 내에 Intune 서비스에서 삭제됩니다.
 
 ### <a name="reset-device-to-factory-settings"></a>디바이스를 초기 설정으로 다시 설정
-초기 설정으로 다시 설정하면 모든 회사 및 개인 데이터와 설정이 원래 초기 설정으로 복원됩니다. 다음 직원에게 디바이스를 제공하는 데 유용합니다. 사용자 파일, 사용자 설치 응용 프로그램 및 기본값이 아닌 설정이 제거되고, 이 데이터는 제거 작업 후 30일 내에 Intune 서비스에서 삭제됩니다.
+초기 설정으로 다시 설정하면 모든 회사 및 개인 데이터와 설정이 원래 초기 설정으로 복원됩니다. 다음 직원에게 디바이스를 제공하는 데 유용합니다. 사용자 파일, 사용자 설치 애플리케이션 및 기본값이 아닌 설정이 제거되고, 이 데이터는 제거 작업 후 30일 내에 Intune 서비스에서 삭제됩니다.
 
 ### <a name="user-self-removal-from-intune-management"></a>Intune 관리 대상에서 사용자 자체 제외
 사용자는 관리자의 도움 없이 [Android, Apple 또는 Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md) 개인 디바이스를 Intune 관리 대상에서 제외할 수 있습니다.   

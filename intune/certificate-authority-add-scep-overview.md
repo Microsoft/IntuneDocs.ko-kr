@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 SCEP와 함께 타사 CA 사용 - Azure | Microsoft Docs
-description: Microsoft Intune에서 공급업체 또는 타사 CA(인증 기관)를 추가하여 SCEP 프로토콜을 통해 모바일 디바이스에 인증서를 발급할 수 있습니다. 이 개요에서 Azure AD(Active Directory) 응용 프로그램은 Microsoft Intune에 인증서 유효성 검사 권한을 부여합니다. 그런 다음, SCEP 서버 설정에서 AAD 응용 프로그램의 응용 프로그램 ID, 인증 키 및 테넌트 ID를 사용하여 인증서를 발급합니다.
+description: Microsoft Intune에서 공급업체 또는 타사 CA(인증 기관)를 추가하여 SCEP 프로토콜을 통해 모바일 디바이스에 인증서를 발급할 수 있습니다. 이 개요에서 Azure AD(Active Directory) 애플리케이션은 Microsoft Intune에 인증서 유효성 검사 권한을 부여합니다. 그런 다음, SCEP 서버 설정에서 AAD 애플리케이션의 애플리케이션 ID, 인증 키 및 테넌트 ID를 사용하여 인증서를 발급합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -35,9 +35,9 @@ API는 [Intune SCEP API 공개 GitHub 리포지토리](http://github.com/Microso
 [Intune SCEP 관리 솔루션과 통합](scep-libraries-apis.md)에서는 API 사용, 메서드 및 빌드한 솔루션 테스트에 대한 자세한 정보를 제공합니다.
 
 **2부 - 응용 프로그램 및 프로필 만들기**  
-Azure AD(Active Directory) 응용 프로그램을 사용하면 Intune에 권한을 위임하여 디바이스에서 발생하는 SCEP 요청을 처리할 수 있습니다. Azure AD 응용 프로그램은 개발자가 만든 API 솔루션 내에서 사용되는 응용 프로그램 ID 및 인증 키 값을 포함합니다. 그런 다음, 관리자는 Intune을 사용하여 SCEP 인증서 프로필을 만들고 배포할 수 있습니다. 디바이스의 배포 상태에 대한 보고서를 볼 수도 있습니다.
+Azure AD(Active Directory) 응용 프로그램을 사용하면 Intune에 권한을 위임하여 디바이스에서 발생하는 SCEP 요청을 처리할 수 있습니다. Azure AD 애플리케이션은 개발자가 만든 API 솔루션 내에서 사용되는 애플리케이션 ID 및 인증 키 값을 포함합니다. 그런 다음, 관리자는 Intune을 사용하여 SCEP 인증서 프로필을 만들고 배포할 수 있습니다. 디바이스의 배포 상태에 대한 보고서를 볼 수도 있습니다.
 
-이 문서에서는 관리자 관점에서 Azure AD 응용 프로그램 생성 등을 살펴보며 이 기능에 대한 개요를 제공합니다.
+이 문서에서는 관리자 관점에서 Azure AD 애플리케이션 생성 등을 살펴보며 이 기능에 대한 개요를 제공합니다.
 
 ## <a name="overview"></a>개요
 
@@ -73,14 +73,14 @@ Azure AD 앱을 등록하는 데 필요한 권한이 있는지 확인합니다. 
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **Azure Active Directory** > **앱 등록** > **새 응용 프로그램 등록**을 선택합니다.
-3. 이름과 로그온 URL을 입력합니다. 응용 프로그램 유형에 **웹앱/API**를 선택합니다.
+3. 이름과 로그온 URL을 입력합니다. 애플리케이션 유형에 **웹앱/API**를 선택합니다.
 4. **만들기**를 선택합니다.
 
 [Azure Active Directory와 응용 프로그램 통합](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)에는 URL 및 이름에 대한 팁을 포함하여 앱을 만드는 방법에 대한 몇 가지 지침이 포함되어 있습니다.
 
 **2단계: 사용 권한 제공**
 
-응용 프로그램을 만든 후 Microsoft Intune API에 필요한 권한을 부여합니다.
+애플리케이션을 만든 후 Microsoft Intune API에 필요한 권한을 부여합니다.
 
 1. Azure AD 앱에서 **설정** > **필수 권한**을 엽니다.  
 2. **추가** > **API 선택**을 선택 > **Microsoft Intune API** > **선택**을 선택합니다.
@@ -89,7 +89,7 @@ Azure AD 앱을 등록하는 데 필요한 권한이 있는지 확인합니다. 
 
 **3단계: 응용 프로그램 ID 및 인증 키 가져오기**
 
-그런 다음, Azure AD 응용 프로그램의 ID와 키 값을 가져옵니다. 다음 값이 필요합니다.
+그런 다음, Azure AD 애플리케이션의 ID와 키 값을 가져옵니다. 다음 값이 필요합니다.
 
 - 응용 프로그램 ID
 - 인증 키
@@ -97,13 +97,13 @@ Azure AD 앱을 등록하는 데 필요한 권한이 있는지 확인합니다. 
 
 **응용 프로그램 ID 및 인증 키를 가져오려면**:
 
-1. Azure AD에서 새 응용 프로그램을 선택합니다(**앱 등록**).
+1. Azure AD에서 새 애플리케이션을 선택합니다(**앱 등록**).
 2. **응용 프로그램 ID**를 복사하여 응용 프로그램 코드에 저장합니다.
 3. 그런 다음, 인증 키를 생성합니다. Azure AD 앱에서 **설정** > **키**를 엽니다.
 4. **암호**에서 설명을 입력하고 키의 기간을 선택합니다. 변경 내용을 **저장**합니다. 표시된 값을 복사하고 저장합니다.
 
     > [!IMPORTANT]
-    > 이 키는 다시 표시되지 않으므로 즉시 복사하고 저장합니다. 이 키 값은 타사 CA 구현에 필요합니다. 응용 프로그램 ID, 인증 키 및 테넌트 ID를 구성하는 방법에 대한 해당 지침을 검토합니다.
+    > 이 키는 다시 표시되지 않으므로 즉시 복사하고 저장합니다. 이 키 값은 타사 CA 구현에 필요합니다. 애플리케이션 ID, 인증 키 및 테넌트 ID를 구성하는 방법에 대한 해당 지침을 검토합니다.
 
 **테넌트 ID**는 계정의 @ 기호 다음에 오는 도메인 텍스트입니다. 예를 들어 계정이 `admin@name.onmicrosoft.com`이면 테넌트 ID는 **name.onmicrosoft.com**입니다.
 

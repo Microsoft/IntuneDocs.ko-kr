@@ -1,7 +1,7 @@
 ---
-title: Intune 데이터 웨어하우스 응용 프로그램 전용 인증
+title: Intune 데이터 웨어하우스 애플리케이션 전용 인증
 titleSuffix: Microsoft Intune
-description: 이 항목에서는 Intune 데이터 웨어하우스 응용 프로그램 전용 인증에 대해 설명합니다.
+description: 이 항목에서는 Intune 데이터 웨어하우스 애플리케이션 전용 인증에 대해 설명합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -23,13 +23,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52185205"
 ---
-# <a name="intune-data-warehouse-application-only-authentication"></a>Intune 데이터 웨어하우스 응용 프로그램 전용 인증
+# <a name="intune-data-warehouse-application-only-authentication"></a>Intune 데이터 웨어하우스 애플리케이션 전용 인증
 
-Azure AD(Azure Active Directory)를 사용하여 응용 프로그램을 설정하고 Intune 데이터 웨어하우스에 인증할 수 있습니다. 이 프로세스는 응용 프로그램이 사용자 자격 증명에 액세스할 수 없어야 하는 웹 사이트, 앱, 백그라운드 프로세스에 유용합니다. 다음 단계에 따라 OAuth 2.0을 사용하여 Azure AD에 응용 프로그램을 인증합니다.
+Azure AD(Azure Active Directory)를 사용하여 애플리케이션을 설정하고 Intune 데이터 웨어하우스에 인증할 수 있습니다. 이 프로세스는 애플리케이션이 사용자 자격 증명에 액세스할 수 없어야 하는 웹 사이트, 앱, 백그라운드 프로세스에 유용합니다. 다음 단계에 따라 OAuth 2.0을 사용하여 Azure AD에 애플리케이션을 인증합니다.
 
 ## <a name="authorization"></a>권한 부여
 
-Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트의 웹 응용 프로그램과 웹 API에 액세스할 권한을 부여할 수 있게 합니다. 이 가이드에서는 C#을 사용하여 응용 프로그램을 인증하는 방법을 보여 줍니다. OAuth 2.0 권한 부여 코드 흐름은 OAuth 2.0 사양의 섹션 4.1에 설명되어 있습니다. 자세한 내용은 [OAuth 2.0 및 Azure Active Directory를 사용하여 웹 응용 프로그램에 대한 액세스 권한 부여](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)에서 참조하세요.
+Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트의 웹 애플리케이션과 웹 API에 액세스할 권한을 부여할 수 있게 합니다. 이 가이드에서는 C#을 사용하여 애플리케이션을 인증하는 방법을 보여 줍니다. OAuth 2.0 권한 부여 코드 흐름은 OAuth 2.0 사양의 섹션 4.1에 설명되어 있습니다. 자세한 내용은 [OAuth 2.0 및 Azure Active Directory를 사용하여 웹 애플리케이션에 대한 액세스 권한 부여](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)에서 참조하세요.
 
 
 ## <a name="azure-keyvault"></a>Azure KeyVault
@@ -38,7 +38,7 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 
 ## <a name="create-a-web-app"></a>웹앱 만들기
 
-이 섹션에서는 Intune에서 가리키려는 웹앱에 대한 세부 정보를 제공합니다. 웹앱은 클라이언트-서버 응용 프로그램입니다. 서버는 UI, 콘텐츠 및 기능을 포함하는 웹앱을 제공합니다. 이 앱 유형은 웹에서 별도로 유지 관리됩니다. Intune을 사용하여 웹앱에 Intune 액세스 권한을 부여합니다. 데이터 흐름은 웹앱에서 시작됩니다. 
+이 섹션에서는 Intune에서 가리키려는 웹앱에 대한 세부 정보를 제공합니다. 웹앱은 클라이언트-서버 애플리케이션입니다. 서버는 UI, 콘텐츠 및 기능을 포함하는 웹앱을 제공합니다. 이 앱 유형은 웹에서 별도로 유지 관리됩니다. Intune을 사용하여 웹앱에 Intune 액세스 권한을 부여합니다. 데이터 흐름은 웹앱에서 시작됩니다. 
 
 1.  [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2.  Azure Portal의 위쪽에 있는 **리소스, 서비스, 문서 검색** 필드를 사용하여 **Azure Active Directory**를 검색합니다.
@@ -48,8 +48,8 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 6.  **만들기** 블레이드에서 다음과 같은 앱 정보를 추가합니다.
 
     - 앱 이름(예: *Intune App-Only Auth*).
-    - **응용 프로그램 유형**. 웹 응용 프로그램, Web API 또는 둘 다를 나타내는 앱을 추가하려면 **웹앱/API**를 선택합니다.
-    - 응용 프로그램의 **로그온 URL**. 인증 프로세스 중에 사용자가 자동으로 이동되는 위치입니다. 사용자는 여기서 신원을 증명해야 합니다. 자세한 내용은 [Azure Active Directory를 사용하는 응용 프로그램 액세스 및 Single Sign-On이란 무엇인가요?](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)를 참조하세요.
+    - **응용 프로그램 유형**. 웹 애플리케이션, Web API 또는 둘 다를 나타내는 앱을 추가하려면 **웹앱/API**를 선택합니다.
+    - 애플리케이션의 **로그온 URL**. 인증 프로세스 중에 사용자가 자동으로 이동되는 위치입니다. 사용자는 여기서 신원을 증명해야 합니다. 자세한 내용은 [Azure Active Directory를 사용하는 애플리케이션 액세스 및 Single Sign-On이란 무엇인가요?](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)를 참조하세요.
 
 7.  **만들기** 블레이드의 맨 아래에서 **만들기**를 클릭합니다.
 
@@ -70,9 +70,9 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
     >[!NOTE] 
     > **키** 블레이드를 나가면 키 값이 사라집니다. 나중에 이 블레이드에서 키를 검색할 수 없습니다. 나중에 사용하려면 키를 복사합니다.
 
-## <a name="grant-application-permissions"></a>응용 프로그램 사용 권한 부여
+## <a name="grant-application-permissions"></a>애플리케이션 사용 권한 부여
 
-이 섹션에서는 응용 프로그램에 대한 사용 권한을 부여합니다.
+이 섹션에서는 애플리케이션에 대한 사용 권한을 부여합니다.
 
 1.  **설정** 블레이드에서 **필요한 권한**을 선택합니다.
 2.  **추가**를 클릭합니다.

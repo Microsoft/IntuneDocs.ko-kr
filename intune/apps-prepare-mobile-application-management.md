@@ -29,7 +29,7 @@ ms.locfileid: "53112428"
 Intune 앱 래핑 도구 또는 Intune 앱 SDK를 사용하여 앱에서 앱 보호 정책을 사용할 수 있게 할 수 있습니다. 이 정보를 사용하여 이러한 두 가지 방법 및 사용 시기에 대해 알아보세요.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune 앱 래핑 도구
-앱 래핑 도구는 **내부** LOB(기간 업무) 앱에 주로 사용됩니다. 이 도구는 앱을 둘러싸는 래퍼를 만들어 앱이 Intune 앱 보호 정책에 의해 관리될 수 있게 하는 명령줄 응용 프로그램입니다. ISV(Independent Software Vendor)가 제공하는 앱을 보호할 때는 ISV가 래핑된 앱을 계속해서 지원할지 여부를 명시하는 것이 중요합니다.
+앱 래핑 도구는 **내부** LOB(기간 업무) 앱에 주로 사용됩니다. 이 도구는 앱을 둘러싸는 래퍼를 만들어 앱이 Intune 앱 보호 정책에 의해 관리될 수 있게 하는 명령줄 애플리케이션입니다. ISV(Independent Software Vendor)가 제공하는 앱을 보호할 때는 ISV가 래핑된 앱을 계속해서 지원할지 여부를 명시하는 것이 중요합니다.
 
 도구를 사용하기 위해 소스 코드가 필요하지는 않지만 서명 자격 증명이 필요합니다. 서명 자격 증명에 대한 자세한 내용은 [Intune 블로그](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)를 참조하세요. 앱 래핑 도구 설명서는 [Android App Wrapping Tool](app-wrapper-prepare-android.md)(앱 래핑 도구) 및 [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)(iOS 앱 래핑 도구) 항목을 참조하세요.
 
@@ -100,10 +100,10 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 |전체 초기화|X|X|
 |선택적 초기화 <br></br>**참고:** iOS의 경우 관리 프로필을 제거하면 앱도 제거됩니다.|X||
 |"다른 이름으로 저장" 차단|X||
-|대상 응용 프로그램 구성|X||
+|대상 애플리케이션 구성|X||
 |다중 ID 지원|X||
 |사용자 지정 가능한 스타일 |X|||
-|Citrix mVPN을 통한 주문형 응용 프로그램 VPN|X|X| 
+|Citrix mVPN을 통한 주문형 애플리케이션 VPN|X|X| 
 |연락처 동기화 사용 안 함|X|X|
 |인쇄 사용 안 함|X|X|
 |최소 앱 버전 필요|X|X|

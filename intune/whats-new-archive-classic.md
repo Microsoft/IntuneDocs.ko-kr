@@ -138,7 +138,7 @@ Apple에서는 ATS(Application Transport Security)에 대한 특정 요구 사�
 
 - 물리적 방어
 - 네트워크 방어
-- 응용 프로그램 방어
+- 애플리케이션 방어
 - 취약성 방어
 
 Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Skycure(Symantec Endpoint Protection Mobile) 위험 평가에 따라 EMS 조건부 액세스 정책을 구성할 수 있습니다. 이러한 정책을 사용하여 검색된 위협에 따라 회사 리소스에 대한 비규격 디바이스 액세스를 허용하거나 차단할 수 있습니다. 자세한 내용은 [Symantec Endpoint Protection Mobile Connector](skycure-mobile-threat-defense-connector.md)를 참조하세요.

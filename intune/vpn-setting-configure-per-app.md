@@ -113,7 +113,7 @@ Intune에서 만든 프로필에 CA에서 발급한 VPN 서버의 루트 인증�
 
 ## <a name="create-a-per-app-vpn-profile"></a>앱당 VPN 프로필 만들기
 
-VPN 프로필에는 클라이언트 자격 증명을 포함한 SCEP 인증서, VPN에 대한 연결 정보 및 앱당 VPN 플래그를 포함하여 iOS 응용 프로그램에서 사용할 앱당 VPN 기능을 사용하도록 설정합니다.
+VPN 프로필에는 클라이언트 자격 증명을 포함한 SCEP 인증서, VPN에 대한 연결 정보 및 앱당 VPN 플래그를 포함하여 iOS 애플리케이션에서 사용할 앱당 VPN 기능을 사용하도록 설정합니다.
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.

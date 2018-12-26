@@ -1,7 +1,7 @@
 ---
 title: 애플리케이션 엔터티에 대한 참조
 titlesuffix: Microsoft Intune
-description: Intune 데이터 웨어하우스 API에서 엔터티 컬렉션의 응용 프로그램 범주에 대한 항목을 참조하세요.
+description: Intune 데이터 웨어하우스 API에서 엔터티 컬렉션의 애플리케이션 범주에 대한 항목을 참조하세요.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
@@ -23,7 +23,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/07/2018
 ms.locfileid: "53032384"
 ---
-# <a name="reference-for-application-entities"></a>응용 프로그램 엔터티에 대한 참조
+# <a name="reference-for-application-entities"></a>애플리케이션 엔터티에 대한 참조
 
 **응용 프로그램** 범주는 다음과 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
 
@@ -113,7 +113,7 @@ ms.locfileid: "53032384"
 | DeviceKey | Intune 디바이스 ID가 포함된 디바이스 테이블에 대한 참조 |
 | DateKey | 인벤토리의 날짜를 가리키는 날짜 테이블에 대한 참조 |
 | ApplicationName | 응용 프로그램 이름입니다. |
-| ApplicationVersion | 응용 프로그램의 버전 |
+| ApplicationVersion | 애플리케이션의 버전 |
 | BundleSize | 응용 프로그램의 크기(바이트) |
 
 ## <a name="mobileappinstallstate"></a>MobileAppInstallState

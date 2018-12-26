@@ -56,7 +56,7 @@ Intune MDM 디바이스 준수 정책에서 제공하는 도구는 다음과 같
 자세한 내용은 [디바이스 준수 시작](https://docs.microsoft.com/intune/device-compliance-get-started)을 참조하세요.
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Intune 앱 보호 정책을 사용하여 운영 체제 버전 제어    
-Intune 앱 보호 정책 및 MAM(모바일 응용 프로그램 관리) 액세스 설정을 사용하면 앱 계층에서 최소 운영 체제 버전을 지정할 수 있습니다. 이를 통해 최종 사용자가 자신의 운영 체제를 지정한 최소 버전으로 업데이트하도록 알리고 권장하거나 요구할 수 있습니다.
+Intune 앱 보호 정책 및 MAM(모바일 애플리케이션 관리) 액세스 설정을 사용하면 앱 계층에서 최소 운영 체제 버전을 지정할 수 있습니다. 이를 통해 최종 사용자가 자신의 운영 체제를 지정한 최소 버전으로 업데이트하도록 알리고 권장하거나 요구할 수 있습니다.
  
 다음 두 가지 옵션이 있습니다. 
 

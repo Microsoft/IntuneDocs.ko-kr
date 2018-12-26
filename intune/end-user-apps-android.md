@@ -52,9 +52,9 @@ ms.locfileid: "52183403"
 
 아래와 같이 앱은 관리되거나 관리되지 않을 수 있습니다. 앱을 관리되는 앱으로 만드는 프로세스는 모든 종류의 Android 디바이스에 대해 동일합니다.
 
-**관리되는 앱** - 정책을 통해 관리할 수 있는 앱입니다. Intune에서 "래핑"되거나 Intune 앱 SDK를 사용하여 빌드됩니다. 이러한 앱은 Intune에서 관리할 수 있고, 응용 프로그램 정책을 적용할 수 있습니다.
+**관리되는 앱** - 정책을 통해 관리할 수 있는 앱입니다. Intune에서 "래핑"되거나 Intune 앱 SDK를 사용하여 빌드됩니다. 이러한 앱은 Intune에서 관리할 수 있고, 애플리케이션 정책을 적용할 수 있습니다.
 
-**관리되지 않는 앱** - 정책을 통해 관리할 수 없는 앱입니다. Intune에서 래핑되지 않았거나 Intune 앱 SDK를 통합하지 않습니다. 응용 프로그램 정책을 이러한 앱에 적용할 수 없습니다.
+**관리되지 않는 앱** - 정책을 통해 관리할 수 없는 앱입니다. Intune에서 래핑되지 않았거나 Intune 앱 SDK를 통합하지 않습니다. Application policies cannot be applied to these apps.
 
 ### <a name="see-also"></a>참고 항목
 [Microsoft Intune을 사용하여 앱 추가](apps-add.md)

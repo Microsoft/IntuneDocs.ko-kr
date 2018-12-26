@@ -291,15 +291,15 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 ### <a name="exploit-protection"></a>악용 방지
 
-악용 방지를 사용하도록 설정하려면 원하는 시스템 및 응용 프로그램 완화 설정이 포함된 XML 파일을 만듭니다. 다음과 같은 두 가지 방법이 있습니다.
+악용 방지를 사용하도록 설정하려면 원하는 시스템 및 애플리케이션 완화 설정이 포함된 XML 파일을 만듭니다. 다음과 같은 두 가지 방법이 있습니다.
 
  1. PowerShell: Get-ProcessMitigation, Set-ProcessMitigation 및 ConvertTo-ProcessMitigationPolicy PowerShell cmdlet 중 하나 이상을 사용합니다. cmdlet은 완화 설정을 구성하고 이들의 XML 표현을 내보냅니다.
 
  2. Windows Defender 보안 센터 UI: Windows Defender 보안 센터에서 앱 및 브라우저 컨트롤을 클릭한 다음, 결과 화면의 아래쪽으로 스크롤하여 Exploit Protection을 찾습니다. 먼저 시스템 설정 및 프로그램 설정 탭을 사용하여 완화 설정을 구성합니다. 그런 다음 화면 아래쪽의 설정 내보내기 링크를 찾아서 해당 XML 표현을 내보냅니다.
 
-메모리, 제어 흐름 및 정책 제한을 구성할 수 있는 XML 파일을 업로드하여 **Exploit Protection 인터페이스의 사용자 편집**을 차단합니다. XML 파일의 설정을 사용하여 응용 프로그램의 악용을 방지할 수 있습니다. **구성되지 않음**(기본값)으로 설정하면 사용자 지정 구성을 내보내지 않습니다. 
+메모리, 제어 흐름 및 정책 제한을 구성할 수 있는 XML 파일을 업로드하여 **Exploit Protection 인터페이스의 사용자 편집**을 차단합니다. XML 파일의 설정을 사용하여 애플리케이션의 악용을 방지할 수 있습니다. **구성되지 않음**(기본값)으로 설정하면 사용자 지정 구성을 내보내지 않습니다. 
 
-## <a name="windows-defender-application-control"></a>Windows Defender 응용 프로그램 제어
+## <a name="windows-defender-application-control"></a>Windows Defender 애플리케이션 제어
 
 지원되는 Windows 10 버전은 다음과 같습니다.
 
@@ -318,7 +318,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 **감사만** 모드에서 실행되는 경우 응용 프로그램이 차단되지 않습니다. **감사 전용** 모드는 로컬 클라이언트 로그에 있는 모든 이벤트를 기록합니다.
 
-사용하도록 설정되면 응용 프로그램 제어는 **적용**에서 **감사 전용**으로 모드를 변경할 때에만 해제될 수 있습니다. 모드를 **적용**에서 **구성하지 않음**으로 변경하면 응용 프로그램 제어가 할당된 디바이스에 계속 적용됩니다.
+사용하도록 설정되면 애플리케이션 제어는 **적용**에서 **감사 전용**으로 모드를 변경할 때에만 해제될 수 있습니다. 모드를 **적용**에서 **구성하지 않음**으로 변경하면 응용 프로그램 제어가 할당된 디바이스에 계속 적용됩니다.
 
 ## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard
 

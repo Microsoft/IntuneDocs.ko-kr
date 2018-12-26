@@ -45,7 +45,7 @@ Windows 디바이스에서 암호를 재설정하려면 PIN 재설정 서비스�
 4. [Azure 포털](https://portal.azure.com)에서 PIN 재설정 서비스가 엔터프라이즈 응용 프로그램(모든 응용 프로그램)에 표시되어 있는지 확인: ![PIN 재설정 서비스 사용 권한 페이지](./media/pin-reset-service-application.png)
 
 > [!NOTE]
-> PIN 재설정 요청을 수락한 후 `Page not found` 메시지를 가져오거나 아무 일도 일어나지 않은 것처럼 나타날 수 있습니다. 이 동작은 정상입니다. 해당 테넌트에 대해 두 개의 PIN 재설정 응용 프로그램이 표시되어 있는지 확인해야 합니다.
+> PIN 재설정 요청을 수락한 후 `Page not found` 메시지를 가져오거나 아무 일도 일어나지 않은 것처럼 나타날 수 있습니다. 이 동작은 정상입니다. 해당 테넌트에 대해 두 개의 PIN 재설정 애플리케이션이 표시되어 있는지 확인해야 합니다.
 
 ## <a name="configure-windows-devices-to-use-pin-reset"></a>PIN 재설정을 사용하도록 Windows 디바이스 구성
 

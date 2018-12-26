@@ -42,7 +42,7 @@ IT 관리자는 Intune 관리 앱의 클립보드 동작을 구성할 수 있습
 IT 관리자는 앱에서 디바이스에 저장하는 데이터가 암호화되도록 하는 정책을 적용할 수 있습니다.
 
 ### <a name="remotely-wipe-corporate-data"></a>원격으로 회사 데이터 초기화
-IT 관리자는 Intune 관리 앱에서 회사 데이터를 원격으로 초기화할 수 있습니다. 이 기능은 ID 기반이며 최종 사용자의 회사 ID와 연결된 파일만 삭제합니다. 이렇게 하려면 기능에 앱 참여가 필요합니다. 앱은 사용자 설정에 따라 초기화를 수행할 ID를 지정할 수 있습니다. 앱에서 지정된 이러한 사용자 설정이 없을 경우 기본 동작은 응용 프로그램 디렉터리를 초기화하고 최종 사용자에게 액세스가 제거되었음을 알리는 것입니다.
+IT 관리자는 Intune 관리 앱에서 회사 데이터를 원격으로 초기화할 수 있습니다. 이 기능은 ID 기반이며 최종 사용자의 회사 ID와 연결된 파일만 삭제합니다. 이렇게 하려면 기능에 앱 참여가 필요합니다. 앱은 사용자 설정에 따라 초기화를 수행할 ID를 지정할 수 있습니다. 앱에서 지정된 이러한 사용자 설정이 없을 경우 기본 동작은 애플리케이션 디렉터리를 초기화하고 최종 사용자에게 액세스가 제거되었음을 알리는 것입니다.
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>Managed Browser 사용 적용
 IT 관리자가 앱의 웹 링크를 [Intune Managed Browser 앱](app-configuration-managed-browser.md)에서 열도록 강제할 수 있습니다. 이 기능은 회사 환경에 표시되는 링크가 Intune 관리 앱의 도메인 내에 유지되게 합니다.
@@ -72,7 +72,7 @@ IT 관리자가 최종 사용자가 앱에 액세스하기 전에 디바이스 �
 
 디바이스 등록이 제외된 앱 보호를 사용하면 Microsoft Intune 서비스가 디바이스 관리 채널을 통해 정책을 배포하지 않고 직접 앱 보호 정책을 앱에 배포할 수 있습니다.
 
-### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Citrix mVPN을 통한 주문형 응용 프로그램 VPN 
+### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Citrix mVPN을 통한 주문형 애플리케이션 VPN 
 Citrix XenMobile MDX와 Microsoft Intune의 조합으로 디바이스와 앱을 관리할 수 있습니다. 이 조합은 Citrix의 mVPN 기술을 사용하는 동안 Intune 앱 보호 정책으로 앱을 관리할 수 있음을 의미합니다. Citrix와의 통합은 iOS 및 Android용 Intune 앱 SDK, iOS 및 Android용 Intune 앱 Wrapping Tool(-citrix flag 포함)을 사용할 수 있습니다.
  
 Citrix MDX에 대한 자세한 내용은 [MDX Toolkit 정보](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [iOS용 Citrix MDX 앱 래퍼](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) 및 [Android용 Citrix MDX 앱 래퍼](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)를 참조하세요.

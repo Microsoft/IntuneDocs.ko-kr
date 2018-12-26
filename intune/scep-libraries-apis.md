@@ -76,7 +76,7 @@ SCEP 관리 솔루션에는 보고 기능도 포함되어 있습니다. 관리�
 5. SCEP 서버를 빌드하는 프로젝트에 라이브러리 포함
 6. SCEP 서버에서 다음 작업을 완료합니다.
 
-    - (이 문서에서) 관리자가 라이브러리에서 인증에 사용하는 [Azure 응용 프로그램 식별자, Azure 응용 프로그램 키 및 테넌트 ID](#onboard-scep-server-in-azure)를 구성하도록 허용합니다. 관리자는 Azure 응용 프로그램 키를 업데이트할 수 있어야 합니다.
+    - (이 문서에서) 관리자가 라이브러리에서 인증에 사용하는 [Azure 애플리케이션 식별자, Azure 애플리케이션 키 및 테넌트 ID](#onboard-scep-server-in-azure)를 구성하도록 허용합니다. 관리자는 Azure 애플리케이션 키를 업데이트할 수 있어야 합니다.
     - Intune에서 생성된 SCEP 암호를 포함하는 SCEP 요청을 식별합니다.
     - **요청 유효성 검사 API** 라이브러리를 사용하여 Intune에서 생성된 SCEP 암호의 유효성을 검사합니다.
     - 라이브러리 알림 API를 사용하여 Intune에서 생성된 SCEP 암호가 있는 SCEP 요청에 대해 발급된 인증서를 Intune에 알립니다. 또한 이러한 SCEP 요청을 처리할 때 발생할 수 있는 오류에 대해 Intune에 알립니다.
@@ -86,15 +86,15 @@ SCEP 관리 솔루션에는 보고 기능도 포함되어 있습니다. 관리�
 8. 고객에게 다음을 설명하는 서면 지침을 제공합니다.
 
     - Azure Portal에서 SCEP 서버를 등록하는 방법
-    - 라이브러리를 구성하는 데 필요한 Azure 응용 프로그램 식별자 및 Azure 응용 프로그램 키를 가져오는 방법
+    - 라이브러리를 구성하는 데 필요한 Azure 애플리케이션 식별자 및 Azure 애플리케이션 키를 가져오는 방법
 
 ### <a name="onboard-scep-server-in-azure"></a>Azure에서 SCEP 서버 등록
 
-Intune에 인증하려면 SCEP 서버에서 Azure 응용 프로그램 ID, Azure 응용 프로그램 키 및 테넌트 ID를 알아야 합니다. SCEP 서버에 Intune API 액세스 권한도 있어야 합니다.
+Intune에 인증하려면 SCEP 서버에서 Azure 애플리케이션 ID, Azure 애플리케이션 키 및 테넌트 ID를 알아야 합니다. SCEP 서버에 Intune API 액세스 권한도 있어야 합니다.
 
-이 데이터를 가져오려면 SCEP 서버 관리자가 Azure Portal에 로그인하고, 응용 프로그램을 등록하고, 응용 프로그램에 **Microsoft Intune API\SCEP challenge validation** 권한을 부여하고, 응용 프로그램 키를 만든 다음, 응용 프로그램 ID, 해당 키 및 테넌트 ID를 다운로드합니다.
+이 데이터를 가져오려면 SCEP 서버 관리자가 Azure Portal에 로그인하고, 애플리케이션을 등록하고, 애플리케이션에 **Microsoft Intune API\SCEP challenge validation** 권한을 부여하고, 애플리케이션 키를 만든 다음, 애플리케이션 ID, 해당 키 및 테넌트 ID를 다운로드합니다.
 
-응용 프로그램을 등록하고 ID 및 키를 가져오는 방법에 대한 지침은 [포털을 사용하여 리소스에 액세스할 때 사용할 AAD 응용 프로그램 및 서비스 주체 만들기](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)를 참조하세요.
+애플리케이션을 등록하고 ID 및 키를 가져오는 방법에 대한 지침은 [포털을 사용하여 리소스에 액세스할 때 사용할 AAD 애플리케이션 및 서비스 주체 만들기](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)를 참조하세요.
 
 ### <a name="java-library-api"></a>Java 라이브러리 API
 
@@ -123,8 +123,8 @@ IntuneScepServiceClient(
 
 구성에는 다음 속성이 포함되어야 합니다.
 
-    - AAD_APP_ID="등록 프로세스 중에 얻은 Azure 응용 프로그램 ID"
-    - AAD_APP_KEY="등록 프로세스 중에 얻은 Azure 응용 프로그램 키"
+    - AAD_APP_ID="등록 프로세스 중에 얻은 Azure 애플리케이션 ID"
+    - AAD_APP_KEY="등록 프로세스 중에 얻은 Azure 애플리케이션 키"
     - TENANT="등록 프로세스 중에 얻은 테넌트 ID"
     - PROVIDER_NAME_AND_VERSION="제품 및 해당 버전을 식별하는 데 사용되는 정보"
     

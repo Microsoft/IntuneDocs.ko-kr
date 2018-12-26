@@ -29,11 +29,11 @@ ms.locfileid: "52630020"
 
 Intune 정책(Microsoft Edge 또는 Intune Managed Browser)으로 보호되는 브라우저를 사용하여 회사 웹 사이트에 항상 안전하게 액세스할 수 있습니다.  Intune으로 구성된 경우 보호되는 브라우저에서 다음을 활용할 수 있습니다.
 
-- 응용 프로그램 보호 정책
+- 애플리케이션 보호 정책
 - 조건부 액세스.
 - Single Sign-On
-- 응용 프로그램 구성 설정
-- Azure 응용 프로그램 프록시 통합
+- 애플리케이션 구성 설정
+- Azure 애플리케이션 프록시 통합
 
 ## <a name="getting-started"></a>시작하기
 
@@ -49,7 +49,7 @@ Android 및 iOS 이전 버전에서도 계속 Managed Browser를 사용할 수�
 >Managed Browser는 SSLv3(Secure Sockets Layer 버전 3) 암호화 프로토콜을 지원하지 않습니다.
 
 
-## <a name="application-protection-policies-for-protected-browsers"></a>보호되는 브라우저에 대한 응용 프로그램 보호 정책
+## <a name="application-protection-policies-for-protected-browsers"></a>보호되는 브라우저에 대한 애플리케이션 보호 정책
 
 Microsoft Edge와 Managed Browser에는 Intune SDK가 통합되어 있으므로 다음을 비롯한 앱 보호 정책을 적용할 수도 있습니다.
 - 잘라내기, 복사 및 붙여넣기 사용 제어
@@ -65,17 +65,17 @@ Microsoft Edge와 Managed Browser에는 Intune SDK가 통합되어 있으므로 
 - 관리되지 않는 디바이스
 
 >[!NOTE]
->사용자가 앱 스토어에서 Managed Browser를 설치했는데 Intune에서 Managed Browser를 관리하지 않는 경우에는 Managed Browser를 기본 웹 브라우저로 사용할 수 있습니다. 이 경우 Microsoft MyApps 사이트를 통해 Single Sign-On이 지원됩니다. 사용자는 MyApps 사이트로 직접 이동되며, 여기서 프로비저닝된 모든 SaaS 응용 프로그램을 확인할 수 있습니다.
+>사용자가 앱 스토어에서 Managed Browser를 설치했는데 Intune에서 Managed Browser를 관리하지 않는 경우에는 Managed Browser를 기본 웹 브라우저로 사용할 수 있습니다. 이 경우 Microsoft MyApps 사이트를 통해 Single Sign-On이 지원됩니다. 사용자는 MyApps 사이트로 직접 이동되며, 여기서 프로비저닝된 모든 SaaS 애플리케이션을 확인할 수 있습니다.
 Managed Browser 또는 Microsoft Edge는 Intune에서 관리되지 않는 동시에 다른 Intune 관리 애플리케이션의 데이터에 액세스할 수 없습니다. 
 
 
 ## <a name="conditional-access-for-protected-browsers"></a>보호된 브라우저에 대한 조건부 액세스
 
-Managed Browser는 조건부 액세스에 승인된 클라이언트 앱입니다. 즉, 사용자가 Managed Browser만 사용할 수 있는 Azure AD 연결 웹앱에 대한 모바일 브라우저 액세스를 제한할 수 있습니다. 그러면 Chrome 또는 Safari와 같은 다른 보호되지 않는 브라우저에서 액세스를 차단합니다. 이 보호는 Exchange Online 및 SharePoint Online과 같은 Azure 리소스, Office 포털 및 [Azure AD 응용 프로그램 프록시](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 통해 외부 사용자에게 노출한 온-프레미스 사이트에도 적용될 수 있습니다. 
+Managed Browser는 조건부 액세스에 승인된 클라이언트 앱입니다. 즉, 사용자가 Managed Browser만 사용할 수 있는 Azure AD 연결 웹앱에 대한 모바일 브라우저 액세스를 제한할 수 있습니다. 그러면 Chrome 또는 Safari와 같은 다른 보호되지 않는 브라우저에서 액세스를 차단합니다. 이 보호는 Exchange Online 및 SharePoint Online과 같은 Azure 리소스, Office 포털 및 [Azure AD 애플리케이션 프록시](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 통해 외부 사용자에게 노출한 온-프레미스 사이트에도 적용될 수 있습니다. 
 
-Azure AD 연결 웹앱이 모바일 플랫폼에서 Intune Managed Browser를 사용하도록 제한하려면 승인된 클라이언트 응용 프로그램을 필요로 하는 Azure AD 조건부 액세스 정책을 만들 수 있습니다. 
+Azure AD 연결 웹앱이 모바일 플랫폼에서 Intune Managed Browser를 사용하도록 제한하려면 승인된 클라이언트 애플리케이션을 필요로 하는 Azure AD 조건부 액세스 정책을 만들 수 있습니다. 
 
-1. Azure Portal에서 **Azure Active Directory** > **엔터프라이즈 응용 프로그램** > **조건부 액세스** > **새 정책**을 선택합니다. 
+1. Azure Portal에서 **Azure Active Directory** > **엔터프라이즈 애플리케이션** > **조건부 액세스** > **새 정책**을 선택합니다. 
 2. 다음으로 블레이드의 **액세스 제어** 섹션에서 **권한 부여**를 선택합니다. 
 3. **승인된 클라이언트 앱 필요**를 클릭합니다. 
 4. **권한 부여** 블레이드에서 **선택**을 클릭합니다. 이 정책은 Intune Managed Browser 앱에만 액세스할 수 있도록 하려는 클라우드 앱에 할당되어야 합니다.
@@ -89,7 +89,7 @@ Azure AD 연결 웹앱이 모바일 플랫폼에서 Intune Managed Browser를 �
     ![Azure AD - Managed Browser - 클라이언트 앱 선택](./media/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
-    > 이러한 클라우드 응용 프로그램에 액세스할 수 있는 네이티브 앱(비 브라우저 앱)을 제한하려는 경우 **모바일 앱 및 데스크톱 클라이언트**를 선택할 수도 있습니다.
+    > 이러한 클라우드 애플리케이션에 액세스할 수 있는 네이티브 앱(비 브라우저 앱)을 제한하려는 경우 **모바일 앱 및 데스크톱 클라이언트**를 선택할 수도 있습니다.
 
 8. **할당** 섹션에서 **사용자 및 그룹**을 선택한 다음, 이 정책을 할당하려는 사용자 또는 그룹을 선택합니다. 
 
@@ -134,23 +134,23 @@ SSO하려면 디바이스를 iOS 또는 Android의 Intune 회사 포털에 있�
 
 Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대상이 지정된 보호되는 브라우저 앱을 설치한 경우에는 지정한 설정을 통해 앱이 관리됩니다.
 
-1. Intune 모바일 응용 프로그램 관리 대시보드의 **클라이언트 앱** 블레이드에서 **앱 구성 정책**을 선택합니다.
+1. Intune 모바일 애플리케이션 관리 대시보드의 **클라이언트 앱** 블레이드에서 **앱 구성 정책**을 선택합니다.
 2. 앱 구성 목록에서 할당하려는 구성을 선택합니다.
 3. 다음 블레이드에서 **할당**을 선택합니다.
 4. **할당** 블레이드에서 앱 구성을 할당할 Azure AD 그룹을 선택하고 **확인**을 선택합니다.
 
 
-## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>보호되는 브라우저에 대한 응용 프로그램 프록시 설정을 구성하는 방법
+## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>보호되는 브라우저에 대한 애플리케이션 프록시 설정을 구성하는 방법
 
 Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 응용 프로그램 프록시]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 함께 사용하면 iOS 및 Android 디바이스 사용자에 대해 다음과 같은 시나리오를 지원할 수 있습니다.
 
-- 사용자가 Microsoft Outlook 앱을 다운로드하고 로그인합니다. Intune 앱 보호 정책이 자동으로 적용됩니다. 저장된 데이터를 암호화하고 사용자가 디바이스에서 관리되지 않는 앱 또는 위치로 회사 파일을 전송할 수 없도록 차단합니다. 그런 다음 사용자가 Outlook에서 인트라넷 사이트에 대한 링크를 클릭할 때 해당 링크가 다른 브라우저 대신 보호되는 브라우저 응용 프로그램에서 열리도록 지정할 수 있습니다. 보호되는 브라우저는 이 인트라넷 사이트가 응용 프로그램 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 응용 프로그램 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있으며 Outlook의 링크가 예상대로 작동합니다.
-- 원격 사용자가 보호되는 브라우저 응용 프로그램을 열고 내부 URL을 사용하여 인트라넷 사이트로 이동합니다. 보호되는 브라우저는 이 인트라넷 사이트가 응용 프로그램 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 응용 프로그램 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있습니다.
+- 사용자가 Microsoft Outlook 앱을 다운로드하고 로그인합니다. Intune 앱 보호 정책이 자동으로 적용됩니다. 저장된 데이터를 암호화하고 사용자가 디바이스에서 관리되지 않는 앱 또는 위치로 회사 파일을 전송할 수 없도록 차단합니다. 그런 다음 사용자가 Outlook에서 인트라넷 사이트에 대한 링크를 클릭할 때 해당 링크가 다른 브라우저 대신 보호되는 브라우저 애플리케이션에서 열리도록 지정할 수 있습니다. 보호되는 브라우저는 이 인트라넷 사이트가 애플리케이션 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 애플리케이션 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있으며 Outlook의 링크가 예상대로 작동합니다.
+- 원격 사용자가 보호되는 브라우저 애플리케이션을 열고 내부 URL을 사용하여 인트라넷 사이트로 이동합니다. 보호되는 브라우저는 이 인트라넷 사이트가 애플리케이션 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 애플리케이션 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있습니다.
 
 ### <a name="before-you-start"></a>시작하기 전에
 
-- Azure AD 응용 프로그램 프록시를 통해 내부 응용 프로그램을 설정합니다.
-    - 응용 프로그램 프록시를 구성하고 응용 프로그램을 게시하려면 [설정 설명서](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)를 참조하세요. 
+- Azure AD 애플리케이션 프록시를 통해 내부 애플리케이션을 설정합니다.
+    - 애플리케이션 프록시를 구성하고 애플리케이션을 게시하려면 [설정 설명서](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)를 참조하세요. 
 - 최소 버전 1.2.0의 Managed Browser 앱을 사용해야 합니다.
 - Managed Browser 또는 Microsoft Edge 앱의 사용자에게는 [Intune 앱 보호 정책]( app-protection-policy.md)이 앱에 할당되어 있습니다.
 
@@ -267,7 +267,7 @@ Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행�
 iOS 디바이스에 Managed Browser가 설치된 최종 사용자는 Microsoft에서 게시한 모든 앱의 관리 상태를 볼 수 있습니다. 관리되는 iOS 앱의 문제를 해결하기 위해 로그를 보낼 수 있습니다.
 
 1. iOS **설정**을 엽니다.
-2. 관리되는 **브라우저** 응용 프로그램 설정을 엽니다.
+2. 관리되는 **브라우저** 애플리케이션 설정을 엽니다.
 3. **Intune 진단 사용**을 토글하여 브라우저를 문제 해결 모드에 설정합니다.
 4. 관리되는 **브라우저**를 엽니다. **Intune 앱 상태 보기**를 클릭하여 개별 응용 프로그램 정책 설정을 봅니다.
 5. **시작** 및 **로그 공유** 또는 **Microsoft에 로그 보내기**를 눌러서 문제 해결 IT 관리자나 Microsoft에 보냅니다.

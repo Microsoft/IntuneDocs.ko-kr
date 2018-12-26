@@ -71,7 +71,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 
 ### <a name="support-for-pcs"></a>PC 지원
 
-Windows 8.1 이상에 설치된 기본 **메일** 응용 프로그램(Intune에 등록된 경우)
+Windows 8.1 이상에 설치된 기본 **메일** 애플리케이션(Intune에 등록된 경우)
 
 
 ## <a name="configure-exchange-on-premises-access"></a>Exchange 온-프레미스 액세스 구성

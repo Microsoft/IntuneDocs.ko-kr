@@ -52,9 +52,9 @@ _릴리스 날짜: 2018년 5월_
 ## <a name="1801"></a>1801
 _2018년 1월 출시_
 
-### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>Intune 데이터 웨어하우스 응용 프로그램 전용 인증 <!-- 1867540 -->
+### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>Intune 데이터 웨어하우스 애플리케이션 전용 인증 <!-- 1867540 -->
 
-Azure AD(Azure Active Directory)를 사용하여 응용 프로그램을 설정하고 Intune 데이터 웨어하우스에 인증할 수 있습니다. 자세한 내용은 [Intune 데이터 웨어하우스 응용 프로그램 전용 인증](data-warehouse-app-only-auth.md)을 참조하세요.
+Azure AD(Azure Active Directory)를 사용하여 애플리케이션을 설정하고 Intune 데이터 웨어하우스에 인증할 수 있습니다. 자세한 내용은 [Intune 데이터 웨어하우스 애플리케이션 전용 인증](data-warehouse-app-only-auth.md)을 참조하세요.
 
 ### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Azure AD 및 Intune 자격 증명 요구 사항 <!-- 2077525 -->
 
