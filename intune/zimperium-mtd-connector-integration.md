@@ -73,12 +73,12 @@ Zimperium 앱 권한 부여 프로세스는 다음과 같습니다.
 
 4.  **MDM 추가**를 선택한 다음 **MDM 공급자** 목록에서 **Microsoft Intune**을 선택합니다.
 
-5.  Microsoft Intune을MDM 서비스로 설정하면  **Microsoft Intune 구성**  창이 팝업됩니다. 그러면 각 옵션  **Zimperium zConsole** , **zIPS iOS 및 Android 앱**에 대해 **Azure Active Directory 추가**를 선택하여 Zimperium에 Azure AD Single Sign-On을 통해 Intune 및 Azure AD와 통신할 수 있는 권한을 부여합니다.
+5.  Microsoft Intune을MDM 서비스로 설정하면  **Microsoft Intune 구성** 창이 팝업됩니다. 그러면 각 옵션  **Zimperium zConsole**,    **zIPS iOS 및 Android 앱**에 대해 **Azure Active Directory 추가**를 선택하여 Zimperium에 Azure AD Single Sign-On을 통해 Intune 및 Azure AD와 통신할 수 있는 권한을 부여합니다.
 
     > [!IMPORTANT]  
     > Intune과의 통합 프로세스를 완료하려면 Zimperium zConsole, zIPS iOS 및 Android 앱을 추가해야 합니다.
 
-6.  동의 를 선택하여 Intune 및 Azure Active Directory와 통신할 수 있는 권한을 Zimperium 앱에 부여합니다.  ****
+6.  동의를 선택하여 Intune 및 Azure Active Directory와 통신할 수 있는 권한을 Zimperium 앱에 부여합니다.  **** 
 
 7.  Azure AD에 **Zimperium zConsole** 및 **zIPS iOS 및 Android** 앱을 추가한 후 Azure AD 보안 그룹을 추가합니다. 그럼으로써 Zimperium에서 Azure AD 보안 그룹과 해당 서비스를 동기화할 수 있습니다.
 
