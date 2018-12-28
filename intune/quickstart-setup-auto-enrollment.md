@@ -37,7 +37,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 이 예제에서는 회사 및 BYOD(bring-your-own-devices)를 모두 자동으로 등록할 수 있도록 MDM 등록을 사용합니다. Azure Active Directory Premium 무료 구독을 신청할 수 있습니다.
 
-1. Azure에서 **Azure Active Directory** > **이동성(MDM 및 MAM)** 을 선택합니다.
+1. Azure에서 **Azure Active Directory** > **모바일(MDM 및 MAM)** 을 선택합니다.
 2. **Premium 평가판을 받아서 이 기능 사용**을 선택하세요. 이 옵션을 선택하면 Azure Active Directory Premium 평가판을 사용하여 자동 등록할 수 있습니다. 
 
     ![Azure Active Directory Premium 평가판 선택](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
