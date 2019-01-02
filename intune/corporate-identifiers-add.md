@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 38c1d982dc627ccddf2844bf7a6334157e1f0b92
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 83baf13b42cd67e682227d6310b7057bdbd6bf1e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032251"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324862"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>회사 소유의 디바이스 식별
 
@@ -31,11 +31,11 @@ Intune 관리자로서 사용자는 디바이스를 회사 소유로 식별하�
 
 등록 시 Intune은 다음과 같은 디바이스에 회사 소유 상태를 자동으로 할당합니다.
 
-- [장치 등록 관리자](device-enrollment-manager-enroll.md) 계정을 사용하여 등록됨(모든 플랫폼)
+- [디바이스 등록 관리자](device-enrollment-manager-enroll.md) 계정을 사용하여 등록됨(모든 플랫폼)
 - Apple [장비 등록 프로그램](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) 또는 [Apple Configurator](apple-configurator-enroll-ios.md)를 사용하여 등록됨(iOS만 해당)
 - IMEI(International Mobile Equipment Identifier) 번호(IMEI 번호가 있는 모든 플랫폼) 또는 일련 번호(iOS 및 Android)를 사용하여 [등록 전에 회사 소유로 식별됨](#identify-corporate-owned-devices-with-imei-or-serial-number)
 - Windows 10 Enterprise 디바이스로 Azure Active Directory에 조인
-- [장치 속성 목록](#change-device-ownership)에서 회사로 설정
+- [디바이스 속성 목록](#change-device-ownership)에서 회사로 설정
 
 등록 후 **개인**과 **회사** 사이에서 [소유권 설정을 변경](#change-device-ownership)할 수 있습니다.
 
@@ -43,20 +43,20 @@ Intune 관리자로서 사용자는 디바이스를 회사 소유로 식별하�
 
 Intune 관리자는 IMEI 번호 또는 일련 번호가 나열된 쉼표로 구분된 값(.csv) 파일을 만들고 가져올 수 있습니다. Intune에서는 디바이스 등록 중에 이러한 식별자를 사용하여 디바이스 소유권을 회사로 지정합니다. 모든 지원되는 플랫폼에 대해서 IMEI 번호를 선언할 수 있습니다. iOS, macOS 및 Android 디바이스에 대한 일련 번호만 선언할 수 있습니다. 각 IMEI 또는 일련 번호에는 관리 용도로 목록에 지정된 세부 정보를 포함할 수 있습니다.
 
-<!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
+<!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
-[Apple 장치 일련 번호를 확인하는 방법을 알아봅니다](https://support.apple.com/HT204308).<br>
-[Android 장치 일련 번호를 확인하는 방법을 알아봅니다](https://support.google.com/store/answer/3333000).
+[Apple 디바이스 일련 번호를 확인하는 방법을 알아봅니다](https://support.apple.com/HT204308).<br>
+[Android 디바이스 일련 번호를 확인하는 방법을 알아봅니다](https://support.google.com/store/answer/3333000).
 
 ## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>.csv 파일을 사용하여 회사 식별자 추가
 목록을 만들려면 헤더 없이 2열로 구성된 쉼표로 구분된 값(.csv) 목록을 만듭니다. 왼쪽 열에 IMEI 또는 일련 번호를 추가하고, 오른쪽 열에 세부 정보를 추가합니다. ID, IMEI 또는 일련 번호 중 한 가지 유형만 단일 .csv 파일로 가져올 수 있습니다. 세부 정보는 128자로 제한되며 관리 용도로만 사용됩니다. 세부 정보는 디바이스에 표시되지 않습니다. 현재는 .csv 파일당 5,000개 행으로 제한됩니다.
 
-**일련 번호가 포함된 .csv 파일 업로드** – 머리글 없이 두 열로 이루어진 쉼표로 구분된 값(.csv) 목록을 만들고 목록을 .csv 파일당 장치 5,000대 또는 용량 5MB로 제한합니다.
+**일련 번호가 포함된 .csv 파일 업로드** – 머리글 없이 두 열로 이루어진 쉼표로 구분된 값(.csv) 목록을 만들고 목록을 .csv 파일당 디바이스 5,000대 또는 용량 5MB로 제한합니다.
 
 |||
 |-|-|
-|&lt;ID #1&gt;|&lt;장치 #1 세부 정보&gt;|
-|&lt;ID #2&gt;|&lt;장치 #2 세부 정보&gt;|
+|&lt;ID #1&gt;|&lt;디바이스 #1 세부 정보&gt;|
+|&lt;ID #2&gt;|&lt;디바이스 #2 세부 정보&gt;|
 
 이.csv 파일을 텍스트 편집기에서 보면 다음과 같이 표시됩니다.
 
@@ -73,7 +73,7 @@ Intune 관리자는 IMEI 번호 또는 일련 번호가 나열된 쉼표로 구�
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>회사 식별자의 .csv 목록 업로드
 
-1. [Azure Portal의 Intune](https://portal.azure.com)에서 **장치 등록** > **회사 장치 식별자** > **추가** > **CSV 파일 업로드**를 차례로 선택합니다.
+1. [Azure Portal의 Intune](https://portal.azure.com)에서 **디바이스 등록** > **회사 디바이스 식별자** > **추가** > **CSV 파일 업로드**를 차례로 선택합니다.
 
    ![추가 단추가 강조 표시된 회사 디바이스 식별자 작업 영역](./media/add-corp-id.png)
 
@@ -85,7 +85,7 @@ Intune 관리자는 IMEI 번호 또는 일련 번호가 나열된 쉼표로 구�
 
 ## <a name="manually-enter-corporate-identifiers"></a>회사 식별자를 수동으로 입력
 
-1. [Azure Portal의 Intune](https://portal.azure.com)에서 **장치 등록** > **회사 장치 식별자** > **추가** > **수동으로 입력**을 차례로 선택합니다.
+1. [Azure Portal의 Intune](https://portal.azure.com)에서 **디바이스 등록** > **회사 디바이스 식별자** > **추가** > **수동으로 입력**을 차례로 선택합니다.
 
 2. **식별자 추가** 블레이드에서 **IMEI** 또는 **일련 번호** 중 식별자 형식을 지정합니다.
 
@@ -93,13 +93,13 @@ Intune 관리자는 IMEI 번호 또는 일련 번호가 나열된 쉼표로 구�
 
 5. 이미 Intune에 있지만 다른 세부 정보가 있는 회사 식별자를 입력한 경우 **중복 식별자 검토** 팝업이 표시됩니다. Intune에 덮어쓰려는 식별자를 선택하고 **확인** 선택하여 식별자를 추가합니다. 각 식별자의 경우 첫 번째 중복만 비교됩니다.
 
-**새로 고침**을 클릭하면 새로운 장치 식별자를 확인할 수 있습니다.
+**새로 고침**을 클릭하면 새로운 디바이스 식별자를 확인할 수 있습니다.
 
 가져온 디바이스가 항상 등록됨 상태로 표시되지는 않습니다. 디바이스는 **등록됨** 또는 **연결되지 않음** 중 하나의 상태일 수 있습니다. **연결되지 않음**은 디바이스가 Intune 서비스와 통신된 적이 없음을 의미합니다.
 
 ## <a name="delete-corporate-identifiers"></a>회사 식별자 삭제
 
-1. [Azure Portal의 Intune](https://portal.azure.com)에서 **장치 등록** > **회사 장치 식별자**를 선택합니다.
+1. [Azure Portal의 Intune](https://portal.azure.com)에서 **디바이스 등록** > **회사 디바이스 식별자**를 선택합니다.
 2. 삭제할 디바이스 식별자를 선택하고 **삭제**를 선택합니다.
 3. 삭제를 확인 합니다.
 
@@ -112,9 +112,9 @@ International Mobile Equipment Identifiers에 대한 자세한 사양은 [3GGPP 
 
 디바이스 속성은 Intune의 각 디바이스 레코드에 대한 **소유권**을 표시합니다. 관리자는 디바이스를 **개인** 또는 **회사**로 지정할 수 있습니다.
 
-**장치 소유권을 변경하려면 다음과 같이 합니다.**
-1. [Azure Portal의 Intune](https://portal.azure.com)에서 **장치**로 이동하고 장치를 선택합니다.
+**디바이스 소유권을 변경하려면 다음과 같이 합니다.**
+1. [Azure Portal의 Intune](https://portal.azure.com)에서 **디바이스**로 이동하고 디바이스를 선택합니다.
 2. **속성**을 선택합니다.
-3. **장치 소유권**을 **개인** 또는 **회사**로 지정합니다.
+3. **디바이스 소유권**을 **개인** 또는 **회사**로 지정합니다.
 
    ![디바이스 범주 및 디바이스 소유권 옵션을 보여 주는 디바이스 속성](./media/device-properties.png)

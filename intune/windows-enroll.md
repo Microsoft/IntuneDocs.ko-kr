@@ -16,18 +16,18 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112547"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626043"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 등록 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서는 IT 관리자가 사용자를 위해 Windows 등록을 간소화하는 데 도움이 됩니다. [Intune을 설정](setup-steps.md)한 후에는 사용자가 회사 또는 학교 계정으로 [로그인](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)하여 Windows 장치를 등록합니다.  
+이 문서는 IT 관리자가 사용자를 위해 Windows 등록을 간소화하는 데 도움이 됩니다. [Intune을 설정](setup-steps.md)한 후에는 사용자가 회사 또는 학교 계정으로 [로그인](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)하여 Windows 디바이스를 등록합니다.  
 
 Intune 관리자는 다음과 같은 방식으로 등록을 간소화할 수 있습니다.
 - [자동 등록 사용](#enable-windows-10-automatic-enrollment)(Azure AD Premium 필요)
@@ -69,7 +69,7 @@ CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 �
 
 - name@contoso.com
 - name@us.contoso.com
-- name@eu.constoso.com\
+- name@eu.contoso.com
 
 Contoso DNS 관리자는 다음 CNAME을 만들어야 합니다.
 
@@ -84,7 +84,7 @@ Contoso DNS 관리자는 다음 CNAME을 만들어야 합니다.
 DNS 레코드 변경 내용이 전파되는 데는 최대 72시간이 걸릴 수 있습니다. DNS 레코드가 전파될 때까지 Intune에서 DNS 변경 내용을 확인할 수 없습니다.
 
 **2단계: CNAME 확인**(선택 사항)<br>
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Windows 등록** > **CNAME 유효성 검사**를 선택합니다.
+1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **CNAME 유효성 검사**를 선택합니다.
 2. **도메인** 상자에서 회사 웹 사이트를 입력한 다음, **테스트**를 선택합니다.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>사용자에게 Windows 디바이스를 등록하는 방법 안내
@@ -102,4 +102,4 @@ DNS 레코드 변경 내용이 전파되는 데는 최대 72시간이 걸릴 수
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Azure에서 Intune을 사용하여 Windows 장치를 관리할 때 고려 사항](intune-legacy-pc-client.md)
+- [Azure에서 Intune을 사용하여 Windows 디바이스를 관리할 때 고려 사항](intune-legacy-pc-client.md)

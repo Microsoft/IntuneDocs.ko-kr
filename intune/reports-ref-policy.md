@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9fb05991b3e289d4a24cc2f3a5b2c398c12b1a15
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 9e95f1c3e1480cfb07a8f2dd270a23699632a2f9
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032438"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429749"
 ---
 # <a name="reference-for-policy-entities"></a>정책 엔터티에 대한 참조
 
-**정책** 범주는 다음과 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
+**정책** 범주는 다음과 같은 정보를 추적하는 모바일 디바이스에 대한 엔터티를 포함합니다.
 
   -  디바이스 구성 프로필, 앱 구성 프로필 및 규정 준수 정책의 인벤토리  
   -  하루에 성공, 보류, 실패, 또는 오류 상태에 있는 디바이스의 수  
@@ -33,7 +33,7 @@ ms.locfileid: "53032438"
 
 ## <a name="policy"></a>정책
 
-**정책** 엔터티는 장치 구성 프로필, 앱 구성 프로필 및 규정 준수 정책을 나열합니다. 정책을 MDM(Mobile Device Management)을 통해 기업 내 그룹에 할당할 수 있습니다.
+**정책** 엔터티는 디바이스 구성 프로필, 앱 구성 프로필 및 규정 준수 정책을 나열합니다. 정책을 MDM(Mobile Device Management)을 통해 기업 내 그룹에 할당할 수 있습니다.
 
 | 속성  | 설명 | 예 |
 |---------|------------|--------|
@@ -48,7 +48,7 @@ ms.locfileid: "53032438"
 
 ## <a name="policytype"></a>PolicyType
 
-**PolicyType** 엔터티는 장치 구성 프로필, 앱 구성 프로필 및 규정 준수 정책 유형을 나열합니다. 정책을 MDM(Mobile Device Management)을 통해 기업 내 그룹에 할당할 수 있습니다.
+**PolicyType** 엔터티는 디바이스 구성 프로필, 앱 구성 프로필 및 규정 준수 정책 유형을 나열합니다. 정책을 MDM(Mobile Device Management)을 통해 기업 내 그룹에 할당할 수 있습니다.
 
 | 속성  | 설명 | 예제 |
 |---------|------------|--------|
@@ -58,7 +58,7 @@ ms.locfileid: "53032438"
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
-**DeviceConfigurationProfileDeviceActivity** 엔터티는 하루에 성공, 보류, 실패 또는 오류 상태에 있는 장치의 수를 나열합니다. 숫자는 엔터티에 할당된 디바이스 구성 프로필을 반영합니다. 예를 들어 디바이스가 모든 할당된 정책에 대해 성공 상태에 있으면 그 날에 대해 성공 카운터를 1만큼 높입니다. 디바이스에 두 프로필이 할당된 경우(성공 상태에 하나, 오류 상태에 하나) 엔터티는 성공 카운터를 하나 늘리고 디바이스를 오류 상태에 놓습니다. 엔터티는 지난 30일 동안 특정 날짜에 해당 상태에 있는 디바이스가 몇 개인지 표시합니다.
+**DeviceConfigurationProfileDeviceActivity** 엔터티는 하루에 성공, 보류, 실패 또는 오류 상태에 있는 디바이스의 수를 나열합니다. 숫자는 엔터티에 할당된 디바이스 구성 프로필을 반영합니다. 예를 들어 디바이스가 모든 할당된 정책에 대해 성공 상태에 있으면 그 날에 대해 성공 카운터를 1만큼 높입니다. 디바이스에 두 프로필이 할당된 경우(성공 상태에 하나, 오류 상태에 하나) 엔터티는 성공 카운터를 하나 늘리고 디바이스를 오류 상태에 놓습니다. 엔터티는 지난 30일 동안 특정 날짜에 해당 상태에 있는 디바이스가 몇 개인지 표시합니다.
 
 | 속성  | 설명 | 예제 |
 |---------|------------|--------|
@@ -82,7 +82,7 @@ ms.locfileid: "53032438"
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
-**PolicyTypeActivity** 엔터티는 성공, 보류, 실패 또는 오류 상태에 있는 장치의 누적 수를 표시합니다. 하루의 디바이스 구성 프로필, 앱 구성 프로필, 규정 준수 정책에 대한 상태를 표시합니다.
+**PolicyTypeActivity** 엔터티는 성공, 보류, 실패 또는 오류 상태에 있는 디바이스의 누적 수를 표시합니다. 하루의 디바이스 구성 프로필, 앱 구성 프로필, 규정 준수 정책에 대한 상태를 표시합니다.
 
 | 속성  | 설명 | 예제 |
 |---------|------------|--------|

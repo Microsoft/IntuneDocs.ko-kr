@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 44dc3f82b8d51007d3eaf1d71f1a416ebfe319b4
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112938"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738072"
 ---
 # <a name="reference-for-devices-entities"></a>디바이스 엔터티에 대한 참조
 
-**장치** 범주는 다음과 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
+**디바이스** 범주는 다음과 같은 정보를 추적하는 모바일 디바이스에 대한 엔터티를 포함합니다.
 
   -  디바이스 유형
   -  디바이스 등록 및 등록 상태
@@ -38,7 +38,7 @@ ms.locfileid: "53112938"
 
 ## <a name="devicetypes"></a>DeviceTypes
 
-**DeviceTypes** 엔터티는 다른 데이터 웨어하우스 엔터티에서 참조하는 장치 유형을 나타냅니다. 디바이스 유형은 일반적으로 디바이스 모델, 제조업체 또는 두 가지의 조합을 설명합니다.
+**DeviceTypes** 엔터티는 다른 데이터 웨어하우스 엔터티에서 참조하는 디바이스 유형을 나타냅니다. 디바이스 유형은 일반적으로 디바이스 모델, 제조업체 또는 두 가지의 조합을 설명합니다.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -97,7 +97,7 @@ ms.locfileid: "53112938"
 
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
-**EnrollmentTypes** 엔터티는 장치를 등록하는 방식을 나타냅니다. 등록 형식은 등록 메서드를 캡처합니다. 예시는 서로 다른 등록 형식 및 그 의미를 표시합니다.
+**EnrollmentTypes** 엔터티는 디바이스를 등록하는 방식을 나타냅니다. 등록 형식은 등록 메서드를 캡처합니다. 예시는 서로 다른 등록 형식 및 그 의미를 표시합니다.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -121,7 +121,7 @@ ms.locfileid: "53112938"
 
 ## <a name="ownertypes"></a>OwnerTypes
 
-**EnrollmentTypes** 엔터티는 장치가 회사 장치인지 개인 소유인지 알 수 없는지 나타냅니다.
+**EnrollmentTypes** 엔터티는 디바이스가 회사 디바이스인지 개인 소유인지 알 수 없는지 나타냅니다.
 
 | 속성  | 설명 | 예제 |
 |---------|------------|--------|
@@ -131,7 +131,7 @@ ms.locfileid: "53112938"
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 
-**MdmStatuses** 엔터티는 장치의 준수 상태를 나타냅니다.
+**MdmStatuses** 엔터티는 디바이스의 준수 상태를 나타냅니다.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -153,7 +153,7 @@ ms.locfileid: "53112938"
 
 ## <a name="managementstates"></a>ManagementStates
 
-**ManagementStates** 엔터티는 장치의 상태에 대한 세부 정보를 제공합니다. 세부 정보는 원격 작업을 적용할 때, 디바이스를 탈옥 또는 루팅한 경우 유용합니다.
+**ManagementStates** 엔터티는 디바이스의 상태에 대한 세부 정보를 제공합니다. 세부 정보는 원격 작업을 적용할 때, 디바이스를 탈옥 또는 루팅한 경우 유용합니다.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -180,7 +180,7 @@ ms.locfileid: "53112938"
 
 ## <a name="workplacejoinstatetypes"></a>WorkPlaceJoinStateTypes
 
-**WorkPlaceJoinStateTypes** 엔터티는 장치의 Azure Active Directory Workplace Join 상태를 나타냅니다.  등록 워크플로는 하나 이상의 인증서를 사용하여 인증할 수 있습니다. 디바이스 WorkPlace가 등록되면 이 인증서가 디바이스와 사용자를 인증하는 데 사용됩니다. 인증서 발급은 SCEP(단순 인증서 등록 지점) 서버를 통해 제공됩니다. 엔터티 내의 값은 이 프로세스를 거치는 동안 디바이스의 다양한 상태를 나타냅니다. 여기에는 필수 인증서(SCEP 서버에서) 발행 실패로 인한 WorkPlace 참여 실패가 포함됩니다. 디바이스가 이 워크플로를 통과하지 않으면 값이 알 수 없음으로 설정됩니다.
+**WorkPlaceJoinStateTypes** 엔터티는 디바이스의 Azure Active Directory Workplace Join 상태를 나타냅니다.  등록 워크플로는 하나 이상의 인증서를 사용하여 인증할 수 있습니다. 디바이스 WorkPlace가 등록되면 이 인증서가 디바이스와 사용자를 인증하는 데 사용됩니다. 인증서 발급은 SCEP(단순 인증서 등록 지점) 서버를 통해 제공됩니다. 엔터티 내의 값은 이 프로세스를 거치는 동안 디바이스의 다양한 상태를 나타냅니다. 여기에는 필수 인증서(SCEP 서버에서) 발행 실패로 인한 WorkPlace 참여 실패가 포함됩니다. 디바이스가 이 워크플로를 통과하지 않으면 값이 알 수 없음으로 설정됩니다.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -204,7 +204,7 @@ ms.locfileid: "53112938"
 
 ## <a name="managementagenttypes"></a>ManagementAgentTypes
 
-**ManagementAgentTypes** 엔터티는 장치 관리에 사용되는 에이전트를 나타냅니다.
+**ManagementAgentTypes** 엔터티는 디바이스 관리에 사용되는 에이전트를 나타냅니다.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -226,7 +226,7 @@ ms.locfileid: "53112938"
 
 ## <a name="devices"></a>디바이스
 
-**장치** 엔터티는 관리 대상인 모든 등록된 장치와 그에 해당하는 속성을 나열합니다.
+**디바이스** 엔터티는 관리 대상인 모든 등록된 디바이스와 그에 해당하는 속성을 나열합니다.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -272,7 +272,7 @@ ms.locfileid: "53112938"
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
-**DevicePropertyHistory** 엔터티는 지난 90일 동안 하루에 각 장치 레코드의 장치 테이블 및 일일 스냅숏과 동일한 속성을 지닙니다. DateKey 열은 각 행에 대한 날짜를 나타냅니다.
+**DevicePropertyHistory** 엔터티는 지난 90일 동안 하루에 각 디바이스 레코드의 디바이스 테이블 및 일일 스냅숏과 동일한 속성을 지닙니다. DateKey 열은 각 행에 대한 날짜를 나타냅니다.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -316,7 +316,7 @@ ms.locfileid: "53112938"
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-**MdmDeviceInventoryHistories** 엔터티 지난 90일 동안 MDM 관리 장치에 대한 인벤토리 데이터의 일일 스냅숏을 포함합니다. DateKey 열은 행에 대한 날짜를 나타냅니다. 일부 속성은 모든 디바이스에 대해 적용되지 않거나 입력되지 않을 수 있으므로 이 페이지에서 자세한 내용을 참조하세요. 자세한 내용은 [Microsoft Intune에서 인벤토리를 사용하는 디바이스 이해](device-inventory.md)를 참조하세요.
+**MdmDeviceInventoryHistories** 엔터티 지난 90일 동안 MDM 관리 디바이스에 대한 인벤토리 데이터의 일일 스냅숏을 포함합니다. DateKey 열은 행에 대한 날짜를 나타냅니다. 일부 속성은 모든 디바이스에 대해 적용되지 않거나 입력되지 않을 수 있으므로 이 페이지에서 자세한 내용을 참조하세요. 자세한 내용은 [Microsoft Intune에서 인벤토리를 사용하는 디바이스 이해](device-inventory.md)를 참조하세요.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -414,7 +414,7 @@ ms.locfileid: "53112938"
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 
-**ApplicationInventory** 엔터티는 인벤터리 수집 시점에 장치에서 발견된 앱을 나열합니다.
+**ApplicationInventory** 엔터티는 인벤터리 수집 시점에 디바이스에서 발견된 앱을 나열합니다.
 
 
 |      속성      |                       설명                        |

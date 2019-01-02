@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 470bafba548c38870e57a545c4514459dde219b4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 76f155d84a3f447cf067970c614d2bd7fd4f1798
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189394"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305899"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune 데이터 웨어하우스 계정 데이터 이동 
 
@@ -81,4 +81,4 @@ Azure Portal 보기의 일부 추세 차트가 다시 설정됩니다. **그래�
 ## <a name="next-steps"></a>다음 단계
 
  - [매주 Intune에 추가되는 새로운 기능](whats-new.md)에 대해 알아봅니다. 예정된 변경, 서비스 관련 중요 공지 및 이전 릴리스 관련 정보에 대해서도 알아볼 수 있습니다.
- - [Microsoft Intune 블로그](http://go.microsoft.com/fwlink/?LinkID=273882)를 읽어 보세요.
+ - [Microsoft Intune 블로그](https://go.microsoft.com/fwlink/?LinkID=273882)를 읽어 보세요.

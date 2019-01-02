@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180142"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305933"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Intune을 사용하여 Android 회사 프로필 디바이스에 앱 할당
 
@@ -56,7 +56,7 @@ Intune과 Android 회사 프로필이 Azure Portal의 **디바이스 등록** �
 
     ![새로운 앱 권한 요청을 처리하는 옵션](media/approve-app-settings.png)
 
-    앱이 승인되어 IT 관리 콘솔에 표시됩니다. 다음으로, [Intune과 Android 회사 프로필 앱을 동기화](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune)할 수 있습니다. 
+    앱이 승인되어 IT 관리 콘솔에 표시됩니다. 다음으로, [Intune과 Android 회사 프로필 앱을 동기화](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)할 수 있습니다. 
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Intune과 관리되는 Google Play 앱 동기화
 
@@ -84,7 +84,7 @@ Android 엔터프라이즈를 사용하려면 관리되는 Google Play 웹 콘�
 
 관리되는 Google Play 콘솔을 주기적으로 방문하여 새 권한을 확인합니다. 승인된 앱에 대해 새 권한이 필요할 때 자신이나 다른 사용자에게 메일을 전송하도록 Google Play를 구성할 수 있습니다. 앱을 할당할 때 디바이스에 설치되지 않은 것을 발견한 경우 다음 단계에 따라 새 권한을 확인합니다.
 
-1. [Google Play](http://play.google.com/work)로 이동합니다.
+1. [Google Play](https://play.google.com/work)로 이동합니다.
 2. 앱을 게시하고 승인하는 데 사용한 Google 계정으로 로그인합니다.
 3. **업데이트** 탭을 선택하고 업데이트가 필요한 앱이 있는지 확인합니다.  
     나열된 모든 앱은 새 권한이 필요하므로 새 권한이 적용될 때까지 할당되지 않습니다.
@@ -96,7 +96,7 @@ Android 엔터프라이즈를 사용하려면 관리되는 Google Play 웹 콘�
 1. Intune과 Android 엔터프라이즈 간 연결을 구성하는 데 사용한 것과 동일한 계정으로 [Google Play 개발자 콘솔](https://play.google.com/apps/publish)에 로그인합니다.  
     처음 로그인하는 경우 Google Developer 프로그램 구성원이 되기 위해 등록하고 요금을 지불해야 합니다.
 2. 콘솔에서 **새 애플리케이션 추가**를 선택합니다.
-3. Google Play 스토어에 앱을 게시한 것과 동일한 방법으로 앱에 대한 정보를 업로드하고 제공합니다. 단, **이 응용 프로그램을 내 조직만 사용(<*조직 이름*>)** 을 선택해야 합니다.
+3. Google Play 스토어에 앱을 게시한 것과 동일한 방법으로 앱에 대한 정보를 업로드하고 제공합니다. 단, **이 애플리케이션을 내 조직만 사용(&lt;*조직 이름*&gt;)** 을 선택해야 합니다.
 
     ![내 조직에서만 앱을 사용할 수 있도록 설정](media/restrict.png)
 

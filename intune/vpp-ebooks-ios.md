@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a4d40915cce17846ca2aaab29bb597c6580e8920
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 30155227f68f5b98eb1808cfc255b368f134ce91
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180666"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305916"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 전자책을 관리하는 방법
 
@@ -35,7 +35,7 @@ Microsoft Intune을 사용하면 이 프로그램을 통해 구매한 책을 동
 책 관리 절차는 [VPP 앱 관리](vpp-apps-ios.md)와 비슷합니다.
 
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>iOS 디바이스용 대량 구매 책 관리
-[Apple 비즈니스용 대량 구매 프로그램](http://www.apple.com/business/vpp/) 또는 [Apple 교육용 대량 구매 프로그램](http://volume.itunes.apple.com/us/store)을 통해 iOS 책용 라이선스를 여러 개 구매합니다. 이 프로세스에서는 Apple 웹 사이트에서 Apple VPP 계정을 설정하고 Apple VPP 토큰을 Intune에 업로드합니다.  그런 다음 대량 구매 정보를 Intune과 동기화하고 대량 구매 전자책 사용을 추적할 수 있습니다.
+[Apple 비즈니스용 대량 구매 프로그램](https://www.apple.com/business/vpp/) 또는 [Apple 교육용 대량 구매 프로그램](https://volume.itunes.apple.com/us/store)을 통해 iOS 책용 라이선스를 여러 개 구매합니다. 이 프로세스에서는 Apple 웹 사이트에서 Apple VPP 계정을 설정하고 Apple VPP 토큰을 Intune에 업로드합니다.  그런 다음 대량 구매 정보를 Intune과 동기화하고 대량 구매 전자책 사용을 추적할 수 있습니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 시작하기 전에 Apple에서 VPP 토큰 하나를 가져와 Intune 계정에 업로드하세요. 추가 필수 구성 요소:

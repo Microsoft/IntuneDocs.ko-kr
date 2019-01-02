@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 845c0639e885833bc020aed4d55dc31d6a0f03f0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3e2b1b0d17d4d13ed377e940f24f217a4bdf3bfd
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190135"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738089"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>모바일 앱 관리(MAM) 엔터티에 대한 참조
 
@@ -51,7 +51,7 @@ ms.locfileid: "52190135"
 
 ## <a name="mamapplicationinstance"></a>MamApplicationInstance
 
-**MamApplicationInstance** 엔터티는 장치별 사용자당 단일 인스턴스로서 관리되는 모바일 앱 관리(MAM) 앱을 나열합니다. 엔터티 내 모든 사용자 및 디바이스에 MAM 정책이 하나 이상 할당되어 있으므로 모두 보호됩니다.
+**MamApplicationInstance** 엔터티는 디바이스별 사용자당 단일 인스턴스로서 관리되는 모바일 앱 관리(MAM) 앱을 나열합니다. 엔터티 내 모든 사용자 및 디바이스에 MAM 정책이 하나 이상 할당되어 있으므로 모두 보호됩니다.
 
 
 |          속성          |                                                                                                  설명                                                                                                  |               예제                |
@@ -92,7 +92,7 @@ ms.locfileid: "52190135"
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
 
-**MamDeviceHealth** 엔터티는 탈옥 장치라고 해도 모바일 앱 관리(MAM) 정책이 배포된 장치를 나타냅니다.
+**MamDeviceHealth** 엔터티는 탈옥 디바이스라고 해도 모바일 앱 관리(MAM) 정책이 배포된 디바이스를 나타냅니다.
 
 | 속성 | 설명 | 예제 |
 |---------|------------|--------|

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 175491e53ba9b1fbd41ac8bec8841c600b6916fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b2ec10ec1174e5e689802d2c4f17a21de8312a15
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184559"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305967"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 앱을 관리하는 방법
 
@@ -56,7 +56,7 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>iOS 디바이스용 Apple Volume Purchase Program 대량 구매 앱 지원
 
-[비즈니스용 Apple Volume Purchase Program](http://www.apple.com/business/vpp/) 또는 [교육용 Apple Volume Purchase Program](http://volume.itunes.apple.com/us/store)을 통해 iOS 앱의 라이선스를 여러 개 구매합니다. 이 프로세스에서는 Apple 웹 사이트에서 Apple VPP 계정을 설정하고 Apple VPP 토큰을 Intune에 업로드합니다.  그런 다음 대량 구매 정보를 Intune과 동기화하고 대량 구매 앱 사용을 추적할 수 있습니다.
+[비즈니스용 Apple Volume Purchase Program](https://www.apple.com/business/vpp/) 또는 [교육용 Apple Volume Purchase Program](https://volume.itunes.apple.com/us/store)을 통해 iOS 앱의 라이선스를 여러 개 구매합니다. 이 프로세스에서는 Apple 웹 사이트에서 Apple VPP 계정을 설정하고 Apple VPP 토큰을 Intune에 업로드합니다.  그런 다음 대량 구매 정보를 Intune과 동기화하고 대량 구매 앱 사용을 추적할 수 있습니다.
 
 ### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>iOS 디바이스의 기업 간 대량 구매 앱 지원
 
@@ -107,10 +107,10 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 1.  **Intune** 창의 **관리** 아래에서 **클라이언트 앱** > **앱**을 차례로 선택합니다.
 2.  앱 목록 창에서 할당할 앱을 선택한 다음, **할당**을 선택합니다.
-3.  ***앱 이름*** - **할당**에서 **그룹 선택**을 선택한 다음, **그룹 추가** 창에서 **할당 형식**을 선택하고, 앱을 할당하려는 Azure AD 사용자 또는 장치 그룹을 선택합니다.
+3.  ***앱 이름*** - **할당**에서 **그룹 선택**을 선택한 다음, **그룹 추가** 창에서 **할당 형식**을 선택하고, 앱을 할당하려는 Azure AD 사용자 또는 디바이스 그룹을 선택합니다.
 5.  선택한 각 그룹에 대해 다음 설정을 선택합니다.
-    - **형식** - 앱이 **사용 가능**(최종 사용자가 회사 포털에서 앱 설치 가능)인지 또는 **필수**(최종 사용자 장치에서 자동으로 앱 설치)인지를 선택합니다.
-    - **라이선스 형식** - **사용자 라이선싱** 또는 **장치 라이선싱**을 선택합니다.
+    - **형식** - 앱이 **사용 가능**(최종 사용자가 회사 포털에서 앱 설치 가능)인지 또는 **필수**(최종 사용자 디바이스에서 자동으로 앱 설치)인지를 선택합니다.
+    - **라이선스 형식** - **사용자 라이선싱** 또는 **디바이스 라이선싱**을 선택합니다.
 6.  작업이 끝나면 **저장**을 선택합니다.
 
 
