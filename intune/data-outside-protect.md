@@ -48,5 +48,5 @@ ms.locfileid: "52190016"
 
 다음 단계의 일부로, 다음을 비롯하여 회사 데이터의 보안을 향상할 수 있는 다른 방법에 대해 자세히 알아볼 수 있습니다. 
 
-* [iOS 및 Android 디바이스에서 Azure Information Protection]를 사용하는 방법에 대해 알아봅니다(https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* [iOS 및 Android 장치에서 Azure Information Protection]https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq을 사용하는 방법에 대해 알아봅니다.
 * Windows Phone 및 Mac 컴퓨터의 경우 [Microsoft Rights Management 공유 애플리케이션](https://technet.microsoft.com/dn451248)에 대해 알아봅니다.
