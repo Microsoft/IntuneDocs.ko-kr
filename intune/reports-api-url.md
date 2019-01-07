@@ -1,7 +1,7 @@
 ---
 title: Intune 데이터 웨어하우스 API 엔드포인트
 titlesuffix: Microsoft Intune
-description: 참조 항목에서는 Intune 데이터 웨어하우스 API URL 구조를 설명합니다.
+description: 이 참조 항목에서는 Microsoft Intune 데이터 웨어하우스 API URL 구조를 설명합니다. 필터 예제가 제공됩니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180598"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642747"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 데이터 웨어하우스 API 엔드포인트
 

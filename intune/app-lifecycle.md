@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
-ms.openlocfilehash: 048b8472be00c544611fe2ea8763b16019cebc0b
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.openlocfilehash: e122f2c0c62fbde04a328b1423416be82dcfa1f9
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887052"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734224"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune에 대한 앱 수명 주기 개요
 
@@ -28,7 +28,7 @@ ms.locfileid: "52887052"
 
 Microsoft Intune 앱 수명 주기는 앱이 추가될 때 시작되어 앱을 제거할 때까지 추가 단계를 진행해 나갑니다. 이러한 단계를 이해해야 Intune에서 앱 관리를 시작하는 데 필요한 세부 정보를 얻게 됩니다.
 
-![앱 수명 주기](./media/app-lifecycle.png "Intune 앱 수명 주기")
+![앱 수명 주기 - 추가, 배포, 구성, 보호 및 사용 중지 ](./media/app-lifecycle.png "Intune 앱 수명 주기")
 
 ## <a name="add"></a>추가
 
@@ -42,7 +42,7 @@ Microsoft Intune 앱 수명 주기는 앱이 추가될 때 시작되어 앱을 �
 
 앱 수명 주기의 일부로 새 버전의 앱이 정기적으로 출시됩니다. Intune은 배포한 [앱을 쉽게 최신 버전으로 업데이트](apps-add.md)하는 도구를 제공합니다. 또한 일부 앱에 대한 추가 기능을 구성할 수 있으며, 예를 들면 다음과 같습니다.
 - [iOS 앱 구성 정책](app-configuration-policies-use-ios.md)은 앱이 실행될 때 사용되는 호환되는 iOS 앱에 대한 설정을 제공합니다. 예를 들어 앱이 특정 브랜드 설정 또는 연결해야 하는 서버의 이름을 요구할 수 있습니다.
-- [관리되는 브라우저 정책](app-configuration-managed-browser.md)은 기본 장치 브라우저를 바꾸는 Intune Managed Browser에 대한 설정을 구성하고 사용자가 방문할 수 있는 웹 사이트를 제한하는 데 도움이 됩니다.
+- [관리되는 브라우저 정책](app-configuration-managed-browser.md)은 기본 디바이스 브라우저를 바꾸는 Intune Managed Browser에 대한 설정을 구성하고 사용자가 방문할 수 있는 웹 사이트를 제한하는 데 도움이 됩니다.
 
 ## <a name="protect"></a>보호
 

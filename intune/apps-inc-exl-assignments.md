@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b4a45ac5a73d199ec883e3dda95a97a8f3c09d9a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181519"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737936"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune에서 앱 할당 포함 및 제외
 
@@ -50,7 +50,7 @@ Intune은 그룹을 제외할 때 사용자와 장치 간의 연결을 고려하
 5. 할당하려는 앱을 선택합니다. 대시보드에는 앱에 대한 정보가 표시됩니다. 
 6. 메뉴의 **관리** 섹션에서 **할당**을 선택합니다. 
 
-    ![Intune 앱 할당](./media/apps-inc-exl-01.png)
+    ![앱을 할당할 때 앱 할당 포함](./media/apps-inc-exl-01.png)
 7. **그룹 추가**를 선택하여 앱이 할당된 사용자 그룹을 추가합니다. 
 8. **그룹 추가** 창의 사용 가능한 할당 유형에서 **할당 유형**을 선택합니다.
 9. 할당 유형으로 **등록 유무에 상관없이 사용 가능**을 선택합니다.

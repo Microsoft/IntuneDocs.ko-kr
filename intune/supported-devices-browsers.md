@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0cea1b958849d6c2422461e85eba57577a65e884
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 2d47a8f61c85b390ae53311154f27d2d85860840
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112598"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626050"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune의 지원되는 운영 체제 및 브라우저
 
@@ -30,6 +30,8 @@ ms.locfileid: "53112598"
 Microsoft Intune을 설정하기 전에 지원되는 운영 체제 및 브라우저를 검토합니다.
 
 디바이스에 Intune을 설치하는 방법에 대한 도움말은 [관리 디바이스를 사용하여 작업 완료](/intune-user-help/company-portal-frequently-asked-questions) 및 [Intune 네트워크 대역폭 사용](network-bandwidth-use.md)을 참조하세요.
+
+구성 서비스 공급자 지원에 대한 자세한 내용은 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)를 참조하세요.
 
 ## <a name="intune-supported-operating-systems"></a>Intune에서 지원하는 운영 체제
 
@@ -46,7 +48,7 @@ MDM 등록을 방해하는 Knox 활성화 오류를 방지하기 위해 회사 �
 
 다음 Samsung 디바이스 모델 목록은 Knox를 지원하지 않습니다. Android용 회사 포털 앱에서 네이티브 Android 디바이스로 등록됩니다.
 
-| **장치 이름** | **장치 모델 번호** |
+| **디바이스 이름** | **디바이스 모델 번호** |
 | --- | --- |
 | Galaxy Avant | SM-G386T |
 | Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |

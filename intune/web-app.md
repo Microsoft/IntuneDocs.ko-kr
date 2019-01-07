@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune에 웹앱 추가
 titleSuffix: ''
-description: Microsoft Intune에 웹앱을 추가하는 방법을 알아봅니다.
+description: Microsoft Intune에 웹앱(클라이언트-서버 애플리케이션)을 추가하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/10/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ace65aab5ded1449b1e1fd092936e9e2a019f6c1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4f0c5d79c17c3cc2ada275337d266c134eed7e91
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187636"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642543"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune에 웹앱 추가
 
@@ -46,16 +46,16 @@ Intune에 앱을 웹용 앱의 바로 가기로 추가하려면 다음 작업을
 6. **앱 추가** 창의 **앱 유형** 드롭다운 목록에서 **웹 링크** 유형을 선택합니다.
 7. **구성**을 선택합니다.
 8. **앱 정보** 창에서 다음 정보를 추가합니다.
-    - **이름**: 회사 포털에 표시하려는 앱 이름을 입력합니다. 
+    - **이름**:  회사 포털에 표시하려는 앱 이름을 입력합니다. 
     
         > [!NOTE]
         > 앱을 배포하고 설치한 뒤에 Intune Azure Portal에서 앱의 이름을 변경하면 더 이상 명령을 사용하여 앱을 대상으로 지정할 수 없습니다.
     
     - **설명**: 앱에 대한 설명을 입력합니다. 이 설명은 회사 포털에서 사용자에게 표시됩니다.
-    - **게시자**: 이 앱의 게시자 이름을 입력합니다.
+    - **게시자**: 이 앱 게시자의 이름을 입력합니다.
     - **앱 URL**: 할당할 앱을 호스트하는 웹 사이트의 URL을 입력합니다.
-    - **범주**: 필요한 경우 기본 제공 앱 범주 중 하나 이상 또는 사용자가 만든 범주를 선택합니다. 이렇게 하면 사용자가 회사 포털을 찾아볼 때 앱을 더 쉽게 찾을 수 있습니다.
-    - **회사 포털에서 이 항목을 추천 앱으로 표시**: 이 옵션을 선택하면 사용자가 앱을 찾을 때 회사 포털의 기본 페이지에 앱 제품군이 눈에 띄게 표시됩니다.
+    - **범주**: 필요한 경우, 기본 제공 앱 범주 중 하나 이상 또는 사용자가 만든 범주를 선택합니다. 이렇게 하면 사용자가 회사 포털을 찾아볼 때 앱을 더 쉽게 찾을 수 있습니다.
+    - **회사 포털에서 이 항목을 추천 앱으로 표시**: 사용자가 앱을 찾아볼 때 회사 포털의 기본 페이지에 앱 제품군을 눈에 띄게 표시하려면 이 옵션을 선택합니다.
     - **이 링크를 열려면 Managed Browser가 필요**: Intune Managed Browser에서 열 수 있는 웹 사이트 또는 웹앱 링크를 사용자에게 할당하려면 이 옵션을 선택합니다. 이 브라우저는 디바이스에 설치되어 있어야 합니다.
     - **로고**: 앱과 연결할 아이콘을 업로드합니다. 사용자가 회사 포털을 찾아볼 때 이 아이콘이 앱과 함께 표시됩니다.
 9. **확인**을 선택합니다.

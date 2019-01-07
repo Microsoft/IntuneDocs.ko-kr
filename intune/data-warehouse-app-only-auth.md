@@ -1,12 +1,12 @@
 ---
 title: Intune 데이터 웨어하우스 애플리케이션 전용 인증
 titleSuffix: Microsoft Intune
-description: 이 항목에서는 Intune 데이터 웨어하우스 애플리케이션 전용 인증에 대해 설명합니다.
+description: 이 항목에서는 Microsoft Intune 데이터 웨어하우스 애플리케이션 전용 인증에 대해 설명합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 096a6ee5d2f80600d800293ae9b5d4be6a07b027
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185205"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642798"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune 데이터 웨어하우스 애플리케이션 전용 인증
 
@@ -44,17 +44,17 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 2.  Azure Portal의 위쪽에 있는 **리소스, 서비스, 문서 검색** 필드를 사용하여 **Azure Active Directory**를 검색합니다.
 3.  드롭다운 메뉴에서 **서비스** 아래의 **Azure Active Directory**를 선택합니다.
 4.  **앱 등록**을 선택합니다.
-5.  **새 응용 프로그램 등록**을 클릭하여 **만들기** 블레이드를 표시합니다.
+5.  **새 애플리케이션 등록**을 클릭하여 **만들기** 블레이드를 표시합니다.
 6.  **만들기** 블레이드에서 다음과 같은 앱 정보를 추가합니다.
 
     - 앱 이름(예: *Intune App-Only Auth*).
-    - **응용 프로그램 유형**. 웹 애플리케이션, Web API 또는 둘 다를 나타내는 앱을 추가하려면 **웹앱/API**를 선택합니다.
+    - **애플리케이션 유형**. 웹 애플리케이션, Web API 또는 둘 다를 나타내는 앱을 추가하려면 **웹앱/API**를 선택합니다.
     - 애플리케이션의 **로그온 URL**. 인증 프로세스 중에 사용자가 자동으로 이동되는 위치입니다. 사용자는 여기서 신원을 증명해야 합니다. 자세한 내용은 [Azure Active Directory를 사용하는 애플리케이션 액세스 및 Single Sign-On이란 무엇인가요?](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)를 참조하세요.
 
 7.  **만들기** 블레이드의 맨 아래에서 **만들기**를 클릭합니다.
 
     >[!NOTE] 
-    > **등록된 앱** 블레이드에서 나중에 사용할 **응용 프로그램 ID**를 복사합니다.
+    > **등록된 앱** 블레이드에서 나중에 사용할 **애플리케이션 ID**를 복사합니다.
 
 ## <a name="create-a-key"></a>키 만들기
 
@@ -64,7 +64,7 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 2.  블레이드 위쪽에 있는 **설정**을 선택하여 **설정 블레이드**를 표시합니다.
 3.  **설정** 블레이드에서 **키**를 선택합니다.
 4.  키 **설명**, **만료** 기간, 키 **값**을 추가합니다.
-5.  **저장**을 클릭하여 응용 프로그램의 키를 저장하고 업데이트합니다.
+5.  **저장**을 클릭하여 애플리케이션의 키를 저장하고 업데이트합니다.
 6.  생성된 키 값(base64로 인코드됨)을 복사해야 합니다.
 
     >[!NOTE] 
@@ -78,10 +78,10 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 2.  **추가**를 클릭합니다.
 3.  **API 추가**를 선택하여 **API 선택** 블레이드를 표시합니다.
 4.  **Microsoft Intune API(MicrosoftIntuneAPI)** 를 선택하고 **API 선택** 블레이드에서 **선택**을 클릭합니다. **사용 권한 선택** 단계가 선택되고 **액세스 사용** 블레이드가 표시됩니다.
-5.  **응용 프로그램 사용 권한** 섹션에서 **Microsoft Intune에서 데이터 웨어하우스 정보 가져오기** 옵션을 선택합니다.
+5.  **애플리케이션 사용 권한** 섹션에서 **Microsoft Intune에서 데이터 웨어하우스 정보 가져오기** 옵션을 선택합니다.
 6.  **액세스 사용** 블레이드에서 **선택**을 클릭합니다.
 7.  **API 액세스 추가** 블레이드에서 **완료**를 클릭합니다.
-8.  **필요한 사용 권한** 블레이드에서 **사용 권한 부여**를 클릭하고 이 응용 프로그램의 기존 사용 권한을 모두 업데이트하라는 메시지가 표시되면 **예**를 클릭합니다.
+8.  **필요한 사용 권한** 블레이드에서 **사용 권한 부여**를 클릭하고 이 애플리케이션의 기존 사용 권한을 모두 업데이트하라는 메시지가 표시되면 **예**를 클릭합니다.
 
 ## <a name="generate-token"></a>토큰 생성
 

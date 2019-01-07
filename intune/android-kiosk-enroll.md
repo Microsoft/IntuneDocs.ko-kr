@@ -16,24 +16,24 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031996"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626087"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Android 엔터프라이즈 키오스크 디바이스의 Intune 등록 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android는 회사 소유의 일회용 솔루션 집합을 통해 키오스크 스타일의 디바이스를 지원합니다. 이러한 디바이스는 몇 가지 예로서 디지털 간판, 티켓 인쇄, 재고 관리와 같은 단일 용도로 사용됩니다. 관리자는 제한된 앱 및 웹 링크 집합에 대한 디바이스 사용을 잠급니다. 또한 사용자가 다른 앱을 추가하거나 디바이스에서 다른 작업을 수행하는 것을 방지합니다.
+Android는 해당 [전용 디바이스](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use) 솔루션 세트가 있는 키오스크 스타일 디바이스를 지원합니다. 이러한 디바이스는 몇 가지 예로서 디지털 간판, 티켓 인쇄, 재고 관리와 같은 단일 용도로 사용됩니다. 관리자는 제한된 앱 및 웹 링크 집합에 대한 디바이스 사용을 잠급니다. 또한 사용자가 다른 앱을 추가하거나 디바이스에서 다른 작업을 수행하는 것을 방지합니다.
 
 Intune을 통해 Android 키오스크 디바이스에 앱 및 설정을 배포할 수 있습니다. Android 엔터프라이즈에 대한 특정 세부 정보는 [Android 엔터프라이즈 요구 사항](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)을 참조하세요.
 
 이러한 방식으로 관리하는 디바이스는 사용자 계정 없이 Intune에 등록되며 어떠한 최종 사용자와도 연결되지 않습니다. 개인용 애플리케이션이나 Outlook 또는 Gmail과 같은 사용자별 계정 데이터에 대한 강력한 요구 사항이 있는 앱을 대상으로 만들어진 것은 아닙니다.
 
-## <a name="device-requirements"></a>디바이스 요구 사항
+## <a name="device-requirements"></a>장치 요구 사항
 
 Android 엔터프라이즈 키오스크 디바이스로 관리하려면 디바이스가 다음 요구 사항을 충족해야 합니다.
 
@@ -47,14 +47,14 @@ Android 키오스크 관리를 설정하려면 다음 단계를 따릅니다.
 1. 모바일 디바이스 관리를 준비하려면 지침에 따라 [MDM(모바일 디바이스 관리) 기관을 **Microsoft Intune**](mdm-authority-set.md)으로 설정해야 합니다. 이 항목은 모바일 디바이스 관리에 대해 Intune을 처음 설정할 때 한 번만 설정하면 됩니다.
 2. [Intune 테넌트 계정을 Android 엔터프라이즈 계정에 연결합니다](connect-intune-android-enterprise.md).
 3. [등록 프로필을 만듭니다.](#create-an-enrollment-profile)
-4. [장치 그룹을 만듭니다](#create-a-device-group).
-5. [키오스크 장치를 등록합니다](#enroll-the-kiosk-devices).
+4. [디바이스 그룹을 만듭니다](#create-a-device-group).
+5. [키오스크 디바이스를 등록합니다](#enroll-the-kiosk-devices).
 
 ### <a name="create-an-enrollment-profile"></a>등록 프로필 만들기
 
 키오스크 디바이스를 등록할 수 있도록 등록 프로필을 만들어야 합니다. 프로필이 만들어지면 등록 토큰(임의 문자열) 및 QR 코드를 제공합니다. Android OS 및 디바이스 버전에 따라 토큰 또는 QR 코드를 사용하여 [키오스크 디바이스를 등록](#enroll-the-kiosk-devices)할 수 있습니다.
 
-1. [Intune 포털](https://portal.azure.com)로 이동하여 **장치 등록** > **Android 등록** > **키오스크 및 작업 장치 등록**을 선택합니다.
+1. [Intune 포털](https://portal.azure.com)로 이동하여 **디바이스 등록** > **Android 등록** > **키오스크 및 작업 디바이스 등록**을 선택합니다.
 2. **만들기**를 선택하고 필수 필드를 작성합니다.
     - **이름**: 프로필을 동적 디바이스 그룹에 할당할 때 사용할 이름을 입력합니다.
     - **토큰 만료 날짜**: 토큰이 만료되는 날짜입니다. Google은 최대 90일을 적용합니다.
@@ -72,7 +72,7 @@ Android 키오스크 관리를 설정하려면 다음 단계를 따릅니다.
 3. **동적 쿼리 추가**를 선택합니다.
 4. **동적 멤버 관리 규칙** 블레이드에서 다음과 같은 필드를 입력합니다.
     - **동적 멤버 관리 규칙 추가**: 단순 규칙
-    - **다음 위치에 장치 추가**: enrollmentProfileName
+    - **다음 위치에 디바이스 추가**: enrollmentProfileName
     - 가운데 상자에서 **일치**를 선택합니다.
     - 마지막 필드에 이전에 만든 등록 프로필 이름을 입력합니다.
     동적 멤버 관리 규칙에 대한 자세한 내용은 [AAD에서 그룹에 대한 동적 멤버 관리 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)을 참조하세요. 
@@ -89,7 +89,7 @@ Android 키오스크 관리를 설정하려면 다음 단계를 따릅니다.
 
 토큰/QR 코드를 교체하거나 취소해도 이미 등록된 디바이스에는 영향을 주지 않습니다.
 
-1. [Intune 포털](https://portal.azure.com)로 이동하여 **장치 등록** > **Android 등록** > **키오스크 및 작업 장치 등록**을 선택합니다.
+1. [Intune 포털](https://portal.azure.com)로 이동하여 **디바이스 등록** > **Android 등록** > **키오스크 및 작업 디바이스 등록**을 선택합니다.
 2. 사용하려는 프로필을 선택합니다.
 3. **토큰**을 선택합니다.
 4. 토큰을 바꾸려면 **토큰 바꾸기**를 선택합니다.
@@ -119,9 +119,9 @@ Android 6 이상 디바이스의 경우 토큰을 사용하여 디바이스를 �
 3. **Wifi**에 연결한 후, **다음**을 선택합니다.
 4. Google 사용 약관에 동의한 후, **다음**을 선택합니다.
 5. Google 로그인 화면에서 Gmail 계정 대신 **afw#setup**을 입력한 후, **다음**을 선택합니다.
-6. **Android 장치 정책** 앱에 대해 **설치**를 선택합니다.
+6. **Android 디바이스 정책** 앱에 대해 **설치**를 선택합니다.
 7. 이 정책의 설치를 계속합니다.  일부 디바이스에는 추가 사용 약관 동의가 필요할 수 있습니다. 
-8. **이 장치 등록** 화면에서 장치가 QR 코드를 스캔하거나 토큰을 수동으로 입력할 수 있도록 허용합니다.
+8. **이 디바이스 등록** 화면에서 디바이스가 QR 코드를 스캔하거나 토큰을 수동으로 입력할 수 있도록 허용합니다.
 9. 화면의 프롬프트에 따라 등록을 완료합니다. 
 
 ### <a name="enroll-by-using-a-qr-code"></a>QR 코드를 사용하여 등록

@@ -1,12 +1,12 @@
 ---
 title: Windows 10 회사 포털 앱 수동으로 추가
 titleSuffix: Microsoft Intune
-description: Windows 10 회사 포털 앱을 수동으로 추가하는 방법을 알아봅니다.
+description: 직원이 Microsoft Store에서 PC로 Windows 10 회사 포털 앱을 수동으로 추가하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190271"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642594"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 수동으로 추가
 
@@ -44,14 +44,14 @@ ms.locfileid: "52190271"
 2. **라이선스 유형**을 **오프라인**으로 설정합니다.
 3. **앱 가져오기**를 선택하여 오프라인 회사 포털 앱을 가져와 인벤토리에 추가합니다.
 4. **회사 포털** 앱 페이지에서 **관리**를 선택합니다.
-5. **플랫폼**으로 **Windows 10 모든 장치**를 선택한 다음, 적절한 **최소 버전**, **아키텍처** 및 **앱 메타데이터 다운로드** 값을 선택합니다. 
+5. **플랫폼**으로 **Windows 10 모든 디바이스**를 선택한 다음, 적절한 **최소 버전**, **아키텍처** 및 **앱 메타데이터 다운로드** 값을 선택합니다. 
 6. **다운로드**를 선택하여 로컬 컴퓨터에 파일을 저장합니다.
 
     ![다운로드를 선택한 "Windows 10 모든 디바이스" 및 아키텍처 X86 패키지 세부 정보](./media/Win10CP-all-devices.png)
 
 7. **다운로드**를 선택하여 "필요한 프레임워크" 아래의 모든 패키지를 다운로드합니다.  
     이 작업은 x86, x64, ARM 아키텍처에 대해 수행해야 하므로 총 12개의 패키지가 됩니다.
-8. 회사 포털 앱을 Intune에 업로드하기 전에 패키지를 포함하는 폴더(예: C:\Company Portal)를 다음과 같은 방법으로 만듭니다.
+8. 회사 포털 앱을 Intune에 업로드하기 전에 다음과 같은 방식으로 구성된 패키지를 사용하여 폴더(예: C:\Company Portal)를 만듭니다.
    - C:\Company Portal에 회사 포털 패키지를 배치합니다. 이 위치에 *Dependencies* 하위 폴더도 만듭니다.  
 
      ![APPXBUN 파일과 함께 저장된 Dependencies 폴더](./media/Win10CP-Dependencies-save.png)

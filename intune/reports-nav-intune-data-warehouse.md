@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b08746965c23c8d247a53bcd0b0844a24581b4e6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 730195b200448d529d2a56ac8e8a45548264de2d
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179097"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429647"
 ---
-#  <a name="intune-data-warehouse-api"></a>Intune 데이터 웨어하우스 API
+#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune 데이터 웨어하우스 API
 
 Intune 데이터 웨어하우스 API를 사용하면 즐겨찾는 도구에서 사용할 수 있도록 컴퓨터에서 읽을 수 있는 형식으로 Intune 데이터에 액세스할 수 있습니다. API를 사용하여 회사의 모바일 환경에 대한 정보를 제공하는 보고서를 작성할 수 있습니다. API는 다음을 위한 표준 패턴을 따르는 OData 프로토콜을 사용합니다.
 
@@ -66,6 +66,6 @@ OData는 모든 클라이언트가 데이터 소스에서 노출된 정보에 �
 
 [Azure AD의 인증 시나리오](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)를 참조하여 Azure AD를 사용하는 방법에 대해 자세히 알아봅니다.
 
-[odata.org](http://www.odata.org)에서 OData 리소스를 찾습니다.
+[odata.org](https://www.odata.org)에서 OData 리소스를 찾습니다.
   
-[OData 버전 4.0]에서 OData 버전 4.0 표준을 검토합니다(http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
+[OData 버전 4.0]에서 OData 버전 4.0 표준을 검토합니다(https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  

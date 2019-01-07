@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182995"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429715"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 보고서 만들기
 
@@ -45,7 +45,7 @@ _엔터티_ 및 _테이블_이라는 용어를 사용하면 혼란스러울 수 
 
 ## <a name="install-power-bi-desktop"></a>Power BI Desktop 설치
 
-Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로드 위치: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
+Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop은 [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)에서 다운로드할 수 있습니다.
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>테넌트에 대한 Intune 데이터 웨어하우스의 OData 피드에 연결합니다.
 
@@ -106,7 +106,7 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로
 앱을 사용하여 추가 질문에 답변할 수 있도록 트리맵에 필터를 추가할 수 있습니다.
 
 
-1. 필터를 추가하려면 보고서 캔버스를 선택한 다음, **시각화** 아래의 **슬라이서 아이콘**(![데이터가 있는 트리맵](media/reports-create-slicer.png))을 선택합니다.
+1. 필터를 추가하려면 보고서 캔버스를 선택하고 **시각화** 아래의 **슬라이서 아이콘**(![데이터 모델 및 지원되는 관계가 있는 트리 맵](media/reports-create-slicer.png))을 선택합니다.
 2. **ownerTypes** 테이블을 찾고 **시각화** 패널의 **필터** 섹션 아래에서 **ownerTypeName** 데이터 필드를 끕니다.  
 
    devices 테이블 아래에는 디바이스가 회사 소유인지 또는 개인 소유인지 여부를 나타내는 코드가 포함된 **OwnerTypeKey**라고 하는 데이터 필드가 있습니다. 이 필터에 친숙한 이름을 표시하려면 **ownerTypes** 테이블을 찾고 **ownerTypeName**을 끕니다. 이 예는 데이터 모델에서 테이블 간의 관계를 지원하는 방법을 보여줍니다.
@@ -115,8 +115,8 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로
 
 이제 회사 소유 디바이스와 개인 소유 디바이스 간에 이동하여 사용할 수 있는 대화형 필터가 준비되었습니다. 이 필터를 사용하여 분포가 변경되는 상태를 확인합니다.
 
-1. **회사**를 선택하여 회사 소유 장치의 분포를 확인합니다.
-2. **개인**을 선택하여 개인 소유 장치를 확인합니다.
+1. **회사**를 선택하여 회사 소유 디바이스의 분포를 확인합니다.
+2. **개인**을 선택하여 개인 소유 디바이스를 확인합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

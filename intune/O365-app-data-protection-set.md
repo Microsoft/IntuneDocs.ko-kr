@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune에서 Office 365 앱의 데이터 관리
 titlesuffix: ''
-description: Microsoft Intune에서 Office 365 앱의 데이터 관리에 대해 자세히 알아봅니다.
+description: Microsoft Intune에서 Office 365 앱의 데이터 관리 및 보호에 대해 자세히 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,16 +17,16 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a3eed03deb3f619f75502e8a9d1d66fefc38a081
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180074"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642476"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Microsoft Intune에서 사용자가 관리되는 Office 365 앱에 대한 기본 보호 환경을 사용하는 방법
 
-**Office 365 관리 앱** 마법사는 각 장치 플랫폼에 대한 앱 보호 정책을 만듭니다.
+**Office 365 관리 앱** 마법사는 각 디바이스 플랫폼에 대한 앱 보호 정책을 만듭니다.
 
 이 마법사는 다음 정책을 설정합니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "52180074"
 
 |     |       | |
 |----|--------|-|
-|**Name**|Office 365 앱 관리| |
+|**이름**|Office 365 앱 관리| |
 | **설명**|Office 365 앱 관리 마법사에서 생성| |
 | |  | |
 | **설정 이름** |**iOS 정책 값** | **Android 정책 값** |

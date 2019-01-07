@@ -5,7 +5,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c96d66a11f49db68d20511aeae9b2abbab53b172
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4e37675186ef21d219627ec3ec1973e6e9944d1d
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181245"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737970"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune으로 Windows 디바이스에 기간 업무 앱을 배포할 수 있도록 앱에 서명
 
@@ -34,10 +34,10 @@ Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Win
 
 
 1. **Microsoft 개발자로 등록**<br>
-   회사 계정을 구매하기 위해 로그인할 때 사용한 회사 계정 정보를 이용하여 [Microsoft 개발자로 등록](http://go.microsoft.com/fwlink/?LinkId=268442)합니다. 이 요청의 경우 코드 서명 인증서를 받기 전에 회사 관리자의 승인을 받아야 합니다.
+   회사 계정을 구매하기 위해 로그인할 때 사용한 회사 계정 정보를 이용하여 [Microsoft 개발자로 등록](https://go.microsoft.com/fwlink/?LinkId=268442)합니다. 이 요청의 경우 코드 서명 인증서를 받기 전에 회사 관리자의 승인을 받아야 합니다.
 
 2. **회사 Symantec 인증서 가져오기**<br>
-  Symantec ID를 사용하여 [Symantec 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=268441) 에서 인증서를 구입합니다. 인증서를 구매하고 나면 Microsoft 개발자로 등록할 때 지정한 회사 승인자에게 인증서 요청을 승인하라는 전자 메일이 수신됩니다. Symantec 인증서 요구 사항에 대한 자세한 내용은 [Windows Phone에 Symantec 인증서가 필요한 이유는 무엇인가요?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec)를 참조하세요. Windows 디바이스 등록 FAQ.
+  Symantec ID를 사용하여 [Symantec 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=268441) 에서 인증서를 구입합니다. 인증서를 구매하고 나면 Microsoft 개발자로 등록할 때 지정한 회사 승인자에게 인증서 요청을 승인하라는 전자 메일이 수신됩니다. Symantec 인증서 요구 사항에 대한 자세한 내용은 [Windows Phone에 Symantec 인증서가 필요한 이유는 무엇인가요?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec)를 참조하세요. Windows 디바이스 등록 FAQ.
 
 3.  **인증서 가져오기**<br>
     요청이 승인되면 인증서 가져오기에 대한 지침이 포함된 전자 메일을 받습니다. 전자 메일의 지침에 따라 인증서를 가져옵니다.
@@ -45,14 +45,14 @@ Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Win
 4.  **가져온 인증서 확인**<br>
     인증서를 제대로 가져왔는지 확인하려면 **인증서** 스냅인으로 이동하여 **인증서**를 마우스 오른쪽 단추로 클릭하고 **인증서 찾기**를 선택합니다. **포함** 필드에 “Symantec”을 입력하고 **지금 찾기**를 클릭합니다. 가져온 인증서가 결과에 표시됩니다.
 
-    ![Symantec 인증서 찾기](./media/wit.gif)
+    ![인증서 결과가 인증서 찾기 대화 상자에 나열됩니다.](./media/wit.gif)
 
 5. **서명 인증서 내보내기**<br>
     인증서가 있는 것을 확인했으면 .pfx 파일을 내보내 회사 포털에 서명할 수 있습니다. **용도** 가 "코드 서명"인 Symantec 인증서를 선택합니다. 코드 서명 인증서를 마우스 오른쪽 단추로 클릭하고 **내보내기**를 선택합니다.
 
     ![서명 인증서 내보내기](./media/wit-walk-cert2.gif)
 
-    **인증서 내보내기 마법사**페이지에서 **예, 개인 키를 내보냅니다.** 를 클릭하고 **다음**을 클릭합니다. **개인 정보 교환 –PKCS #12(.PFX)** 를 선택하고 **가능하면 인증 경로에 있는 인증서 모두 포함**을 선택합니다. 마법사를 완료합니다. 자세한 내용은 [개인 키와 함께 인증서 내보내기](http://go.microsoft.com/fwlink/?LinkID=203031)를 참조하세요.
+    **인증서 내보내기 마법사**페이지에서 **예, 개인 키를 내보냅니다.** 를 클릭하고 **다음**을 클릭합니다. **개인 정보 교환 –PKCS #12(.PFX)** 를 선택하고 **가능하면 인증 경로에 있는 인증서 모두 포함**을 선택합니다. 마법사를 완료합니다. 자세한 내용은 [개인 키와 함께 인증서 내보내기](https://go.microsoft.com/fwlink/?LinkID=203031)를 참조하세요.
 
 6.  **앱을 Intune에 업로드**<br>
     서명한 앱 파일 및 코드 서명 인증서를 업로드하여 최종 사용자가 앱을 사용할 수 있도록 합니다.
@@ -72,32 +72,32 @@ Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 앱을 Win
 
 1.  **회사 포털 다운로드**
 
-    Intune을 사용하여 회사 포털 앱을 배포하려면 다운로드 센터에서 [Windows Phone 8.1용 Microsoft Intune 회사 포털 앱](http://go.microsoft.com/fwlink/?LinkId=615799)을 다운로드하고 자동으로 압축 해제되는 파일(.exe)을 실행합니다. 이 파일에는 두 개의 파일이 들어 있습니다.
+    Intune을 사용하여 회사 포털 앱을 배포하려면 다운로드 센터에서 [Windows Phone 8.1용 Microsoft Intune 회사 포털 앱](https://go.microsoft.com/fwlink/?LinkId=615799)을 다운로드하고 자동으로 압축 해제되는 파일(.exe)을 실행합니다. 이 파일에는 두 개의 파일이 들어 있습니다.
 
     -   CompanyPortal.appx – Windows Phone 8.1용 회사 포털 설치 앱
 
     -   WinPhoneCompanyPortal.ps1 – 회사 포털 앱 파일을 Windows Phone 8.1 디바이스에 배포할 수 있도록 서명하는 데 사용할 수 있는 PowerShell 스크립트
 
-    또는 [비즈니스용 Microsoft 스토어](http://businessstore.microsoft.com/)에서 Windows Phone 8.1 회사 포털(오프라인 사용이 허가된 패키지) 또는 Windows 10 회사 포털(오프라인 사용이 허가된 패키지)을 다운로드할 수 있습니다. 회사 포털 앱과 함께 오프라인 라이선스 및 오프라인에서 사용하기 위해 다운로드한 적절한 패키지를 얻어야 합니다. 선택 영역의 Windows 8 및 Windows Phone 8 플랫폼 목록은 상응하는 8.1 플랫폼을 나타냅니다. Intune을 사용하여 이 작업을 수행하는 방법에 대한 자세한 내용은 [비즈니스용 Microsoft 스토어에서 구입한 앱 관리](windows-store-for-business.md)를 참조하세요.
+    또는 [비즈니스용 Microsoft 스토어](https://businessstore.microsoft.com/)에서 Windows Phone 8.1 회사 포털(오프라인 사용이 허가된 패키지) 또는 Windows 10 회사 포털(오프라인 사용이 허가된 패키지)을 다운로드할 수 있습니다. 회사 포털 앱과 함께 오프라인 라이선스 및 오프라인에서 사용하기 위해 다운로드한 적절한 패키지를 얻어야 합니다. 선택 영역의 Windows 8 및 Windows Phone 8 플랫폼 목록은 상응하는 8.1 플랫폼을 나타냅니다. Intune을 사용하여 이 작업을 수행하는 방법에 대한 자세한 내용은 [비즈니스용 Microsoft 스토어에서 구입한 앱 관리](windows-store-for-business.md)를 참조하세요.
 
-2.  **Windows Phone SDK 다운로드** Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570)을 다운로드하고 이 SDK를 컴퓨터에 설치합니다. 이 SDK는 애플리케이션 등록 토큰을 생성하는 데 필요합니다.
+2.  **Windows Phone SDK 다운로드** Windows Phone SDK 8.0](https://go.microsoft.com/fwlink/?LinkId=615570)을 다운로드하고 이 SDK를 컴퓨터에 설치합니다. 이 SDK는 애플리케이션 등록 토큰을 생성하는 데 필요합니다.
 
-3.  **AETX 파일 생성** Windows Phone SDK 8.0의 일부인 AETGenerator.exe를 사용하여 Symantec PFX 에서 응용 프로그램 등록 토큰(.aetx) 파일을 생성합니다. AETX 파일을 생성하는 방법에 대한 지침은 [Windows Phone용 애플리케이션 등록 토큰을 생성하는 방법](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)을 참조하세요.
+3.  **AETX 파일 생성** Windows Phone SDK 8.0의 일부인 AETGenerator.exe를 사용하여 Symantec PFX 에서 애플리케이션 등록 토큰(.aetx) 파일을 생성합니다. AETX 파일을 생성하는 방법에 대한 지침은 [Windows Phone용 애플리케이션 등록 토큰을 생성하는 방법](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)을 참조하세요.
 
-4.  **Windows 8.1용 Windows SDK 다운로드** [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525)(http://go.microsoft.com/fwlink/?LinkId=613525)를 다운로드하여 설치합니다. 참고로 회사 포털 앱에 포함된 PowerShell 스크립트는 기본 설치 위치 `${env:ProgramFiles(x86)}\Windows Kits\8.1`을 사용합니다. 다른 위치에 설치하는 경우 cmdlet 매개 변수에 해당 위치를 포함해야 합니다.
+4.  **Windows 8.1용 Windows SDK 다운로드** [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=613525)(https://go.microsoft.com/fwlink/?LinkId=613525)를 다운로드하여 설치합니다. 참고로 회사 포털 앱에 포함된 PowerShell 스크립트는 기본 설치 위치 `${env:ProgramFiles(x86)}\Windows Kits\8.1`을 사용합니다. 다른 위치에 설치하는 경우 cmdlet 매개 변수에 해당 위치를 포함해야 합니다.
 
 5.  **PowerShell을 사용하여 앱에 코드 서명** 관리자로 로그인하고 Windows SDK, Symantec Enterprise 모바일 코드 서명 인증서가 설치된 호스트 컴퓨터에서 **Windows PowerShell**을 열어 Sign-WinPhoneCompanyPortal.ps1 파일을 찾아 스크립트를 실행합니다.
 
     **예 1**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -AetxPath 'C:\signing\cert.aetx'
     ```
     이 예에서는 C:\temp\에 있는 CompanyPortal.appx에 서명하고 CompanyPortalEnterpriseSigned.appx를 생성합니다. 이 파일은 PFX 암호 1234를 사용하고 PFX 파일에서 게시자 ID를 읽습니다. 또한 cert.aetx 파일에서 엔터프라이즈 ID도 읽습니다.
 
     **예 2**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -PublisherId 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1' -EnterpriseId 1000000001
     ```
     이 예에서는 C:\temp\에 있는 CompanyPortal.appx에 서명하고 CompanyPortalEnterpriseSigned.appx를 생성합니다. 이 파일은 PFX 암호 1234를 사용하고 지정된 게시자 ID를 사용합니다.
@@ -128,7 +128,7 @@ Windows 및 Windows Phone 모바일 앱을 배포하는 데 사용되는 Symante
 
 1.  인증서가 만료되기 약 14일 전에 Symantec에서 보낸 갱신 전자 메일을 찾습니다. 이 전자 메일에 Symantec의 엔터프라이즈 인증서 갱신 관련 지침이 포함되어 있습니다.
 
-    Symantec 인증서에 대한 자세한 내용을 확인하려면 [www.symantec.com](http://www.symantec.com) 을 방문하거나 1-877-438-8776 또는 1-650-426-3400로 전화 문의하세요.
+    Symantec 인증서에 대한 자세한 내용을 확인하려면 [www.symantec.com](https://www.symantec.com) 을 방문하거나 1-877-438-8776 또는 1-650-426-3400로 전화 문의하세요.
 
 2.  웹사이트(예: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do))로 이동하여 인증서와 연결된 Symantec 게시자 ID 및 이메일 주소를 사용하여 로그인합니다. 이때 인증서를 다운로드하는 데 사용하려는 것과 같은 컴퓨터를 사용하여 갱신을 시작해야 합니다.
 
@@ -138,7 +138,7 @@ Windows 및 Windows Phone 모바일 앱을 배포하는 데 사용되는 Symante
 
 1.  기간 업무 앱의 최신 버전에 서명합니다.
 
-2.  Azure Portal을 열고 **관리** &gt; **모바일 장치 관리** &gt; **Windows Phone**으로 이동한 후에 **서명된 앱 업로드**를 클릭합니다.
+2.  Azure Portal을 열고 **관리**&gt;**모바일 디바이스 관리**&gt;**Windows Phone**으로 이동한 후에 **서명된 앱 업로드**를 클릭합니다.
 
 3.  새로 서명된 회사 포털을 업로드합니다. 새로 서명된 SSP.xap와 Symantec에서 받은 새로운 .PFX 파일 또는 이러한 새 .PFX 파일로 생성한 애플리케이션 등록 토큰이 필요합니다.
 
@@ -154,8 +154,8 @@ Windows 및 Windows Phone 모바일 앱을 배포하는 데 사용되는 Symante
 
 1. 자신의 계정으로 [비즈니스용 Microsoft 스토어](https://www.microsoft.com/business-store)에 로그인하고 **오프라인 라이선스** 버전의 회사 포털 앱을 가져옵니다.  
 2. 앱을 가져왔으면 **인벤토리** 페이지에서 앱을 선택합니다.  
-3. **플랫폼**으로 **Windows 10 all devices**(Windows 10 모든 장치)를 선택한 다음 적절한 **아키텍처**를 선택하고 다운로드합니다. 이 앱에는 앱 라이선스 파일이 필요 없습니다.
-![Windows 10 모든 장치 및 아키텍처 X86 패키지 다운로드 세부 정보를 보여 주는 이미지](./media/Win10CP-all-devices.png)
+3. **플랫폼**으로 **Windows 10 all devices**(Windows 10 모든 디바이스)를 선택한 다음 적절한 **아키텍처**를 선택하고 다운로드합니다. 이 앱에는 앱 라이선스 파일이 필요 없습니다.
+![다운로드용 Windows 10 X86 패키지 세부 정보를 표시하는 이미지](./media/Win10CP-all-devices.png)
 4. "Required Frameworks"(필요한 프레임워크)에 나온 모든 패키지를 다운로드합니다. x86, x64 및 ARM 아키텍처에 대해 수행해야 하므로 아래와 같이 총 9개의 패키지가 됩니다.
 
 ![다운로드할 종속성 파일의 이미지 ](./media/Win10CP-dependent-files.png)
@@ -164,7 +164,7 @@ Windows 및 Windows Phone 모바일 앱을 배포하는 데 사용되는 Symante
    ![APPXBUN 파일과 함께 저장된 Dependencies 폴더의 이미지](./media/Win10CP-Dependencies-save.png)
    2. Dependencies 폴더에 9개의 종속성 패키지를 배치합니다.  
    종속성을 이 형식으로 배치하지 않는 경우 Intune은 패키지 업로드 도중에 패키지를 인식 및 업로드할 수 없습니다. 이에 따라 업로드에 실패하고 다음과 같은 오류가 표시됩니다.  
-   ![이 소프트웨어 설치 관리자의 Windows 앱 종속성이 애플리케이션 폴더에 없습니다. 이 애플리케이션을 계속 만들고 배포할 수 있지만 누락된 Windows 앱 종속성이 제공될 때까지 실행되지 않습니다.](./media/Win10CP-error-message.png)
+   ![오류 메시지 - Windows 앱 종속성을 제공해야 합니다.](./media/Win10CP-error-message.png)
 6. Intune으로 돌아간 후 회사 포털 앱을 새 앱으로 업로드합니다. 원하는 대상 사용자 집합에게 필수 앱으로 배포합니다.  
 
 Intune에서 유니버설 앱의 종속성을 처리하는 방식에 대한 자세한 내용은 [Deploying an appxbundle with dependencies via Microsoft Intune MDM(Microsoft Intune MDM을 통해 종속성이 포함된 appxbundle 배포)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)을 참조하세요.  

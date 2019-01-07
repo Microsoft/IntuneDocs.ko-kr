@@ -1,12 +1,12 @@
 ---
 title: 현재 사용자 - Intune 데이터 웨어하우스
 titlesuffix: Microsoft Intune
-description: Intune 데이터 웨어하우스 API에서 엔터티 컬렉션의 사용자 범주에 대한 항목을 참조하세요.
+description: Intune 데이터 웨어하우스 API에서 엔터티 컬렉션의 현재 사용자 범주에 대한 항목을 참조하세요.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: b58f6f360cf034be11153a57227da42ed1e29388
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-classic; seodec18
+ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189778"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266905"
 ---
 # <a name="reference-for-current-user-entity"></a>현재 사용자 엔터티에 대한 참조
 

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e1d645de0dfa9c215a9670246f43375de5153286
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185426"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738021"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -125,7 +125,7 @@ Intune에서 브랜드 이미지를 추가하거나 변경해도, 회사 포털�
 |  | 홈 | Alt+H |
 |  | 모든 앱 | Alt+A |
 |  | 설치된 앱 | Alt+I |
-|  | 피드백 보내기 | Alt+F |
+|  | 의견 보내기 | Alt+F |
 |  | 내 프로필 | Alt+U |
 |  | 설정 | Alt+T |
 | 홈 - 디바이스 타일 | 이름 바꾸기 | F2 |
@@ -138,7 +138,7 @@ Intune에서 브랜드 이미지를 추가하거나 변경해도, 회사 포털�
 
 또한 최종 사용자는 Windows 회사 포털 앱에서 사용할 수 있는 바로 가기를 볼 수 있습니다.
 
-![Windows 회사 포털 앱의 사용 가능한 바로 가기 스크린샷](media/company-portal-app/company-portal-app-01.png)
+![Windows 회사 포털의 사용 가능한 바로 가기 스크린샷](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>다음 단계
 

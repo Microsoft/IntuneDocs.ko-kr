@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112877"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738055"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -100,7 +100,7 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 
 4. **Certificates, IDs & Profiles**(인증서, ID 및 프로필)를 클릭합니다.
 
-   ![Apple Developer 포털](./media/iOS-signing-cert-1.png)
+   ![Apple Developer 포털 - 인증서, ID 및 프로필](./media/iOS-signing-cert-1.png)
 
 5. 설치가 완료되면 ![오른쪽 위 모서리에 있는 Apple Developer 포털 더하기 기호를 클릭하여](./media/iOS-signing-cert-2.png) iOS 인증서를 추가합니다.
 
@@ -125,7 +125,7 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 
 11. CSR 파일을 만드는 방법에 대한 위의 Apple Developer 사이트 지침을 따릅니다. macOS 컴퓨터에 CSR 파일을 저장합니다.
 
-    ![Keychain Access의 인증 기관에서 인증서 요청](./media/iOS-signing-cert-6.png)
+    ![요청하는 인증서에 대한 정보를 입력합니다.](./media/iOS-signing-cert-6.png)
 
 12. Apple Developer 사이트로 돌아갑니다. **Continue(계속)** 를 클릭합니다. 그런 다음 CSR 파일을 업로드합니다.
 
@@ -141,7 +141,7 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 
 16. 정보 창이 나타납니다. 맨 아래로 스크롤하여 **Fingerprints**(지문) 레이블 아래를 확인합니다. **SHA1** 문자열(흐리게 표시됨)을 복사하여 앱 래핑 도구의 "-c"에 대한 인수로 사용합니다.
 
-    ![키 집합에 인증서 추가](./media/iOS-signing-cert-9.png)
+    ![iPhone 정보 - SHA1 문자열 지문](./media/iOS-signing-cert-9.png)
 
 
 
@@ -179,7 +179,7 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 
 macOS 터미널을 열고 다음 명령을 실행합니다.
 
-```
+```bash
 /Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
@@ -188,7 +188,7 @@ macOS 터미널을 열고 다음 명령을 실행합니다.
 
 **예:** 다음 예제 명령은 MyApp.ipa 앱에 대해 앱 래핑 도구를 실행합니다. 프로비저닝 프로필 및 서명 인증서의 SHA-1 해시가 지정되고 래핑된 앱에 서명하는 데 사용됩니다. 출력 앱(MyApp_Wrapped.ipa)이 생성되어 데스크탑 폴더에 저장됩니다.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
@@ -289,7 +289,7 @@ iOS의 경우 앱에 서명하는 데 사용된 원본이 아닌 다른 인증�
 
 3.  콘솔에 다음 스크립트를 입력하여 앱 제한 출력에 대해 저장된 로그를 필터링합니다.
 
-    ```
+    ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
     필터링된 로그를 Microsoft에 제출할 수 있습니다.
@@ -368,20 +368,20 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 
 3.  codesign 도구를 사용하여 .app 번들의 자격을 확인합니다(여기서 `YourApp.app`은(는) .app 번들의 실제 이름).
 
-    ```
+    ```bash
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4.  보안 도구를 사용하여 앱의 포함된 프로비저닝 프로필 자격을 확인합니다(여기서 `YourApp.app`은(는) .app 번들의 실제 이름).
 
-    ```
+    ```bash
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>–e 매개 변수를 사용하여 앱에서 자격 제거
 이 명령은 자격 파일에 없는 앱에서 사용할 수 있는 기능을 모두 제거합니다. 앱에서 사용 중인 기능을 제거하면 앱이 중단될 수 있습니다. 누락된 기능을 제거할 수 있는 경우의 예는 기본적으로 모든 기능을 갖춘 공급업체 제작 앱입니다.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
@@ -416,12 +416,12 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 일반적인 앱 래핑 명령에 `-citrix` 플래그를 덧붙여 실행합니다. 현재 `-citrix` 플래그는 인수를 지원하지 않습니다.
 
 **사용 형식**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **명령 예**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 
@@ -438,6 +438,6 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 > 로깅 기능은 Intune App Wrapping Tool 버전 7.1.13 이상으로 래핑된 앱에서 사용할 수 있습니다.
 
 ### <a name="see-also"></a>참고 항목
-- [Microsoft Intune으로 모바일 응용 프로그램 관리용 앱을 준비하는 방법 결정](apps-prepare-mobile-application-management.md)</br>
-- [Microsoft Intune 정책을 사용하여 장치의 설정 및 기능 관리](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
-- [SDK를 사용하여 모바일 응용 프로그램 관리에 앱을 사용하도록 설정](app-sdk.md)
+- [Microsoft Intune으로 모바일 애플리케이션 관리용 앱을 준비하는 방법 결정](apps-prepare-mobile-application-management.md)</br>
+- [Microsoft Intune 정책을 사용하여 디바이스의 설정 및 기능 관리](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [SDK를 사용하여 모바일 애플리케이션 관리에 앱을 사용하도록 설정](app-sdk.md)

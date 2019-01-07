@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune에 macOS 사업 부문 앱을 추가하는 방법
 titlesuffix: ''
-description: Microsoft Intune에 macOS LOB(사업 부문) 앱을 추가하는 방법을 알아봅니다.
+description: Microsoft Intune에 macOS LOB(기간 업무) 앱을 추가하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,25 +16,25 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b60610be892afd10ace568694b57cc18190eec1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 356f21067f0e0d625882822fd8747661d72005e8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180013"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642662"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Microsoft Intune에 macOS LOB(사업 부문) 앱을 추가하는 방법
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서의 정보를 사용하면 Microsoft Intune에 macOS 사업 부문 앱을 추가하는 데 도움이 됩니다. 사업 부문 파일을 Microsoft Intune에 업로드하기 전에 *.pkg* 파일을 전처리하려면 외부 도구를 다운로드해야 합니다. *.pkg* 파일의 전처리는 macOS 장치에서 수행해야 합니다.
+이 문서의 정보를 사용하면 Microsoft Intune에 macOS 사업 부문 앱을 추가하는 데 도움이 됩니다. 사업 부문 파일을 Microsoft Intune에 업로드하기 전에 *.pkg* 파일을 전처리하려면 외부 도구를 다운로드해야 합니다. *.pkg* 파일의 전처리는 macOS 디바이스에서 수행해야 합니다.
 
 > [!NOTE]
 > macOS 디바이스 사용자는 주식, 지도 같은 기본 제공 macOS 앱 중 일부를 제거할 수 있으나 Intune을 사용하여 해당 앱을 다시 배포할 수는 없습니다. 최종 사용자가 이러한 앱을 삭제하는 경우 앱 스토어로 이동하여 수동으로 다시 설치해야 합니다.
 
 ## <a name="before-your-start"></a>시작하기 전에
 
-사업 부문 파일을 Microsoft Intune에 업로드하기 전에 *.pkg* 파일을 전처리하려면 외부 도구를 다운로드해야 합니다. *.pkg* 파일의 전처리는 macOS 장치에서 수행해야 합니다. Mac용 Intune 앱 래핑 도구를 사용하여 Microsoft Intune에서 Mac 앱을 관리할 수 있도록 합니다.
+사업 부문 파일을 Microsoft Intune에 업로드하기 전에 *.pkg* 파일을 전처리하려면 외부 도구를 다운로드해야 합니다. *.pkg* 파일의 전처리는 macOS 디바이스에서 수행해야 합니다. Mac용 Intune 앱 래핑 도구를 사용하여 Microsoft Intune에서 Mac 앱을 관리할 수 있도록 합니다.
 
 > [!IMPORTANT]
 > macOS LOB 앱을 Microsoft Intune에 업로드하는 데는 *.pkg* 파일만 사용할 수 있습니다. *.dmg*와 다른 형식의 *.pkg*로의 변환은 지원되지 않습니다.
@@ -99,7 +99,7 @@ ms.locfileid: "52180013"
 만든 앱이 앱 목록에 표시됩니다. 이 목록에서 선택한 그룹에 앱을 할당할 수 있습니다. 도움말은 [그룹에 앱을 할당하는 방법](apps-deploy.md)을 참조하세요.
 
 > [!NOTE]
-> *.pkg* 파일에 여러 앱 또는 앱 설치 관리자가 포함되어 있는 경우 Microsoft Intune은 설치된 모든 앱이 장치에서 발견될 경우에만 ‘앱’이 성공적으로 설치되어 있다고 보고합니다.
+> *.pkg* 파일에 여러 앱 또는 앱 설치 관리자가 포함되어 있는 경우 Microsoft Intune은 설치된 모든 앱이 디바이스에서 발견될 경우에만 ‘앱’이 성공적으로 설치되어 있다고 보고합니다.
 
 ## <a name="step-5---update-a-line-of-business-app"></a>5단계 - 기간 업무(line-of-business) 앱 업데이트
 

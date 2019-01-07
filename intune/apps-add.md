@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a0fb9aca406c1a49c979b59e5d879d66a730c1c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9cd03d4953376d20e96ec146ece91120d592cb99
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185891"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429783"
 ---
-# <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가
+# <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -72,7 +72,7 @@ Microsoft Intune에서 **클라이언트 앱** > **앱** > **추가**를 차례�
 ## <a name="assess-app-requirements"></a>앱 요구 사항 평가
 IT 관리자는 그룹에서 사용해야 하는 앱뿐 아니라 각 그룹과 하위 그룹에 필요한 기능도 결정합니다. 각 앱에 대해 필요한 플랫폼, 앱이 필요한 사용자 그룹, 해당 그룹에 적용할 구성 정책, 적용할 보호 정책을 결정합니다.  
 
-또한 MDM(모바일 디바이스 관리)에 집중할지, 아니면 MAM(모바일 응용 프로그램 관리)에만 집중할지 결정해야 합니다. 
+또한 MDM(모바일 장치 관리)에 집중할지, 아니면 MAM(모바일 애플리케이션 관리)에만 집중할지 결정해야 합니다. 
 
 Intune을 사용하여 MDM으로 디바이스를 관리하면 다음과 같은 경우에 유용합니다.
 - 사용자가 생산성 유지를 위해 Wi-Fi 또는 VPN 회사 연결 프로필이 필요한 경우.
@@ -101,7 +101,7 @@ Intune을 사용하여 디바이스를 관리하지 않고 MAM으로 앱을 관�
 다음 앱 유형 중에서 선택할 수 있습니다.
 - **스토어의 앱**: Microsoft Store, iOS 스토어 또는 Android 스토어에 업로드된 앱은 스토어 앱입니다. 스토어 앱의 공급자가 앱 업데이트를 유지 관리하고 제공합니다. 스토어 목록에서 앱을 선택하고, Intune을 통해 사용자가 사용할 수 있는 앱으로 추가합니다.
 - **사내에서 작성한 앱(기간 업무)**: 사내에서 만든 앱은 LOB(기간 업무) 앱입니다. 이러한 유형의 앱 기능은 Windows, iOS, Android 등 Intune에서 지원하는 플랫폼 중 하나에서 사용할 수 있도록 개발되었습니다. 조직에서 업데이트를 별도 파일로 만들어서 관리자에게 제공합니다. 관리자는 Intune으로 업데이트를 추가 및 배포하여 사용자에게 앱 업데이트를 제공합니다.
-- **웹의 앱** - 웹앱은 클라이언트-서버 응용 프로그램입니다. 서버는 UI, 콘텐츠 및 기능을 포함하는 웹앱을 제공합니다. 또한 플랫폼을 호스팅하는 현대식 웹은 일반적으로 보안, 부하 분산 및 기타 이점을 제공합니다. 이 앱 유형은 웹에서 별도로 유지 관리됩니다. Intune을 사용하여 이 앱 유형을 가리킵니다. 앱에 액세스할 수 있는 사용자 그룹도 할당합니다. Android는 웹앱을 지원하지 않습니다.
+- **웹의 앱**: 웹앱은 클라이언트-서버 애플리케이션입니다. 서버는 UI, 콘텐츠 및 기능을 포함하는 웹앱을 제공합니다. 또한 플랫폼을 호스팅하는 현대식 웹은 일반적으로 보안, 부하 분산 및 기타 이점을 제공합니다. 이 앱 유형은 웹에서 별도로 유지 관리됩니다. Intune을 사용하여 이 앱 유형을 가리킵니다. 앱에 액세스할 수 있는 사용자 그룹도 할당합니다. Android는 웹앱을 지원하지 않습니다.
 
 조직에 필요한 앱을 결정하는 경우 앱이 클라우드 서비스와 통합되는 방식, 앱이 액세스하는 데이터, BYOD 사용자가 앱을 사용할 수 있는지 여부, 앱에 인터넷 액세스가 필요한지 여부를 고려하세요.
 
@@ -118,9 +118,9 @@ Intune 관리 앱은 등록 없이 앱 보호를 사용할 수도 있으므로 �
 
 ### <a name="understanding-licensed-apps"></a>라이선스 앱 이해
 웹앱, 스토어 앱, LOB 앱을 이해하는 것은 물론 다음과 같은 대량 구매 프로그램 앱과 사용이 허가된 앱의 대상도 알고 있어야 합니다. 
-- **비즈니스용 Apple 대량 구매 프로그램(iOS)**: iOS 앱 스토어를 통해 회사에서 실행하려는 앱의 라이선스를 여러 개 구매할 수 있습니다. 여러 복사본을 구매하면 회사에서 앱을 효율적으로 관리할 수 있습니다. 자세한 내용은 [iOS 대량 구매 앱 관리](vpp-apps-ios.md)를 참조하세요.
-- **Android 회사 프로필**: Android 회사 프로필 장치에 앱을 할당하는 방법은 표준 Android 장치에 앱을 할당하는 방법과 다릅니다. Android 회사 프로필에 대해 설치하는 모든 앱은 Google Play 스토어에서 제공됩니다. 스토어에 로그인한 다음 원하는 앱을 찾아서 승인합니다. 그러면 Azure Portal의 **사용이 허가된 앱** 노드에 앱이 표시되며, 다른 앱과 마찬가지로 앱의 할당을 관리할 수 있습니다.
-- **비즈니스용 Microsoft Store(Windows 10)**: 비즈니스용 Microsoft Store를 통해 조직에서 사용할 앱을 찾아 개별적으로 또는 대량으로 구매할 수 있습니다. 스토어를 Microsoft Intune에 연결하면 Azure Portal에서 대량 구매 앱을 관리할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft 스토어에서 앱 관리](windows-store-for-business.md)를 참조하세요.
+- **비즈니스용 Apple 대량 구매 프로그램(iOS)**: iOS App Store에서는 회사에서 실행하려는 앱의 라이선스를 여러 개 구매할 수 있습니다. 여러 복사본을 구매하면 회사에서 앱을 효율적으로 관리할 수 있습니다. 자세한 내용은 [iOS 대량 구매 앱 관리](vpp-apps-ios.md)를 참조하세요.
+- **Android 회사 프로필**: Android 회사 프로필 디바이스에 앱을 할당하는 방법은 표준 Android 디바이스에 앱을 할당하는 방법과 다릅니다. Android 회사 프로필에 대해 설치하는 모든 앱은 Google Play 스토어에서 제공됩니다. 스토어에 로그인한 다음 원하는 앱을 찾아서 승인합니다. 그러면 Azure Portal의 **사용이 허가된 앱** 노드에 앱이 표시되며, 다른 앱과 마찬가지로 앱의 할당을 관리할 수 있습니다.
+- **비즈니스용 Microsoft Store(Windows 10)**: 비즈니스용 Microsoft Store에서는 조직에서 사용하는 앱을 하나씩 또는 대량으로 찾아 구매할 수 있습니다. 스토어를 Microsoft Intune에 연결하면 Azure Portal에서 대량 구매 앱을 관리할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft 스토어에서 앱 관리](windows-store-for-business.md)를 참조하세요.
 
     > [!NOTE]
     > Windows 앱의 파일 확장명에는 **.msi**, **.appx**, **.appxbundle**, **.msix** 및 **.msixbundle**이 포함됩니다.  

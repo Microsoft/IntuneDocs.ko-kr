@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune을 사용하여 Windows 10 앱 배포
 titlesuffix: ''
-description: Microsoft Intune으로 사용할 수 있는 Windows 10 앱 시나리오에 대해 알아봅니다.
+description: Microsoft Intune으로 사용할 수 있는 Windows 10 앱 배포 시나리오에 대해 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: 0ece7f3d5b7f0d01359a342da5e3dca9b8193a27
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977289"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642611"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 

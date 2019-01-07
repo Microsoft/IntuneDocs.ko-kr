@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 228b662739d161a4f4d6d145746fc68e7c3b87e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ce4689aaecd40d7d44f0064b1e951823fa0bb2c2
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188112"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738004"
 ---
-# <a name="data-warehouse-data-model"></a>데이터 웨어하우스 데이터 모델
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 데이터 웨어하우스 데이터 모델
 
 Intune 데이터 웨어하우스 샘플 데이터는 항상 변화하는 모바일 디바이스 환경에 대한 과거 보기를 제공합니다. 보기는 해당 시점의 관련 엔터티로 구성됩니다.
 
-## <a name="entities-entity-sets"></a>엔터티: 엔터티 집합
+## <a name="entities-entity-sets"></a>엔터티: 엔터티 세트
 
 웨어하우스는 다음과 같은 개략적인 영역으로 데이터를 노출합니다.
 
@@ -38,15 +38,15 @@ Intune 데이터 웨어하우스 샘플 데이터는 항상 변화하는 모바�
 
 이러한 영역에는 Intune 환경에 적합한 엔터티가 포함됩니다. 다음 항목의 엔터티 집합에 대한 정보를 찾을 수 있습니다.
 
-  -  [응용 프로그램](reports-ref-application.md)
+  -  [애플리케이션](reports-ref-application.md)
   -  [날짜](reports-ref-date.md)
-  -  [장치](reports-ref-devices.md)
+  -  [디바이스](reports-ref-devices.md)
   -  [Intune 관리 확장](reports-ref-intunemanagementextension.md)
   -  [정책](reports-ref-policy.md)
   -  [모바일 앱 관리(MAM)](reports-ref-mobile-app-management.md)
   -  [사용자](reports-ref-user.md)
   -  [현재 사용자](reports-ref-current-user.md)
-  -  [사용자 장치 연결](reports-ref-user-device.md)
+  -  [사용자 디바이스 연결](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>관계: 별모양 스키마 모델
 

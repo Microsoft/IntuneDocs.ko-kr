@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/09/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168031"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53378286"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -86,7 +86,7 @@ Intune 앱 SDK는 앱에서 Intune 정책 적용을 지원하고 참여할 수 �
 ### <a name="gradle-build-plugin"></a>Gradle Build 플러그 인
 앱이 gradle로 빌드되지 않은 경우 [명령줄 도구와 통합](#command-line-build-tool)으로 건너뜁니다. 
 
-앱 SDK 플러그 인은 SDK의 일부로 **GradlePlugin/com.microsoft.intune.mam.build.jar**로 배포됩니다. Gradle이 이 플러그 인을 찾을 수 있으려면 buildscript 클래스 경로에 추가해야 합니다. 이 플러그 인은 [Javassist](http://jboss-javassist.github.io/javassist/)에 의존하므로 이 기능도 함께 추가해야 합니다. 이러한 기능을 클래스 경로에 추가하려면 루트 `build.gradle`에 다음을 추가합니다.
+앱 SDK 플러그 인은 SDK의 일부로 **GradlePlugin/com.microsoft.intune.mam.build.jar**로 배포됩니다. Gradle이 이 플러그 인을 찾을 수 있으려면 buildscript 클래스 경로에 추가해야 합니다. 이 플러그 인은 [Javassist](https://jboss-javassist.github.io/javassist/)에 의존하므로 이 기능도 함께 추가해야 합니다. 이러한 기능을 클래스 경로에 추가하려면 루트 `build.gradle`에 다음을 추가합니다.
 
 ```groovy
 buildscript {
@@ -170,7 +170,7 @@ intunemam {
 
 #### <a name="dependencies"></a>종속성
 
-gradle 플러그 인은 [Javassist](http://jboss-javassist.github.io/javassist/)에 대한 종속성이 있으므로 위에서 설명한 것처럼 Gradle 종속성 해결에서 사용해야 합니다. Javassist는 이 플러그 인을 실행하는 빌드 타임에만 사용됩니다. Javassist 코드는 앱에 추가되지 않습니다.
+gradle 플러그 인은 [Javassist](https://jboss-javassist.github.io/javassist/)에 대한 종속성이 있으므로 위에서 설명한 것처럼 Gradle 종속성 해결에서 사용해야 합니다. Javassist는 이 플러그 인을 실행하는 빌드 타임에만 사용됩니다. Javassist 코드는 앱에 추가되지 않습니다.
 
 > [!NOTE]
 > 버전 3.0 이상의 Android Gradle 플러그 인 및 Gradle 4.1 이상을 사용해야 합니다.
@@ -338,7 +338,7 @@ Intune 앱 SDK에는 SDK를 통합하는 앱에 대한 세 가지 [Android 시�
 
 로깅된 데이터를 최대한 활용하려면 초기에 로깅을 초기화해야 합니다. 일반적으로 `Application.onMAMCreate()`는 로깅을 초기화하는 가장 좋은 위치입니다.
 
-앱에서 MAM 로그를 받으려면 [Java Handler](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html)를 만들어 `MAMLogHandlerWrapper`에 추가합니다. 그러면 애플리케이션 핸들러에서 모든 로그 메시지에 대해 `publish()`를 호출합니다.
+앱에서 MAM 로그를 받으려면 [Java Handler](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html)를 만들어 `MAMLogHandlerWrapper`에 추가합니다. 그러면 애플리케이션 핸들러에서 모든 로그 메시지에 대해 `publish()`를 호출합니다.
 
 ```java
 /**
@@ -449,7 +449,7 @@ String toString();
 ```
 
 > [!NOTE]
-> `MAMPolicyManager.getPolicy`은 장치 또는 앱에 Intune 관리 정책이 적용되지 않더라도 항상 Null이 아닌 앱 정책을 반환합니다.
+> `MAMPolicyManager.getPolicy`은 디바이스 또는 앱에 Intune 관리 정책이 적용되지 않더라도 항상 Null이 아닌 앱 정책을 반환합니다.
 
 ### <a name="example-determine-if-pin-is-required-for-the-app"></a>예: 앱에 PIN이 필요한지 확인
 
@@ -499,12 +499,12 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
 ```
 
-... 여기서 `service`는 다음 SaveLocations 중 하나입니다.
+`service` 매개 변수는 다음 `SaveLocation` 값 중 하나여야 합니다.
 
 
-    * SaveLocation.ONEDRIVE_FOR_BUSINESS
-    * SaveLocation.LOCAL
-    * SaveLocation.SHAREPOINT
+- `SaveLocation.ONEDRIVE_FOR_BUSINESS`
+- `SaveLocation.LOCAL`
+- `SaveLocation.SHAREPOINT`
 
 사용자 정책에서 다양한 위치에 데이터를 저장하도록 허용하는지를 결정하는 이전 메소드는 동일한 **AppPolicy** 클래스에 있는 `getIsSaveToPersonalAllowed()`입니다. 이 함수는 이제 **더 이상 사용되지 않음**이므로 사용하지 않아야 합니다. 다음 호출은 `getIsSaveToPersonalAllowed()`에 해당합니다.
 
@@ -618,7 +618,7 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 * **NonBrokerRedirectURI**는 브로커가 없는 경우에 사용할 AAD 리디렉션 URI입니다. 지정된 값이 없으면 기본값인 `urn:ietf:wg:oauth:2.0:oob`가 사용됩니다. 이 기본값은 대부분의 앱에 적합합니다.
 
 * **SkipBroker**는 ClientID가 브로커 리디렉션 URI를 사용하도록 구성되지 않은 경우 사용됩니다. 기본값은 "false"입니다.
-    * **ADAL을 통합하지 않고** **장치 수준에서 조정된 인증/SSO에 참여하지 않으려는** 앱의 경우 “true”로 설정되어야 합니다. 이 값이 “true”이면 유일하게 사용되는 리디렉션 URI는 NonBrokerRedirectURI입니다.
+    * **ADAL을 통합하지 않고****디바이스 수준에서 조정된 인증/SSO에 참여하지 않으려는** 앱의 경우 “true”로 설정되어야 합니다. 이 값이 “true”이면 유일하게 사용되는 리디렉션 URI는 NonBrokerRedirectURI입니다.
 
     * 디바이스 수준 SSO 조정을 지원하는 앱의 경우 “false”입니다. 값이 "false"이면 시스템의 브로커 가용성을 기반으로 SDK에서 [`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android)의 결과와 NonBrokerRedirectURI 중에 브로커를 선택합니다. 일반적으로 브로커는 회사 포털 앱 또는 Azure Authenticator에서 사용할 수 있습니다.
 
@@ -656,15 +656,15 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 
 
 ### <a name="conditional-access"></a>조건부 액세스
-조건부 액세스(CA)는 AAD 리소스에 대한 액세스 제어에 사용할 수 있는 Azure Active Directory [기능](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)입니다.  [Intune 관리자는](https://docs.microsoft.com/intune/conditional-access) Intune에서 관리하는 장치 또는 앱으로부터의 리소스 액세스만 허용하는 CA 규칙을 정의할 수 있습니다. 앱이 적절한 때 리소스에 액세스할 수 있게 하려면 아래 단계를 따라야 합니다. 앱이 AAD 액세스 토큰을 획득하지 않아도 되거나, CA로 보호할 수 없는 리소스에만 액세스하는 경우 이 단계를 생략할 수 있습니다.
+조건부 액세스(CA)는 AAD 리소스에 대한 액세스 제어에 사용할 수 있는 Azure Active Directory [기능](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)입니다.  [Intune 관리자는](https://docs.microsoft.com/intune/conditional-access) Intune에서 관리하는 디바이스 또는 앱으로부터의 리소스 액세스만 허용하는 CA 규칙을 정의할 수 있습니다. 앱이 적절한 때 리소스에 액세스할 수 있게 하려면 아래 단계를 따라야 합니다. 앱이 AAD 액세스 토큰을 획득하지 않아도 되거나, CA로 보호할 수 없는 리소스에만 액세스하는 경우 이 단계를 생략할 수 있습니다.
 1. [ADAL 통합 지침](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)을 따릅니다. 
    특히 11단계에서 브로커 사용을 참조하세요.
 
-2. [Azure Active Directory에 응용 프로그램을 등록](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)합니다. 리디렉션 URI는 위의 ADAL 통합 지침에서 찾을 수 있습니다.
+2. [Azure Active Directory에 애플리케이션을 등록](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)합니다. 리디렉션 URI는 위의 ADAL 통합 지침에서 찾을 수 있습니다.
 
 3. 위의 [공통 ADAL 구성](#common-adal-configurations), 항목 2에 따라 매니페스트 메타데이터 매개 변수를 설정합니다.
 
-4. [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)에서 [장치 기반 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)를 사용하도록 설정하고 확인하여 모든 항목이 제대로 구성되었는지 테스트
+4. [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)에서 [디바이스 기반 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)를 사용하도록 설정하고 확인하여 모든 항목이 제대로 구성되었는지 테스트
 * 앱에 로그인하면 Intune 회사 포털 설치 및 등록을 위한 프롬프트 표시
 * 등록 후 앱 로그인이 완료됩니다.
 
@@ -796,9 +796,9 @@ Result getRegisteredAccountStatus(String upn);
 
 ### <a name="sovereign-cloud-registration"></a>소버린 클라우드 등록
 
-[소버린 클라우드 인식](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) 응용 프로그램은 `authority`를 `registerAccountForMAM()`에 제공해야 **합니다**.  이 정보는 AuthenticationCallback AuthenticationResult에서 `getAuthority()` 호출 앞에 오는 ADAL의 [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters에서 `instance_aware=true`를 제공하여 구할 수 있습니다.
+[소버린 클라우드 인식](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) 애플리케이션은 `authority`를 `registerAccountForMAM()`에 제공해야 **합니다**.  이 정보는 AuthenticationCallback AuthenticationResult에서 `getAuthority()` 호출 앞에 오는 ADAL의 [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters에서 `instance_aware=true`를 제공하여 구할 수 있습니다.
 
-```
+```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
         new AuthenticationCallback<AuthenticationResult>() {
             @Override
@@ -817,7 +817,8 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 > [!NOTE]
 > AndroidManifest.xml 메타데이터 권한은 설정하지 않습니다.
 <br/>
-```
+
+```xml
 <meta-data
     android:name="com.microsoft.intune.mam.aad.Authority"
     android:value="https://AAD authority/" />
@@ -892,7 +893,7 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 
 ## <a name="protecting-backup-data"></a>백업 데이터 보호
 
-Android Marshmallow(API 23) 현재, Android에는 앱이 데이터를 백업하는 두 가지 방법이 있습니다. 각 옵션을 앱에서 사용할 수 있으며 여러 단계를 거쳐 Intune 데이터 보호가 적절하게 구현되도록 해야 합니다. 아래 표를 검토하면 올바른 데이터 보호 동작에 필요한 적절한 작업에 대해 살펴볼 수 있습니다.  [Android API 가이드](http://developer.android.com/guide/topics/data/backup.html)에서 백업 방법에 대해 알아볼 수 있습니다.
+Android Marshmallow(API 23) 현재, Android에는 앱이 데이터를 백업하는 두 가지 방법이 있습니다. 각 옵션을 앱에서 사용할 수 있으며 여러 단계를 거쳐 Intune 데이터 보호가 적절하게 구현되도록 해야 합니다. 아래 표를 검토하면 올바른 데이터 보호 동작에 필요한 적절한 작업에 대해 살펴볼 수 있습니다.  [Android API 가이드](https://developer.android.com/guide/topics/data/backup.html)에서 백업 방법에 대해 알아볼 수 있습니다.
 
 ### <a name="auto-backup-for-apps"></a>앱에 대한 자동 백업
 
@@ -1413,7 +1414,7 @@ public final class MAMDataProtectionManager {
 Intune 콘솔에서 애플리케이션 특정 키-값 쌍을 구성해야 합니다. 이러한 키-값 쌍은 Intune에서 전혀 해석되지 않고 앱에 전달되기만 합니다. 해당 구성을 수신하려고 하는 애플리케이션은 `MAMAppConfigManager` 및 `MAMAppConfig` 클래스를 사용하여 구성을 수신할 수 있습니다. 동일한 앱에서 여러 정책을 대상으로 지정하면 동일한 키에 사용할 수 있는 여러 개의 충돌 값이 발생할 수 있습니다.
 
 ### <a name="example"></a>예제
-```
+```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
 MAMAppConfig appConfig = configManager.getAppConfig(identity);
@@ -1434,7 +1435,7 @@ LOGGER.info("Found value " + valueToUse);
 
 ### <a name="mamappconfig-reference"></a>MAMAppConfig 참조
 
-```
+```java
 public interface MAMAppConfig {
     /**
      * Conflict resolution types for Boolean values.
@@ -1596,10 +1597,10 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 다음은 자동 APP-WE 서비스 등록(이 섹션에서는 **기본값 등록**이라고 함)을 위해 앱 시작 시 사용자 프롬프트를 요구하는 것에 관한 지침으로, Intune 보호 사용자만 SDK 통합 Android LOB 앱을 사용할 수 있도록 허용하는 Intune 앱 보호 정책을 요구합니다. 또한 SDK 통합 Android LOB 앱에 SSO를 사용하는 방법에 관해서도 설명합니다. 이것은 Intune 이외의 사용자가 사용할 수 있는 스토어 앱에서는 **지원되지 않습니다**.
 
 > [!NOTE] 
-> **기본값 등록**의 이점에는 장치의 앱에 관한 APP-WE 서비스에서 정책을 얻는 단순화된 방법이 포함됩니다.
+> **기본값 등록**의 이점에는 디바이스의 앱에 관한 APP-WE 서비스에서 정책을 얻는 단순화된 방법이 포함됩니다.
 
 ### <a name="general-requirements"></a>일반 요구 사항
-* [일반적인 ADAL 구성 #2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations)의 단계에 따라 앱이 Intune 모바일 응용 프로그램 관리 서비스에 등록되어 있는지 확인합니다.
+* [일반적인 ADAL 구성 #2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations)의 단계에 따라 앱이 Intune 모바일 애플리케이션 관리 서비스에 등록되어 있는지 확인합니다.
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK 사용
 이러한 지침은 최종 사용자 디바이스에서 앱을 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱 개발자에게만 적용됩니다.
@@ -1609,20 +1610,27 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
    > 앱에 연결된 “클라이언트 ID”라는 용어는 앱에 연결된 Azure Portal의 “애플리케이션 ID”라는 용어와 같습니다. 
 2. SSO를 사용하려면 “일반적인 ADAL 구성” #2가 필요합니다.
 
-3. 매니페스트에 다음 값을 입력하여 기본 등록을 사용합니다. ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+3. 매니페스트에 다음 값을 입력하여 기본 등록을 사용합니다.
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > 이것은 앱에서 유일한 MAM-WE 통합이어야 합니다. MAMEnrollmentManager API를 호출하려는 다른 시도가 있으면 충돌이 발생할 수 있습니다.
 
-4. 매니페스트에 다음 값을 입력하여 필요한 MAM 정책을 설정합니다. ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+4. 매니페스트에 다음 값을 입력하여 필요한 MAM 정책을 설정합니다.
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > 이렇게 하면 사용자는 디바이스에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
    >
    > 이것은 앱에서 유일한 MAM-WE 통합이어야 합니다. MAMEnrollmentManager API를 호출하려는 다른 시도가 있으면 충돌이 발생합니다.
 
 3. 매니페스트에 다음 값을 입력하여 필요한 MAM 정책을 설정합니다.
-```xml
-<meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-```
+
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
 
 > [!NOTE] 
 > 이렇게 하면 사용자는 디바이스에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.

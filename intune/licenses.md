@@ -15,12 +15,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: d6020207ab32a4e7c18f59f74caeedc9e4f17bf4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 90398729a99a10667d87646a4beaaaf8a7f6201f
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031690"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266922"
 ---
 # <a name="licenses-that-include-intune"></a>Intune을 포함하는 라이선스
 
@@ -39,10 +39,9 @@ ms.locfileid: "53031690"
 | Microsoft 365 E3 | Intune | [자세한 정보](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 E5 | Intune | [자세한 정보](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 F1 | Intune | [자세한 정보](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Office 365 F1 | 없음 | [자세한 정보](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
 | Microsoft 365 Business | Intune | [자세한 정보](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Office 365 Business Premium | 없음 | [자세한 정보](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Azure Active Directory Free, Basic, Premium P1 및 Premium P2 | 없음 | [자세한 정보](https://azure.microsoft.com/pricing/details/active-directory/) |
+
+Intune은 이 목록에 없는 라이선스에 포함되지 않습니다.
 
 사용자가 해당 라이선스에 포함된 모든 기능을 직접 또는 간접적으로 활용하려면 올바른 라이선스가 있어야 합니다.
 

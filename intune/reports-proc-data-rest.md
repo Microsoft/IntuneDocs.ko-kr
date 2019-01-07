@@ -1,12 +1,12 @@
 ---
 title: REST 클라이언트를 사용하여 데이터 웨어하우스 API에서 데이터 가져오기
 titlesuffix: Microsoft Intune
-description: RESTful API를 사용하여 Intune 데이터 웨어하우스에서 데이터를 검색합니다.
+description: 이 항목에서는 RESTful API를 사용하여 Microsoft Intune 데이터 웨어하우스에서 데이터를 검색하는 방법을 설명합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bcd4d9177bcefc1e026bc55831e589a5bcb57105
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185996"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642883"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST 클라이언트를 사용하여 Intune 데이터 웨어하우스 API에서 데이터 가져오기
 
@@ -43,7 +43,7 @@ Azure에서 네이티브 앱을 만듭니다. 이 네이티브 앱은 클라이�
 2. **새 앱 등록**을 선택합니다.
 3. 앱 세부 정보를 입력합니다.
     1.  **이름**에 이름을 입력합니다(예: Intune Data Warehouse Client).
-    2.  **응용 프로그램 종류**로 **네이티브**를 선택합니다.
+    2.  **애플리케이션 종류**로 **네이티브**를 선택합니다.
     3.  **로그온 URL**의 URL을 입력합니다. 로그온 URL은 구체적인 시나리오에 따라 달라지지만, Postman을 사용하려는 경우 `https://www.getpostman.com/oauth2/callback`을 입력합니다. Azure AD에 인증할 때 클라이언트 인증 단계에 콜백을 사용합니다.
 4.  **만들기**를 선택합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: Intune 데이터 웨어하우스 변경 로그
 titlesuffix: Microsoft Intune
-description: Intune 데이터 웨어하우스 API의 변경 사항 목록입니다.
+description: 이 항목에서는 Microsoft Intune 데이터 웨어하우스 API에 대한 변경 내용 목록을 제공합니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189948"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642764"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 데이터 웨어하우스 API에 대한 변경 로그
 
@@ -44,9 +44,9 @@ _릴리스 날짜: 2018년 8월_
 ## <a name="1805"></a>1805
 _릴리스 날짜: 2018년 5월_
 
-### <a name="correction-to-device-count-in-devices-collection"></a>**장치** 컬렉션의 장치 수 수정 
+### <a name="correction-to-device-count-in-devices-collection"></a>**디바이스** 컬렉션의 디바이스 수 수정 
 
-**장치** 컬렉션이 수정되어 `isDeleted` 특성을 기준으로 필터링되는 총 장치 수가 감소할 수 있습니다. 이 감소는 수정 결과이며 오류가 아닙니다. **장치** 컬렉션에 대한 자세한 내용은 [장치 엔티티 참조](reports-ref-devices.md)를 참조하세요. 
+**디바이스** 컬렉션이 수정되어 `isDeleted` 특성을 기준으로 필터링되는 총 디바이스 수가 감소할 수 있습니다. 이 감소는 수정 결과이며 오류가 아닙니다. **디바이스** 컬렉션에 대한 자세한 내용은 [디바이스 엔티티 참조](reports-ref-devices.md)를 참조하세요. 
 
 
 ## <a name="1801"></a>1801
@@ -69,8 +69,8 @@ Azure AD(Azure Active Directory)를 사용하여 애플리케이션을 설정하
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>데이터 웨어하우스 데이터 모델의 새 엔터티 <!-- 2077804 -->
 
- - [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) 엔터티가 추가되었습니다. **MobileAppDeviceUserInstallStatus**는 지정된 장치 및 사용자의 모바일 앱 설치 상태를 나타냅니다.
- - [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) 엔터티가 추가되었습니다. **MobileAppInstallState** 엔터티는 장치, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 응용 프로그램의 설치 상태를 나타냅니다. 
+ - [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) 엔터티가 추가되었습니다. **MobileAppDeviceUserInstallStatus**는 지정된 디바이스 및 사용자의 모바일 앱 설치 상태를 나타냅니다.
+ - [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) 엔터티가 추가되었습니다. **MobileAppInstallState** 엔터티는 장치, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 애플리케이션의 설치 상태를 나타냅니다. 
 
 ## <a name="1710"></a>1710
 _2017년 11월 출시됨_
@@ -90,9 +90,9 @@ _2017년 10월 출시됨_
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>데이터 웨어하우스 데이터 모델의 새 엔터티 <!-- 1479526 --><!-- -->
 
- - 엔터티 [**UserDeviceAssociation**](reports-ref-user-device.md)이 추가되었습니다. **UserDeviceAssociation**에는 조직의 사용자 장치 연결이 포함되어 있습니다. 이제 사용자와 디바이스 엔터티 컬렉션을 연결하는 사용자 디바이스 연결 정보를 사용하여 보고서 및 데이터 시각화를 작성할 수 있습니다.  
- - 엔터티 [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md)이 추가되었습니다. **IntuneManagementExtension**은 버전 및 설치 상태와 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
+ - 엔터티 [**UserDeviceAssociation**](reports-ref-user-device.md)이 추가되었습니다. **UserDeviceAssociation**에는 조직의 사용자 디바이스 연결이 포함되어 있습니다. 이제 사용자와 디바이스 엔터티 컬렉션을 연결하는 사용자 디바이스 연결 정보를 사용하여 보고서 및 데이터 시각화를 작성할 수 있습니다.  
+ - 엔터티 [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md)이 추가되었습니다. **IntuneManagementExtension**은 버전 및 설치 상태와 같은 정보를 추적하는 모바일 디바이스에 대한 엔터티를 포함합니다.
 
 ## <a name="next-steps"></a>다음 단계
  - [매주 Intune에 추가되는 새로운 기능](whats-new.md)에 대해 알아봅니다. 예정된 변경, 서비스 관련 중요 공지 및 이전 릴리스 관련 정보에 대해서도 알아볼 수 있습니다.
- - [Microsoft Intune 블로그](http://go.microsoft.com/fwlink/?LinkID=273882)를 읽어 보세요.
+ - [Microsoft Intune 블로그](https://go.microsoft.com/fwlink/?LinkID=273882)를 읽어 보세요.
