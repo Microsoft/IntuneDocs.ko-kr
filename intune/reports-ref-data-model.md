@@ -64,4 +64,4 @@ Intune 데이터 웨어하우스 샘플 데이터는 항상 변화하는 모바�
 
  - 데이터 웨어하우스가 Intune에서 사용자의 수명을 추적하는 방법에 대한 자세한 내용은 [Intune 데이터 웨어하우스의 사용자 수명 표시](reports-ref-user-timeline.md)를 참조하세요.
  - 데이터 웨어하우스 작업에 대한 자세한 내용은 [첫 번째 데이터 웨어하우스 만들기](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)를 참조하세요.
- - Power BI 및 데이터 웨어하우스 작업에 대한 자세한 내용은 [데이터 집합을 가져와서 새 Power BI 보고서 만들기](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)를 참조하세요. 
+ - Power BI 및 데이터 웨어하우스 작업에 대한 자세한 내용은 [데이터 세트를 가져와서 새 Power BI 보고서 만들기](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)를 참조하세요. 

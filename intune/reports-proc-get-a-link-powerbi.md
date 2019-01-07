@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e2c4335b17397833fdae9e95fecc2677c8068150
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 145b4ba18325d82942eb4ebf5fbfe17ffc8e653b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187347"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737902"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI를 통해 데이터 웨어하우스에 연결
 
@@ -45,7 +45,7 @@ Intune 테넌트에 대해 동적으로 생성된 보고서인 인터랙티브 �
 
 ## <a name="install-power-bi"></a>Power BI 설치
 
-Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로드 위치: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
+Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop은 [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)에서 다운로드할 수 있습니다.
 
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Power BI 파일(pbix)을 사용하여 데이터와 보고서를 로드
 
@@ -54,7 +54,7 @@ Power BI 파일(pbix)은 테넌트에 대한 연결 정보와 데이터 웨어�
 > [!Important]  
 > 각 Power BI 파일(pbix)은 테넌트 위치에 따라 다릅니다. 여러 Intune 테넌트를 관리하는 경우 해당 테넌트에 로그인한 동안 Azure 포털에서 다운로드한 파일을 사용하세요.  
 
-1.  Azure Portal에 로그인하고 **모니터링 + 관리** > **Intune**을 선택합니다.   **Intune**에 대한 리소스를 검색할 수도 있습니다.  
+1.  Azure Portal에 로그인하고 **모니터링 + 관리** > **Intune**을 선택합니다.  **Intune**에 대한 리소스를 검색할 수도 있습니다.  
 2.  **Microsoft Intune Data Warehouse API(미리 보기)** 블레이드를 엽니다.
 3.  **PowerBI 파일 다운로드**를 선택합니다. (pbix) 확장명을 가진 파일이 지정한 위치로 다운로드됩니다.
 4.  Power BI로 파일을 엽니다. *Intune 데이터 웨어하우스 보고서*가 로드되지만 테넌트 데이터를 가져오는 데 약간의 시간이 걸릴 수 있습니다.
@@ -65,7 +65,7 @@ Power BI 파일(pbix)은 테넌트에 대한 연결 정보와 데이터 웨어�
 
 클라이언트가 Azure AD에 인증되면 OData URL이 데이터 모델을 보고하는 클라이언트에 노출하는 데이터 웨어하우스 API의 RESTful 엔드포인트에 연결합니다. 다음 지침에 따라 Power BI Desktop을 사용하여 연결하고 직접 보고서를 만드세요. Power BI Desktop으로 제한되지 않으므로 자주 사용하는 다른 분석 도구를 OData URL과 사용할 수도 있습니다. 단 클라이언트가 OAUTH2.0 인증 및 OData v4.0 표준을 지원해야 합니다.
 
-1.  Azure Portal에 로그인하고 **모니터링 + 관리** > **Intune**을 선택합니다.   **Intune**에 대한 리소스를 검색할 수도 있습니다.  
+1.  Azure Portal에 로그인하고 **모니터링 + 관리** > **Intune**을 선택합니다.  **Intune**에 대한 리소스를 검색할 수도 있습니다.  
 2.  **Microsoft Intune Data Warehouse API(미리 보기)** 블레이드를 엽니다.
 3. 보고 블레이드에서 사용자 지정 피드 URL을 검색합니다. 예: `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4. **Power BI Desktop**을 엽니다.
