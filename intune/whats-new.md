@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: a84683531481410d54f527ddd35400dcfe504fc5
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553693"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996034"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -93,13 +93,6 @@ Android 엔터프라이즈, 다중 앱, 키오스크 모드 디바이스에서 �
 
 앱 보호 정책을 사용하여 회사 데이터를 보호하고 다른 Intune 정책 관리 앱과 같은 앱의 데이터 전송을 제어합니다. 참고: 콘솔에 Flow가 아직 표시되지 않으면 앱 보호 정책을 만들거나 편집할 때 Flow를 추가합니다. 이렇게 하려면 **+ 추가 앱** 옵션을 사용한 다음, 입력 필드에 Flow의 *앱 ID*를 지정합니다. Android의 경우 *com.microsoft.flow*를 사용하고 iOS의 경우 *com.microsoft.procsimo*를 사용합니다.
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune 앱 보호 정책 UI 업데이트 <!-- 3251427 -->
-각각 더 쉽게 이해할 수 있도록 Intune 앱 보호 설정 및 단추의 레이블을 변경했습니다. 일부 변경 내용은 다음과 같습니다.  
-
-- 컨트롤은 **예** / **아니요** 컨트롤에서 기본 **차단** / **허용** 및 **사용 안 함** / **사용** 컨트롤로 변경됩니다. 레이블도 업데이트됩니다.  
-- 설정이 다시 포맷되므로 설정과 레이블이 컨트롤에 나란히 있어 더 효율적으로 검색할 수 있습니다.   
-
-기본 설정과 설정 수는 동일하게 유지되지만, 이 변경으로 인해 사용자가 선택한 앱 보호 정책을 적용하기 위해 설정을 더 쉽게 이해, 검색 및 활용할 수 있습니다.
 
 ### <a name="device-configuration"></a>디바이스 구성
 

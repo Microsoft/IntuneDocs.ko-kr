@@ -1,5 +1,6 @@
 ---
 title: Intune을 사용한 앱 기반 조건부 액세스 정책 설정
+titlesuffix: Microsoft Intune
 description: Intune을 사용한 앱 기반 조건부 액세스 정책 설정을 만드는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
@@ -15,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 32044422943282d9cf813192405a335ee756e44e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 079671064c09c22d151ea71f8b3fb385652aef0f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816925"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune을 사용한 앱 기반 조건부 액세스 정책 설정
 
@@ -43,7 +44,7 @@ IT 관리자는 Azure AD 워크로드에서 앱 기반 조건부 액세스 정�
 > [!IMPORTANT]
 > 앱 기반 조건부 액세스 정책을 사용하기 전에 [Intune 앱 보호 정책](app-protection-policies.md)을 앱에 적용해야 합니다.
 
-1. **Intune 대시보드**에서 **조건부 액세스**를 선택합니다.
+1. **Intune 대시보드** 에서 **조건부 액세스** 를 선택합니다.
 
 2. **정책** 창에서 **새 정책**을 선택하여 새 앱 기반 조건부 액세스 정책을 만듭니다.
 
