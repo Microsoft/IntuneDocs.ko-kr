@@ -127,7 +127,7 @@ ms.locfileid: "52728942"
 - **URL로 앱 추가**: 앱 이름과 Google Play 스토어의 해당 URL을 입력합니다.
 - **스토어 앱 추가**: Intune에서 관리하는 기존 앱 목록에서 앱을 선택합니다.
 
-## <a name="cloud-and-storage"></a>클라우드 및 저장소
+## <a name="cloud-and-storage"></a>클라우드 및 스토리지
 
 - **Google 백업(Samsung Knox만 해당)**: **차단**을 선택하면 디바이스가 Google 백업에 동기화되지 않습니다. **구성되지 않음**을 사용하면 Google 백업을 사용할 수 있습니다.
 - **Google 계정 자동 동기화(Samsung Knox만 해당)**: **차단**을 선택하면 디바이스에서 Google 계정 자동 동기화 기능을 사용할 수 없습니다. **구성되지 않음**을 사용하면 Google 계정 설정을 자동으로 동기화할 수 있습니다.

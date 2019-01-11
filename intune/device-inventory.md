@@ -78,8 +78,8 @@ Intune은 회사 소유 디바이스에서만 앱 목록을 수집합니다. 앱
 |운영 체제|디바이스에서 사용된 운영 체제입니다.|Windows, iOS|
 |운영 체제 버전|장치의 운영 체제 버전입니다.|Windows, iOS|
 |운영 체제 언어|디바이스의 운영 체제에 대해 설정된 언어입니다.|Windows, iOS|
-|총 저장소 공간|디바이스에서 총 저장소 공간(기가바이트)입니다.|Windows, iOS|
-|사용 가능한 저장소 공간|디바이스에서 사용되지 않은 저장소 공간(기가바이트)입니다.|Windows, iOS|
+|총 스토리지 공간|디바이스에서 총 저장소 공간(기가바이트)입니다.|Windows, iOS|
+|사용 가능한 스토리지 공간|디바이스에서 사용되지 않은 저장소 공간(기가바이트)입니다.|Windows, iOS|
 |IMEI|디바이스의 IMEI(International Mobile Equipment Identity)입니다.|Windows, iOS, Android|
 |MEID|디바이스의 MEID(Mobile Equipment Identifier)입니다.|Windows, iOS, Android|
 |제조업체|디바이스의 제조업체입니다.|Windows, iOS, Android|

@@ -378,12 +378,12 @@ ms.locfileid: "53738072"
 | DeviceDisplayNumberOfColors |디바이스 디스플레이의 색 수 |
 | HorizontalResolution |디바이스 가로 화면 해상도 |
 | VerticalResolution |디바이스 세로 화면 해상도 |
-| StorageFree |사용 가능한 저장소 공간(바이트) |
-| StorageTotal |총 저장소 공간(바이트) |
+| StorageFree |사용 가능한 스토리지 공간(바이트) |
+| StorageTotal |총 스토리지 공간(바이트) |
 | ProgramFree |사용 가능한 프로그램 메모리(바이트) |
 | ProgramTotal |전체 프로그램 메모리(바이트) |
-| RemovableStorageFree |사용 가능한 이동식 저장소(바이트) |
-| RemovableStorageTotal |총 이동식 저장소(바이트) |
+| RemovableStorageFree |사용 가능한 이동식 스토리지(바이트) |
+| RemovableStorageTotal |총 이동식 스토리지(바이트) |
 | DeviceMemoryDeviceCapacity |디바이스 메모리 용량 |
 | DeviceMemoryAvailableDeviceCapacity |사용 가능한 디바이스 메모리 용량 |
 | DeviceOSVersion |OS 버전 |

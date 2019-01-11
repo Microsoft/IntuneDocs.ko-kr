@@ -240,8 +240,8 @@ ms.locfileid: "52190322"
 | AndroidSecurityPatchLevel  | Android 보안 패치 수준                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
 | isSupervised               | 디바이스가 감독되고 있습니다.                                                                                                                                                               |
-| FreeStorageSpaceInBytes    | 사용 가능한 저장소 공간(바이트)입니다.                                                                                                                                                                 |
-| TotalStorageSpaceInBytes   | 총 저장소 공간(바이트)입니다.                                                                                                                                                                |
+| FreeStorageSpaceInBytes    | 사용 가능한 스토리지 공간(바이트)입니다.                                                                                                                                                                 |
+| TotalStorageSpaceInBytes   | 총 스토리지 공간(바이트)입니다.                                                                                                                                                                |
 | EncryptionState            | 디바이스의 암호화 상태입니다.                                                                                                                                                      |
 | SubscriberCarrier          | 디바이스의 구독자 통신 회사입니다.                                                                                                                                                       |
 | PhoneNumber                | 디바이스의 전화 번호                                                                                                                                                             |

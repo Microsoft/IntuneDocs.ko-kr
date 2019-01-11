@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 Windows 디바이스 규정 준수 정책 만들기 - Azure | Microsoft Docs
-description: Windows Phone 8.1, Windows 8.1 이상, Windows 10 이상 디바이스에 대한 Microsoft Intune 디바이스 준수 정책을 만들거나 구성합니다. 최소 및 최대 운영 체제에서 준수 확인, 암호 제한 및 길이 설정, bitlocker 요구, 타사 AV 솔루션, 허용되는 위협 수준 설정, Surface Hub 및 Windows Holographic for Business를 비롯한 데이터 저장소에서 암호화 사용 등을 수행합니다.
+description: Windows Phone 8.1, Windows 8.1 이상, Windows 10 이상 디바이스에 대한 Microsoft Intune 디바이스 준수 정책을 만들거나 구성합니다. 최소 및 최대 운영 체제에서 준수 확인, 암호 제한 및 길이 설정, bitlocker 요구, 타사 AV 솔루션, 허용되는 위협 수준 설정, Surface Hub 및 Windows Holographic for Business를 비롯한 데이터 스토리지에서 암호화 사용 등을 수행합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia

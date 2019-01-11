@@ -439,7 +439,7 @@ IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager 클래스는 �
 
 ## <a name="implement-save-as-controls"></a>다른 이름으로 저장 컨트롤 구현
 
-Intune을 사용하여 IT 관리자는 관리되는 앱이 데이터를 저장할 수 있는 저장소 위치를 선택할 수 있습니다. 앱은 `IntuneMAMPolicy.h`에 정의된 `isSaveToAllowedForLocation` API를 사용하여 Intune 앱 SDK에서 허용된 저장소 위치를 쿼리할 수 있습니다.
+Intune을 사용하여 IT 관리자는 관리되는 앱이 데이터를 저장할 수 있는 스토리지 위치를 선택할 수 있습니다. 앱은 `IntuneMAMPolicy.h`에 정의된 `isSaveToAllowedForLocation` API를 사용하여 Intune 앱 SDK에서 허용된 스토리지 위치를 쿼리할 수 있습니다.
 
 클라우드 저장소 또는 로컬 위치에 관리되는 데이터를 저장하려면 먼저 앱에서 `isSaveToAllowedForLocation` API를 사용하여 IT 관리자가 해당 위치로의 데이터 저장을 허용했는지 확인해야 합니다.
 

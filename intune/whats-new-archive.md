@@ -738,7 +738,7 @@ Windows AutoPilot 할당되지 않은 디바이스에 대한 새 경고는 **Mic
 이제 다음과 같은 새 항목을 [등록된 디바이스에서 가져온 인벤토리](device-inventory.md)에 사용할 수 있습니다.
 
 - Wi-Fi MAC 주소
-- 총 저장소 공간
+- 총 스토리지 공간
 - 사용 가능한 총 공간
 - MEID
 - 구독자의 통신사
@@ -1483,18 +1483,18 @@ Windows 10 PC에 대한 [새로운 시작 디바이스 작업](device-fresh-star
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 디바이스 대량 등록 <!-- 747607 -->
 이제 WCD(Windows 구성 디자이너)를 사용하여 Azure Active Directory 및 Intune에 대한 Windows 10 크리에이터스 업데이트를 실행하는 많은 디바이스를 연결할 수 있습니다. Azure AD 테넌트에 대한 [대량 MDM 등록](windows-bulk-enroll.md)을 사용하도록 설정하려면 Windows 구성 디자이너를 사용하여 Azure AD 테넌트에 디바이스를 연결하는 프로비전 패키지를 만들고, 이 패키지를 대량으로 등록 및 관리할 회사 소유 디바이스에 적용합니다. 패키지가 디바이스에 적용되면, 디바이스가 Azure AD에 연결되고 Intune에 등록되며 Azure AD 사용자가 로그온할 수 있는 준비를 하게 됩니다.  Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당된 정책 및 필수 앱을 수신합니다. 셀프 서비스 및 회사 포털 시나리오의 경우 현재 지원되지 않습니다.
 
-### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>PIN 및 관리되는 저장소 위치에 대한 새 MAM 설정 <!-- 581122, 736644 -->
+### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>PIN 및 관리되는 스토리지 위치에 대한 새 MAM 설정 <!-- 581122, 736644 -->
 이제 MAM(모바일 애플리케이션 관리) 시나리오에 도움이 되는 두 가지 새 앱 설정이 제공됩니다.
 
 - **Disable app PIN when device PIN is managed**(장치 PIN이 관리되는 경우 앱 PIN 사용 안 함) - 등록된 장치에 장치 PIN이 있는지 검색하고 있으면 앱 보호 정책에 따라 트리거되는 앱 PIN을 건너뜁니다. 이 설정을 사용하면 등록된 디바이스에서 MAM 지원 응용 프로그램을 여는 사용자에게 PIN 프롬프트가 표시되는 횟수를 줄일 수 있습니다. 이 기능은 Android 및 iOS 모두에 제공됩니다.
 
-- **Select which storage services corporate data can be saved to**(회사 데이터를 저장할 저장소 서비스 선택) - 회사 데이터를 저장할 저장소 위치를 지정할 수 있습니다. 사용자가 선택된 저장소 위치 서비스에 저장할 수 있으므로 나열되지 않은 다른 저장소 위치는 모두 차단됩니다.
+- **Select which storage services corporate data can be saved to**(회사 데이터를 저장할 저장소 서비스 선택) - 회사 데이터를 저장할 저장소 위치를 지정할 수 있습니다. 사용자가 선택된 스토리지 위치 서비스에 저장할 수 있으므로 나열되지 않은 다른 스토리지 위치는 모두 차단됩니다.
 
-  지원되는 저장소 위치 서비스 목록:
+  지원되는 스토리지 위치 서비스 목록:
 
   - OneDrive
   - 비즈니스 SharePoint Online
-  - 로컬 저장소
+  - 로컬 스토리지
 
 ### <a name="help-desk-troubleshooting-portal----907448---"></a>기술 지원팀의 문제 해결 포털 <!-- 907448 -->
 새로운 [문제 해결 포털](help-desk-operators.md)을 사용하면 도움말 센터 운영자 및 Intune 관리자가 사용자와 디바이스를 확인하고 Intune 기술 문제를 해결하는 작업을 수행할 수 있습니다.

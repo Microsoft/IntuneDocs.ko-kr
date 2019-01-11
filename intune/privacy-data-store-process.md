@@ -36,9 +36,9 @@ Intune에서 [데이터를 수집](privacy-data-collect.md)한 후에는 아래�
 
 안정적인 서비스를 모니터링하고 제공하는 데 중요한 원격 측정(서비스 로그, 성능 로그, 오류 등)은 Microsoft의 원격 분석 데이터 저장소로 전송됩니다.
 
-### <a name="storage-locations"></a>저장소 위치
+### <a name="storage-locations"></a>스토리지 위치
 
-Microsoft는 전 세계 여러 지역에서 Intune 서비스를 제공하고 운영합니다. Intune은 관리자가 지정한 고객 데이터 저장소 위치 선택을 존중합니다.
+Microsoft는 전 세계 여러 지역에서 Intune 서비스를 제공하고 운영합니다. Intune은 관리자가 선택한 고객 데이터 스토리지 위치를 우선합니다.
 
 자세한 내용은 [Microsoft Intune 고객 데이터 위치](For more information, see Microsoft Intune Where is my customer data?)를 참조하세요.
 

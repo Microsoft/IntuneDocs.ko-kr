@@ -63,7 +63,7 @@ ms.locfileid: "53032013"
 
 - **위치 검색** - 검색에서 위치를 사용할 수 있는지를 지정합니다. 정보
 
-## <a name="cloud-and-storage"></a>클라우드 및 저장소
+## <a name="cloud-and-storage"></a>클라우드 및 스토리지
 
 - **Microsoft 계정**: 사용자가 Microsoft 계정을 디바이스와 연결하도록 허용합니다.
 

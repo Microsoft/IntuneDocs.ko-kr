@@ -131,7 +131,7 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Integer<br/>0 - 디바이스가 현재 활성 사용자가 없는 상태로 돌아오는 경우 즉시 삭제<br/>1 - 저장소 용량 임계값(기본값)에서 삭제<br/>2 - 저장소 용량 임계값 및 프로필 비활성 임계값 모두에서 삭제|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Integer<br/>0 - 디바이스가 현재 활성 사용자가 없는 상태로 돌아오는 경우 즉시 삭제<br/>1 - 스토리지 용량 임계값(기본값)에서 삭제<br/>2 - 스토리지 용량 임계값 및 프로필 비활성 임계값 모두에서 삭제|
 
 ### <a name="enableprofilemanagerhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[EnableProfileManager](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 

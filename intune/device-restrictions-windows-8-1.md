@@ -70,6 +70,6 @@ Windows 8.1 디바이스에 대해 이 설정을 사용하려면 디바이스의
 ## <a name="cellular"></a>셀룰러
 -   **데이터 로밍** - 장치가 셀룰러 네트워크에 있을 때 데이터 로밍을 사용하도록 설정합니다.
 
-## <a name="cloud-and-storage"></a>클라우드 및 저장소
+## <a name="cloud-and-storage"></a>클라우드 및 스토리지
 -   **작업 폴더 URL** - 문서를 장치 간에 동기화될 수 있도록 작업 폴더의 URL을 설정합니다.
 -   **Microsoft 계정이 없는 Windows Mail 앱 액세스** - Microsoft 계정 없이 Windows Mail 응용 프로그램에 대한 액세스를 사용하도록 설정합니다.    
