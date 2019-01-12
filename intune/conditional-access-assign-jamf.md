@@ -1,12 +1,12 @@
 ---
-title: Jamf 디바이스에 대한 디바이스 준수 정책
+title: Jamf 디바이스에 대한 디바이스 규정 준수 정책 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 보안 Jamf 관리 디바이스를 도우려면 Azure Active Directory의 조건부 액세스와 함께 Microsoft Intune 준수 정책을 사용합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa89e96b05e5344dec32fb452be8ebeaa58bc12
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d7d054b11a4abc969ad411169d0222be37fd6711
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817231"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro로 관리되는 Mac에서 준수 적용
 
@@ -31,7 +31,7 @@ Azure Active Directory 및 Microsoft Intune의 조건부 액세스 정책을 사
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Intune에서 디바이스 준수 정책 설정
 
-1. Microsoft Azure를 열고 **Intune** > **장치 준수** > **정책**으로 이동합니다. 비준수 사용자 및 그룹에 대한 일련의 작업(예: 경고 메일 보내기) 선택을 포함하여 macOS에 대한 정책을 만들 수 있습니다.
+1. Microsoft Azure를 열고 **Intune** > **장치 준수** > **정책**으로 이동합니다. 비준수 사용자 및 그룹에 대한 일련의 작업(예: 경고 이메일 보내기) 선택을 포함하여 macOS에 대한 정책을 만들 수 있습니다.
 2. 원하는 그룹을 검색한 후 정책을 적용합니다.
 
 > [!Note]
@@ -52,28 +52,28 @@ Azure Active Directory 및 Microsoft Intune의 조건부 액세스 정책을 사
 7. **추가**를 클릭하여 회사 포털 앱이 포함된 패키지를 선택합니다.
 8. **작업** 팝업 메뉴에서 **설치**를 선택합니다.
 9. 패키지의 설정을 구성합니다.
-10. **범위** 탭을 클릭하여 회사 포털 앱을 설치할 컴퓨터를 지정합니다. **Save**을 클릭합니다. 다음 번에 컴퓨터에서 선택한 트리거가 발생하고 **일반** 페이로드의 기준을 충족하면 정책에 따라 범위가 지정된 디바이스가 실행됩니다.
+10. **범위** 탭을 클릭하여 회사 포털 앱을 설치할 컴퓨터를 지정합니다. **저장**을 클릭합니다. 다음 번에 컴퓨터에서 선택한 트리거가 발생하고 **일반** 페이로드의 기준을 충족하면 정책에 따라 범위가 지정된 디바이스가 실행됩니다.
 
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>Jamf Pro에서 사용자가 자신의 디바이스를 Azure Active Directory에 등록하도록 하는 정책 만들기
 
 > [!NOTE]
-> 다음 단계를 진행하기 전에 macOS용 [회사 포털을 배포](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos)해야 합니다.  
+> 다음 단계를 진행하기 전에 macOS용 [회사 포털을 배포](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro)해야 합니다.  
 
 최종 사용자는 Jamf Self 서비스를 통해 회사 포털 앱을 시작하여 Azure AD가 포함된 디바이스를 Jamf Pro에서 관리되는 디바이스로 등록해야 합니다. 이를 위해서는 최종 사용자가 조치를 취해야 합니다. 전자 메일, Jamf Pro 알림 또는 Jamf Self Service의 단추를 클릭하도록 최종 사용자에게 알리는 다른 방법을 통해 [최종 사용자에게 연락](end-user-educate.md)하는 것이 좋습니다.
 
 > [!WARNING]
-> 디바이스 등록을 시작하려면 회사 포털 앱을 Jamf Self Service에서 시작해야 합니다. <br><br>회사 포털 앱을 수동으로 시작하는 경우(예: 응용프로그램 또는 다운로드 폴더에서) 디바이스가 등록되지 않습니다. 최종 사용자가 회사 포털 앱을 수동으로 시작하면 'AccountNotOnboarded' 경고가 표시됩니다.
+> 디바이스 등록을 시작하려면 회사 포털 앱을 Jamf Self Service에서 시작해야 합니다. <br><br>회사 포털 앱을 수동으로 시작하는 경우(예: 애플리케이션 또는 다운로드 폴더에서) 장치가 등록되지 않습니다. 최종 사용자가 회사 포털 앱을 수동으로 시작하면 'AccountNotOnboarded' 경고가 표시됩니다.
 
 1. Jamf Pro에서 **컴퓨터** > **정책**으로 이동하고 디바이스 등록을 위한 새 정책을 만듭니다.
 2. 트리거 및 실행 빈도를 포함하여 **Microsoft Intune 통합** 페이로드를 구성합니다.
-3. **범위** 탭을 클릭하고 정책 범위를 모든 대상 장치로 지정합니다.
-4. **Self Service** 탭을 클릭하여 정책을 Jamf Self Service에서 사용 가능하게 설정합니다. **장치 준수** 범주에 정책을 포함합니다. **Save**을 클릭합니다.
+3. **범위** 탭을 클릭하고 정책 범위를 모든 대상 디바이스로 지정합니다.
+4. **Self Service** 탭을 클릭하여 정책을 Jamf Self Service에서 사용 가능하게 설정합니다. **디바이스 준수** 범주에 정책을 포함합니다. **저장**을 클릭합니다.
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Intune에서 Jamf 관리 디바이스를 제거합니다.
 
-**모든 장치** 보기에서 **삭제**를 선택하여 Intune 콘솔에서 Jamf 관리 장치를 제거할 수 있습니다. 여러 디바이스를 선택하고 **삭제**를 클릭하여 대량 디바이스 삭제를 사용하도록 설정할 수 있습니다.
+**모든 디바이스** 보기에서 **삭제**를 선택하여 Intune 콘솔에서 Jamf 관리 디바이스를 제거할 수 있습니다. 여러 디바이스를 선택하고 **삭제**를 클릭하여 대량 디바이스 삭제를 사용하도록 설정할 수 있습니다.
 
-[Jamf 관리 장치를 Jamf Pro 문서에서 제거](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)하는 방법에 대해 알아봅니다. 또한 추가 도움을 위해 지원 티켓을 [Jamf 지원](https://www.jamf.com/support/)와 함께 제출할 수 있습니다. 
+[Jamf 관리 디바이스를 Jamf Pro 문서에서 제거](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)하는 방법에 대해 알아봅니다. 또한 추가 도움을 위해 지원 티켓을 [Jamf 지원](https://www.jamf.com/support/)와 함께 제출할 수 있습니다. 
 
 ## <a name="next-steps"></a>다음 단계
 

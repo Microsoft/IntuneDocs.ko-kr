@@ -1,12 +1,11 @@
 ---
-title: Exchange Online용 Intune Exchange Connector
-titleSuffix: ''
+title: Exchange Online용 Intune Exchange 커넥터 | Microsoft Intune
 description: Intune을 Office 365 Exchange 서비스에 연결하여 Exchange ActiveSync MDM(모바일 디바이스 관리)을 지원합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,17 +15,17 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 318bde24e42bfdf9bbcf15d83f42405fc06f7901
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9845ed1b809b611975c07c6c8335acd237d845c0
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816704"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune 및 Exchange Online용 Exchange 서비스 커넥터 구성
 이 문서에서는 Microsoft Intune 서비스를 Exchange Online 또는 새로운 Exchange Online 전용 서비스에 연결하는 방법을 보여줍니다. Exchange Online Dedicated 환경이 **신규** 또는 **기존** 버전인지 확인하려면 계정 관리자에게 문의하세요.
 
-**Service to Service Connector**를 사용하면 EAS(Exchange ActiveSync) 및 Intune 관리 장치를 모두 단일 관리 콘솔에서 관리할 수 있습니다.  커넥터는 Exchange Online의 조건부 액세스를 사용하도록 설정할 필요가 없습니다.
+**Service to Service Connector**를 사용하면 EAS(Exchange ActiveSync) 및 Intune 관리 디바이스를 모두 단일 관리 콘솔에서 관리할 수 있습니다.  커넥터는 Exchange Online의 조건부 액세스를 사용하도록 설정할 필요가 없습니다.
 
 ## <a name="service-to-service-connector-requirements"></a>Service to Service Connector 요구 사항
 **Service to Service Connector**는 Exchange Online 또는 Exchange Online Dedicated만 지원하며 온-프레미스 인프라에 대한 요구 사항은 없습니다. 
@@ -35,7 +34,7 @@ ms.locfileid: "52184219"
 |              요구 사항               |                                                                                                            추가 정보                                                                                                            |
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exchange Online 구성 및 실행 |                                                                                 [Exchange Online](https://technet.microsoft.com/library/jj200580.aspx)                                                                                 |
-|   모바일 디바이스 관리 기관   |                                                       [Microsoft Intune으로 모바일 장치 관리 기관 설정](mdm-authority-set.md)                                                       |
+|   모바일 디바이스 관리 기관   |                                                       [Microsoft Intune으로 모바일 디바이스 관리 기관 설정](mdm-authority-set.md)                                                       |
 |       Microsoft Exchange 버전       |                                                                                      Exchange Online 또는 신규 Exchange Online Dedicated 서비스                                                                                      |
 |    Active Directory 동기화    | Intune Connector를 사용하려면 로컬 사용자 및 보안 그룹이 Azure Active Directory의 인스턴스와 동기화되도록 [Active Directory 동기화를 설정](/intune/users-add)해야 합니다. |
 
@@ -52,7 +51,7 @@ ms.locfileid: "52184219"
 
 ## <a name="set-up-the-service-to-service-connector"></a>서비스 간 커넥터 설정
 
-1. Exchange 관리자 권한, [앞에서 설명한](#exchange-cmdlet-requirements) cmdlet에 대한 권한, 유효한 Intune 라이선스 및 전역 관리자 역할을 가진 사용자 계정으로 [Azure Portal](http://portal.azure.com)에 로그인합니다. Microsoft Intune은 현재 로그인된 사용자의 메일 주소를 사용하여 연결을 설정합니다.
+1. Exchange 관리자 권한, [앞에서 설명한](#exchange-cmdlet-requirements) cmdlet에 대한 권한, 유효한 Intune 라이선스 및 전역 관리자 역할을 가진 사용자 계정으로 [Azure Portal](https://portal.azure.com)에 로그인합니다. Microsoft Intune은 현재 로그인된 사용자의 메일 주소를 사용하여 연결을 설정합니다.
 
 2. 왼쪽 메뉴에서 **모든 서비스**를 선택한 다음, 텍스트 상자 필터에 **Intune**을 입력합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: Exchange 조건부 액세스 정책 만들기
+title: Exchange 조건부 액세스 정책 만들기 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Intune에서 Exchange 온-프레미스 레거시 Exchange Online Dedicated의 조건부 액세스를 구성합니다.
 keywords: ''
@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817061"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange 온-프레미스 및 레거시 Exchange Online Dedicated에 대한 조건부 액세스 정책 만들기
 
@@ -51,9 +51,9 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
     - Intune에 **등록**되어 있거나 도메인에 가입된 PC여야 합니다.
     - **Azure Active Directory에 등록**되어야 합니다. 또한 클라이언트 Exchange ActiveSync ID가 Azure Active Directory에 등록되어 있어야 합니다.
 <br></br>
-- Azure AD DRS(Device Registration Service)는 Intune 및 Office 365 고객에 대해 자동으로 활성화됩니다. ADFS 디바이스 등록 서비스를 이미 배포한 고객의 온-프레미스 Active Directory에는 등록된 디바이스가 표시되지 않습니다. **Windows PC 및 Windows Phone 장치에는 적용되지 않습니다**.
+- Azure AD DRS(Device Registration Service)는 Intune 및 Office 365 고객에 대해 자동으로 활성화됩니다. ADFS 디바이스 등록 서비스를 이미 배포한 고객의 온-프레미스 Active Directory에는 등록된 디바이스가 표시되지 않습니다. **Windows PC 및 Windows Phone 디바이스에는 적용되지 않습니다**.
 
-- 해당 장치에 배포된 장치 준수 정책을 **준수**해야 합니다.
+- 해당 디바이스에 배포된 디바이스 준수 정책을 **준수**해야 합니다.
 
 - 디바이스가 조건부 액세스 설정을 충족하지 않으면 사용자가 로그인할 때 다음 메시지 중 하나가 표시됩니다.
     - 디바이스를 Intune에 등록하지 않았거나 Azure Active Directory에 등록하지 않은 경우, 회사 포털 앱을 설치하고 디바이스를 등록하며 메일을 활성화하는 방법에 대한 지침이 포함된 메시지가 표시됩니다. 이 프로세스는 또한 디바이스의 Exchange ActiveSync ID를 Azure Active Directory의 디바이스 레코드와 연결합니다.
@@ -64,7 +64,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 - Windows Phone 8.1 이상
 - iOS의 기본 메일 앱
 - EAS 메일 클라이언트(예: Android 4 이상의 Gmail).
-- EAS 메일 클라이언트 **Android 회사 프로필 장치:** **회사 프로필**의 **Gmail** 및 **Nine Work for Android Enterprise**만 Android 회사 프로필에 대해 지원됩니다. 조건부 액세스가 Android 회사 프로필에서 작동하려면 Gmail 또는 Nine Work for Android Enterprise 앱에 대한 이메일 프로필을 배포하며, 이러한 앱을 필수 설치로 배포해야 합니다.
+- EAS 메일 클라이언트 **Android 회사 프로필 디바이스:** **회사 프로필**의 **Gmail** 및 **Nine Work for Android Enterprise**만 Android 회사 프로필에 대해 지원됩니다. 조건부 액세스가 Android 회사 프로필에서 작동하려면 Gmail 또는 Nine Work for Android Enterprise 앱에 대한 이메일 프로필을 배포하며, 이러한 앱을 필수 설치로 배포해야 합니다.
 
 > [!NOTE]
 > Android 및 iOS용 Microsoft Outlook은 Exchange 온-프레미스 커넥터를 통해 사용할 수 없습니다. 온-프레미스 사서함에 대해 iOS 및 Android용 Outlook에서 Azure Active Directory 조건부 액세스 정책 및 Intune 앱 보호 정책을 활용하려는 경우 [iOS 및 Android용 Outlook에서 하이브리드 최신 인증 사용](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)을 참조하세요. 
@@ -84,7 +84,7 @@ Windows 8.1 이상에 설치된 기본 **메일** 애플리케이션(Intune에 �
 
 1.  **Intune** 을 선택하면 **Intune 대시보드** 가 표시됩니다.
 
-1. **온-프레미스 액세스**를 선택합니다. **온-프레미스 액세스** 창에 조건부 액세스 정책의 상태 및 그 영향을 받는 장치가 표시됩니다.
+1. **온-프레미스 액세스**를 선택합니다. **온-프레미스 액세스** 창에 조건부 액세스 정책의 상태 및 그 영향을 받는 디바이스가 표시됩니다.
 
 1. **관리** 아래에서 **Exchange 온-프레미스 액세스**를 선택합니다.
 
@@ -101,14 +101,14 @@ Windows 8.1 이상에 설치된 기본 **메일** 애플리케이션(Intune에 �
     > [!TIP]
     > 마크업 언어에 대한 자세한 내용은 이 Wikipedia [문서](https://en.wikipedia.org/wiki/Markup_language)를 참조하세요.
 
-1. **고급 Exchange Active Sync 액세스 설정** 창에서 다음 두 단계에 설명된 대로 Intune을 통해 관리되지 않는 장치의 액세스에 대한 전역 기본 규칙 및 플랫폼 수준 규칙을 설정합니다.
+1. **고급 Exchange Active Sync 액세스 설정** 창에서 다음 두 단계에 설명된 대로 Intune을 통해 관리되지 않는 디바이스의 액세스에 대한 전역 기본 규칙 및 플랫폼 수준 규칙을 설정합니다.
 
 1. 조건부 액세스 또는 다른 규칙의 영향을 받지 않는 디바이스의 경우 Exchange에 대한 액세스를 허용하거나 차단하도록 선택할 수 있습니다.
 
-   - 액세스를 허용하도록 설정하면 모든 디바이스에서 Exchange 온-프레미스에 즉시 액세스할 수 있습니다.  **그룹 포함됨**의 사용자에게 속한 장치는 이후에 준수 정책을 준수하지 않거나 Intune에 등록되지 않은 것으로 평가되는 경우 차단됩니다.
-   - 액세스를 차단하도록 설정하면 모든 디바이스에서 초기에 Exchange 온-프레미스에 대한 액세스가 즉시 차단됩니다.  **그룹 포함됨**의 사용자에게 속한 장치는 Intune에 등록되고 준수하는 것으로 평가되는 경우 액세스 권한이 부여됩니다. Samsung Knox Standard를 실행하지 않는 Android 디바이스는 이 설정을 지원하지 않으므로 항상 차단됩니다.
+   - 액세스를 허용하도록 설정하면 모든 디바이스에서 Exchange 온-프레미스에 즉시 액세스할 수 있습니다.  **그룹 포함됨**의 사용자에게 속한 디바이스는 이후에 준수 정책을 준수하지 않거나 Intune에 등록되지 않은 것으로 평가되는 경우 차단됩니다.
+   - 액세스를 차단하도록 설정하면 모든 디바이스에서 초기에 Exchange 온-프레미스에 대한 액세스가 즉시 차단됩니다.  **그룹 포함됨**의 사용자에게 속한 디바이스는 Intune에 등록되고 준수하는 것으로 평가되는 경우 액세스 권한이 부여됩니다. Samsung Knox Standard를 실행하지 않는 Android 디바이스는 이 설정을 지원하지 않으므로 항상 차단됩니다.
 
-1. **장치 플랫폼 예외** 아래에서 **추가**를 선택하여 플랫폼을 지정합니다. **관리되지 않는 장치 액세스** 설정이 **차단됨**으로 설정된 경우 등록 및 호환되는 장치는 차단에 대한 플랫폼 예외가 있는 경우에도 허용됩니다. **확인**을 선택하여 설정을 저장합니다.
+1. **디바이스 플랫폼 예외** 아래에서 **추가**를 선택하여 플랫폼을 지정합니다. **관리되지 않는 디바이스 액세스** 설정이 **차단됨**으로 설정된 경우 등록 및 호환되는 디바이스는 차단에 대한 플랫폼 예외가 있는 경우에도 허용됩니다. **확인**을 선택하여 설정을 저장합니다.
 
 1. **온-프레미스** 창에서 **저장**을 클릭하여 조건부 액세스 정책을 저장합니다.
 

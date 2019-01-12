@@ -1,12 +1,11 @@
 ---
-title: Azure Portal에 조건부 액세스 마이그레이션
-titlesuffix: Microsoft Intune
+title: Azure Portal에 조건부 액세스 마이그레이션 | Microsoft Intune
 description: 이전에 Intune 클래식 포털에서 만든 조건부 액세스 정책을 Azure Portal에 다시 할당합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgree
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6dbd7d9079bdb826f83cce76650cacebee056b68
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d319ff39574565c3f326bd6b03b346e989bdc488
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817435"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Intune 클래식 포털에서 Azure 포털로 조건부 액세스 정책 다시 할당
 
@@ -46,7 +45,7 @@ ms.locfileid: "52184491"
             - Intune 클래식 포털에서 조건부 액세스 정책이 대상으로 하는 보안 그룹에서 점차적으로 사용자를 제거합니다.
             - 해당 사용자에 대해 새 정책이 작동하는지 확인한 후 Intune 클래식 포털에서 정책을 사용하지 않도록 설정할 수 있습니다. 
 <br /><br />
-- Intune 클래식 포털에서 조건부 액세스 정책 설정이 EAS(Exchange ActiveSync)를 사용하도록 구성되어 있는 경우 **Azure 포털에서 EAS 조건부 액세스 정책 설정을 다시 할당**하는 [이 항목의 지침](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients)을 참조하세요.
+- Intune 클래식 포털에서 조건부 액세스 정책 설정이 EAS(Exchange ActiveSync)를 사용하도록 구성되어 있는 경우 **Azure 포털에서 EAS 조건부 액세스 정책 설정을 다시 할당**하는 [이 항목의 지침](#reassign-intune-device-based-conditional-access-policies-for-eas-clients)을 참조하세요.
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Intune 클래식 포털에서 디바이스 기반 조건부 액세스 정책을 확인하려면
 
@@ -81,7 +80,7 @@ Azure 포털의 **Intune 앱 보호** 블레이드를 통해 관리자는 Intune
 
 4. **할당 섹션**에서 **사용자 및 그룹**을 선택하여 새 조건부 액세스 정책의 대상을 지정합니다.
     
-    ![Intune 및 Azure Portal 간 사용자 그룹 UI 비교를 보여주는 이미지](./media/reassign-ca-1.png)
+    ![Intune 및 Azure Portal 간 사용자 그룹 UI를 비교하는 이미지](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > 클래식 포털에 대해 선택한 사항이 Azure Portal에서 선택한 사항과 일치해야 합니다. 예를 들어, Intune 클래식 포털에서 모든 사용자를 선택한 경우 Azure 포털에서 **모든 사용자**를 선택합니다. 또한 Intune 클래식 포털에서 **그룹 제외** 옵션을 선택한 경우 새 Azure 포털에서도 선택한 그룹을 제외해야 합니다.
@@ -96,18 +95,18 @@ Azure 포털의 **Intune 앱 보호** 블레이드를 통해 관리자는 Intune
 
 9. **완료**를 클릭합니다.
 
-    ![Intune 및 Azure Portal 간 클라우드 앱 UI 비교를 보여주는 이미지](./media/reassign-ca-3.png)
+    ![Intune 및 Azure Portal 간 클라우드 앱 UI 비교 이미지](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > 정책이 동일한 앱이 여러 개인 경우 Azure 포털에서 단일 정책으로 통합해 보세요.
 
 10. **할당** 섹션에서 **조건**을 선택합니다.
 
-11. **조건** 블레이드에서 **장치 플랫폼**을 선택한 다음 적용 가능한 장치 플랫폼을 선택합니다.
+11. **조건** 블레이드에서 **디바이스 플랫폼**을 선택한 다음 적용 가능한 디바이스 플랫폼을 선택합니다.
 
 12. 디바이스 플랫폼 선택을 마쳤으면 **완료**를 두 번 클릭합니다.
 
-    ![Intune 및 Azure Portal 간 디바이스 플랫폼 UI 비교를 보여주는 이미지](./media/reassign-ca-4.png)
+    ![Intune 및 Azure Portal의 디바이스 플랫폼 UI를 비교하는 이미지](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Intune 클래식 포털에서 개별 플랫폼을 선택한 경우 Azure 포털에서도 개별 플랫폼을 선택합니다.
@@ -121,13 +120,13 @@ Azure 포털의 **Intune 앱 보호** 블레이드를 통해 관리자는 Intune
 
 15. 클라이언트 앱 선택을 마쳤으면 **완료**를 두 번 클릭합니다.
 
-    ![Intune 및 Azure Portal 간 클라이언트 앱 UI 비교를 보여주는 이미지](./media/reassign-ca-6.png)
+    ![Intune 및 Azure Portal 간 클라이언트 앱 UI를 비교하는 이미지](./media/reassign-ca-6.png)
 
 16. Intune 클래식 포털에서 브라우저 설정을 선택한 경우 Azure 포털에서 **브라우저**와 **모바일 앱 및 데스크톱 클라이언트**를 둘 다 선택합니다. Intune 클래식 포털에서 브라우저 설정을 선택하지 않은 경우에는 **모바일 앱 및 데스크톱 클라이언트**만 선택합니다. 
 
 17. **액세스 제어** 섹션에서 **부여**를 선택합니다.
 
-18. **액세스 제어 부여**에서 **준수 상태로 표시된 장치 필요**를 선택한 다음 **선택**을 클릭합니다.
+18. **액세스 제어 부여**에서 **준수 상태로 표시된 디바이스 필요**를 선택한 다음 **선택**을 클릭합니다.
 
 19. 도메인 가입 Windows 디바이스를 요구하는 정책이 있으며 Intune 등록 및 규격 Windows 디바이스도 허용하는 경우 **도메인 가입 디바이스 필요** 및 **준수 상태로 표시된 디바이스 필요**를 **선택된 컨트롤 중 하나가 필요함**과 함께 선택합니다.
 
@@ -135,7 +134,7 @@ Azure 포털의 **Intune 앱 보호** 블레이드를 통해 관리자는 Intune
 
 21. **새** 조건부 액세스 정책 블레이드에서 **정책 사용**을 설정한 다음 **만들기**를 클릭합니다.
 
-    ![Intune 및 Azure 포털 간 사용하는 조건부 액세스 정책 UI 비교를 보여주는 이미지](./media/reassign-ca-11.png)
+    ![Intune과 Azure 간의 조건부 액세스 정책 UI 사용 비교](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>EAS 클라이언트에 대해 Intune 디바이스 기반 조건부 액세스 정책 다시 할당
 
@@ -149,7 +148,7 @@ Intune 클래식 포털에서 Exchange Online 정책의 일부로 Exchange Activ
 
 4. **할당 섹션**에서 **사용자 및 그룹**을 선택하여 새 조건부 액세스 정책의 대상을 지정합니다.
 
-    ![Intune 및 Azure Portal 간 사용자 그룹 UI 비교를 보여주는 이미지](./media/reassign-ca-12.png)
+    ![Azure와 Intune Portal 간 사용자 그룹 UI 비교를 보여주는 이미지](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
     > Azure Portal에 대해 선택한 사항이 Azure Portal에서 선택한 사항과 일치해야 합니다. 예를 들어, Intune 클래식 포털에서 모든 사용자를 선택한 경우 Azure 포털에서 **모든 사용자**를 선택합니다. 또한 Intune 클래식 포털에서 **그룹 제외** 옵션을 선택한 경우 새 Azure 포털에서도 선택한 그룹을 제외해야 합니다.
@@ -160,29 +159,29 @@ Intune 클래식 포털에서 Exchange Online 정책의 일부로 Exchange Activ
 
 7. **클라우드 앱** 블레이드에서 **앱 선택**을 클릭하고 **Exchange Online**을 선택합니다. 그런 다음 **선택**, **완료**를 순서대로 클릭합니다.
 
-    ![Intune 및 Azure Portal 간 클라우드 앱 UI 비교를 보여주는 이미지](./media/reassign-ca-14.png)
+    ![Intune 및 Azure Portal 간 클라우드 앱 UI 비교 이미지](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > EAS 클라이언트에 대한 조건부 액세스 정책에 다른 클라우드 앱을 포함할 수 없습니다.
 
 8. **조건** 블레이드에서 **클라이언트 앱**을 선택한 다음 적용 가능한 클라이언트 앱을 선택합니다. Intune에서 지원되지 않는 클라이언트를 차단하도록 선택한 경우 **지원되는 플랫폼에만 정책 적용** 옵션을 사용합니다.
 
-    ![Intune 및 Azure Portal 간 클라이언트 앱 UI 비교를 보여주는 이미지](./media/reassign-ca-15.png)
+    ![Azure와 Intune Portal 간 클라이언트 앱 UI 비교를 보여주는 이미지](./media/reassign-ca-15.png)
 
 9. 클라이언트 앱 선택을 마쳤으면 **완료**를 두 번 클릭합니다.
 
 10. **액세스 제어** 섹션에서 **부여**를 선택합니다.
 
-11. **액세스 제어 부여**에서 **준수 상태로 표시된 장치 필요**를 선택한 다음 **선택**을 클릭합니다.
+11. **액세스 제어 부여**에서 **준수 상태로 표시된 디바이스 필요**를 선택한 다음 **선택**을 클릭합니다.
 
-    ![Intune 및 Azure Portal 간 액세스 권한 부여 UI 비교를 보여주는 이미지](./media/reassign-ca-16.png)
+    ![Intune 및 Azure Portal 액세스 허용 UI를 비교하는 이미지](./media/reassign-ca-16.png)
 
 12. **새** 조건부 액세스 정책 블레이드에서 **정책 사용**을 설정한 다음 **만들기**를 클릭합니다.
 
-    ![Intune 및 Azure 포털 간 사용하는 조건부 액세스 정책 UI 비교를 보여주는 이미지](./media/reassign-ca-17.png)
+    ![Intune과 Azure 간의 조건부 액세스 정책 UI 사용 비교](./media/reassign-ca-17.png)
 
 > [!NOTE]
-> **장치 플랫폼**을 구성하는 경우 정책을 저장하는 작업이 "정책 구성이 지원되지 않습니다."라는 오류로 실패합니다. Exchange ActiveSync는 연결된 디바이스에서 사용 중인 플랫폼을 식별할 수 없습니다. 따라서 Exchange ActiveSync 디바이스에 대한 정책을 만들 때 특정 디바이스 플랫폼을 구성하도록 지원하지 않습니다.
+> **디바이스 플랫폼**을 구성하는 경우 정책을 저장하는 작업이 "정책 구성이 지원되지 않습니다."라는 오류로 실패합니다. Exchange ActiveSync는 연결된 디바이스에서 사용 중인 플랫폼을 식별할 수 없습니다. 따라서 Exchange ActiveSync 디바이스에 대한 정책을 만들 때 특정 디바이스 플랫폼을 구성하도록 지원하지 않습니다.
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Intune 클래식 포털에서 조건부 액세스 정책 사용 안 함
 
@@ -201,7 +200,7 @@ Azure 포털에서 조건부 액세스 정책을 다시 할당했으면 이전�
 
 4.  **조건부 액세스 정책 사용** 옵션의 선택을 취소하고 **저장**을 클릭합니다.
 
-    ![Intune 클래식 포털에서 사용하지 않는 조건부 액세스을 보여주는 이미지](./media/reassign-ca-18.png)
+    ![Intune 클래식 포털에서 조건부 액세스 정책 사용 안 함 이미지](./media/reassign-ca-18.png)
 
 ## <a name="see-also"></a>참고 항목
 

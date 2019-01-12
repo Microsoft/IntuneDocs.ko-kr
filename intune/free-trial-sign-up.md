@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737919"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067434"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>빠른 시작: Microsoft Intune 평가판 체험 
 
@@ -50,7 +50,7 @@ Intune 평가판은 30일 동안 무료로 사용할 수 있습니다. 회사 �
 
 2. 회사 이름 뒤에 **.onmicrosoft.com**을 붙여서 계정을 만듭니다. 
 
-    ![Microsoft Intune 평가판 계정 새 자격 증명 프로세스 스크린샷](./media/account-sign-up-site-user-id.png)
+    ![Intune 평가판 계정 새 자격 증명 프로세스 스크린샷](./media/account-sign-up-site-user-id.png)
 
     **.onmicrosoft.com** 없이 사용할 조직의 고유한 사용자 지정 도메인이 있는 경우 이 문서의 뒷부분에 설명된 Office 365 관리 포털에서 변경할 수 있습니다.
 

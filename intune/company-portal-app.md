@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738021"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817384"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -89,7 +89,7 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 
 |필드 이름|추가 정보|
 |---|---|
-|**브랜드 이미지 업로드**| 이 옵션을 사용하면 회사 포털 앱의 사용자 프로필 페이지에 배경 이미지를 표시할 수 있습니다.<p>*참고*: 이미지가 다른 플랫폼에서는 다르게 표시될 수 있습니다.<p><ul><li>권장 이미지 너비: 640px~1125px</li><li>최대 이미지 크기: 1.3MB</li><li>파일 형식: PNG, JPG 또는 JPEG</li></ul>|
+|**브랜드 이미지 업로드**| 이 옵션을 사용하면 회사 포털 앱의 사용자 프로필 페이지에 배경 이미지를 표시할 수 있습니다.<p>*참고*: 이미지가 다른 플랫폼에서는 다르게 표시될 수 있습니다.<p><ul><li>권장 이미지 너비: 640px 이상, 1125px 미만</li><li>최대 이미지 크기: 1.3MB</li><li>파일 형식: PNG, JPG 또는 JPEG</li></ul>|
 
 오른쪽 브랜드 이미지는 회사 브랜드의 강력한 인상을 심어주어 회사 포털에 대한 사용자의 신뢰를 높여줄 수 있습니다. 회사 포털의 이미지를 가져오고, 선택하고, 최적화할 때 고려하면 좋은 몇 가지 팁이 있습니다. 
 

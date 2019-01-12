@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune을 사용한 Symantec 커넥터
-titlesuffix: ''
+title: Microsoft Intune을 사용한 Symantec 커넥터 | Microsoft Intune
 description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Symantec Endpoint Protection Mobile을 사용하여 Intune을 통합하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ba90d47f13ac22465927fc5724a254f121c800e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817126"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 커넥터
 
@@ -39,7 +38,7 @@ Intune 디바이스 준수 정책을 통해 SEP Mobile을 사용하도록 설정
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune과 SEP Mobile이 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 
-Android 또는 iOS용 SEP Mobile 앱은 파일 시스템, 네트워크 스택, 디바이스 및 응용 프로그램 원격 분석(사용 가능한 경우)을 캡처한 다음, Symantec 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
+Android 또는 iOS용 SEP Mobile 앱은 파일 시스템, 네트워크 스택, 장치 및 애플리케이션 원격 분석(사용 가능한 경우)을 캡처한 다음, Symantec 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
 
 Intune 디바이스 준수 정책에는 SEP Mobile 위험 평가를 기반으로 하는 SEP Mobile에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다.
 
@@ -47,9 +46,9 @@ Intune 디바이스 준수 정책에는 SEP Mobile 위험 평가를 기반으로
 
 Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
--   **기본 설정**은 읽기 전용 모드로, Intune에서 장치에 대한 SEP Mobile 표시를 허용합니다.
+-   **기본 설정**은 읽기 전용 모드로, Intune에서 디바이스에 대한 SEP Mobile 표시를 허용합니다.
 
--   **전체 통합**을 사용하면 SEP Mobile에서 장치 위험 및 보안 문제 세부 정보를 Intune에 보고할 수 있습니다.
+-   **전체 통합**을 사용하면 SEP Mobile에서 디바이스 위험 및 보안 문제 세부 정보를 Intune에 보고할 수 있습니다.
 
 ## <a name="sample-scenarios"></a>샘플 시나리오:
 
@@ -67,11 +66,11 @@ Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
 **악성 앱이 발견되면 액세스 차단:**
 
-![감지된 악성 앱](./media/symantec-arch-1.png)
+![감지된 악성 앱의 개념 이미지](./media/symantec-arch-1.png)
 
 **수정 시 액세스 권한 부여됨:**
 
-![악성 앱에 검색된 후 수정 시 액세스 권한 부여됨](./media/symantec-arch-2.png)
+![악성 앱이 감지된 후 수정 시 부여된 액세스 권한의 이미지](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 
@@ -121,6 +120,6 @@ SEP Mobile과 Intune을 통합하기 위해 완료해야 할 단계는 다음과
 
 - [SEP Mobile 앱, Microsoft Authenticator 및 iOS 앱 구성 정책 추가 및 할당](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Intune을 사용하여 SEP Mobile 장치 준수 정책 만들기](mtd-device-compliance-policy-create.md)
+- [Intune을 사용하여 SEP Mobile 디바이스 준수 정책 만들기](mtd-device-compliance-policy-create.md)
 
 - [Intune에서 SEP Mobile MTD 커넥터 사용](mtd-connector-enable.md)

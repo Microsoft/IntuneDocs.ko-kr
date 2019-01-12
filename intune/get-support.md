@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune에 대한 지원을 받는 방법
-titlesuffix: Microsoft Intune
+title: Microsoft Intune에 대한 지원을 받는 방법 | Microsoft Intune
 description: Microsoft Intune 유료 및 무료 평가판 구독에 대해 온라인 및 전화 지원을 받습니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2feb18f9c21929d803bbb3605842effa8f63d75d
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 6a57a3a26a786e86775ce1509c5f751d2856f95b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817299"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune에 대한 지원을 받는 방법
 
@@ -49,11 +48,11 @@ Azure Portal에 로그인하고 Intune을 열면 Azure Portal의 Intune 블레�
 
 1. Intune 관리자 자격 증명으로 Azure Portal(<https://portal.azure.com>)에 로그인하고 포털의 오른쪽 위에 있는 **?** 아이콘을 선택한 다음 **도움말+지원**을 선택하여 [Azure 도움말+지원](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 페이지로 이동합니다.
 
-   ![도움말+지원 링크가 강조 표시된 Azure Portal 도움말 및 지원 물음표 링크 스크린샷](./media/azure-get-support.png)
+   ![도움말 + 지원 링크가 강조 표시된 물음표 링크의 이미지](./media/azure-get-support.png)
 
 2. Azure **도움말 + 지원** 페이지에서 **새로운 지원 요청**을 선택합니다.
 
-   ![새로운 지원 요청 링크가 강조 표시된 Azure Portal 도움말 및 지원 페이지 스크린샷](media/azure-support-ticket-link.png)
+   ![도움말 및 지원 페이지에 강조 표시된 새 지원 요청 링크의 이미지](media/azure-support-ticket-link.png)
 
 3. **기본 사항** 탭에서 대부분의 Intune 기술 지원 문제에 대해 다음 옵션을 선택합니다.
    - **문제 유형**: **기술**
@@ -63,18 +62,18 @@ Azure Portal에 로그인하고 Intune을 열면 Azure Portal의 Intune 블레�
    - **문제 하위 유형**: 드롭다운 메뉴에서 문제 하위 유형을 선택합니다.
    - **제목**: 발생하는 문제를 간략히 설명합니다.
 
-   ![도움말 + 지원 - 새 지원 요청 페이지의 기본 사항 탭 스크린샷](./media/get-support/help-new-support-case-basics.png)
+   ![도움말 + 지원 - 새 지원 요청 페이지의 기본 사항 탭 이미지](./media/get-support/help-new-support-case-basics.png)
 
    계속하려면 **다음: 솔루션**을 선택합니다.
 4. **솔루션** 탭에서 티켓을 작성하지 않고 문제를 해결하는 데 도움이 될 수 있는 권장 단계를 검토합니다. 단계를 확인한 후에도 지원 요청을 만들기 원할 경우 **다음: 세부 정보**를 클릭합니다.
 
-   ![도움말 + 지원 - 새 지원 요청 페이지의 솔루션 탭 스크린샷](./media/get-support/help-new-support-case-solutions.png)
+   ![도움말 + 지원 - 새 지원 요청 페이지의 솔루션 탭 이미지](./media/get-support/help-new-support-case-solutions.png)
 5. **세부 정보** 탭에서 문제 세부 정보, 지원 방법, 귀하의 연락처 정보를 입력하고 **다음: 검토 + 만들기**를 클릭합니다.
 
-   ![도움말 + 지원 - 새 지원 요청 페이지의 세부 정보 탭 스크린샷](./media/get-support/help-new-support-case-details.png)
+   ![도움말 + 지원 - 새 지원 요청 페이지의 세부 정보 탭 이미지](./media/get-support/help-new-support-case-details.png)
 6. 정보를 검토하고 올바른지 확인한 후 **만들기**를 선택하여 지원 요청을 제출합니다.
 
-   ![도움말 + 지원 - 새 지원 요청 페이지의 검토 + 만들기 탭 스크린샷](./media/get-support/help-new-support-case-create.png)
+   ![새 지원 요청 페이지의 검토 + 만들기 탭 이미지](./media/get-support/help-new-support-case-create.png)
 
 <!--
   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
@@ -117,7 +116,7 @@ Azure Portal 내에서 지원 요청을 볼 수 있습니다. 확인 방법은 �
 ## <a name="new-help-and-support-experience"></a>새 도움말 및 지원 환경
 *다음 정보는 디바이스 관리 포털을 사용하는 경우에만 적용되고 새 도움말 및 지원 환경 출시의 일부입니다. 이 출시에 대한 참가자는 지원되는 Intune 테넌트 중에서 임의로 선택됩니다.*  
 
-Intune에 대한 도움말 및 지원에 대한 업데이트는 일부 테넌트에 대한 [Microsoft 365 디바이스 관리 포털](http://devicemanagement.microsoft.com)에서 사용할 수 있는 새로운 환경입니다. 이 새로운 환경은 [Microsoft 365 관리 센터](https://portal.office.com/AdminPortal/Home)에서 표시되는 환경과 비슷하고, 디바이스 관리 콘솔의 일부 위치에서 액세스되는 경우 이전 도움말 및 지원 환경을 대체합니다.  
+Intune에 대한 도움말 및 지원에 대한 업데이트는 일부 테넌트에 대한 [Microsoft 365 디바이스 관리 포털](https://devicemanagement.microsoft.com)에서 사용할 수 있는 새로운 환경입니다. 이 새로운 환경은 [Microsoft 365 관리 센터](https://portal.office.com/AdminPortal/Home)에서 표시되는 환경과 비슷하고, 디바이스 관리 콘솔의 일부 위치에서 액세스되는 경우 이전 도움말 및 지원 환경을 대체합니다.  
 
 디바이스 관리 포털에서 **문제 해결** 블레이드를 제외한 **모든 서비스** > **디바이스 관리** 아래에 있는 모든 블레이드에서 **도움말 및 지원**을 선택하면 새로운 환경에 액세스합니다. 콘솔 배너의 오른쪽 위에 있는 **?** 옵션을 사용하여 **문제 해결**과 같은 다른 위치에서 도움말 및 지원에 액세스하는 경우 또는 서비스의 왼쪽 창 목록에서 **도움말 + 지원**을 선택하는 경우 원래 환경에 액세스합니다.  
 
@@ -143,7 +142,7 @@ Intune에 대한 도움말 및 지원에 대한 업데이트는 일부 테넌트
 
 ### <a name="view-context-sensitive-help"></a>상황에 맞는 도움말 보기
 제안된 선택 항목을 선택하거나 고유한 쿼리를 제출한 후에 **솔루션 보기**에 상황에 맞는 결과가 나타납니다. 이러한 결과에는 Intune 관련 자가 진단 지침 및 쿼리 조건에 따라 웹 검색에서 반환된 추가 결과가 모두 포함됩니다.  
-![View-results](./media/get-support/view-results.png)
+![보기 결과 창의 이미지](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>지원 받기
 자가 진단 또는 웹 기반 지침이 문제를 해결하는 데 도움이 되지 않으면 콘솔을 사용하여 이메일 또는 전화 지원 문제를 제기할 수 있습니다.  
@@ -151,16 +150,16 @@ Intune에 대한 도움말 및 지원에 대한 업데이트는 일부 테넌트
 
 - 이메일 요청에서 이메일 주소를 입력하고 필요에 따라 제출에 첨부 파일을 추가할 수 있습니다. **보내기**를 선택하여 요청을 엽니다.  
 
-  ![이메일 요청](./media/get-support/email-support.png)
+  ![이메일 요청 창의 이미지](./media/get-support/email-support.png)
   
 - 전화 요청에서 전화 번호를 입력합니다. 필요에 따라 이메일 주소를 포함하고 제출에 대한 첨부 파일을 추가할 수 있습니다. 전화 걸기를 선택하여 요청을 제출합니다.  
 
-   ![전화 요청](./media/get-support/phone-support.png)
+   ![전화 요청 창의 이미지](./media/get-support/phone-support.png)
 
 ### <a name="view-support-cases"></a>지원 사례 보기
 사용자가 만든 지원 인시던트를 보려면 기록 단추를 선택합니다.  
 
-![지원 사례 보기](./media/get-support/view-support-tickets.png)
+![보기 지원 사례 창의 이미지](./media/get-support/view-support-tickets.png)
 
 - 새 워크플로 사용하여 열 수 있는 지원 사례만 이 워크플로 내에 표시됩니다. 해당 지원 사례를 보려면 새 환경의 일부인 디바이스 관리 콘솔에서 도움말 및 지원 보기를 사용합니다. 이러한 사례에는 8자리 번호가 포함됩니다. Microsoft 365 관리 센터에서 이러한 사례를 볼 수도 있습니다.  
 
@@ -173,5 +172,5 @@ Intune에 대한 도움말 및 지원에 대한 업데이트는 일부 테넌트
 ## <a name="additional-resources"></a>추가 리소스
 - [Microsoft Intune의 담당자 전화 지원](phone-support-contact.md)
 - [청구 및 구독 관리 지원](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-- [볼륨 라이선스](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [볼륨 라이선스](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Intune 문제 해결](help-desk-operators.md)

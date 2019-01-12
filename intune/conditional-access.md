@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune을 사용하는 조건부 액세스
-titlesuffix: ''
+title: Microsoft Intune으로 조건부 액세스 | Microsoft Intune
 description: 사용자, 디바이스 및 앱이 Microsoft Intune에서 회사 리소스에 액세스하기 위해 충족해야 하는 조건을 정의하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1e9e8db76978f9547d10fd4709d74ea809f2c281
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f25fe74c9506d2179c683156821ef9afb218128a
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816568"
 ---
 # <a name="whats-conditional-access"></a>조건부 액세스란?
 
@@ -30,7 +29,7 @@ ms.locfileid: "52184848"
 
 Enterprise Mobility + Security(EMS) 조건부 액세스는 독립 실행형 제품이 아니며 EMS의 일부분인 모든 서비스와 제품에 포함되는 솔루션입니다. EMS 조건부 액세스는 회사 데이터의 보안을 유지할 수 있는 세분화된 액세스 제어 기능을 제공하는 동시에, 사용자에게는 모든 위치와 디바이스에서 업무를 가장 효율적으로 수행할 수 있도록 하는 환경을 제공합니다.
 
-위치, 디바이스, 사용자 상태 및 응용 프로그램 민감도 등을 기반으로 회사 데이터에 대한 액세스를 제한하는 조건을 정의할 수 있습니다.
+위치, 장치, 사용자 상태 및 애플리케이션 민감도 등을 기반으로 회사 데이터에 대한 액세스를 제한하는 조건을 정의할 수 있습니다.
 
 > [!NOTE] 
 > 조건부 액세스의 기능은 [Office 365 서비스](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/)로도 확장 적용됩니다.
@@ -45,7 +44,7 @@ Enterprise Mobility + Security(EMS) 조건부 액세스는 독립 실행형 제�
 
 Intune에서 조건부 액세스를 사용하는 방법은 다음과 같습니다.
 
--   **장치 기반 조건부 액세스**
+-   **디바이스 기반 조건부 액세스**
 
     -   Exchange 온-프레미스에 대한 조건부 액세스
 

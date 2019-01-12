@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429715"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067451"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 보고서 만들기
 
@@ -61,7 +61,7 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop은 [Power
 7. **OData 피드** 창의 URL 상자에 사용자 지정 피드 URL을 붙여넣습니다.
 8. **기본**을 선택합니다.
 
-    ![OData 피드](media/reports-create-01-odatafeed.png)
+    ![테넌트에 대한 Intune Data Warehouse의 OData 피드](media/reports-create-01-odatafeed.png)
 
 9. **확인**을 선택합니다.
 10. **조직 계정**을 선택한 다음 Intune 자격 증명으로 로그인합니다.
@@ -70,7 +70,7 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop은 [Power
 
 11. **연결**을 선택합니다. 탐색기가 열리고 Intune 데이터 웨어하우스에 있는 테이블 목록이 표시됩니다.
 
-    ![탐색기](media/reports-create-02-loadentities.png)
+    ![탐색기의 스크린샷 - Data Warehouse 테이블 목록](media/reports-create-02-loadentities.png)
 
 12. **devices** 및 **ownerTypes** 테이블을 선택합니다.  **로드**를 선택합니다. Power BI에서 데이터를 모델에 로드합니다.
 
@@ -78,7 +78,7 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop은 [Power
 
 여러 테이블을 가져와서 단일 테이블의 데이터뿐만 아니라 여러 테이블의 관련 데이터도 분석할 수 있습니다.  PowerBI에는 관계를 찾고 만들 수 있는 **자동 검색**이라는 기능이 있습니다. 데이터 웨어하우스의 테이블은 PowerBI의 자동 검색 기능을 사용하도록 빌드되어 있습니다. 그러나 PowerBI에서 자동으로 관계를 찾지 않더라도 관계는 계속 관리할 수 있습니다.
 
-![관계 관리](media/reports-create-03-managerelationships.png)
+![테이블 간 관련된 데이터의 관계 관리](media/reports-create-03-managerelationships.png)
 
 1. **관계 관리**를 선택합니다.
 2. PowerBI에서 아직 관계를 검색하지 못했으면 **자동 검색 중...** 을 선택합니다.
@@ -99,7 +99,7 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop은 [Power
 
 이제 조직 내의 디바이스 제조업체의 분포를 보여 주는 시각적 개체가 준비되었습니다.
 
-![데이터가 있는 트리맵](media/reports-create-06-treemapwdata.png)
+![데이터가 있는 트리맵 - 디바이스 제조업체의 분포](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>필터 추가
 
@@ -111,7 +111,7 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop은 [Power
 
    devices 테이블 아래에는 디바이스가 회사 소유인지 또는 개인 소유인지 여부를 나타내는 코드가 포함된 **OwnerTypeKey**라고 하는 데이터 필드가 있습니다. 이 필터에 친숙한 이름을 표시하려면 **ownerTypes** 테이블을 찾고 **ownerTypeName**을 끕니다. 이 예는 데이터 모델에서 테이블 간의 관계를 지원하는 방법을 보여줍니다.
 
-![필터가 있는 트리맵](media/reports-create-08_ownertype.png)
+![필터가 있는 트리맵 - 테이블 간 관계 지원](media/reports-create-08_ownertype.png)
 
 이제 회사 소유 디바이스와 개인 소유 디바이스 간에 이동하여 사용할 수 있는 대화형 필터가 준비되었습니다. 이 필터를 사용하여 분포가 변경되는 상태를 확인합니다.
 

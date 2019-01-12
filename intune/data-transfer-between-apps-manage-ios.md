@@ -1,6 +1,5 @@
 ---
-title: iOS 앱 간의 데이터 전송 관리
-titlesuffix: Microsoft Intune
+title: iOS 앱 간의 데이터 전송 관리 | Microsoft Intune
 description: 앱 간 데이터 전송을 관리하려면 Microsoft Intune에서 모바일 앱 관리를 사용하는 법을 이해합니다.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e252822569723be6cfe18e488f79a7605f21193c
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: bbd0272b37b56f9f9e66cdf00ddc89a827f3c875
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816976"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법
 
@@ -36,11 +35,11 @@ iOS 디바이스의 **관리에서 열기** 기능은 **MDM 채널**을 통해 �
 ##  <a name="use-app-protection-with-ios-apps"></a>iOS 앱에서 앱 보호 사용
 iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 다음과 같은 방법으로 회사 데이터를 보호할 수 있습니다.
 
--   **직원 소유 장치는 MDM 솔루션에서 관리되지 않음:** 앱 보호 정책 설정을 **앱이 데이터를 전송하도록 허용: 정책 관리된 앱**으로 설정할 수 있습니다. 정책 관리 앱의 *여는 위치* 동작에서는 다른 정책 관리 앱만 공유 옵션으로 표시됩니다. 사용자가 기본 메일 앱의 OneDrive에서 첨부 파일로 정책 보호 파일을 보내려고 하는 경우 해당 파일을 읽을 수 없습니다.
+-   **직원 소유 디바이스는 MDM 솔루션에서 관리되지 않음:** 앱 보호 정책 설정을 **앱이 정책 관리 앱에만 데이터를 전송하도록 허용**으로 설정할 수 있습니다. 정책 관리 앱의 *여는 위치* 동작에서는 다른 정책 관리 앱만 공유 옵션으로 표시됩니다. 사용자가 기본 메일 앱의 OneDrive에서 첨부 파일로 정책 보호 파일을 보내려고 하는 경우 해당 파일을 읽을 수 없습니다.
 
--   **Intune에서 관리되는 장치:** Intune에 등록된 장치의 경우 앱 보호 정책이 있는 앱과 Intune을 통해 배포된 다른 관리되는 iOS 앱 간의 데이터 전송은 자동으로 허용됩니다. 다른 앱으로 데이터 전송을 허용하는 방법을 지정하려면 **앱이 데이터를 다른 앱에 전송하도록 허용**을 사용하도록 설정한 다음, 원하는 공유 수준을 선택합니다. 앱이 다른 앱에서 데이터를 수신할 수 있도록 허용하는 방법을 지정하려면 **앱이 다른 앱에서 데이터를 수신할 수 있도록 허용**을 사용하도록 설정한 다음, 원하는 데이터 수신 수준을 선택합니다. **관리에서 열기** 기능을 사용하여 Intune을 통해 배포된 앱 간의 데이터 전송을 제어할 수 있습니다. 앱 데이터를 수신하고 공유하는 방법에 대한 자세한 내용은 [데이터 재배치 설정](app-protection-policy-settings-ios.md#data-protection-settings)을 참조하세요.   
+-   **Intune에서 관리되는 디바이스:** Intune에 등록된 디바이스의 경우 앱 보호 정책이 있는 앱과 Intune을 통해 배포된 다른 관리되는 iOS 앱 간의 데이터 전송은 자동으로 허용됩니다. 다른 앱으로 데이터 전송을 허용하는 방법을 지정하려면 **앱이 데이터를 다른 앱에 전송하도록 허용**을 사용하도록 설정한 다음, 원하는 공유 수준을 선택합니다. 앱이 다른 앱에서 데이터를 수신할 수 있도록 허용하는 방법을 지정하려면 **앱이 다른 앱에서 데이터를 수신할 수 있도록 허용**을 사용하도록 설정한 다음, 원하는 데이터 수신 수준을 선택합니다. **관리에서 열기** 기능을 사용하여 Intune을 통해 배포된 앱 간의 데이터 전송을 제어할 수 있습니다. 앱 데이터를 수신하고 공유하는 방법에 대한 자세한 내용은 [데이터 재배치 설정](app-protection-policy-settings-ios.md#data-protection-settings)을 참조하세요.   
 
--   **타사 MDM 솔루션으로 관리되는 디바이스:** iOS **관리에서 열기** 기능을 사용하여 관리되는 앱으로만 데이터 전송을 제한할 수 있습니다.
+-   **타사 MDM 솔루션에서 관리되는 디바이스:** iOS **관리에서 열기** 기능을 사용하여 관리되는 앱으로만 데이터 전송을 제한할 수 있습니다.
 타사 MDM 솔루션을 사용하여 배포하는 앱도 Intune 앱 보호 정책과 연결되도록 하려면 [사용자 UPN 설정 구성](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 섹션에서 설명된 대로 사용자 UPN 설정을 구성합니다. 사용자 UPN 설정으로 앱을 배포하면 사용자가 회사 계정을 사용하여 로그인할 때 앱 보호 정책이 앱에 적용됩니다.
 
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Microsoft Intune 또는 타사 EMM에 대한 사용자 UPN 설정 구성
@@ -61,7 +60,7 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
 
 ### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>예제 1: Intune 또는 타사 MDM 콘솔의 관리 환경
 
-1. Intune 또는 타사 MDM 공급자의 관리 콘솔로 이동합니다. 등록된 iOS 디바이스에 응용 프로그램 구성 설정을 배포하는 콘솔 섹션으로 이동합니다.
+1. Intune 또는 타사 MDM 공급자의 관리 콘솔로 이동합니다. 등록된 iOS 장치에 애플리케이션 구성 설정을 배포하는 콘솔 섹션으로 이동합니다.
 
 2. [애플리케이션 구성] 섹션에서 다음 설정을 입력합니다.
 

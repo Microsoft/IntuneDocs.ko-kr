@@ -1,5 +1,5 @@
 ---
-title: 앱 보호 정책 로그 검토
+title: 앱 보호 정책 로그 검토 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 앱 보호 로그에서 검토할 수 있는 설정에 대해 알아봅니다.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3e7b6ec1063b4337f44de0a4502bcbf7c2a45edf
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817214"
 ---
 # <a name="review-client-app-protection-logs"></a>클라이언트 앱 보호 로그 검토
 
@@ -39,8 +39,8 @@ ms.locfileid: "52189846"
 
 | 이름                        | 가능한 값                                                                                                                                                                                                                                                                                           | Azure Intune 모바일 애플리케이션 관리 포털의 설정                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AccessRecheckOfflineTimeout | x분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 오프라인 유예 기간<br>참고: 디바이스가 오프라인 상태인 경우 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다.             |
-| AccessRecheckOnlineTimeout  | _x_분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 시간 제한.<br>참고: 디바이스가 온라인 상태인 경우 앱이 시작된 후 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다. |
+| AccessRecheckOfflineTimeout | x분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 오프라인 유예 기간<br>참고: 이는 디바이스가 오프라인 상태인 경우 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다.             |
+| AccessRecheckOnlineTimeout  | _x_분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 시간 제한.<br>참고: 이는 디바이스가 온라인 상태인 경우 앱이 시작된 후 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다. |
 | AppPinDisabled              | 0 = 아니요<br>1 = 예                                                                                                                                                                                                                                                                                           | [액세스] 디바이스 PIN을 관리하는 경우 앱 PIN 사용 안 함.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = 앱이 없음<br>1 = 관리되는 앱<br>2 = 모든 앱                                                                                                                                                                                                                                                              | [데이터 재배치] 이 앱이 다른 앱의 데이터를 수신하도록 허용합니다.                                                                                                                        |
 | AppSharingToLevel           | 0 = 앱이 없음<br>1 = 관리되는 앱<br>2 = 모든 앱                                                                                                                                                                                                                                                              | [데이터 재배치] 이 앱이 다른 앱으로 데이터를 전송하도록 허용합니다.                                                                                                                         |

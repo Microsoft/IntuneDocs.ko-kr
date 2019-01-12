@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: aa447721449b2b3733e20d9f65f0253e9123228b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 761605a74e6aeda65d9c6361b18b51e255873ac1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816534"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Intune과 Better Mobile 통합
 
@@ -62,7 +62,7 @@ Better Mobile 앱 권한 부여 프로세스는 다음과 같습니다.
 1. [Better Mobile 관리 콘솔](https://aad.bmobi.net)로 이동하여 자격 증명으로 로그인합니다.
 2. **통합** > **EMM/MDM** > **계정 추가**를 선택합니다.
 
-     ![Better Mobile 관리 콘솔](media/better_mobile_console.png)
+     ![Better Mobile 관리 콘솔의 이미지](media/better_mobile_console.png)
  
 3. **Intune**을 선택합니다.
 4. **계정 이름** 옆에 설명자를 입력합니다. 

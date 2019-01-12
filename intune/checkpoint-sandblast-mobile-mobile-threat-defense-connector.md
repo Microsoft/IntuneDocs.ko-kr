@@ -1,5 +1,5 @@
 ---
-title: Check Point SandBlast MTD 설정
+title: Check Point SandBlast MTD 설정 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Check Point SandBlast MTD(Mobile Threat Defense)를 사용하여 Intune을 통합하는 방법을 알아봅니다.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f60cd89992eb459849d849aca4b9265d393c29f7
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 4aca991b9cdb665b0c8340b77fb6a854269023ff
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816908"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune과 Check Point SandBlast Mobile Threat Defense 커넥터
 
@@ -31,7 +31,7 @@ Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Check Poin
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Intune과 Check Point SandBlast Mobile이 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 
-Android 및 iOS용 Check Point SandBlast Mobile 앱은 파일 시스템, 네트워크 스택, 디바이스 및 응용 프로그램 원격 분석(사용 가능한 경우)을 캡처한 다음, 원격 분석 데이터를 Check Point SandBlast 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
+Android 및 iOS용 Check Point SandBlast Mobile 앱은 파일 시스템, 네트워크 스택, 장치 및 애플리케이션 원격 분석(사용 가능한 경우)을 캡처한 다음, 원격 분석 데이터를 Check Point SandBlast 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
 
 Intune 디바이스 준수 정책에는 Check Point SandBlast 위험 평가를 기반으로 한 Check Point SandBlast Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다. 디바이스가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 사용자는 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있도록 디바이스에 설치된 Check Point SandBlast 모바일 앱에서 지침을 받습니다.
 
@@ -103,6 +103,6 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 - [Check Point SandBlast Mobile 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [CheckPoint SandBlast Mobile 장치 규정 준수 정책 만들기](mtd-device-compliance-policy-create.md)
+- [CheckPoint SandBlast Mobile 디바이스 규정 준수 정책 만들기](mtd-device-compliance-policy-create.md)
 
 - [CheckPoint SandBlast Mobile MTD 커넥터 사용](mtd-connector-enable.md)

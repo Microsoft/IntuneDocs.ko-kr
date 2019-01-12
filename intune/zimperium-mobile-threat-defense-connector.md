@@ -16,22 +16,22 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817248"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune 및 Zimperium MTD(Mobile Threat Defense) 커넥터 통합
 
 Microsoft Intune과 통합되는 MTD(Mobile Threat Defense) 솔루션인 Zimperium에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 디바이스에서 회사 리소스에 대한 액세스를 제어할 수 있습니다. 위험은 Zimperium 앱을 실행하는 디바이스에서 수집된 원격 분석에 기반하여 평가됩니다.
 
-Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Zimperium 위험 평가에 따라 조건부 액세스 정책을 구성할 수 있습니다. 이 정책을 사용하여 감지된 위협에 따라 비규격 디바이스의 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다.
+Intune 디바이스 규정 준수 정책을 통해 사용하도록 설정된 Zimperium 위험 평가에 따라 조건부 액세스 정책을 구성할 수 있습니다. 위험 평가 정책은 비규격 디바이스가 감지한 위협에 따라 회사 리소스에 액세스하는 것을 허용하거나 차단할 수 있습니다.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune과 Zimperium이 회사 리소스를 어떻게 보호하나요?
 
-Android 및 iOS용 Zimperium 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 디바이스 및 응용 프로그램 원격 분석을 캡처한 다음, 원격 분석 데이터를 Zimperium 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
+Android 및 iOS용 Zimperium 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 장치 및 애플리케이션 원격 분석을 캡처한 다음, 원격 분석 데이터를 Zimperium 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
 
 Intune 디바이스 준수 정책에는 Zimperium 위험 평가에 기반한 Zimperium Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다. 디바이스가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 디바이스에 설치된 Zimperium 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
 
@@ -51,11 +51,11 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 **악성 앱이 발견되면 액세스 차단:**
 
-![감지된 악성 앱](./media/Maliciousapps_blocked_Zimperium.png)
+![감지된 악성 앱의 개념 이미지](./media/Maliciousapps_blocked_Zimperium.png)
 
 **수정 시 액세스 권한 부여됨:**
 
-![감지된 악성 앱에 액세스 권한 부여됨](./media/maliciousapps_unblocked_Zimperium.png)
+![업데이트 관리 후 부여된 액세스 권한의 개념 이미지](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 
@@ -95,7 +95,7 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 -   Zimperium Mobile Threat Defense 구독
 
-    -   자세한 내용은  [Zimperium 웹 사이트](https://www.zimperium.com/zips-mobile-ips) 를 참조하세요.
+    -   자세한 내용은  [Zimperium 웹 사이트](https://www.zimperium.com/zips-mobile-ips)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -103,6 +103,6 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 - [Zimperium 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Zimperium 장치 준수 정책 만들기](mtd-device-compliance-policy-create.md)
+- [Zimperium 디바이스 준수 정책 만들기](mtd-device-compliance-policy-create.md)
 
 - [Zimperium MTD 커넥터 사용](mtd-connector-enable.md)

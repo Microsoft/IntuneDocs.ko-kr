@@ -1,5 +1,5 @@
 ---
-title: 조건부 액세스 문제 해결
+title: 조건부 액세스 문제 해결 | Microsoft Intune
 description: 사용자가 Intune 조건부 액세스를 통해 리소스에 액세스하지 못할 때 수행할 작업입니다.
 keywords: ''
 author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 642a4da6a1ca3c368e90f2d3007c1fc6a068af78
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d24b96408ed02413f25957e2558704385c5e1bfd
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817146"
 ---
 # <a name="troubleshoot-conditional-access"></a>조건부 액세스 문제 해결
 
@@ -32,7 +32,7 @@ Intune 및 조건부 액세스를 사용하여 Exchange Online, SharePoint Onlin
 
 - 디바이스는 Intune에서 등록되고 관리되어야 합니다.
 - 사용자 및 디바이스는 모두 할당된 Intune에서 준수 정책을 준수해야 합니다.
-- 기본적으로 사용자에게는 디바이스 준수 정책이 할당되어야 합니다. **다음으로 할당된 준수 정책이 없는 장치 표시** 설정이 Intune 관리 포털의 **장치 준수** > **준수 정책 설정**에서 구성된 방법에 따라 달라질 수 있습니다.
+- 기본적으로 사용자에게는 디바이스 준수 정책이 할당되어야 합니다. **다음으로 할당된 준수 정책이 없는 디바이스 표시** 설정이 Intune 관리 포털의 **디바이스 준수** > **준수 정책 설정**에서 구성된 방법에 따라 달라질 수 있습니다.
 -   사용자가 Outlook이 아닌 디바이스의 네이티브 메일 클라이언트를 사용하는 경우 Exchange ActiveSync는 디바이스에서 활성화되어야 합니다. 이 작업은 iOS, Windows Phone 및 Android 디바이스에서 자동으로 발생합니다.
 -   Intune Exchange Connector를 제대로 구성해야 합니다. 자세한 내용은 [Microsoft Intune에서 Exchange Connector 문제 해결](troubleshoot-exchange-connector.md)을 참조하세요.
 
@@ -58,7 +58,7 @@ Azure Portal 및 디바이스 인벤토리 보고서에서 각 디바이스의 �
 
 - 디바이스가 Exchange ActiveSync 디바이스로 Intune 관리 콘솔에 표시되는지 확인합니다. 그렇지 않은 경우 Exchange Connector 문제로 인해 디바이스 검색에 실패할 수도 있습니다. 자세한 내용은 [Intune 온-프레미스 Exchange Connector 문제 해결](troubleshoot-exchange-connector.md)을 참조하세요.
 - Exchange Connector에서 디바이스를 차단하기 전에 활성화 (격리) 이메일을 전송합니다. 디바이스가 오프라인 상태이면 활성화 메일을 받지 못할 수도 있습니다. 
-- 디바이스에서 이메일 클라이언트가 **폴링** 대신 **푸시**를 사용하여 이메일을 검색하도록 구성되었는지 확인합니다. 그렇다면 사용자가 해당 이메일을 누락할 수 있습니다. **폴링**으로 전환하여 장치가 이메일을 수신하는지 확인하세요.
+- 디바이스에서 이메일 클라이언트가 **폴링** 대신 **푸시**를 사용하여 이메일을 검색하도록 구성되었는지 확인합니다. 그렇다면 사용자가 해당 이메일을 누락할 수 있습니다. **폴링**으로 전환하여 디바이스가 이메일을 수신하는지 확인하세요.
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>디바이스가 규정을 준수하지 않았지만 사용자가 차단되지 않음
 
@@ -73,7 +73,7 @@ Azure Portal 및 디바이스 인벤토리 보고서에서 각 디바이스의 �
 - 대상 및 제외 그룹을 검토합니다. 사용자가 올바른 대상 그룹에 없거나, 제외 그룹에 있는 경우에는 차단되지 않습니다. 대상 그룹에 있는 사용자의 디바이스만 규정 준수에 대해 확인됩니다.
 - 디바이스가 검색 중인지 확인합니다. 사용자가 Exchange 2013 서버에 있는 동안 Exchange Connector가 Exchange 2010 CAS를 가리키고 있나요? 이런 경우 기본 Exchange 규칙이 허용이면 사용자가 대상 그룹에 있더라도 Intune에서 Exchange에 대한 디바이스 연결을 인식할 수 없습니다.
 - Exchange에서 디바이스 존재/액세스 상태를 확인합니다.
-  - 다음 PowerShell cmdlet을 사용하여 사서함에 대한 모든 모바일 디바이스 목록을 가져옵니다. "Get-ActiveSyncDeviceStatistics -mailbox mbx" 디바이스가 나열되지 않으면 Exchange에 액세스하지 않는 것입니다.
+  - 다음 PowerShell cmdlet을 사용하여 사서함에 대한 모든 모바일 디바이스 목록을 가져옵니다. "Get-ActiveSyncDeviceStatistics -mailbox mbx'. 디바이스가 나열되지 않으면 Exchange에 액세스하지 않는 것입니다.
   - 디바이스가 나열되면 Get-CASmailbox -identity:’upn’ | fl cmdlet을 사용하여 액세스 상태에 대한 자세한 정보를 가져와 Microsoft 지원 서비스에 해당 정보를 제공합니다.
 
 ## <a name="next-steps"></a>다음 단계

@@ -1,6 +1,5 @@
 ---
-title: WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
-titlesuffix: Microsoft Intune
+title: WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포 | Microsoft Intune
 description: Microsoft Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5599e98b9712d30979c327167b19b159d3ff5dc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817316"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
 
@@ -35,9 +34,9 @@ WIP 정책을 추가할 때 몇 가지 개념에 대해 이해해야 합니다.
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>허용되는 앱과 예외 앱 목록
 
--   **보호되는 앱**: 이 정책을 준수해야 하는 앱입니다.
+-   **보호된 앱:** 이러한 앱은 이 정책을 준수해야 하는 앱입니다.
 
--   **예외 앱**: 이 정책에서 예외로 설정되며 제한 없이 회사 데이터에 액세스할 수 있는 앱입니다.
+-   **예외 앱:** 이 정책에서 예외로 설정되며 제한 없이 회사 데이터에 액세스할 수 있는 앱입니다.
 
 ### <a name="types-of-apps"></a>앱의 유형
 
@@ -90,7 +89,7 @@ WIP 앱 보호 정책을 만들려면 먼저 MAM 공급자를 구성해야 합�
 5. **앱 추가**를 선택합니다. **앱 추가** 정보는 앱의 필터링된 목록을 표시합니다. 블레이드 맨 위쪽에 있는 목록을 사용하면 목록 필터를 변경할 수 있습니다.
 6. 회사 데이터에 액세스하려는 각 앱을 선택합니다.
 7. **확인**을 클릭합니다. **보호되는 앱** 블레이드가 업데이트되어 선택한 모든 앱이 표시됩니다.
-8. **Save**을 클릭합니다.
+8. **저장**을 클릭합니다.
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>보호되는 앱 목록에 스토어 앱 추가
 
@@ -103,7 +102,7 @@ WIP 앱 보호 정책을 만들려면 먼저 MAM 공급자를 구성해야 합�
 6. 목록에서 **앱 저장**을 선택합니다.
 7. **이름**, **게시자**, **제품 이름** 및 **작업**에 대한 값을 입력합니다. 앱이 회사 데이터에 액세스할 수 있도록 **작업** 값을 **허용**으로 설정해야 합니다.
 9. **확인**을 클릭합니다. **보호되는 앱** 블레이드가 업데이트되어 선택한 모든 앱이 표시됩니다.
-10. **Save**을 클릭합니다.
+10. **저장**을 클릭합니다.
 
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>보호되는 앱 목록에 데스크톱 앱 추가
 
@@ -116,7 +115,7 @@ WIP 앱 보호 정책을 만들려면 먼저 MAM 공급자를 구성해야 합�
 6. 목록에서 **데스크톱 앱**을 선택합니다.
 7. **이름**, **게시자**, **제품 이름**, **파일**, **최소 버전**, **최대 버전** 및 **작업**에 대한 값을 입력합니다. 앱이 회사 데이터에 액세스할 수 있도록 **작업** 값을 **허용**으로 설정해야 합니다.
 9. **확인**을 클릭합니다. **보호되는 앱** 블레이드가 업데이트되어 선택한 모든 앱이 표시됩니다.
-10. **Save**을 클릭합니다.
+10. **저장**을 클릭합니다.
 
 ## <a name="wip-learning"></a>WIP 학습
 WIP를 통해 보호하려는 앱을 추가한 후에는 **WIP 학습**을 사용하여 보호 모드를 적용해야 합니다.
@@ -125,7 +124,7 @@ WIP를 통해 보호하려는 앱을 추가한 후에는 **WIP 학습**을 사�
 
 WIP 학습은 WIP 지원 앱 및 WIP 알 수 없는 앱을 모니터하는 데 사용할 수 있는 보고서입니다. 알 수 없는 앱은 조직의 IT 부서에서 배포하지 않은 앱입니다. “차단” 모드에서 WIP를 적용하기 전에 생산성 저하를 방지하기 위해 보고서에서 이러한 앱을 내보내 WIP 정책에 추가할 수 있습니다.
 
-<!-- 1631908 --> WIP 지원 앱에 대한 정보뿐 아니라 웹 사이트와 작업 데이터를 공유한 장치 요약도 볼 수 있습니다. 이 정보를 사용하여 그룹 및 사용자 WIP 정책에 추가할 웹 사이트를 확인할 수 있습니다. 요약은 WIP 지원 앱에서 액세스할 수 있는 웹 사이트 URL을 보여줍니다.
+<!-- 1631908 --> WIP 지원 앱에 대한 정보뿐 아니라 웹 사이트와 작업 데이터를 공유한 디바이스 요약도 볼 수 있습니다. 이 정보를 사용하여 그룹 및 사용자 WIP 정책에 추가할 웹 사이트를 확인할 수 있습니다. 요약은 WIP 지원 앱에서 액세스할 수 있는 웹 사이트 URL을 보여줍니다.
 
 WIP 지원 앱 및 WIP 알 수 없는 앱으로 작업하는 경우, 보호되는 앱 목록에 올바른 앱이 있는지 소그룹으로 확인하면서 **자동** 또는 **재정의 허용**으로 시작하는 것이 좋습니다. 이 확인이 완료되면 최종 적용 정책인 **차단**으로 변경할 수 있습니다.
 
@@ -149,7 +148,7 @@ WIP를 해제하고 나면 로컬로 연결된 드라이브에서 WIP 태그가 
 
 1.  **앱 정책** 블레이드에서 정책의 이름을 선택한 다음, **필수 설정**을 선택합니다.
 
-    ![학습 모드 스크린샷](./media/learning-mode-sc1.png)
+    ![학습 모드 창의 스크린샷](./media/learning-mode-sc1.png)
 
 1.  설정을 선택한 다음, **저장**을 선택합니다.
 

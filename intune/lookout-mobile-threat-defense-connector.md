@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune을 사용한 Lookout MTD 커넥터
-titlesuffix: ''
+title: Microsoft Intune을 사용한 Lookout MTD 커넥터 | Microsoft Intune
 description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Lookout MTD(모바일 위협 방어)를 사용하여 Intune을 통합하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179544"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817078"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Intune과 Lookout 모바일 위협 방어 커넥터
 
@@ -63,38 +62,38 @@ Intune과 함께 Lookout Mobile Threat Defense를 사용할 때의 일반적인 
 
 **악성 앱이 발견되면 액세스 차단:**
 
-![디바이스의 악성 앱으로 인해 디바이스가 비규격으로 확인되면 액세스를 차단하는 조건부 액세스 정책을 보여 주는 다이어그램](./media/malicious-apps-blocked.png)
+![악성 앱으로 인해 액세스를 차단하는 정책의 개념 이미지](./media/malicious-apps-blocked.png)
 
 **수정 시 액세스 권한 부여됨:**
 
-![해결 후 디바이스가 규정을 준수하는 것으로 확인되면 조건부 액세스 정책을 통해 액세스를 부여하는 모습을 나타낸 다이어그램](./media/malicious-apps-unblocked.png)
+![업데이트 관리 후 디바이스에 부여된 액세스 권한을 보여주는 개념 이미지](./media/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 메시지 가로채기(man-in-the-middle) 공격과 같은 사용자 네트워크 위협을 검색하고 디바이스 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
 
 **Wi-Fi를 통한 네트워크 액세스 차단:**
 
-![네트워크 위협에 따라 WiFi 액세스를 차단하는 조건부 액세스를 보여 주는 다이어그램](./media/network-wifi-blocked.png)
+![네트워크 위협에 따라 WiFi 액세스 차단을 보여주는 이미지](./media/network-wifi-blocked.png)
 
 **수정 시 액세스 권한 부여됨:**
 
-![위협 해결 시 조건부 액세스를 통해 액세스를 허용하는 모습을 나타낸 다이어그램](./media/network-wifi-unblocked.png)
+![업데이트 관리 후 액세스를 허용하는 조건부 액세스의 개념 이미지](./media/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
 
 메시지 가로채기(man-in-the-middle) 공격 같은 네트워크에 대한 위협을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 
 **네트워크 위협이 감지할 경우 SharePoint Online 차단:**
 
-![발견된 위협에 따라 조건부 액세스를 통해 SharePoint Online에 대한 디바이스의 액세스를 차단하는 모습을 나타낸 다이어그램](./media/network-spo-blocked.png)
+![SharePoint Online에 대한 액세스 차단의 개념 이미지](./media/network-spo-blocked.png)
 
 
 **수정 시 액세스 권한 부여됨:**
 
-![네트워크 위협이 수정된 후 액세스를 허용하는 조건부 액세스를 보여 주는 다이어그램](./media/network-spo-unblocked.png)
+![네트워크 위협이 해결된 후 액세스를 허용하는 개념 이미지](./media/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>다음 단계
 이 솔루션을 구현하기 위해 수행해야 하는 주요 단계는 다음과 같습니다.
 1.  [Lookout 통합 설정](lookout-mtd-connector-integration.md)
 2.  [Intune에서 Lookout Mobile Threat Defense를 사용하도록 설정](mtd-connector-enable.md)
 3.  [Lookout for Work 앱 추가 및 할당](mtd-apps-ios-app-configuration-policy-add-assign.md)
-4.  [Lookout 장치 준수 정책 구성](mtd-device-compliance-policy-create.md)
+4.  [Lookout 디바이스 준수 정책 구성](mtd-device-compliance-policy-create.md)

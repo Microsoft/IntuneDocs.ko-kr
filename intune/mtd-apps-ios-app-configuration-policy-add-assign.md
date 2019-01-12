@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune에 MTD 앱 추가 및 할당
-titleSuffix: ''
+title: Microsoft Intune에 MTD 앱 추가 및 할당 | Microsoft Intune
 description: Intune을 사용하여 Azure Portal에서 MTD 앱, Microsoft Authenticator 앱 및 iOS 구성 정책을 추가합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181176"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996000"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune을 사용하여 MTD(Mobile Threat Defense) 앱 추가 및 할당
 
 > [!NOTE] 
 > 이 항목은 모든 Mobile Threat Defense 파트너에게 적용됩니다.
 
-Intune을 사용하면 최종 사용자가 모바일 디바이스에서 위협이 식별될 때 알림을 받을 수 있도록 MTD 앱을 추가 및 배포하고 위협을 해결하기 위한 지침을 받을 수 있습니다.
+Intune을 사용하면 최종 사용자가 모바일 디바이스에서 위협이 식별될 때 알림을 받을 수 있도록 MTD(Mobile Threat Defense) 앱을 추가 및 배포하고 위협을 해결하기 위한 지침을 받을 수 있습니다.
 
 
 ## <a name="before-you-begin"></a>시작하기 전에
@@ -38,13 +37,12 @@ Intune을 사용하면 최종 사용자가 모바일 디바이스에서 위협�
   -   [Intune에 앱 추가](apps-add.md)
   -   [Intune에 iOS 앱 구성 정책 추가](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)
   -   [Intune을 사용하여 앱 할당](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)
-  -   [iOS 앱 구성 정책 추가](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)
 
 > [!TIP]
 > Intune 회사 포털은 사용자의 ID가 Azure AD에서 확인될 수 있도록 Android 디바이스에서 브로커로 작동합니다.
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>iOS용 Microsoft Authenticator 구성
-iOS 디바이스의 경우 사용자의 ID가 Azure AD에서 확인될 수 있도록 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)가 필요합니다. 또한 Intune에서 사용할 MTD iOS 앱에 신호를 보내는 iOS 앱 구성 정책이 필요합니다.
+iOS 디바이스의 경우 사용자의 ID가 Azure AD에서 확인될 수 있도록 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)가 필요합니다. 또한 Intune과 함께 사용하는 MTD iOS 앱을 설정하는 iOS 앱 구성 정책이 필요합니다.
 
 [Microsoft Intune에 iOS 스토어 앱 추가](store-apps-ios.md) 지침을 참조하세요. **앱 정보 구성** 섹션의 **12단계**에서 이 [Microsoft Authenticator 앱 스토어 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)을 사용합니다.
 
@@ -74,9 +72,9 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 
     - **Lookout for Work iOS 앱 사용자에 대해 Azure AD 인증을 사용합니다.**
 
-        1. [Azure Portal](https://portal.azure.com)로 이동해서 자격 증명으로 로그인한 다음 응용 프로그램 페이지를 탐색합니다.
+        1. [Azure Portal](https://portal.azure.com)로 이동해서 자격 증명으로 로그인한 다음 애플리케이션 페이지를 탐색합니다.
 
-        2. **Lookout for Work iOS 앱**을 **네이티브 클라이언트 응용 프로그램**으로 추가합니다.
+        2. **Lookout for Work iOS 앱**을 **네이티브 클라이언트 애플리케이션**으로 추가합니다.
 
         3. **com.lookout.enterprise.yourcompanyname**을 IPA에 서명할 때 선택한 고객 번들 ID로 바꿉니다.
 
@@ -145,11 +143,11 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 앱 구성 정책
 
-- [iOS 앱 구성 정책 사용](app-configuration-policies-use-ios.md) 항목에 설명된 대로 iOS 앱 구성 정책을 만듭니다.
+- [iOS 앱 구성 정책 사용](app-configuration-policies-use-ios.md) 문서에 설명된 대로 iOS 앱 구성 정책을 만듭니다.
 
 ### <a name="sep-mobile-app-configuration-policy"></a>SEP Mobile 앱 구성 정책
 
--   [Symantec Endpoint Protection 관리 콘솔](https://aad.skycure.com)에서 이전에 구성된 Azure AD 계정, 즉 Intune 클래식 포털에 로그인하는 데 사용되는 계정과 같은 계정을 사용해야 합니다.
+-   [Symantec Endpoint Protection 관리 콘솔](https://aad.skycure.com)에서 이전에 구성한 것과 동일한 Azure AD 계정을 사용합니다. 이 계정은 Intune 클래식 포털에 로그인하는 데 사용되는 계정과 같아야 합니다.
 
 -   iOS 앱 구성 정책 파일을 **다운로드**해야 합니다. 
     -   [Symantec Endpoint Protection 관리 콘솔](https://aad.skycure.com)로 이동하고 관리자 자격 증명을 사용하여 로그인합니다.
@@ -214,4 +212,4 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-- [MTD 장치 준수 정책 구성](mtd-device-compliance-policy-create.md)
+- [MTD 디바이스 준수 정책 구성](mtd-device-compliance-policy-create.md)

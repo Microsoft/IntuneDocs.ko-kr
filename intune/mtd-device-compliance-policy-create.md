@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune을 사용하여 MTD 디바이스 준수 정책 만들기
-titlesuffix: ''
+title: Microsoft Intune을 사용하여 MTD 디바이스 규정 준수 정책 만들기 | Microsoft Intune
 description: MTD 파트너 위협 수준을 사용하는 Intune 디바이스 준수 정책을 만들어서 모바일 디바이스가 회사 리소스에 액세스할 수 있는지 확인합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aaa02c397ca17011dd231c98018ca86c190f49ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5962ff96b9c92bcf69a75221f1b7c5a5ab2f2634
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186183"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995983"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune을 사용하여 MTD(Mobile Threat Defense) 디바이스 준수 정책 만들기
 
 > [!NOTE] 
 > 이 정보는 모든 Mobile Threat Defense 파트너에게 적용됩니다.
 
-Intune 및 MTD를 사용하면 위협을 검색하고 모바일 디바이스의 위험을 평가할 수 있습니다. 위험을 평가하는 Intune 디바이스 준수 정책 규칙을 만들어 디바이스가 정책을 준수하는지 여부를 확인할 수 있습니다. 그런 다음 조건부 액세스 정책을 사용하여 디바이스 준수 여부에 따라 액세스를 차단할 수 있습니다.
+Intune 및 MTD를 사용하면 위협을 검색하고 모바일 디바이스의 위험을 평가할 수 있습니다. 위험을 평가하는 Intune 디바이스 준수 정책 규칙을 만들어 디바이스가 정책을 준수하는지 여부를 확인할 수 있습니다. 그런 다음, [조건부 액세스 정책](create-conditional-access-intune.md)을 사용하여 디바이스 규정 준수 여부에 따라 액세스를 차단할 수 있습니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -46,19 +45,19 @@ MTD를 사용한 디바이스 준수 정책에 대한 필수 조건:
 
 3.  **Intune**을 선택합니다. **Intune 대시보드**가 열립니다.
 
-4. **Intune 대시보드**에서 **장치 준수**를 선택한 다음 **관리** 섹션에서 **정책**을 선택합니다.
+4. **Intune 대시보드**에서 **디바이스 준수**를 선택한 다음 **관리** 섹션에서 **정책**을 선택합니다.
 
-5.  **정책 만들기**를 선택하고 장치 준수 **이름**, **설명**을 입력한 다음 **플랫폼**을 선택하고 **설정** 섹션에서 **구성**을 선택합니다.
+5.  **정책 만들기**를 선택하고 디바이스 준수 **이름**, **설명**을 입력한 다음 **플랫폼**을 선택하고 **설정** 섹션에서 **구성**을 선택합니다.
 
-6.  **준수 정책** 창에서 **장치 상태**를 선택합니다.
+6.  **준수 정책** 창에서 **디바이스 상태**를 선택합니다.
 
-7.  **장치 상태** 창의 **장치가 장치 위협 수준 이하여야 함** 아래에 있는 드롭다운 목록에서 Mobile Threat Level을 선택합니다.
+7.  **디바이스 상태** 창의 **디바이스가 디바이스 위협 수준 이하여야 함** 아래에 있는 드롭다운 목록에서 Mobile Threat Level을 선택합니다.
 
-    a.  **보안됨**: 가장 안전한 수준입니다. 디바이스가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 디바이스는 비규격으로 평가됩니다.
+    a.  **보안**: 이 수준이 가장 안전합니다. 디바이스가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 디바이스는 비규격으로 평가됩니다.
 
-    b.  **낮음**: 낮은 수준의 위협만 있는 경우 해당 장치는 규격 장치입니다. 더 높은 수준의 위협이 발생하면 디바이스는 규정 비준수 상태가 됩니다.
+    b.  **낮음**: 낮은 수준의 위협만 있는 디바이스는 규격 디바이스입니다. 더 높은 수준의 위협이 발생하면 디바이스는 규정 비준수 상태가 됩니다.
 
-    c.  **보통**: 낮음 또는 보통 수준의 위협이 발견되는 장치는 규격 장치입니다. 높은 수준의 위협이 검색되는 경우 해당 디바이스는 비규격으로 간주됩니다.
+    c.  **보통**: 낮음 또는 보통 수준의 위협이 있는 디바이스는 규격 디바이스입니다. 높은 수준의 위협이 검색되는 경우 해당 디바이스는 비규격으로 간주됩니다.
 
     d.  **높음**: 보안이 가장 취약한 수준입니다. 이 수준은 모든 위협 수준을 허용하며 보고용으로만 Mobile Threat Defense를 사용합니다. 디바이스에 MTD 앱이 이 설정으로 활성화되어 있어야 합니다.
 

@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune과 Symantec 통합 설정
-titlesuffix: ''
+title: Microsoft Intune과 Symantec 통합 설정 | Microsoft Intune
 description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Microsoft Intune을 사용하여 Symantec Endpoint Protection Mobile 솔루션을 설정하는 방법입니다.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4b519c30f432a6d8584c2bd5bca94ead95a862b1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817350"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Intune과 Symantec Endpoint Protection Mobile 통합 설정
 
@@ -41,11 +40,11 @@ Symantec 문서 [Setting up your network configuration](https://portal.skycure.c
 
 SEP Mobile은 Intune과의 통합을 두 가지 모드로 지원합니다.
 
--   **읽기 전용 통합(기본 설정):** Azure Active Directory에서 장치를 인벤토리에 포함하고 Symantec Endpoint Protection Mobile 관리 콘솔에서 해당 정보를 채우기만 합니다.
+-   **읽기 전용 통합(기본 설정):** Azure Active Directory에서 디바이스를 인벤토리에 포함하고 Symantec Endpoint Protection Mobile 관리 콘솔에서 해당 정보를 채우기만 합니다.
 <br>
     -   Symantec Endpoint Protection Mobile 관리 콘솔에서 **Intune에 디바이스 상태 및 위험 보고** 및 **Intune에 보안 문제도 보고** 상자가 선택되지 않은 경우 통합은 읽기 전용이므로 Intune에서 디바이스 상태(준수 또는 미준수)가 변경되지 않습니다.
 <br></br>
--   **전체 통합:** 장치의 위험 및 보안 문제 세부 정보에 대해 SEP Mobile에서 보고하도록 허용합니다. 이렇게 하면 두 클라우드 서비스 간 양방향 통신이 이루어집니다.
+-   **전체 통합:** 디바이스의 위험 및 보안 문제 세부 정보에 대해 SEP Mobile에서 보고하도록 허용합니다. 이렇게 하면 두 클라우드 서비스 간 양방향 통신이 이루어집니다.
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile 앱을 Azure AD 및 Intune과 함께 사용하는 방법은 무엇인가요?
 
@@ -68,7 +67,7 @@ SEP Mobile은 Intune과의 통합을 두 가지 모드로 지원합니다.
 
 4.  **iOS 앱** 옆에 있는 **Active Directory에 추가**를 선택합니다.
 
-    ![[Symantec Endpoint Protection Mobile 관리 콘솔]에 있는 iOS 앱 이미지](./media/symantec-portal-basic-add.png)
+    ![Symantec Endpoint Protection Mobile 관리 콘솔의 이미지](./media/symantec-portal-basic-add.png)
 
 5.  로그인 페이지가 열리면 Intune 자격 증명을 입력한 다음, **동의**를 선택합니다.
 
@@ -90,7 +89,7 @@ SEP Mobile을 실행하는 모든 디바이스가 포함된 Azure AD 보안 그�
 
 SEP Mobile은 Mobile Threat Defense 서비스를 실행하는 디바이스를 Azure AD 보안 그룹과 동기화합니다.
 
-![SEP Mobile 관리 콘솔에서 완료된 보안 그룹 구성을 보여주는 이미지](./media/symantec-portal-basic-status.png)
+![SEP Mobile 관리 콘솔의 보안 그룹 구성 이미지](./media/symantec-portal-basic-status.png)
 
 ## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>Intune과 SEP Mobile 간의 전체 통합을 설정하려면
 

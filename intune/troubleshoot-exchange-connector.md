@@ -1,11 +1,11 @@
 ---
-title: Exchange Connector 문제 해결
+title: Exchange 커넥터 문제 해결 | Microsoft Intune
 description: Intune 온-프레미스 Exchange Connector와 관련된 문제를 해결합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 06/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85b4764ef5797ad592744e3c519f82f3f1cdd1bb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fecdda5467c83ab12ca921e86259884171e07819
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190068"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816551"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune 온-프레미스 Exchange Connector 문제 해결
 

@@ -1,5 +1,5 @@
 ---
-title: Android 앱 보호 정책 설정
+title: Android 앱 보호 정책 설정 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 이 항목에서는 Android 디바이스에 대한 앱 보호 정책 설정을 설명합니다.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 99c72eeb587c7718b076183170436b29dd7dccac
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: 8505560527a8ea1b5d75eef5f7c3423d6a2d6a7d
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817401"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune의 Android 앱 보호 정책 설정
 이 문서에서는 Android 디바이스에 대한 앱 보호 정책 설정을 설명합니다. 설명하는 정책 설정은 Azure Portal의 **설정** 블레이드에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.

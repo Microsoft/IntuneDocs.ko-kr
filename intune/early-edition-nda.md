@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/3/2018
+ms.date: 01/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 94125ced318f304e5b2bdc8f09472280fc05b08a
+ms.sourcegitcommit: 662afec5e87639a7f541bb89700cc0fec5037bb0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642900"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54069356"
 ---
-# <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune 초기 버전 - 2018년 12월
+# <a name="the-early-edition-for-microsoft-intune---january-2019"></a>Microsoft Intune 초기 버전 - 2019년 1월
 
 > [!Note]
 > NDA 알림: Intune에 대해 다음 변경 사항을 개발 중입니다. 이 정보는 매우 제한된 기준에 따라 NDA에서 공유됩니다. Twitter, UserVoice, Reddit 등과 같은 소셜 미디어 또는 공개 웹 사이트에 이 정보를 게시하지 마세요. 
@@ -40,6 +40,45 @@ ms.locfileid: "53642900"
 -->
  
 ## <a name="intune-in-the-azure-portal"></a>Azure Portal의 Intune
+
+<!-- 1901 start -->
+
+### <a name="android-enterprise-apps----1352553----"></a>Android Enterprise 앱 <!-- 1352553  -->
+Microsoft Intune에서 관리되는 Google Play 앱을 삭제할 수 있습니다. 관리되는 Google Play 앱을 삭제하려면 Azure Portal에서 Microsoft Intune을 열고 **클라이언트 앱** > **앱**을 선택합니다. 앱 목록에서 관리되는 Google Play 앱의 오른쪽에 있는 줄임표(...)를 선택한 다음, 표시된 목록에서 **삭제**를 선택합니다. 앱 목록에서 관리되는 Google Play 앱을 삭제하면 관리되는 Google Play 앱이 자동으로 승인되지 않습니다.
+
+### <a name="managed-google-play-app-type----1352580---"></a>관리되는 Google Play 앱 유형 <!-- 1352580 -->
+**관리되는 Google Play** 앱 형식을 사용하면 [관리되는 Google Play 앱](https://play.google.com/work/search?q=microsoft&c=apps)을 Intune에 추가할 수 있습니다. Intune 관리자는 이제 Intune 내에서 승인된 관리되는 Google Play 앱을 찾기, 검색, 승인, 동기화 및 할당할 수 있습니다. 더 이상 관리되는 Google Play 콘솔에 별도로 이동할 필요가 없으며, 더 이상 재인증할 필요가 없습니다. Intune에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다. **앱 유형** 목록에서 앱 유형으로 **관리되는 Google Play**를 선택합니다.
+
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Android 회사 소유의 완전 관리형 디바이스 지원 미리 보기 <!-- 1574342  -->
+Intune은 디바이스가 IT 부서에서 긴밀하게 관리되고 개별 사용자와 관련된 회사 소유 “디바이스 소유자” 시나리오인 완전 관리형 Android 디바이스를 지원합니다. 이를 통해 관리자는 전체 디바이스를 관리하고, 확장된 범위의 정책 제어를 회사 프로필에 사용할 수 없게 할 수 있고 사용자가 관리형 Google Play의 앱만 설치하도록 제한합니다. Android 완전 관리형 디바이스를 설정하려면 **디바이스 등록** > **Android 등록** > **회사 소유의 완전 관리형 사용자 디바이스**로 이동합니다. 이 기능은 미리 보기에 있습니다. 인증서, 규정 준수 및 조건부 액세스와 같은 일부 Intune 기능은 현재 Android 완전 관리형 사용자 디바이스에서 사용할 수 없습니다.
+
+### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660----"></a>온라인 라이선스가 부여된 비즈니스용 Microsoft Store 앱 배포 <!-- 16726660  -->
+디바이스 컨텍스트에서 필요로 하는 온라인 라이선스가 부여된 비즈니스용 Microsoft Store 앱을 할당할 수 있습니다. 이 방식으로 비즈니스용 Microsoft Store 앱을 배포하면 디바이스의 모든 사용자에 대해 앱을 설치할 수 있습니다. 이 기능은 Windows 10 RS4 이상 데스크톱 디바이스에만 적용됩니다. 디바이스 컨텍스트에 설치하는 옵션은 MSFB 온라인 라이선스가 부여된 앱에 대한 클라이언트 앱 할당 페이지에서 사용할 수 있습니다.
+
+### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470----"></a>설정 도우미 수행 중에 일부 화면을 건너뛰도록 프로필 구성 <!-- 2276470  -->
+macOS 등록 프로필을 만들 경우 사용자가 설정 도우미를 수행할 때 다음 화면 중 하나를 건너뛰도록 구성할 수 있습니다.
+- Android 마이그레이션
+- 표시 색상
+- 개인 정보 취급 방침
+- iCloudStorage
+
+### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522----"></a>Autopilot 프로필을 모든 디바이스 가상 그룹에 할당 <!--2715522  -->
+Autopilot 프로필을 모든 디바이스 가상 그룹에 할당할 수 있습니다. 그렇게 하려면 **디바이스 등록** > **Windows 등록** > **배포 프로필** &gt; 프로필 선택 &gt; **할당**을 선택하고 **할당 대상**에서 **모든 디바이스**를 선택합니다. Autopilot 프로필에 대한 자세한 내용은 [Windows Autopilot을 사용하여 Windows 디바이스 등록](enrollment-autopilot.md)을 참조하세요.
+
+### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324----"></a>디바이스 구성 프로필을 사용하여 감독되는 iOS 디바이스에서 배경 화면 사용자 지정 <!-- 2809324  -->
+iOS 디바이스용 디바이스 구성 파일을 만들 때 프로필 형식에 대한 **디바이스 구성** > **프로필** > **프로필 만들기** > **iOS** 플랫폼용 > **디바이스 제한**에서 일부 설정을 허용하고 제한할 수 있습니다. 이 업데이트에는 관리자가 배경 무늬로 .png, .jpg 또는 .jpeg 이미지를 사용하고, 이미지를 미리 보고 사용자가 배경 무늬를 변경하지 못하도록 차단할 수 있는 새로운 **배경 무늬** 설정이 포함되어 있습니다. 배경 무늬 설정은 감독되는 디비이스에만 적용됩니다. 현재 설정 목록은 [iOS 디바이스 제한 설정](device-restrictions-ios.md)을 참조하세요.
+
+### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Win32 앱에 대한 알림 메시지 <!-- 3136566   -->
+앱 할당마다 최종 사용자 알림 메시지를 표시하지 않을 수 있습니다. Intune에서 **클라이언트 앱** > **앱** > 앱 선택 > **할당** > **포함 그룹**을 선택합니다. 
+
+### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396---"></a>Bluetooth를 통한 연락처 공유가 디바이스 제한 사항 > Android Enterprise에 대한 디바이스 소유자에서 제거됨 <!-- 3598396 -->
+Android Enterprise 디바이스용 디바이스 제한 프로필을 만들 때 **Bluetooth를 통한 연락처 공유** 설정이 있습니다. 이 업데이트에서는 **Bluetooth를 통한 연락처 공유** 설정이 제거됩니다(**디바이스 구성** > **프로필**  >  **프로필 만들기** > **Android Enterprise** 플랫폼용 > **디바이스 제한 사항 > 디바이스 소유자** 프로필 유형의 경우 > **일반**). 
+
+**Bluetooth를 통한 연락처 공유** 설정은 Android Enterprise 디바이스 소유자 관리에 대해 지원되지 않습니다. 따라서 이 설정을 제거하면 사용자 환경에서 이 설정을 활성화하고 구성하더라도 디비이스나 테넌트에 영향을 주지 않습니다.
+
+현재 설정 목록을 보려면 [기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정](device-restrictions-android-for-work.md)으로 이동합니다.
+
+적용 대상: Android Enterprise 디바이스 소유자
 
 <!-- 1812 start -->
 
@@ -75,8 +114,9 @@ Windows 10 이상 디바이스에서는 contoso.com과 같은 도메인 확인�
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune 앱 SDK는 256비트 암호화 키를 지원함 <!-- 1832174 -->
 Android용 Intune 앱 SDK는 앱 보호 정책에서 암호화를 사용하도록 설정할 때 256비트 암호화 키를 사용합니다. SDK는 이전 SDK 버전을 사용하는 콘텐츠 및 앱과 호환성을 위해 128비트 키 지원을 계속 제공합니다.
 
-### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Intune 프로필에서 공유 PC 설정 사용 <!-- 1907917 -->
+### <a name="enabled-shared-pc-settings-in-intune-profile----1907917-1063203---"></a>Intune 프로필에서 공유 PC 설정 사용 <!-- 1907917, 1063203 -->
 현재는 사용자 지정 OMA-URI 설정을 사용하여 Windows 10 데스크톱 디바이스에서 공유 PC 설정을 구성할 수 있습니다. 새 프로필을 추가하여 공유 PC 설정을 구성합니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10 이상** > **공유 다중 사용자 디바이스**).
+
 적용 대상: Windows 10 이상, Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune 정책에서 인증 방법 및 회사 포털 앱 설치를 업데이트함 <!-- 1927359 -->
@@ -113,10 +153,6 @@ Windows 10 업데이트 링의 경우 다음을 수행할 수 있습니다.
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>일부 BitLocker 설정은 Windows 10 Pro Edition을 지원함 <!-- 2727036 -->
 BitLocker를 포함하여 Windows 10 디바이스에서 Endpoint Protection 설정을 설정하는 구성 프로필을 만들 수 있습니다. 이를 통해 BitLocker 설정에 대한 Windows 10 Professional Edition 지원이 추가됩니다. 현재 Windows 10 에디션 설정을 보려면 [Windows 10용 Endpoint Protection 설정](endpoint-protection-windows-10.md#windows-encryption)을 참조하세요.
-
-
-### <a name="intune-device-reporting-fields----2748738---"></a>Intune 디바이스 보고 필드 <!-- 2748738 -->
-Intune은 Android 제조업체, 모델 및 보안 패치 버전을 비롯한 추가 디바이스 보고 필드와 iOS 모델을 제공합니다. Intune에서 이러한 필드를 사용하려면 **클라이언트 앱** > **앱 보호 상태**를 선택하고 **앱 보호 보고서: iOS, Android**를 선택합니다. 또한 이러한 매개 변수를 사용하여 디바이스 제조업체(Android)의 **허용** 목록, 디바이스 모델(Android 및 iOS)의 **허용** 목록 및 최소 Android 보안 패치 버전 설정을 구성할 수 있습니다. 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Intune 디바이스 보고 필드 <!-- 2748738 -->
 Intune은 Android 제조업체, 모델 및 보안 패치 버전을 비롯한 추가 디바이스 보고 필드와 iOS 모델을 제공합니다. Intune에서 이러한 필드를 사용하려면 **클라이언트 앱** > **앱 보호 상태**를 선택하고 **앱 보호 보고서: iOS, Android**를 선택합니다. 또한 이러한 매개 변수를 사용하여 디바이스 제조업체(Android)의 **허용** 목록, 디바이스 모델(Android 및 iOS)의 **허용** 목록 및 최소 Android 보안 패치 버전 설정을 구성할 수 있습니다. 
@@ -155,6 +191,8 @@ Intune의 관리 템플릿(**디바이스 구성** > **관리 템플릿**)은 �
 관리 템플릿은 공개 미리 보기로 제공 됩니다. 관리 템플릿은 **디바이스 구성** > **관리 템플릿**에서 **디바이스 구성** > **프로필** >**프로필 만들기** > **플랫폼**에서 **Windows 10 이상** 선택, **프로필 유형**에서 **관리 템플릿** 선택으로 이동됩니다.
 보고는 사용하도록 설정됩니다. 적용 대상: Windows 10 이상
 
+### <a name="intune-macos-company-portal-dark-mode----3300524---"></a>Intune macOS 회사 포털 어두운 모드 <!-- 3300524 -->
+Intune macOS 회사 포털은 이제 macOS용 어두운 모드를 지원합니다. macOS 10.14 이상 디바이스에서 어두운 모드를 활성화하면 회사 포털은 해당 모드를 리플렉션하는 색으로 모양을 조정합니다.
 
 <!-- 1810 start -->
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bfde1e935c782643e06030659082907365b1903e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e3d0b47bcb8ecbf3d8f76a83f0247f98c0c698f3
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179995"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006355"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
@@ -43,17 +43,17 @@ Microsoft Intune에서 앱 구성 정책을 사용하여 iOS 또는 Android 앱�
 구성 설정은 앱에서 확인할 때마다 사용됩니다. 일반적으로 앱은 사용자가 앱을 처음 실행할 때 구성 설정을 확인합니다.
 
 Intune을 사용한 앱 구성을 사용하는 방법에는 두 가지 옵션이 있습니다.
- - **관리 장치** - 장치는 MDM(모바일 장치 관리) 공급자로 Intune에서 관리됩니다.
- - **관리되는 앱** - 앱이 장치 등록 없이 관리됩니다.
+ - **관리 디바이스** - 디바이스는 MDM(모바일 디바이스 관리) 공급자로 Intune에서 관리됩니다.
+ - **관리되는 앱** - 앱이 디바이스 등록 없이 관리됩니다.
 
 > [!NOTE]
-> Microsoft Intune 관리자는 관리되는 디바이스에서 Microsoft Office 응용 프로그램에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 디바이스에서 개인 계정을 차단할 수 있습니다. 지원 애플리케이션이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.
+> Microsoft Intune 관리자는 관리되는 장치에서 Microsoft Office 애플리케이션에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 디바이스에서 개인 계정을 차단할 수 있습니다. 지원 애플리케이션이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.
 
 ## <a name="apps-that-support-app-configuration"></a>앱 구성을 지원하는 앱
 
 앱 구성 정책을 지원하는 앱에서 해당 정책을 사용할 수 있습니다. Intune에서 앱 구성을 지원하려면 앱 구성 사용을 지원하도록 앱을 작성해야 합니다. 자세한 내용은 앱 공급업체에 문의하세요.
 
-Intune 앱 SDK를 앱에 통합하거나 앱이 개발된 후 앱을 래핑하여 기간 업무 앱을 준비할 수 있습니다. iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱을 앱 구성 정책에 사용할 수 있도록 설정할 수 있습니다. Intune 앱 SDK는 앱 개발자에게서 필요한 코드 변경의 양을 최소화하려고 합니다. 자세한 내용은 [Intune 앱 SDK 개요](app-sdk.md)를 참조하세요.
+Intune 앱 SDK를 앱에 통합하거나 앱이 개발된 후 앱을 래핑하여 기간 업무 앱을 준비할 수 있습니다. iOS와 Android 둘 다에 사용할 수 있는 Intune App SDK를 통해 앱을 Intune 앱 구성 정책에 사용할 수 있도록 설정할 수 있습니다. Intune 앱 SDK는 앱 개발자에게서 필요한 코드 변경의 양을 최소화하려고 합니다. 자세한 내용은 [Intune 앱 SDK 개요](app-sdk.md)를 참조하세요.
 
 ## <a name="graph-api-support-for-app-configuration"></a>앱 구성에 대한 Graph API 지원
 
@@ -63,9 +63,9 @@ Intune 앱 SDK를 앱에 통합하거나 앱이 개발된 후 앱을 래핑하�
 
 ### <a name="managed-devices"></a>관리되는 디바이스
 
- - iOS 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리되는 iOS 장치용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.
- - Android 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리되는 Android 장치용 앱 구성 정책 추가](app-configuration-policies-use-android.md)를 참조하세요.
+ - iOS 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리되는 iOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.
+ - Android 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리되는 Android 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-android.md)를 참조하세요.
 
 ### <a name="managed-apps"></a>관리되는 앱
 
- - 관리되는 앱으로 앱 구성을 사용하는 방법을 알아봅니다. [장치 등록 없이 관리되는 앱용 앱 구성 정책 추가](app-configuration-policies-managed-app.md)를 참조하세요.
+ - 관리되는 앱으로 앱 구성을 사용하는 방법을 알아봅니다. [디바이스 등록 없이 관리되는 앱용 앱 구성 정책 추가](app-configuration-policies-managed-app.md)를 참조하세요.

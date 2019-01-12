@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: 8eeb55ca9e2c698d2d9e1814e9ea17f779326732
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 313c20699c30d20d1bbc9bb6aea9189a83b61f53
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816636"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Intune과 Better Mobile Threat Defense 커넥터 사용
 
@@ -48,7 +48,7 @@ Intune 디바이스 준수 정책에는 Better Mobile 위험 평가에 기반을
 
 **악성 앱이 발견되면 액세스 차단:**
 
-![감지된 악성 앱](./media/better_mobile_maliciousapps_blocked.png)
+![감지된 악성 앱을 보여주는 이미지](./media/better_mobile_maliciousapps_blocked.png)
 
 **수정 시 액세스 권한 부여됨:**
 
@@ -56,7 +56,7 @@ Intune 디바이스 준수 정책에는 Better Mobile 위험 평가에 기반을
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 
-**메시지 가로채기(man-in-the-middle)** 공격과 같은 사용자 네트워크 위협을 검색하고 장치 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
+**메시지 가로채기(man-in-the-middle)** 공격과 같은 사용자 네트워크 위협을 검색하고 디바이스 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
 
 **Wi-Fi를 통한 네트워크 액세스 차단:**
 
@@ -64,11 +64,11 @@ Intune 디바이스 준수 정책에는 Better Mobile 위험 평가에 기반을
 
 **수정 시 액세스 권한 부여됨:**
 
-![수정 시 액세스 권한 부여됨](./media/better_mobile_network_wifi_unblocked.png)
+![수정 시 부여된 액세스 권한을 보여주는 이미지](./media/better_mobile_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
 
-**메시지 가로채기(man-in-the-middle)** 공격 같은 네트워크에 대한 위협을 감지하여, 장치 위험에 따라 회사 파일 동기화를 금지합니다.
+**메시지 가로채기(man-in-the-middle)** 공격 같은 네트워크에 대한 위협을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 
 **네트워크 위협이 감지할 경우 SharePoint Online 차단:**
 
@@ -100,6 +100,6 @@ Intune 디바이스 준수 정책에는 Better Mobile 위험 평가에 기반을
 
 - [Better Mobile 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Better Mobile 장치 준수 정책 만들기](mtd-device-compliance-policy-create.md)
+- [Better Mobile 디바이스 준수 정책 만들기](mtd-device-compliance-policy-create.md)
 
 - [Better Mobile MTD 커넥터 사용 설정](mtd-connector-enable.md)

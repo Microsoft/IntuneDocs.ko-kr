@@ -15,12 +15,12 @@ ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c6ab669b1f9331d0bd0a70ca5f86ac7f3f190fb6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bda8512bd28351c384bfe53b46db62e5a86fe9bd
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817282"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Intune과 NAC(네트워크 액세스 제어) 통합
 
@@ -36,7 +36,7 @@ NAC 솔루션은 액세스 제어 결정을 내리기 위해 Intune에서 디바
 
 ## <a name="feature-behaviors"></a>기능 동작
 
-Intune에 능동적으로 동기화하는 디바이스는 **준수** / **비준수**에서 **동기화되지 않음**(또는 **알 수 없음**)으로 이동할 수 없습니다. **알 수 없음** 상태는 아직 준수 여부가 평가되지 않은 새로 등록된 장치에 예약되었습니다.
+Intune에 능동적으로 동기화하는 디바이스는 **준수** / **비준수**에서 **동기화되지 않음**(또는 **알 수 없음**)으로 이동할 수 없습니다. **알 수 없음** 상태는 아직 준수 여부가 평가되지 않은 새로 등록된 디바이스에 예약되었습니다.
 
 리소스에 대한 액세스가 차단된 디바이스의 경우, 차단 서비스가 모든 사용자를 [관리 포털](https://portal.manage.microsoft.com)로 리디렉션하여 디바이스가 차단된 이유를 확인할 수 있도록 해야 합니다.  사용자가 이 페이지를 방문하면 해당 디바이스의 준수 여부가 동기적으로 재평가됩니다.
 
@@ -48,7 +48,7 @@ NAC는 조건부 액세스와 연동하여 액세스 제어 결정을 제공합�
 
 다음 목록은 Intune과 통합된 경우 NAC 통합의 작동 방식에 대한 개요입니다. 처음 세 단계인 1-3단계에서는 온보딩 프로세스에 대해 설명합니다. NAC 솔루션이 Intune과 통합된 후 4-9단계에서는 지속적인 작업을 설명합니다.
 
-![NAC와 Intune의 연동 방식](./media/ca-intune-common-ways-2.png)
+![Intune과 NAC 작동 방식의 개념 이미지](./media/ca-intune-common-ways-2.png)
 
 1. NAC 파트너 솔루션을 AAD(Azure Active Directory)에 등록하고 Intune NAC API에 위임된 사용 권한을 부여합니다.
 2. Intune 검색 URL을 포함한 적절한 설정으로 NAC 파트너 솔루션을 구성합니다.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642476"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067468"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Microsoft Intune에서 사용자가 관리되는 Office 365 앱에 대한 기본 보호 환경을 사용하는 방법
 
@@ -82,7 +82,7 @@ ms.locfileid: "53642476"
 >[!NOTE]
 >다음에 비즈니스용 OneDrive를 열면 PIN을 설정하라는 메시지가 나타날 수 있습니다(IT 관리자가 요구하는 경우). PIN을 설정하고 확인한 후 비즈니스용 OneDrive를 계속 사용할 수 있습니다.
 
-![PIN에 대한 메시지의 이미지](./media/pin-prompt-android.png)
+![PIN을 설정 및 확인하라는 프롬프트의 이미지](./media/pin-prompt-android.png)
 
 
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->

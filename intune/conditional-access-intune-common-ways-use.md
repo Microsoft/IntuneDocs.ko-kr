@@ -1,6 +1,5 @@
 ---
-title: 조건부 액세스 시나리오
-titlesuffix: Microsoft Intune
+title: 조건부 액세스 시나리오 | Microsoft Intune
 description: Intune 조건부 액세스를 디바이스 및 앱 기반 조건부 액세스에 일반적으로 사용하는 방법에 대해 알아봅니다.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817163"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune에서 조건부 액세스를 사용하는 일반적인 방법이란?
 
@@ -28,7 +27,7 @@ ms.locfileid: "53112479"
 
 Intune을 사용하는 조건부 액세스에는 디바이스 기반 조건부 액세스 및 앱 기반 조건부와 같은 두 가지 방법이 있습니다. 조직에서 조건부 액세스 규정 준수를 추진하는 관련 규정 준수 정책을 구성해야 합니다. 일반적으로 조건부 액세스를 사용하여 Exchange 온-프레미스에 대한 액세스를 허용하거나 차단하는 작업, 네트워크에 대한 액세스를 제어하는 작업 또는 Mobile Threat Defense 솔루션과 통합하는 작업 등을 수행합니다.
 
-아래 정보는 Intune 모바일 *디바이스* 규정 준수 기능 및 Intune 모바일 *응용 프로그램* 관리(MAM) 기능 사용 방법의 이해에 도움이 됩니다. 
+아래 정보는 Intune 모바일 *장치* 규정 준수 기능 및 Intune 모바일 *애플리케이션* 관리(MAM) 기능 사용 방법의 이해에 도움이 됩니다. 
 
 > [!NOTE]
 > 조건부 액세스는 Azure Active Directory Premium 라이선스에 포함된 Azure Active Directory 기능입니다. Intune은 솔루션에 모바일 디바이스 호환성과 모바일 앱 관리 기능을 추가하여 이 기능을 향상합니다.
@@ -43,7 +42,7 @@ Exchange Online 및 기타 Office 365 제품용 디바이스 기반 조건부 �
 
 -   [Azure Active Directory의 조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)에 대해 자세히 알아보세요.
 
--   [Intune 장치 준수](device-compliance.md)에 대해 자세히 확인해 보세요.
+-   [Intune 디바이스 준수](device-compliance.md)에 대해 자세히 확인해 보세요.
 
 -   [Intune에서 조건부 액세스를 사용하여 전자 메일, Office 365 및 기타 서비스 보호](app-based-conditional-access-intune.md)에 대해 자세히 알아보세요.
 

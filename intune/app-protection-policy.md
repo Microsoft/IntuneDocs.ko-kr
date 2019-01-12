@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389872"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006287"
 ---
 # <a name="what-are-app-protection-policies"></a>앱 보호 정책이란?
 
@@ -37,14 +37,14 @@ Microsoft Intune 앱 보호 정책은 회사 데이터를 보호하고 데이터
 
 앱 보호 정책은 다음 디바이스에서 실행되는 앱에 대해 구성할 수 있습니다.
 
-- **Microsoft Intune에 등록됨:** 이러한 장치는 일반적으로 회사에서 소유한 장치입니다.
+- **Microsoft Intune에 등록:** 이러한 디바이스는 일반적으로 회사 소유입니다.
 
-- **타사 MDM(모바일 장치 관리) 솔루션에 등록됨:** 이러한 장치는 일반적으로 회사 소유입니다.
+- **타사 MDM(모바일 디바이스 관리) 솔루션에 등록:** 이러한 디바이스는 일반적으로 회사 소유입니다.
 
   > [!NOTE]
   > 타사 모바일 앱 관리 또는 보안 컨테이너 솔루션에는 모바일 앱 관리 정책을 사용하면 안 됩니다.
 
-- **모바일 장치 관리 솔루션에 등록되지 않음:** 이 장치는 일반적으로 직원이 소유한 장치로 Intune 또는 기타 MDM 솔루션에서 관리 또는 등록되지 않습니다.
+- **모바일 디바이스 관리 솔루션에 등록되지 않음:** 이 디바이스는 일반적으로 직원이 소유한 디바이스로 Intune 또는 기타 MDM 솔루션에서 관리 또는 등록되지 않습니다.
 
 > [!IMPORTANT]
 > Office 365 서비스에 연결되는 Office 모바일 앱에 대한 모바일 앱 관리 정책을 만들 수 있습니다. 하이브리드 모던 인증이 활성화된 iOS 및 Android용 Outlook의 Intune 앱 보호 정책을 생성하여 Exchange 온-프레미스 사서함에 대한 액세스를 보호할 수도 있습니다. 이 기능을 사용하기 전에 [iOS 및 Android 요구 사항에 대한 Outlook](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)을 충족하는지 확인합니다. 온-프레미스 Exchange 또는 SharePoint 서비스에 연결하는 다른 앱에는 앱 보호 정책이 지원되지 않습니다.
@@ -57,7 +57,7 @@ Microsoft Intune 앱 보호 정책은 회사 데이터를 보호하고 데이터
 
 앱 보호 정책과 함께 MDM을 사용할 경우 추가적인 혜택이 있으며, 회사에서 앱 보호 정책을 MDM과 함께 사용하거나 MDM을 제외하고 사용할 수 있습니다. 예를 들어, 회사에서 지급한 휴대폰과 개인 태블릿을 모두 사용하는 직원을 생각해 보세요. 회사 휴대폰은 MDM에 등록되고 앱 보호 정책으로 보호되고 개인 태블릿은 앱 보호 정책으로만 보호됩니다.
 
-- **MDM은 장치가 보호되도록 합니다**. 예를 들어 디바이스 액세스 시 PIN을 요구하거나, 관리되는 앱을 디바이스에 배포할 수 있습니다. 앱 관리를 보다 강력하게 제어하기 위해 MDM 솔루션을 통해 디바이스에 앱을 배포할 수도 있습니다.
+- **MDM은 디바이스가 보호되도록 합니다**. 예를 들어 디바이스 액세스 시 PIN을 요구하거나, 관리되는 앱을 디바이스에 배포할 수 있습니다. 앱 관리를 보다 강력하게 제어하기 위해 MDM 솔루션을 통해 디바이스에 앱을 배포할 수도 있습니다.
 
 - **앱 보호 정책은 앱 계층 보호가 구현되었는지 확인합니다**. 예를 들어, 다음을 수행할 수 있습니다.
   - 업무용으로 앱을 열려면 PIN이 필요합니다. 
@@ -75,25 +75,25 @@ Windows 디바이스는 현재 지원되지 않습니다. 그러나 유사한 �
 
 #### <a name="apps-without-app-protection-policies"></a>앱 보호 정책을 사용하지 않는 앱
 
-![준비된 앱 보호 정책이 없는 경우 앱 간에 자유롭게 이동할 수 있는 앱을 보여 주는 이미지](./media/apps-without-protection-policies.png)
+![배치된 정책이 없는 앱 간의 데이터 이동에 대한 개념 이미지](./media/apps-without-protection-policies.png)
 
 앱을 제한 없이 사용하는 경우 회사 및 개인 데이터가 혼합될 수 있습니다. 업무용 데이터가 개인 저장소와 같은 곳에 저장되거나 관리 범위를 벗어난 앱에 전송되어 손실될 수 있습니다. 이전 다이어그램에 있는 화살표는 회사와 및 개인 앱 간 및 저장소 위치로의 무제한 데이터 이동을 표시합니다.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>앱 보호 정책을 사용하여 앱 보호
 
-![앱 보호 정책이 적용된 경우 회사 데이터가 어떻게 보호되는지를 보여 주는 이미지 ](./media/apps-with-protection-policies.png)
+![정책에 의해 보호되는 회사 데이터를 보여주는 개념 이미지](./media/apps-with-protection-policies.png)
 
 
 앱 보호 정책을 사용하여 회사 데이터가 디바이스의 로컬 저장소에 저장되지 않도록 할 수 있습니다. 앱 보호 정책으로 보호되지 않는 다른 앱으로 데이터 이동을 제한할 수도 있습니다. 앱 보호 정책 설정은 다음과 같습니다.
 - **다른 이름으로 저장 차단** 및 **잘라내기, 복사 및 붙여넣기 제한**과 같은 데이터 재배치 정책
-- **액세스용 단순 PIN 필요** 및 **관리되는 앱이 탈옥 또는 루팅 상태의 장치에서 실행되지 않도록 차단**과 같은 액세스 정책 설정
+- **액세스용 단순 PIN 필요** 및 **관리되는 앱이 탈옥 또는 루팅 상태의 디바이스에서 실행되지 않도록 차단**과 같은 액세스 정책 설정
 
 ### <a name="data-protection-with-app-protection-policies-on-devices-managed-by-a-mobile-device-management-solution"></a>모바일 디바이스 관리 솔루션에서 관리하는 디바이스에서 앱 보호 정책으로 데이터 보호
 
 ![앱 보호 정책이 BYOD 디바이스에서 작동하는 방식을 보여 주는 이미지](./media/app-protection-policies-with-mdm.png)
 
-**MDM 솔루션에 등록된 장치의 경우**-
+**MDM 솔루션에 등록된 디바이스의 경우**-
 
 이전 그림은 MDM 및 앱 보호 정책이 함께 제공하는 보호 계층을 보여 줍니다.
 
@@ -131,7 +131,7 @@ MDM 솔루션에 등록되지 않은 BYOD 디바이스의 경우 앱 보호 정�
 
 ## <a name="app-protection-global-policy"></a>앱 보호 글로벌 정책
 
-OneDrive 관리자가 **admin.office.com**을 탐색하고 **디바이스** 액세스를 선택하는 경우 OneDrive 및 SharePoint 클라이언트 앱에 **모바일 응용 프로그램 관리** 제어를 설정할 수 있습니다. 
+OneDrive 관리자가 **admin.office.com**을 탐색하고 **장치** 액세스를 선택하는 경우 OneDrive 및 SharePoint 클라이언트 앱에 **모바일 애플리케이션 관리** 제어를 설정할 수 있습니다. 
 
 OneDrive 관리자 콘솔에 사용 가능하게 만든 설정은 **글로벌** 정책이라는 특별한 Intune 앱 보호 정책을 구성합니다. 이 글로벌 정책은 테넌트의 모든 사용자에게 적용할 수 있으므로 정책 대상을 제어할 방법이 없습니다. 
 

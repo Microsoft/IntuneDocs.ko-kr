@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3da4208b3036b0252e2e5bd26d8361d04642183a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 83371d14215eb9ed2298796279d232ffbc7d129f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817044"
 ---
-# <a name="quickstart-create-an-email-device-profile-for-ios"></a>빠른 시작: iOS에 대한 이메일 디바이스 프로필 만들기
+# <a name="quickstart-create-an-email-device-profile-for-ios"></a>빠른 시작: iOS용 이메일 디바이스 프로필 만들기
 
 이 빠른 시작에서는 iOS 디바이스에 대한 이메일 디바이스 프로필을 만드는 방법을 알아봅니다. 이 프로필은 회사 이메일에 연결하기 위해 iOS 디바이스의 기본 제공 이메일 앱에 필요한 설정을 지정합니다. 이메일 디바이스 프로필을 사용하면 디바이스 설정을 표준화할 수 있으며, 최종 사용자가 설정 작업을 수행할 필요 없이 자신의 개인용 디바이스에서 회사 이메일에 액세스할 수 있습니다. 이메일을 더욱 안전하게 보호하려면 이메일 프로필을 사용하여 디바이스가 규정을 준수하는지 확인한 다음, 규정을 준수하는 디바이스만 이메일에 액세스할 수 있도록 조건부 액세스를 설정하면 됩니다. 이메일 프로필에 대한 자세한 내용은 [Microsoft Intune에서 이메일 설정을 구성하는 방법](email-settings-configure.md)을 참조하세요.
 
@@ -41,20 +41,20 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 3. **이름** 아래에 새 프로필에 대해 설명하는 이름을 입력합니다. 이 예에서는 **iOS에서 회사 이메일 요구**를 입력합니다.
 4. 다음 프로필 정보를 입력합니다.
-   - **설명**에 **iOS 장치에 회사 이메일을 사용하도록 요구**를 입력합니다.
+   - **설명**에 **iOS 디바이스에 회사 이메일을 사용하도록 요구**를 입력합니다.
    - **플랫폼**에서 **iOS**를 선택합니다.
    - **프로필 유형**으로 **이메일**을 선택합니다.
     
-     ![iOS에 대한 이메일 프로필 만들기](media/quickstart-email-profile/ios-email-profile-name.png)
+     ![iOS에서 사용할 이메일 프로필 만들기](media/quickstart-email-profile/ios-email-profile-name.png)
 
 5. **설정**을 선택하고 다음 설정을 입력합니다(그 외의 설정은 기본값 유지).
-   - **이메일 서버**: 이 빠른 시작에서는 **outlook.office365.com**을 입력합니다. 이 설정은 iOS 메일 앱이 이메일에 연결하는 데 사용할 이메일 서버의 Exchange 위치(URL)를 지정합니다.
+   - **메일 서버**: 이 빠른 시작에서는 **outlook.office365.com**을 입력합니다. 이 설정은 iOS 메일 앱이 이메일에 연결하는 데 사용할 이메일 서버의 Exchange 위치(URL)를 지정합니다.
    - **계정 이름**: **회사 이메일**을 입력합니다.
    - **AAD의 사용자 이름 특성**: 이 이름은 Intune이 Azure AD(Azure Active Directory)에서 가져오는 특성입니다. Intune은 이 이름을 사용하여 이 프로필의 사용자 이름을 동적으로 생성합니다. 이 빠른 시작에서는 **사용자 계정 이름**을 프로필의 사용자 이름으로 사용할 것입니다(예: user1@contoso.com).
-   - **AAD의 이메일 주소 특성**: 이 설정은 Exchange에 로그인하는 데 사용되는 Azure AD의 이메일 주소입니다. 이 빠른 시작에서는 **사용자 계정 이름**을 선택합니다.
+   - **AAD의 메일 주소 특성**: 이 설정은 Exchange에 로그인하는 데 사용되는 Azure AD의 이메일 주소입니다. 이 빠른 시작에서는 **사용자 계정 이름**을 선택합니다.
    - **인증 방법**: 이 빠른 시작에서는 **사용자 이름 및 암호**를 선택합니다. (Intune에 대한 인증서를 이미 설정한 경우 **인증서**를 선택해도 됩니다.)
     
-     ![iOS에 대한 이메일 프로필 만들기](media/quickstart-email-profile/ios-email-profile.png)
+     ![iOS 사용에 대한 이메일 프로필 만들기](media/quickstart-email-profile/ios-email-profile.png)
 
 6. **확인**을 선택합니다.
 7. **만들기**를 선택합니다. 프로필 목록에 새 프로필이 나타나고 대시보드가 표시되므로 프로필이 iOS 디바이스 및 iOS 사용자에게 어떻게 할당되었는지 모니터링할 수 있습니다.

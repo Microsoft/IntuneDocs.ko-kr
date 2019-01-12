@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6f0138da6e9ea427ad07ad3b41dd22b7319bb044
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 889e298d3d04429c1b9be2ee70519d68063953ab
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112581"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006304"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>모바일 디바이스 관리 기관을 설정합니다.
 
@@ -36,9 +36,9 @@ MDM(모바일 디바이스 관리) 기관 설정에 따라 디바이스를 관�
 - **Intune 하이브리드** - Intune 클라우드 솔루션과 System Center Configuration Manager의 통합입니다. Configuration Manager 콘솔을 사용하여 Intune을 구성합니다. [Configuration Manager에서 MDM 기관을 설정합니다](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
 
     > [!Important]
-    >향후 릴리스에서는 새 하이브리드 MDM 고객의 온보딩이 꺼집니다. 자세한 내용은 [MC146431 변경 계획 블로그](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/)를 참조하세요.
+    >향후 릴리스에서는 새 하이브리드 MDM 고객의 온보딩이 꺼집니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리에서 Azure의 Intune으로 이동](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) 블로그 게시물을 참조하세요.
 
-- **Office 365용 모바일 장치 관리**  - Office 365와 Intune 클라우드 솔루션의 통합입니다. Office 365 관리 센터에서 Intune을 구성합니다. Intune 독립 실행형에서 제공되는 기능 중 일부를 포함합니다. Office 365 관리 센터에서 MDM 기관을 설정합니다.
+- **Office 365용 모바일 디바이스 관리**  - Office 365와 Intune 클라우드 솔루션의 통합입니다. Office 365 관리 센터에서 Intune을 구성합니다. Intune 독립 실행형에서 제공되는 기능 중 일부를 포함합니다. Office 365 관리 센터에서 MDM 기관을 설정합니다.
 
 > [!IMPORTANT]
 > Configuration Manager 버전 1610 이상과 Microsoft Intune 버전 1705에서는 Microsoft 지원에 문의하여 기존의 관리 디바이스를 등록 취소했다가 다시 등록할 필요 없이 MDM 기관을 변경할 수 있습니다. 자세한 내용은 [MDM 기관을 Configuration Manager로 변경 준비](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager)를 참조하세요.
@@ -50,7 +50,7 @@ MDM 기관을 아직 설정하지 않은 경우 다음 단계를 수행합니다
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
 3. 주황색 배너를 선택하여 **모바일 디바이스 관리 기관** 설정을 엽니다. 주황색 배너는 MDM 기관을 아직 설정하지 않은 경우만 표시됩니다.
-4. **모바일 장치 관리 기관** 아래에서, 다음 옵션 중에서 MDM 기관을 선택합니다.
+4. **모바일 디바이스 관리 기관** 아래에서, 다음 옵션 중에서 MDM 기관을 선택합니다.
    - **Intune MDM 기관**
    - **Configuration Manager MDM 기관**
    - **없음**
@@ -90,7 +90,7 @@ Android 또는 Apple 디바이스 관리를 사용하는 경우 Intune은 이러
     > [!NOTE]    
     > MDM 기관에 **Intune 및 Office 365에서 관리**가 표시되면 Office 365 관리 MDM 디바이스는 MDM 기관을 **Configuration Manager**(하이브리드)로 변경하면 더 이상 관리되지 않습니다. MDM 기관을 변경하기 전에 해당 사용자에게 Intune 또는 Enterprise Mobility Suite에 대한 라이선스를 부여하는 것이 좋습니다.   
 
-- [Microsoft Intune 관리 콘솔](http://manage.microsoft.com)에서 장치 등록 관리자 역할을 제거합니다. 자세한 내용은 [Intune에서 디바이스 등록 관리자 삭제](device-enrollment-manager-enroll.md#remove-device-enrollment-manager-permissions)를 참조하세요.
+- [Microsoft Intune 관리 콘솔](http://manage.microsoft.com)에서 디바이스 등록 관리자 역할을 제거합니다. 자세한 내용은 [Intune에서 디바이스 등록 관리자 삭제](device-enrollment-manager-enroll.md#remove-device-enrollment-manager-permissions)를 참조하세요.
 - 구성된 모든 디바이스 그룹 매핑을 해제합니다. 자세한 내용은 [Microsoft Intune에서 디바이스 그룹 매핑을 사용하여 디바이스 분류](device-group-mapping.md)를 참조하세요.
 - MDM 기관을 변경하는 동안 최종 사용자에게 거의 영향을 주지 않아야 합니다. 그러나 사용자가 디바이스를 켜고 변경 즉시 서비스에 연결하도록 이러한 변경 사항을 사용자에게 알릴 수 있습니다. 이 예방 조치를 통해 최대한 많은 디바이스가 가능한 한 빨리 새 기관을 통해 서비스에 연결되고 등록됩니다.
 - MDM 기관 변경 전에 Intune 독립 실행형을 사용하여 iOS 디바이스를 관리하는 경우 이전에 Intune에서 사용했던 동일한 APNs(Apple Push Notification Service) 인증서가 갱신되고 Configuration Manager(하이브리드)에서 테넌트를 다시 설정하는 데 사용되도록 해야 합니다.    

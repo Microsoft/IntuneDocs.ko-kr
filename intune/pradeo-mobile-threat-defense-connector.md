@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
-ms.openlocfilehash: bf08796be801e1947fc1b18f2b5d2c49a5db945d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f565697d9c76f8a2990074b072ed43547284c29b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816891"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Intune과 Pradeo Mobile Threat Defense 커넥터
 
@@ -28,7 +28,7 @@ Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Pradeo 위
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune과 Pradeo가 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 
-Android 및 iOS용 Pradeo 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 디바이스 및 응용 프로그램 원격 분석을 캡처한 다음, 원격 분석 데이터를 Pradeo 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
+Android 및 iOS용 Pradeo 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 장치 및 애플리케이션 원격 분석을 캡처한 다음, 원격 분석 데이터를 Pradeo 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
 
 Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pradeo Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다. 디바이스가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 디바이스에 설치된 Pradeo 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
 
@@ -48,7 +48,7 @@ Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pr
 
 **악성 앱이 발견되면 액세스 차단:**
 
-![감지된 악성 앱](./media/pradeo_maliciousapps_blocked.png)
+![감지된 악성 앱의 개념 이미지](./media/pradeo_maliciousapps_blocked.png)
 
 **수정 시 액세스 권한 부여됨:**
 
@@ -56,7 +56,7 @@ Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pr
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 
-**메시지 가로채기(man-in-the-middle)** 공격과 같은 사용자 네트워크 위협을 검색하고 장치 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
+**메시지 가로채기(man-in-the-middle)** 공격과 같은 사용자 네트워크 위협을 검색하고 디바이스 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
 
 **Wi-Fi를 통한 네트워크 액세스 차단:**
 
@@ -64,11 +64,11 @@ Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pr
 
 **수정 시 액세스 권한 부여됨:**
 
-![수정 시 액세스 권한 부여됨](./media/pradeo_network_wifi_unblocked.png)
+![수정 시 부여된 액세스 권한의 개념 이미지](./media/pradeo_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
 
-**메시지 가로채기(man-in-the-middle)** 공격 같은 네트워크에 대한 위협을 감지하여, 장치 위험에 따라 회사 파일 동기화를 금지합니다.
+**메시지 가로채기(man-in-the-middle)** 공격 같은 네트워크에 대한 위협을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 
 **네트워크 위협이 감지할 경우 SharePoint Online 차단:**
 
@@ -76,7 +76,7 @@ Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pr
 
 **수정 시 액세스 권한 부여됨:**
 
-![SharePoint에 대해 수정 시 액세스 권한이 부여된 예](./media/pradeo_network_spo_unblocked.png)
+![Sharepoint 예제에 대한 수정 시 부여된 액세스 권한의 개념 이미지](./media/pradeo_network_spo_unblocked.png)
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
@@ -100,6 +100,6 @@ Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pr
 
 - [Pradeo 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Pradeo 장치 준수 정책 만들기](mtd-device-compliance-policy-create.md)
+- [Pradeo 디바이스 준수 정책 만들기](mtd-device-compliance-policy-create.md)
 
 - [Pradeo MTD 커넥터 사용](mtd-connector-enable.md)

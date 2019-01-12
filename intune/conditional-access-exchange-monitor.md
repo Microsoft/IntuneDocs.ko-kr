@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune에서 Exchange 조건부 액세스 모니터링
-titlesuffix: ''
+title: Microsoft Intune에서 Exchange 조건부 액세스 모니터링 | Microsoft Intune
 description: Intune Azure Portal을 사용하여 온-프레미스 Exchange 및 Exchange Online에 대한 조건부 액세스 준수를 모니터링합니다.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c9602dbe183501cc779fcb9b5d5a1e6e4bf6154
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816773"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune에서 온-프레미스 Exchange 및 Exchange Online에 대한 조건부 액세스 준수 모니터링
 
@@ -56,16 +55,16 @@ Intune 1704 릴리스부터는 관리자가 온-프레미스 Exchange Connector 
 
 디바이스 세부 정보 창에서 다음과 같은 추가 정보를 확인할 수 있습니다.
 
--   **개요:** OS 버전, 장치 모델, 소유권, 일련 번호, 장치 제조업체, 전화번호, 마지막 장치 체크 인 시간 등의 장치 속성을 확인할 수 있습니다.
+-   **개요:** 다음과 같은 디비이스 속성을 확인할 수 있습니다. OS 버전, 디바이스 모델, 소유권, 일련 번호, 디바이스 제조업체, 전화번호, 마지막 디바이스 체크 인 시간.
 
--   **속성:** 장치 소유권(개인 또는 회사)을 설정할 수 있습니다.
+-   **속성:** 디바이스 소유권(개인 또는 회사)을 설정할 수 있습니다.
 
--   **하드웨어:** 개요에 표시되는 정보와 함께 저장소 세부 정보(총 공간 및 사용 가능한 공간), 시스템 엔클로저, 네트워크 세부 정보, 네트워크 서비스 및 추가 조건부 액세스 차단 세부 정보도 제공됩니다.
+-   **하드웨어:** 개요에 표시되는 정보와 함께 스토리지 세부 정보(총 공간 및 사용 가능한 공간), 시스템 엔클로저, 네트워크 세부 정보, 네트워크 서비스 및 추가 조건부 액세스 차단 세부 정보도 제공됩니다.
 
--   **검색된 앱:** 장치에 설치된 모든 응용 프로그램이 표시됩니다. 설치된 앱의 목록을 .CSV 형식으로 내보낼 수도 있습니다.
+-   **검색된 앱:** 디바이스에 설치된 모든 애플리케이션이 표시됩니다. 설치된 앱의 목록을 .CSV 형식으로 내보낼 수도 있습니다.
 
--   **준수:** 모든 장치 준수 정책 세부 정보가 표시됩니다.
+-   **규정 준수:** 모든 디바이스 규정 준수 정책 세부 정보가 표시됩니다.
 
--   **장치 구성:** 모든 장치 구성 세부 정보가 표시됩니다.
+-   **디바이스 구성:** 모든 디바이스 구성 세부 정보가 표시됩니다.
 
--   **Exchange 액세스:** 여기서는 조건부 액세스 정책을 적용한 후의 장치 상태에 대해 자세히 확인할 수 있습니다.
+-   **Exchange 액세스:** 여기서는 조건부 액세스 정책을 적용한 후의 디바이스 상태에 대해 자세히 알아볼 수 있습니다.
