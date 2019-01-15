@@ -3,8 +3,8 @@ title: 앱 보호 정책이란?
 titleSuffix: Microsoft Intune
 description: Microsoft Intune 앱 보호 정책이 어떻게 회사 데이터를 보호하고 데이터 손실을 방지하는지 알아봅시다.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
-ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
+ms.openlocfilehash: b6ebc3db81b969d83bc22034057ab4217e90931f
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54006287"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297284"
 ---
 # <a name="what-are-app-protection-policies"></a>앱 보호 정책이란?
 
@@ -62,7 +62,7 @@ Microsoft Intune 앱 보호 정책은 회사 데이터를 보호하고 데이터
 - **앱 보호 정책은 앱 계층 보호가 구현되었는지 확인합니다**. 예를 들어, 다음을 수행할 수 있습니다.
   - 업무용으로 앱을 열려면 PIN이 필요합니다. 
   - 앱 간의 데이터 공유를 제어합니다. 
-  - 업무용 앱 데이터를 개인 저장소 위치에 저장하지 못하게 합니다.
+  - 업무용 앱 데이터를 개인 스토리지 위치에 저장하지 못하게 합니다.
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>앱 보호 정책을 지원하는 플랫폼
@@ -77,7 +77,7 @@ Windows 디바이스는 현재 지원되지 않습니다. 그러나 유사한 �
 
 ![배치된 정책이 없는 앱 간의 데이터 이동에 대한 개념 이미지](./media/apps-without-protection-policies.png)
 
-앱을 제한 없이 사용하는 경우 회사 및 개인 데이터가 혼합될 수 있습니다. 업무용 데이터가 개인 저장소와 같은 곳에 저장되거나 관리 범위를 벗어난 앱에 전송되어 손실될 수 있습니다. 이전 다이어그램에 있는 화살표는 회사와 및 개인 앱 간 및 저장소 위치로의 무제한 데이터 이동을 표시합니다.
+앱을 제한 없이 사용하는 경우 회사 및 개인 데이터가 혼합될 수 있습니다. 업무용 데이터가 개인 스토리지와 같은 곳에 저장되거나 관리 범위를 벗어난 앱에 전송되어 손실될 수 있습니다. 이전 다이어그램에 있는 화살표는 회사와 및 개인 앱 간 및 스토리지 위치로의 무제한 데이터 이동을 표시합니다.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>앱 보호 정책을 사용하여 앱 보호
@@ -85,7 +85,7 @@ Windows 디바이스는 현재 지원되지 않습니다. 그러나 유사한 �
 ![정책에 의해 보호되는 회사 데이터를 보여주는 개념 이미지](./media/apps-with-protection-policies.png)
 
 
-앱 보호 정책을 사용하여 회사 데이터가 디바이스의 로컬 저장소에 저장되지 않도록 할 수 있습니다. 앱 보호 정책으로 보호되지 않는 다른 앱으로 데이터 이동을 제한할 수도 있습니다. 앱 보호 정책 설정은 다음과 같습니다.
+앱 보호 정책을 사용하여 회사 데이터가 장치의 로컬 스토리지에 저장되지 않도록 할 수 있습니다. 앱 보호 정책으로 보호되지 않는 다른 앱으로 데이터 이동을 제한할 수도 있습니다. 앱 보호 정책 설정은 다음과 같습니다.
 - **다른 이름으로 저장 차단** 및 **잘라내기, 복사 및 붙여넣기 제한**과 같은 데이터 재배치 정책
 - **액세스용 단순 PIN 필요** 및 **관리되는 앱이 탈옥 또는 루팅 상태의 디바이스에서 실행되지 않도록 차단**과 같은 액세스 정책 설정
 
@@ -148,7 +148,7 @@ OneDrive 관리자 콘솔에 사용 가능하게 만든 설정은 **글로벌** 
 
 개인 컨텍스트의 예로 Word에서 새 문서를 시작하는 사용자를 고려합니다. 이는 개인 컨텍스트로 간주되므로 Intune 앱 보호 정책이 적용되지 않습니다. 회사 OneDrive 계정에 문서가 저장되면 이는 회사 컨텍스트로 간주되므로 Intune 앱 보호 정책이 적용됩니다.
 
-회사 컨텍스트는 예로 회사 계정을 사용하여 OneDrive 앱을 시작하는 사용자를 고려합니다. 업무용에서는 파일을 개인 저장소 위치로 이동할 수 없습니다. 나중에 사용자가 개인 계정으로 OneDrive를 사용하는 경우 개인 OneDrive에서 제한 없이 데이터를 복사 및 이동할 수 있습니다.
+회사 컨텍스트는 예로 회사 계정을 사용하여 OneDrive 앱을 시작하는 사용자를 고려합니다. 업무용에서는 파일을 개인 스토리지 위치로 이동할 수 없습니다. 나중에 사용자가 개인 계정으로 OneDrive를 사용하는 경우 개인 OneDrive에서 제한 없이 데이터를 복사 및 이동할 수 있습니다.
 
 - Intune을 통해 [MAM 및 다중 ID](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)를 지원하는 앱에 대해 자세히 알아봅니다.
 

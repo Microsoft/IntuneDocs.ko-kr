@@ -3,8 +3,8 @@ title: Windows 10용 앱 보호 정책 구성
 titleSuffix: Microsoft Intune
 description: Azure AD에서 MAM(모바일 애플리케이션 관리) 공급자 설정
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: e6e725d2e499c7f004ebf982bc0e70457c166f67
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 189afded0674958720234df86ed5d09c5cb8193d
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031979"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297340"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10용 앱 보호 정책 구성 준비 
 
@@ -51,7 +51,7 @@ Azure AD에서 MAM 공급자를 설정하여 Windows 10용 MAM(모바일 애플�
    **MAM 준수 URL**  
    MAM 준수 URL은 Microsoft Intune에서 지원되지 않습니다. 이 입력 상자는 보호 정책을 적용하도록 비워 두어야 합니다. 
 
-5.  **Save**을 클릭합니다.
+5.  **저장**을 클릭합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

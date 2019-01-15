@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112428"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210757"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>앱 보호 정책에 대해 LOB(기간 업무) 앱 준비
 
@@ -98,7 +98,7 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 |화면 캡처 차단(Android에만 해당)|X|X|
 |디바이스 등록이 제외된 MAM에 대한 지원|X|X|
 |전체 초기화|X|X|
-|선택적 초기화 <br></br>**참고:** iOS의 경우 관리 프로필을 제거하면 앱도 제거됩니다.|X||
+|선택적 초기화 <br><br>**참고:** iOS의 경우 관리 프로필을 제거하면 앱도 제거됩니다.|X||
 |"다른 이름으로 저장" 차단|X||
 |대상 애플리케이션 구성|X||
 |다중 ID 지원|X||
@@ -115,6 +115,6 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 
 앱 보호 정책 및 Intune에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-  - [Android 앱 래핑 도구](app-wrapper-prepare-android.md)</br>
-  - [iOS 앱 래핑 도구](app-wrapper-prepare-ios.md)</br>
-  - [SDK를 사용하여 모바일 응용 프로그램 관리에 앱을 사용하도록 설정](app-sdk.md)
+  - [Android 앱 래핑 도구](app-wrapper-prepare-android.md)<br>
+  - [iOS 앱 래핑 도구](app-wrapper-prepare-ios.md)<br>
+  - [SDK를 사용하여 모바일 애플리케이션 관리에 앱을 사용하도록 설정](app-sdk.md)

@@ -3,8 +3,8 @@ title: 앱 보호 정책 로그 검토 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 앱 보호 로그에서 검토할 수 있는 설정에 대해 알아봅니다.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 11/20/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3e7b6ec1063b4337f44de0a4502bcbf7c2a45edf
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a6801eab86fcb2adab6edc8dab621d4100a415b5
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817214"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297199"
 ---
 # <a name="review-client-app-protection-logs"></a>클라이언트 앱 보호 로그 검토
 
@@ -54,7 +54,7 @@ ms.locfileid: "53817214"
 | FileSharingSaveAsDisabled   | 0 = 아니요<br>1 = 예                                                                                                                                                                                                                                                                                           | [데이터 재배치] “다른 이름으로 저장” 차단                                                                                                                                                     |
 | IntuneIdentityUPN           | Intune MAM 사용자의 UPN.                                                                                                                                                                                                                                                                                  | 해당 없음                                                                                                                                                                                     |
 | ManagedBrowserRequired      | 0 = 아니요<br>1 = 예                                                                                                                                                                                                                                                                                           | [데이터 재배치] Intune Managed Browser 앱에서 표시할 수 있는 웹 콘텐츠 제한.                                                                                                     |
-| ManagedLocations            | 앱에서 데이터를 저장할 수 있는 관리되는 저장소 위치 수를 나타내는 값. <br>1 = OneDrive<br>2 = SharePoint<br>3 = OneDrive 및 SharePoint<br>32 = 로컬 저장소<br>33 = 로컬 저장소 및 OneDrive<br>34 = 로컬 저장소 및 SharePoint<br>35 = 로컬 저장소, OneDrive 및 SharePoint | [데이터 재배치] 회사 데이터를 저장할 저장소 서비스 선택.                                                                                                          |
+| ManagedLocations            | 앱에서 데이터를 저장할 수 있는 관리되는 스토리지 위치 수를 나타내는 값. <br>1 = OneDrive<br>2 = SharePoint<br>3 = OneDrive 및 SharePoint<br>32 = 로컬 스토리지<br>33 = 로컬 스토리지 및 OneDrive<br>34 = 로컬 스토리지 및 SharePoint<br>35 = 로컬 스토리지, OneDrive 및 SharePoint | [데이터 재배치] 회사 데이터를 저장할 스토리지 서비스 선택.                                                                                                          |
 | MinAppVersion               | “0.0” = 최소 앱 버전 없음<br>기타 = 최소 앱 버전                                                                                                                                                                                                                                       | [액세스] 최소 앱 버전 필요.                                                                                                                                                    |
 | MinAppVersionWarning        | “0.0” = 최소 앱 버전 없음.<br>기타 = 최소 앱 버전.                                                                                                                                                                                                                                       | [액세스] 최소 앱 버전 필요(경고)                                                                                                                                     |
 | MinOsVersion                | “0.0” = 최소 OS 버전 없음<br>기타 = 최소 OS 버전                                                                                                                                                                                                                                         | [액세스] 최소 iOS 운영 체제 필요.                                                                                                                                           |

@@ -3,8 +3,8 @@ title: 앱 보호 정책 설정의 유효성 검사
 titleSuffix: Microsoft Intune
 description: 앱 보호 정책이 제대로 설정되고 작동하는지 테스트하는 방법을 알아봅니다.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 11/13/2018
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 60cf35814f64f2f237c3f2ec3ea8f4d56460dd71
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816959"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297216"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>앱 보호 정책 설정의 유효성을 검사하는 방법
 
