@@ -618,7 +618,7 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 * **NonBrokerRedirectURI**는 브로커가 없는 경우에 사용할 AAD 리디렉션 URI입니다. 지정된 값이 없으면 기본값인 `urn:ietf:wg:oauth:2.0:oob`가 사용됩니다. 이 기본값은 대부분의 앱에 적합합니다.
 
 * **SkipBroker**는 ClientID가 브로커 리디렉션 URI를 사용하도록 구성되지 않은 경우 사용됩니다. 기본값은 "false"입니다.
-    * **ADAL을 통합하지 않고****디바이스 수준에서 조정된 인증/SSO에 참여하지 않으려는** 앱의 경우 “true”로 설정되어야 합니다. 이 값이 “true”이면 유일하게 사용되는 리디렉션 URI는 NonBrokerRedirectURI입니다.
+    * **ADAL을 통합하지 않고** **디바이스 수준에서 조정된 인증/SSO에 참여하지 않으려는** 앱의 경우 “true”로 설정되어야 합니다. 이 값이 “true”이면 유일하게 사용되는 리디렉션 URI는 NonBrokerRedirectURI입니다.
 
     * 디바이스 수준 SSO 조정을 지원하는 앱의 경우 “false”입니다. 값이 "false"이면 시스템의 브로커 가용성을 기반으로 SDK에서 [`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android)의 결과와 NonBrokerRedirectURI 중에 브로커를 선택합니다. 일반적으로 브로커는 회사 포털 앱 또는 Azure Authenticator에서 사용할 수 있습니다.
 
