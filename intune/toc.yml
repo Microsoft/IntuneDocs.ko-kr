@@ -574,7 +574,7 @@ items:
       items:
       - name: 데이터 수집
         href: privacy-data-collect.md
-      - name: 데이터 저장소 및 처리
+      - name: 데이터 저장 및 처리
         href: privacy-data-store-process.md
       - name: 데이터 보안 및 공유
         href: privacy-data-secure-share.md
@@ -583,12 +583,12 @@ items:
           href: data-apple-sends-to-intune.md
         - name: Google이 Intune에 보내는 데이터
           href: data-google-sends-to-intune.md
+        - name: Intune에 보내는 데이터 Jamf Pro
+          href: data-jamf-sends-to-intune.md
         - name: Intune이 Apple에 보내는 데이터
           href: data-intune-sends-to-apple.md
         - name: Intune이 Google에 보내는 데이터
           href: data-intune-sends-to-google.md
-        - name: Jamf Pro에서 Intune으로 공유된 정보
-          href: conditional-access-integrate-jamf.md
       - name: 개인 데이터 보기 및 수정
         href: privacy-data-view-correct.md
       - name: 감사, 내보내기, 삭제
@@ -854,9 +854,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: 정책 충돌 해결
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: 1f17ae67e609e9836c29f6afd810bbea5ece99b4
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 2939459eafe7771c33ec20fd150c36c7808c2b1c
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203589"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325052"
