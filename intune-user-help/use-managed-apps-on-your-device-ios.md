@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147505"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203266"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS 디바이스에서 관리되는 앱 사용
 
@@ -34,7 +34,7 @@ ms.locfileid: "43147505"
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>관리되는 앱을 가져오려면 어떻게 하나요?
+## <a name="how-do-i-get-managed-apps"></a>관리되는 앱을 가져오려면 어떻게 하나요?  
 관리되는 앱을 가져오는 방법에는 몇 가지가 있습니다.
 
 -   디바이스가 Microsoft Intune에 등록된 경우 사용자가 회사 포털 앱 또는 회사 포털 웹 사이트에서 앱을 설치하거나, 회사 지원팀이 디바이스에 설치할 수 있습니다. 등록에 대해 알아보려면 [Intune에서 iOS 디바이스 등록](enroll-your-device-in-intune-ios.md) 또는 [Intune에서 macOS 디바이스 등록](enroll-your-device-in-intune-macos.md)을 참조하세요.
@@ -43,7 +43,16 @@ ms.locfileid: "43147505"
 
 경우에 따라 회사 지원팀은 설치하는 앱에 대한 여러 라이선스를 구매할 수 있습니다. Apple Volume Purchase Program 규약에 동의하도록 요청하는 메시지가 표시되는 것은 정상적이며 이 규약에 동의할 수 있습니다. 동의하지 않으면 앱을 설치할 수 없습니다.
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>회사 지원팀이 앱에서 관리할 수 있는 항목은 무엇인가요?
+## <a name="available-apps"></a>사용 가능한 앱   
+ 조직은 회사 또는 학교에서 사용하기에 적절하고 유용한 앱을 선택합니다. 이러한 앱은 회사 포털에서만 찾을 수 있습니다.   
+
+ 사용자는 디바이스 유형에 따라 앱을 사용할 수 있게 됩니다. 예를 들어 사용자가 iOS용 회사 포털 앱을 사용하는 경우 Android 앱이 아닌 iOS 앱에 액세스하게 됩니다.   
+
+## <a name="request-an-app-for-work-or-school"></a>회사 또는 학교용 앱 요청   
+ 사용자가 필요한 앱이 있지만 회사 포털에 없는 경우 이를 요청할 수 있습니다. 회사 포털 앱의 **지원** 탭에서 **기술 지원팀**의 연락처 세부 정보를 확인합니다. 이런 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>회사 지원팀이 앱에서 관리할 수 있는 항목은 무엇인가요?  
 회사 지원팀이 앱에서 관리할 수 있고, 디바이스에서 회사 데이터 조작에 영향을 줄 수 있는 옵션의 몇 가지 예는 다음과 같습니다.
 
 -   특정 웹사이트에 대 한 액세스

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959505"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203504"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android 디바이스에서 관리되는 앱 사용
 관리되는 앱은 조직의 보안 요구 사항을 충족시키고 회사 및 학교 데이터를 보호하도록 구성됩니다. 이러한 앱은 디바이스에서 자동으로 설치 또는 사용할 수 있습니다. 
 
-관리되는 앱을 받고 설치하기 전에 조직에서 권한을 구성합니다. 앱 기능이나 사용자 상호 작용을 제한하여 승인되지 않은 개인이 앱 데이터를 공유하거나 볼 수 없도록 차단할 수 있습니다. 예를 들어, 앱을 사용하는 동안 조직이 복사 및 붙여넣기 사용을 차단할 수 있습니다. 또는 디바이스의 로컬 저장소에 데이터를 저장하는 것을 제한할 수 있습니다.
+관리되는 앱을 받고 설치하기 전에 조직에서 권한을 구성합니다. 앱 기능이나 사용자 상호 작용을 제한하여 승인되지 않은 개인이 앱 데이터를 공유하거나 볼 수 없도록 차단할 수 있습니다. 예를 들어, 앱을 사용하는 동안 조직이 복사 및 붙여넣기 사용을 차단할 수 있습니다. 또는 장치의 로컬 스토리지에 데이터를 저장하는 것을 제한할 수 있습니다.
 
 데이터 보호를 극대화하기 위해 조직은 여러 관리되는 앱들이 연동되도록 구성할 수 있습니다. 예를 들면 다음과 같습니다.
 1. Microsoft Edge와 같은 관리되는 브라우저 앱에서 회사 네트워크에 연결합니다.
@@ -56,7 +56,15 @@ ms.locfileid: "49959505"
 * 조직은 회사 포털에서 관리되는 앱을 사용할 수 있도록 합니다. 회사 포털 앱 또는 웹 사이트로 이동하여 이러한 앱을 검색하고 보고 설치합니다. 
 * Google Play 스토어에서 앱을 설치한 다음, 회사 또는 학교 계정으로 앱에 로그인합니다.  
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>회사 지원팀이 앱에서 관리할 수 있는 항목은 무엇인가요?
+ ## <a name="available-apps"></a>사용 가능한 앱   
+ 조직은 회사 또는 학교에서 사용하기에 적절하고 유용한 앱을 선택합니다. 이러한 앱은 회사 포털에서만 찾을 수 있습니다.   
+
+ 사용자는 디바이스 유형에 따라 앱을 사용할 수 있게 됩니다. 예를 들어 사용자가 Android용 회사 포털 앱을 사용하는 경우 iOS 앱이 아닌 Android 앱에 액세스하게 됩니다.   
+
+ ## <a name="request-an-app-for-work-or-school"></a>회사 또는 학교용 앱 요청   
+ 사용자가 필요한 앱이 있지만 회사 포털에 없는 경우 이를 요청할 수 있습니다. 회사 포털 앱의 **IT 담당자** 탭에서 **기술 지원팀**의 연락처 세부 정보를 확인합니다. 이런 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.   
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>회사 지원팀이 앱에서 관리할 수 있는 항목은 무엇인가요?  
 다음 목록은 앱 내에서 회사 지원팀에서 관리할 수 있는 설정을 설명합니다. 이 설정은 디바이스에서 회사 또는 학교 데이터를 보고 액세스하고 사용하는 방식에 영향을 줍니다.
 
 * 특정 웹사이트에 대 한 액세스  

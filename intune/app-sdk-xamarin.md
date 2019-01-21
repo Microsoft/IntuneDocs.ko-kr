@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: d8e9dd1e38fdc693bd30372f2961244e4e809771
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a698d7a57c59a27dbd39036b1e2607e80570029f
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210774"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -55,6 +55,8 @@ Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발�
 [사용 약관](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)을 검토합니다. 기록을 위해 사용 조건의 사본을 인쇄하여 보관하세요. Intune 앱 SDK Xamarin 바인딩을 다운로드하여 이러한 사용 조건에 동의합니다. 동의하지 않는 경우 소프트웨어를 사용하지 마세요.
 
 SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) 및 조건부 시작 시나리오를 위한 [ADAL(Active Directory 인증 라이브러리)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)이 필요하며, 이 경우 앱에 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)를 구성해야 합니다. 
+
+애플리케이션이 ADAL 또는 MSAL을 사용하도록 이미 구성되어 있고, Azure Active Directory를 사용하여 인증하는 데 사용되는 고유한 사용자 지정 클라이언트 ID가 있는 경우 Intune MAM(모바일 애플리케이션 관리) 서비스에 대한 Xamarin 앱 사용 권한을 부여하는 단계를 따릅니다. [Intune SDK 시작 가이드](app-sdk-get-started.md)의 "[앱에 Intune 앱 보호 서비스에 대한 액세스 권한 부여](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" 섹션의 지침을 사용합니다.
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS 모바일 앱에서 Intune 앱 보호 정책을 사용하도록 설정
 1. [Microsoft.Intune.MAM.Xamarin.iOS NuGet 패키지](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS)를 Xamarin.iOS 프로젝트에 추가합니다.
@@ -107,7 +109,7 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms 통합
 
-**위의 단계를 모두 수행하는 것 외에도** `Xamarin.Forms` 응용 프로그램의 경우 `Microsoft.Intune.MAM.Remapper` 패키지를 제공합니다. 이 패키지는 `FormsAppCompatActivity` 및 `FormsApplicationActivity`처럼 일반적으로 사용된 `Xamarin.Forms` 클래스의 클래스 계층 구조에 `MAM` 클래스를 삽입하여 사용자를 위해 클래스 바꾸기를 수행하므로 `OnMAMCreate` 및 `OnMAMResume`처럼 MAM 동등한 함수에 대한 재정의를 제공하여 이러한 클래스를 계속 사용할 수 있습니다. 이 도구를 사용하려면 다음을 수행하십시오.
+**위의 단계를 모두 수행하는 것 외에도**`Xamarin.Forms` 애플리케이션의 경우 `Microsoft.Intune.MAM.Remapper` 패키지를 제공합니다. 이 패키지는 `FormsAppCompatActivity` 및 `FormsApplicationActivity`처럼 일반적으로 사용된 `Xamarin.Forms` 클래스의 클래스 계층 구조에 `MAM` 클래스를 삽입하여 사용자를 위해 클래스 바꾸기를 수행하므로 `OnMAMCreate` 및 `OnMAMResume`처럼 MAM 동등한 함수에 대한 재정의를 제공하여 이러한 클래스를 계속 사용할 수 있습니다. 이 도구를 사용하려면 다음을 수행하십시오.
 
 1.  프로젝트에 [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet 패키지를 추가합니다. 이렇게 하면 아직 Intune 앱 SDK Xamarin 바인딩이 포함되지 않은 경우 자동으로 추가됩니다.
 
@@ -121,9 +123,6 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Xamarin 기반 Android LOB 앱(선택 사항)을 사용하려면 Intune 앱 보호 정책 필요 
 
 다음은 Xamarin 기반 Android LOB 앱을 해당 디바이스에서 Intune 보호된 사용자만 사용할 수 있는지 확인하기 위한 지침입니다. 
-
-### <a name="general-requirements"></a>일반 요구 사항
-* APP(앱 보호 정책) 서비스에 대한 Xamarin 앱 사용 권한을 부여하는 단계를 따라야 합니다. 앱에 Intune 앱 보호 서비스에 대한 액세스 권한 부여(선택 사항)에서 [Intune SDK 시작 가이드](app-sdk-get-started.md#next-steps-after-integration)의 지침을 따릅니다. 
     
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK 사용
 이러한 지침은 최종 사용자 디바이스에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱에만 적용됩니다.

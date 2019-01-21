@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146742"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203317"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>설정 앱의 회사 지원팀에 Windows 10에 대한 로그 보내기
 
-회사에서 관리하는 Windows 10 디바이스를 사용하는 동안 오류가 발생하면 전자 메일로 오류 정보를 보내 회사 지원팀이 문제를 해결하도록 도울 수 있습니다. 이 정보는 디바이스의 _진단 로그_라는 특수 문서에 저장됩니다.
+설정 앱을 사용하여 Windows 10용 회사 포털 문제를 해결합니다. Windows 10 디바이스에서 앱을 사용하는 동안 문제가 발생하는 경우 도움을 요청하는 이메일을 지원팀에 보낼 수 있습니다. 회사 포털 앱에서 발생하는 이벤트 및 오류는 디바이스에서 _진단 로그_라는 특수 문서에 저장됩니다. 이 이벤트 및 오류는 오류에 대한 추가 인사이트를 포함하고, 내보낼 경우 지원팀에 유용합니다.
 
-1. **시작 메뉴**로 이동한 다음 **설정** 단추를 선택하여 Windows **설정** 앱을 엽니다. 검색 표시줄에서 "설정"을 검색할 수도 있습니다.
+1. **설정** 앱을 열려면 **시작** 메뉴 > **설정**으로 이동합니다. 검색 창에서 *설정*을 검색할 수도 있습니다.
 2. **계정** > **회사 또는 학교 액세스**를 선택합니다.
-3. "관리 로그 파일 내보내기"를 선택합니다.
+3. **관리 로그 파일 내보내기**를 선택합니다.
 
    !["관련 설정" 제목 아래에 내보내기 옵션이 표시되어 있는 "회사 또는 학교 액세스 화면"](./media/w10-export-logs.png)
 

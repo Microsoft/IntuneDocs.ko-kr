@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 44dc3f82b8d51007d3eaf1d71f1a416ebfe319b4
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738072"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297522"
 ---
 # <a name="reference-for-devices-entities"></a>디바이스 엔터티에 대한 참조
 
@@ -46,7 +46,7 @@ ms.locfileid: "53738072"
 | DeviceTypeKey |데이터 웨어하우스의 디바이스 유형에 대한 고유 식별자 - 대리 키 |
 | DeviceTypeName |디바이스 유형 |
 
-## <a name="example"></a>예제
+### <a name="example"></a>예제
 
 | deviceTypeID  | 이름 | 설명 |
 |---------|------------|--------|
@@ -81,7 +81,7 @@ ms.locfileid: "53738072"
 | clientRegisterationStateKey |데이터 웨어하우스의 등록 상태에 대한 고유 식별자 - 대리 키 |
 | clientRegisterationStateName |등록 상태 |
 
-## <a name="example"></a>예제
+### <a name="example"></a>예제
 
 | ClientRegisterationStateID  | 이름 | 설명 |
 |---------|------------|--------|
@@ -95,6 +95,93 @@ ms.locfileid: "53738072"
 | 7 |NotRegisteredPendingEnrollment |등록 안 됨 등록 보류 중 |
 | 8 |Unknown |알 수 없는 상태 |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+**EnrollmentActivity** 엔터티는 디바이스 등록의 작업을 나타냅니다.
+
+| 속성                      | 설명                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | 이 등록 작업이 기록된 때의 날짜 키입니다.               |
+| deviceEnrollmentTypeKey       | 등록 형식의 키입니다.                                        |
+| deviceTypeKey                 | 디바이스 유형의 키입니다.                                                |
+| enrollmentEventStatusKey      | 등록의 성공 여부를 나타내는 상태 키입니다.    |
+| enrollmentFailureCategoryKey  | 등록 실패 범주의 키입니다(등록에 실패하는 경우).        |
+| enrollmentFailureReasonKey    | 등록 실패 이유의 키입니다(등록에 실패하는 경우).          |
+| osVersion                     | 디바이스의 운영 체제 버전입니다.                               |
+| count                         | 위의 분류와 일치하는 등록 작업의 총 수입니다.  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+**EnrollmentEventStatus** 엔터티는 디바이스 등록의 결과를 나타냅니다.
+
+| 속성                   | 설명                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | 데이터 웨어하우스의 등록 상태의 고유 식별자(서로게이트 키)  |
+| enrollmentEventStatusName  | 등록 상태의 이름입니다. 아래 예제를 참조하세요.                            |
+
+### <a name="example"></a>예제
+
+| enrollmentEventStatusName  | 설명                            |
+|----------------------------|----------------------------------------|
+| 성공                    | 디바이스 등록 성공         |
+| Failed                     | 디바이스 등록 실패             |
+| 사용할 수 없음              | 등록 상태를 사용할 수 없습니다.  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+**EnrollmentFailureCategory** 엔터티는 디바이스 등록에 실패한 이유를 나타냅니다. 
+
+| 속성                       | 설명                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | 데이터 웨어하우스의 등록 실패 범주의 고유 식별자(서로게이트 키)  |
+| enrollmentFailureCategoryName  | 등록 실패 범주의 이름입니다. 아래 예제를 참조하세요.                            |
+
+### <a name="example"></a>예제
+
+| enrollmentFailureCategoryName   | 설명                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| 해당 없음                  | 등록 실패 범주를 적용할 수 없습니다.                                                            |
+| 사용할 수 없음                   | 등록 실패 범주를 사용할 수 없습니다.                                                             |
+| Unknown                         | 알 수 없는 오류입니다.                                                                                                |
+| 인증                  | 인증에 실패했습니다.                                                                                        |
+| 권한 부여                   | 호출이 인증되었지만 등록할 수 있는 권한이 없습니다.                                                         |
+| AccountValidation               | 등록에 대한 계정의 유효성을 검사하지 못했습니다. (계정 차단됨, 등록 사용 안 함)                      |
+| UserValidation                  | 사용자의 유효성을 검사할 수 없습니다. (사용자가 없음, 라이선스 누락)                                           |
+| DeviceNotSupported              | 디바이스가 모바일 디바이스 관리에서 지원되지 않습니다.                                                         |
+| InMaintenance                   | 계정이 유지 관리 모드에 있습니다.                                                                                    |
+| BadRequest                      | 클라이언트에서 서비스에서 인식/지원되지 않는 요청을 보냈습니다.                                        |
+| FeatureNotSupported             | 이 등록에서 사용되는 기능은 이 계정에서 지원되지 않습니다.                                        |
+| EnrollmentRestrictionsEnforced  | 관리자가 구성한 등록 제한 사항이 이 등록을 차단합니다.                                          |
+| ClientDisconnected              | 최종 사용자에 의해 클라이언트 시간 초과 또는 등록이 중단되었습니다.                                                        |
+| UserAbandonment                 | 최종 사용자에 의해 등록이 중단되었습니다. (최종 사용자가 온보딩을 시작했지만 적시에 완료하지 못함)  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+**EnrollmentFailureReason** 엔터티는 지정된 실패 범주 내에서 디바이스 등록 실패에 대한 자세한 이유를 나타냅니다.  
+
+| 속성                     | 설명                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | 데이터 웨어하우스의 등록 실패 이유의 고유 식별자(서로게이트 키)  |
+| enrollmentFailureReasonName  | 등록 실패 이유의 이름입니다. 아래 예제를 참조하세요.                            |
+
+### <a name="example"></a>예제
+
+| enrollmentFailureReasonName      | 설명                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 해당 없음                   | 등록 실패 이유를 적용할 수 없습니다.                                                                                                                                                       |
+| 사용할 수 없음                    | 등록 실패 이유를 사용할 수 없습니다.                                                                                                                                                        |
+| Unknown                          | 알 수 없는 오류입니다.                                                                                                                                                                                         |
+| UserNotLicensed                  | 사용자를 Intune에서 찾을 수 없거나 유효한 라이선스가 없습니다.                                                                                                                                     |
+| UserUnknown                      | 사용자를 Intune에서 알 수 없습니다.                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | 한 명의 사용자만 디바이스를 등록할 수 있습니다. 이 디바이스는 이전에 다른 사용자에 의해 등록되었습니다.                                                                                                                |
+| EnrollmentOnboardingIssue        | Intune MDM(모바일 디바이스 관리) 기관이 아직 구성되지 않았습니다.                                                                                                                                 |
+| AppleChallengeIssue              | iOS 관리 프로필 설치가 지연되었거나 실패했습니다.                                                                                                                                         |
+| AppleOnboardingIssue             | Apple MDM 푸시 인증서를 Intune에 등록해야 합니다.                                                                                                                                       |
+| DeviceCap                        | 사용자가 허용된 최댓값보다 많은 디바이스를 등록하려고 시도했습니다.                                                                                                                                        |
+| AuthenticationRequirementNotMet  | Intune 등록 서비스가 이 요청을 인증하지 못했습니다.                                                                                                                                            |
+| UnsupportedDeviceType            | 이 디바이스가 Intune 등록에 대한 최소 요구 사항을 충족하지 않습니다.                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | 이 디바이스는 구성된 등록 제한 사항 규칙으로 인해 등록에 실패했습니다.                                                                                                                          |
+| BulkDeviceNotPreregistered       | 이 디바이스의 IMEI(국제 모바일 장비 식별자) 또는 일련 번호를 찾을 수 없습니다.  이 식별자가 없는 디바이스는 현재 차단된 개인 소유 디바이스로 인식됩니다.  |
+| FeatureNotSupported              | 사용자가 모든 고객에 대해 아직 해제되지 않거나 Intune 구성과 호환되지 않는 기능에 액세스하려고 시도했습니다.                                                            |
+| UserAbandonment                  | 최종 사용자에 의해 등록이 중단되었습니다. (최종 사용자가 온보딩을 시작했지만 적시에 완료하지 못함)                                                                                           |
+| APNSCertificateExpired           | 만료된 Apple MDM 푸시 인증서를 사용하여 Apple 디바이스를 관리할 수 없습니다.                                                                                                                            |
+
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
 **EnrollmentTypes** 엔터티는 디바이스를 등록하는 방식을 나타냅니다. 등록 형식은 등록 메서드를 캡처합니다. 예시는 서로 다른 등록 형식 및 그 의미를 표시합니다.
@@ -105,7 +192,7 @@ ms.locfileid: "53738072"
 | managementStateKey |데이터 웨어하우스에서 관리 상태의 고유 식별자 - 대리 키 |
 | managementStateName |이 디바이스에 적용된 원격 작업의 상태를 나타냅니다. |
 
-## <a name="example"></a>예제
+### <a name="example"></a>예제
 
 | enrollmentTypeID  | 이름 | 설명 |
 |---------|------------|--------|
@@ -140,14 +227,14 @@ ms.locfileid: "53738072"
 | ComplianceStatus |디바이스의 준수 상태, 아래 표의 값 중 하나가 있어야 함 | 
 
 
-## <a name="example"></a>예제
+### <a name="example"></a>예제
 
 | MdmStatusID  | ComplianceStatus | 설명 |
 |---------|------------|--------|
 | 0 |Unknown |디바이스의 준수 상태를 알 수 없습니다. |
 | 1 |규정 |디바이스가 준수 상태입니다. |
 | 2 |정책 위반 |디바이스가 준수 상태가 아닙니다. |
-| 3 |Conflict |디바이스의 준수로 인해 충돌이 발생했습니다. |
+| 3 |충돌 |디바이스의 준수로 인해 충돌이 발생했습니다. |
 | 4 |오류 |디바이스의 준수 상태를 읽는 동안 오류가 발생했습니다. |
 
 
@@ -161,7 +248,7 @@ ms.locfileid: "53738072"
 | managementStateKey | 데이터 웨어하우스에서 관리 상태의 고유 식별자 - 대리 키 |
 | managementStateName | 이 디바이스에 적용된 원격 작업의 상태를 나타냅니다. |
 
-## <a name="example"></a>예제
+### <a name="example"></a>예제
 
 | managementStateID  | 이름 | 설명 |
 |---------|------------|--------|
@@ -188,7 +275,7 @@ ms.locfileid: "53738072"
 | WorkPlaceJoinStateKey | 데이터 웨어하우스에서 작업 공간 참여 상태에 대한 고유 식별자 - 대리 키 |
 | WorkPlaceJoinStateName | 작업 공간 참여 상태 |
 
-## <a name="example"></a>예제
+### <a name="example"></a>예제
 
 | workPlaceJoinStateID  | 이름 | 설명 |
 |---------|------------|--------|
@@ -212,7 +299,7 @@ ms.locfileid: "53738072"
 | ManagementAgentTypeKey | 데이터 웨어하우스의 관리 에이전트 유형에 대한 고유 식별자 - 서로게이트 키 |
 | ManagementAgentTypeName |디바이스 관리에 사용되는 에이전트의 종류를 나타냅니다. |
 
-## <a name="example"></a>예제
+### <a name="example"></a>예제
 
 | ManagementAgentTypeID  | 이름 | 설명 |
 |---------|------------|--------|

@@ -16,18 +16,15 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642560"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149664"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포(미리 보기)
 Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Directory 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 다음 단계를 수행합니다.
-
-> [!NOTE]
-> 이 기능은 앞으로 며칠 동안 사용자 기반 전체에 롤아웃됩니다. 따라서 계정에 롤아웃될 때까지 다음 단계를 수행하지 못할 수도 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -204,7 +201,7 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
    - **설명**: 프로필에 대한 설명을 입력합니다.
    - **플랫폼**: **Windows 10 이상**을 선택합니다.
    - **프로필 유형**: **도메인 가입(미리 보기)** 을 선택합니다.
-3. **설정**을 선택하고, **컴퓨터 이름 접두사**, **도메인 이름** 및 DN 형식의 **조직 구성 단위**(선택 사항)를 제공합니다. 
+3. **설정**을 선택하고 **컴퓨터 이름 접두사**, **도메인 이름** 및 [DN 형식](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)의 **조직 구성 단위**(선택 사항)를 제공합니다. 
 4. **확인** > **만들기**를 선택합니다. 프로필이 만들어지고 목록에 표시됩니다.
 5. 프로필을 할당하려면 [디바이스 프로필 할당](device-profile-assign.md#assign-a-device-profile) 아래의 단계를 수행합니다. 
 

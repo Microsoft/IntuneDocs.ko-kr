@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210740"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 수동으로 추가
 
@@ -47,7 +47,7 @@ ms.locfileid: "53642594"
 5. **플랫폼**으로 **Windows 10 모든 디바이스**를 선택한 다음, 적절한 **최소 버전**, **아키텍처** 및 **앱 메타데이터 다운로드** 값을 선택합니다. 
 6. **다운로드**를 선택하여 로컬 컴퓨터에 파일을 저장합니다.
 
-    ![다운로드를 선택한 "Windows 10 모든 디바이스" 및 아키텍처 X86 패키지 세부 정보](./media/Win10CP-all-devices.png)
+    ![아키텍처가 X86와 같은 Windows 10 디바이스가 선택됨](./media/Win10CP-all-devices.png)
 
 7. **다운로드**를 선택하여 "필요한 프레임워크" 아래의 모든 패키지를 다운로드합니다.  
     이 작업은 x86, x64, ARM 아키텍처에 대해 수행해야 하므로 총 12개의 패키지가 됩니다.

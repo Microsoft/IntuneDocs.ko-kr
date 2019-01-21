@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817163"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122590"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune에서 조건부 액세스를 사용하는 일반적인 방법이란?
 
@@ -39,15 +39,14 @@ Intune과 Azure Active Directory는 연동되어 준수 상태의 관리 디바�
 Intune은 디바이스의 준수 상태를 평가하는 디바이스 준수 정책 기능을 제공합니다. 준수 상태는 Azure Active Directory에 보고되며, Azure Active Directory는 사용자가 회사 리소스에 액세스하려고 하면 Azure Active Directory에서 작성된 조건부 액세스 정책을 적용하는 데 이 상태를 사용합니다.
 
 Exchange Online 및 기타 Office 365 제품용 디바이스 기반 조건부 액세스 정책이 [Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)을 통해 구성됩니다.
-
--   [Azure Active Directory의 조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)에 대해 자세히 알아보세요.
+-   [Azure Active Directory의 조건부 액세스를 사용하여 관리 디바이스 필요](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices)에 대해 자세히 알아봅니다.
 
 -   [Intune 디바이스 준수](device-compliance.md)에 대해 자세히 확인해 보세요.
 
--   [Intune에서 조건부 액세스를 사용하여 전자 메일, Office 365 및 기타 서비스 보호](app-based-conditional-access-intune.md)에 대해 자세히 알아보세요.
+-   [Azure Active Directory의 조건부 액세스를 사용하여 지원되는 브라우저](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers)에 대해 자세히 알아봅니다.
 
 > [!NOTE]
-> Android 디바이스에서 Sharepoint Online에 대해 디바이스 기반 액세스를 사용하면 사용자는 다음과 같이 등록된 디바이스에서 **브라우저 액세스 사용** 옵션을 사용해야 합니다.
+> Android 디바이스에서 Sharepoint Online에 대한 디바이스 기반 액세스 또는 Exchange Online에 대한 브라우저 기반 액세스를 사용하도록 설정하는 경우 사용자는 다음과 같이 등록된 디바이스에서 **브라우저 액세스 사용** 옵션을 사용해야 합니다.
 > 1. **회사 포털 앱**을 시작합니다.
 > 2. 세 개의 점(...) 또는 하드웨어 메뉴 단추에서 **설정** 페이지로 이동합니다.
 > 3. **브라우저 액세스 사용** 단추를 누릅니다. 
@@ -146,7 +145,9 @@ PC에 대한 조건부 액세스는 모바일 디바이스에 사용할 수 있�
 
 #### <a name="bring-your-own-device-byod"></a>BYOD(Bring Your Own Device)
 
--   **작업 공간 연결 및 Intune 관리:** 이 경우 사용자는 개인 디바이스에 연결하여 회사 리소스 및 서비스에 액세스할 수 있습니다. 작업 공간 연결을 사용하여 디바이스를 Intune에 등록하면 디바이스 수준 정책을 수신할 수 있습니다. 이러한 방식은 조건부 액세스 기준을 평가할 수 있는 또 다른 옵션이기도 합니다.
+-   **작업 공간 연결 및 Intune 관리:** 이 경우 사용자는 개인 디바이스에 연결하여 회사 리소스 및 서비스에 액세스할 수 있습니다. 작업 공간 연결을 사용하여 디바이스를 Intune MDM에 등록하면 디바이스 수준 정책을 수신할 수 있습니다. 이러한 방식은 조건부 액세스 기준을 평가할 수 있는 다른 옵션이기도 합니다.
+
+[Azure Active Directory의 디바이스 관리](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview)에 대해 자세히 알아봅니다.
 
 ## <a name="app-based-conditional-access"></a>앱 기반 조건부 액세스
 

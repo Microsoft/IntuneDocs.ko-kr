@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 01/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6c51a2823e95526b76e5e71e35420d1744b70f6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f7d7ccb4c94300d00f02dcace5c3a089cd9f2a2
+ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178389"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270574"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>빠른 시작: 사용자 관리를 위한 그룹 만들기
 
@@ -38,7 +38,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 
-[Intune](https://aka.ms/intuneportal)에 [글로벌 관리자 또는 Intune 서비스 관리자](users-add.md#types-of-administrators)로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
+[Intune 포털](https://aka.ms/intuneportal)에 [글로벌 관리자 또는 Intune 서비스 관리자](users-add.md#types-of-administrators)로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="create-a-group"></a>그룹 만들기
 
@@ -60,7 +60,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 이 빠른 시작에서는 Intune을 사용하여 기존 사용자를 기반으로 그룹을 만들었습니다. Intune에 그룹을 추가하는 방법에 대한 자세한 내용은 [사용자 및 디바이스를 구성하는 그룹 추가](groups-add.md)를 참조하세요.
 
-Intune 빠른 시작 시리즈를 계속하려면 아래의 다음 빠른 시작 단계를 클릭하세요.
+다음 Intune 빠른 시작을 진행하기 위해서는 아래 빠른 시작 링크를 클릭하세요.
 
 > [!div class="nextstepaction"]
 > [빠른 시작: Windows 10 디바이스에 대한 자동 등록 설정](quickstart-setup-auto-enrollment.md)

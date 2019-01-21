@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12131fe0b78814850cfadee15533620dd5813f6c
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180734"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297403"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS 디바이스용 Intune에서 앱당 VPN 설정
 
@@ -33,9 +33,9 @@ Intune이 관리하는 iOS 디바이스에서 관리되는 앱이 VPN을 사용�
  - Citrix
  - F5
  - Pulse Connect Secure
+ - Palo Alto 네트워크
  - SonicWall
- - Palo Alto Networks GlobalProtect
- - Zscaler
+ - Zscaler Private Access
 
 ## <a name="prerequisites-for-per-app-vpn"></a>앱당 VPN의 필수 조건
 
@@ -73,7 +73,7 @@ Intune에서 만든 프로필에 CA에서 발급한 VPN 서버의 루트 인증�
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-2. **장치 구성**을 선택하고 **프로필**을 클릭합니다.
+2. **디바이스 구성**을 선택하고 **프로필**을 클릭합니다.
 3. **프로필 만들기**를 클릭합니다. **프로필 만들기**에서:
     1. **이름**을 입력합니다.
     2. **설명**을 입력합니다.
@@ -90,7 +90,7 @@ Intune에서 만든 프로필에 CA에서 발급한 VPN 서버의 루트 인증�
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-2. **장치 구성**을 선택하고 **프로필**을 클릭합니다.
+2. **디바이스 구성**을 선택하고 **프로필**을 클릭합니다.
 3. **프로필 만들기**를 클릭합니다. **프로필 만들기**에서:
     1. **이름**을 입력합니다.
     2. **설명**을 입력합니다.
@@ -117,7 +117,7 @@ VPN 프로필에는 클라이언트 자격 증명을 포함한 SCEP 인증서, V
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-2. **장치 구성**을 선택하고 **프로필**을 클릭합니다.
+2. **디바이스 구성**을 선택하고 **프로필**을 클릭합니다.
 3. **프로필 만들기**를 클릭합니다. **프로필 만들기**에서:
     1. **이름**을 입력합니다.
     2. **설명**을 입력합니다.
@@ -186,10 +186,12 @@ VPN 프로필을 추가한 후에 앱 및 Azure AD 그룹을 프로필에 연결
     - Check Point Capsule Connect
     - Cisco AnyConnect
     - Citrix VPN
+    - Citrix SSO
     - F5 Access
+    - Palo Alto Networks GlobalProtect
     - Pulse Secure
     - SonicWall Mobile Connect
-    - Zscaler 앱
+    - Zscaler
 
     > [!NOTE]
     > Pulse Secure VPN 앱을 사용하는 경우 앱 계층 또는 패킷 계층 터널링을 사용하도록 선택할 수 있습니다. **ProviderType** 값은 앱 계층 터널링의 경우 **app-proxy**로 설정하고, 패킷 계층 터널링의 경우 **packet-tunnel**로 설정합니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032268"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203385"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Intune을 사용하여 Windows Holographic 및 HoloLens 디바이스의 다양한 디바이스 관리 기능 관리 및 사용
 
@@ -45,13 +45,13 @@ Intune은 사용자가 회사 데이터에 액세스하고, 디바이스를 등�
 
 회사 포털 앱을 사용하여 다음 작업을 수행할 수도 있습니다.
 
-- 설정 앱 또는 회사 포털 앱을 사용하여 [Intune에서 장치 제거](/intune-user-help/unenroll-your-device-from-intune-windows)
-- [장치 이름 바꾸기](/intune-user-help/rename-your-device-cpapp)
-- 장치에 [앱 설치](/intune-user-help/install-apps-cpapp-windows)
-- 설정 앱 또는 회사 포털 앱에서 [수동으로 장치 동기화](/intune-user-help/sync-your-device-manually-windows)
+- 설정 앱 또는 회사 포털 앱을 사용하여 [Intune에서 디바이스 제거](/intune-user-help/unenroll-your-device-from-intune-windows)
+- [디바이스 이름 바꾸기](/intune-user-help/rename-your-device-cpapp)
+- 디바이스에 [앱 설치](/intune-user-help/install-apps-cpapp-windows)
+- 설정 앱 또는 회사 포털 앱에서 [수동으로 디바이스 동기화](/intune-user-help/sync-your-device-manually-windows)
 
 ## <a name="compliance-policy"></a>준수 정책
-**[장치 준수 정책 만들기](compliance-policy-create-windows.md)**
+**[디바이스 준수 정책 만들기](compliance-policy-create-windows.md)**
 
 준수 정책은 디바이스가 준수하려면 반드시 충족해야 할 규칙과 설정입니다. 비준수 디바이스용 회사 리소스에 대한 액세스를 차단하려면 조건부 액세스를 통해 이러한 정책을 사용합니다. Intune에서 Windows Holographic for Business을 실행하는 디바이스에 대한 액세스를 허용하거나 차단하기 위한 준수 정책을 만듭니다. 예를 들어 Bitlocker를 사용하도록 설정할 것을 요구하는 정책을 만들 수 있습니다.
 
@@ -90,10 +90,10 @@ Windows Holographic for Business를 실행하는 디바이스를 사용할 때 �
 
 - **[디바이스를 동기화하여 최신 정책과 작업 가져오기](device-sync.md)**: **동기화** 작업은 강제로 디바이스가 Intune을 사용하여 즉시 체크 인하도록 합니다. 디바이스가 체크 인하면 디바이스에 할당된 보류 중인 작업 또는 정책을 즉시 받게 됩니다. 이 기능을 통해 예약된 다음 체크 인을 기다리지 않고 할당한 정책의 유효성을 검사하고 문제를 해결할 수 있습니다.
 
-**[Microsoft Intune 장치 관리란?](device-management.md)** 은 Azure Portal을 사용하여 장치를 관리하는 방법에 대한 유용한 리소스입니다. 
+**[Microsoft Intune 디바이스 관리란?](device-management.md)** 은 Azure Portal을 사용하여 디바이스를 관리하는 방법에 대한 유용한 리소스입니다. 
 
 ## <a name="device-categories-and-groups"></a>디바이스 범주 및 그룹
-**[장치를 그룹으로 분류](device-group-mapping.md)**
+**[디바이스를 그룹으로 분류](device-group-mapping.md)**
 
 판매, 회계, 인사 등의 만든 범주 기반 그룹에 디바이스를 자동으로 추가하려면 Intune을 사용하여 디바이스 범주를 만들 수 있습니다. 이를 통해 Windows Holographic for Business를 실행 중인 디바이스 관리를 더 쉽게 할 수 있습니다.
 
@@ -104,7 +104,7 @@ Intune은 조직 내의 다른 디바이스에서 사용하거나 사용하지 �
 
 프로필에서 OMA URI를 사용하여 일부 설정을 사용자 지정하고 디바이스 제한을 만들고 VPN(가상 사설망) 및 Wi-Fi를 구성할 수 있습니다.
 
-#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[사용자 지정 장치 설정](custom-settings-windows-holographic.md)
+#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[사용자 지정 디바이스 설정](custom-settings-windows-holographic.md)
 
 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 구성하려면 Intune에서 사용자 지정 프로필을 만들 수 있습니다. OMA-URI 설정을 사용하여 VPN을 사용하도록 설정하거나 Microsoft 업데이트에서 업데이트를 검사하는 등 Windows Holographic for Business의 다양한 기능을 제어합니다.
 
@@ -112,7 +112,7 @@ OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 구성하려
 
 Intune에서 사용할 수 있는 공유 또는 게스트 PC 기능을 사용하여 키오스크로 실행하도록 Windows Holographic for Business 디바이스를 구성할 수 있습니다. 이러한 디바이스는 하나의 앱(단일 앱 키오스크 모드)을 실행하거나 여러 앱(다중 앱 키오스크 모드)을 실행할 수 있습니다.
 
-#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[장치 제한 사항](device-restrictions-windows-holographic.md)
+#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[디바이스 제한 사항](device-restrictions-windows-holographic.md)
 
 디바이스 제한을 사용하면 암호를 요구하고 [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps)에서 앱을 설치하고 Bluetooth를 사용하도록 설정하는 등 디바이스에서 다양한 설정과 기능을 제어할 수 있습니다. 이러한 제한 사항은 Intune 프로필에서 만듭니다. 이 프로필은 Windows Holographic for Business를 실행하는 여러 디바이스에 적용할 수 있습니다.
 
@@ -124,12 +124,17 @@ VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전
 
 또한 Windows Holographic for Business 디바이스에 무선 네트워크 설정을 할당하는 Intune에서 Wi-Fi 프로필을 만들 수 있습니다. Wi-Fi 프로필을 할당하면 최종 사용자는 네트워크 구성 없이도 회사 네트워크 액세스 권한을 가져옵니다. 예를 들어 Windows Holographic for Business 디바이스 전용 Wi-Fi 네트워크를 만들 수 있습니다.
 
+## <a name="shared-multi-user-devices"></a>다중 사용자 디바이스 공유
+[공유 디바이스](shared-user-device-settings-windows-holographic.md)
+
+Microsoft HoloLens와 같이 Windows Holographic for Business를 실행하는 디바이스에는 여러 사용자가 있을 수 있습니다. Intune에는 이러한 공유 디바이스에서 로컬 스토리지 및 계정 관리를 사용하여 전원 관리와 같은 다양한 기능을 제어할 수 있는 설정이 포함됩니다. 또한 서로 다른 운영 체제를 사용하여 디바이스에 구성 프로필을 적용할 수 있습니다. 예를 들어 디바이스 그룹에는 동일한 그룹에서 RS2 및 RS3를 실행하는 디바이스가 있을 수 있습니다.
+
 ## <a name="software-updates"></a>소프트웨어 업데이트
 **[소프트웨어 업데이트 관리](windows-update-for-business-configure.md)**
 
 Intune에는 Windows 10 디바이스용 업데이트 링이라는 기능이 포함되어 있습니다. 이러한 업데이트 링은 업데이트를 설치하는 방법을 결정하는 설정 그룹을 포함합니다. 예를 들어 업데이트를 설치하기 위한 유지 관리 기간을 만들거나 업데이트가 설치된 후 다시 시작을 선택할 수 있습니다. 업데이트 링은 Windows Holographic for Business를 실행하는 여러 디바이스에 적용할 수 있습니다.
 
-## <a name="terms-and-conditions"></a>Terms and conditions
+## <a name="terms-and-conditions"></a>사용 약관
 **[사용자 액세스에 대한 회사의 사용 약관 설정](terms-and-conditions-create.md)**
 
 사용자가 디바이스를 등록하고 이메일을 포함한 회사 앱에 액세스하기 전에 사용자가 회사의 사용 약관에 동의할 것을 요구할 수 있습니다. Intune에서 사용 약관이 회사 포털에 표시되는 방식을 정의하고 또한 이러한 약관을 Windows Holographic for Business를 실행하는 디바이스에 할당합니다.

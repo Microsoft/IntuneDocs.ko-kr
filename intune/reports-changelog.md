@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642764"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297233"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 데이터 웨어하우스 API에 대한 변경 로그
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 데이터 웨어하우스에 대한 업데이트를 최신 상태로 유지합니다.
+
+## <a name="1812"></a>1812 
+_릴리스 날짜: 2018년 12월_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>등록 작업 컬렉션이 v1.0으로 릴리스됨 
+
+이제 등록 작업 컬렉션을 v1.0에서 사용할 수 있습니다. 이 컬렉션을 사용하여 사용자 환경에서 등록 실패 볼륨 및 추세를 파악할 수 있습니다. 자세한 내용은 [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories) 및 [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons)를 참조하세요.
 
 ## <a name="1808"></a>1808
 _릴리스 날짜: 2018년 8월_
@@ -36,9 +43,9 @@ _릴리스 날짜: 2018년 8월_
 
 이제 쿼리 매개 변수 `api-version=v1.0`을(를) 설정하여 Intune 데이터 웨어하우스의 v1.0 버전을 사용할 수 있습니다. 데이터 웨어하우스의 컬렉션 업데이트는 가산적이므로 기존 시나리오가 중단되지 않습니다.
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>등록 실패 컬렉션이 베타로 릴리스됨
+### <a name="enrollment-activities-collection-released-to-beta"></a>등록 작업 컬렉션이 베타로 릴리스됨
 
-새 `Enrollment Failure` 컬렉션이 베타로 릴리스됩니다. 이 컬렉션을 사용하여 가장 일반적인 실패를 보면서 등록 진행 방법을 파악할 수 있습니다. 
+새 `Enrollment Activities` 컬렉션이 베타로 릴리스됩니다. 이 컬렉션을 사용하여 가장 일반적인 실패를 보면서 등록 진행 방법을 파악할 수 있습니다. 
 
 
 ## <a name="1805"></a>1805

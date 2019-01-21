@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f587fdf7c1690dbb0a31388a9c70b780179e541e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642883"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210876"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST 클라이언트를 사용하여 Intune 데이터 웨어하우스 API에서 데이터 가져오기
 
@@ -47,7 +47,7 @@ Azure에서 네이티브 앱을 만듭니다. 이 네이티브 앱은 클라이�
     3.  **로그온 URL**의 URL을 입력합니다. 로그온 URL은 구체적인 시나리오에 따라 달라지지만, Postman을 사용하려는 경우 `https://www.getpostman.com/oauth2/callback`을 입력합니다. Azure AD에 인증할 때 클라이언트 인증 단계에 콜백을 사용합니다.
 4.  **만들기**를 선택합니다.
 
-     ![Intune 데이터 웨어하우스 API](./media/reports-get_rest_data_client_overview.png)
+     ![Intune Data Warehouse 클라이언트 앱](./media/reports-get_rest_data_client_overview.png)
 
 5. 이 앱의 **애플리케이션 ID**를 기록해 둡니다. 다음 섹션에서 이 ID를 사용합니다.
 
@@ -134,7 +134,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 
 12. **Request Token**(토큰 요청)을 선택합니다.
 
-    ![토큰에 대한 정보](./media/reports-postman_getnewtoken.png)
+    ![액세스 토큰에 대한 정보](./media/reports-postman_getnewtoken.png)
 
 13. Active AD 권한 부여 페이지에서 자격 증명을 입력합니다. Postman의 토큰 목록에 이제 `Bearer`라는 토큰이 들어 있습니다.
 14. **Use Token**(토큰 사용)을 선택합니다. 헤더 목록에는 권한 부여의 새 키 값과 `Bearer <your-authorization-token>` 값이 포함되어 있습니다.
@@ -144,7 +144,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 1.  **보내기**를 선택합니다.
 2.  반환 데이터는 Postman 응답 본문에 표시됩니다.
 
-    ![Postman 200OK](./media/reports-postman_200OK.png)
+    ![Postman 클라이언트 상태는 200 확인과 같음](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Intune 데이터 웨어하우스에서 데이터를 가져오기 위한 REST 클라이언트(C#) 만들기
 
@@ -161,7 +161,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 6. **동의함**을 선택하여 NuGet 패키지 라이선스에 동의합니다.
 7. 솔루션 탐색기에서 `Program.cs`를 엽니다.
 
-    ![Visual Studio의 프로젝트](./media/reports-get_rest_data_in.png)
+    ![Progam.cs 및 Visual Studio의 솔루션 탐색기](./media/reports-get_rest_data_in.png)
 
 8. Program.cs의 코드를 다음 코드로 바꿉니다.  
    ```csharp

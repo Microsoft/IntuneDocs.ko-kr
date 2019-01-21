@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: e0bb198b078695b567756c6a7db832d00e7a8c5b
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657783"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210842"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -158,6 +158,8 @@ iOS 또는 Android 앱을 Intune 앱 SDK와 통합하는 데 필요한 단계를
     * Intune 앱 보호 정책에 대해 iOS 또는 Android 스토어 앱을 사용하도록 설정하는 ISV인 경우 등록 단계에 설명된 대로 Microsoft Intune을 사용하여 등록을 완료하면 프로모션 코드를 받게 됩니다. 이 프로모션 코드를 사용하여 1년 연장하여 사용할 수 있는 Microsoft Intune 평가판을 신청할 수 있습니다.
 
     * 스토어에 게시하지 않을 LOB(기간 업무) 앱을 개발 중인 경우에는 조직을 통해 Microsoft Intune에 대한 액세스 권한을 가져야 합니다. [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)에서 한 달 무료 평가판도 신청할 수 있습니다.
+    
+    * 최종 사용자 계정을 사용하여 모바일 디바이스에서 앱을 테스트하는 경우 관리자 계정으로 로그인한 후 Office 관리자 포털 웹 사이트에서 해당 계정에 Intune 라이선스를 부여했는지 확인합니다. [Microsoft Intune 라이선스 할당](https://docs.microsoft.com/en-ca/intune/licenses-assign)을 참조하세요.
 
 * **Intune 앱 보호 정책**: 모든 Intune 앱 보호 정책에 대해 앱을 테스트하려면 각 정책 설정에 예상되는 동작이 무엇인지 알고 있어야 합니다. [iOS 앱 보호 정책](app-protection-policy-settings-ios.md) 및 [Android 앱 보호 정책](app-protection-policy-settings-android.md)에 대한 설명을 참조하세요.
 

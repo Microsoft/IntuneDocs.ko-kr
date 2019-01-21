@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553659"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122641"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>초기화, 사용 중지 또는 수동으로 디바이스 등록을 취소하여 디바이스 제거
 
@@ -37,7 +37,7 @@ ms.locfileid: "53553659"
 |초기화 작업|**등록 상태 및 사용자 계정 유지**|Intune 관리에서 제거됨|설명|
 |:-------------:|:------------:|:------------:|------------|
 |**초기화**| 선택되지 않음 | 예 | 모든 사용자 계정, 데이터, MDM 정책 및 설정을 초기화합니다. 운영 체제를 기본 상태 및 설정으로 초기화합니다.|
-|**초기화**| 선택 | 아니요 | 모든 MDM 정책을 초기화합니다. 사용자 계정 및 데이터를 유지합니다. 사용자 설정을 기본값으로 다시 초기화합니다. 운영 체제를 기본 상태 및 설정으로 초기화합니다.|
+|**초기화**| 선택됨 | 아니요 | 모든 MDM 정책을 초기화합니다. 사용자 계정 및 데이터를 유지합니다. 사용자 설정을 기본값으로 다시 초기화합니다. 운영 체제를 기본 상태 및 설정으로 초기화합니다.|
 
 **등록 상태 및 사용자 계정 유지** 옵션은 Windows 10 버전 1709 이상에만 사용할 수 있습니다.
 
@@ -192,6 +192,10 @@ Intune에서 Apple DEP 디바이스를 관리에서 완전히 제거하려면 �
 6. **재할당**을 선택합니다.
 
     ![Apple 재할당에 대한 스크린샷](./media/devices-wipe/apple-reassign.png)
+
+## <a name="fresh-start"></a>새로 시작
+
+Windows 10 디바이스에 적용 가능합니다. [새로 시작](https://docs.microsoft.com/intune/device-fresh-start)에 대해 자세히 알아봅니다.
 
 ## <a name="next-steps"></a>다음 단계
 

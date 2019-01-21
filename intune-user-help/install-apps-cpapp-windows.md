@@ -1,11 +1,11 @@
 ---
 title: Windows용 Intune 회사 포털 앱에서 앱 설치
-description: Windows용 회사 포털 앱에서 앱을 설치하고 공유하는 방법 알아보기
+description: Windows용 회사 포털 앱에서 앱 설치 및 공유
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863096"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203232"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>디바이스에 앱 설치 및 공유
 Windows용 회사 포털 앱에서 디바이스에 앱을 설치합니다.
@@ -35,9 +35,9 @@ Windows용 회사 포털 앱에서 디바이스에 앱을 설치합니다.
 2. 회사 포털 앱의 다음 섹션에서 앱을 찾아서 설치합니다.  
 
     * **홈**: 조직의 추천 앱 목록에서 선택합니다.  
-    * **모두 표시**: **홈페이지** > **앱** 섹션에서 **모두 표시**를 클릭하여 사용 가능한 모든 앱을 봅니다.  
-    * **모든 앱**: 설치되고 추천된 앱을 비롯한 사용 가능한 모든 앱을 보려면 탐색 창에서 이 페이지를 선택합니다.  
-    * **앱 검색**: 정적 검색 창은 앱 탐색 창에 있습니다.  사용 가능한 앱을 찾으려면 앱 이름 또는 게시자로 검색합니다.  
+    * **모두 표시**: **홈페이지** > **앱** 섹션에서 **모두 표시**를 클릭하여 사용 가능한 모든 앱을 확인합니다.  
+    * **모든 앱**: 설치되고 추천된 앱을 비롯한 사용 가능한 모든 앱을 확인하려면 탐색 창에서 이 페이지를 선택합니다.  
+    * **앱 검색**: 정적 검색 창은 앱의 탐색 창에 있습니다.  사용 가능한 앱을 찾으려면 앱 이름 또는 게시자로 검색합니다.  
     * **모든 앱**: 사용 가능한 모든 앱을 보고 정렬하고 필터링합니다. 검색 결과는 관련성에 따라 자동으로 정렬됩니다.  
 
 3. 앱을 선택합니다.   
@@ -63,4 +63,16 @@ Windows용 회사 포털 앱에서 디바이스에 앱을 설치합니다.
 
 공유하면 받는 사람이 앱의 세부 정보를 볼 수 있는 링크 및 메시지를 받게 됩니다. 이 링크는 회사 포털  **앱 세부 정보** 페이지를 엽니다. 
 
-여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.
+## <a name="available-apps"></a>사용 가능한 앱  
+
+조직은 회사 또는 학교에서 사용하기에 적절하고 유용한 앱을 선택합니다. 이러한 앱은 회사 포털에서만 찾을 수 있습니다.  
+
+사용자는 디바이스 유형에 따라 앱을 사용할 수 있게 됩니다. 예를 들어 사용자가 Windows용 회사 포털 앱을 사용하는 경우 iOS 앱이 아닌 Windows 앱에 액세스하게 됩니다.  
+
+## <a name="request-an-app-for-work-or-school"></a>회사 또는 학교용 앱 요청  
+사용자가 필요한 앱이 있지만 회사 포털에 없는 경우 이를 요청합니다. 도움말 및 지원 페이지에서 회사 포털 앱의 **기술 지원팀** 연락처 세부 정보를 확인합니다. 이런 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.    
+
+  ![Windows 10용 회사 포털 앱, 도움말 및 지원 페이지에서는 기술 지원팀 세부 정보를 강조 표시합니다. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.  

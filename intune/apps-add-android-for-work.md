@@ -1,12 +1,12 @@
 ---
-title: Android 회사 프로필 디바이스에 앱 할당
+title: Android 엔터프라이즈 디바이스에 관리되는 Google Play 앱 할당
 titlesuffix: Microsoft Intune
-description: 관리되는 Google Play 스토어에서 Android 회사 프로필 디바이스에 앱을 동기화하고 할당하는 방법을 파악합니다.
+description: 관리되는 Google Play 스토어에서 Android 엔터프라이즈 디바이스에 앱을 동기화하고 할당하는 방법을 파악합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305933"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239577"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Intune을 사용하여 Android 회사 프로필 디바이스에 앱 할당
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune을 사용하여 Android 엔터프라이즈 디바이스에 관리되는 Google Play 앱 할당
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android 엔터프라이즈는 Android 회사 프로필 디바이스 및 키오스크 디바이스를 위한 프로그램입니다. Android 회사 프로필 디바이스의 경우 Android 엔터프라이즈는 개인 앱 및 데이터를 회사 앱 및 데이터와 구분하는 기능 및 서비스의 집합입니다. Android 엔터프라이즈는 사용자가 업무용 Android 디바이스를 사용할 때 추가 관리 옵션과 개인 정보를 제공합니다. Intune을 통해 Android 회사 프로필 디바이스에 앱과 설정을 배포하여 업무 및 개인 정보가 구분되어 있는지 확인할 수 있습니다. Android 회사 프로필 디바이스에 설치하는 모든 앱은 Google Play 스토어에서 제공됩니다. Android 회사 프로필 디바이스에 앱을 할당하는 방법은 표준 Android 디바이스에 앱을 할당하는 방법과 다릅니다. 스토어에 로그인한 다음 원하는 앱을 찾아서 승인합니다. 그러면 Azure Portal의 **사용이 허가된 앱** 노드에 앱이 표시되며, 다른 앱과 마찬가지로 앱의 할당을 관리할 수 있습니다.
+Android 엔터프라이즈는 Android 회사 프로필 디바이스, 전용/키오스크 디바이스 및 완전 관리형 디바이스를 위한 프로그램입니다. Android 회사 프로필 디바이스의 경우 Android 엔터프라이즈는 개인 앱 및 데이터를 회사 앱 및 데이터와 구분하는 기능 및 서비스의 집합입니다. Android 엔터프라이즈는 사용자가 업무용 Android 디바이스를 사용할 때 추가 관리 옵션과 개인 정보를 제공합니다. Intune을 통해 Android 회사 프로필 디바이스에 앱과 설정을 배포하여 업무 및 개인 정보가 구분되어 있는지 확인할 수 있습니다. Android 회사 프로필 디바이스에 설치하는 모든 앱은 Google Play 스토어에서 제공됩니다. Android 회사 프로필 디바이스에 앱을 할당하는 방법은 표준 Android 디바이스에 앱을 할당하는 방법과 다릅니다. 스토어에 로그인한 다음 원하는 앱을 찾아서 승인합니다. 그러면 Azure Portal의 **사용이 허가된 앱** 노드에 앱이 표시되며, 다른 앱과 마찬가지로 앱의 할당을 관리할 수 있습니다.
 
 또한 고유한 LOB(기간 업무) 앱을 만든 경우 다음과 같이 앱을 할당할 수 있습니다.
 - Google Play 스토어의 개인 영역에 앱을 게시할 수 있는 Google 개발자 계정에 등록합니다.

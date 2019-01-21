@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642849"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203419"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록
 
@@ -192,7 +192,15 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
     | <strong>확대/축소</strong> | 디바이스를 설정할 때 디스플레이를 확대/축소하는 옵션을 사용자에게 제공합니다. |
     | <strong>Siri</strong> | 사용자에게 Siri를 설정할 수 있는 옵션을 제공합니다. |
     | <strong>진단 데이터</strong> | 사용자에게 **진단** 화면을 표시합니다. 이 화면은 사용자에게 진단 데이터를 Apple에 전송하는 옵션을 제공합니다. |
-
+    | <strong>표시 색상</strong> | 사용자에게 표시 색상을 설정할 수 있는 옵션을 제공합니다. |
+    | <strong>개인 정보 보호</strong> | 사용자에게 개인 정보 화면을 표시합니다. |
+    | <strong>Android 마이그레이션</strong> | 사용자에게 Android 디바이스에서 날짜를 마이그레이션할 수 있는 옵션을 제공합니다. |
+    | <strong>iMessage 및 FaceTime</strong> | 사용자에게 iMessage 및 FaceTime을 설정할 수 있는 옵션을 제공합니다. |
+    | <strong>온보딩</strong> | 커버 시트, 멀티태스킹 및 제어 센터 같은 사용자 교육을 위한 온보딩 정보 화면을 표시합니다. |
+    | <strong>조사식 마이그레이션</strong> | 사용자에게 조사식 디바이스에서 날짜를 마이그레이션할 수 있는 옵션을 제공합니다. |
+    | <strong>화면 시간</strong> | 화면 시간 화면을 표시합니다. |
+    | <strong>소프트웨어 업데이트</strong> | 필수 소프트웨어 업데이트 화면을 표시합니다. |
+    | <strong>SIM 설정</strong> | 사용자에게 이동 통신 플랜을 추가하는 옵션을 제공 합니다. |
 
 14. **확인**을 선택합니다.
 

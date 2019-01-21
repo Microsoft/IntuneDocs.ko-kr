@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 080205e601b857d4765eb6b97eeeeeb8f4e6fc1b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0da6861b6c49fc37691b8c6e464a506670643fa3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187160"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203334"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>범위 태그를 사용하여 정책 필터링
 
-범위 태그를 사용하여 사용자가 만드는 사용자 지정 태그를 사용하여 정책을 필터링할 수 있습니다.
+범위 태그를 사용하여 사용자가 만드는 사용자 지정 태그를 사용하여 정책을 필터링할 수 있습니다. 범위 태그를 역할 및 앱에 적용할 수 있습니다.
 
 예를 들어 "엔지니어링 부서"라는 범위 태그를 만들고 엔지니어링 부서와 관련된 구성 프로필에 할당합니다. "엔지니어링 관리자" 역할에 동일한 태그를 할당합니다. "엔지니어링 부서" 태그가 있는 정책만 표시됩니다.
 
@@ -33,11 +33,16 @@ ms.locfileid: "52187160"
 
 ## <a name="to-add-a-scope-tag-to-a-configuration-profile"></a>범위 태그를 구성 프로필에 추가하려면
 
-**장치 구성** > **프로필** > 프로필 선택 > **속성** > **범위(태그)** 를 선택합니다.
+**디바이스 구성** > **프로필** &gt; 프로필 선택 &gt; **속성** > **범위(태그)** 를 선택합니다.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>범위 태그를 역할에 할당하려면
 
 **역할** > **모든 역할** > **정책 및 프로필 관리자** > **할당** > **범위(태그)** 를 선택합니다.
+
+## <a name="to-assign-a-scope-tag-to-an-app"></a>범위 태그를 앱에 할당하려면
+
+**클라이언트 앱** > **앱** > 앱 선택 > **속성** > **범위(태그)** > **추가** > 태그 선택 > **선택** > **확인** > **저장**을 선택합니다.
+
 
 ## <a name="next-steps"></a>다음 단계
 

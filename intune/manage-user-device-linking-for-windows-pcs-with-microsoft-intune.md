@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186650"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149630"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC에 대한 사용자-장치 연결 관리
 
@@ -33,7 +33,7 @@ ms.locfileid: "52186650"
 
 사용자를 PC에 연결하려면
 
-1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** &gt; **모든 장치**(또는 사용자에게 연결하려는 PC가 포함된 다른 그룹)를 선택합니다.
+1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹**&gt;**모든 디바이스**(또는 사용자에게 연결하려는 PC가 포함된 다른 그룹)를 선택합니다.
 
 2. 사용자를 연결할 PC를 선택한 다음 **사용자 연결**을 선택합니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "52186650"
 
    - 현재 사용자(있는 경우)에 연결되어 있는 PC를 그대로 두려면 **취소**를 선택합니다.
 
-   - 현재 사용자에 대한 연결을 제거하려면(있는 경우) <strong>연결 제거** &gt; **확인</strong>을 선택합니다.
+   - 현재 사용자에 대한 연결을 제거하려면(있는 경우) <strong>연결 제거**&gt;** 확인</strong>을 선택합니다.
 
    - 새 사용자와 PC를 연결하려면 **모든 사용자** 목록에서 사용자를 선택합니다. 사용자 데이터가 올바른지 확인한 후 **확인**을 선택합니다.
 

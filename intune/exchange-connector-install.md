@@ -15,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3e66dd3d77cc36a6d311afea82e0f2087b469495
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817265"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239594"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure에서 Intune 온-프레미스 Exchange Connector 설정
 
@@ -78,7 +78,7 @@ Microsoft Intune에서 온-프레미스 Exchange Server와 통신할 수 있도�
 
 4. **설치** 아래에서 **Exchange ActiveSync 커넥터**를 선택한 다음, **온-프레미스 커넥터 다운로드**를 선택합니다.
 
-5.  온-프레미스 Exchange Connector는 열거나 저장할 수 있는 압축(.zip) 폴더에 포함되어 있습니다. **파일 다운로드** 대화 상자에서 **저장**을 선택하여 이 압축(ZIP) 폴더를 안전한 위치에 저장합니다.
+5.  온-프레미스 Exchange 커넥터는 열거나 저장할 수 있는 압축(.zip) 폴더에 있습니다. **파일 다운로드** 대화 상자에서 **저장**을 선택하여 이 압축(ZIP) 폴더를 안전한 위치에 저장합니다.
 
     > [!IMPORTANT]
     > 온-프레미스 Exchange Connector 폴더 내의 파일을 이동하거나 이름을 바꾸지 마세요. 폴더의 콘텐츠를 이동하거나 이름을 바꾸면 Exchange Connector 설치가 실패합니다.
@@ -97,7 +97,7 @@ Intune 온-프레미스 Exchange Connector를 설치하려면 다음 단계를 �
 
    ![Exchange Server 유형을 선택하는 경우를 보여주는 이미지](./media/intune-sa-exchange-connector-config.png)
 
-   온-프레미스 Exchange Server의 경우 **클라이언트 액세스 서버** 역할을 호스팅하는 Exchange Server의 서버 이름 또는 정규화된 도메인 이름을 제공합니다.
+   On-Premises Exchange Server의 경우 **클라이언트 액세스 서버** 역할을 호스팅하는 Exchange 서버의 서버 이름 또는 정규화된 도메인 이름을 지정합니다.
 
    Hosted Exchange Server에 대해 Exchange 서버 주소를 지정합니다. Hosted Exchange Server URL을 확인하려면
 
@@ -116,20 +116,20 @@ Intune 온-프레미스 Exchange Connector를 설치하려면 다음 단계를 �
 
        4. **확인**을 선택합니다.
 
-   5. **사용자(도메인\사용자)** 및 **암호** 필드에 Exchange Server에 연결하는 데 필요한 자격 증명을 입력합니다.
+4. **사용자(도메인\사용자)** 및 **암호** 필드에 Exchange Server에 연결하는 데 필요한 자격 증명을 입력합니다.
 
-   6.  사용자의 Exchange Server 사서함에 알림을 보내는 데 필요한 자격 증명을 입력합니다. 이 사용자를 알림에만 전용할 수 있습니다. 알림 사용자는 알림을 이메일로 보낼 수 있도록 Exchange 사서함이 필요합니다. 이러한 알림은 Intune에서 조건부 액세스 정책을 통해 구성할 수 있습니다.  
+5. 사용자의 Exchange Server 사서함에 알림을 보내는 데 필요한 자격 증명을 입력합니다. 이 사용자를 알림에만 전용할 수 있습니다. 알림 사용자는 알림을 이메일로 보낼 수 있도록 Exchange 사서함이 필요합니다. 이러한 알림은 Intune에서 조건부 액세스 정책을 통해 구성할 수 있습니다.  
 
-       자동 검색 서비스 및 Exchange 웹 서비스가 Exchange 클라이언트 액세스 서버에 구성되어 있는지 확인합니다. 자세한 내용은 [Client Access server](https://technet.microsoft.com/library/dd298114.aspx)(클라이언트 액세스 서버)를 참조하세요.
+       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
-   7.  Intune이 Exchange Server에 액세스할 수 있도록 **암호** 필드에 이 계정의 암호를 입력합니다.
+6. Intune이 Exchange Server에 액세스할 수 있도록 **암호** 필드에 이 계정의 암호를 입력합니다.
 
-   8. **연결**을 선택합니다.
+7. **연결**을 선택합니다.
 
    > [!NOTE]
    > 연결을 구성하는 데 몇 분 정도 걸릴 수 있습니다.
 
-구성하는 동안 Exchange Connector에서 인터넷에 액세스할 수 있도록 프록시 설정을 저장합니다. 프록시 설정이 변경되면 업데이트된 프록시 설정이 Exchange Connector에 적용되도록 Exchange Connector를 다시 구성해야 합니다.
+구성하는 동안 Exchange Connector에서 인터넷에 액세스할 수 있도록 프록시 설정을 저장합니다. 프록시 설정이 변경되면 업데이트된 프록시 설정이 Exchange커넥터에 적용되도록 Exchange 커넥터를 다시 구성해야 합니다.
 
 Exchange Connector에서 연결이 설정되면 Exchange에서 관리되는 사용자와 연결된 모바일 디바이스가 자동으로 동기화되고 Exchange Connector에 추가됩니다. 이 동기화를 완료하는 데는 다소 시간이 걸릴 수 있습니다.
 
@@ -142,7 +142,7 @@ Intune은 구독당 여러 개의 온-프레미스 Exchange Connector를 지원�
 다음 섹션에서 설명하는 고가용성, 모니터링 및 수동 동기화 기능은 Intune에 연결된 각 Exchange 조직에서 지원됩니다.
 
 ## <a name="on-premises-exchange-connector-high-availability-support"></a>온-프레미스 Exchange Connector 고가용성 지원 
-Exchange Connector는 지정된 CAS를 사용하여 Exchange에 연결한 후 다른 CAS를 검색할 수 있습니다. 기본 CAS를 사용할 수 없게 되면 커넥터는 기본 CAS를 사용할 수 있을 때까지 다른 CAS(사용 가능한 경우)로 장애 조치(failover)됩니다. 이 기능은 기본적으로 켜져 있습니다. 다음 절차를 사용하여 이 기능을 끌 수 있습니다.
+Exchange 커넥터는 지정된 CAS를 사용하여 Exchange에 연결한 후 다른 CAS를 검색할 수 있습니다. 기본 CAS를 사용할 수 없게 되면 커넥터는 기본 CAS를 사용할 수 있을 때까지 다른 CAS(사용 가능한 경우)로 장애 조치(failover)됩니다. 이 기능은 기본적으로 켜져 있습니다. 다음 절차를 사용하여 이 기능을 끌 수 있습니다.
 1. Exchange Connector가 설치된 서버에서 %*ProgramData*%\Microsoft\Windows Intune Exchange Connector로 이동합니다. 
 2. 텍스트 편집기를 사용하여 **OnPremisesExchangeConnectorServiceConfiguration.xml**을 엽니다.
 3. &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt;를 &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt;로 변경하여 기능을 사용하지 않도록 설정합니다.    
@@ -157,12 +157,12 @@ Exchange Connector가 성공적으로 구성되면 연결 상태 및 마지막�
 
 마지막으로 성공한 동기화 시도의 시간과 날짜를 확인할 수도 있습니다.
 
-### <a name="system-center-operations-manager-scom-management-pack"></a>SCOM(System Center Operations Manager) 관리 팩
+### <a name="system-center-operations-manager-management-pack"></a>System Center Operations Manager 관리 팩
 
-Intune 1710 릴리스부터 [Exchange Connector 및 Intune 용 SCOM 관리 팩](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)을 사용할 수 있습니다. 이렇게 하면 문제를 해결해야 할 때 Exchange 커넥터를 모니터링하는 여러 가지 방법이 있습니다.
+Intune 1710 릴리스부터 [Exchange 커넥터 및 Intune용 Operations Manager 관리 팩](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)을 사용할 수 있습니다. 이렇게 하면 문제를 해결해야 할 때 Exchange 커넥터를 모니터링하는 여러 가지 방법이 있습니다.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>수동으로 빠른 동기화 또는 전체 동기화 강제 적용
-온-프레미스 Exchange Connector는 정기적으로 EAS와 Intune 디바이스 레코드를 자동으로 동기화합니다. 디바이스의 준수 상태가 변경되면 자동 동기화 프로세스가 정기적으로 레코드를 업데이트하여 디바이스 액세스를 차단하거나 허용할 수 있습니다.
+온-프레미스 Exchange 커넥터는 정기적으로 EAS와 Intune 디바이스 레코드를 자동으로 동기화합니다. 디바이스의 준수 상태가 변경되면 자동 동기화 프로세스가 정기적으로 레코드를 업데이트하여 디바이스 액세스를 차단하거나 허용할 수 있습니다.
 
    - **빠른 동기화**는 하루에 여러 번 정기적으로 수행됩니다. 빠른 동기화는 마지막 동기화 이후 변경된 Intune 사용 허가 및 온-프레미스 Exchange 조건부 액세스 대상 사용자에 대한 디바이스 정보를 검색합니다.
 

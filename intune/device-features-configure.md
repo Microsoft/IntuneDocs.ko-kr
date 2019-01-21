@@ -14,12 +14,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65457a65504b633018bb61851f16c8c65fa1c806
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185681"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203096"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune에서 iOS 및 macOS 디바이스 기능 설정 추가
 
@@ -30,7 +30,7 @@ ms.locfileid: "52185681"
 - AirPrint 및 AirPlay 설정
 - 홈 화면 레이아웃
 - 앱의 알림
-- 공유 디바이스 구성
+- 잠금 화면 메시지
 - Single Sign-On 설정
 - 웹 콘텐츠 필터링
 
@@ -40,23 +40,23 @@ ms.locfileid: "52185681"
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링한 다음, **Microsoft Intune**을 선택합니다.
-3. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+3. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 4. 다음 속성을 입력합니다.
 
    - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.
-   - **설명**: 설정에 대한 설명을 입력합니다. 선택 사항이지만 입력하는 것이 좋습니다.
+   - **설명**: 프로필에 대한 설명을 입력합니다. (이 설정은 선택 사항이지만 권장됩니다.)
    - **플랫폼**: 플랫폼 형식을 선택합니다.
      - **iOS**
      - **macOS**
-   - **프로필 형식**: **장치 기능**을 선택합니다.
+   - **프로필 유형**: **디바이스 기능**을 선택합니다.
    - **설정**: 설정은 선택한 플랫폼에 따라 달라집니다. 다음 아티클에서는 각 프로필의 설정에 대해 설명합니다.
 
      - [iOS 및 MacOS용 AirPrint 설정](air-print-settings-ios-macos.md)
      - [iOS용 AirPlay 설정](airplay-settings-ios.md)
      - [iOS용 홈 화면 레이아웃 설정](home-screen-settings-ios.md)
      - [iOS용 앱 알림 설정](app-notification-settings-ios.md)
-     - [iOS용 공유 장치 구성 설정](shared-device-settings-ios.md)
-     - [iOS 장치 Single Sign-On용 Intune 구성](sso-ios.md)
+     - [iOS용 잠금 화면 메시지 설정](shared-device-settings-ios.md)
+     - [iOS 디바이스 Single Sign-On용 Intune 구성](sso-ios.md)
      - [iOS 장치용 웹 콘텐츠 필터 설정](web-content-filter-settings-ios.md)
 
 5. 작업이 완료되면 **확인**을 선택한 다음, **만들기**를 선택하여 변경 내용을 저장합니다.

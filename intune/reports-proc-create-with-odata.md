@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067451"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210723"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 보고서 만들기
 
@@ -89,7 +89,7 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop은 [Power
 
 트리맵 차트에서 계층적 데이터는 상자 내의 상자로 표시됩니다. 계층 구조의 각 분기는 하위 분기를 표시하는 더 작은 상자가 포함된 상자입니다. Power BI Desktop을 사용하여 Intune 데이터의 트리맵을 만들 수 있습니다.
 
-![시각화 > 트리맵](media/reports-create-03-treemap.png)
+![Power BI 트리맵 시각화](media/reports-create-03-treemap.png)
 
 1. 차트 종류를 선택합니다. **트리맵**을 선택합니다.
 2. 데이터 모델에서 **devices** 테이블을 찾습니다.

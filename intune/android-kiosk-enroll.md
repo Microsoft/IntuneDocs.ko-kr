@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
+ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626087"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54098320"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Android 엔터프라이즈 키오스크 디바이스의 Intune 등록 설정
 
@@ -112,7 +112,7 @@ NFC를 지원하는 Android 5.1 이상 디바이스의 경우 특별한 형식�
 
 ### <a name="enroll-by-using-a-token"></a>토큰을 사용하여 등록
 
-Android 6 이상 디바이스의 경우 토큰을 사용하여 디바이스를 등록할 수 있습니다. **aft#setup** 등록 메서드를 사용하는 경우 Android 6.1 이상 버전에서는 QR 코드 검사를 활용할 수도 있습니다.
+Android 6 이상 디바이스의 경우 토큰을 사용하여 디바이스를 등록할 수 있습니다. **afw#setup** 등록 메서드를 사용하는 경우 Android 6.1 이상 버전에서는 QR 코드 검사를 활용할 수도 있습니다.
 
 1. 초기화된 디바이스를 켭니다.
 2. **시작** 화면에서 언어를 선택합니다.
