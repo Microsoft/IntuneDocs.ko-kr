@@ -196,8 +196,12 @@ items:
         href: connect-intune-android-enterprise.md
       - name: Android 회사 프로필 등록 설정
         href: android-work-profile-enroll.md
-      - name: Android 키오스크 등록 설정
+      - name: Android 전용 디바이스 등록 설정
         href: android-kiosk-enroll.md
+      - name: Android 완전 관리형 등록 설정
+        href: android-fully-managed-enroll.md
+      - name: Android 전용 디바이스 또는 완전 관리형 디바이스 등록
+        href: android-dedicated-devices-fully-managed-enroll.md
       - name: Android 회사 프로필 디바이스 관리
         href: android-enterprise-overview.md
       - name: 삼성 Knox 모바일 등록
@@ -854,9 +858,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: 정책 충돌 해결
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: 2939459eafe7771c33ec20fd150c36c7808c2b1c
-ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
+ms.openlocfilehash: a227b0eecc9a32202fcb801bb48bc2507f8dede8
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54325052"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387003"
