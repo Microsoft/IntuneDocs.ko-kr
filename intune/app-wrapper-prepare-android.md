@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: e7b60ecbf2a9a110b68807f8d1dce4db21f8f61d
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324908"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316919"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 Android 앱 준비
 
@@ -147,39 +147,6 @@ Android의 경우 Android 디바이스에 설치하려면 유효한 인증서로
 -   애플리케이션이 신뢰할 수 있는 소스에서 오는지 확인합니다.
 
 -   래핑된 앱을 포함하고 있는 출력 디렉터리를 보호합니다. 출력에 대한 사용자 수준 디렉터리를 사용하는 것이 좋습니다.
-
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>자동 APP-WE 서비스 등록을 위한 사용자 로그인 프롬프트 필요, 래핑된 Android LOB 앱을 사용하기 위한 Intune 앱 보호 정책 필요, ADAL SSO을 사용하도록 설정(선택 사항)
-
-다음은 자동 APP-WE 서비스 등록(이 섹션에서는 **기본값 등록**이라고 함)을 위해 앱 시작 시 사용자 프롬프트를 요구하는 것에 관한 지침으로, Intune 보호 사용자만 래핑된 Android LOB 앱을 사용할 수 있도록 허용하는 Intune 앱 보호 정책을 요구합니다. 또한 래핑된 Android LOB 앱에 SSO를 사용하는 방법에 관해서도 설명합니다. 
-
-> [!NOTE] 
-> **기본값 등록**의 이점에는 디바이스의 앱에 관한 APP-WE 서비스에서 정책을 얻는 단순화된 방법이 포함됩니다.
-
-### <a name="general-requirements"></a>일반 요구 사항
-* Intune SDK 팀은 앱의 애플리케이션 ID를 필요로 합니다. ID는 [Azure Portal](https://portal.azure.com/)을 통해 확인할 수 있으며 **모든 애플리케이션** 아래 **애플리케이션 ID** 열에 나와 있습니다. Intune SDK 팀에는 이메일(msintuneappsdk@microsoft.com)을 통해 연락하는 것이 좋습니다.
-     
-### <a name="working-with-the-intune-sdk"></a>Intune SDK 사용
-이러한 지침은 최종 사용자 디바이스에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 Android 및 Xamarin 앱에만 적용됩니다.
-
-1. [Android 가이드용 Intune SDK](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)에 정의된 단계에 따라 ADAL을 구성합니다.
-
-> [!NOTE]
-> 앱에 연결된 “클라이언트 ID”라는 용어는 앱에 연결된 Azure Portal의 “애플리케이션 ID”라는 용어와 같습니다. 
-> * SSO를 사용하려면 “일반적인 ADAL 구성” #2가 필요합니다.
-
-2. 매니페스트에 다음 값을 입력하여 기본 등록을 사용합니다.
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
-   ```
-   > [!NOTE] 
-   > 이것은 앱에서 유일한 MAM-WE 통합이어야 합니다. MAMEnrollmentManager API를 호출하려는 다른 시도가 있으면 충돌이 발생할 수 있습니다.
-
-3. 매니페스트에 다음 값을 입력하여 필요한 MAM 정책을 설정합니다.
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-   > [!NOTE] 
-   > 이렇게 하면 사용자는 디바이스에 회사 포털을 다운로드하고 사용하기 전에 기본 등록 절차를 완료해야 합니다.
 
 ### <a name="see-also"></a>참고 항목
 - [Microsoft Intune으로 모바일 애플리케이션 관리용 앱을 준비하는 방법 결정](apps-prepare-mobile-application-management.md)
