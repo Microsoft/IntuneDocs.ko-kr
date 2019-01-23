@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: a698d7a57c59a27dbd39036b1e2607e80570029f
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 65a461928c377dd4a674f8f3f2eeeef148ab56b2
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210774"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316902"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -113,12 +113,10 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 
 1.  프로젝트에 [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet 패키지를 추가합니다. 이렇게 하면 아직 Intune 앱 SDK Xamarin 바인딩이 포함되지 않은 경우 자동으로 추가됩니다.
 
-2.  위의 2.2 단계에서 만든 `MAMApplication` 클래스의 `OnMAMCreate` 함수에서 `Xamarin.Forms.Forms.Init(Context, Bundle)`에 호출을 추가합니다. Intune 관리를 통해 애플리케이션이 백그라운드에서도 시작할 수 있기 때문에 필요합니다.
+2.  위의 2.2 단계에서 만든 `MAMApplication` 클래스의 `OnMAMActivity` 함수에서 `Xamarin.Forms.Forms.Init(Context, Bundle)`에 호출을 추가합니다. Intune 관리를 통해 애플리케이션이 백그라운드에서도 시작할 수 있기 때문에 필요합니다.
 
 > [!NOTE]
 > 이 작업은 Visual Studio가 Intellisense 자동 완성을 위해 사용하는 종속성을 다시 작성하기 때문에 Intellisense가 변경 내용을 올바로 인식하도록 처음 Remapper를 실행한 후 Visual Studio를 다시 시작해야 할 수 있습니다. 
-
-앱에 구성 요소를 빌드하기 위한 기본 단계를 완료했습니다. 이제 Xamarin.android 샘플 앱에 포함된 단계를 수행할 수 있습니다. Xamarin.Forms의 샘플과 Android의 샘플이 제공되어 있습니다.
 
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Xamarin 기반 Android LOB 앱(선택 사항)을 사용하려면 Intune 앱 보호 정책 필요 
 
@@ -144,8 +142,14 @@ UI 프레임워크를 사용하지 않는 Xamarin 기반 Android 앱의 경우�
 이러한 지침은 최종 사용자 디바이스에서 사용하기 위해 Intune 앱 보호 정책을 요구하려는 모든 .NET/Xamarin 앱의 요구 사항입니다.
 
 1. [Android에 대한 조정된 인증](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android) 아래의 ADAL 설명서에서 정의된 모든 단계를 따릅니다.
-> [!NOTE] 
-> 릴리스될 .NET ADAL의 다음 버전(3.17.4)은 이 작업을 수행하는 데 필요한 수정을 포함할 것으로 예상됩니다.
+
+## <a name="potential-compilation-errors"></a>잠재적인 컴파일 오류
+이는 Xamarin 기반 애플리케이션을 개발할 때 가장 일반적으로 나타나는 컴파일 오류 중 일부입니다.
+
+* [컴파일러 오류 CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239): 이 오류는 일반적으로 이 양식 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``에 표시됩니다.
+remapper가 Xamarin 클래스의 상속을 수정하면 일부 함수가 `sealed`로 만들어지고 대신 새 MAM 변형이 추가되어 재정의됩니다. [여기](https://docs.microsoft.com/en-us/intune/app-sdk-android#renamed-methods)에 설명된 대로 재정의 이름을 바꾸기만 하면 됩니다. 예를 들어 `MainActivity.OnCreate()`는 `MainActivity.OnMAMCreate()`로 이름이 바뀝니다.
+
+* [컴파일러 오류 CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): 이 오류는 일반적으로 이 양식 ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``에 표시됩니다. remapper 도구가 일부 Xamarin 클래스의 상속을 변경함에 따라 멤버 함수가 `public`으로 변경됩니다. 이러한 함수 중 하나를 재정의하는 경우 해당 재정의도 `public`으로 변경해야 할 수도 있습니다.
 
 ## <a name="support"></a>Support
 조직이 기존 Intune 고객인 경우 Microsoft 지원 담당자에게 문의해 지원 티켓을 열고 [Github 문제 페이지에서](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) 문제를 만들면 가능한 한 빨리 도움을 제공할 수 있습니다. 

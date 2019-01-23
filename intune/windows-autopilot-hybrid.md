@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149664"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380463"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포(미리 보기)
 Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Directory 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 다음 단계를 수행합니다.
@@ -116,6 +116,9 @@ Active Directory용 Intune Connector는 인터넷 및 Active Directory에 액세
 6. **로그인**을 선택합니다.
 7. 사용자 글로벌 관리자 또는 Intune 관리자 역할 자격 증명을 입력합니다.
 8. **디바이스 등록** > **Windows 등록** > **Active Directory용 Intune Connector(미리 보기)** 로 차례로 이동하여 연결 상태가 **활성**인지 확인합니다.
+
+ > [!NOTE]
+ > 커넥터에서 **로그인**한 후 [Intune](https://aka.ms/intuneportal)에 표시되는 데 몇 분 정도 걸릴 수 있습니다. 커넥터가 Intune 서비스와 성공적으로 통신할 수 있는 경우에만 표시됩니다.
 
 ### <a name="configure-web-proxy-settings"></a>웹 프록시 설정 구성
 

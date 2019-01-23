@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203606"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387007"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정
 
@@ -87,7 +87,7 @@ ms.locfileid: "54203606"
 
 ### <a name="kiosk-settings"></a>키오스크 설정
 
-하나 이상의 앱을 실행하도록 디바이스를 구성할 수 있습니다. 디바이스가 키오스크 모드일 때 직접 추가하는 앱만 사용할 수 있습니다.
+하나 이상의 앱을 실행하도록 디바이스를 구성할 수 있습니다. 디바이스가 키오스크 모드일 때 직접 추가하는 앱만 사용할 수 있습니다. 이러한 설정은 Android 전용 디바이스에 적용되지만 Android 완전 관리형 전용 디바이스에는 적용되지 않습니다.
 
 **키오스크 모드**: 디바이스에서 하나 이상의 앱을 실행할 경우 선택합니다.
 

@@ -16,12 +16,12 @@ ms.reviewer: pchacon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d8ae737ee11f176c036382fbe77122ecebb722d2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a6048ebd793b1325e3a3320e388135bc63cda2cf
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190016"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418162"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Microsoft Intune을 사용하여 회사 데이터에 대한 무단 액세스 방지
 
@@ -29,7 +29,7 @@ ms.locfileid: "52190016"
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-다음 요구 사항이 충족되면 뒤에서 설명하는 작업 계획을 사용할 수 있습니다.
+다음 요구 사항이 충족되면 아래에서 설명하는 작업 계획을 사용할 수 있습니다.
 * 회사에서 클라우드로 안전하게 전환할 준비가 되었습니다.
 * 회사에서 Office 365 Exchange Online, SharePoint Online, 비즈니스용 OneDrive 또는 Yammer를 사용합니다.
 * 회사에서 Microsoft 365, EMS(Enterprise Mobility + Security) 또는 Azure Information Protection에 대한 라이선스를 가지고 있습니다.
@@ -48,5 +48,5 @@ ms.locfileid: "52190016"
 
 다음 단계의 일부로, 다음을 비롯하여 회사 데이터의 보안을 향상할 수 있는 다른 방법에 대해 자세히 알아볼 수 있습니다. 
 
-* [iOS 및 Android 장치에서 Azure Information Protection]https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq을 사용하는 방법에 대해 알아봅니다.
+* [iOS 및 Android 디바이스에서 Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)을 사용하는 방법을 알아봅니다.
 * Windows Phone 및 Mac 컴퓨터의 경우 [Microsoft Rights Management 공유 애플리케이션](https://technet.microsoft.com/dn451248)에 대해 알아봅니다.

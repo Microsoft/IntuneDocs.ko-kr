@@ -14,12 +14,12 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182401"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418179"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune에서 디바이스 암호 다시 설정 또는 제거
 
@@ -55,9 +55,10 @@ Android 디바이스의 경우 사실상 해당 디바이스 수준 암호 재�
 
 ## <a name="reset-a-passcode"></a>암호 재설정
 
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
+
+1. 다음 역할 중 하나를 사용하여 [Azure Portal](https://portal.azure.com)에 로그인합니다. Azure Active Directory 글로벌 관리자, Azure Active Directory Intune 서비스 관리자, 기술 지원팀 운영자 또는 역할 관리자. 역할 및 사용 권한의 전체 목록은 [Intune RBAC 테이블](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)을 참조하세요.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링한 다음, **Microsoft Intune**을 선택합니다.
-3. **장치**를 선택한 다음, **모든 장치**를 선택합니다.
+3. **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
 4. 관리하는 디바이스 목록에서 디바이스를 선택하고 **자세히...** 를 선택합니다. 그런 다음, **암호 제거** 디바이스 원격 작업을 선택합니다.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Android 회사 프로필 암호 다시 설정

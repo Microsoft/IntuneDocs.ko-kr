@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0efc84da6a9efb594600b9ca33aa5eb7622c8101
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d1b553d262200e58a4c06dd0f4bcb72ca1398080
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203436"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386983"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>Microsoft Intune 초기 버전 - 2019년 1월
 
@@ -48,9 +48,6 @@ Microsoft Intune에서 관리되는 Google Play 앱을 삭제할 수 있습니�
 
 ### <a name="managed-google-play-app-type----1352580---"></a>관리되는 Google Play 앱 유형 <!-- 1352580 -->
 **관리되는 Google Play** 앱 형식을 사용하면 [관리되는 Google Play 앱](https://play.google.com/work/search?q=microsoft&c=apps)을 Intune에 추가할 수 있습니다. Intune 관리자는 이제 Intune 내에서 승인된 관리되는 Google Play 앱을 찾기, 검색, 승인, 동기화 및 할당할 수 있습니다. 더 이상 관리되는 Google Play 콘솔에 별도로 이동할 필요가 없으며, 더 이상 재인증할 필요가 없습니다. Intune에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다. **앱 유형** 목록에서 앱 유형으로 **관리되는 Google Play**를 선택합니다.
-
-### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Android 회사 소유의 완전 관리형 디바이스 지원 미리 보기 <!-- 1574342  -->
-Intune은 디바이스가 IT 부서에서 긴밀하게 관리되고 개별 사용자와 관련된 회사 소유 “디바이스 소유자” 시나리오인 완전 관리형 Android 디바이스를 지원합니다. 이를 통해 관리자는 전체 디바이스를 관리하고, 확장된 범위의 정책 제어를 회사 프로필에 사용할 수 없게 할 수 있고 사용자가 관리형 Google Play의 앱만 설치하도록 제한합니다. Android 완전 관리형 디바이스를 설정하려면 **디바이스 등록** > **Android 등록** > **회사 소유의 완전 관리형 사용자 디바이스**로 이동합니다. 이 기능은 미리 보기에 있습니다. 인증서, 규정 준수 및 조건부 액세스와 같은 일부 Intune 기능은 현재 Android 완전 관리형 사용자 디바이스에서 사용할 수 없습니다.
 
 ### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----1672660----"></a>온라인 라이선스가 부여된 비즈니스용 Microsoft Store 앱 배포 <!-- 1672660  -->
 디바이스 컨텍스트에서 필요로 하는 온라인 라이선스가 부여된 비즈니스용 Microsoft Store 앱을 할당할 수 있습니다. 이 방식으로 비즈니스용 Microsoft Store 앱을 배포하면 디바이스의 모든 사용자에 대해 앱을 설치할 수 있습니다. 이 기능은 Windows 10 RS4 이상 데스크톱 디바이스에만 적용됩니다. 디바이스 컨텍스트에 설치하는 옵션은 MSFB 온라인 라이선스가 부여된 앱에 대한 클라이언트 앱 할당 페이지에서 사용할 수 있습니다.
@@ -130,9 +127,8 @@ Intune macOS 회사 포털은 이제 macOS용 어두운 모드를 지원합니�
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Microsoft 권장 설정을 보안 기준과 함께 사용<!-- 2055484 -->
 Intune은 Windows Defender ATP 및 Office 365 ATP를 비롯하여 보안에 중점을 둔 다른 서비스와 통합됩니다. 고객은 Microsoft 365 서비스에서 공통 전략 및 조화로운 종단 간 보안 워크플로 집합을 요청하고 있습니다. 우리의 목표는 보안 작업 및 공통 관리자 작업을 연결하는 솔루션을 빌드하기 위한 전략을 조정하는 것입니다. Intune에서는 Microsoft 권장 “보안 기준” 집합(**Intune** > **보안 기준**)을 게시하여 이 목표를 달성하고자 합니다.  관리자는 이러한 기준에서 직접 보안 정책을 만든 후 이를 사용자에게 배포할 수 있습니다. 또한 조직의 요구 사항을 충족하도록 최선의 권장 사항을 사용자 지정할 수도 있습니다. Intune은 디바이스가 이러한 기준을 계속 준수하는지 확인하고 준수하지 않는 디바이스나 사용자에 대해 관리자에게 알립니다.
 
-### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>사용자 등록 없이 배포된 WIP 정책 <!-- 1434452 -->
-WIP(Windows Information Protection) 정책은 MDM 사용자가 Windows 10 디바이스를 등록하지 않고 배포할 수 있습니다. 이 구성을 사용하면 회사는 WIP 구성을 기반으로 회사 문서를 보호할 수 있는 한편 사용자는 자신의 Windows 디바이스를 관리할 수 있습니다. 문서가 WIP 정책으로 보호되면 Intune 관리자는 보호되는 데이터를 선택적으로 초기화할 수 있습니다. 사용자 및 디바이스를 선택하고 초기화 요청을 보내면 WIP 정책을 통해 보호된 모든 데이터를 사용할 수 없게 됩니다. Azure Portal의 Intune에서 **모바일 앱** > **앱 선택적 초기화**를 선택합니다.
-
+### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>등록 디바이스 없이 WIP에 대한 선택적 초기화 지원 <!-- 1434452 -->
+등록 없이 Windows 정보 보호(WIP-WE) 를 사용하면 고객은 전체 MDM 등록할 필요 없이 Windows 10 디바이스에서 회사 데이터를 보호할 수 있습니다. 문서가 WIP-WE 정책으로 보호되면 Intune 관리자는 보호되는 데이터를 선택적으로 초기화할 수 있습니다. 사용자 및 디바이스를 선택하고 초기화 요청을 보내면 WIP-WE 정책을 통해 보호된 모든 데이터를 사용할 수 없게 됩니다. Azure Portal의 Intune에서 **모바일 앱** > **앱 선택적 초기화**를 선택합니다.
 
 <!-- 1809 start -->  
 

@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: db6aed3d87b8a8df55c5c95e52eb3dd9ccc690a7
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179952"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386957"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>관리되는 Android 디바이스용 앱 구성 정책 추가
 
@@ -39,7 +39,7 @@ Microsoft Intune에서 앱 구성 정책을 사용하여 Android 회사 프로�
 5. 다음 세부 정보를 설정합니다.
     - **이름** - Azure Portal에 표시되는 프로필의 이름입니다.
     - **설명** - Azure Portal에 표시되는 프로필의 설명입니다.
-    - **장치 등록 형식** - **관리 장치**를 선택합니다.
+    - **디바이스 등록 형식** - **관리 디바이스**를 선택합니다.
 6. **플랫폼**으로 **Android**를 선택합니다.
 7. **연결된 앱**을 선택하여 앱 구성 정책을 정의하려는 앱을 선택합니다. Intune과 동기화하고 승인한 앱을 Android 회사 프로필 앱 목록에서 선택합니다.
 8. **사용 권한**을 선택합니다. 다음을 사용하여 구성을 설정할 수 있습니다.
@@ -62,13 +62,17 @@ Android 앱에 대한 구성 디자이너를 사용하여 구성을 지원할 �
 ### <a name="supported-variables-for-configuration-values"></a>구성 값에 대해 지원되는 변수
 
 값 형식으로 변수를 선택하는 경우 다음 옵션을 선택할 수 있습니다.
-- 사용자 계정 이름 — 예: **John@contoso.com**
-- 메일 — 예: **John@contoso.com**
-- 부분 UPN — 예: **John**
-- 계정 ID — 예: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- 디바이스 ID — 예: **b9841cd9-9843-405f-be28-b2265c59ef97**
-- 사용자 ID — 예: **3ec2c00f-b125-4519-acf0-302ac3761822**
-- 사용자 이름 — 예: **John Doe**
+
+| 옵션 | 예제 |
+|----|----|
+| Mail | john@contoso.com |
+| 사용자 계정 이름 | john@contoso.com |
+| 부분 UPN | john |
+| 도메인 | contoso.com |
+| 사용자 이름 | John Doe |
+| 계정 ID | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| 사용자 ID | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| 장치 ID | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>다중 ID 앱에서 구성된 조직 계정만 허용 
 
@@ -80,7 +84,7 @@ Android 디바이스의 경우 다음 키/값 쌍을 사용합니다.
 
    > [!NOTE]
    > 다중 ID를 사용하는 구성된 조직 계정만 허용하는 경우 Android용 Outlook 2.2.222 이상을 사용해야 합니다.<p></p>
-   > Microsoft Intune 관리자는 관리되는 디바이스에서 Microsoft Office 응용 프로그램에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 디바이스에서 개인 계정을 차단할 수 있습니다. 지원 애플리케이션이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.<p></p>
+   > Microsoft Intune 관리자는 관리되는 장치에서 Microsoft Office 애플리케이션에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 디바이스에서 개인 계정을 차단할 수 있습니다. 지원 애플리케이션이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.<p></p>
    > Microsoft Word, Microsoft Excel, Microsoft PowerPoint의 경우 앱 버전 16.0.9327.1000 이상을 사용해야 합니다. 
 
 ## <a name="enter-the-json-editor"></a>JSON 편집기 입력
@@ -106,7 +110,7 @@ Android 디바이스 기능에 액세스하기 위한 앱의 권한을 미리 �
 4. 다음 세부 정보를 설정합니다.
     - **이름**. Azure Portal에 표시되는 프로필의 이름입니다.
     - **설명**. Azure Portal에 표시되는 프로필의 설명입니다.
-    - **장치 등록 유형**. **관리되는 장치**를 선택합니다.
+    - **디바이스 등록 유형**. **관리되는 디바이스**를 선택합니다.
     - **플랫폼**. **Android**를 선택합니다.
 5. **연결된 앱**을 선택하여 구성 정책을 정의할 앱을 선택합니다. Intune과 동기화하고 승인한 앱을 Android 회사 프로필 앱 목록에서 선택합니다.
 6. **권한**과 **추가**를 차례로 선택합니다.

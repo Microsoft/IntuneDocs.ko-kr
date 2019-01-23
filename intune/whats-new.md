@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210910"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418213"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,10 @@ ms.locfileid: "54210910"
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-14-2019"></a>2019년 1월 14일의 주
 
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Android 회사 소유의 완전 관리형 디바이스 지원 미리 보기 <!-- 1574342  -->
+Intune은 이제 디바이스가 IT 부서에서 긴밀하게 관리되고 개별 사용자와 관련된 회사 소유 "디바이스 소유자" 시나리오인 완전 관리형 Android 디바이스를 지원합니다. 이를 통해 관리자는 전체 디바이스를 관리하고, 확장된 범위의 정책 제어를 회사 프로필에 사용할 수 없게 할 수 있고 사용자가 관리형 Google Play의 앱만 설치하도록 제한합니다. 자세한 내용은 [Android 완전 관리형 디바이스의 Intune 등록 설정](android-fully-managed-enroll.md) 및 [전용 디바이스 또는 완전 관리형 디바이스 등록](android-dedicated-devices-fully-managed-enroll.md)을 참조하세요.  이 기능은 미리 보기에 있습니다. 인증서, 규정 준수 및 조건부 액세스와 같은 일부 Intune 기능은 현재 Android 완전 관리형 사용자 디바이스에서 사용할 수 없습니다.
 
 ## <a name="week-of-january-7-2019"></a>2019년 1월 7일의 주
 
@@ -115,7 +118,7 @@ iOS 디바이스용 구성 프로필을 만들 경우 **공유 디바이스 구�
 [잠금 화면에 메시지를 표시하기 위한 설정](shared-device-settings-ios.md)에는 설정이 나열됩니다.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>iOS 디바이스에 추가된 새 앱 스토어, 문서 보기, 게임 디바이스 제한 사항 설정 <!-- 2827760-->
-**디바이스 구성** > **프로필** > **프로필 만들기** > **iOS** 플랫폼에 대해 > **디바이스 제한** 프로필 유형에 대해 > **앱 스토어, 문서 보기, 게임**에서 다음 설정이 추가되었습니다. 관리되는 앱이 관리되지 않는 연락처 계정에 연락처를 쓸 수 있도록 허용(감독 모드만 해당). 관리되지 않는 앱이 관리되는 연락처 계정에서 연락처를 읽을 수 있도록 허용(감독 모드만 해당). 이러한 설정을 보려면 [iOS 디바이스 제한 사항](device-restrictions-ios.md#app-store-doc-viewing-gaming)으로 이동합니다.
+**디바이스 구성** > **프로필** > **프로필 만들기** > **iOS** 플랫폼에 대해 > **디바이스 제한** 프로필 유형에 대해 > **앱 스토어, 문서 보기, 게임**에서 다음 설정이 추가되었습니다. 관리되는 앱이 관리되지 않는 연락처 계정에 연락처를 쓸 수 있도록 허용. 관리되지 않는 앱이 관리되는 연락처 계정에서 연락처를 읽을 수 있도록 허용. 이러한 설정을 보려면 [iOS 디바이스 제한 사항](device-restrictions-ios.md#app-store-doc-viewing-gaming)으로 이동합니다.
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Android 엔터프라이즈 디바이스 소유자 디바이스의 새 알림, 힌트 및 Keyguard 설정 <!-- 3201839 3201843 -->
 이 업데이트에는 디바이스 소유자로 실행할 경우 Android 엔터프라이즈 디바이스의 여러 가지 새로운 기능이 포함됩니다. 이러한 기능을 사용하려면 **디바이스 구성** > **프로필** > **프로필 만들기** > **플랫폼**에서 **Android 엔터프라이즈** 선택 > **프로필 유형**에서 **디바이스 소유자만** 선택 > **디바이스 제한 사항**으로 이동합니다.
@@ -139,9 +142,6 @@ iOS 디바이스용 구성 프로필을 만들 경우 **공유 디바이스 구�
 #### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>자세한 등록 제한 실패 메시징 <!-- 3111564 -->
 등록 제한 사항이 충족되지 않으면 더 자세한 오류 메시지가 제공됩니다. 이러한 메시지를 보려면 **Intune** > **문제 해결**로 이동하고 등록 실패 테이블을 확인합니다. 자세한 내용은 [등록 실패 목록](help-desk-operators.md#configuration-policies-reference)을 참조하세요.
 
-#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>iOS DEP 디바이스에서 설정 도우미 화면 건너뛰기 <!-- 2687509 -->
-현재 건너뛸 수 있는 화면 외에도 사용자가 디바이스를 등록할 때 설정 도우미에서 다음 화면을 건너뛰도록 iOS DEP 디바이스를 설정할 수 있습니다. 표시음, 개인 정보, Android 마이그레이션, 홈 단추, iMessage 및 FaceTime, 온보딩, 마이그레이션 보기, 모양, 화면 시간, 소프트웨어 업데이트, SIM 설치.
-건너뛸 화면을 선택하려면 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** > 토큰 선택 > **프로필** > 프로필 선택 > **속성** > **설정 도우미 사용자 지정** > 건너뛸 화면의 **숨기기** 선택 > **확인**으로 이동합니다.
 
 
 ### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
@@ -164,7 +164,7 @@ iOS 디바이스용 구성 프로필을 만들 경우 **공유 디바이스 구�
 ### <a name="role-based-access-control"></a>역할 기반 액세스 제어
 
 #### <a name="scope-tags-for-apps----1081941---"></a>앱의 범위 태그 <!-- 1081941 -->
-범위 태그를 만들어 역할 및 앱에 대한 액세스를 제한할 수 있습니다. 해당 범위 태그가 할당된 역할이 있는 사용자만 앱에 액세스할 수 있도록 앱에 범위 태그를 추가할 수 있습니다. 자세한 내용은 [범위 태그를 사용하여 정책 필터링](scope-tags.md)을 참조하세요.
+범위 태그를 만들어 역할 및 앱에 대한 액세스를 제한할 수 있습니다. 해당 범위 태그가 할당된 역할이 있는 사용자만 앱에 액세스할 수 있도록 앱에 범위 태그를 추가할 수 있습니다. Apple VPP(Volume Purchase Program)를 통해 구매한 앱에는 범위 태그를 할당할 수 없습니다.  자세한 내용은 [범위 태그를 사용하여 정책 필터링](scope-tags.md)을 참조하세요.
 
 
 
@@ -1252,6 +1252,54 @@ iOS용 회사 포털 앱에 대한 주요 사용자 환경 업데이트가 릴�
 
 ## <a name="notices"></a>알림
 
+### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Intune의 macOS 10.14.2에 대한 암호 적용 변경 예정 <!--1873216-->
+Intune이 macOS 버전 10.13 이상을 실행하는 디바이스에 대해 새로 릴리스된 Apple의 "다음 인증 시 암호 변경" 설정을 통합할 계획임을 7월에 MC145129에서 다시 알려드립니다. 현재 2월에 macOS 10.14.2 이상에 대해 이 설정을 배포할 계획입니다. 
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+이는 macOS 10.14.2 이상을 실행하는 디바이스를 보유하거나 보유할 계획 중인 경우에 영향을 줍니다. 이제 Apple이 "새 인증에서 암호 변경" 설정을 도입했으므로 Intune은 암호 정책을 적용할 때 호환되는 해당 암호를 사용자가 업데이트하도록 강제할 수 있습니다. macOS 사용자는 해당 암호가 이미 규정을 준수하는 경우라도 이 새로운 Apple 기능을 통합하면 해당 암호를 업데이트하라는 요청을 받게 됩니다. 암호가 이미 규격이고 암호 반복에 대한 요구 사항이 없는 경우 최종 사용자는 기존 암호로 업데이트할 수 있습니다. 최종 사용자는 해당 디바이스에 인증 또는 로그인하려고 할 때 해당 암호를 업데이트하라는 요청만 볼 수 있습니다. 디바이스가 규정 준수로 표시될 때까지 회사 리소스를 차단하면 macOS 10.14.2가 설치된 디바이스의 최종 사용자가 암호를 재설정할 때까지 이메일 또는 SharePoint 사이트와 같은 회사 리소스에 액세스하는 것이 차단될 수 있습니다. 나중에 구성 및 규정 준수 정책으로 모두 업데이트하면 대상 사용자에게 자신의 암호를 업데이트하도록 강제할 수 있습니다. 이 변경을 구현하기 전에 고객 조사에 따르면 최종 사용자는 일반적으로 해당 암호를 등록하거나 규정 준수 유지를 위해 해당 암호를 재설정하라는 요청을 받은 후 암호를 업데이트하기 때문에 대부분의 고객은 이러한 변경에 영향을 받지 않습니다.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
+기술 지원팀에게 알리려고 할 수 있습니다. 이 변경 내용이 롤아웃될 때 이 새로운 기능 페이지가 업데이트됩니다. 이 macOS 디바이스 암호 정책을 적용하지 않으려면 기존 macOS 정책을 할당 해제하거나 삭제하는 것이 좋습니다.
+
+
+### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>미리 알림: 이제 MPO 대신 Azure에서 프리미어 고객을 위한 Intune 지원 환경 <!--2828727-->
+12월에 MPO(Microsoft 프리미어 온라인) 포털(premier.microsoft.com)에서 Intune 지원 요청을 만들 수 있는 기능을 제거할 것을 9월에 MC147649에서 알려드립니다. 이제 약간의 지연 후 1월 말에 Azure의 Intune에서만 지원 요청을 생성하도록 리디렉션됩니다. 
+
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+1월 말 이후, 프리미어 지원 환경을 지속적으로 개선하기 위해 MPO에서 지원 요청을 생성할 수 없습니다.  지원 요청을 생성하려고 하면 해제할 수 없다는 메시지가 표시되고 Azure의 Intune으로 리디렉션됩니다. 여기서 지원 요청을 생성할 수 있는데, 그러면 Intune 전담 Microsoft 지원 팀으로 연결되어 적절한 시기에 문제를 진단 후 해결할 수 있습니다. MPO 포털에서 만든 지원 요청은 Azure Portal에서 확인할 수 없습니다. 
+
+Azure Portal은 최근에 MC171941에서 발표한 바와 같이 새 지원 환경을 제공합니다. 이에 대한 자세한 내용은 [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) 및 추가 정보 링크에서 확인할 수 있습니다.
+
+하이브리드 MDM(하이브리드 모바일 디바이스 관리) 또는 공동 관리를 사용하는 경우 MPO를 사용해 ConfigMgr에 대한 지원 요청을 계속해서 만들 수 있지만 Intune에 대한 지원 요청은 Azure Portal을 사용해 만들 수 있습니다. 참고로, 하이브리드 MDM은 [사용하지 않게](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) 되므로 가급적 빨리 Azure의 Intune로 이전할 계획을 세워야 합니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리를 Azure의 Intune으로 이동](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)을 참조하세요.
+
+전역 관리자, Intune 서비스 관리자 및 서비스 지원 관리자 역할이 있는 사용자만 Azure Portal에서 지원 티켓을 만들 수 있습니다.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
+- MPO 사용을 중지하고 Azure의 Intune에서 모든 Intune 지원 요청을 만들고 관리하세요.  
+- 기술 지원팀에 알리고 필요한 경우 문서를 업데이트하세요.
+- 전역 관리자 또는 Intune 서비스 관리자 역할이 없는 사용자가 MPO에서 현재 지원 티켓을 만드는 경우에는 Azure Active Directory에서 해당 사용자에게 서비스 지원 관리자 역할을 할당해 Azure Portal에서 계속해서 지원 티켓을 만들 수 있도록 해주세요.
+
+#### <a name="additional-information"></a>추가 정보
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+
+### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>변경 계획: iOS용 Intune 회사 포털 앱으로 사용자 환경 업데이트
+Intune이 곧 iOS 회사 포털 앱에 대한 주요 사용자 환경 업데이트를 릴리스할 예정임을 알려드립니다. 이 업데이트는 고급 필터를 갖춘 홈 페이지의 시각적 개체 디자인과 앱 및 책에 대한 빠른 액세스 기능을 제공합니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+이 사용자 환경 업데이트는 현재 iOS 회사 포털 기능을 유지 관리하면서 다음과 같은 기능을 제공합니다.
+- 네이티브 iOS 모양과 느낌을 갖춘 홈 페이지 
+- 콘텐츠 형식(앱 또는 전자책) 및 가용성(등록 없이 필요하거나 사용 가능한 디바이스 관리)을 기준으로 필터링하는 기능을 비롯하여 콘텐츠 목록 및 검색 필터링 기능
+- 전자책 검색 기능
+- 앱 및 전자책 검색 기록 - Apple TestFlight 프로그램의 일부인 경우 Intune의 업데이트된 iOS 회사 포털 앱이 출시될 때 시험판 버전에 대한 알림을 받게 됩니다. Apple TestFlight 프로그램에 속해 있지 않다면 등록할 수 있습니다. 등록하면 업데이트된 회사 포털 앱을 사용해 본 이후에 최종 사용자에게 제공할 수 있습니다. Intune 팀에 직접 피드백을 제공할 수도 있습니다.  
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
+어떠한 작업도 수행할 필요가 없습니다. 이러한 변경 내용은 향후 iOS CP 앱 릴리스에서 발표될 것입니다. 
+
+#### <a name="additional-information"></a>추가 정보
+[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+
+
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>변경 계획: Exchange Online-Intune 커넥터는 Intune에서 사용할 수 없음 <!-- 3105122 -->
 Exchange Online 및 조건부 액세스 환경을 간소화하기 위해 Exchange Online-Intune ‘서비스 간’ 커넥터는 사용하지 않도록 설정됩니다. 이 변경은 12월 서비스 업데이트로 시작되고 2019년 2월 서비스 업데이트로 완료됩니다.
 
@@ -1286,27 +1334,6 @@ Intune for Education 고객으로서, 두 개의 동적 Azure AD(Azure Active Di
 정책 할당을 이동하는 동안 작업을 수행할 필요가 없습니다. 현재 Intune for Education 콘솔에 정책을 할당한 경우 계속 그렇게 수행합니다.
 
 현재 위의 언급한 Azure의 Intune에서 Azure AD 그룹에 정책을 할당하는 경우 대신 Intune for Education 콘솔의 모든 사용자 및 모든 디바이스 그룹에 정책을 할당합니다. 콘솔에서 Azure AD 그룹의 이름이 사용되지 않는 것으로 변경되면 Azure AD에서 정책 할당을 중지합니다. 이름이 변경된 그룹을 현재 다른 용도로 사용하지 않는 경우 삭제해야 합니다.
-
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>변경 계획: 프리미어 고객을 위한 새로운 Intune 지원 환경 
-18/12/4 업데이트: MPO의 지원 요청 만들기가 12월 3일이 아닌 이후 날짜에도 비활성화되지 않도록 이 프로세스를 개선하고 있습니다. 이 변경 내용의 타임라인을 공유하기 위해 메시지 센터를 통해 알리고 이 게시물을 곧 업데이트할 것입니다.
-
-Microsoft 프리미어 고객은 현재 MPO(Microsoft 프리미어 온라인) 포털(premier.microsoft.com)과 Azure의 Intune(portal.azure.com)에서 Intune에대 한 지원 요청을 생성할 수 있습니다. 2018년 12월 3일부터 프리미어 지원 환경을 지속적으로 개선하기 위해 Azure의 Intune에서만 지원 요청을 생성할 수 있습니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-12 월 3일 이후에는 MPO에서 지원 요청을 생성할 수 없게 됩니다.  지원 요청을 생성하려고 하면 해제할 수 없다는 메시지가 표시되고 Azure의 Intune으로 리디렉션됩니다. 여기서 지원 요청을 생성할 수 있는데, 그러면 Intune 전담 Microsoft 지원 팀으로 연결되어 적절한 시기에 문제를 진단 후 해결할 수 있습니다. MPO 포털에서 만든 지원 요청은 Azure Portal에서 확인할 수 없습니다. 따라서 MPO에서 지원 요청을 만들면 안 됩니다.  
-
-하이브리드 MDM(하이브리드 모바일 디바이스 관리) 또는 공동 관리를 사용하는 경우 MPO를 사용해 ConfigMgr에 대한 지원 요청을 계속해서 만들 수 있지만 Intune에 대한 지원 요청은 Azure Portal을 사용해 만들 수 있습니다. 참고로, 하이브리드 MDM은 사용하지 않게 되므로 가급적 빨리 Azure의 Intune로 이전할 계획을 세워야 합니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리를 Azure의 Intune으로 이동](https://aka.ms/hybrid_notification)을 참조하세요.
-
-글로벌 관리자, Intune 서비스 관리자 및 서비스 지원 관리자 역할인 사용자만 Azure Portal에서 지원 티켓을 만들 수 있습니다.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
-- MPO 사용을 중지하고 Azure의 Intune에서 모든 Intune 지원 요청을 만들고 관리하세요.  
-- 기술 지원팀에 알리고 필요한 경우 문서를 업데이트하세요.
-- 전역 관리자 또는 Intune 서비스 관리자 역할이 없는 사용자가 MPO에서 현재 지원 티켓을 만드는 경우에는 Azure Active Directory에서 해당 사용자에게 서비스 지원 관리자 역할을 할당해 Azure Portal에서 계속해서 지원 티켓을 만들 수 있도록 해주세요.
-- 자세한 정보 및 유용한 링크를 보려면 추가 정보를 클릭하세요.
-
-#### <a name="additional-information"></a>추가 정보
-자세한 내용은 [Microsoft Intune 지원 팀 블로그 게시물](https://aka.ms/IntuneSupport_MPO_to_Azure)을 참조하세요.
 
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>작업 수행: Intune에서 Android 디바이스 제한 또는 규정 준수 정책 암호 설정을 업데이트하세요.

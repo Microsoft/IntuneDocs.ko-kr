@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/12/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e607dc612f71cdf72322b9fa7ecf14abb5fd809
-ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
+ms.openlocfilehash: 971dc851714045a8a3b60dfe8ff6c6acc4419294
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270591"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325018"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>준수를 위해 Intune과 Jamf Pro 통합
 
@@ -83,51 +83,9 @@ Intune을 Jamf Pro에 연결하려면 다음을 수행합니다.
 
 Intune과 Jamf 사이의 통합을 구성한 후에는 [규정 준수 정책을 Jamf에서 관리되는 디바이스에 적용](conditional-access-assign-jamf.md)해야 합니다.
 
-## <a name="information-shared-from-jamf-pro-to-intune"></a>Jamf Pro에서 Intune으로 공유된 정보
 
-Jamf Pro는 관리되는 macOS 디바이스에 대한 인벤토리 정보를 캡처합니다. Jamf Pro는 다음 정보를 Intune에 보고합니다.
-
-* 디바이스 Azure AD ID
-* JAMF 인벤토리 상태(최근 24시간 이내에 Jamf Pro를 통해 확인된 컴퓨터의 인벤토리 상태)
-* OS 버전
-* 사용자 Azure AD ID
-* 암호화됨(FileVault 2)
-* 게이트키퍼 상태
-* 암호: 최소 문자 집합 수
-* 암호 만료(일)
-* 암호 유형 - 단순, 영숫자 또는 알 수 없음
-* 자동 로그인 방지
-* 필수 암호 길이
-* 암호: 재사용을 방지하기 위한 이전 암호 수
-* 시스템 무결성 보호
-* 마지막 체크인 시간
-* 아키텍처 유형
-* 사용 가능한 RAM 슬롯
-* 배터리 용량
-* 부팅 ROM
-* 버스 속도
-* 캐시 크기
-* 장치 이름
-* 도메인 가입
-* Jamf ID
-* MAC 주소
-* Make
-* 모델
-* 모델 식별자
-* NIC 속도
-* 코어 수
-* 프로세서 수
-* OS
-* 플랫폼
-* 프로세서 속도
-* 프로세서 유형
-* 보조 MAC 주소
-* 일련 번호
-* SMC 버전
-* 총 RAM
-* UDID
-* 사용자 메일
 
 ## <a name="next-steps"></a>다음 단계
 
 - [준수 정책을 Jamf에서 관리되는 디바이스에 적용](conditional-access-assign-jamf.md)
+- [Intune에 보내는 데이터 Jamf](data-jamf-sends-to-intune.md)

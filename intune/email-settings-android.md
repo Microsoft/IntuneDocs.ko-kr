@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032030"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316885"
 ---
 # <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune에서 메일, 인증 및 동기화를 구성하기 위한 Android 및 Android Enterprise 디바이스 설정
 
@@ -69,7 +69,9 @@ Intune 관리자는 다음 Android 디바이스에 대해 이메일 설정을 �
 
 ### <a name="content-sync-settings"></a>콘텐츠 동기화 설정
 
-- **동기화할 콘텐츠 형식**: 디바이스에 동기화할 콘텐츠 형식을 선택합니다.
+- **동기화할 콘텐츠 형식**: 디바이스에서 동기화할 콘텐츠 형식을 선택합니다. **구성되지 않음**을 선택하면 이 설정이 비활성화합니다. **구성되지 않음**으로 설정할 때 최종 사용자가 디바이스에서 동기화를 활성화하면 정책이 강화됨에 따라 디바이스가 Intune과 동기화될 때 동기화가 비활성화됩니다. 
+
+  다음 콘텐츠를 동기화할 수 있습니다. 
   - **연락처**
   - **일정**
   - **태스크**
@@ -84,7 +86,9 @@ Intune 관리자는 다음 Android 디바이스에 대해 이메일 설정을 �
   - **인증서**를 선택한 경우 Exchange 연결을 인증하기 위해 이전에 만든 클라이언트 SCEP 또는 PKCS 인증서 프로필을 선택합니다.
 - **SSL**: 전자 메일을 전송하거나 수신할 때와 Exchange Server와 통신할 때 SSL(Secure Sockets Layer) 통신을 사용합니다.
 - **동기화할 메일 양**: 동기화할 메일의 일 수 또는 **무제한**을 선택하여 사용 가능한 모든 메일을 동기화합니다.
-- **동기화할 콘텐츠 형식**(Nine Work만 해당): 디바이스에 동기화할 콘텐츠 형식을 선택합니다.
+- **동기화할 콘텐츠 형식**(Nine Work만 해당): 디바이스에서 동기화할 콘텐츠 형식을 선택합니다. **구성되지 않음**을 선택하면 이 설정이 비활성화합니다. **구성되지 않음**으로 설정할 때 최종 사용자가 디바이스에서 동기화를 활성화하면 정책이 강화됨에 따라 디바이스가 Intune과 동기화될 때 동기화가 비활성화됩니다. 
+
+  다음 콘텐츠를 동기화할 수 있습니다. 
   - **연락처**
   - **일정**
   - **태스크**
