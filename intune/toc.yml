@@ -19,7 +19,7 @@ items:
     href: free-trial-sign-up.md
   - name: 사용자 만들기
     href: quickstart-create-user.md
-  - name: 리소스 풀 만들기
+  - name: 그룹 만들기
     href: quickstart-create-group.md
   - name: 자동 등록 설정
     href: quickstart-setup-auto-enrollment.md
@@ -94,7 +94,7 @@ items:
         href: planning-guide-support-plan.md
       - name: 디자인
         href: planning-guide-design.md
-      - name: 변경 내용
+      - name: 구현
         href: planning-guide-onboarding.md
       - name: 테스트 및 유효성 검사
         href: planning-guide-test-validation.md
@@ -159,7 +159,7 @@ items:
     - name: 등록 옵션
       href: enrollment-options.md
       items:
-      - name: Terms and conditions
+      - name: 사용 약관
         href: terms-and-conditions-create.md
       - name: 제한 사항
         href: enrollment-restrictions-set.md
@@ -169,7 +169,7 @@ items:
         href: corporate-identifiers-add.md
       - name: Multi-factor Authentication
         href: multi-factor-authentication.md
-      - name: 장치 등록 관리자
+      - name: 디바이스 등록 관리자
         href: device-enrollment-manager-enroll.md
       - name: 그룹에 디바이스 매핑
         href: device-group-mapping.md
@@ -346,7 +346,7 @@ items:
         href: conditional-access-assign-jamf.md
     - name: 위협 방지
       items:
-      - name: 모바일 위협 방어
+      - name: Mobile Threat Defense
         href: mobile-threat-defense.md
         items:
         - name: Lookout 설정
@@ -389,7 +389,7 @@ items:
             href: mtd-connector-enable.md
       - name: Windows Defender ATP
         href: advanced-threat-protection.md
-      - name: 엔드포인트 보호
+      - name: Endpoint Protection
         href: endpoint-protection-configure.md
     - name: 네트워크 액세스 제어
       href: network-access-control-integrate.md
@@ -599,7 +599,7 @@ items:
         items:
         - name: 디바이스 제한 사항
           href: device-restrictions-android.md
-        - name: 전자 메일
+        - name: 메일
           href: email-settings-android.md
         - name: 신뢰할 수 있는 인증서
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
@@ -626,7 +626,7 @@ items:
         items:
         - name: 디바이스 제한 사항
           href: device-restrictions-android-for-work.md
-        - name: 전자 메일
+        - name: 메일
           href: email-settings-android-enterprise.md
         - name: 신뢰할 수 있는 인증서
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
@@ -652,7 +652,7 @@ items:
           href: ios-device-features-settings.md
         - name: 디바이스 제한 사항
           href: device-restrictions-ios.md
-        - name: 전자 메일
+        - name: 메일
           href: email-settings-ios.md
         - name: 신뢰할 수 있는 인증서
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
@@ -676,7 +676,7 @@ items:
           href: macos-device-features-settings.md
         - name: 디바이스 제한 사항
           href: device-restrictions-macos.md
-        - name: 엔드포인트 보호
+        - name: Endpoint Protection
           href: endpoint-protection-macos.md
         - name: 신뢰할 수 있는 인증서
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
@@ -700,9 +700,9 @@ items:
           href: device-restrictions-windows-10-teams.md
         - name: 버전 업그레이드 및 모드 전환
           href: edition-upgrade-windows-settings.md
-        - name: 전자 메일
+        - name: 메일
           href: email-settings-windows-10.md
-        - name: 엔드포인트 보호
+        - name: Endpoint Protection
           href: endpoint-protection-windows-10.md
         - name: ID 보호
           href: identity-protection-windows-settings.md
@@ -760,7 +760,7 @@ items:
         items:
         - name: 디바이스 제한 사항
           href: device-restrictions-windows-phone-8-1.md
-        - name: 전자 메일
+        - name: 메일
           href: email-settings-windows-phone-8-1.md
         - name: 신뢰할 수 있는 인증서
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
@@ -842,7 +842,7 @@ items:
       href: intune-graph-apis.md
       items:
       - name: Intune API 참조
-        href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
+        href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: 리소스
   items:
   - name: Microsoft Intune 문서 가이드
@@ -938,9 +938,9 @@ items:
       href: data-outside-protect.md
     - name: 관리되지 않는 디바이스에서 데이터 누수 방지
       href: data-leak-prevention.md
-ms.openlocfilehash: dc9c232605e6cb274d0707bb8d314bc39301de23
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 79bff18a23b6613fbc1e2522b6fd7c6c414ffef5
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831652"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899130"
