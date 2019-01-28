@@ -389,6 +389,11 @@ items:
             href: mtd-connector-enable.md
       - name: Windows Defender ATP
         href: advanced-threat-protection.md
+      - name: 보안 기준
+        href: security-baselines.md
+        items:
+        - name: 기준 모니터링
+          href: security-baselines-monitor.md
       - name: Endpoint Protection
         href: endpoint-protection-configure.md
     - name: 네트워크 액세스 제어
@@ -442,7 +447,7 @@ items:
           items:
           - name: 수동으로 회사 포털 앱 추가
             href: store-apps-company-portal-app.md
-        - name: Android 회사 프로필 앱
+        - name: 관리되는 Google Play 앱
           href: apps-add-android-for-work.md
         - name: Windows 10용 Office 365 앱
           href: apps-add-office365.md
@@ -569,6 +574,8 @@ items:
         href: troubleshoot-app-install.md
       - name: Intune 활동에 대한 감사 로그
         href: monitor-audit-logs.md
+      - name: Azure Monitor를 사용하여 로그 검토
+        href: review-logs-using-azure-monitor.md
       - name: 앱 보호 로그 검토
         href: app-protection-policy-settings-log.md
       - name: 메일 프로필 문제 해결
@@ -938,9 +945,9 @@ items:
       href: data-outside-protect.md
     - name: 관리되지 않는 디바이스에서 데이터 누수 방지
       href: data-leak-prevention.md
-ms.openlocfilehash: 79bff18a23b6613fbc1e2522b6fd7c6c414ffef5
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: 70240d3c6969ffe86d3b32b14b50b390020b10b0
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899130"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072493"
