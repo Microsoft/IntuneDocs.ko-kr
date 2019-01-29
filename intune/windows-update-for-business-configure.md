@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297386"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831567"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune에서 소프트웨어 업데이트 관리
 
@@ -106,7 +106,7 @@ Windows as a Service는 Windows 10 디바이스를 업데이트하는 방법입�
 
    - **사용자가 Windows 업데이트를 일시 중지하는 것을 차단**: 기본적으로 허용됩니다. 이 설정을 사용하여 사용자가 머신의 *설정*에서 업데이트 설치를 일시 중지하는 기능을 차단 또는 허용합니다. 
       
-   - **배달 최적화 다운로드 모드**: 배달 최적화는 소프트웨어 업데이트에서 더 이상 Windows 10 업데이트 링의 일부로 구성되지 않습니다. 배달 최적화는 이제 디바이스 구성을 통해 설정됩니다. 그러나 이전 구성은 여전히 콘솔에서 사용할 수 있습니다. *구성되지 않음*으로 편집하여 이러한 이전 구성을 제거할 수 있지만 그렇지 않으면 변경할 수 없습니다. 새 정책과 이전 정책 간의 충돌을 방지하려면 [기존 업데이트 링에서 배달 최적화로 이동](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization)을 참조한 다음, 설정을 배달 최적화 프로필로 이동합니다. 
+   - **배달 최적화 다운로드 모드**: 배달 최적화는 소프트웨어 업데이트에서 더 이상 Windows 10 업데이트 링의 일부로 구성되지 않습니다. 배달 최적화는 이제 디바이스 구성을 통해 설정됩니다. 그러나 이전 구성은 여전히 콘솔에서 사용할 수 있습니다. *구성되지 않음*으로 편집하여 이러한 이전 구성을 제거할 수 있지만 그렇지 않으면 변경할 수 없습니다. 새 정책과 이전 정책 간의 충돌을 방지하려면 [기존 업데이트 링에서 배달 최적화로 이동](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)을 참조한 다음, 설정을 배달 최적화 프로필로 이동합니다. 
 
 5. 작업을 완료하면 **확인**을 선택합니다. **업데이트 링 만들기**에서 **만들기**를 선택합니다.
 

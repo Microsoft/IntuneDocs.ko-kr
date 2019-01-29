@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: cdac4623c6c5c9e7258897e1536856e6b24492ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 8479e69d661b163778a4d0b4eb1f68e729436f4e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032013"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831499"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune를 사용하여 기능을 허용하거나 제한하는 Windows Holographic for Business 디바이스 설정
 
@@ -28,7 +28,7 @@ ms.locfileid: "53032013"
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-[디바이스 구성 프로필을 만듭니다](device-restrictions-configure.md).
+[디바이스 구성 프로필을 만듭니다](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="general"></a>일반
 
@@ -79,7 +79,7 @@ ms.locfileid: "53032013"
 
 ## <a name="kiosk---obsolete"></a>키오스크 - 사용되지 않음
 
-이러한 설정은 읽기 전용이며 변경할 수 없습니다. 키오스크 모드를 구성하려면 [키오스크 설정](kiosk-settings.md#windows-holographic-for-business)을 참조하세요.
+이러한 설정은 읽기 전용이며 변경할 수 없습니다. 키오스크 모드를 구성하려면 [키오스크 설정](kiosk-settings-holographic.md)을 참조하세요.
 
 키오스크 디바이스는 일반적으로 특정 앱을 실행합니다. 사용자는 키오스크 앱 외부의 디바이스에서 모든 기능 또는 함수에 액세스할 수 없습니다.
 
@@ -104,3 +104,7 @@ ms.locfileid: "53032013"
 ## <a name="reporting-and-telemetry"></a>보고 및 원격 분석
 
 - **사용 데이터 공유**: 진단 데이터 제출 수준을 선택합니다.
+
+## <a name="next-steps"></a>다음 단계
+
+[프로필을 할당](device-profile-assign.md)하고, 해당 [상태를 모니터링](device-profile-monitor.md)합니다.

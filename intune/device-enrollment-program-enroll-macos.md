@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 91d85182ccb51968915511d6d1941a350e3a9695
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032353"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068291"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>장비 등록 프로그램 또는 Apple School Manager를 사용하여 macOS 디바이스 자동 등록
 
@@ -58,11 +58,11 @@ Apple 포털을 사용하여 토큰을 만듭니다. 관리용으로 Intune에 �
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1단계. 토큰을 만드는 데 필요한 Intune 공개 키 인증서 다운로드
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰** > **추가**를 선택합니다.
+1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** > **추가**를 선택합니다.
 
     ![등록 프로그램 토큰을 가져옵니다.](./media/device-enrollment-program-enroll-ios/image01.png)
 
-2. **동의**를 선택하여 Microsoft에서 Apple에 사용자 및 장치 정보를 보낼 수 있도록 권한을 부여합니다.
+2. **동의**를 선택하여 Microsoft에서 Apple에 사용자 및 디바이스 정보를 보낼 수 있도록 권한을 부여합니다.
 
    ![공개 키를 다운로드하기 위한 Apple 인증서 작업 영역의 등록 프로그램 토큰 창 스크린샷](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
@@ -78,8 +78,8 @@ Apple 포털을 사용하여 토큰을 만듭니다. 관리용으로 Intune에 �
 
 5. **&lt;ServerName&gt; 추가** 대화 상자가 열리고 **공개 키 업로드**가 표시됩니다. **파일 선택...** 을 선택하여 .pem 파일을 업로드하고 **다음**을 선택합니다.
 
-6. **배포 프로그램** &gt; **장비 등록 프로그램** &gt; **장치 관리**로 이동합니다.
-7. **장치 선택 기준**에서 장치를 식별하는 방법을 지정합니다.
+6. **배포 프로그램**&gt;**디바이스 등록 프로그램**&gt;**디바이스 관리**로 이동합니다.
+7. **디바이스 선택 기준**에서 디바이스를 식별하는 방법을 지정합니다.
     - **일련 번호**
     - **주문 번호**
     - **CSV 파일 업로드**
@@ -112,12 +112,12 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 4. **플랫폼**에서 **macOS**를 선택합니다.
 
-5. **사용자 선호도**에서 이 프로필이 있는 장치가 할당된 사용자로 등록되어야 하는지, 할당된 사용자 없이 등록되어야 하는지 선택합니다.
-    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털 앱을 사용하려는 장치의 경우 이 옵션을 선택합니다. ADFS를 사용하는 경우 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 엔드포인트](https://technet.microsoft.com/library/adfs2-help-endpoints)가 필요합니다. [자세한 정보](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint). 사용자 선호도를 사용하는 macOS DEP 장치에는 다단계 인증이 지원되지 않습니다.
+5. **사용자 선호도**에서 이 프로필이 있는 디바이스가 할당된 사용자로 등록되어야 하는지, 할당된 사용자 없이 등록되어야 하는지 선택합니다.
+    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털 앱을 사용하려는 디바이스의 경우 이 옵션을 선택합니다. ADFS를 사용하는 경우 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 엔드포인트](https://technet.microsoft.com/library/adfs2-help-endpoints)가 필요합니다. [자세한 정보](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint). 사용자 선호도를 사용하는 macOS DEP 디바이스에는 다단계 인증이 지원되지 않습니다.
 
-    - **사용자 선호도를 사용하지 않고 등록** - 단일 사용자로 등록되지 않은 장치의 경우 이 옵션을 선택합니다. 로컬 사용자 데이터에 액세스하지 않고 작업을 수행하는 디바이스에 이 옵션을 사용합니다. 회사 포털 앱과 같은 앱이 작동하지 않습니다.
+    - **사용자 선호도를 사용하지 않고 등록** - 단일 사용자로 등록되지 않은 디바이스의 경우 이 옵션을 선택합니다. 로컬 사용자 데이터에 액세스하지 않고 작업을 수행하는 디바이스에 이 옵션을 사용합니다. 회사 포털 앱과 같은 앱이 작동하지 않습니다.
 
-6. **장치 관리 설정**을 선택한 다음 이 프로필을 사용하는 장치에 대해 잠긴 환경을 사용할 것인지 선택합니다. **잠긴 환경**을 사용하면 **시스템 기본 설정** 메뉴 또는 **터미널**에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 디바이스를 등록한 후에 이 설정을 변경하려면 디바이스를 초기화해야 합니다.
+6. **디바이스 관리 설정**을 선택한 다음 이 프로필을 사용하는 디바이스에 대해 잠긴 환경을 사용할 것인지 선택합니다. **잠긴 환경**을 사용하면 **시스템 기본 설정** 메뉴 또는 **터미널**에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 디바이스를 등록한 후에 이 설정을 변경하려면 디바이스를 초기화해야 합니다.
 
     ![디바이스 관리 설정 스크린샷](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
  
@@ -135,7 +135,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
   - **표시**를 선택하면 설정 중에 화면이 표시됩니다. 사용자는 경우에 따라 작업을 수행하지 않고 화면을 건너뛸 수 있습니다. 그러나 나중에 디바이스의 **설정** 메뉴로 이동하여 기능을 설정할 수 있습니다. 
 
 
-    | 설치 도우미 화면 설정 | **표시**를 선택하면 설정 중에 장치는... |
+    | 설치 도우미 화면 설정 | **표시**를 선택하면 설정 중에 디바이스는... |
     |------------------------------------------|------------------------------------------|
     | <strong>암호</strong> | 사용자에게 암호를 묻는 메시지를 표시합니다. 디바이스가 보안된 상태가 아니거나 다른 방식으로 액세스가 제어된 상태(즉, 하나의 앱만 사용할 수 있도록 디바이스를 제한하는 키오스크 모드)가 아니면 항상 암호를 요구합니다. |
     | <strong>위치 서비스</strong> | 사용자에게 해당 위치를 묻는 메시지를 표시합니다. |
@@ -150,7 +150,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
     | <strong>FileVault</strong> | 사용자에게 FileVault 암호화를 설정할 수 있는 옵션을 제공합니다. |
     | <strong>iCloud 진단</strong> | 사용자에게 iCloud 진단 데이터를 Apple에 전송하는 옵션을 제공합니다. |
     | <strong>등록</strong>| 사용자에게 디바이스를 등록하라고 요구합니다. |
-
+    
    
 
 10. **확인**을 선택합니다.
@@ -160,7 +160,7 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 ## <a name="sync-managed-devices"></a>관리되는 디바이스 동기화
 이제 Intune에 디바이스 관리 권한이 있으므로 Intune을 Apple과 동기화하여 Azure 포털의 Intune에서 관리되는 디바이스를 확인할 수 있습니다.
 
-1. Azure Portal의 Intune에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택한 다음 **장치** > **동기화**를 선택합니다. ![등록 프로그램 장치 노드가 선택되고 동기화 링크를 선택하는 스크린샷](./media/device-enrollment-program-enroll-ios/image06.png)
+1. Azure Portal의 Intune에서 **디바이스 등록**>**Apple 등록**>**등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택한 다음 **디바이스**>**동기화**를 선택합니다. ![등록 프로그램 디바이스 노드가 선택되고 동기화 링크를 선택하는 스크린샷](./media/device-enrollment-program-enroll-ios/image06.png)
 
    허용되는 등록 프로그램 트래픽에 대한 Apple 약관을 준수하기 위해 Intune에서는 다음과 같은 제한 사항을 적용합니다.
    - 전체 동기화는 7일마다 한 번씩만 실행할 수 있습니다. 전체 동기화 중에 Intune은 Intune에 연결된 Apple MDM 서버에 할당된 일련 번호의 전체 업데이트된 목록을 가져옵니다. DEP 포털의 Apple MDM 서버에서 할당을 취소하지 않고 등록 프로그램 디바이스를 Intune 포털에서 삭제하면 전체 동기화가 실행될 때까지 Intune으로 다시 가져오지 않습니다.   
@@ -170,15 +170,15 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 ## <a name="assign-an-enrollment-profile-to-devices"></a>디바이스에 등록 프로필 할당
 먼저 등록 프로그램 프로필을 디바이스에 할당해야 디바이스를 등록할 수 있습니다.
 
-1. Azure Portal의 Intune에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택한 다음 목록에서 토큰을 선택합니다.
-2. **장치**를 선택하고 목록에서 장치를 선택한 다음 **프로필 할당**을 선택합니다.
-3. **프로필 할당** 아래에서 장치의 프로필 > **할당**을 선택합니다.
+1. Azure Portal의 Intune에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택한 다음 목록에서 토큰을 선택합니다.
+2. **디바이스**를 선택하고 목록에서 디바이스를 선택한 다음 **프로필 할당**을 선택합니다.
+3. **프로필 할당** 아래에서 디바이스의 프로필 &gt; **할당**을 선택합니다.
 
 ### <a name="assign-a-default-profile"></a>기본 프로필 할당
 
 특정 토큰을 사용하여 등록하는 모든 디바이스에 적용할 기본 macOS 및 iOS 프로필을 선택할 수 있습니다. 
 
-1. Azure Portal의 Intune에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택한 다음 목록에서 토큰을 선택합니다.
+1. Azure Portal의 Intune에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택한 다음 목록에서 토큰을 선택합니다.
 2. **기본 프로필 설정**을 선택하고 드롭다운 목록에서 프로필을 선택한 다음 **저장**을 선택합니다. 이 프로필은 토큰에 등록하는 모든 디바이스에 적용됩니다.
 
 ## <a name="distribute-devices"></a>디바이스 배포
@@ -192,7 +192,7 @@ Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 �
     ![새 토큰 생성의 스크린샷입니다.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
 
 4. **서버 토큰**을 선택합니다.  
-5. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 토큰을 선택합니다.
+5. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 토큰을 선택합니다.
     ![등록 프로그램 토큰의 스크린샷입니다.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
 
 6. **토큰 갱신**을 선택하고 원래 토큰을 만드는 데 사용되는 Apple ID를 입력합니다.  

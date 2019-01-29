@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387007"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072561"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정
 
@@ -48,7 +48,6 @@ ms.locfileid: "54387007"
 - **Wi-Fi 설정 변경**: **차단**을 선택하면 디바이스 소유자가 만든 Wi-Fi 설정을 사용자가 변경할 수 없습니다. 사용자는 자신만의 Wi-Fi 구성을 만들 수 있습니다. **구성되지 않음**을 사용하면 사용자가 디바이스에서 Wi-Fi 설정을 변경할 수 있습니다.
 - **Wi-Fi 액세스 포인트 구성**: **차단**을 선택하면 사용자가 모든 Wi-Fi 구성을 만들거나 편집할 수 없습니다. **구성되지 않음**을 사용하면 사용자가 디바이스에서 Wi-Fi 설정을 변경할 수 있습니다.
 - **Bluetooth 구성**: **차단**을 선택하면 사용자가 디바이스에 Bluetooth를 구성할 수 없습니다. **구성되지 않음**을 사용하면 디바이스에서 Bluetooth를 사용할 수 있습니다.
-- **Bluetooth를 통한 연락처 공유**: **차단**을 선택하면 Android 디바이스가 Bluetooth를 사용하여 페어링될 때 자동차 시스템과 같은 다른 디바이스에서 회사 연락처에 액세스할 수 없습니다. **구성되지 않음**을 사용하면 Android 디바이스에 페어링된 다른 Bluetooth 디바이스에서 회사 연락처에 액세스할 수 있습니다.
 - **핫스팟에 대한 테더링 및 액세스**: **차단**을 선택하면 이동식 핫스팟에 대한 테더링 및 액세스가 제한됩니다. **구성되지 않음**을 사용하면 이동식 핫스팟에 대한 테더링 및 액세스가 허용됩니다.
 - **USB 스토리지**: **허용**을 선택하면 디바이스의 USB 스토리지에 액세스할 수 있습니다. **구성되지 않음**을 선택하면 USB 스토리지에 액세스할 수 없습니다.
 - **USB 파일 전송**: **차단**을 선택하면 USB를 통한 파일 전송이 제한됩니다. **구성되지 않음**을 사용하면 파일 전송이 허용됩니다.

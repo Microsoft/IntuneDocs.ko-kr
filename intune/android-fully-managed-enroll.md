@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387207"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146913"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Android 완전 관리형 디바이스의 Intune 등록 설정(미리 보기)
 
@@ -38,7 +38,7 @@ Android 완전 관리형 디바이스를 관리하려면 Intune 독립 실행형
 
 Android 완전 관리형 디바이스로 관리하려면 디바이스가 다음 요구 사항을 충족해야 합니다.
 
-- Android OS 버전 6.0 이상.
+- Android OS 버전 5.1 이상.
 - 디바이스는 GMS(Google 모바일 서비스) 연결성을 갖춘 Android의 빌드를 실행해야 합니다. 디바이스는 GMS를 사용할 수 있어야 하며 GMS에 연결할 수 있어야 합니다.
 
 위의 요구 사항이 충족되면 디바이스 제조업체/OEM에 대한 제한이 없습니다.

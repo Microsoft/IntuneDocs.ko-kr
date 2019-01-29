@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831516"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>사용자 액세스에 대한 사용 약관
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032302"
 
 Intune 관리자는 회사 포털을 사용하여 다음을 수행하기 전에 사용자에게 회사의 사용 약관에 동의하도록 요청할 수 있습니다.
 - 디바이스 등록
-- 회사 앱 및 이메일 같은 리소스에 액세스.
+- 회사 앱 및 이메일 같은 리소스에 액세스.    
 사용 약관의 구성은 선택 사항입니다.
 
 다양한 언어를 지원하는 경우와 같이 여러 약관 집합을 만들어 다양한 그룹에 할당할 수 있습니다.
@@ -43,7 +43,7 @@ Intune 관리자는 회사 포털을 사용하여 다음을 수행하기 전에 
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **장치 등록** > **사용 약관**을 선택합니다.
+3. **Intune** 창에서 **디바이스 등록** > **사용 약관**을 선택합니다.
 2. **만들기**를 선택합니다.
 ![사용 약관에 사용되는 [만들기] 단추가 표시된 Azure Portal 스크린샷](media/terms-create-terms.png)
 3. 확장된 창에서 다음 정보를 지정합니다.
@@ -95,7 +95,7 @@ Intune 관리자는 회사 포털을 사용하여 다음을 수행하기 전에 
 
 1. Azure Portal에서 **모든 서비스** > **모니터링 + 관리** > **Intune**을 선택합니다.
 
-2. Intune 창에서 **장치 등록** > **사용 약관**을 선택하고, 수정할 사용 약관을 선택한 다음, **속성**을 선택합니다.
+2. Intune 창에서 **디바이스 등록** > **사용 약관**을 선택하고, 수정할 사용 약관을 선택한 다음, **속성**을 선택합니다.
 
 4. **속성** 창에서 **사용 약관**을 선택하고 필요에 따라 **제목**, **사용 약관 요약**, **사용 약관**을 수정합니다. 내용을 변경하여 사용자가 새로운 사용 약관에 다시 동의해야 하는 경우 **사용자가 다시 수락하고 버전 번호를 증가시켜야 합니다.** 를 선택합니다.
 

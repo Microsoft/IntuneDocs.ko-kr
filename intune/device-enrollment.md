@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
-ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.openlocfilehash: a94722c4f4a1d199e32f6ba0c56ca4bdb2b3b09b
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53570811"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199458"
 ---
 # <a name="what-is-device-enrollment"></a>디바이스 등록이란?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -106,9 +106,6 @@ iOS 등록에 대한 자세한 내용은 다음을 참조하세요.
 
 - [iOS 디바이스를 등록하는 방법 결정](enrollment-method-choose-ios.md)
 - [Configurator 및 직접 등록을 사용하여 iOS 디바이스 등록](apple-configurator-direct-enroll-ios.md)
-
-## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Exchange ActiveSync와 Intune을 사용한 모바일 디바이스 관리
-EAS MDM 정책을 사용하면 등록되지는 않았지만 EAS(Exchange ActiveSync)에 연결하는 모바일 디바이스를 Intune에서 관리할 수 있습니다. Intune에서는 Exchange 커넥터를 사용하여 EAS 및 클라우드 호스티드 온-프레미스와 통신합니다. 자세한 내용은 곧 제공 예정
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 인증서 만료 후 모바일 디바이스 정리
 
