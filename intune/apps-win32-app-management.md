@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734292"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068325"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 독립 실행형 - Win32 앱 관(공개 미리 보기)
 
@@ -239,6 +239,9 @@ Windows 10 RS3 이상 클라이언트는 Windows 10 클라이언트의 배달 �
 다음은 디바이스에 앱 변경이 적용되고 있음을 최종 사용자에게 알리는 이미지입니다.
 
 ![앱이 변경되고 있음을 사용자에게 알리는 스크린샷](./media/apps-win32-app-09.png)    
+
+## <a name="toast-notifications-for-win32-apps"></a>Win32 앱에 대한 알림 메시지 
+필요한 경우 앱 할당마다 최종 사용자 알림 메시지를 표시하지 않을 수 있습니다. Intune에서 **클라이언트 앱** > **앱** > 앱 선택 > **할당** > **포함 그룹**을 선택합니다. 
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 앱 문제 해결
 클라이언트 컴퓨터에 대한 에이전트 로그는 일반적으로 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`에 있습니다. `CMTrace.exe`를 이용하여 이러한 로그 파일을 볼 수 있습니다. [SCCM 클라이언트 도구](https://docs.microsoft.com/sccm/core/support/tools)에서 *CMTrace.exe*를 다운로드할 수 있습니다. 

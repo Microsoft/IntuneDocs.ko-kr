@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/17/2018
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,32 +14,28 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
-ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
+ms.openlocfilehash: 806df8077045a4ad81cb7e221bd053059461a2fd
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53531331"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199407"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune에서 디바이스 준수 정책 시작
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-준수 요구 사항은 기본적으로 디바이스 PIN을 요구하거나 암호화를 요구하는 등의 규칙입니다. 디바이스 준수 정책은 디바이스가 준수되는 것으로 간주하기 위해 준수해야 하는 규칙 및 설정을 정의합니다. 이러한 규칙은 다음과 같습니다.
+많은 MDM(모바일 디바이스 관리) 솔루션은 사용자와 디바이스가 일부 요구 사항을 충족해야 하므로 조직 데이터를 보호하는 데 도움이 됩니다. Intune에서 이 기능을 “준수 정책”이라고 합니다. 준수 정책은 사용자 및 디바이스가 준수하려면 충족해야 하는 규칙 및 설정을 정의합니다. 조건부 액세스를 함께 사용하면 관리자가 규칙을 충족하지 않는 사용자 및 디바이스를 차단할 수 있습니다. 예를 들어, Intune 관리자는 다음이 필요할 수 있습니다.
 
-- 디바이스에 액세스하는 데 암호 사용
+- 최종 사용자는 암호를 사용하여 모바일 디바이스에서 조직 데이터에 액세스
 
-- 암호화
+- 디바이스가 탈옥 또는 루팅되어 있지 않음
 
-- 디바이스의 무단 해제 또는 루팅 여부
+- 디바이스의 최소 또는 최대 운영 체제 버전
 
-- 필요한 최소 OS 버전
+- 디바이스를 위협 수준 이하로 유지
 
-- 허용된 최대 OS 버전
-
-- 디바이스가 Mobile Threat Defense 수준 이하여야 함
-
-디바이스 준수 정책을 사용하여 디바이스에서 준수 상태를 모니터링할 수도 있습니다.
+또한 디바이스 준수 정책을 사용하여 디바이스에서 준수 상태를 모니터링할 수 있습니다.
 
 > [!IMPORTANT]
 > Intune은 디바이스의 모든 규정 준수 평가에 대한 디바이스 체크 인 일정을 따릅니다. [디바이스 체크 인 일정에 대해 자세히 알아봅니다](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
@@ -68,7 +64,8 @@ compliance issues on the device. You can also use this time to create your actio
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ## <a name="prerequisites"></a>전제 조건
-디바이스 준수 정책을 사용하려면 다음 사항이 필요합니다.
+
+디바이스 준수 정책을 사용하려면 다음을 확인합니다.
 
 - 다음 구독을 사용합니다.
 
@@ -84,30 +81,28 @@ Remember that you need to implement conditional access policies in addition to c
   - Windows Phone 8.1
   - Windows 10
 
-- 준수 상태를 보고하려면 디바이스가 Intune에 등록되어야 합니다.
+- 준수 상태를 확인하려면 Intune에서 디바이스 등록
 
-- 한 사용자에 등록된 디바이스 또는 기본 사용자가 없는 디바이스는 지원됩니다. 하지만 다중 사용자 컨텍스트는 지원되지 않습니다.
+- 한 사용자에게 디바이스를 등록하거나 기본 사용자 없이 등록합니다. 여러 사용자에게 등록된 디바이스는 지원되지 않습니다.
 
-## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Azure AD에서 Intune 디바이스 준수 정책이 사용되는 방식
+## <a name="how-device-compliance-policies-work-with-azure-ad"></a>Azure AD에서 디바이스 준수 정책이 사용되는 방식
 
 디바이스가 Intune에 등록되면 Azure AD 등록 프로세스가 시작되고 디바이스 특성이 Azure AD로 업데이트됩니다. 주요 정보 중 하나는 디바이스 준수 상태입니다. 이 장치 준수 상태는 조건부 액세스 정책에서 이메일 및 기타 회사 리소스에 대한 액세스를 차단하거나 허용하는 데 사용됩니다.
 
 [Azure AD 등록 프로세스](https://docs.microsoft.com/azure/active-directory/device-management-introduction)에 자세한 정보가 나와 있습니다.
 
-### <a name="assign-a-resulting-device-configuration-profile-status"></a>결과 디바이스 구성 프로필 상태 할당
+## <a name="refresh-cycle-times"></a>주기 시간 새로 고침
 
-디바이스에 여러 구성 프로필이 있고 디바이스에 두 개 이상의 할당된 구성 프로필에 대한 다양한 준수 상태가 있는 경우 단일 결과 준수 상태가 할당됩니다. 이 할당은 각 호환성 상태에 할당된 개념적 심각도 수준을 기반으로 합니다. 각 호환성 상태에는 다음과 같은 심각도 수준이 있습니다.
+규정 준수를 검사하는 경우 Intune은 구성 프로필과 동일한 새로 고침 주기를 사용합니다. 일반적으로 시간은 다음과 같습니다.
 
-|상태  |심각도  |
-|---------|---------|
-|Pending     |1|
-|성공     |2|
-|Failed     |3|
-|오류     |4|
+- iOS: 6시간마다
+- macOS: 6시간마다
+- Android: 8시간마다
+- 디바이스로 등록된 Windows 10 PC: 8시간마다
+- Windows Phone: 8시간마다
+- Windows 8.1: 8시간마다
 
-디바이스에 여러 구성 프로필이 있는 경우 모든 프로필의 가장 높은 수준의 심각도가 해당 디바이스에 할당됩니다.
-
-예를 들어, 디바이스에 할당된 프로필이 보류 중 상태 하나(심각도 = 1), 성공 상태 하나(심각도 = 2), 오류 상태 하나(심각도 = 4)와 같이 세 가지가 있습니다. 오류 상태가 가장 높은 심각도 수준이므로 세 개의 프로필 모두에 오류 준수 상태가 있습니다.
+규정 준수 검사는 디바이스를 등록한 후 즉시 더 자주 발생합니다.
 
 ### <a name="assign-an-ingraceperiod-status"></a>InGracePeriod 상태 할당
 
@@ -152,19 +147,19 @@ Remember that you need to implement conditional access policies in addition to c
 정책 규칙을 준수하는 디바이스의 경우 이메일 및 기타 회사 리소스에 해당 디바이스 액세스를 제공할 수 있습니다. 디바이스가 정책 규칙을 따르는 않는 경우 회사 리소스에 대한 액세스를 가져오지 않습니다. 이를 조건부 액세스라고 합니다.
 
 #### <a name="without-conditional-access"></a>조건부 액세스 사용 안 함
-또한 조건부 액세스 없이 디바이스 준수 정책을 사용할 수 있습니다. 준수 정책을 독립적으로 사용하는 경우 대상 디바이스는 평가되고 준수 상태와 함께 보고됩니다. 예를 들어 암호화되지 않은 디바이스의 수나 무단 해제 또는 루팅된 디바이스에 대한 보고서를 가져올 수 있습니다. 조건부 액세스 없이 준수 정책을 사용하는 경우 회사 리소스에 대한 액세스 제한이 없습니다.
+또한 조건부 액세스 없이 디바이스 준수 정책을 사용할 수 있습니다. 준수 정책을 독립적으로 사용하는 경우 대상 디바이스는 평가되고 준수 상태와 함께 보고됩니다. 예를 들어 암호화되지 않은 디바이스의 수 또는 탈옥이나 루팅된 디바이스에 대한 보고서를 가져올 수 있습니다. 조건부 액세스 없이 준수 정책을 사용하는 경우 조직 리소스에 대한 액세스 제한이 없습니다.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>디바이스 준수 정책을 배포하는 방법
 준수 정책을 사용자 그룹의 사용자 또는 디바이스 그룹의 디바이스에 배포할 수 있습니다. 준수 정책을 사용자에게 배포하면 사용자의 모든 디바이스에서 준수가 확인됩니다. Windows 10 버전 1803 이상 디바이스에서 기본 사용자가 디바이스를 등록하지 않은 *경우* 디바이스 그룹에 배포하는 것이 좋습니다. 이 시나리오에서 디바이스 그룹을 사용하면 준수 보고에 도움이 됩니다.
 
-일단의 기본 제공 **준수 정책 설정**(Azure Portal &gt; 디바이스 준수)은 Intune에 등록된 모든 디바이스에서 평가됩니다. 확인할 수 있습니다.
+기본 제공 준수 정책 설정의 세트(**Intune** > **디바이스 준수**)는 Intune에 등록된 모든 디바이스에서 평가됩니다. 확인할 수 있습니다.
 
 - **준수 정책이 할당되지 않은 디바이스를 다음으로 표시**: 이 속성에는 두 개의 값이 있습니다.
 
   - **준수**: 보안 기능 해제
   - **비준수**(기본값): 보안 기능 켜기
 
-  디바이스에 할당된 준수 정책이 없으면 이 디바이스는 준수하지 않음으로 간주됩니다. 기본적으로 디바이스는 **준수**로 표시됩니다. 조건부 액세스를 사용하는 경우 **비준수**로 설정을 변경하는 것이 좋습니다. 정책이 할당되지 않아 최종 사용자가 준수하지 않으면, 회사 포털에 `No compliance policies have been assigned`가 나열합니다.
+  디바이스에 할당된 준수 정책이 없으면 이 디바이스는 준수하지 않음으로 간주됩니다. 기본적으로 디바이스는 **비준수**로 표시됩니다. 조건부 액세스를 사용하는 경우 **비준수**로 설정을 변경하는 것이 좋습니다. 정책이 할당되지 않아 최종 사용자가 준수하지 않으면, 회사 포털에 `No compliance policies have been assigned`가 표시됩니다.
 
 - **향상된 탈옥 검색**: 이 설정을 사용하도록 지정하면 iOS 디바이스에서 Intune으로 더 자주 체크 인할 수 있습니다. 이 속성을 사용하면 디바이스의 위치 서비스를 사용하고 배터리 사용에 영향을 줍니다. 사용자 위치 데이터는 Intune에서 저장되지 않습니다.
 

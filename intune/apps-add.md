@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 95f41985f11803e6e1a474b38a2af6a891ddafcb
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: c615dd2dda680cd106fd099d180f57ce2a5ebfef
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067485"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105224"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가 
 
@@ -52,7 +52,7 @@ Intune은 다양한 앱 유형을 지원합니다. 사용 가능한 옵션은 �
 | iOS 스토어 앱  | 스토어 앱  | **앱 유형**으로 **iOS**를 선택하고 앱을 검색한 다음 Intune에서 앱을 선택합니다. |
 | Windows Phone 8.1 스토어 앱  | 스토어 앱  | **앱 유형**으로 **Windows Phone 8.1**을 선택하고 앱의 Microsoft Store URL을 입력합니다. |
 | Microsoft Store 앱  | 스토어 앱  | **앱 유형**으로 **Windows**를 선택하고 앱의 Microsoft Store URL을 입력합니다. |
-| Android 회사 프로필 앱 | 스토어 앱  | 관리되는 Google Play 스토어에서 Android 회사 프로필 앱을 찾고 승인합니다.  |
+| 관리되는 Google Play 앱 | 스토어 앱  | **관리되는 Google Play**를 **앱 유형**으로 선택하고 앱을 검색한 후 Intune에서 앱을 선택합니다. |
 | Windows 10용 Office 365 앱  | 스토어 앱(Office 365) | **앱 유형**으로 **Office 365 제품군** 아래의 **Windows 10**을 선택한 다음 설치할 Office 365 앱을 선택합니다.  |
 | macOS용 Office 365 앱 | 스토어 앱(Office 365) | **앱 유형**으로 **Office 365 제품군** 아래의 **macOS**를 선택한 다음 Office 365 앱 제품군을 선택합니다. |
 | Android LOB(기간 업무) 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.apk**인 Android 설치 파일을 입력합니다.  |
@@ -119,7 +119,7 @@ Intune 관리 앱은 등록 없이 앱 보호를 사용할 수도 있으므로 �
 ### <a name="understanding-licensed-apps"></a>라이선스 앱 이해
 웹앱, 스토어 앱, LOB 앱을 이해하는 것은 물론 다음과 같은 대량 구매 프로그램 앱과 사용이 허가된 앱의 대상도 알고 있어야 합니다. 
 - **비즈니스용 Apple 대량 구매 프로그램(iOS)**: iOS App Store에서는 회사에서 실행하려는 앱의 라이선스를 여러 개 구매할 수 있습니다. 여러 복사본을 구매하면 회사에서 앱을 효율적으로 관리할 수 있습니다. 자세한 내용은 [iOS 대량 구매 앱 관리](vpp-apps-ios.md)를 참조하세요.
-- **Android 회사 프로필**: Android 회사 프로필 디바이스에 앱을 할당하는 방법은 표준 Android 디바이스에 앱을 할당하는 방법과 다릅니다. Android 회사 프로필에 대해 설치하는 모든 앱은 Google Play 스토어에서 제공됩니다. 스토어에 로그인한 다음 원하는 앱을 찾아서 승인합니다. 그러면 Azure Portal의 **사용이 허가된 앱** 노드에 앱이 표시되며, 다른 앱과 마찬가지로 앱의 할당을 관리할 수 있습니다.
+- **Android 회사 프로필**: Android 회사 프로필 디바이스에 앱을 할당하는 방법은 표준 Android 디바이스에 앱을 할당하는 방법과 다릅니다. Android 회사 프로필에 대해 설치하는 모든 앱은 Google Play 스토어에서 제공됩니다. Intune을 사용하여 원하는 앱을 찾아 승인합니다. 그러면 Azure Portal의 **사용이 허가된 앱** 노드에 앱이 표시되며, 다른 앱과 마찬가지로 앱의 할당을 관리할 수 있습니다.
 - **비즈니스용 Microsoft Store(Windows 10)**: 비즈니스용 Microsoft Store에서는 조직에서 사용하는 앱을 하나씩 또는 대량으로 찾아 구매할 수 있습니다. 스토어를 Microsoft Intune에 연결하면 Azure Portal에서 대량 구매 앱을 관리할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft 스토어에서 앱 관리](windows-store-for-business.md)를 참조하세요.
 
     > [!NOTE]

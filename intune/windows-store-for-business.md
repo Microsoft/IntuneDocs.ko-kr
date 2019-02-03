@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
+ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187925"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460058"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune을 사용하여 비즈니스용 Microsoft 스토어에서 구입한 앱을 관리하는 방법
 
@@ -52,12 +52,12 @@ ms.locfileid: "52187925"
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>비즈니스용 Microsoft 스토어 계정을 Intune에 연결
 Intune 콘솔에서 동기화를 사용하기 전에 관리 도구로 Intune을 사용하도록 스토어 계정을 구성해야 합니다.
-1. Intune에 로그인하는 데 사용하는 동일한 테넌트 계정을 사용하여 업무용 스토어에 로그인해야 합니다.
-2. 업무용 스토어에서 **설정** > **관리 도구**를 선택합니다.
-3. 관리 도구 페이지에서 **관리 도구 추가**를 선택하고 **Microsoft Intune**을 선택합니다.
+1. Intune에 로그인하는 데 사용하는 동일한 테넌트 계정을 사용하여 [Microsoft Store for Business](https://www.microsoft.com/business-store)에 로그인했는지 확인합니다.
+2. 비지니스 스토어에서 **관리** 탭을 선택하여 **설정**을 선택하고 **배포** 탭을 선택합니다.
+3. 특히 **Microsoft Intune**을 모바일 디바이스 관리 도구로 사용할 수 없는 경우 **관리 도구 추가**를 선택하여 **Microsoft Intune**을 추가합니다. **Microsoft Intune**이 모바일 디바이스 관리 도구로 활성화되지 않은 경우 **Microsoft Intune** 옆의 **활성화**를 클릭합니다. **Microsoft Intune 등록** 대신 **Microsoft Intune**을 활성화해야 합니다.
 
 > [!NOTE]
-> 이전에는 앱을 할당하는 하나의 관리 도구만 비즈니스용 Microsoft 스토어에 연결할 수 있었습니다. 이제 Intune 및 Configuration Manager와 같은 여러 관리 도구를 스토어에 연결할 수 있습니다.
+> 이전에는 앱을 할당하는 하나의 관리 도구만 비즈니스용 Microsoft 스토어에 연결할 수 있었습니다. 이제 Intune 및 Configuration Manager와 같은 여러 관리 도구를 스토어에 연결할 수 있습니다. 
 
 이제 계속하고 Intune 콘솔에서 동기화를 설정할 수 있습니다.
 
@@ -92,12 +92,12 @@ Intune 콘솔에서 동기화를 사용하기 전에 관리 도구로 Intune을 
 
 ## <a name="remove-apps"></a>앱 제거
 
-비즈니스용 Microsoft Store에서 동기화된 앱을 제거하려면 비즈니스용 Microsoft Store에 로그인하여 앱을 반환해야 합니다.
+비즈니스용 Microsoft Store에서 동기화된 앱을 제거하려면 비즈니스용 Microsoft Store에 로그인하여 앱을 반환해야 합니다. 앱이 무료인지 여부에 관계없이 프로세스는 동일합니다. 무료 앱의 경우 스토어는 0달러를 환불 받을 것입니다. 아래 예제는 무료 앱에 대한 환불을 보여줍니다. 
 
 ![앱 세부 정보 제거의 스크린샷](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> 개인 스토어에서 앱의 가시성을 제거해도 Intune에서 동기화되지 않습니다. 앱을 반환해야 합니다.
+> 개인 스토어에서 앱의 가시성을 제거해도 Intune이 앱을 동기화하지 않습니다. 앱을 완전히 제거하려면 앱을 환불해야 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

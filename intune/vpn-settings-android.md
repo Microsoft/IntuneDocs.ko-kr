@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/26/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ac4b7821f132c92b247538e4ea6131f517da7698
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5e442ae550d138d532f7a2d8e829c623d09f240a
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187696"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751164"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>Intune에서 Android를 실행하는 디바이스에 대한 VPN 설정 구성
 
@@ -29,16 +29,16 @@ ms.locfileid: "52187696"
 다음 플랫폼에 대해 VPN 설정을 구성할 수 있습니다.
 
 - [OWA(Outlook Web Access)](#android-vpn-settings)
-- [Android for Work](#android-for-work-vpn-settings)
+- [Android 엔터프라이즈](#android-enterprise-vpn-settings)
 
 선택한 설정에 따라 다음 모든 값을 구성할 수 없습니다.
 
 ## <a name="android-vpn-settings"></a>Android VPN 설정
 
-- **연결 이름**: 이 연결에 대한 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다.
-- **IP 주소 또는 FQDN**: 장치가 연결되는 VPN 서버의 IP 주소 또는 FQDN(정규화된 도메인 이름)을 입력합니다. 예를 들어 **192.168.1.1** 또는 **vpn.contoso.com**을 입력합니다.
+- **연결 이름**: 이 연결의 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다.
+- **IP 주소 또는 FQDN**: 디바이스가 연결되는 VPN 서버의 IP 주소 또는 FQDN(정규화된 도메인 이름)을 입력합니다. 예를 들어 **192.168.1.1** 또는 **vpn.contoso.com**을 입력합니다.
 
-  - **인증 방법**: 장치가 VPN 서버에 인증하는 방법을 선택합니다. 옵션은 다음과 같습니다.
+  - **인증 방법**: 디바이스가 VPN 서버에 인증하는 방법을 선택합니다. 옵션은 다음과 같습니다.
 
     - **인증서**: 연결을 인증할 기존 SCEP 또는 PKCS 인증서 프로필을 선택합니다. [인증서 구성](certificates-configure.md)에는 인증서 프로필을 만드는 단계가 나열됩니다.
     - **사용자 이름 및 암호**: VPN 서버에 로그인할 때 최종 사용자에게 사용자 이름과 암호를 입력하라는 메시지가 표시됩니다.
@@ -52,15 +52,15 @@ ms.locfileid: "52187696"
   - **Pulse Secure**
   - **Citrix**
 
-- **지문**(Check Point Capsule VPN에만 해당): VPN 서버를 신뢰할 수 있는지 확인하려면 **Contoso 지문 코드**와 같은 문자열을 입력합니다. 연결 시 동일한 지문을 가진 서버를 신뢰하도록 지문을 클라이언트에 보낼 수 있습니다. 디바이스에 지문이 없으면, 사용자에게 지문을 보여주면서 VPN 서버를 신뢰할 것인지 묻는 메시지가 표시됩니다. 사용자는 지문을 수동으로 확인한 후 연결할 신뢰를 선택합니다.
-- **Citrix VPN 특성에 대한 키 및 값 쌍을 입력**(Citrix에만 해당): Citrix에서 제공하는 키 및 값 쌍을 입력합니다. 이러한 값은 VPN 연결의 속성을 구성합니다.
+- **지문**(검사점 캡슐 VPN에만 해당): VPN 서버를 신뢰할 수 있는지 확인하려면 **Contoso 지문 코드**와 같은 문자열을 입력합니다. 연결 시 동일한 지문을 가진 서버를 신뢰하도록 지문을 클라이언트에 보낼 수 있습니다. 디바이스에 지문이 없으면, 사용자에게 지문을 보여주면서 VPN 서버를 신뢰할 것인지 묻는 메시지가 표시됩니다. 사용자는 지문을 수동으로 확인한 후 연결할 신뢰를 선택합니다.
+- **Citrix VPN 특성에 대한 키 및 값 쌍 입력**(Citrix에만 해당): Citrix에서 제공하는 키 및 값 쌍을 입력합니다. 이러한 값은 VPN 연결의 속성을 구성합니다.
 
-## <a name="android-for-work-vpn-settings"></a>Android for Work VPN 설정
+## <a name="android-enterprise-vpn-settings"></a>Android 엔터프라이즈 VPN 설정
 
-- **연결 이름**: 이 연결에 대한 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다.
-- **IP 주소 또는 FQDN**: 장치가 연결되는 VPN 서버의 IP 주소 또는 FQDN(정규화된 도메인 이름)을 입력합니다. 예를 들어 **192.168.1.1** 또는 **vpn.contoso.com**을 입력합니다.
+- **연결 이름**: 이 연결의 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다.
+- **IP 주소 또는 FQDN**: 디바이스가 연결되는 VPN 서버의 IP 주소 또는 FQDN(정규화된 도메인 이름)을 입력합니다. 예를 들어 **192.168.1.1** 또는 **vpn.contoso.com**을 입력합니다.
 
-  - **인증 방법**: 장치가 VPN 서버에 인증하는 방법을 선택합니다. 옵션은 다음과 같습니다.
+  - **인증 방법**: 디바이스가 VPN 서버에 인증하는 방법을 선택합니다. 옵션은 다음과 같습니다.
   
     - **인증서**: 연결을 인증할 기존 SCEP 또는 PKCS 인증서 프로필을 선택합니다. [인증서 구성](certificates-configure.md)에는 인증서 프로필을 만드는 단계가 나열됩니다.
     - **사용자 이름 및 암호**: VPN 서버에 로그인할 때 최종 사용자에게 사용자 이름과 암호를 입력하라는 메시지가 표시됩니다.
@@ -70,7 +70,7 @@ ms.locfileid: "52187696"
   - **검사점 캡슐 VPN**
   - **Cisco AnyConnect**
   - **SonicWall Mobile Connect**
-  - **F5 Edge Client**
+  - **F5 Access**
   - **Pulse Secure**
 
 ## <a name="next-steps"></a>다음 단계

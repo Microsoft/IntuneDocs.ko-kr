@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: be348840df2e1d7864b0c1c57efbb7abcb698392
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031843"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199390"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>디바이스 등록 관리자 계정을 사용하여 Intune에서 디바이스 등록
 
@@ -36,11 +36,12 @@ DEM 사용자 계정 및 DEM 사용자 계정을 사용하여 등록된 디바�
   - DEM 사용자 계정은 앱 관리에 대한 사용자별 Apple ID 요구 사항으로 인해 Apple VPP 사용자 라이선스를 사용하여 Apple VPP(Volume Purchase Program) 앱을 사용할 수 없습니다.
   - Apple VPP 디바이스 라이선스가 있는 경우 디바이스는 VPP 앱을 설치할 수 있습니다.
   - Windows 10 1803+를 제외하고 디바이스에 대한 조건부 액세스가 차단됨
+  - DEM 계정을 사용하여 등록된 각 디바이스에는 자체 Intune 디바이스 라이선스가 있어야 합니다.
 
 
 ## <a name="add-a-device-enrollment-manager"></a>디바이스 등록 관리자 추가
 
-1.  [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록** > **장치 등록 관리자**를 선택합니다.
+1.  [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **디바이스 등록 관리자**를 선택합니다.
 
 2.  **추가**를 선택합니다.
 
@@ -59,8 +60,8 @@ DEM 사용자 계정 및 DEM 사용자 계정을 사용하여 등록된 디바�
 
 디바이스 등록 관리자를 제거해도 등록된 디바이스에는 영향을 주지 않습니다.
 
-**장치 등록 관리자를 제거하려면**
+**디바이스 등록 관리자를 제거하려면**
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치 등록**을 선택한 다음, **장치 등록 관리자**를 선택합니다.
-2. **장치 등록 관리자** 블레이드에서 DEM 사용자를 선택하고 **삭제**를 선택합니다.
+1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록**을 선택한 다음, **디바이스 등록 관리자**를 선택합니다.
+2. **디바이스 등록 관리자** 블레이드에서 DEM 사용자를 선택하고 **삭제**를 선택합니다.
 

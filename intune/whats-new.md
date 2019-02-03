@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
-ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
+ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418213"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199492"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,6 +31,7 @@ ms.locfileid: "54418213"
 > [!Note]
 > 하이브리드 MDM(모바일 디바이스 관리)의 새로운 기능에 대한 자세한 내용은 [하이브리드의 새로운 기능 페이지](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)를 참조하세요.
 
+**RSS 피드**: 다음 URL을 복사하여 피드 판독기에 붙여넣으면 이 페이지가 업데이트될 때 알림을 받을 수 있습니다. `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
 <!-- Common categories:  
 ### App management
@@ -42,6 +43,102 @@ ms.locfileid: "54418213"
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-21-2019"></a>2019년 1월 21일 주
+
+### <a name="app-management"></a>앱 관리
+
+#### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Win32 앱에 대한 알림 메시지 <!-- 3136566   -->
+앱 할당마다 최종 사용자 토스트 알림을 표시하지 않을 수 있습니다. Intune에서 **클라이언트 앱** > **앱** > 앱 선택 > **할당** > **포함 그룹**을 선택합니다. 
+
+#### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Intune 앱 보호 정책 UI 업데이트 <!-- 3251427  -->
+각각 더 쉽게 이해할 수 있도록 Intune 앱 보호 설정 및 단추의 레이블을 변경했습니다. 일부 변경 내용은 다음과 같습니다.  
+- 컨트롤은 **예** / **아니요** 컨트롤에서 기본 **차단** / **허용** 및 **사용 안 함** / **사용** 컨트롤로 변경됩니다. 레이블도 업데이트됩니다.  
+- 설정이 다시 포맷되므로 설정과 레이블이 컨트롤에 나란히 있어 더 효율적으로 검색할 수 있습니다.   
+
+기본 설정과 설정 수는 동일하게 유지되지만, 이 변경으로 인해 사용자가 선택한 앱 보호 정책을 적용하기 위해 설정을 더 쉽게 이해, 검색 및 활용할 수 있습니다. 자세한 내용은 [iOS 설정](app-protection-policy-settings-ios.md) 및 [Android 설정](app-protection-policy-settings-android.md)을 참조하세요.
+
+#### <a name="additional-settings-for-outlook----3301182----"></a>Outlook에 대한 추가 설정 <!-- 3301182  -->
+이제 Intune을 사용하여 Android 및 iOS용 Outlook에 대한 추가 설정을 구성할 수 있습니다.  이러한 설정은 다음과 같습니다. iOS 및 Android의 Outlook에서 사용할 회사 또는 학교 계정만 허용/Office 365 및 하이브리드 최신 인증 온-프레미스 계정에 대한 최신 인증 배포/기본 인증을 선택한 경우 이메일 프로필의 사용자 이름 필드에 대한 `SAMAccountName` 사용/저장할 연락처 허용/외부 받는 사람 MailTips 구성/**중요 받은 편지함** 구성/iOS용 Outlook에 액세스하려면 생체 인식 필요/외부 이미지 차단
+> [!NOTE]
+> 회사 ID에 대한 액세스를 관리하기 위해 Intune 앱 보호 정책을 사용하는 경우 **생체 인식 필요**를 사용하지 않도록 설정하는 것이 좋습니다. 자세한 내용은 [iOS 액세스 요구 사항](app-protection-policy-settings-ios.md#access-settings) 및 [Android 액세스 설정](app-protection-policy-settings-android.md#access-settings)에 **액세스하려면 회사 자격 증명 필요**를 참조하세요.
+
+#### <a name="delete-android-enterprise-apps----1352553---"></a>Android Enterprise 앱 삭제 <!-- 1352553 -->
+Microsoft Intune에서 관리되는 Google Play 앱을 삭제할 수 있습니다. 관리되는 Google Play 앱을 삭제하려면 Azure Portal에서 Microsoft Intune을 열고 **클라이언트 앱** > **앱**을 선택합니다. 앱 목록에서 관리되는 Google Play 앱의 오른쪽에 있는 줄임표(...)를 선택한 다음, 표시된 목록에서 **삭제**를 선택합니다. 앱 목록에서 관리되는 Google Play 앱을 삭제하면 관리되는 Google Play 앱이 자동으로 승인되지 않습니다.
+
+#### <a name="managed-google-play-app-type----1352580---"></a>관리되는 Google Play 앱 유형 <!-- 1352580 -->
+**관리되는 Google Play** 앱 형식을 사용하면 [관리되는 Google Play 앱](https://play.google.com/work/search?q=microsoft&c=apps)을 Intune에 추가할 수 있습니다. Intune 관리자는 이제 Intune 내에서 승인된 관리되는 Google Play 앱을 찾고, 검색하고, 승인하며, 동기화하고 할당할 수 있습니다.  더 이상 관리되는 Google Play 콘솔을 개별적으로 찾아보지 않아도 되며 더 이상 재인증할 필요가 없습니다.  Intune에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다. **앱 유형** 목록에서 앱 유형으로 **관리되는 Google Play**를 선택합니다.
+
+### <a name="device-configuration"></a>디바이스 구성
+
+#### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Microsoft 권장 설정을 보안 기준과 함께 사용(공개 미리 보기)<!-- 2055484   -->
+참고: 이 기능은 아직 롤아웃 중이며 곧 제공될 예정입니다.
+
+Intune은 Windows Defender ATP 및 Office 365 ATP를 비롯하여 보안에 중점을 둔 다른 서비스와 통합됩니다. 고객은 Microsoft 365 서비스에서 공통 전략 및 조화로운 종단 간 보안 워크플로 집합을 요청하고 있습니다. 우리의 목표는 보안 작업 및 공통 관리자 작업을 연결하는 솔루션을 빌드하기 위한 전략을 조정하는 것입니다. Intune에서는 Microsoft 권장 “보안 기준” 집합(**Intune** > **보안 기준**)을 게시하여 이 목표를 달성하고자 합니다.  관리자는 이러한 기준에서 직접 보안 정책을 만든 다음, 이를 사용자에게 배포할 수 있습니다. 또한 조직의 요구 사항을 충족하도록 최선의 권장 사항을 사용자 지정할 수도 있습니다. Intune은 디바이스가 이러한 기준을 계속 준수하는지 확인하고 준수하지 않는 디바이스나 사용자에 대해 관리자에게 알립니다.
+
+보안 기준에 대해 자세히 알아보려면 [Intune에서 Windows 10 보안 기준 만들기](security-baselines-monitor.md)를 참조하세요.
+
+이 기능은 다음에 적용됩니다. Windows 10 이상
+
+#### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>관리자가 아닌 사용자는 Azure AD에 조인된 Windows 10 디바이스에서 BitLocker를 사용하도록 설정할 수 있음 <!-- 2147379   -->
+Windows 10 디바이스에서 BitLocker를 사용하도록 설정할 때(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10 이상**(플랫폼) > **Endpoint Protection**(프로필 유형) > **Windows 암호화**) BitLocker 설정을 추가합니다. 
+
+이 업데이트에는 표준 사용자(관리자가 아닌 사용자)가 암호화를 사용하도록 설정하게 허용하는 새 BitLocker 설정이 포함됩니다. 
+
+설정을 보려면 [Windows 10용 엔드포인트 보호 설정](endpoint-protection-windows-10.md#windows-encryption)으로 이동합니다.
+
+#### <a name="check-for-configuration-manager-compliance----2192052--eepublished----"></a>Configuration Manager 준수 확인 <!-- 2192052  eepublished  -->
+이 업데이트에는 새 System Center Configuration Manager 준수 설정(**디바이스 준수** > **정책** > **정책 만들기** > **Windows 10 이상** > **Configuration Manager 준수**)이 포함됩니다. Configuration Manager는 Intune 준수에 신호를 보냅니다. 이 설정을 사용하여 모든 Configuration Manager 신호에 “준수”를 반환하도록 요구할 수 있습니다.
+
+예를 들어 모든 소프트웨어 업데이트를 디바이스에 설치해야 합니다. Configuration Manager에서 이 요구 사항의 상태는 “설치됨”입니다. 디바이스의 프로그램이 알 수 없는 상태인 경우 디바이스는 Intune에서 비준수가 됩니다.
+
+[Configuration Manager 준수](compliance-policy-create-windows.md#configuration-manager-compliance)에 이 설정이 설명되어 있습니다.
+
+적용 대상: Windows 10 이상
+
+#### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324-----"></a>디바이스 구성 프로필을 사용하여 감독되는 iOS 디바이스에서 배경 화면 사용자 지정 <!-- 2809324   -->
+iOS 디바이스에 대한 디바이스 구성 프로필을 만드는 경우 일부 기능(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에 대한 **iOS** > 프로필 유형에 대한 **디바이스 기능**)을 사용자 지정할 수 있습니다. 이 업데이트에는 관리자가 홈 화면 또는 잠금 화면에 .png, .jpg 또는 .jpeg 이미지를 사용하도록 허용하는 새 **배경 무늬** 설정이 포함됩니다. 이러한 배경 무늬 설정은 감독되는 디바이스에만 적용됩니다. 
+
+이러한 설정의 목록은 [iOS 디바이스 기능 설정](ios-device-features-settings.md)을 참조하세요.
+
+#### <a name="windows-10-kiosk-is-generally-available----3594661----"></a>Windows 10 키오스크 일반 공급됨 <!-- 3594661  -->
+이 업데이트에서 Windows 10 이상 디바이스의 키오스크 기능이 일반 공급(GA)됩니다. 추가 및 구성할 수 있는 모든 설정을 보려면 [Windows 10(및 이상)에 대한 키오스크 설정](kiosk-settings.md)을 참조하세요.
+
+#### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396-----"></a>Bluetooth를 통한 연락처 공유가 디바이스 제한 사항 > Android Enterprise에 대한 디바이스 소유자에서 제거됨 <!-- 3598396   -->
+Android Enterprise 디바이스용 디바이스 제한 프로필을 만들 때 **Bluetooth를 통한 연락처 공유** 설정이 있습니다. 이 업데이트에서 **Bluetooth를 통한 연락처 공유** 설정이 제거됩니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼용 **Android Enterprise** > **디바이스 제한 사항 > 프로필 유형에 대한 디바이스 소유자** > **일반**). 
+
+**Bluetooth를 통한 연락처 공유** 설정은 Android Enterprise 디바이스 소유자 관리에 대해 지원되지 않습니다. 따라서 이 설정을 제거하면 사용자 환경에서 이 설정을 활성화하고 구성하더라도 디비이스나 테넌트에 영향을 주지 않습니다.
+
+현재 설정 목록을 보려면 [기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정](device-restrictions-android-for-work.md)으로 이동합니다.
+
+적용 대상: Android Enterprise 디바이스 소유자
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune 앱 보호 정책 UI 업데이트 <!-- 3251427 -->
+각각 더 쉽게 이해할 수 있도록 Intune 앱 보호 설정 및 단추의 레이블을 변경했습니다. 일부 변경 내용은 다음과 같습니다.  
+- 컨트롤은 **예** / **아니요** 컨트롤에서 기본 **차단** / **허용** 및 **사용 안 함** / **사용** 컨트롤로 변경됩니다. 레이블도 업데이트됩니다.  
+- 설정이 다시 포맷되므로 설정과 레이블이 컨트롤에 나란히 있어 더 효율적으로 검색할 수 있습니다.   
+
+기본 설정과 설정 수는 동일하게 유지되지만, 이 변경으로 인해 사용자가 선택한 앱 보호 정책을 적용하기 위해 설정을 더 쉽게 이해, 검색 및 활용할 수 있습니다. 자세한 내용은 [iOS 설정](app-protection-policy-settings-ios.md) 및 [Android 설정](app-protection-policy-settings-android.md)을 참조하세요.
+
+### <a name="device-management"></a>디바이스 관리
+
+#### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>등록 디바이스 없이 WIP에 대한 선택적 초기화 지원 <!-- 1434452 -->
+등록 없이 Windows 정보 보호(WIP-WE) 를 사용하면 고객은 전체 MDM 등록할 필요 없이 Windows 10 디바이스에서 회사 데이터를 보호할 수 있습니다. 문서가 WIP-WE 정책으로 보호되면 Intune 관리자는 보호되는 데이터를 선택적으로 초기화할 수 있습니다. 사용자 및 디바이스를 선택하고 초기화 요청을 보내면 WIP-WE 정책을 통해 보호된 모든 데이터를 사용할 수 없게 됩니다. Azure Portal의 Intune에서 **모바일 앱** > **앱 선택적 초기화**를 선택합니다.
+
+### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
+
+#### <a name="new-operational-logs-and-ability-to-send-logs-to-azure-monitor-services----3762211----"></a>새 작업 로그 및 Azure Monitor 서비스에 로그를 보낼 수 있는 기능 <!-- 3762211  -->
+Intune에는 변경 사항이 발생할 때 이벤트를 추적하는 기본 제공 감사 로깅 기능이 있습니다. 이 업데이트에는 다음을 비롯한 새 로깅 기능이 포함됩니다. 
+- 성공 및 실패한 시도를 포함한 등록된 사용자 및 디바이스의 세부 정보를 표시하는 작업 로그(미리 보기).
+- 감사 로그 및 작업 로그를 스토리지 계정, Event Hubs 및 Log Analytics를 비롯한 Azure Monitor에 보낼 수 있습니다. 이러한 서비스를 통해 Splunk 및 QRadar와 같은 분석을 저장하고 사용하며 로깅 데이터의 시각화를 가져올 수 있습니다.
+
+[Intune에서 스토리지, Event Hubs 또는 Log Analytics에 로그 데이터 전송](review-logs-using-azure-monitor.md)에 이 기능에 대한 자세한 정보가 나와 있습니다.
+
+### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>iOS DEP 디바이스에서 설정 도우미 화면 건너뛰기 <!-- 2687509  -->
+현재 건너뛸 수 있는 화면 외에도 사용자가 디바이스를 등록할 때 설정 도우미에서 다음 화면을 건너뛰도록 iOS DEP 디바이스를 설정할 수 있습니다. 표시음, 개인 정보, Android 마이그레이션, 홈 단추, iMessage 및 FaceTime, 온보딩, 마이그레이션 보기, 모양, 화면 시간, 소프트웨어 업데이트, SIM 설치.
+건너뛸 화면을 선택하려면 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** > 토큰 선택 > **프로필** > 프로필 선택 > **속성** > **설정 도우미 사용자 지정** > 건너뛸 화면의 **숨기기** 선택 > **확인**으로 이동합니다.
+새 프로필을 만들거나 프로필을 편집하는 경우 선택한 건너뛰기 화면이 Apple MDM 서버와 동기화되어야 합니다. 사용자는 프로필 변경 내용을 선택하는 데 지연이 발생하지 않도록 디바이스의 수동 동기화를 발행할 수 있습니다.
+이 기능은 롤아웃을 시작하였으나 모든 고객에게 제공되기까지는 며칠 걸릴 예정입니다.
+
 ## <a name="week-of-january-14-2019"></a>2019년 1월 14일의 주
 
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Android 회사 소유의 완전 관리형 디바이스 지원 미리 보기 <!-- 1574342  -->

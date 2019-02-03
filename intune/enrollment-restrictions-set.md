@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: bd282a6b23f33b11cbd046cac4f791d6d675e365
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751215"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -100,7 +100,7 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바
 - 디바이스가 Windows Autopilot에 등록되어 있지만 Windows 설정의 MDM 등록만 옵션은 아닙니다.
 - 디바이스의 IMEI 번호가 **디바이스 등록** > **[회사 디바이스 식별자](corporate-identifiers-add.md)** 에 나열되어 있습니다. (Windows Phone 8.1에 대해 지원되지 않음)
 - 디바이스에서 [대량 프로비전 패키지](windows-bulk-enroll.md)를 통해 등록합니다.
-- 디바이스에서 [SCCM에서 공동 관리를 위한 자동 등록](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)을 통해 등록합니다.
+- 디바이스가 GPO 또는 [SCCM에서 공동 관리를 위한 자동 등록](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)을 통해 등록합니다.
  
 Intune에서 회사로 표시되지만 Intune 관리자가 장치별 제어를 제공하지 않으므로 차단되는 등록은 다음과 같습니다.
  - [Windows 설치 중에 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).

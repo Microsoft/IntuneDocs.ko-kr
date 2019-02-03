@@ -3,7 +3,7 @@ title: Windows 10에 대한 대량 등록
 titlesuffix: Microsoft Intune
 description: Microsoft Intune에 대한 대량 등록 패키지를 만듭니다.
 keywords: ''
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fca6fd73da1277973ee313055eaf4b5ba073afbb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 97f51b4934a2dc2267e255da0ec1d896dd6b8961
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184814"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751198"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 대량 등록
 
@@ -40,16 +40,15 @@ Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당
 1. Microsoft 스토어에서 [WCD(Windows 구성 디자이너)](https://www.microsoft.com/store/apps/9nblggh4tx22)를 다운로드합니다.
    ![Windows 구성 디자이너 앱 스토어 스크린샷](media/bulk-enroll-store.png)
 
-2. **Windows 구성 디자이너** 앱을 열고 **데스크톱 장치 프로비전**을 선택합니다.
-   ![Windows 구성 디자이너 앱에서 데스크톱 장치 프로비전을 선택하는 스크린샷](media/bulk-enroll-select.png)
+2. **Windows 구성 디자이너** 앱을 열고 **데스크톱 디바이스 프로비전**을 선택합니다.
+   ![Windows 구성 디자이너 앱에서 데스크톱 디바이스 프로비전을 선택하는 스크린샷](media/bulk-enroll-select.png)
 
 3. **새 프로젝트** 창이 열리며, 여기서 다음 정보를 지정합니다.
    - **이름** - 프로젝트 이름
    - **프로젝트 폴더** - 프로젝트의 저장 위치
    - **설명** - 프로젝트에 대한 설명(옵션) ![Windows 구성 디자이너 앱에서 프로젝트 폴더 이름과 설명을 지정하는 스크린샷](media/bulk-enroll-name.png)
 
-4. 디바이스에 대한 고유한 이름을 입력합니다. 이름에는 일련 번호(%%SERIAL%%) 또는 임의의 문자 집합이 포함될 수 있습니다. 필요에 따라 Windows 버전을 업그레이드하는 경우 제품 키를 입력하고, 공유용 디바이스를 구성하고, 사전 설치된 소프트웨어를 제거할 수도 있습니다.
-
+4. 디바이스에 대한 고유한 이름을 입력합니다. 이름에는 일련 번호(%SERIAL%) 또는 임의의 문자 집합이 포함될 수 있습니다. 필요에 따라 Windows 버전을 업그레이드하는 경우 제품 키를 입력하고, 공유용 디바이스를 구성하고, 사전 설치된 소프트웨어를 제거할 수도 있습니다.
    ![Windows 구성 디자이너 앱에서 이름 및 제품 키를 지정하는 스크린샷](media/bulk-enroll-device.png)
 
 5. 필요에 따라 디바이스를 처음 시작할 때 연결할 Wi-Fi 네트워크 디바이스를 구성할 수 있습니다.  네트워크 디바이스가 구성되지 않은 경우 디바이스를 처음 시작할 때 유선 네트워크 연결이 필요합니다.

@@ -15,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 11bcf3742270a3f32919b133efdc2ab3f0c4d2d1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 87d25fa76b3d2716099178ca428c8032fd99886c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831635"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune에 대한 지원을 받는 방법
 
@@ -42,7 +42,7 @@ IT 관리자 권한으로 **도움말 및 지원** 옵션을 사용하여 Azure 
 
 ## <a name="help-and-support-experience"></a>도움말 및 지원 환경
 > [!TIP]   
-> 2019년 1월에 새 도움말 및 지원 환경이 모든 테넌트로 롤아웃됩니다. 테넌트에 이 새로운 환경이 아직 없는 경우 이 문서의 [Azure 도움말 + 지원 환경](#azure-help-+-support-experience)에서 이전 환경에 대한 정보를 찾을 수 있습니다.  
+> 모든 테넌트에게 새로운 도움말 및 지원 환경을 제공합니다. 테넌트에게 이 새로운 환경이 표시되지 않으면 브라우저의 캐시를 지우고 페이지를 다시 로드합니다.
 
 Intune에 대한 도움말 및 지원 환경은 [Microsoft 365 디바이스 관리 포털](http://devicemanagement.microsoft.com)에서 그리고 Azure Portal의 Intune 아래에 있는 모든 블레이드(또는 페이지)에서 사용할 수 있습니다. 
 

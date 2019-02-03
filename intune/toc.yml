@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: 디바이스 준수 설정
     items:
-    - name: 디바이스 규정 준수 개요
+    - name: 규정 준수 개요
       href: device-compliance-get-started.md
-    - name: Android 정책 만들기
+    - name: Android 규정 준수
       href: compliance-policy-create-android.md
-    - name: Android 엔터프라이즈 프로필 정책 만들기
+    - name: Android Enterprise 규정 준수
       href: compliance-policy-create-android-for-work.md
-    - name: Google Play Protect를 사용하기 위한 정책 만들기
+    - name: Google Play Protect 사용
       href: compliance-policy-create-google-play-protect.md
-    - name: iOS 정책 만들기
+    - name: iOS 규정 준수
       href: compliance-policy-create-ios.md
-    - name: Windows 정책 만들기
+    - name: Windows 규정 준수
       href: compliance-policy-create-windows.md
-    - name: 위치 기반 정책
+    - name: 위치 기반 규정 준수
       href: use-network-locations.md
     - name: 정책 평가
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: 디바이스 준수 모니터링
       href: compliance-policy-monitor.md
-  - name: 디바이스 구성
+  - name: 디바이스 설정 구성
     items:
-    - name: 프로필을 사용하여 디바이스 구성
+    - name: 디바이스 구성 개요
       href: device-profiles.md
     - name: 디바이스 프로필
       href: device-profile-create.md
     - name: 관리 템플릿
       href: administrative-templates-windows.md
-    - name: 디바이스 기능(iOS 및 MacOS)
+    - name: 디바이스 기능
       href: device-features-configure.md
-    - name: 디바이스 제한 사항
+    - name: 디바이스 설정 및 기능 제한
       href: device-restrictions-configure.md
-    - name: 배달 최적화
+    - name: 업데이트 제공
       href: delivery-optimization-windows.md
-    - name: 버전 업그레이드 및 모드 전환
+    - name: 버전 및 S 모드 업그레이드
       href: edition-upgrade-configure-windows-10.md
-    - name: 전자 메일 설정
+    - name: 이메일 구성
       href: email-settings-configure.md
-    - name: 키오스크 설정
+    - name: 키오스크 모드 사용
       href: kiosk-settings.md
-    - name: VPN 설정
+    - name: VPN 추가
       href: vpn-settings-configure.md
       items:
       - name: Android용 앱별 VPN
         href: android-pulse-secure-per-app-vpn.md
       - name: iOS용 앱별 VPN
         href: vpn-setting-configure-per-app.md
-    - name: Wi-Fi 설정
+    - name: 무선 Wi-Fi 네트워크 추가
       href: wi-fi-settings-configure.md
       items:
       - name: 미리 공유한 키를 사용하는 Wi-Fi
         href: wi-fi-profile-shared-key.md
-    - name: 교육 설정
+    - name: 교육 테스트 실행 앱
       href: education-settings-configure.md
     - name: 다중 사용자 디바이스 공유
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: 프로필 모니터링
       href: device-profile-monitor.md
-    - name: 프로필 문제 해결
+    - name: 일반적인 질문 및 답변
       href: device-profile-troubleshoot.md
   - name: 디바이스 데이터 보호
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Intune API 참조
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: 디바이스 구성에 사용되는 Graph API
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: 리소스
   items:
   - name: Microsoft Intune 문서 가이드
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: 관리되지 않는 디바이스에서 데이터 누수 방지
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504547"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645192"

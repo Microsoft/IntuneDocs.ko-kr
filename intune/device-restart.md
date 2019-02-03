@@ -14,25 +14,25 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aa16e180b016ec142ecca5644b7f93fb088d15f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f814abc4d47517c17e24a188c7efb5da771bc328
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184306"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068274"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Intune을 사용하여 원격으로 디바이스 다시 시작
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**다시 시작** 장치 작업을 수행하면 선택한 장치가 다시 시작됩니다. 디바이스 소유자에게 다시 시작이 자동으로 알려지지 않고 작업을 손실할 수 있습니다.
+**다시 시작** 디바이스 작업을 수행하면 선택한 디바이스가 다시 시작됩니다. 디바이스 소유자에게 다시 시작이 자동으로 알려지지 않고 작업을 손실할 수 있습니다.
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
 - Windows - Windows 8.1 이상에서 지원됨
 - Windows Phone - Windows Phone 8.1 이상에서 지원됨
-- Android 키오스크 디바이스 - 지원됨
+- Android 키오스크 디바이스 - Android 7.0 이상 지원됨
 - iOS - 지원됨
 
     > [!Note]  
@@ -44,9 +44,9 @@ ms.locfileid: "52184306"
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **장치** > **모든 장치**를 선택합니다.
+3. **디바이스** > **모든 디바이스**를 선택합니다.
 4. 관리하는 디바이스 목록에서 디바이스를 선택하고 **자세히**를 선택한 다음, **다시 시작** 디바이스 원격 작업을 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-- **다시 시작** 장치 작업의 상태를 보려면 **장치** > **장치 작업**을 선택합니다.
+- **다시 시작** 디바이스 작업의 상태를 보려면 **디바이스** > **디바이스 작업**을 선택합니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203538"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072578"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune을 사용하여 디바이스를 보호하기 위한 Windows 10( 이상) 설정
 
@@ -152,6 +152,9 @@ Microsoft Edge가 설치된 다음 Windows 10 버전에서 지원됩니다.
 기본 설정은 모든 종류의 데이터 드라이브에 대한 범용 BitLocker 설정입니다. 최종 사용자가 모든 종류의 데이터 드라이브에서 수정할 수 있는 드라이브 암호화 작업 또는 구성 옵션을 관리하는 설정은 다음과 같습니다.
 
 - **다른 디스크 암호화에 대한 경고**: **차단**을 선택하면 다른 디스크 암호화 서비스가 디바이스에 있는 경우 경고 메시지를 표시하지 않도록 설정합니다. **구성되지 않음**(기본값)으로 설정하면 경고가 표시될수 있습니다.
+    - **Azure AD 조인 중에 표준 사용자가 암호화를 활성화하도록 허용**: **허용**을 선택하는 경우 표준 사용자/관리자가 아닌 사용자가 로그인할 때 BitLocker 암호화를 사용하도록 설정할 수 있습니다. 이 설정은 Azure ADJ(Azure Active Directory 조인) 디바이스에만 적용됩니다. **구성되지 않음**에서는 관리자만 디바이스에서 BitLocker 암호화를 활성화하도록 허용합니다.
+      
+      이 설정은 Azure ADJ(Azure Active Directory 조인) 디바이스에만 적용됩니다. 또한 **다른 디스크 암호화에 대한 경고** 설정을 **차단**으로 설정해야 합니다.
 - **암호화 방법 구성**: 이 설정을 **사용**으로 설정하면 운영 체제, 데이터 및 이동식 드라이브에 대한 암호화 알고리즘을 구성할 수 있습니다. **구성되지 않음**(기본값)으로 설정하면 BitLocker에서 XTS-AES 128 비트를 기본 암호화 방법으로 사용하거나 설치 스크립트에서 지정된 암호화 방법을 사용합니다.
   - **운영 체제 드라이브에 대한 암호화**: 운영 체제 드라이브에 대한 암호화 방법을 선택합니다. XTS-AES 알고리즘을 사용하는 것이 좋습니다.
   - **고정 데이터 드라이브에 대한 암호화**: 고정(기본 제공) 데이터 드라이브에 대한 암호화 방법을 선택합니다. XTS-AES 알고리즘을 사용하는 것이 좋습니다.

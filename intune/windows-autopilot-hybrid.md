@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.openlocfilehash: 171e994be67a24e351b242967c8af934272da356
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380463"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105173"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포(미리 보기)
 Intune 및 Windows Autopilot를 사용하여 하이브리드 Azure Active Directory 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 다음 단계를 수행합니다.
@@ -106,7 +106,7 @@ Active Directory용 Intune Connector는 온-프레미스 Active Directory 도메
 
 ## <a name="install-the-intune-connector"></a>Intune Connector 설치
 
-Active Directory용 Intune Connector는 인터넷 및 Active Directory에 액세스할 수 있는 Windows Server 2016을 실행하는 컴퓨터에 설치해야 합니다. 규모와 및 가용성을 늘리거나 여러 Active Directory 도메인을 지원하기 위해 환경에 여러 개의 커넥터를 설치할 수 있습니다. 다른 Intune 커넥터를 실행하지 않는 서버에 커넥터를 설치하는 것이 좋습니다.
+Active Directory용 Intune Connector는 인터넷 및 Active Directory에 액세스할 수 있는 Windows Server 2016(또는 이상)을 실행하는 컴퓨터에 설치해야 합니다. 규모와 및 가용성을 늘리거나 여러 Active Directory 도메인을 지원하기 위해 환경에 여러 개의 커넥터를 설치할 수 있습니다. 다른 Intune 커넥터를 실행하지 않는 서버에 커넥터를 설치하는 것이 좋습니다.
 
 1. [Intune Connector(미리 보기) 언어 요구 사항](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector)에 설명된 대로 언어 팩을 설치 및 구성했는지 확인합니다.
 2. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **Active Directory용 Intune Connector(미리 보기)** > **커넥터 추가**를 차례로 선택합니다. 
@@ -114,7 +114,7 @@ Active Directory용 Intune Connector는 인터넷 및 Active Directory에 액세
 4. 다운로드한 커넥터 설치 파일(ODJConnectorBootstrapper.exe)을 열어 커넥터를 설치합니다.
 5. 설치가 완료되면 **구성**을 선택합니다.
 6. **로그인**을 선택합니다.
-7. 사용자 글로벌 관리자 또는 Intune 관리자 역할 자격 증명을 입력합니다.
+7. 사용자 글로벌 관리자 또는 Intune 관리자 역할 자격 증명을 입력합니다. 사용자 계정에는 할당된 Intune 라이선스가 있어야 합니다.
 8. **디바이스 등록** > **Windows 등록** > **Active Directory용 Intune Connector(미리 보기)** 로 차례로 이동하여 연결 상태가 **활성**인지 확인합니다.
 
  > [!NOTE]

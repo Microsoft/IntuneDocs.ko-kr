@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 ms.reviewer: smithre4
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 433d15d91bc32ef409c9a89c4d71cacb7478e74d
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180326"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068308"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook 구성 설정 
 
@@ -29,18 +29,9 @@ iOS 및 Android 디바이스에서 실행되는 Microsoft Outlook 설정을 설�
 
 ## <a name="configuration-settings"></a>구성 설정
 
-Intune에서 구성 정책을 추가할 때 Microsoft Outlook을 구성하도록 특정 설정을 설정할 수 있습니다. **구성 설정** 창에서 메일 계정 구성을 설정할 수 있습니다.
+Intune에서 구성 정책을 추가할 때 iOS 및 Android에서 Microsoft Outlook을 구성하도록 설정을 지정할 수 있습니다. [구성 설정] 창에서 이메일 계정 구성을 지정하고 앱 관련 설정을 구성할 수 있습니다. 또한 이러한 설정을 구성하고 이름/값 쌍을 사용할 수 있습니다.
 
-### <a name="basic-authentication-email-account-settings"></a>기본 인증 메일 계정 설정
-iOS 및 Android용 Outlook은 ActiveSync 프로토콜을 이용한 기본 인증을 사용하는 온-프레미스 사용자에게 계정 구성을 "푸시"할 수 있는 기능을 Exchange 관리자에게 제공합니다. 자세한 내용은 [기본 인증을 사용하여 iOS 및 Android용 Outlook의 계정 설정](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup)을 참조하세요. 계정 설정 구성을 사용하려면 다음 설정을 구성할 수 있습니다.
-
-- **메일 서버**: 온-프레미스 Exchange 서버(예: mail.contoso.com)의 호스트 이름을 입력합니다.
-- **메일 계정 이름**: 메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 디바이스에서 사용자에게 표시됩니다.
-- **AAD의 사용자 이름 특성**: 이 이름은 Intune이 Azure AD(Azure Active Directory)에서 가져오는 특성입니다. Intune은 이 프로필에서 사용되는 사용자 이름을 동적으로 생성합니다. 다음과 같은 선택 사항이 있습니다.
-  - **사용자 계정 이름**: `user1` 또는 `user1@contoso.com`과 같은 이름을 가져옵니다.
-  - **기본 SMTP 주소**: `user1@contoso.com`과 같은 이메일 주소 형식의 이름을 가져옵니다.
-- **AAD의 이메일 주소 특성**: 사용자의 이메일 주소가 생성되는 방식을 선택합니다. **사용자 계정 이름**(`user1@contoso.com` 또는 `user1`)을 선택하여 전체 계정 이름을 이메일 주소로 사용하거나, **기본 SMTP 주소**(`user1@contoso.com`)를 사용하여 Exchange에 로그인합니다. 권장 사항은 **기본 SMTP 주소**를 선택하는 것입니다.
-- **계정 도메인**: (선택 사항) 계정의 도메인입니다.
+Outlook 계정 설정 정보 및 Microsoft Intune에서 iOS 및 Android 디바이스에 대한 절차 단계는 [iOS 및 Android 앱 구성 설정에 대한 Outlook 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 [Intune에서 이메일 설정 구성](email-settings-configure.md)

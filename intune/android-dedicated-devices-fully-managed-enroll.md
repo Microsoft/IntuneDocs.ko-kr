@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387220"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146896"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Android 전용 디바이스 또는 완전 관리형 디바이스 등록(미리 보기)
 
 Intune에서 [Android 전용 디바이스](android-kiosk-enroll.md) 또는 [완전 관리형 디바이스](android-fully-managed-enroll.md)를 설정한 후에 디바이스를 등록할 수 있습니다. Android 디바이스를 등록하는 방법은 운영 체제에 따라 다릅니다.
 
-| 등록 메서드 | 전용 디바이스의 최소 Android OS 버전 | 완전 관리형 디바이스의 최소 Android OS 버전 |
-| ----- | ----- | ----- |
-| 근거리 통신 | 5.1 | 6.0 |
-| 토큰 항목 | 6.0 | 6.0 |
-| QR 코드 | 7.0 | 7.0 |
-| Zero Touch  | 8.0\* | 8.0\* |
+| 등록 메서드 | 전용 및 완전 관리형 디바이스에 대한 최소 Android OS 버전 |
+| ----- | ----- |
+| 근거리 통신 | 5.1 |
+| 토큰 항목 | 6.0 |
+| QR 코드 | 7.0 |
+| Zero Touch  | 8.0\* |
 
 \* 참여하는 제조업체.
 
@@ -42,7 +42,7 @@ NFC를 지원하는 디바이스의 경우 특별한 형식의 NFC 태그를 만
 
 ### <a name="enroll-by-using-a-token"></a>토큰을 사용하여 등록
 
-Android 6 이상 디바이스의 경우 토큰을 사용하여 디바이스를 등록할 수 있습니다. **aft#setup** 등록 메서드를 사용하는 경우 Android 6.1 이상 버전에서는 QR 코드 검사를 활용할 수도 있습니다.
+Android 6 이상 디바이스의 경우 토큰을 사용하여 디바이스를 등록할 수 있습니다. **afw#setup** 등록 메서드를 사용하는 경우 Android 6.1 이상 버전에서는 QR 코드 검사를 활용할 수도 있습니다.
 
 1. 초기화된 디바이스를 켭니다.
 2. **시작** 화면에서 언어를 선택합니다.

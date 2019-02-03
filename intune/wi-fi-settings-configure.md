@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a338cce6249cc7c5214a9d69a897cad3eaa09e93
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 54af9b1ef7872caddb972515d9c4765f8492bf00
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831363"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune에서 디바이스의 Wi-Fi 설정 추가 및 사용
 
-Microsoft Intune Wi-Fi 프로필을 사용하여 무선 네트워크 설정을 조직의 사용자와 디바이스에 할당합니다. Wi-Fi 프로필을 할당하면 사용자가 직접 구성하지 않고도 조직의 Wi-Fi 네트워크에 액세스할 수 있습니다.
+Wi-Fi는 많은 모바일 디바이스가 네트워크 액세스 권한을 가져오는 데 사용되는 무선 네트워크입니다. Microsoft Intune에는 조직의 사용자 및 디바이스에 배포할 수 있는 기본 제공 Wi-Fi 설정이 포함되어 있습니다. 이 설정 그룹을 "프로필"이라고 하며 다른 사용자 및 그룹에 할당할 수 있습니다. 할당되면 사용자가 직접 구성하지 않고도 조직의 Wi-Fi 네트워크에 액세스할 수 있습니다.
 
 예를 들어 Contoso Wi-Fi라는 새 Wi-Fi 네트워크를 설치합니다. 그런 다음, 이 네트워크에 연결할 모든 iOS 디바이스를 설정하려고 합니다. 프로세스는 다음과 같습니다.
 
-1. Contoso Wi-Fi 무선 네트워크에 연결하기 위한 설정을 포함하는 Wi-Fi 프로필을 만듭니다.
+1. Contoso Wi-Fi 무선 네트워크에 연결하는 설정을 포함하는 Wi-Fi 프로필을 만듭니다.
 2. iOS 디바이스의 모든 사용자를 포함하는 그룹에 프로필을 할당합니다.
 3. 사용자는 디바이스의 무선 네트워크 목록에서 새 Contoso Wi-Fi 네트워크를 찾습니다. 그런 다음, 선택한 인증 방법을 사용하여 네트워크에 연결할 수 있습니다.
 
-이 문서의 단계를 사용하여 Wi-Fi 프로필을 만듭니다. 그런 다음, 플랫폼 특정 설정 및 세부 정보에 대한 항목을 검토합니다.
+이 문서에서는 Wi-Fi 프로필을 만드는 단계가 나열되어 있습니다. 각 플랫폼에 대한 여러 설정을 설명하는 링크도 포함되어 있습니다.
 
 ## <a name="supported-device-platforms"></a>지원되는 디바이스 플랫폼
 
@@ -45,18 +45,17 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
 > [!NOTE]
 > Windows 8.1을 실행하는 디바이스의 경우 이전에 다른 디바이스에서 내보낸 Wi-Fi 구성을 가져올 수 있습니다.
 
-## <a name="create-a-wi-fi-device-profile"></a>Wi-Fi 디바이스 프로필 만들기
+## <a name="create-a-device-profile"></a>디바이스 프로필 만들기
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고, **Intune**을 기준으로 필터링한 다음, **Microsoft Intune**을 선택합니다. 
-2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. Wi-Fi 프로필의 **이름**과 **설명**을 입력합니다.
-4. **플랫폼** 드롭다운 목록에서 Wi-Fi 설정을 적용할 장치 플랫폼을 선택합니다. 옵션은 다음과 같습니다.
+4. **플랫폼** 드롭다운 목록에서 Wi-Fi 설정을 적용할 디바이스 플랫폼을 선택합니다. 옵션은 다음과 같습니다.
 
     - **OWA(Outlook Web Access)**
     - **Android 엔터프라이즈**
     - **iOS**
     - **macOS**
-    - **Windows Phone 8.1**
     - **Windows 8.1 이상**
     - **Windows 10 이상**
 
@@ -80,4 +79,4 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-프로필이 만들어지지만 아무것도 하지 않습니다. 그런 다음, [이 프로필을 할당](device-profile-assign.md)합니다.
+프로필이 만들어지지만 아무것도 하지 않습니다. 다음으로, [이 프로필을 할당](device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
