@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: b3ced7e52de05e98c2f4a7ec9a828972ab60cf71
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386911"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290726"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android 엔터프라이즈 전용 디바이스의 Intune 등록 설정
 
@@ -101,7 +101,7 @@ Android 전용 디바이스 관리를 설정하려면 다음 단계를 따릅니
 
 ## <a name="managing-apps-on-android-dedicated-devices"></a>Android 전용 디바이스에서 앱 관리
 
-할당 유형이 [필수로 설정](apps-deploy.md#to-assign-an-app)된 앱만 Android 전용 디바이스에 설치할 수 있습니다. 앱은 Android 회사 프로필 디바이스와 동일한 방식으로 관리되는 Google Play 스토어에서 설치됩니다.
+할당 유형이 [필수로 설정](apps-deploy.md#assign-an-app)된 앱만 Android 전용 디바이스에 설치할 수 있습니다. 앱은 Android 회사 프로필 디바이스와 동일한 방식으로 관리되는 Google Play 스토어에서 설치됩니다.
 
 앱 개발자가 Google Play에 대한 업데이트를 게시하면 관리되는 디바이스에서 앱이 자동으로 업데이트됩니다.
 

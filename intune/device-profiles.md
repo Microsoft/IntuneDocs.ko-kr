@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203521"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229987"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필을 사용하여 디바이스에서 기능 설정 적용
 
@@ -123,7 +123,7 @@ Microsoft Intune은 조직 내의 다른 디바이스에서 사용하거나 사�
 - Android 엔터프라이즈
 - iOS
 - macOS
-- Windows 10
+- Windows 10 이상
 - Windows 10 팀
 
 ## <a name="delivery-optimization"></a>배달 최적화
@@ -174,7 +174,7 @@ Microsoft Intune에서 WDATP(Windows Defender Advanced Threat Protection)을 온
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 10
+- Windows 10 이상
 
 ## <a name="vpn"></a>VPN
 
@@ -189,7 +189,7 @@ VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 이상
 
 ## <a name="wi-fi"></a>Wi-Fi
 
@@ -201,6 +201,7 @@ VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전
 - iOS
 - macOS
 - Windows 8.1(가져오기만 해당)
+- Windows 10 이상
 
 ## <a name="esim-cellular---public-preview"></a>eSIM 셀룰러 - 공개 미리 보기
 
@@ -241,7 +242,7 @@ Windows 디바이스의 업데이트 정책은 [배달 최적화](delivery-optim
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 이상
 
 ## <a name="windows-information-protection-profile"></a>Windows Information Protection 프로필
 

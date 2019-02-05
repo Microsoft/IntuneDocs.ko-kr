@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 184f70aefbdc90c301ef2f97c5a3abb5ac49a4a8
+ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831567"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55737488"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune에서 소프트웨어 업데이트 관리
 
@@ -167,7 +167,7 @@ Intune에서 사용자 지정 정책의 OMA-URI 설정을 사용하여 상용 ID
 > 일시 중지 명령을 실행하면 디바이스는 다음에 서비스에 체크 인할 때 이 명령을 수신합니다. 체크 인 이전에 예약된 업데이트가 설치될 수도 있습니다.
 > 또한 일시 중지 명령을 실행할 때 대상 디바이스가 꺼져 있었던 경우 디바이스를 켜면 디바이스가 Intune을 사용해 체크 인하기 전에 예약된 업데이트를 다운로드 및 설치할 수도 있습니다.
 
-### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Windows 10 소프트웨어 업데이트에서 최신 버전 제거 
+## <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Windows 10 소프트웨어 업데이트에서 최신 버전 제거 
 Windows 10 머신에서 주요 문제가 있는 경우 최신 기능 업데이트 또는 최신 품질 업데이트를 제거(롤백)하도록 선택할 수 있습니다. 기능 또는 품질 업데이트의 제거는 디바이스가 켜져 있는 서비스 채널에서만 사용할 수 있습니다. 제거하면 Windows 10 컴퓨터에서 이전 업데이트를 복원하는 정책이 트리거됩니다. 특히 기능 업데이트의 경우 최신 버전 제거를 적용할 수 있는 시간을 2-60일로 제한할 수 있습니다. 소프트웨어 업데이트 제거 옵션을 설정하려면:
 
 1. Intune에서 **소프트웨어 업데이트**를 선택합니다.
