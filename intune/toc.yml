@@ -699,6 +699,10 @@ items:
           href: wi-fi-settings-macos.md
         - name: 사용자 지정
           href: custom-settings-macos.md
+    - name: 보안 기준
+      items:
+      - name: Windows 보안 기준 설정
+        href: security-baseline-settings-windows.md
     - name: Windows 10 이상
       items:
       - name: 준수 정책 설정
@@ -951,9 +955,9 @@ items:
       href: data-outside-protect.md
     - name: 관리되지 않는 디바이스에서 데이터 누수 방지
       href: data-leak-prevention.md
-ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
-ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
+ms.openlocfilehash: cb54a7f48a96684c98ed73584adf4acc57a19f56
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55645192"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690787"
