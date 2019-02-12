@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: c54ccf5bba53d5d638f011d3bd0d308adf6cb013
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fd1f24c7114e21239d19ca2e99fc05d125e675d9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203368"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845790"
 ---
 # <a name="email-profile-settings-for-ios-devices-in-intune"></a>Intune에서 iOS 디바이스에 대한 이메일 프로필 설정
 

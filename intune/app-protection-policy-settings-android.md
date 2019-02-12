@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 1/28/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,13 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 08848853a70d0fbdabeb123960f36dc19478e6c2
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89945a1b5036ff298a49bba444b23a8f317681b1
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230055"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086168"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune의 Android 앱 보호 정책 설정
 이 문서에서는 Android 디바이스에 대한 앱 보호 정책 설정을 설명합니다. 설명하는 정책 설정은 Azure Portal의 **설정** 블레이드에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.
@@ -32,7 +33,7 @@ ms.locfileid: "55230055"
 | Setting | 사용 방법 | 기본값 |
 |------|------|------|
 | **Android 백업 서비스에 조직 데이터 백업** | 이 앱이 회사 또는 학교 데이터를 [Android 백업 서비스](https://developer.android.com/google/backup/index.html)로 백업하지 못하도록 하려면 **차단**을 선택합니다.<br><br> 이 앱이 회사 또는 학교 데이터를 백업하도록 허용하려면 **허용**을 선택합니다.| **허용** |
-| **다른 앱에 조직 데이터 보내기** | 이 앱에서 데이터를 받을 수 있는 앱을 지정합니다. <ul><li> **정책 관리 앱**: 다른 정책 관리 앱으로만 데이터를 전송하도록 허용합니다.</li> <li>**모든 앱**: 모든 앱으로의 전송을 허용합니다. </li> <li>**없음**: 다른 정책 관리 앱을 포함한 모든 앱에 대한 데이터 전송을 허용하지 않습니다.</li></ul> <p>Intune에서 기본적으로 데이터를 전송할 수 있는 몇 가지 예외적인 앱 및 서비스가 있습니다. 또한 데이터가 Intune APP를 지원하지 않는 앱으로 전송되도록 허용해야 하는 경우 고유한 예외를 만들 수 있습니다. 자세한 내용은 [데이터 전송 예외](#Data-transfer-exemptions)를 참조하세요.<p>이 정책은 Androidi 앱 링크에도 적용될 수 있습니다.  일반 웹 링크는 **Open app links in Intune Managed Browser**(Intune Managed Browser에서 앱 링크 열기) 정책 설정을 통해 관리됩니다.<p>**참고:** 현재 Intune은 Android 인스턴트 앱 기능을 지원하지 않습니다.* Intune은 앱 간에 모든 데이터 연결을 차단합니다. *자세한 내용은 Android 개발자 설명서에서 [Android 인스턴트 앱](https://developer.android.com/topic/instant-apps/index.html)을 참조하세요.</p>| **모든 앱** | 
+| **다른 앱에 조직 데이터 보내기** | 이 앱에서 데이터를 받을 수 있는 앱을 지정합니다. <ul><li> **정책 관리 앱**: 다른 정책 관리 앱으로만 데이터를 전송하도록 허용합니다.</li> <li>**모든 앱**: 모든 앱으로의 전송을 허용합니다. </li> <li>**없음**: 다른 정책 관리 앱을 포함한 모든 앱에 대한 데이터 전송을 허용하지 않습니다.</li></ul> <p>Intune에서 기본적으로 데이터를 전송할 수 있는 몇 가지 예외적인 앱 및 서비스가 있습니다. 또한 데이터가 Intune APP를 지원하지 않는 앱으로 전송되도록 허용해야 하는 경우 고유한 예외를 만들 수 있습니다. 자세한 내용은 [데이터 전송 예외](#Data-transfer-exemptions)를 참조하세요.<p>이 정책은 Androidi 앱 링크에도 적용될 수 있습니다.  일반 웹 링크는 **Open app links in Intune Managed Browser**(Intune Managed Browser에서 앱 링크 열기) 정책 설정을 통해 관리됩니다.<p>**참고:** 현재 Intune은 Android 인스턴트 앱 기능을 지원하지 않습니다.*Intune은 앱 간에 모든 데이터 연결을 차단합니다.* 자세한 내용은 Android 개발자 설명서에서 [Android 인스턴트 앱](https://developer.android.com/topic/instant-apps/index.html)을 참조하세요.</p>| **모든 앱** | 
 |<ul><ui> **제외할 앱 선택** | 이 옵션은 이전 옵션에 대해 *정책 관리형 앱*을 선택한 경우 사용할 수 있습니다. | |
 | **다른 앱의 데이터 받기** | 이 앱에 데이터를 전송할 수 있는 앱을 지정합니다. <ul><li>**정책 관리 앱**: 다른 정책 관리 앱에서만 데이터를 전송하도록 허용합니다.</li><li>**모든 앱**: 모든 앱에서의 데이터 전송을 허용합니다.</li><li>**없음**: 다른 정책 관리 앱을 포함한 모든 앱에서의 데이터 전송을 허용하지 않습니다. </li></ul> <p>예외적으로 intune이 데이터를 전송받을 수 있는 몇 가지 앱 및 서비스가 있습니다. 전체 앱 및 서비스 목록은 [데이터 전송 예외](#data-transfer-exemptions)를 참조하세요. | **모든 앱** |
 | **조직 데이터 복사본 저장** | 이 앱에서 다른 이름으로 저장 옵션을 사용할 수 없도록 설정하려면 **차단**을 선택합니다. 다른 이름으로 저장을 사용할 수 있도록 설정하려면 **허용**을 선택합니다. **참고:** *이 설정은 Microsoft Excel, OneNote, PowerPoint 및 Word에 지원됩니다. 또한 타사 및 LOB 앱에서도 지원될 수 있습니다.*| **허용** |  
@@ -105,7 +106,7 @@ ms.locfileid: "55230055"
 | <ul><ul><ui>**일 수** | *지정 일 수가 지나면 PIN 다시 설정*을 예로 설정하면, PIN 다시 설정을 요구하기 전에 경과해야 하는 기간을 지정합니다. | **0** | 
 |<ul><ui> **디바이스 PIN이 설정된 경우 앱 PIN** | **사용 안 함**으로 설정되면, 디바이스 PIN이 설정된 MDM 등록 디바이스에 앱 PIN이 필요하지 않습니다.   | **사용** |
 | **액세스를 위한 회사 또는 학교 계정 자격 증명** | 사용자가 앱에 액세스하기 위해 PIN을 입력하는 대신 자신의 회사 또는 학교 계정으로 로그인하도록 요구하려면 **필요**를 선택합니다. **필요**로 설정하고 PIN 또는 생체 인식 프롬프트를 사용하는 경우 회사 자격 증명 및 PIN 또는 생체 인식 프롬프트가 표시됩니다. | **필요 없음** |
-| **비활성인 시간(분)이 지난 후에 액세스 요구 사항 다시 확인** | 앱이 사용자에게 액세스 요구 사항을 다시 지정하도록 요구하기 전에 경과해야 하는 비활성 시간을 분 단위로 구성합니다.  <br><br>**참고:** Android에서는 PIN이 모든 Intune 관리형 앱 간에 공유됩니다. 앱이 디바이스에서 포그라운드를 나가면 PIN 타이머가 재설정됩니다. 사용자는 이 설정에서 정의한 제한 시간 동안 PIN을 공유하는 Intune 관리 앱에 PIN을 입력할 필요가 없습니다.| **30** |
+| **비활성인 시간(분)이 지난 후에 액세스 요구 사항 다시 확인** | 앱이 사용자에게 액세스 요구 사항을 다시 지정하도록 요구하기 전에 경과해야 하는 비활성 시간을 분 단위로 구성합니다.  <br><br>**참고:** Android에서는 PIN이 모든 Intune 관리형 앱 간에 공유됩니다. 앱이 디바이스에서 포그라운드를 나가면 PIN 타이머가 재설정됩니다. 사용자는 이 설정에서 정의한 제한 시간 동안 PIN을 공유하는 Intune 관리 앱에 PIN을 입력할 필요가 없습니다.*| **30** |
 
 
 > [!NOTE]  
