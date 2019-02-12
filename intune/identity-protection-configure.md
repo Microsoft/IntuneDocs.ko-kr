@@ -2,10 +2,10 @@
 title: Microsoft Intune을 사용하여 Windows 10 디바이스에 로그인하기 위해 PIN 사용 - Azure | Microsoft Docs
 description: Windows Hello for Business를 사용하면 사용자가 PIN, 지문 등을 통해 디바이스에 로그인할 수 있습니다. 이러한 설정을 사용하여 Intune for Windows 10 디바이스에 ID 보호 구성 프로필을 만들고 해당 프로필을 사용자 그룹 및 디바이스 그룹에 할당합니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: c6ca040c91437a35d12626f54b8385311d6631eb
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831389"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290658"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하는 Windows 10 디바이스에서 Windows Hello for Business 사용
 
@@ -60,7 +60,7 @@ Intune은 "구성 프로필"을 사용하여 조직의 요구 사항에 맞게 �
 
 4. 작업이 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다.
 
-프로필이 만들어지고 프로필 목록에 표시됩니다. 그런 다음, 이 프로필을 그룹에 [할당](device-profile-assign.md)합니다.
+프로필이 만들어지고 프로필 목록에 표시됩니다. 그런 다음, 요구에 맞도록 사용자와 디바이스 그룹에 이 프로필을 [할당](device-profile-assign.md)합니다.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

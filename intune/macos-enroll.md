@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 5ffd2dca10db3df6abdcd5fa9603f1f58a37a078
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112411"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290539"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune에서 macOS 디바이스 등록 설정
 
@@ -52,7 +52,7 @@ macOS 디바이스 등록을 설정하기 전에 다음 필수 구성 요소를 
 최종 사용자의 다른 작업에 대한 정보는 다음 문서를 참조하세요.
 
 - [Microsoft Intune에서 최종 사용자 환경 관련 리소스](end-user-educate.md)
-- [Intune에서 macOS 장치 사용](/intune-user-help/using-your-macos-device-with-intune)
+- [Intune에서 macOS 디바이스 사용](/intune-user-help/using-your-macos-device-with-intune)
 
 ## <a name="company-owned-macos-devices"></a>회사 소유 macOS 디바이스
 사용자를 위해 디바이스를 구입하는 조직의 경우, Intune은 다음과 같은 macOS 회사 소유 디바이스 등록 방법을 지원합니다.
@@ -69,7 +69,7 @@ macOS 디바이스 등록을 설정하기 전에 다음 필수 구성 요소를 
 
 병렬 데스크톱 또는 VMware Fusion 중 하나를 사용하여 테스트를 위해 macOS 가상 머신을 등록할 수 있습니다. 
 
-병렬 데스크톱의 경우 Intune이 인식할 수 있도록 가상 머신의 하드웨어 형식 및 일련 번호를 설정해야 합니다. [하드웨어 형식](http://kb.parallels.com/123594) 및 [일련 번호](http://kb.parallels.com/123455)를 설정하는 병렬 지침에 따라 테스트에 필요한 설정을 지정합니다. 가상 머신을 실행하는 디바이스의 하드웨어 형식을 사용자가 만드는 가상 머신의 하드웨어 형식과 일치시키는 것이 좋습니다. **Apple 메뉴** > **이 Mac 정보** > **시스템 보고서** > **모델 식별자**에서 이러한 하드웨어 형식을 찾을 수 있습니다. 
+병렬 데스크톱의 경우 Intune이 인식할 수 있도록 가상 머신의 하드웨어 형식 및 일련 번호를 설정해야 합니다. 하드웨어 형식 및 [일련 번호](http://kb.parallels.com/123455)를 설정하는 병렬 지침에 따라 테스트에 필요한 설정을 지정합니다. 가상 머신을 실행하는 디바이스의 하드웨어 형식을 사용자가 만드는 가상 머신의 하드웨어 형식과 일치시키는 것이 좋습니다. **Apple 메뉴** > **이 Mac 정보** > **시스템 보고서** > **모델 식별자**에서 이러한 하드웨어 형식을 찾을 수 있습니다. 
 
 VMware Fusion의 경우 [.vmx 파일을 편집](https://kb.vmware.com/s/article/1014782)하여 가상 머신의 하드웨어 모델 및 일련 번호를 설정해야 합니다. 가상 머신을 실행하는 디바이스의 하드웨어 형식을 사용자가 만드는 가상 머신의 하드웨어 형식과 일치시키는 것이 좋습니다. **Apple 메뉴** > **이 Mac 정보** > **시스템 보고서** > **모델 식별자**에서 이러한 하드웨어 형식을 찾을 수 있습니다. 
 
@@ -79,7 +79,7 @@ VMware Fusion의 경우 [.vmx 파일을 편집](https://kb.vmware.com/s/article/
 
 사용자가 승인되려면 최종 사용자가 macOS 회사 포털을 사용하여 등록한 후에 시스템 환경설정을 사용하여 수동으로 승인을 제공해야 합니다. 이 작업에 대한 지침은 macOS 10.13.2 이상에서 사용자의 macOS 회사 포털을 통해 제공됩니다.
 
-장치가 사용자 승인됨 상태인지 확인하려면 Intune 포털로 이동한 다음, **장치** > **모든 장치** > 장치 > **하드웨어**를 선택합니다. **사용자 승인됨** 필드를 확인합니다.
+디바이스가 사용자 승인됨 상태인지 확인하려면 Intune 포털로 이동한 다음, **디바이스** > **모든 디바이스** &gt; 디바이스 &gt; **하드웨어**를 선택합니다. **사용자 승인됨** 필드를 확인합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

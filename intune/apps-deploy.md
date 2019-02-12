@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: 9258bf1847e83087404967c0ded50481da3a8dff
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734275"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290743"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
@@ -51,7 +51,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
 >
 > Intune에 등록되지 않은 디바이스에 앱 업데이트를 받으려면 디바이스 사용자는 조직의 회사 포털로 이동해 수동으로 앱 업데이트를 설치해야 합니다.
 
-## <a name="to-assign-an-app"></a>앱을 할당하려면
+## <a name="assign-an-app"></a>앱 할당
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
@@ -62,7 +62,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
 7. **그룹 추가**를 선택하여 앱과 관련된 **그룹 추가** 창을 엽니다.
 8. 특정 앱의 경우 **할당 유형**을 선택합니다.
    - **등록된 디바이스에 사용 가능**: 회사 포털 앱 또는 웹 사이트에서 앱을 설치할 수 있는 사용자 그룹에 앱을 할당합니다.
-   - **등록 여부에 상관없이 사용 가능**: 이 앱을 Intune에 등록되지 않은 디바이스의 사용자 그룹에 할당합니다. 관리되는 Google Play의 앱은 이 옵션을 지원하지 않습니다. 사용자에게 Intune 라이선스가 할당되어야 합니다. [Intune 라이선스](licenses.md)를 참조하세요.
+   - **등록 여부에 상관없이 사용 가능**: 이 앱을 Intune에 등록되지 않은 디바이스의 사용자 그룹에 할당합니다. 사용자에게 Intune 라이선스가 할당되어야 합니다. [Intune 라이선스](licenses.md)를 참조하세요.
    - **필수**: 앱이 선택한 그룹의 디바이스에 설치됩니다. 일부 플랫폼에는 앱 설치를 시작하기 전에 최종 사용자가 승인해야 하는 추가 프롬프트가 표시될 수 있습니다.
    - **제거**: 이전에 Intune에서 “등록된 디바이스에 사용 가능”을 통해 또는 동일한 배포를 사용하여 “필수” 할당을 통해 디바이스에 애플리케이션을 설치한 경우 앱이 선택한 그룹의 디바이스에서 제거됩니다. 배포 후에는 웹 링크를 제거할 수 없습니다.
 
@@ -122,6 +122,9 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
 > [!NOTE]
 > 관리되는 iOS 스토어 앱의 경우에만 이러한 앱을 Microsoft Intune에 추가하고 **필수**로 할당할 때 앱은 **필수** 및 **사용 가능** 의도로 자동으로 생성됩니다.<br><br>
 > 의도적인 대상으로 지정된 iOS 스토어 앱(iOS VPP 앱이 아님)은 디바이스 체크 인 시 디바이스에 적용되며 회사 포털 앱에도 표시됩니다.
+
+## <a name="android-enterprise-app-we-app-deployment"></a>Android 엔터프라이즈 APP-WE 앱 배포
+등록되지 않은 APP-WE(등록이 없는 앱 보호 정책) 배포 시나리오에 있는 Android 디바이스의 경우 관리형 Google Play를 사용하여 스토어 앱 및 LOB 앱을 사용자에게 배포할 수 있습니다. 특히 알 수 없는 소스에서 설치를 허용하여 최종 사용자에게 디바이스의 보안 상태를 완화하도록 요구하지 않는 앱 카탈로그 및 설치 환경을 제공할 수 있습니다. 또한 이 배포 시나리오는 향상된 최종 사용자 환경을 제공합니다. 앱을 할당하는 단계는 [앱 할당](apps-deploy.md#assign-an-app)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

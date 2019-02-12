@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: bab1656ec141b26cc3e9cb4195da7c1c24e401a1
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626043"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230174"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 등록 설정
 
@@ -82,6 +82,12 @@ Contoso DNS 관리자는 다음 CNAME을 만들어야 합니다.
 `EnterpriseEnrollment-s.manage.microsoft.com` – 메일의 도메인 이름에서 도메인을 인식하여 Intune 서비스로 리디렉션을 지원합니다.
 
 DNS 레코드 변경 내용이 전파되는 데는 최대 72시간이 걸릴 수 있습니다. DNS 레코드가 전파될 때까지 Intune에서 DNS 변경 내용을 확인할 수 없습니다.
+
+## <a name="additional-endpoints-are-supported-but-not-recommended"></a>추가 엔드포인트가 지원되지만 권장되지 않음
+EnterpriseEnrollment-s.manage.microsoft.com은 등록에 선호되는 FQDN이지만 과거에 고객이 사용했고 지원되는 다른 두 개의 엔드포인트가 있습니다. EnterpriseEnrollment.manage.microsoft.com(-s 없음)과 manage.microsoft.com은 둘 다 자동 검색 서버의 대상으로 작동하지만 확인 메시지에서 확인을 터치해야 합니다. EnterpriseEnrollment-s.manage.microsoft.com을 가리키면 사용자가 추가적인 확인 단계를 수행할 필요가 없기 때문에 이 구성이 권장됩니다.
+
+## <a name="alternate-methods-of-redirection-are-not-supported"></a>리디렉션에 대한 대체 방법이 지원되지 않음
+CNAME 구성 이외의 메서드를 사용하는 것이 지원되지 않습니다. 예를 들어 프록시 서버를 사용하여 enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc를 enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc 또는 manage.microsoft.com/EnrollmentServer/Discovery.svc로 리디렉션하는 것이 지원되지 않습니다.
 
 **2단계: CNAME 확인**(선택 사항)<br>
 1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **CNAME 유효성 검사**를 선택합니다.

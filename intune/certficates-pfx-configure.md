@@ -2,8 +2,8 @@
 title: Microsoft Intune에서 개인 및 공개 키 인증서 사용 - Azure | Micrososft Docs
 description: Microsoft Intune에서 루트 인증서를 내보내고, 인증서 템플릿을 구성하고, Microsoft Intune Certificate Connector(NDES)를 다운로드 및 설치하고, 디바이스 구성 프로필을 만들고, Azure 및 인증 기관에서 PKCS(공개 키 암호 표준 ) 인증서 프로필을 만드는 단계를 포함하여 PKCS 인증서를 추가하거나 만듭니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -11,16 +11,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 6a617f56e688d8dd6e9bca8e964e075865f05be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: f825e66a4668a007dc364e4c42b18ca7c2736016
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203623"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303494"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -136,6 +136,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 인증하려면 각 디바이�
 6. **고급** 탭에서 **이 컴퓨터의 시스템 계정 사용(기본값)** 을 선택한 상태로 두는 것이 좋습니다.
 7. **적용** > **닫기**
 8. Azure Portal(**Intune** > **장치 구성** > **인증 기관**)로 돌아갑니다. 잠시 후에 녹색 확인 표시가 나타나고 **연결 상태**는 **활성**입니다. 커넥터 서버가 이제 Intune과 통신할 수 있습니다.
+9. 네트워킹 환경에 웹 프록시가 있으면 커넥터가 작동할 수 있도록 추가 구성이 필요할 수 있습니다. 자세한 내용은 Azure Active Directory 설명서에서 [기존 온-프레미스 프록시 서버 작업](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)을 참조하세요.
 
 > [!NOTE]
 > TLS 1.2 지원은 Microsoft Intune Certificate Connector에 포함되어 있습니다. 따라서 Microsoft Intune Certificate Connector가 설치된 서버가 TLS 1.2를 지원하는 경우 TLS 1.2가 사용됩니다. 서버가 TLS 1.2를 지원하지 않으면 TLS 1.1이 사용됩니다. 현재 TLS 1.1은 디바이스와 서버 간 인증에 사용됩니다.

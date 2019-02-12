@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203149"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690685"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>관리 디바이스를 사용하여 회사 또는 학교 리소스에 액세스
 Microsoft Intune은 조직이 디바이스, 앱 및 이메일에 대한 액세스를 관리할 수 있는 디바이스 관리 시스템입니다. 디바이스 관리를 사용하면 사용자, 기타 직원 및 학생이 사실상 어디에서나 거의 모든 디바이스에서 사용자 작업 정보에 액세스할 수 있습니다. 원격으로 작업하는 경우에도 사용자 및 사용자 조직의 정보를 안전하게 유지합니다.
@@ -39,16 +39,9 @@ Microsoft Intune은 회사가 보안 및 디바이스 요구 사항을 구성하
 - 회사 지원팀이 설정한 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)로 이동하기.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>앱과 웹 사이트의 차이는 무엇인가요?
-회사 포털 앱과 회사 포털 웹 사이트 사이에는 몇 가지 사소한 차이점이 있지만, 둘 다에서 대부분의 동일한 작업을 수행할 수 있습니다. 수행할 수 있는 일부 작업은 다음과 같습니다.
+Windows 10, iOS, macOS 및 Android용 각 회사 포털 앱은 사용자 디바이스의 해당 플랫폼과 원활하게 통합됩니다. 웹 사이트는 모든 디바이스에서 액세스할 수 있으며,사용하고 있는 디바이스에 관계없이 동일한 범용 환경을 제공합니다. 
 
-- 관리에 디바이스 등록
-- 디바이스의 상태 확인
-- 조직의 권장 및 필수 앱 다운로드
-- 디바이스 이름 바꾸기
-- 디바이스의 PIN 또는 암호 재설정
-- IT 부서에 지원 문의
-
-디바이스에서 회사 포털 앱을 사용하여 수행할 수 있는 작업과 회사 포털 웹 사이트를 사용하여 수행할 수 있는 작업을 비교하여 보려면 다음 링크 중 하나를 선택하세요.
+다음 링크에 사용자 디바이스의 플랫폼에 특정한 등록 단계로 시작하는 회사 포털 지침이 있습니다.  
 
 - [Android 디바이스 사용](using-your-android-device-with-intune.md)
 - [iOS 디바이스 사용](using-your-ios-device-with-intune.md)

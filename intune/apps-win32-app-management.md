@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068325"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290760"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 독립 실행형 - Win32 앱 관(공개 미리 보기)
+# <a name="intune-standalone---win32-app-management"></a>Intune 독립 실행형 - Win32 앱 관리
 
 Intune 독립 실행형은 보다 나은 Win32 앱 관리 기능을 제공합니다. 클라우드로 연결된 고객은 Win32 앱 관리를 위한 Configuration Manager를 사용할 수 있지만, Intune 전용 고객은 Win32 LOB(사업 부문) 앱에 대한 보다 나은 관리 기능을 사용할 수 있습니다. 이 항목에서는 Intune Win32 앱 관리 기능과 문제 해결 정보에 대한 개요를 제공합니다.
 
-## <a name="prerequisites-for-public-preview"></a>공개 미리 보기의 필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - Windows 10 버전 1607 이상(Enterprise, Pro 및 Education 버전)
 - Windows 10 클라이언트의 필수 요건은 다음과 같습니다. 
     - AAD(Azure Active Directory) 또는 Hybrid Azure Active Directory에 가입해야 합니다.
     - Intune(MDM-managed)에 등록되어 있어야 합니다.
-- Windows 애플리케이션 크기는 공개 미리 보기 상태에서 앱당 8GB로 제한됩니다. 
+- Windows 애플리케이션 크기는 앱당 8GB로 제한됩니다.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>업로드할 Win32 앱 콘텐츠 준비
 
-[Microsoft Intune Win32 앱 업로드 준비 도구](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool)를 사용하여 Win32 앱을 전처리합니다. 패키징 도구는 애플리케이션 설치 파일을 *.intunewin* 형식으로 변환합니다. 또한 패키지 도구는 Intune에서 요구하는 일부 특성을 검색하여 애플리케이션 설치 상태를 확인합니다. 앱 설치 프로그램 폴더에서 이 도구를 사용하면 Intune 콘솔에서 Win32 앱을 만들 수 있습니다.
+[Microsoft Win32 콘텐츠 준비 도구](https://go.microsoft.com/fwlink/?linkid=2065730)를 사용하여 Win32 앱을 전처리합니다. 도구는 애플리케이션 설치 파일을 *.intunewin* 형식으로 변환합니다. 또한 이 도구는 Intune에 필요한 일부 특성을 검색하여 애플리케이션 설치 상태를 확인합니다. 앱 설치 프로그램 폴더에서 이 도구를 사용하면 Intune 콘솔에서 Win32 앱을 만들 수 있습니다.
 
-GitHub에서 [Microsoft Intune Win32 앱 업로드 준비 도구](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool)를 다운로드할 수 있습니다.
+GitHub에서 [Microsoft Win32 콘텐츠 준비 도구](https://go.microsoft.com/fwlink/?linkid=2065730)를 다운로드할 수 있습니다.
 
 ### <a name="available-command-line-parameters"></a>사용 가능한 명령줄 매개 변수 
 
@@ -74,7 +74,7 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 1.  [Azure 포털](https://portal.azure.com/)에 로그인합니다.
 2.  **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
 3.  **Intune** 창에서 **클라이언트 앱** > **앱** > **추가**을 선택합니다.
-4.  **앱 추가** 창에 제공된 드롭다운 목록에서 **Windows 앱(Win32) - 미리 보기**를 선택합니다.
+4.  **앱 추가** 창에 제공된 드롭다운 목록에서 **Windows 앱(Win32)** 를 선택합니다.
 
     ![앱 추가 블레이드 - 형식 추가 드롭다운 상자 스크린샷](./media/apps-win32-app-01.png)
 
@@ -85,6 +85,10 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
     ![앱 패키지 파일 블레이드 스크린샷](./media/apps-win32-app-02.png)
 
 2.  **앱 패키지 파일** 창에서 찾아보기 단추를 선택합니다. 그런 다음 확장명이 *.intunewin*인 Windows 설치 파일을 선택합니다.
+
+    > [!IMPORTANT]
+    > 최신 버전의 Microsoft Win32 콘텐츠 준비 도구를 사용해야 합니다. 최신 버전을 사용하지 않으면, 오래된 버전의 Microsoft Win32 콘텐츠 준비 도구를 사용하여 앱이 패키징되었다고 알리는 경고가 표시됩니다. 
+
 3.  작업을 마쳤으면 **확인**을 선택합니다.
 
 ### <a name="step-3-configure-app-information"></a>3단계: 앱 정보 구성
@@ -171,7 +175,7 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
             
                 ![검색 규칙 창의 스크린샷 - 레지스트리 키가 존재함](./media/apps-win32-app-05.png)    
             
-            2.  레지스트리 값이 존재하는지 확인합니다(**미리 보기에서는 사용할 수 없음**).
+            2.  레지스트리 값이 존재하는지 확인합니다.
         
                 ![검색 규칙 창의 스크린샷 - 레지스트리 값이 존재함](./media/apps-win32-app-06.png)    
         
