@@ -15,12 +15,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: daeb85543138a46df296564d2372b6b441011cdf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e35b0f52c4062e0124fd8e6b939f451f33fce36b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183421"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835013"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune 소프트웨어 클라이언트를 통해 Windows PC를 컴퓨터로 관리
 
@@ -123,4 +124,4 @@ PC를 모바일 디바이스로 관리하는 데 사용할 수 있는 일부 관
 
 Intune 클라이언트 소프트웨어는 보통 백그라운드에서 자동으로 실행되므로 많은 사용자 상호 작용 또는 문제 해결을 수행할 필요가 없습니다. PC 관리 문제를 해결해야 하는 경우 로그를 확인할 수 있습니다. Intune 클라이언트 소프트웨어 및 해당 로그는 %Program Files%\Microsoft\OnlineManagement 디렉터리에 설치됩니다.
 
-[장치 등록](device-enrollment.md)에서 Microsoft Intune을 사용하여 장치를 등록하는 방법에 대한 자세한 내용을 검토할 수도 있습니다.
+[디바이스 등록](device-enrollment.md)에서 Microsoft Intune을 사용하여 디바이스를 등록하는 방법에 대한 자세한 내용을 검토할 수도 있습니다.

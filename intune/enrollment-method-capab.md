@@ -15,20 +15,21 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aa71461b136243262146502adc0f7b925b345a0b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032132"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839331"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Windows 디바이스용 Intune 등록 방법 기능
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune에서 작업자의 디바이스를 등록하는 몇 가지 방법이 있습니다. 아래 표에 나와 있는 것처럼 각 메서드에는 다른 모범 사례 및 기능이 포함됩니다.
+Intune에서 작업자의 디바이스를 등록하는 몇 가지 방법이 있습니다. 아래 표에 나와 있는 것처럼 각 방법에는 다른 모범 사례 및 기능이 포함됩니다.
 
 ## <a name="best-practices-by-enrollment-method"></a>등록 방법별 모범 사례
-| **Best practices**(최선의 구현 방법) | **[Azure AD 조인됨](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Autopilot을 사용하여 Azure AD 조인됨](enrollment-autopilot.md)** |**[대량](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
+| **모범 사례** | **[Azure AD 조인됨](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Autopilot을 사용하여 Azure AD 조인됨](enrollment-autopilot.md)** |**[대량](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |EDU에 일반적으로 사용됨|![X](media/xmark.png)|![확인 표시](media/checkmark.png)|![확인 표시](media/checkmark.png)|![확인 표시](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |디바이스를 공유 디바이스로 사용 가능|![X](media/xmark.png)|![X](media/xmark.png)|![확인 표시](media/checkmark.png)|![확인 표시](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|

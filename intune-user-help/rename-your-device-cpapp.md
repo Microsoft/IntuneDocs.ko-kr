@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ce673ab5206d5024da1cb6822beb523aa155325f
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 627cabb14def14494ca258fbc9ac7ebf736b10da
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863028"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834384"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 디바이스 이름 바꾸기
 다른 디바이스에서 더 쉽게 인식할 수 있도록 디바이스 이름을 바꿉니다. Windows용 회사 포털 앱을 사용하면 연결된 다음 유형의 디바이스 이름을 바꿀 수 있습니다.  
@@ -45,7 +46,7 @@ ms.locfileid: "48863028"
      ![Windows용 회사 포털 앱, 디바이스 세부 정보 페이지, 이름 바꾸기 팝업 필드의 예제 스크린샷](./media/1808_RenameApp_Popup.png)  
 
 ## <a name="rename-device-from-device-context-menu"></a>디바이스 상황에 맞는 메뉴에서 디바이스 이름 바꾸기  
-[상황에 맞는 메뉴](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) 작업을 통해 장치를 제거하려면 다음 단계를 완료합니다.  
+[상황에 맞는 메뉴](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) 작업을 통해 디바이스를 제거하려면 다음 단계를 완료합니다.  
 
 1. 회사 포털 앱의 **홈**페이지에서 **내 디바이스**로 이동합니다.
 

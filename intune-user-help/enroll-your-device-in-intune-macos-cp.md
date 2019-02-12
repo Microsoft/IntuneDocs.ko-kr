@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260252"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834724"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>회사 포털 앱을 사용하여 Intune에 macOS 디바이스 등록
 
@@ -55,9 +56,9 @@ Intune 회사 포털 앱으로 macOS 디바이스를 등록하여 조직의 이�
 
 3. 페이지의 왼쪽 위 모서리로 이동하고 **메뉴** > **장치**를 클릭합니다.  
 
-4. __장치__ 페이지에 관리되는 장치 목록 또는 배너가 표시됩니다. 표시되는 내용은 관리되는 디바이스가 있는지에 따라 달라집니다. 
+4. __디바이스__ 페이지에 관리되는 디바이스 목록 또는 배너가 표시됩니다. 표시되는 내용은 관리되는 디바이스가 있는지에 따라 달라집니다. 
     * 나열되지 않은 디바이스를 추가하려면 **여기를 탭하여 사용 중인 디바이스를 알려주거나 새 디바이스를 추가하세요.** 를 읽는 배너를 선택합니다.
-    * 디바이스가 없는 경우 배너는 **관리되는 디바이스가 없습니다. 여기를 탭하여 이 장치를 추가하세요.** 를 읽습니다. 배너를 클릭하여 디바이스를 추가합니다.  
+    * 디바이스가 없는 경우 배너는 **모든 관리 디바이스가 필요 없습니다. 여기를 탭하여 이 장치를 추가하세요.** 를 읽습니다. 배너를 클릭하여 디바이스를 추가합니다.  
 
      ![클릭할 위치를 강조 표시하는 배너 옵션 주위에 빨간색 사각형이 있는 디바이스 페이지의 스크린샷](./media/CP-enroll-MACOS-1808.png)  
 5.  회사 포털에 현재 표시된 메시지와 일치하는 다음 단계를 완료합니다.  
@@ -65,7 +66,7 @@ Intune 회사 포털 앱으로 macOS 디바이스를 등록하여 조직의 이�
 
          ![macOS 회사 포털 앱을 다운로드하는 프롬프트 화면의 예제 스크린샷 사용자는 프롬프트의 왼쪽 아래에 파란색 다운로드 단추 또는 오른쪽 아래에 회색 취소 단추를 클릭하여 선택할 수 있는 옵션이 있습니다.](./media/CP-enroll-download-macOS-1808.png)  
 
-    * 관리되는 macOS 디바이스가 이미 있는 경우 현재 관리되는 macOS 디바이스 목록이 있는 프롬프트를 받게 됩니다. **내 장치가 여기에 나열되지 않습니다** > **다운로드**를 선택하여 추가하는 장치에서 회사 포털 앱을 다운로드합니다.  
+    * 관리되는 macOS 디바이스가 이미 있는 경우 현재 관리되는 macOS 디바이스 목록이 있는 프롬프트를 받게 됩니다. **내 디바이스가 여기에 나열되지 않습니다** > **다운로드**를 선택하여 추가하는 디바이스에서 회사 포털 앱을 다운로드합니다.  
 
          ![macOS 회사 포털 앱을 다운로드하는 프롬프트 화면의 예제 스크린샷 사용자는 *내 디바이스가 여기에 나열되지 않습니다* 또는 페이지 중 특정 디바이스를 선택하는 옵션이 있습니다. 파란색 다운로드 단추가 프롬프트의 왼쪽 아래에 표시되고, 회색 취소 단추가 오른쪽 아래에 표시됩니다.](./media/cp-mac-os-device-isnt-here-1808.png)  
 
@@ -93,4 +94,11 @@ macOS 디바이스에 설치된 MDM(모바일 디바이스 관리) 프로필을 
 
 또한 다른 프로필은 개별 확인이 필요하지 않기 때문에 더 빠르게 생성되어 디바이스에 전달됩니다. 
 
-여전히 도움이 필요하세요? 회사 지원팀과 확인하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.  
+## <a name="updating-the-company-portal-app"></a>회사 포털 앱 사용
+
+회사 포털 앱 업데이트는 Mac 용 Microsoft 자동 업데이트를 통해 다른 Office 앱과 동일한 방식으로 수행됩니다. [MacOS용 Microsoft 앱 업데이트에 대한 자세한 내용은 여기](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)를 참조하세요.  
+
+## <a name="next-steps"></a>다음 단계  
+추가 도움이 필요하세요? 회사 지원팀과 확인하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.  
+
+

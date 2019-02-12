@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1880d580a8719dcf72f54f9c22306bea001bc3b0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031826"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834581"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune에 마이그레이션할 때 디바이스 준수 및 앱 관리 정책 구성
 
@@ -56,7 +57,7 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 ### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>작업 3: 디바이스 구성 프로필 만들기 및 배포
 
-디바이스 수준 설정을 적용할 디바이스 구성 프로필(예: 카메라 사용 안 함, 앱 스토어, 단일 앱 모드 구성, 홈 화면 등)을 만들어야 합니다. [장치 프로필](device-profiles.md)에 대해 자세히 알아보세요.
+디바이스 수준 설정을 적용할 디바이스 구성 프로필(예: 카메라 사용 안 함, 앱 스토어, 단일 앱 모드 구성, 홈 화면 등)을 만들어야 합니다. [디바이스 프로필](device-profiles.md)에 대해 자세히 알아보세요.
 
 ####  <a name="directly-import-ios-configuration-profiles-optional"></a>iOS 구성 프로필 직접 가져오기(선택 사항)
 
@@ -78,9 +79,9 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 디바이스 준수 설정에 대한 추가 리소스를 참조하세요.
 
--   [장치 준수 정책](device-compliance.md)에 대해 알아보세요.
+-   [디바이스 준수 정책](device-compliance.md)에 대해 알아보세요.
 
--   [장치 준수 정책을 만드는 방법](device-compliance-get-started.md)에 대해 알아보세요.
+-   [디바이스 준수 정책을 만드는 방법](device-compliance-get-started.md)에 대해 알아보세요.
 
 ### <a name="task-5-publish-and-deploy-apps"></a>작업 5: 앱 게시 및 배포
 
@@ -92,7 +93,7 @@ Intune MDM을 사용하는 경우 앱 자동 설치를 요구하거나 회사 �
 
 ### <a name="task-6-enable-device-enrollment"></a>작업 6: 디바이스 등록 사용
 
-디바이스 등록은 디바이스를 관리하는 데 필요합니다. [회사 소유 장치 및 사용자의 개인 장치를 등록하는 방법](device-enrollment.md)에 대해 알아보세요.
+디바이스 등록은 디바이스를 관리하는 데 필요합니다. [회사 소유 디바이스 및 사용자의 개인 디바이스를 등록하는 방법](device-enrollment.md)에 대해 알아보세요.
 
 ## <a name="next-steps"></a>다음 단계
 

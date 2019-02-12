@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a6f5fb0ae4ab5f4f5cafbba6122c0b42e4591c4b
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aefde274ec7ca925d45dd101ee0ebef1083f7f19
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745140"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851273"
 ---
 # <a name="resolve-access-point-restrictions"></a>액세스 지점 제한 해결
 
@@ -44,7 +45,7 @@ ms.locfileid: "34745140"
 
 | 회사 포털 메시지 | 이 메시지의 의미 | 수행할 작업                                                                   
 |------------------------|-----------------------------------|--------------------------|
-| **장치가 승인된 네트워크에 연결되어 있지 않습니다. 승인된 무선 네트워크에 연결합니다.** | 회사 액세스에 대해 승인되지 않은 네트워크에 연결되어 있습니다. 이 네트워크에 연결되어 있으면 회사 이메일, 앱 및 다른 보호된 회사 리소스에 액세스할 수 없습니다. | 승인된 회사 네트워크에 연결합니다. 그런 다음, **해결**을 탭하여 다시 시도합니다. |
+| **디바이스가 승인된 네트워크에 연결되어 있지 않습니다. 승인된 무선 네트워크에 연결합니다.** | 회사 액세스에 대해 승인되지 않은 네트워크에 연결되어 있습니다. 이 네트워크에 연결되어 있으면 회사 이메일, 앱 및 다른 보호된 회사 리소스에 액세스할 수 없습니다. | 승인된 회사 네트워크에 연결합니다. 그런 다음, **해결**을 탭하여 다시 시도합니다. |
 
 ## <a name="restrictions-couldnt-be-enforced"></a>제한을 적용할 수 없음  
 

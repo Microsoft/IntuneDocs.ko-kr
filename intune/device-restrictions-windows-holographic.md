@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 8479e69d661b163778a4d0b4eb1f68e729436f4e
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 477b8a0c9b4cdb575988524cea1f73615254baec
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831499"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838481"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune를 사용하여 기능을 허용하거나 제한하는 Windows Holographic for Business 디바이스 설정
 

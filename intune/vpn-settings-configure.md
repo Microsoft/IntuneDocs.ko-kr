@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd605542a0711e27f87d68af51662fd318f3250e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2d0bde56c6622648d47fe47458bdac62d7843ca
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184882"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838464"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune에서 VPN 프로필 만들기
 
@@ -67,9 +68,9 @@ Intune 사용자 지정 구성 정책을 사용하여 다음 플랫폼에 대한
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+3. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 4. VPN 프로필의 **이름** 및 **설명**을 입력합니다.
-5. **플랫폼** 드롭다운 목록에서 VPN 설정을 적용할 장치 플랫폼을 선택합니다. 현재 VPN 디바이스 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
+5. **플랫폼** 드롭다운 목록에서 VPN 설정을 적용할 디바이스 플랫폼을 선택합니다. 현재 VPN 디바이스 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
    - **OWA(Outlook Web Access)**
    - **Android 엔터프라이즈**
    - **iOS**

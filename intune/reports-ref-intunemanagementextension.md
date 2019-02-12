@@ -16,16 +16,17 @@ ms.reviewer: dariusz
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 48e08b93468fb177fd3a724e5bcc6758cf262e99
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0df0d97b41933f316db788fd0af09ba75196549b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189371"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836876"
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune 관리 확장에 대한 참조
 
-**IntuneManagementExtension** 범주는 다음과 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
+**IntuneManagementExtension** 범주는 다음과 같은 정보를 추적하는 모바일 디바이스에 대한 엔터티를 포함합니다.
 
   -  IntuneManagementExtension의 버전
   -  IntuneManagementExtension의 설치 상태
@@ -46,11 +47,11 @@ ms.locfileid: "52189371"
 | 속성  | 설명 | 예제 |
 |---------|------------|--------|
 | ExtensionStateKey |상태의 고유 식별자입니다. | 2 |
-| ExtensionState |IntuneManagementExtension의 상태입니다. | Healthy |
+| ExtensionState |IntuneManagementExtension의 상태입니다. | 정상 |
 
 ## <a name="intunemanagementextension"></a>IntuneManagementExtension
 
-**IntuneManagementExtension**은 일별 각 Windows 10 장치의 IntuneManagementExtension 상태를 나열합니다.
+**IntuneManagementExtension**은 일별 각 Windows 10 디바이스의 IntuneManagementExtension 상태를 나열합니다.
 데이터는 최근 60일 동안 보존됩니다. 
 
 

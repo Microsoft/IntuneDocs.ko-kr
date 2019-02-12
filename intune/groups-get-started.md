@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 070bf25a2c18a08f57080e305545f3529ab42b0b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f88734a6db3525239bc11702625fef98603eefc0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187619"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851575"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Azure Portal의 Microsoft Intune 클래식 그룹
 
@@ -36,7 +37,7 @@ Azure AD 보안 그룹은 사용자와 디바이스 모두에 대한 모든 유�
 
 이전에 사용한 Intune 그룹 기능 중 일부를 Azure AD에서 사용할 수 없습니다.
 
-- **그룹화되지 않은 사용자** 및 **그룹화되지 않은 장치** Intune 그룹은 더 이상 사용할 수 없습니다.
+- **그룹화되지 않은 사용자** 및 **그룹화되지 않은 디바이스** Intune 그룹은 더 이상 사용할 수 없습니다.
 - 그룹에서 **특정 구성원을 제외하는** 옵션이 Azure Portal에 존재하지 않습니다. 그러나 이 동작을 복제하는 고급 규칙과 함께 Azure AD 보안 그룹을 사용할 수 있습니다. 예를 들어 보안 그룹에 Sales 부서에 속한 모든 사람을 포함하되 직함에 "Assistant"라는 단어가 포함된 그룹은 제외하는 고급 규칙을 만들려면 다음과 같은 고급 규칙을 사용할 수 있습니다.
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`과 같은 URL을 사용합니다.
@@ -63,7 +64,7 @@ Azure AD 보안 그룹은 사용자와 디바이스 모두에 대한 모든 유�
 |동적 디바이스 그룹|동적 Azure AD 보안 그룹|
 |포함 조건이 있는 그룹|Intune의 포함 조건에서 모든 정적 또는 동적 구성원을 포함하는 정적 Azure AD 보안 그룹|
 |제외 조건이 있는 그룹|마이그레이션되지 않음|
-|기본 제공 그룹:<br>- **모든 사용자**<br>- **그룹 해제된 사용자**<br>- **모든 장치**<br>- **그룹 해제된 장치**<br>- **모든 컴퓨터**<br>- **모든 모바일 장치**<br>- **모든 MDM 관리 장치**<br>- **모든 EAS 관리 장치**|Azure AD 보안 그룹|
+|기본 제공 그룹:<br>- **모든 사용자**<br>- **그룹 해제된 사용자**<br>- **모든 디바이스**<br>- **그룹 해제된 디바이스**<br>- **모든 컴퓨터**<br>- **모든 모바일 디바이스**<br>- **모든 MDM 관리 디바이스**<br>- **모든 EAS 관리 디바이스**|Azure AD 보안 그룹|
 
 ## <a name="group-hierarchy"></a>그룹 계층
 

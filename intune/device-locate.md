@@ -14,12 +14,13 @@ ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3f4d63a2e749e1070bd5969d6f8a3046f6bcc4e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 96d4143b5105a174ba47c8c7a713ae7bee9bcb94
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182179"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835739"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Intune을 사용하여 분실했거나 도난당한 iOS 디바이스 찾기
 
@@ -41,10 +42,10 @@ ms.locfileid: "52182179"
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **장치**를 선택한 다음, **모든 장치**를 선택합니다.
+3. **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
 4. 관리하는 디바이스 목록에서 iOS 디바이스를 선택하고 **자세히...** 를 선택합니다. 그런 다음, **디바이스 찾기** 원격 작업을 선택합니다.
 5. 디바이스를 찾으면 해당 위치가 **디바이스 찾기**에 표시됩니다.
-    ![Azure에서 Intune을 사용하여 장치 찾기 스크린샷](./media/locate-device.png)
+    ![Azure에서 Intune을 사용하여 디바이스 찾기 스크린샷](./media/locate-device.png)
 
 >[!NOTE]
 >개인 정보 보호 차원에서 맵을 확대할 수 있는 거리가 반경 300미터로 제한됩니다.
@@ -53,7 +54,7 @@ ms.locfileid: "52182179"
 
 누군가 iOS 9.3 이상의 디바이스를 분실하는 경우 관리자는 디바이스를 원격으로 트리거하여 사용자가 찾을 수 있도록 알림음을 재생할 수 있습니다. 디바이스가 [분실 모드](device-lost-mode.md)에 있어야 합니다.
 
-[Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **장치** > **모든 장치** > iOS 장치 > **개요** > **기타** > **분실 모드 소리 재생(감독 모드인 경우에만)** 을 선택합니다.
+[Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스** > **모든 디바이스** &gt; iOS 디바이스 &gt; **개요** > **기타** > **분실 모드 소리 재생(감독 모드인 경우에만)** 을 선택합니다.
 
 사용자가 디바이스에서 소리를 사용하지 않도록 설정하거나 디바이스가 분실 모드에서 제거될 때까지 소리가 계속 재생됩니다.
 

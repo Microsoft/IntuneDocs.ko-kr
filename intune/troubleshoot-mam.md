@@ -15,12 +15,13 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899096"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086151"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>모바일 애플리케이션 관리 문제 해결
 
@@ -34,9 +35,9 @@ IT 관리자가 Intune 앱 보호 정책을 사용할 때 발생할 수 있는 �
 
 | 문제 | 설명 | 해결 방법 |
 | -- | -- | -- |
-| 정책이 비즈니스용 Skype에 적용되지 않음 | Azure Portal에서 만든 디바이스 등록을 포함하지 않는 앱 보호 정책이 iOS 및 Android 디바이스의 비즈니스용 Skype 앱에 적용되지 않습니다. | 최신 인증을 사용하도록 비즈니스용 Skype를 설정해야 합니다.  [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)(최신 인증을 사용하도록 테넌트 설정)의 지침을 따라 Skype에 최신 인증을 설정합니다. |
+| 정책이 비즈니스용 Skype에 적용되지 않음 | Azure Portal에서 만든 디바이스 등록을 포함하지 않는 앱 보호 정책이 iOS 및 Android 디바이스의 비즈니스용 Skype 앱에 적용되지 않습니다. | 최신 인증을 사용하도록 비즈니스용 Skype를 설정해야 합니다.  [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)(최신 인증을 사용하도록 테넌트 설정)의 지침을 따라 Skype에 최신 인증을 설정합니다. |
 | Office 앱 정책이 적용되지 않음 | 모든 사용자에 대해 [지원되는 Office 앱](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)에 앱 보호 정책이 적용되지 않습니다. | 사용자가 Intune용 라이선스를 취득했으며, Office 앱이 배포된 앱 보호 정책의 대상인지 확인합니다. 새로 배포된 앱 보호 정책이 적용되려면 최대 8시간이 걸릴 수 있습니다. |
-| 관리자가 Azure Portal에서 앱 보호 정책을 구성할 수 없음 | IT 관리자가 Azure Portal에서 앱 보호 정책을 구성할 수 없습니다. | Azure Portal에 액세스할 수 있는 사용자 역할은 다음과 같습니다. <ul><li>전역 관리자 - [Office 포털](http://portal.office.com/)에서 설정할 수 있음</li><li>소유자 - [Azure Portal](https://portal.azure.com/)에서 설정할 수 있음</li><li>참가자 - [Azure Portal](https://portal.azure.com/)에서 설정할 수 있음</li></ul> 이러한 역할 설정에 대한 도움말은 [Microsoft Intune에서 RBAC(역할 기반 관리 제어)](role-based-access-control.md)를 참조하세요.|
+| 관리자가 Azure Portal에서 앱 보호 정책을 구성할 수 없음 | IT 관리자가 Azure Portal에서 앱 보호 정책을 구성할 수 없습니다. | Azure Portal에 액세스할 수 있는 사용자 역할은 다음과 같습니다. <ul><li>전역 관리자 - [Office 포털](https://portal.office.com/)에서 설정할 수 있음</li><li>소유자 - [Azure Portal](https://portal.azure.com/)에서 설정할 수 있음</li><li>참가자 - [Azure Portal](https://portal.azure.com/)에서 설정할 수 있음</li></ul> 이러한 역할 설정에 대한 도움말은 [Microsoft Intune에서 RBAC(역할 기반 관리 제어)](role-based-access-control.md)를 참조하세요.|
 |사용자 계정이 앱 보호 정책 보고서에서 누락됨 | 앱 보호 정책을 최근 배포한 사용자 계정이 관리 콘솔 보고서에 표시되지 않습니다. | 사용자가 앱 보호 정책 대상으로 새로 지정된 경우 대상 사용자로 보고서에 표시되는 데 최대 24시간이 걸릴 수 있습니다. |
 | 정책 변경이 적용되지 않음 | 앱 보호 정책에 대한 변경 및 업데이트가 적용되는 데 최대 8시간이 걸릴 수 있습니다. | 해당하는 경우 서비스와 강제로 동기화하도록 최종 사용자가 앱에서 로그아웃했다가 다시 로그인하면 됩니다. |
 | 앱 보호 정책이 DEP에서 작동되지 않음 | 앱 보호 정책이 Apple DEP 디바이스에 적용되지 않습니다. | Apple DEP(디바이스 등록 프로그램)에서 사용자 선호도를 사용 중인지 확인합니다. 사용자 선호도는 DEP에 따라 사용자 인증이 필요한 모든 앱에 필수입니다. <br><br>iOS DEP 등록에 대한 자세한 내용은 [Apple 디바이스 등록 프로그램을 통해 자동으로 iOS 디바이스 등록](device-enrollment-program-enroll-ios.md)을 참조하세요.|

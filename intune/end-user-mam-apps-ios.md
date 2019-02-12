@@ -15,12 +15,13 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bc4ceb6fe8c96a80310ceb58e13850c65b676d0c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8a89354608be835302a3c09c9c491e116f453fad
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182384"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834401"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황
 
@@ -37,7 +38,7 @@ ms.locfileid: "52182384"
 
 <!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
-**Intune에서 관리를 위해 등록**된 장치의 경우 사용자에게 앱이 현재 관리되고 있다는 메시지가 표시됩니다.
+**Intune에서 관리를 위해 등록**된 디바이스의 경우 사용자에게 앱이 현재 관리되고 있다는 메시지가 표시됩니다.
 
 ##  <a name="use-apps-with-multi-identity-support"></a>다중 ID가 지원되는 앱 사용
 

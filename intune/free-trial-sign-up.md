@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b0ed363acca7fc0021569009b1f672a06101e29f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067434"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834180"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>빠른 시작: Microsoft Intune 평가판 체험 
 
@@ -130,4 +131,4 @@ MDM 기관에 대한 자세한 내용은 [모바일 디바이스 관리 권한 �
 다음 Intune 빠른 시작을 진행하기 위해서는 아래 빠른 시작 링크를 클릭하세요.
 
 > [!div class="nextstepaction"]
-> [빠른 시작 사용자를 만들고 라이선스 할당](quickstart-create-user.md)
+> [빠른 시작: 사용자를 만들고 라이선스 할당](quickstart-create-user.md)

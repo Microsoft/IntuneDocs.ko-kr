@@ -16,12 +16,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c56a9adca39728a04ac7847ddf7bceccdb9dccfb
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ada708c3ea6f9e8d835b667ac8162037c1de05f9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863068"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836492"
 ---
 # <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Windows 10용 회사 포털 앱에서 디바이스 잠금
 
@@ -42,12 +43,12 @@ Windows 10용 회사 포털 앱에서 분실 또는 도난당한 디바이스 �
 
 1. 회사 포털 앱의 **홈** 페이지에서 **내 디바이스**로 이동하여 잠그려는 디바이스를 선택합니다.
 
-2. **장치 세부 정보** 페이지에서 **원격 잠금** 아이콘을 선택합니다.  
+2. **디바이스 세부 정보** 페이지에서 **원격 잠금** 아이콘을 선택합니다.  
 
 
    ![회사 포털 앱, 디바이스 세부 정보 페이지, 원격 잠금 아이콘이 강조 표시된 스크린샷](./media/1804_remote_lock_Windows_CPapp_05.png)  
 
-3. **잠금**을 선택하여 장치 잠금을 확인합니다. 앱이 디바이스를 잠그고 **홈**페이지로 리디렉션됩니다.  
+3. **잠금**을 선택하여 디바이스 잠금을 확인합니다. 앱이 디바이스를 잠그고 **홈**페이지로 리디렉션됩니다.  
 
 
    ![회사 포털 앱, 디바이스 세부 정보 페이지, 원격 잠금 확인 프롬프트 스크린샷](./media/1804_remote_lock_Windows_CPapp_06.png)  

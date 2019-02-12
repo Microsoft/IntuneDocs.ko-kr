@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6df3f16940a9478756cc1f268ad98b7c9d3f044e
-ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3b21a2efc67773f1762e422af5fe8e576b1a97db
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50001561"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843462"
 ---
 # <a name="using-your-android-device-with-intune-company-portal"></a>Intune 회사 포털에서 Android 디바이스 사용
 
@@ -34,22 +35,22 @@ ms.locfileid: "50001561"
 
 ## <a name="enrolling-in-intune-and-installing-the-company-portal"></a>Intune에 등록하고 회사 포털 설치
 
-- [Intune에서 장치 등록](enroll-your-device-in-Intune-android.md)
-- [회사 프로필을 만들고 Intune에서 장치 등록](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
-- [Intune에서 회사 포털 앱을 설치하고 장치를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [Intune에서 디바이스 등록](enroll-your-device-in-Intune-android.md)
+- [회사 프로필을 만들고 Intune에서 디바이스 등록](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+- [Intune에서 회사 포털 앱을 설치하고 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>디바이스가 Intune에 등록되어 있는 경우 수행할 수 있는 작업
 
-- [장치에서 관리되는 앱 사용](use-managed-apps-on-your-device-android.md)
-- [장치 암호화](encrypt-your-device-android.md)
+- [디바이스에서 관리되는 앱 사용](use-managed-apps-on-your-device-android.md)
+- [디바이스 암호화](encrypt-your-device-android.md)
 - [PIN 또는 암호 설정](set-your-pin-or-password-android.md)
 - [회사의 VPN(가상 사설망) 설치](install-your-companys-virtual-private-network-VPN-android.md)
-- [장치가 잠기기 전의 시간 설정](set-the-amount-of-time-before-your-device-is-locked-android.md)
+- [디바이스가 잠기기 전의 시간 설정](set-the-amount-of-time-before-your-device-is-locked-android.md)
   <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
-- [분실하거나 도난당한 장치 초기화(지우기)](reset-erase-your-device-cpwebsite.md)
+- [분실하거나 도난당한 디바이스 초기화(지우기)](reset-erase-your-device-cpwebsite.md)
 - [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-android.md)
-- [Intune에서 장치 등록 취소](unenroll-your-device-from-intune-android.md)
-- [사용 약관을 거부한 경우 장치 등록 취소](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
-- [Intune에서 장치 등록을 취소하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
-- [회사 포털 앱을 사용하여 Android 장치를 초기화하면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+- [Intune에서 디바이스 등록 취소](unenroll-your-device-from-intune-android.md)
+- [사용 약관을 거부한 경우 디바이스 등록 취소](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+- [Intune에서 디바이스 등록을 취소하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+- [회사 포털 앱을 사용하여 Android 디바이스를 초기화하면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
   <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

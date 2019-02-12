@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4b15200ad5fc4f8fb272618925ee758100ebde72
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829107"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851528"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>디바이스 등록 없이 관리되는 앱용 앱 구성 정책 추가
 
@@ -34,11 +35,11 @@ ms.locfileid: "52829107"
 3. **클라이언트 앱** 워크로드를 선택합니다.
 4. **관리** 그룹에서 **앱 구성 정책**을 선택한 다음 **추가**를 선택합니다.
 5. 다음 세부 정보를 설정합니다.
-    - **Name**  
+    - **이름**  
       Azure Portal에 표시되는 프로필의 이름입니다.
     - **설명**  
       Azure Portal에 표시되는 프로필의 설명입니다.
-    - **장치 등록 유형**  
+    - **디바이스 등록 유형**  
       **앱 관리**를 선택합니다.
 6. **연결된 앱**을 선택하여 구성할 앱을 선택합니다.  승인했으며 Intune과 동기화한 앱을 앱 목록에서 선택합니다.
 7. 앱에서 지원하는 각 구성 설정의 경우 **이름** 및 **값**을 입력하고 줄임표(**...**)를 선택합니다.  

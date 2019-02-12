@@ -16,12 +16,13 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324976"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086219"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 인터넷 액세스 관리
 
@@ -150,9 +151,9 @@ Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 애플리�
 ### <a name="before-you-start"></a>시작하기 전에
 
 - Azure AD 애플리케이션 프록시를 통해 내부 애플리케이션을 설정합니다.
-    - 애플리케이션 프록시를 구성하고 애플리케이션을 게시하려면 [설정 설명서](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started)를 참조하세요. 
+    - 애플리케이션 프록시를 구성하고 애플리케이션을 게시하려면 [설정 설명서](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)를 참조하세요. 
 - 최소 버전 1.2.0의 Managed Browser 앱을 사용해야 합니다.
-- Managed Browser 또는 Microsoft Edge 앱의 사용자에게는 [Intune 앱 보호 정책]( app-protection-policy.md)이 앱에 할당되어 있습니다.
+- Managed Browser 또는 Microsoft Edge 앱의 사용자에게는 [Intune 앱 보호 정책](app-protection-policy.md)이 앱에 할당되어 있습니다.
 
     > [!NOTE]
     > 업데이트된 애플리케이션 프록시 리디렉션 데이터는 Managed Browser 및 Microsoft Edge에 적용되는 데 최대 24시간이 걸릴 수 있습니다.

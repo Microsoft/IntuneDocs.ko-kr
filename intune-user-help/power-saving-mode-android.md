@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 33b6199c25e9e36b65dfe2ca819640fa614e68b6
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 98b8d4636b3f402b2b7246311e8027722fa01953
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148226"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838122"
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Android의 경우 배터리 최적화가 설정되어 있으면 Outlook에서 관리되는 메일을 동기화하지 않습니다.
 
@@ -56,7 +57,7 @@ Android 7.0 이상을 사용하는 Samsung 디바이스 등 다른 유형의 And
 또한 하위 버전의 Android가 포함된 Samsung 디바이스를 사용하는 경우 다음 단계에 따라 절전 모드에서 이러한 앱을 제거해야 합니다.
 
 1. **설정**을 엽니다.
-2. **장치 유지 관리** > **배터리** > **모니터링되지 않는 앱**을 탭합니다.
+2. **디바이스 유지 관리** > **배터리** > **모니터링되지 않는 앱**을 탭합니다.
 3. **앱 추가**를 탭합니다.
 4. 회사 포털 및 Outlook 앱을 선택하고 **완료**를 탭합니다.
 

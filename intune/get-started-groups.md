@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fcf6f3071e50304216a182a21dd542cace1b6390
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8b7e187bb182db0491e055ce3af3833d82e578de
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186463"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842408"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>사용자 및 데이터 액세스를 관리하는 그룹 만들기
 
@@ -45,7 +46,7 @@ Microsoft Intune은 Azure AD(Azure Active Directory)를 사용하여 회사 리�
 
 ## <a name="next-steps"></a>다음 단계
 
-[정책 시작](get-started-policies.md) - 사용자가 장치에서 권한이 없는 작업을 수행하지 않도록 하는 정책을 만듭니다.
+[정책 시작](get-started-policies.md) - 사용자가 디바이스에서 권한이 없는 작업을 수행하지 않도록 하는 정책을 만듭니다.
 
 ## <a name="learn-more"></a>자세한 정보
 

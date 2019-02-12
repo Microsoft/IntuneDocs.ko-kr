@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ac0a8b076fe6f21621826dec32f7aaa72eba88c7
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150924"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837019"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>암호가 회사 지원팀의 요구 사항을 충족하지 않음
 
@@ -28,9 +29,9 @@ ms.locfileid: "43150924"
 
 PIN 또는 암호를 설정하는 데 필요한 단계를 보려면 사용 중인 디바이스 유형과 일치하는 링크를 사용합니다.
 
-- [Android 장치 PIN 또는 암호 설정](set-your-pin-or-password-android.md)
-- [iOS 장치 암호 설정 또는 변경](set-or-change-your-passcode-ios.md)
-- [Windows 장치 암호 설정 또는 변경](set-or-change-your-password-windows.md)
+- [Android 디바이스 PIN 또는 암호 설정](set-your-pin-or-password-android.md)
+- [iOS 디바이스 암호 설정 또는 변경](set-or-change-your-passcode-ios.md)
+- [Windows 디바이스 암호 설정 또는 변경](set-or-change-your-password-windows.md)
 
 > [!NOTE]
 > 회사 지원팀 요구 사항을 충족하도록 암호를 설정하는 방법을 결정하는 데 문제가 있으면 회사 지원팀에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.
@@ -51,6 +52,6 @@ PIN 또는 암호를 설정하는 데 필요한 단계를 보려면 사용 중�
 
 PIN 또는 암호를 설정하는 데 필요한 단계를 보려면 사용 중인 디바이스 유형과 일치하는 링크를 사용합니다.
 
-- [Android 장치 PIN 또는 암호 설정](set-your-pin-or-password-android.md)
-- [iOS 장치 암호 설정 또는 변경](set-or-change-your-passcode-ios.md)
-- [Windows 장치 암호 설정 또는 변경](set-or-change-your-password-windows.md)
+- [Android 디바이스 PIN 또는 암호 설정](set-your-pin-or-password-android.md)
+- [iOS 디바이스 암호 설정 또는 변경](set-or-change-your-passcode-ios.md)
+- [Windows 디바이스 암호 설정 또는 변경](set-or-change-your-password-windows.md)

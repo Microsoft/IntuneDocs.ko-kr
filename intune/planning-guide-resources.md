@@ -15,12 +15,13 @@ ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 012dbd8f26ed6e3cd81a88396c7a1aa5d999d95e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1d76b3af1cb0a597877d80394e152eefdcbbaa51
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183777"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841303"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune 배포 계획을 위한 추가 리소스
 
@@ -57,4 +58,4 @@ Intune 배포 계획, 디자인 및 구현 프로세스 중 유용할 수 있는
 
 -   [Intune 사용자 의견](http://microsoftintune.uservoice.com/) - 특정 기능을 요청하거나 다른 고객들과 함께 유용한 기능에 투표를 하려는 경우 사용자 의견을 통해 Intune에 의견을 제공할 수 있습니다. Microsoft는 사용자 여러분의 의견을 항상 반영하기 위해 노력하고 있습니다.
 
--   [등록 가이드](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - 최종 사용자가 개인 장치를 Intune에 등록하는 의미를 쉽게 파악할 수 있도록 통신 계획의 일부분으로 수정하거나 그대로 사용할 수 있는 문서 집합입니다.
+-   [등록 가이드](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - 최종 사용자가 개인 디바이스를 Intune에 등록하는 의미를 쉽게 파악할 수 있도록 통신 계획의 일부분으로 수정하거나 그대로 사용할 수 있는 문서 집합입니다.

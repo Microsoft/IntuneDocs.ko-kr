@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 21257169e069a139ac94dcdecbe6074ab0778aeb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 776b1c6fcba6487a45133f486bf68bab312b86c9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179561"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848137"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Microsoft EMS(Enterprise Mobility + Security)를 사용하여 BYOD를 활성화하기 위한 기술 결정
 
 직원이 자신의 디바이스(BYOD)에서 원격으로 작업할 수 있도록 전략을 개발할 때는 BYOD 및 회사 데이터를 보호하는 방법을 활성화하는 시나리오에서 주요 결정을 해야 합니다. 다행히 EMS는 포괄적인 솔루션 집합에 필요한 모든 기능을 제공합니다.  
 
-이 항목에서는 회사 메일에 대한 BYOD 액세스를 활성화하는 간단한 사용 사례를 살펴봅니다. 전체 디바이스를 관리해야 하는지, 아니면 응용 프로그램만 관리해야 하는지에 중점을 둡니다. 둘 다 완전히 유효한 선택입니다.
+이 항목에서는 회사 메일에 대한 BYOD 액세스를 활성화하는 간단한 사용 사례를 살펴봅니다. 전체 장치를 관리해야 하는지, 아니면 애플리케이션만 관리해야 하는지에 중점을 둡니다. 둘 다 완전히 유효한 선택입니다.
 
 ## <a name="assumptions"></a>가정
 * Azure Active Directory 및 Microsoft Intune에 대한 기본 지식이 있음
@@ -35,20 +36,20 @@ Exchange Online에 [조건부 액세스](https://docs.microsoft.com/azure/active
 
 **WiFi/VPN** - 사용자가 생산성을 유지하기 위해 회사 연결 프로필이 필요한 경우 매끄럽게 구성할 수 있습니다.
 
-**응용 프로그램** - 사용자 장치에 앱 집합이 푸시되어야 하는 경우 매끄럽게 제공할 수 있습니다. 여기에는 Mobile Threat Defense 앱과 같이 보안 용도로 필요할 수 있는 애플리케이션이 포함됩니다.
+**애플리케이션** - 사용자 장치에 앱 집합이 푸시되어야 하는 경우 매끄럽게 제공할 수 있습니다. 여기에는 Mobile Threat Defense 앱과 같이 보안 용도로 필요할 수 있는 애플리케이션이 포함됩니다.
 
 **준수** - 일부 조직은 특정 MDM 컨트롤을 호출하는 규제 정책이나 기타 정책을 준수해야 합니다. 예를 들어 전체 디바이스를 암호화하거나 디바이스에 있는 모든 앱의 보고서를 생성하려면 MDM이 필요합니다.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>앱(MAM)만 관리하는 일반적인 이유
 MDM이 없는 MAM은 BYOD를 지원하는 조직에서 널리 사용됩니다. Exchange Online에 조건부 액세스 정책을 배포하여 Outlook Mobile(MAM 보호 기능 지원)에서 이메일에 액세스하도록 사용자를 유도할 수 있습니다. 개인 디바이스의 앱만 관리하려는 이유는 다음과 같습니다.
 
-**사용자 환경** - MDM 등록에는 여러 경고 프롬프트(플랫폼에 의해 적용됨)가 포함되어 있으며, 이로 인해 사용자가 개인 장치에서 메일에 액세스하지 않기로 결정할 수 있습니다. MAM은 MAM 보호 기능이 구현되어 있음을 알리기 위해 한 번만 팝업을 사용자에게 표시하므로 방해가 훨씬 더 적습니다.
+**사용자 환경** - MDM 등록에는 여러 경고 프롬프트(플랫폼에 의해 적용됨)가 포함되어 있으며, 이로 인해 사용자가 개인 디바이스에서 메일에 액세스하지 않기로 결정할 수 있습니다. MAM은 MAM 보호 기능이 구현되어 있음을 알리기 위해 한 번만 팝업을 사용자에게 표시하므로 방해가 훨씬 더 적습니다.
 
-**준수** - 일부 조직은 개인 장치에서 더 적은 관리 기능이 필요한 정책을 준수해야 합니다. 예를 들어 MAM은 디바이스에서 모든 데이터를 제거할 수 있는 MDM과 달리 앱에서만 회사 데이터를 제거할 수 있습니다.
+**준수** - 일부 조직은 개인 디바이스에서 더 적은 관리 기능이 필요한 정책을 준수해야 합니다. 예를 들어 MAM은 디바이스에서 모든 데이터를 제거할 수 있는 MDM과 달리 앱에서만 회사 데이터를 제거할 수 있습니다.
 
 ![모바일 디바이스의 디바이스 및 앱 관리를 비교하는 이미지](./media/byod-app-device-mgmt.png)
 
-[장치 관리 및 앱 관리 수명 주기](introduction-device-app-lifecycles.md)에 대해 자세히 알아보세요.
+[디바이스 관리 및 앱 관리 수명 주기](introduction-device-app-lifecycles.md)에 대해 자세히 알아보세요.
 
 ## <a name="mdm-vs-mam-capability-comparison"></a>MDM 및 MAM 기능 비교
 이미 언급한 대로 조건부 액세스는 디바이스를 등록하거나 Outlook Mobile 같은 관리되는 앱을 사용하도록 사용자를 유도할 수 있습니다. 두 경우 모두, 다음을 비롯한 다른 많은 조건을 적용할 수 있습니다.

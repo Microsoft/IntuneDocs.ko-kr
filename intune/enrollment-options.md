@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
 search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: 99a880145fc51ce6eca39bd4470157c80fa097c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cf3cc41bfb92c6e213121f0ace71eca276d6e8ab
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182871"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840062"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Intune에서 관리되는 디바이스에 대한 등록 옵션
 
@@ -50,8 +51,8 @@ IMEI(International Mobile Equipment Identity) 번호 또는 일련 번호를 표
 디바이스를 등록할 때 전화, PIN 또는 생체 인식 데이터와 같은 추가 확인 방법을 사용하도록 사용자에게 요구할 수 있습니다. [다단계 인증](multi-factor-authentication.md)에 대해 자세히 알아보세요.
 
 ## <a name="device-enrollment-manager"></a>디바이스 등록 관리자
-사용자를 디바이스 등록 관리자로 지정할 수 있습니다.  DEM 사용자는 단일 사용자 계정으로 많은 수의 모바일 디바이스를 등록할 수 있습니다. DEM(디바이스 등록 관리자) 계정은 최대 1,000개의 디바이스를 등록할 수 있습니다. [장치 등록 관리자](device-enrollment-manager-enroll.md)에 대해 자세히 알아보세요.
+사용자를 디바이스 등록 관리자로 지정할 수 있습니다.  DEM 사용자는 단일 사용자 계정으로 많은 수의 모바일 디바이스를 등록할 수 있습니다. DEM(디바이스 등록 관리자) 계정은 최대 1,000개의 디바이스를 등록할 수 있습니다. [디바이스 등록 관리자](device-enrollment-manager-enroll.md)에 대해 자세히 알아보세요.
 
 ## <a name="device-categories"></a>디바이스 범주
 
-디바이스 범주를 사용하여 정의된 범주에 따라 자동으로 디바이스를 그룹에 추가할 수 있습니다. 디바이스를 그룹으로 구성하면 더욱 쉽게 해당 디바이스를 관리할 수 있습니다. [장치 범주](device-group-mapping.md)에 대해 자세히 알아보세요.
+디바이스 범주를 사용하여 정의된 범주에 따라 자동으로 디바이스를 그룹에 추가할 수 있습니다. 디바이스를 그룹으로 구성하면 더욱 쉽게 해당 디바이스를 관리할 수 있습니다. [디바이스 범주](device-group-mapping.md)에 대해 자세히 알아보세요.

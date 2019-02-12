@@ -17,17 +17,18 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: d0b76962796043e7c7a8b04606bb9b4ff3b10bc8
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7ffef44468bbd51328bfd41e100028c53a746017
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031877"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851392"
 ---
 # <a name="you-need-to-update-your-android-device"></a>Android 디바이스를 업데이트해야 함
 
 [!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
-**설정** > **휴대폰 정보**를 탭하여 Android 장치를 업데이트합니다. __설정__ 섹션에서 __업데이트 확인__을 탭하고 사용 가능한 업데이트를 설치합니다.
+**설정** > **휴대폰 정보**를 탭하여 Android 디바이스를 업데이트합니다. __설정__ 섹션에서 __업데이트 확인__을 탭하고 사용 가능한 업데이트를 설치합니다.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

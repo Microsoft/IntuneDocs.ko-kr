@@ -17,15 +17,16 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150699"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837580"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 디바이스 등록 문제 해결
-[Intune에서 Windows 10 Mobile 또는 Windows 10 데스크톱 장치 등록](enroll-your-w10-phone-or-w10-pc-windows.md)의 단계를 수행했지만 여전히 회사 또는 학교 전자 메일/파일에 액세스할 수 없다면 다음 문제 해결 단계를 시도하세요.
+[Intune에서 Windows 10 Mobile 또는 Windows 10 데스크톱 디바이스 등록](enroll-your-w10-phone-or-w10-pc-windows.md)의 단계를 수행했지만 여전히 회사 또는 학교 전자 메일/파일에 액세스할 수 없다면 다음 문제 해결 단계를 시도하세요.
 
 1.  다음의 화면 두 개를 보고 내 디바이스에 표시되는 모습과 비슷한 것을 하나 찾습니다. 내 디바이스에 표시되는 화면의 단계를 따릅니다.
 

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 425c3a829975e8a4a42b7f9e0302701666124aee
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b20acc1c6b3fd64536b473013182d06e2bc04623
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146559"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834197"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Intune에서 Windows 8.1 또는 Windows RT 8.1 디바이스를 등록하는 방법
 
@@ -31,7 +32,7 @@ ms.locfileid: "43146559"
 
 Windows 8.1 또는 Windows RT 8.1 디바이스를 등록하려면:
 
-1.  장치에서 **설정** &gt; **PC 설정** &gt; **네트워크** &gt; **회사**를 탭합니다.
+1.  디바이스에서 **설정**&gt;**PC 설정**&gt;**네트워크**&gt;**회사**를 탭합니다.
 
     ![nav-to-workplace](./media/W81-1-workplacejoin.png)
 
@@ -43,7 +44,7 @@ Windows 8.1 또는 Windows RT 8.1 디바이스를 등록하려면:
 
     ![type-password](./media/W81-2-workplacesettings_signin.png)
 
-4.  **장치 관리 설정**에서 **켜기**를 탭합니다.
+4.  **디바이스 관리 설정**에서 **켜기**를 탭합니다.
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)
 

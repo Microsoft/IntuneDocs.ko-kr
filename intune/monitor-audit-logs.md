@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
-ms.openlocfilehash: d9ecfa44e2619e5e123c9e8af169b6a8a95ee466
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9e7269eb6e396557a6bc19daa371a10be7154866
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183896"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844635"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune 활동에 대한 감사 로그
 감사 로그는 Microsoft Intune에서 변경을 생성하는 활동 레코드를 제공합니다. 만들기, 업데이트(편집), 삭제 및 할당 작업이나 원격 태스크는 검토할 수 있는 감사 이벤트를 생성합니다. 대부분의 Intune 워크로드에 대한 감사 로그를 검토할 수 있습니다. 감사는 기본적으로 모든 고객에 대해 사용 가능하며 사용 불가능하게 할 수 없습니다. 감사 이벤트는 2017년 12월의 기능 릴리스 날짜에 기록되기 시작했으며, 이전 이벤트는 사용할 수 없습니다.
@@ -32,7 +33,7 @@ ms.locfileid: "52183896"
 각 Intune 워크로드에 대한 모니터링 그룹에서 감사 로그를 검토할 수 있습니다.  
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 감사 로그를 검토하려는 워크로드를 선택합니다(예: **장치**).
+3. **Intune** 창에서 감사 로그를 검토하려는 워크로드를 선택합니다(예: **디바이스**).
 4. 워크로드에 대한 **모니터링** 그룹에서 **감사 로그**를 선택합니다.
 
 ## <a name="review-audit-events"></a>감사 이벤트 검토

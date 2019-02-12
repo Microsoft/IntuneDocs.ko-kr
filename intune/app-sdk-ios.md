@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: d484c227b33cc364d98ec4843894f447ae2ea8ab
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eaffed2af38e269000dd951cec536e1f80be705f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657834"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841354"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -443,7 +444,7 @@ Intune을 사용하여 IT 관리자는 관리되는 앱이 데이터를 저장�
 
 클라우드 저장소 또는 로컬 위치에 관리되는 데이터를 저장하려면 먼저 앱에서 `isSaveToAllowedForLocation` API를 사용하여 IT 관리자가 해당 위치로의 데이터 저장을 허용했는지 확인해야 합니다.
 
-`isSaveToAllowedForLocation` API를 사용하는 경우 앱은 저장소 위치에 UPN(사용 가능한 경우)을 전달해야 합니다.
+`isSaveToAllowedForLocation` API를 사용하는 경우 앱은 스토리지 위치에 UPN(사용 가능한 경우)을 전달해야 합니다.
 
 ### <a name="supported-save-locations"></a>지원되는 저장 위치
 

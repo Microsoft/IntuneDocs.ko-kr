@@ -15,19 +15,20 @@ ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24b59e5b60f2a8dce0522c689463ac095617052c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 68c22c8fb966fe3ad4e821dd7e61510e0a519a82
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185664"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835711"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Intune 관리 iOS 디바이스에서 현재 사용자 로그아웃
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**현재 사용자 로그아웃** 작업은 공유 iPad 장치의 현재 사용자를 로그아웃시킵니다. 
+**현재 사용자 로그아웃** 작업은 공유 iPad 디바이스의 현재 사용자를 로그아웃시킵니다. 
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
@@ -41,8 +42,8 @@ ms.locfileid: "52185664"
 
 1.  Azure 포털에 로그인합니다.
 2.  **추가 서비스** > **모니터링 + 관리** > **Intune**을 선택합니다.
-3.  **Intune** 블레이드에서 **장치**를 선택합니다.
-4.  **장치 및 그룹** 블레이드에서 **모든 장치**를 선택합니다.
+3.  **Intune** 블레이드에서 **디바이스**를 선택합니다.
+4.  **디바이스 및 그룹** 블레이드에서 **모든 디바이스**를 선택합니다.
 5.  관리하는 디바이스 목록에서 iOS 디바이스를 선택한 다음 **현재 사용자 로그아웃** 디바이스 원격 작업을 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계

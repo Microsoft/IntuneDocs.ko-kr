@@ -14,18 +14,19 @@ ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 68ffaf8788a392fcf592b426fc04da1351685e05
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ced5bf8a982e2dbf65ff0577ca2f17529febcb62
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189333"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851511"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Intune을 사용하여 디바이스 원격 잠금
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**원격 잠금** 장치 작업을 수행하면 장치가 잠깁니다. 디바이스의 잠금을 해제하려면 디바이스 소유자가 암호를 입력해야 합니다. PIN 또는 암호 설정이 있는 디바이스를 원격으로 잠글 수 있습니다. PIN 또는 암호가 없는 디바이스를 원격으로 잠글 수 없습니다.
+**원격 잠금** 디바이스 작업을 수행하면 디바이스가 잠깁니다. 디바이스의 잠금을 해제하려면 디바이스 소유자가 암호를 입력해야 합니다. PIN 또는 암호 설정이 있는 디바이스를 원격으로 잠글 수 있습니다. PIN 또는 암호가 없는 디바이스를 원격으로 잠글 수 없습니다.
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
@@ -49,7 +50,7 @@ ms.locfileid: "52189333"
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링한 다음, **Microsoft Intune**을 선택합니다.
-3. **장치** > **모든 장치**를 선택합니다.
+3. **디바이스** > **모든 디바이스**를 선택합니다.
 4. 디바이스 목록에서 디바이스를 선택한 다음, **원격 잠금** 작업을 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계

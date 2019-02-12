@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c01e1d955fd8442e9d1ba24ed27164bb3c6bc694
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bd3fc85b0d5cf55407daca1dee5f4c20ba22f498
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180014"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843241"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>사용 사례 시나리오 요구 사항 확인
 
@@ -33,7 +34,7 @@ ms.locfileid: "52180014"
 
 다음은 조직 사용 사례 요구 사항의 몇 가지 예로, 각 사용 사례 및 하위 사용 사례 시나리오, 조직 그룹 및 모바일 디바이스 플랫폼에 대한 다양한 요구 사항 집합이 나와 있습니다. 아래 표를 사용하여 조직의 사용 사례 요구 사항을 입력할 수도 있습니다.
 
-| **사용 사례** | **하위 사용 사례** | **그룹** | **장치 플랫폼** | **요구 사항** |
+| **사용 사례** | **하위 사용 사례** | **그룹** | **디바이스 플랫폼** | **요구 사항** |
 |:---:|:---:|:---:|:---:|:---:|
 | 회사 | 정보 근로자 | HR, 재무 | iOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |                                                          
 | 회사 | 임원 | HR, 재무 | iOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |                                                         
@@ -52,7 +53,7 @@ ms.locfileid: "52180014"
     - Exchange Online/온-프레미스에 대한 조건부 액세스
     - Outlook 앱 보호 정책
 
-- **장치 설정**
+- **디바이스 설정**
     - 4자 또는 6자를 사용하여 PIN 설정
     - 클라우드 백업 제한
 

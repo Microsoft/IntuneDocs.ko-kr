@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 22951d6e129b50d37fb16d865f0b9ad9aada012f
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ec625b2ef7f968f8098a8288832c62d3510c4906
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032285"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837658"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune에 iOS 디바이스 등록
 
@@ -32,7 +33,7 @@ Intune 관리자는 iOS 디바이스에 대한 등록을 사용하도록 설정�
 ## <a name="prerequisites-for-ios-enrollment"></a>iOS 등록을 위한 필수 구성 요소
 iOS 디바이스를 사용하도록 설정하기 전에 다음 단계를 완료해야 합니다.
 - [Intune 설정](setup-steps.md) - 이러한 단계에서는 Intune 인프라를 설정합니다. 특히 디바이스를 등록하려면 [MDM 기관을 설정](mdm-authority-set.md)해야 합니다.
-- [Apple MDM 푸시 인증서 가져오기](apple-mdm-push-certificate-get.md) - Apple의 경우 iOS 및 macOS 장치 관리를 사용하려면 인증서가 필요합니다.
+- [Apple MDM 푸시 인증서 가져오기](apple-mdm-push-certificate-get.md) - Apple의 경우 iOS 및 macOS 디바이스 관리를 사용하려면 인증서가 필요합니다.
 
 ## <a name="user-owned-ios-devices-byod"></a>사용자 소유 iOS 디바이스(BYOD)
 
@@ -46,10 +47,10 @@ iOS 디바이스를 사용하도록 설정하기 전에 다음 단계를 완료�
 - Apple Configurator 설치 도우미 등록
 - Apple Configurator 직접 등록
 
-[장치 등록 관리자](device-enrollment-manager-enroll.md) 계정을 사용하여 회사 소유 iOS 장치를 등록할 수도 있습니다.
+[디바이스 등록 관리자](device-enrollment-manager-enroll.md) 계정을 사용하여 회사 소유 iOS 디바이스를 등록할 수도 있습니다.
 
 ## <a name="device-enrollment-program"></a>디바이스 등록 프로그램
-조직은 Apple의 DEP(디바이스 등록 프로그램)를 통해 iOS 디바이스를 구매할 수 있습니다. DEP를 통해 등록 프로필을 "무선"으로 배포하여 디바이스를 관리할 수 있습니다. [장치 등록 프로그램](device-enrollment-program-enroll-ios.md)에 대해 자세히 알아보세요.
+조직은 Apple의 DEP(디바이스 등록 프로그램)를 통해 iOS 디바이스를 구매할 수 있습니다. DEP를 통해 등록 프로필을 "무선"으로 배포하여 디바이스를 관리할 수 있습니다. [디바이스 등록 프로그램](device-enrollment-program-enroll-ios.md)에 대해 자세히 알아보세요.
 
 ## <a name="apple-school-manager"></a>Apple School Manager
 Apple School Manager는 학교용 디바이스 구매 및 등록 프로그램입니다. DEP처럼 프로필을 배포하여 디바이스를 관리에 등록할 수 있습니다. [Apple School Manager](apple-school-manager-set-up-ios.md)에 대해 자세히 알아보세요.
@@ -70,7 +71,7 @@ Mac 컴퓨터에서 실행되는 Apple Configurator를 사용하여 iOS 디바�
   - 메일 및 회사 데이터에 대한 조건부 액세스
   - 회사 포털 앱
 
-**사용자가 사용자 선호도를 사용하여 회사 소유의 iOS 장치를 등록하는 방법**
+**사용자가 사용자 선호도를 사용하여 회사 소유의 iOS 디바이스를 등록하는 방법**
 1. 사용자가 디바이스를 켜면 설정 도우미를 완료하라는 메시지가 표시됩니다. 
 2. 설정을 완료한 후에 사용자에게는 Apple ID를 묻는 메시지가 표시됩니다. 디바이스에서 회사 포털을 설치할 수 있도록 Apple ID를 제공해야 합니다. 
 3. iOS 디바이스는 앱 스토어에서 회사 포털 앱을 자동으로 설치합니다.

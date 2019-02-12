@@ -15,12 +15,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 103f73d91613fa80190a8c4fcb75becb3a843049
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7e657fa44c6dc2282bc79f809165418448eebff0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860948"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835829"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune을 사용하는 일반적인 방법
 
@@ -33,7 +34,7 @@ ms.locfileid: "52860948"
 아래에서는 Intune에 따른 가장 일반적인 여섯 가지 시나리오 및 각 항목을 계획하고 배포하는 방법에 대한 자세한 정보의 링크를 간단히 소개합니다.
 
 >[!NOTE]
->Microsoft IT에서 Intune을 사용하여 회사 데이터 보안을 유지하면서 Microsoft 직원이 모바일 디바이스에서 회사 리소스에 액세스할 수 있는 방법이 궁금한가요? [이 기술 사례 연구를 참고하여](https://www.microsoft.com/itshowcase/Article/Content/588) Microsoft IT에서 Intune 및 다른 서비스를 사용하여 ID, 장치, 앱 및 데이터를 관리하는 방법을 자세히 확인할 수 있습니다.  
+>Microsoft IT에서 Intune을 사용하여 회사 데이터 보안을 유지하면서 Microsoft 직원이 모바일 디바이스에서 회사 리소스에 액세스할 수 있는 방법이 궁금한가요? [이 기술 사례 연구를 참고하여](https://www.microsoft.com/itshowcase/Article/Content/588) Microsoft IT에서 Intune 및 다른 서비스를 사용하여 ID, 디바이스, 앱 및 데이터를 관리하는 방법을 자세히 확인할 수 있습니다.  
 
 >[!IMPORTANT]
 >최근 iOS 디바이스에 있었던 "Trident" 맬웨어 공격을 감안하여 모바일 디바이스가 최신 상태인지 확인하려고 합니다. 그래서 [Microsoft Intune을 사용하여 모바일 디바이스가 최신 상태로 유지](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)라는 블로그 글을 게시했습니다. 이 게시물은 Intune이 사용자 디바이스를 안전하고 최신 상태로 유지하도록 도와주는 다양한 방법에 대한 정보를 제공합니다.

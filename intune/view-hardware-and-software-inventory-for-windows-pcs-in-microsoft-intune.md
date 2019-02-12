@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 4808c30b1d69191d9082ce42fe38b10110d74922
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f2bdb86913610f1d1317269a7778afc796db4fe8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188222"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835523"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Windows PC에 대한 하드웨어 및 소프트웨어 인벤토리 보기
 
@@ -57,7 +58,7 @@ Intune은 Intune 소프트웨어 클라이언트를 사용하여 PC로 관리하
 
 ## <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>현재 컴퓨터 인벤토리를 확인하기 위해 새로 고치려면
 
-1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** &gt; **모든 장치**(또는 인벤토리를 새로 고치려는 PC가 포함된 다른 그룹)를 선택합니다.
+1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹**&gt;**모든 디바이스**(또는 인벤토리를 새로 고치려는 PC가 포함된 다른 그룹)를 선택합니다.
 
 2.  PC를 선택하거나, **Ctrl** 키를 누른 상태에서 여러 PC를 선택합니다.
 
@@ -65,7 +66,7 @@ Intune은 Intune 소프트웨어 클라이언트를 사용하여 PC로 관리하
 
 4.  작업 상태를 확인하려면 페이지의 오른쪽 아래 모서리에 있는 **원격 작업**을 선택합니다.
 
-    **작업 상태** 대화 상자에는 현재 원격 작업, 작업 상태, 장치 이름 및 보고된 모든 오류 목록이 표시되고, 문제 해결 정보 링크도 제공됩니다.
+    **작업 상태** 대화 상자에는 현재 원격 작업, 작업 상태, 디바이스 이름 및 보고된 모든 오류 목록이 표시되고, 문제 해결 정보 링크도 제공됩니다.
 
 ### <a name="see-also"></a>참고 항목
 

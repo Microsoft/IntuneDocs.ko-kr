@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: bfb7186d7dcd764237ba4dd00fc12bd9e666f67e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 24a3c53cb9aa26277ac7aef0ed643c9492e6e401
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187415"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846522"
 ---
 # <a name="retire-a-windows-pc"></a>Windows PC 사용 중지
 
@@ -29,7 +30,7 @@ ms.locfileid: "52187415"
 
 데스크톱에서 Intune 소프트웨어 클라이언트를 실행하여 PC로 관리하는 데스크톱 사용을 중지하려면 다음 단계를 따르세요. PC를 사용 중지하면 Intune 관리에서 PC가 제거됩니다. Intune에서 PC를 초기화하여 원래 공장 설정으로 되돌릴 수 없습니다.
 
-1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** &gt; **모든 장치**(또는 사용 중지하려는 PC가 포함된 다른 그룹)를 선택합니다.
+1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹**&gt;**모든 디바이스**(또는 사용 중지하려는 PC가 포함된 다른 그룹)를 선택합니다.
 
 2.  사용 중지하려는 디바이스를 선택한 후 **사용 중지/초기화**를 선택합니다.
 

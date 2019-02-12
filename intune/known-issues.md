@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 985c3b2cf3de712e5441f72c3a9f52da6e482fcd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112377"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842425"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune의 알려진 문제
 
@@ -90,7 +91,7 @@ iOS 디바이스의 경우 새로운 Cisco AnyConnect 클라이언트에서 NAC(
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>macOS Sierra 디바이스에서 숫자 암호 유형 사용
 
-현재는 macOS Sierra 장치에 대한 장치 제한 프로필에서 **숫자** **필수 암호 유형**을 선택하면 암호가 **영숫자**로 적용됩니다. 이러한 디바이스에 숫자 암호를 사용하려는 경우 이 설정을 구성하지 마세요.
+현재는 macOS Sierra 디바이스에 대한 디바이스 제한 프로필에서 **숫자****필수 암호 유형**을 선택하면 암호가 **영숫자**로 적용됩니다. 이러한 디바이스에 숫자 암호를 사용하려는 경우 이 설정을 구성하지 마세요.
 이 문제는 향후 macOS 버전에서 해결될 수도 있습니다.
 
 이러한 설정에 대한 자세한 내용은 [Microsoft Intune의 macOS 디바이스 제한 설정](device-restrictions-macos.md)을 참조하세요.

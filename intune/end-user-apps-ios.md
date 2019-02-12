@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b8694596851c231c4c7d1a8a5edd448a7506f829
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 52adb8b21189e4c0cf39f1b18f95b7ba68ff97f4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186310"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833738"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS 사용자가 앱을 얻는 방법
 
@@ -28,7 +29,7 @@ ms.locfileid: "52186310"
 
 이 정보를 사용하여 최종 사용자가 Microsoft Intune을 통해 배포하는 앱을 얻는 방법과 위치를 이해합니다.
 
-**필요한 앱**--플랫폼에 따라 최소한의 사용자 작업으로 장치에 설치되며, 관리자에게 필요한 앱입니다.
+**필요한 앱**--플랫폼에 따라 최소한의 사용자 작업으로 디바이스에 설치되며, 관리자에게 필요한 앱입니다.
 
 **사용 가능한 앱**--회사 포털 앱 목록에 제공되며, 사용자가 필요에 따라 선택하여 설치할 수 있는 앱입니다.
 

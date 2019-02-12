@@ -15,12 +15,13 @@ ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b80dfeece38d5cbedd09ca0f7a05d5d867f6cfaa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8fc349636dc9bccc64782dec2c8d54d6f179bfc3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185154"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837614"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune을 사용하여 감독된 iOS 디바이스에서 활성화 잠금 무시
 
@@ -59,8 +60,8 @@ Intune에서는 iOS 8.0 이상을 실행하는 감독된 디바이스의 활성�
 ## <a name="before-you-start"></a>시작하기 전에
 디바이스에서 활성화 잠금을 무시하려면 다음 지침을 따라 사용하도록 설정해야 합니다.
 
-1. [장치 제한 설정을 구성하는 방법](/intune-azure/configure-devices/how-to-configure-device-restrictions)의 정보를 참조하여 iOS용 Intune 장치 제한 프로필을 구성합니다.
-2. [iOS에 대한 장치 제한 설정](device-restrictions-ios.md)에서 **일반** 설정 아래의 **활성화 잠금** 옵션을 사용합니다.
+1. [디바이스 제한 설정을 구성하는 방법](/intune-azure/configure-devices/how-to-configure-device-restrictions)의 정보를 참조하여 iOS용 Intune 디바이스 제한 프로필을 구성합니다.
+2. [iOS에 대한 디바이스 제한 설정](device-restrictions-ios.md)에서 **일반** 설정 아래의 **활성화 잠금** 옵션을 사용합니다.
 3. 프로필을 저장한 다음 활성화 잠금 무시를 관리하려는 디바이스에 [할당](device-profile-assign.md)합니다.
 
 
@@ -73,8 +74,8 @@ Intune **활성화 잠금 무시** 원격 디바이스 작업으로 사용자의
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스** > **Intune**을 선택합니다.
-3. **Intune** 블레이드에서 **장치**를 선택합니다.
-4. **장치** 블레이드에서 **모든 장치**를 선택합니다.
+3. **Intune** 블레이드에서 **디바이스**를 선택합니다.
+4. **디바이스** 블레이드에서 **모든 디바이스**를 선택합니다.
 5. 관리하는 디바이스 목록에서 **활성화 잠금 무시** 디바이스 원격 작업을 선택합니다.
 6. 디바이스의 "하드웨어" 섹션으로 이동한 다음, **조건부 액세스**에서 **활성화 잠금 무시 코드** 값을 복사합니다.
 
@@ -87,4 +88,4 @@ Intune **활성화 잠금 무시** 원격 디바이스 작업으로 사용자의
 
 ## <a name="next-steps"></a>다음 단계
 
-**장치 관리** 워크로드를 통해 장치 세부 정보 페이지에서 잠금 해제 요청의 상태를 검사할 수 있습니다.
+**디바이스 관리** 워크로드를 통해 디바이스 세부 정보 페이지에서 잠금 해제 요청의 상태를 검사할 수 있습니다.

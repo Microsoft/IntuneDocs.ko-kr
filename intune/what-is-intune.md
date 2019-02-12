@@ -15,12 +15,13 @@ ms.reviewer: pmay
 ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: ed87f9d2554972a0affd9c93eca1804c460e6144
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 021c2e1e86219310eb34c4bba54d903246dbf28e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860982"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835031"
 ---
 # <a name="what-is-microsoft-intune"></a>Microsoft Intune이란?
 
@@ -34,10 +35,10 @@ Intune은 회사 데이터를 보호하면서 직원이 생산성을 높일 수 
 
 ## <a name="common-business-problems-that-intune-helps-solve"></a>Intune에서 해결할 수 있는 일반적인 비즈니스 문제
 
-* [모바일 장치에서 액세스할 수 있도록 온-프레미스 메일 및 데이터 보호](common-scenarios.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
-* [모바일 장치에서 안전하게 액세스할 수 있도록 Office 365 메일 및 데이터 보호](common-scenarios.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
+* [모바일 디바이스에서 액세스할 수 있도록 온-프레미스 메일 및 데이터 보호](common-scenarios.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
+* [모바일 디바이스에서 안전하게 액세스할 수 있도록 Office 365 메일 및 데이터 보호](common-scenarios.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [직원에게 회사 소유의 휴대폰 발급](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
-* [모든 직원에게 BYOD(Bring Your Own Device) 또는 개인 장치 프로그램 제공](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
+* [모든 직원에게 BYOD(Bring Your Own Device) 또는 개인 디바이스 프로그램 제공](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
 * [직원이 관리되지 않는 공용 키오스크에서 Office 365에 안전하게 액세스하도록 지원](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 * [작업자에게 사용이 제한된 공유 태블릿 발급](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
@@ -62,7 +63,7 @@ Intune 디바이스 관리는 모바일 운영 체제에서 사용할 수 있는
 * 디바이스의 회사 표준 규정 준수에 대한 보고 및 측정
 * 관리되는 디바이스에서 회사 데이터 제거  
 
-**회사 데이터에 대한 액세스 제어**가 장치 관리 기능이라고 생각하는 경우가 종종 있습니다. 하지만 이것은 모바일 운영 체제가 제공하는 기능이 아니라 ID 공급자가 제공하는 기능입니다. Microsoft의 ID 공급자는 ID 및 액세스 관리 시스템인 Azure AD(Active Directory)입니다.  
+**회사 데이터에 대한 액세스 제어**가 디바이스 관리 기능이라고 생각하는 경우가 종종 있습니다. 하지만 이것은 모바일 운영 체제가 제공하는 기능이 아니라 ID 공급자가 제공하는 기능입니다. Microsoft의 ID 공급자는 ID 및 액세스 관리 시스템인 Azure AD(Active Directory)입니다.  
 
 Intune은 Azure AD와 통합되어 광범위한 액세스 제어 시나리오를 사용합니다. 예를 들어 모바일 디바이스가 Exchange와 같은 회사 서비스에 액세스하려면 Intune에서 정의한 회사 표준을 준수하도록 요구할 수 있습니다. 마찬가지로, 특정 모바일 앱 집합에서만 특정 회사 서비스를 사용하도록 제한할 수 있습니다. 예를 들어 Exchange Online에는 Outlook 또는 Outlook Mobile에서만 액세스하도록 제한할 수 있습니다.
 

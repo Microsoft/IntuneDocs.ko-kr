@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4109c437ae5a096c78c19aef489218cf7286eb01
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c7178ae7231586e781766adb1fea45b375a76920
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032336"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842051"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API를 사용하여 SCEP에 대한 타사 CA를 Intune에 추가
 
@@ -287,10 +288,10 @@ Throws:
 1. [Intune 평가판 계정](account-sign-up.md)을 설정합니다.
 2. (이 문서에서) [Azure Portal의 SCEP 서버](#onboard-scep-server-in-azure)를 등록합니다.
 3. SCEP 서버를 등록할 때 생성된 ID와 키를 사용하여 [SCEP 서버를 구성](certificates-scep-configure.md)합니다.
-4. [시나리오 테스트 매트릭스](https://github.com/Microsoft/Intune-Resource-Access/blob/develop/src/CsrValidation/doc/TestMatrix.csv)에서 시나리오를 테스트하려면 [장치를 등록](device-enrollment.md)합니다.
+4. [시나리오 테스트 매트릭스](https://github.com/Microsoft/Intune-Resource-Access/blob/develop/src/CsrValidation/doc/TestMatrix.csv)에서 시나리오를 테스트하려면 [디바이스를 등록](device-enrollment.md)합니다.
 5. 테스트 인증 기관에 대한 [신뢰할 수 있는 루트 인증서 프로필을 생성](certificates-scep-configure.md)합니다.
 6. SCEP 프로필을 생성하여 [시나리오 테스트 매트릭스](https://github.com/Microsoft/Intune-Resource-Access/blob/develop/src/CsrValidation/doc/TestMatrix.csv)에 나열된 시나리오를 테스트합니다.
-7. 해당 장치를 등록한 사용자에게 [프로필을 할당](device-profile-assign.md)합니다.
+7. 해당 디바이스를 등록한 사용자에게 [프로필을 할당](device-profile-assign.md)합니다.
 8. 디바이스가 Intune과 동기화될 때까지 기다립니다. 또는 수동으로 [디바이스를 동기화](device-sync.md)합니다.
 9. 신뢰할 수 있는 루트 인증서 및 SCEP [프로필이 디바이스에 배포되었는지](device-profile-monitor.md) 확인합니다.
 10. 모든 디바이스에 신뢰할 수 있는 루트 인증서가 설치되어 있는지 확인합니다.
@@ -302,5 +303,5 @@ Throws:
 
 - [타사 CA 추가 개요](certificate-authority-add-scep-overview.md)
 - [Intune 설정](setup-steps.md)
-- [장치 등록](device-enrollment.md)
+- [디바이스 등록](device-enrollment.md)
 - [SCEP 인증서 프로필 구성](certificates-scep-configure.md#create-a-scep-certificate-profile)(이 시나리오에서는 Microsoft NDES Server\Connector 설치가 사용되지 않음)

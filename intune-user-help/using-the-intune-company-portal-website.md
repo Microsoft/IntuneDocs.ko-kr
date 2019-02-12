@@ -17,27 +17,28 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8275a1f542badaadc5248826c5d1d3a8f24d56c3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1119c9602d2577f8041ad528d012adf9652dc641
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149498"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837376"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune 회사 포털 웹 사이트 사용
-[회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 사용하여 관리되는 장치를 보고, 편집하고, 추가 및 제거합니다.
+[회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 사용하여 관리되는 디바이스를 보고, 편집하고, 추가 및 제거합니다.
 
 회사 포털 웹 사이트에서 다음 작업을 수행할 수 있습니다.
 
--   [장치 이름 바꾸기](rename-your-device-cpwebsite.md)
+-   [디바이스 이름 바꾸기](rename-your-device-cpwebsite.md)
 
--   [장치 제거](remove-your-device-cpwebsite.md)
+-   [디바이스 제거](remove-your-device-cpwebsite.md)
 
--   [장치 재설정](reset-erase-your-device-cpwebsite.md)
+-   [디바이스 재설정](reset-erase-your-device-cpwebsite.md)
 
--   [장치 암호 재설정](reset-your-passcode-cpwebsite.md)
+-   [디바이스 암호 재설정](reset-your-passcode-cpwebsite.md)
 
--   [장치 원격 잠금](remote-lock-your-device-cpwebsite.md)
+-   [디바이스 원격 잠금](remote-lock-your-device-cpwebsite.md)
 
 -   회사 지원팀의 연락처 정보를 구성한 경우 찾기
 

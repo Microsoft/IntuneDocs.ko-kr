@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 44aad280f0b8714adbb3c8a1e109b68a5af46d4d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690685"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838838"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>관리 디바이스를 사용하여 회사 또는 학교 리소스에 액세스
 Microsoft Intune은 조직이 디바이스, 앱 및 이메일에 대한 액세스를 관리할 수 있는 디바이스 관리 시스템입니다. 디바이스 관리를 사용하면 사용자, 기타 직원 및 학생이 사실상 어디에서나 거의 모든 디바이스에서 사용자 작업 정보에 액세스할 수 있습니다. 원격으로 작업하는 경우에도 사용자 및 사용자 조직의 정보를 안전하게 유지합니다.

@@ -15,12 +15,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 41ae1ffc17eee93b45f00e4eef5590f6a5d0b7b4
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28f6cfe3b97381cd60bf485b8110cfa602ea9133
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112513"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838601"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune에서 iOS 디바이스에 대한 디바이스 준수 정책 추가
 
@@ -35,8 +36,8 @@ Intune iOS 디바이스 준수 정책은 iOS 디바이스가 준수하도록 충
 | **정책 설정** | **iOS 8.0 이상** |
 | --- | --- |
 | **PIN 또는 암호 구성** | 재구성됨 |
-| **장치 암호화** | 재구성됨(PIN 설정) |
-| **무단 해제 또는 루팅된 장치** | 격리됨(설정 아님)
+| **디바이스 암호화** | 재구성됨(PIN 설정) |
+| **무단 해제 또는 루팅된 디바이스** | 격리됨(설정 아님)
 | **전자 메일 프로필** | 격리됨 |
 |**최소 OS 버전** | 격리됨 |
 | **최대 OS 버전** | 격리됨 |
@@ -44,9 +45,9 @@ Intune iOS 디바이스 준수 정책은 iOS 디바이스가 준수하도록 충
 
 ---------------------------
 
-**재구성됨** = 장치 운영 체제에서 준수를 적용하도록 요구합니다. (예를 들어 사용자에게 PIN을 설정하도록 강제합니다.)
+**재구성됨** = 디바이스 운영 체제에서 준수를 적용하도록 요구합니다. (예를 들어 사용자에게 PIN을 설정하도록 강제합니다.)
 
-**격리됨** = 장치 운영 체제에서 준수를 적용하도록 요구하지 않습니다. (예를 들어, Android 디바이스에서 사용자에게 디바이스를 암호화하도록 강제하지 않습니다.) 디바이스가 호환되지 않으면 다음 작업이 수행됩니다.
+**격리됨** = 디바이스 운영 체제에서 준수를 적용하도록 요구하지 않습니다. (예를 들어, Android 디바이스에서 사용자에게 디바이스를 암호화하도록 강제하지 않습니다.) 디바이스가 호환되지 않으면 다음 작업이 수행됩니다.
 
 - 조건부 액세스 정책이 사용자에게 적용될 경우 디바이스가 차단됩니다.
 - 회사 포털은 모든 준수 문제에 대해 사용자에게 알립니다.
@@ -125,5 +126,5 @@ Intune iOS 디바이스 준수 정책은 iOS 디바이스가 준수하도록 충
 사용자에게 정책을 적용했습니다. 정책의 대상이 되는 사용자가 사용하는 디바이스에 대한 규정 준수 여부가 평가됩니다.
 
 ## <a name="next-steps"></a>다음 단계
-[메일 자동화 및 비규격 장치에 대한 작업 추가](actions-for-noncompliance.md)  
-[Intune 장치 준수 정책 모니터링](compliance-policy-monitor.md)
+[메일 자동화 및 비규격 디바이스에 대한 작업 추가](actions-for-noncompliance.md)  
+[Intune 디바이스 준수 정책 모니터링](compliance-policy-monitor.md)

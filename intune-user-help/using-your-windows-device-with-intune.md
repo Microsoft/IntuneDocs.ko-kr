@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a28f12bc57fdf134554a65518f24a79287058eeb
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866340"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844550"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Intune 회사 포털에서 Windows 디바이스 사용
 
@@ -45,29 +46,29 @@ ms.locfileid: "48866340"
 [Windows 10 Holographic](https://www.microsoft.com/hololens) 등의 기타 Windows 버전이 회사 포털에서 지원됩니다. 그렇지만 이러한 버전은 용도가 매우 한정적이기 때문에 이 문서에서 다루지 않습니다.
 
 ## <a name="set-up-your-device-in-the-company-portal"></a>회사 포털에서 디바이스 설정
-- [회사 포털에서 내 Windows 장치 관리](enroll-your-device-in-intune-windows.md)
-- [ 장치를 *관리*한다는 것은 무엇을 의미할까요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [회사는 내 장치에서 어떤 정보를 볼 수 있나요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
-- [내 장치 암호화](encrypt-your-device-windows.md)
+- [회사 포털에서 내 Windows 디바이스 관리](enroll-your-device-in-intune-windows.md)
+- [ 디바이스를 *관리*한다는 것은 무엇을 의미할까요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+- [회사는 내 디바이스에서 어떤 정보를 볼 수 있나요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [내 디바이스 암호화](encrypt-your-device-windows.md)
 - [장치 암호 설정 또는 변경](set-or-change-your-password-windows.md)
 
 ## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>디바이스를 관리에 등록한 후 수행할 수 있는 작업
 - [수동으로 장치 동기화](sync-your-device-manually-windows.md)
 - [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-windows.md)
 - [분실 또는 도난당한 장치에서 데이터 지우기](reset-erase-your-device-cpwebsite.md)
-- [회사 포털에서 장치를 초기화하면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
-- [관리에서 내 장치 제거](unenroll-your-device-from-intune-windows.md)
-- [회사 포털에서 내 장치를 제거하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+- [회사 포털에서 디바이스를 초기화하면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [관리에서 내 디바이스 제거](unenroll-your-device-from-intune-windows.md)
+- [회사 포털에서 내 디바이스를 제거하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
 ## <a name="troubleshoot-and-maintain-your-device"></a>디바이스 문제 해결 및 유지 관리
 * [액세스 지점 제한 해결](resolve-access-point-restrictions.md)
-* [내 Windows 10 장치가 등록되지 않음](troubleshoot-your-windows-10-device-windows.md)
+* [내 Windows 10 디바이스가 등록되지 않음](troubleshoot-your-windows-10-device-windows.md)
 * [내 Windows 버전이 지원되지 않음](your-windows-version-isnt-yet-supported.md)
-* [내 Windows 장치 업데이트](you-need-to-update-your-windows-device.md)
+* [내 Windows 디바이스 업데이트](you-need-to-update-your-windows-device.md)
 * [회사 포털 앱에서 로그 전송](send-logs-to-your-it-admin-cp-windows.md)
-* [장치 설정 앱에서 로그 보내기](send-logs-to-your-it-admin-settings-windows.md)
-* [Windows 10 장치에 Office 365 설치](install-office-windows.md)
-* [장치를 암호화해야 함](you-need-to-enable-windows-encryption.md)
+* [디바이스 설정 앱에서 로그 보내기](send-logs-to-your-it-admin-settings-windows.md)
+* [Windows 10 디바이스에 Office 365 설치](install-office-windows.md)
+* [디바이스를 암호화해야 함](you-need-to-enable-windows-encryption.md)
 * [맬웨어 방지 소프트웨어 받기](your-device-needs-antimalware-software.md)
 * [보안 부팅 사용](you-need-to-enable-secure-boot-windows.md)
 * [코드 무결성 사용](you-need-to-enable-code-integrity.md)

@@ -15,12 +15,13 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 4f19a7fa667c7f350e12ca469cb65f4250b1b95a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 797ea27103144423d1b43434612999631a4a243d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184695"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834495"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune에 디바이스를 등록할 수 있도록 사용자에게 라이선스 할당
 
@@ -61,7 +62,7 @@ Intune for Education 라이선스를 할당할 경우 Intune A Direct 라이선�
 SDS에 대한 자세한 내용은 이 [학교 데이터 동기화 및 강의실 개요](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)를 참조하세요.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>사용자 및 디바이스 라이선스가 서비스 액세스에 영향을 주는 방식
-* 사용자 소프트웨어 라이선스를 할당하는 각 **사용자**는 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)에 액세스하여 최대 15대의 디바이스와 응용 프로그램을 관리하는 데 해당 서비스와 소프트웨어를 사용할 수 있습니다.
+* 사용자 소프트웨어 라이선스를 할당하는 각 **사용자**는 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)에 액세스하여 최대 15대의 장치와 애플리케이션을 관리하는 데 해당 서비스와 소프트웨어를 사용할 수 있습니다.
 * 사용자 라이선스와 별도로 모든 디바이스에 대해 라이선스를 구입할 수 있습니다. 디바이스에는 디바이스 라이선스를 할당할 필요가 없습니다. 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)를 액세스하고 사용하는 각 디바이스에는 디바이스 라이선스가 할당되어야 합니다.
 * 여러 사용자가 디바이스를 사용하는 경우 각 사용자에게 디바이스 소프트웨어 라이선스가 있어야 하거나, 모든 사용자에게 사용자 소프트웨어 라이선스가 있어야 합니다.
 

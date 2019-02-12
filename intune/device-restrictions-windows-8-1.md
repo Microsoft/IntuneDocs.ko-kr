@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e6d42edaa5cdef9a149f3232e1b150e0847e542
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aff862170ec6a4eca8db5b4e8b1b5eaa242203b0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180632"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837480"
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 이상 디바이스 제한 설정
 
@@ -30,19 +31,19 @@ ms.locfileid: "52180632"
 
 ## <a name="general"></a>일반
 
--   **진단 데이터 제출** - 장치에서 Microsoft에 진단 정보를 제출할 수 있습니다.
+-   **진단 데이터 제출** - 디바이스에서 Microsoft에 진단 정보를 제출할 수 있습니다.
 -   **방화벽** - Windows 방화벽이 켜져 있어야 합니다.
--   **사용자 계정 컨트롤** - 장치에 UAC(사용자 계정 컨트롤)를 사용해야 합니다.
+-   **사용자 계정 컨트롤** - 디바이스에 UAC(사용자 계정 컨트롤)를 사용해야 합니다.
 
 ## <a name="password"></a>암호
--   **필수 암호 유형** - 최종 사용자에게 장치에 액세스하려면 암호를 입력하도록 요구합니다.
+-   **필수 암호 유형** - 최종 사용자에게 디바이스에 액세스하려면 암호를 입력하도록 요구합니다.
 -   **최소 암호 길이** - 암호에 대한 최소 문자 길이를 구성합니다.
--   **장치를 초기화하기 전 로그인 오류 발생 횟수** - 이 횟수만큼 로그인에 실패하면 장치를 초기화합니다.
--   **화면이 잠기기 전까지 최대 비활성 시간(분)** - 잠금을 해제하기 위해 암호가 필요하게 되기까지 장치가 유휴 상태여야 하는 시간(분)을 지정합니다.
--   **암호 만료(일)** - 장치 암호를 변경해야 할 때까지의 기간(일)을 지정합니다.
+-   **디바이스를 초기화하기 전 로그인 오류 발생 횟수** - 이 횟수만큼 로그인에 실패하면 디바이스를 초기화합니다.
+-   **화면이 잠기기 전까지 최대 비활성 시간(분)** - 잠금을 해제하기 위해 암호가 필요하게 되기까지 디바이스가 유휴 상태여야 하는 시간(분)을 지정합니다.
+-   **암호 만료(일)** - 디바이스 암호를 변경해야 할 때까지의 기간(일)을 지정합니다.
 -   **이전 암호 다시 사용 방지** - 사용자가 이전에 사용한 암호를 구성할 수 있을지 여부를 지정합니다.
 -   **사진 암호 및 PIN** - 사진 암호 및 PIN을 사용하도록 설정합니다. 그림 암호를 허용하면, 그림에 제스처를 사용하여 로그인할 수 있습니다. PIN을 허용하면, 4자리 코드를 사용하여 빠르게 로그인할 수 있습니다.
--   **암호화** - 장치의 파일을 암호화해야 합니다.<br>Windows 8.1을 실행하는 디바이스에 암호화를 적용하려면 각 디바이스에 [Windows용 December 2014 MDM 클라이언트 업데이트](https://support.microsoft.com/kb/3013816) 를 설치해야 합니다.
+-   **암호화** - 디바이스의 파일을 암호화해야 합니다.<br>Windows 8.1을 실행하는 디바이스에 암호화를 적용하려면 각 디바이스에 [Windows용 December 2014 MDM 클라이언트 업데이트](https://support.microsoft.com/kb/3013816) 를 설치해야 합니다.
 Windows 8.1 디바이스에 대해 이 설정을 사용하려면 디바이스의 모든 사용자가 Microsoft 계정을 가지고 있어야 합니다.
 암호화가 작동하려면 디바이스가 [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) 하드웨어 인증 요구 사항을 만족해야 합니다.
 디바이스에 암호화를 적용하는 경우, 복구 키는 자신의 OneDrive 계정에서 액세스한 Microsoft 계정에서만 액세스할 수 있습니다. 사용자를 대신하여 이 키를 복구할 수 없습니다.     
@@ -68,8 +69,8 @@ Windows 8.1 디바이스에 대해 이 설정을 사용하려면 디바이스의
 -   **엔터프라이즈 모드 사이트 목록 위치** – 엔터프라이즈 모드가 활성화된 경우 이 모드를 사용하는 웹 사이트 목록의 위치를 지정합니다.
 
 ## <a name="cellular"></a>셀룰러
--   **데이터 로밍** - 장치가 셀룰러 네트워크에 있을 때 데이터 로밍을 사용하도록 설정합니다.
+-   **데이터 로밍** - 디바이스가 셀룰러 네트워크에 있을 때 데이터 로밍을 사용하도록 설정합니다.
 
 ## <a name="cloud-and-storage"></a>클라우드 및 스토리지
--   **작업 폴더 URL** - 문서를 장치 간에 동기화될 수 있도록 작업 폴더의 URL을 설정합니다.
--   **Microsoft 계정이 없는 Windows Mail 앱 액세스** - Microsoft 계정 없이 Windows Mail 응용 프로그램에 대한 액세스를 사용하도록 설정합니다.    
+-   **작업 폴더 URL** - 문서를 디바이스 간에 동기화될 수 있도록 작업 폴더의 URL을 설정합니다.
+-   **Microsoft 계정이 없는 Windows Mail 앱 액세스** - Microsoft 계정 없이 Windows Mail 애플리케이션에 대한 액세스를 사용하도록 설정합니다.    

@@ -16,19 +16,20 @@ ms.reviewer: amyros
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7a6fffaa0ae35675538d04b91980799d7d8aa80d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1dd61edf02e8d5344494129715325250fbfdd7bc
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181295"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834418"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>사용자 및 디바이스를 구성하기 위한 그룹 추가
 Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사용자를 관리합니다. Intune 관리자의 경우 조직의 요구에 맞게 그룹을 설정할 수 있습니다. 그룹을 만들어 지리적 위치, 부서 또는 하드웨어 특성별로 사용자 또는 디바이스를 구성합니다. 그룹을 사용하여 대규모 작업을 관리합니다. 예를 들어 많은 사용자에 대해 정책을 설정하거나 디바이스 집합에 앱을 배포할 수 있습니다.
 
 다음 유형의 그룹을 추가할 수 있습니다.
-- **할당된 그룹** - 수동으로 정적 그룹에 사용자 또는 장치를 추가합니다.
-- **동적 그룹** - (Azure Active Directory Premium 사용) 단순 또는 고급 규칙을 사용하여 정의된 사용자 또는 장치 그룹을 동적으로 작성할 수 있습니다.
+- **할당된 그룹** - 수동으로 정적 그룹에 사용자 또는 디바이스를 추가합니다.
+- **동적 그룹** - (Azure Active Directory Premium 사용) 단순 또는 고급 규칙을 사용하여 정의된 사용자 또는 디바이스 그룹을 동적으로 작성할 수 있습니다.
 
 ## <a name="add-a-new-group"></a>새 그룹 추가
 
@@ -46,7 +47,7 @@ Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사
 6. **멤버 자격 유형**을 선택합니다.
    - **할당됨** - 수동으로 할당된 구성원으로 그룹을 만듭니다. [Azure AD 할당된 그룹](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)에 대해 자세히 알아봅니다.
    - **동적 사용자** - **동적 쿼리**로 정의된 사용자 그룹을 만듭니다.
-   - **동적 장치** - **동적 쿼리**로 정의된 장치 그룹을 만듭니다.
+   - **동적 디바이스** - **동적 쿼리**로 정의된 디바이스 그룹을 만듭니다.
 
    ![Intune 그룹 속성의 스크린샷](./media/groups-add-properties.png)
 

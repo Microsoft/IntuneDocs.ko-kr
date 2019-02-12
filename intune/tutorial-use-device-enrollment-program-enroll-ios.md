@@ -13,12 +13,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
-ms.openlocfilehash: d3fd7d860661f7b97e1191b1977b7f75ca02730f
-ms.sourcegitcommit: bd5d0bde931cbd3a31ddaeb91a934068cb8a5da8
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 17258ce2bd671dba091fa7206e599858e5ec7a93
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482562"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841541"
 ---
 # <a name="tutorial-use-the-device-enrollment-program-to-enroll-ios-devices-in-intune"></a>자습서: 디바이스 등록 프로그램을 사용하여 Intune에서 iOS 디바이스 등록
 Apple의 DEP(디바이스 등록 프로그램)는 디바이스 등록을 간소화합니다. Microsoft Intune 및 DEP를 사용하면 디바이스는 사용자가 처음으로 디바이스를 작동하는 경우 자동으로 등록됩니다. 따라서 각 디바이스를 개별적으로 설정하지 않고도 여러 사용자에게 디바이스를 제공할 수 있습니다. 

@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 82d6ef4494ee85e86b42d0c500c6f5b26bb00d27
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d20d429922fb66b4dd28125eecf92c7e567d5ea5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179697"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836934"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune에서 개인 데이터 감사, 내보내기 또는 삭제
 
@@ -66,7 +67,7 @@ Intune에서 최종 사용자의 개인 데이터를 삭제하려면 관리자�
 사용자는 관리자의 도움 없이 [Android, Apple 또는 Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md) 개인 디바이스를 Intune 관리 대상에서 제외할 수 있습니다.   
 
 ### <a name="retire"></a>사용 중지
-**사용 중지** 작업은 회사 응용 프로그램과 같은 Intune 제공 데이터, Intune이 관리하는 앱 관련 데이터, 정책 설정 및 Intune을 통해 프로비전되는 이메일 프로필을 제거합니다. 이 작업은 디바이스에 사용자의 개인 데이터를 남깁니다.
+**사용 중지** 작업은 회사 애플리케이션과 같은 Intune 제공 데이터, Intune이 관리하는 앱 관련 데이터, 정책 설정 및 Intune을 통해 프로비전되는 이메일 프로필을 제거합니다. 이 작업은 디바이스에 사용자의 개인 데이터를 남깁니다.
 
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>Microsoft Intune에서 테넌트 삭제
 

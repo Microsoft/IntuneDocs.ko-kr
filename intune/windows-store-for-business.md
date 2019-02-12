@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
-ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2b4428a91c42b1e7496eb253d7523e03ba917bb7
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54460058"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841201"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune을 사용하여 비즈니스용 Microsoft 스토어에서 구입한 앱을 관리하는 방법
 

@@ -14,18 +14,19 @@ ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b708ed69817ca85dc6648242ceafbdfa25b91fc9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2188a5a67111b666def107d5f38282adc9780323
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180700"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835588"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune을 사용하여 iOS 디바이스에서 분실 모드 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**분실 모드** 장치 작업을 수행하면 분실했거나 도난당한 iOS 장치에 대해 분실 모드를 사용하도록 설정할 수 있습니다. 이 모드를 통해 디바이스의 잠금 화면에 표시되는 메시지 및 전화 번호를 입력할 수 있습니다. 디바이스에서 분실 모드를 사용하려면 감독 모드인 회사 소유 iOS 디바이스여야 합니다.
+**분실 모드** 디바이스 작업을 수행하면 분실했거나 도난당한 iOS 디바이스에 대해 분실 모드를 사용하도록 설정할 수 있습니다. 이 모드를 통해 디바이스의 잠금 화면에 표시되는 메시지 및 전화 번호를 입력할 수 있습니다. 디바이스에서 분실 모드를 사용하려면 감독 모드인 회사 소유 iOS 디바이스여야 합니다.
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
@@ -41,7 +42,7 @@ ms.locfileid: "52180700"
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **장치**를 선택한 다음, **모든 장치**를 선택합니다.
+3. **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
 4. 관리하는 디바이스 목록에서 iOS 디바이스를 선택하고 **자세히...** 를 선택합니다. 그런 다음, **분실 모드** 원격 작업을 선택합니다.
 5. **분실 모드**에서 이 기능을 사용하도록 설정합니다. 그런 다음, 표시할 메시지와 연락처 전화 번호를 입력합니다.
 6. **확인**을 선택하여 변경 내용을 저장합니다.
