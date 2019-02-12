@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 31cfa617e0ca5d8d0848d1ecb781fda701589ccd
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199424"
+ms.locfileid: "55229953"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 키오스크로 실행하는 Windows 10 이상 디바이스 설정
 
@@ -101,7 +101,7 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
     - **애플리케이션 이름**: 필수 사항입니다. 애플리케이션의 이름을 입력합니다.
     - **로컬 경로**: 필수 사항입니다. `C:\Program Files (x86)\Microsoft VS Code\Code.exe` 또는 `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`와 같이 실행 파일의 경로를 입력합니다.
-    - **AUMID(애플리케이션 사용자 모델 ID)**: Win32 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 설정에 따라 바탕 화면에 있는 타일의 시작 레이아웃이 결정됩니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)를 참조하세요.
+    - **AUMID(애플리케이션 사용자 모델 ID)**: Win32 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 설정에 따라 바탕 화면에 있는 타일의 시작 레이아웃이 결정됩니다. 이 ID를 구하려면 [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)를 참조하세요.
     - **타일 크기**: 필수 사항입니다. 작은, 중간 크기, 넓은 또는 큰 앱 타일 크기를 선택합니다.
   
   - **AUMID로 추가**: 메모장 또는 계산기와 같은 받은 편지함 Windows 앱을 추가하려면 이 옵션을 사용합니다. 다음 속성을 입력합니다. 

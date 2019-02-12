@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
+ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072544"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431493"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>Intune에서 iOS 디바이스 기능 설정
 
@@ -177,16 +177,23 @@ iOS 디바이스에 설치된 앱에서 알림을 전송하는 방식을 선택�
 
 이러한 설정을 사용하여 로그인 창 및 잠금 화면에 사용자 지정 메시지 또는 텍스트를 표시합니다. 예를 들어 "분실 시, 돌려주기..." 메시지 및 자산 태그를 정보를 입력할 수 있습니다. 
 
-이 설정은 iOS 9.3 이상을 실행하는 감독 모드 디바이스를 지원합니다.
+이 기능은 다음을 실행하는 감독 디바이스를 지원합니다.
 
-1. **설정**에서 **공유 디바이스 구성(감독 모드에서만 해당)** 을 선택합니다.
+- iOS 9.3 이상
+
+1. **설정**에서 **잠금 화면 메시지(감독 모드 전용)** 를 선택합니다.
 2. 다음 설정을 입력합니다.
 
-    - **자산 태그 정보**: 디바이스의 자산 태그에 대한 정보를 입력합니다. 예를 들어 다음과 같이 입력합니다. `Owned by Contoso Corp` 
+    - **자산 태그 정보**: 디바이스의 자산 태그에 대한 정보를 입력합니다. 예를 들어 `Owned by Contoso Corp` 또는 `Serial Number: {{serialnumber}}`을 입력합니다. 
 
       입력한 텍스트는 디바이스의 로그인 창 및 잠금 화면에 표시됩니다.
 
-    - **잠금 화면 각주**: 디바이스를 분실했거나 도난당한 경우 디바이스를 되찾는 데 도움이 되는 정보를 입력합니다. 예를 들어 `If found, call Contoso at ...`와 같이 입력합니다.
+    - **잠금 화면 각주**: 디바이스를 분실했거나 도난당한 경우 디바이스를 되찾는 데 도움이 되는 정보를 입력합니다. 원하는 텍스트를 입력할 수 있습니다. 예를 들어 `If found, call Contoso at ...`와 같이 입력합니다.
+
+    디바이스 토큰은 디바이스별 정보를 이러한 필드에 추가하는 데도 사용할 수 있습니다. 예를 들어 일련 번호를 표시하려면 `Serial Number: {{serialnumber}}`를 입력합니다. 잠금 화면에서 텍스트는 `Serial Number 123456789ABC`와 비슷하게 표시됩니다. 변수를 입력할 때 `{{ }}` 중괄호를 사용해야 합니다. [앱 구성 토큰](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)에는 사용할 수 있는 변수 목록이 포함됩니다. `deviceName` 또는 기타 디바이스 관련 값을 사용할 수도 있습니다.
+
+    > [!NOTE]
+    > UI에서 변수 유효성이 검사되지 않습니다. 따라서, 잘못된 입력으로 저장된 프로필을 볼 수 있습니다. 예를 들어 `{{devicename}}` 대신 `{{Devicename}}`을 입력하면 디바이스 고유의 이름 대신 리터럴 문자열이 표시될 수 있습니다.
 
 3. 완료되면 **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -279,6 +286,8 @@ Single Sign-On을 사용하려면 다음이 있어야 합니다.
 ## <a name="wallpaper-settings"></a>배경 무늬 설정
 
 감독되는 iOS 디바이스에 사용자 지정 .png, .jpg 또는 .jpeg 이미지를 추가합니다. 예를 들어 잠금 화면에 회사 로고를 사용합니다.
+
+이미지가 없는 프로필을 기존 이미지가 있는 디바이스에 할당하면 예기치 않은 동작이 발생할 수 있습니다. 예를 들어 이미지가 없는 프로필을 만듭니다. 이 프로필이 이미지가 이미 있는 디바이스에 할당됩니다. 이 시나리오에서는 이미지가 디바이스 기본값으로 변경되거나 원래 이미지가 디바이스에 남아있을 수 있습니다. 이런 동작은 Apple의 MDM 플랫폼에 의해 제어되고 제한됩니다.
 
 - **배경 무늬 표시 위치**: 이미지를 표시할 디바이스의 위치를 선택합니다. 옵션은 다음과 같습니다.
   - **구성되지 않음** 사용자 지정 이미지는 디바이스에 추가되지 않습니다. 디바이스는 운영 체제 기본값을 사용합니다.

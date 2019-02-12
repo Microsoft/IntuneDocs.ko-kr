@@ -2,24 +2,24 @@
 title: Microsoft Intune - Azure를 사용한 SCEP 인증서 사용 | Micrososft Docs
 description: Microsoft Intune에서 SCEP 인증서를 사용하려면 온-프레미스 AD 도메인을 구성하고 인증 기관을 만들고 NDES 서버를 설정하고 Intune 인증서 커넥터를 설치합니다. 그런 다음, SCEP 인증서 프로필을 만든 다음, 이 프로필을 그룹에 할당합니다. 또한 다른 이벤트 ID 및 해당 설명과 Intune Connector 서비스에 대한 진단 코드도 참조합니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.openlocfilehash: f8b4d1aded0198dfc3dcccf6bdeda30bb54ee651
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597378"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230157"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -562,3 +562,4 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 - [PKCS 인증서 사용](certficates-pfx-configure.md) 또는 [Symantec PKI 관리자 웹 서비스에서 PKCS 인증서 발급](certificates-symantec-configure.md)
 - [Intune으로 SCEP를 사용하기 위해 타사 CA 추가](certificate-authority-add-scep-overview.md)
+- 추가 지원이 필요하면 [Microsoft Intune에서 SCEP 인증서 프로필 배포 문제 해결](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) 가이드를 참조하세요.

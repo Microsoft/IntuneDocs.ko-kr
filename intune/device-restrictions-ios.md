@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune; seodec18
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.openlocfilehash: 94e09f413ea0e6b3811c7c19a93d188ac15ee04c
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380498"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230089"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 iOS 디바이스 설정
 
@@ -322,12 +322,16 @@ iOS 감독 모드는 Apple의 디바이스 등록 프로그램을 통하거나 A
 | com.apple.compass           | 나침반      | Apple     |
 | com.apple.MobileAddressBook | 연락처     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | 파일        | Apple     |
 | com.apple.mobileme.fmf1     | 친구 찾기 | Apple     |
 | com.apple.mobileme.fmip1    | 나의 iPhone 찾기  | Apple     |
 | com.apple.gamecenter        | 게임 센터  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | 상태       | Apple     |
+| com.apple.Home              | 홈         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
 | com.apple.MobileStore       | iTunes Store | Apple     |
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | 키노트      | Apple     |
@@ -345,8 +349,10 @@ iOS 감독 모드는 Apple의 디바이스 등록 프로그램을 통하거나 A
 | com.apple.reminders         | 미리 알림    | Apple     |
 | com.apple.MobileSafari      | Safari       | Apple     |
 | com.apple.Preferences       | 설정     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 주식       | Apple     |
 | com.apple.tips              | 팁         | Apple     |
+| com.apple.TV                | TV           | Apple     |
 | com.apple.videos            | 동영상       | Apple     |
 | com.apple.VoiceMemos        | 음성 메모   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |

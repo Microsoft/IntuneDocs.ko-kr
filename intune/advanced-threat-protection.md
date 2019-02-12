@@ -2,10 +2,10 @@
 title: Microsoft Intune에서 Windows Defender ATP 사용 - Azure | Microsoft Docs
 description: Intune 및 Windows Defender 보안 센터(ATP 포털)에서 ATP 켜기 등 종단 간 시나리오에서 Windows Defender ATP(Advanced Threat Protection)를 사용하도록 설정하고, ATP 구성 프로필을 사용하여 디바이스를 등록하고, Intune 디바이스 준수 정책을 만들고, Azure AD 조건부 액세스 정책을 만들고, 디바이스 준수를 모니터링하는 방법을 확인합니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.openlocfilehash: 25328bc119b91d7c9c3bb678962b90123a0d1faa
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53167997"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290692"
 ---
-# <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP 사용
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP에 대한 규정 준수 적용
 
 Windows Defender ATP(Advanced Threat Protection) 및 Microsoft Intune은 함께 작동하여 보안 위반을 방지하고 조직 내에서 위반 영향을 제한합니다.
 
@@ -53,7 +53,7 @@ Intune에서 ATP를 사용하려면 다음을 구성했으며 사용할 준비�
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **장치 준수** > **Windows Defender ATP** > **Windows Defender 보안 센터 열기**를 차례로 선택합니다.
+3. **디바이스 준수** > **Windows Defender ATP** > **Windows Defender 보안 센터 열기**를 차례로 선택합니다.
 
     ![Windows Defender 보안 센터 열기 선택](./media/atp-device-compliance-open-windows-defender.png)
 
@@ -65,7 +65,7 @@ Intune에서 ATP를 사용하려면 다음을 구성했으며 사용할 준비�
 
     3. **기본 설정 저장**을 선택합니다.
 
-5. Intune, **디바이스 준수** > **Windows Defender ATP**로 돌아갑니다. **Windows 장치 버전 10.0.15063 이상을 Windows Defender ATP에 연결**을 **켜기**로 설정합니다.
+5. Intune, **디바이스 준수** > **Windows Defender ATP**로 돌아갑니다. **Windows 디바이스 버전 10.0.15063 이상을 Windows Defender ATP에 연결**을 **켜기**로 설정합니다.
 6. **저장**을 선택합니다.
 
 일반적으로 이 작업은 한 번 수행합니다. 따라서 Intune 리소스에서 이미 ATP를 사용하도록 설정한 경우에는 다시 이 작업을 수행하지 않아도 됩니다.
@@ -78,12 +78,12 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 
 등록하면 Intune에서 Windows Defender ATP를 통해 자동 생성된 구성 패키지를 가져옵니다. 프로필이 디바이스에 푸시되거나 배포되면 이 구성 패키지도 디바이스에 푸시됩니다. 이렇게 하면 Windows Defender ATP에서 디바이스에 대한 위협을 모니터링할 수 있습니다.
 
-구성 패키지를 사용하여 디바이스를 등록하고 나면 다시 등록할 필요가 없습니다. [그룹 정책 또는 SCCM(System Center Configuration Manager)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection)을 사용하여 장치를 등록할 수도 있습니다.
+구성 패키지를 사용하여 디바이스를 등록하고 나면 다시 등록할 필요가 없습니다. [그룹 정책 또는 SCCM(System Center Configuration Manager)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection)을 사용하여 디바이스를 등록할 수도 있습니다.
 
 ### <a name="create-the-configuration-profile"></a>구성 프로필 만들기
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. **이름**과 **설명**을 입력합니다.
 4. **플랫폼**에서 **Windows 10 이상**을 선택합니다.
 5. **프로필 유형**에서 **Windows Defender ATP(Windows 10 Desktop)** 를 선택합니다.
@@ -105,10 +105,10 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 준수 정책은 디바이스에서 허용되는 위험 수준을 결정합니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 준수** > **정책** > **정책 만들기**를 선택합니다.
+2. **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
 3. **이름**과 **설명**을 입력합니다.
 4. **플랫폼**에서 **Windows 10 이상**을 선택합니다.
-5. **Windows Defender ATP** 설정에서 **장치가 머신 위험 점수나 그 아래에 있어야 함**을 기본 설정 수준으로 설정합니다.
+5. **Windows Defender ATP** 설정에서 **디바이스가 머신 위험 점수나 그 아래에 있어야 함**을 기본 설정 수준으로 설정합니다.
 
   - **지우기**: 이 수준이 가장 안전합니다. 디바이스가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 디바이스는 비규격으로 평가됩니다.
   - **낮음**: 낮은 수준의 위협만 있는 디바이스는 규격 디바이스입니다. 보통 또는 높은 위협 수준의 디바이스는 비규격 디바이스입니다.
@@ -120,7 +120,7 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 ## <a name="assign-the-policy"></a>정책 할당
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 준수** > **정책** > Windows Defender ATP 준수 정책을 선택합니다.
+2. **디바이스 준수** > **정책** &gt; Windows Defender ATP 준수 정책을 선택합니다.
 3. **할당**을 선택합니다.
 4. Azure AD 그룹을 포함하거나 제외하여 정책을 할당합니다.
 5. 그룹에 정책을 배포하려면 **저장**을 선택합니다. 정책의 대상이 되는 사용자 디바이스의 준수 여부가 평가됩니다.
@@ -138,7 +138,7 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 
     **완료**를 선택하여 변경 내용을 저장합니다.
 
-5. **권한 부여**를 선택하여 장치 준수에 따라 조건부 액세스를 적용합니다. 예를 들어 **액세스 권한 부여** > **디바이스가 규격으로 표시되어야 함**을 선택합니다.
+5. **권한 부여**를 선택하여 디바이스 준수에 따라 조건부 액세스를 적용합니다. 예를 들어 **액세스 권한 부여** > **디바이스가 규격으로 표시되어야 함**을 선택합니다.
 
     **선택**을 선택하여 변경 내용을 저장합니다.
 
@@ -150,11 +150,11 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 다음으로, Windows Defender ATP 준수 정책이 있는 디바이스의 상태를 모니터링합니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 준수** > **정책 준수**를 선택합니다.
+2. **디바이스 준수** > **정책 준수**를 선택합니다.
 3. 목록에서 Windows Defender ATP 정책을 찾아 어떤 디바이스가 규격 또는 비규격인지 확인합니다.
 
 ## <a name="more-good-stuff"></a>기타 유용한 자료
 [Windows Defender ATP 조건부 액세스](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)  
 [Windows Defender ATP 위험 대시보드](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection)  
-[장치 준수 정책 시작](device-compliance-get-started.md)  
+[디바이스 준수 정책 시작](device-compliance-get-started.md)  
 [Azure AD의 조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)

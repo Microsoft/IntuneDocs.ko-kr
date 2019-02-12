@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203640"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230123"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -420,7 +420,7 @@ ms.locfileid: "54203640"
 
 - **시작 메뉴 레이아웃**: 데스크톱 디바이스의 시작 메뉴를 사용자 지정하려면 앱이 나열된 순서 등을 비롯하여 사용자 지정이 포함된 XML 파일을 업로드할 수 있습니다. 사용자는 입력한 시작 메뉴 레이아웃을 변경할 수 없습니다.
 - **시작 메뉴의 타일에 웹 사이트 고정**: 데스크톱 디바이스용 Windows 시작 메뉴에 링크로 표시되는 Microsoft Edge에서 이미지를 가져옵니다.
-- **작업 표시줄에서 앱 고정 해제**: **차단**을 선택하면 사용자가 시작 메뉴에서 앱 고정을 해제하지 못합니다.
+- **작업 표시줄에서 앱 고정 해제**: **차단**을 선택하면 사용자가 작업 표시줄에서 앱 고정을 해제하지 못합니다.
 - **빠른 사용자 전환**: **차단**을 선택하면 로그오프하지 않고 동시에 로그온한 사용자 간의 전환을 방지합니다.
 - **가장 많이 사용된 앱**: **차단**을 선택하면 가장 많이 사용된 앱이 시작 메뉴에 표시되지 않도록 숨깁니다. 또한 설정 앱에서 해당 토글을 비활성화합니다.
 - **최근에 추가한 앱**: **차단**을 선택하면 최근에 추가한 앱을 시작 메뉴에 표시되지 않도록 숨깁니다. 또한 설정 앱에서 해당 토글을 비활성화합니다.

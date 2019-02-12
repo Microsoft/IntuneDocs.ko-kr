@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune에서 정책 문제 해결 - Azure | Microsoft Docs
-description: Microsoft Intune에서 정책을 사용하는 경우 일반적으로 발생하는 문제와 해결 방법
+description: 기본 제공 문제 해결 기능을 사용하는 방법과 Microsoft Intune에서 규정 준수 정책 및 구성 프로필을 사용하는 경우 발생하는 일반적인 문제나 해결 방법을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,59 +16,135 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bb55ddc283ce4633b5057d5b96ae2ed6973dcf8a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4a0af73cdcd65486ac5ee3a51e4eb1d7e453bb93
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181771"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303466"
 ---
-# <a name="troubleshoot-policies-in-intune"></a>Intune에서 정책 문제 해결
+# <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune의 문제 해결 정책 및 프로필
 
-Intune 정책을 배포하고 관리하는 데 문제가 있는 경우 여기서 시작하세요. 이 문서에서는 발생할 수 있는 일반적인 몇 가지 문제와 가능한 해결 방법을 설명합니다.
+Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함됩니다. 이 기능을 사용하면 사용자의 환경에서 준수 정책과 구성 프로필 문제를 해결하는 데 도움이 됩니다.
 
-## <a name="general-issues"></a>일반적인 문제
+이 문서에는 몇 가지 일반적인 문제 해결 기술이 나열되고 발생할 수 있는 몇 가지 문제가 설명되어 있습니다.
 
-### <a name="was-a-deployed-policy-applied-to-the-device"></a>배포된 정책이 디바이스에 적용되었나요?
-**문제:** 정책이 올바르게 적용되었는지 확실하지 않습니다.
+## <a name="use-built-in-troubleshooting"></a>기본 제공 문제 해결 기능 사용
 
-Intune에서 **장치** > **모든 장치**로 이동해 장치 > **장치 구성**을 선택하면 각 장치마다 정책이 나열됩니다. 각 정책에는 **상태**가 있습니다. 상태는 디바이스에 적용되는 모든 정책 및 하드웨어와 운영 체제의 제한 사항과 요구 사항을 함께 고려할 때 적용되는 상태를 말합니다. 가능한 상태는 다음과 같습니다.
+1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+2. **문제 해결**을 선택합니다.
 
-- **준수**: 장치가 설정을 준수하는 정책 및 서비스에 대한 보고서를 받았습니다.
+    ![Intune에서 도움말 및 지원으로 이동하여 문제 해결을 선택합니다.](./media/help-and-support-troubleshoot.png)
 
-- **적용할 수 없음**: 정책 설정을 적용할 수 없습니다. 예를 들어 iOS 디바이스의 메일 설정이 Android 디바이스에 적용되지 않습니다.
+3. **사용자 선택**을 선택하고 문제가 있는 사용자를 선택한 다음, **선택**을 클릭합니다.
+4. **Intune 라이선스**와 **계정 상태** 모두에 녹색 확인 표시가 있는지 확인합니다.
 
-- **보류 중**: 정책이 장치에 전송되었지만, 서비스에 상태를 보고하지 않았습니다. 예를 들어 Android에서의 암호화의 경우, 사용자가 암호화를 사용하도록 설정해야 하고 보류 중으로 표시될 수 있습니다.
+    ![Intune에서 사용자를 선택하고 계정 상태와 Intune 라이선스의 상태에 녹색 확인 표시가 있는지 확인합니다.](./media/account-status-intune-license-show-green.png)
+
+    **유용한 링크**:
+
+    - [사용자가 디바이스를 등록하도록 라이선스 할당](licenses-assign.md)
+    - [Intune에 사용자 추가](users-add.md)
+
+5. **디바이스**에서 문제가 있는 디바이스를 찾습니다. 다른 열을 검토합니다.
+
+    - **관리됨**: 준수 정책이나 구성 정책을 수신할 디바이스는 이 속성이 **MDM**이나 **EAS/MDM**으로 표시되어야 합니다.
+
+      - **관리됨**이 **MDM**이나 **EAS/MDM**으로 설정되어 있지 않으면 디바이스가 등록되지 않은 것입니다. 등록될 때까지 준수 정책이나 구성 정책을 수신하지 못합니다.
+
+      - 앱 보호 정책(모바일 애플리케이션 관리)은 디바이스를 등록할 필요가 없습니다. 자세한 내용은 [앱 보호 정책 만들기 및 할당](app-protection-policies.md)을 참조하세요.
+
+    - **Azure AD 조인 유형**: **작업 공간** 또는 **AzureAD**로 설정되어야 합니다.
+ 
+      - 열이 **등록 안 됨**이면, 등록에 문제가 있는 것입니다. 일반적으로 디바이스 등록을 취소했다가 다시 등록하면 이 문제가 해결됩니다.
+
+    - **Intune 준수**: **예**여야 합니다. **아니오**가 표시되면 준수 정책에 문제가 있거나, 디바이스가 Intune 서비스에 연결되지 않은 것입니다. 예를 들어 디바이스가 꺼져 있거나 네트워크에 연결되어 있지 않을 수 있습니다. 그러면, 30일 후에 디바이스가 비준수 상태가 됩니다.
+
+      자세한 내용은 [디바이스 준수 정책 시작](device-compliance-get-started.md)을 참조하세요.
+
+    - **Azure AD 준수**: **예**여야 합니다. **아니오**가 표시되면 준수 정책에 문제가 있거나, 디바이스가 Intune 서비스에 연결되지 않은 것입니다. 예를 들어 디바이스가 꺼져 있거나 네트워크에 연결되어 있지 않을 수 있습니다. 그러면, 30일 후에 디바이스가 비준수 상태가 됩니다.
+
+      자세한 내용은 [디바이스 준수 정책 시작](device-compliance-get-started.md)을 참조하세요.
+
+    - **마지막 체크 인**: 최근 시간 및 날짜여야 합니다. 기본적으로 Intune 디바이스는 8시간마다 확인합니다.
+
+      - **마지막 체크 인**이 24시간을 초과하면 디바이스에 문제가 있을 수 있습니다. 체크 인할 수 없는 디바이스는 Intune에서 정책을 받을 수 없습니다.
+
+      - 체크 인을 강제로 수행하려면:
+        - Android 디바이스를 열고 회사 포털 앱 > **디바이스**를 열고 목록에서 디바이스를 선택한 다음, **디바이스 설정 확인**을 선택합니다.
+        - iOS 디바이스를 열고 회사 포털 앱 > **디바이스**를 열고 목록에서 디바이스를 선택한 다음, **설정 확인**을 선택합니다. 
+        - Windows 디바이스에서 **설정** > **계정** > **회사 또는 학교 액세스**를 열어서 계정이나 MDM 등록을 선택하고 **정보** > **동기화**를 선택합니다.
+
+    - 정책별 정보를 보려면 디바이스를 선택합니다.
+
+      **디바이스 준수**는 디바이스에 할당된 준수 정책의 상태를 보여줍니다.
+
+      **디바이스 구성**은 디바이스에 할당된 구성 정책의 상태를 보여줍니다.
+
+      원하는 정책이 **디바이스 준수**나 **디바이스 구성**에 표시되지 않으면 정책이 올바르게 지정되지 않은 것입니다. 정책을 열고 사용자 또는 디바이스에 정책을 할당하십시오.
+
+      **정책 상태**:
+
+      - **해당 없음**: 이 정책은 이 플랫폼에서 지원되지 않습니다. 예를 들어, iOS 정책은 Android에서 작동하지 않습니다. Samsung KNOX 정책은 Windows 디바이스에서 작동하지 않습니다.
+      - **충돌**: 디바이스에 Intune이 재정의할 수 없는 기존 설정이 있습니다. 아니면, 다른 값을 사용하여 동일한 설정으로 두 개의 정책을 배포했습니다.
+      - **보류 중**: 디바이스가 ntune에 체크 인되지 않아서 정책을 수신하지 못했습니다. 아니면, 디바이스가 정책을 수신했지만 Intune에 상태가 보고되지 않았습니다.
+      - **오류**: 오류 및 가능한 해결 방법은 [회사 리소스 액세스 문제 해결](troubleshoot-company-resource-access-problems.md)에서 찾아보세요.
+
+      **유용한 링크**: 
+
+      - [디바이스 준수 정책을 배포하는 방법](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies)
+      - [디바이스 준수 정책 모니터링](compliance-policy-monitor.md)
+
+## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>프로필이 제대로 적용되었는지 확실하지 않은 경우
+
+1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+2. **디바이스** > **모든 디바이스**를 선택하고 디바이스를 선택한 다음, **디바이스 구성**을 선택합니다. 
+
+    모든 디바이스는 해당 프로필이 나열됩니다. 모든 프로필에는 **상태**가 있습니다. 상태는 하드웨어 및 OS 제한 사항과 요구 사항을 비롯한 할당된 모든 프로필이 함께 고려되어 적용됩니다. 가능한 상태는 다음과 같습니다.
+
+    - **준수**: 디바이스가 프로필을 수신하고 Intune에 설정을 준수한다고 보고합니다.
+
+    - **해당 없음**: 프로필 설정을 적용할 수 없습니다. 예를 들어 iOS 디바이스의 이메일 설정은 Android 디바이스에 적용되지 않습니다.
+
+    - **보류 중**: 프로필이 디바이스에 전송되었지만, Intune에 상태를 보고하지 않았습니다. 예를 들어 Android에서의 암호화의 경우, 사용자가 암호화를 사용하도록 설정해야 하고 보류 중으로 표시될 수 있습니다.
+
+**유용한 링크**: [구성 디바이스 프로필 모니터링](device-profile-monitor.md)
 
 > [!NOTE]
 > 제한 수준이 다른 두 정책을 같은 디바이스나 사용자에 적용하면 보다 제한적인 정책이 적용됩니다.
 
-## <a name="issues-with-enrolled-devices"></a>등록된 디바이스 문제
+## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>경고: Exchange에 액세스 규칙 저장 실패
 
-### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>경고: Exchange에 액세스 규칙 저장 실패
 **문제**: 관리 콘솔에에 **Exchange에 액세스 규칙 저장 실패**  라는 경고가 표시됩니다.
 
-관리 콘솔의 Exchange 온-프레미스 정책 작업 영역에서 정책을 만들었지만, O365를 사용하고 있는 경우, 구성된 정책 설정이 Intune에 의해 적용되지 않습니다. 경고의 정책 소스를 확인합니다.  Exchange 온-프레미스 정책에 따라 작업 영역에서는 레거시 규칙을 삭제합니다. 레거시 규칙은 Intune 내에서 온-프레미스 Exchange의 전역 Exchange 규칙으로 O365와는 관계가 없습니다. 그런 다음 O365에 대한 새 정책을 만듭니다.
+Exchange 온-프레미스 정책 작업 영역(관리 콘솔)에서 정책을 만들었지만, Office 365를 사용하고 있는 경우, 구성된 정책 설정이 Intune에 의해 적용되지 않습니다. 경고에서 정책 소스를 확인하십시오. Exchange 온-프레미스 정책 작업 영역에서 레거시 규칙을 삭제합니다. 레거시 규칙은 Intune 내에서 온-프레미스 Exchange의 글로벌 Exchange 규칙이며 Office 365와는 관계가 없습니다. 그런 다음, Office 365에 대한 새 정책을 만듭니다.
 
-### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>등록된 다양한 디바이스에 대한 보안 정책을 변경할 수 없음
-Windows Phone 디바이스는 MDM 또는 EAS를 통해 보안 정책을 설정하면 이 정책의 보안 강도가 줄어드는 것을 허용하지 않습니다. 예를 들어 **문자 암호의 최소 수** 를 8로 설정한 다음 4로 줄이려고 합니다. 더 제한적인 정책이 이미 디바이스에 적용되었습니다.
+[Intune 온-프레미스 Exchange Connector 문제 해결](troubleshoot-exchange-connector.md)이 유용한 리소스가 될 수 있습니다.
 
-디바이스 플랫폼에 따라서는 정책을 덜 안전한 값으로 변경하려는 경우 보안 정책을 다시 설정해야 할 수 있습니다.
+## <a name="cant-change-security-policies-for-enrolled-devices"></a>등록된 디바이스에 대한 보안 정책을 변경할 수 없는 경우
 
-예를 들어, Windows의 바탕 화면에서 오른쪽에서 살짝 밀어 **참 메뉴** 모음을 엽니다. **설정** > **제어판**을 선택하고 **사용자 계정**을 선택합니다. 왼쪽에서 **보안 정책 재설정** 링크를 선택하고 **정책 재설정**을 선택합니다.
+Windows Phone 디바이스는 MDM 또는 EAS를 사용하여 보안 정책을 설정하면 이 정책의 보안이 저하되는 것을 허용하지 않습니다. 예를 들어 **암호의 최소 문자 수**를 8로 설정한 다음, 4로 줄이려고 하면, 더 제한적인 정책이 디바이스에 적용됩니다.
 
-Android, Windows Phone 8.1 이상 및 iOS와 같은 기타 MDM 디바이스의 경우 제한적인 정책을 적용할 수 있도록 사용을 중지하고 서비스에 다시 등록해야 해야 합니다.
+디바이스 플랫폼에 따라서, 보안 수준이 낮은 값으로 정책을 변경하려면 보안 정책을 다시 설정해야 할 수 있습니다.
 
-## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Intune 소프트웨어 클라이언트를 실행하는 PC 관련 문제
+예를 들어, Windows의 바탕 화면에서 오른쪽에서 살짝 밀어 **참 메뉴** 모음을 엽니다. **설정** > **제어판** > **U사용자 계정**을 선택합니다. 왼쪽에서 **보안 정책 재설정** 링크를 선택하고 **정책 재설정**을 선택합니다.
 
-클래식 포털에 적용됩니다.
+Android, iOS, Windows Phone 8.1과 같은 기타 MDM 디바이스의 경우, 덜 엄격한 정책을 적용하려면 사용을 중지하고 다시 등록해야 해야 합니다.
+
+[디바이스 등록 문제 해결](troubleshoot-device-enrollment-in-intune.md)이 유용한 리소스가 될 수 있습니다.
+
+## <a name="pcs-using-the-intune-software-client---classic-portal"></a>Intune 소프트웨어 클라이언트를 사용하는 PC - 클래식 포털
+
+> [!NOTE]
+> 이 섹션은 클래식 포털에 적용됩니다. 
 
 ### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log의 Microsoft Intune 정책 관련 오류
-Intune 소프트웨어 클라이언트로 관리되는 Windows PC의 경우 policyplatform.log 파일의 정책 오류는 디바이스의 Windows UAC(사용자 계정 컨트롤)에서 기본값이 아닌 설정을 사용한 결과일 수 있습니다. 기본값이 아닌 일부 UAC 설정은 Microsoft Intune 클라이언트 설치와 정책 실행에 영향을 줄 수 있습니다.
+
+Intune 소프트웨어 클라이언트로 관리되는 Windows PC의 경우 `policyplatform.log` 파일의 정책 오류는 디바이스의 Windows UAC(사용자 계정 컨트롤)에서 기본값이 아닌 설정을 사용한 결과일 수 있습니다. 기본값이 아닌 일부 UAC 설정은 Microsoft Intune 클라이언트 설치와 정책 실행에 영향을 줄 수 있습니다.
 
 #### <a name="resolve-uac-issues"></a>UAC 문제 해결
 
-1. 컴퓨터를 사용 중지합니다. [장치 제거](devices-wipe.md)를 참조하세요.
+1. 컴퓨터를 사용 중지합니다. [디바이스 제거](devices-wipe.md)를 참조하세요.
 
 2. 클라이언트 소프트웨어가 제거될 때까지 20분 정도 기다립니다.
 
@@ -80,9 +156,11 @@ Intune 소프트웨어 클라이언트로 관리되는 Windows PC의 경우 poli
 4. 알림 슬라이더를 기본 설정으로 이동합니다.
 
 ### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>오류: 0x80041013 컴퓨터에서 값을 가져올 수 없습니다.
-로컬 시스템의 시간이 5분 이상 동기화되지 않는 경우에 발생할 수 있습니다. 로컬 컴퓨터의 시간이 동기화되지 않으면 타임스탬프가 유효하지 않으므로 보안 트랜잭션이 실패합니다.
 
-이 문제를 해결하려면 로컬 시스템 시간을 인터넷 시간 또는 네트워크의 도메인 컨트롤러에서 설정된 시간에 최대한 가깝게 설정합니다.
+로컬 시스템의 시간이 5분 이상 동기화되지 않는 경우에 발생할 수 있습니다. 로컬 컴퓨터의 시간이 동기화되어 있지 않으면 타임스탬프가 유효하지 않으므로 보안 트랜잭션이 실패합니다.
 
-### <a name="next-steps"></a>다음 단계
-문제 해결 정보가 도움이 되지 않는 경우 [Microsoft Intune에 대한 지원을 받는 방법](get-support.md)의 설명에 따라 Microsoft 지원에 문의하세요.
+이 문제를 해결하려면 로컬 시스템 시간을 인터넷 시간에 최대한 가깝게 설정합니다. 아니면, 네트워크의 도메인 컨트롤러 시간으로 설정합니다.
+
+## <a name="next-steps"></a>다음 단계
+
+도움이 더 필요하면 [Microsoft Intune에 대한 지원 받기](get-support.md)를 참조하세요.

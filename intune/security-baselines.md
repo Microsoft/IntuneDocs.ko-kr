@@ -2,10 +2,10 @@
 title: Microsoft Intune에서 보안 기준선 사용 - Azure | Microsoft Docs
 description: 모바일 디바이스 관리용 Microsoft Intune을 사용하여 디바이스에서 사용자 및 데이터를 보호하기 위해 권장 그룹 보안 설정을 추가하거나 구성합니다. BitLocker 사용, Windows Defender Advanced Threat Protection 구성, Internet Explorer 제어, Smart Screen 사용, 로컬 보안 정책 설정, 암호 요구, 인터넷 다운로드 차단 등
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,23 +14,23 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d78adf8e7d6d2ce05951171e6248dcc8c389945d
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8102ab88e878f7976ab7946f67080c4d4f23d6b1
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070300"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690719"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune에서 Windows 10 보안 기준선 만들기
 
-보안 기준선은 Windows 10 이상을 실행하는 디바이스에서 사용할 수 있는 미리 보기 기능입니다. 이 기능에는 사용자 및 디바이스를 보호하는 데 도움이 되는 다양한 Intune 설정이 포함되어 있습니다. 또한 이러한 설정을 보안 팀에서 권장하는 값으로 자동 설정합니다. 예를 들어, 기준선은 자동으로 BitLocker를 설정하고, 디바이스를 잠금 해제하는 데 자동으로 암호를 요구하며, 기본 인증을 자동으로 비활성화하는 등의 기능을 제공합니다.
+보안 기준선은 Windows 10 이상을 실행하는 디바이스에서 사용할 수 있는 미리 보기 기능입니다. 이 기능에는 사용자 및 디바이스를 보호하는 데 도움을 줄 수 있는 Intune에서 지원되는 여러 설정이 포함되어 있습니다. 또한 이러한 설정을 보안 팀에서 권장하는 값으로 자동 설정합니다. 예를 들어, 기준선은 자동으로 BitLocker를 설정하고, 디바이스를 잠금 해제하는 데 자동으로 암호를 요구하며, 기본 인증을 자동으로 비활성화하는 등의 기능을 제공합니다.
 
 이 기능은 다음에 적용됩니다.
 
 - Windows 10 버전 1809 이상​
 
 > [!NOTE]
-> 보안 기준선은 미리 보기 상태이지만 기준선이 미리 보기 과정에서 변경될 수 있으므로 프로덕션 환경에서는 프로필을 사용하지 않는 것이 좋습니다.
+> 보안 기준선은 미리 보기 상태이지만 기준선이 미리 보기 과정에서 변경될 수 있으므로 프로덕션 환경에서는 프로필을 사용하지 않는 것이 좋습니다. 일반적으로 보안 기준선을 사용할 수 있는 경우 기존 프로필은 최신 지원 프로필로 변환되지 않습니다.
 
 보안 기준선을 사용하는 목적은 Microsoft 365로 작업할 때 엔드투엔드 보안 워크플로를 제공하는 것입니다. 몇 가지 이점은 다음과 같습니다.
 
@@ -94,6 +94,12 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 
 저장하는 즉시 Intune으로 체크 인될 때 프로필이 디바이스에 푸시됩니다. 따라서 즉시 발생할 수 있습니다.
 
+## <a name="available-security-baselines"></a>사용 가능한 보안 기준선  
+
+다음 보안 기준선은 Intune에서 사용할 수 있습니다.
+- **미리 보기: MDM 보안 기준선**
+  - 버전: [2018년 10월](security-baseline-settings-windows.md)
+
 ## <a name="q--a"></a>Q & A
 
 #### <a name="why-these-settings"></a>이러한 설정은 왜 필요한가요?
@@ -117,5 +123,5 @@ Microsoft 보안 팀은 지난 수년 동안 Windows 개발자 및 보안 커뮤
 - Microsoft Intune에서 Azure AD(Active Directory)를 사용하여 온-프레미스 Active Directory 그룹 정책을 순수 클라우드 솔루션으로 마이그레이션할 계획입니다. 이를 지원하기 위해 하이브리드 AD 및 Azure AD 조인 디바이스용으로 게시된 보조 GPO가 있습니다. 이러한 디바이스는 필요에 따라 클라우드(Intune)의 MDM 설정과 온-프레미스 도메인 컨트롤러의 그룹 정책 설정을 가져올 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
-
-상태를 확인하고 [기준선 및 프로필](security-baselines-monitor.md)을 모니터링합니다.
+- Intune에서 지원되는 [Windows 보안 기준선 설정](security-baseline-settings-windows.md)을 확인합니다.  
+- 상태를 확인하고 [기준선 및 프로필](security-baselines-monitor.md)을 모니터링합니다.
