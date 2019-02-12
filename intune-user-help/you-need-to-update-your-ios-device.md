@@ -18,17 +18,18 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: 685f3a95e525f64ead427c7d2b32a62c7f85b59e
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2b907534ab0f9b75be295d95aab1ab9d8280cdd0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031918"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841558"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS 디바이스에 필요한 최소 운영 체제 버전이 없는 경우
 
 [!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
-**설정** > **일반** > **소프트웨어 업데이트**를 탭하여 iOS 장치를 업데이트합니다.
+**설정** > **일반** > **소프트웨어 업데이트**를 탭하여 iOS 디바이스를 업데이트합니다.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

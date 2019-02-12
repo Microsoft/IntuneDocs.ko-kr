@@ -3,8 +3,8 @@ title: Microsoft Intune으로 디바이스 보호
 titleSuffix: Microsoft Intune
 description: Intune이 무단 액세스 및 기타 위협으로부터 디바이스를 보호하는 데 어떤 도움을 줄 수 있는지 알아봅니다.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/19/2018
 ms.topic: article
@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 06f14b0ba1edcde28c7f2c732ab286e80f186bf2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5743e1d24e878a84413c23c8309cda2ab0dda90
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188265"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844482"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Microsoft Intune으로 디바이스 보호
 
@@ -51,13 +52,13 @@ Intune에서는 앱과 해당 데이터를 보호하는 데 사용할 수 있는
 - 앱에 액세스하려면 PIN 필요. 자세한 내용은 [Microsoft Intune을 사용하여 앱 및 데이터 보호](app-protection-policy.md)를 참조하세요.
 
 ## <a name="add-an-additional-layer-of-protection-to-devices"></a>디바이스에 추가 보호 계층 추가
-[MFA(다단계 인증)](multi-factor-authentication.md)는 네트워크에서 장치 사용자를 인증하는 더욱 안전한 방식입니다.  MFA를 사용하는 경우에는 사용자가 사용자 이름과 암호 외에 전화 통화나 문자 메시지를 통해 신원을 확인해야 합니다.
+[MFA(다단계 인증)](multi-factor-authentication.md)는 네트워크에서 디바이스 사용자를 인증하는 더욱 안전한 방식입니다.  MFA를 사용하는 경우에는 사용자가 사용자 이름과 암호 외에 전화 통화나 문자 메시지를 통해 신원을 확인해야 합니다.
 
 ## <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Windows 디바이스에서 비즈니스용 Windows Hello 설정 제어
 Active Directory를 사용하는 Windows 10 이상 버전 또는 Azure Active Directory 계정에서 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 로그인 방법인 [비즈니스용 Windows Hello](windows-hello.md)와 Intune을 통합할 수 있습니다.
 
 ## <a name="bypass-activation-lock-on-ios-devices"></a>iOS 디바이스에서 활성화 잠금 무시
-활성화 잠금은 사용자 디바이스를 보호하는 데 도움이 되는 기능입니다. 이 기능은 누군가가 디바이스를 초기화하거나 다시 활성화하기 전에 사용자가 Apple ID와 암호를 입력하도록 요구합니다. 그러나 이 기능은 사용자가 잠금을 제거하지 않고 퇴사하는 경우 등에 문제가 발생할 수 있습니다. [iOS 활성화 잠금 무시]( device-activation-lock-bypass.md)는 감독 되는 iOS 장치에서 잠금을 제거하여 장치를 다시 할당하거나 지울 수 있도록 합니다.
+활성화 잠금은 사용자 디바이스를 보호하는 데 도움이 되는 기능입니다. 이 기능은 누군가가 디바이스를 초기화하거나 다시 활성화하기 전에 사용자가 Apple ID와 암호를 입력하도록 요구합니다. 그러나 이 기능은 사용자가 잠금을 제거하지 않고 퇴사하는 경우 등에 문제가 발생할 수 있습니다. [iOS 활성화 잠금 무시]( device-activation-lock-bypass.md)는 감독 되는 iOS 디바이스에서 잠금을 제거하여 디바이스를 다시 할당하거나 지울 수 있도록 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

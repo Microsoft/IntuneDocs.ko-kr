@@ -16,16 +16,17 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1a6019365b03a54e5897bc8788c171ef969e0d1e
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ec227fc3057f80e94ae58ce68c19f06b7dba8bc5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032384"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848477"
 ---
 # <a name="reference-for-application-entities"></a>애플리케이션 엔터티에 대한 참조
 
-**응용 프로그램** 범주는 다음과 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
+**애플리케이션** 범주는 다음과 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
 
   -  앱 버전
   -  앱의 설치 원본
@@ -106,7 +107,7 @@ ms.locfileid: "53032384"
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 
-**ApplicationInventory** 엔터티는 인벤토리 수집 시점에 장치에서 발견된 응용 프로그램을 나열합니다.
+**ApplicationInventory** 엔터티는 인벤토리 수집 시점에 장치에서 발견된 애플리케이션을 나열합니다.
 
 | 속성  | 설명 |
 |---------|------------|
@@ -118,7 +119,7 @@ ms.locfileid: "53032384"
 
 ## <a name="mobileappinstallstate"></a>MobileAppInstallState
 
-**MobileAppInstallState** 엔터티는 장치, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 응용 프로그램의 설치 상태를 나타냅니다.
+**MobileAppInstallState** 엔터티는 장치, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 애플리케이션의 설치 상태를 나타냅니다.
 
 | 속성 | 설명 |
 |---|---|
@@ -128,7 +129,7 @@ ms.locfileid: "53032384"
 
 ## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-**MobileAppDeviceUserInstallStatus**는 지정된 장치 및 사용자의 모바일 앱 설치 상태를 나타냅니다.
+**MobileAppDeviceUserInstallStatus**는 지정된 디바이스 및 사용자의 모바일 앱 설치 상태를 나타냅니다.
 
 
 |      속성      |                                                         설명                                                         |

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365에서 디바이스 관리
-description: Microsoft 365 Enterprise는 Microsoft Intune을 포함하고 있습니다. Intune이 조직에 일반 시나리오를 포함하여 모바일 디바이스 관리 및 모바일 응용 프로그램 관리를 제공하는 방법과 Intune을 사용하여 환경에 Microsoft 365를 배포하는 방법을 알아보세요.
+description: Microsoft 365 Enterprise는 Microsoft Intune을 포함하고 있습니다. Intune이 조직에 일반 시나리오를 포함하여 모바일 장치 관리 및 모바일 애플리케이션 관리를 제공하는 방법과 Intune을 사용하여 환경에 Microsoft 365를 배포하는 방법을 알아보세요.
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
@@ -15,20 +15,21 @@ ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 83ac68e1f6efa9e5b0c1ee0e031d36989b634edd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b4f69673e6cb91e18469922d7b2277bc5b6936d9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185222"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845470"
 ---
 # <a name="what-is-device-management"></a>디바이스 관리란? 
 
-모든 관리자의 주요 작업은 조직의 리소스와 데이터를 안전하게 보호하는 것입니다. 이 작업이 디바이스 관리입니다. 사용자는 여러 디바이스를 사용하여 개인 파일을 열고 공유하고, 웹 사이트를 방문하고, 앱과 게임을 설치합니다. 이러한 사용자는 직원인 동시에 학생이며, 자신의 디바이스를 사용하여 이메일, OneNote 등의 회사 및 학교 리소스에 액세스할 수 있기를 원합니다. *장치 관리*는 조직에서 리소스 및 데이터를 보호할 수 있게 해줍니다. 
+모든 관리자의 주요 작업은 조직의 리소스와 데이터를 안전하게 보호하는 것입니다. 이 작업이 디바이스 관리입니다. 사용자는 여러 디바이스를 사용하여 개인 파일을 열고 공유하고, 웹 사이트를 방문하고, 앱과 게임을 설치합니다. 이러한 사용자는 직원인 동시에 학생이며, 자신의 디바이스를 사용하여 이메일, OneNote 등의 회사 및 학교 리소스에 액세스할 수 있기를 원합니다. *디바이스 관리*는 조직에서 리소스 및 데이터를 보호할 수 있게 해줍니다. 
 
 디바이스 관리 공급자를 사용하는 조직은 승인된 개인과 디바이스만이 조직 소유의 정보에 액세스할 수 있도록 관리할 수 있습니다. 마찬가지로, 디바이스 사용자는 자신의 디바이스가 조직의 보안 요구 사항을 충족한다는 사실을 알고 있기 때문에 안심하고 휴대폰으로 회사 데이터에 액세스할 수 있습니다. 조직의 입장에서 **리소스를 보호하려면 어떻게 해야 하나요?** 라는 질문을 할 수 있습니다.
 
-이에 대한 대답은 [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune)입니다. Intune은 MDM(모바일 디바이스 관리) 및 MAM(모바일 응용 프로그램 관리)을 제공합니다. MAM 또는 MDM 솔루션의 핵심 작업은 다음과 같습니다.
+이에 대한 대답은 [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune)입니다. Intune은 MDM(모바일 장치 관리) 및 MAM(모바일 애플리케이션 관리)을 제공합니다. MAM 또는 MDM 솔루션의 핵심 작업은 다음과 같습니다.
 
 - 다양한 모바일 환경 지원 &mdash; iOS, Android, Windows 및 macOS 디바이스를 안전하게 관리합니다.
 - 디바이스와 앱이 조직의 보안 요구 사항을 준수하도록 보장합니다.
@@ -44,7 +45,7 @@ Microsoft를 비롯한 여러 조직에서는 사용자가 회사 소유 디바�
 
 Intune을 사용하면 사용자별로 여러 디바이스를 관리하고 iOS, macOS, Android 및 Windows를 포함하여 각 디바이스에서 실행되는 여러 플랫폼을 관리할 수 있습니다. Intune은 디바이스 플랫폼에 따라 정책과 설정을 분리하므로 특정 플랫폼의 디바이스를 쉽게 관리하고 살펴볼 수 있습니다.
 
-**[일반적인 시나리오](https://docs.microsoft.com/intune/common-scenarios)** 는 모바일 장치를 사용할 때 자주 발생하는 문제를 Intune이 어떻게 해결하는지 볼 수 있는 유용한 리소스입니다. 다음과 같은 시나리오를 찾을 수 있습니다.  
+**[일반적인 시나리오](https://docs.microsoft.com/intune/common-scenarios)** 는 모바일 디바이스를 사용할 때 자주 발생하는 문제를 Intune이 어떻게 해결하는지 볼 수 있는 유용한 리소스입니다. 다음과 같은 시나리오를 찾을 수 있습니다.  
 - 온-프레미스 Exchange를 사용하여 이메일 보호
 - Office 365에 안전하게 액세스
 - 개인용 디바이스를 사용하여 조직 리소스에 액세스
@@ -54,12 +55,12 @@ Intune을 사용하면 사용자별로 여러 디바이스를 관리하고 iOS, 
 
 - **Microsoft 365**는 일반적인 IT 작업을 간소화하는 핵심 구성 요소입니다. Microsoft 365 관리 센터를 사용하면 사용자를 만들고, 그룹을 관리하고, Intune, Azure Active Directory 등의 다른 서비스에 액세스할 수 있습니다. 예를 들어 Microsoft 365에서 iOS 디바이스 그룹을 만들 수 있습니다. 그런 다음, Intune을 사용하여 앱 스토어 액세스, iCloud에 백업, Apple 웹 필터 사용 등과 같은 iOS 기능에 집중하는 정책을 iOS 디바이스 그룹에 푸시합니다.
 
-- **Windows Defender**는 Windows 10 장치를 보호하는 여러 보안 기능을 갖추고 있습니다. 예를 들어 Intune 및 Windows Defender를 함께 사용하여 다음을 수행할 수 있습니다. 
+- **Windows Defender**는 Windows 10 디바이스를 보호하는 여러 보안 기능을 갖추고 있습니다. 예를 들어 Intune 및 Windows Defender를 함께 사용하여 다음을 수행할 수 있습니다. 
 
-    - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10)으로 모바일 장치의 파일 및 앱에서 의심스러운 활동을 검색합니다. 
-    - [Windows Defender ATP(Advanced Threat Protection)](https://docs.microsoft.com/intune/advanced-threat-protection)를 사용하여 모바일 장치에서 보안 위반을 방지하고, 회사 리소스에서 사용자를 차단하여 보안 위반의 영향을 제한합니다.
+    - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10)으로 모바일 디바이스의 파일 및 앱에서 의심스러운 활동을 검색합니다. 
+    - [Windows Defender ATP(Advanced Threat Protection)](https://docs.microsoft.com/intune/advanced-threat-protection)를 사용하여 모바일 디바이스에서 보안 위반을 방지하고, 회사 리소스에서 사용자를 차단하여 보안 위반의 영향을 제한합니다.
 
-- **조건부 액세스**는 Azure Active Directory의 기능이며 Intune과 원활하게 통합됩니다. [조건부 액세스](https://docs.microsoft.com/intune/conditional-access)를 사용하면 규정을 준수하는 장치에만 이메일, SharePoint 및 기타 앱에 대한 액세스를 허용할 수 있습니다. 
+- **조건부 액세스**는 Azure Active Directory의 기능이며 Intune과 원활하게 통합됩니다. [조건부 액세스](https://docs.microsoft.com/intune/conditional-access)를 사용하면 규정을 준수하는 디바이스에만 이메일, SharePoint 및 기타 앱에 대한 액세스를 허용할 수 있습니다. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>상황에 맞는 디바이스 관리 솔루션 선택
 
@@ -73,13 +74,13 @@ Intune을 설정할 때 오직 Azure Portal에서만 디바이스를 관리하�
 
 ## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>디바이스 관리 대시보드를 사용하여 IT 작업 간소화
 
-[장치 관리 대시보드](https://devicemanagement.portal.azure.com/)는 모바일 장치에 대한 작업을 관리하고 완료할 수 있는 원스톱 매장입니다. 이 대시보드에는 Intune 및 Azure Active Directory를 비롯한 디바이스와 클라이언트 앱 관리에 사용되는 서비스가 포함되어 있습니다. 
+[디바이스 관리 대시보드](https://devicemanagement.portal.azure.com/)는 모바일 디바이스에 대한 작업을 관리하고 완료할 수 있는 원스톱 매장입니다. 이 대시보드에는 Intune 및 Azure Active Directory를 비롯한 디바이스와 클라이언트 앱 관리에 사용되는 서비스가 포함되어 있습니다. 
 
 디바이스 관리 대시보드에서 다음을 수행할 수 있습니다.
 
-- [장치 등록](https://docs.microsoft.com/intune/device-enrollment)
-- [장치 준수 설정](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [장치 관리](https://docs.microsoft.com/intune/device-management)
+- [디바이스 등록](https://docs.microsoft.com/intune/device-enrollment)
+- [디바이스 준수 설정](https://docs.microsoft.com/intune/device-compliance-get-started)
+- [디바이스 관리](https://docs.microsoft.com/intune/device-management)
 - [앱 관리](https://docs.microsoft.com/intune/app-management)  
 - [iOS 전자책](https://docs.microsoft.com/intune/vpp-ebooks-ios)  
 - [Exchange On-premises Connector 설치](https://docs.microsoft.com/intune/exchange-connector-install)  

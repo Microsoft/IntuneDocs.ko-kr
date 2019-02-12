@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 86cd3f37215ec42cc89c865136e6ecd5dc3b9c11
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f8353b704df7ebdc648e5b223b80e656ca05956a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863011"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848681"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile에서 발견된 위협 해결
 
@@ -36,7 +37,7 @@ SEP(Symantec Endpoint Protection) Mobile은 Android 디바이스에서 잠재적
 
 ## <a name="troubleshoot-a-virus-or-security-threat"></a>바이러스 또는 보안 위협 해결
 
-1. 회사 이메일 또는 웹 사이트에 액세스하려고 할 때 아래 스크린샷에 표시된 것과 같은 메시지를 받게 됩니다. **장치 관리 포털** 링크를 탭하여 [회사 포털 웹 사이트](https://portal.manage.microsoft.com/devices)를 엽니다.
+1. 회사 이메일 또는 웹 사이트에 액세스하려고 할 때 아래 스크린샷에 표시된 것과 같은 메시지를 받게 됩니다. **디바이스 관리 포털** 링크를 탭하여 [회사 포털 웹 사이트](https://portal.manage.microsoft.com/devices)를 엽니다.
 
     ![회사 포털 웹 사이트에 대한 링크 및 파란색 확인 단추가 있는 Lookout for Work 오류 메시지의 예제 스크린샷](./media/mtd-go-to-device-management-portal-android.png)  
 

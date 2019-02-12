@@ -2,8 +2,8 @@
 title: Microsoft Intune에서 보안 기준의 성공 또는 실패 확인 - Azure | Microsoft Docs
 description: Microsoft Intune MDM에서 사용자 및 디바이스에 보안 기준을 배포하는 경우 오류, 충돌 및 성공 상태를 확인합니다. Intune에서 클라이언트 로그 및 보고서 기능을 사용하여 문제를 해결하는 방법을 참조하세요.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/24/2019
 ms.topic: article
@@ -14,12 +14,13 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28a98a20e5f0b5181628da46ccd662f1f8f503dd
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bfbdad6d98065a691528d4cdada0b6f9377e1109
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070312"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848239"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Microsoft Intune에서 보안 기준 및 프로필 모니터링
 

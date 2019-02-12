@@ -17,12 +17,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 290d60732130a82fb3daf7779142605ebc0bfeaa
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0cfcc64418c105e92187cb8eb229f955a7d58681
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53113006"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850354"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune의 새로운 기능 - 지난 달
 
@@ -48,11 +49,11 @@ Android Enterprise(이전의 Android for Work)는 그룹 포함 및 제외를 �
 ### <a name="device-management"></a>디바이스 관리
 
 ### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>모든 디바이스를 IE, Microsoft Edge 또는 Chrome의 CSV 파일로 내보내기 <!-- 2258071 -->
-**장치** > **모든 장치**에서 장치를 CSV로 서식이 지정된 목록으로 **내보낼** 수 있습니다. 10,000개 이상의 장치가 있는 IE(Internet Explorer) 사용자는 해당 장치를 여러 파일로 성공적으로 내보낼 수 있습니다. 각 파일에는 최대 10,000개의 디바이스가 있습니다.
+**디바이스** > **모든 디바이스**에서 디바이스를 CSV로 서식이 지정된 목록으로 **내보낼** 수 있습니다. 10,000개 이상의 디바이스가 있는 IE(Internet Explorer) 사용자는 해당 디바이스를 여러 파일로 성공적으로 내보낼 수 있습니다. 각 파일에는 최대 10,000개의 디바이스가 있습니다.
 
-30,000개 이상의 장치가 있는 Edge 및 Chrome 사용자는 해당 장치를 여러 파일로 성공적으로 내보낼 수 있습니다. 각 파일에는 최대 30,000개의 디바이스가 있습니다.
+30,000개 이상의 디바이스가 있는 Microsoft Edge 및 Chrome 사용자는 해당 디바이스를 여러 파일로 성공적으로 내보낼 수 있습니다. 각 파일에는 최대 30,000개의 디바이스가 있습니다.
 
-[장치 관리](device-management.md)에서는 관리하는 장치에서 수행할 수 있는 작업에 대한 자세한 세부 정보를 제공합니다.
+[디바이스 관리](device-management.md)에서는 관리하는 디바이스에서 수행할 수 있는 작업에 대한 자세한 세부 정보를 제공합니다.
 
 #### <a name="new-security-enhancements-in-the-intune-service-----1637539---"></a>Intune 서비스의 새로운 보안 강화 기능 <!-- 1637539 -->   
 
@@ -81,9 +82,9 @@ Intune 서비스 3월 업데이트에서 기본 설정/해제 상태는 바로 U
 사용자 그룹의 사용자를 준수 정책의 대상으로 지정할 수 있습니다. 이 업데이트에서는 준수 정책을 디바이스 그룹의 디바이스 대상으로 지정할 수 있습니다. 디바이스 그룹의 일부로 대상이 지정된 디바이스는 준수 작업을 수신하지 않습니다.
 
 #### <a name="new-management-name-column----1333586---"></a>새 관리 이름 열 <!-- 1333586 -->
- **관리 이름**이라는 새 열은 장치 블레이드에 지원됩니다. 이 이름은 다음 수식에 따라 디바이스당 할당된 자동 생성되고 편집할 수 없는 이름입니다.
+ **관리 이름**이라는 새 열은 디바이스 블레이드에 지원됩니다. 이 이름은 다음 수식에 따라 디바이스당 할당된 자동 생성되고 편집할 수 없는 이름입니다.
 - 모든 디바이스에 대한 기본 이름: <username><em><devicetype></em><enrollmenttimestamp>
-- 대량으로 추가된 장치에 대해: <PackageId/ProfileId><em><DeviceType></em><EnrollmentTime>
+- 대량으로 추가된 디바이스에 대해: &lt;PackageId/ProfileId&gt;<em><DeviceType></em><EnrollmentTime>
 
 이 열은 디바이스 블레이드에서 선택적입니다. 이 열은 기본으로 지원되지 않고 열 선택기를 사용해서만 액세스할 수 있습니다. 디바이스 이름은 이 새 열에서 영향을 받지 않습니다.
 
@@ -219,8 +220,8 @@ Windows 10 RS1 이상에서 디바이스가 실행 중인 경우 스토어에서
 
 #### <a name="mam-protection-policies-targeted-based-on-management-state----1665993---"></a>관리 상태에 따라 대상으로 지정된 MAM 보호 정책 <!-- 1665993 -->
 디바이스의 관리 상태에 따라 MAM 정책을 대상으로 지정할 수 있습니다.
-- **Android 장치** - 관리되지 않는 장치, Intune 관리 장치 및 Intune 관리 Android Enterprise 프로필(이전의 Android for Work)을 대상으로 지정할 수 있습니다.
-- **iOS 장치** - 관리되지 않는 장치(MAM만 해당) 또는 Intune 관리 장치를 대상으로 지정할 수 있습니다.
+- **Android 디바이스** - 관리되지 않는 디바이스, Intune 관리 디바이스 및 Intune 관리 Android Enterprise 프로필(이전의 Android for Work)을 대상으로 지정할 수 있습니다.
+- **iOS 디바이스** - 관리되지 않는 디바이스(MAM만 해당) 또는 Intune 관리 디바이스를 대상으로 지정할 수 있습니다.
 
     > [!NOTE]
     > - 이 기능에 대한 iOS 지원은 2018년 4월까지 출시됩니다.
@@ -283,7 +284,7 @@ PrinterOn의 무선 모바일 인쇄 솔루션을 사용하면 사용자가 보�
 
 #### <a name="windows-defender-health-status-and-threat-status-reports---854704---"></a>Windows Defender 상태 및 위협 상태 보고서 <!--854704 -->
 
-Windows Defender의 상태를 이해하는 것은 Windows PC 관리의 핵심입니다.  이 업데이트를 사용해 Intune은 Windows Defender 에이전트의 상태에 새 보고서와 작업을 추가합니다. [장치 정책 준수 워크로드](compliance-policy-monitor.md)에 상태 롤업 보고서를 사용하면 다음 작업이 필요한 장치를 볼 수 있습니다.
+Windows Defender의 상태를 이해하는 것은 Windows PC 관리의 핵심입니다.  이 업데이트를 사용해 Intune은 Windows Defender 에이전트의 상태에 새 보고서와 작업을 추가합니다. [디바이스 정책 준수 워크로드](compliance-policy-monitor.md)에 상태 롤업 보고서를 사용하면 다음 작업이 필요한 디바이스를 볼 수 있습니다.
 - 서명 업데이트
 - 다시 시작
 - 수동 작업
@@ -293,7 +294,7 @@ Windows Defender의 상태를 이해하는 것은 Windows PC 관리의 핵심입
 각 상태 범주에 대한 드릴인 보고서에는 주의가 필요한 개별 PC 또는 **정리**로 보고되는 PC가 나열됩니다.
 
 #### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>디바이스 제안에 대한 새로운 개인 정보 설정 <!--1308926 -->
-장치에 [두 가지 새로운 개인 정보 설정](device-restrictions-windows-10.md#privacy)이 제공됩니다.
+디바이스에 [두 가지 새로운 개인 정보 설정](device-restrictions-windows-10.md#privacy)이 제공됩니다.
 - **사용자 작업 게시**: 이 옵션을 **차단**으로 설정하면 작업 전환기에서 공유 경험 및 최근에 사용된 리소스 검색이 제한됩니다.
 - **로컬 작업만**: 이 옵션을 **차단**으로 설정하면 로컬 작업에 대해서만 작업 전환기에서 공유 경험 및 최근에 사용된 리소스 검색이 제한됩니다.
 
@@ -399,7 +400,7 @@ Gmail 앱을 Android for Work 프로필에 배포하면, Android for Work 디바
 하나 이상의 iOS VPP(Volume-Purchase Program) 앱이 설치된 지정된 디바이스의 경우 디바이스의 관련 디바이스 기반 앱 라이선스를 철회할 수 있습니다. 앱 라이선스를 철회해도 디바이스에서 관련 VPP 앱이 제거되지 않습니다. VPP 앱을 제거하려면 할당 작업을 **제거**로 변경해야 합니다. 자세한 내용은 [Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 앱을 관리하는 방법](vpp-apps-ios.md)을 참조하세요.
 
 #### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>기본 제공 앱 유형을 사용하여 iOS 및 Android 디바이스에 Office 365 모바일 앱 할당<!-- 1332318 -->
-**기본 제공** 앱 유형을 사용하면 사용자가 관리하는 iOS 및 Android 장치에 Office 365 앱을 손쉽게 만들고 할당할 수 있습니다. 이러한 앱에는 Word, Excel, PowerPoint 및 OneDrive와 같은 0365 앱이 포함됩니다. 특정 앱을 앱 유형에 할당하고, 앱 정보 구성을 편집할 수 있습니다.
+**기본 제공** 앱 유형을 사용하면 사용자가 관리하는 iOS 및 Android 디바이스에 Office 365 앱을 손쉽게 만들고 할당할 수 있습니다. 이러한 앱에는 Word, Excel, PowerPoint 및 OneDrive와 같은 0365 앱이 포함됩니다. 특정 앱을 앱 유형에 할당하고, 앱 정보 구성을 편집할 수 있습니다.
 
 #### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>그룹에 따라 앱 할당 포함 및 제외 <!-- 1406920 -->
 
@@ -409,7 +410,7 @@ Gmail 앱을 Android for Work 프로필에 배포하면, Android for Work 디바
 
 #### <a name="you-can-assign-an-application-configuration-policy-to-groups-by-including-and-excluding-assignments-----1480316---"></a>할당을 포함하거나 제외하여 애플리케이션 구성 정책을 그룹에 할당할 수 있습니다. <!-- 1480316 -->
 
-포함 및 제외 할당의 조합을 사용하여 사용자 및 디바이스 그룹에 응용 프로그램 구성 정책을 할당할 수 있습니다. 할당을 그룹의 사용자 정의 선택 또는 가상 그룹으로 선택할 수 있습니다. 가상 그룹은 **모든 사용자**, **모든 디바이스** 또는 **모든 사용자 + 모든 디바이스**를 포함할 수 있습니다.
+포함 및 제외 할당의 조합을 사용하여 사용자 및 장치 그룹에 애플리케이션 구성 정책을 할당할 수 있습니다. 할당을 그룹의 사용자 정의 선택 또는 가상 그룹으로 선택할 수 있습니다. 가상 그룹은 **모든 사용자**, **모든 디바이스** 또는 **모든 사용자 + 모든 디바이스**를 포함할 수 있습니다.
 
 #### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Windows 10 버전 업그레이드 정책에 대한 지원  <!-- 903672(archived), 1119689 -->  
 Windows 10 디바이스를 Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education 및 Windows 10 Professional Education N으로 업그레이드하는 Windows 10 버전 업그레이드 정책을 만들 수 있습니다. Windows 10 버전 업그레이드에 대한 자세한 내용은 [Windows 10 버전 업그레이드 구성 방법](edition-upgrade-configure-windows-10.md)을 참조하세요.
@@ -439,7 +440,7 @@ Windows 디바이스를 사용하는 최종 사용자는 회사 포털 앱에서
 ### <a name="device-configuration"></a>디바이스 구성
 
 #### <a name="new-automatic-redeployment-setting----1469168---"></a>새 자동 재배포 설정 <!-- 1469168 -->
-**자동 재배포** 설정은 관리 권한을 가진 사용자가 장치 잠금 화면에서 **CTRL + Win + R**을 사용하여 모든 사용자 데이터 및 설정을 삭제할 수 있습니다. 디바이스가 자동으로 재구성되고 관리에 다시 등록됩니다. 이 설정은 Windows 10 > [장치 제한] > [일반] > [자동 재배포]에서 찾을 수 있습니다. 자세한 내용은 [Windows 10에 대한 Intune 디바이스 제한 설정](device-restrictions-windows-10.md#general)을 참조하세요.
+**자동 재배포** 설정은 관리 권한을 가진 사용자가 디바이스 잠금 화면에서 **CTRL + Win + R**을 사용하여 모든 사용자 데이터 및 설정을 삭제할 수 있습니다. 디바이스가 자동으로 재구성되고 관리에 다시 등록됩니다. 이 설정은 Windows 10 &gt; [디바이스 제한] &gt; [일반] &gt; [자동 재배포]에서 찾을 수 있습니다. 자세한 내용은 [Windows 10에 대한 Intune 디바이스 제한 설정](device-restrictions-windows-10.md#general)을 참조하세요.
 
 #### <a name="support-for-additional-source-editions-in-the-windows-10-edition-upgrade-policy-----903672--1119689---"></a>Windows 10 버전 업그레이드 정책에서 추가 소스 버전 지원 <!-- 903672,  1119689 -->
 이제 Windows 10 버전 업그레이드 정책을 사용하여 추가 Windows 10 버전(Windows 10 Pro, Windows 10 Pro for Education, Windows 10 클라우드 등)에서 업그레이드할 수 있습니다. 이 릴리스 이전에는 지원되는 버전 업그레이드 경로가 더 제한적이었습니다. 자세한 내용은 [Windows 10 버전 업그레이드를 구성하는 방법](edition-upgrade-configure-windows-10.md)을 참조하세요.
@@ -475,11 +476,11 @@ Intune에서 SCEP 인증서 프로필을 만드는 경우 이제 사용자 지�
 ### <a name="device-management"></a>디바이스 관리
 
 #### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine----1592747---"></a>Intune의 디바이스 준수 엔진을 사용하여 Jamf에 등록된 macOS 디바이스 관리 <!-- 1592747 -->
-이제 Jamf를 사용하여 macOS 디바이스 상태 정보를 Intune에 전송할 수 있으며, Intune은 Intune 콘솔에 정의된 정책을 사용하여 디바이스의 준수 여부를 평가합니다. 디바이스 준수 상태 및 기타 조건(예: 위치, 사용자 위험 등)에 기반을 둔 조건부 액세스는 Office 365를 비롯하여 Azure AD와 연결된 클라우드 및 온-프레미스 응용 프로그램에 액세스하는 macOS 디바이스에 대한 준수를 적용합니다. [Jamf 통합 설정](conditional-access-integrate-jamf.md) 및 [Jamf 관리 장치에 대해 준수 적용](conditional-access-assign-jamf.md)에 대해 자세히 알아보세요.
+이제 Jamf를 사용하여 macOS 디바이스 상태 정보를 Intune에 전송할 수 있으며, Intune은 Intune 콘솔에 정의된 정책을 사용하여 디바이스의 준수 여부를 평가합니다. 장치 준수 상태 및 기타 조건(예: 위치, 사용자 위험 등)에 기반을 둔 조건부 액세스는 Office 365를 비롯하여 Azure AD와 연결된 클라우드 및 온-프레미스 애플리케이션에 액세스하는 macOS 장치에 대한 준수를 적용합니다. [Jamf 통합 설정](conditional-access-integrate-jamf.md) 및 [Jamf 관리 디바이스에 대해 준수 적용](conditional-access-assign-jamf.md)에 대해 자세히 알아보세요.
 
 #### <a name="new-ios-device-action------1424701---"></a>새로운 iOS 디바이스 작업 <!-- 1424701 -->
 
-이제 iOS 10.3 감독 디바이스를 종료할 수 있습니다. 이 작업을 수행하면 최종 사용자에게 경고하지 않고 디바이스가 즉시 종료됩니다. **장치** 워크로드에서 장치를 선택하면 장치 속성에서 **시스템 종료(감독 모드인 경우에만)** 작업을 찾을 수 있습니다.
+이제 iOS 10.3 감독 디바이스를 종료할 수 있습니다. 이 작업을 수행하면 최종 사용자에게 경고하지 않고 디바이스가 즉시 종료됩니다. **디바이스** 워크로드에서 디바이스를 선택하면 디바이스 속성에서 **시스템 종료(감독 모드인 경우에만)** 작업을 찾을 수 있습니다.
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>Samsung Knox 디바이스의 날짜/시간 변경 허용 안함 <!-- 1468103 -->
 
@@ -598,18 +599,18 @@ Intune은 Android 플랫폼과는 독립적으로 Android for Work 디바이스�
 
 | Setting | 기본 디바이스 유형 제한에서의 Android for Work 상태 | 참고 |
 | --- | --- | --- |
-| **모든 장치를 Android로 관리** | 차단됨 | 모든 Android 디바이스는 Android for Work 없이 등록해야 합니다. |
-| **지원되는 장치를 Android for Work로 관리** | 허용됨 | Android for Work를 지원하는 모든 Android 디바이스는 Android for Work로 등록해야 합니다. |
-| **이러한 그룹의 사용자만을 위해 지원되는 장치를 Android for Work로 관리** | 차단됨 | 기본값을 재정의하기 위해 별도 디바이스 유형 제한 정책이 만들어졌습니다. 이 정책은 Android for Work 등록을 허용하도록 이전에 선택한 그룹을 정의합니다. 선택된 그룹 내 사용자는 Android for Work 디바이스를 등록할 수 있도록 계속 허용됩니다. 다른 모든 사용자는 Android for Work 등록에 제한을 받습니다. |
+| **모든 디바이스를 Android로 관리** | 차단됨 | 모든 Android 디바이스는 Android for Work 없이 등록해야 합니다. |
+| **지원되는 디바이스를 Android for Work로 관리** | 허용됨 | Android for Work를 지원하는 모든 Android 디바이스는 Android for Work로 등록해야 합니다. |
+| **이러한 그룹의 사용자만을 위해 지원되는 디바이스를 Android for Work로 관리** | 차단됨 | 기본값을 재정의하기 위해 별도 디바이스 유형 제한 정책이 만들어졌습니다. 이 정책은 Android for Work 등록을 허용하도록 이전에 선택한 그룹을 정의합니다. 선택된 그룹 내 사용자는 Android for Work 디바이스를 등록할 수 있도록 계속 허용됩니다. 다른 모든 사용자는 Android for Work 등록에 제한을 받습니다. |
 
 모든 경우에 사용자의 의도한 규정이 유지됩니다. 사용자 환경에서 Android for Work의 전역 또는 그룹별 허용 한도를 유지하기 위한 별도의 작업은 필요하지 않습니다.
 
 ### <a name="google-play-protect-support-on-android----908720---"></a>Android에서 Google Play 보호 지원 <!-- 908720 -->
 
 Android Oreo가 출시되면서 Google은 사용자와 조직이 보안 앱과 보안 Android 이미지를 실행할 수 있는 Google Play 보호라는 보안 기능 제품군을 소개합니다. 이제 Intune은 SafetyNet 원격 증명을 비롯하여 Google Play 보호 기능을 지원합니다. 관리자는 Google Play 보호를 구성하고 정상 상태를 유지하는 데 필요한 준수 정책 요구 사항을 설정할 수 있습니다.
-**SafetyNet 장치 증명** 설정은 장치가 정상 상태이고 손상되지 않았음을 확인하기 위해 장치를 Google 서비스에 연결하도록 합니다. 또한 관리자는 Google Play 서비스에서 설치된 앱을 확인하도록 하기 위해 Android for Work에 대한 구성 프로필 설정을 설정할 수 있습니다. 디바이스가 Google Play 보호 요구 사항을 준수하지 않는 경우 조건부 액세스는 사용자가 회사 리소스에 액세스하는 것을 차단합니다.
+**SafetyNet 디바이스 증명** 설정은 디바이스가 정상 상태이고 손상되지 않았음을 확인하기 위해 디바이스를 Google 서비스에 연결하도록 합니다. 또한 관리자는 Google Play 서비스에서 설치된 앱을 확인하도록 하기 위해 Android for Work에 대한 구성 프로필 설정을 설정할 수 있습니다. 디바이스가 Google Play 보호 요구 사항을 준수하지 않는 경우 조건부 액세스는 사용자가 회사 리소스에 액세스하는 것을 차단합니다.
 
-- [Google Play 보호를 사용하도록 설정하기 위해 장치 준수 정책을 만드는 방법](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect)을 알아봅니다.
+- [Google Play 보호를 사용하도록 설정하기 위해 디바이스 준수 정책을 만드는 방법](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect)을 알아봅니다.
 
 ### <a name="text-protocol-allowed-from-managed-apps----1414050----"></a>관리되는 앱에서 허용하는 텍스트 프로토콜 <!-- 1414050  -->
 
@@ -618,7 +619,7 @@ Intune 앱 SDK로 관리되는 앱에서 SMS 메시지를 보낼 수 있습니�
 
 ### <a name="app-install-report-updated-to-include-install-pending-status----1249446---"></a>설치 보류 중 상태를 포함하도록 앱 설치 보고서 업데이트 <!-- 1249446 -->  
 
-**클라이언트 앱**의 **앱** 목록을 통해 각 앱에 액세스할 수 있는 **앱 설치 상태** 보고서에 이제 사용자와 장치에 대한 **설치 보류 중** 수가 포함됩니다.
+**클라이언트 앱**의 **앱** 목록을 통해 각 앱에 액세스할 수 있는 **앱 설치 상태** 보고서에 이제 사용자와 디바이스에 대한 **설치 보류 중** 수가 포함됩니다.
 
 ### <a name="ios-11-app-inventory-api-for-mobile-threat-detection----1391759---"></a>모바일 위협 요소 탐지를 위한 iOS 11 앱 인벤토리 API<!-- 1391759 -->
 
@@ -744,7 +745,7 @@ Windows AutoPilot 할당되지 않은 디바이스에 대한 새 경고는 **Mic
 - 구독자의 통신사
 
 ### <a name="set-access-for-apps-by-minimum-android-security-patch-on-the-device---1278463---"></a>디바이스에 대한 최소 Android 보안 패치를 기준으로 앱에 대한 액세스 권한 설정<!-- 1278463 -->   
-관리자는 관리되는 계정 아래에서 관리되는 응용 프로그램에 대한 액세스 권한을 얻기 위해 디바이스에 설치해야 하는 최소 Android 보안 패치를 정의할 수 있습니다.
+관리자는 관리되는 계정 아래에서 관리되는 애플리케이션에 대한 액세스 권한을 얻기 위해 장치에 설치해야 하는 최소 Android 보안 패치를 정의할 수 있습니다.
 
 > [!Note]  
 > 이 기능은 Android 6.0 이상 디바이스에서 Google에 의해 릴리스된 보안 패치만을 제한합니다.
@@ -764,7 +765,7 @@ Windows AutoPilot 할당되지 않은 디바이스에 대한 새 경고는 **Mic
 "Endpoint Protection" 프로필의 디바이스 구성 프로필에서 Application Guard를 찾을 수 있습니다. 여기에서부터 관리자는 가상화된 브라우저와 호스트 컴퓨터, 트러스트되지 않은 사이트와 신뢰할 수 있는 사이트 간에 상호 작용을 구성하고 가상화된 브라우저에서 생성된 데이터를 저장할 수 있습니다. 디바이스에서 Application Guard를 사용하려면 네트워크 경계를 먼저 구성해야 합니다. 디바이스에 네트워크 경계를 하나만 정의해야 합니다.  
 
 ### <a name="windows-defender-application-control-on-windows-10-enterprise-provides-mode-to-trust-only-authorized-apps----1031096---"></a>Windows 10 Enterprise에서 Windows Defender 애플리케이션 제어는 인증된 앱만 신뢰하는 모드를 제공합니다.<!-- 1031096 -->    
-수천 개의 새로운 악성 파일이 매일 생성되기 때문에 바이러스 백신 서명 기반 감지를 사용하여 맬웨어에 대항하는 방법은 더 이상 새로운 공격에 대한 적절한 방어를 제공할 수 없습니다. Windows 10 Enterprise에서 Windows Defender 응용 프로그램 제어를 사용하면 디바이스 구성을 변경할 수 있습니다(변경 전: 앱을 바이러스 백신 또는 기타 보안 솔루션으로 차단하지 않으면 신뢰할 수 있는 모드, 변경 후: 운영 체제가 기업에서 권한을 부여한 앱만을 신뢰하는 모드). Windows Defender 애플리케이션 제어에서 앱에 트러스트를 할당합니다.
+수천 개의 새로운 악성 파일이 매일 생성되기 때문에 바이러스 백신 서명 기반 감지를 사용하여 맬웨어에 대항하는 방법은 더 이상 새로운 공격에 대한 적절한 방어를 제공할 수 없습니다. Windows 10 Enterprise에서 Windows Defender 애플리케이션 제어를 사용하면 장치 구성을 변경할 수 있습니다(변경 전: 앱을 바이러스 백신 또는 기타 보안 솔루션으로 차단하지 않으면 신뢰할 수 있는 모드, 변경 후: 운영 체제가 기업에서 권한을 부여한 앱만을 신뢰하는 모드). Windows Defender 애플리케이션 제어에서 앱에 트러스트를 할당합니다.
 
 Intune을 사용하면 "감사 전용" 모드 또는 적용 모드에서 애플리케이션 제어 정책을 구성할 수 있습니다. 앱을 “감사 전용” 모드로 실행하면 차단되지 않습니다. "감사 전용" 모드는 로컬 클라이언트 로그에 있는 모든 이벤트를 기록합니다. Windows 구성 요소 및 Microsoft 스토어 앱만 실행할 수 있는지 아니면 Intelligent Security Graph에서 정의한 대로 평판이 좋은 추가 앱도 실행할 수 있는지 여부를 구성할 수 있습니다.
 
@@ -774,7 +775,7 @@ dow Defender Exploit Guard는 애플리케이션의 악용 가능성을 줄이�
 - **ASR(Attack Surface Reduction)** 은 매크로, 스크립트 및 전자 메일 위협을 방지할 수 있도록 하는 규칙을 제공합니다.
 - **제어된 폴더 액세스**는 보호된 폴더의 콘텐츠에 대한 액세스를 자동으로 차단합니다.
 - **네트워크 필터**는 앱에서 평판이 낮은 IP/도메인으로의 아웃바운드 연결을 차단합니다.
-- **악용 보호**는 악용으로부터 응용 프로그램을 보호하는 데 사용할 수 있는 메모리, 제어 흐름 및 정책 제한을 제공합니다.
+- **악용 보호**는 악용으로부터 애플리케이션을 보호하는 데 사용할 수 있는 메모리, 제어 흐름 및 정책 제한을 제공합니다.
 
 ### <a name="manage-powershell-scripts-in-intune-for-windows-10-devices----790537---"></a>Windows 10 디바이스의 Intune에서 PowerShell 스크립트 관리 <!-- 790537 -->
 
@@ -797,7 +798,7 @@ Windows 10 디바이스 사용자를 키오스크 모드로 제한하여 미리 
 - 디바이스는 [제대로 프로비전](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions)되어야 합니다.
 
 ### <a name="new-device-configuration-profile-for-creating-network-boundaries----1311967---"></a>네트워크 경계를 만들기 위한 새 디바이스 구성 프로필<!-- 1311967 -->   
-**네트워크 경계**라는 새 장치 구성 프로필은 다른 장치 구성 프로필을 통해 찾을 수 있습니다. 이 프로필을 사용하여 협력 및 신뢰할 수 있도록 하려는 온라인 리소스를 정의합니다. Windows Defender Application Guard 및 Windows Information Protection과 같은 기능을 디바이스에서 사용하기 *전에* 디바이스의 네트워크 경계를 정의해야 합니다. 각 디바이스에 네트워크 경계를 하나만 정의해야 합니다.
+**네트워크 경계**라는 새 디바이스 구성 프로필은 다른 디바이스 구성 프로필을 통해 찾을 수 있습니다. 이 프로필을 사용하여 협력 및 신뢰할 수 있도록 하려는 온라인 리소스를 정의합니다. Windows Defender Application Guard 및 Windows Information Protection과 같은 기능을 디바이스에서 사용하기 *전에* 디바이스의 네트워크 경계를 정의해야 합니다. 각 디바이스에 네트워크 경계를 하나만 정의해야 합니다.
 
 엔터프라이즈 클라우드 리소스, IP 주소 범위 및 내부 프록시 서버를 신뢰할 수 있다고 정의할 수 있습니다. 네트워크 경계를 정의하면 Windows Defender Application Guard 및 Windows Information Protection과 같은 다른 기능에서 사용할 수 있습니다.
 
@@ -864,7 +865,7 @@ __전체 버전 번호__ 전체 버전 번호는 앱의 특정 릴리스를 식�
 [Microsoft Intune 앱 SDK 시작](app-sdk-get-started.md#line-of-business-app-version-numbers)에서 버전 번호 및 기간 업무 앱 개발에 대한 자세한 정보를 알아 보세요.
 
 ### <a name="device-and-app-management-integration----677972---"></a>디바이스 및 앱 관리 통합<!-- 677972 -->   
-이제 Azure Portal에서 Intune의 MDM(모바일 디바이스 관리) 및 MAM(모바일 응용 프로그램 관리)에 모두 액세스할 수 있습니다. Intune은 응용 프로그램 및 디바이스 관리와 관련된 IT 관리자 환경을 통합하기 시작했습니다. 이러한 변경 내용을 통해 디바이스 및 앱 관리 환경을 단순화할 수 있습니다.
+이제 Azure Portal에서 Intune의 MDM(모바일 장치 관리) 및 MAM(모바일 애플리케이션 관리)에 모두 액세스할 수 있습니다. Intune은 애플리케이션 및 장치 관리와 관련된 IT 관리자 환경을 통합하기 시작했습니다. 이러한 변경 내용을 통해 디바이스 및 앱 관리 환경을 단순화할 수 있습니다.
 
 [Intune 지원팀 블로그](https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/)에서 발표된 MAM 및 MDM 변경 내용에 대해 자세히 알아봅니다.
 
@@ -895,7 +896,7 @@ The Company Portal app for Android can now use geofencing to protect access to c
 
 ### <a name="new-resolve-action-available-for-android-devices----1583480---"></a>Android 디바이스에서 사용할 수 있는 새로운 ‘해결’ 작업 <!-- 1583480 -->
 
-Android용 회사 포털 앱은 _디바이스 설정 업데이트_ 페이지에서 ‘해결’ 작업을 소개하고 있습니다. 이 옵션을 선택하면 최종 사용자는 디바이스의 비호환 상태를 유발하는 설정으로 바로 이동할 수 있습니다. Android용 회사 포털 앱은 현재 이 작업을 [장치 암호](/intune-user-help/set-your-pin-or-password-android), [USB 디버깅](/intune-user-help/you-need-to-turn-off-usb-debugging-android) [알 수 없는 소스](/intune-user-help/you-need-to-turn-off-unknown-sources-android) 설정에 대해 지원합니다.
+Android용 회사 포털 앱은 _디바이스 설정 업데이트_ 페이지에서 ‘해결’ 작업을 소개하고 있습니다. 이 옵션을 선택하면 최종 사용자는 디바이스의 비호환 상태를 유발하는 설정으로 바로 이동할 수 있습니다. Android용 회사 포털 앱은 현재 이 작업을 [디바이스 암호](/intune-user-help/set-your-pin-or-password-android), [USB 디버깅](/intune-user-help/you-need-to-turn-off-usb-debugging-android)[알 수 없는 소스](/intune-user-help/you-need-to-turn-off-unknown-sources-android) 설정에 대해 지원합니다.
 
 ### <a name="device-setup-progress-indicator-in-android-company-portal----1565657---"></a>Android 회사 포털의 디바이스 설정 진행률 표시기 <!-- 1565657 -->
 Android용 회사 포털 앱은 사용자가 디바이스를 등록하는 동안 디바이스 설정 진행률 표시기를 표시합니다. 이 표시기에는 “디바이스 설정 중...”부터 “디바이스 등록 중...”, “디바이스 등록 완료 중...”, “디바이스 설정 완료 중...”까지 차례로 새로운 상태가 표시됩니다.
@@ -914,9 +915,9 @@ Android 회사 포털 앱에서 등록을 하거나 등록을 하지 않고 사�
 빠른 시작은 이제 **디바이스 등록**에서 사용할 수 있으며, 플랫폼 관리 및 등록 프로세스 구성에 대한 참조 테이블을 제공합니다. 각 항목에 대한 간략한 설명과 단계별 지침이 포함된 설명서에 대한 링크는 시작을 간소화하는 데 유용한 설명서를 제공합니다.
 
 ### <a name="device-categorization----1427491---"></a>디바이스 분류 <!-- 1427491 -->
-**장치 > 개요** 블레이드의 등록된 장치 플랫폼 차트는 Android, iOS, macOS, Windows 및 Windows Mobile을 포함하여 플랫폼별로 장치를 구성합니다.  다른 운영 체제를 실행하는 디바이스는 "기타"로 그룹화됩니다.  여기에는 Blackberry, NOKIA 및 기타 업체에서 제조하는 디바이스가 포함됩니다.  
+**디바이스 &gt; 개요** 블레이드의 등록된 디바이스 플랫폼 차트는 Android, iOS, macOS, Windows 및 Windows Mobile을 포함하여 플랫폼별로 디바이스를 구성합니다.  다른 운영 체제를 실행하는 디바이스는 "기타"로 그룹화됩니다.  여기에는 Blackberry, NOKIA 및 기타 업체에서 제조하는 디바이스가 포함됩니다.  
 
-테넌트에서 영향을 받는 장치를 알아보려면 **관리 > 모든 장치**를 차례로 선택한 다음 **필터**를 사용하여 **OS** 필드를 제한합니다.
+테넌트에서 영향을 받는 디바이스를 알아보려면 **관리 &gt; 모든 디바이스**를 차례로 선택한 다음 **필터**를 사용하여 **OS** 필드를 제한합니다.
 
 ### <a name="zimperium---new-mobile-threat-defense-partner-----954681---"></a>Zimperium - 새 Mobile Threat Defense 파트너   <!-- 954681 -->  
 Microsoft Intune과 통합되는 MTD(Mobile Threat Defense) 솔루션인 Zimperium에서 수행된 위험 평가에 기반하는 조건부 액세스를 사용하여 모바일 디바이스에서 회사 리소스에 대한 액세스를 제어할 수 있습니다.
@@ -956,12 +957,12 @@ Intune에서 이제 [TeamViewer](https://www.teamviewer.com) 소프트웨어(별
 이 프로필에 대한 자세한 내용은 [Windows 10 Team 디바이스 제한 설정](device-restrictions-windows-10-teams.md)을 참조하세요.
 
 ### <a name="prevent-users-of-android-devices-from-changing-their-device-date-and-time----1333292---"></a>Android 디바이스 사용자가 디바이스 날짜 및 시간을 변경하지 못하도록 함  <!-- 1333292 -->
-[Android 사용자 지정 장치 정책](custom-settings-android.md)을 사용하여 Android 장치 사용자가 장치 날짜 및 시간을 변경하지 못하도록 할 수 있습니다.
+[Android 사용자 지정 디바이스 정책](custom-settings-android.md)을 사용하여 Android 디바이스 사용자가 디바이스 날짜 및 시간을 변경하지 못하도록 할 수 있습니다.
 
 그렇게 하려면 URI ./Vendor/MSFT/PolicyManager/My/System/AllowDateTimeChange를**TRUE**로 설정하여 Android 사용자 지정 정책을 구성한 다음 필요한 그룹에 할당합니다.
 
 ### <a name="bitlocker-device-configuration---1397398---"></a>BitLocker 디바이스 구성 <!-- 1397398 -->
-**Windows 암호화 > 기본 설정**에는 사용자의 장치에서 사용될 수 있는 다른 디스크 암호화에 대해 [경고 메시지](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowarningforotherdiskencryption)를 사용하지 않도록 설정할 수 있는 **다른 디스크 암호화에 대한 경고** 설정이 새로 포함되었습니다.  경고 메시지는 디바이스에 BitLocker를 설정하기 전에 최종 사용자 동의가 필요하며 최종 사용자가 확인할 때까지 BitLocker 설정이 차단됩니다.  새 설정을 통해 최종 사용자 경고를 사용하지 않도록 할 수 있습니다.
+**Windows 암호화 &gt; 기본 설정**에는 사용자의 디바이스에서 사용될 수 있는 다른 디스크 암호화에 대해 [경고 메시지](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowarningforotherdiskencryption)를 사용하지 않도록 설정할 수 있는 **다른 디스크 암호화에 대한 경고** 설정이 새로 포함되었습니다.  경고 메시지는 디바이스에 BitLocker를 설정하기 전에 최종 사용자 동의가 필요하며 최종 사용자가 확인할 때까지 BitLocker 설정이 차단됩니다.  새 설정을 통해 최종 사용자 경고를 사용하지 않도록 할 수 있습니다.
 
 
 ### <a name="volume-purchase-program-for-business-apps-will-now-sync-to-your-intune-tenant----800882---"></a>Intune 테넌트로 동기화되는 비즈니스용 Volume Purchase Program 앱 <!-- 800882 -->  
@@ -977,7 +978,7 @@ VPP 토큰을 업로드할 때 VPP(Volume Purchase Program) 국가 스토어를 
 
 
 ### <a name="block-copy-and-paste-between-work-and-personal-profiles-in-android-for-work----1098994---"></a>Android for Work에서 회사 및 개인 프로필 간의 복사 및 붙여넣기 차단 <!-- 1098994 -->
-이 릴리스에서는 Android for Work에 대한 회사 프로필을 구성하여 회사와 개인 앱 간에 복사 및 붙여넣기를 차단할 수 있습니다. **회사 프로필 설정**의 **Android for Work** 플랫폼에 대한 **장치 제한** 프로필에서 이 새 설정을 찾을 수 있습니다.
+이 릴리스에서는 Android for Work에 대한 회사 프로필을 구성하여 회사와 개인 앱 간에 복사 및 붙여넣기를 차단할 수 있습니다. **회사 프로필 설정**의 **Android for Work** 플랫폼에 대한 **디바이스 제한** 프로필에서 이 새 설정을 찾을 수 있습니다.
 
 ### <a name="create-ios-apps-limited-to-specific-regional-apple-app-stores----1281692---"></a>특정 지역 Apple 앱 스토어로 제한된 iOS 앱 만들기 <!-- 1281692 -->
 Apple 앱 스토어 관리되는 앱을 만드는 동안 국가 로캘을 지정할 수 있습니다.
@@ -998,7 +999,7 @@ VPP 토큰을 설정하고 자동 업데이트를 사용하도록 설정하는 �
 소프트웨어 업데이트 > 업데이트 링 배포 상태별에서 Windows 10 업데이트 링에 대한 정책 보고서를 검토할 수 있습니다. 정책 보고서에는 구성한 업데이트 링에 대한 배포 상태가 포함됩니다. 
 
 ### <a name="new-report-that-lists-ios-devices-with-older-ios-versions----1352223---"></a>이전 iOS 버전을 사용하는 iOS 디바이스를 나열하는 새 보고서   <!-- 1352223 -->
-**오래된 iOS 장치** 보고서는 **소프트웨어 업데이트** 작업 영역에서 사용할 수 있습니다. iOS 업데이트 정책에서 대상으로 지정했으며 업데이트가 사용 가능한 감독된 iOS 디바이스 목록이 보고서에 표시됩니다. 디바이스가 자동으로 업데이트되지 않은 이유를 나타내는 각 디바이스의 상태를 볼 수 있습니다. 
+**오래된 iOS 디바이스** 보고서는 **소프트웨어 업데이트** 작업 영역에서 사용할 수 있습니다. iOS 업데이트 정책에서 대상으로 지정했으며 업데이트가 사용 가능한 감독된 iOS 디바이스 목록이 보고서에 표시됩니다. 디바이스가 자동으로 업데이트되지 않은 이유를 나타내는 각 디바이스의 상태를 볼 수 있습니다. 
 
 ### <a name="view-app-protection-policy-assignments-for-troubleshooting----1475003---"></a>문제 해결을 위해 앱 보호 정책 할당 보기 <!--  1475003 -->
 이 예정된 릴리스에서는 **앱 보호 정책** 옵션이 문제 해결 블레이드에서 사용할 수 있는 **할당** 드롭다운 목록에 추가됩니다. 이제 앱 보호 정책을 선택하여 선택한 사용자에게 할당된 앱 보호 정책을 확인할 수 있습니다.
@@ -1039,7 +1040,7 @@ Android용 회사 포털 앱은 [Play 스토어에서 회사 포털](https://pla
 
 ### <a name="block-unsupported-samsung-knox-device-enrollment----1490695---"></a>지원되지 않는 Samsung Knox 디바이스 등록 차단  <!-- 1490695 -->
 
-회사 포털 앱은 지원되는 Samsung KNOX 디바이스만을 등록하려고 합니다. Knox 활성화 오류로 인해 MDM 등록이 차단되는 경우를 방지하기 위해 디바이스가 [Samsung에서 게시한 디바이스 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 나타나는 경우에만 디바이스 등록을 시도합니다. 모든 Samsung 디바이스에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. 구매하고 배포하기 전에 디바이스 재판매인과 함께 KNOX 호환성을 검사합니다. [Android 및 Samsung Knox Standard 정책 설정](supported-devices-browsers.md#intune-supported-web-browsers)에서 확인된 장치의 전체 목록을 찾을 수 있습니다.
+회사 포털 앱은 지원되는 Samsung KNOX 디바이스만을 등록하려고 합니다. Knox 활성화 오류로 인해 MDM 등록이 차단되는 경우를 방지하기 위해 디바이스가 [Samsung에서 게시한 디바이스 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 나타나는 경우에만 디바이스 등록을 시도합니다. 모든 Samsung 디바이스에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. 구매하고 배포하기 전에 디바이스 재판매인과 함께 KNOX 호환성을 검사합니다. [Android 및 Samsung Knox Standard 정책 설정](supported-devices-browsers.md#intune-supported-web-browsers)에서 확인된 디바이스의 전체 목록을 찾을 수 있습니다.
 
 ### <a name="end-of-support-for-android-43-and-lower----1171126-1326920---"></a>Android 4.3 및 이전 버전에 대한 지원 종료 <!-- 1171126, 1326920 -->
 관리되는 앱과 Android용 회사 포털 앱이 회사 리소스에 액세스하려면 Android 4.4 이상이 필요합니다. 12월까지 등록된 모든 디바이스는 12월에 강제 사용 중지되며, 따라서 회사 리소스에 액세스할 수 없게 됩니다. MDM 없이 앱 보호 정책을 사용 중인 경우 앱이 업데이트를 받지 못하며 해당 환경 품질이 시간이 흐름에 따라 저하됩니다.
@@ -1082,7 +1083,7 @@ Windows 10 회사 포털 앱이 WIP(Windows Information Protection)를 지원하
 디바이스 개요의 향상된 기능에 이제 등록된 디바이스가 표시되지만 Exchange ActiveSync에서 관리하는 디바이스는 제외됩니다. Exchange ActiveSync 디바이스에는 등록된 디바이스와 동일한 관리 옵션이 없습니다. Azure Portal에서 Intune에 등록된 디바이스 수 및 플랫폼별 등록된 디바이스 수를 보려면 **디바이스** > **개요**로 이동합니다.
 
 ### <a name="improvements-to-device-inventory-collected-by-intune"></a>Intune에서 수집하는 디바이스 인벤토리의 향상된 기능
-<!-- 961134, 1104426, 1281327, 1333543 --> 이 릴리스에서는 관리하는 장치에서 수집하는 인벤토리 정보에 대해 다음과 같은 개선이 이루어졌습니다.
+<!-- 961134, 1104426, 1281327, 1333543 --> 이 릴리스에서는 관리하는 디바이스에서 수집하는 인벤토리 정보에 대해 다음과 같은 개선이 이루어졌습니다.
  
 -   Android 디바이스의 경우, 각 디바이스에 대한 최신 패치 수준을 표시하는 디바이스 인벤토리에 이제 열을 추가할 수 있습니다. 확인하려면 디바이스 목록에 **보안 패치 수준** 열을 추가합니다.
 -   디바이스 보기를 필터링할 때 이제 등록 날짜별로 디바이스를 필터링할 수 있습니다. 예를 들어 지정한 날짜 후에 등록한 디바이스만 표시할 수 있습니다.
@@ -1093,22 +1094,22 @@ Windows 10 회사 포털 앱이 WIP(Windows Information Protection)를 지원하
 디바이스 인벤토리에 대한 자세한 내용은 [Intune 디바이스 인벤토리를 확인하는 방법](device-inventory.md)을 참조하세요.
 
 ### <a name="conditional-access-support-for-macos-devices"></a>macOS 디바이스에 대한 조건부 액세스 지원 
-<!-- 720172 --> 이제 Mac 장치를 Intune에 등록하고 해당 장치 준수 정책을 준수하도록 요구하는 조건부 액세스 정책을 설정할 수 있습니다. 예를 들어 사용자가 macOS용 Intune 회사 포털 앱을 다운로드하고 해당 Mac 디바이스를 Intune에 등록할 수 있습니다. Intune은 Mac 디바이스가 PIN, 암호화, OS 버전, 시스템 무결성 등의 요구 사항을 준수하는지 여부를 평가합니다.
+<!-- 720172 --> 이제 Mac 디바이스를 Intune에 등록하고 해당 디바이스 준수 정책을 준수하도록 요구하는 조건부 액세스 정책을 설정할 수 있습니다. 예를 들어 사용자가 macOS용 Intune 회사 포털 앱을 다운로드하고 해당 Mac 디바이스를 Intune에 등록할 수 있습니다. Intune은 Mac 디바이스가 PIN, 암호화, OS 버전, 시스템 무결성 등의 요구 사항을 준수하는지 여부를 평가합니다.
 
-- [macOS 장치에 대한 조건부 액세스 지원](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)에 대해 알아보세요.
+- [macOS 디바이스에 대한 조건부 액세스 지원](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)에 대해 알아보세요.
 
 ### <a name="company-portal-app-for-macos-is-in-public-preview----1484796---"></a>macOS용 회사 포털 앱(공개 미리 보기) <!---1484796--->
 macOS용 회사 포털 앱이 지금 Enterprise Mobility + Security의 조건부 액세스에 대한 공개 미리 보기의 일부로 제공됩니다. 이 릴리스에서는 macOS 10.11 이상을 지원합니다. [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal)에 가져옵니다. 
 
 
 ### <a name="new-device-restriction-settings-for-windows-10"></a>Windows 10의 새 디바이스 제한 설정    
-<!--1063965, 1308850  --> 이 릴리스에서는 [Windows 10 장치 제한 프로필](/intune/device-restrictions-windows-10)에 대한 새로운 설정이 다음 범주에 추가되었습니다.
+<!--1063965, 1308850  --> 이 릴리스에서는 [Windows 10 디바이스 제한 프로필](/intune/device-restrictions-windows-10)에 대한 새로운 설정이 다음 범주에 추가되었습니다.
 
 -   Windows Defender SmartScreen
 -   앱 스토어
 
 ### <a name="updates-to-the-windows-10-endpoint-protection-device-profile-for-bitlocker-settings"></a>BitLocker 설정에 대한 Windows 10 Endpoint Protection 디바이스 프로필 업데이트
-<!--1459533 -->    이 릴리스에서는 Windows 10 Endpoint Protection 장치 프로필에서 BitLocker 설정을 적용하는 방법에 대해 다음과 같은 기능이 향상되었습니다.
+<!--1459533 -->   이 릴리스에서는 Windows 10 Endpoint Protection 디바이스 프로필에서 BitLocker 설정을 적용하는 방법에 대해 다음과 같은 기능이 향상되었습니다.
  
 -   **Bitlocker OS 드라이브 설정** 아래의 **호환되지 않는 TPM 칩과 BitLocker** 설정의 경우 **차단**을 선택하면 이전에는 BitLocker가 실제로는 허용되었습니다. 이제 [차단]을 선택하면 BitLocker를 차단하도록 이 문제를 해결했습니다.
 -   **Bitlocker OS 드라이브 설정** 아래의 **인증서 기반 데이터 복구 에이전트** 설정의 경우 이제 인증서 기반 데이터 복구 에이전트를 분명히 차단할 수 있습니다. 그러나 기본적으로 에이전트는 허용됩니다.
@@ -1146,15 +1147,15 @@ URL, 패키지 이름 또는 관리하는 앱 목록을 통해 앱을 지정할 
 ## <a name="july-2017"></a>2017년 7월
 
 ### <a name="restrict-android-and-ios-device-enrollment-restriction-by-os-version-----1333256-1245463----"></a>OS 버전별 Android 및 iOS 디바이스 등록 제한  <!--- 1333256,  1245463 --->
-이제 Intune에서 운영 체제 버전 번호로 iOS 및 Android 등록을 제한하는 기능을 지원합니다. IT 관리자는 **디바이스 유형 제한** 아래에서 최소 운영 체제 값과 최대 운영 체제 값 사이의 범위에서 등록을 제한하는 플랫폼 구성을 설정할 수 있습니다. Android 운영 체제 버전은 Major.Minor.Build.Rev로 지정해야 하며 여기서 Minor, Build, Rev는 선택 사항입니다. iOS 버전을 Major.Minor.Build로 지정해야 하며, 여기서 Minor와 Build는 선택 사항입니다. [장치 등록 제한 사항](enrollment-restrictions-set.md)에 대해 자세히 알아보세요.
+이제 Intune에서 운영 체제 버전 번호로 iOS 및 Android 등록을 제한하는 기능을 지원합니다. IT 관리자는 **디바이스 유형 제한** 아래에서 최소 운영 체제 값과 최대 운영 체제 값 사이의 범위에서 등록을 제한하는 플랫폼 구성을 설정할 수 있습니다. Android 운영 체제 버전은 Major.Minor.Build.Rev로 지정해야 하며 여기서 Minor, Build, Rev는 선택 사항입니다. iOS 버전을 Major.Minor.Build로 지정해야 하며, 여기서 Minor와 Build는 선택 사항입니다. [디바이스 등록 제한 사항](enrollment-restrictions-set.md)에 대해 자세히 알아보세요.
 
 >[!NOTE]
 >Apple 등록 프로그램이나 Apple Configurator를 통해 등록을 제한하지 않습니다.
 
 ### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment-----1333272-1333275-1245709---"></a>Android, iOS 및 macOS 디바이스에 대한 개인 소유 디바이스 등록 제한  <!--- 1333272,  1333275, 1245709 --->
-Intune은 회사 디바이스 IMEI 번호를 허용 목록에 추가하여 개인 디바이스 등록을 제한할 수 있습니다. 이제 이 기능이 iOS, Android 및 macOS에서 디바이스 일련 번호를 사용하는 방법으로 확장되었습니다. 일련 번호를 Intune에 업로드하면 디바이스를 회사 소유로 미리 선언할 수 있습니다. 등록 제한을 사용하여 개인 소유(BYOD) 디바이스를 차단하고 회사 소유 디바이스에 대해서만 등록을 허용할 수 있습니다. [장치 등록 제한 사항](enrollment-restrictions-set.md)에 대해 자세히 알아보세요.
+Intune은 회사 디바이스 IMEI 번호를 허용 목록에 추가하여 개인 디바이스 등록을 제한할 수 있습니다. 이제 이 기능이 iOS, Android 및 macOS에서 디바이스 일련 번호를 사용하는 방법으로 확장되었습니다. 일련 번호를 Intune에 업로드하면 디바이스를 회사 소유로 미리 선언할 수 있습니다. 등록 제한을 사용하여 개인 소유(BYOD) 디바이스를 차단하고 회사 소유 디바이스에 대해서만 등록을 허용할 수 있습니다. [디바이스 등록 제한 사항](enrollment-restrictions-set.md)에 대해 자세히 알아보세요.
 
-일련 번호를 가져오려면 **디바이스 등록** > **회사 디바이스 식별자**로 이동한 다음 **추가**를 클릭하고 .CSV 파일(헤더 없음, 일련 번호와 IMEI 번호 등의 세부 정보를 위한 두 개의 열)을 업로드합니다. 개인 소유 디바이스를 제한하려면 **디바이스 등록** > **등록 제한**으로 이동합니다. **장치 유형 제한**에서 **기본값**을 선택한 다음 **플랫폼 구성**을 선택합니다. iOS, Android 및 macOS에 대해 개인 소유 디바이스를 **허용** 또는 **차단**할 수 있습니다.
+일련 번호를 가져오려면 **디바이스 등록** > **회사 디바이스 식별자**로 이동한 다음 **추가**를 클릭하고 .CSV 파일(헤더 없음, 일련 번호와 IMEI 번호 등의 세부 정보를 위한 두 개의 열)을 업로드합니다. 개인 소유 디바이스를 제한하려면 **디바이스 등록** > **등록 제한**으로 이동합니다. **디바이스 유형 제한**에서 **기본값**을 선택한 다음 **플랫폼 구성**을 선택합니다. iOS, Android 및 macOS에 대해 개인 소유 디바이스를 **허용** 또는 **차단**할 수 있습니다.
 
 
 ### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>디바이스가 Intune과 동기화되도록 강제하는 새 디바이스 작업 <!-- 711369 -->
@@ -1224,8 +1225,8 @@ Azure AD 조건부 액세스 정책 확인, 작성, 수정 및 삭제를 위한 
 ### <a name="new-remote-actions-for-ios-devices----854689---"></a>iOS 디바이스에 대한 새 원격 작업 <!-- 854689 -->
 이 릴리스에서는 Apple 교실 앱을 관리하는 공유 iPad 디바이스에 대한 새로운 두 가지 원격 디바이스 작업이 추가되었습니다.
 
--   [현재 사용자 로그아웃](device-logout-user.md) - 선택한 iOS 장치의 현재 사용자를 로그아웃합니다.
--   [사용자 제거](device-remove-user.md) - iOS 장치의 로컬 캐시에서 선택한 사용자를 삭제합니다.
+-   [현재 사용자 로그아웃](device-logout-user.md) - 선택한 iOS 디바이스의 현재 사용자를 로그아웃합니다.
+-   [사용자 제거](device-remove-user.md) - iOS 디바이스의 로컬 캐시에서 선택한 사용자를 삭제합니다.
 
 
 ### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>iOS 교실 앱을 통해 공유 iPad 지원 <!-- 1044681 -->
@@ -1424,13 +1425,13 @@ Android 5.0 이상을 실행하는 디바이스에 대한 Android 디바이스 �
 
 
 ###  <a name="new-device-policies-for-ios----723774-723815-723826-723830---"></a>iOS에 대한 새 디바이스 정책 <!-- 723774, 723815, 723826, 723830 -->
-- **Apps on Home screen**(홈 화면의 앱) - 앱 사용자가 [iOS 장치의 홈 화면](home-screen-settings-ios.md)에서 어떤 앱을 보게 할지 제어할 수 있습니다. 이 정책은 홈 화면의 레이아웃을 변경하지만 앱을 배포하지 않습니다.
+- **Apps on Home screen**(홈 화면의 앱) - 앱 사용자가 [iOS 디바이스의 홈 화면](home-screen-settings-ios.md)에서 어떤 앱을 보게 할지 제어할 수 있습니다. 이 정책은 홈 화면의 레이아웃을 변경하지만 앱을 배포하지 않습니다.
 
-- **Connections to AirPrint devices**(AirPrint 장치에 대한 연결) - iOS 장치의 최종 사용자가 연결할 수 있는 [AirPrint](air-print-settings-ios-macos.md) 장치(네트워크 프린터)를 제어할 수 있습니다.
+- **Connections to AirPrint devices**(AirPrint 디바이스에 대한 연결) - iOS 디바이스의 최종 사용자가 연결할 수 있는 [AirPrint](air-print-settings-ios-macos.md) 디바이스(네트워크 프린터)를 제어할 수 있습니다.
 
-- **Connections to AirPlay devices**(AirPlay 장치에 대한 연결) - iOS 장치의 최종 사용자가 연결할 수 있는 [AirPlay 장치](airplay-settings-ios.md)(Apple TV 등)를 제어할 수 있습니다.
+- **Connections to AirPlay devices**(AirPlay 디바이스에 대한 연결) - iOS 디바이스의 최종 사용자가 연결할 수 있는 [AirPlay 디바이스](airplay-settings-ios.md)(Apple TV 등)를 제어할 수 있습니다.
 
-- **Custom lock screen message**(사용자 지정 잠금 화면 메시지) - 사용자 iOS 장치의 잠금 화면에 표시할 사용자 지정 메시지를 구성하여 기본 잠금 화면 메시지를 대체할 수 있습니다. 자세한 내용은 [iOS 디바이스에서 분실 모드 활성화](device-lost-mode.md)를 참조하세요.
+- **Custom lock screen message**(사용자 지정 잠금 화면 메시지) - 사용자 iOS 디바이스의 잠금 화면에 표시할 사용자 지정 메시지를 구성하여 기본 잠금 화면 메시지를 대체할 수 있습니다. 자세한 내용은 [iOS 디바이스에서 분실 모드 활성화](device-lost-mode.md)를 참조하세요.
 
 ### <a name="restrict-push-notifications-for-ios-apps----723767---"></a>iOS 앱에 대한 푸시 알림 제한 <!-- 723767 -->
 Intune 디바이스 제한 프로필에서 이제 iOS 디바이스에 대해 다음과 같은 [알림 설정](app-notification-settings-ios.md)을 구성할 수 있습니다.
@@ -1486,9 +1487,9 @@ Windows 10 PC에 대한 [새로운 시작 디바이스 작업](device-fresh-star
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>PIN 및 관리되는 스토리지 위치에 대한 새 MAM 설정 <!-- 581122, 736644 -->
 이제 MAM(모바일 애플리케이션 관리) 시나리오에 도움이 되는 두 가지 새 앱 설정이 제공됩니다.
 
-- **Disable app PIN when device PIN is managed**(장치 PIN이 관리되는 경우 앱 PIN 사용 안 함) - 등록된 장치에 장치 PIN이 있는지 검색하고 있으면 앱 보호 정책에 따라 트리거되는 앱 PIN을 건너뜁니다. 이 설정을 사용하면 등록된 디바이스에서 MAM 지원 응용 프로그램을 여는 사용자에게 PIN 프롬프트가 표시되는 횟수를 줄일 수 있습니다. 이 기능은 Android 및 iOS 모두에 제공됩니다.
+- **Disable app PIN when device PIN is managed**(디바이스 PIN이 관리되는 경우 앱 PIN 사용 안 함) - 등록된 디바이스에 디바이스 PIN이 있는지 검색하고 있으면 앱 보호 정책에 따라 트리거되는 앱 PIN을 건너뜁니다. 이 설정을 사용하면 등록된 장치에서 MAM 지원 애플리케이션을 여는 사용자에게 PIN 프롬프트가 표시되는 횟수를 줄일 수 있습니다. 이 기능은 Android 및 iOS 모두에 제공됩니다.
 
-- **Select which storage services corporate data can be saved to**(회사 데이터를 저장할 저장소 서비스 선택) - 회사 데이터를 저장할 저장소 위치를 지정할 수 있습니다. 사용자가 선택된 스토리지 위치 서비스에 저장할 수 있으므로 나열되지 않은 다른 스토리지 위치는 모두 차단됩니다.
+- **Select which storage services corporate data can be saved to**(회사 데이터를 저장할 스토리지 서비스 선택) - 회사 데이터를 저장할 스토리지 위치를 지정할 수 있습니다. 사용자가 선택된 스토리지 위치 서비스에 저장할 수 있으므로 나열되지 않은 다른 스토리지 위치는 모두 차단됩니다.
 
   지원되는 스토리지 위치 서비스 목록:
 
@@ -1551,7 +1552,7 @@ Intune은 등록할 수 있는 모바일 디바이스 플랫폼을 제어하는 
 Intune은 [이 문서](device-enrollment.md)에 설명된 대로 IT 관리자가 회사 소유로 표시하기 위한 조치를 취하지 않은 한 모든 새 디바이스를 개인 소유 디바이스로 표시합니다.
 
 ### <a name="view-all-actions-on-managed-devices---677150--"></a>관리 되는 디바이스에 관한 모든 작업 보기<!--677150-->
-새 __디바이스 작업__ 보고서에는 디바이스의 공장 재설정과 같은 원격 작업을 수행한 사람이 누구인지 표시되며, 추가로 작업의 상태도 표시됩니다. [장치 관리란?](device-management.md)을 참조하세요.
+새 __디바이스 작업__ 보고서에는 디바이스의 공장 재설정과 같은 원격 작업을 수행한 사람이 누구인지 표시되며, 추가로 작업의 상태도 표시됩니다. [디바이스 관리란?](device-management.md)을 참조하세요.
 
 ### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>관리되지 않은 디바이스에서 할당된 앱에 액세스 가능 <!--664691-->
 회사 포털 웹 사이트 디자인 변경의 일환으로, iOS 및 Android 사용자가 자기에게 할당된 앱을 관리되지 않는 디바이스에 "등록 없이 사용 가능"으로 설치할 수 있습니다. 사용자는 Intune 자격 증명을 사용하여 회사 포털 웹 사이트에 로그인하고 자기에게 할당된 앱의 목록을 볼 수 있습니다. "등록 없이 사용 가능" 앱의 앱 패키지는 회사 포털 웹 사이트를 통해 다운로드할 수 있습니다. 설치하려면 등록이 필요한 앱은 사용자가 앱을 설치하려 할 때 등록하라는 메시지가 표시되므로 이 변경의 영향을 받지 않습니다.

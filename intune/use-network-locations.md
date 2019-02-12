@@ -15,12 +15,13 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da29f4fcdbd694b2817bf4eca953c37d2d3c6b0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183675"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848188"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune에서 위치(네트워크 펜스) 사용
 
@@ -82,5 +83,5 @@ ms.locfileid: "52183675"
 디바이스가 사용자의 위치에 연결되면 회사 포털 앱에서 해당 디바이스가 준수로 표시됩니다. 디바이스가 사용자의 위치 중 하나에 연결되어 있지 않으면 해당 디바이스가 비준수로 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
-[장치 준수 정책 모니터링](compliance-policy-monitor.md)  
+[디바이스 준수 정책 모니터링](compliance-policy-monitor.md)  
 [준수 정책 시작](device-compliance-get-started.md)

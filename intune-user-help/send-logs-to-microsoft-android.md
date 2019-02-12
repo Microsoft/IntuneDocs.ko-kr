@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dacadd92ebb29bb2295d94aebb7922bb62226e2f
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 52f6caf8e48cd9781648acf1de0152ec107d5246
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149399"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850909"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>회사 포털 개발자에게 Android 디바이스에 대한 로그 보내기
 
@@ -38,7 +39,7 @@ ms.locfileid: "43149399"
 2.  **메뉴** > **도움말** > **이메일 지원**을 탭합니다.
 
     > [!NOTE]
-    > **메뉴**는 보유하고 있는 Android 장치에 따라 소프트웨어 단추나 하드웨어 단추일 수 있습니다.
+    > **메뉴**는 보유하고 있는 Android 디바이스에 따라 소프트웨어 단추나 하드웨어 단추일 수 있습니다.
 
 3.  **로그만 업로드**를 탭합니다.
 

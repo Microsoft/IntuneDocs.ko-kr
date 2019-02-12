@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 24aa876b7100f0f802ab3723cedf92a32bc7e9d7
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dbf35b77c843b4dc084916b2c283b6c66d5f066d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149710"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849236"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>“사용 약관”을 거부한 경우 관리에서 디바이스 제거
 
@@ -36,7 +37,7 @@ ms.locfileid: "43149710"
 
 Intune에서 디바이스를 제거하고 회사 포털 앱을 제거하려면:
 
-1.  **설정** &gt; **보안 및 화면 잠금** &gt; **장치 관리자**로 이동합니다.
+1.  **설정**&gt;**보안 및 화면 잠금**&gt;**디바이스 관리자**로 이동합니다.
 
     이 단계를 완료하면 디바이스 등록이 즉시 취소됩니다.
 
@@ -48,7 +49,7 @@ Intune에서 디바이스를 제거하고 회사 포털 앱을 제거하려면:
 
 Android용 회사 포털 앱이 디바이스에 저장하는 모든 데이터를 제거하려면:
 
-  - 응용 프로그램에서 앱 데이터 지우기 -> 앱 클릭 -> "데이터 지우기" 단추 클릭
+  - 애플리케이션에서 앱 데이터 지우기 -&gt; 앱 클릭 -&gt; "데이터 지우기" 단추 클릭
   - '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal' 폴더 삭제
 
 

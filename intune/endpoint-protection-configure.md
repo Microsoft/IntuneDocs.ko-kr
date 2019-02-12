@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure에서 엔드포인트 보호 설정 구성 | Microsoft Docs
 description: Microsoft Intune에서 macOS 또는 Windows 10 디바이스 프로필을 만들 경우 엔드포인트 보호 설정을 만듭니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 3/27/2018
 ms.topic: article
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 033021010698d46f7ecb33546164ee16ad7192c0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b1c7702c8079405664dd3fd34a9282531f88d7d0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182927"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848911"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune에서 엔드포인트 보호 설정 추가
 
@@ -32,9 +33,9 @@ ms.locfileid: "52182927"
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+3. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 4. 엔드포인트 보호 프로필의 **이름** 및 **설명**을 입력합니다.
-5. **플랫폼** 드롭다운 목록에서 사용자 지정 설정을 적용할 장치 플랫폼을 선택합니다. 현재 디바이스 제한 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
+5. **플랫폼** 드롭다운 목록에서 사용자 지정 설정을 적용할 디바이스 플랫폼을 선택합니다. 현재 디바이스 제한 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
    - **macOS**
    - **Windows 10 이상**
 6. **프로필 유형** 드롭다운 목록에서 **Endpoint Protection**을 선택합니다. 

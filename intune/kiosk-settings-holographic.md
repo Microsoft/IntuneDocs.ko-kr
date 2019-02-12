@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: ae3672a913229b96198f64c5c587151745d5cf62
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28ecba61514c9143c21cb77e724fdcddbef42a37
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54832616"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845264"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 Windows Holographic for Business 디바이스를 키오스크로 실행하기 위한 설정
 
@@ -28,7 +29,7 @@ Windows Holographic for Business 디바이스에서 이러한 디바이스가 �
 
 Intune 관리자는 이러한 설정을 만들어 디바이스에 할당할 수 있습니다.
 
-Intune의 Windows 키오스크 기능에 대한 자세한 내용은 [키오스크 설정 구성](kiosk-settings.md)을 참조하세요.
+Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오스크 설정 구성](kiosk-settings.md)을 참조하세요.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 

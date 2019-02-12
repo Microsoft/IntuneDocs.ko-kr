@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 56f19d0722841e801a0aca0009f2f629a8b90949
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 370d6372cf3df2ff807069fe8d54f30da23e7ba2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148817"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842612"
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>회사 포털 앱에 로그인하려면 어떻게 하나요? <!--User Story 1132123-->
 
@@ -79,7 +80,7 @@ ms.locfileid: "43148817"
 
    ![회사 포털 앱이 아닌 작업 컴퓨터에서 사용자 브라우저 이미지 표시되는 "디바이스 로그인" 페이지에서 사용자에게 회사 포털 앱에서 받은 코드를 입력하라는 메시지가 나타납니다.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
-4. **장치 로그인** 페이지에서 코드가 확인되면 __계속__을 선택하여 회사 포털이 다른 장치에서 로그인을 허용하도록 합니다.
+4. **디바이스 로그인** 페이지에서 코드가 확인되면 __계속__을 선택하여 회사 포털이 다른 디바이스에서 로그인을 허용하도록 합니다.
 
    ![사용자는 필드에 고유한 코드를 입력하고 "디바이스 로그인" 사이트에서 Intune 회사 포털이 로그인에 필요한 인증을 수신하는 올바른 앱인지 확인을 요구합니다.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 

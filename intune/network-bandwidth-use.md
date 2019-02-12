@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 243e9602a253fecf2eda1dd73dfb49a488db0974
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0ba4cf212f44742ca9feb077a945a1f500ca1a78
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190254"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840946"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 네트워크 구성 요구 사항 및 대역폭
 
@@ -165,7 +166,7 @@ Intune은 Intune 소프트웨어를 실행하는 서버와 같은 온-프레미�
 
 ### <a name="apple-device-network-information"></a>Apple 디바이스 네트워크 정보
 
-|         호스트 이름         |                                        URL(IP 주소/서브넷)                                        |  프로토콜  |     포트     |                          디바이스                           |
+|         Hostname         |                                        URL(IP 주소/서브넷)                                        |  프로토콜  |     포트     |                          디바이스                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
 |      관리 사용자       |                                  gateway.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS 및 macOS                    |
 |      관리 사용자       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS 및 macOS                    |

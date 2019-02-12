@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e305848ca77aef49050df382151db75c5b03e2a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8d51e9db367925442c7b6c735b1de86891e05856
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147984"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845281"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Windows Defender를 켜서 회사 리소스에 액세스
 
@@ -48,6 +49,6 @@ ms.locfileid: "43147984"
 
 ## <a name="update-your-antivirus-definitions"></a>바이러스 백신 정의 업데이트
 
-**시작**으로 이동하고 **Windows Defender 보안 센터**를 검색하여 바이러스 백신 정의가 최신인지 확인합니다. **보호 업데이트**와 **업데이트 확인**을 선택하여 장치가 최신 바이러스로부터 보호되도록 하십시오. 이 옵션이 표시되지 않으면 [실시간 보호 켜기](turn-on-defender-windows.md#turn-on-real-time-protection)의 단계를 수행하십시오.
+**시작**으로 이동하고 **Windows Defender 보안 센터**를 검색하여 바이러스 백신 정의가 최신인지 확인합니다. **보호 업데이트**와 **업데이트 확인**을 선택하여 디바이스가 최신 바이러스로부터 보호되도록 하십시오. 이 옵션이 표시되지 않으면 [실시간 보호 켜기](turn-on-defender-windows.md#turn-on-real-time-protection)의 단계를 수행하십시오.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. IT 관리자의 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

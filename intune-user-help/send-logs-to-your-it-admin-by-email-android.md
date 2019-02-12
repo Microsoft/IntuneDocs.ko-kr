@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b709ec1cf900645fd53fe47329a3d0833e1cf87d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149603"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850427"
 ---
 # <a name="email-logs-to-your-company-support"></a>회사 지원팀에 이메일 로그
 
@@ -40,7 +41,7 @@ ms.locfileid: "43149603"
 2.  **메뉴** > **도움말** > **이메일 지원**을 탭합니다.
 
     > [!NOTE]
-    > **메뉴**는 보유하고 있는 Android 장치에 따라 소프트웨어 단추나 하드웨어 단추일 수 있습니다.
+    > **메뉴**는 보유하고 있는 Android 디바이스에 따라 소프트웨어 단추나 하드웨어 단추일 수 있습니다.
 
 3.  **이메일 보내기 및 로그 업로드**를 탭합니다.
 4.  업로드가 완료되면 이메일 앱을 탭합니다. 이메일 메시지는 제목 필드에 미리 채워진 인시던트 ID와 함께 열립니다. 이메일 본문에서 발생한 문제를 설명합니다.  

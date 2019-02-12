@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 603a501ff8b8b3ebc6b142a823b1c5bea4e48b98
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505753"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848222"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>관리에 조직 제공 macOS 디바이스 등록
 
@@ -54,7 +55,7 @@ macOS 디바이스를 관리에 등록하려면 다음 단계를 완료합니다
 6. 메시지가 나타나면 회사 또는 학교 계정으로 로그인합니다. 인증 후 디바이스에서 관리 프로필을 설치합니다. 프로필은 조직의 리소스에 대한 액세스를 구성하고 활성화합니다.  
 7. 나중에 개인 정보가 수집되는 시기를 식별할 수 있도록 Apple 데이터 및 개인 정보 아이콘에 대해 읽어 보세요. **계속**을 클릭합니다.  
 
-   ![macOS 장치 설치 도우미 데이터 및 개인 정보 화면의 스크린샷으로 두 사람이 악수하는 예시를 보여주고, Apple의 개인 정보 사용을 설명합니다. 돌아가기 및 계속 단추도 표시합니다.](./media/macos-dep-apple-data-privacy-1808.png)  
+   ![macOS 디바이스 설치 도우미 데이터 및 개인 정보 화면의 스크린샷으로 두 사람이 악수하는 예시를 보여주고, Apple의 개인 정보 사용을 설명합니다. 돌아가기 및 계속 단추도 표시합니다.](./media/macos-dep-apple-data-privacy-1808.png)  
 8. 디바이스를 등록한 후 완료해야 할 추가 단계가 있을 수 있습니다. 표시되는 단계는 조직에서 설치 환경을 사용자 지정하는 방법에 따라 다릅니다. 다음을 수행해야 할 수 있습니다.
     * Apple 계정에 로그인
     * 사용 약관에 동의함

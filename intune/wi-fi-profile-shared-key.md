@@ -15,12 +15,13 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
-ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40711576af9b7799211971418a0b2529d12468cd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52618189"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836390"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>사용자 지정 디바이스 프로필을 사용하여 미리 공유한 키로 Wi-Fi 프로필 만들기 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -74,7 +75,7 @@ Android, Windows 또는 EAP 기반 Wi-Fi 프로필에서 미리 공유한 키를
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>`는 **false**로 설정해야 합니다. **true**로 설정하면 장치가 암호화된 암호를 요구한 다음, 암호를 해독하려 할 수 있습니다. 이로 인해 연결에 실패할 수 있습니다.
+> `<protected>false</protected>`는 **false**로 설정해야 합니다. **true**로 설정하면 디바이스가 암호화된 암호를 요구한 다음, 암호를 해독하려 할 수 있습니다. 이로 인해 연결에 실패할 수 있습니다.
 >
 >  `<hex>53534944</hex>`는 `<name><SSID of wifi profile></name>`의 16진수 값으로 설정해야 합니다.
 >  Windows 10 디바이스는 잘못된 *0x87D1FDE8 재구성 실패* 오류를 반환할 수 있지만, 해당 디바이스에는 계속 프로필이 포함됩니다.
@@ -122,7 +123,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>EAP 기반 Wi-Fi 프로필 예제
-다음 예제에는 EAP 기반 Wi-Fi 프로필에 대한 XML 코드가 포함되어 있습니다. 이 예제는 올바른 형식을 표시하고 자세한 내용을 제공하기 위해 제공된 것입니다. 이는 예시일 뿐이며, 사용자 환경에 대한 권장 구성으로 제공된 것은 아닙니다.
+다음 예제에는 EAP 기반 Wi-Fi 프로필의 XML 코드가 포함됩니다. 이 예제는 적절한 형식을 표시하고 자세한 내용을 제공하기 위해 제공된 것입니다. 이는 예시일 뿐이며, 사용자 환경에 대한 권장 구성으로 제공된 것은 아닙니다.
 
 
 ```
@@ -215,7 +216,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 2. XML 파일을 검색하여 올바른 이름을 가진 파일을 찾습니다.
 3. 올바른 XML 파일을 찾았으면 XML 코드를 복사하여 OMA-URI 설정 페이지의 **데이터** 필드에 붙여넣습니다.
 
-## <a name="best-practices"></a>모범 사례
+## <a name="best-practices"></a>최선의 구현 방법
 - PSK를 사용하여 Wi-Fi 프로필을 배포하기 전에 디바이스를 엔드포인트에 직접 연결할 수 있는지 확인합니다.
 
 - 키(암호)를 회전하는 경우 가동 중지 시간을 예상하고 그에 따라 배포를 계획합니다. 근무 외 시간에 새 Wi-Fi 프로필을 푸시하는 것이 좋습니다. 연결에 영향을 받을만한 사용자에게 경고도 하는 것이 좋습니다.

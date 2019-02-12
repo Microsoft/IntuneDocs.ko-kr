@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 30532c87fe8b6e9d96bf00d45a29f4da4a99b9da
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181125"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849796"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune에서 Windows 방화벽 정책을 사용하여 Windows PC 보호
 
@@ -134,7 +135,7 @@ Windows 방화벽 정책을 배포한 후 **정책** 작업 영역의 **모든 �
 |**Windows 원격 관리(호환성)**|운영 체제 및 디바이스의 원격 관리를 위해 WS-Management, 웹 서비스 기반 프로토콜을 사용하여 관리 컴퓨터를 원격으로 관리할 수 있습니다.|
 |**Windows 원격 관리**<br>(Windows 8 이상)|운영 체제 및 디바이스의 원격 관리를 위해 WS-Management, 웹 서비스 기반 프로토콜을 사용하여 관리 컴퓨터를 원격으로 관리할 수 있습니다.|
 |**Windows Virtual PC**<br>(Windows 7 이상)|가상 컴퓨터가 다른 컴퓨터와 통신할 수 있습니다.|
-|**무선 휴대용 장치**|MTP(미디어 전송 프로토콜)를 통해 네트워크 사용 카메라 또는 미디어 디바이스에서 관리 컴퓨터로 미디어를 전송할 수 있습니다. 이 설정에서는 SSDP 및 UPnP 네트워크 프로토콜을 사용합니다.|
+|**무선 휴대용 디바이스**|MTP(미디어 전송 프로토콜)를 통해 네트워크 사용 카메라 또는 미디어 디바이스에서 관리 컴퓨터로 미디어를 전송할 수 있습니다. 이 설정에서는 SSDP 및 UPnP 네트워크 프로토콜을 사용합니다.|
 
 ### <a name="see-also"></a>참고 항목
 [Windows PC를 보호하는 정책](policies-to-protect-windows-pcs-in-microsoft-intune.md)

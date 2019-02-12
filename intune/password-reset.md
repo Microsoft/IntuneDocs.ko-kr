@@ -13,12 +13,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 64dc02be20ecc15574959d50f1cfc89542c484fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: daeda6918442b9a2fc8b344a73873258cd738a7b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181431"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836439"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>셀프 서비스 암호 재설정을 통해 지원 센터 비용 절감
 
@@ -40,4 +41,4 @@ ms.locfileid: "52181431"
 * [암호 모범 사례](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [셀프 서비스 암호 재설정 라이선스](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
-이 EMS 또는 다른 EMS나 Office 365 시나리오 사용에 어떤 도움이 필요하시나요? Microsoft 365, Enterprise Mobility + Security 또는 Azure Active Directory Premium에 대한 라이선스를 150개 이상 가지고 있는 경우 [FastTrack 혜택](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)을 사용하세요.
+이와 같은 EMS 또는 다른 EMS나 Office 365 시나리오 등을 사용 및 활성화하기 위한 도움이 필요하시나요? Microsoft 365, Enterprise Mobility + Security 또는 Azure Active Directory Premium에 대한 라이선스를 150개 이상 가지고 있는 경우 [FastTrack 혜택](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)을 사용하세요.

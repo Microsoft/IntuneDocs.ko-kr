@@ -16,24 +16,25 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: a062abcbb0a13907baa81889b1b93d112445b84c
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 00d927b396619e237986502e60efdc0f9d11bc0b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260269"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845502"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Windows 디바이스의 일반적인 문제 해결
 
 Windows 디바이스에서 발생하는 문제가 문제 해결을 통해 해결되는 경우도 있습니다. 먼저 직접 해결해 볼 수 있는 몇 가지 일반적인 문제는 다음과 같습니다. 좀 더 복잡한 문제의 경우 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에 있는 연락처 정보를 통해 회사 지원팀에 문의하는 것이 좋습니다.
 
-- [내 Windows 10 장치가 등록되지 않음](troubleshoot-your-windows-10-device-windows.md)
-- [Windows 장치를 업데이트해야 함](you-need-to-update-your-windows-device.md)
+- [내 Windows 10 디바이스가 등록되지 않음](troubleshoot-your-windows-10-device-windows.md)
+- [Windows 디바이스를 업데이트해야 함](you-need-to-update-your-windows-device.md)
 - [회사 포털 앱에서 회사 지원팀으로 로그를 보내야 함](send-logs-to-your-it-admin-cp-windows.md)
 - [설정 앱에서 회사 지원팀으로 로그를 보내야 함](send-logs-to-your-it-admin-settings-windows.md)
 - [내 Windows 버전이 아직 지원되지 않음](your-windows-version-isnt-yet-supported.md)
 - [Windows 암호화를 사용하도록 설정해야 함](you-need-to-enable-windows-encryption.md)
-- [내 장치에 맬웨어 방지 소프트웨어가 필요함](your-device-needs-antimalware-software.md)
+- [내 디바이스에 맬웨어 방지 소프트웨어가 필요함](your-device-needs-antimalware-software.md)
 - [보안 부팅을 사용하도록 설정해야 함](you-need-to-enable-secure-boot-windows.md)
 - [코드 무결성을 사용하도록 설정해야 함](you-need-to-enable-code-integrity.md)
 - [내 방화벽을 사용하도록 설정해야 하는 경우](you-need-to-enable-defender-firewall-windows.md)

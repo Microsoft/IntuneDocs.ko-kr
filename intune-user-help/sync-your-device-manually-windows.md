@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a8a9de8d09c71fdf49b7565f1dd4a3114ef0c46
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150568"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840215"
 ---
 # <a name="sync-your-windows-device-manually"></a>수동으로 Windows 디바이스 동기화
 
@@ -60,7 +61,7 @@ Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴
 
     ![디바이스의 바탕 화면에 있는 Windows 작업 표시줄의 스크린샷입니다. 회사 포털 앱 아이콘을 클릭하여 "작업 표시줄에 고정", "창 닫기" 및 "이 디바이스 동기화" 작업 옵션이 있는 메뉴를 표시했습니다.](./media/sync-device-from-start-menu-1807.png)  
 
-3. **이 장치 동기화**를 선택합니다. 회사 포털 앱에서 **설정** 페이지가 열리고 동기화가 시작됩니다.  
+3. **이 디바이스 동기화**를 선택합니다. 회사 포털 앱에서 **설정** 페이지가 열리고 동기화가 시작됩니다.  
 
 ## <a name="sync-from-settings-app"></a>설정 앱에서 동기화 
 설정 앱에서 Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile 또는 Windows Phone 8.1 디바이스를 수동으로 동기화하려면 다음 단계를 완료합니다.  
@@ -102,7 +103,7 @@ Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴
 
     ![계정 유형으로 회사 액세스 선택](./media/win10pc-sync-3-work-access.png)
 
-2. **장치 관리에 등록**에서 회사 이름을 선택합니다.
+2. **디바이스 관리에 등록**에서 회사 이름을 선택합니다.
 
     ![디바이스 관리에 대한 회사 이름 선택](./media/win10pc-sync-4-tap-com-name.png)
 
@@ -121,7 +122,7 @@ Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴
 
        ![계정 유형으로 회사 액세스 선택](./media/win10m-sync-2-work-access.png)
 
-   3. **장치 관리에 등록**에서 회사 이름을 선택합니다.
+   3. **디바이스 관리에 등록**에서 회사 이름을 선택합니다.
 
        ![디바이스 관리에 대한 회사 이름 선택](./media/win10m-sync-3-tap-comp-name.png)
 

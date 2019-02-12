@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: c0d6dcc4bee31ce0197699a8106a25dbcd71af17
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 25df77266e0ce10329d94f7185a78c944b3771cb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887137"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844618"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune 모바일 디바이스 관리(MDM) 수명 주기 개요
 
@@ -26,7 +27,7 @@ ms.locfileid: "52887137"
 
 관리하는 모든 디바이스에는 *수명 주기*가 있습니다. Intune은 등록, 구성 및 보호부터 더 이상 필요하지 않아 디바이스 사용을 중지할 때까지의 수명 주기를 관리하는 데 도움을 줄 수 있습니다.
 
-![장치 수명 주기](./media/device-lifecycle.png "Intune 장치 수명 주기")
+![디바이스 수명 주기](./media/device-lifecycle.png "Intune 디바이스 수명 주기")
 
 ## <a name="enroll"></a>등록
 오늘날의 MDM(모바일 디바이스 관리) 전략은 다양한 휴대폰, 태블릿 및 PC(iOS, Android, Windows 및 Mac OS X)에 적용됩니다. 회사 소유 디바이스에 대한 일반적인 경우처럼 디바이스를 관리할 수 있어야 하는 경우, 첫 단계는 [디바이스 등록을 설정](device-enrollment.md)하는 것입니다. Windows PC를 Intune(MDM)에 등록하거나 [Intune 클라이언트 소프트웨어를 설치](manage-windows-pcs-with-microsoft-intune.md)하여 관리할 수도 있습니다.

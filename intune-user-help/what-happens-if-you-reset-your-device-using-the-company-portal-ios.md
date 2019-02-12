@@ -17,24 +17,25 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 11c82861a7367b1552e9f505fc622e439bb86ad0
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9f328577ba2da97595c116efc51626176a14931a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149545"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840759"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>회사 포털을 사용하여 iOS 디바이스를 다시 설정하면 어떻게 되나요?
 
 회사 포털을 사용하여 iPhone 또는 iPad를 초기화하면 몇 가지 개인 데이터를 비롯하여 디바이스의 일부 앱과 설정이 삭제될 수 있습니다. 각 디바이스에 발생하는 상황은 다음 목록에 설명된 것과 같이 디바이스 사용 방법에 따라 달라집니다.
 
-**회사 지원팀이 모바일 장치 관리를 관리합니다.**
+**회사 지원팀이 모바일 디바이스 관리를 관리합니다.**
 
 -   디바이스가 더 이상 회사 포털에 나타나지 않습니다.
 
 -   디바이스가 제조업체의 공장 기본 설정으로 초기화되고 개인 데이터, 앱 및 설정이 제거됩니다.
 
-**장치가 회사 메일에만 액세스할 수 있습니다.**
+**디바이스가 회사 메일에만 액세스할 수 있습니다.**
 
 -   디바이스가 더 이상 회사 포털에 나타나지 않습니다.
 

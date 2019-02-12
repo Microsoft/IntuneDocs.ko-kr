@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: c89a12b0c75f59b2a781ad77c88fe49c513c11a5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6789064c0fd12a3d5ed381af0caf1c3906a7fd02
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182213"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850814"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Microsoft Intune에 대한 최종 사용자 교육 방법
 
@@ -62,15 +63,15 @@ __사용자는 Intune으로 인해 어떤 불편을 겪을 수 있을까요?__  
 * __최종 사용자 경험을 파악합니다.__ Intune 사용자 환경은 생산성에도 영향을 줍니다. 사용자 환경을 이해하면 디바이스 및 사용자 문제를 더 쉽게 해결할 수 있습니다. 예를 들어 사용자가 앱을 얻는 방법을 알아보고 이해할 수 있습니다. 이 정보를 미리 알면 문제를 더 쉽고 빠르게 진단하고 수정할 수 있습니다.
 
 * **OWA(Outlook Web Access)**
-  * [Intune에서 Android 장치 사용](/intune-user-help/using-your-android-device-with-intune)
+  * [Intune에서 Android 디바이스 사용](/intune-user-help/using-your-android-device-with-intune)
   * [Android 사용자가 앱을 얻는 방법](end-user-apps-android.md)
 
 * **iOS**
-  * [Intune에서 iOS 장치 사용](/intune-user-help/using-your-ios-device-with-intune)
+  * [Intune에서 iOS 디바이스 사용](/intune-user-help/using-your-ios-device-with-intune)
   * [iOS 사용자가 앱을 얻는 방법](end-user-apps-ios.md)
 
 * **Windows**
-  * [Intune에서 Windows 장치 사용](/intune-user-help/using-your-windows-device-with-intune)
+  * [Intune에서 Windows 디바이스 사용](/intune-user-help/using-your-windows-device-with-intune)
   * [Windows 사용자가 앱을 얻는 방법](end-user-apps-windows.md)
 
 * __솔직하게 설명합니다.__ 사용자 디바이스에서 관리하려는 항목에 대해 명확하게 설명합니다. 사용자에게 수집하는 데이터 종류와 이유를 알려줍니다. 모든 데이터를 사용하도록 계획하는 방법을 알려줍니다. [Microsoft는 클라우드에서 고객 데이터를 처리하는 방법과 관련하여 최대한 많은 정보를 얻을 권리가 있으며](https://www.microsoft.com/trustcenter/about/transparency), 이러한 철학이 Intune에 대한 사용자 만족도를 크게 높일 수 있다고 생각합니다.

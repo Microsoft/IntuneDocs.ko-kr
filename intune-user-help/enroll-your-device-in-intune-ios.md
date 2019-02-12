@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50fc19410b280e984c8dc3abe620baad7c3267de
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e7db319586b9375b8c88f177197e2fdf15378ab4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959539"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847304"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>회사 리소스에 대한 iOS 디바이스 액세스 설정
 
@@ -65,7 +66,7 @@ Intune 회사 포털 앱으로 iOS 디바이스를 등록하여 조직의 이메
 |![Azure AD 암호 프롬프트.](./media/ios-03-cp-enroll-1802.PNG)|암호를 입력하고 **로그인**을 탭합니다.|
 |![회사 리소스 스플래시 로드 중 화면.](./media/ios-04-cp-enroll-1802.PNG)|이 화면이 로드될 때까지 기다립니다.|
 |![사용 약관 페이지.](./media/ios-05-cp-enroll-1802.PNG)|사용 약관을 읽고 **모두 동의**합니다.|
-|![회사 액세스 설정 화면. 관리 및 설정이 모두 해결되어야 함.](./media/ios-06-cp-enroll-1802.PNG)|**시작**을 탭하여 장치에서 회사 리소스에 액세스할 수 있게 설정하는 프로세스를 시작합니다. 지금 이 작업을 할 수 없는 경우에는 프로세스를 **연기**할 수 있지만 메일, 문서 등을 가져올 수 없게 됩니다.|
+|![회사 액세스 설정 화면. 관리 및 설정이 모두 해결되어야 함.](./media/ios-06-cp-enroll-1802.PNG)|**시작**을 탭하여 디바이스에서 회사 리소스에 액세스할 수 있게 설정하는 프로세스를 시작합니다. 지금 이 작업을 할 수 없는 경우에는 프로세스를 **연기**할 수 있지만 메일, 문서 등을 가져올 수 없게 됩니다.|
 |![회사에서 볼 수 있는 정보 화면.](./media/ios-07-cp-enroll-1802.PNG)|아래쪽에서 링크를 탭하면 회사에서 볼 수 있는 정보에 대해 **자세히 알아볼 수 있습니다**. 그렇지 않은 경우에는 **계속**을 탭 합니다.|
 |![다음 단계 화면.](./media/ios-08-cp-enroll-1802.PNG)|이 화면에서는 설정 시 수행되는 작업을 살펴봅니다. Safari, 설정 앱 및 회사 포털 앱에서 작업하는 데 시간이 걸립니다. **계속**을 탭합니다.|
 |![다음 단계에서 [다음]을 탭한 후 로딩 화면.](./media/ios-09-cp-enroll-1802.PNG)|이 화면이 로드될 때까지 기다립니다.|
@@ -75,7 +76,7 @@ Intune 회사 포털 앱으로 iOS 디바이스를 등록하여 조직의 이메
 |![화면 아래쪽에서 프로필 모달 대화 상자 설치.](./media/ios-10-cp-enroll-1711.PNG)|**설치**를 탭합니다.|
 |![프로필 설치 중 로딩 화면.](./media/ios-11-cp-enroll-1711.PNG)|이 화면이 로드될 때까지 기다립니다.|
 |![프로필 관리 경고 화면.](./media/ios-12-cp-enroll-1711.PNG)|Apple에서 작성한 이 경고를 통해 관리 중인 디바이스에서 수행할 수 있는 작업 유형에 대해 자세히 알 수 있습니다. [회사에서 볼 수 있는 정보](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)에 대해 자세히 알아봅니다.|
-|![원격 관리의 신뢰 정보를 요청하는 시스템 프롬프트.](./media/ios-13-cp-enroll-1711.PNG)|**신뢰**를 탭하여 장치에서 회사 정보 및 설정을 관리할 수 있습니다.|
+|![원격 관리의 신뢰 정보를 요청하는 시스템 프롬프트.](./media/ios-13-cp-enroll-1711.PNG)|**신뢰**를 탭하여 디바이스에서 회사 정보 및 설정을 관리할 수 있습니다.|
 |![프로필 설치 완료 로드 화면.](./media/ios-14-cp-enroll-1711.PNG)|이 화면이 로드될 때까지 기다립니다.|
 |![프로필 설치됨 화면.](./media/ios-15-cp-enroll-1711.PNG)|프로필이 설치되고 디바이스의 회사 정보와 설정이 훨씬 더 관리되는 상태에 가까워집니다.|
 |![등록을 위해 Safari로 전환됨.](./media/ios-16-cp-enroll-1711.PNG)|디바이스에 대한 관리 정보 확인을 완료하도록 Safari로 이동됩니다. |
@@ -90,6 +91,6 @@ Intune 회사 포털 앱으로 iOS 디바이스를 등록하여 조직의 이메
 |![설정을 성공적으로 등록 및 업데이트함](./media/ios-28-cp-enroll-1802.PNG)|축하합니다. 이제 디바이스가 Intune에 등록됩니다.|
 
 > [!Note]
-> 디바이스가 완전히 관리되기까지 몇 단계가 더 남아 있을 수 있습니다. [Telecom Expense Management를 사용하는 장치 등록](enroll-your-device-with-telecom-expense-management-ios.md)에 대해 자세히 알아보세요. 조직에서 Apple의 장비 등록 프로그램을 사용하는 경우 [여기](enroll-your-device-dep-ios.md)를 참조하세요.
+> 디바이스가 완전히 관리되기까지 몇 단계가 더 남아 있을 수 있습니다. [Telecom Expense Management를 사용하는 디바이스 등록](enroll-your-device-with-telecom-expense-management-ios.md)에 대해 자세히 알아보세요. 조직에서 Apple의 장비 등록 프로그램을 사용하는 경우 [여기](enroll-your-device-dep-ios.md)를 참조하세요.
 
 여전히 도움이 필요하세요? 회사 지원팀과 확인하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.  

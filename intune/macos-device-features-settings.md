@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: cdc5f5fe2c94dee2349cab777c7671c2673f52b2
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: db89dd2cce679597533d2861a43a7a2fd82abd14
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54832606"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850576"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune에서 macOS 디바이스 기능 설정
 
@@ -35,8 +36,8 @@ Intune에는 macOS 사용자가 네트워크의 AirPrint 프린터로 인쇄할 
 
     - **IP 주소**: 프린터의 IPv4 또는 IPv6 주소를 입력합니다. 호스트 이름을 사용하여 프린터를 식별하는 경우 터미널 앱에서 프린터를 ping하여 IP 주소를 가져올 수 있습니다. [IP 주소 및 경로 가져오기](#get-the-ip-address-and-path)(이 문서)에서 자세한 정보를 제공합니다.
     - **경로**: 프린터의 경로를 입력합니다. 네트워크의 프린터에 대한 경로는 일반적으로 `ipp/print`입니다. [IP 주소 및 경로 가져오기](#get-the-ip-address-and-path)(이 문서)에서 자세한 정보를 제공합니다.
-    - **포트**: AirPrint 대상의 수신 대기 포트를 입력합니다. 이 속성을 비워두면 AirPrint는 기본 포트를 사용합니다. iOS 11.0에서 사용할 수 있습니다.
-    - **TLS**: TLS(전송 계층 보안)를 사용하여 AirPrint 연결을 보호하려면 **사용**을 선택합니다. iOS 11.0에서 사용할 수 있습니다.
+    - **포트**: AirPrint 대상의 수신 대기 포트를 입력합니다. 이 속성을 비워두면 AirPrint는 기본 포트를 사용합니다. iOS 11.0 이상에서 사용할 수 있습니다.
+    - **TLS**: TLS(전송 계층 보안)를 사용하여 AirPrint 연결을 보호하려면 **사용**을 선택합니다. iOS 11.0 이상에서 사용할 수 있습니다.
 
 2. **추가**를 선택합니다. AirPrint 서버가 목록에 추가됩니다. 많은 AirPrint 서버를 추가할 수 있습니다.
 

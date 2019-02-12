@@ -16,18 +16,19 @@ ms.reviewer: pchacon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e82942148b65b3dce67e640c6e10fa3fbb234295
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 695eef8bb130200fd4f0913099aeeb51b752cabe
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179799"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844142"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>디바이스를 관리할 필요 없이 Office 365 Exchange Online 보호
 
-디바이스 관리 시스템 설정에 대한 오버헤드 없이 직원에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우 그렇게 할 수 있습니다. Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있습니다. 필요한 관리 설정을 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS 또는 Android 디바이스](supported-devices-browsers.md)가 있어야 합니다. 
+디바이스 관리 시스템 설정에 대한 오버헤드 없이 직원에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우 그렇게 할 수 있습니다. Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있습니다. 필요한 관리 설정을 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS 또는 Android 장치](supported-devices-browsers.md)가 있어야 합니다. 
 
-장치 관리 시스템을 설정하여 관리하고자 한다면 가능합니다. 이러한 유형의 앱 보호는 장치 관리와 독립적으로 작동하게 됩니다. 
+장치 관리 시스템을 설정하려면 그렇게 할 수 있습니다. 이러한 유형의 앱 보호는 디바이스 관리와 독립적으로 작동합니다. 
 
 ## <a name="action-plan"></a>작업 계획
 
@@ -46,7 +47,7 @@ ms.locfileid: "52179799"
 
 회사 데이터의 보안을 강화하기 위해 앱 기반 조건부 액세스를 사용했습니다. 다음 단계의 일부로, 다음을 비롯하여 회사 데이터의 보안을 향상할 수 있는 다른 방법에 대해 자세히 알아볼 수 있습니다. 
 
-* [Active Directory 및 Azure Active Directory에서 장치 준수, 장치 위험, 위치 및 사용자 특성에 따라 조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) 설정  
+* [Active Directory 및 Azure Active Directory에서 디바이스 준수, 디바이스 위험, 위치 및 사용자 특성에 따라 조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) 설정  
 * 고의적이거나 고의적이지 않은 데이터 유출로부터 회사 데이터를 보호하기 위해 앱 보호 정책 설정 
 * 네트워크 외부에서 회사 데이터를 보호하기 위해 Azure Information Protection 활용 
 

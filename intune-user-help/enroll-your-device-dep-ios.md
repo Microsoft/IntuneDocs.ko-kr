@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b93f02011b0900b1a64ae6cb10a84a52cd40187a
-ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c592b558ace0a2a39059de9f64531f1e078c539d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241799"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847763"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>관리에 조직 제공 iOS 디바이스 등록
 
@@ -39,16 +40,16 @@ Intune에서 새 iOS 디바이스를 관리하는 방법을 알아봅니다.
 조직 제공 디바이스가 아닌 자신의 iOS 디바이스를 사용하는 경우 [개인용 및 개인 소유 디바이스 가져오기](enroll-your-device-in-intune-ios.md)의 단계를 따릅니다.  
 
 1. iOS 디바이스를 켭니다. 
-2. **언어**를 선택하고 장치를 Wi-Fi에 연결합니다.
-3. **iOS 장치 설정** 화면에서 다음과 같은 작업을 수행할지 여부를 선택합니다. 
+2. **언어**를 선택하고 디바이스를 Wi-Fi에 연결합니다.
+3. **iOS 디바이스 설정** 화면에서 다음과 같은 작업을 수행할지 여부를 선택합니다. 
  
-   - **새 장치로 설정**
+   - **새 디바이스로 설정**
    - **iCloud 백업에서 복원**
    - **iTunes 백업에서 복원**
 
-4. Wi-Fi에 연결되면 **구성** 화면이 표시됩니다. **[사용자 회사]에서 자동으로 장치를 구성합니다.** 라고 표시합니다.
+4. Wi-Fi에 연결되면 **구성** 화면이 표시됩니다. **[사용자 회사]에서 자동으로 디바이스를 구성합니다.** 라고 표시합니다.
 
-   **구성을 통해 [사용자 조직]이 이 장치를 무선으로 관리할 수 있습니다. 관리자가 이메일 및 네트워크 계정을 설정하고, 앱을 설치 및 구성하고, 원격으로 설정을 관리하도록 지원할 수 있습니다. 관리자는 기능을 사용하지 않도록 설정하고, 앱을 설치 및 제거하고, 인터넷 트래픽을 모니터링 및 제한하고, 이 디바이스를 원격으로 지울 수 있습니다.**
+   **구성을 통해 [사용자 조직]이 이 디바이스를 무선으로 관리할 수 있습니다. 관리자가 이메일 및 네트워크 계정을 설정하고, 앱을 설치 및 구성하고, 원격으로 설정을 관리하도록 지원할 수 있습니다. 관리자는 기능을 사용하지 않도록 설정하고, 앱을 설치 및 제거하고, 인터넷 트래픽을 모니터링 및 제한하고, 이 디바이스를 원격으로 지울 수 있습니다.**
  
    **구성은 다음에서 제공합니다.[사용자 회사의] iOS 팀 [주소]**
 

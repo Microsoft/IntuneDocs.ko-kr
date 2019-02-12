@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 93eeabf700a9783d24de67e7d07402719b20e8d3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 522aaf2e6a105ec64342d54ad12a6cd8fc2b51ca
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013418"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835455"
 ---
 # <a name="enroll-your-device-in-intune"></a>Intune에서 디바이스 등록
 
@@ -28,7 +29,7 @@ ms.locfileid: "31013418"
 
 등록 지침을 보려면 다음 중에서 사용하는 디바이스 유형에 해당하는 링크를 사용합니다.
 
-- [Intune에서 Android 장치 등록](enroll-your-device-in-Intune-android.md)
-- [Intune에서 iOS 장치 등록](enroll-your-device-in-intune-ios.md)
-- [Intune에서 macOS 장치 등록](enroll-your-device-in-intune-macos.md)
-- [Intune에서 Windows 장치 등록](enroll-your-device-in-intune-windows.md)
+- [Intune에서 Android 디바이스 등록](enroll-your-device-in-Intune-android.md)
+- [Intune에서 iOS 디바이스 등록](enroll-your-device-in-intune-ios.md)
+- [Intune에서 macOS 디바이스 등록](enroll-your-device-in-intune-macos.md)
+- [Intune에서 Windows 디바이스 등록](enroll-your-device-in-intune-windows.md)

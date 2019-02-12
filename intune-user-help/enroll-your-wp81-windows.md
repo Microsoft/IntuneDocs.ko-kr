@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c0600dd17b28506e118cdaef0421c8db3b9c86e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a1708066ce0065b58f5d7399862ac157d5647341
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147524"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841320"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune에서 Windows Phone 8.1 디바이스 등록
 
@@ -56,13 +57,13 @@ Intune에 Phone 8.1 디바이스를 등록하려면 회사에 적용되는 지�
 
 2.  자격 증명을 제공합니다. 해당하는 경우 회사의 계약조건을 수락하라는 요청받을 수 있습니다.
 
-3.  **내 장치**를 살짝 밉니다.
+3.  **내 디바이스**를 살짝 밉니다.
 
-4.  **이 장치를 등록하거나 식별하려면 탭하세요.** 를 탭합니다.
+4.  **이 디바이스를 등록하거나 식별하려면 탭하세요.** 를 탭합니다.
 
     ![이 디바이스를 등록하거나 식별하려면 탭하세요.](./media/WP81-enroll-1-swipe-my-devices.png)
 
-5.  **이 장치 등록**을 탭합니다.
+5.  **이 디바이스 등록**을 탭합니다.
 
     ![이 디바이스 화면을 등록합니다.](./media/WP81-enroll-2-enroll-this-device.png)
 

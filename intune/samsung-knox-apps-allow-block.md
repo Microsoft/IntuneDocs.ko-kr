@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ddce0103dd73d6489a3727408671f509b84fe50b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e7c40f17ba05c19cd1bc0967f6d343e5871c0388
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187823"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845689"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Microsoft Intune에서 사용자 지정 정책을 사용하여 Samsung Knox Standard 디바이스에 대해 앱 허용 및 차단 
 
@@ -36,10 +37,10 @@ ms.locfileid: "52187823"
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **장치 구성**을 선택합니다.
-2. **장치 구성** 창에서 **관리** > **프로필**을 선택합니다.
+3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
+2. **디바이스 구성** 창에서 **관리** > **프로필**을 선택합니다.
 2. 프로필 목록 창에서 **프로필 만들기**를 선택합니다.
-3. **프로필 만들기** 창에서 이 장치 프로필에 대한 **이름** 및 선택적 **설명**을 입력합니다.
+3. **프로필 만들기** 창에서 이 디바이스 프로필에 대한 **이름** 및 선택적 **설명**을 입력합니다.
 2. **Android**의 **플랫폼**과 **사용자 지정**의 **프로필 유형**을 선택합니다.
 3. **설정**을 클릭합니다.
 3. **사용자 지정 OMA-URI 설정** 창에서 **추가**를 선택합니다.

@@ -17,16 +17,17 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 92cd7969dafb133cf044e2bf5fd2c6d0f829f6ff
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5c28d5b122bda537d4707bc0fdc2bfc74bcb823a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150381"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847287"
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>Intune에서 Windows 디바이스 등록을 취소하면 어떻게 되나요?
 
-**이 문서의 내용**에서 이 페이지의 오른쪽에 있는 링크를 사용하여 사용 중인 장치 유형에 대한 정보를 찾을 수 있습니다.
+**이 문서의 내용**에서 이 페이지의 오른쪽에 있는 링크를 사용하여 사용 중인 디바이스 유형에 대한 정보를 찾을 수 있습니다.
 
 
 ## <a name="windows-10-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Vista

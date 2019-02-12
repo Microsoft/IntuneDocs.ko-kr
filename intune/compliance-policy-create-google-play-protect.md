@@ -16,12 +16,13 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e8c3c0d511439d6b18c7f04e5a493e2851d7997f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5963cb7de2994feb41c4679e87970aec4f127de5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179449"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848830"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Google Play 보호를 사용하도록 설정하기 위해 디바이스 준수 정책을 만드는 방법
 
@@ -33,7 +34,7 @@ GPP(Google Play 보호) 준수를 확인하기 위해 Android 플랫폼에 대�
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-2. **관리** 그룹에서 **장치 준수**를 선택합니다. 
+2. **관리** 그룹에서 **디바이스 준수**를 선택합니다. 
 3. **정책**을 선택하고 **정책 만들기**를 선택합니다.
 4. 정책 **이름** 및 **설명**을 입력합니다.
 5. 플랫폼으로 **Android**를 선택합니다.
@@ -54,8 +55,8 @@ GPP(Google Play 보호) 준수를 확인하기 위해 Android 플랫폼에 대�
 
     엔터프라이즈에서 Android 회사 프로필을 사용하는 경우 등록된 디바이스에 대해 **앱에서 위협 검색**을 사용하도록 설정할 수 있습니다. 디바이스 프로필을 설정하고 시스템 보안 설정이 필요합니다. 자세한 내용은 [Microsoft Intune의 Android 회사 프로필 디바이스 제한 설정](device-restrictions-android-for-work.md)을 참조하세요.
 
- - **SafetyNet 장치 증명**  
-   충족해야 하는 SafetyNet 디바이스 증명 무결성 수준을 설정합니다. 수준으로는 **구성되지 않음**, **기본 무결성 검사** 및 **기본 무결성 및 인증 장치 검사**가 있습니다.
+ - **SafetyNet 디바이스 증명**  
+   충족해야 하는 SafetyNet 디바이스 증명 무결성 수준을 설정합니다. 수준으로는 **구성되지 않음**, **기본 무결성 검사** 및 **기본 무결성 및 인증 디바이스 검사**가 있습니다.
 
 
 
