@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8bc441dd07191ec3eb1280330be380ca425f53cc
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7b90edf1f2e380790e2c725ee00c03d525c9fa1e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150849"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833976"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>관리되는 macOS 디바이스를 사용하여 올바른 사람에게 오류 제출
 
