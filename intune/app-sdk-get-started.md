@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ea7ee32794a120c12b0720be5fa11f3b97536ab
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ac9c8ca0b04cbb6f7cf570134a6f4bdce7bf57ed
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848813"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325455"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -41,7 +41,7 @@ _**반드시**_ 먼저 Microsoft Intune에 앱을 등록하고 등록 조건에 
 
 Microsoft Intune 팀에서 등록을 완료하고 확인할 때까지 Intune 관리자는 앱의 딥 링크에 앱 보호 정책을 적용할 수 없습니다. Microsoft는 앱을 [Microsoft Intune 파트너 페이지](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)에도 추가할 예정입니다. 그 페이지에는 Intune 앱 보호 정책을 지원하는 앱임을 나타내는 앱 아이콘이 표시됩니다.
 
-등록 프로세스를 시작하고 아직 Microsoft 담당자와 작업하지 않은 경우 [Microsoft Intune 앱 파트너 설문지](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)를 작성합니다.
+등록 프로세스를 시작하고 아직 Microsoft 담당자와 작업하지 않은 경우 [Microsoft Intune 앱 파트너 설문지](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR80SNPjnVA1KsGiZ89UxSdVUMEpZNUFEUzdENENOVEdRMjM5UEpWWjJFVi4u)를 작성합니다.
 
 Microsoft에서는 사용자의 설문지 응답에 명시된 메일 주소를 사용하여 연락한 후 등록 프로세스를 진행합니다. 또한 연락해야 할 사항이 있는 경우 등록 메일 주소를 사용하여 연락합니다.
 

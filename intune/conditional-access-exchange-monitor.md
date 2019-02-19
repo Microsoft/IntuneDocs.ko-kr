@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 951db22026725c2ec2e9c2be340bcccd44b2528b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 383370aaaca10cb44b614be6e250218106406cb4
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848103"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307756"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune에서 온-프레미스 Exchange 및 Exchange Online에 대한 조건부 액세스 준수 모니터링
 
@@ -38,9 +38,9 @@ Intune 1704 릴리스부터는 관리자가 온-프레미스 Exchange Connector 
 
 2.  정상적으로 로그인되면 **Azure 대시보드**가 표시됩니다.
 
-3.  왼쪽 메뉴에서  **모든 서비스**를 선택한 다음, 텍스트 상자 필터에  **Intune**을 입력합니다.
+3.  왼쪽 메뉴에서 **모든 서비스**를 선택한 다음, 텍스트 상자 필터에 **Intune**을 입력합니다.
 
-4.   **Intune** 을 선택하면 **Intune 대시보드** 가 표시됩니다.
+4.  **Intune**을 선택하면 **Intune 대시보드**가 표시됩니다.
 
 5.  **조건부 액세스**와 **개요**를 차례로 선택합니다.
 
