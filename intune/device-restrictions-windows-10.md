@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230123"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307892"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -70,6 +71,7 @@ ms.locfileid: "55230123"
 - **Microsoft 계정**: 사용자가 Microsoft 계정을 디바이스와 연결하도록 허용합니다.
 - **타사 계정**: 사용자가 Microsoft 계정과 연결되지 않은 디바이스에 이메일 계정을 추가할 수 있습니다.
 - **Microsoft 계정에 대한 설정 동기화**: Microsoft 계정과 연결된 디바이스 및 앱 설정이 디바이스 간에 동기화되도록 허용합니다.
+- **Microsoft 계정 로그인 도우미**: **사용 안 함**을 선택하면, 최종 사용자가 서비스를 수동으로 중지하거나 시작하는 것과 같이 Microsoft 로그인 도우미 서비스(wlidsvc)를 제어할 수 없습니다. **구성되지 않음**으로 설정하면, wlidsvc NT 서비스가 OS(운영 체제) 기본값을 사용하므로, 최종 사용자가 서비스를 시작 및 중지할 수 있습니다. 이 서비스는 OS에서 사용자가 Microsoft 계정에 로그인하도록 허용하기 위해 사용됩니다.
 
 ## <a name="cloud-printer"></a>클라우드 프린터
 
@@ -136,6 +138,10 @@ ms.locfileid: "55230123"
 - **잉크 작업 영역**: 사용자가 잉크 작업 영역에 액세스하지 못합니다. **구성되지 않음**을 선택하면 잉크 작업 영역이 켜지고 사용자가 잠금 화면 위에서 이를 사용할 수 있습니다.
 - **자동 재배포**: 사용자는 디바이스 잠금 화면에서 **CTRL + Win + R**을 사용하여 모든 사용자 데이터 및 설정을 관리자 권한으로 삭제할 수 있습니다. 디바이스가 자동으로 재구성되고 관리에 다시 등록됩니다.
 - **사용자가 디바이스 설치 중 네트워크에 연결해야 함(Windows Insider 전용)**: **필요**를 선택하면 Windows 10을 설치하는 동안 디바이스가 네트워크에 연결되어야 네트워크 페이지를 계속 진행할 수 있습니다. 이 기능이 미리 보기 상태인 동안 이 설정을 사용하려면 Windows Insider build 1809 이상이 필요합니다.
+- **직접 메모리 액세스**: **차단**을 사용하면 사용자가 Windows에 로그인할 때까지 모든 핫 플러그형 PCI 다운스트림 포트에 대한 DMA(직접 메모리 액세스)가 차단됩니다. **사용**(기본값)으로 설정하면, 사용자가 로그인되지 않은 경우에도 DMA에 액세스할 수 있습니다.
+
+  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **작업 관리자에서 프로세스 종료**: 이 설정은 관리자가 아닌 사용자가 작업 관리자를 사용하여 작업을 종료할 수 있는지 여부를 결정합니다. **차단**을 선택하면 표준 사용자(비관리자)가 작업 관리자를 사용하여 디바이스에서 프로세스 또는 작업을 종료하지 못합니다. **구성되지 않음**(기본값)은 표준 사용자가 작업 관리자를 사용하여 프로세스 또는 작업을 종료할 수 있도록 허용합니다.
 
 ## <a name="kiosk-preview---obsolete"></a>키오스크(미리 보기) - 사용되지 않음
@@ -192,7 +198,7 @@ ms.locfileid: "55230123"
 ## <a name="locked-screen-experience"></a>잠긴 화면 환경
 
 - **알림 센터 알림(모바일 전용)**: 디바이스 잠금 화면에 알림 센터 알림이 표시됩니다(Windows 10 Mobile 전용).
-- **잠긴 화면 그림 URL(데스크톱 전용)**: Windows 잠금 화면 배경으로 사용되는 JPEG 형식의 사진에 URL을 입력합니다. 사용자가 이 설정을 변경할 수 없습니다.
+- **잠긴 화면 그림 URL(데스크톱 전용)**: Windows 잠금 화면 배경으로 사용되는 JPEG 형식의 사진에 URL을 입력합니다. 이 설정은 이미지를 잠급니다. 이미지는 나중에 변경할 수 없습니다.
 - **사용자 구성 가능 화면 시간 초과(모바일 전용)**: 사용자가 기간을 구성할 수 있습니다. 
 - **잠긴 화면 위 Cortana(데스크톱 전용)**: 디바이스가 잠금 화면 상태일 경우 사용자가 Cortana를 조작할 수 없도록 합니다(Windows 10 Desktop 전용).
 - **잠긴 화면의 알림 메시지**: 디바이스 잠금 화면에 경고 메시지가 표시되지 않습니다.
@@ -313,7 +319,6 @@ ms.locfileid: "55230123"
   - **이전 암호 다시 사용 방지**: 디바이스에 기억될 이전에 사용된 암호의 수를 지정합니다.
   - **디바이스가 유휴 상태에서 되돌아오는 경우 암호 필요(모바일 전용)**: 사용자가 디바이스(Windows 10 Mobile에만 해당) 잠금을 해제하기 위해 암호를 입력해야 할지 여부를 지정합니다.
   - **단순 암호**: 1111 및 1234와 같은 단순 암호를 사용할 수 있습니다. 또한 이 설정은 Windows 사진 암호의 사용을 허용하거나 차단합니다.
-- **암호화**: 대상 디바이스에서 암호화를 사용합니다.
 
 ## <a name="per-app-privacy-exceptions"></a>앱별 개인 정보 예외
 

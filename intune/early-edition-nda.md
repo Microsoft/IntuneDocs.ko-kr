@@ -17,14 +17,15 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: d50925d9f5422e1bfea01869233c63d6a2889109
-ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 19994745a232a362d6bba0f09ed3934e492a17ed
+ms.sourcegitcommit: 2f431f122ce3ee6b5d0cdb04a0b748d00f83e295
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55737505"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56265675"
 ---
-# <a name="the-early-edition-for-microsoft-intune---january-2019"></a>Microsoft Intune 초기 버전 - 2019년 1월
+# <a name="the-early-edition-for-microsoft-intune---february-2019"></a>Microsoft Intune 초기 버전 - 2019년 2월
 
 > [!Note]
 > NDA 알림: Intune에 대해 다음 변경 사항을 개발 중입니다. 이 정보는 매우 제한된 기준에 따라 NDA에서 공유됩니다. Twitter, UserVoice, Reddit 등과 같은 소셜 미디어 또는 공개 웹 사이트에 이 정보를 게시하지 마세요. 

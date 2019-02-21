@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834775"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325438"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>앱 보호 정책에 대해 LOB(기간 업무) 앱 준비
 
@@ -87,7 +87,6 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 |앱이 다른 앱의 데이터를 받도록 허용|X|X|
 |다른 앱에서 잘라내기, 복사 및 붙여넣기 제한|X|X|
 |액세스용 단순 PIN 필요|X|X|
-|기본 제공 앱 PIN을 Intune PIN으로 바꾸기|X||
 |PIN을 다시 설정하기 전 시도 횟수 지정|X|X|
 |PIN 대신 지문 허용|X|X|
 |PIN 대신 안면 인식 허용(iOS에만 해당)|X|X|
@@ -98,8 +97,8 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 |오프라인 유예 기간 지정|X|X|
 |화면 캡처 차단(Android에만 해당)|X|X|
 |디바이스 등록이 제외된 MAM에 대한 지원|X|X|
-|전체 초기화|X|X|
-|선택적 초기화 <br><br>**참고:** iOS의 경우 관리 프로필을 제거하면 앱도 제거됩니다.|X||
+|앱 데이터 전체 초기화|X|X|
+|다중 ID 시나리오에서 회사 및 학교 데이터 선택적 초기화 <br><br>**참고:** iOS의 경우 관리 프로필을 제거하면 앱도 제거됩니다.|X||
 |"다른 이름으로 저장" 차단|X||
 |대상 애플리케이션 구성|X||
 |다중 ID 지원|X||

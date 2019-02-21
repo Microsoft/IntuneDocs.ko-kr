@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303398"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302186"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 디바이스를 위한 Intune에서의 PowerShell 스크립트 관리
 
@@ -30,9 +31,9 @@ Intune 관리 확장을 사용하여 Windows 10 디바이스에서 실행되도�
 
 최종 사용자 컴퓨팅은 디지털 변형을 거치는 중입니다. 기존의 클래식 IT는 단일 디바이스 플랫폼, 회사 소유 디바이스, 사무실에서 일하는 사용자, 다양한 수동적인 IT 프로세스에 초점을 맞추고 있습니다. 최신 작업 공간에서는 사용자와 회사가 소유한 여러 플랫폼을 사용하고, 사용자가 장소에 구애받지 않고 일할 수 있으며, 자동화된 능동적 IT 프로세스를 제공합니다.
 
-Microsoft Intune과 같은 MDM 서비스는 Windows 10을 실행하는 모바일 및 데스크톱 디바이스를 관리할 수 있습니다. 기본 제공 Windows 10 관리 클라이언트는 Intune과 통신하여 엔터프라이즈 관리 작업을 실행합니다. 고급 디바이스 구성, 문제 해결 및 현재 Windows 10 MDM에서 사용할 수 없는 레거시 Win32 앱 관리와 같은 일부 작업이 필요할 수도 있습니다. 이러한 기능의 경우 Windows 10 디바이스에서 Intune 소프트웨어 클라이언트를 실행할 수 있습니다. [Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교](pc-management-comparison.md)는 좋은 리소스입니다.
+Microsoft Intune과 같은 MDM 서비스는 Windows 10을 실행하는 모바일 및 데스크톱 디바이스를 관리할 수 있습니다. 기본 제공 Windows 10 관리 클라이언트는 Intune과 통신하여 엔터프라이즈 관리 작업을 실행합니다. 고급 디바이스 구성, 문제 해결과 같은 일부 작업이 필요할 수도 있습니다. Win32 앱 관리의 경우, Windows 10 디바이스에서 [Win32 앱 관리](apps-win32-app-management.md) 기능을 사용할 수 있습니다.
 
-Intune 관리 확장은 기본 제공 Windows 10 MDM 기능을 보완합니다. Windows 10 디바이스에서 실행할 PowerShell 스크립트를 만들 수 있습니다. 예를 들어 레거시 Win32 앱을 설치하는 PowerShell 스크립트를 만들고, Intune에 스크립트를 업로드하고, 스크립트를 Azure AD(Active Directory) 그룹에 할당하고, 스크립트를 실행할 수 있습니다. 그런 다음, 시작부터 완료까지 스크립트의 실행 상태를 모니터링할 수 있습니다.
+Intune 관리 확장은 기본 제공 Windows 10 MDM 기능을 보완합니다. Windows 10 디바이스에서 실행할 PowerShell 스크립트를 만들 수 있습니다. 예를 들어 고급 디바이스 구성을 수행하는 PowerShell 스크립트를 만들고, Intune에 스크립트를 업로드하고, 스크립트를 Azure AD(Active Directory) 그룹에 할당하고, 스크립트를 실행할 수 있습니다. 그런 다음, 시작부터 완료까지 스크립트의 실행 상태를 모니터링할 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -46,7 +47,7 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고, **Intune**을 기준으로 필터링한 다음, **Microsoft Intune**을 선택합니다.
 2. **디바이스 구성** > **PowerShell 스크립트** > **추가**를 차례로 선택합니다.
-3. PowerShell 스크립트에 대한 **이름** 및 **설명**을 입력합니다. **스크립트 위치**에 대한 PowerShell 스크립트를 찾습니다. 스크립트 크기는 200KB(ASCII) 또는 100KB(유니코드) 미만이어야 합니다.
+3. PowerShell 스크립트에 대한 **이름** 및 **설명**을 입력합니다. **스크립트 위치**에 대한 PowerShell 스크립트를 찾습니다. 스크립트 크기는 200KB 이하이어야 합니다.
 4. **구성**을 선택합니다. 그런 다음, 디바이스(**예**) 또는 시스템 컨텍스트(**아니요**)에서 사용자의 자격 증명을 사용하여 스크립트를 실행하도록 선택합니다. 기본적으로 스크립트는 시스템 컨텍스트에서 실행됩니다. 스크립트를 시스템 컨텍스트에서 실행해야 하는 경우 외에는 **예**를 선택합니다. 
   ![PowerShell 스크립트 추가 창](./media/mgmt-extension-add-script.png)
 5. 신뢰할 수 있는 게시자가 스크립트를 서명해야 하는지 여부를 선택합니다(**예**). 기본적으로 서명할 스크립트에 대한 요구 사항은 없습니다. 

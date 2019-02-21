@@ -16,12 +16,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 996b4d85da41b480d73d7a79011e2bbd732ea334
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f6d346d7f060b5e997577b09c3ee8b006843ab7b
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690838"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302237"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -240,10 +241,15 @@ iOS 디바이스용 구성 프로필을 만들 경우 **공유 디바이스 구�
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Android 엔터프라이즈 디바이스 소유자 디바이스의 새 알림, 힌트 및 Keyguard 설정 <!-- 3201839 3201843 -->
 이 업데이트에는 디바이스 소유자로 실행할 경우 Android 엔터프라이즈 디바이스의 여러 가지 새로운 기능이 포함됩니다. 이러한 기능을 사용하려면 **디바이스 구성** > **프로필** > **프로필 만들기** > **플랫폼**에서 **Android 엔터프라이즈** 선택 > **프로필 유형**에서 **디바이스 소유자만** 선택 > **디바이스 제한 사항**으로 이동합니다.
+
 새로운 기능은 다음과 같습니다. 
+
 - 들어오는 호출, 시스템 경고, 시스템 오류 등을 포함하여 시스템 알림이 표시되지 않도록 설정
 - 처음 열린 앱에 대한 시작 자습서 및 힌트 건너뛰기 제안
-- 카메라, 알림, 지문 잠금 해제 등의 고급 Keyguard 설정 사용 안 함 설정을 보려면 [Android 엔터프라이즈 디바이스 제한 사항 설정](device-restrictions-android-for-work.md)으로 이동합니다.
+- 카메라, 알림, 지문 잠금 해제 등의 고급 Keyguard 설정을 사용하지 않도록 설정
+
+
+설정을 보려면 [Android 엔터프라이즈 디바이스 제한 사항 설정](device-restrictions-android-for-work.md)으로 이동합니다.
 
 #### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android 엔터프라이즈 디바이스 소유자 디바이스는 Always On VPN 연결을 사용할 수 있음 <!-- 3202194 -->
 이 업데이트에서는 Android 엔터프라이즈 디바이스 소유자 디바이스에서 Always on VPN 연결을 사용할 수 있습니다. 상시 VPN 연결은 계속 연결된 상태로 유지되거나 사용자가 디바이스를 잠금 해제한 경우, 디바이스가 다시 시작된 경우 또는 무선 네트워크가 변경된 경우 바로 다시 연결됩니다. 또한 VPN 연결이 활성화될 때까지 모든 네트워크 트래픽을 차단하는 “잠금” 모드로 연결 상태를 전환할 수도 있습니다.
@@ -282,7 +288,7 @@ iOS 디바이스용 구성 프로필을 만들 경우 **공유 디바이스 구�
 ### <a name="role-based-access-control"></a>역할 기반 액세스 제어
 
 #### <a name="scope-tags-for-apps----1081941---"></a>앱의 범위 태그 <!-- 1081941 -->
-범위 태그를 만들어 역할 및 앱에 대한 액세스를 제한할 수 있습니다. 해당 범위 태그가 할당된 역할이 있는 사용자만 앱에 액세스할 수 있도록 앱에 범위 태그를 추가할 수 있습니다. Apple VPP(Volume Purchase Program)를 통해 구매한 앱에는 범위 태그를 할당할 수 없습니다.  자세한 내용은 [범위 태그를 사용하여 정책 필터링](scope-tags.md)을 참조하세요.
+범위 태그를 만들어 역할 및 앱에 대한 액세스를 제한할 수 있습니다. 해당 범위 태그가 할당된 역할이 있는 사용자만 앱에 액세스할 수 있도록 앱에 범위 태그를 추가할 수 있습니다. 현재는 관리되는 Google Play에서 Intune에 추가된 앱 또는 Apple VPP(Volume Purchase Program)를 통해 구매한 앱에는 범위 태그를 할당할 수 없습니다(향후 지원될 예정임). 자세한 내용은 [범위 태그를 사용하여 정책 필터링](scope-tags.md)을 참조하세요.
 
 
 
@@ -962,8 +968,8 @@ Microsoft Intune 관리자는 VPP(대량 구매 프로그램)를 통해 구매�
 #### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>회사 포털 앱의 규정을 준수하지 않는 메시지 업데이트 <!-- 1832222 -->
 디바이스가 규정을 준수하지 않을 때 디바이스 사용자에게 표시되는 메시지를 수정했습니다. 메시지의 원래 의미는 그대로 유지되지만 더 친숙한 언어와 덜 전문적인 용어로 업데이트되었습니다. 또한 설명서 및 수정 단계에 대한 링크를 최신 상태로 유지하기 위해 새로 고쳤습니다.
 다음에서 볼 수 있는 전후 텍스트는 메시징 향상 기능의 한 예입니다.
-- **이전**: 이 디바이스는 IT 관리자가 요구한 특정 기간 내에 Intune 서비스에 연결되지 않았습니다. *이 문제를 해결하려면 디바이스에서 회사 포털 앱을 열고 준수 확인 단추를 클릭합니다.*
-- **이후**: 디바이스가 얼마 동안 조직에 체크 인되지 않았습니다. *연결을 다시 설정하려면 디바이스에서 회사 포털 앱을 열고 디바이스의 설정 확인을 누릅니다.*
+- **이전**: 이 디바이스는 IT 관리자가 요구한 특정 기간 내에 Intune 서비스에 연결되지 않았습니다.* 이 문제를 해결하려면 디바이스에서 회사 포털 앱을 열고 준수 확인 단추를 클릭합니다.*
+- **이후**: 디바이스가 얼마 동안 조직에 체크 인되지 않았습니다.* 연결을 다시 설정하려면 디바이스에서 회사 포털 앱을 열고 디바이스의 설정 확인을 누릅니다.*
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>iOS VPP 앱 라이선스 해지 <!-- 1863797 -->
 관리자는 사용자 또는 디바이스에 할당된 iOS VPP 앱 라이선스를 회수할 수 있습니다. iOS VPP 앱을 제거하면 앱 라이선스를 회수할 수도 있습니다. 앱을 제거하기 전에 먼저 사용자 또는 디바이스가 앱의 대상인 그룹에서 제거되어야 합니다. 사용자 또는 디바이스를 그룹에서 제거하면 앱의 재설치를 방지할 수 있습니다. 이러한 단계가 완료되면 해당 앱 라이선스를 다른 사용자 또는 디바이스에 할당하도록 선택할 수 있습니다. iOS VPP 앱 라이선스에 대한 자세한 내용은 [Microsoft Intune에서 iOS 볼륨을 구매한 앱 관리](vpp-apps-ios.md)를 참조하세요.

@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838770"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240064"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스에 해당 앱을 할당할 수 있습니다. Intune에서 디바이스를 관리하는지 여부에 관계없이 디바이스에 앱을 할당할 수 있다는 점에 유의해야 합니다. 
+Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스에 해당 앱을 할당할 수 있습니다. Intune에서 디바이스를 관리하는지 여부에 관계없이 디바이스에 앱을 할당할 수 있다는 점에 유의해야 합니다.
 
 > [!NOTE]
 > 사용 가능한 배포 의도는 디바이스 그룹에 대해서는 지원되지 않고 사용자 그룹에 대해서만 지원됩니다.
@@ -124,8 +124,19 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
 > 관리되는 iOS 스토어 앱의 경우에만 이러한 앱을 Microsoft Intune에 추가하고 **필수**로 할당할 때 앱은 **필수** 및 **사용 가능** 의도로 자동으로 생성됩니다.<br><br>
 > 의도적인 대상으로 지정된 iOS 스토어 앱(iOS VPP 앱이 아님)은 디바이스 체크 인 시 디바이스에 적용되며 회사 포털 앱에도 표시됩니다.
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Android 엔터프라이즈 APP-WE 앱 배포
-등록되지 않은 APP-WE(등록이 없는 앱 보호 정책) 배포 시나리오에 있는 Android 디바이스의 경우 관리형 Google Play를 사용하여 스토어 앱 및 LOB 앱을 사용자에게 배포할 수 있습니다. 특히 알 수 없는 소스에서 설치를 허용하여 최종 사용자에게 디바이스의 보안 상태를 완화하도록 요구하지 않는 앱 카탈로그 및 설치 환경을 제공할 수 있습니다. 또한 이 배포 시나리오는 향상된 최종 사용자 환경을 제공합니다. 앱을 할당하는 단계는 [앱 할당](apps-deploy.md#assign-an-app)을 참조하세요.
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>관리되지 않는 디바이스에 관리되는 Google Play 앱 배포
+등록되지 않은 APP-WE(등록이 없는 앱 보호 정책) 배포 시나리오에 있는 Android 디바이스의 경우, 관리되는 Google Play를 사용하여 스토어 앱 및 기간 업무 앱을 사용자에게 배포할 수 있습니다. **등록 여부에 상관없이 사용 가능**으로 대상이 지정된 관리되는 Google Play 앱은 회사 포털 앱이 아니라 최종 사용자 디바이스의 Play 스토어 앱에 표시됩니다. 최종 사용자는 Play 앱에서 이 방식으로 배포된 앱을 찾아서 설치합니다. 앱이 관리되는 Google Play에서 설치되고 있으므로 최종 사용자는 알 수 없는 출처에서 앱 설치를 허용하도록 디바이스 설정을 변경할 필요가 없습니다. 즉, 디바이스의 보안이 강화됩니다. 앱 개발자가 사용자의 디바이스에 설치된 새로운 앱 버전을 Play에 게시하면, 앱이 Play에서 자동으로 업데이트됩니다. 
+
+관리되지 않는 디바이스에 관리되는 Google Play 앱을 할당하는 단계:
+
+1. 관리되는 Google Play에 Intune 테넌트를 연결합니다. Android Enterprise 작업 프로필, 전용 또는 완전 관리형 디바이스를 관리하기 위해 이미 이 작업을 한 경우에는 작업을 다시 수행할 필요가 없습니다.
+2. 관리되는 Google Play의 앱을 Intune 콘솔에 추가합니다.
+3. 원하는 사용자 그룹에 대해 **등록 여부에 상관없이 사용 가능**으로 관리되는 Google Play 앱을 대상으로 지정합니다. 등록되지 않은 디바이스에 대한 **필수** 및 **제거** 앱 대상 지정은 지원되지 않습니다.
+4. 앱 보호 정책을 사용자 그룹에 할당합니다.
+5. 다음번에 최종 사용자가 회사 포털 앱을 열면, Play 스토어에서 사용 가능한 앱이 있음을 나타내는 메시지가 표시됩니다.  사용자가 이 알림을 탭하여 직접 Play 앱으로 이동해서 회사 앱을 볼 수도 있고, 별도로 Play 스토어 앱으로 이동할 수도 있습니다.
+6. 최종 사용자는 Play 스토어 앱 내에서 상황에 맞는 메뉴를 확장하고 개인 Google 계정(개인 앱을 볼 수 있음)과 회사 계정(스토어 및 사용자가 대상으로 지정된 기간 업무 앱을 볼 수 있음) 간에 전환할 수 있습니다. 최종 사용자는 Play 스토어 앱에서 [설치]를 탭하여 앱을 설치합니다.
+
+Intune 콘솔에서 APP 선택적 초기화가 실행되면, 회사 계정은 Play 스토어 앱에서 자동으로 제거되고 최종 사용자는 이때부터 더 이상 Play 스토어 앱 카탈로그에서 회사 앱을 볼 수 없습니다. 회사 계정이 디바이스에서 제거되는 경우에도 Play 스토어에서 설치된 앱은 디바이스에 설치되어 있고, 제거되지 않습니다. 
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a730dbb702286f71534623b2c08da6b388c3e499
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 482ae185f221b3ff77534c1cfd8cccd8278965b7
+ms.sourcegitcommit: 84ab7a49aad853591a4ae362382f293e29b360df
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835846"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156171"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Android 완전 관리형 디바이스의 Intune 등록 설정(미리 보기)
 
@@ -35,7 +35,7 @@ Intune을 사용하면 Android 완전 관리형 디바이스를 포함하여 And
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 
-Android 완전 관리형 디바이스를 관리하려면 Intune 독립 실행형 테넌트가 있어야 합니다. 하이브리드(SCCM 연결 됨) 모드 또는 레거시 Silverlight 관리 콘솔에서는 완전 관리형 디바이스 관리를 사용할 수 없습니다.
+Android 완전 관리형 디바이스를 관리하려면 Intune 독립 실행형 테넌트가 있어야 합니다. 하이브리드(SCCM 연결됨) 모드 또는 레거시 Silverlight 관리 콘솔에서는 완전 관리형 디바이스 관리를 사용할 수 없습니다.
 
 Android 완전 관리형 디바이스로 관리하려면 디바이스가 다음 요구 사항을 충족해야 합니다.
 
