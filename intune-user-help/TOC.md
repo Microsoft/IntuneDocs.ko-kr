@@ -25,7 +25,6 @@
 
 ### [Android의 일반적인 문제 해결](troubleshoot-your-device-android.md)
 #### [디바이스 준수 확인](check-compliance-on-your-device-android.md)
-#### [배터리 절약 모드로 Outlook 전자 메일 동기화](power-saving-mode-android.md)
 #### [Samsung Knox의 일반적인 문제 해결](samsung-knox-errors-android.md)
 #### [디바이스를 업데이트하여 Outlook 설치](update-device-outlook-android.md)
 
