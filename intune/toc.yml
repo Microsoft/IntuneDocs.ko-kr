@@ -197,17 +197,17 @@ items:
       items:
       - name: Android 등록 설정
         href: android-enroll.md
-      - name: Intune에서 Android 엔터프라이즈 연결
+      - name: Android Enterprise에 Intune 연결
         href: connect-intune-android-enterprise.md
-      - name: Android 회사 프로필 등록 설정
+      - name: Android Enterprise 회사 프로필 등록
         href: android-work-profile-enroll.md
-      - name: Android 전용 디바이스 등록 설정
+      - name: Android Enterprise 전용 디바이스 등록
         href: android-kiosk-enroll.md
-      - name: Android 완전 관리형 등록 설정
+      - name: Android Enterprise 완전 관리형 등록
         href: android-fully-managed-enroll.md
-      - name: Android 전용 디바이스 또는 완전 관리형 디바이스 등록
+      - name: Android Enterprise 전용 디바이스 또는 완전 관리형 디바이스 등록
         href: android-dedicated-devices-fully-managed-enroll.md
-      - name: Android 회사 프로필 디바이스 관리
+      - name: Android Enterprise 회사 프로필 디바이스 관리
         href: android-enterprise-overview.md
       - name: 삼성 Knox 모바일 등록
         href: android-samsung-knox-mobile-enroll.md
@@ -250,6 +250,8 @@ items:
       href: device-remote-lock.md
     - name: 암호 초기화
       href: device-passcode-reset.md
+    - name: 디바이스 이름 바꾸기
+      href: device-rename.md
     - name: 디바이스 다시 시작
       href: device-restart.md
     - name: 현재 사용자 로그아웃
@@ -578,6 +580,8 @@ items:
             href: app-protection-policies-exception.md
         - name: 앱 보호 정책 유효성 검사
           href: app-protection-policies-validate.md
+        - name: 앱 보호 정책 제공
+          href: app-protection-policy-delivery.md
         - name: 앱 보호 사용자 상태 모니터링
           href: app-protection-policies-monitor.md
         - name: WIP 앱 보호 정책 준비
@@ -1001,9 +1005,9 @@ items:
       href: data-outside-protect.md
     - name: 관리되지 않는 디바이스에서 데이터 누수 방지
       href: data-leak-prevention.md
-ms.openlocfilehash: d10d6c5a1c19430a0413e4f3149035a9e783dfc6
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458912"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742825"
