@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c777beb294482a179d4b99fc71db031367698d0d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dd6ba4c9c93bf41d0407f5fa0feead440d858507
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835795"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742128"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Intune을 사용하여 Windows 10 및 Holographic for Business 디바이스를 전용 키오스크로 실행하기 위한 설정
 
@@ -69,6 +69,6 @@ Intune은 "구성 프로필"을 사용하여 조직의 요구 사항에 맞게 �
 
 다음 플랫폼을 실행하는 디바이스에 대한 키오스크 프로필을 만들 수 있습니다.
 - [OWA(Outlook Web Access)](device-restrictions-android.md#kiosk)
-- [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings)
+- [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings)
 - [Windows 10 이상](kiosk-settings-windows.md)
 - [Windows Holographic for Business](kiosk-settings-holographic.md)

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28ecba61514c9143c21cb77e724fdcddbef42a37
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 8c5fd9998a4816775b3fc1d7803dc26e223b1e39
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845264"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742442"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 Windows Holographic for Business 디바이스를 키오스크로 실행하기 위한 설정
 
@@ -82,4 +82,4 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
 [프로필을 할당](device-profile-assign.md)하고, 해당 [상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) 및 [Windows 10 이상](kiosk-settings-windows.md) 디바이스에 대한 키오스크 프로필을 만들 수도 있습니다.
+[Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 및 [Windows 10 이상](kiosk-settings-windows.md) 디바이스에 대한 키오스크 프로필을 만들 수도 있습니다.

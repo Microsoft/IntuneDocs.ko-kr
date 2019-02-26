@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19994745a232a362d6bba0f09ed3934e492a17ed
-ms.sourcegitcommit: 2f431f122ce3ee6b5d0cdb04a0b748d00f83e295
+ms.openlocfilehash: b1ff65e1b48815cd5964aa7498fa6ba54df50e09
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56265675"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742298"
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2019"></a>Microsoft Intune 초기 버전 - 2019년 2월
 
@@ -43,92 +43,6 @@ ms.locfileid: "56265675"
 ## <a name="intune-in-the-azure-portal"></a>Azure Portal의 Intune
 <!-- 1902 start-->
 
-### <a name="powershell-scripts-can-run-in-a-64-bit-host-on-64-bit-devices----1862675----"></a>PowerShell 스크립트가 64비트 디바이스의 64비트 호스트에서 실행될 수 있음 <!-- 1862675  -->
-디바이스 구성 프로필에 PowerShell 스크립트를 추가한 경우 해당 스크립트는 항상 32비트, 심지어 64비트 운영 체제에서도 실행됩니다. 이 업데이트를 사용하여 관리자는 64비트 디바이스의 64비트 PowerShell 호스트에서 스크립트를 실행할 수 있습니다(**디바이스 구성** > **PowerShell 스크립트** >  **추가** > **구성** > **64비트 PowerShell 호스트에서에서 스크립트 실행**).
-PowerShell을 사용하는 방법에 대한 자세한 내용은 [Intune의 PowerShell 스크립트](intune-management-extension.md)를 참조하세요.
-적용 대상: Windows 10 이상
-
-### <a name="rename-an-enrolled-windows-device----1911112----"></a>등록된 Windows 디바이스 이름 바꾸기 <!-- 1911112  -->
-등록된 Windows 10 디바이스(RS4 이상)의 이름을 바꿀 수 있습니다. 이름을 바꾸려면 **Intune** > **디바이스** > **모든 디바이스** > 디바이스 선택 > **디바이스 이름 바꾸기**를 선택합니다.
-
-### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521-----"></a>SCEP 인증서를 사용자가 없는 macOS 디바이스에 할당 <!-- 2340521   -->
-사용자가 없는 macOS 디바이스에 SCEP(단순 인증서 등록 프로토콜) 인증서를 할당하고, 해당 인증서를 Wi-Fi 또는 VPN 프로필과 연결할 수 있습니다. 이렇게 하면 [Windows, iOS 및 Android를 실행하는 사용자가 없는 디바이스에 인증서를 할당](certificates-scep-configure.md#create-a-scep-certificate-profile)해야 하는 기존 지원이 확장됩니다.
-
-### <a name="intune-conditional-access-ui-update------2432313----"></a>Intune 조건부 액세스 UI 업데이트 <!-- 2432313  -->
-Intune 콘솔에서 조건부 액세스를 위해 UI를 개선합니다. 확인할 수 있습니다.
-- Intune *조건부 액세스* 블레이드를 Azure Active Directory의 블레이드로 바꿉니다. 이렇게 하면 Azure AD 기술을 유지하는 조건부 액세스에 대한 광범위한 설정 및 구성에 액세스할 수 있습니다.
-- *Exchange 서비스 커넥터* 설정을 현재의 *온-프레미스 액세스* 블레이드로 재배치합니다. 해당 블레이드의 이름을 *Exchange 액세스*로 바꿉니다. 이 변경으로 Exchange 온라인 및 온-프레미스와 관련된 세부 정보를 구성하고 모니터링하는 위치가 통합됩니다.
-
-### <a name="intune-will-leverage-google-play-protect-apis-on-android-devices----2577355----"></a>Intune은 Android 디바이스에서 Google Play 보호 API를 활용함 <!-- 2577355  -->
-일부 IT 관리자는 최종 사용자가 휴대폰의 루팅 또는 탈옥(jailbreaking)을 종료할 수 있는 BYOD 환경에 직면합니다. 때로는 악의가 없는 이 동작은 결국 최종 사용자 디바이스에서 조직의 데이터를 보호하기 위해 설정된 여러 Intune 정책을 무시하게 됩니다. 따라서 Intune은 등록 및 등록되지 않은 디바이스에 대한 루팅 및 탈옥 검색을 제공합니다. 이 릴리스에서 Intune은 Google Play 보호 API를 활용하여 등록되지 않은 디바이스에 대한 기존 루트 검색 검사를 추가합니다. Google은 발생하는 루트 검색 검사 전체를 공유하지 않는 반면, Intune에서는 이러한 API가 디바이스 사용자 지정을 비롯해 이전 디바이스에 최신 OS 업데이트를 가져오는 등의 갖가지 이유로 자신의 디바이스를 루팅한 사용자를 검색하기를 기대합니다. 이러한 사용자는 회사 데이터에 액세스하지 못하도록 차단되거나, 회사 계정이 앱을 사용하도록 설정된 해당 정책에서 초기화될 수 있습니다. 추가 값의 경우 IT 관리자는 Intune 앱 보호 블레이드 내에 여러 보고 업데이트를 보유하고 있습니다. "플래그가 지정된 사용자" 보고서에는 Google Play 보호의 SafetyNet API 검색을 통해 검색된 사용자가 표시되며, "잠재적으로 위험한 앱" 보고서에는 Google의 Verify Apps API 검색을 통해 검색된 앱이 표시됩니다. 이 기능은 Android에서 사용할 수 있습니다. 
-
-### <a name="win32-app-information-available-in-troubleshooting-blade----2617342------"></a>문제 해결 블레이드에서 사용할 수 있는 Win32 앱 정보 <!-- 2617342    -->
-Intune 앱 **문제 해결** 블레이드에서 Win32 앱 설치에 대한 오류 로그 파일을 수집할 수 있습니다. 앱 설치 문제 해결에 대한 자세한 내용은 [앱 설치 문제 해결](troubleshoot-app-install.md)을 참조하세요.
-
-### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode----2935135----"></a>키오스크 브라우저 및 Microsoft Edge 브라우저 앱은 키오스크 모드의 Windows 10 디바이스에서 실행될 수 있음 <!-- 2935135  -->
-키오스크 모드에서 Windows 10 디바이스를 사용하여 하나 또는 여러 앱을 실행할 수 있습니다. 이 업데이트에는 다음을 포함하여 키오스크 모드에서 브라우저 앱 사용에 대한 몇 가지 변경 사항이 포함됩니다.
-
-- Microsoft Edge 브라우저 또는 키오스크 브라우저를 추가하여 키오스크 디바이스에서 앱으로 실행합니다(플랫폼에 대한 **디바이스 구성** > **프로필** > **새 프로필** > **Windows 10 이상** > 프로필 유형에 대한 **키오스크**).
-- Microsoft Edge가 키오스크 모드에서 실행될 수 있도록(또는 없도록) 제한합니다(플랫폼에 대한 **디바이스 구성** > **프로필** > **새 프로필** > **Windows 10 이상** > 프로필 유형에 대한 **디바이스 제한** > **Microsoft Edge 브라우저**). 키오스크 모드에서 실행되지 않는 경우 Microsoft Edge 설정은 최종 사용자가 변경할 수 있습니다.
-
-현재 설정 목록은 다음을 참조하세요.
-
-- [키오스크로 실행되는 Windows 10 이상 디바이스 설정](kiosk-settings-windows.md)
-- [Microsoft Edge 브라우저 디바이스 제한](device-restrictions-windows-10.md#microsoft-edge-browser)
-
-적용 대상: Windows 10 이상
-
-### <a name="auto-assign-scope-tags-to-resources-created-by-an-admin-with-that-scope----3173823----"></a>해당 범위를 사용하여 관리자가 만든 리소스에 대한 범위 태그 자동 할당 <!-- 3173823  -->
-관리자가 리소스를 만드는 경우 관리자에게 할당된 모든 범위 태그는 새 리소스에 자동으로 할당됩니다.
-
-### <a name="new-device-restriction-settings-for-ios-and-macos-devices----3448774---"></a>iOS 및 macOS 디바이스에 대한 새 디바이스 제한 설정 <!-- 3448774 -->
-iOS 및 macOS를 실행하는 디바이스에서 일부 설정 및 기능을 제한할 수 있습니다(플랫폼에 대한 **디바이스 구성** > **프로필** > **새 프로필** > **iOS** 또는 **macOS** > 프로필 유형에 대한 **디바이스 제한**). 이 업데이트는 화면 시간 설정, eSIM 설정 및 휴대폰 플랜 변경, 사용자의 소프트웨어 업데이트 표시 유형 지연, 콘텐츠 캐싱 차단 등을 비롯한 더 많은 기능 및 설정을 추가할 수 있습니다.
-제한할 수 있는 현재 기능 및 설정을 확인하려면 다음을 참조하세요.
-- [iOS 디바이스 제한 설정](device-restrictions-ios.md)
-- [macOS 디바이스 제한 설정](device-restrictions-macos.md)
-
-적용 대상:
-- iOS
-- macOS
-
-### <a name="failed-enrollment-report-moves-to-the-device-enrollment-blade----3560202---"></a>실패한 등록 보고서가 디바이스 등록 블레이드로 이동 <!-- 3560202 -->
-**실패한 등록** 보고서가 **디바이스 등록** 블레이드의 **모니터링** 섹션으로 이동합니다. 또한 두 개의 열(등록 방법 및 OS 버전)이 새로 추가됩니다.
-
-### <a name="change-kiosk-to-dedicated-devices----3598402----"></a>"키오스크"를 "전용 디바이스"로 변경 <!-- 3598402  -->
-Android 용어에 맞게 조정하려면 **키오스크**를 디바이스 구성 프로필, **Android 엔터프라이즈** > **디바이스 소유자** > **디바이스 제한**에서 **전용 디바이스**로 변경합니다.
-
-### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850--3803313----"></a>Safari 및 사용자 소프트웨어 업데이트 표시 유형 iOS 설정 지연이 Intune UI에서 이동 중 <!-- 3640850, , 3803313  -->
-iOS 디바이스의 경우 Safari 설정을 설정하고 소프트웨어 업데이트를 구성할 수 있습니다. 이 업데이트에서 이러한 설정은 다음과 같이 Intune UI의 다른 파트로 이동합니다.
-
-- Safari 설정은 **Safari**(플랫폼에 대한 **디바이스 구성** > **프로필** > **새 프로필** > **iOS** > 프로필 유형에 대한 **디바이스 제한**)에서 **기본 제공 앱**으로 이동합니다. 
-- **감독되는 iOS 디바이스에 대한 사용자 소프트웨어 업데이트 표시 유형 지연** 설정(**소프트웨어 업데이트** > **iOS에 대한 업데이트 정책**)은 **디바이스 제한** > **일반**으로 이동합니다.
-
-현재 설정 목록은 [iOS 디바이스 제한](device-restrictions-ios.md) 및 [iOS 소프트웨어 업데이트](software-updates-ios.md)를 참조하세요.
-
-적용 대상: 
-- iOS
-
-### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices----3699164----"></a>디바이스 설정에서 제한을 사용하도록 설정하면 iOS 디바이스에서 화면 시간으로 이름이 바뀜 <!-- 3699164  -->
-감독되는 iOS 디바이스의 **디바이스 설정에서 제한의 활성화**를 구성할 수 있습니다(플랫폼에 대한 **디바이스 구성** > **프로필** > **새 프로필** > **iOS** > 프로필 유형에 대한 **디바이스 제한** > **일반**). 이 업데이트에서 이 설정은 **화면 시간(감독 모드인 경우에만)** 으로 이름이 바뀝니다. 동작은 동일합니다. 특히: 
-
-- iOS 11.4.1 이하: **차단**은 최종 사용자가 디바이스 설정에서 자신만의 제한을 설정하지 못하도록 방지합니다. 
-- iOS 12.0 이상: **차단**은 최종 사용자가 디바이스 설정에서 콘텐츠 및 개인정보처리 제한 사항을 비롯해 자신만의 **화면 시간**을 설정하지 못하도록 방지합니다. iOS 12.0로 업그레이드된 디바이스에는 디바이스 설정의 제한 탭이 더 이상 표시되지 않습니다. 이러한 설정은 **화면 시간**에 있습니다. 
-
-현재 설정 목록은 [iOS 디바이스 제한](device-restrictions-ios.md)을 참조하세요.
-
-적용 대상: 
-- iOS
-
-### <a name="app-status-details-for-ios-apps----3761235----"></a>iOS 앱용 앱 상태 세부 정보 <!-- 3761235  -->
-다음과 관련된 새 앱 설치 오류 메시지가 있습니다.
-- 공유 iPad에 설치하는 경우 VPP 앱의 오류
-- 앱 스토어를 사용하지 않도록 설정하는 경우의 오류
-- 앱용 VPP 라이선스를 찾지 못하는 오류
-- MDM 공급 기업을 통해 시스템 앱을 설치하지 못하는 오류
-- 디바이스가 분실 모드 또는 키오스크 모드에 있는 경우 앱을 설치하지 못하는 오류
-- 사용자가 앱 스토어에 로그인하지 않은 경우 앱을 설치하지 못하는 오류
-
-Intune에서 **클라이언트 앱** > **앱** > "애플리케이션 이름" > **디바이스 설치 상태**를 선택합니다. 새 오류 메시지는 **상태 세부 정보** 열에서 사용할 수 있습니다.
 
 <!-- 1901 start -->
 
