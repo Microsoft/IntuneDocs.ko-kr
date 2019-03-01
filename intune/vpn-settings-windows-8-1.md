@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 69f347b3e59ca9dfe3f05c9a60dd44c257d485fb
-ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1ef2fd878a46e7a934dbb6e868356375883bc584
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281125"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836880"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Windows 8.1을 실행하는 디바이스용 Microsoft Intune에서 VPN 설정 구성
 
@@ -32,13 +33,13 @@ ms.locfileid: "52281125"
 ## <a name="base-vpn-settings"></a>기본 VPN 설정
 
 
-- **Windows 8.1에만 모든 설정 적용** - Intune 클래식 포털에서 구성할 수 있는 설정입니다. Azure Portal에서는 이 설정을 변경할 수 없습니다. **구성됨**으로 설정된 경우 모든 설정이 Windows 8.1 장치에만 적용됩니다. **구성되지 않음**으로 설정한 경우 Windows 10 장치에도 이러한 설정이 적용됩니다.
+- **Windows 8.1에만 모든 설정 적용** - Intune 클래식 포털에서 구성할 수 있는 설정입니다. Azure Portal에서는 이 설정을 변경할 수 없습니다. **구성됨**으로 설정된 경우 모든 설정이 Windows 8.1 디바이스에만 적용됩니다. **구성되지 않음**으로 설정한 경우 Windows 10 디바이스에도 이러한 설정이 적용됩니다.
 - **연결 이름** - 이 연결에 대한 이름을 입력합니다. 사용자가 디바이스에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
-- **서버** - 장치를 연결할 한 대 이상의 VPN 서버를 추가합니다.
+- **서버** - 디바이스를 연결할 한 대 이상의 VPN 서버를 추가합니다.
     - **추가** - 다음 정보를 지정할 수 있는 **행 추가** 페이지를 엽니다.
         - **설명** - 서버의 설명이 포함된 이름(예: **Contoso VPN 서버**)을 지정합니다.
-        - **IP 주소 또는 FQDN** - 장치가 연결되는 VPN 서버의 IP 주소 또는 정규화된 도메인 이름을 입력합니다. 예: **192.168.1.1**, **vpn.contoso.com**.
-        - **기본 서버** - 이 서버를 장치에서 연결을 설정하는 데 사용할 기본 서버로 사용합니다. 기본적으로 하나의 서버만 설정해야 합니다.
+        - **IP 주소 또는 FQDN** - 디바이스가 연결되는 VPN 서버의 IP 주소 또는 정규화된 도메인 이름을 입력합니다. 예: **192.168.1.1**, **vpn.contoso.com**.
+        - **기본 서버** - 이 서버를 디바이스에서 연결을 설정하는 데 사용할 기본 서버로 사용합니다. 기본적으로 하나의 서버만 설정해야 합니다.
     - **가져오기** - 설명, IP 주소 또는 FQDN, 기본 서버 형식의 쉼표로 구분된 서버 목록을 포함하는 파일로 이동합니다. **확인**을 선택하여 이를 **서버** 목록으로 가져옵니다.
     - **내보내기** - 서버 목록을 쉼표로 구분된 값(csv) 파일로 내보냅니다.
 
@@ -86,7 +87,7 @@ ms.locfileid: "52281125"
 
 ## <a name="proxy-settings"></a>프록시 설정
 
-- **자동으로 프록시 설정 검색** - VPN 서버에 연결을 위한 프록시 서버가 필요한 경우 장치가 연결 설정을 자동으로 검색할지 여부를 지정합니다. 자세한 내용은 Windows Server 설명서를 참조하세요.
+- **자동으로 프록시 설정 검색** - VPN 서버에 연결을 위한 프록시 서버가 필요한 경우 디바이스가 연결 설정을 자동으로 검색할지 여부를 지정합니다. 자세한 내용은 Windows Server 설명서를 참조하세요.
 - **자동 구성 스크립트** - 파일을 사용하여 프록시 서버를 구성합니다. 구성 파일을 포함하는 **프록시 서버 URL**을 입력합니다. 예를 들어 다음과 같이 입력합니다. `http://proxy.contoso.com`
 - **프록시 서버 사용** - 프록시 서버 설정을 수동으로 입력하려는 경우 이 옵션을 선택합니다.
     - **주소** - 프록시 서버 주소를 IP 주소로 입력합니다.
