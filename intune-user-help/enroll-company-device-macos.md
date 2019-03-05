@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f84eddaf9fac6dd678c7046664bf1feb9ea8cfc1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848222"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335244"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>관리에 조직 제공 macOS 디바이스 등록
 
@@ -64,7 +64,7 @@ macOS 디바이스를 관리에 등록하려면 다음 단계를 완료합니다
     * Mac 설정  
 ## <a name="get-the-company-portal-app"></a>회사 포털 앱 가져오기      
 디바이스에서 macOS용 Intune 회사 포털 앱을 다운로드합니다. 이 앱을 사용하면 관리에서 디바이스를 모니터링, 동기화, 추가 및 제거하고 앱을 설치할 수 있습니다. 또한 이러한 단계는 회사 포털을 사용하여 디바이스를 등록하는 방법을 설명합니다.  
-1. macOS 디바이스에서 http://portal.manage.microsoft.com/EnrollmentRedirect.aspx로 이동합니다.
+1. macOS 디바이스에서 https://portal.manage.microsoft.com/EnrollmentRedirect.aspx로 이동합니다.
 2. 회사 또는 학교 계정을 사용하여 회사 포털 웹 사이트에 로그인합니다. 
 3. **앱 가져오기**를 클릭하여 macOS용 회사 포털 설치 관리자를 다운로드합니다.
 4. 메시지가 표시되면 .pkg 파일을 열고 설치 단계를 완료합니다.

@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840215"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335074"
 ---
 # <a name="sync-your-windows-device-manually"></a>수동으로 Windows 디바이스 동기화
 
 앱 설치 속도가 최적 속도보다 느린 경우 수동 디바이스 동기화를 시작합니다. 수동 동기화는 최신 업데이트 및 통신을 위해 디바이스를 Intune과 강제로 연결합니다. 디바이스 동기화가 완료된 후에 설치 속도가 증가할 수 있습니다.
 
-Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴 및 디바이스 설정 앱에서 수동 동기화를 지원합니다. 
-
-회사 포털 앱 기능은 크리에이터스 업데이트(1703) 이상을 실행하는 Windows 10 디바이스에서 지원됩니다. 
-* [회사 포털 앱에서 동기화](#Sync-from-Company-Portal-app-for-Windows)  
+Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴 및 디바이스 설정 앱에서 수동 동기화를 지원합니다. 회사 포털 앱 기능은 크리에이터스 업데이트(1703) 이상을 실행하는 Windows 10 디바이스에서 지원됩니다. 
 
 모든 Windows 디바이스는 다음을 포함한 디바이스 설정 앱에서 동기화할 수 있습니다.
 
@@ -75,11 +72,11 @@ Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴
 
 3. 데스크톱용 Windows 10은 버전이 여러 개 있습니다. 아래 스크린샷과 화면을 비교하여 수행할 일련의 단계를 확인합니다. 
 
-    * 화면에 **회사 또는 학교 액세스**가 표시되면 [회사 또는 학교 액세스](#access-work-or-school)의 단계로 건너뜁니다.
+    * 화면에 **회사 또는 학교 액세스**가 표시되면 [회사 또는 학교 액세스](#access-work-or-school-steps)의 단계로 건너뜁니다.
 
     ![설정 앱의 회사 또는 학교 액세스 옵션](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * 화면에 **회사 액세스**가 표시되면 [회사 액세스](#work-access) 아래의 단계로 건너뜁니다.  
+    * 화면에 **회사 액세스**가 표시되면 [회사 액세스](#work-access-steps) 아래의 단계로 건너뜁니다.  
 
     ![계정 유형으로 회사 액세스 선택](./media/win10pc-sync-3-work-access.png)
 

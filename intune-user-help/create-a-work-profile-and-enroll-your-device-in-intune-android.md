@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 683156b968c743c4c82b472c6e566d5762c22c1a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844669"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334955"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>업무용 프로필을 만들고 Intune에서 디바이스 등록
 
@@ -33,7 +33,7 @@ Android 디바이스를 등록하면 회사 메일, 앱 및 기타 업무용 데
 
 업무용 프로필을 만들려면
 
-1.  Android 회사 포털의 **시작** 화면에서 **로그인**을 탭한 다음, 회사 또는 학교 계정으로 로그인합니다. 무료 앱을 아직 설치하지 않은 경우 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)에서 다운로드하여 설치합니다.
+1.  Android 회사 포털의 **시작** 화면에서 **로그인**을 탭한 다음, 회사 또는 학교 계정으로 로그인합니다. 무료 앱을 아직 설치하지 않은 경우 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)에서 다운로드하여 설치합니다.
 
     ![Android 회사 포털 앱 시작 화면](./media/and-enroll-0-welcome-screen.png)
 

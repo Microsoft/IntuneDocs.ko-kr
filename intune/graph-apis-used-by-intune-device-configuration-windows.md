@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune-azure에서 장치를 구성할 때 사용 되는 Api를 그래프 | Microsoft Docs
+title: Microsoft Intune-azure에서 장치를 구성 하는 Api를 그래프 | Microsoft Docs
 titleSuffix: ''
-description: 일치 하는 Windows CSP를 사용 하 여 모든 Graph Api의 목록을 보고 오프셋 URI Windows 10 장치에 최신 Microsoft Intune에서 장치를 구성 하는 경우에 사용 됩니다. 공유 Pc에서 endpoint protection, Windows Defender advanced threat protection, id 보호, Windows 10 팀, 키오스크, 및 Windows Update for Business에 대 한 일치 하는 API 및 CSP를 참조 하세요.
+description: 일치 하는 Windows CSP를 사용 하 여 모든 Graph API 엔터티 목록을 보려면 및 오프셋 URI Windows 10 장치에 최신 Microsoft Intune에서 장치를 구성 하는 경우에 사용 됩니다. 공유 Pc에서 endpoint protection, Windows Defender advanced threat protection, id 보호, Windows 10 팀, 키오스크, 및 Windows Update for Business에 대 한 일치 하는 API 및 CSP를 참조 하세요.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,30 +15,34 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ccc46914e53e72d941cc726b6a32fa421e23ca4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b2bed795125043eac07fce41a0f101a9b029bd06
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232134"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335312"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Graph Api 및 Intune에서 사용 되는 Windows 10 Csp 일치
 
-Microsoft Intune을 사용 합니다 [Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) 장치를 구성 하려면 (**Intune** > **장치 구성**) Windows 10 이상을 실행 합니다. Graph API는 구성 서비스 공급자 (Csp)를 사용 하 여 읽기, 설정, 변경 및/또는 장치에서 구성 설정을 삭제 합니다.
+Microsoft Intune을 사용 합니다 [Graph API 엔터티](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (다른 Docs 사이트 열기) 장치를 구성 하려면 (**Intune** > **장치 구성**) Windows 10을 실행 이상. Graph API는 구성 서비스 공급자 (Csp)를 사용 하 여 읽기, 설정, 변경 및/또는 장치에서 구성 설정을 삭제 합니다.
 
 이 목록에 적용 됩니다.
 
 - Windows 10 이상
 
-이 문서에서는 Graph 속성을 일치 하는 Windows 10 Csp 및 오프셋을 나열 Uri입니다.
+이 문서에서는 그래프 엔터티 및 해당 일치 하는 Windows 10 Csp 나열 및 Uri를 오프셋 합니다.
+
+이 정보는 다양 한 시나리오에 유용합니다. Intune에서 사용 되는 것을 참조 예를 들어, 사용자 지정 OMA-URI 구성을 포함 하는 설정을 참조 하십시오. 
 
 ## <a name="windows-10-csps"></a>Windows 10 CSPs
 
-Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)합니다.
+Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (다른 Docs 사이트 열기).
 
 ## <a name="graph-api-properties-to-csp-mapping"></a>CSP 매핑 graph API 속성
 
-다음은 Windows 10 장치 구성에 대 한 Microsoft Intune에서 사용 되는 Graph API 속성을 보여 줍니다. 또한 해당 Windows 10 CSP 표시 및 URI 오프셋입니다.
+다음 목록에서는 대부분의 Windows 10 장치 구성에 대 한 Microsoft Intune에서 사용 하는 Graph API 엔터티를 보여 줍니다. 또한 해당 Windows 10 CSP 표시 및 URI 오프셋입니다.
+
+다음 Api를 적용 하는 Windows 10 버전을 확인 하려면 Windows 10을 사용 하 여 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (다른 Docs 사이트 열기).
 
 #### <a name="editionupgradeconfigurationlicense"></a>EditionUpgradeConfiguration.License 
 **CSP**: ./Device/Vendor/MSFT/WindowsLicensing  
@@ -237,8 +241,7 @@ Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [
 **URI 오프셋**: /Config/CredentialsUI/EnumerateAdministrators
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadditionalguardedfolders"></a>Windows10EndpointProtectionConfiguration.DefenderAdditionalGuardedFolders 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI 오프셋**: /Config/Defender/ControlledFolderAccessProtectedFolders
+**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/Defender/ControlledFolderAccessProtectedFolders
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadvancedransomewareprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderAdvancedRansomewareProtectionType 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -257,23 +260,21 @@ Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [
 **URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxml"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXml 
-**CSP**:./Device/Vendor/MSFT/Policy/ **URI 오프셋**: /Config/ExploitGuard/ExploitProtectionSettings
+**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxmlfilename"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXmlFileName 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **URI 오프셋**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardedfoldersallowedapppaths"></a>Windows10EndpointProtectionConfiguration.DefenderGuardedFoldersAllowedAppPaths 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI 오프셋**: /Config/Defender/ControlledFolderAccessAllowedApplications
+**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/Defender/ControlledFolderAccessAllowedApplications
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardmyfolderstype"></a>Windows10EndpointProtectionConfiguration.DefenderGuardMyFoldersType 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **URI 오프셋**: /Config/Defender/EnableControlledFolderAccess
 
 #### <a name="windows10endpointprotectionconfigurationdefendernetworkprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderNetworkProtectionType 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI 오프셋**: /Config/Defender/EnableNetworkProtection
+**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/Defender/EnableNetworkProtection
 
 #### <a name="windows10endpointprotectionconfigurationdefenderofficeappsexecutablecontentcreationorlaunch"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunch 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -340,8 +341,7 @@ Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [
 **URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterblockexploitprotectionoverride"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterBlockExploitProtectionOverride 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
+**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisableaccountui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAccountUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -416,19 +416,18 @@ Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [
 **URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablesecurebootwithdma"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableSecureBootWithDMA 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**:./Device/Vendor/MSFT/Policy  
 **URI 오프셋**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablevirtualizationbasedsecurity"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableVirtualizationBasedSecurity 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI 오프셋**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
+**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlaunchsystemguard"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLaunchSystemGuard 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**:./Device/Vendor/MSFT/Policy  
 **URI 오프셋**: /Config/DeviceGuard/ConfigureSystemGuardLaunch
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlocalsystemauthoritycredentialguardsettings"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLocalSystemAuthorityCredentialGuardSettings 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**:./Device/Vendor/MSFT/Policy  
 **URI 오프셋**: /Config/DeviceGuard/LsaCfgFlags
 
 #### <a name="windows10endpointprotectionconfigurationdmaguarddeviceenumerationpolicy"></a>Windows10EndpointProtectionConfiguration.DmaGuardDeviceEnumerationPolicy 
@@ -868,12 +867,10 @@ Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [
 **URI 오프셋**: /Config/MSSecurityGuide/WDigestAuthentication
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenblockoverrideforfiles"></a>Windows10EndpointProtectionConfiguration.SmartScreenBlockOverrideForFiles 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI 오프셋**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
+**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenenableinshell"></a>Windows10EndpointProtectionConfiguration.SmartScreenEnableInShell 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI 오프셋**: /Config/SmartScreen/EnableSmartScreenInShell
+**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/SmartScreen/EnableSmartScreenInShell
 
 #### <a name="windows10endpointprotectionconfigurationsolicitedremoteassistance"></a>windows10endpointprotectionconfiguration.solicitedRemoteAssistance 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -1030,6 +1027,9 @@ Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [
 #### <a name="windows10endpointprotectionconfigurationxboxserviceslivenetworkingservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveNetworkingServiceStartupMode 
 **CSP**: ./Vendor/MSFT/Policy  
 **URI 오프셋**: /Config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
+
+#### <a name="windows10enterprisemodernappmanagementconfigurationuninstallbuiltinapps"></a>Windows10EnterpriseModernAppManagementConfiguration.UninstallBuiltInApps
+**CSP**: 해당 없음 Graph API 호출에만 **URI 오프셋**: 해당 없음 Graph API 호출에만
 
 #### <a name="windows10generalconfigurationaccountsblockaddingnonmicrosoftaccountemail"></a>Windows10GeneralConfiguration.AccountsBlockAddingNonMicrosoftAccountEmail 
 **CSP**: ./Vendor/MSFT/Policy  
@@ -2924,9 +2924,17 @@ Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [
 **CSP**:./Device/Vendor/MSFT/Policy  
 **URI 오프셋**: /Config/Update/PauseFeatureUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackStartDateTime
+**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
+
 #### <a name="windowsupdateforbusinessconfigurationfeatureupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesWillBeRolledBack 
-**CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: / 롤백/FeatureUpdate
+**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
+
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackwindowindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackWindowInDays
+**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
+
+#### <a name="windowsupdateforbusinessconfigurationinstallationschedule"></a>WindowsUpdateForBusinessConfiguration.InstallationSchedule
+**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/Update/ActiveHoursStart /Config/Update/ActiveHoursEnd, /Config/Update/ScheduledInstallDay, /Config/Update/ScheduledInstallTime
 
 #### <a name="windowsupdateforbusinessconfigurationmicrosoftupdateserviceallowed"></a>WindowsUpdateForBusinessConfiguration.MicrosoftUpdateServiceAllowed 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -2948,9 +2956,11 @@ Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [
 **CSP**:./Device/Vendor/MSFT/Policy  
 **URI 오프셋**: /Config/Update/PauseQualityUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationqualityupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesRollbackStartDateTime
+**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
+
 #### <a name="windowsupdateforbusinessconfigurationqualityupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesWillBeRolledBack 
-**CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: / 롤백/QualityUpdate
+**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
 
 #### <a name="windowsupdateforbusinessconfigurationscheduleimminentrestartwarninginminutes"></a>WindowsUpdateForBusinessConfiguration.ScheduleImminentRestartWarningInMinutes 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -2976,4 +2986,4 @@ Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [
 ## <a name="next-steps"></a>다음 단계
 
 - [장치 구성 개요](device-profiles.md)
-- [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
+- [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (다른 Docs 사이트 열림)

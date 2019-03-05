@@ -28,6 +28,6 @@
 > [!NOTE]
 > Intune을 사용하여 Windows Server 운영 체제를 관리할 수는 없습니다. Home SKU는 일부 Intune 기능만 지원합니다.
 
-EMS(Enterprise Management + Security)가 있는 고객은 [Azure AD(Azure Active Directory)를 사용하여 Windows 10 디바이스를 등록](/intune/windows-enroll.md)할 수도 있습니다.
+EMS(Enterprise Management + Security)가 있는 고객은 [Azure AD(Azure Active Directory)를 사용하여 Windows 10 디바이스를 등록](/intune/windows-enroll)할 수도 있습니다.
 
 

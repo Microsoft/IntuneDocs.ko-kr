@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af53739574a5ae7087b59d72bacd866e132a19ac
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843224"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335006"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android 디바이스가 암호화된 것 같은데 회사 포털에 다르게 표시됨
 
@@ -66,13 +66,13 @@ ms.locfileid: "55843224"
 다음 디바이스 중 하나를 소유한 경우 최신 버전의 Android로 디바이스를 업데이트하지 않았다면 이 문제가 발생할 수 있습니다. **설정** > **업데이트**로 이동하여 이러한 디바이스용 업데이트를 설치할 수 있습니다. 
 
 - [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](http://consumer.huawei.com/en/phones/p9/)
+- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>현재 이 문제를 해결하기 위해 업데이트할 수 없는 알려진 디바이스
 
 아래 디바이스에서는 이 문제를 해결할 수 없습니다. 회사 리소스에 액세스하려면 다른 디바이스를 사용해야 합니다. 
 
 - [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [OPPO 디바이스](http://www.oppo.com/en/smartphones)
+- [OPPO 디바이스](https://www.oppo.com/en/smartphones)
 - [Vivo 디바이스](https://www.vivo.co.in)
 - [Xiaomi Mi 스마트폰](https://xiaomi-mi.com/mi-smartphones/)

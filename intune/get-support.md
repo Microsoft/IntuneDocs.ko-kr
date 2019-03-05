@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66ade3d833a82e717284c4abfe48b2c1b6d85add
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836509"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334972"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune에 대한 지원을 받는 방법
 
@@ -50,7 +50,7 @@ Intune에 대한 도움말 및 지원 환경은 [Microsoft 365 디바이스 관�
 ![Intune 블레이드](./media/get-support/intune-blades.png)
 
 
-이 새로운 환경은 [Microsoft 365 관리 센터](https://portal.office.com/AdminPortal/Home)에 표시되는 환경과 비슷하고, [이전 도움말 및 지원 환경](#azure-help-+-and-support-experience)을 대체합니다. 
+이 새로운 환경은 [Microsoft 365 관리 센터](https://portal.office.com/AdminPortal/Home)에 표시되는 환경과 비슷하고, [이전 도움말 및 지원 환경](#azure-help-+-support-experience)을 대체합니다. 
 
 도움말 및 지원에 액세스하려면 다음을 사용합니다.  
 - **디바이스 관리 대시보드:**

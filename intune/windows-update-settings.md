@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 28e7109a82a5c083b4be26bc823bb0e06d97a7ca
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325472"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334989"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune에 대한 Windows 업데이트 설정  
 
@@ -236,6 +236,6 @@ Microsoft 업데이트에서 앱 업데이트의 검사 [허용]을 선택합니
 
 배달 최적화는 소프트웨어 업데이트에서 더 이상 Windows 10 업데이트 링의 일부로 구성되지 않습니다. 배달 최적화는 이제 디바이스 구성을 통해 설정됩니다. 그러나 이전 구성은 여전히 콘솔에서 사용할 수 있습니다. *구성되지 않음*으로 편집하여 이러한 이전 구성을 제거할 수 있지만 그렇지 않으면 변경할 수 없습니다. 
 
-새 정책과 이전 정책 간의 충돌을 방지하려면 [기존 업데이트 링에서 배달 최적화로 이동](https://docs.microsoft.com/en-us/intune/delivery-optimization-windows#move-from-existing-update-rings-to-delivery-optimization)을 참조한 다음, 설정을 배달 최적화 프로필로 이동합니다.
+새 정책과 이전 정책 간의 충돌을 방지하려면 [기존 업데이트 링에서 배달 최적화로 이동](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)을 참조한 다음, 설정을 배달 최적화 프로필로 이동합니다.
 
 
