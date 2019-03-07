@@ -1,21 +1,24 @@
 items:
-- name: 디바이스 관리
+- name: 장치 관리
   tocHref: /intune/
   topicHref: /intune/index
   items:
   - name: Intune
     tocHref: /enterprise-mobility-security/intune/index
     topicHref: /device-mgmt/index
-- name: 디바이스 관리
+  - name: Intune 사용자 도움말
+    tocHref: /intune-user-help/
+    topicHref: /intune-user-help/index
+- name: 장치 관리
   tocHref: /azure/
   topicHref: /azure/index
   items:
   - name: Azure Active Directory
     tocHref: /azure/active-directory/
     topicHref: /azure/active-directory/
-ms.openlocfilehash: d057c2ea71c48bed394e96aee2e72ba7921275af
-ms.sourcegitcommit: d6e478b8fc47d9e280b9fbdcbc4ebc3bea6e6199
+ms.openlocfilehash: 2a63867fb48b2e51dc45d4787210b870496183ad
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44373474"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528193"
