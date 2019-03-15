@@ -9,6 +9,7 @@ ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c04dc3169fbf6a60d0c4d7db8358092909e90240
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841823"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389973"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>빠른 시작: Windows 10 장치 등록
 
@@ -59,7 +60,7 @@ Windows 10 Desktop을 등록하기 전에 설치한 Windows 버전을 확인해�
 4. Windows 10 **버전**이 **1607 이상**인지 확인합니다.
 
     > [!IMPORTANT]
-    > 이 빠른 시작에서 표시된 단계는 Windows 10 버전 **1607 이상**이고, 버전이 **1511**이하인 경우 [이러한 단계](/intune-user-help/enroll-your-w10-device-your-account)를 계속합니다.
+    > 이 빠른 시작에서 표시된 단계는 Windows 10 버전 **1607 이상**이고, 버전이 **1511**이하인 경우 [이러한 단계](/intune-user-help/enroll-windows-10-device.md)를 계속합니다.  
 
 ## <a name="enroll-windows-10-desktop"></a>Windows 10 Desktop 등록
 
