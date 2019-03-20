@@ -6,23 +6,25 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 07/18/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a5042c3b1c125a1699091a8a313df3a0058ecd7d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3452eb832f31377ddc9c55c5008405cb2235569b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188146"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564842"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Intune에서 Windows 디바이스에 대한 Wi-Fi 설정 가져오기
 
-Windows를 실행하는 디바이스의 경우 이전에 파일로 내보낸 Wi-Fi 구성 프로필을 가져올 수도 있습니다. **Windows 10 이상 장치의 경우 Intune에서 직접 [Wi-Fi 프로필을 만들](wi-fi-settings-windows.md) 수도 있습니다**.
+Windows를 실행하는 디바이스의 경우 이전에 파일로 내보낸 Wi-Fi 구성 프로필을 가져올 수도 있습니다. **Windows 10 이상 디바이스의 경우 Intune에서 직접 [Wi-Fi 프로필을 만들](wi-fi-settings-windows.md) 수도 있습니다**.
 
 적용 대상:  
 - Windows 8.1 이상
@@ -44,7 +46,7 @@ Windows에서 `netsh wlan`을 사용하여 기존 Wi-Fi 프로필을 Intune에�
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Intune으로 Wi-Fi 설정 가져오기
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 디바이스 제한 프로필의 **이름** 및 **설명**을 입력합니다.
 
     > [!IMPORTANT]

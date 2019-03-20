@@ -6,9 +6,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 522e2e8b424c3c8865b29a5503c301b80b3c36ba
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 50c147e13a59df00ce9527a0843784d223afec20
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845417"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460719"
 ---
 # <a name="troubleshoot-conditional-access"></a>조건부 액세스 문제 해결
 
@@ -74,7 +75,7 @@ Azure Portal 및 디바이스 인벤토리 보고서에서 각 디바이스의 �
 - 대상 및 제외 그룹을 검토합니다. 사용자가 올바른 대상 그룹에 없거나, 제외 그룹에 있는 경우에는 차단되지 않습니다. 대상 그룹에 있는 사용자의 디바이스만 규정 준수에 대해 확인됩니다.
 - 디바이스가 검색 중인지 확인합니다. 사용자가 Exchange 2013 서버에 있는 동안 Exchange Connector가 Exchange 2010 CAS를 가리키고 있나요? 이런 경우 기본 Exchange 규칙이 허용이면 사용자가 대상 그룹에 있더라도 Intune에서 Exchange에 대한 디바이스 연결을 인식할 수 없습니다.
 - Exchange에서 디바이스 존재/액세스 상태를 확인합니다.
-  - 다음 PowerShell cmdlet을 사용하여 사서함에 대한 모든 모바일 디바이스 목록을 가져옵니다. "Get-ActiveSyncDeviceStatistics -mailbox mbx'. 디바이스가 나열되지 않으면 Exchange에 액세스하지 않는 것입니다.
+  - 다음 PowerShell cmdlet을 사용하여 사서함에 대한 모든 모바일 디바이스 목록을 가져옵니다. "Get-ActiveSyncDeviceStatistics -mailbox mbx" 디바이스가 나열되지 않으면 Exchange에 액세스하지 않는 것입니다.
   - 디바이스가 나열되면 Get-CASmailbox -identity:’upn’ | fl cmdlet을 사용하여 액세스 상태에 대한 자세한 정보를 가져와 Microsoft 지원 서비스에 해당 정보를 제공합니다.
 
 ## <a name="next-steps"></a>다음 단계

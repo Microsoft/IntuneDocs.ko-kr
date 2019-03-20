@@ -6,10 +6,11 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 784ad8366391c55a97ac58d9c1f7ab7707062aa8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 16992d8a80ca42db84cfa071422a779606a99891
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845672"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460082"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>정책을 사용하여 Intune 클라이언트 소프트웨어를 실행하는 Windows PC를 보호합니다.
 
@@ -43,7 +44,6 @@ Windows 방화벽은 Windows PC에서 해커, 맬웨어 및 기타 위협을 방
 
 IT 관리자의 최우선 업무 중 하나는 [관리하는 Windows PC를 맬웨어와 바이러스로부터 보호](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)하는 것입니다. Intune은 Endpoint Protection과 통합하여 맬웨어 위협으로부터 실시간 보호를 제공하고 맬웨어 정의를 최신 상태로 유지하고 컴퓨터를 자동으로 검색합니다. 또한 Endpoint Protection은 맬웨어 공격의 관리 및 모니터링을 지원하는 도구도 제공합니다.
 
+## <a name="see-also"></a>참고 항목
 
-
-### <a name="see-also"></a>참고 항목
-[Microsoft Intune 정책을 사용하여 디바이스의 설정 및 기능 관리](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[일반적인 질문, 문제 및 장치 정책 및 프로필을 사용 하 여 해결 방법](device-profile-troubleshoot.md)

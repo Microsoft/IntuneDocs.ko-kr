@@ -6,9 +6,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/13/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2b19b1c2bf2916b44ffa4ca4aa31a85fa6b3b9
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 7b19a0100a53cebe66dae9805ac0cc5b5314e8ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235789"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566780"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -52,7 +53,7 @@ iOS용 Intune 앱 SDK에는 정적 라이브러리, 리소스 파일, API 헤더
 
 * **IntuneMAMResources.bundle**: SDK에서 사용하는 리소스가 있는 리소스 번들입니다.
 
-* **Headers**: Intune 앱 SDK API를 표시합니다. API를 사용하는 경우 API가 포함된 헤더 파일을 포함해야 합니다. 다음 헤더 파일에는 Intune 앱 SDK에서 개발자에게 제공하는 API, 데이터 형식 및 프로토콜이 포함되어 있습니다.
+* **헤더**: Intune 앱 SDK API를 표시합니다. API를 사용하는 경우 API가 포함된 헤더 파일을 포함해야 합니다. 다음 헤더 파일에는 Intune 앱 SDK에서 개발자에게 제공하는 API, 데이터 형식 및 프로토콜이 포함되어 있습니다.
 
     * IntuneMAMAppConfig.h
     * IntuneMAMAppConfigManager.h
@@ -232,7 +233,7 @@ ContainingAppBundleId | 문자열 | 확장의 포함 애플리케이션 번들 I
 DebugSettingsEnabled| 부울 | YES로 설정할 경우 설정 번들 내의 테스트 정책을 적용할 수 있습니다. 애플리케이션은 이 설정이 사용하도록 설정된 상태로 제공되어서는 *안 됩니다*. | 선택 사항입니다. 기본값은 no입니다.|
 MainNibFile <br> MainNibFile~ipad  | 문자열  | 이 설정에는 애플리케이션의 주 nib 파일 이름이 있어야 합니다.  | 애플리케이션이 해당 Info.plist에서 MainNibFile을 정의하는 경우에 필수입니다. |
 MainStoryboardFile <br> MainStoryboardFile~ipad  | 문자열  | 이 설정에는 애플리케이션의 주 스토리보드 파일 이름이 있어야 합니다. | 애플리케이션이 해당 Info.plist에서 UIMainStoryboardFile을 정의하는 경우에 필수입니다. |
-MAMPolicyRequired| 부울| 앱에 Intune APP 정책이 없는 경우 앱이 시작되지 않도록 할지를 지정합니다. 기본값은 NO. <br><br> 참고: MAMPolicyRequired를 YES로 설정한 상태에서는 App Store에 앱을 제출할 수 없습니다. | 선택 사항입니다. 기본값은 no입니다.|
+MAMPolicyRequired| 부울| 앱에 Intune APP 정책이 없는 경우 앱이 시작되지 않도록 할지를 지정합니다. 기본값은 NO. <br><br> 참고: MAMPolicyRequired가 YES로 설정된 앱 스토어에는 앱을 제출할 수 없습니다. | 선택 사항입니다. 기본값은 no입니다.|
 MAMPolicyWarnAbsent | 부울| 앱에 Intune APP 정책이 없는 경우 앱이 시작 시 사용자에게 경고할지를 지정합니다. <br><br> 참고: 그래도 사용자는 경고를 해제한 후 정책 없이 앱을 사용할 수 있습니다. | 선택 사항입니다. 기본값은 no입니다. |
 MultiIdentity | 부울| 앱이 다중 ID를 인식하는지를 지정합니다. | 선택 사항입니다. 기본값은 no입니다. |
 SplashIconFile <br> SplashIconFile~ipad | 문자열  | Intune 시작 아이콘 파일을 지정합니다. | 선택 사항입니다. |
@@ -305,8 +306,8 @@ ADAL을 사용하여 사용자를 로그인하지 않는 앱은 API를 호출하
 
 Setting  | 유형  | 정의 |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| 부울| 기존의 관리되는 ID가 감지되면 아직 등록되지 않은 경우 앱을 실행할 때 자동으로 등록을 시도할지 지정합니다. 기본값은 NO. <br><br> 참고: 관리 ID가 없거나 관리 ID의 유효한 토큰이 ADAL 캐시에 없는 경우, 앱에서 MAMPolicyRequired가 YES로 설정되어 있지 않다면 자격 증명을 묻지 않고 자동으로 등록 시도가 실패합니다. |
-MAMPolicyRequired| 부울| 앱에 Intune 앱 보호 정책이 없는 경우 앱이 시작되지 않도록 할지를 지정합니다. 기본값은 NO. <br><br> 참고: MAMPolicyRequired를 YES로 설정한 상태에서는 App Store에 앱을 제출할 수 없습니다. MAMPolicyRequired를 YES로 설정할 경우 AutoEnrollOnLaunch도 YES로 설정해야 합니다. |
+AutoEnrollOnLaunch| 부울| 기존의 관리되는 ID가 감지되면 아직 등록되지 않은 경우 앱을 실행할 때 자동으로 등록을 시도할지 지정합니다. 기본값은 NO. <br><br> 참고: 관리되는 ID가 없거나 ID에 대한 유효한 토큰이 ADAL 캐시에 없는 경우 앱에서 MAMPolicyRequired가 YES로 설정되어 있지 않다면 자격 증명을 묻지 않고 자동으로 등록 시도가 실패합니다. |
+MAMPolicyRequired| 부울| 앱에 Intune 앱 보호 정책이 없는 경우 앱이 시작되지 않도록 할지를 지정합니다. 기본값은 NO. <br><br> 참고: MAMPolicyRequired가 YES로 설정된 앱 스토어에는 앱을 제출할 수 없습니다. MAMPolicyRequired를 YES로 설정할 경우 AutoEnrollOnLaunch도 YES로 설정해야 합니다. |
 
 앱에 이 옵션을 선택하면 등록 후 앱 다시 시작을 처리할 필요가 없습니다.
 
@@ -576,7 +577,7 @@ iOS에서 MAM 대상 앱 구성 정책을 만드는 방법에 대한 자세한 �
 
 * **등록 호출**: Microsoft Intune이 클라이언트 쪽에서 시작된 등록 호출의 성공률 및 기타 성능 메트릭에 대해 알아보는 데 도움이 됩니다.
 
-* **Intune 작업**: 문제를 진단하고 Intune 기능을 보장하기 위해 Intune SDK 작업에 대한 정보를 수집합니다.
+* **Intune 작업**: 문제를 진단하고 Intune의 기능을 보장하기 위해 Intune SDK 작업에 대한 정보를 수집합니다.
 
 > [!NOTE]
 > 모바일 애플리케이션에서 Microsoft Intune에 Intune 앱 SDK 원격 분석 데이터를 보내지 않도록 선택하는 경우 Intune 앱 SDK 원격 분석 캡처를 사용하지 않도록 설정해야 합니다. IntuneMAMSettings 사전에서 `MAMTelemetryDisabled` 속성을 YES로 설정합니다.
@@ -593,7 +594,7 @@ ID는 단순히 문자열로 정의됩니다. ID는 대/소문자를 구분하�
 
 ID는 계정의 사용자 이름입니다(예: user@contoso.com). 개발자는 다음 수준에서 앱의 ID를 설정할 수 있습니다.
 
-* **프로세스 ID**: 주로 단일 ID 애플리케이션에 사용되는 프로세스 전반 ID를 설정합니다. 이 ID는 모든 작업, 파일 및 UI에 영향을 줍니다.
+* **프로세스 ID**: 프로세스 전반 ID를 설정하고 주로 단일 ID 애플리케이션에 사용됩니다. 이 ID는 모든 작업, 파일 및 UI에 영향을 줍니다.
 
 * **UI ID**: 잘라내기/복사/붙여넣기, PIN, 인증, 데이터 공유 등 주 스레드에서 UI 작업에 적용되는 정책을 결정합니다. UI ID는 파일 작업(암호화, 백업 등)에 영향을 주지 않습니다.
 
@@ -603,7 +604,7 @@ ID는 계정의 사용자 이름입니다(예: user@contoso.com). 개발자는 �
 
 어느 시점에서든 모든 스레드에는 UI 작업 및 파일 작업에 대한 유효한 ID가 있습니다. 이 ID는 적용되어야 하는 정책(있는 경우)을 확인하는 데 사용됩니다. ID가 'ID 없음'이거나 사용자가 관리되지 않는 경우 정책이 적용되지 않습니다. 아래 다이어그램은 효과적인 ID를 결정하는 방법을 보여 줍니다.
 
-  ![Intune 앱 SDK iOS: ID 확인 프로세스](./media/ios-thread-identities.png)
+  ![Intune 앱 SDK iOS: Id 확인 프로세스](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>스레드 큐
 

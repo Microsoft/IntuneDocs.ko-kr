@@ -7,21 +7,23 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: article
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 05cc1971f107c7bc3da371de0a916149c879aae0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 188242f870e5b7218a5b58a201782bf4bed4c25e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187126"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460974"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune용 Endpoint Protection을 사용한 Windows PC의 보안 유지 방법
 
@@ -83,7 +85,7 @@ IT 관리자의 최우선 업무 중 하나는 관리하는 컴퓨터를 맬웨�
 |                    <strong>맬웨어 치료 전에 시스템 복원 지점 만들기</strong>                    |                                                                                                                                                                                                                                                                                                                                 맬웨어 치료를 시작하기 전에 Windows 시스템 복원 지점을 만들려면 <strong>예</strong>로 설정합니다.<br /><br />권장 값: <strong>예</strong>                                                                                                                                                                                                                                                                                                                                  |
 |                                 <strong>해결된 맬웨어 추적(일)</strong>                                  |                                                                                                                                                                                                                                                                                      Endpoint Protection에서 지정한 시간 동안에 해결된 맬웨어를 추적하므로 이전에 감염된 컴퓨터를 수동으로 검사할 수 있습니다.<br /><br />0 - 30일의 값을 지정할 수 있습니다.<br /><br />권장 값: <strong>7일</strong>                                                                                                                                                                                                                                                                                       |
 
-**Endpoint Protection 설치** 및 **Endpoint Protection 사용** 설정에 대한 정책 값을 **예**로 설정하고 **타사 엔드포인트 보호 응용 프로그램이 설치된 경우에도 Endpoint Protection 설치**에 대한 정책 값을 **아니요**로 설정하면, Microsoft Intune Endpoint Protection은 다른 엔드포인트 보호 응용 프로그램이 설치된 것으로 감지합니다. 즉, Endpoint Protection이 설치되지 않으며 이미 있는 경우 제거됩니다. 하지만 Intune의 Microsoft Intune Endpoint Protection은 다른 엔드포인트 보호 애플리케이션의 상태를 보고합니다.
+**Endpoint Protection 설치** 및 **Endpoint Protection 사용** 설정에 대한 정책 값을 **예**로 설정하고 **타사 엔드포인트 보호 애플리케이션이 설치된 경우에도 Endpoint Protection 설치**에 대한 정책 값을 **아니요**로 설정하면, Microsoft Intune Endpoint Protection은 다른 엔드포인트 보호 애플리케이션이 설치된 것으로 감지합니다. 즉, Endpoint Protection이 설치되지 않으며 이미 있는 경우 제거됩니다. 하지만 Intune의 Microsoft Intune Endpoint Protection은 다른 엔드포인트 보호 애플리케이션의 상태를 보고합니다.
 
   바이러스 및 스파이웨어와 같은 잠재적인 위협 요소가 PC에서 자체 설치 또는 실행하려고 할 때 Microsoft Security Essentials에서 실시간 보호로 경고를 보냅니다. 이 문제가 발생하는 순간 작업 표시줄의 오른쪽 알림 영역에 메시지가 표시됩니다.
 
@@ -158,15 +160,15 @@ Microsoft 활성 보호 서비스는 잠재적 위협에 대응하는 방법을 
   - Intune 콘솔 - **그룹** 작업 영역에서 검색할 컴퓨터를 선택합니다. **전체 맬웨어 검색 실행** 또는 **빠른 맬웨어 검색 실행**을 선택합니다.
   - 관리 컴퓨터 - Windows 알림 영역에서 Endpoint Protection 클라이언트 소프트웨어를 시작합니다. **빠른**, **전체**또는 **사용자 지정**을 선택한 후 **지금 검색**을 선택합니다.
 
-Intune 콘솔의 오른쪽 아래 모서리에 있는 **원격 작업** 링크를 선택하여 원격 작업의 상태를 확인할 수 있습니다. **원격 작업 상태** 대화 상자에는 현재 원격 작업, 작업 상태, 장치 이름 및 보고된 모든 오류가 표시됩니다. 또한 문제 해결 정보에 대한 링크(해당하는 경우)도 나와 있습니다.
+Intune 콘솔의 오른쪽 아래 모서리에 있는 **원격 작업** 링크를 선택하여 원격 작업의 상태를 확인할 수 있습니다. **원격 작업 상태** 대화 상자에는 현재 원격 작업, 작업 상태, 디바이스 이름 및 보고된 모든 오류가 표시됩니다. 또한 문제 해결 정보에 대한 링크(해당하는 경우)도 나와 있습니다.
 
 ## <a name="monitor-endpoint-protection"></a>Endpoint Protection 모니터링
 [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/) 의 **보호**작업 영역을 사용하여 컴퓨터의 맬웨어 상태를 모니터링할 수 있습니다. 이 작업 영역에는 다음 두 페이지가 포함되어 있습니다.
 - **보호 개요** - 추가 정보를 보기 위해 선택할 수 있는 링크로 중요 정보를 표시합니다. 표시되는 문제는 다음과 같습니다.
   - **추가 작업이 필요한 맬웨어 인스턴스** – 문제를 해결하기 위해 수행해야 하는 추가 작업이 포함된 맬웨어 문제 목록을 보려면 이 링크를 클릭합니다. 이 목록을 탐색하여 영향 받는 컴퓨터를 확인할 수 있습니다.
   - **추가 작업이 필요한 맬웨어 인스턴스** – 문제를 해결하기 위해 수행해야 하는 추가 작업뿐만 아니라 해결되지 않은 맬웨어 문제 목록을 보려면 이 링크를 클릭합니다.
-  - **보호되지 않는 장치** – 소프트웨어가 설치되어 있지 않거나 오류가 발생하여 엔드포인트 보호 소프트웨어에서 보호하지 않는 컴퓨터를 보려면 이 링크를 클릭합니다. 자세한 내용을 보려면 컴퓨터를 선택하세요.
-  - **다른 엔드포인트 보호 응용 프로그램을 실행 중인 장치** – 타사 엔드포인트 보호 응용 프로그램을 실행하는 컴퓨터를 보려면 이 링크를 클릭합니다.
+  - **보호되지 않는 디바이스** – 소프트웨어가 설치되어 있지 않거나 오류가 발생하여 엔드포인트 보호 소프트웨어에서 보호하지 않는 컴퓨터를 보려면 이 링크를 클릭합니다. 자세한 내용을 보려면 컴퓨터를 선택하세요.
+  - **다른 엔드포인트 보호 애플리케이션을 실행 중인 장치** – 타사 엔드포인트 보호 애플리케이션을 실행하는 컴퓨터를 보려면 이 링크를 클릭합니다.
 - **모든 맬웨어** - 컴퓨터에서 검색된 모든 활성 맬웨어 목록을 표시합니다. 이 목록을 탐색하여 특정 맬웨어로 검색되는 모든 컴퓨터를 보거나 다음 작업 중 하나를 선택할 수 있습니다.
   - **속성 보기** – 선택한 맬웨어에 대한 추가 정보가 포함된 페이지를 엽니다.
   - **이 맬웨어에 대한 자세한 정보** – 맬웨어에 대한 추가 정보가 포함된 Microsoft 맬웨어 보호 센터의 항목을 엽니다.
@@ -179,17 +181,17 @@ Intune 콘솔의 오른쪽 아래 모서리에 있는 **원격 작업** 링크�
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>컴퓨터에서 맬웨어에 대한 최근 검색 경로를 보는 방법
 Intune은 디바이스에서 맬웨어의 최근 검색된 인스턴스 최대 10개에 대한 경로를 표시할 수 있습니다. **최근 검색 경로**는 기본적으로 비활성화되어 있습니다. 이 보기를 사용하려면:
 
-1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** > **모든 장치** > **모든 컴퓨터**를 선택합니다.
+1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** > **모든 디바이스** > **모든 컴퓨터**를 선택합니다.
 2. 최근 검색 경로를 확인할 컴퓨터를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 3. 맨 위의 탭에서 **맬웨어**를 선택합니다.
 
    ![맬웨어 탭을 선택하고 최근 검색 경로 확인란을 클릭한 다음](media/malware-path-column.png)
-4. 열 머리글을 마우스 오른쪽 단추로 클릭합니다. 사용 가능한 열 목록이 표시됩니다. 목록에서 **최근 검색 경로** 확인란을 선택합니다. **최근 검색 경로** 열에 장치에서 최근에 모니터링한 맬웨어를 최대 10개 표시합니다.
+4. 열 머리글을 마우스 오른쪽 단추로 클릭합니다. 사용 가능한 열 목록이 표시됩니다. 목록에서 **최근 검색 경로** 확인란을 선택합니다. **최근 검색 경로** 열에 디바이스에서 최근에 모니터링한 맬웨어를 최대 10개 표시합니다.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>컴퓨터에서 맬웨어 검색 실행 또는 맬웨어 정의 업데이트
 Intune은 Intune 클라이언트가 설치된 원격 관리 PC에서 Endpoint Protection 또는 Windows Defender를 사용하여 전체 또는 빠른 맬웨어 검색을 실행할 수 있습니다.
 
-1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** > **개요** > **모든 장치** > **모든 컴퓨터**로 이동하여 대상으로 지정할 컴퓨터를 선택합니다.
+1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹** > **개요** > **모든 디바이스** > **모든 컴퓨터**로 이동하여 대상으로 지정할 컴퓨터를 선택합니다.
 
 2. **원격 작업** 드롭다운 목록을 선택한 후 원격 컴퓨터에서 실행할 작업을 선택합니다.
 

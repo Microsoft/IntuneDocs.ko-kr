@@ -1,15 +1,16 @@
 ---
 title: 앱 보호 정책 로그 검토 | Microsoft Intune
 titlesuffix: Microsoft Intune
-description: 앱 보호 로그에서 검토할 수 있는 설정에 대해 알아봅니다.
+description: 이 항목에서는 Intune 앱 보호 정책 (APP) 로그를 구성 하는 방법을 설명 합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 11/20/2018
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d5ffdb67a6243bf34db03fb8394763e1a1c1f0e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55847168"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460498"
 ---
 # <a name="review-client-app-protection-logs"></a>클라이언트 앱 보호 로그 검토
 
@@ -40,8 +41,8 @@ ms.locfileid: "55847168"
 
 | 이름                        | 가능한 값                                                                                                                                                                                                                                                                                           | Azure Intune 모바일 애플리케이션 관리 포털의 설정                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AccessRecheckOfflineTimeout | x분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 오프라인 유예 기간<br>참고: 이는 디바이스가 오프라인 상태인 경우 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다.             |
-| AccessRecheckOnlineTimeout  | _x_분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 시간 제한.<br>참고: 이는 디바이스가 온라인 상태인 경우 앱이 시작된 후 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다. |
+| AccessRecheckOfflineTimeout | x분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 오프라인 유예 기간<br>참고: 디바이스가 오프라인 상태인 경우 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다.             |
+| AccessRecheckOnlineTimeout  | _x_분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 시간 제한.<br>참고: 디바이스가 온라인 상태인 경우 앱이 시작된 후 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다. |
 | AppPinDisabled              | 0 = 아니요<br>1 = 예                                                                                                                                                                                                                                                                                           | [액세스] 디바이스 PIN을 관리하는 경우 앱 PIN 사용 안 함.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = 앱이 없음<br>1 = 관리되는 앱<br>2 = 모든 앱                                                                                                                                                                                                                                                              | [데이터 재배치] 이 앱이 다른 앱의 데이터를 수신하도록 허용합니다.                                                                                                                        |
 | AppSharingToLevel           | 0 = 앱이 없음<br>1 = 관리되는 앱<br>2 = 모든 앱                                                                                                                                                                                                                                                              | [데이터 재배치] 이 앱이 다른 앱으로 데이터를 전송하도록 허용합니다.                                                                                                                         |

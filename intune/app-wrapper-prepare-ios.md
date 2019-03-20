@@ -6,9 +6,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a44b5b911d89a2e31f2a718aaa76702847ffb3d8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849206"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566661"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -438,7 +439,8 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 > [!NOTE]
 > 로깅 기능은 Intune App Wrapping Tool 버전 7.1.13 이상으로 래핑된 앱에서 사용할 수 있습니다.
 
-### <a name="see-also"></a>참고 항목
-- [Microsoft Intune으로 모바일 애플리케이션 관리용 앱을 준비하는 방법 결정](apps-prepare-mobile-application-management.md)</br>
-- [Microsoft Intune 정책을 사용하여 디바이스의 설정 및 기능 관리](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+## <a name="see-also"></a>참고 항목
+
+- [Microsoft Intune으로 모바일 애플리케이션 관리용 앱을 준비하는 방법 결정](apps-prepare-mobile-application-management.md)
+- [일반적인 질문, 문제 및 장치 정책 및 프로필을 사용 하 여 해결 방법](device-profile-troubleshoot.md)
 - [SDK를 사용하여 모바일 애플리케이션 관리에 앱을 사용하도록 설정](app-sdk.md)

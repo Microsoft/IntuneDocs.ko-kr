@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5eb00734c8095202b5b633f1db105a42d40e4567
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 188c32a2fd38d3445380a9d1898b90a3bb080ae1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149038"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57335210"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Intune에서 Android 디바이스 등록
 
@@ -34,9 +35,9 @@ ms.locfileid: "43149038"
 
 등록하기 전이나 이후에 디바이스 사용 방법을 가장 잘 설명하는 범주를 선택하라는 메시지가 표시될 수도 있습니다. 회사 지원팀은 이 범주를 사용하여 액세스할 수 있는 앱을 확인합니다.
 
-**Android 장치를 등록하려면:**
+**Android 디바이스를 등록하려면:**
 
-1. [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)에서 무료 Intune 회사 포털 앱을 설치합니다.
+1. [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)에서 무료 Intune 회사 포털 앱을 설치합니다.
 
 2. 회사 포털 앱을 엽니다.
 
@@ -86,7 +87,7 @@ ms.locfileid: "43149038"
 
      액세스를 거부하면 다음에 회사 포털에 로그인할 때 메시지가 다시 표시되지만, **다시 묻지 않음** 상자를 탭하여 이후 메시지를 해제할 수 있습니다. 사용자가 나중에 액세스를 허용할 경우 **설정** &gt; **앱** &gt; **회사 포털** &gt; **사용 권한** &gt; **전화**로 이동한 다음 사용 권한을 설정합니다.
 
-10. **활성화 장치 관리자** 화면에서 **활성화**를 탭합니다.
+10. **활성화 디바이스 관리자** 화면에서 **활성화**를 탭합니다.
 
     ![디바이스 관리자 활성화 화면](./media/and-enroll-5-activate.png)
 

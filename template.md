@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283572"
 ---
 # <a name="metadata-and-markdown-template"></a>메타데이터 및 Markdown 템플릿
@@ -37,7 +37,7 @@ markdown 파일을 만드는 경우 템플릿을 새 파일에 복사하고 아�
 - 값(예: 제목)에 콜론이 있으면 메타데이터 파서가 중단됩니다. 해당 위치에 HTML 인코딩 &#58;을 사용합니다(예: "제목: Azure 권한 관리&#58; 기본 사항 | Azure RMS").
 - **title**: 이 제목은 검색 엔진 결과에 표시됩니다. 제목은 파이프(|)와 서비스 이름으로 끝나야 합니다(예: 위 참조). 제목은 H1 제목의 제목과 일치하지 않아도 됩니다(또는 일치하지 않아야 함). 대략 65자 정도여야 합니다(| 서비스 이름 포함).
 - **author**, **manager**, **reviewer**: author 필드에는 만든 이의 별칭이 아니라 **Github 사용자 이름**이 포함되어야 합니다.  반면, "manager" 및 "reviewer" 필드에는 별칭이 포함되어야 합니다. ms.reviewer는 문서 또는 서비스와 관련된 PM의 이름을 지정합니다.
-- **ms.assetid**: CAPS에 있는 문서의 GUID입니다. 새 markdown 파일을 만드는 경우 [https://www.guidgenerator.com](https://www.guidgenerator.com)에서 GUID를 얻습니다. 
+- **ms.assetid**: CAPS에 있는 문서의 GUID입니다. 새 markdown 파일을 만들 때 [https://www.guidgenerator.com](https://www.guidgenerator.com)에서 GUID를 가져옵니다. 
 - **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: 이러한 요소의 가능한 값은 [여기](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default)서 확인할 수 있습니다.
 
 ## <a name="basic-markdown-and-gfm"></a>기본 Markdown 및 GFM
@@ -126,7 +126,7 @@ URL이 markdown 파일에 표시되는 경우 클릭할 수 있는 링크로 변
 
 ##### <a name="unordered-list-with-an-embedded-lists"></a>포함된 목록이 있는 순서가 지정되지 않은 목록
 
-- 키에 
+- 이 
 - bulleted 
 - 목록
     - Mrs. Peacock
@@ -167,7 +167,7 @@ URL이 markdown 파일에 표시되는 경우 클릭할 수 있는 링크로 변
 
 ## <a name="blockquotes"></a>Blockquotes
 
-> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+> 가뭄이 천만 년 동안 지속되고 공룡의 지배는 오래 전에 끝났습니다. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
 ## <a name="images"></a>이미지
 

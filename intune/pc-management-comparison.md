@@ -7,9 +7,10 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94549f150b2c658ba422ea1d6f68c5b5df85e33
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 9c70dbee01c546f73052b8741ce339c7bfe92fc7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238492"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461144"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교
 
@@ -53,4 +54,5 @@ ms.locfileid: "57238492"
 최신 모바일 디바이스 관리를 통해 Windows PC를 관리하는 경우 다음과 같은 이점이 있습니다.
 - **확장성** - Intune 클라우드 관리와 함께 MDM 관리를 확장할 수 있습니다. Intune 소프트웨어 클라이언트의 경우 PC를 7000대까지만 관리할 수 있습니다.
 - **단순성** - 다운로드한 소프트웨어 클라이언트를 사용하지 않고 운영 체제에 포함된 최신 관리 기능을 사용할 수 있습니다.
-- **일관성** - 조직 <!-- - **Cloud optimization** - -->의 기타 모든 모바일 디바이스와 같이 Windows PC를 관리함
+- **일관성** - 조직의 기타 모든 모바일 디바이스와 같이 Windows PC를 관리할 수 있습니다.
+<!-- - **Cloud optimization** - -->

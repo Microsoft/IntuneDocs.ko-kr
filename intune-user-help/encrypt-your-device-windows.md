@@ -1,6 +1,6 @@
 ---
 title: 암호화를 사용하여 Windows 디바이스를 보호하는 방법 | Microsoft 문서
-description: Windows 디바이스를 암호화하는 방법을 설명합니다.
+description: Windows 10 장치를 암호화 하는 BitLocker 켜기
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6f5da597ae0c765ea1328ee44d4c4e69d41b5ea
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55847692"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564468"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>암호화를 사용하여 Windows 디바이스를 보호하는 방법
 

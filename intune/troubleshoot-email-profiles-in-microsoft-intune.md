@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ROBOTS: ''
@@ -16,12 +17,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 480b453aa4f08f8d2a2460e26bfdb5f05466df6e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 02eac7eaa42f6f9c97426e0536e48a4bc399ed08
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190101"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461025"
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune에서 전자 메일 프로필 문제 해결
 
@@ -40,7 +42,7 @@ Azure 클래식 포털의 Intune에 적용됩니다.
 
 2. 메일 프로필을 선택하고 **편집**을 선택합니다.
 
-3. **Allow e-mail to be sent from third-party applications**(타사 응용 프로그램에서 전자 메일을 보내도록 허용)을 선택합니다.
+3. **Allow e-mail to be sent from third-party applications**(타사 애플리케이션에서 전자 메일을 보내도록 허용)을 선택합니다.
 
 ### <a name="configuration-manager-integrated-with-intune-solution"></a>Intune 솔루션과 통합된 Configuration Manager
 
@@ -50,7 +52,7 @@ Azure 클래식 포털의 Intune에 적용됩니다.
 
 3. 전자 메일 프로필을 마우스 오른쪽 단추로 클릭하고 **속성**을 엽니다.
 
-4. **동기화 설정** 탭에서 **타사 응용 프로그램에서 전자 메일을 보내도록 허용**을 선택합니다.
+4. **동기화 설정** 탭에서 **타사 애플리케이션에서 전자 메일을 보내도록 허용**을 선택합니다.
 
 ## <a name="device-already-has-an-email-profile-installed"></a>디바이스에 메일 프로필이 이미 설치되어 있음
 

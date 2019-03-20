@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e305d419a101410a9a934a200dfcfb1c3488ff7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 2cbf6e1bde3f8853f2e5c6c1919089bf0dc10126
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238288"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565523"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 데이터 웨어하우스 데이터 모델
 
 Intune 데이터 웨어하우스 샘플 데이터는 항상 변화하는 모바일 디바이스 환경에 대한 과거 보기를 제공합니다. 보기는 해당 시점의 관련 엔터티로 구성됩니다.
 
-## <a name="entities-entity-sets"></a>엔터티: 엔터티 세트
+## <a name="entities-entity-sets"></a>엔터티: 엔터티 집합
 
 웨어하우스는 다음과 같은 개략적인 영역으로 데이터를 노출합니다.
 

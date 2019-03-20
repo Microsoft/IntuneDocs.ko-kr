@@ -7,21 +7,23 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: article
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 56c81c04c4ee6ae319cb54f513b80738f2fbe5fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c49b6639f898b1328cefcbc9bb9af9208aeda63b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188038"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460804"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>정책을 사용하여 Windows PC 관리 간소화
 
@@ -46,7 +48,7 @@ Microsoft Intune Center는 모든 관리 컴퓨터에 설치됩니다. Intune �
 
 |정책 설정|세부 정보|
 |------------------|--------------------|
-|**Name**|컴퓨터를 관리하는 관리자의 이름<br />최대 길이: 40자|
+|**이름**|컴퓨터를 관리하는 관리자의 이름<br />최대 길이: 40자|
 |**전화 번호**|컴퓨터를 관리하는 관리자의 전화번호<br />최대 길이: 20자|
 |**메일 주소**|컴퓨터를 관리하는 관리자의 전자 메일 주소<br />최대 길이: 40자|
 |**웹 사이트 이름**|사용자를 위한 지원 웹 사이트 이름<br />>최대 길이: 40자|
