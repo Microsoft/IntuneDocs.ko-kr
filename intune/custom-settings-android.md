@@ -6,21 +6,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 74d23c8433c741927f28bb1d6b9f55393e38f7db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ba6d2f60d91388aa1c8ceea6580f1d583d4c987c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182978"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564825"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune의 Android 디바이스에 대한 사용자 지정 설정 사용
 
@@ -32,7 +34,7 @@ Android 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resou
 
 - [미리 공유한 키를 사용하여 Wi-Fi 프로필 만들기](/intune/wi-fi-profile-shared-key)
 - [앱당 VPN 프로필 만들기](/intune/android-pulse-secure-per-app-vpn)
-- [Samsung KNOX Standard 장치에 대해 앱 허용 및 차단](/intune/samsung-knox-apps-allow-block)
+- [Samsung KNOX Standard 디바이스에 대해 앱 허용 및 차단](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
 > 나열된 설정만이 사용자 지정 프로필에 의해 구성될 수 있습니다. Android 디바이스는 구성할 수 있는 OMA-URI 설정의 전체 목록을 노출하지 않습니다. 더 많은 설정을 참조하려는 경우 [Intune Uservoice 사이트](https://microsoftintune.uservoice.com/forums/291681-ideas)에서 더 많은 설정에 투표하십시오.
@@ -42,7 +44,7 @@ Android 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resou
 ## <a name="create-the-profile"></a>프로필 만들기
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
     - **이름**: `android custom profile` 등의 프로필의 이름을 입력합니다.
@@ -76,4 +78,4 @@ Android 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resou
 
 프로필이 만들어지지만 아직 아무것도 하지 않습니다. 그런 다음, [프로필을 할당합니다](device-profile-assign.md).
 
-[Android 엔터프라이즈 장치에서 프로필을 만드는](custom-settings-android-for-work.md) 방법을 참조하세요.
+[Android 엔터프라이즈 디바이스에서 프로필을 만드는](custom-settings-android-for-work.md) 방법을 참조하세요.

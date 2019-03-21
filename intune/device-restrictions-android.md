@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f546fc66f7c602705289493eb2f5c96555ab7603
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728942"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566355"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Intune의 Android 및 Samsung Knox Standard 디바이스 제한 사항 설정 목록
 
@@ -55,7 +57,7 @@ ms.locfileid: "52728942"
 - **디바이스를 초기화하기 전 로그인 오류 발생 횟수**: 디바이스를 초기화하기 전까지 허용되는 로그인 오류 횟수를 입력합니다.
 - **암호 만료(일)**: 디바이스 암호를 변경해야 할 때까지의 기간(일)을 입력합니다.
 - **필수 암호 형식**: 필요한 암호 복잡도 수준과 생체 인식 디바이스 사용 가능 여부를 입력합니다. 옵션은 다음과 같습니다.
-  - **장치 기본값**
+  - **디바이스 기본값**
   - **낮은 보안 생체 인식**
   - **최소 숫자**
   - **복합 숫자**: “1111” 또는 “1234”와 같이 반복 또는 연속된 숫자는 허용되지 않습니다.<sup>1</sup>
@@ -164,4 +166,4 @@ ms.locfileid: "52728942"
 
 [프로필을 할당](device-profile-assign.md)하고, 해당 [상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Android 엔터프라이즈](device-restrictions-android-for-work.md#kiosk-settings) 및 [Windows 10](kiosk-settings.md) 디바이스에 대한 키오스크 프로필을 만들 수도 있습니다.
+[Android 엔터프라이즈](device-restrictions-android-for-work.md#dedicated-device-settings) 및 [Windows 10](kiosk-settings.md) 디바이스에 대한 키오스크 프로필을 만들 수도 있습니다.

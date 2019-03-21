@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fe16111095051c1fddb4b87d5b4f815ae2798e92
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297522"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566372"
 ---
 # <a name="reference-for-devices-entities"></a>디바이스 엔터티에 대한 참조
 
@@ -214,7 +216,10 @@ ms.locfileid: "54297522"
 |---------|------------|--------|
 | ownerTypeID |소유자 유형에 대한 고유 식별자 | |
 | ownerTypeKey |데이터 웨어하우스의 소유자 유형에 대한 고유 식별자 - 서로게이트 키 | |
-| ownerTypeName |디바이스의 소유자 유형을 나타냅니다.  <br>회사 - 회사 소유 디바이스입니다. <br>개인 - 개인 소유 디바이스입니다(BYOD).  <br>알 수 없음 - 이 디바이스에 대한 정보가 없습니다. |회사 개인 알 수 없음 |
+| ownerTypeName |디바이스의 소유자 유형을 나타냅니다.  <br>회사-회사 소유 장치입니다. <br>개인 - 개인 소유 디바이스입니다(BYOD).  <br>알 수 없음 - 이 디바이스에 대한 정보가 없습니다. |회사 개인 알 수 없음 |
+
+> [!Note]  
+> 에 대 한 합니다 `ownerTypeName` 장치에 대 한 동적 그룹을 만들 때 azure Ad에서의 필터 값을 설정 해야 `deviceOwnership` 으로 `Company`입니다. 자세한 내용은 [장치에 대 한 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)합니다. 
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 

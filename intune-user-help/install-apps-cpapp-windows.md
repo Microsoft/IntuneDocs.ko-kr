@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834656"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56742536"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>디바이스에 앱 설치 및 공유
 Windows용 회사 포털 앱에서 디바이스에 앱을 설치합니다.
@@ -36,9 +36,10 @@ Windows용 회사 포털 앱에서 디바이스에 앱을 설치합니다.
 2. 회사 포털 앱의 다음 섹션에서 앱을 찾아서 설치합니다.  
 
     * **홈**: 조직의 추천 앱 목록에서 선택합니다.  
-    * **모두 표시**: **홈페이지** > **앱** 섹션에서 **모두 표시**를 클릭하여 사용 가능한 모든 앱을 확인합니다.  
-    * **모든 앱**: 설치되고 추천된 앱을 비롯한 사용 가능한 모든 앱을 확인하려면 탐색 창에서 이 페이지를 선택합니다.  
-    * **앱 검색**: 정적 검색 창은 앱의 탐색 창에 있습니다.  사용 가능한 앱을 찾으려면 앱 이름 또는 게시자로 검색합니다.  
+    * **모두 표시**: **홈페이지** > **앱** 섹션에서 **모두 표시**를 클릭하여 사용 가능한 모든 앱을 봅니다.  
+    * **모든 앱**: 설치되고 추천된 앱을 비롯한 사용 가능한 모든 앱을 보려면 탐색 창에서 이 페이지를 선택합니다.  
+    * **앱 범주**: 형식 또는 함수를 기준으로 앱을 선택 하려면 탐색 창에서이 페이지를 선택 합니다. 앱과 같은 범주로 정렬 됩니다 **추천**를 **Education**, 및 **생산성**합니다.  
+    * **앱 검색**: 정적 검색 창은 앱 탐색 창에 있습니다.  사용 가능한 앱을 찾으려면 앱 이름 또는 게시자로 검색합니다.  
     * **모든 앱**: 사용 가능한 모든 앱을 보고 정렬하고 필터링합니다. 검색 결과는 관련성에 따라 자동으로 정렬됩니다.  
 
 3. 앱을 선택합니다.   

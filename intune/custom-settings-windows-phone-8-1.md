@@ -7,19 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a876cf430952aa99957af4bc9a66f4bc29d65df9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 487115938ad334d1cefb2a6ecfc8d64ac6688a45
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184678"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565896"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Intune에서 Windows Phone 8.1 디바이스에 대한 사용자 지정 설정 사용
 
@@ -32,7 +34,7 @@ Windows Phone 8.1 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uni
 ## <a name="create-the-profile"></a>프로필 만들기
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
     - **이름**: `windows phone custom profile` 등의 프로필의 이름을 입력합니다.
@@ -66,4 +68,4 @@ Windows Phone 8.1 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uni
 
 프로필이 만들어지지만 아직 아무것도 하지 않습니다. 그런 다음, [프로필을 할당합니다](device-profile-assign.md).
 
-[Windows 10 장치](custom-settings-windows-10.md)에 대한 사용자 지정 프로필을 만드는 방법을 참조하세요.
+[Windows 10 디바이스](custom-settings-windows-10.md)에 대한 사용자 지정 프로필을 만드는 방법을 참조하세요.

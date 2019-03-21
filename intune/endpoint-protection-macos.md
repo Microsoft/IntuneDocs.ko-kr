@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/27/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9828f1b8a24e4f7d871f9e6e6f67e9f6c6fb197
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c2c3a33b996a68263550fc05d3af853c263c930a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182774"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565945"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune에서 macOS 엔드포인트 보호 설정
 
@@ -37,7 +39,7 @@ ms.locfileid: "52182774"
 
 방화벽을 사용하여 포트별이 아닌 응용 프로그램별 연결을 제어합니다. 응용 프로그램별 설정을 사용하면 방화벽 보호의 이점을 더욱 쉽게 얻을 수 있습니다. 또한 합법적인 앱에 대해 열려있는 네트워크 포트를 원하지 않는 앱이 제어하는 것을 방지해줍니다.
 
-- **앱별 연결을 제어하여 무단 네트워크 액세스에서 장치를 보호하기 위해 방화벽을 사용합니다.**
+- **앱별 연결을 제어하여 무단 네트워크 액세스에서 디바이스를 보호하기 위해 방화벽을 사용합니다.**
   - **방화벽**: 들어오는 연결을 사용자 환경에서 처리하는 방법을 구성하려면 방화벽을 사용하도록 설정합니다.
   - **들어오는 연결**: DHCP, Bonjour, IPSec 등의 기본 인터넷 서비스에 필요한 연결을 제외하고 들어오는 모든 연결을 차단합니다. 또한 이 기능은 모든 공유 서비스(예: 파일 공유, 화면 공유)를 차단합니다. 공유 서비스를 사용하는 경우 이 설정을 **구성되지 않음**으로 유지합니다.
 

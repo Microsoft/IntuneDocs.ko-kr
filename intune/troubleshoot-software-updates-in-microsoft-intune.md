@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ROBOTS: ''
@@ -16,12 +17,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1354c789a6756a6ddf2d9c5d6400ece91c80d57c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0e7ec762e7e7299e400fefedbf7a8810e1da929f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188634"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461348"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune에서 소프트웨어 업데이트 문제 해결
 
@@ -251,7 +253,7 @@ Microsoft Intune에서 소프트웨어 업데이트 문제를 해결하는 데 �
 - CPU 사용률이 높아집니다.
 - Intune 포털을 통해 설치하는 경우, 애플리케이션이 느리게 설치됩니다.
 - Microsoft Intune Center에서 다음과 같은 오류가 트리거됩니다. *컴퓨터를 업데이트하는 동안 오류가 발생했습니다. 발견된 오류: 코드 0x800705b4*.
-- Intune 관리 콘솔 > 그룹 > 모든 장치 아래 상태 필드에 다음 메시지가 표시됩니다. *이 컴퓨터에 설치된 하나 이상의 에이전트에서 오류가 발생했습니다. 이 컴퓨터에 대한 정보는 정확하지 않거나 최신 상태가 아닐 수 있습니다*.
+- Intune 관리 콘솔 &gt; 그룹 &gt; 모든 디바이스 아래 상태 필드에 다음 메시지가 표시됩니다. *이 컴퓨터에 설치된 하나 이상의 에이전트에서 오류가 발생했습니다. 이 컴퓨터에 대한 정보는 정확하지 않거나 최신 상태가 아닐 수 있습니다*.
 
 이 문제는 대체된 업데이트(다른 업데이트에 의해 대체된 업데이트)가 오랜 기간 동안 거부되지 않은 경우에 발생할 수 있습니다. 특정한 프로세스(예: 애플리케이션 설치)가 진행되는 동안, Windows는 업데이트 및 그 후속 작업이 올바르게 매핑될 수 있도록, 대체된 모든 업데이트를 순서대로 확인합니다. 대체된 업데이트 목록이 너무 커지면, 이러한 확인 작업에 필요한 시간 및 처리 부하로 인해 CPU 사용률이 높아질 수 있습니다. 이 문제는 Windows 7에 제공되는 대체된 업데이트의 수가 많기 때문에 주로 Windows 7을 실행하는 클라이언트에 영향을 미칩니다. Windows 8 이상의 운영 체제에는 대체된 업데이트가 그만큼 많지 않기 때문에 이러한 문제의 영향을 덜 받습니다.
 

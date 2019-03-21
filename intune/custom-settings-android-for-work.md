@@ -6,21 +6,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73075ed06e98ca987e87a7cfda70c546127bf881
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 494b8011b942026cf932b6f2f1851c5f0ffaadbb
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179595"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566474"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Microsoft Intune의 Android 엔터프라이즈 디바이스에 대한 사용자 지정 설정 사용
 
@@ -35,7 +37,7 @@ Intune은 제한된 수의 Android 사용자 지정 프로필을 지원합니다
 ## <a name="create-the-profile"></a>프로필 만들기
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
     - **이름**: `android enterprise custom profile` 등의 프로필의 이름을 입력합니다.
@@ -70,7 +72,7 @@ Intune은 제한된 수의 Android 사용자 지정 프로필을 지원합니다
 이 예에서는 Android 엔터프라이즈 디바이스에서 회사와 개인 앱 간에 복사 및 붙여넣기 작업을 제한하는 사용자 지정 프로필을 만듭니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **장치 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
     - **이름**: `android ent block copy paste custom profile` 등의 프로필의 이름을 입력합니다.
@@ -96,4 +98,4 @@ Intune은 제한된 수의 Android 사용자 지정 프로필을 지원합니다
 
 프로필이 만들어지지만 아직 아무것도 하지 않습니다. 그런 다음, [프로필을 할당합니다](device-profile-assign.md).
 
-[Android 장치에서 프로필을 만드는](custom-settings-android.md) 방법을 참조하세요.
+[Android 디바이스에서 프로필을 만드는](custom-settings-android.md) 방법을 참조하세요.

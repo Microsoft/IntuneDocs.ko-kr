@@ -18,11 +18,11 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55844550"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Intune 회사 포털에서 Windows 디바이스 사용
@@ -46,7 +46,7 @@ ms.locfileid: "55844550"
 [Windows 10 Holographic](https://www.microsoft.com/hololens) 등의 기타 Windows 버전이 회사 포털에서 지원됩니다. 그렇지만 이러한 버전은 용도가 매우 한정적이기 때문에 이 문서에서 다루지 않습니다.
 
 ## <a name="set-up-your-device-in-the-company-portal"></a>회사 포털에서 디바이스 설정
-- [회사 포털에서 내 Windows 디바이스 관리](enroll-your-device-in-intune-windows.md)
+- [회사 포털에서 내 Windows 디바이스 관리](windows-enrollment-company-portal.md)  
 - [ 디바이스를 *관리*한다는 것은 무엇을 의미할까요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [회사는 내 디바이스에서 어떤 정보를 볼 수 있나요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [내 디바이스 암호화](encrypt-your-device-windows.md)

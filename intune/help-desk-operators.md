@@ -6,22 +6,23 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/23/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba74c93e2ef7dc469ebd7f5086659181b72a0981
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230026"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57787137"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>문제 해결 포털을 사용하여 회사 내 사용자 지원
 
@@ -69,176 +70,180 @@ ms.locfileid: "57230026"
 | 4.   | 사용자 정보  | 이 목록을 사용하여 창에서 검토할 세부 정보를 선택합니다. <br>선택할 수 있는 항목은 다음과 같습니다. <ul><li>클라이언트 앱<li>규정 준수 정책<li> 구성 정책<li>앱 보호 정책 <li>등록 제한 사항</ul>      |
 | 5.   | 그룹 구성원 자격  | 선택한 사용자가 구성원인 현재 그룹을 보여 줍니다.       |
 
-## <a name="client-apps-reference"></a>클라이언트 앱 참조
+<!-- this section needs to be updated
 
-디바이스를 실행하는 앱
-- Intune 및 Azure AD(Active Directory)에서 관리 
-- Intune 및 Azure AD(Active Directory)에서 관리되는 사용자에 의해 소유
+## Client apps reference
 
-### <a name="properties"></a>속성
+The apps that are running devices
+- managed by Intune and Azure Active Directory (AD) 
+- owned by users managed by Intune and Azure Active Directory (AD).
 
-클라이언트 앱의 속성입니다.
+### Properties
 
-| 속성      | 설명                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+The properties of client apps.
+
+| Property      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 이름          | 애플리케이션의 이름                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| OS            | 디바이스에 설치된 운영 체제                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 유형          | 각 앱에 대해 선택할 수 있는 할당 유형은 다음과 같습니다.  <br> **사용 가능** - 사용자가 회사 포털 앱 또는 웹 사이트에서 앱을 설치합니다.  <br> **해당 사항 없음** - 앱이 설치되거나 회사 포털에 표시되지 않습니다. <br> **제거** - 앱이 선택한 그룹의 디바이스에서 제거됩니다.  <br> **등록없이 사용 가능** - 이 앱을 Intune에 등록되지 않은 디바이스의 사용자 그룹에 할당합니다. |
-| 마지막으로 수정한 날짜 | 디바이스 유형의 이름                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Name          | The name of the application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| OS            | The operating system installed on the device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Type          | You can choose an assignment type for each app.  <br> **Available** - Users install the app from the Company Portal app or website.  <br> **Not Applicable** - The app is not installed or shown in the Company Portal. <br> **Uninstall** - The app is uninstalled from devices in the selected groups.  <br> **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune. |
+| Last Modified | The name of the type of device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### <a name="devices"></a>디바이스
+### Devices
 
-Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리하는 디바이스입니다.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| 속성           | 설명                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 디바이스 이름        | 디바이스 유형의 이름                                                                                                     |
-| 관리자         | 정책이 수정된 타임스탬프입니다.                                                                                              |
-| Azure AD 조인 유형 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| 소유권          | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다.                                               |
-| Intune 준수   | 디바이스 유형의 이름                                                                                                     |
-| Azure AD 준수 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| 앱 설치 | 앱 설치 실패 또는 성공이 개별 디바이스에서 발생했는지를 나타냅니다. |
-| OS                 | 디바이스에 설치된 운영 체제                                                                                       |
-| OS 버전         | 디바이스의 운영 체제 버전 번호                                                                                  |
-| 마지막 체크 인      | 디바이스 유형의 이름                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| App install | Denotes whether an app install failure or success has occurred on the individual device. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-status"></a>앱 보호 상태
+### App protection status
 
-앱 보호 정책은 EMS(Enterprise Mobility Solution) 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| 속성    | 설명                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| 상태      | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다. |
-| 앱 이름    | 애플리케이션의 이름                                                           |
-| 디바이스 이름 | 디바이스 유형의 이름                                                       |
-| 디바이스 유형 | 디바이스 유형의 이름                                                       |
-| 정책    | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다. |
-| 마지막 동기화   | 디바이스가 Intune과 마지막으로 동기화한 타임스탬프                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="app-protection-policies-reference"></a>앱 보호 정책 참조
+## App protection policies reference
 
-앱 보호 정책은 EMS 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-### <a name="properties"></a>속성
+### Properties
 
-다음 표에서는 Intune에서 관리하는 디바이스에 대한 앱 보호 정책 상태를 요약하고 있습니다.
+The table summarizes app protection policies status for devices managed by Intune.
 
-| 속성    | 설명                                                                                                                                |
+| Property    | Description                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 이름        | 애플리케이션의 이름                                                                                                        |
-| 배포됨    | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| 플랫폼    | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다.                                               |
-| 등록  | 디바이스 유형의 이름                                                                                                     |
-| 마지막 업데이트 | 정책이 수정된 타임스탬프입니다.                                                                                              |
+| Name        | The name of the application.                                                                                                        |
+| Deployed    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Platform    | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Enrollment  | The name of the type of device.                                                                                                     |
+| Last Update | The timestamp the policy was modified.                                                                                              |
 
-### <a name="devices"></a>디바이스
+### Devices
 
-Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리하는 디바이스입니다.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| 속성           | 텍스트                                                                                                                                |
+| Property           | Text                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 장치 이름        | 디바이스 유형의 이름                                                                                                     |
-| 관리 도구         | 정책이 수정된 타임스탬프입니다.                                                                                              |
-| Azure AD 조인 유형 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| 소유권          | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다.                                               |
-| Intune 준수   | 디바이스 유형의 이름                                                                                                     |
-| Azure AD 준수 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| Azure AD 준수 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| OS                 | 디바이스에 설치된 운영 체제                                                                                       |
-| OS 버전         | 디바이스의 운영 체제 버전 번호                                                                                  |
-| 마지막 체크 인      | 디바이스 유형의 이름                                                                                                     |
+| Device Name        | The name of the type of device.                                                                                                     |
+| Managed By         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last Check in      | The name of the type of device.                                                                                                     |
 
-## <a name="compliance-policies-reference"></a>준수 정책 참조
+## Compliance policies reference
 
-회사 앱 및 데이터에 액세스하는 데 사용되는 디바이스에서 PIN 사용과 같은 특정 규칙을 준수하여 디바이스 및 디바이스에 저장된 데이터의 암호화에 액세스하는지 확인합니다.
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
-### <a name="properties"></a>속성
+### Properties
 
-준수 정책 속성입니다.
+The properties of the compliance policies.
 
-| 속성      | 설명                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 할당    | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| 이름          | 애플리케이션의 이름                                                                                                        |
-| OS            | 디바이스에 설치된 운영 체제                                                                                       |
-| 정책 유형   | 디바이스 소유권의 형식(**회사**, **개인** 및 **알 수 없음**)입니다.                                               |
-| 마지막으로 수정한 날짜 | 디바이스 유형의 이름                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>디바이스
+### Devices
 
-Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리하는 디바이스입니다.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| 속성           | 설명                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 디바이스 이름        | 디바이스 유형의 이름                                                                                                     |
-| 관리자         | 정책이 수정된 타임스탬프입니다.                                                                                              |
-| Azure AD 조인 유형 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| 소유권          | 디바이스 소유권의 형식(**회사**, **개인** 및 **알 수 없음**)입니다.                                               |
-| Intune 준수   | 디바이스 유형의 이름                                                                                                     |
-| Azure AD 준수 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| OS                 | 디바이스에 설치된 운영 체제                                                                                       |
-| OS 버전         | 디바이스의 운영 체제 버전 번호                                                                                  |
-| 마지막 체크 인      | 디바이스 유형의 이름                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-policies"></a>앱 보호 정책
+### App protection policies
 
-앱 보호 정책은 EMS 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| 속성    | 설명                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| 상태      | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다. |
-| 앱 이름    | 애플리케이션의 이름                                                           |
-| 디바이스 이름 | 디바이스 유형의 이름                                                       |
-| 디바이스 유형 | 디바이스 유형의 이름                                                       |
-| 정책    | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다. |
-| 마지막 동기화   | 디바이스가 Intune과 마지막으로 동기화한 타임스탬프                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="configuration-policies-reference"></a>구성 정책 참조
+## Configuration policies reference
 
-앱 구성 정책은 공급업체별 구성을 통해 모바일 앱에서 사용할 수 있습니다. 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
-### <a name="properties"></a>속성
+### Properties
 
-구성 정책 속성입니다.
+The properties of the configuration policies.
 
-| 속성      | 설명                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 할당    | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| 이름          | 애플리케이션의 이름                                                                                                        |
-| OS            | 디바이스에 설치된 운영 체제                                                                                       |
-| 정책 유형   | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다.                                               |
-| 마지막으로 수정한 날짜 | 디바이스 유형의 이름                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>디바이스
+### Devices
 
-Intune 또는 사용자가 관리하거나 Intune 또는 Azure AD에서 관리하는 디바이스입니다.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| 속성           | 설명                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 디바이스 이름        | 디바이스 유형의 이름                                                                                                     |
-| 관리자         | 정책이 수정된 타임스탬프입니다.                                                                                              |
-| Azure AD 조인 유형 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| 소유권          | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다.                                               |
-| Intune 준수   | 디바이스 유형의 이름                                                                                                     |
-| Azure AD 준수 | 각 사용자의 앱 보호 앱 상태 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다. |
-| OS                 | 디바이스에 설치된 운영 체제                                                                                       |
-| OS 버전         | 디바이스의 운영 체제 버전 번호                                                                                  |
-| 마지막 체크 인      | 디바이스 유형의 이름                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
 
-### <a name="app-protection-policies"></a>앱 보호 정책
+### App protection policies
 
-앱 보호 정책은 EMS 기술과 통합하는 모바일 앱에서 사용할 수 있습니다. 이러한 정책은 Office 모바일 앱을 비롯한 모바일 앱에 다운로드될 때 회사 데이터에 대한 보호의 기준을 제공합니다. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| 속성    | 설명                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| 상태      | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다. |
-| 앱 이름    | 애플리케이션의 이름                                                           |
-| 디바이스 이름 | 디바이스 유형의 이름                                                       |
-| 디바이스 유형 | 디바이스 유형의 이름                                                       |
-| 정책    | 디바이스 소유권의 형식(**회사**, **개인** 또는 **알 수 없음**)입니다. |
-| 마지막 동기화   | 디바이스가 Intune과 마지막으로 동기화한 타임스탬프                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+-->
 
 ## <a name="enrollment-failure-reference"></a>등록 오류 참조
 

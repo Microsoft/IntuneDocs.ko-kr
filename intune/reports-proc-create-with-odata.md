@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/06/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c38b3f0656f6b285c38da39971f9f124b5448c14
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 3cd0f8b5337ad562bddd65bc449a35ec0773f5ed
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229516"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565624"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 보고서 만들기
 
@@ -46,7 +47,7 @@ _엔터티_ 및 _테이블_이라는 용어를 사용하면 혼란스러울 수 
 
 ## <a name="install-power-bi-desktop"></a>Power BI Desktop 설치
 
-Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop은 [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)에서 다운로드할 수 있습니다.
+Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로드 위치: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>테넌트에 대한 Intune 데이터 웨어하우스의 OData 피드에 연결합니다.
 

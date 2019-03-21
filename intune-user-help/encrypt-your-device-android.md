@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dfb70327737bcfe9e6bd2ded964a07a00f9d7610
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148952"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55838175"
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>암호화를 사용하여 Android 디바이스를 보호하는 방법
 
@@ -35,13 +36,13 @@ ms.locfileid: "43148952"
 
 1.  디바이스에 대해 화면 잠금 PIN 또는 암호가 설정되어 있는지 확인합니다.
 
-2.  **설정**에서 **보안** > **장치 암호화**를 선택합니다.
+2.  **설정**에서 **보안** > **Encrypt Device**(디바이스 암호화)를 선택합니다.
     일부 휴대폰에서는 **스토리지** > **스토리지 암호화** 또는 **스토리지** > **잠금 화면 및 보안** > **기타 보안 설정**을 선택하여 "암호화" 옵션을 찾아야 합니다.
 
 3.  화면의 지시를 따릅니다. 암호화가 진행되는 동안 디바이스가 여러 번 다시 시작될 수 있습니다.
 
 ### <a name="what-to-do-if-you-have-issues"></a>문제가 있는 경우 수행할 작업
-**문제**: 장치를 이미 암호화한 경우에는 다음 중 하나가 발생합니다.
+**문제**: 디바이스를 이미 암호화한 경우에는 다음 중 하나가 발생합니다.
 
 - 암호화 단추를 사용할 수 없습니다.
 - 여전히 암호화해야 한다는 메시지가 표시됩니다.

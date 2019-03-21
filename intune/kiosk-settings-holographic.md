@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc5ed233bf3368ae9b0ce21b8688966a1ffdef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232356"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566015"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 Windows Holographic for Business 디바이스를 키오스크로 실행하기 위한 설정
 
@@ -55,28 +56,28 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
 - **S 모드 디바이스에서 Windows 10을 대상으로 지정**: **아니요**를 선택합니다. Windows Holographic for Business에서는 S 모드가 지원되지 않습니다.
 
-- **사용자 로그온 유형**: 추가한 앱을 사용할 수 있는 사용자 계정을 하나 이상 추가합니다. 옵션은 다음과 같습니다. 
+- **사용자 로그온 유형**: 추가하는 앱을 사용할 수 있는 사용자 계정을 하나 이상 추가합니다. 옵션은 다음과 같습니다. 
 
-  - **자동 로그온**: Windows Holographic for Business에서는 지원되지 않습니다.
+  - **자동 로그온**: Windows Holographic for Business에서 지원되지 않습니다.
   - **로컬 사용자 계정**: 로컬(디바이스 기준) 사용자 계정을 **추가**합니다. 입력한 계정이 키오스크에 로그인하는 데 사용됩니다.
-  - **Azure AD 사용자 또는 그룹(Windows 10 버전 1803 이상)**: 디바이스에 로그인할 사용자 자격 증명이 필요합니다. **추가**를 선택하여 목록에서 Azure AD 사용자 또는 그룹을 선택합니다. 여러 사용자 및 그룹을 선택할 수 있습니다. **선택**을 선택하여 변경 내용을 저장합니다.
+  - **Azure AD 사용자 또는 그룹(Windows 10, 버전 1803 이상)**: 디바이스에 로그인할 사용자 자격 증명이 필요합니다. **추가**를 선택하여 목록에서 Azure AD 사용자 또는 그룹을 선택합니다. 여러 사용자 및 그룹을 선택할 수 있습니다. **선택**을 선택하여 변경 내용을 저장합니다.
   - **HoloLens 방문자**: 방문자 계정은 [공유된 PC 모드 개념](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts)에 설명된 대로 사용자 자격 증명이나 인증이 필요 없는 게스트 계정입니다.
 
-- **애플리케이션**: 키오스크 디바이스에서 실행할 앱을 추가합니다. 여러 개의 앱을 추가할 수 있습니다.
+- **애플리케이션**: 키오스크 장치에서 실행할 앱을 추가합니다. 여러 개의 앱을 추가할 수 있습니다.
 
   - **Store 앱 추가**: [클라이언트 앱](apps-add.md)을 사용하여 추가한 기존 앱을 선택합니다. 앱이 나열되지 않으면 앱을 가져와서 [Intune에 추가](store-apps-windows.md)할 수 있습니다.
-  - **Win32 앱 추가**: Windows Holographic for Business에서는 지원되지 않습니다.
+  - **Win32 앱 추가**: Windows Holographic for Business에서 지원되지 않습니다.
   - **AUMID로 추가**: 받은 편지함 Windows 앱을 추가하려면 이 옵션을 사용합니다. 다음 속성을 입력합니다. 
 
-    - **애플리케이션 이름**: 필수 사항입니다. 애플리케이션의 이름을 입력합니다.
-    - **AUMID(애플리케이션 사용자 모델 ID)**: 필수 사항입니다. Windows 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
-    - **타일 크기**: 필수 사항입니다. 작은, 중간 크기, 넓은 또는 큰 앱 타일 크기를 선택합니다.
+    - **애플리케이션 이름**: 필수입니다. 애플리케이션의 이름을 입력합니다.
+    - **AUMID(애플리케이션 사용자 모델 ID)**: 필수입니다. Windows 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
+    - **타일 크기**: 필수입니다. 작은, 중간 크기, 넓은 또는 큰 앱 타일 크기를 선택합니다.
 
-- **키오스크 브라우저 설정**: Windows Holographic for Business에서는 지원되지 않습니다.
+- **키오스크 브라우저 설정**: Windows Holographic for Business에서 지원되지 않습니다.
 
-- **대체 시작 레이아웃 사용**: 앱의 순서를 포함하여 시작 메뉴에 앱이 표시되는 방법을 설명하는 XML 파일을 입력하려면 **예**를 선택합니다. 시작 메뉴에 추가 사용자 지정이 필요한 경우 이 옵션을 사용합니다. [시작 레이아웃 사용자 지정 및 내보내기](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens)는 몇 가지 지침을 제공하며, Windows Holographic for Business 디바이스에 대한 특정 XML 파일을 포함합니다.
+- **대체 시작 레이아웃 사용**: 시작 메뉴에 앱의 순서를 포함하여 앱이 표시되는 방법을 설명하는 XML 파일을 입력하려면 **예**를 선택합니다. 시작 메뉴에 추가 사용자 지정이 필요한 경우 이 옵션을 사용합니다. [시작 레이아웃 사용자 지정 및 내보내기](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens)는 몇 가지 지침을 제공하며, Windows Holographic for Business 디바이스에 대한 특정 XML 파일을 포함합니다.
 
-- **Windows 작업 표시줄**: Windows Holographic for Business에서는 지원되지 않습니다.
+- **Windows 작업 표시줄**: Windows Holographic for Business에서 지원되지 않습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

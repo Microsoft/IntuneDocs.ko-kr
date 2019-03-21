@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d54c778923b0d217187f6e4c70e4bc8730788fbc
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690804"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55834724"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>회사 포털 앱을 사용하여 Intune에 macOS 디바이스 등록
 
@@ -57,7 +58,7 @@ Intune 회사 포털 앱으로 macOS 디바이스를 등록하여 조직의 이�
 
 4. __디바이스__ 페이지에 관리되는 디바이스 목록 또는 배너가 표시됩니다. 표시되는 내용은 관리되는 디바이스가 있는지에 따라 달라집니다. 
     * 나열되지 않은 디바이스를 추가하려면 **여기를 탭하여 사용 중인 디바이스를 알려주거나 새 디바이스를 추가하세요.** 를 읽는 배너를 선택합니다.
-    * 디바이스가 없는 경우 배너는 **모든 관리 디바이스가 필요 없습니다. 여기를 탭하여 이 장치를 추가하세요.** 를 읽습니다. 배너를 클릭하여 디바이스를 추가합니다.  
+    * 디바이스가 없는 경우 배너는 **관리되는 디바이스가 없습니다. 여기를 탭하여 이 장치를 추가하세요.** 를 읽습니다. 배너를 클릭하여 디바이스를 추가합니다.  
 
      ![클릭할 위치를 강조 표시하는 배너 옵션 주위에 빨간색 사각형이 있는 디바이스 페이지의 스크린샷](./media/CP-enroll-MACOS-1808.png)  
 5.  회사 포털에 현재 표시된 메시지와 일치하는 다음 단계를 완료합니다.  

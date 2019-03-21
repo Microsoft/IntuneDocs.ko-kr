@@ -18,16 +18,16 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cace30f5120bb5c02d3569d9668d336a00f69ff
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85ccfb526ada4d6851fb32b077d07d3538f90361
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55846845"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Intune에서 회사 포털 앱을 설치하고 Windows 디바이스를 등록하면 어떻게 되나요?
 
-회사 포털 앱을 설치하고 사용하여 Windows 또는 Windows Phone 디바이스를 등록할 때 회사 또는 학교 데이터를 안전하게 보호하기 위해 회사 지원팀이 디바이스를 관리하도록 할 수 있습니다. 이 항목에서는 Windows 10 이전 디바이스에서 발생하는 결과를 설명합니다. Windows 10 디바이스의 경우 [관련 항목](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)을 참조하세요.
+회사 포털 앱을 설치하고 사용하여 Windows 또는 Windows Phone 디바이스를 등록할 때 회사 또는 학교 데이터를 안전하게 보호하기 위해 회사 지원팀이 디바이스를 관리하도록 할 수 있습니다. 이 항목에서는 Windows 10 이전 디바이스에서 발생하는 결과를 설명합니다. Windows 10 디바이스의 경우 [관련 항목](about-cp-app-for-windows-10.md)을 참조하세요.  
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>등록 후 모든 Windows 디바이스에서 발생하는 결과
 Intune에서 Windows 또는 Windows Phone 디바이스를 등록하면 다음을 수행할 수 있습니다.

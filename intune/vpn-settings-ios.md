@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/6/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ea127fb72a2e24343185d06e26d883e1183e7c2b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d914ea9bffe9485d2e37f8ede4d168f597f9e200
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185562"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565939"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 디바이스에서 VPN 설정 구성
 
@@ -50,11 +52,11 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 
 다음 목록에 표시된 설정은 선택한 VPN 연결 형식에 의해 결정됩니다.  
 
-- **연결 이름**: 최종 사용자가 장치에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
+- **연결 이름**: 최종 사용자가 디바이스에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
 - **사용자 지정 도메인 이름**(Zscaler에만 해당): 사용자가 속하는 도메인을 사용하여 Zscaler 앱의 로그인 필드를 미리 채웁니다. 예를 들어 사용자 이름이 `Joe@contoso.net`인 경우 도메인 `contoso.net`은 앱이 열릴 때 필드에 정적으로 표시됩니다. 도메인 이름을 입력하지 않으면 Azure AD(Active Directory)에서 UPN의 도메인 부분이 사용됩니다.
-- **IP 주소 또는 FQDN**: 장치가 연결되는 VPN 서버의 IP 주소 또는 FQDN(정규화된 도메인 이름)입니다. 예를 들어 `192.168.1.1` 또는 `vpn.contoso.com`을 입력합니다.
+- **IP 주소 또는 FQDN**: 디바이스가 연결되는 VPN 서버의 IP 주소 또는 FQDN(정규화된 도메인 이름)입니다. 예를 들어 `192.168.1.1` 또는 `vpn.contoso.com`을 입력합니다.
 - **조직의 클라우드 이름**(Zscaler에만 해당): 조직이 프로비전되는 클라우드 이름을 입력합니다. Zscaler에 로그인하는 데 사용하는 URL에는 이름이 포함됩니다.  
-- **인증 방법**: 장치가 VPN 서버에 인증하는 방법을 선택합니다. 
+- **인증 방법**: 디바이스가 VPN 서버에 인증하는 방법을 선택합니다. 
   - **인증서**: **인증 인증서** 아래에서 연결을 인증하기 위해 기존 SCEP 또는 PKCS 인증서 프로필을 선택합니다. [인증서 구성](certificates-configure.md)에서는 인증서 프로필에 대한 몇 가지 지침을 제공합니다.
   - **사용자 이름 및 암호**: 최종 사용자는 VPN 서버에 로그인하기 위해 사용자 이름 및 암호를 입력해야 합니다.  
 
@@ -63,7 +65,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 
 - **제외된 URL**(Zscaler에만 해당): Zscaler VPN에 연결되면 Zscaler 클라우드 외부에서 나열된 URL에 액세스할 수 있습니다. 
 
-- **분할 터널링**: 장치에서 트래픽에 따라 사용할 연결을 결정할 수 있도록 **사용** 또는 **사용 안 함**으로 설정합니다. 예를 들어 호텔에 있는 사용자는 VPN 연결을 사용하여 작업 파일에 액세스하지만, 일반적인 웹 검색에는 호텔의 표준 네트워크를 사용합니다.
+- **분할 터널링**: 디바이스에서 트래픽에 따라 사용할 연결을 결정할 수 있도록 **사용** 또는 **사용 안 함**으로 설정합니다. 예를 들어 호텔에 있는 사용자는 VPN 연결을 사용하여 작업 파일에 액세스하지만, 일반적인 웹 검색에는 호텔의 표준 네트워크를 사용합니다.
 
 - **VPN 식별자**(사용자 지정 VPN, Zscaler 및 Citrix): 사용 중인 VPN 앱의 식별자이며, VPN 공급자에서 제공합니다.
   - **조직의 사용자 지정 VPN 특성에 대한 키/값 쌍 입력**: VPN 연결을 사용자 지정하는 **키** 및 **값**을 추가하거나 가져옵니다. 이러한 값은 일반적으로 VPN 공급자가 제공합니다.

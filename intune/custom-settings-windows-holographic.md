@@ -9,18 +9,19 @@ ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
-ms.topic: conceptual
+ms.localizationpriority: medium
+ms.topic: reference
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c6ec55db072cd02fae2b4eef659f601b63bb850
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ee2084cd7b5ba2d51311b675c3f31c41cc83fc4f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231692"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566168"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune에서 Windows Holographic for Business 디바이스에 대한 사용자 지정 설정 사용
 
@@ -40,8 +41,8 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
-    - **이름**: `hololens custom profile`과 같은 프로필의 이름을 입력합니다.
-    - **설명**: 프로필에 대한 설명을 입력합니다.
+    - **이름**: `hololens custom profile` 등의 프로필의 이름을 입력합니다.
+    - **설명**: 설정에 대한 설명을 입력합니다.
     - **플랫폼**: **Windows 10 이상**을 선택합니다.
     - **프로필 유형**: **사용자 지정**을 선택합니다.
 
@@ -49,7 +50,7 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 
     - **이름**: 설정 목록에서 쉽게 식별할 수 있도록 OMA-URI 설정에 대한 고유한 이름을 입력합니다.
     - **설명**: 설정에 대한 개요와 기타 중요한 모든 세부 정보를 제공하는 설명을 입력합니다.
-    - **OMA-URI**(대/소문자 구분): 설정으로 사용하려는 OMA-URI를 입력합니다.
+    - **OMA-URI**(대/소문자 구분): 설정으로 사용할 OMA-URI를 입력합니다.
     - **데이터 형식**: 이 OMA URI 설정에 사용할 데이터 형식을 선택합니다. 옵션은 다음과 같습니다.
 
         - 문자열

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 70b76e84e1ad44136bdc9f3ab42c4314933e907b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55840011"
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>Android 디바이스의 운영 체제 버전이 아직 지원되지 않는 경우
