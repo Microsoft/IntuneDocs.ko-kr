@@ -12,6 +12,8 @@ items:
     items:
     - name: 앱 UI의 새로운 기능
       href: whats-new-app-ui.md
+    - name: 개발 기능
+      href: in-development.md
   expanded: true
 - name: 빠른 시작
   items:
@@ -75,8 +77,6 @@ items:
     href: windows-information-protection-configure.md
   - name: MAM FAQ
     href: mam-faq.md
-  - name: 정책 및 프로필 FAQ
-    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 방법 가이드
   items:
   - name: 배포 계획
@@ -225,9 +225,7 @@ items:
       items:
       - name: 장비 등록 프로그램 또는 Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: Windows PC에 Intune 소프트웨어 클라이언트 설치
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: 중단 보고서
+    - name: 불완전한 등록 보고서
       href: enrollment-report-company-portal-abandon.md
     - name: 디바이스 등록 문제 해결
       href: troubleshoot-device-enrollment-in-intune.md
@@ -258,7 +256,7 @@ items:
       href: device-logout-user.md
     - name: 사용자 제거
       href: device-remove-user.md
-    - name: 디바이스 지우기
+    - name: macOS 디바이스 지우기
       href: device-erase.md
     - name: 원격 제어 모바일 디바이스
       href: device-profile-android-teamviewer.md
@@ -307,6 +305,7 @@ items:
     - name: 디바이스 설정 및 기능 제한
       href: device-restrictions-configure.md
     - name: 업데이트 제공
+      displayName: delivery optimization; updates
       href: delivery-optimization-windows.md
     - name: 버전 및 S 모드 업그레이드
       href: edition-upgrade-configure-windows-10.md
@@ -363,7 +362,7 @@ items:
         - name: Intune이 Google에 보내는 데이터
           href: data-intune-sends-to-google.md
         - name: Jamf Pro에서 Intune으로 공유된 정보
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: 개인 데이터 보기 및 수정
         href: privacy-data-view-correct.md
       - name: 감사, 내보내기, 삭제
@@ -376,6 +375,7 @@ items:
       - name: Exchange On-premises Connector 설치
         href: exchange-connector-install.md
       - name: 조건부 액세스 정책 만들기 및 할당
+        href: conditional-access-exchange-create.md
       - name: 장치 기반 조건부 액세스 정책
         href: create-conditional-access-intune.md
       - name: Intune 클래식 포털에서 조건부 액세스 정책 다시 할당
@@ -448,6 +448,8 @@ items:
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: 모니터 디바이스 암호화
+      href: encryption-monitor.md
     - name: 인증서
       href: certificates-configure.md
       items:
@@ -532,6 +534,8 @@ items:
         href: apps-inc-exl-assignments.md
       - name: Windows 10 앱 배포
         href: apps-windows-10-app-deploy.md
+      - name: 정부 환경에 앱 배포
+        href: apps-deploy-gcc-dod.md
     - name: 앱 모니터링
       href: apps-monitor.md
     - name: 앱 구성
@@ -616,6 +620,8 @@ items:
       href: data-google-sends-to-intune.md
   - name: 도움말 및 지원 보기
     items:
+    - name: 테넌트 상태
+      href: tenant-status.md
     - name: 문제 해결
       items:
       - name: 사용자가 문제 해결할 수 있도록 도움
@@ -624,6 +630,8 @@ items:
         href: troubleshoot-company-resource-access-problems.md
       - name: 앱 설치 문제 해결
         href: troubleshoot-app-install.md
+      - name: 모바일 애플리케이션 관리 문제 해결
+        href: troubleshoot-mam.md
       - name: Intune 활동에 대한 감사 로그
         href: monitor-audit-logs.md
       - name: Azure Monitor를 사용하여 로그 검토
@@ -636,14 +644,12 @@ items:
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Endpoint Protection 문제 해결
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: 정책 문제 해결
+      - name: 정책 및 프로필 문제 해결
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: 조건부 액세스 문제 해결
         href: troubleshoot-conditional-access.md
       - name: Exchange Connector 문제 해결
         href: troubleshoot-exchange-connector.md
-    - name: 알려진 문제
-      href: known-issues.md
     - name: 지원 받기
       href: get-support.md
 - name: 참조
@@ -660,14 +666,6 @@ items:
           href: device-restrictions-android.md
         - name: 메일
           href: email-settings-android.md
-        - name: 신뢰할 수 있는 인증서
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 인증서
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 가져온 인증서
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS 인증서
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -687,16 +685,8 @@ items:
           href: device-restrictions-android-for-work.md
         - name: 메일
           href: email-settings-android-enterprise.md
-        - name: 신뢰할 수 있는 인증서
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 인증서
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 가져온 인증서
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS 인증서
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: 사용자 지정
@@ -713,12 +703,6 @@ items:
           href: device-restrictions-ios.md
         - name: 메일
           href: email-settings-ios.md
-        - name: 신뢰할 수 있는 인증서
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 인증서
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 인증서
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -737,26 +721,20 @@ items:
           href: device-restrictions-macos.md
         - name: Endpoint Protection
           href: endpoint-protection-macos.md
-        - name: 신뢰할 수 있는 인증서
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 인증서
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
         - name: 사용자 지정
           href: custom-settings-macos.md
-    - name: 보안 기준
-      items:
-      - name: Windows 보안 기준 설정
-        href: security-baseline-settings-windows.md
     - name: Windows 10 이상
       items:
       - name: 준수 정책 설정
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: 구성 프로필 설정
         items:
+        - name: 전송 최적화 설정
+          href: delivery-optimization-settings.md
         - name: 디바이스 제한 사항
           href: device-restrictions-windows-10.md
         - name: 디바이스 제한 사항(Windows 10 Team)
@@ -771,12 +749,6 @@ items:
           href: identity-protection-windows-settings.md
         - name: 키오스크
           href: kiosk-settings-windows.md
-        - name: 신뢰할 수 있는 인증서
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 인증서
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 인증서
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -787,6 +759,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: 사용자 지정
           href: custom-settings-windows-10.md
+      - name: 보안 기준 설정
+        href: security-baseline-settings-windows.md
       - name: Windows 업데이트 설정
         href: windows-update-settings.md
     - name: Windows Holographic for Business
@@ -809,10 +783,6 @@ items:
         items:
         - name: 디바이스 제한 사항
           href: device-restrictions-windows-8-1.md
-        - name: 신뢰할 수 있는 인증서
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 인증서
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-8-1.md
         - name: Wi-Fi 가져오기
@@ -827,10 +797,6 @@ items:
           href: device-restrictions-windows-phone-8-1.md
         - name: 메일
           href: email-settings-windows-phone-8-1.md
-        - name: 신뢰할 수 있는 인증서
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 인증서
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
         - name: 사용자 지정
@@ -854,6 +820,9 @@ items:
         href: app-wrapper-prepare-android.md
       - name: Android용 Intune 앱 SDK
         href: app-sdk-android.md
+        items:
+        - name: Android용 Intune 앱 SDK 테스트 가이드
+          href: app-sdk-android-testing-guide.md
       - name: Intune 앱 SDK Xamarin 바인딩
         href: app-sdk-xamarin.md
     - name: Intune 데이터 웨어하우스 사용
@@ -912,34 +881,6 @@ items:
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: 리소스
   items:
-  - name: Microsoft Intune 문서 가이드
-    href: intune-documentation.md
-  - name: 문제 해결
-    items:
-    - name: 사용자가 문제 해결할 수 있도록 도움
-      href: help-desk-operators.md
-    - name: 회사 리소스 액세스 문제 해결
-      href: troubleshoot-company-resource-access-problems.md
-    - name: 앱 설치 문제 해결
-      href: troubleshoot-app-install.md
-    - name: 모바일 애플리케이션 관리 문제 해결
-      href: troubleshoot-mam.md
-    - name: Intune 활동에 대한 감사 로그
-      href: monitor-audit-logs.md
-    - name: 앱 보호 로그 검토
-      href: app-protection-policy-settings-log.md
-    - name: 메일 프로필 문제 해결
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: 소프트웨어 업데이트 문제 해결
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Endpoint Protection 문제 해결
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: 정책 문제 해결
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: 조건부 액세스 문제 해결
-      href: troubleshoot-conditional-access.md
-    - name: Exchange Connector 문제 해결
-      href: troubleshoot-exchange-connector.md
   - name: 아카이브
     items:
     - name: 새로운 기능 아카이브
@@ -1005,9 +946,9 @@ items:
       href: data-outside-protect.md
     - name: 관리되지 않는 디바이스에서 데이터 누수 방지
       href: data-leak-prevention.md
-ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742825"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306862"
