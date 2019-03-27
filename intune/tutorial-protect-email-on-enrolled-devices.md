@@ -3,27 +3,29 @@ title: 자습서 - Intune 관리 디바이스에서 Exchange Online 메일 보�
 titlesuffix: Microsoft Intune
 description: 관리 디바이스 및 Outlook 앱을 사용하도록 요구하는 Azure AD 조건부 액세스 및 iOS Intune 준수 정책을 통해 Exchange Online을 보호하는 방법을 알아봅니다.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/19/2018
-ms.topic: quickstart
+ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181873"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57528210"
 ---
-# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>자습서: 관리 디바이스에서 Exchange Online 메일 보호
+# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>자습서: 관리 디바이스에서 Exchange Online 이메일 보호
 디바이스 준수 정책을 조건부 액세스와 함께 사용하여 iOS 디바이스가 Intune에서 관리되고 승인된 메일 앱을 사용하는 경우에만 Exchange Online 메일에 액세스할 수 있도록 하는 방법을 알아봅니다. 
 
 이 자습서에서는 다음 작업을 수행하는 방법을 알아봅니다. 
@@ -37,7 +39,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
   - 이 자습서를 사용하려면 다음 구독이 있는 테스트 테넌트가 필요합니다.
     - Azure Active Directory Premium([평가판](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
     - Exchange([평가판](https://go.microsoft.com/fwlink/p/?LinkID=510938))를 포함하는 Office 365 Business 구독
-  - 시작하기 전에[빠른 시작: iOS의 메일 디바이스 프로필 만들기](quickstart-email-profile.md)의 단계에 따라 iOS 디바이스의 테스트 디바이스 프로필을 만듭니다.
+  - 시작하기 전에 [빠른 시작: iOS용 이메일 디바이스 프로필 만들기](quickstart-email-profile.md)의 단계에 따라 iOS 디바이스의 테스트 디바이스 프로필을 만듭니다.
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 
@@ -52,15 +54,15 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
 4.  **플랫폼**에서 **iOS**를 선택합니다. 
 5.  **설정** > **메일**을 선택합니다. 
      
-    1.  **모바일 장치에 관리되는 메일 프로필이 있어야 함** 옆에 있는 **필요**를 선택합니다.
+    1.  **모바일 디바이스에 관리되는 메일 프로필이 있어야 함** 옆에 있는 **필요**를 선택합니다.
     2. **확인**을 선택합니다.
 
     ![관리되는 메일 프로필을 요구하도록 메일 준수 정책을 설정합니다.](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
     
-6.  **장치 상태**를 선택합니다. **탈옥 장치** 옆에 있는 **차단**을 선택한 후 **확인**을 선택합니다.
+6.  **디바이스 상태**를 선택합니다. **탈옥 디바이스** 옆에 있는 **차단**을 선택한 후 **확인**을 선택합니다.
 7.  **시스템 보안**을 선택하고 **암호** 설정을 입력합니다. 이 자습서에서는 다음 권장 설정을 선택합니다.
      
-    - **모바일 장치의 잠금을 해제하는 데 암호 필요**에서 **필요**를 선택합니다.
+    - **모바일 디바이스의 잠금을 해제하는 데 암호 필요**에서 **필요**를 선택합니다.
     - **단순 암호**에서 **차단**을 선택합니다.
     - **최소 암호 길이**에 **4**를 입력합니다.
     - **필수 암호 유형**에서 **영숫자**를 선택합니다.
@@ -107,7 +109,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
 7.  **액세스 제어**에서 **권한 부여**를 선택합니다. 
      
     1. **권한 부여** 창에서 **액세스 허용**을 선택합니다.
-    2. **준수 상태로 표시된 장치 필요**를 선택합니다. 
+    2. **준수 상태로 표시된 디바이스 필요**를 선택합니다. 
     3. **승인된 클라이언트 앱 필요**를 선택합니다.
     4. **여러 컨트롤의 경우**에서 **선택된 컨트롤이 모두 필요함**을 선택합니다. 이렇게 설정하면 디바이스가 메일에 액세스를 시도할 때 선택한 요구 사항이 둘 다 적용됩니다.
     5. **선택**을 선택합니다.
@@ -131,7 +133,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
 ## <a name="clean-up-resources"></a>리소스 정리
 더 이상 필요하지 않은 테스트 정책을 제거할 수 있습니다.
 1. [Intune](https://aka.ms/intuneportal)에 글로벌 관리자 또는 Intune 서비스 관리자로 로그인합니다.
-2. **장치 준수** > **정책**을 선택합니다.
+2. **디바이스 준수** > **정책**을 선택합니다.
 3. **정책 이름** 목록에서 테스트 정책의 상황에 맞는 메뉴(**...**)를 선택한 후 **삭제**를 선택합니다. **확인**을 선택하여 확인합니다.
 4. **조건부 액세스** > **정책**을 선택합니다.
 5. **정책 이름** 목록에서 테스트 정책의 상황에 맞는 메뉴(**...**)를 선택한 후 **삭제**를 선택합니다. **예**를 선택하여 확인합니다.

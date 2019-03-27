@@ -4,6 +4,7 @@ description: 빠른 시작 - Intune에서 Windows 10 디바이스에 대한 자�
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
@@ -11,12 +12,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0d6f210d055d8395985b4fe64b5a061b2c8a0304
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810adbf06ddcd0aabb5c758f6a71c898116a9cee
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179670"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394305"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>빠른 시작: Windows 10 디바이스에 대한 자동 등록 설정
 
@@ -71,7 +73,7 @@ Intune 자동 등록을 다시 구성하려면 [Windows 디바이스에 대한 �
 
 이 빠른 시작에서는 Windows 10 디바이스에 대한 자동 등록을 설정하는 방법을 알아보았습니다. 디바이스 등록에 대한 자세한 내용은 [디바이스 등록이란?](device-enrollment.md)을 참조하세요.
 
-Intune 빠른 시작 시리즈를 계속하려면 아래의 다음 빠른 시작 단계를 클릭하세요.
+다음 Intune 빠른 시작을 진행하기 위해서는 아래 빠른 시작 링크를 클릭하세요.
 
 > [!div class="nextstepaction"]
 > [빠른 시작: Windows 10 디바이스 등록](quickstart-enroll-windows-device.md)

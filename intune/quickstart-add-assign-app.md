@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184517"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391879"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>빠른 시작: 클라이언트 앱 추가 및 할당
 
@@ -90,7 +92,7 @@ Microsoft Intune에 앱을 추가한 후 사용자와 다바이스 그룹에 해
 4. Intune을 사용하여 추가한 앱을 클릭합니다. 이 빠른 시작에서는 **Microsoft Office 365 앱 도구 모음** 앱을 추가했습니다.
 
     > [!NOTE]
-    > Intune 사용자에게 앱을 성공적으로 할당하지 않은 경우 *IT 관리자가 사용 가능한 앱을 만들지 않았습니다.* 라는 메시지가 표시됩니다.
+    > Intune 사용자에게 앱을 성공적으로 할당하지 않은 경우 다음과 같은 메시지가 표시됩니다. *IT 관리자가 사용 가능한 앱을 만들지 않았습니다.*
 
 5. **설치**를 클릭합니다.
 

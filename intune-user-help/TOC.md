@@ -115,11 +115,11 @@
 #### [MacOS VM 관리에 문제 발생](unable-to-get-macOS-device-managed.md) 
 
 ## [Windows 디바이스 사용](using-your-windows-device-with-intune.md)
-### [Windows 10 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [Windows 10용 회사 포털 정보](about-cp-app-for-windows-10.md)
 #### [다른 버전의 Windows를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-### [Windows 디바이스 등록](enroll-your-device-in-intune-windows.md)
-#### [Windows 10 디바이스 등록](enroll-your-w10-phone-or-w10-pc-windows.md)
-#### ["회사 또는 학교 액세스"를 통해 Windows 10 디바이스 등록](enroll-your-w10-device-access-work-or-school.md)
+### Windows 디바이스 등록
+#### [Windows 등록 시작하기](windows-enrollment-company-portal.md)
+#### [Windows 10 디바이스 등록](enroll-windows-10-device.md)
 #### [Windows 8.1 또는 Windows RT 8.1 디바이스 등록](enroll-your-w81-or-rt81-windows.md)
 #### [Windows Phone 8.1 디바이스 등록](enroll-your-wp81-windows.md)
 ### [디바이스 암호화](encrypt-your-device-windows.md)
@@ -150,13 +150,14 @@
 
 ## Windows용 Intune 회사 포털 앱 사용 
 ### [디바이스 액세스 확인](check-device-access-windows-cpapp.md)
-### [회사 포털 앱에서 앱 설치](install-apps-cpapp-windows.md) 
-### [회사 포털 앱에서 디바이스 원격 잠금](remote-lock-your-device-cp-app.md)   
-### [회사 포털 앱에서 디바이스 이름 바꾸기](rename-your-device-cpapp.md) 
+### [앱 설치](install-apps-cpapp-windows.md) 
+### [디바이스 원격 잠금](remote-lock-your-device-cp-app.md)   
+### [디바이스 이름 바꾸기](rename-your-device-cpapp.md) 
+### [디바이스 다시 설정](reset-device-cp-app.md)
 
 ## [Intune 회사 포털 웹 사이트 사용](using-the-intune-company-portal-website.md)
-### [디바이스 원격 잠금](remote-lock-your-device-cpwebsite.md)
-### [디바이스 이름 바꾸기](rename-your-device-cpwebsite.md)
-### [디바이스 제거](remove-your-device-cpwebsite.md)
-### [디바이스 암호 재설정](reset-your-passcode-cpwebsite.md)
-### [디바이스 재설정 및 지우기](reset-erase-your-device-cpwebsite.md)
+### [디바이스 원격 잠금](remote-lock-your-device-cpwebsite.md)  
+### [디바이스 이름 바꾸기](rename-your-device-cpwebsite.md)  
+### [디바이스 제거](remove-your-device-cpwebsite.md)  
+### [디바이스 암호 다시 설정](reset-your-passcode-cpwebsite.md)  
+### [디바이스 다시 설정](reset-erase-your-device-cpwebsite.md)  
