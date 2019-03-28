@@ -389,8 +389,6 @@ items:
         href: app-based-conditional-access-intune-create.md
       - name: ADAL 및 Intune
         href: app-modern-authentication-block.md
-      - name: 조건부 액세스 규정 준수 모니터링
-        href: conditional-access-exchange-monitor.md
       - name: 준수를 위해 Intune과 Jamf Pro 통합
         href: conditional-access-integrate-jamf.md
       - name: Jamf Pro로 관리되는 Mac에서 준수 적용
@@ -947,9 +945,9 @@ items:
       href: data-outside-protect.md
     - name: 관리되지 않는 디바이스에서 데이터 누수 방지
       href: data-leak-prevention.md
-ms.openlocfilehash: f342d2ce12fb45db49cf06263807ed4a155fba55
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: d273d9c300f49a2d78f8b9ed62031497b06a0060
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394683"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514425"
