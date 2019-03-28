@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34d1cbe969b8e186d9e067660237da9c4ca88fb8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396219"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429736"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune이 회사를 위해 할 수 있는 일은 무엇일까요?
 Microsoft Intune은 직원이 회사 데이터를 보호하는 동시에 생산성을 높일 수 있도록 하는 클라우드 기반 EMM(엔터프라이즈 이동성 관리) 서비스입니다.
@@ -46,17 +46,17 @@ Intune을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
 
 ## <a name="quickstarts"></a>빠른 시작
 
-회사를 대신하여 내려야 할 많은 결정이 있으므로 모바일 디바이스 관리를 시작하기가 어려울 수 있음을 잘 알고 있습니다. 다음 빠른 시작을 통해 Intune을 시작하고, 최소 시간 내에 몇 가지 일반적인 작업을 완료할 수 있습니다.
+모바일 디바이스 관리를 시작하는 것은 어려울 수 있습니다. 회사를 대신하여 확인해야 하는 여러 다양한 결정 사항이 있습니다. 다음 빠른 시작을 통해 Intune을 시작하고, 빠른 시간 내에 몇 가지 일반적인 작업을 완료할 수 있습니다.
 
 페이지 왼쪽에 있는 목차를 사용하여 **빠른 시작**의 의도된 순서를 따를 수 있습니다.
 
 - [Intune 평가판 사용](free-trial-sign-up.md) - 무료 구독을 만들어서 테스트 환경에서 Intune을 사용해 보세요.    
 - [사용자 만들기](quickstart-create-user.md) - 모바일 디바이스에서 회사 리소스에 액세스할 수 있도록 Intune에 사용자를 추가합니다.
 - [그룹 만들기](quickstart-create-group.md) - 사용자가 액세스할 수 있는 정책 및 앱을 더 쉽게 관리할 수 있도록 사용자를 그룹으로 구성합니다.
-- [자동 등록 설정](quickstart-setup-auto-enrollment.md) - 특정 사용자가 Windows 10 디바이스에 로그인할 때 자동으로 디바이스를 등록하도록 Microsoft Intune을 설정합니다.
-- [디바이스 등록](quickstart-enroll-windows-device.md) - Intune 사용자의 역할을 수행하고 디바이스를 Microsoft Intune에 등록합니다. 그런 다음, Intune으로 돌아가서 등록된 디바이스를 확인합니다.
+- [자동 등록 설정](quickstart-setup-auto-enrollment.md) - 특정 사용자가 Windows 10 디바이스에 로그인할 때 자동으로 디바이스를 등록하도록 Intune을 설정합니다.
+- [디바이스 등록](quickstart-enroll-windows-device.md) - Intune 사용자의 역할을 수행하고 디바이스를 Intune에 등록합니다. 그런 다음, Intune으로 돌아가 디바이스가 등록되었는지 확인합니다.
 - [디바이스 준수 정책 만들기](quickstart-set-password-length-android.md) - 디바이스 준수 정책을 만들고 정책에 그룹을 할당합니다.
-- [비규격 디바이스에 알림 보내기](quickstart-send-notification.md) - 준수 정책을 만들고 할당하여 비규격 디바이스가 있는 직원의 구성원에게 이메일 알림을 보냅니다.
+- [비규격 디바이스에 알림 보내기](quickstart-send-notification.md) - 준수 정책을 만들고 할당하여 비규격 디바이스가 있는 직원의 구성원에게 메일 알림을 보냅니다.
 - [앱 추가 및 할당](quickstart-add-assign-app.md) - 회사의 직원에게 클라이언트 앱을 추가하고 할당합니다.
 - [앱 보호 정책 만들기 및 할당](quickstart-create-assign-app-policy.md) - 최종 사용자 디바이스의 클라이언트 앱에 앱 보호 정책을 만들고 할당합니다.
 - [사용자 지정 역할 만들기 및 할당](quickstart-create-custom-role.md) - 보안 작업 부서에 대해 특정 사용 권한을 가진 사용자 지정 역할을 만들고 할당합니다. 
