@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccd9a14c29db5039ce0173d0c09fd3d2851755f3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ab0674304f1e74c8bf2ad1aeecd419575484e5f
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566253"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358173"
 ---
 # <a name="reference-for-user-entity"></a>사용자 엔터티 참조
 
@@ -40,13 +40,10 @@ ms.locfileid: "57566253"
 | UserKey |데이터 웨어하우스의 사용자에 대한 고유 식별자 - 서로게이트 키 |123 |
 | UserId |사용자에 대한 고유 식별자 - UserKey와 비슷하지만 자연 키입니다. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |사용자의 이메일 주소 |John@constoso.com |
-| UPN | 사용자의 사용자 계정 이름입니다. | John@constoso.com |
+| userPrincipalName | 사용자의 사용자 계정 이름입니다. | John@constoso.com |
 | DisplayName |사용자의 표시 이름 |John |
 | IntuneLicensed |이 사용자의 Intune 라이선스 여부를 나타냅니다. |True/False |
 | IsDeleted | 사용자의 모든 라이선스가 만료되었는지 여부와 이에 따라 사용자가 Intune에서 제거되었는지 여부를 나타냅니다. 단일 레코드의 경우 이 플래그는 변경되지 않습니다. 대신 새 사용자 상태에 대한 새 레코드가 만들어집니다. |True/False |
-| StartDateInclusiveUTC |IsDeleted = FALSE인 경우 사용자에게 라이선스가 할당되고 Intune에 현재 상태를 포함하기 시작한 날짜/시간(UTC)입니다. IsDeleted = TRUE인 경우 사용자의 라이선스가 만료되었고 사용자가 Intune에서 제거된 날짜/시간(UTC)입니다. |11/23/2016 12:00:00 AM |
-| EndDateExclusiveUTC |IsDeleted = FALSE인 경우 사용자의 라이선스가 만료되었고 사용자가 Intune에서 제거된 날짜/시간(UTC)입니다. 라이선스가 전날 만료되었습니다. IsDeleted = TRUE인 경우 사용자가 새 라이선스를 다시 얻었고 Intune에서 다시 만들어진 날짜/시간(UTC)입니다.  |11/23/2016 12:00:00 AM |
-| IsCurrent |이 레코드가 사용자의 최신 상태를 나타내는지 여부를 나타냅니다. 단일 사용자에 대해 여러 레코드가 존재할 수 있지만 이 중 하나만 현재 상태를 나타냅니다.  |True/False |
 | RowLastModifiedDateTimeUTC |데이터 웨어하우스에서 레코드를 마지막으로 수정한 날짜 및 시간(UTC)  |11/23/2016 12:00:00 AM |
 
 ## <a name="next-steps"></a>다음 단계

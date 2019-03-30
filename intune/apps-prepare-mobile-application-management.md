@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1e3e510cf1ef7e13e653f7793433045b0610ef
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565477"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394884"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>앱 보호 정책에 대해 LOB(기간 업무) 앱 준비
 
@@ -87,6 +87,7 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 |앱이 다른 앱으로 데이터를 전송하도록 허용|X|X|
 |앱이 다른 앱의 데이터를 받도록 허용|X|X|
 |다른 앱에서 잘라내기, 복사 및 붙여넣기 제한|X|X|
+|관리 되는 앱에서 복사 하거나 잘라낼 수 있는 문자 수를 지정 합니다.|X|X|
 |액세스용 단순 PIN 필요|X|X|
 |PIN을 다시 설정하기 전 시도 횟수 지정|X|X|
 |PIN 대신 지문 허용|X|X|

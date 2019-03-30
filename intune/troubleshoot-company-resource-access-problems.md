@@ -1,11 +1,11 @@
 ---
-title: 회사 리소스 액세스 문제 해결 | Microsoft 문서
-description: Microsoft Intune 오류 및 상태 코드를 사용하면 리소스 액세스 문제를 해결하는 데 도움이 됩니다.
+title: 오류 및 상태 코드를 Microsoft Intune-Azure | Microsoft Docs
+description: MDM을 사용 하 여 관리 장치를 Microsoft Intune에서 회사 리소스, iOS 장치에서 오류 및 OMA 응답 오류에 대 한 액세스를 시작 하는 경우 오류, 상태 코드, 설명 및 해결 방법의 목록을 참조 하세요.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461501"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330481"
 ---
-# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune 관련 회사 리소스 액세스 문제 해결
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>일반적인 오류 코드 및 Microsoft Intune에 대 한 설명
 
-Microsoft Intune 작업이 오류 코드를 반환하는 경우, 문제 해결을 돕기 위해 이 항목의 오류 및 상태 코드를 사용합니다.
+이 문서에서는 조직 리소스에 액세스할 때 일반적인 오류, 상태 코드, 설명 및 가능한 해결 방법을 나열 합니다. 이 정보를 사용 하 여 Microsoft Intune을 사용 하는 경우 액세스 문제를 해결 합니다.
 
-이 정보로 문제가 해결되지 않는 경우 [Microsoft Intune에 대한 지원을 받는 방법](get-support.md)을 참조하여 도움을 얻을 수 있는 다른 방법을 찾아보세요.
+도움말을 지원 해야 하는 경우 참조 [Microsoft Intune에 대 한 지원을 받는](get-support.md)합니다.
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM 관리 Windows 디바이스에 대한 상태 코드
 
@@ -39,7 +39,7 @@ Microsoft Intune 작업이 오류 코드를 반환하는 경우, 문제 해결�
 |30(APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|콘텐츠 검색 중|가능한 원인: 작업 상태 30은 사용자가 앱 다운로드에 실패했음을 나타냅니다.<br /><br />이에 대한 유력한 원인은 다음과 같습니다.<br /><br />다운로드가 진행되는 동안 디바이스의 인터넷 연결이 끊어졌습니다.<br /><br />등록 시 디바이스에 대해 발급된 인증서가 만료되었을 수 있습니다.<br /><br />완화 방법:<br /><br />디바이스의 제어판에서 회사 앱 앱을 시작하여 디바이스 인증서가 만료되지 않았는지 확인합니다. 만료된 경우 디바이스를 다시 등록해야 합니다.<br /><br />디바이스가 인터넷에 연결되었는지 확인하고 앱을 다시 요청해 봅니다.|
 |40(APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|콘텐츠 다운로드 완료||
 |50(APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|설치하는 중||
-|60(APP_CI_ENFORCEMENT_ERROR_INSTALLING)|설치 오류가 발생했습니다.|다운로드 후 앱을 설치하지 못했습니다.<br /><br />앱을 서명하는 데 사용한 코드 서명 인증서가 디바이스에 없습니다.<br /><br />애플리케이션이 의존하는 프레임워크 종속성이 장치에 설치되어 있지 않습니다.<br /><br />앱을 서명하는 데 사용한 코드 서명 인증서가 디바이스에 존재하는지 확인하며 관리자를 통해 해당 인증서가 모든 엔터프라이즈 등록 Windows RT 디바이스를 대상으로 하는지 확인합니다.<br /><br />설치 실패가 프레임워크 종속성 누락 때문인 경우, 관리자는 응용 프로그램을 다시 게시하여 응용 프로그램 패키지와 함께 프레임워크를 다시 패키징해야 합니다.<br /><br />다운로드한 애플리케이션 패키지가 유효한 패키지가 아니거나, 손상되었거나, 장치의 OS 버전과 호환되지 않을 수 있습니다.|
+|60(APP_CI_ENFORCEMENT_ERROR_INSTALLING)|설치 오류가 발생했습니다.|다운로드 후 앱을 설치하지 못했습니다.<br /><br />앱을 서명하는 데 사용한 코드 서명 인증서가 디바이스에 없습니다.<br /><br />애플리케이션이 의존하는 프레임워크 종속성이 장치에 설치되어 있지 않습니다.<br /><br />앱을 서명하는 데 사용한 코드 서명 인증서가 디바이스에 존재하는지 확인하며 관리자를 통해 해당 인증서가 모든 엔터프라이즈 등록 Windows RT 디바이스를 대상으로 하는지 확인합니다.<br /><br />설치 실패가 프레임워크 종속성 누락 때문인 경우, 관리자는 애플리케이션을 다시 게시하여 애플리케이션 패키지와 함께 프레임워크를 다시 패키징해야 합니다.<br /><br />다운로드한 애플리케이션 패키지가 유효한 패키지가 아니거나, 손상되었거나, 장치의 OS 버전과 호환되지 않을 수 있습니다.|
 |70(APP_CI_ENFORCEMENT_SUCCEEDED)|설치 성공||
 |80(APP_CI_ENFORCEMENT_IN_PROGRESS)|제거하는 중||
 |90(APP_CI_ENFORCEMENT_ERROR)|제거 오류가 발생했습니다.||
@@ -385,5 +385,6 @@ Microsoft Intune 작업이 오류 코드를 반환하는 경우, 문제 해결�
 |-2016345912|0x87D100C8|SyncML 명령이 성공적으로 완료되었습니다.|
 |-2016346011|0x87D10065|지정된 SyncML 명령이 수행 중이지만 아직 완료되지 않았습니다.|
 
-### <a name="next-steps"></a>다음 단계
-문제 해결 정보가 도움이 되지 않는 경우 [Microsoft Intune에 대한 지원을 받는 방법](get-support.md)의 설명에 따라 Microsoft 지원에 문의하세요.
+## <a name="next-steps"></a>다음 단계
+
+Microsoft 지원에 문의 [Microsoft Intune에 대 한 지원을 받는](get-support.md)합니다.

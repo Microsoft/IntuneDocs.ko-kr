@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39052860cefc562700608beda7f42c4146ccdf34
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566032"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358190"
 ---
 # <a name="reference-for-application-entities"></a>애플리케이션 엔터티에 대한 참조
 
@@ -128,17 +128,5 @@ ms.locfileid: "57566032"
 | AppInstallState | 앱 설치 상태의 열거형 값입니다. |
 | AppInstallStateName | 앱 설치 상태의 이름입니다. |
 
-## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-**MobileAppDeviceUserInstallStatus**는 지정된 디바이스 및 사용자의 모바일 앱 설치 상태를 나타냅니다.
-
-
-|      속성      |                                                         설명                                                         |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
-|      DateKey       |                                  앱 설치 상태가 기록된 날짜의 키입니다.                                  |
-|       AppKey       |                             AppRevision 인스턴스를 식별하는 데 사용되는 모바일 앱의 키입니다.                              |
-|     DeviceKey      |                              디바이스 인스턴스를 식별하는 데 사용되는 대상 디바이스의 키입니다.                               |
-|      UserKey       |                                사용자 인스턴스를 식별하는 데 사용되는 대상 사용자의 키입니다.                                 |
-| AppInstallStateKey |                     MobileAppInstallState 인스턴스를 식별하는 데 사용되는 앱 설치 상태의 키입니다.                     |
-|     오류 코드      | 앱 설치 프로그램, 모바일 플랫폼 또는 서비스에서 반환된 앱 설치와 관련된 오류 코드입니다. |
 
