@@ -1,23 +1,30 @@
 ---
-ms.openlocfilehash: dc86f2c22410236368753acd4dd3b66698037241
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+title: 파일 포함
+description: 파일 포함
+author: ErikjeMS
+ms.service: microsoft-intune
+ms.topic: include
+ms.date: 03/28/2019
+ms.author: erikje
+ms.custom: include file
+ms.openlocfilehash: 073115d33f9a4f22fe3706ef15860c2a8d8a68ee
+ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57736844"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675496"
 ---
-
 이러한 알림을 중요 한 정보가 도움이 될 수 있는 Intune의 향후 변경 사항 및 기능에 대 한 준비를 제공 합니다. 
 
 ### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>설정 도우미를 사용 하 여 인증 하는 회사 iOS 장치의 Intune 회사 포털을 사용 하 여 등록 워크플로 변경 <!-- 1927359 -->
 Apple 회사 장치 등록 방법-Apple Configurator, Apple 비즈니스 관리자, Apple School Manager 또는 Apple 등록 프로그램 (DEP (장치), 중 하나를 통해 iOS 장치 등록에 대 한 워크플로에서 예정 된 변경 내용이 없기 설치를 사용 하는 경우 인증에 대 한 도우미입니다. 이 변경 내용은 사용자 선호도 사용 하 여 등록 된 장치에만 적용 됩니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-이 변경 내용이 ~~3월~~, 4월경에 롤아웃되면 Azure Portal의 Intune에 있는 등록 프로필이 업데이트되어 디바이스 인증 방법과 디바이스가 회사 포털 앱을 수신했는지 여부를 지정할 수 있습니다. 위에 나열 된 메서드를 통해 iOS 장치를 등록 하려면 향상된 된 워크플로가 됩니다. 참고:
+이 변경 내용이 ~~3월~~, 4월경에 롤아웃되면 Azure Portal의 Intune에 있는 등록 프로필이 업데이트되어 디바이스 인증 방법과 디바이스가 회사 포털 앱을 수신했는지 여부를 지정할 수 있습니다. 위에 나열 된 메서드를 통해 iOS 장치를 등록 하려면 향상된 된 워크플로가 됩니다. 
 
 - 경우 새 장치를 등록 하 고 설정 도우미를 사용 하 여 인증에 회사 포털 앱을 자동으로 배포할 것인지 여부를 선택할 수 있습니다. "장치 확인" 화면과 등록 흐름에 "확인 장치" 화면에 더 이상 최종 사용자에 게 표시 됩니다.  
 - Apple 회사 장치 등록 방법 중 하나를 통해 설정 도우미를 통해 이미 등록 된 장치에서 조건부 액세스를 사용 하도록 설정 하려는 경우 작업을 수행 해야 합니다. 이러한 장치까지 회사 포털에 적용할 특정 xml을 사용 하 여 앱 구성 정책을 구성 해야 합니다. 이 작업을 수행 하는 지침 추가 정보 링크를 통해 블로그 게시물의 경우 이 방식으로 회사 포털을 푸시 하려는 경우 "장치 확인" 화면과 등록 흐름에 "확인" 장치"화면 최종 사용자가 더 이상 표시 됩니다. 
-- 사용 하 여 회사 포털을 배포 하지 않은 경우,이 변경 롤백됩니다 후 위에서 언급 한 앱 구성 프로필 및 최종 사용자가 다운로드에서는 로그인에서는 앱에서 회사 포털 앱을 저장 하지만에서는 오류 메시지를 가져옵니다. 조건부 액세스에 대 한 앱을 사용 하는 일을 할 수 없습니다. 
+- 회사 포털에 배포 하지 않은 경우,이 변경 롤백됩니다 후 위에서 언급 한 앱 구성 프로필 및 최종 사용자가 다운로드할 앱에서 회사 포털 앱을 저장 하에 로그인 할 수 있지만 다른 위치에서는 오류 메시지를 가져옵니다. 조건부 액세스에 대 한 앱을 사용 하는 일을 할 수 없습니다. 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
 수정 된 워크플로 사용 하려는 경우 나타내는 최종 사용자 지침을 업데이트 하는 것이 좋습니다.
@@ -32,52 +39,6 @@ Apple 회사 장치 등록 방법-Apple Configurator, Apple 비즈니스 관리�
 #### <a name="additional-information"></a>추가 정보 
 [https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
 
-
-### <a name="company-portal-changes-for-ios-122-enrollment-in-intune"></a>Intune에서 iOS 12.2 등록에 대 한 회사 포털 변경
-Apple이 MDM(모바일 디바이스 관리) 서비스에 등록하는 iOS 디바이스와 관련한 몇 가지 변경 내용을 발표했음을 MC172534에서 전했습니다. 변경 가능성이 모든 향후 iOS 릴리스를 비롯 하 여 iOS에서 2019 년 3 월 릴리스의 표시 됩니다. Apple의 변경 내용을 반영 하기 위해 회사 포털에서 일부 업데이트가 만들어진다는 것입니다. 
- 
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-IOS 12.2 이상 장치를 업그레이드 하는 최종 사용자를 사용 하는 수정 된 워크플로 Intune에 등록을 완료 하려면 추가 단계를 수행 해야 합니다는 알고 있습니다. Intune로 3 월 업데이트 후 같습니다에서는 용도-  
-
-- 관리 프로필을 다운로드 하려면 회사 포털 앱의 등록 프로세스를 시작 합니다.
-- 설정으로 이동 > 일반 > 프로필을 빨간색 배지 알림 찾습니다.
-- 올바른 프로필을 선택 하 고 설치를 통해 클릭
-- 등록을 완료 하려면 회사 포털에 반환 합니다.
-
-등록 흐름에 대 한 자세한 내용은 추가 정보를 클릭 합니다.
-
-등록을 취소 하 고는 이미 12.2로 업그레이드 한 등록 된 iOS 장치에 새 등록을 해야 하지 않는 한 이상 영향을 받을 해서는 안 됩니다. iOS 12.1 이전 버전을 실행하는 디바이스의 등록 환경은 Apple의 새 릴리스를 통해 변경되지 않습니다. 하나 또는 Apple 회사 등록 방법 (장치 등록 프로그램, Apple School Manager 또는 Apple 비즈니스 관리자)를 통해 등록 된 장치를 받지 않습니다.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
-설명서 및 최종 사용자 지침의 업그레이드를 계획해야 합니다. 이러한 변경 내용을 기술 지원팀에도 알려주려 할 수 있습니다. 새로운 내용을 알려 드리고이 새로운 기능 페이지 라이브이 변경 되 면 통해 보존 됩니다. 
-
-3 월 업데이트에서는 Intune 서비스로 후 새 iOS 버전에 해당 장치를 업데이트 하려면 최종 사용자에 게 요청을 소개 하 여 회사 포털 변경 내용을 활용 하려는 경우 회사 포털 앱 버전 3.9.0 합니다. 해제 됩니다.
-
-회사 포털 변경 내용 미리 보기 스크린샷으로 지원 블로그 게시물에 대 한 추가 정보를 클릭 합니다.
-
-추가 정보 [https://aka.ms/CP_changes_iOS12](https://aka.ms/CP_changes_iOS12)
-
-### <a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>변경 계획: Intune에서 iOS 12 등록에 대 한 워크플로 변경
-Apple에서는 MDM(모바일 디바이스 관리) 서비스에 등록된 iOS 디바이스와 관련한 몇 가지 변경 사항을 발표했습니다. 이러한 변경은 향후 모든 iOS 릴리스를 비롯하여 2019년 봄 iOS 릴리스에 표시될 가능성이 있습니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-최종 사용자가 봄에 해당 디바이스를 iOS 12의 새 버전으로 업그레이드하는 경우, 수정된 워크플로가 있으며 Intune에 등록을 완료하려면 추가 단계를 수행해야 합니다. Apple에서는 이러한 변경, 최종 사용자에 게 해야 합니다.
-
-- 관리 프로필을 다운로드 하려면 회사 포털 앱의 등록 프로세스를 시작 합니다.
-- 설정으로 이동 > 일반 > 프로필
-- 올바른 프로필을 선택 하 고 설치를 통해 클릭
-- 등록을 완료 하려면 회사 포털에 반환 합니다. 
-
-등록을 취소하고 새로 등록해야 하는 경우가 아니라면 이미 등록되어 있고 새 iOS 릴리스로 업그레이드된 디바이스는 영향을 받지 않아야 합니다.
-
-iOS 12.1 이전 버전을 실행하는 디바이스의 등록 환경은 Apple의 새 릴리스를 통해 변경되지 않습니다.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
-설명서 및 최종 사용자 지침의 업그레이드를 계획해야 합니다. 이러한 변경 내용을 기술 지원팀에도 알려주려 할 수 있습니다. 이 변경 내용이 실현되면 메시지 센터 및 새로운 기능 페이지를 통해 계속 알려드리겠습니다.
-
-#### <a name="additional-information"></a>추가 정보
-[스크린샷 및 예상된 등록 흐름의 비디오를 사용 하 여 블로그 게시물을 지 원하는](https://aka.ms/iOS_enrollment_changes)합니다.
-
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>변경 계획: iOS용 Intune 회사 포털 앱으로 사용자 환경 업데이트
 Intune이 곧 iOS 회사 포털 앱에 대한 주요 사용자 환경 업데이트를 릴리스할 예정임을 알려드립니다. 이 업데이트는 고급 필터를 갖춘 홈 페이지의 시각적 개체 디자인과 앱 및 책에 대한 빠른 액세스 기능을 제공합니다.
 
@@ -88,35 +49,13 @@ Intune이 곧 iOS 회사 포털 앱에 대한 주요 사용자 환경 업데이�
 - 전자책 검색 기능
 - 앱 및 전자책에 대 한 기록 검색
 
-Apple TestFlight 프로그램의 일부인 경우 Intune의 업데이트된 iOS 회사 포털 앱이 출시될 때 시험판 버전에 대한 알림을 받게 됩니다. Apple TestFlight 프로그램에 속해 있지 않다면 등록할 수 있습니다. 등록하면 업데이트된 회사 포털 앱을 사용해 본 이후에 최종 사용자에게 제공할 수 있습니다. 에서는 제공할 수도 있습니다 Intune 팀에 게 직접 피드백.  
+Apple TestFlight 프로그램의 일부인 경우 Intune의 업데이트된 iOS 회사 포털 앱이 출시될 때 시험판 버전에 대한 알림을 받게 됩니다. Apple TestFlight 프로그램에 속해 있지 않다면 등록할 수 있습니다. 등록하면 업데이트된 회사 포털 앱을 사용해 본 이후에 최종 사용자에게 제공할 수 있습니다. 또한 Intune 팀에 게 직접 피드백을 제공할 수 있습니다.  
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
 어떠한 작업도 수행할 필요가 없습니다. 이러한 변경 내용은 향후 iOS CP 앱 릴리스에서 발표될 것입니다. 
 
 #### <a name="additional-information"></a>추가 정보
 [https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### <a name="reminder-removal-of-existing-exchange-online-to-intune-connectors----3105122---"></a>기존 Exchange Online에서 Intune 커넥터의 미리 알림: 제거 <!-- 3105122 -->
-MC165575에서 우리는 제거 될 Intune ' Service to Service' 커넥터가 작동 하도록 Exchange Online 향후 업데이트에서 있다고 발표 했습니다. Intune 서비스에 2 월 업데이트를 사용 하 여 새 커넥터를 설정 하려면 단추를 비활성화 됩니다. 2019 년 3 월에에서 모든 기존 Exchange Online에서 Intune 커넥터를 제거할 예정입니다.
- 
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-당사 기록에 따르면 사용자 환경에서 ‘서비스 간’ 커넥터 기능을 사용할 수 있으므로 이 메시지가 표시됩니다. ‘서비스 간’ 커넥터는 Exchange Online에 대한 Exchange Active Sync 전용 디바이스의 Intune 관리를 지원하지만 온-프레미스 인프라를 지원하지 않습니다. 이 커넥터는 콘솔에 표시되는 방법 때문에 실제로 CA에 필요하지 않을 때 CA(조건부 액세스)에 필요한 것처럼 보입니다. 수를 사용한이 커넥터 사용 Exchange Online 조건부 액세스를 적용 하기 전에 알아야 합니다. 이 정보는 Microsoft 365 관리 센터에서 이미 제공 됩니다. 여기에서 찾을 수 있습니다 7 ~ 180 일 사이 사용 되는 Exchange Online 앱 등 입력에 대 한 사용 현황 보고서를 제공 합니다. 자세한 내용은 참조 [Office 365 관리 센터-전자 메일 앱 사용 보고서](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage?view=o365-worldwide)합니다.  
- 
-사용자 환경에서 이 커넥터를 사용하는 경우 커넥터가 2월에 사용하지 않도록 설정된 후에는 Intune에서 Exchange Active Sync 전용 디바이스를 모니터링하거나 초기화할 수 없습니다. 이 변경 중에 최종 사용자에게 미치는 영향은 없습니다.
- 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
-서비스 간 커넥터가 설정되어 있고 Exchange Active Sync 전용 디바이스가 있는 경우에는 다른 디바이스 관리 방법으로 전환하세요. 다음과 같은 옵션을 선택할 수 있습니다.
-
-- MDM(모바일 디바이스 관리)에 디바이스 등록 
-- Intune 앱 보호 정책을 사용하여 디바이스 관리 
-- [이](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) 문서에 설명된 대로 Exchange 컨트롤 사용 
-
-#### <a name="additional-information"></a>추가 정보  
-https://docs.microsoft.com/intune/exchange-service-connector-configure
-
-
-
 
 ### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Intune에서 "소프트웨어 업데이트의 지연 Visibility" 설정 확인 
 
@@ -140,3 +79,38 @@ https://docs.microsoft.com/intune/exchange-service-connector-configure
 
 #### <a name="additional-information"></a>추가 정보 
 [https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
+
+### <a name="plan-for-change-upcoming-fix-for-windows-10-email-profiles-in-intune---3904031--"></a>변경 계획: Intune의 Windows 10 메일 프로필에 대 한 예정 된 수정 <!--3904031-->
+Intune 전자 메일 프로필 계속 이후 버전의 Windows 10에서 작동 하도록 하는 것에 대 한도 버그 해결을 위해 Intune 서비스에는 4 월에 Windows 10에 대 한 프로필을 업데이트 하는 전자 메일을 작성 하는 방법은 업데이트 중입니다. 작업이이 수정 프로그램을 배포한 후 수행 해야 합니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+이 변경에 영향을 줍니다 있습니다 사용 하 여 Windows 10 메일 프로필을 사용 하는 경우
+- Windows 10 데스크톱의 네이티브 메일 클라이언트 또는
+- Windows 10 Mobile 있는 Outlook 전자 메일 클라이언트
+
+이 두 Intune 독립 실행형과 하이브리드 모바일 장치 관리 (MDM) 고객에 영향을 줍니다.
+
+4 월 업데이트 되 면 후 (하이브리드 MDM을 사용 하는 경우 Configuration Manager 관리자 콘솔)에서 Intune 콘솔에서 이러한 프로필을 다시 만들려고 해야 합니다.
+
+작업을 수행 하지 않는 경우 4 월 업데이트 전에 만든 프로필을 볼 수 있는 내용 다음과 같습니다.
+
+- 기존 전자 메일 프로필은 Intune 콘솔 또는 Configuration Manager 관리자 콘솔의 오류 상태는 표시 되지만 최종 사용자에 게 전자 메일에 액세스 해야 합니다. 그러나 후속 Windows 업데이트 되 면 후 이러한 프로 파일 작동 하지 않습니다. 이러한 프로필을 사용 하 여 대상 장치에서 최종 사용자가 전자 메일에 액세스할 수 없게 됩니다.
+- 4 월에 반영 되지 것입니다 후 이러한 프로필에 대 한 편집 내용을 장치를 대상으로 합니다.
+- 4 월에서 롤아웃 되는 문제를 해결 한 후에 이러한 프로필을 제거 하는 것에 대 한 선택적 초기화를 작동 하지 않습니다.
+
+작업을 수행 하 고 다시 전자 메일 프로필을 만드는 경우 최종 사용자가 처음으로 전자 메일 프로필을 배포할 때 비슷한 단계를 진행 해야 합니다. 전자 메일 새 프로필을 적용 하는 업데이트를 수락할 때까지 동기화에서 차단 됩니다.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+4 월 업데이트 롤아웃 되는 문제를 해결 한 후에 작업을 수행 해야 합니다. 드립니다 할 메시지 센터를 통해 Intune에서 사용자 프로필을 다시 만들기를 시작할 수 있도록이 변경 라이브 하는 경우.
+
+Intune에서 Windows 10 메일 프로필을 사용 하는 경우 다음 단계를 수행 해야 합니다.
+
+1. 기존 Win 10 프로필 설정 캡처
+2. 할당을 취소 및/또는 기존 프로필 삭제
+3. 캡처된 설정을 사용 하 여 새 프로필을 만들고 동일한 그룹에 새 프로필 할당
+
+최종 사용자에 게 알리고 기술 지원팀이이 변경의 알 수 있도록 해야 합니다. 오류 세부 정보 및 이러한 프로필을 다시 만들기 위한 지침에 대 한 추가 정보 지원 블로그 게시물을 참조 하십시오.
+
+#### <a name="additional-information"></a>추가 정보
+https://aka.ms/Win10EmailProfiles
+

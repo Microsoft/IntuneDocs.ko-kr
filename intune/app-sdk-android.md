@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: HT
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069323"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514500"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -832,7 +832,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     > [!NOTE]
     > 앱에서 사용을 확인 합니다 `resourceId` 및 `aadId` 매개 변수를 전달할 `acquireToken()` 올바른 토큰을 획득할 수 있도록 합니다.
 
-    ```
+    ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
         return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1633,7 +1633,7 @@ public final class MAMDataProtectionManager {
 
 `WIPE_USER_DATA`에 등록한 앱에는 SDK 기본 선택적 초기화 동작이 적용되지 않습니다. 다중 ID 인식 앱의 경우 MAM 기본 선택적 초기화는 초기화의 대상이 되는 ID가 있는 파일만 초기화하므로 더 많이 유실될 수 있습니다. 다중 ID 인식 애플리케이션에서 MAM 기본 선택 초기화를 수행하고 _**및**_ 에서 초기화 시 고유 작업을 수행하려는 경우 `WIPE_USER_AUXILIARY_DATA` 알림을 등록해야 합니다. 이 알림은 MAM 기본 선택적 초기화를 수행하기 직전에 SDK에서 즉시 전송합니다. 앱에서 `WIPE_USER_DATA` 및 `WIPE_USER_AUXILIARY_DATA`를 둘 다 등록할 수는 없습니다.
 
-작업을 완료 하 고 응용 프로그램 프로세스를 종료 하는 중 기본 선택적 초기화를 앱을 정상적으로 종료 됩니다. 앱에서 기본 seletive 초기화를 재정의 하는 경우 사용자는 초기화가 발생 한 후 메모리 내 데이터에 액세스 하지 못하도록 방지 하기 위해 수동으로 앱을 닫기 고려 하는 것이 좋습니다.
+작업을 완료 하 고 응용 프로그램 프로세스를 종료 하는 중 기본 선택적 초기화를 앱을 정상적으로 종료 됩니다. 앱에서 기본 선택적 초기화를 재정의 하는 경우 사용자는 초기화가 발생 한 후 메모리 내 데이터에 액세스 하지 못하도록 방지 하기 위해 수동으로 앱을 닫기 고려 하는 것이 좋습니다.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android 애플리케이션에 대해 MAM 대상 구성 사용(선택 사항)
@@ -1785,7 +1785,7 @@ Intune SDK는 Android API에서 제공되는 계약을 유지하지만, 정책 �
 
 ## <a name="telemetry"></a>원격 분석
 
-Android 용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 애플리케이션은 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 PII(개인 식별 정보)를 수집하지 않습니다.
+Android 용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 회사 포털 응용 프로그램은 기본적으로 시스템에서 생성 된 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 개인 데이터 수집 하지 않습니다.
 
 > [!NOTE]
 > 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 

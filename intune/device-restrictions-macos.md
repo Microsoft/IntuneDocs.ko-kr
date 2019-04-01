@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fa6a68d1b5a8d2ccf87587ecab36c7807770d48
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565352"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330422"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 macOS 디바이스 설정
 
@@ -46,7 +46,7 @@ ms.locfileid: "57565352"
   이 기능은 다음에 적용됩니다.  
   - macOS 10.13 이상
 
-- **(감독 모드인 경우에) 소프트웨어 업데이트를 연기할**:로 설정 하면 **구성 되지 않은** (기본값), Apple을 릴리스 하는 대로 장치의 소프트웨어 업데이트가 표시 됩니다. 예를 들어, 특정 날짜에 apple macOS 업데이트를 해제 하는 경우 업데이트를 자연스럽 게 표시 됩니다 릴리스 날짜 까지의 장치에서.
+- **소프트웨어 업데이트를 연기할**:로 설정 하면 **구성 되지 않은** (기본값), Apple을 릴리스 하는 대로 장치의 소프트웨어 업데이트가 표시 됩니다. 예를 들어, 특정 날짜에 apple macOS 업데이트를 해제 하는 경우 업데이트를 자연스럽 게 표시 됩니다 릴리스 날짜 까지의 장치에서. 시드 빌드 업데이트 지연 없이 허용 됩니다.
 
   **사용 하도록 설정** 0 ~ 90 일 동안에서 장치에 표시 된 소프트웨어 업데이트를 지연할 수 있습니다. 이 설정은 업데이트 기능은 설치 되지 경우 제어 하지 않습니다. 
 
