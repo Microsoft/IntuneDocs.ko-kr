@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86c822ba197851fe7e05d91ff8aa703fb9fe3811
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 44be460ee910818d52179da55151d1bceeb8b306
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842794"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565913"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 대한 사용자 지정 사용
 
@@ -43,8 +44,8 @@ Windows 10에서는 [정책 CSP(구성 서비스 공급자)](https://technet.mic
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
-    - **이름**: `windows 10 custom profile`과 같은 프로필의 이름을 입력합니다.
-    - **설명**: 프로필에 대한 설명을 입력합니다.
+    - **이름**: `windows 10 custom profile` 등의 프로필의 이름을 입력합니다.
+    - **설명**: 설정에 대한 설명을 입력합니다.
     - **플랫폼**: **Windows 10 이상**을 선택합니다.
     - **프로필 유형**: **사용자 지정**을 선택합니다.
 
@@ -52,7 +53,7 @@ Windows 10에서는 [정책 CSP(구성 서비스 공급자)](https://technet.mic
 
     - **이름**: 설정 목록에서 쉽게 식별할 수 있도록 OMA-URI 설정에 대한 고유한 이름을 입력합니다.
     - **설명**: 설정에 대한 개요와 기타 중요한 모든 세부 정보를 제공하는 설명을 입력합니다.
-    - **OMA-URI**(대/소문자 구분): 설정으로 사용하려는 OMA-URI를 입력합니다.
+    - **OMA-URI**(대/소문자 구분): 설정으로 사용할 OMA-URI를 입력합니다.
     - **데이터 형식**: 이 OMA URI 설정에 사용할 데이터 형식을 선택합니다. 옵션은 다음과 같습니다.
 
         - 문자열
@@ -82,7 +83,7 @@ Windows 10에서는 [정책 CSP(구성 서비스 공급자)](https://technet.mic
 
 일부 Windows 10 버전과 호환되지 않는 설정도 있습니다. [구성 서비스 공급자 참조](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference)는 각 CSP에 지원되는 버전을 알려 줍니다.
 
-또한 Intune은 [구성 서비스 공급자 참조](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference)에 나열된 모든 설정을 지원하지 않습니다. 원하는 설정을 Intune에서 지원하는지 확인하려면 해당 설정에 대한 아티클을 엽니다. 각 설정 페이지는 지원되는 작업이 표시됩니다. Intune으로 작업하려면 설정에서 **추가** 또는 **대체** 작업을 지원해야 합니다.
+또한 Intune은 [구성 서비스 공급자 참조](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference)에 나열된 모든 설정을 지원하지 않습니다. 원하는 설정을 Intune에서 지원하는지 확인하려면 해당 설정에 대한 아티클을 엽니다. 각 설정 페이지는 지원되는 작업이 표시됩니다. Intune으로 작업하려면 설정에서 **추가**, **대체** 및 **가져오기** 작업을 지원해야 합니다. 값을 반환한 경우는 **가져옵니다** 작업에 제공한 값과 일치 하지 않습니다는 **추가** 또는 **대체** 작업 후 Intune 규정 준수 오류를 보고 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ac6591256e1bb45c0e2ac9c1d6fe9ac213b106a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c3112683d44b7c4d4a3e9d1bccc6fb8c06450600
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234038"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069121"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune 데이터 웨어하우스 사용
 
@@ -42,7 +43,7 @@ Intune 데이터 웨어하우스를 사용하여 기업 모바일 환경에 대�
   -  OData 표준을 사용하는 데이터 모델
 
 > [!Note]
-> System Center Configuration Manager 및 Microsoft Intune과 함께 하이브리드 MDM(모바일 디바이스 관리)을 사용하는 경우 SCCM에서 데이터를 검색하고자 합니다. Intune 데이터 웨어하우스에는 Intune 데이터만 포함됩니다. 사용자 지정 보고서에 대한 SCCM Power BI 대시보드를 사용할 수 있습니다. 자세한 내용은 "[System Center Configuration Manager에 대한 Power BI 솔루션 템플릿 발표]( https://powerbi.microsoft.com/blog/sccm-solution-template)" 및 "[Dynamics 365의 Power BI 콘텐츠](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)"를 참조하세요.
+> System Center Configuration Manager 및 Microsoft Intune과 함께 공동 관리 MDM(모바일 디바이스 관리)을 사용하는 경우 Configuration Manager에서 데이터를 검색해야 합니다. Intune 데이터 웨어하우스에는 Intune 데이터만 포함됩니다. 사용자 지정 보고서는 Configuration Manager Power BI 대시보드를 사용할 수 있습니다. 자세한 내용은 "[System Center Configuration Manager에 대한 Power BI 솔루션 템플릿 발표]( https://powerbi.microsoft.com/blog/sccm-solution-template)" 및 "[Dynamics 365의 Power BI 콘텐츠](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)"를 참조하세요.
 
 > [!Important]  
 > 이제 쿼리 매개 변수  `api-version=v1.0`을(를) 설정하여 Intune 데이터 웨어하우스의 v1.0 버전을 사용할 수 있습니다. 데이터 웨어하우스에서 컬렉션 업데이트는 가산적이므로 기존 시나리오가 중단되지 않습니다.<br><br>
@@ -52,4 +53,4 @@ Intune 데이터 웨어하우스를 사용하여 기업 모바일 환경에 대�
 
 - 링크를 받고 Power BI를 사용하여 정보를 파악합니다. 자세한 내용은 [Power BI를 통해 Intune 데이터 웨어하우스에 연결](reports-proc-get-a-link-powerbi.md)을 참조하세요.
 - 링크와 함께 Power BI를 사용하여 사용자 지정 보고서를 만듭니다. 지침은 [Power BI를 사용하여 OData 피드에서 보고서 만들기](reports-proc-create-with-odata.md)를 참조하세요.
-- Intune 데이터 웨어하우스 API, 데이터 모델, 엔터티 간 관계에 대해 자세히 알아보려면<!-- , and an example of creating a custom client to retrieve data,--> [Intune 데이터 웨어하우스 API](reports-nav-intune-data-warehouse.md)를 참조하세요.
+- Intune Data Warehouse API, 데이터 모델 및 엔터티 간의 관계에 대해 자세히 알아보려면<!-- , and an example of creating a custom client to retrieve data,--> [Intune Data Warehouse API](reports-nav-intune-data-warehouse.md)를 참조하세요.

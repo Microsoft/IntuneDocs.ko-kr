@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38087afa95dc5933b55e6342ad46386cf0185f42
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c2a8c234c305744c48785763c87913c2635276ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228972"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565607"
 ---
 # <a name="windows-10-and-newer-device-settings-to-upgrade-editions-or-enable-s-mode-in-intune"></a>Intune에서 버전을 업그레이드 하거나 S 모드를 사용하도록 Windows 10(이상) 디바이스 설정
 
@@ -37,7 +38,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 �
 
 ## <a name="edition-upgrade"></a>버전 업그레이드
 
-- **업그레이드할 버전**: 업그레이드할 Windows 10 버전을 선택합니다. 이 정책의 대상 디바이스가 선택한 버전으로 업그레이드됩니다.
+- **업그레이드할 대상 버전**: 업그레이드하려는 Windows 10 버전을 선택합니다. 이 정책의 대상 디바이스가 선택한 버전으로 업그레이드됩니다.
 - **제품 키**: Microsoft에서 받은 제품 키를 입력합니다. 제품 키를 사용하여 정책이 만들어진 경우 이 키는 업데이트할 수 없으며 보안상의 이유로 숨겨져 있습니다. 제품 키를 변경하려면 전체 키를 다시 입력합니다.
 - **라이선스 파일**: **Windows 10 Holographic for Business** 또는 **Windows 10 Mobile 버전**의 경우 **찾아보기**를 선택하여 Microsoft에서 받은 라이선스 파일을 선택합니다. 이 라이선스 파일에는 디바이스를 업그레이드하려는 버전에 대한 라이선스 정보가 포함되어 있습니다.
 
@@ -45,7 +46,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 �
 
 - **구성 없음**: S 모드 디바이스는 S 모드로 유지됩니다. 최종 사용자는 S 모드로부터 디바이스를 전환할 수 있습니다.
 - **S 모드로 유지**: 최종 사용자가 S 모드에서 디바이스를 전환할 수 없도록 설정합니다.
-- **스위치**: S 모드로부터 디바이스를 전환합니다.
+- **전환**: S 모드로부터 디바이스를 전환합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

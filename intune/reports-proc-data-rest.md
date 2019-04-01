@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/10/2019
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c43b27a07aa5eafc19ce1528bbfe34c1a6dbb1d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 0e57d197cadf2ba6586aa39fdc5dbb9cddba554c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839484"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566576"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST 클라이언트를 사용하여 Intune 데이터 웨어하우스 API에서 데이터 가져오기
 
@@ -99,7 +100,7 @@ Postman을 사용하여 REST 호출을 수행하려면 다음 정보가 필요�
 3. **기타 작업**에서 **Intune 데이터 웨어하우스 설정**을 선택합니다.
 4. **타사 보고 서비스 사용** 아래에서 사용자 지정 피드 URL을 복사합니다. 다음과 유사합니다. `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-엔드포인트는 다음과 같은 형식입니다. `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
+엔드포인트는 다음 `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}` 형식입니다.
 
 예를 들어 **dates** 엔터티는 다음과 같습니다. `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
@@ -164,7 +165,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 
     ![Progam.cs 및 Visual Studio의 솔루션 탐색기](./media/reports-get_rest_data_in.png)
 
-8. Program.cs의 코드를 다음 코드로 바꿉니다.  
+8. *Program.cs*의 코드를 다음 코드로 바꿉니다.  
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

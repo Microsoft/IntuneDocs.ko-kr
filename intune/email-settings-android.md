@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/15/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53f1c95fdbdd9d779fb339e4820a3e7000573e60
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 94f907ee8805c5f0559e8751a7cd69bacf1612ee
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236929"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565506"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune에서 이메일, 인증 및 동기화를 구성하기 위한 Android 디바이스 설정
 
@@ -35,10 +36,10 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
 
 ## <a name="android-samsung-knox"></a>Android(Samsung Knox)
 
-- **메일 서버**: Exchange 서버의 호스트 이름을 입력합니다. 예를 들어 다음과 같이 입력합니다. `outlook.office365.com`
-- **계정 이름**: 메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 디바이스에서 사용자에게 표시됩니다.
+- **이메일 서버**: Exchange 서버의 호스트 이름을 입력합니다. 예를 들어 다음과 같이 입력합니다. `outlook.office365.com`
+- **계정 이름**: 이메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 디바이스에서 사용자에게 표시됩니다.
 - **AAD의 사용자 이름 특성**: 이 이름은 Intune이 Azure AD(Azure Active Directory)에서 가져오는 특성입니다. Intune은 이 프로필에서 사용되는 사용자 이름을 동적으로 생성합니다. 옵션은 다음과 같습니다.
-  - **사용자 계정 이름**: 이름(예: `user1` 또는 `user1@contoso.com`)을 가져옵니다.
+  - **사용자 계정 이름**: `user1` 또는 `user1@contoso.com`과 같은 이름을 가져옵니다.
   - **사용자 이름**: `user1`과 같은 이름만 가져옵니다.
   - **sAM 계정 이름**: `domain\user1`과 같은 도메인이 필요합니다. sAM 계정 이름은 Android 디바이스에서만 사용됩니다.
 
@@ -51,22 +52,22 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
       **사용자 지정** 특성을 사용하도록 선택할 때 다음을 입력합니다.
       - **사용할 사용자 지정 도메인 이름**: Intune이 도메인 이름(예: `contoso.com` 또는 `contoso`)에 사용하는 값을 입력합니다.
 
-- **AAD의 메일 주소 특성**: 이 이름은 Intune이 Azure AD에서 가져오는 이메일 특성입니다. Intune은 이 프로필에서 사용되는 이메일 주소를 동적으로 생성합니다. 옵션은 다음과 같습니다.
-  - **사용자 계정 이름**:  `user1@contoso.com` 또는 `user1`과 같은 전체 사용자 계정 이름을 이메일 주소로 사용합니다.
-  - **기본 SMTP 주소**: `user1@contoso.com`과 같은 기본 SMTP 주소를 사용하여 Exchange에 로그인합니다.
+- **AAD의 메일 주소 특성**:이 이름은 Intune이 Azure AD에서 가져오는 전자 메일 특성입니다. Intune은 이 프로필에서 사용되는 이메일 주소를 동적으로 생성합니다. 옵션은 다음과 같습니다.
+  - **사용자 계정 이름**: `user1@contoso.com` 또는 `user1`과 같은 전체 사용자 계정 이름을 이메일 주소로 사용합니다.
+  - **기본 SMTP 주소**:와 같은 기본 SMTP 주소를 사용 하 여 `user1@contoso.com`, Exchange에 로그인 합니다.
 
-- **인증 방법**: 전자 메일 프로필에서 사용되는 인증 방법으로 **사용자 이름 및 암호** 또는 **인증서**중 하나를 선택합니다.
+- **인증 방법**: 이메일 프로필에서 사용되는 인증 방법으로 **사용자 이름 및 암호** 또는 **인증서** 중 하나를 선택합니다.
   - **인증서**를 선택한 경우 Exchange 연결을 인증하기 위해 이전에 만든 클라이언트 SCEP 또는 PKCS 인증서 프로필을 선택합니다.
 
 ### <a name="security-settings"></a>보안 설정
 
-- **SSL**: 전자 메일을 전송하거나 수신할 때와 Exchange Server와 통신할 때 SSL(Secure Sockets Layer) 통신을 사용합니다.
-- **S/MIME**: S/MIME 암호화를 사용하여 발신 전자 메일을 전송합니다.
+- **SSL**: 이메일을 전송하거나 수신할 때와 Exchange Server와 통신할 때 SSL(Secure Sockets Layer) 통신을 사용합니다.
+- **S/MIME**: S/MIME 암호화를 사용하여 보내는 이메일을 전송합니다.
   - **인증서**를 선택한 경우 Exchange 연결을 인증하기 위해 이전에 만든 클라이언트 SCEP 또는 PKCS 인증서 프로필을 선택합니다.
 
 ### <a name="synchronization-settings"></a>동기화 설정
 
-- **동기화할 메일 양**: 동기화할 메일의 일 수 또는 **무제한**을 선택하여 사용 가능한 모든 메일을 동기화합니다.
+- **동기화할 이메일 양**: 동기화할 이메일의 일 수를 선택하거나, **무제한**을 선택하여 사용 가능한 모든 이메일을 동기화합니다.
 - **동기화 일정**: Exchange 서버의 데이터를 동기화하는 디바이스의 일정을 선택합니다. 데이터가 도착하는 즉시 동기화하는 **메시지가 도착할 때**를 선택하거나 디바이스의 사용자가 동기화를 시작해야 하는 **수동**을 선택할 수도 있습니다.
 
 ### <a name="content-sync-settings"></a>콘텐츠 동기화 설정

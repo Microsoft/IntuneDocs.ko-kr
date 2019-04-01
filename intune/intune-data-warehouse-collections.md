@@ -10,18 +10,20 @@ ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297505"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400486"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 데이터 웨어하우스 컬렉션
 
@@ -505,7 +507,10 @@ Microsoft Intune을 통해 모바일 애플리케이션 관리를 사용하여 �
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | 소유자 유형에 대한 고유 식별자                                                                                                                                               |                            |
 | ownerTypeKey  | 데이터 웨어하우스의 소유자 유형의 고유 식별자 - 서로게이트 키                                                                                                       |                            |
-| ownerTypeName | 디바이스의 소유자 유형을 나타냅니다.  회사 - 회사 소유 디바이스입니다.  개인 - 개인 소유 디바이스입니다(BYOD).   알 수 없음 - 이 디바이스에 대한 정보가 없습니다. | 회사 개인 알 수 없음 |
+| ownerTypeName | 디바이스 소유자 유형을 나타냅니다. 회사 - 엔터프라이즈 소유 디바이스입니다.  개인 - 개인 소유 디바이스입니다(BYOD).   알 수 없음 - 이 디바이스에 대한 정보가 없습니다. | 회사 개인 알 수 없음 |
+
+> [!Note]  
+> 에 대 한 합니다 `ownerTypeName` 필터에서 장치에 대 한 동적 그룹을 만들 때 azure Ad에서 값을 설정 해야 `deviceOwnership` 으로 `Company`입니다. 자세한 내용은 [장치에 대 한 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)합니다. 
 
 ## <a name="policies"></a>정책
 **정책** 엔터티는 디바이스 구성 프로필, 앱 구성 프로필 및 규정 준수 정책을 나열합니다. 정책을 MDM(Mobile Device Management)을 통해 기업 내 그룹에 할당할 수 있습니다.

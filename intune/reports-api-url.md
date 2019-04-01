@@ -6,10 +6,11 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 02/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caf4401a2274a74050ec0eb404363cfc15b23e76
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851443"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396487"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 데이터 웨어하우스 API 엔드포인트
 
@@ -57,11 +58,13 @@ URL에는 다음 요소가 포함됩니다.
 
 ## <a name="api-version-information"></a>API 버전 정보
 
-API 최신 버전은 `beta`입니다. 
+이제 쿼리 매개 변수  `api-version=v1.0`을(를) 설정하여 Intune 데이터 웨어하우스의 v1.0 버전을 사용할 수 있습니다. 데이터 웨어하우스에서 컬렉션 업데이트는 가산적이므로 기존 시나리오가 중단되지 않습니다.
+
+베타 버전을 사용하여 데이터 웨어하우스의 최신 기능을 체험해 볼 수 있습니다. 베타 버전을 사용하려면 URL에 쿼리 매개 변수  `api-version=beta`을(를) 포함해야 합니다. 베타 버전에서는 정식 지원되기 전의 기능을 먼저 사용해 볼 수 있습니다. Intune에서 새로운 기능을 추가하면서 베타 버전의 동작과 데이터 계약이 달라질 수 있습니다. 베타 버전의 사용자 지정 코드 또는 보고 도구는 지속적인 업데이트와 함께 중단될 수 있습니다.
 
 ## <a name="odata-query-options"></a>OData 쿼리 옵션
 
-최신 버전에서는 `$filter, $orderby, $select, $skip,` 및 `$top` OData 쿼리 매개 변수를 지원합니다.
+최신 버전에서는 `$filter`, `$select`, `$skip,` 및 `$top` OData 쿼리 매개 변수를 지원합니다. `$filter`만 `DateKey` 또는 `RowLastModifiedDateTimeUTC` 열은 해당 및 기타 속성에 잘못 된 요청을 트리거할 때 지원 될 수 있습니다.
 
 ## <a name="datekey-range-filters"></a>DateKey 범위 필터
 
@@ -73,15 +76,12 @@ API 최신 버전은 `beta`입니다.
 ## <a name="filter-examples"></a>필터 예제
 
 > [!NOTE]
-> 필터 예제에서는 오늘 날짜를 2018년 2월 21일로 가정합니다.
+> 필터 예제에서는 오늘 날짜를 2019년 2월 21일로 가정합니다.
 
 |                             Filter                             |           성능 최적화           |                                          설명                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    전체                                      |    `DateKey`가 20180214와 20180221 사이에 있는 데이터를 반환합니다.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    전체                                      |    `DateKey`가 20180214와 동일한 데이터를 반환합니다.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    전체                                      |    `DateKey`가 20180214와 20180220 사이에 있는 데이터를 반환합니다.                                     |
-|    `maxhistorydays=7&$filter=Id gt 1`                            |    부분, Id gt 1이 최적화되지 않음    |    `DateKey`가 20180214와 20180221 사이이고, ID가 1보다 큰 데이터를 반환합니다.             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    전체                                      |    `DateKey`가 20180214와 동일한 데이터를 반환합니다. `maxhistorydays`는 무시됩니다.                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    없음                                      |    `DateKey` 범위 지정 필터로 간주되지 않으므로 성능이 향상되지 않습니다.                              |
-|    `$filter=DateKey ne 20180214`                                 |    없음                                      |    `DateKey` 범위 지정 필터로 간주되지 않으므로 성능이 향상되지 않습니다.                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    없음                                      |    `DateKey` 범위 지정 필터로 간주되지 않으므로 성능이 향상되지 않습니다. `maxhistorydays`가 무시됩니다.    |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    전체                                       |    데이터를 반환할 `RowLastModifiedDateTimeUTC` 보다 크거나 같음 `2018-02-21T23:18:51.3277273Z`                             |

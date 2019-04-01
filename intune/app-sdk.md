@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 02/21/2018
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
@@ -17,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f4ce34abdb0c1b3d7dbc2bbd3f41f618715fb3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837404"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566491"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune 앱 SDK 개요
-iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱을 앱 보호 정책에 사용할 수 있도록 설정할 수 있습니다. Intune 앱 SDK는 앱 개발자에게서 필요한 코드 변경의 양을 최소화하려고 합니다. 앱의 동작을 변경하지 않고 대부분의 SDK 기능을 사용하도록 설정할 수 있습니다. 최종 사용자 및 IT 관리자 환경을 개선하기 위해 API를 활용하여 앱 참여를 요구하는 기능에 대한 앱 동작을 사용자 지정할 수 있습니다.
+iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱에서 Intune [앱 보호 정책](app-protection-policy.md)을 지원할 수 있습니다. 앱에 앱 보호 정책을 적용할 때 Intune에서 관리할 수 있습니다 및 Intune 관리 앱으로 인식 됩니다. SDK는 앱 개발자에게 요구되는 코드 변경의 양을 최소화하기 위해 노력합니다. 앱의 동작을 변경하지 않고 대부분의 SDK 기능을 사용하도록 설정할 수 있습니다. 최종 사용자 및 IT 관리자 환경을 개선하기 위해 SDK의 API를 활용하여 앱 참여가 필요한 기능을 지원하도록 앱 동작을 사용자 지정할 수 있습니다.
 
-앱을 앱 보호 정책에 사용할 수 있도록 설정한 후 IT 관리자는 앱 내에서 회사 데이터를 보호하기 위해 이러한 정책을 배포할 수 있습니다.
+앱이 Intune 앱 보호 정책을 지원하도록 설정한 후 IT 관리자는 앱 내에서 회사 데이터를 보호하기 위해 이러한 정책을 배포할 수 있습니다.
 
 ## <a name="app-protection-features"></a>앱 보호 기능
 
@@ -51,13 +52,13 @@ IT 관리자가 앱의 웹 링크를 [Intune Managed Browser 앱](app-configurat
 ### <a name="enforce-a-pin-policy"></a>PIN 정책 적용
 IT 관리자가 앱의 회사 데이터에 액세스하기 전에 PIN을 입력하도록 최종 사용자에게 요구할 수 있습니다. 이렇게 하면 앱을 사용하는 사용자가 회사 또는 학교 계정으로 처음 로그인한 사용자와 동일하도록 보장됩니다. 최종 사용자가 해당 PIN을 구성할 때 Intune 앱 SDK는 Azure Active Directory를 사용하여 등록된 Intune 계정과 최종 사용자의 자격 증명을 비교하여 확인합니다.
 
-### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>앱 액세스를 위해 회사 또는 학교 계정으로 로그인하도록 요구
+### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>앱 액세스를 위해 회사 또는 학교 계정으로 로그인하도록 요구
 IT 관리자가 앱에 액세스하려면 회사 또는 학교 계정으로 로그인하도록 사용자에게 요구할 수 있습니다. Intune 앱 SDK는 Azure Active Directory를 사용하여 입력된 자격 증명이 후속 로그인에 다시 사용되는 Single Sign-On 환경을 제공합니다. Azure Active Directory와 페더레이션된 ID 관리 솔루션의 인증도 지원됩니다.
 
 ### <a name="check-device-health-and-compliance"></a>디바이스 상태 및 규정 준수 확인
 IT 관리자가 최종 사용자가 앱에 액세스하기 전에 디바이스 상태 및 Intune 정책 준수를 확인할 수 있습니다. iOS에서 이 정책은 디바이스가 무단 해제되었는지 여부를 확인합니다. Android에서 이 정책은 디바이스가 루팅되었는지 여부를 확인합니다.
 
-### <a name="multi-identity-support"></a>다중 ID 지원
+### <a name="support-multi-identity"></a>다중 ID 지원
 다중 ID 지원은 단일 앱에서 정책 관리(회사) 계정과 관리되지 않는(개인) 계정을 동시에 사용할 수 있도록 지원하는 SDK의 기능입니다.
 
 예를 들어 많은 사용자가 iOS 및 Android용 Office 모바일 앱에서 회사 및 개인 메일 계정을 둘 다 구성합니다. 사용자가 회사 계정으로 데이터에 액세스할 때 IT 관리자가 앱 보호 정책이 적용될 것임을 확신할 수 있어야 합니다. 그러나 사용자가 개인 메일 계정에 액세스할 때는 해당 데이터가 IT 관리자의 제어를 벗어나야 합니다. Intune 앱 SDK는 앱 보호 정책의 대상을 **오직** 앱의 회사 ID로만 지정하여 이 작업을 수행합니다.
@@ -80,4 +81,4 @@ Citrix MDX에 대한 자세한 내용은 [MDX Toolkit 정보](https://docs.citri
 
 ## <a name="next-steps"></a>다음 단계
 
-- [앱 보호 정책](app-protection-policy.md)에 대해 알아봅니다.
+- [Microsoft Intune 앱 SDK 시작](app-sdk-get-started.md).

@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428025e5e56450fd859f6bf2c9a990cbdca4f263
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 151ceaa40f2993d3160b9de34eee92e53c35925d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835115"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565862"
 ---
 # <a name="windows-holographic-for-business-settings-to-manage-shared-devices-using-intune"></a>Intune을 사용하여 공유 디바이스를 관리하는 Windows Holographic for Business 설정
 
@@ -43,9 +44,9 @@ Intune의 이 기능에 대한 자세한 내용은 [공유 PC 또는 다중 사�
 > Microsoft HoloLens를 포함하여 Windows Holographic for Business를 실행하는 디바이스에서만 **계정 관리** 설정을 지원합니다. **공유 PC 모드**를 포함하여 Intune에 표시된 다른 설정을 구성하는 경우 이러한 디바이스에 영향을 주지 않습니다.
 
 - **계정 관리**: **사용**으로 설정하여 게스트가 만든 로컬 계정과 AD 및 Azure AD의 계정을 자동으로 삭제합니다. 사용자가 디바이스에서 로그아웃하거나 시스템 유지 관리가 실행될 때 이러한 계정이 삭제됩니다. 활성화되는 경우 다음도 설정합니다.
-  - **계정 삭제**: 계정이 삭제되는 시기를 선택합니다. **스토리지 공간 임계값 도달 시**, **스토리지 공간 임계값 및 비활성 임계값 도달 시** 또는 **로그아웃 후 즉시** 또한 다음을 입력합니다.
-    - **임계값(%) 삭제 시작**: 디스크 공간의 백분율(0-100)을 입력합니다. 총 디스크/스토리지 공간이 입력한 값 아래로 떨어지는 경우 캐시된 계정이 삭제됩니다. 지속적으로 계정을 삭제하여 디스크 공간을 확보합니다. 활성화되지 않은 가장 긴 계정은 먼저 삭제됩니다.
-    - **임계값(%) 삭제 중지**: 디스크 공간의 백분율(0-100)을 입력합니다. 총 디스크/스토리지 공간이 입력한 값을 충족하는 경우 삭제가 중지됩니다.
+  - **계정 삭제**: 계정 삭제 되는 시기를 선택: **저장소 공간 임계값에 도달한**, **에서 저장소 공간 및 비활성 임계값**, 또는 **로그 아웃 후 즉시** . 또한 다음을 입력합니다.
+    - **시작 삭제 threshold(%)**: 디스크 공간 백분율 (0-100)을 입력 합니다. 총 디스크/스토리지 공간이 입력한 값 아래로 떨어지는 경우 캐시된 계정이 삭제됩니다. 지속적으로 계정을 삭제하여 디스크 공간을 확보합니다. 활성화되지 않은 가장 긴 계정은 먼저 삭제됩니다.
+    - **Delete threshold(%) 중지**: 디스크 공간 백분율 (0-100)을 입력 합니다. 총 디스크/스토리지 공간이 입력한 값을 충족하는 경우 삭제가 중지됩니다.
 
   **사용하지 않음**으로 설정하여 게스트가 만든 로컬, AD 및 Azure AD 계정을 유지합니다.
 

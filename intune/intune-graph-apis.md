@@ -7,20 +7,22 @@ author: dougeby
 manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187452"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566559"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD를 사용하여 Microsoft Graph의 Intune API에 액세스하는 방법
 
@@ -51,9 +53,9 @@ Microsoft Graph에서 Intune API에 액세스하려면 다음 항목이 필요�
 
 자세한 내용은 다음을 참조하세요.
 
-- [OAuth 2.0 및 Azure Active Directory를 사용하여 웹 응용 프로그램에 대한 액세스 권한 부여](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)
+- [OAuth 2.0 및 Azure Active Directory를 사용하여 웹 애플리케이션에 대한 액세스 권한 부여](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)
 - [Azure AD 인증 시작](https://www.visualstudio.com/docs/integrate/get-started/auth/oauth)
-- [Azure Active Directory와 응용 프로그램 통합](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
+- [Azure Active Directory와 애플리케이션 통합](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [OAuth 2.0 이해](https://oauth.net/2/)
 
 ## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Microsoft Graph API를 사용할 앱 등록
@@ -64,19 +66,19 @@ Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니�
 
     해당하는 경우 다음 계정을 사용할 수 있습니다.
     - 테넌트 관리자 계정
-    - **사용자가 응용 프로그램을 등록할 수 있음** 설정이 활성화된 테넌트 사용자 계정
+    - **사용자가 애플리케이션을 등록할 수 있음** 설정이 활성화된 테넌트 사용자 계정
 
 2.  메뉴에서 **Azure Active Directory** &gt; **앱 등록**을 선택합니다.
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  **새 응용 프로그램 등록**을 선택하여 새 응용 프로그램을 만들거나 기존 응용 프로그램을 선택합니다.  기존 애플리케이션을 선택하는 경우 다음 단계는 건너뛰세요.
+3.  **새 애플리케이션 등록**을 선택하여 새 애플리케이션을 만들거나 기존 애플리케이션을 선택합니다.  기존 애플리케이션을 선택하는 경우 다음 단계는 건너뛰세요.
 
 4.  **만들기** 블레이드에서 다음을 지정합니다.
 
     1.  사용자가 로그인할 때 표시되는 애플리케이션의 **이름**
 
-    2.  **응용 프로그램 유형** 및 **리디렉션 URI** 값
+    2.  **애플리케이션 유형** 및 **리디렉션 URI** 값
 
         이러한 정보는 요구 사항에 따라 달라집니다. 예를 들어 ADAL(Azure AD [인증 라이브러리](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries))을 사용하는 경우에는 **애플리케이션 유형**를 `Native`로, **리디렉션 URI**를 `urn:ietf:wg:oauth:2.0:oob`로 설정합니다.
 
@@ -86,7 +88,7 @@ Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니�
 
 5.  애플리케이션 블레이드에서 다음을 수행합니다.
 
-    1.  **응용 프로그램 ID** 값을 적어 둡니다.
+    1.  **애플리케이션 ID** 값을 적어 둡니다.
 
     2.  **설정** &gt; **API 액세스** &gt; **필요한 권한**을 선택합니다.
 
@@ -96,7 +98,7 @@ Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니�
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  **API 선택** 블레이드에서 **Microsoft Graph** &gt; **선택**을 선택합니다.  **액세스 사용** 블레이드가 열리고 응용 프로그램에 사용할 수 있는 권한 범위가 나열됩니다.
+7.  **API 선택** 블레이드에서 **Microsoft Graph** &gt; **선택**을 선택합니다.  **액세스 사용** 블레이드가 열리고 애플리케이션에 사용할 수 있는 권한 범위가 나열됩니다.
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -136,23 +138,23 @@ _OAuth 범위_라고도 하는 권한 범위는 특정 Intune 엔터티 및 해�
 
 자세한 내용은 다음 항목을 참조하세요.
 - [Azure AD 인증](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
-- [응용 프로그램 권한 범위](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
+- [애플리케이션 권한 범위](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
 Microsoft Graph에 권한을 부여하는 경우 다음 범위를 지정하여 Intune 기능에 대한 액세스를 제어할 수 있습니다. 아래 표에는 Intune API 권한 범위가 요약되어 있습니다.  첫 번째 열에는 Azure Portal에 표시되는 기능의 이름이 표시되어 있고 두 번째 열에는 권한 범위 이름이 나와 있습니다.
 
 _액세스 사용_ 설정 | 범위 이름
 :--|:--
-__Microsoft Intune 장치에서 사용자에게 영향을 주는 원격 작업 수행__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
-__Microsoft Intune 장치 읽기 및 쓰기__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
-__Microsoft Intune 장치 읽기__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
+__Microsoft Intune 디바이스에서 사용자에게 영향을 주는 원격 작업 수행__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
+__Microsoft Intune 디바이스 읽기 및 쓰기__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
+__Microsoft Intune 디바이스 읽기__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Microsoft Intune RBAC 설정 읽기 및 쓰기__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Microsoft Intune RBAC 설정 읽기__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Microsoft Intune RBAC 설정 읽기__ | DeviceManagementRBAC.Read.All
 __Microsoft Intune 앱 읽기 및 쓰기__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Microsoft Intune 앱 읽기__ | [DeviceManagementApps.Read.All](#app-ro)
-__Microsoft Intune 장치 구성 및 정책 읽기 및 쓰기__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
-__Microsoft Intune 장치 구성 및 정책 읽기__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
+__Microsoft Intune 디바이스 구성 및 정책 읽기 및 쓰기__ | DeviceManagementConfiguration.ReadWrite.All
+__Microsoft Intune 디바이스 구성 및 정책 읽기__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Microsoft Intune 구성 읽기 및 쓰기__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 
 표에는 Azure Portal에 표시되는 설정이 나와 있습니다. 다음 섹션에서는 범위를 사전순으로 설명합니다.
 
@@ -183,7 +185,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
-- **액세스 사용** 설정: __Microsoft Intune 장치 구성 및 정책 읽기__
+- **액세스 사용** 설정: __Microsoft Intune 디바이스 구성 및 정책 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
     - 디바이스 구성
@@ -192,7 +194,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
-- **액세스 사용** 설정: __Microsoft Intune 장치 구성 및 정책 읽기 및 쓰기__
+- **액세스 사용** 설정: __Microsoft Intune 디바이스 구성 및 정책 읽기 및 쓰기__
 
 - __DeviceManagementConfiguration.Read.All__과 같은 작업을 허용합니다.
 
@@ -203,7 +205,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
-- **액세스 사용** 설정: __Microsoft Intune 장치에서 사용자에게 영향을 주는 원격 작업 수행__
+- **액세스 사용** 설정: __Microsoft Intune 디바이스에서 사용자에게 영향을 주는 원격 작업 수행__
 
 - 관리 디바이스에서 다음과 같은 원격 작업을 허용합니다.
     - 사용 중지
@@ -217,7 +219,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
-- **액세스 사용** 설정: __Microsoft Intune 장치 읽기__
+- **액세스 사용** 설정: __Microsoft Intune 디바이스 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
     - 관리 디바이스
@@ -228,7 +230,7 @@ __Microsoft Intune 구성 읽기__ | [DeviceManagementServiceConfig.Read.All](#s
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
-- **액세스 사용** 설정: __Microsoft Intune 장치 읽기 및 쓰기__
+- **액세스 사용** 설정: __Microsoft Intune 디바이스 읽기 및 쓰기__
 
 - __DeviceManagementManagedDevices.Read.All__과 같은 작업을 허용합니다.
 
@@ -588,7 +590,7 @@ catch {
 
 또한 다음 작업도 수행합니다.
 
-- 을 사용하여 사용자 계정에 Intune https://portal.office.com 라이선스를 할당합니다.
+- 을 사용하여 사용자 계정에 Intune https://admin.microsoft.com 라이선스를 할당합니다.
 
 - 애플리케이션 코드를 업데이트하여 자체 도메인이 아닌 클라이언트의 Azure AD 테넌트 도메인에 인증합니다.
 

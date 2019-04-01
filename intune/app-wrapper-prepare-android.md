@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b554bd4eb6aa5e49354501e69326b6eeb11098ef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236982"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566049"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 Android 앱 준비
 
@@ -30,7 +31,6 @@ ms.locfileid: "57236982"
 Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드를 변경하지 않고도 앱 기능을 제한하여 사내 Android 앱의 동작을 변경합니다.
 
 이 도구는 PowerShell에서 실행되고 Android 앱 주위에 래퍼를 생성하는 Windows 명령줄 애플리케이션입니다. 앱을 래핑한 후에는 Intune에서 [모바일 애플리케이션 관리 정책](app-protection-policies.md)을 구성하여 앱의 기능을 변경할 수 있습니다.
-
 
 도구를 실행하기 전에 [앱 래핑 도구를 실행하기 위한 보안 고려 사항](#security-considerations-for-running-the-app-wrapping-tool)을 검토하세요. 이 도구를 다운로드하려면 GitHub의 [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)(Android용 Microsoft Intune 앱 래핑 도구)로 이동하세요.
 
@@ -53,10 +53,12 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
 
 - Android는 모든 앱 패키지(.apk)를 서명해야 합니다. 기존 인증서와 전체 서명 인증서 **재사용** 지침은 [서명 인증서 재사용 및 앱 래핑](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)을 참조하세요. Java 실행 파일 keytool.exe를 사용하여 래핑된 출력 앱에 서명하는 데 필요한 **새** 자격 증명을 생성합니다. 설정된 모든 암호에는 보안이 적용되어야 하지만, 나중에 앱 래핑 도구를 실행하는 데 필요하므로 암호를 적어 두세요.
 
-> [!NOTE]
-> Intune 앱 래핑 도구는 앱 서명 시 Google의 v2 서명 방식과 향후 예정된 v3 서명 방식을 지원하지 않습니다. Intune 앱 래핑 도구를 사용하여 .apk 파일을 래핑한 경우, [Google에서 제공하는 Apksigner 도구]( https://developer.android.com/studio/command-line/apksigner)를 사용하는 것을 추천합니다. 이렇게 하면 앱이 최종 사용자 디바이스에서 Android 표준에 의해 올바르게 실행됩니다. 
+    > [!NOTE]
+    > Intune 앱 래핑 도구는 앱 서명 시 Google의 v2 서명 방식과 향후 예정된 v3 서명 방식을 지원하지 않습니다. Intune 앱 래핑 도구를 사용하여 .apk 파일을 래핑한 경우, [Google에서 제공하는 Apksigner 도구]( https://developer.android.com/studio/command-line/apksigner)를 사용하는 것을 추천합니다. 이렇게 하면 앱이 최종 사용자 디바이스에서 Android 표준에 의해 올바르게 실행됩니다. 
 
-- (선택 사항) 입력 앱 내에서 Multidex를 사용합니다. 경우에 따라 앱은 래핑 중에 추가된 Intune MAM SDK 클래스로 인해 DEX(Dalvik 실행 파일) 크기 제한에 도달할 수 있습니다. DEX 파일은 Android 앱 컴파일의 일부입니다. 이 시나리오에서 모범 사례는 앱 자체 내에서 Multidex를 사용하도록 설정하는 것입니다. 특정 조직에서는 앱을 컴파일하는 사용자(예: 앱 빌드 팀)와 함께 작업해야 할 수 있습니다. 
+- (선택 사항) 경우에 따라 앱은 래핑 중에 추가된 Intune MAM SDK 클래스로 인해 DEX(Dalvik 실행 파일) 크기 제한에 도달할 수 있습니다. DEX 파일은 Android 앱 컴파일의 일부입니다. Intune 앱 래핑 도구는 최소 API 사용 하 여 앱 수준 21 이상에 대 한 래핑 중 DEX 파일 오버플로 자동으로 처리 (의 [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). 최소 API 수준 < 21을 사용 하 여 앱에 대 한 모범 사례는 래퍼를 사용 하 여 API 수준 min을 높이기 위해 것 `-UseMinAPILevelForNativeMultiDex` 플래그입니다. 앱의 최소 API 수준을 높일 수 없습니다 고객에 게 다음 DEX 오버플로 해결 방법이 제공 됩니다. 특정 조직에서는 앱을 컴파일하는 사용자(예: 앱 빌드 팀)와 함께 작업해야 할 수 있습니다.
+* ProGuard를 사용 하 여 앱의 주 DEX 파일에서 사용 되지 않는 클래스 참조를 제거 합니다.
+* V3.1.0를 사용 하는 고객에 대 한 이상의 Android Gradle 플러그 인을 사용 하지 않도록 설정 합니다 [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)합니다.  
 
 ## <a name="install-the-app-wrapping-tool"></a>앱 래핑 도구 설치
 
@@ -93,6 +95,7 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
 |**-KeyAlias**&lt;String&gt;|서명에 사용할 키의 이름입니다.| |
 |**-KeyPassword**&lt;SecureString&gt;|서명에 사용될 개인 키의 암호를 해독하는 데 사용되는 암호입니다.| |
 |**-SigAlg**&lt;SecureString&gt;| (선택 사항) 서명에 사용할 서명 알고리즘의 이름입니다. 이 알고리즘은 개인 키와 호환해야 합니다.|예: SHA256withRSA, SHA1withRSA|
+|**-UseMinAPILevelForNativeMultiDex**| (선택 사항) 이 플래그를 사용 하 여 원본 Android 앱의 최소 API 수준 21로 증가 합니다. 이 플래그는이 앱을 설치할 수는 제한 하는 대로 확인 메시지가 나타납니다. 사용자가 매개 변수를 추가 하 여 확인 대화 상자를 건너뛸 수 "-확인: $false" PowerShell 명령에 해당 합니다. 플래그를 고객이 DEX 오버플로 오류로 인해 성공적으로 래핑할 실패 하는 최소 API < 21을 사용 하 여 앱에만 사용 해야 합니다. | |
 | **&lt;CommonParameters&gt;** | (선택 사항) 명령은 verbose, debug와 같은 일반적인 PowerShell 매개 변수를 지원합니다. |
 
 

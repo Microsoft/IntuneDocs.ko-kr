@@ -6,9 +6,10 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32c15037bad21ca90f81ed239ac24a9bac8d7499
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 206bc3276f3c175fe61852f235c722b835ad60b4
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228326"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564859"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>Intune을 사용하여 Windows 10 디바이스에서 테스트 실행 앱 구성
 
@@ -37,11 +38,11 @@ ms.locfileid: "57228326"
 
 ## <a name="take-a-test-settings"></a>테스트 설정 가져오기
 
-- **계정 유형**: 사용자가 테스트에 로그인하는 방법을 선택합니다. 옵션은 다음과 같습니다.
+- **계정 유형**: 사용자가 로그인 하는 방법을 테스트를 선택 합니다. 옵션은 다음과 같습니다.
   - Azure AD 계정
   - 도메인 계정
   - 로컬 계정
-- **계정 사용자 이름**: 테스트 실행 앱에 사용되는 계정의 사용자 이름을 입력합니다. 다음 형식으로 계정을 입력할 수 있습니다.
+- **계정 사용자 이름**: Take a Test 앱에 사용되는 계정의 사용자 이름을 입력합니다. 다음 형식으로 계정을 입력할 수 있습니다.
   - `user@contoso.com`
   - `domain\username`
   - `user@contoso.com`

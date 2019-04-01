@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
-ms.topic: article
+ms.date: 02/24/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
@@ -16,31 +17,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9c8ca0b04cbb6f7cf570134a6f4bdce7bf57ed
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
-ms.translationtype: HT
+ms.openlocfilehash: 23c254094281c7591730b2972ec0de41f5243e66
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325455"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566389"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
-이 가이드에서는 Microsoft Intune을 통해 모바일 앱을 앱 보호 정책에 사용할 수 있도록 빠르게 설정하는 방법을 안내합니다. 먼저 [Intune 앱 SDK 개요](app-sdk.md) 항목에 설명되어 있는 Intune 앱 SDK의 이점을 이해하는 것이 좋습니다.
+이 가이드에서는 모바일 앱이 Microsoft Intune을 통해 앱 보호 정책을 지원하도록 빠르게 활성화하는 방법을 안내합니다. 먼저 [Intune 앱 SDK 개요](app-sdk.md) 항목에 설명되어 있는 Intune 앱 SDK의 이점을 이해하는 것이 좋습니다.
 
-Intune 앱 SDK는 iOS 및 Android에서 유사한 시나리오를 지원하며 다양한 플랫폼에서 IT 관리자를 위한 일관된 환경을 만들기 위한 것입니다. 하지만 플랫폼의 제한으로 인해 특정 기능 지원에는 약간씩 차이가 있습니다.
+Intune 앱 SDK는 iOS 및 Android에서 유사한 시나리오를 지원하며 다양한 플랫폼에서 IT 관리자를 위한 일관된 환경을 만들기 위한 것입니다. 하지만 플랫폼의 차이와 제한으로 인해 특정 기능 지원에는 약간씩 차이가 있습니다.
 
 ## <a name="register-your-store-app-with-microsoft"></a>Microsoft에 스토어 앱 등록
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>앱이 조직 내부용이며 공개적으로 사용할 수 없는 경우:
 
-앱을 등록할 *필요가 없습니다*. 내부 기간 업무 앱의 경우 IT 관리자는 내부적으로 앱을 배포합니다. Intune에서는 SDK로 빌드된 앱을 감지하여 IT 관리자가 해당 앱에 앱 보호 정책을 적용할 수 있도록 합니다. [iOS 또는 Android 앱을 앱 보호 정책에 사용할 수 있도록 설정](#enable-your-iOS-or-Android-app-for-app-protection-policy) 섹션으로 건너뛸 수 있습니다.
+앱을 등록할 _**필요가 없습니다**_. 에 대 한 내부 [-업무용 (LOB) 앱](apps-add.md#app-types-in-microsoft-intune) 는 작성 된 또는 회사의 IT 관리자는 앱을 내부적으로 배포 합니다. Intune에서는 SDK로 빌드된 앱을 감지하여 IT 관리자가 해당 앱에 앱 보호 정책을 적용할 수 있도록 합니다. [iOS 또는 Android 앱을 앱 보호 정책에 사용할 수 있도록 설정](#enable-your-iOS-or-Android-app-for-app-protection-policy) 섹션으로 건너뛸 수 있습니다.
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>앱이 Apple App Store 또는 Google Play와 같은 공개 앱 스토어에 출시되는 경우:
 
-_**반드시**_ 먼저 Microsoft Intune에 앱을 등록하고 등록 조건에 동의해야 합니다. 그런 다음, IT 관리자는 Intune 앱 파트너로 나열될 관리되는 앱에 앱 보호 정책을 적용할 수 있습니다.
+_**반드시**_ 먼저 Microsoft Intune에 앱을 등록하고 등록 조건에 동의해야 합니다. 그런 다음, IT 관리자는 [Intune 보호 파트너 앱](apps-supported-intune-apps.md#partner-apps)으로 나열될 관리되는 앱에 앱 보호 정책을 적용할 수 있습니다.
 
 Microsoft Intune 팀에서 등록을 완료하고 확인할 때까지 Intune 관리자는 앱의 딥 링크에 앱 보호 정책을 적용할 수 없습니다. Microsoft는 앱을 [Microsoft Intune 파트너 페이지](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)에도 추가할 예정입니다. 그 페이지에는 Intune 앱 보호 정책을 지원하는 앱임을 나타내는 앱 아이콘이 표시됩니다.
 
+### <a name="the-registration-process"></a>등록 프로세스
 등록 프로세스를 시작하고 아직 Microsoft 담당자와 작업하지 않은 경우 [Microsoft Intune 앱 파트너 설문지](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR80SNPjnVA1KsGiZ89UxSdVUMEpZNUFEUzdENENOVEdRMjM5UEpWWjJFVi4u)를 작성합니다.
 
 Microsoft에서는 사용자의 설문지 응답에 명시된 메일 주소를 사용하여 연락한 후 등록 프로세스를 진행합니다. 또한 연락해야 할 사항이 있는 경우 등록 메일 주소를 사용하여 연락합니다.
@@ -94,7 +96,7 @@ Microsoft 리포지토리에서 분기하고 끌어오는 데 사용할 수 있�
  
  * 앱은 [Azure Active Directory 인증 라이브러리](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)를 통해 빌드되고 AAD broker 인증을 사용하도록 설정되어 있어야 합니다.
  
- * 앱의 [AAD 클라이언트 ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application)는 iOS 및 Android 플랫폼에서 고유해야 합니다.
+ * 앱의 [AAD 클라이언트 ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application)는 iOS 및 Android 플랫폼에서 고유해야 합니다.
  
 ## <a name="configure-telemetry-for-your-app"></a>앱에 대한 원격 분석 구성
 
@@ -104,7 +106,7 @@ Microsoft Intune은 앱의 사용 통계에 대한 데이터를 수집합니다.
 
     * 앱에서 Microsoft Intune으로 SDK 원격 분석 데이터를 보내지 않으려면 IntuneMAMSettings 사전에서 `MAMTelemetryDisabled` 속성을 "YES"로 설정하여 원격 분석 전송을 사용하지 않도록 설정해야 합니다.
 
-* **Android용 Intune 앱 SDK**: Android 용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 애플리케이션은 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 PII(개인 식별 정보)를 수집하지 않습니다. 
+* **Android용 Intune 앱 SDK**: Android용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 애플리케이션은 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 PII(개인 식별 정보)를 수집하지 않습니다. 
 
     * 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 
 
@@ -158,11 +160,11 @@ iOS 또는 Android 앱을 Intune 앱 SDK와 통합하는 데 필요한 단계를
 
     * Intune 앱 보호 정책에 대해 iOS 또는 Android 스토어 앱을 사용하도록 설정하는 ISV인 경우 등록 단계에 설명된 대로 Microsoft Intune을 사용하여 등록을 완료하면 프로모션 코드를 받게 됩니다. 이 프로모션 코드를 사용하여 1년 연장하여 사용할 수 있는 Microsoft Intune 평가판을 신청할 수 있습니다.
 
-    * 스토어에 게시하지 않을 LOB(기간 업무) 앱을 개발 중인 경우에는 조직을 통해 Microsoft Intune에 대한 액세스 권한을 가져야 합니다. [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)에서 한 달 무료 평가판도 신청할 수 있습니다.
+    * 스토어에 게시하지 않을 LOB(기간 업무) 앱을 개발 중인 경우에는 조직을 통해 Microsoft Intune에 대한 액세스 권한을 가져야 합니다. [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)에서 한 달 무료 평가판도 신청할 수 있습니다.
     
-    * 최종 사용자 계정을 사용하여 모바일 디바이스에서 앱을 테스트하는 경우 관리자 계정으로 로그인한 후 Office 관리자 포털 웹 사이트에서 해당 계정에 Intune 라이선스를 부여했는지 확인합니다. [Microsoft Intune 라이선스 할당](https://docs.microsoft.com/en-ca/intune/licenses-assign)을 참조하세요.
+    * 최종 사용자 계정을 사용하여 모바일 디바이스에서 앱을 테스트하는 경우, 관리자 계정으로 로그인한 후 Microsoft 365 관리 센터 웹 사이트에서 해당 계정에 Intune 라이선스를 부여했는지 확인합니다. [Microsoft Intune 라이선스 할당](https://docs.microsoft.com/en-ca/intune/licenses-assign)을 참조하세요.
 
-* **Intune 앱 보호 정책**: 모든 Intune 앱 보호 정책에 대해 앱을 테스트하려면 각 정책 설정에 예상되는 동작이 무엇인지 알고 있어야 합니다. [iOS 앱 보호 정책](app-protection-policy-settings-ios.md) 및 [Android 앱 보호 정책](app-protection-policy-settings-android.md)에 대한 설명을 참조하세요.
+* **Intune 앱 보호 정책**: 모든 Intune 앱 보호 정책에 대해 앱을 테스트하려면 각 정책 설정에 대해 예상되는 동작이 무엇인지 알고 있어야 합니다. [iOS 앱 보호 정책](app-protection-policy-settings-ios.md) 및 [Android 앱 보호 정책](app-protection-policy-settings-android.md)에 대한 설명을 참조하세요.
 
 * **문제 해결**: 앱의 설치 사용자 환경을 수동으로 테스트하는 동안 문제가 발생하면 [앱 설치 문제 해결](troubleshoot-app-install.md)을 참조하세요. 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,15 +18,15 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55837580"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 디바이스 등록 문제 해결
-[Intune에서 Windows 10 Mobile 또는 Windows 10 데스크톱 디바이스 등록](enroll-your-w10-phone-or-w10-pc-windows.md)의 단계를 수행했지만 여전히 회사 또는 학교 전자 메일/파일에 액세스할 수 없다면 다음 문제 해결 단계를 시도하세요.
+장치를 등록 한 해도 여전히 회사 또는 학교 메일 및 파일에 액세스할 수 없는 경우 이러한 문제 해결 단계를 시도 합니다.  
 
 1.  다음의 화면 두 개를 보고 내 디바이스에 표시되는 모습과 비슷한 것을 하나 찾습니다. 내 디바이스에 표시되는 화면의 단계를 따릅니다.
 
@@ -48,13 +48,13 @@ ms.locfileid: "55837580"
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - 위에 표시된 연결 정보가 보이지 않거나, 보이기는 하지만 일부 옵션이 누락된 경우 **연결**을 탭하여 회사 또는 학교 자격 증명으로 로그인합니다. 이제 연결되었을 것입니다.
+   - 위에 표시 된 연결 정보를 표시 하거나, 볼 수 있지만 일부 옵션이 누락, 탭 **Connect**합니다. 그런 다음, 회사 또는 학교 자격 증명으로 로그인하여 연결합니다.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>“내 계정”이 표시되는 경우 따라야 하는 문제 해결 절차
 
 위의 단계를 수행해도 회사 또는 학교 전자 메일, 파일 및 기타 데이터에 액세스할 수 없는 경우 **계정**으로 돌아가서 **회사 액세스**를 탭합니다.
 
-- 회사 또는 학교 계정이 표시되면 연결된 것입니다.
+- 회사를 참조 하세요. 회사 또는 학교 계정이 나열 되어, 경우 연결 하 고 있습니다.  
 
 - 회사 또는 학교 계정이 표시되지 않으면 **연결**을 탭하고 회사 또는 학교 자격 증명을 사용하여 로그인합니다.
 

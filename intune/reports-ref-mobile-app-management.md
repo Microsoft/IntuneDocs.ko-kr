@@ -6,10 +6,11 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21194b218cc7df230bf1ef1969b8d4483940d75
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7ea3e2c87055e4f111c8f12c47c468dff2c4e587
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238764"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565692"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>모바일 앱 관리(MAM) 엔터티에 대한 참조
 
@@ -83,12 +84,12 @@ ms.locfileid: "57238764"
 | 속성 | 설명 | 예제 |
 |---------|------------|--------|
 | DateKey |데이터 웨어하우스에서 MAM 앱 체크 인을 기록한 날짜 키 | 20160703 |
-| ApplicationInstanceKey |해당 MAM 앱 체크 인에 연결된 앱 인스턴스의 키 |5/2/1900 12:00:00 AM |
-| UserKey |해당 MAM 앱 체크 인에 연결된 사용자의 키 |1/12/1900 12:00:00 AM |
-| ApplicationKey |체크 인한 MAM 앱의 키 |1/10/1900 12:00:00 AM |
-| DeviceHealthKey |해당 MAM 앱 체크 인에 연결된 DeviceHealth의 키 |1/2/1900 12:00:00 AM |
-| PlatformKey |해당 MAM 앱 체크 인에 연결된 디바이스의 플랫폼을 나타냅니다. |1/1/1900 12:00:00 AM |
-| EffectiveAppliedPolicyKey |체크인된 MAM 앱과 연결된 발효된 적용 정책을 나타냅니다. 특정 앱 및 사용자와 관련된 모든 정책을 병합하여 얻은 발효된 적용 정책 결과입니다. |5/2/1900 12:00:00 AM |
+| ApplicationInstanceKey |해당 MAM 앱 체크 인에 연결된 앱 인스턴스의 키 | 123 |
+| UserKey |해당 MAM 앱 체크 인에 연결된 사용자의 키 | 4323 |
+| ApplicationKey |체크 인한 MAM 앱의 키 |234 |
+| DeviceHealthKey |해당 MAM 앱 체크 인에 연결된 DeviceHealth의 키 | 321 |
+| PlatformKey |해당 MAM 앱 체크 인에 연결된 디바이스의 플랫폼을 나타냅니다. |123 |
+| EffectiveAppliedPolicyKey |체크인된 MAM 앱과 연결된 발효된 적용 정책을 나타냅니다. 특정 앱 및 사용자와 관련된 모든 정책을 병합하여 얻은 발효된 적용 정책 결과입니다. | 322 |
 | LastCheckInDate |이 MAM 앱이 마지막으로 체크인한 날짜와 시간입니다. 값은 null일 수 있습니다. |11/23/2016 12:00:00 AM |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -97,8 +98,8 @@ ms.locfileid: "57238764"
 
 | 속성 | 설명 | 예제 |
 |---------|------------|--------|
-| DeviceHealthKey |데이터 웨어하우스의 디바이스 및 관련 상태에 대한 고유 식별자 - 서로게이트 키 |1/1/1900 12:00:00 AM |
-| DeviceHealth |디바이스 및 관련 상태에 대한 고유 식별자 - DeviceHealthKey와 비슷하지만 자연 키입니다 |1/1/1900 12:00:00 AM |
+| DeviceHealthKey |데이터 웨어하우스의 디바이스 및 관련 상태에 대한 고유 식별자 - 서로게이트 키 |123 |
+| DeviceHealth |디바이스 및 관련 상태에 대한 고유 식별자 - DeviceHealthKey와 비슷하지만 자연 키입니다 |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |디바이스 상태를 나타냅니다. <br>사용할 수 없음 - 이 디바이스에 대한 정보가 없습니다. <br>정상 - 디바이스가 탈옥되지 않았습니다. <br>비정상 - 디바이스가 탈옥되었습니다. |사용할 수 없음 정상 비정상 |
 | RowLastModifiedDateTimeUtc |데이터 웨어하우스에서 해당 특정 MAM 디바이스 상태를 마지막으로 수정한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
 
