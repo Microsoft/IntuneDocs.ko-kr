@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460498"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394796"
 ---
 # <a name="review-client-app-protection-logs"></a>클라이언트 앱 보호 로그 검토
 
@@ -43,6 +43,7 @@ ms.locfileid: "57460498"
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 오프라인 유예 기간<br>참고: 디바이스가 오프라인 상태인 경우 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다.             |
 | AccessRecheckOnlineTimeout  | _x_분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 시간 제한.<br>참고: 디바이스가 온라인 상태인 경우 앱이 시작된 후 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다. |
+| AllowedOutboundClipboardSharingExceptionLength               | x자                                                                                                                                                                                                                                                                                           | [액세스] 관리 되는 앱에서 복사 하거나 잘라낼 수 있는 문자 수를 지정 합니다.  이 설정은 재정의 `AllowedOutboundClipboardSharingLevel` 제한 합니다. 기본값은 '0' 이면 예외가 허용 됩니다. 
 | AppPinDisabled              | 0 = 아니요<br>1 = 예                                                                                                                                                                                                                                                                                           | [액세스] 디바이스 PIN을 관리하는 경우 앱 PIN 사용 안 함.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = 앱이 없음<br>1 = 관리되는 앱<br>2 = 모든 앱                                                                                                                                                                                                                                                              | [데이터 재배치] 이 앱이 다른 앱의 데이터를 수신하도록 허용합니다.                                                                                                                        |
 | AppSharingToLevel           | 0 = 앱이 없음<br>1 = 관리되는 앱<br>2 = 모든 앱                                                                                                                                                                                                                                                              | [데이터 재배치] 이 앱이 다른 앱으로 데이터를 전송하도록 허용합니다.                                                                                                                         |

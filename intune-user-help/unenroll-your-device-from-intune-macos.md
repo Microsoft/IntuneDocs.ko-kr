@@ -1,11 +1,11 @@
 ---
-title: Intune에서 macOS 디바이스 등록 취소 | Microsoft Docs
-description: Intune에서 macOS 디바이스 등록을 취소하는 방법을 설명합니다.
+title: Intune 회사 포털을 사용하여 Intune에 macOS 디바이스 등록 취소 | Microsoft Docs
+description: 회사 포털에서 macOS 디바이스 등록을 취소하는 방법을 설명합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55839992"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330401"
 ---
-# <a name="unenroll-your-macos-device-from-intune"></a>Intune에서 macOS 디바이스 등록 취소
+# <a name="unenroll-your-macos-device-from-company-portal"></a>회사 포털에서 macOS 장치 등록 취소
 
 Intune에서 macOS 디바이스 등록을 취소하면 디바이스에서 회사 리소스에 더 이상 액세스할 수 없습니다.
 
 관리에서 macOS 디바이스 등록을 취소하려면 다음 단계를 따르세요.
 
-1.  회사 포털 앱의 **내 디바이스**아래에서 등록을 취소할 디바이스를 선택합니다.
+1.  macOS용 회사 포털 앱에 로그인합니다.
+2.  **내 디바이스**에서 등록을 취소할 디바이스를 선택합니다.
 
-2.  **제거** > **제거**를 클릭합니다.
+3.  줄임표 메뉴 아이콘을 선택 > **제거**합니다.
+4.  확인 메시지가 표시됩니다. 선택 **제거** 장치 등록을 취소 합니다. 
 
 Intune에서 디바이스를 등록 취소하면 다음과 같은 일이 발생합니다.
 

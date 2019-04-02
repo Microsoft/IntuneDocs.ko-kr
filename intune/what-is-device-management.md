@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise는 Microsoft Intune을 포함하고 있습
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231250"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646491"
 ---
 # <a name="what-is-device-management"></a>디바이스 관리란? 
 
-모든 관리자의 주요 작업은 조직의 리소스와 데이터를 안전하게 보호하는 것입니다. 이 작업이 디바이스 관리입니다. 사용자는 여러 디바이스를 사용하여 개인 파일을 열고 공유하고, 웹 사이트를 방문하고, 앱과 게임을 설치합니다. 이러한 사용자는 직원인 동시에 학생이며, 자신의 디바이스를 사용하여 이메일, OneNote 등의 회사 및 학교 리소스에 액세스할 수 있기를 원합니다. *디바이스 관리*는 조직에서 리소스 및 데이터를 보호할 수 있게 해줍니다. 
+모든 관리자의 주요 작업은 조직의 리소스와 데이터를 안전하게 보호하는 것입니다. 이 작업이 *디바이스 관리*입니다. 사용자는 여러 디바이스를 사용하여 개인 파일을 열고 공유하고, 웹 사이트를 방문하고, 앱과 게임을 설치합니다. 이러한 사용자는 직원인 동시에 학생이며, 자신의 디바이스를 사용하여 이메일, OneNote 등의 회사 및 학교 리소스에 액세스할 수 있기를 원합니다. 디바이스 관리는 조직에서 리소스 및 데이터를 보호할 수 있게 해줍니다. 
 
 디바이스 관리 공급자를 사용하는 조직은 승인된 개인과 디바이스만이 조직 소유의 정보에 액세스할 수 있도록 관리할 수 있습니다. 마찬가지로, 디바이스 사용자는 자신의 디바이스가 조직의 보안 요구 사항을 충족한다는 사실을 알고 있기 때문에 안심하고 휴대폰으로 회사 데이터에 액세스할 수 있습니다. 조직의 입장에서 **리소스를 보호하려면 어떻게 해야 하나요?** 라는 질문을 할 수 있습니다.
 
