@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566712"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490729"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 iOS 디바이스 설정
 
@@ -43,7 +43,7 @@ ms.locfileid: "57566712"
     이 기능은 다음에 적용됩니다.  
     - iOS 9.3.2 이상
 
-- **화면 캡처**: **차단**을 선택하면 디바이스에서 스크린샷이나 화면 캡처가 제한됩니다. **구성되지 않음**(기본값)을 통해 사용자는 화면 콘텐츠를 이미지로 캡처할 수 있습니다.
+- **화면 캡처**: **차단**을 선택하면 디바이스에서 스크린샷이나 화면 캡처가 제한됩니다. IOS 9.0 이상에서이 또한 화면 녹화를 차단 합니다. **구성되지 않음**(기본값)을 통해 사용자는 화면 콘텐츠를 이미지나 비디오로 캡처할 수 있습니다.
   - **교실 앱에서 원격 화면 관찰(감독 모드인 경우에만)**: **차단**을 선택하면 교실 앱에서 디바이스의 화면을 원격으로 볼 수 없습니다. **구성되지 않음**(기본값)을 통해 Apple 교실 앱에서 화면을 볼 수 있습니다.
 
     이 기능은 다음에 적용됩니다.  
@@ -255,7 +255,7 @@ ms.locfileid: "57566712"
   이 기능은 다음에 적용됩니다.  
   - iOS 11.0 이상
 
-- **개인 핫스팟**: **차단**을 선택하면 디바이스를 개인 핫스팟으로 사용할 수 없습니다. 이 설정은 일부 통신사와 호환되지 않을 수 있습니다. **구성 되지 않은** (기본값)이이 기능을 허용 합니다.
+- **개인 핫스팟**: **블록** 모든 장치 동기화를 사용 하 여 사용자 장치의 개인 핫스팟을 해제 합니다. 이 설정은 일부 통신사와 호환되지 않을 수 있습니다. **구성 되지 않은** (기본값) 사용자가 설정한 기본적으로 개인 핫스폿 구성을 유지 합니다.
 - **구성 프로필만 사용하여 Wi-Fi 네트워크에 연결(감독 모드인 경우에만)**: **필요**를 선택하면 디바이스에서 Intune 구성 프로필을 통해 설정되는 Wi-Fi 네트워크만 사용해야 합니다. **구성되지 않음**(기본값)을 통해 디바이스에서 다른 Wi-Fi 네트워크를 사용할 수 있습니다.
 - **셀룰러 사용 규칙(관리 앱에만 해당)**: 관리형 앱이 셀룰러 네트워크에서 사용할 수 있는 데이터 형식을 정의합니다. 옵션은 다음과 같습니다.
   - **셀룰러 데이터의 사용 차단**: **모든 관리형 앱** 또는 **특정 앱 선택**에 대한 셀룰러 데이터 사용을 차단합니다.

@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756805"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658552"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>배포에 대 한 RBAC 및 범위 태그를 사용 하 여 IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>배포에 대 한 역할 기반 access control (RBAC) 및 범위 태그를 사용 하 여 IT
 
-올바른 관리자 권한 액세스 및 오른쪽 Intune 개체에 대 한 가시성 있는지 확인 하는 역할 기반 access control (RBAC) 및 범위 태그를 사용할 수 있습니다. 어떤 액세스를 결정 하는 역할 관리자가 개체를 해야 합니다. 범위 태그는 관리자가 볼 수 있는 개체를 결정 합니다.
+올바른 관리자 권한 액세스 및 오른쪽 Intune 개체에 대 한 가시성 있는지 확인 하려면 역할 기반 액세스 제어 및 범위 태그를 사용할 수 있습니다. 어떤 액세스를 결정 하는 역할 관리자가 개체를 해야 합니다. 범위 태그는 관리자가 볼 수 있는 개체를 결정 합니다.
 
 예를 들어 시애틀 지사 관리 정책 및 프로필 관리자 역할에 할당 되어 있는지을 가정해 보겠습니다. 이 관리자를 확인 하 여 프로필 및 시애틀 장치에만 적용 되는 정책을 관리 해야 합니다. 이렇게 하려면 어떻게 해야 합니까?
 
@@ -83,6 +83,21 @@ ms.locfileid: "57756805"
 3. 아래 **태그 선택**, 프로필에 추가할 태그를 선택 합니다.
 4. 선택할 **선택** > **확인** > **저장**합니다.
 
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>범위 태그는 앱 구성 정책을 할당할
+사용 하 여 장치에 대 한 **장치 등록 유형** 로 설정 **관리 되는 장치**:
+1. 선택할 **클라이언트 앱** > **앱 구성 정책을** > 앱 구성 정책을 선택 합니다.
+2. 선택할 **속성** > **범위 (태그)** > 정책에 할당 하려는 태그를 선택 합니다.
+
+사용 하 여 장치에 대 한 **장치 등록 유형** 로 설정 **관리 되는 앱**:
+1. 선택할 **클라이언트 앱** > **앱 구성 정책을** > 앱 구성 정책을 선택 합니다.
+2. 선택할 **범위 (태그)** > 정책에 할당 하려는 태그를 선택 합니다.
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>범위 태그는 iOS 앱 프로비저닝 프로필을 할당 하려면
+1. Intune **클라이언트 앱** > **iOS 앱 프로비저닝 프로필** > 프로필을 선택 합니다.
+2. 선택할 **속성** > **범위 (태그)** > 프로필에 할당 하려는 태그를 선택 합니다.
+3. 선택할 **선택** > **확인** > **저장**합니다.
+
 ## <a name="scope-tag-details"></a>범위 태그 세부 정보
 범위 태그를 사용할 때는 이러한 세부 정보를 기억해 야 합니다.
 
@@ -96,20 +111,13 @@ ms.locfileid: "57756805"
     - 앱 구성 정책을 – 관리 되는 장치
     - Powershell 스크립트
     - DEP 토큰
+    - iOS 앱 프로비전 프로필
 - 관리자가 Intune에서 개체를 만들면, 새 개체에 해당 관리자에 할당 된 모든 범위 태그를 자동으로 할당 됩니다.
 - Intune RBAC는 Azure Active Directory 역할에 적용 되지 않습니다. 따라서 Intune 서비스 관리자 및 전역 관리자 역할이 포함 된 어떤 범위 태그에 관계 없이 Intune에 대 한 전체 관리자 액세스 경우
 - 범위 태그를 사용 하 여 역할 할당에는 관리자에는 없는 범위 태그를 사용 하 여 Intune 개체도 볼 수 있습니다.
 - 역할 할당에 있는 범위 태그를 할당할 수 있습니다.
 - 대상 그룹에만 역할 할당의 범위 (그룹)에 나와 있는 수 있습니다.
 - 범위 태그는 사용자의 역할을 할당할 경우 Intune 개체의 모든 범위 태그를 삭제할 수 없습니다. 하나 이상의 범위 태그는 필수입니다.
-- 사용자가 여러 역할 할당 하는 경우 사용 권한은 해당 역할 할당에 확장 다른 개체에 다음과 같이:
-    - 할당 권한을 해당 역할 할당 범위 (그룹)에 있는 개체 (예: 정책 또는 앱)에 적용 됩니다. 할당 권한이 다른 할당에서 특별히 부여 하지 않는 한 다른 역할 할당에는 개체에 적용 되지 않습니다.
-    - 다른 권한 (예: 만들기 및 읽기)에서 사용자의 할당 중 하나 (예: 모든 정책이 나 모든 앱은)는 동일한 유형의 모든 개체에 적용 됩니다.
-    - 서로 다른 형식 (예: 정책 또는 앱)의 개체에 대 한 권한을 적용 되지 않습니다. 예를 들어, 정책에 대 한 읽기 권한을 사용자의 할당에는 앱에 읽기 권한을 제공 하지 않습니다.
-
-
-
-
 
 ## <a name="next-steps"></a>다음 단계
 

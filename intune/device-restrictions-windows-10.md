@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure에서 Windows 10을 위한 디바이스 제한 설정 | Microsoft Docs
-description: Windows 10 이상 디바이스의 디바이스 제한 사항을 만들기 위한 모든 설정 및 관련 설명 목록을 확인합니다. 구성 프로필에 있는 이러한 설정을 사용하여 스크린샷, 암호 요구 사항, 키오스크 설정, 스토어의 앱, Edge 브라우저, Windows defender, 클라우드 액세스, 시작 메뉴 및 Microsoft Intune의 기타 기능을 제어합니다.
+description: Windows 10 이상 디바이스의 디바이스 제한 사항을 만들기 위한 모든 설정 및 관련 설명 목록을 확인합니다. 구성 프로필에 있는 이러한 설정을 사용하여 스크린샷, 암호 요구 사항, 키오스크 설정, 스토어의 앱, Microsoft Edge 브라우저, Windows defender, 클라우드 액세스, 시작 메뉴 및 Microsoft Intune의 기타 기능을 제어합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566755"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395003"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -29,7 +29,7 @@ ms.locfileid: "57566755"
 이러한 설정은 Intune에서 디바이스 구성 프로필에 추가된 다음, Windows 10 디바이스에 할당 또는 배포됩니다.
 
 > [!Note]
-> 모든 Windows 버전에서 모든 옵션을 사용할 수 있는 것은 아닙니다.
+> 모든 Windows 버전에서 모든 옵션을 사용할 수 있는 것은 아닙니다. 지원 되는 버전을 참조 합니다 [정책 Csp](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (다른 Microsoft 웹 사이트 열기).
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -64,8 +64,8 @@ ms.locfileid: "57566755"
 - **Wi-Fi**: 사용자가 디바이스에서 Wi-Fi를 설정하고 구성하도록 허용합니다(Windows 10 Mobile에만 해당).
 - **자동으로 Wi-Fi 핫스팟에 연결**: 디바이스가 무료 Wi-Fi 핫스팟에 자동으로 연결되고 연결 사용 약관에 자동으로 동의하도록 허용합니다.
 - **Wi-Fi 수동 구성**: 사용자가 Wi-Fi 연결을 직접 구성할 수 있는지 아니면 Wi-Fi 프로필에 의해 구성된 연결만 사용할 수 있는지를 제어합니다(Windows 10 Mobile에만 해당).
-- **Wi-Fi 검색 간격**: 디바이스가 Wi-Fi 네트워크를 검색하는 빈도를 지정합니다. 1(빈도 가장 높음)에서 500(빈도 가장 낮음) 사이의 값을 지정합니다.
-- **Bluetooth 허용 서비스**: 허용된 Bluetooth 서비스 및 프로필 목록인 16진수 문자열을 지정합니다.
+- **Wi-Fi 검색 간격**: 디바이스가 Wi-Fi 네트워크를 검색하는 빈도를 입력합니다. 1(빈도 가장 높음)에서 500(빈도 가장 낮음) 사이의 값을 입력합니다.
+- **Bluetooth 허용 서비스**: 허용된 Bluetooth 서비스 및 프로필 목록인 16진수 문자열을 입력합니다.
 
 ## <a name="cloud-and-storage"></a>클라우드 및 스토리지
 
@@ -145,7 +145,6 @@ ms.locfileid: "57566755"
 
 - **작업 관리자에서 프로세스를 종료**:이 설정은 관리자가 아닌 최종 작업에 작업 관리자를 사용할 수 있는지 여부를 결정 합니다. **차단**을 선택하면 표준 사용자(비관리자)가 작업 관리자를 사용하여 디바이스에서 프로세스 또는 작업을 종료하지 못합니다. **구성되지 않음**(기본값)은 표준 사용자가 작업 관리자를 사용하여 프로세스 또는 작업을 종료할 수 있도록 허용합니다.
 
-
 ## <a name="locked-screen-experience"></a>잠긴 화면 환경
 
 - **알림 센터 알림(모바일 전용)**: 디바이스 잠금 화면에 알림 센터 알림이 표시되도록 허용합니다(Windows 10 Mobile만 해당).
@@ -168,18 +167,18 @@ ms.locfileid: "57566755"
 선택한 항목에 따라 사용 가능한 설정을 변경 합니다. 옵션은 다음과 같습니다.
 
 - **이상** (기본값): Microsoft Edge 키오스크 모드에서 실행 되지 않습니다. Microsoft Edge 설정도 변경 하 고 구성할 수 있습니다.
-- **디지털/대화형 신호 (단일 앱 키오스크)**: Windows 10 단일 앱 키오스크에만 사용 하기 위해 디지털/대화형 간판 Edge 키오스크 모드에 적용 되는 필터 Edge 설정 합니다. URL 전체 화면을 열려면이 설정을 선택 하 고 해당 웹 사이트에 콘텐츠를 표시 합니다. [디지털 서명 설정](https://docs.microsoft.com/windows/configuration/setup-digital-signage) 이 기능에 대 한 자세한 정보를 제공 합니다.
-- **InPrivate 공용 브라우징 (단일 앱 키오스크)**: Windows 10 단일 앱 키오스크에는 사용 하기 위해 InPrivate 공용 검색 Edge 키오스크 모드에 적용 되는 필터 Edge 설정 합니다. Microsoft Edge의 다중 탭 버전을 실행 합니다.
-- **표준 모드 (다중 앱 키오스크)**: 보통 Edge 키오스크 모드에 적용 되는 필터 Edge 설정 합니다. 모든 검색 기능을 사용 하 여 Microsoft Edge의 전체 버전을 실행합니다.
-- **공용 검색 (다중 앱 키오스크)**: Windows 10 다중 앱 키오스크에 대 한 공용 찾아보기에 적용 되는 필터 Edge 설정 합니다.  Microsoft Edge InPrivate의 다중 탭 버전을 실행 합니다.
+- **디지털/대화형 신호 (단일 앱 키오스크)**: Windows 10 단일 앱 키오스크에만 사용 하기 위해 디지털/대화형 간판 Microsoft Edge 키오스크 모드에 적용 되는 필터 Microsoft Edge 설정 합니다. URL 전체 화면을 열려면이 설정을 선택 하 고 해당 웹 사이트에 콘텐츠를 표시 합니다. [디지털 서명 설정](https://docs.microsoft.com/windows/configuration/setup-digital-signage) 이 기능에 대 한 자세한 정보를 제공 합니다.
+- **InPrivate 공용 브라우징 (단일 앱 키오스크)**: InPrivate 공용 검색 Microsoft Edge 용 키오스크 모드에서 Windows 10 단일 앱 키오스크 사용에 적용 되는 필터 Microsoft Edge 설정 합니다. Microsoft Edge의 다중 탭 버전을 실행 합니다.
+- **표준 모드 (다중 앱 키오스크)**: 보통 Microsoft Edge 키오스크 모드에 적용 되는 필터 Microsoft Edge 설정 합니다. 모든 검색 기능을 사용 하 여 Microsoft Edge의 전체 버전을 실행합니다.
+- **공용 검색 (다중 앱 키오스크)**: Windows 10 다중 앱 키오스크에 대 한 공용 찾아보기에 적용 되는 필터 Microsoft Edge 설정 합니다.  Microsoft Edge InPrivate의 다중 탭 버전을 실행 합니다.
 
 > [!TIP]
 > 이러한 옵션에 수행할 작업에 대 한 자세한 내용은 참조 하세요. [Microsoft Edge 키오스크 모드 구성 유형을](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)합니다.
 
 이 장치 제한 프로필에 직접 연관 됩니다 키오스크 프로필을 사용 하 여 만든 합니다 [Windows 키오스크 설정을](kiosk-settings-windows.md)합니다. 요약:
 
-1. 만들기는 [Windows 키오스크 설정을](kiosk-settings-windows.md) 프로필 장치를 키오스크 모드에서 실행 되도록 합니다. Microsoft Edge 응용 프로그램과 선택한 키오스크 프로필에서 Edge 키오스크 모드를 설정 합니다.
-2. 이 문서에서 설명 하는 장치 제한 프로필을 만들고 특정 기능 및 Microsoft Edge에서 허용 하는 설정을 구성 합니다. 키오스크 프로필에 선택 된 대로 동일한 Edge 키오스크 모드 유형을 선택 해야 합니다. ([Windows 키오스크 설정을](kiosk-settings-windows.md)). 
+1. 만들기는 [Windows 키오스크 설정을](kiosk-settings-windows.md) 프로필 장치를 키오스크 모드에서 실행 되도록 합니다. Microsoft Edge 응용 프로그램과 선택한 키오스크 프로필에서 Microsoft Edge 키오스크 모드를 설정 합니다.
+2. 이 문서에서 설명 하는 장치 제한 프로필을 만들고 특정 기능 및 Microsoft Edge에서 허용 하는 설정을 구성 합니다. 키오스크 프로필에서 선택 된 것으로 동일한 Microsoft Edge 키오스크 모드 유형을 선택 해야 합니다. ([Windows 키오스크 설정을](kiosk-settings-windows.md)). 
 
     [지원 되는 키오스크 모드 설정을](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) 는 훌륭한 리소스입니다.
 
@@ -331,7 +330,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **전화**: 이 앱에서 전화에 액세스할 수 있는지 여부를 정의합니다.
 - **송수신 디바이스**: 일부 앱은 디바이스의 송수신 디바이스(예: Bluetooth)를 사용하여 데이터를 보내고 받으며 이러한 송수신 디바이스를 켜거나 꺼야 합니다. 이 앱에서 이러한 송수신 장치를 제어할 수 있는지 여부를 정의합니다.
 - **작업**: 이 앱에서 작업에 액세스할 수 있는지 여부를 정의합니다.
-- **신뢰할 수 있는 디바이스**: 이 앱에서 신뢰할 수 있는 디바이스(이미 연결된 하드웨어 또는 디바이스와 함께 제공되는 하드웨어)를 사용할 수 있는지 여부를 선택합니다. 예를 들어 TV, 프로젝터 등을 신뢰할 수 있는 디바이스로 사용합니다.
+- **신뢰할 수 있는 장치**:이 앱에서 신뢰할 수 있는 장치를 사용할 수 있으면를 선택 합니다. 신뢰할 수 있는 디바이스는 이미 연결된 하드웨어 또는 디바이스와 함께 제공되는 하드웨어입니다. 예를 들어 TV, 프로젝터 등을 신뢰할 수 있는 디바이스로 사용합니다.
 - **피드백 및 진단**: 이 앱에서 진단 정보에 액세스할 수 있는지 여부를 정의합니다.
 - **디바이스와 동기화**: 이 앱에서 디바이스와 명시적으로 페어링되지 않은 무선 디바이스와 정보를 자동으로 공유 및 동기화할 수 있는지 여부를 선택합니다.
 
@@ -381,11 +380,11 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **이 PC로 프로젝션**: 다른 디바이스에서 프로젝션을 위해 PC를 찾기 못하게 합니다.
 - **페어링 시 PIN 필요**: 프로젝션 디바이스에 연결할 때 PIN이 필요합니다.
 
-## <a name="reporting-and-telemetry"></a>보고 및 원격 분석
+## <a name="reporting-and-telemetry"></a>모니터링 및 원격 분석
 
 - **사용 현황 데이터 공유**: 전송되는 진단 데이터 수준을 선택합니다. 옵션은 다음과 같습니다.
   - 보안
-  - Basic
+  - 기본
   - 고급
   - 전체
 - **Microsoft 365 분석으로 Microsoft Edge 검색 데이터 보내기**: 이 기능을 사용하려면 **사용 현황 데이터 공유** 설정을 **고급** 또는 **전체**로 설정합니다. 이 기능은 Microsoft Edge에서 구성된 상업용 ID가 있는 엔터프라이즈 디바이스에 대해 Microsoft 365 분석에 보내는 데이터를 제어합니다. 옵션은 다음과 같습니다.
@@ -467,9 +466,9 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **모든 다운로드 검색**: Defender가 인터넷에서 다운로드하는 모든 파일을 검사하는지 여부를 제어합니다.
 - **Microsoft 웹 브라우저에 로드된 스크립트 검색**: Defender가 Internet Explorer에 사용되는 스크립트를 검색하도록 허용합니다.
 - **Defender에 대한 최종 사용자 액세스**: Windows Defender 사용자 인터페이스를 최종 사용자가 볼 수 없도록 숨길지 여부를 제어합니다. 이 설정이 변경되면 다음에 최종 사용자 PC를 다시 시작할 때 적용됩니다.
-- **서명 업데이트 간격(시간)**: Defender가 새 서명 파일을 확인하도록 할 간격을 지정합니다.
+- **서명 업데이트 간격(시간)**: Defender가 새 서명 파일을 확인하도록 할 간격을 입력합니다.
 - **파일 및 프로그램 활동 모니터링**: Defender가 디바이스의 파일 및 프로그램 활동을 모니터링하도록 허용합니다.
-- **다음 기간(일) 후 격리된 맬웨어 삭제**: 이전에 영향을 받은 디바이스를 수동으로 확인할 수 있도록 지정한 기간(일) 동안 Defender가 해결된 맬웨어를 계속 추적하도록 합니다. 일 수를 **0**으로 설정하면, 맬웨어가 격리 폴더에 유지되며 자동으로 제거되지 않습니다.
+- **격리 된 맬웨어 삭제 하기 전에 일**: 추적을 계속 이전에 영향을 받는 장치를 수동으로 확인할 수 있습니다를 입력 하는 일 수에 대해 맬웨어를 확인 합니다. 일 수를 **0**으로 설정하면, 맬웨어가 격리 폴더에 유지되며 자동으로 제거되지 않습니다.
 - **검색하는 동안 CPU 사용 제한**: 검사에 사용할 수 있는 CPU의 양을 **1**에서 **100** 사이로 제한할 수 있습니다.
 - **보관 파일 검색**: Defender에서 Zip 또는 Cab 파일과 같은 보관된 파일을 검사할 수 있습니다.
 - **도착하는 메일 메시지 검색**: Defender에서 디바이스에 도착하는 메일 메시지를 검사할 수 있습니다.
@@ -477,10 +476,32 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **전체 검색 중 매핑된 네트워크 드라이브 검색**: Defender가 매핑된 네트워크 드라이브의 파일을 검색하도록 허용합니다.
   드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다.
 - **네트워크 폴더에서 열린 파일 검색**: Defender가 공유 네트워크 드라이브의 파일(예: UNC 경로를 통해 액세스하는 파일)을 검색하도록 허용합니다. 드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다.
-- **클라우드 보호**: 사용자가 관리하는 디바이스의 맬웨어 활동에 대한 정보를 Microsoft 활성 보호 서비스가 수신하도록 허용하거나 차단합니다. 이 정보는 향후 서비스를 개선하는 데 사용됩니다.
+- **클라우드 보호**: 사용자가 관리하는 디바이스의 맬웨어 활동에 대한 정보를 Microsoft 활성 보호 서비스가 수신하도록 허용하거나 차단합니다. 이 정보는 나중에 서비스를 개선합니다.
 - **샘플을 제출하기 전에 사용자에게 확인**: 추가 분석이 필요할 수도 있는 악의적 파일을 Microsoft에 자동으로 전송할지 여부를 제어합니다.
-- **매일 빠른 검색을 수행할 시간**: 선택한 시간에 매일 수행되는 빠른 검사를 예약할 수 있습니다.
-- **수행할 시스템 검색 유형**: 시스템 검색을 예약할 때 실행되는 검색 수준을 입력합니다.
+- **매일 빠른 검색을 수행 하는 시간**: 매일 빠른 검색을 실행 하는 데 시간을 선택 합니다. **구성 되지 않은** 매일 검색을 실행 하지 않습니다. 더 많은 사용자 지정을 하려는 경우 구성 합니다 **수행할 시스템 검색 유형의** 설정 합니다.
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **수행할 시스템 검색 유형의**: 검색의 수준을 포함 한 시스템 검사를 및 하루를 예약 하 고 검색을 실행할 시간입니다. 옵션은 다음과 같습니다.
+  - **구성 되지 않은**: 장치에서 시스템 검색을 예약 하지 않습니다. 최종 사용자가 수동으로 실행 검색 필요 또는 원하는 장치의 합니다.
+  - **사용 하지 않도록 설정**: 장치에서 검색 하는 모든 시스템을 사용 하지 않도록 설정 합니다. 장치를 검색 하는 파트너 바이러스 백신 솔루션을 사용 하는 경우이 옵션을 선택 합니다.
+  - **빠른 검색**: 일반적인 위치를 찾습니다 맬웨어 있을 수 있는 알려진 Windows 시작 폴더 및 레지스트리 키와 같이 등록 합니다.
+    - **예약 된**: 검색을 실행할 날짜를 선택 합니다.
+    - **예약 시간**: 검사를 실행 하는 시간을 선택 합니다.
+  - **전체 검색**: 일반적인 위치를 찾습니다 있을 수 있는 등록 맬웨어와 모든 파일 및 장치에서 폴더를 검색 합니다.
+    - **예약 된**: 검색을 실행할 날짜를 선택 합니다.
+    - **예약 시간**: 검사를 실행 하는 시간을 선택 합니다.
+
+  이 설정은 충돌할 수는 **매일 빠른 검색을 수행 하는 시간** 설정 합니다. 권장 구성 저장:
+
+  - 매일 빠른 검색을 실행 하려면 다음을 구성 합니다 **매일 빠른 검색을 수행 하는 시간** 설정 합니다.
+  - 매일 빠른 검색 및 매주 전체 검색을 실행 하려면 다음 구성 합니다 **매일 빠른 검색을 수행 하는 시간**, 설정 **수행할 시스템 검색 유형의** 날짜와 시간을 사용 하 여 전체 검사를 합니다.
+  - 구성 하지는 **매일 빠른 검색을 수행 하는 시간** 사용 하 여 동시에 설정 합니다 **수행할 시스템 검색 유형** 로 설정 **빠른 검색**합니다. 이러한 설정이 충돌 될 수 있습니다 및 검색을 실행할 수 없습니다.
+  - 빠른 검색을 매주 화요일 오전 6 시를 실행 하려면 구성 합니다 **수행할 시스템 검색 유형의** 설정 합니다.
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **사용자 동의 없이 설치된 응용 프로그램 검색**: Windows에서 사용자 동의 없이 설치된 애플리케이션을 검색할 경우의 보호 수준을 선택합니다.
   - **차단**
   - **감사** 사용자 동의 없이 설치된 앱에 대한 자세한 내용은 [사용자 동의 없이 설치된 애플리케이션 검색 및 차단](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)을 참조하세요.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400486"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358320"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 데이터 웨어하우스 컬렉션
 
@@ -281,7 +281,7 @@ ms.locfileid: "57400486"
 | 12           | ISocConsumer      | iSoc 소비자 디바이스                                |
 | 13           | Unix              | Unix 디바이스                                         |
 | 14           | MacMDM            | 기본 MDM 에이전트로 관리되는 Mac OS X 디바이스 |
-| 15           | HoloLens          | Holo Lens 디바이스                                    |
+| 15           | HoloLens          | HoloLens 장치                                       |
 | 16           | SurfaceHub        | Surface Hub 디바이스                                  |
 | 17           | AndroidForWork    | Android Profile Owner로 관리되는 Android 디바이스  |
 | 18           | AndroidEnterprise | Android 엔터프라이즈 디바이스                          |
@@ -448,7 +448,7 @@ ms.locfileid: "57400486"
 | 5                     | EasIntuneClient                   | 디바이스가 Exchange Active Sync와 Intune PC 에이전트를 둘 다 사용하여 관리됨 |
 | 8                     | ConfigManagerClient               | 디바이스가 System Center Configuration Manager 에이전트를 사용하여 관리됨     |
 | 10                    | ConfigurationManagerClientMdm     | 디바이스가 Configuration Manager 및 MDM에서 관리됩니다.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | 디바이스가 Configuration Manager, MDM 및 Eas에서 관리됩니다.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | 장치는 Configuration Manager를 MDM 및 Exchange Activesync에서 관리 됩니다.               |
 | 16                    | Unknown                           | 알 수 없는 관리 에이전트 유형                                              |
 | 32                    | Jamf                              | 디바이스 특성은 Jamf에서 가져옵니다.                               |
 | 64                    | GoogleCloudDevicePolicyController |  디바이스가 Google의 CloudDPC에서 관리됩니다.                                 |
@@ -617,7 +617,7 @@ Microsoft Intune을 통해 모바일 애플리케이션 관리를 사용하여 �
 | UserKey                    | 데이터 웨어하우스의 사용자의 고유 식별자 - 서로게이트 키                                                                                                                                                         | 123                                  |
 | UserId                     | 사용자의 고유 식별자는 UserKey와 비슷하지만 자연 키입니다.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | 사용자의 이메일 주소                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | 사용자의 사용자 계정 이름입니다.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | 사용자의 사용자 계정 이름입니다.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | 사용자의 표시 이름                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | 이 사용자의 Intune 라이선스 여부를 나타냅니다.                                                                                                                                                                              | True/False                           |
 | IsDeleted                  | 사용자의 모든 라이선스가 만료되었는지 여부와 이에 따라 사용자가 Intune에서 제거되었는지 여부를 나타냅니다. 단일 레코드의 경우 이 플래그는 변경되지 않습니다. 대신 새 사용자 상태의 새 레코드가 만들어집니다. | True/False                           |

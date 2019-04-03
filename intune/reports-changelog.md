@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/21/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565641"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358261"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 데이터 웨어하우스 API에 대한 변경 로그
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 데이터 웨어하우스에 대한 업데이트를 최신 상태로 유지합니다.
+
+## <a name="1903"></a>1903
+_릴리스 날짜: 2019년 3월_
+
+### <a name="v10-changes-reflecting-back-to-beta"></a>Beta로 다시 반영 V1.0 변경
+V1.0 1808에 처음 도입을 하는 경우 API 베타 버전에서 몇 가지 중요 한 방식에서 다릅니다. 1903에서 이러한 변경 내용은 다시 베타 API 버전에 반영 됩니다. 베타 API 버전을 사용 하는 중요 한 보고서에 있는 경우 해당 보고서 변경 내용을 중단을 방지 하려면 V1.0 전환는 것이 좋습니다. 참조 하십시오 [API 버전 정보](reports-api-url.md) 자세한 데이터 웨어하우스 API 버전 및 이전 버전과 호환성. 
 
 ## <a name="1902"></a>1902 
 _릴리스 날짜: 2019년 2월_
@@ -42,7 +48,7 @@ Intune 데이터 웨어하우스를 사용 하 여 Power BI Online에 액세스 
 > 필터가 있는 두 개의 추가 Intune 준수 앱에 적용할 수 있습니다.
 
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune 준수 앱에 추가 필터를 추가 합니다.
-1. 엽니다는 [Intune 준수 (데이터 웨어하우스)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 에 웹 브라우저에서는 앱.
+1. 엽니다는 [Intune 준수 (데이터 웨어하우스)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 웹 브라우저에서 앱.
 2. 클릭 **규격이 아닌 장치** 선택한 **비준수** 에 **complianceStatus** 필터입니다. 
 3. 클릭할 **알 수 없는 장치** 선택한 **아직 사용할 수 없습니다** 에 **complianceStatus** 필터입니다. 
 
@@ -93,7 +99,7 @@ Azure AD(Azure Active Directory)를 사용하여 애플리케이션을 설정하
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Data Warehouse 데이터 모델의 새 엔터티 <!-- 2077804 -->
 
- - [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) 엔터티가 추가되었습니다. **MobileAppDeviceUserInstallStatus**는 지정된 디바이스 및 사용자의 모바일 앱 설치 상태를 나타냅니다.
+ - [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md) 엔터티가 추가되었습니다. **MobileAppDeviceUserInstallStatus**는 지정된 디바이스 및 사용자의 모바일 앱 설치 상태를 나타냅니다.
  - [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) 엔터티가 추가되었습니다. **MobileAppInstallState** 엔터티는 장치, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 애플리케이션의 설치 상태를 나타냅니다. 
 
 ## <a name="1710"></a>1710

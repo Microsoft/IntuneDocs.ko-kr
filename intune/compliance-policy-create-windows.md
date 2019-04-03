@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: acf14ea6f1b667cb631a424223a40e44a8338edd
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566814"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306845"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune에서 Windows 디바이스에 대한 디바이스 준수 정책 추가
 
@@ -125,7 +125,10 @@ Windows 8.1 PC는 **3** 버전을 반환합니다. Windows에 대한 OS 버전 �
 
 - **코드 무결성 필요**: 코드 무결성은 메모리에 로드될 때마다 드라이버 또는 시스템 파일의 무결성을 확인하는 기능입니다. 코드 무결성은 서명되지 않은 드라이버 또는 시스템 파일이 커널로 로드되고 있는지 여부를 검색합니다. 또한 관리자 권한을 가진 사용자 계정으로 실행된 악성 소프트웨어가 시스템 파일을 수정했는지 여부를 검색합니다.
 
-HAS 서비스의 작동 방식에 대한 자세한 내용은 [상태 증명 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)를 참조하세요.
+추가 리소스:
+
+- [상태 증명 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)에는 HAS 서비스의 작동 방식에 대한 세부 정보가 포함되어 있습니다.
+- [Intune 준수 정책의 일부로 장치 상태 증명 설정 지원 팁:를 사용 하 여 ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ### <a name="device-properties"></a>디바이스 속성
 
