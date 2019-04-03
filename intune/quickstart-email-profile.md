@@ -1,12 +1,12 @@
 ---
 title: 빠른 시작 - iOS에 대한 이메일 디바이스 프로필 만들기
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: iOS 디바이스가 회사 이메일에 안전하게 연결할 수 있도록 Microsoft Intune을 사용하여 이메일 디바이스 프로필을 만드는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0c96ffdabca3a29b2e0ac5d0a26d5e23b0dabda
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b252c9d3d719847c8c0911b6cbce06c83bb4bf0e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390447"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799285"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>빠른 시작: iOS용 이메일 디바이스 프로필 만들기
 
@@ -33,7 +33,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 
-[Intune](https://aka.ms/intuneportal)에 글로벌 관리자 또는 Intune 서비스 관리자로 로그인합니다. Azure Portal에서 **모든 서비스** > **Intune**을 선택하여 Intune을 찾습니다.
+[Intune](https://aka.ms/intuneportal)에 글로벌 관리자 또는 Intune 서비스 관리자로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="create-an-ios-email-profile"></a>iOS 이메일 프로필 만들기
 1. Intune에서 **디바이스 구성**을 선택하고 **프로필**을 선택합니다.
