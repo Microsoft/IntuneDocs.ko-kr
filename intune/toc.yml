@@ -185,6 +185,8 @@ items:
         href: device-group-mapping.md
     - name: Windows 등록 설정
       items:
+      - name: Windows 등록 방법
+        href: windows-enrollment-methods.md
       - name: 등록 방법 기능
         href: enrollment-method-capab.md
       - name: Windows 등록
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: 관리되지 않는 디바이스에서 데이터 누수 방지
       href: data-leak-prevention.md
-ms.openlocfilehash: c58e250d7aeb4913554874c8a1e931b2dc356dfd
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.openlocfilehash: cdee45edb7f19f3e747ec29515304f59ace1227e
+ms.sourcegitcommit: 55323746ca3c1c66326f1453ba66ded9c1b73b0e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658577"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58867452"
