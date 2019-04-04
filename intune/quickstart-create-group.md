@@ -1,12 +1,12 @@
 ---
 title: 빠른 시작 - 사용자 관리를 위한 그룹 만들기
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 빠른 시작에서는 Microsoft Intune을 사용하여 기존 사용자를 기반으로 그룹을 만듭니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e22aecbeddeb03060ebd91f3b1d7109d01b8daad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7cbfe19e4f7aea28c16cae50c9b79336be81c8fa
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391547"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871330"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>빠른 시작: 사용자 관리를 위한 그룹 만들기
 
@@ -44,17 +44,18 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="create-a-group"></a>그룹 만들기
 
-이 빠른 시작 시리즈에서 나중에 사용될 그룹을 만듭니다.
+이 빠른 시작 시리즈에서 나중에 사용될 그룹을 만듭니다. 그룹 만들기:
 
 1. **Microsoft Intune** 창을 연 후에는 **그룹** > **새 그룹**을 선택합니다.
 2. **그룹 형식** 드롭다운 상자에서 **보안**을 선택합니다.
-3. **이름**을 "Contoso 테스터"로 설정하고 그룹에 대한 **설명**을 추가합니다.
-4. **멤버 자격 형식**을 **할당됨**으로 설정합니다. 
-5. **멤버**를 클릭하고 기존 목록에서 그룹에 하나 이상의 멤버를 선택합니다.
+3. **그룹 이름** 필드에서 새 그룹의 이름(예: **Contoso 테스터**)을 입력합니다.
+4. 그룹 **설명**을 추가합니다.
+5. **멤버 자격 형식**을 **할당됨**으로 설정합니다. 
+6. **멤버**를 클릭하고 목록에서 그룹에 하나 이상의 멤버를 선택합니다.
 
     ![Microsoft Intune에서 그룹 만들기 스크린샷](./media/quickstart-use-groups-01.png)
 
-6. **선택** > **만들기**를 클릭합니다.
+7. **선택** > **만들기**를 클릭합니다.
 
 그룹을 성공적으로 만들었으면 **모든 그룹** 목록에 표시됩니다. 
 

@@ -1,12 +1,12 @@
 ---
 title: 빠른 시작 - Android 디바이스에 대한 준수 정책 만들기
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 빠른 시작에서는 Microsoft Intune을 사용하여 Android 디바이스에 필요한 암호의 길이를 설정합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397277"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799661"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>빠른 시작: Android 디바이스에 대한 암호 규정 준수 정책 만들기
 
@@ -49,7 +49,8 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 3. **플랫폼**에서 **Android**를 선택합니다. 
 4. **설정** > **시스템 보안**을 선택하여 Android **시스템 보안**  블레이드를 표시합니다.
 5. **모바일 디바이스의 잠금을 해제하는 데 암호 요구** 옆에 있는 **필요**를 클릭합니다.
-6. **최소 암호 길이** 옆에 있는 **6**을 입력합니다. 
+6. **필수 암호 유형** 옆의 **최소 숫자**를 선택합니다.
+7. **최소 암호 길이** 옆에 있는 **6**을 입력합니다. 
 
     ![Microsoft Intune에서 그룹 만들기 스크린샷](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 

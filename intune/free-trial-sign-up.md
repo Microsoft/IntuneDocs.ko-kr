@@ -1,6 +1,6 @@
 ---
 title: 빠른 시작 - Microsoft Intune 평가판 체험
-titlesuffix: ''
+titleSuffix: ''
 description: 이 빠른 시작에서는 평가판 구독을 만들고, 지원되는 구성 및 네트워킹 요구 사항을 이해하고, 필요에 따라 도메인 이름을 구성해 보겠습니다.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756856"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871398"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>빠른 시작: Microsoft Intune 평가판 체험 
 

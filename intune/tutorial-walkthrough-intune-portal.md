@@ -6,7 +6,7 @@ keywords: ''
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 01/31/2019
+ms.date: 03/28/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c733dbbf992ae10e14ba711b34e621d3f0fb3da8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c601af8c2b73ac68ec88f45d3684fcfd41f1c87f
+ms.sourcegitcommit: 1144247aa7f042eb1b99d8fd8dd17b909eae38c5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395259"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567591"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>자습서: Azure Portal에서 Microsoft Intune 연습
 
@@ -113,7 +113,7 @@ Azure Portal에서 Intune을 더 잘 이해하려면 다음 단계를 따릅니�
 
     사용자를 직접 Intune에 추가하거나 온-프레미스 Active Directory에서 사용자를 동기화할 수 있습니다. 추가된 사용자는 디바이스를 등록하고 회사 리소스에 액세스할 수 있습니다. 또한 사용자에게 Intune에 액세스하는 추가적인 사용 권한을 제공할 수 있습니다. 자세한 내용은 [사용자 추가 및 Intune에 관리 권한 부여](users-add.md)를 참조하세요.
 
-9. [Intune](https://aka.ms/intuneportal)에서 **그룹**을 선택하여 Intune에 포함된 Azure AD(Azure Active Directory) 그룹에 대한 세부 정보를 표시합니다. Intune 관리자로서 그룹을 사용하여 디바이스 및 사용자를 관리할 수 있습니다. 
+9. [Intune](https://aka.ms/intuneportal)에서 **그룹**을 선택하여 Intune에 포함된 Azure AD(Azure Active Directory) 그룹에 대한 세부 정보를 표시합니다. Intune 관리자는 그룹을 사용하여 디바이스 및 사용자를 관리할 수 있습니다. 
 
     ![그룹 창 스크린샷](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 

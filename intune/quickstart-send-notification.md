@@ -1,12 +1,12 @@
 ---
 title: 빠른 시작 - 비규격 디바이스로 알림 보내기
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 빠른 시작에서는 Microsoft Intune을 사용하여 비규격 디바이스에 이메일 알림을 보냅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991118"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871436"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>빠른 시작: 비규격 디바이스로 알림 보내기
 
@@ -40,7 +40,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 
-[Intune](https://aka.ms/intuneportal) 포털에 [글로벌 관리자](users-add.md#types-of-administrators) 또는 Intune [서비스 관리자](users-add.md#types-of-administrators)로 로그인합니다. 
+[Intune](https://aka.ms/intuneportal) 포털에 [글로벌 관리자](users-add.md#types-of-administrators) 또는 Intune [서비스 관리자](users-add.md#types-of-administrators)로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="create-a-notification-message-template"></a>알림 메시지 템플릿 만들기
 
@@ -83,14 +83,13 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 5. **모바일 디바이스의 잠금을 해제하는 데 암호 요구**를 **필요**로 설정합니다. 이 설정은 사용자의 모바일 장치에 있는 정보에 액세스하기 위해 암호를 입력해야 하는지 여부를 지정합니다. 
 6. **최소 암호 길이**를 **6**으로 설정합니다. 이 설정은 최소 암호 자릿수 또는 문자 수를 지정합니다.
 
-    ![새 준수 정책에 대한 시스템 보안 설정](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. **확인**, **확인** 및 **만들기**를 클릭하여 준수 정책을 만듭니다.
-8. 새로운 정책의 이름을 선택합니다. **Windows 10 규정 준수**
-9. **속성** > **비준수에 대한 작업** > **추가**를 선택합니다.
-10. **작업** 드롭다운 목록 상자에서 **최종 사용자에게 이메일 보내기**가 선택되었는지 확인합니다.
-11. **메시지 템플릿** > **Contoso 관리자** > **선택**을 선택하여 이 항목의 앞부분에서 만든 메시지 템플릿을 선택합니다.
-12. **확인** > **확인** > **저장**을 선택하여 변경 내용을 저장합니다.
+8. **속성** > **비준수에 대한 작업** > **추가**를 선택합니다.
+9. **작업** 드롭다운 목록 상자에서 **최종 사용자에게 이메일 보내기**가 선택되었는지 확인합니다.
+10. **메시지 템플릿** > **Contoso 관리자** > **선택**을 선택하여 이 항목의 앞부분에서 만든 메시지 템플릿을 선택합니다.
+11. **추가** > **확인** > **저장**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="assign-the-policy"></a>정책 할당
 

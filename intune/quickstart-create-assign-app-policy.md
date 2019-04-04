@@ -1,12 +1,12 @@
 ---
 title: 빠른 시작 - 앱 보호 정책 만들기 및 할당
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 빠른 시작에서는 Microsoft Intune을 사용하여 앱 보호 정책을 만들고 할당 및 지정합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393359"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871364"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>빠른 시작: 앱 보호 정책 만들기 및 할당
 
@@ -72,7 +72,7 @@ Intune에서 앱 보호 정책을 만든 후에는 그룹에 할당할 수 있�
 3.  **할당**을 선택합니다.
 4.  **포함** 탭에서 **포함할 그룹 선택**을 클릭합니다.
 5.  포함할 그룹으로 **Contoso 테스터**를 선택합니다.
-6.  **선택**을 클릭합니다. 
+6.  **선택** > **저장**을 클릭합니다. 
 
 이제 앱 보호 정책을 할당했습니다.
 

@@ -1,12 +1,12 @@
 ---
 title: 자습서 - Intune 관리 디바이스에서 Exchange Online 메일 보호
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 관리 디바이스 및 Outlook 앱을 사용하도록 요구하는 Azure AD 조건부 액세스 및 iOS Intune 준수 정책을 통해 Exchange Online을 보호하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528210"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799771"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>자습서: 관리 디바이스에서 Exchange Online 이메일 보호
 디바이스 준수 정책을 조건부 액세스와 함께 사용하여 iOS 디바이스가 Intune에서 관리되고 승인된 메일 앱을 사용하는 경우에만 Exchange Online 메일에 액세스할 수 있도록 하는 방법을 알아봅니다. 
@@ -43,7 +43,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 
-[Intune](https://aka.ms/intuneportal)에 글로벌 관리자 또는 Intune 서비스 관리자로 로그인합니다. Azure Portal에서 **모든 서비스** > **Intune**을 선택하여 Intune을 찾습니다.
+[Intune](https://aka.ms/intuneportal)에 글로벌 관리자 또는 Intune 서비스 관리자로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="create-the-ios-device-compliance-policy"></a>iOS 디바이스 준수 정책 만들기
 Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태로 간주하기 위해 충족해야 하는 조건을 설정합니다. 이 자습서에서는 iOS 디바이스의 디바이스 준수 정책을 만듭니다. 준수 정책은 플랫폼에 특정하므로 평가하려는 각 디바이스 플랫폼의 개별 규정 준수 정책이 필요합니다.
@@ -93,7 +93,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
 5.  **할당**에서 **조건** > **장치 플랫폼**을 선택합니다.
      
     1. **구성**에서 **예**를 선택합니다.
-    2. **포함** 탭에서 **모든 플랫폼(지원되지 않는 플랫폼 포함)** 을 선택한 후 **완료**를 선택합니다. 
+    2. **포함** 탭에서 **모든 디바이스**를 선택한 후 **완료**를 선택합니다. 
     3. **완료**를 다시 선택합니다.
    
     ![Office 365 Exchange Online 앱 선택](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

@@ -1,12 +1,12 @@
 ---
 title: 자습서 - 관리되지 않는 디바이스에서 Exchange Online 메일 보호
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 앱 보호 정책 및 Azure AD 조건부 액세스를 사용하여 Office 365 Exchange Online을 보호하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528278"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798787"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>자습서: 관리되지 않는 디바이스에서 Exchange Online 메일 보호
 
@@ -91,8 +91,8 @@ Outlook용 앱 보호 정책이 만들어집니다. 이제 디바이스에서 Ou
 5.  **할당**에서 **조건** > **장치 플랫폼**을 선택합니다.
      
     1. **구성**에서 **예**를 선택합니다.
-    2. **포함** 탭에서 **모든 플랫폼(지원되지 않는 플랫폼 포함)** 을 선택합니다. 
-    3. **완료**를 선택합니다.
+    2. **포함** 탭에서 **모든 디바이스**를 선택합니다.
+    1. **완료**를 선택합니다.
    
 6.  **조건** 창에서 **클라이언트 앱**을 선택합니다.
      
@@ -136,7 +136,7 @@ Outlook용 앱 보호 정책이 만들어집니다. 이제 디바이스에서 Ou
 5.  **할당**에서 **조건** > **장치 플랫폼**을 선택합니다.
      
     1. **구성**에서 **예**를 선택합니다.
-    2. **포함** 탭에서 **모든 플랫폼(지원되지 않는 플랫폼 포함)** 을 선택한 후 **완료**를 선택합니다. 
+    2. **포함** 탭에서 **모든 디바이스**를 선택한 후 **완료**를 선택합니다. 
     3. **완료**를 다시 선택합니다.
 
 6.  **조건** 창에서 **클라이언트 앱**을 선택합니다.

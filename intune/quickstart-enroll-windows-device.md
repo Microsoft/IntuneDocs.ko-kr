@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389973"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871419"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>빠른 시작: Windows 10 장치 등록
 
-이 빠른 시작에서는 먼저 Intune 사용자의 역할을 수행하고 Microsoft Intune에 Windows 10 디바이스를 등록한 후 Intune으로 돌아가 등록된 디바이스를 확인합니다.
+이 빠른 시작에서는 먼저 Intune 사용자의 역할을 수행하고 Microsoft Intune에 Windows 10 디바이스를 등록한 후 그런 다음 Intune으로 돌아가 등록된 디바이스를 확인합니다.
 
-Microsoft Intune에 장치를 등록하면 Windows 10 장치를 사용하여 메일, 파일 및 기타 리소스를 포함한 조직의 보안 데이터에 액세스할 수 있습니다. Windows 10 데스크톱 및 Windows 10 모바일 디바이스의 경우도 마찬가지입니다. 디바이스를 등록하면 사용자와 조직 모두 이러한 액세스를 보호하고 작업 데이터를 개인 데이터와 별도로 보호할 수 있습니다.
+Microsoft Intune에 디바이스를 등록하면 Windows 10 디바이스를 사용하여 메일, 파일 및 기타 리소스를 포함한 조직의 보안 데이터에 액세스할 수 있습니다. Windows 10 데스크톱 및 Windows 10 모바일 디바이스의 경우도 마찬가지입니다. 디바이스를 등록하면 사용자와 조직 모두 이러한 액세스를 보호하고 작업 데이터를 개인 데이터와 별도로 보호할 수 있습니다.
 
 > [!TIP]
 > [Intune에서 디바이스를 등록](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)하면 어떻게 되는지 그리고 그것이 [디바이스의 정보](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)에 어떤 영향을 주는지 알아보세요.
@@ -72,7 +72,7 @@ Windows 10 Desktop을 등록하기 전에 설치한 Windows 버전을 확인해�
 
     ![회사 또는 학교 계정 액세스 선택](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. 회사 또는 학교 계정을 사용하여 Intune에 로그인한 후, **다음**을 선택합니다. [사용자 만들기 및 라이선스 할당] 빠른 시작을 수행한 경우 사용자가 만든 사용자 계정으로 로그인할 수 있습니다.
+3. 회사 또는 학교 계정을 사용하여 Intune에 로그인한 후, **다음**을 선택합니다. [사용자 만들기 및 라이선스 할당](quickstart-create-user.md) 빠른 시작을 수행한 경우 사용자가 만든 사용자 계정으로 로그인할 수 있습니다.
 
     > [!NOTE]
     > ".onmicrosoft.com"을 설정하는 경우 사용자 계정에는 **.onmicrosoft.com**이 계정 주소의 일부로 포함됩니다. 

@@ -6,33 +6,33 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 10/30/2018
+ms.date: 03/25/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991091"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514266"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>빠른 시작: 사용자 만들기 및 라이선스 할당
+# <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>빠른 시작: Intune에서 사용자 만들기 및 사용자에게 라이선스 할당
 
-이 빠른 시작에서는 사용자를 만든 다음, 해당 사용자에게 라이선스를 할당합니다. Intune을 사용할 때 회사 데이터에 액세스할 수 있게 만들고 싶은 각 사용자가 사용자 계정을 갖고 있어야 합니다. 이후에 Intune 관리자는 액세스 제어를 관리하도록 이러한 사용자를 구성할 수 있습니다.
+이 빠른 시작에서는 사용자를 만든 다음 사용자에게 Intune을 할당합니다. Intune을 사용할 때 회사 데이터에 액세스할 수 있도록 허용하고 싶은 각 사용자가 본인의 사용자 계정을 갖고 있어야 합니다. Intune 관리자는 이후에 사용자를 구성하여 액세스 제어를 관리할 수 있습니다.
 
 Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)하세요.
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 
-[Intune](https://aka.ms/intuneportal)에 [글로벌 관리자 또는 Intune 서비스 관리자](users-add.md#types-of-administrators)로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
+[Intune](https://aka.ms/intuneportal)에 [전역 관리자 또는 Intune 서비스 관리자](users-add.md#types-of-administrators)로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="create-a-user"></a>사용자 만들기
 
-Intune 장치 관리에 등록하려면 사용자 계정이 있어야 합니다.
+사용자가 Intune 디바이스 관리에 등록하려면 사용자 계정이 있어야 합니다. 새 사용자 만들기:
 
 1. Intune에서 **사용자** > **모든 사용자** > **새 사용자**를 선택합니다.
 ![브라우저](media/quickstart-create-user/create-user.png)
@@ -47,7 +47,9 @@ Intune 장치 관리에 등록하려면 사용자 계정이 있어야 합니다.
 
 ## <a name="assign-a-license-to-the-user"></a>사용자에게 라이선스 할당
 
-사용자를 만든 후에는 [Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)를 사용하여 해당 사용자에게 Intune 라이선스를 할당해야 합니다. 라이선스를 할당하지 않으면 사용자가 디바이스를 Intune에 등록할 수 없습니다. 
+사용자를 만든 후에는 [Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)를 사용하여 해당 사용자에게 Intune 라이선스를 할당해야 합니다. 사용자에게 라이선스를 할당하지 않는 경우, 사용자가 Intune에 디바이스를 등록할 수 없습니다. 
+
+사용자에게 Intune 라이선스 할당:
 
 1. Intune에 로그인하는 데 사용한 것과 동일한 자격 증명으로 [Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)에 로그인합니다.
 2. **사용자** > **활성 사용자**를 선택하고 방금 만든 사용자를 선택합니다.
@@ -67,7 +69,7 @@ Intune 장치 관리에 등록하려면 사용자 계정이 있어야 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-이 빠른 시작에서는 사용자를 만들고 해당 사용자에게 라이선스를 할당했습니다. Intune에 사용자를 추가하는 방법에 대한 자세한 내용은 [사용자 추가 및 Intune에 관리 권한 부여](users-add.md)를 참조하세요.
+이 빠른 시작에서는 사용자를 만들고 해당 사용자에게 Intune 라이선스를 할당했습니다. Intune에 사용자를 추가하는 방법에 대한 자세한 내용은 [사용자 추가 및 Intune에 관리 권한 부여](users-add.md)를 참조하세요.
 
 다음 Intune 빠른 시작을 진행하기 위해서는 아래 빠른 시작 링크를 클릭하세요.
 

@@ -1,12 +1,12 @@
 ---
 title: 빠른 시작 - 클라이언트 앱 추가 및 할당
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 빠른 시작에서는 Microsoft Intune을 사용하여 클라이언트 앱을 추가하고 할당합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391879"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798746"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>빠른 시작: 클라이언트 앱 추가 및 할당
 
@@ -37,7 +37,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 
-[Intune](https://aka.ms/intuneportal)에 [글로벌 관리자 또는 Intune 서비스 관리자](users-add.md#types-of-administrators)로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
+[Intune](https://aka.ms/intuneportal)에 [전역 관리자 또는 Intune 서비스 관리자](users-add.md#types-of-administrators)로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="add-the-client-app-to-intune"></a>Intune에 클라이언트 앱 추가
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 1/30/2019
+ms.date: 03/29/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88fe825b75e7717740e5a5ca4af4c52e9bb21768
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f9cd0eec492f5131e4015aa64eccb4c081c663ee
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400401"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646474"
 ---
 # <a name="tutorial-use-the-device-enrollment-program-to-enroll-ios-devices-in-intune"></a>자습서: 디바이스 등록 프로그램을 사용하여 Intune에서 iOS 디바이스 등록
 Apple의 DEP(디바이스 등록 프로그램)는 디바이스 등록을 간소화합니다. Microsoft Intune 및 DEP를 사용하면 디바이스는 사용자가 처음으로 디바이스를 작동하는 경우 자동으로 등록됩니다. 따라서 각 디바이스를 개별적으로 설정하지 않고도 여러 사용자에게 디바이스를 제공할 수 있습니다. 
@@ -61,7 +61,7 @@ Apple DEP 포털을 사용하여 DEP 토큰을 만듭니다. 관리용으로 Int
 
 5. **MDM 서버 이름**에 *TestMDMServer*를 입력한 다음, **다음**을 선택합니다. 서버 이름은 참조용으로 MDM(모바일 디바이스 관리) 서버를 식별하기 위한 것으로, Microsoft Intune 서버의 이름 또는 URL이 아닙니다.
 
-6. **&lt;ServerName&gt; 추가** 대화 상자가 열리고 **공개 키 업로드**가 표시됩니다. **파일 선택...** 을 선택하여 .pem 파일을 업로드하고 **다음**을 선택합니다.
+6. **&lt;ServerName&gt; 추가** 대화 상자가 열리고 **공개 키 업로드**가 표시됩니다. **파일 선택...** 을 선택합니다. .pem 파일을 업로드하고 **다음**을 선택합니다.
 
 6. **배포 프로그램** > **디바이스 등록 프로그램** > **디바이스 관리**로 이동합니다.
 7. **디바이스 선택 기준**에서 **일련 번호**를 선택합니다. <!--ask Tiffany about this-->
