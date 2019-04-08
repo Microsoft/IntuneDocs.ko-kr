@@ -1,6 +1,6 @@
 ---
 title: 날짜 - Intune 데이터 웨어하우스
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 데이터 웨어하우스 API에서 엔터티 컬렉션의 날짜 범주에 대한 항목을 참조하세요.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2813c2b3f94bf0d57d63b75250239149eb2c1726
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0f69da2ced8e9c249514bb30490372db66c00b8c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565998"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798510"
 ---
 # <a name="reference-for-date-entity"></a>날짜 엔터티에 대한 참조
 

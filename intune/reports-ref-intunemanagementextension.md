@@ -1,6 +1,6 @@
 ---
 title: IntuneManagementExtension 엔터티
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 데이터 웨어하우스 API에서 엔터티 컬렉션의 IntuneManagementExtension 엔터티 범주에 대한 참조 항목입니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1cd36cba007b465d2100000c484ab6ef5eed2dd
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: ea55c92fb3254b6e610bec1074e35d9d9c32cd18
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069086"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798003"
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune 관리 확장에 대한 참조
 

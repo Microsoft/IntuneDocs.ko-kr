@@ -1,6 +1,6 @@
 ---
 title: Power BI를 사용하여 OData 피드에서 보고서 만들기
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 데이터 웨어하우스 API의 대화형 필터와 함께 Power BI Desktop을 사용하여 트리맵 시각화를 만듭니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3cd0f8b5337ad562bddd65bc449a35ec0773f5ed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b9cfb464122018c6e77d5ea1395b699bafa81f33
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565624"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799039"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 보고서 만들기
 

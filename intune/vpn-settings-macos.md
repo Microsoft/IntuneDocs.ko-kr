@@ -1,6 +1,6 @@
 ---
 title: macOS 디바이스에 대한 Microsoft Intune VPN 설정
-titlesuffix: ''
+titleSuffix: ''
 description: macOS 디바이스에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bc1ed991109ff32d03ae9a2e1da33adb62e6a4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f752ec33ca7a69d698ffe2c06c726f3881cc35ce
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565267"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798447"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>macOS를 실행하는 디바이스용 Microsoft Intune에서 VPN 설정 구성
 

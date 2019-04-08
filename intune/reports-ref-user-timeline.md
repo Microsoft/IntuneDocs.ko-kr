@@ -1,6 +1,6 @@
 ---
 title: 데이터 웨어하우스 사용자 엔터티 타임라인
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune 데이터 웨어하우스가 타임라인에서 사용자를 나타내는 방법을 알아봅니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53783c5a743f06775048ac518def8a7ee6d9c45e
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: cfa1df8053301b92c04d92f8c48d2c6c34e30129
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514404"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799754"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune 데이터 웨어하우스의 사용자 수명 표시
 

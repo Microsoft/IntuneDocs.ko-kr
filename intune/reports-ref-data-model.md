@@ -1,6 +1,6 @@
 ---
 title: 데이터 웨어하우스 데이터 모델
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune 데이터 웨어하우스 샘플 데이터는 항상 변화하는 모바일 환경에 대한 과거 보기를 제공합니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cbf6e1bde3f8853f2e5c6c1919089bf0dc10126
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 43e555a27565de43d417adc473d48254d8b7d5a2
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565523"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798176"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 데이터 웨어하우스 데이터 모델
 

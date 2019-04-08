@@ -1,6 +1,6 @@
 ---
 title: 애플리케이션 엔터티에 대한 참조
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 데이터 웨어하우스 API에서 엔터티 컬렉션의 애플리케이션 범주에 대한 항목을 참조하세요.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 68eeb174b7cc2be09ea4b6da9f151695157ac819
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358190"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799251"
 ---
 # <a name="reference-for-application-entities"></a>애플리케이션 엔터티에 대한 참조
 

@@ -1,6 +1,6 @@
 ---
 title: Windows PC 원격 지원 요청 및 제공
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: PC로 관리되는 Windows 데스크톱에 대한 원격 지원에 필요한 최종 사용자와 IT 관리자 단계 및 PC를 원격으로 시작하기 위한 단계를 설명합니다.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b57bae0c0e7a734071be79318286714a97d0fbf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b7004d72328d606f6adc5cd84e79ce4830409059
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460600"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798540"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows PC 원격 지원 요청 및 제공
 

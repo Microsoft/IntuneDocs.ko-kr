@@ -1,6 +1,6 @@
 ---
 title: 정책을 사용하여 Windows PC 관리 간소화
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Windows PC 관리 정책 및 Microsoft Intune Center에 대한 설정을 설명합니다.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c49b6639f898b1328cefcbc9bb9af9208aeda63b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a7eaea14817c022f8efc5c1380c569fc5afbafa1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460804"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797806"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>정책을 사용하여 Windows PC 관리 간소화
 

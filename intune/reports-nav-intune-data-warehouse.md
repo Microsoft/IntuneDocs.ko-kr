@@ -1,6 +1,6 @@
 ---
 title: Intune 데이터 웨어하우스 API
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 데이터 웨어하우스 API를 사용하여 기업 모바일 환경에 대한 정보를 제공하는 보고서를 빌드할 수 있습니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce06d1e5fafca484b0d5df080eac7c3f5b8de4f7
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: e730bc0de3023bd6c3954ae2e8344c6f68954f50
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069136"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798325"
 ---
 #  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune 데이터 웨어하우스 API
 

@@ -1,6 +1,6 @@
 ---
 title: Intune 데이터 웨어하우스 계정 데이터 이동
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 계정을 이동할 때 Intune 데이터 웨어하우스 데이터를 백업하는 방법을 파악합니다.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c83ed35ab9c9c607f6283f2d5b18cf129f53cfab
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 0c73e4c8aa5f71fb80110d4a223b9872c8dbaff3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514367"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798105"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune 데이터 웨어하우스 계정 데이터 이동 
 

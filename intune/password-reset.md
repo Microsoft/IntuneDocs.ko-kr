@@ -1,6 +1,6 @@
 ---
 title: 지원 센터 비용 절감
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 셀프 서비스 암호 재설정을 통해 지원 센터 비용 절감
 keywords: Azure Active Directory SSPR 암호 재설정
 author: MandiOhlinger
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 621df273e7910e51cf7de869aa7858039d66549b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ce6ed4b57199f87fc014addf74a06e70a285044b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459971"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798930"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>셀프 서비스 암호 재설정을 통해 지원 센터 비용 절감
 

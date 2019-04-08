@@ -1,12 +1,12 @@
 ---
 title: REST 클라이언트를 사용하여 데이터 웨어하우스 API에서 데이터 가져오기
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 항목에서는 RESTful API를 사용하여 Microsoft Intune 데이터 웨어하우스에서 데이터를 검색하는 방법을 설명합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57d197cadf2ba6586aa39fdc5dbb9cddba554c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566576"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871453"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST 클라이언트를 사용하여 Intune 데이터 웨어하우스 API에서 데이터 가져오기
 
@@ -98,11 +98,11 @@ Postman을 사용하여 REST 호출을 수행하려면 다음 정보가 필요�
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
 3. **기타 작업**에서 **Intune 데이터 웨어하우스 설정**을 선택합니다.
-4. **타사 보고 서비스 사용** 아래에서 사용자 지정 피드 URL을 복사합니다. 다음과 유사합니다. `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. **타사 보고 서비스 사용** 아래에서 사용자 지정 피드 URL을 복사합니다. 다음과 유사합니다. `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 엔드포인트는 다음 `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}` 형식입니다.
 
-예를 들어 **dates** 엔터티는 다음과 같습니다. `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+예를 들어 **dates** 엔터티는 다음과 같습니다. `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 
 자세한 내용은 [Intune 데이터 웨어하우스 API 엔드포인트](reports-api-url.md)를 참조하세요.
 
@@ -116,7 +116,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 2.  Postman을 엽니다. HTTP 작업 **GET**을 선택합니다.
 3.  엔드포인트 URL을 주소에 붙여넣습니다. 다음과 유사합니다.  
 
-    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4.  **Authorization**(권한 부여) 탭을 선택하고 **Type**(형식) 목록에서 **OAuth 2.0**을 선택합니다.
 5.  **Get New Access Token**(새 액세스 토큰 가져오기)을 선택합니다.
 6.  Azure에서 이미 앱에 콜백 URL을 추가했는지 확인합니다. 콜백 URL은 `https://www.getpostman.com/oauth2/callback`입니다.
@@ -197,7 +197,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
-   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta";
+   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0";
    var collectionName = "dates";
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");

@@ -1,6 +1,6 @@
 ---
 title: 사용자 디바이스 연결 - Intune 데이터 웨어하우스
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: UserDeviceAssociation 엔터티에는 조직의 사용자 디바이스 연결이 포함되어 있습니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d3473b04a1d015f88d27359864a84227215b62a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 466066faf03cbdf560697a04310eac844d4f1b87
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565301"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798263"
 ---
 # <a name="reference-for-user-device-association-entity"></a>사용자 디바이스 연결 엔터티에 대한 참조
 

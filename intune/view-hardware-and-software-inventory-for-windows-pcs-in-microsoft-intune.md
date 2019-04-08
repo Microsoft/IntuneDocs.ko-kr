@@ -1,6 +1,6 @@
 ---
 title: Windows PC에 대한 하드웨어 및 소프트웨어 인벤토리 보기
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 소프트웨어 클라이언트를 사용하여 PC로 관리하는 Windows 데스크톱에 대한 하드웨어 및 소프트웨어 정보를 확인하는 방법입니다.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d45cff8fced4683ca2850a06506a7ff154611d2b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1de4783d9d6e151f616406cc6a2f80406f58e408
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460005"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798571"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Windows PC에 대한 하드웨어 및 소프트웨어 인벤토리 보기
 

@@ -1,6 +1,6 @@
 ---
 title: Windows PC에 대한 사용자-장치 연결 관리
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune에서 관리되는 Windows PC에 사용자를 연결하는 방법을 알아봅니다.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0024b246ea4ce39ba2a0bc4dd6237e82f79427f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9ef14d8ed3b1635fba183134b0d457ddc82ae329
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460481"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799234"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC에 대한 사용자-장치 연결 관리
 

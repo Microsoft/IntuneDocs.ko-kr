@@ -1,6 +1,6 @@
 ---
 title: Samsung Knox에 대한 앱 허용/차단 Microsoft IntuneIntune 정책
-titlesuffix: ''
+titleSuffix: ''
 description: Samsung Knox Standard 디바이스에 대해 앱을 허용 및 차단하는 사용자 지정 프로필을 만듭니다.
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad68fb3c0f692e837ae3a8cff01de8c77d3bb907
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4efa2a813dda16805effe55ff3d1b967ef5d6c88
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565879"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798230"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Microsoft Intune에서 사용자 지정 정책을 사용하여 Samsung Knox Standard 디바이스에 대해 앱 허용 및 차단 
 
