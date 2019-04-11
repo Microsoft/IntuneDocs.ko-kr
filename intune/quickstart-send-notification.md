@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 4b5e6ac4683284dc71c9171f4367e72d5ec45c59
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871436"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899014"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>빠른 시작: 비규격 디바이스로 알림 보내기
 
@@ -85,7 +85,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. **확인**, **확인** 및 **만들기**를 클릭하여 준수 정책을 만듭니다.
+7. **확인** > **확인** > **만들기**를 선택하여 준수 정책을 만듭니다.
 8. **속성** > **비준수에 대한 작업** > **추가**를 선택합니다.
 9. **작업** 드롭다운 목록 상자에서 **최종 사용자에게 이메일 보내기**가 선택되었는지 확인합니다.
 10. **메시지 템플릿** > **Contoso 관리자** > **선택**을 선택하여 이 항목의 앞부분에서 만든 메시지 템플릿을 선택합니다.
