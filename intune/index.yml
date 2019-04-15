@@ -1,141 +1,149 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: f359e36b07334866a1913e5eebd37a0960fc677d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30017812"
 documentType: LandingData
 title: Microsoft Intune 문서
 metadata:
   document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
   title: Microsoft Intune 문서
   description: 신속하게 Microsoft Intune을 시작합니다. 직원이 회사 데이터를 보호하면서 생산성을 높일 수 있도록 하는 클라우드 기반 엔터프라이즈 이동성 관리(EMM) 서비스를 사용하세요.
-  keywords: 보호, 회사, 데이터, Azure, Intune, EMM, 디바이스, 앱, 관리
+  keywords: '보호, 회사, 데이터, Azure, Intune, EMM, 디바이스, 앱, 관리'
   author: dougeby
   ms.author: dougeby
   manager: dougeby
-  ms.date: 10/31/2017
+  ms.date: 02/25/2019
   ms.topic: landing-page
-  ms.devlang: na
+  ms.devlang: null
   ms.service: microsoft-intune
 sections:
-- items:
-  - type: markdown
-    text: 신속하게 Microsoft Intune을 시작합니다. 직원이 회사 데이터를 보호하면서 생산성을 높일 수 있도록 하는 클라우드 기반 엔터프라이즈 이동성 관리(EMM) 서비스를 사용하세요. Intune은 ID 및 액세스 제어를 위한 Azure Active Directory 및 데이터 보호를 위한 Azure Information Protection과 통합됩니다.
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+  - items:
+      - type: markdown
+        text: 신속하게 Microsoft Intune을 시작합니다. 직원이 회사 데이터를 보호하면서 생산성을 높일 수 있도록 하는 클라우드 기반 엔터프라이즈 이동성 관리(EMM) 서비스를 사용하세요. Intune은 ID 및 액세스 제어를 위한 Azure Active Directory 및 데이터 보호를 위한 Azure Information Protection과 통합됩니다.
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: introduction-intune.md
+            html: <p>Intune과 작동 방식에 대해 알아보세요.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
+            title: Intune이란?
+          - href: free-trial-sign-up.md
+            html: <p>이 간단한 자습서를 통해 Intune을 사용하세요.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
+            title: 시작
+          - href: get-support.md
+            html: <p>지원 티켓을 만들고 필요한 경우 도움을 받는 방법을 알아봅니다.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
+            title: 지원 받기
+          - href: whats-new.md
+            html: <p>이번 주 Intune의 새로운 기능을 확인하세요.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
+            title: 새로운 기능
+  - title: 새 문서와 블로그 게시물
     items:
-    - href: introduction-intune.md
-      html: <p>Intune과 작동 방식에 대해 알아보세요.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
-      title: Intune이란?
-    - href: get-started-evaluation.md
-      html: <p>이 간단한 자습서를 통해 Intune의 작동 방식을 확인하세요.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
-      title: 시작
-    - href: get-support.md
-      html: <p>지원 티켓을 만들고 필요한 경우 도움을 받는 방법을 알아봅니다.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
-      title: 지원 받기
-    - href: whats-new.md
-      html: <p>이번 주 Intune의 새로운 기능을 확인하세요.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
-      title: 새로운 기능
-- title: 새 문서와 블로그 게시물
-  items:
-  - type: paragraph
-    text: 알아야 할 유용한 최신 정보를 확인하세요.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: 알아야 할 유용한 최신 정보를 확인하세요.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: what-is-intune.md
+            title: Azure Portal의 Intune에 대한 정보
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
+          - href: ui-changes.md
+            title: Azure Portal에서 Intune 기능 위치 확인
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_guide.svg'
+          - href: high-level-architecture.md
+            title: Intune 상위 수준 아키텍처 보기
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_architecture.svg'
+          - href: enrollment-autopilot.md
+            title: Microsoft Intune의 Windows AutoPilot Deployment 프로그램 지원
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_generic-database.svg'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2018/09/12/support-tip-intune-support-for-ios-12/'
+            title: '[블로그] 지원 팁: iOS 12에 대한 Intune 지원'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2018/09/04/coming-soon-new-intune-support-experience-for-premier-customers/'
+            title: '[블로그] 프리미어 고객을 위한 새로운 Intune 지원 환경'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
+  - title: 동영상
     items:
-    - href: what-is-intune.md
-      title: Azure Portal의 Intune에 대한 정보
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
-    - href: ui-changes.md
-      title: Azure Portal에서 Intune 기능 위치 확인
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
-    - href: high-level-architecture.md
-      title: Intune 상위 수준 아키텍처 보기
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
-    - href: enrollment-autopilot.md
-      title: Microsoft Intune의 Windows AutoPilot Deployment 프로그램 지원
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
-    - href: https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/
-      title: '[블로그] Intune 서비스의 보안 강화 기능 '
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-    - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
-      title: '[블로그] 최종 사용자 문제의 진단 및 해결에 도움이 되는 문제 해결 포털'
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-- title: 동영상
-  items:
-  - type: markdown
-    text: '>[!VIDEO https://www.youtube.com/embed/FpkCI6xmsE4]'
-  - type: markdown
-    text: '>[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]'
-- title: 계획 문서
-  items:
-  - type: list
-    style: unordered
+      - type: markdown
+        text: '>[!VIDEO https://www.youtube.com/embed/offk-KH7eIA]'
+      - type: paragraph
+        text: ' '
+      - type: markdown
+        text: '>[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]'
+  - title: 무료 Intune 교육
     items:
-    - html: <a href="/intune/planning-guide">Intune 배포 계획, 설계 및 구현 가이드</a>
-    - html: <a href="/intune/migration-guide">Intune 마이그레이션 가이드</a>
-- title: 방법 문서
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 1
+        items:
+          - href: 'https://www.pluralsight.com/courses/windows-10-configuring-intune-creators'
+            title: 'Windows 10 구성: Microsoft Intune 계획 및 구현'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg'
+  - title: 계획 문서
     items:
-    - html: <a href="/intune/device-enrollment">장치 등록</a>
-    - html: <a href="/intune/device-management">장치 관리</a>
-    - html: <a href="/intune/app-management">앱 관리</a>
-    - html: <a href="/intune/device-profiles">장치 구성</a>
-    - html: <a href="/intune/device-compliance-get-started">장치 준수 설정</a>
-    - html: <a href="/intune/conditional-access">조건부 액세스 설정</a>
-    - html: <a href="/intune/app-protection-policy">앱 보호</a>
-    - html: <a href="/intune/mobile-threat-defense">모바일 위협 방어 설정</a>
-    - html: <a href="/intune/network-access-control-integrate">네트워크 액세스 제어 통합</a>
-    - html: <a href="/intune/role-based-access-control">역할 관리</a>
-    - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Intune 소프트웨어 클라이언트로 PC 관리</a>
-- title: 문제 해결 문서
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="/intune/planning-guide">Intune 배포 계획, 설계 및 구현 가이드</a>'
+          - html: <a href="/intune/migration-guide">Intune 마이그레이션 가이드</a>
+  - title: 방법 문서
     items:
-    - html: <a href="/intune/help-desk-operators">문제 해결 포털을 사용하여 사용자 지원</a>
-    - html: <a href="/intune/known-issues">Intune의 알려진 문제</a>
-    - html: <a href="/intune/get-support">지원 받기</a>
-- title: 개발 및 사용자 지정 문서
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/device-enrollment">디바이스 등록</a>
+          - html: <a href="/intune/device-management">디바이스 관리</a>
+          - html: <a href="/intune/app-management">앱 관리</a>
+          - html: <a href="/intune/device-profiles">디바이스 구성</a>
+          - html: <a href="/intune/device-compliance-get-started">디바이스 준수 설정</a>
+          - html: <a href="/intune/conditional-access">조건부 액세스 설정</a>
+          - html: <a href="/intune/app-protection-policy">앱 보호</a>
+          - html: <a href="/intune/mobile-threat-defense">모바일 위협 방어 설정</a>
+          - html: <a href="/intune/network-access-control-integrate">네트워크 액세스 제어 통합</a>
+          - html: <a href="/intune/role-based-access-control">역할 관리</a>
+          - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Intune 소프트웨어 클라이언트로 PC 관리</a>
+  - title: 문제 해결 문서
     items:
-    - html: <a href="/intune/custom-settings-configure">사용자 지정 장치 설정 구성</a>
-    - html: <a href="/intune/apps-prepare-mobile-application-management">Intune 앱 래퍼 도구를 사용하여 LOB(기간 업무) 앱 준비</a>
-    - html: <a href="/intune/app-sdk">Intune 앱 SDK를 사용하여 LOB 앱 준비</a>
-    - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Working with Intune in Microsoft Graph</a>(Microsoft Graph에서 Intune 사용)
-    - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune 데이터 웨어하우스 API</a>
-- title: 관련 자료
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/help-desk-operators">문제 해결 포털을 사용하여 사용자 지원</a>
+          - html: <a href="/intune/known-issues">Intune의 알려진 문제</a>
+          - html: <a href="/intune/get-support">지원 받기</a>
+  - title: 개발 및 사용자 지정 문서
     items:
-    - html: <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150개 이상의 라이선스? FastTrack 혜택 이용</a>
-    - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Enterprise Mobility + Security 블로그 읽기</a>
-    - html: <a href="https://blogs.technet.microsoft.com/intunesupport/">Intune 지원 블로그에서 도움말 보기</a>
-    - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">UserVoice에서 Intune에 대한 피드백 제공</a>
-    - html: <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Intune 토론 포럼에서 질문 또는 답변</a>
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/custom-settings-configure">사용자 지정 디바이스 설정 구성</a>
+          - html: <a href="/intune/apps-prepare-mobile-application-management">Intune 앱 래퍼 도구를 사용하여 LOB(기간 업무) 앱 준비</a>
+          - html: <a href="/intune/app-sdk">Intune 앱 SDK를 사용하여 LOB 앱 준비</a>
+          - html: '<a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Working with Intune in Microsoft Graph</a>(Microsoft Graph에서 Intune 사용)'
+          - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune 데이터 웨어하우스 API</a>
+  - title: 관련 자료
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150개 이상의 라이선스? FastTrack 혜택 이용</a>'
+          - html: '<a href="https://docs.microsoft.com/microsoft-365">Intune을 포함하는 완전한 솔루션인 Microsoft 365 탐색</a>'
+          - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">Enterprise Mobility + Security 블로그 읽기</a>'
+          - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/">Intune 지원 블로그에서 도움말 보기</a>'
+          - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">UserVoice에서 Intune에 대한 피드백 제공</a>'
+          - html: '<a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Intune 토론 포럼에서 질문 또는 답변</a>'
