@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune용 앱 구성 정책
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune에서 iOS 또는 Android 디바이스에 앱 구성 정책을 사용하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 01/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d5c9118714288119bd2307ddcfbfeb2ecf1d88a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232059"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567220"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 

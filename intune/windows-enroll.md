@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune을 사용하여 Windows 디바이스에 대한 등록 설정
-titlesuffix: ''
+titleSuffix: ''
 description: Windows 디바이스에 대한 등록을 설정합니다.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 09/27/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2192b6d653bfb51503b006a5045d454c202618f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d7dd4ab5f7cecfa8a765b6dfa038b73015a0c768
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234114"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567298"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 등록 설정
 
@@ -42,8 +43,8 @@ Intune 관리자는 다음과 같은 방식으로 등록을 간소화할 수 있
 
 ||**Azure AD Premium**|**기타 AD** |
 |----------|---------------|---------------|  
-|**Windows 10**|[자동 등록](#enable-windows-10-automatic-enrollment) |[사용자 등록](#enable-windows-enrollment-without-azure-ad-premium)|
-|**이전 버전의 Windows**|[사용자 등록](#enable-windows-enrollment-without-azure-ad-premium)|[사용자 등록](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[자동 등록](#enable-windows-10-automatic-enrollment) |사용자 등록|
+|**이전 버전의 Windows**|사용자 등록|사용자 등록|
 
 자동 등록을 사용할 수 있는 조직에서는 Windows 구성 디자이너 앱을 사용하여 [디바이스 대량 등록](windows-bulk-enroll.md)을 구성할 수도 있습니다.
 

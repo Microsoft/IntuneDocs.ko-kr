@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에 앱 추가
-titlesuffix: ''
+titleSuffix: ''
 description: 사용자 및 디바이스에 앱을 할당할 수 있도록 앱을 Microsoft Intune에 추가하는 방법을 알아봅니다. Intune은 다양한 앱 유형을 지원합니다.
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c0f7723e242a77b85db1f9007f26697769edd
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3dfd2442d737b91d5722f26313ac1d0200a341a7
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229890"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568377"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가 
 

@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune에서 iOS 대량 구매 앱 관리
-titlesuffix: ''
+titleSuffix: ''
 description: iOS 스토어에서 대량 구매한 앱을 Microsoft Intune에 동기화하고 해당 사용을 추적 및 관리하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 606fe0dfe7160d6fe61366db98b7f22a45216bd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dca219f1593265e0bf6447c054969548d5d79351
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229839"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570639"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 앱을 관리하는 방법
 
@@ -124,11 +125,11 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 | # | 시나리오                                | Apple VPP 프로그램에 초대                              | 앱 설치 프롬프트 | Apple ID에 대한 프롬프트 |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – 사용이 허가된 사용자                             | Y                                                                                               | Y                                           | Y                                 |
-| 2 | 회사 – 사용이 허가된 사용자(감독되지 않은 디바이스)     | Y                                                                                               | Y                                           | Y                                 |
-| 3 | 회사 – 사용이 허가된 사용자(감독된 디바이스)         | Y                                                                                               | N                                           | Y                                 |
-| 4 | BYOD – 사용이 허가된 디바이스                           | N                                                                                               | Y                                           | N                                 |
-| 5 | 회사 – 사용이 허가된 디바이스(감독되지 않은 디바이스)                           | N                                                                                               | Y                                           | N                                 |
+| 1 | BYOD – 사용이 허가된 사용자                             | 지원                                                                                               | 지원                                           | 지원                                 |
+| 2 | 회사 – 사용이 허가된 사용자(감독되지 않은 디바이스)     | 지원                                                                                               | 지원                                           | 지원                                 |
+| 3 | 회사 – 사용이 허가된 사용자(감독된 디바이스)         | 지원                                                                                               | N                                           | 지원                                 |
+| 4 | BYOD – 사용이 허가된 디바이스                           | N                                                                                               | 지원                                           | N                                 |
+| 5 | 회사 – 사용이 허가된 디바이스(감독되지 않은 디바이스)                           | N                                                                                               | 지원                                           | N                                 |
 | 6 | 회사 – 사용이 허가된 디바이스(감독된 디바이스)                           | N                                                                                               | N                                           | N                                 |
 | 7 | 키오스크 모드(감독된 디바이스) – 사용이 허가된 디바이스 | N                                                                                               | N                                           | N                                 |
 | 8 | 키오스크 모드(감독된 디바이스) – 사용이 허가된 사용자   | --- | ---                                          | ---                                |

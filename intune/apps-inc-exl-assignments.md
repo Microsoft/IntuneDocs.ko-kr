@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune에서 앱 할당 포함 및 제외
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune을 사용하여 앱 할당을 포함하거나 배제하는 방법에 대해 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30bcb5a297d61ad1a9aab6a44231e281406c883e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 48ec49b0539711fa50083850ea394a369a3c65b9
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234803"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59570834"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune에서 앱 할당 포함 및 제외
 

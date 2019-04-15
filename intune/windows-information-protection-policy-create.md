@@ -1,5 +1,6 @@
 ---
-title: WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포 | Microsoft Intune
+title: WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
+titleSuffix: Microsoft Intune
 description: Microsoft Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
 keywords: ''
 author: Erikre
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231573"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569768"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
 
@@ -125,7 +127,8 @@ WIP를 통해 보호하려는 앱을 추가한 후에는 **WIP 학습**을 사�
 
 WIP 학습은 WIP 지원 앱 및 WIP 알 수 없는 앱을 모니터하는 데 사용할 수 있는 보고서입니다. 알 수 없는 앱은 조직의 IT 부서에서 배포하지 않은 앱입니다. “차단” 모드에서 WIP를 적용하기 전에 생산성 저하를 방지하기 위해 보고서에서 이러한 앱을 내보내 WIP 정책에 추가할 수 있습니다.
 
-<!-- 1631908 --> WIP 지원 앱에 대한 정보뿐 아니라 웹 사이트와 작업 데이터를 공유한 디바이스 요약도 볼 수 있습니다. 이 정보를 사용하여 그룹 및 사용자 WIP 정책에 추가할 웹 사이트를 확인할 수 있습니다. 요약은 WIP 지원 앱에서 액세스할 수 있는 웹 사이트 URL을 보여줍니다.
+<!-- 1631908 -->
+WIP 지원 앱에 대한 정보뿐 아니라 웹 사이트와 작업 데이터를 공유한 디바이스 요약도 볼 수 있습니다. 이 정보를 사용하여 그룹 및 사용자 WIP 정책에 추가할 웹 사이트를 확인할 수 있습니다. 요약은 WIP 지원 앱에서 액세스할 수 있는 웹 사이트 URL을 보여줍니다.
 
 WIP 지원 앱 및 WIP 알 수 없는 앱으로 작업하는 경우, 보호되는 앱 목록에 올바른 앱이 있는지 소그룹으로 확인하면서 **자동** 또는 **재정의 허용**으로 시작하는 것이 좋습니다. 이 확인이 완료되면 최종 적용 정책인 **차단**으로 변경할 수 있습니다.
 

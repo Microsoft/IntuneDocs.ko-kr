@@ -3,24 +3,26 @@ title: Microsoft Intune에서 SCEP 또는 PKCS 인증 제거 - Azure | Microsoft
 titleSuffix: ''
 description: 관리자는 초기화 또는 사용 중지 조치를 사용하여 Microsoft Intune에서 인증서를 제거할 수 있습니다 디바이스 등록 취소 또는 준수 정책 제거 등 인증서가 자동으로 제거되는 시나리오가 있습니다. Intune 라이선스를 분실하거나 제거한 경우와 같이 인증서가 디바이스에 자동으로 남아 있는 시나리오도 있습니다. Android, Android 엔터프라이즈, iOS, macOS 및 Windows 디바이스에 대한 다양한 방법을 참조하세요.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 977e7006d39ae76516d5b06019e463d1018aaa79
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.reviewer: lacranda
+ms.openlocfilehash: 6a1280ca2a78853ae188ad68620f0b82846a365a
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229261"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59569261"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune에서 SCEP 및 PKCS 인증서 제거
 

@@ -1,6 +1,6 @@
 ---
 title: Android 엔터프라이즈 디바이스에 관리되는 Google Play 앱 할당
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 관리되는 Google Play 스토어에서 Android 엔터프라이즈 디바이스에 앱을 동기화하고 할당하는 방법을 파악합니다.
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f203c48a37919ebc9da8915d7eece89f3a3a85c4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 2b99f9e394fdced985b5b1309640b09b8e7fa5e6
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238577"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568754"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune을 사용하여 Android 엔터프라이즈 디바이스에 관리되는 Google Play 앱 추가
 

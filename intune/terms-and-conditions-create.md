@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 사용 약관 설정
-titlesuffix: ''
+titleSuffix: ''
 description: Intune용 회사 포털에서 사용자에게 표시되는 사용 약관을 설정합니다.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 10/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b0571ad6196277ee2bc257d72cc4db24fcc3424
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7c056e86f7e768d79b4851fda327dc2e32fa349c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237950"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567311"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>사용자 액세스에 대한 사용 약관
 

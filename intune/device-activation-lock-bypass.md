@@ -1,6 +1,6 @@
 ---
 title: Intune을 사용하여 iOS 활성화 잠금 무시
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune을 사용하여 iOS 활성화 잠금을 무시하고 잠긴 디바이스에 액세스하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d44636baaa6b4be71ac6a80369286065e586293
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 406a08788663603340ab4af78217a07e68e66604
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237489"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568598"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune을 사용하여 감독된 iOS 디바이스에서 활성화 잠금 무시
 

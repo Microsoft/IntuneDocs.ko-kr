@@ -1,5 +1,6 @@
 ---
-title: 규정 준수를 위해 Microsoft Intune과 Jamf Pro 통합 | Microsoft Intune
+title: 준수를 위해 Microsoft Intune과 Jamf Pro 통합
+titleSuffix: Microsoft Intune
 description: 보안 Jamf 관리 디바이스를 도우려면 Azure Active Directory의 조건부 액세스와 함께 Microsoft Intune 준수 정책을 사용합니다.
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 01/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55e7dffa72ccdd77d8d6069923437ad49f2456fe
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 57527d0b1825d0e8d3fefb63d1b960ab3fb5c676
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233248"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569482"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>준수를 위해 Intune과 Jamf Pro 통합
 

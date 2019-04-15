@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56323405"
+---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10 자동 등록 사용
 
 자동 등록을 통해 사용자가 Intune에 Windows 10 디바이스를 등록할 수 있습니다. 등록하려면 사용자가 회사 계정을 개인적으로 소유한 디바이스에 추가하거나 회사 소유 디바이스를 Azure Active Directory에 연결합니다. 디바이스는 백그라운드에서 등록되어 Azure Active Directory에 연결됩니다. 등록된 디바이스는 Intune을 통해 관리됩니다.

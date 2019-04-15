@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune의 앱 관리란?
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune의 플랫폼별 클라이언트 앱 관리 기능에 대해 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 34807edabf99a107c259fdfae5e43db18084fb67
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850910"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59569066"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune 앱 관리란?
 
@@ -44,7 +45,7 @@ Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 �
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | 디바이스 및 사용자에게 앱 추가 및 할당 | 예 | 예 | 예 | 예 | 예 |
 | Intune에 등록되지 않은 디바이스에 앱 할당 | 예 | 예 | 아니요 | 아니요 | 아니요 |
-| 앱 구성 정책을 사용하여 앱의 시작 동작 제어 | 아니요 | 예 | 아니요 | 아니요 | 아니요 |
+| 앱 구성 정책을 사용하여 앱의 시작 동작 제어 | 예 | 예 | 아니요 | 아니요 | 아니요 |
 | 모바일 앱 프로비전 정책을 사용하여 만료된 앱 갱신 | 아니요 | 예 | 아니요 | 아니요 | 아니요 |
 | 앱 보호 정책이 적용되는 앱에서 회사 데이터 보호 | 예 | 예 | 아니요 | 아니요1 | 아니요 |
 | 설치된 앱에서 회사 데이터만 제거(앱 선택적 초기화) | 예 | 예 | 아니요 | 예 | 예 |

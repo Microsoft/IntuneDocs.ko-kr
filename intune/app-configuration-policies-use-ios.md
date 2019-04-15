@@ -1,6 +1,6 @@
 ---
 title: 관리되는 iOS 디바이스용 앱 구성 정책 추가
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 앱 구성 정책을 사용하여 iOS 앱을 실행할 때 이 앱에 구성 데이터를 제공하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 12/12/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f890fcf45905c759c5946ea1fbaf834f7b96958
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9273d547d72fd6cf10d2addc5efff2eba8e18205
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230638"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568364"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>관리되는 iOS 디바이스용 앱 구성 정책 추가
 
