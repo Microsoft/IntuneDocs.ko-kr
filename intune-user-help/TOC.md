@@ -8,10 +8,12 @@
 
 ## [회사 포털에 로그인](sign-in-to-the-company-portal.md)
 
-## [Android 디바이스 사용](using-your-android-device-with-intune.md)
-### [Android 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-### [디바이스 등록](enroll-your-device-in-Intune-android.md)
-#### [Android for Work로 디바이스 등록](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+## Android 디바이스 사용
+### [Android 디바이스를 등록하는 이유](why-enroll-android-device.md)
+### 디바이스 등록
+#### [Android 디바이스 등록](enroll-device-android-company-portal.md)  
+#### [Android 회사 프로필에 등록](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Microsoft Intune 앱에 등록](enroll-device-android-microsoft-intune-app.md)
 ### [디바이스에서 관리되는 앱 사용](use-managed-apps-on-your-device-android.md)
 ### [디바이스 암호화](encrypt-your-device-android.md)
 ### [PIN 또는 암호 설정](set-your-pin-or-password-android.md)
@@ -23,16 +25,15 @@
 #### [디바이스 등록 취소](unenroll-your-device-from-intune-android.md)
 #### [사용 약관을 거부한 경우 디바이스 등록 취소](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [Android의 일반적인 문제 해결](troubleshoot-your-device-android.md)
+### Android의 일반적인 문제 해결
 #### [디바이스 준수 확인](check-compliance-on-your-device-android.md)
 #### [Samsung Knox의 일반적인 문제 해결](samsung-knox-errors-android.md)
 #### [디바이스를 업데이트하여 Outlook 설치](update-device-outlook-android.md)
 
-#### 로그를 사용하여 문제 해결
+#### 로깅
 ##### [자세한 정보 로깅 설정](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-##### [전자 메일을 사용하여 로그 보내기](send-logs-to-your-it-admin-by-email-android.md)
+##### [업로드 및 이메일 로그](send-logs-to-your-it-admin-by-email-android.md)
 ##### [USB 케이블을 사용하여 로그 보내기](send-logs-to-your-it-admin-using-cable-android.md)
-##### [등록 오류 제출](send-enrollment-errors-to-your-it-admin-android.md)
 ##### [Microsoft에 오류 전송](send-logs-to-microsoft-android.md)
 
 ### 운영 체제 질문

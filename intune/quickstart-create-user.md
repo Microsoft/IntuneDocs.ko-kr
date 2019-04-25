@@ -14,11 +14,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511375"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>빠른 시작: Intune에서 사용자 만들기 및 사용자에게 라이선스 할당
 

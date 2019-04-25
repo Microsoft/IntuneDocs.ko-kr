@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 441ae9549ef6fda093a69268b5aa698b9c6855c5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505712"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Intune에서 관리되는 디바이스에 대한 등록 옵션
 

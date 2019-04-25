@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513993"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune이 회사를 위해 할 수 있는 일은 무엇일까요?
 Microsoft Intune은 직원이 회사 데이터를 보호하는 동시에 생산성을 높일 수 있도록 하는 클라우드 기반 EMM(엔터프라이즈 이동성 관리) 서비스입니다.
