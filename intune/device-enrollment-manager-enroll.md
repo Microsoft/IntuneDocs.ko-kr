@@ -1,6 +1,6 @@
 ---
 title: 디바이스 등록 관리자 계정을 사용하여 디바이스 등록
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 디바이스 등록 관리자 계정을 사용하여 Intune에 디바이스를 등록합니다.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a12d162b9877bbbc73ecbcc7bb2ed2f1e0095b9e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 6bb3289bf2136506903d1fefe6c5170580a6fc11
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509820"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>디바이스 등록 관리자 계정을 사용하여 Intune에서 디바이스 등록
 
@@ -32,12 +33,14 @@ DEM(디바이스 등록 관리자) 계정을 사용하여 단일 Azure Active Di
 
 DEM 사용자 계정 및 DEM 사용자 계정을 사용하여 등록된 디바이스에는 다음과 같은 제한 사항이 있습니다.
 
+  - DEM 계정 사용자에게 Intune 라이선스가 할당되어야 합니다.
   - 회사 포털에서 초기화를 수행할 수 없습니다. Azure Portal의 Intune에서 DEM 사용자 계정으로 등록된 디바이스를 초기화할 수 있습니다.
   - 회사 포털 앱 또는 웹 사이트에 로컬 디바이스만 표시됩니다.
   - DEM 사용자 계정은 앱 관리에 대한 사용자별 Apple ID 요구 사항으로 인해 Apple VPP 사용자 라이선스를 사용하여 Apple VPP(Volume Purchase Program) 앱을 사용할 수 없습니다.
   - Apple VPP 디바이스 라이선스가 있는 경우 디바이스는 VPP 앱을 설치할 수 있습니다.
   - Windows 10 1803+를 제외하고 디바이스에 대한 조건부 액세스가 차단됨
-  - DEM 계정을 사용하여 등록된 각 디바이스에는 자체 Intune 디바이스 라이선스가 있어야 합니다.
+  - DEM 계정으로 등록된 모든 디바이스는 Intune에서 관리할 수 있도록 적절한 라이선스가 부여되어야 합니다. 라이선스는 Intune 사용자 라이선스 또는 Intune 디바이스 라이선스일 수 있습니다.
+
 
 
 ## <a name="add-a-device-enrollment-manager"></a>디바이스 등록 관리자 추가

@@ -1,32 +1,34 @@
 ---
 title: 디바이스 등록 문제 해결
-description: 디바이스 등록 문제 해결을 위한 제안 사항
+titleSuffix: Microsoft Intune
+description: Microsoft Intune에서 디바이스 등록 문제 해결을 위한 제안 사항.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509226"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>Intune에서 디바이스 등록 문제 해결
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
-이 문서에서는 디바이스 등록 문제 해결을 위한 제안 사항을 제공합니다. 이 정보로 문제가 해결되지 않는 경우 [Microsoft Intune에 대한 지원을 받는 방법](get-support.md)을 참조하여 도움을 얻을 수 있는 다른 방법을 찾아보세요.
+이 문서에서는 [디바이스 등록](device-enrollment.md) 문제 해결을 위한 제안 사항을 제공합니다. 이 정보로 문제가 해결되지 않는 경우 [Microsoft Intune에 대한 지원을 받는 방법](get-support.md)을 참조하여 도움을 얻을 수 있는 다른 방법을 찾아보세요.
 
 
 ## <a name="initial-troubleshooting-steps"></a>초기 문제 해결 단계
@@ -100,7 +102,7 @@ ms.locfileid: "57238679"
 
 1.  MDM 기관이 [적절하게 설정](mdm-authority-set.md)되었는지 확인합니다.
     
-2.  사용자의 자격 증명이 Azure Active Directory와 올바로 동기화되었는지 확인합니다. 사용자의 UPN이 Office 365 포털에서 Active Directory 정보와 일치하는지 확인할 수 있습니다.
+2.  사용자의 자격 증명이 Azure Active Directory와 올바로 동기화되었는지 확인합니다. 사용자의 UPN이 Microsoft 365 관리 센터에서 Active Directory 정보와 일치하는지 확인할 수 있습니다.
     UPN이 Active Directory 정보와 일치하지 않으면 다음을 수행합니다.
 
     1.  로컬 서버에서 DirSync를 해제합니다.
@@ -131,7 +133,7 @@ ms.locfileid: "57238679"
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>회사 이름에 특수 문자가 포함되어 있으면 정책을 만들거나 디바이스를 등록할 수 없습니다.
 **문제:** 정책을 만들거나 디바이스를 등록할 수 없습니다.
 
-**해결 방법:** [Office 365 관리 센터](https://portal.office.com/)에서, 회사 이름의 특수 문자를 제거하고 회사 정보를 저장합니다.
+**해결 방법:** [Microsoft 365 관리 센터](https://admin.microsoft.com/)에서 회사 이름의 특수 문자를 제거하고 회사 정보를 저장합니다.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>확인된 도메인이 여럿이면 로그인하거나 디바이스를 등록할 수 없습니다.
 **문제:** ADFS에 두 번째 확인된 도메인을 추가하면 이 문제가 발생할 수 있습니다. 두 번째 도메인을 UPN(사용자 계정 이름) 접미사로 사용하는 사용자는 포털에 로그인하거나 장치를 등록할 수 없습니다.
@@ -225,7 +227,7 @@ ms.locfileid: "57238679"
 
 **해결 방법 1**:
 
-사용자가 [디바이스에 필수 인증서가 없음](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)의 지침에 따라 누락된 인증서를 검색할 수 있습니다. 오류가 지속되면 해결 방법 2를 시도하세요.
+사용자가 [디바이스에 필수 인증서가 없음](/intune-user-help/your-device-is-missing-a-required-certificate-android)의 지침에 따라 누락된 인증서를 검색할 수 있습니다. 오류가 지속되면 해결 방법 2를 시도하세요.
 
 **해결 방법 2**:
 

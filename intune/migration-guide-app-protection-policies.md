@@ -1,5 +1,5 @@
 ---
-title: Intune 마이그레이션 중 앱 보호 정책 구성
+title: 마이그레이션 중 앱 보호 정책 구성
 titleSuffix: Microsoft Intune
 description: 이 아티클에서는 Microsoft Intune 마이그레이션 중 앱 보호 정책을 설정하는 데 필요한 단계를 제공합니다.
 keywords: ''
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 076750334c8faba6e9a99368d7af682b10de8962
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: c516c53c38eb033aa2a9688c40b301bedcc7a034
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508347"
 ---
 # <a name="configure-app-protection-policies-optional"></a>앱 보호 정책 구성(선택 사항)
 

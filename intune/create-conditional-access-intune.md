@@ -1,33 +1,34 @@
 ---
 title: Intune을 사용하여 디바이스 기반 조건부 액세스 설정
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune 디바이스 준수 및 모바일 앱 관리를 기준으로 디바이스 기반 조건부 액세스 정책을 만드는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508689"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>디바이스 기반 조건부 액세스 정책 만들기
 
-Intune을 통해 액세스 제어에 모바일 디바이스 규정 준수를 추가하여 Azure Active Directory의 조건부 액세스를 강화할 수 있습니다. 디바이스 준수에 대한 요구 사항을 정의하는 Intune 규정 준수 정책을 만든 경우 디바이스의 규정 준수 상태를 사용하여 앱 및 서비스에 대한 액세스를 허용하거나 차단할 수 있습니다. **디바이스가 규격으로 표시되어야 함** 설정을 사용하는 조건부 액세스 정책을 만들어 이 작업을 수행할 수 있습니다. 
+Intune을 통해 액세스 제어에 모바일 디바이스 규정 준수를 추가하여 Azure Active Directory의 조건부 액세스를 강화할 수 있습니다. 디바이스 준수에 대한 요구 사항을 정의하는 Intune 규정 준수 정책을 만든 경우 디바이스의 규정 준수 상태를 사용하여 앱 및 서비스에 대한 액세스를 허용하거나 차단할 수 있습니다. **디바이스가 규격으로 표시되어야 함** 설정을 사용하는 조건부 액세스 정책을 만들어 이 작업을 수행할 수 있습니다.  
 
-조건부 액세스 정책은 보호하려는 앱 또는 서비스, 앱 또는 서비스에 액세스할 수 있는 조건 및 정책이 적용되는 사용자를 지정합니다. 조건부 액세스는 Azure Active Directory에서 구성할 수 있는 Azure AD 프리미엄 기능이지만 Intune 포털 내에서도 이러한 동일한 정책을 설정할 수 있습니다. 
+조건부 액세스 정책은 보호하려는 앱 또는 서비스, 앱 또는 서비스에 액세스할 수 있는 조건 및 정책이 적용되는 사용자를 지정합니다. 조건부 액세스는 Azure Active Directory에서 구성할 수 있는 Azure AD 프리미엄 기능이지만 Intune 포털 내에서도 이러한 동일한 정책을 설정할 수 있습니다. *Intune*에서 액세스되는 조건부 액세스 노드는 *Azure AD*에서 액세스한 것과 동일한 노드입니다.  
 
 > [!IMPORTANT]
 > 조건부 액세스를 설정하기 전에 특정 요구 사항에 맞는지 여부에 따라 디바이스를 평가하도록 Intune 디바이스 준수 정책을 설정해야 합니다. [Intune에서 디바이스 준수 정책 시작](device-compliance-get-started.md)을 참조하세요.

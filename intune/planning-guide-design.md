@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune 설계 만들기
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 문서의 정보를 활용하여 Microsoft Intune 클라우드 전용 설계 및 구현을 위한 설계를 만들 수 있습니다.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22af3d4de296d90a89bb3d812cab0e55983e786b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512722"
 ---
 # <a name="create-a-design"></a>설계 만들기
 
@@ -110,6 +111,10 @@ Intune 설계는 [이 가이드의 다른 섹션](planning-guide.md)을 완료�
 
 Intune은 두 가지 배포 옵션 즉, 독립 실행형 및 하이브리드를 제공합니다. 독립 실행형은 클라우드에서 실행되는 Intune 서비스를 나타내며, 하이브리드는 Intune과 System Center Configuration Manager의 통합을 나타냅니다. 이 가이드는 주로 독립 실행형 옵션에 사용합니다. [어떤 옵션이 비즈니스 요구 사항에 적합한지 결정](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)하세요.
 
+> [!Important]
+>새 하이브리드 MDM 고객의 온보딩은 더 이상 사용되지 않습니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리에서 Azure의 Intune으로 이동](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) 블로그 게시물을 참조하세요.
+
+
 ## <a name="intune-tenant-location"></a>Intune 테넌트 위치
 
 조직이 글로벌 서비스를 제공하는 경우 서비스를 구독할 때 테넌트가 상주할 위치를 계획해야 합니다. 처음으로 Intune 구독을 등록하고 아래에 나와 있는 전 세계의 지역에 매핑할 때 국가가 정의됩니다.
@@ -133,7 +138,7 @@ Intune은 두 가지 배포 옵션 즉, 독립 실행형 및 하이브리드를 
 
 -   PKI(공개 키 인프라)
 
-아래에서 이러한 일반적인 외부 종속성을 더 자세히 살펴보겠습니다.
+다음에서는 이러한 일반적인 외부 종속성을 더 자세히 살펴보겠습니다.
 
 ### <a name="identity"></a>ID
 
@@ -399,11 +404,9 @@ Intune을 사용하여 여러 방법으로 사용자 또는 디바이스에 앱�
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 준수 정책 요구 사항을 파악할 수 있습니다.
 #### <a name="conditional-access-policies"></a>조건부 액세스 정책
 
-조건부 액세스는 규격 디바이스만 메일 및 기타 회사 리소스에 액세스하도록 허용하는 데 사용됩니다. Intune은 EMS(Enterprise Mobility + Security)에서 작동하여 회사 리소스에 대한 액세스를 제어합니다. 사용자는 조건부 액세스가 필요한지와 보호해야 하는 대상을 결정해야 합니다. [조건부 액세스](conditional-access.md)에 대해 자세히 알아보세요.
+조건부 액세스는 규격 디바이스만 메일 및 기타 회사 리소스에 액세스하도록 허용하는 데 사용됩니다. Intune은 EMS(Enterprise Mobility + Security)에서 작동하여 회사 리소스에 대한 액세스를 제어합니다. 조건부 액세스가 필요한지와 보호해야 하는 대상을 결정해야 합니다. [조건부 액세스](conditional-access.md)에 대해 자세히 알아보세요.
 
-온라인 액세스의 경우 조건부 액세스 정책에서 대상으로 지정할 플랫폼 및 사용자 그룹을 결정하세요. 또한 Exchange Online 또는 Exchange 온-프레미스용 Intune Service-to-Service Connector를 설치 또는 구성해야 하는지 여부를 결정합니다. 다음에서 Intune Service-to-Service Connector를 설치하고 구성하는 방법을 자세히 알아보세요. <!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+온라인 액세스의 경우 조건부 액세스 정책에서 대상으로 지정할 플랫폼 및 사용자 그룹을 결정합니다. 또한 Exchange 온-프레미스용 Intune 커넥터를 설치 또는 구성해야 하는지 여부를 결정합니다. 
 
 -   [Exchange 온-프레미스](exchange-connector-install.md)
 

@@ -5,10 +5,11 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b5308eb1f9d83bcc9b9cbc29cac9bcf09356e77
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 293fa40b59d0005f60aad45a3fc42d3dd790857d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510149"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune의 등록된 디바이스 관리 기능
 
@@ -30,7 +31,7 @@ Microsoft Intune에서 다양한 디바이스를 서비스에 *등록*하여 관
 
 이 문서에서는 디바이스를 등록한 후 제공되는 기능의 전체 목록이 나와 있습니다.
 
-관리, 인벤토리, 앱 배포, 프로비저닝 및 만료는 모두 Intune 포털을 통해 처리됩니다.
+관리, 인벤토리, 앱 배포, 프로비저닝 및 만료는 모두 Azure Portal의 Intune을 통해 처리됩니다.
 
 사용자가 앱을 설치하고, 디바이스를 등록 및 제거하고, 해당 IT 부서 또는 기술 지원팀에 문의할 수 있는 회사 포털에 액세스할 수 있습니다.
 
@@ -42,7 +43,7 @@ Microsoft Intune에서 다양한 디바이스를 서비스에 *등록*하여 관
 |--------------|-----------|--------------------|
 |구성 정책<br><br>사용자 지정 정책| 조직의 모바일 디바이스에서 많은 설정과 기능을 관리할 수 있습니다. 예를 들어 암호를 요구하고, 실패한 시도 횟수를 제한하고, 화면 잠금 전 시간을 제한하고, 암호 만료 시간을 설정하고, 이전에 사용한 암호의 사용을 금지할 수 있습니다. 디바이스 카메라 또는 웹 브라우저와 같은 하드웨어 및 소프트웨어 기능의 사용을 제어할 수도 있습니다.<br><br>구성 정책에 필요한 설정이 포함되어 있지 않은 경우 사용자 지정 정책을 사용합니다. iOS 디바이스의 경우 Apple 구성기 도구에서 내보낸 설정을 가져올 수 있습니다. 다른 디바이스의 경우 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 디바이스에서 설정 및 기능을 구성할 수 있습니다.|[Microsoft Intune 정책을 사용하여 디바이스의 설정 및 기능 관리](device-compliance-get-started.md)|
 |원격 초기화, 원격 잠금 및 암호 재설정|디바이스를 분실하거나 도난당하는 경우 중요한 데이터를 지웁니다. 예를 들어, 원격으로 디바이스를 잠그거나, 공장 설정으로 복원하거나, 회사 데이터만 삭제할 수 있습니다.<br><br>디바이스에 액세스하는 방법을 잊어버리거나 분실 또는 도난당한 디바이스를 잠그거나 분실 또는 도난당한 디바이스의 데이터를 초기화할 경우 암호를 재설정할 수 있습니다.|[원격 잠금](device-remote-lock.md) 또는 [암호 재설정](device-passcode-reset.md)으로 디바이스 보호 지원|
-|키오스크 모드|화면 캡처 및 전원 스위치와 같은 모바일 디바이스의 특정 기능을 잠글 수 있습니다. 또한 지정한 단일 앱을 실행하도록 디바이스를 제한할 수 있습니다.|[Microsoft Intune의 iOS 구성 정책 설정](device-restrictions-ios.md)|
+|키오스크 모드|화면 캡처 및 전원 스위치와 같은 모바일 디바이스의 특정 기능을 잠글 수 있습니다. 또한 지정한 단일 앱을 실행하도록 디바이스를 제한할 수 있습니다. |[Microsoft Intune의 iOS 구성 정책 설정](device-restrictions-ios.md)|
 
 ## <a name="app-management"></a>앱 관리
 

@@ -1,27 +1,29 @@
 ---
 title: 삼성 Knox 모바일 등록을 사용하여 Android 디바이스 자동 등록
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 삼성 KME를 사용하여 Android 디바이스를 등록하는 방법 알아보기
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 47627bc9f223c301fd04b88c0080b3a6fea26fe8
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3f753b959d7b2c64358abd92f4276a8e7f55c0f6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504013"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 디바이스 자동 등록
 
@@ -31,10 +33,10 @@ ms.locfileid: "53032470"
 
 1. Knox 포털에서:
     1. [MDM 프로필 만들기](#create-mdm-profile)
-    2. [장치 추가](#add-devices)
-    3. [장치에 MDM 프로필 할당](#assign-an-mdm-profile-to-devices)
+    2. [디바이스 추가](#add-devices)
+    3. [디바이스에 MDM 프로필 할당](#assign-an-mdm-profile-to-devices)
 2. Knox 포털에서 [최종 사용자 로그인을 구성](#configure-how-end-users-sign-in)합니다.
-3. [장치를 배포](#distribute-devices)합니다.
+3. [디바이스를 배포](#distribute-devices)합니다.
 
 
 Knox 배포 프로그램에 참여하는 공인 재판매인으로부터 디바이스를 구매하면 디바이스 식별자(일련 번호 및 IMEI) 목록이 자동으로 Knox 포털에 추가됩니다.
@@ -96,7 +98,7 @@ MDM 프로필을 디바이스에 할당하려면 다음 방법 중 하나를 사
 - **KDA(Knox 배포 앱) 사용**: KME를 사용하여 등록해야 하는 기존 디바이스가 있는 경우 이 방법을 사용합니다. Bluetooth 또는 NFC를 사용하여 이 방법으로 Knox 포털에 디바이스를 추가할 수 있습니다. [KDA 사용에 대해 알아보려면 삼성 Knox 등록 사용자 가이드를 참조하세요](https://docs.samsungknox.com/KME-Getting-Started/Content/add-device-info.htm).
 
 ## <a name="assign-an-mdm-profile-to-devices"></a>디바이스에 MDM 프로필 할당
-등록하려면 먼저 Knox 포털에서 추가된 디바이스에 MDM 프로필을 할당해야 합니다. [장치 구성에 대해 알아보려면 삼성 Knox 등록 사용자 가이드를 참조하세요](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
+등록하려면 먼저 Knox 포털에서 추가된 디바이스에 MDM 프로필을 할당해야 합니다. [디바이스 구성에 대해 알아보려면 삼성 Knox 등록 사용자 가이드를 참조하세요](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
 
 ## <a name="configure-how-end-users-sign-in"></a>최종 사용자가 로그인하는 방법 구성
 

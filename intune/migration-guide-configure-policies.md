@@ -1,6 +1,6 @@
 ---
 title: Intune 마이그레이션 중 디바이스 및 앱 준수 구성
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 아티클의 목적은 Microsoft Intune 마이그레이션 중 디바이스 준수 및 앱 관리 정책을 구성하는 데 필요한 단계를 제공하는 것입니다.
 keywords: ''
 author: dougeby
@@ -10,6 +10,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a0557eff752e1fc511716fc7e5de0ebe904172d
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 76c6000c375c3128c0832f3dd6b40fe1ed4cf34b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508217"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune에 마이그레이션할 때 디바이스 준수 및 앱 관리 정책 구성
 
@@ -43,7 +44,7 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 ## <a name="task-list-for-device-compliance-policies"></a>디바이스 준수 정책에 대한 작업 목록
 
-### <a name="task-1-add-device-groups-optional"></a>작업 1: 디바이스 그룹 추가(선택 사항)
+### <a name="task-1-add-device-groups-optional"></a>태스크 1: 디바이스 그룹 추가(선택 사항)
 
 사용자 ID 대신 디바이스 ID에 따라 관리 작업을 수행해야 할 때 디바이스 그룹을 만들 수 있습니다.
 
@@ -51,11 +52,11 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 디바이스 등록 전에 미리 디바이스 그룹을 구성하면 등록 시 디바이스 범주를 사용하여 디바이스를 자동으로 그룹에 결합시킬 수 있습니다. 그러면 그룹의 디바이스 정책을 자동으로 받게 됩니다. [그룹 시작](groups-get-started.md).
 
-### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>작업 2: 리소스 액세스 프로필(Wi-Fi, VPN 및 메일 인증서) 사용
+### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>태스크 2: 리소스 액세스 프로필(Wi-Fi, VPN 및 메일 인증서) 사용
 
 리소스 액세스 프로필은 인증서 및 등록된 디바이스에 대한 액세스 구성을 제공합니다. 인증서 기반 인증을 사용하는 경우 [인증서 구성](certificates-configure.md)을 수행합니다.
 
-### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>작업 3: 디바이스 구성 프로필 만들기 및 배포
+### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>태스크 3: 디바이스 구성 프로필 만들기 및 배포
 
 디바이스 수준 설정을 적용할 디바이스 구성 프로필(예: 카메라 사용 안 함, 앱 스토어, 단일 앱 모드 구성, 홈 화면 등)을 만들어야 합니다. [디바이스 프로필](device-profiles.md)에 대해 자세히 알아보세요.
 
@@ -67,7 +68,7 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 - [iOS](custom-settings-ios.md) 사용자 지정 정책을 추가하는 방법에 대해 알아보세요.
 
-### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>작업 4: 디바이스 준수 정책 만들기 및 배포(선택 사항)
+### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>태스크 4: 디바이스 준수 정책 만들기 및 배포(선택 사항)
 
 디바이스 준수 정책은 보안 지향 설정을 평가하고 디바이스가 회사 표준을 준수하는지 여부를 보여 주는 보고를 제공합니다. 이러한 설정은 다음과 같습니다.
 
@@ -83,7 +84,7 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 -   [디바이스 준수 정책을 만드는 방법](device-compliance-get-started.md)에 대해 알아보세요.
 
-### <a name="task-5-publish-and-deploy-apps"></a>작업 5: 앱 게시 및 배포
+### <a name="task-5-publish-and-deploy-apps"></a>태스크 5: 앱 게시 및 배포
 
 Intune MDM을 사용하는 경우 앱 자동 설치를 요구하거나 회사 포털에서 앱을 사용할 수 있도록 하여 앱을 제공할 수 있습니다.
 
@@ -91,7 +92,7 @@ Intune MDM을 사용하는 경우 앱 자동 설치를 요구하거나 회사 �
 
 -   [앱 배포 방법](apps-deploy.md).
 
-### <a name="task-6-enable-device-enrollment"></a>작업 6: 디바이스 등록 사용
+### <a name="task-6-enable-device-enrollment"></a>태스크 6: 디바이스 등록 사용
 
 디바이스 등록은 디바이스를 관리하는 데 필요합니다. [회사 소유 디바이스 및 사용자의 개인 디바이스를 등록하는 방법](device-enrollment.md)에 대해 알아보세요.
 

@@ -1,31 +1,33 @@
 ---
 title: Microsoft Intune을 사용하여 모바일 디바이스에 기본 제공 앱 추가
-titlesuffix: ''
+titleSuffix: ''
 description: Intune을 사용하여 모바일 디바이스에 기본 제공 앱을 더 쉽게 설치하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3bb60d3d6bd7321ea3e378c747e87481b659888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5f46cd1295c9ecf593765cf26f4c8685eccbffa0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506834"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune에 기본 제공 앱 추가
 
-*기본 제공* 앱 유형을 사용하면 Office 365 앱과 같이 엄격히 관리되는 앱을 iOS 및 Android 장치에 쉽게 할당할 수 있습니다. Excel, OneDrive, Outlook, Skype 등의 특정 앱을 이 앱 유형에 할당할 수 있습니다. 앱을 추가하면 *기본 제공 iOS 앱* 또는 *기본 제공 Android 앱* 중 하나로 앱 유형이 표시됩니다. 기본 제공 앱 유형을 사용하여 어떤 앱을 디바이스 사용자에게 게시할지 선택할 수 있습니다.
+*기본 제공* 앱 유형을 사용하면 Office 365 앱과 같이 엄격히 관리되는 앱을 iOS 및 Android 디바이스에 쉽게 할당할 수 있습니다. Excel, OneDrive, Outlook, Skype 등의 특정 앱을 이 앱 유형에 할당할 수 있습니다. 앱을 추가하면 *기본 제공 iOS 앱* 또는 *기본 제공 Android 앱* 중 하나로 앱 유형이 표시됩니다. 기본 제공 앱 유형을 사용하여 어떤 앱을 디바이스 사용자에게 게시할지 선택할 수 있습니다.
 
 이전 버전의 Intune 콘솔에서 Intune은 Outlook, OneDrive 등의 몇 가지 관리되는 기본 Office 365 앱을 제공했습니다. 이 관리되는 앱의 앱 유형은 *관리되는 iOS 스토어 앱* 또는 *관리되는 Android 앱*으로 태그되었습니다. 이러한 앱 유형을 사용하는 대신 기본 제공 앱 유형을 사용하는 것이 좋습니다. 기본 제공 앱 유형을 사용하면 보다 유연하게 Office 365 앱을 편집하고 삭제할 수 있습니다.
 
@@ -56,15 +58,15 @@ Microsoft Intune에서 사용 가능한 앱에 기본 제공 앱을 추가하려
 4. **앱 정보** 창에서 다음 정보를 수정할 수 있습니다.
     - **이름**: 회사 포털에 표시되는 기본 제공 앱의 이름을 입력합니다. 사용하는 모든 이름이 고유한지 확인합니다. 동일한 앱 이름을 두 번 사용하는 경우에는 회사 포털에서 앱 중 하나만 사용자에게 표시됩니다.
     - **설명**: 앱에 대한 설명을 입력합니다. 
-    - **게시자**: 앱의 게시자 이름을 입력합니다.
-    - **범주**: 선택적으로, 기본 제공 앱 범주를 하나 이상 선택합니다. 이 옵션을 설정하면 사용자가 회사 포털을 찾아볼 때 앱을 더 쉽게 찾을 수 있습니다.
-    - **회사 포털에서 이 항목을 추천 앱으로 표시**: 사용자가 앱을 찾을 때 회사 포털의 기본 페이지에서 앱이 눈에 잘 띄게 표시됩니다.
-    - **정보 URL**: 선택적으로, 이 앱에 대한 정보가 포함된 웹 사이트의 URL을 입력합니다. URL은 회사 포털에서 사용자에게 표시됩니다.
-    - **개인 정보 URL**: 선택적으로, 이 앱에 대한 개인 정보 관련 정보가 포함된 웹 사이트의 URL을 입력합니다. URL은 회사 포털에서 사용자에게 표시됩니다.
+    - **게시자**: 앱 게시자의 이름을 입력합니다.
+    - **범주**: 필요한 경우 기본 제공 앱 범주를 하나 이상 선택합니다. 이 옵션을 설정하면 사용자가 회사 포털을 찾아볼 때 앱을 더 쉽게 찾을 수 있습니다.
+    - **회사 포털에서 이 항목을 추천 앱으로 표시**: 사용자가 앱을 찾아볼 때 회사 포털의 기본 페이지에 앱을 쉽게 확인할 수 있도록 표시합니다.
+    - **정보 URL**: 필요에 따라 이 앱에 대한 정보를 포함하는 웹 사이트의 URL을 입력합니다. URL은 회사 포털에서 사용자에게 표시됩니다.
+    - **개인정보취급방침 URL**: 필요에 따라 이 앱에 대한 개인정보 관련 정보를 포함하는 웹 사이트의 URL을 입력합니다. URL은 회사 포털에서 사용자에게 표시됩니다.
     - **개발자**: 선택적으로, 앱 개발자의 이름을 입력합니다.
-    - **소유자**: 선택적으로, 이 앱의 소유자 이름을 입력합니다(예: *HR 부서*).
+    - **소유자**: 필요한 경우 이 앱의 소유자 이름을 입력합니다(예: *HR 부서*).
     - **메모**: 이 앱과 연결할 모든 메모를 입력합니다.
-    - **아이콘 업로드**: 사용자가 회사 포털을 탐색할 때 앱과 함께 표시되는 아이콘을 업로드합니다.
+    - **아이콘 업로드**: 사용자가 회사 포털을 찾아볼 때 앱과 함께 표시되는 아이콘을 업로드합니다.
 4. **확인**을 선택합니다.
 5. **속성** 창에서 **저장**을 선택합니다.
 

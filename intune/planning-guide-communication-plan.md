@@ -1,27 +1,29 @@
 ---
 title: 출시 통신 계획 개발
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 아티클은 Microsoft Intune 배포에 대한 출시 통신 계획을 개발하는 데 도움이 됩니다.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513293"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>출시 통신 계획 개발
 
@@ -55,7 +57,7 @@ ms.locfileid: "52179833"
 
 대상 조직 그룹 및 사용자에게 Intune 출시 정보를 전달하는 데 사용할 수 있는 몇 가지 배달 방법이 있습니다. 다음 목록에는 몇 가지 예와 해당 방법과 함께 사용할 수 있는 웨이브가 나와 있습니다.
 
--   킥오프 웨이브에 사용되는 조직 전체의 개별 모임 또는 Skype 모임
+-   킥오프 웨이브에 사용되는 조직 전체의 개별 모임 또는 Microsoft Teams 회의
 
 -   등록 전, 등록 및 등록 후 웨이브에 사용되는 전자 메일
 

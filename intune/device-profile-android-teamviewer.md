@@ -2,28 +2,30 @@
 title: Microsoft Intune - Azure에서 디바이스 원격 관리 | Microsoft Docs
 description: TeamViewer를 사용하려면 필요한 역할, TeamViewer 커넥터를 설치 하는 방법, Azure Portal에서 Microsoft Intune을 사용하여 디바이스를 원격으로 관리하는 단계별 지침 보기
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2018
-ms.topic: article
+ms.date: 02/05/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd2d9f0a0caf87eb75ba3a9cdc123e69425ceb8b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509743"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer를 사용하여 Intune 디바이스 원격 관리
 
-[TeamViewer](https://www.teamviewer.com)를 사용하여 Intune에서 관리하는 장치를 원격으로 관리할 수 있습니다. TeamViewer는 별도 구입하는 타사 프로그램입니다. 이 항목에서는 Intune에서 TeamViewer를 구성하는 방법과 원격으로 디바이스를 관리하는 방법을 보여줍니다. 
+[TeamViewer](https://www.teamviewer.com)를 사용하여 Intune에서 관리하는 디바이스를 원격으로 관리할 수 있습니다. TeamViewer는 별도 구입하는 타사 프로그램입니다. 이 항목에서는 Intune에서 TeamViewer를 구성하는 방법과 원격으로 디바이스를 관리하는 방법을 보여줍니다. 
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -34,7 +36,7 @@ ms.locfileid: "52186191"
     - **원격 지원 업데이트**: 관리자가 TeamViewer 커넥터 설정을 수정할 수 있습니다
     - **원격 지원 요청**: 관리자가 모든 사용자에 대한 새 원격 지원 세션을 시작할 수 있습니다. 이 역할의 사용자는 범위 내의 모든 Intune 역할에 따른 제한을 받지 않습니다. 또한 범위 내에 Intune 역할이 할당된 사용자 또는 디바이스 그룹은 원격 지원을 요청할 수도 있습니다. 
 
-- 로그인 자격 증명이 있는 [TeamViewer](https://www.teamviewer.com) 계정
+- 로그인 자격 증명이 있는 [TeamViewer](https://www.teamviewer.com) 계정. 일부 TeamViewer 라이선스만 Intune과의 통합을 지원할 수 있습니다. 특정 TeamViewer 요구 사항은 [TeamViewer 통합 파트너: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/)을 참조하세요.
 
 TeamViewer를 사용하면 Intune Connector용 TeamViewer가 TeamViewer 세션을 만들고, Active Directory 데이터를 읽고, TeamViewer 계정 액세스 토큰을 저장할 수 있습니다.
 
@@ -43,7 +45,7 @@ TeamViewer를 사용하면 Intune Connector용 TeamViewer가 TeamViewer 세션�
 디바이스에 대한 원격 지원을 제공하려면 먼저 다음 단계에 따라 Intune TeamViewer 커넥터를 구성합니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Microsoft Intune**을 검색합니다.
-2. **Microsoft Intune**에서 **장치**를 선택한 다음, **TeamViewer 커넥터**를 선택합니다.
+2. **Microsoft Intune**에서 **디바이스**를 선택한 다음, **TeamViewer 커넥터**를 선택합니다.
 3. **연결**을 선택한 다음, 라이선스에 동의합니다.
 4. **권한을 부여하려면 TeamViewer에 로그인합니다**를 선택합니다.
 5. TeamViewer 사이트 웹 페이지가 열립니다. TeamViewer 라이선스 자격 증명을 입력하고 **로그인**합니다.
@@ -53,7 +55,7 @@ TeamViewer를 사용하면 Intune Connector용 TeamViewer가 TeamViewer 세션�
 커넥터를 구성한 후 원격으로 디바이스를 관리할 준비가 되었습니다. 다음 단계를 따르십시오. 
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Microsoft Intune**을 검색합니다.
-2. **Microsoft Intune**에서 **장치**를 선택한 다음, **모든 장치**를 선택합니다.
+2. **Microsoft Intune**에서 **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
 3. 목록에서 원격으로 관리하려는 디바이스를 선택합니다. 디바이스 속성에서 **새 원격 지원 세션**을 선택합니다.
 4. Intune이 TeamViewer 서비스에 연결되면 디바이스에 대한 정보를 확인할 수 있습니다. **연결**하여 원격 세션을 시작합니다.
 

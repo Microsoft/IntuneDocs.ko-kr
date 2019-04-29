@@ -1,27 +1,28 @@
 ---
 title: Intune 테스트 및 유효성 검사
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 사용자 환경에서 Intune 클라우드 전용 솔루션의 테스트 및 유효성 검사 방법.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4974dc3e86b26434cb633bd58e524d290573ecd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512868"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 테스트 및 유효성 검사
 
@@ -43,7 +44,7 @@ Microsoft Intune 구현을 테스트할 때 기능 유효성 검사 및 사용 �
 
 -   **디바이스:** 공장 기본값으로 초기화하거나 다시 설정할 수 있는 테스트 디바이스입니다.
 
--   **통합 구성 요소:** 필요한 경우 모든 통합 구성 요소(Certificate Connector, Hosted Exchange용 Intune Service To Service Connector 및 Intune On-Premises Exchange Connector)를 설치하고 구성해야 합니다.
+-   **통합 구성 요소:** 필요한 경우 모든 통합 구성 요소(인증서 커넥터 및 Intune Exchange 온-프레미스 커넥터)를 설치하고 구성해야 합니다.
 
 예측하지 못한 문제를 해결하기 위해 설계를 변경해야 할 수 있습니다. 또한 모든 설계 변경 내용은 각 변경에 대한 이유와 함께 완벽하게 문서화해야 합니다. 다음은 어떤 변경이 일어날 수 있는지를 보여 주는 예입니다.
 

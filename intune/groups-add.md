@@ -1,6 +1,6 @@
 ---
 title: 사용자 및 디바이스를 구성하기 위한 그룹 추가
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 지리, 부서 또는 하드웨어 세부사항별로 사용자 및 디바이스를 구성하는 그룹을 추가합니다.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 06/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e7d45c4f1c990123e310c8910e9b7bd3cf0ce4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9e0e3994addf8722adc8606f20517bcd4aeb7acd
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514091"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>사용자 및 디바이스를 구성하기 위한 그룹 추가
 Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사용자를 관리합니다. Intune 관리자의 경우 조직의 요구에 맞게 그룹을 설정할 수 있습니다. 그룹을 만들어 지리적 위치, 부서 또는 하드웨어 특성별로 사용자 또는 디바이스를 구성합니다. 그룹을 사용하여 대규모 작업을 관리합니다. 예를 들어 많은 사용자에 대해 정책을 설정하거나 디바이스 집합에 앱을 배포할 수 있습니다.
@@ -39,7 +40,7 @@ Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사
 3. **Intune** 창에서 **그룹**으로 이동한 다음, **모든 그룹** 창에서 **새로운 그룹**을 선택합니다.
    ![새 그룹이 선택된 Azure Portal의 스크린샷](./media/groups-add-new.png)
 4. **그룹 유형**의 경우 다음 옵션 중 하나를 선택합니다.
-    - **보안**: 보안 그룹은 사용자 그룹을 구성할 때 유용하게 사용할 수 있는 리소스입니다. 보안 그룹은 누가 어떤 리소스에 액세스할 수 있는지 정의하기 때문에 Intune 사용자 그룹으로 쉽게 변환 가능합니다. Active Directory에서 Azure Active Directory로 동기화되는 보안 그룹 또는 Office 365 관리 센터 또는 Azure Portal을 통해 Azure Active Directory에서 직접 만든 보안 그룹은 모두 Intune에서 사용자 그룹을 만드는 데 사용할 수 있습니다.
+    - **보안**: 보안 그룹은 사용자 그룹을 구성할 때 유용하게 사용할 수 있는 리소스입니다. 보안 그룹은 누가 어떤 리소스에 액세스할 수 있는지 정의하기 때문에 Intune 사용자 그룹으로 쉽게 변환 가능합니다. Active Directory에서 Azure Active Directory로 동기화되는 보안 그룹이나 Microsoft 365 관리 센터 또는 Azure Portal을 통해 Azure Active Directory에서 직접 만든 보안 그룹은 모두 Intune에서 사용자 그룹을 만드는 데 사용할 수 있습니다.
     - **Office 365**
 
 5. 새 그룹의 **이름** 및 **설명**을 입력하세요. 이러한 속성은 관리 포털에만 나타나고 사용자에게 표시되지 않습니다.

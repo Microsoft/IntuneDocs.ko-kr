@@ -1,26 +1,29 @@
 ---
-title: iOS 앱 간의 데이터 전송 관리 | Microsoft Intune
+title: iOS 앱 간의 데이터 전송 관리
+titleSuffix: Microsoft Intune
 description: 앱 간 데이터 전송을 관리하려면 Microsoft Intune에서 모바일 앱 관리를 사용하는 법을 이해합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509518"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법
 
@@ -49,11 +52,15 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
 
 2.  다음 일반화된 단계를 사용하여 Intune 또는 타사 MDM 솔루션을 통해 관리할 앱과 이메일 프로필을 배포합니다. 이 환경은 *예제 1*에서도 설명합니다.
 
-3.  다음 앱 구성 설정을 사용하여 앱을 배포합니다.
+3.  다음 앱 구성 설정을 사용하여 앱을 관리 디바이스에 배포합니다.
 
       **키** = IntuneMAMUPN, **값** = <username@company.com>
 
       예: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > Intune에서 앱 구성 정책은 등록 유형 "관리 디바이스"에 대한 정책이어야 합니다.
+       > 또한 앱은 사용 가능한 것으로 설정된 경우 Intune Company Portal에서 설치하거나 필요한 경우 디바이스에 푸시해야 합니다. 
 
 4.  등록된 디바이스에 Intune 또는 타사 MDM 공급자를 사용하여 다음에서 **열기 관리** 정책을 배포합니다.
 

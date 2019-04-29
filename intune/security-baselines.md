@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 180a4cad27082105aa41c2bd79e6f9c05a65d162
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490690"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune에서 Windows 10 보안 기준선 만들기
 
@@ -46,6 +47,10 @@ ms.locfileid: "57238611"
 이 문서에서는 보안 기준선을 사용하여 프로필을 만들고, 프로필을 할당하며, 프로필을 모니터링하는 방법을 보여 줍니다.
 
 [Windows 보안 기준선](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)은 이 기능에 대해 자세히 알아볼 수 있는 훌륭한 리소스입니다. [MDM(모바일 디바이스 관리)](https://docs.microsoft.com/windows/client-management/mdm/)은 MDM에 대한 정보 및 Windows 디바이스에서 수행할 수 있는 작업에 대해 알아볼 수 있는 훌륭한 리소스입니다.
+
+## <a name="prerequisites"></a>전제 조건
+Intune에서 기준선을 관리하려면 계정에 [정책 및 프로필 관리자](role-based-access-control.md#built-in-roles) 기본 제공 역할이 있어야 합니다.
+
 
 ## <a name="co-managed-devices"></a>공동 관리형 디바이스
 
@@ -107,7 +112,7 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 
 Microsoft 보안 팀은 지난 수년 동안 Windows 개발자 및 보안 커뮤니티와 직접 협력하여 이러한 권장 사항을 작성했습니다. 이 기준선의 설정은 가장 관련성 높은 보안 관련 구성 옵션으로 간주됩니다. 새로운 Windows 빌드마다 팀은 새로 릴리스된 기능을 기반으로 해당 권장 사항을 조정합니다.
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>그룹 정책 및 Intune에 대한 Windows 보안 기준선의 권장 사항에 차이점이 있나요? 관리하나요?
+#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>그룹 정책 및 Intune에 대한 Windows 보안 기준선의 권장 사항에 차이점이 있나요? Intune?
 
 동일한 Microsoft 보안 팀이 각 기준선에 대한 설정을 선택하고 구성했습니다. Intune은 Intune 보안 기준선의 모든 관련 설정을 포함합니다. 그룹 정책 기준선에는 온-프레미스 도메인 컨트롤러에만 적용되는 몇 가지 설정이 있습니다. 이러한 설정은 Intune의 권장 사항에서 제외됩니다. 다른 모든 설정은 동일합니다.
 

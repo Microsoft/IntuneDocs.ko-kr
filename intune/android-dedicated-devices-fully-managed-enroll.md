@@ -1,15 +1,16 @@
 ---
-title: Intune에서 Android 전용 디바이스 또는 완전 관리형 디바이스 등록
-titlesuffix: Microsoft Intune
-description: Intune에서 Android 엔터프라이즈 전용 디바이스 또는 완전 관리형 디바이스를 등록하는 방법을 알아봅니다.
+title: Intune에서 Android Enterprise 전용 디바이스 또는 완전 관리형 디바이스 등록
+titleSuffix: Microsoft Intune
+description: Intune에서 Android Enterprise 전용 디바이스 또는 완전 관리형 디바이스를 등록하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f56e2987fefcc514911f762c5fd82ca1ebc6779c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503877"
 ---
-# <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Android 전용 디바이스 또는 완전 관리형 디바이스 등록(미리 보기)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Android Enterprise 전용 디바이스 또는 완전 관리형 디바이스 등록(미리 보기)
 
-Intune에서 [Android 전용 디바이스](android-kiosk-enroll.md) 또는 [완전 관리형 디바이스](android-fully-managed-enroll.md)를 설정한 후에 디바이스를 등록할 수 있습니다. Android 디바이스를 등록하는 방법은 운영 체제에 따라 다릅니다.
+Intune에서 [Android Enterprise 전용 디바이스](android-kiosk-enroll.md) 또는 [완전 관리형 디바이스](android-fully-managed-enroll.md)를 설정한 후에 디바이스를 등록할 수 있습니다. Android Enterprise 디바이스를 등록하는 방법은 운영 체제에 따라 다릅니다.
 
 | 등록 메서드 | 전용 및 완전 관리형 디바이스에 대한 최소 Android OS 버전 |
 | ----- | ----- |

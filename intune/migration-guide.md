@@ -1,26 +1,28 @@
 ---
 title: Intune 모바일 디바이스 관리 마이그레이션 가이드
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 가이드에서는 타사 MDM 공급자에서 Microsoft Intune으로 마이그레이션하는 과정과 관련된 다양한 세부 정보를 단계적으로 안내합니다.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e293140838cd772dea4cdf810623cfe92fa0fe9e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512989"
 ---
 # <a name="intune-migration-guide"></a>Intune 마이그레이션 가이드
 
@@ -34,19 +36,19 @@ Microsoft Intune으로의 성공적인 마이그레이션은 현재 MDM(모바�
 
 이 가이드에서는 마이그레이션을 두 단계로 나누며, 이 두 단계 모두 Intune MDM으로 마이그레이션하는 전체 프로세스를 단계별로 수행하는 데 도움이 되는 작업, 전략 및 기술적 지침을 포함하고 있습니다.
 
--   [1단계: 모바일 장치 관리를 위한 Intune 준비](migration-guide-prepare.md)
+-   [1단계: 모바일 디바이스 관리를 위한 Intune 준비](migration-guide-prepare.md)
 
     -   [MDM 마이그레이션 요구 사항 평가](migration-guide-prepare.md#assess-mdm-requirements)
 
     -   [기본 설정](migration-guide-setup.md)
 
-    -   [장치 및 앱 관리 정책 구성](migration-guide-configure-policies.md)
+    -   [디바이스 및 앱 관리 정책 구성](migration-guide-configure-policies.md)
 
     -   [앱 보호 정책 구성](migration-guide-app-protection-policies.md)
 
     -   [특별 마이그레이션 고려 사항](migration-guide-considerations.md)
 
--   [2 단계: 마이그레이션 캠페인](migration-guide-campaign.md)
+-   [2단계: 마이그레이션 캠페인](migration-guide-campaign.md)
 
     -   [통신 계획](migration-guide-communication-plan.md)
 
@@ -70,4 +72,4 @@ Microsoft Intune으로의 성공적인 마이그레이션은 현재 MDM(모바�
 
 ## <a name="next-steps"></a>다음 단계
 
-[1단계: 모바일 장치 관리를 위한 Intune 준비](migration-guide-prepare.md)
+[1단계: 모바일 디바이스 관리를 위한 Intune 준비](migration-guide-prepare.md)

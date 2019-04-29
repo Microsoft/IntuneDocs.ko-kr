@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e51c13136b5dd79ba9ff395008c6a8cb3e67e9e4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515573"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포(미리 보기)
 Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Active Directory) 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 이 문서의 단계를 수행합니다.
@@ -36,6 +37,7 @@ Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Acti
 - 인터넷에 대한 액세스 권한이 있어야 합니다.
 - Active Directory에 대한 액세스 권한이 있어야 합니다(VPN 연결은 지원되지 않음).
 - OOBE(첫 실행 경험)를 거칩니다.
+- 조인하려는 도메인의 도메인 컨트롤러를 ping할 수 있습니다.
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 자동 등록 설정
 
@@ -119,7 +121,7 @@ Active Directory용 Intune Connector는 Windows Server 2016 이상을 실행하�
 
 ### <a name="configure-web-proxy-settings"></a>웹 프록시 설정 구성
 
-네트워킹 환경에 웹 프록시가 있는 경우 [기존 온-프레미스 프록시 서버 작업](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)을 참조하여 Active Directory용 Intune Connector가 제대로 작동하는지 확인합니다.
+네트워킹 환경에 웹 프록시가 있는 경우 [기존 온-프레미스 프록시 서버 작업](autopilot-hybrid-connector-proxy.md)을 참조하여 Active Directory용 Intune Connector가 제대로 작동하는지 확인합니다.
 
 
 ## <a name="create-a-device-group"></a>디바이스 그룹 만들기
@@ -210,6 +212,9 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
 1. **확인** > **만들기**를 선택합니다.  
     프로필이 만들어지고 목록에 표시됩니다.
 1. 프로필을 할당하려면 [디바이스 프로필 할당](device-profile-assign.md#assign-a-device-profile) 아래의 단계를 수행합니다. 
+
+> [!NOTE]
+> 하이브리드 Azure AD 조인을 위한 Windows Autopilot의 명명 기능은 %SERIAL%과 같은 변수를 지원하지 않으며 컴퓨터 이름에 대한 접두사만 지원합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

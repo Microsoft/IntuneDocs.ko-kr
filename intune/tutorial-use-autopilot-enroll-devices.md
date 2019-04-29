@@ -20,11 +20,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511542"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>자습서: Autopilot을 사용하여 Intune에서 Windows 디바이스 등록
 Windows Autopilot이 디바이스 등록을 간소화합니다. Microsoft Intune 및 AutoPilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드, 유지 관리 및 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. 
@@ -51,7 +51,7 @@ Autopilot 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Win
 
 Windows Autopilot을 설정하는 첫 번째 단계는 Intune에 Windows 디바이스를 추가하는 것입니다. CSV 파일을 만들고 Intune으로 가져오기만 하면 됩니다.
 
-1. 원하는 텍스트 편집기에서 Windows 디바이스를 식별하는 쉼표로 구분된 값(CSV) 목록을 만듭니다. 다음 형식을 사용하십시오.
+1. 원하는 텍스트 편집기에서 Windows 디바이스를 식별하는 쉼표로 구분된 값(CSV) 목록을 만듭니다. 다음 형식을 사용합니다.
     
     *serial-number*, *windows-product-id*, *hardware-hash*, *optional-order-id*
     

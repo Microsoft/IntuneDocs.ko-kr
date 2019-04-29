@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490571"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP에 대한 규정 준수 적용
 
@@ -109,12 +110,12 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 2. **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
 3. **이름**과 **설명**을 입력합니다.
 4. **플랫폼**에서 **Windows 10 이상**을 선택합니다.
-5. **Windows Defender ATP** 설정에서 **디바이스가 머신 위험 점수나 그 아래에 있어야 함**을 기본 설정 수준으로 설정합니다.
+5. **Windows Defender ATP** 설정에서 **디바이스가 머신 위험 점수나 그 아래에 있어야 함**을 기본 설정 수준으로 설정합니다. 위협 수준 분류는 [Windows Defender ATP에 의해 결정](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue)됩니다.
 
-  - **지우기**: 이 수준이 가장 안전합니다. 디바이스가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 디바이스는 비규격으로 평가됩니다.
-  - **낮음**: 낮은 수준의 위협만 있는 디바이스는 규격 디바이스입니다. 보통 또는 높은 위협 수준의 디바이스는 비규격 디바이스입니다.
-  - **보통**: 낮음 또는 보통 수준의 위협이 있는 디바이스는 규격 디바이스입니다. 높은 수준의 위협이 검색되는 경우 해당 디바이스는 비규격으로 간주됩니다.
-  - **높음**: 이 수준은 최소 보안이며 모든 위협 수준을 허용합니다. 따라서 높음, 보통 또는 낮은 위협 수준의 디바이스가 규격으로 간주됩니다.
+   - **지우기**: 이 수준이 가장 안전합니다. 디바이스가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 디바이스는 비규격으로 평가됩니다. (Windows Defender ATP 사용자 값 *Secure*.)
+   - **낮음**: 낮은 수준의 위협만 있는 디바이스는 규격 디바이스입니다. 보통 또는 높은 위협 수준의 디바이스는 비규격 디바이스입니다.
+   - **보통**: 낮음 또는 보통 수준의 위협이 있는 디바이스는 규격 디바이스입니다. 높은 수준의 위협이 검색되는 경우 해당 디바이스는 비규격으로 간주됩니다.
+   - **높음**: 이 수준은 최소 보안이며 모든 위협 수준을 허용합니다. 따라서 높음, 보통 또는 낮은 위협 수준의 디바이스가 규격으로 간주됩니다.
 
 6. **확인**, **만들기**를 차례로 선택하여 변경 내용을 저장하고 정책을 만듭니다.
 
@@ -126,10 +127,13 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 4. Azure AD 그룹을 포함하거나 제외하여 정책을 할당합니다.
 5. 그룹에 정책을 배포하려면 **저장**을 선택합니다. 정책의 대상이 되는 사용자 디바이스의 준수 여부가 평가됩니다.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Azure AD 조건부 액세스 정책 만들기
-비규격 디바이스인 *경우* 조건부 액세스 정책에 따라 리소스 액세스가 차단됩니다. 따라서 디바이스가 위협 수준을 초과하는 경우 SharePoint 또는 Exchange Online과 같은 회사 리소스에 대한 액세스를 차단할 수 있습니다.
+## <a name="create-a-conditional-access-policy"></a>조건부 액세스 정책 만들기
+비규격 디바이스인 *경우* 조건부 액세스 정책에 따라 리소스 액세스가 차단됩니다. 따라서 디바이스가 위협 수준을 초과하는 경우 SharePoint 또는 Exchange Online과 같은 회사 리소스에 대한 액세스를 차단할 수 있습니다.  
 
-1. [Azure Portal](https://portal.azure.com)에서 **Azure Active Directory** > **조건부 액세스** > **새 정책**을 엽니다.
+> [!TIP]  
+> 조건부 액세스는 Azure AD(Azure Active Directory) 기술입니다. *Intune*에서 액세스되는 조건부 액세스 노드는 *Azure AD*에서 액세스한 것과 동일한 노드입니다.  
+
+1. [Azure Portal](https://portal.azure.com)에서 **Intune** > **조건부 액세스** > **새 정책**을 엽니다.
 2. 정책 **이름**을 입력하고 **사용자 및 그룹**을 선택합니다. 포함 또는 제외 옵션을 사용하여 정책에 대한 그룹을 추가하고 **완료**를 선택합니다.
 3. **클라우드 앱**을 선택한 다음 보호할 앱을 선택합니다. 예를 들어 **앱 선택**을 선택한 다음 **Office 365 SharePoint Online** 및 **Office 365 Exchange Online**을 선택합니다.
 

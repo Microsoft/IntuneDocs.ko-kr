@@ -10,17 +10,18 @@ ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed3352bf494ddab61b2e8a53422de1adfae5f0c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0aff39eeb8a825c4161ee92d798dc817d5928995
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503976"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook 구성 설정 
 
@@ -35,5 +36,5 @@ Intune에서 구성 정책을 추가할 때 iOS 및 Android에서 Microsoft Outl
 Outlook 계정 설정 정보 및 Microsoft Intune에서 iOS 및 Android 디바이스에 대한 절차 단계는 [iOS 및 Android 앱 구성 설정에 대한 Outlook 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-[Intune에서 이메일 설정 구성](email-settings-configure.md)
 
+- 자세한 내용은 [Microsoft Intune용 앱 구성 정책](app-configuration-policies-overview.md)을 참조하세요.

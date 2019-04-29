@@ -1,7 +1,7 @@
 ---
- title: include file description: include file services: azure-policy author: eross-msft
+ 제목: 파일 설명 포함: 파일 서비스 포함: azure-policy 작성자: eross-msft
  
-ms.service: azure-policy ms.topic: include ms.date: 04/24/2018 ms.author: lizross ms.custom: include file
+ms.service: azure-policy ms.topic: include ms.date: 2018년 4월 24일 ms.author: lizross ms.custom: include file ms.collection: M365-identity-device-management
 ---
 
 >[!Note] 

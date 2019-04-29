@@ -9,17 +9,18 @@ ms.date: 7/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 680853446b40949309ef406a6cab5b6b0181798a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4bdaf5768c1b78fbd07a732ee6690e59638fcff1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513768"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune에서 eSIM 셀룰러 프로필 구성 - 공개 미리 보기
 

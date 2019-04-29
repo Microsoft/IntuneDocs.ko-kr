@@ -9,6 +9,7 @@ ms.date: 05/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76e0c411afe1fb4e32b26c6ad669cb91b6cd3336
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5a253894e400e4b63de40d2d8ef56cefef5b2ca0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512819"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune에서 개인 데이터 감사, 내보내기 또는 삭제
 
@@ -79,6 +80,9 @@ Intune 테넌트 고객이 Intune 계정을 취소하면 고객이 Intune 계정
 1. 로컬 AD(Active Directory)에서 사용자를 삭제합니다. 이렇게 하면 사용자가 Azure AD로 동기화되지 않고 Configuration Manager 검색으로 검색되지도 않습니다. 
 2. Configuration Manager 콘솔에서 사용자를 삭제하여 Configuration Manager에서 사용자 및 관련 데이터를 제거합니다. 콘솔에서 **자산 및 준수** > **사용자**로 이동하여 삭제할 사용자를 마우스 오른쪽 단추로 클릭한 다음, **삭제**를 클릭합니다.
 3. [AAD에서 사용자를 삭제](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)하면 Azure Active Directory와 Intune 모두에서 사용자 및 관련 데이터가 동시에 제거됩니다. 사용자가 AAD에서 삭제되면(하드 삭제) Intune은 AAD에서 삭제 신호를 수신한 다음, Intune 서비스에서 해당 사용자의 모든 개인 데이터를 자동으로 삭제하기 시작합니다. 사용자의 정보는 제거 작업 후 30일 내에 Intune 서비스에서 삭제됩니다.
+
+> [!Important]
+>새 하이브리드 MDM 고객의 온보딩은 더 이상 사용되지 않습니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리에서 Azure의 Intune으로 이동](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) 블로그 게시물을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

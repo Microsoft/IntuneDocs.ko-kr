@@ -6,21 +6,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: edb07842-6a16-482e-8c1d-541a29e169a8
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f1adab40170227926dce1eb7c14117accf1d7d0a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3b499f3171910f28a2d190d28e8ab6e945fa463a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511271"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Intune에서 데이터 저장 및 처리
 
@@ -32,7 +34,7 @@ Intune에서 [데이터를 수집](privacy-data-collect.md)한 후에는 아래�
 
 - SQLAzure 
 - 신뢰할 수 있는 컬렉션(서비스 패브릭)  
-- Azure 저장소 
+- Azure 스토리지 
 
 안정적인 서비스를 모니터링하고 제공하는 데 중요한 원격 측정(서비스 로그, 성능 로그, 오류 등)은 Microsoft의 원격 분석 데이터 저장소로 전송됩니다.
 

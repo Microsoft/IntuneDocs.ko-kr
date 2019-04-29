@@ -5,35 +5,33 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504315"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune에서 그룹 정책 설정을 구성하는 Windows 10 템플릿
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 템플릿을 사용하여 Microsoft Intune에서 그룹 정책 설정 구성
 
 조직에서 디바이스를 관리하는 경우 다른 디바이스 그룹에 적용되는 설정 그룹을 만들려고 합니다. 예를 들어 여러 디바이스 그룹이 있습니다. GroupA의 경우 특정 설정 세트를 할당하려고 합니다. GroupB의 경우 다른 설정 세트를 할당하려고 합니다. 또한 구성할 수 있는 설정의 간단한 보기를 원합니다.
 
-Microsoft Intune에서 **관리 템플릿**을 사용하여 이 작업을 완료할 수 있습니다. 관리 템플릿은 Internet Explorer, Microsoft Office 프로그램, 원격 데스크톱의 기능, OneDrive에 대한 액세스를 제어하고, 그림 암호 또는 PIN을 사용하여 로그인하는 등 수백 가지 설정을 포함합니다. 이러한 템플릿은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사하며, XML을 사용하는 [ADMX 백업 설정](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)입니다. 하지만 Intune의 템플릿은 100% 클라우드 기반입니다. 설정을 구성하고, 원하는 설정을 찾는 더욱 단순하고 간단한 방법을 제공합니다.
+Microsoft Intune에서 **관리 템플릿**을 사용하여 이 작업을 완료할 수 있습니다. 관리 템플릿은 Internet Explorer, Microsoft Office 프로그램, 원격 데스크톱의 기능, OneDrive에 대한 액세스를 제어하고, 그림 암호 또는 PIN을 사용하여 로그인하는 등 수백 가지 설정을 포함합니다. 이러한 템플릿은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사하며, XML을 사용하는 [ADMX 백업 설정](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)(다른 문서 사이트 열기)입니다. 하지만 Intune의 템플릿은 100% 클라우드 기반입니다. 설정을 구성하고, 원하는 설정을 찾는 더욱 단순하고 간단한 방법을 제공합니다.
 
 **관리 템플릿**은 Intune에 기본 제공되고, OMA-URI 사용을 포함한 사용자 지정이 필요하지 않습니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 원스톱 상점으로 이러한 템플릿 설정을 사용하여 Windows 10 디바이스를 관리합니다.
 
 이 문서에서는 Windows 10 디바이스에 대한 템플릿을 만드는 단계를 나열하고, Microsoft Intune에서 사용 가능한 모든 설정을 필터링하는 방법을 보여줍니다. 템플릿을 만들 때 디바이스 구성 프로필을 만듭니다. 그런 다음, 조직의 Windows 10 디바이스에 이 프로필을 할당하거나 배포할 수 있습니다.
-
-> [!NOTE]
-> 독립 실행형 디바이스에 대한 관리 템플릿이 지원됩니다. 현재 SCCM(System Center Configuration Manager) 공동 관리 디바이스에 대해 지원되지 않습니다.
 
 ## <a name="create-a-template"></a>템플릿 만들기
 
@@ -75,6 +73,8 @@ Microsoft Intune에서 **관리 템플릿**을 사용하여 이 작업을 완료
   ![경로를 클릭하여 사전순으로 정렬](./media/administrative-templates-windows/search-copy-settings.png)
 
   다른 예제에서 `microsoft word`를 검색합니다. Microsoft Word 프로그램에 대해 설정할 수 있는 모든 설정이 표시됩니다. `explorer`를 검색하여 템플릿에 추가할 수 있는 모든 Internet Explorer 설정을 봅니다.
+
+이 기능은 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)(다른 문서 사이트 열기)를 사용합니다. CSP는 Home, Professional, Enterprise 등과 같은 다양한 Windows 버전에서 작동합니다. CSP가 특정 버전에서 작동하는지 확인하려면 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)(다른 Docs 사이트 열기)로 이동합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

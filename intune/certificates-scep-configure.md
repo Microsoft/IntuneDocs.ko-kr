@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510127"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -36,9 +37,9 @@ ms.locfileid: "56742740"
 - **NDES 서버**: Windows Server 2012 R2 이상에서는 NDES(네트워크 디바이스 등록 서비스) 서버 역할을 설정해야 합니다. Intune은 엔터프라이즈 CA도 실행하는 서버에서 NDES 사용을 지원하지 않습니다. NDES를 호스트하도록 Windows Server 2012 R2를 구성하는 방법에 대한 지침은 [네트워크 디바이스 등록 서비스 지침](http://technet.microsoft.com/library/hh831498.aspx)을 참조하세요.
 NDES 서버는 엔터프라이즈 CA와 동일한 포리스트 내의 도메인에 조인해야 합니다. 별도의 포리스트, 격리된 네트워크 또는 내부 도메인에 NDES 서버를 배포하는 방법에 대한 자세한 내용은 [네트워크 디바이스 등록 서비스와 함께 정책 모듈 사용](https://technet.microsoft.com/library/dn473016.aspx) 항목에서 찾아볼 수 있습니다.
 
-- **Microsoft Intune Certificate Connector**: Intune 관리 포털에서 **Certificate Connector** 설치 관리자(**NDESConnectorSetup.exe**)를 다운로드합니다. NDES 역할이 있는 서버에서 이 설치 관리자를 실행합니다.  
+- **Microsoft Intune Certificate Connector**: Intune 포털에서 **디바이스 구성** > **인증서 커넥터** > **추가**로 이동하고 *SCEP용 커넥터 설치 단계*를 따릅니다. 포털의 다운로드 링크를 사용하여 인증서 커넥터 설치 관리자 **NDESConnectorSetup.exe**의 다운로드를 시작합니다.  NDES 역할이 있는 서버에서 이 설치 관리자를 실행합니다.  
 
-  - NDES 인증서 커넥터는 FIPS(Federal Information Processing Standard) 모드도 지원합니다. FIPS가 필수는 아니지만, 활성화되면 인증서를 발급하고 해지할 수 있습니다.
+이 NDES 인증서 커넥터는 FIPS(Federal Information Processing Standard) 모드도 지원합니다. FIPS가 필수는 아니지만, 활성화되면 인증서를 발급하고 해지할 수 있습니다.
 
 - **웹 애플리케이션 프록시 서버**(선택 사항): Windows Server 2012 R2 이상을 실행하는 서버를 WAP(웹 애플리케이션 프록시) 서버로 사용합니다. 이 구성의 특징은 다음과 같습니다.
   - 디바이스에서 인터넷 연결을 사용하여 인증서를 받을 수 있습니다.
@@ -298,12 +299,13 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 > Microsoft Intune Certificate Connector를 별도의 Windows 서버에 **설치해야** 합니다. 발급 CA(인증 기관)에 설치할 수는 없습니다. 또한 NDES(네트워크 디바이스 등록 서비스) 역할과 같은 서버에 **설치해야** 합니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
-2. **디바이스 구성** > **인증 기관** > **추가** 선택
-3. 커넥터 파일을 다운로드하여 저장합니다. 커넥터를 설치하려는 서버에서 액세스할 수 있는 위치에 저장합니다.
+2. **디바이스 구성** > **인증 커넥터** > **추가**를 선택합니다.
+3. SCEP 파일용 커넥터를 다운로드하여 저장합니다. 커넥터를 설치하려는 서버에서 액세스할 수 있는 위치에 저장합니다.
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. 다운로드가 완료되면 NDES(네트워크 디바이스 등록 서비스) 역할을 호스트하는 서버로 이동합니다. 그런 다음:
+
+4. 다운로드가 완료되면 NDES(네트워크 디바이스 등록 서비스)를 호스팅하는 서버로 이동합니다. 그런 다음:
 
     1. NDES 인증서 커넥터에 필요하므로 .NET 4.5 Framework가 설치되어 있는지 확인합니다. .NET 4.5 Framework는 Windows Server 2012 R2 및 최신 버전에 자동으로 포함됩니다.
     2. 설치 관리자(**NDESConnectorSetup.exe**)를 실행합니다. 설치 관리자가 NDES에 대한 정책 모듈 및 CRP 웹 서비스도 설치합니다. CRP 웹 서비스 CertificateRegistrationSvc는 IIS에서 애플리케이션으로 실행됩니다.
@@ -363,8 +365,8 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 5. **프로필** 유형 드롭다운 목록에서 **SCEP 인증서**를 선택합니다.
 6. 다음 설정을 입력합니다.
 
-   - **인증서 유형**: 사용자 인증서의 **사용자**를 선택합니다. 키오스크와 같은 사용자가 지정되지 않은 **디바이스**를 선택합니다. **디바이스** 인증서는 다음 플랫폼에서 사용할 수 있습니다.  
-     - Android Enterprise
+   - **인증서 유형**: 사용자 인증서의 **사용자**를 선택합니다. **사용자** 인증서 유형은 인증서의 주체와 SAN에 사용자 및 디바이스 특성을 모두 포함할 수 있습니다.  키오스크와 같은 사용자가 지정되지 않은 디바이스 또는 Windows 디바이스의 경우 로컬 컴퓨터 인증서 저장소에 인증서를 배치할 때 **디바이스**를 선택합니다. **디바이스** 인증서는 인증서의 주체와 SAN에 있는 디바이스 특성만 포함할 수 있습니다.  **디바이스** 인증서는 다음 플랫폼에서 사용할 수 있습니다.  
+     - Android Enterprise - 회사 프로필
      - iOS
      - macOS
      - Windows 8.1 이상

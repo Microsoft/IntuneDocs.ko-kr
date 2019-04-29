@@ -6,21 +6,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eede87fdca31e8e263d1dea78d766fec59f05f58
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511305"
 ---
 # <a name="data-collection-in-intune"></a>Intune에서 데이터 수집
 
@@ -35,7 +37,7 @@ ms.locfileid: "52186123"
 
 ## <a name="identified-data"></a>식별된 데이터
 
-Intune에서 수집하는 대부분의 개인 데이터는 식별된 데이터입니다. 이 데이터는 사용자, 디바이스 또는 응용 프로그램에 연결되며 관리 특성에 매우 중요합니다. 식별된 데이터는 사용자의 디바이스 및 응용 프로그램을 관리하고 Intune 서비스를 프로비전하는 데 사용됩니다.
+Intune에서 수집하는 대부분의 개인 데이터는 식별된 데이터입니다. 이 데이터는 사용자, 장치 또는 애플리케이션에 연결되며 관리 특성에 매우 중요합니다. 식별된 데이터는 사용자의 장치 및 애플리케이션을 관리하고 Intune 서비스를 프로비전하는 데 사용됩니다.
 
 Intune에서 수집하는 식별된 데이터는 다음을 포함할 수 있지만 이에 한정되지는 않습니다. 
 
@@ -81,7 +83,7 @@ Intune에서 수집하는 식별된 데이터는 다음을 포함할 수 있지�
     - 앱 ID
     - 크기
     - 설치 위치
-    - 응용 프로그램 인벤토리 데이터는 관리자가 회사 소유 디바이스로 표시하거나 호환되는 앱 기능이 설정된 경우에만 수집됩니다.  
+    - 애플리케이션 인벤토리 데이터는 관리자가 회사 소유 장치로 표시하거나 호환되는 앱 기능이 설정된 경우에만 수집됩니다.  
 - 고객 타사 테넌트 ID입니다(예: Apple ID). 
 
 ## <a name="pseudonymized-data"></a>가명 처리된 데이터
@@ -111,7 +113,7 @@ Intune에서 수집되는 가명 처리된 데이터는 다음을 포함할 수 
     - Windows 디바이스용 Windows ID
 - 관리되는 애플리케이션 정보
     - 관리되는 애플리케이션 ID
-    - 관리되는 응용 프로그램 디바이스 태그
+    - 관리되는 애플리케이션 장치 태그
     - Intune 디바이스 관리 ID
     - Azure Active Directory 디바이스 ID
     - 암호화 키
@@ -127,10 +129,10 @@ Intune에서 수집되는 집계된 데이터는 다음을 포함할 수 있지�
     - 등록된 디바이스 또는 사용자 수
     - 식별된 디바이스 플랫폼의 수  
     - 설치된 디바이스 수
-    - installedDeviceCount: 응용 프로그램이 설치된 디바이스의 수입니다.
-    - notApplicableDeviceCount: 응용 프로그램을 적용할 수 없는 디바이스의 수입니다.
-    - notInstalledDeviceCount: 응용 프로그램을 적용할 수 있지만 설치하지 않은 디바이스의 수입니다.
-    - pendingInstallDeviceCount: 응용 프로그램을 적용할 수 있고 설치가 보류 중인 디바이스의 수입니다.
+    - installedDeviceCount: 애플리케이션이 설치된 디바이스의 수입니다.
+    - notApplicableDeviceCount: 애플리케이션을 적용할 수 없는 디바이스의 수입니다.
+    - notInstalledDeviceCount: 애플리케이션을 적용할 수 있지만 설치하지 않은 디바이스의 수입니다.
+    - pendingInstallDeviceCount: 애플리케이션을 적용할 수 있고 설치가 보류 중인 디바이스의 수입니다.
     
 ## <a name="next-steps"></a>다음 단계
 

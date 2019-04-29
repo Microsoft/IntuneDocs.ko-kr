@@ -5,26 +5,27 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
-ms.topic: article
+ms.date: 03/18/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4f93ab1cd2c662cb97dafd19684b353268087f6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507375"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune에서 스토리지, Event Hubs 또는 Log Analytics에 로그 데이터 전송(미리 보기)
 
-Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 제공 로그가 포함되어 있습니다. **감사 로그**는 Intune에서 발생하는 다른 이벤트 또는 작업에 대한 세부 정보를 표시합니다. **작업 로그(미리 보기)** 는 등록에 성공(또는 실패)한 사용자 및 디바이스에 대한 세부 정보를 표시합니다.
+Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 제공 로그가 포함되어 있습니다. **감사 로그**는 Intune에서 발생하는 다른 이벤트 또는 작업에 대한 세부 정보를 표시합니다. **작업 로그(미리 보기)** 는 비규격 디바이스에 대한 세부 정보뿐만 아니라 등록에 성공(또는 실패)한 사용자 및 디바이스에 대한 세부 정보를 표시합니다.
 
 또한 이러한 로그를 스토리지 계정, Event Hubs 및 Log Analytics를 비롯한 Azure Monitor 서비스에 전송할 수 있습니다. 특히 다음을 수행할 수 있습니다.
 
@@ -33,7 +34,7 @@ Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 
 * 이벤트 허브로 스트리밍하여 사용자 고유의 사용자 지정 로그 솔루션을 사용하여 Intune 로그를 통합합니다.
 * Log Analytics에 Intune 로그를 전송하여 연결된 데이터에 다양한 시각화, 모니터링 및 경고를 사용하도록 설정합니다.
 
-이러한 기능은 Intune **진단 설정**의 일부분입니다. 
+이러한 기능은 Intune **진단 설정**의 일부분입니다.
 
 이 문서에서는 **진단 설정**을 사용하여 다른 서비스에 로그 데이터를 보내는 방법을 설명하고, 예제 및 예상 비용을 제공하며, 몇 가지 일반적인 질문에 대해 답변합니다.
 
@@ -82,7 +83,7 @@ Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 
 
       스토리지 계정을 사용하려는 경우 데이터를 유지(보존)하려는 기간(일)을 입력합니다. 데이터를 영구적으로 유지하려면 **보존(일)** 을 `0`(영)으로 설정합니다.
 
-    - **LOG** > **OperationalLogs**: 작업 로그(미리 보기)는 Intune에 등록하는 사용자 및 디바이스의 성공 또는 실패를 표시합니다. 스토리지 계정, Event Hub 또는 Log Analytics에 등록 로그를 보내려면 이 옵션을 선택합니다.
+    - **LOG** > **OperationalLogs**: 작업 로그(미리 보기)는 비규격 디바이스에 대한 세부 정보뿐만 아니라 Intune에 등록하는 사용자 및 디바이스의 성공 또는 실패를 표시합니다. 스토리지 계정, Event Hub 또는 Log Analytics에 등록 로그를 보내려면 이 옵션을 선택합니다.
 
       스토리지 계정을 사용하려는 경우 데이터를 유지(보존)하려는 기간(일)을 입력합니다. 데이터를 영구적으로 유지하려면 **보존(일)** 을 `0`(영)으로 설정합니다.
 
@@ -94,6 +95,19 @@ Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 
     ![Azure Storage 계정에 Intune 감사 로그를 전송하는 간단한 이미지](media/diagnostics-settings-example.png)
 
 4. 변경 내용을 **저장**합니다. 설정이 목록에 표시됩니다. 만든 후 **설정 편집** > **저장**을 선택하여 설정을 변경할 수 있습니다.
+
+## <a name="use-audit-logs-throughout-intune"></a>Intune 전체에서 감사 로그 사용
+
+등록, 규정 준수, 구성, 디바이스, 클라이언트 앱 등을 포함하여 Intune의 다른 부분에 감사 로그를 내보낼 수도 있습니다.
+
+예를 들어 디바이스 규정 준수를 사용할 때 감사 로그를 내보내려면 다음을 수행합니다.
+
+1. [Azure Portal](https://portal.azure.com/)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+2. **디바이스 규정 준수** > **모니터** > **감사 로그**를 선택합니다.
+
+    ![감사 로그를 선택하여 Intune 데이터를 Azure Monitor 스토리지, 이벤트 허브 또는 분석으로 라우팅](media/audit-logs-under-monitor-in-compliance.png)
+
+3. **데이터 내보내기 설정**을 선택합니다. 활성화되어 있지 않은 경우 **진단 설정**을 켤 수 있습니다. [Azure 모니터로 로그 보내기](#send-logs-to-azure-monitor)(이 문서)에서 설명된 대로 로그를 보낼 위치를 선택할 수도 있습니다.
 
 ## <a name="cost-considerations"></a>비용 고려 사항
 

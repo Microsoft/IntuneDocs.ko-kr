@@ -1,12 +1,12 @@
 ---
-title: 빠른 시작 - Android 디바이스에 대한 준수 정책 만들기
+title: 빠른 시작 - Android 디바이스에 대한 암호 규정 준수 정책
 titleSuffix: Microsoft Intune
 description: 이 빠른 시작에서는 Microsoft Intune을 사용하여 Android 디바이스에 필요한 암호의 길이를 설정합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: e71a9a69cfc474f311bc6acd9e8f24c776a44476
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512785"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>빠른 시작: Android 디바이스에 대한 암호 규정 준수 정책 만들기
 
@@ -32,7 +32,7 @@ ms.locfileid: "58799661"
 Intune 디바이스 준수 정책은 디바이스가 준수하는 것으로 간주되기 위해 충족해야 하는 규칙과 설정을 지정합니다. 준수 정책을 조건부 액세스와 함께 사용하여 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 디바이스 보고서를 가져오 고 비준수에 대해 조치를 할 수 있습니다.
 
 > [!IMPORTANT]
-> 암호 설정 이외에 인력을 보호하기 위한 다른 시스템 보안 설정도 고려해야 합니다. 자세한 내용은 [시스템 보안 설정](compliance-policy-create-android-for-work.md#system-security-settings)을 참조하세요.
+> 암호 설정 이외에 인력을 보호하기 위한 다른 시스템 보안 설정도 고려해야 합니다. 자세한 내용은 [시스템 보안 설정](compliance-policy-create-android-for-work.md)을 참조하세요.
 
 Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)하세요.
 
