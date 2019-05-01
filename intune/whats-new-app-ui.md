@@ -1,49 +1,97 @@
 ---
 title: Intune 최종 사용자 앱 UI 업데이트
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune을 사용하여 최종 사용자 디바이스에서 작동하는 앱의 UI가 어떻게 변경되었는지 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2018
-ms.topic: article
+ms.date: 04/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61518173"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
-최종 사용자가 이번 Microsoft Intune 릴리스에서 보게 될 앱의 UI가 어떻게 업데이트되었는지 알아봅니다. 이러한 업데이트를 이해하면 사용자 커뮤니케이션 및 배포를 지원하기 위해 만든 사용자 지정 설명서 업데이트에 도움이 될 것입니다. 사용자가 회사 포털을 사용하여 지원 센터에 전화해 지원을 요청하는 경우 사용자에게 발생하는 문제를 더 잘 해결하는 방법을 이해하는 데에도 도움이 될 수 있습니다.
+Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적으로 Intune 회사 포털 앱이 추가되고 웹 사이트가 개선됩니다. 이 문서에서는 Intune 관리자 또는 지원 담당자가 다음 작업을 수행하는 데 필요한 정보를 제공합니다.
+
+* 학생과 직원에게 앱 및 등록 변경에 대해 경고합니다.
+* 조직의 설명서 또는 기술 지원팀 절차를 업데이트합니다.  
+
+직원 또는 학생인 경우 회사 포털 도움말 설명서의 스크린샷과 링크를 꼭 확인하세요. 회사 포털 앱을 사용하는 방법에 대한 자세한 내용은 [회사 포털 사용자 도움말 설명서](https://docs.microsoft.com/intune-user-help/)를 참조하세요.  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-15-2019"></a>2019년 4월 15일 주간  
+
+### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>새로운 최종 사용자 앱(Microsoft Intune 앱) <!--3903244 -->  
+**Microsoft Intune**이라고 하는 새로운 Android 완전 관리형 디바이스용 최종 사용자 앱이 있습니다. 이 새 앱은 가벼운 최신 앱이며, 기능적으로는 회사 포털 앱과 비슷하지만 완전 관리형 회사 디바이스에 사용됩니다. 자세한 내용은 [Google Play의 Microsoft Intune 앱](https://play.google.com/store/apps/details?id=com.microsoft.intune)을 참조하세요.  
+
+디바이스 세부 정보 화면의 스크린샷 예제: 
+
+![Jane의 Android에 대한 디바이스 세부 정보를 표시하는 Microsoft Intune 앱의 스크린샷](./media/1904-intune-app-device-details.png)   
+
+**액세스 설정** 화면의 스크린샷 예제:  
+
+![액세스 등록 설정 화면을 표시하는 Microsoft Intune 앱의 스크린샷](./media/1904-intune-app-setup-access.png)   
+
+앱 메뉴의 스크린샷 예제:  
+
+![측면 메뉴를 표시하는 Microsoft Intune 앱의 스크린샷](./media/1904-intune-app-navigation-menu.png)   
+
+**도움말** 화면의 스크린샷 예제:  
+
+![Microsoft Intune 앱 도움말 화면의 스크린샷](./media/1904-intune-app-help.png)   
+
+
+## <a name="week-of-april-1-2019"></a>2019년 4월 1일 주간  
+
+### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>iOS 12 디바이스 사용자의 회사 포털 등록 변경 <!--3448635 -->  
+iOS용 회사 포털 등록 화면 및 단계가 Apple iOS 12.2에서 릴리스된 MDM 등록 변경 내용에 맞게 업데이트되었습니다. 업데이트된 워크플로는 사용자에게 다음 작업을 요청합니다.  
+
+* Safari가 회사 포털 앱으로 돌아가기 전에 회사 포털 웹 사이트를 열어서 관리 프로필을 다운로드하도록 허용합니다.  
+* 설정 앱을 열고 관리 프로필을 해당 디바이스에 설치합니다.  
+* 회사 포털 앱으로 돌아가서 등록을 완료합니다.  
+
+업데이트된 등록 단계 및 화면은 [Intune에서 iOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)을 참조하세요.  
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>iOS용 회사 포털 앱의 사용자 환경 업데이트 <!-- 2536024 -->
+iOS 디바이스용 회사 포털 앱의 홈페이지가 다시 디자인되었습니다. 이번 변화를 통해 홈페이지가 iOS UI 패턴을 더욱 충실하게 따르게 되었으며, 앱과 eBook의 검색 기능도 향상되었습니다.  
+
+## <a name="week-of-february-19-2019"></a>2019년 2월 19일 주간  
+### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Windows 10용 회사 포털 앱의 새 앱 범주 화면<!-- 3834780 WNready4Review -->  
+Windows 10용 회사 포털의 앱 찾아보기 및 선택 환경을 개선하기 위해 **앱 범주**라는 새 화면이 추가되었습니다. 이제 앱이 **추천**, **교육용**, **생산성** 등의 범주에 따라 정렬되어 사용자에게 표시됩니다. 이 변경 내용은 회사 포털 버전 10.3.3451.0 이상에 적용됩니다. 회사 포털에서 앱을 설치하는 자세한 내용은 [디바이스에 앱 설치 및 공유](/intune-user-help/install-apps-cpapp-windows)를 참조하세요.  
+
+![Windows 10 회사 포털의 앱 범주 화면 스크린샷](./media/1902_CP_app_categories.png)   
+
 
 ## <a name="week-of-november-12-2018"></a>2018년 11월 12일 주
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows 회사 포털 바로 가기 키 <!-- 2771518 -->
-최종 사용자는 바로 가기 키(액셀러레이터 키)를 사용하여 Windows 회사 포털에서 앱 및 디바이스 작업을 트리거할 수 있습니다.
+이제 최종 사용자는 [바로 가기 키(액셀러레이터 키)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts)를 사용하여 Windows 회사 포털에서 앱 및 디바이스 작업을 트리거할 수 있습니다.
 
 ## <a name="week-of-october-22-2018"></a>2018년 10월 22일이 있는 주
 
 ### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>회사 포털 앱에 대한 사용자 지정 브랜드 이미지 추가 <!-- 1916266 -->
-Microsoft Intune 관리자는 iOS 회사 포털 앱의 사용자 프로필 페이지에 배경 이미지로 표시될 사용자 지정 브랜드 이미지를 업로드할 수 있습니다. 회사 포털 앱 구성에 대한 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](company-portal-app.md)을 참조하세요.
-
-
+Microsoft Intune 관리자는 iOS 회사 포털 앱의 사용자 프로필 페이지에 배경 이미지로 표시될 사용자 지정 브랜드 이미지를 업로드할 수 있습니다. 회사 포털 앱 구성에 대한 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](company-portal-app.md)을 참조하세요.  
 
 ## <a name="week-of-august-27-2018"></a>2018년 8월 27일 주  
 
-### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트<!--2000968 -->  
-고객으로부터의 피드백에 기반한 새 기능을 회사 포털 웹 사이트에 추가했습니다. 디바이스의 기존 기능과 유용성이 크게 향상됩니다. 사이트 영역&ndash;예: 디바이스 세부 정보, 피드백, 지원 및 디바이스 개요&ndash;은 응답성이 높은 최신의 새로운 디자인을 제공합니다. [Intune 회사 포털 웹 사이트 설명서](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)는 이러한 변경 내용을 반영하도록 업데이트되었습니다.   
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트 <!--2000968 -->  
+고객으로부터의 피드백에 기반한 새 기능을 회사 포털 웹 사이트에 추가했습니다. 디바이스의 기존 기능과 유용성이 크게 향상됩니다. 디바이스 세부 정보, 피드백, 지원, 디바이스 개요 같은 사이트의 특정 영역에 응답성이 우수한 최신 디자인이 적용되었습니다. [Intune 회사 포털 웹 사이트 설명서](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)는 이러한 변경 내용을 반영하도록 업데이트되었습니다.   
 
 표시되는 업데이트는 다음을 포함합니다.  
 
@@ -63,13 +111,13 @@ Microsoft Intune 관리자는 iOS 회사 포털 앱의 사용자 프로필 페�
 ## <a name="week-of-july-16-2018"></a>2018년 7월 16일 주  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 동기화할 수 있는 더 많은 기회   
-이제 Windows용 회사 포털 앱을 사용하여 Windows 작업 표시줄 및 시작 메뉴에서 직접 동기화를 시작할 수 있습니다. 이 기능은 디바이스를 동기화하고 회사 리소스에 액세스하는 작업만 수행하는 경우에 특히 유용합니다. 새 기능에 액세스하려면 작업 표시줄 또는 시작 메뉴에 고정되어 있는 회사 포털 아이콘을 마우스 오른쪽 단추로 클릭합니다. 메뉴 옵션(점프 목록이라고도 함)에서 **이 디바이스 동기화**를 선택합니다. 회사 포털에 **설정** 페이지가 열리고 동기화가 시작됩니다.  
+이제 Windows용 회사 포털 앱을 사용하여 Windows 작업 표시줄 및 시작 메뉴에서 직접 동기화를 시작할 수 있습니다. 이 기능은 디바이스를 동기화하고 회사 리소스에 액세스하는 작업만 수행하는 경우에 특히 유용합니다. 새 기능에 액세스하려면 작업 표시줄 또는 **시작** 메뉴에 고정된 회사 포털 아이콘을 마우스 오른쪽 단추로 클릭합니다. 메뉴 옵션(점프 목록이라고도 함)에서 **이 디바이스 동기화**를 선택합니다. 회사 포털에 **설정** 페이지가 열리고 동기화가 시작됩니다.  
 
 ![디바이스의 바탕 화면에 있는 Windows 작업 표시줄의 스크린샷 회사 포털 앱 프로그램 아이콘을 클릭하여 "작업 표시줄에 고정", "창 닫기" 및 "이 디바이스 동기화" 작업 옵션이 있는 메뉴를 표시합니다.](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱의 새 검색 환경  
 
-이제 Windows용 회사 포털 앱에서 앱을 탐색하거나 검색하면 기존 **타일** 보기와 새로 추가된 **세부 정보** 보기 간에 전환할 수 있습니다. 새 보기에는 이름, 게시자, 게시 날짜 및 설치 상태와 같은 애플리케이션 세부 정보가 나열됩니다.  
+이제 Windows용 회사 포털 앱에서 앱을 탐색 또는 검색할 때 기존 **타일** 보기와 새로운 **세부 정보** 보기 간에 전환할 수 있습니다. 새로운 보기에는 이름, 게시자, 게시 날짜 및 설치 상태와 같은 애플리케이션 세부 정보가 나열됩니다.  
 
 **앱** 페이지의 **설치됨** 보기를 통해 완료 및 진행 중인 앱 설치에 대한 세부 정보를 볼 수 있습니다.  
 
@@ -82,7 +130,7 @@ Microsoft Intune 관리자는 iOS 회사 포털 앱의 사용자 프로필 페�
 ![설치된 앱을 세부 정보 보기에 보여주는 Windows용 Intune 회사 포털 앱의 스크린샷.](/intune/media/details-installed-view-cpapp-1807.png) 
 
 ## <a name="week-of-april-23-2018"></a>2018년 4월 23일 주간
-### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10 <!-- 1195010 -->용 회사 포털 앱의 탐색 보기 업데이트됨
+### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10용 회사 포털 앱의 탐색 보기 업데이트 <!-- 1195010 -->
 Windows 10용 Intune 회사 포털 앱이 [Fluent Design System의 탐색 보기](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)로 업데이트되었습니다. 앱의 옆쪽에 모든 최상위 페이지의 정적 세로 목록이 표시됩니다. 링크를 클릭하여 빠르게 페이지를 보고 페이지 간에 전환할 수 있습니다. 이 업데이트는 Intune에서 더욱 공감할 수 있고 친숙한 적응형 환경을 만들려는 Microsoft의 지속적인 노력의 일부로 여러 업데이트 중 첫 번째로 선보이는 것입니다. 
 
 ![Fluent Design 탐색 보기를 보여주는 회사 포털 앱 대시보드의 스크린샷](./media/1804_WindowsCP_Fluent_01.png)
@@ -115,7 +163,7 @@ iOS용 회사 포털 앱에 대한 주요 사용자 환경 업데이트가 릴�
 
 ## <a name="week-of-march-12-2018"></a>2018년 3월 12일 주
 
-### <a name="company-portal-for-android-visual-updates----976944---"></a>Android용 회사 포털 시각적 업데이트 <!-- 976944 -->
+### <a name="company-portal-for-android-visual-updates----976944---"></a>Android용 회사 포털의 시각적 업데이트 <!-- 976944 -->
 
 Android의 [자료 디자인](https://material.io/) 지침에 따르도록 Android용 회사 포털 앱을 업데이트했습니다.
 
@@ -134,13 +182,13 @@ Android의 [자료 디자인](https://material.io/) 지침에 따르도록 Andro
 
 ### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Windows 10용 회사 포털 앱에 대한 설정 가이드의 새로운 "디바이스 범주" 단계 <!-- 1335292 -->
 
-[장치 그룹 매핑](device-group-mapping.md)을 사용하도록 설정한 경우 이제 Windows 10용 회사 포털 앱에서 사용자가 장치를 등록한 후 장치 범주를 선택하는 과정을 안내합니다.
+[디바이스 그룹 매핑](device-group-mapping.md)을 사용하도록 설정한 경우 이제 Windows 10용 회사 포털 앱에서 사용자가 디바이스를 등록한 후 디바이스 범주를 선택하는 과정을 안내합니다.
 
 ![디바이스 그룹 매핑 범주](./media/w10_cp_category_device_setup_after_1711.png)
 
 ## <a name="week-of-november-13-2017"></a>2017년 11월 13일 주
 
-### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>버전 2.9.0에 대한 iOS 회사 포털의 향상된 디바이스 설정 워크플로 기능<!-- 1417174 -->
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>버전 2.9.0에 대한 iOS 회사 포털의 향상된 디바이스 설정 워크플로 기능 <!-- 1417174 -->
 
 iOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습니다. 언어는 더욱 친숙하게 변경되었으며, 최대한 화면을 결합했습니다. 또한 전체 설정 텍스트에서 회사 이름을 사용하여 언어가 회사에 더욱 구체적으로 변경되었습니다.
 
@@ -168,14 +216,14 @@ iOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습�
 |![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
 
 
-### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>회사 포털 앱 및 웹 사이트의 향상된 검색 기능<!-- 1418189 -->
+### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>회사 포털 앱 및 웹 사이트의 향상된 검색 기능 <!-- 1418189 -->
 이제 회사 포털 앱에서 앱 범주, 이름 및 설명 전체에 검색이 사용됩니다. 결과는 관련성이 낮은 순서로 정렬됩니다. 이 업데이트는 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)에도 제공됩니다.
 
 관련성을 추적하는 방법은 여전히 미세 조정 중이므로 회사 포털 웹 사이트의 맨 아래에서 "피드백" 링크를 사용하여 작동 방식에 대해 알려주세요.
 
 ## <a name="week-of-october-16-2017"></a>2017년 10월 16일의 주
 
-### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>회사 포털 웹 사이트의 향상된 검색 기능<!-- 1331697 -->
+### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>회사 포털 웹 사이트의 향상된 검색 기능 <!-- 1331697 -->
 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)부터는 앱 검색 기능을 개선했습니다. 이제 검색은 이름 및 설명 필드 외에도 앱 범주에서 수행됩니다. 결과는 기본적으로 정렬 관련도의 내림차순으로 정렬됩니다. 
 
 회사 포털 웹 사이트가 iOS용 회사 포털 앱의 일부로 사용되므로 iOS 사용자는 이 변경 내용을 수용합니다. Android 및 Windows용 회사 포털 앱은 향후 몇 개월 내에 유사한 업데이트를 수용하게 됩니다.
@@ -189,7 +237,7 @@ iOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습�
 
 ## <a name="week-of-october-2-2017"></a>2017년 10월 2일이 있는 주
 
-### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>회사 포털의 향상된 디바이스 설정 워크플로 기능<!-- 1490692 -->
+### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>회사 포털의 향상된 디바이스 설정 워크플로 기능 <!-- 1490692 -->
 Android용 회사 포털 앱에서 디바이스 설치 워크플로를 개선했습니다. 언어는 귀사를 위해 더욱 친숙하고 구체적으로 변경되었으며, 최대한 화면을 결합했습니다. 
 
 |이전|이러한|
@@ -253,7 +301,7 @@ Intune을 사용하는 조건부 액세스는 OAuth를 통해 iOS 디바이스�
 
 
 
-### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune MAM(모바일 애플리케이션 관리) 대화 상자에는 최신 인터페이스가 포함됨 <!-- 1199015 -->
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune MAM(모바일 애플리케이션 관리) 대화 상자에서 최신 인터페이스 제공 <!-- 1199015 -->
 
 Intune MAM(모바일 애플리케이션 관리) 대화 상자가 최신 모양과 느낌으로 업데이트됩니다. 대화 상자는 이전 스타일과 동일한 방식으로 작동합니다.
 
@@ -274,13 +322,13 @@ Windows 10용 회사 포털 앱이 __디바이스 세부 정보__ 페이지의 �
 
 ## <a name="july-2017"></a>2017년 7월
 
-### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>앱 세부 정보 페이지에 Android 디바이스의 새 정보가 표시됨 <!--1287476-->
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>앱 세부 정보 페이지에 Android 디바이스의 최신 정보 표시 <!--1287476-->
 
 Android용 회사 포털 앱의 앱 세부 정보 페이지에는 이제 IT 관리자가 해당 앱에 대해 정의한 앱 범주가 표시됩니다.
 
 ![새 앱 세부 정보 페이지](./media/cp_android_appdetails_after_1708.png)
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>모든 플랫폼에 대해 회사 포털 앱 전체에서 로그인 환경 개선됨 <!--User Story 1132123-->
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>모든 플랫폼에 대해 회사 포털 앱 전체의 로그인 환경 개선 <!--User Story 1132123-->
 
 Android, iOS 및 Windows용 Intune 회사 포털 앱에 대한 로그인 환경을 개선하게 될 향후 몇 개월 내에 제공될 변경이 있음을 알려드립니다. Azure AD에서 이 변경 내용을 적용할 경우 회사 포털 앱에 대한 모든 플랫폼에서 새로운 사용자 환경이 자동으로 나타나게 됩니다. 또한 사용자가 이제 생성된 일회용 코드를 사용하여 다른 디바이스에서 회사 포털에 로그인할 수도 있습니다. 이 기능은 사용자가 자격 증명 없이 로그인해야 할 경우에 특히 유용합니다.  
 
@@ -304,11 +352,11 @@ __새 로그인 환경__
 
 ![인증 프로세스를 진행하고 나면 회사 포털 앱에 로그인되며 이 상태는 로드 중 막대로 표현됩니다.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-__다른 장치에서 로그인 시 새 로그인 환경__
+__다른 디바이스에서 로그인 시 새 로그인 환경__
 
 ![웹 사이트가 그림으로 표시되면서 그 앞에 사람 아이콘이 포함된 회사 포털 로그인 페이지 그 아래 “로그인” 단추가 있습니다. Microsoft 개인 정보 및 쿠키 정보로 이동하게 하는 하단의 링크](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
-__다른 장치에서 로그인__ 링크를 누릅니다.
+__다른 디바이스에서 로그인__ 링크를 누릅니다.
 
 ![회사 컴퓨터의 고유 암호를 사용하여 aka.ms/devicelogin 페이지로 이동하여 로그인 시 해당 코드를 사용하라는 지침이 제공됩니다.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
@@ -373,7 +421,7 @@ Windows 10용 회사 포털 앱에 식별되거나 등록되지 않은 디바이
 
 ![작업 메뉴에서 새로운 "회사 포털 제거" 옵션을 선택하면 제공되는 확인 대화 상자 이미지 이 대화 상자에는 "회사 포털을 제거하면 디바이스를 더 이상 IT 관리자가 관리하지 않게 되며 회사 데이터, 회사 앱 및 회사 메일에 대한 액세스 권한이 제거될 수 있습니다."라는 알림이 표시됩니다. 그런 다음 "예"를 선택하여 회사 포털 앱을 제거할 것인지를 확인하라는 메시지가 표시됩니다.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>iOS용 회사 포털 앱의 앱 타일 개선 사항 <!--1230777-->
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>iOS 용 회사 포털 앱의 앱 타일 개선 사항 <!--1230777-->
 사용자가 회사 포털에 대해 설정하는 브랜딩 색을 반영하도록 홈 페이지의 앱 타일 디자인이 업데이트되었습니다.
 
 **업데이트 전**
@@ -434,7 +482,7 @@ Android 회사 포털 앱의 업데이트에는 사용자가 앱을 시작하거
 </body>
 </html>
 
-### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 회사 포털 앱에 대해 앱 설치 상태 개선 <!--676495-->
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 회사 포털 앱의 앱 설치 상태 개선 <!--676495-->
 이제 Windows 10 회사 포털 앱에서는 앱 세부 정보 페이지에 설치 진행률 표시줄을 제공합니다. 이 진행률 표시줄은 Windows 10 1주년 업데이트 이상을 실행하는 디바이스의 최신 앱에서 지원됩니다.
 
 __이전__ ![상태가 ‘설치 중’으로 표시되는 이전 버전의 로딩 화면 이미지](./media/cp_win10_install_status_before_1704.png)
@@ -479,26 +527,7 @@ __이후__ ![이제 설치 진행률 표시줄이 표시되는 업데이트된 �
 이는 사용자 인터페이스를 업데이트하여 사용자 환경을 개선할 방법에 대한 계획입니다.
 
 > [!Note]
-> 아래 이미지는 미리 보기일 수 있으며 발표된 제품은 제공된 버전과 다를 수 있음에 유의하세요.
-
-### <a name="ui-iwp"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트<!--2000968-->
-
-UI 업데이트, 간소화된 워크플로 및 향상된 접근성 기능을 통해 8월부터 새로운 회사 포털 웹 사이트 환경을 도입할 예정입니다. 여기에는 앱 공유 및 전반적인 성능 향상과 같은 고객 기반 고급 기능이 포함되어 보다 편리한 사용자 환경을 제공합니다.
-
-고객의 의견에 따라 몇 가지 새로운 기능을 추가했습니다. 그러면 다음과 같은 기존 기능과 유용성을 크게 향상시킵니다.
-
--   웹 사이트 전체 UI 개선 사항
--   앱에 대한 직접 링크를 공유하는 기능
-- 대규모 앱 카탈로그의 성능 향상
-
-이 변경 내용을 준비하기 위해 조치를 취할 필요가 없습니다. 업데이트된 회사 포털 웹 사이트가 제공될 때 알려드리겠습니다. 그러나 결국 업데이트된 스크린샷을 포함한 최종 사용자 문서를 업데이트해야 할 수 있습니다. 웹 사이트에서 iOS 앱의 **앱** 섹션을 제공하므로 iOS에서 회사 포털 앱에 대한 설명서를 업데이트해야 할 수도 있습니다.  
-
-### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>회사 포털 웹 사이트의 UI 업데이트 <!--1313244 part 2-->
-
-__추천 앱 업데이트__ 사용자가 추천하기 위해 선택한 앱을 찾아볼 수 있는 사이트에 전용 페이지를 추가하고 홈페이지의 추천 섹션에서 UI를 일부 조정했습니다.
-
-![앱을 표시하는 다양한 색상의 타일입니다. 각 앱 아래에는 큰 사각형의 색상이 있습니다. 여기서 이 색상은 앱 로고의 기본 색상에서 가져옵니다. “추천 앱” 섹션은 회사 포털 앱의 맨 위에 표시됩니다.](./media/cp_win10_colorful_tiles_after_1708.png)
-
+> 아래 이미지는 미리 보기일 수 있으며 발표된 제품은 제공된 버전과 다를 수 있습니다.  
 
 
 ### <a name="see-also"></a>참고 항목

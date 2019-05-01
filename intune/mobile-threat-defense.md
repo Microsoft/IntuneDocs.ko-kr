@@ -1,43 +1,43 @@
 ---
-title: Microsoft Intune을 사용한 Mobile Threat Defense | Microsoft Intune
+title: Microsoft Intune에서 Mobile Threat Defense 사용
+titleSuffix: Microsoft Intune
 description: MTD(Mobile Threat Defense) 파트너와 함께 Intune MTD(Mobile Threat Defense)를 사용하여 디바이스 위험에 따라 회사 리소스에 대한 액세스를 보호합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/28/2017
-ms.topic: article
+ms.date: 03/20/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 18161e8293ae92420f9437dab18e008e8e57b93a
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e364ad88591b8ecc945702659255d9378723624f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513037"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune과 Mobile Threat Defense의 통합이란?
-
-
-Intune 모바일 위협 방어 커넥터를 사용하면 선택한 모바일 위협 방어 공급업체를 준수 정책 및 조건부 액세스 규칙의 정보 소스로 활용할 수 있습니다. 이 경우 IT 관리자가 특히 손상된 모바일 디바이스에서 Exchange 및 Sharepoint와 같은 회사 리소스에 보호 계층을 추가할 수 있습니다.
+Intune은 규정 준수 정책 및 조건부 액세스 규칙에 대한 정보 소스인 Mobile Threat Defense 공급업체의 데이터를 통합할 수 있습니다. 이 정보를 사용하여 손상된 모바일 디바이스의 액세스를 차단함으로써 Exchange 및 SharePoint 같은 회사 리소스를 보호할 수 있습니다.  
 
 ## <a name="what-problem-does-this-solve"></a>이 기능을 통해 어떤 문제가 해결되나요?
+Mobile Threat Defense 공급업체의 정보를 통합하면 모바일 플랫폼에 영향을 주는 위협으로부터 회사 리소스를 보호할 수 있습니다.  
 
-회사는 OS 취약점뿐만 아니라 물리적 위협, 앱 기반 위협, 네트워크 기반 위협 등 출현하는 위협에서 중요한 데이터를 보호해야 합니다.
-
-지금까지 회사는 공격으로부터 PC를 보호하는 데 사전 예방적인 자세를 취해 왔지만 모바일 디바이스는 모니터링 및 보호되지 않고 있습니다. 모바일 플랫폼에는 앱 격리 및 소비자 앱 스토어 점검과 같은 기본 제공 보호 기능이 있지만 이러한 플랫폼은 정교한 공격에 여전히 취약합니다. 오늘날 업무에 디바이스를 사용하며 중요한 정보에 액세스해야 하는 직원이 늘어나고 있습니다. 따라서 점점 더 정교한 공격으로부터 디바이스를 보호해야 합니다.
+일반적으로 기업에서는 PC를 취약성 및 공격으로부터 선제적으로 보호하는 반면, 모바일 디바이스를 모니터링하거나 보호하지 않은 채 내버려 둡니다. 모바일 플랫폼에는 앱 격리 및 소비자 앱 스토어 점검과 같은 기본 제공 보호 기능이 있지만, 이러한 플랫폼은 정교한 공격에 여전히 취약합니다. 디바이스를 사용하여 작업을 처리하고 중요한 정보에 액세스하는 직원이 점점 많아지고 있기 때문에 Mobile Threat Defense 공급업체의 정보는 점점 정교해지는 공격으로부터 디바이스와 리소스를 보호하는 데 도움이 됩니다.  
 
 ## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense 커넥터의 작동 방식
 
-커넥터는 Intune과 선택한 모바일 위협 방어 공급업체 간에 통신 채널을 만들어 회사 리소스를 보호합니다. Intune Mobile Threat Defense 파트너는 직관적이고 배포하기 쉬운 모바일 장치용 애플리케이션을 제공합니다. 이 애플리케이션은 보고 또는 적용을 위해 Intune과 공유할 위협 정보를 적극적으로 검색하고 분석합니다. 
+Intune은 Mobile Threat Defense 커넥터를 사용하여 Intune과 고객이 선택한 Mobile Threat Defense 공급업체 간의 통신 채널을 만듭니다. Intune Mobile Threat Defense 파트너는 직관적이고 쉽게 배포할 수 있는 모바일 디바이스용 애플리케이션을 제공합니다. 이러한 애플리케이션은 위협 정보를 능동적으로 검사 및 분석하여 Intune과 공유합니다. Intune은 데이터를 보고 또는 정책 적용 목적으로 사용할 수 있습니다.  
 
-예를 들어 연결된 Mobile Threat Defense 앱이 Mobile Threat Defense 공급업체에 네트워크의 휴대폰이 메시지 가로채기(man-in-the-middle) 공격에 취약한 네트워크에 현재 연결되어 있다고 보고하는 경우 이 정보는 공유되며 적절한 위험 수준(낮음/중간/높음)으로 분류됩니다. 그런 다음, Intune에서 구성된 허용 위험 수준과 비교하여 디바이스가 손상된 동안 선택한 특정 리소스에 대한 액세스를 해지할지 여부를 확인할 수 있습니다.
+예를 들면 다음과 같습니다. 연결된 Mobile Threat Defense 앱이 Mobile Threat Defense 공급업체에 보고하기를, 네트워크의 전화기가 현재 메시지 가로채기(Man in the Middle) 공격에 취약한 네트워크에 연결되어 있습니다. 이 정보는 적절한 위험 수준(낮음/중간/높음)으로 분류됩니다. 이 위험 수준은 Intune에서 설정한 허용 위험 수준과 비교됩니다. 이 비교 결과에 따라, 디바이스가 손상된 경우 사용자가 선택한 특정 리소스에 대한 액세스 권한이 취소될 수 있습니다.
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune은 Mobile Threat Defense를 위해 어떤 데이터를 수집하나요?
 
@@ -80,3 +80,5 @@ iOS 디바이스용 앱 동기화를 사용하면 회사 및 개인 소유 iOS �
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [더 향상된 모바일](better-mobile-threat-defense-connector.md)
+- Sophos(자세한 내용은 곧 공개할 예정)
+- Wandera(자세한 내용은 곧 공개할 예정)

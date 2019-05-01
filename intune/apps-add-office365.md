@@ -1,32 +1,33 @@
 ---
-title: Intune을 사용하여 디바이스에 Office 365 앱 설치
-titlesuffix: ''
-description: Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 더 간편하게 설치하는 방법을 알아봅니다.
+title: Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 할당
+titleSuffix: ''
+description: Microsoft Intune을 사용하여 Windows 10 디바이스에 Office 365 앱을 설치하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d3db1449ec583678924fadb0db930146c3cd848
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c640e3e02d7d016785b87d681443b2c49f7a6281
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507140"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 할당
 
-이 앱 형식을 통해 관리하는 Windows 10 실행 디바이스에 Office 365 앱을 쉽게 할당할 수 있습니다. Microsoft Project Online 데스크톱 클라이언트 및 Microsoft Visio Pro for Office 365에 대한 라이선스가 있는 경우 관련 앱을 설치할 수 있습니다. 원하는 앱이 Intune 콘솔의 앱 목록에 하나의 항목으로 표시됩니다.
+앱을 할당, 모니터링, 구성 또는 보호하려면 앱을 Intune에 추가해야 합니다. 사용 가능한 [앱 유형](apps-add.md#app-types-in-microsoft-intune) 중 하나는 Windows 10 디바이스용 Office 365 앱입니다. Intune에서 이 앱 유형을 선택하면 Windows 10을 실행하는 디바이스에 Office 365 앱을 설치하고 배포할 수 있습니다. 또한 Microsoft Project Online 데스크톱 클라이언트 및 Microsoft Visio Online Plan 2에 대한 라이선스가 있는 경우 관련 앱을 할당하고 설치할 수 있습니다. 사용 가능한 Office 365 앱은 Azure 내부에서 Intune 콘솔의 앱 목록에 단일 항목으로 표시됩니다.
 
 > [!NOTE]
 > Office 365 ProPlus 라이선스를 사용하여 Microsoft Intune을 통해 배포된 Office 365 ProPlus 앱을 활성화해야 합니다. 현재 Office 365 Business 버전은 Intune에서 지원되지 않습니다.
@@ -54,18 +55,25 @@ ms.locfileid: "57229754"
 5. **추가**를 선택합니다.
 6. **앱 추가** 창의 **앱 유형** 목록에 있는 **Office 365 제품군** 아래에서 **Windows 10**을 선택합니다.
 
-이제 앱 제품군을 구성할 수 있습니다.
+## <a name="select-settings-format"></a>설정 형식 선택
 
-## <a name="configure-the-app-suite"></a>앱 패키지 구성
+**설정 형식**을 선택하여 앱 설정을 구성하는 방법을 선택할 수 있습니다. 다음과 같은 설정 형식 옵션이 있습니다.
+- 구성 디자이너
+- XML 데이터 입력
 
-디바이스에 할당할 Office 앱을 선택합니다.
+**구성 디자이너**를 선택하면 **앱 추가** 블레이드가 다음과 같은 두 가지 추가 설정 옵션을 제공하도록 변경됩니다.
+- 앱 제품군 구성
+- 앱 제품군 설정
 
-1. **앱 추가** 창에서 **앱 제품군 구성**을 선택합니다.
-2. **앱 제품군 구성** 창에서 디바이스에 할당할 표준 Office 앱을 선택합니다.  
-    또한 Microsoft Project Online 데스크톱 클라이언트 및 Microsoft Visio Pro for Office 365에 대한 라이선스가 있는 경우 관련 앱을 설치할 수 있습니다.
-3. **확인**을 선택합니다.
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>앱 정보 구성
+**XML 데이터 입력**을 선택하면 **앱 추가** 블레이드에 **XML 데이터 입력** 옵션이 표시됩니다. 이 옵션을 선택하면 **구성 파일** 블레이드가 표시됩니다. 
+
+![Office 365 구성 디자이너 추가](./media/apps-add-office365/apps-add-office365-01.png)
+    
+**XML 데이터 입력** 옵션에 대한 자세한 내용은 아래의 [XML 데이터 입력](apps-add-office365.md#enter-xml-format)을 참조하세요.
+
+## <a name="configure-app-suite-information"></a>앱 제품군 정보 구성
 
 이 단계에서는 앱 제품군에 대한 정보를 제공합니다. 이 정보를 사용하여 Intune에서 앱 제품군을 식별할 수 있으며, 사용자가 회사 포털에서 앱 제품군을 찾을 수도 있습니다.
 
@@ -84,9 +92,18 @@ ms.locfileid: "57229754"
     - **로고**: Office 365 로고는 사용자가 회사 포털을 찾을 때 앱과 함께 표시되는 로고입니다.
 3. **확인**을 선택합니다.
 
-## <a name="configure-app-settings"></a>앱 설정 구성
+## <a name="configure-app-suite"></a>앱 제품군 구성
 
-이 단계에서는 앱 패키지에 대한 설치 옵션을 구성합니다. 설정은 제품군에 추가한 모든 앱에 적용됩니다.
+**설정 형식** 드롭다운 상자에서 **구성 디자이너**를 선택한 경우 **앱 추가** 블레이드에 **앱 제품군 구성** 옵션이 표시됩니다. 디바이스에 할당할 Office 앱을 선택합니다.
+
+1. **앱 추가** 창에서 **앱 제품군 구성**을 선택합니다.
+2. **앱 제품군 구성** 창에서 디바이스에 할당할 표준 Office 앱을 선택합니다.  
+    또한 Microsoft Project Online 데스크톱 클라이언트 및 Microsoft Visio Online Plan 2에 대한 라이선스가 있는 경우 관련 앱을 설치할 수 있습니다.
+3. **확인**을 선택합니다.
+
+## <a name="configure-app-suite-settings"></a>앱 제품군 설정 구성
+
+**설정 형식** 드롭다운 상자에서 **구성 디자이너**를 선택한 경우 **앱 추가** 블레이드에 **앱 제품군 설정** 옵션이 표시됩니다. 이 단계에서는 앱 패키지에 대한 설치 옵션을 구성합니다. 설정은 제품군에 추가한 모든 앱에 적용됩니다.
 
 1. **앱 추가** 창에서 **앱 제품군 설정**을 선택합니다.
 2. **앱 제품군 설정** 창에서 다음을 수행합니다.
@@ -110,6 +127,10 @@ ms.locfileid: "57229754"
     - **공유 컴퓨터 인증 사용**: 여러 사용자가 컴퓨터를 공유할 경우 이 옵션을 선택합니다. 자세한 내용은 [Office 365의 공유 컴퓨터 인증 개요](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)를 참조하세요.
     - **언어**: Office는 최종 사용자 디바이스에 Windows와 함께 설치된 지원 언어로 자동으로 설치됩니다. 앱 패키지와 함께 추가 언어를 설치하려면 이 옵션을 선택합니다. <p></p>
     Intune을 통해 관리되는 Office 365 Pro Plus 앱의 추가 언어를 배포할 수 있습니다. 사용 가능한 언어 목록에는 언어 팩 **유형**(코어, 부분 및 언어 교정)이 포함되어 있습니다. Azure Portal에서 **Microsoft Intune** > **클라이언트 앱** > **앱** > **추가**를 차례로 선택합니다. **앱 추가** 블레이드의**앱 유형** 목록에 있는 **Office 365 제품군** 아래에서 **Windows 10**을 선택합니다. **앱 제품군 설정** 블레이드에서 **언어**를 선택합니다. 추가 정보는 [Office 365 ProPlus의 언어 배포 개요](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)를 참조하세요.
+
+## <a name="enter-xml-format"></a>XML 형식 입력
+
+**설정 형식** 드롭다운 상자에서 **XML 데이터 입력**을 선택한 경우 **앱 추가** 블레이드에 **XML 형식 입력** 옵션이 표시됩니다. 자세한 내용은 [Office 배포 도구의 구성 옵션](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)을 참조하세요.
 
 ## <a name="finish-up"></a>끝내기
 

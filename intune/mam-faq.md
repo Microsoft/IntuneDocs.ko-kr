@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506817"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 및 앱 보호에 대한 질문과 대답
 
@@ -62,7 +63,7 @@ Intune MAM은 다음과 같은 두 가지 구성을 지원합니다.
 
 - 최종 사용자의 Azure Active Directory 계정에 Microsoft Intune 라이선스가 할당되어 있어야 합니다. 최종 사용자에게 Intune 라이선스를 할당하는 방법을 알아보려면 [Intune 라이선스 관리](/intune/licenses-assign)를 참조하세요.
 
-- 최종 사용자가 앱 보호 정책의 대상으로 지정된 보안 그룹에 속해야 합니다. 동일한 앱 보호 정책은 사용 중인 특정 앱을 대상으로 해야 합니다. [Azure Portal](https://portal.azure.com)의 Intune 콘솔에서 앱 보호 정책을 만들고 배포할 수 있습니다. 보안 그룹은 현재 [Office 포털](https://portal.office.com)에서 만들 수 있습니다.
+- 최종 사용자가 앱 보호 정책의 대상으로 지정된 보안 그룹에 속해야 합니다. 동일한 앱 보호 정책은 사용 중인 특정 앱을 대상으로 해야 합니다. [Azure Portal](https://portal.azure.com)의 Intune 콘솔에서 앱 보호 정책을 만들고 배포할 수 있습니다. 보안 그룹은 현재 [Microsoft 365 관리 센터](https://admin.microsoft.com)에서 만들 수 있습니다.
 
 - 최종 사용자가 자신의 AAD 계정을 사용하여 앱에 로그인해야 합니다.
 
@@ -77,7 +78,7 @@ Intune MAM은 다음과 같은 두 가지 구성을 지원합니다.
 
 **[Word, Excel 및 PowerPoint](https://products.office.com/business/office) 앱 사용을 위한 추가 요구 사항은 무엇인가요?**
 
-- 최종 사용자의 Azure Active Directory 계정에 [Office 365 Business 또는 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) 라이선스가 연결되어 있어야 합니다. 구독에는 모바일 장치의 Office 앱이 포함되어야 하며 [비즈니스용 OneDrive](https://onedrive.live.com/about/business/)의 클라우드 스토리지 계정이 포함될 수 있습니다. 다음 [지침](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)에 따라 [Office 포털](https://portal.office.com)에서 Office 365 라이선스를 할당받을 수 있습니다.
+- 최종 사용자의 Azure Active Directory 계정에 [Office 365 Business 또는 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) 라이선스가 연결되어 있어야 합니다. 구독에는 모바일 장치의 Office 앱이 포함되어야 하며 [비즈니스용 OneDrive](https://onedrive.live.com/about/business/)의 클라우드 스토리지 계정이 포함될 수 있습니다. 다음 [지침](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)에 따라 [Microsoft 365 관리 센터](https://admin.microsoft.com)에서 Office 365 라이선스를 할당받을 수 있습니다.
 
 - 최종 사용자에게 “다른 이름으로 저장 금지” 애플리케이션 보호 정책 설정에서 세분화된 다른 이름으로 저장 기능을 사용하여 구성된 관리 위치가 있어야 합니다. 예를 들어 관리 위치가 OneDrive인 경우 최종 사용자의 Word, Excel 또는 PowerPoint 앱에 [OneDrive](https://onedrive.live.com/about/) 앱이 구성되어 있어야 합니다.
 
@@ -170,6 +171,27 @@ Intune APP SDK는 자사 및 타사의 SDK 버전 모두에 고급 ADAL 기능�
 
 다른 두 유형의 설정을 처리할 경우 앱 버전 요구 사항이 우선하고 이어 Android 운영 체제 버전 요구 사항 및 Android 패치 버전 요구 사항이 차례로 처리됩니다. 그런 다음, 동일한 순서로 설정의 모든 형식에 대한 모든 경고를 확인합니다.
 
+**Intune 앱 보호 정책은 최종 사용자 디바이스에 Android 디바이스의 Google SafetyNet 증명을 전달하도록 요구하는 기능을 관리자에게 제공합니다. 새 SafetyNet 증명 결과가 서비스로 전송되는 빈도는 얼마나 될까요?** <br><br> 새 Google Play 서비스 결정 사항은 Intune 서비스에서 결정한 간격으로 IT 관리자에게 보고됩니다. 부하 때문에 서비스 호출 빈도가 제한되므로 이 값은 내부적으로 유지되며 구성할 수 없습니다. IT 관리자가 Google SafetyNet 증명 설정을 위해 구성한 작업은 조건부 시작 시 Intune 서비스에 마지막으로 보고된 결과에 따라 수행됩니다. 데이터가 없는 경우 다른 조건부 시작 검사가 실패하지 않으면 액세스가 허용되며, 증명 결과를 확인하기 위한 Google Play 서비스 "왕복"은 백 엔드에서 시작되고 디바이스가 실패하면 사용자에게 비동기적으로 메시지를 표시합니다. 부실 데이터가 있는 경우 마지막으로 보고된 결과에 따라 액세스가 차단 또는 허용되며, 마찬가지로 증명 결과를 확인하기 위한 Google Play 서비스 "왕복"은 백 엔드에서 시작되고 디바이스가 실패하면 사용자에게 비동기적으로 메시지를 표시합니다.
+
+**Intune 앱 보호 정책은 최종 사용자 디바이스에 Android 디바이스의 Google 앱 확인 API를 통해 신호를 보내도록 요구하는 기능을 관리자에게 제공합니다. 이로 인해 액세스가 차단되지 않도록 최종 사용자가 앱 검사를 켜려면 어떻게 해야 할까요?**<br><br> 이 작업을 수행하는 방법은 디바이스에 따라 조금씩 다릅니다. 일반적으로 Google Play 스토어로 이동하여 **내 앱 및 게임**을 클릭하고, 마지막 앱 검색 결과를 클릭하면 Play Protect로 이동됩니다. **디바이스의 보안 위협 검색**을 켭니다.
+
+**Google의 SafetyNet 증명 API가 Android 디바이스에서 실제로 검사하는 것은 무엇일까요? '기본 무결성 검사'와 '기본 무결성 및 인증된 디바이스 검사'의 구성 가능한 값 사이에 어떤 차이가 있을까요?** <br><br>
+Intune은 Google Play Protect SafetyNet API를 활용하여 등록되지 않은 디바이스에 대한 기존 루트 검색 검사를 추가합니다. Google은 루팅된 디바이스에서 앱을 실행하고 싶지 않은 개발자를 위해 Android 앱에 도입할 수 있는 이 API 세트를 개발하여 유지해 왔습니다. 예를 들어 Android Pay 앱에는 이 API가 통합되어 있습니다. Google이 발생하는 루트 검색 검사 전체를 공개적으로 공유하지는 않지만, 이 API가 디바이스를 루팅한 사용자를 찾아낼 수 있을 것으로 예상됩니다. 이렇게 찾아낸 사용자의 액세스를 차단하거나, 정책이 적용되는 앱에서 이러한 사용자의 회사 계정을 초기화할 수 있습니다. '기본 무결성 검사'는 디바이스의 일반 무결성에 대해 알려줍니다. 변조 흔적이 있는 루팅된 디바이스, 에뮬레이터, 가상 디바이스 및 디바이스는 기본 무결성을 실패합니다. '기본 무결성 및 인증된 디바이스 검사'는 Google 서비스를 사용하는 디바이스의 호환성을 알려줍니다. Google의 인증을 받은 수정되지 않은 디바이스만이 이 검사를 통과할 수 있습니다. 실패하는 디바이스는 다음과 같습니다.
+* 기본 무결성에 실패하는 디바이스
+* 부팅 로더의 잠금이 해제된 디바이스
+* 사용자 지정 시스템 이미지/ROM을 사용하는 디바이스
+* 제조업체가 Google 인증을 적용하지 않았거나 인증을 통과하지 못한 디바이스 
+* Android 오픈 소스 프로그램 원본 파일로 직접 빌드한 시스템 이미지를 사용하는 디바이스
+* 베타/개발자 미리 보기 시스템 이미지를 사용하는 디바이스
+
+기술 정보는 [SafetyNet 증명에 대한 Google 설명서](https://developer.android.com/training/safetynet/attestation)를 참조하세요.
+
+**Android 디바이스용 Intune 앱 보호 정책을 만들 때 조건부 시작 섹션에 두 가지 비슷한 검사가 있습니다. 'SafetyNet 디바이스 증명' 설정을 요구해야 하나요 아니면 '무단 해제된/루팅된 디바이스' 설정을 요구해야 하나요?** <br><br>
+Google Play Protect의 SafetyNet API 검사를 수행하려면 적어도 증명 결과를 확인하기 위한 "왕복" 실행 시간 동안 최종 사용자가 온라인 상태여야 합니다. 최종 사용자가 오프라인 상태여도 IT 관리자는 여전히 '무단 해제된/루팅된 디바이스' 설정에서 결과를 얻을 것으로 예상할 수 있습니다. 즉, 최종 사용자가 너무 오래 오프라인 상태이면 '오프라인 유예 기간' 값이 작동하기 시작하고, 해당 타이머 값에 도달하면 네트워크를 사용할 수 있을 때까지 모든 회사 또는 학교 데이터에 대한 액세스가 차단됩니다. 두 설정을 모두 켜면 계층식 방법을 사용하여 최종 사용자 디바이스를 정상 상태로 유지할 수 있으며, 이는 최종 사용자가 모바일 디바이스로 회사 또는 학교 데이터에 액세스할 때 중요합니다. 
+
+**Google Play Protect API를 활용하는 앱 보호 정책 설정을 적용하려면 Google Play 서비스가 작동해야 합니다. 최종 사용자가 있는 위치에서 Google Play 서비스가 허용되지 않으면 어떻게 되나요?**<br><br>
+'SafetyNet 디바이스 증명'과 '앱에서 위협 검색' 설정 둘 다 정상적으로 작동하려면 Google에서 확인한 Google Play 서비스 버전이 필요합니다. 보안 영역에 속하는 이러한 설정 때문에 최종 사용자는 이러한 설정의 대상으로 지정되었는데 Google Play 서비스 버전 요구 사항을 충족하지 않거나 Google Play 서비스에 대한 액세스 권한이 없으면 차단됩니다. 
+
 ## <a name="app-experience-on-ios"></a>iOS의 앱 환경
 **디바이스에 지문 또는 얼굴을 추가하거나 제거하면 어떻게 되나요?**
 Intune 앱 보호 정책을 사용하면 Intune의 사용이 허가된 사용자에 대해서만 앱 액세스를 제어할 수 있습니다. 앱에 대한 액세스를 제어하는 한 가지 방법으로, 지원되는 디바이스에서 Apple의 Touch ID 또는 Face ID를 요구하는 방법이 있습니다. Intune은 디바이스의 생체 인식 데이터베이스에 변경 사항이 있는 경우 동작을 구현하며, Intune은 다음 비활성 시간 제한 값이 충족될 때 사용자에게 PIN을 요구하는 메시지를 표시합니다. 생체 인식 데이터의 변경 사항에는 지문 또는 얼굴의 추가나 제거가 포함됩니다. Intune 사용자에게 설정한 PIN이 없는 경우 Intune PIN 설정으로 안내됩니다.
@@ -184,20 +206,13 @@ Intune 앱 보호 정책은 디바이스를 관리하지 않고는 iOS 공유 �
 
 다른 유형의 설정을 처리할 경우 Intune 앱 SDK 버전 요구 사항이 우선하고 이어 앱 버전 요구 사항, iOS 운영 체제 버전 요구 사항이 처리됩니다. 그런 다음, 동일한 순서로 설정의 모든 형식에 대한 모든 경고를 확인합니다. Intune 앱 SDK 버전 요구 사항은 필수 차단 시나리오의 경우 Intune 제품 팀의 안내에 따라 구성하는 것이 좋습니다.
 
-## <a name="app-protection-policies---policy-refresh"></a>앱 보호 정책 - 정책 새로 고침
-- 앱은 30분마다 APP 서비스에 체크 인합니다.
-- 30분 임계값은 타이머를 기반으로 합니다.
-    - 앱이 30분에 활성화된 경우 30분에 체크 인합니다.
-    - 앱이 30분에 중지 중인 경우 다음 포커스에 체크 인합니다.
-- 사용자에게 할당된 정책이 없으면 8시간마다 체크 인됩니다.
-- Intune 라이선스가 할당되지 않은 경우, 24시간마다 체크 인됩니다.
-
 
 ## <a name="see-also"></a>참고 항목
 - [Intune 계획 구현](planning-guide-onboarding.md)
 - [Intune 테스트 및 유효성 검사](planning-guide-test-validation.md)
 - [Microsoft Intune의 Android 모바일 앱 관리 정책 설정](app-protection-policy-settings-android.md)
 - [iOS 모바일 앱 관리 정책 설정](app-protection-policy-settings-ios.md)
-- [앱 보호 정책 유효성 검사](app-protection-policies-validate.md)
+- [앱 보호 정책 새로 고침](app-protection-policy-delivery.md)
+- [앱 보호 정책 유효성 검사](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [디바이스 등록 없이 관리되는 앱용 앱 구성 정책 추가](app-configuration-policies-managed-app.md)
 - [Microsoft Intune에 대한 관리 지원을 받는 방법](get-support.md)
