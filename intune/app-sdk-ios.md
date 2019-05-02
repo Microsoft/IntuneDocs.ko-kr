@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b19a0100a53cebe66dae9805ac0cc5b5314e8ad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 1a834b1f35bdefd91abfc1ec9ca8b44d4eb593cd
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566780"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533612"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -86,7 +86,7 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
 1. **옵션 1(권장)**: `IntuneMAM.framework`를 프로젝트에 연결합니다. `IntuneMAM.framework`를 프로젝트 대상의 **포함된 이진 파일** 목록으로 끕니다.
 
    > [!NOTE]
-   > 프레임워크를 사용하는 경우 앱을 앱 스토어에 제출하기 전에 수동으로 범용 프레임워크에서 시뮬레이터 아키텍처를 제거해야 합니다. 자세한 내용은 [앱 스토어에 앱 제출](#Submit-your-app-to-the-App-Store)을 참조하세요.
+   > 프레임워크를 사용하는 경우 앱을 앱 스토어에 제출하기 전에 수동으로 범용 프레임워크에서 시뮬레이터 아키텍처를 제거해야 합니다. 자세한 내용은 [앱 스토어에 앱 제출](#submit-your-app-to-the-app-store)을 참조하세요.
 
    **옵션 2**: `libIntuneMAM.a` 라이브러리에 연결합니다. 프로젝트 대상의 **연결된 프레임워크 및 라이브러리** 목록으로 `libIntuneMAM.a` 라이브러리를 끌어옵니다.
 
@@ -179,7 +179,7 @@ ADAL 바이너리에 앱을 연결하려면 다음 단계를 수행합니다.
 
 3. 앱에 키 집합 액세스 그룹이 정의되어 있지 않으면 앱의 번들 ID를 첫 번째 그룹으로 추가합니다.
 
-4. 키 집합 액세스 그룹에 `com.microsoft.adalcache` 및 `com.microsoft.workplacejoin`을 추가하여 ADAL SSO(Single Sign-On)를 사용하도록 설정합니다.
+4. 키 집합 액세스 그룹에 `com.microsoft.adalcache`를 추가하여 ADAL SSO(Single Sign-On)를 사용하도록 설정합니다.
 
 5. ADAL 공유 캐시 키 집합 그룹을 명시적으로 설정하는 경우 이를 `<appidprefix>.com.microsoft.adalcache`로 설정해야 합니다. 이를 재정의하지 않으면 ADAL에서 자동으로 설정합니다. 사용자 지정 키 집합 그룹을 지정하여 `com.microsoft.adalcache`를 바꾸려면 IntuneMAMSettings 아래의 Info.plist 파일에 `ADALCacheKeychainGroupOverride` 키를 사용하여 지정하세요.
 
@@ -267,7 +267,7 @@ Intune 앱 보호 정책을 받으려면 앱에서 Intune MAM 서비스를 사�
 (void)registerAndEnrollAccount:(NSString *)identity;
 ```
 
-`registerAndEnrollAccount` 메서드를 호출하여 SDK는 사용자 계정을 등록하고 이 계정을 대신하여 앱을 등록하려고 시도합니다. 어떤 이유로든 등록에 실패하면 SDK는 자동으로 24시간 후에 등록을 다시 시도합니다. 앱은 디버깅 목적으로 대리자를 통해 모든 등록 요청의 결과에 대한 [알림](#Status-result-and-debug-notifications)을 받을 수 있습니다.
+`registerAndEnrollAccount` 메서드를 호출하여 SDK는 사용자 계정을 등록하고 이 계정을 대신하여 앱을 등록하려고 시도합니다. 어떤 이유로든 등록에 실패하면 SDK는 자동으로 24시간 후에 등록을 다시 시도합니다. 앱은 디버깅 목적으로 대리자를 통해 모든 등록 요청의 결과에 대한 [알림](#status-result-and-debug-notifications)을 받을 수 있습니다.
 
 이 API가 호출되고 나면 앱이 정상적으로 계속 작동할 수 있습니다. 등록에 성공하면 SDK가 사용자에게 앱을 다시 시작해야 한다고 알립니다. 이때 사용자는 앱을 즉시 다시 시작할 수 있습니다.
 
@@ -291,7 +291,7 @@ ADAL을 사용하여 사용자를 로그인하지 않는 앱은 API를 호출하
 
 이 메서드를 호출하면 기존 토큰을 찾을 수 없는 경우 SDK에서 사용자에게 자격 증명을 묻는 메시지를 표시합니다. 그러면 SDK에서 제공된 사용자 계정을 대신하여 Intune MAM 서비스에 앱 등록을 시도합니다. "nil"을 ID로 사용하여 메서드를 호출할 수 있습니다. 이 경우 SDK는 디바이스의 기존 관리되는 사용자로 등록하거나(MDM), 기존 사용자가 없는 경우 사용자 이름을 입력하라는 메시지를 표시합니다.
 
-등록에 실패하는 경우 앱은 실패의 세부 정보에 따라 나중에 다시 이 API 호출을 고려해야 합니다. 앱은 대리자를 통해 모든 등록 요청의 결과에 대한 [알림](#Status-result-and-debug-notifications)을 수신할 수 있습니다.
+등록에 실패하는 경우 앱은 실패의 세부 정보에 따라 나중에 다시 이 API 호출을 고려해야 합니다. 앱은 대리자를 통해 모든 등록 요청의 결과에 대한 [알림](#status-result-and-debug-notifications)을 수신할 수 있습니다.
 
 이 API가 호출되고 나면 앱이 정상적으로 계속 작동할 수 있습니다. 등록에 성공하면 SDK가 사용자에게 앱을 다시 시작해야 한다고 알립니다.
 
@@ -432,7 +432,7 @@ MAMPolicyRequired| 부울| 앱에 Intune 앱 보호 정책이 없는 경우 앱�
 
 Intune 앱 SDK에는 앱에 배포한 Intune APP 보호 정책에 관한 정보를 가져오기 위해 호출할 수 있는 여러 가지 API가 있습니다. 이 데이터를 사용하여 앱 동작을 사용자 지정할 수 있습니다. 아래 표에서는 사용자가 사용할 수 있는 몇 가지 필수 Intune 클래스에 대한 정보를 제공합니다.
 
-클래스 | 설명
+인스턴스 | 설명
 ----- | -----------
 IntuneMAMPolicyManager.h | IntuneMAMPolicyManager 클래스는 애플리케이션에 배포된 Intune APP 정책을 표시합니다. 특히 [다중 ID 사용](app-sdk-ios.md#enable-multi-identity-optional)에 유용한 API를 표시합니다. |
 IntuneMAMPolicy.h | IntuneMAMPolicy 클래스는 앱에 적용되는 일부 MAM 정책 설정을 제공합니다. 이러한 정책 설정은 앱이 UI를 사용자 지정할 수 있도록 노출됩니다. 대부분의 정책 설정은 앱이 아닌 SDK에 의해 적용됩니다. 앱이 구현해야 하는 유일한 방법은 Save-as 컨트롤입니다. 이 클래스는 Save-as를 구현하는 데 필요한 일부 API를 제공합니다. |

@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e9f01ad981350f250e35961f9a41a62698061a1
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MTE75
+ms.openlocfilehash: 456abbf849120675b6a7c108ca65c6f9967ae64a
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799602"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429202"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>모바일 앱 관리(MAM) 엔터티에 대한 참조
 
@@ -43,10 +43,14 @@ ms.locfileid: "58799602"
 
 | 속성 | 설명 | 예제 |
 |---------|------------|--------|
+| mamApplicationKey |MAM 응용 프로그램의 고유 식별자입니다. | 432 |
+| mamApplicationName |MAM 응용 프로그램의 이름입니다. |MAM 응용 프로그램 예제에서는 이름이 |
+| mamApplicationId |MAM 앱의 애플리케이션 ID | 123 |
 | IsDeleted |이 MAM 앱 레코드가 업데이트되었는지 나타냅니다. <br>True-MAM 앱이 이 테이블에서 필드가 업데이트된 새 레코드를 가집니다. <br>False-이 MAM 앱의 최신 레코드입니다. |True/False |
 | StartDateInclusiveUTC |데이터 웨어하우스에서 해당 MAM 앱을 만든 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |IsDeleted를 True로 변경한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |데이터 웨어하우스에서 해당 MAM 앱을 마지막으로 수정한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
+
 
 ## <a name="mamapplicationinstance"></a>MamApplicationInstance
 
@@ -58,15 +62,20 @@ ms.locfileid: "58799602"
 |   ApplicationInstanceKey   |                                                               데이터 웨어하우스의 MAM 앱 인스턴스에 대한 고유 식별자 - 서로게이트 키                                                                |                 123                  |
 |           UserId           |                                                                              해당 MAM 앱을 설치한 사용자의 사용자 ID                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM 앱 인스턴스에 대한 고유 식별자 - ApplicationInstanceKey와 비슷하지만 자연 키입니다.                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | 이 Mam 응용 프로그램 인스턴스에 생성 된 Mam 응용 프로그램의 응용 프로그램 Id입니다.   | 11/23/2016 12:00:00 AM   |
 |     ApplicationVersion     |                                                                                     해당 MAM 앱의 애플리케이션 버전                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 MAM 앱 인스턴스의 이 레코드를 만든 날짜입니다. 값은 null일 수 있습니다.                                                                 |        11/23/2016 12:00:00 AM        |
 |          플랫폼          |                                                                          해당 MAM 앱이 설치된 디바이스 플랫폼                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      해당 MAM 앱이 설치된 디바이스의 플랫폼 버전                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            해당 MAM 앱을 래핑한 MAM SDK 버전                                                                            |                 3.2                  |
+| mamDeviceId | MAM 응용 프로그램 인스턴스가 연결 되어 있는 장치의 장치 Id입니다.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | MAM 응용 프로그램 인스턴스가 연결 되어 있는 장치의 장치 형식입니다.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | MAM 응용 프로그램 인스턴스가 연결 되어 있는 장치의 장치 이름입니다.   | 11/23/2016 12:00:00 AM   |
 |         IsDeleted          | 이 MAM 앱 인스턴스 레코드가 업데이트되었는지 나타냅니다. <br>True-이 MAM 앱 인스턴스는 이 테이블에서 필드가 업데이트된 새 레코드를 가집니다. <br>False-이 MAM 앱 인스턴스의 최신 레코드입니다. |              True/False              |
 |   StartDateInclusiveUtc    |                                                              데이터웨어 하우스에서 해당 MAM 앱 인스턴스를 만든 UTC 날짜 및 시간                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             IsDeleted를 True로 변경한 UTC 날짜 및 시간                                                                              |        11/23/2016 12:00:00 AM        |
 | RowLastModifiedDateTimeUtc |                                                           데이터웨어 하우스에서 해당 MAM 앱 인스턴스를 마지막으로 수정한 UTC 날짜 및 시간                                                            |        11/23/2016 12:00:00 AM        |
+
 
 ## <a name="mamcheckin"></a>MamCheckin
 
@@ -80,10 +89,12 @@ ms.locfileid: "58799602"
 | DateKey |데이터 웨어하우스에서 MAM 앱 체크 인을 기록한 날짜 키 | 20160703 |
 | ApplicationInstanceKey |해당 MAM 앱 체크 인에 연결된 앱 인스턴스의 키 | 123 |
 | UserKey |해당 MAM 앱 체크 인에 연결된 사용자의 키 | 4323 |
+| mamApplicationKey |응용 프로그램 키의 연결 된 응용 프로그램에 MAM 응용 프로그램 확인 합니다. | 432 |
 | DeviceHealthKey |해당 MAM 앱 체크 인에 연결된 DeviceHealth의 키 | 321 |
 | PlatformKey |해당 MAM 앱 체크 인에 연결된 디바이스의 플랫폼을 나타냅니다. |123 |
 | EffectiveAppliedPolicyKey |체크인된 MAM 앱과 연결된 발효된 적용 정책을 나타냅니다. 특정 앱 및 사용자와 관련된 모든 정책을 병합하여 얻은 발효된 적용 정책 결과입니다. | 322 |
 | LastCheckInDate |이 MAM 앱이 마지막으로 체크인한 날짜와 시간입니다. 값은 null일 수 있습니다. |11/23/2016 12:00:00 AM |
+
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
 

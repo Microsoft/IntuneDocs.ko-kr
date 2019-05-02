@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 0d0623e9d12132ac470813d65510bc2c76379109
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490729"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871474"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 iOS 디바이스 설정
 
@@ -195,7 +195,7 @@ ms.locfileid: "58490729"
 
 #### <a name="safari"></a>Safari
 
-- **Safari**: **차단**을 선택하면 디바이스에서 Safari 브라우저를 사용할 수 없습니다. **구성되지 않음**을 사용하면 사용자가 Safari 브라우저를 사용할 수 있습니다.
+- **Safari(감독 모드인 경우에만)**: **차단**을 선택하면 디바이스에서 Safari 브라우저를 사용할 수 없습니다. **구성되지 않음**을 사용하면 사용자가 Safari 브라우저를 사용할 수 있습니다.
 - **자동 채우기**: **차단**을 선택하면 디바이스의 Safari에서 자동 채우기 기능을 사용할 수 없습니다. **구성되지 않음**을 사용하면 사용자가 웹 브라우저에서 자동 완성 설정을 변경할 수 있습니다.
 - **쿠키**: 디바이스에서 쿠키를 처리하는 방법을 선택합니다. 옵션은 다음과 같습니다.
   - 허용
@@ -290,7 +290,7 @@ ms.locfileid: "58490729"
 ## <a name="cloud-and-storage"></a>클라우드 및 스토리지
 
 - **iCloud에 백업**: **구성되지 않음**을 사용하면 사용자가 디바이스를 iCloud에 백업할 수 있습니다. **차단**을 선택하면 사용자가 디바이스를 iCloud에 백업할 수 없습니다.
-- **iCloud 문서 동기화 차단**: **구성되지 않음**을 통해 문서 및 키 값을 iCloud 스토리지 공간에 동기화할 수 있습니다. **차단**을 선택하면 iCloud가 문서 및 데이터를 동기화할 수 없습니다.
+- **iCloud에 문서 동기화(감독 모드인 경우에만)**: **구성되지 않음**을 사용하면 문서 및 키 값을 iCloud 스토리지 공간에 동기화할 수 있습니다. **차단**을 선택하면 iCloud가 문서 및 데이터를 동기화할 수 없습니다.
 - **iCloud에 사진 스트림 동기화**: **구성되지 않음**을 사용하면 사용자가 디바이스에서 **내 사진 스트림**을 iCloud에 동기화할 수 있고 모든 사용자 디바이스에서 사진을 사용할 수 있습니다. **차단**을 선택하면 사진 스트림이 iCloud에 동기화되지 않습니다.
 - **암호화된 백업**: **필요**를 선택하면 디바이스 백업을 암호화해야 합니다.
 - **iCloud 사진 보관함**: **차단**으로 설정하면 iCloud 사진 보관함을 사용하여 클라우드에 사진과 비디오를 저장할 수 없습니다. iCloud 사진 보관함에서 디바이스로 완전히 다운로드되지 않은 모든 사진이 디바이스에서 제거됩니다. **구성되지 않음**을 사용하면 iCloud 사진 보관함을 사용할 수 있습니다.

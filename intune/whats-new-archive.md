@@ -1,6 +1,6 @@
 ---
 title: 지난 달의 새로운 Microsoft Intune 기능 - Azure | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: Intune 새로운 기능 페이지에서 이전 공지 사항 검토
 keywords: ''
 author: ErikjeMS
@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ceefcfbcdf48cf8d450f5a74274bc1beea951cc5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 8df4a1d7f929301c11f577a9b7e50ef1647dda11
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461552"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423716"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune의 새로운 기능 - 지난 달
 
@@ -316,7 +316,7 @@ Windows 10 이상에 적용됩니다.
 - 해당 없음. 다른 플랫폼의 디바이스 수를 보여 주는 이미지도 표시됩니다. 예를 들어 iOS 프로필을 보고 있는 경우 이 프로필에도 할당된 비iOS 디바이스의 수가 새 타일에 표시됩니다. [디바이스 준수 정책](compliance-policy-monitor.md#view-status-of-device-policies)을 참조합니다.
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>디바이스 규정 준수에서 타사 바이러스 백신 솔루션 지원 <!-- 2325484 -->
-디바이스 준수 정책(**디바이스 준수** > **정책** > **정책 만들기** > **플랫폼: Windows 10 이상** > **설정** > **시스템 보안**)을 만들면 다음과 같은 새 **[디바이스 보안](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** 옵션이 제공됩니다. 
+디바이스 준수 정책(**디바이스 준수** > **정책** > **정책 만들기** > **플랫폼: Windows 10 이상** > **설정** > **시스템 보안**)을 만들면 다음과 같은 새 **[디바이스 보안](compliance-policy-create-windows.md)** 옵션이 제공됩니다. 
 - **바이러스 백신**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 Windows Security Center에 등록된 바이러스 백신 솔루션을 사용하여 준수를 확인할 수 있습니다. 
 - **스파이웨어 방지**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 Windows Security Center에 등록된 스파이웨어 방지 솔루션을 사용하여 준수를 확인할 수 있습니다. 
 
@@ -1253,9 +1253,9 @@ Intune은 Android 플랫폼과는 독립적으로 Android for Work 디바이스�
 
 | Setting | 기본 디바이스 유형 제한에서의 Android for Work 상태 | 참고 |
 | --- | --- | --- |
-| **모든 디바이스를 Android로 관리** | 차단됨 | 모든 Android 디바이스는 Android for Work 없이 등록해야 합니다. |
+| **모든 디바이스를 Android로 관리** | 차단 | 모든 Android 디바이스는 Android for Work 없이 등록해야 합니다. |
 | **지원되는 디바이스를 Android for Work로 관리** | 허용됨 | Android for Work를 지원하는 모든 Android 디바이스는 Android for Work로 등록해야 합니다. |
-| **이러한 그룹의 사용자만을 위해 지원되는 디바이스를 Android for Work로 관리** | 차단됨 | 기본값을 재정의하기 위해 별도 디바이스 유형 제한 정책이 만들어졌습니다. 이 정책은 Android for Work 등록을 허용하도록 이전에 선택한 그룹을 정의합니다. 선택된 그룹 내 사용자는 Android for Work 디바이스를 등록할 수 있도록 계속 허용됩니다. 다른 모든 사용자는 Android for Work 등록에 제한을 받습니다. |
+| **이러한 그룹의 사용자만을 위해 지원되는 디바이스를 Android for Work로 관리** | 차단 | 기본값을 재정의하기 위해 별도 디바이스 유형 제한 정책이 만들어졌습니다. 이 정책은 Android for Work 등록을 허용하도록 이전에 선택한 그룹을 정의합니다. 선택된 그룹 내 사용자는 Android for Work 디바이스를 등록할 수 있도록 계속 허용됩니다. 다른 모든 사용자는 Android for Work 등록에 제한을 받습니다. |
 
 모든 경우에 사용자의 의도한 규정이 유지됩니다. 사용자 환경에서 Android for Work의 전역 또는 그룹별 허용 한도를 유지하기 위한 별도의 작업은 필요하지 않습니다.
 
@@ -1264,7 +1264,7 @@ Intune은 Android 플랫폼과는 독립적으로 Android for Work 디바이스�
 Android Oreo가 출시되면서 Google은 사용자와 조직이 보안 앱과 보안 Android 이미지를 실행할 수 있는 Google Play 보호라는 보안 기능 제품군을 소개합니다. 이제 Intune은 SafetyNet 원격 증명을 비롯하여 Google Play 보호 기능을 지원합니다. 관리자는 Google Play 보호를 구성하고 정상 상태를 유지하는 데 필요한 준수 정책 요구 사항을 설정할 수 있습니다.
 **SafetyNet 디바이스 증명** 설정은 디바이스가 정상 상태이고 손상되지 않았음을 확인하기 위해 디바이스를 Google 서비스에 연결하도록 합니다. 또한 관리자는 Google Play 서비스에서 설치된 앱을 확인하도록 하기 위해 Android for Work에 대한 구성 프로필 설정을 설정할 수 있습니다. 디바이스가 Google Play 보호 요구 사항을 준수하지 않는 경우 조건부 액세스는 사용자가 회사 리소스에 액세스하는 것을 차단합니다.
 
-- [Google Play 보호를 사용하도록 설정하기 위해 디바이스 준수 정책을 만드는 방법](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect)을 알아봅니다.
+- [Google Play 보호를 사용하도록 설정하기 위해 디바이스 준수 정책을 만드는 방법](https://docs.microsoft.com/intune/compliance-policy-create-android)을 알아봅니다.
 
 ### <a name="text-protocol-allowed-from-managed-apps----1414050----"></a>관리되는 앱에서 허용하는 텍스트 프로토콜 <!-- 1414050  -->
 
@@ -1565,7 +1565,7 @@ Android 회사 포털 앱에서 등록을 하거나 등록을 하지 않고 사�
 ### <a name="windows-autopilot-deployment-program-support-in-microsoft-intune----747617---"></a>Microsoft Intune의 Windows AutoPilot Deployment 프로그램 지원  <!-- 747617  -->
 이제 Windows AutoPilot Deployment 프로그램과 함께 Microsoft Intune을 사용하여 사용자가 IT를 수반하지 않고도 회사 디바이스를 프로비전할 수 있습니다. OOBE(첫 실행 경험)를 사용자 지정하고, 사용자가 디바이스를 Azure AD에 조인하고 Intune에 등록하도록 안내할 수 있습니다. Microsoft Intune 및 Windows AutoPilot을 함께 사용하면 운영 체제 이미지를 배포, 유지 및 관리할 필요가 없습니다. 자세한 내용은 [Windows AutoPilot Deployment 프로그램을 사용하여 Windows 디바이스 등록](https://docs.microsoft.com/intune/enrollment-autopilot)을 참조하세요.
 
-### <a name="quick-start-for-device-enrollment----1425655---"></a>디바이스 등록에 대한 빠른 시작  <!-- 1425655 --> 
+### <a name="quickstart-for-device-enrollment----1425655---"></a>디바이스 등록에 대한 빠른 시작  <!-- 1425655 --> 
 빠른 시작은 이제 **디바이스 등록**에서 사용할 수 있으며, 플랫폼 관리 및 등록 프로세스 구성에 대한 참조 테이블을 제공합니다. 각 항목에 대한 간략한 설명과 단계별 지침이 포함된 설명서에 대한 링크는 시작을 간소화하는 데 유용한 설명서를 제공합니다.
 
 ### <a name="device-categorization----1427491---"></a>디바이스 분류 <!-- 1427491 -->

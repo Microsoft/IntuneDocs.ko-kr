@@ -1,6 +1,6 @@
 ---
-title: 앱 보호 정책 로그 검토 | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: 앱 보호 정책 로그 검토
+titleSuffix: Microsoft Intune
 description: 이 항목에서는 Intune 앱 보호 정책 (APP) 로그를 구성 하는 방법을 설명 합니다.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: d593ee1389cfa183c5daaefdeae3ea7f6c44a8a8
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394796"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671869"
 ---
 # <a name="review-client-app-protection-logs"></a>클라이언트 앱 보호 로그 검토
 
@@ -31,7 +31,7 @@ ms.locfileid: "58394796"
 
 로그를 활성화하고 수집하는 프로세스는 플랫폼별로 다릅니다.
 - **Android 디바이스** - *회사 포털*을 사용합니다. [회사 지원팀에 이메일 로그](/intune-user-help/send-logs-to-your-it-admin-by-email-android)를 참조하세요
-- **iOS 디바이스** - Managed Browser를 사용하거나 *Microsoft Edge*를 사용하여 로그를 수집합니다. 자세한 내용은 Intune 지원 팀 블로그 [Intune Managed Browser의 로그 제출을 위한 새 Intune 진단 콘솔](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser)을 참조하세요. 
+- **iOS 디바이스** - Managed Browser를 사용하거나 *Microsoft Edge*를 사용하여 로그를 수집합니다. 자세한 내용은 Intune 지원 팀 블로그 [Intune Managed Browser의 로그 제출을 위한 새 Intune 진단 콘솔](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021)을 참조하세요. 
 - **Windows 10 디바이스** - *MDMDiag* 및 이벤트 로그를 사용합니다. 참고 항목: Windows 클라이언트에서 [Windows 10의 MDM 진단 오류](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) 및 블로그 [Windows 10 Intune 정책 실패 문제 해결](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
 
 
@@ -39,7 +39,7 @@ ms.locfileid: "58394796"
 
 ## <a name="app-protection-policy-settings"></a>앱 보호 정책 설정
 
-| 이름                        | 가능한 값                                                                                                                                                                                                                                                                                           | Azure Intune 모바일 애플리케이션 관리 포털의 설정                                                                                                                            |
+| Name                        | 가능한 값                                                                                                                                                                                                                                                                                           | Azure Intune 모바일 애플리케이션 관리 포털의 설정                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 오프라인 유예 기간<br>참고: 디바이스가 오프라인 상태인 경우 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다.             |
 | AccessRecheckOnlineTimeout  | _x_분                                                                                                                                                                                                                                                                                                   | [액세스] 액세스 요구 사항 다시 확인 - 시간 제한.<br>참고: 디바이스가 온라인 상태인 경우 앱이 시작된 후 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간입니다. |

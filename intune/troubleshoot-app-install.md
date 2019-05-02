@@ -1,6 +1,6 @@
 ---
 title: 앱 설치 문제 해결
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune 문제 해결 창을 사용하면 앱 설치 문제 해결에 도움이 될 수 있습니다.
 keywords: ''
 author: Erikre
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 574f509383891ff3e8e0f4c1b04a19832a378829
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57577849"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799504"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>앱 설치 문제 해결
 

@@ -1,12 +1,12 @@
 ---
 title: 디바이스 - Intune 데이터 웨어하우스
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 데이터 웨어하우스 API에서 엔터티 컬렉션의 디바이스 범주에 대한 항목을 참조하세요.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29213400b5baf9705c188bb45b3666b65262d577
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: c361c6054cf52c802155587084eaea76e024f78c
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358236"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429185"
 ---
 # <a name="reference-for-devices-entities"></a>디바이스 엔터티에 대한 참조
 
@@ -80,6 +80,7 @@ ms.locfileid: "58358236"
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | 이 등록 작업이 기록된 때의 날짜 키입니다.               |
 | deviceEnrollmentTypeKey       | 등록 형식의 키입니다.                                        |
+| deviceTypeKey                 | 디바이스 유형의 키입니다.                                                |
 | enrollmentEventStatusKey      | 등록의 성공 여부를 나타내는 상태 키입니다.    |
 | enrollmentFailureCategoryKey  | 등록 실패 범주의 키입니다(등록에 실패하는 경우).        |
 | enrollmentFailureReasonKey    | 등록 실패 이유의 키입니다(등록에 실패하는 경우).          |
@@ -224,46 +225,61 @@ ms.locfileid: "58358236"
 
 **디바이스** 엔터티는 관리 대상인 모든 등록된 디바이스와 그에 해당하는 속성을 나열합니다.
 
-| 속성  | 설명 |
-|---------|------------|
-| DeviceKey | 데이터 웨어하우스에서 디바이스의 고유 식별자 - 대리 키 |
-| DeviceId | 디바이스에 대한 고유 식별자 |
-| DeviceName | 디바이스 이름 지정을 허용하는 플랫폼에서 디바이스의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 모든 디바이스에 대해 사용할 수 없습니다. |
-| DeviceTypeKey | 이 디바이스에 대한 디바이스 유형 특성의 키 |
-| OwnerTypeKey | 이 디바이스에 대한 소유자 유형 특성의 키: 회사, 개인 또는 알 수 없음. |
-| objectSourceKey | 이 열을 무시합니다. |
-| ManagementAgentKey | 이 디바이스와 연결된 관리 에이전트의 키입니다. |
-| ManagementStateKey | 이 디바이스와 연결된 관리 상태의 키로 원격 작업의 마지막 상태를 나타내거나 탈옥/루팅 여부를 나타냅니다. |
-| OSVersion | OS 버전 |
-| OSMajorVersion | OS 버전의 주 버전 구성 요소(major.minor.build.revision) |
-| OSMinorVersion | OS 버전의 부 버전 구성 요소(major.minor.build.revision) |
-| OSBuildNumber | OS 버전의 빌드 버전 구성 요소(major.minor.build.revision) |
-| OSRevisionNumber | OS 버전의 수정 버전 구성 요소(major.minor.build.revision) |
-| SerialNumber | 디바이스의 일련 번호(사용 가능한 경우) |
-| RowLastModifiedDateTimeUTC | 이 레코드를 마지막으로 수정한 시간입니다. |
-| DeviceAction | 마지막으로 실행된 디바이스 작업. 지금은 무시합니다. |
-| 제조업체 | 디바이스 제조업체 |
-| 모델 | 디바이스 모델 |
-| IsDeleted | 더 이상 Intune에서 디바이스를 관리하지 않는 경우 True로 설정합니다. 마지막으로 알려진 상태를 유지합니다. |
-| AndroidSecurityPatchLevel |디바이스의 가장 최근 보안 패치 날짜입니다. |
+|          속성          |                                                                                       설명                                                                                      |
+|:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DeviceKey                  | 데이터 웨어하우스에서 디바이스의 고유 식별자 - 서로게이트 키                                                                                                               |
+| DeviceId                   | 디바이스의 고유 식별자입니다.                                                                                                                                                     |
+| DeviceName                 | 디바이스 이름 지정을 허용하는 플랫폼에서 디바이스의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 모든 디바이스에 대해 사용할 수 없습니다. |
+| DeviceTypeKey              | 이 디바이스의 디바이스 유형 특성의 키                                                                                                                                    |
+| DeviceRegistrationState    | 이 디바이스의 클라이언트 등록 상태 특성의 키                                                                                                                      |
+| OwnerTypeKey               | 이 디바이스의 소유자 유형 특성 키는 회사, 개인 또는 알 수 없음입니다.                                                                                                    |
+| EnrolledDateTime           | 이 디바이스가 등록된 날짜 및 시간                                                                                                                                         |
+| LastSyncDateTime           | Intune에서 마지막으로 인식된 디바이스 체크 인                                                                                                                                              |
+| ManagementAgentKey         | 이 디바이스와 연결된 관리 에이전트의 키                                                                                                                             |
+| ManagementStateKey         | 이 디바이스와 연결된 관리 상태의 키로 원격 작업의 마지막 상태를 나타내거나 탈옥/루팅 여부를 나타냅니다.                                                |
+| AzureADDeviceId            | 이 디바이스의 Azure deviceID                                                                                                                                                  |
+| AzureADRegistered          | 디바이스가 Azure Active Directory에 등록되었는지 여부를 나타냅니다.                                                                                                                             |
+| DeviceCategoryKey          | 이 디바이스와 연결된 범주의 키                                                                                                                                     |
+| DeviceEnrollmentType       | 이 디바이스와 연결된 등록 유형 키로 등록 방법을 나타냅니다.                                                                                             |
+| ComplianceStateKey         | 이 디바이스와 연결된 준수 상태의 키입니다.                                                                                                                             |
+| OSVersion                  | 디바이스의 운영 체제 버전입니다.                                                                                                                                                |
+| EasDeviceId                | 디바이스의 Exchange ActiveSync ID입니다.                                                                                                                                                  |
+| SerialNumber               | SerialNumber                                                                                                                                                                           |
+| UserId                     | 디바이스와 연결된 사용자의 고유 ID입니다.                                                                                                                           |
+| RowLastModifiedDateTimeUTC | 데이터 웨어하우스에서 디바이스를 마지막으로 수정한 UTC 날짜 및 시간                                                                                                       |
+| 제조업체               | 디바이스 제조업체                                                                                                                                                             |
+| 모델                      | 디바이스의 모델                                                                                                                                                                    |
+| OperatingSystem            | 디바이스 운영 체제는  Windows, iOS 등입니다.                                                                                                                                   |
+| IsDeleted                  | 디바이스가 삭제되었는지 여부를 표시하는 이진입니다.                                                                                                                                 |
+| AndroidSecurityPatchLevel  | Android 보안 패치 수준                                                                                                                                                           |
+| MEID                       | MEID                                                                                                                                                                                   |
+| isSupervised               | 디바이스가 감독되고 있습니다.                                                                                                                                                               |
+| FreeStorageSpaceInBytes    | 사용 가능한 스토리지 공간(바이트)입니다.                                                                                                                                                                 |
+| TotalStorageSpaceInBytes   | 총 스토리지 공간(바이트)입니다.                                                                                                                                                                |
+| EncryptionState            | 디바이스의 암호화 상태입니다.                                                                                                                                                      |
+| SubscriberCarrier          | 디바이스의 구독자 통신 회사입니다.                                                                                                                                                       |
+| PhoneNumber                | 디바이스의 전화 번호                                                                                                                                                             |
+| IMEI                       | IMEI                                                                                                                                                                                   |
+| CellularTechnology         | 디바이스의 셀룰러 기술입니다.                                                                                                                                                    |
+| WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
 **DevicePropertyHistory** 엔터티는 지난 90일 동안 하루에 각 디바이스 레코드의 디바이스 테이블 및 일일 스냅숏과 동일한 속성을 지닙니다. DateKey 열은 각 행에 대한 날짜를 나타냅니다.
 
-| 속성  | 설명 |
-|---------|------------|
-| DateKey |날짜를 나타내는 날짜 테이블에 대한 참조 |
-| DeviceKey |데이터 웨어하우스에서 디바이스의 고유 식별자 - 대리 키 Intune 디바이스 ID가 포함된 디바이스 테이블에 대한 참조입니다. |
-| DeviceName |디바이스 이름 지정을 허용하는 플랫폼에서 디바이스의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 모든 디바이스에 대해 사용할 수 없습니다. |
-| OwnerTypeKey |이 디바이스에 대한 소유자 유형 특성의 키: 회사, 개인 또는 알 수 없음. |
-| objectSourceKey |이 열을 무시합니다. |
-| ManagementStateKey |이 디바이스와 연결된 관리 상태의 키로 원격 작업의 마지막 상태를 나타내거나 탈옥/루팅 여부를 나타냅니다. |
-| OSVersion |OS 버전 |
-| OSMajorVersion |OS 버전의 주 버전 구성 요소(major.minor.build.revision) |
-| OSMinorVersion |OS 버전의 부 버전 구성 요소(major.minor.build.revision) |
-| OSBuildNumber |OS 버전의 빌드 버전 구성 요소(major.minor.build.revision) |
-| DeviceAction |마지막으로 실행된 디바이스 작업. 지금은 무시합니다. |
+|          속성          |                                                                                      설명                                                                                     |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DateKey                    | 날짜를 나타내는 날짜 테이블에 대한 참조                                                                                                                                          |
+| DeviceKey                  | 데이터 웨어하우스에서 디바이스의 고유 식별자는 서로게이트 키입니다. Intune 디바이스 ID가 포함된 디바이스 테이블의 참조입니다.                               |
+| DeviceName                 | 디바이스 이름 지정을 허용하는 플랫폼에서 디바이스의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 모든 디바이스에 대해 사용할 수 없습니다. |
+| DeviceRegistrationStateKey | 이 디바이스에 대한 디바이스 등록 상태 특성의 키입니다.                                                                                                                    |
+| OwnerTypeKey               | 이 디바이스의 소유자 유형 특성 키는 회사, 개인 또는 알 수 없음입니다.                                                                                                  |
+| ManagementStateKey         | 이 디바이스와 연결된 관리 상태의 키로 원격 작업의 마지막 상태나 탈옥/루팅 여부를 나타냅니다.                                                |
+| AzureADRegistered          | 디바이스가 Azure Active Directory에 등록되었는지 여부를 나타냅니다.                                                                                                                             |
+| ComplianceStateKey         | ComplianceState에 대한 키입니다.                                                                                                                                                            |
+| OSVersion                  | OS 버전                                                                                                                                                                          |
+| 탈옥                 | 디바이스의 탈옥 또는 루팅 여부를 나타냅니다.                                                                                                                                         |
+| DeviceCategoryKey          | 이 디바이스의 디바이스 범주 특성 키입니다. 
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 

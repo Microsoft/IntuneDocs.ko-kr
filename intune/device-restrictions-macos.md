@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 macOS 디바이스 설정 - Azure | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: macOS 디바이스에서 설정을 추가, 구성 또는 생성하여 암호 요구 사항을 설정하고, 잠긴 화면을 제어하고, 기본 제공 앱을 사용하고, 제한되거나 승인된 앱을 추가하고, Bluetooth 디바이스를 다루고, 백업 및 저장을 위해 클라우드에 연결하고, 키오스크 모드를 사용하도록 설정하고, 도메인을 추가하고, 사용자가 Microsoft Intune에서 Safari 웹 브라우저를 조작하는 방법을 제어하는 기능을 제한합니다.
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
-ms.translationtype: MTE75
+ms.openlocfilehash: 5feec66e791da4038bd069cdad69a7ba573f27f3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330422"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798380"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 macOS 디바이스 설정
 

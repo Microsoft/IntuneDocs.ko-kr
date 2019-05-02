@@ -1,12 +1,12 @@
 ---
 title: Intune 앱 SDK의 이점
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 앱 SDK는 iOS 및 Android 플랫폼 둘 다에 사용할 수 있으며 Microsoft Intune을 통해 모바일 앱 관리 기능을 사용할 수 있게 합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 046c82a1b149f33e20a21adf931a30cc812e3f10
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566491"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292452"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune 앱 SDK 개요
 iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱에서 Intune [앱 보호 정책](app-protection-policy.md)을 지원할 수 있습니다. 앱에 앱 보호 정책을 적용할 때 Intune에서 관리할 수 있습니다 및 Intune 관리 앱으로 인식 됩니다. SDK는 앱 개발자에게 요구되는 코드 변경의 양을 최소화하기 위해 노력합니다. 앱의 동작을 변경하지 않고 대부분의 SDK 기능을 사용하도록 설정할 수 있습니다. 최종 사용자 및 IT 관리자 환경을 개선하기 위해 SDK의 API를 활용하여 앱 참여가 필요한 기능을 지원하도록 앱 동작을 사용자 지정할 수 있습니다.

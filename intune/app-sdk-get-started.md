@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23c254094281c7591730b2972ec0de41f5243e66
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566389"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423597"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -34,7 +34,7 @@ Intune 앱 SDK는 iOS 및 Android에서 유사한 시나리오를 지원하며 �
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>앱이 조직 내부용이며 공개적으로 사용할 수 없는 경우:
 
-앱을 등록할 _**필요가 없습니다**_. 에 대 한 내부 [-업무용 (LOB) 앱](apps-add.md#app-types-in-microsoft-intune) 는 작성 된 또는 회사의 IT 관리자는 앱을 내부적으로 배포 합니다. Intune에서는 SDK로 빌드된 앱을 감지하여 IT 관리자가 해당 앱에 앱 보호 정책을 적용할 수 있도록 합니다. [iOS 또는 Android 앱을 앱 보호 정책에 사용할 수 있도록 설정](#enable-your-iOS-or-Android-app-for-app-protection-policy) 섹션으로 건너뛸 수 있습니다.
+앱을 등록할 _**필요가 없습니다**_. 에 대 한 내부 [-업무용 (LOB) 앱](apps-add.md#app-types-in-microsoft-intune) 는 작성 된 또는 회사의 IT 관리자는 앱을 내부적으로 배포 합니다. Intune에서는 SDK로 빌드된 앱을 감지하여 IT 관리자가 해당 앱에 앱 보호 정책을 적용할 수 있도록 합니다. [iOS 또는 Android 앱을 앱 보호 정책에 사용할 수 있도록 설정](#enable-your-ios-or-android-app-for-app-protection-policy) 섹션으로 건너뛸 수 있습니다.
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>앱이 Apple App Store 또는 Google Play와 같은 공개 앱 스토어에 출시되는 경우:
 

@@ -1,6 +1,6 @@
 ---
 title: Intune 데이터 웨어하우스 API 엔드포인트
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 참조 항목에서는 Microsoft Intune 데이터 웨어하우스 API URL 구조를 설명합니다. 필터 예제가 제공됩니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396487"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798504"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 데이터 웨어하우스 API 엔드포인트
 
@@ -53,7 +53,7 @@ URL에는 다음 요소가 포함됩니다.
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | 기본 URL은 Azure 포털에서 데이터 웨어하우스 API 블레이드를 보면 알 수 있습니다. |
 | entity-collection | 날짜 | OData 엔터티 컬렉션의 이름입니다. 데이터 모델의 컬렉션 및 엔터티에 대한 자세한 내용은 [데이터 모델](reports-ref-data-model.md)을 참조하세요. |
-| api-version | 베타 | 버전은 액세스할 API의 버전입니다. 자세한 내용은 [버전](#API-version-information)을 참조하세요. |
+| api-version | 베타 | 버전은 액세스할 API의 버전입니다. 자세한 내용은 [버전](reports-api-url.md#api-version-information)을 참조하세요. |
 | maxhistorydays | 7 | (선택 사항) 검색할 최대 기록 일수입니다. 이 매개 변수는 모든 컬렉션에 제공될 수 있지만 `dateKey`를 해당 키 속성의 일부로 포함하는 컬렉션에만 적용됩니다. 자세한 내용은 [DateKey 범위 필터](reports-api-url.md#datekey-range-filters)를 참조하세요. |
 
 ## <a name="api-version-information"></a>API 버전 정보

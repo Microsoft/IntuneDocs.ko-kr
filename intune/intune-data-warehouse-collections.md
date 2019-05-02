@@ -1,12 +1,12 @@
 ---
 title: Intune 데이터 웨어하우스 컬렉션
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 데이터 웨어하우스 컬렉션은 데이터 웨어하우스 API와 관련된 세부 정보를 제공합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358320"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429227"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 데이터 웨어하우스 컬렉션
 
@@ -116,9 +116,9 @@ ms.locfileid: "58358320"
 
 |  complianceStatus  |                       설명                      |
 |:------------------:|:------------------------------------------------------:|
-|    Unknown         |    알 수 없습니다.                                                                        |
+|    Unknown         |    알 수 없음.                                                                        |
 |    규정       |    준수                                                                      |
-|    정책 위반    |       디바이스가 호환되지 않으며 회사 리소스에서 차단되었습니다.             |
+|    비준수    |       디바이스가 호환되지 않으며 회사 리소스에서 차단되었습니다.             |
 |    충돌        |    다른 규칙과 충돌합니다.                                                      |
 |    오류           |       오류.                                                                       |
 |    ConfigManager   |    Config Manager가 관리합니다.                                                      |
@@ -427,6 +427,85 @@ ms.locfileid: "58358320"
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
 | ExtensionVersionKey | IntuneManagementExtension 버전의 고유 식별자입니다. | 1       |
 | ExtensionVersion    | 4 자리 버전 번호입니다.                                   | 1.0.2.0 |
+
+## <a name="mamapplications"></a>MamApplications
+
+**MamApplication** 엔터티는 회사에 등록하지 않고 모바일 앱 관리(MAM)를 통해 관리되는 LOB(기간 업무) 앱을 나열합니다.
+
+| 속성 | 설명 | 예제 |
+|---------|------------|--------|
+| mamApplicationKey |MAM 응용 프로그램의 고유 식별자입니다. | 432 |
+| mamApplicationName |MAM 응용 프로그램의 이름입니다. |MAM 응용 프로그램 예제에서는 이름이 |
+| mamApplicationId |MAM 앱의 애플리케이션 ID | 123 |
+| IsDeleted |이 MAM 앱 레코드가 업데이트되었는지 나타냅니다. <br>True-MAM 앱이 이 테이블에서 필드가 업데이트된 새 레코드를 가집니다. <br>False-이 MAM 앱의 최신 레코드입니다. |True/False |
+| StartDateInclusiveUTC |데이터 웨어하우스에서 해당 MAM 앱을 만든 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |IsDeleted를 True로 변경한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |데이터 웨어하우스에서 해당 MAM 앱을 마지막으로 수정한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
+
+
+## <a name="mamapplicationinstances"></a>MamApplicationInstances
+
+**MamApplicationInstance** 엔터티는 디바이스별 사용자당 단일 인스턴스로서 관리되는 모바일 앱 관리(MAM) 앱을 나열합니다. 엔터티 내 모든 사용자 및 디바이스에 MAM 정책이 하나 이상 할당되어 있으므로 모두 보호됩니다.
+
+
+|          속성          |                                                                                                  설명                                                                                                  |               예제                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               데이터 웨어하우스의 MAM 앱 인스턴스에 대한 고유 식별자 - 서로게이트 키                                                                |                 123                  |
+|           UserId           |                                                                              해당 MAM 앱을 설치한 사용자의 사용자 ID                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              MAM 앱 인스턴스에 대한 고유 식별자 - ApplicationInstanceKey와 비슷하지만 자연 키입니다.                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | 이 Mam 응용 프로그램 인스턴스에 생성 된 Mam 응용 프로그램의 응용 프로그램 Id입니다.   | 11/23/2016 12:00:00 AM   |
+|     ApplicationVersion     |                                                                                     해당 MAM 앱의 애플리케이션 버전                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 MAM 앱 인스턴스의 이 레코드를 만든 날짜입니다. 값은 null일 수 있습니다.                                                                 |        11/23/2016 12:00:00 AM        |
+|          플랫폼          |                                                                          해당 MAM 앱이 설치된 디바이스 플랫폼                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      해당 MAM 앱이 설치된 디바이스의 플랫폼 버전                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            해당 MAM 앱을 래핑한 MAM SDK 버전                                                                            |                 3.2                  |
+| mamDeviceId | MAM 응용 프로그램 인스턴스가 연결 되어 있는 장치의 장치 Id입니다.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | MAM 응용 프로그램 인스턴스가 연결 되어 있는 장치의 장치 형식입니다.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | MAM 응용 프로그램 인스턴스가 연결 되어 있는 장치의 장치 이름입니다.   | 11/23/2016 12:00:00 AM   |
+|         IsDeleted          | 이 MAM 앱 인스턴스 레코드가 업데이트되었는지 나타냅니다. <br>True-이 MAM 앱 인스턴스는 이 테이블에서 필드가 업데이트된 새 레코드를 가집니다. <br>False-이 MAM 앱 인스턴스의 최신 레코드입니다. |              True/False              |
+|   StartDateInclusiveUtc    |                                                              데이터웨어 하우스에서 해당 MAM 앱 인스턴스를 만든 UTC 날짜 및 시간                                                               |        11/23/2016 12:00:00 AM        |
+|       DeletedDateUtc       |                                                                             IsDeleted를 True로 변경한 UTC 날짜 및 시간                                                                              |        11/23/2016 12:00:00 AM        |
+| RowLastModifiedDateTimeUtc |                                                           데이터웨어 하우스에서 해당 MAM 앱 인스턴스를 마지막으로 수정한 UTC 날짜 및 시간                                                            |        11/23/2016 12:00:00 AM        |
+
+## <a name="mamcheckins"></a>MamCheckins
+
+**MamCheckin** 엔터티는 Intune 서비스를 사용하여 모바일 앱 관리(MAM) 앱 인스턴스가 체크인되었을 때 수집된 데이터를 나타냅니다. 
+
+> [!Note]  
+> 앱 인스턴스가 하루에 여러 번 체크인할 경우 데이터 웨어하우스는 이를 단일 체크인으로 저장합니다.
+
+| 속성 | 설명 | 예제 |
+|---------|------------|--------|
+| DateKey |데이터 웨어하우스에서 MAM 앱 체크 인을 기록한 날짜 키 | 20160703 |
+| ApplicationInstanceKey |해당 MAM 앱 체크 인에 연결된 앱 인스턴스의 키 | 123 |
+| UserKey |해당 MAM 앱 체크 인에 연결된 사용자의 키 | 4323 |
+| mamApplicationKey |응용 프로그램 키의 연결 된 응용 프로그램에 MAM 응용 프로그램 확인 합니다. | 432 |
+| DeviceHealthKey |해당 MAM 앱 체크 인에 연결된 DeviceHealth의 키 | 321 |
+| PlatformKey |해당 MAM 앱 체크 인에 연결된 디바이스의 플랫폼을 나타냅니다. |123 |
+| LastCheckInDate |이 MAM 앱이 마지막으로 체크인한 날짜와 시간입니다. 값은 null일 수 있습니다. |11/23/2016 12:00:00 AM |
+
+## <a name="mamdevicehealths"></a>MamDeviceHealths
+
+**MamDeviceHealth** 엔터티는 탈옥 디바이스라고 해도 모바일 앱 관리(MAM) 정책이 배포된 디바이스를 나타냅니다.
+
+| 속성 | 설명 | 예제 |
+|---------|------------|--------|
+| DeviceHealthKey |데이터 웨어하우스의 디바이스 및 관련 상태에 대한 고유 식별자 - 서로게이트 키 |123 |
+| DeviceHealth |디바이스 및 관련 상태에 대한 고유 식별자 - DeviceHealthKey와 비슷하지만 자연 키입니다 |b66bc706-ffff-7777-0340-032819502773 |
+| DeviceHealthName |디바이스 상태를 나타냅니다. <br>사용할 수 없음 - 이 디바이스에 대한 정보가 없습니다. <br>정상 - 디바이스가 탈옥되지 않았습니다. <br>비정상 - 디바이스가 탈옥되었습니다. |사용할 수 없음 정상 비정상 |
+| RowLastModifiedDateTimeUtc |데이터 웨어하우스에서 해당 특정 MAM 디바이스 상태를 마지막으로 수정한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
+
+## <a name="mamplatforms"></a>MamPlatforms
+
+**MamPlatform** 엔터티는 모바일 앱 관리(MAM) 앱이 설치된 플랫폼 이름과 유형을 나열합니다.
+
+
+|          속성          |                                    설명                                    |                         예제                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     데이터 웨어하우스의 플랫폼에 대한 고유 식별자 - 서로게이트 키      |                           123                           |
+|          플랫폼          | 플랫폼에 대한 고유 식별자 - PlatformKey와 비슷하지만 자연 키입니다. |                           123                           |
+|        PlatformName        |                                   플랫폼 이름                                   | 사용할 수 없음 <br>없음 <br>Windows <br>iOS <br>Android: |
+| RowLastModifiedDateTimeUtc | 데이터 웨어하우스에서 해당 플랫폼을 마지막으로 수정한 UTC 날짜 및 시간  |                 11/23/2016 12:00:00 AM                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
 **managementAgentType** 엔터티는 디바이스 관리에 사용되는 에이전트를 나타냅니다.

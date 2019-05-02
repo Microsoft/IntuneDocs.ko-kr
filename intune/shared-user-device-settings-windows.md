@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28f8a589f20cb63ad4f9873942e9ad511d729b37
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 535f66c68b066454ce9706b1dd1d7a4fce5c265c
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566457"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788490"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Intune을 사용하여 공유 디바이스를 관리하기 위한 Windows 10 이상 설정
 
@@ -60,6 +60,9 @@ Intune의 이 기능에 대한 자세한 내용은 [공유 PC 또는 다중 사�
 - **교육 정책**: **사용**을 선택하여 보다 제한적인 학교에서 사용되는 디바이스에 대한 권장 설정을 사용합니다. **사용 안 함**을 선택하면 기본 및 권장되는 교육 정책이 사용되지 않습니다. **구성되지 않음**(기본값)은 이 설정을 Intune에서 관리되지 않는 상태로 유지하고, 디바이스에서 이 설정을 제어하는 모든 정책을 푸시하지 않습니다.
 
   교육 정책이 수행하는 작업에 대한 자세한 내용은 [교육 고객에 대한 Windows 10 구성 권장 사항](https://docs.microsoft.com/education/windows/configure-windows-for-education)을 참조하세요.
+
+> [!TIP]
+> [설정 공유 또는 게스트 PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) (다른 문서 웹 사이트 열기) 개념 및 공유 모드에서 설정할 수 있는 그룹 정책을 포함 하 여이 Windows 10 기능에 중요 한 리소스입니다.
 
 ## <a name="next-steps"></a>다음 단계
 

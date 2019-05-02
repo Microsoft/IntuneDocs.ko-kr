@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395003"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423699"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -138,7 +138,10 @@ ms.locfileid: "58395003"
 - **SIM 카드 오류 대화 상자(모바일 전용)**: SIM 카드가 검색되지 않는 경우에는 오류 메시지가 디바이스에 표시되지 않습니다.
 - **잉크 작업 영역**: 사용자가 잉크 작업 영역에 액세스하는 것을 차단합니다. **구성되지 않음**을 선택하면 잉크 작업 영역이 켜지고 사용자가 잠금 화면 위에서 이를 사용할 수 있습니다.
 - **자동 재배포**: 관리 권한을 가진 사용자가 디바이스 잠금 화면에서 **CTRL+Win+R**을 사용하여 모든 사용자 데이터 및 설정을 삭제할 수 있습니다. 디바이스가 자동으로 재구성되고 관리에 다시 등록됩니다.
-- **사용자가 디바이스를 설치하는 동안 네트워크에 연결하도록 요구(Windows Insider에만 해당)**: **필요**를 선택하면 Windows 10 설치 중에 네트워크 페이지를 지나 계속 진행하기 전에 디바이스를 네트워크에 연결할 수 있습니다. 이 기능이 미리 보기 상태인 동안 이 설정을 사용하려면 Windows Insider build 1809 이상이 필요합니다.
+- **사용자가 디바이스를 설치하는 동안 네트워크에 연결하도록 요구(Windows Insider에만 해당)**: **필요**를 선택하면 Windows 10 설치 중에 네트워크 페이지를 지나 계속 진행하기 전에 디바이스를 네트워크에 연결할 수 있습니다.
+
+  설정이 장치는 초기화 또는 다시 설정 하는 다음에 적용 됩니다. 다른 Intune 구성 처럼에 장치를 등록 하 고 구성 설정을 받으며 Intune에서 관리 되는 수 해야 합니다. 등록 하면 있고 Windows 설치를 사용 하는 동안 설정을 적용 한 후 장치를 다시 설정 정책을 수신 합니다.
+
 - **직접 메모리 액세스**: **차단**을 선택하면 사용자가 Windows에 로그인할 때까지 모든 핫 플러그형 PCI 다운스트림 포트에 대한 DMA(직접 메모리 액세스)가 차단됩니다. **사용**(기본값)으로 설정하면, 사용자가 로그인되지 않은 경우에도 DMA에 액세스할 수 있습니다.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
@@ -305,6 +308,29 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **이전 암호 다시 사용 방지**: 디바이스에 기억될 이전에 사용된 암호의 수를 지정합니다.
   - **디바이스가 유휴 상태에서 되돌아올 때 암호 요구(Mobile만 해당)**: 사용자가 디바이스 잠금을 해제하기 위해 암호를 입력해야 할지 여부를 지정합니다(Windows 10 Mobile에만 해당).
   - **단순 암호**: 1111 및 1234와 같은 단순 암호를 사용할 수 있습니다. 또한 이 설정은 Windows 사진 암호의 사용을 허용하거나 차단합니다.
+- **AADJ 중 자동 암호화**: **블록** 장치가 Azure AD 가입 때 장치가 처음 사용할 준비가 완료 되 면 자동 BitLocker 장치 암호화를 차단 합니다. **구성 되지 않은** (기본값) 암호화를 사용 하는 운영 체제 기본값을 사용 합니다. 더 [BitLocker 장치 암호화](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)합니다.
+
+  [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **처리 표준 FIPS (Federal Information) 정책**: **허용** 미국 정부는 처리 표준 FIPS (Federal Information) 정책을 사용 하 여 암호화, 해시, 서명에 대 한 표준입니다. **구성 되지 않은** FIPS를 사용 하지 않는 운영 체제 기본값을 사용 하 여 (기본값).
+
+  [암호화/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Windows Hello 장치 인증**: **허용** Windows Hello 포함 장치를 사용, 전화, 적합성에 대 한 대역 외 또는 IoT 장치 같은 Windows 10 컴퓨터에 로그인 할 수 있습니다. **구성 되지 않은** Windows를 사용 하 여 인증에서 Windows Hello 포함 장치를 방해할 수 있는 운영 체제 기본값을 사용 하 여 (기본값).
+
+  [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **웹 로그인**: 사용 하도록 설정 하는 Windows 로그온 비 ADFS (Active Directory Federation Services) 페더레이션된 공급자와 같은 SAML Security Assertion Markup Language ()에 대 한 지원. SAML을에서 single sign-on (SSO) 웹 브라우저 환경을 제공 하는 보안 토큰을 사용 합니다. 옵션은 다음과 같습니다.
+
+  - **구성 되지 않은** (기본값): 장치에서 운영 체제 기본값을 사용 합니다.
+  - **사용 하도록 설정**: 로그인을 위해 The 웹 자격 증명 공급자를 사용할 수 있습니다.
+  - **사용 하지 않도록 설정**: 로그인 웹 자격 증명 공급자를 사용할 수 없게 됩니다.
+
+  [인증/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Azure AD 테 넌 트 도메인을 기본**: Azure AD 조직에서 기존 도메인 이름을 입력 합니다. 이 도메인의 사용자를 로그인 할 때 도메인 이름을 입력할 필요가 없습니다. 예를 들어 다음과 같이 입력합니다. `contoso.com` 사용자에 게는 `contoso.com` 도메인 사용자 이름 "abby" 등을 사용 하 여 로그인 할 수 대신 "abby@contoso.com"입니다.
+
+  [인증/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>앱별 개인 정보 예외
 

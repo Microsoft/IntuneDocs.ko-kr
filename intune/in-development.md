@@ -1,12 +1,12 @@
 ---
 title: 개발-Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune 기능 개발
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675445"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587385"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>-2019 년 4 월 Microsoft Intune 용 개발
 
-준비 및 계획,이 페이지를 지원 하기 위해 목록 Intune UI 업데이트 및 기능을 개발은 있지만 아직 릴리스되지 않은 경우. 또한,
+준비 및 계획,이 페이지를 지원 하기 위해 목록 Intune UI 업데이트 및 기능을 개발은 있지만 아직 릴리스되지 않은 경우. 이 밖에도 다음 지침을 따릅니다.
 
-- 변경 하기 전에 작업을 수행 해야 하는 것이 예정, 경우 무료 Office 메시지 센터 게시물을 게시 하겠습니다.
+- 변경 하기 전에 작업을 수행 해야 하는 것이 예정, 경우 보완 Office 메시지 센터 게시물을 게시 됩니다.
 - 경우 기능을 프로덕션 환경에서 미리 보기로 하거나 시작 일반 공급 기능 설명 됩니다 및 또는 이동이 페이지에 [새로운 기능 페이지](whats-new.md)합니다.
 - 이 페이지와 [새로운 기능 페이지](whats-new.md) 정기적으로 업데이트 됩니다. 추가 업데이트가 있는지 다시 확인하세요.
 - 참조 된 [M365 로드맵](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) 전략적 결과물 및 타임 라인에 대 한 합니다.
@@ -61,18 +61,6 @@ MacOS 장치에서 장치 구성 프로필을 만들 수 있습니다 (**장치 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>앱 보호 조건부 액세스가 필요한  <!--1634317 -->
 사용할 수 있습니다 *필요한 앱 보호 정책*, 조건부 액세스를 사용 하 여 보호 하는 데이터를 액세스 하지 못하게 하려면 로그인을 완료 하기 전에 사용자의 앱에 적용 되는 것이 정책을 확인 합니다. 정책 assurance 처음 사용 하 여 속도가 느려질 수 있습니다, 있지만 네트워크 문제, 잘못 된 구성 관리, 또는 응용 프로그램 보호 정책을 저지 하 의도적인 활동 으로부터 보호 하기 위해 수 있습니다. 
 
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>온라인 라이선스가 부여된 비즈니스용 Microsoft Store 앱 배포 <!-- 16726660 -->
-디바이스 컨텍스트에서 필요로 하는 온라인 라이선스가 부여된 비즈니스용 Microsoft Store 앱을 할당할 수 있습니다. 이 방식으로 비즈니스용 Microsoft Store 앱을 배포하면 디바이스의 모든 사용자에 대해 앱을 설치할 수 있습니다. 이 기능은 Windows 10 RS4 이상 데스크톱 디바이스에만 적용됩니다. 디바이스 컨텍스트에 설치하는 옵션은 MSFB 온라인 라이선스가 부여된 앱에 대한 클라이언트 앱 할당 페이지에서 사용할 수 있습니다.
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>정책 및 프로필을 할당할 때 사용자 그룹과 장치 그룹의 혼합을 제외 및 포함 <!-- 1807547 -->
-준수 정책 또는 구성 프로필에 할당할 때 사용자 또는 장치를 사용 하 여 보안 그룹 할당할 수 있습니다. 포함 사용자 그룹만 제외 하는 현재 *또는* 만 장치 그룹 포함 및 제외 합니다. 포함 및 제외 그룹의 혼합와 같은 사용자 그룹을 포함할 수 없습니다 *고* 장치 그룹을 제외 합니다.
-
-포함 하거나 다양 한 사용자 그룹 및 장치 그룹을 제외할 수 있습니다. 사용자, 그룹에 포함할 수 있으며 장치 그룹을 제외할 수 있습니다. 예를 들어, 할당 또는 사용자 그룹에 장치 구성 프로필을 배포 따르면 개인 장치를 제외 합니다.
-
-[장치 구성 프로필을 할당](device-profile-assign.md) 사용자 그룹 및 장치 그룹에 프로필을 할당 하는 방법은 포함 되어 있습니다.
-
-적용 대상: 모든 플랫폼
-
 ### <a name="retire-noncompliant-devices----1827291---"></a>비규격 장치 사용 중지 <!-- 1827291 -->
 비규격 장치 사용 중지 하려면 새 준수 동작을 추가 하겠습니다. 비규격 장치 사용 중지에서 모든 회사 데이터를 제거 하 고도 Intune에 의해 관리에서 장치를 제거 합니다. 이 작업은 일 이내에 구성 된 값에 도달한 경우를 실행 합니다. 최소 값은 30일입니다. 
 
@@ -85,7 +73,7 @@ MacOS 장치에서 장치 구성 프로필을 만들 수 있습니다 (**장치 
 macOS 등록 프로필을 만들 때, 사용자가 설정 도우미를 수행할 때 다음 화면 중 하나를 건너뛰도록 구성할 수 있습니다.
 - Android 마이그레이션
 - 표시 색상
-- 개인 정보 취급 방침
+- 개인 정보 보호
 - iCloudStorage 새 프로필을 만들거나 프로필을 편집하는 경우 선택한 건너뛰기 화면이 Apple MDM 서버와 동기화되어야 합니다. 사용자는 프로필 변경 내용을 선택하는 데 지연이 발생하지 않도록 디바이스의 수동 동기화를 발행할 수 있습니다.
 자세한 내용은 [Apple School Manager 또는 장비 등록 프로그램을 통해 자동으로 macOS 디바이스 등록](device-enrollment-program-enroll-macos.md)을 참조하세요.
 
@@ -142,7 +130,7 @@ Android 엔터프라이즈 장치에서 허용 하거나, 암호 규칙을 설�
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Windows 10 장치 준수 정책에는 TPM 칩세트에 확인 <!-- 3617671 -->
 많은 Windows 10 이상 장치에 게 모듈 TPM (Trusted Platform) 칩셋 합니다. 새 준수 설정은 TPM 장치가 켜져 있는지 확인 합니다.
 
-[Windows 10 및 이후 규정 준수 정책 설정](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) 현재 설정을 표시 합니다.
+[Windows 10 및 이후 규정 준수 정책 설정](compliance-policy-create-windows.md) 현재 설정을 표시 합니다.
 
 적용 대상: 
 - Windows 10 이상
@@ -177,15 +165,6 @@ Windows 업데이트에 대 한 검색에서 사용자를 차단 하는 데 사�
 
 ### <a name="windows-update-notifications----3316782---"></a>Windows 업데이트 알림 <!-- 3316782 -->
 사용자에 게 표시 하는 Windows 업데이트 알림을 구성 하는 일을 할 수 있도록 지원 Windows 업데이트 링 구성에 추가 될 예정입니다. 이 설정은 포털 내에서 사용할 수 없지만 Intune Graph API를 사용 하 여 구성할 수 있습니다.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>IOS 용 회사 포털 등록 12 장치 사용자 변경 <!--3448635 --> 
-IOS 용 회사 포털 앱 등록 화면 및 Apple iOS 12.2에에서 릴리스된 MDM 등록 변경 내용에 맞게 단계를 업데이트할 예정입니다. 업데이트 된 워크플로를 사용자에 게 이제 됩니다.
-
-- Safari (Safari)를 통해 회사 포털 웹 사이트를 열고 회사 포털 앱에 반환 하기 전에 관리 프로필을 다운로드할 수 있습니다.
-- 장치에서 관리 프로필을 설치 하려면 설정 앱을 엽니다.
-- 등록을 완료 하려면 회사 포털 앱에 반환 합니다.
-
-이러한 변경 내용을 준비 하는 방법에 대 한 자세한 내용은 참조는 [Microsoft 기술 커뮤니티 게시물](https://aka.ms/CP_changes_iOS12)합니다. 한편, 회사 포털에서 새 iOS 등록을 지원 하려면 업데이트 했습니다의 단계 [Intune에서 iOS 장치 등록](https://docs.microsoft.com/en-us/intune/ios-enroll)합니다. 이러한 문서 변경 내용을 Apple iOS 버전 12.2 출시 후 라이브 상태가 됩니다. 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>진단 설정에 쉽게 액세스할 수 있도록 <!-- 3804627 -->
 하는 새로운 옵션이 추가 될 예정 된 **감사 로그** 블레이드를 열려면 직접 사용할 수 있는 Intune 콘솔에서 모든 감사 로그 작업에는 *진단 설정* 페이지입니다.

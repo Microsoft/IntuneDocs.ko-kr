@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/16/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd162f6af256c104c04374290a695141cdcc26f6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: d42fab929d6fa3e7fbaed8e9557573ebbaa1f3ad
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566202"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292353"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -110,6 +110,8 @@ Intune 앱 SDK를 통합 하는 것에 대 한 전체 개요에서 찾을 수 �
     public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
         : base(handle, transfer) { }
 ```
+> [!NOTE]
+> MAM Xamarin 바인딩 사용 하 여 문제에는 응용 프로그램 디버그 모드에서 배포 하는 경우 충돌을 발생할 수 있습니다. 이 문제를 해결 합니다 `Debuggable=false` 특성에 추가 되어야 합니다는 `Application` 클래스 및 `android:debuggable="true"` 수동으로 설정 된 경우 매니페스트에서 플래그를 제거 해야 합니다.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[앱 참여를 요구하는 기능 사용](app-sdk-android.md#enable-features-that-require-app-participation)
 예: 앱에 PIN이 필요한지 확인

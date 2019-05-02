@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566627"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799268"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Intune에서 iOS의 일반적인 기능을 사용 하는 iOS 장치 설정
 
@@ -96,6 +96,9 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 
       3. **추가**를 선택합니다. 디바이스 도킹에 최대 **20**개의 페이지를 추가할 수 있습니다.
       4. **확인**을 선택하여 변경 내용을 저장합니다.
+
+> [!NOTE]
+> 도킹 설정을 사용 하 여 아이콘을 추가 하면 홈 화면 및 페이지에 있는 아이콘 잠겨 있으며 이동할 수 없습니다. 이 iOS 및 Apple MDM 정책을 사용 하 여 설계 수 있습니다.
 
 #### <a name="example"></a>예제
 
