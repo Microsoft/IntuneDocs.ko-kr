@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 015e50d24149a6b6242eda86d5f3d62489e9955d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MTE75
+ms.contentlocale: ko-KR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511332"
+---
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
 ## <a name="azure-ad-and-intune-credential-requirements"></a>Azure AD 및 Intune 자격 증명 요구 사항
@@ -10,4 +18,4 @@ Intune 데이터 웨어하우스(API 포함)에 액세스하기 위한 요구 �
       -  Azure AD 전역 관리자
       -  Intune 서비스 관리자
       -  **Intune 데이터 웨어하우스** 리소스에 역할 기반 액세스 권한이 있는 사용자
-      -  [응용 프로그램 전용 인증](../data-warehouse-app-only-auth.md)을 사용한 사용자 없는 인증 
+      -  [애플리케이션 전용 인증](../data-warehouse-app-only-auth.md)을 사용한 사용자 없는 인증 
