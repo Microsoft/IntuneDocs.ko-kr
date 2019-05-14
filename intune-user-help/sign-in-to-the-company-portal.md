@@ -20,7 +20,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 370d6372cf3df2ff807069fe8d54f30da23e7ba2
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55842612"
@@ -38,7 +38,7 @@ ms.locfileid: "55842612"
 
 1. 디바이스에서 회사 포털 앱을 열고 **로그인**을 탭합니다.
 
-   ![웹 사이트가 그림으로 표시되면서 그 앞에 사람 아이콘이 포함된 회사 포털 로그인 페이지 "회사 리소스에 액세스하고 안전하게 보관하기" 텍스트 및 "로그인" 단추는 아래에 있습니다. Microsoft 개인 정보 및 쿠키 정보로 이동하게 하는 하단의 링크](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
+   ![웹 사이트가 그림으로 표시되면서 그 앞에 사람 아이콘이 포함된 회사 포털 로그인 페이지 "회사 리소스에 액세스하고 안전하게 보관하기" 텍스트 및 "로그인" 단추는 아래에 있습니다. Microsoft 개인정보처리방침 정보로 이동하게 하는 하단의 링크](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
 
    회사 포털 앱이 없나요? [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) 또는 [Android](install-the-company-portal-app-android.md)에 대해 설치하고 다운로드하는 방법을 확인합니다.
 
@@ -70,7 +70,7 @@ ms.locfileid: "55842612"
 
 1. 메일 주소를 입력하는 대신 메일 텍스트 상자 아래에 있는 **다른 디바이스에서 로그인** 링크를 선택합니다.
 
-   ![회사 포털 로그인 페이지는 사용자에게 이메일 주소에 대한 메시지를 표시합니다.  "다음" 단추 및 "다른 디바이스에서 로그인"에 대한 링크는 아래에 있습니다. 또한 "계정에 액세스할 수 없습니까?"에 대한 링크를 포함합니다. Microsoft 개인 정보 및 쿠키 정보로 이동하게 하는 하단의 링크](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+   ![회사 포털 로그인 페이지는 사용자에게 이메일 주소에 대한 메시지를 표시합니다.  "다음" 단추 및 "다른 디바이스에서 로그인"에 대한 링크는 아래에 있습니다. 또한 "계정에 액세스할 수 없습니까?"에 대한 링크를 포함합니다. Microsoft 개인정보처리방침 정보로 이동하게 하는 하단의 링크](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 
 2. 회사 포털에 로그인하기 위한 고유한 일회성 코드를 받게 됩니다.
 
