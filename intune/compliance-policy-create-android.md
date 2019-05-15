@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 Android 디바이스 준수 정책 만들기 - Azure | Microsoft Docs
-description: Microsoft Intune에서 Android 장치에 대 한 준수를 설정 하는 경우 사용할 수는 모든 설정의 목록을 참조 하세요. 암호 규칙을 설정, 최소 또는 최대 운영 체제 버전을 선택, 특정 앱을 제한, 재사용, 암호 등을 방지 합니다.
+title: Microsoft Intune에서 Android 디바이스 규정 준수 설정 - Azure | Microsoft Docs
+description: Microsoft Intune에서 Android 디바이스의 규정 준수를 설정할 때 사용할 수 있는 모든 설정 목록을 참조하세요. 암호 규칙 설정, 최소 또는 최대 운영 체제 버전 선택, 특정 앱 제한, 암호 재사용 방지 등.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,17 +24,17 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423580"
 ---
-# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>규격 또는 비규격 Intune을 사용 하 여 장치 됨으로 표시 하려면 android 설정
+# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Android 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서에서는 나열 하 고 Intune에서 Android 장치에서 구성할 수 있습니다 다른 규정 준수 설정에 설명 합니다. 모바일 장치 관리 (MDM) 솔루션의 일부로, 이러한 설정을 사용 하는 허용 되는 위협 수준 설정, Google Play 보호 등을 사용 하도록 설정 (탈 옥) 루 팅 된 장치를 비준수로 표시 합니다.
+이 문서에서는 Intune의 Android 디바이스에서 구성할 수 있는 다양한 규정 준수 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 사용하여 루팅된(무단 해제) 디바이스를 비규격으로 표시하고, 허용되는 위협 수준을 설정하고, Google Play Protect를 사용하도록 설정하는 등의 작업을 수행합니다.
 
 이 기능은 다음에 적용됩니다.
 
 - Android
 
-Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소스를 보호 하기 위해 사용 합니다. 준수 정책 및 모든 필수 조건에 대한 자세한 내용은 [디바이스 준수 시작](device-compliance-get-started.md)을 참조하세요.
+Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를 보호할 수 있습니다. 규정 준수 정책 및 정책 수행에 대한 자세한 내용은 [디바이스 규정 준수 시작](device-compliance-get-started.md)을 참조하세요.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -64,7 +64,7 @@ Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소�
   - **기본 무결성 및 인증된 디바이스 확인**
 
 > [!NOTE]
-> 앱 보호 정책을 사용 하 여 Google Play 보호 설정을 구성 하려면 참조 [Intune 앱 보호 정책 설정을](app-protection-policy-settings-android.md#conditional-launch) Android에서.
+> 앱 보호 정책을 사용하여 Google Play Protect 설정을 구성하려면 Android에서 [Intune 앱 보호 정책 설정](app-protection-policy-settings-android.md#conditional-launch)을 참조하세요.
 
 ## <a name="device-property-settings"></a>디바이스 속성 설정
 
@@ -120,14 +120,14 @@ Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소�
 
 ## <a name="locations"></a>위치
 
-정책에서 장치 위치에 따라 규정 준수를 강제할 수 있습니다. 기존 위치에서 선택 합니다. 아직 위치가 없나요? [Intune에서 위치(네트워크 펜스) 사용](use-network-locations.md)에서 몇 가지 지침을 제공하고 있습니다.
+정책에서 디바이스의 위치에 따라 규정 준수를 강제 적용할 수 있습니다. 기존 위치에서 선택합니다. 아직 위치가 없나요? Intune에서 [위치(네트워크 펜스) 사용](use-network-locations.md)에는 몇 가지 지침이 제공됩니다.
 
-1. 선택할 **위치** > **위치 선택**합니다.
-2. 목록에서 사용자의 위치를 확인 > **선택**합니다.
+1. **위치** > **위치 선택**을 선택합니다.
+2. 목록에서 사용자의 위치 > **선택**을 확인합니다.
 3. 정책을 **저장**합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-- [비규격 장치에 대 한 작업 추가](actions-for-noncompliance.md) 하 고 [필터 정책에 대 한 범위 태그를 사용 하 여](scope-tags.md)입니다.
-- [규정 준수 정책을 모니터링](compliance-policy-monitor.md)합니다.
-- [Android Enterprise용 규정 준수 정책 설정](compliance-policy-create-android-for-work.md)
+- [비규격 디바이스에 대한 작업 추가](actions-for-noncompliance.md) 및 [범위 태그를 사용하여 정책 필터링](scope-tags.md).
+- [규정 준수 정책 모니터링](compliance-policy-monitor.md).
+- [Android Enterprise용 규정 준수 정책 설정](compliance-policy-create-android-for-work.md) 디바이스를 참조하세요.

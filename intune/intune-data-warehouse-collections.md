@@ -281,7 +281,7 @@ ms.locfileid: "59429227"
 | 12           | ISocConsumer      | iSoc 소비자 디바이스                                |
 | 13           | Unix              | Unix 디바이스                                         |
 | 14           | MacMDM            | 기본 MDM 에이전트로 관리되는 Mac OS X 디바이스 |
-| 15           | HoloLens          | HoloLens 장치                                       |
+| 15           | HoloLens          | HoloLens 디바이스                                       |
 | 16           | SurfaceHub        | Surface Hub 디바이스                                  |
 | 17           | AndroidForWork    | Android Profile Owner로 관리되는 Android 디바이스  |
 | 18           | AndroidEnterprise | Android 엔터프라이즈 디바이스                          |
@@ -326,7 +326,7 @@ ms.locfileid: "59429227"
 | enrollmentFailureCategoryKey  | 등록 실패 범주의 키입니다(등록에 실패하는 경우).        |
 | enrollmentFailureReasonKey    | 등록 실패 이유의 키입니다(등록에 실패하는 경우).          |
 | osVersion                     | 디바이스의 운영 체제 버전입니다.                               |
-| count                         | 위의 분류와 일치하는 등록 작업의 총 수입니다.  |
+| 개수                         | 위의 분류와 일치하는 등록 작업의 총 수입니다.  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
 **EnrollmentEventStatus** 엔터티는 디바이스 등록의 결과를 나타냅니다.
@@ -434,9 +434,9 @@ ms.locfileid: "59429227"
 
 | 속성 | 설명 | 예제 |
 |---------|------------|--------|
-| mamApplicationKey |MAM 응용 프로그램의 고유 식별자입니다. | 432 |
-| mamApplicationName |MAM 응용 프로그램의 이름입니다. |MAM 응용 프로그램 예제에서는 이름이 |
-| mamApplicationId |MAM 앱의 애플리케이션 ID | 123 |
+| mamApplicationKey |MAM 애플리케이션의 고유 식별자입니다. | 432 |
+| mamApplicationName |MAM 애플리케이션의 이름입니다. |MAM 애플리케이션 예제 이름 |
+| mamApplicationId |MAM 애플리케이션의 애플리케이션 ID입니다. | 123 |
 | IsDeleted |이 MAM 앱 레코드가 업데이트되었는지 나타냅니다. <br>True-MAM 앱이 이 테이블에서 필드가 업데이트된 새 레코드를 가집니다. <br>False-이 MAM 앱의 최신 레코드입니다. |True/False |
 | StartDateInclusiveUTC |데이터 웨어하우스에서 해당 MAM 앱을 만든 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |IsDeleted를 True로 변경한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
@@ -453,15 +453,15 @@ ms.locfileid: "59429227"
 |   ApplicationInstanceKey   |                                                               데이터 웨어하우스의 MAM 앱 인스턴스에 대한 고유 식별자 - 서로게이트 키                                                                |                 123                  |
 |           UserId           |                                                                              해당 MAM 앱을 설치한 사용자의 사용자 ID                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM 앱 인스턴스에 대한 고유 식별자 - ApplicationInstanceKey와 비슷하지만 자연 키입니다.                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | 이 Mam 응용 프로그램 인스턴스에 생성 된 Mam 응용 프로그램의 응용 프로그램 Id입니다.   | 11/23/2016 12:00:00 AM   |
+| mamApplicationId | 이 Mam 애플리케이션 인스턴스가 생성된 Mam 애플리케이션의 애플리케이션 ID입니다.   | 11/23/2016 12:00:00 AM   |
 |     ApplicationVersion     |                                                                                     해당 MAM 앱의 애플리케이션 버전                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 MAM 앱 인스턴스의 이 레코드를 만든 날짜입니다. 값은 null일 수 있습니다.                                                                 |        11/23/2016 12:00:00 AM        |
 |          플랫폼          |                                                                          해당 MAM 앱이 설치된 디바이스 플랫폼                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      해당 MAM 앱이 설치된 디바이스의 플랫폼 버전                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            해당 MAM 앱을 래핑한 MAM SDK 버전                                                                            |                 3.2                  |
-| mamDeviceId | MAM 응용 프로그램 인스턴스가 연결 되어 있는 장치의 장치 Id입니다.   | 11/23/2016 12:00:00 AM   |
-| mamDeviceType | MAM 응용 프로그램 인스턴스가 연결 되어 있는 장치의 장치 형식입니다.   | 11/23/2016 12:00:00 AM   |
-| mamDeviceName | MAM 응용 프로그램 인스턴스가 연결 되어 있는 장치의 장치 이름입니다.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceId | MAM 애플리케이션 인스턴스가 연결된 디바이스의 디바이스 ID입니다.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | MAM 애플리케이션 인스턴스가 연결된 디바이스의 디바이스 유형입니다.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | MAM 애플리케이션 인스턴스가 연결된 디바이스의 디바이스 이름입니다.   | 11/23/2016 12:00:00 AM   |
 |         IsDeleted          | 이 MAM 앱 인스턴스 레코드가 업데이트되었는지 나타냅니다. <br>True-이 MAM 앱 인스턴스는 이 테이블에서 필드가 업데이트된 새 레코드를 가집니다. <br>False-이 MAM 앱 인스턴스의 최신 레코드입니다. |              True/False              |
 |   StartDateInclusiveUtc    |                                                              데이터웨어 하우스에서 해당 MAM 앱 인스턴스를 만든 UTC 날짜 및 시간                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             IsDeleted를 True로 변경한 UTC 날짜 및 시간                                                                              |        11/23/2016 12:00:00 AM        |
@@ -479,7 +479,7 @@ ms.locfileid: "59429227"
 | DateKey |데이터 웨어하우스에서 MAM 앱 체크 인을 기록한 날짜 키 | 20160703 |
 | ApplicationInstanceKey |해당 MAM 앱 체크 인에 연결된 앱 인스턴스의 키 | 123 |
 | UserKey |해당 MAM 앱 체크 인에 연결된 사용자의 키 | 4323 |
-| mamApplicationKey |응용 프로그램 키의 연결 된 응용 프로그램에 MAM 응용 프로그램 확인 합니다. | 432 |
+| mamApplicationKey |MAM 애플리케이션과 관련된 애플리케이션의 애플리케이션 키를 체크 인합니다. | 432 |
 | DeviceHealthKey |해당 MAM 앱 체크 인에 연결된 DeviceHealth의 키 | 321 |
 | PlatformKey |해당 MAM 앱 체크 인에 연결된 디바이스의 플랫폼을 나타냅니다. |123 |
 | LastCheckInDate |이 MAM 앱이 마지막으로 체크인한 날짜와 시간입니다. 값은 null일 수 있습니다. |11/23/2016 12:00:00 AM |
@@ -527,7 +527,7 @@ ms.locfileid: "59429227"
 | 5                     | EasIntuneClient                   | 디바이스가 Exchange Active Sync와 Intune PC 에이전트를 둘 다 사용하여 관리됨 |
 | 8                     | ConfigManagerClient               | 디바이스가 System Center Configuration Manager 에이전트를 사용하여 관리됨     |
 | 10                    | ConfigurationManagerClientMdm     | 디바이스가 Configuration Manager 및 MDM에서 관리됩니다.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | 장치는 Configuration Manager를 MDM 및 Exchange Activesync에서 관리 됩니다.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | 이 디바이스는 Configuration Manager, MDM 및 Exchange Active Sync에서 관리됩니다.               |
 | 16                    | Unknown                           | 알 수 없는 관리 에이전트 유형                                              |
 | 32                    | Jamf                              | 디바이스 특성은 Jamf에서 가져옵니다.                               |
 | 64                    | GoogleCloudDevicePolicyController |  디바이스가 Google의 CloudDPC에서 관리됩니다.                                 |
@@ -589,7 +589,7 @@ Microsoft Intune을 통해 모바일 애플리케이션 관리를 사용하여 �
 | ownerTypeName | 디바이스 소유자 유형을 나타냅니다. 회사 - 엔터프라이즈 소유 디바이스입니다.  개인 - 개인 소유 디바이스입니다(BYOD).   알 수 없음 - 이 디바이스에 대한 정보가 없습니다. | 회사 개인 알 수 없음 |
 
 > [!Note]  
-> 에 대 한 합니다 `ownerTypeName` 필터에서 장치에 대 한 동적 그룹을 만들 때 azure Ad에서 값을 설정 해야 `deviceOwnership` 으로 `Company`입니다. 자세한 내용은 [장치에 대 한 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)합니다. 
+> 디바이스용 동적 그룹을 만들 때 AzureAD의 `ownerTypeName` 필터의 대해 `deviceOwnership` 값을 `Company`로 설정해야 합니다. 자세한 내용은 [디바이스 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)을 참조하세요. 
 
 ## <a name="policies"></a>정책
 **정책** 엔터티는 디바이스 구성 프로필, 앱 구성 프로필 및 규정 준수 정책을 나열합니다. 정책을 MDM(Mobile Device Management)을 통해 기업 내 그룹에 할당할 수 있습니다.

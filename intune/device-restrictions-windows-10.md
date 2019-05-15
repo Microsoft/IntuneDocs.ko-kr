@@ -29,7 +29,7 @@ ms.locfileid: "59423699"
 이러한 설정은 Intune에서 디바이스 구성 프로필에 추가된 다음, Windows 10 디바이스에 할당 또는 배포됩니다.
 
 > [!Note]
-> 모든 Windows 버전에서 모든 옵션을 사용할 수 있는 것은 아닙니다. 지원 되는 버전을 참조 합니다 [정책 Csp](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (다른 Microsoft 웹 사이트 열기).
+> 모든 Windows 버전에서 모든 옵션을 사용할 수 있는 것은 아닙니다. 지원되는 버전을 보려면 [정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)(다른 Microsoft 웹 사이트 열기)를 참조하세요.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -138,15 +138,15 @@ ms.locfileid: "59423699"
 - **SIM 카드 오류 대화 상자(모바일 전용)**: SIM 카드가 검색되지 않는 경우에는 오류 메시지가 디바이스에 표시되지 않습니다.
 - **잉크 작업 영역**: 사용자가 잉크 작업 영역에 액세스하는 것을 차단합니다. **구성되지 않음**을 선택하면 잉크 작업 영역이 켜지고 사용자가 잠금 화면 위에서 이를 사용할 수 있습니다.
 - **자동 재배포**: 관리 권한을 가진 사용자가 디바이스 잠금 화면에서 **CTRL+Win+R**을 사용하여 모든 사용자 데이터 및 설정을 삭제할 수 있습니다. 디바이스가 자동으로 재구성되고 관리에 다시 등록됩니다.
-- **사용자가 디바이스를 설치하는 동안 네트워크에 연결하도록 요구(Windows Insider에만 해당)**: **필요**를 선택하면 Windows 10 설치 중에 네트워크 페이지를 지나 계속 진행하기 전에 디바이스를 네트워크에 연결할 수 있습니다.
+- **사용자가 디바이스를 설치하는 동안 네트워크에 연결하도록 요구**: **필요**를 선택하면 Windows 10 설치 중에 네트워크 페이지를 지나기 전에 디바이스를 네트워크에 연결할 수 있습니다.
 
-  설정이 장치는 초기화 또는 다시 설정 하는 다음에 적용 됩니다. 다른 Intune 구성 처럼에 장치를 등록 하 고 구성 설정을 받으며 Intune에서 관리 되는 수 해야 합니다. 등록 하면 있고 Windows 설치를 사용 하는 동안 설정을 적용 한 후 장치를 다시 설정 정책을 수신 합니다.
+  이 설정은 다음에 디바이스를 초기화하거나 재설정할 때 적용됩니다. 다른 Intune 구성과 마찬가지로, 구성 설정을 수신하려면 디바이스를 Intune에서 등록하고 관리해야 합니다. 그러나 등록하고 정책을 수신한 다음, 디바이스를 다시 설정하면 다음 Windows 설치 중에 설정이 적용됩니다.
 
 - **직접 메모리 액세스**: **차단**을 선택하면 사용자가 Windows에 로그인할 때까지 모든 핫 플러그형 PCI 다운스트림 포트에 대한 DMA(직접 메모리 액세스)가 차단됩니다. **사용**(기본값)으로 설정하면, 사용자가 로그인되지 않은 경우에도 DMA에 액세스할 수 있습니다.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
-- **작업 관리자에서 프로세스를 종료**:이 설정은 관리자가 아닌 최종 작업에 작업 관리자를 사용할 수 있는지 여부를 결정 합니다. **차단**을 선택하면 표준 사용자(비관리자)가 작업 관리자를 사용하여 디바이스에서 프로세스 또는 작업을 종료하지 못합니다. **구성되지 않음**(기본값)은 표준 사용자가 작업 관리자를 사용하여 프로세스 또는 작업을 종료할 수 있도록 허용합니다.
+- **작업 관리자에서 프로세스 종료**: 이 설정은 관리자가 아닌 사용자가 작업 관리자를 사용하여 작업을 종료할 수 있는지 여부를 결정합니다. **차단**을 선택하면 표준 사용자(비관리자)가 작업 관리자를 사용하여 디바이스에서 프로세스 또는 작업을 종료하지 못합니다. **구성되지 않음**(기본값)은 표준 사용자가 작업 관리자를 사용하여 프로세스 또는 작업을 종료할 수 있도록 허용합니다.
 
 ## <a name="locked-screen-experience"></a>잠긴 화면 환경
 
@@ -165,28 +165,28 @@ ms.locfileid: "59423699"
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge 브라우저
 
-### <a name="use-microsoft-edge-kiosk-mode"></a>Microsoft Edge 키오스크 모드를 사용 합니다.
+### <a name="use-microsoft-edge-kiosk-mode"></a>Microsoft Edge 키오스크 모드 사용
 
-선택한 항목에 따라 사용 가능한 설정을 변경 합니다. 옵션은 다음과 같습니다.
+사용 가능한 설정은 선택한 항목에 따라 변경됩니다. 옵션은 다음과 같습니다.
 
-- **이상** (기본값): Microsoft Edge 키오스크 모드에서 실행 되지 않습니다. Microsoft Edge 설정도 변경 하 고 구성할 수 있습니다.
-- **디지털/대화형 신호 (단일 앱 키오스크)**: Windows 10 단일 앱 키오스크에만 사용 하기 위해 디지털/대화형 간판 Microsoft Edge 키오스크 모드에 적용 되는 필터 Microsoft Edge 설정 합니다. URL 전체 화면을 열려면이 설정을 선택 하 고 해당 웹 사이트에 콘텐츠를 표시 합니다. [디지털 서명 설정](https://docs.microsoft.com/windows/configuration/setup-digital-signage) 이 기능에 대 한 자세한 정보를 제공 합니다.
-- **InPrivate 공용 브라우징 (단일 앱 키오스크)**: InPrivate 공용 검색 Microsoft Edge 용 키오스크 모드에서 Windows 10 단일 앱 키오스크 사용에 적용 되는 필터 Microsoft Edge 설정 합니다. Microsoft Edge의 다중 탭 버전을 실행 합니다.
-- **표준 모드 (다중 앱 키오스크)**: 보통 Microsoft Edge 키오스크 모드에 적용 되는 필터 Microsoft Edge 설정 합니다. 모든 검색 기능을 사용 하 여 Microsoft Edge의 전체 버전을 실행합니다.
-- **공용 검색 (다중 앱 키오스크)**: Windows 10 다중 앱 키오스크에 대 한 공용 찾아보기에 적용 되는 필터 Microsoft Edge 설정 합니다.  Microsoft Edge InPrivate의 다중 탭 버전을 실행 합니다.
+- **아니요**(기본값): Microsoft Edge가 키오스크 모드에서 실행되고 있지 않습니다. 모든 Microsoft Edge 설정을 변경하고 구성할 수 있습니다.
+- **디지털/대화형 신호(단일 앱 키오스크)**: Windows 10 단일 앱 키오스크에서만 사용할 수 있도록 디지털/대화형 신호 Microsoft Edge 키오스크 모드에 적용할 수 있는 Microsoft Edge 설정을 필터링합니다. URL 전체 화면을 열고 해당 웹 사이트에 콘텐츠만 표시하려면 이 설정을 선택합니다. [디지털 서명 설정](https://docs.microsoft.com/windows/configuration/setup-digital-signage)은 이 기능에 대한 자세한 정보를 제공합니다.
+- **InPrivate Public 검색(단일 앱 키오스크)**: Windows 10 단일 앱 키오스크에서 사용할 수 있도록 InPrivate Public Browsing Microsoft Edge 키오스크 모드에 적용할 수 있는 Microsoft Edge 설정을 필터링합니다. Microsoft Edge의 다중 탭 버전을 실행합니다.
+- **일반 모드(다중 앱 키오스크)**: 일반 Microsoft Edge 키오스크 모드에 적용할 수 있는 Microsoft Edge 설정을 필터링합니다. 모든 검색 기능을 사용하여 Microsoft Edge의 전체 버전을 실행합니다.
+- **공용 검색(다중 앱 키오스크)**: Windows 10 다중 앱 키오스크에서 공용 검색에 적용할 수 있는 Microsoft Edge 설정을 필터링합니다.  Microsoft Edge InPrivate의 다중 탭 버전을 실행합니다.
 
 > [!TIP]
-> 이러한 옵션에 수행할 작업에 대 한 자세한 내용은 참조 하세요. [Microsoft Edge 키오스크 모드 구성 유형을](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)합니다.
+> 이러한 옵션의 기능에 대한 자세한 내용은 [Microsoft Edge 키오스크 모드 구성 유형](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)을 참조하세요.
 
-이 장치 제한 프로필에 직접 연관 됩니다 키오스크 프로필을 사용 하 여 만든 합니다 [Windows 키오스크 설정을](kiosk-settings-windows.md)합니다. 요약:
+이 디바이스 제한 프로필은 [Windows 키오스크 설정](kiosk-settings-windows.md)을 사용하여 생성한 키오스크 프로필과 직접 연관이 됩니다. 요약:
 
-1. 만들기는 [Windows 키오스크 설정을](kiosk-settings-windows.md) 프로필 장치를 키오스크 모드에서 실행 되도록 합니다. Microsoft Edge 응용 프로그램과 선택한 키오스크 프로필에서 Microsoft Edge 키오스크 모드를 설정 합니다.
-2. 이 문서에서 설명 하는 장치 제한 프로필을 만들고 특정 기능 및 Microsoft Edge에서 허용 하는 설정을 구성 합니다. 키오스크 프로필에서 선택 된 것으로 동일한 Microsoft Edge 키오스크 모드 유형을 선택 해야 합니다. ([Windows 키오스크 설정을](kiosk-settings-windows.md)). 
+1. [Windows 키오스크 설정](kiosk-settings-windows.md)을 만들어 디바이스를 키오스크 모드로 실행합니다. Microsoft Edge를 애플리케이션으로 선택하고 키오스크 프로필에서 Microsoft Edge 키오스크 모드를 설정합니다.
+2. 이 문서에서 설명하는 디바이스 제한 프로필을 만들고 Microsoft Edge에서 허용되는 특정 기능 및 설정을 구성합니다. 키오스크 프로필에서 선택한 것과 동일한 Microsoft Edge 키오스크 모드 유형을 선택해야 합니다([Windows 키오스크 설정](kiosk-settings-windows.md)). 
 
-    [지원 되는 키오스크 모드 설정을](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) 는 훌륭한 리소스입니다.
+    [지원되는 키오스크 모드 설정](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode)은 유용한 리소스입니다.
 
 > [!IMPORTANT] 
-> 이 Microsoft Edge 프로필 동일한 장치에 키오스크 프로필을 할당 하도록 ([Windows 키오스크 설정을](kiosk-settings-windows.md)).
+> 이 Microsoft Edge 프로필을 키오스크 프로필과 동일한 디바이스에 할당해야 합니다([Windows 키오스크 설정](kiosk-settings-windows.md)).
 
 CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
@@ -208,9 +208,9 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **사용자가 홈 단추를 변경할 수 있습니다.**: **허용**을 선택하면 사용자가 홈 단추를 변경할 수 있습니다. 사용자의 변경 내용이 홈 단추의 모든 관리자 설정을 재정의합니다. **구성되지 않음**을 선택하면 디바이스의 OS 기본 동작이 사용되어 사용자는 관리자가 홈 단추를 구성한 방법을 변경할 수 없습니다.
 - **첫 실행 경험 페이지 표시**: **차단**을 선택하면 Microsoft Edge를 처음 실행할 때 소개 페이지가 표시되지 않습니다. 이 기능을 사용하면 제로 방출량 구성에 등록된 기업 등에서 이 페이지를 차단할 수 있습니다. **구성되지 않음**을 선택하면 소개 페이지가 표시됩니다.
   - **첫 실행 경험 URL**: 사용자가 처음으로 Microsoft Edge를 실행할 때 표시할 페이지 URL을 입력합니다(Windows 10 Mobile만).
-- **유휴 시간 후 브라우저를 새로 고칩니다**: 브라우저 새로 고칠 때까지, 0-1440에서 유휴 시간을 분 단위로 입력 분입니다. 기본값은 `5` 분입니다. 로 설정 하면 `0` (영) 유휴 상태가 지속 된 후 브라우저를 새로 하지 않습니다.
+- **유휴 시간 후 브라우저 새로 고침**: 브라우저를 새로 고칠 때까지 0-1440분 사이의 유휴 시간(분)을 입력합니다. 기본값은 `5`분입니다. `0`(영)으로 설정하면 유휴 상태 후 브라우저가 새로 고쳐지지 않습니다.
 
-  이 설정 실행할 때에 제공 됩니다 [InPrivate 공용 검색 (단일 앱 키오스크)](#use-microsoft-edge-kiosk-mode)합니다.
+  이 설정은 [InPrivate Public 검색(단일 앱 키오스크)](#use-microsoft-edge-kiosk-mode)에서 실행되는 경우에만 사용할 수 있습니다.
 
   CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
 
@@ -245,9 +245,9 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - Yahoo
   - 사용자 지정 값
 - **검색 제안**: **구성되지 않음**을 선택하면 검색 엔진이 주소 표시줄에 검색 구를 입력할 때 사이트를 제안할 수 있습니다. **차단**을 선택하면 이 기능이 차단됩니다.
-- **검색 엔진을 변경할 수 있도록**: **예** 새 검색 엔진을 추가 하거나 Microsoft Edge의 기본 검색 엔진을 변경 하면 (기본값). 선택할 **아니요** 사용자가 검색 엔진을 사용자 지정 하지 못하도록 합니다.
+- **검색 엔진 변경 허용**: **예**(기본값)를 통해 사용자는 새 검색 엔진을 추가하거나 Microsoft Edge에서 기본 검색 엔진을 변경할 수 있습니다. 사용자가 검색 엔진을 사용자 지정하지 못하도록 하려면 **아니요**를 선택합니다.
 
-  이 설정 실행할 때에 제공 됩니다 [표준 모드 (다중 앱 키오스크)](#use-microsoft-edge-kiosk-mode)합니다.
+  이 설정은 [일반 모드(다중 앱 키오스크)](#use-microsoft-edge-kiosk-mode)에서 실행 중인 때에만 사용할 수 있습니다.
 
   CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
@@ -308,29 +308,29 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **이전 암호 다시 사용 방지**: 디바이스에 기억될 이전에 사용된 암호의 수를 지정합니다.
   - **디바이스가 유휴 상태에서 되돌아올 때 암호 요구(Mobile만 해당)**: 사용자가 디바이스 잠금을 해제하기 위해 암호를 입력해야 할지 여부를 지정합니다(Windows 10 Mobile에만 해당).
   - **단순 암호**: 1111 및 1234와 같은 단순 암호를 사용할 수 있습니다. 또한 이 설정은 Windows 사진 암호의 사용을 허용하거나 차단합니다.
-- **AADJ 중 자동 암호화**: **블록** 장치가 Azure AD 가입 때 장치가 처음 사용할 준비가 완료 되 면 자동 BitLocker 장치 암호화를 차단 합니다. **구성 되지 않은** (기본값) 암호화를 사용 하는 운영 체제 기본값을 사용 합니다. 더 [BitLocker 장치 암호화](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)합니다.
+- **AADJ 중 자동 암호화**: **블록**은 Azure AD가 조인된 디바이스가 처음 사용할 준비가 되었을 때 자동 BitLocker 디바이스 암호화를 방지합니다. **구성되지 않음**(기본값)을 통해 암호화를 사용하도록 설정할 수 있는 운영 체제 기본값을 사용합니다. [BitLocker 디바이스 암호화](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)에 대한 추가 정보.
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **처리 표준 FIPS (Federal Information) 정책**: **허용** 미국 정부는 처리 표준 FIPS (Federal Information) 정책을 사용 하 여 암호화, 해시, 서명에 대 한 표준입니다. **구성 되지 않은** FIPS를 사용 하지 않는 운영 체제 기본값을 사용 하 여 (기본값).
+- **FIPS(Federal Information Processing Standard) 정책**: **허용**을 선택하면 암호화, 해시 및 서명에 대한 미국 정부 표준인 FIPS(Federal Information Processing Standard) 정책을 사용합니다. **구성되지 않음**(기본값)을 통해 FIPS를 사용하지 않는 운영 체제 기본값을 사용합니다.
 
-  [암호화/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+  [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello 장치 인증**: **허용** Windows Hello 포함 장치를 사용, 전화, 적합성에 대 한 대역 외 또는 IoT 장치 같은 Windows 10 컴퓨터에 로그인 할 수 있습니다. **구성 되지 않은** Windows를 사용 하 여 인증에서 Windows Hello 포함 장치를 방해할 수 있는 운영 체제 기본값을 사용 하 여 (기본값).
+- **Windows Hello 디바이스 인증**: **허용**을 선택하면 사용자가 전화, 적합성 대역 또는 IoT 디바이스와 같은 Windows Hello 포함 디바이스를 사용하여 Windows 10 컴퓨터에 로그인할 수 있습니다. **구성되지 않음**(기본값)을 통해 운영 체제 기본값을 사용하므로 Windows Hello 포함 디바이스가 Windows에서 인증됩니다.
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
-- **웹 로그인**: 사용 하도록 설정 하는 Windows 로그온 비 ADFS (Active Directory Federation Services) 페더레이션된 공급자와 같은 SAML Security Assertion Markup Language ()에 대 한 지원. SAML을에서 single sign-on (SSO) 웹 브라우저 환경을 제공 하는 보안 토큰을 사용 합니다. 옵션은 다음과 같습니다.
+- **웹 로그인**: SAML(Security Assertion Markup Language)과 같은 비 ADFS(Active Directory Federation Services) 페더레이션된 공급자에 대한 Windows 로그온 지원을 사용하도록 설정합니다. SAML은 웹 브라우저에 SSO(Single Sign-On) 환경을 제공하는 보안 토큰을 사용합니다. 옵션은 다음과 같습니다.
 
-  - **구성 되지 않은** (기본값): 장치에서 운영 체제 기본값을 사용 합니다.
-  - **사용 하도록 설정**: 로그인을 위해 The 웹 자격 증명 공급자를 사용할 수 있습니다.
-  - **사용 하지 않도록 설정**: 로그인 웹 자격 증명 공급자를 사용할 수 없게 됩니다.
+  - **구성되지 않음**(기본값): 디바이스의 운영 체제 기본값을 사용합니다.
+  - **사용 가능**: 웹 자격 증명 공급자가 로그인할 수 있습니다.
+  - **사용 안 함**: 웹 자격 증명 공급자가 로그인할 수 없습니다.
 
-  [인증/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+  [Authentication/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
 
-- **Azure AD 테 넌 트 도메인을 기본**: Azure AD 조직에서 기존 도메인 이름을 입력 합니다. 이 도메인의 사용자를 로그인 할 때 도메인 이름을 입력할 필요가 없습니다. 예를 들어 다음과 같이 입력합니다. `contoso.com` 사용자에 게는 `contoso.com` 도메인 사용자 이름 "abby" 등을 사용 하 여 로그인 할 수 대신 "abby@contoso.com"입니다.
+- **기본 Azure AD 테넌트 도메인**: Azure AD 조직에 기존 도메인 이름을 입력합니다. 이 도메인의 사용자가 로그인할 때 도메인 이름을 입력할 필요가 없습니다. 예를 들어 다음과 같이 입력합니다. `contoso.com` `contoso.com` 도메인의 사용자는 "abby@contoso.com" 대신 "abby"와 같은 사용자 이름을 사용하여 로그인할 수 있습니다.
 
-  [인증/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
+  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>앱별 개인 정보 예외
 
@@ -356,7 +356,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **전화**: 이 앱에서 전화에 액세스할 수 있는지 여부를 정의합니다.
 - **송수신 디바이스**: 일부 앱은 디바이스의 송수신 디바이스(예: Bluetooth)를 사용하여 데이터를 보내고 받으며 이러한 송수신 디바이스를 켜거나 꺼야 합니다. 이 앱에서 이러한 송수신 장치를 제어할 수 있는지 여부를 정의합니다.
 - **작업**: 이 앱에서 작업에 액세스할 수 있는지 여부를 정의합니다.
-- **신뢰할 수 있는 장치**:이 앱에서 신뢰할 수 있는 장치를 사용할 수 있으면를 선택 합니다. 신뢰할 수 있는 디바이스는 이미 연결된 하드웨어 또는 디바이스와 함께 제공되는 하드웨어입니다. 예를 들어 TV, 프로젝터 등을 신뢰할 수 있는 디바이스로 사용합니다.
+- **신뢰할 수 있는 디바이스**: 이 앱에서 신뢰할 수 있는 디바이스를 사용할 수 있는지 여부를 선택합니다. 신뢰할 수 있는 디바이스는 이미 연결된 하드웨어 또는 디바이스와 함께 제공되는 하드웨어입니다. 예를 들어 TV, 프로젝터 등을 신뢰할 수 있는 디바이스로 사용합니다.
 - **피드백 및 진단**: 이 앱에서 진단 정보에 액세스할 수 있는지 여부를 정의합니다.
 - **디바이스와 동기화**: 이 앱에서 디바이스와 명시적으로 페어링되지 않은 무선 디바이스와 정보를 자동으로 공유 및 동기화할 수 있는지 여부를 선택합니다.
 
@@ -396,7 +396,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **전화**: 이 앱에서 전화에 액세스할 수 있는지 여부를 정의합니다.
 - **송수신 디바이스**: 일부 앱은 디바이스의 송수신 디바이스(예: Bluetooth)를 사용하여 데이터를 보내고 받으며 이러한 송수신 디바이스를 켜거나 꺼야 합니다. 이 앱에서 이러한 송수신 장치를 제어할 수 있는지 여부를 정의합니다.
 - **작업**: 이 앱에서 작업에 액세스할 수 있는지 여부를 정의합니다.
-- **신뢰할 수 있는 장치**:이 앱에서 신뢰할 수 있는 장치를 사용할 수 있으면를 선택 합니다. 신뢰할 수 있는 디바이스는 이미 연결된 하드웨어 또는 디바이스와 함께 제공되는 하드웨어입니다. 예를 들어 TV, 프로젝터 등을 신뢰할 수 있는 디바이스로 사용합니다.
+- **신뢰할 수 있는 디바이스**: 이 앱에서 신뢰할 수 있는 디바이스를 사용할 수 있는지 여부를 선택합니다. 신뢰할 수 있는 디바이스는 이미 연결된 하드웨어 또는 디바이스와 함께 제공되는 하드웨어입니다. 예를 들어 TV, 프로젝터 등을 신뢰할 수 있는 디바이스로 사용합니다.
 - **피드백 및 진단**: 이 앱에서 진단 정보에 액세스할 수 있는지 여부를 선택합니다.
 - **디바이스와 동기화** - 이 앱에서 이 PC, 태블릿 또는 휴대폰과 명시적으로 페어링되지 않은 무선 디바이스와 정보를 자동으로 공유 및 동기화할 수 있는지 여부를 정의합니다.
 
@@ -494,7 +494,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Defender에 대한 최종 사용자 액세스**: Windows Defender 사용자 인터페이스를 최종 사용자가 볼 수 없도록 숨길지 여부를 제어합니다. 이 설정이 변경되면 다음에 최종 사용자 PC를 다시 시작할 때 적용됩니다.
 - **서명 업데이트 간격(시간)**: Defender가 새 서명 파일을 확인하도록 할 간격을 입력합니다.
 - **파일 및 프로그램 활동 모니터링**: Defender가 디바이스의 파일 및 프로그램 활동을 모니터링하도록 허용합니다.
-- **격리 된 맬웨어 삭제 하기 전에 일**: 추적을 계속 이전에 영향을 받는 장치를 수동으로 확인할 수 있습니다를 입력 하는 일 수에 대해 맬웨어를 확인 합니다. 일 수를 **0**으로 설정하면, 맬웨어가 격리 폴더에 유지되며 자동으로 제거되지 않습니다.
+- **다음 기간(일) 후 격리된 맬웨어 삭제** - 이전에 영향을 받은 디바이스를 수동으로 확인할 수 있도록 입력한 기간(일) 동안 해결된 맬웨어를 계속 추적합니다. 일 수를 **0**으로 설정하면, 맬웨어가 격리 폴더에 유지되며 자동으로 제거되지 않습니다.
 - **검색하는 동안 CPU 사용 제한**: 검사에 사용할 수 있는 CPU의 양을 **1**에서 **100** 사이로 제한할 수 있습니다.
 - **보관 파일 검색**: Defender에서 Zip 또는 Cab 파일과 같은 보관된 파일을 검사할 수 있습니다.
 - **도착하는 메일 메시지 검색**: Defender에서 디바이스에 도착하는 메일 메시지를 검사할 수 있습니다.
@@ -502,27 +502,27 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **전체 검색 중 매핑된 네트워크 드라이브 검색**: Defender가 매핑된 네트워크 드라이브의 파일을 검색하도록 허용합니다.
   드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다.
 - **네트워크 폴더에서 열린 파일 검색**: Defender가 공유 네트워크 드라이브의 파일(예: UNC 경로를 통해 액세스하는 파일)을 검색하도록 허용합니다. 드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다.
-- **클라우드 보호**: 사용자가 관리하는 디바이스의 맬웨어 활동에 대한 정보를 Microsoft 활성 보호 서비스가 수신하도록 허용하거나 차단합니다. 이 정보는 나중에 서비스를 개선합니다.
+- **클라우드 보호**: 사용자가 관리하는 디바이스의 맬웨어 활동에 대한 정보를 Microsoft 활성 보호 서비스가 수신하도록 허용하거나 차단합니다. 이 정보는 향후 서비스를 개선합니다.
 - **샘플을 제출하기 전에 사용자에게 확인**: 추가 분석이 필요할 수도 있는 악의적 파일을 Microsoft에 자동으로 전송할지 여부를 제어합니다.
-- **매일 빠른 검색을 수행 하는 시간**: 매일 빠른 검색을 실행 하는 데 시간을 선택 합니다. **구성 되지 않은** 매일 검색을 실행 하지 않습니다. 더 많은 사용자 지정을 하려는 경우 구성 합니다 **수행할 시스템 검색 유형의** 설정 합니다.
+- **매일 빠른 검색을 수행하는 시간**: 매일 빠른 검색을 실행할 시간을 선택합니다. **구성되지 않음**을 사용하면 매일 검색을 실행하지 않습니다. 추가 사용자 지정을 하려는 경우 **수행할 시스템 검색 유형** 설정을 구성합니다.
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
-- **수행할 시스템 검색 유형의**: 검색의 수준을 포함 한 시스템 검사를 및 하루를 예약 하 고 검색을 실행할 시간입니다. 옵션은 다음과 같습니다.
-  - **구성 되지 않은**: 장치에서 시스템 검색을 예약 하지 않습니다. 최종 사용자가 수동으로 실행 검색 필요 또는 원하는 장치의 합니다.
-  - **사용 하지 않도록 설정**: 장치에서 검색 하는 모든 시스템을 사용 하지 않도록 설정 합니다. 장치를 검색 하는 파트너 바이러스 백신 솔루션을 사용 하는 경우이 옵션을 선택 합니다.
-  - **빠른 검색**: 일반적인 위치를 찾습니다 맬웨어 있을 수 있는 알려진 Windows 시작 폴더 및 레지스트리 키와 같이 등록 합니다.
-    - **예약 된**: 검색을 실행할 날짜를 선택 합니다.
-    - **예약 시간**: 검사를 실행 하는 시간을 선택 합니다.
-  - **전체 검색**: 일반적인 위치를 찾습니다 있을 수 있는 등록 맬웨어와 모든 파일 및 장치에서 폴더를 검색 합니다.
-    - **예약 된**: 검색을 실행할 날짜를 선택 합니다.
-    - **예약 시간**: 검사를 실행 하는 시간을 선택 합니다.
+- **수행할 시스템 검색 유형**: 검색 수준과 검색을 실행하는 날짜 및 시간을 포함한 시스템 검색을 예약합니다. 옵션은 다음과 같습니다.
+  - **구성되지 않음**: 디바이스에서 시스템 검색을 예약하지 않습니다. 최종 사용자는 디바이스에서 필요에 따라 또는 원하는 검색을 수동으로 실행할 수 있습니다.
+  - **사용 안 함**: 디바이스에서 시스템 검색을 비활성화합니다. 디바이스를 검색하는 파트너 바이러스 백신 솔루션을 사용하는 경우 이 옵션을 선택합니다.
+  - **빠른 검사**: 레지스트리 키 및 알려진 Windows 시작 폴더처럼 맬웨어가 있을 수 있는 일반적인 위치를 찾습니다.
+    - **예약일**: 검사를 실행할 날짜를 선택합니다.
+    - **예약 시간**: 검사를 실행할 시간을 선택합니다.
+  - **전체 검사**: 맬웨어가 있을 수 있는 일반적인 위치를 찾고 디바이스의 모든 파일과 폴더를 검사합니다.
+    - **예약일**: 검사를 실행할 날짜를 선택합니다.
+    - **예약 시간**: 검사를 실행할 시간을 선택합니다.
 
-  이 설정은 충돌할 수는 **매일 빠른 검색을 수행 하는 시간** 설정 합니다. 권장 구성 저장:
+  이 설정은 **매일 빠른 검사를 수행하는 시간** 설정과 충돌할 수 있습니다. 권장 구성 저장:
 
-  - 매일 빠른 검색을 실행 하려면 다음을 구성 합니다 **매일 빠른 검색을 수행 하는 시간** 설정 합니다.
-  - 매일 빠른 검색 및 매주 전체 검색을 실행 하려면 다음 구성 합니다 **매일 빠른 검색을 수행 하는 시간**, 설정 **수행할 시스템 검색 유형의** 날짜와 시간을 사용 하 여 전체 검사를 합니다.
-  - 구성 하지는 **매일 빠른 검색을 수행 하는 시간** 사용 하 여 동시에 설정 합니다 **수행할 시스템 검색 유형** 로 설정 **빠른 검색**합니다. 이러한 설정이 충돌 될 수 있습니다 및 검색을 실행할 수 없습니다.
-  - 빠른 검색을 매주 화요일 오전 6 시를 실행 하려면 구성 합니다 **수행할 시스템 검색 유형의** 설정 합니다.
+  - 매일 빠른 검사를 실행하려면 **매일 빠른 검사를 수행하는 시간** 설정을 구성합니다.
+  - 매일 빠른 검색 및 매주 전체 검색을 실행하려면 **매일 빠른 검사를 수행하는 시간**을 구성하고 **수행할 시스템 검색 유형**을 설정하여 날짜와 시간을 통해 전체 검사합니다.
+  - **매일 빠른 검색을 수행하는 시간** 설정과 **빠른 검색**으로 설정된 **수행할 시스템 검색 유형**을 동시에 구성하지 마세요. 이러한 설정이 충돌할 수 있으며 검색이 실행되지 않을 수 있습니다.
+  - 매주 화요일 오전 6시에 빠른 검색을 실행하려면 **수행할 시스템 검색 유형** 설정을 구성합니다.
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  

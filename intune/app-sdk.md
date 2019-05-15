@@ -26,7 +26,7 @@ ms.lasthandoff: 04/09/2019
 ms.locfileid: "59292452"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune 앱 SDK 개요
-iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱에서 Intune [앱 보호 정책](app-protection-policy.md)을 지원할 수 있습니다. 앱에 앱 보호 정책을 적용할 때 Intune에서 관리할 수 있습니다 및 Intune 관리 앱으로 인식 됩니다. SDK는 앱 개발자에게 요구되는 코드 변경의 양을 최소화하기 위해 노력합니다. 앱의 동작을 변경하지 않고 대부분의 SDK 기능을 사용하도록 설정할 수 있습니다. 최종 사용자 및 IT 관리자 환경을 개선하기 위해 SDK의 API를 활용하여 앱 참여가 필요한 기능을 지원하도록 앱 동작을 사용자 지정할 수 있습니다.
+iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱에서 Intune [앱 보호 정책](app-protection-policy.md)을 지원할 수 있습니다. 앱에 앱 보호 정책이 적용되면 Intune에서 관리할 수 있으며 Intune에서 관리 앱으로 인식됩니다. SDK는 앱 개발자에게 요구되는 코드 변경의 양을 최소화하기 위해 노력합니다. 앱의 동작을 변경하지 않고 대부분의 SDK 기능을 사용하도록 설정할 수 있습니다. 최종 사용자 및 IT 관리자 환경을 개선하기 위해 SDK의 API를 활용하여 앱 참여가 필요한 기능을 지원하도록 앱 동작을 사용자 지정할 수 있습니다.
 
 앱이 Intune 앱 보호 정책을 지원하도록 설정한 후 IT 관리자는 앱 내에서 회사 데이터를 보호하기 위해 이러한 정책을 배포할 수 있습니다.
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune의 Windows 10 교육 설정 - Azure | Microsoft Docs
-description: Microsoft Intune에서 Windows 8.1 및 Windows Phone 8.1 장치에 대 한 준수를 설정 하는 경우 사용할 수는 모든 설정의 목록을 참조 하세요. 데이터 저장소에서 암호화를 사용 하는 최소 및 최대 운영 체제에서 암호 제한 설정 및 길이 규정 준수에 대 한 확인 합니다.
+title: Microsoft Intune의 Windows 8.1 규정 준수 설정 - Azure | Microsoft Docs
+description: Microsoft Intune에서 Windows 8.1 및 Windows Phone 8.1 디바이스에 대한 규정 준수를 설정할 때 사용할 수 있는 모든 설정 목록을 참조하세요. 최소 및 최대 운영 체제에 대한 규정 준수 여부, 암호 제한 및 길이 설정, 데이터 스토리지에 대한 암호화 설정 등을 확인합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,29 +22,29 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59424956"
 ---
-# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>규격 또는 비규격 Intune을 사용 하 여 장치 됨으로 표시 하려면 Windows 8.1 설정
+# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Windows 8.1 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서에서는 나열 하 고 Intune에서 Windows 8.1 장치에서 구성할 수 있습니다 다른 규정 준수 설정에 설명 합니다. 모바일 장치 관리 (MDM) 솔루션의 일부로,이 설정을 사용 하 여 이러한 단순 암호 차단, 최소 및 최대 OS 버전을 설정 합니다.
+이 문서에서는 Intune의 Windows 8.1 디바이스에서 구성할 수 있는 다양한 규정 준수 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 이 설정을 사용하여 간단한 암호를 차단하고 최소 및 최대 OS 버전을 설정하는 등의 작업을 수행합니다.
 
 이 기능은 다음에 적용됩니다.
 
 - Windows Phone 8.1
 - Windows 8.1 이상
 
-Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소스를 보호 하기 위해 사용 합니다. 준수 정책 및 모든 필수 조건에 대한 자세한 내용은 [디바이스 준수 시작](device-compliance-get-started.md)을 참조하세요.
+Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를 보호할 수 있습니다. 규정 준수 정책 및 정책 수행에 대한 자세한 내용은 [디바이스 규정 준수 시작](device-compliance-get-started.md)을 참조하세요.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-[규정 준수 정책 만들기](create-compliance-policy.md#create-the-policy) 에 대 한 **플랫폼**를 선택 **Windows Phone 8.1** 하거나 **Windows 8.1 이상**합니다.
+[규정 준수 정책 만들기](create-compliance-policy.md#create-the-policy) **플랫폼**의 경우 **Windows Phone 8.1** 또는 **Windows 8.1 이상**을 선택합니다.
 
 ## <a name="device-properties"></a>디바이스 속성
 
-- **필요한 최소 OS**: 최소 허용 버전을 입력 합니다. 디바이스가 OS 최소 버전 요구 사항을 충족하지 못하면 비규격 디바이스로 보고됩니다. 업그레이드 방법에 대한 정보를 제공하는 링크가 표시됩니다. 최종 사용자는 해당 디바이스를 업그레이드한 후 회사 리소스에 액세스할 수 있습니다.
-- **허용 된 최대 OS 버전**: 최대 허용 버전을 입력 합니다. 디바이스가 규칙에 입력된 버전보다 최신 OS 버전을 사용하는 경우 회사 리소스에 대한 액세스가 차단됩니다. IT 관리자에게 문의하라는 메시지가 사용자에게 표시됩니다. 디바이스는 OS 버전을 허용하는 규칙을 변경하기 전까지 조직의 리소스에 액세스할 수 없습니다.
+- **필요한 최소 OS**: 허용되는 최소 버전을 입력합니다. 디바이스가 OS 최소 버전 요구 사항을 충족하지 못하면 비규격 디바이스로 보고됩니다. 업그레이드 방법에 대한 정보를 제공하는 링크가 표시됩니다. 최종 사용자는 해당 디바이스를 업그레이드한 후 회사 리소스에 액세스할 수 있습니다.
+- **허용된 최대 OS 버전**: 허용되는 최대 버전을 입력합니다. 디바이스가 규칙에 입력된 버전보다 최신 OS 버전을 사용하는 경우 회사 리소스에 대한 액세스가 차단됩니다. IT 관리자에게 문의하라는 메시지가 사용자에게 표시됩니다. 디바이스는 OS 버전을 허용하는 규칙을 변경하기 전까지 조직의 리소스에 액세스할 수 없습니다.
 
-Windows 8.1 PC는 **3** 버전을 반환합니다. Windows에 대한 OS 버전 규칙이 Windows 8.1로 설정된 경우 디바이스에 Windows 8.1이 있어도 디바이스가 호환되지 않는 것으로 보고됩니다.
+Windows 8.1 PC는 **3** 버전을 반환합니다. OS 버전 규칙이 Windows용 Windows 8.1로 설정된 경우 디바이스에 Windows 8.1이 있어도 디바이스가 비규격으로 보고됩니다.
 
 ## <a name="system-security"></a>시스템 보안
 
@@ -83,6 +83,6 @@ Windows 8.1 PC는 **3** 버전을 반환합니다. Windows에 대한 OS 버전 �
 
 ## <a name="next-steps"></a>다음 단계
 
-- [비규격 장치에 대 한 작업 추가](actions-for-noncompliance.md) 하 고 [필터 정책에 대 한 범위 태그를 사용 하 여](scope-tags.md)입니다.
-- [규정 준수 정책을 모니터링](compliance-policy-monitor.md)합니다.
-- 참조 된 [준수 정책 설정은 Windows 10 이상용](compliance-policy-create-windows.md) 장치입니다.
+- [비규격 디바이스에 대한 작업 추가](actions-for-noncompliance.md) 및 [범위 태그를 사용하여 정책 필터링](scope-tags.md).
+- [규정 준수 정책 모니터링](compliance-policy-monitor.md).
+- [Windows 10 이상용 규정 준수 정책 설정](compliance-policy-create-windows.md) 디바이스를 참조하세요.

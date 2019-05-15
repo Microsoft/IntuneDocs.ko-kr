@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune의 Android Enterprise 디바이스 설정 - Azure | Microsoft Docs
-description: Microsoft Intune에서 Android 엔터프라이즈 장치에 대 한 준수를 설정 하는 경우 사용할 수는 모든 설정의 목록을 참조 하세요. 암호 규칙을 설정, 최소 또는 최대 운영 체제 버전을 선택, 특정 앱을 제한, 재사용, 암호 등을 방지 합니다.
+title: Microsoft Intune의 Android Enterprise 규정 준수 설정 - Azure | Microsoft Docs
+description: Microsoft Intune에서 Android Enterprise 디바이스의 규정 준수를 설정할 때 사용할 수 있는 모든 설정 목록을 참조하세요. 암호 규칙 설정, 최소 또는 최대 운영 체제 버전 선택, 특정 앱 제한, 암호 재사용 방지 등.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,21 +24,21 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423563"
 ---
-# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>규격 또는 비규격 Intune을 사용 하 여 장치 됨으로 표시 하려면 android Enterprise 설정
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Android Enterprise 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서에서는 나열 하 고 Intune에서 Android 엔터프라이즈 장치에서 구성할 수 있습니다 다른 규정 준수 설정에 설명 합니다. 모바일 장치 관리 (MDM) 솔루션의 일부로, 이러한 설정을 사용 하는 허용 되는 위협 수준 설정, Google Play 보호 등을 사용 하도록 설정 (탈 옥) 루 팅 된 장치를 비준수로 표시 합니다.
+이 문서에서는 Intune의 Android Enterprise 디바이스에서 구성할 수 있는 다양한 규정 준수 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 사용하여 루팅된(무단 해제) 디바이스를 비규격으로 표시하고, 허용되는 위협 수준을 설정하고, Google Play Protect를 사용하도록 설정하는 등의 작업을 수행합니다.
 
 이 기능은 다음에 적용됩니다.
 
 - Android Enterprise
 
-Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소스를 보호 하기 위해 사용 합니다. 준수 정책 및 모든 필수 조건에 대한 자세한 내용은 [디바이스 준수 시작](device-compliance-get-started.md)을 참조하세요.
+Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를 보호할 수 있습니다. 규정 준수 정책 및 정책 수행에 대한 자세한 내용은 [디바이스 규정 준수 시작](device-compliance-get-started.md)을 참조하세요.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-[규정 준수 정책 만들기](create-compliance-policy.md#create-the-policy) **플랫폼**에서 **Android 엔터프라이즈**를 선택합니다.
+[규정 준수 정책 만들기](create-compliance-policy.md#create-the-policy) **플랫폼**에 대해 **Android Enterprise**를 선택합니다.
 
 ## <a name="device-health"></a>Device health
 
@@ -59,7 +59,7 @@ Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소�
   - **기본 무결성 및 인증된 디바이스 확인**
 
 > [!NOTE]
-> Android 엔터프라이즈 장치의 **앱에서 위협 검색** 장치 구성 정책입니다. 구성 정책을 사용 하는 관리자가 장치에서 설정을 설정할 수 있습니다. [Android 엔터프라이즈 디바이스 제한 설정](device-restrictions-android-for-work.md)을 참조하세요.
+> Android Enterprise 디바이스에서 **앱에서 위협 검색**은 디바이스 구성 정책입니다. 관리자는 구성 정책을 사용하여 디바이스에서 설정을 활성화할 수 있습니다. [Android 엔터프라이즈 디바이스 제한 설정](device-restrictions-android-for-work.md)을 참조하세요.
 
 ## <a name="device-properties-settings"></a>디바이스 속성 설정
 
@@ -89,7 +89,7 @@ Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소�
 
 - **장치의 데이터 스토리지 암호화**: **필요**를 선택하면 장치의 데이터 스토리지가 암호화됩니다. **구성되지 않음**(기본값)을 선택하면 이 설정은 규정 준수 또는 비준수에 대해 평가되지 않습니다. 
 
-  Android 회사 프로필 디바이스에는 암호화가 시행되므로 이 설정을 구성하지 않아도 됩니다.
+  Android Enterprise 디바이스에는 암호화가 적용되므로 이 설정을 구성할 필요가 없습니다.
 
 ### <a name="device-security"></a>디바이스 보안
 
@@ -100,7 +100,7 @@ Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소�
   > [!IMPORTANT]
   > 앱을 테스트용으로 로드하려면 **알 수 없는 소스의 앱 차단** 설정을 사용하도록 설정해야 합니다. 디바이스에서 Android 앱을 테스트용으로 로드하지 않는 경우에만 이 준수 정책을 적용합니다.
 
-  Android 회사 프로필 디바이스는 알 수 없는 출처의 설치를 하상 제한하므로 이 설정은 구성할 필요가 없습니다.
+  Android Enterprise 디바이스는 알 수 없는 소스의 설치를 항상 제한하므로 이 설정을 구성할 필요가 없습니다.
 
 - **회사 포털 앱 런타임 무결성**: **필수**를 선택하여 회사 포털 앱이 다음 요구 사항을 모두 충족하는지 확인합니다.
 
@@ -113,7 +113,7 @@ Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소�
 
 - **디바이스에서 USB 디버깅 차단**: 디바이스에서 USB 디버깅 기능을 사용할 수 없도록 방지하려면 **차단**을 선택합니다. **구성되지 않음**(기본값)을 선택하면 이 설정은 규정 준수 또는 비준수에 대해 평가되지 않습니다.
 
-  Android 회사 프로필 디바이스에서는 USB 디버깅을 사용할 수 없으므로 이 설정을 구성할 필요가 없습니다.
+  Android Enterprise 디바이스에서는 USB 디버깅이 이미 비활성화되어 있으므로 이 설정을 구성할 필요가 없습니다.
 
 - **최소 보안 패치 수준**: 디바이스에서 사용할 수 있는 가장 오래된 보안 패치 수준을 선택합니다. 최소한 이 패치 수준이 아닌 디바이스는 비규격입니다. 날짜는 *YYYY-MM-DD* 형식으로 입력해야 합니다.
 
@@ -121,6 +121,6 @@ Intune 관리자로 서 이러한 규정 준수 설정을 통해 조직 리소�
 
 ## <a name="next-steps"></a>다음 단계
 
-- [비규격 장치에 대 한 작업 추가](actions-for-noncompliance.md) 하 고 [필터 정책에 대 한 범위 태그를 사용 하 여](scope-tags.md)입니다.
-- [규정 준수 정책을 모니터링](compliance-policy-monitor.md)합니다.
-- [Android 디바이스용 준수 정책 설정](compliance-policy-create-android.md)
+- [비규격 디바이스에 대한 작업 추가](actions-for-noncompliance.md) 및 [범위 태그를 사용하여 정책 필터링](scope-tags.md).
+- [규정 준수 정책 모니터링](compliance-policy-monitor.md).
+- [Android용 규정 준수 정책 설정](compliance-policy-create-android.md) 디바이스를 참조하세요.

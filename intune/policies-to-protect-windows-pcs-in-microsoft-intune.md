@@ -46,4 +46,4 @@ IT 관리자의 최우선 업무 중 하나는 [관리하는 Windows PC를 맬�
 
 ## <a name="see-also"></a>참고 항목
 
-[일반적인 질문, 문제 및 장치 정책 및 프로필을 사용 하 여 해결 방법](device-profile-troubleshoot.md)
+[디바이스 정책 및 프로필을 통한 일반적인 질문, 이슈 및 해결 방법](device-profile-troubleshoot.md)

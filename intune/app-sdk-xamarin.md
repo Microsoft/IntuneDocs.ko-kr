@@ -91,18 +91,18 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Android 모바일 앱에서 Intune 앱 보호 정책을 사용하도록 설정
 
 1. [Microsoft.Intune.MAM.Xamarin.Android NuGet 패키지](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)를 Xamarin.Android 프로젝트에 추가합니다.
-    1. Xamarin.Forms 앱을 추가 합니다 [Microsoft.Intune.MAM.Remapper.Tasks NuGet 패키지](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) 를 Xamarin.Android 프로젝트도 합니다. 
-2. 에 대 한 필요한 일반적인 단계를 따릅니다 [Intune 앱 SDK를 통합](app-sdk-android.md) 에 대 한 자세한 내용은이 문서를 참조 하는 동안 Android 모바일 앱입니다.
+    1. Xamarin.Forms 앱의 경우 [Microsoft.Intune.MAM.Remapper.Tasks NuGet 패키지](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks)를 Xamarin.Android 프로젝트에도 추가합니다. 
+2. 추가 세부 정보는 이 문서를 참조하여 Android 모바일 앱에 [Intune App SDK 통합](app-sdk-android.md)에 필요한 일반 단계를 따릅니다.
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android 통합
 
-Intune 앱 SDK를 통합 하는 것에 대 한 전체 개요에서 찾을 수 있습니다 합니다 [Android 개발자 가이드에 대 한 Microsoft Intune 앱 SDK](app-sdk-android.md)합니다. 다음 섹션에서는 Java에서 네이티브 Android 앱을 개발 하 고 Xamarin 앱 개발에 대 한 구현 간의 차이점을 강조 표시 하는 가이드를 통해 읽고 Intune 앱 SDK Xamarin 앱과 통합 하는 대로 C#입니다. 이 섹션에서는 추가으로 처리할지 및 전체에서 설명서를 읽고의 대 안으로 작동할 수 없습니다.
+Intune App SDK 통합에 대한 전체 개요는 [Android용 Microsoft Intune App SDK 개발자 가이드](app-sdk-android.md)에서 확인할 수 있습니다. 이 가이드를 읽고 Intune App SDK를 Xamarin 앱과 통합할 때, 다음 섹션에서는 Java에서 개발된 네이티브 Android 앱과 C#에서 개발된 Xamarin 앱의 구현 간의 차이점을 집중 조명합니다. 이 섹션은 보충으로 취급되어야 하며 가이드 전체를 읽는 것으로 대신할 수는 없습니다.
 
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[이름이 변경된 메서드](app-sdk-android.md#renamed-methods)
 대부분의 경우, Android 클래스에서 사용할 수 있는 메서드가 MAM 대체 클래스에서 최종본으로 표시되어 있습니다. 이 경우 MAM 대체 클래스는 대신 재정의할 유사한 이름의 메서드(접미사 `MAM`이 붙음)를 제공합니다. 예를 들어 `OnCreate()`를 재정의하고 `base.OnCreate()`를 호출하는 대신 `MAMActivity`에서 파생하는 경우 `Activity`는 `OnMAMCreate()`를 재정의하고 `base.OnMAMCreate()`를 호출해야 합니다.
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 애플리케이션](app-sdk-android.md#mamapplication)
-앱을 정의 해야 합니다는 `Android.App.Application` 클래스에서 상속 되는 `MAMApplication`합니다. 서브 클래스가 `[Application]` 특성으로 올바르게 데코레이팅되고 `(IntPtr, JniHandleOwnership)` 생성자를 재정의하는지 확인입니다.
+앱은 `MAMApplication`에서 상속받은 `Android.App.Application` 클래스를 정의해야 합니다. 서브 클래스가 `[Application]` 특성으로 올바르게 데코레이팅되고 `(IntPtr, JniHandleOwnership)` 생성자를 재정의하는지 확인입니다.
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -111,7 +111,7 @@ Intune 앱 SDK를 통합 하는 것에 대 한 전체 개요에서 찾을 수 �
         : base(handle, transfer) { }
 ```
 > [!NOTE]
-> MAM Xamarin 바인딩 사용 하 여 문제에는 응용 프로그램 디버그 모드에서 배포 하는 경우 충돌을 발생할 수 있습니다. 이 문제를 해결 합니다 `Debuggable=false` 특성에 추가 되어야 합니다는 `Application` 클래스 및 `android:debuggable="true"` 수동으로 설정 된 경우 매니페스트에서 플래그를 제거 해야 합니다.
+> MAM Xamarin 바인딩 문제로 인해 디버그 모드로 배포할 때 애플리케이션이 충돌할 수 있습니다. 이 문제를 해결하려면 `Debuggable=false` 특성을 `Application` 클래스에 추가해야 하며 수동으로 설정한 경우 `android:debuggable="true"` 플래그를 매니페스트에서 제거해야 합니다.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[앱 참여를 요구하는 기능 사용](app-sdk-android.md#enable-features-that-require-app-participation)
 예: 앱에 PIN이 필요한지 확인
@@ -149,12 +149,12 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms 통합
 
-에 대 한 `Xamarin.Forms` 제공 하는 응용 프로그램을 `Microsoft.Intune.MAM.Remapper` 삽입 하 여 MAM 클래스 대체를 자동으로 수행 하는 패키지 `MAM` 의 자주 사용 되는 클래스 계층 구조에 클래스 `Xamarin.Forms` 클래스입니다. 
+`Xamarin.Forms` 애플리케이션의 경우 일반적으로 사용되는 `Xamarin.Forms` 클래스의 클래스 계층에 `MAM` 클래스를 주입하여 MAM 클래스 교체를 자동으로 수행하는 `Microsoft.Intune.MAM.Remapper` 패키지를 제공했습니다. 
 
 > [!NOTE]
-> Xamarin.Forms 통합 또한 위에서 설명한 Xamarin.Android 통합을 수행 됩니다.
+> 위에 자세히 설명된 Xamarin.Android 통합 외에도 Xamarin.Forms 통합이 수행됩니다.
 
-프로젝트에는 Remapper 추가 되 면 MAM 해당 하는 대체를 수행 해야 합니다. 예를 들어 `FormsAppCompatActivity` 하 고 `FormsApplicationActivity` 계속 하려면 재정의 제공 하는 응용 프로그램에서 사용할 수 있습니다 `OnCreate` 및 `OnResume` MAM 클래스로 바뀝니다 `OnMAMCreate` 및 `OnMAMResume` 각각.
+Remapper가 프로젝트에 추가되면 MAM에 해당하는 대체를 수행해야 합니다. 예를 들어 `FormsAppCompatActivity` 및 `FormsApplicationActivity`는 `OnCreate`에 대한 재정의를 제공하고 `OnResume`이 MAM의 해당하는 `OnMAMCreate` 및 `OnMAMResume`으로 각각 대체된 애플리케이션에서 계속 사용할 수 있습니다.
 
 ```csharp
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -166,13 +166,13 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
             LoadApplication(new App());
         }
 ```
-대체 되지 경우 대체를 변경할 때까지 다음 컴파일 오류가 발생할 수 있습니다.
+대체 작업을 하지 않은 경우 대체 작업을 수행할 때까지 다음과 같은 컴파일 오류가 발생할 수 있습니다.
 * [컴파일러 오류 CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239). 이 오류는 일반적으로 이 양식 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``에 표시됩니다.
 이는 Remapper가 Xamarin 클래스의 상속을 수정할 때 특정 함수가 `sealed`로 만들어지고 대신 새 MAM 변형이 추가되어 재정의되기 때문에 예상됩니다.
-* [컴파일러 오류 CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507):이 오류는 일반적으로이 폼에 표시 됩니다 ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``합니다. Remapper가 일부 Xamarin 클래스의 상속을 변경하면 특정 멤버 함수가 `public`으로 변경됩니다. 이러한 함수를 재정의 하는 경우 이러한 액세스 한정자 재정의를 변경 해야 합니다 `public` 도 합니다.
+* [컴파일러 오류 CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): 이 오류는 일반적으로 이 양식 ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``에 표시됩니다. Remapper가 일부 Xamarin 클래스의 상속을 변경하면 특정 멤버 함수가 `public`으로 변경됩니다. 이러한 함수 중 하나를 재정의하는 경우 해당 재정의에 대한 액세스 한정자도 `public`으로 변경해야 합니다.
 
 > [!NOTE]
-> Remapper IntelliSense 자동 완성을 위해 Visual Studio를 사용 하는 종속성을 다시 작성 합니다. 따라서 다시 로드 하 고 변경 내용을 제대로 인식 하는 IntelliSense에는 Remapper 추가 되 면 프로젝트를 다시 작성 해야 합니다.
+> Remapper는 Visual Studio에서 IntelliSense 자동 완성을 위해 사용하는 종속성을 다시 작성합니다. 따라서 IntelliSense에 대해 Remapper가 추가되면 프로젝트를 다시 로드하고 다시 빌드해야 변경 내용을 올바르게 인식할 수 있습니다.
 
 ## <a name="support"></a>Support
-조직이 기존 Intune 고객인 경우 Microsoft 지원 담당자에게 문의해 지원 티켓을 열고 [Github 문제 페이지에서](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) 문제를 만들면 가능한 한 빨리 도움을 제공할 수 있습니다. 
+조직이 기존 Intune 고객인 경우 Microsoft 지원 담당자에게 문의해 지원 티켓을 열고 [GitHub 문제 페이지에서](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) 문제를 만들면 가능한 한 빨리 도움을 제공할 수 있습니다. 

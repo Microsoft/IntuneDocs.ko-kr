@@ -66,7 +66,7 @@ ms.locfileid: "59429185"
 | 11 |Android |Android 디바이스 - 디바이스 관리자로 관리 |
 | 12 |ISocConsumer |iSoc 소비자 디바이스 |
 | 14 |MacMDM |기본 MDM 에이전트로 관리되는 Mac OS X 디바이스 |
-| 15 |HoloLens |HoloLens 장치 |
+| 15 |HoloLens |HoloLens 디바이스 |
 | 16 |SurfaceHub |Surface Hub 디바이스 |
 | 17 |AndroidForWork |Android Profile Owner로 관리되는 Android 디바이스 |
 | 100 |Blackberry |Blackberry 디바이스 |
@@ -85,7 +85,7 @@ ms.locfileid: "59429185"
 | enrollmentFailureCategoryKey  | 등록 실패 범주의 키입니다(등록에 실패하는 경우).        |
 | enrollmentFailureReasonKey    | 등록 실패 이유의 키입니다(등록에 실패하는 경우).          |
 | osVersion                     | 디바이스의 운영 체제 버전입니다.                               |
-| count                         | 위의 분류와 일치하는 등록 작업의 총 수입니다.  |
+| 개수                         | 위의 분류와 일치하는 등록 작업의 총 수입니다.  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
 **EnrollmentEventStatus** 엔터티는 디바이스 등록의 결과를 나타냅니다.
@@ -167,10 +167,10 @@ ms.locfileid: "59429185"
 |---------|------------|--------|
 | ownerTypeID |소유자 유형에 대한 고유 식별자 | |
 | ownerTypeKey |데이터 웨어하우스의 소유자 유형에 대한 고유 식별자 - 서로게이트 키 | |
-| ownerTypeName |디바이스의 소유자 유형을 나타냅니다.  <br>회사-회사 소유 장치입니다. <br>개인 - 개인 소유 디바이스입니다(BYOD).  <br>알 수 없음 - 이 디바이스에 대한 정보가 없습니다. |회사 개인 알 수 없음 |
+| ownerTypeName |디바이스의 소유자 유형을 나타냅니다.  <br>회사 - 회사 소유 디바이스입니다. <br>개인 - 개인 소유 디바이스입니다(BYOD).  <br>알 수 없음 - 이 디바이스에 대한 정보가 없습니다. |회사 개인 알 수 없음 |
 
 > [!Note]  
-> 에 대 한 합니다 `ownerTypeName` 장치에 대 한 동적 그룹을 만들 때 azure Ad에서의 필터 값을 설정 해야 `deviceOwnership` 으로 `Company`입니다. 자세한 내용은 [장치에 대 한 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)합니다. 
+> 디바이스용 동적 그룹을 만들 때 AzureAD의 `ownerTypeName`에 대해 필터 값 `deviceOwnership`을 `Company`로 설정해야 합니다. 자세한 내용은 [디바이스 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)을 참조하세요. 
 
 ## <a name="managementstates"></a>ManagementStates
 

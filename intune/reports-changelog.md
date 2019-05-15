@@ -1,12 +1,12 @@
 ---
 title: Intune 데이터 웨어하우스 변경 로그
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 항목에서는 Microsoft Intune 데이터 웨어하우스 API에 대한 변경 내용 목록을 제공합니다.
 keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 30f315f58a905e690a43ab3c44aee783bd0ef8c9
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358261"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571810"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 데이터 웨어하우스 API에 대한 변경 로그
 
@@ -31,26 +31,166 @@ ms.locfileid: "58358261"
 
 Intune 데이터 웨어하우스에 대한 업데이트를 최신 상태로 유지합니다.
 
+## <a name="1903-part-2"></a>1903(2부)
+_릴리스 날짜: 2019년 4월_
+
+### <a name="beta-changes"></a>베타 변경
+
+다음 표에서 최근 제거 컬렉션 및 Intune Data Warehouse의 대체 컬렉션이 나열되어 있습니다.
+
+|    수집                          |    Change(영문)     |    추가 정보                                                                                                                                                                                                                                                                                                                                                                 |
+|----------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    mobileAppDeviceUserInstallStatus    |    제거됨    |    대신 [mobileAppInstallStatusCounts](intune-data-warehouse-collections.md#mobileappinstallstatuscounts)를 사용합니다.                                                                                                                                                                                                                                                                     |
+|    enrollmentTypes                     |    제거됨    |    대신 [deviceEnrollmentTypes](intune-data-warehouse-collections.md#deviceenrollmenttypes)를 사용합니다.                                                                                                                                                                                                                                                                                      |
+|    mdmStatuses                         |    제거됨    |    대신 [complianceStates](intune-data-warehouse-collections.md#compliancestates)를 사용합니다.                                                                                                                                                                                                                                                                                               |
+|    workPlaceJoinStateTypes             |    제거됨    |    대신 [디바이스](intune-data-warehouse-collections.md#devices) 및 [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) 컬렉션의 `azureAdRegistered` 속성을 사용합니다.                                                                                                                                                                                                             |
+|    clientRegistrationStateTypes        |    제거됨    |    대신 [deviceRegistrationStates](intune-data-warehouse-collections.md#deviceregistrationstates)를 사용합니다.                                                                                                                                                                                                                                                                             |
+|    currentUser                         |    제거됨    |    대신 [사용자](intune-data-warehouse-collections.md#users) 컬렉션을 사용합니다.                                                                                                                                                                                                                                                                                                      |
+|    mdmDeviceInventoryHistories         |    제거됨    |    속성의 대부분이 중복되었거나 이제 [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) 또는 [디바이스](intune-data-warehouse-collections.md#devices) 컬렉션에서 찾을 수 있습니다. 이 두 컬렉션에 아직 나열되지 않은 모든 **mdmDeviceInventoryHistories** 속성은 더 이상 사용할 수 없습니다. 아래 세부 정보를 참조하세요.    |
+
+다음 표에는 **mdmDeviceInventoryHistories** 컬렉션에서 발견된 이전 속성과 변경/대체가 나열되어 있습니다. **mdmDeviceInventoryHistories**에 있지만 아래에 나열되지 않은 모든 속성은 제거되었습니다.
+
+|    이전 속성                |    변경/대체                                                           |
+|--------------------------------|---------------------------------------------------------------------------------|
+|    cellularTechnology          |    디바이스 컬렉션의 cellularTechnology                                     |
+|    deviceClientId              |    디바이스 컬렉션의 deviceId                                               |
+|    deviceManufacturer          |    디바이스 컬렉션의 제조업체                                           |
+|    deviceModel                 |    디바이스 컬렉션의 모델                                                  |
+|    deviceName                  |    디바이스 컬렉션의 deviceName                                             |
+|    deviceOsPlatform            |    디바이스 컬렉션의 deviceTypeKey                                          |
+|    deviceOsVersion             |    devicePropertyHistories 컬렉션의 osVersion                              |
+|    deviceType                  |    디바이스 컬렉션의 deviceTypeKey, deviceTypes 컬렉션 참조    |
+|    encryptionState             |    디바이스 컬렉션의 encryptionState 속성                           |
+|    exchangeActiveSyncId        |    디바이스 컬렉션의 easDeviceId 속성                               |
+|    exchangeDeviceId            |    디바이스 컬렉션의 easDeviceId                                            |
+|    imei                        |    디바이스 컬렉션의 imei                                                   |
+|    isSupervised                |    디바이스 컬렉션의 isSupervised 속성                              |
+|    무단 해제                  |    devicePropertyHistories 컬렉션의 무단 해제                             |
+|    meid                        |    디바이스 컬렉션의 meid 속성                                      |
+|    oem                         |    디바이스 컬렉션의 제조업체                                           |
+|    osName                      |    디바이스 컬렉션의 deviceTypeKey, deviceTypes 컬렉션 참조    |
+|    phoneNumber                 |    디바이스 컬렉션의 phoneNumber                                            |
+|    platformType                |    디바이스 컬렉션의 모델                                                  |
+|    product                     |    디바이스 컬렉션의 deviceTypeKey                                          |
+|    productVersion              |    devicePropertyHistories 컬렉션의 osVersion                              |
+|    serialNumber                |    디바이스 컬렉션의 serialNumber                                           |
+|    storageFree                 |    디바이스 컬렉션의 freeStorageSpaceInBytes 속성                   |
+|    storageTotal                |    디바이스 컬렉션의 totalStorageSpaceInBytes 속성                |
+|    subscriberCarrierNetwork    |    디바이스 컬렉션의 subscriberCarrier 속성                         |
+|    wifimac                     |    디바이스 컬렉션의 wiFiMacAddress                                         |
+
+다음 표에는 [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) 컬렉션에 있는 속성의 변경 내용이 나열되어 있습니다. 
+
+|    이전 속성                  |    변경/대체                                               |
+|----------------------------------|---------------------------------------------------------------------|
+|    categoryId                    |    deviceCategoryKey, deviceCategories 컬렉션 참조       |
+|    certExpirationDate            |    제거됨                                                          |
+|    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
+|    createdDate                   |    디바이스 컬렉션의 enrolledDateTime                           |
+|    deviceTypeKey                 |    디바이스 컬렉션의 deviceTypeKey                              |
+|    easID                         |    디바이스 컬렉션의 easDeviceId                                |
+|    enrolledByUser                |    디바이스 컬렉션의 userId                                     |
+|    enrollmentTypeKey             |    디바이스 컬렉션의 deviceEnrollmentTypeKey                    |
+|    graphDeviceIsCompliant        |    제거됨                                                          |
+|    graphDeviceIsManaged          |    제거됨                                                          |
+|    lastContact                   |    디바이스 컬렉션의 lastSyncDateTime                           |
+|    lastContactNotification       |    제거됨                                                          |
+|    lastContactWorkplaceJoin      |    제거됨                                                          |
+|    lastExchangeStatusUtc         |    제거됨                                                          |
+|    lastModifiedDateTimeUTC       |    제거됨                                                          |
+|    lastPolicyUpdateUtc           |    제거됨                                                          |
+|    managementAgentKey            |    managementStateKey                                               |
+|    제조업체                  |    디바이스 컬렉션의 제조업체                               |
+|    mdmStatusKey                  |    complianceStateKey, complianceStates 컬렉션 참조    |
+|    model                         |    디바이스 컬렉션의 모델                                      |
+|    osFamily                      |    디바이스 컬렉션의 operatingSystem                            |
+|    osRevisionNumber              |    디바이스 컬렉션의 osVersion                                  |
+|    processorArchitecture         |    제거됨                                                          |
+|    referenceId                   |    디바이스 컬렉션의 azureAdDeviceId                            |
+|    serialNumber                  |    디바이스 컬렉션의 serialNumber                               |
+|    workplaceJoinStateKey         |    azureAdRegistered                                                |
+
+다음 표에는 [디바이스](intune-data-warehouse-collections.md#devices) 컬렉션에 있는 속성의 변경 내용이 나열되어 있습니다. 
+
+|    이전 속성                  |    변경/대체                                               |
+|----------------------------------|---------------------------------------------------------------------|
+|    categoryId                    |    deviceCategoryKey, deviceCategories 컬렉션 참조       |
+|    certExpirationDate            |    제거됨                                                          |
+|    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
+|    createdDate                   |    enrolledDateTime                                                 |
+|    easId                         |    easDeviceId                                                      |
+|    enrolledByUser                |    userId                                                           |
+|    enrollmentTypeKey             |    deviceEnrollmentTypeKey                                          |
+|    graphDeviceIsCompliant        |    제거됨                                                          |
+|    graphDeviceIsManaged          |    제거됨                                                          |
+|    lastContact                   |    lastSyncDateTime                                                 |
+|    lastContactNotification       |    제거됨                                                          |
+|    lastContactWorkplaceJoin      |    제거됨                                                          |
+|    lastExchangeStatusUtc         |    제거됨                                                          |
+|    lastPolicyUpdateUtc           |    제거됨                                                          |
+|    mdmStatusKey                  |    complianceStateKey, complianceStates 컬렉션 참조    |
+|    osFamily                      |    operatingSystem                                                  |
+|    processorArchitecture         |    제거됨                                                          |
+|    referenceId                   |    azureAdDeviceId                                                  |
+|    workplaceJoinStateKey         |    azureAdRegistered                                                |
+
+다음 표에는 [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities) 컬렉션에 있는 속성의 변경 내용이 나열되어 있습니다. 
+
+|    이전 속성         |    변경/대체         |
+|-------------------------|-------------------------------|
+|    enrollmentTypeKey    |    deviceEnrollmentTypeKey    |
+
+다음 표에는 [mamApplications](intune-data-warehouse-collections.md#mamapplications) 컬렉션에 있는 속성의 변경 내용이 나열되어 있습니다. 
+
+|    이전 속성       |    변경/대체    |
+|-----------------------|--------------------------|
+|    applicationKey     |    mamApplicationKey     |
+|    applicationName    |    mamApplicationName    |
+|    applicationId      |    mamApplicationId      |
+
+다음 표에는 [mamApplicationInstances](intune-data-warehouse-collections.md#mamapplicationinstances) 컬렉션에 있는 속성의 변경 내용이 나열되어 있습니다. 
+
+|    이전 속성     |    변경/대체    |
+|---------------------|--------------------------|
+|    applicationId    |    mamApplicationId      |
+|    deviceId         |    mamDeviceId           |
+|    deviceType       |    mamDeviceType         |
+|    deviceName       |    mamDeviceName         |
+
+다음 표에는 [mamCheckins](intune-data-warehouse-collections.md#mamcheckins) 컬렉션에 있는 속성의 변경 내용이 나열되어 있습니다. 
+
+|    이전 속성      |    변경/대체    |
+|----------------------|--------------------------|
+|    applicationKey    |    mamApplicationKey     |
+
+다음 표에는 [사용자](intune-data-warehouse-collections.md#users) 컬렉션에 있는 속성의 변경 내용이 나열되어 있습니다. 
+
+|    이전 속성             |    변경/대체    |
+|-----------------------------|--------------------------|
+|    startDateInclusiveUtc    |    제거됨               |
+|    endDateInclusiveUtc      |    제거됨               |
+|    isCurrent                |    제거됨               |
+
 ## <a name="1903"></a>1903
 _릴리스 날짜: 2019년 3월_
 
-### <a name="v10-changes-reflecting-back-to-beta"></a>Beta로 다시 반영 V1.0 변경
-V1.0 1808에 처음 도입을 하는 경우 API 베타 버전에서 몇 가지 중요 한 방식에서 다릅니다. 1903에서 이러한 변경 내용은 다시 베타 API 버전에 반영 됩니다. 베타 API 버전을 사용 하는 중요 한 보고서에 있는 경우 해당 보고서 변경 내용을 중단을 방지 하려면 V1.0 전환는 것이 좋습니다. 참조 하십시오 [API 버전 정보](reports-api-url.md) 자세한 데이터 웨어하우스 API 버전 및 이전 버전과 호환성. 
+### <a name="v10-changes-reflecting-back-to-beta"></a>베타 버전을 다시 반영하는 V1.0 변경 내용
+V1.0은 1808에 처음 도입되었을 때 베타 API와 상당한 차이가 있었습니다. 이러한 변경 내용은 1903에서 베타 API 버전으로 다시 반영됩니다. 베타 API 버전을 사용하는 중요한 보고서가 있으면 변경 내용을 위반하지 않도록 해당 보고서를 V1.0으로 전환하는 것이 좋습니다. Data Warehouse API 버전 및 이번 버전과의 호환성에 대한 자세한 내용은 [API 버전 정보](reports-api-url.md)를 참조하세요. 
 
 ## <a name="1902"></a>1902 
 _릴리스 날짜: 2019년 2월_
 
 ### <a name="power-bi-compliance-app"></a>Power BI 준수 앱 
 
-Intune 데이터 웨어하우스를 사용 하 여 Power BI Online에 액세스 합니다 [Intune 준수 (데이터 웨어하우스)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 앱. 이 Power BI 앱에 액세스 하 고 모든 설치 하지 않고 웹 브라우저를 종료 하지 않고 미리 작성된 된 보고서를 공유 합니다. 이제 수 있습니다. 
+[Intune 준수(데이터 웨어하우스)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 앱을 사용하여 Power BI Online에서 Intune 데이터 웨어하우스에 액세스합니다. 이제 이 Power BI 앱을 사용하면 설정할 필요 없이 웹 브라우저를 떠나지 않고도 미리 만들어진 보고서에 액세스하고 공유할 수 있습니다. 
 
 > [!NOTE]
-> 필터가 있는 두 개의 추가 Intune 준수 앱에 적용할 수 있습니다.
+> Intune Compliance 앱에 적용할 수 있는 두 가지 추가 필터가 있습니다.
 
-#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune 준수 앱에 추가 필터를 추가 합니다.
-1. 엽니다는 [Intune 준수 (데이터 웨어하우스)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 웹 브라우저에서 앱.
-2. 클릭 **규격이 아닌 장치** 선택한 **비준수** 에 **complianceStatus** 필터입니다. 
-3. 클릭할 **알 수 없는 장치** 선택한 **아직 사용할 수 없습니다** 에 **complianceStatus** 필터입니다. 
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune Compliance 앱에 추가 필터 추가
+1. 웹 브라우저에서 [Intune Compliance(Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 앱을 엽니다.
+2. **비규격 디바이스**를 클릭하고 **complianceStatus** 필터에서 **비 규격**을 선택합니다. 
+3. **알 수 없는 디바이스**를 클릭하고 **complianceStatus** 필터에서 **아직 사용할 수 없음**을 선택합니다. 
 
 ## <a name="1812"></a>1812 
 _릴리스 날짜: 2018년 12월_

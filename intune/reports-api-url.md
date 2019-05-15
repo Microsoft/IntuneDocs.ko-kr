@@ -64,7 +64,7 @@ URL에는 다음 요소가 포함됩니다.
 
 ## <a name="odata-query-options"></a>OData 쿼리 옵션
 
-최신 버전에서는 `$filter`, `$select`, `$skip,` 및 `$top` OData 쿼리 매개 변수를 지원합니다. `$filter`만 `DateKey` 또는 `RowLastModifiedDateTimeUTC` 열은 해당 및 기타 속성에 잘못 된 요청을 트리거할 때 지원 될 수 있습니다.
+최신 버전에서는 `$filter`, `$select`, `$skip,` 및 `$top` OData 쿼리 매개 변수를 지원합니다. `$filter`에서 열이 적용 가능한 경우 `DateKey` 또는 `RowLastModifiedDateTimeUTC`만 지원될 수 있으며 다른 속성은 잘못된 요청을 트리거할 수 있습니다.
 
 ## <a name="datekey-range-filters"></a>DateKey 범위 필터
 
@@ -84,4 +84,4 @@ URL에는 다음 요소가 포함됩니다.
 |    `$filter=DateKey eq 20180214`                                 |    전체                                      |    `DateKey`가 20180214와 동일한 데이터를 반환합니다.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    전체                                      |    `DateKey`가 20180214와 20180220 사이에 있는 데이터를 반환합니다.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    전체                                      |    `DateKey`가 20180214와 동일한 데이터를 반환합니다. `maxhistorydays`는 무시됩니다.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    전체                                       |    데이터를 반환할 `RowLastModifiedDateTimeUTC` 보다 크거나 같음 `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    전체                                       |    `RowLastModifiedDateTimeUTC`를 사용한 데이터 변환이 `2018-02-21T23:18:51.3277273Z`보다 크거나 같음                             |

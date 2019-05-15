@@ -604,7 +604,7 @@ ID는 계정의 사용자 이름입니다(예: user@contoso.com). 개발자는 �
 
 어느 시점에서든 모든 스레드에는 UI 작업 및 파일 작업에 대한 유효한 ID가 있습니다. 이 ID는 적용되어야 하는 정책(있는 경우)을 확인하는 데 사용됩니다. ID가 'ID 없음'이거나 사용자가 관리되지 않는 경우 정책이 적용되지 않습니다. 아래 다이어그램은 효과적인 ID를 결정하는 방법을 보여 줍니다.
 
-  ![Intune 앱 SDK iOS: Id 확인 프로세스](./media/ios-thread-identities.png)
+  ![Intune App SDK iOS: ID 확인 프로세스](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>스레드 큐
 
