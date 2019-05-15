@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426156"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135115"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 독립 실행형 - Win32 앱 관리
 
@@ -142,8 +142,8 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
     예를 들어 앱 파일 이름이 **MyApp123**이면 다음을 추가합니다.<br>
     `msiexec /p “MyApp123.msp”`<p>
     그리고 애플리케이션이 `ApplicationName.exe`이면 명령은 애플리케이션 이름 뒤에 패키지에서 지원하는 명령 인수(스위치)가 나옵니다. <br>예를 들면 다음과 같습니다.<br>
-    `ApplicationName.exe /quite`<br>
-    위의 명령에서 `ApplicaitonName.exe` 패키지는 `/quite` 명령 인수를 지원합니다.<p> 애플리케이션 패키지에서 지원하는 특정 인수에 대해서는 애플리케이션 공급업체에 문의하세요.
+    `ApplicationName.exe /quiet`<br>
+    위의 명령에서 `ApplicationName.exe` 패키지는 `/quiet` 명령 인수를 지원합니다.<p> 애플리케이션 패키지에서 지원하는 특정 인수에 대해서는 애플리케이션 공급업체에 문의하세요.
 
 3.  앱의 GUID를 기반으로 앱을 제거하려면 전체 제거 명령줄을 추가합니다. 
 
@@ -282,9 +282,6 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 ## <a name="app-dependencies"></a>앱 종속성
 
 앱 종속성은 Win32 앱을 설치하기 전에 설치해야 하는 애플리케이션입니다. 다른 앱이 종속성으로 설치되도록 요구할 수 있습니다. 특히 디바이스는 Win32 앱을 설치하기 전에 종속 앱을 설치해야 합니다. 최대 100개의 종속성이 있으며, 여기에는 앱 자체뿐만 아니라 포함된 모든 종속성의 종속성도 포함됩니다. Win32 앱이 Intune에 추가되고 업로드된 후에만 Win32 앱 종속성을 추가할 수 있습니다. Win32 앱이 추가되면 Win32 앱에 대한 블레이드에 **종속성** 옵션이 표시됩니다. 
-
-> [!NOTE]
-> 앱 종속성 기능은 Intune 관리 에이전트를 1904 버전(1.18.120.0보다 큼)으로 업그레이드한 후에만 사용할 수 있으며, 서비스를 1904로 업그레이드한 후 1~2주가 더 걸릴 수 있습니다.
 
 앱 종속성을 추가하는 경우 앱 이름과 게시자를 기준으로 검색할 수 있습니다. 또한 앱 이름과 게시자에 따라 추가된 종속성을 정렬할 수도 있습니다. 이전에 추가된 앱 종속성은 이전에 추가된 앱 종속성 목록에서 선택할 수 없습니다. 
 

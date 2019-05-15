@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504218"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135216"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune에서 규정 미준수 디바이스에 대한 이메일 자동화 및 작업 추가
 
@@ -103,9 +103,6 @@ ms.locfileid: "61504218"
          - 그룹을 선택하여 **추가 받는 사람**를 입력합니다.
     
     - **규정 미준수 디바이스를 원격으로 잠그기**: 디바이스가 규정을 준수하지 않으면 디바이스를 잠급니다. 이렇게 하면 사용자는 디바이스 잠금을 해제하려면 PIN 또는 암호를 입력해야 합니다. 
-
-    - **규정 미준수 디바이스 사용 중지**: 디바이스가 규정을 준수하지 않으면 디바이스의 모든 회사 데이터를 제거하고 Intune 관리에서 해당 디바이스를 제거합니다. 디바이스를 실수로 초기화하는 일이 없도록 이 작업은 최소 **30**일 일정을 지원합니다.  
-
     
 5. **일정** 구성: 여기에 입력한 일 수(0-365일)만큼 규정 미준수 상태이면 사용자 디바이스에 대한 작업을 트리거합니다. 이 유예 기간이 지나면 조건부 액세스 정책을 적용할 수 있습니다. **0**을 입력하면 조건부 액세스가 **즉시** 적용됩니다. 예를 들어, 디바이스가 비준수 상태이면 회사 리소스에 대한 액세스를 즉시 차단할 수 있습니다.
 
