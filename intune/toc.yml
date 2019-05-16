@@ -552,6 +552,8 @@
               href: app-configuration-policies-use-ios.md
             - name: Android 관리되는 디바이스
               href: app-configuration-policies-use-android.md
+            - name: Android Enterprise용 관리 홈 화면 앱
+              href: app-configuration-managed-home-screen-app.md
             - name: 관리되는 앱
               href: app-configuration-policies-managed-app.md
             - name: iOS 앱 프로비전 프로필
