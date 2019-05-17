@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 Windows Defender ATP 사용 - Azure | Microsoft Docs
-description: Intune 및 Windows Defender 보안 센터(ATP 포털)에서 ATP 켜기 등 종단 간 시나리오에서 Windows Defender ATP(Advanced Threat Protection)를 사용하도록 설정하고, ATP 구성 프로필을 사용하여 디바이스를 등록하고, Intune 디바이스 준수 정책을 만들고, Azure AD 조건부 액세스 정책을 만들고, 디바이스 준수를 모니터링하는 방법을 확인합니다.
+description: Intune 및 Windows Defender 보안 센터(ATP 포털)에서 ATP 켜기 등 엔드투엔드 시나리오에서 Windows Defender ATP(Advanced Threat Protection)를 사용하도록 설정하고, ATP 구성 프로필을 사용하여 디바이스를 등록하고, Intune 디바이스 준수 정책을 만들고, Azure AD 조건부 액세스 정책을 만들고, 디바이스 준수를 모니터링하는 방법을 확인합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
