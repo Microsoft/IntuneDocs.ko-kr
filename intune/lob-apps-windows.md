@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune에 Windows 기간 업무 앱 추가
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune을 사용하여 Windows LOB(기간 업무) 앱을 추가하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7776c1bddb459347679cb4aea3bc4e14e05e1418
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
+ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238781"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59570769"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Windows 기간 업무 앱 추가
 
@@ -92,4 +93,4 @@ MSI 설치 관리자 기반의 일부 앱은 앱 개발자가 자동으로 업�
 
 - 앱의 속성 및 할당을 모니터링할 수 있는 방법에 대해 자세히 알아봅니다. [앱 정보 및 할당을 모니터링하는 방법](apps-monitor.md)을 참조하세요.
 
-- Intune에서 앱의 컨텍스트에 대해 자세히 알아봅니다. [디바이스 및 앱 수명 주기에 대한 개요](introduction-device-app-lifecycles.md)를 참조하세요.
+- Intune에서 앱의 컨텍스트에 대해 자세히 알아봅니다. [Microsoft Intune에 대한 앱 수명 주기 개요](app-lifecycle.md)를 참조하세요.

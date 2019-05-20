@@ -1,15 +1,16 @@
 ---
 title: Intune에 Android 디바이스 등록
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune에 Android 디바이스를 등록하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846760"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568676"
 ---
 # <a name="enroll-android-devices"></a>Android 디바이스 등록
 
@@ -31,9 +32,9 @@ ms.locfileid: "55846760"
 Intune 관리자는 다음 Android 디바이스를 관리할 수 있습니다.
 - Samsung Knox Standard 디바이스를 포함한 Android 디바이스입니다.
 - 다음을 포함하는 Android 엔터프라이즈 디바이스:
-    - **Android 회사 프로필 디바이스**: 개인 디바이스에 회사 데이터에 액세스할 수 있는 권한을 부여합니다. 관리자는 회사 계정, 앱 및 데이터를 관리할 수 있습니다. 디바이스에 있는 개인 데이터는 회사 데이터와 분리되며, 관리자는 개인 설정이나 데이터를 제어하지 않습니다. 
-    - **Android 전용 디바이스**: 디지털 신호, 티켓 인쇄 또는 재고 관리와 같은 회사 소유의 단일 사용 디바이스입니다. 관리자는 제한된 앱 및 웹 링크 집합에 대한 디바이스 사용을 잠급니다. 또한 사용자가 다른 앱을 추가하거나 디바이스에서 다른 작업을 수행하는 것을 방지합니다.
-    - **Android 완전 관리형 디바이스**: 회사 소유의 단일 사용자 디바이스로 개인 용도가 아닌 업무용으로만 사용됩니다. 관리자는 전체 디바이스를 관리하고 회사 프로필에 사용할 수 없는 정책 제어를 적용할 수 있습니다. 
+    - **Android 엔터프라이즈 회사 프로필 디바이스**: 개인 디바이스에 회사 데이터에 액세스할 수 있는 권한을 부여합니다. 관리자는 회사 계정, 앱 및 데이터를 관리할 수 있습니다. 디바이스에 있는 개인 데이터는 회사 데이터와 분리되며, 관리자는 개인 설정이나 데이터를 제어하지 않습니다. 
+    - **Android 엔터프라이즈 전용 디바이스**: 디지털 신호, 티켓 인쇄 또는 재고 관리와 같은 회사 소유의 단일 사용 디바이스입니다. 관리자는 제한된 앱 및 웹 링크 집합에 대한 디바이스 사용을 잠급니다. 또한 사용자가 다른 앱을 추가하거나 디바이스에서 다른 작업을 수행하는 것을 방지합니다.
+    - **Android 엔터프라이즈 완전 관리형 디바이스**: 회사 소유의 단일 사용자 디바이스로 개인 용도가 아닌 업무용으로만 사용됩니다. 관리자는 전체 디바이스를 관리하고 회사 프로필에 사용할 수 없는 정책 제어를 적용할 수 있습니다. 
 
 ## <a name="prerequisite"></a>필수 구성 요소
 
@@ -54,11 +55,11 @@ Android 디바이스를 차단하거나 등록에서 개인적으로 소유한 A
 
 ## <a name="set-up-android-enterprise-enrollment"></a>Android 엔터프라이즈 등록 설정
 
-Android 엔터프라이즈는 개인 앱 및 데이터를 회사 앱 및 데이터가 포함된 회사 프로필과 구분하는 Android 디바이스 기능 및 서비스의 집합니다. Android 엔터프라이즈 디바이스에는 회사 프로필 디바이스, 완전 관리형 디바이스 및 전용 디바이스가 포함됩니다. 
+Android 엔터프라이즈의 등록 옵션 세트는 사용자에게 안전한 최신 기능을 제공합니다. Android 엔터프라이즈 등록 옵션에는 회사 프로필, 완전 관리형 및 전용 디바이스가 포함됩니다.
 
-- [Android 회사 프로필 등록 설정](android-work-profile-enroll.md)
-- [Android 전용 디바이스 등록 설정](android-kiosk-enroll.md)
-- [Android 완전 관리형 등록 설정](android-fully-managed-enroll.md)
+- [Android 엔터프라이즈 회사 프로필 등록 설정](android-work-profile-enroll.md)
+- [Android 엔터프라이즈 전용 디바이스 등록 설정](android-kiosk-enroll.md)
+- [Android 엔터프라이즈 완전 관리형 등록 설정](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Samsung Knox 디바이스를 등록할 때 최종 사용자 환경
 
@@ -76,6 +77,6 @@ Samsung Knox 디바이스를 등록할 때 몇 가지 고려 사항이 있습니
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Android 회사 프로필 등록 설정](android-work-profile-enroll.md)
-- [Android 전용 디바이스 등록 설정](android-kiosk-enroll.md)
-- [Android 완전 관리형 등록 설정](android-fully-managed-enroll.md)
+- [Android 엔터프라이즈 회사 프로필 등록 설정](android-work-profile-enroll.md)
+- [Android 엔터프라이즈 전용 디바이스 등록 설정](android-kiosk-enroll.md)
+- [Android 엔터프라이즈 완전 관리형 등록 설정](android-fully-managed-enroll.md)

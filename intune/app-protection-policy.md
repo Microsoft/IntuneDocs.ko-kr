@@ -6,23 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836356"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569417"
 ---
 # <a name="what-are-app-protection-policies"></a>앱 보호 정책이란?
 
@@ -69,8 +70,8 @@ Microsoft Intune 앱 보호 정책은 회사 데이터를 보호하고 데이터
 ### <a name="supported-platforms-for-app-protection-policies"></a>앱 보호 정책을 지원하는 플랫폼
 Intune 앱 보호 정책 플랫폼 지원은 Android 및 iOS 디바이스용 Office 모바일 애플리케이션 플랫폼 지원에 맞춰 조정됩니다. 자세한 내용은 [Office 시스템 요구 사항](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)의 **모바일 앱** 섹션을 참조하세요.
 
-Windows 디바이스는 현재 지원되지 않습니다. 그러나 유사한 기능을 제공하는 Windows Information Protection을 사용할 수 있습니다. 자세한 내용은 [WIP(Windows Information Protection)를 사용하여 엔터프라이즈 데이터 보호](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)를 참조하세요.
-
+> [!IMPORTANT]
+> Android에서 앱 보호 정책을 받으려면 디바이스에 Intune 회사 포털이 필요합니다. 자세한 내용은 [Intune 회사 포털 액세스 앱 요구 사항](end-user-mam-apps-android.md#access-apps)을 참조하세요.
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>앱 보호 정책으로 앱 데이터를 보호하는 방법
 

@@ -1,12 +1,12 @@
 ---
-title: WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
+title: WIP(Windows Information Protection) 앱 보호 정책
 titleSuffix: Microsoft Intune
 description: Microsoft Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 8aaa94428a5a8606a7ba05f0661e96600f24e2d4
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569768"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587419"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
 

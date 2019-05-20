@@ -7,21 +7,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 031db83302dfef8b99fc83ab7975e233c3eeb799
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188095"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396865"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune에서 Telecom Expense Management 서비스 설정
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -96,9 +98,9 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
 
-3. **Intune** 창에서 **장치 구성**을 선택합니다.
+3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
 
-4. **장치 구성** 창에서 **설정** > **Telecom Expense Management**를 선택합니다.
+4. **디바이스 구성** 창에서 **설정** > **Telecom Expense Management**를 선택합니다.
 
    페이지 맨 위에서 **활성** 연결 상태를 찾습니다.
 
@@ -146,7 +148,7 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
 2. **앱** 창에서 **관리** > **할당**을 선택합니다.
 
-3. **그룹 추가**를 선택하고 단계에 따라 회사 장치 그룹을 선택합니다.
+3. **그룹 추가**를 선택하고 단계에 따라 회사 디바이스 그룹을 선택합니다.
 
 4. 그룹에 대해 앱 설치를 필수 또는 선택 사항으로 설정할지 선택합니다. 다음 예제 스크린샷에서는 설치가 필수임을 보여 줍니다. 이 경우 사용자는 디바이스를 등록한 후 Datalert 앱을 설치해야 합니다.
 
@@ -165,8 +167,8 @@ Intune은 현재 다음 Telecom Expense Management 공급자와 통합되어 있
 
 ## <a name="client-enrollment-experience"></a>클라이언트 등록 환경
 클라이언트 등록 환경에 대해서는 다음을 참조하세요.
--   [TEM(Telecom Expense Management)에 iOS 장치 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
--   [TEM(Telecom Expense Management)에 Android 장치 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
+-   [TEM(Telecom Expense Management)에 iOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-   [TEM(Telecom Expense Management)에 Android 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>Datalert 서비스 해제
 

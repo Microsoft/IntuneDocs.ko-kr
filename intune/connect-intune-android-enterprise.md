@@ -1,15 +1,16 @@
 ---
-title: Intune 계정을 Android 엔터프라이즈 계정에 연결
-titlesuffix: Microsoft Intune
-description: Intune 계정을 Android 엔터프라이즈 계정에 연결하는 방법에 대해 알아봅니다.
+title: Intune 계정을 관리형 Google Play 계정에 연결합니다.
+titleSuffix: Microsoft Intune
+description: Intune 계정을 관리형 Google Play 계정에 연결하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 6/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 421d9c56f959fe30d35c0c55ce34017a7a0ba5a6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19efd0821deeac0e76c60ee67e6230da554391a0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838262"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567389"
 ---
-# <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Intune 계정을 Android 엔터프라이즈 계정에 연결
+# <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Intune 계정을 관리형 Google Play 계정에 연결
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[Android 회사 프로필](android-work-profile-enroll.md), [Android 완전 관리형](android-fully-managed-enroll.md) 및 [Android 전용](android-kiosk-enroll.md) 디바이스를 지원하려면 Intune 테넌트 계정을 Android 엔터프라이즈 계정에 연결해야 합니다.  
+[Android 엔터프라이즈 회사 프로필](android-work-profile-enroll.md), [Android 엔터프라이즈 완전 관리형](android-fully-managed-enroll.md) 및 [Android 엔터프라이즈 전용 디바이스](android-kiosk-enroll.md)를 지원하려면 Intune 테넌트 계정을 관리형 Google Play 계정에 연결해야 합니다.  
 
 > [!NOTE]
 > Google과 Microsoft 도메인 간 상호 작용으로 인해, 이 단계에서는 브라우저 설정을 조정해야 할 수 있습니다.  "portal.azure.com"과 "play.google.com"이 브라우저의 동일한 보안 영역에 있는지 확인하세요.
@@ -53,7 +54,7 @@ ms.locfileid: "55838262"
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Android 엔터프라이즈 관리 계정 연결 끊기
 
-Android 엔터프라이즈 등록 및 관리를 해제할 수 있습니다. 이렇게 하려면 먼저 등록된 Android 회사 프로필 디바이스를 모두 사용 중지해야 합니다. 그런 다음, Intune 관리 콘솔에서 **연결 끊기**를 선택하여 등록된 모든 Android 회사 프로필 디바이스 및 키오스크 디바이스를 등록에서 제거합니다. Android 엔터프라이즈 계정과 Intune 사이의 관계도 제거됩니다.
+Android 엔터프라이즈 등록 및 관리를 끌 수 있습니다. 이렇게 하려면 먼저 등록된 Android 엔터프라이즈 회사 프로필 디바이스를 모두 사용 중지해야 합니다. 그런 다음, Intune 관리 콘솔에서 **연결 끊기**를 선택하여 등록된 모든 Android 엔터프라이즈 회사 프로필 디바이스 및 전용 디바이스를 등록에서 제거합니다. 관리형 Google Play 계정과 Intune의 관계도 제거됩니다.
 
 1. [Azure Portal](https://portal.azure.com)에서 Intune 관리자로 **모든 서비스** > **모니터링 + 관리** > **Intune**을 선택합니다.
 2. **디바이스 등록** > **Android 등록** > **관리되는 Google Play** > **연결 끊기**를 선택합니다.
@@ -61,4 +62,4 @@ Android 엔터프라이즈 등록 및 관리를 해제할 수 있습니다. 이�
 
 ## <a name="next-steps"></a>다음 단계
 
-Android 엔터프라이즈 계정에 연결한 후 [Android 회사 프로필 디바이스를 설정](android-work-profile-enroll.md)하고 [Android 키오스크 디바이스를 설정](android-kiosk-enroll.md)할 수 있습니다.
+관리형 Google Play 계정에 연결한 후 [Android 엔터프라이즈 회사 프로필 디바이스를 설정](android-work-profile-enroll.md)하고 [Android 엔터프라이즈 전용 디바이스를 설정](android-kiosk-enroll.md)할 수 있습니다.

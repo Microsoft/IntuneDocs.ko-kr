@@ -1,6 +1,6 @@
 ---
 title: Windows 10에 대한 대량 등록
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune에 대한 대량 등록 패키지를 만듭니다.
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 5/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7df624f0a3db11b058498c650a9f9c3dd95e8d12
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236809"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568169"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 대량 등록
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236809"
 
 관리자로서 여러 새로운 Windows 디바이스를 Azure Active Directory 및 Intune에 연결할 수 있습니다. Azure AD 테넌트에 대한 디바이스를 대량 등록하려면 WCD(Windows 구성 디자이너) 앱을 사용하여 프로비전 패키지를 만듭니다. 회사 소유 디바이스에 프로비전 패키지를 적용하면 디바이스가 Azure AD 테넌트에 연결되고 Intune 관리를 위해 등록됩니다. 패키지가 적용되면 Azure AD 사용자가 로그온할 수 있게 됩니다.
 
-Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당된 Intune 정책 및 필수 앱을 수신합니다. 셀프 서비스 및 회사 포털 시나리오의 경우 이번에는 지원되지 않습니다.
+Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당된 Intune 정책 및 필수 앱을 수신합니다. Windows 대량 등록을 사용하여 Intune에 등록된 Windows 디바이스는 회사 포털 앱을 사용하여 사용 가능한 앱을 설치할 수 있습니다. 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows 디바이스 대량 등록에 대한 필수 구성 요소
 

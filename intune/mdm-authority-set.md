@@ -1,6 +1,6 @@
 ---
 title: 모바일 디바이스 관리 기관을 설정합니다.
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune으로 모바일 디바이스 관리 기관을 설정합니다.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99b913b23638a507ed9b0a5cb32afff66679a164
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 898c4eee19aa50136736f4ee72c55e4e8931317d
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231913"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567480"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>모바일 디바이스 관리 기관을 설정합니다.
 
@@ -34,12 +35,12 @@ MDM(모바일 디바이스 관리) 기관 설정에 따라 디바이스를 관�
 
 - **Intune 독립 실행형** - Azure Portal을 사용하여 구성하는 클라우드 전용 관리입니다. Intune에서 제공하는 모든 기능 집합을 포함합니다. [Intune 콘솔에서 MDM 기관을 설정합니다](#set-mdm-authority-to-intune).
 
-- **Intune 하이브리드** - Intune 클라우드 솔루션과 System Center Configuration Manager의 통합입니다. Configuration Manager 콘솔을 사용하여 Intune을 구성합니다. [Configuration Manager에서 MDM 기관을 설정합니다](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+- **Intune 공동 관리** - Windows 10 디바이스를 위한 Intune 클라우드 솔루션과 System Center Configuration Manager의 통합입니다. Configuration Manager 콘솔을 사용하여 Intune을 구성합니다. [Intune에 대한 디바이스 자동 등록 구성](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune) 
 
     > [!Important]
-    >향후 릴리스에서는 새 하이브리드 MDM 고객의 온보딩이 꺼집니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리에서 Azure의 Intune으로 이동](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) 블로그 게시물을 참조하세요.
+    >새 하이브리드 MDM 고객의 온보딩은 더 이상 사용되지 않습니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리에서 Azure의 Intune으로 이동](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) 블로그 게시물을 참조하세요.
 
-- **Office 365용 모바일 디바이스 관리**  - Office 365와 Intune 클라우드 솔루션의 통합입니다. Office 365 관리 센터에서 Intune을 구성합니다. Intune 독립 실행형에서 제공되는 기능 중 일부를 포함합니다. Office 365 관리 센터에서 MDM 기관을 설정합니다.
+- **Office 365용 모바일 디바이스 관리**  - Office 365와 Intune 클라우드 솔루션의 통합입니다. Microsoft 365 관리 센터에서 Intune을 구성합니다. Intune 독립 실행형에서 제공되는 기능 중 일부를 포함합니다. Microsoft 365 관리 센터에서 MDM 기관을 설정합니다.
 
 > [!IMPORTANT]
 > Configuration Manager 버전 1610 이상과 Microsoft Intune 버전 1705에서는 Microsoft 지원에 문의하여 기존의 관리 디바이스를 등록 취소했다가 다시 등록할 필요 없이 MDM 기관을 변경할 수 있습니다. 자세한 내용은 [MDM 기관을 Configuration Manager로 변경 준비](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager)를 참조하세요.

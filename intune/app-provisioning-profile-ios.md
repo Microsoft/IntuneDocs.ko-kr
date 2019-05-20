@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune에서 iOS 앱 프로비전 프로필
-titlesuffix: ''
+titleSuffix: ''
 description: Intune은 만료일이 다가오는 앱이 있는 디바이스에 새 프로비전 프로필을 미리 할당하기 위한 도구를 제공합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f02e4416f68fef7531f6d6ffa617273904b752c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 888c136934deca80877d75879e270807af194a1e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233851"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569560"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>iOS 앱 프로비전 프로필을 사용하여 모바일 앱이 만료되지 않도록 방지
 
@@ -51,7 +52,7 @@ iPhone 및 iPad에 할당된 Apple iOS LOB(기간 업무) 앱은 포함된 프�
 3. **프로필 만들기** 창에서 다음 값을 구성합니다.
     - **이름** - 이 모바일 프로비전 프로필의 이름을 제공합니다.
     - **설명** - 필요에 따라 정책에 대한 설명을 제공합니다.
-    - **프로필 파일 업로드** - **가져오기**를 선택하고 Apple 개발자 웹 사이트에서 다운로드한 Apple 모바일 구성 프로필 파일(확장명 `.mobileprovision`)을 선택합니다.
+    - **프로필 파일 업로드** - **열기** 아이콘을 선택하고 [Apple 개발자 웹 사이트](https://developer.apple.com/)에서 다운로드한 Apple 모바일 구성 프로필 파일(확장명 `.mobileprovision`)을 선택합니다.
 4. 작업이 끝나면 **만들기**를 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계

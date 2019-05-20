@@ -5,28 +5,29 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846828"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570548"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>초기화, 사용 중지 또는 수동으로 디바이스 등록을 취소하여 디바이스 제거
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**사용 중지** 또는 **초기화** 작업을 사용하여 Intune에서 더 이상 필요하거나, 용도를 다시 설정하거나, 누락되지 않은 디바이스를 제거할 수 있습니다. 또한 사용자가 Intune 회사 포털에서 Intune에 등록된 개인적으로 소유한 디바이스로 원격 명령을 실행할 수 있습니다.
+**사용 중지** 또는 **초기화** 작업을 사용하여 Intune에서 더 이상 필요하거나, 용도를 다시 설정하거나, 누락되지 않은 디바이스를 제거할 수 있습니다. 또한 사용자가 Intune 회사 포털에서 Intune에 등록된 디바이스로 원격 명령을 실행할 수 있습니다.
 
 > [!NOTE]
 > Azure AD(Azure Active Directory)에서 사용자를 제거하기 전에 해당 사용자와 관련된 모든 디바이스에서 **초기화** 또는 **사용 중지** 작업을 사용합니다. Azure AD에서 관리 디바이스가 있는 사용자를 제거하는 경우 Intune에서는 해당 디바이스에서 더 이상 초기화 또는 사용 중지를 실행하지 않습니다.
@@ -128,9 +129,9 @@ Android 회사 프로필 디바이스에서 회사 데이터를 제거하면 해
 
 ### <a name="windows"></a>Windows
 
-|데이터 형식|Windows 8.1(MDM) 및 Windows RT 8.1|Windows RT|Windows Phone 8.1 및 Windows Phone 8|Windows 10|
+|데이터 형식|Windows 8.1(MDM) 및 Windows RT 8.1|Windows RT|Windows Phone 8.1 및 Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Intune에서 설치한 회사 앱 및 관련 데이터|EFS로 보호되는 파일에 대한 키가 해지됩니다. 사용자는 파일을 열 수 없습니다.|회사 앱이 제거되지 않습니다.|회사 포털을 통해 처음에 설치된 앱은 제거됩니다. 회사 앱 데이터가 제거됩니다.|앱이 제거됩니다. 테스트용 로드 키가 제거됩니다.<br>Windows 10 버전 1703(크리에이터 업데이트) 이상의 경우 Office 365 ProPlus 앱이 제거되지 않습니다.|
+|Intune에서 설치한 회사 앱 및 관련 데이터|EFS로 보호되는 파일에 대한 키가 해지됩니다. 사용자는 파일을 열 수 없습니다.|회사 앱이 제거되지 않습니다.|회사 포털을 통해 처음에 설치된 앱은 제거됩니다. 회사 앱 데이터가 제거됩니다.|앱이 제거됩니다. 테스트용 로드 키가 제거됩니다.<br>Windows 10 버전 1703(크리에이터 업데이트) 이상의 경우 Office 365 ProPlus 앱이 제거되지 않습니다. Win32 앱에 설치된 Intune 관리 확장은 등록되지 않은 디바이스에서 제거되지 않습니다. 관리자는 할당 제외를 활용하여 Win32 앱을 BYOD 디바이스에 제공하지 않을 수 있습니다.|
 |설정|Intune 정책에서 설정한 구성은 더 이상 적용되지 않습니다. 사용자는 설정을 변경할 수 있습니다.|Intune 정책에서 설정한 구성은 더 이상 적용되지 않습니다. 사용자는 설정을 변경할 수 있습니다.|Intune 정책에서 설정한 구성은 더 이상 적용되지 않습니다. 사용자는 설정을 변경할 수 있습니다.|Intune 정책에서 설정한 구성은 더 이상 적용되지 않습니다. 사용자는 설정을 변경할 수 있습니다.|
 |Wi-Fi 및 VPN 프로필 설정|제거됩니다.|제거됩니다.|지원 안 됨|제거됩니다.|
 |인증서 프로필 설정|인증서가 제거되고 해지됩니다.|인증서가 제거되고 해지됩니다.|지원 안 됨|인증서가 제거되고 해지됩니다.|
@@ -166,7 +167,7 @@ Intune을 구성하여 비활성, 부실 또는 응답하지 않는 것 같은 �
 
 통신 문제 또는 누락된 디바이스로 인해 Azure AD에서 디바이스를 삭제해야 할 수도 있습니다. 연결할 수 없고 Azure와 다시 통신할 가능성이 적은 디바이스의 경우 **삭제** 작업을 사용하여 Azure Portal에서 레코드를 제거할 수 있습니다. **삭제** 작업은 관리에서 디바이스를 제거하지 않습니다.
 
-1.  관리 자격 증명을 사용하여 [Azure Portal의 Azure Active Directory](http://aka.ms/accessaad)에 로그인합니다. [Office 365 포털](https://portal.office.com)에 로그인할 수도 있습니다. 메뉴에서 **관리 센터** > **Azure AD**를 선택합니다.
+1.  관리 자격 증명을 사용하여 [Azure Portal의 Azure Active Directory](http://aka.ms/accessaad)에 로그인합니다. [Microsoft 365 관리 센터](https://admin.microsoft.com)에 로그인할 수도 있습니다. 메뉴에서 **관리 센터** > **Azure AD**를 선택합니다.
 2.  Azure 구독이 없으면 만듭니다. 유료 계정이 있는 경우 신용 카드나 결제가 필요하지 않습니다(**무료 Azure Active Directory 등록** 구독 링크 선택).
 3.  **Azure Active Directory**를 선택한 다음, 조직을 선택합니다.
 4.  **사용자** 탭을 선택합니다.

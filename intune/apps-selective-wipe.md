@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 51d1c477f490cb23c35ef54a0a5099ee4b4b035b
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 83cc1f43faba1ee98bde680b1ff2b74c78ff65e4
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068257"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389498"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune 관리 앱에서 회사 데이터만 초기화하는 방법
 
@@ -30,7 +32,7 @@ ms.locfileid: "55068257"
 디바이스를 분실하거나 도난당한 경우, 또는 직원이 퇴사하는 경우, 디바이스에서 업무용 앱 데이터가 확실히 제거되도록 해야 합니다. 하지만 디바이스에서 개인 데이터(특히, 직원 소유의 디바이스인 경우)를 제거하지 말아야 하는 경우가 있습니다.
 
 >[!NOTE]
-> iOS 및 Android 플랫폼은 현재 Intune 관리 앱에서 회사 데이터 초기화가 지원되는 두 개의 플랫폼입니다. Intune 관리 앱은 Intune APP SDK를 포함하는 애플리케이션이며 조직에 대한 사용이 허가된 사용자 계정이 있습니다. 애플리케이션 보호 정책의 배포는 앱 선택적 초기화를 활성화하는 데 필요하지 않습니다.
+> 현재 Intune 관리 앱에서 회사 데이터 초기화가 지원되는 플랫폼은 iOS, Android 및 Windows 10 플랫폼뿐입니다. Intune 관리 앱은 Intune APP SDK를 포함하는 애플리케이션이며 조직에 대한 사용이 허가된 사용자 계정이 있습니다. 애플리케이션 보호 정책의 배포는 앱 선택적 초기화를 활성화하는 데 필요하지 않습니다.
 
 회사 앱 데이터를 선택적으로 제거하려면 이 항목의 단계를 사용하여 초기화 요청을 만듭니다. 요청이 완료되고 나면, 다음 번에 디바이스에서 앱을 실행할 때 회사 데이터가 앱에서 제거됩니다. 삭제 요청을 만드는 것 외에도 APP(애플리케이션 보호 정책) 액세스 설정 조건이 충족되지 않으면 조직의 데이터를 선택적으로 지우는 작업을 새 작업으로 구성할 수 있습니다. 이 기능을 사용하면 미리 구성된 기준에 따라 애플리케이션에서 중요한 조직 데이터를 자동으로 보호하고 제거할 수 있습니다.
 

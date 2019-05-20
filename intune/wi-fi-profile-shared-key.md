@@ -5,10 +5,11 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/28/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d71a70d12ad699dcc3af02610241473071645906
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7bf859075e675ef0205b24e0575fca5ab74f312c
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234905"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "59566986"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>사용자 지정 디바이스 프로필을 사용하여 미리 공유한 키로 Wi-Fi 프로필 만들기 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,10 +76,12 @@ Android, Windows 또는 EAP 기반 Wi-Fi 프로필에서 미리 공유한 키를
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>`는 **false**로 설정해야 합니다. **true**로 설정하면 디바이스가 암호화된 암호를 요구한 다음, 암호를 해독하려 할 수 있습니다. 이로 인해 연결에 실패할 수 있습니다.
+> - `<protected>false</protected>`는 **false**로 설정해야 합니다. **true**로 설정하면 디바이스가 암호화된 암호를 요구한 다음, 암호를 해독하려 할 수 있습니다. 이로 인해 연결에 실패할 수 있습니다.
 >
->  `<hex>53534944</hex>`는 `<name><SSID of wifi profile></name>`의 16진수 값으로 설정해야 합니다.
+> - `<hex>53534944</hex>`는 `<name><SSID of wifi profile></name>`의 16진수 값으로 설정해야 합니다.
 >  Windows 10 디바이스는 잘못된 *0x87D1FDE8 재구성 실패* 오류를 반환할 수 있지만, 해당 디바이스에는 계속 프로필이 포함됩니다.
+>
+> - XML에는 `&`(앰퍼샌드)와 같은 특수 문자가 있습니다. 특수 문자를 사용하면 XML이 예상대로 작동하지 않을 수 있습니다. 
 
 ```
 <!--
@@ -112,9 +115,9 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
         <useOneX>false</useOneX>
       </authEncryption>
       <sharedKey>
-        <keyType>networkKey</keyType>
+        <keyType>passPhrase</keyType>
         <protected>false</protected>
-        <keyMaterial>MyPassword</keyMaterial>
+        <keyMaterial>password</keyMaterial>
       </sharedKey>
       <keyIndex>0</keyIndex>
     </security>

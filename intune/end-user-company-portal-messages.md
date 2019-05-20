@@ -1,6 +1,6 @@
 ---
 title: 디바이스에서 사용자가 볼 수 있는 회사 포털 메시지
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 최종 사용자가 회사 포털에서 볼 수 있는 다양한 메시지를 이해합니다.
 keywords: ''
 author: lenewsad
@@ -10,18 +10,19 @@ ms.date: 03/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2fd42ece4a0df60ebe6f15b67c91bba46f210ff
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233165"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569131"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>최종 사용자가 회사 포털 앱 메시지를 이해할 수 있도록 지원
 
@@ -110,6 +111,34 @@ Intune이 회사 계정을 만들어 해당 디바이스에 등록된 사용자�
 ### <a name="what-it-means"></a>의미
 
 WIP(Windows Information Protection) 앱 보호 정책에서 **허용된 앱** 또는 **예외 앱** 목록에 회사 포털을 추가합니다. 자세한 내용은 [Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포](windows-information-protection-policy-create.md)를 참조하세요.
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>iOS 디바이스에서 iOS 회사 앱(기간 업무 앱) 승인 
+
+### <a name="where-it-appears"></a>표시되는 곳
+조직에서 개발된 iOS 앱이 앱 스토어에서 사용할 수 없으면 해당 앱은 기본적으로 디바이스에서 신뢰할 수 없습니다. 회사 포털을 사용하여 해당 앱을 설치하고 앱을 시작하면 다음 메시지가 표시됩니다.
+
+![iOS 앱 메시지 - 신뢰할 수 없는 엔터프라이즈 개발자](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>의미
+이 메시지는 iOS 디바이스에서 회사가 개발한 앱을 승인 및 설치하려면 iOS 디바이스 설정을 수정해야 함을 의미합니다.
+
+회사 포털을 사용하여 해당 앱을 설치하고 앱을 시작하는 경우에는 다음 단계에 따라 앱을 다운로드한 후 앱을 승인합니다.
+
+1. 설치된 회사 앱(기간 업무 앱)을 시작하면 “신뢰할 수 없는 엔터프라이즈 개발자” 메시지가 표시됩니다. <br>
+   **취소**를 누릅니다.
+2. **설정** > **일반** > **디바이스 관리**로 이동합니다.
+
+   ![iOS 디바이스 UI - 디바이스 관리](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. **관리 프로필** > **엔터프라이즈 앱**을 선택합니다.
+4. 개발자 이름을 선택합니다.
+5. **_개발자 이름_ 신뢰**를 누릅니다.
+6. 앱 설치 팝업 메시지에서 **신뢰**를 선택하여 앱을 확인합니다.
+
+   ![iOS 디바이스 UI - 앱 신뢰 메시지](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    회사 앱을 시작하고 사용할 수 있어야 합니다.
+
 
 ### <a name="see-also"></a>참고 항목
 [Intune 사용 방법에 대해 최종 사용자에게 알릴 내용](end-user-educate.md)

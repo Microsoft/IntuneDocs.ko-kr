@@ -7,9 +7,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60364d01f4ba4ca83ff91226f7738ec095e9152e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19f0fbf401fee4bad660e946bb135544a29de310
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849253"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566508"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록
 
@@ -102,8 +103,13 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 ![등록 프로그램 토큰을 만드는 데 사용되는 Apple ID를 지정하고 등록 프로그램 토큰을 찾는 스크린샷](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>4단계. 토큰 업로드
-**Apple 토큰** 상자에서 인증서(.pem) 파일을 찾은 다음 **열기**, **만들기**를 차례로 선택합니다. Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 정책을 푸시하여 iOS 디바이스를 등록하고 관리할 수 있습니다. Intune이 Apple과 자동으로 동기화되어 등록 프로그램 계정을 확인합니다.
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>4단계. 토큰 업로드 및 범위 태그 선택.
+
+1. **Apple 토큰** 상자에서 인증서(.pem) 파일로 이동하고 **열기**를 선택합니다.
+2. 이 DEP 토큰에 [범위 태그](scope-tags.md)를 적용하려면 **범위(태그)** 를 선택하고 원하는 범위 태그를 선택합니다. 토큰에 적용되는 범위 태그는 이 토큰에 추가된 프로필 및 디바이스가 상속합니다.
+3. **만들기**를 선택합니다.
+
+Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 정책을 푸시하여 iOS 디바이스를 등록하고 관리할 수 있습니다. Intune이 Apple과 자동으로 동기화되어 등록 프로그램 계정을 확인합니다.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 등록 프로필 만들기
 
@@ -145,6 +151,8 @@ Azure 포털의 Intune에서 나중에 참조할 수 있도록 Apple ID를 제�
 
 7. **VPP를 사용한 회사 포털 설치**에 대한 토큰을 선택한 경우 설정 도우미가 완료된 직후 단일 앱 모드(특히 회사 포털 앱)에서 디바이스를 잠글 수 있는 옵션이 있습니다. **인증될 때까지 단일 앱 모드에서 회사 포털 실행**에 대해 **예**를 선택하여 이 옵션을 설정합니다. 디바이스를 사용하려면 사용자는 먼저 회사 포털을 사용하여 로그인하여 인증해야 합니다.
     이 기능은 iOS 11.3.1 이상에서만 지원됩니다.
+
+   ![단일 앱 모드의 스크린샷.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
 8. **디바이스 관리 설정**을 선택한 다음 이 프로필을 사용하는 디바이스를 감독할지 여부를 선택합니다.
 

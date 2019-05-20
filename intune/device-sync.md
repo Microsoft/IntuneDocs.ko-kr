@@ -5,22 +5,23 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b766f9f92fb5d0e8cedfbebbac7246f48b90a6a2
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846134"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388109"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>디바이스를 동기화하여 Intune에서 최신 정책과 작업 가져오기
 
@@ -46,6 +47,8 @@ ms.locfileid: "55846134"
 5. 확인하려면 **예**를 선택합니다.
 
 동기화 작업의 상태를 확인하려면 **디바이스** > **디바이스 작업**을 선택합니다.
+
+[주기 시간 새로 고침](device-profiles.md)에서 표준 Intune 정책 체크 인 빈도를 찾을 수 있습니다.
 
 ## <a name="retryable-error-codes"></a>다시 시도 가능 오류 코드
 

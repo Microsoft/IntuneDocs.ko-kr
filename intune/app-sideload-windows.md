@@ -1,11 +1,12 @@
 ---
-title: Intune용 Windows 및 Windows Phone 앱 사이드로드
+title: Windows 및 Windows Phone 앱 사이드로드
+titleSuffix: Microsoft Intune
 description: Intune을 사용하여 LOB(기간 업무) 앱을 배포할 수 있도록 앱에 서명하는 방법을 알아봅니다.
 keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +16,12 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e29757cdd09a90c85dd1c965c3b77328ace4dcca
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8652d260849537d1e0b504f5d309a3ab2708e5cd
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390757"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587521"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune으로 Windows 디바이스에 기간 업무 앱을 배포할 수 있도록 앱에 서명
 

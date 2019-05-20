@@ -9,6 +9,7 @@ ms.date: 10/31/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 797ea27103144423d1b43434612999631a4a243d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834495"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57459903"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune에 디바이스를 등록할 수 있도록 사용자에게 라이선스 할당
 
@@ -29,19 +30,19 @@ ms.locfileid: "55834495"
 
 수동으로 사용자를 추가하든 아니면 온-프레미스 Active Directory에서 동기화하든 상관없이 먼저 각 사용자에게 Intune 라이선스를 할당해야 사용자가 Intune에 디바이스를 등록할 수 있습니다. 라이선스 목록은 [Intune을 포함하는 라이선스](licenses.md)를 참조하세요.
 
-## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Office 365 관리 센터에서 Intune 라이선스 할당
+## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Microsoft 365 관리 센터에서 Intune 라이선스 할당
 
-[Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)을 사용하여 클라우드 기반 사용자를 수동으로 추가하고, 클라우드 기반 사용자 계정 및 온-프레미스 Active Directory에서 Azure AD로 동기화한 계정에 라이선스를 할당할 수 있습니다.
+[Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)를 사용하여 클라우드 기반 사용자를 수동으로 추가하고, 클라우드 기반 사용자 계정 및 온-프레미스 Active Directory에서 Azure AD로 동기화한 계정에 라이선스를 할당할 수 있습니다.
 
-1. 테넌트 관리자 자격 증명을 사용하여 [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)에 로그인한 후 **사용자** > **활성 사용자**를 선택합니다.
+1. 테넌트 관리자 자격 증명을 사용하여 [Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)에 로그인한 후 **사용자** > **활성 사용자**를 선택합니다.
 
 2. Intune 사용자 라이선스를 할당할 사용자 계정을 선택한 후 **제품 라이선스** > **편집**을 선택합니다.
 
 3. **Intune** 또는 **Enterprise Mobility + Security**를 **켬**으로 전환하고 **저장**을 선택합니다.
 
-   ![Office 365 포털 제품 라이선스 섹션의 스크린 샷입니다.](./media/office-assign-license.png)
+   ![Microsoft 365 관리 센터 제품 라이선스 섹션의 스크린샷입니다.](./media/office-assign-license.png)
 
-4. 이제 사용자 계정은 서비스를 사용하고 장치를 관리하고 등록하는 데 필요한 권한이 생겼습니다.
+4. 이제 사용자 계정은 서비스를 사용하고 디바이스를 관리에 등록하는 데 필요한 권한이 생겼습니다.
 
 > [!NOTE]
 > 사용자는 디바이스를 등록한 후에만 관리 콘솔에 표시됩니다. 또한 사용자 그룹을 선택하여 동시에 편집할 수 있습니다. 즉, 선택한 모든 사용자에 대한 라이선스를 추가하거나 바꾸도록 선택할 수 있습니다.

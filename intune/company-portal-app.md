@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c61eb47f29b201997d04fa6b1405ad2f186e4fcc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237200"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567272"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -33,7 +34,7 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 > [!Tip]        
 > 회사 포털을 사용자 지정할 때는 구성이 회사 포털 웹 사이트 및 회사 포털 앱에 모두 적용됩니다. 회사 포털 웹 사이트에 액세스하려면 Intune 라이선스가 할당되어야 합니다.
 
-회사 포털을 사용자 지정하면 최종 사용자에게 친숙하고 유용한 환경을 제공하는 데 도움이 됩니다. 이렇게 하려면 **클라이언트 앱** 워크로드에서 **설정** > **회사 포털 브랜딩**을 선택한 다음, 필요한 설정을 구성합니다.  
+회사 포털을 사용자 지정하면 최종 사용자에게 친숙하고 유용한 환경을 제공하는 데 도움이 됩니다. 이렇게 하려면 Intune 포털에서 **클라이언트 앱** > **브랜딩 및 사용자 지정**을 선택한 후 필요한 설정을 구성합니다. 
 
 > [!Note]       
 > Azure Government를 사용하는 경우 문제에 대한 도움말을 얻을 수 있는 절차를 시작할 때 공유할 방법을 결정하도록 최종 사용자에게 앱 로그가 제공됩니다. 그러나 Azure Government를 사용하지 않는 경우 Windows 10용 회사 포털은 사용자가 문제에 대한 도움을 받기 위해 프로세스를 시작할 때 Microsoft에 직접 앱 로그를 보냅니다. 앱 로그를 Microsoft에 보내면 문제를 더 쉽게 해결할 수 있습니다. 
@@ -90,7 +91,7 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 
 |필드 이름|추가 정보|
 |---|---|
-|**브랜드 이미지 업로드**| 이 옵션을 사용하면 회사 포털 앱의 사용자 프로필 페이지에 배경 이미지를 표시할 수 있습니다.<p>*참고*: 이미지가 다른 플랫폼에서는 다르게 표시될 수 있습니다.<p><ul><li>권장 이미지 너비: 640px 이상, 1125px 미만</li><li>최대 이미지 크기: 1.3MB</li><li>파일 형식: PNG, JPG 또는 JPEG</li></ul>|
+|**브랜드 이미지 업로드**| 이 옵션을 사용하여 브랜드 이미지를 표시할 수 있습니다. iOS 회사 포털에서는 사용자의 프로필 페이지에 배경 이미지로 표시합니다.<p><ul><li>권장 이미지 너비: 640px 이상, 1125px 미만</li><li>최대 이미지 크기: 1.3MB</li><li>파일 형식: PNG, JPG 또는 JPEG</li></ul>|
 
 오른쪽 브랜드 이미지는 회사 브랜드의 강력한 인상을 심어주어 회사 포털에 대한 사용자의 신뢰를 높여줄 수 있습니다. 회사 포털의 이미지를 가져오고, 선택하고, 최적화할 때 고려하면 좋은 몇 가지 팁이 있습니다. 
 

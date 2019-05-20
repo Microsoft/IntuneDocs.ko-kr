@@ -1,27 +1,28 @@
 ---
 title: Intune 디바이스 등록에 대한 다단계 인증 요구
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Azure AD에서 Intune 디바이스를 등록하기 위해 다단계 인증을 요구하는 방법입니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834095"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568793"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune 디바이스 등록에 대한 다단계 인증 요구
 
@@ -50,11 +51,10 @@ MFA를 사용하도록 설정하면 최종 사용자가 디바이스를 등록�
 >Microsoft Intune 등록에 대한 **디바이스 기반 액세스 규칙**을 구성하지 마세요.
 
 1. 자격 증명으로 [Microsoft Azure Portal](https://portal.azure.com)에 로그인합니다.
-2. 포털에서 **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)** 로 이동합니다.
-3. 보안 아래의 **Azure Active Directory**에서 **[조건부 액세스](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)** 를 선택합니다.
+2. 포털에서 **Intune**으로 이동하고 **조건부 액세스**를 선택합니다. *Intune*에서 액세스한 조건부 액세스 노드는 *Azure AD*에서 액세스한 것과 동일한 노드입니다.
 4. **새 정책**을 선택합니다.
 5. **새 정책**에서 정책에 대한 설명이 포함된 이름을 입력합니다.
-6. **할당** 섹션에서 **사용자 및 그룹**을 선택합니다.
+6. **할당** 섹션에서 **사용자 및 그룹**을 선택합니다. 
 7. **사용자 및 그룹**에서 **사용자 또는 그룹 선택**을 선택하고 **사용자 및 그룹**을 확인합니다. 그런 다음, 이 정책을 수신할 사용자 및/또는 그룹을 선택한 다음, **완료**를 선택합니다.
 8. **할당** 섹션에서 **클라우드 앱**을 선택합니다.
 9. **클라우드 앱**의 **포함** 탭에서 **앱 선택**을 선택한 다음 **선택** > **Microsoft Intune 등록**을 선택하고 **완료**를 선택합니다.

@@ -1,27 +1,29 @@
 ---
 title: 앱 정보 및 할당 모니터링
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 사용자 또는 디바이스에 앱을 할당한 후, 이 정보를 사용하여 해당 앱의 상태를 모니터링할 수 있습니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2b3cba546be350f47c1a57f47b8eddf85323dc74
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325180"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567233"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune으로 앱 정보 및 할당 모니터링
 
@@ -49,7 +51,7 @@ Intune에서는 관리하는 앱 속성을 모니터링하고 앱 할당 상태�
 |------------------------|------------------------------------------------------------------|
 | **게시자**          | 앱의 게시자                                            |
 | **운영 체제**   | 앱 운영 체제(Windows, iOS, Android 등) |
-| **만든 날짜**             | 해당 수정 버전을 만든 날짜 및 시간                         |
+| **만든 날짜**             | 해당 수정 버전을 만든 날짜 및 시간 <b>**참고**: IT 관리자가 앱 범주 또는 앱 설명을 변경하는 것과 같이 앱 메타데이터를 변경하면 이 날짜 값이 업데이트됩니다.                        |
 | **할당됨**           | 앱이 할당되었는지 여부(**예** 또는 **아니요**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>디바이스 및 사용자 상태 그래프
@@ -80,7 +82,7 @@ Intune에서는 관리하는 앱 속성을 모니터링하고 앱 할당 상태�
 | **디바이스 이름**      | 디바이스 이름 지정을 허용하는 플랫폼에서 디바이스의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 다른 디바이스에서 사용할 수 없습니다.                                                                       |
 | **사용자 이름**        | 사용자의 이름입니다.                                                                                                                                                                                                                                      |
 | **플랫폼**         | 디바이스의 운영 체제(Windows, iOS, Android 등)                                                                                                                                                                                           |
-| **버전**          | 앱의 버전 번호입니다. 사업 부문 앱의 경우 앱의 전체 버전 번호가 표시됩니다. 전체 버전 번호는 앱의 특정 릴리스를 식별합니다. 번호는 _버전_(_빌드_)으로 표시됩니다. 예: 2.2(2.2.17560800). |
+| **버전**          | 앱의 버전 번호입니다. LOB(기간 업무) 앱의 경우 앱의 전체 버전 번호가 표시됩니다. 전체 버전 번호는 앱의 특정 릴리스를 식별합니다. 번호는 _버전_(_빌드_)으로 표시됩니다. 예: 2.2(2.2.17560800). 스토어 앱의 경우 버전이 표시되지 않습니다. |
 | **상태**           | 앱의 상태입니다.                                                                                                                                                                                                                                     |
 | **상태 정보**   | 상태의 세부 정보입니다.                                                                                                                                                                                                                                     |
 | **마지막 체크 인**    | 디바이스가 Intune과 마지막으로 동기화된 날짜입니다.                                                                                                                                                                                                                  |

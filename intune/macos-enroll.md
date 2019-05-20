@@ -1,6 +1,6 @@
 ---
 title: macOS 디바이스에 대한 등록 설정
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune에서 macOS 디바이스 등록을 설정하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 08/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d23d03169cdbf3c88be257cafe6aa84dc8c5257f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c2a968334ecf3ddb90a3f97841cc191c553b39ca
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236764"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568325"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune에서 macOS 디바이스 등록 설정
 
@@ -40,7 +41,7 @@ macOS 디바이스 등록을 설정하기 전에 다음 필수 구성 요소를 
 - [MDM 기관 설정](mdm-authority-set.md)
 - [그룹 만들기](groups-add.md)
 - [회사 포털 구성](company-portal-app.md)
-- [Office 365 포털](http://go.microsoft.com/fwlink/p/?LinkId=698854)에서 사용자 라이선스 할당
+- [Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)에서 사용자 라이선스 할당
 - [Apple MDM Push Certificate 가져오기](apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>사용자 소유 macOS 디바이스(BYOD)

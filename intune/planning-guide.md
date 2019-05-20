@@ -1,27 +1,29 @@
 ---
 title: Intune 계획 및 설계 소개
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 이 아티클에서는 모든 Microsoft Intune 계획, 설계 및 구현 섹션을 소개합니다. 또한 목적/사용 사례 시나리오/요구 사항을 확인하고 출시/통신 계획/지원/테스트/유효성 검사 계획을 작성하는 데 도움이 되는 도구에 대해 설명합니다.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b2ddf29157255feaa7d336913640a1cf434f921c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185783"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568637"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 배포 계획, 설계 및 구현 가이드
 
@@ -43,7 +45,7 @@ Microsoft Intune을 성공적으로 배포하려면 먼저 적절히 계획하�
 
 -   [섹션 5: 출시 통신 계획 개발](planning-guide-communication-plan.md)
 
--   [섹션 6: 지원 계획 개발](planning-guide-support-plan.md)
+-   [섹션 6: 지원 플랜 개발](planning-guide-support-plan.md)
 
 -   [섹션 7: Intune 설계 만들기](planning-guide-design.md)
 
@@ -63,4 +65,4 @@ Microsoft Intune을 성공적으로 배포하려면 먼저 적절히 계획하�
 
 ## <a name="next-steps"></a>다음 단계
 
-첫 번째 섹션인 [배포 목적, 목표 및 과제 확인](planning-guide-deployment-goals.md)부터 시작해 보겠습니다.
+첫 번째 섹션인 [배포 목적, 목표 및 과제 확인](planning-guide-deployment-goals.md)을 시작해 보겠습니다.

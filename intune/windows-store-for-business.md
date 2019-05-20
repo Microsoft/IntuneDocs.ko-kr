@@ -1,35 +1,36 @@
 ---
-title: 비즈니스용 Microsoft 스토어에서 앱 관리
-titlesuffix: Microsoft Intune
-description: 비즈니스용 Microsoft Store에서 Intune에 앱을 동기화한 다음, 해당 앱을 할당하고 추적하는 방법을 알아봅니다.
+title: 비즈니스용 Microsoft Store에서 구매 앱 또는 체험용 앱 관리
+titleSuffix: Microsoft Intune
+description: 비즈니스용 Microsoft Store에서 구매(또는 체험용) 앱을 Intune에 동기화하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75e6cdd97bbc591a76e541874152455c4fe258c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 67d99977776657219638980eb6de8a4079384185
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234938"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587504"
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune을 사용하여 비즈니스용 Microsoft 스토어에서 구입한 앱을 관리하는 방법
+# <a name="how-to-manage-volume-purchased-or-free-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune을 사용하여 비즈니스용 Microsoft Store에서 구매(또는 체험용) 앱을 관리하는 방법
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 [비즈니스용 Microsoft 스토어](https://www.microsoft.com/business-store)는 개별적으로 또는 대량으로 조직에 대한 앱을 찾고 구입할 수 있는 위치를 제공합니다. 스토어를 Microsoft Intune에 연결하여 Azure Portal에서 대량 구매 앱을 관리할 수 있습니다. 예를 들면 다음과 같습니다.
-* Intune을 사용하여 저장소에서 구입한 앱 목록을 동기화할 수 있습니다.
+* Intune을 사용하여 스토어에서 구매한(또는 체험용) 앱 목록을 동기화할 수 있습니다.
 * 동기화되는 앱은 Intune 관리 콘솔에 나타납니다. 이러한 앱을 다른 앱처럼 할당할 수 있습니다.
 * Intune 관리 콘솔에서 사용 가능한 라이선스 수 및 사용되는 라이선스 수를 추적할 수 있습니다.
 * Intune은 사용 가능한 라이선스가 부족한 경우에 앱의 할당 및 설치를 차단합니다.
@@ -80,7 +81,7 @@ Intune 콘솔에서 동기화를 사용하기 전에 관리 도구로 Intune을 
 
 ## <a name="assign-apps"></a>앱 할당
 
-다른 Intune 앱을 할당하는 방법과 마찬가지로 스토어에서 앱을 할당합니다. 자세한 내용은 [Microsoft intune을 사용하여 그룹에 앱을 할당하는 방법](apps-deploy.md)을 참조하세요. 그러나 **모든 앱** 페이지에서 앱을 할당하는 대신 **사용이 허가된 앱** 페이지에서 앱을 할당합니다.
+다른 Intune 앱을 할당하는 방법과 마찬가지로 스토어에서 앱을 할당합니다. 자세한 내용은 [Microsoft intune을 사용하여 그룹에 앱을 할당하는 방법](apps-deploy.md)을 참조하세요. 
 
 오프라인 앱은 사용자 그룹, 디바이스 그룹 또는 사용자와 디바이스를 포함하는 그룹을 대상으로 할 수 있습니다.
 디바이스의 특정 사용자 또는 디바이스의 모든 사용자에 대해 오프라인 앱을 설치할 수 있습니다. 

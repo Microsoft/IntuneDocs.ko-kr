@@ -1,15 +1,16 @@
 ---
 title: Windows 10용 앱 보호 정책 구성
 titleSuffix: Microsoft Intune
-description: Azure AD에서 MAM(모바일 애플리케이션 관리) 공급자 설정
+description: 이 항목에서는 Windows 10 디바이스의 APP(앱 보호 정책)를 구성하는 방법을 설명합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
-ms.topic: article
+ms.date: 04/09/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5626861f05e7c78f43715b3dc14773eb3adfa7b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9f7bff9fa319f8df1abc4622237d1f9b98b9a685
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55832813"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570717"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10용 앱 보호 정책 구성 준비 
 

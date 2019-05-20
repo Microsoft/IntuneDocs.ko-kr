@@ -1,6 +1,6 @@
 ---
 title: 사용자 지정 도메인 이름 구성
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune 구독에 사용자 지정 도메인 이름 추가
 keywords: ''
 author: dougeby
@@ -10,18 +10,20 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181499"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567246"
 ---
 # <a name="configure-a-custom-domain-name"></a>사용자 지정 도메인 이름 구성
 
@@ -42,14 +44,14 @@ Microsoft의 클라우드 기반 서비스에 가입한 경우 해당 서비스�
 
 ## <a name="to-add-and-verify-your-custom-domain"></a>사용자 지정 도메인을 추가 및 확인하려면
 
-1. [Office 365 관리 포털](https://portal.office.com/Admin/Default.aspx)로 이동한 후 관리자 계정에 로그인합니다.
+1. [Microsoft 365 관리 센터](https://admin.microsoft.com/)로 이동하고, 관리자 계정에 로그인합니다.
 
 2. 탐색 창에서 **설치** &gt; **도메인**을 선택합니다.
 
 3. **도메인 추가**를 선택하고 사용자 지정 도메인 이름을 입력합니다. **다음**을 선택합니다.
-   ![설정 > 도메인이 선택되고 새 도메인 이름이 추가된 Office 365 관리 센터 스크린샷](./media/domain-custom-add.png)
+   ![설정 > 도메인이 선택되고 새 도메인 이름이 추가된 Microsoft 365 관리 센터의 스크린샷](./media/domain-custom-add.png)
 4. **도메인 확인** 대화 상자가 열리고 DNS 호스팅 공급자에서 TXT 레코드를 만들기 위한 값이 표시됩니다.
-    - **GoDaddy 사용자**: Office 365 관리 포털은 사용자를 GoDaddy의 로그인 페이지로 리디렉션합니다. 자격 증명을 입력하고 도메인 변경 권한 계약에 동의하면 TXT 레코드가 자동으로 만들어집니다. 또는 [TXT 레코드를 만들](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a) 수도 있습니다.
+    - **GoDaddy 사용자**: Microsoft 365 관리 센터는 사용자를 GoDaddy의 로그인 페이지로 리디렉션합니다. 자격 증명을 입력하고 도메인 변경 권한 계약에 동의하면 TXT 레코드가 자동으로 만들어집니다. 또는 [TXT 레코드를 만들](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a) 수도 있습니다.
     - **Register.com 사용자**: [단계별 지침](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify)에 따라 TXT 레코드를 만듭니다.
 
 사용자 지정 도메인을 추가 및 확인하는 단계는 [Azure Active Directory에서도 수행](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)할 수 있습니다.

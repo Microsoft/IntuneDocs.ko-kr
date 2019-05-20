@@ -1,15 +1,16 @@
 ---
 title: 관리되는 Android 디바이스용 앱 구성 정책 추가
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune에서 앱 구성 정책을 사용하여 사용자가 Android 회사 프로필 앱을 실행할 때 설정을 제공할 수 있습니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/21/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840419"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567428"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>관리되는 Android 디바이스용 앱 구성 정책 추가
 
@@ -44,13 +45,13 @@ Microsoft Intune에서 앱 구성 정책을 사용하여 Android 회사 프로�
 6. **플랫폼**으로 **Android**를 선택합니다.
 7. **연결된 앱**을 선택하여 앱 구성 정책을 정의하려는 앱을 선택합니다. Intune과 동기화하고 승인한 앱을 Android 회사 프로필 앱 목록에서 선택합니다.
 8. **사용 권한**을 선택합니다. 다음을 사용하여 구성을 설정할 수 있습니다.
-    - [구성 디자이너](#Use-the-configuration-designer)
-    - [JSON 편집기](#Enter-the-JSON-editor)
+    - [구성 디자이너](#use-the-configuration-designer)
+    - [JSON 편집기](#enter-the-json-editor)
 9. **확인**을 선택한 다음 **추가**를 선택합니다.
 
 ## <a name="use-the-configuration-designer"></a>구성 디자이너 사용
 
-Android 앱에 대한 구성 디자이너를 사용하여 구성을 지원할 수 있습니다. 구성은 Intune에 등록된 디바이스에 적용됩니다. 디자이너를 사용하면 앱이 공개하는 설정에 대한 특정 구성 값을 구성할 수 있습니다.
+앱이 구성 설정을 지원하도록 디자인된 경우 Android 앱에 구성 디자이너를 사용할 수 있습니다. 구성은 Intune에 등록된 디바이스에 적용됩니다. 디자이너를 사용하면 앱이 공개하는 설정에 대한 특정 구성 값을 구성할 수 있습니다.
 
 **추가**를 선택하여 앱에 대해 지정하려는 구성 설정 목록을 선택합니다.  
 구성의 각 키 및 값의 경우 다음을 설정합니다.

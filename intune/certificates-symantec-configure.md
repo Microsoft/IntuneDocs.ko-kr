@@ -1,27 +1,29 @@
 ---
 title: Microsoft Intune을 사용하여 Symantec PKCS 인증서 발급
-titlesuffix: ''
+titleSuffix: ''
 description: Symantec PKI 관리자 웹 서비스에서 Intune으로 관리되는 디바이스에 대한 PKCS 인증서를 발급하려면 Intune Certificate Connector를 설치 및 구성합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cf5146946fef464d2d74271e0ad801dabbdce13e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da57b14f8196251ee8c77de3ffcd48f5b586a12f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186871"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567714"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Symantec PKI 관리자 웹 서비스에 대한 Intune Certificate Connector 설정
 
@@ -64,7 +66,7 @@ Microsoft CA 및 Symantec CA에 Intune Certificate Connector를 사용하려면 
 
 다음 단계에 따라 Symantec CA에서 RA(Registration Authorization) 인증서를 받습니다. RA 인증서를 받으려면 Symantec CA에 활성 구독이 있어야 합니다.
 
-1. 다음 코드 조각을 **certreq.ini** 파일에 저장하고 필요에 따라 업데이트합니다(예: *CN 형식의 주체 이름*).
+1. 다음 코드 조각을 **certreq.ini** 파일에 저장하고 필요에 따라 업데이트합니다(예: ‘CN 형식의 주체 이름’).
 
    ```
     [Version] 
@@ -170,8 +172,8 @@ Microsoft CA 및 Symantec CA에 Intune Certificate Connector를 사용하려면 
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 창에서 **장치 구성**을 선택합니다.
-4. **장치 구성** 창에서 **인증 기관**을 선택합니다.
+3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
+4. **디바이스 구성** 창에서 **인증 기관**을 선택합니다.
 5. **추가**를 클릭하고 **커넥터 파일 다운로드**를 선택합니다. 설치할 서버에서 액세스할 수 있는 위치에 다운로드를 저장합니다. 
 3. 관리자 권한으로 NDESConnectorSetup.exe를 실행합니다.
 
@@ -195,7 +197,7 @@ Intune Certificate Connector는 기본적으로 `%ProgramFiles%\Microsoft Intune
    value="EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5"/>
    ```
 
-    b. 파일을 저장한 후 닫습니다.
+    b. 파일을 저장하고 닫습니다.
 
 2. services.msc를 엽니다.
 
@@ -300,7 +302,7 @@ Intune 관리 디바이스용으로 배포된 PKCS 인증서는 신뢰할 수 �
 |특성 | Intune 지원 형식 | Symantec Cloud CA 지원 형식 | 결과 |
 | --- | --- | --- | --- |
 | 주체 이름 |Intune은 다음 세 가지 형식으로만 주체 이름을 지원합니다. <br><br> 1. 일반 이름 <br> 2. 일반 이름에는 메일이 포함됨 <br> 3. 메일인 일반 이름 <br><br> 예를 들면 다음과 같습니다. <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | Symantec CA는 추가 특성을 지원합니다.  추가 특성을 선택하려면 Symantec 인증서 프로필 템플릿에서 고정 값으로 해당 특성을 정의해야 합니다.| PKCS 인증서 요청에서 일반 이름 또는 메일을 사용합니다. <br><br> Intune 인증서 프로필과 Symantec 인증서 프로필 템플릿 간의 특성 선택 사항이 일치하지 않으면 Symantec CA에서 인증서가 발급되지 않습니다.|
-| SAN | Intune은 다음 SAN 필드 값만 지원합니다. <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName(인코딩된 값) | Symantec Cloud CA는 이러한 매개 변수를 지원합니다. 추가 특성을 선택하려면 Symantec 인증서 프로필 템플릿에서 고정 값으로 해당 특성을 정의해야 합니다. <br><br> AltNameTypeEmail: 이 유형을 SAN에서 찾을 수 없으면 AltNameTypeUpn의 값을 사용합니다.  AltNameTypeUpn도 SAN에서 찾을 수 없으면 주체 이름의 값을 사용합니다(메일 형식인 경우).  그래도 찾을 수 없으면 Intune Certificate Connector가 인증서를 발급하지 못합니다. <br><br> 예: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn: 이 유형을 SAN에서 찾을 수 없으면 AltNameTypeEmail의 값을 사용합니다. AltNameTypeEmail도 SAN에서 찾을 수 없으면 주체 이름의 값을 사용합니다(메일 형식인 경우).  그래도 찾을 수 없으면 Intune Certificate Connector가 인증서를 발급하지 못합니다.  <br><br> 예: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName: 이 유형을 SAN에서 찾을 수 없으면 Intune Certificate Connector가 인증서를 발급하지 못합니다. <br><br> 예: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **중요 참고:** 이 필드의 값은 Symantec CA에서 인코딩된 형식(16진수 값)으로만 지원됩니다. 따라서 이 필드에 있는 값의 경우 Intune Certificate Connector는 인증서 요청을 제출하기 전에 base 64 인코딩된 값으로 변환합니다. **Intune Certificate Connector는 이 값이 이미 인코딩되었는지 여부를 확인하지 않습니다.** | 없음 |
+| SAN | Intune은 다음 SAN 필드 값만 지원합니다. <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName(인코딩된 값) | Symantec Cloud CA는 이러한 매개 변수를 지원합니다. 추가 특성을 선택하려면 Symantec 인증서 프로필 템플릿에서 고정 값으로 해당 특성을 정의해야 합니다. <br><br> AltNameTypeEmail: 이 형식을 SAN에서 찾을 수 없으면 AltNameTypeUpn의 값을 사용합니다.  AltNameTypeUpn도 SAN에서 찾을 수 없으면 주체 이름의 값을 사용합니다(메일 형식인 경우).  그래도 찾을 수 없으면 Intune Certificate Connector가 인증서를 발급하지 못합니다. <br><br> 예: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn: 이 형식을 SAN에서 찾을 수 없으면 AltNameTypeEmail의 값을 사용합니다. AltNameTypeEmail도 SAN에서 찾을 수 없으면 주체 이름의 값을 사용합니다(메일 형식인 경우).  그래도 찾을 수 없으면 Intune Certificate Connector가 인증서를 발급하지 못합니다.  <br><br> 예: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName: 이 형식을 SAN에서 찾을 수 없으면 Intune Certificate Connector가 인증서를 발급하지 못합니다. <br><br> 예: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **중요 참고**: 이 필드의 값은 Symantec CA에서 인코딩된 형식(16진수 값)으로만 지원됩니다. 따라서 이 필드에 있는 값의 경우 Intune Certificate Connector는 인증서 요청을 제출하기 전에 base 64 인코딩된 값으로 변환합니다. **Intune Certificate Connector는 이 값이 이미 인코딩되었는지 여부를 확인하지 않습니다.** | 없음 |
 
 ## <a name="troubleshooting"></a>문제 해결
 
@@ -308,8 +310,8 @@ Intune Certificate Connector 서비스 로그는 NDES Connector 컴퓨터의 `%P
 
 | 문제/오류 메시지 | 해결 단계 |
 | --- | --- |
-| NDES Connector UI에서 Intune 테넌트 관리자 계정으로 로그인할 수 없음 | 이 문제는 Intune 관리 포털에서 온-프레미스 인증서 커넥터가 활성화되지 않은 경우 발생할 수 있습니다. 이 문제를 해결하려면 다음 단계를 따르십시오. <br><br> SilverLight UI에서: <br> 1. [Intune 관리 포털](https://admin.manage.microsoft.com)에 로그온합니다. <br> 2. [관리]를 클릭합니다. <br> 3. [모바일 장치 관리] > [인증서 커넥터]를 선택합니다. <br> 4. **온-프레미스 인증서 커넥터 구성**을 클릭합니다. <br> 5. **인증서 커넥터 사용** 확인란을 선택합니다. <br> 6. **확인**을 클릭합니다. <br><br>또는 <br><br> Azure Portal UI에서: <br> 1. [Azure Portal](https://portal.azure.com)에 로그인합니다. <br> 2. Microsoft Intune으로 이동합니다. <br> 3. **장치 구성** > **인증 기관**을 선택합니다. <br> 4. **사용**을 클릭합니다. <br><br> SilverLight UI 또는 Azure Portal에서 이전 단계를 완료한 후 NDES Connector UI에서 동일한 Intune 테넌트 관리자 계정으로 로그인해 보세요. |
-| NDES Connector 인증서를 찾을 수 없습니다. <br><br> System.ArgumentNullException: 값은 null일 수 없습니다. | Intune 테넌트 관리자 계정이 NDES Connector UI에 로그인한 적이 없는 경우 Intune Certificate Connector가 이 오류를 표시합니다. <br><br> 이 오류가 지속되면 Intune Service Connector를 다시 시작합니다. <br><br> 1. services.msc를 엽니다. <br> 2. **Intune Connector 서비스**를 선택합니다. <br> 3. 마우스 오른쪽 단추를 클릭하고 **다시 시작**을 선택합니다.|
+| NDES Connector UI에서 Intune 테넌트 관리자 계정으로 로그인할 수 없음 | 이 문제는 Intune 관리 포털에서 온-프레미스 인증서 커넥터가 활성화되지 않은 경우 발생할 수 있습니다. 이 문제를 해결하려면 다음 단계를 따르십시오. <br><br> SilverLight UI에서: <br> 1. [Intune 관리 포털](https://admin.manage.microsoft.com)에 로그온합니다. <br> 2. [관리]를 클릭합니다. <br> 3. [모바일 디바이스 관리] &gt; [인증서 커넥터]를 선택합니다. <br> 4. **온-프레미스 인증서 커넥터 구성**을 클릭합니다. <br> 5. **인증서 커넥터 사용** 확인란을 선택합니다. <br> 6. **확인**을 클릭합니다. <br><br>또는 <br><br> Azure Portal UI에서: <br> 1. [Azure Portal](https://portal.azure.com)에 로그인합니다. <br> 2. Microsoft Intune으로 이동합니다. <br> 3. **디바이스 구성** > **인증 기관**을 선택합니다. <br> 4. **사용**을 클릭합니다. <br><br> SilverLight UI 또는 Azure Portal에서 이전 단계를 완료한 후 NDES Connector UI에서 동일한 Intune 테넌트 관리자 계정으로 로그인해 보세요. |
+| NDES Connector 인증서를 찾을 수 없습니다. <br><br> System.ArgumentNullException: 값은 Null일 수 없습니다. | Intune 테넌트 관리자 계정이 NDES Connector UI에 로그인한 적이 없는 경우 Intune Certificate Connector가 이 오류를 표시합니다. <br><br> 이 오류가 지속되면 Intune Service Connector를 다시 시작합니다. <br><br> 1. services.msc를 엽니다. <br> 2. **Intune Connector 서비스**를 선택합니다. <br> 3. 마우스 오른쪽 단추를 클릭하고 **다시 시작**을 선택합니다.|
 | NDES Connector - IssuePfx-Generic 예외: <br> System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다. | 이 오류는 일시적입니다. Intune Service Connector를 다시 시작합니다. <br><br> 1. services.msc를 엽니다. <br> 2. **Intune Connector 서비스**를 선택합니다. <br> 3. 마우스 오른쪽 단추를 클릭하고 **다시 시작**을 선택합니다. |
 | Symantec 공급자 - Symantec 정책 “작업 제한 시간이 초과됨”을 가져오지 못함 | Intune Certificate Connector가 Symantec CA와 통신하는 동안 작업 시간 초과 오류가 발생했습니다. 이 오류가 계속 발생하면 연결 제한 시간 값을 늘리고 다시 시도합니다. <br><br> 연결 제한 시간을 늘리려면: <br> 1. NDES Connector 컴퓨터로 이동합니다. <br>2. 메모장에서 `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` 파일을 엽니다. <br> 3. 다음 매개 변수의 제한 시간 값을 늘립니다. <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Intune Connector 서비스를 다시 시작합니다. <br><br> 문제가 계속되면 Symantec 고객 지원에 문의하세요. |
 | Symantec 공급자 - 클라이언트 인증서를 가져오지 못함 | Intune Certificate Connector가 로컬 컴퓨터-개인 인증서 저장소에서 리소스 권한 부여 인증서를 검색하지 못했습니다. 이 문제를 해결하려면 로컬 컴퓨터-개인 인증서 저장소에 개인 키와 함께 리소스 권한 부여 인증서를 설치해야 합니다. <br><br> **참고:** Symantec CA에서 리소스 권한 부여 인증서를 받아야 합니다. 자세한 내용은 Symantec 고객 지원에 문의하세요. | 
@@ -321,7 +323,7 @@ Intune Certificate Connector 서비스 로그는 NDES Connector 컴퓨터의 `%P
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Microsoft Intune 장치 프로필은 무엇인가요?](device-profiles.md)의 정보 외에 이 문서에 제공된 정보를 사용하여 조직의 장치 및 인증서를 관리합니다.
+- [Microsoft Intune 디바이스 프로필은 무엇인가요?](device-profiles.md)의 정보 외에 이 문서에 제공된 정보를 사용하여 조직의 디바이스 및 인증서를 관리합니다.
 
 [InstallConnector]:  ./media/certificates-symantec-connector-install.png "Intune Certificate Connector 설치 및 PFX 배포 선택"
 [ConfigureConnector]: ./media/certificates-symantec-configure-connector-configure.png "Intune Certificate Connector 구성"
