@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 04/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d914ea9bffe9485d2e37f8ede4d168f597f9e200
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c40146f37ff6477663dc63468d1081a73ac2544a
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565939"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135151"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 디바이스에서 VPN 설정 구성
 
@@ -42,7 +42,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 - **Cisco(IPSec)**
 - **Citrix VPN**
 - **Citrix SSO**
-- **Zscaler**: Azure AD 계정과 ZPA(Zscaler Private Access)를 통합해야 합니다. 자세한 단계는 [Zscaler 설명서](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)를 참조하세요. 
+- **Zscaler**: 조건부 액세스를 사용하거나 사용자가 Zscaler 로그인 화면을 무시하도록 허용하려면 ZPA(Zscaler Private Access)를 Azure AD 계정과 통합해야 합니다. 자세한 단계는 [Zscaler 설명서](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)를 참조하세요. 
 - **사용자 지정 VPN**
 
 > [!NOTE]
@@ -70,19 +70,28 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 - **VPN 식별자**(사용자 지정 VPN, Zscaler 및 Citrix): 사용 중인 VPN 앱의 식별자이며, VPN 공급자에서 제공합니다.
   - **조직의 사용자 지정 VPN 특성에 대한 키/값 쌍 입력**: VPN 연결을 사용자 지정하는 **키** 및 **값**을 추가하거나 가져옵니다. 이러한 값은 일반적으로 VPN 공급자가 제공합니다.
 
-- **NAC(네트워크 액세스 제어) 사용**(Citrix SSO만 해당): **동의**를 선택하는 경우 디바이스 ID가 VPN 프로필에 포함됩니다. 이 ID는 VPN에 대한 인증으로 네트워크 액세스를 허용하거나 차단하는 데 사용할 수 있습니다.
+- **NAC(네트워크 액세스 제어) 사용**(Citrix SSO, F5 Access): **동의**를 선택하는 경우 디바이스 ID가 VPN 프로필에 포함됩니다. 이 ID는 VPN에 대한 인증으로 네트워크 액세스를 허용하거나 차단하는 데 사용할 수 있습니다.
+
+  **F5 Access를 사용하는 경우** 다음을 확인합니다.
+
+  - F5 BIG-IP 13.1.1.5를 사용하고 있는지 확인합니다. BIG-IP 14는 지원되지 않습니다.
+  - BIG-IP와 NAC용 Intune을 통합하세요. [개요: 엔드포인트 관리 시스템을 사용하여 디바이스 상태 검사를 위한 APM 구성](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 가이드를 참조하세요.
+  - VPN 프로필에서 NAC를 사용하도록 설정합니다.
 
   **게이트웨이에서 Citrix SSO를 사용하는 경우** 다음을 확인하세요.
 
   - Citrix Gateway 12.0.59 이상을 사용 중인지 확인합니다.
   - 사용자가 디바이스에 Citrix SSO 1.1.6 이상을 설치했는지 확인합니다.
-  - [NetScaler에 Microsoft Intune/Enterprise Mobility Suite 통합(LDAP+OTP 시나리오)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf)에 설명된 대로 NAC에 대한 Intune에 Citrix Gateway를 통합합니다.
+  - Citrix 게이트웨이와 NAC용 Intune을 통합하세요. [Microsoft Intune/Enterprise Mobility Suite와 NetScaler 통합(LDAP+OTP 시나리오)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix 배포 가이드를 참조하세요.
   - VPN 프로필에서 NAC를 사용하도록 설정합니다.
 
-  중요한 세부 정보:  
+  **중요한 세부 정보**:  
 
-  - NAC를 사용하도록 설정하는 경우 VPN의 연결이 24시간마다 끊어졌습니다.
-  - 디바이스 ID는 프로필의 일부이지만 Intune에 표시될 수 없습니다. 이 ID는 Microsoft에서 저장되거나 공유되지 않습니다. VPN 파트너에 의해 지원되면 Citrix SSO와 같은 VPN 클라이언트는 ID를 가져오고 Intune을 쿼리하여 디바이스가 등록되었는지 및 VPN 프로필이 규격이거나 비규격인지 확인할 수 있습니다.
+  - NAC를 사용하도록 설정하는 경우 VPN의 연결이 24시간마다 끊어졌습니다. VPN을 즉시 다시 연결할 수 있습니다.
+  - 디바이스 ID는 프로필의 일부이지만 Intune에는 표시되지 않습니다. 이 ID는 Microsoft에서 저장되거나 공유되지 않습니다.
+
+  디바이스 ID가 VPN 파트너에 의해 지원되면 Citrix SSO와 같은 VPN 클라이언트가 ID를 가져올 수 있습니다. 그런 다음, Intune을 쿼리하여 디바이스가 등록되었는지 확인하고 VPN 프로필이 정책을 준수하는지 여부를 확인합니다.
+
   - 이 설정을 제거하려면 프로필을 다시 만들고 **동의함**을 선택하지 않습니다. 그런 다음, 프로필을 다시 할당합니다.
 
 ## <a name="automatic-vpn-settings"></a>자동 VPN 설정
@@ -92,7 +101,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
   - Pulse Secure 또는 사용자 지정 VPN과 함께 iOS **앱당 VPN** 프로필을 사용하면 앱 계층 터널링(app-proxy) 또는 패킷 수준 터널링(packet-tunnel)을 선택합니다. **ProviderType** 값은 앱 계층 터널링의 경우 **app-proxy**로 설정하고, 패킷 계층 터널링의 경우 **packet-tunnel**로 설정합니다. 사용할 값을 모르는 경우 VPN 공급자의 설명서를 확인하세요.
   - **이 VPN을 트리거하는 Safari URL**: 하나 이상의 웹 사이트 URL을 추가합니다. 디바이스에서 Safari 브라우저를 사용하여 이러한 URL을 방문할 때 VPN 연결이 자동으로 설정됩니다.
 
-- **주문형 VPN**: VPN 연결이 시작되는 시기를 제어하는 조건부 규칙을 구성합니다. 예를 들어 디바이스가 회사 Wi-Fi 네트워크에 연결되지 않은 경우에만 VPN 연결이 사용되는 조건을 만듭니다. 또는 디바이스에서 입력한 DNS 검색 도메인에 액세스할 수 없는 경우 VPN 연결이 시작되지 않는 조건을 만듭니다.
+- **주문형 VPN**: VPN 연결이 시작되는 시기를 제어하는 조건부 규칙을 구성합니다. 예를 들어 디바이스가 회사 Wi-Fi 네트워크에 연결되지 않은 경우에만 VPN 연결이 사용되는 조건을 만듭니다. 또는 조건을 만듭니다. 예를 들어 사용자가 입력한 DNS 검색 도메인에 디바이스가 액세스할 수 없는 경우 VPN 연결이 시작되지 않습니다.
 
   - **SSID 또는 DNS 검색 도메인**: 이 조건에서 무선 네트워크 **SSID** 또는 **DNS 검색 도메인**을 사용할지를 선택합니다. 하나 이상의 SSID 또는 검색 도메인을 구성하려면 **추가**를 선택합니다.
   - **URL 문자열 프로브:**: 선택 사항입니다. 규칙이 테스트로 사용하는 URL을 입력합니다. 이 프로필을 포함한 디바이스에서 리디렉션 없이 이 URL에 액세스하는 경우 VPN 연결이 시작됩니다. 또한 디바이스가 대상 URL에 연결됩니다. 사용자에게 URL 문자열 프로브 사이트가 표시되지 않습니다. URL 문자열 프로브 예제는 VPN을 연결하기 전에 디바이스 준수를 확인하는 감사 웹 서버의 주소입니다. 또는 VPN을 통해 디바이스를 대상 URL에 연결하기 전에 URL에서 VPN이 사이트에 연결할 수 있는지 테스트할 수도 있습니다.

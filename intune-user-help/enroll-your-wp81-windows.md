@@ -19,20 +19,20 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57335108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61497569"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune에서 Windows Phone 8.1 디바이스 등록  
 
-회사 또는 학교 메일, 파일 및 기타 리소스에 액세스 하 여 장치를 등록 합니다. 디바이스를 등록하면 조직에서 회사 데이터 보안을 유지할 수 있습니다. 등록에 대해 자세히 알아보려면 [Intune에서 회사 포털 앱을 설치하고 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) 및 [회사 지원팀이 디바이스에서 확인할 수 있는 항목과 할 수 없는 항목](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)을 참조하세요.  
+디바이스를 등록하여 회사 또는 학교 이메일, 파일 및 기타 리소스에 액세스합니다. 디바이스를 등록하면 조직에서 회사 데이터 보안을 유지할 수 있습니다. 등록에 대해 자세히 알아보려면 [Intune에서 회사 포털 앱을 설치하고 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) 및 [회사 지원팀이 디바이스에서 확인할 수 있는 항목과 할 수 없는 항목](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)을 참조하세요.  
 
-Intune에서 장치를 등록 하려면 사용자 권한이 나 현재 계정 상태와 일치 하는 지침을 따릅니다.
+Intune에 디바이스를 등록하려면 사용 권한 또는 현재 계정 상태와 일치하는 지침 세트를 따릅니다.
 
 ## <a name="enroll-through-company-portal"></a>회사 포털을 통해 등록  
-Microsoft Store 회사 포털 앱을 설치할 수 있는 경우 다음이 단계를 수행 합니다. 
+Microsoft Store에서 회사 포털 앱을 설치할 수 있는 경우 다음 단계를 수행합니다. 
 
 1.  **시작** > **저장**을 탭합니다.  
 
@@ -78,7 +78,7 @@ Microsoft Store 회사 포털 앱을 설치할 수 있는 경우 다음이 단�
     ![계정이 추가된 화면](./media/WP81-enroll-4-account-added.png)  
 
 ## <a name="enroll-through-settings-app"></a>설정 앱을 통해 등록  
-Microsoft 계정이 없는 경우 또는 Windows Phone 장치에서 Microsoft Store 액세스할 수 없으면 다음이 단계를 수행 합니다.
+Windows Phone 디바이스에서 Microsoft Store에 액세스할 수 없거나 Microsoft 계정이 없는 경우 다음 단계를 수행합니다.
 
 1.  **설정** &gt; **회사**를 탭합니다.  
 
