@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
+ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505780"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836466"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정
 
@@ -327,3 +327,7 @@ ms.locfileid: "61505780"
 [프로필을 할당](device-profile-assign.md)하고, 해당 [상태를 모니터링](device-profile-monitor.md)합니다.
 
 [Android](device-restrictions-android.md#kiosk) 및 [Windows 10](kiosk-settings.md) 디바이스에 대한 전용 디바이스 키오스크 프로필을 만들 수도 있습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[Microsoft Intune에서 Android 기업 디바이스 구성 및 문제 해결](https://support.microsoft.com/help/4476974)

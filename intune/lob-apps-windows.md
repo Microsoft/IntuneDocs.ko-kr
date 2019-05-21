@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
-ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
+ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59570769"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764731"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Windows 기간 업무 앱 추가
 
@@ -63,7 +63,7 @@ LOB(기간 업무) 앱은 앱 설치 파일로 추가합니다. 이러한 종류
     - **회사 포털에서 이 항목을 추천 앱으로 표시**: 사용자가 앱을 찾아볼 때 회사 포털의 기본 페이지에 앱을 쉽게 확인할 수 있도록 표시합니다.
     - **정보 URL**: 필요에 따라 앱에 대한 정보를 포함하는 웹 사이트의 URL을 입력합니다. URL은 회사 포털에 표시됩니다.
     - **개인정보취급방침 URL**: 필요에 따라 앱에 대한 개인정보 관련 정보를 포함하는 웹 사이트의 URL을 입력합니다. URL은 회사 포털에 표시됩니다.
-    - **명령줄 인수**: 선택적으로, 실행 시 .msi 파일에 적용할 명령줄 인수를 입력합니다. 예를 들어 **/q** 등을 입력합니다.
+    - **명령줄 인수**: 선택적으로, 실행 시 .msi 파일에 적용할 명령줄 인수를 입력합니다.  예를 들어 **/q** 등을 입력합니다. **/i** 또는 **/x**와 같은 msiexec 명령이나 인수는 자동으로 사용되므로 포함하지 않습니다. 자세한 내용은 [명령줄 옵션](https://docs.microsoft.com/windows/desktop/Msi/command-line-options)을 참조하세요. 
     - **개발자**: 선택적으로, 앱 개발자의 이름을 입력합니다.
     - **소유자**: 선택적으로, 이 앱의 소유자 이름을 입력합니다. 예를 들어 **HR 부서** 등을 입력합니다.
     - **메모**: 이 앱과 연결할 모든 메모를 입력합니다.
