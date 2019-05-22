@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 024c4eb37d1b9991db6d1ca0b5c528e9dd333422
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798746"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764800"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>빠른 시작: 클라이언트 앱 추가 및 할당
 
@@ -51,7 +51,7 @@ Intune이 앱의 측면을 관리할 수 있도록 앱을 포함할 수 있습�
 4. **확인**을 클릭하여 기본 선택 앱을 적용합니다.
 5. **앱 제품군 정보**를 선택합니다.
 6. **제품군 이름**을 **Microsoft Office 365 앱 도구 모음 이름**으로 입력합니다.
-7. **제품군 설명**을 **Microsoft Office 365 앱 도구 모음 설명**으로 입력합니다.
+7. **Microsoft Office 365 앱 제품군**을 **제품군 설명**으로 입력합니다.
 8. **회사 포털에 이 항목을 추천 앱으로 표시** 옆에 있는 **예**를 클릭합니다.
 9. **확인**을 클릭합니다.
 

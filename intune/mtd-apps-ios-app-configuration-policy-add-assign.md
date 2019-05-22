@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e9c9c538f9311da4c383b5de24048eb836ab0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 108b9fb0eb227e9f046919efc6ef4d04b0903c40
+ms.sourcegitcommit: d259c0986d356135e626a30468971e32f8103f4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513446"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65442961"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune을 사용하여 MTD(Mobile Threat Defense) 앱 추가 및 할당
 
@@ -59,6 +59,7 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
   - [더 향상된 모바일](#configure-better-mobile-apps)
+  - [Sophos Mobile](#configure-sophos-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work 앱 구성
 
@@ -142,7 +143,18 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 
     - [Microsoft Intune에 iOS 스토어 앱 추가](store-apps-ios.md) 지침을 참조하세요. **앱 정보 구성** 섹션의 **12단계**에서 이 [ActiveShield 앱 스토어 URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4)을 사용합니다.
 
+
+### <a name="configure-sophos-apps"></a>Sophos 앱 구성  
+- **OWA(Outlook Web Access)**
+
+    - [Microsoft Intune에 Android 스토어 앱 추가](store-apps-android.md) 지침을 참조하세요. **7단계**에서 이 [Sophos App Store URL](https://play.google.com/store/apps/details?id=com.sophos.smsec)을 사용합니다.
+
+ - **iOS**
+
+    - [Microsoft Intune에 iOS 스토어 앱 추가](store-apps-ios.md) 지침을 참조하세요. **앱 정보 구성** 섹션의 **12단계**에서 이 [ActiveShield 앱 스토어 URL](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8)을 사용합니다.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>iOS 앱 구성 정책으로 MTD 앱 구성
+
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 앱 구성 정책
 
@@ -163,7 +175,7 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 
     - **8단계**에서 **XML 데이터 입력** 옵션을 사용하고 ***.plist** 파일 콘텐츠를 복사하여 구성 정책 본문에 붙여넣습니다.
 
-> [!NOTE]
+> [!NOTE]  
 > 파일을 검색할 수 없는 경우 [Symantec Endpoint Protection Mobile Enterprise 지원](https://support.symantec.com/en_US/contact-support.html)에 문의하세요.
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Check Point SandBlast Mobile 앱 구성 정책
@@ -192,6 +204,9 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 <string>{{udidlast4digits}}</string>
 </dict>
 ```
+### <a name="pradeo-app-configuration-policy"></a>Pradeo 앱 구성 정책
+Pradeo는 iOS에서 애플리케이션 구성을 지원하지 않습니다.  대신, 구성된 앱을 가져오려면 Pradeo와 함께 원하는 설정으로 미리 구성된 사용자 지정 IPA 또는 APK 파일을 구현합니다.
+
 
 ### <a name="better-mobile-app-configuration-policy"></a>Better Mobile 앱 구성 정책
 
@@ -208,6 +223,9 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 <string>{{userprincipalname}}</string>
 </dict>
 ```
+
+### <a name="sophos-mobile-app-configuration-policy"></a>Sophos Mobile 앱 구성 정책
+[iOS 앱 구성 정책 사용](app-configuration-policies-use-ios.md) 문서에 설명된 대로 iOS 앱 구성 정책을 만듭니다.
 
 ## <a name="assign-apps-to-groups"></a>그룹에 앱 할당
 

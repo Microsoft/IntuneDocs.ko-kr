@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/30/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e364ad88591b8ecc945702659255d9378723624f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6296328a8f994e9f22a6ecd863d09396c0676094
+ms.sourcegitcommit: b1ad73f5c9fd0ad8026c572aef8d15e258951c8f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513037"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64880433"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune과 Mobile Threat Defense의 통합이란?
 Intune은 규정 준수 정책 및 조건부 액세스 규칙에 대한 정보 소스인 Mobile Threat Defense 공급업체의 데이터를 통합할 수 있습니다. 이 정보를 사용하여 손상된 모바일 디바이스의 액세스를 차단함으로써 Exchange 및 SharePoint 같은 회사 리소스를 보호할 수 있습니다.  
@@ -80,5 +80,5 @@ iOS 디바이스용 앱 동기화를 사용하면 회사 및 개인 소유 iOS �
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [더 향상된 모바일](better-mobile-threat-defense-connector.md)
-- Sophos(자세한 내용은 곧 공개할 예정)
+- [Sophos Mobile](sophos-mtd-connector.md)
 - Wandera(자세한 내용은 곧 공개할 예정)

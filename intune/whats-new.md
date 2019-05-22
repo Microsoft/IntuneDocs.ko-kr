@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426233"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135167"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -46,6 +46,25 @@ ms.locfileid: "62426233"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-6-2019"></a>2019년 5월 6일 주 
+
+### <a name="device-configuration"></a>디바이스 구성
+
+#### <a name="network-access-control-nac-support-for-f5-access-for-ios-devices----4500808---"></a>iOS 디바이스용 F5 Access에 대한 NAC(네트워크 액세스 제어) 지원 <!-- 4500808 -->
+
+F5는 Intune의 iOS에서 F5 Access를 위한 NAC 기능을 허용하는 BIG-IP 13 업데이트를 릴리스했습니다. 이 기능을 사용하려면
+
+- BIG-IP를 13.1.1.5 새로 고침으로 업데이트합니다. BIG-IP 14는 지원되지 않습니다.
+- BIG-IP와 NAC용 Intune을 통합하세요. [개요: 개요: 엔드포인트 관리 시스템을 사용하여 디바이스 상태 검사를 위한 APM 구성](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89)의 단계.
+- Intune의 VPN 프로필에서 **NAC(네트워크 액세스 제어) 사용** 설정을 확인합니다.
+
+사용 가능한 설정을 보려면 [iOS 디바이스에서 VPN 설정 구성](vpn-settings-ios.md)으로 이동합니다.
+
+적용 대상: iOS
+
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune----doc-vso-1521237----"></a>업데이트된 Microsoft Intune용 PFX 인증서 커넥터 <!-- doc-vso 1521237  -->  
+폴링 간격을 5분에서 30초로 낮추는 [Microsoft Intune용 PFX 인증서 커넥터](certficates-pfx-configure.md#whats-new-for-connectors)에 대한 업데이트를 릴리스했습니다.
 
 ## <a name="week-of-april-22-2019"></a>2019년 4월 22일 주
 
@@ -75,7 +94,7 @@ Compliance Manager는 Microsoft에서 관리하는 컨트롤과 조직에서 관
 Android 디바이스의 Intune APP(앱 보호 정책)는 이제 FIPS 140-2 준수 OpenSSL 암호화 라이브러리를 사용합니다. 자세한 내용은 [Microsoft Intune의 Android 앱 보호 정책 설정](app-protection-policy-settings-android.md)의 [암호화](app-protection-policy-settings-android.md#encryption) 섹션을 참조하세요.
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>Win32 앱 종속성 사용 <!-- 2617348  -->
-관리자는 Win32 앱을 설치하기 전에 다른 앱이 종속성으로 설치되도록 요구할 수 있습니다. 특히 디바이스는 Win32 앱을 설치하기 전에 종속 앱을 설치해야 합니다. Intune에서 **클라이언트 앱** > **앱** > **추가**를 차례로 선택하여 **앱 추가** 블레이드를 표시합니다. **앱 유형**으로 **Windows 앱(Win32)** 을 선택합니다. 앱이 추가되면 **종속성**을 선택하여 Win32 앱을 설치하기 전에 설치해야 하는 종속 앱을 추가할 수 있습니다. 자세한 내용은 [Intune 독립 실행형 - Win32 앱 관리](apps-win32-app-management.md)를 참조하세요. 이 기능은 Intune 관리 에이전트를 1904 버전(1.18.120.0보다 큼)으로 업그레이드한 후에만 사용할 수 있으며, 서비스를 1904로 업그레이드한 후 1~2주가 더 걸릴 수 있습니다.
+관리자는 Win32 앱을 설치하기 전에 다른 앱이 종속성으로 설치되도록 요구할 수 있습니다. 특히 디바이스는 Win32 앱을 설치하기 전에 종속 앱을 설치해야 합니다. Intune에서 **클라이언트 앱** > **앱** > **추가**를 차례로 선택하여 **앱 추가** 블레이드를 표시합니다. **앱 유형**으로 **Windows 앱(Win32)** 을 선택합니다. 앱이 추가되면 **종속성**을 선택하여 Win32 앱을 설치하기 전에 설치해야 하는 종속 앱을 추가할 수 있습니다. 자세한 내용은 [Intune 독립 실행형 - Win32 앱 관리](apps-win32-app-management.md)를 참조하세요. 
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>비즈니스용 Microsoft Store 앱에 대한 앱 버전 설치 정보 <!-- 3537391   -->
 앱 설치 보고서에는 비즈니스용 Microsoft Store 앱에 대한 앱 버전 정보가 포함되어 있습니다. Intune에서 **클라이언트 앱** > **앱**을 차례로 선택합니다. **비즈니스용 Microsoft Store 앱**을 선택한 다음, **모니터** 섹션 아래에서 **디바이스 설치 상태**를 선택합니다.
@@ -91,6 +110,9 @@ Intune에 등록된 Azure AD 조인 디바이스에 설치할 Win32 앱을 할�
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>관리형 Google Play 앱에서 Android Enterprise 작업 프로필 디바이스에 대한 추가 보고 <!-- 4105925  -->
 Android Enterprise 작업 프로필 디바이스에 배포된 관리형 Google Play 앱의 경우 디바이스에 설치된 앱의 특정 버전 번호를 볼 수 있습니다. 이는 필수 앱에만 적용됩니다. 사용할 수 있는 앱에 대한 동일한 기능은 향후 릴리스에서 활성화됩니다. 
+
+#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>iOS 타사 키보드 <!-- 4111843 idready eeready -->
+**타사 키보드** 설정에 대한 Intune APP(앱 보호 정책) 지원은 iOS 플랫폼 변경으로 인해 종료되었습니다. Intune Admin Console에서 이 설정을 구성할 수 없으며 Intune App SDK의 클라이언트에 적용할 수 없습니다.
 
 ### <a name="device-configuration"></a>디바이스 구성
 
@@ -207,7 +229,7 @@ V1.0은 1808에 처음 도입되었을 때 베타 API와 상당한 차이가 있
 ### <a name="device-configuration"></a>디바이스 구성
 
 #### <a name="updated-certificate-connectors-----icm-113304612---"></a>업데이트된 인증서 커넥터  <!-- ICM 113304612 -->
-[Intune 인증서 커넥터와 PFX 인증서 커넥터](certficates-pfx-configure.md#whats-new-for-connectors) 모두에 대한 업데이트가 릴리스되었습니다. 새 릴리스에서는 몇 가지 알려진 문제를 해결합니다.  
+[Intune 인증서 커넥터와 Microsoft Intune용 PFX 인증서 커넥터](certficates-pfx-configure.md#whats-new-for-connectors) 모두에 대한 업데이트가 릴리스되었습니다. 새 릴리스에서는 몇 가지 알려진 문제를 해결합니다.  
 
 ### <a name="app-management"></a>앱 관리
 
@@ -215,10 +237,10 @@ V1.0은 1808에 처음 도입되었을 때 베타 API와 상당한 차이가 있
 iOS 디바이스용 회사 포털 앱의 홈페이지가 다시 디자인되었습니다. 이 변경을 통해 홈페이지에서 iOS UI 패턴을 더 잘 따르고 앱과 eBook에 대한 향상된 검색 기능도 제공합니다.
 
 #### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>iOS 12 디바이스 사용자에 대한 회사 포털 등록 변경 <!--3448635 -->  
-iOS용 회사 포털 등록 화면 및 단계가 Apple iOS 12.2에서 릴리스된 MDM 등록 변경에 맞게 업데이트되었습니다. 업데이트된 워크플로에서 사용자에게 다음 작업을 요청하는 메시지가 표시됩니다.  
+iOS용 회사 포털 등록 화면 및 단계가 Apple iOS 12.2에서 릴리스된 MDM 등록 변경 내용에 맞게 업데이트되었습니다. 업데이트된 워크플로는 사용자에게 다음 작업을 요청합니다.  
 
-* Safari에서 회사 포털 웹 사이트를 열고 회사 포털 앱으로 돌아가기 전에 관리 프로필을 다운로드하도록 허용합니다.  
-* 설정 앱을 열어 관리 프로필을 해당 디바이스에 설치합니다.
+* Safari가 회사 포털 앱으로 돌아가기 전에 회사 포털 웹 사이트를 열어서 관리 프로필을 다운로드하도록 허용합니다.  
+* 설정 앱을 열고 관리 프로필을 해당 디바이스에 설치합니다.
 * 회사 포털 앱으로 돌아가서 등록을 완료합니다.  
 
 업데이트된 등록 단계 및 화면은 [Intune에서 iOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)을 참조하세요.  
@@ -373,16 +395,16 @@ Intune에서 전송 최적화 구성 지원이 확장되었습니다. 이제 확
 Intune에서 **클라이언트 앱** > **앱** > "애플리케이션 이름" > **디바이스 설치 상태**를 선택합니다. 새 오류 메시지는 **상태 세부 정보** 열에서 사용할 수 있습니다.
 
 #### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780----"></a>Windows 10용 회사 포털 앱의 새 앱 범주 화면<!-- 3834780  -->
-Windows 10용 회사 포털의 앱 찾아보기 및 선택 환경을 향상시키기 위해 **앱 범주**라는 새 화면이 추가되었습니다. 이제 앱이 **추천**, **교육용** 및 **생산성**과 같은 범주에 따라 정렬되어 사용자에게 표시됩니다. 이 변경은 회사 포털 버전 10.3.3451.0 이상에서 나타납니다. 새 화면을 보려면 [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui)을 참조하세요. 회사 포털의 앱에 대한 자세한 내용은 [디바이스에 앱 설치 및 공유](/intune-user-help/install-apps-cpapp-windows)를 참조하세요.  
+Windows 10용 회사 포털의 앱 찾아보기 및 선택 환경을 개선하기 위해 **앱 범주**라는 새 화면이 추가되었습니다. 이제 앱이 **추천**, **교육용**, **생산성** 등의 범주에 따라 정렬되어 사용자에게 표시됩니다. 이 변경은 회사 포털 버전 10.3.3451.0 이상에서 나타납니다. 새 화면을 보려면 [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui)을 참조하세요. 회사 포털의 앱에 대한 자세한 내용은 [디바이스에 앱 설치 및 공유](/intune-user-help/install-apps-cpapp-windows)를 참조하세요.  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Power BI 준수 앱 <!-- 1455231 doc-work-item -->
-[Intune 준수(데이터 웨어하우스)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 앱을 사용하여 Power BI Online에서 Intune 데이터 웨어하우스에 액세스합니다. 이제 이 Power BI 앱을 사용하면 설정할 필요 없이 웹 브라우저를 떠나지 않고도 미리 만들어진 보고서에 액세스하고 공유할 수 있습니다. 자세한 내용은 [변경 로그 - Power BI 준수 앱](reports-changelog.md#power-bi-compliance-app)을 참조하세요.
+[Intune 준수(데이터 웨어하우스)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) 앱을 사용하여 Power BI Online에서 Intune 데이터 웨어하우스에 액세스합니다. 이제 이 Power BI 앱을 사용하면 설정할 필요 없이 웹 브라우저를 떠나지 않고도 미리 만들어진 보고서에 액세스하고 공유할 수 있습니다. 자세한 내용은 [변경 로그 - Power BI 준수 앱](reports-changelog.md#power-bi-compliance-app)을 참조하세요.
 
 
 ### <a name="device-configuration"></a>디바이스 구성
 
 #### <a name="powershell-scripts-can-run-in-a-64-bit-host-on-64-bit-devices----1862675-----"></a>PowerShell 스크립트가 64비트 디바이스의 64비트 호스트에서 실행될 수 있음 <!-- 1862675   -->
-디바이스 구성 프로필에 PowerShell 스크립트를 추가한 경우 해당 스크립트는 항상 32비트, 심지어 64비트 운영 체제에서도 실행됩니다. 이 업데이트를 사용하여 관리자는 64비트 디바이스의 64비트 PowerShell 호스트에서 스크립트를 실행할 수 있습니다(**디바이스 구성** > **PowerShell 스크립트** >  **추가** > **구성** > **64비트 PowerShell 호스트에서에서 스크립트 실행**).
+디바이스 구성 프로필에 PowerShell 스크립트를 추가한 경우 해당 스크립트는 항상 32비트, 심지어 64비트 운영 체제에서도 실행됩니다. 이 업데이트를 사용하여 관리자는 64비트 디바이스의 64비트 PowerShell 호스트에서 스크립트를 실행할 수 있습니다(**디바이스 구성** > **PowerShell 스크립트** > **추가** > **구성** > **64비트 PowerShell 호스트에서에서 스크립트 실행**).
 
 PowerShell을 사용하는 방법에 대한 자세한 내용은 [Intune의 PowerShell 스크립트](intune-management-extension.md)를 참조하세요.
 

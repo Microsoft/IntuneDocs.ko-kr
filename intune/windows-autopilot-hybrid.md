@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
+ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515573"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65619438"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포(미리 보기)
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포
 Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Active Directory) 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 이 문서의 단계를 수행합니다.
 
 ## <a name="prerequisites"></a>전제 조건
@@ -35,7 +35,7 @@ Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Acti
 등록할 디바이스도 다음과 같아야 합니다.
 - [2018년 10월 업데이트](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)가 있는 Windows 10을 실행합니다.
 - 인터넷에 대한 액세스 권한이 있어야 합니다.
-- Active Directory에 대한 액세스 권한이 있어야 합니다(VPN 연결은 지원되지 않음).
+- Active Directory에 대한 액세스 권한이 있어야 합니다(현재 VPN 연결은 지원되지 않음).
 - OOBE(첫 실행 경험)를 거칩니다.
 - 조인하려는 도메인의 도메인 컨트롤러를 ping할 수 있습니다.
 
@@ -211,7 +211,14 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
 1. **설정**을 선택하고 **컴퓨터 이름 접두사**, **도메인 이름** 및 [DN 형식](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)의 **조직 구성 단위**(선택 사항)를 제공합니다. 
 1. **확인** > **만들기**를 선택합니다.  
     프로필이 만들어지고 목록에 표시됩니다.
-1. 프로필을 할당하려면 [디바이스 프로필 할당](device-profile-assign.md#assign-a-device-profile) 아래의 단계를 수행합니다. 
+1. 프로필을 할당하려면 [디바이스 프로필 할당](device-profile-assign.md#assign-a-device-profile)의 단계에 따라 프로필을 [디바이스 그룹](windows-autopilot-hybrid.md#create-a-device-group) 단계에서 사용한 것과 같은 그룹에 할당합니다.
+   - 여러 도메인 가입 프로필 배포
+   
+     a. 특정 Autopilot 배포 프로필을 통해 모든 Autopilot 디바이스를 포함하는 동적 그룹을 만들고 (device.enrollmentProfileName -eq "Autopilot 프로필 이름")을 입력합니다. 
+     
+     b. 'Autopilot 프로필 이름'은 [Autopilot 배포 프로필 만들기 및 할당](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile)에서 만든 프로필의 표시 이름으로 바꿉니다. 
+     
+     c. 여러 Autopilot 배포 프로필을 만들고 해당 디바이스를 동적 그룹에서 지정한 프로필에 할당합니다.
 
 > [!NOTE]
 > 하이브리드 Azure AD 조인을 위한 Windows Autopilot의 명명 기능은 %SERIAL%과 같은 변수를 지원하지 않으며 컴퓨터 이름에 대한 접두사만 지원합니다.

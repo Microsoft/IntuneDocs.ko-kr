@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512936"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527212"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker 및 디바이스 암호화 모니터링  
 Azure AD(Azure Active Directory)에서 살펴본 것처럼 Intune은 Windows 10 디바이스의 암호화 상태를 식별하는 중앙 위치를 제공하며, 디바이스에서 BitLocker의 중요 정보에 액세스할 수 있습니다.  

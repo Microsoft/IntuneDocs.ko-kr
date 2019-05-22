@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d089d0e9724a1ce150fa7e8697c80734fb0d7e9c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 68f5fad9d05787b6e79792d594480547ce10cf81
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568429"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764905"
 ---
 # <a name="what-is-device-enrollment"></a>디바이스 등록이란?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -67,11 +67,19 @@ Intune을 사용하여 직원의 디바이스 및 앱을 관리하고 회사 데
 
 ## <a name="android-enrollment-methods"></a>Android 등록 방법
 
-| **방법** |  **초기화 필요** |    **사용자 선호도**   |   **잠김** | **세부 정보**|
+| **개인** | **등록 방법** | **초기화 필요** | **사용자 선호도** | **잠김** | **세부 정보**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | 아니요|   예 |   아니요 | [추가 정보](./android-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| 아니요 |아니요 |아니요  |[추가 정보](./device-enrollment-manager-enroll.md)|
-|**Android 회사 프로필**| 아니요 | 예 | 아니요| [추가 정보](./android-work-profile-enroll.md) |
+|**Android 디바이스 관리자**|**회사 포털을 통해 사용자 시작** | 아니요 | 예 | 아니요 | [추가 정보](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android Enterprise 회사 프로필**|**회사 포털을 통해 사용자 시작**| 아니요 | 예 | 아니요 | [추가 정보](./android-work-profile-enroll.md)|
+
+
+| **회사** | **등록 방법** | **초기화 필요** | **사용자 선호도** | **잠김** | **세부 정보**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Android 디바이스 관리자**|**회사 포털을 통해 [DEM](#device-enrollment-manager) 시작**| 아니요 | 아니요 | 아니요 |[추가 정보](./device-enrollment-manager-enroll.md)|
+|**Android 디바이스 관리자**|**(미리 선언된 IMEI 또는 SN) 회사 포털을 통해 사용자 시작**| 아니요 | 예 | 아니요 | [추가 정보](./corporate-identifiers-add.md)|
+|**Zebra Mobility 확장을 사용하는 Android 디바이스 관리자**|**회사 포털을 통해 사용자 또는 [DEM](#device-enrollment-manager) 시작**| 아니요 | 사용자 시작이면 예, [DEM](#device-enrollment-manager) 시작이면 아니요 | 아니요 | [추가 정보](./android-zebra-mx-overview.md)|
+|**Android Enterprise 전용**|**NFC, 토큰, QR 코드, Zero Touch**| 예 | 아니요 | 정책을 통해 구성 가능 | [추가 정보](./android-kiosk-enroll.md)|
+|**Android Enterprise 완전 관리형(미리 보기)**|**NFC, 토큰, QR 코드, Zero Touch**| 예 | 예 | 정책을 통해 구성 가능 | [추가 정보](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device
