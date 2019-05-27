@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: 72121aa48e7b5d46e25aac28ad386832b6b4ea72
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527212"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733096"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker 및 디바이스 암호화 모니터링  
 Azure AD(Azure Active Directory)에서 살펴본 것처럼 Intune은 Windows 10 디바이스의 암호화 상태를 식별하는 중앙 위치를 제공하며, 디바이스에서 BitLocker의 중요 정보에 액세스할 수 있습니다.  
 
-- [암호화 보고서(공개 미리 보기)](#encryption-report)는 디바이스의 암호화 상태 및 준비 상황에 대한 세부 정보를 제공합니다. 보고서 세부 정보를 통해 보호하려는 디바이스의 암호화를 방해하는 문제를 식별할 수 있습니다.  
-- Intune 포털 내에서 디바이스의 키 ID나 복구 키 같은 [BitLocker 세부 정보(공개 미리 보기)를 볼 수 있습니다](#bitlocker-recovery-keys).  
+- [암호화 보고서](#encryption-report)는 디바이스의 암호화 상태 및 준비 상황에 대한 세부 정보를 제공합니다. 보고서 세부 정보를 통해 보호하려는 디바이스의 암호화를 방해하는 문제를 식별할 수 있습니다.  
+- Intune 포털 내에서 디바이스의 키 ID나 복구 키 같은 [BitLocker 세부 정보를 볼 수 있습니다](#bitlocker-recovery-keys).  
 
 ## <a name="encryption-report"></a>암호화 보고서
-암호화 보고서(공개 미리 보기)를 사용하여 Windows 10 디바이스의 암호화 상태에 대한 세부 정보를 볼 수 있습니다.  
+암호화 보고서를 사용하여 Windows 10 디바이스의 암호화 상태에 대한 세부 정보를 볼 수 있습니다.  
 
-보고서를 찾으려면 [Intune](https://aka.ms/intuneportal)에 로그인하여 **디바이스 구성**으로 이동한 다음, *모니터* 아래에서 **암호화 보고서(미리 보기)** 를 선택합니다.  
+보고서를 찾으려면 [Intune](https://aka.ms/intuneportal)에 로그인하여 **디바이스 구성**으로 이동한 다음, *모니터* 아래에서 **암호화 보고서**를 선택합니다.  
 
 ### <a name="prerequisites"></a>필수 조건:
 암호화 보고서에 표시하려면 디바이스가 Windows 1607 이상 버전을 실행해야 합니다.  
@@ -90,14 +90,14 @@ Azure AD(Azure Active Directory)에서 살펴본 것처럼 Intune은 Windows 10 
    - 고정 드라이브의 암호화 방법이 BitLocker 정책과 일치하지 않습니다.  
    - 드라이브를 암호화하려면 BitLocker 정책에 따라 사용자가 관리자로 로그인해야 하거나, 디바이스가 Azure AD에 조인된 경우 AllowStandardUserEncryption 정책을 1로 설정해야 합니다.  
    - WinRE(Windows Recovery Environment)가 구성되지 않았습니다.  
-   - TPM이 없어서 레지스트리에서 사용할 수 없거나 OS가가 이동식 드라이브에 있어서 BitLocker에 TPM을 사용할 수 없습니다.  
+   - TPM이 없어서 레지스트리에서 사용할 수 없거나 OS가 이동식 드라이브에 있어서 BitLocker에 TPM을 사용할 수 없습니다.  
    - TPM을 BitLocker에 사용할 준비가 되지 않았습니다.  
    - 복구 키 백업에 필요한 네트워크를 사용할 수 없습니다.다.  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 복구 키
-현재 공개 미리 보기인 Intune은 Intune 포털 내에서 Windows 10 디바이스의 BitLocker 키 ID와 복구 키를 볼 수 있도록 BitLocker의 Azure AD 블레이드에 대한 액세스를 제공합니다.  디바이스에 액세스하려면 디바이스의 키를 Azure AD에 위탁해야 합니다. 
+Intune은 Intune 포털 내에서 Windows 10 디바이스의 BitLocker 키 ID와 복구 키를 볼 수 있도록 BitLocker의 Azure AD 블레이드에 대한 액세스를 제공합니다.  디바이스에 액세스하려면 디바이스의 키를 Azure AD에 위탁해야 합니다. 
 1. [Intune](https://aka.ms/intuneportal)에 로그인하여 **디바이스**로 이동한 다음, *관리* 아래에서 **모든 디바이스**를 선택합니다.
-2. 목록에서 디바이스를 선택한 다음, *모니터* 아래에서 **복구 키 – 미리 보기**를 선택합니다.  
+2. 목록에서 디바이스를 선택한 다음, *모니터* 아래에서 **복구 키**를 선택합니다.  
   
 키를 Azure AD에서 사용할 수 있는 경우 다음 정보를 사용할 수 있습니다.
 - BitLocker 키 ID

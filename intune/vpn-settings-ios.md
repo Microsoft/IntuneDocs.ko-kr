@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/25/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c40146f37ff6477663dc63468d1081a73ac2544a
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: eb7ff33384b86267e007e986737eeea6b8d3203e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135151"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040114"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 디바이스에서 VPN 설정 구성
 
@@ -36,7 +35,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 - **SonicWall Mobile Connect**
 - **F5 Access Legacy**: F5 Access 앱 버전 2.1 이전에 적용할 수 있습니다.
 - **F5 Access**: F5 Access 앱 버전 3.0 이상에 적용할 수 있습니다.
-- **Palo Alto Networks GlobalProtect(Legacy)**: Palo Alto Networks GlobalProtect 앱 버전 4.1 이전에 적용할 수 있습니다.
+- **Palo Alto Networks GlobalProtect(Legacy)** : Palo Alto Networks GlobalProtect 앱 버전 4.1 이전에 적용할 수 있습니다.
 - **Palo Alto Networks GlobalProtect**: Palo Alto Networks GlobalProtect 앱 버전 5.0 이상에 적용할 수 있습니다.
 - **Pulse Secure**
 - **Cisco(IPSec)**
@@ -104,7 +103,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 - **주문형 VPN**: VPN 연결이 시작되는 시기를 제어하는 조건부 규칙을 구성합니다. 예를 들어 디바이스가 회사 Wi-Fi 네트워크에 연결되지 않은 경우에만 VPN 연결이 사용되는 조건을 만듭니다. 또는 조건을 만듭니다. 예를 들어 사용자가 입력한 DNS 검색 도메인에 디바이스가 액세스할 수 없는 경우 VPN 연결이 시작되지 않습니다.
 
   - **SSID 또는 DNS 검색 도메인**: 이 조건에서 무선 네트워크 **SSID** 또는 **DNS 검색 도메인**을 사용할지를 선택합니다. 하나 이상의 SSID 또는 검색 도메인을 구성하려면 **추가**를 선택합니다.
-  - **URL 문자열 프로브:**: 선택 사항입니다. 규칙이 테스트로 사용하는 URL을 입력합니다. 이 프로필을 포함한 디바이스에서 리디렉션 없이 이 URL에 액세스하는 경우 VPN 연결이 시작됩니다. 또한 디바이스가 대상 URL에 연결됩니다. 사용자에게 URL 문자열 프로브 사이트가 표시되지 않습니다. URL 문자열 프로브 예제는 VPN을 연결하기 전에 디바이스 준수를 확인하는 감사 웹 서버의 주소입니다. 또는 VPN을 통해 디바이스를 대상 URL에 연결하기 전에 URL에서 VPN이 사이트에 연결할 수 있는지 테스트할 수도 있습니다.
+  - **URL 문자열 프로브:** : 선택 사항입니다. 규칙이 테스트로 사용하는 URL을 입력합니다. 이 프로필을 포함한 디바이스에서 리디렉션 없이 이 URL에 액세스하는 경우 VPN 연결이 시작됩니다. 또한 디바이스가 대상 URL에 연결됩니다. 사용자에게 URL 문자열 프로브 사이트가 표시되지 않습니다. URL 문자열 프로브 예제는 VPN을 연결하기 전에 디바이스 준수를 확인하는 감사 웹 서버의 주소입니다. 또는 VPN을 통해 디바이스를 대상 URL에 연결하기 전에 URL에서 VPN이 사이트에 연결할 수 있는지 테스트할 수도 있습니다.
   - **도메인 작업**: 다음 항목 중 하나를 선택합니다.
     - 필요한 경우 연결
     - 연결 안 함

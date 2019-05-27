@@ -17,16 +17,16 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 574f509383891ff3e8e0f4c1b04a19832a378829
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: e14fe3dd50f43c1b72079dfc3df05ddbbcd4c629
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799504"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853974"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>앱 설치 문제 해결
 
-Microsoft Intune MDM 관리 디바이스에서 앱 설치에 실패하는 경우도 있습니다. 이러한 앱 설치에 실패할 경우, 실패 이유를 파악하거나 문제를 해결하기 어려울 수 있습니다. Microsoft Intune은 지원 센터 운영자 및 Intune 관리자가 사용자 도움 요청을 해결하기 위해 앱 정보를 볼 수 있는 앱 설치 실패 세부 정보를 제공합니다. Intune 내의 문제 해결 창에서는 사용자 디바이스의 관리되는 앱에 대한 세부 정보를 비롯하여 실패 세부 정보를 제공합니다. **관리되는 앱** 창에서 개별 디바이스 아래에는 앱의 종단 간 수명 주기에 대한 세부 정보가 제공됩니다. 앱이 만들어지거나 수정되거나 대상이 지정되거나 디바이스에 제공되는 경우 등에 설치 문제를 볼 수 있습니다. 
+Microsoft Intune MDM 관리 디바이스에서 앱 설치에 실패하는 경우도 있습니다. 이러한 앱 설치에 실패할 경우, 실패 이유를 파악하거나 문제를 해결하기 어려울 수 있습니다. Microsoft Intune은 지원 센터 운영자 및 Intune 관리자가 사용자 도움 요청을 해결하기 위해 앱 정보를 볼 수 있는 앱 설치 실패 세부 정보를 제공합니다. Intune 내의 문제 해결 창에서는 사용자 디바이스의 관리되는 앱에 대한 세부 정보를 비롯하여 실패 세부 정보를 제공합니다. **관리되는 앱** 창에서 개별 디바이스 아래에는 앱의 엔드투엔드 수명 주기에 대한 세부 정보가 제공됩니다. 앱이 만들어지거나 수정되거나 대상이 지정되거나 디바이스에 제공되는 경우 등에 설치 문제를 볼 수 있습니다. 
 
 ## <a name="app-troubleshooting-details"></a>앱 문제 해결 세부 정보
 
@@ -48,7 +48,7 @@ Intune은 특정 사용자 디바이스에 설치된 앱을 기반으로 앱 문
     > 같은 앱을 여러 그룹에 할당하되, 앱에 대해 의도한 동작(의도)을 각각 다르게 할 수 있습니다. 예를 들어 앱 할당 중에 사용자에 대해 앱이 제외된 경우 앱에 대해 확인된 의도에 **제외**가 표시됩니다. 자세한 내용은 [앱 의도 간의 충돌을 해결하는 방법](apps-deploy.md#how-conflicts-between-app-intents-are-resolved)을 참조하세요.<br><br>
     > 필수 앱에 대해 설치 오류가 발생하는 경우 사용자 또는 사용자의 지원 센터는 디바이스를 동기화하고 앱 설치를 다시 시도할 수 있습니다.
 
-앱 설치 오류 세부 정보에 문제가 표시됩니다. 이러한 세부 정보를 사용하여 문제를 해결하기 위해 수행할 최상의 조치를 결정할 수 있습니다. 앱 설치 문제 해결에 대한 자세한 내용은 [Error Codes For Troubleshooting App Installation Issues](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues)(앱 설치 문제 해결을 위한 오류 코드)를 참조하세요.
+앱 설치 오류 세부 정보에 문제가 표시됩니다. 이러한 세부 정보를 사용하여 문제를 해결하기 위해 수행할 최상의 조치를 결정할 수 있습니다. 앱 설치 문제를 해결하는 방법에 대한 자세한 내용은 [앱 설치 오류](troubleshoot-app-install.md#app-installation-errors)를 참조하세요.
 
 > [!Note]  
 > 브라우저를 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)으로 전환하여 **문제 해결** 창에 액세스할 수도 있습니다.

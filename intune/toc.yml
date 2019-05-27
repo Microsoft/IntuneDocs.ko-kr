@@ -473,8 +473,8 @@
               href: certificates-s-mime-encryption-sign.md
             - name: SCEP를 사용하여 타사 인증 기관 사용
               href: certificate-authority-add-scep-overview.md
-            - name: Symantec PKI Manager Web Service
-              href: certificates-symantec-configure.md
+            - name: DigiCert PKI 사용
+              href: certificates-digicert-configure.md
             - name: SCEP 또는 PKCS 인증서 제거
               href: remove-certificates.md
         - name: eSIM 셀룰러 프로필

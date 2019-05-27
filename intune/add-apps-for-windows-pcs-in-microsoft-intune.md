@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 08/29/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4f6a8c3e460e9806aabadd710ec102aa77d44ab
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798896"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050209"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Intune 소프트웨어 클라이언트를 실행하는 Windows PC에 앱 추가
 
@@ -78,7 +77,7 @@ PC에 앱을 설치하려면 앱이 사용자 조작 없이 자동으로 설치�
 5. **검색 규칙** 페이지에서 구성 중인 앱이 PC에 이미 설치되어 있는지 여부를 검색하는 규칙을 구성할 수 있습니다.  또는 기본 검색 규칙을 사용하여 이전에 설치된 앱 버전을 자동으로 덮어쓸 수 있습니다. 이 옵션은 Windows Installer에만 적용됩니다(.exe 파일에만 해당).
 
    구성할 수 있는 규칙은 다음과 같습니다.
-   - **파일 있음**. 검색하려는 파일의 경로를 지정합니다. PC의 **%ProgramFiles%**(**Program Files**\&lt;경로&gt; and **Program Files (x86)**\&lt;경로&gt;를 검색함) 또는 **%SystemDrive%**(일반적으로 C 드라이브인 PC의 루트 드라이브에서 검색함)에서 검색할 수 있습니다.
+   - **파일 있음**. 검색하려는 파일의 경로를 지정합니다. PC의 **%ProgramFiles%** (**Program Files**\&lt;경로&gt; and **Program Files (x86)** \&lt;경로&gt;를 검색함) 또는 **%SystemDrive%** (일반적으로 C 드라이브인 PC의 루트 드라이브에서 검색함)에서 검색할 수 있습니다.
    - **MSI 제품 코드가 존재합니다**. **찾아보기**를 클릭하여 검색할 Windows Installer(msi) 파일을 선택합니다.
    - <strong>레지스트리 키가 존재합니다</strong>. <strong>HKEY_LOCAL_MACHINE\</strong>으로 시작하는 레지스트리 키를 지정합니다. 32비트 및 64비트 레지스트리 경로를 모두 검색합니다. 지정한 키가 두 위치 중 하나에 있으면 검색 규칙이 충족됩니다.
 

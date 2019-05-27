@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
-ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
+ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
+ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65619438"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65816299"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포
 Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Active Directory) 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 이 문서의 단계를 수행합니다.
@@ -119,6 +119,9 @@ Active Directory용 Intune Connector는 Windows Server 2016 이상을 실행하�
 > [!NOTE]
 > 커넥터에서 로그인한 후 [Intune](https://aka.ms/intuneportal)에 표시되는 데 몇 분 정도 걸릴 수 있습니다. Intune 서비스와 통신할 수 있는 경우에만 표시됩니다.
 
+### <a name="turn-off-ie-enhanced-security-configuration"></a>IE 보안 강화 구성 끄기
+기본적으로 Windows Server에는 Internet Explorer 보안 강화 구성이 켜져 있습니다. Active Directory용 Intune Connector에 로그인할 수 없는 경우 관리자용 IE 보안 강화 구성을 끕니다. [Internet Explorer 보안 강화 구성을 끄는 방법](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### <a name="configure-web-proxy-settings"></a>웹 프록시 설정 구성
 
 네트워킹 환경에 웹 프록시가 있는 경우 [기존 온-프레미스 프록시 서버 작업](autopilot-hybrid-connector-proxy.md)을 참조하여 Active Directory용 Intune Connector가 제대로 작동하는지 확인합니다.
@@ -194,7 +197,7 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(선택 사항) 등록 상태 페이지 설정
 
-1. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지(미리 보기)** 를 선택합니다.
+1. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지**를 선택합니다.
 1. **등록 상태 페이지** 창에서 **기본값** > **설정**을 선택합니다.
 1. **프로필 및 앱 설치 진행률 표시** 상장에서 **예**를 선택합니다.
 1. 필요에 따라 다른 옵션을 구성합니다.

@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
@@ -17,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3645d07fe9a703f182e05bc9a7f9fbb93c413ddc
-ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
+ms.openlocfilehash: ca66a2fa331fe4dcc30c32d369db32a57ba9999c
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65816238"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047306"
 ---
 # <a name="in-development-for-microsoft-intune---may-2019"></a>Microsoft Intune에 대해 개발 중 - 2019년 5월
 
-준비 및 계획을 지원하기 위해 이 페이지에는 개발 중이지만 아직 릴리스되지 않은 Intune UI 업데이트 및 기능이 나열되어 있습니다. 이 밖에도 다음 지침을 따릅니다.
+준비 및 계획을 지원하기 위해 이 페이지에는 개발 중이지만 아직 릴리스되지 않은 Intune UI 업데이트 및 기능이 나열되어 있습니다. 또한,
 
 - 변경하기 전에 조치를 취해야 할 것으로 예상되면 보완적인 Office Message Center 게시물을 게시할 것입니다.
 - 미리 보기 또는 일반적으로 사용할 수 있는 기능을 프로덕션 환경에서 시작하면 기능 설명이 이 페이지에서 [새로운 기능 페이지](whats-new.md)로 이동합니다.

@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798804"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046959"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune에서 Windows PC 소프트웨어의 사용권 계약 관리
 
@@ -68,7 +67,7 @@ Intune 볼륨 라이선싱 계약은 Microsoft Volume License 계약을 통해 �
 
         -   ASCII 문자만 지원됩니다.
 
-        -   다음 문자는 계약 이름에 사용할 수 없습니다. **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. 그러나 공백은 이름에 사용할 수 있습니다.
+        -   다음 문자는 계약 이름에 사용할 수 없습니다. **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . 그러나 공백은 이름에 사용할 수 있습니다.
 
         -   파일 이름은 128자 이하여야 합니다.
 
@@ -94,7 +93,7 @@ Intune 볼륨 라이선싱 계약은 Microsoft Volume License 계약을 통해 �
 
         -   **계약 이름** - 계약의 고유한 이름을 지정합니다.
 
-            계약 이름의 길이는 최대 256자이며 다음 문자는 사용할 수 없습니다. **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. 그러나 공백은 이름에 사용할 수 있습니다.
+            계약 이름의 길이는 최대 256자이며 다음 문자는 사용할 수 없습니다. **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . 그러나 공백은 이름에 사용할 수 있습니다.
 
         -   **승인/계약 번호** - 라이선스 쌍의 승인/계약 번호를 입력합니다.
 
@@ -147,7 +146,7 @@ Microsoft 볼륨 라이선싱 계약 외에 다른 유형의 사용권 계약을
 
 4.  **계약 정보 추가** 영역에서 다음을 지정합니다.
 
-    -   **Agreement name** (필수). 계약 이름의 길이는 최대 256자이며 다음 문자는 사용할 수 없습니다. **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. 그러나 공백은 이름에 사용할 수 있습니다.
+    -   **Agreement name** (필수). 계약 이름의 길이는 최대 256자이며 다음 문자는 사용할 수 없습니다. **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . 그러나 공백은 이름에 사용할 수 있습니다.
 
     -   **게시자** (필수). 게시자 이름을 입력하기 시작하면 입력된 문자를 포함하는 모든 게시자 이름이 검색됩니다. 예를 들어 "soft"를 입력하면 서비스에서 이름의 일부로 "soft"를 포함하는 게시자 이름(예: "Microsoft" 및 "Microsoft Research")을 모두 검색합니다. 게시자 이름은 Software Asset Catalog에서 검색됩니다. 제품 이름을 입력하려면 먼저 게시자를 선택해야 합니다.
 

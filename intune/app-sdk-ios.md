@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a834b1f35bdefd91abfc1ec9ca8b44d4eb593cd
-ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
-ms.translationtype: HT
+ms.openlocfilehash: 51ad3b2db3a45c06c0019b6f57ac4147112807fa
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59533612"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049829"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -83,7 +82,7 @@ iOS용 Intune 앱 SDK의 목적은 최소한의 코드 변경으로 iOS 애플�
 
 Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
 
-1. **옵션 1(권장)**: `IntuneMAM.framework`를 프로젝트에 연결합니다. `IntuneMAM.framework`를 프로젝트 대상의 **포함된 이진 파일** 목록으로 끕니다.
+1. **옵션 1(권장)** : `IntuneMAM.framework`를 프로젝트에 연결합니다. `IntuneMAM.framework`를 프로젝트 대상의 **포함된 이진 파일** 목록으로 끕니다.
 
    > [!NOTE]
    > 프레임워크를 사용하는 경우 앱을 앱 스토어에 제출하기 전에 수동으로 범용 프레임워크에서 시뮬레이터 아키텍처를 제거해야 합니다. 자세한 내용은 [앱 스토어에 앱 제출](#submit-your-app-to-the-app-store)을 참조하세요.

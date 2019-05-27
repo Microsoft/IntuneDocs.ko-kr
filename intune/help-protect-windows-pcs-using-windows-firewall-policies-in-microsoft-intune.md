@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5edcfedcd03492d8634549147b70be14ffb742e
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: b289f9edc1522333f70308a6979b2ea2e71b17c6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798878"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047530"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune에서 Windows 방화벽 정책을 사용하여 Windows PC 보호
 
@@ -127,7 +126,7 @@ Windows 방화벽 정책을 배포한 후 **정책** 작업 영역의 **모든 �
 |**SSTP(Secure Socket Tunneling Protocol)**|SSTP(Secure Socket Tunneling Protocol)를 통해 관리 컴퓨터에 들어오는 VPN 연결을 설정합니다. 이 설정에서는 HTTPS를 사용합니다.|
 |**SNMP 트랩**|관리 컴퓨터에서 SNMP(Simple Network Management Protocol) 트랩 서비스 트래픽을 받을 수 있습니다.|
 |**UPnP 프레임워크**|컴퓨터에서 UPnP 인증 디바이스를 검색 및 사용하도록 컴퓨터의 UPnP 프레임워크 서비스를 구성합니다.|
-|**Windows 공동 작업 컴퓨터 이름 등록 서비스**|컴퓨터에서 SSDP와 PNRP를 사용하여 다른 컴퓨터를 찾아 통신할 수 있습니다.|
+|**Windows 협업 컴퓨터 이름 등록 서비스**|컴퓨터에서 SSDP와 PNRP를 사용하여 다른 컴퓨터를 찾아 통신할 수 있습니다.|
 |**Windows Media Player**|UDP(User Datagram Protocol)를 통해 스트리밍 미디어를 수신할 수 있습니다.|
 |**Windows Media Player 네트워크 공유 서비스**|네트워크를 통해 미디어를 공유할 수 있습니다. 이 설정에서는 SSDP, qWave 및 UPnP 네트워크 프로토콜을 사용합니다.|
 |**Windows Media Player 네트워크 공유 서비스(인터넷)**<br>(Windows 7 이상)|사용자가 네트워크를 통해 홈 미디어를 공유할 수 있습니다.|

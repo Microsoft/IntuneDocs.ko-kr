@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/18/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bac109164a1e75ce14efc5d61201e829e572e502
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 745bd930e43c9d034f66f6d529b489308a1bfe23
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565981"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050291"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune에서 Android를 실행하는 디바이스의 Wi-Fi 설정 추가
 
@@ -56,7 +55,7 @@ ms.locfileid: "57565981"
 
       **확인**을 선택하여 변경 내용을 저장합니다.
 
-    - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
+    - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)** : 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
       **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -69,15 +68,15 @@ ms.locfileid: "57565981"
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 또한 다음을 입력합니다.
-        - **EAP 이외의 방법(내부 ID)**: 연결을 인증할 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
+        - **EAP 이외의 방법(내부 ID)** : 연결을 인증할 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
 
-          선택 사항: **암호화되지 않은 암호(PAP)**, **CHAP(Challenge Handshake 인증 프로토콜)**, **MS-CHAP(Microsoft CHAP)** 또는 **MS-CHAP v2(Microsoft CHAP 버전 2)**
+          선택 사항: **암호화되지 않은 암호(PAP)** , **CHAP(Challenge Handshake 인증 프로토콜)** , **MS-CHAP(Microsoft CHAP)** 또는 **MS-CHAP v2(Microsoft CHAP 버전 2)**
 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
         **확인**을 선택하여 변경 내용을 저장합니다.
 
-      - **ID 개인 정보(외부 ID)**: EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
+      - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
   - **PEAP**: 또한 다음을 입력합니다.
 
@@ -88,7 +87,7 @@ ms.locfileid: "57565981"
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 또한 다음을 입력합니다.
-        - **EAP 이외의 인증 방법(내부 ID)**: 연결을 인증할 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
+        - **EAP 이외의 인증 방법(내부 ID)** : 연결을 인증할 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
 
           선택 사항: **없음** 또는 **MS-CHAP v2(Microsoft CHAP 버전 2)**
 
@@ -96,7 +95,7 @@ ms.locfileid: "57565981"
 
         **확인**을 선택하여 변경 내용을 저장합니다.
 
-      - **ID 개인 정보(외부 ID)**: EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
+      - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다. 프로필이 만들어지고 프로필 목록에 표시됩니다.
 

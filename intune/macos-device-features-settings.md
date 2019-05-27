@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/23/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8858848d12ca3f5839741fc15d87e1cd66e9fad0
-ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.openlocfilehash: 1826498b3bfa2191900d7574f79051af8f758558
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64764859"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041709"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune에서 macOS 디바이스 기능 설정
 
@@ -56,7 +55,7 @@ AirPrint 서버를 **추가합니다**. 많은 AirPrint 서버를 추가할 수 
 
 AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 및 포트가 필요합니다. 다음 단계에서는 이 정보를 가져오는 방법을 보여줍니다.
 
-1. AirPrint 프린터와 동일한 로컬 네트워크(서브넷)에 연결된 Mac에서 **터미널**을 엽니다(**/Applications/Utilities**에서).
+1. AirPrint 프린터와 동일한 로컬 네트워크(서브넷)에 연결된 Mac에서 **터미널**을 엽니다( **/Applications/Utilities**에서).
 2. 터미널 앱에서 `ippfind`를 입력하고 enter를 선택합니다.
 
     프린터 정보를 기록합니다. 예를 들어 `ipp://myprinter.local.:631/ipp/port1`과 유사한 항목을 반환할 수 있습니다. 첫 번째 부분은 프린터의 이름입니다. 마지막 부분(`ipp/port1`)은 리소스 경로입니다.

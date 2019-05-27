@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 02/21/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc7b7f56060ff90cc7b9df6cb8700c163d78e8f5
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 92cce1d0eaefa5f0d76d99a99298b1b62b52fb59
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798630"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040136"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>모바일 애플리케이션 관리 문제 해결
 
@@ -77,7 +76,7 @@ Android | **회사 포털 필요**: 이 앱에서 회사 또는 학교 계정을
 오류 메시지 또는 대화 상자 | 원인 | 수정 |
 -- | --- | --- |
 **앱이 설정되지 않음**: 이 앱을 사용자가 사용하도록 설정되지 않았습니다. 도움이 필요하면 IT 관리자에게 문의하세요. | 앱의 필수 앱 보호 정책을 검색하지 못했습니다. |iOS 앱 보호 정책이 사용자의 보안 그룹에 배포되어 있으며 이 앱을 대상으로 하는지 확인합니다.
-**Intune Managed Browser에 오신 것을 환영합니다.**: 이 앱은 Microsoft Intune으로 관리할 때 가장 잘 작동합니다. 언제든지 이 앱을 사용하여 웹 검색을 할 수 있으며 Microsoft Intune으로 앱을 관리하는 경우 추가 데이터 보호 기능에 액세스할 수 있습니다. | Intune Managed Browser 앱의 필수 앱 보호 정책을 검색하지 못했습니다. <br><br>사용자는 계속 앱을 사용하여 웹을 검색할 수는 있지만 앱은 Intune을 통해 관리되지 않습니다. | iOS 앱 보호 정책이 사용자의 보안 그룹에 배포되어 있으며 Intune Managed Browser 앱을 대상으로 하는지 확인합니다.
+**Intune Managed Browser에 오신 것을 환영합니다.** : 이 앱은 Microsoft Intune으로 관리할 때 가장 잘 작동합니다. 언제든지 이 앱을 사용하여 웹 검색을 할 수 있으며 Microsoft Intune으로 앱을 관리하는 경우 추가 데이터 보호 기능에 액세스할 수 있습니다. | Intune Managed Browser 앱의 필수 앱 보호 정책을 검색하지 못했습니다. <br><br>사용자는 계속 앱을 사용하여 웹을 검색할 수는 있지만 앱은 Intune을 통해 관리되지 않습니다. | iOS 앱 보호 정책이 사용자의 보안 그룹에 배포되어 있으며 Intune Managed Browser 앱을 대상으로 하는지 확인합니다.
 **로그인 실패**: 지금은 로그인할 수 없습니다. 나중에 다시 시도하십시오. | 사용자가 회사 또는 학교 계정으로 로그인을 시도한 후 MAM 서비스에 사용자를 등록하지 못했습니다. | iOS 앱 보호 정책이 사용자의 보안 그룹에 배포되어 있으며 이 앱을 대상으로 하는지 확인합니다.
 **계정이 설정되지 않음**: 조직에서 회사 또는 학교 데이터에 액세스하기 위한 계정을 설정하지 않았습니다. 도움이 필요하면 IT 관리자에게 문의하세요. | 사용자 계정에 Intune A 다이렉트 라이선스가 없습니다. | [Microsoft 365 관리 센터](https://admin.microsoft.com)에서 사용자의 계정에 Intune 라이선스가 할당되어 있는지 확인합니다.
 **규정을 준수하지 않는 디바이스**: 탈옥한 디바이스를 사용 중이므로 이 앱을 사용할 수 없습니다. 도움이 필요하면 IT 관리자에게 문의하세요. | Intune에서 사용자가 탈옥한 디바이스를 사용 중임을 검색했습니다. | 디바이스를 기본 초기 설정으로 다시 설정합니다. Apple 지원 사이트의 [지침](https://support.apple.com/HT201274)을 따르세요.

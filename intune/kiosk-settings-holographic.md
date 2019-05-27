@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566015"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047030"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 Windows Holographic for Business 디바이스를 키오스크로 실행하기 위한 설정
 
@@ -60,7 +59,7 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
   - **자동 로그온**: Windows Holographic for Business에서 지원되지 않습니다.
   - **로컬 사용자 계정**: 로컬(디바이스 기준) 사용자 계정을 **추가**합니다. 입력한 계정이 키오스크에 로그인하는 데 사용됩니다.
-  - **Azure AD 사용자 또는 그룹(Windows 10, 버전 1803 이상)**: 디바이스에 로그인할 사용자 자격 증명이 필요합니다. **추가**를 선택하여 목록에서 Azure AD 사용자 또는 그룹을 선택합니다. 여러 사용자 및 그룹을 선택할 수 있습니다. **선택**을 선택하여 변경 내용을 저장합니다.
+  - **Azure AD 사용자 또는 그룹(Windows 10, 버전 1803 이상)** : 디바이스에 로그인할 사용자 자격 증명이 필요합니다. **추가**를 선택하여 목록에서 Azure AD 사용자 또는 그룹을 선택합니다. 여러 사용자 및 그룹을 선택할 수 있습니다. **선택**을 선택하여 변경 내용을 저장합니다.
   - **HoloLens 방문자**: 방문자 계정은 [공유된 PC 모드 개념](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts)에 설명된 대로 사용자 자격 증명이나 인증이 필요 없는 게스트 계정입니다.
 
 - **애플리케이션**: 키오스크 장치에서 실행할 앱을 추가합니다. 여러 개의 앱을 추가할 수 있습니다.
@@ -70,7 +69,7 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
   - **AUMID로 추가**: 받은 편지함 Windows 앱을 추가하려면 이 옵션을 사용합니다. 다음 속성을 입력합니다. 
 
     - **애플리케이션 이름**: 필수입니다. 애플리케이션의 이름을 입력합니다.
-    - **AUMID(애플리케이션 사용자 모델 ID)**: 필수입니다. Windows 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
+    - **AUMID(애플리케이션 사용자 모델 ID)** : 필수입니다. Windows 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
     - **타일 크기**: 필수입니다. 작은, 중간 크기, 넓은 또는 큰 앱 타일 크기를 선택합니다.
 
 - **키오스크 브라우저 설정**: Windows Holographic for Business에서 지원되지 않습니다.

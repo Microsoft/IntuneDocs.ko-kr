@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834724"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196776"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>회사 포털 앱을 사용하여 Intune에 macOS 디바이스 등록
 
@@ -31,7 +31,9 @@ Intune 회사 포털 앱으로 macOS 디바이스를 등록하여 조직의 이�
 
 조직에서 소유하는 데이터에 액세스하려면 먼저 디바이스 관리를 받아야 합니다. 디바이스가 관리된 후 조직은 모바일 디바이스 관리 공급자를 통해 디바이스에 정책 및 앱을 푸시할 수 있습니다. 디바이스에서 회사 또는 학교 정보에 대한 지속적인 액세스를 얻으려면 정책 설정과 일치하도록 디바이스를 구성해야 합니다.  
 
-이 문서에서는 macOS용 Intune 회사 포털 앱에서 조직의 요구 사항에 맞게 디바이스를 등록, 구성 및 유지 관리할 수 있는 방법을 설명합니다.
+이 문서에서는 macOS용 Intune 회사 포털 앱에서 조직의 요구 사항에 맞게 디바이스를 등록, 구성 및 유지 관리할 수 있는 방법을 설명합니다.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>회사 포털 앱에서 예상되는 상황
 

@@ -7,7 +7,6 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 10/31/2017
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.topic: archived
@@ -18,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f61b7e755ea7bfe8d20c3db8c859f148dcf7704
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30c0e5af6d7ff0467383294c071d0ffdb96c5dc1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460430"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041842"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>디바이스를 관리할 필요 없이 Office 365 Exchange Online 보호
 
-디바이스 관리 시스템 설정에 대한 오버헤드 없이 직원에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우 그렇게 할 수 있습니다. Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있습니다. 필요한 관리 설정을 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS 또는 Android 장치](supported-devices-browsers.md)가 있어야 합니다. 
+디바이스 관리 시스템 설정에 대한 오버헤드 없이 직원에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우 그렇게 할 수 있습니다. Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있습니다. 필요한 관리 설정을 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS 또는 Android 디바이스](supported-devices-browsers.md)가 있어야 합니다. 
 
-장치 관리 시스템을 설정하려면 그렇게 할 수 있습니다. 이러한 유형의 앱 보호는 디바이스 관리와 독립적으로 작동합니다. 
+디바이스 관리 시스템을 설정하려면 그렇게 할 수 있습니다. 이러한 유형의 앱 보호는 디바이스 관리와 독립적으로 작동합니다. 
 
 ## <a name="action-plan"></a>작업 계획
 

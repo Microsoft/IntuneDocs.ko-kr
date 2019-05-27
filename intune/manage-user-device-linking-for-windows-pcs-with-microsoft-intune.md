@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ef14d8ed3b1635fba183134b0d457ddc82ae329
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cad83daa88351749d60d0b1c72935ea47f9a14ce
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799234"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046934"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC에 대한 사용자-장치 연결 관리
 

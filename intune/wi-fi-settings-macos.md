@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/18/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 551d77b21e69eca76c4d9804130f253a69ca736b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50269e63f016c1d4f74b006d7748e5c300faac61
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566134"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050237"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune에서 macOS 디바이스의 Wi-Fi 설정 추가
 
@@ -44,7 +43,7 @@ ms.locfileid: "57566134"
 - **숨겨진 네트워크**: **사용**을 선택하면 이 네트워크가 디바이스의 사용 가능한 네트워크 목록에 숨겨집니다. SSID는 브로드캐스트되지 않습니다. **사용 안 함**을 선택하면 이 네트워크가 디바이스의 사용 가능한 네트워크 목록에 표시됩니다.
 - **보안 유형**: Wi-Fi 네트워크에 인증하기 위한 보안 프로토콜을 선택합니다. 옵션은 다음과 같습니다.
 
-  - **열기(인증 없음)**: 네트워크가 안전하지 않은 경우에만 이 옵션을 사용합니다.
+  - **열기(인증 없음)** : 네트워크가 안전하지 않은 경우에만 이 옵션을 사용합니다.
   - **WPA/WPA2 - 개인**: **미리 공유한 키**에 암호를 입력합니다. 조직의 네트워크를 설정하거나 구성할 때 암호 또는 네트워크 키도 구성합니다. PSK 값에 이 암호 또는 네트워크 키를 입력합니다.
   - **4**
 
@@ -64,7 +63,7 @@ ms.locfileid: "57566134"
 
   - **EAP-FAST**: **PAC(Protected Access Credential) 설정**을 입력합니다. 이 옵션은 보호된 액세스 자격 증명을 사용하여 클라이언트와 인증 서버 간의 인증된 터널을 만듭니다. 옵션은 다음과 같습니다.
     - **사용 안 함(PAC)**
-    - **사용(PAC)**: 기존 PAC 파일이 있으면 사용합니다.
+    - **사용(PAC)** : 기존 PAC 파일이 있으면 사용합니다.
     - **PAC 사용 및 프로비전**: PAC 파일을 만들고 디바이스에 추가합니다.
     - **익명으로 PAC 사용 및 프로비전**: PAC 파일을 만든 후 서버에 인증하지 않고 디바이스에 추가합니다.
 
@@ -77,7 +76,7 @@ ms.locfileid: "57566134"
 
       **확인**을 선택하여 변경 내용을 저장합니다.
 
-    - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
+    - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)** : 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
       **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -91,15 +90,15 @@ ms.locfileid: "57566134"
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 또한 다음을 입력합니다.
-        - **EAP 이외의 방법(내부 ID)**: 연결을 인증할 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
+        - **EAP 이외의 방법(내부 ID)** : 연결을 인증할 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
 
-          선택 사항: **암호화되지 않은 암호(PAP)**, **CHAP(Challenge Handshake 인증 프로토콜)**, **MS-CHAP(Microsoft CHAP)** 또는 **MS-CHAP v2(Microsoft CHAP 버전 2)**
+          선택 사항: **암호화되지 않은 암호(PAP)** , **CHAP(Challenge Handshake 인증 프로토콜)** , **MS-CHAP(Microsoft CHAP)** 또는 **MS-CHAP v2(Microsoft CHAP 버전 2)**
 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
         **확인**을 선택하여 변경 내용을 저장합니다.
 
-      - **ID 개인 정보(외부 ID)**: EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
+      - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
   - **LEAP**
 
@@ -118,7 +117,7 @@ ms.locfileid: "57566134"
 
         **확인**을 선택하여 변경 내용을 저장합니다.
 
-      - **ID 개인 정보(외부 ID)**: EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
+      - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
 - **프록시 설정**: 옵션:
   - **없음**: 프록시 설정을 구성하지 않습니다.

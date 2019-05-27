@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune에서 보안 기준선 사용 - Azure | Microsoft Docs
-description: 모바일 디바이스 관리용 Microsoft Intune을 사용하여 디바이스에서 사용자 및 데이터를 보호하기 위해 권장 그룹 보안 설정을 추가하거나 구성합니다. BitLocker 사용, Windows Defender Advanced Threat Protection 구성, Internet Explorer 제어, Smart Screen 사용, 로컬 보안 정책 설정, 암호 요구, 인터넷 다운로드 차단 등
+description: 모바일 디바이스 관리용 Microsoft Intune을 사용하여 디바이스에서 사용자 및 데이터를 보호하기 위해 권장 그룹 보안 설정을 추가하거나 구성합니다. BitLocker 사용, Microsoft Defender Advanced Threat Protection 구성, Internet Explorer 제어, Smart Screen 사용, 로컬 보안 정책 설정, 암호 요구, 인터넷 다운로드 차단 등
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 9dd289535ba4276b1bca21044d362172517b07e0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197635"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732575"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune에서 Windows 10 보안 기준선 만들기
 
@@ -44,9 +44,19 @@ ms.locfileid: "65197635"
 
 프로필이 할당되면 프로필을 모니터링하고 기준선을 모니터링할 수 있습니다. 예를 들어, 어떤 디바이스가 기준선과 일치하는지 또는 기준선과 일치하지 않는지를 알 수 있습니다.
 
-이 문서에서는 보안 기준선을 사용하여 프로필을 만들고, 프로필을 할당하며, 프로필을 모니터링하는 방법을 보여 줍니다.
+이 문서는 보안 기준을 사용하여 프로필을 만들고, 프로필을 할당하며, 프로필을 모니터링하는 데 필요한 정보를 제공합니다.
 
 [Windows 보안 기준선](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)은 이 기능에 대해 자세히 알아볼 수 있는 훌륭한 리소스입니다. [MDM(모바일 디바이스 관리)](https://docs.microsoft.com/windows/client-management/mdm/)은 MDM에 대한 정보 및 Windows 디바이스에서 수행할 수 있는 작업에 대해 알아볼 수 있는 훌륭한 리소스입니다.
+
+## <a name="available-security-baselines"></a>사용 가능한 보안 기준선  
+
+다음 보안 기준은 Intune에서 사용할 수 있습니다.
+- **미리 보기: 2018년 10월 MDM 보안 기준**  
+  [설정 보기](security-baseline-settings-windows.md)
+
+- **미리 보기: Windows Defender ATP 기준**  
+  [설정 보기](security-baseline-settings-defender-atp.md)
+
 
 ## <a name="prerequisites"></a>전제 조건
 Intune에서 기준선을 관리하려면 계정에 [정책 및 프로필 관리자](role-based-access-control.md#built-in-roles) 기본 제공 역할이 있어야 합니다.
@@ -60,51 +70,36 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com/)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
-2. **디바이스 보안** > **보안 기준(미리 보기)** 을 선택합니다. 사용 가능한 기준선 목록이 제공됩니다. 더 많은 기준선이 추가되면 여기에 표시됩니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=20909)에 로그인하고 **디바이스 보안** > **보안 기준(미리 보기)** 을 선택합니다. 사용 가능한 기준선 목록이 제공됩니다. 
 
-    ![Intune에서 현재 사용 가능한 보안 기준선 목록 보기](./media/security-baselines/available-baselines.png)
+    ![구성할 보안 기준을 선택](./media/security-baselines/available-baselines.png)
 
-3. 사용하려는 기준선을 선택하고 > **프로필 만들기**를 선택합니다.
-4. **기본**에서 다음 속성을 입력합니다.
 
-    - **이름**: 보안 기준선 프로필의 이름을 입력합니다. 예를 들어 다음과 같이 입력합니다. `pilot Windows 10 MDM baseline - Oct 2018`
+2. 사용하려는 기준을 선택한 후 **프로필 만들기**를 선택합니다.  
+
+3. **기본 사항** 탭에서 다음 속성을 지정합니다.
+
+    - **이름**: 보안 기준선 프로필의 이름을 입력합니다. 예를 들어 *Defender ATP용 표준 프로필*을 입력합니다.
     - **설명**: 이 기준선이 하는 일을 설명하는 텍스트를 입력합니다. 설명은 원하는 텍스트를 입력하면 됩니다. 선택 사항이지만 꼭 사용하는 것이 좋습니다.
 
-5. **설정**을 확장합니다. 목록에서 이 보안 기준선의 모든 설정과 설정이 자동으로 어떻게 설정되는지 볼 수 있습니다. 설정 및 해당 값은 권장 사항이며 사용자가 변경할 수 있습니다.
+4. **구성** 탭을 선택하여 이 기준의 사용 가능한 **설정** 그룹을 확인합니다. 그룹을 선택하여 확장하고 포함된 개별 설정을 확인합니다. 설정에는 보안 기준의 기본 구성이 포함됩니다. 비즈니스 요구 사항에 맞게 기본값 설정을 다시 구성합니다.  
 
-    ![설정을 확장하여 Intune에서 이 보안 기준선의 모든 설정 표시](./media/security-baselines/sample-list-of-settings.png)
+    ![그룹을 확장하여 해당 그룹에 대한 설정 보기](./media/security-baselines/sample-list-of-settings.png)
 
-    일부 설정을 확장하여 해당 값을 확인합니다. 예를 들어, **Windows Defender**를 확장합니다. 몇 가지 설정과 설정이 어떻게 설정되는지 확인합니다.
+5. **할당** 탭을 선택하여 그룹에 기준을 할당합니다. 기존 그룹에 기준을 할당하거나 Intune 콘솔에서 표준 프로세스를 통해 새 그룹을 만들어 구성을 완료합니다.  
 
-    ![Intune에서 Windows Defender 설정 중 일부가 자동으로 설정되는지 확인합니다.](./media/security-baselines/expand-windows-defender.png)
+   ![프로필 할당](./media/security-baselines/assignments.png)
+  
+6. 기준을 배포할 준비가 된 경우 **검토 + 만들기** 탭을 선택하여 기준에 대한 세부 정보를 검토합니다. 그런 다음, **프로필 저장**을 선택하여 프로필을 저장하고 배포합니다. 
 
-6. 프로필을 **만듭니다**. 
-7. **프로필**을 선택합니다. 프로필이 만들어지고 목록에 표시됩니다. 그러나 아직 아무 것도 하지 않습니다. 그런 다음, 프로필을 할당합니다.
+   ![기준 검토](./media/security-baselines/review.png) 
 
-## <a name="assign-the-profile"></a>프로필 할당
+   저장하는 즉시 Intune으로 체크 인될 때 프로필이 디바이스에 푸시됩니다. 따라서 즉시 발생할 수 있습니다.
 
-프로필이 생성되었으면 사용자, 디바이스 및 그룹에 할당할 준비가 된 것입니다. 할당되면 프로필과 해당 설정이 선택한 사용자, 디바이스 및 그룹에 적용됩니다.
+   > [!TIP]  
+   > 프로필을 먼저 저장한 후 그룹에 할당할 수 있습니다. 나중에 프로필을 편집하여 그룹을 추가할 수 있습니다. 
 
-1. Intune에서 **보안 기준선** > 기준선 선택 > **프로필**을 선택합니다.
-2. 프로필 > **할당**을 선택합니다.
-
-    ![Intune에서 보안 기준선 프로필을 선택하고 할당을 클릭하여 프로필 배포](./media/security-baselines/assignments.png)
-
-3. **포함** 탭에서 이 정책을 적용할 그룹, 사용자 또는 디바이스를 추가합니다.
-
-    > [!TIP]
-    > 그룹을 **제외**할 수도 있습니다. 정책을 **모든 사용자**에게 적용하는 경우 관리자 그룹을 제외하는 것이 좋습니다. 어떤 일이 발생하면 사용자와 관리자는 잠금 상태를 원하지 않습니다.
-
-4. 변경 내용을 **저장**합니다.
-
-저장하는 즉시 Intune으로 체크 인될 때 프로필이 디바이스에 푸시됩니다. 따라서 즉시 발생할 수 있습니다.
-
-## <a name="available-security-baselines"></a>사용 가능한 보안 기준선  
-
-다음 보안 기준선은 Intune에서 사용할 수 있습니다.
-- **미리 보기: MDM 보안 기준선**
-  - 버전: [2018년 10월](security-baseline-settings-windows.md)
+7. 프로필을 만든 후로 **디바이스 보안** > **보안 기준**으로 이동하여 편집하고, 구성한 기준을 선택하고, **프로필**을 선택합니다.  프로필을 선택하고 **속성**을 선택하여 설정을 편집하고, **할당**을 선택하여 이 기준을 받는 그룹을 편집합니다. 
 
 ## <a name="q--a"></a>Q & A
 
