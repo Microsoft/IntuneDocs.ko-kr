@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/05/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
-ms.translationtype: HT
+ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733056"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045045"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Intune에 대한 Windows 보안 기준 설정  
 
@@ -205,7 +204,7 @@ Microsoft Intune에서 지원되는 [Windows 보안 기준선 설정](security-b
   
   **기본**: 하드웨어 디바이스 설치 차단  
 
-    *하드웨어 디바이스 설치 차단*을 선택하는 경우 사용할 수 있는 설정은 다음과 같습니다.
+    ‘하드웨어 디바이스 설치 차단’을 선택하는 경우 사용할 수 있는 설정은 다음과 같습니다.
   
     - **일치하는 하드웨어 디바이스 제거**   
     이 설정은 *디바이스 식별자에 의한 하드웨어 디바이스 설치*가 *하드웨어 디바이스 설치 차단*으로 설정된 경우에만 사용할 수 있습니다.
@@ -1086,7 +1085,7 @@ Microsoft Intune에서 지원되는 [Windows 보안 기준선 설정](security-b
   **기본값**: 예
 
 - **사용자별 위치로 파일 및 레지스트리 쓰기 오류 가상화**  
-  이 정책 설정은 애플리케이션 쓰기 오류가 정의된 레지스트리 및 파일 시스템 위치로 리디렉션되는지 여부를 제어합니다. 이 정책 설정은 관리자로 실행되는 애플리케이션을 완화하고 런타임 애플리케이션 데이터를 *%ProgramFiles%*, *%Windir%*, *%Windir%\system32* 또는 *HKLM\Software*에 기록합니다.
+  이 정책 설정은 애플리케이션 쓰기 오류가 정의된 레지스트리 및 파일 시스템 위치로 리디렉션되는지 여부를 제어합니다. 이 정책 설정은 관리자로 실행되는 애플리케이션을 완화하고 런타임 애플리케이션 데이터를 *%ProgramFiles%* , *%Windir%* , *%Windir%\system32* 또는 *HKLM\Software*에 기록합니다.
   
   **기본값**: 예
 
