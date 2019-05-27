@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509073"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942042"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 디바이스 준수 정책 모니터링
 
@@ -75,7 +75,9 @@ ms.locfileid: "61509073"
 
   - 디바이스가 규정 준수 정책이 할당되지 않고 규정 준수 여부를 확인하는 트리거가 없습니다.
   - 규정 준수 정책을 마지막으로 업데이트한 후 디바이스를 체크 인하지 않았습니다.
-  - 디바이스가 특정 사용자에게 연결되어 있지 않습니다.
+  - 특정 사용자에게 연결되지 않은 디바이스, 예:
+    - 사용자 선호도가 없는 Apple의 DEP(장비 등록 프로그램)를 통해 구매한 iOS 디바이스
+    - Android 키오스크 또는 Android Enterprise 전용 디바이스
   - 디바이스를 DEM(디바이스 등록 관리자) 계정을 사용하여 등록했습니다.
 
 - **비준수:** 하나 이상의 디바이스 준수 정책 설정을 디바이스에서 적용하지 못했습니다. 또는 사용자가 정책을 준수하지 않았습니다.

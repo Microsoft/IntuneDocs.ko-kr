@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dffdf67597ccb7a1719b2b769a79a6a5f365198c
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509518"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853899"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법
 
@@ -80,6 +80,7 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
    |Microsoft Intune| IntuneMAMUPN | 문자열 | {{UserPrincipalName}}|
    |VMware AirWatch| IntuneMAMUPN | 문자열 | {UserPrincipalName}|
    |MobileIron | IntuneMAMUPN | 문자열 | ${userUPN} **또는** ${userEmailAddress} |
+   |Citrix 엔드포인트 관리 | IntuneMAMUPN | 문자열 | ${user.userprincipalname} |
    |ManageEngine 모바일 디바이스 관리자 | IntuneMAMUPN | 문자열 | %upn% |
 
 

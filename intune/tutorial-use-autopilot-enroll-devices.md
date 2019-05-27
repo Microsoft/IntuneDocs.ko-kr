@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511542"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732987"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>자습서: Autopilot을 사용하여 Intune에서 Windows 디바이스 등록
 Windows Autopilot이 디바이스 등록을 간소화합니다. Microsoft Intune 및 AutoPilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드, 유지 관리 및 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. 
@@ -90,23 +90,20 @@ Windows Autopilot을 설정하는 첫 번째 단계는 Intune에 Windows 디바�
 디바이스 그룹을 만든 후 Autopilot 디바이스를 구성할 수 있도록 배포 프로필을 만들어야 합니다.
 
 1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 선택합니다.
-2. **이름**으로 ‘Autopilot 프로필’을 입력합니다. **설명**으로 ‘Autopilot 디바이스의 테스트 프로필’을 입력합니다.
+2. **기본** 페이지에서 **이름**으로 ‘Autopilot 프로필’을 입력합니다. **설명**으로 ‘Autopilot 디바이스의 테스트 프로필’을 입력합니다.
 3. **모든 대상 디바이스를 Autopilot으로 변환**을 **예**로 설정합니다. 이렇게 설정하면 목록의 모든 디바이스가 Autopilot 배포 서비스를 사용하여 등록됩니다. 등록을 처리하는 데 48시간 정도가 걸립니다.
-4. **배포 모드**에서 **사용자 기반**을 선택합니다. 이 프로필을 사용하는 디바이스는 디바이스를 등록한 사용자와 연결됩니다. 디바이스를 등록하려면 사용자 자격 증명이 필요합니다.
-5. **다음으로 Azure AD에 조인** 상자에서 **Azure AD 조인됨**을 선택합니다.
-6. **OOBE(첫 실행 경험)** 를 선택하고, 다음 옵션을 구성하고 다른 옵션을 기본값으로 유지한 후, **저장**을 선택합니다.
+4. **다음**을 선택합니다.
+5. **OOBE(첫 실행 경험)** 페이지에서 **배포 모드**로 **사용자 구동**을 선택합니다. 이 프로필을 사용하는 디바이스는 디바이스를 등록한 사용자와 연결됩니다. 디바이스를 등록하려면 사용자 자격 증명이 필요합니다.
+6. **다음으로 Azure AD에 조인** 상자에서 **Azure AD 조인됨**을 선택합니다.
+7. 다음 옵션을 구성하고 다른 옵션을 기본값으로 설정해 둡니다.
     - **EULA(최종 사용자 사용권 계약)**: **숨기기**
     - **개인 정보 설정**: **표시**
     - **사용자 계정 유형**: **표준**
-
-6. **만들기**를 선택하여 프로필을 만듭니다. 이제 Autopilot 배포 프로필을 디바이스에 할당할 수 있습니다.
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>디바이스 그룹에 Autopilot 배포 프로필 할당
-
-이제 배포 프로필이 만들어졌으므로 디바이스 그룹에 할당하겠습니다.
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필**을 선택하고 프로필을 선택합니다.
-2. 특정 프로필 블레이드에서 **할당**을 선택합니다. 
-3. **그룹 선택**을 선택하고, **그룹 선택** 블레이드에서 **Autopilot 그룹**을 선택한 후, **선택**을 선택합니다.
+8. **다음**을 선택합니다.
+9. **할당** 페이지에서 **할당 대상**으로 **선택한 그룹**을 선택합니다.
+10. **포함할 그룹 선택**을 선택하고 **Autopilot 그룹**을 선택합니다.
+11. **다음**을 선택합니다.
+12. **검토 + 만들기** 페이지에서 **만들기**를 선택하여 프로필을 만듭니다.
 
 ## <a name="distribute-devices-to-users"></a>사용자에게 디바이스 배포
 
@@ -114,7 +111,7 @@ Windows Autopilot을 설정하는 첫 번째 단계는 Intune에 Windows 디바�
 
 ## <a name="clean-up-resources"></a>리소스 정리
 
-더 이상 사용하지 않으려는 Autopilot 디바이스를 삭제할 수 있습니다.
+더 이상 사용하지 않으려는 경우 Autopilot 디바이스를 삭제할 수 있습니다.
 
 1. 디바이스가 Intune에 등록된 경우 먼저 [Azure Active Directory 포털에서 삭제](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)해야 합니다.
 

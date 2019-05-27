@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5299ef8c0159592c9754f886fe1c3d90a6637599
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508689"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765368"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>디바이스 기반 조건부 액세스 정책 만들기
 
@@ -97,3 +97,5 @@ Intune을 통해 액세스 제어에 모바일 디바이스 규정 준수를 추
 
 ## <a name="see-also"></a>참고 항목
 [Intune을 사용하는 앱 기반 조건부 액세스](app-based-conditional-access-intune.md)
+
+[Troubleshooting Intune conditional access](https://support.microsoft.com/help/4456106)(Intune 조건부 액세스 문제 해결)

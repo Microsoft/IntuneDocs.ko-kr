@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 96a0da69cdb77ae36ce2456186593f5c334c870c
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510127"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765408"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -567,4 +567,6 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 - [PKCS 인증서 사용](certficates-pfx-configure.md) 또는 [Symantec PKI 관리자 웹 서비스에서 PKCS 인증서 발급](certificates-symantec-configure.md)
 - [Intune으로 SCEP를 사용하기 위해 타사 CA 추가](certificate-authority-add-scep-overview.md)
-- 추가 지원이 필요하면 [Microsoft Intune에서 SCEP 인증서 프로필 배포 문제 해결](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) 가이드를 참조하세요.
+- 추가 지원이 필요한 경우 다음 가이드를 사용합니다.
+  - [Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481)(Microsoft Intune에서 SCEP 인증서 프로필 배포 문제 해결)
+  - [Troubleshooting NDES configuration for use with Microsoft Intune certificate profiles](https://support.microsoft.com/help/4459540)(Microsoft Intune 인증서 프로필과 함께 사용할 NDES 구성 문제 해결)

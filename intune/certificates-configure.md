@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 40d8b3d14411827642661b01929d17e83a5198ad
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508278"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765350"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune에서 디바이스에 대한 인증서 프로필 구성
 
@@ -133,3 +133,9 @@ SCEP 또는 PKCS 인증서 프로필을 만들기 전에 신뢰할 수 있는 �
 [디바이스 프로필 할당](device-profile-assign.md)  
 [S/MIME를 사용하여 이메일 서명 및 암호화](certificates-s-mime-encryption-sign.md)  
 [타사 인증 기관 사용](certificate-authority-add-scep-overview.md)
+
+## <a name="see-also"></a>참고 항목
+
+[Troubleshooting NDES configuration for use with Microsoft Intune certificate profiles](https://support.microsoft.com/help/4459540)(Microsoft Intune 인증서 프로필과 함께 사용할 NDES 구성 문제 해결)
+
+[Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481)(Microsoft Intune에서 SCEP 인증서 프로필 배포 문제 해결)

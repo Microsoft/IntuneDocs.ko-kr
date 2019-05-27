@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eef5524cff3ce29e802ca8078ba2b5e104e89775
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7ba5ca4dcd8e43d63e98c281cac3487def8a0045
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490161"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765329"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune에 iOS 디바이스 등록
 
@@ -85,3 +85,6 @@ Mac 컴퓨터에서 실행되는 Apple Configurator를 사용하여 iOS 디바�
 
 사용자 선호도가 필요한 경우 디바이스를 등록하기 전에 디바이스의 등록 프로필에서 **사용자 선호도**가 선택되어 있어야 합니다. 디바이스에서 선호도 상태를 변경하려면 디바이스를 사용 중지한 후 다시 등록해야 합니다.
 
+## <a name="see-also"></a>참고 항목
+
+[Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809)(Microsoft Intune에서 iOS 디바이스 등록 문제 해결)
