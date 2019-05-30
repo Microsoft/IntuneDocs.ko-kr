@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3724f2494dd4e4fe7939a9be87a30e1bc5bfbf27
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513582"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047707"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune에서 Intune 온-프레미스 Exchange Connector 설정
 이 문서의 정보는 Intune용 Exchange Active Sync 온-프레미스 커넥터를 설치하고 모니터링하는 데 도움이 됩니다.  Intune 온-프레미스 Exchange Connector를 [조건부 액세스 정책과 함께 사용하여 Exchange 온-프레미스 사서함에 대한 액세스를 허용 또는 차단](conditional-access-exchange-create.md)할 수 있습니다. 

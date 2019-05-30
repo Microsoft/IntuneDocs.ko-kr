@@ -7,7 +7,6 @@ ms.author: tanvira
 manager: smantri
 ms.date: 4/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebefba3f912669166e5e077fe15b0b04f4a7b75f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5c47a7413d98467fffc26dee098a64cfeac770e4
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490013"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043556"
 ---
 # <a name="work-with-existing-on-premises-proxy-servers"></a>기존 온-프레미스 프록시 서버 작업
 
 이 문서에서는 아웃바운드 프록시 서버와 함께 작동하도록 Active Directory용 Intune Connector를 구성하는 방법을 설명합니다. 이 문서는 네트워크 환경에 기존 프록시가 있는 고객을 위해 작성되었습니다.
 
-커넥터의 작동 방식에 대한 자세한 내용은 [Azure AD 애플리케이션 프록시 커넥터의 이해](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-connectors)를 참조하세요.
+커넥터의 작동 방식에 대한 자세한 내용은 [Azure AD 애플리케이션 프록시 커넥터의 이해](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors)를 참조하세요.
 
 ## <a name="bypass-outbound-proxies"></a>아웃바운드 프록시 바이패스
 

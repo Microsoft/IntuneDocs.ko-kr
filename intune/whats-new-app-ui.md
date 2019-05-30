@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61518173"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046435"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적으로 Intune 회사 포털 앱이 추가되고 웹 사이트가 개선됩니다. 이 문서에서는 Intune 관리자 또는 지원 담당자가 다음 작업을 수행하는 데 필요한 정보를 제공합니다.

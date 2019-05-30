@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
-ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
+ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65816299"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050348"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포
 Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Active Directory) 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 이 문서의 단계를 수행합니다.
@@ -107,7 +106,7 @@ Active Directory용 Intune Connector는 온-프레미스 Active Directory 도메
 Active Directory용 Intune Connector는 Windows Server 2016 이상을 실행하는 컴퓨터에 설치해야 합니다. 컴퓨터가 인터넷과 Active Directory에 액세스할 수 있어야 합니다. 규모와 및 가용성을 늘리거나 여러 Active Directory 도메인을 지원하기 위해 환경에 여러 개의 커넥터를 설치할 수 있습니다. 다른 Intune 커넥터를 실행하지 않는 서버에 커넥터를 설치하는 것이 좋습니다.
 
 1. [Intune Connector(미리 보기) 언어 요구 사항](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector)에 설명된 대로 언어 팩을 설치 및 구성했는지 확인합니다.
-2. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **Active Directory용 Intune Connector(미리 보기)** > **커넥터 추가**를 차례로 선택합니다. 
+2. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **Active Directory용 Intune Connector(미리 보기)**  > **커넥터 추가**를 차례로 선택합니다. 
 3. 지침에 따라 커넥터를 다운로드합니다.
 4. 다운로드한 커넥터 설치 파일, *ODJConnectorBootstrapper.exe*를 열어서 커넥터를 설치합니다.
 5. 설치가 끝나면 **구성**을 선택합니다.
@@ -140,7 +139,7 @@ Active Directory용 Intune Connector는 Windows Server 2016 이상을 실행하�
 
 1. 멤버 자격 유형에 **동적 디바이스**를 선택한 경우 **그룹** 창에서 **동적 디바이스 멤버**를 선택한 다음, **고급 규칙** 상자에서 다음 중 하나를 수행합니다.
     - Autopilot 디바이스를 모두 포함하는 그룹을 만들려면 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`를 입력합니다.
-    - 특정 주문 ID로 Autopilot 디바이스가 모두 포함된 그룹을 만들려면 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`을 입력합니다.
+    - Intune의 그룹 태그 필드는 Azure AD 디바이스의 OrderID 특성에 해당합니다. 특정 그룹 태그(OrderID)를 사용하여 모든 Autopilot 디바이스를 포함하는 그룹을 만들려는 경우  `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`를 입력해야 합니다.
     - 특정 구매 주문 ID로 Autopilot 디바이스가 모두 포함된 그룹을 만들려면 `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`를 입력합니다.
     
 1. **저장**을 선택합니다.

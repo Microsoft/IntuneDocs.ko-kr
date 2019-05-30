@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992892"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041662"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 및 앱 보호에 대한 질문과 대답
 
@@ -220,6 +219,6 @@ Intune 앱 보호 정책은 디바이스를 관리하지 않고는 iOS 공유 �
 - [Microsoft Intune의 Android 모바일 앱 관리 정책 설정](app-protection-policy-settings-android.md)
 - [iOS 모바일 앱 관리 정책 설정](app-protection-policy-settings-ios.md)
 - [앱 보호 정책 새로 고침](app-protection-policy-delivery.md)
-- [앱 보호 정책 유효성 검사](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
+- [앱 보호 정책 유효성 검사](app-protection-policy-delivery.md)
 - [디바이스 등록 없이 관리되는 앱용 앱 구성 정책 추가](app-configuration-policies-managed-app.md)
 - [Microsoft Intune에 대한 관리 지원을 받는 방법](get-support.md)

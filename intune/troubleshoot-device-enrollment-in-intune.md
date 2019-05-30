@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -19,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509226"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040592"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -242,7 +241,7 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 3.  AD FS 서비스 통신용 인증서(공개 서명된 인증서)를 찾은 다음 두 번 클릭하여 해당 속성을 확인합니다.
 4.  **인증 경로** 탭을 선택하여 해당 인증서의 상위 인증서를 확인합니다.
 5.  각 상위 인증서에서 **인증서 보기**를 선택합니다.
-6.  **세부 정보** > **파일에 복사...** 를 선택합니다.
+6.  **세부 정보** > **파일에 복사... **를 선택합니다.
 7.  마법사의 프롬프트에 따라 부모 인증서의 공개 키를 선택한 파일 위치에 내보내거나 저장합니다.
 8.  **인증서** > **모든 작업** > **가져오기**를 마우스 오른쪽 단추로 클릭합니다.
 9.  마법사의 메시지에 따라 상위 인증서를 **LocalComputer\Personal\Certificates**로 가져옵니다.

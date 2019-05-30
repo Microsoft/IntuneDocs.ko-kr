@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 02/12/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3af9fbfa5bb1a9c6ebd9ebd0f20a55677c48b755
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509979"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66039660"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>업데이트에 대한 Intune 규정 준수 보고서
 Intune을 사용하여 Windows 10 디바이스에 Windows 업데이트를 배포할 때 Intune 또는 Microsoft OMS(Operations Management Suite)의 일부인 *업데이트 규정 준수*라는 무료 솔루션을 사용하여 업데이트 규정 준수에 대한 세부 정보를 살펴보세요.

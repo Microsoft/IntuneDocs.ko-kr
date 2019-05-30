@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
+ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975816"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264163"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -45,8 +44,20 @@ ms.locfileid: "65975816"
 
 -->  
 
-
 <!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>2019년 5월 20일 주 
+
+### <a name="app-management"></a>앱 관리
+
+#### <a name="windows-company-portal-app----3316993---"></a>Windows 회사 포털 앱 <!-- 3316993 -->
+이제 Windows 회사 포털 앱에 **디바이스**로 레이블이 지정된 새 페이지가 생깁니다. **디바이스** 페이지는 최종 사용자에게 등록된 모든 디바이스를 보여줍니다. 사용자는 버전 10.3.4291.0 이상을 사용할 때 회사 포털에서 이 변경 사항을 볼 수 있습니다. 회사 포털 구성에 대한 정보는 [Microsoft Intune 회사 포털 앱을 구성하는 방법](company-portal-app.md)을 참조하세요.
+
+### <a name="device-enrollment"></a>디바이스 등록
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot 디바이스 OrderID 특성 이름이 그룹 태그로 변경됨 <!-- 4659453 -->
+
+더 직관적이 되도록 Autopilot 디바이스의 **OrderID** 특성 이름이 **그룹 태그**로 변경되었습니다. CSV를 사용하여 Autopilot 디바이스 정보를 업로드하는 경우 OrderID가 아닌 열 머리글로 그룹 태그를 사용해야 합니다.  
 
 ## <a name="week-of-may-13-2019"></a>2019년 5월 13일 주 
 
@@ -64,7 +75,7 @@ Apple의 회사 디바이스 등록 방법 중 하나를 통해 설정 도우미
 
 사용자가 App Store에서 회사 포털 앱을 설치한 다음, 이 앱을 통해 이러한 디바이스를 등록하는 경우 오류가 발생합니다. 이 디바이스는 등록 중에 Intune에서 자동으로 푸시된 경우에만 회사 포털을 사용해야 합니다. Azure Portal에서 Intune의 등록 프로필이 업데이트되므로 디바이스 인증 방법 및 디바이스가 회사 포털 앱을 받는 방법을 지정할 수 있습니다. DEP 디바이스 사용자가 회사 포털을 사용하도록 하려면 등록 프로필에서 기본 설정을 지정해야 합니다. 
 
-또한 iOS 회사 포털 앱에서 **디바이스 식별** 화면이 제거될 예정입니다. 따라서 조건부 액세스를 사용하거나 회사 앱을 배포하려는 관리자는 DEP 등록 프로필을 업데이트해야 합니다. 이 요구 사항은 DEP 등록이 설정 도우미에서 인증된 경우에만 적용됩니다. 이러한 경우 디바이스에 회사 포털을 푸시해야 합니다. 이렇게 하려면 **Intune** > **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 토큰 > **프로필**을 선택한 후 프로필 > **속성**을 선택하고 **회사 포털 설치**를 **True**로 설정합니다.
+또한 iOS 회사 포털 앱에서 **디바이스 식별** 화면이 제거될 예정입니다. 따라서 조건부 액세스를 사용하거나 회사 앱을 배포하려는 관리자는 DEP 등록 프로필을 업데이트해야 합니다. 이 요구 사항은 DEP 등록이 설정 도우미에서 인증된 경우에만 적용됩니다. 이러한 경우 디바이스에 회사 포털을 푸시해야 합니다. 이렇게 하려면 **Intune** > **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 토큰 > **프로필**을 선택한 후 프로필 > **속성**을 선택하고 **회사 포털 설치**를 **예**로 설정합니다.
 
 이미 등록된 DEP 디바이스에 회사 포털을 설치하려면 Intune > 클라이언트 앱으로 이동하고 앱 구성 정책을 사용하여 이 앱을 관리형 앱으로 푸시해야 합니다. 
 
@@ -408,7 +419,7 @@ Intune에서 Azure Monitor의 감사 및 작업 로그를 이벤트 허브, 스�
 로그를 Azure Monitor로 라우팅하는 방법에 대한 자세한 내용은 [Intune에서 스토리지, 이벤트 허브 또는 로그 분석에 로그 데이터 전송](review-logs-using-azure-monitor.md)을 참조하세요.
 
 #### <a name="create-and-use-mobility-extensions-on-android-zebra-devices-in-intune----3305880-----"></a>Intune의 Android Zebra 디바이스에서 이동성 확장 만들기 및 사용 <!-- 3305880   -->
-이 업데이트에서 Intune은 Android Zebra 디바이스 구성을 지원합니다. 특히 디바이스 구성 프로필을 만들고 StageNow에서 생성된 MX(Mobility Extensions) 프로필을 사용하여 설정을 Android Zebra 디바이스에 적용할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에 대해 **Android** > 프로필 유형에 대해 **MX 프로필(Zebra만)**).
+이 업데이트에서 Intune은 Android Zebra 디바이스 구성을 지원합니다. 특히 디바이스 구성 프로필을 만들고 StageNow에서 생성된 MX(Mobility Extensions) 프로필을 사용하여 설정을 Android Zebra 디바이스에 적용할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에 대해 **Android** > 프로필 유형에 대해 **MX 프로필(Zebra만)** ).
 
 이 기능에 대한 자세한 내용은 [Intune에서 이동성 확장을 통해 Zebra 디바이스 사용 및 관리](android-zebra-mx-overview.md)를 참조하세요.
 
@@ -582,7 +593,7 @@ Android Enterprise
 iOS 디바이스의 경우 Safari 설정을 설정하고 소프트웨어 업데이트를 구성할 수 있습니다. 이 업데이트에서 이러한 설정은 다음과 같이 Intune UI의 다른 파트로 이동합니다.
 
 - Safari 설정은 **Safari**(**디바이스 구성** > **프로필** > **새 프로필** > 플랫폼에 대해 **iOS** > 프로필 유형에 대해 **디바이스 제한**)에서 **[기본 제공 앱](device-restrictions-ios.md#built-in-apps)** 으로 이동합니다.
-- **감독되는 iOS 디바이스에 대한 사용자 소프트웨어 업데이트 표시 지연** 설정(**소프트웨어 업데이트** > **iOS용 정책 업데이트**)은 **디바이스 제한** > **[일반](device-restrictions-ios.md#general)** 으로 이동합니다.  기존 정책에 미치는 영향에 대한 자세한 내용은 [iOS 소프트웨어 업데이트](software-updates-ios.md#configure-the-policy)를 참조하세요. 
+- **감독되는 iOS 디바이스에 대한 사용자 소프트웨어 업데이트 표시 지연** 설정(**소프트웨어 업데이트** > **iOS용 정책 업데이트**)은 **디바이스 제한** >  **[일반](device-restrictions-ios.md#general)** 으로 이동합니다.  기존 정책에 미치는 영향에 대한 자세한 내용은 [iOS 소프트웨어 업데이트](software-updates-ios.md#configure-the-policy)를 참조하세요. 
 
 설정 목록은 다음을 참조하세요.
 
@@ -907,7 +918,7 @@ Android 엔터프라이즈, 다중 앱, 키오스크 모드 디바이스에서 �
 키오스크 설정을 확인하려면 [Android Enterprise 디바이스 제한 사항](device-restrictions-android-for-work.md)을 참조하세요.
 
 #### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>앱 보호 정책 할당 저장 및 적용 <!-- 3104570 -->
-이제 [앱 보호 정책 할당](app-protection-policies.md#deploy-a-policy-to-users)을 더 효율적으로 제어할 수 있습니다. ‘할당’을 선택하여 정책 할당을 설정하거나 편집할 경우 변경을 적용하기 전에 구성을 **저장**해야 합니다. 포함 또는 제외 목록의 변경 내용을 저장하지 않고 모든 변경 내용을 지우려면 **취소**를 사용합니다.  저장 또는 취소를 선택하도록 요구하여 의도한 사용자에게만 앱 보호 정책을 할당합니다.
+이제 [앱 보호 정책 할당](app-protection-policies.md#deploy-a-policy-to-users)을 더 효율적으로 제어할 수 있습니다. ‘할당’을 선택하여 정책 할당을 설정하거나 편집할 경우 변경을 적용하기 전에 구성을 **저장**해야 합니다.  포함 또는 제외 목록의 변경 내용을 저장하지 않고 모든 변경 내용을 지우려면 **취소**를 사용합니다.  저장 또는 취소를 선택하도록 요구하여 의도한 사용자에게만 앱 보호 정책을 할당합니다.
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Windows 10 이상에 대한 새 Microsoft Edge 브라우저 설정 <!-- 3174639 -->
 이 업데이트에는 디바이스에서 Microsoft Edge 브라우저를 제어하고 관리하는 데 도움이 되는 새 설정이 포함됩니다. 이러한 설정 목록은 [Windows 10(이상)에 대한 디바이스 제한](device-restrictions-windows-10.md#microsoft-edge-browser)을 참조하세요.
@@ -1122,7 +1133,7 @@ Microsoft Graph를 통해 Intune API를 지원하는 새로운 PowerShell 모듈
 ## <a name="week-of-october-15-2018"></a>2018년 10월 15일이 있는 주
 
 ### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>iOS 디바이스에서 지문 또는 얼굴 ID를 변경할 때 표시되는 PIN 프롬프트  <!-- 2637704  -->
-이제 iOS 디바이스에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.  PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다. 
+이제 iOS 디바이스에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.   PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다. 
  
 이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 9.0.1 이상을 통합하는 애플리케이션의 참여가 필요합니다. 대상 애플리케이션에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 애플리케이션 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
 

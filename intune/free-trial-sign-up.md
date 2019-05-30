@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: quickstart
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 325428f99c50ac4d2eede35d4aaadd858cd8b136
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61514914"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047662"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>빠른 시작: Microsoft Intune 평가판 체험 
 

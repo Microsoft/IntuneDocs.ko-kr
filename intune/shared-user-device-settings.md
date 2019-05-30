@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cf06508cc21682a580c09e8207343b09e39eb
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a5064a9065dba75f3594f2e6bb6fb36b42be2e2
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506681"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044970"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>Intune을 사용하여 공유 PC 또는 다중 사용자 디바이스에서 액세스, 계정 및 전원 기능 제어
 

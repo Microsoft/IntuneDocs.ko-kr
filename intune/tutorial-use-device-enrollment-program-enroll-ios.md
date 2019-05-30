@@ -8,21 +8,20 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e006ce1be5a19d0557ef0a5d6046afea2c13986
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: faceee883194dbbdcec83f282806035ffc0432d1
+ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135168"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174170"
 ---
-# <a name="tutorial-use-apples-corpoate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>자습서: ABM(Apple Business Manager)의 Apple 기업 디바이스 등록 기능을 사용하여 Intune에서 iOS 디바이스 등록
+# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>자습서: ABM(Apple Business Manager)의 Apple 기업 디바이스 등록 기능을 사용하여 Intune에서 iOS 디바이스 등록
 Apple Business Manager의 디바이스 등록 기능을 사용하면 디바이스를 간단하게 등록할 수 있습니다. Intune에서는 Apple의 이전 DEP(디바이스 등록 프로그램) 포털도 지원하지만 이제 새 Apple Business Manager를 사용하는 것이 좋습니다. Microsoft Intune 및 Apple Corporate Device Enrollment를 사용할 경우 사용자가 처음 디바이스를 켜면 자동으로 디바이스가 안전하게 등록됩니다. 따라서 각 디바이스를 개별적으로 설정하지 않고도 여러 사용자에게 디바이스를 제공할 수 있습니다. 
 
 이 자습서에서는 다음 작업을 수행하는 방법을 알아봅니다.

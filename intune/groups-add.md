@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 06/13/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e0e3994addf8722adc8606f20517bcd4aeb7acd
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b11829bad3091b24bead99afc08dc5cdc01f0a0c
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61514091"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047654"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>사용자 및 디바이스를 구성하기 위한 그룹 추가
 Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사용자를 관리합니다. Intune 관리자의 경우 조직의 요구에 맞게 그룹을 설정할 수 있습니다. 그룹을 만들어 지리적 위치, 부서 또는 하드웨어 특성별로 사용자 또는 디바이스를 구성합니다. 그룹을 사용하여 대규모 작업을 관리합니다. 예를 들어 많은 사용자에 대해 정책을 설정하거나 디바이스 집합에 앱을 배포할 수 있습니다.
