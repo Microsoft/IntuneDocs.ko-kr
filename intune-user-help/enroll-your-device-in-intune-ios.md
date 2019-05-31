@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/05/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0c7ac239a67a51ba7165771206883f3c46f5f55
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: HT
+ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292427"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196869"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>회사 리소스에 대한 iOS 디바이스 액세스 설정  
 
@@ -31,7 +31,9 @@ Intune 회사 포털 앱으로 iOS 디바이스를 등록하여 조직의 이메
 
 디바이스가 등록되면 *관리*됩니다. 조직은 Intune과 같은 MDM(모바일 디바이스 관리) 공급자를 통해 디바이스에 정책과 앱을 할당할 수 있습니다.  
 
-디바이스에서 회사 또는 학교 정보에 대한 액세스를 유지 관리하려면 조직의 기본 설정과 일치하도록 디바이스를 구성해야 합니다. 이 문서에서는 회사 포털을 사용하여 디바이스를 등록하고 조직의 설정 요구 사항을 유지 관리하는 방법을 설명합니다. 
+디바이스에서 회사 또는 학교 정보에 대한 액세스를 유지 관리하려면 조직의 기본 설정과 일치하도록 디바이스를 구성해야 합니다. 이 문서에서는 회사 포털을 사용하여 디바이스를 등록하고 조직의 설정 요구 사항을 유지 관리하는 방법을 설명합니다.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c?rel=0]
 
 > [!NOTE]
 > Mail 앱에서 회사 메일에 액세스하려고 하는데 디바이스를 관리할지 묻는 메시지가 표시되면 적절한 위치에 있는 것입니다. 아래 지침에 따라 iOS 디바이스에서 메일 및 기타 회사 리소스에 대한 액세스 권한을 얻습니다.  
@@ -39,7 +41,7 @@ Intune 회사 포털 앱으로 iOS 디바이스를 등록하여 조직의 이메
 ## <a name="what-to-expect-from-the-company-portal-app"></a>회사 포털 앱에서 예상되는 상황  
 
 ### <a name="security"></a>보안  
-초기 설정 중 앱에서는 조직에 사용자를 인증하도록 요구합니다. 그런 다음, 업데이트해야 하는 디바이스 설정을 알려줍니다. 예를 들어 조직은 종종 사용자가 충족해야 하는 최소 또는 최대 문자 암호 요구 사항을 설정합니다.     
+초기 설정 중 앱에서는 조직에 사용자를 인증하도록 요구합니다. 그런 다음, 업데이트해야 하는 디바이스 설정을 알려줍니다. 예를 들어 조직은 종종 사용자가 충족해야 하는 최소 또는 최대 문자 암호 요구 사항을 설정합니다.
 
 ### <a name="protection"></a>보호  
 디바이스가 등록된 후 회사 포털 앱은 디바이스가 보호되는지 계속해서 확인합니다. 예를 들어 신뢰할 수 없는 소스에서 앱을 설치하는 경우 앱은 사용자에게 경고하고 경우에 따라 회사 데이터에 대한 액세스를 취소합니다. 이러한 종류의 정책은 조직에서 일반적이며 사용자는 액세스 권한을 다시 얻기 전에 신뢰할 수 없는 앱을 제거해야 하는 경우가 있습니다.  
@@ -118,6 +120,9 @@ Intune 회사 포털 앱으로 iOS 디바이스를 등록하여 조직의 이메
 
 > [!Note]
 > 조직에서 음성 및 데이터 제한을 모니터링하거나 회사 소유 디바이스를 제공하는 경우 몇 가지 단계를 더 완료해야 할 수 있습니다. **Datalert** 앱을 설치하라는 메시지가 표시되면 [통신 비용 관리에 디바이스 등록](enroll-your-device-with-telecom-expense-management-ios.md)을 참조하세요. 조직이 Apple의 디바이스 등록 프로그램의 일부인 경우 [회사 소유 디바이스를 등록하는 방법](enroll-your-device-dep-ios.md)을 알아봅니다.  
+
+## <a name="it-administrator-support"></a>IT 관리자 지원  
+IT 관리자가 디바이스를 등록하는 동안 문제가 발생하면 [Microsoft Intune에서 iOS 디바이스 등록 문제 해결](https://support.microsoft.com/en-us/help/4039809)을 참조하세요. 이 문서에는 일반적인 오류와 그 원인 및 해결 단계가 나열되어 있습니다.  
 
 ## <a name="next-steps"></a>다음 단계  
 회사 또는 학교에 도움이 되는 앱을 찾습니다. 회사 포털을 통해 [앱을 사용할 수 있는 방법](use-managed-apps-on-your-device-ios.md)을 알아봅니다.  

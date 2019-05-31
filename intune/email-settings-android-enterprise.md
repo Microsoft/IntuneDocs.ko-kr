@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6c6c6e3e999e44ad6a07b4d8bdc1ddf9c400cf7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7e37d6a2b7371cf20cd36a6f3f75a4dd252c332f
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565454"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048040"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune에서 이메일, 인증 및 동기화를 구성하기 위한 Android Enterprise 디바이스 설정
 
@@ -43,15 +42,15 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
   - **사용자 계정 이름**: `user1` 또는 `user1@contoso.com`과 같은 이름을 가져옵니다.
   - **사용자 이름**: `user1`과 같은 이름만 가져옵니다.
 
-- **AAD의 메일 주소 특성**:이 이름은 Intune이 Azure AD에서 가져오는 전자 메일 특성입니다. Intune은 이 프로필에서 사용되는 이메일 주소를 동적으로 생성합니다. 옵션은 다음과 같습니다.
+- **AAD의 이메일 주소 특성**: 이 이름은 Intune이 Azure AD에서 가져오는 이메일 특성입니다. Intune은 이 프로필에서 사용되는 이메일 주소를 동적으로 생성합니다. 옵션은 다음과 같습니다.
   - **사용자 계정 이름**: `user1@contoso.com` 또는 `user1`과 같은 전체 사용자 계정 이름을 이메일 주소로 사용합니다.
-  - **기본 SMTP 주소**:와 같은 기본 SMTP 주소를 사용 하 여 `user1@contoso.com`, Exchange에 로그인 합니다.
+  - **기본 SMTP 주소**: `user1@contoso.com`과 같은 기본 SMTP 주소를 사용하여 Exchange에 로그인합니다.
 
 - **인증 방법**: 이메일 프로필에서 사용되는 인증 방법으로 **사용자 이름 및 암호** 또는 **인증서**를 선택합니다.
   - **인증서**를 선택한 경우 Exchange 연결을 인증하기 위해 이전에 만든 클라이언트 SCEP 또는 PKCS 인증서 프로필을 선택합니다.
 - **SSL**: 이메일을 보내고, 이메일을 받고, Exchange Server와 통신할 때 SSL(Secure Sockets Layer) 통신을 사용하려면 **사용**을 선택합니다.
-- **동기화 할 메일 양**: 동기화 할 메일의 기간을 선택 합니다. 또는 **무제한**을 선택하여 사용 가능한 모든 이메일을 동기화합니다.
-- **동기화 할 콘텐츠 형식** (Nine Work에만 해당): 장치에 동기화 할 데이터를 선택 합니다. 옵션은 다음과 같습니다.
+- **동기화할 이메일 양**: 동기화할 이메일의 시간을 선택합니다. 또는 **무제한**을 선택하여 사용 가능한 모든 이메일을 동기화합니다.
+- **동기화할 콘텐츠 형식**(Nine Work만 해당): 디바이스에서 동기화할 데이터를 선택합니다. 옵션은 다음과 같습니다.
   - **연락처**: 최종 사용자가 연락처를 해당 디바이스에 동기화할 수 있도록 하려면 **사용**을 선택합니다.
   - **일정**: 최종 사용자가 일정을 해당 디바이스에 동기화할 수 있도록 하려면 **사용**을 선택합니다.
   - **작업**: 최종 사용자가 모든 작업을 해당 디바이스에 동기화할 수 있도록 하려면 **사용**을 선택합니다.

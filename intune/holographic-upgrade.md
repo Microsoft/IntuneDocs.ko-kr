@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c6a2f4fc3e3cae171cea96520d075a659d4d1ca
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c268785e3cce7477203e78f321af15c5067d51ae
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566338"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041762"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Windows Holographic을 실행하는 디바이스를 Windows Holographic for Business로 업그레이드
 
@@ -37,7 +36,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 �
 
 ## <a name="edition-upgrade"></a>버전 업그레이드
 
-- **업그레이드할 버전**: 선택 **Windows 10 Holographic for Business**합니다.
+- **업그레이드할 버전**: **Windows 10 Holographic for Business**를 선택합니다.
 - **라이선스 파일**: 제공된 XML 라이선스 파일을 찾아 선택합니다.
 
   ![Holographic for Business 라이선스 정보가 포함된 XML 파일 이름 입력](media/Holographic-edition-upgrade.png)

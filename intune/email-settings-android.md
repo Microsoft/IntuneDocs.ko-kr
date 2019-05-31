@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/15/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94f907ee8805c5f0559e8751a7cd69bacf1612ee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 647e1cd6925df27d42186599ad6786e866742b44
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565506"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042274"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune에서 이메일, 인증 및 동기화를 구성하기 위한 Android 디바이스 설정
 
@@ -52,9 +51,9 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
       **사용자 지정** 특성을 사용하도록 선택할 때 다음을 입력합니다.
       - **사용할 사용자 지정 도메인 이름**: Intune이 도메인 이름(예: `contoso.com` 또는 `contoso`)에 사용하는 값을 입력합니다.
 
-- **AAD의 메일 주소 특성**:이 이름은 Intune이 Azure AD에서 가져오는 전자 메일 특성입니다. Intune은 이 프로필에서 사용되는 이메일 주소를 동적으로 생성합니다. 옵션은 다음과 같습니다.
+- **AAD의 이메일 주소 특성**: 이 이름은 Intune이 Azure AD에서 가져오는 이메일 특성입니다. Intune은 이 프로필에서 사용되는 이메일 주소를 동적으로 생성합니다. 옵션은 다음과 같습니다.
   - **사용자 계정 이름**: `user1@contoso.com` 또는 `user1`과 같은 전체 사용자 계정 이름을 이메일 주소로 사용합니다.
-  - **기본 SMTP 주소**:와 같은 기본 SMTP 주소를 사용 하 여 `user1@contoso.com`, Exchange에 로그인 합니다.
+  - **기본 SMTP 주소**: `user1@contoso.com`과 같은 기본 SMTP 주소를 사용하여 Exchange에 로그인합니다.
 
 - **인증 방법**: 이메일 프로필에서 사용되는 인증 방법으로 **사용자 이름 및 암호** 또는 **인증서** 중 하나를 선택합니다.
   - **인증서**를 선택한 경우 Exchange 연결을 인증하기 위해 이전에 만든 클라이언트 SCEP 또는 PKCS 인증서 프로필을 선택합니다.

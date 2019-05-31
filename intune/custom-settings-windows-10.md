@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44be460ee910818d52179da55151d1bceeb8b306
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 5f1935ff839b9e2aa97d002bd98d1f5dac87c390
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565913"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043044"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 대한 사용자 지정 사용
 
@@ -83,7 +82,7 @@ Windows 10에서는 [정책 CSP(구성 서비스 공급자)](https://technet.mic
 
 일부 Windows 10 버전과 호환되지 않는 설정도 있습니다. [구성 서비스 공급자 참조](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference)는 각 CSP에 지원되는 버전을 알려 줍니다.
 
-또한 Intune은 [구성 서비스 공급자 참조](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference)에 나열된 모든 설정을 지원하지 않습니다. 원하는 설정을 Intune에서 지원하는지 확인하려면 해당 설정에 대한 아티클을 엽니다. 각 설정 페이지는 지원되는 작업이 표시됩니다. Intune으로 작업하려면 설정에서 **추가**, **대체** 및 **가져오기** 작업을 지원해야 합니다. 값을 반환한 경우는 **가져옵니다** 작업에 제공한 값과 일치 하지 않습니다는 **추가** 또는 **대체** 작업 후 Intune 규정 준수 오류를 보고 합니다.
+또한 Intune은 [구성 서비스 공급자 참조](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference)에 나열된 모든 설정을 지원하지 않습니다. 원하는 설정을 Intune에서 지원하는지 확인하려면 해당 설정에 대한 아티클을 엽니다. 각 설정 페이지는 지원되는 작업이 표시됩니다. Intune으로 작업하려면 설정에서 **추가**, **대체** 및 **가져오기** 작업을 지원해야 합니다. **Get** 작업에서 반환된 값이 **추가** 또는 **교체** 작업에서 제공한 값과 일치하지 않으면 Intune에서 규정 준수 오류를 보고합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429694"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046966"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 키오스크로 실행하는 Windows 10 이상 디바이스 설정
 
@@ -36,40 +35,40 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
 - [프로필을 만듭니다](kiosk-settings.md#create-the-profile).
 
-- 이 키오스크 프로필 직접 관련이 장치 제한 프로필을 사용 하 여 만든 합니다 [Microsoft Edge 키오스크 설정을](device-restrictions-windows-10.md#microsoft-edge-browser)합니다. 요약:
+- 이 키오스크 프로필은 [Microsoft Edge 키오스크 설정](device-restrictions-windows-10.md#microsoft-edge-browser)을 사용하여 생성한 디바이스 제한 프로필과 직접 연관이 됩니다. 요약:
 
-  1. 장치가 키오스크 모드에서 실행 되도록이 키오스크 프로필을 만듭니다.
-  2. 만들기는 [장치 제한 프로필](device-restrictions-windows-10.md#microsoft-edge-browser), 특정 기능 및 Microsoft Edge에서 허용 하는 설정을 구성 합니다.
+  1. 이 키오스크 프로필을 만들어 디바이스를 키오스크 모드로 실행합니다.
+  2. [디바이스 제한 프로필](device-restrictions-windows-10.md#microsoft-edge-browser)을 만들고 Microsoft Edge에서 허용되는 특정 기능 및 설정을 구성합니다.
 
 > [!IMPORTANT] 
-> 이 키오스크 프로필을 동일한 장치에 할당 해야 하 [Microsoft Edge 프로필](device-restrictions-windows-10.md#microsoft-edge-browser)합니다.
+> 이 키오스크 프로필을 [Microsoft Edge 프로필](device-restrictions-windows-10.md#microsoft-edge-browser)과 동일한 디바이스에 할당해야 합니다.
 
 ## <a name="single-full-screen-app-kiosks"></a>단일 전체 화면 앱 키오스크
 
-장치에서 하나의 앱만 실행 됩니다.
+디바이스에서 하나의 앱만 실행됩니다.
 
-- **키오스크 모드를 선택**: 선택 **단일 앱을 전체 화면 키오스크**합니다.
+- **키오스크 모드 선택**: **단일 앱의 전체 화면 키오스크**를 선택합니다.
 
 - **사용자 로그온 유형**: 추가한 앱이 입력한 사용자 계정으로 실행됩니다. 옵션은 다음과 같습니다.
 
-  - **자동 로그온(Windows 10 버전 1803 이상)**: 게스트 계정과 유사하게 사용자가 로그인할 필요가 없는 공용 환경의 키오스크에서 사용합니다. 이 설정은 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)를 사용합니다.
-  - **로컬 사용자 계정**: 로컬(디바이스 기준) 사용자 계정을 입력합니다. 키오스크에 로그인을 입력 하는 계정입니다.
+  - **자동 로그온(Windows 10 버전 1803 이상)** : 게스트 계정과 유사하게 사용자가 로그인할 필요가 없는 공용 환경의 키오스크에서 사용합니다. 이 설정은 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)를 사용합니다.
+  - **로컬 사용자 계정**: 로컬(디바이스 기준) 사용자 계정을 입력합니다. 입력한 계정이 키오스크에 로그인됩니다.
 
-- **응용 프로그램 유형을**: 응용 프로그램 유형을 선택 합니다. 옵션은 다음과 같습니다.
+- **애플리케이션 유형**: 애플리케이션 유형을 선택합니다. 옵션은 다음과 같습니다.
 
-  - **Microsoft Edge 브라우저를 추가**: 선택 **Microsoft Edge 브라우저**를 선택 합니다 **가장자리 키오스크 모드 유형**:
+  - **Microsoft Edge 브라우저 추가**: **Microsoft Edge 브라우저**를 선택하고 **Edge 키오스크 모드 유형**을 선택합니다.
 
-    - **디지털/대화형 간판**: URL 전체 화면에 열리고 해당 웹 사이트에 콘텐츠를 표시 합니다. [디지털 서명 설정](https://docs.microsoft.com/windows/configuration/setup-digital-signage) 이 기능에 대 한 자세한 정보를 제공 합니다.
-    - **공용 검색 (InPrivate)**: 제한 탭 다중 버전의 Microsoft Edge를 실행 합니다. 사용자는 공개적으로 이동 하거나 해당 검색 세션을 종료 수 있습니다.
+    - **디지털/대화형 서명**: URL 전체 화면이 열리고 해당 웹 사이트에 콘텐츠가 표시됩니다. [디지털 서명 설정](https://docs.microsoft.com/windows/configuration/setup-digital-signage)은 이 기능에 대한 자세한 정보를 제공합니다.
+    - **공용 검색(InPrivate)** : Microsoft Edge의 제한된 다중 탭 버전이 실행됩니다. 사용자는 공개적으로 찾아보거나 해당 검색 세션을 종료할 수 있습니다.
 
-    이러한 옵션에 대 한 자세한 내용은 참조 하세요. [Microsoft Edge 배포 키오스크 모드](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)합니다.
+    이러한 옵션에 대한 자세한 내용은 [Microsoft Edge 키오스크 모드 배포](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)를 참조하세요.
 
     > [!NOTE]
-    > 이 설정은 장치에서 Microsoft Edge 브라우저를 사용 하도록 합니다. Microsoft Edge 특정 설정을 구성 하려면 장치 구성 프로필 만들기 (**장치 구성** > **프로필** > **프로필만들기**  >  **Windows 10** 플랫폼용 > **장치 제한** >  **Microsoft Edge 브라우저**). [Microsoft Edge 브라우저](device-restrictions-windows-10.md#microsoft-edge-browser) 나열 하 고 사용 가능한 설정을 설명 합니다.
+    > 이 설정은 디바이스에서 Microsoft Edge 브라우저를 사용하도록 설정합니다. Microsoft Edge 특정 설정을 구성하려면 디바이스 구성 프로필을 만듭니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10** 플랫폼용 > **디바이스 제한** >  **Microsoft Edge 브라우저**). [Microsoft Edge 브라우저](device-restrictions-windows-10.md#microsoft-edge-browser)는 사용 가능한 설정을 나열하고 설명합니다.
 
     **확인**을 선택하여 변경 내용을 저장합니다.
 
-  - **키오스크 브라우저 추가**: 선택 **키오스크 브라우저 설정을**합니다. 이러한 설정은 키오스크에서 웹 브라우저 앱을 제어합니다. Store에서 [키오스크 브라우저 앱](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP)을 가져와서 Intune에 [클라이언트 앱](apps-add.md)으로 추가한 다음, 키오스크 디바이스에 앱을 할당해야 합니다.
+  - **키오스크 브라우저 추가**: **키오스크 브라우저 설정**을 선택합니다. 이러한 설정은 키오스크에서 웹 브라우저 앱을 제어합니다. Store에서 [키오스크 브라우저 앱](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP)을 가져와서 Intune에 [클라이언트 앱](apps-add.md)으로 추가한 다음, 키오스크 디바이스에 앱을 할당해야 합니다.
 
     다음 설정을 입력합니다.
 
@@ -96,7 +95,7 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
     **확인**을 선택하여 변경 내용을 저장합니다.
 
-  - **추가 스토어 앱**: 선택 **스토어 앱 추가**, 목록에서 앱을 선택 합니다.
+  - **스토어 앱 추가**: **스토어 앱 추가**를 선택하고 목록에서 앱을 선택합니다.
 
     나열된 앱이 없나요? [클라이언트 앱](apps-add.md)의 단계를 사용하여 일부 앱을 추가합니다.
 
@@ -104,34 +103,34 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
 ## <a name="multi-app-kiosks"></a>다중 앱 키오스크
 
-이 모드의 앱은 시작 메뉴에서 사용할 수 있습니다. 이러한 앱은 사용자가 열 수 있는 유일한 앱입니다. 앱 다른 앱에 종속 하는 경우 둘 다 허용 되는 앱 목록에 포함 되어야 합니다. 예를 들어, Internet Explorer 64 비트 있으므로 종속성 Internet Explorer 32 비트 "C:\Program Files\internet explorer\iexplore.exe"와 "C:\Program Files (x86) \Internet Explorer\iexplore.exe"를 허용 해야 합니다. 
+이 모드의 앱은 시작 메뉴에서 사용할 수 있습니다. 이러한 앱은 사용자가 열 수 있는 유일한 앱입니다. 앱이 다른 앱에 종속된 경우 두 앱 모두 허용되는 앱 목록에 포함되어야 합니다. 예를 들어, Internet Explorer 64비트가 Internet Explorer 32비트에 종속된 경우 “C:\Program Files\internet explorer\iexplore.exe” 및 “C:\Program Files (x86)\Internet Explorer\iexplore.exe”를 모두 허용해야 합니다. 
 
-- **키오스크 모드를 선택**: 선택 **다중 앱 키오스크**합니다.
+- **키오스크 모드 선택**: **다중 앱 키오스크**를 선택합니다.
 
 - **S 모드 디바이스에서 Windows 10을 대상으로 지정**:
   - **예**: 키오스크 프로필에 스토어 앱 및 AUMID 앱(Win32 앱 제외)을 허용합니다.
-  - **아니요**: 키오스크 프로필에 스토어 앱, Win32 앱 및 AUMID 앱을 허용합니다. 이 키오스크 프로필 S 모드 장치에 배포 되지 않습니다.
+  - **아니요**: 키오스크 프로필에 스토어 앱, Win32 앱 및 AUMID 앱을 허용합니다. 이 키오스크 프로필이 S 모드 디바이스에 배포되지 않습니다.
 
 - **사용자 로그온 유형**: 추가한 앱이 입력한 사용자 계정으로 실행됩니다. 옵션은 다음과 같습니다.
 
-  - **자동 로그온(Windows 10 버전 1803 이상)**: 게스트 계정과 유사하게 사용자가 로그인할 필요가 없는 공용 환경의 키오스크에서 사용합니다. 이 설정은 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)를 사용합니다.
-  - **로컬 사용자 계정**: 로컬(디바이스 기준) 사용자 계정을 **추가**합니다. 키오스크에 로그인을 입력 하는 계정입니다.
-  - **Azure AD 사용자 또는 그룹(Windows 10 버전 1803 이상)**: **추가**를 선택하고 목록에서 Azure AD 사용자 또는 그룹을 선택합니다. 여러 사용자 및 그룹을 선택할 수 있습니다. **선택**을 선택하여 변경 내용을 저장합니다.
+  - **자동 로그온(Windows 10 버전 1803 이상)** : 게스트 계정과 유사하게 사용자가 로그인할 필요가 없는 공용 환경의 키오스크에서 사용합니다. 이 설정은 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)를 사용합니다.
+  - **로컬 사용자 계정**: 로컬(디바이스 기준) 사용자 계정을 **추가**합니다. 입력한 계정이 키오스크에 로그인됩니다.
+  - **Azure AD 사용자 또는 그룹(Windows 10 버전 1803 이상)** : **추가**를 선택하고 목록에서 Azure AD 사용자 또는 그룹을 선택합니다. 여러 사용자 및 그룹을 선택할 수 있습니다. **선택**을 선택하여 변경 내용을 저장합니다.
   - **HoloLens 방문자**: 방문자 계정은 [공유된 PC 모드 개념](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts)에 설명된 대로 사용자 자격 증명이나 인증이 필요 없는 게스트 계정입니다.
 
 - **브라우저 및 애플리케이션**: 키오스크 디바이스에서 실행할 앱을 추가합니다. 여러 개의 앱을 추가할 수 있습니다.
 
   - **브라우저**
 
-    - **Microsoft Edge 추가**: Microsoft Edge 앱 모눈에 추가 되 고 모든 응용 프로그램은이 키오스크에서 실행할 수 있습니다. 선택 된 **Microsoft Edge 키오스크 모드 유형을**:
+    - **Microsoft Edge 추가**: Microsoft Edge가 앱 그리드에 추가되고 모든 애플리케이션을 이 키오스크에서 실행할 수 있습니다. **Microsoft Edge 키오스크 모드 유형**을 선택합니다.
 
-      - **표준 모드 (전체 버전의 Microsoft Edge)**: 모든 검색 기능을 사용 하 여 Microsoft Edge의 전체 버전을 실행 합니다. 세션 간에 사용자 데이터 및 상태 저장 됩니다.
-      - **공용 검색 (InPrivate)**: 전체 화면 모드에서 실행 하는 키오스크에 대 한 맞춤화 된 환경을 사용 하 여 Microsoft Edge InPrivate의 다중 탭 버전을 실행 합니다.
+      - **표준 모드(전체 버전의 Microsoft Edge)** : 모든 검색 기능과 함께 Microsoft Edge의 전체 버전이 실행됩니다. 세션 간에 사용자 데이터 및 상태가 저장됩니다.
+      - **공용 검색(InPrivate)** : 전체 화면 모드에서 실행되는 키오스크에 맞춤화된 환경을 사용하여 Microsoft Edge InPrivate의 다중 탭 버전이 실행됩니다.
 
-      이러한 옵션에 대 한 자세한 내용은 참조 하세요. [Microsoft Edge 배포 키오스크 모드](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)합니다.
+      이러한 옵션에 대한 자세한 내용은 [Microsoft Edge 키오스크 모드 배포](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)를 참조하세요.
 
       > [!NOTE]
-      > 이 설정은 장치에서 Microsoft Edge 브라우저를 사용 하도록 합니다. Microsoft Edge 특정 설정을 구성 하려면 장치 구성 프로필 만들기 (**장치 구성** > **프로필** > **프로필만들기**  >  **Windows 10** 플랫폼용 > **장치 제한** >  **Microsoft Edge 브라우저**). [Microsoft Edge 브라우저](device-restrictions-windows-10.md#microsoft-edge-browser) 나열 하 고 사용 가능한 설정을 설명 합니다.
+      > 이 설정은 디바이스에서 Microsoft Edge 브라우저를 사용하도록 설정합니다. Microsoft Edge 특정 설정을 구성하려면 디바이스 구성 프로필을 만듭니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10** 플랫폼용 > **디바이스 제한** >  **Microsoft Edge 브라우저**). [Microsoft Edge 브라우저](device-restrictions-windows-10.md#microsoft-edge-browser)는 사용 가능한 설정을 나열하고 설명합니다.
 
       **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -165,18 +164,18 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
       - **애플리케이션 이름**: 필수입니다. 애플리케이션의 이름을 입력합니다.
       - **로컬 경로**: 필수입니다. `C:\Program Files (x86)\Microsoft VS Code\Code.exe` 또는 `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`와 같이 실행 파일의 경로를 입력합니다.
-      - **AUMID(애플리케이션 사용자 모델 ID)**: Win32 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 설정에 따라 바탕 화면에 있는 타일의 시작 레이아웃이 결정됩니다. 이 ID를 구하려면 [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)를 참조하세요.
+      - **AUMID(애플리케이션 사용자 모델 ID)** : Win32 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 설정에 따라 바탕 화면에 있는 타일의 시작 레이아웃이 결정됩니다. 이 ID를 구하려면 [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)를 참조하세요.
 
       **확인**을 선택하여 변경 내용을 저장합니다.
 
     - **AUMID로 추가**: 메모장 또는 계산기와 같은 받은 편지함 Windows 앱을 추가하려면 이 옵션을 사용합니다. 다음 속성을 입력합니다.
 
       - **애플리케이션 이름**: 필수입니다. 애플리케이션의 이름을 입력합니다.
-      - **AUMID(애플리케이션 사용자 모델 ID)**: 필수입니다. Windows 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
+      - **AUMID(애플리케이션 사용자 모델 ID)** : 필수입니다. Windows 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
 
       **확인**을 선택하여 변경 내용을 저장합니다.
 
-    - **말고**: 선택 사항입니다. 사용자가 로그인 할 때 말고 응용 프로그램을 선택 합니다. 단일 앱만 AutoLaunched 수 있습니다.
+    - **자동 시작**: 선택 사항입니다. 사용자가 로그인할 때 애플리케이션이 자동 시작되도록 선택합니다. 단일 앱만 자동 시작될 수 있습니다.
     - **타일 크기**: 필수입니다. 작은, 중간 크기, 넓은 또는 큰 앱 타일 크기를 선택합니다.
 
   > [!TIP]
@@ -186,7 +185,7 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
 - **Windows 작업 표시줄**: 작업 표시줄을 **표시**하거나 **숨기**려면 선택합니다. 기본적으로 작업 표시줄은 표시되지 않습니다. Wi-Fi 아이콘과 같은 아이콘이 표시되지만 최종 사용자가 설정을 변경할 수 없습니다.
 
-- **다운로드 폴더에 대 한 액세스 허용**: 선택 **예** 사용자가 Windows 탐색기에서 다운로드 폴더에 액세스할 수 있도록 합니다. Downloads 폴더에 대 한 액세스는 기본적으로 비활성화 됩니다. 이 기능은 일반적으로 브라우저에서 다운로드 된 항목에 액세스 하려면 최종 사용자에 게 사용 됩니다.
+- **다운로드 폴더에 대한 액세스 허용**: 사용자가 Windows 탐색기에서 다운로드 폴더에 액세스할 수 있도록 하려면 **예**를 선택합니다. 기본적으로 다운로드 폴더에 대한 액세스는 비활성화되어 있습니다. 이 기능은 일반적으로 최종 사용자가 브라우저에서 다운로드된 항목에 액세스하기 위해 사용됩니다.
 
 **확인**을 선택하여 변경 내용을 저장합니다.
 

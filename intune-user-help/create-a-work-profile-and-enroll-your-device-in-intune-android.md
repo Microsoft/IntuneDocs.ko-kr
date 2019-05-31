@@ -1,11 +1,11 @@
 ---
-title: 회사 프로필을 사용하여 디바이스 등록 | Microsoft 문서
-description: 작업 프로필을 사용하여 Android 디바이스를 더 안전하게 만드는 방법.
+title: Android 회사 프로필을 사용하여 디바이스 등록 | Microsoft Docs
+description: 회사 프로필을 만들고 디바이스를 등록하는 방법
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57334955"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196929"
 ---
-# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>업무용 프로필을 만들고 Intune에서 디바이스 등록
+# <a name="enroll-device-with-android-work-profile"></a>Android 회사 프로필을 사용하여 디바이스 등록
 
-Android 디바이스를 등록하면 회사 메일, 앱 및 기타 업무용 데이터에 액세스할 수 있습니다. 등록 과정 중에 업무용 프로필을 설정합니다. 그러면 디바이스의 개인 데이터와 업무용 데이터가 분리됩니다.
+개인 Android 디바이스를 등록하면 회사 이메일, 앱 및 기타 업무용 데이터에 액세스할 수 있습니다. 등록하는 동안 Android 회사 프로필을 설정할 수 있습니다. 이 프로필은 사용자 디바이스에서 개인 데이터와 회사 데이터를 구분합니다. 회사 지원팀은 회사 파일 및 데이터로 구성된 회사 프로필만 관리합니다. 회사 지원팀은 사용자 디바이스의 개인 데이터를 관리할 수 없습니다. [업무용 프로필을 만들면 어떻게 되나요?](what-happens-when-you-create-a-work-profile-android.md)에서 자세한 내용을 알아보세요.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI?rel=0]
 
-회사 지원팀은 업무용 데이터를 포함하는 업무용 프로필만 관리할 수 있습니다. 회사 지원팀은 사용자 디바이스의 개인 데이터를 관리할 수 없습니다. [업무용 프로필을 만들면 어떻게 되나요?](what-happens-when-you-create-a-work-profile-android.md)에서 자세한 내용을 알아보세요.
-
-업무용 프로필을 만들려면
+## <a name="create-work-profile-and-enroll-device"></a>회사 프로필 만들기 및 디바이스 등록
 
 1.  Android 회사 포털의 **시작** 화면에서 **로그인**을 탭한 다음, 회사 또는 학교 계정으로 로그인합니다. 무료 앱을 아직 설치하지 않은 경우 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)에서 다운로드하여 설치합니다.
 
@@ -82,5 +82,7 @@ Android 디바이스를 등록하면 회사 메일, 앱 및 기타 업무용 데
     이제 Play Store for Work에서 회사 앱을 다운로드할 수 있습니다.
 
     ![Play Store for Work 앱 페이지](./media/andr-afw-tap-work-play-store-icon.png)
+
+## <a name="next-steps"></a>다음 단계  
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.
