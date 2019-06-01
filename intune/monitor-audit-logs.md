@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d01b1f745450785209bf289be5b6e36ac65cc2d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 5d39b62762d623c150ac6198bd2d6215b4410663
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046313"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412300"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>감사 로그를 사용하여 Microsoft Intune에서 이벤트를 추적하고 모니터링합니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "66046313"
 
 각 Intune 워크로드에 대한 모니터링 그룹에서 감사 로그를 검토할 수 있습니다.
 
-1. [Azure Portal](https://portal.azure.com/)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. 감사 로그를 검토하려는 워크로드를 선택합니다. 예를 들어 **디바이스**를 선택합니다.
 3. **모니터링**에서 **감사 로그**를 선택합니다.
 

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47115fcb2662439bff867043c2fb58bc3550dbbb
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fe7ffa6ff024c719fc24209947b87b07ea2b6791
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044887"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412684"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>앱 설치 문제 해결
 
@@ -31,8 +31,7 @@ Microsoft Intune MDM 관리 디바이스에서 앱 설치에 실패하는 경우
 
 Intune은 특정 사용자 디바이스에 설치된 앱을 기반으로 앱 문제 해결 세부 정보를 제공합니다.
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **문제 해결**을 선택합니다.
 4. **사용자 선택**을 클릭하여 문제를 해결할 사용자를 선택합니다. **사용자 선택** 창이 표시됩니다.
 5. 이름 또는 이메일 주소를 입력하여 사용자를 선택합니다. 창 아래쪽에서 **선택**을 클릭합니다. **문제 해결** 창에 사용자에 대한 문제 해결 정보가 표시됩니다. 
