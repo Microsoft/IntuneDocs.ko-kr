@@ -652,14 +652,14 @@
               href: review-logs-using-azure-monitor.md
             - name: 앱 보호 로그 검토
               href: app-protection-policy-settings-log.md
-            - name: 메일 프로필 문제 해결
+            - name: 정책 및 프로필 문제 해결
+              href: troubleshoot-policies-in-microsoft-intune.md
+            - name: 이메일 프로필 문제 및 해결 방법
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: 소프트웨어 업데이트 문제 해결
               href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Endpoint Protection 문제 해결
+            - name: 엔드포인트 보호 공통 오류
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-            - name: 정책 및 프로필 문제 해결
-              href: troubleshoot-policies-in-microsoft-intune.md
             - name: 조건부 액세스 문제 해결
               href: troubleshoot-conditional-access.md
             - name: Exchange Connector 문제 해결
@@ -825,6 +825,10 @@
                   href: vpn-settings-windows-phone-8-1.md
                 - name: 사용자 지정
                   href: custom-settings-windows-phone-8-1.md
+    - name: 오류 코드와 설명
+      items:
+        - name: 소프트웨어 업데이트 오류
+          href: software-update-agent-error-codes.md
     - name: 개발자 지침
       items:
         - name: 타사 인증 기관을 추가하는 API
