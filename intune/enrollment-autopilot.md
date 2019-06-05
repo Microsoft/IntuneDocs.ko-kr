@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: d58a10e62e4ff65c0c1589fcf948a6704224bc51
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264143"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402740"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -47,7 +47,7 @@ Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화�
 
     ![Windows Autopilot 디바이스 스크린샷](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. **Windows Autopilot 디바이스 추가** 에서 추가할 디바이스를 나열하는 CSV 파일로 이동합니다. CSV 파일에는 일련 번호, 선택적 Windows 제품 ID, 하드웨어 해시 및 디바이스의 선택적 그룹 태그가 나열되어야 합니다. 목록에 최대 500개의 행을 가질 수 있습니다. 아래 표시된 헤더 및 줄 형식 사용: `Device Serial Number,Windows Product ID,Hardware Hash,GroupTag`
+2. **Windows Autopilot 디바이스 추가** 에서 추가할 디바이스를 나열하는 CSV 파일로 이동합니다. CSV 파일에는 일련 번호, 선택적 Windows 제품 ID, 하드웨어 해시 및 디바이스의 선택적 그룹 태그가 나열되어야 합니다. 목록에 최대 500개의 행을 가질 수 있습니다. 아래 표시된 헤더 및 줄 형식 사용: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
     `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Windows AutoPilot 디바이스 추가 스크린샷](media/enrollment-autopilot/autopilot-import-device2.png)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb55951390c3fe19651087e16c3185018cfd9dab
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8353cf2f0c24c3a894fa219df9fc9a8272e17af
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049300"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454075"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune에서 앱 할당 포함 및 제외
 
@@ -44,9 +44,8 @@ Intune은 그룹을 제외할 때 사용자와 장치 간의 연결을 고려하
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>앱을 할당할 때 그룹 포함 및 제외 
 포함 및 제외 할당을 사용하여 그룹에 앱을 할당하려면:
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune** 메뉴에서 **클라이언트 앱**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
 4. **클라이언트 앱** 창에서 **앱**을 선택합니다. 추가된 앱 목록이 표시됩니다.
 5. 할당하려는 앱을 선택합니다. 대시보드에는 앱에 대한 정보가 표시됩니다. 
 6. 메뉴의 **관리** 섹션에서 **할당**을 선택합니다. 
@@ -76,7 +75,7 @@ Intune은 그룹을 제외할 때 사용자와 장치 간의 연결을 고려하
 
 그룹을 할당할 때 이미 할당된 그룹은 수정할 수 없습니다. 현재 사용할 수 없는 그룹을 선택하려면 먼저 앱의 할당 목록에서 해당 앱을 제거합니다. 
 
-할당을 편집하려면, 앱의 **할당** 목록에서 변경하려는 특정 할당을 포함하는 행을 선택합니다. 또한 행 끝에 있는 줄임표(**...**)를 선택하고 **제거**를 선택하여 할당을 제거할 수 있습니다. **할당** 목록의 보기를 변경하려면 **할당 유형**별 또는 **포함/제외**별로 그룹화합니다.
+할당을 편집하려면, 앱의 **할당** 목록에서 변경하려는 특정 할당을 포함하는 행을 선택합니다. 또한 행 끝에 있는 줄임표( **...** )를 선택하고 **제거**를 선택하여 할당을 제거할 수 있습니다. **할당** 목록의 보기를 변경하려면 **할당 유형**별 또는 **포함/제외**별로 그룹화합니다.
 
 ![Intune 앱 할당 - 완료](./media/apps-inc-exl-05.png)
 

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8554f0addf7364150c3f225e8cba1a7d751f8a7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4cae90723c7ff92a8042f068fb49c1709506c7ff
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048094"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412427"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 제한 설정 구성
 
@@ -35,7 +35,7 @@ ms.locfileid: "66048094"
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고, **Intune**을 기준으로 필터링한 다음, **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 디바이스 제한 프로필의 **이름** 및 **설명**을 입력합니다.
 4. **플랫폼** 드롭다운 목록에서 사용자 지정 설정을 적용할 디바이스 플랫폼을 선택합니다. 현재 디바이스 제한 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.

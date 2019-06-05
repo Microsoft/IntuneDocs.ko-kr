@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b3e8d7de7f80017d65e80860d217f1a9bc71fbe
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 72a9156ce9b7b1b43acf9b39d9186a52dd6c3e8d
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050244"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373705"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune에서 규정 미준수 디바이스에 대한 이메일 자동화 및 작업 추가
 
@@ -61,7 +61,7 @@ ms.locfileid: "66050244"
 
 사용자에게 메일을 보내려면 알림 메시지 템플릿을 만듭니다. 디바이스가 비준수 상태이면 템플릿에 입력한 세부 사항이 사용자에게 보낸 메일에 표시됩니다.
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 준수** > **알림**을 선택합니다.
 3. **알림 만들기**를 선택합니다. 다음 정보를 입력합니다.
 

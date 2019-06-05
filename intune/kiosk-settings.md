@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbd545d13d9241edd55c01e4353a28b3851d2ac2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 19641a36cf429773a8c0e06a90ee279d2baa06f7
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046898"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412244"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Intune을 사용하여 Windows 10 및 Holographic for Business 디바이스를 전용 키오스크로 실행하기 위한 설정
 
@@ -38,7 +38,7 @@ Intune은 "구성 프로필"을 사용하여 조직의 요구 사항에 맞게 �
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
 3. 다음 속성을 입력합니다.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a5064a9065dba75f3594f2e6bb6fb36b42be2e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc1fca439f0edf4a5d4caaad4ff4f9e0bae5972b
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044970"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374042"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>Intune을 사용하여 공유 PC 또는 다중 사용자 디바이스에서 액세스, 계정 및 전원 기능 제어
 
@@ -41,7 +41,7 @@ ms.locfileid: "66044970"
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링하고 **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
 3. 다음 속성을 입력합니다.
 

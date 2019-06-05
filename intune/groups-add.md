@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b11829bad3091b24bead99afc08dc5cdc01f0a0c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 60f2368fc8c6d4f8e2713a8386ccdd7e5958ac6b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047654"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412620"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>사용자 및 디바이스를 구성하기 위한 그룹 추가
 Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사용자를 관리합니다. Intune 관리자의 경우 조직의 요구에 맞게 그룹을 설정할 수 있습니다. 그룹을 만들어 지리적 위치, 부서 또는 하드웨어 특성별로 사용자 또는 디바이스를 구성합니다. 그룹을 사용하여 대규모 작업을 관리합니다. 예를 들어 많은 사용자에 대해 정책을 설정하거나 디바이스 집합에 앱을 배포할 수 있습니다.
@@ -34,8 +34,7 @@ Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사
 ## <a name="add-a-new-group"></a>새 그룹 추가
 
 새 그룹을 만들려면 다음 단계를 따르세요.
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **그룹**으로 이동한 다음, **모든 그룹** 창에서 **새로운 그룹**을 선택합니다.
    ![새 그룹이 선택된 Azure Portal의 스크린샷](./media/groups-add-new.png)
 4. **그룹 유형**의 경우 다음 옵션 중 하나를 선택합니다.

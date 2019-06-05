@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68fce40c194c831e65fb6631bf079f8703b039af
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6a80ff2ca7c2265da358f57291032f59d47d22dd
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047958"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412348"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Intune을 사용하여 디바이스에 이메일 설정 추가
 
@@ -38,7 +38,7 @@ Microsoft Intune에는 조직의 디바이스에 배포할 수 있는 여러 이
 
 ## <a name="create-a-device-profile"></a>디바이스 프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고, **Intune**을 기준으로 필터링한 다음, **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 이메일 프로필의 **이름**과 **설명**을 입력합니다.
 4. 드롭다운 목록에서 **플랫폼**을 선택합니다. 옵션은 다음과 같습니다.

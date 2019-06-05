@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042628"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373942"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune의 전송 최적화 설정
 
@@ -36,7 +36,7 @@ Windows 10의 전송 최적화에 대한 자세한 내용은 Windows 설명서�
 > **소프트웨어 업데이트 - Windows 10 업데이트 링**은 **배달 최적화** 설정으로 대체됩니다. 기존 업데이트 링은 **배달 최적화** 설정을 사용하도록 변경할 수 있습니다. [기존 업데이트 링을 전송 최적화로 이동](#move-existing-update-rings-to-delivery-optimization)(본 문서의 내용) 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링하고 **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
 

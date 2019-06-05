@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045284"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412704"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune에서 스토리지, Event Hubs 또는 Log Analytics에 로그 데이터 전송(미리 보기)
 
@@ -53,7 +53,7 @@ Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 
 
 ## <a name="send-logs-to-azure-monitor"></a>Azure Monitor로 로그 보내기
 
-1. [Azure Portal](https://portal.azure.com/)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **모니터링**에서 **진단 설정**을 선택합니다. 처음으로 여는 경우 다음과 같이 켭니다.
 
     ![Intune에서 진단 설정을 켜서 Azure Monitor로 로그 보내기](media/diagnostics-settings-turn-on.png)
@@ -101,7 +101,7 @@ Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 
 
 예를 들어 디바이스 규정 준수를 사용할 때 감사 로그를 내보내려면 다음을 수행합니다.
 
-1. [Azure Portal](https://portal.azure.com/)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 규정 준수** > **모니터** > **감사 로그**를 선택합니다.
 
     ![감사 로그를 선택하여 Intune 데이터를 Azure Monitor 스토리지, 이벤트 허브 또는 분석으로 라우팅](media/audit-logs-under-monitor-in-compliance.png)

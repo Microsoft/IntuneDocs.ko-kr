@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df4a3dc5c45a909e2c56b1fd741445bc6485e1e8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044476"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373663"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune에서 iOS 디바이스용 앱당 VPN(가상 사설망) 설정
 
@@ -65,7 +65,7 @@ VPN이 앱당 VPN을 지원하는지 확인하려면 VPN 공급 기업의 설명
 
 Intune에서 만든 프로필에 CA에서 발급한 VPN 서버의 루트 인증서를 가져옵니다. 신뢰할 수 있는 인증서 프로필은 iOS 디바이스가 VPN 서버에서 제공한 CA를 자동으로 신뢰하도록 합니다.
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
     - **이름**

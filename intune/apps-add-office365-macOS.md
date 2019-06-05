@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618557c129b693ad035dd82c823db43dcca2ee4d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ae63fa19bb24381580a206481a9ac2e3684314a
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049453"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412381"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 macOS 디바이스에 Office 365 할당
 
@@ -40,8 +40,7 @@ macOS 디바이스에 Office 365를 추가하기 전에 다음 세부 정보를 
 ## <a name="create-and-configure-the-app-suite"></a>앱 패키지 만들기 및 구성
 
 **앱** 창에서 Office 365를 추가합니다.
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
-2. **모든 서비스** > **모니터링 + 관리** > **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
 4. **클라이언트 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다. 
 5. **추가**를 선택합니다.

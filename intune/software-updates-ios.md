@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf07f942feeab0a73c01625f90c04ec3b989c1c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044846"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373427"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune에서 iOS 소프트웨어 업데이트 정책 추가
 
@@ -31,7 +31,7 @@ ms.locfileid: "66044846"
 
 ## <a name="configure-the-policy"></a>정책 구성
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **소프트웨어 업데이트** > **iOS에 대한 정책 업데이트** > **만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
@@ -51,7 +51,7 @@ ms.locfileid: "66044846"
       - **시작 시간**: 제한 시간 프레임의 시작 시간을 선택합니다. 예를 들어 오전 5시를 입력하면 오전 5시부터 업데이트가 설치되지 않습니다.
       - **종료 시간**: 제한 시간 프레임의 종료 시간을 선택합니다. 예를 들어 오전 1시를 입력하면 오전 1시부터 업데이트를 설치할 수 있습니다.
 
-    - **예약된 업데이트를 변경하지 않고 최종 사용자에게 소프트웨어 업데이트의 지연 표시(일)**: 
+    - **예약된 업데이트를 변경하지 않고 최종 사용자에게 소프트웨어 업데이트의 지연 표시(일)** : 
 
       **이 설정은 [디바이스 제한](device-restrictions-ios.md#general)으로 이동되었으며 포털의 이 위치에서 제거될 예정입니다**. 잠시 동안 기존 정책을 여기서 변경할 수 있습니다. 약 한 달 후 이 설정은 기존 정책에서 제거됩니다.
 

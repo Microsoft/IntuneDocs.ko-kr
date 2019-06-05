@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8483e036e270744daa5e36bf9375da6e11c25746
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1a5c85c936e49c277b54b542f372f97b247d6a37
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048291"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373811"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune에서 iOS 및 macOS 디바이스 기능 설정 추가
 
@@ -39,7 +39,7 @@ Intune에는 관리자가 iOS 및 macOS 디바이스를 제어하는 데 도움�
 
 ## <a name="create-a-device-profile"></a>디바이스 프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 

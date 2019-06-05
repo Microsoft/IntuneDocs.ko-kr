@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bb4d94048025f4b0b6c984c4bf0972b432707b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041869"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402727"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune에서 eSIM 셀룰러 프로필 구성 - 공개 미리 보기
 
@@ -68,7 +68,6 @@ eSIM 지원 디바이스로 공표됐거나 현재 시장에서 유통되는 디
 - Surface Pro LTE
 - HP Spectre Folio 13
 - Lenovo Yoga C630
-- Samsung Galaxy Book 2
 
 ## <a name="step-1-add-cellular-activation-codes"></a>1단계: 셀룰러 활성화 코드 추가
 

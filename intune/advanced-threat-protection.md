@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050127"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374079"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP에 대한 규정 준수 적용
 
@@ -83,7 +83,7 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 
 ### <a name="create-the-configuration-profile"></a>구성 프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. **이름**과 **설명**을 입력합니다.
 4. **플랫폼**에서 **Windows 10 이상**을 선택합니다.
@@ -105,11 +105,11 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 ## <a name="create-the-compliance-policy"></a>준수 정책 만들기
 준수 정책은 디바이스에서 허용되는 위험 수준을 결정합니다.
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
 3. **이름**과 **설명**을 입력합니다.
 4. **플랫폼**에서 **Windows 10 이상**을 선택합니다.
-5. **Windows Defender ATP** 설정에서 **디바이스가 머신 위험 점수나 그 아래에 있어야 함**을 기본 설정 수준으로 설정합니다. 위협 수준 분류는 [Windows Defender ATP에 의해 결정](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue)됩니다.
+5. **Windows Defender ATP** 설정에서 **디바이스가 머신 위험 점수나 그 아래에 있어야 함**을 기본 설정 수준으로 설정합니다. 위협 수준 분류는 [Windows Defender ATP에 의해 결정](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection)됩니다.
 
    - **지우기**: 이 수준이 가장 안전합니다. 디바이스가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 디바이스는 비규격으로 평가됩니다. (Windows Defender ATP 사용자 값 *Secure*.)
    - **낮음**: 낮은 수준의 위협만 있는 디바이스는 규격 디바이스입니다. 보통 또는 높은 위협 수준의 디바이스는 비규격 디바이스입니다.
@@ -120,7 +120,7 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 
 ## <a name="assign-the-policy"></a>정책 할당
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 준수** > **정책** &gt; Windows Defender ATP 준수 정책을 선택합니다.
 3. **할당**을 선택합니다.
 4. Azure AD 그룹을 포함하거나 제외하여 정책을 할당합니다.
@@ -153,7 +153,7 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 ## <a name="monitor-device-compliance"></a>디바이스 준수 모니터링
 다음으로, Windows Defender ATP 준수 정책이 있는 디바이스의 상태를 모니터링합니다.
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 준수** > **정책 준수**를 선택합니다.
 3. 목록에서 Windows Defender ATP 정책을 찾아 어떤 디바이스가 규격 또는 비규격인지 확인합니다.
 

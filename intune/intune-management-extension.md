@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c590f81b846fe3671d5ccddede28a4a4bd799ba
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264150"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373464"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 PowerShell 스크립트 사용
 
@@ -65,7 +65,7 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
 
 ## <a name="create-a-script-policy"></a>스크립트 정책 만들기 
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **PowerShell 스크립트** > **추가**를 차례로 선택합니다.
 3. 다음 속성을 입력합니다.
     - **이름**: PowerShell 스크립트의 이름을 입력합니다. 

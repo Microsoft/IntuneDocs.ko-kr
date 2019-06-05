@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b530d509e87871d30f015cf6bc77410660563da
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fc97e9884fbcd23c599c917c181e29cdbc3708ee
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043350"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374032"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 디바이스 준수 정책 모니터링
 
@@ -34,7 +34,7 @@ ms.locfileid: "66043350"
 
 **Intune 디바이스 준수 대시보드**를 엽니다.
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 
 2. **디바이스 준수** > **개요**를 선택합니다. **디바이스 준수 대시보드**가 열립니다.
 
