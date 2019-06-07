@@ -135,6 +135,10 @@
           items:
             - name: 네트워크 구성
               href: network-bandwidth-use.md
+            - name: Intune 엔드포인트
+              href: intune-endpoints.md
+            - name: Intune 미국 정부 엔드포인트
+              href: intune-us-government-endpoints.md
         - name: Intune에 로그인
           href: account-sign-up.md
         - name: 도메인 구성
