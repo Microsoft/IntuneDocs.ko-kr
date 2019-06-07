@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 05/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042667"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454042"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune 데이터 웨어하우스 애플리케이션 전용 인증
 
@@ -92,10 +92,11 @@ Visual Studio를 사용하여 .NET Framework를 지원하고 C#을 코딩 언어
 2.  왼쪽에서 **Visual C#** 을 선택하여 모든 .NET Framework 프로젝트를 표시합니다.
 3.  **콘솔 앱(.NET Framework)** 을 선택하고 앱 이름을 추가한 다음 **확인**을 클릭하여 앱을 만듭니다.
 4.  **솔루션 탐색기**에서 **Program.cs**를 선택하여 코드를 표시합니다.
-5.  팝업 메뉴에서 **추가** > **새 항목**을 선택합니다. **새 항목 추가** 대화 상자가 표시됩니다.
-6.  왼쪽의 **Visual C#** 에서 **코드**를 선택합니다.
-7.  **클래스**를 선택하고 클래스 이름을 *IntuneDataWarehouseClass.cs*로 변경한 다음 **추가**를 클릭합니다.
-8.  <code>Main</code> 메서드 안에 다음 코드를 추가합니다.
+5.  솔루션 탐색기에서 어셈블리 `System.Configuration`에 참조를 추가합니다.
+6.  팝업 메뉴에서 **추가** > **새 항목**을 선택합니다. **새 항목 추가** 대화 상자가 표시됩니다.
+7.  왼쪽의 **Visual C#** 에서 **코드**를 선택합니다.
+8.  **클래스**를 선택하고 클래스 이름을 *IntuneDataWarehouseClass.cs*로 변경한 다음 **추가**를 클릭합니다.
+9.  <code>Main</code> 메서드 안에 다음 코드를 추가합니다.
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -110,7 +111,7 @@ Visual Studio를 사용하여 .NET Framework를 지원하고 C#을 코딩 언어
                  new SecureClientSecret(applicationSecret))).Result;
     ``` 
 
-9. 코드 파일의 맨 위에 다음 코드를 추가하여 네임스페이스를 추가합니다.
+10. 코드 파일의 맨 위에 다음 코드를 추가하여 네임스페이스를 추가합니다.
 
     ``` csharp
      using System.Security;
@@ -118,7 +119,7 @@ Visual Studio를 사용하여 .NET Framework를 지원하고 C#을 코딩 언어
      using System.Configuration;
     ``` 
 
-10. <code>Main</code> 메서드 뒤에 다음 개인 메서드를 추가하여 앱 키를 처리하고 변환합니다.
+11. <code>Main</code> 메서드 뒤에 다음 개인 메서드를 추가하여 앱 키를 처리하고 변환합니다.
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -136,10 +137,10 @@ Visual Studio를 사용하여 .NET Framework를 지원하고 C#을 코딩 언어
     }
     ```
 
-11. **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭한 다음 **NuGet 패키지 관리**를 선택합니다.
-12. *Microsoft.IdentityModel.Clients.ActiveDirectory*를 검색하고 관련 Microsoft NuGet 패키지를 설치합니다.
-13. **솔루션 탐색기**에서 *App.config* 파일을 선택하고 엽니다.
-14. xml이 다음과 같이 표시되도록 <code>appSettings</code> 섹션을 추가합니다.
+12. **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭한 다음 **NuGet 패키지 관리**를 선택합니다.
+13. *Microsoft.IdentityModel.Clients.ActiveDirectory*를 검색하고 관련 Microsoft NuGet 패키지를 설치합니다.
+14. **솔루션 탐색기**에서 *App.config* 파일을 선택하고 엽니다.
+15. xml이 다음과 같이 표시되도록 <code>appSettings</code> 섹션을 추가합니다.
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -155,8 +156,8 @@ Visual Studio를 사용하여 .NET Framework를 지원하고 C#을 코딩 언어
     </configuration>
     ``` 
 
-15. <code>appId</code>, <code>appKey</code> 및 <code>tenantDomain</code> 값을 고유한 앱 관련 값과 일치하도록 업데이트합니다.
-16. 앱을 빌드합니다.
+16. <code>appId</code>, <code>appKey</code> 및 <code>tenantDomain</code> 값을 고유한 앱 관련 값과 일치하도록 업데이트합니다.
+17. 앱을 빌드합니다.
 
     >[!NOTE] 
     > 추가 구현 코드를 보려면 [Intune-Data-Warehouse 코드 예제](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp )를 참조하세요.

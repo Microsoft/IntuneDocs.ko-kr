@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
-ms.translationtype: HT
+ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
+ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174200"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354214"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -58,6 +58,24 @@ ms.locfileid: "66174200"
 - **시스템 드라이브에 앱 설치**: **차단**은 앱이 디바이스의 시스템 드라이브에 설치되지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 앱을 시스템 드라이브에 설치할 수 있습니다.
 - **게임 DVR**(데스크톱에만 해당): **차단**은 Windows 게임 녹화 및 방송을 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)을 사용하면 게임을 녹화하고 브로드캐스트할 수 있습니다.
 - **스토어의 앱만**: **필요**는 최종 사용자가 Windows App Store에서만 앱을 설치하도록 강제로 적용합니다. **구성되지 않음**을 사용하면 최종 사용자가 Windows App Store 이외의 장소에서 앱을 설치할 수 있습니다.
+- **업데이트 실패 시 강제로 앱 다시 시작**: 앱을 사용 중인 경우 업데이트되지 않을 수 있습니다. 앱을 강제로 다시 시작하려면 이 설정을 사용합니다. **구성되지 않음**(기본값): 앱을 강제로 다시 시작하지 않습니다. **필요**: 관리자가 특정 날짜와 시간 또는 되풀이 일정에 강제로 다시 시작하도록 허용합니다. **필요**로 설정하는 경우 다음도 입력합니다.
+
+  - **시작 날짜/시간**: 앱을 다시 시작하는 특정 날짜 및 시간을 선택합니다.
+  - **되풀이**: 매일, 매주 또는 매달 다시 시작을 선택합니다.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **설치에 대한 사용자 정의 컨트롤**: **구성되지 않음**(기본값)으로 설정하면 Windows Installer에서 사용자가 파일을 설치할 디렉터리 입력 등 일반적으로 시스템 관리자용으로 예약된 설치 옵션을 변경하지 못하도록 합니다. **차단**: 사용자가 이러한 설치 옵션을 변경하는 것을 허용하며, 일부 Windows Installer 보안 기능이 무시됩니다.
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **높은 권한으로 앱 설치**: **구성되지 않음**(기본값)으로 설정하면 시스템에서 시스템 관리자가 배포하거나 제공하지 않은 프로그램을 설치할 때 현재 사용자의 권한을 적용합니다. **차단**: Windows Installer가 시스템에 프로그램을 설치할 때 높은 권한을 사용하도록 지시합니다. 이러한 권한은 모든 프로그램으로 확장됩니다.
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **시작 앱**: 사용자가 디바이스에 로그인한 후 열리는 앱 목록을 입력합니다. Windows 애플리케이션의 세미콜론으로 구분된 PFN(패키지 패밀리 이름) 목록을 사용해야 합니다. 이 정책을 사용하려면 Windows 앱의 매니페스트가 시작 작업을 사용해야 합니다.
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -408,6 +426,10 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
     - **숫자**: 숫자로만 구성된 암호여야 합니다.
     - **영숫자**: 암호가 숫자와 문자가 혼합된 암호여야 합니다.
   - **최소 암호 길이**: 필요한 최소 숫자 또는 문자 수(4-16)를 입력합니다. 예를 들어 암호 길이에 6자 이상의 문자가 필요하면 `6`을 입력합니다.
+  
+    > [!IMPORTANT]
+    > Windows 데스크톱에서 암호 요구 사항이 변경되면 사용자가 다음에 로그인할 때 영향을 받습니다. 디바이스가 유휴 상태에서 활성 상태로 변하기 때문입니다. 요구 사항을 충족하는 암호를 사용하는 사용자에게도 암호를 변경하라는 메시지가 표시됩니다.
+    
   - **디바이스를 초기화하기 전 로그인 오류 발생 횟수**: 디바이스를 초기화하기 전에 허용되는 인증 실패 횟수(1-11)를 입력합니다. `0`(0)은 디바이스 초기화 기능을 사용하지 않도록 설정할 수 있습니다.
 
     이 설정은 버전에 따라 다른 영향을 줍니다. 관련 세부 정보는 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)를 참조하세요.
@@ -755,7 +777,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
   사용자 동의 없이 설치된 앱에 대한 자세한 내용은 [사용자 동의 없이 설치된 애플리케이션 검색 및 차단](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)을 참조하세요.
 
-- **감지된 맬웨어 위협에 대한 작업**: 검색된 각 위협 수준(낮음, 보통, 높음, 심각)에 대해 Defender에서 수행할 작업을 선택하려면 이 옵션을 사용합니다. 옵션은 다음과 같습니다.
+- **감지된 맬웨어 위협에 대한 작업**: 검색된 각 위협 수준(낮음, 보통, 높음, 심각)에 대해 Defender에서 수행할 작업을 선택하려면 이 옵션을 사용합니다. 불가능한 경우 Windows Defender는 위협을 해결할 수 있는 최상의 옵션을 선택합니다. 옵션은 다음과 같습니다.
   - **정리**
   - **격리**
   - **제거**

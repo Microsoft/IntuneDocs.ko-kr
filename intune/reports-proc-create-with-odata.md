@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45df3e3b217e25c9e61fd51d7f458f33c7c0481d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045532"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412453"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 보고서 만들기
 
@@ -53,14 +53,13 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로
 > [!Note]  
 > Intune에서는 **보고서**에 대한 권한이 필요합니다. 자세한 내용은 [권한 부여](reports-api-url.md)를 참조하세요.
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **Intune 데이터 웨어하우스** 창을 엽니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+3. **Microsoft Intune - 개요** 블레이드의 오른쪽에 있는 **기타 작업** 아래에서 데이터 웨어하우스 링크를 선택하여 **Intune 데이터 웨어하우스** 창을 엽니다.
 4. 사용자 지정 피드 URL을 복사합니다. 예를 들어 `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`를 구성할 수 있습니다.
-5. Power BI Desktop을 엽니다.
-6. **데이터 가져오기** > **Odata 피드**를 차례로 선택합니다.
-7. **OData 피드** 창의 URL 상자에 사용자 지정 피드 URL을 붙여넣습니다.
-8. **기본**을 선택합니다.
+1. Power BI Desktop을 엽니다.
+2. **데이터 가져오기** > **Odata 피드**를 차례로 선택합니다.
+3. **OData 피드** 창의 URL 상자에 사용자 지정 피드 URL을 붙여넣습니다.
+4. **기본**을 선택합니다.
 
     ![테넌트에 대한 Intune Data Warehouse의 OData 피드](media/reports-create-01-odatafeed.png)
 

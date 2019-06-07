@@ -1,11 +1,11 @@
 ---
-title: Intune에서 Endpoint Protection 문제 해결 - Azure | Microsoft Docs
-description: Microsoft Intune Endpoint Protection을 사용하는 동안 문제를 해결합니다.
+title: Microsoft Intune - Azure에서 일반적인 Endpoint Protection 메시지 | Microsoft Docs
+description: Microsoft Intune에서 Endpoint Protection 및 Windows Defender를 사용하고 문제를 해결할 때 일반적인 메시지와 가능한 해결 방법을 확인하세요.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,36 +17,70 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec655a53018c2e45d1cb771c1ce9c0aad376b2b1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040164"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402637"
 ---
-# <a name="troubleshoot-endpoint-protection-in-intune"></a>Intune에서 Endpoint Protection 문제 해결
+# <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune에서 Endpoint Protection 문제와 가능한 해결 방법
 
-이 정보를 사용하면 Endpoint Protection을 사용하는 동안 발생하는 문제를 해결할 수 있습니다. [이벤트 로그 및 오류 코드를 검토하여 Windows Defender AV 관련 문제를 해결](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)할 수도 있습니다.
+이 문서에서는 몇 가지 오류 및 경고의 잠재적 원인과 해결 방법을 설명합니다. 이 정보를 사용하면 Endpoint Protection을 사용하는 동안 발생하는 문제를 해결할 수 있습니다.
 
-이 정보가 도움이 되지 않으면 [Microsoft Intune에 대한 지원을 받을](get-support.md) 수도 있습니다.
+## <a name="windows-defender-error-codes"></a>Windows Defender 오류 코드
 
-### <a name="error-messages"></a>오류 메시지
-이 섹션에서는 다음 오류 및 경고의 잠재적 원인과 해결 방법을 설명합니다.
+이벤트 로그 및 오류 코드를 검토하여 [Windows Defender AV 관련 문제를 해결](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)하세요.
 
-|상태 항목|잠재적 원인|잠재적 해결 방법|
-|---------------|--------------------|-----------------------|
-|**Endpoint Protection 엔진을 사용할 수 없음**|Intune Endpoint Protection 엔진이 손상되었거나 삭제되었습니다.|Intune Endpoint Protection 엔진이 손상되면 소프트웨어 업데이트 또는 다시 설치를 시도해 볼 수 있습니다.<br /><br />즉시 업데이트를 실행하려면 Endpoint Protection 클라이언트 소프트웨어(관리 컴퓨터의 작업 표시줄에 있음)에서 **업데이트**를 선택합니다.<br /><br />엔진을 업데이트할 수 없는 경우 Endpoint Protection 엔진을 다시 설치해야 합니다.<br /><br />관리되는 컴퓨터의 제어판에 있는 설치된 프로그램 목록에서 **Microsoft Intune Endpoint Protection 에이전트**를 찾은 다음 해당 애플리케이션을 제거합니다.<br /><br />다음 업데이트 동기화 중에 Microsoft Online Management 업데이트 관리자에서 누락된 프로그램을 검색하고 예약된 설치 시간에 다시 설치합니다.|
-|**Endpoint Protection 사용 안 함**|관리되는 컴퓨터의 사용자 또는 구성 프로필을 사용하는 관리자가 Intune Endpoint Protection을 사용하지 않도록 설정했습니다.|Endpoint Protection을 사용하도록 설정합니다. Intune에서 [Endpoint Protection 설정 추가](endpoint-protection-configure.md) 또는 [Windows Defender를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)를 참조하세요.|
-|**실시간 보호 사용 안 함**|관리되는 컴퓨터의 사용자 또는 프로필을 사용하는 관리자가 실시간 보호를 사용하지 않도록 설정했습니다.|Endpoint Protection을 사용하도록 설정합니다. Intune의 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus) 또는 [실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)를 참조하세요. |
-|**다운로드 검색 사용 안 함**|관리되는 컴퓨터의 사용자 또는 프로필을 사용하는 관리자가 다운로드 검사를 사용하지 않도록 설정했습니다.|검사를 사용하도록 설정합니다. Intune의 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus) 또는 [실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)를 참조하세요. |
-|**파일 및 프로그램 활동 모니터링 사용 안 함**|관리되는 컴퓨터의 사용자 또는 프로필을 사용하는 관리자가 파일 및 프로그램 활동 모니터링을 사용하지 않도록 설정했습니다.|파일 및 프로그램 활동을 사용하도록 설정합니다. Intune의 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus) 또는 [실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)를 참조하세요. |
-|**동작 모니터링 사용 안 함**|관리되는 컴퓨터의 사용자 또는 프로필을 사용하는 관리자가 동작 모니터링을 사용하지 않도록 설정했습니다.|동작 모니터링을 사용하도록 설정합니다. Intune의 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus) 또는 [실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)를 참조하세요. |
-|**스크립트 검색 사용 안 함**|관리되는 컴퓨터의 사용자 또는 프로필을 사용하는 관리자가 스크립트 검사를 사용하지 않도록 설정했습니다.|스크립트 검사를 사용하도록 설정합니다. Intune의 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus) 또는 [실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)를 참조하세요. |
-|**네트워크 검사 시스템 사용 안 함**|관리되는 컴퓨터의 사용자 또는 프로필을 사용하는 관리자가 네트워크 검사 시스템을 사용하지 않도록 설정했습니다.|NIS(네트워크 검사 시스템)를 사용하도록 설정합니다. Intune의 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus) 또는 [실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)를 참조하세요. |
-|**맬웨어 정의가 만료됨**|컴퓨터가 오랫동안 인터넷에 연결되지 않았거나 맬웨어 정의가 아직 업데이트되지 않았을 수 있습니다. 이 상태는, 컴퓨터의 맬웨어 정의가 14일 이상 만료된 상태인 경우 나타납니다.|맬웨어 정의가 만료된 경우 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)을 사용하여 정의를 업데이트할 수 있습니다.|
-|**전체 검색 지연**|전체 검색이 14일 동안 완료되지 않았습니다. 이는 전체 검색 중에 컴퓨터를 다시 시작하여 발생할 수 있습니다.|전체 검사가 늦어진 경우 일회성 전체 검사를 실행하거나 되풀이 전체 검사를 예약할 수 있습니다. [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)을 참조하세요. |
-|**빠른 검색 지연**|빠른 검색이 14일 동안 완료되지 않았습니다. 이는 빠른 검색 중에 컴퓨터를 다시 시작하여 발생할 수 있습니다.|빠른 검사가 늦어진 경우 일회성 빠른 검사를 실행하거나 되풀이 빠른 검사를 예약할 수 있습니다. [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)을 참조하세요.|
-|**다른 엔드포인트 보호 애플리케이션이 실행되고 있음**|다른 엔드포인트 보호 애플리케이션이 실행되고 있으며 컴퓨터가 정상 상태입니다.|기본적으로 다른 Endpoint Protection 애플리케이션이 설치되어 있고 Intune에서 해당 애플리케이션을 검색한 경우 장치가 불안정해질 수 있습니다.|
+## <a name="common-intune-errors-and-possible-resolutions"></a>일반적인 Intune 오류와 가능한 해결 방법
 
-### <a name="next-steps"></a>다음 단계
-이 정보가 도움이 되지 않으면 [Microsoft Intune에 대한 지원을 받을](get-support.md) 수도 있습니다.
+#### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection 엔진을 사용할 수 없음
+
+**잠재적 원인**: Intune Endpoint Protection 엔진이 손상되었거나 삭제되었습니다.
+
+**가능한 해결 방법**:
+
+- Endpoint Protection이 손상되었거나 업데이트되지 않는 경우 프로그램을 업데이트하거나 다시 설치합니다.
+- 즉시 업데이트를 강제 실행합니다. Endpoint Protection 클라이언트 프로그램(작업 표시줄에 있음)에서 **업데이트**를 선택합니다.
+- [제어판] > [프로그램]에서 **Microsoft Intune Endpoint Protection 에이전트**를 선택합니다. 애플리케이션을 제거합니다.
+- 다음 업데이트 동기화 중에 Microsoft Online Management 업데이트 관리자에서 누락된 프로그램을 검색하고 예약된 설치 시간에 다시 설치합니다.
+
+#### <a name="features-are-disabled"></a>기능을 사용할 수 않음
+
+일부 기능을 사용할 수 없다는 메시지가 표시될 수 있습니다. 이러한 메시지는 관리자가 구성 프로필을 사용하여 Intune Endpoint Protection 또는 Windows Defender를 사용하지 않도록 설정한 경우에 발생할 수 있습니다. 또는 디바이스에서 최종 사용자가 사용하지 않도록 설정했습니다. 가능한 메시지:
+
+`Endpoint Protection disabled`  
+`Real-time protection disabled`  
+`Download scanning disabled`  
+`File and program activity monitoring disabled`  
+`Behavior monitoring disabled`  
+`Script scanning disabled`  
+`Network Inspection System disabled`  
+
+**가능한 해결 방법**: 이러한 기능을 사용하도록 설정합니다. 지침은 다음을 참조하세요.
+
+- [Endpoint Protection 설정 추가](endpoint-protection-configure.md)
+- [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [최종 사용자: 실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)
+
+#### <a name="malware-definitions-out-of-date"></a>맬웨어 정의가 만료됨
+
+이 상태는 디바이스의 맬웨어 정의가 14일 이상 만료된 상태임을 보여 줍니다. 예를 들어 디바이스가 인터넷과 연결이 끊겼거나 맬웨어 정의가 만료된 경우 이 메시지가 표시될 수 있습니다.
+
+**가능한 해결 방법**: 맬웨어 정의가 만료된 경우 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)을 사용하여 정의를 업데이트합니다.
+
+#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>전체 검색 지연 또는 빠른 검색 지연
+
+전체 검색 또는 빠른 검색이 14일 동안 완료되지 않습니다. 이 시나리오는 전체 검색 중 디바이스를 다시 시작하는 경우에 발생할 수 있습니다.
+
+**가능한 해결 방법**: 검사가 지연되는 경우 일회성 검사를 실행하거나 되풀이 검사를 예약할 수 있습니다. [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)을 참조하세요.
+
+#### <a name="another-endpoint-protection-application-running"></a>다른 엔드포인트 보호 애플리케이션이 실행되고 있음
+
+다른 엔드포인트 보호 애플리케이션이 실행되고 있으며 디바이스가 정상 상태입니다.
+
+**가능한 해결 방법**: 다른 엔드포인트 보호 애플리케이션이 설치되어 있고 Intune에서 해당 애플리케이션을 검색한 경우 디바이스가 불안정해질 수 있습니다.
+
+## <a name="next-steps"></a>다음 단계
+
+[Microsoft의 지원 도움말](get-support.md)을 받거나 [커뮤니티 포럼](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)을 이용하세요.

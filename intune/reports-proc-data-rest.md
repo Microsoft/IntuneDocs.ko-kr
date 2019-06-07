@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 894ce1fcf270af0169661359c2ab088bb30fab62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041166"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412726"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST 클라이언트를 사용하여 Intune 데이터 웨어하우스 API에서 데이터 가져오기
 
@@ -94,9 +94,8 @@ Postman을 사용하여 REST 호출을 수행하려면 다음 정보가 필요�
 
 엔드포인트도 필요합니다. 데이터 웨어하우스 엔드포인트를 가져오려면 사용자 지정 피드 URL이 필요합니다. 데이터 웨어하우스 창에서 OData 엔드포인트를 가져올 수 있습니다.
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
-3. **기타 작업**에서 **Intune 데이터 웨어하우스 설정**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+3. **Microsoft Intune - 개요** 블레이드의 오른쪽에 있는 **기타 작업** 아래에서 데이터 웨어하우스 링크를 선택하여 **Intune 데이터 웨어하우스** 창을 엽니다.
 4. **타사 보고 서비스 사용** 아래에서 사용자 지정 피드 URL을 복사합니다. 다음과 유사합니다. `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 엔드포인트는 다음 `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}` 형식입니다.

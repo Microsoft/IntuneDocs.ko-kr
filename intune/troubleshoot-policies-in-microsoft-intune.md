@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044608"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402655"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune의 문제 해결 정책 및 프로필
 
@@ -32,13 +32,12 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
 ## <a name="use-built-in-troubleshooting"></a>기본 제공 문제 해결 기능 사용
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
-2. **문제 해결**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에서 **문제 해결**을 선택합니다.
 
     ![Intune에서 도움말 및 지원으로 이동하여 문제 해결을 선택합니다.](./media/help-and-support-troubleshoot.png)
 
-3. **사용자 선택**을 선택하고 문제가 있는 사용자를 선택한 다음, **선택**을 클릭합니다.
-4. **Intune 라이선스**와 **계정 상태** 모두에 녹색 확인 표시가 있는지 확인합니다.
+2. **사용자 선택**을 선택하고 문제가 있는 사용자를 선택한 다음, **선택**을 클릭합니다.
+3. **Intune 라이선스**와 **계정 상태** 모두에 녹색 확인 표시가 있는지 확인합니다.
 
     ![Intune에서 사용자를 선택하고 계정 상태와 Intune 라이선스의 상태에 녹색 확인 표시가 있는지 확인합니다.](./media/account-status-intune-license-show-green.png)
 
@@ -47,7 +46,7 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
     - [사용자가 디바이스를 등록하도록 라이선스 할당](licenses-assign.md)
     - [Intune에 사용자 추가](users-add.md)
 
-5. **디바이스**에서 문제가 있는 디바이스를 찾습니다. 다른 열을 검토합니다.
+4. **디바이스**에서 문제가 있는 디바이스를 찾습니다. 다른 열을 검토합니다.
 
     - **관리**: 디바이스가 규정 준수 정책이나 구성 정책을 수신하려면 이 속성에 **MDM** 또는 **EAS/MDM**이 표시되어야 합니다.
 
@@ -98,7 +97,7 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>프로필이 제대로 적용되었는지 확실하지 않은 경우
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 > **Intune**을 기준으로 필터링하고 > **Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스** > **모든 디바이스**를 선택하고 디바이스를 선택한 다음, **디바이스 구성**을 선택합니다. 
 
     모든 디바이스는 해당 프로필이 나열됩니다. 모든 프로필에는 **상태**가 있습니다. 상태는 하드웨어 및 OS 제한 사항과 요구 사항을 비롯한 할당된 모든 프로필이 함께 고려되어 적용됩니다. 가능한 상태는 다음과 같습니다.
@@ -164,4 +163,6 @@ Intune 소프트웨어 클라이언트로 관리되는 Windows PC의 경우 `pol
 
 ## <a name="next-steps"></a>다음 단계
 
-도움이 더 필요하면 [Microsoft Intune에 대한 지원 받기](get-support.md)를 참조하세요.
+[메일 프로필 관련 일반적인 문제와 해결 방법](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+[Microsoft의 지원 도움말](get-support.md)을 받거나 [커뮤니티 포럼](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)을 이용하세요.
