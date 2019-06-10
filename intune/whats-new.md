@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
+ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264163"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469594"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -45,6 +45,13 @@ ms.locfileid: "66264163"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-27-2019"></a>2019년 5월 27일 주 
+
+### <a name="app-management"></a>앱 관리
+
+#### <a name="reporting-for-potentially-harmful-apps-on-android-devices----4223162---"></a>Android 디바이스에서 잠재적으로 유해한 앱 보고 <!-- 4223162 -->
+Intune은 이제 Android 디바이스에서 잠재적으로 유해한 앱에 대한 정보를 제공합니다. 
 
 ## <a name="week-of-may-20-2019"></a>2019년 5월 20일 주 
 
@@ -134,7 +141,7 @@ macOS 디바이스에서 디바이스 구성 프로필을 만들 수 있습니�
 적용 대상: iOS
 
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender Advanced Threat Protection 기준(미리 보기)  <!--  3754134 -->
-[Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md)의 보안 기준 미리 보기 설정을 추가했습니다.  
+[Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md)의 보안 기준 미리 보기 설정을 추가했습니다. 사용자의 환경이 [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) 사용에 대한 필수 조건을 충족하는 경우 이 기준을 사용할 수 있습니다.
 
 ### <a name="device-enrollment"></a>디바이스 등록
 
@@ -153,6 +160,14 @@ Autopilot 재설정 기능은 등록 상태 페이지를 사용하도록 구성�
 
 #### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>Apple 포털에서 디바이스를 삭제하면 Intune 포털에도 반영됩니다. <!--2489996 -->
 Apple의 디바이스 등록 프로그램 또는 Apple 비즈니스 관리자 포털에서 디바이스를 삭제하면 다음 동기화 중에 Intune에서도 자동으로 삭제됩니다.
+
+### <a name="the-enrollment-status-page-now-tracks-win32-apps----2714451---"></a>등록 상태 페이지에서 이제 Win32 앱 추적 <!-- 2714451 -->
+Windows 10 버전 1903 이상을 실행하는 디바이스에만 해당됩니다. 자세한 내용은 [등록 상태 페이지 설정](windows-enrollment-status.md)을 참조하세요.
+
+### <a name="device-management"></a>디바이스 관리
+
+#### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>Graph API를 사용하여 디바이스를 대량으로 다시 설정하고 초기화 <!-- 3295288 -->
+이제 Graph API를 사용하여 최대 100대의 디바이스를 대량으로 다시 설정하고 초기화할 수 있습니다.
 
 
 ### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
@@ -227,7 +242,7 @@ Intune에 등록된 Azure AD 조인 디바이스에 설치할 Win32 앱을 할�
 디바이스 개요 페이지에는 UDA(사용자 디바이스 선호도) 사용자라고도 하는 기본 사용자가 표시됩니다. 디바이스에 대한 기본 사용자를 보려면 **Intune** > **디바이스** > **모든 디바이스**를 차례로 선택한 다음, 디바이스를 선택합니다. 기본 사용자가 **개요**페이지의 위쪽에 표시됩니다.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>관리형 Google Play 앱에서 Android Enterprise 작업 프로필 디바이스에 대한 추가 보고 <!-- 4105925  -->
-Android Enterprise 작업 프로필 디바이스에 배포된 관리형 Google Play 앱의 경우 디바이스에 설치된 앱의 특정 버전 번호를 볼 수 있습니다. 이는 필수 앱에만 적용됩니다. 사용할 수 있는 앱에 대한 동일한 기능은 향후 릴리스에서 활성화됩니다. 
+Android Enterprise 작업 프로필 디바이스에 배포된 관리형 Google Play 앱의 경우 디바이스에 설치된 앱의 특정 버전 번호를 볼 수 있습니다. 이는 필수 앱에만 적용됩니다.  
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>iOS 타사 키보드 <!-- 4111843   -->
 **타사 키보드** 설정에 대한 Intune APP(앱 보호 정책) 지원은 iOS 플랫폼 변경으로 인해 종료되었습니다. Intune Admin Console에서 이 설정을 구성할 수 없으며 Intune App SDK의 클라이언트에 적용할 수 없습니다.
@@ -277,7 +292,7 @@ Android Enterprise 디바이스에서 디바이스 제한 프로필을 만들어
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Windows 10 디바이스 준수 정책에서 TPM 칩셋 확인 <!-- 3617671 -->
 
-이 기능은 지연되고 있으며 향후 릴리스에 포함될 예정입니다.
+이 기능은 지연되고 있으며 나중에 출시될 예정입니다.
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>Windows 10 이상 디바이스의 Microsoft Edge 브라우저에서 변경되어 업데이트된 UI <!-- 3775833   -->
 디바이스 구성 프로필을 만들 때 Windows 10 이상 디바이스에서 Microsoft Edge 기능을 허용하거나 제한할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에 대해 **Windows 10 이상** > 프로필 유형에 대해 **디바이스 제한** > **Microsoft Edge 브라우저**). 이 업데이트에서는 Microsoft Edge 설정을 더 자세히 설명하여 더 쉽게 이해할 수 있습니다. 
@@ -908,7 +923,7 @@ Intune에는 이제 macOS 버전 10.12 이상이 필요합니다. 이전 macOS �
 회사 소유의 감독되는 iOS 디바이스에서 앱을 제거할 수 있습니다. **제거** 할당 유형을 사용하여 사용자 또는 디바이스 그룹을 대상으로 하여 앱을 제거할 수 있습니다. 개인 또는 감독되지 않은 iOS 디바이스의 경우 Intune을 사용하여 설치된 앱만 계속 제거할 수 있습니다.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Intune Win32 앱 콘텐츠 다운로드 <!-- 2617320 -->
-Windows 10 RS3 이상 클라이언트는 Windows 10 클라이언트의 배달 최적화 구성 요소를 사용하여 Intune Win32 앱 콘텐츠를 다운로드합니다. 배달 최적화는 기본적으로 켜져 있는 피어 투 피어 기능을 제공합니다. 배달 최적화는 그룹 정책을 통해 구성되고 나중에는 Intune MDM을 통해 구성될 수 있습니다. 자세한 내용은 [Windows 10 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)를 참조하세요. 
+Windows 10 RS3 이상 클라이언트는 Windows 10 클라이언트의 배달 최적화 구성 요소를 사용하여 Intune Win32 앱 콘텐츠를 다운로드합니다. 배달 최적화는 기본적으로 켜져 있는 피어 투 피어 기능을 제공합니다. 현재 배달 최적화는 그룹 정책을 통해 구성될 수 있습니다. 자세한 내용은 [Windows 10 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)를 참조하세요. 
 
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>최종 사용자 디바이스 및 앱 콘텐츠 메뉴 <!-- 2771453 -->
 최종 사용자는 이제 디바이스와 앱에서 상황에 맞는 메뉴를 사용하여 디바이스 이름 바꾸기 또는 준수 확인 같은 일반적인 작업을 트리거할 수 있습니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feb2bda30547779680a001b3c598b54d236f70ed
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374125"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune에서 Windows 10 보안 기준선 만들기
 
@@ -54,7 +54,8 @@ ms.locfileid: "66045095"
   [설정 보기](security-baseline-settings-windows.md)
 
 - **미리 보기: Windows Defender ATP 기준**  
-  [설정 보기](security-baseline-settings-defender-atp.md)
+  [설정 보기](security-baseline-settings-defender-atp.md)  
+  *(사용자의 환경이 [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) 사용에 대한 필수 조건을 충족하는 경우 이 기준을 사용할 수 있습니다.)*
 
 
 ## <a name="prerequisites"></a>전제 조건
@@ -73,7 +74,8 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 
     ![구성할 보안 기준을 선택](./media/security-baselines/available-baselines.png)
 
-
+   >[!TIP]  
+   > 사용자의 환경이 [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) 사용에 대한 필수 조건을 충족하는 경우 Windows Defender ATP 기준을 사용할 수 있습니다.
 2. 사용하려는 기준을 선택한 후 **프로필 만들기**를 선택합니다.  
 
 3. **기본 사항** 탭에서 다음 속성을 지정합니다.

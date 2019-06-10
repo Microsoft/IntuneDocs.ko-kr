@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9f421a54319878c4f985ecc08252d4e03a00919
-ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
+ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66270002"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402784"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune의 Android 앱 보호 정책 설정
 이 문서에서는 Android 디바이스에 대한 앱 보호 정책 설정을 설명합니다. 설명하는 정책 설정은 Azure Portal의 **설정** 블레이드에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.
@@ -36,7 +36,7 @@ ms.locfileid: "66270002"
 | Setting | 사용 방법 | 기본값 |
 |------|------|------|
 | **Android 백업 서비스에 조직 데이터 백업** | 이 앱이 회사 또는 학교 데이터를 [Android 백업 서비스](https://developer.android.com/google/backup/index.html)로 백업하지 못하도록 하려면 **차단**을 선택합니다.<br><br> 이 앱이 회사 또는 학교 데이터를 백업하도록 허용하려면 **허용**을 선택합니다.| **허용** |
-| **다른 앱에 조직 데이터 보내기** | 이 앱에서 데이터를 받을 수 있는 앱을 지정합니다. <ul><li> **정책 관리 앱**: 다른 정책 관리 앱으로만 데이터를 전송하도록 허용합니다.</li> <li>**모든 앱**: 모든 앱으로의 전송을 허용합니다. </li> <li>**없음**: 다른 정책 관리 앱을 포함한 모든 앱에 대한 데이터 전송을 허용하지 않습니다.</li></ul> <p>Intune에서 기본적으로 데이터를 전송할 수 있는 몇 가지 예외적인 앱 및 서비스가 있습니다. 또한 데이터가 Intune APP를 지원하지 않는 앱으로 전송되도록 허용해야 하는 경우 고유한 예외를 만들 수 있습니다. 자세한 내용은 [데이터 전송 예외](app-protection-policy-settings-android.md#data-transfer-exemptions)를 참조하세요.<p>이 정책은 Androidi 앱 링크에도 적용될 수 있습니다.  일반 웹 링크는 **Open app links in Intune Managed Browser**(Intune Managed Browser에서 앱 링크 열기) 정책 설정을 통해 관리됩니다.<p>**참고:** 현재 Intune은 Android 인스턴트 앱 기능을 지원하지 않습니다.*Intune은 앱 간에 모든 데이터 연결을 차단합니다.* 자세한 내용은 Android 개발자 설명서에서 [Android 인스턴트 앱](https://developer.android.com/topic/instant-apps/index.html)을 참조하세요.</p>| **모든 앱** | 
+| **다른 앱에 조직 데이터 보내기** | 이 앱에서 데이터를 받을 수 있는 앱을 지정합니다. <ul><li> **정책 관리 앱**: 다른 정책 관리 앱으로만 데이터를 전송하도록 허용합니다.</li> <li>**모든 앱**: 모든 앱으로의 전송을 허용합니다. </li> <li>**없음**: 다른 정책 관리 앱을 포함한 모든 앱에 대한 데이터 전송을 허용하지 않습니다.</li></ul> <p>Intune에서 기본적으로 데이터를 전송할 수 있는 몇 가지 예외적인 앱 및 서비스가 있습니다. 또한 데이터가 Intune APP를 지원하지 않는 앱으로 전송되도록 허용해야 하는 경우 고유한 예외를 만들 수 있습니다. 자세한 내용은 [데이터 전송 예외](app-protection-policy-settings-android.md#data-transfer-exemptions)를 참조하세요.<p>이 정책은 Androidi 앱 링크에도 적용될 수 있습니다.  일반 웹 링크는 **Open app links in Intune Managed Browser**(Intune Managed Browser에서 앱 링크 열기) 정책 설정을 통해 관리됩니다.<p><div class="NOTE"><p>참고</p><p>현재 Intune은 Android 인스턴트 앱 기능을 지원하지 않습니다. Intune은 앱 간에 모든 데이터 연결을 차단합니다. 자세한 내용은 Android 개발자 설명서에서 [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html)를 참조하세요.</p><p>**다른 앱에 조직 데이터 보내기**가 **모든 앱**으로 구성된 경우, 텍스트 데이터는 계속 OS 공유를 통해 클립보드로 전송될 수 있습니다.</p></div> | **모든 앱** | 
 |<ul><ui> **제외할 앱 선택** | 이 옵션은 이전 옵션에 대해 *정책 관리형 앱*을 선택한 경우 사용할 수 있습니다. | |
 | **다른 앱의 데이터 받기** | 이 앱에 데이터를 전송할 수 있는 앱을 지정합니다. <ul><li>**정책 관리 앱**: 다른 정책 관리 앱에서만 데이터를 전송하도록 허용합니다.</li><li>**모든 앱**: 모든 앱에서의 데이터 전송을 허용합니다.</li><li>**없음**: 다른 정책 관리 앱을 포함한 모든 앱에서의 데이터 전송을 허용하지 않습니다. </li></ul> <p>예외적으로 intune이 데이터를 전송받을 수 있는 몇 가지 앱 및 서비스가 있습니다. 전체 앱 및 서비스 목록은 [데이터 전송 예외](app-protection-policy-settings-android.md#data-transfer-exemptions)를 참조하세요. | **모든 앱** |
 | **조직 데이터 복사본 저장** | 이 앱에서 다른 이름으로 저장 옵션을 사용할 수 없도록 설정하려면 **차단**을 선택합니다. 다른 이름으로 저장을 사용할 수 있도록 설정하려면 **허용**을 선택합니다. **참고:** *이 설정은 Microsoft Excel, OneNote, PowerPoint 및 Word에 지원됩니다. 또한 타사 및 LOB 앱에서도 지원될 수 있습니다.*| **허용** |  

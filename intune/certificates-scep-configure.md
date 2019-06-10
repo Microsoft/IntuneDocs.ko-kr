@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04c4cb95d9eacd8967ecacedfe1a5d335b729005
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
+ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043737"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448120"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -34,7 +34,7 @@ ms.locfileid: "66043737"
     CA에서 Windows Server 2008 R2를 실행하는 경우에는 [KB2483564의 핫픽스를 설치](http://support.microsoft.com/kb/2483564/)해야 합니다.
 
 - **NDES 서버**: Windows Server 2012 R2 이상에서는 NDES(네트워크 디바이스 등록 서비스) 서버 역할을 설정해야 합니다. Intune은 엔터프라이즈 CA도 실행하는 서버에서 NDES 사용을 지원하지 않습니다. NDES를 호스트하도록 Windows Server 2012 R2를 구성하는 방법에 대한 지침은 [네트워크 디바이스 등록 서비스 지침](http://technet.microsoft.com/library/hh831498.aspx)을 참조하세요.
-NDES 서버는 엔터프라이즈 CA와 동일한 포리스트 내의 도메인에 조인해야 합니다. 별도의 포리스트, 격리된 네트워크 또는 내부 도메인에 NDES 서버를 배포하는 방법에 대한 자세한 내용은 [네트워크 디바이스 등록 서비스와 함께 정책 모듈 사용](https://technet.microsoft.com/library/dn473016.aspx) 항목에서 찾아볼 수 있습니다.
+NDES 서버는 엔터프라이즈 CA와 동일한 포리스트 내의 도메인에 조인해야 합니다. 별도의 포리스트, 격리된 네트워크 또는 내부 도메인에 NDES 서버를 배포하는 방법에 대한 자세한 내용은 [네트워크 디바이스 등록 서비스와 함께 정책 모듈 사용](https://technet.microsoft.com/library/dn473016.aspx) 항목에서 찾아볼 수 있습니다. 다른 MDM에서 이미 사용 중인 NDES 서버를 사용할 수는 없습니다.
 
 - **Microsoft Intune Certificate Connector**: Intune 포털에서 **디바이스 구성** > **인증서 커넥터** > **추가**로 이동하고 *SCEP용 커넥터 설치 단계*를 따릅니다. 포털의 다운로드 링크를 사용하여 인증서 커넥터 설치 관리자 **NDESConnectorSetup.exe**의 다운로드를 시작합니다.  NDES 역할이 있는 서버에서 이 설치 관리자를 실행합니다.  
 
@@ -272,8 +272,8 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 2. **기능 설정 편집**을 선택한 다음, 값을 설정합니다.
 
-    - **쿼리 문자열(바이트)** = **65534**
-    - **최대 URL 길이(바이트)** = **65534**
+    - **쿼리 문자열(바이트)**  = **65534**
+    - **최대 URL 길이(바이트)**  = **65534**
 
 3. 다음 레지스트리 키를 검토합니다.
 
@@ -297,7 +297,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 > [!IMPORTANT] 
 > Microsoft Intune Certificate Connector를 별도의 Windows 서버에 **설치해야** 합니다. 발급 CA(인증 기관)에 설치할 수는 없습니다. 또한 NDES(네트워크 디바이스 등록 서비스) 역할과 같은 서버에 **설치해야** 합니다.
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **인증 커넥터** > **추가**를 선택합니다.
 3. SCEP 파일용 커넥터를 다운로드하여 저장합니다. 커넥터를 설치하려는 서버에서 액세스할 수 있는 위치에 저장합니다.
 
@@ -350,7 +350,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 ## <a name="create-a-scep-certificate-profile"></a>SCEP 인증서 프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Intune**을 기준으로 필터링한 다음 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 3. SCEP 인증서 프로필에 대한 **이름** 및 **설명**을 입력합니다.
 4. **플랫폼** 드롭다운 목록에서 이 SCEP 인증서에 대한 디바이스 플랫폼을 선택합니다. 현재, 디바이스 제한 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
@@ -386,15 +386,15 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
         - **일련 번호**
         - **사용자 지정**: 이 옵션을 선택하면 **사용자 지정** 텍스트 상자도 표시됩니다. 이 필드를 사용하여 변수를 포함한 사용자 지정 주체 이름 형식을 입력합니다. 사용자 지정 형식은 두 개의 변수 **CN(일반 이름)** 및 **E(메일)** 을 지원합니다. **CN(일반 이름)** 은 다음 변수 중 하나로 설정할 수 있습니다.
 
-            - **CN={{UserName}}**: 사용자의 사용자 계정 이름입니다(예: janedoe@contoso.com).
-            - **CN={{AAD_Device_ID}}**: Azure AD(Active Directory)에서 디바이스를 등록하는 경우 할당된 ID입니다. 이 ID는 일반적으로 Azure AD로 인증하는 데 사용됩니다.
-            - **CN={{SERIALNUMBER}}**: 일반적으로 디바이스를 식별하는 제조업체에서 사용되는 고유한 SN(일련 번호)입니다.
-            - **CN={{IMEINumber}}**: 휴대폰을 식별하는 데 사용되는 IMEI(International Mobile Equipment Identity) 고유 번호입니다.
-            - **CN={{OnPrem_Distinguished_Name}}**: 쉼표로 구분된 상대 고유 이름의 시퀀스입니다(예: `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`).
+            - **CN={{UserName}}** : 사용자의 사용자 계정 이름입니다(예: janedoe@contoso.com).
+            - **CN={{AAD_Device_ID}}** : Azure AD(Active Directory)에서 디바이스를 등록하는 경우 할당된 ID입니다. 이 ID는 일반적으로 Azure AD로 인증하는 데 사용됩니다.
+            - **CN={{SERIALNUMBER}}** : 일반적으로 디바이스를 식별하는 제조업체에서 사용되는 고유한 SN(일련 번호)입니다.
+            - **CN={{IMEINumber}}** : 휴대폰을 식별하는 데 사용되는 IMEI(International Mobile Equipment Identity) 고유 번호입니다.
+            - **CN={{OnPrem_Distinguished_Name}}** : 쉼표로 구분된 상대 고유 이름의 시퀀스입니다(예: `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`).
 
                 `{{OnPrem_Distinguished_Name}}` 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하는 `onpremisesdistingishedname` 사용자 특성을 Azure AD와 동기화해야 합니다.
 
-            - **CN={{onPremisesSamAccountName}}**: 관리자는 Azure AD Connect를 사용하여 Azure AD에 대한 Active Directory의 samAccountName 특성을 `onPremisesSamAccountName` 특성으로 동기화할 수 있습니다. Intune에서는 해당 변수를 SCEP 인증서의 제목에 있는 인증 발급 요청의 일부로 대체할 수 있습니다.  samAccountName 특성은 이전 버전의 Windows(Windows 2000 이전)에서 클라이언트 및 서버를 지원하는 데 사용되는 사용자 로그온 이름입니다. 사용자 로그온 이름 형식은 `DomainName\testUser`이거나 `testUser`만 사용합니다.
+            - **CN={{onPremisesSamAccountName}}** : 관리자는 Azure AD Connect를 사용하여 Azure AD에 대한 Active Directory의 samAccountName 특성을 `onPremisesSamAccountName` 특성으로 동기화할 수 있습니다. Intune에서는 해당 변수를 SCEP 인증서의 제목에 있는 인증 발급 요청의 일부로 대체할 수 있습니다.  samAccountName 특성은 이전 버전의 Windows(Windows 2000 이전)에서 클라이언트 및 서버를 지원하는 데 사용되는 사용자 로그온 이름입니다. 사용자 로그온 이름 형식은 `DomainName\testUser`이거나 `testUser`만 사용합니다.
 
                 `{{onPremisesSamAccountName}}` 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하는 `onPremisesSamAccountName` 사용자 특성을 Azure AD와 동기화해야 합니다.
 
@@ -468,14 +468,14 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
         사용자 지정 값 텍스트 상자에 정적 텍스트와 함께 이러한 변수를 추가할 수 있습니다. 예를 들어, DNS 특성을 `DNS name = {{AzureADDeviceId}}.domain.com`으로 추가할 수 있습니다.
 
         > [!IMPORTANT]
-        >  - SAN의 정적 텍스트에서 중괄호 **{}**, 파이프 기호 **|** 및 세미콜론 **;** 이 작동하지 않습니다. 
+        >  - SAN의 정적 텍스트에서 중괄호 **{}** , 파이프 기호 **|** 및 세미콜론 **;** 이 작동하지 않습니다. 
         >  - 디바이스 인증서 변수를 사용할 때 변수를 중괄호 **{ }** 로 묶습니다.
         >  - `{{FullyQualifiedDomainName}}`은 Windows 및 도메인에 가입된 디바이스에서만 작동합니다. 
         >  -  디바이스 인증서의 주체 또는 SAN에서 디바이스 속성(예: IMEI, 일련 번호 및 정규화된 도메인 이름)을 사용하는 경우 이러한 속성은 해당 디바이스의 액세스 권한을 가진 사람이 스푸핑할 수 있습니다.
         >  - 지정된 디바이스 변수가 지원되지 않는 경우 프로필이 디바이스에 설치되지 않습니다. 예를 들어 {{IMEI}}가 IMEI 번호가 없는 디바이스에 지정된 SCEP 프로필의 주체 대체 이름에 사용되는 경우 프로필 설치가 실패합니다.  
 
    - **인증서 유효 기간**: 발급 CA에 대해 사용자 지정 유효 기간을 허용하는 `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` 명령을 실행한 경우 인증서가 만료될 때까지 남은 기간을 입력할 수 있습니다.<br>인증서 템플릿에서 유효 기간보다 작은 값은 입력할 수 있지만 높은 값은 입력할 수 없습니다. 예를 들어 인증서 템플릿의 인증서 유효 기간이 2년이면 값을 1년으로 입력할 수는 있어도 5년으로는 입력할 수 없습니다. 또한 이 값은 발급 CA 인증서의 남은 유효 기간보다 작아야 합니다. 
-   - **KSP(키 저장소 공급자)**(Windows Phone 8.1, Windows 8.1, Windows 10): 인증서에 대한 키를 저장할 위치를 입력합니다. 다음 값 중 하나를 선택합니다.
+   - **KSP(키 저장소 공급자)** (Windows Phone 8.1, Windows 8.1, Windows 10): 인증서에 대한 키를 저장할 위치를 입력합니다. 다음 값 중 하나를 선택합니다.
      - **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈) KSP에 등록, 그렇지 않으면 소프트웨어 KSP에 등록**
      - **TPM(신뢰할 수 있는 플랫폼 모듈) KSP에 등록, 그러지 않으면 실패**
      - **Passport에 등록, 그러지 않으면 실패(Windows 10 이상)**
@@ -484,12 +484,12 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
    - **키 사용**: 인증서에 대한 키 사용 옵션을 입력합니다. 옵션은 다음과 같습니다.
      - **키 암호화**: 키가 암호화된 경우에만 키 교환을 허용합니다.
      - **디지털 서명**: 디지털 서명으로 키를 보호하는 경우에만 키 교환을 허용합니다.
-   - **키 크기(비트)**: 키에 포함된 비트 수를 선택합니다.
+   - **키 크기(비트)** : 키에 포함된 비트 수를 선택합니다.
    - **해시 알고리즘**(Android, Windows Phone 8.1, Windows 8.1, Windows 10): 이 인증서와 함께 사용할 수 있는 해시 알고리즘 유형 중 하나를 선택합니다. 연결 디바이스에서 지원되는 가장 강력한 보안 수준을 선택합니다.
    - **루트 인증서**: 이전에 구성하고 사용자 및/또는 디바이스에 할당한 루트 CA 인증서 프로필을 선택합니다. 이 CA 인증서는 이 인증서 프로필에서 구성하려는 인증서를 발급할 CA에 대한 루트 인증서여야 합니다. 이 신뢰할 수 있는 루트 인증서 프로필을 SCEP 인증서 프로필에 할당된 동일한 그룹에 할당해야 합니다.
    - **확장 키 사용**: 인증서의 용도에 대한 값을 **추가**합니다. 대부분의 경우 인증서는 사용자 또는 디바이스가 서버에 인증할 수 있도록 **클라이언트 인증**이 필요합니다. 그러나 필요에 따라 다른 키 사용을 추가할 수 있습니다.
    - **등록 설정**
-     - **갱신 임계값(%)**: 디바이스에서 인증서 갱신을 요청하기 전까지 남은 인증서 수명을 백분율로 입력합니다.
+     - **갱신 임계값(%)** : 디바이스에서 인증서 갱신을 요청하기 전까지 남은 인증서 수명을 백분율로 입력합니다.
      - **SCEP 서버 URL**: SCEP를 통해 인증서를 발급하는 NDES 서버의 URL을 하나 이상 입력합니다. 예를 들어 `https://ndes.contoso.com/certsrv/mscep/mscep.dll`과 같이 입력합니다.
      - **확인**, 프로필 **만들기**를 차례로 선택합니다.
 

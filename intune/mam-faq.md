@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,19 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041662"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506891"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 및 앱 보호에 대한 질문과 대답
 
 이 문서에서는 Intune MAM(모바일 애플리케이션 관리) 및 Intune 앱 보호에 대한 일부 질문과 대답을 제공합니다.
 
 ## <a name="mam-basics"></a>MAM 기본 사항
-
 
 **MAM이란?**<br></br>
 [Intune MAM(모바일 애플리케이션 관리)](/intune/app-lifecycle)은 사용자를 위해 모바일 앱을 게시, 푸시, 구성, 보호, 모니터링 및 업데이트할 수 있는 Intune 관리 기능 제품군을 나타냅니다.
@@ -72,6 +71,13 @@ Intune MAM은 다음과 같은 두 가지 구성을 지원합니다.
 - 최종 사용자가 앱 보호 정책의 대상으로 지정된 보안 그룹에 속해야 합니다. 동일한 앱 보호 정책은 사용 중인 특정 앱을 대상으로 해야 합니다. [Azure Portal](https://portal.azure.com)의 Intune 콘솔에서 앱 보호 정책을 만들고 배포할 수 있습니다. 보안 그룹은 현재 [Microsoft 365 관리 센터](https://admin.microsoft.com)에서 만들 수 있습니다.
 
 - 최종 사용자가 자신의 AAD 계정을 사용하여 앱에 로그인해야 합니다.
+
+**Intune 앱 보호를 사용하여 앱을 사용하도록 설정하지만 지원되는 앱 개발 플랫폼을 사용하지 않는 경우 어떻게 하나요?** 
+
+Intune SDK 개발 팀에서는 네이티브 Android, iOS(Obj-C, Swift), Xamarin, Xamarin.Forms 및 Cordova 플랫폼으로 빌드된 앱을 적극적으로 테스트하고 해당 앱에 대한 지원을 유지합니다. 일부 고객은 React Native와 NativeScript 같은 다른 플랫폼과 Intune SDK 통합에 성공했지만, Microsoft는 지원되는 플랫폼 외에 다른 플랫폼을 사용하는 앱 개발자를 위한 명확한 지침이나 플러그 인을 제공하지 않습니다.
+
+**Intune APP SDK가 MSAL(Microsoft 인증 라이브러리) 또는 소셜 계정을 지원합니까?**<br></br>
+Intune APP SDK는 자사 및 타사의 SDK 버전 모두에 고급 ADAL 기능을 사용합니다. 따라서 MSAL은 Intune 앱 보호 서비스 인증 및 조건부 실행과 같은 여러 핵심 시나리오에서 잘 작동하지 않습니다. Microsoft의 Identity 팀에서 제공하는 전반적인 지침이 모든 Microsoft Office 앱의 경우 MASL로 전환하는 것임을 고려하면, Intune SDK는 결국 MASL을 지원해야 하겠지만 현재로서는 계획이 없습니다.
 
 **[Outlook 모바일 앱](https://products.office.com/outlook) 사용에 대한 추가 요구 사항은 무엇인가요?**
 
@@ -164,8 +170,7 @@ Intune 앱 보호 기능은 애플리케이션과 Intune 앱 SDK에서 일관되
 **관리되는 앱에서 웹 링크를 안전하게 여는 방법이 있나요?**<br></br>
 예. IT 관리자는 Intune을 사용하여 쉽게 관리할 수 있는 Microsoft Intune에서 개발된 웹 브라우저인 [Intune Managed Browser 앱](app-configuration-managed-browser.md)에 대한 앱 보호 정책을 배포 및 설정할 수 있습니다. IT 관리자는 Intune 관리 앱의 모든 웹 링크가 Managed Browser 앱을 사용하여 열리도록 지정할 수 있습니다.
 
-**Intune APP SDK가 MSAL(Microsoft 인증 라이브러리) 또는 소셜 계정을 지원합니까?**
-Intune APP SDK는 자사 및 타사의 SDK 버전 모두에 고급 ADAL 기능을 사용합니다. 따라서 MSAL은 Intune 앱 보호 서비스 인증 및 조건부 실행과 같은 여러 핵심 시나리오에서 잘 작동하지 않습니다. 현재 이를 지원할 계획은 없습니다.
+
 
 ## <a name="app-experience-on-android"></a>Android의 앱 환경
 
@@ -199,13 +204,13 @@ Google Play Protect의 SafetyNet API 검사를 수행하려면 적어도 증명 
 'SafetyNet 디바이스 증명'과 '앱에서 위협 검색' 설정 둘 다 정상적으로 작동하려면 Google에서 확인한 Google Play 서비스 버전이 필요합니다. 보안 영역에 속하는 이러한 설정 때문에 최종 사용자는 이러한 설정의 대상으로 지정되었는데 Google Play 서비스 버전 요구 사항을 충족하지 않거나 Google Play 서비스에 대한 액세스 권한이 없으면 차단됩니다. 
 
 ## <a name="app-experience-on-ios"></a>iOS의 앱 환경
-**디바이스에 지문 또는 얼굴을 추가하거나 제거하면 어떻게 되나요?**
+**디바이스에 지문 또는 얼굴을 추가하거나 제거하면 어떻게 되나요?**<br></br>
 Intune 앱 보호 정책을 사용하면 Intune의 사용이 허가된 사용자에 대해서만 앱 액세스를 제어할 수 있습니다. 앱에 대한 액세스를 제어하는 한 가지 방법으로, 지원되는 디바이스에서 Apple의 Touch ID 또는 Face ID를 요구하는 방법이 있습니다. Intune은 디바이스의 생체 인식 데이터베이스에 변경 사항이 있는 경우 동작을 구현하며, Intune은 다음 비활성 시간 제한 값이 충족될 때 사용자에게 PIN을 요구하는 메시지를 표시합니다. 생체 인식 데이터의 변경 사항에는 지문 또는 얼굴의 추가나 제거가 포함됩니다. Intune 사용자에게 설정한 PIN이 없는 경우 Intune PIN 설정으로 안내됩니다.
  
 Intune PIN은 앱 내의 조직 데이터를 앱 수준에서 보호하고 계속 안전하게 유지하기 위한 것입니다. 이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 9.0.1 이상을 통합하는 애플리케이션의 참여가 필요합니다. 대상 애플리케이션에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 애플리케이션 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다. 
   
 **데이터 전송 정책이 "관리되는 앱만" 또는 "앱 없음"으로 설정된 경우에도 iOS 공유 확장을 사용하여 관리되지 않는 앱에서 회사 또는 학교 데이터를 열 수 있습니다. 데이터가 유출되지는 않나요?**<br></br>
-Intune 앱 보호 정책은 디바이스를 관리하지 않고는 iOS 공유 확장을 제어할 수 없습니다. 따라서 Intune은 _**"회사" 데이터를 앱 외부에서 공유하기 전에 먼저 암호화합니다**_. 관리되는 앱 외부에서 "회사" 파일 열기를 시도하여 이를 확인할 수 있습니다. 파일이 암호화되어야 하며, 관리되는 앱 외부에서 파일을 열 수 없어야 합니다.
+Intune 앱 보호 정책은 디바이스를 관리하지 않고는 iOS 공유 확장을 제어할 수 없습니다. 따라서 Intune은 _ **"회사" 데이터를 앱 외부에서 공유하기 전에 먼저 암호화합니다**_ . 관리되는 앱 외부에서 "회사" 파일 열기를 시도하여 이를 확인할 수 있습니다. 파일이 암호화되어야 하며, 관리되는 앱 외부에서 파일을 열 수 없어야 합니다.
 
 **iOS에서 앱 및 사용자 작업의 동일한 집합에 구성된 여러 Intune 앱 보호 액세스 설정은 어떻게 합니까?**<br></br>
 액세스에 대한 Intune 앱 보호 정책은 최종 사용자 디바이스가 회사 계정에서 대상 앱에 액세스하려 하기 때문에 해당 디바이스에 지정된 순서에 따라 적용됩니다. 일반적으로 초기화가 우선 적용되고, 차단이 적용된 다음, 무시할 수 있는 경고가 적용됩니다. 예를 들어 특정 사용자/앱에 적용되는 경우 사용자의 액세스를 차단하는 최소 iOS 운영 체제 설정 적용 후 iOS 버전을 업그레이드하도록 사용자에게 경고하는 최소 iOS 운영 체제 설정이 적용됩니다. 따라서 IT 관리자가 최소 iOS 운영 체제를 11.0.0.0으로, 최소 iOS 운영 체제(경고에서만 해당)를 11.1.0.0으로 구성하는 반면 앱에 액세스하려는 디바이스는 iOS 10인 시나리오에서 최종 사용자는 결국 액세스 차단을 야기하는 최소 iOS 운영 체제에 대한 더 제한적인 설정을 기반으로 차단되게 됩니다.
