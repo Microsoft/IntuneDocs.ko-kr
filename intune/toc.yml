@@ -576,10 +576,12 @@
                   href: windows-store-for-business.md
                 - name: iOS 전자책
                   href: vpp-ebooks-ios.md
-            - name: 회사 포털 앱 구성
+            - name: 회사 포털 구성
               href: company-portal-app.md
             - name: Managed Browser 구성
               href: app-configuration-managed-browser.md
+            - name: Microsoft Edge 구성
+              href: manage-microsoft-edge.md
             - name: Outlook 구성
               href: app-configuration-policies-outlook.md
         - name: 앱 보호
