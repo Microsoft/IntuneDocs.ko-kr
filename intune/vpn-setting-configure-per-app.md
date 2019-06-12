@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 iOS 디바이스용 앱당 VPN 설정 - Azure | Microsoft Docs
-description: 필수 조건을 참조하고 VPN(가상 사설망) 사용자에 대한 그룹을 만들고 SCEP 인증서 프로필을 추가하고 앱당 VPN 프로필을 구성하고 일부 앱을 iOS 디바이스의 Microsoft Intune에서 VPN 프로필을 할당합니다. 또한 디바이스에서 VPN 연결을 확인하기 위한 단계를 나열합니다.
+description: 필수 조건을 참조하고 VPN(가상 프라이빗 네트워크) 사용자에 대한 그룹을 만들고 SCEP 인증서 프로필을 추가하고 앱당 VPN 프로필을 구성하고 일부 앱을 iOS 디바이스의 Microsoft Intune에서 VPN 프로필을 할당합니다. 또한 디바이스에서 VPN 연결을 확인하기 위한 단계를 나열합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -23,9 +23,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "66373663"
 ---
-# <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune에서 iOS 디바이스용 앱당 VPN(가상 사설망) 설정
+# <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune에서 iOS 디바이스용 앱당 VPN(가상 프라이빗 네트워크) 설정
 
-Microsoft Intune에서 앱에 할당된 VPN(가상 사설망)을 만들고 사용할 수 있습니다. 이 기능은 "앱당 VPN" 이라고 합니다. Intune에서 관리되는 디바이스에서 VPN을 사용할 수 있는 관리 앱을 선택합니다. 앱당 VPN을 사용하는 경우 최종 사용자는 VPN을 통해 자동으로 연결하고 문서 등의 조직 리소스에 액세스합니다.
+Microsoft Intune에서 앱에 할당된 VPN(가상 프라이빗 네트워크)을 만들고 사용할 수 있습니다. 이 기능은 "앱당 VPN" 이라고 합니다. Intune에서 관리되는 디바이스에서 VPN을 사용할 수 있는 관리 앱을 선택합니다. 앱당 VPN을 사용하는 경우 최종 사용자는 VPN을 통해 자동으로 연결하고 문서 등의 조직 리소스에 액세스합니다.
 
 이 기능은 다음에 적용됩니다.
 

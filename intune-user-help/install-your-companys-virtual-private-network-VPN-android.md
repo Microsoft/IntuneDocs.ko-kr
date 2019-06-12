@@ -1,5 +1,5 @@
 ---
-title: 회사의 VPN(가상 사설망) 설치 | Microsoft 문서
+title: 회사의 VPN(가상 프라이빗 네트워크) 설치 | Microsoft 문서
 description: ''
 keywords: ''
 author: lenewsad
@@ -20,12 +20,12 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6f1d8befd1cd960fd70b7cc3fbd574609ce1fb0d
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55845162"
 ---
-# <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>회사의 VPN(가상 사설망)을 설치하는 방법
+# <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>회사의 VPN(가상 프라이빗 네트워크)을 설치하는 방법
 
 사용자가 회사 리소스에 연결할 수 있도록 회사 지원팀이 VPN 애플리케이션을 구성한 경우에는 VPN 앱을 설치해야 한다는 알림이 Android 장치에 표시됩니다. VPN 앱을 설치하려면 다음 단계를 수행합니다.
 

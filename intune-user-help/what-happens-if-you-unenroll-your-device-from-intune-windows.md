@@ -20,7 +20,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5c28d5b122bda537d4707bc0fdc2bfc74bcb823a
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55847287"
@@ -51,7 +51,7 @@ ms.locfileid: "55847287"
 
 -   Windows 메일과 같은 일부 메일 앱에서 더 이상 디바이스에 저장된 회사 메일에 액세스할 수 없습니다.
 
--   Wi-Fi 또는 VPN(가상 사설망)을 사용하여 회사 네트워크에 연결할 수 없습니다.
+-   Wi-Fi 또는 VPN(가상 프라이빗 네트워크)을 사용하여 회사 네트워크에 연결할 수 없습니다.
 
 -   디바이스에서 더 이상 일부 회사 리소스(예: 파일 공유 또는 내부 웹 사이트)에 액세스하지 못할 수 있습니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "55847287"
 
 -   디바이스를 추가할 때 디바이스에서 변경된 모든 설정(예: 카메라 사용 안 함 또는 특정 암호 길이 요구)이 더 이상 적용되지 않습니다.
 
--   더 이상 Wi-Fi 또는 VPN(가상 사설망)을 사용하여 회사 네트워크에 연결할 수 없습니다.
+-   더 이상 Wi-Fi 또는 VPN(가상 프라이빗 네트워크)을 사용하여 회사 네트워크에 연결할 수 없습니다.
 
 -   디바이스에서 더 이상 일부 회사 리소스(예: 파일 공유 또는 내부 웹 사이트)에 액세스하지 못할 수 있습니다.
 

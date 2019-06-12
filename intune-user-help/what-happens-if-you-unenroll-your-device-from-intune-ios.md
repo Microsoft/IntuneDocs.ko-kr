@@ -20,7 +20,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55844247"
@@ -39,7 +39,7 @@ Intune에서 iOS 또는 macOS 디바이스 등록을 취소하면:
 
 -   디바이스에서 더 이상 회사 앱 및 회사 데이터를 사용할 수 없습니다.
 
--   더 이상 Wi-Fi 또는 VPN(가상 사설망)을 사용하여 회사 네트워크에 연결할 수 없습니다.
+-   더 이상 Wi-Fi 또는 VPN(가상 프라이빗 네트워크)을 사용하여 회사 네트워크에 연결할 수 없습니다.
 
 -   디바이스에서 회사 전자 메일 프로필이 제거됩니다.
 

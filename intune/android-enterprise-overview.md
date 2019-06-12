@@ -62,7 +62,7 @@ Android 엔터프라이즈 회사 프로필 디바이스에 Exchange ActiveSync 
 
 ## <a name="app-protection-policies"></a>앱 보호 정책
 
-앱 보호 정책은 회사 프로필 및 개인 프로필에서 완전히 지원됩니다. Android 앱 게시 콘솔(https://play.google.com/apps/publish)에 기간 업무 앱을 게시할 수 있습니다. 이 콘솔에는 앱을 조직에 비공개로 설정하는 옵션이 포함됩니다. 자세한 내용은 [Intune에서 Android 엔터프라이즈 회사 프로필 디바이스에 대한 디바이스 규정 준수 정책 추가](compliance-policy-create-android-for-work.md)를 참조하세요. 앱 보호 정책에 대한 일반적인 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
+앱 보호 정책은 회사 프로필 및 개인 프로필에서 완전히 지원됩니다. Android 앱 게시 콘솔(https://play.google.com/apps/publish)에 기간 업무 앱을 게시할 수 있습니다. 이 콘솔에는 앱을 조직에 프라이빗으로 설정하는 옵션이 포함됩니다. 자세한 내용은 [Intune에서 Android 엔터프라이즈 회사 프로필 디바이스에 대한 디바이스 규정 준수 정책 추가](compliance-policy-create-android-for-work.md)를 참조하세요. 앱 보호 정책에 대한 일반적인 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
 
 ## <a name="vpn-profiles"></a>VPN 프로필
 

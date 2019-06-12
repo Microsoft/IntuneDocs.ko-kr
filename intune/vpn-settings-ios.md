@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 iOS 디바이스에 VPN 설정 추가 - Azure | Microsoft Docs
-description: 기본 설정에서 연결 세부 정보, 인증 방법 및 분할 터널링을 비롯하여 식별자를 포함하는 사용자 지정 VPN 설정, Safari URL을 포함하는 앱당 VPN 설정, SSID 또는 DNS 검색 도메인을 포함하는 주문형 VPN 및 iOS를 실행하는 디바이스의 Microsoft Intune에서 구성 스크립트, IP 또는 FQDN 주소 및 TCP 포트를 포함하는 프록시 설정 등 VPN(가상 사설망) 구성 설정을 사용하는 VPN 구성 프로필을 추가하거나 만듭니다.
+description: 기본 설정에서 연결 세부 정보, 인증 방법 및 분할 터널링을 비롯하여 식별자를 포함하는 사용자 지정 VPN 설정, Safari URL을 포함하는 앱당 VPN 설정, SSID 또는 DNS 검색 도메인을 포함하는 주문형 VPN 및 iOS를 실행하는 디바이스의 Microsoft Intune에서 구성 스크립트, IP 또는 FQDN 주소 및 TCP 포트를 포함하는 프록시 설정 등 VPN(가상 프라이빗 네트워크) 구성 설정을 사용하는 VPN 구성 프로필을 추가하거나 만듭니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia

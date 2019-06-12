@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7998eb82b27a7e70d5a77374950e544fd603f6d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1929b811a5a5320bc0ceefcef4f05ed2443ac070
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046290"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819653"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune에서 Mobile Threat Defense 커넥터를 사용하도록 설정
 
@@ -33,11 +33,7 @@ Mobile Threat Defense(MTD)를 설치하는 동안 MTD 파트너 콘솔에서 위
 
 ## <a name="to-enable-the-mtd-connector"></a>MTD 커넥터를 사용하도록 설정하려면
 
-1. [Azure Portal](https://portal.azure.com)로 이동한 다음 Intune 자격 증명을 사용하여 로그인합니다. 성공적으로 로그인한 후 **Azure 대시보드**를 참조합니다.
-
-2. **Azure 대시보드**의 왼쪽 메뉴에서 **모든 서비스**를 선택한 다음, 텍스트 상자 필터에 **Intune**을 입력합니다.
-
-3. **Intune**을 선택하면 **Intune 대시보드**가 열립니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 
 4. **Intune 대시보드**에서 **디바이스 준수**를 선택하고 **설치** 섹션 아래에서 **Mobile Threat Defense**를 선택합니다.
 
@@ -63,7 +59,7 @@ Mobile Threat Defense(MTD)를 설치하는 동안 MTD 파트너 콘솔에서 위
 
 - **지원되지 않은 OS 버전 차단**: 디바이스가 지원되는 최소 버전보다 낮은 운영 체제를 실행 중인 경우 차단합니다.
 
-- **파트너가 응답하지 않을 때까지 기간(일)**: 연결이 끊어져서 Intune에서 파트너가 응답하지 않는 것으로 간주할 때까지의 비활성 상태 기간(일)입니다. Intune은 응답하지 않는 MTD 파트너에 대한 준수 상태를 무시합니다.
+- **파트너가 응답하지 않을 때까지 기간(일)** : 연결이 끊어져서 Intune에서 파트너가 응답하지 않는 것으로 간주할 때까지의 비활성 상태 기간(일)입니다. Intune은 응답하지 않는 MTD 파트너에 대한 준수 상태를 무시합니다.
 
 > [!IMPORTANT] 
 > 가능하다면 디바이스 규정 준수 및 조건부 액세스 정책 규칙을 만들기 전에 MTD 앱을 추가하고 할당하는 것이 좋습니다. 이렇게 하면 MTD 앱이 최종 사용자가 설치할 수 있는 상태로 준비되어 최종 사용자가 이메일과 기타 회사 리소스에 액세스할 수 있습니다.

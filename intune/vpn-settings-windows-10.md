@@ -18,7 +18,7 @@ ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8b71bc2ea893199b83de5fd1480dae5630c3edfd
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "57565668"
@@ -27,7 +27,7 @@ ms.locfileid: "57565668"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune을 사용하여 디바이스에 대한 VPN 연결을 추가하고 구성할 수 있습니다. 이 문서에서는 VPN(가상 사설망)을 만들 때 일반적으로 사용되는 설정 및 기능을 나열하고 설명합니다. 이러한 VPN 설정 및 기능은 푸시되거나 디바이스에 배포되는 Intune에서 디바이스 구성 프로필에 사용됩니다. 
+Microsoft Intune을 사용하여 디바이스에 대한 VPN 연결을 추가하고 구성할 수 있습니다. 이 문서에서는 VPN(가상 프라이빗 네트워크)을 만들 때 일반적으로 사용되는 설정 및 기능을 나열하고 설명합니다. 이러한 VPN 설정 및 기능은 푸시되거나 디바이스에 배포되는 Intune에서 디바이스 구성 프로필에 사용됩니다. 
 
 MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 사용하여 VPN 공급 기업 사용, Always On 사용하도록 설정, DNS 사용, 프록시 추가 등을 비롯한 기능을 사용하거나 사용하지 않도록 설정합니다.
 
@@ -125,7 +125,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 �
 
 - **이 VPN 연결에 대한 조건부 액세스**: 클라이언트에서 디바이스 준수 흐름이 가능하게 합니다. 사용하도록 설정하면, VPN 클라이언트가 인증에 사용할 인증서를 가져오기 위해 Azure AD(Active Directory)와 통신합니다. 인증서 인증을 사용하려면 VPN을 설정해야 하고, VPN 서버가 Azure AD에서 반환된 서버를 신뢰해야 합니다.
 
-- **대체 인증서를 사용한 SSO(Single Sign-On)**: 디바이스 준수에 대해 Kerberos 인증을 위한 VPN 인증 인증서와 다른 인증서를 사용합니다. 다음 설정으로 인증서를 입력합니다.
+- **대체 인증서를 사용한 SSO(Single Sign-On)** : 디바이스 준수에 대해 Kerberos 인증을 위한 VPN 인증 인증서와 다른 인증서를 사용합니다. 다음 설정으로 인증서를 입력합니다.
 
   - **이름**: EKU(확장된 키 사용)의 이름
   - **개체 식별자**: EKU의 개체 식별자

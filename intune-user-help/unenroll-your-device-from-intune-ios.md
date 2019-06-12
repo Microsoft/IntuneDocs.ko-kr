@@ -20,7 +20,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2d52ef6f2cf995031c25bc9065212e39235041b2
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55841160"
@@ -46,7 +46,7 @@ Intune에서 디바이스를 제거하려면 다음 단계를 따르거나 이 �
 
   Intune에서 디바이스를 등록 취소하면 다음과 같은 일이 발생합니다.
 
-  -   장치가 더 이상 회사 포털에 나타나지 않습니다.
+  -   디바이스가 더 이상 회사 포털에 나타나지 않습니다.
 
   -   더 이상 회사 포털에서 앱을 설치할 수 없습니다.
 
@@ -56,7 +56,7 @@ Intune에서 디바이스를 제거하려면 다음 단계를 따르거나 이 �
 
   -   디바이스에서 더 이상 회사 앱 및 회사 데이터를 사용할 수 없습니다.
 
-  -   더 이상 Wi-Fi 또는 VPN(가상 사설망)을 사용하여 회사 네트워크에 연결할 수 없습니다.
+  -   더 이상 Wi-Fi 또는 VPN(가상 프라이빗 네트워크)을 사용하여 회사 네트워크에 연결할 수 없습니다.
 
   -   디바이스에서 회사 전자 메일 프로필이 제거됩니다.
 

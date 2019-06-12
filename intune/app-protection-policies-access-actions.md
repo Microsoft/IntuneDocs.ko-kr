@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 490c7312f510651cafc6ade516e5f7dca8131b3a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043964"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804676"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune에서 앱 보호 정책 액세스 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -32,9 +32,7 @@ Intune 앱 보호 정책을 사용하면 최종 사용자가 회사 앱 또는 �
 
 ## <a name="create-an-app-protection-policy-using-access-actions"></a>액세스 작업을 사용하여 앱 보호 정책 만들기
 
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
-2. **모든 서비스** > **Intune**을 선택합니다.  
-    Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **클라이언트 앱** > **앱 보호 정책**을 선택합니다.
 4. **정책 추가**(기존 정책을 편집할 수도 있음)를 클릭합니다. 
 5. **필요한 설정 구성**을 클릭하여 정책에 대해 구성할 수 있는 설정 목록을 볼 수 있습니다. 
@@ -71,7 +69,7 @@ iOS의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대한 �
 - 지정됨(비지정 초기화)
 
 **IT 관리자가 동일한 Intune 사용자의 동일한 앱을 대상으로 하는 정책 간 다른 iOS 모델 식별자 목록을 입력하면 어떻게 되나요?**<br>
-구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 iOS 모델 식별자의 교차점이 됩니다. 예를 들어 ‘정책 A’는 “iPhone5,2;iPhone5,3”을 지정하고 ‘정책 B’는 “iPhone5,3”을 지정합니다. ‘정책 A’와 ‘정책 B’ 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 “iPhone5,3”이 됩니다. 
+구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 iOS 모델 식별자의 교차점이 됩니다. 예를 들어 ‘정책 A’는 “iPhone5,2;iPhone5,3”을 지정하고 ‘정책 B’는 “iPhone5,3”을 지정합니다. ‘정책 A’와 ‘정책 B’ 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 “iPhone5,3”이 됩니다.     
 
 ### <a name="android-policy-settings"></a>Android 정책 설정
 
@@ -87,7 +85,7 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 -  앱에서 위협 검색
 
 **디바이스 제조업체** 설정을 사용하려면 세미콜론으로 구분된 Android 제조업체 목록을 입력합니다. 디바이스의 Android 제조업체는 디바이스 설정에서 찾을 수 있습니다.<br>
-입력의 예: ‘제조업체 A;제조업체 B’ 
+입력의 예: ‘제조업체 A;제조업체 B’  
 
 >[!NOTE]
 > 다음은 Intune을 사용하여 디바이스에서 보고하는 일반적인 제조업체로, 입력으로 사용할 수 있습니다. Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
@@ -98,7 +96,7 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 - 지정됨(지정되지 않은 경우 초기화)
 
 **IT 관리자가 동일한 Intune 사용자의 동일한 앱을 대상으로 하는 정책 간 다른 Android 제조업체 목록을 입력하면 어떻게 되나요?**<br>
-구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 Android 제조업체의 교차점이 됩니다. 예를 들어 ‘정책 A’는 “Google;Samsung”을 지정하고 ‘정책 B’는 “Google”을 지정합니다. ‘정책 A’와 ‘정책 B’ 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 “Google”이 됩니다. 
+구성된 값에 대한 두 개의 앱 보호 정책 간 충돌이 발생하면 Intune은 일반적으로 가장 제한적인 방식을 사용합니다. 따라서 대상 Intune 사용자에 의해 열리는 대상 앱으로 전송되는 결과 정책은 동일한 앱/사용자 조합을 대상으로 하는 *정책A* 및 *정책 B*에 나열된 Android 제조업체의 교차점이 됩니다. 예를 들어 ‘정책 A’는 “Google;Samsung”을 지정하고 ‘정책 B’는 “Google”을 지정합니다. ‘정책 A’와 ‘정책 B’ 둘 모두를 대상으로 하는 Intune 사용자의 결과 정책은 “Google”이 됩니다.     
 
 ### <a name="additional-settings-and-actions"></a>추가 설정 및 작업 
 

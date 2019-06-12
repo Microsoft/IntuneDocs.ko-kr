@@ -20,7 +20,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2637b80136293361ba8936a64e3bf2fa95c6e803
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55840793"
@@ -31,6 +31,6 @@ ms.locfileid: "55840793"
 
 1. **시작**으로 이동하여 **제어판**을 엽니다.
 2. **시스템 및 보안** > **Windows Defender 방화벽**을 엽니다.
-3. 도메인, 개인 및 공용 네트워크에 대해 **설정 사용자 지정** > **Windows 방화벽 설정 또는 해제**를 선택합니다.
+3. 도메인, 프라이빗 및 퍼블릭 네트워크에 대해 **설정 사용자 지정** > **Windows 방화벽 설정 또는 해제**를 선택합니다.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. IT 관리자의 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

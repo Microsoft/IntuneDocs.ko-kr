@@ -20,7 +20,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
 ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/21/2019
 ms.locfileid: "58330401"
@@ -49,7 +49,7 @@ Intune에서 디바이스를 등록 취소하면 다음과 같은 일이 발생�
 
 -   디바이스에서 더 이상 회사 앱 및 회사 데이터를 사용할 수 없습니다.
 
--   더 이상 Wi-Fi 또는 VPN(가상 사설망)을 사용하여 회사 네트워크에 연결할 수 없습니다.
+-   더 이상 Wi-Fi 또는 VPN(가상 프라이빗 네트워크)을 사용하여 회사 네트워크에 연결할 수 없습니다.
 
 -   디바이스에서 회사 메일 액세스가 제거될 수 있습니다.
 

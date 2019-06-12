@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 VPN 디바이스 프로필 만들기 - Azure | Microsoft Docs
-description: iOS 디바이스의 경우 VPN(가상 사설망) 연결 형식을 보고, Azure Portal에서 VPN 디바이스 프로필을 만들고, Microsoft Intune에서 인증서 또는 사용자 이름과 암호를 사용하여 VPN 프로필을 보호 하는 옵션을 확인합니다.
+description: iOS 디바이스의 경우 VPN(가상 프라이빗 네트워크) 연결 형식을 보고, Azure Portal에서 VPN 디바이스 프로필을 만들고, Microsoft Intune에서 인증서 또는 사용자 이름과 암호를 사용하여 VPN 프로필을 보호 하는 옵션을 확인합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -26,7 +26,7 @@ ms.locfileid: "57394035"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전하게 원격으로 액세스할 수 있습니다. 디바이스는 VPN 연결 프로필을 사용하여 VPN 서버와의 연결을 시작합니다. Microsoft Intune의 **VPN 프로필**을 사용하여 조직의 사용자 및 디바이스에 VPN 설정을 할당하면 네트워크에 쉽고 안전하게 연결할 수 있습니다.
+VPN(가상 프라이빗 네트워크)을 사용하면 사용자가 회사 네트워크에 안전하게 원격으로 액세스할 수 있습니다. 디바이스는 VPN 연결 프로필을 사용하여 VPN 서버와의 연결을 시작합니다. Microsoft Intune의 **VPN 프로필**을 사용하여 조직의 사용자 및 디바이스에 VPN 설정을 할당하면 네트워크에 쉽고 안전하게 연결할 수 있습니다.
 
 예를 들어 기업 네트워크에서 파일 공유에 연결하는 데 필요한 설정을 사용하여 모든 iOS 디바이스를 프로비전하려고 할 수 있습니다. 기업 네트워크에 연결하는 설정을 포함하는 VPN 프로필을 만듭니다. 그런 다음, iOS 디바이스를 사용하는 모든 사용자에게 이 프로필을 할당합니다. 사용자에게는 지원되는 네트워크 목록에서 VPN 연결이 표시되어 최소한의 노력으로 연결할 수 있습니다.
 

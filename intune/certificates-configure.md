@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37938287cc5ddde6285ec09aa0fffea56f98b3c3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e0e0eda1c60e420adcdab9364ecb0da1f52fe4e6
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048948"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713904"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune에서 디바이스에 대한 인증서 프로필 구성
 
@@ -83,15 +83,14 @@ Intune을 사용하여 관리하는 디바이스에 이러한 인증서를 할�
 
 ## <a name="step-2-export-your-trusted-root-ca-certificate"></a>2단계: 신뢰할 수 있는 루트 CA 인증서 내보내기
 
-발급 CA(인증 기관) 또는 발급 CA를 신뢰하는 디바이스에서 신뢰할 수 있는 루트 인증 기관(CA)을 공용 인증서(.cer)로 내보냅니다. 개인 키(.pfx)를 내보내지 마세요.
+발급 CA(인증 기관) 또는 발급 CA를 신뢰하는 디바이스에서 신뢰할 수 있는 루트 인증 기관(CA)을 공용 인증서(.cer)로 내보냅니다. 프라이빗 키(.pfx)를 내보내지 마세요.
 
 신뢰할 수 있는 인증서 프로필을 설정할 때 이 인증서를 가져옵니다.
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>3단계: 신뢰할 수 있는 인증서 프로필 만들기
 SCEP 또는 PKCS 인증서 프로필을 만들기 전에 신뢰할 수 있는 인증서 프로필을 만듭니다. 각 디바이스 플랫폼에 신뢰할 수 있는 인증서 프로필 및 SCEP 또는 PKCS 프로필이 필요합니다. 신뢰할 수 있는 인증서를 만들기 위한 단계는 각 디바이스 플랫폼의 경우와 유사합니다.
 
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
-2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **디바이스 구성** > **관리** > **프로필** > **프로필 만들기**를 선택합니다.
 4. 신뢰할 수 있는 인증서 프로필에 대한 **이름** 및 **설명**을 입력합니다.
 5. **플랫폼** 드롭다운 목록에서 이 신뢰할 수 있는 인증서에 대한 디바이스 플랫폼을 선택합니다. 옵션은 다음과 같습니다.

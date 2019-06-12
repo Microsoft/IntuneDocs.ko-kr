@@ -62,7 +62,7 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 ### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>iOS 디바이스의 기업 간 대량 구매 앱 지원
 
-또한 타사 개발자가 iTunes Connect에서 지정된 권한 있는 Volume Purchase Program for Business 멤버에 대해 개인적으로 앱을 배포할 수도 있습니다. 이러한 VPP for Business 멤버는 Volume Purchase Program 앱 스토어에 로그인하고 해당 앱을 구입할 수 있습니다. 최종 사용자가 구매한 VPP for Business 앱은 Intune 테넌트에 동기화됩니다.
+또한 타사 개발자가 iTunes Connect에서 지정된 권한 있는 Volume Purchase Program for Business 멤버에 대해 프라이빗으로 앱을 배포할 수도 있습니다. 이러한 VPP for Business 멤버는 Volume Purchase Program 앱 스토어에 로그인하고 해당 앱을 구입할 수 있습니다. 최종 사용자가 구매한 VPP for Business 앱은 Intune 테넌트에 동기화됩니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 시작하기 전에 Apple에서 VPP 토큰 하나를 가져와 Intune 계정에 업로드해야 합니다. 또한 다음 조건을 이해해야 합니다.

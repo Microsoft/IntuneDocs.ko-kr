@@ -134,7 +134,7 @@ Windows 10 이상에 적용됩니다.
 iOS 12 및 VPN 프로필에 대한 자세한 내용은 [Microsoft Intune 지원 팀 블로그](https://go.microsoft.com/fwlink/?linkid=2013806)를 참조하세요.
 
 #### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal----2469637---"></a>Intune Azure Portal에서 이러한 정책을 다시 만들도록 Azure 클래식 포털 준수 정책 내보내기 <!-- 2469637 -->
-Azure 클래식 포털에서 만든 준수 정책은 더 이상 사용되지 않습니다. 기존 준수 정책을 검토하고 삭제할 수 있지만 업데이트할 수는 없습니다. 준수 정책을 현재 Intune Azure Portal로 마이그레이션하려는 경우 쉼표로 구분된 파일로 정책을 내보낼 수 있습니다(*.csv* 파일). 그런 다음, 파일의 세부 정보를 사용하여 Intune Azure Portal에서 이러한 정책을 다시 만듭니다.
+Azure 클래식 포털에서 만든 준수 정책은 더 이상 사용되지 않습니다. 기존 준수 정책을 검토하고 삭제할 수 있지만 업데이트할 수는 없습니다. 준수 정책을 현재 Intune Azure Portal로 마이그레이션하려는 경우 쉼표로 구분된 파일로 정책을 내보낼 수 있습니다( *.csv* 파일). 그런 다음, 파일의 세부 정보를 사용하여 Intune Azure Portal에서 이러한 정책을 다시 만듭니다.
 
 > [!IMPORTANT]
 > Azure 클래식 포털에서 사용 중지하는 경우 더 이상 준수 정책에 액세스하거나 볼 수 없습니다. 따라서 Azure 클래식 포털이 사용 중지되기 전에 Azure Portal에서 정책을 내보내고 다시 만들어야 합니다.
@@ -283,7 +283,7 @@ Windows 10 이상에 적용됩니다.
 현재 Intune은 [Active Directory 인증서 서비스를 사용하여 SCEP 요청](certificates-scep-configure.md)을 지원합니다.
 
 #### <a name="toggle-to-show-or-not-show-the-end-session-button-on-a-kiosk-browser----2455253---"></a>키오스크 브라우저에서 세션 종료 단추를 표시할지 여부를 설정/해제 <!-- 2455253 -->
-이제 키오스크 브라우저에서 세션 종료 단추를 표시할지 여부를 구성할 수 있습니다. **디바이스 구성** > **키오스크(미리 보기)** > **키오스크 웹 브라우저**에서 컨트롤을 볼 수 있습니다. 설정된 경우 사용자가 단추를 클릭하면 앱은 세션을 종료할지 확인하는 메시지를 표시합니다. 확인한 경우 브라우저는 모든 검색 데이터를 지우고 기본 URL로 다시 이동합니다.
+이제 키오스크 브라우저에서 세션 종료 단추를 표시할지 여부를 구성할 수 있습니다. **디바이스 구성** > **키오스크(미리 보기)**  > **키오스크 웹 브라우저**에서 컨트롤을 볼 수 있습니다. 설정된 경우 사용자가 단추를 클릭하면 앱은 세션을 종료할지 확인하는 메시지를 표시합니다. 확인한 경우 브라우저는 모든 검색 데이터를 지우고 기본 URL로 다시 이동합니다.
 
 #### <a name="create-an-esim-cellular-configuration-profile----2564077---"></a>eSIM 셀룰러 구성 프로필 만들기 <!-- 2564077 -->
 **디바이스 구성**에서 eSIM 셀룰러 프로필을 만들 수 있습니다. 모바일 운영자가 제공하는 셀룰러 활성화 코드를 포함하는 파일을 가져올 수 있습니다. 그런 다음, 이러한 프로필을 Surface Pro LTE 및 eSIM 지원 디바이스와 같은 eSIM LTE가 활성화된 Windows 10 디바이스에 배포할 수 있습니다.
@@ -397,7 +397,7 @@ FIPS(Federal Information Processing Standard) 모드를 사용하는 컴퓨터�
 Windows 10 디바이스에 대한 추가 로컬 디바이스 보안 옵션 설정을 구성할 수 있습니다. 추가 설정은 Microsoft 네트워크 클라이언트, Microsoft 네트워크 서버, 네트워크 액세스/보안 및 대화형 로그온 영역에서 사용할 수 있습니다. Windows 10 디바이스 구성 정책을 만들 때 Endpoint Protection 범주에서 이러한 설정을 찾아보세요.
 
 #### <a name="enable-kiosk-mode-on-windows-10-devices----1560072----"></a>Windows 10 디바이스에서 키오스크 모드 사용 <!-- 1560072 ! -->
-Windows 10 디바이스에서 구성 프로필을 만들고 키오스크 모드를 사용하도록 설정할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10** > **디바이스 제한 사항** > **키오스크**). 이 업데이트에서 **키오스크(미리 보기)** 설정은 **키오스크(사용되지 않음)** 로 이름이 바뀝니다. **키오스크(사용되지 않음)** 는 더 이상 사용하지 않는 것이 좋지만 7월 업데이트까지 계속 작동합니다. **키오스크(사용되지 않음)** 는 새로운 **키오스크** 프로필 유형(**프로필 만들기** > **Windows 10** > **키오스크(미리 보기)**)으로 바뀌고 이 프로필 유형에는 Windows 10 RS4 이상에서 키오스크를 구성하는 설정이 포함됩니다.
+Windows 10 디바이스에서 구성 프로필을 만들고 키오스크 모드를 사용하도록 설정할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10** > **디바이스 제한 사항** > **키오스크**). 이 업데이트에서 **키오스크(미리 보기)** 설정은 **키오스크(사용되지 않음)** 로 이름이 바뀝니다. **키오스크(사용되지 않음)** 는 더 이상 사용하지 않는 것이 좋지만 7월 업데이트까지 계속 작동합니다. **키오스크(사용되지 않음)** 는 새로운 **키오스크** 프로필 유형(**프로필 만들기** > **Windows 10** > **키오스크(미리 보기)** )으로 바뀌고 이 프로필 유형에는 Windows 10 RS4 이상에서 키오스크를 구성하는 설정이 포함됩니다.
 
 Windows 10 이상에 적용됩니다.
 
@@ -425,7 +425,7 @@ AutoPilot 배포 프로필을 AutoPilot 디바이스를 포함하는 Azure AD �
 #### <a name="set-compliance-by-device-location----851881----"></a>디바이스 위치별 규정 준수 설정 <!-- 851881 ! -->
 상황에 따라 회사 리소스에 대한 액세스를 네트워크 연결로 정의된 특정 위치로 제한할 수 있습니다. 이제 디바이스의 IP 주소를 기반으로 하여 준수 정책을 만들 수 있습니다(**디바이스 준수** > **위치**). IP 범위를 벗어난 디바이스는 회사 리소스에 액세스할 수 없습니다.
 
-적용 대상: 회사 포털 앱이 업데이트된 Android 디바이스 6.0 이상 
+적용 대상: 회사 포털 앱이 업데이트된 Android 디바이스 6.0 이상
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Windows 10 Enterprise RS4 Autopilot 디바이스에서 소비자 앱 및 경험 방지<!-- 1621980 -->
 Windows 10 Enterprise RS4 AutoPilot 디바이스에서 소비자 앱 및 환경을 설치하지 못하도록 방지할 수 있습니다. 이 기능을 확인하려면 **Intune** > **장치 구성** > **프로필** > **프로필 만들기** > **플랫폼** = **Windows 10 이상** > **프로필 유형** = **장치 제한** > **구성** > **Windows 추천** > **소비자 기능**으로 차례로 이동합니다. 
@@ -530,7 +530,7 @@ Azure Portal의 Microsoft Intune 서비스에서는 **Intune 앱 보호** 서비
 
 #### <a name="always-on-vpn-for-windows-10---1333666---"></a>Windows 10용 Always On VPN <!--1333666 -->
 
-현재 [Always On](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-auto-trigger-profile#always-on)은 OMA-URI를 통해 만든 사용자 지정 VPN(가상 사설망) 프로필을 사용하여 Windows 10 디바이스에서 사용할 수 있습니다.
+현재 [Always On](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-auto-trigger-profile#always-on)은 OMA-URI를 통해 만든 사용자 지정 VPN(가상 프라이빗 네트워크) 프로필을 사용하여 Windows 10 디바이스에서 사용할 수 있습니다.
 
 이 업데이트를 사용하면 관리자는 Azure Portal의 Intune에서 직접 Always On for Windows 10 VPN 프로필을 사용하도록 설정할 수 있습니다. Always On VPN 프로필은 다음과 같은 경우 자동으로 연결됩니다.
 
@@ -566,7 +566,7 @@ Azure Portal의 Microsoft Intune 서비스에서는 **Intune 앱 보호** 서비
 다음 종속 기술은 Credential Guard를 구성할 때 자동으로 사용하도록 설정됩니다. 
 
   - **VBS(가상화 기반 보안) 사용**: 다음 다시 부팅 시 VBS(가상화 기반 보안)를 켭니다. 가상화 기반 보안에서는 Windows 하이퍼바이저를 사용하여 보안 서비스에 대한 지원을 제공하며, 보안 부팅이 필요합니다.
-  - **보안 부팅 및 DMA(직접 메모리 액세스)**: 보안 부팅 및 직접 메모리 액세스를 통해 VBS를 켭니다. DMA 보호는 하드웨어 지원이 필요하며 제대로 구성된 디바이스에서만 사용하도록 설정됩니다. 
+  - **보안 부팅 및 DMA(직접 메모리 액세스)** : 보안 부팅 및 직접 메모리 액세스를 통해 VBS를 켭니다. DMA 보호는 하드웨어 지원이 필요하며 제대로 구성된 디바이스에서만 사용하도록 설정됩니다. 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>SCEP 인증서에서 사용자 지정 주체 이름 사용 <!-- 2064190 -->
 SCEP 인증서 프로필에서 사용자 지정 주체에 **OnPremisesSamAccountName** 일반 이름을 사용할 수 있습니다. 예를 들어 `CN={OnPremisesSamAccountName})`를 사용할 수 있습니다.
@@ -1138,7 +1138,7 @@ Intune에서 SCEP 인증서 프로필을 만드는 경우 이제 사용자 지�
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>Samsung Knox 디바이스의 날짜/시간 변경 허용 안 함 <!-- 1468103 -->
 
-Samsung Knox 디바이스의 날짜 및 시간 변경을 차단할 수 있는 새로운 기능이 추가되었습니다. 이 기능은 **디바이스 구성 프로필** > **디바이스 제한 사항(Android)** > **일반**에서 확인할 수 있습니다.
+Samsung Knox 디바이스의 날짜 및 시간 변경을 차단할 수 있는 새로운 기능이 추가되었습니다. 이 기능은 **디바이스 구성 프로필** > **디바이스 제한 사항(Android)**  > **일반**에서 확인할 수 있습니다.
 
 #### <a name="surface-hub-resource-account-supported----1566442----"></a>Surface Hub 리소스 계정 지원됨 <!-- 1566442  -->
 
@@ -1411,7 +1411,7 @@ Windows AutoPilot 할당되지 않은 디바이스에 대한 새 경고는 **Mic
 이 릴리스에서는 디바이스 설치 상태 보고서에 iOS 및 Android용 기간 업무 앱의 앱 버전 번호가 표시됩니다. 이 정보를 사용하여 앱 문제를 해결하거나 오래된 앱 버전을 실행하는 디바이스를 찾을 수 있습니다.
 
 ### <a name="admins-can-now-configure-the-firewall-settings-on-a-device-using-a-device-configuration-profile----951708---"></a>이제 관리자는 디바이스 구성 프로필을 사용하여 디바이스에서 방화벽 설정을 구성할 수 있습니다. <!-- 951708 -->   
-관리자는 디바이스에 방화벽을 설정하고, 도메인, 개인 및 공용 네트워크에 다양한 프로토콜을 구성할 수도 있습니다.  이러한 방화벽 설정은 "Endpoint Protection" 프로필에서 찾을 수 있습니다.
+관리자는 디바이스에 방화벽을 설정하고, 도메인, 프라이빗 및 퍼블릭 네트워크에 다양한 프로토콜을 구성할 수도 있습니다.  이러한 방화벽 설정은 "Endpoint Protection" 프로필에서 찾을 수 있습니다.
 
 ### <a name="windows-defender-application-guard-helps-protect-devices-from-untrusted-websites-as-defined-by-your-organization----958257---"></a>Windows Defender Application Guard를 통해 조직에서 정의한 대로 신뢰할 수 없는 웹 사이트로부터 디바이스를 보호할 수 있습니다. <!-- 958257 -->   
 관리자는 Windows Information Protection 워크플로 또는 디바이스 구성에서 새 "네트워크 경계" 프로필을 사용하여 사이트를 "신뢰할 수 있음" 또는 "협력"으로 정의할 수 있습니다. 64비트 Windows 10 디바이스의 신뢰할 수 있는 네트워크 경계에 나열되지 않은 사이트가 Microsoft Edge에 표시되는 경우 Hyper-V 가상 머신 내에서 브라우저를 대신 엽니다.
@@ -1620,7 +1620,7 @@ Intune에서 이제 [TeamViewer](https://www.teamviewer.com) 소프트웨어(별
 
 
 ### <a name="volume-purchase-program-for-business-apps-will-now-sync-to-your-intune-tenant----800882---"></a>Intune 테넌트로 동기화되는 비즈니스용 Volume Purchase Program 앱 <!-- 800882 -->  
-타사 개발자가 앱을 iTunes Connect에서 지정한 권한 있는 비즈니스용 VPP(Volume Purchase Program) 구성원에 개인적으로 배포할 수 있습니다. 이러한 VPP for Business 멤버는 Volume Purchase Program 앱 스토어에 로그인하고 해당 앱을 구입할 수 있습니다.
+타사 개발자가 앱을 iTunes Connect에서 지정한 권한 있는 비즈니스용 VPP(Volume Purchase Program) 구성원에 프라이빗으로 배포할 수 있습니다. 이러한 VPP for Business 멤버는 Volume Purchase Program 앱 스토어에 로그인하고 해당 앱을 구입할 수 있습니다.
 
 이 릴리스에서는 이제 최종 사용자가 구매한 비즈니스용 VPP 앱이 Intune 테넌트로 동기화됩니다.
 

@@ -128,7 +128,7 @@ Microsoft Intune에서 WDATP(Windows Defender Advanced Threat Protection)을 온
 
 [VPN 설정](vpn-settings-configure.md)은 VPN 프로필을 조직 내 사용자와 디바이스에 할당함으로써 네트워크에 쉽고 안전하게 연결할 수 있습니다. 
 
-VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전하게 원격으로 액세스할 수 있습니다. 디바이스에서 VPN 연결 프로필을 사용하여 VPN 서버와의 연결을 시작합니다. 
+VPN(가상 프라이빗 네트워크)을 사용하면 사용자가 회사 네트워크에 안전하게 원격으로 액세스할 수 있습니다. 디바이스에서 VPN 연결 프로필을 사용하여 VPN 서버와의 연결을 시작합니다. 
 
 이 기능은 다음을 지원합니다. 
 

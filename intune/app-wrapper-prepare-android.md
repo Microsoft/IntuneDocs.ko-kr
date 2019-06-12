@@ -19,7 +19,7 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566049"
@@ -90,11 +90,11 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|원본 Android 앱(.apk)의 경로입니다.| |
  |**-OutputPath**&lt;String&gt;|출력 Android 앱의 경로입니다. InputPath와 동일한 디렉터리 경로일 경우 패키징이 실패합니다.| |
-|**-KeyStorePath**&lt;String&gt;|서명을 위한 공개/개인 키 쌍이 포함된 키 저장소 파일의 경로입니다.|기본적으로 키 저장소 파일은 "C:\Program Files (x86)\Java\jreX.X.X_XX\bin"에 저장됩니다. |
+|**-KeyStorePath**&lt;String&gt;|서명을 위한 퍼블릭/프라이빗 키 쌍이 포함된 키 저장소 파일의 경로입니다.|기본적으로 키 저장소 파일은 "C:\Program Files (x86)\Java\jreX.X.X_XX\bin"에 저장됩니다. |
 |**-KeyStorePassword**&lt;SecureString&gt;|키 저장소를 해독하는 데 사용되는 암호입니다. Android에서는 모든 애플리케이션 패키지(.apk)가 서명되어야 합니다. Java keytool을 사용하여 KeyStorePassword를 생성합니다. 여기에서 Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)(키 저장소)에 대해 자세히 읽으세요.| |
 |**-KeyAlias**&lt;String&gt;|서명에 사용할 키의 이름입니다.| |
-|**-KeyPassword**&lt;SecureString&gt;|서명에 사용될 개인 키의 암호를 해독하는 데 사용되는 암호입니다.| |
-|**-SigAlg**&lt;SecureString&gt;| (선택 사항) 서명에 사용할 서명 알고리즘의 이름입니다. 이 알고리즘은 개인 키와 호환해야 합니다.|예: SHA256withRSA, SHA1withRSA|
+|**-KeyPassword**&lt;SecureString&gt;|서명에 사용될 프라이빗 키의 암호를 해독하는 데 사용되는 암호입니다.| |
+|**-SigAlg**&lt;SecureString&gt;| (선택 사항) 서명에 사용할 서명 알고리즘의 이름입니다. 이 알고리즘은 프라이빗 키와 호환해야 합니다.|예: SHA256withRSA, SHA1withRSA|
 |**-UseMinAPILevelForNativeMultiDex**| (선택 사항) 이 플래그를 사용 하 여 원본 Android 앱의 최소 API 수준 21로 증가 합니다. 이 플래그는이 앱을 설치할 수는 제한 하는 대로 확인 메시지가 나타납니다. 사용자가 매개 변수를 추가 하 여 확인 대화 상자를 건너뛸 수 "-확인: $false" PowerShell 명령에 해당 합니다. 플래그를 고객이 DEX 오버플로 오류로 인해 성공적으로 래핑할 실패 하는 최소 API < 21을 사용 하 여 앱에만 사용 해야 합니다. | |
 | **&lt;CommonParameters&gt;** | (선택 사항) 명령은 verbose, debug와 같은 일반적인 PowerShell 매개 변수를 지원합니다. |
 

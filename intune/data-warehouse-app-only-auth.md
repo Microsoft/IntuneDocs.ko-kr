@@ -35,7 +35,7 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 
 ## <a name="azure-keyvault"></a>Azure KeyVault
 
-다음 프로세스에서는 개인 메서드를 사용하여 앱 키를 처리하고 변환합니다. 이 개인 메서드의 이름은 SecureString입니다. 또는 Azure KeyVault를 사용하여 앱 키를 저장할 수도 있습니다. 자세한 내용은 [Key Vault](https://azure.microsoft.com/services/key-vault/)를 참조하세요.
+다음 프로세스에서는 프라이빗 메서드를 사용하여 앱 키를 처리하고 변환합니다. 이 프라이빗 메서드의 이름은 SecureString입니다. 또는 Azure KeyVault를 사용하여 앱 키를 저장할 수도 있습니다. 자세한 내용은 [Key Vault](https://azure.microsoft.com/services/key-vault/)를 참조하세요.
 
 ## <a name="create-a-web-app"></a>웹앱 만들기
 

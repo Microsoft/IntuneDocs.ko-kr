@@ -33,11 +33,11 @@ Intune에서 Windows Holographic 디바이스를 사용하려면 버전 업그�
 
 Azure AD(Active Directory)는 Windows Holographic for Business를 실행하는 디바이스의 관리 및 제어를 도와주는 유용한 리소스입니다. Intune 및 Azure AD를 사용하여 다음을 수행할 수 있습니다. 
 
-- **[Azure Active Directory에 디바이스 조인](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: Azure AD(Active Directory)에서 Windows Holographic for Business를 실행하는 디바이스를 포함하여 회사 소유의 Windows 10 디바이스를 추가할 수 있습니다. 이 기능은 Azure AD가 디바이스를 제어하도록 허용합니다. 이렇게 하면 사용자는 보안 및 규정 표준을 충족하는 디바이스에서 회사 리소스에 액세스할 수 있습니다.
+- **[Azure Active Directory에 디바이스 조인](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : Azure AD(Active Directory)에서 Windows Holographic for Business를 실행하는 디바이스를 포함하여 회사 소유의 Windows 10 디바이스를 추가할 수 있습니다. 이 기능은 Azure AD가 디바이스를 제어하도록 허용합니다. 이렇게 하면 사용자는 보안 및 규정 표준을 충족하는 디바이스에서 회사 리소스에 액세스할 수 있습니다.
 
   자세한 내용은 [Azure AD의 디바이스 관리](https://docs.microsoft.com/azure/active-directory/devices/overview)에 설명되어 있습니다.
 
-- **[Windows 디바이스에 대한 대량 등록](windows-bulk-enroll.md)**: 여러 새로운 Windows 디바이스를 Azure AD(Active Directory) 및 Intune에 조인할 수 있습니다. 이 기능을 대량 등록이라고 하며, 프로비전 패키지를 사용합니다. 이러한 패키지는 Windows Holographic for Business를 실행하는 디바이스를 Azure AD 테넌트에 조인하고, Intune에 등록합니다.
+- **[Windows 디바이스에 대한 대량 등록](windows-bulk-enroll.md)** : 여러 새로운 Windows 디바이스를 Azure AD(Active Directory) 및 Intune에 조인할 수 있습니다. 이 기능을 대량 등록이라고 하며, 프로비전 패키지를 사용합니다. 이러한 패키지는 Windows Holographic for Business를 실행하는 디바이스를 Azure AD 테넌트에 조인하고, Intune에 등록합니다.
 
 ## <a name="company-portal"></a>회사 포털
 **[회사 포털 앱 구성](company-portal-app.md)**
@@ -85,11 +85,11 @@ Intune에는 IT 관리자가 디바이스에서 로컬로 또는 Azure Portal에
 
 Windows Holographic for Business를 실행하는 디바이스를 사용할 때 다음 작업을 사용할 수 있습니다. 
 
-- **[초기화](devices-wipe.md#wipe)**: **초기화** 작업은 Intune에서 디바이스를 제거하고 공장 기본값으로 복원합니다. 이 작업은 새 사용자에게 디바이스를 제공하기 전에 또는 디바이스를 분실하거나 도난당했을 때 사용합니다.
+- **[초기화](devices-wipe.md#wipe)** : **초기화** 작업은 Intune에서 디바이스를 제거하고 공장 기본값으로 복원합니다. 이 작업은 새 사용자에게 디바이스를 제공하기 전에 또는 디바이스를 분실하거나 도난당했을 때 사용합니다.
 
-- **[사용 중지](devices-wipe.md#retire)**: **사용 중지** 작업은 Intune에서 디바이스를 제거합니다. 관리되는 앱 데이터, 설정 및 Intune에서 할당된 이메일 프로필도 제거합니다. 사용자의 개인 데이터는 디바이스에 유지됩니다.
+- **[사용 중지](devices-wipe.md#retire)** : **사용 중지** 작업은 Intune에서 디바이스를 제거합니다. 관리되는 앱 데이터, 설정 및 Intune에서 할당된 이메일 프로필도 제거합니다. 사용자의 개인 데이터는 디바이스에 유지됩니다.
 
-- **[디바이스를 동기화하여 최신 정책과 작업 가져오기](device-sync.md)**: **동기화** 작업은 강제로 디바이스가 Intune을 사용하여 즉시 체크 인하도록 합니다. 디바이스가 체크 인하면 디바이스에 할당된 보류 중인 작업 또는 정책을 즉시 받게 됩니다. 이 기능을 통해 예약된 다음 체크 인을 기다리지 않고 할당한 정책의 유효성을 검사하고 문제를 해결할 수 있습니다.
+- **[디바이스를 동기화하여 최신 정책과 작업 가져오기](device-sync.md)** : **동기화** 작업은 강제로 디바이스가 Intune을 사용하여 즉시 체크 인하도록 합니다. 디바이스가 체크 인하면 디바이스에 할당된 보류 중인 작업 또는 정책을 즉시 받게 됩니다. 이 기능을 통해 예약된 다음 체크 인을 기다리지 않고 할당한 정책의 유효성을 검사하고 문제를 해결할 수 있습니다.
 
 **[Microsoft Intune 디바이스 관리란?](device-management.md)** 은 Azure Portal을 사용하여 디바이스를 관리하는 방법에 대한 유용한 리소스입니다. 
 
@@ -103,7 +103,7 @@ Windows Holographic for Business를 실행하는 디바이스를 사용할 때 �
 
 Intune은 조직 내의 다른 디바이스에서 사용하거나 사용하지 않게 할 수 있는 설정 및 기능을 포함합니다. 이러한 설정 및 기능은 프로필을 사용하여 관리됩니다. 예를 들어 Cortana를 사용하도록 설정하거나 Windows Holographic for Business를 실행하는 디바이스에서 Windows Defender Smart Screen을 사용하는 프로필을 만들 수 있습니다.
 
-프로필에서 OMA URI를 사용하여 일부 설정을 사용자 지정하고 디바이스 제한을 만들고 VPN(가상 사설망) 및 Wi-Fi를 구성할 수 있습니다.
+프로필에서 OMA URI를 사용하여 일부 설정을 사용자 지정하고 디바이스 제한을 만들고 VPN(가상 프라이빗 네트워크) 및 Wi-Fi를 구성할 수 있습니다.
 
 #### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[사용자 지정 디바이스 설정](custom-settings-windows-holographic.md)
 
@@ -119,7 +119,7 @@ Intune에서 사용할 수 있는 공유 또는 게스트 PC 기능을 사용하
 
 #### <a name="configure-vpnvpn-settings-configuremd"></a>[VPN 구성](vpn-settings-configure.md)
 
-VPN(가상 사설망)을 사용하면 사용자가 회사 네트워크에 안전하게 원격으로 액세스할 수 있습니다. Intune에서 Windows Holographic for Business를 실행하는 디바이스에 대한 특정 설정을 포함하는 VPN 프로필을 만들 수 있습니다. 예를 들어 VPN 프로필을 만듦으로써 모든 Windows Holographic for Business 디바이스는 연결 유형으로 Citrix VPN를 사용할 수 있습니다.
+VPN(가상 프라이빗 네트워크)을 사용하면 사용자가 회사 네트워크에 안전하게 원격으로 액세스할 수 있습니다. Intune에서 Windows Holographic for Business를 실행하는 디바이스에 대한 특정 설정을 포함하는 VPN 프로필을 만들 수 있습니다. 예를 들어 VPN 프로필을 만듦으로써 모든 Windows Holographic for Business 디바이스는 연결 유형으로 Citrix VPN를 사용할 수 있습니다.
 
 #### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi 구성](wi-fi-settings-configure.md)
 
