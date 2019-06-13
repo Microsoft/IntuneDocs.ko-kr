@@ -270,7 +270,7 @@
         - name: macOS 디바이스 지우기
           href: device-erase.md
         - name: 원격 제어 모바일 디바이스
-          href: device-profile-android-teamviewer.md
+          href: teamviewer-support.md
         - name: Windows 10 PIN 재설정
           href: device-windows-pin-reset.md
         - name: 디바이스 동기화
