@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
-ms.translationtype: HT
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373508"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749906"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune에 대한 Microsoft Defender Advanced Threat Protection 기준 설정
 
-Microsoft Intune에서 지원하는 Microsoft Defender Advanced Threat Protection(이전 Windows Defender Advanced Threat Protection) 기준 설정을 봅니다. 이 문서의 기본값은 Intune의 기본 기준 구성을 나타냅니다. 이 기본값은 Intune의 권장 구성을 나타내며 Windows 기본값과 일치하지 않을 수 있습니다.
+Microsoft Intune에서 지원하는 Microsoft Defender Advanced Threat Protection(이전 Windows Defender Advanced Threat Protection) 기준 설정을 봅니다. ATP(Advanced Threat Protection) 기준 기본값은 ATP에 대한 권장 구성을 나타내며, 다른 보안 기준의 기준 기본값과 일치하지 않을 수 있습니다.  
 
   사용자의 환경이 [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) 사용에 대한 필수 조건을 충족하는 경우 Microsoft Defender Advanced Threat Protection 기준을 사용할 수 있습니다.
 
@@ -33,7 +33,7 @@ Microsoft Intune에서 지원하는 Microsoft Defender Advanced Threat Protectio
 
 
 > [!NOTE]  
-> WDATP 기준 설정은 **미리 보기**로 제공됩니다. 미리 보기 상태에서 사용 가능한 설정 목록 및 이 콘텐츠가 해당 설정을 제공하는 순서는 포털에서 사용 가능한 항목과 일치하지 않을 수 있습니다. 
+> ATP 기준 설정은 **미리 보기**로 제공됩니다. 미리 보기 상태에서 사용 가능한 설정 목록 및 이 콘텐츠가 해당 설정을 제공하는 순서는 포털에서 사용 가능한 항목과 일치하지 않을 수 있습니다.  
 >
 > 기준 설정이 미리 보기가 아닌 경우 이 콘텐츠는 Intune에서 지원하는 현재 보안 기준 설정 목록을 반영하도록 업데이트됩니다.
 
