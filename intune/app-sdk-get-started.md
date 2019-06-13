@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043786"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506867"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -33,7 +33,7 @@ Intune 앱 SDK는 iOS 및 Android에서 유사한 시나리오를 지원하며 �
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>앱이 조직 내부용이며 공개적으로 사용할 수 없는 경우:
 
-앱을 등록할 _**필요가 없습니다**_. 회사에서 또는 회사에 대해 작성된 내부 [LOB(기간 업무) 앱](apps-add.md#app-types-in-microsoft-intune)의 경우 IT 관리자는 내부적으로 앱을 배포합니다. Intune에서는 SDK로 빌드된 앱을 감지하여 IT 관리자가 해당 앱에 앱 보호 정책을 적용할 수 있도록 합니다. [iOS 또는 Android 앱을 앱 보호 정책에 사용할 수 있도록 설정](#enable-your-ios-or-android-app-for-app-protection-policy) 섹션으로 건너뛸 수 있습니다.
+앱을 등록할 _**필요가 없습니다**_ . 회사에서 또는 회사에 대해 작성된 내부 [LOB(기간 업무) 앱](apps-add.md#app-types-in-microsoft-intune)의 경우 IT 관리자는 내부적으로 앱을 배포합니다. Intune에서는 SDK로 빌드된 앱을 감지하여 IT 관리자가 해당 앱에 앱 보호 정책을 적용할 수 있도록 합니다. [iOS 또는 Android 앱을 앱 보호 정책에 사용할 수 있도록 설정](#enable-your-ios-or-android-app-for-app-protection-policy) 섹션으로 건너뛸 수 있습니다.
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>앱이 Apple App Store 또는 Google Play와 같은 공개 앱 스토어에 출시되는 경우:
 
@@ -81,11 +81,11 @@ Microsoft 리포지토리에서 분기하고 끌어오는 데 사용할 수 있�
 
 앱에 Intune 앱 SDK를 통합하려면 다음 개발자 가이드 중 하나가 필요합니다.
 
-* **[iOS용 Intune 앱 SDK 개발자 가이드](app-sdk-ios.md)**: 이 문서에서는 Intune 앱 SDK를 사용하여 기본 iOS 앱을 사용하도록 설정하는 과정을 단계별로 안내합니다.
+* **[iOS용 Intune 앱 SDK 개발자 가이드](app-sdk-ios.md)** : 이 문서에서는 Intune 앱 SDK를 사용하여 기본 iOS 앱을 사용하도록 설정하는 과정을 단계별로 안내합니다.
 
-* **[Android용 Intune 앱 SDK 개발자 가이드](app-sdk-android.md)**: 이 문서에서는 Intune 앱 SDK를 사용하여 기본 Android 앱을 사용하도록 설정하는 과정을 단계별로 안내합니다.
+* **[Android용 Intune 앱 SDK 개발자 가이드](app-sdk-android.md)** : 이 문서에서는 Intune 앱 SDK를 사용하여 기본 Android 앱을 사용하도록 설정하는 과정을 단계별로 안내합니다.
 
-* **[Intune 앱 SDK Xamarin 바인딩 가이드](app-sdk-xamarin.md)**: 이 문서를 사용하면 Intune 앱 보호 정책용 Xamarin을 사용하여 iOS 및 Android 앱을 쉽게 빌드할 수 있습니다.
+* **[Intune 앱 SDK Xamarin 바인딩 가이드](app-sdk-xamarin.md)** : 이 문서를 사용하면 Intune 앱 보호 정책용 Xamarin을 사용하여 iOS 및 Android 앱을 쉽게 빌드할 수 있습니다.
 
 
 
@@ -174,15 +174,12 @@ iOS 또는 Android 앱을 Intune 앱 SDK와 통합하는 데 필요한 단계를
 Azure 테넌트 내에서 앱을 등록한 후에 해당 앱이 **모든 애플리케이션** 아래에 표시되면 앱에 Intune 앱 보호 서비스(이전의 MAM 서비스)에 대한 액세스 권한을 부여해야 합니다. Azure Portal에서:
 
 1.  **Azure Active Directory** 블레이드로 이동합니다.
-2.  애플리케이션의 **앱 등록** 설정을 선택합니다.
-3.  **API 액세스** 제목 아래의 **설정**에서 **필수 사용 권한**을 선택합니다. 
-4.  **+ 추가**를 클릭합니다.
-5.  **API 선택**을 클릭합니다. 
-6.  검색 상자에 **Microsoft 모바일 애플리케이션 관리**를 입력합니다.
-7.  API 목록에서 **Microsoft 모바일 애플리케이션 관리**를 선택하고 선택을 클릭합니다.
-8.  **사용자의 앱 관리 데이터 읽기 및 쓰기**를 선택합니다.
-9.  **완료**를 클릭합니다.
-10. **권한 부여**, **예**를 차례로 클릭합니다. 
+2.  **앱 등록** 아래에서 애플리케이션에 대해 설정된 목록으로 이동합니다.
+3.  **+ 권한 추가**를 클릭합니다.
+4.  **내 조직에서 사용하는 API**를 클릭합니다. 
+5.  검색 상자에 **Microsoft 모바일 애플리케이션 관리**를 입력합니다.
+6.  **위임된 권한**에서 **DeviceManagementManagedApps.ReadWrite: 사용자 앱 관리 데이터 읽기 및 쓰기*** 확인란을 선택합니다.
+7. **권한 추가**를 클릭합니다.
 
 ### <a name="badge-your-app-optional"></a>앱에 배지 지정(선택 사항)
 

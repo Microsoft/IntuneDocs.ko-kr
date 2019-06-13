@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812c012bbb69c32d518c9dfa772ed4b37e1260a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837988"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506857"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Android 디바이스에 대한 규정 준수 확인
 
-얼마 동안 디바이스를 Intune으로 체크 인하지 못했으면 회사 또는 학교 리소스에 액세스하지 못할 수 있습니다. 다시 액세스하려면 다음을 시도합니다.
+얼마 동안 디바이스를 Intune으로 체크 인하지 못했으면 회사 또는 학교 리소스에 액세스하지 못할 수 있습니다. 이 단계를 통해 액세스를 다시 얻습니다.  
 
-1. 디바이스에서 Android 회사 포털 앱을 엽니다.
+1. 디바이스에서 Android용 회사 포털 앱을 엽니다.  
 
-2. **준수 확인**을 탭합니다.
+2. **디바이스 설정 확인**을 탭합니다.  
 
-분실하거나 도난당한 디바이스를 다시 설정할 수 없는 경우에는 회사 지원팀에 다시 설정하도록 요청하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.
+분실하거나 도난당한 디바이스를 다시 설정할 수 없는 경우에는 회사 지원팀에 다시 설정하도록 요청하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.  

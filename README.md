@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "58069076"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804434"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source Code of Conduct(Microsoft 오픈 소스 규정)
 
@@ -20,24 +20,24 @@ Microsoft의 클라우드 및 엔터프라이즈 분야에 관한 기술 콘텐�
 
 * **GitHub 계정 만들기**: 등록은 [GitHub.com](https://www.github.com)에서 무료입니다.
 
-* **브라우저를 사용 하 여**: 두 가지 옵션이 있습니다. 
+* **브라우저 사용**: 두 가지 옵션이 있습니다. 
 
     **옵션 1: docs.microsoft.com에서 직접 편집**  
-    1. 와 같은 항목으로 이동 [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune)합니다. 
-    2. 선택 **편집** (오른쪽 위). 이 GitHub 리포지토리에서 markdown 파일을 보여줍니다.
-    3. 연필 아이콘을 선택 합니다. 연필 아이콘 위로 마우스를 가져가면 표시 합니다 **이 파일을 편집** 도구 설명 합니다. 
-    4. 변경 내용을 확인 한 다음 **커밋** 변경 합니다. 
+    1. [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune) 등의 토픽으로 이동합니다. 
+    2. **편집**(오른쪽 위)을 선택합니다. 그러면 GitHub 리포지토리의 markdown 파일을 보여 줍니다.
+    3. 연필 아이콘을 선택합니다. 연필 아이콘에 마우스를 올려 놓으면 **이 파일 편집** 도구 설명이 표시됩니다. 
+    4. 변경한 다음, 변경 내용을 **커밋**합니다. 
     5. 끌어오기 요청을 만듭니다.
     
-    **옵션 2:이 리포지토리에서 문서를 찾아 업데이트**  
-    1.  대부분의 항목은 `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`합니다. 이 폴더에 항목 이름에 대해 같은 검색 `troubleshoot-policies-in-microsoft-intune`합니다. 
-    2. 링크를 선택 하 고 연필 아이콘을 클릭 합니다. 연필 아이콘 위로 마우스를 가져가면 표시 합니다 **이 파일을 편집** 도구 설명 합니다. 
-    3. 변경 내용을 확인 한 다음 **커밋** 변경 합니다. 
+    **옵션 2: 이 리포지토리에서 문서를 찾아 업데이트**  
+    1.  대부분의 토픽은 `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`에 있습니다. 이 폴더에서 `troubleshoot-policies-in-microsoft-intune` 같은 토픽 이름을 검색합니다. 
+    2. 링크를 선택하고 연필 아이콘을 클릭합니다. 연필 아이콘에 마우스를 올려 놓으면 **이 파일 편집** 도구 설명이 표시됩니다. 
+    3. 변경한 다음, 변경 내용을 **커밋**합니다. 
     4. 끌어오기 요청을 만듭니다. 
 
   업데이트를 할 경우 라이선스 계약에 서명하라는 메시지가 표시될 수 있습니다. 이 작업은 일회성 작업입니다. 따라서 향후 GitHub 사용자 이름으로 하는 모든 업데이트에는 다시 서명하지 않아도 됩니다. 
   
-  값을 `author` GitHub 만든이 메타 데이터 (모든 항목 맨 위에 있음)를 나열 합니다. 에 `troubleshoot-policies-in-microsoft-intune` 살펴보면 예 `MandiOhlinger`합니다. 끌어오기 요청에 나타낼 수도 있습니다 (@*authorValue*) 원하는 경우 작성자입니다.
+  `author` 메타데이터의 값(토픽마다)은 GitHub 작성자를 열거합니다. `troubleshoot-policies-in-microsoft-intune` 예제에서는 `MandiOhlinger`가 표시됩니다. 끌어오기 요청에서 필요하다면 작성자의 이름을 멘션(@*authorValue*)할 수도 있습니다.
   
 * **MSFT 직원**: GitHub 계정을 만든 후 Microsoft 이메일 주소에 연결합니다. 계정이 연결된 경우 업데이트를 하기 위해 라이선스 계약에 서명할 필요가 없습니다. 단계:
 
