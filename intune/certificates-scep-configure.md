@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 06/06/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
-ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
+ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448120"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744336"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -115,7 +115,8 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
    - **보안**에서 NDES 서비스 계정을 추가하고 템플릿에 **등록** 권한을 부여합니다. SCEP 프로필을 만드는 Intune 관리자는 SCEP 프로필을 만들 때 템플릿을 찾아볼 수 있도록 **읽기** 권한이 필요합니다.
 
      > [!NOTE]
-     > 인증서를 해지하려면 NDES 서비스 계정에 인증서 프로필에서 사용하는 각 인증서 템플릿에 대한 *인증서 발급 및 관리* 권한이 필요합니다.
+     > 인증서를 해지하려면 NDES 서비스 계정에 인증 기관에 대한 *인증서 발급 및 관리* 권한이 필요합니다. 이 권한을 위임하려면 인증 기관 관리 콘솔을 열고 인증 기관 이름을 마우스 오른쪽 단추로 클릭합니다. 그런 다음, 보안 탭에서 계정을 추가하거나 선택한 다음, **인증서 발급 및 관리**에 대한 확인란을 선택합니다.
+
 
 3. 템플릿의 **일반** 탭에서 **유효 기간** 을 검토합니다. 기본적으로 Intune은 템플릿에 구성된 값을 사용합니다. 그러나 요청자가 다른 값을 입력할 수 있도록 CA를 구성할 수 있습니다. 그러면 Intune 관리자 콘솔 내에서 다른 값을 설정할 수 있습니다. 항상 템플릿의 값을 사용하려면 이 단계의 나머지 부분을 건너뜁니다.
 
@@ -299,15 +300,15 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **인증 커넥터** > **추가**를 선택합니다.
-3. SCEP 파일용 커넥터를 다운로드하여 저장합니다. 커넥터를 설치하려는 서버에서 액세스할 수 있는 위치에 저장합니다.
+3. SCEP 파일용 커넥터를 다운로드하여 저장합니다. 커넥터를 설치하려는 NDES 서버에서 액세스할 수 있는 위치에 저장합니다.
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. 다운로드가 완료되면 NDES(네트워크 디바이스 등록 서비스)를 호스팅하는 서버로 이동합니다. 그런 다음:
+4. 다운로드가 완료되면 NDES(네트워크 디바이스 등록 서비스)를 호스팅하는 NDES 서버로 이동합니다. 그런 다음:
 
     1. NDES 인증서 커넥터에 필요하므로 .NET 4.5 Framework가 설치되어 있는지 확인합니다. .NET 4.5 Framework는 Windows Server 2012 R2 및 최신 버전에 자동으로 포함됩니다.
-    2. 설치 관리자(**NDESConnectorSetup.exe**)를 실행합니다. 설치 관리자가 NDES에 대한 정책 모듈 및 CRP 웹 서비스도 설치합니다. CRP 웹 서비스 CertificateRegistrationSvc는 IIS에서 애플리케이션으로 실행됩니다.
+    2. 서버에 대한 관리 권한이 있는 계정을 사용하여 설치 관리자를 실행합니다(**NDESConnectorSetup.exe**). 설치 관리자가 NDES에 대한 정책 모듈 및 CRP 웹 서비스도 설치합니다. CRP 웹 서비스 CertificateRegistrationSvc는 IIS에서 애플리케이션으로 실행됩니다.
 
     > [!NOTE]
     > 독립 실행형 Intune에 NDES를 설치하면 CRP 서비스가 인증서 커넥터와 함께 자동으로 설치됩니다. 구성 관리자와 함께 Intune을 사용할 때는 별도의 사이트 시스템 역할로 인증서 등록 지점을 설치합니다.
@@ -335,7 +336,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
     조직에서 프록시 서버를 사용하며 NDES 서버에서 인터넷에 액세스하는 데 프록시가 필요한 경우 **프록시 서버 사용**을 선택합니다. 그런 다음, 프록시 서버 이름, 포트 및 계정 자격 증명을 입력하여 연결합니다.
 
-    **고급** 탭을 선택한 다음, 발급 인증 기관에 대한 **인증서 발급 및 관리** 권한이 있는 계정의 자격 증명을 입력합니다. 변경 내용을 **적용**합니다.
+    **고급** 탭을 선택한 다음, 발급 인증 기관에 대한 **인증서 발급 및 관리** 권한이 있는 계정의 자격 증명을 입력합니다. 변경 내용을 **적용**합니다. [인증 기관을 구성](#configure-the-certification-authority)할 때 이 권한을 NDES 서비스 계정에 위임한 경우, 여기에 해당 계정을 지정합니다. 
 
     이제 인증서 커넥터 UI를 닫아도 됩니다.
 
@@ -516,7 +517,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune Connector 이벤트 및 진단 코드
 
-6.1806.x.x 버전부터 Intune Connector 서비스는 **이벤트 뷰어**(**애플리케이션 및 서비스 로그** > **Microsoft Intune Connector**)에 이벤트를 기록합니다. 이러한 이벤트를 사용하여 Intune Connector 구성의 잠재적 문제를 해결할 수 있습니다. 이러한 이벤트는 작업의 성공과 실패를 기록하고, IT 관리자가 문제를 해결하는 데 도움이 되는 메시지와 함께 진단 코드를 포함합니다.
+6\.1806.x.x 버전부터 Intune Connector 서비스는 **이벤트 뷰어**(**애플리케이션 및 서비스 로그** > **Microsoft Intune Connector**)에 이벤트를 기록합니다. 이러한 이벤트를 사용하여 Intune Connector 구성의 잠재적 문제를 해결할 수 있습니다. 이러한 이벤트는 작업의 성공과 실패를 기록하고, IT 관리자가 문제를 해결하는 데 도움이 되는 메시지와 함께 진단 코드를 포함합니다.
 
 ### <a name="event-ids-and-descriptions"></a>이벤트 ID 및 설명
 

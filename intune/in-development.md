@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
-ms.translationtype: HT
+ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744296"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031659"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>개발 중인 Microsoft Intune 기능 - 2019년 6월
 
@@ -51,14 +51,11 @@ ms.locfileid: "66744296"
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>다바이스 사용자는 설치했거나 설치하려고 시도한 모든 관리형 앱을 볼 수 있습니다. <!-- 2352913 -->
 Windows용 회사 포털은 사용자의 디바이스에 (필수 및 사용 가능한) 모든 관리형 앱을 나열합니다. 사용자는 시도 및 보류 중인 앱 설치와 현재 상태를 볼 수 있습니다. 조직에서 앱을 필수 또는 사용 가능하게 설정하지 않으면 회사 앱이 설치되지 않았다는 메시지가 사용자에게 표시됩니다. 사용자도 설치 상태별로 앱을 정렬하거나 필터링할 수 있습니다.
 
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>Android 작업 프로필에 사용할 수 있는 Google Play 앱 보고 <!-- 3041956 -->
-Android 작업 프로필 디바이스에서 사용할 수 있는 앱 설치의 경우 앱 설치 상태와, 관리형 Google Play 앱의 설치된 버전을 확인할 수 있습니다. 자세한 정보는 [앱 보호 정책 모니터링 방법](app-protection-policies-monitor.md), [Intune으로 Android 작업 프로필 디바이스 관리](android-enterprise-overview.md) 및 [관리형 Google Play 앱 형식](apps-add-android-for-work.md#managed-google-play-app-type)을 참조하세요.
-
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>조직 데이터에 연결할 수 있는 브라우저 구성 <!-- 3145939 -->
 Android 및 iOS 디바이스의 Intune APP(앱 보호 정책)를 사용하면 Intune Managed Browser 또는 Microsoft Edge를 망라한 특정 브라우저에 조직 웹 링크를 전송할 수 있습니다.  APP에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
 
 #### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>회사 포털 웹 사이트에 설치된 앱 페이지  <!-- 4224326 -->
-[회사 포털 웹 사이트](https://portal.manage.microsoft.com/)가 디바이스에 설치된 모든 앱을 사용자에게 표시하는 새 페이지를 포함하게 됩니다. 이 목록에는 사용 가능한 앱과 조직에서 요구하는 앱이 모두 포함됩니다. 이 페이지에서 사용자가 디바이스의 앱 설치와 요구 사항 상태를 확인할 수 있습니다. 회사 포털 웹 사이트에 대한 자세한 정보는 [Intune 회사 포털 웹 사이트 사용](/intune-user-help/using-the-intune-company-portal-website.md) 및 [Microsoft Intune 회사 포털 앱을 구성하는 방법](company-portal-app.md)을 참조하세요.
+[회사 포털 웹 사이트](https://portal.manage.microsoft.com/)가 디바이스에 설치된 모든 앱을 사용자에게 표시하는 새 페이지를 포함하게 됩니다. 이 목록에는 사용 가능한 앱과 조직에서 요구하는 앱이 모두 포함됩니다. 이 페이지에서 사용자가 디바이스의 앱 설치와 요구 사항 상태를 확인할 수 있습니다. 회사 포털 웹 사이트에 대한 자세한 정보는 [Intune 회사 포털 웹 사이트 사용](/intune-user-help/using-the-intune-company-portal-website) 및 [Microsoft Intune 회사 포털 앱을 구성하는 방법](company-portal-app.md)을 참조하세요.
 
 #### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>사용자 자격 증명 없이 애플리케이션에서 Graph API 읽기 작업 호출 <!-- 4655885 -->
 애플리케이션이 사용자 자격 증명 없이 앱 ID를 통해 Intune Graph API 읽기 작업을 호출할 수 있습니다. 자세한 내용은 [사용자 없이 액세스 얻기](https://docs.microsoft.com/graph/auth-v2-service)를 참조하세요.

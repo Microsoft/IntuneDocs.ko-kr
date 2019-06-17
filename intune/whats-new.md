@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
-ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
+ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469594"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749949"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -106,8 +106,11 @@ IT 관리자가 Android Enterprise 관리를 보다 쉽게 구성하고 사용�
 
 ### <a name="device-configuration"></a>디바이스 구성
 
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune-----1533038---"></a>업데이트된 Microsoft Intune용 PFX 인증서 커넥터  <!-- 1533038 -->
+기존 PFX 인증서가 계속 재처리되는 문제를 해결하는 [Microsoft Intune용 PFX 인증서 커넥터](certficates-pfx-configure.md#whats-new-for-connectors)에 대한 업데이트를 릴리스했습니다. 이로 인해 커넥터가 새 요청 처리를 중지하게 됩니다.
+
 ####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>Defender ATP에 대한 Intune 보안 작업(공개 미리 보기로 제공)     <!-- 3208597 -->
-공개 미리 보기에서 Intune을 사용하여 Microsoft Defender ATP(Advanced Threat Protection)의 보안 작업을 관리할 수 있습니다. 이와 같이 ATP와 통합되면 검색부터 문제 완화까지의 기간을 단축하면서 엔드포인트 취약성 및 구성 오류를 검색하고, 우선 순위를 지정하고, 수정할 수 있는 위험 기반 접근 방식이 추가됩니다.
+공개 미리 보기에서 Intune을 사용하여 [Microsoft Defender ATP(Advanced Threat Protection)의 보안 작업](atp-manage-vulnerabilities.md)을 관리할 수 있습니다. 이와 같이 ATP와 통합되면 검색부터 문제 완화까지의 기간을 단축하면서 엔드포인트 취약성 및 구성 오류를 검색하고, 우선 순위를 지정하고, 수정할 수 있는 위험 기반 접근 방식이 추가됩니다.
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>Windows 10 디바이스 준수 정책에서 TPM 칩셋 확인 <!-- 3617671   idstaged-->
 많은 Windows 10 이상 디바이스에는 TPM(신뢰할 수 있는 플랫폼 모듈) 칩셋이 있습니다. 이 업데이트는 디바이스에서 TPM 칩 버전을 확인하는 새 규정 준수 설정을 포함 합니다. 
@@ -116,7 +119,7 @@ IT 관리자가 Android Enterprise 관리를 보다 쉽게 구성하고 사용�
 
 적용 대상: Windows 10 이상
 
-#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>최종 사용자가 개인 핫스폿을 수정하지 못하게 하고 iOS 디바이스에서 Siri 서버 로깅을 사용하지 않음 <!-- 4097904   --> 
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>최종 사용자가 개인 핫스폿을 수정하지 못하게 하고 iOS 디바이스에서 Siri 서버 로깅을 사용하지 않음 <!-- 4097904   -->  
 iOS 디바이스에서 디바이스 제한 프로필을 만듭니다[**디바이스 구성** > **프로필** > **프로필 만들기** > **iOS**(플랫폼) > **디바이스 제한**(프로필 유형)]. 이 업데이트는 사용자가 구성할 수 있는 다음과 같은 새 설정을 포함합니다.
 
 - **기본 제공 앱** Siri용 서버 쪽 로깅 명령
@@ -804,7 +807,7 @@ Intune의 관리 템플릿(**디바이스 구성** > **관리 템플릿**)은 �
 이 업데이트에는 가져온 새 인증서 프로필을 사용하는 S/MIME 이메일 암호화가 포함됩니다(**디바이스 구성** > **프로필** > **프로필 만들기** &gt; 플랫폼 선택 &gt; **PKCS 가져온 인증서** 프로필 유형). Intune에서 PFX 형식의 인증서를 가져올 수 있습니다. 그런 다음, Intune은 단일 사용자에 의해 등록된 여러 디바이스에 이러한 동일한 인증서를 제공할 수 있습니다. 다음도 포함되어 있습니다.
 - 네이티브 iOS 이메일 프로필은 PFX 형식의 가져온 인증서를 사용하는 S/MIME 암호화 활성화를 지원합니다.
 - Windows Phone 10 디바이스의 네이티브 메일 앱은 S/MIME 인증서를 자동으로 사용합니다.
-- 여러 플랫폼에서 개인 인증서를 제공할 수 있습니다. 하지만 모든 이메일 앱이 S/MIME를 지원하지는 않습니다.
+- 여러 플랫폼에서 프라이빗 인증서를 제공할 수 있습니다. 하지만 모든 이메일 앱이 S/MIME를 지원하지는 않습니다.
 - 다른 플랫폼에서 S/MIME를 활성화하도록 메일 앱을 수동으로 구성해야 할 수 있습니다.  
 - S/MIME 암호화를 지원하는 이메일 앱은 해당 게시자의 인증서 저장소에서 읽기와 같은 MDM에서 지원할 수 없는 방식으로 S/MIME 이메일 암호화에 대한 인증서 가져오기를 처리할 수 있습니다.
 이 기능에 대한 자세한 내용은 [이메일 서명 및 암호화를 위한 S/MIME 개요](certificates-s-mime-encryption-sign.md)를 참조하세요.

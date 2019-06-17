@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72a9156ce9b7b1b43acf9b39d9186a52dd6c3e8d
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: b799fd65a08646b46bf7fcce67bf4a09dc0413a6
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373705"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819898"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune에서 규정 미준수 디바이스에 대한 이메일 자동화 및 작업 추가
 
@@ -85,7 +85,7 @@ ms.locfileid: "66373705"
 
 준수 정책을 만들 때 다른 작업을 추가하거나 기존 정책을 업데이트할 수도 있습니다. 
 
-1. [Azure Portal](https://portal.azure.com)에서 **Microsoft Intune** > **장치 준수**를 엽니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **디바이스 규정 준수**를 선택합니다.
 2. **정책**을 선택하고 사용자 정책 중 하나를 선택한 다음, **속성**을 선택합니다. 
 
     정책이 아직 없습니까? [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) 또는 다른 플랫폼 정책을 만듭니다.

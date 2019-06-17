@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374079"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819878"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP에 대한 규정 준수 적용
 
@@ -52,8 +52,7 @@ Intune에서 ATP를 사용하려면 다음을 구성했으며 사용할 준비�
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Intune에서 Windows Defender ATP 사용
 
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
-2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **디바이스 준수** > **Windows Defender ATP** > **Windows Defender 보안 센터 열기**를 차례로 선택합니다.
 
     ![Windows Defender 보안 센터 열기 선택](./media/atp-device-compliance-open-windows-defender.png)
@@ -132,7 +131,7 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 > [!TIP]  
 > 조건부 액세스는 Azure AD(Azure Active Directory) 기술입니다. *Intune*에서 액세스되는 조건부 액세스 노드는 *Azure AD*에서 액세스한 것과 동일한 노드입니다.  
 
-1. [Azure Portal](https://portal.azure.com)에서 **Intune** > **조건부 액세스** > **새 정책**을 엽니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **조건부 액세스** > **새 정책**을 선택합니다.
 2. 정책 **이름**을 입력하고 **사용자 및 그룹**을 선택합니다. 포함 또는 제외 옵션을 사용하여 정책에 대한 그룹을 추가하고 **완료**를 선택합니다.
 3. **클라우드 앱**을 선택한 다음 보호할 앱을 선택합니다. 예를 들어 **앱 선택**을 선택한 다음 **Office 365 SharePoint Online** 및 **Office 365 Exchange Online**을 선택합니다.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56742536"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828941"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>디바이스에 앱 설치 및 공유
 Windows용 회사 포털 앱에서 디바이스에 앱을 설치합니다.
@@ -70,6 +70,10 @@ Windows용 회사 포털 앱에서 디바이스에 앱을 설치합니다.
 조직은 회사 또는 학교에서 사용하기에 적절하고 유용한 앱을 선택합니다. 이러한 앱은 회사 포털에서만 찾을 수 있습니다.  
 
 사용자는 디바이스 유형에 따라 앱을 사용할 수 있게 됩니다. 예를 들어 사용자가 Windows용 회사 포털 앱을 사용하는 경우 iOS 앱이 아닌 Windows 앱에 액세스하게 됩니다.  
+
+## <a name="required-apps"></a>Required apps  
+
+조직 일부 앱을 장치에 직접 배포 및으로 표시할 수 있습니다 **필요한**합니다. 이러한 앱의 개입 없이 자동으로 설치 됩니다.
 
 ## <a name="request-an-app-for-work-or-school"></a>회사 또는 학교용 앱 요청  
 사용자가 필요한 앱이 있지만 회사 포털에 없는 경우 이를 요청합니다. 도움말 및 지원 페이지에서 회사 포털 앱의 **기술 지원팀** 연락처 세부 정보를 확인합니다. 이런 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.    

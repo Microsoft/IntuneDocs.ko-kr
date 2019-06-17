@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune에서 개인 및 공개 키 인증서 사용 - Azure | Microsoft Docs
+title: Microsoft Intune에서 프라이빗 및 퍼블릭 키 인증서 사용 - Azure | Microsoft Docs
 description: Microsoft Intune에서 루트 인증서를 내보내고, 인증서 템플릿을 구성하고, Intune Certificate Connector(NDES)를 다운로드 및 설치하고, 디바이스 구성 프로필을 만들고, Azure 및 인증 기관에서 PKCS(공개 키 암호 표준 ) 인증서 프로필을 만드는 단계를 포함하여 PKCS 인증서를 추가하거나 만듭니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454048"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749805"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
-Intune은 개인 및 공개 키 쌍(PKCS) 인증서 사용을 지원합니다. 이 문서에서는 온-프레미스 인증서 커넥터 같은 필수 인프라를 구성하고 PKCS 인증서를 내보낸 다음, Intune 디바이스 구성 프로필에 인증서를 추가하는 방법을 안내합니다.
+Intune은 프라이빗 및 퍼블릭 키 쌍(PKCS) 인증서 사용을 지원합니다. 이 문서에서는 온-프레미스 인증서 커넥터 같은 필수 인프라를 구성하고 PKCS 인증서를 내보낸 다음, Intune 디바이스 구성 프로필에 인증서를 추가하는 방법을 안내합니다.
 
 Microsoft Intune에는 조직 리소스에 대한 액세스 및 인증에 PKCS 인증서를 사용하는 기본 설정이 포함되어 있습니다. 인증서는 VPN 또는 WiFi 네트워크 같은 회사 리소스에 대한 액세스를 인증하고 보호합니다. 이러한 설정은 Intune의 디바이스 구성 프로필을 사용하여 디바이스에 배포됩니다.
 
@@ -110,7 +110,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
     > [!WARNING]
     > 기본적으로 **템플릿 이름**은 *공백 없이* **템플릿 표시 이름**과 동일합니다. 나중에 필요하므로 템플릿 이름을 참고합니다.
 
-6. **요청 처리**에서 **개인 키를 내보낼 수 있음**을 선택합니다.
+6. **요청 처리**에서 **프라이빗 키를 내보낼 수 있음**을 선택합니다.
 7. **암호화**에서 **최소 키 크기**가 2048로 설정되었는지 확인합니다.
 8. **주체 이름**에서 **요청에 따라 제공**을 선택합니다.
 9. **확장**에서 **애플리케이션 정책** 아래에 파일 시스템 암호화, 메일 보안 및 클라이언트 인증이 표시되는지 확인합니다.
@@ -221,7 +221,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 
 ## <a name="create-a-pkcs-imported-certificate-profile"></a>PKCS가 가져온 인증서 프로필 만들기
 
-이전에 특정 사용자에게 발급된 인증서는 모든 CA에서 Intune으로 가져올 수 있습니다. 가져온 인증서는 사용자가 등록하는 각 디바이스에 설치됩니다. S/MIME 이메일 암호화는 기존 PFX 인증서를 Intune에 가져오는 가장 일반적인 시나리오입니다. 사용자는 이메일을 암호화하기 위한 많은 인증서를 가지고 있을 수 있습니다. 이러한 인증서의 개인 키는 이전에 암호화된 이메일을 해독할 수 있도록 모든 사용자의 디바이스에 있어야 합니다.
+이전에 특정 사용자에게 발급된 인증서는 모든 CA에서 Intune으로 가져올 수 있습니다. 가져온 인증서는 사용자가 등록하는 각 디바이스에 설치됩니다. S/MIME 이메일 암호화는 기존 PFX 인증서를 Intune에 가져오는 가장 일반적인 시나리오입니다. 사용자는 이메일을 암호화하기 위한 많은 인증서를 가지고 있을 수 있습니다. 이러한 인증서의 프라이빗 키는 이전에 암호화된 이메일을 해독할 수 있도록 모든 사용자의 디바이스에 있어야 합니다.
 
 인증서를 Intune에 가져오려면 [GitHub에서 제공하는 PowerShell cmdlet](https://github.com/Microsoft/Intune-Resource-Access)을 사용하면 됩니다.
 
@@ -249,12 +249,17 @@ Intune으로 인증서를 가져온 후 **PKCS가 가져온 인증서** 프로�
 
 *Microsoft Intune용 PFX 인증서 커넥터*는 [자동 업데이트를 지원](#requirements)하는 반면, *Intune 인증서 커넥터*는 수동으로 업데이트해야 합니다.
 
-### <a name="may-6-2019"></a>2019년 5월 6일
+### <a name="may-17-2019"></a>2019년 5월 17일  
+- **Microsoft Intune용 PFX 인증서 커넥터 - 버전 6.1905.0.404**  
+  이 릴리스의 변경 내용:  
+  - 커넥터가 새 요청 처리를 중지하게 하는 기존 PFX 인증서가 계속 재처리되는 문제가 해결되었습니다. 
+
+### <a name="may-6-2019"></a>2019년 5월 6일  
 - **Microsoft Intune용 PFX 인증서 커넥터 - 버전 6.1905.0.402**  
   이 릴리스의 변경 내용:  
   - 커넥터에 대한 폴링 간격을 5분에서 30초로 줄입니다.
  
-### <a name="april-2-2019"></a>2019년 4월 2일
+### <a name="april-2-2019"></a>2019년 4월 2일  
 - **Intune 인증서 커넥터 - 버전 6.1904.1.0**  
   이 릴리스의 변경 내용:  
   - 글로벌 관리자 계정으로 커넥터에 로그인한 후 커넥터가 Intune에 등록하지 못하는 문제가 해결되었습니다.  

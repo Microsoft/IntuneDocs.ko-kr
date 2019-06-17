@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b3a566fd5c040e1c0007c10b1b57a64788a2323
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043816"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804694"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 독립 실행형 - Win32 앱 관리
 
@@ -97,8 +97,7 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 
 ### <a name="step-1-specify-the-software-setup-file"></a>1단계: 소프트웨어 설치 파일 지정
 
-1.  [Azure 포털](https://portal.azure.com/)에 로그인합니다.
-2.  **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3.  **Intune** 창에서 **클라이언트 앱** > **앱** > **추가**을 선택합니다.
 4.  **앱 추가** 창에 제공된 드롭다운 목록에서 **Windows 앱(Win32)** 를 선택합니다.
 
@@ -163,10 +162,10 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 2.  **요구 사항 규칙 추가** 창에서 다음 정보를 구성합니다. 이 창의 일부 값은 자동으로 채워질 수 있습니다.
     - **운영 체제 아키텍처**: 앱을 설치하는 데 필요한 아키텍처를 선택합니다.
     - **최소 운영 체제**: 앱을 설치하는 데 필요한 최소 운영 체제를 선택합니다.
-    - **필요한 디스크 공간(MB)**: 앱을 설치할 시스템 드라이브에 필요한 사용 가능한 디스크 공간을 선택적으로 추가합니다.
-    - **필요한 실제 메모리(MB)**: 앱을 설치하는 데 필요한 실제 메모리(RAM)를 선택적으로 추가합니다.
+    - **필요한 디스크 공간(MB)** : 앱을 설치할 시스템 드라이브에 필요한 사용 가능한 디스크 공간을 선택적으로 추가합니다.
+    - **필요한 실제 메모리(MB)** : 앱을 설치하는 데 필요한 실제 메모리(RAM)를 선택적으로 추가합니다.
     - **필요한 최소 논리 프로세서 수**: 앱을 설치하는 데 필요한 최소 논리 프로세서 수를 선택적으로 추가합니다.
-    - **필요한 최소 CPU 속도(MHz)**: 앱을 설치하는 데 필요한 최소 CPU 속도를 선택적으로 추가합니다.
+    - **필요한 최소 CPU 속도(MHz)** : 앱을 설치하는 데 필요한 최소 CPU 속도를 선택적으로 추가합니다.
 
 3. **추가**를 클릭하여 **요구 사항 규칙 추가** 블레이드를 표시하고 추가 요구 사항 규칙을 구성합니다. **요구 사항 유형**을 선택하여 요구 사항에 대한 유효성을 검사하는 방법을 결정하는 데 사용할 규칙 유형을 선택합니다. 요구 사항 규칙은 파일 시스템 정보, 레지스트리 값 또는 PowerShell 스크립트를 기반으로 할 수 있습니다. 
     - **파일**: **파일**을 **요구 사항 유형**으로 선택하는 경우 요구 사항 규칙에서 파일이나 폴더, 날짜, 버전 또는 크기를 검색해야 합니다. 
@@ -342,12 +341,50 @@ Windows 10 1709 이상 클라이언트는 Windows 10 클라이언트의 전송 �
 > *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
-Win32 앱 문제를 해결하는 방법에 대한 자세한 내용은 [Win32 앱 설치 문제 해결](troubleshoot-app-install.md#win32-app-installation-troubleshooting)을 참조하세요.
+### <a name="detecting-the-win32-app-file-version-using-powershell"></a>PowerShell을 사용하여 Win32 앱 파일 버전 검색
 
-### <a name="troubleshooting-areas-to-consider"></a>고려할 문제 해결 영역
+Win32 앱 파일 버전을 검색하는 데 문제가 있는 경우 다음 PowerShell 명령을 사용하거나 수정합니다.
+
+``` PowerShell
+
+$FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+#The below line trims the spaces before and after the version name
+$FileVersion = $FileVersion.Trim();
+if ("<file version of successfully detected file>" -eq $FileVersion)
+{
+#Write the version to STDOUT by default
+$FileVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+위의 PowerShell 명령에서 `<path to binary file>` 문자열을 Win32 앱 파일의 경로로 바꿉니다. 예제 경로는 다음과 유사합니다.<br>
+`C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
+또한 `<file version of successfully detected file>` 문자열을 검색해야 하는 파일 버전으로 바꿉니다. 예제 파일 버전 문자열은 다음과 유사합니다.<br>
+`2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
+
+Win32 앱의 버전 정보를 가져오기 위해 다음 PowerShell 명령을 사용할 수 있습니다.
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+위의 PowerShell 명령에서 `<path to binary file>`을 파일 경로로 바꿉니다.
+
+### <a name="additional-troubleshooting-areas-to-consider"></a>고려해야 할 추가 문제 해결 영역
 - 대상을 확인하여 에이전트가 디바이스에 설치되어 있는지 확인합니다. 그룹을 대상으로 하는 Win32 앱 또는 그룹을 대상으로 하는 PowerShell 스크립트는 보안 그룹에 대한 에이전트 설치 정책을 만듭니다.
 - OS 버전 확인 – Windows 10 1607 이상.  
 - Windows 10 SKU 확인 - Windows 10 S 또는 S-mode가 사용으로 설정된 Windows 버전은 MSI 설치를 지원하지 않습니다.
+
+Win32 앱 문제를 해결하는 방법에 대한 자세한 내용은 [Win32 앱 설치 문제 해결](troubleshoot-app-install.md#win32-app-installation-troubleshooting)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

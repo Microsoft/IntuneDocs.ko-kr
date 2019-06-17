@@ -16,51 +16,38 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80292fab9a8e35db23163f7c5a0dfc1c01b65848
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050541"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804663"
 ---
-# <a name="plan-communications"></a>통신 계획
+# <a name="plan-communications"></a>통신 계획 
+통신 계획은 Intune 마이그레이션의 핵심 요소입니다. 최종 사용자를 교육하는 데 도움이 되는 다음 도구와 템플릿이 제공됩니다. Intune Adoption Kit에는 이메일 템플릿, Intune 등록 가이드 및 최종 사용자 등록을 위한 교육용 비디오 링크가 포함되어 있습니다.  
 
-통신 계획은 Intune 마이그레이션의 핵심 요소입니다. 마이그레이션의 각 단계에 대해 동일한 통신 계획을 따를 수 있습니다.
+다운로드:  [Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit)
 
-## <a name="email-templates"></a>메일 템플릿
-
+## <a name="email-templates"></a>메일 템플릿 
 다음 메일 통신 계획을 사용하는 것이 좋습니다. 사용자의 통신 계획에 맞게 조정할 수 있는 템플릿을 제공해 드립니다.
+- **이메일 #1**: 이점, 예상 및 일정을 설명합니다. 이 기회를 활용하여 Intune 관리 디바이스에 대해 액세스 권한을 부여받을 기타 모든 새로운 서비스를 소개합니다. 
 
--   **이메일 \#1:** 이점, 예상 및 일정을 설명합니다. 이 기회를 활용하여 Intune 관리 디바이스에 대해 액세스 권한을 부여받을 기타 모든 새로운 서비스를 소개합니다.<br/><br/>
-
-
-    -   [이메일 \#1 템플릿 다운로드](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
-<br></br>
-
--   **이메일 \#2:** 서비스가 현재 Intune을 통해 액세스할 준비가 되었음을 알립니다. 사용자에게 지금 등록하라고 알립니다. 사용자에게 마이그레이션의 이점 및 전략적 이유를 다시 알려줍니다.<br/><br/>
-
-
-    -   [이메일 \#2 템플릿 다운로드](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
-<br></br>
-
--   **이메일 \#3:** 사용자의 액세스 권한에 영향을 주기 전 미리 사용자에게 타임라인을 제공합니다. 사용자에게 마이그레이션의 이점 및 전략적 이유를 다시 한 번 더 알려줍니다. 메일 시기 선택에 슬라이딩 윈도우 방식을 사용하여 단계에 일치하도록 해야 합니다. 예를 들어 6월에 메일 \#1을 1단계 사용자에게, 메일 \#2를 2단계 사용자에게, 메일 \#3을 3단계 사용자에게 보냅니다.<br/><br/>
-
-    -   [메일 \#3 템플릿 다운로드](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
-
+- **이메일 #2**: 서비스가 현재 Intune을 통해 액세스할 준비가 되었음을 알립니다. 사용자에게 지금 등록하라고 알립니다.  사용자의 액세스 권한에 영향을 주기 전 미리 사용자에게 타임라인을 제공합니다. 사용자에게 마이그레이션의 이점 및 전략적 이유를 다시 알려줍니다.
 [조건부 액세스로 최종 사용자 도입 촉진](migration-guide-drive-adoption.md)에 설명된 것처럼 일정 기간 후 조건부 액세스 정책을 통해 준수 적용을 시작할 수 있으며 이러한 준수를 회사 데이터에 액세스하는 기준으로 사용할 수 있습니다.
 
-## <a name="additional-communication-templates"></a>추가 통신 템플릿
+## <a name="intune-enrollment-guide"></a>Intune 등록 가이드 
+이 PDF 첨부 파일은 그대로 사용자에게 제공하거나, 내부 리소스와 연락처 정보가 포함되도록 Word 버전을 사용자 지정할 수 있습니다.
 
-Intune에는 사용자에게 디바이스 등록을 장려하는 데 사용할 수 있는 추가 템플릿이 있습니다.
-
--   [Microsoft Intune에 대한 최종 사용자 교육 방법](end-user-educate.md)에는 모바일 OS 플랫폼별 등록 단계가 설명되어 있습니다.
-
--   [Intune end-user enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)(IT 관리자를 위한 Intune 최종 사용자 등록 템플릿)는 Intune에서 Android, iOS 및 Mac 디바이스를 등록하는 방법이 설명된 사용자 지정 가능한 Word 문서입니다.
-
--   [FastTrack for EMS how to guides & emails](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c)\(EMS용 FastTrack 방법 가이드 및 메일\)를 회사 로고와 함께 사용자 지정하여 조직 내 Intune 및 EMS 도입을 촉진할 수 있습니다.
-
--   [회사 포털 앱 URL](http://go.microsoft.com/fwlink/?LinkID=396941)을 Android, iOS 및 Windows 사용자와 공유합니다. 이 URL은 Android, iOS 및 Windows 디바이스에 있는 적절한 회사 포털 앱 목록으로 리디렉션됩니다.
+## <a name="instructional-videos"></a>교육용 비디오
+사용자가 Intune에서 디바이스를 쉽게 등록할 수 있도록 도와주는 짧은 단계별 비디오를 만들었습니다.
+- [Android 디바이스 등록](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
+- [Android Work Profile 디바이스 등록](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
+- [iOS 디바이스 등록](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [macOS 디바이스 등록](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
+- [Windows 등록](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
 ## <a name="next-steps"></a>다음 단계
-
-[조건부 액세스로 최종 사용자 도입 촉진](migration-guide-drive-adoption.md)
+Intune에는 사용자에게 디바이스 등록을 장려하는 데 사용할 수 있는 추가 리소스가 있습니다.
+- [Microsoft Intune에 대한 최종 사용자 교육 방법](https://docs.microsoft.com/intune/end-user-educate)에는 모바일 OS 플랫폼별 등록 단계가 설명되어 있습니다. 
+- [IT 관리자를 위한 Intune 디바이스 등록](https://docs.microsoft.com/intune/device-enrollment)은 Intune에서 Android, iOS 및 Mac 디바이스를 등록하는 방법을 설명합니다.
+- [회사 포털 앱 URL](http://go.microsoft.com/fwlink/?LinkID=396941)을 Android, iOS 및 Windows 사용자와 공유합니다. 이 URL은 Android, iOS 및 Windows 디바이스에 있는 적절한 회사 포털 앱 목록으로 리디렉션됩니다.

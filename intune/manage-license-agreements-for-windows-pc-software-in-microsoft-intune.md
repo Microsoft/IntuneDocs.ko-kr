@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7068bb96b72861c0647c44261edef0c3e83a120c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046959"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031666"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune에서 Windows PC 소프트웨어의 사용권 계약 관리
 
@@ -53,7 +53,7 @@ Intune 관리자 콘솔의 **라이선스** 작업 영역에서 다음을 수행
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Microsoft Volume Licensing 계약 추가
 Intune 볼륨 라이선싱 계약은 Microsoft Volume License 계약을 통해 구매한 소프트웨어에 대한 라이선스 정보를 제공합니다. 일치되는 계약 번호의 쌍을 제공하여 Intune에 Microsoft Volume License 계약을 추가할 수 있습니다. 계약 또는 승인 번호는 정확한 라이선스 또는 등록 번호와 일치해야 합니다. 사용권 계약을 구매한 경우 [볼륨 라이선스 서비스 센터](http://go.microsoft.com/fwlink/?LinkID=223842)에서 계약 번호 쌍을 받게 됩니다.
 
-1.  [Microsoft Intune 관리자 콘솔](https://account.manage.microsoft.com/admin/default.aspx)에서 **라이선스**를 선택합니다.
+1.  [Microsoft Intune 관리자 콘솔](https://admin.manage.microsoft.com/)에서 **라이선스**를 선택합니다.
 
 2.  **계약 추가** 페이지의 **계약 유형 선택**에서 **볼륨 라이선싱 계약**을 선택합니다.
 
@@ -138,7 +138,7 @@ Microsoft 볼륨 라이선싱 계약 외에 다른 유형의 사용권 계약을
 
 ### <a name="to-add-other-software-agreements"></a>기타 소프트웨어 계약을 추가하려면
 
-1.  [Microsoft Intune 관리자 콘솔](https://account.manage.microsoft.com/admin/default.aspx)에서 **라이선스**를 선택합니다.
+1.  [Microsoft Intune 관리자 콘솔](https://admin.manage.microsoft.com/)에서 **라이선스**를 선택합니다.
 
 2.  **기타 소프트웨어 사용권 계약** 섹션에서 **계약 추가**를 선택합니다.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040675"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804477"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune을 사용하는 RBAC(역할 기반 액세스 제어)
 
@@ -30,6 +30,8 @@ RBAC(역할 기반 액세스 제어)를 사용하여 조직의 리소스에 액�
 역할을 만들거나 편집하거나 할당하려면 계정에 Azure AD의 다음 사용 권한 중 하나가 있어야 합니다.
 - **전역 관리자**
 - **Intune 서비스 관리자**(**Intune 관리자**라고도 함)
+
+Intune RBAC에 대한 조언과 제안 사항의 경우 예제 및 연습을 보여주는 다음 5개의 비디오 시리즈를 참조하세요. [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
 
 ## <a name="roles"></a>역할
 역할은 해당 역할이 할당된 사용자에게 부여되는 권한 세트를 정의합니다.
@@ -84,8 +86,8 @@ RBAC(역할 기반 액세스 제어)를 사용하여 조직의 리소스에 액�
 
 -   **속성**: 할당의 이름, 설명, 역할, 멤버, 범위 및 태그입니다.
 -   **멤버**: 나열된 그룹의 모든 사용자는 범위(그룹)에 나와 있는 사용자/디바이스를 관리할 수 있는 권한이 있습니다.
--   **범위(그룹)**: 이 그룹에 속한 모든 사용자/디바이스는 멤버의 사용자가 관리할 수 있습니다.
--   **[범위(태그)](scope-tags.md)**: 멤버의 사용자는 범위 태그가 동일한 리소스를 볼 수 있습니다.
+-   **범위(그룹)** : 이 그룹에 속한 모든 사용자/디바이스는 멤버의 사용자가 관리할 수 있습니다.
+-   **[범위(태그)](scope-tags.md)** : 멤버의 사용자는 범위 태그가 동일한 리소스를 볼 수 있습니다.
 
 ### <a name="multiple-role-assignments"></a>여러 역할 할당
 사용자에게 여러 역할을 할당하면 다음과 같이 해당 역할 할당의 권한이 다른 개체로 확장됩니다.
