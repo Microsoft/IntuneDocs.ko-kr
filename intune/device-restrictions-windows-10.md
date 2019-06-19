@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
-ms.translationtype: MTE75
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354214"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041133"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -430,9 +430,9 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
     > [!IMPORTANT]
     > Windows 데스크톱에서 암호 요구 사항이 변경되면 사용자가 다음에 로그인할 때 영향을 받습니다. 디바이스가 유휴 상태에서 활성 상태로 변하기 때문입니다. 요구 사항을 충족하는 암호를 사용하는 사용자에게도 암호를 변경하라는 메시지가 표시됩니다.
     
-  - **디바이스를 초기화하기 전 로그인 오류 발생 횟수**: 디바이스를 초기화하기 전에 허용되는 인증 실패 횟수(1-11)를 입력합니다. `0`(0)은 디바이스 초기화 기능을 사용하지 않도록 설정할 수 있습니다.
+  - **디바이스를 초기화하기 전 로그인 오류 발생 횟수**: 디바이스를 초기화하기 전에 허용되는 인증 실패 횟수를 11 이내로 입력합니다. 유효한 숫자를 입력 하면 버전에 따라 달라 집니다. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) 지원 되는 값을 나열 합니다. `0`(0)은 디바이스 초기화 기능을 사용하지 않도록 설정할 수 있습니다.
 
-    이 설정은 버전에 따라 다른 영향을 줍니다. 관련 세부 정보는 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)를 참조하세요.
+    이 설정은 버전에 따라 다른 영향도 줍니다. 이 설정에 대한 관련 세부 정보는 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)를 참조하세요.
 
   - **화면이 잠기기 전까지 최대 비활성 시간(분)** : 화면이 잠기기 전에 디바이스가 유휴 상태여야 하는 기간을 입력합니다.
   - **암호 만료(일)** : 디바이스 암호를 변경해야 하는 만료 시간(1-365일)을 입력합니다. 예를 들어 암호가 90일 후에 만료되도록 하려면 `90`을 입력합니다.

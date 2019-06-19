@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fcee9a5d721eb3c898c65e18c6fd56189739ffa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
+ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840556"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840967"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>회사 포털 앱을 업데이트하는 방법
 
@@ -29,7 +29,7 @@ ms.locfileid: "55840556"
 * 사용 가능한 회사 포털의 최신 버전이 있습니다.
 * 사용 중인 회사 포털의 버전은 더 이상 지원되지 않습니다.
 
-이러한 단계는 Android, iOS 및 Windows 디바이스에서 앱을 업데이트하거나 최신 버전의 앱을 가져오는 방법을 설명합니다.    
+이러한 단계는 Android, iOS, macOS 및 Windows 디바이스에서 앱을 업데이트하거나 최신 버전의 앱을 가져오는 방법을 설명합니다.    
 
 ## <a name="update-the-company-portal-app-on-your-android-device"></a>Android 디바이스에서 회사 포털 앱 업데이트  
 
@@ -41,6 +41,16 @@ ms.locfileid: "55840556"
 
 1. App Store를 열고 **Intune**을 검색합니다.  
 2. 앱을 찾은 경우 **업데이트**를 탭합니다.  
+
+## <a name="update-the-company-portal-app-on-your-macos-device"></a>macOS 디바이스에서 회사 포털 앱 업데이트
+
+사용 가능 해지면 이러한 업데이트를 자동으로 설치 하도록 회사 포털을 설정 합니다. 
+
+1. 회사 포털을 열고 이동할 **도움말**합니다. 
+2. **업데이트 확인**을 선택합니다. 
+3. Microsoft 자동 업데이트 화면에서 선택 **자동으로 다운로드 및 설치**합니다. 
+
+사용 가능한 업데이트를 보려면 선택 **업데이트 확인**합니다.  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>Windows 디바이스에서 회사 포털 앱 업데이트
 업데이트가 사용 가능해질 경우 자동으로 가져오려면 Microsoft Store를 열고 **설정**으로 이동합니다. 그런 다음, **앱 업데이트**를 켭니다. 최근 업데이트 및 다운로드 큐에서 대기 중인 앱을 보려면 **다운로드 및 업데이트**로 이동합니다.  

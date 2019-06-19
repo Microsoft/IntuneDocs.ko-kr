@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042461"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045712"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Intune의 Android 및 Samsung Knox Standard 디바이스 제한 사항 설정 목록
 
@@ -95,7 +95,7 @@ ms.locfileid: "66042461"
 이러한 목록에 앱을 추가하려면 다음을 수행할 수 있습니다.
 
 - 원하는 앱의 Google Play 스토어 URL을 **추가**합니다. 예를 들어 Android용 Microsoft 원격 데스크톱 앱을 추가하려면 `https://play.google.com/store/apps/details?id=com.microsoft.rdc.android`를 입력합니다. 앱 URL을 찾으려면 [Google Play 스토어](https://play.google.com/store/apps)를 열고 앱을 검색합니다. 예를 들어 `Microsoft Remote Desktop Play Store` 또는 `Microsoft Planner`를 검색합니다. 앱을 선택하고 URL을 복사합니다.
-- URL을 비롯하여 앱 세부 정보가 있는 CSV 파일을 가져옵니다. <’앱 URL’>, <’앱 이름’>, <’앱 게시자’> 형식을 사용합니다. 또는 제한된 앱 목록을 포함하는 기존 목록을 동일한 형식으로 **내보냅니다**.
+- URL을 비롯하여 앱 세부 정보가 있는 CSV 파일을 가져옵니다. <’앱 URL’>, <’앱 이름’>, <’앱 게시자’> 형식을 사용합니다.    또는 제한된 앱 목록을 포함하는 기존 목록을 동일한 형식으로 **내보냅니다**.
 
 > [!IMPORTANT]
 > 제한된 앱 설정을 사용하는 디바이스 프로필을 사용자 그룹에 할당해야 합니다.

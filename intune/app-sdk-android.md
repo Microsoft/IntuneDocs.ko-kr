@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049614"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045538"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -732,7 +732,7 @@ ADAL 메타데이터가 매니페스트에 있으면 **안 됩니다**.
 4. [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)에서 [디바이스 기반 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)를 사용하도록 설정하고 확인하여 모든 항목이 제대로 구성되었는지 테스트
     - 앱에 로그인하면 Intune Company Portal 설치 및 등록을 위한 프롬프트 표시
     - 등록 후 앱 로그인이 완료됩니다.
-5. 앱이 Intune 앱 SDK 통합을 탑재한 후에는 msintuneappsdk@microsoft.com에 문의하여 [앱 기반 조건부 액세스](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) 승인 앱 목록에 추가되게 합니다.
+5. 앱이 Intune APP SDK 통합을 탑재한 후에는 msintuneappsdk@microsoft.com에 문의하여 [앱 기반 조건부 액세스](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) 승인 앱 목록에 추가되게 합니다.
 6. 앱이 승인 목록에 추가되면 [앱 기반 CA를 구성하고](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) 앱 로그인이 제대로 완료되는지 확인하여 유효성을 검사합니다.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>디바이스 등록이 없는 앱 보호 정책
