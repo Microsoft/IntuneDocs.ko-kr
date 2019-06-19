@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5ede50bed3cefbcee5aaa96dfbecfe24d2bd8d9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 631d76aca2c393be3c81cb8b6f532605664f4ce4
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041259"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031627"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune의 데이터 보안 및 공유
 
@@ -70,7 +70,7 @@ Microsoft 에이전트 역할을 하는 모든 타사는 [온라인 서비스 �
 
 Microsoft Intune은 System Center Configuration Manager와 데이터를 공유하지 않습니다. System Center Configuration Manager는 고객이 직접 배포하고, 관리하고, 운영하는 온-프레미스 제품입니다. Configuration Manager에서 수집하는 진단 및 사용 현황 데이터는 향후 릴리스의 설치 환경, 품질 및 보안을 개선하기 위해서만 사용됩니다.
 
-자세한 내용은 [SCCM의 진단 및 사용 현황 데이터](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요. 
+자세한 내용은 [SCCM의 진단 및 사용 현황 데이터](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요. 
 
 
 ## <a name="next-steps"></a>다음 단계

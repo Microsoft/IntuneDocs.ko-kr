@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d58a10e62e4ff65c0c1589fcf948a6704224bc51
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: c0a83526a2e9333c0e6a131e59cee29a4a76fffa
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402740"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041186"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -186,7 +186,7 @@ Intune에 등록되지 않은 Windows Autopilot 디바이스를 삭제할 수 �
 
 ## <a name="windows-autopilot-for-existing-devices"></a>기존 디바이스에 대한 Windows Autopilot
 
-Configuration Manager를 통해 [기존 디바이스에 대해 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)을 사용하여 등록할 때 관련자 ID로 Windows 디바이스를 그룹화할 수 있습니다. 관련자 ID는 Autopilot 구성 파일의 매개 변수입니다. Azure AD 디바이스 특성인 [enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects)은 자동으로 "OfflineAutopilotprofile-\<관련자 ID\>"와 동일하게 설정됩니다. 이렇게 하면 enrollmentprofileName 특성을 사용하여 관련자 ID에 따라 임의의 Azure AD 동적 그룹을 만들 수 있습니다.
+Configuration Manager를 통해 [기존 디바이스에 대해 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)을 사용하여 등록할 때 관련자 ID로 Windows 디바이스를 그룹화할 수 있습니다. 관련자 ID는 Autopilot 구성 파일의 매개 변수입니다. Azure AD 디바이스 특성인 [enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)은 자동으로 "OfflineAutopilotprofile-\<관련자 ID\>"와 동일하게 설정됩니다. 이렇게 하면 enrollmentprofileName 특성을 사용하여 관련자 ID에 따라 임의의 Azure AD 동적 그룹을 만들 수 있습니다.
 
 >[!WARNING] 
 > 관련자 ID는 Intune에 미리 나열되지 않으므로 디바이스에서 원하는 관련자 ID를 보고할 수 있습니다. 사용자가 Autopilot 또는 Apple DEP 프로필 이름과 일치하는 관련자 ID를 만드는 경우 enrollmentProfileName 특성을 기반으로 하는 동적 Azure AD 디바이스 그룹에 디바이스가 추가됩니다. 이 충돌을 방지하려면:

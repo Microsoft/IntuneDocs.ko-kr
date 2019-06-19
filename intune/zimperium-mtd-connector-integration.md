@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ddd08baa99ebf7d6e7701d8345e42a72f0dbd57
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: db7f008e67c0523a373da24dd0a04f3556d9dd4c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046564"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031384"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Intune 및 Zimperium 통합
 
@@ -31,7 +31,7 @@ Intune과 Zuneperium Mobile Threat Defense 솔루션을 통합하려면 다음 �
 ## <a name="before-you-begin"></a>시작하기 전에
 
 > [!NOTE]
->  [Zimperium MTD 콘솔](https://sso.zimperium.com/signon/aad/)에서 다음 단계를 완료해야 합니다.
+>  [Zimperium MTD 콘솔](https://www.zimperium.com/platform)에서 다음 단계를 완료해야 합니다.
 
 Intune과 Zimperium을 통합하는 과정을 시작하기 전에 다음의 구독과 자격 증명이 있는지 확인합니다.
 
@@ -61,12 +61,12 @@ Zimperium 앱 권한 부여 프로세스는 다음과 같습니다.
 
 -   Zimperium 앱에서 Azure AD SSO를 사용하여 로그인하도록 허용합니다.
 
-동의 및 Azure Active Directory 애플리케이션에 대한 자세한 내용은 Azure Active Directory 문서 ‘Azure Active Directory v2.0 엔드포인트의 권한 및 동의’에 나오는 [디렉터리 관리자로부터 권한 요청](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#request-the-permissions-from-a-directory-admin)을 참조하세요.
+동의 및 Azure Active Directory 애플리케이션에 대한 자세한 내용은 Azure Active Directory 문서 ‘Azure Active Directory v2.0 엔드포인트의 권한 및 동의’에 나오는 [디렉터리 관리자로부터 권한 요청](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#request-the-permissions-from-a-directory-admin)을 참조하세요. 
 
 
 ## <a name="to-set-up-zimperium-integration"></a>Zimperium 통합 설정
 
-1.  [Zimperium MTD 콘솔](https://sso.zimperium.com/signon/aad/)로 이동하여 자격 증명으로 로그인합니다. Zimperium 통합 설정 프로세스를 수행하려면 전역 관리자 역할이 있는 Azure Active Directory 사용자 권한으로 로그인해야 합니다. 이 일회성 설정 작업은 전역 관리자 권한을 사용하여 조직에 Zimperium 앱으로 Intune과 통신할 수 있는 권한을 부여합니다. 
+1.  [Zimperium MTD 콘솔](https://www.zimperium.com/platform)로 이동하여 자격 증명으로 로그인합니다. Zimperium 통합 설정 프로세스를 수행하려면 전역 관리자 역할이 있는 Azure Active Directory 사용자 권한으로 로그인해야 합니다. 이 일회성 설정 작업은 전역 관리자 권한을 사용하여 조직에 Zimperium 앱으로 Intune과 통신할 수 있는 권한을 부여합니다. 
 
 2.  왼쪽 메뉴에서 **관리**를 선택합니다.
 
