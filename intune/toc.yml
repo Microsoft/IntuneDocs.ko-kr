@@ -50,6 +50,8 @@
       href: tutorial-use-autopilot-enroll-devices.md
     - name: DEP를 사용하여 iOS 디바이스 등록
       href: tutorial-use-device-enrollment-program-enroll-ios.md
+    - name: Intune을 사용하기 위한 Slack 구성
+      href: tutorial-configure-slack-enterprise-grid.md
 - name: 개념
   items:
     - name: 디바이스 관리란?
@@ -662,10 +664,6 @@
               href: troubleshoot-policies-in-microsoft-intune.md
             - name: 이메일 프로필 문제 및 해결 방법
               href: troubleshoot-email-profiles-in-microsoft-intune.md
-            - name: 소프트웨어 업데이트 문제 해결
-              href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: 엔드포인트 보호 공통 오류
-              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
             - name: 조건부 액세스 문제 해결
               href: troubleshoot-conditional-access.md
             - name: Exchange Connector 문제 해결
@@ -968,6 +966,10 @@
               href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
             - name: 정책 충돌 해결
               href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+            - name: 소프트웨어 업데이트 문제 해결
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: 엔드포인트 보호 공통 오류
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
     - name: 시나리오 구현 가이드
       items:
         - name: Exchange Online 보호
