@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749906"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197538"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune에 대한 Microsoft Defender Advanced Threat Protection 기준 설정
 
@@ -83,7 +83,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   **기본값**: 예
 
-## <a name="attach-surface-reduction"></a>공격 표면 감소  
+## <a name="attack-surface-reduction"></a>공격 노출 영역 축소  
 
 - **Office 앱이 자식 프로세스 유형을 시작**  
   [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - ‘차단’으로 설정하면 Office 앱이 자식 프로세스를 만들 수 없습니다.  Office 앱에는 Word, Excel, PowerPoint, OneNote 및 Access가 포함됩니다. 자식 프로세스 만들기는 일반적인 맬웨어 동작으로, 특히 Office 앱을 사용하여 악성 실행 파일을 시작하거나 다운로드하려고 시도하는 매크로 기반 공격에 적용됩니다.  

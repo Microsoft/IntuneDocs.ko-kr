@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
-ms.translationtype: HT
+ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
+ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041133"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67234980"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -420,7 +420,8 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
 다음 설정에서는 [DeviceLock 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)를 사용하며, 지원되는 Windows 버전도 나열합니다.
 
-- **암호**: **필요**를 선택하면 최종 사용자에게 디바이스에 액세스하기 위해 암호를 입력해야 합니다. **구성되지 않음**(기본값)을 사용하면 암호 없이 디바이스에 액세스할 수 있습니다.
+- **암호**: **필요**를 선택하면 최종 사용자에게 디바이스에 액세스하기 위해 암호를 입력해야 합니다. **구성되지 않음**(기본값)을 사용하면 암호 없이 디바이스에 액세스할 수 있습니다. 로컬 계정에만 적용 됩니다. 도메인 계정 암호에 Active Directory (AD)와 Azure AD에서 구성 된이 상태로 유지 합니다.
+
   - **필수 암호 유형**: 암호 유형을 선택합니다. 옵션은 다음과 같습니다.
     - **구성되지 않음**: 숫자와 문자가 포함될 수 있는 임호입니다.
     - **숫자**: 숫자로만 구성된 암호여야 합니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048102"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263676"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정
 
@@ -56,7 +56,7 @@ ms.locfileid: "66048102"
 - **NFC를 사용하여 데이터 빔(beam)** : **차단**을 선택하면 NFC(근거리 통신) 기술을 사용하여 앱에서 데이터를 빔(beam)할 수 없습니다. **구성되지 않음**을 사용하면 NFC를 사용하여 디바이스 간에 데이터를 공유할 수 있습니다.
 - **디버깅 기능**: **허용**을 선택하면 사용자가 디바이스에서 디버깅 기능을 사용할 수 있습니다. **구성되지 않음**을 선택하면 사용자가 디바이스에서 디버깅 기능을 사용할 수 없습니다.
 - **마이크 조정**: **차단**을 선택하면 사용자가 마이크를 음소거하거나 마이크 볼륨을 조정할 수 없습니다. **구성되지 않음**을 사용하면 사용자가 디바이스에서 마이크 볼륨을 사용하고 조정할 수 있습니다.
-- **초기화 보호 메일**: **Google 계정 메일 주소**를 선택합니다. 초기화한 후 디바이스 잠금을 해제할 수 있는 디바이스 관리자의 메일 주소를 입력합니다. 메일 주소는 세미콜론으로 구분해야 합니다(예: `admin1@gmail.com;admin2@gmail.com`). 메일을 입력하지 않으면 초기 설정으로 복원된 후에 누구나 디바이스 잠금을 해제할 수 있습니다.
+- **초기화 보호 메일**: **Google 계정 메일 주소**를 선택합니다. 초기화한 후 디바이스 잠금을 해제할 수 있는 디바이스 관리자의 메일 주소를 입력합니다. 메일 주소는 세미콜론으로 구분해야 합니다(예: `admin1@gmail.com;admin2@gmail.com`). 메일을 입력하지 않으면 초기 설정으로 복원된 후에 누구나 디바이스 잠금을 해제할 수 있습니다. 이러한 전자 메일 복구 메뉴를 사용 하는 공장 재설정 실행과 같은 비 사용자 공장 재설정을 실행 하는 경우에 적용 됩니다.
 - **네트워크 이스케이프 해치**: **사용**을 선택하면 사용자가 네트워크 이스케이프 해치 기능을 켤 수 있습니다. 디바이스가 부팅될 때 네트워크에 연결되어 있지 않으면 이스케이프 해치는 일시적으로 네트워크에 연결하고 디바이스 정책을 새로 고치라는 메시지를 표시합니다. 정책을 적용하면 임시 네트워크를 기억하지 못하고 디바이스가 계속 부팅됩니다. 이 기능은 다음과 같은 경우 디바이스를 네트워크에 연결합니다.
   - 마지막 정책에 적합한 네트워크가 없습니다.
   - 디바이스가 잠금 작업 모드의 앱으로 부팅됩니다.
@@ -100,6 +100,8 @@ ms.locfileid: "66048102"
   >   - 전용 디바이스용으로 만들어진 [디바이스 그룹에 할당됨](apps-deploy.md)
   > 
   > **관리형 홈 화면** 앱은 구성 프로필에 포함될 필요가 없지만 클라이언트 앱으로 추가해야 합니다. **관리형 홈 화면** 앱이 클라이언트 앱으로 추가되면 구성 프로필에 추가하는 다른 앱이 **관리형 홈 화면** 앱에 아이콘으로 표시됩니다. 
+  >
+  > 다중 앱 키오스크 모드를 사용 하 여 관리 되는 홈 화면을 사용 하 여, 걸기/전화 앱 제대로 작동 하지 않을 수 있습니다. 
 
   - **추가**를 선택하고 목록에서 앱을 선택합니다.
 

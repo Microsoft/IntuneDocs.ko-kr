@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d6366034af09acdbecdc0cb0e670f6d57766b35
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047030"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197524"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 Windows Holographic for Business 디바이스를 키오스크로 실행하기 위한 설정
 
@@ -64,7 +64,7 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
 - **애플리케이션**: 키오스크 장치에서 실행할 앱을 추가합니다. 여러 개의 앱을 추가할 수 있습니다.
 
-  - **Store 앱 추가**: [클라이언트 앱](apps-add.md)을 사용하여 추가한 기존 앱을 선택합니다. 앱이 나열되지 않으면 앱을 가져와서 [Intune에 추가](store-apps-windows.md)할 수 있습니다.
+  - **스토어 앱을 추가**: 추가 하거나 Intune에 배포 된 기존 앱 선택 [클라이언트 앱](apps-add.md), LOB 앱을 포함 합니다. 나열 된 앱 목록에 없으면 Intune 지원 대부분 [앱 유형](apps-add.md) 했는지 [Intune에 추가](store-apps-windows.md)합니다.
   - **Win32 앱 추가**: Windows Holographic for Business에서 지원되지 않습니다.
   - **AUMID로 추가**: 받은 편지함 Windows 앱을 추가하려면 이 옵션을 사용합니다. 다음 속성을 입력합니다. 
 
