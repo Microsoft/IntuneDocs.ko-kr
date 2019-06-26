@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: bb1ddcadcac1ec9b4730a5dcd66abca111d80196
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374125"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251210"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune에서 Windows 10 보안 기준선 만들기
 
@@ -70,7 +70,7 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=20909)에 로그인하고 **디바이스 보안** > **보안 기준(미리 보기)** 을 선택합니다. 사용 가능한 기준선 목록이 제공됩니다. 
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **디바이스 보안** > **보안 기준(미리 보기)** 을 선택합니다. 사용 가능한 기준선 목록이 제공됩니다. 
 
     ![구성할 보안 기준을 선택](./media/security-baselines/available-baselines.png)
 

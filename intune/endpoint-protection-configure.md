@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 184781a315dcaeaac9540294746a9c2cd85da917
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041897"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251176"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune에서 엔드포인트 보호 설정 추가
 
@@ -38,7 +38,7 @@ Intune에서 디바이스 구성 프로필을 사용하여 디바이스에서 �
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>엔드포인트 보호 설정을 포함하는 디바이스 프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=20909)에 로그인합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
 4. 엔드포인트 보호 프로필의 **이름** 및 **설명**을 입력합니다.
 5. **플랫폼** 드롭다운 목록에서 사용자 지정 설정을 적용할 디바이스 플랫폼을 선택합니다. 현재 디바이스 제한 설정에 대해 다음 플랫폼 중 하나를 선택할 수 있습니다.
