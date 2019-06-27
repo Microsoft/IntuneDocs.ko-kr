@@ -157,6 +157,7 @@
 ### [디바이스 다시 설정](reset-device-cp-app.md)
 
 ## [Intune 회사 포털 웹 사이트 사용](using-the-intune-company-portal-website.md)
+### [앱 관리](manage-apps-cpweb.md)  
 ### [디바이스 원격 잠금](remote-lock-your-device-cpwebsite.md)  
 ### [디바이스 이름 바꾸기](rename-your-device-cpwebsite.md)  
 ### [디바이스 제거](remove-your-device-cpwebsite.md)  
