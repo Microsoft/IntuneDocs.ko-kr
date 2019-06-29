@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045185"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403777"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>분산형 IT에 RBAC(역할 기반 액세스 제어) 및 범위 태그 사용
 
@@ -42,8 +42,10 @@ ms.locfileid: "66045185"
 
     ![범위 태그 만들기 스크린샷입니다.](./media/scope-tags/create-scope-tag.png)
 
-2. **이름** 및 **설명**을 제공합니다.
-3. **만들기**를 선택합니다.
+3. 특정 그룹의 모든 장치를 원하는 경우 선택할 **선택한 그룹의 모든 장치로 범위 태그 할당**합니다.
+    1. 에 **포함할 그룹 선택** 페이지에서이 범위 태그를 할당 하려는 장치가 포함 된 그룹을 선택 합니다.
+    2. **선택**을 선택합니다.
+4. **만들기**를 선택합니다.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>범위 태그를 역할에 할당하려면
 

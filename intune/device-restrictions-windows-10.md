@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234980"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403081"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -57,7 +57,16 @@ ms.locfileid: "67234980"
 - **시스템 볼륨에 앱 데이터 설치**: **차단**은 앱에서 데이터를 디바이스의 시스템 볼륨에 저장하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 앱에서 데이터를 시스템 디스크 볼륨에 저장할 수 있습니다.
 - **시스템 드라이브에 앱 설치**: **차단**은 앱이 디바이스의 시스템 드라이브에 설치되지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 앱을 시스템 드라이브에 설치할 수 있습니다.
 - **게임 DVR**(데스크톱에만 해당): **차단**은 Windows 게임 녹화 및 방송을 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)을 사용하면 게임을 녹화하고 브로드캐스트할 수 있습니다.
-- **스토어의 앱만**: **필요**는 최종 사용자가 Windows App Store에서만 앱을 설치하도록 강제로 적용합니다. **구성되지 않음**을 사용하면 최종 사용자가 Windows App Store 이외의 장소에서 앱을 설치할 수 있습니다.
+- **스토어 전용 앱**:이 설정은 사용자가 Microsoft Store 이외의 위치에서 앱을 설치할 때 사용자 환경을 결정 합니다. 옵션은 다음과 같습니다.
+
+  - **구성 되지 않은** (기본값): 최종 사용자가 다른 정책에 정의 된 앱을 포함 하는 Microsoft Store 이외의 위치에서 앱을 설치할 수 있습니다.  
+  - **어디서 든**: 앱 권장 사항 해제 사용자가 모든 위치에서 앱을 설치할 수 있습니다.  
+  - **저장만**:만 Microsoft Store 앱을 설치 하려면 최종 사용자를 강제로 수행 합니다.
+  - **권장 사항**: Microsoft Store 제공 하는 웹에서 앱을 설치할 때 사용자가 스토어에서 다운로드 권장 메시지가 표시 됩니다.  
+  - **저장소를 선호**: Microsoft Store 이외의 위치에서 앱을 설치할 때 사용자에 게 경고 합니다.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **업데이트 실패 시 강제로 앱 다시 시작**: 앱을 사용 중인 경우 업데이트되지 않을 수 있습니다. 앱을 강제로 다시 시작하려면 이 설정을 사용합니다. **구성되지 않음**(기본값): 앱을 강제로 다시 시작하지 않습니다. **필요**: 관리자가 특정 날짜와 시간 또는 되풀이 일정에 강제로 다시 시작하도록 허용합니다. **필요**로 설정하는 경우 다음도 입력합니다.
 
   - **시작 날짜/시간**: 앱을 다시 시작하는 특정 날짜 및 시간을 선택합니다.

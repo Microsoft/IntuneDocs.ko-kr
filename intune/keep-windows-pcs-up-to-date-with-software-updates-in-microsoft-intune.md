@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56bbe6d8af43693814a90351acb2f400cff92025
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3cc84d8215a841b9ff8a70a6b6307d3452696cb0
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047007"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402995"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune에서 소프트웨어 업데이트를 사용하여 Windows PC를 최신 상태로 유지
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. Windows Pc에 대 한 업데이트를 모바일 장치로 등록 관리 하려는 경우, 참조 [Intune에서 소프트웨어 업데이트 관리](windows-update-for-business-configure.md)합니다.
 
 Microsoft Intune에서는 다양한 방식으로 관리되는 컴퓨터를 보호할 수 있습니다. 이러한 방식에는 최신 패치와 소프트웨어 업데이트를 빠르게 설치하여 컴퓨터를 최신 상태로 유지하는 소프트웨어 업데이트 관리 작업이 포함됩니다.
 

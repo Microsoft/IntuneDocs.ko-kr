@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cad83daa88351749d60d0b1c72935ea47f9a14ce
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046934"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402892"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC에 대한 사용자-장치 연결 관리
 
@@ -31,6 +31,8 @@ ms.locfileid: "66046934"
 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. 
 
 소프트웨어를 사용자에게 배포하려면 먼저 사용자를 PC에 연결해야 합니다. 여러 PC에 사용자를 연결할 수 있지만 각 PC는 한 사용자에게만 연결할 수 있습니다. 사용자는 회사 포털을 사용하여 Intune에 등록한 모든 PC에 자동으로 연결됩니다.
+
+장치의 기본 사용자에 대 한 자세한 내용은 참조 하세요. [찾기 기본 사용자](find-primary-user.md)합니다.
 
 사용자를 PC에 연결하려면
 
