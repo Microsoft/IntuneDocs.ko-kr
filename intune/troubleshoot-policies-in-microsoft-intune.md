@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402655"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298392"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune의 문제 해결 정책 및 프로필
 
 Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함됩니다. 이 기능을 사용하면 사용자의 환경에서 준수 정책과 구성 프로필 문제를 해결하는 데 도움이 됩니다.
 
 이 문서에는 몇 가지 일반적인 문제 해결 기술이 나열되고 발생할 수 있는 몇 가지 문제가 설명되어 있습니다.
+
+## <a name="check-tenant-status"></a>테 넌 트 상태 확인
+확인 합니다 [테 넌 트 상태](tenant-status.md) 구독이 활성 인지 확인 합니다. 또한 활성 인시던트가 및 정책이 나 프로필 배포에 영향을 줄 수 있는 권고에 대 한 세부 정보를 볼 수 있습니다.
 
 ## <a name="use-built-in-troubleshooting"></a>기본 제공 문제 해결 기능 사용
 
@@ -113,6 +116,13 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 > [!NOTE]
 > 제한 수준이 다른 두 정책을 같은 디바이스나 사용자에 적용하면 보다 제한적인 정책이 적용됩니다.
 
+## <a name="policy-troubleshooting-resources"></a>정책 문제 해결 리소스
+
+- [IOS 또는 Android 정책을 장치에 적용 되지 문제 해결](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (다른 Microsoft 사이트 열림)
+- [Windows 10 Intune 정책 실패 문제 해결](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (열립니다 블로그)
+- [Windows 10 용 CSP 사용자 지정 설정 문제를 해결](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (다른 Microsoft 사이트 열림)
+- [Windows 10 그룹 정책 및 Intune MDM 정책](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (다른 Microsoft 사이트 열림)
+
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>경고: Exchange에 액세스 규칙 저장 실패
 
 **문제**: 관리 콘솔에에 **Exchange에 액세스 규칙 저장 실패**  라는 경고가 표시됩니다.
@@ -125,11 +135,13 @@ Exchange 온-프레미스 정책 작업 영역(관리 콘솔)에서 정책을 �
 
 Windows Phone 디바이스는 MDM 또는 EAS를 사용하여 보안 정책을 설정하면 이 정책의 보안이 저하되는 것을 허용하지 않습니다. 예를 들어 **암호의 최소 문자 수**를 8로 설정한 다음, 4로 줄이려고 하면, 더 제한적인 정책이 디바이스에 적용됩니다.
 
+Windows 10 장치 (배포를 중지) 정책 할당을 취소 하면 보안 정책을 제거할 수 없습니다. 정책이 할당 된 상태로 두고 기본 값으로 다시 보안 설정을 변경 해야 합니다.
+
 디바이스 플랫폼에 따라서, 보안 수준이 낮은 값으로 정책을 변경하려면 보안 정책을 다시 설정해야 할 수 있습니다.
 
-예를 들어, Windows의 바탕 화면에서 오른쪽에서 살짝 밀어 **참 메뉴** 모음을 엽니다. **설정** > **제어판** > **U사용자 계정**을 선택합니다. 왼쪽에서 **보안 정책 재설정** 링크를 선택하고 **정책 재설정**을 선택합니다.
+예를 들어, 데스크톰의 Windows 8.1에서 오른쪽으로 살짝 밀어 **참 메뉴** 모음을 엽니다. **설정** > **제어판** > **U사용자 계정**을 선택합니다. 왼쪽에서 **보안 정책 재설정** 링크를 선택하고 **정책 재설정**을 선택합니다.
 
-Android, iOS, Windows Phone 8.1과 같은 기타 MDM 디바이스의 경우, 덜 엄격한 정책을 적용하려면 사용을 중지하고 다시 등록해야 해야 합니다.
+Android, iOS, Windows Phone 8.1과 같은 기타 플랫폼의 경우, 덜 엄격한 정책을 적용하려면 사용을 중지하고 다시 등록해야 해야 합니다.
 
 [디바이스 등록 문제 해결](troubleshoot-device-enrollment-in-intune.md)이 유용한 리소스가 될 수 있습니다.
 
@@ -160,6 +172,7 @@ Intune 소프트웨어 클라이언트로 관리되는 Windows PC의 경우 `pol
 로컬 시스템의 시간이 5분 이상 동기화되지 않는 경우에 발생할 수 있습니다. 로컬 컴퓨터의 시간이 동기화되어 있지 않으면 타임스탬프가 유효하지 않으므로 보안 트랜잭션이 실패합니다.
 
 이 문제를 해결하려면 로컬 시스템 시간을 인터넷 시간에 최대한 가깝게 설정합니다. 아니면, 네트워크의 도메인 컨트롤러 시간으로 설정합니다.
+
 
 ## <a name="next-steps"></a>다음 단계
 
