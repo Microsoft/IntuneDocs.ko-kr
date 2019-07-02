@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 06/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5918dc0574033020689b267418fb6283cd686db
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 97d656db3e828ef3377b927395a283fe995bb8a4
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373890"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389290"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Intune에서 Windows Phone 8.1 디바이스에 대한 사용자 지정 설정 사용
 
 Microsoft Intune을 사용하면 "사용자 지정 프로필"을 사용하여 Windows Phone 8.1 디바이스에 대한 사용자 지정 설정을 추가하거나 만들 수 있습니다. 사용자 지정 프로필은 Intune의 기능입니다. Intune에 기본 제공되지 않은 디바이스 설정 및 기능을 추가하도록 설계되었습니다.
 
-Windows Phone 8.1 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 다른 기능을 구성합니다. 이러한 설정은 일반적으로 모바일 디바이스 제조업체에서 디바이스에서 기능을 제어하기 위해 사용합니다.
+Windows Phone 8.1 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 다른 기능을 구성합니다. 이러한 설정은 일반적으로 모바일 디바이스 제조업체에서 디바이스에서 기능을 제어하기 위해 사용합니다. [Windows Phone 8.1 MDM 프로토콜 설명서](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-phone/dn499787(v=technet.10)) 설정을 나열 합니다.
 
 이 문서는 Windows Phone 8.1 디바이스의 사용자 지정 프로필을 만드는 방법을 보여줍니다. 
 
@@ -62,6 +62,16 @@ Windows Phone 8.1 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uni
 
 5. **확인**을 선택하여 변경 내용을 저장합니다. 필요에 따라 더 많은 설정을 계속 추가합니다.
 6. 끝나면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **디바이스 구성 - 프로필** 목록에 나타납니다.
+
+## <a name="example"></a>예제
+
+다음 예제에서는 Windows 8.1 phone 장치는 운송 업체 검사 영역 밖에 여행 중일 때는 셀룰러 네트워크를 변경할 수 없습니다.
+
+- **이름**: 셀룰러 데이터 로밍 허용
+- **설명**: 셀룰러 데이터 로밍 허용 하거나 거부
+- **OMA URI** (대/소문자 구분):./Vendor/MSFT/PolicyManager/My/Connectivity/AllowCellularDataRoaming
+- **데이터 형식**: 정수
+- **값**: 0
 
 ## <a name="next-steps"></a>다음 단계
 

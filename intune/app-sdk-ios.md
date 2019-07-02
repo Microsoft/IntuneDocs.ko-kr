@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d229972c238756598694d2e3463f22290924ccc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 4877920821b2471f752f9fdb8941e87576d937ba
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045478"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413854"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
 > [!NOTE]
 > 지원되는 각 플랫폼에서 통합을 준비하는 방법을 설명하는 [Intune 앱 SDK 시작 가이드](app-sdk-get-started.md) 문서를 읽어보는 것이 좋습니다.
 
-iOS용 Microsoft Intune 앱 SDK를 사용하면 네이티브 iOS 앱에 Intune 앱 보호 정책(**APP** 또는 **MAM 정책**이라고도 함)을 통합할 수 있습니다. MAM 지원 애플리케이션은 Intune 앱 SDK와 통합된 애플리케이션입니다. IT 관리자는 Intune에서 앱을 적극적으로 관리할 때 모바일 앱에 앱 보호 정책을 배포할 수 있습니다.
+iOS용 Microsoft Intune 앱 SDK를 사용하면 네이티브 iOS 앱에 Intune 앱 보호 정책(APP 또는 MAM 정책이라고도 함)을 통합할 수 있습니다. MAM 지원 애플리케이션은 Intune 앱 SDK와 통합된 애플리케이션입니다. IT 관리자는 Intune에서 앱을 적극적으로 관리할 때 모바일 앱에 앱 보호 정책을 배포할 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -40,19 +40,30 @@ iOS용 Microsoft Intune 앱 SDK를 사용하면 네이티브 iOS 앱에 Intune �
 
 * [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)에서 iOS용 Intune 앱 SDK 파일을 다운로드합니다.
 
-## <a name="whats-in-the-sdk"></a>SDK에 포함된 내용
+## <a name="whats-in-the-sdk-repository"></a>SDK 저장소의 새로운 기능
 
-iOS용 Intune 앱 SDK에는 정적 라이브러리, 리소스 파일, API 헤더, 디버그 설정 .plist 파일 및 구성기 도구가 포함되어 있습니다. 클라이언트 앱은 단순히 리소스 파일을 포함하고 대부분 정책 적용을 위해 라이브러리에 정적으로 연결할 수 있습니다. 고급 Intune APP 기능은 API를 통해 적용됩니다.
+관련 없는 Swift 코드를 포함 하거나 10.2 이전 버전의 Xcode 사용 하 여 컴파일되는 앱/extensions에는 다음 파일이 같습니다.
 
-이 가이드에서는 iOS용 Intune 앱 SDK의 다음 구성 요소 사용을 설명합니다.
+* **IntuneMAM.framework**: Intune 앱 SDK 프레임워크입니다. Intune 클라이언트 응용 프로그램 관리를 사용 하도록 설정 하려면 앱/확장에는이 프레임 워크를 연결 하는 것이 좋습니다. 그러나 일부 개발자는 정적 라이브러리의 성능 이점을 원할 수 있습니다. 다음을 참조하세요.
 
-* **libIntuneMAM.a**: Intune 앱 SDK 정적 라이브러리입니다. 앱에서 확장을 사용하지 않는 경우 이 라이브러리를 프로젝트에 연결하여 Intune 클라이언트 애플리케이션 관리에 대해 앱을 사용하도록 설정합니다.
+* **libIntuneMAM.a**: Intune 앱 SDK 정적 라이브러리입니다. 개발자는 연결 프레임 워크는 대신 정적 라이브러리를 선택할 수 있습니다. 정적 라이브러리는 앱/확장 빌드 시 이진에 직접 포함 하기 때문에 정적 라이브러리를 사용 하 여 시작 시간이 성능상의 이점이 있습니다. 그러나 앱에 통합 하는 것 보다 복잡 한 프로세스입니다. 앱에 정적 라이브러리를 앱에 연결 하는 모든 확장을 포함 하는 경우 더 큰 앱 번들 크기를 확장 하면 정적 라이브러리에 포함 될 각 앱/확장 이진. 프레임 워크를 사용 하 여, 앱 및 확장 작은 앱 크기가 동일한 Intune SDK 이진을 공유할 수 있습니다.
 
-* **IntuneMAM.framework**: Intune 앱 SDK 프레임워크입니다. 이 프레임워크를 프로젝트에 연결하여 Intune 클라이언트 애플리케이션 관리에 대해 앱을 사용하도록 설정합니다. 앱에서 확장을 사용하는 경우, 프로젝트에서 정적 라이브러리의 복사본을 여러 개 만들지 않도록 정적 라이브러리 대신 프레임워크를 사용합니다.
+* **IntuneMAMResources.bundle**: SDK에서 사용하는 리소스가 포함된 리소스 번들입니다. 리소스 번들은 정적 라이브러리 (libIntuneMAM.a)를 통합 하는 앱에만 필요 합니다.
 
-* **IntuneMAMResources.bundle**: SDK에서 사용하는 리소스가 있는 리소스 번들입니다.
+다음 파일은 Swift 코드를 포함 하 고 Xcode 10.2 +를 사용 하 여 컴파일되는 앱/extensions에 관련:
 
-* **헤더**: Intune 앱 SDK API를 표시합니다. API를 사용하는 경우 API가 포함된 헤더 파일을 포함해야 합니다. 다음 헤더 파일에는 Intune 앱 SDK에서 개발자에게 제공하는 API, 데이터 형식 및 프로토콜이 포함되어 있습니다.
+* **IntuneMAMSwift.framework**: The Intune App SDK Swift 프레임 워크입니다. 이 프레임 워크 api 앱을 호출 하는 모든 헤더를 포함 합니다. Intune 클라이언트 응용 프로그램 관리를 사용 하 여 app/extensions에이 프레임 워크를 연결 합니다.
+
+* **IntuneMAMSwiftStub.framework**: Intune 앱 SDK Swift 스텁 프레임 워크입니다. 앱/extensions에 연결 해야 하는 IntuneMAMSwift.framework의 필수 종속성입니다.
+
+
+다음 파일은 모든 앱/확장 관련:
+
+* **IntuneMAMConfigurator**: Intune 관리에 대 한 최소 필요한 변경 작업을 사용 하 여 앱 또는 확장의 Info.plist를 구성 하는 데 사용 합니다. 앱 또는 확장 기능에 따라 Info.plist를 추가 수동 변경 하는 것이 해야 합니다.
+
+* **헤더**: 공용 Intune 앱 SDK API를 표시합니다. 이러한 헤더는 IntuneMAM/IntuneMAMSwift 프레임 워크 내에 포함 되므로 프레임 워크 중 하나를 사용 하는 개발자가 프로젝트에 헤더를 수동으로 추가할 필요가 없습니다. 정적 라이브러리 (libIntuneMAM.a)에 대해 연결을 선택 하는 개발자가 수동으로 해당 프로젝트에서 이러한 헤더를 포함 해야 합니다.
+
+다음 헤더 파일에는 Intune 앱 SDK에서 개발자에게 제공하는 API, 데이터 형식 및 프로토콜이 포함되어 있습니다.
 
     * IntuneMAMAppConfig.h
     * IntuneMAMAppConfigManager.h
@@ -70,7 +81,7 @@ iOS용 Intune 앱 SDK에는 정적 라이브러리, 리소스 파일, API 헤더
     * IntuneMAMPolicyManager.h
     * IntuneMAMVersionInfo.h
 
-개발자는 IntuneMAM.h만 가져오면 위의 헤더 전체 콘텐츠를 사용할 수 있습니다.
+개발자는 IntuneMAM.h만 가져오면 이전 헤더 전체 콘텐츠를 사용할 수 있습니다.
 
 
 ## <a name="how-the-intune-app-sdk-works"></a>Intune 앱 SDK의 작동 방식
@@ -82,12 +93,14 @@ iOS용 Intune 앱 SDK의 목적은 최소한의 코드 변경으로 iOS 애플�
 
 Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
 
-1. **옵션 1(권장)** : `IntuneMAM.framework`를 프로젝트에 연결합니다. `IntuneMAM.framework`를 프로젝트 대상의 **포함된 이진 파일** 목록으로 끕니다.
+1. **옵션 1-(권장) 프레임 워크**: Xcode 10.2 +를 사용 하는 앱/확장 Swift 코드를 포함 하는 경우 연결할 `IntuneMAMSwift.framework` 및 `IntuneMAMSwiftStub.framework` 대상: 끌어서 `IntuneMAMSwift.framework` 및 `IntuneMAMSwiftStub.framework` 에 **포함 이진 파일** 프로젝트 대상의 목록입니다.
+
+    링크이 고, 그렇지 `IntuneMAM.framework` 대상: 끌어서 `IntuneMAM.framework` 에 **포함 된 이진 파일** 프로젝트 대상의 목록입니다.
 
    > [!NOTE]
    > 프레임워크를 사용하는 경우 앱을 앱 스토어에 제출하기 전에 수동으로 범용 프레임워크에서 시뮬레이터 아키텍처를 제거해야 합니다. 자세한 내용은 [앱 스토어에 앱 제출](#submit-your-app-to-the-app-store)을 참조하세요.
 
-   **옵션 2**: `libIntuneMAM.a` 라이브러리에 연결합니다. 프로젝트 대상의 **연결된 프레임워크 및 라이브러리** 목록으로 `libIntuneMAM.a` 라이브러리를 끌어옵니다.
+   **옵션 2-정적 라이브러리**:이 옵션은만 사용할 수 없는 Swift 코드를 포함 하거나 Xcode를 사용 하 여 빌드한 앱/확장에 대 한 < 10.2 합니다. `libIntuneMAM.a` 라이브러리에 연결합니다. 프로젝트 대상의 **연결된 프레임워크 및 라이브러리** 목록으로 `libIntuneMAM.a` 라이브러리를 끌어옵니다.
 
     ![Intune 앱 SDK iOS - 연결된 프레임워크 및 라이브러리](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -101,8 +114,21 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
      **빌드 단계** 내의 **번들 리소스 복사** 아래로 리소스 번들을 끌어 프로젝트에 `IntuneMAMResources.bundle` 리소스 번들을 추가합니다.
 
      ![Intune 앱 SDK iOS - 번들 리소스 복사](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+     
+2. Swift에서 Intune api를 호출 하는 경우에 Objective-c 브리징 헤더를 통해 필수 Intune SDK 헤더 앱/확장을 가져와야 합니다. 앱/확장 Objective-c 브리징 헤더를 이미 포함 되어 있지 않으면를 통해 하나를 지정할 수 있습니다 합니다 `SWIFT_OBJC_BRIDGING_HEADER` 빌드 구성 설정이 나 Xcode UI **Objective-c 브리징 헤더** 필드입니다. 브리징 헤더에는 코드는 다음과 같아야 합니다.
 
-2. 프로젝트에 다음 iOS 프레임워크를 추가합니다.  
+   ```objc
+      #import <IntuneMAMSwift/IntuneMAM.h>
+   ```
+   
+   이렇게 하면 모든 Intune SDK Api 사용 가능한 모든 Swift 소스 파일에서 앱/확장 합니다. 
+   
+    > [!NOTE]
+    > * 브리지 특정 Intune SDK 헤더만 포괄적인 IntuneMAM.h 보다는 Swift 하도록 선택할 수 있습니다.
+    > * 헤더 파일의 경로 통합 하는 프레임 워크/정적 라이브러리에 따라 달라질 수 있습니다.
+    > * Intune SDK Api를 모듈 가져오기 문을 통해 Swift에서 사용할 수 있도록 (예: IntuneMAMSwift 가져오기) 현재 지원 되지 않습니다. Objective-c 브리징 헤더를 사용 하는 것이 좋습니다.
+    
+3. 프로젝트에 다음 iOS 프레임워크를 추가합니다.  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
@@ -115,10 +141,10 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
     * QuartzCore.framework  
     * WebKit.framework
 
-3. 각 프로젝트 대상에서 **기능**을 클릭하고 **키 집합 공유** 스위치를 사용하도록 설정하여 키 집합 공유를 사용하도록 설정합니다(아직 설정되지 않은 경우). 다음 단계를 진행하려면 키 집합 공유가 필요합니다.
+4. 각 프로젝트 대상에서 **기능**을 클릭하고 **키 집합 공유** 스위치를 사용하도록 설정하여 키 집합 공유를 사용하도록 설정합니다(아직 설정되지 않은 경우). 다음 단계를 진행하려면 키 집합 공유가 필요합니다.
 
    > [!NOTE]
-   > 프로비전 프로필이 새로운 키 집합 공유 값을 지원해야 합니다. 키 집합 액세스 그룹이 와일드카드 문자를 지원해야 합니다. 이를 확인하려면 텍스트 편집기에서 .mobileprovision 파일을 열고 **keychain-access-groups**를 검색한 다음 와일드카드가 있는지 확인합니다. 예를 들면 다음과 같습니다.
+   > 프로비전 프로필이 새로운 키 집합 공유 값을 지원해야 합니다. 키 집합 액세스 그룹이 와일드카드 문자를 지원해야 합니다. 이를 확인하려면 텍스트 편집기에서 .mobileprovision 파일을 열고 **keychain-access-groups**를 검색한 다음 와일드카드 문자가 있는지 확인합니다. 예를 들면 다음과 같습니다.
    >  ```xml
    >  <key>keychain-access-groups</key>
    >  <array>
@@ -126,29 +152,29 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
    >  </array>
    >  ```
 
-4. 키 집합 공유를 사용하도록 설정한 후 다음 단계에 따라 Intune 앱 SDK에서 데이터를 저장할 별도의 액세스 그룹을 만듭니다. UI를 사용하거나 자격 파일을 사용하여 키 집합 액세스 그룹을 만들 수 있습니다. UI를 사용하여 키 집합 액세스 그룹을 만드는 경우 다음 단계를 수행해야 합니다.
+5. 키 집합 공유를 사용하도록 설정한 후 단계에 따라 Intune 앱 SDK에서 데이터를 저장할 별도의 액세스 그룹을 만듭니다. UI를 사용하거나 자격 파일을 사용하여 키 집합 액세스 그룹을 만들 수 있습니다. UI를 사용하여 키 집합 액세스 그룹을 만드는 경우 다음 단계를 수행해야 합니다.
 
-    1. 모바일 앱에 키 집합 액세스 그룹이 정의되어 있지 않으면 앱의 번들 ID를 **첫 번째** 그룹으로 추가합니다.
+     a. 모바일 앱에 키 집합 액세스 그룹이 정의되어 있지 않으면 앱의 번들 ID를 **첫 번째** 그룹으로 추가합니다.
     
-    2. 공유 키 집합 그룹 `com.microsoft.intune.mam`을 기존 액세스 그룹에 추가합니다. Intune 앱 SDK에서 이 액세스 그룹을 사용하여 데이터를 저장합니다.
+    b. 공유 키 집합 그룹 `com.microsoft.intune.mam`을 기존 액세스 그룹에 추가합니다. Intune 앱 SDK에서 이 액세스 그룹을 사용하여 데이터를 저장합니다.
     
-    3. 기존 액세스 그룹에 `com.microsoft.adalcache`를 추가합니다.
+    c. 기존 액세스 그룹에 `com.microsoft.adalcache`를 추가합니다.
     
-        ![Intune 앱 SDK iOS: 키 집합 공유](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
     
-    4. 위에 표시된 Xcode UI를 사용하지 않고 직접 자격 파일을 편집하여 키 집합 액세스 그룹을 만드는 경우 키 집합 액세스 그룹 앞에 `$(AppIdentifierPrefix)`를 추가합니다(Xcode는 이를 자동으로 처리함). 예를 들면 다음과 같습니다.
+    d. 위에 표시된 Xcode UI를 사용하지 않고 직접 자격 파일을 편집하여 키 집합 액세스 그룹을 만드는 경우 키 집합 액세스 그룹 앞에 `$(AppIdentifierPrefix)`를 추가합니다(Xcode는 이를 자동으로 처리함). 예를 들면 다음과 같습니다.
     
         - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
         - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
         > [!NOTE]
-        > 자격 파일은 모바일 애플리케이션에 고유한 XML 파일입니다. iOS 앱에서 특수한 권한 및 기능을 지정하는 데 사용됩니다. 이전에 앱에 자격 파일이 없었던 경우 키 집합 공유를 사용하도록 설정하면(3단계) Xcode에서 해당 앱용 자격 파일을 생성했을 것입니다. 앱의 번들 ID가 목록의 첫 번째 항목인지 확인합니다.
+        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
 
-5. 앱이 `UIApplication canOpenURL`에 전달하는 각 프로토콜을 앱 Info.plist 파일의 `LSApplicationQueriesSchemes` 배열에 포함합니다. 다음 단계로 진행하기 전에 변경 내용을 저장해야 합니다.
+6. 앱이 `UIApplication canOpenURL`에 전달하는 각 프로토콜을 앱 Info.plist 파일의 `LSApplicationQueriesSchemes` 배열에 포함합니다. 다음 단계로 진행하기 전에 변경 내용을 저장해야 합니다.
 
-6. 앱에서 FaceID를 아직 사용하지 않는 경우 [NSFaceIDUsageDescription Info.plist 키](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)가 기본 메시지로 구성되었는지 확인합니다. 이는 iOS가 앱이 FaceID를 어떻게 사용하려고 하는지 사용자에게 알려주기 위해 필요합니다. Intune 앱 보호 정책 설정을 사용하면 IT 관리자가 구성할 때 FaceID를 앱 액세스 방법으로 사용할 수 있습니다.
+7. 앱에서 FaceID를 아직 사용하지 않는 경우 [NSFaceIDUsageDescription Info.plist 키](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)가 기본 메시지로 구성되었는지 확인합니다. 이는 iOS가 앱이 FaceID를 어떻게 사용하려고 하는지 사용자에게 알려주기 위해 필요합니다. Intune 앱 보호 정책 설정을 사용하면 IT 관리자가 구성할 때 FaceID를 앱 액세스 방법으로 사용할 수 있습니다.
 
-7. [SDK 리포지토리](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)에 포함된 IntuneMAMConfigurator 도구를 사용하여 앱의 Info.plist 구성을 완료합니다. 도구에는 다음과 같은 세 개의 매개 변수가 있습니다.
+8. [SDK 리포지토리](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)에 포함된 IntuneMAMConfigurator 도구를 사용하여 앱의 Info.plist 구성을 완료합니다. 도구에는 다음과 같은 세 개의 매개 변수가 있습니다.
 
    |속성|사용 방법|
    |---------------|--------------------------------|
@@ -429,7 +455,7 @@ MAMPolicyRequired| 부울| 앱에 Intune 앱 보호 정책이 없는 경우 앱�
 
 ## <a name="customize-your-apps-behavior-with-apis"></a>API를 사용하여 앱 동작 사용자 지정
 
-Intune 앱 SDK에는 앱에 배포한 Intune APP 보호 정책에 관한 정보를 가져오기 위해 호출할 수 있는 여러 가지 API가 있습니다. 이 데이터를 사용하여 앱 동작을 사용자 지정할 수 있습니다. 아래 표에서는 사용자가 사용할 수 있는 몇 가지 필수 Intune 클래스에 대한 정보를 제공합니다.
+Intune 앱 SDK에는 앱에 배포한 Intune APP 보호 정책에 관한 정보를 가져오기 위해 호출할 수 있는 여러 가지 API가 있습니다. 이 데이터를 사용하여 앱 동작을 사용자 지정할 수 있습니다. 다음 표에서는 사용자가 사용할 수 있는 몇 가지 필수 Intune 클래스에 대한 정보를 제공합니다.
 
 인스턴스 | 설명
 ----- | -----------
