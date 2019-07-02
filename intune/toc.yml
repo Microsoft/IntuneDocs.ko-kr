@@ -128,6 +128,8 @@
                   href: migration-guide-drive-adoption.md
                 - name: 일반적인 마이그레이션 주기
                   href: migration-guide-cycle.md
+        - name: 통신 계획
+          href: migration-guide-communication-plan.md
     - name: Intune 설정
       items:
         - name: Intune을 설정하는 단계
@@ -307,6 +309,7 @@
           href: device-features-configure.md
         - name: 디바이스 설정 및 기능 제한
           href: device-restrictions-configure.md
+          displayName: Device restrictions
         - name: 업데이트 제공
           href: delivery-optimization-windows.md
           displayName: delivery optimization; updates
@@ -328,6 +331,8 @@
           items:
             - name: 미리 공유한 키를 사용하는 Wi-Fi
               href: wi-fi-profile-shared-key.md
+        - name: macOS에서 확장
+          href: kernel-extensions-overview-macos.md
         - name: 교육 테스트 실행 앱
           href: education-settings-configure.md
         - name: 다중 사용자 디바이스 공유
@@ -415,41 +420,46 @@
                       href: mtd-connector-enable.md
                 - name: MTD 앱
                   items:
-                    - name: Lookout 설정
-                      href: lookout-mobile-threat-defense-connector.md
-                      items:
-                        - name: Lookout 및 Intune 통합
-                          href: lookout-mtd-connector-integration.md
-                    - name: Symantec 설정
-                      href: skycure-mobile-threat-defense-connector.md
-                      items:
-                        - name: Symantec 및 Intune 통합
-                          href: skycure-mtd-connector-integration.md
-                    - name: Check Point 설정
-                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-                      items:
-                        - name: Check Point 및 Intune 통합
-                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-                    - name: Zimperium 설정
-                      href: zimperium-mobile-threat-defense-connector.md
-                      items:
-                        - name: Zimperium 및 Intune 통합
-                          href: zimperium-mtd-connector-integration.md
-                    - name: Pradeo 설정
-                      href: pradeo-mobile-threat-defense-connector.md
-                      items:
-                        - name: Pradeo와 Intune 통합
-                          href: pradeo-mtd-connector-integration.md
                     - name: 더 향상된 모바일 설정
                       href: better-mobile-threat-defense-connector.md
                       items:
                         - name: 더 향상된 모바일 및 Intune 통합
                           href: better-mobile-mtd-connector-integration.md
+                    - name: Check Point 설정
+                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                      items:
+                        - name: Check Point 및 Intune 통합
+                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                    - name: Lookout 설정
+                      href: lookout-mobile-threat-defense-connector.md
+                      items:
+                        - name: Lookout 및 Intune 통합
+                          href: lookout-mtd-connector-integration.md
+                    - name: Pradeo 설정
+                      href: pradeo-mobile-threat-defense-connector.md
+                      items:
+                        - name: Pradeo와 Intune 통합
+                          href: pradeo-mtd-connector-integration.md
                     - name: Sophos Mobile 설정
                       href: sophos-mtd-connector.md
                       items:
                         - name: Sophos Mobile 및 Intune 통합
                           href: sophos-mtd-connector-integration.md
+                    - name: Symantec 설정
+                      href: skycure-mobile-threat-defense-connector.md
+                      items:
+                        - name: Symantec 및 Intune 통합
+                          href: skycure-mtd-connector-integration.md
+                    - name: Wandera 설정
+                      href: wandera-mtd-connector.md
+                      items:
+                        - name: Wandera와 Intune 통합
+                          href: wandera-mtd-connector-integration.md
+                    - name: Zimperium 설정
+                      href: zimperium-mobile-threat-defense-connector.md
+                      items:
+                        - name: Zimperium 및 Intune 통합
+                          href: zimperium-mtd-connector-integration.md
             - name: Microsoft Defender
               items:
                 - name: Microsoft Defender ATP
@@ -747,6 +757,8 @@
                   href: vpn-settings-macos.md
                 - name: Wi-Fi
                   href: wi-fi-settings-macos.md
+                - name: 확장
+                  href: kernel-extensions-settings-macos.md
                 - name: 사용자 지정
                   href: custom-settings-macos.md
         - name: Windows 10 이상
@@ -784,7 +796,7 @@
             - name: 보안 기준
               items:
                 - name: Windows 10 기준 설정
-                  href: security-baseline-settings-windows.md
+                  href: security-baseline-settings-mdm.md
                 - name: Microsoft Defender ATP 기준 설정
                   href: security-baseline-settings-defender-atp.md
             - name: Windows 업데이트 설정
@@ -972,6 +984,10 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: 엔드포인트 보호 공통 오류
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: 보안 기준 아카이브
+          items:
+            - name: 보관된 MDM 보안 기준
+              href: security-baseline-settings-mdm-archive.md
     - name: 시나리오 구현 가이드
       items:
         - name: Exchange Online 보호
