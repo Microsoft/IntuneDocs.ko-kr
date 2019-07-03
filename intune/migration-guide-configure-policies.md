@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d3e36dbeb1fb7c90dfc5cc4c18fb30140c761db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046490"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512257"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune에 마이그레이션할 때 디바이스 준수 및 앱 관리 정책 구성
 
@@ -59,7 +59,7 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 디바이스 수준 설정을 적용할 디바이스 구성 프로필(예: 카메라 사용 안 함, 앱 스토어, 단일 앱 모드 구성, 홈 화면 등)을 만들어야 합니다. [디바이스 프로필](device-profiles.md)에 대해 자세히 알아보세요.
 
-####  <a name="directly-import-ios-configuration-profiles-optional"></a>iOS 구성 프로필 직접 가져오기(선택 사항)
+#### <a name="directly-import-ios-configuration-profiles-optional"></a>iOS 구성 프로필 직접 가져오기(선택 사항)
 
 -   **Apple Configurator iOS 프로필(iOS 7.1 이상):** 기존 MDM 솔루션에서 Apple Configurator 프로필(.mobileconfig 파일)을 사용하는 경우 Intune에서 해당 프로필을 사용자 지정 구성 정책으로 직접 가져올 수 있습니다.
 

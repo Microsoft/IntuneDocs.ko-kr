@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f5eb5c6e8e454f6558aff7247f8ac10b7a5393
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cab7957a0de1b26a6e172fc696cf887d5fe3916
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040570"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528372"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Intune과 Symantec Endpoint Protection Mobile 통합 설정
 
@@ -87,7 +87,7 @@ SEP Mobile을 실행하는 모든 디바이스가 포함된 Azure AD 보안 그�
 
 -  SEP Mobile을 실행하는 디바이스의 보안 그룹을 모두 입력하여 선택한 다음, 변경 내용을 저장합니다.
 
-    ![SEP Mobile 앱에 대한 사용자 그룹을 보여주는 이미지](./media/symantec-portal-basic-groups.png)   
+    ![SEP Mobile 앱에 대한 사용자 그룹을 보여주는 이미지](./media/symantec-portal-basic-groups.png)
 
 SEP Mobile은 Mobile Threat Defense 서비스를 실행하는 디바이스를 Azure AD 보안 그룹과 동기화합니다.
 
@@ -126,25 +126,25 @@ SEP Mobile은 Mobile Threat Defense 서비스를 실행하는 디바이스를 Az
 
 4. **디렉터리 ID** 상자에 이전 섹션의 Azure Active Directory에서 복사한 디렉터리 ID를 붙여넣고 설정을 저장합니다.
 
-    ![SEP Mobile 포털에서 디렉터리 ID를 보여주는 이미지](./media/symantec-portal-directory-ID.png)     
+    ![SEP Mobile 포털에서 디렉터리 ID를 보여주는 이미지](./media/symantec-portal-directory-ID.png)
 
 5. **설정** > **통합** > **Intune** > **기본 설정** 섹션으로 이동합니다.
 
 6. **iOS 앱** 옆에 있는 **Active Directory에 추가** 단추를 선택합니다.
 
-    ![Active Directory에 iOS 앱을 추가하는 작업을 보여주는 이미지](./media/symantec-portal-basic-add.png)   
+    ![Active Directory에 iOS 앱을 추가하는 작업을 보여주는 이미지](./media/symantec-portal-basic-add.png)
 
-7.  디렉터리를 관리하는 Office 365 계정용 Azure Active Directory 자격 증명을 사용하여 로그인합니다.
+7. 디렉터리를 관리하는 Office 365 계정용 Azure Active Directory 자격 증명을 사용하여 로그인합니다.
 
-8.  **동의** 단추를 선택하여 SEP Mobile iOS 앱을 Azure Active Directory에 추가합니다.
+8. **동의** 단추를 선택하여 SEP Mobile iOS 앱을 Azure Active Directory에 추가합니다.
 
-    ![동의 단추를 보여주는 이미지](./media/symantec-portal-basic-accept.png)     
+    ![동의 단추를 보여주는 이미지](./media/symantec-portal-basic-accept.png)
 
-9.  **Android 앱** 및 **관리 앱**에 대해 동일한 프로세스를 반복합니다.
+9. **Android 앱** 및 **관리 앱**에 대해 동일한 프로세스를 반복합니다.
 
 10. SEP Mobile 앱(예: 이전에 만든 보안 그룹)을 실행해야 하는 모든 사용자 그룹을 선택합니다.
 
-    ![SEP Mobile 앱에 대한 사용자 그룹을 보여주는 이미지](./media/symantec-portal-basic-groups.png)   
+    ![SEP Mobile 앱에 대한 사용자 그룹을 보여주는 이미지](./media/symantec-portal-basic-groups.png)
 
 11.  SEP Mobile은 선택된 그룹의 디바이스를 동기화하고 Intune에 정보를 보고하기 시작합니다. 전체 통합 섹션에서 이 데이터를 볼 수 있습니다. **설정** > **통합** > **Intune** > **전체 통합** 섹션으로 이동합니다.
 

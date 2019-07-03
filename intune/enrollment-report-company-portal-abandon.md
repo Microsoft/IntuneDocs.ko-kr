@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041859"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529750"
 ---
 # <a name="incomplete-user-enrollments-report"></a>사용자 등록 미완료 보고서
 
@@ -35,9 +35,9 @@ ms.locfileid: "66041859"
 
 사용자가 다음 중 하나를 수행하면 등록 미완료가 발생합니다.
 
--   명시적으로 등록을 중지하는 작업을 선택합니다.
--   등록하는 동안 회사 포털을 닫습니다.
--   등록 섹션 사이에 30분을 초과하여 소요됩니다.
+- 명시적으로 등록을 중지하는 작업을 선택합니다.
+- 등록하는 동안 회사 포털을 닫습니다.
+- 등록 섹션 사이에 30분을 초과하여 소요됩니다.
 
 사용자가 등록을 중지했다가 다시 시작하는 행위를 여러 번 반복하면 시도 및 등록 미완료가 여러 번 발생한 것으로 표시됩니다. 사용자가 등록 화면 간에 30분 동안 대기하면 등록 미완료가 여러 번 있는 것으로 간주됩니다.
 
@@ -53,18 +53,18 @@ ms.locfileid: "66041859"
 
 보고서의 맨 위에는 모든 등록과 관련된 등록 미완료 건수 및 비율이 표시됩니다.
 
--   시작된 등록: 등록을 시도한 횟수입니다.
--   등록 미완료: 등록을 시도했으나 등록이 완료된 규격 디바이스로 이어지지 않은 횟수입니다.
--   미완료 비율: 중단된 등록 시도의 백분율입니다(중단된 등록/시작된 등록).
+- 시작된 등록: 등록을 시도한 횟수입니다.
+- 등록 미완료: 등록을 시도했으나 등록이 완료된 규격 디바이스로 이어지지 않은 횟수입니다.
+- 미완료 비율: 중단된 등록 시도의 백분율입니다(중단된 등록/시작된 등록).
 
 ### <a name="line-graph"></a>꺾은선형 그래프
 
 꺾은선형 그래프는 다음과 같은 네 가지 핵심 등록 섹션에서 하루 동안 발생한 등록 미완료를 보여줍니다.
 
--   설정 확인 목록
--   플랫폼 화면
--   사용 조건
--   규정 준수/활성화
+- 설정 확인 목록
+- 플랫폼 화면
+- 사용 조건
+- 규정 준수/활성화
 
 ### <a name="user-abandonment-actions"></a>사용자 중단 작업
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17db2227303fe3937156ad6afa610dce48bd1992
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041344"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528317"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>빠른 시작: 클라이언트 앱 추가 및 할당
 
@@ -69,7 +69,7 @@ Microsoft Intune에 앱을 추가한 후 사용자와 다바이스 그룹에 해
 
 다음 단계에 따라 그룹에 앱을 할당합니다.
 1. [Intune](https://aka.ms/intuneportal)에서 **클라이언트 앱** > **앱**을 선택합니다. 
-2. 그룹에 할당하려는 앱을 선택합니다.   
+2. 그룹에 할당하려는 앱을 선택합니다.
 3. **할당** > **그룹 추가**를 클릭하여 **그룹 추가** 블레이드를 표시합니다.
 4. **할당 유형** 드롭다운 상자에서 **등록된 디바이스에 사용 가능**을 선택합니다. 
 5. **포함된 그룹** > **포함할 그룹 선택** > **Contoso 테스터**를 클릭합니다.

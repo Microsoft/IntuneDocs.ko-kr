@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042797"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512146"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법
 
@@ -34,7 +34,7 @@ ms.locfileid: "66042797"
 
 iOS 디바이스의 **관리에서 열기** 기능은 **MDM 채널**을 통해 디바이스에 배포된 앱 간에만 파일 전송이 발생하도록 제한할 수 있습니다. 구성 설정에서 *관리에서 열기* 제한 사항을 설정한 다음, MDM 솔루션을 사용하여 배포합니다.  사용자가 배포된 앱을 설치하면 설정한 제한 사항이 적용됩니다.
 
-##  <a name="use-app-protection-with-ios-apps"></a>iOS 앱에서 앱 보호 사용
+## <a name="use-app-protection-with-ios-apps"></a>iOS 앱에서 앱 보호 사용
 iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 다음과 같은 방법으로 회사 데이터를 보호할 수 있습니다.
 
 -   **직원 소유 디바이스는 MDM 솔루션에서 관리되지 않음:** 앱 보호 정책 설정을 **앱이 정책 관리 앱에만 데이터를 전송하도록 허용**으로 설정할 수 있습니다. 정책 관리 앱의 *여는 위치* 동작에서는 다른 정책 관리 앱만 공유 옵션으로 표시됩니다. 사용자가 기본 메일 앱의 OneDrive에서 첨부 파일로 정책 보호 파일을 보내려고 하는 경우 해당 파일을 읽을 수 없습니다.
