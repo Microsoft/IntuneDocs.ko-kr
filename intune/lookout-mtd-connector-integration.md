@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d146b211c42c20b1381b238311db6a10295ef4a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: be2e9371288961d0afdf7ad6e8cfec8f734087f6
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044925"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529904"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Intune과 Lookout Mobile Endpoint Security 통합 설정
 [필수 조건](lookout-mobile-threat-defense-connector.md#prerequisites)에 맞는 환경에서는 Intune과 Lookout Mobile Endpoint Security를 통합할 수 있습니다. 이 문서의 정보에서는 통합을 설정하고 Intune과 함께 사용하기 위해 Lookout에서 중요 설정을 구성하는 방법을 안내합니다.  

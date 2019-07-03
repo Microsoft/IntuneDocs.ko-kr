@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f3d51cfbacfa8ef380531f91e058717cf51d089
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044153"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530733"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>자습서: 관리 디바이스에서 Exchange Online 이메일 보호
 디바이스 준수 정책을 조건부 액세스와 함께 사용하여 iOS 디바이스가 Intune에서 관리되고 승인된 메일 앱을 사용하는 경우에만 Exchange Online 메일에 액세스할 수 있도록 하는 방법을 알아봅니다. 
@@ -47,19 +47,19 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 ## <a name="create-the-ios-device-compliance-policy"></a>iOS 디바이스 준수 정책 만들기
 Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태로 간주하기 위해 충족해야 하는 조건을 설정합니다. 이 자습서에서는 iOS 디바이스의 디바이스 준수 정책을 만듭니다. 준수 정책은 플랫폼에 특정하므로 평가하려는 각 디바이스 플랫폼의 개별 규정 준수 정책이 필요합니다.
 
-1.  Intune에서 **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
-2.  **이름**에 **iOS 준수 정책 테스트**를 입력합니다. 
-3.  **설명**에 **iOS 준수 정책 테스트**를 입력합니다.
-4.  **플랫폼**에서 **iOS**를 선택합니다. 
-5.  **설정** > **메일**을 선택합니다. 
+1. Intune에서 **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
+2. **이름**에 **iOS 준수 정책 테스트**를 입력합니다. 
+3. **설명**에 **iOS 준수 정책 테스트**를 입력합니다.
+4. **플랫폼**에서 **iOS**를 선택합니다. 
+5. **설정** > **메일**을 선택합니다. 
      
     1.  **모바일 디바이스에 관리되는 메일 프로필이 있어야 함** 옆에 있는 **필요**를 선택합니다.
     2. **확인**을 선택합니다.
 
     ![관리되는 메일 프로필을 요구하도록 메일 준수 정책을 설정합니다.](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
     
-6.  **디바이스 상태**를 선택합니다. **탈옥 디바이스** 옆에 있는 **차단**을 선택한 후 **확인**을 선택합니다.
-7.  **시스템 보안**을 선택하고 **암호** 설정을 입력합니다. 이 자습서에서는 다음 권장 설정을 선택합니다.
+6. **디바이스 상태**를 선택합니다. **탈옥 디바이스** 옆에 있는 **차단**을 선택한 후 **확인**을 선택합니다.
+7. **시스템 보안**을 선택하고 **암호** 설정을 입력합니다. 이 자습서에서는 다음 권장 설정을 선택합니다.
      
     - **모바일 디바이스의 잠금을 해제하는 데 암호 필요**에서 **필요**를 선택합니다.
     - **단순 암호**에서 **차단**을 선택합니다.
@@ -71,16 +71,16 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
  
     ![메일 준수 정책의 암호 설정 구성](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-system-security.png)
 
-8.  **확인**을 선택한 후 **만들기**를 선택합니다.
-9.  **만들기**를 선택합니다.
+8. **확인**을 선택한 후 **만들기**를 선택합니다.
+9. **만들기**를 선택합니다.
 
 ## <a name="create-the-conditional-access-policy"></a>조건부 액세스 정책 만들기
 이제 모든 디바이스가 Intune에 등록하고 Exchange Online에 액세스하기 전에 Intune 준수 정책을 준수하도록 요구하는 조건부 액세스 정책을 만들겠습니다. 메일 액세스를 위해 Outlook 앱도 필요합니다. 조건부 액세스 정책은 Azure AD 포털 또는 Intune 포털에서 구성할 수 있습니다. 현재 Intune 포털에 있으므로 여기에서 정책을 만들겠습니다.
-1.  Intune에서 **조건부 액세스** > **정책** > **새 정책**을 선택합니다.
+1. Intune에서 **조건부 액세스** > **정책** > **새 정책**을 선택합니다.
 1.  **이름**에 **Office 365 메일 정책 테스트**를 입력합니다. 
-3.  **할당**에서 **사용자 및 그룹**을 선택합니다. **포함** 탭에서 **모든 사용자**를 선택한 후 **완료**를 선택합니다.
+3. **할당**에서 **사용자 및 그룹**을 선택합니다. **포함** 탭에서 **모든 사용자**를 선택한 후 **완료**를 선택합니다.
 
-4.  **할당**에서 **클라우드 앱**을 선택합니다. Office 365 Exchange Online 메일을 보호해야 하므로 다음 단계에 따라 선택합니다.
+4. **할당**에서 **클라우드 앱**을 선택합니다. Office 365 Exchange Online 메일을 보호해야 하므로 다음 단계에 따라 선택합니다.
      
     1. **포함** 탭에서 **앱 선택**을 선택합니다.
     2. **선택**을 선택합니다. 
@@ -89,7 +89,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
   
     ![Office 365 Exchange Online 앱 선택](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
 
-5.  **할당**에서 **조건** > **장치 플랫폼**을 선택합니다.
+5. **할당**에서 **조건** > **장치 플랫폼**을 선택합니다.
      
     1. **구성**에서 **예**를 선택합니다.
     2. **포함** 탭에서 **모든 디바이스**를 선택한 후 **완료**를 선택합니다. 
@@ -97,7 +97,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
    
     ![Office 365 Exchange Online 앱 선택](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
-6.  **할당** 섹션에서 **조건** > **클라이언트 앱**을 선택합니다.
+6. **할당** 섹션에서 **조건** > **클라이언트 앱**을 선택합니다.
      
     1. **구성**에서 **예**를 선택합니다.
     2. 이 자습서에서는 **모바일 앱 및 데스크톱 클라이언트** 및 **최신 인증 클라이언트**(iOS용 Outlook 및 Android 용 Outlook 같은 앱을 참조함)를 선택합니다. 다른 확인란을 모두 선택 취소합니다.
@@ -105,7 +105,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
     
     ![Office 365 Exchange Online 앱 선택](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
-7.  **액세스 제어**에서 **권한 부여**를 선택합니다. 
+7. **액세스 제어**에서 **권한 부여**를 선택합니다. 
      
     1. **권한 부여** 창에서 **액세스 허용**을 선택합니다.
     2. **준수 상태로 표시된 디바이스 필요**를 선택합니다. 
@@ -115,11 +115,11 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
      
     ![Office 365 Exchange Online 앱 선택](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
-8.  **정책 사용**에서 **켜기**를 선택합니다.
+8. **정책 사용**에서 **켜기**를 선택합니다.
      
     ![Office 365 Exchange Online 앱 선택](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
-9.  **만들기**를 선택합니다.
+9. **만들기**를 선택합니다.
 
 ## <a name="try-it-out"></a>기능 직접 사용해 보기
 직접 만든 정책을 사용하면 Office 365에 로그인을 시도하는 모든 iOS 디바이스가 Intune에 등록하고 iOS용 Outlook 모바일 앱을 사용해야 합니다. iOS 디바이스에서 이 시나리오를 테스트하려면 테스트 테넌트에서 사용자의 자격 증명을 사용하여 Exchange Online에 로그인을 시도합니다. 디바이스를 등록하고 Outlook 모바일 앱을 설치하라는 메시지가 표시됩니다.
@@ -137,5 +137,5 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
 4. **조건부 액세스** > **정책**을 선택합니다.
 5. **정책 이름** 목록에서 테스트 정책의 상황에 맞는 메뉴( **...** )를 선택한 후 **삭제**를 선택합니다. **예**를 선택하여 확인합니다.
 
- ## <a name="next-steps"></a>다음 단계 
+## <a name="next-steps"></a>다음 단계 
 이 자습서에서는 iOS 디바이스가 Intune에 등록하고 Outlook 앱을 사용하여 Exchange Online 메일에 액세스하도록 요구하는 정책을 만들었습니다. Intune과 함께 조건부 액세스를 사용하여 Office 365 Exchange Online용 Exchange ActiveSync 클라이언트를 비롯한 다른 앱 및 서비스를 보호하는 방법에 대한 자세한 내용은 [조건부 액세스 설정](conditional-access.md)을 참조하세요.

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: c2e8c475cd52e199519db7a3d7ea83e6dbfef1a3
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045793"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530657"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Microsoft EMS(Enterprise Mobility + Security)를 사용하여 BYOD를 활성화하기 위한 기술 결정
 
@@ -56,7 +56,7 @@ MDM이 없는 MAM은 BYOD를 지원하는 조직에서 널리 사용됩니다. E
 
 * 액세스를 시도 중인 사용자
 * 위치를 신뢰할 수 있는지 여부
-*   로그인 위험 수준
+* 로그인 위험 수준
 * 디바이스 플랫폼
 
 여전히 조직에서 특정 위험에 대해 우려하는 경우가 많습니다.  아래 표에는 일반적인 우려 사항과 해당 문제에 대한 MDM 및 MAM 대응이 나와 있습니다.

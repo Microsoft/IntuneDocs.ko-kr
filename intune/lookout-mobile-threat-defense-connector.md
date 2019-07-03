@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3566d144abad563ead64c124e128c221e725a25c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a6dfce050726cfddadc493f73c91701021dc21ea
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045694"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529802"
 ---
 # <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Intune을 사용한 Lookout Mobile Endpoint Security 커넥터
 
@@ -98,7 +98,7 @@ Intune과 함께 Mobile Endpoint Security를 사용할 때의 일반적인 시�
 
 ## <a name="next-steps"></a>다음 단계
 이 솔루션을 구현하기 위해 수행해야 하는 주요 단계는 다음과 같습니다.
-1.  [Lookout 통합 설정](lookout-mtd-connector-integration.md)
-2.  [Intune에서 Mobile Endpoint Security를 사용하도록 설정](mtd-connector-enable.md)
-3.  [Lookout for Work 앱 추가 및 할당](mtd-apps-ios-app-configuration-policy-add-assign.md)
-4.  [Lookout 디바이스 준수 정책 구성](mtd-device-compliance-policy-create.md)
+1. [Lookout 통합 설정](lookout-mtd-connector-integration.md)
+2. [Intune에서 Mobile Endpoint Security를 사용하도록 설정](mtd-connector-enable.md)
+3. [Lookout for Work 앱 추가 및 할당](mtd-apps-ios-app-configuration-policy-add-assign.md)
+4. [Lookout 디바이스 준수 정책 구성](mtd-device-compliance-policy-create.md)
