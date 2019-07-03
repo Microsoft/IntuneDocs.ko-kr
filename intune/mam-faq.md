@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: 54511e29bd44b862a5ad06bdfda2067ed7248677
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506891"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494276"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 및 앱 보호에 대한 질문과 대답
 
@@ -37,9 +37,9 @@ MAM은 애플리케이션 내에서 조직의 데이터를 보호합니다. 중�
 
 **MAM은 어떤 디바이스 구성을 지원하나요?**<br></br>
 Intune MAM은 다음과 같은 두 가지 구성을 지원합니다.
-- **Intune MDM + MAM**: IT 관리자는 Intune MDM(모바일 디바이스 관리)에 등록된 디바이스에서 MAM 및 앱 보호 정책을 사용하여 앱을 관리할 수만 있습니다. MDM + MAM을 사용하여 앱을 관리하려면 Azure Portal(https://portal.azure.com)에서 Intune 콘솔을 사용해야 합니다.
+- **Intune MDM + MAM**: IT 관리자는 Intune MDM(모바일 디바이스 관리)에 등록된 디바이스에서 MAM 및 앱 보호 정책을 사용하여 앱을 관리할 수만 있습니다. MDM + MAM을 사용하여 앱을 관리하려면 Azure Portal(https://portal.azure.com )에서 Intune 콘솔을 사용해야 합니다.
 
-- **디바이스를 등록하지 않은 MAM**: 디바이스를 등록하지 않은 MAM 또는 MAM-WE를 통해 IT 관리자는 Intune MDM에 등록되지 않은 디바이스에서 MAM 및 앱 보호 정책을 사용하여 앱을 관리할 수 있습니다. 즉, 타사 EMM 공급자에 등록된 디바이스의 Intune으로 앱을 관리할 수 있습니다. MAM-WE를 사용하여 앱을 관리하려면 Azure Portal(https://portal.azure.com)에서 Intune 콘솔을 사용해야 합니다. 또한 타사 EMM(Enterprise Mobility Management) 공급자에 등록되었거나 MDM에 등록되지 않은 디바이스에서 Intune를 통해 앱을 관리할 수 있습니다.
+- **디바이스를 등록하지 않은 MAM**: 디바이스를 등록하지 않은 MAM 또는 MAM-WE를 통해 IT 관리자는 Intune MDM에 등록되지 않은 디바이스에서 MAM 및 앱 보호 정책을 사용하여 앱을 관리할 수 있습니다. 즉, 타사 EMM 공급자에 등록된 디바이스의 Intune으로 앱을 관리할 수 있습니다. MAM-WE를 사용하여 앱을 관리하려면 Azure Portal(https://portal.azure.com )에서 Intune 콘솔을 사용해야 합니다. 또한 타사 EMM(Enterprise Mobility Management) 공급자에 등록되었거나 MDM에 등록되지 않은 디바이스에서 Intune를 통해 앱을 관리할 수 있습니다.
 
 
 ## <a name="app-protection-policies"></a>앱 보호 정책
@@ -86,7 +86,7 @@ Intune APP SDK는 자사 및 타사의 SDK 버전 모두에 고급 ADAL 기능�
 - 최종 사용자의 Azure Active Directory 계정에 [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) 사서함 및 라이선스가 연결되어 있어야 합니다.
 
   >[!NOTE]
-  > Outlook 모바일 앱은 현재 Microsoft Exchange Online용 만 Intune App Protection 및 [하이브리드 최신 인증을 사용하는 Exchange Server](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)만 지원하며 Office 365 전용 Exchange는 지원하지 않습니다.
+  > Outlook 모바일 앱은 현재 Microsoft Exchange Online용 만 Intune App Protection 및 [하이브리드 최신 인증을 사용하는 Exchange Server](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)만 지원하며 Office 365 전용 Exchange는 지원하지 않습니다.
 
 **[Word, Excel 및 PowerPoint](https://products.office.com/business/office) 앱 사용을 위한 추가 요구 사항은 무엇인가요?**
 
@@ -142,7 +142,7 @@ Intune PIN은 비활성 타이머(즉, '다음 시간(분) 후에 액세스 요�
 - **동일한 게시자의 앱에서 PIN을 두 번 설정해야 하는 이유는 무엇인가요?**<br></br> MAM(iOS)은 현재 영숫자 및 특수 문자를 사용하는 애플리케이션 수준 PIN을 허용합니다. 이 경우 iOS용 Intune 앱 SDK를 통합하려면 애플리케이션(예: WXP, Outlook, Managed Browser, Yammer)이 참가해야 합니다. 이렇게 하지 않으면 대상 애플리케이션에 암호 설정이 제대로 적용되지 않습니다. 이는 iOS용 Intune SDK 버전 7.1.12에서 출시된 기능입니다. <br><br> 이 기능을 지원하고 이전 버전의 iOS용 Intune SDK와 호환성을 보장하기 위해 7.1.12 이상의 모든 PIN(숫자 또는 암호)은 이전 SDK 버전의 숫자 PIN과 별도로 처리됩니다. 따라서 동일한 게시자의 iOS용 Intune SDK 7.1.12 이전 버전과 7.1.12 이상 버전을 사용하는 애플리케이션이 장치에 있는 경우 두 개의 PIN을 설정해야 합니다. <br><br> 즉, 두 개의 PIN(각 앱용)은 어떤 방식으로든 서로 관련이 없으며 앱에 적용되는 앱 보호 정책을 준수해야 합니다. 따라서 PIN과 관련해서 앱 A와 B에 동일한 정책이 적용되는 *경우에만* 사용자가 동일한 PIN을 두 번 설정할 수 있습니다. <br><br> 이 동작은 Intune 모바일 앱 관리에서 사용하도록 설정된 iOS 애플리케이션의 PIN과 관련이 있습니다. 시간이 지나 애플리케이션이 최신 버전의 iOS용 Intune SDK를 채택하면서 동일한 게시자의 앱에서 PIN을 두 번 설정해야 하는 문제는 완화됩니다. 예를 보려면 아래 참고를 참조하세요.
 
   >[!NOTE]
-  > 예를 들어 앱 A는 7.1.12 이전 버전으로 빌드되고 앱 B는 동일한 게시자의 7.1.12 이상 버전으로 빌드된 경우, iOS 디바이스에 두 앱이 모두 설치되어 있으면 최종 사용자가 A와 B에 대해 별도로 PIN을 설정해야 합니다. <br><br> SDK 버전 7.1.9를 사용하는 앱 C가 디바이스에 설치되면 앱 A와 동일한 PIN을 공유합니다. <br><br> 7.1.14로 빌드된 앱 D는 앱 B와 동일한 PIN을 공유합니다. <br><br> 앱 A와 C만 디바이스에 설치된 경우 하나의 PIN만 설정하면 됩니다. 앱 B와 D만 디바이스에 설치된 경우에도 마찬가지입니다.
+  > 예를 들어 앱 A는 7.1.12 이전 버전으로 빌드되고 앱 B는 동일한 게시자의 7.1.12 이상 버전으로 빌드된 경우, iOS 디바이스에 두 앱이 모두 설치되어 있으면 최종 사용자가 A와 B에 대해 별도로 PIN을 설정해야 합니다. <br><br> SDK 버전 7.1.9를 사용하는 앱 C가 디바이스에 설치되면 앱 A와 동일한 PIN을 공유합니다. <br><br> 7\.1.14로 빌드된 앱 D는 앱 B와 동일한 PIN을 공유합니다. <br><br> 앱 A와 C만 디바이스에 설치된 경우 하나의 PIN만 설정하면 됩니다. 앱 B와 D만 디바이스에 설치된 경우에도 마찬가지입니다.
 
 **암호화의 경우는 어떤가요?**<br></br>
 IT 관리자는 앱 데이터 암호화를 요구하는 앱 보호 정책을 배포할 수 있습니다. 이러한 정책의 일환으로, IT 관리자는 콘텐츠가 암호화되는 경우를 지정할 수도 있습니다.
