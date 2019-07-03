@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e347d72a8eec93f9936f3c488cada5667ecf51f8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6bf1aa096d5ebd89130eb5fabe936a02183599c5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050578"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044648"
 ---
 # <a name="configure-app-protection-policies-optional"></a>앱 보호 정책 구성(선택 사항)
 
@@ -47,7 +47,7 @@ ms.locfileid: "66050578"
 
 Intune에서는 디바이스 수준 관리 방법이 없는 경우 회사 데이터 보안 기능을 계속 사용할 수 있도록 마이그레이션하는 동안에도 회사 데이터 보호 기능을 제공할 수 있습니다.
 
-이전 MDM 공급자에서 조건부 액세스를 비활성화하므로, Intune에 등록하는 동안에도 사용자는 계속 생산성을 유지할 수 있습니다.
+이전 MDM 공급자에서 조건부 액세스를 사용하지 않도록 설정하므로 Intune에 등록하는 동안에도 사용자는 계속 생산성을 유지할 수 있습니다.
 
 ## <a name="task-list-for-app-protection-policies"></a>앱 보호 정책에 대한 작업 목록
 

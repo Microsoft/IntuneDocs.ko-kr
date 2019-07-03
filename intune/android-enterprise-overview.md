@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d66a9ae4d72ef37f39c2017c4351847e8bace46
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6f59ff42f7707ace92442bf37ddac9679e36448f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049887"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045894"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune으로 Android 회사 프로필 디바이스 관리
 
@@ -58,11 +58,11 @@ Android 엔터프라이즈는 iOS에서 제공하는 기본 이메일 앱이나 
 
 Intune은 작업용 앱으로 관리되는 경우 Gmail 및 Nine Work 앱에 대한 구성 템플릿을 제공합니다. 앱 구성 프로필을 지원하는 기타 이메일 앱은 모바일 앱 구성 정책을 통해 구성할 수 있습니다.
 
-Android 엔터프라이즈 회사 프로필 디바이스에 Exchange ActiveSync 조건부 액세스를 사용하는 경우 Gmail 또는 Nine Work 이메일 앱을 사용하는 방안을 고려해 보세요. Android용 Microsoft Outlook 앱이나 ADAL을 통해 최신 인증을 사용하는 기타 메일 앱도 지원됩니다. 자세한 내용은 [Microsoft Intune에서 이메일 설정을 구성하는 방법](email-settings-configure.md)을 참조하세요.
+Android 엔터프라이즈 회사 프로필 디바이스에 Exchange ActiveSync 조건부 액세스를 사용하는 경우 Gmail 또는 Nine Work 메일 앱을 사용하는 방안을 고려해 보세요. Android용 Microsoft Outlook 앱이나 ADAL을 통해 최신 인증을 사용하는 기타 메일 앱도 지원됩니다. 자세한 내용은 [Microsoft Intune에서 이메일 설정을 구성하는 방법](email-settings-configure.md)을 참조하세요.
 
 ## <a name="app-protection-policies"></a>앱 보호 정책
 
-앱 보호 정책은 회사 프로필 및 개인 프로필에서 완전히 지원됩니다. Android 앱 게시 콘솔(https://play.google.com/apps/publish)에 기간 업무 앱을 게시할 수 있습니다. 이 콘솔에는 앱을 조직에 프라이빗으로 설정하는 옵션이 포함됩니다. 자세한 내용은 [Intune에서 Android 엔터프라이즈 회사 프로필 디바이스에 대한 디바이스 규정 준수 정책 추가](compliance-policy-create-android-for-work.md)를 참조하세요. 앱 보호 정책에 대한 일반적인 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
+앱 보호 정책은 회사 프로필 및 개인 프로필에서 완전히 지원됩니다. Android 앱 게시 콘솔(https://play.google.com/apps/publish )에 기간 업무 앱을 게시할 수 있습니다. 이 콘솔에는 앱을 조직에 프라이빗으로 설정하는 옵션이 포함됩니다. 자세한 내용은 [Intune에서 Android 엔터프라이즈 회사 프로필 디바이스에 대한 디바이스 규정 준수 정책 추가](compliance-policy-create-android-for-work.md)를 참조하세요. 앱 보호 정책에 대한 일반적인 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
 
 ## <a name="vpn-profiles"></a>VPN 프로필
 

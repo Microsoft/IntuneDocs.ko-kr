@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4363bb4feba52c15b8918a7c6ea02fa2917a00de
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 550dfe58687806f7ead65dab2d7e15b310ae4b6e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044956"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044036"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Intune과 Sophos Mobile Threat Defense 커넥터 사용
 Microsoft Intune과 통합된 MTD(Mobile Threat Defense) 솔루션인 Sophos Mobile에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 디바이스에서 회사 리소스에 대한 액세스를 제어할 수 있습니다. 위험은 Sophos Mobile 앱을 실행하는 디바이스에서 수집된 원격 분석에 기반하여 평가됩니다.

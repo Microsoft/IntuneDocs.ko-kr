@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044977"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044336"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>자습서: Azure Portal에서 Microsoft Intune 연습
 
@@ -104,7 +104,7 @@ Azure Portal에서 Intune을 더 잘 이해하려면 다음 단계를 따릅니�
 
     ![조건부 액세스 창 스크린샷](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
-    조건부 액세스는 이메일 및 회사 리소스에 연결할 수 있는 앱과 디바이스를 제어할 수 있는 방법을 말합니다. 디바이스 기반 및 앱 기반 조건부 액세스에 대해 알아보고 Intune을 사용한 조건부 액세스를 사용하는 일반적인 시나리오를 찾아보려면 [조건부 액세스란?](conditional-access.md)을 참조하세요.
+    조건부 액세스는 메일 및 회사 리소스에 연결할 수 있는 앱과 디바이스를 제어할 수 있는 방법을 말합니다. 디바이스 기반 및 앱 기반 조건부 액세스에 대해 알아보고 Intune을 사용한 조건부 액세스를 사용하는 일반적인 시나리오를 찾아보려면 [조건부 액세스란?](conditional-access.md)을 참조하세요.
 
 8. [Intune](https://aka.ms/intuneportal)에서 **사용자**를 선택하여 Intune에 포함된 사용자에 대한 세부 정보를 표시합니다. 이러한 사용자는 회사의 직원입니다. 
  

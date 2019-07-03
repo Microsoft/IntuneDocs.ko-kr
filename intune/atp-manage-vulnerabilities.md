@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 987e3171c4e5c5ba3f15097837e2c018ddc7a4b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049207"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045298"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune을 사용하여 Microsoft Defender ATP가 식별한 취약성 수정  
 
@@ -49,7 +49,7 @@ Windows Defender Security Center 콘솔에서 ATP 보안 관리자는 엔드포�
   이 보안 작업은 보류 중 상태로 Intune 콘솔에 표시됩니다.  
   ![Intune 콘솔에서 보안 작업 목록 보기](./media/atp-manage-vulnerabilities/temp-security-tasks.png)
  
-- Intune 관리자는 보안 작업을 선택하여 작업에 대한 세부 정보를 봅니다.  그런 다음, 관리자는 **수락**을 선택합니다. 그러면 Intune 및 ATP에서 상태가 ‘수락됨’으로 업데이트됩니다.  
+- Intune 관리자는 보안 작업을 선택하여 작업에 대한 세부 정보를 봅니다.  그런 다음, 관리자는 **수락**을 선택합니다. 그러면 Intune 및 ATP에서 상태가 ‘수락됨’으로 업데이트됩니다.   
   ![보안 작업 수락 또는 거부](./media/atp-manage-vulnerabilities/temp-accept-task.png) 
  
 - 그런 다음, 관리자는 제공된 지침에 따라 작업을 수정합니다.  지침은 필요한 수정 유형에 따라 달라집니다. 사용 가능한 경우 수정 지침에는 Intune에서 구성 관련 창을 여는 링크가 포함됩니다. 
@@ -75,7 +75,7 @@ Windows Defender Security Center 콘솔에서 ATP 보안 관리자는 엔드포�
 2. 목록에서 작업을 선택하여 해당 보안 작업의 추가 세부 정보를 표시하는 리소스 창을 엽니다.  
 3. 보안 작업 리소스 창을 보면서 추가 링크를 선택할 수 있습니다.  
    - 관리형 앱 - 취약한 앱을 봅니다. 취약성이 여러 앱에 적용되는 경우 필터링된 앱 목록이 표시됩니다.  
-   - 디바이스 - 해당 디바이스에 있는 취약성의 추가적인 세부 정보가 포함된 항목에 연결할 수 있는 ‘취약한 디바이스 목록’을 봅니다.  
+   - 디바이스 - 해당 디바이스에 있는 취약성의 추가적인 세부 정보가 포함된 항목에 연결할 수 있는 ‘취약한 디바이스 목록’을 봅니다.   
    - 요청자 - 링크를 사용하여 이 보안 작업을 제출한 관리자에게 메일을 보냅니다.  
    - 메모 - 보안 작업을 열 때 요청자가 제출한 사용자 지정 메시지를 읽습니다.  
 4. **수락** 또는 **거부**를 선택하여 계획된 작업에 대한 알림을 ATP에 보냅니다. 작업을 수락하거나 거부할 때 ATP에 전송되는 메모를 제출할 수 있습니다.  

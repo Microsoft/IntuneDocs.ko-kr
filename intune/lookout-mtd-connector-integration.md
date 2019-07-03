@@ -1,138 +1,168 @@
 ---
 title: Microsoft Intune과 Lookout 통합 설정
 titleSuffix: Microsoft Intune
-description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Lookout MTD(Mobile Threat Defense)와 Intune을 통합하는 방법을 알아봅니다.
+description: 회사 리소스에의 모바일 디바이스 액세스를 제어하기 위해 Mobile Threat Defense 솔루션인 Lookout Mobile Endpoint Security와 Intune을 통합하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
-ms.reviewer: heenamac
+ms.reviewer: davera
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffdfd203b2b67a25d5826798d89ae548e33d7756
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d146b211c42c20b1381b238311db6a10295ef4a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047134"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044925"
 ---
-# <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune과 Lookout Mobile Threat Defense 통합 설정
-
-Lookout Mobile Threat Defense 구독을 설정하려면 다음 단계를 수행해야 합니다.
-
-| #        |단계  |
-| ------------- |:-------------|
-| 1 | [Azure AD 정보 수집](#collect-azure-ad-information) |
-| 2 | [구독 구성](#configure-your-subscription) |
-| 3 | [등록 그룹 구성](#configure-enrollment-groups) |
-| 4 | [상태 동기화 구성](#configure-state-sync) |
-| 5 | [오류 보고서를 메일로 받는 사람의 정보 구성](#configure-error-report-email-recipient-information) |
-| 6 | [등록 설정 구성](#configure-enrollment-settings) |
-| 7 | [메일 알림 구성](#configure-email-notifications) |
-| 8 | [위협 분류 구성](#configure-threat-classification) |
-| 9 | [등록 점검](#watching-enrollment) |
+# <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Intune과 Lookout Mobile Endpoint Security 통합 설정
+[필수 조건](lookout-mobile-threat-defense-connector.md#prerequisites)에 맞는 환경에서는 Intune과 Lookout Mobile Endpoint Security를 통합할 수 있습니다. 이 문서의 정보에서는 통합을 설정하고 Intune과 함께 사용하기 위해 Lookout에서 중요 설정을 구성하는 방법을 안내합니다.  
 
 > [!IMPORTANT]
 > 아직 Azure AD 테넌트와 연결되지 않은 기존 Lookout Mobile Endpoint Security 테넌트는 Azure AD와 Intune을 통합하는 데 사용할 수 없습니다. 새 Lookout Mobile Endpoint Security 테넌트를 만들려면 Lookout 지원 센터로 문의하세요. 새 테넌트를 사용하여 Azure AD 사용자를 등록할 수 있습니다.
 
-## <a name="collect-azure-ad-information"></a>Azure AD 정보 수집
-Lookout Mobility Endpoint Security 테넌트가 Azure AD 구독과 연결되어 Lookout을 Intune과 통합합니다. Lookout Mobile Threat Defense 서비스 구독을 사용하도록 설정하려면 Lookout 지원(enterprisesupport@lookout.com)에 다음 정보가 필요합니다.
+## <a name="collect-azure-ad-information"></a>Azure AD 정보 수집  
+Intune과 Lookout을 통합하려면 Lookout Mobility Endpoint Security 테넌트를 Azure AD(Active Directory) 구독에 연결합니다.
 
-* **Azure AD 테넌트 ID**
-* **전체** Lookout 콘솔 액세스를 위한 **Azure AD 그룹 개체 ID**
-* Lookout 콘솔에 **제한된** 액세스를 하기 위한 **Azure AD 그룹 개체 ID**(선택 사항)
+Intune과 Lookout Mobile Endpoint Security 구독 통합을 사용하도록 설정하려면 Lookout 지원 센터(enterprisesupport@lookout.com)에 다음 정보를 제공합니다.  
 
-다음 단계에 따라 Lookout 지원 팀에 제공해야 하는 정보를 수집합니다.
+- **Azure AD 테넌트 디렉터리 ID**  
 
-1. [Azure Portal](https://portal.azure.com)에 로그인한 후 구독을 선택합니다. 
+- **모든** Lookout MES(Mobile Endpoint Security) 콘솔 권한이 있는 그룹의 **Azure AD 그룹 개체 ID**입니다.  
+  **Lookout 콘솔**에 로그인할 수 있는 *모든 권한*이 있는 사용자를 포함하려면 Azure AD에서 이 사용자 그룹을 만듭니다. 사용자가 이 그룹 또는 선택적 ‘제한된 권한’ 그룹의 구성원이어야만 Lookout 콘솔에 로그인할 수 있습니다.  
 
-2. 구독 이름을 선택하면 결과 URL은 구독 ID를 포함합니다.  구독 ID를 찾는 데 문제가 있으면 [Microsoft 지원 문서](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)ID를 찾는 방법에 대한 팁을 확인하세요.
+- **제한된** Lookout MES 콘솔 액세스 권한이 있는 그룹’(선택적 그룹)’의**Azure AD 그룹 개체 ID**입니다.  
+  Lookout 콘솔의 여러 구성 및 등록 관련 모듈에 액세스할 수 없는 사용자를 포함하려면 Azure AD에서 이 선택적 사용자 그룹을 만듭니다. 대신 이러한 사용자는 Lookout 콘솔의 **보안 정책** 모듈에 대한 읽기 전용 권한을 가집니다. 사용자가 이 선택적 그룹 또는 필요한 ‘모든 권한’ 그룹의 구성원이어야만 Lookout 콘솔에 로그인할 수 있습니다. 
 
-3. Azure AD 그룹 ID를 찾습니다. Lookout 콘솔은 두 가지 수준의 액세스를 지원합니다.  
-   * **모든 권한:** Azure AD 관리자는 모든 권한이 있는 사용자 그룹을 만들고, 선택적으로 제한된 권한이 있는 사용자 그룹을 만들 수 있습니다.  이러한 그룹의 사용자만 **Lookout 콘솔**에 로그인할 수 있습니다.
-   * **제한된 권한:** 이 그룹의 사용자는 Lookout 콘솔의 여러 구성 및 등록 관련 모듈에 대한 액세스 권한이 없으며, Lookout 콘솔의 **보안 정책** 모듈에 대한 읽기 전용 액세스 권한을 갖습니다.  
+ > [!TIP] 
+ > 사용 권한에 대한 자세한 내용은 Lookout 웹 사이트에서 [이 문서](https://personal.support.lookout.com/hc/articles/114094105653)를 참조하세요.
 
-     > [!TIP] 
-     > 사용 권한에 대한 자세한 내용은 Lookout 웹 사이트에서 [이 문서](https://personal.support.lookout.com/hc/articles/114094105653)를 참조하세요.
+### <a name="collect-information-from-azure-ad"></a>Azure AD에서 정보 수집 
 
-     > [!NOTE] 
-     > **그룹 개체 ID**는 **Azure AD 관리 포털**의 그룹 **속성** 페이지에 있습니다.
+1. [Azure Portal](https://portal.azure.com)에 전역 관리자 계정으로 로그인합니다.
 
-4. 이 정보를 수집한 후 Lookout 지원 센터로 문의하세요(메일: enterprisesupport@lookout.com). Lookout 지원 팀은 주요 담당자와 함께 수집한 정보를 사용하여 구독을 등록하고 Lookout 엔터프라이즈 계정을 만듭니다.
+2. **Azure Active Directory** > **속성**으로 이동하고 **디렉터리 ID**를 찾습니다. ‘복사’ 단추를 사용하여 디렉터리 ID를 복사한 다음 텍스트 파일에 저장합니다. 
 
-## <a name="configure-your-subscription"></a>구독 구성
+   ![Azure AD 속성](./media/lookout-mtd-connector-integration/azure-ad-properties.png)  
 
-1. Lookout 지원 팀이 Lookout 엔터프라이즈 계정을 만들면 Lookout에서 사용자 회사의 주요 담당자에게 로그인 URL에 대한 링크(<https://aad.lookout.com/les?action=consent>)가 포함된 이메일을 전송합니다.
+3. 그런 다음 Azure AD 사용자에게 Lookout 콘솔에 대한 권한을 부여하는 데 사용할 Azure AD 그룹 ID를 찾습니다. 한 그룹은 ‘모든 권한’을 부여하기 위한 것이며, ‘제한된 권한’의 두 번째 그룹은 선택 사항입니다.   각 계정의 ‘개체 ID’를 가져오려면 다음과 같이 합니다.   
+   1. **Azure Active Directory** > **그룹**으로 이동하여 그룹 - 모든 그룹  창을 엽니다.  
 
-2. Azure AD 테넌트를 등록하려면 Lookout 콘솔에 처음 로그인할 때 Azure AD 역할이 전역 관리자인 사용자 계정을 사용해야 합니다. 이후에는 로그인에 이 수준의 Azure AD 권한이 필요하지 않습니다. 동의 페이지가 표시됩니다. **동의**를 선택하여 등록을 완료합니다. 동의하고 승인하면 Lookout 콘솔로 리디렉션됩니다.
+   2. ‘모든 권한’을 부여하기 위해 만든 그룹을 선택하여 ‘개요’ 창을 엽니다.    
 
-   ![Lookout 콘솔의 첫 번째 로그인 페이지 스크린샷](./media/lookout_mtp_initial_login.png)
+   3. ‘복사’ 단추를 사용하여 개체 ID를 복사한 다음 텍스트 파일에 저장합니다.   
 
-3. [Lookout 콘솔](https://aad.lookout.com)의 **시스템** 모듈에서 **커넥터** 탭과 **Intune**을 차례로 선택합니다.
+   4. 제한된 권한 그룹을 사용하는 경우 이 그룹을 대상으로 프로세스를 반복합니다.   
 
-   ![커넥터 탭의 Intune 옵션이 포함된 Lookout 콘솔의 이미지](./media/lookout_mtp_setup-intune-connector.png)
+      ![Azure AD 그룹 개체 ID](./media/lookout-mtd-connector-integration/azure-ad-group-id.png)  
 
-4. **커넥터** > **연결 설정**으로 이동하여 **하트비트 빈도**(단위: 분)를 지정합니다.
+   이 정보를 수집한 후 Lookout 지원 센터로 문의하세요(메일: enterprisesupport@lookout.com). Lookout 지원 팀은 주요 담당자와 함께 제공받은 정보를 사용하여 구독을 등록하고 Lookout 엔터프라이즈 계정을 만듭니다.  
 
-   ![하트비트 주기가 구성된 연결 설정 탭의 이미지](./media/lookout-mtp-connection-settings.png)
+## <a name="configure-your-lookout-subscription"></a>Lookout 구독 구성  
+Lookout 지원 팀이 Lookout 엔터프라이즈 계정을 만들면 사용자 회사의 주요 담당자에게 로그인 URL의 링크(https://aad.lookout.com/les?action=consent )가 포함된 이메일을 전송합니다. 
 
-## <a name="configure-enrollment-groups"></a>등록 그룹 구성
-1. [Azure AD 관리 포털](https://manage.windowsazure.com)에서 Lookout 통합을 테스트할 적은 수의 사용자를 포함하는 Azure AD 보안 그룹을 만드는 것이 좋습니다.
+### <a name="initial-sign-in"></a>초기 로그인  
+MES Lookout 콘솔에 처음 로그인하면 동의 페이지(https://aad.lookout.com/les?action=consent) 가 표시됩니다. Azure AD 전역 관리자가 로그인하고 **동의**하면 됩니다. 이후 로그인에서 사용자는 이 수준의 Azure AD 권한이 필요하지 않습니다. 
 
-    > [!NOTE] 
-    > 식별되고 지원되는 Azure AD 내 등록 그룹 사용자의 모든 Lookout 지원, Intune 등록 디바이스가 Lookout MTD 콘솔에 등록되며 활성화할 수 있습니다.
+ 동의 페이지가 표시됩니다. **동의**를 선택하여 등록을 완료합니다. 
+   ![Lookout 콘솔의 첫 번째 로그인 페이지 스크린샷](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
-2. [Lookout 콘솔](https://aad.lookout.com)의 **시스템** 모듈에서 **커넥터** 탭, **등록 관리**를 차례로 선택하여 Lookout에서 해당 디바이스를 등록해야 하는 사용자 집합을 정의합니다. 등록할 Azure AD 보안 그룹 **표시 이름**을 추가합니다.
+동의하고 승인하면 Lookout 콘솔로 리디렉션됩니다.
 
-    ![Intune Connector 등록 페이지의 스크린샷](./media/lookout-mtp-enrollment.png)
+초기 로그인과 동의를 완료한 이후에 https://aad.lookout.com 에서 로그인하는 사용자는 MES 콘솔로 리디렉션됩니다. 동의가 아직 승인되지 않은 경우 로그인을 시도하면 모두 잘못된 로그인 오류가 발생합니다.
 
-    >[!IMPORTANT]
-    > **표시 이름**은 Azure Portal에서 보안 그룹의 **속성**에 표시된 것처럼 대/소문자를 구분합니다. 아래 그림에 표시된 것처럼 보안 그룹의 **표시 이름**은 카멜식 대/소문자입니다. 반면 제목은 모두 소문자입니다. Lookout 콘솔에서 보안 그룹에 대한 **표시 이름**의 대/소문자를 일치시키세요.
-    >![Azure Portal, Azure Active Directory 서비스, 속성 페이지의 이미지](./media/aad-group-display-name.png)
+### <a name="configure-the-intune-connector"></a>Intune Connector 구성  
+다음 절차에서는 Lookout 배포를 테스트하기 위해 이전에 Azure AD에서 사용자 그룹을 만들었다고 가정합니다. 작은 그룹의 사용자로 시작하여 Lookout 및 Intune 관리자가 제품 통합에 익숙해지도록 하는 것이 가장 좋습니다. 익숙해진 후에 추가 사용자 그룹으로 등록을 확장할 수 있습니다.
 
-    >[!NOTE] 
-    >가장 좋은 방법은 새 디바이스의 확인 간격을 기본값(5분)으로 하는 것입니다. 현재 제한 사항, **Lookout에서는 그룹 표시 이름의 유효성을 검사할 수 없습니다.** Azure Portal의 **표시 이름** 필드가 Azure AD 보안 그룹과 정확히 일치하도록 하세요. **중첩 그룹 만들기는 지원되지 않습니다.**  Lookout에 사용된 Azure AD 보안 그룹에는 사용자만 포함해야 하며, 다른 그룹은 포함할 수 없습니다.
+1. [Lookout MES 콘솔](https://aad.lookout.com)에 로그인하고 **시스템** > **커넥터**로 이동한 다음 **커넥터 추가**를 선택합니다.  **Intune**을 선택합니다.
 
-3.  그룹이 추가된 후 다음번에 사용자가 지원되는 해당 디바이스에서 Lookout for Work 앱을 열면 디바이스가 Lookout에서 활성화됩니다.
+   ![커넥터 탭의 Intune 옵션이 포함된 Lookout 콘솔의 이미지](./media/lookout-mtd-connector-integration/lookout_mtp_setup-intune-connector.png)
 
-4.  결과에 만족한 경우 추가 사용자 그룹까지 등록을 확장합니다.
+2. ‘Microsoft Intune’ 창에서 **연결 설정**을 선택하고 **Heartbeat Frequency**(하트비트 빈도)를 지정합니다.  
 
-## <a name="configure-state-sync"></a>상태 동기화 구성
-**상태 동기화** 옵션에서 Intune에 전송해야 할 데이터 유형을 지정합니다.  Lookout Intune 통합이 제대로 작동하려면 디바이스 상태와 위협 상태가 둘 다 필요합니다. 이러한 설정은 기본적으로 사용됩니다.
+   ![하트비트 주기가 구성된 연결 설정 탭의 이미지](./media/lookout-mtd-connector-integration/lookout-mtp-connection-settings.png)
 
-## <a name="configure-error-report-email-recipient-information"></a>오류 보고서를 메일로 받는 사람의 정보 구성
-**오류 관리** 옵션에서 오류 보고서를 받아야 하는 메일 주소를 입력합니다.
+3. **Enrollment Management**(등록 관리)를 선택하고 **Use the following Azure AD security groups to identify devices that should be enrolled in Lookout for Work**(다음 Azure AD 보안 그룹을 사용하여 Lookout for Work에서 등록할 디바이스 식별)에서 Lookout에서 사용할 Azure AD 그룹의 ‘그룹 이름’을 지정한 다음 **변경 내용 저장**을 선택합니다. 
 
-![Intune Connector 오류 관리 페이지의 스크린샷](./media/lookout-mtp-connector-error-notifications.png)
+    ![Intune Connector 등록 페이지의 스크린샷](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)  
 
-## <a name="configure-enrollment-settings"></a>등록 설정 구성
-**커넥터** 페이지의 **시스템** 모듈에서 디바이스 연결이 끊긴 것으로 간주되는 일 수를 지정합니다.  연결이 끊긴 장치는 Intune 조건부 액세스 정책을 기반으로 규정 비준수로 간주되어 회사 애플리케이션 액세스가 차단됩니다. 1일에서 90일 사이의 값을 지정할 수 있습니다.
+   **사용하는 그룹에 관한 내용**:
+   - 모범 사례로 Lookout 통합을 테스트하는 작은 수의 사용자를 포함하는 Azure AD 보안 그룹으로 시작합니다.
+   - Azure Portal에서 보안 그룹의 **속성**에 나와 있는 것처럼 **그룹 이름**은 대/소문자가 구분됩니다.  
+   - **Enrollment Management**(등록 관리)에 지정하는 그룹에 따라 Lookout에 디바이스가 등록되는 사용자 세트가 정의됩니다. 사용자가 등록 그룹에 속해 있으면 Azure AD의 사용자 디바이스가 등록되며 Lookout MES에서 활성화될 수 있습니다. 사용자가 지원되는 디바이스에서 ‘Lookout for Work’ 애플리케이션을 처음으로 열면 활성화하라는 메시지가 표시됩니다. 
 
-![시스템 모듈의 Lookout 등록 설정](./media/lookout-console-enrollment-settings.png)
+4. **State Sync**(상태 동기화)를 선택하고 디바이스 상태  와 ‘위협 상태’가 모두 **켬**으로 설정되어 있는지 확인합니다.   Lookout Intune 통합이 제대로 작동하려면 둘 다 필요합니다.  
 
-## <a name="configure-email-notifications"></a>메일 알림 구성
-위협 경고를 메일로 받으려면 알림을 받아야 하는 사용자 계정으로 [Lookout 콘솔](https://aad.lookout.com)에 로그인합니다. **시스템** 모듈의 **기본 설정** 탭에서 알림의 위협 수준을 선택한 후 **켬**으로 설정합니다. 변경 내용을 저장합니다.
+5. **Error Management**(오류 관리)를 선택하고 오류 보고서를 받을 메일 주소를 지정한 다음 **변경 내용 저장**을 선택합니다.
+ 
+   ![Intune Connector 오류 관리 페이지의 스크린샷](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
 
-![사용자 계정이 표시된 기본 설정 페이지의 스크린샷](./media/lookout-mtp-email-notifications.png) 이제 메일 알림을 받지 않으려면 알림을 **끔**으로 설정하고 변경 내용을 저장합니다.
+6. **커넥터 만들기**를 선택하여 커넥터 구성을 완료합니다. 결과에 만족한 경우 나중에 등록을 추가 사용자 그룹으로 확장할 수 있습니다.
 
-### <a name="configure-threat-classification"></a>위협 분류 구성
-Lookout Mobile Threat Defense는 다양한 종류의 모바일 위협을 분류합니다. [Lookout 위협 분류](https://personal.support.lookout.com/hc/articles/114094130693)에는 기본 위험 수준이 지정되어 있습니다. 이 수준은 언제든지 회사 요구 사항에 맞게 변경할 수 있습니다.
+## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Lookout을 Mobile Threat Defense 공급자로 사용하도록 Intune 구성
+Lookout MES를 구성한 후에 Intune에서 Lookout의 연결을 설정해야 합니다.  
 
-![위협 및 분류를 보여 주는 정책 페이지의 스크린샷](./media/lookout-mtp-threat-classification.png)
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+
+2. **디바이스 준수** > **Mobile Threat Defense**로 이동하고 **추가**를 선택합니다.
+
+3. ‘커넥터 추가’ 창에서 드롭다운 목록을 사용하여 **Lookout for Work**를 선택합니다.   
+
+4. **만들기**를 선택합니다. 커넥터에서 Lookout MES와의 연결이 설정되면 ‘커넥터 설정’을 사용할 수 있습니다. 
+
+5. **iOS 디바이스에 대해 앱 동기화 사용**을 **켬**으로 설정합니다. 
+
+6. **저장**을 선택하여 구성을 완료합니다.  Intune과 Lookout MES가 이제 통합되고 사용할 준비가 됩니다.
+
+
+## <a name="additional-settings-in-the-lookout-mes-console"></a>MES Lookout 콘솔의 추가 설정
+다음은 MES Lookout 콘솔에서 구성할 수 있는 추가 설정입니다.  
+
+### <a name="configure-enrollment-settings"></a>등록 설정 구성
+Lookout MES 콘솔에서 **시스템** > **Manage Enrollment**(등록 관리) > **등록 설정**을 선택합니다.  
+
+- **Disconnected Status**(연결이 끊긴 상태)에 연결이 끊긴 디바이스를 연결 끊김으로 표시하기 전의 일 수를 지정합니다.  
+
+  연결이 끊긴 장치는 Intune 조건부 액세스 정책을 기반으로 규정 비준수로 간주되어 회사 애플리케이션 액세스가 차단됩니다. 1일에서 90일 사이의 값을 지정할 수 있습니다.
+
+  ![시스템 모듈의 Lookout 등록 설정](./media/lookout-mtd-connector-integration/lookout-console-enrollment-settings.png)
+
+### <a name="configure-email-notifications"></a>메일 알림 구성
+위협 경고를 메일로 받으려면 알림을 받아야 하는 사용자 계정으로 [Lookout MES 콘솔](https://aad.lookout.com)에 로그인합니다.  
+
+- **기본 설정**으로 이동한 다음 받으려는 알림을 **켬**으로 설정한 다음 변경 내용을 **저장**합니다.  
+
+- 메일 알림을 더 이상 받지 않으려면 알림을 **끔**으로 설정하고 변경 내용을 저장합니다.
+
+  ![사용자 계정이 표시된 기본 설정 페이지의 스크린샷](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
+
+
+
+## <a name="configure-threat-classifications"></a>위협 분류 구성  
+Lookout Mobile Endpoint Security는 다양한 종류의 모바일 위협을 분류합니다. Lookout 위협 분류에는 기본 위험 수준이 연결되어 있습니다. 위협 수준은 언제든지 회사 요구 사항에 맞게 변경할 수 있습니다.
+
+위협 수준 분류에 관한 자세한 내용과 연결된 위협 수준을 관리하는 방법은 [Lookout 위협 참조](https://enterprise.support.lookout.com/hc/articles/360011812974)를 참조하세요.
 
 >[!IMPORTANT]
-> 위험 수준은 Mobile Threat Defense의 중요한 측면으로, 런타임 시 이러한 위험 수준에 따라 Intune 통합에서 디바이스 규정 준수를 측정하기 때문입니다. Intune 관리자가 디바이스에 최소 수준의 활성 위협(**높음**, **중간** 또는 **낮음**)이 있다면 디바이스가 규정을 준수하지 않는 것으로 식별하도록 정책 규칙을 설정할 수 있습니다. Lookout Mobile Threat Defense의 위협 분류 정책을 통해 디바이스의 규정 준수 여부가 Intune에서 바로 측정됩니다.
+> 위험 수준은 런타임 시 이러한 위험 수준에 따라 Intune 통합에서 디바이스 규정 준수를 측정하기 때문에 Mobile Endpoint Security의 중요한 측면입니다.  
+> 
+> Intune 관리자가 디바이스에 최소 수준의 활성 위협(**높음**, **중간** 또는 **낮음**)이 있다면 디바이스가 규정을 준수하지 않는 것으로 식별하도록 정책 규칙을 설정할 수 있습니다. Lookout Mobile Endpoint Security의 위협 분류 정책을 통해 디바이스의 규정 준수 여부가 Intune에서 바로 측정됩니다.  
 
-## <a name="watching-enrollment"></a>등록 감시
-설치가 완료되면 Lookout Mobile Threat Defense에서 지정한 등록 그룹에 해당하는 디바이스를 Azure AD에 폴링하기 시작합니다.  등록된 디바이스에 대한 정보는 디바이스 모듈에서 찾을 수 있습니다.  디바이스의 초기 상태는 보류 중으로 표시됩니다.  디바이스에서 Lookout for Work 앱을 설치하고 열고 활성화하면 디바이스 상태가 변경됩니다.  Lookout for Work 앱을 디바이스에 푸시하는 방법에 대한 자세한 내용은 [Intune을 사용하여 Lookout for Work 앱 추가](mtd-apps-ios-app-configuration-policy-add-assign.md)를 참조하세요.
+## <a name="monitor-enrollment"></a>등록 모니터링
+설정이 완료되면 Lookout Mobile Endpoint Security에서 지정한 등록 그룹에 해당하는 디바이스를 Azure AD에 폴링하기 시작합니다.  Lookout MES 콘솔에서 **디바이스**로 이동하여 등록된 디바이스에 관한 정보를 확인할 수 있습니다.  
+- 디바이스의 초기 상태는 ‘보류 중’입니다.   
+- 디바이스에서 ‘Lookout for Work’ 앱을 설치하고 열고 활성화하면 디바이스 상태가 업데이트됩니다. 
+
+‘Lookout for Work’ 앱을 디바이스에 배포하는 방법에 대한 자세한 내용은 [Intune을 사용하여 Lookout for Work 앱 추가](mtd-apps-ios-app-configuration-policy-add-assign.md)를 참조하세요. 
 
 ## <a name="next-steps"></a>다음 단계
 

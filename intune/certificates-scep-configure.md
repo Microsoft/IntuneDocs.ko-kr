@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744336"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344081"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -68,7 +68,7 @@ NDES 서버와 모든 지원 인프라 간에 필요한 모든 포트 및 프로
 |**인증서 템플릿**|발급 CA에서 이 템플릿을 구성합니다.|
 |**클라이언트 인증 인증서**|발급 CA 또는 공용 CA에서 요청되었습니다. 이 인증서를 NDES 서버에 설치합니다.|
 |**서버 인증 인증서**|발급 CA 또는 공용 CA에서 요청되었습니다. 이 SSL 인증서를 NDES 서버의 IIS에 설치 및 바인딩합니다. 인증서에 클라이언트 및 서버 인증 키 사용이 설정된 경우(**고급 키 사용**) 동일한 인증서를 사용할 수 있습니다.|
-|**신뢰할 수 있는 루트 CA 인증서**|루트 CA 또는 루트 CA를 신뢰하는 디바이스에서 이 인증서를 **.cer** 파일로 내보냅니다. 그런 다음, 신뢰할 수 있는 CA 인증서 프로필을 사용하여 사용자, 디바이스 또는 둘 다에 할당합니다.<br /><b>참고:<b /> SCEP 인증서 프로필이 할당되면 SCEP 인증서 프로필에서 참조하는 신뢰할 수 있는 루트 인증서 프로필을 동일한 사용자 또는 디바이스 그룹에 할당해야 합니다.<br /><br />운영 체제 플랫폼당 하나의 신뢰할 수 있는 루트 CA 인증서를 사용하고, 새로 만드는 각 신뢰할 수 있는 루트 인증서 프로필과 연결합니다.<br /><br />필요하면 신뢰할 수 있는 루트 CA 인증서를 추가로 사용할 수 있습니다. 예를 들어, Wi-Fi 액세스 지점의 서버 인증 인증서에 서명하는 CA에 신뢰를 제공하기 위해 사용하게 될 수도 있습니다.|
+|**신뢰할 수 있는 루트 CA 인증서**|루트 CA 또는 루트 CA를 신뢰하는 디바이스에서 이 인증서를 **.cer** 파일로 내보냅니다. 그런 다음, 신뢰할 수 있는 CA 인증서 프로필을 사용하여 사용자, 디바이스 또는 둘 다에 할당합니다.<br /> **참고:<br />SCEP 인증서 프로필이 할당되면 SCEP 인증서 프로필에서 참조하는 ‘신뢰할 수 있는 루트 인증서 프로필’  을 동일한 사용자 또는 디바이스 그룹에 할당해야 합니다.  이 프로필을 만들려면 PKCS 인증서 프로필의 문서에 문서화되어 있는 [신뢰할 수 있는 인증서 프로필 만들기](certficates-pfx-configure.md#create-a-trusted-certificate-profile)를 참조하세요.** <br/><br />운영 체제 플랫폼당 하나의 신뢰할 수 있는 루트 CA 인증서를 사용하고, 새로 만드는 각 신뢰할 수 있는 루트 인증서 프로필과 연결합니다. <br /><br />필요하면 신뢰할 수 있는 루트 CA 인증서를 추가로 사용할 수 있습니다. 예를 들어, Wi-Fi 액세스 지점의 서버 인증 인증서에 서명하는 CA에 신뢰를 제공하기 위해 사용하게 될 수도 있습니다.|
 
 ### <a name="accounts"></a>계정
 
@@ -487,7 +487,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
      - **디지털 서명**: 디지털 서명으로 키를 보호하는 경우에만 키 교환을 허용합니다.
    - **키 크기(비트)** : 키에 포함된 비트 수를 선택합니다.
    - **해시 알고리즘**(Android, Windows Phone 8.1, Windows 8.1, Windows 10): 이 인증서와 함께 사용할 수 있는 해시 알고리즘 유형 중 하나를 선택합니다. 연결 디바이스에서 지원되는 가장 강력한 보안 수준을 선택합니다.
-   - **루트 인증서**: 이전에 구성하고 사용자 및/또는 디바이스에 할당한 루트 CA 인증서 프로필을 선택합니다. 이 CA 인증서는 이 인증서 프로필에서 구성하려는 인증서를 발급할 CA에 대한 루트 인증서여야 합니다. 이 신뢰할 수 있는 루트 인증서 프로필을 SCEP 인증서 프로필에 할당된 동일한 그룹에 할당해야 합니다.
+   - **루트 인증서**: 이전에 만들고 사용자 및/또는 디바이스에 할당한 [신뢰할 수 있는 루트 CA 인증서 프로필](certficates-pfx-configure.md#create-a-trusted-certificate-profile)을 선택합니다. 이 CA 인증서는 이 인증서 프로필에서 구성하려는 인증서를 발급할 CA에 대한 루트 인증서여야 합니다. 이 신뢰할 수 있는 루트 인증서 프로필을 SCEP 인증서 프로필에 할당된 동일한 그룹에 할당해야 합니다.
    - **확장 키 사용**: 인증서의 용도에 대한 값을 **추가**합니다. 대부분의 경우 인증서는 사용자 또는 디바이스가 서버에 인증할 수 있도록 **클라이언트 인증**이 필요합니다. 그러나 필요에 따라 다른 키 사용을 추가할 수 있습니다.
    - **등록 설정**
      - **갱신 임계값(%)** : 디바이스에서 인증서 갱신을 요청하기 전까지 남은 인증서 수명을 백분율로 입력합니다.
@@ -508,6 +508,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
     > [!NOTE]
     > iOS의 경우 동일한 인증서 프로필을 사용하는 여러 리소스 프로필을 배포하는 경우 관리 프로필에 인증서의 여러 복사본이 표시됩니다.
+- Intune 및 Configuration Manager의 공동 관리를 사용하는 경우 Configuration Manager에서 *리소스 액세스 정책*의 [워크로드 슬라이더](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)를 **Intune** 또는 **파일럿 Intune**으로 설정합니다. 이렇게 설정하면 Windows 10 클라이언트가 인증서 요청 프로세스를 시작할 수 있습니다.  
 
 프로필을 할당하는 방법에 대한 자세한 내용은 [디바이스 프로필 할당](device-profile-assign.md)을 참조하세요.
 
@@ -552,7 +553,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 성공  | 성공 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 인증 기관이 유효하지 않거나 연결할 수 없습니다. 인증 기관을 사용할 수 있고 서버에서 이 인증 기관과 통신할 수 있는지 확인하세요. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | 로컬 인증서 저장소에 Symantec 클라이언트 인증 인증서가 없습니다. 자세한 내용은 [Symantec Registration Authorization 인증서 설치](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) 문서를 참조하세요.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | 로컬 인증서 저장소에 Symantec 클라이언트 인증 인증서가 없습니다. 자세한 내용은 [Set up Intune Certificate Connector for DigiCert PKI Platform](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting)(DigiCert PKI 플랫폼용 Intune Certificate Connector 설정)을 참조하세요.  |
 | 0x00000402 | RevokeCert_AccessDenied  | 지정한 계정에 CA에서 인증서를 해지할 수 있는 권한이 없습니다. 이벤트 메시지 세부 정보의 CA 이름 필드를 참조하여 발급하는 CA를 확인하세요.  |
 | 0x00000403 | CertThumbprint_NotFound  | 사용자 입력과 일치하는 인증서를 찾을 수 없습니다. 인증서 커넥터를 등록하고 다시 시도하세요. |
 | 0x00000404 | Certificate_NotFound  | 제공된 입력과 일치하는 인증서를 찾을 수 없습니다. 인증서 커넥터를 다시 등록하고 다시 시도하세요. |

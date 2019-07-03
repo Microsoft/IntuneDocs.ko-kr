@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804477"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528246"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune을 사용하는 RBAC(역할 기반 액세스 제어)
 
@@ -38,9 +38,9 @@ Intune RBAC에 대한 조언과 제안 사항의 경우 예제 및 연습을 보
 기본 제공 역할과 사용자 지정 역할을 모두 사용할 수 있습니다. 기본 제공 역할은 몇 가지 일반적인 Intune 시나리오를 다룹니다. 꼭 필요한 권한 세트만 있는 [사용자 고유의 사용자 지정 역할 만들기](create-custom-role.md)가 가능합니다. Intune에 대한 권한을 갖고 있는 여러 Azure Active Directory 역할이 있습니다.
 역할을 보려면 **Intune** > **역할** > **모든 역할**을 선택한 다음, 역할을 선택합니다. 다음과 같은 페이지가 표시됩니다.
 
--   **속성**: 역할의 이름, 설명, 형식, 할당 및 범위 태그입니다. 
--   **사용 권한**: 역할이 갖는 권한을 정의하는 긴 토글 세트를 나열합니다.
--   **할당**: 어떤 사용자가 어떤 사용자/디바이스에 액세스할 수 있는지 정의하는 [역할 할당]( assign-role.md) 목록입니다. 한 역할에 여러 권한을 할당할 수 있으며, 한 사용자를 여러 할당에 포함할 수 있습니다.
+- **속성**: 역할의 이름, 설명, 형식, 할당 및 범위 태그입니다. 
+- **사용 권한**: 역할이 갖는 권한을 정의하는 긴 토글 세트를 나열합니다.
+- **할당**: 어떤 사용자가 어떤 사용자/디바이스에 액세스할 수 있는지 정의하는 [역할 할당]( assign-role.md) 목록입니다. 한 역할에 여러 권한을 할당할 수 있으며, 한 사용자를 여러 할당에 포함할 수 있습니다.
 
 ### <a name="built-in-roles"></a>기본 제공 역할
 추가 구성 없이 그룹에 기본 제공 역할을 할당할 수 있습니다. 기본 제공 역할의 이름, 설명, 형식 또는 권한을 삭제하거나 편집할 수 없습니다. 각 기본 제공 역할에 대한 사용 권한의 전체 목록은 [Intune RBAC 테이블](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)을 참조하세요.
@@ -84,10 +84,10 @@ Intune RBAC에 대한 조언과 제안 사항의 경우 예제 및 연습을 보
 사용자에게 사용자 지정 역할과 기본 제공 역할을 모두 할당할 수 있습니다. Intune 역할을 할당받으려면 사용자에게 Intune 라이선스가 있어야 합니다.
 역할을 보려면 **Intune** > **역할** > **모든 역할**을 선택한 다음, 역할을 선택하고 할당을 선택합니다. 다음과 같은 페이지가 표시됩니다.
 
--   **속성**: 할당의 이름, 설명, 역할, 멤버, 범위 및 태그입니다.
--   **멤버**: 나열된 그룹의 모든 사용자는 범위(그룹)에 나와 있는 사용자/디바이스를 관리할 수 있는 권한이 있습니다.
--   **범위(그룹)** : 이 그룹에 속한 모든 사용자/디바이스는 멤버의 사용자가 관리할 수 있습니다.
--   **[범위(태그)](scope-tags.md)** : 멤버의 사용자는 범위 태그가 동일한 리소스를 볼 수 있습니다.
+- **속성**: 할당의 이름, 설명, 역할, 멤버, 범위 및 태그입니다.
+- **멤버**: 나열된 그룹의 모든 사용자는 범위(그룹)에 나와 있는 사용자/디바이스를 관리할 수 있는 권한이 있습니다.
+- **범위(그룹)** : 이 그룹에 속한 모든 사용자/디바이스는 멤버의 사용자가 관리할 수 있습니다.
+- **[범위(태그)](scope-tags.md)** : 멤버의 사용자는 범위 태그가 동일한 리소스를 볼 수 있습니다.
 
 ### <a name="multiple-role-assignments"></a>여러 역할 할당
 사용자에게 여러 역할을 할당하면 다음과 같이 해당 역할 할당의 권한이 다른 개체로 확장됩니다.

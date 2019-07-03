@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373464"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298415"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 PowerShell 스크립트 사용
 
@@ -45,7 +45,7 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
 
 - Windows 10 버전 1607 이상을 실행하는 디바이스. 디바이스가 [대량 자동 등록](windows-bulk-enroll.md)을 통해 등록된 경우 디바이스는 Windows 10 버전 1703 이상을 실행해야 합니다. Intune 관리 확장은 S 모드의 Windows 10에서 지원되지 않습니다. S 모드는 스토어 이외의 앱 실행을 허용하지 않기 때문입니다. 
   
-- Azure AD(Active Directory)에 조인한 디바이스는 다음을 포함합니다.
+- Azure AD(Active Directory)에 조인한 디바이스는 다음을 포함합니다.  
   
   - 하이브리드 Azure AD 조인: 디바이스는 Azure AD(Active Directory)에 조인되어 있고 온-프레미스 AD(Active Directory)에도 조인되어 있습니다. 지침은 [하이브리드 Azure Active Directory 조인 구현 계획](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)을 참조하세요.
 
@@ -55,13 +55,20 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
   
   - Intune에 수동으로 디바이스를 등록하는 경우:
   
-    - 사용자는 로컬 사용자 계정을 사용하여 디바이스에 로그인한 다음, 디바이스를 Azure AD에 수동으로 조인합니다(Azure AD에서 Intune에 대한 자동 등록이 활성화됨).
+    - Azure AD에서 [Intune에 자동 등록](quickstart-setup-auto-enrollment.md)을 사용하도록 설정했습니다. 최종 사용자는 로컬 사용자 계정을 사용하여 디바이스에 로그인하고 디바이스를 Azure AD에 수동으로 조인한 다음 Azure AD 계정을 사용하여 디바이스에 로그인합니다.
     
-    또는
+    또는  
     
     - 사용자는 Azure AD 계정을 사용하여 디바이스에 로그인한 다음, Intune에 등록합니다.
 
-  - Configuration Manager 및 Intune을 사용하는 공동 관리 디바이스. 지침은 [공동 관리란?](https://docs.microsoft.com/sccm/comanage/overview)을 참조하세요.
+  - Configuration Manager 및 Intune을 사용하는 공동 관리 디바이스. **클라이언트 앱** 워크로드가 **파일럿 Intune** 또는 **Intune**으로 설정되어 있어야 합니다. 지침은 다음을 참조하세요. 
+  
+    - [What is co-management](https://docs.microsoft.com/sccm/comanage/overview)(공동 관리란?) 
+    - [클라이언트 앱 워크로드](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [Configuration Manager 워크로드를 Intune으로 전환](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
+> [!TIP]
+> 디바이스가 Azure AD에 [조인](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)되어 있어야 합니다. Azure AD에 [등록](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)만 되어 있는 디바이스는 스크립트를 받지 않습니다.
 
 ## <a name="create-a-script-policy"></a>스크립트 정책 만들기 
 
@@ -87,7 +94,7 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
 5. **확인** > **만들기**를 선택하여 스크립트를 저장합니다.
 
 > [!NOTE]
-> 스크립트가 사용자 컨텍스트로 설정되고 디바이스의 최종 사용자에게 관리자 권한이 있는 경우 기본적으로 PowerShell 스크립트는 관리자 권한으로 실행됩니다.
+> 스크립트가 사용자 컨텍스트로 설정되어 있고 최종 사용자에게 관리자 권한이 있으면 기본적으로 PowerShell 스크립트가 관리자 권한으로 실행됩니다.
 
 ## <a name="assign-the-policy"></a>정책 할당
 
@@ -156,6 +163,7 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
     > [!TIP]
     > **Microsoft Intune 관리 확장**은 서비스 앱(services.msc)에 나열된 다른 서비스와 마찬가지로 디바이스에서 실행되는 서비스입니다. 디바이스를 다시 부팅한 후 이 서비스를 다시 시작하고 Intune 서비스를 사용하여 할당된 PowerShell 스크립트를 확인할 수도 있습니다. **Microsoft Intune 관리 확장** 서비스가 수동으로 설정된 경우 디바이스를 다시 부팅한 후 서비스가 다시 시작되지 않을 수 있습니다.
 
+- 디바이스가 [Azure AD에 조인](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)되어 있어야 합니다. 작업 공간 또는 조직에만 조인된(Azure AD에 [등록된](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)) 디바이스는 스크립트를 받지 않습니다.
 - Intune 관리 확장 클라이언트는 Intune에서 스크립트 또는 정책 변경 내용을 시간당 한 번씩 확인합니다.
 - Intune 관리 확장이 `%ProgramFiles(x86)%\Microsoft Intune Management Extension`에 다운로드되었는지 확인합니다.
 - 스크립트는 Surface Hubs 또는 S 모드의 Windows 10에서 실행되지 않습니다.

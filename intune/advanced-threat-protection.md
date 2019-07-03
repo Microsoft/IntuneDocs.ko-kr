@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 Windows Defender ATP 사용 - Azure | Microsoft Docs
-description: Intune 및 Windows Defender 보안 센터(ATP 포털)에서 ATP 켜기 등 엔드투엔드 시나리오에서 Windows Defender ATP(Advanced Threat Protection)를 사용하도록 설정하고, ATP 구성 프로필을 사용하여 디바이스를 등록하고, Intune 디바이스 준수 정책을 만들고, Azure AD 조건부 액세스 정책을 만들고, 디바이스 준수를 모니터링하는 방법을 확인합니다.
+description: Intune 및 Windows Defender 보안 센터(ATP 포털)에서 ATP 켜기 등 엔드투엔드 시나리오에서 Windows Defender Security Center (ATP portal)를 사용하도록 설정하고, ATP 구성 프로필을 사용하여 디바이스를 등록하고, Intune 디바이스 준수 정책을 만들고, Azure AD 조건부 액세스 정책을 만들고, 디바이스 준수를 모니터링하는 방법을 확인합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 186ba1a8813e84b89a23c8aabb3a4ef0bd392da4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819878"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045913"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Windows Defender ATP에 대한 규정 준수 적용
 
@@ -126,7 +126,7 @@ Windows Defender에는 [Windows Defender ATP 서비스](https://docs.microsoft.c
 5. 그룹에 정책을 배포하려면 **저장**을 선택합니다. 정책의 대상이 되는 사용자 디바이스의 준수 여부가 평가됩니다.
 
 ## <a name="create-a-conditional-access-policy"></a>조건부 액세스 정책 만들기
-비규격 디바이스인 *경우* 조건부 액세스 정책에 따라 리소스 액세스가 차단됩니다. 따라서 디바이스가 위협 수준을 초과하는 경우 SharePoint 또는 Exchange Online과 같은 회사 리소스에 대한 액세스를 차단할 수 있습니다.  
+비규격 디바이스인 ‘경우’ 조건부 액세스 정책에 따라 리소스 액세스가 차단됩니다.  따라서 디바이스가 위협 수준을 초과하는 경우 SharePoint 또는 Exchange Online과 같은 회사 리소스에 대한 액세스를 차단할 수 있습니다.  
 
 > [!TIP]  
 > 조건부 액세스는 Azure AD(Azure Active Directory) 기술입니다. *Intune*에서 액세스되는 조건부 액세스 노드는 *Azure AD*에서 액세스한 것과 동일한 노드입니다.  

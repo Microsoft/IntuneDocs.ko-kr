@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808b594e4ac47845272be2978da2463727f9807c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040765"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044079"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 커넥터
 
-Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 SEP Mobile(Symantec Endpoint Protection Mobile)에서 수행한 위험 평가에 따라 조건부 액세스를 사용하여 회사 리소스에 대한 모바일 디바이스 액세스를 제어할 수 있습니다. 위험은 다음을 비롯하여 SEP Mobile을 실행하는 디바이스에서 수집된 원격 분석에 따라 평가됩니다.
+Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 SEP Mobile(Symantec Endpoint Protection Mobile)에서 수행한 위험 평가에 따라 조건부 액세스를 사용하여 회사 리소스에의 모바일 디바이스 액세스를 제어할 수 있습니다. 위험은 다음을 비롯하여 SEP Mobile을 실행하는 디바이스에서 수집된 원격 분석에 따라 평가됩니다.
 
 -   물리적 방어
 
@@ -36,7 +36,7 @@ Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 SEP Mobile(Syma
 
 -   취약성 방어
 
-Intune 디바이스 준수 정책을 통해 SEP Mobile을 사용하도록 설정한 다음, 조건부 액세스 정책을 사용하여 회사 리소스에 액세스하는 비규격 디바이스를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
+Intune 디바이스 준수 정책을 통해 SEP Mobile 위협 평가를 사용하도록 설정한 다음, 조건부 액세스 정책을 사용하여 회사 리소스에 액세스하는 비규격 디바이스를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune과 SEP Mobile이 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 

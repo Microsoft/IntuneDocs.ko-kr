@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: d207d1ac51da5b34f48aeffd83791bdbb40bf971
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804663"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494568"
 ---
 # <a name="plan-communications"></a>통신 계획 
 통신 계획은 Intune 마이그레이션의 핵심 요소입니다. 최종 사용자를 교육하는 데 도움이 되는 다음 도구와 템플릿이 제공됩니다. Intune Adoption Kit에는 이메일 템플릿, Intune 등록 가이드 및 최종 사용자 등록을 위한 교육용 비디오 링크가 포함되어 있습니다.  
 
-다운로드:  [Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit)
+다운로드:  [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit)
 
 ## <a name="email-templates"></a>메일 템플릿 
 다음 메일 통신 계획을 사용하는 것이 좋습니다. 사용자의 통신 계획에 맞게 조정할 수 있는 템플릿을 제공해 드립니다.

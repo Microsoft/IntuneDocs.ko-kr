@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047707"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045688"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune에서 Intune 온-프레미스 Exchange Connector 설정
 이 문서의 정보는 Intune용 Exchange Active Sync 온-프레미스 커넥터를 설치하고 모니터링하는 데 도움이 됩니다.  Intune 온-프레미스 Exchange Connector를 [조건부 액세스 정책과 함께 사용하여 Exchange 온-프레미스 사서함에 대한 액세스를 허용 또는 차단](conditional-access-exchange-create.md)할 수 있습니다. 
@@ -186,7 +186,7 @@ Intune 1710 릴리스부터 [Exchange 커넥터 및 Intune용 Operations Manager
 
    - **빠른 동기화**는 하루에 여러 번 정기적으로 수행됩니다. 빠른 동기화는 마지막 동기화 이후 변경된 Intune 사용 허가 및 온-프레미스 Exchange 조건부 액세스 대상 사용자에 대한 디바이스 정보를 검색합니다.
 
-   - **전체 동기화**는 기본적으로 하루에 한 번만 수행됩니다. 전체 동기화는 모든 Intune 사용 허가 및 온 프레미스 Exchange 조건부 액세스 대상 사용자에 대한 디바이스 정보를 검색합니다. 또한 전체 동기화는 Exchange Server 정보를 검색하고, Azure Portal의 Intune에서 지정한 구성이 Exchange Server에서 업데이트되도록 합니다. 
+   - **전체 동기화**는 기본적으로 하루에 한 번만 수행됩니다. 전체 동기화는 모든 Intune 사용 허가 및 온-프레미스 Exchange 조건부 액세스 대상 사용자에 대한 디바이스 정보를 검색합니다. 또한 전체 동기화는 Exchange Server 정보를 검색하고, Azure Portal의 Intune에서 지정한 구성이 Exchange Server에서 업데이트되도록 합니다. 
 
 
 Intune 대시보드에서 다음 단계를 통해 **빠른 동기화** 또는 **전체 동기화** 옵션을 사용하여 커넥터에서 동기화를 실행하도록 할 수 있습니다.

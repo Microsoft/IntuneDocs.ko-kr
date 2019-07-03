@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ddc58aed6e7a1efaecd8b7e7cf51a39e43d14e58
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044336"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043885"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune에서 위치(네트워크 펜스) 사용
 
 디바이스가 위치를 벗어나면 회사 네트워크에 대한 액세스를 차단할 수 있습니다. Intune의 **위치** 기능에서 이 기능을 제공합니다. 
 
-네트워크 펜싱이라고도 하는 네트워크 위치 기반 준수 정책을 만들 수 있습니다. 정책을 준수하려면 디바이스가 회사 네트워크에 연결되어 있어야 합니다. 이 정책은 조건부 액세스 정책과 함께 사용할 수 있으므로 디바이스가 회사 네트워크에 연결되어 있는 *경우에만* 회사 리소스에 액세스할 수 있습니다. 디바이스가 회사 네트워크에 연결되어 있지 않으면 디바이스가 준수되지 않으며 회사 리소스에 대한 액세스가 손실됩니다.
+네트워크 펜싱이라고도 하는 네트워크 위치 기반 준수 정책을 만들 수 있습니다. 정책을 준수하려면 디바이스가 회사 네트워크에 연결되어 있어야 합니다. 이 정책은 조건부 액세스 정책과 함께 사용할 수 있으므로 디바이스가 회사 네트워크에 연결되어 있는 ‘경우에만’ 회사 리소스에 액세스할 수 있습니다.  디바이스가 회사 네트워크에 연결되어 있지 않으면 디바이스가 준수되지 않으며 회사 리소스에 대한 액세스가 손실됩니다.
 
 다음과 같은 경우를 고려할 수 있습니다.
 

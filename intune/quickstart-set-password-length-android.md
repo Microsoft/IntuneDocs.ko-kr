@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dec78e0b1e323e99b6e70f71db982256aa98d18
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cdedbfc611d44b4d6acb01e5e05bf3e73ed7fbda
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041235"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044202"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>빠른 시작: Android 디바이스에 대한 암호 규정 준수 정책 만들기
 
@@ -46,7 +46,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 1. Intune에서 **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
 2. **Android 준수**를 **이름**으로 추가합니다. 또한 **설명**을 추가합니다.
 3. **플랫폼**에서 **Android**를 선택합니다. 
-4. **설정** > **시스템 보안**을 선택하여 Android **시스템 보안 ** 블레이드를 표시합니다.
+4. **설정** > **시스템 보안**을 선택하여 Android **시스템 보안**  블레이드를 표시합니다.
 5. **모바일 디바이스의 잠금을 해제하는 데 암호 요구** 옆에 있는 **필요**를 클릭합니다.
 6. **필수 암호 유형** 옆의 **최소 숫자**를 선택합니다.
 7. **최소 암호 길이** 옆에 있는 **6**을 입력합니다. 

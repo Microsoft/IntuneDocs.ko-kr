@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040592"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528754"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -34,10 +34,10 @@ ms.locfileid: "66040592"
 
 문제 해결을 시작하기 전에 등록이 설정되도록 Intune을 올바르게 구성했는지 확인하세요. 다음에서 이러한 구성 요구 사항에 대해 자세히 읽어볼 수 있습니다.
 
--   [Microsoft Intune에 디바이스를 등록하도록 준비](setup-steps.md)
--   [iOS 및 Mac 디바이스 관리 설정](ios-enroll.md)
--   [Windows 디바이스 관리 설정](windows-enroll.md)
--   [Android 디바이스 관리 설정](android-enroll.md) - 추가 단계 불필요
+- [Microsoft Intune에 디바이스를 등록하도록 준비](setup-steps.md)
+- [iOS 및 Mac 디바이스 관리 설정](ios-enroll.md)
+- [Windows 디바이스 관리 설정](windows-enroll.md)
+- [Android 디바이스 관리 설정](android-enroll.md) - 추가 단계 불필요
 
 사용자 디바이스의 시간과 날짜가 올바르게 설정되었는지 확인할 수도 있습니다.
 
@@ -143,7 +143,7 @@ ms.locfileid: "66040592"
 - 조직 내 사용자의 UPN 접미사에 대해 여러 최상위 도메인 보유(예: @contoso.com 또는 @fabrikam.com)
 
 
-[AD FS 2.0 롤업](http://support.microsoft.com/kb/2607496)은 <strong>SupportMultipleDomain</strong> 스위치와 함께 작동하여 AD FS 서버가 추가적인 AD FS 2.0 서버를 필요로 하지 않고 이 시나리오를 지원할 수 있도록 합니다. 자세한 내용은 [이 블로그](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)를 참조하세요.
+[AD FS 2.0 롤업](http://support.microsoft.com/kb/2607496)은 <strong>SupportMultipleDomain</strong> 스위치와 함께 작동하여 AD FS 서버가 추가적인 AD FS 2.0 서버를 필요로 하지 않고 이 시나리오를 지원할 수 있도록 합니다. 자세한 내용은 [이 블로그](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)를 참조하세요.
 
 
 ## <a name="android-issues"></a>Android 문제
@@ -236,15 +236,15 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 
 이 문제를 해결하려면 다음과 같이 인증서를 AD FS 서버 또는 프록시의 컴퓨터 개인 인증서로 가져옵니다.
 
-1.  ADFS 및 프록시 서버에서 **시작** > **실행** > **certlm.msc**를 마우스 오른쪽 단추로 클릭하여 로컬 머신 인증서 관리 콘솔을 시작합니다.
-2.  **개인**을 확장하고 **인증서**를 선택합니다.
-3.  AD FS 서비스 통신용 인증서(공개 서명된 인증서)를 찾은 다음 두 번 클릭하여 해당 속성을 확인합니다.
-4.  **인증 경로** 탭을 선택하여 해당 인증서의 상위 인증서를 확인합니다.
-5.  각 상위 인증서에서 **인증서 보기**를 선택합니다.
-6.  **세부 정보** > **파일에 복사... **를 선택합니다.
-7.  마법사의 프롬프트에 따라 부모 인증서의 공개 키를 선택한 파일 위치에 내보내거나 저장합니다.
-8.  **인증서** > **모든 작업** > **가져오기**를 마우스 오른쪽 단추로 클릭합니다.
-9.  마법사의 메시지에 따라 상위 인증서를 **LocalComputer\Personal\Certificates**로 가져옵니다.
+1. ADFS 및 프록시 서버에서 **시작** > **실행** > **certlm.msc**를 마우스 오른쪽 단추로 클릭하여 로컬 머신 인증서 관리 콘솔을 시작합니다.
+2. **개인**을 확장하고 **인증서**를 선택합니다.
+3. AD FS 서비스 통신용 인증서(공개 서명된 인증서)를 찾은 다음 두 번 클릭하여 해당 속성을 확인합니다.
+4. **인증 경로** 탭을 선택하여 해당 인증서의 상위 인증서를 확인합니다.
+5. 각 상위 인증서에서 **인증서 보기**를 선택합니다.
+6. **세부 정보** > **파일에 복사...** 를 선택합니다.
+7. 마법사의 프롬프트에 따라 부모 인증서의 공개 키를 선택한 파일 위치에 내보내거나 저장합니다.
+8. **인증서** > **모든 작업** > **가져오기**를 마우스 오른쪽 단추로 클릭합니다.
+9. 마법사의 메시지에 따라 상위 인증서를 **LocalComputer\Personal\Certificates**로 가져옵니다.
 10. AD FS 서버를 다시 시작합니다.
 11. 모든 AD FS 및 프록시 서버에서 위의 단계를 반복합니다.
 

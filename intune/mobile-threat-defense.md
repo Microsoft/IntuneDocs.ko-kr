@@ -17,15 +17,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5329e23ee6307f86c7b1fcaead0cb24b8271443c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 74050f51347f234029a83ce0e3463fe6b11aee1b
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041612"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044571"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune과 Mobile Threat Defense의 통합이란?
-Intune은 규정 준수 정책 및 조건부 액세스 규칙에 대한 정보 소스인 Mobile Threat Defense 공급업체의 데이터를 통합할 수 있습니다. 이 정보를 사용하여 손상된 모바일 디바이스의 액세스를 차단함으로써 Exchange 및 SharePoint 같은 회사 리소스를 보호할 수 있습니다.  
+Intune은 규정 준수 정책 및 조건부 액세스 규칙의 정보 소스인 Mobile Threat Defense 공급업체의 데이터를 통합할 수 있습니다. 이 정보를 사용하여 손상된 모바일 디바이스의 액세스를 차단함으로써 Exchange 및 SharePoint 같은 회사 리소스를 보호할 수 있습니다.  
 
 ## <a name="what-problem-does-this-solve"></a>이 기능을 통해 어떤 문제가 해결되나요?
 Mobile Threat Defense 공급업체의 정보를 통합하면 모바일 플랫폼에 영향을 주는 위협으로부터 회사 리소스를 보호할 수 있습니다.  

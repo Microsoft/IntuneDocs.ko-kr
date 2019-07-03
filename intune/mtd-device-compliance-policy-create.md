@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d200c8d56dbbe60dd331081537154951f5e5591d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b58ee82e44e8aa8d68c0fb00c4497cc0455ed21d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041547"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528631"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune을 사용하여 MTD(Mobile Threat Defense) 디바이스 준수 정책 만들기
 
 > [!NOTE] 
 > 이 정보는 모든 Mobile Threat Defense 파트너에게 적용됩니다.
 
-Intune 및 MTD를 사용하면 위협을 검색하고 모바일 디바이스의 위험을 평가할 수 있습니다. 위험을 평가하는 Intune 디바이스 준수 정책 규칙을 만들어 디바이스가 정책을 준수하는지 여부를 확인할 수 있습니다. 그런 다음, [조건부 액세스 정책](create-conditional-access-intune.md)을 사용하여 디바이스 규정 준수 여부에 따라 액세스를 차단할 수 있습니다.
+Intune 및 MTD를 사용하면 위협을 검색하고 모바일 디바이스의 위험을 평가할 수 있습니다. 위험을 평가하는 Intune 디바이스 준수 정책 규칙을 만들어 디바이스가 정책을 준수하는지 여부를 확인할 수 있습니다. 그런 다음 [조건부 액세스 정책](create-conditional-access-intune.md)을 사용하여 디바이스 준수 여부에 따라 서비스 액세스를 차단할 수 있습니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 

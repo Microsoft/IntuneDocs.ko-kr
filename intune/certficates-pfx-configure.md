@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 06/19/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 985ca70dba2a5a486947bd2de08e7f8934e90d75
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749805"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263712"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -278,8 +278,6 @@ Intune으로 인증서를 가져온 후 **PKCS가 가져온 인증서** 프로�
 
 프로필이 만들어지지만 아직 아무것도 하지 않습니다. 다음으로, [프로필을 할당](device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
-[SCEP 인증서를 사용](certificates-scep-configure.md)하거나 [Symantec PKI 관리자 웹 서비스에서 PKCS 인증서를 발급](certificates-symantec-configure.md)합니다.
+[SCEP 인증서를 사용](certificates-scep-configure.md)하거나 [Digicert PKI 관리자 웹 서비스에서 PKCS 인증서를 발급](certificates-digicert-configure.md)합니다.
 
-[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Azure Portal에서 Intune으로 이동하여 신뢰할 수 있는 인증서에 대한 새 프로필을 만듭니다."
-[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "프로필을 만들고 신뢰할 수 있는 인증서를 업로드합니다."
-[ConnectorDownload]: ./media/certificates-download-connector.png "Azure Portal에서 인증서 커넥터 다운로드"  
+

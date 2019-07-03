@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/31/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 756fafc02a6d64b1495a838ab8eee4130ee77361
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749949"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389348"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-매주 Microsoft Intune에 추가되는 새로운 기능에 대해 알아봅니다. [예정된 변경](in-development.md), [중요 공지](#notices) 및 [이전 릴리스](whats-new-archive.md)에 대한 정보도 확인할 수 있습니다. 
+매주 Microsoft Intune에 추가되는 새로운 기능에 대해 알아봅니다. 또한 [중요한 공지](#notices), [과거 릴리스](whats-new-archive.md) 및 [Intune 서비스 업데이트가 릴리스되는 방법](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)에 관한 정보도 찾을 수 있습니다. 
 
 > [!Note]
+> 각 [월별 업데이트](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)는 출시에 최대 3일이 걸릴 수 있고 다음 순서로 출시됩니다.
+> - 1일: 아시아 태평양(APAC)
+> - 2일: 유럽, 중동, 아프리카(EMEA)
+> - 3일: 북아메리카
+> 
 > 일부 기능은 몇 주에 걸쳐 출시될 수 있고 첫 번째 주에는 모든 고객에게 제공되지 않습니다.
+>
+> [개발 페이지](in-development.md)에서 릴리스의 예정 기능 목록을 확인하세요.
 
 **RSS 피드**: 다음 URL을 복사하여 피드 판독기에 붙여넣으면 이 페이지가 업데이트될 때 알림을 받을 수 있습니다. `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
@@ -45,6 +52,29 @@ ms.locfileid: "66749949"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-june-17-2019"></a>2019년 6월 17일 주   
+
+### <a name="app-management"></a>앱 관리
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune 앱의 새로운 기능
+Android용 Microsoft Intune 앱(미리 보기)에 새로운 기능이 추가되었습니다. 이제 완전 관리형 Android 디바이스의 사용자는 다음을 수행할 수 있습니다.  
+
+* Intune 회사 포털 또는 Microsoft Intune 앱을 통해 등록한 디바이스를 보고 관리합니다.    
+* 조직에 지원을 문의합니다.    
+* Microsoft에 피드백을 보냅니다.    
+* 조직에서 설정한 사용 약관을 봅니다.  
+
+## <a name="week-of-june-10-2019"></a>2019년 6월 10일 주 
+
+### <a name="app-management"></a>앱 관리  
+
+#### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>GitHub에서 사용할 수 있는 Intune SDK 통합을 표시하는 새로운 샘플 앱 <!-- 2653471 -->
+msintuneappsdk GitHub 계정에서 iOS(Swift), Android, Xamarin.iOS, Xamarin Forms 및 Xamarin.Android용 새 샘플 애플리케이션을 추가했습니다. 이러한 앱은 기존 설명서를 보완하고 Intune 앱 SDK를 사용자 모바일 앱에 통합하는 방법을 보여 주기 위한 것입니다. Intune SDK에 대한 추가 지침이 필요한 앱 개발자는 다음의 연결된 샘플을 참조하세요.
+- [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App) - 조정된 인증에 ADAL(Azure Active Directory 인증 라이브러리)을 사용하는 네이티브 iOS(Swift) 인스턴트 메시징 앱입니다.
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App) - 조정된 인증에 ADAL을 사용하는 네이티브 Android 할일 목록 앱입니다.
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) - 조정된 인증에 ADAL을 사용하는 Xamarin.Android 할일 목록 앱입니다. 이 리포지토리에는 Xamarin.Forms 앱도 있습니다.
+- [Xamarin.iOS 샘플 앱](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) - 기본 Xamarin.iOS 샘플 앱입니다.
 
 ## <a name="week-of-may-27-2019"></a>2019년 5월 27일 주 
 
@@ -192,7 +222,7 @@ Windows 10 버전 1903 이상을 실행하는 디바이스에만 해당됩니다
 F5는 Intune의 iOS에서 F5 Access를 위한 NAC 기능을 허용하는 BIG-IP 13 업데이트를 릴리스했습니다. 이 기능을 사용하려면
 
 - BIG-IP를 13.1.1.5 새로 고침으로 업데이트합니다. BIG-IP 14는 지원되지 않습니다.
-- BIG-IP와 NAC용 Intune을 통합하세요. [개요: 개요: 엔드포인트 관리 시스템을 사용하여 디바이스 상태 검사를 위한 APM 구성](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89)의 단계.
+- BIG-IP와 NAC용 Intune을 통합하세요. [개요: 개요: 엔드포인트 관리 시스템을 사용하여 디바이스 상태 검사를 위한 APM 구성](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html)의 단계.
 - Intune의 VPN 프로필에서 **NAC(네트워크 액세스 제어) 사용** 설정을 확인합니다.
 
 사용 가능한 설정을 보려면 [iOS 디바이스에서 VPN 설정 구성](vpn-settings-ios.md)으로 이동합니다.
@@ -562,7 +592,7 @@ macOS
 
 #### <a name="intune-conditional-access-ui-update------2432313-----"></a>Intune 조건부 액세스 UI 업데이트   <!-- 2432313   -->
 Intune 콘솔에서 조건부 액세스 UI가 향상되었습니다. 확인할 수 있습니다.
--  Intune *조건부 액세스* 블레이드가 Azure Active Directory의 블레이드로 대체되었습니다. 이렇게 하면 Intune 콘솔 내에서 Azure AD 기술로 유지되는 [조건부 액세스](conditional-access.md)에 대한 전체 설정 및 구성에 액세스할 수 있습니다. 
+-  Intune ‘조건부 액세스 블레이드가 Azure Active Directory의 블레이드로 대체되었습니다.  이렇게 하면 Intune 콘솔 내에서 Azure AD 기술로 유지되는 [조건부 액세스](conditional-access.md)에 대한 전체 설정 및 구성에 액세스할 수 있습니다. 
 - *온-프레미스 액세스* 블레이드의 이름이 *Exchange 액세스*로 변경되고, 이름이 변경된 이 블레이드에 *Exchange 서비스 커넥터* 설정이 재배치되었습니다.  이 변경은 [Exchange 온라인 및 온-프레미스와 관련된 세부 정보를 구성하고 모니터링](exchange-connector-install.md)하는 위치에서 통합됩니다.  
 
 #### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode----2935135-----"></a>키오스크 브라우저 및 Microsoft Edge 브라우저 앱은 Windows 10 디바이스에서 키오스크 모드로 실행될 수 있음 <!-- 2935135   -->
@@ -1109,7 +1139,7 @@ Samsung Knox 모바일 등록의 경우 이제 Intune에서 디바이스를 Andr
 - 이제 BYOD 시나리오를 지원하는 작업 시간 외에 발생하는 다시 시작에 대한 다시 시작 경고 프롬프트를 구성할 수 있습니다.
 
 #### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>관련자 ID 기준으로 Windows Autopilot에 등록된 디바이스 그룹화 <!-- 2075110 -->
-Configuration Manager를 통해 [기존 디바이스에 대해 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)을 사용하여 등록할 때 이제 Intune에서 관련자 ID 기준으로 Windows 디바이스를 그룹화할 수 있도록 지원합니다. 관련자 ID는 Autopilot 구성 파일의 매개 변수입니다. Intune에서 자동으로 Azure AD 디바이스 특성인 [enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects)을 "OfflineAutopilotprofile-<correlator ID>"와 동일하게 설정합니다. 이것으로 오프라인 Autopilot 등록을 위한 enrollmentprofileName 특성을 통해 관련자 ID를 기반으로 임의의 Azure AD 동적 그룹을 만들 수 있습니다. 자세한 내용은 [기존 디바이스에 대한 Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)을 참조하세요.
+Configuration Manager를 통해 [기존 디바이스에 대해 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)을 사용하여 등록할 때 이제 Intune에서 관련자 ID 기준으로 Windows 디바이스를 그룹화할 수 있도록 지원합니다. 관련자 ID는 Autopilot 구성 파일의 매개 변수입니다. Intune에서 자동으로 Azure AD 디바이스 특성인 [enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)을 "OfflineAutopilotprofile-<correlator ID>"와 동일하게 설정합니다. 이것으로 오프라인 Autopilot 등록을 위한 enrollmentprofileName 특성을 통해 관련자 ID를 기반으로 임의의 Azure AD 동적 그룹을 만들 수 있습니다. 자세한 내용은 [기존 디바이스에 대한 Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)을 참조하세요.
 
 #### <a name="intune-app-protection-policies----2984657---"></a>Intune 앱 보호 정책 <!-- 2984657 -->
 Intune 앱 보호 정책을 사용하면 Microsoft Outlook 및 Microsoft Word와 같이 Intune으로 보호되는 앱에 대한 다양한 데이터 보호 설정을 구성할 수 있습니다. 개별 설정을 더 쉽게 찾을 수 있도록 [iOS](app-protection-policy-settings-ios.md) 및 [Android](app-protection-policy-settings-android.md) 모두에 대해 이러한 설정의 모양과 느낌을 변경했습니다. 정책 설정에는 다음 세 가지 범주가 있습니다.

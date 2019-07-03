@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 298f8bc4fb9932eea228414745111fe569888849
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b29e59924ec4bf08336cbd1ea9aa588fd8612233
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041487"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044424"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>배포 목적, 목표 및 과제 확인
 

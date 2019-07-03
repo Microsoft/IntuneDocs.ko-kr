@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbf04d771a9c1fd43cfe695dd2d27b9cfe1a0528
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bbd8d81dfab46a1e752084aab75fbcf0d8104187
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050297"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044285"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>빠른 시작: iOS용 이메일 디바이스 프로필 만들기
 
-이 빠른 시작에서는 iOS 디바이스에 대한 이메일 디바이스 프로필을 만드는 방법을 알아봅니다. 이 프로필은 회사 이메일에 연결하기 위해 iOS 디바이스의 기본 제공 이메일 앱에 필요한 설정을 지정합니다. 이메일 디바이스 프로필을 사용하면 디바이스 설정을 표준화할 수 있으며, 최종 사용자가 설정 작업을 수행할 필요 없이 자신의 개인용 디바이스에서 회사 이메일에 액세스할 수 있습니다. 이메일을 더욱 안전하게 보호하려면 이메일 프로필을 사용하여 디바이스가 규정을 준수하는지 확인한 다음, 규정을 준수하는 디바이스만 이메일에 액세스할 수 있도록 조건부 액세스를 설정하면 됩니다. 이메일 프로필에 대한 자세한 내용은 [Microsoft Intune에서 이메일 설정을 구성하는 방법](email-settings-configure.md)을 참조하세요.
+이 빠른 시작에서는 iOS 디바이스에 대한 이메일 디바이스 프로필을 만드는 방법을 알아봅니다. 이 프로필은 회사 이메일에 연결하기 위해 iOS 디바이스의 기본 제공 이메일 앱에 필요한 설정을 지정합니다. 이메일 디바이스 프로필을 사용하면 디바이스 설정을 표준화할 수 있으며, 최종 사용자가 설정 작업을 수행할 필요 없이 자신의 개인용 디바이스에서 회사 이메일에 액세스할 수 있습니다. 메일을 더욱 안전하게 보호하려면 메일 프로필을 사용하여 디바이스가 규정을 준수하는지 확인한 다음, 규정을 준수하는 디바이스만 메일에 액세스할 수 있도록 조건부 액세스를 설정하면 됩니다. 이메일 프로필에 대한 자세한 내용은 [Microsoft Intune에서 이메일 설정을 구성하는 방법](email-settings-configure.md)을 참조하세요.
 
 Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)하세요.
 
@@ -67,11 +67,11 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 여기서 만든 프로필을 다른 자습서 또는 테스트에 더 이상 사용하지 않으려는 경우 지금 삭제할 수 있습니다.
 1. Intune에서 **디바이스 구성**을 선택하고 **프로필**을 선택합니다.
 2. 여기서 만든 테스트 프로필 **iOS에서 회사 이메일 요구**를 선택합니다.
-3. 프로필 옆에서 줄임표(**...**)를 선택하고 **삭제**를 선택합니다.
+3. 프로필 옆에서 줄임표( **...** )를 선택하고 **삭제**를 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-이 빠른 시작에서는 iOS 디바이스에 대한 이메일 프로필을 만들었습니다. 이제 이 프로필을 사용하여 프로필과 일치하지 않는 iOS 디바이스를 비준수로 표시하는 준수 정책을 만들어서 iOS 디바이스의 규정 준수 여부를 확인할 수 있습니다. 보다 강력한 보호를 원하는 경우 비준수 iOS 디바이스의 이메일 액세스를 차단하는 조건부 액세스 정책을 만들면 됩니다. 디바이스 준수 정책에 대한 자세한 내용은 [Intune에서 디바이스 준수 정책 시작](device-compliance-get-started.md)을 참조하세요.
+이 빠른 시작에서는 iOS 디바이스에 대한 이메일 프로필을 만들었습니다. 이제 이 프로필을 사용하여 프로필과 일치하지 않는 iOS 디바이스를 비준수로 표시하는 준수 정책을 만들어서 iOS 디바이스의 규정 준수 여부를 확인할 수 있습니다. 보다 강력한 보호를 원하는 경우 비준수 iOS 디바이스의 메일 액세스를 차단하는 조건부 액세스 정책을 만들면 됩니다. 디바이스 준수 정책에 대한 자세한 내용은 [Intune에서 디바이스 준수 정책 시작](device-compliance-get-started.md)을 참조하세요.
 
 > [!div class="nextstepaction"]
 > [자습서: 관리 디바이스에서 Exchange Online 이메일 보호](tutorial-protect-email-on-enrolled-devices.md)

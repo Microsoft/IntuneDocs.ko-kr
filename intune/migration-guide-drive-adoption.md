@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a37d6dac24049a10b5abaed41a44c0c391b095e6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050469"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044596"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Microsoft Intune에서 조건부 액세스로 최종 사용자 도입 촉진
 
@@ -47,7 +47,7 @@ ms.locfileid: "66050469"
 
 ### <a name="disadvantages"></a>단점
 
--   이전 솔루션의 사용자가 조건부 액세스를 사용할 수 있게 될 때까지 해당 사용자는 관리되지 않는 디바이스를 사용하여 리소스에 액세스할 수 있습니다.
+-   이전 솔루션의 사용자가 조건부 액세스를 사용할 수 있게 될 때까지 해당 사용자는 비관리형 디바이스를 사용하여 리소스에 액세스할 수 있습니다.
 
 
 이는 여러 방법 중 하나입니다. 모든 단계에서 등록 지시를 받은 이후까지 모든 조건부 액세스를 지연하는 간단한 프로세스를 선택하거나 처음부터 조건부 액세스를 적용하고 모든 액세스에 대한 완전한 준수를 요구하는 엄격한 프로세스를 선택할 수 있습니다.
@@ -58,7 +58,7 @@ ms.locfileid: "66050469"
 
 ### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>태스크 1: 조건부 액세스를 구현할 방법 결정
 
-[조건부 액세스를 사용하는 일반적인 방법](conditional-access-intune-common-ways-use.md).
+[조건부 액세스를 사용하는 일반적인 방법](conditional-access-intune-common-ways-use.md)
 
 ### <a name="task-2-set-up-intune-conditional-access"></a>태스크 2: Intune 조건부 액세스 설정
 

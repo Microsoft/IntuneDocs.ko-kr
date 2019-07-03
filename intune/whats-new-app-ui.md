@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046435"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045629"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적으로 Intune 회사 포털 앱이 추가되고 웹 사이트가 개선됩니다. 이 문서에서는 Intune 관리자 또는 지원 담당자가 다음 작업을 수행하는 데 필요한 정보를 제공합니다.
@@ -257,7 +257,7 @@ Android 회사 프로필 디바이스에서 추가 단계가 개선되었습니�
 |![08](./media/android_work_cp_enroll_05_before_1710.png)| *이전 단계와 결합* |
 
 
-조건부 액세스 전자 메일 활성화 화면도 업데이트했습니다.
+조건부 액세스 메일 활성화 화면도 업데이트했습니다.
 
 |이전|이러한|
 |---|---|

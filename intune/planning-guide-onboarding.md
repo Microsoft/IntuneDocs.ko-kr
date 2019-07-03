@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e21eb6169acf8ae69ace94fd54007eaa4f7f90f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046746"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044344"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune 계획 구현
 
@@ -42,7 +42,7 @@ ms.locfileid: "66046746"
 
 -   Azure AD Connect(디렉터리 동기화용)
 
--   Intune 온-프레미스 Exchange Connector(필요한 경우 Exchange 온-프레미스에 대한 조건부 액세스에 사용하기 위해)
+-   Exchange용 Intune 온-프레미스 Connector(필요한 경우 Exchange 온-프레미스에 대한 조건부 액세스에 사용하기 위해)
 
 -   Intune Certificate Connector(필요한 경우 SCEP 인증서 배포용)
 

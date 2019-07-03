@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050348"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494543"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포
 Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Active Directory) 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 이 문서의 단계를 수행합니다.
@@ -32,7 +32,7 @@ Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Acti
 [하이브리드 Azure AD 조인 디바이스](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)를 성공적으로 구성합니다. Get-MsolDevice cmdlet을 사용하여 [등록을 확인]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)해야 합니다.
 
 등록할 디바이스도 다음과 같아야 합니다.
-- [2018년 10월 업데이트](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)가 있는 Windows 10을 실행합니다.
+- Windows 10 v1809 이상을 실행 중입니다.
 - 인터넷에 대한 액세스 권한이 있어야 합니다.
 - Active Directory에 대한 액세스 권한이 있어야 합니다(현재 VPN 연결은 지원되지 않음).
 - OOBE(첫 실행 경험)를 거칩니다.
@@ -163,7 +163,7 @@ Active Directory용 Intune Connector는 Windows Server 2016 이상을 실행하�
 
 ### <a name="register-devices-from-an-oem"></a>OEM에서 디바이스 등록
 
-새 디바이스를 구입하는 경우 일부 OEM에서 디바이스를 등록할 수 있습니다. 자세한 내용은 [Windows Autopilot 페이지](http://aka.ms/WindowsAutopilot)를 참조하세요.
+새 디바이스를 구입하는 경우 일부 OEM에서 디바이스를 등록할 수 있습니다. 자세한 내용은 [Windows Autopilot 페이지](https://aka.ms/WindowsAutopilot)를 참조하세요.
 
 Autopilot 디바이스가 *등록되면* Intune에 등록되기 전에, 다음 세 곳에 표시됩니다(일련 번호로 이름이 설정됨).
 - Azure Portal의 Intune에 있는 **Autopilot 디바이스** 창. **디바이스 등록** > **Windows 등록** > **디바이스**를 선택합니다.

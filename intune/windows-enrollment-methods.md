@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819582"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389255"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows 디바이스의 Intune 등록 방법
 
@@ -51,6 +51,7 @@ Intune에 디바이스를 등록하는 방법은 다음과 같은 두 가지가 
 - [Configuration Manager 공동 관리](https://docs.microsoft.com/sccm/comanage/overview)를 사용하면 관리자는 기존 Configuration Manager를 통해 관리 디바이스를 Intune에 등록하여 Intune과 Configuration Manager의 이점을 모두 누릴 수 있습니다. 
 - [DEM(디바이스 등록 관리자)](device-enrollment-manager-enroll.md)은 특수 서비스 계정입니다. DEM 계정은 권한 있는 사용자가 여러 회사 소유 디바이스를 등록하고 관리할 수 있는 권한을 갖고 있습니다. 이러한 디바이스 유형은 예를 들어 POS(Point-Of-Sale) 또는 유틸리티 앱에는 유용하지만 이메일 또는 회사 리소스에 액세스해야 하는 사용자에게는 유용하지 않습니다. 이 방법은 조건부 액세스 같은 기능을 사용할 수 없습니다. 
 - [대량 등록](windows-bulk-enroll.md)을 사용하면 권한 있는 사용자는 새 회사 소유 디바이스를 Azure Active Directory 및 Intune에 대량으로 조인할 수 있습니다. WCD(Windows 구성 디자이너) 앱을 사용하여 프로비저닝 패키지를 만듭니다. 그런 다음, 초기 Windows OOBE 경험 중에 또는 기존 Windows PC에서 USB 미디어를 사용하여 자동으로 Intune에 디바이스를 등록하는 프로비저닝 패키지를 설치합니다. 이 방법은 조건부 액세스를 사용할 수 없습니다. 
+- [Windows IoT Core 디바이스 등록](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment)을 수행하려면 Windows IoT Core 대시보드를 사용하여 디바이스를 준비한 다음 Windows 구성 디자이너를 사용하여 프로비저닝 패키지를 만듭니다. 그런 다음 처음 부팅할 때 SD 카드 미디어를 사용해 프로비저닝 패키지를 설치하여 디바이스를 Intune에 자동으로 등록합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

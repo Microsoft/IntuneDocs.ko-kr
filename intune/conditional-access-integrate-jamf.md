@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 940ef3e6df95629dad03d6c1d4e60343e4273473
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048834"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251092"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>준수를 위해 Intune과 Jamf Pro 통합
 
 적용 대상: Azure Portal의 Intune
 
-조직에서 [Jamf Pro](https://www.jamf.com)를 사용하여 최종 사용자의 Mac을 관리하는 경우 Azure Active Directory 조건부 액세스 권한을 가진 Microsoft Intune 준수 정책을 사용하여 조직의 디바이스가 규정을 준수하도록 합니다.
+조직에서 [Jamf Pro](https://www.jamf.com)를 사용하여 최종 사용자의 Mac를 관리하는 경우 Azure Active Directory 조건부 액세스 권한을 가진 Microsoft Intune 준수 정책을 사용하여 조직의 디바이스가 규정을 준수하도록 합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -80,7 +80,7 @@ Intune을 Jamf Pro에 연결하려면 다음을 수행합니다.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune을 Jamf Pro와 통합할 수 있도록 설정
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=20909)에 로그인하고 **Microsoft Intune** > **디바이스 준수** > **파트너 디바이스 관리**로 이동합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **Microsoft Intune** > **디바이스 준수** > **파트너 디바이스 관리**로 이동합니다.
 
 2. 이전 절차 중 저장한 애플리케이션 ID를 **Jamf Azure Active Directory 앱 ID** 필드에 붙여넣어 Jamf용 준수 커넥터를 사용하도록 설정합니다.
 
