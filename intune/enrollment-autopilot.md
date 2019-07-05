@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389301"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512115"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -35,7 +35,7 @@ Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화�
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Intune에서 가져오기 위해 CSV를 얻는 방법
 
-사용 방법에 대한 자세한 내용은 'PowerShell cmdlet 이해'를 참조하세요.
+자세한 내용은 powershell cmdlet 이해를 참조하세요.
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
@@ -47,8 +47,9 @@ Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화�
 
     ![Windows Autopilot 디바이스 스크린샷](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. **Windows Autopilot 디바이스 추가** 에서 추가할 디바이스를 나열하는 CSV 파일로 이동합니다. CSV 파일에는 일련 번호, 선택적 Windows 제품 ID, 하드웨어 해시 및 디바이스의 선택적 그룹 태그가 나열되어야 합니다. 목록에 최대 500개의 행을 가질 수 있습니다. 아래 표시된 헤더 및 줄 형식 사용: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
-    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
+2. **Windows Autopilot 디바이스 추가** 에서 추가할 디바이스를 나열하는 CSV 파일로 이동합니다. CSV 파일에는 일련 번호, Windows 제품 ID, 하드웨어 해시 및 선택적 그룹 태그, 할당된 사용자 및 디바이스의 주문 ID가 나열되어 있어야 합니다. 목록에 최대 500개의 행을 가질 수 있습니다. 아래 표시된 헤더 및 줄 형식을 사용합니다.
+
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
 
     ![Windows AutoPilot 디바이스 추가 스크린샷](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -69,7 +70,7 @@ Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화�
     아직 등록되지 않은 AutoPilot 디바이스는 디바이스 이름이 디바이스의 일련 번호와 동일한 디바이스입니다.
 4. 위의 **멤버 자격 형식**에 대해 **동적 디바이스**를 선택했다면 **그룹** 블레이드에서 **동적 디바이스 멤버**를 선택하고 **고급 규칙** 상자에서 다음 코드를 입력합니다.
     - Autopilot 디바이스를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`를 입력합니다.
-    - Intune의 그룹 태그 필드는 Azure AD 디바이스의 OrderID 특성에 해당합니다. 특정 그룹 태그(OrderID)를 사용하여 모든 Autopilot 디바이스를 포함하는 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `를 입력해야 합니다.
+    - Intune의 그룹 태그 필드는 Azure AD 디바이스의 OrderID 특성에 해당합니다. 특정 그룹 태그(OrderID)를 사용하여 모든 Autopilot 디바이스를 포함하는 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")` 형식을 입력해야 합니다.
     - 특별 구매 주문 ID를 사용하여 Autopilot 디바이스를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`를 입력합니다.
     
     **고급 규칙** 코드를 추가한 후에 **저장**을 선택합니다.
@@ -95,7 +96,7 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
     - **EULA(최종 사용자 사용권 계약)** : 사용자에게 EULA를 표시할지 여부를 선택합니다(Windows 10 버전 1709 이상).
     - **개인 정보 설정**: 사용자에게 개인 정보 설정을 표시할지 여부를 선택합니다.
     >[!IMPORTANT]
-    >Windows 10 버전 1903 디바이스의 이상에서 Autopilot 배포의 경우 진단 데이터 기본 값이 자동으로 전체로 설정됩니다. 자세한 내용은 [Windows 진단 데이터](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data)를 참조하세요. <br>
+    >Windows 10 버전 1903 디바이스의 이상에서 Autopilot 배포의 경우 진단 데이터 기본 값이 자동으로 전체로 설정됩니다. 자세한 내용은 [Windows 진단 데이터](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data)를 참조하세요. <br>
     
     - **계정 변경 옵션 숨기기(Windows 10, 버전 1809 이상 필요)** : **숨기기**를 선택하면 계정 변경 옵션이 회사 로그인 및 도메인 오류 페이지에서 표시되지 않습니다. 이러한 옵션을 사용하려면 [Azure Active Directory에서 회사 브랜딩을 구성](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)해야 합니다.
     - **사용자 계정 유형**: 사용자 계정 유형(**관리자** 또는 **표준** 사용자)을 선택합니다.
@@ -118,7 +119,7 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
     ![검토 페이지 스크린샷](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune은 할당된 그룹의 새 디바이스에 대해 주기적으로 확인한 다음, 해당 디바이스에 프로필을 할당하는 프로세스를 시작합니다. 이 프로세스를 완료하는 데 몇 분 정도 걸릴 수 있습니다. 디바이스를 배포하기 전에 이 프로세스가 완료되었는지 확인합니다.  **디바이스 등록** > **Windows 등록 ** > **디바이스**에서 확인할 수 있습니다. 여기에서 "할당되지 않음"에서 "할당"으로, 마지막으로 "할당됨"으로 프로필 상태 변경이 표시됩니다.
+> Intune은 할당된 그룹의 새 디바이스에 대해 주기적으로 확인한 다음, 해당 디바이스에 프로필을 할당하는 프로세스를 시작합니다. 이 프로세스를 완료하는 데 몇 분 정도 걸릴 수 있습니다. 디바이스를 배포하기 전에 이 프로세스가 완료되었는지 확인합니다.  **디바이스 등록** > **Windows 등록** > **디바이스**에서 확인할 수 있습니다. 여기에서 "할당되지 않음"에서 "할당"으로, 마지막으로 "할당됨"으로 프로필 상태 변경이 표시됩니다.
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Autopilot 배포 프로필 편집
 Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분을 편집할 수 있습니다.   

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/14/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78d6b8faf5c5c3ef41f3eb5007d550c869491f60
-ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
+ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141796"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407126"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune을 사용하여 MTD(Mobile Threat Defense) 앱 추가 및 할당  
 
@@ -56,6 +56,7 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 - [Pradeo](#configure-pradeo-apps)
 - [더 향상된 모바일](#configure-better-mobile-apps)
 - [Sophos Mobile](#configure-sophos-apps)
+- [Wandera](#configure-wandera-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work 앱 구성  
 - **OWA(Outlook Web Access)**  
@@ -129,6 +130,14 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
 - **iOS**
   - [Microsoft Intune에 iOS 스토어 앱 추가](store-apps-ios.md) 지침을 참조하세요. **11단계**에서 이 [ActiveShield 앱 스토어 URL](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8)을 **앱 스토어 URL**에 사용합니다.
 
+### <a name="configure-wandera-apps"></a>Wandera 앱 구성  
+ 
+- **OWA(Outlook Web Access)**
+  - [Microsoft Intune에 Android 스토어 앱 추가](store-apps-android.md) 지침을 참조하세요. **7단계**에서 [Wandera Mobile 앱 스토어 URL](https://play.google.com/store/apps/details?id=com.wandera.android)을 사용합니다. **최소 운영 체제**의 경우 **Android 5.0**을 선택합니다.
+
+- **iOS**
+  - [Microsoft Intune에 iOS 스토어 앱 추가](https://docs.microsoft.com/intune/store-apps-ios) 지침을 참조하세요. **11단계**에서 이 [Wandera Mobile 앱 스토어 URL](https://itunes.apple.com/app/wandera/id605469330)을 **앱 스토어 URL**에 사용합니다.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>iOS 앱 구성 정책으로 MTD 앱 구성  
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 앱 구성 정책  
@@ -196,6 +205,27 @@ Pradeo는 iOS에서 애플리케이션 구성을 지원하지 않습니다.  대
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Sophos Mobile 앱 구성 정책  
 [iOS 앱 구성 정책 사용](app-configuration-policies-use-ios.md) 문서에 설명된 대로 iOS 앱 구성 정책을 만듭니다.
+
+### <a name="wandera-app-configuration-policy"></a>Wandera 앱 구성 정책  
+Wandera iOS 앱 구성 정책을 추가하려면 [iOS에 대해 Microsoft Intune 앱 구성 정책 사용](app-configuration-policies-use-ios.md) 지침을 참조하세요.
+- **8단계**에서 **XML 데이터 입력** 옵션을 사용합니다. RADAR Wandera 포털에 로그인하고 **설정** > **EMM 통합** > **앱 푸시**로 이동합니다. **Intune**을 선택한 다음, 아래 콘텐츠를 복사하여 구성 정책 본문에 붙여넣습니다.  
+
+  ```
+  <dict><key>secretKey</key>
+  <string>SeeRADAR</string>
+  <key>apiKey</key>
+  <string> SeeRADAR </string>
+  <key>customerId</key>
+  <string> SeeRADAR </string>
+  <key>email</key>
+  <string>{{mail}}</string>
+  <key>firstName</key>
+  <string>{{username}}</string>
+  <key>lastName</key>
+  <string></string>
+  <key>activationType</key>
+  <string>PROVISION_THEN_AWP</string></dict>  
+  ```
 
 ## <a name="assign-apps-to-groups"></a>그룹에 앱 할당  
 - 이 단계는 모든 MTD 파트너에게 적용됩니다. [Intune을 사용하여 그룹에 앱 할당](apps-deploy.md) 지침을 참조하세요.

@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045629"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468751"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적으로 Intune 회사 포털 앱이 추가되고 웹 사이트가 개선됩니다. 이 문서에서는 Intune 관리자 또는 지원 담당자가 다음 작업을 수행하는 데 필요한 정보를 제공합니다.
@@ -33,6 +33,29 @@ Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적
 직원 또는 학생인 경우 회사 포털 도움말 설명서의 스크린샷과 링크를 꼭 확인하세요. 회사 포털 앱을 사용하는 방법에 대한 자세한 내용은 [회사 포털 사용자 도움말 설명서](https://docs.microsoft.com/intune-user-help/)를 참조하세요.  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-june-24-2019"></a>2019년 6월 24일 주  
+
+### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>새 회사 포털 웹 페이지에서 설치된 모든 앱 보기 <!-- 4224326 -->
+회사 포털 앱 사이트의 새 **설치된 앱** 페이지에는 사용자의 디바이스에 설치된 모든 관리형 앱(필수 및 사용 가능)이 나열되어 있습니다. 할당 유형 외에도 사용자는 앱의 게시자, 게시된 날짜 및 현재 설치 상태를 볼 수 있습니다. 사용자가 필요로 하거나 사용할 수 있는 앱을 만들지 않은 경우, 회사 앱이 설치되지 않았다는 메시지가 표시됩니다. 웹에서 새 페이지를 보려면 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)로 이동하여 **설치된 앱**을 클릭합니다.   
+
+![회사 포털 웹 사이트, 설치된 앱 페이지의 스크린샷.](/intune-user-help/media/intune-installed-apps-1907.png)     
+
+### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>새 보기를 통해 앱 사용자가 디바이스에 설치된 관리형 앱을 볼 수 있습니다. <!-- 2352913 -->
+이제 Windows용 회사 포털은 사용자의 디바이스에 설치된 모든 관리형 앱(필수 및 사용 가능)을 나열합니다. 사용자는 시도 및 보류 중인 앱 설치와 현재 상태를 볼 수도 있습니다. 사용자가 필요로 하거나 사용할 수 있는 앱을 만들지 않은 경우, 회사 앱이 설치되지 않았다는 메시지가 표시됩니다. 새 보기를 확인하려면 회사 포털 탐색 창으로 이동하여 **앱** > **설치된 앱**을 선택합니다.   
+
+![Windows 10용 회사 포털 앱, 설치된 앱 페이지의 예제 스크린샷. ](/intune-user-help/media/installed-apps-cp-1906.png)  
+
+
+## <a name="week-of-june-17-2019"></a>2019년 6월 17일 주  
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune 앱의 새로운 기능
+Android용 Microsoft Intune 앱(미리 보기)에 새로운 기능을 추가했습니다. 이제 완전 관리형 Android 디바이스의 사용자는 다음을 수행할 수 있습니다.  
+
+* Intune 회사 포털 또는 Microsoft Intune 앱을 통해 등록한 디바이스를 보고 관리합니다.    
+* 해당 조직에 지원을 문의합니다.    
+* Microsoft에 피드백을 보냅니다.    
+* 조직에서 설정한 사용 약관을 봅니다. 
 
 ## <a name="week-of-april-15-2019"></a>2019년 4월 15일 주간  
 

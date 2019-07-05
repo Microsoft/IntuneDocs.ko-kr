@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 50574a2d3dc4ba5731b1a90f563ddd1a08e7f833
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044885"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529630"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
 Microsoft Edge와 함께 Intune 앱 보호 정책을 사용하면 항상 보호 기능을 갖춘 회사 웹 사이트에 액세스할 수 있습니다. Intune 정책을 통해 사용할 수 있는 다음 Microsoft Edge 엔터프라이즈 기능이 제공됩니다. 이 엔터프라이즈 기능에는 다음이 포함됩니다.
 
-1.  **이중 ID** - 사용자는 검색을 위해 회사 계정뿐 아니라 개인 계정을 추가할 수 있습니다. Office 365 및 Outlook의 아키텍처 및 환경과 비슷한 두 ID는 완전히 분리됩니다. Intune 관리자는 회사 계정 내에서 보호된 검색 환경에 대해 원하는 정책을 설정할 수 있습니다.
-2.  **Intune 앱 보호 정책 통합** – Microsoft Edge는 Intune SDK와 통합되므로 앱 보호 정책을 대상으로 지정하여 데이터 손실 보호를 보장할 수 있습니다. 이러한 기능에는 잘라내기, 복사 및 붙여넣기 제어, 화면 캡처 방지, 사용자가 선택한 링크가 다른 관리 앱에서만 열리도록 하는 기능이 포함됩니다.
-3.  **Azure 애플리케이션 프록시 통합** - SaaS 앱 및 웹앱에 대한 액세스를 제어할 수 있으므로, 최종 사용자가 회사 네트워크에서 연결하든지, 인터넷에서 연결하든지 관계없이 브라우저 기반 앱이 Microsoft Edge 브라우저에서만 실행되도록 할 수 있습니다.
-4.  **애플리케이션 구성** - 애플리케이션 구성 설정을 활용하여 조직의 보안 태세를 강화하고 최종 사용자가 사용하기 쉬운 기능을 구성할 수 있습니다. 예를 들어 책갈피, 홈 페이지 바로 가기, 허용/차단된 사이트, Azure 애플리케이션 프록시 등을 정의할 수 있습니다.
+1. **이중 ID** - 사용자는 검색을 위해 회사 계정뿐 아니라 개인 계정을 추가할 수 있습니다. Office 365 및 Outlook의 아키텍처 및 환경과 비슷한 두 ID는 완전히 분리됩니다. Intune 관리자는 회사 계정 내에서 보호된 검색 환경에 대해 원하는 정책을 설정할 수 있습니다.
+2. **Intune 앱 보호 정책 통합** – Microsoft Edge는 Intune SDK와 통합되므로 앱 보호 정책을 대상으로 지정하여 데이터 손실 보호를 보장할 수 있습니다. 이러한 기능에는 잘라내기, 복사 및 붙여넣기 제어, 화면 캡처 방지, 사용자가 선택한 링크가 다른 관리 앱에서만 열리도록 하는 기능이 포함됩니다.
+3. **Azure 애플리케이션 프록시 통합** - SaaS 앱 및 웹앱에 대한 액세스를 제어할 수 있으므로, 최종 사용자가 회사 네트워크에서 연결하든지, 인터넷에서 연결하든지 관계없이 브라우저 기반 앱이 Microsoft Edge 브라우저에서만 실행되도록 할 수 있습니다.
+4. **애플리케이션 구성** - 애플리케이션 구성 설정을 활용하여 조직의 보안 태세를 강화하고 최종 사용자가 사용하기 쉬운 기능을 구성할 수 있습니다. 예를 들어 책갈피, 홈 페이지 바로 가기, 허용/차단된 사이트, Azure 애플리케이션 프록시 등을 정의할 수 있습니다.
 Microsoft Edge에 대한 Microsoft Intune 보호 정책을 통해 조직의 데이터 및 리소스를 보호할 수 있습니다. 이러한 정책을 Microsoft Edge와 함께 사용하면 회사의 리소스는 기본적으로 설치된 앱 내에서는 물론 웹 브라우저를 통해 액세스할 때도 보호됩니다.
 
 ## <a name="getting-started"></a>시작하기
@@ -115,8 +115,8 @@ SSO를 사용하려면 iOS 디바이스용 Microsoft Authenticator 앱 또는 An
     > [!NOTE]
     > Microsoft Edge는 Managed Browser와 동일한 키와 값 쌍을 사용합니다. 
 
-8.  작업이 끝나면 **확인**을 클릭합니다.
-9.  **구성 정책 추가** 블레이드에서 **추가**를 선택합니다.<br>
+8. 작업이 끝나면 **확인**을 클릭합니다.
+9. **구성 정책 추가** 블레이드에서 **추가**를 선택합니다.<br>
     새 구성이 생성되어 **앱 구성** 블레이드에 표시됩니다.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>작성한 구성 설정을 할당합니다. 
@@ -184,7 +184,7 @@ Microsoft Edge에 대한 애플리케이션 프록시를 사용하도록 설정�
 
 |    Key    |    값    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 `|` 문자로 구분합니다.      **예:**<br>`Microsoft Bing|https://www.bing.com`<p>여러 책갈피를 구성하려면 각 쌍을 이중 문자 `||`로 구분합니다.<p>**예:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 `|` 문자로 구분합니다.      **예:**<br>`Microsoft Bing|https://www.bing.com`<br>여러 책갈피를 구성하려면 각 쌍을 이중 문자 `||`로 구분합니다.<p>**예:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## <a name="how-to-display-myapps-within-microsoft-edge-bookmarks"></a>Microsoft Edge 책갈피 내에 MyApps를 표시하는 방법
 
@@ -201,16 +201,17 @@ Microsoft Edge에 대한 애플리케이션 프록시를 사용하도록 설정�
 
 |    Key    |    값    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    다음 중에서 선택합니다.<p>1. 허용되는 URL을 지정합니다(이러한 URL만 허용되며 다른 사이트에 액세스할 수 없음).<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. 차단되는 URL을 지정합니다(다른 모든 사이트는 액세스할 수 있음).<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    키에 해당하는 값은 URL 목록입니다. 허용하거나 차단할 모든 URL을 파이프 `|` 문자로 구분된 단일 값으로 입력합니다.<p>**예:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    다음 중에서 선택합니다.<p>1. 허용되는 URL을 지정합니다(이러한 URL만 허용되며 다른 사이트에 액세스할 수 없음).<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. 차단되는 URL을 지정합니다(다른 모든 사이트는 액세스할 수 있음).<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    키에 해당하는 값은 URL 목록입니다. 허용하거나 차단할 모든 URL을 파이프 `|` 문자로 구분된 단일 값으로 입력합니다.<br>**예:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>허용되거나 차단된 사이트 목록의 URL 형식 
 다양한 URL 형식을 사용하여 허용/차단된 사이트 목록을 작성할 수 있습니다. 이러한 허용되는 패턴은 아래 표에 자세히 설명되어 있습니다. 시작하기 전에 다음과 같은 몇 가지 참고 사항이 있습니다. 
 - URL을 목록에 입력할 때 모든 URL의 앞에 **http** 또는 **https** 를 덧붙여야 합니다.
-- 다음과 같이 허용되는 패턴 목록의 규칙에 따라 와일드카드 기호(*)를 사용할 수 있습니다.
+- 다음과 같이 허용되는 패턴 목록의 규칙에 따라 와일드카드 기호(\*)를 사용할 수 있습니다.
+- 와일드카드는 호스트 이름의 전체 구성 요소(마침표로 구분됨) 또는 경로의 전체 부분(슬래시로 구분됨)만 일치할 수 있습니다. 예를 들어 `http://*contoso.com`은 지원되지 **않습니다**.
 - 주소에 포트 번호를 지정할 수 있습니다. 포트 번호를 지정하지 않으면 다음 값이 사용됩니다.
     - http의 경우 포트 80
     - https의 경우 포트 443
-- 포트 번호에 대한 와일드카드 사용은 지원되지 **않습니다**. 예를 들어 `http://www.contoso.com:*` 및 `http://www.contoso.com:*/`은 지원되지 않습니다.
+- 포트 번호에 대한 와일드카드 사용은 지원되지 **않습니다**. 예를 들어 `http://www.contoso.com:*` 및 `http://www.contoso.com:*/`은 지원되지 않습니다. 
 
     |    URL    |    세부 정보    |    일치하는 항목    |    일치하지 않는 항목    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -232,6 +233,7 @@ Microsoft Edge에 대한 애플리케이션 프록시를 사용하도록 설정�
     - IP 주소
     - `https://*`
     - `http://*`
+    - `https://*contoso.com`
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
@@ -247,13 +249,13 @@ Microsoft Edge에 기본 제공된 이중 ID 모델을 사용하면 Intune Manag
 
 ## <a name="directing-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Intune Managed Browser 대신 Microsoft Edge로 사용자 연결 
 
-Intune Managed Browser와 Microsoft Edge는 이제 정책으로 보호되는 브라우저로 사용할 수 있습니다. 사용자에게 올바른 브라우저 앱을 사용하도록 지시하려면 다음 구성 설정으로 모든 Intune 관리 앱(예: Outlook 및 OneDrive)을 대상으로 지정합니다.
+Intune Managed Browser와 Microsoft Edge는 이제 정책으로 보호되는 브라우저로 사용할 수 있습니다. 사용자에게 올바른 브라우저 앱을 사용하도록 지시하려면 다음 구성 설정으로 모든 Intune 관리 앱(예: Outlook, OneDrive 및 SharePoint)을 대상으로 지정합니다.
 
 |    Key    |    값    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    값 `true`는 사용자에게 Microsoft Edge를 사용하도록 지시합니다.<p>값 `false`는 사용자에게 Intune Managed Browser를 사용하도록 지시합니다.    |
+|    `com.microsoft.intune.useEdge`    |    값 `true`는 사용자에게 Microsoft Edge를 다운로드하고 사용하도록 지시합니다.<br>값 `false`를 사용하면 사용자가 Intune Managed Browser를 사용할 수 있습니다.    |
 
-이 앱 구성 값을 설정하지 않은 경우 다음 논리는 회사 링크를 여는 데 사용되는 브라우저를 정의합니다.
+이 앱 구성 값을 설정하지 **않은** 경우 다음 논리는 회사 링크를 여는 데 사용되는 브라우저를 정의합니다.
 
 Android:
 - 사용자가 Intune Managed Browser와 Microsoft Edge를 둘 다 해당 디바이스에 다운로드한 경우에는 Intune Managed Browser가 실행됩니다. 

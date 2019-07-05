@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67325529"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500646"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune 디바이스의 기본 사용자 찾기
 
@@ -60,8 +60,8 @@ Intune에서는 등록하는 중이나 끝나고 바로 디바이스에 기본 �
 | Windows | Azure AD 조인(기본 제공 환경) | 등록하는 사용자 | 등록 중 | 
 | Windows | Azure AD 조인(Autopilot 기본 제공 환경) | 등록하는 사용자 | 등록 중 | 
 | Windows | MDM에만 등록 | 등록하는 사용자 | 등록 중 | 
-| Windows | 하이브리드 AADJ + 자동 등록 GPO | 처음 로그인하는 사용자 | 첫 번째 사용자가 로그인할 때 | 
-| Windows | 공동 관리 | 처음 로그인하는 사용자 | 첫 번째 사용자가 로그인할 때 | 
+| Windows | 하이브리드 AADJ + 자동 등록 GPO | Windows에 처음 로그인하는 사용자 | Windows에 처음 로그인하는 사용자인 경우| 
+| Windows | 공동 관리 | Windows에 처음 로그인하는 사용자 | Windows에 처음 로그인하는 사용자인 경우 | 
 | Windows | Azure AD 조인(대량 등록 토큰) | 없음 | 해당 없음 | 
 | Windows | Azure AD 조인(Autopilot 자체 배포 모드) | 없음 | 해당 없음 | 
 | 플랫폼 간 사용 가능 | 회사 포털 앱을 사용한 사용자 주도 등록 | 등록하는 사용자 | 등록 중 |

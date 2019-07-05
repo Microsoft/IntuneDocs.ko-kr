@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344081"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494299"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -30,10 +30,10 @@ ms.locfileid: "67344081"
 
 - **Active Directory 도메인**: 웹 애플리케이션 프록시 서버를 제외하고 이 섹션에 나열된 모든 서버는 Active Directory 도메인에 가입되어 있어야 합니다.
 
-- CA(**인증 기관**): Windows Server 2008 R2 이상에서 실행되는 Microsoft 엔터프라이즈 CA(인증 기관)여야 합니다. 독립 실행형 CA는 지원되지 않습니다. 자세한 내용은 [인증 기관 설치](http://technet.microsoft.com/library/jj125375.aspx)를 참조하세요.
+- CA(**인증 기관**): Windows Server 2008 R2 이상에서 실행되는 Microsoft 엔터프라이즈 CA(인증 기관)여야 합니다. 독립 실행형 CA는 지원되지 않습니다. 자세한 내용은 [인증 기관 설치](https://technet.microsoft.com/library/jj125375.aspx)를 참조하세요.
     CA에서 Windows Server 2008 R2를 실행하는 경우에는 [KB2483564의 핫픽스를 설치](http://support.microsoft.com/kb/2483564/)해야 합니다.
 
-- **NDES 서버**: Windows Server 2012 R2 이상에서는 NDES(네트워크 디바이스 등록 서비스) 서버 역할을 설정해야 합니다. Intune은 엔터프라이즈 CA도 실행하는 서버에서 NDES 사용을 지원하지 않습니다. NDES를 호스트하도록 Windows Server 2012 R2를 구성하는 방법에 대한 지침은 [네트워크 디바이스 등록 서비스 지침](http://technet.microsoft.com/library/hh831498.aspx)을 참조하세요.
+- **NDES 서버**: Windows Server 2012 R2 이상에서는 NDES(네트워크 디바이스 등록 서비스) 서버 역할을 설정해야 합니다. Intune은 엔터프라이즈 CA도 실행하는 서버에서 NDES 사용을 지원하지 않습니다. NDES를 호스트하도록 Windows Server 2012 R2를 구성하는 방법에 대한 지침은 [네트워크 디바이스 등록 서비스 지침](https://technet.microsoft.com/library/hh831498.aspx)을 참조하세요.
 NDES 서버는 엔터프라이즈 CA와 동일한 포리스트 내의 도메인에 조인해야 합니다. 별도의 포리스트, 격리된 네트워크 또는 내부 도메인에 NDES 서버를 배포하는 방법에 대한 자세한 내용은 [네트워크 디바이스 등록 서비스와 함께 정책 모듈 사용](https://technet.microsoft.com/library/dn473016.aspx) 항목에서 찾아볼 수 있습니다. 다른 MDM에서 이미 사용 중인 NDES 서버를 사용할 수는 없습니다.
 
 - **Microsoft Intune Certificate Connector**: Intune 포털에서 **디바이스 구성** > **인증서 커넥터** > **추가**로 이동하고 *SCEP용 커넥터 설치 단계*를 따릅니다. 포털의 다운로드 링크를 사용하여 인증서 커넥터 설치 관리자 **NDESConnectorSetup.exe**의 다운로드를 시작합니다.  NDES 역할이 있는 서버에서 이 설치 관리자를 실행합니다.  
@@ -507,7 +507,8 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 - 각 프로필을 별도로 할당하더라도 신뢰할 수 있는 루트 CA와, SCEP 또는 PKCS 프로필을 할당해야 합니다. 그렇지 않으면 SCEP 또는 PKCS 인증서 정책에서 오류가 발생합니다.
 
     > [!NOTE]
-    > iOS의 경우 동일한 인증서 프로필을 사용하는 여러 리소스 프로필을 배포하는 경우 관리 프로필에 인증서의 여러 복사본이 표시됩니다.
+    > iOS 디바이스에서 SCEP 인증서 프로필이 Wi-Fi 또는 VPN 프로필과 같은 추가 프로필과 연결되면, 디바이스는 각각의 추가 프로필에 대한 인증서를 받습니다. 이로 인해 iOS 디바이스는 SCEP 인증서 요청에 의해 전달된 여러 인증서를 갖게 됩니다.  
+
 - Intune 및 Configuration Manager의 공동 관리를 사용하는 경우 Configuration Manager에서 *리소스 액세스 정책*의 [워크로드 슬라이더](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)를 **Intune** 또는 **파일럿 Intune**으로 설정합니다. 이렇게 설정하면 Windows 10 클라이언트가 인증서 요청 프로세스를 시작할 수 있습니다.  
 
 프로필을 할당하는 방법에 대한 자세한 내용은 [디바이스 프로필 할당](device-profile-assign.md)을 참조하세요.
