@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
-ms.translationtype: HT
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468722"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494252"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>개발 중인 Microsoft Intune 기능 - 2019년 7월
 
@@ -58,8 +58,6 @@ ms.locfileid: "67468722"
 <!-- ***********************************************-->
 ## <a name="app-management"></a>앱 관리
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>다바이스 사용자는 설치했거나 설치하려고 시도한 모든 관리형 앱을 볼 수 있습니다. <!-- 2352913 -->
-Windows용 회사 포털은 사용자의 디바이스에 (필수 및 사용 가능한) 모든 관리형 앱을 나열합니다. 사용자는 시도 및 보류 중인 앱 설치와 현재 상태를 볼 수 있습니다. 조직에서 앱을 필수 또는 사용 가능하게 설정하지 않으면 회사 앱이 설치되지 않았다는 메시지가 사용자에게 표시됩니다. 사용자도 설치 상태별로 앱을 정렬하거나 필터링할 수 있습니다.
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>사용자 및 그룹에 대 한 사용자 지정된 알림    <!-- 16766574   -->
 곧 iOS 및 Android 장치의 Intune로 관리 하는 사용자에 게 회사 포털 응용 프로그램에서 사용자 지정 임시 푸시 알림을 보낼 수 있습니다. 이러한 사용자 지정 알림을 특정 Intune 기능에 연결 되지 않습니다 및 일부를 전송 하려는 일반 알림 포함 해야 하는 목적을 위해 사용할 수 있습니다 또는 모든 직원입니다.  

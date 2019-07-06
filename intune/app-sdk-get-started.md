@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045817"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529169"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -160,8 +160,8 @@ iOS 또는 Android 앱을 Intune 앱 SDK와 통합하는 데 필요한 단계를
     * Intune 앱 보호 정책에 대해 iOS 또는 Android 스토어 앱을 사용하도록 설정하는 ISV인 경우 등록 단계에 설명된 대로 Microsoft Intune을 사용하여 등록을 완료하면 프로모션 코드를 받게 됩니다. 이 프로모션 코드를 사용하여 1년 연장하여 사용할 수 있는 Microsoft Intune 평가판을 신청할 수 있습니다.
 
     * 스토어에 게시하지 않을 LOB(기간 업무) 앱을 개발 중인 경우에는 조직을 통해 Microsoft Intune에 대한 액세스 권한을 가져야 합니다. [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)에서 한 달 무료 평가판도 신청할 수 있습니다.
-    
-    * 최종 사용자 계정을 사용하여 모바일 디바이스에서 앱을 테스트하는 경우, 관리자 계정으로 로그인한 후 Microsoft 365 관리 센터 웹 사이트에서 해당 계정에 Intune 라이선스를 부여했는지 확인합니다. [Microsoft Intune 라이선스 할당](https://docs.microsoft.com/en-ca/intune/licenses-assign)을 참조하세요.
+
+    * 최종 사용자 계정을 사용하여 모바일 디바이스에서 앱을 테스트하는 경우, 관리자 계정으로 로그인한 후 Microsoft 365 관리 센터 웹 사이트에서 해당 계정에 Intune 라이선스를 부여했는지 확인합니다. [Microsoft Intune 라이선스 할당](https://docs.microsoft.com/intune/licenses-assign)을 참조하세요.
 
 * **Intune 앱 보호 정책**: 모든 Intune 앱 보호 정책에 대해 앱을 테스트하려면 각 정책 설정에 대해 예상되는 동작이 무엇인지 알고 있어야 합니다. [iOS 앱 보호 정책](app-protection-policy-settings-ios.md) 및 [Android 앱 보호 정책](app-protection-policy-settings-android.md)에 대한 설명을 참조하세요. 앱에 Intune SDK를 통합했지만 앱이 아직 Azure Portal에 대상 앱으로 나열되지 않는 경우 “+ 더 많은 앱” 옵션을 선택하고 텍스트 상자에 번들 ID(iOS) 또는 패키지 이름(Android)을 입력하여 정책을 통해 앱을 대상으로 지정할 수 있습니다.
 
@@ -173,12 +173,12 @@ iOS 또는 Android 앱을 Intune 앱 SDK와 통합하는 데 필요한 단계를
 
 Azure 테넌트 내에서 앱을 등록한 후에 해당 앱이 **모든 애플리케이션** 아래에 표시되면 앱에 Intune 앱 보호 서비스(이전의 MAM 서비스)에 대한 액세스 권한을 부여해야 합니다. Azure Portal에서:
 
-1.  **Azure Active Directory** 블레이드로 이동합니다.
-2.  **앱 등록** 아래에서 애플리케이션에 대해 설정된 목록으로 이동합니다.
-3.  **+ 권한 추가**를 클릭합니다.
-4.  **내 조직에서 사용하는 API**를 클릭합니다. 
-5.  검색 상자에 **Microsoft 모바일 애플리케이션 관리**를 입력합니다.
-6.  **위임된 권한**에서 **DeviceManagementManagedApps.ReadWrite: 사용자 앱 관리 데이터 읽기 및 쓰기*** 확인란을 선택합니다.
+1. **Azure Active Directory** 블레이드로 이동합니다.
+2. **앱 등록** 아래에서 애플리케이션에 대해 설정된 목록으로 이동합니다.
+3. **+ 권한 추가**를 클릭합니다.
+4. **내 조직에서 사용하는 API**를 클릭합니다. 
+5. 검색 상자에 **Microsoft 모바일 애플리케이션 관리**를 입력합니다.
+6. **위임된 권한**에서 **DeviceManagementManagedApps.ReadWrite: 사용자 앱 관리 데이터 읽기 및 쓰기*** 확인란을 선택합니다.
 7. **권한 추가**를 클릭합니다.
 
 ### <a name="badge-your-app-optional"></a>앱에 배지 지정(선택 사항)

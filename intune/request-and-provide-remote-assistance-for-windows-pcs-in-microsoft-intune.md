@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040901"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549146"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows PC 원격 지원 요청 및 제공
 
@@ -79,13 +79,13 @@ Intune은 [TeamViewer](https://www.teamviewer.com) 소프트웨어(별매)를 �
 ## <a name="remotely-restart-a-windows-pc"></a>원격으로 Windows PC 다시 시작
 사용자의 문제 해결을 도와줄 때 사용자의 PC를 원격으로 다시 시작해야 하는 경우가 종종 있을 수 있습니다. Windows PC를 원격으로 다시 시작하려면 다음 단계를 사용합니다.
 
-1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹**&gt;**모든 디바이스**(또는 다시 시작하려는 PC가 포함된 다른 그룹)를 선택합니다.
+1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹**&gt;**모든 디바이스**(또는 다시 시작하려는 PC가 포함된 다른 그룹)를 선택합니다.
 
-2.  PC를 하나 이상 선택한 다음 **원격 작업** &gt; **컴퓨터 다시 시작**을 선택합니다.
+2. PC를 하나 이상 선택한 다음 **원격 작업** &gt; **컴퓨터 다시 시작**을 선택합니다.
 
-3.  작업 상태를 확인하려면 페이지의 오른쪽 아래 모서리에 있는 **원격 작업**을 선택합니다.
+3. 작업 상태를 확인하려면 페이지의 오른쪽 아래 모서리에 있는 **원격 작업**을 선택합니다.
 
-4.  **작업 상태** 대화 상자에서 현재 원격 작업, 작업 상태, 디바이스 이름 및 보고된 모든 오류를 검토할 수 있습니다.
+4. **작업 상태** 대화 상자에서 현재 원격 작업, 작업 상태, 디바이스 이름 및 보고된 모든 오류를 검토할 수 있습니다.
 
 ### <a name="see-also"></a>참고 항목
 

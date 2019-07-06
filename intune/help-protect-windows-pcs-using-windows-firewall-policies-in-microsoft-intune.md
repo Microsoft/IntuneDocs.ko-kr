@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403026"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572526"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune에서 Windows 방화벽 정책을 사용하여 Windows PC 보호
 
@@ -43,19 +43,19 @@ Windows 방화벽 정책을 통해 관리 PC의 Windows 방화벽을 제어하�
 > [!NOTE]
 > Microsoft Intune 정책 및 그룹 정책이 PC의 동일한 설정을 관리하도록 구성된 경우 그룹 정책 설정이 Microsoft Intune 정책을 재정의합니다. Intune 정책과 그룹 정책 간의 충돌을 방지하는 방법에 대한 정보는 [GPO 및 Microsoft Intune 정책 충돌 해결](resolve-gpo-and-microsoft-intune-policy-conflicts.md)을 참조하세요.
 >
-> Windows Vista를 실행하는 컴퓨터에 Windows 방화벽 설정을 배포하려는 경우에는 먼저 해당 컴퓨터에 [핫픽스 KB971800](http://support2.microsoft.com/kb/971800)을 설치해야 합니다.
+> Windows Vista를 실행하는 컴퓨터에 Windows 방화벽 설정을 배포하려는 경우에는 먼저 컴퓨터에 [핫픽스 KB971800](http://support2.microsoft.com/kb/971800)을 설치해야 합니다.
 
 > [!IMPORTANT]
 > Intune을 사용하여 Windows 방화벽을 관리하려면 다음 두 서비스가 관리할 컴퓨터에서 설정되어 있는지 확인하세요.
 >
-> -   Windows 방화벽
-> -   IPsec 정책 에이전트
+> - Windows 방화벽
+> - IPsec 정책 에이전트
 
 ## <a name="configure-a-windows-firewall-policy"></a>Windows 방화벽 정책 구성
 
-1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **정책** &gt; **정책 추가**를 선택합니다.
+1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **정책** &gt; **정책 추가**를 선택합니다.
 
-2.  **Windows 방화벽 설정** 정책을 구성하고 배포합니다. 권장 설정을 사용하거나 설정을 사용자 지정할 수 있습니다. 정책을 만들고 배포하는 방법에 대한 자세한 정보가 필요한 경우 [Microsoft Intune 컴퓨터 클라이언트를 사용한 일반 Windows PC 관리 작업](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)을 참조하세요.
+2. **Windows 방화벽 설정** 정책을 구성하고 배포합니다. 권장 설정을 사용하거나 설정을 사용자 지정할 수 있습니다. 정책을 만들고 배포하는 방법에 대한 자세한 정보가 필요한 경우 [Microsoft Intune 컴퓨터 클라이언트를 사용한 일반 Windows PC 관리 작업](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)을 참조하세요.
 
     다음 섹션에서는 정책에서 구성할 수 있는 값과 정책을 사용자 지정하지 않은 경우에 사용되는 기본값을 나열합니다.
 

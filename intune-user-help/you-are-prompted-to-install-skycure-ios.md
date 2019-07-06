@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6daeaaac7fb554e2c29f6ac150eaff8308d670b0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 13a12da72577edfee1d6ba23c2cd5e56d1fe397e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850559"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527582"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>iOS 디바이스에 Symantec Endpoint Protection Mobile 설치
 
@@ -29,7 +29,7 @@ ms.locfileid: "55850559"
 
 ## <a name="what-you-need-to-do"></a>수행해야 할 작업
 
-1.  다음과 같은 메시지가 표시되면 **설치**를 탭하여 SEP Mobile이 디바이스에 설치되도록 합니다.
+1. 다음과 같은 메시지가 표시되면 **설치**를 탭하여 SEP Mobile이 디바이스에 설치되도록 합니다.
 
 2. 다음과 같은 메시지가 나타나면 **설정**을 탭하고 **위치 서비스**를 켠 다음 **계속**을 탭합니다.
 

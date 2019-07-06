@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 448ec3aaa9bc9ad09e54d7dd78d4f08a4adae010
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044701"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67571969"
 ---
 ## <a name="april-2017"></a>2017년 4월
 
@@ -37,15 +37,15 @@ Android 회사 포털 앱의 업데이트에는 사용자가 앱을 시작하거
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 회사 포털 앱의 앱 설치 상태 개선 <!--676495-->
 
 Windows 10 회사 포털 앱에서 시작되는 앱 설치에 대한 새로운 향상된 기능은 다음과 같습니다.
--   MSI 패키지에 대한 더 빠른 설치 진행 보고
--   Windows 10 1주년 업데이트 이상을 실행하는 디바이스의 최신 앱에 대한 더 빠른 설치 진행 보고
--   Windows 10 1주년 업데이트 이상을 실행하는 디바이스의 최신 앱 설치에 대한 새로운 진행률 표시줄
+- MSI 패키지에 대한 더 빠른 설치 진행 보고
+- Windows 10 1주년 업데이트 이상을 실행하는 디바이스의 최신 앱에 대한 더 빠른 설치 진행 보고
+- Windows 10 1주년 업데이트 이상을 실행하는 디바이스의 최신 앱 설치에 대한 새로운 진행률 표시줄
 
 [Intune 앱 UI 페이지의 새로운 기능](/intune/whats-new-app-ui)에서 새로운 진행률 표시줄을 확인할 수 있습니다.
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 디바이스 대량 등록 <!-- 747607 -->
 
-이제 WCD(Windows 구성 디자이너)를 사용하여 Azure Active Directory 및 Intune에 대한 Windows 10 크리에이터스 업데이트를 실행하는 많은 디바이스를 연결할 수 있습니다. Azure AD 테넌트에 대한 [대량 MDM 등록](/intune-classic/deploy-use/bulk-enroll-windows)을 사용하도록 설정하려면 Windows 구성 디자이너를 사용하여 Azure AD 테넌트에 디바이스를 연결하는 프로비전 패키지를 만들고, 이 패키지를 대량으로 등록 및 관리할 회사 소유 디바이스에 적용합니다. 패키지가 디바이스에 적용되면, 디바이스가 Azure AD에 연결되고 Intune에 등록되며 Azure AD 사용자가 로그인할 준비를 하게 됩니다.  Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당된 정책 및 필수 앱을 수신합니다. 셀프 서비스 및 회사 포털 시나리오의 경우 이번에는 지원되지 않습니다.
+이제 WCD(Windows 구성 디자이너)를 사용하여 Azure Active Directory 및 Intune에 대한 Windows 10 크리에이터스 업데이트를 실행하는 많은 디바이스를 연결할 수 있습니다. Azure AD 테넌트에 대한 [대량 MDM 등록](/intune-classic/deploy-use/bulk-enroll-windows)을 사용하도록 설정하려면 Windows 구성 디자이너를 사용하여 Azure AD 테넌트에 디바이스를 연결하는 프로비전 패키지를 만들고, 이 패키지를 대량으로 등록 및 관리할 회사 소유 디바이스에 적용합니다. 패키지가 디바이스에 적용되면, 디바이스가 Azure AD에 연결되고 Intune에 등록되며 Azure AD 사용자가 로그인할 준비를 하게 됩니다.  Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당된 정책 및 필수 앱을 수신합니다. 셀프 서비스 및 회사 포털 시나리오의 경우 이번에는 지원되지 않습니다.
 
 ### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure의 Intune 관리 환경 공개 미리 보기의 새로운 기능 <!--736542-->
 
@@ -81,7 +81,7 @@ Intune PC 에이전트를 통해 관리되는 디바이스의 기존 배포에�
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure Portal에서 대체되는 관리 역할
 
-Intune 클래식 포털(Silverlight)에서 사용된 기존 MAM(모바일 애플리케이션 관리) 관리 역할(기여자, 소유자 및 읽기 전용)은 Intune Azure Portal에서 새로운 RBAC(역할 기반 관리 제어)의 전체 집합으로 대체됩니다. Azure Portal로 마이그레이션한 후에 이러한 새 관리 역할에 관리자를 다시 할당해야 합니다. RBAC 및 새 역할에 대한 자세한 내용은 [Microsoft Intune에 대한 역할 기반 액세스 제어](/intune/role-based-access-control)를 참조하세요.
+Intune 클래식 포털(Silverlight)에서 사용된 기존 MAM(모바일 애플리케이션 관리) 관리 역할(참가자, 소유자 및 읽기 전용)은 Intune Azure Portal에서 새로운 RBAC(역할 기반 관리 제어)의 전체 집합으로 대체됩니다. Azure Portal로 마이그레이션한 후에 이러한 새 관리 역할에 관리자를 다시 할당해야 합니다. RBAC 및 새 역할에 대한 자세한 내용은 [Microsoft Intune에 대한 역할 기반 액세스 제어](/intune/role-based-access-control)를 참조하세요.
 
 ### <a name="whats-coming"></a>향후 예정 사항
 
@@ -334,7 +334,7 @@ __Intune AV Player, 이미지 뷰어 및 PDF 뷰어 앱이 Android에서 더 이
 
 __Windows 10 디바이스에 사용할 수 있는 새로운 Microsoft Intune 회사 포털__ Microsoft는 새로운 [Windows 10 디바이스용 Microsoft Intune 회사 포털 앱](https://www.microsoft.com/store/apps/9wzdncrfj3pz)을 출시했습니다. 이 앱은 새로운 Windows 10 유니버셜 형식을 활용하고 있으며, 현재 사용 중인 모든 기능을 계속 사용할 수 있게 하면서 사용자에게 앱의 업데이트된 사용자 환경과 모든 Windows 10 디바이스, PC 및 모바일 유사 디바이스에 걸쳐 동일한 환경을 제공합니다.
 
-새 앱을 사용하면 사용자가 Windows 10 디바이스에서 SSO(Single Sign-On) 및 인증서 기반 인증과 같은 추가적인 플랫폼 기능도 활용할 수 있습니다. 이 앱은 기존 Windows 8.1 회사 포털과 Windows Phone 8.1 회사 포털에 대한 업그레이드로서 Microsoft 스토어에서 설치해 사용할 수 있습니다. 자세한 내용은 [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp)를 참조하세요.
+새 앱을 사용하면 사용자가 Windows 10 디바이스에서 SSO(Single Sign-On) 및 인증서 기반 인증과 같은 추가적인 플랫폼 기능도 활용할 수 있습니다. 이 앱은 기존 Windows 8.1 회사 포털과 Windows Phone 8.1 회사 포털에 대한 업그레이드로서 Microsoft 스토어에서 설치해 사용할 수 있습니다. 자세한 내용은 [aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp)를 참조하세요.
 
 > [!IMPORTANT]
 > __Intune 및 Android for Work에 대한 업데이트__ __필수__ 작업을 통해 Android for Work 앱을 배포할 수 있는 반면, Intune 그룹이 새 Azure AD 그룹 환경으로 마이그레이션된 경우에는 앱을 __사용 가능__으로만 배포할 수 있습니다.

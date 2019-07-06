@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61cbe326bbbd0e52c045491fe59ba837779ddb6e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c5b903cfa9a6700b8931ccedea0f44a9de0d8011
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041146"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549216"
 ---
-#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune 데이터 웨어하우스 API
+# <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune 데이터 웨어하우스 API
 
 Intune 데이터 웨어하우스 API를 사용하면 즐겨찾는 도구에서 사용할 수 있도록 컴퓨터에서 읽을 수 있는 형식으로 Intune 데이터에 액세스할 수 있습니다. API를 사용하여 회사의 모바일 환경에 대한 정보를 제공하는 보고서를 작성할 수 있습니다. API는 다음을 위한 표준 패턴을 따르는 OData 프로토콜을 사용합니다.
 
-  -   요청 및 응답 헤더
-  -   상태 코드
-  -   HTTP 메서드
-  -   URL 규칙
-  -   미디어 유형
-  -   페이로드 형식
-  -   쿼리 옵션
+  - 요청 및 응답 헤더
+  - 상태 코드
+  - HTTP 메서드
+  - URL 규칙
+  - 미디어 유형
+  - 페이로드 형식
+  - 쿼리 옵션
 
 OData(개방형 데이터 프로토콜)는 RESTful API 빌드 및 사용을 위한 모범 사례를 정의하는 OASIS(Advancement of Structured Information Standards)를 위한 조직입니다. Intune 데이터 웨어하우스는 OData 버전 4.0을 사용합니다.
 
@@ -56,8 +56,8 @@ RESTful 엔드포인트를 통해 Intune 데이터 웨어하우스 데이터 모
 
 API는 Azure AD를 통한 권한 부여가 필요합니다. Azure AD는 OAuth 2.0을 사용합니다. 인증을 받으면 HTTP GET 동사를 사용하고 노출된 엔터티 컬렉션에 접촉하여 API에서 데이터를 가져올 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 
- -  [권한 부여](reports-api-url.md)
- -  [API URL 구조](reports-api-url.md)
+ - [권한 부여](reports-api-url.md)
+ - [API URL 구조](reports-api-url.md)
 
 ## <a name="intune-data-warehouse-data-model"></a>Intune 데이터 웨어하우스 데이터 모델
 

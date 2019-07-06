@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: df0afecb006ef8837f888b3b9209d5892d90a228
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196876"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546375"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune 회사 포털에서 Windows 디바이스 등록  
 
@@ -61,17 +61,17 @@ Windows 10 디바이스의 버전에 따라 등록 단계가 다릅니다. 다�
 
 4. 확인된 버전이:  
 
-    *  __1607 이상이면__: [**설정** > **계정** > **회사 또는 학교 액세스** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)를 통해 디바이스를 등록합니다.   
+    * __1607 이상이면__: [**설정** > **계정** > **회사 또는 학교 액세스** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)를 통해 디바이스를 등록합니다.   
     * __1511 이하이면__: [**설정** > **계정** > **내 계정** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)를 통해 디바이스를 등록합니다.  
 
-### <a name="windows-10-mobile-devices"></a>Windows 10 모바일 디바이스       
+### <a name="windows-10-mobile-devices"></a>Windows 10 모바일 디바이스
 
-1.  __모든 앱__으로 이동하여 __설정__ 앱을 선택합니다.  
-2.  __시스템__ > __정보__를 선택합니다.      
-3.  __디바이스 정보__에서 __버전__을 확인합니다.  
+1. __모든 앱__으로 이동하여 __설정__ 앱을 선택합니다.
+2. __시스템__ > __정보__를 선택합니다.
+3. __디바이스 정보__에서 __버전__을 확인합니다.  
 4. 확인된 버전이:  
 
-    *  __1607 이상이면__: [**설정** > **회사 또는 학교 액세스** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)를 사용하여 디바이스를 등록합니다.   
+    * __1607 이상이면__: [**설정** > **회사 또는 학교 액세스** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)를 사용하여 디바이스를 등록합니다.   
     * __1511 이하이면__: [**설정** > **계정** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)를 사용하여 디바이스를 등록합니다.  
 
 ## <a name="enroll-non-windows-10-devices"></a>Windows 10 이외의 디바이스 등록  

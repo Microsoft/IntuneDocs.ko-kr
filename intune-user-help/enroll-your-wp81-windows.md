@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dd15e960b3c2802930981271cb6cd9ffea841cee
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497569"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545498"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune에서 Windows Phone 8.1 디바이스 등록  
 
@@ -34,45 +34,45 @@ Intune에 디바이스를 등록하려면 사용 권한 또는 현재 계정 상
 ## <a name="enroll-through-company-portal"></a>회사 포털을 통해 등록  
 Microsoft Store에서 회사 포털 앱을 설치할 수 있는 경우 다음 단계를 수행합니다. 
 
-1.  **시작** > **저장**을 탭합니다.  
+1. **시작** > **저장**을 탭합니다.  
 
-2.  **검색**을 탭하고 **회사 포털**을 입력합니다.  
+2. **검색**을 탭하고 **회사 포털**을 입력합니다.  
 
-3.  결과 목록에서 **회사 포털**을 탭합니다.  
+3. 결과 목록에서 **회사 포털**을 탭합니다.  
 
 
     ![회사 포털 검색 결과](./media/WP81-1-CP-search-store-v2.png)  
 
-4.  **회사 포털** &gt; **설치**를 탭합니다.  
+4. **회사 포털** &gt; **설치**를 탭합니다.  
 
 
     ![회사 포털을 설치합니다.](./media/WP81-2-CP-install-v2.png)  
 
 디바이스 등록:  
 
-1.  디바이스에서 **Microsoft Intune 회사 포털** 앱을 엽니다.  
+1. 디바이스에서 **Microsoft Intune 회사 포털** 앱을 엽니다.  
 
 
-2.  자격 증명을 제공합니다. 해당하는 경우 회사의 계약조건을 수락하라는 요청받을 수 있습니다.  
+2. 자격 증명을 제공합니다. 해당하는 경우 회사의 계약조건을 수락하라는 요청받을 수 있습니다.  
 
-3.  **내 디바이스**를 살짝 밉니다.  
+3. **내 디바이스**를 살짝 밉니다.  
 
-4.  **이 디바이스를 등록하거나 식별하려면 탭하세요.** 를 선택합니다.  
+4. **이 디바이스를 등록하거나 식별하려면 탭하세요.** 를 선택합니다.  
 
 
     ![이 디바이스를 등록하거나 식별하려면 탭하세요.](./media/WP81-enroll-1-swipe-my-devices.png)  
 
-5.  **이 디바이스 등록**을 탭합니다.  
+5. **이 디바이스 등록**을 탭합니다.  
 
 
     ![이 디바이스 화면을 등록합니다.](./media/WP81-enroll-2-enroll-this-device.png)  
 
-6.  **계정 추가**를 탭합니다.  
+6. **계정 추가**를 탭합니다.  
 
 
     ![작업 공간 설정 화면](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7.  요청에 따라 추가 정보를 입력한 다음 **로그인**을 탭하여 등록을 완료합니다. 이제 **설정** &gt; **회사** 페이지에 나열된 회사 계정이 표시됩니다.  
+7. 요청에 따라 추가 정보를 입력한 다음 **로그인**을 탭하여 등록을 완료합니다. 이제 **설정** &gt; **회사** 페이지에 나열된 회사 계정이 표시됩니다.  
 
 
     ![계정이 추가된 화면](./media/WP81-enroll-4-account-added.png)  
@@ -80,13 +80,13 @@ Microsoft Store에서 회사 포털 앱을 설치할 수 있는 경우 다음 �
 ## <a name="enroll-through-settings-app"></a>설정 앱을 통해 등록  
 Windows Phone 디바이스에서 Microsoft Store에 액세스할 수 없거나 Microsoft 계정이 없는 경우 다음 단계를 수행합니다.
 
-1.  **설정** &gt; **회사**를 탭합니다.  
+1. **설정** &gt; **회사**를 탭합니다.  
 
-2.  **계정 추가**를 탭한 다음 회사 계정을 사용하여 로그인합니다.  
+2. **계정 추가**를 탭한 다음 회사 계정을 사용하여 로그인합니다.  
 
-3.  요청에 따라 추가 정보를 입력한 다음 **로그인**을 탭하여 등록을 완료합니다.  
+3. 요청에 따라 추가 정보를 입력한 다음 **로그인**을 탭하여 등록을 완료합니다.  
 
-4.  회사 앱 또는 허브 설치를 묻는 메시지가 표시되면 관련 확인란을 선택했는지 확인한 다음 **완료**를 탭합니다.  
+4. 회사 앱 또는 허브 설치를 묻는 메시지가 표시되면 관련 확인란을 선택했는지 확인한 다음 **완료**를 탭합니다.  
 
 회사 지원팀이 등록 중에 회사 포털이 설치되도록 설정한 경우에는 앱 목록에 회사 포털이 표시됩니다.  
 

@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23476383abfddabffc411afa286c97b30ef04439
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc7b7cdc4388051761eafac322171e4c30075923
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040974"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549177"
 ---
 # <a name="reference-for-policy-entities"></a>정책 엔터티에 대한 참조
 
 **정책** 범주는 다음과 같은 정보를 추적하는 모바일 디바이스에 대한 엔터티를 포함합니다.
 
-  -  디바이스 구성 프로필, 앱 구성 프로필 및 규정 준수 정책의 인벤토리  
-  -  하루에 성공, 보류, 실패, 또는 오류 상태에 있는 디바이스의 수  
-  -  하루에 성공, 보류, 실패, 또는 오류 상태에 있는 사용자의 수  
-  -  성공, 보류, 실패, 또는 오류 상태에 있는 디바이스의 누적 수  
+  - 디바이스 구성 프로필, 앱 구성 프로필 및 규정 준수 정책의 인벤토리  
+  - 하루에 성공, 보류, 실패, 또는 오류 상태에 있는 디바이스의 수  
+  - 하루에 성공, 보류, 실패, 또는 오류 상태에 있는 사용자의 수  
+  - 성공, 보류, 실패, 또는 오류 상태에 있는 디바이스의 누적 수  
 
 ## <a name="policy"></a>정책
 

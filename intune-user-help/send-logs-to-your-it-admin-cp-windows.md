@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836475"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528761"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Windows용 회사 포털 앱에서 회사 지원팀에 이메일 보내기
 
@@ -32,7 +32,7 @@ Windows 10용 회사 포털 앱에서 앱 문제를 해결합니다. Windows 10 
 도움말을 요청하면 문제를 자세히 설명할 수 있는 위치에서 미리 채워진 이메일을 엽니다. 또한 진단 로그 ID도 포함됩니다. 지원팀에서 설명에 따라 문제를 해결할 수 없으면 Microsoft에 도움을 문의할 수 있습니다. Microsoft에서는 앱의 로그를 참조하려면 진단 ID가 필요합니다.   
 
 
-> [!Note]       
+> [!Note]
 > **도움 받기**를 클릭하면 회사 포털에서는 Microsoft의 지원팀에 사용자 로그를 자동으로 보냅니다. 이 단계는 Microsoft 지원팀에 제기된 문제를 보다 쉽게 해결하기 위한 사전 단계입니다. 위에서 설명한 대로 Microsoft 지원팀은 사용자 이메일에서 진단 ID를 사용하여 로그를 가져올 수 있습니다.  
 
 ## <a name="what-is-a-diagnostic-log"></a>진단 로그란?

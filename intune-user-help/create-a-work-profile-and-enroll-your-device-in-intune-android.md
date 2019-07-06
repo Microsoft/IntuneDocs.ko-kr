@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: f0a8b0b633f64a2ed6e3e14d5d884df80342067a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196929"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545476"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Android 회사 프로필을 사용하여 디바이스 등록
 
@@ -33,7 +33,7 @@ ms.locfileid: "66196929"
 
 ## <a name="create-work-profile-and-enroll-device"></a>회사 프로필 만들기 및 디바이스 등록
 
-1.  Android 회사 포털의 **시작** 화면에서 **로그인**을 탭한 다음, 회사 또는 학교 계정으로 로그인합니다. 무료 앱을 아직 설치하지 않은 경우 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)에서 다운로드하여 설치합니다.
+1. Android 회사 포털의 **시작** 화면에서 **로그인**을 탭한 다음, 회사 또는 학교 계정으로 로그인합니다. 무료 앱을 아직 설치하지 않은 경우 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)에서 다운로드하여 설치합니다.
 
     ![Android 회사 포털 앱 시작 화면](./media/and-enroll-0-welcome-screen.png)
 
@@ -41,15 +41,15 @@ ms.locfileid: "66196929"
 
     ![회사 액세스 설정 화면](/intune/media/android_cp_enroll_01_1709_new.png)
 
-3.  **업무용 프로필을 만드는 이유** 화면에서 수행할 수 있는 작업을 확인하고 **계속**을 탭합니다.
+3. **업무용 프로필을 만드는 이유** 화면에서 수행할 수 있는 작업을 확인하고 **계속**을 탭합니다.
 
     ![업무용 프로필을 만드는 이유](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  회사 지원팀이 디바이스에서 볼 수 있는 사항과 볼 수 없는 사항의 목록을 검토하고 **계속**을 누릅니다.
+4. 회사 지원팀이 디바이스에서 볼 수 있는 사항과 볼 수 없는 사항의 목록을 검토하고 **계속**을 누릅니다.
 
     ![회사 지원팀이 디바이스에서 볼 수 있는 항목과 볼 수 없는 항목](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  **다음 단계는?** 화면에서 등록하는 동안 발생하는 상황을 확인하고 **등록**을 누릅니다.
+5. **다음 단계는?** 화면에서 등록하는 동안 발생하는 상황을 확인하고 **등록**을 누릅니다.
 
     ![다음 단계 화면](/intune/media/android_work_cp_enroll_03_after_1710.png)
 

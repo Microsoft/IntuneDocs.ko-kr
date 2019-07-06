@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846250"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527627"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>iOS 디바이스에 Mobile Threat Defense 설치
 
@@ -38,12 +38,12 @@ ms.locfileid: "55846250"
 
 Mobile Threat Defense는 회사에서 회사 정보를 도용하려는 앱으로부터 안전하게 디바이스를 보호할 수 있는 방법입니다. 이 보호 디바이스를 추가하려면 회사에서 사용 중인 Mobile Threat Defense 서비스에 보고할 디바이스의 앱에 대한 추가 정보가 필요합니다. 개인 앱의 데이터는 회사에서 볼 수 없습니다. 디바이스의 모든 앱은 Mobile Threat Defense 서비스를 사용할 때 [회사에서 볼 수 있는 항목](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)에 추가됩니다. 다음은 회사에서 볼 수 있는 앱에 대한 정보의 일부입니다.
 
-*   앱 이름
+* 앱 이름
 * 앱 ID: 앱 스토어에서 앱을 식별하는 고유한 이름
-*   앱 버전 및 짧은 버전 번호: 앱의 특정 릴리스 번호
+* 앱 버전 및 짧은 버전 번호: 앱의 특정 릴리스 번호
 * 앱 번들 및 동적 크기: 디바이스에서 앱이 사용하는 공간의 크기
 * 앱 유효성: 앱의 사용이 승인되었는지 여부
-*   앱 관리 상태: 회사에서 관리하는 앱인지 또는 개인 앱인지의 여부
+* 앱 관리 상태: 회사에서 관리하는 앱인지 또는 개인 앱인지의 여부
 
 ## <a name="if-the-installation-doesnt-work"></a>설치가 작동하지 않는 경우
 

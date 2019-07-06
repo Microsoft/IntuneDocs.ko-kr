@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f6e73b784f0e938058dcb9d6001082f86ac800ff
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836434"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545658"
 ---
 # <a name="your-computer-is-already-enrolled"></a>컴퓨터가 이미 등록되어 있음
 
@@ -31,11 +31,11 @@ ms.locfileid: "55836434"
 
 컴퓨터를 연결하려면:
 
-1.  계정에 연결할 컴퓨터에서 **시작**과 **Microsoft Intune Center**를 차례로 선택합니다.
+1. 계정에 연결할 컴퓨터에서 **시작**과 **Microsoft Intune Center**를 차례로 선택합니다.
 
-2.  회사 포털을 엽니다.
+2. 회사 포털을 엽니다.
 
-3.  표시되는 메시지에 따라 컴퓨터와 사용자 계정을 연결합니다.
+3. 표시되는 메시지에 따라 컴퓨터와 사용자 계정을 연결합니다.
 
 디바이스를 등록 취소하려는 경우 [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) 또는 [Windows](unenroll-your-device-from-intune-windows.md) 중에서 보유하고 있는 디바이스 유형에 대한 지침을 사용하세요.
 

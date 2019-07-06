@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 328ec3111aae5f8363f2743d423a56eafc47d765
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57335074"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546264"
 ---
 # <a name="sync-your-windows-device-manually"></a>수동으로 Windows 디바이스 동기화
 
@@ -41,9 +41,9 @@ Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴
 ## <a name="sync-directly-from-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 직접 동기화
 크리에이터스 업데이트(버전 1703) 이상을 실행하는 Windows 10 디바이스를 수동으로 동기화하려면 다음 단계를 완료합니다.
 
-1.  디바이스에서 회사 포털 앱을 엽니다.
+1. 디바이스에서 회사 포털 앱을 엽니다.
 
-2.  **설정** > **동기화**를 선택합니다.
+2. **설정** > **동기화**를 선택합니다.
 
     ![회사 포털 앱의 홈페이지 스크린샷, 설정 강조 표시됨](./media/RS1_homePage_settings_04.png)  
     
@@ -96,7 +96,7 @@ Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴
 
 #### <a name="work-access-steps"></a>회사 액세스 단계
 
-1.  **회사 액세스**를 클릭합니다.
+1. **회사 액세스**를 클릭합니다.
 
     ![계정 유형으로 회사 액세스 선택](./media/win10pc-sync-3-work-access.png)
 
@@ -128,12 +128,12 @@ Intune은 회사 포털 앱, 바탕 화면 작업 표시줄 또는 시작 메뉴
        ![동기화 아이콘 선택](./media/win10m-sync-4-tap-sync.png)  
 ### <a name="microsoft-hololens"></a>Microsoft HoloLens  
 이러한 지침은 Windows 10 1주년 업데이트(RS1이라고도 함)를 실행하는 HoloLens 디바이스에 적용됩니다. 
-1.  디바이스에서 설정 앱을 엽니다.  
+1. 디바이스에서 설정 앱을 엽니다.  
 
-2.  **계정** > **회사 액세스**를 선택합니다.  
+2. **계정** > **회사 액세스**를 선택합니다.  
     ![HoloLens 설정 앱 스크린샷, 계정 링크 강조 표시됨](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-3.  연결된 계정 > **동기화**를 선택합니다. ![HoloLens 설정 앱 스크린샷, 동기화 단추 강조 표시됨](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+3. 연결된 계정 > **동기화**를 선택합니다.  ![HoloLens 설정 앱 스크린샷, 동기화 단추 강조 표시됨](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
 ### <a name="windows-phone-81"></a>Windows Phone 8.1
 

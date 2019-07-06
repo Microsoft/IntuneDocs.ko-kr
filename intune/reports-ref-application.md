@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: deea42bf9ef35d173761fddb16aa43eaa8876269
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a1ee376bdf2dff6dc59b6c51b20ff87c1ed81d82
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041072"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549228"
 ---
 # <a name="reference-for-application-entities"></a>애플리케이션 엔터티에 대한 참조
 
 **애플리케이션** 범주는 다음과 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
 
-  -  앱 버전
-  -  앱의 설치 원본
-  -  앱을 만든 개발자의 유형
-  -  앱에 대한 관리되는 소프트웨어 유형. 예: **사이드카** 또는 **데스크톱**
-  -  앱의 VPP(Volume Purchasing Program) 상태
+  - 앱 버전
+  - 앱의 설치 원본
+  - 앱을 만든 개발자의 유형
+  - 앱에 대한 관리되는 소프트웨어 유형. 예: **사이드카** 또는 **데스크톱**
+  - 앱의 VPP(Volume Purchasing Program) 상태
 
 ## <a name="apprevision"></a>AppRevision
 

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b59dc8599ce2dd5c99875a0032ccce5326c376cd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8290ccbb61308fb7f001b1a7d331fd366e13d902
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843751"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527737"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>iOS 디바이스에 Lookout for Work 설치
 
@@ -31,7 +31,7 @@ ms.locfileid: "55843751"
 
 ## <a name="what-you-need-to-do"></a>수행해야 할 작업
 
-1.  다음과 같은 메시지가 표시되면 **설치**를 탭하여 Lookout for Work가 디바이스에 설치되도록 합니다.
+1. 다음과 같은 메시지가 표시되면 **설치**를 탭하여 Lookout for Work가 디바이스에 설치되도록 합니다.
 
       ![설치 및 취소 단추가 포함된 앱 설치 프롬프트의 스크린샷입니다.](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fafd9c92a51c8ef258d151a3c19c271fdc45f4c2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835863"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529119"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>관리에서 Android 디바이스 등록 취소  
 
@@ -33,6 +33,9 @@ ms.locfileid: "55835863"
 * 디바이스는 더 이상 회사 포털에 나타나지 않습니다.
 * 회사 포털에서 앱을 설치할 수 없습니다.
 * 디바이스를 추가할 때 디바이스에서 변경된 모든 설정(예: 카메라 사용 안 함 또는 특정 암호 길이 요구)이 더 이상 적용되지 않습니다.  
+
+> [!NOTE]
+> 등록을 취소 하거나 Microsoft Intune 앱에서 회사 소유 장치를 제거할 수 없습니다. 초기 장치 설치 하는 동안 등록 된 장치와 조직의 리소스에 액세스 하려면 등록 해야 합니다.  
 
 1. 회사 포털에서 오른쪽 위 모서리로 이동하여 세 개의 수직 점을 탭합니다. 작업 메뉴가 열립니다.
 
@@ -48,8 +51,8 @@ ms.locfileid: "55835863"
 
 Android용 회사 포털 앱이 디바이스에 저장하는 모든 데이터를 제거하려면:
 
--   **애플리케이션** > **[*name of app*]** > **데이터 지우기**를 눌러서 앱 데이터를 지웁니다.
--   다음 폴더 삭제: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
+- **애플리케이션** > **[*name of app*]**  > **데이터 지우기**를 눌러서 앱 데이터를 지웁니다.
+- 다음 폴더 삭제: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
 ## <a name="uninstall-the-company-portal-app"></a>회사 포털 앱 제거  
 회사 포털은 디바이스 관리 앱입니다. 관리에서 디바이스 등록을 취소해야만 제거가 가능합니다. 완료되면 **제거**가 표시될 때까지 회사 포털 앱 아이콘을 탭하고 있습니다. **제거**를 탭하여 디바이스에서 앱을 제거합니다.  

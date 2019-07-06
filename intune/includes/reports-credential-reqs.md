@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 015e50d24149a6b6242eda86d5f3d62489e9955d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 76706fb39c3c5a69cba4fbf3f57c0b58d92e4a27
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511332"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67560008"
 ---
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
@@ -14,8 +14,8 @@ ms.locfileid: "61511332"
 
 Intune 데이터 웨어하우스(API 포함)에 액세스하기 위한 요구 사항은 다음과 같습니다.
 
-  -  사용자가 다음 중 하나여야 합니다.
-      -  Azure AD 전역 관리자
-      -  Intune 서비스 관리자
-      -  **Intune 데이터 웨어하우스** 리소스에 역할 기반 액세스 권한이 있는 사용자
-      -  [애플리케이션 전용 인증](../data-warehouse-app-only-auth.md)을 사용한 사용자 없는 인증 
+  - 사용자가 다음 중 하나여야 합니다.
+      - Azure AD 전역 관리자
+      - Intune 서비스 관리자
+      - **Intune 데이터 웨어하우스** 리소스에 역할 기반 액세스 권한이 있는 사용자
+      - [애플리케이션 전용 인증](../data-warehouse-app-only-auth.md)을 사용한 사용자 없는 인증 

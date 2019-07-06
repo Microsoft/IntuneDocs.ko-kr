@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f6caf8e48cd9781648acf1de0152ec107d5246
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 20bdfcce6574d31c37442a7bad58582aa7ea2fb6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850909"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546145"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>회사 포털 개발자에게 Android 디바이스에 대한 로그 보내기
 
@@ -34,16 +34,16 @@ ms.locfileid: "55850909"
 
 로그를 Microsoft에 보내려면 다음과 같이 수행합니다.
 
-1.  회사 포털 앱을 엽니다.
+1. 회사 포털 앱을 엽니다.
 
-2.  **메뉴** > **도움말** > **이메일 지원**을 탭합니다.
+2. **메뉴** > **도움말** > **이메일 지원**을 탭합니다.
 
     > [!NOTE]
     > **메뉴**는 보유하고 있는 Android 디바이스에 따라 소프트웨어 단추나 하드웨어 단추일 수 있습니다.
 
-3.  **로그만 업로드**를 탭합니다.
+3. **로그만 업로드**를 탭합니다.
 
-4.  업로드가 완료되면 인시던트 ID가 표시됩니다. 사용자 레코드에 대한 ID를 저장합니다.
+4. 업로드가 완료되면 인시던트 ID가 표시됩니다. 사용자 레코드에 대한 ID를 저장합니다.
 
 Android 담당 회사 포털 팀에게 직접 연락하려면 <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>으로 이메일을 보냅니다. 
 

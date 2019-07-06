@@ -18,30 +18,30 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bcae8e48fd9c6558d77aced73d12b15e54b2f7
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: fe6cd46f6a85204d5859993a69ac5bf5b253e048
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040931"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546336"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Android용 회사 포털 앱 설치
 
 회사 포털은 회사 또는 학교 앱, 전자 메일 및 인터넷 연결에 액세스할 수 있는 앱입니다. 이 앱은 디바이스를 보호하여 조직의 정보를 안전하게 유지합니다. 예를 들어 회사 앱을 최신 상태로 유지하거나 일정 시간 후에 디바이스가 자동으로 잠기도록 할 수 있습니다. 회사 포털 및 장치 관리에서 해당 파트의 기능에 대 한 자세한 내용은 참조 하세요 [Android 장치를 등록 하는 이유에](why-enroll-android-device.md)합니다.  
 
-1.  **홈** > **Play 스토어**를 탭합니다.
+1. **홈** > **Play 스토어**를 탭합니다.
 
-2.  **검색** 상자에 **intune 회사 포털**을 입력합니다.  
+2. **검색** 상자에 **intune 회사 포털**을 입력합니다.  
 
-3.  **Intune 회사 포털**을 탭합니다.
+3. **Intune 회사 포털**을 탭합니다.
 
     ![android-search-company-portal](./media/and-cpinstall-1-search-cp.png)
 
-4.  **설치**를 탭합니다.
+4. **설치**를 탭합니다.
 
     ![android-install-company-portal](./media/and-cpinstall-2-install.png)
 
-5.  **동의함**을 탭합니다.
+5. **동의함**을 탭합니다.
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 

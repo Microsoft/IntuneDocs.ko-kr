@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8581d047e76ac1734b2d6c7816facf601e397957
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 816ac1d97e7be485717905fe9d5d62b812408446
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041728"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512208"
 ---
-#  <a name="intune-data-warehouse-collections"></a>Intune 데이터 웨어하우스 컬렉션
+# <a name="intune-data-warehouse-collections"></a>Intune 데이터 웨어하우스 컬렉션
 
 다음 Intune 데이터 웨어하우스 컬렉션은 데이터 웨어하우스 API 엔터티의 v1.0 컬렉션에 대한 속성, 설명 및 예제를 제공합니다. 
 
@@ -236,7 +236,7 @@ ms.locfileid: "66041728"
 | RowLastModifiedDateTimeUTC | 데이터 웨어하우스에서 디바이스를 마지막으로 수정한 UTC 날짜 및 시간                                                                                                       |
 | 제조업체               | 디바이스 제조업체                                                                                                                                                             |
 | 모델                      | 디바이스의 모델                                                                                                                                                                    |
-| OperatingSystem            | 디바이스 운영 체제는  Windows, iOS 등입니다.                                                                                                                                   |
+| OperatingSystem            | 디바이스 운영 체제는 Windows, iOS 등입니다.                                                                                                                                   |
 | IsDeleted                  | 디바이스가 삭제되었는지 여부를 표시하는 이진입니다.                                                                                                                                 |
 | AndroidSecurityPatchLevel  | Android 보안 패치 수준                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8756ad134853bdd19155c3d8f50d1f07960e80f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045365"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547884"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 데이터 웨어하우스 데이터 모델
 
@@ -32,22 +32,22 @@ Intune 데이터 웨어하우스 샘플 데이터는 항상 변화하는 모바�
 
 웨어하우스는 다음과 같은 개략적인 영역으로 데이터를 노출합니다.
 
-  -  앱 보호가 설정된 앱 및 사용량
-  -  등록된 디바이스, 속성 및 인벤토리
-  -  앱 및 소프트웨어 인벤토리
-  -  디바이스 구성 및 규정 준수 정책
+  - 앱 보호가 설정된 앱 및 사용량
+  - 등록된 디바이스, 속성 및 인벤토리
+  - 앱 및 소프트웨어 인벤토리
+  - 디바이스 구성 및 규정 준수 정책
 
 이러한 영역에는 Intune 환경에 적합한 엔터티가 포함됩니다. 다음 항목의 엔터티 집합에 대한 정보를 찾을 수 있습니다.
 
-  -  [애플리케이션](reports-ref-application.md)
-  -  [날짜](reports-ref-date.md)
-  -  [디바이스](reports-ref-devices.md)
-  -  [Intune 관리 확장](reports-ref-intunemanagementextension.md)
-  -  [정책](reports-ref-policy.md)
-  -  [모바일 앱 관리(MAM)](reports-ref-mobile-app-management.md)
-  -  [사용자](reports-ref-user.md)
-  -  [현재 사용자](reports-ref-current-user.md)
-  -  [사용자 디바이스 연결](reports-ref-user-device.md)
+  - [애플리케이션](reports-ref-application.md)
+  - [날짜](reports-ref-date.md)
+  - [디바이스](reports-ref-devices.md)
+  - [Intune 관리 확장](reports-ref-intunemanagementextension.md)
+  - [정책](reports-ref-policy.md)
+  - [모바일 앱 관리(MAM)](reports-ref-mobile-app-management.md)
+  - [사용자](reports-ref-user.md)
+  - [현재 사용자](reports-ref-current-user.md)
+  - [사용자 디바이스 연결](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>관계: 별모양 스키마 모델
 

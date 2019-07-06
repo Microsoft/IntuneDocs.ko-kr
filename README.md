@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804434"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545230"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source Code of Conduct(Microsoft 오픈 소스 규정)
 
@@ -30,7 +30,7 @@ Microsoft의 클라우드 및 엔터프라이즈 분야에 관한 기술 콘텐�
     5. 끌어오기 요청을 만듭니다.
     
     **옵션 2: 이 리포지토리에서 문서를 찾아 업데이트**  
-    1.  대부분의 토픽은 `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`에 있습니다. 이 폴더에서 `troubleshoot-policies-in-microsoft-intune` 같은 토픽 이름을 검색합니다. 
+    1. 대부분의 토픽은 `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`에 있습니다. 이 폴더에서 `troubleshoot-policies-in-microsoft-intune` 같은 토픽 이름을 검색합니다. 
     2. 링크를 선택하고 연필 아이콘을 클릭합니다. 연필 아이콘에 마우스를 올려 놓으면 **이 파일 편집** 도구 설명이 표시됩니다. 
     3. 변경한 다음, 변경 내용을 **커밋**합니다. 
     4. 끌어오기 요청을 만듭니다. 
@@ -45,7 +45,7 @@ Microsoft의 클라우드 및 엔터프라이즈 분야에 관한 기술 콘텐�
   
     GitHub 계정을 만들고 Microsoft 계정에 연결하는 것은 일회성 작업입니다. 계정이 연결된 경우 업데이트를 하기 위해 라이선스 계약에 서명할 필요가 없습니다. 
 
-  2. 브라우저에서 문서로 이동하여 **편집**을 선택합니다. 개인 리포지토리(IntuneDocs-pr)로 전환합니다.  
+  2. 브라우저에서 문서로 이동하여 **편집**을 선택합니다. 프라이빗 리포지토리(IntuneDocs-pr)로 전환합니다.  
     **발신자**: https://github.com/MicrosoftDocs/IntuneDocs/...  
     **수신자**: https://github.com/MicrosoftDocs/IntuneDocs-pr/...
   

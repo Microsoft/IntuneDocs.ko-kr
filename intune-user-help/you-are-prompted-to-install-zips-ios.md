@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb70d999cf43d568ad19f2ba83618f6ecfbaf7d7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 949a310b1588876cfe0c547dfa73f1510a710710
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844293"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527596"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>iOS 디바이스에 Zimperium zIPS 설치
 
@@ -29,7 +29,7 @@ ms.locfileid: "55844293"
 
 ## <a name="what-you-need-to-do"></a>수행해야 할 작업 
 
-1.  다음과 같은 메시지가 표시되면 **설치**를 눌러 Zimperium zIPS가 디바이스에 설치되도록 합니다.
+1. 다음과 같은 메시지가 표시되면 **설치**를 눌러 Zimperium zIPS가 디바이스에 설치되도록 합니다.
 
 2. 다음과 같은 메시지가 나타나면 **설정**을 탭하고 **위치 서비스**를 켠 다음 **계속**을 탭합니다.
 

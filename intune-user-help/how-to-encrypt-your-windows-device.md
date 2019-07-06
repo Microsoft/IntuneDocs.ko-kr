@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 477aa18ebb1e079573e7962429d33a8ca4afabed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7e4fa124d1b3fdb765ac3da964d57ade5c1c4c65
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834333"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545634"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Windows 디바이스를 암호화하는 방법
 
@@ -31,8 +31,8 @@ ms.locfileid: "55834333"
 
 데스크톱 디바이스가 있는 경우 아래의 지침을 따라 디바이스를 암호화합니다.
 
-1.  **BitLocker 관리** 앱을 검색한 다음 시작합니다.
+1. **BitLocker 관리** 앱을 검색한 다음 시작합니다.
 
-2.  **BitLocker 켜기**를 클릭하고 표시되는 지침에 따라 각 드라이브를 암호화합니다.
+2. **BitLocker 켜기**를 클릭하고 표시되는 지침에 따라 각 드라이브를 암호화합니다.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

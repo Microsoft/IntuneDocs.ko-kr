@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 059f39a52b1dbc6e5f7a014741c0657a2ba8bc10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a8d16e058afbedfd1a343560b3727d33776da45
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045351"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547866"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>모바일 앱 관리(MAM) 엔터티에 대한 참조
 
 **모바일 앱 관리** 범주에는 다음과 같은 모바일 앱에 대한 엔터티가 포함됩니다.
 
-  -  앱
-  -  Instances
-  -  체크인 상태
-  -  상태
-  -  정책 상태
-  -  등록 상태
-  -  플랫폼 형식
+  - 앱
+  - Instances
+  - 체크인 상태
+  - 상태
+  - 정책 상태
+  - 등록 상태
+  - 플랫폼 형식
 
 ## <a name="mamapplication"></a>MamApplication
 

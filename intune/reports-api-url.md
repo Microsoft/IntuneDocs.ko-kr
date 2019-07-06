@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122a7eef56f2850fced164a37b518f650ed2ecdf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 38e24bff110cea7d7a565ca00fc0e3e13e37744f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045866"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530751"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 데이터 웨어하우스 API 엔드포인트
 
@@ -69,8 +69,8 @@ URL에는 다음 요소가 포함됩니다.
 
 `DateKey` 범위 필터는 `dateKey`를 키 속성으로 사용하여 일부 컬렉션에 다운로드할 데이터의 양을 제한하는 데 사용될 수 있습니다. `DateKey` 필터는 다음 `$filter` 쿼리 매개 변수를 지정하여 서비스 성능을 최적화하는 데 사용할 수 있습니다.
 
-1.  `$filter`에 `DateKey`만 사용할 경우 `lt/le/eq/ge/gt` 연산자를 지정할 수 있고, 시작 날짜 및/또는 종료 날짜에 매핑할 수 있는 논리 연산자 `and`를 결합할 수 있습니다.
-2.  `maxhistorydays`가 사용자 지정 쿼리 옵션으로 제공됩니다.<br>
+1. `$filter`에 `DateKey`만 사용할 경우 `lt/le/eq/ge/gt` 연산자를 지정할 수 있고, 시작 날짜 및/또는 종료 날짜에 매핑할 수 있는 논리 연산자 `and`를 결합할 수 있습니다.
+2. `maxhistorydays`가 사용자 지정 쿼리 옵션으로 제공됩니다.<br>
 
 ## <a name="filter-examples"></a>필터 예제
 

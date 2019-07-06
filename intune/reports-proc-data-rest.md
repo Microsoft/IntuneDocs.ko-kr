@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412726"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558542"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST 클라이언트를 사용하여 Intune 데이터 웨어하우스 API에서 데이터 가져오기
 
@@ -43,10 +43,10 @@ Azure에서 네이티브 앱을 만듭니다. 이 네이티브 앱은 클라이�
 1. 테넌트의 Azure Portal에 로그인합니다. **Azure Active Directory** > **앱 등록**을 선택하여 **앱 등록** 창을 엽니다.
 2. **새 앱 등록**을 선택합니다.
 3. 앱 세부 정보를 입력합니다.
-    1.  **이름**에 이름을 입력합니다(예: Intune Data Warehouse Client).
-    2.  **애플리케이션 종류**로 **네이티브**를 선택합니다.
-    3.  **로그온 URL**의 URL을 입력합니다. 로그온 URL은 구체적인 시나리오에 따라 달라지지만, Postman을 사용하려는 경우 `https://www.getpostman.com/oauth2/callback`을 입력합니다. Azure AD에 인증할 때 클라이언트 인증 단계에 콜백을 사용합니다.
-4.  **만들기**를 선택합니다.
+    1. **이름**에 이름을 입력합니다(예: Intune Data Warehouse Client).
+    2. **애플리케이션 종류**로 **네이티브**를 선택합니다.
+    3. **로그온 URL**의 URL을 입력합니다. 로그온 URL은 구체적인 시나리오에 따라 달라지지만, Postman을 사용하려는 경우 `https://www.getpostman.com/oauth2/callback`을 입력합니다. Azure AD에 인증할 때 클라이언트 인증 단계에 콜백을 사용합니다.
+4. **만들기**를 선택합니다.
 
      ![Intune Data Warehouse 클라이언트 앱](./media/reports-get_rest_data_client_overview.png)
 
@@ -56,21 +56,21 @@ Azure에서 네이티브 앱을 만듭니다. 이 네이티브 앱은 클라이�
 
 이제 Azure에 정의된 앱이 있습니다. 네이티브 앱에서 Microsoft Intune API에 대한 액세스 권한을 부여합니다.
 
-1.  네이티브 앱을 선택합니다. **Intune 데이터 웨어하우스 클라이언트**와 같은 앱 이름이 지정되었습니다.
-2.  **설정** 창에서 **필요한 권한** 선택
-3.  **필요한 권한** 창에서 **추가**를 선택합니다.
-4.  **API 선택**을 선택합니다.
-5.  웹앱 이름을 검색합니다. 웹앱 이름은 **Microsoft Intune API**로 지정되었습니다.
-6.  목록에서 해당 앱을 선택합니다.
-7.  **선택**을 선택합니다.
-8.  **위임된 권한** 상자를 선택하여 **Get data warehouse information from Microsoft Intune**(Microsoft Intune에서 데이터 웨어하우스 정보 가져오기)을 추가합니다.
+1. 네이티브 앱을 선택합니다. **Intune 데이터 웨어하우스 클라이언트**와 같은 앱 이름이 지정되었습니다.
+2. **설정** 창에서 **필요한 권한** 선택
+3. **필요한 권한** 창에서 **추가**를 선택합니다.
+4. **API 선택**을 선택합니다.
+5. 웹앱 이름을 검색합니다. 웹앱 이름은 **Microsoft Intune API**로 지정되었습니다.
+6. 목록에서 해당 앱을 선택합니다.
+7. **선택**을 선택합니다.
+8. **위임된 권한** 상자를 선택하여 **Get data warehouse information from Microsoft Intune**(Microsoft Intune에서 데이터 웨어하우스 정보 가져오기)을 추가합니다.
 
     ![액세스 사용 - Microsot Intune API](./media/reports-get_rest_data_client_access.png)
 
-9.  **선택**을 선택합니다.
-10.  **완료**를 선택합니다.
-11.  필요에 따라 필요한 권한 창에서 **사용 권한 부여**를 선택합니다. 그러면 현재 디렉터리의 모든 계정에 액세스 권한이 부여됩니다. 따라서 테넌트의 모든 사용자에게 동의 대화 상자가 나타나지 않습니다. 자세한 내용은 [Azure Active Directory와 애플리케이션 통합](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)을 참조하세요.
-12.  **예**를 선택합니다.
+9. **선택**을 선택합니다.
+10. **완료**를 선택합니다.
+11. 필요에 따라 필요한 권한 창에서 **사용 권한 부여**를 선택합니다. 그러면 현재 디렉터리의 모든 계정에 액세스 권한이 부여됩니다. 따라서 테넌트의 모든 사용자에게 동의 대화 상자가 나타나지 않습니다. 자세한 내용은 [Azure Active Directory와 애플리케이션 통합](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)을 참조하세요.
+12. **예**를 선택합니다.
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Postman을 사용하여 Microsoft Intune API에서 데이터 가져오기
 
@@ -110,19 +110,19 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 
 #### <a name="add-the-information-used-to-request-the-token"></a>토큰을 요청하는 데 사용되는 정보 추가
 
-1.  아직 설치하지 않은 경우 Postman을 다운로드합니다. Postman을 다운로드하려면 [www.getpostman](https://www.getpostman.com)을 참조하세요.
-2.  Postman을 엽니다. HTTP 작업 **GET**을 선택합니다.
-3.  엔드포인트 URL을 주소에 붙여넣습니다. 다음과 유사합니다.  
+1. 아직 설치하지 않은 경우 Postman을 다운로드합니다. Postman을 다운로드하려면 [www.getpostman](https://www.getpostman.com)을 참조하세요.
+2. Postman을 엽니다. HTTP 작업 **GET**을 선택합니다.
+3. 엔드포인트 URL을 주소에 붙여넣습니다. 다음과 유사합니다.  
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
-4.  **Authorization**(권한 부여) 탭을 선택하고 **Type**(형식) 목록에서 **OAuth 2.0**을 선택합니다.
-5.  **Get New Access Token**(새 액세스 토큰 가져오기)을 선택합니다.
-6.  Azure에서 이미 앱에 콜백 URL을 추가했는지 확인합니다. 콜백 URL은 `https://www.getpostman.com/oauth2/callback`입니다.
-7.  **Token Name**(토큰 이름)에 Bearer를 입력합니다.
-8.  **Auth URL**(인증 URL)을 추가합니다. 다음과 유사합니다.  
+4. **Authorization**(권한 부여) 탭을 선택하고 **Type**(형식) 목록에서 **OAuth 2.0**을 선택합니다.
+5. **Get New Access Token**(새 액세스 토큰 가져오기)을 선택합니다.
+6. Azure에서 이미 앱에 콜백 URL을 추가했는지 확인합니다. 콜백 URL은 `https://www.getpostman.com/oauth2/callback`입니다.
+7. **Token Name**(토큰 이름)에 Bearer를 입력합니다.
+8. **Auth URL**(인증 URL)을 추가합니다. 다음과 유사합니다.  
 
     `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
-9.  **Access Token URL**(액세스 토큰 URL)을 추가합니다. 다음과 유사합니다.  
+9. **Access Token URL**(액세스 토큰 URL)을 추가합니다. 다음과 유사합니다.  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
@@ -141,8 +141,8 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>Postman을 사용하여 엔드포인트로 호출 보내기
 
-1.  **보내기**를 선택합니다.
-2.  반환 데이터는 Postman 응답 본문에 표시됩니다.
+1. **보내기**를 선택합니다.
+2. 반환 데이터는 Postman 응답 본문에 표시됩니다.
 
     ![Postman 클라이언트 상태는 200 확인과 같음](./media/reports-postman_200OK.png)
 
@@ -155,7 +155,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
 
 1. **Microsoft Visual Studio**를 엽니다.
 2. **파일** > **새 프로젝트**를 선택합니다. **Visual C#** 을 확장하고 **콘솔 앱(.Net Framework)** 을 선택합니다.
-3. 프로젝트 이름을 ` IntuneDataWarehouseSamples`로 지정하고 프로젝트를 저장할 위치로 이동한 다음 **확인**을 선택합니다.
+3. 프로젝트 이름을 `IntuneDataWarehouseSamples`로 지정하고 프로젝트를 저장할 위치로 이동한 다음 **확인**을 선택합니다.
 4. 솔루션 탐색기에서 솔루션의 이름을 마우스 오른쪽 단추로 클릭한 다음 **솔루션용 NuGet 패키지 관리**를 선택합니다. **찾아보기**를 클릭한 다음 검색 상자에서 `Microsoft.IdentityModel.Clients.ActiveDirectory`를 선택합니다.
 5. 패키지를 선택하고 솔루션 패키지 관리에서 **IntuneDataWarehouseSamples** 프로젝트를 선택한 다음 **설치**를 선택합니다.
 6. **동의함**을 선택하여 NuGet 패키지 라이선스에 동의합니다.

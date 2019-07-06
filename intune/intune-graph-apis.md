@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819729"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548915"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD를 사용하여 Microsoft Graph의 Intune API에 액세스하는 방법
 
@@ -61,23 +61,23 @@ Microsoft Graph에서 Intune API에 액세스하려면 다음 항목이 필요�
 
 Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니다.
 
-1.  에 로그인 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 관리 자격 증명을 사용 합니다.
+1. 에 로그인 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 관리 자격 증명을 사용 합니다.
 
     해당하는 경우 다음 계정을 사용할 수 있습니다.
     - 테넌트 관리자 계정
     - **사용자가 애플리케이션을 등록할 수 있음** 설정이 활성화된 테넌트 사용자 계정
 
-2.  메뉴에서 **Azure Active Directory** &gt; **앱 등록**을 선택합니다.
+2. 메뉴에서 **Azure Active Directory** &gt; **앱 등록**을 선택합니다.
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  **새 애플리케이션 등록**을 선택하여 새 애플리케이션을 만들거나 기존 애플리케이션을 선택합니다.  기존 애플리케이션을 선택하는 경우 다음 단계는 건너뛰세요.
+3. **새 애플리케이션 등록**을 선택하여 새 애플리케이션을 만들거나 기존 애플리케이션을 선택합니다.  기존 애플리케이션을 선택하는 경우 다음 단계는 건너뛰세요.
 
-4.  **만들기** 블레이드에서 다음을 지정합니다.
+4. **만들기** 블레이드에서 다음을 지정합니다.
 
-    1.  사용자가 로그인할 때 표시되는 애플리케이션의 **이름**
+    1. 사용자가 로그인할 때 표시되는 애플리케이션의 **이름**
 
-    2.  **애플리케이션 유형** 및 **리디렉션 URI** 값
+    2. **애플리케이션 유형** 및 **리디렉션 URI** 값
 
         이러한 정보는 요구 사항에 따라 달라집니다. 예를 들어 ADAL(Azure AD [인증 라이브러리](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries))을 사용하는 경우에는 **애플리케이션 유형**를 `Native`로, **리디렉션 URI**를 `urn:ietf:wg:oauth:2.0:oob`로 설정합니다.
 
@@ -85,19 +85,19 @@ Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니�
 
         자세한 내용을 알아보려면 [Azure AD의 인증 시나리오](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)를 참조하세요.
 
-5.  애플리케이션 블레이드에서 다음을 수행합니다.
+5. 애플리케이션 블레이드에서 다음을 수행합니다.
 
-    1.  **애플리케이션 ID** 값을 적어 둡니다.
+    1. **애플리케이션 ID** 값을 적어 둡니다.
 
-    2.  **설정** &gt; **API 액세스** &gt; **필요한 권한**을 선택합니다.
+    2. **설정** &gt; **API 액세스** &gt; **필요한 권한**을 선택합니다.
 
     <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6.  **필요한 권한** 블레이드에서 **추가** &gt; **API 액세스 추가** &gt; **API 선택**을 선택합니다.
+6. **필요한 권한** 블레이드에서 **추가** &gt; **API 액세스 추가** &gt; **API 선택**을 선택합니다.
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  **API 선택** 블레이드에서 **Microsoft Graph** &gt; **선택**을 선택합니다.  **액세스 사용** 블레이드가 열리고 애플리케이션에 사용할 수 있는 권한 범위가 나열됩니다.
+7. **API 선택** 블레이드에서 **Microsoft Graph** &gt; **선택**을 선택합니다.  **액세스 사용** 블레이드가 열리고 애플리케이션에 사용할 수 있는 권한 범위가 나열됩니다.
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -334,28 +334,28 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 
 이 예제에서는 C#을 사용하여 Intune 계정과 연결된 디바이스 목록을 검색하는 방법을 보여 줍니다.
 
-1.  Visual Studio를 시작한 다음 새 Visual C# 콘솔 앱(.NET Framework) 프로젝트를 만듭니다.
+1. Visual Studio를 시작한 다음 새 Visual C# 콘솔 앱(.NET Framework) 프로젝트를 만듭니다.
 
-2.  프로젝트의 이름을 입력하고 필요에 따라 다른 세부 정보를 입력합니다.
+2. 프로젝트의 이름을 입력하고 필요에 따라 다른 세부 정보를 입력합니다.
 
     <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" alt="Creating a C# console app project in Visual Studio"  />
 
-3.  솔루션 탐색기를 사용하여 프로젝트에 Microsoft ADAL NuGet 패키지를 추가합니다.
+3. 솔루션 탐색기를 사용하여 프로젝트에 Microsoft ADAL NuGet 패키지를 추가합니다.
 
-    1.  솔루션 탐색기를 마우스 오른쪽 단추로 클릭합니다.
-    2.  **NuGet 패키지 관리...** &gt; **찾아보기**를 선택합니다.
-    3.  `Microsoft.IdentityModel.Clients.ActiveDirectory`를 선택하고 **설치**를 선택합니다.
+    1. 솔루션 탐색기를 마우스 오른쪽 단추로 클릭합니다.
+    2. **NuGet 패키지 관리...** &gt; **찾아보기**를 선택합니다.
+    3. `Microsoft.IdentityModel.Clients.ActiveDirectory`를 선택하고 **설치**를 선택합니다.
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
-4.  **Program.cs** 맨 위에 다음 문을 추가합니다.
+4. **Program.cs** 맨 위에 다음 문을 추가합니다.
 
     ``` csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;</p>
     using System.Net.Http;
     ```
 
-5.  권한 부여 헤더를 만드는 메서드를 추가합니다.
+5. 권한 부여 헤더를 만드는 메서드를 추가합니다.
 
     ``` csharp
     private static async Task<string> GetAuthorizationHeader()
@@ -386,14 +386,14 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
     }
     ```
 
-7.  **Main**을 업데이트하여 **GetMyManagedDevices**를 호출합니다.
+7. **Main**을 업데이트하여 **GetMyManagedDevices**를 호출합니다.
 
     ``` csharp
     string devices = GetMyManagedDevices().GetAwaiter().GetResult();
     Console.WriteLine(devices);
     ```
 
-8.  프로그램을 컴파일하고 실행합니다.  
+8. 프로그램을 컴파일하고 실행합니다.  
 
 프로그램을 처음 실행하면 두 개의 프롬프트가 표시됩니다.  첫 번째 프롬프트는 자격 증명을 요청하고, 두 번째 프롬프트는 `managedDevices` 요청에 대한 권한을 부여합니다.  
 
@@ -553,11 +553,11 @@ catch {
 
 확인 방법은 다음과 같습니다.
 
-1.  클라이언트 계정이 대상 Azure AD 테넌트에 있는지 확인합니다.
+1. 클라이언트 계정이 대상 Azure AD 테넌트에 있는지 확인합니다.
 
-2.  테넌트 계정이 사용자의 애플리케이션 등록을 허용하는지 확인합니다(**사용자 설정** 참조).
+2. 테넌트 계정이 사용자의 애플리케이션 등록을 허용하는지 확인합니다(**사용자 설정** 참조).
 
-3.  각 테넌트 간의 관계를 설정합니다.  
+3. 각 테넌트 간의 관계를 설정합니다.  
 
     이렇게 하려면 다음 중 하나를 수행합니다.
 
@@ -567,15 +567,15 @@ catch {
 
 테넌트의 게스트로 포함할 사용자를 초대하려면 다음을 수행합니다.
 
-1.  **빠른 태스크** 패널에서 **게스트 사용자 추가**를 선택합니다.
+1. **빠른 태스크** 패널에서 **게스트 사용자 추가**를 선택합니다.
 
     <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
-2.  클라이언트의 전자 메일 주소를 입력하고 필요에 따라 초대를 위한 개인 설정 메시지를 추가합니다.
+2. 클라이언트의 전자 메일 주소를 입력하고 필요에 따라 초대를 위한 개인 설정 메시지를 추가합니다.
 
     <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
-3.  **초대**를 선택합니다.
+3. **초대**를 선택합니다.
 
 그러면 해당 사용자에게 초대가 전송됩니다.
 

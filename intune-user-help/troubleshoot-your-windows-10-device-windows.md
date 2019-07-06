@@ -18,17 +18,17 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: bbd4f8f0925aac5aada44277c4d21a71b412e0e7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501241"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546675"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 디바이스 등록 문제 해결
 디바이스를 등록했지만 여전히 회사 또는 학교 이메일과 파일에 액세스할 수 없는 경우 다음 문제 해결 단계를 시도해 보세요.  
 
-1.  다음의 화면 두 개를 보고 내 디바이스에 표시되는 모습과 비슷한 것을 하나 찾습니다. 내 디바이스에 표시되는 화면의 단계를 따릅니다.
+1. 다음의 화면 두 개를 보고 내 디바이스에 표시되는 모습과 비슷한 것을 하나 찾습니다. 내 디바이스에 표시되는 화면의 단계를 따릅니다.
 
     이 화면이 표시되면 [회사 또는 학교 액세스가 표시되는 경우 따라야 하는 문제 해결 절차](#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)의 단계를 수행합니다.
 

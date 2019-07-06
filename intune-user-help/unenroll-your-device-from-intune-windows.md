@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46f2193a3a13183d41b10f03b6efe7100f0d9f9d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50833b33583dcc1b49eb9009995b8ccd6c79e1f0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840368"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546640"
 ---
 # <a name="remove-your-windows-device-from-management"></a>관리에서 Windows 디바이스 제거
 
@@ -76,24 +76,24 @@ ms.locfileid: "55840368"
 ## <a name="remove-your-windows-81-computer"></a>Windows 8.1 컴퓨터 제거
 Intune에서 Windows 8.1 컴퓨터를 제거하려면 다음 단계를 완료합니다.
 
-1.  **PC 설정** > **네트워크** > **작업 공간**으로 이동합니다.
-2.  **작업 공간 연결**에서 **나가기**를 선택합니다.
-3.  **디바이스 관리 설정**에서 **끄기**를 선택합니다.
-4.  팝업 창이 열리면 **해제**를 선택합니다.
+1. **PC 설정** > **네트워크** > **작업 공간**으로 이동합니다.
+2. **작업 공간 연결**에서 **나가기**를 선택합니다.
+3. **디바이스 관리 설정**에서 **끄기**를 선택합니다.
+4. 팝업 창이 열리면 **해제**를 선택합니다.
 
 ## <a name="remove-your-windows-81-phone"></a>Windows 8.1 휴대폰 제거
 Intune에서 Windows 8.1 휴대폰을 제거하려면 다음 단계를 완료합니다.
 
-1.  **설정** > **작업 공간**으로 이동합니다.
-2.  등록을 취소할 작업 공간 계정을 탭합니다.
-3.  화면 맨 아래에서 **삭제**를 탭합니다.
-4.  **계정 삭제** 대화 상자에서 **삭제**를 탭합니다.  
+1. **설정** > **작업 공간**으로 이동합니다.
+2. 등록을 취소할 작업 공간 계정을 탭합니다.
+3. 화면 맨 아래에서 **삭제**를 탭합니다.
+4. **계정 삭제** 대화 상자에서 **삭제**를 탭합니다.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>회사 포털을 제거한 후 개인 정보 제거  
 
 회사 포털이 Windows 디바이스에 저장하는 두 종류의 데이터가 있습니다.
 
--   **진단 로그**: Microsoft에서 수집하는 표준 앱 작업 데이터입니다. 회사 포털 앱을 제거하면 자동으로 삭제됩니다. 예를 들어 앱 활동 데이터는 앱이 얼마나 오래 열려 있었는지 또는 작동 중단되었는지에 대한 데이터입니다.
--   **애플리케이션 캐시**: 아이콘 및 설정과 같이 앱 작동에 필요한 지원 파일입니다.
+- **진단 로그**: Microsoft에서 수집하는 표준 앱 작업 데이터입니다. 회사 포털 앱을 제거하면 자동으로 삭제됩니다. 예를 들어 앱 활동 데이터는 앱이 얼마나 오래 열려 있었는지 또는 작동 중단되었는지에 대한 데이터입니다.
+- **애플리케이션 캐시**: 아이콘 및 설정과 같이 앱 작동에 필요한 지원 파일입니다.
 
 저장된 로그 및 캐시를 삭제하려면 다음 단계 중 하나를 수행합니다.
 

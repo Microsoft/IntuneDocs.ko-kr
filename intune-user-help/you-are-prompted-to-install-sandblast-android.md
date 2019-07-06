@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b55d41939b9772227cee0f12da65040edbca0d0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a012cb7fe25b70ee260f2b3a2d49a47c3bae06a3
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843768"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558461"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Android 디바이스에 SandBlast Mobile Protect를 설치해야 함
 
@@ -47,9 +47,9 @@ ms.locfileid: "55843768"
 
 8. SandBlast Mobile Protect에서 디바이스에 대한 보안 위협을 검사하기 시작합니다.
 
-9.  SandBlast Mobile Protect에서 디바이스에 대한 보안 위협을 발견한 경우 문제 해결 방법에 대한 지침이 표시됩니다.
+9. SandBlast Mobile Protect에서 디바이스에 대한 보안 위협을 발견한 경우 문제 해결 방법에 대한 지침이 표시됩니다.
 
-10.  위협이 발견되지 않으면 세 가지 위협 유형이 모두 녹색으로 표시됩니다.
+10. 위협이 발견되지 않으면 세 가지 위협 유형이 모두 녹색으로 표시됩니다.
 
 11. 회사 포털의 **디바이스 세부 정보** 화면에 현재 회사의 보안 요구 사항을 준수하고 있다고 표시됩니다.
 

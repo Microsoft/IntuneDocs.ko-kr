@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045538"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558429"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -111,10 +111,10 @@ apply plugin: 'com.microsoft.intune.mam'
 
 기본적으로 이 플러그 인은 `project` 종속성**에만** 작동합니다.
 테스트 컴파일은 영향을 받지 않습니다. 구성을 목록에 제공할 수 있습니다.
-*  제외할 프로젝트
-*  [포함할 외부 종속성](#usage-of-includeexternallibraries) 
-*  처리에서 제외할 특정 클래스
-*  처리에서 제외할 변형입니다. 이러한 변형은 전체 변형 이름 또는 단일 버전을 나타낼 수 있습니다. 예
+* 제외할 프로젝트
+* [포함할 외부 종속성](#usage-of-includeexternallibraries) 
+* 처리에서 제외할 특정 클래스
+* 처리에서 제외할 변형입니다. 이러한 변형은 전체 변형 이름 또는 단일 버전을 나타낼 수 있습니다. 예
      * 앱의 빌드 형식이 {`savory`, `sweet`} 및 {`vanilla`, `chocolate`}를 갖는 `debug` 및 `release`인 경우
      * `savory`를 지정하여 savory 버전의 모든 변형을 제외하거나 `savoryVanillaRelease`를 사용하여 해당 변형만 정확히 제외할 수 있습니다.
 
@@ -834,7 +834,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
-        return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+            return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
         }
     }
     ```
@@ -1187,7 +1187,7 @@ BackupAgent를 사용하면 백업되는 데이터에 대해 훨씬 더 명확�
 기본적으로 Intune 앱 SDK는 앱에 전체적으로 정책을 적용합니다. 다중 ID는 정책을 ID 수준별로 적용하기 위해 설정할 수 있는 선택적 Intune 앱 보호 기능입니다. 이 기능을 사용하려면 다른 앱 보호 기능보다 훨씬 더 많은 앱 참여가 필요합니다.
 
 > [!NOTE]
->  올바른 앱 참여가 없으면 데이터가 누수되고 다른 보안 문제가 발생할 수 있습니다.
+> 올바른 앱 참여가 없으면 데이터가 누수되고 다른 보안 문제가 발생할 수 있습니다.
 
 사용자가 디바이스 또는 앱을 등록하고 나면 SDK에서 이 ID를 등록하고 이를 기본 Intune 관리 ID로 간주합니다. 앱의 다른 사용자는 무제한 정책 설정이 적용되는 관리되지 않는 항목으로 처리됩니다.
 
@@ -1317,7 +1317,7 @@ ID를 설정하는 데 사용된 모든 메서드는 `MAMIdentitySwitchResult`�
 
   1. 다른 MAM 앱에서 보낸 `Intent`에서 작업이 시작된 경우에는 `Intent`가 전송된 시점의 다른 앱에서 유효한 ID에 따라 작업 ID가 설정됩니다.
 
-  2.  서비스의 경우 `onStart` 또는 `onBind` 호출 기간 동안 스레드 ID가 비슷하게 설정됩니다. `onBind`에서 반환된 `Binder` 호출도 일시적으로 스레드 ID를 설정합니다.
+  2. 서비스의 경우 `onStart` 또는 `onBind` 호출 기간 동안 스레드 ID가 비슷하게 설정됩니다. `onBind`에서 반환된 `Binder` 호출도 일시적으로 스레드 ID를 설정합니다.
 
   3. 마찬가지로 `ContentProvider` 호출은 해당 기간에 대한 스레드 ID를 설정합니다.
 
@@ -1429,12 +1429,12 @@ public final class MAMFileProtectionManager {
     * this method will silently do nothing.
     *
     * @param identity
-    *       Identity to set.
+    *        Identity to set.
     * @param file
-    *       File to protect.
+    *        File to protect.
     *
     * @throws IOException
-    *       If the file cannot be protected.
+    *         If the file cannot be protected.
     */
    public static void protect(final File file, final String identity) throws IOException;
 
@@ -1742,8 +1742,8 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 
 [ProGuard](http://proguard.sourceforge.net/) 없이 실행되는 대규모 코드 기반의 경우 ,Dalvik 실행 파일 형식의 제한 사항이 문제가 될 수 있습니다. 특히 다음과 같은 제한 사항이 발생할 수 있습니다.
 
-1.  필드에 대한 65-K 제한입니다.
-2.  메소드에 대한 65-K 제한입니다.
+1. 필드에 대한 65-K 제한입니다.
+2. 메소드에 대한 65-K 제한입니다.
 
 ### <a name="policy-enforcement-limitations"></a>정책 적용 제한 사항
 

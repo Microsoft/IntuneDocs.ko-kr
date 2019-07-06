@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: f87256580ce3a0e31ef86f15244f49046d9dd35e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454042"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530251"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune 데이터 웨어하우스 애플리케이션 전용 인증
 
@@ -41,18 +41,18 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 
 이 섹션에서는 Intune에서 가리키려는 웹앱에 대한 세부 정보를 제공합니다. 웹앱은 클라이언트-서버 애플리케이션입니다. 서버는 UI, 콘텐츠 및 기능을 포함하는 웹앱을 제공합니다. 이 앱 유형은 웹에서 별도로 유지 관리됩니다. Intune을 사용하여 웹앱에 Intune 액세스 권한을 부여합니다. 데이터 흐름은 웹앱에서 시작됩니다. 
 
-1.  [Azure 포털](https://portal.azure.com)에 로그인합니다.
-2.  Azure Portal의 위쪽에 있는 **리소스, 서비스, 문서 검색** 필드를 사용하여 **Azure Active Directory**를 검색합니다.
-3.  드롭다운 메뉴에서 **서비스** 아래의 **Azure Active Directory**를 선택합니다.
-4.  **앱 등록**을 선택합니다.
-5.  **새 애플리케이션 등록**을 클릭하여 **만들기** 블레이드를 표시합니다.
-6.  **만들기** 블레이드에서 다음과 같은 앱 정보를 추가합니다.
+1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
+2. Azure Portal의 위쪽에 있는 **리소스, 서비스, 문서 검색** 필드를 사용하여 **Azure Active Directory**를 검색합니다.
+3. 드롭다운 메뉴에서 **서비스** 아래의 **Azure Active Directory**를 선택합니다.
+4. **앱 등록**을 선택합니다.
+5. **새 애플리케이션 등록**을 클릭하여 **만들기** 블레이드를 표시합니다.
+6. **만들기** 블레이드에서 다음과 같은 앱 정보를 추가합니다.
 
     - 앱 이름(예: *Intune App-Only Auth*).
     - **애플리케이션 유형**. 웹 애플리케이션, Web API 또는 둘 다를 나타내는 앱을 추가하려면 **웹앱/API**를 선택합니다.
     - 애플리케이션의 **로그온 URL**. 인증 프로세스 중에 사용자가 자동으로 이동되는 위치입니다. 사용자는 여기서 신원을 증명해야 합니다. 자세한 내용은 [Azure Active Directory를 사용하는 애플리케이션 액세스 및 Single Sign-On이란 무엇인가요?](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)를 참조하세요.
 
-7.  **만들기** 블레이드의 맨 아래에서 **만들기**를 클릭합니다.
+7. **만들기** 블레이드의 맨 아래에서 **만들기**를 클릭합니다.
 
     >[!NOTE] 
     > **등록된 앱** 블레이드에서 나중에 사용할 **애플리케이션 ID**를 복사합니다.
@@ -61,12 +61,12 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 
 이 섹션에서는 Azure AD가 앱에 대한 키 값을 생성합니다.
 
-1.  **앱 등록** 블레이드에서 새로 만든 앱을 선택하여 앱 블레이드를 표시합니다.
-2.  블레이드 위쪽에 있는 **설정**을 선택하여 **설정 블레이드**를 표시합니다.
-3.  **설정** 블레이드에서 **키**를 선택합니다.
-4.  키 **설명**, **만료** 기간, 키 **값**을 추가합니다.
-5.  **저장**을 클릭하여 애플리케이션의 키를 저장하고 업데이트합니다.
-6.  생성된 키 값(base64로 인코드됨)을 복사해야 합니다.
+1. **앱 등록** 블레이드에서 새로 만든 앱을 선택하여 앱 블레이드를 표시합니다.
+2. 블레이드 위쪽에 있는 **설정**을 선택하여 **설정 블레이드**를 표시합니다.
+3. **설정** 블레이드에서 **키**를 선택합니다.
+4. 키 **설명**, **만료** 기간, 키 **값**을 추가합니다.
+5. **저장**을 클릭하여 애플리케이션의 키를 저장하고 업데이트합니다.
+6. 생성된 키 값(base64로 인코드됨)을 복사해야 합니다.
 
     >[!NOTE] 
     > **키** 블레이드를 나가면 키 값이 사라집니다. 나중에 이 블레이드에서 키를 검색할 수 없습니다. 나중에 사용하려면 키를 복사합니다.
@@ -75,28 +75,28 @@ Azure AD(Azure Active Directory)는 OAuth 2.0을 사용하여 Azure AD 테넌트
 
 이 섹션에서는 애플리케이션에 대한 사용 권한을 부여합니다.
 
-1.  **설정** 블레이드에서 **필요한 권한**을 선택합니다.
-2.  **추가**를 클릭합니다.
-3.  **API 추가**를 선택하여 **API 선택** 블레이드를 표시합니다.
-4.  **Microsoft Intune API(MicrosoftIntuneAPI)** 를 선택하고 **API 선택** 블레이드에서 **선택**을 클릭합니다. **사용 권한 선택** 단계가 선택되고 **액세스 사용** 블레이드가 표시됩니다.
-5.  **애플리케이션 사용 권한** 섹션에서 **Microsoft Intune에서 데이터 웨어하우스 정보 가져오기** 옵션을 선택합니다.
-6.  **액세스 사용** 블레이드에서 **선택**을 클릭합니다.
-7.  **API 액세스 추가** 블레이드에서 **완료**를 클릭합니다.
-8.  **필요한 사용 권한** 블레이드에서 **사용 권한 부여**를 클릭하고 이 애플리케이션의 기존 사용 권한을 모두 업데이트하라는 메시지가 표시되면 **예**를 클릭합니다.
+1. **설정** 블레이드에서 **필요한 권한**을 선택합니다.
+2. **추가**를 클릭합니다.
+3. **API 추가**를 선택하여 **API 선택** 블레이드를 표시합니다.
+4. **Microsoft Intune API(MicrosoftIntuneAPI)** 를 선택하고 **API 선택** 블레이드에서 **선택**을 클릭합니다. **사용 권한 선택** 단계가 선택되고 **액세스 사용** 블레이드가 표시됩니다.
+5. **애플리케이션 사용 권한** 섹션에서 **Microsoft Intune에서 데이터 웨어하우스 정보 가져오기** 옵션을 선택합니다.
+6. **액세스 사용** 블레이드에서 **선택**을 클릭합니다.
+7. **API 액세스 추가** 블레이드에서 **완료**를 클릭합니다.
+8. **필요한 사용 권한** 블레이드에서 **사용 권한 부여**를 클릭하고 이 애플리케이션의 기존 사용 권한을 모두 업데이트하라는 메시지가 표시되면 **예**를 클릭합니다.
 
 ## <a name="generate-token"></a>토큰 생성
 
 Visual Studio를 사용하여 .NET Framework를 지원하고 C#을 코딩 언어로 사용하는 콘솔 앱(.NET Framework) 프로젝트를 만듭니다.
 
-1.  **파일** > **새로 만들기** > **프로젝트**를 선택하여 **새 프로젝트** 대화 상자를 표시합니다.
-2.  왼쪽에서 **Visual C#** 을 선택하여 모든 .NET Framework 프로젝트를 표시합니다.
-3.  **콘솔 앱(.NET Framework)** 을 선택하고 앱 이름을 추가한 다음 **확인**을 클릭하여 앱을 만듭니다.
-4.  **솔루션 탐색기**에서 **Program.cs**를 선택하여 코드를 표시합니다.
-5.  솔루션 탐색기에서 어셈블리 `System.Configuration`에 참조를 추가합니다.
-6.  팝업 메뉴에서 **추가** > **새 항목**을 선택합니다. **새 항목 추가** 대화 상자가 표시됩니다.
-7.  왼쪽의 **Visual C#** 에서 **코드**를 선택합니다.
-8.  **클래스**를 선택하고 클래스 이름을 *IntuneDataWarehouseClass.cs*로 변경한 다음 **추가**를 클릭합니다.
-9.  <code>Main</code> 메서드 안에 다음 코드를 추가합니다.
+1. **파일** > **새로 만들기** > **프로젝트**를 선택하여 **새 프로젝트** 대화 상자를 표시합니다.
+2. 왼쪽에서 **Visual C#** 을 선택하여 모든 .NET Framework 프로젝트를 표시합니다.
+3. **콘솔 앱(.NET Framework)** 을 선택하고 앱 이름을 추가한 다음 **확인**을 클릭하여 앱을 만듭니다.
+4. **솔루션 탐색기**에서 **Program.cs**를 선택하여 코드를 표시합니다.
+5. 솔루션 탐색기에서 어셈블리 `System.Configuration`에 참조를 추가합니다.
+6. 팝업 메뉴에서 **추가** > **새 항목**을 선택합니다. **새 항목 추가** 대화 상자가 표시됩니다.
+7. 왼쪽의 **Visual C#** 에서 **코드**를 선택합니다.
+8. **클래스**를 선택하고 클래스 이름을 *IntuneDataWarehouseClass.cs*로 변경한 다음 **추가**를 클릭합니다.
+9. <code>Main</code> 메서드 안에 다음 코드를 추가합니다.
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -119,7 +119,7 @@ Visual Studio를 사용하여 .NET Framework를 지원하고 C#을 코딩 언어
      using System.Configuration;
     ``` 
 
-11. <code>Main</code> 메서드 뒤에 다음 개인 메서드를 추가하여 앱 키를 처리하고 변환합니다.
+11. <code>Main</code> 메서드 뒤에 다음 프라이빗 메서드를 추가하여 앱 키를 처리하고 변환합니다.
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)

@@ -18,12 +18,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35d77c9aa739096f36f4dbf4b75a4186e55a3381
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5ae4e454a0ca41858cb670790fd5acd4d6bf998a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835066"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546611"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS 디바이스에서 관리되는 앱 사용
 
@@ -38,9 +38,9 @@ ms.locfileid: "55835066"
 ## <a name="how-do-i-get-managed-apps"></a>관리되는 앱을 가져오려면 어떻게 하나요?  
 관리되는 앱을 가져오는 방법에는 몇 가지가 있습니다.
 
--   디바이스가 Microsoft Intune에 등록된 경우 사용자가 회사 포털 앱 또는 회사 포털 웹 사이트에서 앱을 설치하거나, 회사 지원팀이 디바이스에 설치할 수 있습니다. 등록에 대해 알아보려면 [Intune에서 iOS 디바이스 등록](enroll-your-device-in-intune-ios.md) 또는 [Intune에서 macOS 디바이스 등록](enroll-your-device-in-intune-macos.md)을 참조하세요.
+- 디바이스가 Microsoft Intune에 등록된 경우 사용자가 회사 포털 앱 또는 회사 포털 웹 사이트에서 앱을 설치하거나, 회사 지원팀이 디바이스에 설치할 수 있습니다. 등록에 대해 알아보려면 [Intune에서 iOS 디바이스 등록](enroll-your-device-in-intune-ios.md) 또는 [Intune에서 macOS 디바이스 등록](enroll-your-device-in-intune-macos.md)을 참조하세요.
 
--   앱 스토어에서 앱을 설치하고 Intune으로 관리되는 회사 사용자 계정을 사용하여 로그인합니다.
+- 앱 스토어에서 앱을 설치하고 Intune으로 관리되는 회사 사용자 계정을 사용하여 로그인합니다.
 
 경우에 따라 회사 지원팀은 설치하는 앱에 대한 여러 라이선스를 구매할 수 있습니다. Apple Volume Purchase Program 규약에 동의하도록 요청하는 메시지가 표시되는 것은 정상적이며 이 규약에 동의할 수 있습니다. 동의하지 않으면 앱을 설치할 수 없습니다.
 
@@ -56,22 +56,22 @@ ms.locfileid: "55835066"
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>회사 지원팀이 앱에서 관리할 수 있는 항목은 무엇인가요?  
 회사 지원팀이 앱에서 관리할 수 있고, 디바이스에서 회사 데이터 조작에 영향을 줄 수 있는 옵션의 몇 가지 예는 다음과 같습니다.
 
--   특정 웹사이트에 대 한 액세스
+- 특정 웹사이트에 대 한 액세스
 
--   응용 프로그램 간에 데이터를 전송
+- 응용 프로그램 간에 데이터를 전송
 
--   파일 저장
+- 파일 저장
 
--   복사 및 붙여넣기 작업
+- 복사 및 붙여넣기 작업
 
--   PIN 액세스 요구 사항
+- PIN 액세스 요구 사항
 
--   회사 자격 증명을 사용하는 로그인
+- 회사 자격 증명을 사용하는 로그인
 
--   클라우드로 백업하는 기능
+- 클라우드로 백업하는 기능
 
--   스크린샷을 만드는 기능
+- 스크린샷을 만드는 기능
 
--   데이터 암호화 요구 사항
+- 데이터 암호화 요구 사항
 
 디바이스에서 관리되는 앱에 대한 자세한 내용은 회사 지원팀에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

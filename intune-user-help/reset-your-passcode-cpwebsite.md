@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58163431"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546795"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>회사 포털 웹 사이트에서 디바이스 암호를 재설정하는 방법
 
@@ -36,13 +36,13 @@ ms.locfileid: "58163431"
 
 ## <a name="reset-your-passcode"></a>암호 재설정
 
-1.  [회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 열고 __메뉴__ 단추 > __장치__를 선택합니다.  
+1. [회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 열고 __메뉴__ 단추 > __장치__를 선택합니다.  
 
 2. 암호 재설정에 필요한 디바이스를 선택합니다.  
 
     ![식별되지 않은 일반적으로 명명된 디바이스를 보여주는 2개의 타일이 포함된 디바이스 페이지의 스크린샷 회색 배너는 디바이스 바로 아래에 있으며 사용 중인 디바이스를 식별하거나 새 디바이스를 추가하라는 메시지를 표시합니다.](./media/rename-reset-device-step2-1808.png) 
 
-3. **암호 재설정**을 선택합니다. 암호 옵션이 페이지의 맨 위에 보이지 않는 경우 **자세히(...)** > **암호 재설정**을 선택합니다.   
+3. **암호 재설정**을 선택합니다. 암호 옵션이 페이지의 맨 위에 보이지 않는 경우 **자세히(...)**  > **암호 재설정**을 선택합니다.   
 
    ![이름 바꾸기, 제거, 디바이스 재설정, 암호 재설정, 원격 잠금을 표시하는 맨 위의 링크 목록과 함께 회사 포털 웹 사이트에서 선택한 디바이스에 대한 디바이스 세부 정보 페이지 ](./media/rename-reset-device-1808.png)   
 
@@ -79,7 +79,7 @@ ms.locfileid: "58163431"
 **iOS**: 기존 암호를 제거하고 임시 암호를 만들지 않습니다. Touch ID 지문 스캐너를 사용하여 디바이스를 열거나 구매하는 경우 다시 설정해야 합니다.  
 
 **Windows 10 Mobile**: 기존 암호를 제거하고 문자와 숫자로 구성된 임시 암호를 만듭니다. 설정한 경우 Windows Hello 얼굴 인식은 디바이스에서 계속 작동합니다.
-    
+
 **Windows Phone 8.1**: 기존 암호를 제거하고 숫자로 구성된 임시 암호를 만듭니다.  
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.  

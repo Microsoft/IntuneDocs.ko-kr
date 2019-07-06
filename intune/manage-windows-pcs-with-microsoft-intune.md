@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 733cb20c43b34393003f2e9f4f4466922f3f581e
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044957"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572557"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune 소프트웨어 클라이언트를 통해 Windows PC를 컴퓨터로 관리
 
@@ -70,16 +70,16 @@ Intune 관리자는 Intune 소프트웨어 클라이언트를 다양한 방법�
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Intune 클라이언트 소프트웨어의 컴퓨터 관리 기능
 대부분의 시나리오에서 Microsoft Intune에 디바이스를 등록하면 훨씬 더 많은 기능이 제공됩니다. 그러나 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리할 수도 있으며, 이 경우 다음과 같은 기능이 제공됩니다.
 
--   **[소프트웨어 업데이트 관리](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - PC를 최신 상태로 유지하고 업데이트 적용 시기를 결정할 수 있습니다.
+- **[소프트웨어 업데이트 관리](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - PC를 최신 상태로 유지하고 업데이트 적용 시기를 결정할 수 있습니다.
 
--   **[Windows 방화벽 정책](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - 이 정책을 통해 회사에서 사용하는 PC 중에 Windows 방화벽이 비활성화되거나 부적절하게 구성된 PC가 없는지를 확인할 수 있습니다.
+- **[Windows 방화벽 정책](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - 이 정책을 통해 회사에서 사용하는 PC 중에 Windows 방화벽이 비활성화되거나 부적절하게 구성된 PC가 없는지를 확인할 수 있습니다.
 
--   **[맬웨어 방지 보호](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune에 포함된 Endpoint Protection을 사용하면 PC를 맬웨어로부터 보호할 수 있습니다.
+- **[맬웨어 방지 보호](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune에 포함된 Endpoint Protection을 사용하면 PC를 맬웨어로부터 보호할 수 있습니다.
 
--   **[원격 지원](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune을 통해 IT 지원 직원에게 문의하면 해당 직원이 Intune에 포함된 원격 데스크톱 기능을 사용하여 도움을 줄 수 있습니다(TeamViewer 소프트웨어 필요).
+- **[원격 지원](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune을 통해 IT 지원 직원에게 문의하면 해당 직원이 Intune에 포함된 원격 데스크톱 기능을 사용하여 도움을 줄 수 있습니다(TeamViewer 소프트웨어 필요).
 
--   **[소프트웨어 라이선스 관리](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - 사용 가능한 소프트웨어 라이선스 수와 사용 가능한 라이선스 중 현재 사용 중인 라이선스 수를 추적합니다.
--   **[앱 배포](add-apps-for-windows-pcs-in-microsoft-intune.md)** - 관리하는 PC에 소프트웨어를 배포합니다. 소프트웨어 클라이언트를 사용하여 PC를 관리하는 경우 일부 앱 관리 기능은 사용할 수 없습니다.
+- **[소프트웨어 라이선스 관리](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - 사용 가능한 소프트웨어 라이선스 수와 사용 가능한 라이선스 중 현재 사용 중인 라이선스 수를 추적합니다.
+- **[앱 배포](add-apps-for-windows-pcs-in-microsoft-intune.md)** - 관리하는 PC에 소프트웨어를 배포합니다. 소프트웨어 클라이언트를 사용하여 PC를 관리하는 경우 일부 앱 관리 기능은 사용할 수 없습니다.
 
 <!-- - **Compliance settings reporting** -->
 
@@ -113,8 +113,8 @@ Intune에서는 Windows Server AD DS(Active Directory Domain Services) GPO(그�
 
 PC를 모바일 디바이스로 관리하는 데 사용할 수 있는 일부 관리 옵션은 Intune 클라이언트 소프트웨어로 관리되는 PC에 사용할 수 없습니다.
 
--   전체 초기화(선택적 초기화는 사용 가능함)
--   조건부 액세스
+- 전체 초기화(선택적 초기화는 사용 가능함)
+- 조건부 액세스
 
 또한 Intune 관리 콘솔에서 **업데이트**, **보호** 및 **라이선스**와 같은 특정 섹션은 Intune 클라이언트 소프트웨어를 사용하여 디바이스를 등록한 경우에만 표시됩니다.
 

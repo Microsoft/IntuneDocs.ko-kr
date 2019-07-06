@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040205"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548816"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>정책을 사용하여 Windows PC 관리 간소화
 
@@ -35,13 +35,13 @@ PC에서 Intune 소프트웨어 클라이언트를 실행하여 Windows 데스�
 ### <a name="manage-the-microsoft-intune-center"></a>Microsoft Intune Center 관리
 사용자에게는 Intune 소프트웨어 클라이언트가 **Microsoft Intune Center**로 표시됩니다. Microsoft Intune Center를 통해 사용자는 다음을 수행할 수 있습니다.
 
--   회사 포털에서 애플리케이션 가져오기
+- 회사 포털에서 애플리케이션 가져오기
 
--   업데이트 확인
+- 업데이트 확인
 
--   Microsoft Intune Endpoint Protection 관리
+- Microsoft Intune Endpoint Protection 관리
 
--  원격 지원 요청
+- 원격 지원 요청
 
 Microsoft Intune Center는 모든 관리 컴퓨터에 설치됩니다. Intune 정책에서 다음 설정을 구성할 수 있으며 이러한 설정은 Microsoft Intune Center에 표시됩니다.
 

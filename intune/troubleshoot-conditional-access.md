@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043908"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530723"
 ---
 # <a name="troubleshoot-conditional-access"></a>조건부 액세스 문제 해결
 
@@ -35,8 +35,8 @@ Intune 및 조건부 액세스를 사용하여 Exchange Online, SharePoint Onlin
 - 디바이스는 Intune에서 등록되고 관리되어야 합니다.
 - 사용자 및 디바이스는 모두 할당된 Intune에서 준수 정책을 준수해야 합니다.
 - 기본적으로 사용자에게는 디바이스 준수 정책이 할당되어야 합니다. **다음으로 할당된 준수 정책이 없는 디바이스 표시** 설정이 Intune 관리 포털의 **디바이스 준수** > **준수 정책 설정**에서 구성된 방법에 따라 달라질 수 있습니다.
--   사용자가 Outlook이 아닌 디바이스의 네이티브 메일 클라이언트를 사용하는 경우 Exchange ActiveSync는 디바이스에서 활성화되어야 합니다. 이 작업은 iOS, Windows Phone 및 Android 디바이스에서 자동으로 발생합니다.
--   Intune Exchange Connector를 제대로 구성해야 합니다. 자세한 내용은 [Microsoft Intune에서 Exchange Connector 문제 해결](troubleshoot-exchange-connector.md)을 참조하세요.
+- 사용자가 Outlook이 아닌 디바이스의 네이티브 메일 클라이언트를 사용하는 경우 Exchange ActiveSync는 디바이스에서 활성화되어야 합니다. 이 작업은 iOS, Windows Phone 및 Android 디바이스에서 자동으로 발생합니다.
+- Intune Exchange Connector를 제대로 구성해야 합니다. 자세한 내용은 [Microsoft Intune에서 Exchange Connector 문제 해결](troubleshoot-exchange-connector.md)을 참조하세요.
 
 Azure Portal 및 디바이스 인벤토리 보고서에서 각 디바이스의 이러한 조건을 확인할 수 있습니다.
 

@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9da053d0358d9b85426d75de51aeaea8beb866c1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 29b435c3e41ba633ce4312808793bee4a495cd32
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843173"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528801"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>회사 포털 개발자에게 iOS 디바이스에 대한 로그 보내기
 
@@ -31,9 +31,9 @@ ms.locfileid: "55843173"
 
 이 문제가 발생하는 경우 회사 포털 팀은 근본 원인을 진단하기 위해 몇 가지 정보가 필요합니다. 다음과 같이 해 주세요.
 
-1.  문제 재발을 시도합니다. 문제를 재발하면 다음 단계를 쉽게 진행할 수 있습니다.
-2.  __설정__ > __개인 정보__ > __분석__ > __분석 데이터__로 이동합니다. 충돌에서 일반적인 사용 패턴에 이르기까지 발생한 앱 활동의 목록이 나오며 개인 정보는 포함되지 않습니다. 이 목록은 최근 항목에서 가장 오래된 항목 순으로 구성됩니다. 문제를 재현할 수 있었다면 이 문제는 이 페이지에서 앱 활동 목록에 나타난 첫 번째 항목입니다. 문제를 재현할 수 없었다면 "회사 포털"로 시작되는 첫 번째 항목을 찾을 때까지 아래로 스크롤한 후 항목을 탭하여 엽니다.
-3.  길게 누른 후 보고서의 모든 텍스트가 선택될 때까지 작은 파란색 점을 위와 아래로 끕니다. 팝업 메뉴에서 __복사하기__를 탭합니다.
-4.  메일 앱을 열고 내용을 메일의 본문에 붙여 넣습니다. 메일을 <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>에 보냅니다.
+1. 문제 재발을 시도합니다. 문제를 재발하면 다음 단계를 쉽게 진행할 수 있습니다.
+2. __설정__ > __개인 정보__ > __분석__ > __분석 데이터__로 이동합니다. 충돌에서 일반적인 사용 패턴에 이르기까지 발생한 앱 활동의 목록이 나오며 개인 정보는 포함되지 않습니다. 이 목록은 최근 항목에서 가장 오래된 항목 순으로 구성됩니다. 문제를 재현할 수 있었다면 이 문제는 이 페이지에서 앱 활동 목록에 나타난 첫 번째 항목입니다. 문제를 재현할 수 없었다면 "회사 포털"로 시작되는 첫 번째 항목을 찾을 때까지 아래로 스크롤한 후 항목을 탭하여 엽니다.
+3. 길게 누른 후 보고서의 모든 텍스트가 선택될 때까지 작은 파란색 점을 위와 아래로 끕니다. 팝업 메뉴에서 __복사하기__를 탭합니다.
+4. 메일 앱을 열고 내용을 메일의 본문에 붙여 넣습니다. 메일을 <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>에 보냅니다.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

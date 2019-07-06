@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196776"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545721"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>회사 포털 앱을 사용하여 Intune에 macOS 디바이스 등록
 
@@ -63,7 +63,7 @@ Intune 회사 포털 앱으로 macOS 디바이스를 등록하여 조직의 이�
     * 디바이스가 없는 경우 배너는 **관리되는 디바이스가 없습니다. 여기를 탭하여 이 장치를 추가하세요.** 를 읽습니다. 배너를 클릭하여 디바이스를 추가합니다.  
 
      ![클릭할 위치를 강조 표시하는 배너 옵션 주위에 빨간색 사각형이 있는 디바이스 페이지의 스크린샷](./media/CP-enroll-MACOS-1808.png)  
-5.  회사 포털에 현재 표시된 메시지와 일치하는 다음 단계를 완료합니다.  
+5. 회사 포털에 현재 표시된 메시지와 일치하는 다음 단계를 완료합니다.  
     * 처음으로 디바이스를 추가하는 경우 디바이스에 회사 포털 앱을 다운로드할지 묻는 메시지가 나타납니다. **다운로드**를 클릭하여 계속합니다.  
 
          ![macOS 회사 포털 앱을 다운로드하는 프롬프트 화면의 예제 스크린샷 사용자는 프롬프트의 왼쪽 아래에 파란색 다운로드 단추 또는 오른쪽 아래에 회색 취소 단추를 클릭하여 선택할 수 있는 옵션이 있습니다.](./media/CP-enroll-download-macOS-1808.png)  

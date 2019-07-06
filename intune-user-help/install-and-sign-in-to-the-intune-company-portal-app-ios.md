@@ -18,24 +18,24 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc2173e2972e422ac629331110d3b86b787765da
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 494269b82840331041ac2607ea853dbfb1d979de
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040961"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546325"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>회사 포털 앱 설치 및 로그인
 
 iOS 디바이스에 회사 포털 앱을 설치하여 회사 및 학교 앱, 메일 및 네트워크에 액세스할 수 있습니다. 앱을 사용하여 Microsoft Intune에서 디바이스를 등록해 회사 또는 학교의 리소스에 대한 액세스를 안전하게 보호할 수 있습니다. 자세한 내용은 [Intune에서 회사 포털 앱을 설치하고 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)를 참조하세요.
 
-1.  **앱 스토어**를 열고 **intune 회사 포털**을 검색합니다.
+1. **앱 스토어**를 열고 **intune 회사 포털**을 검색합니다.
 
-2.  **Intune 회사 포털 앱**을 다운로드합니다.
+2. **Intune 회사 포털 앱**을 다운로드합니다.
 
     ![앱 스토어에서 Intune 회사 포털 앱이 표시되는 방식의 스크린샷입니다.](./media/CP_iosRedesign_after_1803_04.PNG)
 
-3.  회사 포털 앱을 열고 회사 또는 학교 메일 주소와 암호를 입력한 다음 **로그인**을 탭합니다.
+3. 회사 포털 앱을 열고 회사 또는 학교 메일 주소와 암호를 입력한 다음 **로그인**을 탭합니다.
 
     처음으로 회사 포털 앱에 로그인하는 경우 그리고 회사 또는 학교에서 Intune을 사용하는 경우 디바이스를 Intune에 등록하라는 메시지가 표시됩니다. 등록하려면 [Intune에 iOS 디바이스 등록](enroll-your-device-in-intune-ios.md)의 단계를 따릅니다. [다른 디바이스를 사용하여 로그인](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device)할 수도 있습니다.
 

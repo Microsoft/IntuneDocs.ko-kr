@@ -18,26 +18,26 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 73e9c42f69517d145c797b13ae9fa5aa779ebc5d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837439"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546506"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Intune에서 Android 디바이스 등록을 취소하면 어떻게 되나요?
 
 Intune에서 Android 디바이스 등록을 취소하면:
 
--   회사 지원팀이 디바이스를 더 이상 관리하지 않습니다.
+- 회사 지원팀이 디바이스를 더 이상 관리하지 않습니다.
 
--   회사 데이터 및 리소스에 액세스할 수 없습니다.
+- 회사 데이터 및 리소스에 액세스할 수 없습니다.
 
--   디바이스가 더 이상 회사 포털에 나타나지 않습니다.
+- 디바이스가 더 이상 회사 포털에 나타나지 않습니다.
 
--   더 이상 회사 포털에서 앱을 설치할 수 없습니다.
+- 더 이상 회사 포털에서 앱을 설치할 수 없습니다.
 
--   디바이스를 추가할 때 디바이스에서 변경된 모든 설정(예: 카메라 사용 안 함 또는 특정 암호 길이 요구)이 더 이상 적용되지 않습니다.
+- 디바이스를 추가할 때 디바이스에서 변경된 모든 설정(예: 카메라 사용 안 함 또는 특정 암호 길이 요구)이 더 이상 적용되지 않습니다.
 
 디바이스가 회사 메일만 가져오도록 설정된 경우 디바이스 등록을 취소하면 디바이스가 회사 포털에 더 이상 나타나지 않습니다.
 

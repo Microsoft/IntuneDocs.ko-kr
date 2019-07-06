@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebece46bac8ebee5cb3c6a573f0b09c4b308abe3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 571080f3d25753fdc423c45100b06377ecd426b5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040996"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549192"
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune 관리 확장에 대한 참조
 
 **IntuneManagementExtension** 범주는 다음과 같은 정보를 추적하는 모바일 디바이스에 대한 엔터티를 포함합니다.
 
-  -  IntuneManagementExtension의 버전
-  -  IntuneManagementExtension의 설치 상태
+  - IntuneManagementExtension의 버전
+  - IntuneManagementExtension의 설치 상태
 
 ## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
 

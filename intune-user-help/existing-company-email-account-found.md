@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8326693717ac96a0e9d32617e7d7080d50206ac6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834758"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545425"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>기존 회사 메일 계정 찾음
 
@@ -34,7 +34,7 @@ ms.locfileid: "55834758"
 
 다음 단계에서는 디바이스가 회사 보안 요구 사항을 충족하는지와 이메일의 보안이 유지되는지 확인합니다.
 
-1.  디바이스에서 **설정**으로 이동한 후 연결된 계정을 찾습니다. 예를 들어, iOS 11+ 디바이스에서는 **암호 및 계정**을 선택합니다.
+1. 디바이스에서 **설정**으로 이동한 후 연결된 계정을 찾습니다. 예를 들어, iOS 11+ 디바이스에서는 **암호 및 계정**을 선택합니다.
  
 2. 회사 메일 계정을 선택한 후 제거합니다.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3b9f69e745baffd21b55274e173bb75e8581525
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
-ms.translationtype: HT
+ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418948"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549054"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune에 대한 MDM 보안 기준 설정  
 
@@ -32,7 +32,7 @@ Windows 10을 실행 하는 장치용 Microsoft Intune에서 지원 되는 중�
 이전 버전에서이 기준의 최신 버전에서 변경 된 내용에 대 한 자세한 참조 [새 템플릿 변경 사항](#whats-changed-in-the-new-template)합니다.  
 
 > [!NOTE]  
-> 2019 년 6 월에 미리 보기 MDM 보안 기준의 릴리스에 의해 대체 되었습니다 합니다 *Spring 2019 업데이트 (19 시간 1)에 대 한 MDM 보안 기준* generaly 수 있는 템플릿 (미리 보기)에 없는 사용할 수 있습니다. 사용 하기 전에 생성 된 프로필을 *Spring 2019 업데이트 (19 시간 1)에 대 한 MDM 보안 기준* 기준 반영 하도록 업데이트 되지 않습니다는 설정 및 Spring 2019 업데이트 (MDM 보안 기준에 있는 값 19 H 1) 버전입니다.  미리 보기 템플릿을 기반으로 새 프로필을 만들 수는 없지만 편집 하 고 미리 보기 템플릿을 기반으로 하는 이전에 만든 프로필을 사용 하 여 계속 합니다.   
+> 2019 년 6 월에 미리 보기 MDM 보안 기준의 릴리스에 의해 대체 되었습니다 합니다 *Spring 2019 업데이트 (19 시간 1)에 대 한 MDM 보안 기준* generaly 수 있는 템플릿 (미리 보기)에 없는 사용할 수 있습니다. 사용 하기 전에 만들어진 프로필은 *Spring 2019 업데이트 (19 시간 1)에 대 한 MDM 보안 기준* 기준선 설정 및 Spring 2019 업데이트 (19 시간 1에 대 한 MDM 보안 기준에 있는 값을 반영 하도록 업데이트 되지 않습니다 ) 버전입니다.  미리 보기 템플릿을 기반으로 새 프로필을 만들 수는 없지만 편집 하 고 미리 보기 템플릿을 기반으로 하는 이전에 만든 프로필을 사용 하 여 계속 합니다.   
   
 보안 기준을 사용 하 여 Intune에 대 한 자세한 내용은 참조 하세요 [보안 기준을 사용 하 여](security-baselines.md)입니다.  
 
@@ -57,7 +57,7 @@ Windows 10을 실행 하는 장치용 Microsoft Intune에서 지원 되는 중�
 
 - **Windows Store 앱에 대한 선택적 Microsoft 계정**  
   이 정책 설정을 사용하면 로그인할 계정이 필요한 Windows Store 앱에 대해 Microsoft 계정이 선택적인지 여부를 제어할 수 있습니다. 이 정책은 해당 정책을 지원하는 Windows Store 앱에만 적용됩니다. 이 정책 설정을 사용하도록 설정하면 일반적으로 로그인할 Microsoft 계정이 필요한 Windows Store 앱을 통해 사용자는 대신 엔터프라이즈 계정으로 로그인할 수 있습니다. 이 정책 설정을 사용하지 않도록 설정하거나 구성하지 않은 경우 사용자는 Microsoft 계정으로 로그인해야 합니다.  
-    [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **기본**: 사용  
 
@@ -68,7 +68,7 @@ Windows 10을 실행 하는 장치용 Microsoft Intune에서 지원 되는 중�
   이 정책 설정은 일반적으로 시스템 관리자에만 사용할 수 있는 설치 옵션을 변경 하는 사용자를 허용 합니다. 이 정책 설정을 사용 하면 Windows 설치 관리자의 보안 기능 중 일부는 무시 됩니다. 보안 위반으로 인해 중지 되더라도 설치를 완료할 허용 합니다. 사용 하지 않도록 설정 하거나이 정책 설정을 구성 하지 않은 경우 Windows 설치 관리자의 보안 기능 파일을 설치할 디렉터리를 지정 하는 등의 시스템 관리자에 대 한 일반적으로 예약 된 설치 옵션을 변경할 사용자를 방지 합니다. Windows Installer 설치 패키지를 보호 옵션을 변경 하려면 사용자가 사용할 수 있는 검색, 설치를 중지 하 고 메시지를 표시 합니다. 이러한 보안 기능은 설치 프로그램이에 사용자를 거부 하는 디렉터리에 대 한 액세스 권한 있는 보안 컨텍스트에서 실행 되는 경우에 작동 합니다. 이 정책 설정은 낮은 환경에 대 한 디자인 되었습니다. 소프트웨어 설치 되는 것을 방지 하는 설치 프로그램에서 오류를 피하도록 사용할 수 있습니다.  
   [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-    **기본값**: 예
+  **기본값**: 예
 
 - **상승 된 권한으로 블록 MSI 앱 설치**  
   이 정책 설정은 Windows Installer가 시스템에 프로그램을 설치할 때 높은 권한을 사용하도록 지시합니다.  
@@ -828,7 +828,7 @@ Windows 10을 실행 하는 장치용 Microsoft Intune에서 지원 되는 중�
   
 - **Internet Explorer 신뢰할 수 있는 영역 Java 사용 권한**   
   이 정책 설정을 사용하면 Java 애플릿에 대한 사용 권한을 관리할 수 있습니다. 이 정책 설정을 사용하도록 설정하면 드롭다운 상자에서 옵션을 선택할 수 있습니다. 사용자 지정 - 사용 권한 설정을 개별적으로 제어합니다. 낮은 보안 수준을 사용하면 애플릿이 모든 작업을 수행할 수 있습니다. 중간 보안 수준을 사용하면 해당 샌드박스(프로그램이 호출할 수 없는 외부 메모리의 영역), 스크래치 공간(클라이언트 컴퓨터의 안전한 보안 스토리지 영역) 및 사용자가 제어하는 파일 I/O에서 애플릿을 실행할 수 있습니다. 높은 보안 수준을 사용하면 애플릿을 해당 샌드박스에서 실행할 수 있습니다. 모든 애플릿이 실행되지 않도록 하려면 Java를 비활성화합니다. 이 정책 설정을 사용하지 않도록 설정하면 Java 애플릿을 실행할 수 없습니다. 이 정책 설정을 구성하지 않으면 사용 권한이 낮은 안전으로 설정됩니다.  
-    [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **기본값**: 높음  
   
@@ -1829,7 +1829,7 @@ Windows 10을 실행 하는 장치용 Microsoft Intune에서 지원 되는 중�
 - *수정* 에서 이전 버전의 설정을 표시 하는 방법입니다. 
 
 *[New]*  [ **잠금 위에**](#above-lock):
--  **잠긴된 화면에서 앱을 활성화 하는 음성**    
+- **잠긴된 화면에서 앱을 활성화 하는 음성**    
 
 *[새로운 기능]* [**애플리케이션 관리**](#application-management): 
 - **설치를 통해 블록 사용자 제어**  
@@ -2602,7 +2602,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   **Default**: Disable  
   
 - **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
+  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
   
   **Default**: Prompt  
   

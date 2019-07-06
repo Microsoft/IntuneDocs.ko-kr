@@ -18,30 +18,30 @@ ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 4ba5705fa04d9eb28e74128228ca8a862f1cb772
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844247"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545672"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Intune에서 iOS 또는 macOS 디바이스 등록을 취소하면 어떻게 되나요?
 
 Intune에서 iOS 또는 macOS 디바이스 등록을 취소하면:
 
--   디바이스가 더 이상 회사 포털에 나타나지 않습니다.
+- 디바이스가 더 이상 회사 포털에 나타나지 않습니다.
 
--   더 이상 회사 포털에서 앱을 설치할 수 없습니다.
+- 더 이상 회사 포털에서 앱을 설치할 수 없습니다.
 
--   디바이스를 추가할 때 디바이스에서 변경된 모든 설정(예: 카메라 사용 안 함 또는 특정 암호 길이 요구)이 더 이상 적용되지 않습니다.
+- 디바이스를 추가할 때 디바이스에서 변경된 모든 설정(예: 카메라 사용 안 함 또는 특정 암호 길이 요구)이 더 이상 적용되지 않습니다.
 
--   디바이스에서 더 이상 일부 회사 리소스(예: 파일 공유 또는 내부 웹 사이트)에 액세스하지 못할 수 있습니다.
+- 디바이스에서 더 이상 일부 회사 리소스(예: 파일 공유 또는 내부 웹 사이트)에 액세스하지 못할 수 있습니다.
 
--   디바이스에서 더 이상 회사 앱 및 회사 데이터를 사용할 수 없습니다.
+- 디바이스에서 더 이상 회사 앱 및 회사 데이터를 사용할 수 없습니다.
 
--   더 이상 Wi-Fi 또는 VPN(가상 프라이빗 네트워크)을 사용하여 회사 네트워크에 연결할 수 없습니다.
+- 더 이상 Wi-Fi 또는 VPN(가상 프라이빗 네트워크)을 사용하여 회사 네트워크에 연결할 수 없습니다.
 
--   디바이스에서 회사 전자 메일 프로필이 제거됩니다.
+- 디바이스에서 회사 전자 메일 프로필이 제거됩니다.
 
 등록을 취소하는 방법에 대한 지침은 [Intune에서 디바이스 등록 취소](unenroll-your-device-from-intune-ios.md)를 참조하세요.
 
