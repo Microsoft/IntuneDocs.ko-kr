@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 703fafec3799b1552ec275c7c88b24b42d2259b9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044018"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494067"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
@@ -64,7 +64,7 @@ Intune 앱 SDK를 앱에 통합하거나 앱이 개발된 후 앱을 래핑하�
 
 ### <a name="managed-devices"></a>관리되는 디바이스
 
- - iOS 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리되는 iOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.
+ - iOS 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리형 iOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.
  - Android 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리되는 Android 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-android.md)를 참조하세요.
 
 ### <a name="managed-apps"></a>관리되는 앱

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/08/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,24 +16,31 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: 99f51662894cac04e6ebcd821806b433dbf3117e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: de2f201e6a7d0181847db5d212625c9eed9ea698
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041252"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413783"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune에서 SCEP 및 PKCS 인증서 제거
 
-Microsoft Intune에서 디바이스에 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공개 키 암호화 표준) 인증서를 추가할 수 있습니다. 이 인증서는 디바이스를 [초기화](devices-wipe.md#wipe)하거나 [사용 중지](devices-wipe.md#retire)할 때도 제거할 수 있습니다. 
+Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공개 키 암호화 표준) 인증서 프로필을 사용하여 디바이스에 인증서를 추가할 수 있습니다. 
 
-인증서가 자동으로 제거되는 또 다른 시나리오와 인증서가 디바이스에 남아있는 일부 시나리오가 있습니다. 이 문서에서는 몇 가지 일반적인 시나리오와 PKCS 및 SCEP 인증서에 미치는 영향을 나열합니다.
+이 인증서는 디바이스를 [초기화](devices-wipe.md#wipe)하거나 [사용 중지](devices-wipe.md#retire)하는 경우 제거할 수 있습니다. 인증서가 자동으로 제거되는 시나리오와 인증서가 디바이스에 남아 있는 시나리오도 있습니다. 이 문서에서는 몇 가지 일반적인 시나리오와 PKCS 및 SCEP 인증서에 미치는 영향을 나열합니다.
 
 > [!NOTE]
 > 온-프레미스 Active Directory 또는 Azure AD(Active Directory)에서 제거되는 사용자의 인증서를 제거하고 해지하려면 다음 단계를 순서대로 따릅니다.
 >
 > 1. 사용자의 디바이스 초기화하거나 사용 중지합니다.
 > 2. 온-프레미스 Active Directory 또는 Azure AD에서 사용자를 제거합니다.
+
+## <a name="manually-deleted-certificates"></a>인증서를 수동으로 삭제  
+
+인증서 수동 삭제는 SCEP 또는 PKCS 인증서 프로필로 프로비저닝된 플랫폼 및 인증서 전반에 적용되는 시나리오입니다. 예를 들어 사용자가 디바이스에서 인증서를 삭제하는 데 디바이스는 인증서 정책의 대상으로 으로 유지될 수 있습니다.  
+
+이 시나리오에서는 인증서를 삭제한 후 다음에 디바이스가 Intune에 체크 인할 때 필요한 인증서가 없으므로 준수하지 않음으로 확인됩니다. 그러면 Intune에서 새 인증서를 발급하여 디바이스를 준수 상태로 복원합니다. 인증서 복원에는 추가 작업이 필요하지 않습니다.  
+
 
 ## <a name="windows-devices"></a>Windows 디바이스
 

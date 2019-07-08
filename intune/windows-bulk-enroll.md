@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,16 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568169"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403379"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 대량 등록
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-관리자로서 여러 새로운 Windows 디바이스를 Azure Active Directory 및 Intune에 연결할 수 있습니다. Azure AD 테넌트에 대한 디바이스를 대량 등록하려면 WCD(Windows 구성 디자이너) 앱을 사용하여 프로비전 패키지를 만듭니다. 회사 소유 디바이스에 프로비전 패키지를 적용하면 디바이스가 Azure AD 테넌트에 연결되고 Intune 관리를 위해 등록됩니다. 패키지가 적용되면 Azure AD 사용자가 로그온할 수 있게 됩니다.
+관리자로서 여러 새로운 Windows 디바이스를 Azure Active Directory 및 Intune에 연결할 수 있습니다. Azure AD 테넌트에 대한 디바이스를 대량 등록하려면 WCD(Windows 구성 디자이너) 앱을 사용하여 프로비전 패키지를 만듭니다. 회사 소유 디바이스에 프로비전 패키지를 적용하면 디바이스가 Azure AD 테넌트에 연결되고 Intune 관리를 위해 등록됩니다. 패키지가 적용되면 Azure AD 사용자가 로그인할 수 있게 됩니다.
 
 Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당된 Intune 정책 및 필수 앱을 수신합니다. Windows 대량 등록을 사용하여 Intune에 등록된 Windows 디바이스는 회사 포털 앱을 사용하여 사용 가능한 앱을 설치할 수 있습니다. 
 
@@ -51,6 +48,7 @@ Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당
    - **설명** - 프로젝트에 대한 설명(옵션) ![Windows 구성 디자이너 앱에서 프로젝트 폴더 이름과 설명을 지정하는 스크린샷](media/bulk-enroll-name.png)
 
 4. 디바이스에 대한 고유한 이름을 입력합니다. 이름에는 일련 번호(%SERIAL%) 또는 임의의 문자 집합이 포함될 수 있습니다. 필요에 따라 Windows 버전을 업그레이드하는 경우 제품 키를 입력하고, 공유용 디바이스를 구성하고, 사전 설치된 소프트웨어를 제거할 수도 있습니다.
+   
    ![Windows 구성 디자이너 앱에서 이름 및 제품 키를 지정하는 스크린샷](media/bulk-enroll-device.png)
 
 5. 필요에 따라 디바이스를 처음 시작할 때 연결할 Wi-Fi 네트워크 디바이스를 구성할 수 있습니다.  네트워크 디바이스가 구성되지 않은 경우 디바이스를 처음 시작할 때 유선 네트워크 연결이 필요합니다.
@@ -91,9 +89,6 @@ Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당
 
 - 로컬 계정을 만들지 않는 Active Directory 도메인 또는 Azure Active Directory 테넌트에 연결하려는 프로비전 패키지의 경우 네트워크 연결 중단으로 인해 도메인 연결 프로세스가 실패하는 경우 디바이스에 연결할 수 없습니다.
 - 프로비저닝 패키지에서 실행된 스크립트는 시스템 컨텍스트에서 실행됩니다. 스크립트는 디바이스 파일 시스템과 구성을 임의로 변경할 수 있습니다. 악의적이거나 잘못된 스크립트는 디바이스를 이미지로 다시 설치하거나 초기화하는 방법으로만 복구할 수 있는 상태를 만듭니다.
-
-### <a name="problems-with-bulk-enrollment-and-company-portal"></a>대량 등록 및 회사 포털 문제
-사용자가 회사 포털을 사용하여 이전에 대량 등록된 디바이스를 등록하려고 하면 해당 디바이스에 추가 작업(설정 또는 등록)이 필요하다는 경고가 표시됩니다. 디바이스가 등록되지만 회사 포털 앱 또는 웹 사이트에서 등록이 인식되지 않습니다.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi를 통한 대량 등록 
 

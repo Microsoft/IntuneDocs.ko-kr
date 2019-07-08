@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3bf59f75d41d50cfd9280251e20964a35a149a8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040647"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403584"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune에서 보안 기준 및 프로필 모니터링  
 
@@ -34,7 +34,7 @@ Intune은 보안 기준을 모니터링하는 여러 가지 옵션을 제공합�
 
 기준을 모니터링하면 Microsoft의 추천에 따라 디바이스의 보안 상태에 대한 인사이트를 얻을 수 있습니다. Intune 콘솔에 있는 보안 기준의 개요 창에서 이러한 인사이트를 볼 수 있습니다.  기준을 처음으로 할당한 후 최대 24시간 내에 데이터가 표시됩니다. 이후에 변경하는 내용은 최대 6시간 내에 표시됩니다.  
 
-기준 및 디바이스의 모니터링 데이터를 보려면 [Intune 포털](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다. 다음으로, **디바이스 보안** > **보안 기준(미리 보기)** 을 선택하고, 기준을 선택하고, **개요** 창을 봅니다.
+기준 및 디바이스의 모니터링 데이터를 보려면 [Intune 포털](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다. 다음으로, **디바이스 보안** > **보안 기준**을 선택하고, 기준을 선택하고, **개요** 창을 봅니다.
 
 **개요** 창은 상태를 모니터링하는 두 가지 방법을 제공합니다.
 - **디바이스 보기** - 기준의 각 상태 범주에 포함되는 디바이스 수에 대한 요약 정보입니다.  

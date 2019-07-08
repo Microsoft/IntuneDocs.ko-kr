@@ -16,16 +16,16 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afede7f3f5adf194beceafd7c3d2dbee1b0e64b7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046280"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494582"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1단계: MDM(모바일 디바이스 관리)을 위한 Microsoft Intune 준비
 
-Intune 설정의 세부 정보를 살펴보기 전에 조직의 모바일 디바이스 관리 요구 사항을 검토해 보겠습니다. 현재 MDM 공급자의 활성 사용자에 대한 보고서를 실행하여 중요한 사용자 그룹을 확인하는 것이 유용할 수 있습니다. 그런 다음 [MDM 요구 사항 평가](migration-guide-prepare.md#assess-mdm-requirements) 섹션의 질문 검토를 시작할 수 있습니다.
+Intune 설정의 세부 정보를 살펴보기 전에 조직의 모바일 디바이스 관리 요구 사항을 검토해 보겠습니다. 현재 MDM 공급자의 활성 사용자에 대한 보고서를 실행하여 중요한 사용자 그룹을 확인하는 것이 유용할 수 있습니다. 그런 다음 [MDM 요구 사항 평가](migration-guide-prepare.md#assess-mdm-requirements) 섹션의 질문 처리를 시작할 수 있습니다.
 
 ## <a name="assess-mdm-requirements"></a>MDM 요구 사항 평가
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63226ba18ac42ef2dd2a37608d58f8ba4918f75b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d07d9466cda86270898d0e54e8d50b358bcb1b84
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049802"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494113"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 디바이스 자동 등록
 
@@ -74,7 +74,7 @@ KME를 사용하여 Intune에 등록하려면 먼저 다음 단계에 따라 삼
 
 ### <a name="for-android"></a>Android의 경우
 
-단계별 지침은 [Samsung Knox Profile Setup Wizard](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm)(삼성 Knox 프로필 설정 마법사)를 참조하세요.
+단계별 지침은 [Samsung Knox Profile Setup Wizard](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm)(삼성 Knox 프로필 설정 마법사) 지침을 참조하세요.
 
 | MDM 프로필 필드| 필수 여부 | 값 |
 |-------------------|-----------|-------|
@@ -124,7 +124,7 @@ MDM 프로필을 만들고 할당하고, 사용자 이름을 연결하고, Intun
 
 - **작업 프로필이 지원되지 않음:** KME는 Android 회사 디바이스 등록 방법으로, Android 회사 프로필에 등록된 디바이스는 회사 및 개인 데이터가 개인 디바이스에서 분리되도록 합니다. 따라서 KME를 사용하여 회사 프로필에 디바이스를 등록하는 방식은 Intune에서 지원되는 시나리오가 아닙니다.
 
-- **Android 엔터프라이즈에 등록하기 위해 초기화:**: 이미 설정된 디바이스를 다른 용도로 사용하는 경우 Android 엔터프라이즈에 등록할 때 디바이스를 초기화해야 합니다.
+- **Android 엔터프라이즈에 등록하기 위해 초기화:** : 이미 설정된 디바이스를 다른 용도로 사용하는 경우 Android 엔터프라이즈에 등록할 때 디바이스를 초기화해야 합니다.
 
 - **Google Play 계정을 사용하여 업데이트:** Google Play 계정은 디바이스를 Microsoft Intune에 등록하는 데 필요하지 않습니다. 그러나 이후 Intune 회사 포털 앱을 업데이트하려면 디바이스에서 Google Play 계정이 필요할 수 있습니다. Google 디바이스 소유자에 등록하는 경우 Google Play 계정이 필요하지 않습니다.
 
