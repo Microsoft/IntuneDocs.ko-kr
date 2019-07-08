@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c1717be830d88ed0a7d1b660b7910c8192c93c5
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403541"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547979"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Windows PC에 대한 하드웨어 및 소프트웨어 인벤토리 보기
 
@@ -33,41 +33,41 @@ ms.locfileid: "67403541"
 
 Intune은 Intune 소프트웨어 클라이언트를 사용하여 PC로 관리하는 데스크톱의 하드웨어 및 소프트웨어에 대한 자세한 정보를 수집합니다. 다음 절차의 정보를 통해 다음을 만드는 방법에 대해 알아볼 수 있습니다.
 
--   관리하는 PC의 하드웨어 성능에 대한 정보를 표시하는 보고서
+- 관리하는 PC의 하드웨어 성능에 대한 정보를 표시하는 보고서
 
--   각 PC에 설치된 소프트웨어를 표시하는 보고서
+- 각 PC에 설치된 소프트웨어를 표시하는 보고서
 
--   보고서의 현재 데이터를 확인하기 위해 PC 인벤토리를 새로 고치는 방법
+- 보고서의 현재 데이터를 확인하기 위해 PC 인벤토리를 새로 고치는 방법
 
 ## <a name="to-display-information-about-pcs-you-manage"></a>관리하는 PC에 대한 정보를 표시하려면
 
-1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **보고서** &gt; **컴퓨터 인벤토리 보고서**를 선택합니다.
+1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **보고서** &gt; **컴퓨터 인벤토리 보고서**를 선택합니다.
 
-2.  **새 보고서 만들기** 페이지에서 기본값을 그대로 사용하거나 보고서에서 반환할 결과를 필터링하도록 값을 사용자 지정합니다. 예를 들어 Windows 8.1을 실행하는 PC만 보고서에 표시되도록 선택할 수 있습니다.
+2. **새 보고서 만들기** 페이지에서 기본값을 그대로 사용하거나 보고서에서 반환할 결과를 필터링하도록 값을 사용자 지정합니다. 예를 들어 Windows 8.1을 실행하는 PC만 보고서에 표시되도록 선택할 수 있습니다.
 
-3.  **컴퓨터 인벤토리 보고서**를 새 창으로 열려면 **보고서 보기**를 선택합니다.
+3. **컴퓨터 인벤토리 보고서**를 새 창으로 열려면 **보고서 보기**를 선택합니다.
 
     **이름**, **섀시 종류** 또는 **제조업체**와 같은 각 열 제목을 선택하여 보고서를 열별로 정렬할 수 있습니다.
 
 ## <a name="to-display-software-installed-on-pcs-you-manage"></a>관리하는 PC에 설치된 소프트웨어를 표시하려면
 
-1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **보고서** &gt; **검색된 소프트웨어 보고서**를 선택합니다.
+1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **보고서** &gt; **검색된 소프트웨어 보고서**를 선택합니다.
 
-2.  **새 보고서 만들기** 페이지에서 기본값을 그대로 사용하거나 보고서에서 반환할 결과를 필터링하도록 값을 사용자 지정합니다. 예를 들어 Microsoft에서 게시한 소프트웨어만 보고서에 표시되도록 선택할 수 있습니다.
+2. **새 보고서 만들기** 페이지에서 기본값을 그대로 사용하거나 보고서에서 반환할 결과를 필터링하도록 값을 사용자 지정합니다. 예를 들어 Microsoft에서 게시한 소프트웨어만 보고서에 표시되도록 선택할 수 있습니다.
 
-3.  **검색된 소프트웨어 보고서**를 새 창으로 열려면 **보고서 보기**를 선택합니다.
+3. **검색된 소프트웨어 보고서**를 새 창으로 열려면 **보고서 보기**를 선택합니다.
 
     **이름**, **게시자** 또는 **범주**와 같은 각 열 제목을 선택하여 보고서를 열별로 정렬할 수 있습니다. 목록 항목 옆에 있는 방향 화살표를 선택해서 목록에서 업데이트를 확장하여 세부 정보(예: 설치되어 있는 PC)를 표시할 수 있습니다.
 
 ## <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>현재 컴퓨터 인벤토리를 확인하기 위해 새로 고치려면
 
-1.  [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹**&gt;**모든 디바이스**(또는 인벤토리를 새로 고치려는 PC가 포함된 다른 그룹)를 선택합니다.
+1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com/)에서 **그룹**&gt;**모든 디바이스**(또는 인벤토리를 새로 고치려는 PC가 포함된 다른 그룹)를 선택합니다.
 
-2.  PC를 선택하거나, **Ctrl** 키를 누른 상태에서 여러 PC를 선택합니다.
+2. PC를 선택하거나, **Ctrl** 키를 누른 상태에서 여러 PC를 선택합니다.
 
-3.  작업 표시줄에서 **원격 작업** &gt; **인벤토리 새로 고침**을 선택합니다.
+3. 작업 표시줄에서 **원격 작업** &gt; **인벤토리 새로 고침**을 선택합니다.
 
-4.  작업 상태를 확인하려면 페이지의 오른쪽 아래 모서리에 있는 **원격 작업**을 선택합니다.
+4. 작업 상태를 확인하려면 페이지의 오른쪽 아래 모서리에 있는 **원격 작업**을 선택합니다.
 
     **작업 상태** 대화 상자에는 현재 원격 작업, 작업 상태, 디바이스 이름 및 보고된 모든 오류 목록이 표시되고, 문제 해결 정보 링크도 제공됩니다.
 

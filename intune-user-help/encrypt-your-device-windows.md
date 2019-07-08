@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564468"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545278"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>암호화를 사용하여 Windows 디바이스를 보호하는 방법
 
@@ -37,8 +37,8 @@ Windows Phone이 있고 이를 등록한 경우 암호화가 필요하면 디바
 
 데스크톱 디바이스가 있는 경우 다음 지침에서는 암호화하는 방법을 설명합니다.
 
-1.  **BitLocker 관리** 앱을 검색한 다음 시작합니다.
+1. **BitLocker 관리** 앱을 검색한 다음 시작합니다.
 
-2.  **BitLocker 켜기**를 클릭하고 지침에 따라 각 드라이브를 암호화합니다.
+2. **BitLocker 켜기**를 클릭하고 지침에 따라 각 드라이브를 암호화합니다.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.
