@@ -1,11 +1,11 @@
 ---
-title: Intune 회사 포털에 대 한 Android 장치를 암호화 합니다. | Microsoft Docs
-description: Android 장치에서 장치 암호화를 설정 하는 단계
+title: Intune에 대 한 Android 장치를 암호화 합니다. | Microsoft Docs
+description: Intune에 필요한 경우에 Android 장치 암호화를 설정 하는 단계
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: cfc17c60412a1cfe90693216caa69ada3d2d2c9a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490590"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545254"
 ---
 # <a name="encrypting-your-android-device"></a>Android 디바이스 암호화
 
@@ -33,12 +33,12 @@ ms.locfileid: "58490590"
 
 ## <a name="turn-on-encryption"></a>암호화 설정
 
-장치를 암호화 해야 하는 회사 포털에서 메시지를 받게 되는 경우 다음 단계를 완료 합니다. 
+회사 포털 또는 Microsoft Intune 앱 장치를 암호화 하 라는 메시지가 표시를 하는 경우 다음 단계를 완료 합니다. 
 
 > [!Note]
 > Huawei, 제품과 Vivo 및 OPPO에서 특정 Android 장치를 암호화할 수 없습니다. 자세한 내용은 [여기](your-device-appears-encrypted-but-cp-says-otherwise-android.md)를 참조하세요.  
 
-1.  장치 화면 잠금을 설정 합니다.  
+1. 장치 화면 잠금을 설정 합니다.  
     a. **설정** > **잠금 화면 및 보안** > **화면 잠금**으로 이동합니다.  
     b. 중 하나를 선택 **PIN**하십시오 **암호**, 또는 **패턴**합니다.  
     c. 화면 잠금을 구성 하려면 화면의 지침을 따릅니다.  
@@ -46,7 +46,9 @@ ms.locfileid: "58490590"
 2. 로 돌아가서 **잠금 화면 및 보안** 선택한 **안전한 시작**합니다.
 3. 선택할 **장치 설정 하는 경우 PIN 요청** > **확인**합니다.
 4. 확인 하 고 장치를 암호화 하려면 PIN을 입력 합니다.
-5. 회사 포털 앱을 열고 디바이스를 선택하고 **디바이스 설정 확인**을 탭합니다.  
+5. 회사 포털 또는 Microsoft Intune 앱을 엽니다.
+    * 회사 포털 앱 사용자: 디바이스를 선택하고 **디바이스 설정 확인**을 탭합니다. 
+    * Microsoft Intune 사용자: 페이지 업데이트 될 때까지 대기 해야 하지만 암호화 상태를 준수에 변경 해야 합니다.  
 
 Android 4.4 이전 버전을 실행 하는 장치 수 없게 합니다 **보안 시작** 옵션입니다. 이 경우 장치를 암호화 하려면 다음 단계를 완료 합니다.
 
@@ -55,14 +57,16 @@ Android 4.4 이전 버전을 실행 하는 장치 수 없게 합니다 **보안 
     * **저장소** > **잠금 화면 및 보안** > **기타 보안 설정** 
 
 2. 화면의 지시를 따릅니다. 암호화가 진행되는 동안 디바이스가 여러 번 다시 시작될 수 있습니다.
-3. 회사 포털 앱을 열고 디바이스를 선택하고 **디바이스 설정 확인**을 탭합니다.  
+3. 회사 포털 또는 Microsoft Intune 앱을 엽니다.
+    * 회사 포털 앱 사용자: 디바이스를 선택하고 **디바이스 설정 확인**을 탭합니다.  
+    * Microsoft Intune 사용자: 페이지 업데이트 될 때까지 대기 해야 하지만 암호화 상태를 준수에 변경 해야 합니다.
 
 ## <a name="troubleshoot"></a>문제 해결  
 **문제**: 장치를 이미 암호화 했으므로 및
 
 - 암호화 단추를 사용할 수 없습니다.
 - 여전히 암호화해야 한다는 메시지가 표시됩니다.
-- 회사 포털 앱을 사용하려고 할 때 오류가 발생합니다.
+- 회사 포털 또는 Microsoft Intune 앱을 사용 하려고 할 때 오류를 가져옵니다.
 
 **시도할 작업**
 

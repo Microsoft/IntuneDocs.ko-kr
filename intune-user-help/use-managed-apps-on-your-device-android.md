@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841337"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546030"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android 디바이스에서 관리되는 앱 사용
 관리되는 앱은 조직의 보안 요구 사항을 충족시키고 회사 및 학교 데이터를 보호하도록 구성됩니다. 이러한 앱은 디바이스에서 자동으로 설치 또는 사용할 수 있습니다. 
@@ -45,32 +45,32 @@ ms.locfileid: "55841337"
 ## <a name="commonly-managed-apps"></a>일반적으로 관리되는 앱  
 학교와 직장 내에서 일반적으로 필요하거나 사용할 수 있는 관리되는 앱의 예제는 다음과 같습니다.
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word, Excel 및 PowerPoint
+- Microsoft Word, Excel 및 PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>관리되는 앱을 가져오려면 어떻게 하나요?
-먼저 회사 포털을 설치해야 하며 필요한 경우 디바이스를 관리합니다. 그런 다음, 세 가지 방법으로 관리되는 앱을 가져올 수 있습니다.
-* 조직은 등록 시 자동으로 앱을 디바이스에 설치합니다. 등록에 대해 자세히 알아보려면 [Intune에서 디바이스 등록](enroll-your-device-in-Intune-android.md)을 참조하세요.
-* 조직은 회사 포털에서 관리되는 앱을 사용할 수 있도록 합니다. 회사 포털 앱 또는 웹 사이트로 이동하여 이러한 앱을 검색하고 보고 설치합니다. 
-* Google Play 스토어에서 앱을 설치한 다음, 회사 또는 학교 계정으로 앱에 로그인합니다.  
+관리 되는 앱을 다운로드 하는 방법은 세 가지가 있습니다.  
+* 조직은 등록 시 자동으로 앱을 디바이스에 설치합니다.  
+* Google Play 스토어에서 앱을 설치한 다음, 회사 또는 학교 계정으로 앱에 로그인합니다.    
+* 조직은 회사 포털에서 관리되는 앱을 사용할 수 있도록 합니다. 회사 포털 앱 또는 웹 사이트로 이동하여 사용 가능한 앱을 검색하고 보고 설치합니다. 이러한 앱에 대 한 자세한 내용은 다음 섹션을 참조 하세요 [사용할 수 있는 앱](#available-apps)합니다.  
 
- ## <a name="available-apps"></a>사용 가능한 앱   
- 조직은 회사 또는 학교에서 사용하기에 적절하고 유용한 앱을 선택합니다. 이러한 앱은 회사 포털에서만 찾을 수 있습니다.   
+### <a name="available-apps"></a>사용 가능한 앱   
+ 조직에 적절 하 고 유용 하기 직장 또는 학교 및 사용할 수 있도록 하면 회사 포털에서 앱을 선택할 수 있습니다.  
 
  사용자는 디바이스 유형에 따라 앱을 사용할 수 있게 됩니다. 예를 들어 사용자가 Android용 회사 포털 앱을 사용하는 경우 iOS 앱이 아닌 Android 앱에 액세스하게 됩니다.   
 
- ## <a name="request-an-app-for-work-or-school"></a>회사 또는 학교용 앱 요청   
- 사용자가 필요한 앱이 있지만 회사 포털에 없는 경우 이를 요청할 수 있습니다. 회사 포털 앱의 **IT 담당자** 탭에서 **기술 지원팀**의 연락처 세부 정보를 확인합니다. 이런 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.   
+## <a name="request-an-app-for-work-or-school"></a>회사 또는 학교용 앱 요청   
+ 사용자가 필요한 앱이 있지만 회사 포털에 없는 경우 이를 요청할 수 있습니다. 에 대 한 연락처 세부 정보를 찾을 하 **기술 지원팀** 하거나 앱의 **IT 담당자** 탭 합니다. 이런 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>회사 지원팀이 앱에서 관리할 수 있는 항목은 무엇인가요?  
 다음 목록은 앱 내에서 회사 지원팀에서 관리할 수 있는 설정을 설명합니다. 이 설정은 디바이스에서 회사 또는 학교 데이터를 보고 액세스하고 사용하는 방식에 영향을 줍니다.
 
 * 특정 웹사이트에 대 한 액세스  
 
-* Edge와 Azure Active Directory 프록시를 사용하여 회사 내부 웹 사이트에 액세스  
+* Microsoft Edge와 Azure Active Directory 프록시를 사용하여 회사 내부 웹 사이트에 액세스  
 
 * 최소 앱 버전, OS 버전
 

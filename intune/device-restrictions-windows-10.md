@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403081"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494478"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -525,7 +525,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
 다음 설정에서는 [개인 정보 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy)를 사용하며, 지원되는 Windows 버전도 나열합니다.
 
-- **입력 맞춤 설정**: **차단**은 음성을 받아쓰기에 사용하지 못하도록 차단하고, Microsoft 클라우드 기반 음성 인식을 사용하는 Cortana 및 다른 앱과도 대화하지 못하도록 차단합니다. 그러면 이 기능을 사용하지 않도록 지정되고 사용자가 설정을 사용하여 온라인 음성 인식을 사용할 수 없습니다. **구성되지 않음**(기본값)을 사용하면 사용자가 이 기능을 선택할 수 있습니다. 이러한 서비스를 허용하면 Microsoft에서 서비스를 향상시키기 위해 음성 데이터를 수집할 수 있습니다.
+- **입력 개인 설정**: **차단**은 음성을 받아쓰기에 사용하지 못하도록 차단하고, Microsoft 클라우드 기반 음성 인식을 사용하는 Cortana 및 다른 앱과도 대화하지 못하도록 차단합니다. 그러면 이 기능을 사용하지 않도록 지정되고 사용자가 설정을 사용하여 온라인 음성 인식을 사용할 수 없습니다. **구성되지 않음**(기본값)을 사용하면 사용자가 이 기능을 선택할 수 있습니다. 이러한 서비스를 허용하면 Microsoft에서 서비스를 향상시키기 위해 음성 데이터를 수집할 수 있습니다.
 - **페어링 및 개인 정보 보호 사용자 동의 프롬프트의 자동 수락**: **허용**을 선택하면 Windows에서 앱을 실행할 때 페어링 및 개인 정보 보호 동의 메시지를 자동으로 수락할 수 있습니다. **구성되지 않음**(기본값)은 앱을 열 때 페어링 및 개인 정보 사용자 동의 창을 자동으로 수락하지 못하도록 차단합니다.
 - **사용자 작업 게시**: **차단**은 작업 피드에서 최근에 사용한 리소스의 공유 환경 및 검색을 차단합니다. **구성되지 않음**(기본값)은 이 기능을 사용하여 앱에서 최종 사용자 작업을 게시할 수 있도록 설정합니다.
 - **로컬 작업 전용**: **차단**을 선택하면 로컬 작업만 기반으로 작업 전환기에서 최근에 사용한 리소스의 공유 경험 및 검색이 제한됩니다. **구성되지 않음**(기본값)은 이 기능을 사용하도록 설정합니다.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4877920821b2471f752f9fdb8941e87576d937ba
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: 9ec0ab28f2b32cf3c60d6d674cfac5a5b21d094d
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413854"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558403"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -70,6 +70,7 @@ iOS용 Microsoft Intune 앱 SDK를 사용하면 네이티브 iOS 앱에 Intune �
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
     * IntuneMAMDefs.h
+    * IntuneMAMDiagnosticConsole.h
     * IntuneMAMEnrollmentDelegate.h
     * IntuneMAMEnrollmentManager.h
     * IntuneMAMEnrollmentStatus.h
@@ -735,6 +736,10 @@ SDK는 백그라운드에서 주기적으로 다음 작업을 수행합니다.
 ### <a name="is-there-a-sample-app-that-demonstrates-how-to-integrate-the-sdk"></a>SDK를 통합하는 방법을 보여 주는 샘플 앱이 있습니까?
 
 예. 최근에 오픈 소스 샘플 앱 [iOS용 Wagr](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App)을 개선했습니다. Wagr은 이제 Intune 앱 SDK를 통해 앱 보호 정책을 사용하도록 설정됩니다.
+
+### <a name="how-can-i-troubleshoot-my-app"></a>내 앱을 해결 하려면 어떻게 해야 합니까?
+
+9\.0.3+ iOS 용 Intune SDK 정책 테스트 및 오류 로깅에 대 한 모바일 앱 내에서 진단 콘솔을 추가 하는 기능을 지원 합니다. `IntuneMAMDiagnosticConsole.h` 정의 된 `IntuneMAMDiagnosticConsole` 인터페이스 클래스는 개발자는 Intune 진단 콘솔 표시를 사용할 수 있습니다. 테스트를 수집 하 고 있을 수 있는 문제를 진단 하는 데 Intune 로그를 공유 하는 동안 최종 사용자 또는 개발자를 허용 합니다. 이 API는 통합 업체에 대 한 선택 사항입니다.
 
 ## <a name="submit-your-app-to-the-app-store"></a>앱 스토어에 앱 제출
 

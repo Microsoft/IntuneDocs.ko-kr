@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
-ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
+ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67197538"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549136"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune에 대한 Microsoft Defender Advanced Threat Protection 기준 설정
 
@@ -192,7 +192,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 ## <a name="device-control"></a>디바이스 제어  
 
 - **전체 검색 중 이동식 드라이브 검색**  
-  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) - 예로 설정하면 Defender는 전체 검사 중에 이동식 드라이브(예: 플래시 드라이브)에서 악의적이고 원하지 않는 소프트웨어를 검사합니다.  Defender 바이러스 백신은 USB 디바이스에 있는 파일이 실행되기 전에 USB 디바이스에서 모든 파일을 검사합니다.
+  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) - ‘예’로 설정하면 Defender는 전체 검사 중에 이동식 드라이브(예: 플래시 드라이브)에서 악의적이고 원하지 않는 소프트웨어를 검사합니다.  Defender 바이러스 백신은 USB 디바이스에 있는 파일이 실행되기 전에 USB 디바이스에서 모든 파일을 검사합니다.
 
   이 목록의 관련 설정: *Defender/AllowFullScanOnMappedNetworkDrives*  
 

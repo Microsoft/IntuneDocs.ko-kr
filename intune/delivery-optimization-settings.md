@@ -14,12 +14,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41ca1c3b387b2cd43ac882a8aec50980c8ed3807
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041233"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493898"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune의 전송 최적화 설정
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 07/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,20 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5f1b4c0fd0c9d8cfdc443b2af3c6f90a6f32756
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: aea4a3d6f8d28e4277435b1d9fc092e68adb9e55
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373633"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530310"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Microsoft Intune의 Android 엔터프라이즈 디바이스에 대한 사용자 지정 설정 사용
 
-Microsoft Intune을 사용하면 "사용자 지정 프로필"을 사용하여 Android 엔터프라이즈 디바이스에 대한 사용자 지정 설정을 추가하거나 만들 수 있습니다. 사용자 지정 프로필은 Intune의 기능입니다. Intune에 기본 제공되지 않은 디바이스 설정 및 기능을 추가하도록 설계되었습니다.
+Microsoft Intune을 사용하면 "사용자 지정 프로필"을 사용하여 Android 엔터프라이즈 회사 프로필에 대한 사용자 지정 설정을 추가하거나 만들 수 있습니다. 사용자 지정 프로필은 Intune의 기능입니다. Intune에 기본 제공되지 않은 디바이스 설정 및 기능을 추가하도록 설계되었습니다.
 
 Android 엔터프라이즈 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 Android 엔터프라이즈에서 기능을 제어합니다. 이러한 설정은 일반적으로 모바일 디바이스 제조업체에서 이러한 기능을 제어하기 위해 사용합니다.
 
-Intune은 제한된 수의 Android 사용자 지정 프로필을 지원합니다.
+Intune에서는 Android Enterprise 사용자 지정 프로필을 포함 하 여 제한 된 수를 지원 합니다.
+
+- ./Vendor/MSFT/WiFi/Profile/SSID/설정: [미리 공유한 키로 Wi-fi 프로필 만들기](wi-fi-profile-shared-key.md) 에 몇 가지 예제가 포함 되어 있습니다.
+- ./Vendor/MSFT/VPN/Profile/Name/PackageList: [앱 별 VPN 프로필 만들기](android-pulse-secure-per-app-vpn.md) 에 몇 가지 예제가 포함 되어 있습니다.
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: 참조 된 [예제](#example) (이 문서의).
+
+추가 설정이 필요 하면, 참조 [Android Enterprise에 대 한 OEMConfig](android-oem-configuration-overview.md)합니다.
 
 이 문서는 Android 엔터프라이즈 디바이스의 사용자 지정 프로필을 만드는 방법을 보여줍니다. 또한 복사 및 붙여넣기 기능을 차단하는 사용자 지정 프로필의 예를 제공합니다.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe7ffa6ff024c719fc24209947b87b07ea2b6791
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
-ms.translationtype: MTE75
+ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412684"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558519"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>앱 설치 문제 해결
 
@@ -50,6 +50,18 @@ Intune은 특정 사용자 디바이스에 설치된 앱을 기반으로 앱 문
 
 > [!Note]  
 > 브라우저를 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)으로 전환하여 **문제 해결** 창에 액세스할 수도 있습니다.
+
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>장치에 도달 하지 못합니다 대상으로 하는 사용자 그룹과 앱 설치
+앱을 설치 하는 데 문제가 있는 경우에 다음 작업을 고려해 야 합니다.
+- 앱은 회사 포털에 표시 되지 않으면, 앱으로 배포 되었는지 확인 **사용 가능한** 의도 한 사용자는 회사 포털 앱에서 지원 되는 장치 유형으로가 액세스 합니다.
+- BYOD Windows 장치의 경우 사용자는 장치에 회사 계정을 추가 해야 합니다.
+- 사용자가 AAD 장치 제한을 초과 하는 경우를 확인 합니다.
+  1. 이동할 [Azure Active Directory 장치 설정을](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)합니다.
+  2. 에 설정 된 값을 기록해 **사용자 당 최대 장치**합니다.
+  3. 이동할 [Azure Active Directory 사용자](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)합니다.
+  4. 영향을 받는 사용자를 선택 하 고 클릭 **장치**합니다.
+  5. 사용자가 집합 제한을 초과 하는 경우에 더 이상 필요 없는 모든 오래 된 레코드를 삭제 합니다.
+- IOS DEP 장치에 대 한 사용자로 나열 되어 있는지 확인 하십시오 **사용자가 등록** Intune 장치 개요 블레이드에 있습니다. NA를 표시 하는 경우 Intune 회사 포털에 대 한 다음 구성 정책을 배포 합니다. 자세한 내용은 [회사 포털 앱 구성을 참조하세요](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 앱 설치 문제 해결
 

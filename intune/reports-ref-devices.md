@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f93416a8fd6190549a958f1b1a7e5f3bdf6df1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045312"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547927"
 ---
 # <a name="reference-for-devices-entities"></a>디바이스 엔터티에 대한 참조
 
 **디바이스** 범주는 다음과 같은 정보를 추적하는 모바일 디바이스에 대한 엔터티를 포함합니다.
 
-  -  디바이스 유형
-  -  디바이스 등록 및 등록 상태
-  -  디바이스 소유권
-  -  디바이스 관리 상태
-  -  Azure AD 상태에 대한 디바이스 멤버 자격
-  -  등록 상태
-  -  디바이스에 대한 과거 정보
-  -  디바이스에서 앱의 인벤토리
+  - 디바이스 유형
+  - 디바이스 등록 및 등록 상태
+  - 디바이스 소유권
+  - 디바이스 관리 상태
+  - Azure AD 상태에 대한 디바이스 멤버 자격
+  - 등록 상태
+  - 디바이스에 대한 과거 정보
+  - 디바이스에서 앱의 인벤토리
 
 ## <a name="devicetypes"></a>DeviceTypes
 
@@ -248,7 +248,7 @@ ms.locfileid: "66045312"
 | RowLastModifiedDateTimeUTC | 데이터 웨어하우스에서 디바이스를 마지막으로 수정한 UTC 날짜 및 시간                                                                                                       |
 | 제조업체               | 디바이스 제조업체                                                                                                                                                             |
 | 모델                      | 디바이스의 모델                                                                                                                                                                    |
-| OperatingSystem            | 디바이스 운영 체제는  Windows, iOS 등입니다.                                                                                                                                   |
+| OperatingSystem            | 디바이스 운영 체제는 Windows, iOS 등입니다.                                                                                                                                   |
 | IsDeleted                  | 디바이스가 삭제되었는지 여부를 표시하는 이진입니다.                                                                                                                                 |
 | AndroidSecurityPatchLevel  | Android 보안 패치 수준                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
@@ -264,12 +264,12 @@ ms.locfileid: "66045312"
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
-**DevicePropertyHistory** 엔터티는 지난 90일 동안 하루에 각 디바이스 레코드의 디바이스 테이블 및 일일 스냅숏과 동일한 속성을 지닙니다. DateKey 열은 각 행에 대한 날짜를 나타냅니다.
+**DevicePropertyHistory** 엔터티는 지난 90일 동안 하루에 각 디바이스 레코드의 디바이스 테이블 및 일일 스냅샷과 동일한 속성을 지닙니다. DateKey 열은 각 행에 대한 날짜를 나타냅니다.
 
 |          속성          |                                                                                      설명                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | DateKey                    | 날짜를 나타내는 날짜 테이블에 대한 참조                                                                                                                                          |
-| DeviceKey                  | 데이터 웨어하우스에서 디바이스의 고유 식별자는 서로게이트 키입니다. Intune 디바이스 ID가 포함된 디바이스 테이블의 참조입니다.                               |
+| DeviceKey                  | 데이터 웨어하우스에서 디바이스의 고유 식별자 - 서로게이트 키 Intune 디바이스 ID가 포함된 디바이스 테이블의 참조입니다.                               |
 | DeviceName                 | 디바이스 이름 지정을 허용하는 플랫폼에서 디바이스의 이름입니다. 다른 플랫폼에서 Intune은 다른 속성으로부터 이름을 만듭니다. 이 특성은 모든 디바이스에 대해 사용할 수 없습니다. |
 | DeviceRegistrationStateKey | 이 디바이스에 대한 디바이스 등록 상태 특성의 키입니다.                                                                                                                    |
 | OwnerTypeKey               | 이 디바이스의 소유자 유형 특성 키는 회사, 개인 또는 알 수 없음입니다.                                                                                                  |
