@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
-ms.translationtype: HT
+ms.openlocfilehash: ebd8f15a8f8633043f64cb4e004aafbb3c399042
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558519"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648889"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>앱 설치 문제 해결
 
@@ -51,17 +51,17 @@ Intune은 특정 사용자 디바이스에 설치된 앱을 기반으로 앱 문
 > [!Note]  
 > 브라우저를 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)으로 전환하여 **문제 해결** 창에 액세스할 수도 있습니다.
 
-## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>장치에 도달 하지 못합니다 대상으로 하는 사용자 그룹과 앱 설치
-앱을 설치 하는 데 문제가 있는 경우에 다음 작업을 고려해 야 합니다.
-- 앱은 회사 포털에 표시 되지 않으면, 앱으로 배포 되었는지 확인 **사용 가능한** 의도 한 사용자는 회사 포털 앱에서 지원 되는 장치 유형으로가 액세스 합니다.
-- BYOD Windows 장치의 경우 사용자는 장치에 회사 계정을 추가 해야 합니다.
-- 사용자가 AAD 장치 제한을 초과 하는 경우를 확인 합니다.
-  1. 이동할 [Azure Active Directory 장치 설정을](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)합니다.
-  2. 에 설정 된 값을 기록해 **사용자 당 최대 장치**합니다.
-  3. 이동할 [Azure Active Directory 사용자](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)합니다.
-  4. 영향을 받는 사용자를 선택 하 고 클릭 **장치**합니다.
-  5. 사용자가 집합 제한을 초과 하는 경우에 더 이상 필요 없는 모든 오래 된 레코드를 삭제 합니다.
-- IOS DEP 장치에 대 한 사용자로 나열 되어 있는지 확인 하십시오 **사용자가 등록** Intune 장치 개요 블레이드에 있습니다. NA를 표시 하는 경우 Intune 회사 포털에 대 한 다음 구성 정책을 배포 합니다. 자세한 내용은 [회사 포털 앱 구성을 참조하세요](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>사용자 그룹 대상 앱 설치가 장치에 도달 하지 않음
+앱을 설치 하는 데 문제가 있는 경우 다음 작업을 고려해 야 합니다.
+- 앱이 회사 포털에 표시 되지 않으면 **사용 가능한** 의도를 사용 하 여 앱을 배포 하 고 사용자가 앱에서 지원 되는 장치 유형에 서 회사 포털에 액세스 하 고 있는지 확인 합니다.
+- Windows BYOD 장치의 경우 사용자가 장치에 회사 계정을 추가 해야 합니다.
+- 사용자가 AAD 장치 제한을 초과 하 고 있는지 확인 합니다.
+  1. [Azure Active Directory 장치 설정](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)으로 이동 합니다.
+  2. **사용자 당 최대 장치**수에 대해 설정 된 값을 기록해 둡니다.
+  3. [Azure Active Directory 사용자](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)로 이동 합니다.
+  4. 영향을 받는 사용자를 선택 하 고 **장치**를 클릭 합니다.
+  5. 사용자가 설정 된 제한을 초과 하는 경우 더 이상 필요 하지 않은 오래 된 레코드를 삭제 합니다.
+- IOS DEP 장치의 경우 사용자가 Intune 장치 개요 블레이드에서 사용자에 **의해 등록** 된 것으로 표시 되는지 확인 합니다. NA가 표시 되 면 Intune 회사 포털에 대 한 구성 정책을 배포 합니다. 자세한 내용은 [회사 포털 앱 구성을 참조하세요](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 앱 설치 문제 해결
 
@@ -161,8 +161,14 @@ Win32 앱 설치 로그를 수집하려면 먼저 [앱 문제 해결 세부 정�
 
 [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)(Microsoft 스토어 앱 패키징, 배포 및 쿼리 문제 해결) 항목의 정보는 Intune을 사용하든, 다른 방법을 사용하든 관계없이 Microsoft 스토어에서 앱을 설치할 때 발생할 수 있는 일반적인 문제를 해결하는 데 도움을 줍니다.
 
+## <a name="app-troubleshoooting-resources"></a>앱 troubleshoooting 리소스
+- [Office Pro Plus 배포의 일부로 Visio 및 프로젝트 배포](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Deploying-Visio-and-Project-as-part-of-your-Office/ba-p/701795)
+- [Windows 10 1903에 Intune 설치를 통해 MSfB 앱을 배포 하도록 조치를 취합니다.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Take-Action-to-Ensure-MSfB-Apps-deployed-through/ba-p/658864)
+- [Microsoft Intune에서 MSI 앱 배포 문제 해결](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
+- [Intune 클래식 Windows PC 에이전트에 소프트웨어 배포에 대 한 모범 사례](https://support.microsoft.com/en-us/help/2583929/best-practices-for-intune-software-distribution-to-windows-pc)
+
 ## <a name="next-steps"></a>다음 단계
 
 - 추가 Intune 문제 해결 정보는 [문제 해결 포털을 사용하여 회사 내 사용자 지원](help-desk-operators.md)을 참조하세요. 
-- 알려진 Microsoft Intune 문제를 알아봅니다. 자세한 내용은 [알려진 Microsoft Intune 문제](known-issues.md)를 참조하세요.
+- 알려진 Microsoft Intune 문제를 알아봅니다. 자세한 내용은 [Intune 고객 성공](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)(영문)을 참조 하세요.
 - 추가 도움이 필요하십니까? [Microsoft Intune에 대한 지원을 받는 방법](get-support.md)을 참조하십시오.

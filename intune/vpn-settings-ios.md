@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d922ecde0159603acbfbc3dc0590592592d72645
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1eee827ace5dae92b485a250e6e4e0b9b426fbe6
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046215"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713196"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 디바이스에서 VPN 설정 구성
 
@@ -41,7 +41,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 - **Cisco(IPSec)**
 - **Citrix VPN**
 - **Citrix SSO**
-- **Zscaler**: 조건부 액세스를 사용하거나 사용자가 Zscaler 로그인 화면을 무시하도록 허용하려면 ZPA(Zscaler Private Access)를 Azure AD 계정과 통합해야 합니다. 자세한 단계는 [Zscaler 설명서](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)를 참조하세요. 
+- **Zscaler**: 조건부 액세스를 사용하거나 사용자가 Zscaler 로그인 화면을 무시하도록 허용하려면 ZPA(Zscaler Private Access)를 Azure AD 계정과 통합해야 합니다. 자세한 단계는 [Zscaler 설명서](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad)를 참조하세요. 
 - **사용자 지정 VPN**
 
 > [!NOTE]

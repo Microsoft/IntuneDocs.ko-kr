@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d81f28b03a41bcdc8b6c9f18ef58e6a42346ba7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a4f81f29fea9008c7dd47902812141db8448bc3
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049973"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735711"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Android Enterprise 전용 디바이스 또는 완전 관리형 디바이스 등록(미리 보기)
 
@@ -74,19 +74,20 @@ Google의 Zero Touch 시스템을 사용하려면 디바이스가 이를 지원�
 2. EMM DPC 드롭다운에서 **Microsoft Intune**을 선택합니다.
 3. Google의 Zero Touch 콘솔에서 다음 JSON을 DPC 추가 필드에 복사/붙여넣기를 합니다. *YourEnrollmentToken* 문자열을 등록 프로필의 일부로 만든 등록 토큰으로 바꿉니다. 등록 토큰을 큰따옴표로 둘러싸십시오.
 
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+    ```json
+    { 
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
+    
+        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
+            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+        } 
     } 
-} 
-```
+    ```
+
 4. **적용**을 선택합니다.
 
 
