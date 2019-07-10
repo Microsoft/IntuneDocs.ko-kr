@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b25a72fdc552433886f7eb3349a8f396e2019ea
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041629"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549443"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 서비스 설명
 
@@ -43,9 +43,9 @@ Intune을 사용하여 디바이스 및 앱을 관리하고 회사 데이터를 
 
 <!--- For a list of settings that you can set up on mobile devices, see:
 
--   [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
+- [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
 
--   [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
+- [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
 
 For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).--->
 ## <a name="intune-onboarding-benefit"></a>Intune 등록 혜택

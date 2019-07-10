@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c4f5fd3f8c92d1d78ed37946663a127df440f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f9438c3c566dc62acfa7567428ebe3a6a6be4777
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530684"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572572"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune과 Check Point SandBlast Mobile Threat Defense 커넥터
 
@@ -45,11 +45,11 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 맬웨어와 같은 악성 앱이 디바이스에서 감지되면 위협이 해결될 때까지 디바이스를 차단할 수 있습니다.
 
--   회사 메일에 연결
+- 회사 메일에 연결
 
--   작업용 OneDrive 앱과 회사 파일 동기화
+- 작업용 OneDrive 앱과 회사 파일 동기화
 
--   회사 앱에 액세스
+- 회사 앱에 액세스
 
 **악성 앱이 발견되면 액세스 차단:**
 
@@ -61,7 +61,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 
-네트워크에서  **메시지 가로채기(Man-in-the-middle)**  와 같은 위협을 감지하고 디바이스 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
+네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 위협을 감지하고 디바이스 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
 
 **Wi-Fi를 통한 네트워크 액세스 차단:**
 
@@ -73,7 +73,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
 
-네트워크에서  **메시지 가로채기(Man-in-the-middle)**  와 같은 공격을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
+네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 공격을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 
 **네트워크 위협이 감지할 경우 SharePoint Online 차단:**
 
@@ -85,18 +85,18 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
--   **Android 4.1 이상**
+- **Android 4.1 이상**
 
--   **iOS 8 이상**
+- **iOS 8 이상**
 
 ## <a name="pre-requisites"></a>필수 구성 요소
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune 구독
+- Microsoft Intune 구독
 
--   Check Point SandBlast Mobile Threat Defense 구독
-    -   자세한 내용은 [CheckPoint SandBlast 웹사이트](https://www.checkpoint.com/)를 참조하세요.
+- Check Point SandBlast Mobile Threat Defense 구독
+    - 자세한 내용은 [CheckPoint SandBlast 웹사이트](https://www.checkpoint.com/)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

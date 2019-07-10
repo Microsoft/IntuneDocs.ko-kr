@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 926d31e226bd25890afe5214b9e8c9247f7316a2
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044543"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572176"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Intune과 NAC(네트워크 액세스 제어) 통합
 
@@ -39,7 +39,7 @@ NAC 솔루션은 액세스 제어 결정을 내리기 위해 Intune에서 디바
 
 Intune에 능동적으로 동기화하는 디바이스는 **준수** / **비준수**에서 **동기화되지 않음**(또는 **알 수 없음**)으로 이동할 수 없습니다. **알 수 없음** 상태는 아직 준수 여부가 평가되지 않은 새로 등록된 디바이스에 예약되었습니다.
 
-리소스에 대한 액세스가 차단된 디바이스의 경우, 차단 서비스가 모든 사용자를 [관리 포털](https://portal.manage.microsoft.com)로 리디렉션하여 디바이스가 차단된 이유를 확인할 수 있도록 해야 합니다.  사용자가 이 페이지를 방문하면 해당 디바이스의 준수 여부가 동기적으로 재평가됩니다.
+리소스에 대한 액세스가 차단된 디바이스의 경우, 차단 서비스가 모든 사용자를 [관리 포털](https://portal.manage.microsoft.com)로 리디렉션하여 디바이스가 차단된 이유를 확인할 수 있도록 해야 합니다.  사용자가 이 페이지를 방문하면 해당 디바이스의 준수 여부가 동기적으로 재평가됩니다.
 
 ## <a name="nac-and-conditional-access"></a>NAC 및 조건부 액세스
 
