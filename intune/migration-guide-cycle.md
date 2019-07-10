@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87e5ac06e93027b577d42b27e7d15b9b18e11020
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 30e104d82580a5a0b6b01edb0eaade0673b33d83
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046355"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548395"
 ---
 # <a name="typical-migration-cycle"></a>일반적인 마이그레이션 주기
 
@@ -55,9 +55,9 @@ Intune에서는 마이그레이션을 모니터링할 수 있는 여러 방법�
 
 다음을 수행할 수 있도록 각 단계 후 얼마나 많은 사용자가 디바이스를 등록했는지 추적합니다.
 
--   통신 계획의 효율성 평가
+- 통신 계획의 효율성 평가
 
--   조건부 액세스 적용의 영향 예측
+- 조건부 액세스 적용의 영향 예측
 
 
 ## <a name="post-migration"></a>마이그레이션 후

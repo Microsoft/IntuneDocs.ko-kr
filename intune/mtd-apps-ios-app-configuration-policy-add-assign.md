@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: fdc7434616db6c06f56438fb6d8774ae3f2deca9
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407126"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548424"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune을 사용하여 MTD(Mobile Threat Defense) 앱 추가 및 할당  
 
@@ -34,9 +34,9 @@ Intune을 사용하면 최종 사용자가 모바일 디바이스에서 위협�
 ## <a name="before-you-begin"></a>시작하기 전에    
 [Azure Portal](https://portal.azure.com/)에서 아래 단계를 완료해야 합니다. 다음 프로세스에 대해 잘 알고 있어야 합니다.
 
--   [Intune에 앱 추가](apps-add.md)
--   [Intune에 iOS 앱 구성 정책 추가](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)
--   [Intune을 사용하여 앱 할당](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)
+- [Intune에 앱 추가](apps-add.md)
+- [Intune에 iOS 앱 구성 정책 추가](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)
+- [Intune을 사용하여 앱 할당](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)
 
 > [!TIP]
 > Intune 회사 포털은 사용자의 ID가 Azure AD에서 확인될 수 있도록 Android 디바이스에서 브로커로 작동합니다.

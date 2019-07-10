@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046218"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548342"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>출시 통신 계획 개발
 
 올바른 변경 관리에는 예정된 변경에 대한 명확하고 유용한 통신이 필요합니다. 원활한 Intune 배포를 위해 출시 통신 계획에는 다음 네 가지 영역이 포함되어야 합니다.
 
--   전달할 정보
+- 전달할 정보
 
--   통신에 사용되는 배달 방법
+- 통신에 사용되는 배달 방법
 
--   통신 수신 대상
+- 통신 수신 대상
 
--   통신 타임라인
+- 통신 타임라인
 
 각 영역을 더 자세히 살펴보겠습니다.
 
@@ -56,13 +56,13 @@ ms.locfileid: "66046218"
 
 대상 조직 그룹 및 사용자에게 Intune 출시 정보를 전달하는 데 사용할 수 있는 몇 가지 배달 방법이 있습니다. 다음 목록에는 몇 가지 예와 해당 방법과 함께 사용할 수 있는 웨이브가 나와 있습니다.
 
--   킥오프 웨이브에 사용되는 조직 전체의 개별 모임 또는 Microsoft Teams 회의
+- 킥오프 웨이브에 사용되는 조직 전체의 개별 모임 또는 Microsoft Teams 회의
 
--   등록 전, 등록 및 등록 후 웨이브에 사용되는 전자 메일
+- 등록 전, 등록 및 등록 후 웨이브에 사용되는 전자 메일
 
--   모든 웨이브에 사용되는 조직 웹 사이트
+- 모든 웨이브에 사용되는 조직 웹 사이트
 
--   킥오프 및 등록 전 웨이브에 사용되는 Yammer, 포스터 및 전단
+- 킥오프 및 등록 전 웨이브에 사용되는 Yammer, 포스터 및 전단
 
 ## <a name="communications-timeline"></a>통신 타임라인
 

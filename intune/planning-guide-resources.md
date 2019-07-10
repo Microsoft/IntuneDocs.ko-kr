@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8e8e0f440377f40937145d78d3959318c21e6e5
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046309"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549317"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune 배포 계획을 위한 추가 리소스
 
@@ -50,12 +50,12 @@ ms.locfileid: "67046309"
 
 Intune 배포 계획, 디자인 및 구현 프로세스 중 유용할 수 있는 추가 정보는 다음 리소스를 확인해 보세요.
 
--   [Microsoft Intune 설명서](/intune/) - Intune 설명서의 전체 집합입니다.
+- [Microsoft Intune 설명서](/intune/) - Intune 설명서의 전체 집합입니다.
 
--   [Intune 블로그](https://blogs.technet.microsoft.com/enterprisemobility/) - 보다 규모가 큰 Enterprise Mobility 환경에 Intune이 어느 정도 적합한지를 파악할 수 있는 게시물이 제공됩니다.
+- [Intune 블로그](https://blogs.technet.microsoft.com/enterprisemobility/) - 보다 규모가 큰 Enterprise Mobility 환경에 Intune이 어느 정도 적합한지를 파악할 수 있는 게시물이 제공됩니다.
 
--   [Microsoft 보안 센터](http://www.microsoft.com/TrustCenter) - 모든 Microsoft 클라우드 제품과 서비스의 보안, 개인 정보, 규정 준수 및 투명성에 대한 Microsoft의 접근 방식을 알아볼 수 있습니다.
+- [Microsoft 보안 센터](http://www.microsoft.com/TrustCenter) - 모든 Microsoft 클라우드 제품과 서비스의 보안, 개인 정보, 규정 준수 및 투명성에 대한 Microsoft의 접근 방식을 알아볼 수 있습니다.
 
--   [Intune 사용자 의견](http://microsoftintune.uservoice.com/) - 특정 기능을 요청하거나 다른 고객들과 함께 유용한 기능에 투표를 하려는 경우 사용자 의견을 통해 Intune에 의견을 제공할 수 있습니다. Microsoft는 사용자 여러분의 의견을 항상 반영하기 위해 노력하고 있습니다.
+- [Intune 사용자 의견](http://microsoftintune.uservoice.com/) - 특정 기능을 요청하거나 다른 고객들과 함께 유용한 기능에 투표를 하려는 경우 사용자 의견을 통해 Intune에 의견을 제공할 수 있습니다. Microsoft는 사용자 여러분의 의견을 항상 반영하기 위해 노력하고 있습니다.
 
--   [등록 가이드](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - 최종 사용자가 개인 디바이스를 Intune에 등록하는 의미를 쉽게 파악할 수 있도록 통신 계획의 일부분으로 수정하거나 그대로 사용할 수 있는 문서 집합입니다.
+- [등록 가이드](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - 최종 사용자가 개인 디바이스를 Intune에 등록하는 의미를 쉽게 파악할 수 있도록 통신 계획의 일부분으로 수정하거나 그대로 사용할 수 있는 문서 집합입니다.

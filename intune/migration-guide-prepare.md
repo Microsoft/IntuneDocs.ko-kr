@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494582"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548371"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1단계: MDM(모바일 디바이스 관리)을 위한 Microsoft Intune 준비
 
@@ -31,30 +31,30 @@ Intune 설정의 세부 정보를 살펴보기 전에 조직의 모바일 디바
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>어떤 종류의 디바이스를 관리해야 하나요?
 
--   어떤 [플랫폼](supported-devices-browsers.md)을 지원해야 하나요?
+- 어떤 [플랫폼](supported-devices-browsers.md)을 지원해야 하나요?
 
--   회사 소유 디바이스 또는 개인 디바이스를 지원하는 데 필요한 디바이스인가요?
+- 회사 소유 디바이스 또는 개인 디바이스를 지원하는 데 필요한 디바이스인가요?
 
--   어떤 종류의 연결을 사용하나요? Wi-Fi, 셀룰러 또는 VPN인가요?
+- 어떤 종류의 연결을 사용하나요? Wi-Fi, 셀룰러 또는 VPN인가요?
 
 ### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>관리되는 디바이스에서 사용자가 무엇을 해야 하나요?
 
--   앱을 최종 사용자에게 프로비전해야 하나요?
+- 앱을 최종 사용자에게 프로비전해야 하나요?
 
--   사용자 지정 LOB(기간 업무) 앱을 사용하나요? 아니면 공용 스토어 앱만 필요한가요?
+- 사용자 지정 LOB(기간 업무) 앱을 사용하나요? 아니면 공용 스토어 앱만 필요한가요?
 
--   메일 계정을 프로비전해야 하나요?
+- 메일 계정을 프로비전해야 하나요?
 
 ### <a name="what-kinds-of-users"></a>사용자의 종류는 어떤가요?
 
--   얼마나 많은 사용자가 단일 디바이스를 사용하나요?
+- 얼마나 많은 사용자가 단일 디바이스를 사용하나요?
 
--   어떤 사용 약관이 필요한가요?
+- 어떤 사용 약관이 필요한가요?
 
-    -   법률 부서가 조기에 이 문제에 관여하도록 해야 합니다.
-    -   필요한 지역화는 무엇인가요?
+    - 법률 부서가 조기에 이 문제에 관여하도록 해야 합니다.
+    - 필요한 지역화는 무엇인가요?
 
--   일반적으로 사용자가 기술 및 IT에 익숙한가요?
+- 일반적으로 사용자가 기술 및 IT에 익숙한가요?
 
 ### <a name="what-is-your-device-security-policy"></a>디바이스 보안 정책은 어떻게 되나요?
 
@@ -68,11 +68,11 @@ Intune 설정의 세부 정보를 살펴보기 전에 조직의 모바일 디바
 
 - 어떤 종류의 인증을 지원해야 하나요? 인증서 기반 인증이 필요한 경우 어떤 종류의 인증서를 프로비전해야 하나요?
   - Intune에서는 등록된 디바이스에 대한 리소스 액세스 프로필을 사용하여 인증서를 프로비전할 수 있습니다.
-  -   어떤 종류의 PKI(공개 키 인프라) 인프라를 지원해야 하나요?
+  - 어떤 종류의 PKI(공개 키 인프라) 인프라를 지원해야 하나요?
   <br></br>
 - 디바이스 또는 앱 수준에서 VPN(가상 프라이빗 네트워크)을 지원해야 하나요?
 
-  -   Intune에서는 타사 VPN 공급자에 대한 VPN 구성을 프로비전할 수 있습니다.
+  - Intune에서는 타사 VPN 공급자에 대한 VPN 구성을 프로비전할 수 있습니다.
   <br/><br/>
 - 가동 중지 시간을 방지하기 위해 특정 요구 사항에 대한 임시 예외를 만들 수 있나요? 또는 액세스 권한이 있는 디바이스가 항상 모든 보안 요구 사항을 준수해야 하나요?
 

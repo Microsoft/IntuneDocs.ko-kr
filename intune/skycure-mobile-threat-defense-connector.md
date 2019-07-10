@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 6480c6fb412c12e228b8bc3647045cf15da531e1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044079"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548029"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 커넥터
 
 Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 SEP Mobile(Symantec Endpoint Protection Mobile)에서 수행한 위험 평가에 따라 조건부 액세스를 사용하여 회사 리소스에의 모바일 디바이스 액세스를 제어할 수 있습니다. 위험은 다음을 비롯하여 SEP Mobile을 실행하는 디바이스에서 수집된 원격 분석에 따라 평가됩니다.
 
--   물리적 방어
+- 물리적 방어
 
--   네트워크 방어
+- 네트워크 방어
 
--   애플리케이션 방어
+- 애플리케이션 방어
 
--   취약성 방어
+- 취약성 방어
 
 Intune 디바이스 준수 정책을 통해 SEP Mobile 위협 평가를 사용하도록 설정한 다음, 조건부 액세스 정책을 사용하여 회사 리소스에 액세스하는 비규격 디바이스를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
 
@@ -48,9 +48,9 @@ Intune 디바이스 준수 정책에는 SEP Mobile 위험 평가를 기반으로
 
 Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
--   **기본 설정**은 읽기 전용 모드로, Intune에서 디바이스에 대한 SEP Mobile 표시를 허용합니다.
+- **기본 설정**은 읽기 전용 모드로, Intune에서 디바이스에 대한 SEP Mobile 표시를 허용합니다.
 
--   **전체 통합**을 사용하면 SEP Mobile에서 디바이스 위험 및 보안 문제 세부 정보를 Intune에 보고할 수 있습니다.
+- **전체 통합**을 사용하면 SEP Mobile에서 디바이스 위험 및 보안 문제 세부 정보를 Intune에 보고할 수 있습니다.
 
 ## <a name="sample-scenarios"></a>샘플 시나리오:
 
@@ -60,11 +60,11 @@ Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
 맬웨어와 같은 악성 앱이 디바이스에서 감지되면 위협이 해결될 때까지 디바이스를 차단할 수 있습니다.
 
--   회사 메일에 연결
+- 회사 메일에 연결
 
--   작업용 OneDrive 앱과 회사 파일 동기화
+- 작업용 OneDrive 앱과 회사 파일 동기화
 
--   회사 앱에 액세스
+- 회사 앱에 액세스
 
 **악성 앱이 발견되면 액세스 차단:**
 
@@ -100,17 +100,17 @@ Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
--   **Android 4.1 이상**
+- **Android 4.1 이상**
 
--   **iOS 8 이상**
+- **iOS 8 이상**
 
 ## <a name="pre-requisites"></a>필수 구성 요소
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune 구독
+- Microsoft Intune 구독
 
--   Symantec Endpoint Protection Mobile 구독
+- Symantec Endpoint Protection Mobile 구독
 
 자세한 내용은 [Symantec 웹 사이트](https://www.skycure.com/skycure-microsoft-integration/)를 참조하세요.
 

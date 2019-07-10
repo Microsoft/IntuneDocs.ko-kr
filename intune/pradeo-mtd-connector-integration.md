@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1907ebf3d9233ca2324a4759b4f22a4c62e143c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ec3685df5865d22874b68a8bf42539d37fb486d7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045795"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549255"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Intune과 Pradeo 통합
 
@@ -32,47 +32,47 @@ Intune과 Pradeo Mobile Threat Defense 솔루션을 통합하려면 다음 단�
 
 Intune과 Pradeo을 통합하는 과정을 시작하기 전에 다음 항목이 있는지 확인합니다.
 
--   Microsoft Intune 구독
+- Microsoft Intune 구독
 
--   다음 권한을 부여할 Azure Active Directory 관리자 자격 증명
+- 다음 권한을 부여할 Azure Active Directory 관리자 자격 증명
 
-    -   로그인 및 사용자 프로필 읽기
+    - 로그인 및 사용자 프로필 읽기
 
-    -   로그인한 사용자로 디렉터리에 액세스
+    - 로그인한 사용자로 디렉터리에 액세스
 
-    -   디렉터리 데이터 읽기
+    - 디렉터리 데이터 읽기
 
-    -   Intune에 디바이스 정보 보내기
+    - Intune에 디바이스 정보 보내기
 
--   Pradeo Security 콘솔에 액세스하기 위한 관리자 자격 증명.
+- Pradeo Security 콘솔에 액세스하기 위한 관리자 자격 증명.
 
 ### <a name="pradeo-app-authorization"></a>Pradeo 앱 권한 부여
 
 Pradeo 앱 권한 부여 프로세스는 다음과 같습니다.
 
--   Pradeo 서비스에서 디바이스 상태와 관련된 정보를 Intune으로 다시 전달하도록 허용합니다.
+- Pradeo 서비스에서 디바이스 상태와 관련된 정보를 Intune으로 다시 전달하도록 허용합니다.
 
--   Pradeo는 Azure AD 등록 그룹 멤버 자격과 동기화하여 해당 디바이스의 데이터베이스를 채웁니다.
+- Pradeo는 Azure AD 등록 그룹 멤버 자격과 동기화하여 해당 디바이스의 데이터베이스를 채웁니다.
 
--   Pradeo 관리 콘솔에서 Azure AD SSO(Single Sign On)를 사용하도록 허용합니다.
+- Pradeo 관리 콘솔에서 Azure AD SSO(Single Sign On)를 사용하도록 허용합니다.
 
--   Pradeo 앱에서 Azure AD SSO를 사용하여 로그인하도록 허용합니다.
+- Pradeo 앱에서 Azure AD SSO를 사용하여 로그인하도록 허용합니다.
 
 ## <a name="to-set-up-pradeo-integration"></a>Pradeo 통합을 설정하려면
 
-1.  [Pradeo Security 콘솔](https://www.apps-security.com)로 이동하여 자격 증명으로 로그인합니다.
+1. [Pradeo Security 콘솔](https://www.apps-security.com)로 이동하여 자격 증명으로 로그인합니다.
 
-2.  메뉴에서 **관리 - Enterprise Mobility Management**를 선택합니다.
+2. 메뉴에서 **관리 - Enterprise Mobility Management**를 선택합니다.
 
-3.  **Intune 로고**를 선택합니다.
+3. **Intune 로고**를 선택합니다.
 
-4.  **EMM(엔터프라이즈 이동성 관리) - Intune** 창의 **1단계** 아래에서 **Pradeo Connector** 단추를 선택합니다. 
+4. **EMM(엔터프라이즈 이동성 관리) - Intune** 창의 **1단계** 아래에서 **Pradeo Connector** 단추를 선택합니다. 
 
     ![Pradeo EMM Intune 창의 스크린샷](./media/pradeo_setup.png)
 
 5. Microsoft Intune 연결 창에서 Intune 자격 증명을 입력합니다.
 
-5.  Pradeo 웹 페이지가 다시 열립니다. **2단계** 아래에서 **Pradeo 디바이스 상태** 단추를 선택합니다.
+5. Pradeo 웹 페이지가 다시 열립니다. **2단계** 아래에서 **Pradeo 디바이스 상태** 단추를 선택합니다.
 
 7. Pradeo-Intune Connector 창에서 **동의**를 선택합니다. 
 
@@ -86,4 +86,4 @@ Pradeo 앱 권한 부여 프로세스는 다음과 같습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
--   [Pradeo 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Pradeo 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)

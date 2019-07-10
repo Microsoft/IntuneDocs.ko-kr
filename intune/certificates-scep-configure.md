@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494299"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547363"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -429,7 +429,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
         >  - 주체의 정적 텍스트에서 변수를 중괄호 **{}** 로 묶지 않으면 오류가 해결됩니다. 
         >  - 디바이스 인증서 변수를 사용할 때 변수를 중괄호 **{ }** 로 묶습니다.
         >  - `{{FullyQualifiedDomainName}}`은 Windows 및 도메인에 가입된 디바이스에서만 작동합니다. 
-        >  -  디바이스 인증서의 주체 또는 SAN에서 디바이스 속성(예: IMEI, 일련 번호 및 정규화된 도메인 이름)을 사용하는 경우 이러한 속성은 해당 디바이스의 액세스 권한을 가진 사람이 스푸핑할 수 있습니다.
+        >  - 디바이스 인증서의 주체 또는 SAN에서 디바이스 속성(예: IMEI, 일련 번호 및 정규화된 도메인 이름)을 사용하는 경우 이러한 속성은 해당 디바이스의 액세스 권한을 가진 사람이 스푸핑할 수 있습니다.
         >  - 지정된 디바이스 변수가 지원되지 않는 경우 프로필이 디바이스에 설치되지 않습니다. 예를 들어, IMEI 번호가 없는 디바이스에 지정된 SCEP 프로필의 주체 이름에 {{IMEI}}를 사용하는 경우 프로필 설치에 실패합니다. 
 
 
@@ -472,7 +472,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
         >  - SAN의 정적 텍스트에서 중괄호 **{}** , 파이프 기호 **|** 및 세미콜론 **;** 이 작동하지 않습니다. 
         >  - 디바이스 인증서 변수를 사용할 때 변수를 중괄호 **{ }** 로 묶습니다.
         >  - `{{FullyQualifiedDomainName}}`은 Windows 및 도메인에 가입된 디바이스에서만 작동합니다. 
-        >  -  디바이스 인증서의 주체 또는 SAN에서 디바이스 속성(예: IMEI, 일련 번호 및 정규화된 도메인 이름)을 사용하는 경우 이러한 속성은 해당 디바이스의 액세스 권한을 가진 사람이 스푸핑할 수 있습니다.
+        >  - 디바이스 인증서의 주체 또는 SAN에서 디바이스 속성(예: IMEI, 일련 번호 및 정규화된 도메인 이름)을 사용하는 경우 이러한 속성은 해당 디바이스의 액세스 권한을 가진 사람이 스푸핑할 수 있습니다.
         >  - 지정된 디바이스 변수가 지원되지 않는 경우 프로필이 디바이스에 설치되지 않습니다. 예를 들어 {{IMEI}}가 IMEI 번호가 없는 디바이스에 지정된 SCEP 프로필의 주체 대체 이름에 사용되는 경우 프로필 설치가 실패합니다.  
 
    - **인증서 유효 기간**: 발급 CA에 대해 사용자 지정 유효 기간을 허용하는 `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` 명령을 실행한 경우 인증서가 만료될 때까지 남은 기간을 입력할 수 있습니다.<br>인증서 템플릿에서 유효 기간보다 작은 값은 입력할 수 있지만 높은 값은 입력할 수 없습니다. 예를 들어 인증서 템플릿의 인증서 유효 기간이 2년이면 값을 1년으로 입력할 수는 있어도 5년으로는 입력할 수 없습니다. 또한 이 값은 발급 CA 인증서의 남은 유효 기간보다 작아야 합니다. 

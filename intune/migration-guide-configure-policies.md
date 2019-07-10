@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 86aefbfc37db7929f9748d4783db319cf97d4545
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512257"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548460"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune에 마이그레이션할 때 디바이스 준수 및 앱 관리 정책 구성
 
@@ -30,13 +30,13 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 각 디바이스 플랫폼이 다양한 설정을 제공할 수 있지만, 다음 모바일 디바이스 관리 기능을 제공하여 Intune 디바이스 정책을 각 디바이스 플랫폼에 적용할 수 있습니다.
 
--   각 사용자가 등록하는 디바이스의 수를 규정합니다.
+- 각 사용자가 등록하는 디바이스의 수를 규정합니다.
 
--   디바이스 설정(예: 디바이스 수준 암호화, 암호 길이, 카메라 사용)을 관리합니다.
+- 디바이스 설정(예: 디바이스 수준 암호화, 암호 길이, 카메라 사용)을 관리합니다.
 
--   앱, 메일 프로필, VPN 프로필 등을 제공합니다.
+- 앱, 메일 프로필, VPN 프로필 등을 제공합니다.
 
--   보안 준수 정책에 대한 디바이스 수준 기준을 평가합니다.
+- 보안 준수 정책에 대한 디바이스 수준 기준을 평가합니다.
 
 > [!IMPORTANT]
 > 디바이스 관리 정책은 개별 디바이스 또는 사용자에게 직접 할당되지 않으며, 대신 사용자 그룹에 할당됩니다. 정책을 사용자 그룹에 직접 적용함으로써 사용자 디바이스에 적용하거나, 정책을 디바이스 그룹에 적용함으로써 그룹 구성원에게 적용할 수 있습니다.
@@ -61,9 +61,9 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 #### <a name="directly-import-ios-configuration-profiles-optional"></a>iOS 구성 프로필 직접 가져오기(선택 사항)
 
--   **Apple Configurator iOS 프로필(iOS 7.1 이상):** 기존 MDM 솔루션에서 Apple Configurator 프로필(.mobileconfig 파일)을 사용하는 경우 Intune에서 해당 프로필을 사용자 지정 구성 정책으로 직접 가져올 수 있습니다.
+- **Apple Configurator iOS 프로필(iOS 7.1 이상):** 기존 MDM 솔루션에서 Apple Configurator 프로필(.mobileconfig 파일)을 사용하는 경우 Intune에서 해당 프로필을 사용자 지정 구성 정책으로 직접 가져올 수 있습니다.
 
--   **iOS 모바일 애플리케이션 구성 정책:** 기존 MDM 솔루션에서 iOS 모바일 애플리케이션 구성 정책을 사용하는 경우 해당 정책이 Apple에서 속성 목록에 대해 지정한 XML 형식을 충족하는 한 Intune에서 이 정책을 직접 가져올 수 있습니다.
+- **iOS 모바일 애플리케이션 구성 정책:** 기존 MDM 솔루션에서 iOS 모바일 애플리케이션 구성 정책을 사용하는 경우 해당 정책이 Apple에서 속성 목록에 대해 지정한 XML 형식을 충족하는 한 Intune에서 이 정책을 직접 가져올 수 있습니다.
 
 - [iOS](custom-settings-ios.md) 사용자 지정 정책을 추가하는 방법에 대해 알아보세요.
 
@@ -71,25 +71,25 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 디바이스 준수 정책은 보안 지향 설정을 평가하고 디바이스가 회사 표준을 준수하는지 여부를 보여 주는 보고를 제공합니다. 이러한 설정은 다음과 같습니다.
 
--   PIN 길이
+- PIN 길이
 
--   탈옥 상태
+- 탈옥 상태
 
--   OS 버전
+- OS 버전
 
 디바이스 준수 설정에 대한 추가 리소스를 참조하세요.
 
--   [디바이스 준수 정책](device-compliance.md)에 대해 알아보세요.
+- [디바이스 준수 정책](device-compliance.md)에 대해 알아보세요.
 
--   [디바이스 준수 정책을 만드는 방법](device-compliance-get-started.md)에 대해 알아보세요.
+- [디바이스 준수 정책을 만드는 방법](device-compliance-get-started.md)에 대해 알아보세요.
 
 ### <a name="task-5-publish-and-deploy-apps"></a>태스크 5: 앱 게시 및 배포
 
 Intune MDM을 사용하는 경우 앱 자동 설치를 요구하거나 회사 포털에서 앱을 사용할 수 있도록 하여 앱을 제공할 수 있습니다.
 
--   [앱 추가 방법](apps-add.md).
+- [앱 추가 방법](apps-add.md).
 
--   [앱 배포 방법](apps-deploy.md).
+- [앱 배포 방법](apps-deploy.md).
 
 ### <a name="task-6-enable-device-enrollment"></a>태스크 6: 디바이스 등록 사용
 

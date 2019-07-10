@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416843"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713269"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -155,7 +155,7 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 3. **버전 변경** 창에서 **Select a security baseline to update to**(업데이트할 보안 기준 선택) 드롭다운을 사용하여 사용할 버전 인스턴스를 선택합니다.  
 
    ![버전 선택](./media/security-baselines/select-instance.png)  
- 
+   
 4. **업데이트 검토**를 선택하여 프로필 현재 인스턴스 버전과 선택한 새 버전 간의 차이를 표시하는 CSV 파일을 다운로드합니다. 이 파일을 검토하여 추가 또는 제거된 설정과 업데이트된 프로필에서 이러한 설정의 기본값이 무엇인지 파악합니다.  
 
    준비가 되면 다음 단계를 계속합니다.  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530671"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546890"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Intune 클래식 포털에서 Azure Portal로 조건부 액세스 정책 다시 할당
 
@@ -51,13 +51,13 @@ ms.locfileid: "67530671"
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Intune 클래식 포털에서 디바이스 기반 조건부 액세스 정책을 확인하려면
 
-1.  [Intune 클래식 포털](https://manage.microsoft.com)로 이동한 다음 자격 증명을 사용하여 로그인합니다.
+1. [Intune 클래식 포털](https://manage.microsoft.com)로 이동한 다음 자격 증명을 사용하여 로그인합니다.
 
-2.  왼쪽 메뉴에서 **정책**을 선택합니다.
+2. 왼쪽 메뉴에서 **정책**을 선택합니다.
 
-3.  **조건부 액세스**를 선택한 다음 조건부 액세스 정책을 만든 Microsoft 클라우드 서비스(예: Exchange Online, SharePoint Online 등)를 선택합니다.
+3. **조건부 액세스**를 선택한 다음 조건부 액세스 정책을 만든 Microsoft 클라우드 서비스(예: Exchange Online, SharePoint Online 등)를 선택합니다.
 
-4.  조건부 액세스 설정을 기록해 두고, Azure Portal에서 동일한 조건부 액세스 정책을 만들 때 이러한 정보를 참조합니다.
+4. 조건부 액세스 설정을 기록해 두고, Azure Portal에서 동일한 조건부 액세스 정책을 만들 때 이러한 정보를 참조합니다.
 
 ### <a name="app-and-device-based-conditional-access-policies-working-together"></a>앱 및 디바이스 기반 조건부 액세스 정책의 연동
 
@@ -194,13 +194,13 @@ Azure Portal에서 조건부 액세스 정책을 다시 할당했으면 이전�
 
 ### <a name="to-disable-the-conditional-access-policies"></a>조건부 액세스 정책을 사용하지 않도록 설정하려면
 
-1.  [Intune 클래식 포털](https://manage.microsoft.com)로 이동한 다음 자격 증명을 사용하여 로그인합니다.
+1. [Intune 클래식 포털](https://manage.microsoft.com)로 이동한 다음 자격 증명을 사용하여 로그인합니다.
 
-2.  왼쪽 메뉴에서 **정책**을 선택합니다.
+2. 왼쪽 메뉴에서 **정책**을 선택합니다.
 
-3.  **조건부 액세스**를 선택한 다음 조건부 액세스 정책을 만든 Microsoft 클라우드 서비스(예: Exchange Online, SharePoint Online 등)를 선택합니다.
+3. **조건부 액세스**를 선택한 다음 조건부 액세스 정책을 만든 Microsoft 클라우드 서비스(예: Exchange Online, SharePoint Online 등)를 선택합니다.
 
-4.  **조건부 액세스 정책 사용** 옵션의 선택을 취소하고 **저장**을 클릭합니다.
+4. **조건부 액세스 정책 사용** 옵션의 선택을 취소하고 **저장**을 클릭합니다.
 
     ![Intune 클래식 포털에서 조건부 액세스 정책 사용 안 함 이미지](./media/reassign-ca-18.png)
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e803eb3d47d44c8c8f3cd1b699b5ca220aeb91f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049105"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546970"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Intune과 Better Mobile 통합
 
@@ -32,31 +32,31 @@ Intune과 Better Mobile Threat Defense 솔루션을 통합하려면 다음 단�
 
 Intune과 Better Mobile을 통합하는 과정을 시작하기 전에 다음 항목이 있는지 확인합니다.
 
--   Microsoft Intune 구독
+- Microsoft Intune 구독
 
--   다음 권한을 부여할 Azure Active Directory 관리자 자격 증명
+- 다음 권한을 부여할 Azure Active Directory 관리자 자격 증명
 
-    -   로그인 및 사용자 프로필 읽기
+    - 로그인 및 사용자 프로필 읽기
 
-    -   로그인한 사용자로 디렉터리에 액세스
+    - 로그인한 사용자로 디렉터리에 액세스
 
-    -   디렉터리 데이터 읽기
+    - 디렉터리 데이터 읽기
 
-    -   Intune에 디바이스 정보 보내기
+    - Intune에 디바이스 정보 보내기
 
--   Better Mobile 관리 콘솔에 액세스하기 위한 관리자 자격 증명
+- Better Mobile 관리 콘솔에 액세스하기 위한 관리자 자격 증명
 
 ### <a name="better-mobile-app-authorization"></a>Better Mobile 앱 권한 부여
 
 Better Mobile 앱 권한 부여 프로세스는 다음과 같습니다.
 
--   Better Mobile 서비스에서 디바이스 상태와 관련된 정보를 Intune으로 다시 전달하도록 허용합니다.
+- Better Mobile 서비스에서 디바이스 상태와 관련된 정보를 Intune으로 다시 전달하도록 허용합니다.
 
--   Better Mobile은 Azure Active Directory 등록 그룹 멤버 자격과 동기화하여 해당 디바이스의 데이터베이스를 채웁니다.
+- Better Mobile은 Azure Active Directory 등록 그룹 멤버 자격과 동기화하여 해당 디바이스의 데이터베이스를 채웁니다.
 
--   Better Mobile 관리 콘솔에서 Azure Active Directory SSO(Single Sign On)를 사용하도록 허용합니다.
+- Better Mobile 관리 콘솔에서 Azure Active Directory SSO(Single Sign On)를 사용하도록 허용합니다.
 
--   Better Mobile 앱에서 Azure Active Directory SSO를 사용하여 로그인하도록 허용합니다.
+- Better Mobile 앱에서 Azure Active Directory SSO를 사용하여 로그인하도록 허용합니다.
 
 ## <a name="to-set-up-better-mobile-integration"></a>Better Mobile 통합을 설정하려면
 
@@ -75,4 +75,4 @@ Better Mobile 앱 권한 부여 프로세스는 다음과 같습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
--   [Better Client 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Better Client 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)

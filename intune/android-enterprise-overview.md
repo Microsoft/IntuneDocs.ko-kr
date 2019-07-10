@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f59ff42f7707ace92442bf37ddac9679e36448f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045894"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547505"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune으로 Android 회사 프로필 디바이스 관리
 
@@ -68,9 +68,9 @@ Android 엔터프라이즈 회사 프로필 디바이스에 Exchange ActiveSync 
 
 VPN 지원은 Android VPN 프로필과 비슷합니다. Android 엔터프라이즈 관리에 사용되는 동일한 VPN 공급자 및 기본 구성 옵션이 제공되며 다음과 같은 두 가지 차이점이 있습니다.
 
--  **회사 프로필 범위 VPN** – VPN 연결이 회사 프로필에 배포된 앱으로 제한됩니다. Android 엔터프라이즈 관리형 앱만 VPN 연결을 사용할 수 있습니다. 디바이스의 개인 앱은 관리되는 VPN 연결을 사용할 수 없습니다. 자세한 내용은 [Android 엔터프라이즈 VPN 설정](vpn-settings-android.md#android-enterprise-vpn-settings)을 참조하세요.
+- **회사 프로필 범위 VPN** – VPN 연결이 회사 프로필에 배포된 앱으로 제한됩니다. Android 엔터프라이즈 관리형 앱만 VPN 연결을 사용할 수 있습니다. 디바이스의 개인 앱은 관리되는 VPN 연결을 사용할 수 없습니다. 자세한 내용은 [Android 엔터프라이즈 VPN 설정](vpn-settings-android.md#android-enterprise-vpn-settings)을 참조하세요.
 
--  **앱별 VPN** – VPN 공급자가 지원하는 경우 Intune에서 앱별 VPN을 구성할 수 있습니다.
+- **앱별 VPN** – VPN 공급자가 지원하는 경우 Intune에서 앱별 VPN을 구성할 수 있습니다.
     - 앱별 VPN에 대한 구성
     - Android 엔터프라이즈 앱 구성 프로필을 통해 앱별 VPN을 구성하는 기능입니다.
     자세한 내용은 [Microsoft Intune 사용자 지정 프로필을 사용하여 Android 디바이스에 대한 앱별 VPN 프로필 만들기](android-pulse-secure-per-app-vpn.md)를 참조하세요.
@@ -79,9 +79,9 @@ VPN 지원은 Android VPN 프로필과 비슷합니다. Android 엔터프라이�
 
 Android 관리에 사용할 수 있는 인증서 프로필 구성 옵션을 Android 엔터프라이즈 회사 프로필 디바이스에서 동일하게 사용할 수 있습니다. Android 엔터프라이즈는 향상된 인증서 관리 API를 제공합니다. 고급 인증서 관리는 다음 기능을 제공합니다.
 
--  인증서 배포가 자동으로 매끄럽게 수행되도록 합니다.
--  Intune에서 디바이스가 사용 중지되고 회사 프로필이 제거될 경우 배포된 인증서가 제거되도록 합니다.
--  관리 서비스를 통해 IT 부서에서 인증서를 배포 및 구성했음을 사용자에게 알리는 향상된 메시지를 제공합니다.
+- 인증서 배포가 자동으로 매끄럽게 수행되도록 합니다.
+- Intune에서 디바이스가 사용 중지되고 회사 프로필이 제거될 경우 배포된 인증서가 제거되도록 합니다.
+- 관리 서비스를 통해 IT 부서에서 인증서를 배포 및 구성했음을 사용자에게 알리는 향상된 메시지를 제공합니다.
 
 자세한 내용은 [Microsoft Intune에서 디바이스에 대한 인증서 프로필 구성](certificates-configure.md)을 참조하세요.
 

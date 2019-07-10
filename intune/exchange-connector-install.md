@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffaf29d34c7f6a08d48717f7560926d53cfa8ba2
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: da828b162e008541cb5cb2b5d15092d0fce417c5
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529770"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572543"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune에서 Intune 온-프레미스 Exchange Connector 설정
 이 문서의 정보는 Intune용 Exchange Active Sync 온-프레미스 커넥터를 설치하고 모니터링하는 데 도움이 됩니다.  Intune 온-프레미스 Exchange Connector를 [조건부 액세스 정책과 함께 사용하여 Exchange 온-프레미스 사서함에 대한 액세스를 허용 또는 차단](conditional-access-exchange-create.md)할 수 있습니다. 
@@ -58,22 +58,22 @@ Intune은 한 구독에 여러 개의 온-프레미스 Exchange Connector를 설
 온-프레미스 Exchange Connector에서 사용할 Active Directory 사용자 계정을 만듭니다. 계정에는 다음과 같은 필수 Windows PowerShell Exchange cmdlet을 실행할 수 있는 권한이 있어야 합니다.
 
 
- -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
- -   Get-CasMailbox, Set-CasMailbox
- -   Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
- -   Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
- -   Get-ActiveSyncDeviceStatistics
- -   Get-ActiveSyncDevice
- -   Get-ExchangeServer
- -   Get-ActiveSyncDeviceClass
- -   Get-Recipient
- -   Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
- -   Set-ADServerSettings
- -   Get-Command
+ - Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
+ - Get-CasMailbox, Set-CasMailbox
+ - Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
+ - Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
+ - Get-ActiveSyncDeviceStatistics
+ - Get-ActiveSyncDevice
+ - Get-ExchangeServer
+ - Get-ActiveSyncDeviceClass
+ - Get-Recipient
+ - Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
+ - Set-ADServerSettings
+ - Get-Command
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>온-프레미스 Exchange Connector 소프트웨어 설치 패키지 다운로드
 
-1. 온-프레미스 Exchange Connector에 지원되는 Windows Server 운영 체제에서 [Azure Portal](https://portal.azure.com)을 열고, 온-프레미스 Exchange Server의 관리자이며 Exchange Server를 사용하기 위한 라이선스가 있는 사용자 계정으로 로그인합니다.
+1. 온-프레미스 Exchange Connector에 지원되는 Windows Server 운영 체제에서 [Azure Portal](https://portal.azure.com)을 열고, 온-프레미스 Exchange Server의 관리자이고 Exchange Server를 사용하기 위한 라이선스가 있는 사용자 계정으로 로그인합니다.
 
 2. **Intune** > **Exchange 액세스**로 이동합니다.  
 

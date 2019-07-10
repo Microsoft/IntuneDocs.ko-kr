@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 40e78d85c215bbb5cc126705f26041ce4f7786f4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044596"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549448"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Microsoft Intune에서 조건부 액세스로 최종 사용자 도입 촉진
 
@@ -31,28 +31,28 @@ ms.locfileid: "67044596"
 
 다음은 조건부 액세스로 마이그레이션 캠페인을 강화하는 일반적인 방법입니다.
 
-1.  모든 사용자에 적용할 조건부 액세스 규칙을 설정하지만, 특별히 이전 MDM 공급자에서 마이그레이션해야 하는 사용자는 제외합니다. 모든 조건부 액세스 제외 사용자가 포함된 Azure AD 사용자 그룹을 만들 수 있습니다.
+1. 모든 사용자에 적용할 조건부 액세스 규칙을 설정하지만, 특별히 이전 MDM 공급자에서 마이그레이션해야 하는 사용자는 제외합니다. 모든 조건부 액세스 제외 사용자가 포함된 Azure AD 사용자 그룹을 만들 수 있습니다.
 
-2.  사용자 마이그레이션 시 조건부 액세스 제외 그룹에서 해당 사용자를 제거합니다.
+2. 사용자 마이그레이션 시 조건부 액세스 제외 그룹에서 해당 사용자를 제거합니다.
 
-3.  마이그레이션이 완료되면 Intune에서 액세스를 허용하지 않는 한 기본적으로 차단하도록 모든 조건부 액세스 정책을 구성합니다.
+3. 마이그레이션이 완료되면 Intune에서 액세스를 허용하지 않는 한 기본적으로 차단하도록 모든 조건부 액세스 정책을 구성합니다.
 
 ### <a name="advantages"></a>장점
 
--   새 사용자 계정 또는 이전 솔루션으로 관리되지 않는 사용자 계정에 대한 액세스 제어를 제공합니다.
+- 새 사용자 계정 또는 이전 솔루션으로 관리되지 않는 사용자 계정에 대한 액세스 제어를 제공합니다.
 
--   이전 솔루션의 사용자가 마이그레이션할 수 있도록 유예 기간을 제공합니다.
+- 이전 솔루션의 사용자가 마이그레이션할 수 있도록 유예 기간을 제공합니다.
 
--   생산성 저하를 최소화합니다.
+- 생산성 저하를 최소화합니다.
 
 ### <a name="disadvantages"></a>단점
 
--   이전 솔루션의 사용자가 조건부 액세스를 사용할 수 있게 될 때까지 해당 사용자는 비관리형 디바이스를 사용하여 리소스에 액세스할 수 있습니다.
+- 이전 솔루션의 사용자가 조건부 액세스를 사용할 수 있게 될 때까지 해당 사용자는 비관리형 디바이스를 사용하여 리소스에 액세스할 수 있습니다.
 
 
 이는 여러 방법 중 하나입니다. 모든 단계에서 등록 지시를 받은 이후까지 모든 조건부 액세스를 지연하는 간단한 프로세스를 선택하거나 처음부터 조건부 액세스를 적용하고 모든 액세스에 대한 완전한 준수를 요구하는 엄격한 프로세스를 선택할 수 있습니다.
 
--   [조건부 액세스](conditional-access.md)에 대해 자세히 알아보세요.
+- [조건부 액세스](conditional-access.md)에 대해 자세히 알아보세요.
 
 ## <a name="task-list-for-conditional-access"></a>조건부 액세스에 대한 작업 목록
 
@@ -64,15 +64,15 @@ ms.locfileid: "67044596"
 
 다음 옵션 중 하나를 선택합니다.
 
--   [Azure Active Directory에서 조건부 액세스 구성](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Azure Active Directory에서 조건부 액세스 구성](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Intune과 함께 온-프레미스 Exchange 커넥터 설치](exchange-connector-install.md)
+- [Intune과 함께 온-프레미스 Exchange 커넥터 설치](exchange-connector-install.md)
 
--   [Exchange Online에 대한 앱 기반 조건부 액세스 정책 설정](app-based-conditional-access-intune-create.md)
+- [Exchange Online에 대한 앱 기반 조건부 액세스 정책 설정](app-based-conditional-access-intune-create.md)
 
--   [SharePoint Online에 대한 앱 기반 조건부 액세스 정책 설정](app-based-conditional-access-intune-create.md)
+- [SharePoint Online에 대한 앱 기반 조건부 액세스 정책 설정](app-based-conditional-access-intune-create.md)
 
--   [최신 인증(ADAL)을 사용하지 않는 앱 차단](app-modern-authentication-block.md)
+- [최신 인증(ADAL)을 사용하지 않는 앱 차단](app-modern-authentication-block.md)
 
 ## <a name="next-steps"></a>다음 단계
 

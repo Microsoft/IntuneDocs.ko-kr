@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 980138015cdbe063d6d4b05eb6dd8ab70be4b601
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512244"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548479"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Intune과 Pradeo Mobile Threat Defense 커넥터
 
@@ -41,11 +41,11 @@ Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pr
 
 맬웨어와 같은 악성 앱이 디바이스에서 감지되면 위협이 해결될 때까지 디바이스에서 다음 작업을 차단할 수 있습니다.
 
--   회사 메일에 연결
+- 회사 메일에 연결
 
--   작업용 OneDrive 앱과 회사 파일 동기화
+- 작업용 OneDrive 앱과 회사 파일 동기화
 
--   회사 앱에 액세스
+- 회사 앱에 액세스
 
 **악성 앱이 발견되면 액세스 차단:**
 
@@ -81,19 +81,19 @@ Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pr
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
--   **Android 4.0.3 이상**
+- **Android 4.0.3 이상**
 
--   **iOS 7 이상**
+- **iOS 7 이상**
 
 ## <a name="prerequisites"></a>전제 조건
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune 구독
+- Microsoft Intune 구독
 
--   Pradeo Security for Mobile Threat Defense 구독
+- Pradeo Security for Mobile Threat Defense 구독
 
-    -   자세한 내용은 [Pradeo 웹 사이트](https://www.pradeo.com/en-US/mobile-threat-protection)를 참조하세요.
+    - 자세한 내용은 [Pradeo 웹 사이트](https://www.pradeo.com/en-US/mobile-threat-protection)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

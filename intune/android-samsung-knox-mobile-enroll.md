@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d07d9466cda86270898d0e54e8d50b358bcb1b84
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0c962085ce61f01613bfc04ef0c80699e6f5a3e8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494113"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547422"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 디바이스 자동 등록
 
@@ -44,15 +44,15 @@ Knox 배포 프로그램에 참여하는 공인 재판매인으로부터 디바�
 ## <a name="prerequisites"></a>전제 조건
 
 KME를 사용하여 Intune에 등록하려면 먼저 다음 단계에 따라 삼성 Knox 포털에 회사를 등록해야 합니다.
-1.  [KME가 사용자 지역에서 사용할 수 있는지 확인](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME는 55개 이상 국가에서 사용할 수 있습니다. 해당 국가의 배포가 지원되는지 확인합니다.
+1. [KME가 사용자 지역에서 사용할 수 있는지 확인](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME는 55개 이상 국가에서 사용할 수 있습니다. 해당 국가의 배포가 지원되는지 확인합니다.
 
-2.  [지원되는 디바이스](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME는 Android 등록의 경우 Knox 2.4 이상, Android 엔터프라이즈 등록의 경우 Knox 2.8 이상인 모든 Samsung 디바이스에서 사용할 수 있습니다.
+2. [지원되는 디바이스](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME는 Android 등록의 경우 Knox 2.4 이상, Android 엔터프라이즈 등록의 경우 Knox 2.8 이상인 모든 Samsung 디바이스에서 사용할 수 있습니다.
 
-3.  [네트워크 요구 사항](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): 필요한 방화벽 및 네트워크 액세스 규칙이 네트워크에서 허용되는지 확인합니다.
+3. [네트워크 요구 사항](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): 필요한 방화벽 및 네트워크 액세스 규칙이 네트워크에서 허용되는지 확인합니다.
 
-4.  [Samsung 계정 등록](https://www2.samsungknox.com/en/user/register): Samsung 계정을 사용하려면 KME를 등록하고 사용하도록 설정하며 모든 Knox Enterprise 자격을 한 곳에서 관리해야 합니다.
+4. [Samsung 계정 등록](https://www2.samsungknox.com/en/user/register): Samsung 계정을 사용하려면 KME를 등록하고 사용하도록 설정하며 모든 Knox Enterprise 자격을 한 곳에서 관리해야 합니다.
 
-5.  등록 검토: 프로필이 완료되고 제출된 후 삼성은 애플리케이션을 검토하고 즉시 승인하거나 추가 후속 조치를 위해 보류 중인 검토 상태로 설정합니다. 계정이 승인되면 추가 단계를 진행할 수 있습니다.
+5. 등록 검토: 프로필이 완료되고 제출된 후 삼성은 애플리케이션을 검토하고 즉시 승인하거나 추가 후속 조치를 위해 보류 중인 검토 상태로 설정합니다. 계정이 승인되면 추가 단계를 진행할 수 있습니다.
 
 ## <a name="create-mdm-profile"></a>MDM 프로필 만들기
 
