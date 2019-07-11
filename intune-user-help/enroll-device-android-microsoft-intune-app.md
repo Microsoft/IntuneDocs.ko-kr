@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197055"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735750"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Microsoft Intune 앱으로 회사 디바이스 등록
 
@@ -46,9 +46,9 @@ ms.locfileid: "66197055"
 2. **시작** 화면에서 언어를 선택합니다.   QR 코드 또는 NFC를 통해 등록해야 하는 경우, 해당 메서드와 일치하는 아래 단계를 수행합니다.  
      * NFC: NFC 지원 디바이스를 프로그래머 디바이스에 맞대고 탭하여 조직의 네트워크에 연결합니다. 화면의 지시를 따릅니다. Chrome 서비스 약관 화면이 표시되면 5단계를 진행합니다.  
 
-      * QR 코드: [QR 코드 등록](#qr-code-enrollment)의 단계를 완료합니다.  
+     * QR 코드: [QR 코드 등록](#qr-code-enrollment)의 단계를 완료합니다.  
 
-      다른 메서드를 사용해야 하는 경우 3단계를 진행합니다.    
+     다른 메서드를 사용해야 하는 경우 3단계를 진행합니다.    
 
 1. Wi-Fi에 연결하고 **다음**을 탭합니다. 등록 메서드와 일치하는 단계를 따릅니다. 
 
