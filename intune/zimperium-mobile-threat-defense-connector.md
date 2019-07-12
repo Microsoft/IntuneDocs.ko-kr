@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046109"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572476"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune 및 Zimperium MTD(Mobile Threat Defense) 커넥터 통합
 
@@ -44,11 +44,11 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 맬웨어와 같은 악성 앱이 디바이스에서 감지되면 위협이 해결될 때까지 디바이스를 차단할 수 있습니다.
 
--   회사 메일에 연결
+- 회사 메일에 연결
 
--   작업용 OneDrive 앱과 회사 파일 동기화
+- 작업용 OneDrive 앱과 회사 파일 동기화
 
--   회사 앱에 액세스
+- 회사 앱에 액세스
 
 **악성 앱이 발견되면 액세스 차단:**
 
@@ -60,7 +60,7 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 ### <a name="control-access-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 액세스 제어
 
-네트워크에서  **메시지 가로채기(Man-in-the-middle)**  와 같은 위협을 감지하고 디바이스 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
+네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 위협을 감지하고 디바이스 위험에 따라 Wi-Fi 네트워크에 대한 액세스를 보호합니다.
 
 **Wi-Fi를 통한 네트워크 액세스 차단:**
 
@@ -72,7 +72,7 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
 
-네트워크에서  **메시지 가로채기(Man-in-the-middle)**  와 같은 공격을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
+네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 공격을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 
 **네트워크 위협이 감지할 경우 SharePoint Online 차단:**
 
@@ -84,19 +84,19 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
--   **Android 4.1 이상**
+- **Android 4.1 이상**
 
--   **iOS 8 이상**
+- **iOS 8 이상**
 
 ## <a name="prerequisites"></a>전제 조건
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune 구독
+- Microsoft Intune 구독
 
--   Zimperium Mobile Threat Defense 구독
+- Zimperium Mobile Threat Defense 구독
 
-    -   자세한 내용은  [Zimperium 웹 사이트](https://www.zimperium.com/zips-mobile-ips)를 참조하세요.
+    - 자세한 내용은 [Zimperium 웹 사이트](https://www.zimperium.com/zips-mobile-ips)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

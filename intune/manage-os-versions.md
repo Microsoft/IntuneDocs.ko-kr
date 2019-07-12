@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044910"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548748"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune을 사용하여 운영 체제 버전 관리
 최신 모바일 및 데스크톱 플랫폼에서 주요 업데이트, 패치 및 새 버전은 빠른 속도로 출시됩니다. Windows에서는 업데이트와 패치를 완벽하게 관리할 수 있는 컨트롤이 있지만, iOS 및 Android와 같은 다른 플랫폼에서는 최종 사용자가 프로세스에 참여해야 합니다.  Microsoft Intune에는 다양한 플랫폼에서 운영 체제 버전 관리를 구성하는 데 도움이 되는 기능이 있습니다.
@@ -77,7 +77,7 @@ Intune 앱 보호 정책 및 MAM(모바일 애플리케이션 관리) 액세스 
 - **1단계**: 등록 제한을 사용하여 디바이스를 등록하기 위한 최소 버전으로 운영 체제 v2를 요구합니다. 이렇게 하면 새 최종 사용자 디바이스가 등록 시 정책을 준수하는지 확인할 수 있습니다.
 - **2a단계**: Intune 앱 보호 정책을 사용하여 앱을 열거나 다시 시작할 때 운영 체제 v2가 필요하다고 사용자에게 경고합니다.
 - **2b단계**: 디바이스 준수 정책을 사용하여 디바이스에서 준수하기 위한 최소 버전으로 운영 체제 v2를 요구합니다. 준수하지 않을 경우 **작업**을 사용하여 7일 간의 유예 기간을 허용하고 최종 사용자에게 타임라인과 요구 사항이 포함된 이메일 알림을 보냅니다.
-  -  이러한 정책은 앱 보호 정책을 사용하도록 설정된 앱에 대해 앱을 열 때 전자 메일 또는 Intune 회사 포털을 통해 최종 사용자에게 기존 디바이스를 업데이트해야 함을 알립니다.
+  - 이러한 정책은 앱 보호 정책을 사용하도록 설정된 앱에 대해 앱을 열 때 전자 메일 또는 Intune 회사 포털을 통해 최종 사용자에게 기존 디바이스를 업데이트해야 함을 알립니다.
   - 준수 보고를 실행하여 준수하지 않는 사용자를 확인할 수 있습니다. 
 - **3a단계**: Intune 앱 보호 정책을 사용하여 디바이스에서 운영 체제 v2를 실행하지 않는 경우 앱을 열거나 다시 시작할 때 사용자를 차단할 수 있습니다.
 - **3b단계**: 디바이스 준수 정책을 사용하여 디바이스에서 준수하기 위한 최소 버전으로 운영 체제 v2를 요구합니다.

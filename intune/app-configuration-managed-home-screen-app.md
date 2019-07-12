@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049949"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735705"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise용 Microsoft Managed Home Screen 앱 구성
 
@@ -74,21 +74,24 @@ Managed Home Screen의 구성 설정을 정의할 때 선택할 수 있는 방�
 | 홈 화면 피드 사용 | 부울 | FALSE | 홈 화면의 왼쪽을 살짝 밀면 표시되는 홈 화면 피드를 사용합니다. 이 피드는 뉴스, 캘린더, 자주 사용하는 앱, Cortana 음성 도우미 카드 등, 다양한 콘텐츠 형식을 표시합니다. 이 항목을 활성화하면 최종 사용자가 홈 화면을 왼쪽으로 살짝 밀어 피드로 이동할 수 있습니다. |
 | 개요 모드 사용 | 부울 | FALSE | 최종 사용자가 기본 화면에서 오른쪽으로 살짝 밀어 액세스하는 홈 화면에서 다른 페이지를 추가하거나 제거할 수 있습니다. 이 항목을 사용할 경우 최종 사용자는 홈 화면 기본 페이지의 오른쪽에 페이지를 추가하고, 기본 페이지를 변경하며, Managed Home Screen의 설정에 액세스할 수 있습니다. |
 | 디바이스 원격 분석 사용 | 부울 | FALSE | Managed Home Screen에 대해 수집되는 모든 원격 분석을 사용합니다. 이 항목을 사용하면 Microsoft가 특정 앱이 해당 디바이스에서 실행된 횟수 등과 같은 디바이스 사용 원격 분석을 수집할 수 있습니다. |
-| 허용 목록에 있는 애플리케이션 설정 | bundleArray | FALSE | 디바이스에 설치된 앱 중에서 홈 화면에 표시할 앱 세트를 정의할 수 있습니다. 표시하려는 앱의 앱 패키지 이름을 입력할 수 있습니다. 예를 들어, com.android.settings는 홈 화면에서 설정을 액세스할 수 있게 지정합니다. 이 섹션에서 허용 목록에 넣은 앱은 기존에 디바이스에 설치되어 있어야 홈 화면에 표시될 수 있습니다. |
+| 허용 목록에 있는 애플리케이션 설정 | bundleArray | FALSE | 디바이스에 설치된 앱 중에서 홈 화면에 표시할 앱 세트를 정의할 수 있습니다. 표시하려는 앱의 앱 패키지 이름을 입력해 정의할 수 있습니다. 예를 들어, com.microsoft.emmx는 홈 화면에서 설정에 액세스할 수 있게 지정합니다. 이 섹션에서 허용 목록에 넣은 앱은 기존에 디바이스에 설치되어 있어야 홈 화면에 표시될 수 있습니다. |
 | 고정된 웹 링크 설정 | bundleArray | FALSE | 홈 화면에서 웹 사이트를 빠른 시작 아이콘으로 고정할 수 있습니다. 이 구성을 통해 URL을 정의하고 홈 화면에 등록하여 최종 사용자가 한 번의 탭으로 브라우저 안에서 실행할 수 있게 합니다. |
 | 검색 창 사용 | 부울 | FALSE | 홈 화면에 검색 창을 사용하도록 설정합니다. 이 항목을 사용하면 디바이스 사용자가 홈 화면에 표시되는 검색 창에서 웹에 검색하려는 항목을 무엇이든 입력할 수 있습니다. |
 | 설정 앱 사용 안 함 | 부울 | FALSE | Managed Home Screen의 설정 페이지를 사용하지 않습니다. 이 항목을 사용하지 않게 설정하면 디바이스의 최종 사용자가 Managed Home Screen의 설정으로 이동할 수 없습니다. |
-| 화면 보호기 사용 | 부울 | FALSE | 화면 보호기 모드를 사용하거나 사용하지 않게 지정합니다. true로 설정할 경우 **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** 및 **media_detect_screen_saver**를 구성합니다. |
-| 화면 보호기 이미지 | 문자열 |   | 화면 보호기 이미지의 URL을 설정합니다. URL을 설정하지 않은 경우 디바이스는 화면 보호기가 활성화될 때 기본 화면을 표시합니다.  |
-| 화면 보호기 표시 시간 | integer | 0 | 디바이스가 화면 보호기 모드 중에 화면 보호기를 표시하는 시간을 초 단위로 설정하는 옵션을 제공합니다. 0으로 설정하면 디바이스가 활성 상태가 될 때까지 화면 보호기가 화면 보호기 모드를 계속 표시합니다.  |
-| 화면 보호기를 사용하도록 설정하는 비활성 시간 | integer | 30 | 화면 보호기를 트리거하기 전까지 디바이스가 비활성 상태인 시간(초)입니다. 0으로 설정할 경우 디바이스가 화면 보호기 모드를 시작하지 않습니다. |
-| 화면 보호기를 표시하기 전에 미디어 검색 | 부울 | TRUE | 오디오/비디오가 디바이스에서 재생 중일 때 디바이스 화면에 화면 보호기를 표시할지 여부를 선택합니다. true로 설정할 경우 디바이스는 **inactive_time_to_show_scree_saver**의 값과 관계없이 오디오/비디오를 재생하지 않습니다. false로 설정할 경우 **inactive_time_to_show_screen_saver**에서 설정한 값에 따라 화면에 화면 보호기를 표시합니다.   |
+| 화면 보호기 사용 | 부울 | FALSE | 화면 보호기 모드를 사용하거나 사용하지 않도록 지정합니다. true로 설정할 경우 **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** 및 **media_detect_screen_saver**를 구성합니다. |
+| 화면 보호기 이미지 | 문자열 |   | 화면 보호기 이미지의 URL을 설정합니다. URL을 설정하지 않은 경우 디바이스는 화면 보호기가 활성화될 때 기본 화면 보호기를 표시합니다. 기본 이미지에는 Managed Home Screen 앱 아이콘이 표시됩니다.  |
+| 화면 보호기 표시 시간 | integer | 0 | 디바이스가 화면 보호기 모드 중에 화면 보호기를 표시하는 시간을 초 단위로 설정하는 옵션을 제공합니다. 0으로 설정하면 디바이스가 활성 상태가 될 때까지 화면 보호기 모드로 화면 보호기가 계속 표시됩니다.  |
+| 화면 보호기를 사용하도록 설정하는 비활성 시간 | integer | 30 | 화면 보호기를 실행하기 전까지 디바이스가 비활성 상태인 시간(초)입니다. 0으로 설정할 경우 디바이스가 화면 보호기 모드를 시작하지 않습니다. |
+| 화면 보호기를 표시하기 전에 미디어 검색 | 부울 | TRUE | 오디오/비디오가 디바이스에서 재생 중일 때 디바이스 화면에 화면 보호기를 표시할지 여부를 선택합니다. true로 설정할 경우 디바이스는 **inactive_time_to_show_scree_saver**의 값과 관계없이 오디오/비디오를 재생하지 않습니다. false로 설정할 경우 **inactive_time_to_show_screen_saver**에서 설정한 값에 따라 디바이스 화면에 화면 보호기를 표시합니다.   |
 | 가상 홈 단추 사용 | 부울 | FALSE | 이 설정을 `True`로 하면 최종 사용자가 Managed Home Screen 홈 단추에 액세스하여 현재 작업 중인 위치에서 Managed Home Screen으로 돌아갈 수 있습니다.  |
 | 가상 홈 단추 형식 | 문자열 | swipe_up | **swipe_up**을 사용하면 살짝 밀기 제스처로 홈 단추에 액세스합니다. **float**를 사용하면 최종 사용자가 화면 주변으로 이동할 수 있는 고정 영구 홈 단추에 액세스합니다. |
 | 배터리 및 신호 강도 표시줄 | 부울 | True  | 이 설정을 `True`로 하면 배터리 및 신호 강도 표시줄을 표시합니다. |
 | 잠금 작업 모드 종료 암호 | 문자열 |   | 문제 해결을 위해 4-6자리 암호 코드를 입력하여 일시적으로 작업 잠금 모드를 중단합니다. |
 | Wi-Fi 설정 표시 | 부울 | FALSE | 이 설정을 `True`로 하면 최종 사용자가 Wi-Fi를 끄거나 켤 수 있고, 다른 Wi-Fi 네트워크에 연결할 수 있습니다.  |
 | Bluetooth 설정 표시 | 부울 | FALSE | 이 설정을 `True`로 하면 최종 사용자가 Bluetooth를 끄거나 켤 수 있고, 다른 Bluetooth 지원 디바이스에 연결할 수 있습니다.   |
+| 폴더의 애플리케이션을 이름별로 정렬 | 부울 | TRUE | 이 설정을 `False`로 설정하면 폴더의 항목을 지정된 순서대로 표시할 수 있습니다. 그러지 않으면 폴더에 사전순으로 표시됩니다.   |
+| 애플리케이션 순서 사용 | 부울 | FALSE | 이 설정을 `True`로 설정하면 Managed Home Screen에서 애플리케이션, 웹 링크 및 폴더의 순서를 설정하는 기능을 사용하도록 설정할 수 있습니다. 사용하도록 설정하면 **app_order**로 순서를 설정합니다. 최종 사용자는 Bluetooth를 켜거나 끄고 다른 Bluetooth 지원 디바이스에 연결할 수 있습니다.   |
+| 애플리케이션 순서 | bundleArray | FALSE | Managed Home Screen에서 애플리케이션, 웹 링크 및 폴더의 순서를 지정할 수 있습니다. 이 설정을 사용하려면 **Lock Home Screen**(홈 화면 잠금)을 사용하도록 설정해야 하고, **눈금 크기 설정**을 정의해야 하며, **애플리케이션 순서 사용**을 `True`로 설정해야 합니다.   |
 
 ## <a name="enter-json-data"></a>JSON 데이터 입력
 
@@ -111,10 +114,6 @@ JSON 데이터를 입력하여 Managed Home Screen에 사용 가능한 모든 �
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -238,6 +237,87 @@ JSON 데이터를 입력하여 Managed Home Screen에 사용 가능한 모든 �
             "valueBool": false
         },
         {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "key": "managed_folders",
             "valueBundleArray": [
                 {
@@ -302,8 +382,8 @@ JSON 데이터를 입력하여 Managed Home Screen에 사용 가능한 모든 �
         }
     ]
 }
-
 ```
+
 ## <a name="next-steps"></a>다음 단계
 
 - Android Enterprise 전용 디바이스에 대한 자세한 정보는 [Android Enterprise 전용 디바이스의 Intune 등록 설정](android-kiosk-enroll.md)을 참조하세요.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,28 +15,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66713871"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648449"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP를 사용하여 Intune에 파트너 인증 기관 추가
 
-Microsoft Intune에서 타사 CA(인증 기관)를 추가할 수 있습니다. 이러한 CA는 SCEP(단순 인증서 등록 프로토콜)를 사용하여 모바일 디바이스에 인증서를 제공할 수 있습니다. 이 기능은 Windows, iOS, Android 및 macOS 디바이스에서 새 인증서를 발급하고 갱신할 수 있습니다.
+Intune에서 타사 CA(인증 기관)를 사용합니다. 타사 CA는 SCEP(단순 인증서 등록 프로토콜)을 사용하여 새 인증서나 갱신된 인증서로 모바일 디바이스를 프로비저닝할 수 있고 Windows, iOS, Android 및 macOS 디바이스를 지원할 수 있습니다.
 
 이 기능의 사용법은 오픈 소스 API와 Intune 관리자 작업이라는 두 가지 부분으로 나뉘어 있습니다.
 
 **1부 - 오픈 소스 API 사용**  
-Microsoft는 Intune과 통합되어 인증서의 유효성을 검사하고, 성공 또는 실패 알림을 전송하며, SSL(특히 SSL 소켓 팩터리)을 사용하여 Intune과 통신하는 API를 만들었습니다.
+Microsoft는 Intune과 통합하기 위한 API를 만들었습니다. API를 통해 인증서를 확인하고 성공 또는 실패 알림을 보내고 SSL 특히, SSL 소켓 팩터리를 사용하여 Intune과 통신할 수 있습니다.
 
-API는 [Intune SCEP API 공개 GitHub 리포지토리](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)에서 다운로드하여 솔루션에서 사용할 수 있습니다. 타사 SCEP 서버에서 이 API를 사용하여 인증서를 디바이스에 전송하기 전에 Intune에 사용자 지정 인증 질문 유효성 검사를 실행합니다.
+API는 [Intune SCEP API 공개 GitHub 리포지토리](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)에서 다운로드하여 솔루션에서 사용할 수 있습니다. 타사 SCEP 서버에서 이 API를 사용하여 SCEP가 인증서를 디바이스에 프로비저닝하기 전에 Intune에 사용자 지정 인증 질문 유효성 검사를 실행합니다.
 
 [Intune SCEP 관리 솔루션과 통합](scep-libraries-apis.md)에서는 API 사용, 메서드 및 빌드한 솔루션 테스트에 대한 자세한 정보를 제공합니다.
 
 **2부 - 애플리케이션 및 프로필 만들기**  
-Azure AD(Active Directory) 애플리케이션을 사용하면 Intune에 권한을 위임하여 장치에서 발생하는 SCEP 요청을 처리할 수 있습니다. Azure AD 애플리케이션은 개발자가 만든 API 솔루션 내에서 사용되는 애플리케이션 ID 및 인증 키 값을 포함합니다. 그런 다음, 관리자는 Intune을 사용하여 SCEP 인증서 프로필을 만들고 배포할 수 있습니다. 디바이스의 배포 상태에 대한 보고서를 볼 수도 있습니다.
+Azure AD(Active Directory) 애플리케이션을 사용하면 Intune에 권한을 위임하여 장치에서 발생하는 SCEP 요청을 처리할 수 있습니다. Azure AD 애플리케이션은 개발자가 만든 API 솔루션 내에서 사용되는 애플리케이션 ID 및 인증 키 값을 포함합니다. 그러면 관리자는 Intune을 사용하여 SCEP 인증서 프로필을 만들고 배포하며 디바이스에서 배포 상태에 관한 보고서를 볼 수 있습니다.
 
 이 문서에서는 관리자 관점에서 Azure AD 애플리케이션 생성 등을 살펴보며 이 기능에 대한 개요를 제공합니다.
 
@@ -117,13 +117,14 @@ Azure AD 앱을 등록하는 데 필요한 권한이 있는지 확인합니다. 
 ## <a name="third-party-certification-authority-partners"></a>타사 인증 기관 파트너
 다음 타사 인증 기관은 Intune을 지원합니다.
 
-- [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
 - [EJBCA GitHub 오픈 소스 버전](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
 Intune과 제품을 통합하는 데 관심이 있는 타사 CA인 경우 API 지침을 검토합니다.
 

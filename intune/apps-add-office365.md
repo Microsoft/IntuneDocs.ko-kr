@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 095c2ee0aba0680de0c5fc55c1406dba41111b92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 00712b891790fbf437e9fed024f7610f37fee129
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527451"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648706"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 할당
 
@@ -42,6 +42,7 @@ ms.locfileid: "67527451"
 - 이 설치 방법은 Windows 10 S, Windows Home, Windows Team, Windows Holographic 또는 Windows Holographic for Business 디바이스에서 지원되지 않습니다.
 - Intune은 Microsoft 스토어의 365 데스크톱 앱(Office Centennial 앱)을 이미 Intune으로 Office 365 앱을 배포한 디바이스에 설치하는 것을 지원하지 않습니다. 이 구성을 설치할 경우 데이터 손실이나 손상이 발생할 수 있습니다.
 - 다수의 필수 또는 사용 가능한 앱 할당은 추가되지 않습니다. 이후 앱 할당은 기존에 설치된 앱 할당을 덮어씁니다. 예를 들어, 첫 번째 Office 앱 집합에 Word가 포함되어 있고 이후 Office 앱에는 포함되어 있지 않으면 Word가 제거됩니다. 이 조건은 모든 Visio 또는 Project 애플리케이션에 적용되지 않습니다.
+- 현재 여러 Office 365 배포는 지원되지 않습니다. 디바이스에 하나의 배포만 제공됩니다.
 - **Office 버전** - Office의 32비트 또는 64비트 비전을 할당할지 여부를 선택합니다. 32비트 버전은 32비트 및 64비트 디바이스에 모두 설치할 수 있지만, 64비트 버전은 64비트 디바이스에만 설치할 수 있습니다.
 - **최종 사용자 디바이스에서 MSI 제거** - 최종 사용자 디바이스에서 기존 Office .MSI 앱을 제거할지 여부를 선택합니다. 최종 사용자 디바이스에 기존 .MSI 앱이 있으면 설치가 실패합니다. 최종 사용자 디바이스에서 모든 Office(MSI) 앱을 제거하므로 제거할 앱은 **앱 제품군 구성**에서 설치하도록 선택한 앱으로만 제한되지 않습니다. 자세한 내용은 [Office 365 ProPlus로 업그레이드 시 기존 MSI 버전의 Office 제거](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)를 참조하세요. Intune에서 최종 사용자의 머신에 Office를 재설치하면 최종 사용자는 이전 .MSI Office 설치 프로그램과 함께 갖고 있던 것과 동일한 언어 팩을 자동으로 가져옵니다.
 
@@ -142,7 +143,14 @@ ms.locfileid: "67527451"
 
 작업을 완료하면 **앱 추가** 창에서 **추가**를 선택합니다. 만든 앱은 앱 목록에 표시됩니다.
 
+## <a name="troubleshooting"></a>문제 해결
+Intune은 [Office 배포 도구](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)를 사용하여 Office 365 ProPlus를 다운로드하고 [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)을 사용하는 클라이언트 컴퓨터에 배포합니다. [Office 365 엔드포인트 관리](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)에 설명된 모범 사례를 참조하여 네트워크 구성에서 클라이언트가 중앙 프록시를 통해 CDN 트래픽을 라우팅하지 않고 CDN에 직업 액세스하도록 허용하여 불필요한 대기 시간을 초래하지 않는지 확인합니다.
+
+설치 또는 런타임 문제가 발생하는 경우 대상 디바이스에서 [Office 365용 Microsoft 지원 및 복구 도우미](https://diagnostics.office.com)를 실행합니다.
+
 ## <a name="errors-during-installation-of-the-app-suite"></a>앱 제품군 설치 중에 오류 발생
+
+자세한 설치 로그를 보는 방법에 대한 자세한 내용은 [How to enable Office 365 ProPlus ULS logging](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging)(Office 365 ProPlus ULS 로깅을 사용하도록 설정하는 방법)을 참조하세요.
 
 다음 표에는 발생할 수 있는 일반적인 오류 코드와 해당 의미가 나와 있습니다.
 

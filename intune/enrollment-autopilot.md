@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512115"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649107"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -47,9 +47,10 @@ Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화�
 
     ![Windows Autopilot 디바이스 스크린샷](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. **Windows Autopilot 디바이스 추가** 에서 추가할 디바이스를 나열하는 CSV 파일로 이동합니다. CSV 파일에는 일련 번호, Windows 제품 ID, 하드웨어 해시 및 선택적 그룹 태그, 할당된 사용자 및 디바이스의 주문 ID가 나열되어 있어야 합니다. 목록에 최대 500개의 행을 가질 수 있습니다. 아래 표시된 헤더 및 줄 형식을 사용합니다.
+2. **Windows Autopilot 디바이스 추가** 에서 추가할 디바이스를 나열하는 CSV 파일로 이동합니다. CSV 파일에는 일련 번호, Windows 제품 ID, 하드웨어 해시 및 선택적 그룹 태그가 나열되어야 합니다. 목록에 최대 500개의 행을 가질 수 있습니다. 아래 표시된 헤더 및 줄 형식을 사용합니다.
 
-    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`</br>
+    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Windows AutoPilot 디바이스 추가 스크린샷](media/enrollment-autopilot/autopilot-import-device2.png)
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494067"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649035"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
-Microsoft Intune에서 앱 구성 정책을 사용하여 iOS 또는 Android 앱용 구성 설정을 제공합니다. 이러한 구성 설정을 사용하면 앱을 사용자 지정할 수 있습니다. 이러한 구성 정책을 사용자 또는 디바이스에 직접 할당하지 마세요. 대신 앱에 구성 정책을 연결한 다음, 앱을 할당합니다. 구성 정책 설정은 앱에서 해당 설정을 확인할 때(일반적으로는 앱을 처음 실행할 때) 사용됩니다.
+Microsoft Intune에서 앱 구성 정책을 사용하여 iOS 또는 Android 앱용 구성 설정을 제공합니다. 이러한 구성 설정을 사용하면 앱 구성 및 관리의 업계 표준 방법을 사용하여 앱을 사용자 지정할 수 있습니다. 구성 정책 설정은 앱에서 해당 설정을 확인할 때(일반적으로는 앱을 처음 실행할 때) 사용됩니다.
 
 포함 및 제외 할당의 조합을 사용하여 사용자 및 디바이스 그룹에 앱 구성 정책을 할당할 수 있습니다. 앱 구성 정책을 추가하면 앱 구성 정책에 대한 할당을 설정할 수 있습니다. 정책에 대한 할당을 설정할 때 정책이 적용될 사용자 그룹을 포함할지 제외할지 선택할 수 있습니다. 하나 이상의 그룹을 포함하도록 선택하면 기본 제공 그룹을 포함하거나 선택하기 위해 특정 그룹을 선택할 수 있습니다. 기본 제공 그룹에는 **모든 사용자**, **모든 디바이스** 및 **모든 사용자 + 모든 디바이스**가 포함됩니다.
 
@@ -52,9 +52,11 @@ Intune을 사용한 앱 구성을 사용하는 방법에는 두 가지 옵션이
 
 ## <a name="apps-that-support-app-configuration"></a>앱 구성을 지원하는 앱
 
-앱 구성 정책을 지원하는 앱에서 해당 정책을 사용할 수 있습니다. Intune에서 앱 구성을 지원하려면 앱 구성 사용을 지원하도록 앱을 작성해야 합니다. 자세한 내용은 앱 공급업체에 문의하세요.
+### <a name="managed-devices"></a>관리되는 디바이스
+앱 구성 정책을 지원하는 앱에서 해당 정책을 사용할 수 있습니다. Intune에서 앱 구성을 지원하려면 [Appconfig 커뮤니티](https://www.appconfig.org/members)에 정의된 대로 앱 구성 사용을 지원하도록 앱을 작성해야 합니다. 자세한 내용은 앱 공급업체에 문의하세요.
 
-Intune 앱 SDK를 앱에 통합하거나 앱이 개발된 후 앱을 래핑하여 기간 업무 앱을 준비할 수 있습니다. iOS와 Android 둘 다에 사용할 수 있는 Intune App SDK를 통해 앱을 Intune 앱 구성 정책에 사용할 수 있도록 설정할 수 있습니다. Intune 앱 SDK는 앱 개발자에게서 필요한 코드 변경의 양을 최소화하려고 합니다. 자세한 내용은 [Intune 앱 SDK 개요](app-sdk.md)를 참조하세요.
+### <a name="managed-apps"></a>관리되는 앱
+Intune 앱 SDK를 앱에 통합하거나 앱이 개발된 후 앱을 래핑하여 기간 업무 앱을 준비할 수 있습니다. iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱을 Intune 앱 보호 구성 정책에 사용할 수 있도록 설정할 수 있습니다. Intune 앱 SDK는 앱 개발자에게서 필요한 코드 변경의 양을 최소화하려고 합니다. 자세한 내용은 [Intune 앱 SDK 개요](app-sdk.md)를 참조하세요.
 
 ## <a name="graph-api-support-for-app-configuration"></a>앱 구성에 대한 Graph API 지원
 

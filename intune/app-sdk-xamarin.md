@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7081bc04cc0a6de0a0a6e8214ac0a6edea459378
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558397"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735462"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -68,22 +68,29 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
       ```csharp
       using Microsoft.Intune.MAM;
       ```
+
 4. 앱 보호 정책을 받기 시작하려면 앱이 Intune MAM 서비스에 등록되어 있어야 합니다. 앱이 사용자 인증을 위해 [Azure Active Directory 인증 라이브러리](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory)(ADAL) 또는 [Microsoft 인증 라이브러리](https://www.nuget.org/packages/Microsoft.Identity.Client)(MSAL)를 사용하지 않고 Intune SDK에서 인증을 처리하도록 하려는 경우, 앱은 사용자의 UPN을 IntuneMAMEnrollmentManager의 LoginAndEnrollAccount 메서드에 제공해야 합니다.
+
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+
       호출 시 사용자의 UPN을 알 수 없는 경우 앱이 null에 전달할 수 있습니다. 이 경우 사용자에게 이메일 주소와 암호를 모두 입력하라는 메시지가 표시됩니다.
       
       앱이 이미 ADAL 또는 MSAL을 사용하여 사용자를 인증하는 경우 앱과 Intune SDK 간에 SSO(single sign-on) 환경을 구성할 수 있습니다. 먼저 iOS용 Intune Xamarin Bindings(com.microsoft.adalcache)에서 사용하는 것과 동일한 키체인 액세스 그룹에 토큰을 저장하도록 ADAL/MSAL을 구성해야 합니다. ADAL의 경우 [AuthenticationContext의 iOSKeychainSecurityGroup 속성을 설정](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/iOS-Keychain-Access)하여 이 작업을 수행할 수 있습니다. MSAL의 경우 [PublicClientApplication의 iOSKeychainSecurityGroup 속성을 설정](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Xamarin-iOS-specifics#enable-keychain-access)해야 합니다. 그런 다음, 앱과 함께 Intune SDK에서 사용하는 기본 AAD 설정을 재정의해야 합니다. [iOS용 Intune 앱 SDK 개발자 가이드](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)에 설명된 대로 앱의 Info.plist에 있는 IntuneMAMSettings 사전을 통해 재정의하거나, IntuneMAMPolicyManager 인스턴스의 AAD 재정의 속성을 사용할 수 있습니다. Info.plist 접근 방법은 ADAL 설정이 정적인 애플리케이션에 권장되고, 재정의 속성은 런타임에 이러한 값을 확인하는 애플리케이션에 권장됩니다. 모든 SSO 설정이 구성되면 앱은 성공적으로 인증된 후 사용자의 UPN을 IntuneMAMEnrollmentManager의 RegisterAndEnrollAccount 메서드에 제공해야 합니다.
+
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
+
       앱은 IntuneMAMEnrollmentDelegate의 하위 클래스에서 EnrollmentRequestWithStatus 메서드를 구현하고 IntuneMAMEnrollmentManager의 대리자 속성을 해당 클래스의 인스턴스로 설정하여 등록 시도의 결과를 확인할 수 있습니다. 예를 들어 [샘플 Xamarin.iOS 애플리케이션](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)을 참조하세요.
 
       등록이 성공하면 앱은 다음 속성을 쿼리하여 등록된 계정의 UPN(이전에 알 수 없는 경우)을 확인할 수 있습니다. 
+
       ```csharp
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
+
 > [!NOTE] 
 > iOS용 리매퍼가 없습니다. Xamarin.Forms 앱에 통합하는 것은 일반 Xamarin.iOS 프로젝트와 동일합니다. 
 
@@ -96,11 +103,22 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 
 Intune App SDK 통합에 대한 전체 개요는 [Android용 Microsoft Intune App SDK 개발자 가이드](app-sdk-android.md)에서 확인할 수 있습니다. 이 가이드를 읽고 Intune App SDK를 Xamarin 앱과 통합할 때, 다음 섹션에서는 Java에서 개발된 네이티브 Android 앱과 C#에서 개발된 Xamarin 앱의 구현 간의 차이점을 집중 조명합니다. 이 섹션은 보충으로 취급되어야 하며 가이드 전체를 읽는 것으로 대신할 수는 없습니다.
 
+#### <a name="remapper"></a>Remapper
+1\.4428.1 릴리스로 `Microsoft.Intune.MAM.Remapper` 시작 하 여 패키지를 Xamarin Android [응용 프로그램에 빌드](app-sdk-android.md#build-tooling) 도구로 추가 하 여 MAM 클래스, 메서드 및 시스템 서비스 대체를 수행할 수 있습니다. Remapper를 포함 하는 경우 응용 프로그램을 빌드할 때 이름이 바뀐 메서드 및 MAM 응용 프로그램 섹션의 MAM 해당 교체 부분이 자동으로 수행 됩니다.
+
+Remapper에서 ification의 클래스를 제외 하려면 프로젝트 `.csproj` 파일에 다음 속성을 추가 합니다.
+```xml
+  <PropertyGroup>
+    <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
+  </PropertyGroup>
+```
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[이름이 변경된 메서드](app-sdk-android.md#renamed-methods)
 대부분의 경우, Android 클래스에서 사용할 수 있는 메서드가 MAM 대체 클래스에서 최종본으로 표시되어 있습니다. 이 경우 MAM 대체 클래스는 대신 재정의할 유사한 이름의 메서드(접미사 `MAM`이 붙음)를 제공합니다. 예를 들어 `OnCreate()`를 재정의하고 `base.OnCreate()`를 호출하는 대신 `MAMActivity`에서 파생하는 경우 `Activity`는 `OnMAMCreate()`를 재정의하고 `base.OnMAMCreate()`를 호출해야 합니다.
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 애플리케이션](app-sdk-android.md#mamapplication)
-앱은 `MAMApplication`에서 상속받은 `Android.App.Application` 클래스를 정의해야 합니다. 서브 클래스가 `[Application]` 특성으로 올바르게 데코레이팅되고 `(IntPtr, JniHandleOwnership)` 생성자를 재정의하는지 확인입니다.
+앱은 클래스를 `Android.App.Application` 정의 해야 합니다. MAM을 수동으로 통합 하는 경우에는 `MAMApplication`에서 상속 해야 합니다. 서브 클래스가 `[Application]` 특성으로 올바르게 데코레이팅되고 `(IntPtr, JniHandleOwnership)` 생성자를 재정의하는지 확인입니다.
+
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -108,26 +126,33 @@ Intune App SDK 통합에 대한 전체 개요는 [Android용 Microsoft Intune Ap
     public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
         : base(handle, transfer) { }
 ```
+
 > [!NOTE]
 > MAM Xamarin 바인딩 문제로 인해 디버그 모드로 배포할 때 애플리케이션이 충돌할 수 있습니다. 이 문제를 해결하려면 `Debuggable=false` 특성을 `Application` 클래스에 추가해야 하며 수동으로 설정한 경우 `android:debuggable="true"` 플래그를 매니페스트에서 제거해야 합니다.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[앱 참여를 요구하는 기능 사용](app-sdk-android.md#enable-features-that-require-app-participation)
 예: 앱에 PIN이 필요한지 확인
+
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).IsPinRequired;
 ```
+
 예: 기본 Intune 사용자 확인
+
 ```csharp
 IMAMUserInfo info = MAMComponents.Get<IMAMUserInfo>();
 return info?.PrimaryUser;
 ```
+
 예: 장치 또는 클라우드 스토리지에 저장이 허용되는지 확인
+
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
 ```
 
 #### <a name="register-for-notifications-from-the-sdkapp-sdk-androidmdregister-for-notifications-from-the-sdk"></a>[SDK에서 알림 등록](app-sdk-android.md#register-for-notifications-from-the-sdk)
 앱은 `MAMNotificationReceiver`를 만들고 `MAMNotificationReceiverRegistry`에 등록하여 SDK에서 알림을 등록해야 합니다. 아래 예제와 같이 `App.OnMAMCreate`에서 원하는 수신기 및 알림 유형을 제공하면 됩니다.
+
 ```csharp
 public override void OnMAMCreate()
 {
@@ -141,6 +166,7 @@ public override void OnMAMCreate()
 ```
 
 #### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[MAM 등록 관리자](app-sdk-android.md#mamenrollmentmanager)
+
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 ```
@@ -164,6 +190,7 @@ Remapper가 프로젝트에 추가되면 MAM에 해당하는 대체를 수행해
             LoadApplication(new App());
         }
 ```
+
 대체 작업을 하지 않은 경우 대체 작업을 수행할 때까지 다음과 같은 컴파일 오류가 발생할 수 있습니다.
 * [컴파일러 오류 CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239). 이 오류는 일반적으로 이 양식 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``에 표시됩니다.
 이는 Remapper가 Xamarin 클래스의 상속을 수정할 때 특정 함수가 `sealed`로 만들어지고 대신 새 MAM 변형이 추가되어 재정의되기 때문에 예상됩니다.
@@ -173,12 +200,15 @@ Remapper가 프로젝트에 추가되면 MAM에 해당하는 대체를 수행해
 > Remapper는 Visual Studio에서 IntelliSense 자동 완성을 위해 사용하는 종속성을 다시 작성합니다. 따라서 IntelliSense에 대해 Remapper가 추가되면 프로젝트를 다시 로드하고 다시 빌드해야 변경 내용을 올바르게 인식할 수 있습니다.
 
 ### <a name="company-portal-app"></a>회사 포털 앱
-Intune SDK Xamarin 바인딩의 존재에 의존 합니다 [회사 포털](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 앱 보호 정책을 사용 하도록 설정 하려면 장치에서 Android 앱입니다. 회사 포털이 Intune 서비스에서 앱 보호 정책을 검색합니다. 앱을 초기화할 때 정책과 회사 포털에서 해당 정책을 적용하는 코드를 로드합니다. 사용자에 로그인 할 필요가 없습니다.
+Intune SDK Xamarin 바인딩은 장치에 [회사 포털](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android 앱이 있는지를 사용 하 여 앱 보호 정책을 사용 하도록 설정 합니다. 회사 포털이 Intune 서비스에서 앱 보호 정책을 검색합니다. 앱을 초기화할 때 정책과 회사 포털에서 해당 정책을 적용하는 코드를 로드합니다. 사용자에 게 로그인 할 필요가 없습니다.
 
 > [!NOTE]
 > 회사 포털 앱이 **Android** 디바이스에 없으면 Intune 관리 앱은 Intune 앱 보호 정책을 지원하지 않는 일반 앱처럼 작동합니다.
 
 디바이스 등록 없이 앱 보호를 사용하기 위해 사용자가 회사 포털 앱을 통해 디바이스를 등록할 필요가 _**없습니다**_ .
+
+### <a name="sample-applications"></a>샘플 응용 프로그램
+Xamarin Android 및 xamarin Forms 앱에서 MAM 기능을 강조 표시 하는 샘플 응용 [프로그램](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)은 GitHub에서 사용할 수 있습니다.
 
 ## <a name="support"></a>Support
 조직이 기존 Intune 고객인 경우 Microsoft 지원 담당자에게 문의해 지원 티켓을 열고 [GitHub 문제 페이지에서](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) 문제를 만들면 가능한 한 빨리 도움을 제공할 수 있습니다. 

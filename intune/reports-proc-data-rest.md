@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 8090e9906cc8e3b3da25b21343093dd2f656afa6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558542"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735798"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST 클라이언트를 사용하여 Intune 데이터 웨어하우스 API에서 데이터 가져오기
 
@@ -164,6 +164,7 @@ Postman에 대한 새 액세스 토큰을 가져오려면 Azure AD 권한 부여
     ![Progam.cs 및 Visual Studio의 솔루션 탐색기](./media/reports-get_rest_data_in.png)
 
 8. *Program.cs*의 코드를 다음 코드로 바꿉니다.  
+
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

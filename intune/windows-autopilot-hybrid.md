@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494543"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649097"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포
 Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Active Directory) 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 이 문서의 단계를 수행합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
-[하이브리드 Azure AD 조인 디바이스](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)를 성공적으로 구성합니다. Get-MsolDevice cmdlet을 사용하여 [등록을 확인]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)해야 합니다.
+[하이브리드 Azure AD 조인 디바이스](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)를 성공적으로 구성합니다. Get-MsolDevice cmdlet을 사용하여 [등록을 확인](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)해야 합니다.
 
 등록할 디바이스도 다음과 같아야 합니다.
 - Windows 10 v1809 이상을 실행 중입니다.
-- 인터넷에 대한 액세스 권한이 있어야 합니다.
-- Active Directory에 대한 액세스 권한이 있어야 합니다(현재 VPN 연결은 지원되지 않음).
-- OOBE(첫 실행 경험)를 거칩니다.
+- 문서화된 [following the documented Windows Autopilot network requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)(Windows Autopilot 네트워크 요구 사항)에 따라 인터넷에 액세스할 수 있어야 합니다.
+- Active Directory 도메인 컨트롤러에 액세스할 수 있어야 하므로 조직의 네트워크에 연결되어 있어야 합니다(이 네트워크에서 AD 도메인과 AD 도메인 컨트롤러의 DNS 레코드를 확인하고 도메인 컨트롤러와 통신하여 사용자를 인증할 수 있습니다. 현재 VPN 연결은 지원되지 않습니다).
 - 조인하려는 도메인의 도메인 컨트롤러를 ping할 수 있습니다.
+- 프록시를 사용하는 경우 WPAD 프록시 설정 옵션을 사용하도록 설정하고 구성해야 합니다.
+- OOBE(첫 실행 경험)를 거칩니다.
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 자동 등록 설정
 
@@ -139,7 +140,7 @@ Active Directory용 Intune Connector는 Windows Server 2016 이상을 실행하�
 
 1. 멤버 자격 유형에 **동적 디바이스**를 선택한 경우 **그룹** 창에서 **동적 디바이스 멤버**를 선택한 다음, **고급 규칙** 상자에서 다음 중 하나를 수행합니다.
     - Autopilot 디바이스를 모두 포함하는 그룹을 만들려면 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`를 입력합니다.
-    - Intune의 그룹 태그 필드는 Azure AD 디바이스의 OrderID 특성에 해당합니다. 특정 그룹 태그(OrderID)를 사용하여 모든 Autopilot 디바이스를 포함하는 그룹을 만들려는 경우  `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`를 입력해야 합니다.
+    - Intune의 그룹 태그 필드는 Azure AD 디바이스의 OrderID 특성에 해당합니다. 특정 그룹 태그(OrderID)를 사용하여 모든 Autopilot 디바이스를 포함하는 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`을 입력해야 합니다.
     - 특정 구매 주문 ID로 Autopilot 디바이스가 모두 포함된 그룹을 만들려면 `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`를 입력합니다.
     
 1. **저장**을 선택합니다.

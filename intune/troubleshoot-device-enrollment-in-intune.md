@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528754"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548099"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -84,47 +84,47 @@ ms.locfileid: "67528754"
 
 **해결 방법:**
 
-1.  디바이스에서 Intune 회사 포털 앱을 제거합니다.
+1. 디바이스에서 Intune 회사 포털 앱을 제거합니다.
 
-2.  디바이스에서 브라우저를 열고, [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)으로 이동하고, 사용자 로그인을 시도합니다.
+2. 디바이스에서 브라우저를 열고, [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)으로 이동하고, 사용자 로그인을 시도합니다.
 
-3.  사용자가 로그인하지 못하면 다른 네트워크를 시도해야 합니다.
+3. 사용자가 로그인하지 못하면 다른 네트워크를 시도해야 합니다.
 
-4.  이것이 하면 사용자의 자격 증명이 Azure Active Directory와 올바로 동기화했는지 확인합니다.
+4. 이것이 하면 사용자의 자격 증명이 Azure Active Directory와 올바로 동기화했는지 확인합니다.
 
-5.  사용자가 성공적으로 로그인하면 iOS 디바이스에 Intune 회사 포털 앱을 설치하고 등록하라는 메시지가 나타납니다. Android 디바이스에서는 Intune 회사 포털 앱을 수동으로 설치해야 합니다. 그런 후에 다시 등록할 수 있습니다.
+5. 사용자가 성공적으로 로그인하면 iOS 디바이스에 Intune 회사 포털 앱을 설치하고 등록하라는 메시지가 나타납니다. Android 디바이스에서는 Intune 회사 포털 앱을 수동으로 설치해야 합니다. 그런 후에 다시 등록할 수 있습니다.
 
 ### <a name="mdm-authority-not-defined"></a>MDM 기관이 정의되지 않았습니다
 **문제:** 사용자에게 **MDM 기관이 정의되지 않았습니다.** 오류가 표시됩니다.
 
 **해결 방법:**
 
-1.  MDM 기관이 [적절하게 설정](mdm-authority-set.md)되었는지 확인합니다.
+1. MDM 기관이 [적절하게 설정](mdm-authority-set.md)되었는지 확인합니다.
     
-2.  사용자의 자격 증명이 Azure Active Directory와 올바로 동기화되었는지 확인합니다. 사용자의 UPN이 Microsoft 365 관리 센터에서 Active Directory 정보와 일치하는지 확인할 수 있습니다.
+2. 사용자의 자격 증명이 Azure Active Directory와 올바로 동기화되었는지 확인합니다. 사용자의 UPN이 Microsoft 365 관리 센터에서 Active Directory 정보와 일치하는지 확인할 수 있습니다.
     UPN이 Active Directory 정보와 일치하지 않으면 다음을 수행합니다.
 
-    1.  로컬 서버에서 DirSync를 해제합니다.
+    1. 로컬 서버에서 DirSync를 해제합니다.
 
-    2.  일치하지 않는 사용자를 **Intune 계정 포털** 사용자 목록에서 삭제합니다.
+    2. 일치하지 않는 사용자를 **Intune 계정 포털** 사용자 목록에서 삭제합니다.
 
-    3.  Azure 서비스에서 잘못된 데이터를 제거할 수 있도록 1시간 가량 기다립니다.
+    3. Azure 서비스에서 잘못된 데이터를 제거할 수 있도록 1시간 가량 기다립니다.
 
-    4.  DirSync를 다시 설정하고 이제 사용자가 제대로 동기화되었는지 확인합니다.
+    4. DirSync를 다시 설정하고 이제 사용자가 제대로 동기화되었는지 확인합니다.
 
-3.  Intune에서 System Center Configuration Manager를 사용하는 시나리오에서는 사용자에게 유효한 클라우드 사용자 ID가 있는지 확인합니다.
+3. Intune에서 System Center Configuration Manager를 사용하는 시나리오에서는 사용자에게 유효한 클라우드 사용자 ID가 있는지 확인합니다.
 
-    1.  SQL Management Studio를 엽니다.
+    1. SQL Management Studio를 엽니다.
 
-    2.  적절한 DB에 연결합니다.
+    2. 적절한 DB에 연결합니다.
 
-    3.  데이터베이스 폴더를 열고 **CM_DBName** 폴더를 찾아 엽니다. 여기서 DBName은 고객 데이터베이스의 이름입니다.
+    3. 데이터베이스 폴더를 열고 **CM_DBName** 폴더를 찾아 엽니다. 여기서 DBName은 고객 데이터베이스의 이름입니다.
 
-    4.  맨 위에서 **새 쿼리**를 클릭하고 다음 쿼리를 실행합니다.
+    4. 맨 위에서 **새 쿼리**를 클릭하고 다음 쿼리를 실행합니다.
 
-        -   모든 사용자를 보려면: `select * from [CM_ DBName].[dbo].[User_DISC]`
+        - 모든 사용자를 보려면: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   특정 사용자를 보려면 다음 쿼리를 사용합니다. 여기서 %testuser1%은 조회하려는 사용자에 대한 username@domain.com의 자리 표시자입니다. `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        - 특정 사용자를 보려면 다음 쿼리를 사용합니다. 여기서 %testuser1%은 조회하려는 사용자에 대한 username@domain.com의 자리 표시자입니다. `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         쿼리를 작성한 후에 **!Execute**를 선택합니다.
         결과가 반환되면 클라우드 사용자 ID를 찾습니다.  ID를 찾을 수 없으면 Intune을 사용할 라이선스가 없는 것입니다.
@@ -212,13 +212,13 @@ ms.locfileid: "67528754"
 
 **해결 방법:**
 
-1.  사용자가 사용 중인 Intune 서비스 버전에 적절한 라이선스를 할당받았는지 확인합니다.
+1. 사용자가 사용 중인 Intune 서비스 버전에 적절한 라이선스를 할당받았는지 확인합니다.
 
-2.  디바이스가 다른 MDM 공급자에 등록되지 않았는지 확인합니다.
+2. 디바이스가 다른 MDM 공급자에 등록되지 않았는지 확인합니다.
 
 3. 디바이스에 관리 프로필이 설치되지 않았는지 확인합니다.
 
-4.  Android용 Chrome이 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
+4. Android용 Chrome이 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
 
 ### <a name="android-certificate-issues"></a>Android 인증서 문제
 
@@ -321,15 +321,15 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>실패한 프로필 설치에 대한 문제 해결 절차
 
-1.  사용자가 사용 중인 Intune 서비스 버전에 적절한 라이선스를 할당받았는지 확인합니다.
+1. 사용자가 사용 중인 Intune 서비스 버전에 적절한 라이선스를 할당받았는지 확인합니다.
 
-2.  디바이스가 다른 MDM 공급자에 등록되지 않았는지 확인합니다.
+2. 디바이스가 다른 MDM 공급자에 등록되지 않았는지 확인합니다.
 
 3. 디바이스에 관리 프로필이 설치되지 않았는지 확인합니다.
 
-4.  [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)으로 이동하고 메시지가 표시되면 프로필을 설치하도록 시도합니다.
+4. [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)으로 이동하고 메시지가 표시되면 프로필을 설치하도록 시도합니다.
 
-5.  iOS용 Safari가 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
+5. iOS용 Safari가 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune에서 System Center Configuration Manager를 사용하면, 등록된 iOS 디바이스가 콘솔에 표시되지 않습니다.
 **문제:** 사용자가 iOS 디바이스를 등록하지만 Configuration Manager 관리 콘솔에 표시되지 않습니다. 디바이스가 등록되었다는 것을 표시하지 않습니다. 가능한 원인:
@@ -428,17 +428,17 @@ VPP 토큰에서 발생한 문제를 해결한 후에 차단된 디바이스를 
 
 #### <a name="check-how-device-was-removed"></a>디바이스가 제거된 방법 확인
 
-1.  Configuration Manager 관리자 콘솔에서 **모니터링** &gt; **시스템 상태** &gt; **상태 메시지 쿼리**를 선택합니다.
+1. Configuration Manager 관리자 콘솔에서 **모니터링** &gt; **시스템 상태** &gt; **상태 메시지 쿼리**를 선택합니다.
 
-2.  **Collection Member Resources Manually Deleted**를 마우스 오른쪽 단추로 클릭하고 **메시지 표시**를 선택합니다.
+2. **Collection Member Resources Manually Deleted**를 마우스 오른쪽 단추로 클릭하고 **메시지 표시**를 선택합니다.
 
-3.  적절한 시간/날짜 또는 지난 12시간을 선택합니다.
+3. 적절한 시간/날짜 또는 지난 12시간을 선택합니다.
 
-4.  문제의 디바이스를 찾아 디바이스가 제거된 방법을 확인합니다. 다음 예제에서는 SCCMInstall 계정이 알 수 없는 애플리케이션을 통해 장치를 삭제했음을 보여 줍니다.
+4. 문제의 디바이스를 찾아 디바이스가 제거된 방법을 확인합니다. 다음 예제에서는 SCCMInstall 계정이 알 수 없는 애플리케이션을 통해 장치를 삭제했음을 보여 줍니다.
 
     ![디바이스 삭제 진단 스크린샷](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  Configuration Manager에 예약된 작업, 스크립트 또는 기타 프로세스가 없는지 확인합니다. 이러한 항목은 도메인이 아닌, 모바일 또는 관련 디바이스를 자동으로 제거할 수 있습니다.
+5. Configuration Manager에 예약된 작업, 스크립트 또는 기타 프로세스가 없는지 확인합니다. 이러한 항목은 도메인이 아닌, 모바일 또는 관련 디바이스를 자동으로 제거할 수 있습니다.
 
 ### <a name="other-ios-enrollment-errors"></a>기타 iOS 등록 오류
 [Microsoft Intune에서 iOS 디바이스 등록 문제 해결](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune)의 설명서에서 iOS 등록 오류 목록이 제공됩니다.
