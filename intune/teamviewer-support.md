@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c05543884e0d9a00b570fb9ed4be1cdef65ca0
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66841130"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882241"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer를 사용하여 Intune 디바이스 원격 관리
 
@@ -32,8 +32,8 @@ ms.locfileid: "66841130"
 
 - Azure Portal 내에서 Intune 관리자는 다음 [Intune 역할](role-based-access-control.md)을 해야 합니다.  
 
-    - **원격 지원 업데이트**: 관리자가 TeamViewer 커넥터 설정을 수정할 수 있습니다
-    - **원격 지원 요청**: 관리자가 모든 사용자에 대한 새 원격 지원 세션을 시작할 수 있습니다. 이 역할의 사용자는 범위 내의 모든 Intune 역할에 따른 제한을 받지 않습니다. 또한 범위 내에 Intune 역할이 할당된 사용자 또는 디바이스 그룹은 원격 지원을 요청할 수도 있습니다. 
+  - **원격 지원 업데이트**: 관리자가 TeamViewer 커넥터 설정을 수정할 수 있습니다
+  - **원격 지원 요청**: 관리자가 모든 사용자에 대한 새 원격 지원 세션을 시작할 수 있습니다. 이 역할의 사용자는 범위 내의 모든 Intune 역할에 따른 제한을 받지 않습니다. 또한 범위 내에 Intune 역할이 할당된 사용자 또는 디바이스 그룹은 원격 지원을 요청할 수도 있습니다. 
 
 - 로그인 자격 증명이 있는 [TeamViewer](https://www.teamviewer.com) 계정. 일부 TeamViewer 라이선스만 Intune과의 통합을 지원할 수 있습니다. 특정 TeamViewer 요구 사항은 [TeamViewer 통합 파트너: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/)을 참조하세요.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546890"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883784"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Intune 클래식 포털에서 Azure Portal로 조건부 액세스 정책 다시 할당
 
@@ -38,14 +38,14 @@ ms.locfileid: "67546890"
 
 - 새 정책이 Azure Portal에서 예상대로 작동하는지 확인한 후 Intune 클래식 포털에서 조건부 정책을 사용하지 않도록 설정합니다.
 <br /><br />
-    - Intune 클래식 포털에서 조건부 액세스 정책을 **사용하지 않도록 설정하기 전에** 사용자를 새 정책으로 이동하는 방법을 계획합니다. 다음 두 가지 접근 방법이 있습니다.
+  - Intune 클래식 포털에서 조건부 액세스 정책을 **사용하지 않도록 설정하기 전에** 사용자를 새 정책으로 이동하는 방법을 계획합니다. 다음 두 가지 접근 방법이 있습니다.
 <br /><br />
-        - **동일한 포함 그룹을 사용하여 Azure 포털에서 만든 정책을 적용하고, Intune 클래식 포털에서 적용된 정책과 함께 사용할 새 예외 그룹을 만듭니다**.
-            - 일부 사용자를 클래식 포털에서 지정된 예외 그룹으로 점차적으로 이동합니다. 이렇게 하면 Intune 클래식 포털에서 대상으로 지정한 정책이 적용되지 않습니다. Intune 클래식 포털에서 적용된 정책 외에도 Azure 포털에서 만들고 동일한 사용자 그룹을 대상으로 지정한 정책이 적용됩니다. 
+    - **동일한 포함 그룹을 사용하여 Azure 포털에서 만든 정책을 적용하고, Intune 클래식 포털에서 적용된 정책과 함께 사용할 새 예외 그룹을 만듭니다**.
+      - 일부 사용자를 클래식 포털에서 지정된 예외 그룹으로 점차적으로 이동합니다. 이렇게 하면 Intune 클래식 포털에서 대상으로 지정한 정책이 적용되지 않습니다. Intune 클래식 포털에서 적용된 정책 외에도 Azure 포털에서 만들고 동일한 사용자 그룹을 대상으로 지정한 정책이 적용됩니다. 
 <br /><br />
-        - **Azure Portal에서 조건부 액세스 정책의 대상으로 지정할 새 그룹을 만듭니다**. 이 접근 방법을 선택하는 경우 다음을 수행해야 합니다.
-            - Intune 클래식 포털에서 조건부 액세스 정책이 대상으로 하는 보안 그룹에서 점차적으로 사용자를 제거합니다.
-            - 해당 사용자에 대해 새 정책이 작동하는지 확인한 후 Intune 클래식 포털에서 정책을 사용하지 않도록 설정할 수 있습니다. 
+    - **Azure Portal에서 조건부 액세스 정책의 대상으로 지정할 새 그룹을 만듭니다**. 이 접근 방법을 선택하는 경우 다음을 수행해야 합니다.
+      - Intune 클래식 포털에서 조건부 액세스 정책이 대상으로 하는 보안 그룹에서 점차적으로 사용자를 제거합니다.
+      - 해당 사용자에 대해 새 정책이 작동하는지 확인한 후 Intune 클래식 포털에서 정책을 사용하지 않도록 설정할 수 있습니다. 
 <br /><br />
 - Intune 클래식 포털에서 조건부 액세스 정책 설정이 EAS(Exchange ActiveSync)를 사용하도록 구성되어 있는 경우 **Azure Portal에서 EAS 조건부 액세스 정책 설정을 다시 할당**하는 [이 항목의 지침](#reassign-intune-device-based-conditional-access-policies-for-eas-clients)을 참조하세요.
 
@@ -64,10 +64,10 @@ ms.locfileid: "67546890"
 Azure 포털의 **Intune 앱 보호** 블레이드를 통해 관리자는 Intune 앱 보호 정책을 지원하는 앱만 회사 리소스에 액세스할 수 있도록 앱 기반 조건부 규칙을 설정할 수 있습니다. 디바이스 기반 조건부 액세스 정책을 사용하여 이러한 앱 기반 조건부 액세스 정책을 겹치도록 선택할 수 있습니다. 디바이스 기반 및 앱 기반 조건부 정책을 결합(논리적 AND)하거나 두 옵션 중 하나를 제공(논리적 OR)할 수 있습니다. 조건부 액세스 정책 요구 사항이 다음과 같은 경우,
 
 - 준수 디바이스 필요 **AND** 승인된 앱 사용.
-    - [Azure Active Directory 조건부 액세스 블레이드](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) 및 [Intune 앱 보호 블레이드](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)를 사용하여 조건부 액세스 정책을 설정해야 합니다.
+  - [Azure Active Directory 조건부 액세스 블레이드](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) 및 [Intune 앱 보호 블레이드](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)를 사용하여 조건부 액세스 정책을 설정해야 합니다.
 <br /><br />
 - 준수 디바이스 필요 **OR** 승인된 앱 사용.
-    - [Intune 클래식 포털](https://manage.microsoft.com) 및 [Intune 앱 보호 블레이드](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)를 사용하여 조건부 액세스 정책을 설정해야 합니다.
+  - [Intune 클래식 포털](https://manage.microsoft.com) 및 [Intune 앱 보호 블레이드](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)를 사용하여 조건부 액세스 정책을 설정해야 합니다.
 
 > [!TIP] 
 > 이 항목에서는 Intune 클래식 포털과 Azure 포털의 사용자 환경을 비교하는 스크린샷을 제공합니다.

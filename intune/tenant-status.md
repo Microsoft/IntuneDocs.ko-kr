@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3b6aeb7efc60d32891f4b1c69b387a61a2bc25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040508"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882234"
 ---
 # <a name="intune-tenant-status-page"></a>Intune 테넌트 상태 페이지
 테넌트 상태 페이지는 테넌트에 대한 현재 및 중요 세부 정보를 볼 수 있는 중앙 집중식 허브입니다. 이러한 세부 정보에는 라이선스 가용성 및 사용, 커넥터 상태, Intune 서비스에 대한 중요 통신 정보 등이 포함됩니다.  
@@ -48,14 +48,14 @@ ms.locfileid: "66040508"
 
 **커넥터 상태:**
 - **비정상:**
-    - 인증서 또는 자격 증명이 만료됨
-    - 마지막 동기화는 3일 이상 전임
+  - 인증서 또는 자격 증명이 만료됨
+  - 마지막 동기화는 3일 이상 전임
 - **경고:**
-    - 인증서 또는 자격 증명이 7일 내에 만료됨
-    - 마지막 동기화는 하루 이상 전임
+  - 인증서 또는 자격 증명이 7일 내에 만료됨
+  - 마지막 동기화는 하루 이상 전임
 - **정상:**
-    - 인증서 또는 자격 증명이 다음 7일 내에 만료되지 않음
-    - 최신 동기화는 하루 미만 전임  
+  - 인증서 또는 자격 증명이 다음 7일 내에 만료되지 않음
+  - 최신 동기화는 하루 미만 전임  
 
 목록에서 커넥터를 선택하면 포털은 해당 커넥터 만들기 또는 구성과 관련된 포털 페이지를 표시합니다.  예를 들어 **VPP 만료 날짜** 커넥터를 선택하면 해당 커넥터에 대한 자세한 세부 정보를 볼 수 있는 **iOS 대량 구매 프로그램 토큰** 페이지가 열립니다. 그런 다음, 새 구성을 만들거나 기존 구성으로 문제를 해결할 수 있습니다.  
 

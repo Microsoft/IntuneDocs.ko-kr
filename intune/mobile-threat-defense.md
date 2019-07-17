@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: 73c8167c91129d79a98674a92e7ccc5487a6b283
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407166"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885076"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune과 Mobile Threat Defense의 통합이란?
 Intune은 규정 준수 정책 및 조건부 액세스 규칙의 정보 소스인 Mobile Threat Defense 공급업체의 데이터를 통합할 수 있습니다. 이 정보를 사용하여 손상된 모바일 디바이스의 액세스를 차단함으로써 Exchange 및 SharePoint 같은 회사 리소스를 보호할 수 있습니다.  
@@ -47,14 +47,14 @@ Intune은 Mobile Threat Defense 커넥터를 사용하여 Intune과 고객이 �
 **앱 인벤토리**  
 iOS 디바이스용 앱 동기화를 사용하면 회사 및 개인 소유 iOS 디바이스 모두의 인벤토리가 MTD 서비스 공급자에게 전송됩니다. 앱 인벤토리의 데이터에는 다음이 포함됩니다.
 
- - 앱 ID
- - 앱 버전
- - 앱 짧은 버전
- - 앱 이름
- - 앱 번들 크기
- - 앱 동적 크기
- - 앱의 유효성 검사 여부
- - 앱이 관리되는지 여부
+- 앱 ID
+- 앱 버전
+- 앱 짧은 버전
+- 앱 이름
+- 앱 번들 크기
+- 앱 동적 크기
+- 앱의 유효성 검사 여부
+- 앱이 관리되는지 여부
 
 ## <a name="sample-scenarios"></a>샘플 시나리오:
 

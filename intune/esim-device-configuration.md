@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402727"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883267"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune에서 eSIM 셀룰러 프로필 구성 - 공개 미리 보기
 
@@ -160,12 +160,12 @@ eSIM 활성화 코드는 한 번만 사용됩니다. Intune에서 디바이스�
 1. **디바이스 구성** > **eSIM 셀룰러 프로필** &gt; 기존 구독을 차례로 선택합니다.
 2. **디바이스 상태**를 선택합니다. Intune에 디바이스에 대한 추가 세부 정보가 표시됩니다.
 
-  - **디바이스 이름**: 대상 디바이스의 이름
-  - **사용자**: 등록된 디바이스의 사용자
-  - **ICCID**: 모바일 운영자가 디바이스에 설치된 활성화 코드 내에 제공하는 고유한 코드
-  - **활성화 상태**: 디바이스에서 활성화 코드의 Intune 배포 및 설치 상태
-  - **셀룰러 상태**: 통신사가 제공하는 상태입니다. 문제를 해결하려면 모바일 운영자와 후속 작업을 합니다.
-  - **마지막 체크 인**: 디바이스가 Intune과 마지막으로 통신한 날짜
+    - **디바이스 이름**: 대상 디바이스의 이름
+    - **사용자**: 등록된 디바이스의 사용자
+    - **ICCID**: 모바일 운영자가 디바이스에 설치된 활성화 코드 내에 제공하는 고유한 코드
+    - **활성화 상태**: 디바이스에서 활성화 코드의 Intune 배포 및 설치 상태
+    - **셀룰러 상태**: 통신사가 제공하는 상태입니다. 문제를 해결하려면 모바일 운영자와 후속 작업을 합니다.
+    - **마지막 체크 인**: 디바이스가 Intune과 마지막으로 통신한 날짜
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>실제 디바이스에서 eSIM 프로필 세부 정보 모니터링
 

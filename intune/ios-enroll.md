@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94f2bd9237e92b22b9d73e4f7777dc0faf3f0fe
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529612"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883022"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune에 iOS 디바이스 등록
 
@@ -67,9 +67,9 @@ Mac 컴퓨터에서 실행되는 Apple Configurator를 사용하여 iOS 디바�
 사용자 선호도로 구성한 디바이스에서 회사 포털 앱을 설치하고 실행하여 앱을 다운로드하고 디바이스를 관리할 수 있습니다. 사용자는 디바이스를 받은 후 몇 가지 추가 단계를 완료하여 설정 도우미를 완료하고 회사 포털 앱을 설치해야 합니다.
 
 사용자 선호도는 다음을 지원하는 데 필요합니다.
-  - MAM(모바일 애플리케이션 관리) 앱
-  - 메일 및 회사 데이터에 대한 조건부 액세스
-  - 회사 포털 앱
+- MAM(모바일 애플리케이션 관리) 앱
+- 메일 및 회사 데이터에 대한 조건부 액세스
+- 회사 포털 앱
 
 **사용자가 사용자 선호도를 사용하여 회사 소유의 iOS 디바이스를 등록하는 방법**
 1. 사용자가 디바이스를 켜면 설정 도우미를 완료하라는 메시지가 표시됩니다. 

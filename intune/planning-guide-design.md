@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572277"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884871"
 ---
 # <a name="create-a-design"></a>설계 만들기
 
@@ -49,47 +49,47 @@ Intune 설계는 [이 가이드의 다른 섹션](planning-guide.md)을 완료�
 
 - **클라우드의 ID**
 
-    - DirSync 또는 Azure AD(Azure Active Directory) Connect를 사용하나요?
+  - DirSync 또는 Azure AD(Azure Active Directory) Connect를 사용하나요?
 
-    - 환경이 페더레이션되었나요?
+  - 환경이 페더레이션되었나요?
 
-    - MFA(다단계 인증)가 사용되나요?
+  - MFA(다단계 인증)가 사용되나요?
 
 - **메일 환경**
 
-    - Exchange를 사용하나요? 온-프레미스 또는 클라우드에 있나요?
+  - Exchange를 사용하나요? 온-프레미스 또는 클라우드에 있나요?
 
-    - 프로젝트 도중에 Exchange를 클라우드로 마이그레이션하나요?
+  - 프로젝트 도중에 Exchange를 클라우드로 마이그레이션하나요?
 
 - **현재 MDM(모바일 디바이스 관리) 솔루션**
 
-    - 현재 다른 MDM 솔루션을 사용하고 있나요?
+  - 현재 다른 MDM 솔루션을 사용하고 있나요?
 
-    - 회사 및 BYOD 사용 사례 시나리오에 사용하고 있는 MDM 솔루션은 무엇인가요?
+  - 회사 및 BYOD 사용 사례 시나리오에 사용하고 있는 MDM 솔루션은 무엇인가요?
 
-    - 사용하고 있는 기능은 무엇인가요(예: 앱 디바이스 설정, Wi-Fi 구성 등)?
+  - 사용하고 있는 기능은 무엇인가요(예: 앱 디바이스 설정, Wi-Fi 구성 등)?
 
-    - 어떤 디바이스 플랫폼이 지원되나요?
+  - 어떤 디바이스 플랫폼이 지원되나요?
 
-    - 어떤 그룹이 MDM 솔루션을 사용하고 있으며 그 사용자 수는 어떻게 되나요?
+  - 어떤 그룹이 MDM 솔루션을 사용하고 있으며 그 사용자 수는 어떻게 되나요?
 
 - **인증서 솔루션**
 
-    - 인증서 솔루션을 구현했나요?
+  - 인증서 솔루션을 구현했나요?
 
-    - 어떤 유형의 인증서를 사용하나요?
+  - 어떤 유형의 인증서를 사용하나요?
 
 - **시스템 관리**
 
-    - PC 및 서버 환경을 어떻게 관리하고 있나요?
+  - PC 및 서버 환경을 어떻게 관리하고 있나요?
 
-    - System Center Configuration Manager를 사용 중인가요? 타사 시스템 관리 플랫폼을 사용하고 있나요?
+  - System Center Configuration Manager를 사용 중인가요? 타사 시스템 관리 플랫폼을 사용하고 있나요?
 
 - **VPN 솔루션**
 
-    - 사용 중인 VPN 솔루션은 무엇인가요?
+  - 사용 중인 VPN 솔루션은 무엇인가요?
 
-    - 해당 솔루션을 회사 및 BYOD 사용 사례 시나리오 둘 다에 사용하나요?
+  - 해당 솔루션을 회사 및 BYOD 사용 사례 시나리오 둘 다에 사용하나요?
 
 현재 MDM 환경을 기록할 때 사용자 환경에 영향을 미칠 수 있는 모든 프로젝트 또는 다른 모든 계획이 적절히 준비되었는지 확인해야 합니다. 다음은 Intune 설계를 만들 때 현재 환경을 기록하는 방법의 예입니다.
 

@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76f5188a866e744c034fd592f9b1dfcbc9061ffa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 78cf3c2ff5babbfb45dfa6a41add09ef91549e8d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549377"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885039"
 ---
 # <a name="basic-setup"></a>기본 설정
 
@@ -61,9 +61,9 @@ Intune으로 마이그레이션하려면 먼저, Intune 구독이 필요합니�
 
 - [이 페이지](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)를 방문하면 다음을 수행하는 방법에 대한 지침을 확인할 수 있습니다.
 
-    - 새 AAD 테넌트에 연결된 새 Intune 구독을 만듭니다.
+  - 새 AAD 테넌트에 연결된 새 Intune 구독을 만듭니다.
 
-    - 기존 AAD 테넌트에 로그인하여 Intune 구독을 연결합니다.
+  - 기존 AAD 테넌트에 로그인하여 Intune 구독을 연결합니다.
 
 ### <a name="task-2-assign-intune-user-licenses"></a>태스크 2: Intune 사용자 라이선스 할당
 

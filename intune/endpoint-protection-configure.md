@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 1a5cd898545bae51395352d5cf1e7b1ee9bd22dd
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251176"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883244"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune에서 엔드포인트 보호 설정 추가
 
@@ -33,8 +33,8 @@ Intune에서 디바이스 구성 프로필을 사용하여 디바이스에서 �
 예를 들어 Mac 앱 스토어에서 macOS 사용자만 앱을 설치할 수 있는 엔드포인트 보호 프로필을 만들 수 있습니다. 또는 Windows 10 디바이스에서 앱을 실행하는 경우 Windows SmartScreen을 사용하도록 설정합니다.
 
 프로필을 만들기 전에 Intune에서 관리할 수 있는 각 지원되는 플랫폼의 엔드포인트 보호 설정을 자세히 설명하는 다음 문서를 참조하세요. 
-   - [macOS 설정](endpoint-protection-macos.md)
-   - [Windows 10 설정](endpoint-protection-windows-10.md)
+- [macOS 설정](endpoint-protection-macos.md)
+- [Windows 10 설정](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>엔드포인트 보호 설정을 포함하는 디바이스 프로필 만들기
 

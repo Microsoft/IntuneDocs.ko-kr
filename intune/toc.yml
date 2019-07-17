@@ -998,3 +998,5 @@
           href: data-outside-protect.md
         - name: 관리되지 않는 디바이스에서 데이터 누수 방지
           href: data-leak-prevention.md
+    - name: Intune 최종 사용자 문서
+      href: /intune-user-help/use-managed-devices-to-get-work-done

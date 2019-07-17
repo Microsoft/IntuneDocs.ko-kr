@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 1e5ddf39a201f1a70f997e03f0b65706853adefa
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649035"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885111"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
@@ -44,8 +44,8 @@ Microsoft Intune에서 앱 구성 정책을 사용하여 iOS 또는 Android 앱�
 구성 설정은 앱에서 확인할 때마다 사용됩니다. 일반적으로 앱은 사용자가 앱을 처음 실행할 때 구성 설정을 확인합니다.
 
 Intune을 사용한 앱 구성을 사용하는 방법에는 두 가지 옵션이 있습니다.
- - **관리 디바이스** - 디바이스는 MDM(모바일 디바이스 관리) 공급자로 Intune에서 관리됩니다.
- - **관리되는 앱** - 앱이 디바이스 등록 없이 관리됩니다.
+- **관리 디바이스** - 디바이스는 MDM(모바일 디바이스 관리) 공급자로 Intune에서 관리됩니다.
+- **관리되는 앱** - 앱이 디바이스 등록 없이 관리됩니다.
 
 > [!NOTE]
 > Microsoft Intune 관리자는 관리되는 장치에서 Microsoft Office 애플리케이션에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 디바이스에서 개인 계정을 차단할 수 있습니다. 지원 애플리케이션이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.
@@ -66,9 +66,9 @@ Intune 앱 SDK를 앱에 통합하거나 앱이 개발된 후 앱을 래핑하�
 
 ### <a name="managed-devices"></a>관리되는 디바이스
 
- - iOS 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리형 iOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.
- - Android 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리되는 Android 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-android.md)를 참조하세요.
+- iOS 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리형 iOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.
+- Android 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리되는 Android 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-android.md)를 참조하세요.
 
 ### <a name="managed-apps"></a>관리되는 앱
 
- - 관리되는 앱으로 앱 구성을 사용하는 방법을 알아봅니다. [디바이스 등록 없이 관리되는 앱용 앱 구성 정책 추가](app-configuration-policies-managed-app.md)를 참조하세요.
+- 관리되는 앱으로 앱 구성을 사용하는 방법을 알아봅니다. [디바이스 등록 없이 관리되는 앱용 앱 구성 정책 추가](app-configuration-policies-managed-app.md)를 참조하세요.

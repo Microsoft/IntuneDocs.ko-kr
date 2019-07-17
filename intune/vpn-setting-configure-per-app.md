@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373663"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884527"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune에서 iOS 디바이스용 앱당 VPN(가상 프라이빗 네트워크) 설정
 
@@ -150,16 +150,16 @@ VPN 프로필을 추가한 후에 앱 및 Azure AD 그룹을 프로필에 연결
 
 ### <a name="before-you-attempt-to-connect"></a>연결하려고 하기 전에
 
- - 위에 언급한 모든 정책이 동일한 그룹에 배포되는지 확인합니다. 그렇지 않는 경우 앱당 VPN 환경이 작동하지 않습니다.
- - Pulse Secure VPN 앱 또는 사용자 지정 VPN 클라이언트 앱을 사용하는 경우 앱 계층 또는 패킷 계층 터널링을 사용하도록 선택할 수 있습니다. **ProviderType** 값은 앱 계층 터널링의 경우 **app-proxy**로 설정하고, 패킷 계층 터널링의 경우 **packet-tunnel**로 설정합니다. 올바른 값을 사용하고 있는지 확인하려면 VPN 공급 기업의 설명서를 확인합니다.
+- 위에 언급한 모든 정책이 동일한 그룹에 배포되는지 확인합니다. 그렇지 않는 경우 앱당 VPN 환경이 작동하지 않습니다.
+- Pulse Secure VPN 앱 또는 사용자 지정 VPN 클라이언트 앱을 사용하는 경우 앱 계층 또는 패킷 계층 터널링을 사용하도록 선택할 수 있습니다. **ProviderType** 값은 앱 계층 터널링의 경우 **app-proxy**로 설정하고, 패킷 계층 터널링의 경우 **packet-tunnel**로 설정합니다. 올바른 값을 사용하고 있는지 확인하려면 VPN 공급 기업의 설명서를 확인합니다.
 
 ### <a name="connect-using-the-per-app-vpn"></a>앱당 VPN을 사용하여 연결
 
 VPN을 선택하거나 자격 증명을 입력하지 않고 연결하여 제로 터치 환경을 확인합니다. 제로 터치 환경은 다음을 의미합니다.
 
- - 디바이스에는 VPN 서버를 신뢰하라는 메시지가 표시되지 않습니다. 즉, 사용자에게는 **동적 신뢰** 대화 상자가 표시되지 않습니다.
- - 사용자는 자격 증명을 입력할 필요가 없습니다.
- - 사용자가 연결된 앱 중 하나를 열면 사용자의 디바이스가 VPN에 연결됩니다.
+- 디바이스에는 VPN 서버를 신뢰하라는 메시지가 표시되지 않습니다. 즉, 사용자에게는 **동적 신뢰** 대화 상자가 표시되지 않습니다.
+- 사용자는 자격 증명을 입력할 필요가 없습니다.
+- 사용자가 연결된 앱 중 하나를 열면 사용자의 디바이스가 VPN에 연결됩니다.
 
 <!-- ## Troubleshooting the per-app VPN
 

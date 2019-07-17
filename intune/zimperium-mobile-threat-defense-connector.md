@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: f5c78eb01e495b87a35bed06c9800c04a7f97ba4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572476"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882025"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune 및 Zimperium MTD(Mobile Threat Defense) 커넥터 통합
 
@@ -96,7 +96,7 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 - Zimperium Mobile Threat Defense 구독
 
-    - 자세한 내용은 [Zimperium 웹 사이트](https://www.zimperium.com/zips-mobile-ips)를 참조하세요.
+  - 자세한 내용은 [Zimperium 웹 사이트](https://www.zimperium.com/zips-mobile-ips)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

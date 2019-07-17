@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528265"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882713"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>사용 사례 시나리오 요구 사항 확인
 
@@ -50,21 +50,21 @@ ms.locfileid: "67528265"
 "요구 사항" 열에 사용할 수 있는 예를 몇 가지 더 들자면 다음과 같습니다.
 
 - **보안 메일**
-    - Exchange Online/온-프레미스에 대한 조건부 액세스
-    - Outlook 앱 보호 정책
+  - Exchange Online/온-프레미스에 대한 조건부 액세스
+  - Outlook 앱 보호 정책
 
 - **디바이스 설정**
-    - 4자 또는 6자를 사용하여 PIN 설정
-    - 클라우드 백업 제한
+  - 4자 또는 6자를 사용하여 PIN 설정
+  - 클라우드 백업 제한
 
 - **프로필**
-    - Wi-Fi
-    - VPN
-    - 메일(Windows 10 Mobile)
+  - Wi-Fi
+  - VPN
+  - 메일(Windows 10 Mobile)
 
 - **앱**
-    - 앱 보호 정책을 사용하는 Office 365
-    - 앱 보호 정책을 사용하는 LOB(기간 업무)
+  - 앱 보호 정책을 사용하는 Office 365
+  - 앱 보호 정책을 사용하는 LOB(기간 업무)
 
 ## <a name="next-steps"></a>다음 단계
 

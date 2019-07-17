@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 513001993d890afba848138e01ff823796ea773d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572430"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884435"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Intune과 Symantec Endpoint Protection Mobile 통합 설정
 
@@ -44,7 +44,7 @@ SEP Mobile은 Intune과의 통합을 두 가지 모드로 지원합니다.
 
 - **읽기 전용 통합(기본 설정):** Azure Active Directory에서 디바이스를 인벤토리에 포함하고 Symantec Endpoint Protection Mobile 관리 콘솔에서 해당 정보를 채우기만 합니다.
 <br>
-    - Symantec Endpoint Protection Mobile 관리 콘솔에서 **Intune에 디바이스 상태 및 위험 보고** 및 **Intune에 보안 문제도 보고** 상자가 선택되지 않은 경우 통합은 읽기 전용이므로 Intune에서 디바이스 상태(준수 또는 미준수)가 변경되지 않습니다.
+  - Symantec Endpoint Protection Mobile 관리 콘솔에서 **Intune에 디바이스 상태 및 위험 보고** 및 **Intune에 보안 문제도 보고** 상자가 선택되지 않은 경우 통합은 읽기 전용이므로 Intune에서 디바이스 상태(준수 또는 미준수)가 변경되지 않습니다.
 <br></br>
 - **전체 통합:** 디바이스의 위험 및 보안 문제 세부 정보에 대해 SEP Mobile에서 보고하도록 허용합니다. 이렇게 하면 두 클라우드 서비스 간 양방향 통신이 이루어집니다.
 

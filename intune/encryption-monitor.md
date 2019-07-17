@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316942"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883364"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker 및 디바이스 암호화 모니터링  
 Azure AD(Azure Active Directory)에서 살펴본 것처럼 Intune은 Windows 10 디바이스의 암호화 상태를 식별하는 중앙 위치를 제공하며, 디바이스에서 BitLocker의 중요 정보에 액세스할 수 있습니다.  
@@ -76,22 +76,22 @@ Azure AD(Azure Active Directory)에서 살펴본 것처럼 Intune은 Windows 10 
 
   다음은 Intune이 보고할 수 있는 상태 세부 정보의 예입니다.  
 
-   - BitLocker 정책은 사용자 동의가 있어야만 BitLocker 드라이브 암호화 마법사를 시작하여 OS 볼륨 암호화를 시작할 수 있지만, 사용자가 동의하지 않았습니다.  
-   - OS 볼륨의 암호화 방법이 BitLocker 정책과 일치하지 않습니다.  
-   - 정책 BitLocker는 OS 볼륨을 보호할 TPM 보호기가 필요하지만, TPM이 사용되고 있지 않습니다.  
-   - BitLocker 정책은 OS 볼륨에 대한 TPM 전용 보호기가 필요하지만, TPM 보호가 사용되고 있지 않습니다.  
-   - BitLocker 정책은 OS 볼륨에 대한 TPM+PIN 보호가 필요하지만, TPM+PIN 보호기가 사용되고 있지 않습니다.  
-   - BitLocker 정책은 OS 볼륨에 대한 TPM+시작 키 보호가 필요하지만, TPM+시작 키 보호기가 사용되고 있지 않습니다.  
-   - BitLocker 정책은 OS 볼륨에 대한 TPM+PIN+시작 키 보호가 필요하지만, TPM+PIN+시작 키 보호기가 사용되고 있지 않습니다.  
-   - OS 볼륨이 보호되고 있지 않습니다.  
-   - 복구 키를 백업하지 못했습니다.  
-   - 고정 드라이브가 보호되고 있지 않습니다.  
-   - 고정 드라이브의 암호화 방법이 BitLocker 정책과 일치하지 않습니다.  
-   - 드라이브를 암호화하려면 BitLocker 정책에 따라 사용자가 관리자로 로그인해야 하거나, 디바이스가 Azure AD에 조인된 경우 AllowStandardUserEncryption 정책을 1로 설정해야 합니다.  
-   - WinRE(Windows Recovery Environment)가 구성되지 않았습니다.  
-   - TPM이 없어서 레지스트리에서 사용할 수 없거나 OS가 이동식 드라이브에 있어서 BitLocker에 TPM을 사용할 수 없습니다.  
-   - TPM을 BitLocker에 사용할 준비가 되지 않았습니다.  
-   - 복구 키 백업에 필요한 네트워크를 사용할 수 없습니다.다.  
+  - BitLocker 정책은 사용자 동의가 있어야만 BitLocker 드라이브 암호화 마법사를 시작하여 OS 볼륨 암호화를 시작할 수 있지만, 사용자가 동의하지 않았습니다.  
+  - OS 볼륨의 암호화 방법이 BitLocker 정책과 일치하지 않습니다.  
+  - 정책 BitLocker는 OS 볼륨을 보호할 TPM 보호기가 필요하지만, TPM이 사용되고 있지 않습니다.  
+  - BitLocker 정책은 OS 볼륨에 대한 TPM 전용 보호기가 필요하지만, TPM 보호가 사용되고 있지 않습니다.  
+  - BitLocker 정책은 OS 볼륨에 대한 TPM+PIN 보호가 필요하지만, TPM+PIN 보호기가 사용되고 있지 않습니다.  
+  - BitLocker 정책은 OS 볼륨에 대한 TPM+시작 키 보호가 필요하지만, TPM+시작 키 보호기가 사용되고 있지 않습니다.  
+  - BitLocker 정책은 OS 볼륨에 대한 TPM+PIN+시작 키 보호가 필요하지만, TPM+PIN+시작 키 보호기가 사용되고 있지 않습니다.  
+  - OS 볼륨이 보호되고 있지 않습니다.  
+  - 복구 키를 백업하지 못했습니다.  
+  - 고정 드라이브가 보호되고 있지 않습니다.  
+  - 고정 드라이브의 암호화 방법이 BitLocker 정책과 일치하지 않습니다.  
+  - 드라이브를 암호화하려면 BitLocker 정책에 따라 사용자가 관리자로 로그인해야 하거나, 디바이스가 Azure AD에 조인된 경우 AllowStandardUserEncryption 정책을 1로 설정해야 합니다.  
+  - WinRE(Windows Recovery Environment)가 구성되지 않았습니다.  
+  - TPM이 없어서 레지스트리에서 사용할 수 없거나 OS가 이동식 드라이브에 있어서 BitLocker에 TPM을 사용할 수 없습니다.  
+  - TPM을 BitLocker에 사용할 준비가 되지 않았습니다.  
+  - 복구 키 백업에 필요한 네트워크를 사용할 수 없습니다.다.  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 복구 키
 Intune은 Intune 포털 내에서 Windows 10 디바이스의 BitLocker 키 ID와 복구 키를 볼 수 있도록 BitLocker의 Azure AD 블레이드에 대한 액세스를 제공합니다.  디바이스에 액세스하려면 디바이스의 키를 Azure AD에 위탁해야 합니다. 

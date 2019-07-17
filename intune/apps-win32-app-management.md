@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39b5581ae7dd2a93554c0371da3858f59d6e62b4
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735453"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884046"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 독립 실행형 - Win32 앱 관리
 
@@ -37,9 +37,9 @@ Win32 앱 관리를 사용하려면 다음 조건을 충족해야 합니다.
 
 - Windows 10 버전 1607 이상(Enterprise, Pro 및 Education 버전)
 - Windows 10 클라이언트의 필수 요건은 다음과 같습니다. 
-    - 디바이스는 Azure AD에 조인되고 자동 등록되어야 합니다. Intune 관리 확장은 Azure AD 조인, 하이브리드 도메인 조인, 그룹 정책 등록 디바이스를 지원합니다. 
-    > [!NOTE]
-    > 그룹 정책 등록 시나리오의 경우 - 최종 사용자는 로컬 사용자 계정을 사용하여 AAD를 Windows 10 디바이스에 조인합니다. 사용자는 AAD 사용자 계정을 사용하여 디바이스에 로그온하고 Intune에 등록해야 합니다. PowerShell 스크립트 또는 Win32 앱에서 사용자 또는 디바이스를 대상으로 하는 경우 Intune은 Intune 관리 확장을 디바이스에 설치합니다.
+  - 디바이스는 Azure AD에 조인되고 자동 등록되어야 합니다. Intune 관리 확장은 Azure AD 조인, 하이브리드 도메인 조인, 그룹 정책 등록 디바이스를 지원합니다. 
+  > [!NOTE]
+  > 그룹 정책 등록 시나리오의 경우 - 최종 사용자는 로컬 사용자 계정을 사용하여 AAD를 Windows 10 디바이스에 조인합니다. 사용자는 AAD 사용자 계정을 사용하여 디바이스에 로그온하고 Intune에 등록해야 합니다. PowerShell 스크립트 또는 Win32 앱에서 사용자 또는 디바이스를 대상으로 하는 경우 Intune은 Intune 관리 확장을 디바이스에 설치합니다.
 - Windows 애플리케이션 크기는 앱당 8GB로 제한됩니다.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>업로드할 Win32 앱 콘텐츠 준비

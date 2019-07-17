@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549443"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882890"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 서비스 설명
 
@@ -60,24 +60,24 @@ Microsoft는 적합한 플랜의 적합한 서비스에 대해 Intune 온보딩 
 
 - 중요한 서비스 업데이트는 [Microsoft 365 관리 센터](https://admin.microsoft.com/) 메시지 센터에서도 공지됩니다. 제공된 [Office 365 관리자 모바일 앱](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)을 설치한 경우 모바일 디바이스에서 알림을 받을 수 있습니다. [Office 365 메시지 센터](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)를 사용하는 방법을 자세히 알아봅니다.
 
-    아래에는 그 외의 몇 가지 유용한 정보가 나와 있습니다.
+  아래에는 그 외의 몇 가지 유용한 정보가 나와 있습니다.
 
-    - Office 365 메시지 센터의 메시지는 특정 대상에게 제공되는 것입니다. 즉, 회사에서 Intune for EDU 서비스를 사용하지 않는 경우에는 Intune for EDU 관련 메시지가 제공되지 않습니다.
+  - Office 365 메시지 센터의 메시지는 특정 대상에게 제공되는 것입니다. 즉, 회사에서 Intune for EDU 서비스를 사용하지 않는 경우에는 Intune for EDU 관련 메시지가 제공되지 않습니다.
 
-    - 메시지에는 만료 기간이 있습니다. 예를 들어 새로운 기능 페이지 링크가 포함된 서비스가 업데이트되었다는 알림은 다음 서비스 업데이트 알림 전에 만료될 가능성이 높습니다. 메시지에 만료 기간이 없으면 더 이상 관련이 없는 많은 게시물이 누적되어 백로그가 커지게 됩니다.
+  - 메시지에는 만료 기간이 있습니다. 예를 들어 새로운 기능 페이지 링크가 포함된 서비스가 업데이트되었다는 알림은 다음 서비스 업데이트 알림 전에 만료될 가능성이 높습니다. 메시지에 만료 기간이 없으면 더 이상 관련이 없는 많은 게시물이 누적되어 백로그가 커지게 됩니다.
 
-    - Office 365 관리자 모바일 앱에서는 모든 메시지를 검색하여 조직의 동료와 공유하려는 알림을 전달할 수 있습니다.
+  - Office 365 관리자 모바일 앱에서는 모든 메시지를 검색하여 조직의 동료와 공유하려는 알림을 전달할 수 있습니다.
 
-    - 메시지 센터 기본 설정 편집 아래에 **Intune**용 토글이 포함될 예정이므로, iNTUNE 구독에 대해 게시된 메시지를 확인할 수 있습니다. Office 365용 모바일 디바이스 관리는 Intune이 아닌 다른 서비스이므로 해당 메시지는 Intune과는 관련이 없습니다.
+  - 메시지 센터 기본 설정 편집 아래에 **Intune**용 토글이 포함될 예정이므로, iNTUNE 구독에 대해 게시된 메시지를 확인할 수 있습니다. Office 365용 모바일 디바이스 관리는 Intune이 아닌 다른 서비스이므로 해당 메시지는 Intune과는 관련이 없습니다.
 
 - 또한 다음 두 개의 블로그에서 EMS 메시지 및 Intune 지원 모범 사례가 제공됩니다.
 
-    - [Enterprise Mobility + Security 블로그](https://blogs.technet.microsoft.com/enterprisemobility/)
+  - [Enterprise Mobility + Security 블로그](https://blogs.technet.microsoft.com/enterprisemobility/)
 
-    - [Intune 지원 블로그](https://blogs.technet.microsoft.com/intunesupport/)
+  - [Intune 지원 블로그](https://blogs.technet.microsoft.com/intunesupport/)
 
->[!Note]
->[Microsoft 365 관리 센터](https://admin.microsoft.com)에서 Intune 서비스 상태를 모니터링할 수 있습니다. 왼쪽 창에서 **서비스 상태**를 선택합니다. [Office 365 관리자 모바일 앱](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)을 사용하여 서비스 상태를 확인할 수도 있습니다.
+> [!Note]
+> [Microsoft 365 관리 센터](https://admin.microsoft.com)에서 Intune 서비스 상태를 모니터링할 수 있습니다. 왼쪽 창에서 **서비스 상태**를 선택합니다. [Office 365 관리자 모바일 앱](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)을 사용하여 서비스 상태를 확인할 수도 있습니다.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Microsoft가 Intune 서비스에 관하여 제공하는 알림 유형
 

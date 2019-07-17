@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549416"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882857"
 ---
 # <a name="phase-2-migration-campaign"></a>2단계: 마이그레이션 캠페인
 
@@ -43,19 +43,19 @@ ms.locfileid: "67549416"
 
 - 각 주기의 지원 센터 로드 및 등록 성공 여부를 모니터링합니다. 다음 마이그레이션을 수행하기 전에 각 그룹에 대해 성공 기준을 평가할 수 있도록 일정에 시간 여유를 둡니다. 파일럿 배포에서는 다음을 확인해야 합니다.
 
-    - 등록 성공 및 실패 비율이 예상 범위 내에 있습니다.
+  - 등록 성공 및 실패 비율이 예상 범위 내에 있습니다.
 
-    - 사용자 생산성:
+  - 사용자 생산성:
 
-        - VPN, Wi-Fi, 메일, 인증 등의 회사 리소스가 작동되고 있습니다.
+    - VPN, Wi-Fi, 메일, 인증 등의 회사 리소스가 작동되고 있습니다.
 
-        - 프로비전된 앱에 액세스할 수 있습니다.
+    - 프로비전된 앱에 액세스할 수 있습니다.
 
-    - 데이터 보안:
+  - 데이터 보안:
 
-        - 준수 보고가 발생합니다.
+    - 준수 보고가 발생합니다.
 
-        - 모바일 앱 보호가 적용됩니다.
+    - 모바일 앱 보호가 적용됩니다.
 
 마이그레이션의 첫 번째 단계에 만족하는 경우 다음 단계에 대해 [마이그레이션 주기](migration-guide-cycle.md)를 반복합니다.
 

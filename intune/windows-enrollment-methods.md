@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: cbe533e6a219adf1984c656506ceb7a3b95556ec
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a0df4f32513eb37bd7396d8e6249f9c6e71a4e4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548662"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884175"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows 디바이스의 Intune 등록 방법
 
@@ -36,8 +36,8 @@ Intune에 디바이스를 등록하는 방법은 다음과 같은 두 가지가 
 사용자는 다음 중 아무 방법을 사용하여 Windows 디바이스를 직접 등록할 수 있습니다.
 
 - [BYOD(Bring Your Own Device)](https://docs.microsoft.com/intune-user-help/enroll-windows-10-device): 사용자가 디바이스 **설정**에서 **회사 및 학교** 계정에 연결하도록 선택하여 개인 소유의 디바이스를 등록합니다. 이 프로세스는 다음과 같습니다.
-    - 디바이스를 Azure Active Directory에 등록하여 이메일 같은 회사 리소스에 대한 액세스 권한을 얻습니다.
-    - 디바이스를 Intune에 개인 소유 디바이스(BYOD)로 등록합니다.
+  - 디바이스를 Azure Active Directory에 등록하여 이메일 같은 회사 리소스에 대한 액세스 권한을 얻습니다.
+  - 디바이스를 Intune에 개인 소유 디바이스(BYOD)로 등록합니다.
 관리자가 자동 등록을 구성한 경우(zure AD 프리미엄 구독에서 사용 가능) 사용자는 자격 증명을 한 번만 입력하면 됩니다. 구성하지 않은 경우 MDM 전용 록을 통해 별도로 등록하고 자격 증명을 다시 입력해야 합니다.  
 - **MDM 전용 등록**을 사용하면 사용자는 기존 작업 그룹, Active Directory 또는 Azure Active Directory 조인 PC를 Intune에 등록할 수 있습니다. 사용자는 기존 Windows PC의 설정에서 등록합니다. 이 방법은 디바이스를 Azure Active Directory에 등록하지 않으므로 권장되지 않습니다. 뿐만 아니라 조건부 액세스 같은 기능을 사용할 수 없습니다.
 - [Azure Active Directory(Azure AD) 조인](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - 디바이스를 Azure Active Directory에 등록하고 사용자가 자신의 Azure AD 자격 증명으로 Windows에 로그인 할 수 있도록 합니다. 자동 등록을 사용하면 디바이스가 Intune에 자동으로 등록됩니다. 자동 등록의 이점은 사용자가 1단계 프로세스만 수행하면 된다는 점입니다. 구성하지 않은 경우 MDM 전용 록을 통해 별도로 등록하고 자격 증명을 다시 입력해야 합니다. 사용자는 초기 Windows OOBE 과정 중에 또는 설정에서 이 방법으로 등록합니다. 디바이스는 Intune에서 회사 소유 디바이스로 표시됩니다.

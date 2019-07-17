@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3685df5865d22874b68a8bf42539d37fb486d7
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b51f310d370876058b8f1a1f872dd0b0e41bd42c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549255"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884853"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Intune과 Pradeo 통합
 
@@ -36,13 +36,13 @@ Intune과 Pradeo을 통합하는 과정을 시작하기 전에 다음 항목이 
 
 - 다음 권한을 부여할 Azure Active Directory 관리자 자격 증명
 
-    - 로그인 및 사용자 프로필 읽기
+  - 로그인 및 사용자 프로필 읽기
 
-    - 로그인한 사용자로 디렉터리에 액세스
+  - 로그인한 사용자로 디렉터리에 액세스
 
-    - 디렉터리 데이터 읽기
+  - 디렉터리 데이터 읽기
 
-    - Intune에 디바이스 정보 보내기
+  - Intune에 디바이스 정보 보내기
 
 - Pradeo Security 콘솔에 액세스하기 위한 관리자 자격 증명.
 

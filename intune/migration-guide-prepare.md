@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548371"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882836"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1단계: MDM(모바일 디바이스 관리)을 위한 Microsoft Intune 준비
 
@@ -51,8 +51,8 @@ Intune 설정의 세부 정보를 살펴보기 전에 조직의 모바일 디바
 
 - 어떤 사용 약관이 필요한가요?
 
-    - 법률 부서가 조기에 이 문제에 관여하도록 해야 합니다.
-    - 필요한 지역화는 무엇인가요?
+  - 법률 부서가 조기에 이 문제에 관여하도록 해야 합니다.
+  - 필요한 지역화는 무엇인가요?
 
 - 일반적으로 사용자가 기술 및 IT에 익숙한가요?
 
@@ -63,8 +63,8 @@ Intune 설정의 세부 정보를 살펴보기 전에 조직의 모바일 디바
 - 현재 디바이스 암호/PIN 코드 길이는 어떤가요?
 
 - 디바이스 기능을 사용하지 않도록 설정하거나 특정 디바이스 동작을 제한해야 하나요? 디바이스 구성 프로필을 사용하여 다음과 같은 다양한 플랫폼 관련 설정을 제어할 수 있습니다.
-    - 카메라 사용 안 함
-    - 단일 앱 모드 잠금<br/>
+  - 카메라 사용 안 함
+  - 단일 앱 모드 잠금<br/>
 
 - 어떤 종류의 인증을 지원해야 하나요? 인증서 기반 인증이 필요한 경우 어떤 종류의 인증서를 프로비전해야 하나요?
   - Intune에서는 등록된 디바이스에 대한 리소스 액세스 프로필을 사용하여 인증서를 프로비전할 수 있습니다.

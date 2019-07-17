@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528691"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884506"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>자습서: 관리되지 않는 디바이스에서 Exchange Online 메일 보호
 
@@ -32,10 +32,10 @@ ms.locfileid: "67528691"
 > * Outlook 앱이 Exchange Online에서 회사 메일에만 액세스하도록 허용하는 Azure AD(Azure Active Directory) 조건부 액세스 정책을 만듭니다. iOS 및 Android용 Outlook과 같은 최신 인증 클라이언트에는 MFA(다단계 인증)도 필요합니다.
 
 ## <a name="prerequisites"></a>전제 조건
-  - 이 자습서를 사용하려면 다음 구독이 있는 테스트 테넌트가 필요합니다.
-    - Azure Active Directory Premium([평가판](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Intune 구독([평가판](free-trial-sign-up.md))
-    - Exchange([평가판](https://go.microsoft.com/fwlink/p/?LinkID=510938))를 포함하는 Office 365 Business 구독
+- 이 자습서를 사용하려면 다음 구독이 있는 테스트 테넌트가 필요합니다.
+  - Azure Active Directory Premium([평가판](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Intune 구독([평가판](free-trial-sign-up.md))
+  - Exchange([평가판](https://go.microsoft.com/fwlink/p/?LinkID=510938))를 포함하는 Office 365 Business 구독
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 

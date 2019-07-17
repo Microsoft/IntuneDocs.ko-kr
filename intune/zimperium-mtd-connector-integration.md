@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e78c9034058a5f60f01056711465b28deca77d83
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3eb18c45f81e427f1d14ce77086e0d7684994e82
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572156"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884173"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Intune 및 Zimperium 통합
 
@@ -39,13 +39,13 @@ Intune과 Zimperium을 통합하는 과정을 시작하기 전에 다음의 구�
 
 - 다음 권한을 부여할 Azure Active Directory 전역 관리자의 관리자 자격 증명:
 
-    - 로그인 및 사용자 프로필 읽기
+  - 로그인 및 사용자 프로필 읽기
 
-    - 로그인한 사용자로 디렉터리에 액세스
+  - 로그인한 사용자로 디렉터리에 액세스
 
-    - 디렉터리 데이터 읽기
+  - 디렉터리 데이터 읽기
 
-    - Intune에 디바이스 정보 보내기
+  - Intune에 디바이스 정보 보내기
 
 - Zimperium MTD 콘솔에 액세스하기 위한 관리자 자격 증명
 

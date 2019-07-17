@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a0fbddf54939a494087a7da1220f51ec77b45e7b
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044336"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882462"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>자습서: Azure Portal에서 Microsoft Intune 연습
 
@@ -38,8 +38,8 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 ## <a name="prerequisites"></a>전제 조건
 Microsoft Intune을 설정하기 전에, 다음 요구 사항을 검토하세요.
 
-   - [지원되는 운영 체제 및 브라우저](supported-devices-browsers.md) 
-   - [네트워크 구성 요구 사항 및 대역폭](network-bandwidth-use.md)
+- [지원되는 운영 체제 및 브라우저](supported-devices-browsers.md) 
+- [네트워크 구성 요구 사항 및 대역폭](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune 무료 평가판 등록
 
@@ -58,7 +58,7 @@ Azure Portal에서 Intune을 더 잘 이해하려면 다음 단계를 따릅니�
 
     Azure에서 Intune 또는 다른 서비스를 열 때 서비스가 창에 표시됩니다. Intune에서 사용할 수 있는 첫 번째 워크로드 중 일부에는 **디바이스**, **클라이언트 앱**, **사용자** 및 **그룹**이 포함됩니다. 워크로드는 서비스의 하위 영역일 뿐입니다. 워크로드를 선택하면 해당 창이 전체 페이지로 열립니다. 기타 창이 열고 닫혀 이전 창을 표시하는 경우 해당 창의 오른쪽에서 슬라이드 아웃됩니다. 창을 블레이드라고도 합니다. 
 
-    기본적으로 Intune을 여는 경우 **개요** 창이 표시됩니다. 이 창에서는 앱 설치 상태뿐만 아니라 디바이스 할당 및 규정 준수 상태의 전체적인 시각적 스냅숏을 제공합니다.
+    기본적으로 Intune을 여는 경우 **개요** 창이 표시됩니다. 이 창에서는 앱 설치 상태뿐만 아니라 디바이스 할당 및 규정 준수 상태의 전체적인 시각적 스냅샷을 제공합니다.
 
 2. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록**을 선택하여 Intune 테넌트에 등록된 디바이스의 세부 정보를 표시합니다. 새 Intune 테넌트로 시작하는 경우 아직 등록된 디바이스가 없습니다. 
 

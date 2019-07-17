@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: f2548e0ff3d4406f64d2091001c38056fe585896
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546722"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883542"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>디바이스 등록 관리자 계정을 사용하여 Intune에서 디바이스 등록
 
@@ -32,13 +32,13 @@ DEM(디바이스 등록 관리자) 계정을 사용하여 단일 Azure Active Di
 
 DEM 사용자 계정 및 DEM 사용자 계정을 사용하여 등록된 디바이스에는 다음과 같은 제한 사항이 있습니다.
 
-  - DEM 계정 사용자에게 Intune 라이선스가 할당되어야 합니다.
-  - 회사 포털에서 초기화를 수행할 수 없습니다. Azure Portal의 Intune에서 DEM 사용자 계정으로 등록된 디바이스를 초기화할 수 있습니다.
-  - 회사 포털 앱 또는 웹 사이트에 로컬 디바이스만 표시됩니다.
-  - DEM 사용자 계정은 앱 관리에 대한 사용자별 Apple ID 요구 사항으로 인해 Apple VPP 사용자 라이선스를 사용하여 Apple VPP(Volume Purchase Program) 앱을 사용할 수 없습니다.
-  - Apple VPP 디바이스 라이선스가 있는 경우 디바이스는 VPP 앱을 설치할 수 있습니다.
-  - Windows 10 1803+를 제외하고 디바이스에 대한 조건부 액세스가 차단됨
-  - DEM 계정으로 등록된 모든 디바이스는 Intune에서 관리할 수 있도록 적절한 라이선스가 부여되어야 합니다. 라이선스는 Intune 사용자 라이선스 또는 Intune 디바이스 라이선스일 수 있습니다.
+- DEM 계정 사용자에게 Intune 라이선스가 할당되어야 합니다.
+- 회사 포털에서 초기화를 수행할 수 없습니다. Azure Portal의 Intune에서 DEM 사용자 계정으로 등록된 디바이스를 초기화할 수 있습니다.
+- 회사 포털 앱 또는 웹 사이트에 로컬 디바이스만 표시됩니다.
+- DEM 사용자 계정은 앱 관리에 대한 사용자별 Apple ID 요구 사항으로 인해 Apple VPP 사용자 라이선스를 사용하여 Apple VPP(Volume Purchase Program) 앱을 사용할 수 없습니다.
+- Apple VPP 디바이스 라이선스가 있는 경우 디바이스는 VPP 앱을 설치할 수 있습니다.
+- Windows 10 1803+를 제외하고 디바이스에 대한 조건부 액세스가 차단됨
+- DEM 계정으로 등록된 모든 디바이스는 Intune에서 관리할 수 있도록 적절한 라이선스가 부여되어야 합니다. 라이선스는 Intune 사용자 라이선스 또는 Intune 디바이스 라이선스일 수 있습니다.
 
 
 

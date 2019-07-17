@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 55d4e327d99c8987e6fdc0dea0ac046dd0dc167e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547302"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883803"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Intune과 Better Mobile Threat Defense 커넥터 사용
 
@@ -93,7 +93,7 @@ Intune 디바이스 준수 정책에는 Better Mobile 위험 평가에 기반을
 
 - Better Mobile Threat Defense 구독
 
-    - 자세한 내용은 [Better Mobile 웹 사이트](https://www.better.mobi/)를 참조하세요.
+  - 자세한 내용은 [Better Mobile 웹 사이트](https://www.better.mobi/)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

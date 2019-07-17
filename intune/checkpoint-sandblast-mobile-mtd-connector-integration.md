@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49a6e8e625a08c9ad039d3106ff5d5c7001c2cab
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: ae9bd6d6f56ec85a993ffcb2f3c1af9897a2a87f
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547101"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883650"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Intune과 Check Point SandBlast Mobile 통합
 
@@ -37,13 +37,13 @@ Intune과 Check Point SandBlast Mobile을 통합하는 과정을 시작하기 �
 
 - 다음 권한을 부여할 Azure Active Directory 관리자 자격 증명
 
-    - 로그인 및 사용자 프로필 읽기
+  - 로그인 및 사용자 프로필 읽기
 
-    - 로그인한 사용자로 디렉터리에 액세스
+  - 로그인한 사용자로 디렉터리에 액세스
 
-    - 디렉터리 데이터 읽기
+  - 디렉터리 데이터 읽기
 
-    - Intune에 디바이스 정보 보내기
+  - Intune에 디바이스 정보 보내기
 
 - Check Point SandBlast Mobile MTD 콘솔에 액세스할 수 있는 관리자 자격 증명
 

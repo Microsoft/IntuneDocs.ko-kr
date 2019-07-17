@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ec03471e4ff3940f09fe4a9bef53b86e32bafa8
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 8c640eb7ffccf3b522c1f9049b97eff499b346ff
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713336"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883223"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>빠른 시작: Microsoft Intune 평가판 체험 
 
@@ -33,8 +33,8 @@ Intune은 Microsoft Azure portal을 통해 관리되는 안전한 클라우드 �
 ## <a name="prerequisites"></a>전제 조건
 Microsoft Intune을 설정하기 전에, 다음 요구 사항을 검토하세요.
 
-   - [지원되는 운영 체제 및 브라우저](supported-devices-browsers.md) 
-   - [네트워크 구성 요구 사항 및 대역폭](network-bandwidth-use.md)
+- [지원되는 운영 체제 및 브라우저](supported-devices-browsers.md) 
+- [네트워크 구성 요구 사항 및 대역폭](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune 무료 평가판 등록
 
