@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
+title: Intune을 사용하여 iOS 및 Android용 Microsoft Edge 관리
 titleSuffix: ''
 description: Microsoft Edge와 함께 Intune 앱 보호 정책을 사용하여 항상 보호 기능을 갖춘 회사 웹 사이트에 액세스합니다.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 147547577615c6e74a9c5b3dd8b200ba387bad79
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
+ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648459"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68287227"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -157,7 +157,7 @@ Microsoft Edge와 [Azure AD 애플리케이션 프록시](https://docs.microsoft
 ### <a name="before-you-start"></a>시작하기 전에
 
 - Azure AD 애플리케이션 프록시를 통해 내부 애플리케이션을 설정합니다.
-    - 애플리케이션 프록시를 구성하고 애플리케이션을 게시하려면 [설정 설명서](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)를 참조하세요.
+  - 애플리케이션 프록시를 구성하고 애플리케이션을 게시하려면 [설정 설명서](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)를 참조하세요.
 - Microsoft Edge 앱에 [Intune 앱 보호 정책](app-protection-policy.md)이 할당되어 있어야 합니다.
 
 > [!NOTE]
@@ -228,34 +228,34 @@ Microsoft Edge에 대해 허용되거나 차단된 사이트 목록을 구성하
 - 다음과 같이 허용되는 패턴 목록의 규칙에 따라 와일드카드 기호(\*)를 사용할 수 있습니다.
 - 와일드카드는 호스트 이름의 전체 구성 요소(마침표로 구분됨) 또는 경로의 전체 부분(슬래시로 구분됨)만 일치할 수 있습니다. 예를 들어 `http://*contoso.com`은 지원되지 **않습니다**.
 - 주소에 포트 번호를 지정할 수 있습니다. 포트 번호를 지정하지 않으면 다음 값이 사용됩니다.
-    - http의 경우 포트 80
-    - https의 경우 포트 443
+  - http의 경우 포트 80
+  - https의 경우 포트 443
 - 포트 번호에 대한 와일드카드 사용은 지원되지 **않습니다**. 예를 들어 `http://www.contoso.com:*` 및 `http://www.contoso.com:*/`은 지원되지 않습니다. 
 
     |    URL    |    세부 정보    |    일치하는 항목    |    일치하지 않는 항목    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    단일 페이지와 일치    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    단일 페이지와 일치    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
-    |    `http://www.contoso.com/&#42;`   |    `www.contoso.com`으로 시작하는 모든 URL과 일치    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    `contoso.com` 아래의 모든 하위 도메인과 일치    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
-    |    `http://www.contoso.com/images`    |    단일 폴더와 일치    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
+    |    `http://www.contoso.com/*;`   |    `www.contoso.com`으로 시작하는 모든 URL과 일치    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
+    |    `http://*.contoso.com/*`    |    `contoso.com` 아래의 모든 하위 도메인과 일치    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    `contoso.com/`으로 끝나는 모든 하위 도메인과 일치    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    `http://www.contoso.com/images`    |    단일 폴더와 일치    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    포트 번호를 사용하여 단일 페이지와 일치    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    안전한 단일 페이지와 일치    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    단일 폴더 및 모든 하위 폴더와 일치    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
   
 - 다음은 지정할 수 없는 몇몇 입력의 예입니다.
-    - `*.com`
-    - `*.contoso/*`
-    - `www.contoso.com/*images`
-    - `www.contoso.com/*images*pigs`
-    - `www.contoso.com/page*`
-    - IP 주소
-    - `https://*`
-    - `http://*`
-    - `https://*contoso.com`
-    - `http://www.contoso.com:*`
-    - `http://www.contoso.com: /*`
-  
+  - `*.com`
+  - `*.contoso/*`
+  - `www.contoso.com/*images`
+  - `www.contoso.com/*images*pigs`
+  - `www.contoso.com/page*`
+  - IP 주소
+  - `https://*`
+  - `http://*`
+  - `https://*contoso.com`
+  - `http://www.contoso.com:*`
+  - `http://www.contoso.com: /*`
+
 ## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>사용자가 차단된 사이트에 액세스하려고 할 때 동작 정의
 
 Microsoft Edge에 기본 제공된 이중 ID 모델을 사용하면 Intune Managed Browser보다 더 유연한 환경을 최종 사용자에게 제공할 수 있습니다. 사용자가 Microsoft Edge에서 차단된 사이트에 연결하는 경우 회사 컨텍스트가 아니라 프라이빗 컨텍스트에서 링크를 열라는 메시지를 사용자에게 표시할 수 있습니다. 이렇게 하면 사용자도 보호하고 회사 리소스를 안전하게 유지할 수 있습니다. 예를 들어 사용자가 Outlook 통해 뉴스 기사의 링크를 받는 경우 프라이빗 컨텍스트 또는 InPrivate 탭에서 링크를 열 수 있습니다. 회사 컨텍스트에서는 뉴스 웹 사이트를 허용하지 않습니다. 기본적으로 이러한 전환이 허용됩니다.

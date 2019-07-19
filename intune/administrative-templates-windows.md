@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,22 +15,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9309b110d37795f840e10f22b71b06507aea4c62
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 0bfad3feed6daef1930c235bec9c25e809da46c5
+ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373732"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67842763"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 템플릿을 사용하여 Microsoft Intune에서 그룹 정책 설정 구성
 
 조직에서 디바이스를 관리하는 경우 다른 디바이스 그룹에 적용되는 설정 그룹을 만들려고 합니다. 예를 들어 여러 디바이스 그룹이 있습니다. GroupA의 경우 특정 설정 세트를 할당하려고 합니다. GroupB의 경우 다른 설정 세트를 할당하려고 합니다. 또한 구성할 수 있는 설정의 간단한 보기를 원합니다.
 
-Microsoft Intune에서 **관리 템플릿**을 사용하여 이 작업을 완료할 수 있습니다. 관리 템플릿은 Internet Explorer, Microsoft Office 프로그램, 원격 데스크톱의 기능, OneDrive에 대한 액세스를 제어하고, 그림 암호 또는 PIN을 사용하여 로그인하는 등 수백 가지 설정을 포함합니다. 이러한 템플릿은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사하며, XML을 사용하는 [ADMX 백업 설정](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)(다른 문서 사이트 열기)입니다. 하지만 Intune의 템플릿은 100% 클라우드 기반입니다. 설정을 구성하고, 원하는 설정을 찾는 더욱 단순하고 간단한 방법을 제공합니다.
+Microsoft Intune에서 **관리 템플릿**을 사용하여 이 작업을 완료할 수 있습니다. 관리 템플릿은 Internet Explorer, Microsoft Office 프로그램, 원격 데스크톱, OneDrive, 암호 및 PIN 등에 대한 기능을 제어하는 수많은 설정을 포함합니다. 이러한 설정을 사용하여 그룹 관리자는 클라우드를 통해 그룹 정책을 관리할 수 있습니다.
+
+Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합니다. 이러한 설정은 Windows에 기본적으로 제공되며, XML을 사용하는 [ADMX 지원 설정](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)(다른 Microsoft 사이트 열기)입니다. Office 설정은 ADMX에서 수집되며 [Office 관리 템플릿 파일](https://www.microsoft.com/download/details.aspx?id=49030)의 ADMX 설정을 사용합니다. 그러나 Intune 템플릿은 100% 클라우드 기반입니다. 설정을 구성하고, 원하는 설정을 찾는 단순하고 간단한 방법을 제공합니다.
 
 **관리 템플릿**은 Intune에 기본 제공되고, OMA-URI 사용을 포함한 사용자 지정이 필요하지 않습니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 원스톱 상점으로 이러한 템플릿 설정을 사용하여 Windows 10 디바이스를 관리합니다.
 
-이 문서에서는 Windows 10 디바이스에 대한 템플릿을 만드는 단계를 나열하고, Microsoft Intune에서 사용 가능한 모든 설정을 필터링하는 방법을 보여줍니다. 템플릿을 만들 때 디바이스 구성 프로필을 만듭니다. 그런 다음, 조직의 Windows 10 디바이스에 이 프로필을 할당하거나 배포할 수 있습니다.
+이 문서에서는 Windows 10 디바이스에 대한 템플릿을 만드는 단계를 나열하고, Intune에서 사용 가능한 모든 설정을 필터링하는 방법을 보여줍니다. 템플릿을 만들 때 디바이스 구성 프로필을 만듭니다. 그런 다음, 조직의 Windows 10 디바이스에 이 프로필을 할당하거나 배포할 수 있습니다.
+
+## <a name="before-you-begin"></a>시작하기 전에
+
+- 이러한 설정 중 일부는 Windows 10 버전 1703(RS2)부터 사용할 수 있습니다. 최상의 환경을 위해 Windows 10 Enterprise 버전 1903(19H1) 이상을 사용하는 것이 좋습니다.
+
+- Windows 설정에서는 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)(다른 Microsoft 사이트 열기)를 사용합니다. CSP는 Home, Professional, Enterprise 등과 같은 다양한 Windows 버전에서 작동합니다. CSP가 특정 버전에서 작동하는지 확인하려면 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)(다른 Microsoft 사이트 열기)로 이동합니다.
 
 ## <a name="create-a-template"></a>템플릿 만들기
 
@@ -41,14 +49,21 @@ Microsoft Intune에서 **관리 템플릿**을 사용하여 이 작업을 완료
     - **이름**: 프로필의 이름을 입력합니다.
     - **설명**: 프로필에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
     - **플랫폼**: **Windows 10 이상**을 선택합니다.
-    - **프로필 유형**: **관리 템플릿(미리 보기)** 을 선택합니다.
+    - **프로필 유형**: **관리 템플릿**을 선택합니다.
 
 4. **만들기**를 선택합니다. 새 창에서 **설정**을 선택합니다. 모든 설정이 나열되고, 화살표 앞과 뒤를 사용하여 자세한 설정을 볼 수 있습니다.
 
-    ![설정의 샘플 목록을 보고 이전 및 다음 단추를 사용합니다.](./media/administrative-templates-windows/sample-settings-list-next-page.png)
+    ![설정의 샘플 목록을 보고 이전 및 다음 단추를 사용합니다.](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
 
-5. 설정을 선택합니다. 예를 들어 **파일 다운로드 허용**을 선택합니다. 설정에 대한 자세한 설명이 표시됩니다. **사용**, **사용 안 함**을 선택하거나 **구성되지 않음**(기본값)으로 설정을 그대로 둡니다. 자세한 설명은 **사용**, **사용 안 함** 또는 **구성되지 않음**을 선택하는 경우 발생하는 작업을 설명합니다.
-6. **확인**을 선택하여 변경 내용을 저장합니다.
+    > [!TIP]
+    > Intune의 Windows 설정은 로컬 그룹 정책 편집기(`gpedit`)에 표시되는 온-프레미스 그룹 정책 경로와 관련됩니다.
+
+5. 기본적으로 드롭다운 목록에는 **모든 제품**이 표시됩니다. 이 목록에서 **Windows** 설정만 표시하거나 **Office** 설정만 표시하도록 설정을 필터링할 수도 있습니다.
+
+    ![Intune의 관리 템플릿에서 모든 Windows 또는 모든 Office 설정을 표시하도록 목록을 필터링합니다.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+
+6. 설정을 선택합니다. 예를 들어 **Office**에 대해 필터링하고 **제한된 찾아보기 활성화**를 선택합니다. 설정에 대한 자세한 설명이 표시됩니다. **사용**이나 **사용 안 함**을 선택하거나 설정을 **구성되지 않음**(기본값) 상태로 둡니다. 자세한 설명은 **사용**, **사용 안 함** 또는 **구성되지 않음**을 선택하는 경우 발생하는 작업을 설명합니다.
+7. **확인**을 선택하여 변경 내용을 저장합니다.
 
 설정의 목록을 계속해서 진행하고, 사용자 환경에서 원하는 설정을 구성합니다. 몇 가지 예제는 다음과 같습니다.
 
@@ -63,17 +78,15 @@ Microsoft Intune에서 **관리 템플릿**을 사용하여 이 작업을 완료
 
 이러한 템플릿에서 사용할 수 있는 수백 가지 설정이 있습니다. 특정 설정을 쉽게 찾으려면 기본 제공 기능을 사용합니다.
 
-- 템플릿에서 **설정**, **상태** 또는 **경로** 열을 선택하여 목록을 정렬합니다. 예를 들어 **경로** 열을 선택하여 `Microsoft Excel` 경로의 모든 설정을 봅니다.
+- 템플릿에서 **설정**, **상태**, **설정 유형** 또는 **경로** 열을 선택하여 목록을 정렬합니다. 예를 들어 **경로** 열을 선택하여 `Microsoft Excel` 경로의 모든 설정을 봅니다.
 
-  ![경로를 클릭하여 사전순으로 정렬](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  ![Intune의 관리 템플릿에서 그룹 정책 또는 ADMX 경로를 기준으로 그룹화한 모든 설정을 표시하려면 경로를 클릭합니다.](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- 템플릿에서 **검색** 상자를 사용하여 특정 설정을 찾습니다. 예를 들어 `copy`을 검색합니다. `copy`와 함께 모든 설정이 표시됩니다.
+- 템플릿에서 **검색** 상자를 사용하여 특정 설정을 찾습니다. 제목 또는 경로를 설정하여 검색할 수 있습니다. 예를 들어 `copy`을 검색합니다. `copy`와 함께 모든 설정이 표시됩니다.
 
-  ![경로를 클릭하여 사전순으로 정렬](./media/administrative-templates-windows/search-copy-settings.png)
+  ![copy를 검색하면 Intune의 관리 템플릿의 모든 Windows 및 Office 설정이 표시됩니다.](./media/administrative-templates-windows/search-copy-settings.png) 
 
   다른 예제에서 `microsoft word`를 검색합니다. Microsoft Word 프로그램에 대해 설정할 수 있는 모든 설정이 표시됩니다. `explorer`를 검색하여 템플릿에 추가할 수 있는 모든 Internet Explorer 설정을 봅니다.
-
-이 기능은 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)(다른 문서 사이트 열기)를 사용합니다. CSP는 Home, Professional, Enterprise 등과 같은 다양한 Windows 버전에서 작동합니다. CSP가 특정 버전에서 작동하는지 확인하려면 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)(다른 Docs 사이트 열기)로 이동합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

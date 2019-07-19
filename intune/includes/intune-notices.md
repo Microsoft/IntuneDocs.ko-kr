@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744308"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67812440"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다. 
 
@@ -65,10 +65,26 @@ Intune App SDK 또는 App Wrapping 통합을 사용하면 데이터 암호화를
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
 Microsoft, 타사 및 LOB(기간 업무) 앱을 확인합니다. Intune 앱으로 보호되는 모든 애플리케이션이 SDK 버전 8.1.1 이상을 사용하고 있는지 확인해야 합니다.
 
-- LOB 앱의 경우: SDK 버전 8.1.1 이상과 통합된 앱을 다시 게시해야 할 수도 있습니다. 최신 SDK 버전을 사용하는 것이 좋습니다. 앱 보호 정책용 LOB 앱을 준비하는 방법에 대한 정보는 [앱 보호 정책용 기간 업무 앱 준비](../apps-prepare-mobile-application-management.md)를 참조하세요.
+- LOB 앱의 경우: SDK 버전 8.1.1 이상과 통합된 앱을 다시 게시해야 할 수도 있습니다. 최신 SDK 버전을 사용하는 것이 좋습니다. 앱 보호 정책용 LOB 앱을 준비하는 방법에 대한 내용은 [앱 보호 정책용 기간 업무 앱 준비](../apps-prepare-mobile-application-management.md)를 참조하세요.
 - Microsoft/타사 앱의 경우: 이러한 앱의 최신 버전을 사용자에게 배포하고 있는지 확인합니다.
 
 SDK에 대한 이 변경 내용을 포함하려면 설명서 또는 개발자 지침도 업데이트해야 합니다.
 
 #### <a name="additional-information"></a>추가 정보
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+
+### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>변경 계획: Intune의 새로운 Windows 업데이트 설정 <!-- 4464404 -->
+Intune 서비스의 8월 릴리스 또는 1908부터, “사용자가 다시 시작할 수 있도록 허용(개입형 다시 시작)” 대신, 구성할 수 있는 새로운 "최종 기한 설정"이 추가됩니다. 1909 또는 9월 업데이트의 UI에서는 개입형 다시 시작 설정을 사용하지 않도록 설정하고, 10월 말에 콘솔에서 완전히 제거할 예정입니다. 
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+작업 환경에서 Windows 10 장치를 관리하는 경우 
+- 8월 Intune 업데이트 또는 1908을 사용하면 이전의 개입형 다시 시작 설정 외에 새 최종 기한 설정이 콘솔에 표시됩니다.
+- 이러한 이전 설정과 새 설정이 모두 구성된 경우 최종 기한 설정 값이 개입형 다시 시작 설정 값을 재정의합니다.
+- 1910 업데이트의 콘솔에는 “사용자가 다시 시작할 수 있도록 허용(개입형 다시 시작)” 옵션 대신 최종 기한 설정이 표시됩니다.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
+최종 기한 설정을 원하는 값으로 구성하여 1908부터 사용할 수 있습니다. 준비가 끝나면 개입형 다시 시작 설정을 “구성되지 않음”으로 설정하여 10월에는 콘솔에서 이러한 설정을 제거할 수 있게 준비할 수 있습니다.
+
+필요한 경우 설명서 및 모든 자동화 스크립트를 업데이트합니다. 
+
+개입형 다시 시작 설정을 제거하기 전에 업데이트된 정보를 제공하고 메시지 센터에 미리 알림을 게시할 것입니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
+ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045298"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270290"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune을 사용하여 Microsoft Defender ATP가 식별한 취약성 수정  
 
@@ -32,7 +32,7 @@ Intune을 Microsoft Defender ATP(Advanced Threat Protection)와 통합하면 ATP
 
 Intune을 Microsoft Defender Advanced Threat Protection에 연결한 후 ATP는 관리형 디바이스에서 위협 및 취약성 정보를 수신합니다.  
 
-Windows Defender Security Center 콘솔에서 ATP 보안 관리자는 엔드포인트 취약성에 대한 데이터를 검토합니다. 그런 다음, 관리자는 한 번 클릭을 사용하여 수정을 위해 취약한 디바이스에 플래그를 지정하는 보안 작업을 만듭니다. 보안 작업은 Intune 관리자가 볼 수 있는 Intune 콘솔에 즉시 전달됩니다. 보안 작업은 취약성 유형, 우선 순위, 상태 및 취약성을 수정하기 위해 수행할 단계를 나타냅니다. Intune 관리자는 작업을 허용 또는 거부하도록 선택합니다.  
+Microsoft Defender Security Center 콘솔에서 ATP 보안 관리자는 엔드포인트 취약성에 대한 데이터를 검토합니다. 그런 다음, 관리자는 한 번 클릭을 사용하여 수정을 위해 취약한 디바이스에 플래그를 지정하는 보안 작업을 만듭니다. 보안 작업은 Intune 관리자가 볼 수 있는 Intune 콘솔에 즉시 전달됩니다. 보안 작업은 취약성 유형, 우선 순위, 상태 및 취약성을 수정하기 위해 수행할 단계를 나타냅니다. Intune 관리자는 작업을 허용 또는 거부하도록 선택합니다.  
 
 작업을 수락되면 Intune 관리자는 보안 작업의 일부로 제공되는 지침에 따라 Intune을 통해 취약성을 수정합니다.  
 
@@ -67,7 +67,7 @@ Windows Defender Security Center 콘솔에서 ATP 보안 관리자는 엔드포�
 **ATP에 대한 Intune 구성**:  
 - Microsoft Defender ATP를 사용하여 서비스 간 연결을 구성합니다.  
 - ATP를 통해 위험을 평가할 디바이스에 **Microsoft Defender ATP(Windows 10 데스크톱)** 의 프로필 유형을 사용하는 디바이스 준수 정책을 배포합니다.
-  ATP를 사용하도록 Intune을 설정하는 방법에 대한 자세한 내용은 [Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)을 참조하세요.  
+  ATP를 사용하도록 Intune을 설정하는 방법에 대한 자세한 내용은 [Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune)을 참조하세요.  
 
 ## <a name="work-with-security-tasks"></a>보안 작업 사용  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
+ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713269"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67851474"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -70,9 +70,9 @@ Intune 콘솔에서 사용할 수 있는 보안 기준과 관련 정보를 확�
   - [2019년 봄(19H1) MDM 보안 기준](security-baseline-settings-mdm.md)
   - [미리 보기: 2018년 10월 MDM 보안 기준](security-baseline-settings-mdm-archive.md)
 
-- **Windows Defender ATP 기준**  
+- **Microsoft Defender ATP 기준**  
   ‘(이 기준을 사용하려면 환경이 [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) 사용에 대한 필수 조건을 충족해야 합니다.)’ 
-  - [미리 보기: Windows Defender ATP 기준](security-baseline-settings-defender-atp.md)  
+  - [미리 보기: Microsoft Defender ATP 기준](security-baseline-settings-defender-atp.md)  
 
 이전에 미리 보기 템플릿을 기반으로 만든 프로필은 새 프로필을 만드는 데 해당 미리 보기 템플릿을 사용할 수 없더라도 계속 사용하거나 편집할 수 있습니다. 
 
@@ -200,6 +200,6 @@ Microsoft 보안 팀은 지난 수년 동안 Windows 개발자 및 보안 커뮤
 ## <a name="next-steps"></a>다음 단계
 - 사용할 수 있는 기준의 최신 버전에서 설정을 확인합니다.  
   - [MDM 보안 기준](security-baseline-settings-mdm.md)  
-  - [Windows Defender ATP 기준](security-baseline-settings-defender-atp.md)  
+  - [Microsoft Defender ATP 기준](security-baseline-settings-defender-atp.md)  
 
 - 상태를 확인하고 [기준선 및 프로필](security-baselines-monitor.md)을 모니터링합니다.
