@@ -12,7 +12,7 @@
 ### [Android 디바이스를 등록하는 이유](why-enroll-android-device.md)
 ### 디바이스 등록
 #### [Android 디바이스 등록](enroll-device-android-company-portal.md)  
-#### [Android 회사 프로필에 등록](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Android 회사 프로필에 등록](enroll-device-android-work-profile.md)
 #### [Microsoft Intune 앱에 등록](enroll-device-android-microsoft-intune-app.md)
 ### [디바이스에서 관리되는 앱 사용](use-managed-apps-on-your-device-android.md)
 ### [디바이스 암호화](encrypt-your-device-android.md)
