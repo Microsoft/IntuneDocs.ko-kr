@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 12e3b111572758ca8d77406287134df8cdf7e027
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546628"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883958"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>“사용 약관”을 거부한 경우 관리에서 디바이스 제거
 
@@ -49,8 +49,8 @@ Intune에서 디바이스를 제거하고 회사 포털 앱을 제거하려면:
 
 Android용 회사 포털 앱이 디바이스에 저장하는 모든 데이터를 제거하려면:
 
-  - 애플리케이션에서 앱 데이터 지우기 -&gt; 앱 클릭 -&gt; "데이터 지우기" 단추 클릭
-  - '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal' 폴더 삭제
+- 애플리케이션에서 앱 데이터 지우기 -&gt; 앱 클릭 -&gt; "데이터 지우기" 단추 클릭
+- '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal' 폴더 삭제
 
 
 여전히 도움이 필요하세요? 회사 지원팀에 문의하거나(연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980) 확인) <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 팀</a>으로 메일을 보내세요.

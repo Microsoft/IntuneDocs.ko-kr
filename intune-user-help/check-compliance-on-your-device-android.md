@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
+ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506857"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230081"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Android 디바이스에 대한 규정 준수 확인
 
@@ -31,6 +31,6 @@ ms.locfileid: "66506857"
 
 1. 디바이스에서 Android용 회사 포털 앱을 엽니다.  
 
-2. **디바이스 설정 확인**을 탭합니다.  
+2. **디바이스 설정 확인**을 탭합니다.   
 
 분실하거나 도난당한 디바이스를 다시 설정할 수 없는 경우에는 회사 지원팀에 다시 설정하도록 요청하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.  

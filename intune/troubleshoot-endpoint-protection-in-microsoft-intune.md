@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402637"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353347"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune에서 Endpoint Protection 문제와 가능한 해결 방법
 
@@ -34,7 +34,7 @@ ms.locfileid: "66402637"
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>일반적인 Intune 오류와 가능한 해결 방법
 
-#### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection 엔진을 사용할 수 없음
+### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection 엔진을 사용할 수 없음
 
 **잠재적 원인**: Intune Endpoint Protection 엔진이 손상되었거나 삭제되었습니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "66402637"
 - [제어판] > [프로그램]에서 **Microsoft Intune Endpoint Protection 에이전트**를 선택합니다. 애플리케이션을 제거합니다.
 - 다음 업데이트 동기화 중에 Microsoft Online Management 업데이트 관리자에서 누락된 프로그램을 검색하고 예약된 설치 시간에 다시 설치합니다.
 
-#### <a name="features-are-disabled"></a>기능을 사용할 수 않음
+### <a name="features-are-disabled"></a>기능을 사용할 수 않음
 
 일부 기능을 사용할 수 없다는 메시지가 표시될 수 있습니다. 이러한 메시지는 관리자가 구성 프로필을 사용하여 Intune Endpoint Protection 또는 Windows Defender를 사용하지 않도록 설정한 경우에 발생할 수 있습니다. 또는 디바이스에서 최종 사용자가 사용하지 않도록 설정했습니다. 가능한 메시지:
 
@@ -63,19 +63,19 @@ ms.locfileid: "66402637"
 - [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)
 - [최종 사용자: 실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)
 
-#### <a name="malware-definitions-out-of-date"></a>맬웨어 정의가 만료됨
+### <a name="malware-definitions-out-of-date"></a>맬웨어 정의가 만료됨
 
 이 상태는 디바이스의 맬웨어 정의가 14일 이상 만료된 상태임을 보여 줍니다. 예를 들어 디바이스가 인터넷과 연결이 끊겼거나 맬웨어 정의가 만료된 경우 이 메시지가 표시될 수 있습니다.
 
 **가능한 해결 방법**: 맬웨어 정의가 만료된 경우 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)을 사용하여 정의를 업데이트합니다.
 
-#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>전체 검색 지연 또는 빠른 검색 지연
+### <a name="full-scan-overdue-or-quick-scan-overdue"></a>전체 검색 지연 또는 빠른 검색 지연
 
 전체 검색 또는 빠른 검색이 14일 동안 완료되지 않습니다. 이 시나리오는 전체 검색 중 디바이스를 다시 시작하는 경우에 발생할 수 있습니다.
 
 **가능한 해결 방법**: 검사가 지연되는 경우 일회성 검사를 실행하거나 되풀이 검사를 예약할 수 있습니다. [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)을 참조하세요.
 
-#### <a name="another-endpoint-protection-application-running"></a>다른 엔드포인트 보호 애플리케이션이 실행되고 있음
+### <a name="another-endpoint-protection-application-running"></a>다른 엔드포인트 보호 애플리케이션이 실행되고 있음
 
 다른 엔드포인트 보호 애플리케이션이 실행되고 있으며 디바이스가 정상 상태입니다.
 

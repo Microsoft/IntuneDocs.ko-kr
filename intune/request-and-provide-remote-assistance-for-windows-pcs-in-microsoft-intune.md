@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 41b6109d956272d6368ae294788a8bd54f2fb8f8
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549146"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353491"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows PC 원격 지원 요청 및 제공
 
@@ -87,6 +87,6 @@ Intune은 [TeamViewer](https://www.teamviewer.com) 소프트웨어(별매)를 �
 
 4. **작업 상태** 대화 상자에서 현재 원격 작업, 작업 상태, 디바이스 이름 및 보고된 모든 오류를 검토할 수 있습니다.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 [Intune 소프트웨어 클라이언트를 사용하는 일반 Windows PC 관리 작업](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

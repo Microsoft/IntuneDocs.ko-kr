@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2b9d17426bf3dde3fd1684c12113adf0c5095d5f
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547979"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353296"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Windows PC에 대한 하드웨어 및 소프트웨어 인벤토리 보기
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. 모바일 장치로 등록 된 Windows Pc에 대 한 인벤토리를 보려는 경우, 참조 [Intune에서 장치 세부 정보를 보려면](device-inventory.md)합니다.
+> 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. 모바일 장치로 등록 된 Windows Pc의 인벤토리를 보려는 경우 [Intune에서 장치 세부 정보 보기](device-inventory.md)를 참조 하세요.
 
 Intune은 Intune 소프트웨어 클라이언트를 사용하여 PC로 관리하는 데스크톱의 하드웨어 및 소프트웨어에 대한 자세한 정보를 수집합니다. 다음 절차의 정보를 통해 다음을 만드는 방법에 대해 알아볼 수 있습니다.
 
@@ -71,6 +71,6 @@ Intune은 Intune 소프트웨어 클라이언트를 사용하여 PC로 관리하
 
     **작업 상태** 대화 상자에는 현재 원격 작업, 작업 상태, 디바이스 이름 및 보고된 모든 오류 목록이 표시되고, 문제 해결 정보 링크도 제공됩니다.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 [Intune 소프트웨어 클라이언트를 사용하는 일반 Windows PC 관리 작업](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

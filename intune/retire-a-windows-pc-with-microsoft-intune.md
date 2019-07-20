@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b6326d30650aa62777ac9ce9c70394904b678f3
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: fefb8feee7f308fca3d3455487aae5f2802d9c5d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549171"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353409"
 ---
 # <a name="retire-a-windows-pc"></a>Windows PC 사용 중지
 
@@ -59,6 +59,6 @@ PC 사용 중지하는 경우:
 
     Endpoint Protection 클라이언트를 제거하지 못한 경우 자세한 내용은 [Endpoint Protection 문제 해결](/intune/troubleshoot-endpoint-protection-in-microsoft-intune)을 참조하세요.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 [Intune 소프트웨어 클라이언트를 사용하는 일반 Windows PC 관리 작업](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: eb9f7eef1f7f0e4a712bdf3e8a3706374ac002a8
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548816"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353323"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>정책을 사용하여 Windows PC 관리 간소화
 
@@ -32,7 +32,7 @@ PC에서 Intune 소프트웨어 클라이언트를 실행하여 Windows 데스�
 
 ![Windows PC의 정책 템플릿](media/pc_policy_template.png)
 
-### <a name="manage-the-microsoft-intune-center"></a>Microsoft Intune Center 관리
+## <a name="manage-the-microsoft-intune-center"></a>Microsoft Intune Center 관리
 사용자에게는 Intune 소프트웨어 클라이언트가 **Microsoft Intune Center**로 표시됩니다. Microsoft Intune Center를 통해 사용자는 다음을 수행할 수 있습니다.
 
 - 회사 포털에서 애플리케이션 가져오기
@@ -63,6 +63,6 @@ Windows PC에 대해 구성할 수 있는 정책 및 설정에 대한 자세한 
 - [Microsoft Intune에서 Windows 방화벽 정책을 사용하여 Windows PC 보호](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - 이러한 정책을 사용하면 관리 컴퓨터에서 Windows 방화벽 설정을 쉽게 관리할 수 있습니다.
 
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 [Intune 소프트웨어 클라이언트를 사용하는 일반 Windows PC 관리 작업](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402892"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353627"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC에 대한 사용자-장치 연결 관리
 
@@ -32,7 +32,7 @@ ms.locfileid: "67402892"
 
 소프트웨어를 사용자에게 배포하려면 먼저 사용자를 PC에 연결해야 합니다. 여러 PC에 사용자를 연결할 수 있지만 각 PC는 한 사용자에게만 연결할 수 있습니다. 사용자는 회사 포털을 사용하여 Intune에 등록한 모든 PC에 자동으로 연결됩니다.
 
-장치의 기본 사용자에 대 한 자세한 내용은 참조 하세요. [찾기 기본 사용자](find-primary-user.md)합니다.
+장치의 기본 사용자에 대 한 자세한 내용은 [기본 사용자 찾기](find-primary-user.md)를 참조 하세요.
 
 사용자를 PC에 연결하려면
 
@@ -53,6 +53,6 @@ ms.locfileid: "67402892"
 > [!TIP]
 > 최종 사용자가 PC에 자신을 연결하는 기능을 제한하려면 **Microsoft Intune 에이전트 설정** 정책에서 **Restrict users' ability to link themselves to PCs**(사용자와 PC를 연결하는 기능 제한) 옵션을 사용하도록 설정합니다.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 [Intune 소프트웨어 클라이언트를 사용하는 일반 Windows PC 관리 작업](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

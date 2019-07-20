@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ebae39c529571c5f926debcf64b46d6399d770f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 5a119154c4676d3c8039463b181263d516bb2b51
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547947"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353513"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>GPO(그룹 정책 개체) 및 Microsoft Intune 정책 충돌 해결
 
@@ -123,5 +123,5 @@ For more information about how to apply WMI filters in Group Policy, see the blo
 
 새 보안 그룹은 Intune 서비스 변경 내용에서 등록 항목으로 유지되어야 합니다.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 [Microsoft Intune을 사용하여 Windows PC 관리](manage-windows-pcs-with-microsoft-intune.md)

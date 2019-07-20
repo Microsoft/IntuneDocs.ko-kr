@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648793"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313736"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 데이터 웨어하우스 API 엔드포인트
 
@@ -51,7 +51,7 @@ URL에는 다음 요소가 포함됩니다.
 | 요소 | 예제 | 설명 |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | 기본 URL은 Azure 포털에서 데이터 웨어하우스 API 블레이드를 보면 알 수 있습니다. |
-| entity-collection | 날짜 | OData 엔터티 컬렉션의 이름입니다. 데이터 모델의 컬렉션 및 엔터티에 대한 자세한 내용은 [데이터 모델](reports-ref-data-model.md)을 참조하세요. |
+| entity-collection | devicePropertyHistories | OData 엔터티 컬렉션의 이름입니다. 데이터 모델의 컬렉션 및 엔터티에 대한 자세한 내용은 [데이터 모델](reports-ref-data-model.md)을 참조하세요. |
 | api-version | 베타 | 버전은 액세스할 API의 버전입니다. 자세한 내용은 [버전](reports-api-url.md#api-version-information)을 참조하세요. |
 | maxhistorydays | 7 | (선택 사항) 검색할 최대 기록 일수입니다. 이 매개 변수는 모든 컬렉션에 제공될 수 있지만 `dateKey`를 해당 키 속성의 일부로 포함하는 컬렉션에만 적용됩니다. 자세한 내용은 [DateKey 범위 필터](reports-api-url.md#datekey-range-filters)를 참조하세요. |
 

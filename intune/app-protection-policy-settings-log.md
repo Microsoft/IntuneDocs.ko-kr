@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acad6b0fa343bdbcc722929886a8e68a4fa4d8bc
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713287"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885060"
 ---
 # <a name="review-client-app-protection-logs"></a>클라이언트 앱 보호 로그 검토
 
@@ -72,5 +72,5 @@ ms.locfileid: "67713287"
 
 ## <a name="next-steps"></a>다음 단계
 
- - 앱 보호 정책에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
- - Intune에서 사용자 환경의 문제를 해결하는 데 도움이 되는 다양한 도구를 제공합니다. 자세한 내용은 [문제 해결 포털을 사용하여 사용자 지원](help-desk-operators.md)을 참조하세요.
+- 앱 보호 정책에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
+- Intune에서 사용자 환경의 문제를 해결하는 데 도움이 되는 다양한 도구를 제공합니다. 자세한 내용은 [문제 해결 포털을 사용하여 사용자 지원](help-desk-operators.md)을 참조하세요.

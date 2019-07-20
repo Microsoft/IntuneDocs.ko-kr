@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547884"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884755"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 데이터 웨어하우스 데이터 모델
 
@@ -32,22 +32,22 @@ Intune 데이터 웨어하우스 샘플 데이터는 항상 변화하는 모바�
 
 웨어하우스는 다음과 같은 개략적인 영역으로 데이터를 노출합니다.
 
-  - 앱 보호가 설정된 앱 및 사용량
-  - 등록된 디바이스, 속성 및 인벤토리
-  - 앱 및 소프트웨어 인벤토리
-  - 디바이스 구성 및 규정 준수 정책
+- 앱 보호가 설정된 앱 및 사용량
+- 등록된 디바이스, 속성 및 인벤토리
+- 앱 및 소프트웨어 인벤토리
+- 디바이스 구성 및 규정 준수 정책
 
 이러한 영역에는 Intune 환경에 적합한 엔터티가 포함됩니다. 다음 항목의 엔터티 집합에 대한 정보를 찾을 수 있습니다.
 
-  - [애플리케이션](reports-ref-application.md)
-  - [날짜](reports-ref-date.md)
-  - [디바이스](reports-ref-devices.md)
-  - [Intune 관리 확장](reports-ref-intunemanagementextension.md)
-  - [정책](reports-ref-policy.md)
-  - [모바일 앱 관리(MAM)](reports-ref-mobile-app-management.md)
-  - [사용자](reports-ref-user.md)
-  - [현재 사용자](reports-ref-current-user.md)
-  - [사용자 디바이스 연결](reports-ref-user-device.md)
+- [애플리케이션](reports-ref-application.md)
+- [날짜](reports-ref-date.md)
+- [디바이스](reports-ref-devices.md)
+- [Intune 관리 확장](reports-ref-intunemanagementextension.md)
+- [정책](reports-ref-policy.md)
+- [모바일 앱 관리(MAM)](reports-ref-mobile-app-management.md)
+- [사용자](reports-ref-user.md)
+- [현재 사용자](reports-ref-current-user.md)
+- [사용자 디바이스 연결](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>관계: 별모양 스키마 모델
 
@@ -63,6 +63,6 @@ Intune 데이터 웨어하우스 샘플 데이터는 항상 변화하는 모바�
 
 ## <a name="next-steps"></a>다음 단계
 
- - 데이터 웨어하우스가 Intune에서 사용자의 수명을 추적하는 방법에 대한 자세한 내용은 [Intune 데이터 웨어하우스의 사용자 수명 표시](reports-ref-user-timeline.md)를 참조하세요.
- - 데이터 웨어하우스 작업에 대한 자세한 내용은 [첫 번째 데이터 웨어하우스 만들기](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)를 참조하세요.
- - Power BI 및 데이터 웨어하우스 작업에 대한 자세한 내용은 [데이터 세트를 가져와서 새 Power BI 보고서 만들기](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)를 참조하세요. 
+- 데이터 웨어하우스가 Intune에서 사용자의 수명을 추적하는 방법에 대한 자세한 내용은 [Intune 데이터 웨어하우스의 사용자 수명 표시](reports-ref-user-timeline.md)를 참조하세요.
+- 데이터 웨어하우스 작업에 대한 자세한 내용은 [첫 번째 데이터 웨어하우스 만들기](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)를 참조하세요.
+- Power BI 및 데이터 웨어하우스 작업에 대한 자세한 내용은 [데이터 세트를 가져와서 새 Power BI 보고서 만들기](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)를 참조하세요. 

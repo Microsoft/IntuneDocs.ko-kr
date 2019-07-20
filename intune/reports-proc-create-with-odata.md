@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648907"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353656"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 보고서 만들기
 
 이 아티클에서는 대화형 필터와 함께 Power BI Desktop을 사용하여 트리맵 시각화를 만드는 방법을 설명합니다. 예를 들어 CFO는 전체적인 디바이스 분포에서 회사 소유 디바이스와 개인 디바이스를 대조한 결과를 원할 수 있습니다. 트리맵은 전체 디바이스 유형 수에 대한 정보를 제공합니다. 회사 소유이거나 개인 소유인 iOS, Android 및 Windows 디바이스의 수를 검토할 수 있습니다.
 
-### <a name="overview-of-creating-the-chart"></a>차트 만들기 개요
+## <a name="overview-of-creating-the-chart"></a>차트 만들기 개요
 
 이 차트를 만들려면 다음을 수행해야 합니다.
 1. 아직 없는 경우 Power BI Desktop을 설치합니다.
@@ -120,5 +120,5 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로
 
 ## <a name="next-steps"></a>다음 단계
 
- - Power BI 설명서에서 Power BI Desktop의 [관계 만들기 및 관리](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)에 대해 자세히 알아봅니다.
- - [Intune 데이터 웨어하우스 모델](https://docs.microsoft.com/intune/reports-ref-data-model)을 참조합니다.
+- Power BI 설명서에서 Power BI Desktop의 [관계 만들기 및 관리](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)에 대해 자세히 알아봅니다.
+- [Intune 데이터 웨어하우스 모델](https://docs.microsoft.com/intune/reports-ref-data-model)을 참조합니다.

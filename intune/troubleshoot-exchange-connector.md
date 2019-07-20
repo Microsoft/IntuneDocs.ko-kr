@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdb727b542cd66e0b8fcf4a0822eaf0107600ad
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735739"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354477"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune 온-프레미스 Exchange Connector 문제 해결
 
@@ -51,5 +51,5 @@ ms.locfileid: "67735739"
 - 사서함에 대한 SMTP 주소 목록을 가져오려면 Get-Mailbox -Identity user | select emailaddresses | fl을 사용합니다.
 - 디바이스의 액세스 상태에 대한 상세 정보를 가져오려면 Get-CASMailbox <upn> | fl을 사용합니다.
 
-### <a name="next-steps"></a>다음 단계
+## <a name="next-steps"></a>다음 단계
 이 정보가 도움이 되지 않으면 [Microsoft Intune에 대한 지원을 받을](get-support.md) 수도 있습니다.

@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572526"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354010"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune에서 Windows 방화벽 정책을 사용하여 Windows PC 보호
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. Windows Pc에 대 한 방화벽 설정을 모바일 장치로 등록 관리 하려는 경우, 참조 [Intune에서 endpoint protection 설정 추가](endpoint-protection-configure.md)합니다.
+> 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. 모바일 장치로 등록 된 Windows Pc에 대 한 방화벽 설정을 관리 하려면 [Intune에서 endpoint protection 설정 추가](endpoint-protection-configure.md)를 참조 하세요.
 
 Microsoft Intune에서는 Intune 클라이언트로 관리하는 Windows PC를 다양한 방법으로 보호할 수 있습니다. 그중 한 가지 방법은 PC에서 Windows 방화벽 설정을 구성할 수 있도록 하는 정책을 제공하는 것입니다.
 
@@ -140,5 +140,5 @@ Windows 방화벽 정책을 배포한 후 **정책** 작업 영역의 **모든 �
 |**Windows Virtual PC**<br>(Windows 7 이상)|가상 컴퓨터가 다른 컴퓨터와 통신할 수 있습니다.|
 |**무선 휴대용 디바이스**|MTP(미디어 전송 프로토콜)를 통해 네트워크 사용 카메라 또는 미디어 디바이스에서 관리 컴퓨터로 미디어를 전송할 수 있습니다. 이 설정에서는 SSDP 및 UPnP 네트워크 프로토콜을 사용합니다.|
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 [Windows PC를 보호하는 정책](policies-to-protect-windows-pcs-in-microsoft-intune.md)

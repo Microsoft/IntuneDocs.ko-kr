@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fa483a49ad7fa44172a83f024540a75d1d881dc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b61f4ded04d01f04727768557e6730c34fd4760c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040915"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882449"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune 데이터 웨어하우스의 사용자 수명 표시
 
@@ -79,5 +79,5 @@ John Smith는 2017/07/25에 라이선스를 포기합니다. **User** 테이블�
 
 ## <a name="next-steps"></a>다음 단계
 
- - **현재 사용자** 엔터티에 대한 자세한 내용은 [현재 사용자 엔터티에 대한 참조](reports-ref-current-user.md)를 참조하세요.
- - **사용자** 엔터티에 대한 자세한 내용은 [사용자 엔터티에 대한 참조](reports-ref-user.md)를 참조하세요.
+- **현재 사용자** 엔터티에 대한 자세한 내용은 [현재 사용자 엔터티에 대한 참조](reports-ref-current-user.md)를 참조하세요.
+- **사용자** 엔터티에 대한 자세한 내용은 [사용자 엔터티에 대한 참조](reports-ref-user.md)를 참조하세요.

@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a94c327c8595e83ec9808ed41e788c5756d5510a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548647"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353869"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune에서 소프트웨어 업데이트를 사용하여 Windows PC를 최신 상태로 유지
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. Windows Pc에 대 한 업데이트를 모바일 장치로 등록 관리 하려는 경우, 참조 [Intune에서 소프트웨어 업데이트 관리](windows-update-for-business-configure.md)합니다.
+> 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. 모바일 장치로 등록 된 Windows Pc에 대 한 업데이트를 관리 하려는 경우 [Intune에서 소프트웨어 업데이트 관리](windows-update-for-business-configure.md)를 참조 하세요.
 
 Microsoft Intune에서는 다양한 방식으로 관리되는 컴퓨터를 보호할 수 있습니다. 이러한 방식에는 최신 패치와 소프트웨어 업데이트를 빠르게 설치하여 컴퓨터를 최신 상태로 유지하는 소프트웨어 업데이트 관리 작업이 포함됩니다.
 
@@ -260,5 +260,5 @@ Intune에 타사 업데이트가 업로드되면 **모든 업데이트** 창의 
 6. 업데이트 알림 메시지는 **모든 업데이트** 페이지 맨 아래에 있는 세부 정보 창에서 확인할 수 있습니다.
 
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 [Windows PC를 보호하는 정책](policies-to-protect-windows-pcs-in-microsoft-intune.md)

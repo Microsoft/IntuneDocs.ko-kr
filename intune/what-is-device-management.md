@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043847"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884264"
 ---
 # <a name="what-is-device-management"></a>디바이스 관리란? 
 
@@ -58,8 +58,8 @@ Intune을 사용하면 사용자별로 여러 디바이스를 관리하고 iOS, 
 
 - **Windows Defender**는 Windows 10 디바이스를 보호하는 여러 보안 기능을 갖추고 있습니다. 예를 들어 Intune 및 Windows Defender를 함께 사용하여 다음을 수행할 수 있습니다. 
 
-    - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10)으로 모바일 디바이스의 파일 및 앱에서 의심스러운 활동을 검색합니다. 
-    - [Windows Defender ATP(Advanced Threat Protection)](https://docs.microsoft.com/intune/advanced-threat-protection)를 사용하여 모바일 디바이스의 보안 위반을 방지합니다. 또한 사용자를 회사 리소스에서 차단하여 보안 위반의 영향을 제한하는 데 도움이 됩니다.
+  - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10)으로 모바일 디바이스의 파일 및 앱에서 의심스러운 활동을 검색합니다. 
+  - [Windows Defender ATP(Advanced Threat Protection)](https://docs.microsoft.com/intune/advanced-threat-protection)를 사용하여 모바일 디바이스의 보안 위반을 방지합니다. 또한 사용자를 회사 리소스에서 차단하여 보안 위반의 영향을 제한하는 데 도움이 됩니다.
 
 - **조건부 액세스**는 Azure Active Directory의 기능이며 Intune과 원활하게 통합됩니다. [조건부 액세스](https://docs.microsoft.com/intune/conditional-access)를 사용하여 규정을 준수하는 디바이스만 이메일, SharePoint 및 기타 앱에 액세스할 수 있는지 확인합니다. 
 

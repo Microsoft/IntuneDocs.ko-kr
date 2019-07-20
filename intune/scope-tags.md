@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 627899eafb2175b2d3034045bd765a10f4a203d6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403777"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882499"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>분산형 IT에 RBAC(역할 기반 액세스 제어) 및 범위 태그 사용
 
@@ -42,8 +42,8 @@ ms.locfileid: "67403777"
 
     ![범위 태그 만들기 스크린샷입니다.](./media/scope-tags/create-scope-tag.png)
 
-3. 특정 그룹의 모든 장치를 원하는 경우 선택할 **선택한 그룹의 모든 장치로 범위 태그 할당**합니다.
-    1. 에 **포함할 그룹 선택** 페이지에서이 범위 태그를 할당 하려는 장치가 포함 된 그룹을 선택 합니다.
+3. 특정 그룹의 모든 장치를 원하는 경우 **선택한 그룹의 모든 장치에 범위 태그 할당**을 선택 합니다.
+    1. **포함할 그룹 선택** 페이지에서이 범위 태그를 할당 하려는 장치를 포함 하는 그룹을 선택 합니다.
     2. **선택**을 선택합니다.
 4. **만들기**를 선택합니다.
 
@@ -108,17 +108,17 @@ ms.locfileid: "67403777"
 범위 태그를 사용하는 경우, 다음 세부 정보를 기억해야 합니다.
 
 - 현재 범위 태그를 할당할 수 있는 대상은 다음과 같습니다.
-    - 역할 할당
-    - 디바이스 준수 정책
-    - 디바이스 구성 프로필
-    - Windows 10 업데이트 링
-    - 관리되는 디바이스
-    - 앱
-    - 앱 구성 정책 – 관리 디바이스
-    - Powershell 스크립트
-    - DEP 토큰
-    - iOS 앱 프로비전 프로필
-    - VPP(Volume Purchase Program) 토큰
+  - 역할 할당
+  - 디바이스 준수 정책
+  - 디바이스 구성 프로필
+  - Windows 10 업데이트 링
+  - 관리되는 디바이스
+  - 앱
+  - 앱 구성 정책 – 관리 디바이스
+  - Powershell 스크립트
+  - DEP 토큰
+  - iOS 앱 프로비전 프로필
+  - VPP(Volume Purchase Program) 토큰
 - 관리자가 Intune에서 개체를 만들면 이 관리자에게 할당된 모든 범위 태그가 새 개체에 자동으로 할당됩니다.
 - Intune RBAC는 Azure Active Directory 역할에 적용되지 않습니다. 따라서 Intune 서비스 관리자 및 전역 관리자 역할은 소유하는 범위 태그가 무엇이든 Intune에 대해 전체 관리자 액세스 권한을 갖습니다.
 - 범위 태그가 있는 역할 할당의 관리자는 범위 태그가 없는 Intune 개체도 볼 수 있습니다.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961470b9f5671dc39864dac45fdcb49862de4da9
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 673dd0cb751fcdd2a7036dc2bf52dd731a4b04ff
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735566"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306762"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -162,15 +162,15 @@ Intune 앱 SDK를 사용하려면 다음 단계를 따르세요.
     
     c. 기존 액세스 그룹에 `com.microsoft.adalcache`를 추가합니다.
     
-        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
+      ![Intune 앱 SDK iOS: 키 집합 공유](./media/intune-app-sdk-ios-keychain-sharing.png)
     
     d. 위에 표시된 Xcode UI를 사용하지 않고 직접 자격 파일을 편집하여 키 집합 액세스 그룹을 만드는 경우 키 집합 액세스 그룹 앞에 `$(AppIdentifierPrefix)`를 추가합니다(Xcode는 이를 자동으로 처리함). 예를 들면 다음과 같습니다.
     
-        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+      - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+      - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
-        > [!NOTE]
-        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
+      > [!NOTE]
+      > 자격 파일은 모바일 애플리케이션에 고유한 XML 파일입니다. iOS 앱에서 특수한 권한 및 기능을 지정하는 데 사용됩니다. 이전에 앱에 자격 파일이 없었던 경우 키 집합 공유를 사용하도록 설정하면(3단계) Xcode에서 해당 앱용 자격 파일을 생성했을 것입니다. 앱의 번들 ID가 목록의 첫 번째 항목인지 확인합니다.
 
 6. 앱이 `UIApplication canOpenURL`에 전달하는 각 프로토콜을 앱 Info.plist 파일의 `LSApplicationQueriesSchemes` 배열에 포함합니다. 다음 단계로 진행하기 전에 변경 내용을 저장해야 합니다.
 

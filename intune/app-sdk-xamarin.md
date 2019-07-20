@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
-ms.translationtype: HT
+ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735462"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67794360"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -104,9 +104,10 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 Intune App SDK 통합에 대한 전체 개요는 [Android용 Microsoft Intune App SDK 개발자 가이드](app-sdk-android.md)에서 확인할 수 있습니다. 이 가이드를 읽고 Intune App SDK를 Xamarin 앱과 통합할 때, 다음 섹션에서는 Java에서 개발된 네이티브 Android 앱과 C#에서 개발된 Xamarin 앱의 구현 간의 차이점을 집중 조명합니다. 이 섹션은 보충으로 취급되어야 하며 가이드 전체를 읽는 것으로 대신할 수는 없습니다.
 
 #### <a name="remapper"></a>Remapper
-1\.4428.1 릴리스로 `Microsoft.Intune.MAM.Remapper` 시작 하 여 패키지를 Xamarin Android [응용 프로그램에 빌드](app-sdk-android.md#build-tooling) 도구로 추가 하 여 MAM 클래스, 메서드 및 시스템 서비스 대체를 수행할 수 있습니다. Remapper를 포함 하는 경우 응용 프로그램을 빌드할 때 이름이 바뀐 메서드 및 MAM 응용 프로그램 섹션의 MAM 해당 교체 부분이 자동으로 수행 됩니다.
+1\.4428.1 릴리스로 `Microsoft.Intune.MAM.Remapper` 시작 하 여 패키지를 Xamarin Android 응용 프로그램에 [빌드](app-sdk-android.md#build-tooling) 도구로 추가 하 여 MAM 클래스, 메서드 및 시스템 서비스 대체를 수행할 수 있습니다. Remapper를 포함 하는 경우 응용 프로그램을 빌드할 때 이름이 바뀐 메서드 및 MAM 응용 프로그램 섹션의 MAM 해당 교체 부분이 자동으로 수행 됩니다.
 
 Remapper에서 ification의 클래스를 제외 하려면 프로젝트 `.csproj` 파일에 다음 속성을 추가 합니다.
+
 ```xml
   <PropertyGroup>
     <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
@@ -208,7 +209,7 @@ Intune SDK Xamarin 바인딩은 장치에 [회사 포털](https://play.google.co
 디바이스 등록 없이 앱 보호를 사용하기 위해 사용자가 회사 포털 앱을 통해 디바이스를 등록할 필요가 _**없습니다**_ .
 
 ### <a name="sample-applications"></a>샘플 응용 프로그램
-Xamarin Android 및 xamarin Forms 앱에서 MAM 기능을 강조 표시 하는 샘플 응용 [프로그램](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)은 GitHub에서 사용할 수 있습니다.
+Xamarin Android 및 Xamarin Forms 앱에서 MAM 기능을 강조 표시 하는 샘플 응용 프로그램은 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)에서 사용할 수 있습니다.
 
 ## <a name="support"></a>Support
 조직이 기존 Intune 고객인 경우 Microsoft 지원 담당자에게 문의해 지원 티켓을 열고 [GitHub 문제 페이지에서](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) 문제를 만들면 가능한 한 빨리 도움을 제공할 수 있습니다. 

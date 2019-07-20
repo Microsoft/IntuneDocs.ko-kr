@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 61e0a7fa4fa63e17a1fa4165042d9e82a2ffacc2
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548774"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354096"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune용 Endpoint Protection을 사용한 Windows PC의 보안 유지 방법
 
@@ -145,8 +145,8 @@ IT 관리자의 최우선 업무 중 하나는 관리하는 컴퓨터를 맬웨�
 
 ### <a name="specify-microsoft-active-protection-service-settings"></a>Microsoft 활성 보호 서비스 설정 지정
 Microsoft 활성 보호 서비스는 잠재적 위협에 대응하는 방법을 결정하는 데 도움이 되는 온라인 커뮤니티입니다. 또한 이 커뮤니티는 새로운 맬웨어 감염의 전파를 막는 데도 도움이 됩니다. **예**를 선택한 다음 **회원 수준**을 지정하여 **Microsoft 활성 보호 서비스에 가입**할 수 있습니다.
-  - **기본** - 검색된 맬웨어 대한 기본 정보를 Microsoft로 전송합니다. 기본 정보에는 소프트웨어가 들어온 위치, 사용자가 적용한 또는 Endpoint Protection에서 자동으로 적용한 작업, 작업의 성공 여부 등이 포함됩니다.
-  - **고급** - 맬웨어, 스파이웨어 및 사용자 동의 없이 설치된 소프트웨어에 대한 추가 정보를 Microsoft로 전송합니다. 여기에는 소프트웨어 위치, 파일 이름, 소프트웨어의 작동 방식, 컴퓨터에 미친 영향 등에 대한 정보가 있습니다.
+- **기본** - 검색된 맬웨어 대한 기본 정보를 Microsoft로 전송합니다. 기본 정보에는 소프트웨어가 들어온 위치, 사용자가 적용한 또는 Endpoint Protection에서 자동으로 적용한 작업, 작업의 성공 여부 등이 포함됩니다.
+- **고급** - 맬웨어, 스파이웨어 및 사용자 동의 없이 설치된 소프트웨어에 대한 추가 정보를 Microsoft로 전송합니다. 여기에는 소프트웨어 위치, 파일 이름, 소프트웨어의 작동 방식, 컴퓨터에 미친 영향 등에 대한 정보가 있습니다.
 
 **Microsoft 활성 보호 서비스 보고서를 기반으로 하여 동적 정의 받기**도 가능합니다.
 
@@ -197,5 +197,5 @@ Intune은 Intune 클라이언트가 설치된 원격 관리 PC에서 Endpoint Pr
 ## <a name="need-more-help"></a>도움이 더 필요하신가요?
 추가적인 도움말과 지원은 [Microsoft Intune에서 Endpoint Protection 문제 해결](troubleshoot-endpoint-protection-in-microsoft-intune.md) 항목을 참조하세요.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 [Windows PC를 보호하는 정책](policies-to-protect-windows-pcs-in-microsoft-intune.md)

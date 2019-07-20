@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2b324c8c6e1687b8ce5563aa85c155e21fc197
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040724"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882374"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API를 사용하여 SCEP에 대한 타사 CA를 Intune에 추가
 
@@ -176,8 +176,8 @@ Throws:
 
 **보안 메모**  
 
-  - 이 메서드에서 예외를 throw하는 경우 SCEP 서버는 클라이언트에 인증서를 발급해서는 **안 됩니다**.
-  - SCEP 인증서 요청 유효성 검사 실패는 Intune 인프라에 문제가 있음을 나타낼 수 있습니다. 또는 공격자가 인증서를 얻으려고 한다는 것을 나타낼 수 있습니다.
+- 이 메서드에서 예외를 throw하는 경우 SCEP 서버는 클라이언트에 인증서를 발급해서는 **안 됩니다**.
+- SCEP 인증서 요청 유효성 검사 실패는 Intune 인프라에 문제가 있음을 나타낼 수 있습니다. 또는 공격자가 인증서를 얻으려고 한다는 것을 나타낼 수 있습니다.
 
 ##### <a name="sendsuccessnotification-method"></a>SendSuccessNotification 메서드
 
@@ -217,8 +217,8 @@ Throws:
 
 **보안 메모**
 
-  - 이 메서드에서 예외를 throw하는 경우 SCEP 서버는 클라이언트에 인증서를 발급해서는 **안 됩니다**.
-  - SCEP 인증서 요청 유효성 검사 실패는 Intune 인프라에 문제가 있음을 나타낼 수 있습니다. 또는 공격자가 인증서를 얻으려고 한다는 것을 나타낼 수 있습니다.
+- 이 메서드에서 예외를 throw하는 경우 SCEP 서버는 클라이언트에 인증서를 발급해서는 **안 됩니다**.
+- SCEP 인증서 요청 유효성 검사 실패는 Intune 인프라에 문제가 있음을 나타낼 수 있습니다. 또는 공격자가 인증서를 얻으려고 한다는 것을 나타낼 수 있습니다.
 
 ##### <a name="sendfailurenotification-method"></a>SendFailureNotification 메서드
 
@@ -254,8 +254,8 @@ Throws:
 
 **보안 메모**
 
-  - 이 메서드에서 예외를 throw하는 경우 SCEP 서버는 클라이언트에 인증서를 발급해서는 **안 됩니다**.
-  - SCEP 인증서 요청 유효성 검사 실패는 Intune 인프라에 문제가 있음을 나타낼 수 있습니다. 또는 공격자가 인증서를 얻으려고 한다는 것을 나타낼 수 있습니다.
+- 이 메서드에서 예외를 throw하는 경우 SCEP 서버는 클라이언트에 인증서를 발급해서는 **안 됩니다**.
+- SCEP 인증서 요청 유효성 검사 실패는 Intune 인프라에 문제가 있음을 나타낼 수 있습니다. 또는 공격자가 인증서를 얻으려고 한다는 것을 나타낼 수 있습니다.
 
 ##### <a name="setsslsocketfactory-method"></a>SetSslSocketFactory 메서드
 

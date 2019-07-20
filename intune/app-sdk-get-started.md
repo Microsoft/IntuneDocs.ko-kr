@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 428d9c333bb45d1f8456154104209690a95fb508
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529169"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885103"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -90,24 +90,24 @@ Microsoft 리포지토리에서 분기하고 끌어오는 데 사용할 수 있�
 
 
 ## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>iOS 또는 Android 앱에서 앱 기반 조건부 액세스를 사용하도록 설정
- 
- 앱에서 앱 보호 정책을 사용하도록 설정하는 것 외에도 다음 사항이 충족되어야 앱에서 AAD(Azure Active Directory) 앱 기반 조건부 액세스가 제대로 작동합니다.
- 
- * 앱은 [Azure Active Directory 인증 라이브러리](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)를 통해 빌드되고 AAD broker 인증을 사용하도록 설정되어 있어야 합니다.
- 
- * 앱의 [AAD 클라이언트 ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application)는 iOS 및 Android 플랫폼에서 고유해야 합니다.
- 
+
+앱에서 앱 보호 정책을 사용하도록 설정하는 것 외에도 다음 사항이 충족되어야 앱에서 AAD(Azure Active Directory) 앱 기반 조건부 액세스가 제대로 작동합니다.
+
+* 앱은 [Azure Active Directory 인증 라이브러리](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)를 통해 빌드되고 AAD broker 인증을 사용하도록 설정되어 있어야 합니다.
+
+* 앱의 [AAD 클라이언트 ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application)는 iOS 및 Android 플랫폼에서 고유해야 합니다.
+
 ## <a name="configure-telemetry-for-your-app"></a>앱에 대한 원격 분석 구성
 
 Microsoft Intune은 앱의 사용 통계에 대한 데이터를 수집합니다.
 
 * **iOS용 Intune 앱 SDK**: SDK는 기본적으로 사용 이벤트에 대한 SDK 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다.
 
-    * 앱에서 Microsoft Intune으로 SDK 원격 분석 데이터를 보내지 않으려면 IntuneMAMSettings 사전에서 `MAMTelemetryDisabled` 속성을 "YES"로 설정하여 원격 분석 전송을 사용하지 않도록 설정해야 합니다.
+  * 앱에서 Microsoft Intune으로 SDK 원격 분석 데이터를 보내지 않으려면 IntuneMAMSettings 사전에서 `MAMTelemetryDisabled` 속성을 "YES"로 설정하여 원격 분석 전송을 사용하지 않도록 설정해야 합니다.
 
 * **Android용 Intune 앱 SDK**: Android용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 애플리케이션은 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 PII(개인 식별 정보)를 수집하지 않습니다. 
 
-    * 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 
+  * 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 
 
 ## <a name="line-of-business-app-version-numbers"></a>기간 업무 앱 버전 번호
 
@@ -119,11 +119,11 @@ Intune의 기간 업무 앱은 이제 iOS 및 Android 앱의 버전 번호를 �
 
 전체 버전 번호는 다음과 같은 두 구성 요소로 이루어져 있습니다.
 
- - **버전**  
-   버전 번호는 사람이 읽을 수 있는 앱의 릴리스 번호입니다. 이는 최종 사용자가 앱의 다양한 릴리스를 식별하는 데 사용합니다.
+- **버전**  
+  버전 번호는 사람이 읽을 수 있는 앱의 릴리스 번호입니다. 이는 최종 사용자가 앱의 다양한 릴리스를 식별하는 데 사용합니다.
 
- - **빌드 번호**  
-    빌드 번호는 앱 검색에 사용하고 프로그래밍 방식으로 앱을 관리하기 위한 내부 번호입니다. 빌드 번호는 코드에서 변경 내용을 참조하는 앱의 반복을 가리킵니다.
+- **빌드 번호**  
+  빌드 번호는 앱 검색에 사용하고 프로그래밍 방식으로 앱을 관리하기 위한 내부 번호입니다. 빌드 번호는 코드에서 변경 내용을 참조하는 앱의 반복을 가리킵니다.
 
 ### <a name="version-and-build-number-in-android-and-ios"></a>Android 및 iOS의 버전 및 빌드 번호
 
@@ -139,16 +139,16 @@ Intune|iOS|Android|설명|
 #### <a name="ios"></a>iOS
 
 - **CFBundleShortVersionString**  
-    번들의 릴리스 버전 번호를 지정합니다. 이 번호는 앱의 릴리스된 버전을 식별합니다. 최종 사용자가 앱을 참조하는 데 사용되는 번호입니다.
+  번들의 릴리스 버전 번호를 지정합니다. 이 번호는 앱의 릴리스된 버전을 식별합니다. 최종 사용자가 앱을 참조하는 데 사용되는 번호입니다.
 - **CFBundleVersion**  
-    번들의 빌드 버전으로, 번들의 반복을 식별합니다. 번호는 릴리스 또는 릴리스되지 않은 번들을 식별할 수도 있습니다. 번호는 앱 검색에 사용됩니다.
+  번들의 빌드 버전으로, 번들의 반복을 식별합니다. 번호는 릴리스 또는 릴리스되지 않은 번들을 식별할 수도 있습니다. 번호는 앱 검색에 사용됩니다.
 
 #### <a name="android"></a>Android
 
- - **PackageVersionName**  
-    사용자에게 표시되는 버전 번호입니다. 이 특성은 원시 문자열 또는 문자열 리소스에 대한 참조로 설정할 수 있습니다. 문자열은 사용자에게 표시하기 위한 것입니다.
- - **PackageVersionCode**  
-    내부 버전 번호입니다. 이 번호는 해당 버전이 더 최신 버전임을 나타내는 더 높은 숫자가 있는 다른 버전에 비해 더 최신인지 여부를 판명하는 데만 사용됩니다. 이는 버전이 아닙니다. 
+- **PackageVersionName**  
+  사용자에게 표시되는 버전 번호입니다. 이 특성은 원시 문자열 또는 문자열 리소스에 대한 참조로 설정할 수 있습니다. 문자열은 사용자에게 표시하기 위한 것입니다.
+- **PackageVersionCode**  
+  내부 버전 번호입니다. 이 번호는 해당 버전이 더 최신 버전임을 나타내는 더 높은 숫자가 있는 다른 버전에 비해 더 최신인지 여부를 판명하는 데만 사용됩니다. 이는 버전이 아닙니다. 
 
 ## <a name="next-steps-after-integration"></a>통합 후 다음 단계
 
@@ -157,11 +157,11 @@ iOS 또는 Android 앱을 Intune 앱 SDK와 통합하는 데 필요한 단계를
 
 * **Microsoft Intune 테스트 계정**: Intune 앱 보호 기능에 대해 Intune 관리 앱을 테스트하려면 Microsoft Intune 계정이 필요합니다.
 
-    * Intune 앱 보호 정책에 대해 iOS 또는 Android 스토어 앱을 사용하도록 설정하는 ISV인 경우 등록 단계에 설명된 대로 Microsoft Intune을 사용하여 등록을 완료하면 프로모션 코드를 받게 됩니다. 이 프로모션 코드를 사용하여 1년 연장하여 사용할 수 있는 Microsoft Intune 평가판을 신청할 수 있습니다.
+  * Intune 앱 보호 정책에 대해 iOS 또는 Android 스토어 앱을 사용하도록 설정하는 ISV인 경우 등록 단계에 설명된 대로 Microsoft Intune을 사용하여 등록을 완료하면 프로모션 코드를 받게 됩니다. 이 프로모션 코드를 사용하여 1년 연장하여 사용할 수 있는 Microsoft Intune 평가판을 신청할 수 있습니다.
 
-    * 스토어에 게시하지 않을 LOB(기간 업무) 앱을 개발 중인 경우에는 조직을 통해 Microsoft Intune에 대한 액세스 권한을 가져야 합니다. [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)에서 한 달 무료 평가판도 신청할 수 있습니다.
+  * 스토어에 게시하지 않을 LOB(기간 업무) 앱을 개발 중인 경우에는 조직을 통해 Microsoft Intune에 대한 액세스 권한을 가져야 합니다. [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)에서 한 달 무료 평가판도 신청할 수 있습니다.
 
-    * 최종 사용자 계정을 사용하여 모바일 디바이스에서 앱을 테스트하는 경우, 관리자 계정으로 로그인한 후 Microsoft 365 관리 센터 웹 사이트에서 해당 계정에 Intune 라이선스를 부여했는지 확인합니다. [Microsoft Intune 라이선스 할당](https://docs.microsoft.com/intune/licenses-assign)을 참조하세요.
+  * 최종 사용자 계정을 사용하여 모바일 디바이스에서 앱을 테스트하는 경우, 관리자 계정으로 로그인한 후 Microsoft 365 관리 센터 웹 사이트에서 해당 계정에 Intune 라이선스를 부여했는지 확인합니다. [Microsoft Intune 라이선스 할당](https://docs.microsoft.com/intune/licenses-assign)을 참조하세요.
 
 * **Intune 앱 보호 정책**: 모든 Intune 앱 보호 정책에 대해 앱을 테스트하려면 각 정책 설정에 대해 예상되는 동작이 무엇인지 알고 있어야 합니다. [iOS 앱 보호 정책](app-protection-policy-settings-ios.md) 및 [Android 앱 보호 정책](app-protection-policy-settings-android.md)에 대한 설명을 참조하세요. 앱에 Intune SDK를 통합했지만 앱이 아직 Azure Portal에 대상 앱으로 나열되지 않는 경우 “+ 더 많은 앱” 옵션을 선택하고 텍스트 상자에 번들 ID(iOS) 또는 패키지 이름(Android)을 입력하여 정책을 통해 앱을 대상으로 지정할 수 있습니다.
 

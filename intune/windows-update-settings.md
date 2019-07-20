@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5a0ee88a24804294346888facef523f89fee816
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9e9baf3593883cf2fa2402a0b4daec638a336366
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046644"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884206"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune에 대한 Windows 업데이트 설정  
 
@@ -179,8 +179,8 @@ Microsoft 업데이트에서 앱 업데이트의 검사 [허용]을 선택합니
 사용자가 업데이트 설치를 일시 중지하도록 허용 또는 차단합니다. 
 
 ### <a name="block-user-from-scanning-for-windows-updates"></a>사용자의 Windows 업데이트 검색 차단  
- - **기본값**: 허용
- - **Windows 참조 설명서**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
+- **기본값**: 허용
+- **Windows 참조 설명서**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
 
 Windows 업데이트를 검색하는 사용자의 액세스를 허용하거나 차단할 것인지 지정합니다. 예를 들어, *차단*을 구성하는 경우 Windows 업데이트 검사, 다운로드 및 설치 기능에 액세스할 수 없습니다.  
 

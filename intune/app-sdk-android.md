@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: b033052ebd5d3d26976482ea2435c8a0d7314c8e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735641"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885056"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -116,8 +116,8 @@ apply plugin: 'com.microsoft.intune.mam'
 * [포함할 외부 종속성](#usage-of-includeexternallibraries) 
 * 처리에서 제외할 특정 클래스
 * 처리에서 제외할 변형입니다. 이러한 변형은 전체 변형 이름 또는 단일 버전을 나타낼 수 있습니다. 예
-     * 앱의 빌드 형식이 {`savory`, `sweet`} 및 {`vanilla`, `chocolate`}를 갖는 `debug` 및 `release`인 경우
-     * `savory`를 지정하여 savory 버전의 모든 변형을 제외하거나 `savoryVanillaRelease`를 사용하여 해당 변형만 정확히 제외할 수 있습니다.
+  * 앱의 빌드 형식이 {`savory`, `sweet`} 및 {`vanilla`, `chocolate`}를 갖는 `debug` 및 `release`인 경우
+  * `savory`를 지정하여 savory 버전의 모든 변형을 제외하거나 `savoryVanillaRelease`를 사용하여 해당 변형만 정확히 제외할 수 있습니다.
 
 #### <a name="example-partial-buildgradle"></a>예제 부분 build.gradle
 
@@ -680,15 +680,15 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
 
 * **NonBrokerRedirectURI**는 브로커가 없는 경우에 사용할 AAD 리디렉션 URI입니다. 지정된 값이 없으면 기본값인 `urn:ietf:wg:oauth:2.0:oob`가 사용됩니다. 이 기본값은 대부분의 앱에 적합합니다.
 
-    * NonBrokerRedirectURI는 SkipBroker가 "true"인 경우에 사용됩니다.
+  * NonBrokerRedirectURI는 SkipBroker가 "true"인 경우에 사용됩니다.
 
 * **SkipBroker**는 기본 ADAL SSO 참여 동작을 재정의하는 데 사용됩니다. SkipBroker는 ClientID를 지정하는 앱에 대해서만 지정해야 **하며**, 조정된 인증/디바이스 수준 SSO를 지원하지 않습니다. 이 경우 "true"로 설정해야 합니다. 대부분의 앱은 SkipBroker 매개 변수를 설정하면 안 됩니다.
 
-    * ClientID는 **반드시** 매니페스트에서 지정하여 SkipBroker 값을 지정해야 합니다.
+  * ClientID는 **반드시** 매니페스트에서 지정하여 SkipBroker 값을 지정해야 합니다.
 
-    * ClientID가 지정되면 기본값은 "false"입니다.
+  * ClientID가 지정되면 기본값은 "false"입니다.
 
-    * SkipBroker가 "true"이면 NonBrokerRedirectURI가 사용됩니다. ADAL을 통합하지 않는(따라서 ClientID가 없는) 앱도 기본적으로 "true"로 설정합니다.
+  * SkipBroker가 "true"이면 NonBrokerRedirectURI가 사용됩니다. ADAL을 통합하지 않는(따라서 ClientID가 없는) 앱도 기본적으로 "true"로 설정합니다.
 
 ### <a name="common-adal-configurations"></a>일반적인 ADAL 구성
 
@@ -1317,48 +1317,48 @@ ID를 설정하는 데 사용된 모든 메서드는 `MAMIdentitySwitchResult`�
 
 #### <a name="examples"></a>예
 
-  1. 다른 MAM 앱에서 보낸 `Intent`에서 작업이 시작된 경우에는 `Intent`가 전송된 시점의 다른 앱에서 유효한 ID에 따라 작업 ID가 설정됩니다.
+1. 다른 MAM 앱에서 보낸 `Intent`에서 작업이 시작된 경우에는 `Intent`가 전송된 시점의 다른 앱에서 유효한 ID에 따라 작업 ID가 설정됩니다.
 
-  2. 서비스의 경우 `onStart` 또는 `onBind` 호출 기간 동안 스레드 ID가 비슷하게 설정됩니다. `onBind`에서 반환된 `Binder` 호출도 일시적으로 스레드 ID를 설정합니다.
+2. 서비스의 경우 `onStart` 또는 `onBind` 호출 기간 동안 스레드 ID가 비슷하게 설정됩니다. `onBind`에서 반환된 `Binder` 호출도 일시적으로 스레드 ID를 설정합니다.
 
-  3. 마찬가지로 `ContentProvider` 호출은 해당 기간에 대한 스레드 ID를 설정합니다.
-
-
-  또한 사용자가 작업을 조작하면 암시적 ID 전환이 수행될 수 있습니다.
-
-  **예:** 사용자가 `Resume` 중에 인증 프롬프트에서 취소하면 암시적으로 빈 ID로 전환됩니다.
-
-  앱은 이러한 변경 내용을 인식하고 필요한 경우 앱에서 변경을 금지할 수 있습니다. `MAMService` 및 `MAMContentProvider`는 하위 클래스가 재정의할 수 있는 다음 메서드를 공개합니다.
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  `MAMActivity` 클래스에서 메서드에 다음과 같은 추가 매개 변수가 있습니다.
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchReason reason,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  * `AppIdentitySwitchReason`은 암시적 전환의 원인을 캡처하며 `CREATE`, `RESUME_CANCELLED` 및 `NEW_INTENT` 값을 사용할 수 있습니다.  `RESUME_CANCELLED` 이유는 작업이 다시 시작되어 PIN,인증 또는 기타 준수 UI가 표시되고 사용자가 일반적으로 뒤로 단추를 사용하여 해당 UI를 취소하려고 할 때 사용됩니다.
+3. 마찬가지로 `ContentProvider` 호출은 해당 기간에 대한 스레드 ID를 설정합니다.
 
 
-  * `AppIdentitySwitchResultCallback`은 다음과 같습니다.
+    또한 사용자가 작업을 조작하면 암시적 ID 전환이 수행될 수 있습니다.
+
+    **예:** 사용자가 `Resume` 중에 인증 프롬프트에서 취소하면 암시적으로 빈 ID로 전환됩니다.
+
+    앱은 이러한 변경 내용을 인식하고 필요한 경우 앱에서 변경을 금지할 수 있습니다. `MAMService` 및 `MAMContentProvider`는 하위 클래스가 재정의할 수 있는 다음 메서드를 공개합니다.
 
     ```java
-    public interface AppIdentitySwitchResultCallback {
-        /**
-         * @param result
-         *            whether the identity switch can proceed.
-         */
-        void reportIdentitySwitchResult(AppIdentitySwitchResult result);
-    }
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchResultCallback callback);
     ```
 
-    ```AppIdentitySwitchResult```는 `SUCCESS` 또는 `FAILURE`입니다.
+    `MAMActivity` 클래스에서 메서드에 다음과 같은 추가 매개 변수가 있습니다.
+
+    ```java
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchReason reason,
+      final AppIdentitySwitchResultCallback callback);
+    ```
+
+    * `AppIdentitySwitchReason`은 암시적 전환의 원인을 캡처하며 `CREATE`, `RESUME_CANCELLED` 및 `NEW_INTENT` 값을 사용할 수 있습니다.  `RESUME_CANCELLED` 이유는 작업이 다시 시작되어 PIN,인증 또는 기타 준수 UI가 표시되고 사용자가 일반적으로 뒤로 단추를 사용하여 해당 UI를 취소하려고 할 때 사용됩니다.
+
+
+    * `AppIdentitySwitchResultCallback`은 다음과 같습니다.
+
+      ```java
+      public interface AppIdentitySwitchResultCallback {
+          /**
+            * @param result
+            *            whether the identity switch can proceed.
+            */
+          void reportIdentitySwitchResult(AppIdentitySwitchResult result);
+        }
+        ```
+
+      ```AppIdentitySwitchResult```는 `SUCCESS` 또는 `FAILURE`입니다.
 
 `MAMService.onMAMBind`에서 반환된 Binder 를 통해 적용된 변경을 제외하고 모든 암시적 ID 변경에 대해 `onMAMIdentitySwitchRequired` 메서드가 호출됩니다. 기본 `onMAMIdentitySwitchRequired` 구현에서 즉시 다음을 호출합니다.
 
@@ -1498,13 +1498,13 @@ public interface MAMFileProtectionInfo {
 MAM은 읽고 있는 파일과 `Activity`에 표시되는 데이터 간 관계를 자동으로 유추할 수 없습니다. 앱은 회사 데이터를 표시하기 전에 UI ID를 적절하게 *설정해야 합니다*. 여기에는 파일에서 읽은 데이터가 포함됩니다. 파일이 앱 외부에서 제공된 경우(`ContentProvider`에서 제공되거나 공개적으로 쓰기 가능한 위치에서 읽은 경우) 앱은 파일에서 읽은 정보를 표시하기 전에 파일 ID를 확인하려고 *시도해야 합니다*(`MAMFileProtectionManager.getProtectionInfo` 사용). `getProtectionInfo`가 null이 아니고 비어 있지 않은 ID를 보고할 경우 UI ID는 이 ID와 일치하도록 *설정되어야 합니다*(`MAMActivity.switchMAMIdentity` 또는 `MAMPolicyManager.setUIPolicyIdentity` 사용). ID 전환에 실패하는 경우 파일의 데이터가 표시되지 *않아야 합니다*.
 
 예제 흐름은 다음과 같이 표시될 수 있습니다.
-  * 사용자가 앱에서 열 문서를 선택합니다.
-  * 열기 흐름 중에 디스크에서 데이터를 읽기 전에 앱이 콘텐츠를 표시하는 데 사용되어야 하는 ID를 확인합니다.
-    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
-    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
-    * 앱이 결과가 콜백에 보고될 때까지 기다립니다.
-    * 보고된 결과가 실패인 경우 앱이 문서를 표시하지 않습니다.
-  * 앱이 파일을 열고 렌더링합니다.
+* 사용자가 앱에서 열 문서를 선택합니다.
+* 열기 흐름 중에 디스크에서 데이터를 읽기 전에 앱이 콘텐츠를 표시하는 데 사용되어야 하는 ID를 확인합니다.
+  * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+  * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+  * 앱이 결과가 콜백에 보고될 때까지 기다립니다.
+  * 보고된 결과가 실패인 경우 앱이 문서를 표시하지 않습니다.
+* 앱이 파일을 열고 렌더링합니다.
   
 #### <a name="single-identity-to-multi-identity-transition"></a>단일 ID에서 다중 ID로 전환
 이전에 단일 ID Intune을 통합하여 출시된 앱이 이후에 다중 ID를 통합하면 이전에 설치된 앱이 전환됩니다(사용자에게는 보이지 않으며 연결된 UX는 없음). 앱이 이 전환을 처리하기 위해 명시적으로 *해야 하는* 것은 없습니다. 전환 이전에 생성된 모든 파일은 계속해서 관리형 파일로 간주됩니다. 따라서 암호화 정책이 켜져 있으면 암호화 상태를 유지합니다. 원한다면 업그레이드를 검색하고 `MAMFileProtectionManager.protect`를 사용하여 특정 파일 또는 디렉터리에 빈 ID를 태그로 지정할 수 있습니다. 이렇게 하면 암호화된 파일 또는 디렉터리의 암호화가 제거됩니다.
@@ -1513,11 +1513,11 @@ MAM은 읽고 있는 파일과 `Activity`에 표시되는 데이터 간 관계�
 
 오프라인 모드에서 파일 ID 태그를 지정할 경우 주의하세요. 다음 사항을 고려해야 합니다.
 
-  * 회사 포털이 설치되지 않으면 파일에 ID 태그를 지정할 수 없습니다.
+* 회사 포털이 설치되지 않으면 파일에 ID 태그를 지정할 수 없습니다.
 
-  * 회사 포털이 설치되어 있지만 앱에 Intune MAM 정책이 없으면 파일에 안정적으로 ID 태그를 지정할 수 없습니다.
+* 회사 포털이 설치되어 있지만 앱에 Intune MAM 정책이 없으면 파일에 안정적으로 ID 태그를 지정할 수 없습니다.
 
-  * 파일 ID 태그 지정을 사용할 수 있으면 이전에 만든 모든 파일이 빈 문자열 ID에 속한 개인용/비관리로 처리됩니다. 단, 앱이 이전에 파일이 등록된 사용자에게 속하는 것으로 처리되는 경우의 단일 ID 관리 앱으로 설치된 경우는 개인용으로 처리되지 않습니다.
+* 파일 ID 태그 지정을 사용할 수 있으면 이전에 만든 모든 파일이 빈 문자열 ID에 속한 개인용/비관리로 처리됩니다. 단, 앱이 이전에 파일이 등록된 사용자에게 속하는 것으로 처리되는 경우의 단일 ID 관리 앱으로 설치된 경우는 개인용으로 처리되지 않습니다.
 
 ### <a name="directory-protection"></a>디렉터리 보호
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: fec72636a5d76ce4eb1fa0c28978eeb70d1e61b5
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044514"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353561"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교
 
@@ -49,7 +49,7 @@ ms.locfileid: "67044514"
 |**상태 증명**|사용할 수 없음|사용 가능|
 
 
-### <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows PC 관리의 이점
+## <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows PC 관리의 이점
 최신 모바일 디바이스 관리를 통해 Windows PC를 관리하는 경우 다음과 같은 이점이 있습니다.
 - **확장성** - Intune 클라우드 관리와 함께 MDM 관리를 확장할 수 있습니다. Intune 소프트웨어 클라이언트의 경우 PC를 7000대까지만 관리할 수 있습니다.
 - **단순성** - 다운로드한 소프트웨어 클라이언트를 사용하지 않고 운영 체제에 포함된 최신 관리 기능을 사용할 수 있습니다.

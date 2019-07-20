@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b655dc64958350623ea62caf848043f6baf3787c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548915"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883301"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD를 사용하여 Microsoft Graph의 Intune API에 액세스하는 방법
 
@@ -30,13 +30,13 @@ Microsoft Graph에서 Intune API에 액세스하려면 다음 항목이 필요�
 
 - 다음 권한/권한 범위가 있는 애플리케이션 ID:
 
-    - Azure AD 및 Microsoft Graph API를 호출할 수 있는 권한
-    - 특정 애플리케이션 작업과 관련된 권한 범위
+  - Azure AD 및 Microsoft Graph API를 호출할 수 있는 권한
+  - 특정 애플리케이션 작업과 관련된 권한 범위
 
 - 다음 권한이 있는 사용자 자격 증명:
 
-    - 애플리케이션과 연결된 Azure AD 테넌트 액세스 권한
-    - 애플리케이션 권한 범위를 지원하는 데 필요한 역할 권한
+  - 애플리케이션과 연결된 Azure AD 테넌트 액세스 권한
+  - 애플리케이션 권한 범위를 지원하는 데 필요한 역할 권한
 
 - 최종 사용자가 Azure 테넌트에 대해 애플리케이션 작업을 수행할 권한을 앱에 부여
 
@@ -61,7 +61,7 @@ Microsoft Graph에서 Intune API에 액세스하려면 다음 항목이 필요�
 
 Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니다.
 
-1. 에 로그인 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 관리 자격 증명을 사용 합니다.
+1. 관리 자격 증명을 사용 하 여 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 에 로그인 합니다.
 
     해당하는 경우 다음 계정을 사용할 수 있습니다.
     - 테넌트 관리자 계정
@@ -164,10 +164,10 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 - **액세스 사용** 설정: __Microsoft Intune 앱 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
-    - 클라이언트 앱
-    - 모바일 앱 범주
-    - 앱 보호 정책
-    - 앱 구성
+  - 클라이언트 앱
+  - 모바일 앱 범주
+  - 앱 보호 정책
+  - 앱 구성
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
@@ -177,19 +177,19 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 
 - 다음 엔터티의 변경도 허용합니다.
 
-    - 클라이언트 앱
-    - 모바일 앱 범주
-    - 앱 보호 정책
-    - 앱 구성
+  - 클라이언트 앱
+  - 모바일 앱 범주
+  - 앱 보호 정책
+  - 앱 구성
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
 - **액세스 사용** 설정: __Microsoft Intune 디바이스 구성 및 정책 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
-    - 디바이스 구성
-    - 디바이스 준수 정책
-    - 알림 메시지
+  - 디바이스 구성
+  - 디바이스 준수 정책
+  - 알림 메시지
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
@@ -198,34 +198,34 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 - __DeviceManagementConfiguration.Read.All__과 같은 작업을 허용합니다.
 
 - 앱은 다음 엔터티 만들기/할당/삭제/변경도 수행할 수 있습니다.
-    - 디바이스 구성
-    - 디바이스 준수 정책
-    - 알림 메시지
+  - 디바이스 구성
+  - 디바이스 준수 정책
+  - 알림 메시지
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
 - **액세스 사용** 설정: __Microsoft Intune 디바이스에서 사용자에게 영향을 주는 원격 작업 수행__
 
 - 관리 디바이스에서 다음과 같은 원격 작업을 허용합니다.
-    - 사용 중지
-    - 초기화
-    - 암호 초기화/복구
-    - 원격 잠금
-    - 분실 모드 사용/사용 안 함
-    - PC 정리
-    - 다시 부팅
-    - 공유 디바이스에서 사용자 삭제
+  - 사용 중지
+  - 초기화
+  - 암호 초기화/복구
+  - 원격 잠금
+  - 분실 모드 사용/사용 안 함
+  - PC 정리
+  - 다시 부팅
+  - 공유 디바이스에서 사용자 삭제
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
 - **액세스 사용** 설정: __Microsoft Intune 디바이스 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
-    - 관리 디바이스
-    - 디바이스 범주
-    - 검색된 앱
-    - 원격 작업
-    - 맬웨어 정보
+  - 관리 디바이스
+  - 디바이스 범주
+  - 검색된 앱
+  - 원격 작업
+  - 맬웨어 정보
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
@@ -234,22 +234,22 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 - __DeviceManagementManagedDevices.Read.All__과 같은 작업을 허용합니다.
 
 - 앱은 다음 엔터티 만들기/삭제/변경도 수행할 수 있습니다.
-    - 관리 디바이스
-    - 디바이스 범주
+  - 관리 디바이스
+  - 디바이스 범주
 
 - 다음과 같은 원격 작업도 허용됩니다.
-    - 디바이스 찾기
-    - 활성화 잠금 무시
-    - 원격 지원 요청
+  - 디바이스 찾기
+  - 활성화 잠금 무시
+  - 원격 지원 요청
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
 - **액세스 사용** 설정: __Microsoft Intune RBAC 설정 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
-    - 역할 할당
-    - 역할 정의
-    - 리소스 작업
+  - 역할 할당
+  - 역할 정의
+  - 리소스 작업
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
@@ -258,24 +258,24 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 - __DeviceManagementRBAC.Read.All__과 같은 작업을 허용합니다.
 
 - 앱은 다음 엔터티 만들기/할당/삭제/변경도 수행할 수 있습니다.
-    - 역할 할당
-    - 역할 정의
+  - 역할 할당
+  - 역할 정의
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
 - **액세스 사용** 설정: __Microsoft Intune 구성 읽기__
 
 - 다음 엔터티 속성과 상태에 대한 읽기 권한을 허용합니다.
-    - 디바이스 등록
-    - Apple Push Notification Certificate
-    - Apple 장비 등록 프로그램
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - 사용 약관
-    - 통신 비용 관리
-    - 클라우드 PKI
-    - 브랜딩
-    - Mobile Threat Defense
+  - 디바이스 등록
+  - Apple Push Notification Certificate
+  - Apple 장비 등록 프로그램
+  - Apple Volume Purchase Program
+  - Exchange Connector
+  - 사용 약관
+  - 통신 비용 관리
+  - 클라우드 PKI
+  - 브랜딩
+  - Mobile Threat Defense
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
@@ -284,16 +284,16 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 - DeviceManagementServiceConfig.Read.All_과 같은 작업을 허용합니다.
 
 - 앱은 다음 Intune 기능을 구성할 수도 있습니다.
-    - 디바이스 등록
-    - Apple Push Notification Certificate
-    - Apple 장비 등록 프로그램
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - 사용 약관
-    - 통신 비용 관리
-    - 클라우드 PKI
-    - 브랜딩
-    - Mobile Threat Defense
+  - 디바이스 등록
+  - Apple Push Notification Certificate
+  - Apple 장비 등록 프로그램
+  - Apple Volume Purchase Program
+  - Exchange Connector
+  - 사용 약관
+  - 통신 비용 관리
+  - 클라우드 PKI
+  - 브랜딩
+  - Mobile Threat Defense
 
 ## <a name="azure-ad-authentication-examples"></a>Azure AD 인증 예제
 
