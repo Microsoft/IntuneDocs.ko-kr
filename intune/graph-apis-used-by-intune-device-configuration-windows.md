@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune-azure에서 장치를 구성 하는 Api를 그래프 | Microsoft Docs
+title: Microsoft Intune에서 장치를 구성 하는 Graph Api-Azure | Microsoft Docs
 titleSuffix: ''
-description: 일치 하는 Windows CSP를 사용 하 여 모든 Graph API 엔터티 목록을 보려면 및 오프셋 URI Windows 10 장치에 최신 Microsoft Intune에서 장치를 구성 하는 경우에 사용 됩니다. 공유 Pc에서 endpoint protection, Windows Defender advanced threat protection, id 보호, Windows 10 팀, 키오스크, 및 Windows Update for Business에 대 한 일치 하는 API 및 CSP를 참조 하세요.
+description: Microsoft Intune에서 장치를 구성할 때 사용 되는 windows CSP와 일치 하는 Windows CSP 및 offset URI와 일치 하는 모든 Graph API 엔터티 목록을 확인 하세요. 공유 Pc, endpoint protection, Windows Defender advanced threat protection, id 보호, Windows 10 팀, 키오스크 및 비즈니스 Windows 업데이트에 대해 일치 하는 API 및 CSP를 참조 하세요.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,2975 +15,2975 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce35a3fd3b9aa86efb09a903d661affd197f8a2a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3732a4539c13ad05ae8c95621246429b7f38987e
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041785"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354427"
 ---
-# <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Graph Api 및 Intune에서 사용 되는 Windows 10 Csp 일치
+# <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Intune에서 사용 되는 Graph Api 및 일치 하는 Windows 10 Csp
 
-Microsoft Intune을 사용 합니다 [Graph API 엔터티](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (다른 Docs 사이트 열기) 장치를 구성 하려면 (**Intune** > **장치 구성**) Windows 10을 실행 이상. Graph API는 구성 서비스 공급자 (Csp)를 사용 하 여 읽기, 설정, 변경 및/또는 장치에서 구성 설정을 삭제 합니다.
+Microsoft Intune는 [Graph API 엔터티](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (다른 문서 사이트 열기)를 사용 하 여 Windows 10 이상을 실행 하는 장치 (**Intune** > **장치 구성**)를 구성 합니다. Graph API는 Csp (구성 서비스 공급자)를 사용 하 여 장치에서 구성 설정을 읽고, 설정 하 고, 변경 하 고, 삭제할 수 있습니다.
 
-이 목록에 적용 됩니다.
+이 목록은 다음에 적용 됩니다.
 
 - Windows 10 이상
 
-이 문서에서는 그래프 엔터티 및 해당 일치 하는 Windows 10 Csp 나열 및 Uri를 오프셋 합니다.
+이 문서에서는 Graph 엔터티와 일치 하는 Windows 10 Csp 및 오프셋 Uri를 나열 합니다.
 
-이 정보는 다양 한 시나리오에 유용합니다. Intune에서 사용 되는 것을 참조 예를 들어, 사용자 지정 OMA-URI 구성을 포함 하는 설정을 참조 하십시오. 
+이 정보는 다양 한 시나리오에서 유용 합니다. 예를 들어 Intune에서 사용 되는 항목, 사용자 지정 OMA-URI 구성에 포함할 설정 등을 참조 하세요. 
 
 ## <a name="windows-10-csps"></a>Windows 10 CSPs
 
-Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 참조는 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (다른 Docs 사이트 열기).
+Windows 10 구성 서비스 공급자에 대 한 자세한 내용은 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (다른 문서 사이트 열기)를 참조 하세요.
 
-## <a name="graph-api-properties-to-csp-mapping"></a>CSP 매핑 graph API 속성
+## <a name="graph-api-properties-to-csp-mapping"></a>CSP 매핑에 속성 Graph API
 
-다음 목록에서는 대부분의 Windows 10 장치 구성에 대 한 Microsoft Intune에서 사용 하는 Graph API 엔터티를 보여 줍니다. 또한 해당 Windows 10 CSP 표시 및 URI 오프셋입니다.
+다음 목록에서는 Windows 10 장치 구성에 대 한 Microsoft Intune에서 사용 하는 대부분의 Graph API 엔터티를 보여 줍니다. 또한 해당 Windows 10 CSP 및 오프셋 URI를 표시 합니다.
 
-다음 Api를 적용 하는 Windows 10 버전을 확인 하려면 Windows 10을 사용 하 여 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (다른 Docs 사이트 열기).
+다음 Api가 적용 되는 Windows 10 버전을 확인 하려면 Windows 10 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (다른 문서 사이트 열기)를 사용 합니다.
 
-#### <a name="editionupgradeconfigurationlicense"></a>EditionUpgradeConfiguration.License 
-**CSP**: ./Device/Vendor/MSFT/WindowsLicensing  
-**URI 오프셋**: /UpgradeEditionWithLicense
+### <a name="editionupgradeconfigurationlicense"></a>EditionUpgradeConfiguration.License 
+**CSP**:./Device/Vendor/MSFT/WindowsLicensing  
+**오프셋 URI**:/UpgradeEditionWithLicense
 
-#### <a name="editionupgradeconfigurationlicensetype"></a>EditionUpgradeConfiguration.LicenseType 
-**CSP**: ./Device/Vendor/MSFT/WindowsLicensing  
-**URI 오프셋**: /LicenseKeyType
+### <a name="editionupgradeconfigurationlicensetype"></a>EditionUpgradeConfiguration.LicenseType 
+**CSP**:./Device/Vendor/MSFT/WindowsLicensing  
+**오프셋 URI**:/LicenseKeyType
 
-#### <a name="editionupgradeconfigurationproductkey"></a>EditionUpgradeConfiguration.ProductKey 
-**CSP**: ./Device/Vendor/MSFT/WindowsLicensing  
-**URI 오프셋**: /UpgradeEditionWithProductKey
+### <a name="editionupgradeconfigurationproductkey"></a>EditionUpgradeConfiguration.ProductKey 
+**CSP**:./Device/Vendor/MSFT/WindowsLicensing  
+**오프셋 URI**:/UpgradeEditionWithProductKey
 
-#### <a name="editionupgradeconfigurationwindowssmode"></a>EditionUpgradeConfiguration.WindowsSMode 
-**CSP**: ./Device/Vendor/MSFT/WindowsLicensing  
-**URI 오프셋**: / SMode SwitchingPolicy
+### <a name="editionupgradeconfigurationwindowssmode"></a>EditionUpgradeConfiguration.WindowsSMode 
+**CSP**:./Device/Vendor/MSFT/WindowsLicensing  
+**오프셋 URI**:/SMode/SwitchingPolicy
 
-#### <a name="sharedpcconfigurationaccountmanagerpolicy"></a>SharedPCConfiguration.AccountManagerPolicy 
+### <a name="sharedpcconfigurationaccountmanagerpolicy"></a>SharedPCConfiguration.AccountManagerPolicy 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /DeletionPolicy /DiskLevelCaching, /InactiveThreshold, /DiskLevelDeletion
+**오프셋 URI**:/DeletionPolicy,/DiskLevelCaching,/Disklevelcaching,/disklevel삭제
 
-#### <a name="sharedpcconfigurationaccountmanagerpolicy-windows-holographic-for-business-edition-targeted-devices"></a>SharedPCConfiguration.AccountManagerPolicy (Windows Holographic for Business edition 대상 장치) 
-**CSP**: ./Vendor/MSFT/AccountManagement  
-**URI 오프셋**: /DeletionPolicy /StorageCapacityStartDeletion, /StorageCapacityStopDeletion, /ProfileInactivityThreshold
+### <a name="sharedpcconfigurationaccountmanagerpolicy-windows-holographic-for-business-edition-targeted-devices"></a>SharedPCConfiguration 정책 (Windows Holographic for Business edition 대상 장치) 
+**CSP**:./Vendor/MSFT/AccountManagement  
+**OFFSET URI**:/DeletionPolicy,/StorageCapacityStartDeletion,/StorageCapacityStopDeletion,/ProfileInactivityThreshold
 
-#### <a name="sharedpcconfigurationallowedaccounts"></a>SharedPCConfiguration.AllowedAccounts 
+### <a name="sharedpcconfigurationallowedaccounts"></a>SharedPCConfiguration.AllowedAccounts 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /AccountModel
+**오프셋 URI**:/Accountmodel
 
-#### <a name="sharedpcconfigurationallowlocalstorage"></a>SharedPCConfiguration.AllowLocalStorage 
+### <a name="sharedpcconfigurationallowlocalstorage"></a>SharedPCConfiguration.AllowLocalStorage 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /RestrictLocalStorage
+**오프셋 URI**:/RestrictLocalStorage
 
-#### <a name="sharedpcconfigurationdisableaccountmanager"></a>SharedPCConfiguration.DisableAccountManager 
+### <a name="sharedpcconfigurationdisableaccountmanager"></a>SharedPCConfiguration.DisableAccountManager 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /EnableAccountManager
+**오프셋 URI**:/EnableAccountManager
 
-#### <a name="sharedpcconfigurationdisableedupolicies"></a>SharedPCConfiguration.DisableEduPolicies 
+### <a name="sharedpcconfigurationdisableedupolicies"></a>SharedPCConfiguration.DisableEduPolicies 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /SetEduPolicies
+**오프셋 URI**:/SetEduPolicies
 
-#### <a name="sharedpcconfigurationdisablepowerpolicies"></a>SharedPCConfiguration.DisablePowerPolicies 
+### <a name="sharedpcconfigurationdisablepowerpolicies"></a>SharedPCConfiguration.DisablePowerPolicies 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /SetPowerPolicies
+**오프셋 URI**:/SetPowerPolicies
 
-#### <a name="sharedpcconfigurationdisablesigninonresume"></a>SharedPCConfiguration.DisableSignInOnResume 
+### <a name="sharedpcconfigurationdisablesigninonresume"></a>SharedPCConfiguration.DisableSignInOnResume 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /SignInOnResume
+**오프셋 URI**:/SignInOnResume
 
-#### <a name="sharedpcconfigurationenabled"></a>SharedPCConfiguration.Enabled 
+### <a name="sharedpcconfigurationenabled"></a>SharedPCConfiguration.Enabled 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /EnableSharedPCMode
+**오프셋 URI**:/EnableSharedPCMode
 
-#### <a name="sharedpcconfigurationidletimebeforesleepinseconds"></a>SharedPCConfiguration.IdleTimeBeforeSleepInSeconds 
+### <a name="sharedpcconfigurationidletimebeforesleepinseconds"></a>SharedPCConfiguration.IdleTimeBeforeSleepInSeconds 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /InactiveThreshold
+**오프셋 URI**:/Inactivethreshold
 
-#### <a name="sharedpcconfigurationkioskappdisplayname"></a>SharedPCConfiguration.KioskAppDisplayName 
+### <a name="sharedpcconfigurationkioskappdisplayname"></a>SharedPCConfiguration.KioskAppDisplayName 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /KioskModeUserTileDisplayText
+**오프셋 URI**:/KioskModeUserTileDisplayText
 
-#### <a name="sharedpcconfigurationkioskappusermodelid"></a>SharedPCConfiguration.KioskAppUserModelId 
+### <a name="sharedpcconfigurationkioskappusermodelid"></a>SharedPCConfiguration.KioskAppUserModelId 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /KioskModeAUMID
+**오프셋 URI**:/KioskModeAUMID
 
-#### <a name="sharedpcconfigurationlocalstorage"></a>SharedPCConfiguration.LocalStorage 
+### <a name="sharedpcconfigurationlocalstorage"></a>SharedPCConfiguration.LocalStorage 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /RestrictLocalStorage
+**오프셋 URI**:/RestrictLocalStorage
 
-#### <a name="sharedpcconfigurationmaintenancestarttime"></a>SharedPCConfiguration.MaintenanceStartTime 
+### <a name="sharedpcconfigurationmaintenancestarttime"></a>SharedPCConfiguration.MaintenanceStartTime 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /MaintenanceStartTime
+**오프셋 URI**:/MaintenanceStartTime
 
-#### <a name="sharedpcconfigurationsetaccountmanager"></a>SharedPCConfiguration.SetAccountManager
+### <a name="sharedpcconfigurationsetaccountmanager"></a>SharedPCConfiguration.SetAccountManager
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /EnableAccountManager
+**오프셋 URI**:/EnableAccountManager
 
-#### <a name="sharedpcconfigurationsetedupolicies"></a>SharedPCConfiguration.SetEduPolicies 
+### <a name="sharedpcconfigurationsetedupolicies"></a>SharedPCConfiguration.SetEduPolicies 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /SetEduPolicies
+**오프셋 URI**:/SetEduPolicies
 
-#### <a name="sharedpcconfigurationsetpowerpolicies"></a>SharedPCConfiguration.SetPowerPolicies 
+### <a name="sharedpcconfigurationsetpowerpolicies"></a>SharedPCConfiguration.SetPowerPolicies 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /SetPowerPolicies
+**오프셋 URI**:/SetPowerPolicies
 
-#### <a name="sharedpcconfigurationsigninonresume"></a>SharedPCConfiguration.SignInOnResume 
+### <a name="sharedpcconfigurationsigninonresume"></a>SharedPCConfiguration.SignInOnResume 
 **CSP**: ./Vendor/MSFT/SharedPC  
-**URI 오프셋**: /SignInOnResume
+**오프셋 URI**:/SignInOnResume
 
-#### <a name="windows10endpointconfigurationsmartscreenblockoverrideforfiles"></a>Windows10endpointconfiguration.smartScreenBlockOverrideForFiles 
+### <a name="windows10endpointconfigurationsmartscreenblockoverrideforfiles"></a>Windows10endpointconfiguration.smartScreenBlockOverrideForFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/SmartScreen/PreventOverrideForFilesInShell
+**오프셋 URI**:/Config/SmartScreen/PreventOverrideForFilesInShell
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardallowfilesaveonhost"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowFileSaveOnHost 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/SaveFilesToHost
+### <a name="windows10endpointprotectionconfigurationapplicationguardallowfilesaveonhost"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowFileSaveOnHost 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/SaveFilesToHost
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardallowpersistence"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPersistence 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/AllowPersistence
+### <a name="windows10endpointprotectionconfigurationapplicationguardallowpersistence"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPersistence 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttolocalprinters"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToLocalPrinters 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/PrintingSettings
+### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttolocalprinters"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToLocalPrinters 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/PrintingSettings
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttonetworkprinters"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToNetworkPrinters 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/PrintingSettings
+### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttonetworkprinters"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToNetworkPrinters 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/PrintingSettings
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttopdf"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToPDF 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/PrintingSettings
+### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttopdf"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToPDF 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/PrintingSettings
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttoxps"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToXPS 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/PrintingSettings
+### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttoxps"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToXPS 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/PrintingSettings
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardallowvirtualgpu"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowVirtualGPU 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/AllowVirtualGPU
+### <a name="windows10endpointprotectionconfigurationapplicationguardallowvirtualgpu"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowVirtualGPU 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/AllowVirtualGPU
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardblockclipboardsharing"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardBlockClipboardSharing 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/ClipboardSettings
+### <a name="windows10endpointprotectionconfigurationapplicationguardblockclipboardsharing"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardBlockClipboardSharing 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/ClipboardSettings
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardblockfiletransfer"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardBlockFileTransfer 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/ClipboardFileType
+### <a name="windows10endpointprotectionconfigurationapplicationguardblockfiletransfer"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardBlockFileTransfer 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/ClipboardFileType
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardblocknonenterprisecontent"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardBlockNonEnterpriseContent 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/BlockNonEnterpriseContent
+### <a name="windows10endpointprotectionconfigurationapplicationguardblocknonenterprisecontent"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardBlockNonEnterpriseContent 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/BlockNonEnterpriseContent
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardenabled"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardEnabled 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 설정/AllowWindowsDefenderApplicationGuard
+### <a name="windows10endpointprotectionconfigurationapplicationguardenabled"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardEnabled 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**오프셋 URI**:/Settings/AllowWindowsDefenderApplicationGuard
 
-#### <a name="windows10endpointprotectionconfigurationapplicationguardforceauditing"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardForceAuditing 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
-**URI 오프셋**: / 감사/AuditApplicationGuard
+### <a name="windows10endpointprotectionconfigurationapplicationguardforceauditing"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardForceAuditing 
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**OFFSET URI**:/Audit/auditapplicationguard
 
-#### <a name="windows10endpointprotectionconfigurationbitlockerallowstandarduserencryption"></a>Windows10EndpointProtectionConfiguration.BitLockerAllowStandardUserEncryption 
+### <a name="windows10endpointprotectionconfigurationbitlockerallowstandarduserencryption"></a>Windows10EndpointProtectionConfiguration.BitLockerAllowStandardUserEncryption 
 **CSP**: ./Device/Vendor/MSFT/BitLocker  
-**URI 오프셋**: /AllowStandardUserEncryption
+**오프셋 URI**:/Allowstandarduserencryption
 
-#### <a name="windows10endpointprotectionconfigurationbitlockerdisablewarningforotherdiskencryption"></a>Windows10EndpointProtectionConfiguration.BitLockerDisableWarningForOtherDiskEncryption 
+### <a name="windows10endpointprotectionconfigurationbitlockerdisablewarningforotherdiskencryption"></a>Windows10EndpointProtectionConfiguration.BitLockerDisableWarningForOtherDiskEncryption 
 **CSP**: ./Device/Vendor/MSFT/BitLocker  
-**URI 오프셋**: /AllowWarningForOtherDiskEncryption
+**오프셋 URI**:/AllowWarningForOtherDiskEncryption
 
-#### <a name="windows10endpointprotectionconfigurationbitlockerenablestoragecardencryptiononmobile"></a>Windows10EndpointProtectionConfiguration.BitLockerEnableStorageCardEncryptionOnMobile 
+### <a name="windows10endpointprotectionconfigurationbitlockerenablestoragecardencryptiononmobile"></a>Windows10EndpointProtectionConfiguration.BitLockerEnableStorageCardEncryptionOnMobile 
 **CSP**: ./Device/Vendor/MSFT/BitLocker  
-**URI 오프셋**: /RequireStorageCardEncryption
+**오프셋 URI**:/RequireStorageCardEncryption
 
-#### <a name="windows10endpointprotectionconfigurationbitlockerencryptdevice"></a>Windows10EndpointProtectionConfiguration.BitLockerEncryptDevice 
+### <a name="windows10endpointprotectionconfigurationbitlockerencryptdevice"></a>Windows10EndpointProtectionConfiguration.BitLockerEncryptDevice 
 **CSP**: ./Device/Vendor/MSFT/BitLocker  
-**URI 오프셋**: /RequireDeviceEncryption
+**오프셋 URI**:/Requiredeviceencryption
 
-#### <a name="windows10endpointprotectionconfigurationbitlockerfixeddrivepolicy"></a>Windows10EndpointProtectionConfiguration.BitLockerFixedDrivePolicy 
+### <a name="windows10endpointprotectionconfigurationbitlockerfixeddrivepolicy"></a>Windows10EndpointProtectionConfiguration.BitLockerFixedDrivePolicy 
 **CSP**: ./Device/Vendor/MSFT/BitLocker  
-**URI 오프셋**: /EncryptionMethodByDriveType, /FixedDrivesRequireEncryption /FixedDrivesRecoveryOptions
+**OFFSET URI**:/Encryptionmethodbydrivetype,/FixedDrivesRequireEncryption,/Fixeddrivesrequireencryption
 
-#### <a name="windows10endpointprotectionconfigurationbitlockerremovabledrivepolicy"></a>Windows10EndpointProtectionConfiguration.BitLockerRemovableDrivePolicy 
+### <a name="windows10endpointprotectionconfigurationbitlockerremovabledrivepolicy"></a>Windows10EndpointProtectionConfiguration.BitLockerRemovableDrivePolicy 
 **CSP**: ./Device/Vendor/MSFT/BitLocker  
 **Offset URI**: /EncryptionMethodByDriveType, /RemovableDrivesRequireEncryption
 
-#### <a name="windows10endpointprotectionconfigurationbitlockersystemdrivepolicy"></a>Windows10EndpointProtectionConfiguration.BitLockerSystemDrivePolicy 
+### <a name="windows10endpointprotectionconfigurationbitlockersystemdrivepolicy"></a>Windows10EndpointProtectionConfiguration.BitLockerSystemDrivePolicy 
 **CSP**: ./Device/Vendor/MSFT/BitLocker  
 **Offset URI**: /EncryptionMethodByDriveType, /SystemDrivesRequireStartupAuthentication, /SystemDrivesMinimumPINLength, /SystemDrivesRecoveryMessage, /SystemDrivesRecoveryOptions
 
-#### <a name="windows10endpointprotectionconfigurationclientconnectionencryptionlevel"></a>windows10endpointprotectionconfiguration.clientConnectionEncryptionLevel 
+### <a name="windows10endpointprotectionconfigurationclientconnectionencryptionlevel"></a>windows10endpointprotectionconfiguration.clientConnectionEncryptionLevel 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteDesktopServices/ClientConnectionEncryptionLevel
+**오프셋 URI**:/Config/RemoteDesktopServices/ClientConnectionEncryptionLevel
 
-#### <a name="windows10endpointprotectionconfigurationconfiguresmbv1clientdriver"></a>windows10endpointprotectionconfiguration.configureSMBV1ClientDriver 
+### <a name="windows10endpointprotectionconfigurationconfiguresmbv1clientdriver"></a>windows10endpointprotectionconfiguration.configureSMBV1ClientDriver 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSecurityGuide/ConfigureSMBV1ClientDriver
+**오프셋 URI**:/Config/MSSecurityGuide/ConfigureSMBV1ClientDriver
 
-#### <a name="windows10endpointprotectionconfigurationconnectivitydownloadingofprintdriversoverhttp"></a>Windows10EndpointProtectionConfiguration.ConnectivityDownloadingOfPrintDriversOverHttp 
+### <a name="windows10endpointprotectionconfigurationconnectivitydownloadingofprintdriversoverhttp"></a>Windows10EndpointProtectionConfiguration.ConnectivityDownloadingOfPrintDriversOverHttp 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/DisableDownloadingOfPrintDriversOverHTTP
+**오프셋 URI**:/Config/Connectivity/DisableDownloadingOfPrintDriversOverHTTP
 
-#### <a name="windows10endpointprotectionconfigurationconnectivityhardeneduncpaths"></a>Windows10EndpointProtectionConfiguration.ConnectivityHardenedUncPaths 
+### <a name="windows10endpointprotectionconfigurationconnectivityhardeneduncpaths"></a>Windows10EndpointProtectionConfiguration.ConnectivityHardenedUncPaths 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/HardenedUNCPaths
+**오프셋 URI**:/Config/Connectivity/HardenedUNCPaths
 
-#### <a name="windows10endpointprotectionconfigurationconnectivityinternetdownloadforwebpublishingandonlineorderingwizards"></a>Windows10EndpointProtectionConfiguration.ConnectivityInternetDownloadForWebPublishingAndOnlineOrderingWizards 
+### <a name="windows10endpointprotectionconfigurationconnectivityinternetdownloadforwebpublishingandonlineorderingwizards"></a>Windows10EndpointProtectionConfiguration.ConnectivityInternetDownloadForWebPublishingAndOnlineOrderingWizards 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards
+**오프셋 URI**:/Config/Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards
 
-#### <a name="windows10endpointprotectionconfigurationconnectivityprintingoverhttp"></a>Windows10EndpointProtectionConfiguration.ConnectivityPrintingOverHttp 
+### <a name="windows10endpointprotectionconfigurationconnectivityprintingoverhttp"></a>Windows10EndpointProtectionConfiguration.ConnectivityPrintingOverHttp 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/DiablePrintingOverHTTP
+**오프셋 URI**:/Config/Connectivity/DiablePrintingOverHTTP
 
-#### <a name="windows10endpointprotectionconfigurationcredentialsuienumerateadministrators"></a>Windows10EndpointProtectionConfiguration.CredentialsUIEnumerateAdministrators 
+### <a name="windows10endpointprotectionconfigurationcredentialsuienumerateadministrators"></a>Windows10EndpointProtectionConfiguration.CredentialsUIEnumerateAdministrators 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/CredentialsUI/EnumerateAdministrators
+**오프셋 URI**:/Suser/shii/sgt
 
-#### <a name="windows10endpointprotectionconfigurationdefenderadditionalguardedfolders"></a>Windows10EndpointProtectionConfiguration.DefenderAdditionalGuardedFolders 
-**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/Defender/ControlledFolderAccessProtectedFolders
+### <a name="windows10endpointprotectionconfigurationdefenderadditionalguardedfolders"></a>Windows10EndpointProtectionConfiguration.DefenderAdditionalGuardedFolders 
+**CSP**:./DEVICE/VENDOR/MSFT/POLICY **Offset URI**:/Config/Defender/ControlledFolderAccessProtectedFolders
 
-#### <a name="windows10endpointprotectionconfigurationdefenderadvancedransomewareprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderAdvancedRansomewareProtectionType 
+### <a name="windows10endpointprotectionconfigurationdefenderadvancedransomewareprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderAdvancedRansomewareProtectionType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderattacksurfacereductionexcludedpaths"></a>Windows10EndpointProtectionConfiguration.DefenderAttackSurfaceReductionExcludedPaths 
+### <a name="windows10endpointprotectionconfigurationdefenderattacksurfacereductionexcludedpaths"></a>Windows10EndpointProtectionConfiguration.DefenderAttackSurfaceReductionExcludedPaths 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionOnlyExclusions
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionOnlyExclusions
 
-#### <a name="windows10endpointprotectionconfigurationdefenderemailcontentexecution"></a>Windows10EndpointProtectionConfiguration.DefenderEmailContentExecution 
+### <a name="windows10endpointprotectionconfigurationdefenderemailcontentexecution"></a>Windows10EndpointProtectionConfiguration.DefenderEmailContentExecution 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowEmailScanning
+**오프셋 URI**:/Config/Defender/AllowEmailScanning
 
-#### <a name="windows10endpointprotectionconfigurationdefenderemailcontentexecutiontype"></a>Windows10EndpointProtectionConfiguration.DefenderEmailContentExecutionType 
+### <a name="windows10endpointprotectionconfigurationdefenderemailcontentexecutiontype"></a>Windows10EndpointProtectionConfiguration.DefenderEmailContentExecutionType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
+**OFFSET URI**:/CONFIG/DEFENDER/ATTACKSURFACEREDUCTIONRULES (CSP/configuration에는 그래프 속성이 필요 합니다. Windows10endpointprotection/defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/ DefenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/ DefenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/defenderEmailContentExecutionType, windows10endpointprotection/defenderPreventCredentialStealingType, windows10endpointprotection/ DefenderUntrustedUSBProcessType
 
-#### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxml"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXml 
-**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/ExploitGuard/ExploitProtectionSettings
+### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxml"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXml 
+**CSP**:./DEVICE/VENDOR/MSFT/POLICY **Offset URI**:/Config/ExploitGuard/ExploitProtectionSettings
 
-#### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxmlfilename"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXmlFileName 
+### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxmlfilename"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXmlFileName 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ExploitGuard/ExploitProtectionSettings
+**오프셋 URI**:/Config/ExploitGuard/ExploitProtectionSettings
 
-#### <a name="windows10endpointprotectionconfigurationdefenderguardedfoldersallowedapppaths"></a>Windows10EndpointProtectionConfiguration.DefenderGuardedFoldersAllowedAppPaths 
-**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/Defender/ControlledFolderAccessAllowedApplications
+### <a name="windows10endpointprotectionconfigurationdefenderguardedfoldersallowedapppaths"></a>Windows10EndpointProtectionConfiguration.DefenderGuardedFoldersAllowedAppPaths 
+**CSP**:./DEVICE/VENDOR/MSFT/POLICY **Offset URI**:/Config/Defender/ControlledFolderAccessAllowedApplications
 
-#### <a name="windows10endpointprotectionconfigurationdefenderguardmyfolderstype"></a>Windows10EndpointProtectionConfiguration.DefenderGuardMyFoldersType 
+### <a name="windows10endpointprotectionconfigurationdefenderguardmyfolderstype"></a>Windows10EndpointProtectionConfiguration.DefenderGuardMyFoldersType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/EnableControlledFolderAccess
+**오프셋 URI**:/Config/Defender/EnableControlledFolderAccess
 
-#### <a name="windows10endpointprotectionconfigurationdefendernetworkprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderNetworkProtectionType 
-**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/Defender/EnableNetworkProtection
+### <a name="windows10endpointprotectionconfigurationdefendernetworkprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderNetworkProtectionType 
+**CSP**:./DEVICE/VENDOR/MSFT/POLICY **Offset URI**:/Config/Defender/EnableNetworkProtection
 
-#### <a name="windows10endpointprotectionconfigurationdefenderofficeappsexecutablecontentcreationorlaunch"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunch 
+### <a name="windows10endpointprotectionconfigurationdefenderofficeappsexecutablecontentcreationorlaunch"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunch 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderofficeappsexecutablecontentcreationorlaunchtype"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunchType
+### <a name="windows10endpointprotectionconfigurationdefenderofficeappsexecutablecontentcreationorlaunchtype"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunchType
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
+**OFFSET URI**:/CONFIG/DEFENDER/ATTACKSURFACEREDUCTIONRULES (CSP/configuration에는 그래프 속성이 필요 합니다. Windows10endpointprotection/defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/ DefenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/ DefenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/defenderEmailContentExecutionType, windows10endpointprotection/defenderPreventCredentialStealingType, windows10endpointprotection/ DefenderUntrustedUSBProcessType
 
-#### <a name="windows10endpointprotectionconfigurationdefenderofficeappslaunchchildprocess"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsLaunchChildProcess 
+### <a name="windows10endpointprotectionconfigurationdefenderofficeappslaunchchildprocess"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsLaunchChildProcess 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderofficeappslaunchchildprocesstype"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsLaunchChildProcessType 
+### <a name="windows10endpointprotectionconfigurationdefenderofficeappslaunchchildprocesstype"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsLaunchChildProcessType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
+**OFFSET URI**:/CONFIG/DEFENDER/ATTACKSURFACEREDUCTIONRULES (CSP/configuration에는 그래프 속성이 필요 합니다. Windows10endpointprotection/defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/ DefenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/ DefenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/defenderEmailContentExecutionType, windows10endpointprotection/defenderPreventCredentialStealingType, windows10endpointprotection/ DefenderUntrustedUSBProcessType
 
-#### <a name="windows10endpointprotectionconfigurationdefenderofficeappsotherprocessinjection"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsOtherProcessInjection 
+### <a name="windows10endpointprotectionconfigurationdefenderofficeappsotherprocessinjection"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsOtherProcessInjection 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderofficeappsotherprocessinjectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsOtherProcessInjectionType 
+### <a name="windows10endpointprotectionconfigurationdefenderofficeappsotherprocessinjectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsOtherProcessInjectionType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType 
+**OFFSET URI**:/CONFIG/DEFENDER/ATTACKSURFACEREDUCTIONRULES (CSP/configuration에는 그래프 속성이 필요 합니다. Windows10endpointprotection/defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/ DefenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/ DefenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/defenderEmailContentExecutionType, windows10endpointprotection/defenderPreventCredentialStealingType, windows10endpointprotection/ DefenderUntrustedUSBProcessType 
 
-#### <a name="windows10endpointprotectionconfigurationdefenderofficemacrocodeallowwin32imports"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeMacroCodeAllowWin32Imports 
+### <a name="windows10endpointprotectionconfigurationdefenderofficemacrocodeallowwin32imports"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeMacroCodeAllowWin32Imports 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderofficemacrocodeallowwin32importstype"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeMacroCodeAllowWin32ImportsType 
+### <a name="windows10endpointprotectionconfigurationdefenderofficemacrocodeallowwin32importstype"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeMacroCodeAllowWin32ImportsType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
+**OFFSET URI**:/CONFIG/DEFENDER/ATTACKSURFACEREDUCTIONRULES (CSP/configuration에는 그래프 속성이 필요 합니다. Windows10endpointprotection/defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/ DefenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/ DefenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/defenderEmailContentExecutionType, windows10endpointprotection/defenderPreventCredentialStealingType, windows10endpointprotection/ DefenderUntrustedUSBProcessType
 
-#### <a name="windows10endpointprotectionconfigurationdefenderpreventcredentialstealingtype"></a>Windows10EndpointProtectionConfiguration.DefenderPreventCredentialStealingType 
+### <a name="windows10endpointprotectionconfigurationdefenderpreventcredentialstealingtype"></a>Windows10EndpointProtectionConfiguration.DefenderPreventCredentialStealingType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
+**OFFSET URI**:/CONFIG/DEFENDER/ATTACKSURFACEREDUCTIONRULES (CSP/configuration에는 그래프 속성이 필요 합니다. Windows10endpointprotection/defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/ DefenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/ DefenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/defenderEmailContentExecutionType, windows10endpointprotection/defenderPreventCredentialStealingType, windows10endpointprotection/ DefenderUntrustedUSBProcessType
 
-#### <a name="windows10endpointprotectionconfigurationdefenderprocesscreation"></a>Windows10EndpointProtectionConfiguration.DefenderProcessCreation 
+### <a name="windows10endpointprotectionconfigurationdefenderprocesscreation"></a>Windows10EndpointProtectionConfiguration.DefenderProcessCreation 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderprocesscreationtype"></a>Windows10EndpointProtectionConfiguration.DefenderProcessCreationType 
+### <a name="windows10endpointprotectionconfigurationdefenderprocesscreationtype"></a>Windows10EndpointProtectionConfiguration.DefenderProcessCreationType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderprotectagainstpotentiallyunwantedapplications"></a>Windows10EndpointProtectionConfiguration.DefenderProtectAgainstPotentiallyUnwantedApplications 
+### <a name="windows10endpointprotectionconfigurationdefenderprotectagainstpotentiallyunwantedapplications"></a>Windows10EndpointProtectionConfiguration.DefenderProtectAgainstPotentiallyUnwantedApplications 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSecurityGuide/TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications
+**오프셋 URI**:/Config/MSSecurityGuide/TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications
 
-#### <a name="windows10endpointprotectionconfigurationdefenderscriptdownloadedpayloadexecution"></a>Windows10EndpointProtectionConfiguration.DefenderScriptDownloadedPayloadExecution 
+### <a name="windows10endpointprotectionconfigurationdefenderscriptdownloadedpayloadexecution"></a>Windows10EndpointProtectionConfiguration.DefenderScriptDownloadedPayloadExecution 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderscriptdownloadedpayloadexecutiontype"></a>Windows10EndpointProtectionConfiguration.DefenderScriptDownloadedPayloadExecutionType 
+### <a name="windows10endpointprotectionconfigurationdefenderscriptdownloadedpayloadexecutiontype"></a>Windows10EndpointProtectionConfiguration.DefenderScriptDownloadedPayloadExecutionType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
+**OFFSET URI**:/CONFIG/DEFENDER/ATTACKSURFACEREDUCTIONRULES (CSP/configuration에는 그래프 속성이 필요 합니다. Windows10endpointprotection/defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/ DefenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/ DefenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/defenderEmailContentExecutionType, windows10endpointprotection/defenderPreventCredentialStealingType, windows10endpointprotection/ DefenderUntrustedUSBProcessType
 
-#### <a name="windows10endpointprotectionconfigurationdefenderscriptobfuscatedmacrocode"></a>Windows10EndpointProtectionConfiguration.DefenderScriptObfuscatedMacroCode 
+### <a name="windows10endpointprotectionconfigurationdefenderscriptobfuscatedmacrocode"></a>Windows10EndpointProtectionConfiguration.DefenderScriptObfuscatedMacroCode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderscriptobfuscatedmacrocodetype"></a>Windows10EndpointProtectionConfiguration.DefenderScriptObfuscatedMacroCodeType 
+### <a name="windows10endpointprotectionconfigurationdefenderscriptobfuscatedmacrocodetype"></a>Windows10EndpointProtectionConfiguration.DefenderScriptObfuscatedMacroCodeType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
+**OFFSET URI**:/CONFIG/DEFENDER/ATTACKSURFACEREDUCTIONRULES (CSP/configuration에는 그래프 속성이 필요 합니다. Windows10endpointprotection/defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/ DefenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/ DefenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/defenderEmailContentExecutionType, windows10endpointprotection/defenderPreventCredentialStealingType, windows10endpointprotection/ DefenderUntrustedUSBProcessType
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterblockexploitprotectionoverride"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterBlockExploitProtectionOverride 
-**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterblockexploitprotectionoverride"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterBlockExploitProtectionOverride 
+**CSP**:./DEVICE/VENDOR/MSFT/POLICY **Offset URI**:/Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisableaccountui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAccountUI 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisableaccountui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAccountUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/DisableAccountProtectionUI
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/DisableAccountProtectionUI
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisableappbrowserui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAppBrowserUI 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisableappbrowserui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAppBrowserUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/DisableAppBrowserUI
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/DisableAppBrowserUI
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablefamilyui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableFamilyUI 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablefamilyui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableFamilyUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/DisableFamilyUI
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/DisableFamilyUI
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablehealthui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableHealthUI 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablehealthui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableHealthUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/DisableHealthUI
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/DisableHealthUI
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablenetworkui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableNetworkUI 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablenetworkui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableNetworkUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/DisableNetworkUI
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/DisableNetworkUI
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablesecurebootui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableSecureBootUI 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablesecurebootui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableSecureBootUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/HideSecureBoot
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/HideSecureBoot
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisabletroubleshootingui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableTroubleshootingUI 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisabletroubleshootingui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableTroubleshootingUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/HideTPMTroubleshooting
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/HideTPMTroubleshooting
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablevirusui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableVirusUI 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisablevirusui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableVirusUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/DisableVirusUI
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/DisableVirusUI
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterhelpemail"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterHelpEmail 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterhelpemail"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterHelpEmail 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/Email
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/Email
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterhelpphone"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterHelpPhone 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterhelpphone"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterHelpPhone 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/Phone
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/Phone
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterhelpurl"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterHelpURL 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterhelpurl"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterHelpURL 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/URL
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/URL
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenteritcontactdisplay"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterITContactDisplay 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenteritcontactdisplay"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterITContactDisplay 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: / WindowsDefenderSecurityCenter EnableCustomizedToasts, / WindowsDefenderSecurityCenter EnableInAppCustomization
+**오프셋 URI**:/WindowsDefenderSecurityCenter/EnableCustomizedToasts,/WindowsDefenderSecurityCenter/EnableInAppCustomization
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenternotificationsfromapp"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterNotificationsFromApp 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenternotificationsfromapp"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterNotificationsFromApp 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl
 
-#### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterorganizationdisplayname"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterOrganizationDisplayName 
+### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterorganizationdisplayname"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterOrganizationDisplayName 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsDefenderSecurityCenter/CompanyName
+**오프셋 URI**:/Config/WindowsDefenderSecurityCenter/CompanyName
 
-#### <a name="windows10endpointprotectionconfigurationdefenderuntrustedexecutable"></a>Windows10EndpointProtectionConfiguration.DefenderUntrustedExecutable 
+### <a name="windows10endpointprotectionconfigurationdefenderuntrustedexecutable"></a>Windows10EndpointProtectionConfiguration.DefenderUntrustedExecutable 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderuntrustedexecutabletype"></a>Windows10EndpointProtectionConfiguration.DefenderUntrustedExecutableType 
+### <a name="windows10endpointprotectionconfigurationdefenderuntrustedexecutabletype"></a>Windows10EndpointProtectionConfiguration.DefenderUntrustedExecutableType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderuntrustedusbprocess"></a>Windows10EndpointProtectionConfiguration.DefenderUntrustedUSBProcess 
+### <a name="windows10endpointprotectionconfigurationdefenderuntrustedusbprocess"></a>Windows10EndpointProtectionConfiguration.DefenderUntrustedUSBProcess 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules
+**오프셋 URI**:/Config/Defender/AttackSurfaceReductionRules
 
-#### <a name="windows10endpointprotectionconfigurationdefenderuntrustedusbprocesstype"></a>Windows10EndpointProtectionConfiguration.DefenderUntrustedUSBProcessType 
+### <a name="windows10endpointprotectionconfigurationdefenderuntrustedusbprocesstype"></a>Windows10EndpointProtectionConfiguration.DefenderUntrustedUSBProcessType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AttackSurfaceReductionRules (CSP/구성 필요 그래프 속성: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
+**OFFSET URI**:/CONFIG/DEFENDER/ATTACKSURFACEREDUCTIONRULES (CSP/configuration에는 그래프 속성이 필요 합니다. Windows10endpointprotection/defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/ DefenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/ DefenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/defenderEmailContentExecutionType, windows10endpointprotection/defenderPreventCredentialStealingType, windows10endpointprotection/ DefenderUntrustedUSBProcessType
 
-#### <a name="windows10endpointprotectionconfigurationdeviceguardenablesecurebootwithdma"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableSecureBootWithDMA 
+### <a name="windows10endpointprotectionconfigurationdeviceguardenablesecurebootwithdma"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableSecureBootWithDMA 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
+**오프셋 URI**:/Config/DeviceGuard/RequirePlatformSecurityFeatures
 
-#### <a name="windows10endpointprotectionconfigurationdeviceguardenablevirtualizationbasedsecurity"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableVirtualizationBasedSecurity 
-**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
+### <a name="windows10endpointprotectionconfigurationdeviceguardenablevirtualizationbasedsecurity"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableVirtualizationBasedSecurity 
+**CSP**:./DEVICE/VENDOR/MSFT/POLICY **Offset URI**:/Config/DeviceGuard/EnableVirtualizationBasedSecurity
 
-#### <a name="windows10endpointprotectionconfigurationdeviceguardlaunchsystemguard"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLaunchSystemGuard 
+### <a name="windows10endpointprotectionconfigurationdeviceguardlaunchsystemguard"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLaunchSystemGuard 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceGuard/ConfigureSystemGuardLaunch
+**오프셋 URI**:/Config/DeviceGuard/ConfigureSystemGuardLaunch
 
-#### <a name="windows10endpointprotectionconfigurationdeviceguardlocalsystemauthoritycredentialguardsettings"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLocalSystemAuthorityCredentialGuardSettings 
+### <a name="windows10endpointprotectionconfigurationdeviceguardlocalsystemauthoritycredentialguardsettings"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLocalSystemAuthorityCredentialGuardSettings 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceGuard/LsaCfgFlags
+**오프셋 URI**:/Config/DeviceGuard/LsaCfgFlags
 
-#### <a name="windows10endpointprotectionconfigurationdmaguarddeviceenumerationpolicy"></a>Windows10EndpointProtectionConfiguration.DmaGuardDeviceEnumerationPolicy 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DmaGuard/DeviceEnumerationPolicy
+### <a name="windows10endpointprotectionconfigurationdmaguarddeviceenumerationpolicy"></a>Windows10EndpointProtectionConfiguration.DmaGuardDeviceEnumerationPolicy 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DmaGuard/DeviceEnumerationPolicy
 
-#### <a name="windows10endpointprotectionconfigurationeventlogserviceapplicationlogmaximumfilesizeinkb"></a>Windows10EndpointProtectionConfiguration.EventLogServiceApplicationLogMaximumFileSizeInKb 
+### <a name="windows10endpointprotectionconfigurationeventlogserviceapplicationlogmaximumfilesizeinkb"></a>Windows10EndpointProtectionConfiguration.EventLogServiceApplicationLogMaximumFileSizeInKb 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/EventLogService/SpecifyMaximumFileSizeApplicationLog
+**오프셋 URI**:/Config/EventLogService/SpecifyMaximumFileSizeApplicationLog
 
-#### <a name="windows10endpointprotectionconfigurationeventlogservicesecuritylogmaximumfilesizeinkb"></a>Windows10EndpointProtectionConfiguration.EventLogServiceSecurityLogMaximumFileSizeInKb 
+### <a name="windows10endpointprotectionconfigurationeventlogservicesecuritylogmaximumfilesizeinkb"></a>Windows10EndpointProtectionConfiguration.EventLogServiceSecurityLogMaximumFileSizeInKb 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/EventLogService/SpecifyMaximumFileSizeSecurityLog
+**오프셋 URI**:/Config/EventLogService/SpecifyMaximumFileSizeSecurityLog
 
-#### <a name="windows10endpointprotectionconfigurationeventlogservicesystemlogmaximumfilesizeinkb"></a>Windows10EndpointProtectionConfiguration.EventLogServiceSystemLogMaximumFileSizeInKb 
+### <a name="windows10endpointprotectionconfigurationeventlogservicesystemlogmaximumfilesizeinkb"></a>Windows10EndpointProtectionConfiguration.EventLogServiceSystemLogMaximumFileSizeInKb 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/EventLogService/SpecifyMaximumFileSizeSystemLog
+**오프셋 URI**:/Config/EventLogService/SpecifyMaximumFileSizeSystemLog
 
-#### <a name="windows10endpointprotectionconfigurationexplorerdataexecutionprevention"></a>Windows10EndpointProtectionConfiguration.ExplorerDataExecutionPrevention 
+### <a name="windows10endpointprotectionconfigurationexplorerdataexecutionprevention"></a>Windows10EndpointProtectionConfiguration.ExplorerDataExecutionPrevention 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/FileExplorer/TurnOffDataExecutionPreventionForExplorer
+**오프셋 URI**:/Config/FileExplorer/TurnOffDataExecutionPreventionForExplorer
 
-#### <a name="windows10endpointprotectionconfigurationexplorerheapterminationoncorruption"></a>Windows10EndpointProtectionConfiguration.ExplorerHeapTerminationOnCorruption 
+### <a name="windows10endpointprotectionconfigurationexplorerheapterminationoncorruption"></a>Windows10EndpointProtectionConfiguration.ExplorerHeapTerminationOnCorruption 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/FileExplorer/TurnOffHeapTerminationOnCorruption
+**오프셋 URI**:/Config/FileExplorer/TurnOffHeapTerminationOnCorruption
 
-#### <a name="windows10endpointprotectionconfigurationfirewallblockstatefulftp"></a>Windows10EndpointProtectionConfiguration.FirewallBlockStatefulFTP 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/DisableStatefulFtp
+### <a name="windows10endpointprotectionconfigurationfirewallblockstatefulftp"></a>Windows10EndpointProtectionConfiguration.FirewallBlockStatefulFTP 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/DisableStatefulFtp
 
-#### <a name="windows10endpointprotectionconfigurationfirewallcertificaterevocationlistcheckmethod"></a>Windows10EndpointProtectionConfiguration.FirewallCertificateRevocationListCheckMethod 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/CRLcheck
+### <a name="windows10endpointprotectionconfigurationfirewallcertificaterevocationlistcheckmethod"></a>Windows10EndpointProtectionConfiguration.FirewallCertificateRevocationListCheckMethod 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/CRLcheck
 
-#### <a name="windows10endpointprotectionconfigurationfirewallidletimeoutforsecurityassociationinseconds"></a>Windows10EndpointProtectionConfiguration.FirewallIdleTimeoutForSecurityAssociationInSeconds 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/SaIdleTime
+### <a name="windows10endpointprotectionconfigurationfirewallidletimeoutforsecurityassociationinseconds"></a>Windows10EndpointProtectionConfiguration.FirewallIdleTimeoutForSecurityAssociationInSeconds 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/SaIdleTime
 
-#### <a name="windows10endpointprotectionconfigurationfirewallipsecexemptionsallowdhcp"></a>Windows10EndpointProtectionConfiguration.FirewallIPSecExemptionsAllowDHCP 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/IPsecExempt
+### <a name="windows10endpointprotectionconfigurationfirewallipsecexemptionsallowdhcp"></a>Windows10EndpointProtectionConfiguration.FirewallIPSecExemptionsAllowDHCP 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/IPsecExempt
 
-#### <a name="windows10endpointprotectionconfigurationfirewallipsecexemptionsallowicmp"></a>Windows10EndpointProtectionConfiguration.FirewallIPSecExemptionsAllowICMP 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/IPsecExempt
+### <a name="windows10endpointprotectionconfigurationfirewallipsecexemptionsallowicmp"></a>Windows10EndpointProtectionConfiguration.FirewallIPSecExemptionsAllowICMP 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/IPsecExempt
 
-#### <a name="windows10endpointprotectionconfigurationfirewallipsecexemptionsallowneighbordiscovery"></a>Windows10EndpointProtectionConfiguration.FirewallIPSecExemptionsAllowNeighborDiscovery 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/IPsecExempt
+### <a name="windows10endpointprotectionconfigurationfirewallipsecexemptionsallowneighbordiscovery"></a>Windows10EndpointProtectionConfiguration.FirewallIPSecExemptionsAllowNeighborDiscovery 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/IPsecExempt
 
-#### <a name="windows10endpointprotectionconfigurationfirewallipsecexemptionsallowrouterdiscovery"></a>Windows10EndpointProtectionConfiguration.FirewallIPSecExemptionsAllowRouterDiscovery 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/IPsecExempt
+### <a name="windows10endpointprotectionconfigurationfirewallipsecexemptionsallowrouterdiscovery"></a>Windows10EndpointProtectionConfiguration.FirewallIPSecExemptionsAllowRouterDiscovery 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/IPsecExempt
 
-#### <a name="windows10endpointprotectionconfigurationfirewallmergekeyingmodulesettings"></a>Windows10EndpointProtectionConfiguration.FirewallMergeKeyingModuleSettings 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/OpportunisticallyMatchAuthSetPerKM
+### <a name="windows10endpointprotectionconfigurationfirewallmergekeyingmodulesettings"></a>Windows10EndpointProtectionConfiguration.FirewallMergeKeyingModuleSettings 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/OpportunisticallyMatchAuthSetPerKM
 
-#### <a name="windows10endpointprotectionconfigurationfirewallpacketqueueingmethod"></a>Windows10EndpointProtectionConfiguration.FirewallPacketQueueingMethod 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/EnablePacketQueue
+### <a name="windows10endpointprotectionconfigurationfirewallpacketqueueingmethod"></a>Windows10EndpointProtectionConfiguration.FirewallPacketQueueingMethod 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/EnablePacketQueue
 
-#### <a name="windows10endpointprotectionconfigurationfirewallpresharedkeyencodingmethod"></a>Windows10EndpointProtectionConfiguration.FirewallPreSharedKeyEncodingMethod 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/Global/PresharedKeyEncoding
+### <a name="windows10endpointprotectionconfigurationfirewallpresharedkeyencodingmethod"></a>Windows10EndpointProtectionConfiguration.FirewallPreSharedKeyEncodingMethod 
+**CSP**:./Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/Global/PresharedKeyEncoding
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofiledomain"></a>Windows10EndpointProtectionConfiguration.FirewallProfileDomain 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /EnableFirewall, /DisableStealthMode, 보호, / /DisableUnicastResponsesToMulticastBroadcast /DisableInboundNotifications, /AuthAppsAllowUserPrefMerge, /GlobalPortsAllowUserPrefMerge, /AllowLocalPolicyMerge /DefaultOutboundAction /DefaultInboundAction, /DisableStealthModeIpsecSecuredPacketExemption, /AllowLocalIpsecPolicyMerge
+### <a name="windows10endpointprotectionconfigurationfirewallprofiledomain"></a>Windows10EndpointProtectionConfiguration.FirewallProfileDomain 
+**CSP**:./Vendor/MSFT/Firewall  
+**OFFSET URI**:/EnableFirewall,/DisableStealthMode,/Shielded,/DisableUnicastResponsesToMulticastBroadcast,/DisableInboundNotifications,/AuthAppsAllowUserPrefMerge,/GlobalPortsAllowUserPrefMerge,/AllowLocalPolicyMerge,/ DefaultOutboundAction,/DefaultInboundAction,/DisableStealthModeIpsecSecuredPacketExemption,/AllowLocalIpsecPolicyMerge
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofiledomaininboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfileDomain.inboundConnectionsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/DomainProfile/DefaultInboundAction
+### <a name="windows10endpointprotectionconfigurationfirewallprofiledomaininboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfileDomain.inboundConnectionsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/DomainProfile/DefaultInboundAction
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofiledomaininboundnotificationsblocked"></a>windows10endpointprotectionconfiguration.firewallProfileDomain.inboundNotificationsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/DomainProfile/DisableInboundNotifications
+### <a name="windows10endpointprotectionconfigurationfirewallprofiledomaininboundnotificationsblocked"></a>windows10endpointprotectionconfiguration.firewallProfileDomain.inboundNotificationsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/DomainProfile/DisableInboundNotifications
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofiledomaininboundnotificationsblocked"></a>windows10endpointprotectionconfiguration.firewallProfileDomain.inboundNotificationsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/DomainProfile/EnableFirewall
+### <a name="windows10endpointprotectionconfigurationfirewallprofiledomaininboundnotificationsblocked"></a>windows10endpointprotectionconfiguration.firewallProfileDomain.inboundNotificationsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/DomainProfile/EnableFirewall
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofiledomainoutboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfileDomain.outboundConnectionsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/DomainProfile/DefaultOutboundAction
+### <a name="windows10endpointprotectionconfigurationfirewallprofiledomainoutboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfileDomain.outboundConnectionsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/DomainProfile/DefaultOutboundAction
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofileprivate"></a>Windows10EndpointProtectionConfiguration.FirewallProfilePrivate 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /EnableFirewall, /DisableStealthMode, 보호, / /DisableUnicastResponsesToMulticastBroadcast /DisableInboundNotifications, /AuthAppsAllowUserPrefMerge, /GlobalPortsAllowUserPrefMerge, /AllowLocalPolicyMerge /DefaultOutboundAction /DefaultInboundAction, /DisableStealthModeIpsecSecuredPacketExemption, /AllowLocalIpsecPolicyMerge
+### <a name="windows10endpointprotectionconfigurationfirewallprofileprivate"></a>Windows10EndpointProtectionConfiguration.FirewallProfilePrivate 
+**CSP**:./Vendor/MSFT/Firewall  
+**OFFSET URI**:/EnableFirewall,/DisableStealthMode,/Shielded,/DisableUnicastResponsesToMulticastBroadcast,/DisableInboundNotifications,/AuthAppsAllowUserPrefMerge,/GlobalPortsAllowUserPrefMerge,/AllowLocalPolicyMerge,/ DefaultOutboundAction,/DefaultInboundAction,/DisableStealthModeIpsecSecuredPacketExemption,/AllowLocalIpsecPolicyMerge
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofileprivatefirewallenabled"></a>windows10endpointprotectionconfiguration.firewallProfilePrivate.firewallEnabled 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PrivateProfile/EnableFirewall
+### <a name="windows10endpointprotectionconfigurationfirewallprofileprivatefirewallenabled"></a>windows10endpointprotectionconfiguration.firewallProfilePrivate.firewallEnabled 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PrivateProfile/EnableFirewall
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofileprivateinboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePrivate.inboundConnectionsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PrivateProfile/DefaultInboundAction
+### <a name="windows10endpointprotectionconfigurationfirewallprofileprivateinboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePrivate.inboundConnectionsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PrivateProfile/DefaultInboundAction
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofileprivateinboundnotificationsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePrivate.inboundNotificationsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PrivateProfile/DisableInboundNotifications
+### <a name="windows10endpointprotectionconfigurationfirewallprofileprivateinboundnotificationsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePrivate.inboundNotificationsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PrivateProfile/DisableInboundNotifications
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofileprivateoutboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePrivate.outboundConnectionsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PrivateProfile/DefaultOutboundAction
+### <a name="windows10endpointprotectionconfigurationfirewallprofileprivateoutboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePrivate.outboundConnectionsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PrivateProfile/DefaultOutboundAction
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofilepublic"></a>Windows10EndpointProtectionConfiguration.FirewallProfilePublic 
-**CSP**: ./Vendor/MSFT/Firewall  
-**URI 오프셋**: /EnableFirewall, /DisableStealthMode, 보호, / /DisableUnicastResponsesToMulticastBroadcast /DisableInboundNotifications, /AuthAppsAllowUserPrefMerge, /GlobalPortsAllowUserPrefMerge, /AllowLocalPolicyMerge /DefaultOutboundAction /DefaultInboundAction, /DisableStealthModeIpsecSecuredPacketExemption, /AllowLocalIpsecPolicyMerge
+### <a name="windows10endpointprotectionconfigurationfirewallprofilepublic"></a>Windows10EndpointProtectionConfiguration.FirewallProfilePublic 
+**CSP**:./Vendor/MSFT/Firewall  
+**OFFSET URI**:/EnableFirewall,/DisableStealthMode,/Shielded,/DisableUnicastResponsesToMulticastBroadcast,/DisableInboundNotifications,/AuthAppsAllowUserPrefMerge,/GlobalPortsAllowUserPrefMerge,/AllowLocalPolicyMerge,/ DefaultOutboundAction,/DefaultInboundAction,/DisableStealthModeIpsecSecuredPacketExemption,/AllowLocalIpsecPolicyMerge
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicconnectionsecurityrulesfromgrouppolicymerged"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.connectionSecurityRulesFromGroupPolicyMerged 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PublicProfile/AllowLocalIpsecPolicyMerge
+### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicconnectionsecurityrulesfromgrouppolicymerged"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.connectionSecurityRulesFromGroupPolicyMerged 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PublicProfile/AllowLocalIpsecPolicyMerge
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicfirewallenabled"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.firewallEnabled 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PublicProfile/EnableFirewall
+### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicfirewallenabled"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.firewallEnabled 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PublicProfile/EnableFirewall
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicinboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.inboundConnectionsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PublicProfile/DefaultInboundAction
+### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicinboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.inboundConnectionsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PublicProfile/DefaultInboundAction
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicinboundnotificationsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.inboundNotificationsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PublicProfile/DisableInboundNotifications
+### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicinboundnotificationsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.inboundNotificationsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PublicProfile/DisableInboundNotifications
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicoutboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.outboundConnectionsBlocked 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PublicProfile/DefaultOutboundAction
+### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicoutboundconnectionsblocked"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.outboundConnectionsBlocked 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PublicProfile/DefaultOutboundAction
 
-#### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicpolicyrulesfromgrouppolicymerged"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.policyRulesFromGroupPolicyMerged 
-**CSP**: ./Device/Vendor/MSFT/Firewall  
-**URI 오프셋**: /MdmStore/PublicProfile/AllowLocalPolicyMerge
+### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicpolicyrulesfromgrouppolicymerged"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.policyRulesFromGroupPolicyMerged 
+**CSP**:./Device/Vendor/MSFT/Firewall  
+**오프셋 URI**:/MdmStore/PublicProfile/AllowLocalPolicyMerge
 
-#### <a name="windows10endpointprotectionconfigurationlanmanagerauthenticationlevel"></a>Windows10EndpointProtectionConfiguration.LanManagerAuthenticationLevel 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/NetworkSecurity\_LANManagerAuthenticationLevel
+### <a name="windows10endpointprotectionconfigurationlanmanagerauthenticationlevel"></a>Windows10EndpointProtectionConfiguration.LanManagerAuthenticationLevel 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkSecurity\_LANManagerAuthenticationLevel
 
-#### <a name="windows10endpointprotectionconfigurationlanmanagerworkstationdisableinsecureguestlogons"></a>Windows10EndpointProtectionConfiguration.LanManagerWorkstationDisableInsecureGuestLogons 
+### <a name="windows10endpointprotectionconfigurationlanmanagerworkstationdisableinsecureguestlogons"></a>Windows10EndpointProtectionConfiguration.LanManagerWorkstationDisableInsecureGuestLogons 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LanmanWorkstation/EnableInsecureGuestLogons
+**오프셋 URI**:/Config/LanmanWorkstation/EnableInsecureGuestLogons
 
-#### <a name="windows10endpointprotectionconfigurationlanmanagerworkstationenableinsecureguestlogons"></a>Windows10EndpointProtectionConfiguration.LanManagerWorkstationEnableInsecureGuestLogons 
+### <a name="windows10endpointprotectionconfigurationlanmanagerworkstationenableinsecureguestlogons"></a>Windows10EndpointProtectionConfiguration.LanManagerWorkstationEnableInsecureGuestLogons 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LanmanWorkstation/EnableInsecureGuestLogons
+**오프셋 URI**:/Config/LanmanWorkstation/EnableInsecureGuestLogons
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsadministratoraccountname"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAdministratorAccountName 
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsadministratoraccountname"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAdministratorAccountName 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Accounts\_RenameAdministratorAccount
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Accounts\_RenameAdministratorAccount
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsadministratorelevationpromptbehavior"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAdministratorElevationPromptBehavior
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_BehaviorOfTheElevationPromptForAdministrators
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsadministratorelevationpromptbehavior"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAdministratorElevationPromptBehavior
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_BehaviorOfTheElevationPromptForAdministrators
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowanonymousenumerationofsamaccountsandshares"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/NetworkAccess\_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowanonymousenumerationofsamaccountsandshares"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkAccess\_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowpku2uauthenticationrequests"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowPKU2UAuthenticationRequests 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/NetworkSecurity\_AllowPKU2UAuthenticationRequests
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowpku2uauthenticationrequests"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowPKU2UAuthenticationRequests 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkSecurity\_AllowPKU2UAuthenticationRequests
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowremotecallstosecurityaccountsmanager"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/NetworkAccess\_RestrictClientsAllowedToMakeRemoteCallsToSAM
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowremotecallstosecurityaccountsmanager"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkAccess\_RestrictClientsAllowedToMakeRemoteCallsToSAM
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowremotecallstosecurityaccountsmanagerhelperbool"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool 
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowremotecallstosecurityaccountsmanagerhelperbool"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/NetworkAccess\_RestrictClientsAllowedToMakeRemoteCallsToSAM
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkAccess\_RestrictClientsAllowedToMakeRemoteCallsToSAM
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowsystemtobeshutdownwithouthavingtologon"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Shutdown\_AllowSystemToBeShutDownWithoutHavingToLogOn
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowsystemtobeshutdownwithouthavingtologon"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Shutdown\_AllowSystemToBeShutDownWithoutHavingToLogOn
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowuiaccessapplicationelevation"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowUIAccessApplicationElevation 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_AllowUIAccessApplicationsToPromptForElevation
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowuiaccessapplicationelevation"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowUIAccessApplicationElevation 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_AllowUIAccessApplicationsToPromptForElevation
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowuiaccessapplicationsforsecurelocations"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowUIAccessApplicationsForSecureLocations 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowuiaccessapplicationsforsecurelocations"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowUIAccessApplicationsForSecureLocations 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowundockwithouthavingtologon"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowUndockWithoutHavingToLogon 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Devices\_AllowUndockWithoutHavingToLogon
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowundockwithouthavingtologon"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowUndockWithoutHavingToLogon 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Devices\_AllowUndockWithoutHavingToLogon
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockmicrosoftaccounts"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockMicrosoftAccounts 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Accounts\_BlockMicrosoftAccounts
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockmicrosoftaccounts"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockMicrosoftAccounts 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Accounts\_BlockMicrosoftAccounts
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockremotelogonwithblankpassword"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockRemoteLogonWithBlankPassword 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Accounts\_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockremotelogonwithblankpassword"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockRemoteLogonWithBlankPassword 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Accounts\_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockremoteopticaldriveaccess"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockRemoteOpticalDriveAccess 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Devices\_RestrictCDROMAccessToLocallyLoggedOnUserOnly
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockremoteopticaldriveaccess"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockRemoteOpticalDriveAccess 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Devices\_RestrictCDROMAccessToLocallyLoggedOnUserOnly
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockusersinstallingprinterdrivers"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockUsersInstallingPrinterDrivers 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Devices\_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockusersinstallingprinterdrivers"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockUsersInstallingPrinterDrivers 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Devices\_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsclearvirtualmemorypagefile"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsClearVirtualMemoryPageFile 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Shutdown\_ClearVirtualMemoryPageFile
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsclearvirtualmemorypagefile"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsClearVirtualMemoryPageFile 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Shutdown\_ClearVirtualMemoryPageFile
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsclientdigitallysigncommunicationsalways"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsClientDigitallySignCommunicationsAlways 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient\_DigitallySignCommunicationsAlways
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsclientdigitallysigncommunicationsalways"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsClientDigitallySignCommunicationsAlways 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient\_DigitallySignCommunicationsAlways
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsclientsendunencryptedpasswordtothirdpartysmbservers"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers 
-**CSP**: ./Vendor/MSFT/Policy  
-**Offset URI**: /Config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient\_SendUnencryptedPasswordToThirdPartySMBServers
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsclientsendunencryptedpasswordtothirdpartysmbservers"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient\_SendUnencryptedPasswordToThirdPartySMBServers
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdetectapplicationinstallationsandpromptforelevation"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDetectApplicationInstallationsAndPromptForElevation 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_DetectApplicationInstallationsAndPromptForElevation
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdetectapplicationinstallationsandpromptforelevation"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDetectApplicationInstallationsAndPromptForElevation 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_DetectApplicationInstallationsAndPromptForElevation
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableadministratoraccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableAdministratorAccount 
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableadministratoraccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableAdministratorAccount 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Accounts\_EnableAdministratorAccountStatus
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Accounts\_enable관리자 accountstatus
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableclientdigitallysigncommunicationsifserveragrees"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient\_DigitallySignCommunicationsIfServerAgrees
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableclientdigitallysigncommunicationsifserveragrees"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient\_DigitallySignCommunicationsIfServerAgrees
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableguestaccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableGuestAccount 
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableguestaccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableGuestAccount 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Accounts\_EnableGuestAccountStatus
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Accounts\_EnableGuestAccountStatus
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableserverdigitallysigncommunicationsalways"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableServerDigitallySignCommunicationsAlways 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer\_DigitallySignCommunicationsAlways
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableserverdigitallysigncommunicationsalways"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableServerDigitallySignCommunicationsAlways 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer\_DigitallySignCommunicationsAlways
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableserverdigitallysigncommunicationsifclientagrees"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer\_DigitallySignCommunicationsIfClientAgrees
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableserverdigitallysigncommunicationsifclientagrees"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer\_DigitallySignCommunicationsIfClientAgrees
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdonotallowanonymousenumerationofsamaccounts"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts 
-**CSP**: ./Vendor/MSFT/Policy  
-**Offset URI**: /Config/LocalPoliciesSecurityOptions/NetworkAccess\_DoNotAllowAnonymousEnumerationOfSAMAccounts
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdonotallowanonymousenumerationofsamaccounts"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkAccess\_DoNotAllowAnonymousEnumerationOfSAMAccounts
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdonotrequirectrlaltdel"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDoNotRequireCtrlAltDel 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_DoNotRequireCTRLALTDEL
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdonotrequirectrlaltdel"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDoNotRequireCtrlAltDel 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_DoNotRequireCTRLALTDEL
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdonotstorelanmanagerhashvalueonnextpasswordchange"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/NetworkSecurity\_DoNotStoreLANManagerHashValueOnNextPasswordChange
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdonotstorelanmanagerhashvalueonnextpasswordchange"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkSecurity\_DoNotStoreLANManagerHashValueOnNextPasswordChange
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsenableadministratoraccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsEnableAdministratorAccount 
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsenableadministratoraccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsEnableAdministratorAccount 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Accounts\_EnableAdministratorAccountStatus
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Accounts\_enable관리자 accountstatus
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsenableguestaccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsEnableGuestAccount 
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsenableguestaccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsEnableGuestAccount 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Accounts\_EnableGuestAccountStatus
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Accounts\_EnableGuestAccountStatus
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsformatandejectofremovablemediaalloweduser"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Devices\_AllowedToFormatAndEjectRemovableMedia
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsformatandejectofremovablemediaalloweduser"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Devices\_AllowedToFormatAndEjectRemovableMedia
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsguestaccountname"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsGuestAccountName 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/Accounts\_RenameGuestAccount
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsguestaccountname"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsGuestAccountName 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/Accounts\_RenameGuestAccount
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionshidelastsignedinuser"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsHideLastSignedInUser 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_DoNotDisplayLastSignedIn
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionshidelastsignedinuser"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsHideLastSignedInUser 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_DoNotDisplayLastSignedIn
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionshideusernameatsignin"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsHideUsernameAtSignIn 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_DoNotDisplayUsernameAtSignIn
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionshideusernameatsignin"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsHideUsernameAtSignIn 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_DoNotDisplayUsernameAtSignIn
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsinformationdisplayedonlockscreen"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsInformationDisplayedOnLockScreen 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_DisplayUserInformationWhenTheSessionIsLocked
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsinformationdisplayedonlockscreen"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsInformationDisplayedOnLockScreen 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_displayuserinformation... sessionislocked
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsinformationshownonlockscreen"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsInformationShownOnLockScreen 
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsinformationshownonlockscreen"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsInformationShownOnLockScreen 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_DisplayUserInformationWhenTheSessionIsLocked
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_displayuserinformation... sessionislocked
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionslogonmessagetext"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsLogOnMessageText 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_MessageTextForUsersAttemptingToLogOn
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionslogonmessagetext"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsLogOnMessageText 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_MessageTextForUsersAttemptingToLogOn
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionslogonmessagetitle"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsLogOnMessageTitle 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_MessageTitleForUsersAttemptingToLogOn
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionslogonmessagetitle"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsLogOnMessageTitle 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_MessageTitleForUsersAttemptingToLogOn
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsmachineinactivitylimit"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMachineInactivityLimit 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_MachineInactivityLimit
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsmachineinactivitylimit"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMachineInactivityLimit 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_machineinactivitylimit
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsmachineinactivitylimitinminutes"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMachineInactivityLimitInMinutes 
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsmachineinactivitylimitinminutes"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMachineInactivityLimitInMinutes 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_MachineInactivityLimit
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_machineinactivitylimit
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsminimumsessionsecurityforntlmsspbasedclients"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/NetworkSecurity\_MinimumSessionSecurityForNTLMSSPBasedClients
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsminimumsessionsecurityforntlmsspbasedclients"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkSecurity\_MinimumSessionSecurityForNTLMSSPBasedClients
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsminimumsessionsecurityforntlmsspbasedservers"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/NetworkSecurity\_MinimumSessionSecurityForNTLMSSPBasedServers
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsminimumsessionsecurityforntlmsspbasedservers"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkSecurity\_MinimumSessionSecurityForNTLMSSPBasedServers
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsonlyelevatesignedexecutables"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsOnlyElevateSignedExecutables 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_OnlyElevateExecutableFilesThatAreSignedAndValidated
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsonlyelevatesignedexecutables"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsOnlyElevateSignedExecutables 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_OnlyElevateExecutableFilesThatAreSignedAndValidated
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsrestrictanonymousaccesstonamedpipesandshares"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/NetworkAccess\_RestrictAnonymousAccessToNamedPipesAndShares
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsrestrictanonymousaccesstonamedpipesandshares"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/NetworkAccess\_RestrictAnonymousAccessToNamedPipesAndShares
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionssmartcardremovalbehavior"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsSmartCardRemovalBehavior 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/InteractiveLogon\_SmartCardRemovalBehavior
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionssmartcardremovalbehavior"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsSmartCardRemovalBehavior 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/InteractiveLogon\_SmartCardRemovalBehavior
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsstandarduserelevationpromptbehavior"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsStandardUserElevationPromptBehavior 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_BehaviorOfTheElevationPromptForStandardUsers
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsstandarduserelevationpromptbehavior"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsStandardUserElevationPromptBehavior 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_BehaviorOfTheElevationPromptForStandardUsers
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsswitchtosecuredesktopwhenpromptingforelevation"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_SwitchToTheSecureDesktopWhenPromptingForElevation
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsswitchtosecuredesktopwhenpromptingforelevation"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_SwitchToTheSecureDesktopWhenPromptingForElevation
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsuseadminapprovalmode"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsUseAdminApprovalMode 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_UseAdminApprovalMode
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsuseadminapprovalmode"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsUseAdminApprovalMode 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_useadminapprovalmode
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsuseadminapprovalmodeforadministrators"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsUseAdminApprovalModeForAdministrators 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_RunAllAdministratorsInAdminApprovalMode
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsuseadminapprovalmodeforadministrators"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsUseAdminApprovalModeForAdministrators 
+**CSP**:./Vendor/MSFT/Policy  
+**Offset URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_runall관리자 sinadminapprovalmode
 
-#### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsvirtualizefileandregistrywritefailurestoperuserlocations"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/LocalPoliciesSecurityOptions/UserAccountControl\_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations
+### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsvirtualizefileandregistrywritefailurestoperuserlocations"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/LocalPoliciesSecurityOptions/UserAccountControl\_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations
 
-#### <a name="windows10endpointprotectionconfigurationnetworkicmpredirectsoverrideospfgeneratedroutes"></a>Windows10EndpointProtectionConfiguration.NetworkIcmpRedirectsOverrideOspfGeneratedRoutes 
+### <a name="windows10endpointprotectionconfigurationnetworkicmpredirectsoverrideospfgeneratedroutes"></a>Windows10EndpointProtectionConfiguration.NetworkIcmpRedirectsOverrideOspfGeneratedRoutes 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes
+**오프셋 URI**:/Config/MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes
 
-#### <a name="windows10endpointprotectionconfigurationnetworkignorenetbiosnamereleaserequestsexceptfromwinsservers"></a>Windows10EndpointProtectionConfiguration.NetworkIgnoreNetBiosNameReleaseRequestsExceptFromWinsServers 
+### <a name="windows10endpointprotectionconfigurationnetworkignorenetbiosnamereleaserequestsexceptfromwinsservers"></a>Windows10EndpointProtectionConfiguration.NetworkIgnoreNetBiosNameReleaseRequestsExceptFromWinsServers 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers
+**오프셋 URI**:/Config/MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers
 
-#### <a name="windows10endpointprotectionconfigurationnetworkipsourceroutingprotectionlevel"></a>Windows10EndpointProtectionConfiguration.NetworkIpSourceRoutingProtectionLevel 
+### <a name="windows10endpointprotectionconfigurationnetworkipsourceroutingprotectionlevel"></a>Windows10EndpointProtectionConfiguration.NetworkIpSourceRoutingProtectionLevel 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSLegacy/IPSourceRoutingProtectionLevel
+**오프셋 URI**:/Config/MSSLegacy/IPSourceRoutingProtectionLevel
 
-#### <a name="windows10endpointprotectionconfigurationnetworkipv6sourceroutingprotectionlevel"></a>Windows10EndpointProtectionConfiguration.NetworkIpV6SourceRoutingProtectionLevel 
+### <a name="windows10endpointprotectionconfigurationnetworkipv6sourceroutingprotectionlevel"></a>Windows10EndpointProtectionConfiguration.NetworkIpV6SourceRoutingProtectionLevel 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSLegacy/IPv6SourceRoutingProtectionLevel
+**오프셋 URI**:/Config/MSSLegacy/IPv6SourceRoutingProtectionLevel
 
-#### <a name="windows10endpointprotectionconfigurationpasswordpinlogon"></a>Windows10EndpointProtectionConfiguration.PasswordPinLogOn 
+### <a name="windows10endpointprotectionconfigurationpasswordpinlogon"></a>Windows10EndpointProtectionConfiguration.PasswordPinLogOn 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/CredentialProviders/AllowPINLogon
+**오프셋 URI**:/Config/CredentialProviders/AllowPINLogon
 
-#### <a name="windows10endpointprotectionconfigurationpowershellshellscriptblocklogging"></a>Windows10EndpointProtectionConfiguration.PowerShellShellScriptBlockLogging 
+### <a name="windows10endpointprotectionconfigurationpowershellshellscriptblocklogging"></a>Windows10EndpointProtectionConfiguration.PowerShellShellScriptBlockLogging 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsPowerShell/TurnOnPowerShellScriptBlockLogging
+**오프셋 URI**:/Config/WindowsPowerShell/TurnOnPowerShellScriptBlockLogging
 
-#### <a name="windows10endpointprotectionconfigurationremoteassistancesolicitedsetting"></a>Windows10EndpointProtectionConfiguration.RemoteAssistanceSolicitedSetting 
+### <a name="windows10endpointprotectionconfigurationremoteassistancesolicitedsetting"></a>Windows10EndpointProtectionConfiguration.RemoteAssistanceSolicitedSetting 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/HardenedUNCPaths
+**오프셋 URI**:/Config/Connectivity/HardenedUNCPaths
 
-#### <a name="windows10endpointprotectionconfigurationremotedesktopservicesclientconnectionencryptionlevel"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesClientConnectionEncryptionLevel 
+### <a name="windows10endpointprotectionconfigurationremotedesktopservicesclientconnectionencryptionlevel"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesClientConnectionEncryptionLevel 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteDesktopServices/ClientConnectionEncryptionLevel
+**오프셋 URI**:/Config/RemoteDesktopServices/ClientConnectionEncryptionLevel
 
-#### <a name="windows10endpointprotectionconfigurationremotedesktopservicesdriveredirection"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesDriveRedirection 
+### <a name="windows10endpointprotectionconfigurationremotedesktopservicesdriveredirection"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesDriveRedirection 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteDesktopServices/DoNotAllowDriveRedirection
+**오프셋 URI**:/Config/RemoteDesktopServices/DoNotAllowDriveRedirection
 
-#### <a name="windows10endpointprotectionconfigurationremotedesktopservicespasswordsaving"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesPasswordSaving 
+### <a name="windows10endpointprotectionconfigurationremotedesktopservicespasswordsaving"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesPasswordSaving 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteDesktopServices/DoNotAllowPasswordSaving
+**오프셋 URI**:/Config/RemoteDesktopServices/DoNotAllowPasswordSaving
 
-#### <a name="windows10endpointprotectionconfigurationremotedesktopservicespromptforpassworduponconnection"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesPromptForPasswordUponConnection 
+### <a name="windows10endpointprotectionconfigurationremotedesktopservicespromptforpassworduponconnection"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesPromptForPasswordUponConnection 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteDesktopServices/PromptForPasswordUponConnection
+**오프셋 URI**:/Config/RemoteDesktopServices/PromptForPasswordUponConnection
 
-#### <a name="windows10endpointprotectionconfigurationremotedesktopservicessecurerpccommunication"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesSecureRpcCommunication 
+### <a name="windows10endpointprotectionconfigurationremotedesktopservicessecurerpccommunication"></a>Windows10EndpointProtectionConfiguration.RemoteDesktopServicesSecureRpcCommunication 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteDesktopServices/RequireSecureRPCCommunication
+**오프셋 URI**:/Config/RemoteDesktopServices/RequireSecureRPCCommunication
 
-#### <a name="windows10endpointprotectionconfigurationremotehostdelegationofnonexportablecredentials"></a>Windows10EndpointProtectionConfiguration.RemoteHostDelegationOfNonExportableCredentials 
+### <a name="windows10endpointprotectionconfigurationremotehostdelegationofnonexportablecredentials"></a>Windows10EndpointProtectionConfiguration.RemoteHostDelegationOfNonExportableCredentials 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials
+**오프셋 URI**:/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials
 
-#### <a name="windows10endpointprotectionconfigurationremotemanagementclientbasicauthentication"></a>Windows10EndpointProtectionConfiguration.RemoteManagementClientBasicAuthentication 
+### <a name="windows10endpointprotectionconfigurationremotemanagementclientbasicauthentication"></a>Windows10EndpointProtectionConfiguration.RemoteManagementClientBasicAuthentication 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteManagement/AllowBasicAuthentication\_클라이언트
+**오프셋 URI**:/Config/RemoteManagement/AllowBasicAuthentication\_Client
 
-#### <a name="windows10endpointprotectionconfigurationremotemanagementclientdigestauthentication"></a>Windows10EndpointProtectionConfiguration.RemoteManagementClientDigestAuthentication 
+### <a name="windows10endpointprotectionconfigurationremotemanagementclientdigestauthentication"></a>Windows10EndpointProtectionConfiguration.RemoteManagementClientDigestAuthentication 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteManagement/DisallowDigestAuthentication
+**오프셋 URI**:/Config/RemoteManagement/DisallowDigestAuthentication
 
-#### <a name="windows10endpointprotectionconfigurationremotemanagementclientunencryptedtraffic"></a>Windows10EndpointProtectionConfiguration.RemoteManagementClientUnencryptedTraffic 
+### <a name="windows10endpointprotectionconfigurationremotemanagementclientunencryptedtraffic"></a>Windows10EndpointProtectionConfiguration.RemoteManagementClientUnencryptedTraffic 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteManagement/AllowUnencryptedTraffic\_클라이언트
+**오프셋 URI**:/Config/RemoteManagement/AllowUnencryptedTraffic\_Client
 
-#### <a name="windows10endpointprotectionconfigurationremotemanagementservicebasicauthentication"></a>Windows10EndpointProtectionConfiguration.RemoteManagementServiceBasicAuthentication 
+### <a name="windows10endpointprotectionconfigurationremotemanagementservicebasicauthentication"></a>Windows10EndpointProtectionConfiguration.RemoteManagementServiceBasicAuthentication 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteManagement/AllowBasicAuthentication\_서비스
+**오프셋 URI**:/Config/RemoteManagement/AllowBasicAuthentication\_Service
 
-#### <a name="windows10endpointprotectionconfigurationremotemanagementservicestoringrunascredentials"></a>Windows10EndpointProtectionConfiguration.RemoteManagementServiceStoringRunAsCredentials 
+### <a name="windows10endpointprotectionconfigurationremotemanagementservicestoringrunascredentials"></a>Windows10EndpointProtectionConfiguration.RemoteManagementServiceStoringRunAsCredentials 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteManagement/DisallowStoringOfRunAsCredentials
+**오프셋 URI**:/Config/RemoteManagement/DisallowStoringOfRunAsCredentials
 
-#### <a name="windows10endpointprotectionconfigurationremotemanagementserviceunencryptedtraffic"></a>Windows10EndpointProtectionConfiguration.RemoteManagementServiceUnencryptedTraffic 
+### <a name="windows10endpointprotectionconfigurationremotemanagementserviceunencryptedtraffic"></a>Windows10EndpointProtectionConfiguration.RemoteManagementServiceUnencryptedTraffic 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteManagement/AllowUnencryptedTraffic\_서비스
+**오프셋 URI**:/Config/RemoteManagement/AllowUnencryptedTraffic\_Service
 
-#### <a name="windows10endpointprotectionconfigurationrpcunauthenticatedclientoptions"></a>Windows10EndpointProtectionConfiguration.RpcUnauthenticatedClientOptions 
+### <a name="windows10endpointprotectionconfigurationrpcunauthenticatedclientoptions"></a>Windows10EndpointProtectionConfiguration.RpcUnauthenticatedClientOptions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteProcedureCall/RestrictUnauthenticatedRPCClients
+**오프셋 URI**:/Config/RemoteProcedureCall/RestrictUnauthenticatedRPCClients
 
-#### <a name="windows10endpointprotectionconfigurationsecurityguideapplyuacrestrictionstolocalaccountsonnetworklogon"></a>Windows10EndpointProtectionConfiguration.SecurityGuideApplyUacRestrictionsToLocalAccountsOnNetworkLogon 
+### <a name="windows10endpointprotectionconfigurationsecurityguideapplyuacrestrictionstolocalaccountsonnetworklogon"></a>Windows10EndpointProtectionConfiguration.SecurityGuideApplyUacRestrictionsToLocalAccountsOnNetworkLogon 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSecurityGuide/ApplyUACRestrictionsToLocalAccountsOnNetworkLogon
+**오프셋 URI**:/Config/MSSecurityGuide/ApplyUACRestrictionsToLocalAccountsOnNetworkLogon
 
-#### <a name="windows10endpointprotectionconfigurationsecurityguidesmbv1clientdriverstartconfiguration"></a>Windows10EndpointProtectionConfiguration.SecurityGuideSmbV1ClientDriverStartConfiguration 
+### <a name="windows10endpointprotectionconfigurationsecurityguidesmbv1clientdriverstartconfiguration"></a>Windows10EndpointProtectionConfiguration.SecurityGuideSmbV1ClientDriverStartConfiguration 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSecurityGuide/ConfigureSMBV1ClientDriver
+**오프셋 URI**:/Config/MSSecurityGuide/ConfigureSMBV1ClientDriver
 
-#### <a name="windows10endpointprotectionconfigurationsecurityguidesmbv1server"></a>Windows10EndpointProtectionConfiguration.SecurityGuideSmbV1Server 
+### <a name="windows10endpointprotectionconfigurationsecurityguidesmbv1server"></a>Windows10EndpointProtectionConfiguration.SecurityGuideSmbV1Server 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSecurityGuide/ConfigureSMBV1Server
+**오프셋 URI**:/Config/MSSecurityGuide/ConfigureSMBV1Server
 
-#### <a name="windows10endpointprotectionconfigurationsecurityguidestructuredexceptionhandlingoverwriteprotection"></a>Windows10EndpointProtectionConfiguration.SecurityGuideStructuredExceptionHandlingOverwriteProtection 
+### <a name="windows10endpointprotectionconfigurationsecurityguidestructuredexceptionhandlingoverwriteprotection"></a>Windows10EndpointProtectionConfiguration.SecurityGuideStructuredExceptionHandlingOverwriteProtection 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSecurityGuide/EnableStructuredExceptionHandlingOverwriteProtection
+**오프셋 URI**:/Config/MSSecurityGuide/EnableStructuredExceptionHandlingOverwriteProtection
 
-#### <a name="windows10endpointprotectionconfigurationsecurityguidewdigestauthentication"></a>Windows10EndpointProtectionConfiguration.SecurityGuideWDigestAuthentication 
+### <a name="windows10endpointprotectionconfigurationsecurityguidewdigestauthentication"></a>Windows10EndpointProtectionConfiguration.SecurityGuideWDigestAuthentication 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/MSSecurityGuide/WDigestAuthentication
+**오프셋 URI**:/Config/MSSecurityGuide/WDigestAuthentication
 
-#### <a name="windows10endpointprotectionconfigurationsmartscreenblockoverrideforfiles"></a>Windows10EndpointProtectionConfiguration.SmartScreenBlockOverrideForFiles 
-**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
+### <a name="windows10endpointprotectionconfigurationsmartscreenblockoverrideforfiles"></a>Windows10EndpointProtectionConfiguration.SmartScreenBlockOverrideForFiles 
+**CSP**:./DEVICE/VENDOR/MSFT/POLICY **Offset URI**:/Config/DeviceGuard/RequirePlatformSecurityFeatures
 
-#### <a name="windows10endpointprotectionconfigurationsmartscreenenableinshell"></a>Windows10EndpointProtectionConfiguration.SmartScreenEnableInShell 
-**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/SmartScreen/EnableSmartScreenInShell
+### <a name="windows10endpointprotectionconfigurationsmartscreenenableinshell"></a>Windows10EndpointProtectionConfiguration.SmartScreenEnableInShell 
+**CSP**:./DEVICE/VENDOR/MSFT/POLICY **Offset URI**:/Config/SmartScreen/EnableSmartScreenInShell
 
-#### <a name="windows10endpointprotectionconfigurationsolicitedremoteassistance"></a>windows10endpointprotectionconfiguration.solicitedRemoteAssistance 
+### <a name="windows10endpointprotectionconfigurationsolicitedremoteassistance"></a>windows10endpointprotectionconfiguration.solicitedRemoteAssistance 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/RemoteAssistance/SolicitedRemoteAssistance
+**오프셋 URI**:/Config/RemoteAssistance/SolicitedRemoteAssistance
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsaccesscredentialmanagerastrustedcaller"></a>Windows10EndpointProtectionConfiguration.UserRightsAccessCredentialManagerAsTrustedCaller 
+### <a name="windows10endpointprotectionconfigurationuserrightsaccesscredentialmanagerastrustedcaller"></a>Windows10EndpointProtectionConfiguration.UserRightsAccessCredentialManagerAsTrustedCaller 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/AccessCredentialManagerAsTrustedCaller
+**오프셋 URI**:/Config/UserRights/AccessCredentialManagerAsTrustedCaller
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsaccessfromnetwork"></a>windows10EndpointProtectionConfiguration.UserRightsAccessFromNetwork 
+### <a name="windows10endpointprotectionconfigurationuserrightsaccessfromnetwork"></a>windows10EndpointProtectionConfiguration.UserRightsAccessFromNetwork 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/AccessFromNetwork
+**오프셋 URI**:/Config/UserRights/AccessFromNetwork
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsactaspartoftheoperatingsystem"></a>Windows10EndpointProtectionConfiguration.userRightsActAsPartOfTheOperatingSystem 
+### <a name="windows10endpointprotectionconfigurationuserrightsactaspartoftheoperatingsystem"></a>Windows10EndpointProtectionConfiguration.userRightsActAsPartOfTheOperatingSystem 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/ActAsPartOfTheOperatingSystem
+**오프셋 URI**:/Config/UserRights/ActAsPartOfTheOperatingSystem
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsallowaccessfromnetwork"></a>Windows10EndpointProtectionConfiguration.UserRightsAllowAccessFromNetwork 
+### <a name="windows10endpointprotectionconfigurationuserrightsallowaccessfromnetwork"></a>Windows10EndpointProtectionConfiguration.UserRightsAllowAccessFromNetwork 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/AccessFromNetwork
+**오프셋 URI**:/Config/UserRights/AccessFromNetwork
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsbackupdata"></a>Windows10EndpointProtectionConfiguration.UserRightsBackupData 
+### <a name="windows10endpointprotectionconfigurationuserrightsbackupdata"></a>Windows10EndpointProtectionConfiguration.UserRightsBackupData 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/BackupFilesAndDirectories
+**오프셋 URI**:/Config/UserRights/BackupFilesAndDirectories
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsblockaccessfromnetwork"></a>Windows10EndpointProtectionConfiguration.UserRightsBlockAccessFromNetwork 
+### <a name="windows10endpointprotectionconfigurationuserrightsblockaccessfromnetwork"></a>Windows10EndpointProtectionConfiguration.UserRightsBlockAccessFromNetwork 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/DenyAccessFromNetwork
+**오프셋 URI**:/Config/UserRights/DenyAccessFromNetwork
 
-#### <a name="windows10endpointprotectionconfigurationuserrightschangesystemtime"></a>Windows10EndpointProtectionConfiguration.UserRightsChangeSystemTime 
+### <a name="windows10endpointprotectionconfigurationuserrightschangesystemtime"></a>Windows10EndpointProtectionConfiguration.UserRightsChangeSystemTime 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/ChangeSystemTime
+**오프셋 URI**:/Config/UserRights/ChangeSystemTime
 
-#### <a name="windows10endpointprotectionconfigurationuserrightscreateglobalobjects"></a>Windows10EndpointProtectionConfiguration.UserRightsCreateGlobalObjects 
+### <a name="windows10endpointprotectionconfigurationuserrightscreateglobalobjects"></a>Windows10EndpointProtectionConfiguration.UserRightsCreateGlobalObjects 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/CreateGlobalObjects
+**오프셋 URI**:/Config/UserRights/CreateGlobalObjects
 
-#### <a name="windows10endpointprotectionconfigurationuserrightscreatepagefile"></a>Windows10EndpointProtectionConfiguration.UserRightsCreatePageFile 
+### <a name="windows10endpointprotectionconfigurationuserrightscreatepagefile"></a>Windows10EndpointProtectionConfiguration.UserRightsCreatePageFile 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/CreatePageFile
+**오프셋 URI**:/Config/UserRights/CreatePageFile
 
-#### <a name="windows10endpointprotectionconfigurationuserrightscreatepermanentsharedobjects"></a>Windows10EndpointProtectionConfiguration.UserRightsCreatePermanentSharedObjects 
+### <a name="windows10endpointprotectionconfigurationuserrightscreatepermanentsharedobjects"></a>Windows10EndpointProtectionConfiguration.UserRightsCreatePermanentSharedObjects 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/CreatePermanentSharedObjects
+**오프셋 URI**:/Config/UserRights/CreatePermanentSharedObjects
 
-#### <a name="windows10endpointprotectionconfigurationuserrightscreatesymboliclinks"></a>Windows10EndpointProtectionConfiguration.UserRightsCreateSymbolicLinks 
+### <a name="windows10endpointprotectionconfigurationuserrightscreatesymboliclinks"></a>Windows10EndpointProtectionConfiguration.UserRightsCreateSymbolicLinks 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/CreateSymbolicLinks
+**오프셋 URI**:/Config/UserRights/CreateSymbolicLinks
 
-#### <a name="windows10endpointprotectionconfigurationuserrightscreatetoken"></a>Windows10EndpointProtectionConfiguration.UserRightsCreateToken 
+### <a name="windows10endpointprotectionconfigurationuserrightscreatetoken"></a>Windows10EndpointProtectionConfiguration.UserRightsCreateToken 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/CreateToken
+**오프셋 URI**:/Config/UserRights/CreateToken
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsdebugprograms"></a>Windows10EndpointProtectionConfiguration.UserRightsDebugPrograms 
+### <a name="windows10endpointprotectionconfigurationuserrightsdebugprograms"></a>Windows10EndpointProtectionConfiguration.UserRightsDebugPrograms 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/DebugPrograms
+**오프셋 URI**:/Config/UserRights/DebugPrograms
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsdelegation"></a>Windows10EndpointProtectionConfiguration.UserRightsDelegation 
+### <a name="windows10endpointprotectionconfigurationuserrightsdelegation"></a>Windows10EndpointProtectionConfiguration.UserRightsDelegation 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/EnableDelegation
+**오프셋 URI**:/Config/UserRights/EnableDelegation
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsdenyaccessfromnetwork"></a>windows10EndpointProtectionConfiguration.UserRightsDenyAccessFromNetwork 
+### <a name="windows10endpointprotectionconfigurationuserrightsdenyaccessfromnetwork"></a>windows10EndpointProtectionConfiguration.UserRightsDenyAccessFromNetwork 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/DenyAccessFromNetwork
+**오프셋 URI**:/Config/UserRights/DenyAccessFromNetwork
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsgeneratesecurityaudits"></a>Windows10EndpointProtectionConfiguration.UserRightsGenerateSecurityAudits 
+### <a name="windows10endpointprotectionconfigurationuserrightsgeneratesecurityaudits"></a>Windows10EndpointProtectionConfiguration.UserRightsGenerateSecurityAudits 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/GenerateSecurityAudits
+**오프셋 URI**:/Config/UserRights/GenerateSecurityAudits
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsimpersonateclient"></a>Windows10EndpointProtectionConfiguration.UserRightsImpersonateClient 
+### <a name="windows10endpointprotectionconfigurationuserrightsimpersonateclient"></a>Windows10EndpointProtectionConfiguration.UserRightsImpersonateClient 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/ImpersonateClient
+**오프셋 URI**:/Config/UserRights/ImpersonateClient
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsincreaseschedulingpriority"></a>Windows10EndpointProtectionConfiguration.UserRightsIncreaseSchedulingPriority 
+### <a name="windows10endpointprotectionconfigurationuserrightsincreaseschedulingpriority"></a>Windows10EndpointProtectionConfiguration.UserRightsIncreaseSchedulingPriority 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/IncreaseSchedulingPriority
+**오프셋 URI**:/Config/UserRights/IncreaseSchedulingPriority
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsloadunloaddrivers"></a>Windows10EndpointProtectionConfiguration.UserRightsLoadUnloadDrivers 
+### <a name="windows10endpointprotectionconfigurationuserrightsloadunloaddrivers"></a>Windows10EndpointProtectionConfiguration.UserRightsLoadUnloadDrivers 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/LoadUnloadDeviceDrivers
+**오프셋 URI**:/Config/UserRights/LoadUnloadDeviceDrivers
 
-#### <a name="windows10endpointprotectionconfigurationuserrightslocallogon"></a>Windows10EndpointProtectionConfiguration.UserRightsLocalLogOn 
+### <a name="windows10endpointprotectionconfigurationuserrightslocallogon"></a>Windows10EndpointProtectionConfiguration.UserRightsLocalLogOn 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/AllowLocalLogOn
+**오프셋 URI**:/Config/UserRights/AllowLocalLogOn
 
-#### <a name="windows10endpointprotectionconfigurationuserrightslockmemory"></a>Windows10EndpointProtectionConfiguration.UserRightsLockMemory 
+### <a name="windows10endpointprotectionconfigurationuserrightslockmemory"></a>Windows10EndpointProtectionConfiguration.UserRightsLockMemory 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/LockMemory
+**오프셋 URI**:/Config/UserRights/LockMemory
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsmanageauditingandsecuritylogs"></a>Windows10EndpointProtectionConfiguration.UserRightsManageAuditingAndSecurityLogs 
+### <a name="windows10endpointprotectionconfigurationuserrightsmanageauditingandsecuritylogs"></a>Windows10EndpointProtectionConfiguration.UserRightsManageAuditingAndSecurityLogs 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/ManageAuditingAndSecurityLog
+**오프셋 URI**:/Config/UserRights/ManageAuditingAndSecurityLog
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsmanagevolumes"></a>Windows10EndpointProtectionConfiguration.UserRightsManageVolumes 
+### <a name="windows10endpointprotectionconfigurationuserrightsmanagevolumes"></a>Windows10EndpointProtectionConfiguration.UserRightsManageVolumes 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/ManageVolume
+**오프셋 URI**:/Config/UserRights/ManageVolume
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsmodifyfirmwareenvironment"></a>Windows10EndpointProtectionConfiguration.UserRightsModifyFirmwareEnvironment 
+### <a name="windows10endpointprotectionconfigurationuserrightsmodifyfirmwareenvironment"></a>Windows10EndpointProtectionConfiguration.UserRightsModifyFirmwareEnvironment 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/ModifyFirmwareEnvironment
+**오프셋 URI**:/Config/UserRights/ModifyFirmwareEnvironment
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsmodifyobjectlabels"></a>Windows10EndpointProtectionConfiguration.UserRightsModifyObjectLabels 
+### <a name="windows10endpointprotectionconfigurationuserrightsmodifyobjectlabels"></a>Windows10EndpointProtectionConfiguration.UserRightsModifyObjectLabels 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/ModifyObjectLabel
+**오프셋 URI**:/Config/UserRights/ModifyObjectLabel
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsprofilesingleprocess"></a>Windows10EndpointProtectionConfiguration.UserRightsProfileSingleProcess 
+### <a name="windows10endpointprotectionconfigurationuserrightsprofilesingleprocess"></a>Windows10EndpointProtectionConfiguration.UserRightsProfileSingleProcess 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/ProfileSingleProcess
+**오프셋 URI**:/Config/UserRights/ProfileSingleProcess
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsregisterprocessasservice"></a>Windows10EndpointProtectionConfiguration.UserRightsRegisterProcessAsService 
+### <a name="windows10endpointprotectionconfigurationuserrightsregisterprocessasservice"></a>Windows10EndpointProtectionConfiguration.UserRightsRegisterProcessAsService 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/DenyLocalLogOn
+**오프셋 URI**:/Config/UserRights/DenyLocalLogOn
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsremotedesktopserviceslogon"></a>Windows10EndpointProtectionConfiguration.UserRightsRemoteDesktopServicesLogOn 
+### <a name="windows10endpointprotectionconfigurationuserrightsremotedesktopserviceslogon"></a>Windows10EndpointProtectionConfiguration.UserRightsRemoteDesktopServicesLogOn 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/DenyRemoteDesktopServicesLogOn
+**오프셋 URI**:/Config/UserRights/DenyRemoteDesktopServicesLogOn
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsremoteshutdown"></a>Windows10EndpointProtectionConfiguration.UserRightsRemoteShutdown 
+### <a name="windows10endpointprotectionconfigurationuserrightsremoteshutdown"></a>Windows10EndpointProtectionConfiguration.UserRightsRemoteShutdown 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/RemoteShutdown
+**오프셋 URI**:/Config/UserRights/RemoteShutdown
 
-#### <a name="windows10endpointprotectionconfigurationuserrightsrestoredata"></a>Windows10EndpointProtectionConfiguration.UserRightsRestoreData 
+### <a name="windows10endpointprotectionconfigurationuserrightsrestoredata"></a>Windows10EndpointProtectionConfiguration.UserRightsRestoreData 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/RestoreFilesAndDirectories
+**오프셋 URI**:/Config/UserRights/RestoreFilesAndDirectories
 
-#### <a name="windows10endpointprotectionconfigurationuserrightstakeownership"></a>Windows10EndpointProtectionConfiguration.UserRightsTakeOwnership 
+### <a name="windows10endpointprotectionconfigurationuserrightstakeownership"></a>Windows10EndpointProtectionConfiguration.UserRightsTakeOwnership 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/UserRights/TakeOwnership
+**오프셋 URI**:/Config/UserRights/TakeOwnership
 
-#### <a name="windows10endpointprotectionconfigurationwindowsconnectionmanagerconnectiontonondomainnetworks"></a>Windows10EndpointProtectionConfiguration.WindowsConnectionManagerConnectionToNonDomainNetworks 
+### <a name="windows10endpointprotectionconfigurationwindowsconnectionmanagerconnectiontonondomainnetworks"></a>Windows10EndpointProtectionConfiguration.WindowsConnectionManagerConnectionToNonDomainNetworks 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork
+**오프셋 URI**:/Config/WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork
 
-#### <a name="windows10endpointprotectionconfigurationwindowslogonsigninlastinteractiveuseraftersysteminitiatedrestart"></a>Windows10EndpointProtectionConfiguration.WindowsLogOnSignInLastInteractiveUserAfterSystemInitiatedRestart 
+### <a name="windows10endpointprotectionconfigurationwindowslogonsigninlastinteractiveuseraftersysteminitiatedrestart"></a>Windows10EndpointProtectionConfiguration.WindowsLogOnSignInLastInteractiveUserAfterSystemInitiatedRestart 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart
+**오프셋 URI**:/Config/WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart
 
-#### <a name="windows10endpointprotectionconfigurationxboxservicesaccessorymanagementservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesAccessoryManagementServiceStartupMode 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode
+### <a name="windows10endpointprotectionconfigurationxboxservicesaccessorymanagementservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesAccessoryManagementServiceStartupMode 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode
 
-#### <a name="windows10endpointprotectionconfigurationxboxservicesenablexboxgamesavetask"></a>Windows10EndpointProtectionConfiguration.XboxServicesEnableXboxGameSaveTask 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/TaskScheduler/EnableXboxGameSaveTask
+### <a name="windows10endpointprotectionconfigurationxboxservicesenablexboxgamesavetask"></a>Windows10EndpointProtectionConfiguration.XboxServicesEnableXboxGameSaveTask 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/TaskScheduler/EnableXboxGameSaveTask
 
-#### <a name="windows10endpointprotectionconfigurationxboxservicesliveauthmanagerservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveAuthManagerServiceStartupMode 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode
+### <a name="windows10endpointprotectionconfigurationxboxservicesliveauthmanagerservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveAuthManagerServiceStartupMode 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode
 
-#### <a name="windows10endpointprotectionconfigurationxboxserviceslivegamesaveservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveGameSaveServiceStartupMode 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/SystemServices/XboxServicesLiveGameSaveServiceStartupMode
+### <a name="windows10endpointprotectionconfigurationxboxserviceslivegamesaveservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveGameSaveServiceStartupMode 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/SystemServices/XboxServicesLiveGameSaveServiceStartupMode
 
-#### <a name="windows10endpointprotectionconfigurationxboxserviceslivenetworkingservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveNetworkingServiceStartupMode 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
+### <a name="windows10endpointprotectionconfigurationxboxserviceslivenetworkingservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveNetworkingServiceStartupMode 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
 
-#### <a name="windows10enterprisemodernappmanagementconfigurationuninstallbuiltinapps"></a>Windows10EnterpriseModernAppManagementConfiguration.UninstallBuiltInApps
-**CSP**: 해당 없음 Graph API 호출에만 **URI 오프셋**: 해당 없음 Graph API 호출에만
+### <a name="windows10enterprisemodernappmanagementconfigurationuninstallbuiltinapps"></a>Windows10EnterpriseModernAppManagementConfiguration.UninstallBuiltInApps
+**CSP**: N/A Graph API **오프셋 URI**만 호출 합니다. N/A Graph API 호출만
 
-#### <a name="windows10generalconfigurationaccountsblockaddingnonmicrosoftaccountemail"></a>Windows10GeneralConfiguration.AccountsBlockAddingNonMicrosoftAccountEmail 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Accounts/AllowAddingNonMicrosoftAccountsManually
+### <a name="windows10generalconfigurationaccountsblockaddingnonmicrosoftaccountemail"></a>Windows10GeneralConfiguration.AccountsBlockAddingNonMicrosoftAccountEmail 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Accounts/AllowAddingNonMicrosoftAccountsManually
 
-#### <a name="windows10generalconfigurationantitheftmodeblocked"></a>Windows10GeneralConfiguration.AntiTheftModeBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Security/AntiTheftMode
+### <a name="windows10generalconfigurationantitheftmodeblocked"></a>Windows10GeneralConfiguration.AntiTheftModeBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Security/AntiTheftMode
 
-#### <a name="windows10generalconfigurationappmanagementmsiallowusercontroloverinstall"></a>Windows10GeneralConfiguration.AppManagementMSIAllowUserControlOverInstall 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/MSIAllowUserControlOverInstall
+### <a name="windows10generalconfigurationappmanagementmsiallowusercontroloverinstall"></a>Windows10GeneralConfiguration.AppManagementMSIAllowUserControlOverInstall 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/ApplicationManagement/MSIAllowUserControlOverInstall
 
-#### <a name="windows10generalconfigurationappmanagementmsialwaysinstallwithelevatedprivileges"></a>Windows10GeneralConfiguration.AppManagementMSIAlwaysInstallWithElevatedPrivileges 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges
+### <a name="windows10generalconfigurationappmanagementmsialwaysinstallwithelevatedprivileges"></a>Windows10GeneralConfiguration.AppManagementMSIAlwaysInstallWithElevatedPrivileges 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges
 
-#### <a name="windows10generalconfigurationappsallowtrustedappssideloading"></a>Windows10GeneralConfiguration.AppsAllowTrustedAppsSideloading 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/AllowAllTrustedApps
+### <a name="windows10generalconfigurationappsallowtrustedappssideloading"></a>Windows10GeneralConfiguration.AppsAllowTrustedAppsSideloading 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/ApplicationManagement/AllowAllTrustedApps
 
-#### <a name="windows10generalconfigurationappsblockwindowsstoreoriginatedapps"></a>Windows10GeneralConfiguration.AppsBlockWindowsStoreOriginatedApps 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/DisableStoreOriginatedApps
+### <a name="windows10generalconfigurationappsblockwindowsstoreoriginatedapps"></a>Windows10GeneralConfiguration.AppsBlockWindowsStoreOriginatedApps 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/ApplicationManagement/DisableStoreOriginatedApps
 
-#### <a name="windows10generalconfigurationappsmicrosoftaccountsoptional"></a>Windows10GeneralConfiguration.AppsMicrosoftAccountsOptional 
+### <a name="windows10generalconfigurationappsmicrosoftaccountsoptional"></a>Windows10GeneralConfiguration.AppsMicrosoftAccountsOptional 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/AppRuntime/AllowMicrosoftAccountsToBeOptional
+**오프셋 URI**:/Config/AppRuntime/AllowMicrosoftAccountsToBeOptional
 
-#### <a name="windows10generalconfigurationassignedaccessmultimodeprofiles"></a>Windows10GeneralConfiguration.AssignedAccessMultiModeProfiles 
-**CSP**: ./Device/Vendor/MSFT/AssignedAccess  
-**URI 오프셋**: /Configuration
+### <a name="windows10generalconfigurationassignedaccessmultimodeprofiles"></a>Windows10GeneralConfiguration.AssignedAccessMultiModeProfiles 
+**CSP**:./Device/Vendor/MSFT/AssignedAccess  
+**오프셋 URI**:/구성
 
-#### <a name="windows10generalconfigurationassignedaccesssinglemodeappusermodelid"></a>Windows10GeneralConfiguration.AssignedAccessSingleModeAppUserModelId 
-**CSP**: ./Device/Vendor/MSFT/AssignedAccess  
-**URI 오프셋**: /Configuration
+### <a name="windows10generalconfigurationassignedaccesssinglemodeappusermodelid"></a>Windows10GeneralConfiguration.AssignedAccessSingleModeAppUserModelId 
+**CSP**:./Device/Vendor/MSFT/AssignedAccess  
+**오프셋 URI**:/구성
 
-#### <a name="windows10generalconfigurationassignedaccesssinglemodeusername"></a>Windows10GeneralConfiguration.AssignedAccessSingleModeUserName 
-**CSP**: ./Device/Vendor/MSFT/AssignedAccess  
-**URI 오프셋**: /Configuration
+### <a name="windows10generalconfigurationassignedaccesssinglemodeusername"></a>Windows10GeneralConfiguration.AssignedAccessSingleModeUserName 
+**CSP**:./Device/Vendor/MSFT/AssignedAccess  
+**오프셋 URI**:/구성
 
-#### <a name="windows10generalconfigurationauthenticationallowfidodevice"></a>Windows10GeneralConfiguration.AuthenticationAllowFIDODevice 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Authentication/AllowFidoDeviceSignon
+### <a name="windows10generalconfigurationauthenticationallowfidodevice"></a>Windows10GeneralConfiguration.AuthenticationAllowFIDODevice 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Authentication/AllowFidoDeviceSignon
 
-#### <a name="windows10generalconfigurationauthenticationallowsecondarydevice"></a>Windows10GeneralConfiguration.AuthenticationAllowSecondaryDevice 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Authentication/AllowSecondaryAuthenticationDevice
+### <a name="windows10generalconfigurationauthenticationallowsecondarydevice"></a>Windows10GeneralConfiguration.AuthenticationAllowSecondaryDevice 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/cer/werdevice
 
-#### <a name="windows10generalconfigurationauthenticationpreferredazureadtenantdomainname"></a>Windows10GeneralConfiguration.AuthenticationPreferredAzureADTenantDomainName 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Authentication/PreferredAadTenantDomainName
+### <a name="windows10generalconfigurationauthenticationpreferredazureadtenantdomainname"></a>Windows10GeneralConfiguration.AuthenticationPreferredAzureADTenantDomainName 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Authentication/PreferredAadTenantDomainName
 
-#### <a name="windows10generalconfigurationauthenticationwebsignin"></a>Windows10GeneralConfiguration.AuthenticationWebSignIn 
+### <a name="windows10generalconfigurationauthenticationwebsignin"></a>Windows10GeneralConfiguration.AuthenticationWebSignIn 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Authentication/EnableWebSignIn
+**오프셋 URI**:/Config/Authentication/EnableWebSignIn
 
-#### <a name="windows10generalconfigurationautoplaydefaultautorunbehavior"></a>Windows10GeneralConfiguration.AutoPlayDefaultAutoRunBehavior 
+### <a name="windows10generalconfigurationautoplaydefaultautorunbehavior"></a>Windows10GeneralConfiguration.AutoPlayDefaultAutoRunBehavior 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Autoplay/SetDefaultAutoRunBehavior
+**오프셋 URI**:/Config/Autoplay/SetDefaultAutoRunBehavior
 
-#### <a name="windows10generalconfigurationautoplayfornonvolumedevices"></a>Windows10GeneralConfiguration.AutoPlayForNonVolumeDevices 
+### <a name="windows10generalconfigurationautoplayfornonvolumedevices"></a>Windows10GeneralConfiguration.AutoPlayForNonVolumeDevices 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Autoplay/DisallowAutoplayForNonVolumeDevices
+**오프셋 URI**:/Config/Autoplay/DisallowAutoplayForNonVolumeDevices
 
-#### <a name="windows10generalconfigurationautoplaymode"></a>Windows10GeneralConfiguration.AutoPlayMode 
+### <a name="windows10generalconfigurationautoplaymode"></a>Windows10GeneralConfiguration.AutoPlayMode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Autoplay/TurnOffAutoPlay
+**오프셋 URI**:/Config/Autoplay/TurnOffAutoPlay
 
-#### <a name="windows10generalconfigurationbluetoothallowedservices"></a>Windows10GeneralConfiguration.BluetoothAllowedServices 
+### <a name="windows10generalconfigurationbluetoothallowedservices"></a>Windows10GeneralConfiguration.BluetoothAllowedServices 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Bluetooth/ServicesAllowedList
+**오프셋 URI**:/Config/Bluetooth/ServicesAllowedList
 
-#### <a name="windows10generalconfigurationbluetoothblockadvertising"></a>Windows10GeneralConfiguration.BluetoothBlockAdvertising 
+### <a name="windows10generalconfigurationbluetoothblockadvertising"></a>Windows10GeneralConfiguration.BluetoothBlockAdvertising 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Bluetooth/AllowAdvertising
+**오프셋 URI**:/Config/Bluetooth/AllowAdvertising
 
-#### <a name="windows10generalconfigurationbluetoothblockdiscoverablemode"></a>Windows10GeneralConfiguration.BluetoothBlockDiscoverableMode 
+### <a name="windows10generalconfigurationbluetoothblockdiscoverablemode"></a>Windows10GeneralConfiguration.BluetoothBlockDiscoverableMode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Bluetooth/AllowDiscoverableMode
+**오프셋 URI**:/Config/Bluetooth/AllowDiscoverableMode
 
-#### <a name="windows10generalconfigurationbluetoothblocked"></a>Windows10GeneralConfiguration.BluetoothBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/AllowBluetooth
+### <a name="windows10generalconfigurationbluetoothblocked"></a>Windows10GeneralConfiguration.BluetoothBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Connectivity/AllowBluetooth
 
-#### <a name="windows10generalconfigurationbluetoothblockprepairing"></a>Windows10GeneralConfiguration.BluetoothBlockPrePairing 
+### <a name="windows10generalconfigurationbluetoothblockprepairing"></a>Windows10GeneralConfiguration.BluetoothBlockPrePairing 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Bluetooth/AllowPrepairing
+**오프셋 URI**:/Config/Bluetooth/AllowPrepairing
 
-#### <a name="windows10generalconfigurationbluetoothblockpromptedproximalconnections"></a>Windows10GeneralConfiguration.BluetoothBlockPromptedProximalConnections 
+### <a name="windows10generalconfigurationbluetoothblockpromptedproximalconnections"></a>Windows10GeneralConfiguration.BluetoothBlockPromptedProximalConnections 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Bluetooth/AllowPromptedProximalConnections
+**오프셋 URI**:/Config/Bluetooth/AllowPromptedProximalConnections
 
-#### <a name="windows10generalconfigurationbluetoothdevicename"></a>Windows10GeneralConfiguration.BluetoothDeviceName 
+### <a name="windows10generalconfigurationbluetoothdevicename"></a>Windows10GeneralConfiguration.BluetoothDeviceName 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Bluetooth/LocalDeviceName
+**오프셋 URI**:/Config/Bluetooth/LocalDeviceName
 
-#### <a name="windows10generalconfigurationbootstartdriverinitialization"></a>windows10generalconfiguration.bootStartDriverInitialization 
+### <a name="windows10generalconfigurationbootstartdriverinitialization"></a>windows10generalconfiguration.bootStartDriverInitialization 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/System/BootStartDriverInitialization
+**오프셋 URI**:/Config/System/BootStartDriverInitialization
 
-#### <a name="windows10generalconfigurationcamerablocked"></a>Windows10GeneralConfiguration.CameraBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Camera/AllowCamera
+### <a name="windows10generalconfigurationcamerablocked"></a>Windows10GeneralConfiguration.CameraBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Camera/AllowCamera
 
-#### <a name="windows10generalconfigurationcellularblockdatawhenroaming"></a>Windows10GeneralConfiguration.CellularBlockDataWhenRoaming 
+### <a name="windows10generalconfigurationcellularblockdatawhenroaming"></a>Windows10GeneralConfiguration.CellularBlockDataWhenRoaming 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/AllowCellularDataRoaming
+**오프셋 URI**:/Config/Connectivity/AllowCellularDataRoaming
 
-#### <a name="windows10generalconfigurationcellularblockvpn"></a>Windows10GeneralConfiguration.CellularBlockVpn 
+### <a name="windows10generalconfigurationcellularblockvpn"></a>Windows10GeneralConfiguration.CellularBlockVpn 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/AllowVPNOverCellular
+**오프셋 URI**:/Config/Connectivity/AllowVPNOverCellular
 
-#### <a name="windows10generalconfigurationcellularblockvpnwhenroaming"></a>Windows10GeneralConfiguration.CellularBlockVpnWhenRoaming 
+### <a name="windows10generalconfigurationcellularblockvpnwhenroaming"></a>Windows10GeneralConfiguration.CellularBlockVpnWhenRoaming 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/AllowVPNRoamingOverCellular
+**오프셋 URI**:/Config/Connectivity/AllowVPNRoamingOverCellular
 
-#### <a name="windows10generalconfigurationcellulardata"></a>Windows10GeneralConfiguration.CellularData 
+### <a name="windows10generalconfigurationcellulardata"></a>Windows10GeneralConfiguration.CellularData 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/AllowCellularData
+**오프셋 URI**:/Config/Connectivity/AllowCellularData
 
-#### <a name="windows10generalconfigurationcertificatesblockmanualrootcertificateinstallation"></a>Windows10GeneralConfiguration.CertificatesBlockManualRootCertificateInstallation 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Security/AllowManualRootCertificateInstallation
+### <a name="windows10generalconfigurationcertificatesblockmanualrootcertificateinstallation"></a>Windows10GeneralConfiguration.CertificatesBlockManualRootCertificateInstallation 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Security/AllowManualRootCertificateInstallation
 
-#### <a name="windows10generalconfigurationconnecteddevicesserviceblocked"></a>Windows10GeneralConfiguration.ConnectedDevicesServiceBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/AllowConnectedDevices
+### <a name="windows10generalconfigurationconnecteddevicesserviceblocked"></a>Windows10GeneralConfiguration.ConnectedDevicesServiceBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Connectivity/AllowConnectedDevices
 
-#### <a name="windows10generalconfigurationcopypasteblocked"></a>Windows10GeneralConfiguration.CopyPasteBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowCopyPaste
+### <a name="windows10generalconfigurationcopypasteblocked"></a>Windows10GeneralConfiguration.CopyPasteBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowCopyPaste
 
-#### <a name="windows10generalconfigurationcortanablocked"></a>Windows10GeneralConfiguration.CortanaBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/AboveLock/AllowCortanaAboveLock
+### <a name="windows10generalconfigurationcortanablocked"></a>Windows10GeneralConfiguration.CortanaBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/AboveLock/AllowCortanaAboveLock
 
-#### <a name="windows10generalconfigurationcryptographyallowfipsalgorithmpolicy"></a>Windows10GeneralConfiguration.CryptographyAllowFipsAlgorithmPolicy 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Cryptography/AllowFipsAlgorithmPolicy
+### <a name="windows10generalconfigurationcryptographyallowfipsalgorithmpolicy"></a>Windows10GeneralConfiguration.CryptographyAllowFipsAlgorithmPolicy 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Cryptography/AllowFipsAlgorithmPolicy
 
-#### <a name="windows10generalconfigurationdataprotectionblockdirectmemoryaccess"></a>Windows10GeneralConfiguration.DataProtectionBlockDirectMemoryAccess 
+### <a name="windows10generalconfigurationdataprotectionblockdirectmemoryaccess"></a>Windows10GeneralConfiguration.DataProtectionBlockDirectMemoryAccess 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DataProtection/AllowDirectMemoryAccess
+**오프셋 URI**:/Config/DataProtection/AllowDirectMemoryAccess
 
-#### <a name="windows10generalconfigurationdefenderblockenduseraccess"></a>Windows10GeneralConfiguration.DefenderBlockEndUserAccess 
+### <a name="windows10generalconfigurationdefenderblockenduseraccess"></a>Windows10GeneralConfiguration.DefenderBlockEndUserAccess 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowUserUIAccess
+**오프셋 URI**:/Config/Defender/AllowUserUIAccess
 
-#### <a name="windows10generalconfigurationdefenderblockonaccessprotection"></a>Windows10GeneralConfiguration.DefenderBlockOnAccessProtection 
+### <a name="windows10generalconfigurationdefenderblockonaccessprotection"></a>Windows10GeneralConfiguration.DefenderBlockOnAccessProtection 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/Defender/AllowOnAccessProtection
 
-#### <a name="windows10generalconfigurationdefendercloudblocklevel"></a>Windows10GeneralConfiguration.DefenderCloudBlockLevel 
+### <a name="windows10generalconfigurationdefendercloudblocklevel"></a>Windows10GeneralConfiguration.DefenderCloudBlockLevel 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/CloudBlockLevel
+**오프셋 URI**:/Config/Defender/CloudBlockLevel
 
-#### <a name="windows10generalconfigurationdefendercloudextendedtimeout"></a>Windows10GeneralConfiguration.DefenderCloudExtendedTimeout 
+### <a name="windows10generalconfigurationdefendercloudextendedtimeout"></a>Windows10GeneralConfiguration.DefenderCloudExtendedTimeout 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/CloudExtendedTimeout
+**오프셋 URI**:/Config/Defender/CloudExtendedTimeout
 
-#### <a name="windows10generalconfigurationdefendercloudextendedtimeoutinseconds"></a>Windows10GeneralConfiguration.DefenderCloudExtendedTimeoutInSeconds 
+### <a name="windows10generalconfigurationdefendercloudextendedtimeoutinseconds"></a>Windows10GeneralConfiguration.DefenderCloudExtendedTimeoutInSeconds 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/CloudExtendedTimeout
+**오프셋 URI**:/Config/Defender/CloudExtendedTimeout
 
-#### <a name="windows10generalconfigurationdefenderdaysbeforedeletingquarantinedmalware"></a>Windows10GeneralConfiguration.DefenderDaysBeforeDeletingQuarantinedMalware 
+### <a name="windows10generalconfigurationdefenderdaysbeforedeletingquarantinedmalware"></a>Windows10GeneralConfiguration.DefenderDaysBeforeDeletingQuarantinedMalware 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/DaysToRetainCleanedMalware
+**오프셋 URI**:/Config/Defender/DaysToRetainCleanedMalware
 
-#### <a name="windows10generalconfigurationdefenderdetectedmalwareactions"></a>Windows10GeneralConfiguration.DefenderDetectedMalwareActions 
+### <a name="windows10generalconfigurationdefenderdetectedmalwareactions"></a>Windows10GeneralConfiguration.DefenderDetectedMalwareActions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/ThreatSeverityDefaultAction
+**오프셋 URI**:/Config/Defender/ThreatSeverityDefaultAction
 
-#### <a name="windows10generalconfigurationdefenderfileextensionstoexclude"></a>Windows10GeneralConfiguration.DefenderFileExtensionsToExclude 
+### <a name="windows10generalconfigurationdefenderfileextensionstoexclude"></a>Windows10GeneralConfiguration.DefenderFileExtensionsToExclude 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/ExcludedExtensions
+**오프셋 URI**:/Config/Defender/ExcludedExtensions
 
-#### <a name="windows10generalconfigurationdefenderfilesandfolderstoexclude"></a>Windows10GeneralConfiguration.DefenderFilesAndFoldersToExclude 
+### <a name="windows10generalconfigurationdefenderfilesandfolderstoexclude"></a>Windows10GeneralConfiguration.DefenderFilesAndFoldersToExclude 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/ExcludedPaths
+**오프셋 URI**:/Config/Defender/ExcludedPaths
 
-#### <a name="windows10generalconfigurationdefendermonitorfileactivity"></a>Windows10GeneralConfiguration.DefenderMonitorFileActivity 
+### <a name="windows10generalconfigurationdefendermonitorfileactivity"></a>Windows10GeneralConfiguration.DefenderMonitorFileActivity 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/Defender/AllowRealtimeMonitoring
+**오프셋 URI**:/Config/Defender/AllowRealtimeMonitoring
 
-#### <a name="windows10generalconfigurationdefenderpotentiallyunwantedappaction"></a>Windows10GeneralConfiguration.DefenderPotentiallyUnwantedAppAction 
+### <a name="windows10generalconfigurationdefenderpotentiallyunwantedappaction"></a>Windows10GeneralConfiguration.DefenderPotentiallyUnwantedAppAction 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/PUAProtection
+**오프셋 URI**:/Config/Defender/PUAProtection
 
-#### <a name="windows10generalconfigurationdefenderpotentiallyunwantedappactionsetting"></a>Windows10GeneralConfiguration.DefenderPotentiallyUnwantedAppActionSetting 
+### <a name="windows10generalconfigurationdefenderpotentiallyunwantedappactionsetting"></a>Windows10GeneralConfiguration.DefenderPotentiallyUnwantedAppActionSetting 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/PUAProtection
+**오프셋 URI**:/Config/Defender/PUAProtection
 
-#### <a name="windows10generalconfigurationdefenderprocessestoexclude"></a>Windows10GeneralConfiguration.DefenderProcessesToExclude 
+### <a name="windows10generalconfigurationdefenderprocessestoexclude"></a>Windows10GeneralConfiguration.DefenderProcessesToExclude 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/ExcludedProcesses
+**오프셋 URI**:/Config/Defender/ExcludedProcesses
 
-#### <a name="windows10generalconfigurationdefenderpromptforsamplesubmission"></a>Windows10GeneralConfiguration.DefenderPromptForSampleSubmission 
+### <a name="windows10generalconfigurationdefenderpromptforsamplesubmission"></a>Windows10GeneralConfiguration.DefenderPromptForSampleSubmission 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/SubmitSamplesConsent
+**오프셋 URI**:/Config/Defender/SubmitSamplesConsent
 
-#### <a name="windows10generalconfigurationdefenderrequirebehaviormonitoring"></a>Windows10GeneralConfiguration.DefenderRequireBehaviorMonitoring 
+### <a name="windows10generalconfigurationdefenderrequirebehaviormonitoring"></a>Windows10GeneralConfiguration.DefenderRequireBehaviorMonitoring 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowBehaviorMonitoring
+**오프셋 URI**:/Config/Defender/AllowBehaviorMonitoring
 
-#### <a name="windows10generalconfigurationdefenderrequirecloudprotection"></a>Windows10GeneralConfiguration.DefenderRequireCloudProtection 
+### <a name="windows10generalconfigurationdefenderrequirecloudprotection"></a>Windows10GeneralConfiguration.DefenderRequireCloudProtection 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowCloudProtection
+**오프셋 URI**:/Config/Defender/AllowCloudProtection
 
-#### <a name="windows10generalconfigurationdefenderrequirenetworkinspectionsystem"></a>Windows10GeneralConfiguration.DefenderRequireNetworkInspectionSystem 
+### <a name="windows10generalconfigurationdefenderrequirenetworkinspectionsystem"></a>Windows10GeneralConfiguration.DefenderRequireNetworkInspectionSystem 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowIntrusionPreventionSystem
+**오프셋 URI**:/Config/Defender/AllowIntrusionPreventionSystem
 
-#### <a name="windows10generalconfigurationdefenderrequirerealtimemonitoring"></a>Windows10GeneralConfiguration.DefenderRequireRealTimeMonitoring 
+### <a name="windows10generalconfigurationdefenderrequirerealtimemonitoring"></a>Windows10GeneralConfiguration.DefenderRequireRealTimeMonitoring 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/Defender/AllowRealtimeMonitoring
+**오프셋 URI**:/Config/Defender/AllowRealtimeMonitoring
 
-#### <a name="windows10generalconfigurationdefenderscanarchivefiles"></a>Windows10GeneralConfiguration.DefenderScanArchiveFiles 
+### <a name="windows10generalconfigurationdefenderscanarchivefiles"></a>Windows10GeneralConfiguration.DefenderScanArchiveFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowArchiveScanning
+**오프셋 URI**:/Config/Defender/AllowArchiveScanning
 
-#### <a name="windows10generalconfigurationdefenderscandownloads"></a>Windows10GeneralConfiguration.DefenderScanDownloads 
+### <a name="windows10generalconfigurationdefenderscandownloads"></a>Windows10GeneralConfiguration.DefenderScanDownloads 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowIOAVProtection
+**오프셋 URI**:/Config/Defender/AllowIOAVProtection
 
-#### <a name="windows10generalconfigurationdefenderscanincomingmail"></a>Windows10GeneralConfiguration.DefenderScanIncomingMail 
+### <a name="windows10generalconfigurationdefenderscanincomingmail"></a>Windows10GeneralConfiguration.DefenderScanIncomingMail 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowScanningNetworkFiles
+**오프셋 URI**:/Config/Defender/AllowScanningNetworkFiles
 
-#### <a name="windows10generalconfigurationdefenderscanmappednetworkdrivesduringfullscan"></a>Windows10GeneralConfiguration.DefenderScanMappedNetworkDrivesDuringFullScan 
+### <a name="windows10generalconfigurationdefenderscanmappednetworkdrivesduringfullscan"></a>Windows10GeneralConfiguration.DefenderScanMappedNetworkDrivesDuringFullScan 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/Defender/AllowFullScanOnMappedNetworkDrives
+**오프셋 URI**:/Config/Defender/AllowFullScanOnMappedNetworkDrives
 
-#### <a name="windows10generalconfigurationdefenderscanmaxcpu"></a>Windows10GeneralConfiguration.DefenderScanMaxCpu 
+### <a name="windows10generalconfigurationdefenderscanmaxcpu"></a>Windows10GeneralConfiguration.DefenderScanMaxCpu 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AvgCPULoadFactor
+**오프셋 URI**:/Config/Defender/AvgCPULoadFactor
 
-#### <a name="windows10generalconfigurationdefenderscannetworkfiles"></a>Windows10GeneralConfiguration.DefenderScanNetworkFiles 
+### <a name="windows10generalconfigurationdefenderscannetworkfiles"></a>Windows10GeneralConfiguration.DefenderScanNetworkFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowScanningNetworkFiles
+**오프셋 URI**:/Config/Defender/AllowScanningNetworkFiles
 
-#### <a name="windows10generalconfigurationdefenderscanremovabledrivesduringfullscan"></a>Windows10GeneralConfiguration.DefenderScanRemovableDrivesDuringFullScan 
+### <a name="windows10generalconfigurationdefenderscanremovabledrivesduringfullscan"></a>Windows10GeneralConfiguration.DefenderScanRemovableDrivesDuringFullScan 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/Defender/AllowFullScanRemovableDriveScanning
+**오프셋 URI**:/Config/Defender/AllowFullScanRemovableDriveScanning
 
-#### <a name="windows10generalconfigurationdefenderscanscriptsloadedininternetexplorer"></a>Windows10GeneralConfiguration.DefenderScanScriptsLoadedInInternetExplorer 
+### <a name="windows10generalconfigurationdefenderscanscriptsloadedininternetexplorer"></a>Windows10GeneralConfiguration.DefenderScanScriptsLoadedInInternetExplorer 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/AllowScriptScanning
+**오프셋 URI**:/Config/Defender/AllowScriptScanning
 
-#### <a name="windows10generalconfigurationdefenderscantype"></a>Windows10GeneralConfiguration.DefenderScanType 
+### <a name="windows10generalconfigurationdefenderscantype"></a>Windows10GeneralConfiguration.DefenderScanType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/ScanParameter
+**오프셋 URI**:/Config/Defender/ScanParameter
 
-#### <a name="windows10generalconfigurationdefenderscheduledquickscantime"></a>Windows10GeneralConfiguration.DefenderScheduledQuickScanTime 
+### <a name="windows10generalconfigurationdefenderscheduledquickscantime"></a>Windows10GeneralConfiguration.DefenderScheduledQuickScanTime 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/ScheduleQuickScanTime
+**오프셋 URI**:/Config/Defender/ScheduleQuickScanTime
 
-#### <a name="windows10generalconfigurationdefenderscheduledscantime"></a>Windows10GeneralConfiguration.DefenderScheduledScanTime 
+### <a name="windows10generalconfigurationdefenderscheduledscantime"></a>Windows10GeneralConfiguration.DefenderScheduledScanTime 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/ScheduleScanTime
+**오프셋 URI**:/Config/Defender/ScheduleScanTime
 
-#### <a name="windows10generalconfigurationdefenderschedulescanday"></a>Windows10GeneralConfiguration.DefenderScheduleScanDay 
+### <a name="windows10generalconfigurationdefenderschedulescanday"></a>Windows10GeneralConfiguration.DefenderScheduleScanDay 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/ScheduleScanDay
+**오프셋 URI**:/Config/Defender/ScheduleScanDay
 
-#### <a name="windows10generalconfigurationdefendersignatureupdateintervalinhours"></a>Windows10GeneralConfiguration.DefenderSignatureUpdateIntervalInHours 
+### <a name="windows10generalconfigurationdefendersignatureupdateintervalinhours"></a>Windows10GeneralConfiguration.DefenderSignatureUpdateIntervalInHours 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/SignatureUpdateInterval
+**오프셋 URI**:/Config/Defender/SignatureUpdateInterval
 
-#### <a name="windows10generalconfigurationdefendersubmitsamplesconsenttype"></a>Windows10GeneralConfiguration.DefenderSubmitSamplesConsentType 
+### <a name="windows10generalconfigurationdefendersubmitsamplesconsenttype"></a>Windows10GeneralConfiguration.DefenderSubmitSamplesConsentType 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/SubmitSamplesConsent
+**오프셋 URI**:/Config/Defender/SubmitSamplesConsent
 
-#### <a name="windows10generalconfigurationdefendersystemscanschedule"></a>Windows10GeneralConfiguration.DefenderSystemScanSchedule 
+### <a name="windows10generalconfigurationdefendersystemscanschedule"></a>Windows10GeneralConfiguration.DefenderSystemScanSchedule 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Defender/ScheduleScanDay
+**오프셋 URI**:/Config/Defender/ScheduleScanDay
 
-#### <a name="windows10generalconfigurationdeveloperunlocksetting"></a>Windows10GeneralConfiguration.DeveloperUnlockSetting 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/AllowDeveloperUnlock
+### <a name="windows10generalconfigurationdeveloperunlocksetting"></a>Windows10GeneralConfiguration.DeveloperUnlockSetting 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/ApplicationManagement/AllowDeveloperUnlock
 
-#### <a name="windows10generalconfigurationdevicemanagementblockfactoryresetonmobile"></a>Windows10GeneralConfiguration.DeviceManagementBlockFactoryResetOnMobile 
+### <a name="windows10generalconfigurationdevicemanagementblockfactoryresetonmobile"></a>Windows10GeneralConfiguration.DeviceManagementBlockFactoryResetOnMobile 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/System/AllowUserToResetPhone
+**오프셋 URI**:/Config/System/AllowUserToResetPhone
 
-#### <a name="windows10generalconfigurationdevicemanagementblockmanualunenroll"></a>Windows10GeneralConfiguration.DeviceManagementBlockManualUnenroll 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowManualMDMUnenrollment
+### <a name="windows10generalconfigurationdevicemanagementblockmanualunenroll"></a>Windows10GeneralConfiguration.DeviceManagementBlockManualUnenroll 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowManualMDMUnenrollment
 
-#### <a name="windows10generalconfigurationdiagnosticsdatasubmissionmode"></a>Windows10GeneralConfiguration.DiagnosticsDataSubmissionMode 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/System/AllowTelemetry
+### <a name="windows10generalconfigurationdiagnosticsdatasubmissionmode"></a>Windows10GeneralConfiguration.DiagnosticsDataSubmissionMode 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/system/allowtelemetry 분석
 
-#### <a name="windows10generalconfigurationdisplayapplistwithgdidpiscalingturnedoff"></a>Windows10GeneralConfiguration.DisplayAppListWithGdiDPIScalingTurnedOff 
+### <a name="windows10generalconfigurationdisplayapplistwithgdidpiscalingturnedoff"></a>Windows10GeneralConfiguration.DisplayAppListWithGdiDPIScalingTurnedOff 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Display/TurnOffGdiDPIScalingForApps
+**오프셋 URI**:/Config/Display/TurnOffGdiDPIScalingForApps
 
-#### <a name="windows10generalconfigurationdisplayapplistwithgdidpiscalingturnedon"></a>Windows10GeneralConfiguration.DisplayAppListWithGdiDPIScalingTurnedOn 
+### <a name="windows10generalconfigurationdisplayapplistwithgdidpiscalingturnedon"></a>Windows10GeneralConfiguration.DisplayAppListWithGdiDPIScalingTurnedOn 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Display/TurnOnGdiDPIScalingForApps
+**오프셋 URI**:/Config/Display/TurnOnGdiDPIScalingForApps
 
-#### <a name="windows10generalconfigurationedgeallowstartpagesmodification"></a>Windows10GeneralConfiguration.EdgeAllowStartPagesModification 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/HomePages
+### <a name="windows10generalconfigurationedgeallowstartpagesmodification"></a>Windows10GeneralConfiguration.EdgeAllowStartPagesModification 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/HomePages
 
-#### <a name="windows10generalconfigurationedgeblockaccesstoaboutflags"></a>Windows10GeneralConfiguration.EdgeBlockAccessToAboutFlags 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/PreventAccessToAboutFlagsInMicrosoftEdge
+### <a name="windows10generalconfigurationedgeblockaccesstoaboutflags"></a>Windows10GeneralConfiguration.EdgeBlockAccessToAboutFlags 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/PreventAccessToAboutFlagsInMicrosoftEdge
 
-#### <a name="windows10generalconfigurationedgeblockaddressbardropdown"></a>Windows10GeneralConfiguration.EdgeBlockAddressBarDropdown 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowAddressBarDropdown
+### <a name="windows10generalconfigurationedgeblockaddressbardropdown"></a>Windows10GeneralConfiguration.EdgeBlockAddressBarDropdown 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/AllowAddressBarDropdown
 
-#### <a name="windows10generalconfigurationedgeblockautofill"></a>Windows10GeneralConfiguration.EdgeBlockAutofill 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowAutofill
+### <a name="windows10generalconfigurationedgeblockautofill"></a>Windows10GeneralConfiguration.EdgeBlockAutofill 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/seruser/ss/allow자동 채우기
 
-#### <a name="windows10generalconfigurationedgeblockcompatibilitylist"></a>Windows10GeneralConfiguration.EdgeBlockCompatibilityList 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowMicrosoftCompatibilityList
+### <a name="windows10generalconfigurationedgeblockcompatibilitylist"></a>Windows10GeneralConfiguration.EdgeBlockCompatibilityList 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/AllowMicrosoftCompatibilityList
 
-#### <a name="windows10generalconfigurationedgeblockdevelopertools"></a>Windows10GeneralConfiguration.EdgeBlockDeveloperTools 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowDeveloperTools
+### <a name="windows10generalconfigurationedgeblockdevelopertools"></a>Windows10GeneralConfiguration.EdgeBlockDeveloperTools 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/AllowDeveloperTools
 
-#### <a name="windows10generalconfigurationedgeblocked"></a>Windows10GeneralConfiguration.EdgeBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowBrowser
+### <a name="windows10generalconfigurationedgeblocked"></a>Windows10GeneralConfiguration.EdgeBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/suser/sgt/allowbrowser
 
-#### <a name="windows10generalconfigurationedgeblockeditfavorites"></a>Windows10GeneralConfiguration.EdgeBlockEditFavorites 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/LockdownFavorites
+### <a name="windows10generalconfigurationedgeblockeditfavorites"></a>Windows10GeneralConfiguration.EdgeBlockEditFavorites 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/browser/lockdownfavorites/
 
-#### <a name="windows10generalconfigurationedgeblockextensions"></a>Windows10GeneralConfiguration.EdgeBlockExtensions 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowExtensions
+### <a name="windows10generalconfigurationedgeblockextensions"></a>Windows10GeneralConfiguration.EdgeBlockExtensions 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/seruser/ss 확장
 
-#### <a name="windows10generalconfigurationedgeblockfullscreenmode"></a>Windows10GeneralConfiguration.EdgeBlockFullScreenMode 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowFullScreenMode
+### <a name="windows10generalconfigurationedgeblockfullscreenmode"></a>Windows10GeneralConfiguration.EdgeBlockFullScreenMode 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/AllowFullScreenMode
 
-#### <a name="windows10generalconfigurationedgeblockinprivatebrowsing"></a>Windows10GeneralConfiguration.EdgeBlockInPrivateBrowsing 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowInPrivate
+### <a name="windows10generalconfigurationedgeblockinprivatebrowsing"></a>Windows10GeneralConfiguration.EdgeBlockInPrivateBrowsing 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/seremrvv/allowinprivate
 
-#### <a name="windows10generalconfigurationedgeblocklivetiledatacollection"></a>Windows10GeneralConfiguration.EdgeBlockLiveTileDataCollection 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/PreventLiveTileDataCollection
+### <a name="windows10generalconfigurationedgeblocklivetiledatacollection"></a>Windows10GeneralConfiguration.EdgeBlockLiveTileDataCollection 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/PreventLiveTileDataCollection
 
-#### <a name="windows10generalconfigurationedgeblockpasswordmanager"></a>Windows10GeneralConfiguration.EdgeBlockPasswordManager 
+### <a name="windows10generalconfigurationedgeblockpasswordmanager"></a>Windows10GeneralConfiguration.EdgeBlockPasswordManager 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowPasswordManager
+**오프셋 URI**:/Suser/seruser/ws
 
-#### <a name="windows10generalconfigurationedgeblockpopups"></a>Windows10GeneralConfiguration.EdgeBlockPopups 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowPopups
+### <a name="windows10generalconfigurationedgeblockpopups"></a>Windows10GeneralConfiguration.EdgeBlockPopups 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/suser/sers/allow돌출
 
-#### <a name="windows10generalconfigurationedgeblockprelaunch"></a>Windows10GeneralConfiguration.EdgeBlockPrelaunch 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowPrelaunch
+### <a name="windows10generalconfigurationedgeblockprelaunch"></a>Windows10GeneralConfiguration.EdgeBlockPrelaunch 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/sererrers
 
-#### <a name="windows10generalconfigurationedgeblockprinting"></a>Windows10GeneralConfiguration.EdgeBlockPrinting 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowPrinting
+### <a name="windows10generalconfigurationedgeblockprinting"></a>Windows10GeneralConfiguration.EdgeBlockPrinting 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/suser/ss/allow인쇄
 
-#### <a name="windows10generalconfigurationedgeblocksavinghistory"></a>Windows10GeneralConfiguration.EdgeBlockSavingHistory 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowSavingHistory
+### <a name="windows10generalconfigurationedgeblocksavinghistory"></a>Windows10GeneralConfiguration.EdgeBlockSavingHistory 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/AllowSavingHistory
 
-#### <a name="windows10generalconfigurationedgeblocksearchsuggestions"></a>Windows10GeneralConfiguration.EdgeBlockSearchSuggestions 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowSearchSuggestionsinAddressBar
+### <a name="windows10generalconfigurationedgeblocksearchsuggestions"></a>Windows10GeneralConfiguration.EdgeBlockSearchSuggestions 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/AllowSearchSuggestionsinAddressBar
 
-#### <a name="windows10generalconfigurationedgeblocksendingdonottrackheader"></a>Windows10GeneralConfiguration.EdgeBlockSendingDoNotTrackHeader 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowDoNotTrack
+### <a name="windows10generalconfigurationedgeblocksendingdonottrackheader"></a>Windows10GeneralConfiguration.EdgeBlockSendingDoNotTrackHeader 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/AllowDoNotTrack
 
-#### <a name="windows10generalconfigurationedgeblocksendingintranettraffictointernetexplorer"></a>Windows10GeneralConfiguration.EdgeBlockSendingIntranetTrafficToInternetExplorer 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/SendIntranetTraffictoInternetExplorer
+### <a name="windows10generalconfigurationedgeblocksendingintranettraffictointernetexplorer"></a>Windows10GeneralConfiguration.EdgeBlockSendingIntranetTrafficToInternetExplorer 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/SendIntranetTraffictoInternetExplorer
 
-#### <a name="windows10generalconfigurationedgeblocksideloadingextensions"></a>Windows10GeneralConfiguration.EdgeBlockSideloadingExtensions 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowSideloadingOfExtensions
+### <a name="windows10generalconfigurationedgeblocksideloadingextensions"></a>Windows10GeneralConfiguration.EdgeBlockSideloadingExtensions 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/AllowSideloadingOfExtensions
 
-#### <a name="windows10generalconfigurationedgeblocktabpreloading"></a>Windows10GeneralConfiguration.EdgeBlockTabPreloading 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowTabPreloading
+### <a name="windows10generalconfigurationedgeblocktabpreloading"></a>Windows10GeneralConfiguration.EdgeBlockTabPreloading 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/seruser/sgt; 미리 로드
 
-#### <a name="windows10generalconfigurationedgeblockwebcontentonnewtabpage"></a>Windows10GeneralConfiguration.EdgeBlockWebContentOnNewTabPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**Offset URI**: /Config/Browser/AllowWebContentOnNewTabPage
+### <a name="windows10generalconfigurationedgeblockwebcontentonnewtabpage"></a>Windows10GeneralConfiguration.EdgeBlockWebContentOnNewTabPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/AllowWebContentOnNewTabPage
 
-#### <a name="windows10generalconfigurationedgeclearbrowsingdataonexit"></a>Windows10GeneralConfiguration.EdgeClearBrowsingDataOnExit 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/ClearBrowsingDataOnExit
+### <a name="windows10generalconfigurationedgeclearbrowsingdataonexit"></a>Windows10GeneralConfiguration.EdgeClearBrowsingDataOnExit 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/ClearBrowsingDataOnExit
 
-#### <a name="windows10generalconfigurationedgecookiepolicy"></a>Windows10GeneralConfiguration.EdgeCookiePolicy 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowCookies
+### <a name="windows10generalconfigurationedgecookiepolicy"></a>Windows10GeneralConfiguration.EdgeCookiePolicy 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/suser/sgt/allowcookies
 
-#### <a name="windows10generalconfigurationedgedisablefirstrunpage"></a>Windows10GeneralConfiguration.EdgeDisableFirstRunPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/PreventFirstRunPage
+### <a name="windows10generalconfigurationedgedisablefirstrunpage"></a>Windows10GeneralConfiguration.EdgeDisableFirstRunPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/PreventFirstRunPage
 
-#### <a name="windows10generalconfigurationedgeenterprisemodesitelistlocation"></a>Windows10GeneralConfiguration.EdgeEnterpriseModeSiteListLocation 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/EnterpriseSiteListServiceUrl
+### <a name="windows10generalconfigurationedgeenterprisemodesitelistlocation"></a>Windows10GeneralConfiguration.EdgeEnterpriseModeSiteListLocation 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/p/wersitelistserviceurl
 
-#### <a name="windows10generalconfigurationedgefavoritesbarvisibility"></a>Windows10GeneralConfiguration.EdgeFavoritesBarVisibility 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/ConfigureFavoritesBar
+### <a name="windows10generalconfigurationedgefavoritesbarvisibility"></a>Windows10GeneralConfiguration.EdgeFavoritesBarVisibility 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/ConfigureFavoritesBar
 
-#### <a name="windows10generalconfigurationedgefavoriteslistlocation"></a>Windows10GeneralConfiguration.EdgeFavoritesListLocation 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/ProvisionFavorites
+### <a name="windows10generalconfigurationedgefavoriteslistlocation"></a>Windows10GeneralConfiguration.EdgeFavoritesListLocation 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/ProvisionFavorites
 
-#### <a name="windows10generalconfigurationedgefirstrunurl"></a>Windows10GeneralConfiguration.EdgeFirstRunUrl 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/FirstRunURL
+### <a name="windows10generalconfigurationedgefirstrunurl"></a>Windows10GeneralConfiguration.EdgeFirstRunUrl 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/FirstRunURL
 
-#### <a name="windows10generalconfigurationedgehomebuttonconfiguration"></a>Windows10GeneralConfiguration.EdgeHomeButtonConfiguration 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/SetHomeButtonURL
+### <a name="windows10generalconfigurationedgehomebuttonconfiguration"></a>Windows10GeneralConfiguration.EdgeHomeButtonConfiguration 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/SetHomeButtonURL
 
-#### <a name="windows10generalconfigurationedgehomebuttonconfigurationenabled"></a>Windows10GeneralConfiguration.EdgeHomeButtonConfigurationEnabled 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/ConfigureHomeButton
+### <a name="windows10generalconfigurationedgehomebuttonconfigurationenabled"></a>Windows10GeneralConfiguration.EdgeHomeButtonConfigurationEnabled 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/ConfigureHomeButton
 
-#### <a name="windows10generalconfigurationedgehomepageurls"></a>Windows10GeneralConfiguration.EdgeHomepageUrls 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/SetHomeButtonURL
+### <a name="windows10generalconfigurationedgehomepageurls"></a>Windows10GeneralConfiguration.EdgeHomepageUrls 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/SetHomeButtonURL
 
-#### <a name="windows10generalconfigurationedgenewtabpageurl"></a>Windows10GeneralConfiguration.EdgeNewTabPageURL 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/SetNewTabPageURL
+### <a name="windows10generalconfigurationedgenewtabpageurl"></a>Windows10GeneralConfiguration.EdgeNewTabPageURL 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/SetNewTabPageURL
 
-#### <a name="windows10generalconfigurationedgeopenswith"></a>Windows10GeneralConfiguration.EdgeOpensWith 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/ConfigureOpenMicrosoftEdgeWith
+### <a name="windows10generalconfigurationedgeopenswith"></a>Windows10GeneralConfiguration.EdgeOpensWith 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/ConfigureOpenMicrosoftEdgeWith
 
-#### <a name="windows10generalconfigurationedgepreventcertificateerroroverride"></a>Windows10GeneralConfiguration.EdgePreventCertificateErrorOverride 
+### <a name="windows10generalconfigurationedgepreventcertificateerroroverride"></a>Windows10GeneralConfiguration.EdgePreventCertificateErrorOverride 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/PreventCertErrorOverrides
+**오프셋 URI**:/Config/Browser/PreventCertErrorOverrides
 
-#### <a name="windows10generalconfigurationedgerequiresmartscreen"></a>Windows10GeneralConfiguration.EdgeRequireSmartScreen 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/AllowSmartScreen
+### <a name="windows10generalconfigurationedgerequiresmartscreen"></a>Windows10GeneralConfiguration.EdgeRequireSmartScreen 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/sconfig/serernnms
 
-#### <a name="windows10generalconfigurationedgesearchengine"></a>Windows10GeneralConfiguration.EdgeSearchEngine 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/SetDefaultSearchEngine
+### <a name="windows10generalconfigurationedgesearchengine"></a>Windows10GeneralConfiguration.EdgeSearchEngine 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/SetDefaultSearchEngine
 
-#### <a name="windows10generalconfigurationedgesendintranettraffictointernetexplorer"></a>Windows10GeneralConfiguration.EdgeSendIntranetTrafficToInternetExplorer 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/SendIntranetTraffictoInternetExplorer
+### <a name="windows10generalconfigurationedgesendintranettraffictointernetexplorer"></a>Windows10GeneralConfiguration.EdgeSendIntranetTrafficToInternetExplorer 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/SendIntranetTraffictoInternetExplorer
 
-#### <a name="windows10generalconfigurationedgeshowmessagewhenopeninginternetexplorersites"></a>Windows10GeneralConfiguration.EdgeShowMessageWhenOpeningInternetExplorerSites 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/ShowMessageWhenOpeningSitesInInternetExplorer
+### <a name="windows10generalconfigurationedgeshowmessagewhenopeninginternetexplorersites"></a>Windows10GeneralConfiguration.EdgeShowMessageWhenOpeningInternetExplorerSites 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/ShowMessageWhenOpeningSitesInInternetExplorer
 
-#### <a name="windows10generalconfigurationedgesyncfavoriteswithinternetexplorer"></a>Windows10GeneralConfiguration.EdgeSyncFavoritesWithInternetExplorer 
-**CSP**: ./Vendor/MSFT/Policy  
-**Offset URI**: /Config/Browser/SyncFavoritesBetweenIEAndMicrosoftEdge
+### <a name="windows10generalconfigurationedgesyncfavoriteswithinternetexplorer"></a>Windows10GeneralConfiguration.EdgeSyncFavoritesWithInternetExplorer 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/SyncFavoritesBetweenIEAndMicrosoftEdge
 
-#### <a name="windows10generalconfigurationedgetelemetryformicrosoft365analytics"></a>Windows10GeneralConfiguration.EdgeTelemetryForMicrosoft365Analytics 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/ConfigureTelemetryForMicrosoft365Analytics
+### <a name="windows10generalconfigurationedgetelemetryformicrosoft365analytics"></a>Windows10GeneralConfiguration.EdgeTelemetryForMicrosoft365Analytics 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/ConfigureTelemetryForMicrosoft365Analytics
 
-#### <a name="windows10generalconfigurationenableautomaticredeployment"></a>Windows10GeneralConfiguration.EnableAutomaticRedeployment 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/CredentialProviders/DisableAutomaticReDeploymentCredentials
+### <a name="windows10generalconfigurationenableautomaticredeployment"></a>Windows10GeneralConfiguration.EnableAutomaticRedeployment 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/CredentialProviders/DisableAutomaticReDeploymentCredentials
 
-#### <a name="windows10generalconfigurationenterprisecloudprintdiscoveryendpoint"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintDiscoveryEndPoint 
+### <a name="windows10generalconfigurationenterprisecloudprintdiscoveryendpoint"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintDiscoveryEndPoint 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint
+**오프셋 URI**:/Config/EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint
 
-#### <a name="windows10generalconfigurationenterprisecloudprintdiscoverymaxlimit"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintDiscoveryMaxLimit 
+### <a name="windows10generalconfigurationenterprisecloudprintdiscoverymaxlimit"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintDiscoveryMaxLimit 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/EnterpriseCloudPrint/DiscoveryMaxPrinterLimit
+**오프셋 URI**:/Config/EnterpriseCloudPrint/DiscoveryMaxPrinterLimit
 
-#### <a name="windows10generalconfigurationenterprisecloudprintmopriadiscoveryresourceidentifier"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintMopriaDiscoveryResourceIdentifier 
+### <a name="windows10generalconfigurationenterprisecloudprintmopriadiscoveryresourceidentifier"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintMopriaDiscoveryResourceIdentifier 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/EnterpriseCloudPrint/MopriaDiscoveryResourceId
+**오프셋 URI**:/Config/EnterpriseCloudPrint/MopriaDiscoveryResourceId
 
-#### <a name="windows10generalconfigurationenterprisecloudprintoauthauthority"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintOAuthAuthority 
+### <a name="windows10generalconfigurationenterprisecloudprintoauthauthority"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintOAuthAuthority 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/EnterpriseCloudPrint/CloudPrintOAuthAuthority
+**오프셋 URI**:/Config/EnterpriseCloudPrint/CloudPrintOAuthAuthority
 
-#### <a name="windows10generalconfigurationenterprisecloudprintoauthclientidentifier"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintOAuthClientIdentifier 
+### <a name="windows10generalconfigurationenterprisecloudprintoauthclientidentifier"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintOAuthClientIdentifier 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/EnterpriseCloudPrint/CloudPrintOAuthAuthority
+**오프셋 URI**:/Config/EnterpriseCloudPrint/CloudPrintOAuthAuthority
 
-#### <a name="windows10generalconfigurationenterprisecloudprintresourceidentifier"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintResourceIdentifier 
+### <a name="windows10generalconfigurationenterprisecloudprintresourceidentifier"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintResourceIdentifier 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/EnterpriseCloudPrint/CloudPrintResourceId
+**오프셋 URI**:/Config/EnterpriseCloudPrint/CloudPrintResourceId
 
-#### <a name="windows10generalconfigurationexperienceblockconsumerspecificfeatures"></a>Windows10GeneralConfiguration.ExperienceBlockConsumerSpecificFeatures 
+### <a name="windows10generalconfigurationexperienceblockconsumerspecificfeatures"></a>Windows10GeneralConfiguration.ExperienceBlockConsumerSpecificFeatures 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowWindowsConsumerFeatures
+**오프셋 URI**:/Config/Experience/AllowWindowsConsumerFeatures
 
-#### <a name="windows10generalconfigurationexperienceblockdevicediscovery"></a>Windows10GeneralConfiguration.ExperienceBlockDeviceDiscovery 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowDeviceDiscovery
+### <a name="windows10generalconfigurationexperienceblockdevicediscovery"></a>Windows10GeneralConfiguration.ExperienceBlockDeviceDiscovery 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowDeviceDiscovery
 
-#### <a name="windows10generalconfigurationexperienceblockerrordialogwhennosim"></a>Windows10GeneralConfiguration.ExperienceBlockErrorDialogWhenNoSIM 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowSIMErrorDialogPromptWhenNoSIM
+### <a name="windows10generalconfigurationexperienceblockerrordialogwhennosim"></a>Windows10GeneralConfiguration.ExperienceBlockErrorDialogWhenNoSIM 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowSIMErrorDialogPromptWhenNoSIM
 
-#### <a name="windows10generalconfigurationexperienceblocktaskswitcher"></a>Windows10GeneralConfiguration.ExperienceBlockTaskSwitcher 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowTaskSwitcher
+### <a name="windows10generalconfigurationexperienceblocktaskswitcher"></a>Windows10GeneralConfiguration.ExperienceBlockTaskSwitcher 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowTaskSwitcher
 
-#### <a name="windows10generalconfigurationexperienceblockwindowsspotlight"></a>Windows10GeneralConfiguration.ExperienceBlockWindowsSpotlight 
+### <a name="windows10generalconfigurationexperienceblockwindowsspotlight"></a>Windows10GeneralConfiguration.ExperienceBlockWindowsSpotlight 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowWindowsSpotlight
+**오프셋 URI**:/Config/Experience/AllowWindowsSpotlight
 
-#### <a name="windows10generalconfigurationexperiencedonotsyncbrowsersettings"></a>Windows10GeneralConfiguration.ExperienceDoNotSyncBrowserSettings 
+### <a name="windows10generalconfigurationexperiencedonotsyncbrowsersettings"></a>Windows10GeneralConfiguration.ExperienceDoNotSyncBrowserSettings 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/DoNotSyncBrowserSettings
+**오프셋 URI**:/Config/Experience/DoNotSyncBrowserSettings
 
-#### <a name="windows10generalconfigurationgamedvrblocked"></a>Windows10GeneralConfiguration.GameDvrBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/AllowGameDVR
+### <a name="windows10generalconfigurationgamedvrblocked"></a>Windows10GeneralConfiguration.GameDvrBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/ApplicationManagement/AllowGameDVR
 
-#### <a name="windows10generalconfigurationhardwaredeviceinstallationbydeviceidentifiers"></a>Windows10GeneralConfiguration.HardwareDeviceInstallationByDeviceIdentifiers 
+### <a name="windows10generalconfigurationhardwaredeviceinstallationbydeviceidentifiers"></a>Windows10GeneralConfiguration.HardwareDeviceInstallationByDeviceIdentifiers 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceInstallation/PreventInstallationOfMatchingDeviceIDs
+**오프셋 URI**:/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceIDs
 
-#### <a name="windows10generalconfigurationhardwaredeviceinstallationbysetupclasses"></a>Windows10GeneralConfiguration.HardwareDeviceInstallationBySetupClasses 
+### <a name="windows10generalconfigurationhardwaredeviceinstallationbysetupclasses"></a>Windows10GeneralConfiguration.HardwareDeviceInstallationBySetupClasses 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses
+**오프셋 URI**:/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses
 
-#### <a name="windows10generalconfigurationinkworkspaceaccess"></a>Windows10GeneralConfiguration.InkWorkspaceAccess 
+### <a name="windows10generalconfigurationinkworkspaceaccess"></a>Windows10GeneralConfiguration.InkWorkspaceAccess 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsInkWorkspace/AllowWindowsInkWorkspace
+**오프셋 URI**:/Config/WindowsInkWorkspace/AllowWindowsInkWorkspace
 
-#### <a name="windows10generalconfigurationinkworkspaceaccessstate"></a>Windows10GeneralConfiguration.InkWorkspaceAccessState 
+### <a name="windows10generalconfigurationinkworkspaceaccessstate"></a>Windows10GeneralConfiguration.InkWorkspaceAccessState 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsInkWorkspace/AllowWindowsInkWorkspace
+**오프셋 URI**:/Config/WindowsInkWorkspace/AllowWindowsInkWorkspace
 
-#### <a name="windows10generalconfigurationinkworkspaceblocksuggestedapps"></a>Windows10GeneralConfiguration.InkWorkspaceBlockSuggestedApps 
+### <a name="windows10generalconfigurationinkworkspaceblocksuggestedapps"></a>Windows10GeneralConfiguration.InkWorkspaceBlockSuggestedApps 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace
+**오프셋 URI**:/Config/WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace
 
-#### <a name="windows10generalconfigurationinternetexploreractivexcontrolsinprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerActiveXControlsInProtectedMode 
+### <a name="windows10generalconfigurationinternetexploreractivexcontrolsinprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerActiveXControlsInProtectedMode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DoNotAllowActiveXControlsInProtectedMode
+**오프셋 URI**:/Config/InternetExplorer/DoNotAllowActiveXControlsInProtectedMode
 
-#### <a name="windows10generalconfigurationinternetexplorerautocomplete"></a>Windows10GeneralConfiguration.InternetExplorerAutoComplete 
+### <a name="windows10generalconfigurationinternetexplorerautocomplete"></a>Windows10GeneralConfiguration.InternetExplorerAutoComplete 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/AllowAutoComplete
+**오프셋 URI**:/Config/InternetExplorer/AllowAutoComplete
 
-#### <a name="windows10generalconfigurationinternetexplorerblockoutdatedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerBlockOutdatedActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerblockoutdatedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerBlockOutdatedActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DoNotBlockOutdatedActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/DoNotBlockOutdatedActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerbypasssmartscreenwarnings"></a>Windows10GeneralConfiguration.InternetExplorerBypassSmartScreenWarnings 
+### <a name="windows10generalconfigurationinternetexplorerbypasssmartscreenwarnings"></a>Windows10GeneralConfiguration.InternetExplorerBypassSmartScreenWarnings 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DisableBypassOfSmartScreenWarnings
+**오프셋 URI**:/Config/InternetExplorer/DisableBypassOfSmartScreenWarnings
 
-#### <a name="windows10generalconfigurationinternetexplorerbypasssmartscreenwarningsaboutuncommonfiles"></a>Windows10GeneralConfiguration.InternetExplorerBypassSmartScreenWarningsAboutUncommonFiles 
+### <a name="windows10generalconfigurationinternetexplorerbypasssmartscreenwarningsaboutuncommonfiles"></a>Windows10GeneralConfiguration.InternetExplorerBypassSmartScreenWarningsAboutUncommonFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles
+**오프셋 URI**:/Config/InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles
 
-#### <a name="windows10generalconfigurationinternetexplorercertificateaddressmismatchwarning"></a>Windows10GeneralConfiguration.InternetExplorerCertificateAddressMismatchWarning 
+### <a name="windows10generalconfigurationinternetexplorercertificateaddressmismatchwarning"></a>Windows10GeneralConfiguration.InternetExplorerCertificateAddressMismatchWarning 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/AllowCertificateAddressMismatchWarning
+**오프셋 URI**:/Config/InternetExplorer/AllowCertificateAddressMismatchWarning
 
-#### <a name="windows10generalconfigurationinternetexplorercheckservercertificaterevocation"></a>Windows10GeneralConfiguration.InternetExplorerCheckServerCertificateRevocation 
+### <a name="windows10generalconfigurationinternetexplorercheckservercertificaterevocation"></a>Windows10GeneralConfiguration.InternetExplorerCheckServerCertificateRevocation 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/CheckServerCertificateRevocation
+**오프셋 URI**:/Config/InternetExplorer/CheckServerCertificateRevocation
 
-#### <a name="windows10generalconfigurationinternetexplorerchecksignaturesondownloadedprograms"></a>Windows10GeneralConfiguration.InternetExplorerCheckSignaturesOnDownloadedPrograms 
+### <a name="windows10generalconfigurationinternetexplorerchecksignaturesondownloadedprograms"></a>Windows10GeneralConfiguration.InternetExplorerCheckSignaturesOnDownloadedPrograms 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/CheckSignaturesOnDownloadedPrograms
+**오프셋 URI**:/Config/InternetExplorer/CheckSignaturesOnDownloadedPrograms
 
-#### <a name="windows10generalconfigurationinternetexplorercrashdetection"></a>Windows10GeneralConfiguration.InternetExplorerCrashDetection 
+### <a name="windows10generalconfigurationinternetexplorercrashdetection"></a>Windows10GeneralConfiguration.InternetExplorerCrashDetection 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DisableCrashDetection
+**오프셋 URI**:/Config/InternetExplorer/DisableCrashDetection
 
-#### <a name="windows10generalconfigurationinternetexplorerdisableprocessesinenhancedprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerDisableProcessesInEnhancedProtectedMode 
+### <a name="windows10generalconfigurationinternetexplorerdisableprocessesinenhancedprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerDisableProcessesInEnhancedProtectedMode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DisableProcessesInEnhancedProtectedMode
+**오프셋 URI**:/Config/InternetExplorer/DisableProcessesInEnhancedProtectedMode
 
-#### <a name="windows10generalconfigurationinternetexplorerdownloadenclosures"></a>Windows10GeneralConfiguration.InternetExplorerDownloadEnclosures 
+### <a name="windows10generalconfigurationinternetexplorerdownloadenclosures"></a>Windows10GeneralConfiguration.InternetExplorerDownloadEnclosures 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DisableEnclosureDownloading
+**오프셋 URI**:/Config/InternetExplorer/DisableEnclosureDownloading
 
-#### <a name="windows10generalconfigurationinternetexplorerencryptionsupport"></a>Windows10GeneralConfiguration.InternetExplorerEncryptionSupport 
+### <a name="windows10generalconfigurationinternetexplorerencryptionsupport"></a>Windows10GeneralConfiguration.InternetExplorerEncryptionSupport 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DisableEncryptionSupport
+**오프셋 URI**:/Config/InternetExplorer/DisableEncryptionSupport
 
-#### <a name="windows10generalconfigurationinternetexplorerenhancedprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerEnhancedProtectedMode 
+### <a name="windows10generalconfigurationinternetexplorerenhancedprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerEnhancedProtectedMode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/AllowEnhancedProtectedMode
+**오프셋 URI**:/Config/InternetExplorer/AllowEnhancedProtectedMode
 
-#### <a name="windows10generalconfigurationinternetexplorerfallbacktossl3"></a>Windows10GeneralConfiguration.InternetExplorerFallbackToSsl3 
+### <a name="windows10generalconfigurationinternetexplorerfallbacktossl3"></a>Windows10GeneralConfiguration.InternetExplorerFallbackToSsl3 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/AllowFallbackToSSL3
+**오프셋 URI**:/Config/InternetExplorer/AllowFallbackToSSL3
 
-#### <a name="windows10generalconfigurationinternetexplorerignorecertificateerrors"></a>Windows10GeneralConfiguration.InternetExplorerIgnoreCertificateErrors 
+### <a name="windows10generalconfigurationinternetexplorerignorecertificateerrors"></a>Windows10GeneralConfiguration.InternetExplorerIgnoreCertificateErrors 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DisableIgnoringCertificateErrors
+**오프셋 URI**:/Config/InternetExplorer/DisableIgnoringCertificateErrors
 
-#### <a name="windows10generalconfigurationinternetexplorerincludeallnetworkpaths"></a>Windows10GeneralConfiguration.InternetExplorerIncludeAllNetworkPaths 
+### <a name="windows10generalconfigurationinternetexplorerincludeallnetworkpaths"></a>Windows10GeneralConfiguration.InternetExplorerIncludeAllNetworkPaths 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/IncludeAllNetworkPaths
+**오프셋 URI**:/Config/InternetExplorer/IncludeAllNetworkPaths
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneaccesstodatasources"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAccessToDataSources 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneaccesstodatasources"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAccessToDataSources 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowAccessToDataSources
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowAccessToDataSources
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneallowonlyapproveddomainstouseactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAllowOnlyApprovedDomainsToUseActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneallowonlyapproveddomainstouseactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAllowOnlyApprovedDomainsToUseActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneallowonlyapproveddomainstousetdcactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAllowOnlyApprovedDomainsToUseTdcActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneallowonlyapproveddomainstousetdcactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAllowOnlyApprovedDomainsToUseTdcActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneallowvbscripttorun"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAllowVBScriptToRun 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneallowvbscripttorun"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAllowVBScriptToRun 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneautomaticpromptforfiledownloads"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAutomaticPromptForFileDownloads 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneautomaticpromptforfiledownloads"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneAutomaticPromptForFileDownloads 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonecopyandpasteviascript"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneCopyAndPasteViaScript 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonecopyandpasteviascript"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneCopyAndPasteViaScript 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowCopyPasteViaScript
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowCopyPasteViaScript
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonecrosssitescriptingfilter"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneCrossSiteScriptingFilter 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonecrosssitescriptingfilter"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneCrossSiteScriptingFilter 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDoNotRunAntimalwareAgainstActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDoNotRunAntimalwareAgainstActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonedotnetframeworkreliantcomponents"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDotNetFrameworkReliantComponents 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonedotnetframeworkreliantcomponents"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDotNetFrameworkReliantComponents 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonedownloadsignedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDownloadSignedActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonedownloadsignedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDownloadSignedActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneDownloadSignedActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneDownloadSignedActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonedownloadunsignedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDownloadUnsignedActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonedownloadunsignedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDownloadUnsignedActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneDownloadUnsignedActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneDownloadUnsignedActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonedraganddroporcopyandpastefiles"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDragAndDropOrCopyAndPasteFiles 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonedraganddroporcopyandpastefiles"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDragAndDropOrCopyAndPasteFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonedragcontentfromdifferentdomainsacrosswindows"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDragContentFromDifferentDomainsAcrossWindows 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonedragcontentfromdifferentdomainsacrosswindows"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDragContentFromDifferentDomainsAcrossWindows 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonedragcontentfromdifferentdomainswithinwindows"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDragContentFromDifferentDomainsWithinWindows 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonedragcontentfromdifferentdomainswithinwindows"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDragContentFromDifferentDomainsWithinWindows 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneincludelocalpathwhenuploadingfilestoserver"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneIncludeLocalPathWhenUploadingFilesToServer 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneincludelocalpathwhenuploadingfilestoserver"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneIncludeLocalPathWhenUploadingFilesToServer 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneInitializeAndScriptActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneInitializeAndScriptActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneJavaPermissions 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneJavaPermissions
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneJavaPermissions
 
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonelaunchapplicationsandfilesinaniframe"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneLaunchApplicationsAndFilesInAnIFrame 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonelaunchapplicationsandfilesinaniframe"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneLaunchApplicationsAndFilesInAnIFrame 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonelessprivilegedsites"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneLessPrivilegedSites 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonelessprivilegedsites"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneLessPrivilegedSites 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowLessPrivilegedSites
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowLessPrivilegedSites
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneloadingofxamlfiles"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneLoadingOfXamlFiles 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneloadingofxamlfiles"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneLoadingOfXamlFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonelogonoptions"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneLogonOptions 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonelogonoptions"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneLogonOptions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneLogonOptions
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneLogonOptions
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonenavigatewindowsandframesacrossdifferentdomains"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneNavigateWindowsAndFramesAcrossDifferentDomains 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonenavigatewindowsandframesacrossdifferentdomains"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneNavigateWindowsAndFramesAcrossDifferentDomains 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneNavigateWindowsAndFrames
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneNavigateWindowsAndFrames
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonepopupblocker"></a>Windows10GeneralConfiguration.InternetExplorerInternetZonePopupBlocker 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonepopupblocker"></a>Windows10GeneralConfiguration.InternetExplorerInternetZonePopupBlocker 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneUsePopupBlocker
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneUsePopupBlocker
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneProtectedMode 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneProtectedMode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneEnableProtectedMode
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneEnableProtectedMode
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonerundotnetframeworkreliantcomponentssignedwithauthenticode"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneRunDotNetFrameworkReliantComponentsSignedWithAuthenticode 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonerundotnetframeworkreliantcomponentssignedwithauthenticode"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneRunDotNetFrameworkReliantComponentsSignedWithAuthenticode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonescriptingofwebbrowsercontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneScriptingOfWebBrowserControls 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonescriptingofwebbrowsercontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneScriptingOfWebBrowserControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonescriptinitiatedwindows"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneScriptInitiatedWindows 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonescriptinitiatedwindows"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneScriptInitiatedWindows 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowScriptInitiatedWindows
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowScriptInitiatedWindows
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonescriptlets"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneScriptlets 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonescriptlets"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneScriptlets 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowScriptlets
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowScriptlets
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonesecuritywarningforpotentiallyunsafefiles"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneSecurityWarningForPotentiallyUnsafeFiles 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonesecuritywarningforpotentiallyunsafefiles"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneSecurityWarningForPotentiallyUnsafeFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneSmartScreen 
+### <a name="windows10generalconfigurationinternetexplorerinternetzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneSmartScreen 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowSmartScreenIE
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowSmartScreenIE
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneupdatestostatusbarviascript"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneUpdatesToStatusBarViaScript 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneupdatestostatusbarviascript"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneUpdatesToStatusBarViaScript 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript
 
-#### <a name="windows10generalconfigurationinternetexplorerinternetzoneuserdatapersistence"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneUserDataPersistence 
+### <a name="windows10generalconfigurationinternetexplorerinternetzoneuserdatapersistence"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneUserDataPersistence 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/InternetZoneAllowUserDataPersistence
+**오프셋 URI**:/Config/InternetExplorer/InternetZoneAllowUserDataPersistence
 
-#### <a name="windows10generalconfigurationinternetexplorerintranetzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerIntranetZoneDoNotRunAntimalwareAgainstActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerintranetzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerIntranetZoneDoNotRunAntimalwareAgainstActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerintranetzoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>Windows10GeneralConfiguration.InternetExplorerIntranetZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe 
+### <a name="windows10generalconfigurationinternetexplorerintranetzoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>Windows10GeneralConfiguration.InternetExplorerIntranetZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerintranetzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerIntranetZoneJavaPermissions 
+### <a name="windows10generalconfigurationinternetexplorerintranetzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerIntranetZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/IntranetZoneJavaPermissions
+**오프셋 URI**:/Config/InternetExplorer/IntranetZoneJavaPermissions
 
-#### <a name="windows10generalconfigurationinternetexplorerlocalmachinezonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerLocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerlocalmachinezonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerLocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerlocalmachinezonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLocalMachineZoneJavaPermissions 
+### <a name="windows10generalconfigurationinternetexplorerlocalmachinezonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLocalMachineZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/LocalMachineZoneJavaPermissions
+**오프셋 URI**:/Config/InternetExplorer/LocalMachineZoneJavaPermissions
 
-#### <a name="windows10generalconfigurationinternetexplorerlockeddowninternetzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownInternetZoneSmartScreen 
+### <a name="windows10generalconfigurationinternetexplorerlockeddowninternetzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownInternetZoneSmartScreen 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE
+**오프셋 URI**:/Config/InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE
 
-#### <a name="windows10generalconfigurationinternetexplorerlockeddownintranetzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownIntranetZoneJavaPermissions 
+### <a name="windows10generalconfigurationinternetexplorerlockeddownintranetzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownIntranetZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/LockedDownIntranetJavaPermissions
+**오프셋 URI**:/Config/InternetExplorer/LockedDownIntranetJavaPermissions
 
-#### <a name="windows10generalconfigurationinternetexplorerlockeddownlocalmachinezonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownLocalMachineZoneJavaPermissions 
+### <a name="windows10generalconfigurationinternetexplorerlockeddownlocalmachinezonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownLocalMachineZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/LockedDownLocalMachineZoneJavaPermissions
+**오프셋 URI**:/Config/InternetExplorer/LockedDownLocalMachineZoneJavaPermissions
 
-#### <a name="windows10generalconfigurationinternetexplorerlockeddownrestrictedzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownRestrictedZoneJavaPermissions 
+### <a name="windows10generalconfigurationinternetexplorerlockeddownrestrictedzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownRestrictedZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions
+**오프셋 URI**:/Config/InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions
 
-#### <a name="windows10generalconfigurationinternetexplorerlockeddownrestrictedzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownRestrictedZoneSmartScreen 
+### <a name="windows10generalconfigurationinternetexplorerlockeddownrestrictedzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownRestrictedZoneSmartScreen 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE
+**오프셋 URI**:/Config/InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE
 
-#### <a name="windows10generalconfigurationinternetexplorerlockeddowntrustedzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownTrustedZoneJavaPermissions 
+### <a name="windows10generalconfigurationinternetexplorerlockeddowntrustedzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLockedDownTrustedZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions
+**오프셋 URI**:/Config/InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions
 
-#### <a name="windows10generalconfigurationinternetexplorerpreventmanagingsmartscreenfilter"></a>Windows10GeneralConfiguration.InternetExplorerPreventManagingSmartScreenFilter 
+### <a name="windows10generalconfigurationinternetexplorerpreventmanagingsmartscreenfilter"></a>Windows10GeneralConfiguration.InternetExplorerPreventManagingSmartScreenFilter 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/PreventManagingSmartScreenFilter
+**오프셋 URI**:/Config/InternetExplorer/PreventManagingSmartScreenFilter
 
-#### <a name="windows10generalconfigurationinternetexplorerpreventperuserinstallationofactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerPreventPerUserInstallationOfActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerpreventperuserinstallationofactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerPreventPerUserInstallationOfActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/PreventPerUserInstallationOfActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/PreventPerUserInstallationOfActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerprocessesconsistentmimehandling"></a>Windows10GeneralConfiguration.InternetExplorerProcessesConsistentMimeHandling 
+### <a name="windows10generalconfigurationinternetexplorerprocessesconsistentmimehandling"></a>Windows10GeneralConfiguration.InternetExplorerProcessesConsistentMimeHandling 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses
+**오프셋 URI**:/Config/InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses
 
-#### <a name="windows10generalconfigurationinternetexplorerprocessesmimesniffingsafetyfeature"></a>Windows10GeneralConfiguration.InternetExplorerProcessesMimeSniffingSafetyFeature 
+### <a name="windows10generalconfigurationinternetexplorerprocessesmimesniffingsafetyfeature"></a>Windows10GeneralConfiguration.InternetExplorerProcessesMimeSniffingSafetyFeature 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses
+**오프셋 URI**:/Config/InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses
 
-#### <a name="windows10generalconfigurationinternetexplorerprocessesmkprotocolsecurityrestriction"></a>Windows10GeneralConfiguration.InternetExplorerProcessesMKProtocolSecurityRestriction 
+### <a name="windows10generalconfigurationinternetexplorerprocessesmkprotocolsecurityrestriction"></a>Windows10GeneralConfiguration.InternetExplorerProcessesMKProtocolSecurityRestriction 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses
+**오프셋 URI**:/Config/InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses
 
-#### <a name="windows10generalconfigurationinternetexplorerprocessesnotificationbar"></a>Windows10GeneralConfiguration.InternetExplorerProcessesNotificationBar 
+### <a name="windows10generalconfigurationinternetexplorerprocessesnotificationbar"></a>Windows10GeneralConfiguration.InternetExplorerProcessesNotificationBar 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/NotificationBarInternetExplorerProcesses
+**오프셋 URI**:/Config/InternetExplorer/NotificationBarInternetExplorerProcesses
 
-#### <a name="windows10generalconfigurationinternetexplorerprocessesprotectionfromzoneelevation"></a>Windows10GeneralConfiguration.InternetExplorerProcessesProtectionFromZoneElevation 
+### <a name="windows10generalconfigurationinternetexplorerprocessesprotectionfromzoneelevation"></a>Windows10GeneralConfiguration.InternetExplorerProcessesProtectionFromZoneElevation 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses
+**오프셋 URI**:/Config/InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses
 
-#### <a name="windows10generalconfigurationinternetexplorerprocessesrestrictactivexinstall"></a>Windows10GeneralConfiguration.InternetExplorerProcessesRestrictActiveXInstall 
+### <a name="windows10generalconfigurationinternetexplorerprocessesrestrictactivexinstall"></a>Windows10GeneralConfiguration.InternetExplorerProcessesRestrictActiveXInstall 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses
+**오프셋 URI**:/Config/InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses
 
-#### <a name="windows10generalconfigurationinternetexplorerprocessesrestrictfiledownload"></a>Windows10GeneralConfiguration.InternetExplorerProcessesRestrictFileDownload 
+### <a name="windows10generalconfigurationinternetexplorerprocessesrestrictfiledownload"></a>Windows10GeneralConfiguration.InternetExplorerProcessesRestrictFileDownload 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictFileDownloadInternetExplorerProcesses
+**오프셋 URI**:/Config/InternetExplorer/RestrictFileDownloadInternetExplorerProcesses
 
-#### <a name="windows10generalconfigurationinternetexplorerprocessesscriptedwindowsecurityrestrictions"></a>Windows10GeneralConfiguration.InternetExplorerProcessesScriptedWindowSecurityRestrictions 
+### <a name="windows10generalconfigurationinternetexplorerprocessesscriptedwindowsecurityrestrictions"></a>Windows10GeneralConfiguration.InternetExplorerProcessesScriptedWindowSecurityRestrictions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses
+**오프셋 URI**:/Config/InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses
 
-#### <a name="windows10generalconfigurationinternetexplorerremoverunthistimebuttonforoutdatedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRemoveRunThisTimeButtonForOutdatedActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerremoverunthistimebuttonforoutdatedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRemoveRunThisTimeButtonForOutdatedActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneaccesstodatasources"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAccessToDataSources 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneaccesstodatasources"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAccessToDataSources 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneactivescripting"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneActiveScripting 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneactivescripting"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneActiveScripting 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowActiveScripting
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowActiveScripting
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneallowonlyapproveddomainstouseactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAllowOnlyApprovedDomainsToUseActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneallowonlyapproveddomainstouseactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAllowOnlyApprovedDomainsToUseActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneallowonlyapproveddomainstousetdcactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAllowOnlyApprovedDomainsToUseTdcActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneallowonlyapproveddomainstousetdcactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAllowOnlyApprovedDomainsToUseTdcActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneallowvbscripttorun"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAllowVBScriptToRun 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneallowvbscripttorun"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAllowVBScriptToRun 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneautomaticpromptforfiledownloads"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAutomaticPromptForFileDownloads 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneautomaticpromptforfiledownloads"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneAutomaticPromptForFileDownloads 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonebinaryandscriptbehaviors"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneBinaryAndScriptBehaviors 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonebinaryandscriptbehaviors"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneBinaryAndScriptBehaviors 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonecopyandpasteviascript"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneCopyAndPasteViaScript 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonecopyandpasteviascript"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneCopyAndPasteViaScript 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonecrosssitescriptingfilter"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneCrossSiteScriptingFilter 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonecrosssitescriptingfilter"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneCrossSiteScriptingFilter 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDoNotRunAntimalwareAgainstActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDoNotRunAntimalwareAgainstActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedotnetframeworkreliantcomponents"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDotNetFrameworkReliantComponents 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedotnetframeworkreliantcomponents"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDotNetFrameworkReliantComponents 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedownloadsignedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDownloadSignedActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedownloadsignedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDownloadSignedActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedownloadunsignedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDownloadUnsignedActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedownloadunsignedactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDownloadUnsignedActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedraganddroporcopyandpastefiles"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDragAndDropOrCopyAndPasteFiles 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedraganddroporcopyandpastefiles"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDragAndDropOrCopyAndPasteFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedragcontentfromdifferentdomainsacrosswindows"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDragContentFromDifferentDomainsAcrossWindows 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedragcontentfromdifferentdomainsacrosswindows"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDragContentFromDifferentDomainsAcrossWindows 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedragcontentfromdifferentdomainswithinwindows"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDragContentFromDifferentDomainsWithinWindows 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedragcontentfromdifferentdomainswithinwindows"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDragContentFromDifferentDomainsWithinWindows 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonefiledownloads"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneFileDownloads 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonefiledownloads"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneFileDownloads 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowFileDownloads
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowFileDownloads
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneincludelocalpathwhenuploadingfilestoserver"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneIncludeLocalPathWhenUploadingFilesToServer 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneincludelocalpathwhenuploadingfilestoserver"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneIncludeLocalPathWhenUploadingFilesToServer 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneJavaPermissions 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneJavaPermissions
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneJavaPermissions
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonelaunchapplicationsandfilesinaniframe"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneLaunchApplicationsAndFilesInAnIFrame 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonelaunchapplicationsandfilesinaniframe"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneLaunchApplicationsAndFilesInAnIFrame 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonelessprivilegedsites"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneLessPrivilegedSites 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonelessprivilegedsites"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneLessPrivilegedSites 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneloadingofxamlfiles"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneLoadingOfXamlFiles 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneloadingofxamlfiles"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneLoadingOfXamlFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonelogonoptions"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneLogonOptions 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonelogonoptions"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneLogonOptions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneLogonOptions
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneLogonOptions
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonemetarefresh"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneMetaRefresh 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonemetarefresh"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneMetaRefresh 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonenavigatewindowsandframesacrossdifferentdomains"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneNavigateWindowsAndFramesAcrossDifferentDomains 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonenavigatewindowsandframesacrossdifferentdomains"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneNavigateWindowsAndFramesAcrossDifferentDomains 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonepopupblocker"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZonePopupBlocker 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonepopupblocker"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZonePopupBlocker 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneUsePopupBlocker
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneProtectedMode 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneprotectedmode"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneProtectedMode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonerunactivexcontrolsandplugins"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneRunActiveXControlsAndPlugins 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonerunactivexcontrolsandplugins"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneRunActiveXControlsAndPlugins 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonerundotnetframeworkreliantcomponentssignedwithauthenticode"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneRunDotNetFrameworkReliantComponentsSignedWithAuthenticode 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonerundotnetframeworkreliantcomponentssignedwithauthenticode"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneRunDotNetFrameworkReliantComponentsSignedWithAuthenticode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptactivexcontrolsmarkedsafeforscripting"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptActiveXControlsMarkedSafeForScripting 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptactivexcontrolsmarkedsafeforscripting"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptActiveXControlsMarkedSafeForScripting 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptingofjavaapplets"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptingOfJavaApplets 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptingofjavaapplets"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptingOfJavaApplets 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptingofwebbrowsercontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptingOfWebBrowserControls 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptingofwebbrowsercontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptingOfWebBrowserControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptinitiatedwindows"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptInitiatedWindows 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptinitiatedwindows"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptInitiatedWindows 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptlets"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptlets 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonescriptlets"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneScriptlets 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowScriptlets
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowScriptlets
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonesecuritywarningforpotentiallyunsafefiles"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneSecurityWarningForPotentiallyUnsafeFiles 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonesecuritywarningforpotentiallyunsafefiles"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneSecurityWarningForPotentiallyUnsafeFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneSmartScreen 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneSmartScreen 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneupdatestostatusbarviascript"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneUpdatesToStatusBarViaScript 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneupdatestostatusbarviascript"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneUpdatesToStatusBarViaScript 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript
 
-#### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneuserdatapersistence"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneUserDataPersistence 
+### <a name="windows10generalconfigurationinternetexplorerrestrictedzoneuserdatapersistence"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneUserDataPersistence 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence
+**오프셋 URI**:/Config/InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence
 
-#### <a name="windows10generalconfigurationinternetexplorersecuritysettingscheck"></a>Windows10GeneralConfiguration.InternetExplorerSecuritySettingsCheck 
+### <a name="windows10generalconfigurationinternetexplorersecuritysettingscheck"></a>Windows10GeneralConfiguration.InternetExplorerSecuritySettingsCheck 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DisableSecuritySettingsCheck
+**오프셋 URI**:/Config/InternetExplorer/DisableSecuritySettingsCheck
 
-#### <a name="windows10generalconfigurationinternetexplorersecurityzonesuseonlymachinesettings"></a>Windows10GeneralConfiguration.InternetExplorerSecurityZonesUseOnlyMachineSettings 
+### <a name="windows10generalconfigurationinternetexplorersecurityzonesuseonlymachinesettings"></a>Windows10GeneralConfiguration.InternetExplorerSecurityZonesUseOnlyMachineSettings 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/SecurityZonesUseOnlyMachineSettings
+**오프셋 URI**:/Config/InternetExplorer/SecurityZonesUseOnlyMachineSettings
 
-#### <a name="windows10generalconfigurationinternetexplorersoftwarewhensignatureisinvalid"></a>Windows10GeneralConfiguration.InternetExplorerSoftwareWhenSignatureIsInvalid 
+### <a name="windows10generalconfigurationinternetexplorersoftwarewhensignatureisinvalid"></a>Windows10GeneralConfiguration.InternetExplorerSoftwareWhenSignatureIsInvalid 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/AllowSoftwareWhenSignatureIsInvalid
+**오프셋 URI**:/Config/InternetExplorer/AllowSoftwareWhenSignatureIsInvalid
 
-#### <a name="windows10generalconfigurationinternetexplorertrustedzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerTrustedZoneDoNotRunAntimalwareAgainstActiveXControls 
+### <a name="windows10generalconfigurationinternetexplorertrustedzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerTrustedZoneDoNotRunAntimalwareAgainstActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorertrustedzoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>Windows10GeneralConfiguration.InternetExplorerTrustedZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe 
+### <a name="windows10generalconfigurationinternetexplorertrustedzoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>Windows10GeneralConfiguration.InternetExplorerTrustedZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls
+**오프셋 URI**:/Config/InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls
 
-#### <a name="windows10generalconfigurationinternetexplorertrustedzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerTrustedZoneJavaPermissions 
+### <a name="windows10generalconfigurationinternetexplorertrustedzonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerTrustedZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/TrustedSitesZoneJavaPermissions
+**오프셋 URI**:/Config/InternetExplorer/TrustedSitesZoneJavaPermissions
 
-#### <a name="windows10generalconfigurationinternetexploreruseactivexinstallerservice"></a>Windows10GeneralConfiguration.InternetExplorerUseActiveXInstallerService 
+### <a name="windows10generalconfigurationinternetexploreruseactivexinstallerservice"></a>Windows10GeneralConfiguration.InternetExplorerUseActiveXInstallerService 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/SpecifyUseOfActiveXInstallerService
+**오프셋 URI**:/Config/InternetExplorer/SpecifyUseOfActiveXInstallerService
 
-#### <a name="windows10generalconfigurationinternetexplorerusersaddingsites"></a>Windows10GeneralConfiguration.InternetExplorerUsersAddingSites 
+### <a name="windows10generalconfigurationinternetexplorerusersaddingsites"></a>Windows10GeneralConfiguration.InternetExplorerUsersAddingSites 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DoNotAllowUsersToAddSites
+**오프셋 URI**:/Config/InternetExplorer/DoNotAllowUsersToAddSites
 
-#### <a name="windows10generalconfigurationinternetexploreruserschangingpolicies"></a>Windows10GeneralConfiguration.InternetExplorerUsersChangingPolicies 
+### <a name="windows10generalconfigurationinternetexploreruserschangingpolicies"></a>Windows10GeneralConfiguration.InternetExplorerUsersChangingPolicies 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/InternetExplorer/DoNotAllowUsersToChangePolicies
+**오프셋 URI**:/Config/InternetExplorer/DoNotAllowUsersToChangePolicies
 
-#### <a name="windows10generalconfigurationinternetsharingblocked"></a>Windows10GeneralConfiguration.InternetSharingBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WiFi/AllowInternetSharing
+### <a name="windows10generalconfigurationinternetsharingblocked"></a>Windows10GeneralConfiguration.InternetSharingBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/WiFi/AllowInternetSharing
 
-#### <a name="windows10generalconfigurationlocationservicesblocked"></a>Windows10GeneralConfiguration.LocationServicesBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/System/AllowLocation
+### <a name="windows10generalconfigurationlocationservicesblocked"></a>Windows10GeneralConfiguration.LocationServicesBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/System/AllowLocation
 
-#### <a name="windows10generalconfigurationlockscreenallowtimeoutconfiguration"></a>Windows10GeneralConfiguration.LockScreenAllowTimeoutConfiguration 
+### <a name="windows10generalconfigurationlockscreenallowtimeoutconfiguration"></a>Windows10GeneralConfiguration.LockScreenAllowTimeoutConfiguration 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/DeviceLock/AllowScreenTimeoutWhileLockedUser/Config
+**오프셋 URI**:/Config/DeviceLock/AllowScreenTimeoutWhileLockedUser/Config
 
-#### <a name="windows10generalconfigurationlockscreenblockactioncenternotifications"></a>Windows10GeneralConfiguration.LockScreenBlockActionCenterNotifications 
+### <a name="windows10generalconfigurationlockscreenblockactioncenternotifications"></a>Windows10GeneralConfiguration.LockScreenBlockActionCenterNotifications 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/AboveLock/AllowActionCenterNotifications
+**오프셋 URI**:/Config/AboveLock/AllowActionCenterNotifications
 
-#### <a name="windows10generalconfigurationlockscreenblockcortana"></a>Windows10GeneralConfiguration.LockScreenBlockCortana 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/AboveLock/AllowCortanaAboveLock
+### <a name="windows10generalconfigurationlockscreenblockcortana"></a>Windows10GeneralConfiguration.LockScreenBlockCortana 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/AboveLock/AllowCortanaAboveLock
 
-#### <a name="windows10generalconfigurationlockscreenblocktoastnotifications"></a>Windows10GeneralConfiguration.LockScreenBlockToastNotifications 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/AboveLock/AllowToasts
+### <a name="windows10generalconfigurationlockscreenblocktoastnotifications"></a>Windows10GeneralConfiguration.LockScreenBlockToastNotifications 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/AboveLock/AllowToasts
 
-#### <a name="windows10generalconfigurationlockscreencamera"></a>Windows10GeneralConfiguration.LockScreenCamera 
+### <a name="windows10generalconfigurationlockscreencamera"></a>Windows10GeneralConfiguration.LockScreenCamera 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/PreventEnablingLockScreenCamera
+**오프셋 URI**:/Config/DeviceLock/PreventEnablingLockScreenCamera
 
-#### <a name="windows10generalconfigurationlockscreenhidenetworkselectionui"></a>Windows10GeneralConfiguration.LockScreenHideNetworkSelectionUI 
+### <a name="windows10generalconfigurationlockscreenhidenetworkselectionui"></a>Windows10GeneralConfiguration.LockScreenHideNetworkSelectionUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsLogon/DontDisplayNetworkSelectionUI
+**오프셋 URI**:/Config/WindowsLogon/DontDisplayNetworkSelectionUI
 
-#### <a name="windows10generalconfigurationlockscreenslideshow"></a>Windows10GeneralConfiguration.LockScreenSlideShow 
+### <a name="windows10generalconfigurationlockscreenslideshow"></a>Windows10GeneralConfiguration.LockScreenSlideShow 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/PreventLockScreenSlideShow
+**오프셋 URI**:/Config/DeviceLock/PreventLockScreenSlideShow
 
-#### <a name="windows10generalconfigurationlockscreentimeoutinseconds"></a>Windows10GeneralConfiguration.LockScreenTimeoutInSeconds 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/ScreenTimeoutWhileLocked
+### <a name="windows10generalconfigurationlockscreentimeoutinseconds"></a>Windows10GeneralConfiguration.LockScreenTimeoutInSeconds 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeviceLock/ScreenTimeoutWhileLocked
 
-#### <a name="windows10generalconfigurationlogonblockfastuserswitching"></a>Windows10GeneralConfiguration.LogonBlockFastUserSwitching 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsLogon/HideFastUserSwitching
+### <a name="windows10generalconfigurationlogonblockfastuserswitching"></a>Windows10GeneralConfiguration.LogonBlockFastUserSwitching 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/WindowsLogon/HideFastUserSwitching
 
-#### <a name="windows10generalconfigurationmessagingblockmms"></a>Windows10GeneralConfiguration.MessagingBlockMMS 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Messaging/AllowMMS
+### <a name="windows10generalconfigurationmessagingblockmms"></a>Windows10GeneralConfiguration.MessagingBlockMMS 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/sving/sving/sd
 
-#### <a name="windows10generalconfigurationmessagingblockrichcommunicationservices"></a>Windows10GeneralConfiguration.MessagingBlockRichCommunicationServices 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Messaging/AllowRCS
+### <a name="windows10generalconfigurationmessagingblockrichcommunicationservices"></a>Windows10GeneralConfiguration.MessagingBlockRichCommunicationServices 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/messaging/allowrcs
 
-#### <a name="windows10generalconfigurationmessagingblocksync"></a>Windows10GeneralConfiguration.MessagingBlockSync 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Messaging/AllowMessageSync
+### <a name="windows10generalconfigurationmessagingblocksync"></a>Windows10GeneralConfiguration.MessagingBlockSync 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Messaging/AllowMessageSync
 
-#### <a name="windows10generalconfigurationmicrosoftaccountblocked"></a>Windows10GeneralConfiguration.MicrosoftAccountBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Accounts/AllowMicrosoftAccountConnection
+### <a name="windows10generalconfigurationmicrosoftaccountblocked"></a>Windows10GeneralConfiguration.MicrosoftAccountBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Accounts/AllowMicrosoftAccountConnection
 
-#### <a name="windows10generalconfigurationmicrosoftaccountblocksettingssync"></a>Windows10GeneralConfiguration.MicrosoftAccountBlockSettingsSync 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowSyncMySettings
+### <a name="windows10generalconfigurationmicrosoftaccountblocksettingssync"></a>Windows10GeneralConfiguration.MicrosoftAccountBlockSettingsSync 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowSyncMySettings
 
-#### <a name="windows10generalconfigurationmicrosoftaccountsigninassistantsettings"></a>Windows10GeneralConfiguration.MicrosoftAccountSignInAssistantSettings 
+### <a name="windows10generalconfigurationmicrosoftaccountsigninassistantsettings"></a>Windows10GeneralConfiguration.MicrosoftAccountSignInAssistantSettings 
 **CSP**:./Device/Vendor/MSFT/Accounts  
-**URI 오프셋**: /AllowMicrosoftAccountSignInAssistant
+**오프셋 URI**:/AllowMicrosoftAccountSignInAssistant
 
-#### <a name="windows10generalconfigurationnetworkproxyapplysettingsdevicewide"></a>Windows10GeneralConfiguration.NetworkProxyApplySettingsDeviceWide 
+### <a name="windows10generalconfigurationnetworkproxyapplysettingsdevicewide"></a>Windows10GeneralConfiguration.NetworkProxyApplySettingsDeviceWide 
 **CSP**: ./Device/Vendor/MSFT/NetworkProxy  
-**URI 오프셋**: /ProxySettingsPerUser
+**오프셋 URI**:/Proxysettingsperuser
 
-#### <a name="windows10generalconfigurationnetworkproxyautomaticconfigurationurl"></a>Windows10GeneralConfiguration.NetworkProxyAutomaticConfigurationUrl 
+### <a name="windows10generalconfigurationnetworkproxyautomaticconfigurationurl"></a>Windows10GeneralConfiguration.NetworkProxyAutomaticConfigurationUrl 
 **CSP**: ./Device/Vendor/MSFT/NetworkProxy  
-**URI 오프셋**: /SetupScriptUrl
+**오프셋 URI**:/SetupScriptUrl
 
-#### <a name="windows10generalconfigurationnetworkproxydisableautodetect"></a>Windows10GeneralConfiguration.NetworkProxyDisableAutoDetect 
+### <a name="windows10generalconfigurationnetworkproxydisableautodetect"></a>Windows10GeneralConfiguration.NetworkProxyDisableAutoDetect 
 **CSP**: ./Device/Vendor/MSFT/NetworkProxy  
-**URI 오프셋**: /AutoDetect
+**오프셋 URI**:/자동 검색
 
-#### <a name="windows10generalconfigurationnetworkproxyserver"></a>Windows10GeneralConfiguration.NetworkProxyServer 
+### <a name="windows10generalconfigurationnetworkproxyserver"></a>Windows10GeneralConfiguration.NetworkProxyServer 
 **CSP**: ./Vendor/MSFT/NetworkProxy  
-**URI 오프셋**: /ProxyAddress를 /Exceptions /UseProxyForLocalAddresses
+**오프셋 URI**:/Proxyaddress,/Di&/UseProxyForLocalAddresses
 
-#### <a name="windows10generalconfigurationnfcblocked"></a>Windows10GeneralConfiguration.NfcBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/AllowNFC
+### <a name="windows10generalconfigurationnfcblocked"></a>Windows10GeneralConfiguration.NfcBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Connectivity/AllowNFC
 
-#### <a name="windows10generalconfigurationonedrivedisablefilesync"></a>Windows10GeneralConfiguration.OneDriveDisableFileSync 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/System/DisableOneDriveFileSync
+### <a name="windows10generalconfigurationonedrivedisablefilesync"></a>Windows10GeneralConfiguration.OneDriveDisableFileSync 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/System/DisableOneDriveFileSync
 
-#### <a name="windows10generalconfigurationpasswordblocksimple"></a>Windows10GeneralConfiguration.PasswordBlockSimple 
-**CSP**: ./Vendor/MSFT/Policy  
-**Offset URI**: /Config/DeviceLock/AllowSimpleDevicePassword
+### <a name="windows10generalconfigurationpasswordblocksimple"></a>Windows10GeneralConfiguration.PasswordBlockSimple 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeviceLock/AllowSimpleDevicePassword
 
-#### <a name="windows10generalconfigurationpasswordexpirationdays"></a>Windows10GeneralConfiguration.PasswordExpirationDays 
-**CSP**: ./Vendor/MSFT/Policy  
-**Offset URI**: /Config/DeviceLock/DevicePasswordExpiration
+### <a name="windows10generalconfigurationpasswordexpirationdays"></a>Windows10GeneralConfiguration.PasswordExpirationDays 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeviceLock/DevicePasswordExpiration
 
-#### <a name="windows10generalconfigurationpasswordminimumageindays"></a>Windows10GeneralConfiguration.PasswordMinimumAgeInDays 
+### <a name="windows10generalconfigurationpasswordminimumageindays"></a>Windows10GeneralConfiguration.PasswordMinimumAgeInDays 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/MinimumPasswordAge
+**오프셋 URI**:/Sconfig/pstst/pv\vreage
 
-#### <a name="windows10generalconfigurationpasswordminimumcharactersetcount"></a>Windows10GeneralConfiguration.PasswordMinimumCharacterSetCount 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/MinDevicePasswordComplexCharacters
+### <a name="windows10generalconfigurationpasswordminimumcharactersetcount"></a>Windows10GeneralConfiguration.PasswordMinimumCharacterSetCount 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeviceLock/MinDevicePasswordComplexCharacters
 
-#### <a name="windows10generalconfigurationpasswordminimumlength"></a>Windows10GeneralConfiguration.PasswordMinimumLength 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/MinDevicePasswordLength
+### <a name="windows10generalconfigurationpasswordminimumlength"></a>Windows10GeneralConfiguration.PasswordMinimumLength 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeviceLock/MinDevicePasswordLength
 
-#### <a name="windows10generalconfigurationpasswordminutesofinactivitybeforescreentimeout"></a>Windows10GeneralConfiguration.PasswordMinutesOfInactivityBeforeScreenTimeout 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/MaxInactivityTimeDeviceLock
+### <a name="windows10generalconfigurationpasswordminutesofinactivitybeforescreentimeout"></a>Windows10GeneralConfiguration.PasswordMinutesOfInactivityBeforeScreenTimeout 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeviceLock/MaxInactivityTimeDeviceLock
 
-#### <a name="windows10generalconfigurationpasswordpreviouspasswordblockcount"></a>Windows10GeneralConfiguration.PasswordPreviousPasswordBlockCount 
+### <a name="windows10generalconfigurationpasswordpreviouspasswordblockcount"></a>Windows10GeneralConfiguration.PasswordPreviousPasswordBlockCount 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/DevicePasswordHistory
+**오프셋 URI**:/Config/DeviceLock/DevicePasswordHistory
 
-#### <a name="windows10generalconfigurationpasswordrequired"></a>Windows10GeneralConfiguration.PasswordRequired 
+### <a name="windows10generalconfigurationpasswordrequired"></a>Windows10GeneralConfiguration.PasswordRequired 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/DevicePasswordEnabled
+**오프셋 URI**:/Config/DeviceLock/DevicePasswordEnabled
 
-#### <a name="windows10generalconfigurationpasswordrequiredtype"></a>Windows10GeneralConfiguration.PasswordRequiredType 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/AlphanumericDevicePasswordRequired
+### <a name="windows10generalconfigurationpasswordrequiredtype"></a>Windows10GeneralConfiguration.PasswordRequiredType 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeviceLock/AlphanumericDevicePasswordRequired
 
-#### <a name="windows10generalconfigurationpasswordrequirewhenresumefromidlestate"></a>Windows10GeneralConfiguration.PasswordRequireWhenResumeFromIdleState 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/AllowIdleReturnWithoutPassword
+### <a name="windows10generalconfigurationpasswordrequirewhenresumefromidlestate"></a>Windows10GeneralConfiguration.PasswordRequireWhenResumeFromIdleState 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeviceLock/AllowIdleReturnWithoutPassword
 
-#### <a name="windows10generalconfigurationpasswordsigninfailurecountbeforefactoryreset"></a>Windows10GeneralConfiguration.PasswordSignInFailureCountBeforeFactoryReset 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceLock/MaxDevicePasswordFailedAttempts
+### <a name="windows10generalconfigurationpasswordsigninfailurecountbeforefactoryreset"></a>Windows10GeneralConfiguration.PasswordSignInFailureCountBeforeFactoryReset 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeviceLock/MaxDevicePasswordFailedAttempts
 
-#### <a name="windows10generalconfigurationpersonalizationdesktopimageurl"></a>Windows10GeneralConfiguration.PersonalizationDesktopImageUrl 
+### <a name="windows10generalconfigurationpersonalizationdesktopimageurl"></a>Windows10GeneralConfiguration.PersonalizationDesktopImageUrl 
 **CSP**:./Device/Vendor/MSFT/Personalization  
-**URI 오프셋**: /DesktopImageUrl
+**오프셋 URI**:/Desktopimageurl
 
-#### <a name="windows10generalconfigurationpersonalizationlockscreenimageurl"></a>Windows10GeneralConfiguration.PersonalizationLockScreenImageUrl 
+### <a name="windows10generalconfigurationpersonalizationlockscreenimageurl"></a>Windows10GeneralConfiguration.PersonalizationLockScreenImageUrl 
 **CSP**:./Device/Vendor/MSFT/Personalization  
-**URI 오프셋**: /LockScreenImageUrl
+**오프셋 URI**:/Lockscreenimageurl
 
-#### <a name="windows10generalconfigurationpowerrequirepasswordonwakewhileonbattery"></a>Windows10GeneralConfiguration.PowerRequirePasswordOnWakeWhileOnBattery 
+### <a name="windows10generalconfigurationpowerrequirepasswordonwakewhileonbattery"></a>Windows10GeneralConfiguration.PowerRequirePasswordOnWakeWhileOnBattery 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Power/RequirePasswordWhenComputerWakesOnBattery
+**오프셋 URI**:/So/sv\power/p\urivcomputerawakeson배터리
 
-#### <a name="windows10generalconfigurationpowerrequirepasswordonwakewhilepluggedin"></a>Windows10GeneralConfiguration.PowerRequirePasswordOnWakeWhilePluggedIn 
+### <a name="windows10generalconfigurationpowerrequirepasswordonwakewhilepluggedin"></a>Windows10GeneralConfiguration.PowerRequirePasswordOnWakeWhilePluggedIn 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Power/RequirePasswordWhenComputerWakesPluggedIn
+**오프셋 URI**:/Config/Power/RequirePasswordWhenComputerWakesPluggedIn
 
-#### <a name="windows10generalconfigurationpowerstandbystateswhensleepingwhileonbattery"></a>Windows10GeneralConfiguration.PowerStandbyStatesWhenSleepingWhileOnBattery 
+### <a name="windows10generalconfigurationpowerstandbystateswhensleepingwhileonbattery"></a>Windows10GeneralConfiguration.PowerStandbyStatesWhenSleepingWhileOnBattery 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Power/AllowStandbyStatesWhenSleepingOnBattery
+**오프셋 URI**:/Config/Power/AllowStandbyStatesWhenSleepingOnBattery
 
-#### <a name="windows10generalconfigurationpowerstandbystateswhensleepingwhilepluggedin"></a>Windows10GeneralConfiguration.PowerStandbyStatesWhenSleepingWhilePluggedIn 
+### <a name="windows10generalconfigurationpowerstandbystateswhensleepingwhilepluggedin"></a>Windows10GeneralConfiguration.PowerStandbyStatesWhenSleepingWhilePluggedIn 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Power/AllowStandbyWhenSleepingPluggedIn
+**오프셋 URI**:/Config/Power/AllowStandbyWhenSleepingPluggedIn
 
-#### <a name="windows10generalconfigurationpreventinstallationofmatchingdeviceids"></a>windows10generalconfiguration.preventInstallationOfMatchingDeviceIDs 
+### <a name="windows10generalconfigurationpreventinstallationofmatchingdeviceids"></a>windows10generalconfiguration.preventInstallationOfMatchingDeviceIDs 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceInstallation/PreventInstallationOfMatchingDeviceIDs
+**오프셋 URI**:/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceIDs
 
-#### <a name="windows10generalconfigurationpreventinstallationofmatchingdevicesetupclasses"></a>windows10generalconfiguration.preventInstallationOfMatchingDeviceSetupClasses 
+### <a name="windows10generalconfigurationpreventinstallationofmatchingdevicesetupclasses"></a>windows10generalconfiguration.preventInstallationOfMatchingDeviceSetupClasses 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses
+**오프셋 URI**:/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses
 
-#### <a name="windows10generalconfigurationprinterblockaddition"></a>Windows10GeneralConfiguration.PrinterBlockAddition 
+### <a name="windows10generalconfigurationprinterblockaddition"></a>Windows10GeneralConfiguration.PrinterBlockAddition 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Education/PreventAddingNewPrinters
+**오프셋 URI**:/Config/Education/PreventAddingNewPrinters
 
-#### <a name="windows10generalconfigurationprinterdefaultname"></a>Windows10GeneralConfiguration.PrinterDefaultName 
+### <a name="windows10generalconfigurationprinterdefaultname"></a>Windows10GeneralConfiguration.PrinterDefaultName 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Education/DefaultPrinterName
+**오프셋 URI**:/Config/Education/DefaultPrinterName
 
-#### <a name="windows10generalconfigurationprinternames"></a>Windows10GeneralConfiguration.PrinterNames 
+### <a name="windows10generalconfigurationprinternames"></a>Windows10GeneralConfiguration.PrinterNames 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Education/PrinterNames
+**오프셋 URI**:/Config/Education/PrinterNames
 
-#### <a name="windows10generalconfigurationprivacyadvertisingid"></a>Windows10GeneralConfiguration.PrivacyAdvertisingId 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Privacy/DisableAdvertisingID
+### <a name="windows10generalconfigurationprivacyadvertisingid"></a>Windows10GeneralConfiguration.PrivacyAdvertisingId 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Privacy/DisableAdvertisingID
 
-#### <a name="windows10generalconfigurationprivacyautoacceptpairingandconsentprompts"></a>Windows10GeneralConfiguration.PrivacyAutoAcceptPairingAndConsentPrompts 
-**CSP**: ./Vendor/MSFT/Policy  
-**Offset URI**: /Config/Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts
+### <a name="windows10generalconfigurationprivacyautoacceptpairingandconsentprompts"></a>Windows10GeneralConfiguration.PrivacyAutoAcceptPairingAndConsentPrompts 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts
 
-#### <a name="windows10generalconfigurationprivacyblockactivityfeed"></a>Windows10GeneralConfiguration.PrivacyBlockActivityFeed 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Privacy/EnableActivityFeed
+### <a name="windows10generalconfigurationprivacyblockactivityfeed"></a>Windows10GeneralConfiguration.PrivacyBlockActivityFeed 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Privacy/EnableActivityFeed
 
-#### <a name="windows10generalconfigurationprivacyblockinputpersonalization"></a>Windows10GeneralConfiguration.PrivacyBlockInputPersonalization 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Privacy/AllowInputPersonalization
+### <a name="windows10generalconfigurationprivacyblockinputpersonalization"></a>Windows10GeneralConfiguration.PrivacyBlockInputPersonalization 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Privacy/AllowInputPersonalization
 
-#### <a name="windows10generalconfigurationprivacyblockpublishuseractivities"></a>Windows10GeneralConfiguration.PrivacyBlockPublishUserActivities 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Privacy/PublishUserActivities
+### <a name="windows10generalconfigurationprivacyblockpublishuseractivities"></a>Windows10GeneralConfiguration.PrivacyBlockPublishUserActivities 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Privacy/PublishUserActivities
 
-#### <a name="windows10generalconfigurationsafesearchfilter"></a>Windows10GeneralConfiguration.SafeSearchFilter 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/SafeSearchPermissions
+### <a name="windows10generalconfigurationsafesearchfilter"></a>Windows10GeneralConfiguration.SafeSearchFilter 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/sv/sv/sf 사용 권한
 
-#### <a name="windows10generalconfigurationscreencaptureblocked"></a>Windows10GeneralConfiguration.ScreenCaptureBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowScreenCapture
+### <a name="windows10generalconfigurationscreencaptureblocked"></a>Windows10GeneralConfiguration.ScreenCaptureBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowScreenCapture
 
-#### <a name="windows10generalconfigurationsearchblockdiacritics"></a>Windows10GeneralConfiguration.SearchBlockDiacritics 
+### <a name="windows10generalconfigurationsearchblockdiacritics"></a>Windows10GeneralConfiguration.SearchBlockDiacritics 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/AllowUsingDiacritics
+**오프셋 URI**:/Config/Search/AllowUsingDiacritics
 
-#### <a name="windows10generalconfigurationsearchblockwebresults"></a>Windows10GeneralConfiguration.SearchBlockWebResults 
+### <a name="windows10generalconfigurationsearchblockwebresults"></a>Windows10GeneralConfiguration.SearchBlockWebResults 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/DoNotUseWebResults
+**오프셋 URI**:/Config/Search/DoNotUseWebResults
 
-#### <a name="windows10generalconfigurationsearchdisableautolanguagedetection"></a>Windows10GeneralConfiguration.SearchDisableAutoLanguageDetection 
+### <a name="windows10generalconfigurationsearchdisableautolanguagedetection"></a>Windows10GeneralConfiguration.SearchDisableAutoLanguageDetection 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/AlwaysUseAutoLangDetection
+**오프셋 URI**:/Config/Search/AlwaysUseAutoLangDetection
 
-#### <a name="windows10generalconfigurationsearchdisableindexerbackoff"></a>Windows10GeneralConfiguration.SearchDisableIndexerBackoff 
+### <a name="windows10generalconfigurationsearchdisableindexerbackoff"></a>Windows10GeneralConfiguration.SearchDisableIndexerBackoff 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/DisableBackoff
+**오프셋 URI**:/Config/Search/DisableBackoff
 
-#### <a name="windows10generalconfigurationsearchdisableindexingencrypteditems"></a>Windows10GeneralConfiguration.SearchDisableIndexingEncryptedItems 
+### <a name="windows10generalconfigurationsearchdisableindexingencrypteditems"></a>Windows10GeneralConfiguration.SearchDisableIndexingEncryptedItems 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/AllowIndexingEncryptedStoresOrItems
+**오프셋 URI**:/Config/Search/AllowIndexingEncryptedStoresOrItems
 
-#### <a name="windows10generalconfigurationsearchdisableindexingremovabledrive"></a>Windows10GeneralConfiguration.SearchDisableIndexingRemovableDrive 
+### <a name="windows10generalconfigurationsearchdisableindexingremovabledrive"></a>Windows10GeneralConfiguration.SearchDisableIndexingRemovableDrive 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/DisableRemovableDriveIndexing
+**오프셋 URI**:/Config/Search/DisableRemovableDriveIndexing
 
-#### <a name="windows10generalconfigurationsearchdisablelocation"></a>Windows10GeneralConfiguration.SearchDisableLocation 
+### <a name="windows10generalconfigurationsearchdisablelocation"></a>Windows10GeneralConfiguration.SearchDisableLocation 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/AllowSearchToUseLocation
+**오프셋 URI**:/Config/Search/AllowSearchToUseLocation
 
-#### <a name="windows10generalconfigurationsearchdisableuselocation"></a>Windows10GeneralConfiguration.SearchDisableUseLocation 
+### <a name="windows10generalconfigurationsearchdisableuselocation"></a>Windows10GeneralConfiguration.SearchDisableUseLocation 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/AllowSearchToUseLocation
+**오프셋 URI**:/Config/Search/AllowSearchToUseLocation
 
-#### <a name="windows10generalconfigurationsearchenableautomaticindexsizemanangement"></a>Windows10GeneralConfiguration.SearchEnableAutomaticIndexSizeManangement 
+### <a name="windows10generalconfigurationsearchenableautomaticindexsizemanangement"></a>Windows10GeneralConfiguration.SearchEnableAutomaticIndexSizeManangement 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/PreventIndexingLowDiskSpaceMB
+**오프셋 URI**:/Config/Search/PreventIndexingLowDiskSpaceMB
 
-#### <a name="windows10generalconfigurationsearchenableremotequeries"></a>Windows10GeneralConfiguration.SearchEnableRemoteQueries 
+### <a name="windows10generalconfigurationsearchenableremotequeries"></a>Windows10GeneralConfiguration.SearchEnableRemoteQueries 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Search/PreventRemoteQueries
+**오프셋 URI**:/Config/Search/PreventRemoteQueries
 
-#### <a name="windows10generalconfigurationsecurityblockazureadjoineddevicesautoencryption"></a>Windows10GeneralConfiguration.SecurityBlockAzureADJoinedDevicesAutoEncryption 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices
+### <a name="windows10generalconfigurationsecurityblockazureadjoineddevicesautoencryption"></a>Windows10GeneralConfiguration.SecurityBlockAzureADJoinedDevicesAutoEncryption 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices
 
-#### <a name="windows10generalconfigurationsettingsblockaccountspage"></a>Windows10GeneralConfiguration.SettingsBlockAccountsPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblockaccountspage"></a>Windows10GeneralConfiguration.SettingsBlockAccountsPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblockaddprovisioningpackage"></a>Windows10GeneralConfiguration.SettingsBlockAddProvisioningPackage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Security/AllowAddProvisioningPackage
+### <a name="windows10generalconfigurationsettingsblockaddprovisioningpackage"></a>Windows10GeneralConfiguration.SettingsBlockAddProvisioningPackage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Security/AllowAddProvisioningPackage
 
-#### <a name="windows10generalconfigurationsettingsblockappspage"></a>Windows10GeneralConfiguration.SettingsBlockAppsPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblockappspage"></a>Windows10GeneralConfiguration.SettingsBlockAppsPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblockchangelanguage"></a>Windows10GeneralConfiguration.SettingsBlockChangeLanguage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/AllowLanguage
+### <a name="windows10generalconfigurationsettingsblockchangelanguage"></a>Windows10GeneralConfiguration.SettingsBlockChangeLanguage 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/srer/w/os
 
-#### <a name="windows10generalconfigurationsettingsblockchangepowersleep"></a>Windows10GeneralConfiguration.SettingsBlockChangePowerSleep 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/AllowPowerSleep
+### <a name="windows10generalconfigurationsettingsblockchangepowersleep"></a>Windows10GeneralConfiguration.SettingsBlockChangePowerSleep 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Sconfig/srerererers
 
-#### <a name="windows10generalconfigurationsettingsblockchangeregion"></a>Windows10GeneralConfiguration.SettingsBlockChangeRegion 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/AllowRegion
+### <a name="windows10generalconfigurationsettingsblockchangeregion"></a>Windows10GeneralConfiguration.SettingsBlockChangeRegion 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Sconfig/sv/sv/sgt 영역
 
-#### <a name="windows10generalconfigurationsettingsblockchangesystemtime"></a>Windows10GeneralConfiguration.SettingsBlockChangeSystemTime 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/AllowDateTime
+### <a name="windows10generalconfigurationsettingsblockchangesystemtime"></a>Windows10GeneralConfiguration.SettingsBlockChangeSystemTime 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/cerererallowdatetime
 
-#### <a name="windows10generalconfigurationsettingsblockdevicespage"></a>Windows10GeneralConfiguration.SettingsBlockDevicesPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblockdevicespage"></a>Windows10GeneralConfiguration.SettingsBlockDevicesPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblockeaseofaccesspage"></a>Windows10GeneralConfiguration.SettingsBlockEaseOfAccessPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblockeaseofaccesspage"></a>Windows10GeneralConfiguration.SettingsBlockEaseOfAccessPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblockeditdevicename"></a>Windows10GeneralConfiguration.SettingsBlockEditDeviceName 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/AllowEditDeviceName
+### <a name="windows10generalconfigurationsettingsblockeditdevicename"></a>Windows10GeneralConfiguration.SettingsBlockEditDeviceName 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Suser/srer\user/sgt
 
-#### <a name="windows10generalconfigurationsettingsblockgamingpage"></a>Windows10GeneralConfiguration.SettingsBlockGamingPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblockgamingpage"></a>Windows10GeneralConfiguration.SettingsBlockGamingPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblocknetworkinternetpage"></a>Windows10GeneralConfiguration.SettingsBlockNetworkInternetPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblocknetworkinternetpage"></a>Windows10GeneralConfiguration.SettingsBlockNetworkInternetPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblockpersonalizationpage"></a>Windows10GeneralConfiguration.SettingsBlockPersonalizationPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblockpersonalizationpage"></a>Windows10GeneralConfiguration.SettingsBlockPersonalizationPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblockprivacypage"></a>Windows10GeneralConfiguration.SettingsBlockPrivacyPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblockprivacypage"></a>Windows10GeneralConfiguration.SettingsBlockPrivacyPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblockremoveprovisioningpackage"></a>Windows10GeneralConfiguration.SettingsBlockRemoveProvisioningPackage 
-**CSP**: ./Vendor/MSFT/Policy  
-**Offset URI**: /Config/Security/AllowRemoveProvisioningPackage
+### <a name="windows10generalconfigurationsettingsblockremoveprovisioningpackage"></a>Windows10GeneralConfiguration.SettingsBlockRemoveProvisioningPackage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Security/AllowRemoveProvisioningPackage
 
-#### <a name="windows10generalconfigurationsettingsblocksystempage"></a>Windows10GeneralConfiguration.SettingsBlockSystemPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblocksystempage"></a>Windows10GeneralConfiguration.SettingsBlockSystemPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblocktimelanguagepage"></a>Windows10GeneralConfiguration.SettingsBlockTimeLanguagePage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblocktimelanguagepage"></a>Windows10GeneralConfiguration.SettingsBlockTimeLanguagePage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationsettingsblockupdatesecuritypage"></a>Windows10GeneralConfiguration.SettingsBlockUpdateSecurityPage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Settings/PageVisibilityList
+### <a name="windows10generalconfigurationsettingsblockupdatesecuritypage"></a>Windows10GeneralConfiguration.SettingsBlockUpdateSecurityPage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Settings/PageVisibilityList
 
-#### <a name="windows10generalconfigurationshareduserappdataallowed"></a>Windows10GeneralConfiguration.SharedUserAppDataAllowed 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/AllowSharedUserAppData
+### <a name="windows10generalconfigurationshareduserappdataallowed"></a>Windows10GeneralConfiguration.SharedUserAppDataAllowed 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/ApplicationManagement/AllowSharedUserAppData
 
-#### <a name="windows10generalconfigurationsmartscreenblockpromptoverride"></a>Windows10GeneralConfiguration.SmartScreenBlockPromptOverride 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/PreventSmartScreenPromptOverride
+### <a name="windows10generalconfigurationsmartscreenblockpromptoverride"></a>Windows10GeneralConfiguration.SmartScreenBlockPromptOverride 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/PreventSmartScreenPromptOverride
 
-#### <a name="windows10generalconfigurationsmartscreenblockpromptoverrideforfiles"></a>Windows10GeneralConfiguration.SmartScreenBlockPromptOverrideForFiles 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/PreventSmartScreenPromptOverrideForFiles
+### <a name="windows10generalconfigurationsmartscreenblockpromptoverrideforfiles"></a>Windows10GeneralConfiguration.SmartScreenBlockPromptOverrideForFiles 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/PreventSmartScreenPromptOverrideForFiles
 
-#### <a name="windows10generalconfigurationsmartscreenenableappinstallcontrol"></a>Windows10GeneralConfiguration.SmartScreenEnableAppInstallControl 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/SmartScreen/EnableAppInstallControl
+### <a name="windows10generalconfigurationsmartscreenenableappinstallcontrol"></a>Windows10GeneralConfiguration.SmartScreenEnableAppInstallControl 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/SmartScreen/EnableAppInstallControl
 
-#### <a name="windows10generalconfigurationstartblockunpinningappsfromtaskbar"></a>Windows10GeneralConfiguration.StartBlockUnpinningAppsFromTaskbar 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/NoPinningToTaskbar
+### <a name="windows10generalconfigurationstartblockunpinningappsfromtaskbar"></a>Windows10GeneralConfiguration.StartBlockUnpinningAppsFromTaskbar 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/NoPinningToTaskbar
 
-#### <a name="windows10generalconfigurationstartmenuapplistvisibility"></a>Windows10GeneralConfiguration.StartMenuAppListVisibility 
+### <a name="windows10generalconfigurationstartmenuapplistvisibility"></a>Windows10GeneralConfiguration.StartMenuAppListVisibility 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideAppList
+**오프셋 URI**:/Config/Start/HideAppList
 
-#### <a name="windows10generalconfigurationstartmenuhidechangeaccountsettings"></a>Windows10GeneralConfiguration.StartMenuHideChangeAccountSettings 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideChangeAccountSettings
+### <a name="windows10generalconfigurationstartmenuhidechangeaccountsettings"></a>Windows10GeneralConfiguration.StartMenuHideChangeAccountSettings 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/HideChangeAccountSettings
 
-#### <a name="windows10generalconfigurationstartmenuhidefrequentlyusedapps"></a>Windows10GeneralConfiguration.StartMenuHideFrequentlyUsedApps 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideFrequentlyUsedApps
+### <a name="windows10generalconfigurationstartmenuhidefrequentlyusedapps"></a>Windows10GeneralConfiguration.StartMenuHideFrequentlyUsedApps 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/HideFrequentlyUsedApps
 
-#### <a name="windows10generalconfigurationstartmenuhidehibernate"></a>Windows10GeneralConfiguration.StartMenuHideHibernate 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideHibernate
+### <a name="windows10generalconfigurationstartmenuhidehibernate"></a>Windows10GeneralConfiguration.StartMenuHideHibernate 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/HideHibernate
 
-#### <a name="windows10generalconfigurationstartmenuhidelock"></a>Windows10GeneralConfiguration.StartMenuHideLock 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideLock
+### <a name="windows10generalconfigurationstartmenuhidelock"></a>Windows10GeneralConfiguration.StartMenuHideLock 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/HideLock
 
-#### <a name="windows10generalconfigurationstartmenuhidepowerbutton"></a>Windows10GeneralConfiguration.StartMenuHidePowerButton 
+### <a name="windows10generalconfigurationstartmenuhidepowerbutton"></a>Windows10GeneralConfiguration.StartMenuHidePowerButton 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HidePowerButton
+**오프셋 URI**:/Config/Start/HidePowerButton
 
-#### <a name="windows10generalconfigurationstartmenuhiderecentjumplists"></a>Windows10GeneralConfiguration.StartMenuHideRecentJumpLists 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideRecentJumplists
+### <a name="windows10generalconfigurationstartmenuhiderecentjumplists"></a>Windows10GeneralConfiguration.StartMenuHideRecentJumpLists 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/HideRecentJumplists
 
-#### <a name="windows10generalconfigurationstartmenuhiderecentlyaddedapps"></a>Windows10GeneralConfiguration.StartMenuHideRecentlyAddedApps 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideRecentlyAddedApps
+### <a name="windows10generalconfigurationstartmenuhiderecentlyaddedapps"></a>Windows10GeneralConfiguration.StartMenuHideRecentlyAddedApps 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/HideRecentlyAddedApps
 
-#### <a name="windows10generalconfigurationstartmenuhiderestartoptions"></a>Windows10GeneralConfiguration.StartMenuHideRestartOptions 
+### <a name="windows10generalconfigurationstartmenuhiderestartoptions"></a>Windows10GeneralConfiguration.StartMenuHideRestartOptions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideRestart
+**오프셋 URI**:/Config/Start/HideRestart
 
-#### <a name="windows10generalconfigurationstartmenuhideshutdown"></a>Windows10GeneralConfiguration.StartMenuHideShutDown 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideShutDown
+### <a name="windows10generalconfigurationstartmenuhideshutdown"></a>Windows10GeneralConfiguration.StartMenuHideShutDown 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/HideShutDown
 
-#### <a name="windows10generalconfigurationstartmenuhidesignout"></a>Windows10GeneralConfiguration.StartMenuHideSignOut 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideSignOut
+### <a name="windows10generalconfigurationstartmenuhidesignout"></a>Windows10GeneralConfiguration.StartMenuHideSignOut 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Sconfig/cererout
 
-#### <a name="windows10generalconfigurationstartmenuhidesleep"></a>Windows10GeneralConfiguration.StartMenuHideSleep 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideSleep
+### <a name="windows10generalconfigurationstartmenuhidesleep"></a>Windows10GeneralConfiguration.StartMenuHideSleep 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/HideSleep
 
-#### <a name="windows10generalconfigurationstartmenuhideswitchaccount"></a>Windows10GeneralConfiguration.StartMenuHideSwitchAccount 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideSwitchAccount
+### <a name="windows10generalconfigurationstartmenuhideswitchaccount"></a>Windows10GeneralConfiguration.StartMenuHideSwitchAccount 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/HideSwitchAccount
 
-#### <a name="windows10generalconfigurationstartmenuhideusertile"></a>Windows10GeneralConfiguration.StartMenuHideUserTile 
+### <a name="windows10generalconfigurationstartmenuhideusertile"></a>Windows10GeneralConfiguration.StartMenuHideUserTile 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/HideUserTile
+**오프셋 URI**:/Config/Start/HideUserTile
 
-#### <a name="windows10generalconfigurationstartmenulayoutedgeassetsxml"></a>Windows10GeneralConfiguration.StartMenuLayoutEdgeAssetsXml 
+### <a name="windows10generalconfigurationstartmenulayoutedgeassetsxml"></a>Windows10GeneralConfiguration.StartMenuLayoutEdgeAssetsXml 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/ImportEdgeAssets
+**오프셋 URI**:/Config/Start/ImportEdgeAssets
 
-#### <a name="windows10generalconfigurationstartmenulayoutxml"></a>Windows10GeneralConfiguration.StartMenuLayoutXml 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/StartLayout
+### <a name="windows10generalconfigurationstartmenulayoutxml"></a>Windows10GeneralConfiguration.StartMenuLayoutXml 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/cier/startlayout
 
-#### <a name="windows10generalconfigurationstartmenumode"></a>Windows10GeneralConfiguration.StartMenuMode 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/ForceStartSize
+### <a name="windows10generalconfigurationstartmenumode"></a>Windows10GeneralConfiguration.StartMenuMode 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/ForceStartSize
 
-#### <a name="windows10generalconfigurationstartmenupinnedfolderdocuments"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderDocuments 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderDocuments
+### <a name="windows10generalconfigurationstartmenupinnedfolderdocuments"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderDocuments 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/di/p\allowne&gt 문서
 
-#### <a name="windows10generalconfigurationstartmenupinnedfolderdownloads"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderDownloads 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderDownloads
+### <a name="windows10generalconfigurationstartmenupinnedfolderdownloads"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderDownloads 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Config/start/allowpinnedfolderdownloads 다운로드
 
-#### <a name="windows10generalconfigurationstartmenupinnedfolderfileexplorer"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderFileExplorer 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderFileExplorer
+### <a name="windows10generalconfigurationstartmenupinnedfolderfileexplorer"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderFileExplorer 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/di/p\allowne&gt filefileexplorer
 
-#### <a name="windows10generalconfigurationstartmenupinnedfolderhomegroup"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderHomeGroup 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderHomeGroup
+### <a name="windows10generalconfigurationstartmenupinnedfolderhomegroup"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderHomeGroup 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/sv\user/sv\allownevfolder홈 그룹
 
-#### <a name="windows10generalconfigurationstartmenupinnedfoldermusic"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderMusic 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderMusic
+### <a name="windows10generalconfigurationstartmenupinnedfoldermusic"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderMusic 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/sicv\user/sd
 
-#### <a name="windows10generalconfigurationstartmenupinnedfoldernetwork"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderNetwork 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderNetwork
+### <a name="windows10generalconfigurationstartmenupinnedfoldernetwork"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderNetwork 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/sv\user/sv\allownevfoldernetwork
 
-#### <a name="windows10generalconfigurationstartmenupinnedfolderpersonalfolder"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderPersonalFolder 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderPersonalFolder
+### <a name="windows10generalconfigurationstartmenupinnedfolderpersonalfolder"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderPersonalFolder 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Start/AllowPinnedFolderPersonalFolder
 
-#### <a name="windows10generalconfigurationstartmenupinnedfolderpictures"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderPictures 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderPictures
+### <a name="windows10generalconfigurationstartmenupinnedfolderpictures"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderPictures 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/di/p\allowneicvfolderpictures
 
-#### <a name="windows10generalconfigurationstartmenupinnedfoldersettings"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderSettings 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderSettings
+### <a name="windows10generalconfigurationstartmenupinnedfoldersettings"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderSettings 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/dv\user/p\allowne&gt 설정
 
-#### <a name="windows10generalconfigurationstartmenupinnedfoldervideos"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderVideos 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Start/AllowPinnedFolderVideos
+### <a name="windows10generalconfigurationstartmenupinnedfoldervideos"></a>Windows10GeneralConfiguration.StartMenuPinnedFolderVideos 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/sicv/pv\allowicvfolder비디오
 
-#### <a name="windows10generalconfigurationstorageblockremovablestorage"></a>Windows10GeneralConfiguration.StorageBlockRemovableStorage 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/System/AllowStorageCard
+### <a name="windows10generalconfigurationstorageblockremovablestorage"></a>Windows10GeneralConfiguration.StorageBlockRemovableStorage 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/system/allowstoragecard
 
-#### <a name="windows10generalconfigurationstoragerequiremobiledeviceencryption"></a>Windows10GeneralConfiguration.StorageRequireMobileDeviceEncryption 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Security/RequireDeviceEncryption
+### <a name="windows10generalconfigurationstoragerequiremobiledeviceencryption"></a>Windows10GeneralConfiguration.StorageRequireMobileDeviceEncryption 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/sv/dv/sv/ds 암호화
 
-#### <a name="windows10generalconfigurationstoragerestrictappdatatosystemvolume"></a>Windows10GeneralConfiguration.StorageRestrictAppDataToSystemVolume 
-**CSP**: ./Vendor/MSFT/Policy  
+### <a name="windows10generalconfigurationstoragerestrictappdatatosystemvolume"></a>Windows10GeneralConfiguration.StorageRestrictAppDataToSystemVolume 
+**CSP**:./Vendor/MSFT/Policy  
 **Offset URI**: /Config/ApplicationManagement/RestrictAppDataToSystemVolume
 
-#### <a name="windows10generalconfigurationstoragerestrictappinstalltosystemvolume"></a>Windows10GeneralConfiguration.StorageRestrictAppInstallToSystemVolume 
-**CSP**: ./Vendor/MSFT/Policy  
-**Offset URI**: /Config/ApplicationManagement/RestrictAppToSystemVolume
+### <a name="windows10generalconfigurationstoragerestrictappinstalltosystemvolume"></a>Windows10GeneralConfiguration.StorageRestrictAppInstallToSystemVolume 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/ApplicationManagement/RestrictAppToSystemVolume
 
-#### <a name="windows10generalconfigurationsystembootstartdriverinitialization"></a>Windows10GeneralConfiguration.SystemBootStartDriverInitialization 
+### <a name="windows10generalconfigurationsystembootstartdriverinitialization"></a>Windows10GeneralConfiguration.SystemBootStartDriverInitialization 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/System/BootStartDriverInitialization
+**오프셋 URI**:/Config/System/BootStartDriverInitialization
 
-#### <a name="windows10generalconfigurationsystemtelemetryproxyserver"></a>Windows10GeneralConfiguration.SystemTelemetryProxyServer 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/System/TelemetryProxy
+### <a name="windows10generalconfigurationsystemtelemetryproxyserver"></a>Windows10GeneralConfiguration.SystemTelemetryProxyServer 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/System/TelemetryProxy
 
-#### <a name="windows10generalconfigurationtaskmanagerblockendtask"></a>Windows10GeneralConfiguration.TaskManagerBlockEndTask 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/TaskManager/AllowEndTask
+### <a name="windows10generalconfigurationtaskmanagerblockendtask"></a>Windows10GeneralConfiguration.TaskManagerBlockEndTask 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/svarymanager/wererertask
 
-#### <a name="windows10generalconfigurationtenantlockdownrequirenetworkduringoutofboxexperience"></a>Windows10GeneralConfiguration.TenantLockdownRequireNetworkDuringOutOfBoxExperience 
+### <a name="windows10generalconfigurationtenantlockdownrequirenetworkduringoutofboxexperience"></a>Windows10GeneralConfiguration.TenantLockdownRequireNetworkDuringOutOfBoxExperience 
 **CSP**: ./Vendor/MSFT/TenantLockdown  
-**URI 오프셋**: /RequireNetworkInOOBE
+**오프셋 URI**:/RequireNetworkInOOBE
 
-#### <a name="windows10generalconfigurationusbblocked"></a>Windows10GeneralConfiguration.UsbBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Connectivity/AllowUSBConnection
+### <a name="windows10generalconfigurationusbblocked"></a>Windows10GeneralConfiguration.UsbBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Connectivity/AllowUSBConnection
 
-#### <a name="windows10generalconfigurationvoicerecordingblocked"></a>Windows10GeneralConfiguration.VoiceRecordingBlocked 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowVoiceRecording
+### <a name="windows10generalconfigurationvoicerecordingblocked"></a>Windows10GeneralConfiguration.VoiceRecordingBlocked 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowVoiceRecording
 
-#### <a name="windows10generalconfigurationwebrtcblocklocalhostipaddress"></a>Windows10GeneralConfiguration.WebRtcBlockLocalhostIpAddress 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/PreventUsingLocalHostIPAddressForWebRTC
+### <a name="windows10generalconfigurationwebrtcblocklocalhostipaddress"></a>Windows10GeneralConfiguration.WebRtcBlockLocalhostIpAddress 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/PreventUsingLocalHostIPAddressForWebRTC
 
-#### <a name="windows10generalconfigurationwifiblockautomaticconnecthotspots"></a>Windows10GeneralConfiguration.WiFiBlockAutomaticConnectHotspots 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WiFi/AllowAutoConnectToWiFiSenseHotspots
+### <a name="windows10generalconfigurationwifiblockautomaticconnecthotspots"></a>Windows10GeneralConfiguration.WiFiBlockAutomaticConnectHotspots 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/WiFi/AllowAutoConnectToWiFiSenseHotspots
 
-#### <a name="windows10generalconfigurationwifiblocked"></a>Windows10GeneralConfiguration.WiFiBlocked 
+### <a name="windows10generalconfigurationwifiblocked"></a>Windows10GeneralConfiguration.WiFiBlocked 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Wifi/AllowWiFi
+**오프셋 URI**:/Config/Wifi/AllowWiFi
 
-#### <a name="windows10generalconfigurationwifiblockmanualconfiguration"></a>Windows10GeneralConfiguration.WiFiBlockManualConfiguration 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WiFi/AllowManualWiFi/Configuration
+### <a name="windows10generalconfigurationwifiblockmanualconfiguration"></a>Windows10GeneralConfiguration.WiFiBlockManualConfiguration 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/WiFi/AllowManualWiFi/Configuration
 
-#### <a name="windows10generalconfigurationwifiscaninterval"></a>Windows10GeneralConfiguration.WiFiScanInterval 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WiFi/WLANScanMode
+### <a name="windows10generalconfigurationwifiscaninterval"></a>Windows10GeneralConfiguration.WiFiScanInterval 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/WiFi/WLANScanMode
 
-#### <a name="windows10generalconfigurationwindowslogonlocalusersondomainjoinedcomputers"></a>Windows10GeneralConfiguration.WindowsLogOnLocalUsersOnDomainJoinedComputers 
+### <a name="windows10generalconfigurationwindowslogonlocalusersondomainjoinedcomputers"></a>Windows10GeneralConfiguration.WindowsLogOnLocalUsersOnDomainJoinedComputers 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers
+**오프셋 URI**:/Config/WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers
 
-#### <a name="windows10generalconfigurationwindowsspotlightblockconsumerspecificfeatures"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockConsumerSpecificFeatures 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowWindowsConsumerFeatures
+### <a name="windows10generalconfigurationwindowsspotlightblockconsumerspecificfeatures"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockConsumerSpecificFeatures 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowWindowsConsumerFeatures
 
-#### <a name="windows10generalconfigurationwindowsspotlightblocked"></a>Windows10GeneralConfiguration.WindowsSpotlightBlocked 
+### <a name="windows10generalconfigurationwindowsspotlightblocked"></a>Windows10GeneralConfiguration.WindowsSpotlightBlocked 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowWindowsSpotlight
+**오프셋 URI**:/Config/Experience/AllowWindowsSpotlight
 
-#### <a name="windows10generalconfigurationwindowsspotlightblockonactioncenter"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockOnActionCenter 
+### <a name="windows10generalconfigurationwindowsspotlightblockonactioncenter"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockOnActionCenter 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowWindowsSpotlightOnActionCenter
+**오프셋 URI**:/Config/Experience/AllowWindowsSpotlightOnActionCenter
 
-#### <a name="windows10generalconfigurationwindowsspotlightblocktailoredexperiences"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockTailoredExperiences 
+### <a name="windows10generalconfigurationwindowsspotlightblocktailoredexperiences"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockTailoredExperiences 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowTailoredExperiencesWithDiagnosticData
+**오프셋 URI**:/Config/Experience/AllowTailoredExperiencesWithDiagnosticData
 
-#### <a name="windows10generalconfigurationwindowsspotlightblockthirdpartynotifications"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockThirdPartyNotifications 
+### <a name="windows10generalconfigurationwindowsspotlightblockthirdpartynotifications"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockThirdPartyNotifications 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowThirdPartySuggestionsInWindowsSpotlight
+**오프셋 URI**:/Config/Experience/AllowThirdPartySuggestionsInWindowsSpotlight
 
-#### <a name="windows10generalconfigurationwindowsspotlightblockwelcomeexperience"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockWelcomeExperience 
+### <a name="windows10generalconfigurationwindowsspotlightblockwelcomeexperience"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockWelcomeExperience 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowWindowsSpotlightWindowsWelcomeExperience
+**오프셋 URI**:/Config/Experience/AllowWindowsSpotlightWindowsWelcomeExperience
 
-#### <a name="windows10generalconfigurationwindowsspotlightblockwindowstips"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockWindowsTips 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/AllowWindowsTips
+### <a name="windows10generalconfigurationwindowsspotlightblockwindowstips"></a>Windows10GeneralConfiguration.WindowsSpotlightBlockWindowsTips 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Experience/AllowWindowsTips
 
-#### <a name="windows10generalconfigurationwindowsspotlightconfigureonlockscreen"></a>Windows10GeneralConfiguration.WindowsSpotlightConfigureOnLockScreen 
+### <a name="windows10generalconfigurationwindowsspotlightconfigureonlockscreen"></a>Windows10GeneralConfiguration.WindowsSpotlightConfigureOnLockScreen 
 **CSP**:./User/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Experience/ConfigureWindowsSpotlightOnLockScreen
+**오프셋 URI**:/Config/Experience/ConfigureWindowsSpotlightOnLockScreen
 
-#### <a name="windows10generalconfigurationwindowsstoreblockautoupdate"></a>Windows10GeneralConfiguration.WindowsStoreBlockAutoUpdate 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/AllowAppStoreAutoUpdate
+### <a name="windows10generalconfigurationwindowsstoreblockautoupdate"></a>Windows10GeneralConfiguration.WindowsStoreBlockAutoUpdate 
+**CSP**:./Vendor/MSFT/Policy  
+**OFFSET URI**:/Sconfig/sver/wermappmanagement자동 업데이트
 
-#### <a name="windows10generalconfigurationwindowsstoreblocked"></a>Windows10GeneralConfiguration.WindowsStoreBlocked 
+### <a name="windows10generalconfigurationwindowsstoreblocked"></a>Windows10GeneralConfiguration.WindowsStoreBlocked 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/AllowStore
+**오프셋 URI**:/Sconfig/sver/wer/ws 저장소
 
-#### <a name="windows10generalconfigurationwindowsstoreenableprivatestoreonly"></a>Windows10GeneralConfiguration.WindowsStoreEnablePrivateStoreOnly 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ApplicationManagement/RequirePrivateStoreOnly
+### <a name="windows10generalconfigurationwindowsstoreenableprivatestoreonly"></a>Windows10GeneralConfiguration.WindowsStoreEnablePrivateStoreOnly 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/ApplicationManagement/RequirePrivateStoreOnly
 
-#### <a name="windows10generalconfigurationwirelessdisplayblockprojectiontothisdevice"></a>Windows10GeneralConfiguration.WirelessDisplayBlockProjectionToThisDevice 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WirelessDisplay/AllowProjectionToPC
+### <a name="windows10generalconfigurationwirelessdisplayblockprojectiontothisdevice"></a>Windows10GeneralConfiguration.WirelessDisplayBlockProjectionToThisDevice 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/WirelessDisplay/AllowProjectionToPC
 
-#### <a name="windows10generalconfigurationwirelessdisplayblockuserinputfromreceiver"></a>Windows10GeneralConfiguration.WirelessDisplayBlockUserInputFromReceiver 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver
+### <a name="windows10generalconfigurationwirelessdisplayblockuserinputfromreceiver"></a>Windows10GeneralConfiguration.WirelessDisplayBlockUserInputFromReceiver 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver
 
-#### <a name="windows10generalconfigurationwirelessdisplayrequirepinforpairing"></a>Windows10GeneralConfiguration.WirelessDisplayRequirePinForPairing 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/WirelessDisplay/RequirePINForPairing
+### <a name="windows10generalconfigurationwirelessdisplayrequirepinforpairing"></a>Windows10GeneralConfiguration.WirelessDisplayRequirePinForPairing 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/WirelessDisplay/RequirePINForPairing
 
-#### <a name="windows10networkboundaryconfigurationwindowsnetworkisolationpolicy"></a>Windows10NetworkBoundaryConfiguration.WindowsNetworkIsolationPolicy 
+### <a name="windows10networkboundaryconfigurationwindowsnetworkisolationpolicy"></a>Windows10NetworkBoundaryConfiguration.WindowsNetworkIsolationPolicy 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/NetworkIsolation/EnterpriseCloudResources /Config/NetworkIsolation/EnterpriseIPRange, /Config/NetworkIsolation/EnterpriseIPRangesAreAuthoritative, /Config/NetworkIsolation / EnterpriseInternalProxyServers, /Config/NetworkIsolation/EnterpriseNetworkDomainNames /Config/NetworkIsolation/EnterpriseProxyServers, /Config/NetworkIsolation/EnterpriseProxyServersAreAuthoritative, /Config/NetworkIsolation / NeutralResources
+**OFFSET URI**:/Config/NetworkIsolation/EnterpriseCloudResources,/Config/NetworkIsolation/EnterpriseIPRange,/Config/NetworkIsolation/EnterpriseIPRangesAreAuthoritative,/Config/NetworkIsolation/ EnterpriseInternalProxyServers,/Config/NetworkIsolation/EnterpriseNetworkDomainNames,/Config/NetworkIsolation/EnterpriseProxyServers,/Config/NetworkIsolation/EnterpriseProxyServersAreAuthoritative,/Config/NetworkIsolation/ NeutralResources
 
-#### <a name="windows10policyoverrideconfigurationprefermdmovergrouppolicy"></a>Windows10PolicyOverrideConfiguration.PreferMdmOverGroupPolicy 
+### <a name="windows10policyoverrideconfigurationprefermdmovergrouppolicy"></a>Windows10PolicyOverrideConfiguration.PreferMdmOverGroupPolicy 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/ControlPolicyConflict/MDMWinsOverGP
+**오프셋 URI**:/Config/ControlPolicyConflict/MDMWinsOverGP
 
-#### <a name="windows10secureassessmentconfigurationallowprinting"></a>Windows10SecureAssessmentConfiguration.AllowPrinting 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
-**URI 오프셋**: /RequirePrinting
+### <a name="windows10secureassessmentconfigurationallowprinting"></a>Windows10SecureAssessmentConfiguration.AllowPrinting 
+**CSP**:./Vendor/MSFT/SecureAssessment  
+**오프셋 URI**:/Diers 인쇄
 
-#### <a name="windows10secureassessmentconfigurationallowscreencapture"></a>Windows10SecureAssessmentConfiguration.AllowScreenCapture 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
-**URI 오프셋**: /AllowScreenMonitoring
+### <a name="windows10secureassessmentconfigurationallowscreencapture"></a>Windows10SecureAssessmentConfiguration.AllowScreenCapture 
+**CSP**:./Vendor/MSFT/SecureAssessment  
+**오프셋 URI**:/Allowscreenmonitoring
 
-#### <a name="windows10secureassessmentconfigurationallowtextsuggestion"></a>Windows10SecureAssessmentConfiguration.AllowTextSuggestion 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
-**URI 오프셋**: /AllowTextSuggestions
+### <a name="windows10secureassessmentconfigurationallowtextsuggestion"></a>Windows10SecureAssessmentConfiguration.AllowTextSuggestion 
+**CSP**:./Vendor/MSFT/SecureAssessment  
+**오프셋 URI**:/Allowtextsuggestions
 
-#### <a name="windows10secureassessmentconfigurationconfigurationaccount"></a>Windows10SecureAssessmentConfiguration.ConfigurationAccount 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
-**URI 오프셋**: /TesterAccount
+### <a name="windows10secureassessmentconfigurationconfigurationaccount"></a>Windows10SecureAssessmentConfiguration.ConfigurationAccount 
+**CSP**:./Vendor/MSFT/SecureAssessment  
+**오프셋 URI**:/TesterAccount
 
-#### <a name="windows10secureassessmentconfigurationconfigurationaccounttype"></a>Windows10SecureAssessmentConfiguration.ConfigurationAccountType 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
-**URI 오프셋**: /TesterAccount
+### <a name="windows10secureassessmentconfigurationconfigurationaccounttype"></a>Windows10SecureAssessmentConfiguration.ConfigurationAccountType 
+**CSP**:./Vendor/MSFT/SecureAssessment  
+**오프셋 URI**:/TesterAccount
 
-#### <a name="windows10secureassessmentconfigurationlaunchuri"></a>Windows10SecureAssessmentConfiguration.LaunchUri 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
-**URI 오프셋**: /LaunchURI
+### <a name="windows10secureassessmentconfigurationlaunchuri"></a>Windows10SecureAssessmentConfiguration.LaunchUri 
+**CSP**:./Vendor/MSFT/SecureAssessment  
+**오프셋 uri**:/Launchuri
 
-#### <a name="windows10teamgeneralconfigurationazureoperationalinsightsblocktelemetry"></a>Windows10TeamGeneralConfiguration.AzureOperationalInsightsBlockTelemetry 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / MOMAgent WorkspaceID 및 WorkspaceKey/MOMAgent /
+### <a name="windows10teamgeneralconfigurationazureoperationalinsightsblocktelemetry"></a>Windows10TeamGeneralConfiguration.AzureOperationalInsightsBlockTelemetry 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/MOMAgent/WorkspaceID 및/MOMAgent/WorkspaceKey
 
-#### <a name="windows10teamgeneralconfigurationazureoperationalinsightsworkspaceid"></a>Windows10TeamGeneralConfiguration.AzureOperationalInsightsWorkspaceId 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / MOMAgent WorkspaceID
+### <a name="windows10teamgeneralconfigurationazureoperationalinsightsworkspaceid"></a>Windows10TeamGeneralConfiguration.AzureOperationalInsightsWorkspaceId 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/MOMAgent/WorkspaceID
 
-#### <a name="windows10teamgeneralconfigurationazureoperationalinsightsworkspacekey"></a>Windows10TeamGeneralConfiguration.AzureOperationalInsightsWorkspaceKey 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / MOMAgent WorkspaceKey
+### <a name="windows10teamgeneralconfigurationazureoperationalinsightsworkspacekey"></a>Windows10TeamGeneralConfiguration.AzureOperationalInsightsWorkspaceKey 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/MOMAgent/WorkspaceKey
 
-#### <a name="windows10teamgeneralconfigurationconnectappblockautolaunch"></a>Windows10TeamGeneralConfiguration.ConnectAppBlockAutoLaunch 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: /InBoxApps/Connect/AutoLaunch
+### <a name="windows10teamgeneralconfigurationconnectappblockautolaunch"></a>Windows10TeamGeneralConfiguration.ConnectAppBlockAutoLaunch 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/InBoxApps/Connect/AutoLaunch
 
-#### <a name="windows10teamgeneralconfigurationdeviceaccountblockexchangeservices"></a>Windows10TeamGeneralConfiguration.DeviceAccountBlockExchangeServices 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / DeviceAccount/전자 메일
+### <a name="windows10teamgeneralconfigurationdeviceaccountblockexchangeservices"></a>Windows10TeamGeneralConfiguration.DeviceAccountBlockExchangeServices 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/Deviceaccount/email
 
-#### <a name="windows10teamgeneralconfigurationdeviceaccountemailaddress"></a>Windows10TeamGeneralConfiguration.DeviceAccountEmailAddress 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / DeviceAccount/전자 메일
+### <a name="windows10teamgeneralconfigurationdeviceaccountemailaddress"></a>Windows10TeamGeneralConfiguration.DeviceAccountEmailAddress 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/Deviceaccount/email
 
-#### <a name="windows10teamgeneralconfigurationdeviceaccountexchangeserveraddress"></a>Windows10TeamGeneralConfiguration.DeviceAccountExchangeServerAddress 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / DeviceAccount/exchange Server
+### <a name="windows10teamgeneralconfigurationdeviceaccountexchangeserveraddress"></a>Windows10TeamGeneralConfiguration.DeviceAccountExchangeServerAddress 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/DeviceAccount/ExchangeServer
 
-#### <a name="windows10teamgeneralconfigurationdeviceaccountrequirepasswordrotation"></a>Windows10TeamGeneralConfiguration.DeviceAccountRequirePasswordRotation 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / DeviceAccount PasswordRotationEnabled
+### <a name="windows10teamgeneralconfigurationdeviceaccountrequirepasswordrotation"></a>Windows10TeamGeneralConfiguration.DeviceAccountRequirePasswordRotation 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/DeviceAccount/PasswordRotationEnabled
 
-#### <a name="windows10teamgeneralconfigurationdeviceaccountsessioninitiationprotocoladdress"></a>Windows10TeamGeneralConfiguration.DeviceAccountSessionInitiationProtocolAddress 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / DeviceAccount SipAddress
+### <a name="windows10teamgeneralconfigurationdeviceaccountsessioninitiationprotocoladdress"></a>Windows10TeamGeneralConfiguration.DeviceAccountSessionInitiationProtocolAddress 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/DeviceAccount/SipAddress
 
-#### <a name="windows10teamgeneralconfigurationmaintenancewindowblocked"></a>Windows10TeamGeneralConfiguration.MaintenanceWindowBlocked 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: /MaintenanceHoursSimple/Hours/Duration 및 /MaintenanceHoursSimple/Hours/StartTime
+### <a name="windows10teamgeneralconfigurationmaintenancewindowblocked"></a>Windows10TeamGeneralConfiguration.MaintenanceWindowBlocked 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/MaintenanceHoursSimple/Hours/Duration 및/MaintenanceHoursSimple/Hours/StartTime
 
-#### <a name="windows10teamgeneralconfigurationmaintenancewindowdurationinhours"></a>Windows10TeamGeneralConfiguration.MaintenanceWindowDurationInHours 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: /MaintenanceHoursSimple/Hours/Duration
+### <a name="windows10teamgeneralconfigurationmaintenancewindowdurationinhours"></a>Windows10TeamGeneralConfiguration.MaintenanceWindowDurationInHours 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/MaintenanceHoursSimple/Hours/Duration
 
-#### <a name="windows10teamgeneralconfigurationmaintenancewindowstarttime"></a>Windows10TeamGeneralConfiguration.MaintenanceWindowStartTime 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: /MaintenanceHoursSimple/Hours/StartTime
+### <a name="windows10teamgeneralconfigurationmaintenancewindowstarttime"></a>Windows10TeamGeneralConfiguration.MaintenanceWindowStartTime 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/MaintenanceHoursSimple/Hours/StartTime
 
-#### <a name="windows10teamgeneralconfigurationmiracastblocked"></a>Windows10TeamGeneralConfiguration.MiracastBlocked 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: /InBoxApps/WirelessProjection/Enabled
+### <a name="windows10teamgeneralconfigurationmiracastblocked"></a>Windows10TeamGeneralConfiguration.MiracastBlocked 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/InBoxApps/WirelessProjection/Enabled
 
-#### <a name="windows10teamgeneralconfigurationmiracastchannel"></a>Windows10TeamGeneralConfiguration.MiracastChannel 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: InBoxApps/WirelessProjection 채널
+### <a name="windows10teamgeneralconfigurationmiracastchannel"></a>Windows10TeamGeneralConfiguration.MiracastChannel 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/InBoxApps/WirelessProjection/Channel
 
-#### <a name="windows10teamgeneralconfigurationmiracastrequirepin"></a>Windows10TeamGeneralConfiguration.MiracastRequirePin 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: /InBoxApps/WirelessProjection/PINRequired
+### <a name="windows10teamgeneralconfigurationmiracastrequirepin"></a>Windows10TeamGeneralConfiguration.MiracastRequirePin 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/InBoxApps/WirelessProjection/PINRequired
 
-#### <a name="windows10teamgeneralconfigurationsettingsblockmymeetingsandfiles"></a>Windows10TeamGeneralConfiguration.SettingsBlockMyMeetingsAndFiles 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / 속성/DoNotShowMyMeetingsAndFiles
+### <a name="windows10teamgeneralconfigurationsettingsblockmymeetingsandfiles"></a>Windows10TeamGeneralConfiguration.SettingsBlockMyMeetingsAndFiles 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/Properties/DoNotShowMyMeetingsAndFiles
 
-#### <a name="windows10teamgeneralconfigurationsettingsblocksessionresume"></a>Windows10TeamGeneralConfiguration.SettingsBlockSessionResume 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / 속성/AllowSessionResume
+### <a name="windows10teamgeneralconfigurationsettingsblocksessionresume"></a>Windows10TeamGeneralConfiguration.SettingsBlockSessionResume 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**OFFSET URI**:/Cerer&allowsessionresume
 
-#### <a name="windows10teamgeneralconfigurationsettingsblocksigninsuggestions"></a>Windows10TeamGeneralConfiguration.SettingsBlockSigninSuggestions 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / 속성/DisableSigninSuggestions
+### <a name="windows10teamgeneralconfigurationsettingsblocksigninsuggestions"></a>Windows10TeamGeneralConfiguration.SettingsBlockSigninSuggestions 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/Properties/DisableSigninSuggestions
 
-#### <a name="windows10teamgeneralconfigurationsettingsdefaultvolume"></a>Windows10TeamGeneralConfiguration.SettingsDefaultVolume 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / 속성/DefaultVolume
+### <a name="windows10teamgeneralconfigurationsettingsdefaultvolume"></a>Windows10TeamGeneralConfiguration.SettingsDefaultVolume 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/Properties/DefaultVolume
 
-#### <a name="windows10teamgeneralconfigurationsettingsscreentimeoutinminutes"></a>Windows10TeamGeneralConfiguration.SettingsScreenTimeoutInMinutes 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / 속성/ScreenTimeout
+### <a name="windows10teamgeneralconfigurationsettingsscreentimeoutinminutes"></a>Windows10TeamGeneralConfiguration.SettingsScreenTimeoutInMinutes 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/Properties/ScreenTimeout
 
-#### <a name="windows10teamgeneralconfigurationsettingssessiontimeoutinminutes"></a>Windows10TeamGeneralConfiguration.SettingsSessionTimeoutInMinutes 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / 속성/SessionTimeout
+### <a name="windows10teamgeneralconfigurationsettingssessiontimeoutinminutes"></a>Windows10TeamGeneralConfiguration.SettingsSessionTimeoutInMinutes 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/Properties/SessionTimeout
 
-#### <a name="windows10teamgeneralconfigurationsettingssleeptimeoutinminutes"></a>Windows10TeamGeneralConfiguration.SettingsSleepTimeoutInMinutes 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: / 속성/SleepTimeout
+### <a name="windows10teamgeneralconfigurationsettingssleeptimeoutinminutes"></a>Windows10TeamGeneralConfiguration.SettingsSleepTimeoutInMinutes 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/Properties/SleepTimeout
 
-#### <a name="windows10teamgeneralconfigurationwelcomescreenbackgroundimageurl"></a>Windows10TeamGeneralConfiguration.WelcomeScreenBackgroundImageUrl 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: /InBoxApps/Welcome/CurrentBackgroundPath
+### <a name="windows10teamgeneralconfigurationwelcomescreenbackgroundimageurl"></a>Windows10TeamGeneralConfiguration.WelcomeScreenBackgroundImageUrl 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/InBoxApps/Welcome/CurrentBackgroundPath
 
-#### <a name="windows10teamgeneralconfigurationwelcomescreenblockautomaticwakeup"></a>Windows10TeamGeneralConfiguration.WelcomeScreenBlockAutomaticWakeUp 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: /InBoxApps/Welcome/AutoWakeScreen
+### <a name="windows10teamgeneralconfigurationwelcomescreenblockautomaticwakeup"></a>Windows10TeamGeneralConfiguration.WelcomeScreenBlockAutomaticWakeUp 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/InBoxApps/Welcome/AutoWakeScreen
 
-#### <a name="windows10teamgeneralconfigurationwelcomescreenmeetinginformation"></a>Windows10TeamGeneralConfiguration.WelcomeScreenMeetingInformation 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
-**URI 오프셋**: /InBoxApps/Welcome/MeetingInfoOption
+### <a name="windows10teamgeneralconfigurationwelcomescreenmeetinginformation"></a>Windows10TeamGeneralConfiguration.WelcomeScreenMeetingInformation 
+**CSP**:./Vendor/MSFT/SurfaceHub  
+**오프셋 URI**:/InBoxApps/Welcome/MeetingInfoOption
 
-#### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectionoffboardingblob"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOffboardingBlob 
+### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectionoffboardingblob"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOffboardingBlob 
 **CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
-**URI 오프셋**: /Offboarding 
+**오프셋 URI**:/Offboarding 
 
-#### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectionoffboardingfilename"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOffboardingFilename
+### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectionoffboardingfilename"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOffboardingFilename
 **CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
-**URI 오프셋**: /Offboarding 
+**오프셋 URI**:/Offboarding 
 
-#### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectiononboardingblob"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOnboardingBlob 
+### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectiononboardingblob"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOnboardingBlob 
 **CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
-**URI 오프셋**: /Onboarding 
+**오프셋 URI**:/온 보 딩 
 
-#### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectiononboardingfilename"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOnboardingFilename 
+### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectiononboardingfilename"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOnboardingFilename 
 **CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
-**URI 오프셋**: /Onboarding 
+**오프셋 URI**:/온 보 딩 
 
-#### <a name="windowsdefenderadvancedthreatprotectionconfigurationallowsamplesharing"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AllowSampleSharing 
+### <a name="windowsdefenderadvancedthreatprotectionconfigurationallowsamplesharing"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AllowSampleSharing 
 **CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
-**URI 오프셋**: / 구성/SampleSharing
+**오프셋 URI**:/Configuration/SampleSharing
 
-#### <a name="windowsdefenderadvancedthreatprotectionconfigurationenableexpeditedtelemetryreporting"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.EnableExpeditedTelemetryReporting 
+### <a name="windowsdefenderadvancedthreatprotectionconfigurationenableexpeditedtelemetryreporting"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.EnableExpeditedTelemetryReporting 
 **CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
-**URI 오프셋**: / 구성/TelemetryReportingFrequency
+**오프셋 URI**:/Configuration/TelemetryReportingFrequency
 
-#### <a name="windowsdeliveryoptimizationconfigurationdeliveryoptimizationmode"></a>WindowsDeliveryOptimizationConfiguration.DeliveryOptimizationMode 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeliveryOptimization/DODownloadMode
+### <a name="windowsdeliveryoptimizationconfigurationdeliveryoptimizationmode"></a>WindowsDeliveryOptimizationConfiguration.DeliveryOptimizationMode 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/DeliveryOptimization/DODownloadMode
 
-#### <a name="windowsidentityprotectionconfigurationenhancedantispoofingforfacialfeaturesenabled"></a>WindowsIdentityProtectionConfiguration.EnhancedAntiSpoofingForFacialFeaturesEnabled 
+### <a name="windowsidentityprotectionconfigurationenhancedantispoofingforfacialfeaturesenabled"></a>WindowsIdentityProtectionConfiguration.EnhancedAntiSpoofingForFacialFeaturesEnabled 
 **CSP**: ./Device/Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / 생체 인식 FacialFeaturesUseEnhancedAntiSpoofing
+**오프셋 URI**:/Biometrics/FacialFeaturesUseEnhancedAntiSpoofing
 
-#### <a name="windowsidentityprotectionconfigurationpinexpirationindays"></a>WindowsIdentityProtectionConfiguration.PinExpirationInDays 
+### <a name="windowsidentityprotectionconfigurationpinexpirationindays"></a>WindowsIdentityProtectionConfiguration.PinExpirationInDays 
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} 만료 PINComplexity/정책 / /
+**오프셋 URI**:/{AADTenantId}/Policies/PINComplexity/Expiration
 
-#### <a name="windowsidentityprotectionconfigurationpinlowercasecharactersusage"></a>WindowsIdentityProtectionConfiguration.PinLowercaseCharactersUsage 
+### <a name="windowsidentityprotectionconfigurationpinlowercasecharactersusage"></a>WindowsIdentityProtectionConfiguration.PinLowercaseCharactersUsage 
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/PINComplexity/LowercaseLetters
+**오프셋 URI**:/{AADTenantId}/Policies/PINComplexity/LowercaseLetters
 
-#### <a name="windowsidentityprotectionconfigurationpinmaximumlength"></a>WindowsIdentityProtectionConfiguration.PinMaximumLength 
+### <a name="windowsidentityprotectionconfigurationpinmaximumlength"></a>WindowsIdentityProtectionConfiguration.PinMaximumLength 
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/PINComplexity/MaximumPINLength
+**오프셋 URI**:/{AADTenantId}/Policies/PINComplexity/MaximumPINLength
 
-#### <a name="windowsidentityprotectionconfigurationpinminimumlength"></a>WindowsIdentityProtectionConfiguration.PinMinimumLength 
+### <a name="windowsidentityprotectionconfigurationpinminimumlength"></a>WindowsIdentityProtectionConfiguration.PinMinimumLength 
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/PINComplexity/MinimumPINLength
+**오프셋 URI**:/{AADTenantId}/Policies/PINComplexity/MinimumPINLength
 
-#### <a name="windowsidentityprotectionconfigurationpinpreviousblockcount"></a>WindowsIdentityProtectionConfiguration.PinPreviousBlockCount 
+### <a name="windowsidentityprotectionconfigurationpinpreviousblockcount"></a>WindowsIdentityProtectionConfiguration.PinPreviousBlockCount 
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/PINComplexity/기록
+**오프셋 URI**:/{AADTenantId}/Policies/PINComplexity/History
 
-#### <a name="windowsidentityprotectionconfigurationpinrecoveryenabled"></a>WindowsIdentityProtectionConfiguration.PinRecoveryEnabled 
+### <a name="windowsidentityprotectionconfigurationpinrecoveryenabled"></a>WindowsIdentityProtectionConfiguration.PinRecoveryEnabled 
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/EnablePinRecovery
+**오프셋 URI**:/{AADTenantId}/Policies/EnablePinRecovery
 
-#### <a name="windowsidentityprotectionconfigurationpinspecialcharactersusage"></a>WindowsIdentityProtectionConfiguration.PinSpecialCharactersUsage 
+### <a name="windowsidentityprotectionconfigurationpinspecialcharactersusage"></a>WindowsIdentityProtectionConfiguration.PinSpecialCharactersUsage 
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/PINComplexity/SpecialCharacters
+**오프셋 URI**:/{AADTenantId}/Policies/PINComplexity/SpecialCharacters
 
-#### <a name="windowsidentityprotectionconfigurationpinuppercasecharactersusage"></a>WindowsIdentityProtectionConfiguration.PinUppercaseCharactersUsage
+### <a name="windowsidentityprotectionconfigurationpinuppercasecharactersusage"></a>WindowsIdentityProtectionConfiguration.PinUppercaseCharactersUsage
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/PINComplexity/UppercaseLetters
+**오프셋 URI**:/{AADTenantId}/Policies/PINComplexity/UppercaseLetters
 
-#### <a name="windowsidentityprotectionconfigurationsecuritydevicerequired"></a>WindowsIdentityProtectionConfiguration.SecurityDeviceRequired 
+### <a name="windowsidentityprotectionconfigurationsecuritydevicerequired"></a>WindowsIdentityProtectionConfiguration.SecurityDeviceRequired 
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/RequireSecurityDevice
+**오프셋 URI**:/{AADTenantId}/Policies/RequireSecurityDevice
 
-#### <a name="windowsidentityprotectionconfigurationunlockwithbiometricsenabled"></a>WindowsIdentityProtectionConfiguration.UnlockWithBiometricsEnabled 
+### <a name="windowsidentityprotectionconfigurationunlockwithbiometricsenabled"></a>WindowsIdentityProtectionConfiguration.UnlockWithBiometricsEnabled 
 **CSP**: ./Device/Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / 생체 인식 UseBiometrics
+**오프셋 URI**:/Biometrics/UseBiometrics
 
-#### <a name="windowsidentityprotectionconfigurationusecertificatesforonpremisesauthenabled"></a>WindowsIdentityProtectionConfiguration.UseCertificatesForOnPremisesAuthEnabled 
+### <a name="windowsidentityprotectionconfigurationusecertificatesforonpremisesauthenabled"></a>WindowsIdentityProtectionConfiguration.UseCertificatesForOnPremisesAuthEnabled 
 **CSP**: ./Device/Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/UseCertificateForOnPremAuth
+**오프셋 URI**:/{AADTenantId}/Policies/UseCertificateForOnPremAuth
 
-#### <a name="windowsidentityprotectionconfigurationwindowshelloforbusinessblocked"></a>WindowsIdentityProtectionConfiguration.WindowsHelloForBusinessBlocked 
+### <a name="windowsidentityprotectionconfigurationwindowshelloforbusinessblocked"></a>WindowsIdentityProtectionConfiguration.WindowsHelloForBusinessBlocked 
 **CSP**: ./Vendor/MSFT/PassportForWork  
-**URI 오프셋**: / {0} AADTenantId} / 정책/UsePassportForWork
+**오프셋 URI**:/{AADTenantId}/Policies/UsePassportForWork
 
-#### <a name="windowskioskconfigurationedgekioskenablepublicbrowsing"></a>WindowsKioskConfiguration.EdgeKioskEnablePublicBrowsing 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/ConfigureKioskMode
+### <a name="windowskioskconfigurationedgekioskenablepublicbrowsing"></a>WindowsKioskConfiguration.EdgeKioskEnablePublicBrowsing 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/ConfigureKioskMode
 
-#### <a name="windowskioskconfigurationedgekioskresetafteridletimeinminutes"></a>WindowsKioskConfiguration.EdgeKioskResetAfterIdleTimeInMinutes 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Browser/ConfigureKioskResetAfterIdleTimeout
+### <a name="windowskioskconfigurationedgekioskresetafteridletimeinminutes"></a>WindowsKioskConfiguration.EdgeKioskResetAfterIdleTimeInMinutes 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Browser/ConfigureKioskResetAfterIdleTimeout
 
-#### <a name="windowskioskconfigurationkioskbrowserblockedurlexceptions"></a>WindowsKioskConfiguration.KioskBrowserBlockedUrlExceptions 
+### <a name="windowskioskconfigurationkioskbrowserblockedurlexceptions"></a>WindowsKioskConfiguration.KioskBrowserBlockedUrlExceptions 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/KioskBrowser/BlockedUrlExceptions
+**오프셋 URI**:/Config/KioskBrowser/BlockedUrlExceptions
 
-#### <a name="windowskioskconfigurationkioskbrowserblockedurls"></a>WindowsKioskConfiguration.KioskBrowserBlockedURLs 
+### <a name="windowskioskconfigurationkioskbrowserblockedurls"></a>WindowsKioskConfiguration.KioskBrowserBlockedURLs 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/KioskBrowser/BlockedUrls
+**오프셋 URI**:/Config/KioskBrowser/BlockedUrls
 
-#### <a name="windowskioskconfigurationkioskbrowserdefaulturl"></a>WindowsKioskConfiguration.KioskBrowserDefaultUrl 
+### <a name="windowskioskconfigurationkioskbrowserdefaulturl"></a>WindowsKioskConfiguration.KioskBrowserDefaultUrl 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/KioskBrowser/DefaultUrl
+**오프셋 URI**:/Config/KioskBrowser/DefaultUrl
 
-#### <a name="windowskioskconfigurationkioskbrowserenableendsessionbutton"></a>WindowsKioskConfiguration.KioskBrowserEnableEndSessionButton 
+### <a name="windowskioskconfigurationkioskbrowserenableendsessionbutton"></a>WindowsKioskConfiguration.KioskBrowserEnableEndSessionButton 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/KioskBrowser/EnableEndSessionButton
+**오프셋 URI**:/Config/KioskBrowser/EnableEndSessionButton
 
-#### <a name="windowskioskconfigurationkioskbrowserenablehomebutton"></a>WindowsKioskConfiguration.KioskBrowserEnableHomeButton 
+### <a name="windowskioskconfigurationkioskbrowserenablehomebutton"></a>WindowsKioskConfiguration.KioskBrowserEnableHomeButton 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/KioskBrowser/EnableHomeButton
+**오프셋 URI**:/Config/KioskBrowser/EnableHomeButton
 
-#### <a name="windowskioskconfigurationkioskbrowserenablenavigationbuttons"></a>WindowsKioskConfiguration.KioskBrowserEnableNavigationButtons 
+### <a name="windowskioskconfigurationkioskbrowserenablenavigationbuttons"></a>WindowsKioskConfiguration.KioskBrowserEnableNavigationButtons 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/KioskBrowser/EnableNavigationButtons
+**오프셋 URI**:/Config/KioskBrowser/EnableNavigationButtons
 
-#### <a name="windowskioskconfigurationkioskbrowserrestartonidletimeinminutes"></a>WindowsKioskConfiguration.KioskBrowserRestartOnIdleTimeInMinutes 
+### <a name="windowskioskconfigurationkioskbrowserrestartonidletimeinminutes"></a>WindowsKioskConfiguration.KioskBrowserRestartOnIdleTimeInMinutes 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/KioskBrowser/KioskBrowserRestartOnIdleTimeInMinutes
+**오프셋 URI**:/Config/KioskBrowser/KioskBrowserRestartOnIdleTimeInMinutes
 
-#### <a name="windowsupdateforbusinessconfigurationautomaticupdatemode"></a>WindowsUpdateForBusinessConfiguration.AutomaticUpdateMode 
+### <a name="windowsupdateforbusinessconfigurationautomaticupdatemode"></a>WindowsUpdateForBusinessConfiguration.AutomaticUpdateMode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/AllowAutoUpdate
+**오프셋 URI**:/Suser/sv/dv/ds
 
-#### <a name="windowsupdateforbusinessconfigurationautorestartnotificationdismissal"></a>WindowsUpdateForBusinessConfiguration.AutoRestartNotificationDismissal 
+### <a name="windowsupdateforbusinessconfigurationautorestartnotificationdismissal"></a>WindowsUpdateForBusinessConfiguration.AutoRestartNotificationDismissal 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/AutoRestartRequiredNotificationDismissal
+**오프셋 URI**:/Config/Update/AutoRestartRequiredNotificationDismissal
 
-#### <a name="windowsupdateforbusinessconfigurationbusinessreadyupdatesonly"></a>WindowsUpdateForBusinessConfiguration.BusinessReadyUpdatesOnly 
+### <a name="windowsupdateforbusinessconfigurationbusinessreadyupdatesonly"></a>WindowsUpdateForBusinessConfiguration.BusinessReadyUpdatesOnly 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/BranchReadinessLevel
+**오프셋 URI**:/Config/Update/BranchReadinessLevel
 
-#### <a name="windowsupdateforbusinessconfigurationdeliveryoptimizationmode"></a>WindowsUpdateForBusinessConfiguration.DeliveryOptimizationMode 
+### <a name="windowsupdateforbusinessconfigurationdeliveryoptimizationmode"></a>WindowsUpdateForBusinessConfiguration.DeliveryOptimizationMode 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/DeliveryOptimization/DODownloadMode
+**오프셋 URI**:/Config/DeliveryOptimization/DODownloadMode
 
-#### <a name="windowsupdateforbusinessconfigurationdriversexcluded"></a>WindowsUpdateForBusinessConfiguration.DriversExcluded 
+### <a name="windowsupdateforbusinessconfigurationdriversexcluded"></a>WindowsUpdateForBusinessConfiguration.DriversExcluded 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/ExcludeWUDriversInQualityUpdate
+**오프셋 URI**:/Config/Update/ExcludeWUDriversInQualityUpdate
 
-#### <a name="windowsupdateforbusinessconfigurationengagedrestartdeadlineforfeatureupdatesindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartDeadlineForFeatureUpdatesInDays 
+### <a name="windowsupdateforbusinessconfigurationengagedrestartdeadlineforfeatureupdatesindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartDeadlineForFeatureUpdatesInDays 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/EngagedRestartDeadlineForFeatureUpdates
+**오프셋 URI**:/Config/Update/EngagedRestartDeadlineForFeatureUpdates
 
-#### <a name="windowsupdateforbusinessconfigurationengagedrestartdeadlineindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartDeadlineInDays 
+### <a name="windowsupdateforbusinessconfigurationengagedrestartdeadlineindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartDeadlineInDays 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/EngagedRestartDeadline
+**오프셋 URI**:/Config/Update/EngagedRestartDeadline
 
-#### <a name="windowsupdateforbusinessconfigurationengagedrestartsnoozescheduleforfeatureupdatesindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartSnoozeScheduleForFeatureUpdatesInDays 
+### <a name="windowsupdateforbusinessconfigurationengagedrestartsnoozescheduleforfeatureupdatesindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartSnoozeScheduleForFeatureUpdatesInDays 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/EngagedRestartSnoozeScheduleForFeatureUpdates
+**오프셋 URI**:/Config/Update/EngagedRestartSnoozeScheduleForFeatureUpdates
 
-#### <a name="windowsupdateforbusinessconfigurationengagedrestartsnoozescheduleindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartSnoozeScheduleInDays 
+### <a name="windowsupdateforbusinessconfigurationengagedrestartsnoozescheduleindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartSnoozeScheduleInDays 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/EngagedRestartSnoozeSchedule
+**오프셋 URI**:/Config/Update/EngagedRestartSnoozeSchedule
 
-#### <a name="windowsupdateforbusinessconfigurationengagedrestarttransitionscheduleforfeatureupdatesindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartTransitionScheduleForFeatureUpdatesInDays 
+### <a name="windowsupdateforbusinessconfigurationengagedrestarttransitionscheduleforfeatureupdatesindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartTransitionScheduleForFeatureUpdatesInDays 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/EngagedRestartTransitionScheduleForFeatureUpdates
+**오프셋 URI**:/Config/Update/EngagedRestartTransitionScheduleForFeatureUpdates
 
-#### <a name="windowsupdateforbusinessconfigurationengagedrestarttransitionscheduleindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartTransitionScheduleInDays 
+### <a name="windowsupdateforbusinessconfigurationengagedrestarttransitionscheduleindays"></a>WindowsUpdateForBusinessConfiguration.EngagedRestartTransitionScheduleInDays 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/EngagedRestartTransitionSchedule
+**오프셋 URI**:/Config/Update/EngagedRestartTransitionSchedule
 
-#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesdeferralperiodindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesDeferralPeriodInDays 
+### <a name="windowsupdateforbusinessconfigurationfeatureupdatesdeferralperiodindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesDeferralPeriodInDays 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/DeferFeatureUpdatesPeriodInDays
+**오프셋 URI**:/Config/Update/DeferFeatureUpdatesPeriodInDays
 
-#### <a name="windowsupdateforbusinessconfigurationfeatureupdatespaused"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesPaused 
+### <a name="windowsupdateforbusinessconfigurationfeatureupdatespaused"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesPaused 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/PauseFeatureUpdates
+**OFFSET URI**:/Suser/sv\upv\upverfeatureupdate
 
-#### <a name="windowsupdateforbusinessconfigurationfeatureupdatespausestartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesPauseStartDateTime 
+### <a name="windowsupdateforbusinessconfigurationfeatureupdatespausestartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesPauseStartDateTime 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/PauseFeatureUpdatesStartTime
+**오프셋 URI**:/Config/Update/PauseFeatureUpdatesStartTime
 
-#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackStartDateTime
-**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
+### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackStartDateTime
+**CSP**: 해당 없음-Graph API **오프셋 URI**: 해당 없음-Graph API만
 
-#### <a name="windowsupdateforbusinessconfigurationfeatureupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesWillBeRolledBack 
-**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
+### <a name="windowsupdateforbusinessconfigurationfeatureupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesWillBeRolledBack 
+**CSP**: 해당 없음-Graph API **오프셋 URI**: 해당 없음-Graph API만
 
-#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackwindowindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackWindowInDays
-**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
+### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackwindowindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackWindowInDays
+**CSP**: 해당 없음-Graph API **오프셋 URI**: 해당 없음-Graph API만
 
-#### <a name="windowsupdateforbusinessconfigurationinstallationschedule"></a>WindowsUpdateForBusinessConfiguration.InstallationSchedule
-**CSP**:./Device/Vendor/MSFT/Policy **URI 오프셋**: /Config/Update/ActiveHoursStart /Config/Update/ActiveHoursEnd, /Config/Update/ScheduledInstallDay, /Config/Update/ScheduledInstallTime
+### <a name="windowsupdateforbusinessconfigurationinstallationschedule"></a>WindowsUpdateForBusinessConfiguration.InstallationSchedule
+**CSP**:./DEVICE/VENDOR/MSFT/POLICY **Offset URI**:/Config/Update/ActiveHoursStart,/Config/Update/ActiveHoursEnd,/Config/Update/ScheduledInstallDay,/Config/Update/ScheduledInstallTime
 
-#### <a name="windowsupdateforbusinessconfigurationmicrosoftupdateserviceallowed"></a>WindowsUpdateForBusinessConfiguration.MicrosoftUpdateServiceAllowed 
+### <a name="windowsupdateforbusinessconfigurationmicrosoftupdateserviceallowed"></a>WindowsUpdateForBusinessConfiguration.MicrosoftUpdateServiceAllowed 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/AllowMUUpdateService
+**오프셋 URI**:/Config/Update/AllowMUUpdateService
 
-#### <a name="windowsupdateforbusinessconfigurationpreviewbuildsetting"></a>WindowsUpdateForBusinessConfiguration.PreviewBuildSetting 
-**CSP**: ./Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/ManagePreviewBuilds
+### <a name="windowsupdateforbusinessconfigurationpreviewbuildsetting"></a>WindowsUpdateForBusinessConfiguration.PreviewBuildSetting 
+**CSP**:./Vendor/MSFT/Policy  
+**오프셋 URI**:/Config/Update/ManagePreviewBuilds
 
-#### <a name="windowsupdateforbusinessconfigurationqualityupdatesdeferralperiodindays"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesDeferralPeriodInDays 
+### <a name="windowsupdateforbusinessconfigurationqualityupdatesdeferralperiodindays"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesDeferralPeriodInDays 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/DeferQualityUpdatesPeriodInDays
+**오프셋 URI**:/Config/Update/DeferQualityUpdatesPeriodInDays
 
-#### <a name="windowsupdateforbusinessconfigurationqualityupdatespaused"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesPaused 
+### <a name="windowsupdateforbusinessconfigurationqualityupdatespaused"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesPaused 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/PauseQualityUpdates
+**오프셋 URI**:/Config/Update/PauseQualityUpdates
 
-#### <a name="windowsupdateforbusinessconfigurationqualityupdatespausestartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesPauseStartDateTime 
+### <a name="windowsupdateforbusinessconfigurationqualityupdatespausestartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesPauseStartDateTime 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/PauseQualityUpdatesStartTime
+**오프셋 URI**:/Config/Update/PauseQualityUpdatesStartTime
 
-#### <a name="windowsupdateforbusinessconfigurationqualityupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesRollbackStartDateTime
-**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
+### <a name="windowsupdateforbusinessconfigurationqualityupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesRollbackStartDateTime
+**CSP**: 해당 없음-Graph API **오프셋 URI**: 해당 없음-Graph API만
 
-#### <a name="windowsupdateforbusinessconfigurationqualityupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesWillBeRolledBack 
-**CSP**: 해당 없음-Graph API **URI 오프셋**: 해당 없음-Graph API
+### <a name="windowsupdateforbusinessconfigurationqualityupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesWillBeRolledBack 
+**CSP**: 해당 없음-Graph API **오프셋 URI**: 해당 없음-Graph API만
 
-#### <a name="windowsupdateforbusinessconfigurationscheduleimminentrestartwarninginminutes"></a>WindowsUpdateForBusinessConfiguration.ScheduleImminentRestartWarningInMinutes 
+### <a name="windowsupdateforbusinessconfigurationscheduleimminentrestartwarninginminutes"></a>WindowsUpdateForBusinessConfiguration.ScheduleImminentRestartWarningInMinutes 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/ScheduleImminentRestartWarning
+**오프셋 URI**:/Config/Update/ScheduleImminentRestartWarning
 
-#### <a name="windowsupdateforbusinessconfigurationschedulerestartwarninginhours"></a>WindowsUpdateForBusinessConfiguration.ScheduleRestartWarningInHours 
+### <a name="windowsupdateforbusinessconfigurationschedulerestartwarninginhours"></a>WindowsUpdateForBusinessConfiguration.ScheduleRestartWarningInHours 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/ScheduleRestartWarning
+**오프셋 URI**:/Config/Update/ScheduleRestartWarning
 
-#### <a name="windowsupdateforbusinessconfigurationskipchecksbeforerestart"></a>WindowsUpdateForBusinessConfiguration.SkipChecksBeforeRestart 
+### <a name="windowsupdateforbusinessconfigurationskipchecksbeforerestart"></a>WindowsUpdateForBusinessConfiguration.SkipChecksBeforeRestart 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/SetEDURestart
+**오프셋 URI**:/Config/Update/SetEDURestart
 
-#### <a name="windowsupdateforbusinessconfigurationupdateweeks"></a>WindowsUpdateForBusinessConfiguration.UpdateWeeks 
+### <a name="windowsupdateforbusinessconfigurationupdateweeks"></a>WindowsUpdateForBusinessConfiguration.UpdateWeeks 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/ScheduledInstallEveryWeek /Config/Update/ScheduledInstallFirstWeek, /Config/Update/ScheduledInstallFourthWeek, /Config/Update/ScheduledInstallSecondWeek, /Config/업데이트 / ScheduledInstallThirdWeek
+**OFFSET URI**:/Config/Update/ScheduledInstallEveryWeek,/Config/Update/ScheduledInstallFirstWeek,/Config/Update/ScheduledInstallFourthWeek,/Config/Update/ScheduledInstallSecondWeek,/Config/Update/ScheduledInstallThirdWeek
 
-#### <a name="windowsupdateforbusinessconfigurationuserpauseaccess"></a>WindowsUpdateForBusinessConfiguration.UserPauseAccess 
+### <a name="windowsupdateforbusinessconfigurationuserpauseaccess"></a>WindowsUpdateForBusinessConfiguration.UserPauseAccess 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI 오프셋**: /Config/Update/SetDisablePauseUXAccess
+**오프셋 URI**:/Config/Update/SetDisablePauseUXAccess
 
 
 ## <a name="next-steps"></a>다음 단계
 
 - [장치 구성 개요](device-profiles.md)
-- [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (다른 Docs 사이트 열림)
+- [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (다른 문서 사이트 열기)
