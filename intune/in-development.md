@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
+ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494252"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68341353"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>개발 중인 Microsoft Intune 기능 - 2019년 7월
 
@@ -59,11 +59,11 @@ ms.locfileid: "67494252"
 ## <a name="app-management"></a>앱 관리
 
 
-### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>사용자 및 그룹에 대 한 사용자 지정된 알림    <!-- 16766574   -->
-곧 iOS 및 Android 장치의 Intune로 관리 하는 사용자에 게 회사 포털 응용 프로그램에서 사용자 지정 임시 푸시 알림을 보낼 수 있습니다. 이러한 사용자 지정 알림을 특정 Intune 기능에 연결 되지 않습니다 및 일부를 전송 하려는 일반 알림 포함 해야 하는 목적을 위해 사용할 수 있습니다 또는 모든 직원입니다.  
+### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>사용자 및 그룹에 대 한 사용자 지정 알림    <!-- 16766574   -->
+곧 회사 포털 응용 프로그램에서 Intune으로 관리 하는 iOS 및 Android 장치 사용자에 게 사용자 지정 임시 푸시 알림을 보낼 수 있습니다. 이러한 사용자 지정 알림은 특정 Intune 기능에 연결 되지 않으며, 일부 또는 모든 직원에 게 전송 하려는 일반적인 알림을 포함 하 여 필요한 모든 용도에 사용할 수 있습니다.  
 
-### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>조직 계정에 대 한 앱 알림 콘텐츠를 구성 합니다. <!-- 2576686 -->
-Android 및 iOS 장치에서 Intune 앱 보호 정책 (APP) 하면 제어 앱 알림 콘텐츠를 조직 계정에 대 한 합니다. 이 기능은 지원 응용 프로그램에서 필요 하 고 사용 하도록 설정 하는 앱의 모든 응용 프로그램에 사용할 수 없습니다. APP에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
+### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>조직 계정에 대 한 앱 알림 콘텐츠 구성 <!-- 2576686 -->
+Android 및 iOS 장치에서 Intune 앱 보호 정책 (앱)을 사용 하면 조직 계정에 대 한 앱 알림 콘텐츠를 제어할 수 있습니다. 이 기능을 사용 하려면 응용 프로그램에 대 한 지원이 필요 하며, 응용 프로그램을 사용 하도록 설정 된 응용 프로그램에는이 기능을 APP에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Android 작업 프로필에 사용할 수 있는 Google Play 앱 보고 <!-- 3041956  -->
 Android 작업 프로필 디바이스에서 사용할 수 있는 앱 설치의 경우 앱 설치 상태와, 관리형 Google Play 앱의 설치된 버전을 확인할 수 있습니다. 자세한 정보는 [앱 보호 정책 모니터링 방법](app-protection-policies-monitor.md), [Intune으로 Android 작업 프로필 디바이스 관리](android-enterprise-overview.md) 및 [관리형 Google Play 앱 형식](apps-add-android-for-work.md#managed-google-play-app-type)을 참조하세요.
@@ -87,19 +87,13 @@ Windows 10 다비이스 구성 프로필을 만듭니다(플랫폼용 **디바�
 적용 대상: 
 - Windows 10 이상
 
-### <a name="administrative-templates-for-group-policy---------3510695---"></a>그룹 정책 관리 템플릿     <!--  3510695 -->
-클라우드에서 디바이스 보안을 높이기 위해 Intune을 사용하여 Windows PC용 그룹 정책 설정 선택을 구성할 수 있는 관리 템플릿을 출시할 것입니다.  이러한 템플릿은 정책 CSP(구성 서비스 공급자)를 사용하여 Office, Windows 및 OneDrive로부터 최대 2,500개의 추가 설정을 제공합니다.
-
-### <a name="manage-filevault-for-macos-------3858502--1210104-----"></a>MacOS에 대해 FileVault를 관리 합니다.   <!--  3858502 + 1210104   -->
-Intune endpoint protection 장치 구성 프로필을 사용 하 여 macOS 장치에 대해 FileVault 키 암호화를 관리할 수 있습니다. 보기 및 회사 장치의 암호화 키 회전의 에스크로 포함 됩니다. 최종 사용자가 회사 포털 웹 사이트를 통해 해당 키를 검색할 수 있습니다.
-
 ### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender 방화벽에 대한 고급 설정   <!--  1311949     -->
 곧 공개 미리 보기로 Intune을 사용하여 Windows Defender용 클라이언트의 사용자 지정 방화벽 규칙을 관리할 수 있습니다.  
 
-### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise에 대 한 OEMConfig 프로필을 만들 때 새 구성 디자이너 <!-- 3712769  -->
-Intune에서 OEMConfig 앱을 사용 하는 장치 구성 프로필을 만들 수 있습니다 (장치 구성 > 프로필 > 프로필 만들기 > 플랫폼에 대 한 Android 엔터프라이즈 > 프로필 유형에 대해 OEMConfig). 이렇게 하면 템플릿 및 변경 하는 값을 사용 하 여 JSON 편집기를 엽니다. 이 업데이트는 제목, 설명 등을 포함 하 여 앱에 포함 된 세부 정보를 표시 하는 향상 된 사용자 환경 사용 하 여 구성 디자이너를 포함 합니다. JSON 편집기를 계속 사용할 수 있으며 구성 디자이너에서 수행한 모든 변경 내용을 보여 줍니다.
+### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise에 대 한 OEMConfig 프로필을 만들 때의 새 구성 디자이너 <!-- 3712769  -->
+Intune에서 OEMConfig 앱 (장치 구성 > 프로필을 사용 하는 장치 구성 프로필을 만들 수 있습니다 > 프로필 > Android enterprise for platform >에 대 한 프로필 형식). 이 작업을 수행 하면 템플릿 및 값을 변경할 수 있는 JSON 편집기가 열립니다. 이 업데이트에는 제목, 설명 등을 포함 하 여 앱에 포함 된 세부 정보를 표시 하는 향상 된 사용자 환경을 제공 하는 구성 디자이너가 포함 되어 있습니다. JSON 편집기는 계속 사용할 수 있으며, 구성 디자이너에서 변경한 내용을 표시 합니다.
 
-현재 설정을 보려면로 이동 [사용 하 여 OEMConfig 사용 하 여 Android 엔터프라이즈 장치를 관리 하 고](android-oem-configuration-overview.md)입니다.
+현재 설정을 확인 하려면 OEMConfig를 사용 하 여 [Android Enterprise 장치 사용 및 관리](android-oem-configuration-overview.md)로 이동 합니다.
 
 적용 대상: Android 엔터프라이즈
 
@@ -107,18 +101,18 @@ Intune에서 OEMConfig 앱을 사용 하는 장치 구성 프로필을 만들 �
 <!-- ***********************************************-->
 ## <a name="device-management"></a>디바이스 관리
 
-### <a name="improve-device-location---3855417---"></a>장치 위치를 개선 합니다.<!-- 3855417 -->
-사용 하 여 장치 정확한 좌표 맞게 확대/축소할 수는 **장치 찾기** 작업 합니다. 분실된 한 iOS 장치를 찾는 방법에 대 한 자세한 내용은 참조 하세요. [분실 iOS 장치 찾기](device-locate.md)합니다.
+### <a name="improve-device-location---3855417---"></a>장치 위치 개선<!-- 3855417 -->
+**장치 찾기** 작업을 사용 하 여 장치의 정확한 좌표를 확대할 수 있습니다. 분실 한 iOS 장치를 찾는 방법에 대 한 자세한 내용은 [분실 한 ios 장치 찾기](device-locate.md)를 참조 하세요.
 
-### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>30 일 아래로 자동 장치 정리 시간 제한 구성 <!--4231059  -->
-마지막 로그인 이후 30 일 (최대 90 일 현재) 대신 짧게 자동 장치 정리 시간 제한을 설정할 수 있습니다. 이렇게 하려면로 이동 **Intune** > **장치** > **설치** > **장치 정리 등록 규칙**합니다.
+### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>자동 장치 정리 시간 제한을 30 일로 구성 <!--4231059  -->
+자동 장치 정리 시간 제한은 마지막 로그인 후 30 일 (현재 제한인 90 일 대신)을 30 일로 설정할 수 있습니다. 이렇게 하려면 **Intune** > **장치** >  **설정장치** > **정리 규칙**으로 이동 합니다.
 
 
 <!-- ***********************************************-->
 ## <a name="security"></a>보안
 
-### <a name="import-and-export-security-baselines------3408610------------"></a>가져오기 및 보안 기준 내보내기    <!--3408610          -->  
-기능을 사용자와 사용자 지정을 수행 하 고 Intune 환경 간에 공유할 수 있도록 보안 기준의 내보내고 추가 될 예정입니다.
+### <a name="import-and-export-security-baselines------3408610------------"></a>보안 기준 가져오기 및 내보내기    <!--3408610          -->  
+사용자 지정을 사용 하 고 Intune 환경 사이에서 공유할 수 있도록 보안 기준을 내보내고 가져오는 기능을 추가 하 고 있습니다.
 
 
 
