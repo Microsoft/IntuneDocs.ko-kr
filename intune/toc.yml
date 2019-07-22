@@ -382,6 +382,8 @@
               href: privacy-data-view-correct.md
             - name: '감사, 내보내기, 삭제'
               href: privacy-data-audit-export-delete.md
+        - name: 디바이스 암호화
+          href: encrypt-devices.md
         - name: 조건부 액세스
           href: conditional-access.md
           items:
