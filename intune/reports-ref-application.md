@@ -17,54 +17,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e90d422afb8ebbd356031d4815708b5b0768f0
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713133"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313808"
 ---
 # <a name="reference-for-application-entities"></a>애플리케이션 엔터티에 대한 참조
 
 **애플리케이션** 범주는 다음과 같은 정보를 추적하는 모바일 장치에 대한 엔터티를 포함합니다.
 
-  - 앱 버전
-  - 앱의 설치 원본
-  - 앱을 만든 개발자의 유형
-  - 앱에 대한 관리되는 소프트웨어 유형. 예: **사이드카** 또는 **데스크톱**
-  - 앱의 VPP(Volume Purchasing Program) 상태
+- 앱 버전
+- 앱의 설치 원본
+- 앱을 만든 개발자의 유형
+- 앱에 대한 관리되는 소프트웨어 유형. 예: **사이드카** 또는 **데스크톱**
+- 앱의 VPP(Volume Purchasing Program) 상태
 
-## <a name="apprevision"></a>AppRevision
+## <a name="apprevisions"></a>appRevisions
 
-**AppRevision** 엔터티는 앱의 모든 버전을 나열합니다.
+**appRevision** 엔터티는 앱의 모든 버전을 나열합니다.
 
 | 속성  | 설명 | 예제 |
 |---------|------------|--------|
-| AppKey |앱에 대한 고유 식별자 |123 |
-| ApplicationId |앱의 고유 식별자 - AppKey와 유사하지만 이 키는 자연어입니다. |b66bc706-ffff-7437-0340-032819502773 |
+| appKey |앱에 대한 고유 식별자 |123 |
+| applicationId |앱의 고유 식별자 - AppKey와 유사하지만 이 키는 자연어입니다. |b66bc706-ffff-7437-0340-032819502773 |
 | 수정 |이진 파일을 업로드하는 동안 관리자가 설명한 버전 |2 |
-| 제목 |앱의 제목 |Excel |
+| title |앱의 제목 |Excel |
 | 게시자 |앱의 게시자 |Microsoft |
-| UploadState |앱의 업로드 상태 |1 |
-| AppTypeKey |다음 섹션에 설명된 AppType에 대한 참조입니다. | |
-| VppProgramTypeKey |아래에 설명된 VppProgramType에 대한 참조 | |
-| CreationTime |해당 수정 버전을 만든 시간 |11/23/2016 12:00:00 AM |
-| ModifiedTime |해당 수정 버전과 관련된 항목을 마지막으로 변경한 시간 |11/23/2016 12:00:00 AM |
-| Size |이진 파일의 크기 | |
-| StartDateInclusiveUTC |데이터 웨어하우스에서 해당 앱의 수정 버전을 만든 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
-| EndDateExclusiveUTC |해당 앱의 수정 버전이 더 이상 사용되지 않는 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
-| IsCurrent |해당 앱의 수정 버전이 데이터 웨어하우스에 있는지 여부를 나타냅니다. |True/False |
-| RowLastModifiedDateTimeUTC |데이터 웨어하우스에서 해당 앱의 버전을 마지막으로 수정한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
+| uploadState |앱의 업로드 상태 |1 |
+| appTypeKey |다음 섹션에 설명된 AppType에 대한 참조입니다. | |
+| vppProgramTypeKey |아래에 설명된 VppProgramType에 대한 참조 | |
+| creationTime |해당 수정 버전을 만든 시간 |11/23/2016 12:00:00 AM |
+| modifiedTime |해당 수정 버전과 관련된 항목을 마지막으로 변경한 시간 |11/23/2016 12:00:00 AM |
+| 크기 |이진 파일의 크기 | |
+| startDateInclusiveUTC |데이터 웨어하우스에서 해당 앱의 수정 버전을 만든 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
+| endDateExclusiveUTC |해당 앱의 수정 버전이 더 이상 사용되지 않는 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
+| isCurrent |해당 앱의 수정 버전이 데이터 웨어하우스에 있는지 여부를 나타냅니다. |True/False |
+| rowLastModifiedDateTimeUTC |데이터 웨어하우스에서 해당 앱의 버전을 마지막으로 수정한 UTC 날짜 및 시간 |11/23/2016 12:00:00 AM |
 
-## <a name="apptypes"></a>AppTypes
+## <a name="apptypes"></a>appTypes
 
-**AppTypes** 엔터티는 앱의 설치 원본을 나열합니다.
+**appType** 엔터티는 앱의 설치 원본을 나열합니다.
 
 | 속성  | 설명 |
 |---------|------------|
-| AppTypeID |형식에 대한 ID |
-| AppTypeKey |키에 대한 대리 키 |
-| AppTypeName |앱 유형 |
+| appTypeID |형식에 대한 ID |
+| appTypeKey |키에 대한 대리 키 |
+| appTypeName |앱 유형 |
 
 ### <a name="example"></a>예제
 
@@ -85,15 +85,15 @@ ms.locfileid: "67713133"
 | 12 |Windows Phone LOB 앱 | Windows Phone 기간 업무 앱 |
 
 
-## <a name="vppprogramtypes"></a>VppProgramTypes
+## <a name="vppprogramtypes"></a>vppProgramTypes
 
-**VppProgramTypes** 엔터티는 앱에 대해 가능한 VPP 프로그램 유형을 나열합니다.
+**vppProgramType** 엔터티는 앱에 대해 가능한 VPP 프로그램 유형을 나열합니다.
 
 | 속성  | 설명 |
 |---------|------------|
 | VppProgramTypeID | 형식에 대한 ID |
-| VppProgramTypeKey | 키에 대한 서로게이트 키 |
-| VppProgramTypeName | VPP 프로그램 유형 |
+| vppProgramTypeKey | 키에 대한 서로게이트 키 |
+| vppProgramTypeName | VPP 프로그램 유형 |
 
 ### <a name="example"></a>예제
 
@@ -105,27 +105,27 @@ ms.locfileid: "67713133"
 
 
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventories"></a>applicationInventories
 
-**ApplicationInventory** 엔터티는 인벤토리 수집 시점에 장치에서 발견된 애플리케이션을 나열합니다.
+**applicationInventory** 엔터티는 인벤토리 수집 시점에 디바이스에서 발견된 애플리케이션을 나열합니다.
 
 | 속성  | 설명 |
 |---------|------------|
-| DeviceKey | Intune 디바이스 ID가 포함된 디바이스 테이블에 대한 참조 |
-| DateKey | 인벤토리의 날짜를 가리키는 날짜 테이블에 대한 참조 |
-| ApplicationName | 응용 프로그램 이름입니다. |
-| ApplicationVersion | 애플리케이션의 버전 |
-| BundleSize | 응용 프로그램의 크기(바이트) |
+| deviceKey | Intune 디바이스 ID가 포함된 디바이스 테이블에 대한 참조 |
+| dateKey | 인벤토리의 날짜를 가리키는 날짜 테이블에 대한 참조 |
+| applicationName | 응용 프로그램 이름입니다. |
+| applicationVersion | 애플리케이션의 버전 |
+| bundleSize | 응용 프로그램의 크기(바이트) |
 
-## <a name="mobileappinstallstate"></a>MobileAppInstallState
+## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-**MobileAppInstallState** 엔터티는 장치, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 애플리케이션의 설치 상태를 나타냅니다.
+**mobileAppInstallState** 엔터티는 디바이스, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 애플리케이션의 설치 상태를 나타냅니다.
 
 | 속성 | 설명 |
 |---|---|
-| AppInstallStateKey | 계정에 대한 앱 설치 상태의 고유 ID입니다. |
-| AppInstallState | 앱 설치 상태의 열거형 값입니다. |
-| AppInstallStateName | 앱 설치 상태의 이름입니다. |
+| appInstallStateKey | 계정에 대한 앱 설치 상태의 고유 ID입니다. |
+| appInstallState | 앱 설치 상태의 열거형 값입니다. |
+| appInstallStateName | 앱 설치 상태의 이름입니다. |
 
 
 
