@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0551327bfe2b320bb91699e1176985bbdf94de92
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 80a5e931589aaf48d99080a35ee2df040d11d201
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045221"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313705"
 ---
 # <a name="reference-for-user-entity"></a>사용자 엔터티 참조
 
 **사용자** 범주에는 데이터 모델의 사용자 속성을 정의하는 **사용자** 엔터티가 포함됩니다.
 
-## <a name="user"></a>사용자
+## <a name="users"></a>사용자
 
 **사용자** 엔터티는 회사 내 할당된 라이선스가 있는 모든 Azure Active Directory(Azure AD) 사용자를 나열합니다.
 
@@ -36,16 +36,16 @@ ms.locfileid: "66045221"
 
 |          속성          |                                                                                                           설명                                                                                                          |                예제               |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
-| UserKey                    | 데이터 웨어하우스의 사용자의 고유 식별자 - 서로게이트 키                                                                                                                                                         | 123                                  |
-| UserId                     | 사용자의 고유 식별자는 UserKey와 비슷하지만 자연 키입니다.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
-| UserEmail                  | 사용자의 이메일 주소                                                                                                                                                                                                     | John@constoso.com                    |
+| userKey                    | 데이터 웨어하우스의 사용자의 고유 식별자 - 서로게이트 키                                                                                                                                                         | 123                                  |
+| userId                     | 사용자의 고유 식별자는 UserKey와 비슷하지만 자연 키입니다.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
+| userEmail                  | 사용자의 이메일 주소                                                                                                                                                                                                     | John@constoso.com                    |
 | userPrincipalName                        | 사용자의 사용자 계정 이름입니다.                                                                                                                                                                                               | John@constoso.com                    |
-| DisplayName                | 사용자의 표시 이름                                                                                                                                                                                                      | John                                 |
-| IntuneLicensed             | 이 사용자의 Intune 라이선스 여부를 나타냅니다.                                                                                                                                                                              | True/False                           |
-| IsDeleted                  | 사용자의 모든 라이선스가 만료되었는지 여부와 이에 따라 사용자가 Intune에서 제거되었는지 여부를 나타냅니다. 단일 레코드의 경우 이 플래그는 변경되지 않습니다. 대신 새 사용자 상태의 새 레코드가 만들어집니다. | True/False                           |
+| displayName                | 사용자의 표시 이름                                                                                                                                                                                                      | John                                 |
+| intuneLicensed             | 이 사용자의 Intune 라이선스 여부를 나타냅니다.                                                                                                                                                                              | True/False                           |
+| isDeleted                  | 사용자의 모든 라이선스가 만료되었는지 여부와 이에 따라 사용자가 Intune에서 제거되었는지 여부를 나타냅니다. 단일 레코드의 경우 이 플래그는 변경되지 않습니다. 대신 새 사용자 상태의 새 레코드가 만들어집니다. | True/False                           |
 | RowLastModifiedDateTimeUTC | 데이터 웨어하우스에서 레코드를 마지막으로 수정한 UTC 날짜 및 시간                                                                                                                                                 | 2016/11/23 0:00                      |
 
 
 ## <a name="next-steps"></a>다음 단계
- - **현재 사용자** 엔터티 컬렉션을 사용하여 사용자 데이터를 현재 활성 상태인 사용자로 제한할 수 있습니다. 자세한 내용은 [현재 사용자 엔터티에 대한 참조](reports-ref-current-user.md)를 참조하세요.
- - 데이터 웨어하우스가 Intune에서 사용자의 수명을 추적하는 방법에 대한 자세한 내용은 [Intune 데이터 웨어하우스의 사용자 수명 표시](reports-ref-user-timeline.md)를 참조하세요.
+- **현재 사용자** 엔터티 컬렉션을 사용하여 사용자 데이터를 현재 활성 상태인 사용자로 제한할 수 있습니다. 자세한 내용은 [현재 사용자 엔터티에 대한 참조](reports-ref-current-user.md)를 참조하세요.
+- 데이터 웨어하우스가 Intune에서 사용자의 수명을 추적하는 방법에 대한 자세한 내용은 [Intune 데이터 웨어하우스의 사용자 수명 표시](reports-ref-user-timeline.md)를 참조하세요.
