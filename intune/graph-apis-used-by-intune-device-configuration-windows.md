@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune에서 장치를 구성 하는 Graph Api-Azure | Microsoft Docs
 titleSuffix: ''
-description: Microsoft Intune에서 장치를 구성할 때 사용 되는 windows CSP와 일치 하는 Windows CSP 및 offset URI와 일치 하는 모든 Graph API 엔터티 목록을 확인 하세요. 공유 Pc, endpoint protection, Windows Defender advanced threat protection, id 보호, Windows 10 팀, 키오스크 및 비즈니스 Windows 업데이트에 대해 일치 하는 API 및 CSP를 참조 하세요.
+description: Microsoft Intune에서 장치를 구성할 때 사용 되는 windows CSP와 일치 하는 Windows CSP 및 offset URI와 일치 하는 모든 Graph API 엔터티 목록을 확인 하세요. 공유 Pc, endpoint protection, Microsoft Defender advanced threat protection, id 보호, Windows 10 팀, 키오스크 및 비즈니스 Windows 업데이트에 대해 일치 하는 API 및 CSP를 참조 하세요.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3732a4539c13ad05ae8c95621246429b7f38987e
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 9db6be9c61455056f7ad32a9dba3fa6be9f6f5c3
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354427"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427276"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Intune에서 사용 되는 Graph Api 및 일치 하는 Windows 10 Csp
 
