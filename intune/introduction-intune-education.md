@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7775a0aec8bdba648cf809e3f797ce5606b2ca4f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fa084d2a52e23273effdfb035b218c8ee1f7f2ab
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047405"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354047"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Intune for Education은 Intune의 전체 디바이스 관리 환경과 어떤 차이가 있을까요?
 
@@ -41,7 +41,7 @@ Intune 및 Intune for Education에서 다음을 수행할 수 있습니다.
 * 사용자가 조직 정보에 액세스하여 이를 공유하는 방법을 제어할 수 있게 하여 조직 정보를 보호합니다.
 * 디바이스와 앱이 보안 요구 사항을 준수하는지 확인합니다.
 
-### <a name="next-steps"></a>다음 단계
-* [Intune의 90일 평가판으로](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1) 제품에 대해 알아보기 이미 액세스 권한이 있는 경우 시작하려면 (https://intuneeducation.portal.azure.com)로 이동합니다.
+## <a name="next-steps"></a>다음 단계
+* [Intune의 90일 평가판으로](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1) 제품에 대해 알아보기 이미 액세스 권한이 있는 경우 시작하려면 (https://intuneeducation.portal.azure.com) 로 이동합니다.
 * [Intune for Education 사용을 시작](/intune-education/what-is-express-configuration)할 수 있는 가장 빠른 방법을 읽어 보세요.
 * Intune의 [기술 요구 사항 및 기능](/intune/supported-devices-browsers)에 대해 자세히 알아보기

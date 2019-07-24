@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883267"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354394"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune에서 eSIM 셀룰러 프로필 구성 - 공개 미리 보기
 
@@ -79,7 +79,7 @@ eSIM 지원 디바이스로 공표됐거나 현재 시장에서 유통되는 디
 4. 활성화 코드가 포함된 CSV 파일을 선택합니다.
 5. **확인**을 선택하여 변경 내용을 저장합니다.
 
-#### <a name="csv-file-requirements"></a>CSV 파일 요구 사항
+### <a name="csv-file-requirements"></a>CSV 파일 요구 사항
 
 활성화 코드를 사용하여 csv 파일에서 작동하는 경우 모바일 운영자는 다음 요구 사항을 따릅니다.
 
@@ -89,7 +89,7 @@ eSIM 지원 디바이스로 공표됐거나 현재 시장에서 유통되는 디
 - 각 파일은 단일 모바일 운영자마다 다르고, 모든 활성화 코드는 동일한 청구 계획에 따라 달라야 합니다. Intune은 대상 디바이스에 활성화 코드를 임의로 분산합니다. 디바이스가 특정 활성화 코드를 가져온다는 보장은 없습니다.
 - 하나의 csv 파일에 가져올 수 있는 활성화 코드는 최대 1000개입니다.
 
-#### <a name="csv-file-example"></a>CSV 파일 예제
+### <a name="csv-file-example"></a>CSV 파일 예제
 
 1. csv의 첫 번째 행 및 첫 번째 셀은 SM-DP+(Subscription Manager Data Preparation 서버)라고 하는 모바일 운영자 eSIM 정품 인증 서비스의 URL입니다. URL은 쉼표 없이 정규화된 도메인 이름(FQDN)이어야 합니다.
 2. 두 번째 및 이후의 모든 행은 두 개의 값이 포함된 고유한 일회용 활성화 코드입니다.
@@ -129,7 +129,7 @@ eSIM 활성화 코드는 한 번만 사용됩니다. Intune에서 디바이스�
 
 ## <a name="step-4-monitor-deployment"></a>4단계: 배포 모니터링
 
-#### <a name="review-the-deployment-status"></a>배포 상태 검토
+### <a name="review-the-deployment-status"></a>배포 상태 검토
 
 프로필을 할당한 후에 구독 풀의 배포 상태를 모니터링할 수 있습니다.
 
@@ -138,7 +138,7 @@ eSIM 활성화 코드는 한 번만 사용됩니다. Intune에서 디바이스�
 3. **디바이스 구성** > **eSIM 셀룰러 프로필**을 차례로 선택합니다. 기존 eSIM 셀룰러 구독 풀이 모두 나열됩니다.
 4. 구독을 선택하고 **배포 상태**를 검토합니다.
 
-#### <a name="check-the-profile-status"></a>프로필 상태 확인
+### <a name="check-the-profile-status"></a>프로필 상태 확인
 디바이스 프로필을 만든 후 Intune에서 그래픽 차트를 제공합니다. 이러한 차트에는 프로필이 디바이스에 성공적으로 할당되어 있는 상태 또는 프로필에 충돌이 표시되는지 여부 등의 프로필 상태가 표시됩니다.
 
 1. **디바이스 구성** > **eSIM 셀룰러 프로필** &gt; 기존 구독을 차례로 선택합니다.
@@ -167,7 +167,7 @@ eSIM 활성화 코드는 한 번만 사용됩니다. Intune에서 디바이스�
     - **셀룰러 상태**: 통신사가 제공하는 상태입니다. 문제를 해결하려면 모바일 운영자와 후속 작업을 합니다.
     - **마지막 체크 인**: 디바이스가 Intune과 마지막으로 통신한 날짜
 
-#### <a name="monitor-esim-profile-details-on-the-actual-device"></a>실제 디바이스에서 eSIM 프로필 세부 정보 모니터링
+### <a name="monitor-esim-profile-details-on-the-actual-device"></a>실제 디바이스에서 eSIM 프로필 세부 정보 모니터링
 
 1. 디바이스에서 **설정**을 열고 &gt; **네트워크 및 인터넷**으로 이동합니다.
 2. **셀룰러** > **eSIM 프로필 관리** 선택

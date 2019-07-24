@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884527"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354498"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune에서 iOS 디바이스용 앱당 VPN(가상 프라이빗 네트워크) 설정
 
@@ -48,7 +48,7 @@ VPN이 앱당 VPN을 지원하는지 확인하려면 VPN 공급 기업의 설명
 
 해당 ID를 증명하기 위해 디바이스의 프롬프트 없이 동의해야 하는 인증서가 VPN 서버에 표시됩니다. 인증서의 자동 승인을 확인하려면 CA(인증 기관)에서 발급된 VPN 서버의 루트 인증서가 포함된 신뢰할 수 있는 인증서 프로필을 만듭니다. 
 
-#### <a name="export-the-certificate-and-add-the-ca"></a>인증서 내보내기 및 CA 추가
+### <a name="export-the-certificate-and-add-the-ca"></a>인증서 내보내기 및 CA 추가
 
 1. VPN 서버에서 관리 콘솔을 엽니다.
 2. VPN 서버에서 인증서 기반 인증을 사용하는지 확인합니다. 

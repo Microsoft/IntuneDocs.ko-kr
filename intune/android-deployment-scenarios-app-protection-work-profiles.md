@@ -14,12 +14,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce7ad6b0254b1c3a8e2843cfcbe70a6b718ce88
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5814a4aac064394dbd0c7f5902dc3f62459ad1d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049909"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353815"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune의 Android Enterprise 디바이스에 대한 애플리케이션 보호 정책 및 회사 프로필
 
@@ -58,7 +58,7 @@ APP를 사용하도록 설정된 앱 목록을 보려면, [다양한 모바일 �
 
 이 섹션에서는 APP-WE 및 Android Enterprise 회사 프로필 배포 시나리오의 중요한 특징을 설명합니다.
 
-#### <a name="app-we"></a>APP-WE
+### <a name="app-we"></a>APP-WE
 
 APP-WE(등록이 없는 앱 보호 정책) 배포는 디바이스가 아닌 앱에 대한 정책을 정의합니다. 이 시나리오에서 디바이스는 일반적으로 Intune과 같은 MDM 기관에서 등록 또는 관리되지 않습니다. 앱 및 조직 데이터 액세스를 보호하기 위해 관리자는 APP로 관리 가능한 앱을 사용하고 해당 앱에 데이터 보호 정책을 적용합니다.
 
@@ -71,7 +71,7 @@ APP-WE(등록이 없는 앱 보호 정책) 배포는 디바이스가 아닌 앱�
 
 APP-WE 시나리오는 디바이스에서 조직을 위한 공간을 적게 사용하고 MDM에 등록하지 않으려는 최종 사용자에게 적합합니다. 그래도 관리자는 데이터를 보호해야 합니다. 이와 같은 디바이스는 관리되지 않습니다. WiFi, 디바이스 VPN 및 인증서 관리와 같은 매우 일반적인 MDM 작업과 기능이 이 배포 시나리오에 포함되지 않습니다.
 
-#### <a name="android-enterprise-work-profiles"></a>Android Enterprise 회사 프로필
+### <a name="android-enterprise-work-profiles"></a>Android Enterprise 회사 프로필
 
 회사 프로필은 핵심 Android Enterprise 배포 시나리오이고 BYOD 사용 사례를 대상으로 하는 유일한 시나리오입니다. 회사 프로필은 Intune에서 관리할 수 있는 Android OS 수준에서 만들어진 별도 파티션입니다.
 
@@ -95,9 +95,9 @@ Intune APP 및 회사 프로필은 함께 또는 별도로 사용할 수 있는 
 
 ### <a name="suppress-app-policy-for-work-profiles"></a>회사 프로필을 위해 APP 정책 차단
 
-APP-WE 시나리오의 관리되지 않는 디바이스 및 회사 프로필을 사용하는 관리형 디바이스와 같은 여러 디바이스를 보유한 개별 사용자를 지원해야 할 수 있습니다. 
+APP-WE 시나리오의 관리되지 않는 디바이스 및 회사 프로필을 사용하는 관리형 디바이스와 같은 여러 디바이스를 보유한 개별 사용자를 지원해야 할 수 있습니다.
 
-예를 들어 최종 사용자가 회사 앱을 열 때 PIN을 입력하도록 요구합니다. 디바이스에 따라 PIN 기능은 APP 또는 회사 프로필에서 처리됩니다. APP-WE 디바이스의 경우, PIN으로 시작 동작은 APP에서 적용됩니다. 회사 프로필 디바이스의 경우, OS에서 적용하는 디바이스 또는 회사 프로필 PIN을 사용할 수 있습니다. 이 시나리오를 적용하려면, 앱이 회사 프로필에 배포될 때 APP 설정이 적용되지 않도록 구성해야 합니다. 이렇게 구성하지 않으면, 디바이스뿐 아니라 APP 계층에서도 PIN을 묻는 메시지를 최종 사용자에게 표시합니다.
+예를 들어 최종 사용자가 회사 앱을 열 때 PIN을 입력하도록 요구합니다. 디바이스에 따라 PIN 기능은 APP 또는 회사 프로필에서 처리됩니다. APP-WE 디바이스의 경우, PIN으로 시작 동작은 APP에서 적용됩니다. 회사 프로필 디바이스의 경우, OS에서 적용하는 디바이스 또는 회사 프로필 PIN을 사용할 수 있습니다. 이 시나리오를 적용하려면, 앱이 회사 프로필에 배포될 때 APP 설정이 적용되지 않도록 구성해야 합니다.  이렇게 구성하지 않으면, 디바이스뿐 아니라 APP 계층에서도 PIN을 묻는 메시지를 최종 사용자에게 표시합니다.
 
 ### <a name="control-multi-identity-behavior-in-work-profiles"></a>회사 프로필에서 다중 ID 동작 제어
 
@@ -111,13 +111,13 @@ Outlook 및 OneDrive와 같은 Office 애플리케이션에는 "다중 ID" 동�
 
 Intune APP를 사용하는 것이 가장 추천되는 여러 엔터프라이즈 이동성 시나리오가 있습니다.
 
-#### <a name="older-devices-running-android-44-51-are-being-used"></a>Android 4.4~5.1을 실행하는 오래된 디바이스를 사용 중인 경우
+### <a name="older-devices-running-android-44-51-are-being-used"></a>Android 4.4~5.1을 실행하는 오래된 디바이스를 사용 중인 경우
 
 공식적으로 Google Mobile Services를 사용하는 Android 디바이스 5.0 이상은 회사 프로필을 지원하고 이 방법으로 관리할 수 있습니다. 그러나 몇몇 OEM이 제공하는 일부 Android 5.0 및 5.1 디바이스는 회사 프로필을 지원하지 않습니다.
 
 회사 프로필을 지원하지 않는 버전을 사용하는 경우, 디바이스에서 조직 데이터에 대한 DLP를 보장하려면 Intune APP 기능을 사용해야 합니다.
 
-#### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>MDM이 없고, 등록이 없고, Google Services를 사용할 수 없는 경우
+### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>MDM이 없고, 등록이 없고, Google Services를 사용할 수 없는 경우
 
 일부 고객은 다양한 이유로 회사 프로필 관리를 포함한 어떤 형태의 디바이스 관리도 원하지 않습니다.
 

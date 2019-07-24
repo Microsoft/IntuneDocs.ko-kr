@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547363"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353767"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -46,7 +46,7 @@ NDES 서버는 엔터프라이즈 CA와 동일한 포리스트 내의 도메인�
   
 - **Azure AD 애플리케이션 프록시**(선택 사항): Azure AD 애플리케이션 프록시를 전용 WAP(웹 애플리케이션 프록시) 서버 대신 사용하여 NDES Server를 인터넷에 게시할 수 있습니다. 자세한 내용은 온 [온-프레미스 애플리케이션에 보안된 원격 액세스를 제공하는 방법](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)을 참조하세요.
 
-#### <a name="additional"></a>추가 정보
+### <a name="additional"></a>추가 정보
 
 - WAP를 호스팅하는 서버에는 네트워크 디바이스 등록 서비스에서 사용하는 긴 URL을 지원할 수 있도록 하는 [업데이트를 설치](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 해야 합니다. 이 업데이트는 [2014년 12월 업데이트 롤업](http://support.microsoft.com/kb/3013769)에 포함되어 있으며, [KB3011135](http://support.microsoft.com/kb/3011135)에서 개별적으로 다운로드할 수도 있습니다.
 - WAP 서버에는 외부 클라이언트에 게시된 이름과 일치하는 SSL 인증서가 있어야 하며 NDES 서버에서 사용되는 SSL 인증서를 신뢰해야 합니다. 이러한 인증서를 통해 WAP 서버는 클라이언트와의 SSL 연결을 종료하고 NDES 서버로의 새 SSL 연결을 생성할 수 있습니다.
@@ -79,17 +79,17 @@ NDES 서버와 모든 지원 인프라 간에 필요한 모든 포트 및 프로
 ## <a name="configure-your-infrastructure"></a>인프라 구성
 인증서 프로필을 구성하려면 다음 단계를 완료해야 합니다. 이러한 단계를 완료하려면 Windows Server 2012 R2 이상 및 ADCS(Active Directory 인증서 서비스)에 대한 지식이 필요합니다.
 
-#### <a name="step-1---create-an-ndes-service-account"></a>1단계 - NDES 서비스 계정 만들기
+### <a name="step-1---create-an-ndes-service-account"></a>1단계 - NDES 서비스 계정 만들기
 
 NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다. NDES를 설치하고 구성하기 전에 발급하는 CA에서 템플릿을 구성할 때 이 계정을 입력합니다. 사용자에게 기본 권한(**로컬 로그온**, **서비스로 로그온** 및 **일괄 작업으로 로그온** 권한)이 있는지 확인합니다. 일부 조직에는 해당 권한을 사용하지 않도록 설정하는 보안 강화 정책이 있습니다.
 
-#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>2단계 - 인증 기관에서 인증서 템플릿 구성
+### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>2단계 - 인증 기관에서 인증서 템플릿 구성
 이 단계에서는 다음을 수행합니다.
 
 - NDES의 인증서 템플릿 구성
 - NDES의 인증서 템플릿 게시
 
-##### <a name="configure-the-certification-authority"></a>인증 기관 구성
+#### <a name="configure-the-certification-authority"></a>인증 기관 구성
 
 1. 엔터프라이즈 관리자로 로그인합니다.
 
@@ -150,7 +150,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 3. **인증서 템플릿** 폴더에서 게시된 템플릿을 확인하여 유효성을 검사합니다.
 
-#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>3단계 - NDES 서버에서 필수 구성 요소 구성
+### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>3단계 - NDES 서버에서 필수 구성 요소 구성
 이 단계에서는 다음을 수행합니다.
 
 - Windows Server에 NDES를 추가하고 NDES를 지원하도록 IIS 구성
@@ -190,7 +190,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
-#### <a name="step-4---configure-ndes-for-use-with-intune"></a>4단계 - Intune에 사용할 수 있도록 NDES 구성
+### <a name="step-4---configure-ndes-for-use-with-intune"></a>4단계 - Intune에 사용할 수 있도록 NDES 구성
 이 단계에서는 다음을 수행합니다.
 
 - 발급 CA에 사용할 수 있도록 NDES 구성
@@ -241,7 +241,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
     **503 서비스를 사용할 수 없음** 오류가 발생하는 경우 이벤트 뷰어를 확인합니다. 애플리케이션 풀이 NDES 사용자 권한에 대한 누락으로 인해 중지되었을 가능성이 높습니다. 이러한 권한은 1단계에 설명되어 있습니다.
 
-##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>NDES 서버에서 인증서를 설치 및 바인딩
+#### <a name="install-and-bind-certificates-on-the-ndes-server"></a>NDES 서버에서 인증서를 설치 및 바인딩
 
 1. NDES 서버에서 내부 CA 또는 공용 CA로부터 **서버 인증** 인증서를 요청하여 설치합니다. 그런 다음 IIS에서 SSL 인증서를 바인딩합니다.
 
@@ -267,7 +267,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
     - **주체 이름**: 이 값은 인증서를 설치하는 서버(NDES 서버)의 DNS 이름과 같아야 합니다.
 
-##### <a name="configure-iis-request-filtering"></a>IIS 요청 필터링 구성
+#### <a name="configure-iis-request-filtering"></a>IIS 요청 필터링 구성
 
 1. NDES 서버에서 **IIS 관리자**를 열고 **연결** 창에서 **기본 웹 사이트**를 선택한 다음, **요청 필터링**을 엽니다.
 
@@ -287,13 +287,13 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
 4. NDES 서버를 다시 부팅합니다. 이제 서버가 인증서 커넥터를 지원할 수 있습니다.
 
-#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5단계 - Intune 인증서 커넥터 사용, 설치 및 구성
+### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5단계 - Intune 인증서 커넥터 사용, 설치 및 구성
 이 단계에서는 다음을 수행합니다.
 
 - Intune에서 NDES를 지원하도록 설정
 - 해당 환경의 서버인 NDES(Network Device Enrollment Service) 역할을 호스트하는 서버에서 인증서 커넥터를 다운로드, 설치 및 구성합니다. 조직에서 NDES 구현의 규모를 확대하려면 각 NDES 서버에 Microsoft Intune 인증서 커넥터가 있는 여러 NDES 서버를 설치할 수 있습니다.
 
-##### <a name="download-install-and-configure-the-certificate-connector"></a>인증서 커넥터의 다운로드, 설치 및 구성
+#### <a name="download-install-and-configure-the-certificate-connector"></a>인증서 커넥터의 다운로드, 설치 및 구성
 
 > [!IMPORTANT] 
 > Microsoft Intune Certificate Connector를 별도의 Windows 서버에 **설치해야** 합니다. 발급 CA(인증 기관)에 설치할 수는 없습니다. 또한 NDES(네트워크 디바이스 등록 서비스) 역할과 같은 서버에 **설치해야** 합니다.

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548748"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427109"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune을 사용하여 운영 체제 버전 관리
 최신 모바일 및 데스크톱 플랫폼에서 주요 업데이트, 패치 및 새 버전은 빠른 속도로 출시됩니다. Windows에서는 업데이트와 패치를 완벽하게 관리할 수 있는 컨트롤이 있지만, iOS 및 Android와 같은 다른 플랫폼에서는 최종 사용자가 프로세스에 참여해야 합니다.  Microsoft Intune에는 다양한 플랫폼에서 운영 체제 버전 관리를 구성하는 데 도움이 되는 기능이 있습니다.
@@ -40,7 +40,7 @@ Intune MDM 등록 제한을 사용하면 디바이스 등록을 허용하기 전
 1. 최소 운영 체제 버전을 사용하여 조직의 현재 플랫폼 및 지원되는 플랫폼에서 최종 사용자를 유지합니다. 
 2. 최대 운영 체제를 지정하지 않거나(제한 없음) 조직에서 마지막으로 유효성이 검사된 버전으로 설정하여 최신 운영 체제 릴리스에 대한 내부 테스트 시간을 허용합니다.
 
-자세한 내용은 [디바이스 유형 제한 설정](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)을 참조하세요.
+자세한 내용은 [디바이스 유형 제한 설정](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)을 참조하세요.
  
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>운영 체제 버전 보고 및 Intune MDM 디바이스 준수 정책 준수
 Intune MDM 디바이스 준수 정책에서 제공하는 도구는 다음과 같습니다. 
@@ -86,6 +86,6 @@ Intune 앱 보호 정책 및 MAM(모바일 애플리케이션 관리) 액세스 
 ## <a name="next-steps"></a>다음 단계
 조직의 운영 체제 버전을 관리하려면 다음 리소스를 사용합니다. 
 
-- [디바이스 유형 제한 설정](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [디바이스 유형 제한 설정](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
 - [디바이스 준수 시작](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [앱 보호 정책을 만들고 할당하는 방법](https://docs.microsoft.com/intune/app-protection-policies)

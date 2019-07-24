@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: ecfd482df452c52d81621cdc49c6ca78c4d4c1f6
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572629"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354541"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적으로 Intune 회사 포털 앱이 추가되고 웹 사이트가 개선됩니다. 이 문서에서는 Intune 관리자 또는 지원 담당자가 다음 작업을 수행하는 데 필요한 정보를 제공합니다.
@@ -49,7 +49,7 @@ Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적
 
 ## <a name="week-of-june-17-2019"></a>2019년 6월 17일 주  
 
-#### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune 앱의 새로운 기능
+### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune 앱의 새로운 기능
 Android용 Microsoft Intune 앱(미리 보기)에 새로운 기능을 추가했습니다. 이제 완전 관리형 Android 디바이스의 사용자는 다음을 수행할 수 있습니다.  
 
 * Intune 회사 포털 또는 Microsoft Intune 앱을 통해 등록한 디바이스를 보고 관리합니다.    
@@ -552,7 +552,7 @@ __이후__ ![이제 설치 진행률 표시줄이 표시되는 업데이트된 �
 > 아래 이미지는 미리 보기일 수 있으며 발표된 제품은 제공된 버전과 다를 수 있습니다.  
 
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 * [Microsoft Intune 블로그](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [클라우드 플랫폼 로드맵](https://www.microsoft.com/cloud-platform/roadmap)
 * [Intune의 새로운 기능](https://docs.microsoft.com/intune/whats-new)

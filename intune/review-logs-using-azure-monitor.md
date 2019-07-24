@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412704"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354530"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune에서 스토리지, Event Hubs 또는 Log Analytics에 로그 데이터 전송(미리 보기)
 
@@ -174,43 +174,43 @@ Log Analytics 작업 영역 관리와 관련된 비용을 검토하려면 [Log A
 
 자주 묻는 질문에 대한 답변을 확인하고 Azure Monitor의 Intune 로그와 관련된 알려진 문제에 대해 알아봅니다.
 
-#### <a name="which-logs-are-included"></a>어떤 로그가 포함되나요?
+### <a name="which-logs-are-included"></a>어떤 로그가 포함되나요?
 
 감사 로그 및 운영(미리 보기) 로그는 모두 이 기능을 통해 라우팅에 사용할 수 있습니다.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>작업 후에 해당 로그는 언제 Event Hub에 표시되나요?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>작업 후에 해당 로그는 언제 Event Hub에 표시되나요?
 
 로그는 일반적으로 작업이 수행된 후 몇 분 안에 Event Hub에 표시됩니다. [Azure Event Hubs란?](https://docs.microsoft.com/azure/event-hubs/)에 자세한 정보가 나와 있습니다.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>작업 후에 해당 로그는 언제 스토리지 계정에 표시되나요?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>작업 후에 해당 로그는 언제 스토리지 계정에 표시되나요?
 
 Azure Storage 계정의 경우 작업이 실행 된 후 대기 시간은 5~15분입니다.
 
-#### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>관리자가 진단 설정의 보존 기간을 변경하는 경우 어떻게 되나요?
+### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>관리자가 진단 설정의 보존 기간을 변경하는 경우 어떻게 되나요?
 
 새 보존 정책은 변경 후 수집된 로그에 적용됩니다. 정책 변경 전에 수집된 로그는 영향을 받지 않습니다.
 
-#### <a name="how-much-does-it-cost-to-store-my-data"></a>내 데이터를 저장하는 비용은 얼마인가요?
+### <a name="how-much-does-it-cost-to-store-my-data"></a>내 데이터를 저장하는 비용은 얼마인가요?
 
 스토리지 비용은 사용자가 선택하는 로그 크기 및 보존 기간에 따라 달라집니다. 생성된 로그 볼륨에 따른 테넌트에 대한 예상 비용의 목록은 [활동 로그에 대한 스토리지 크기](#storage-size-for-activity-logs)(이 문서에 있음)를 참조하세요.
 
-#### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>내 데이터를 Event Hub로 스트리밍하는 비용은 얼마인가요?
+### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>내 데이터를 Event Hub로 스트리밍하는 비용은 얼마인가요?
 
 스트리밍 비용은 분당 수신하는 메시지의 수에 따라 달라집니다. 메시지의 수에 따른 비용 계산 방법 및 예상 비용에 대한 자세한 내용은 [활동 로그에 대한 Event Hub 메시지](#event-hub-messages-for-activity-logs)(이 문서에 있음)를 참조하세요.
 
-#### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Intune 감사 로그를 내 SIEM 시스템과 통합하려면 어떻게 해야 하나요?
+### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Intune 감사 로그를 내 SIEM 시스템과 통합하려면 어떻게 해야 하나요?
 
 로그를 SIEM 시스템으로 스트리밍하려면 Event Hubs와 함께 Azure Monitor를 사용합니다. 먼저 [Event Hub로 로그를 스트리밍](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)합니다. 그런 다음, 구성된 Event Hub를 사용하여 [SIEM 도구를 설정](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub)합니다. 
 
-#### <a name="what-siem-tools-are-currently-supported"></a>현재 지원되는 SIEM 도구는 무엇인가요?
+### <a name="what-siem-tools-are-currently-supported"></a>현재 지원되는 SIEM 도구는 무엇인가요?
 
 현재 [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar 및 [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory)에서 Azure Monitor가 지원됩니다(새 웹 사이트 열기). 커넥터 작동 방식에 대한 자세한 내용은 [외부 도구에서 사용하도록 Event Hub로 Azure 모니터링 데이터를 스트리밍](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs)을 참조하세요.
 
-#### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>외부 SIEM 도구를 사용하지 않고 Event Hub에서 데이터에 액세스할 수 있나요?
+### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>외부 SIEM 도구를 사용하지 않고 Event Hub에서 데이터에 액세스할 수 있나요?
 
 예. 사용자 지정 애플리케이션에서 로그에 액세스하려면 [Event Hubs API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph)를 사용할 수 있습니다.
 
-#### <a name="what-data-is-stored"></a>어떤 데이터가 저장되나요?
+### <a name="what-data-is-stored"></a>어떤 데이터가 저장되나요?
 
 Intune은 파이프라인을 통해 전송되는 데이터를 모두 저장하지는 않습니다. Intune은 테넌트의 인증 기관에서 Azure Monitor 파이프라인으로 데이터를 라우팅합니다. 자세한 내용은 [Azure Monitor 개요](https://docs.microsoft.com/azure/azure-monitor/overview)를 참조하세요.
 

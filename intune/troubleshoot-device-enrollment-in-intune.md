@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548099"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375230"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -69,7 +69,7 @@ ms.locfileid: "67548099"
 
 3. 사용자의 등록된 디바이스 수가 이미 해당 디바이스 개수 제한과 동일한 경우 다음이 될 때까지 더 이상 등록할 수 없습니다.
     - [기존 디바이스가 제거됨](devices-wipe.md) 또는
-    - [디바이스 제한을 설정](enrollment-restrictions-set.md#set-device-limit-restrictions)하여 디바이스 제한을 늘립니다.
+    - [디바이스 제한을 설정](enrollment-restrictions-set.md)하여 디바이스 제한을 늘립니다.
 
 디바이스 캡에 도달을 방지하려면 부실 디바이스 레코드를 제거해야 합니다.
 
@@ -499,5 +499,5 @@ VPP 토큰에서 발생한 문제를 해결한 후에 차단된 디바이스를 
 
 
 
-### <a name="next-steps"></a>다음 단계
+## <a name="next-steps"></a>다음 단계
 문제 해결 정보가 도움이 되지 않는 경우 [Microsoft Intune에 대한 지원을 받는 방법](get-support.md)의 설명에 따라 Microsoft 지원에 문의하세요.
