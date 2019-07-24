@@ -171,6 +171,7 @@
       items:
         - name: 디바이스 등록이란?
           href: device-enrollment.md
+          displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
         - name: 디바이스 관리 기능
           href: device-management-capabilities.md
         - name: 등록 옵션
@@ -184,6 +185,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: 회사 식별자
               href: corporate-identifiers-add.md
+              displayName: COD
             - name: Multi-factor Authentication
               href: multi-factor-authentication.md
             - name: 디바이스 등록 관리자
@@ -273,6 +275,8 @@
           href: device-remove-user.md
         - name: 기본 사용자 찾기
           href: find-primary-user.md
+        - name: 알림 보내기
+          href: custom-notifications.md
         - name: macOS 디바이스 지우기
           href: device-erase.md
         - name: 원격 제어 모바일 디바이스
@@ -559,20 +563,27 @@
               href: apps-add-built-in.md
             - name: PowerShell 스크립트
               href: intune-management-extension.md
-        - name: 앱 배포
-          href: apps-deploy.md
+        - name: 앱 할당
           items:
+            - name: 그룹에 앱 할당
+              href: apps-deploy.md
+              displayName: app assignment; assignment
             - name: 앱 포함 및 제외
               href: apps-inc-exl-assignments.md
+              displayName: app assignment
             - name: Windows 10 앱 배포
               href: apps-windows-10-app-deploy.md
             - name: 정부 환경에 앱 배포
               href: apps-deploy-gcc-dod.md
         - name: 앱 모니터링
           href: apps-monitor.md
+        - name: 검색된 앱
+          href: app-discovered-apps.md
         - name: 앱 구성
-          href: app-configuration-policies-overview.md
           items:
+            - name: 앱 구성 정책
+              href: app-configuration-policies-overview.md
+              displayName: App configuration policy; configuration policy
             - name: iOS 관리되는 디바이스
               href: app-configuration-policies-use-ios.md
             - name: Android 관리되는 디바이스
