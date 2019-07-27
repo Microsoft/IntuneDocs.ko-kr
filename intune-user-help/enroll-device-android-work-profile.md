@@ -18,16 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e43fccabd142527d9e17317d56fa029844fa270d
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: bff8f2d74b06d1cd4ee7dffe594917b4d0946d5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329467"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467305"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Android 회사 프로필을 사용하여 디바이스 등록
 
-개인 Android 디바이스를 등록하면 회사 이메일, 앱 및 기타 업무용 데이터에 액세스할 수 있습니다. 등록하는 동안 Android 회사 프로필을 설정할 수 있습니다. 이 프로필은 사용자 디바이스에서 개인 데이터와 회사 데이터를 구분합니다. 회사 지원팀은 회사 파일 및 데이터로 구성된 회사 프로필만 관리합니다. 회사 지원팀은 사용자 디바이스의 개인 데이터를 관리할 수 없습니다. [업무용 프로필을 만들면 어떻게 되나요?](what-happens-when-you-create-a-work-profile-android.md)에서 자세한 내용을 알아보세요.  
+개인 Android 디바이스를 등록하면 회사 이메일, 앱 및 기타 업무용 데이터에 액세스할 수 있습니다. 등록하는 동안 Android 회사 프로필을 설정할 수 있습니다. 이 프로필은 사용자 디바이스에서 개인 데이터와 회사 데이터를 구분합니다. 회사 지원팀은 회사 파일 및 데이터로 구성된 회사 프로필만 관리합니다. 회사 지원팀은 사용자 디바이스의 개인 데이터를 관리할 수 없습니다.
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
+
+[업무용 프로필을 만들면 어떻게 되나요?](what-happens-when-you-create-a-work-profile-android.md)에서 자세한 내용을 알아보세요.
 
 ## <a name="create-work-profile-and-enroll-device"></a>회사 프로필 만들기 및 디바이스 등록
 

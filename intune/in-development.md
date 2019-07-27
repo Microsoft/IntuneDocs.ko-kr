@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: f9b02deb529bd6a9bca882fecb3d55d9db513191
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341353"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427166"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>개발 중인 Microsoft Intune 기능 - 2019년 7월
 
@@ -58,10 +58,6 @@ ms.locfileid: "68341353"
 <!-- ***********************************************-->
 ## <a name="app-management"></a>앱 관리
 
-
-### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>사용자 및 그룹에 대 한 사용자 지정 알림    <!-- 16766574   -->
-곧 회사 포털 응용 프로그램에서 Intune으로 관리 하는 iOS 및 Android 장치 사용자에 게 사용자 지정 임시 푸시 알림을 보낼 수 있습니다. 이러한 사용자 지정 알림은 특정 Intune 기능에 연결 되지 않으며, 일부 또는 모든 직원에 게 전송 하려는 일반적인 알림을 포함 하 여 필요한 모든 용도에 사용할 수 있습니다.  
-
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>조직 계정에 대 한 앱 알림 콘텐츠 구성 <!-- 2576686 -->
 Android 및 iOS 장치에서 Intune 앱 보호 정책 (앱)을 사용 하면 조직 계정에 대 한 앱 알림 콘텐츠를 제어할 수 있습니다. 이 기능을 사용 하려면 응용 프로그램에 대 한 지원이 필요 하며, 응용 프로그램을 사용 하도록 설정 된 응용 프로그램에는이 기능을 APP에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
 
@@ -70,7 +66,6 @@ Android 작업 프로필 디바이스에서 사용할 수 있는 앱 설치의 �
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>디바이스 구성
-
 
 ### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>iOS용 IKEv2 VPN 프로필 지원 <!-- 1943438 -->
 IKEv2 프로토콜을 사용하여 iOS 원시 VPN 클라이언트에 대한 VPN 프로필을 만들 수 있습니다. IKEv2는 **디바이스 구성** > **프로필** > **프로필 만들기** > **iOS**(플랫폼) > **VPN**(프로필 형식) > **설정**의 새 연결 형식입니다.
@@ -81,39 +76,18 @@ IKEv2 프로토콜을 사용하여 iOS 원시 VPN 클라이언트에 대한 VPN 
 
 적용 대상: iOS
 
-### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>Windows 10 디바이스 구성 프로필을 만들 때 "적용 가능성 규칙" 사용 <!-- 2549910 -->
-Windows 10 다비이스 구성 프로필을 만듭니다(플랫폼용 **디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10**). 프로필이 특정 에디션 또는 특정 버전에만 적용되도록 **적용 가능성 규칙**을 만들 수 있습니다. 예를 들어 일부 BitLocker 설정을 사용하도록 설정하는 프로필을 만듭니다. 프로필을 추가한 후에는 적용 가능한 규칙을 사용하여 프로필을 Windows 10 Enterprise를 실행하는 디바이스에만 적용되도록 합니다.
-
-적용 대상: 
-- Windows 10 이상
-
-### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender 방화벽에 대한 고급 설정   <!--  1311949     -->
-곧 공개 미리 보기로 Intune을 사용하여 Windows Defender용 클라이언트의 사용자 지정 방화벽 규칙을 관리할 수 있습니다.  
-
-### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise에 대 한 OEMConfig 프로필을 만들 때의 새 구성 디자이너 <!-- 3712769  -->
-Intune에서 OEMConfig 앱 (장치 구성 > 프로필을 사용 하는 장치 구성 프로필을 만들 수 있습니다 > 프로필 > Android enterprise for platform >에 대 한 프로필 형식). 이 작업을 수행 하면 템플릿 및 값을 변경할 수 있는 JSON 편집기가 열립니다. 이 업데이트에는 제목, 설명 등을 포함 하 여 앱에 포함 된 세부 정보를 표시 하는 향상 된 사용자 환경을 제공 하는 구성 디자이너가 포함 되어 있습니다. JSON 편집기는 계속 사용할 수 있으며, 구성 디자이너에서 변경한 내용을 표시 합니다.
-
-현재 설정을 확인 하려면 OEMConfig를 사용 하 여 [Android Enterprise 장치 사용 및 관리](android-oem-configuration-overview.md)로 이동 합니다.
-
-적용 대상: Android 엔터프라이즈
-
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>디바이스 관리
 
-### <a name="improve-device-location---3855417---"></a>장치 위치 개선<!-- 3855417 -->
-**장치 찾기** 작업을 사용 하 여 장치의 정확한 좌표를 확대할 수 있습니다. 분실 한 iOS 장치를 찾는 방법에 대 한 자세한 내용은 [분실 한 ios 장치 찾기](device-locate.md)를 참조 하세요.
-
 ### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>자동 장치 정리 시간 제한을 30 일로 구성 <!--4231059  -->
 자동 장치 정리 시간 제한은 마지막 로그인 후 30 일 (현재 제한인 90 일 대신)을 30 일로 설정할 수 있습니다. 이렇게 하려면 **Intune** > **장치** >  **설정장치** > **정리 규칙**으로 이동 합니다.
-
 
 <!-- ***********************************************-->
 ## <a name="security"></a>보안
 
 ### <a name="import-and-export-security-baselines------3408610------------"></a>보안 기준 가져오기 및 내보내기    <!--3408610          -->  
 사용자 지정을 사용 하 고 Intune 환경 사이에서 공유할 수 있도록 보안 기준을 내보내고 가져오는 기능을 추가 하 고 있습니다.
-
 
 
 <!-- ***********************************************-->

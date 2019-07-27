@@ -5,7 +5,7 @@ description: Windows 10을 관리하기 위한 Intune 보안 기준 설정
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882289"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491900"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune에 대한 MDM 보안 기준 설정  
 
@@ -1773,7 +1773,12 @@ Intune에서 보안 기준을 사용 하는 방법에 대 한 자세한 내용�
   **기본값**: 예
 
 - **비즈니스용 Windows Hello 구성**   
-  비즈니스용 Windows Hello는 암호, 스마트 카드 및 가상 스마트 카드를 대체하여 Windows에 로그인할 수 있는 대체 방법입니다. 이 정책 설정을 구성하지 않거나 사용하도록 설정하면 디바이스가 비즈니스용 Windows Hello를 프로비저닝합니다. 이 정책 설정을 사용하지 않도록 설정하면 디바이스가 사용자를 위해 비즈니스용 Windows Hello를 프로비저닝하지 않습니다.
+    비즈니스용 Windows Hello는 암호, 스마트 카드 및 가상 스마트 카드를 대체하여 Windows에 로그인할 수 있는 대체 방법입니다.  
+
+  - *예*로 설정 되 면이 정책을 사용 하도록 설정 하 고 장치에서 비즈니스용 Windows Hello를 프로 비전 합니다.  
+  - *구성 되지 않음*으로 설정 된 경우 기준은 장치의 정책 설정에 영향을 주지 않습니다. 즉, 장치에서 비즈니스용 Windows Hello를 사용 하지 않도록 설정한 경우 사용 하지 않도록 설정 된 상태로 유지 됩니다. 사용 하도록 설정 된 경우 사용 하도록 설정 된 상태로 유지 됩니다. 
+
+  이 기준선을 통해 비즈니스용 Windows Hello를 사용 하지 않도록 설정할 수 없습니다. [Windows 등록](windows-hello.md)을 구성 하거나 [id 보호](identity-protection-configure.md)를 위한 장치 구성 프로필의 일부로 비즈니스용 windows Hello를 사용 하지 않도록 설정할 수 있습니다.  
 
   **기본값**: 예
 
