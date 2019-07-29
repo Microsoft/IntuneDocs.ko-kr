@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883277"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427326"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune에서 Intune 온-프레미스 Exchange Connector 설정
 이 문서의 정보는 Intune용 Exchange Active Sync 온-프레미스 커넥터를 설치하고 모니터링하는 데 도움이 됩니다.  Intune 온-프레미스 Exchange Connector를 [조건부 액세스 정책과 함께 사용하여 Exchange 온-프레미스 사서함에 대한 액세스를 허용 또는 차단](conditional-access-exchange-create.md)할 수 있습니다. 
@@ -152,8 +152,22 @@ Intune은 구독당 여러 개의 온-프레미스 Exchange Connector를 지원�
 장애 조치(failover)를 완수하기 위해 커넥터는 지정된 CAS를 사용하여 Exchange에 성공적으로 연결한 후 해당 Exchange 조직의 추가 CAS를 검색합니다. 추가 CAS에 대한 지식이 있으면 주 CAS를 다시 사용할 수 있을 때까지 커넥터를 다른 CAS로(있는 경우) 장애 조치(failover)할 수 있습니다. 기본적으로 추가 CAS 검색이 사용됩니다. 다음 절차에 따라 장애 조치(failover)를 끌 수 있습니다.  
 1. Exchange Connector가 설치된 서버에서 %*ProgramData*%\Microsoft\Windows Intune Exchange Connector로 이동합니다. 
 2. 텍스트 편집기를 사용하여 **OnPremisesExchangeConnectorServiceConfiguration.xml**을 엽니다.
-3. &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt;를 &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt;로 변경하여 기능을 사용하지 않도록 설정합니다.    
+3. &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt;를 &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt;로 변경하여 기능을 사용하지 않도록 설정합니다.  
  
+## <a name="optional-performance-tuning-for-the-exchange-connector"></a>Exchange Connector의 선택적 성능 조정  
+
+Exchange ActiveSync를 사용하여 5000개 이상의 디바이스를 지원하는 경우 선택적 설정을 구성하여 커넥터의 성능을 향상할 수 있습니다. Exchange에서 PowerShell 명령 runspace의 여러 인스턴스를 사용하도록 설정하면 성능이 향상됩니다. 
+
+변경하기 전에 Exchange Connector를 실행하는 데 사용하는 계정이 다른 Exchange 관리 목적으로 사용되고 있지 않은지 확인합니다. Exchange에 계정당 runspace가 18개로 제한되고, 대부분 커넥터에서 사용되기 때문입니다. 
+
+이 성능 변경은 이전의 느린 하드웨어에서 실행되는 커넥터에는 적합하지 않습니다.  
+
+1. 커넥터가 설치된 서버에서 커넥터 설치 디렉터리를 엽니다.  기본 위치는 ‘C:\ProgramData\Microsoft\Windows Intune Exchange Connector’입니다.  
+2. ‘OnPremisesExchangeConnectorServiceConfiguration.xml’ 파일을 편집합니다. 
+3. **EnableParallelCommandSupport**를 찾아 값을 **true**로 설정합니다.  
+     
+   \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+4. 파일을 저장한 다음 Microsoft Intune Exchange Connector 서비스를 다시 시작합니다.
 
 ## <a name="reinstall-the-on-premises-exchange-connector"></a>온-프레미스 Exchange Connector 다시 설치
 Exchange Connector를 다시 설치해야 하는 경우가 있습니다. 한 커넥터를 한 Exchange 조직에만 연결할 수 있으므로 한 조직의 두 번째 커넥터를 설치하면 새 커넥터가 원래 커넥터를 대체합니다.

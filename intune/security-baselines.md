@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
-ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
+ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67851474"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353601"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -73,6 +73,9 @@ Intune 콘솔에서 사용할 수 있는 보안 기준과 관련 정보를 확�
 - **Microsoft Defender ATP 기준**  
   ‘(이 기준을 사용하려면 환경이 [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) 사용에 대한 필수 조건을 충족해야 합니다.)’ 
   - [미리 보기: Microsoft Defender ATP 기준](security-baseline-settings-defender-atp.md)  
+
+  > [!NOTE]
+  > Microsoft Defender ATP 보안 기준은 물리적 디바이스에 최적화되었으며 현재 VM(가상 머신) 또는 VDI 엔드포인트에서 사용하지 않는 것이 좋습니다. 특정 기준 설정은 가상화된 환경의 원격 대화형 세션에 영향을 줄 수 있습니다.  자세한 내용은 Windows 문서에서 [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)(Microsoft Defender ATP 보안 기준의 준수 강화)을 참조하세요.
 
 이전에 미리 보기 템플릿을 기반으로 만든 프로필은 새 프로필을 만드는 데 해당 미리 보기 템플릿을 사용할 수 없더라도 계속 사용하거나 편집할 수 있습니다. 
 
@@ -177,19 +180,19 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 
 ## <a name="q--a"></a>Q & A
 
-#### <a name="why-these-settings"></a>이러한 설정은 왜 필요한가요?
+### <a name="why-these-settings"></a>이러한 설정은 왜 필요한가요?
 
 Microsoft 보안 팀은 지난 수년 동안 Windows 개발자 및 보안 커뮤니티와 직접 협력하여 이러한 권장 사항을 작성했습니다. 이 기준선의 설정은 가장 관련성 높은 보안 관련 구성 옵션으로 간주됩니다. 새로운 Windows 빌드마다 팀은 새로 릴리스된 기능을 기반으로 해당 권장 사항을 조정합니다.
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>그룹 정책 및 Intune에 대한 Windows 보안 기준선의 권장 사항에 차이점이 있나요? Intune?
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>그룹 정책 및 Intune에 대한 Windows 보안 기준선의 권장 사항에 차이점이 있나요? Intune?
 
 동일한 Microsoft 보안 팀이 각 기준선에 대한 설정을 선택하고 구성했습니다. Intune은 Intune 보안 기준선의 모든 관련 설정을 포함합니다. 그룹 정책 기준선에는 온-프레미스 도메인 컨트롤러에만 적용되는 몇 가지 설정이 있습니다. 이러한 설정은 Intune의 권장 사항에서 제외됩니다. 다른 모든 설정은 동일합니다.
 
-#### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Intune 보안 기준선이 CIS 또는 NSIT를 준수하나요?
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Intune 보안 기준선이 CIS 또는 NSIT를 준수하나요?
 
 엄밀히 말하면, 그렇지 않습니다. Microsoft 보안 팀은 해당 권장 사항을 작성하기 위해 CIS와 같은 조직과 논의합니다. 그러나 “CIS 규격” 및 Microsoft 기준선 간에 일대일 매핑은 없습니다.
 
-#### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Microsoft의 보안 기준선은 어떤 인증을 포함하나요? 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Microsoft의 보안 기준선은 어떤 인증을 포함하나요? 
 
 - Microsoft는 수년 동안 그랬듯이 GPO(그룹 정책) 및 [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10)에 대한 보안 기준선을 지속적으로 게시하고 있습니다. 이러한 기준선은 대부분의 조직에서 사용됩니다. 이러한 기준선의 권장 사항은 Microsoft 보안 팀이 DoD(국방부), NIST(국가 표준 기술 연구소) 등을 비롯한 기업 고객 및 외부 기관과 협력한 결과입니다. Microsoft는 당사의 권장 사항과 기준선을 이러한 조직과 공유합니다. 이러한 조직은 Microsoft의 권장 사항을 충실하게 반영하는 자체적인 권장 사항도 보유하고 있습니다. MDM(모바일 디바이스 관리)이 클라우드 환경으로 지속적으로 성장함에 따라 Microsoft는 이러한 그룹 정책 기준선에 대한 동일한 MDM 권장 사항을 작성했습니다. 이러한 추가 기준선은 Microsoft Intune에 기본 제공되며 기준선을 따르거나 따르지 않는 사용자, 그룹 및 디바이스에 대한 규정 준수 보고서를 포함합니다.
 
@@ -202,4 +205,5 @@ Microsoft 보안 팀은 지난 수년 동안 Windows 개발자 및 보안 커뮤
   - [MDM 보안 기준](security-baseline-settings-mdm.md)  
   - [Microsoft Defender ATP 기준](security-baseline-settings-defender-atp.md)  
 
-- 상태를 확인하고 [기준선 및 프로필](security-baselines-monitor.md)을 모니터링합니다.
+- 상태를 확인하고 [기준 및 프로필](security-baselines-monitor.md)을 모니터링합니다.
+

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735705"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374850"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise용 Microsoft Managed Home Screen 앱 구성
 
@@ -89,7 +89,7 @@ Managed Home Screen의 구성 설정을 정의할 때 선택할 수 있는 방�
 | 잠금 작업 모드 종료 암호 | 문자열 |   | 문제 해결을 위해 4-6자리 암호 코드를 입력하여 일시적으로 작업 잠금 모드를 중단합니다. |
 | Wi-Fi 설정 표시 | 부울 | FALSE | 이 설정을 `True`로 하면 최종 사용자가 Wi-Fi를 끄거나 켤 수 있고, 다른 Wi-Fi 네트워크에 연결할 수 있습니다.  |
 | Bluetooth 설정 표시 | 부울 | FALSE | 이 설정을 `True`로 하면 최종 사용자가 Bluetooth를 끄거나 켤 수 있고, 다른 Bluetooth 지원 디바이스에 연결할 수 있습니다.   |
-| 폴더의 애플리케이션을 이름별로 정렬 | 부울 | TRUE | 이 설정을 `False`로 설정하면 폴더의 항목을 지정된 순서대로 표시할 수 있습니다. 그러지 않으면 폴더에 사전순으로 표시됩니다.   |
+| 폴더의 애플리케이션을 이름별로 정렬 | 부울 | TRUE | 이 설정을 `False`로 설정하면 폴더의 항목을 지정된 순서대로 표시할 수 있습니다. 그러지 않으면 폴더에 사전 순으로 표시됩니다.   |
 | 애플리케이션 순서 사용 | 부울 | FALSE | 이 설정을 `True`로 설정하면 Managed Home Screen에서 애플리케이션, 웹 링크 및 폴더의 순서를 설정하는 기능을 사용하도록 설정할 수 있습니다. 사용하도록 설정하면 **app_order**로 순서를 설정합니다. 최종 사용자는 Bluetooth를 켜거나 끄고 다른 Bluetooth 지원 디바이스에 연결할 수 있습니다.   |
 | 애플리케이션 순서 | bundleArray | FALSE | Managed Home Screen에서 애플리케이션, 웹 링크 및 폴더의 순서를 지정할 수 있습니다. 이 설정을 사용하려면 **Lock Home Screen**(홈 화면 잠금)을 사용하도록 설정해야 하고, **눈금 크기 설정**을 정의해야 하며, **애플리케이션 순서 사용**을 `True`로 설정해야 합니다.   |
 
@@ -383,6 +383,9 @@ JSON 데이터를 입력하여 Managed Home Screen에 사용 가능한 모든 �
     ]
 }
 ```
+
+## <a name="googles-android-device-policy-app"></a>Google의 Android 디바이스 정책 앱
+이제 Managed Home Screen 앱에서 Google의 Android 디바이스 정책 앱에 액세스할 수 있습니다. Managed Home Screen 앱은 Intune에 다중 앱 키오스크 모드를 사용하는 AE(Android 엔터프라이즈) 전용 디바이스로 등록된 디바이스에 사용되는 사용자 지정 시작 관리자입니다. Android 디바이스 정책 앱에서 액세스하거나 지원 및 디버깅을 위해 사용자를 Android 디바이스 정책 앱으로 안내할 수 있습니다. 이 시작 기능은 디바이스가 등록되고 Managed Home Screen으로 잠길 때 사용할 수 있습니다. 이 기능을 사용하기 위해 추가 설치가 필요하지 않습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

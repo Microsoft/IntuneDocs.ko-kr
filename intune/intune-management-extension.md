@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 230f226cba70a7fc61efd236cc0fde0ca6b7fa68
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298415"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374954"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 PowerShell 스크립트 사용
 
@@ -37,11 +37,11 @@ Intune에서 Microsoft Intune 관리 확장을 사용하여 Windows 10 디바이
 
 Microsoft Intune과 같은 MDM 서비스는 Windows 10을 실행하는 모바일 및 데스크톱 디바이스를 관리할 수 있습니다. 기본 제공 Windows 10 관리 클라이언트는 Intune과 통신하여 엔터프라이즈 관리 작업을 실행합니다. 고급 디바이스 구성, 문제 해결과 같은 일부 작업이 필요할 수도 있습니다. Win32 앱 관리의 경우, Windows 10 디바이스에서 [Win32 앱 관리](apps-win32-app-management.md) 기능을 사용할 수 있습니다.
 
-Intune 관리 확장은 기본 제공 Windows 10 MDM 기능을 보완합니다. Windows 10 디바이스에서 실행할 PowerShell 스크립트를 만들 수 있습니다. 예를 들어 고급 디바이스 구성을 수행하는 PowerShell 스크립트를 만들고, Intune에 스크립트를 업로드하고, 스크립트를 Azure AD(Active Directory) 그룹에 할당하고, 스크립트를 실행할 수 있습니다. 그런 다음, 시작부터 완료까지 스크립트의 실행 상태를 모니터링할 수 있습니다.
+Intune 관리 확장은 기본 제공 Windows 10 MDM 기능을 보완합니다. Windows 10 디바이스에서 실행할 PowerShell 스크립트를 만들 수 있습니다. 예를 들어 고급 디바이스 구성을 수행하는 PowerShell 스크립트를 만듭니다. 그리고 스크립트를 Intune에 업로드하고 Azure AD(Active Directory) 그룹에 스크립트를 할당하고 스크립트를 실행합니다. 그런 다음, 시작부터 완료까지 스크립트의 실행 상태를 모니터링할 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
-Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다. 이러한 요구 사항이 충족되면, Intune 관리 확장은 PowerShell 스크립트 또는 Win32 앱이 사용자 또는 디바이스에 할당될 때 자동으로 설치됩니다.
+Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다. 필수 조건이 충족되면, Intune 관리 확장은 PowerShell 스크립트 또는 Win32 앱이 사용자 또는 디바이스에 할당될 때 자동으로 설치됩니다.
 
 - Windows 10 버전 1607 이상을 실행하는 디바이스. 디바이스가 [대량 자동 등록](windows-bulk-enroll.md)을 통해 등록된 경우 디바이스는 Windows 10 버전 1703 이상을 실행해야 합니다. Intune 관리 확장은 S 모드의 Windows 10에서 지원되지 않습니다. S 모드는 스토어 이외의 앱 실행을 허용하지 않기 때문입니다. 
   
@@ -61,7 +61,7 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
     
     - 사용자는 Azure AD 계정을 사용하여 디바이스에 로그인한 다음, Intune에 등록합니다.
 
-  - Configuration Manager 및 Intune을 사용하는 공동 관리 디바이스. **클라이언트 앱** 워크로드가 **파일럿 Intune** 또는 **Intune**으로 설정되어 있어야 합니다. 지침은 다음을 참조하세요. 
+  - Configuration Manager 및 Intune을 사용하는 공동 관리 디바이스. **클라이언트 앱** 워크로드가 **파일럿 Intune** 또는 **Intune**으로 설정되어 있어야 합니다. 지침은 다음 문서를 참조하세요. 
   
     - [What is co-management](https://docs.microsoft.com/sccm/comanage/overview)(공동 관리란?) 
     - [클라이언트 앱 워크로드](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -70,15 +70,18 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
 > [!TIP]
 > 디바이스가 Azure AD에 [조인](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)되어 있어야 합니다. Azure AD에 [등록](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)만 되어 있는 디바이스는 스크립트를 받지 않습니다.
 
-## <a name="create-a-script-policy"></a>스크립트 정책 만들기 
+## <a name="create-a-script-policy-and-assign-it"></a>스크립트 정책 만들기 및 할당
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **PowerShell 스크립트** > **추가**를 차례로 선택합니다.
-3. 다음 속성을 입력합니다.
+
+    ![Microsoft Intune에서 PowerShell 스크립트 추가 및 사용](./media/mgmt-extension-add-script.png)
+
+3. **기본**에서 다음 속성을 입력하고 **다음**을 선택합니다.
     - **이름**: PowerShell 스크립트의 이름을 입력합니다. 
-    - **설명**: PowerShell 스크립트의 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다. 
+    - **설명**: PowerShell 스크립트의 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
+4. **스크립트 설정**에 다음 속성을 입력하고 **다음**을 선택합니다.
     - **스크립트 위치**: PowerShell 스크립트를 찾습니다. 스크립트는 200KB(ASCII) 미만이어야 합니다.
-4. **구성**를 선택하고, 다음 속성을 입력합니다.
     - **로그온된 자격 증명을 사용하여 이 스크립트 실행**: 디바이스에서 사용자의 자격 증명으로 스크립트를 실행하려면 **예**를 선택합니다. 시스템 컨텍스트에서 스크립트를 실행하려면 **아니요**(기본값)를 선택합니다. 많은 관리자들이 **예**를 선택합니다. 스크립트를 시스템 컨텍스트에서 실행해야 하는 경우 **아니요**를 선택합니다.
     - **스크립트 서명 확인 적용**: 신뢰할 수 있는 게시자가 스크립트를 서명해야 하면 **예**를 선택합니다. 스크립트 서명에 대한 요구 사항이 없으면 **아니요**(기본값)를 선택합니다. 
     - **64비트 PowerShell 호스트에서 스크립트 실행**: 64비트 클라이언트 아키텍처의 64비트 PS(PowerShell) 호스트에서 스크립트를 실행하려면 **예**를 선택합니다. 32비트 PowerShell 호스트에서 스크립트를 실행하려면 **아니요**(기본값)를 선택합니다.
@@ -90,26 +93,34 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
       | 아니요 | 32비트  | 32비트 PS 호스트 지원 | 32비트 PS 호스트에서만 실행되며, 이 호스트는 32비트 및 64비트 아키텍처에서 작동합니다. |
       | 예 | 64비트 | 64비트 아키텍처용 64비트 PS 호스트에서 스크립트를 실행합니다. 32비트에서 실행하면 스크립트가 32비트 PS 호스트에서 실행됩니다. | 32비트 PS 호스트에서 스크립트를 실행합니다. 이 설정을 64비트로 변경하면 스크립트가 (실행되지 않고) 64비트 PS 호스트에서 열리고 결과를 보고합니다. 32비트에서 실행하면 스크립트가 32비트 PS 호스트에서 실행됩니다. |
 
-    ![Microsoft Intune에서 PowerShell 스크립트 추가 및 사용](./media/mgmt-extension-add-script.png)
-5. **확인** > **만들기**를 선택하여 스크립트를 저장합니다.
+5. **범위 태그**를 선택합니다. 범위 태그는 선택 사항입니다. 자세한 내용은 [분산형 IT에 RBAC(역할 기반 액세스 제어) 및 범위 태그 사용](scope-tags.md)을 참조하세요.
 
-> [!NOTE]
-> 스크립트가 사용자 컨텍스트로 설정되어 있고 최종 사용자에게 관리자 권한이 있으면 기본적으로 PowerShell 스크립트가 관리자 권한으로 실행됩니다.
+    범위 태그를 추가하려면:
 
-## <a name="assign-the-policy"></a>정책 할당
+    1. **범위 태그 선택** > 목록에서 기존 범위 태그 선택 > **선택**을 선택합니다.
 
-1. **PowerShell 스크립트**에서 할당할 스크립트를 선택한 다음, **관리** > **할당**을 차례로 선택합니다.
+    2. 완료되면 **다음**을 선택합니다.
 
-    ![Microsoft Intune에서 PowerShell 스크립트를 디바이스 그룹에 할당 또는 배포](./media/mgmt-extension-assignments.png)
+6. **할당** > **포함할 그룹 선택**을 선택합니다. 기존 Azure AD 그룹 목록이 표시됩니다.
 
-2. **그룹 선택**을 선택하여 사용할 수 있는 Azure AD 그룹을 나열합니다. 
-3. 디바이스에서 스크립트를 받는 사용자가 포함된 그룹을 하나 이상 선택합니다. 선택한 그룹에 정책을 할당하도록 **선택**합니다.
+    1. 디바이스에서 스크립트를 받는 사용자가 포함된 그룹을 하나 이상 선택합니다. **선택**을 선택합니다. 선택한 그룹은 목록에 표시되고 정책을 받습니다.
 
-> [!NOTE]
-> - 최종 사용자는 PowerShell 스크립트를 실행하기 위해 디바이스에 로그인할 필요가 없습니다.
-> - Intune의 PowerShell 스크립트는 Azure AD 디바이스 보안 그룹 또는 Azure AD 사용자 보안 그룹을 대상으로 할 수 있습니다.
+        > [!NOTE]
+        > Intune의 PowerShell 스크립트는 Azure AD 디바이스 보안 그룹 또는 Azure AD 사용자 보안 그룹을 대상으로 할 수 있습니다.
 
-Intune 관리 확장 클라이언트는 1시간마다 그리고 다시 부팅될 때마다 Intune을 검사하여 새로운 스크립트 또는 변경 내용을 확인합니다. Azure AD 그룹에 정책이 지정되면 PowerShell 스크립트가 실행되고 실행 결과가 보고됩니다. 스크립트는 한 번 실행되면 스크립트 또는 정책이 변경되기 전에는 다시 실행되지 않습니다.
+    2. **다음**을 선택합니다.
+
+        ![Microsoft Intune에서 PowerShell 스크립트를 디바이스 그룹에 할당 또는 배포](./media/mgmt-extension-assignments.png)
+
+7. **검토 + 추가**에 구성한 설정의 요약이 표시됩니다. **추가**를 선택하여 스크립트를 저장합니다. **추가**를 선택하면 선택한 그룹에 정책이 배포됩니다.
+
+## <a name="important-considerations"></a>중요한 고려 사항
+
+- 스크립트가 사용자 컨텍스트로 설정되어 있고 최종 사용자에게 관리자 권한이 있으면 기본적으로 PowerShell 스크립트가 관리자 권한으로 실행됩니다.
+
+- 최종 사용자는 PowerShell 스크립트를 실행하기 위해 디바이스에 로그인할 필요가 없습니다.
+
+- Intune 관리 확장 클라이언트는 1시간마다 한 번씩 새로운 스크립트나 변경 사항을 Intune에서 확인합니다. Azure AD 그룹에 정책이 지정되면 PowerShell 스크립트가 실행되고 실행 결과가 보고됩니다. 스크립트는 한 번 실행되면 스크립트 또는 정책이 변경되기 전에는 다시 실행되지 않습니다.
 
 ## <a name="monitor-run-status"></a>실행 상태 모니터링
 
@@ -120,7 +131,7 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
 - **디바이스 상태**
 - **사용자 상태**
 
-## <a name="troubleshoot-scripts"></a>스크립트 문제 해결
+## <a name="intune-management-extension-logs"></a>Intune 관리 확장 로그
 
 클라이언트 컴퓨터의 에이전트 로그는 일반적으로 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`에 있습니다. [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools)를 사용하여 이러한 로그 파일을 볼 수 있습니다. 
 
@@ -132,7 +143,7 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
 
 ## <a name="common-issues-and-resolutions"></a>일반적인 문제 및 해결 방법
 
-#### <a name="issue-intune-management-extension-doesnt-download"></a>문제점: Intune 관리 확장이 다운로드되지 않음
+### <a name="issue-intune-management-extension-doesnt-download"></a>문제점: Intune 관리 확장이 다운로드되지 않음
 
 **가능한 해결 방법**:
 
@@ -151,7 +162,7 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
 
 [Windows 10 자동 등록 사용](windows-enroll.md#enable-windows-10-automatic-enrollment)에는 Intune에서 자동 등록을 구성하는 단계가 포함됩니다.
 
-#### <a name="issue-powershell-scripts-do-not-run"></a>문제점: PowerShell 스크립트가 실행되지 않음
+### <a name="issue-powershell-scripts-do-not-run"></a>문제점: PowerShell 스크립트가 실행되지 않음
 
 **가능한 해결 방법**:
 
@@ -167,10 +178,10 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
 - Intune 관리 확장 클라이언트는 Intune에서 스크립트 또는 정책 변경 내용을 시간당 한 번씩 확인합니다.
 - Intune 관리 확장이 `%ProgramFiles(x86)%\Microsoft Intune Management Extension`에 다운로드되었는지 확인합니다.
 - 스크립트는 Surface Hubs 또는 S 모드의 Windows 10에서 실행되지 않습니다.
-- 로그에 오류가 있는지 검토합니다. [스크립트 문제 해결](#troubleshoot-scripts)(이 문서의)을 참조하세요.
+- 로그에 오류가 있는지 검토합니다. 이 문서 내의 [Intune 관리 확장 로그](#intune-management-extension-logs)를 참조하세요.
 - 가능한 권한 문제의 경우 PowerShell 스크립트의 속성이 `Run this script using the logged on credentials`로 설정되었는지 확인합니다. 또한 로그인한 사용자에게 스크립트를 실행할 적절한 권한이 있는지 확인합니다.
 
-- 스크립팅 문제를 격리하려면 다음을 수행합니다.
+- 스크립팅 문제를 격리하려면 다음 단계를 수행합니다.
 
   - 디바이스에서 PowerShell 실행 구성을 검토합니다. 지침은 [PowerShell 실행 정책](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6)을 참조하세요.
   - Intune 관리 확장을 사용하여 샘플 스크립트를 실행합니다. 예를 들어 `C:\Scripts` 디렉터리를 만들고 모든 사용자에게 모든 권한을 제공합니다. 다음 스크립트를 실행합니다.

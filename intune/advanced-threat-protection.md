@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 069658bdd231be96d7f9fbe23de1b4e38fdc5a9e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: af27a9b07434346a5425d0539759cb90ebf1ee6f
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885158"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427083"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용  
 
@@ -52,6 +52,17 @@ Intune에서 Microsoft Defender ATP를 사용하려면 다음을 구성했으며
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Intune에서 Microsoft Defender ATP 사용
 
+Intune Mobile Threat Defense에 새 애플리케이션을 통합하고 연결을 사용하도록 설정하면 Intune은 Azure Active Directory에 클래식 조건부 액세스 정책을 만듭니다. 통합하는 [Defender ATP](advanced-threat-protection.md)나 추가 [MTD파트너](mobile-threat-defense.md#mobile-threat-defense-partners)와 같은 MTD 앱마다 새 클래식 조건부 액세스 정책을 만듭니다.  이러한 정책은 무시할 수 있지만 편집 또는 삭제하거나 사용하지 않도록 설정할 수는 없습니다.
+
+MTD 앱의 클래식 조건부 액세스 정책: 
+
+- Intune MTD에서 디바이스가 Azure AD에 등록되어 디바이스 ID를 받도록 요구하는 데 사용됩니다. ID가 있어야만 디바이스에서 Intune에 상태를 보고할 수 있습니다.  
+- MTD 관리를 돕기 위해 만들 수 있는 조건부 액세스 정책과는 다릅니다.
+- 기본적으로 평가에 사용하는 다른 조건부 액세스 정책은 조작하지 마세요.  
+
+클래스 조건부 액세스 정책을 보려면 [Azure](https://portal.azure.com/#home)에서 **Azure Active Directory** > **조건부 정책** > **클래식 정책**으로 이동합니다.
+
+### <a name="to-enable-defender-atp"></a>Defender ATP를 사용하도록 설정하려면
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 준수** > **Microsoft Defender ATP**를 선택한 후 *커넥터 설정* 아래에서 **Microsoft Defender Security Center 열기**를 선택합니다.
 

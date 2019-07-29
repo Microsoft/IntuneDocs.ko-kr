@@ -17,15 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: aa4a0ff4c651e20a9f772551f1664bd8bf2d879f
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649107"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387320"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
+
+Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다. [자체 배포 모드](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying)(키오스크, 디지털 간판 또는 공유 디바이스용), [화이트 글러브](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)(파트너 또는 IT 담당자가 Windows 10 PC를 사전 프로비저닝하여 완전히 구성하고 비즈니스에 바로 사용할 수 있음), [기존 디바이스용 Autopilot(](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices)(최신 버전의 Windows 10을 기존 디바이스에 쉽게 배포할 수 있음) 및 [사용자 구동 모드](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven)(기존 사용자용) 
 
 
 ## <a name="prerequisites"></a>전제 조건
