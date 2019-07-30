@@ -5,7 +5,7 @@ description: Microsoft Defender Advanced Threat Protection 관리를 위해 Intu
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
-ms.translationtype: HT
+ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354440"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491924"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune에 대한 Microsoft Defender Advanced Threat Protection 기준 설정
 
@@ -292,7 +292,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   **기본값**: 감사 모드
 
-## <a name="web-network-protection"></a>웹 네트워크 보호  
+## <a name="web--network-protection"></a>웹 및 네트워크 보호  
 
 - **네트워크 보호 유형**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 이 정책을 사용하면 Windows Defender Exploit Guard에서 네트워크 보호를 켜거나 끌 수 있습니다. 네트워크 보호는 모든 앱을 사용하는 직원이 인터넷에서 피싱 사기, 악용 호스팅 사이트 및 악성 콘텐츠에 액세스하지 못하도록 보호하는 Windows Defender Exploit Guard의 기능입니다. 이 기능에는 타사 브라우저의 위험한 사이트 연결을 방지하는 것이 포함됩니다.  
@@ -600,6 +600,13 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
 - **비즈니스용 Windows Hello 구성** - *TenantId/Policies/UsePassportForWork*    
   비즈니스용 Windows Hello는 암호, 스마트 카드 및 가상 스마트 카드를 대체하여 Windows에 로그인할 수 있는 대체 방법입니다.  
+
+  - *예*로 설정 되 면이 정책을 사용 하도록 설정 하 고 장치에서 비즈니스용 Windows Hello를 프로 비전 합니다.  
+  - *구성 되지 않음*으로 설정 된 경우 기준은 장치의 정책 설정에 영향을 주지 않습니다. 즉, 장치에서 비즈니스용 Windows Hello를 사용 하지 않도록 설정한 경우 사용 하지 않도록 설정 된 상태로 유지 됩니다. 사용 하도록 설정 된 경우 사용 하도록 설정 된 상태로 유지 됩니다. 
+
+  이 기준선을 통해 비즈니스용 Windows Hello를 사용 하지 않도록 설정할 수 없습니다. [Windows 등록](windows-hello.md)을 구성 하거나 [id 보호](identity-protection-configure.md)를 위한 장치 구성 프로필의 일부로 비즈니스용 windows Hello를 사용 하지 않도록 설정할 수 있습니다.  
+
+비즈니스용 Windows Hello는 암호, 스마트 카드 및 가상 스마트 카드를 대체하여 Windows에 로그인할 수 있는 대체 방법입니다.  
 
   이 정책 설정을 구성하지 않거나 사용하도록 설정하면 디바이스가 비즈니스용 Windows Hello를 프로비저닝합니다. 이 정책 설정을 사용하지 않도록 설정하면 디바이스가 사용자를 위해 비즈니스용 Windows Hello를 프로비저닝하지 않습니다.
 

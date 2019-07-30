@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune의 iOS 디바이스 기능 설정 - Azure | Microsoft Docs
-description: Microsoft Intune에서 AirPrint, 홈 화면의 레이아웃, 앱 알림, 공유 디바이스, Single Sign-On 및 웹 콘텐츠 필터 설정에 대한 iOS 디바이스를 구성하는 모든 설정을 확인합니다. 디바이스 구성 프로필에서 이러한 설정을 확인하여 조직에서 이러한 서로 다른 Apple 기능을 사용하도록 iOS 디바이스를 구성합니다.
+description: Microsoft Intune에서 AirPrint, 홈 화면의 레이아웃, 앱 알림, 공유 디바이스, Single Sign-On 및 웹 콘텐츠 필터 설정에 대한 iOS 디바이스를 구성하는 모든 설정을 확인합니다. 디바이스 구성 프로필에서 이러한 설정을 확인하여 조직에서 이러한 Apple 기능을 사용하도록 iOS 디바이스를 구성합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413803"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387099"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Intune에서 일반적인 iOS 기능을 사용하는 iOS 디바이스 설정
 
@@ -41,7 +41,7 @@ Intune은 iOS 사용자가 해당 디바이스의 다른 Apple 기능을 사용�
 - **포트**: AirPrint 대상의 수신 대기 포트를 입력합니다. 이 속성을 비워두면 AirPrint는 기본 포트를 사용합니다. iOS 11.0 이상에서 사용할 수 있습니다.
 - **TLS**: TLS(전송 계층 보안)를 사용하여 AirPrint 연결을 보호하려면 **사용**을 선택합니다. iOS 11.0 이상에서 사용할 수 있습니다.
 
-**추가**를 선택하면 목록에 AirPrint 서버가 추가됩니다. 많은 AirPrint 서버를 추가할 수 있습니다. 이 정보를 사용하여 쉼표로 구분된 파일(.csv)을 **가져올** 수도 있습니다. 목록을 만든 후 AirPrint 서버의 목록을 **내보낼** 수도 있습니다.
+**추가**를 선택하면 목록에 AirPrint 서버가 추가됩니다. 많은 방송 인쇄 서버를 추가할 수 있습니다. 이 정보를 사용하여 쉼표로 구분된 파일(.csv)을 **가져올** 수도 있습니다. **내보내기** 는 추가한 총 인쇄 서버 목록을 만듭니다.
 
 **확인**을 선택하여 목록을 저장합니다.
 
@@ -195,7 +195,7 @@ iOS 디바이스에 설치된 앱에서 알림을 전송하는 방식을 선택�
   디바이스 토큰은 디바이스별 정보를 이러한 필드에 추가하는 데도 사용할 수 있습니다. 예를 들어 일련 번호를 표시하려면 `Serial Number: {{serialnumber}}`를 입력합니다. 잠금 화면에서 텍스트는 `Serial Number 123456789ABC`와 비슷하게 표시됩니다. 변수를 입력할 때 `{{ }}` 중괄호를 사용해야 합니다. [앱 구성 토큰](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)에는 사용할 수 있는 변수 목록이 포함됩니다. `deviceName` 또는 기타 디바이스 관련 값을 사용할 수도 있습니다.
 
   > [!NOTE]
-  > 변수는 ui에서 유효성이 검사 되지 않습니다 및 대/소문자 구분 합니다. 따라서, 잘못된 입력으로 저장된 프로필을 볼 수 있습니다. 예를 들어 `{{deviceid}}` 대신 `{{DeviceID}}`을 입력하면 디바이스의 고유 ID 대신 리터럴 문자열이 표시될 수 있습니다. 정확한 정보를 입력 해야 합니다.
+  > 변수는 UI에서 유효성을 검사 하지 않으며 대/소문자를 구분 합니다. 따라서, 잘못된 입력으로 저장된 프로필을 볼 수 있습니다. 예를 들어 `{{deviceid}}` 대신 `{{DeviceID}}`을 입력하면 디바이스의 고유 ID 대신 리터럴 문자열이 표시될 수 있습니다. 올바른 정보를 입력 해야 합니다.
 
 **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -253,7 +253,7 @@ Single Sign-On을 사용하려면 다음이 있어야 합니다.
 
 ## <a name="web-content-filter-settings"></a>웹 콘텐츠 필터 설정
 
-이러한 설정은 iOS 디바이스에서 브라우저 URL 액세스를 제어합니다.
+이러한 설정은 감독되는 iOS 디바이스에서 브라우저 URL 액세스를 제어합니다.
 
 - **필터 형식**: 특정 웹 사이트를 허용하도록 선택합니다. 옵션은 다음과 같습니다.
 

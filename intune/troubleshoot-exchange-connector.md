@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ea3ae66a32353b4aa6c782b13e6a587ee1f4464e
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354477"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491814"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune 온-프레미스 Exchange Connector 문제 해결
 
@@ -47,9 +47,9 @@ ms.locfileid: "68354477"
 
 
 ## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>Powershell을 사용하여 Exchange Connector에 더 많은 데이터를 가져오는 문제
-- 사서함에 대한 모든 모바일 디바이스 목록을 가져오려면 Get-ActiveSyncDeviceStatistics -mailbox mbx를 사용합니다.
-- 사서함에 대한 SMTP 주소 목록을 가져오려면 Get-Mailbox -Identity user | select emailaddresses | fl을 사용합니다.
-- 디바이스의 액세스 상태에 대한 상세 정보를 가져오려면 Get-CASMailbox <upn> | fl을 사용합니다.
+- 사서함에 대 한 모든 모바일 장치 목록을 가져오려면 다음을 사용 합니다.`Get-ActiveSyncDeviceStatistics -mailbox mbx`
+- 사서함에 대 한 SMTP 주소 목록을 가져오려면 다음을 사용 합니다.`Get-Mailbox -Identity user | select emailaddresses | fl`
+- 디바이스의 액세스 상태에 대한 상세 정보를 가져오려면 다음을 사용합니다. `Get-CASMailbox <upn> | fl`
 
 ## <a name="next-steps"></a>다음 단계
 이 정보가 도움이 되지 않으면 [Microsoft Intune에 대한 지원을 받을](get-support.md) 수도 있습니다.

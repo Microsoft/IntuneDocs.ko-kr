@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise는 Microsoft Intune을 포함하고 있습
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884264"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427304"
 ---
 # <a name="what-is-device-management"></a>디바이스 관리란? 
 
@@ -59,7 +59,7 @@ Intune을 사용하면 사용자별로 여러 디바이스를 관리하고 iOS, 
 - **Windows Defender**는 Windows 10 디바이스를 보호하는 여러 보안 기능을 갖추고 있습니다. 예를 들어 Intune 및 Windows Defender를 함께 사용하여 다음을 수행할 수 있습니다. 
 
   - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10)으로 모바일 디바이스의 파일 및 앱에서 의심스러운 활동을 검색합니다. 
-  - [Windows Defender ATP(Advanced Threat Protection)](https://docs.microsoft.com/intune/advanced-threat-protection)를 사용하여 모바일 디바이스의 보안 위반을 방지합니다. 또한 사용자를 회사 리소스에서 차단하여 보안 위반의 영향을 제한하는 데 도움이 됩니다.
+  - [Microsoft Defender ATP(Advanced Threat Protection)](https://docs.microsoft.com/intune/advanced-threat-protection)를 사용하여 모바일 디바이스의 보안 위반을 방지합니다. 또한 사용자를 회사 리소스에서 차단하여 보안 위반의 영향을 제한하는 데 도움이 됩니다.
 
 - **조건부 액세스**는 Azure Active Directory의 기능이며 Intune과 원활하게 통합됩니다. [조건부 액세스](https://docs.microsoft.com/intune/conditional-access)를 사용하여 규정을 준수하는 디바이스만 이메일, SharePoint 및 기타 앱에 액세스할 수 있는지 확인합니다. 
 
@@ -73,11 +73,11 @@ Intune을 사용하면 사용자별로 여러 디바이스를 관리하고 iOS, 
 
 Intune을 설정할 때 오직 Azure Portal에서만 디바이스를 관리하도록 선택할 수도 있고, Intune과 Microsoft 365를 함께 사용하여 디바이스를 관리하도록 선택할 수도 있습니다. [Azure Portal에서 모바일 디바이스 관리를 Intune으로 마이그레이션](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal)하는 것은 Microsoft IT 사례 연구입니다. 이 사례 연구에서는 Microsoft IT가 최신 디바이스 관리 방식을 선택하고 학습된 교훈을 읽는 방법을 확인합니다.
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>디바이스 관리 대시보드를 사용하여 IT 작업 간소화
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>디바이스 관리의 관리 센터를 사용하여 IT 작업 간소화
 
-[디바이스 관리 대시보드](https://devicemanagement.portal.azure.com/)는 모바일 디바이스에 대한 작업을 관리하고 완료할 수 있는 원스톱 매장입니다. 이 대시보드에는 Intune 및 Azure Active Directory를 비롯한 디바이스와 클라이언트 앱 관리에 사용되는 서비스가 포함되어 있습니다. 
+[디바이스 관리의 관리 센터](https://devicemanagement.portal.azure.com/)는 모바일 디바이스에 대한 작업을 관리하고 완료할 수 있는 원스톱 샵입니다. 이 작업 영역에는 Intune 및 Azure Active Directory를 비롯한 디바이스와 클라이언트 앱 관리에 사용되는 서비스가 포함되어 있습니다. 
 
-디바이스 관리 대시보드에서 다음을 수행할 수 있습니다.
+장치 관리 관리 센터에서 다음을 수행할 수 있습니다.
 
 - [디바이스 등록](https://docs.microsoft.com/intune/device-enrollment)
 - [디바이스 준수 설정](https://docs.microsoft.com/intune/device-compliance-get-started)
