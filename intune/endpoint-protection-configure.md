@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: d0e3e67cd227c5ce8ac2cb42f79bdea1da8e2d75
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375114"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482782"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune에서 엔드포인트 보호 설정 추가  
 
@@ -63,7 +63,7 @@ Windows 10의 엔드포인트 보호 규칙을 포함하는 프로필의 일부�
 - 각 프로필에서 규칙이 하나라도 적용되지 않는 경우 해당 프로필의 모든 규칙이 실패하고 규칙 중 아무것도 디바이스에 적용되지 않습니다.  
 - 하나의 규칙이 적용되지 않으면 프로필의 모든 규칙이 실패로 보고됩니다. Intune에서는 실패한 개별 규칙을 식별할 수 없습니다.  
 
-Intune에서 관리할 수 있는 방화벽 규칙은 Windows [방화벽 CSP(구성 서비스 공급자)]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)에 자세히 설명되어 있습니다. Intune에서 지원하는 Windows 10 디바이스의 사용자 지정 방화벽 설정 목록을 검토하려면 [사용자 지정 방화벽 규칙](endpoint-protection-windows-10.md#custom-firewall-rules)을 참조하세요.  
+Intune에서 관리할 수 있는 방화벽 규칙은 Windows [방화벽 CSP(구성 서비스 공급자)]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)에 자세히 설명되어 있습니다. Intune에서 지원하는 Windows 10 디바이스의 사용자 지정 방화벽 설정 목록을 검토하려면 [사용자 지정 방화벽 규칙](endpoint-protection-windows-10.md#firewall-rules)을 참조하세요.  
 
 ### <a name="to-add-custom-firewall-rules-to-an-endpoint-protection-profile"></a>엔드포인프 보호 프로필에 사용자 지정 방화벽 규칙을 추가하려면  
 
@@ -73,7 +73,7 @@ Intune에서 관리할 수 있는 방화벽 규칙은 Windows [방화벽 CSP(구
 
 3. **Windows Defender 방화벽**을 선택하고 구성 페이지를 열고 ‘방화벽 규칙’에서 **추가**를 선택하여 **규칙 만들기** 페이지를 엽니다.   
 
-4. 방화벽 규칙의 설정을 지정한 다음 **확인**을 선택하여 저장합니다. 설명서에서 사용 가능한 사용자 지정 방화벽 규칙 옵션을 검토하려면 [사용자 지정 방화벽 규칙](endpoint-protection-windows-10.md#custom-firewall-rules)을 참조하세요.  
+4. 방화벽 규칙의 설정을 지정한 다음 **확인**을 선택하여 저장합니다. 설명서에서 사용 가능한 사용자 지정 방화벽 규칙 옵션을 검토하려면 [사용자 지정 방화벽 규칙](endpoint-protection-windows-10.md#firewall-rules)을 참조하세요.  
 
 5. 규칙을 저장하면 ‘Windows Defender 방화벽’ 페이지의 규칙 목록에 표시됩니다.   
 

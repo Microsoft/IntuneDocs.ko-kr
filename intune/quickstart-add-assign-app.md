@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528317"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482805"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>빠른 시작: 클라이언트 앱 추가 및 할당
 
@@ -43,7 +43,6 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 Intune이 앱의 측면을 관리할 수 있도록 앱을 포함할 수 있습니다. 
 
 다음 단계에 따라 Intune에 앱을 추가할 수 있습니다.
-
 1. [Intune](https://aka.ms/intuneportal)에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다. 
 2. **앱 유형** 드롭다운 상자의 **Office 365 제품군** 섹션에서 **Windows 10**을 선택합니다.
 3. **앱 제품군 구성**을 선택하여 Intune 사용자에게 할당할 Office 앱을 선택합니다.
@@ -56,9 +55,9 @@ Intune이 앱의 측면을 관리할 수 있도록 앱을 포함할 수 있습�
 
     ![앱 정보를 추가하는 스크린샷](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. **앱 제품군 설정**을 선택합니다.
-9. **업데이트 채널** 드롭다운 상자에서 **매월**을 선택합니다.
-10. **확인** > **추가**를 클릭합니다.
+10. **앱 제품군 설정**을 선택합니다.
+11. **업데이트 채널** 드롭다운 상자에서 **매월**을 선택합니다.
+12. **확인** > **추가**를 클릭합니다.
 
 ## <a name="assign-the-app-to-a-group"></a>그룹에 앱 할당
 

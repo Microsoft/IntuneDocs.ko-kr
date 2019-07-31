@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e595ee2353a1554d97e49af666d20642a631596
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d05d9dd896321e48c3d1d9dec22cd0d1192dc0b6
+ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549293"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533189"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune 계획 구현
 
@@ -137,8 +137,4 @@ Intune은 iOS, Mac OS, Android, Windows 데스크톱 및 Windows 모바일 디�
 
 
 ## <a name="next-steps"></a>다음 단계
-
-Intune 구현 프로세스에 대한 자세한 내용은 이 [Microsoft Virtual Academy Intune 세션 모듈](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408)에서 확인해 보세요.
-
-
 [Intune 배포 테스트 및 유효성 검사](planning-guide-test-validation.md)의 지침을 참조하세요.

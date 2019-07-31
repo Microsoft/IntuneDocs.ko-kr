@@ -3,10 +3,10 @@ title: 자습서 - Azure Portal에서 Intune 연습
 titleSuffix: Microsoft Intune
 description: 이 자습서에서는 작업 수행 방법을 더 잘 이해하기 위해 Microsoft Intune을 살펴봅니다.
 keywords: ''
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 07/24/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0fbddf54939a494087a7da1220f51ec77b45e7b
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8cac5d8e160ac7ca665edeabaa2a93560285bdf4
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882462"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483042"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>자습서: Azure Portal에서 Microsoft Intune 연습
 
