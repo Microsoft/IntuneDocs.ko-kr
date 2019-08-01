@@ -233,6 +233,8 @@
               displayName: gms
             - name: Android Enterprise 전용 디바이스 또는 완전 관리형 디바이스 등록
               href: android-dedicated-devices-fully-managed-enroll.md
+            - name: Android 디바이스 관리자 등록
+              href: android-enroll-device-administrator.md
             - name: Android Enterprise 회사 프로필 디바이스 관리
               href: android-enterprise-overview.md
             - name: 삼성 Knox 모바일 등록
@@ -705,6 +707,8 @@
               items:
                 - name: iOS 디바이스 등록 문제 해결
                   href: troubleshoot-ios-enrollment-errors.md
+                - name: Windows 디바이스 등록 문제 해결
+                  href: troubleshoot-windows-enrollment-errors.md
             - name: 사용자가 문제 해결할 수 있도록 도움
               href: help-desk-operators.md
             - name: 회사 리소스 액세스 문제 해결
