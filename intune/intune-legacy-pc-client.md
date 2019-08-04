@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 921934eead9ff3a1074203dad55ee60f3fe77947
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047280"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756521"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure의 Intune 콘솔 및 레거시 Intune PC 클라이언트
 
@@ -45,7 +45,7 @@ Azure AD 그룹으로 전환하기 때문에 Silverlight 콘솔 대시보드 보
 1. 보기를 선택합니다.
 2. **필터** 상자에 필터링할 그룹의 이름을 입력하고 Enter 키를 누릅니다. 그러면 해당 특정 그룹의 디바이스에 대한 목록 보기가 필터링됩니다.
 
-   ![](media/intune-legacy-pc-client/image01.png)
+   ![선택한 항목이 없는 드롭다운 입력 필터](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Intune PC 클라이언트를 사용하여 Windows 7을 계속 관리
@@ -61,7 +61,7 @@ PC 클라이언트와 MDM 기능 간의 자세한 비교는 [Windows PC를 컴�
 Intune PC 클라이언트를 사용하여 Windows 10 디바이스를 관리하는 방식에서 MDM을 사용하여 관리하는 방식으로 전환하려면 아래 단계를 따릅니다.
 
 1. Silverlight 콘솔에서 **선택적 초기화**를 수행하여 PC 클라이언트에서 디바이스를 등록 취소합니다.
-  ![](media/intune-legacy-pc-client/image02.png)
+  ![' 선택적으로 장치 초기화 ' 라디오 단추가 선택 된 경고 팝업](media/intune-legacy-pc-client/image02.png)
 2. [MDM(및/또는 Azure AD 조인)](https://docs.microsoft.com/intune/windows-enroll)을 사용하여 디바이스를 다시 등록합니다. 
 
 ## <a name="next-steps"></a>다음 단계

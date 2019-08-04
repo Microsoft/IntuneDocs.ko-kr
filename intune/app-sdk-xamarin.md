@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794360"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680058"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -114,6 +114,9 @@ Remapper에서 ification의 클래스를 제외 하려면 프로젝트 `.csproj`
   </PropertyGroup>
 ```
 
+> [!NOTE]
+> 이번에는 Remapper와 관련 된 문제로 인해 Xamarin.ios 앱에서 디버그할 수 없습니다. 이 문제가 해결 될 때까지 응용 프로그램을 디버그 하는 데 수동 통합이 권장 됩니다.
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[이름이 변경된 메서드](app-sdk-android.md#renamed-methods)
 대부분의 경우, Android 클래스에서 사용할 수 있는 메서드가 MAM 대체 클래스에서 최종본으로 표시되어 있습니다. 이 경우 MAM 대체 클래스는 대신 재정의할 유사한 이름의 메서드(접미사 `MAM`이 붙음)를 제공합니다. 예를 들어 `OnCreate()`를 재정의하고 `base.OnCreate()`를 호출하는 대신 `MAMActivity`에서 파생하는 경우 `Activity`는 `OnMAMCreate()`를 재정의하고 `base.OnMAMCreate()`를 호출해야 합니다.
 
@@ -177,7 +180,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 `Xamarin.Forms` 애플리케이션의 경우 일반적으로 사용되는 `Xamarin.Forms` 클래스의 클래스 계층에 `MAM` 클래스를 주입하여 MAM 클래스 교체를 자동으로 수행하는 `Microsoft.Intune.MAM.Remapper` 패키지를 제공했습니다. 
 
 > [!NOTE]
-> 위에 자세히 설명된 Xamarin.Android 통합 외에도 Xamarin.Forms 통합이 수행됩니다.
+> 위에 자세히 설명된 Xamarin.Android 통합 외에도 Xamarin.Forms 통합이 수행됩니다. Remapper는 Xamarin.ios 앱에서 다르게 동작 하므로 수동 MAM 대체를 계속 수행 해야 합니다.
 
 Remapper가 프로젝트에 추가되면 MAM에 해당하는 대체를 수행해야 합니다. 예를 들어 `FormsAppCompatActivity` 및 `FormsApplicationActivity`는 `OnCreate`에 대한 재정의를 제공하고 `OnResume`이 MAM의 해당하는 `OnMAMCreate` 및 `OnMAMResume`으로 각각 대체된 애플리케이션에서 계속 사용할 수 있습니다.
 
@@ -199,6 +202,9 @@ Remapper가 프로젝트에 추가되면 MAM에 해당하는 대체를 수행해
 
 > [!NOTE]
 > Remapper는 Visual Studio에서 IntelliSense 자동 완성을 위해 사용하는 종속성을 다시 작성합니다. 따라서 IntelliSense에 대해 Remapper가 추가되면 프로젝트를 다시 로드하고 다시 빌드해야 변경 내용을 올바르게 인식할 수 있습니다.
+
+#### <a name="troubleshooting"></a>문제 해결
+* 응용 프로그램을 시작할 때 빈 화면이 표시 되 면 주 스레드에서 탐색 호출을 강제로 실행 해야 할 수 있습니다.
 
 ### <a name="company-portal-app"></a>회사 포털 앱
 Intune SDK Xamarin 바인딩은 장치에 [회사 포털](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android 앱이 있는지를 사용 하 여 앱 보호 정책을 사용 하도록 설정 합니다. 회사 포털이 Intune 서비스에서 앱 보호 정책을 검색합니다. 앱을 초기화할 때 정책과 회사 포털에서 해당 정책을 적용하는 코드를 로드합니다. 사용자에 게 로그인 할 필요가 없습니다.

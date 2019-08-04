@@ -1,7 +1,7 @@
 ---
 title: Windows 10에 대한 Intune 보안 기준 설정
 titleSuffix: Microsoft Intune
-description: Windows 10을 관리하기 위한 Intune 보안 기준 설정
+description: Intune을 사용 하 여 관리 하는 Windows 10 장치에 대 한 Windows MDM 보안 기준에 있는 기본값 및 사용 가능한 설정을 검토 합니다.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491900"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680034"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune에 대한 MDM 보안 기준 설정  
 
 Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 원하는 MDM 보안 기준 설정을 확인 합니다. 이 기준선의 설정에 대 한 기본값은 적용 가능한 장치에 권장 되는 구성을 나타내며 다른 보안 기준의 기준선 기본값과 일치 하지 않을 수 있습니다.  
 
-최신 기준 버전은 **스프링 2019 업데이트에 대 한 MDM 보안 기준입니다 (19H1)** .  
+최신 기준 버전은 5 **월 2019에 대 한 MDM 보안 기준** 입니다.  
 
 이전 버전에서이 기준의 최신 버전에서 변경 된 내용에 대 한 자세한 내용은 [새 템플릿에서 변경 된 기능](#whats-changed-in-the-new-template)을 참조 하세요.  
 
 > [!NOTE]  
-> 2019의 6 월에는 미리 보기 MDM 보안 기준이 미리 보기 상태 (미리 보기에 없음) 인 *f2019 업데이트 (19H1) 템플릿에 대 한 Mdm 보안 기준* 의 릴리스로 대체 되었습니다. *스프링 2019 업데이트 (19H1)에 대 한 Mdm 보안 기준* 의 가용성 전에 만들어진 프로필은 스프링 2019 업데이트 (19h1) 버전에 대 한 Mdm 보안 기준에 있는 설정 및 값을 반영 하도록 업데이트 되지 않습니다.  미리 보기 템플릿을 기반으로 새 프로필을 만들 수는 없지만 미리 보기 템플릿을 기반으로 하는 이전에 만든 프로필을 편집 하 고 계속 사용할 수 있습니다.   
+> 2019 년 6 월부터 미리 보기 MDM 보안 기준은 일반적으로 사용할 수 있는 (미리 보기가 아닌) *2019 템플릿의 Mdm 보안 기준* 릴리스로 대체 되었습니다. 2019 년 5 월 *에 대 한 Mdm 보안 기준* 의 가용성 전에 만들어진 프로필은 2019 버전의 Mdm 보안 기준에 있는 설정 및 값을 반영 하도록 업데이트 되지 않습니다.  미리 보기 템플릿을 기반으로 새 프로필을 만들 수는 없지만 미리 보기 템플릿을 기반으로 하는 이전에 만든 프로필을 편집 하 고 계속 사용할 수 있습니다.   
   
 Intune에서 보안 기준을 사용 하는 방법에 대 한 자세한 내용은 [보안 기준 사용](security-baselines.md)을 참조 하세요.  
 
@@ -1825,7 +1825,7 @@ Intune에서 보안 기준을 사용 하는 방법에 대 한 자세한 내용�
   **기본**: 사용
 
 ## <a name="whats-changed-in-the-new-template"></a>새 템플릿의 변경 내용
-*스프링 2019 업데이트 (19H1) 템플릿의 MDM 보안 기준* 에는 *미리 보기* 템플릿에서 다음과 같이 변경 되었습니다.
+5 *월 2019에 대 한 MDM 보안 기준* 템플릿은 *미리 보기* 템플릿에서 다음과 같이 변경 되었습니다.
 
 ### <a name="changes-to-the-baseline-settings"></a>기본 설정 변경
 설정은 다음 중 하나입니다.
