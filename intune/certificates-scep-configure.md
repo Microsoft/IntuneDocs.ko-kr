@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353767"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467493"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -373,7 +373,14 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
      - Windows 10 이상
 
 
-   - **주체 이름 형식**: 인증서 요청 시 Intune에서 자동으로 주체 이름을 만드는 방식을 선택합니다. **사용자** 인증서 유형 또는 **디바이스** 인증서 유형을 선택하면 이 옵션이 변경됩니다. 
+   - **주체 이름 형식**: 인증서 요청 시 Intune에서 자동으로 주체 이름을 만드는 방식을 선택합니다. **사용자** 인증서 유형 또는 **디바이스** 인증서 유형을 선택하면 이 옵션이 변경됩니다.  
+
+     > [!NOTE]  
+     > 결과 CSR(인증서 서명 요청)의 주체 이름에 다음 문자 중 하나가 이스케이프 문자로 포함되면(앞에 백슬래시 \\ 포함) SCEP를 사용하여 인증서를 가져오는 [알려진 문제](#avoid-certificate-signing-requests-with-escaped-special-characters)가 있습니다.
+     > - \+
+     > - ;
+     > - ,
+     > - =
 
         **사용자 인증서 유형**  
 
@@ -495,6 +502,42 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
      - **확인**, 프로필 **만들기**를 차례로 선택합니다.
 
 프로필이 만들어지고 프로필 목록 창에 표시됩니다.
+
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>이스케이프된 특수 문자를 사용하여 인증서 서명 요청 방지
+다음 특수 문자 중 하나 이상이 이스케이프 문자로 들어 있는 CN(주체 이름)이 포함된 SCEP 인증서 요청에 대해 알려진 문제가 있습니다. 주체 이름에 특수 문자 중 하나를 이스케이프 문자로 포함하면 CSR의 주체 이름이 올바르지 않게 되며, 이로 인해 Intune SCEP 챌린지 유효성 검사가 실패하고 인증서가 발급되지 않습니다.  
+
+특수 문자는 다음과 같습니다.
+- \+
+- ,
+- ;
+- =
+
+주체 이름에 특수 문자 중 하나가 포함된 경우 다음 옵션 중 하나를 사용하여 이 제한 사항을 해결합니다.  
+- 특수 문자를 포함하는 CN 값을 따옴표로 캡슐화합니다.  
+- CN 값에서 특수 문자를 제거합니다.  
+
+**예를 들어**, *테스트 사용자(TestCompany, LLC)* 로 표시되는 주체 이름이 있습니다.  CN에서 *TestCompany*와 *LLC* 사이에 쉼표가 포함되면 문제가 발생합니다.  전체 CN을 따옴표로 묶거나 하거나 *TestCompany*와 *LLC* 사이에서 쉼표를 제거하여 이러한 문제를 방지할 수 있습니다.
+- **따옴표 추가**: *CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **쉼표 제거**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+ 그러나 백슬래시 문자를 사용하여 쉼표를 이스케이프하려고 하면 CRP 로그에 오류가 발생하면서 실패합니다.  
+- **이스케이프된 쉼표**: *CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+이 오류는 다음 오류와 유사합니다. 
+
+```
+Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
+
+  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
+
+   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
+```
+
+
 
 ## <a name="assign-the-certificate-profile"></a>인증서 프로필 할당
 

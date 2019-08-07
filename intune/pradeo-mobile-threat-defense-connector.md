@@ -1,7 +1,7 @@
 ---
 title: Intune과 Pradeo Mobile Threat Defense 커넥터
 titleSuffix: Intune on Azure
-description: Intune과 Pradeo Mobile Threat Defense 커넥터를 설정합니다.
+description: 회사 리소스에 대한 모바일 디바이스 액세스를 제어하기 위해 Pradeo Mobile Threat Defense 커넥터에 Intune을 통합하는 방법을 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ccfe9ccd186f38a971aa6bac5d58bf61e44450d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ae354d2c5cd367c30d76f46022a8c430c6f81be3
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882758"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671074"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Intune과 Pradeo Mobile Threat Defense 커넥터
 

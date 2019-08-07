@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 758230d3d2f1dd1cb42532cce9fe1ff530000a16
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374850"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482854"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise용 Microsoft Managed Home Screen 앱 구성
 
@@ -386,6 +386,9 @@ JSON 데이터를 입력하여 Managed Home Screen에 사용 가능한 모든 �
 
 ## <a name="googles-android-device-policy-app"></a>Google의 Android 디바이스 정책 앱
 이제 Managed Home Screen 앱에서 Google의 Android 디바이스 정책 앱에 액세스할 수 있습니다. Managed Home Screen 앱은 Intune에 다중 앱 키오스크 모드를 사용하는 AE(Android 엔터프라이즈) 전용 디바이스로 등록된 디바이스에 사용되는 사용자 지정 시작 관리자입니다. Android 디바이스 정책 앱에서 액세스하거나 지원 및 디버깅을 위해 사용자를 Android 디바이스 정책 앱으로 안내할 수 있습니다. 이 시작 기능은 디바이스가 등록되고 Managed Home Screen으로 잠길 때 사용할 수 있습니다. 이 기능을 사용하기 위해 추가 설치가 필요하지 않습니다.
+
+## <a name="managed-home-screen-debug-screen"></a>Managed Home Screen 디버그 화면
+디버그 화면이 표시될 때까지 **뒤로** 단추를 클릭하여 Managed Home Screen의 디버그 화면에 액세스할 수 있습니다(**뒤로** 단추를 15번 이상 클릭). 이 디버그 화면에서 Android 디바이스 정책 애플리케이션을 시작하거나, 로그를 확인 및 업로드하거나, 키오스크 모드를 일시적으로 중지하여 디바이스를 업데이트할 수 있습니다. 키오스크 모드를 일시 중지하는 방법에 대한 자세한 내용은 Android Enterprise [전용 디바이스 설정](device-restrictions-android-for-work.md#dedicated-device-settings)에서 **키오스크 모드 유지** 항목을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

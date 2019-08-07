@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
-ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
+ms.openlocfilehash: 1dd836d8bbc4d6f32081c74fb6f9edc42aff2cac
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411592"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482968"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune에 대한 네트워크 엔드포인트  
 
@@ -146,7 +146,7 @@ Delivery Optimization 메타데이터의 경우:
 
 ## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune 인증서 커넥터  
 
-Microsoft Intune Certificate Connector를 호스트하는 서버는 다음 표에 나열된 공용 IP 위치에 **TCP** 포트 **443**을 사용하여 액세스할 수 있어야 합니다.  
+Microsoft Intune Certificate Connector를 호스트하는 서버는 다음 표에 나열된 공용 IP 위치에 **TCP** 포트 **443**을 사용하여 액세스할 수 있어야 합니다. 인증서에 대한 자세한 내용은 [Intune을 사용하여 PKCS 인증서 구성 및 사용](certficates-pfx-configure.md) 및 [Intune을 사용하여 SCEP 인증서 구성 및 사용](certificates-scep-configure.md)을 참조하세요.
 
 |Domains                             |IP 주소       |
 |---------------|--------------------------------------|

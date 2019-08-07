@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune에서 보안 기준선 사용 - Azure | Microsoft Docs
-description: 모바일 디바이스 관리용 Microsoft Intune을 사용하여 디바이스에서 사용자 및 데이터를 보호하기 위해 권장 Windows 보안 설정을 추가하거나 구성합니다. BitLocker 사용, Microsoft Defender Advanced Threat Protection 구성, Internet Explorer 제어, Smart Screen 사용, 로컬 보안 정책 설정, 암호 요구, 인터넷 다운로드 차단 등
+description: 권장 Windows 보안 설정에 따라 모바일 디바이스 관리용 Microsoft Intune을 사용하여 디바이스에서 사용자 및 데이터를 보호합니다. 암호화 사용, Microsoft Defender Advanced Threat Protection 구성, Internet Explorer 제어, 로컬 보안 정책 설정, 암호 요구, 인터넷 다운로드 차단 등을 수행할 수 있습니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353601"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671012"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 

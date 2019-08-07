@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
-ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
+ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68287227"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701007"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -76,9 +76,6 @@ iOS 및 Android에서 Microsoft Edge를 사용하도록 Azure AD 연결 웹앱�
 
 9. **할당** 섹션에서 **사용자 및 그룹**을 선택한 다음, 이 정책을 할당하려는 사용자 또는 그룹을 선택합니다.
 
-    > [!NOTE]
-    > 사용자는 또한 앱 구성 정책을 받으려면 Intune 앱 보호 정책을 사용해야 합니다. Intune 앱 보호 정책에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
-
 10. **할당** 섹션에서 **클라우드 앱**을 선택하여 이 정책으로 보호할 앱을 선택합니다.
 
 위의 정책이 구성되면 사용자는 Microsoft Edge를 사용하여 이 정책으로 보호한 Azure AD 연결 웹앱에 액세스해야 합니다. 사용자가 이 시나리오에서 비관리형 브라우저를 사용하려고 하면 Microsoft Edge를 사용해야 한다는 메시지가 표시됩니다.
@@ -96,8 +93,6 @@ SSO를 사용하려면 iOS 디바이스용 Microsoft Authenticator 앱 또는 An
 > 디바이스 등록은 Azure AD 서비스를 사용하는 간단한 체크 인입니다. 전체 디바이스를 등록할 필요가 없고 디바이스에 대한 추가 권한을 IT에 부여하지 않습니다.
 
 ## <a name="create-a-protected-browser-app-configuration"></a>보호된 브라우저 앱 구성 만들기
-
-앱 구성을 적용하려면 사용자의 보호되는 브라우저 또는 디바이스의 다른 앱이 [Intune 앱 보호 정책](app-protection-policy.md)을 통해 이미 관리되고 있어야 합니다.
 
 Microsoft Edge의 앱 구성을 만들려면
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57b459efa5b423f1c73a0d6b7b9172f71f4c86d3
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375166"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467464"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune에서 디바이스 암호화 사용  
 
@@ -66,10 +66,7 @@ Intune에서 관리할 수 있는 FileVault 설정에 대한 자세한 내용은
 
    예를 들면 다음과 같습니다. 손실되거나 최근 회전된 복구 키를 검색하려면 원하는 디바이스에서 Intune 회사 포털 웹 사이트에 로그인합니다. 포털에서 ‘디바이스’로 이동하고 FileVault를 사용하도록 설정한 디바이스를 선택한 다음 ‘복구 키 가져오기’를 선택합니다.   현재 복구 키가 표시됩니다.  
 
-6. 비즈니스 요구에 맞게 나머지 설정을 구성한 다음 **확인**을 선택합니다.  
-
-   > [!NOTE]
-   > 7월 릴리스 출시가 며칠 내에 완료될 때까지 FileVault의 지원이 제한됩니다. 출시가 완료될 때까지는 FileVault를 구성하는 경우 ‘로그아웃할 때까지 FileVault 연기’를 **사용**으로 설정해야 합니다.   
+6. 비즈니스 요구에 맞게 나머지 [FileVault 설정](endpoint-protection-macos.md#filevault)을 구성한 다음, **확인**을 선택합니다.  
 
 7. 추가 설정 구성을 완료한 다음 프로필을 저장합니다.  
 

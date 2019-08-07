@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 804c6485252883672de13bf13729b28a4d7d2f94
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883849"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590919"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
@@ -41,7 +41,7 @@ ms.locfileid: "67883849"
 
 ## <a name="microsoft-store-for-business-apps"></a>비즈니스용 Microsoft 스토어 앱
 
-비즈니스용 Microsoft 스토어 관리자 포털에서 구매한 최신 앱인 비즈니스용 Microsoft 스토어 앱은 관리용 Microsoft Intune에 동기화됩니다. 이 앱은 **온라인에서 라이선스**되거나 **오프라인에서 라이선스**될 수 있습니다. 비즈니스용 Microsoft 스토어 앱의 업데이트는 관리자에 의한 추가 작업이 필요 없이 Microsoft Store에서 직접 관리합니다. 관리자는 사용자 지정 URI(Uniform Resource Identifier)를 사용하여 특정 앱에 대한 업데이트를 방지할 수 있습니다. 자세한 내용은 [엔터프라이즈 앱 관리 - 앱의 자동 업데이트 방지](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates)를 참조합니다. 디바이스에서 최종 사용자는 모든 비즈니스용 Microsoft 스토어 앱에 대한 업데이트를 사용하지 못하도록 설정할 수도 있습니다. 
+비즈니스용 Microsoft Store 관리자 포털에서 구매한 최신 앱인 비즈니스용 Microsoft Store 앱은 관리용 Microsoft Intune에 동기화됩니다. 이 앱은 **온라인에서 라이선스**되거나 **오프라인에서 라이선스**될 수 있습니다. 비즈니스용 Microsoft 스토어 앱의 업데이트는 관리자에 의한 추가 작업이 필요 없이 Microsoft Store에서 직접 관리합니다. 사용자 지정 URI(Uniform Resource Identifier)를 사용하여 특정 앱에 대한 업데이트를 방지할 수도 있습니다. 자세한 내용은 [엔터프라이즈 앱 관리 - 앱의 자동 업데이트 방지](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates)를 참조합니다. 디바이스에서 최종 사용자는 모든 비즈니스용 Microsoft 스토어 앱에 대한 업데이트를 사용하지 못하도록 설정할 수도 있습니다. 
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 디바이스에서 앱 설치
 앱 형식에 따라 두 가지 방법 중 하나로 Windows 10 디바이스에 앱을 설치할 수 있습니다.

@@ -14,14 +14,14 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: c744878c49dfa5adb1b4f64587abfe06151a69a0
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882234"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670980"
 ---
-# <a name="intune-tenant-status-page"></a>Intune 테넌트 상태 페이지
+# <a name="use-the-intune-tenant-status-page"></a>Intune 테넌트 상태 페이지 사용
 테넌트 상태 페이지는 테넌트에 대한 현재 및 중요 세부 정보를 볼 수 있는 중앙 집중식 허브입니다. 이러한 세부 정보에는 라이선스 가용성 및 사용, 커넥터 상태, Intune 서비스에 대한 중요 통신 정보 등이 포함됩니다.  
 
 대시보드를 보려면 Azure Portal에서 **Intune > 테넌트 상태**로 이동합니다.  **도움말 및 지원 그룹** 아래에 테넌트 상태가 표시됩니다.  

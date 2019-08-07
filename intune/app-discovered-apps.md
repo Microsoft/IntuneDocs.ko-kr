@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1827375dc1905b5c881f743777a73340f0215e0c
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68388515"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590917"
 ---
 # <a name="intune-discovered-apps"></a>Intune 검색된 앱
 
@@ -30,13 +30,22 @@ Intune **검색된 앱**은 테넌트의 Intune 등록 디바이스에서 검색
 
 ## <a name="monitor-discovered-apps-with-intune"></a>Intune을 사용하여 검색된 앱 모니터링
 
-Intune은 테넌트의 Intune 등록 디바이스에서 검색된 앱의 목록을 제공합니다.
+Intune은 테넌트의 Intune 등록 디바이스에서 검색된 앱의 집계된 목록을 제공합니다.
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **Intune** 창에서 **클라이언트 앱** > **검색된 앱**을 선택합니다.
 
 >[!NOTE]
 >**검색된 앱** 블레이드에서 **내보내기**를 선택하여 검색된 앱 목록을 .csv 파일로 내보낼 수 있습니다.
+>
+>검색된 Win32 앱의 경우 현재 집계 개수가 없습니다. 이러한 유형의 데이터는 디바이스별로만 볼 수 있습니다.
+
+또한 Intune은 테넌트의 개별 디바이스에 대해 검색된 앱 목록을 제공합니다. 
+
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+2. Intune 창에서 **디바이스** > **모든 디바이스**를 선택합니다.
+3. 디바이스를 선택합니다.
+4. 이 디바이스에 대해 검색된 앱을 보려면 **모니터** 섹션에서 **검색된 앱**을 선택합니다. 
 
 ## <a name="details-of-discovered-apps"></a>검색된 앱의 세부 정보
 

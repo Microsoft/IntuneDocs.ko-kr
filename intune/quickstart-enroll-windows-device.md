@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/30/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3c14d55201f88f5090f404ca9a79dd902c8da5e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: efd4e8d013f0205541f6fcc37bb0bb8b5ea75bac
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041333"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670854"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>빠른 시작: Windows 10 장치 등록
 
@@ -67,7 +67,7 @@ Windows 10 Desktop을 등록하기 전에 설치한 Windows 버전을 확인해�
 
    ![시스템 설정의 스크린샷 - 계정](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-03.png)
 
-2. **회사 또는 학교 액세스** > **[+]연결**을 선택합니다.
+2. **회사 또는 학교 액세스** >  **[+]연결**을 선택합니다.
 
     ![회사 또는 학교 계정 액세스 선택](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
@@ -91,7 +91,7 @@ Windows 10 Desktop을 등록하기 전에 설치한 Windows 버전을 확인해�
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Intune에서 디바이스 등록 확인
 
 1. [Intune](https://aka.ms/intuneportal)에 글로벌 관리자 또는 Intune 서비스 관리자로 로그인합니다.
-2. Intune에 등록된 디바이스를 보려면 **장치**를 선택합니다.
+2. Intune에 등록된 디바이스를 보려면 **디바이스** > **모든 디바이스**를 선택합니다.
 3. Intune에 추가 디바이스가 등록되어 있는지 확인합니다.
 
    ![스크린샷 Intune에 등록된 디바이스](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)

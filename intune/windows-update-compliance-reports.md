@@ -1,5 +1,6 @@
 ---
-title: Microsoft Intune의 Windows 업데이트용 업데이트 규정 준수 보고서 사용 | Microsoft Docs
+title: Microsoft Intune의 Windows 업데이트용 업데이트 규정 준수 보고서 사용
+titleSuffix: Microsoft Intune
 description: OMS 업데이트 규정 준수를 사용하면 Intune으로 배포한 Windows 업데이트의 보고서 데이터를 볼 수 있습니다.
 keywords: ''
 author: brenduns
@@ -14,12 +15,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 09f3cafc16d8a08885731aa244a089367c6c0933
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66039660"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660403"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>업데이트에 대한 Intune 규정 준수 보고서
 Intune을 사용하여 Windows 10 디바이스에 Windows 업데이트를 배포할 때 Intune 또는 Microsoft OMS(Operations Management Suite)의 일부인 *업데이트 규정 준수*라는 무료 솔루션을 사용하여 업데이트 규정 준수에 대한 세부 정보를 살펴보세요.

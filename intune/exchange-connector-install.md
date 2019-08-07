@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427326"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660937"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune에서 Intune 온-프레미스 Exchange Connector 설정
 이 문서의 정보는 Intune용 Exchange Active Sync 온-프레미스 커넥터를 설치하고 모니터링하는 데 도움이 됩니다.  Intune 온-프레미스 Exchange Connector를 [조건부 액세스 정책과 함께 사용하여 Exchange 온-프레미스 사서함에 대한 액세스를 허용 또는 차단](conditional-access-exchange-create.md)할 수 있습니다. 
@@ -121,7 +121,7 @@ Intune 온-프레미스 Exchange Connector를 설치하려면 다음 단계를 �
 
 5. 사용자의 Exchange Server 사서함에 알림을 보내는 데 필요한 자격 증명을 입력합니다. 이 사용자를 알림에만 전용할 수 있습니다. 알림 사용자는 알림을 이메일로 보낼 수 있도록 Exchange 사서함이 필요합니다. 이러한 알림은 Intune에서 조건부 액세스 정책을 통해 구성할 수 있습니다.  
 
-       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
+   자동 검색 서비스 및 Exchange 웹 서비스가 Exchange 클라이언트 액세스 서버에 구성되어 있는지 확인합니다. 자세한 내용은 [Client Access server](https://technet.microsoft.com/library/dd298114.aspx)(클라이언트 액세스 서버)를 참조하세요.
 
 6. Intune이 Exchange Server에 액세스할 수 있도록 **암호** 필드에 이 계정의 암호를 입력합니다.
 
@@ -158,7 +158,7 @@ Intune은 구독당 여러 개의 온-프레미스 Exchange Connector를 지원�
 
 Exchange ActiveSync를 사용하여 5000개 이상의 디바이스를 지원하는 경우 선택적 설정을 구성하여 커넥터의 성능을 향상할 수 있습니다. Exchange에서 PowerShell 명령 runspace의 여러 인스턴스를 사용하도록 설정하면 성능이 향상됩니다. 
 
-변경하기 전에 Exchange Connector를 실행하는 데 사용하는 계정이 다른 Exchange 관리 목적으로 사용되고 있지 않은지 확인합니다. Exchange에 계정당 runspace가 18개로 제한되고, 대부분 커넥터에서 사용되기 때문입니다. 
+변경하기 전에 Exchange Connector를 실행하는 데 사용하는 계정이 다른 Exchange 관리 목적으로 사용되고 있지 않은지 확인합니다. Exchange에 계정당 runspace가 제한되고, 대부분 커넥터에서 사용되기 때문입니다. 
 
 이 성능 변경은 이전의 느린 하드웨어에서 실행되는 커넥터에는 적합하지 않습니다.  
 
