@@ -7,14 +7,39 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67812440"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68775898"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다. 
+
+
+### <a name="decreasing-support-for-android-device-administrator"></a>Android 디바이스 관리자에 대한 지원 감소 
+Android 디바이스 관리자("레거시" Android 관리라고도 하며 Android 2.2를 통해 출시됨)는 Android 디바이스를 관리하는 방법입니다. 그러나 이제 향상된 관리 기능을 [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise)(Android 5.0을 통해 출시)에서 사용할 수 있습니다. 최신의 풍부하고 보다 안전한 디바이스 관리로 전환하기 위해 Google은 새로운 Android 릴리스에서 디바이스 관리자 지원을 줄이고 있습니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+Google의 이러한 변경으로 인해 Intune 사용자는 다음과 같은 방식으로 영향을 받습니다. 
+- Intune은 Android 10 이상(Android Q라고도 함) ~ Summer 2020을 실행하는 디바이스 관리자 관리형 Android 디바이스만 지원할 수 있습니다. 이 날짜는 Android의 차기 주 버전이 출시될 것으로 예상되는 날짜입니다.  
+- 2020 여름 이후에 Android 10 이상을 실행하는 디바이스 관리자 관리형 디바이스는 더 이상 완전히 관리할 수는 없게 됩니다.    
+- Android 10 미만의 Android 버전을 유지하는 디바이스 관리자 관리형 Android 디바이스는 영향을 받지 않으며, 디바이스 관리자를 통해 계속해서 완전히 관리할 수 있습니다.  
+- 모든 Android 10 이상 디바이스에 대해 Google은 회사 포털과 같은 디바이스 관리자 관리형 에이전트가 디바이스 식별자 정보에 액세스하는 기능을 제한하고 있습니다. 이러한 점은 디바이스를 Android 10 이상으로 업데이트한 이후에 다음 Intune 기능에 영향을 줍니다. 
+    - VPN에 대한 네트워크 액세스 제어는 더 이상 작동하지 않습니다.  
+    - IMEI 또는 일련 번호를 사용하여 회사 소유의 디바이스를 식별해도 디바이스가 회사 소유로 자동으로 표시되지 않습니다. 
+    - IMEI 및 일련 번호는 Intune의 IT 관리자에게 더 이상 표시되지 않습니다. 
+        > [!Note]
+        > 이러한 문제는 Android 10 이상의 디바이스 관리자 관리형 디바이스에만 영향을 주고 Android Enterprise로 관리되는 디바이스에는 영향을 주지 않습니다. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+Summer 2020에 제공될 기능 감소를 피하려면 다음을 수행하는 것이 좋습니다.
+- 새 디바이스를 디바이스 관리자 관리에 온보딩하지 않습니다.
+- 디바이스에 Android 10에 대한 업데이트가 수신될 예정인 경우, 디바이스 관리자 관리에서 Android Enterprise 관리 및/또는 앱 보호 정책으로 마이그레이션합니다.
+
+#### <a name="additional-information"></a>추가 정보
+- [디바이스 관리자에서 Android Enterprise로 마이그레이션하기 위한 Google 지침](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
+- [디바이스 관리자 API 사용 중단 계획에 대한 Google 설명서](https://developers.google.com/android/work/device-admin-deprecation)
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Android 회사 포털 앱을 최신 버전으로 업데이트 <!--4536963-->
 Intune은 Android 회사 포털 앱에 대한 업데이트를 주기적으로 릴리스합니다. 2018년 11월에 Microsoft는 회사 포털 업데이트를 발표했습니다. 이 업데이트에는 Google의 기존 알림 플랫폼에서 FCM(Firebase Cloud Messaging)으로 변경할 수 있도록 지원하는 백엔드 스위치가 포함되어 있습니다. Google이 기존 알림 플랫폼을 사용 중지하고 FCM으로 이동하면 최종 사용자는 회사 포털 앱을 2018년 11월 릴리스 이상으로 업데이트해야 Google Play 스토어와 계속 통신할 수 있습니다.
@@ -57,13 +82,13 @@ O365 모바일 앱이 iOS 11.0 이상에서 지원되는 경우 이는 사용자
 디바이스 또는 사용자가 받을 수 있는 영향에 대해 알아보려면 Intune 보고를 확인하세요. **디바이스** > **모든 디바이스**로 이동하고 OS를 기준으로 필터링합니다. 추가 열에 추가하면 iOS 10을 실행하는 디바이스를 가진 조직의 사용자를 식별하는 데 도움이 됩니다. 최종 사용자는 9월 전에 지원되는 OS 버전으로 자신의 디바이스를 업그레이드하도록 요청합니다.
 
 ### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>변경 계획: iOS용 Intune App SDK 버전 8.1.1 이상 지원 <!-- 3586942-->
-2019년 9월부터 Intune은 Intune App SDK 8.1.1 이상을 사용하여 iOS 앱 지원으로 전환됩니다. 8\.1.1 미만의 SDK 버전으로 빌드된 앱은 더 이상 지원되지 않습니다. 이 변경 내용은 9월경에 출시될 예정이며 MC181399에서도 공지되는 Apple의 iOS 13 릴리스와 함께 적용될 예정입니다.
+2019년 9월부터 Intune은 Intune App SDK 8.1.1 이상을 사용하여 iOS 앱 지원으로 전환됩니다. 8\.1.1 미만의 SDK 버전으로 빌드된 앱은 더 이상 지원되지 않습니다. 이 변경 내용은 9월경에 적용될 예정이며 MC181399에서도 공지되는 Apple의 iOS 13 릴리스와 함께 적용될 예정입니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 Intune App SDK 또는 App Wrapping 통합을 사용하면 데이터 암호화를 통해 승인되지 않은 애플리케이션 및 사용자로부터 회사 데이터를 보호할 수 있습니다. iOS용 Intune App SDK는 Intune APP(앱 보호 정책)에서 암호화를 사용하도록 설정할 때 기본적으로 256비트 암호화 키를 사용합니다. 이 변경 후 128비트 암호화 키를 사용하는 8.1.1 이전 SDK 버전의 iOS 앱은 더 이상 SDK 8.1.1과 통합된 애플리케이션 또는 256비트 키를 사용하여 데이터를 공유할 수 없습니다. 모든 iOS 앱에는 보호된 데이터 공유를 허용하기 위해 SDK 버전 8.1.1 이상이 있어야 합니다.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
-Microsoft, 타사 및 LOB(기간 업무) 앱을 확인합니다. Intune 앱으로 보호되는 모든 애플리케이션이 SDK 버전 8.1.1 이상을 사용하고 있는지 확인해야 합니다.
+Microsoft, 타사 및 LOB(기간 업무) 앱을 확인합니다. Intune 앱으로 보호되는 모든 애플리케이션이 SDK 버전 8.1.1 이상을 사용하고 있는지 확인합니다.
 
 - LOB 앱의 경우: SDK 버전 8.1.1 이상과 통합된 앱을 다시 게시해야 할 수도 있습니다. 최신 SDK 버전을 사용하는 것이 좋습니다. 앱 보호 정책용 LOB 앱을 준비하는 방법에 대한 내용은 [앱 보호 정책용 기간 업무 앱 준비](../apps-prepare-mobile-application-management.md)를 참조하세요.
 - Microsoft/타사 앱의 경우: 이러한 앱의 최신 버전을 사용자에게 배포하고 있는지 확인합니다.
@@ -88,3 +113,22 @@ Intune 서비스의 8월 릴리스 또는 1908부터, “사용자가 다시 시
 필요한 경우 설명서 및 모든 자동화 스크립트를 업데이트합니다. 
 
 개입형 다시 시작 설정을 제거하기 전에 업데이트된 정보를 제공하고 메시지 센터에 미리 알림을 게시할 것입니다.
+
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>변경 계획: 10월에 Android 5.0 이상을 지원하도록 Android용 Intune 앱 SDK 및 앱 보호 정책 전환 <!--4911065 -->
+Intune은 10월에 Android 5.x(Lollipop) 이상을 지원하도록 전환되고 있습니다. 최신 Intune 앱 SDK를 사용하여 래핑된 앱을 업데이트하고 디바이스를 업데이트합니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+Android용 SDK 또는 앱을 사용하고 있지 않거나 향후 사용할 예정인 경우 이 변경의 영향을 받지 않습니다. Intune 앱 SDK를 사용하는 경우 최신 버전으로 업데이트하고, 디바이스를 Android 5.x 이상으로 업데이트해야 합니다. 업데이트하지 않으면 앱은 업데이트를 받지 못하며 해당 환경 품질이 시간이 흐름에 따라 저하됩니다. 
+
+아래에서 Android 버전 4.x를 실행하는 Intune에 등록된 일반 디바이스 목록을 찾아보세요. 이러한 디바이스 중 하나를 사용하는 경우 이 디바이스에서 Android 버전 5.0 이상을 지원하거나 Android 버전 5.0 이상을 지원하는 디바이스로 대체되도록 적절한 단계를 수행합니다. 이 목록은 평가해야 할 수 있는 모든 디바이스를 포함하지는 않습니다.
+- Samsung SM-T561  
+- Samsung SM-T365 
+- Samsung GT-I9195 
+- Samsung SM-G800F
+- Samsung SM-G357FZ
+- Motorola XT1080
+- Samsung GT-I9305
+- Samsung SM-T231
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+최신 Intune 앱 SDK를 사용하여 앱을 래핑합니다. 사용자가 개인 디바이스의 최종 사용자에게 업그레이드할 것을 알리도록 "최소 OS 버전 필요(경고만)" 조건부 시작 설정을 지정할 수도 있습니다.
