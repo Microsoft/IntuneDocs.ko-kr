@@ -1,11 +1,12 @@
 ---
-title: Intune에 대한 Windows 10 전송 최적화 설정 | Microsoft Docs
+title: Intune의 Windows 10 전송 최적화 설정
+titleSuffix: Microsoft Intune
 description: Intune을 사용하여 배포할 수 있는 Windows 10 디바이스의 전송 최적화 설정입니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/09/2019
+ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493898"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756561"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune의 전송 최적화 설정
 
@@ -66,6 +67,15 @@ ms.locfileid: "67493898"
 | [최대 캐시 기간(일)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | 각 파일이 성공적으로 다운로드된 후 디바이스의 전송 최적화 캐시에 파일을 보관하는 기간을 지정합니다.   <br><br>Intune에서는 캐시 기간을 일 단위로 구성합니다. 사용자가 정의하는 일 수는 해당 시간(초)으로 변환되며, Windows는 이 방식으로 이 설정을 정의합니다. 예를 들어 Intune 구성 3일은 디바이스에서 259200초(3일)로 변환됩니다.  <br><br>**기본값**: *값을 구성하지 않음*     <br><br>**권장**: 7   <br><br>정책 CSP: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | 최대 캐시 크기 형식  | *세부 정보 참조*    | 전송 최적화에 사용되는 디바이스의 디스크 공간 크기를 관리하는 방법을 선택합니다. 구성하지 않을 경우 캐시 크기는 기본적으로 사용 가능한 디스크 공간의 20%로 설정됩니다.  <br><ul><li>**구성되지 않음**(기본값)</li><br><li>**절대** – 디바이스가 전송 최적화에 사용할 수 있는 최대 드라이브 공간 크기를 구성하는 [절대 최대 캐시 크기(GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size)를 지정합니다. 0으로 설정하면 캐시 크기 제한이 사라집니다. 단, 디바이스의 디스크 공간이 얼마 남지 않으면 전송 최적화에서 캐시를 지웁니다. <br><br>Windows 1607 필요<br><br> 정책 CSP: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**백분율** – 디바이스가 전송 최적화에 사용할 수 있는 최대 드라이브 공간 크기를 구성하는 [최대 캐시 크기(%)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size)를 지정합니다. 백분율은 사용 가능한 드라이브 공간을 의미하며, 전송 최적화에서는 사용 가능한 드라이브 공간을 지속적으로 평가하여 최대 캐시 크기가 설정된 백분율을 넘지 않도록 캐시를 지웁니다. <br><br>Windows 1511 필요<br><br>정책 CSP: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [VPN 피어 캐싱](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | **사용**을 선택하여 VPN을 통해 도메인 네트워크에 연결되어 있는 동안 피어 캐싱에 참여하도록 디바이스를 구성합니다. 사용하도록 설정된 디바이스는 VPN 또는 회사 도메인 네트워크의 다른 도메인 네트워크에(서) 업로드 또는 다운로드할 수 있습니다.  <br><br>**기본값**: 구성되지 않음  <br><br>정책 CSP: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
+
+## <a name="local-server-caching"></a>로컬 서버 캐싱  
+
+|Setting  |Windows 버전  |세부 정보  |
+|---------|-----------------|---------|
+|캐시 서버 호스트 이름 | 1809  |배달 최적화를 위해 장치에서 사용할 네트워크 캐시 서버의 IP 주소 또는 FQDN을 지정 하 고 **추가** 를 선택 하 여 해당 항목을 목록에 추가 합니다.  <br><br>**기본값**: 구성되지 않음  <br><br>정책 CSP: [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
+|[지연 포그라운드 다운로드 캐시 서버 대체 (초)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |포그라운드 콘텐츠 다운로드를 위해 캐시 서버에서 HTTP 원본으로의 대체 (fallback)를 지연 하는 시간 (초)을 지정 합니다 (0-2592000). Http에서 포그라운드 다운로드를 지연 하는 정책을 사용 하는 경우 먼저 적용 됩니다 (피어에서 다운로드를 허용 하도록). (0-2592000)    <br><br>**기본값**: 0  <br><br>정책 CSP [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)  |
+|[백그라운드 다운로드 캐시 서버 대체 지연 (초)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs) | 1903    |백그라운드 콘텐츠 다운로드를 위해 캐시 서버에서 HTTP 소스로 대체를 지연 하는 시간 (초)을 지정 합니다 (0-2592000). *백그라운드 HTTP 다운로드 지연 (초)* 이 구성 되 면 피어에서 다운로드를 허용 하기 위해 해당 설정이 먼저 적용 됩니다. (0-2592000)   <br><br>**기본값**: 0 <br><br>정책 CSP: [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)  |
+
 
 ## <a name="next-steps"></a>다음 단계
 

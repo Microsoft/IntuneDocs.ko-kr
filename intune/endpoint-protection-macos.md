@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467411"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756503"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune에서 macOS 엔드포인트 보호 설정  
 
@@ -97,11 +97,18 @@ Apple 대해 filevault 켭니다 설정에 대 한 자세한 내용은 Apple dev
     - **개인 복구 키 회전** -장치의 개인 복구 키를 회전 하는 빈도를 지정 합니다. **구성 되지 않음**의 기본값 또는 **1** ~ **12** 개월 값을 선택할 수 있습니다.  
 
   - **로그 아웃 시 프롬프트 사용 안 함**  
-    사용자가 로그 아웃할 때 대해 filevault 켭니다을 허용 하도록 요청 하는 메시지를 표시 하지 않습니다.  사용 안 함으로 설정 된 경우 로그 아웃 시 프롬프트가 비활성화 되 고 대신 사용자가 로그인 할 때 사용자에 게 메시지가 표시 됩니다.  
+    사용자가 로그 아웃할 때 대해 filevault 켭니다을 허용 하도록 요청 하는 메시지를 표시 하지 않습니다.  사용으로 설정 된 경우 로그 아웃 시 프롬프트가 비활성화 되며 대신 사용자가 로그인 할 때 사용자에 게 메시지가 표시 됩니다.  
     - **구성되지 않음**  
-    - **사용 안 함**  
+    - **사용** -로그 아웃 시 프롬프트를 사용 하지 않도록 설정 합니다.
 
     **기본값**: 구성되지 않음  
+
+     > [!IMPORTANT]  
+     > **로그 아웃 시 프롬프트 사용 안 함** 설정이 *사용*으로 설정 된 경우 알려진 문제가 있습니다. *사용*으로 설정 된 경우 **바이패스에 허용 되는 횟수** 에 대 한 설정은 값으로 설정 해야 하며 *구성 되지 않음*으로 설정 하면 안 됩니다. *구성 되지 않음*으로 설정 하면 장치에서 프로필이 실패 합니다. 이 시나리오에서 장치는 추가 정보 없이 **오류로 인해** **프로필 상태 요약** 을 보고 합니다.
+     > 
+     > **로그 아웃 시 확인 사용 안 함** 이 *구성 되지 않음*으로 설정 된 경우 **바이패스에 허용** 되는 횟수는 *구성 되지* 않거나 값을 가질 수 있습니다.  
+     > 
+     > 이 문제는 향후 업데이트에서 해결될 예정입니다. 
 
   - **바이패스에 허용 되는 횟수**  
   사용자가 로그인 하는 데 대해 filevault 켭니다가 필요 하기 전에 사용자가 대해 filevault 켭니다를 사용 하도록 설정 하 라는 메시지를 무시할 수 있는 횟수를 설정 합니다.  
