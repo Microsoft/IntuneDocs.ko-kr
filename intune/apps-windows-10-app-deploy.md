@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590919"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680067"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
@@ -34,6 +34,8 @@ ms.locfileid: "68590919"
 > 최신 앱을 배포하는 데 필요한 최소 Windows 10 업데이트는 다음과 같습니다.
 > - Windows 10 1803의 경우, [2018년 5월 23일—KB4100403(OS 빌드 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)입니다.
 > - Windows 10 1709의 경우, [2018년 6월 21일—KB4284822(OS 빌드 16299.522)](https://support.microsoft.com/help/4284822)입니다.
+>
+> 연결된 기본 사용자가 없는 경우 Windows 10 1803 이상에서만 앱 설치를 지원합니다.
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 기간 업무 앱
 

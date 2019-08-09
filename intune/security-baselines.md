@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671012"
+ms.locfileid: "68679961"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -67,7 +67,7 @@ Intune 콘솔에서 사용할 수 있는 보안 기준과 관련 정보를 확�
 다음 보안 기준 인스턴스는 Intune에서 사용할 수 있습니다. 링크를 사용하여 각 기준의 최근 인스턴스에 대한 설정을 확인하세요. 
 
 - **MDM 보안 기준**
-  - [2019년 봄(19H1) MDM 보안 기준](security-baseline-settings-mdm.md)
+  - [2019년 5월 MDM 보안 기준](security-baseline-settings-mdm.md)
   - [미리 보기: 2018년 10월 MDM 보안 기준](security-baseline-settings-mdm-archive.md)
 
 - **Microsoft Defender ATP 기준**  

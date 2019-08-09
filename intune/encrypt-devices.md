@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 09b5e59f4af534d4919574631568a7581bb3fba9
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467464"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756538"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune에서 디바이스 암호화 사용  
 
@@ -67,6 +67,13 @@ Intune에서 관리할 수 있는 FileVault 설정에 대한 자세한 내용은
    예를 들면 다음과 같습니다. 손실되거나 최근 회전된 복구 키를 검색하려면 원하는 디바이스에서 Intune 회사 포털 웹 사이트에 로그인합니다. 포털에서 ‘디바이스’로 이동하고 FileVault를 사용하도록 설정한 디바이스를 선택한 다음 ‘복구 키 가져오기’를 선택합니다.   현재 복구 키가 표시됩니다.  
 
 6. 비즈니스 요구에 맞게 나머지 [FileVault 설정](endpoint-protection-macos.md#filevault)을 구성한 다음, **확인**을 선택합니다.  
+
+   > [!IMPORTANT]  
+   > **로그아웃 시 프롬프트 사용 안 함** 설정이 *사용*으로 설정되는 알려진 문제가 있습니다. *사용*으로 설정하면 **바이패스 허용 횟수** 설정이 값으로 설정되어야 하며 *구성되지 않음*으로 설정되어서는 안 됩니다. *구성하지 않음*으로 설정하면, 프로필이 디바이스에서 실패합니다. 이 시나리오에서는 디바이스가 추가 세부 정보 없이 **프로필 상태 요약**을 **오류**로 보고합니다.
+   > 
+   > **로그아웃 시 프롬프트 사용 안 함**이 *구성되지 않음*으로 설정되면, **바이패스 허용 횟수**가 *구성되지 않음*이나 값이 있을 수 있습니다.  
+   > 
+   > 이 문제는 향후 업데이트에서 해결될 예정입니다. 
 
 7. 추가 설정 구성을 완료한 다음 프로필을 저장합니다.  
 
