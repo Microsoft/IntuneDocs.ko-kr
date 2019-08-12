@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660389"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680113"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune에서 사용자 지정 알림 보내기  
 
@@ -38,8 +38,9 @@ Microsoft Intune를 사용하여 관리형 iOS 및 Android 디바이스의 사�
 ## <a name="considerations-for-using-custom-notifications"></a>사용자 지정 알림 사용에 관한 고려 사항  
 
 **디바이스 구성**:  
-- 사용자가 사용자 지정 알림을 받으려면 디바이스에 회사 포털 앱이 설치되어 있어야 합니다. 또한 회사 포털 앱이 푸시 알림을 보내도록 허용하는 권한도 구성했어야 합니다. 회사 포털에서 사용자에게 알림을 허용할지 묻는 메시지를 표시합니다.  
+- 사용자가 사용자 지정 알림을 받으려면 디바이스에 회사 포털 앱이 설치되어 있어야 합니다. 또한 회사 포털 앱이 푸시 알림을 보내도록 허용하는 권한도 구성했어야 합니다. 회사 포털 앱이 설치되거나 업데이트될 때마다 사용자에게 알림을 허용할지 묻는 메시지가 표시됩니다.  
 - Android에서는 Google Play 서비스가 필수 종속성입니다.  
+- 디바이스가 MDM에 등록되어 있어야 합니다.
 
 **알림 만들기**:  
 - 메시지를 작성하려면 **조직**의 **업데이트** 권한을 포함하는 Intune역할이 할당된 계정을 사용합니다. 사용자에게 권한을 할당하려면 [역할 할당](role-based-access-control.md#role-assignments)을 참조하세요.  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884871"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783250"
 ---
 # <a name="create-a-design"></a>설계 만들기
 
@@ -116,7 +116,7 @@ Intune은 두 가지 배포 옵션 즉, 독립 실행형 및 하이브리드를 
 
 ## <a name="intune-tenant-location"></a>Intune 테넌트 위치
 
-조직이 글로벌 서비스를 제공하는 경우 서비스를 구독할 때 테넌트가 상주할 위치를 계획해야 합니다. 처음으로 Intune 구독을 등록하고 아래에 나와 있는 전 세계의 지역에 매핑할 때 국가가 정의됩니다.
+조직이 글로벌 서비스를 제공하는 경우 서비스를 구독할 때 테넌트가 상주할 위치를 계획해야 합니다. Intune 구독을 처음으로 등록하고 다음과 같은 전 세계의 국가/지역에 매핑하면 국가/지역이 정의됩니다.
 
 - 북아메리카
 
@@ -125,7 +125,7 @@ Intune은 두 가지 배포 옵션 즉, 독립 실행형 및 하이브리드를 
 - 아시아 및 태평양
 
 >[!IMPORTANT]
-> 국가 및 테넌트 위치는 나중에 변경할 수 없습니다.
+> 국가/지역 및 테넌트 위치는 나중에 변경할 수 없습니다.
 
 ## <a name="external-dependencies"></a>외부 종속성
 

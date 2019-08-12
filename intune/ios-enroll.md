@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
+ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883022"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68738287"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune에 iOS 디바이스 등록
 
@@ -32,8 +32,10 @@ Intune 관리자는 iOS 디바이스에 대한 등록을 사용하도록 설정�
 
 ## <a name="prerequisites-for-ios-enrollment"></a>iOS 등록을 위한 필수 구성 요소
 iOS 디바이스를 사용하도록 설정하기 전에 다음 단계를 완료해야 합니다.
+- [Apple 디바이스 등록이 가능한 디바이스인지 확인합니다](https://support.apple.com/en-us/HT204142#eligibility).
 - [Intune 설정](setup-steps.md) - 이러한 단계에서는 Intune 인프라를 설정합니다. 특히 디바이스를 등록하려면 [MDM 기관을 설정](mdm-authority-set.md)해야 합니다.
 - [Apple MDM 푸시 인증서 가져오기](apple-mdm-push-certificate-get.md) - Apple의 경우 iOS 및 macOS 디바이스 관리를 사용하려면 인증서가 필요합니다.
+
 
 ## <a name="user-owned-ios-devices-byod"></a>사용자 소유 iOS 디바이스(BYOD)
 

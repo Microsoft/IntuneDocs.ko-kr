@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d23e725db965a249522f7f8fa89f8bb27bc24fd8
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045207"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680002"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro로 관리되는 Mac에서 준수 적용
 
@@ -33,7 +33,10 @@ Azure Active Directory 및 Microsoft Intune의 조건부 액세스 정책을 사
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Intune에서 디바이스 준수 정책 설정
 
 1. Microsoft Azure를 열고 **Intune** > **장치 준수** > **정책**으로 이동합니다. 비준수 사용자 및 그룹에 대한 일련의 작업(예: 경고 이메일 보내기) 선택을 포함하여 macOS에 대한 정책을 만들 수 있습니다.
-2. 원하는 그룹을 검색한 후 정책을 적용합니다.
+2. [정책] > [할당]을 선택합니다. Azure AD(Active Directory) 보안 그룹을 포함하거나 제외할 수 있습니다.
+3. [선택된 그룹]을 선택하면 Azure AD 보안 그룹이 표시됩니다. 이 정책을 적용할 사용자 그룹을 선택한 후 [저장]을 선택하여 정책을 사용자에게 배포합니다.
+
+사용자에게 정책을 적용했습니다. 정책의 대상이 되는 사용자가 사용하는 디바이스의 준수 여부가 평가되고 Azure Active Directory에서 “준수 상태로 표시된 디바이스 필요” 설정에 대해 준수 상태로 표시됩니다.
 
 > [!Note]
 > Intune에서 정책을 준수하려면 전체 디스크 암호화가 필요합니다.

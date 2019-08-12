@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,35 +16,40 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec97819e49bdb1564b8dd75b23302608492e183
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 38b381fca17dec66303958ee04c018967ae0d999
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397346"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833538"
 ---
-# <a name="licenses-that-include-intune"></a>Intune을 포함하는 라이선스
+# <a name="microsoft-intune-licensing"></a>Microsoft Intune 라이선스
+Microsoft Intune은 학교와 소규모 비즈니스를 위한 사용이 간단한 관리 경험부터 엔터프라이즈 고객에게 필요한 고급 기능까지, 다양한 고객 요구 사항 및 조직 규모를 위해 제공됩니다. Microsoft Intune이 포함된 대부분의 라이선스에서는 구독이 활성 상태인 한 System Center Configuration Manager를 사용할 수 있는 권리도 제공합니다. 
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+## <a name="microsoft-intune"></a>Microsoft Intune
+Intune은 다음과 같은 라이선스에 포함되어 있습니다.
 
-다음 표는 각 라이선스에서 어떤 Intune 버전을 사용할 수 있는지 보여줍니다.
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Enterprise Mobility + Security E5
+- Enterprise Mobility + Security E3
+- Microsoft 365 Business
+- Microsoft 365 F1
 
-| 라이선스 | 포함된 Intune 버전 | 가격 및 기능 비교 |
-|-----------------------------------------------------------------------|-------------------------------------------------------------|---|
-| Intune | Intune | [자세한 정보](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E3 | Intune | [자세한 정보](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E5 | Intune | [자세한 정보](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 Education A1 | 교육용 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A3 | 교육용 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A5 | 교육용 Intune | [자세한 정보](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 E3 | Intune | [자세한 정보](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 E5 | Intune | [자세한 정보](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 F1 | Intune | [자세한 정보](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Microsoft 365 Business | Intune | [자세한 정보](https://www.microsoft.com/en-us/microsoft-365/business) |
 
-Intune은 이 목록에 없는 라이선스에 포함되지 않습니다.
 
-사용자가 해당 라이선스에 포함된 모든 기능을 직접 또는 간접적으로 활용하려면 올바른 라이선스가 있어야 합니다.
+## <a name="microsoft-intune-for-education"></a>Microsoft Intune for Education
+Intune for Education은 다음과 같은 라이선스에 포함되어 있습니다.
 
-사용자에게 라이선스를 할당하려면 [Intune 라이선스를 사용자 계정 문서에 할당](licenses-assign.md)을 참조하세요.
+- Microsoft 365 Education A5
+- Microsoft 365 Education A3
 
+## <a name="additional-information"></a>추가 정보
+- 위에 나열된 번들에 더해 독립 실행형인 Microsoft Intune 사용자 및 디바이스 구독도 있습니다.
+- Microsoft Intune 디바이스 전용 구독은 사용자 선호도 기능이 필요하지 않은 키오스크 유형 시나리오에서 사용 가능합니다.
+- 사용자 또는 디바이스가 직접적 또는 간접적으로 Microsoft Intune 서비스의 혜택을 받는 경우([Microsoft API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)를 통해 Microsoft Intune 서비스에 액세스하는 경우 포함)에는 적절한 Microsoft Intune 라이선스가 필요합니다.
+- 위 표에 나열되지 않은 라이선스에는 Intune이 포함되어 있지 않습니다.
+
+[Microsoft 라이선스](https://www.microsoft.com/licensing/default) 페이지를 방문하여 제품 버전, 제품 라이선스 업데이트, 볼륨 라이선스 플랜 및 각 사용 사례에 해당하는 정보를 확인하세요.  
+
+사용자 및 디바이스 라이선스가 서비스에 대한 액세스에 영향을 주는 방식과 사용자에게 라이선스를 할당하는 방법을 알아보려면 [사용자 계정에 Intune 라이선스 할당](licenses-assign.md) 문서를 참조하세요.

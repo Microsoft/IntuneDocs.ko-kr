@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c962085ce61f01613bfc04ef0c80699e6f5a3e8
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 94c92f70844594fd8524f2e49c537f1afaadaf96
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547422"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783188"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 디바이스 자동 등록
 
@@ -44,7 +44,7 @@ Knox 배포 프로그램에 참여하는 공인 재판매인으로부터 디바�
 ## <a name="prerequisites"></a>전제 조건
 
 KME를 사용하여 Intune에 등록하려면 먼저 다음 단계에 따라 삼성 Knox 포털에 회사를 등록해야 합니다.
-1. [KME가 사용자 지역에서 사용할 수 있는지 확인](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME는 55개 이상 국가에서 사용할 수 있습니다. 해당 국가의 배포가 지원되는지 확인합니다.
+1. [해당 국가/지역에서 KME를 사용할 수 있는지 확인](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME는 55여 개의 국가/지역에서 사용할 수 있습니다. 배포하려는 국가/지역이 지원되는지 확인하세요.
 
 2. [지원되는 디바이스](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME는 Android 등록의 경우 Knox 2.4 이상, Android 엔터프라이즈 등록의 경우 Knox 2.8 이상인 모든 Samsung 디바이스에서 사용할 수 있습니다.
 

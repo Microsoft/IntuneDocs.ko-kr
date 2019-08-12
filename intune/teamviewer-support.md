@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8b39c9f4f875ca458817940819716e1188d36eef
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882241"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783265"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer를 사용하여 Intune 디바이스 원격 관리
 
@@ -28,7 +28,10 @@ ms.locfileid: "67882241"
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 지원되는 디바이스를 사용합니다. Intune에서 관리하는 Android, Windows, iOS 및 macOS 디바이스는 원격 관리를 지원합니다. TeamViewer는 Windows Holographic(HoloLens), Windows Team(Surface Hub) 또는 Windows 10 S를 지원하지 않을 수 있습니다. 지원 가능성에 대해서는 [TeamViewer](https://www.teamviewer.com)의 모든 업데이트를 참조합니다.
+- 지원되는 디바이스를 사용합니다. Intune에서 관리하는 Android 디바이스 관리자, Android 회사 프로필, Windows, iOS 및 macOS 디바이스는 원격 관리를 지원합니다. TeamViewer는 Windows Holographic(HoloLens), Windows Team(Surface Hub) 또는 Windows 10 S를 지원하지 않을 수 있습니다. 지원 가능성에 대해서는 [TeamViewer](https://www.teamviewer.com)의 모든 업데이트를 참조합니다.
+
+> [!NOTE]
+> Android 전용 및 완전 관리형은 지원되지 않습니다.
 
 - Azure Portal 내에서 Intune 관리자는 다음 [Intune 역할](role-based-access-control.md)을 해야 합니다.  
 

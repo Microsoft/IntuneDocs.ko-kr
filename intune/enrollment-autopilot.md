@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9ac1830bcc407431cf0a5df8e8c11baa0c27c9c
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625110"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700992"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -99,7 +99,7 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
     - **EULA(최종 사용자 사용권 계약)** : 사용자에게 EULA를 표시할지 여부를 선택합니다(Windows 10 버전 1709 이상).
     - **개인 정보 설정**: 사용자에게 개인 정보 설정을 표시할지 여부를 선택합니다.
     >[!IMPORTANT]
-    >Windows 10 버전 1903 디바이스의 이상에서 Autopilot 배포의 경우 진단 데이터 기본 값이 자동으로 전체로 설정됩니다. 자세한 내용은 [Windows 진단 데이터](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data)를 참조하세요. <br>
+    >진단 데이터 설정의 기본값은 Windows 버전에 따라 다릅니다. Windows 10 버전 1903을 실행하는 디바이스의 경우, 첫 실행 경험 중에 기본값이 전체로 설정됩니다. 자세한 내용은 [Windows 진단 데이터](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data)를 참조하세요. <br>
     
     - **계정 변경 옵션 숨기기(Windows 10, 버전 1809 이상 필요)** : **숨기기**를 선택하면 계정 변경 옵션이 회사 로그인 및 도메인 오류 페이지에서 표시되지 않습니다. 이러한 옵션을 사용하려면 [Azure Active Directory에서 회사 브랜딩을 구성](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)해야 합니다.
     - **사용자 계정 유형**: 사용자 계정 유형(**관리자** 또는 **표준** 사용자)을 선택합니다.
