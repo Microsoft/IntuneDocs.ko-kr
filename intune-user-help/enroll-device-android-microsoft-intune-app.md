@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735750"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862311"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Microsoft Intune 앱으로 회사 디바이스 등록
 
@@ -50,9 +50,9 @@ ms.locfileid: "67735750"
 
      다른 메서드를 사용해야 하는 경우 3단계를 진행합니다.    
 
-1. Wi-Fi에 연결하고 **다음**을 탭합니다. 등록 메서드와 일치하는 단계를 따릅니다. 
+3. Wi-Fi에 연결하고 **다음**을 탭합니다. 등록 메서드와 일치하는 단계를 따릅니다. 
 
-    * 토큰: Google 로그인 화면이 표시되면 [토큰 등록](#token-enrollment) 단계를 완료합니다.    
+    * 토큰: Google 로그인 화면이 표시되면 [토큰 등록](#token-enrollment) 단계를 완료합니다.  
     * Google Zero Touch: Wi-Fi에 연결하면 조직에서 디바이스가 인식됩니다. 4단계를 진행하고 설치가 완료될 때까지 화면의 지시를 따릅니다.    
  
        ![Google Zero Touch를 사용하는 경우 표시되는 Google 사용 약관 화면의 예제 이미지이며, Accept & Continue(동의 및 계속) 단추가 강조 표시되어 있습니다.](./media/google-zero-touch-intune-app-01.png)   
@@ -78,21 +78,19 @@ ms.locfileid: "67735750"
 
    ![회사 전화 설정 화면의 예제 이미지이며 설치 단추가 강조 표시되어 있습니다.](./media/fully-managed-intune-app-11.png)   
 
-10. 디바이스가 준비되었다는 메시지가 보이면, **완료**를 탭합니다. 
+10. **시작** 을 탭 하 여 Microsoft Intune 앱을 열고 장치를 등록 합니다. 
 
-11. 앱으로 이동하여 Microsoft Intune 앱을 엽니다. **로그인**을 선택합니다. 
+    ![회사 전화 설정 화면의 예제 이미지이며 시작 단추가 강조 표시되어 있습니다.](./media/fully-managed-intune-app-17.png)   
 
-12. **액세스 설정** 화면에 보류 중인 작업 목록이 표시됩니다. **계속**을 탭합니다.  
+11. 로그인을 탭 **하 **고 다음** 을 탭 하 여 등록을 시작 합니다.** 등록이 완료 되었다는 메시지가 표시 되 면 완료 **** 를 탭 합니다.  
 
-       ![Microsoft Intune 앱, 액세스 설정 화면의 예제 이미지이며 보류 중인 작업을 보여줍니다.](./media/fully-managed-intune-app-14.png)   
+    ![액세스 설정, 장치 등록 화면, 완료 단추 강조 표시의 예제 이미지](./media/fully-managed-intune-app-19.png)   
 
-13. 디바이스 등록이 완료되면 **계속**을 탭합니다. Microsoft Intune에서 추가 디바이스 설정을 업데이트하라는 메시지를 표시할 수 있습니다.   
+10. 디바이스가 준비되었다는 메시지가 표시되면, **완료**를 탭합니다.  
 
-       ![Microsoft Intune 앱, 디바이스 설정 업데이트 화면의 예제 이미지입니다.](./media/fully-managed-intune-app-15-2.png)   
+    ![회사 전화 설정 화면의 예제 이미지이며 완료 단추가 강조 표시되어 있습니다.](./media/fully-managed-intune-app-18.png)   
 
-14. 목록의 모든 항목에 녹색 원이 표시되면 설치가 완료된 것입니다. 이제 회사 리소스에 액세스할 수 있습니다.  
-
-       ![Microsoft Intune 앱, 액세스 설정 화면의 예제 이미지이며 완료된 작업을 보여줍니다.](./media/fully-managed-intune-app-16.png)   
+조직의 리소스에 액세스 하는 데 문제가 있는 경우 장치에서 추가 설정을 업데이트 해야 할 수 있습니다. Microsoft Intune 앱에 로그인 하 여 필수 업데이트를 확인 합니다.   
 
 
 ## <a name="qr-code-enrollment"></a>QR 코드 등록  
@@ -118,11 +116,7 @@ ms.locfileid: "67735750"
 
 3. **이 디바이스 등록** 화면에서 **다음**을 선택합니다.  
 
-   ![이 디바이스 등록 화면의 예제 이미지입니다. QR 코드와 강조 표시된 [다음] 단추 일러스트레이션을 보여줍니다.](./media/token-intune-app-02.png)  
-
-4. **코드 입력**을 선택합니다.
-
-   ![활성 QR 코드 스캐너의 예제 스크린샷입니다. 코드 입력 단추가 강조 표시되어 있습니다.](./media/token-intune-app-03.png)  
+4. **코드 입력**을 선택합니다.  
 
 5. **Scan or enter code**(스캔 또는 코드 입력) 화면에 조직에서 제공한 코드를 입력합니다.  **다음**을 클릭합니다.  
 
