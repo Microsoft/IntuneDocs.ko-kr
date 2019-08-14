@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511920"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783030"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>관리에 조직 제공 macOS 디바이스 등록
 
@@ -40,10 +40,10 @@ Intune에서 새 macOS 디바이스를 관리하는 방법을 알아봅니다.
 macOS 디바이스를 관리에 등록하려면 다음 단계를 완료합니다. 조직 제공 디바이스가 아닌 자신의 디바이스를 사용하는 경우 [개인용 및 개인 소유 디바이스 가져오기](enroll-your-device-in-intune-macos-cp.md)의 단계를 따릅니다.  
 
 1. macOS 디바이스 전원을 켭니다. 
-2. 국가를 선택하고 **계속**을 클릭합니다.  
+2. 국가/지역을 선택하고 **계속**을 클릭합니다.  
 
    ![macOS 디바이스 설치 도우미 시작 화면의 스크린샷은 선택하는 언어의 목록을 표시합니다.](./media/macos-dep-welcome-1808.png)   
-3. 키보드 레이아웃을 선택합니다. 목록에는 선택한 국가에 따라 하나 이상의 옵션이 표시됩니다. 선택한 국가에 관계없이 모든 레이아웃 옵션을 보려면 **모두 표시**를 클릭합니다. 작업이 완료되면 **계속**을 클릭합니다.  
+3. 키보드 레이아웃을 선택합니다. 목록에는 선택한 국가/지역에 따라 하나 이상의 옵션이 표시됩니다. 선택한 국가/지역에 관계없이 모든 레이아웃 옵션을 보려면 **모두 표시**를 클릭합니다. 작업이 완료되면 **계속**을 클릭합니다.  
 
    ![macOS 디바이스 설치 도우미 키보드 레이아웃 화면의 스크린샷에서는 선택할 키보드 언어 목록, 선택하지 않은 모두 표시 옵션 및 돌아가기와 계속 단추가 표시됩니다.](./media/macos-dep-keyboard-1808.png)  
 4. Wi-Fi 네트워크를 선택합니다. 설치를 계속하려면 인터넷에 연결되어 있어야 합니다. 네트워크가 표시되지 않거나 유선 네트워크를 통해 연결해야 하는 경우 **기타 네트워크 옵션**을 클릭합니다. 작업이 완료되면 **계속**을 클릭합니다.  
