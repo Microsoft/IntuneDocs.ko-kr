@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/18/2019
+ms.date: 08/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494478"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550168"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -57,13 +57,13 @@ ms.locfileid: "67494478"
 - **시스템 볼륨에 앱 데이터 설치**: **차단**은 앱에서 데이터를 디바이스의 시스템 볼륨에 저장하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 앱에서 데이터를 시스템 디스크 볼륨에 저장할 수 있습니다.
 - **시스템 드라이브에 앱 설치**: **차단**은 앱이 디바이스의 시스템 드라이브에 설치되지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 앱을 시스템 드라이브에 설치할 수 있습니다.
 - **게임 DVR**(데스크톱에만 해당): **차단**은 Windows 게임 녹화 및 방송을 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)을 사용하면 게임을 녹화하고 브로드캐스트할 수 있습니다.
-- **스토어 전용 앱**:이 설정은 사용자가 Microsoft Store 이외의 위치에서 앱을 설치할 때 사용자 환경을 결정 합니다. 옵션은 다음과 같습니다.
+- **스토어 에서만 앱**:이 설정은 사용자가 Microsoft Store 이외의 위치에서 앱을 설치할 때 사용자 환경을 결정 합니다. 옵션은 다음과 같습니다.
 
-  - **구성 되지 않은** (기본값): 최종 사용자가 다른 정책에 정의 된 앱을 포함 하는 Microsoft Store 이외의 위치에서 앱을 설치할 수 있습니다.  
-  - **어디서 든**: 앱 권장 사항 해제 사용자가 모든 위치에서 앱을 설치할 수 있습니다.  
-  - **저장만**:만 Microsoft Store 앱을 설치 하려면 최종 사용자를 강제로 수행 합니다.
-  - **권장 사항**: Microsoft Store 제공 하는 웹에서 앱을 설치할 때 사용자가 스토어에서 다운로드 권장 메시지가 표시 됩니다.  
-  - **저장소를 선호**: Microsoft Store 이외의 위치에서 앱을 설치할 때 사용자에 게 경고 합니다.
+  - **구성 되지 않음** (기본값): 최종 사용자가 다른 정책 설정에 정의 된 앱을 포함 하 여 Microsoft Store 이외의 위치에서 앱을 설치할 수 있습니다.  
+  - **Anywhere**: 앱 권장 사항을 해제 하 고 사용자가 모든 위치에서 앱을 설치할 수 있도록 합니다.  
+  - **저장소 전용**: 최종 사용자가 Microsoft Store 에서만 앱을 설치 하도록 합니다.
+  - **권장 사항**: Microsoft Store에서 사용할 수 있는 웹에서 앱을 설치 하는 경우 사용자에 게 스토어에서 다운로드 하는 것을 제안 하는 메시지가 표시 됩니다.  
+  - **스토어 선호**: Microsoft Store 이외의 위치에서 앱을 설치할 때 사용자에 게 경고 합니다.
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
@@ -429,7 +429,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
 다음 설정에서는 [DeviceLock 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)를 사용하며, 지원되는 Windows 버전도 나열합니다.
 
-- **암호**: **필요**를 선택하면 최종 사용자에게 디바이스에 액세스하기 위해 암호를 입력해야 합니다. **구성되지 않음**(기본값)을 사용하면 암호 없이 디바이스에 액세스할 수 있습니다. 로컬 계정에만 적용 됩니다. 도메인 계정 암호에 Active Directory (AD)와 Azure AD에서 구성 된이 상태로 유지 합니다.
+- **암호**: **필요**를 선택하면 최종 사용자에게 디바이스에 액세스하기 위해 암호를 입력해야 합니다. **구성되지 않음**(기본값)을 사용하면 암호 없이 디바이스에 액세스할 수 있습니다. 로컬 계정에만 적용 됩니다. 도메인 계정 암호는 AD (Active Directory) 및 Azure AD에 의해 구성 된 상태로 유지 됩니다.
 
   - **필수 암호 유형**: 암호 유형을 선택합니다. 옵션은 다음과 같습니다.
     - **구성되지 않음**: 숫자와 문자가 포함될 수 있는 임호입니다.
@@ -440,7 +440,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
     > [!IMPORTANT]
     > Windows 데스크톱에서 암호 요구 사항이 변경되면 사용자가 다음에 로그인할 때 영향을 받습니다. 디바이스가 유휴 상태에서 활성 상태로 변하기 때문입니다. 요구 사항을 충족하는 암호를 사용하는 사용자에게도 암호를 변경하라는 메시지가 표시됩니다.
     
-  - **디바이스를 초기화하기 전 로그인 오류 발생 횟수**: 디바이스를 초기화하기 전에 허용되는 인증 실패 횟수를 11 이내로 입력합니다. 유효한 숫자를 입력 하면 버전에 따라 달라 집니다. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) 지원 되는 값을 나열 합니다. `0`(0)은 디바이스 초기화 기능을 사용하지 않도록 설정할 수 있습니다.
+  - **디바이스를 초기화하기 전 로그인 오류 발생 횟수**: 디바이스를 초기화하기 전에 허용되는 인증 실패 횟수를 11 이내로 입력합니다. 입력 하는 유효한 숫자는 버전에 따라 다릅니다. [Devicelock/MAXDEVICEPASSWORDFAILEDATTEMPTS CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) 는 지원 되는 값을 나열 합니다. `0`(0)은 디바이스 초기화 기능을 사용하지 않도록 설정할 수 있습니다.
 
     이 설정은 버전에 따라 다른 영향도 줍니다. 이 설정에 대한 관련 세부 정보는 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)를 참조하세요.
 
@@ -753,9 +753,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
 
-  > [!WARNING]
-  > 이 설정은 Azure Portal의 Intune에서 [실패] 상태를 표시할 수 있습니다. 이는 보고 기능의 버그입니다. 동작 및 문제 해결을 재현한 결과 Intune 제품 그룹에서 해당 상태가 실제로 [성공]임을 확인했습니다. 이 보고 버그는 향후 릴리스에서 수정될 예정입니다. 일정이 변경되고 있어 현재 ETA를 확정할 수 없습니다. 이 기능에 대한 모든 업데이트는 [Microsoft Intune 개발 중](in-development.md)에서 발표되었습니다.
-
 - **수행할 시스템 검색 유형**: 검색 수준과 검색을 실행하는 날짜 및 시간을 포함한 시스템 검색을 예약합니다. 옵션은 다음과 같습니다.
   - **구성되지 않음**: 디바이스에서 시스템 검색을 예약하지 않습니다. 최종 사용자는 디바이스에서 필요에 따라 또는 원하는 검색을 수동으로 실행할 수 있습니다.
   - **사용 안 함**: 디바이스에서 시스템 검색을 비활성화합니다. 디바이스를 검색하는 파트너 바이러스 백신 솔루션을 사용하는 경우 이 옵션을 선택합니다.
@@ -776,9 +773,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
-
-  > [!WARNING]
-  > 이 설정은 Azure Portal의 Intune에서 [실패] 상태를 표시할 수 있습니다. 이는 보고 기능의 버그입니다. 동작 및 문제 해결을 재현한 결과 Intune 제품 그룹에서 해당 상태가 실제로 [성공]임을 확인했습니다. 이 보고 버그는 향후 릴리스에서 수정될 예정입니다. 일정이 변경되고 있어 현재 ETA를 확정할 수 없습니다. 이 기능에 대한 모든 업데이트는 [Microsoft Intune 개발 중](in-development.md)에서 발표되었습니다.
 
 - **사용자 동의 없이 설치된 애플리케이션 검색**: Windows에서 사용자 동의 없이 설치된 애플리케이션을 검색하는 경우의 보호 수준을 선택합니다. 옵션은 다음과 같습니다.
   - **구성되지 않음**(기본값): Windows Defender의 사용자 동의 없이 설치된 애플리케이션 보호를 사용하지 않도록 설정합니다.

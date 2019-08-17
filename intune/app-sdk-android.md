@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
-ms.translationtype: HT
+ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783205"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960544"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -531,7 +531,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>예: 장치 또는 클라우드 스토리지에 저장이 허용되는지 확인
+### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>예: 디바이스 또는 클라우드 스토리지에 저장이 허용되는지 확인
 
 다수의 앱에서는 최종 사용자가 로컬에서나 클라우드 스토리지 서비스에 파일을 저장할 수 있게 하는 기능을 구현합니다. Intune 앱 SDK에서는 IT 관리자가 조직에 적합하다고 판단하는 대로 정책 제한을 적용하여 데이터 누출을 방지할 수 있습니다.  IT 부서가 제어할 수 있는 정책 중 하나는 최종 사용자에게 관리되지 않는 “개인” 데이터 저장소에 저장하도록 허용하는지 여부입니다. 개인 데이터 저장소에는 로컬 위치, SD 카드, 타사 백업 서비스 등이 포함됩니다.
 
@@ -1726,7 +1726,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
 
 1. 앱이 ADAL을 통합하거나 SSO를 설정해야 하는 경우 [일반적인 ADAL 구성](#common-adal-configurations) #2에 따라 [ADAL을 구성](#configure-azure-active-directory-authentication-library-adal)합니다. 그렇지 않은 경우 이 단계를 건너뛰어도 됩니다.
    
-2. 매니페스트에 다음 값을 입력하여 기본 등록을 사용합니다.
+2. 매니페스트에서 태그 아래에 다음 값을 추가 하 여 기본 등록을 `<application>` 사용 하도록 설정 합니다.
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
@@ -1735,7 +1735,7 @@ Intune MAM 보기에 스타일 변경을 적용하려면 먼저 스타일 재정
    > [!NOTE] 
    > 이것은 앱에서 유일한 MAM-WE 통합이어야 합니다. MAMEnrollmentManager API를 호출하려는 다른 시도가 있으면 충돌이 발생합니다.
 
-3. 매니페스트에 다음 값을 입력하여 필요한 MAM 정책을 설정합니다.
+3. 매니페스트에서 `<application>` 태그 아래에 다음 값을 추가 하 여 필요한 MAM 정책을 사용 하도록 설정 합니다.
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />

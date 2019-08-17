@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
+ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046966"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69487745"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 키오스크로 실행하는 Windows 10 이상 디바이스 설정
 
@@ -66,9 +66,7 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
     > [!NOTE]
     > 이 설정은 디바이스에서 Microsoft Edge 브라우저를 사용하도록 설정합니다. Microsoft Edge 특정 설정을 구성하려면 디바이스 구성 프로필을 만듭니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10** 플랫폼용 > **디바이스 제한** >  **Microsoft Edge 브라우저**). [Microsoft Edge 브라우저](device-restrictions-windows-10.md#microsoft-edge-browser)는 사용 가능한 설정을 나열하고 설명합니다.
 
-    **확인**을 선택하여 변경 내용을 저장합니다.
-
-  - **키오스크 브라우저 추가**: **키오스크 브라우저 설정**을 선택합니다. 이러한 설정은 키오스크에서 웹 브라우저 앱을 제어합니다. Store에서 [키오스크 브라우저 앱](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP)을 가져와서 Intune에 [클라이언트 앱](apps-add.md)으로 추가한 다음, 키오스크 디바이스에 앱을 할당해야 합니다.
+  - **키오스크 브라우저 추가**: **키오스크 브라우저 설정**을 선택합니다. 이러한 설정은 키오스크에서 웹 브라우저 앱을 제어합니다. 스토어에서 [키오스크 브라우저 앱](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) 을 가져와서 [클라이언트 앱](apps-add.md)으로 Intune에 추가 해야 합니다. 그런 다음 키오스크 장치에 앱을 할당 합니다.
 
     다음 설정을 입력합니다.
 
@@ -91,15 +89,14 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
       `http://bing.com`  
       `https://bing.com`  
       `http://contoso.com/*`  
-      `https://contoso.com/*`  
+      `https://contoso.com/*`
 
-    **확인**을 선택하여 변경 내용을 저장합니다.
+    > [!NOTE]
+    > Microsoft 키오스크 브라우저를 사용 하 여 자동 로그온을 사용 하도록 설정 된 Windows 10 키오스크는 비즈니스용 Microsoft Store의 오프 라인 라이선스를 사용 해야 합니다. 자동 로그온에서 AD (Azure Active Directory) 자격 증명이 없는 로컬 사용자 계정을 사용 하기 때문입니다. 따라서 온라인 라이선스는 평가할 수 없습니다. 자세한 내용은 [오프라인 앱 배포](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)를 참조하세요.
 
   - **스토어 앱 추가**: **스토어 앱 추가**를 선택하고 목록에서 앱을 선택합니다.
 
     나열된 앱이 없나요? [클라이언트 앱](apps-add.md)의 단계를 사용하여 일부 앱을 추가합니다.
-
-  **확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="multi-app-kiosks"></a>다중 앱 키오스크
 
@@ -132,8 +129,6 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
       > [!NOTE]
       > 이 설정은 디바이스에서 Microsoft Edge 브라우저를 사용하도록 설정합니다. Microsoft Edge 특정 설정을 구성하려면 디바이스 구성 프로필을 만듭니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **Windows 10** 플랫폼용 > **디바이스 제한** >  **Microsoft Edge 브라우저**). [Microsoft Edge 브라우저](device-restrictions-windows-10.md#microsoft-edge-browser)는 사용 가능한 설정을 나열하고 설명합니다.
 
-      **확인**을 선택하여 변경 내용을 저장합니다.
-
     - **키오스크 브라우저 추가**: 이러한 설정은 키오스크의 웹 브라우저 앱을 제어합니다. [클라이언트 앱](apps-add.md)을 사용하여 키오스크 디바이스에 웹 브라우저 앱을 배포해야 합니다.
 
       다음 설정을 입력합니다.
@@ -152,13 +147,12 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
         특정 웹 사이트를 허용하려면 허용되는 웹 사이트 목록을 포함하는 .csv 파일을 업로드합니다. .csv 파일을 추가하지 않으면 모든 웹 사이트가 허용됩니다.
 
-      **확인**을 선택하여 변경 내용을 저장합니다.
+      > [!NOTE]
+      > Microsoft 키오스크 브라우저를 사용 하 여 자동 로그온을 사용 하도록 설정 된 Windows 10 키오스크는 비즈니스용 Microsoft Store의 오프 라인 라이선스를 사용 해야 합니다. 자동 로그온에서 AD (Azure Active Directory) 자격 증명이 없는 로컬 사용자 계정을 사용 하기 때문입니다. 따라서 온라인 라이선스는 평가할 수 없습니다. 자세한 내용은 [오프라인 앱 배포](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)를 참조하세요.
 
   - **애플리케이션**
 
     - **스토어 앱 추가**: 비즈니스용 Microsoft Store에서 앱을 추가합니다. 앱이 나열되지 않으면 앱을 가져와서 [Intune에 추가](store-apps-windows.md)할 수 있습니다. 예를 들어 키오스크 브라우저, Excel, OneNote 등을 추가할 수 있습니다.
-
-      **확인**을 선택하여 변경 내용을 저장합니다.
 
     - **Win32 앱 추가**: Win32 앱은 Visual Studio Code 또는 Google Chrome과 같은 기존 데스크톱 앱입니다. 다음 속성을 입력합니다.
 
@@ -166,14 +160,10 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
       - **로컬 경로**: 필수입니다. `C:\Program Files (x86)\Microsoft VS Code\Code.exe` 또는 `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`와 같이 실행 파일의 경로를 입력합니다.
       - **AUMID(애플리케이션 사용자 모델 ID)** : Win32 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 설정에 따라 바탕 화면에 있는 타일의 시작 레이아웃이 결정됩니다. 이 ID를 구하려면 [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)를 참조하세요.
 
-      **확인**을 선택하여 변경 내용을 저장합니다.
-
     - **AUMID로 추가**: 메모장 또는 계산기와 같은 받은 편지함 Windows 앱을 추가하려면 이 옵션을 사용합니다. 다음 속성을 입력합니다.
 
       - **애플리케이션 이름**: 필수입니다. 애플리케이션의 이름을 입력합니다.
       - **AUMID(애플리케이션 사용자 모델 ID)** : 필수입니다. Windows 앱의 AUMID(애플리케이션 사용자 모델 ID)를 입력합니다. 이 ID를 가져오려면 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
-
-      **확인**을 선택하여 변경 내용을 저장합니다.
 
     - **자동 시작**: 선택 사항입니다. 사용자가 로그인할 때 애플리케이션이 자동 시작되도록 선택합니다. 단일 앱만 자동 시작될 수 있습니다.
     - **타일 크기**: 필수입니다. 작은, 중간 크기, 넓은 또는 큰 앱 타일 크기를 선택합니다.
@@ -186,8 +176,6 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 - **Windows 작업 표시줄**: 작업 표시줄을 **표시**하거나 **숨기**려면 선택합니다. 기본적으로 작업 표시줄은 표시되지 않습니다. Wi-Fi 아이콘과 같은 아이콘이 표시되지만 최종 사용자가 설정을 변경할 수 없습니다.
 
 - **다운로드 폴더에 대한 액세스 허용**: 사용자가 Windows 탐색기에서 다운로드 폴더에 액세스할 수 있도록 하려면 **예**를 선택합니다. 기본적으로 다운로드 폴더에 대한 액세스는 비활성화되어 있습니다. 이 기능은 일반적으로 최종 사용자가 브라우저에서 다운로드된 항목에 액세스하기 위해 사용됩니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

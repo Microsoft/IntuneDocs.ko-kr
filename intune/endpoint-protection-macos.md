@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756503"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960410"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune에서 macOS 엔드포인트 보호 설정  
 
@@ -47,7 +47,7 @@ ms.locfileid: "68756503"
 
 ## <a name="firewall"></a>방화벽  
 
-방화벽을 사용하여 포트별이 아닌 응용 프로그램별 연결을 제어합니다. 응용 프로그램별 설정을 사용하면 방화벽 보호의 이점을 더욱 쉽게 얻을 수 있습니다. 또한 합법적인 앱에 대해 열려있는 네트워크 포트를 원하지 않는 앱이 제어하는 것을 방지해줍니다.  
+방화벽을 사용하여 포트별이 아닌 애플리케이션별 연결을 제어합니다. 애플리케이션별 설정을 사용하면 방화벽 보호의 이점을 더욱 쉽게 얻을 수 있습니다. 또한 합법적인 앱에 대해 열려있는 네트워크 포트를 원하지 않는 앱이 제어하는 것을 방지해줍니다.  
 
 **일반**
 - **방화벽**  
@@ -82,6 +82,9 @@ ms.locfileid: "68756503"
 ## <a name="filevault"></a>FileVault  
 Apple 대해 filevault 켭니다 설정에 대 한 자세한 내용은 Apple developer 콘텐츠에서 [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) 를 참조 하세요. 
 
+> [!IMPORTANT]  
+> MacOS 10.15을 통해 대해 filevault 켭니다 구성에는 사용자 승인 MDM 등록이 필요 합니다. 
+
 - **FileVault**  
   MacOS 10.13 이상을 실행 하는 장치에서 대해 filevault 켭니다로 XTS-AES 128를 사용 하 여 전체 디스크 암호화를 *사용 하도록 설정할* 수 있습니다.  
   - **구성되지 않음**  
@@ -104,9 +107,9 @@ Apple 대해 filevault 켭니다 설정에 대 한 자세한 내용은 Apple dev
     **기본값**: 구성되지 않음  
 
      > [!IMPORTANT]  
-     > **로그 아웃 시 프롬프트 사용 안 함** 설정이 *사용*으로 설정 된 경우 알려진 문제가 있습니다. *사용*으로 설정 된 경우 **바이패스에 허용 되는 횟수** 에 대 한 설정은 값으로 설정 해야 하며 *구성 되지 않음*으로 설정 하면 안 됩니다. *구성 되지 않음*으로 설정 하면 장치에서 프로필이 실패 합니다. 이 시나리오에서 장치는 추가 정보 없이 **오류로 인해** **프로필 상태 요약** 을 보고 합니다.
+     > **로그아웃 시 프롬프트 사용 안 함** 설정이 *사용*으로 설정되는 알려진 문제가 있습니다. *사용*으로 설정하면 **바이패스 허용 횟수** 설정이 값으로 설정되어야 하며 *구성되지 않음*으로 설정되어서는 안 됩니다. *구성하지 않음*으로 설정하면, 프로필이 디바이스에서 실패합니다. 이 시나리오에서는 디바이스가 추가 세부 정보 없이 **프로필 상태 요약**을 **오류**로 보고합니다.
      > 
-     > **로그 아웃 시 확인 사용 안 함** 이 *구성 되지 않음*으로 설정 된 경우 **바이패스에 허용** 되는 횟수는 *구성 되지* 않거나 값을 가질 수 있습니다.  
+     > **로그아웃 시 프롬프트 사용 안 함**이 *구성되지 않음*으로 설정되면, **바이패스 허용 횟수**가 *구성되지 않음*이나 값이 있을 수 있습니다.  
      > 
      > 이 문제는 향후 업데이트에서 해결될 예정입니다. 
 

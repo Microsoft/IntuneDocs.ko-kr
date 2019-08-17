@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise는 Microsoft Intune을 포함하고 있습
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 08/14/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 37a1c9fad9b77e39145f1b4183b8176fb1677613
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427304"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022860"
 ---
 # <a name="what-is-device-management"></a>디바이스 관리란? 
 
@@ -28,7 +28,7 @@ ms.locfileid: "68427304"
 
 조직은 디바이스 관리 공급자를 사용하여 승인된 사람과 디바이스만이 조직 소유의 정보에 액세스할 수 있도록 관리할 수 있습니다. 마찬가지로, 디바이스 사용자는 자신의 디바이스가 조직의 보안 요구 사항을 충족한다는 사실을 알고 있기 때문에 안심하고 휴대폰으로 회사 데이터에 액세스할 수 있습니다. 조직의 입장에서 **리소스를 보호하려면 어떻게 해야 하나요?** 라는 질문을 할 수 있습니다.
 
-답은 [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune)입니다. Intune은 MDM(모바일 장치 관리) 및 MAM(모바일 애플리케이션 관리)을 제공합니다. MAM 또는 MDM 솔루션의 핵심 작업은 다음과 같습니다.
+답은 [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune)입니다. Intune은 MDM(모바일 디바이스 관리) 및 MAM(모바일 애플리케이션 관리)을 제공합니다. MAM 또는 MDM 솔루션의 핵심 작업은 다음과 같습니다.
 
 - 다양한 모바일 환경을 지원하고 iOS, Android, Windows 및 macOS 디바이스를 안전하게 관리합니다.
 - 디바이스와 앱이 조직의 보안 요구 사항을 준수하는지 확인합니다.
@@ -75,7 +75,7 @@ Intune을 설정할 때 오직 Azure Portal에서만 디바이스를 관리하�
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>디바이스 관리의 관리 센터를 사용하여 IT 작업 간소화
 
-[디바이스 관리의 관리 센터](https://devicemanagement.portal.azure.com/)는 모바일 디바이스에 대한 작업을 관리하고 완료할 수 있는 원스톱 샵입니다. 이 작업 영역에는 Intune 및 Azure Active Directory를 비롯한 디바이스와 클라이언트 앱 관리에 사용되는 서비스가 포함되어 있습니다. 
+[디바이스 관리의 관리 센터](https://devicemanagement.microsoft.com/)는 모바일 디바이스에 대한 작업을 관리하고 완료할 수 있는 원스톱 샵입니다. 이 작업 영역에는 Intune 및 Azure Active Directory를 비롯한 디바이스와 클라이언트 앱 관리에 사용되는 서비스가 포함되어 있습니다. 
 
 장치 관리 관리 센터에서 다음을 수행할 수 있습니다.
 
