@@ -384,7 +384,7 @@
           items:
             - name: 데이터 수집
               href: privacy-data-collect.md
-            - name: 데이터 저장 및 처리
+            - name: 데이터 스토리지 및 처리
               href: privacy-data-store-process.md
             - name: 데이터 보안 및 공유
               href: privacy-data-secure-share.md
@@ -416,7 +416,7 @@
               href: exchange-connector-install.md
             - name: 조건부 액세스 정책 만들기 및 할당
               href: conditional-access-exchange-create.md
-            - name: 장치 기반 조건부 액세스 정책
+            - name: 디바이스 기반 조건부 액세스 정책
               href: create-conditional-access-intune.md
             - name: Intune 클래식 포털에서 조건부 액세스 정책 다시 할당
               href: conditional-access-intune-reassign.md
@@ -750,7 +750,7 @@
                 - name: 메일
                   href: email-settings-android.md
                 - name: VPN
-                  href: 'vpn-settings-android.md#android-vpn-settings'
+                  href: vpn-settings-android.md
                 - name: Wi-Fi
                   href: wi-fi-settings-android.md
                 - name: 사용자 지정
@@ -769,7 +769,7 @@
                 - name: 메일
                   href: email-settings-android-enterprise.md
                 - name: VPN
-                  href: 'vpn-settings-android.md#android-enterprise-vpn-settings'
+                  href: vpn-settings-android-enterprise.md
                 - name: Wi-Fi
                   href: wi-fi-settings-android-enterprise.md
                 - name: 사용자 지정
