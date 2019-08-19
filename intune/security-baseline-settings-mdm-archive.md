@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7871fa6f8655ff02242135d04385984368d52625
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 7e8aeb3428aeece2de9b94c0ebf7796ce73a0267
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680081"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978535"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -34,7 +34,7 @@ Intune 용 MDM 보안 기준의 보관 된 버전에 대 한 세부 정보를 �
 기준선 버전이 더 이상 사용할 수 없는 경우이 문서에서 제거 됩니다.
 
 - [현재 MDM 보안 기준](security-baseline-settings-mdm.md) 에서 사용할 수 있는 설정을 확인 합니다. 
-- [보안 기준](security-baselines.md) 및 보안 기준 프로필에서 기준선 버전을 업그레이드 하는 방법에 대해 알아봅니다.
+- 보안 기준 [및 보안](security-baselines.md)기준 프로필에서 기준선 버전을 업그레이드 하는 방법에 대해 알아봅니다.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>미리 보기: 2018년 10월 MDM 보안 기준  
 
@@ -1441,4 +1441,4 @@ Intune 용 MDM 보안 기준의 보관 된 버전에 대 한 세부 정보를 �
 ## <a name="next-steps"></a>다음 단계  
 
 [현재 기준선 버전 보기](security-baseline-settings-mdm.md)  
-[새 기준 버전을 사용 하도록 프로필 업그레이드](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[새 기준 버전을 사용 하도록 프로필 업그레이드](security-baselines.md#change-the-baseline-version-for-a-profile)
