@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 08/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1826498b3bfa2191900d7574f79051af8f758558
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 63f2832dd321425efe8092f1bb12dd0d479ef71b
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041709"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549924"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune에서 macOS 디바이스 기능 설정
 
@@ -65,6 +65,19 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
    IP 주소를 기록합니다. 예를 들어 `PING myprinter.local (10.50.25.21)`과 유사한 항목을 반환할 수 있습니다.
 
 4. IP 주소 및 리소스 경로 값을 사용합니다. 이 예제에서 IP 주소는 `10.50.25.21`이고, 리소스 경로는 `/ipp/port1`입니다.
+
+## <a name="login-items"></a>로그인 항목
+
+- **파일, 폴더 및 사용자 지정 앱**: 사용자가 장치에 로그인 할 때 열려는 파일, 폴더, 사용자 지정 앱 또는 시스템 앱의 경로를 **추가** 합니다. 조직에 대해 작성 되거나 사용자 지정 된 시스템 앱 또는 앱은 일반적으로 `Applications` 폴더에 있으며 경로는와 `/Applications/AppName.app`유사 합니다. 
+
+  여러 파일, 폴더 및 앱을 추가할 수 있습니다. 예를 들어 다음과 같이 입력합니다.  
+  
+  - `/Applications/Calculator.app`
+  - `/Applications`
+  - `/Applications/Microsoft Office/root/Office16/winword.exe`
+  - `/Users/UserName/music/itunes.app`
+  
+  앱, 폴더 또는 파일을 추가 하는 경우 올바른 경로를 입력 해야 합니다. 모든 항목이 `Applications` 폴더에 있는 것은 아닙니다. 사용자가 한 위치에서 다른 위치로 항목을 이동 하면 경로가 변경 됩니다. 사용자가 로그인 할 때이 이동 된 항목은 열리지 않습니다.
 
 ## <a name="login-window"></a>로그인 창
 
