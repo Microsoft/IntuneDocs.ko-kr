@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/28/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c2e509c9eb032dae67dbb5a44839f88fa5de4b
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: 97612a8d169295d9ec28d230fb6f37a0be8ce324
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783068"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582949"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune을 사용하여 SCEP 인증서 구성 및 사용
 
@@ -168,11 +168,11 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
 
        - **웹 서버** > **보안** > **요청 필터링**
 
-       - **웹 서버** > **응용 프로그램 개발** > **ASP.NET 3.5** 
+       - **웹 서버** > **애플리케이션 개발** > **ASP.NET 3.5** 
 
             ASP.NET 3.5를 설치하면 .NET Framework 3.5가 설치됩니다. .NET Framework 3.5를 설치할 때는 핵심 **.NET Framework 3.5** 기능과 **HTTP 활성화**를 모두 설치합니다.
 
-       - **웹 서버** > **응용 프로그램 개발** > **ASP.NET 4.5** 
+       - **웹 서버** > **애플리케이션 개발** > **ASP.NET 4.5** 
 
             ASP.NET 4.5를 설치하면 .NET Framework 4.5가 설치됩니다. .NET Framework 4.5를 설치할 때는 핵심 **.NET Framework 4.5** 기능, **ASP.NET 4.5** 및 **WCF 서비스** > **HTTP 활성화** 기능을 설치합니다.
 
@@ -483,7 +483,7 @@ NDES 서비스 계정으로 사용할 도메인 사용자 계정을 만듭니다
         >  - 지정된 디바이스 변수가 지원되지 않는 경우 프로필이 디바이스에 설치되지 않습니다. 예를 들어 {{IMEI}}가 IMEI 번호가 없는 디바이스에 지정된 SCEP 프로필의 주체 대체 이름에 사용되는 경우 프로필 설치가 실패합니다.  
 
    - **인증서 유효 기간**: 발급 CA에 대해 사용자 지정 유효 기간을 허용하는 `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` 명령을 실행한 경우 인증서가 만료될 때까지 남은 기간을 입력할 수 있습니다.<br>인증서 템플릿에서 유효 기간보다 작은 값은 입력할 수 있지만 높은 값은 입력할 수 없습니다. 예를 들어 인증서 템플릿의 인증서 유효 기간이 2년이면 값을 1년으로 입력할 수는 있어도 5년으로는 입력할 수 없습니다. 또한 이 값은 발급 CA 인증서의 남은 유효 기간보다 작아야 합니다. 
-   - **KSP(키 저장소 공급자)** (Windows Phone 8.1, Windows 8.1, Windows 10): 인증서에 대한 키를 저장할 위치를 입력합니다. 다음 값 중 하나를 선택합니다.
+   - **KSP(키 스토리지 공급자)** (Windows Phone 8.1, Windows 8.1, Windows 10): 인증서에 대한 키를 저장할 위치를 입력합니다. 다음 값 중 하나를 선택합니다.
      - **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈) KSP에 등록, 그렇지 않으면 소프트웨어 KSP에 등록**
      - **TPM(신뢰할 수 있는 플랫폼 모듈) KSP에 등록, 그러지 않으면 실패**
      - **Passport에 등록, 그러지 않으면 실패(Windows 10 이상)**

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36383df6474e46a9a82745f6a2e069b553f4aef9
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 2825286c652a7229c32435a24ca816f21b8f2ff4
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354224"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993733"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune 보호 앱  
 
@@ -45,7 +45,6 @@ Intune 관리 앱은 풍부한 모바일 애플리케이션 보호 정책을 지
 |-------------------------------------------------|-------------------------|---------------------------------------------|
 | **Microsoft Azure Information Protection 뷰어**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | AIP 뷰어 앱을 사용하여 다른 사용자와 안전하게 공동 작업을 수행합니다. 다른 사용자와 공유하는 보호된 파일(권한 보호 이메일 메시지, PDF 파일, 사진, 텍스트 파일)을 봅니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.egress.switchdroid.intune), [iOS 스토어 링크](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) | 
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings는 예약, 직원 및 고객을 추적하는 데 도움이 되는 약속 예약 앱입니다. 약속을 놓치는 일이 없으므로 노쇼가 줄어듭니다.<p>Bookings 앱을 사용하여 다음을 수행할 수 있습니다.<br><ul><li>일정 보기 및 관리</li><li>이동 중에 예약 만들기 또는 기존 예약 변경</li><li>직원 멤버의 실시간 가용성 보기</li><li>고객에게 빠르고 쉽게 응답</li><li>다음 예약 장소로 가는 빠른 길 찾기</li><li>고객 목록 관리</li></ul> | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
-| **Microsoft Connections**<p><img alt="Microsoft app - Microsoft Connections icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-connections.png" width="100"> | Microsoft Connections는 중소기업이 간단한 이메일 마케팅 도구를 사용하여 고객을 확보하고 유지하도록 돕습니다. 공지 사항, 뉴스레터 및 추천을 위해 미리 디자인된 템플릿으로 전문적인 모양의 이메일 마케팅 캠페인을 쉽게 만들 수 있습니다. | [iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-connections/id1172261641?mt=8) |  
 | **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | 개인 비서 Cortana를 사용하여 업무와 일상생활을 빠르고, 쉽고, 재미있게 관리하세요. 휴대폰에 스마트 디지털 비서를 설치하여 어디서나 여러 디바이스에서 중요한 사항을 추적할 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.cortana),<br>[iOS 스토어 링크](https://apps.apple.com/us/app/cortana/id1054501703) 
 | **Microsoft Dynamics CRM**<p><img alt="Microsoft app - Microsoft Dynamics CRM icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-dynamics-crm.png" width="100"> | Microsoft Dynamics CRM을 통해 직장에서나 이동 중에도 생산성을 유지하면서 고객의 참여를 유도합니다. 모든 약속을 성공적으로 준비하고 메모, 작업, 연락처, 계정, 사례 및 잠재 고객을 업데이트하면서 세부 사항은 최신 상태로 유지합니다. 판매 직원은 이동 중에도 상황에 맞는 비즈니스 프로세스에 따라 매출 데이터를 관리할 수 있습니다. 사례 관리의 전체 범위를 통해 에이전트 및 감독자에게 이동의 자유를 제공합니다. ‘한 번 구성으로 어디에나 배포’하는 모델로 완벽한 사용자 환경을 구축합니다. iOS 및 Android용으로 사용 가능합니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone),<br>[iOS 스토어 링크](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8) |  
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge는 여러 디바이스를 사용하는 Windows 10 사용자를 위한 하나의 일관된 검색 환경을 만듭니다. 백그라운드에서 콘텐츠와 데이터가 원활하게 동기화되므로 사용자는 비트를 건너뛰지 않고 여러 디바이스를 탐색할 수 있습니다. 허브와 같이 친숙한 Microsoft Edge 기능을 통해 사용자는 간단하게 웹을 구성할 수 있으므로 이동 중에도 쉽게 콘텐츠를 찾고, 보며, 관리할 수 있습니다. Microsoft Edge는 Windows 10 사용자가 흐름을 방해하지 않고 어디서나 원하는 방식으로 웹을 탐색할 수 있도록 설계되었습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
