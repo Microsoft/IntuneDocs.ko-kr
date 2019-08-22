@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: 앱 보호 정책 제공
                   href: app-protection-policy-delivery.md
+                - name: 앱 확장 보호
+                  href: app-protection-policy-extensions.md
                 - name: 앱 보호 사용자 상태 모니터링
                   href: app-protection-policies-monitor.md
                 - name: WIP 앱 보호 정책 준비
