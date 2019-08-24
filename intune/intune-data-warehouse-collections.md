@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 08/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 816ac1d97e7be485717905fe9d5d62b812408446
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: b333c848368f00f005ed0febc61f67f098ee7e5e
+ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512208"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69979197"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune 데이터 웨어하우스 컬렉션
 
@@ -209,7 +209,7 @@ ms.locfileid: "67512208"
 |    NotRegisteredPendingEnrollment    |    등록 안 됨 등록 보류 중                                                                                                                                               |
 |    Unknown                           |    알 수 없는 상태                                                                                                                                                                   |
 
-## <a name="devices"></a>장치
+## <a name="devices"></a>디바이스
 **디바이스** 엔터티는 관리 대상인 모든 등록된 디바이스와 그에 해당하는 속성을 나열합니다.
 
 |          속성          |                                                                                       설명                                                                                      |
@@ -558,7 +558,7 @@ ms.locfileid: "67512208"
 | 11                | Discovered     | Intune에서 디바이스를 새로 검색하고 해당 디바이스를 처음으로 체크 인하면 '관리됨' 상태가 됩니다. |
 
 ## <a name="mobileappinstallstates"></a>mobileAppInstallStates
-MobileAppInstallState 엔터티는 장치, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 애플리케이션의 설치 상태를 나타냅니다.
+MobileAppInstallState 엔터티는 디바이스, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 애플리케이션의 설치 상태를 나타냅니다.
 
 |       속성      |                        설명                       |
 |:-------------------:|:--------------------------------------------------------:|
@@ -567,13 +567,13 @@ MobileAppInstallState 엔터티는 장치, 사용자 또는 둘 다를 포함하
 | AppInstallStateName | 앱 설치 상태의 이름입니다.                           |
 
 ## <a name="mobileappinstallstatuscounts"></a>mobileAppInstallStatusCounts
-Microsoft Intune을 통해 모바일 애플리케이션 관리를 사용하여 지정된 대상 장치 유형의 모바일 앱 설치 상태를 나타냅니다.
+Microsoft Intune을 통해 모바일 애플리케이션 관리를 사용하여 지정된 대상 디바이스 유형의 모바일 앱 설치 상태를 나타냅니다.
 
 |      속성      |                                                          설명                                                          |
 |:------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|
 | DateKey            | 앱 설치 상태가 기록된 날짜의 키입니다.                                                                     |
 | AppKey             | AppRevision 인스턴스를 식별하는 데 사용되는 모바일 앱의 키입니다.                                                          |
-| DeviceTypeKey      | 모바일 애플리케이션과 연관된 장치 유형의 키입니다.                                                              |
+| DeviceTypeKey      | 모바일 애플리케이션과 연관된 디바이스 유형의 키입니다.                                                              |
 | AppInstallStateKey | MobileAppInstallState 인스턴스를 식별하는 데 사용되는 앱 설치 상태의 키입니다.                                         |
 | 오류 코드          | 앱 설치 프로그램, 모바일 플랫폼 또는 서비스에서 반환된 앱 설치와 관련된 오류 코드입니다. |
 | 개수              | 총 개수입니다.                                                                                                                  |

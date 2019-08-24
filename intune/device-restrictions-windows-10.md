@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550168"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998937"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -66,13 +66,6 @@ ms.locfileid: "69550168"
   - **스토어 선호**: Microsoft Store 이외의 위치에서 앱을 설치할 때 사용자에 게 경고 합니다.
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
-
-- **업데이트 실패 시 강제로 앱 다시 시작**: 앱을 사용 중인 경우 업데이트되지 않을 수 있습니다. 앱을 강제로 다시 시작하려면 이 설정을 사용합니다. **구성되지 않음**(기본값): 앱을 강제로 다시 시작하지 않습니다. **필요**: 관리자가 특정 날짜와 시간 또는 되풀이 일정에 강제로 다시 시작하도록 허용합니다. **필요**로 설정하는 경우 다음도 입력합니다.
-
-  - **시작 날짜/시간**: 앱을 다시 시작하는 특정 날짜 및 시간을 선택합니다.
-  - **되풀이**: 매일, 매주 또는 매달 다시 시작을 선택합니다.
-
-  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 - **설치에 대한 사용자 정의 컨트롤**: **구성되지 않음**(기본값)으로 설정하면 Windows Installer에서 사용자가 파일을 설치할 디렉터리 입력 등 일반적으로 시스템 관리자용으로 예약된 설치 옵션을 변경하지 못하도록 합니다. **차단**: 사용자가 이러한 설치 옵션을 변경하는 것을 허용하며, 일부 Windows Installer 보안 기능이 무시됩니다.
 
