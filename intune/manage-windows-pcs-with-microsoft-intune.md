@@ -104,7 +104,7 @@ Intune에서는 Windows Server AD DS(Active Directory Domain Services) GPO(그�
 
 - [Windows PC에 대한 하드웨어 및 소프트웨어 인벤토리 보기](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md) - PC의 하드웨어 기능 및 PC에 설치된 소프트웨어에 대한 정보를 나열하는 보고서를 만드는 방법을 설명합니다. 또한 PC 인벤토리를 새로 고쳐 최신 상태로 유지하는 방법을 설명합니다.
 - [Windows PC 사용 중지](retire-a-windows-pc-with-microsoft-intune.md) - Windows PC를 사용 중지하기 위한 단계를 나열하고 PC를 사용 중지할 경우 발생하는 사항을 설명합니다.
-- [Windows PC에 대한 사용자-장치 연결 관리](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) - 사용자에게 소프트웨어를 배포하기 전에 사용자를 PC에 연결해야 하는 경우 및 방법을 설명합니다.
+- [Windows PC에 대한 사용자-디바이스 연결 관리](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) - 사용자에게 소프트웨어를 배포하기 전에 사용자를 PC에 연결해야 하는 경우 및 방법을 설명합니다.
 - [Windows PC 원격 지원 요청 및 제공](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) - Intune PC 사용자가 원격 지원을 받는 방법을 설명하고 필수 구성 요소 및 TeamViewer 설치를 설명합니다.
 
 위의 작업에 대한 자세한 내용은 [일반적인 컴퓨터 관리 작업](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)을 참조하세요.

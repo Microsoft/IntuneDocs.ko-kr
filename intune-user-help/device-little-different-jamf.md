@@ -20,14 +20,14 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d1749d2b40a83ddbc8b869bc33329f6c891a97e4
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55851545"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Jamf에서 관리하는 macOS 디바이스에서 작업 수행
 
-회사에서는 도구를 결합하여 macOS 디바이스가 회사 리소스에 안전하게 액세스할 수 있는지 확인합니다. 장치에서 이러한 리소스에 액세스할 수 있게 하려면 **애플리케이션** > **셀프 서비스**로 차례로 이동하여 장치에서 회사 정책을 준수하는지 또는 다른 작업을 수행하는지 확인합니다.
+회사에서는 도구를 결합하여 macOS 디바이스가 회사 리소스에 안전하게 액세스할 수 있는지 확인합니다. 디바이스에서 이러한 리소스에 액세스할 수 있게 하려면 **애플리케이션** > **셀프 서비스**로 차례로 이동하여 디바이스에서 회사 정책을 준수하는지 또는 다른 작업을 수행하는지 확인합니다.
 
 Jamf에서 관리하는 macOS 디바이스에 준수 문제가 있으면 **해결** 단추를 클릭하여 **셀프 서비스**를 시작하세요.
 

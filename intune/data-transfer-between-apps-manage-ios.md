@@ -63,7 +63,7 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
 
 ### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>예제 1: Intune 또는 타사 MDM 콘솔의 관리 환경
 
-1. Intune 또는 타사 MDM 공급자의 관리 콘솔로 이동합니다. 등록된 iOS 장치에 애플리케이션 구성 설정을 배포하는 콘솔 섹션으로 이동합니다.
+1. Intune 또는 타사 MDM 공급자의 관리 콘솔로 이동합니다. 등록된 iOS 디바이스에 애플리케이션 구성 설정을 배포하는 콘솔 섹션으로 이동합니다.
 
 2. [애플리케이션 구성] 섹션에서 다음 설정을 입력합니다.
 

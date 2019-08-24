@@ -20,7 +20,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1b4c1575c72e0563c4c55e262756c9b4aa0eddde
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55848205"
@@ -40,7 +40,7 @@ ms.locfileid: "55848205"
 
     ![Windows용 회사 포털 앱, 홈페이지, 내 디바이스 섹션이 강조 표시된 예제 스크린샷](./media/1809_CheckAccess_Context_Select_Device.png)  
 2. 디바이스를 선택합니다.  
-3. **장치 세부 정보** 페이지에서 **액세스 확인**을 선택합니다. 앱은 디바이스를 조직의 현재 요구 사항과 동기화하고 디바이스가 해당 요구 사항과 일치하는지 확인합니다. 이 확인은 몇 분 정도 걸릴 수 있습니다.  
+3. **디바이스 세부 정보** 페이지에서 **액세스 확인**을 선택합니다. 앱은 디바이스를 조직의 현재 요구 사항과 동기화하고 디바이스가 해당 요구 사항과 일치하는지 확인합니다. 이 확인은 몇 분 정도 걸릴 수 있습니다.  
 
     ![Windows용 회사 포털 앱, 디바이스 세부 정보 페이지, 액세스 확인 단추가 강조 표시된 예제 스크린샷](./media/1809_CheckAccess_Checking_Status.png) 
 

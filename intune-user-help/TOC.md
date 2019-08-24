@@ -39,7 +39,7 @@
 ### 운영 체제 질문
 #### [디바이스 업데이트](you-need-to-update-your-android-device.md)
 #### [지원되지 않는 버전](your-android-version-isnt-yet-supported.md)
-#### [장치가 루팅되어 연결할 수 없음](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [디바이스가 루팅되어 연결할 수 없음](your-device-is-rooted-and-you-cant-connect-android.md)
 #### [필요한 인증서 누락](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [알 수 없는 소스 끄기](you-need-to-turn-off-unknown-sources-android.md)
 #### [USB 디버깅 끄기](you-need-to-turn-off-usb-debugging-android.md)

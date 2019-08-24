@@ -20,7 +20,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 627cabb14def14494ca258fbc9ac7ebf736b10da
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55834384"
@@ -31,14 +31,14 @@ ms.locfileid: "55834384"
 * iOS
 * Android  
 
-## <a name="rename-device-from-device-details-page"></a>**장치 세부 정보** 페이지에서 장치 이름 바꾸기  
+## <a name="rename-device-from-device-details-page"></a>**디바이스 세부 정보** 페이지에서 디바이스 이름 바꾸기  
 다음 단계를 완료하여 회사 포털 **디바이스 세부 정보** 페이지에서 디바이스를 제거합니다. 
 
 1. 회사 포털 앱을 열고 **내 디바이스**로 이동합니다.  
 
     ![Windows용 회사 포털 앱, 홈페이지, 내 디바이스 섹션이 강조 표시된 예제 스크린샷](./media/1809_CheckAccess_Context_Select_Device.png)  
 2. 이름을 바꿀 디바이스를 선택합니다.
-3. **장치 세부 정보** 페이지에서 상단 오른쪽 모서리로 이동한 후 연필 모양의 **이름 바꾸기** 아이콘을 선택합니다.  
+3. **디바이스 세부 정보** 페이지에서 상단 오른쪽 모서리로 이동한 후 연필 모양의 **이름 바꾸기** 아이콘을 선택합니다.  
 
      ![Windows용 회사 포털 앱, 디바이스 세부 정보 페이지, 이름 바꾸기 연필 아이콘이 강조 표시된 예제 스크린샷](./media/1809_Rename_CPapp_Windows_icon.png) 
 4. 새 이름을 입력하고 **이름 바꾸기**를 클릭합니다. 앱에 즉시 디바이스 이름 업데이트가 표시됩니다.  

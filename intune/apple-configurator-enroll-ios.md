@@ -81,8 +81,8 @@ Apple Configurator 등록 방법은 [디바이스 등록 관리자](device-enrol
 
 1. 헤더 없이 2열로 구성된 쉼표로 구분된 값(.csv) 목록을 만듭니다. 왼쪽 열에 일련 번호를 추가하고, 오른쪽 열에 세부 정보를 추가합니다. 현재 목록의 최대값은 5,000개 행입니다. 텍스트 편집기에 .csv 목록이 다음과 같이 표시됩니다.
 
-    F7TLWCLBX196,장치 세부 정보</br>
-    DLXQPCWVGHMJ,장치 세부 정보
+    F7TLWCLBX196,디바이스 세부 정보</br>
+    DLXQPCWVGHMJ,디바이스 세부 정보
 
    [iOS 디바이스 일련 번호를 확인하는 방법](https://support.apple.com/HT204073)을 알아봅니다.
 2. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Apple 등록** > **Apple Configurator** > **디바이스** > **추가**를 선택합니다.

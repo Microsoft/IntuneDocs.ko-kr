@@ -1,5 +1,5 @@
 ---
-title: Intune에서 데이터 저장 및 처리
+title: Intune에서 데이터 스토리지 및 처리
 description: Intune에서 개인 데이터를 저장하고 처리하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
@@ -23,9 +23,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/23/2019
 ms.locfileid: "66050377"
 ---
-# <a name="data-storage-and-processing-in-intune"></a>Intune에서 데이터 저장 및 처리
+# <a name="data-storage-and-processing-in-intune"></a>Intune에서 데이터 스토리지 및 처리
 
-Intune에서 [데이터를 수집](privacy-data-collect.md)한 후에는 아래와 같이 해당 데이터의 저장 및 처리가 진행됩니다.
+Intune에서 [데이터를 수집](privacy-data-collect.md)한 후에는 아래와 같이 해당 데이터의 스토리지 및 처리가 진행됩니다.
 
 ## <a name="storing-personal-data"></a>개인 데이터 저장
 

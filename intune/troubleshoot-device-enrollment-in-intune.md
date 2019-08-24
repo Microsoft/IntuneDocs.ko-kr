@@ -135,7 +135,7 @@ ms.locfileid: "68375230"
 **해결 방법:** [Microsoft 365 관리 센터](https://admin.microsoft.com/)에서 회사 이름의 특수 문자를 제거하고 회사 정보를 저장합니다.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>확인된 도메인이 여럿이면 로그인하거나 디바이스를 등록할 수 없습니다.
-**문제:** ADFS에 두 번째 확인된 도메인을 추가하면 이 문제가 발생할 수 있습니다. 두 번째 도메인을 UPN(사용자 계정 이름) 접미사로 사용하는 사용자는 포털에 로그인하거나 장치를 등록할 수 없습니다.
+**문제:** ADFS에 두 번째 확인된 도메인을 추가하면 이 문제가 발생할 수 있습니다. 두 번째 도메인을 UPN(사용자 계정 이름) 접미사로 사용하는 사용자는 포털에 로그인하거나 디바이스를 등록할 수 없습니다.
 
 
 <strong>해결 방법:</strong> Microsoft Office 365 고객은 다음과 같은 경우 각 접미사에 대해 AD FS 2.0 페더레이션 서비스의 별도 인스턴스를 배포해야 합니다.
@@ -434,7 +434,7 @@ VPP 토큰에서 발생한 문제를 해결한 후에 차단된 디바이스를 
 
 3. 적절한 시간/날짜 또는 지난 12시간을 선택합니다.
 
-4. 문제의 디바이스를 찾아 디바이스가 제거된 방법을 확인합니다. 다음 예제에서는 SCCMInstall 계정이 알 수 없는 애플리케이션을 통해 장치를 삭제했음을 보여 줍니다.
+4. 문제의 디바이스를 찾아 디바이스가 제거된 방법을 확인합니다. 다음 예제에서는 SCCMInstall 계정이 알 수 없는 애플리케이션을 통해 디바이스를 삭제했음을 보여 줍니다.
 
     ![디바이스 삭제 진단 스크린샷](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 

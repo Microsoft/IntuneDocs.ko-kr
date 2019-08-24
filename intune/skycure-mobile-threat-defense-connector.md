@@ -40,7 +40,7 @@ Intune 디바이스 준수 정책을 통해 SEP Mobile 위협 평가를 사용�
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune과 SEP Mobile이 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 
-Android 또는 iOS용 SEP Mobile 앱은 파일 시스템, 네트워크 스택, 장치 및 애플리케이션 원격 분석(사용 가능한 경우)을 캡처한 다음, Symantec 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
+Android 또는 iOS용 SEP Mobile 앱은 파일 시스템, 네트워크 스택, 디바이스 및 애플리케이션 원격 분석(사용 가능한 경우)을 캡처한 다음, Symantec 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
 
 Intune 디바이스 준수 정책에는 SEP Mobile 위험 평가를 기반으로 하는 SEP Mobile에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다.
 

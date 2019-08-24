@@ -50,12 +50,12 @@ ms.locfileid: "61491037"
 - [ 디바이스를 *관리*한다는 것은 무엇을 의미할까요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [회사는 내 디바이스에서 어떤 정보를 볼 수 있나요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [내 디바이스 암호화](encrypt-your-device-windows.md)
-- [장치 암호 설정 또는 변경](set-or-change-your-password-windows.md)
+- [디바이스 암호 설정 또는 변경](set-or-change-your-password-windows.md)
 
 ## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>디바이스를 관리에 등록한 후 수행할 수 있는 작업
-- [수동으로 장치 동기화](sync-your-device-manually-windows.md)
+- [수동으로 디바이스 동기화](sync-your-device-manually-windows.md)
 - [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-windows.md)
-- [분실 또는 도난당한 장치에서 데이터 지우기](reset-erase-your-device-cpwebsite.md)
+- [분실 또는 도난당한 디바이스에서 데이터 지우기](reset-erase-your-device-cpwebsite.md)
 - [회사 포털에서 디바이스를 초기화하면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 - [관리에서 내 디바이스 제거](unenroll-your-device-from-intune-windows.md)
 - [회사 포털에서 내 디바이스를 제거하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)

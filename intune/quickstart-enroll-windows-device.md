@@ -23,7 +23,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/31/2019
 ms.locfileid: "68670854"
 ---
-# <a name="quickstart-enroll-your-windows-10-device"></a>빠른 시작: Windows 10 장치 등록
+# <a name="quickstart-enroll-your-windows-10-device"></a>빠른 시작: Windows 10 디바이스 등록
 
 이 빠른 시작에서는 먼저 Intune 사용자의 역할을 수행하고 Microsoft Intune에 Windows 10 디바이스를 등록한 후 그런 다음 Intune으로 돌아가 등록된 디바이스를 확인합니다.
 

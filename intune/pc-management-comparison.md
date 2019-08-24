@@ -43,7 +43,7 @@ ms.locfileid: "68353561"
 |**인벤토리**|사용 가능 <br>[Windows PC에 대한 하드웨어 및 소프트웨어 인벤토리 보기](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|사용 가능 <br>[앱 정보를 모니터링하는 방법](apps-monitor.md)<br>[디바이스 관리란?](device-management.md)|
 |**Windows 방화벽 정책**|사용 가능 <br>[Windows 방화벽 정책을 사용하여 Windows PC 보호](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |사용 가능 <br>[Windows Defender 방화벽](endpoint-protection-windows-10.md#windows-defender-firewall)|
 |**맬웨어 방지 보호**|Endpoint Protection<br>[Endpoint Protection을 사용한 Windows PC의 보안 유지 방법](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Windows Defender 사용](advanced-threat-protection.md)|
-|**원격 지원** |TeamViewer<br>[Windows PC 원격 지원 요청 및 제공](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [TeamViewer를 사용하여 Intune 장치 원격 관리](teamviewer-support.md) |
+|**원격 지원** |TeamViewer<br>[Windows PC 원격 지원 요청 및 제공](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [TeamViewer를 사용하여 Intune 디바이스 원격 관리](teamviewer-support.md) |
 |**앱 배포** | 비즈니스용 Microsoft 스토어에는 사용할 수 없음<br>.exe, appx 및 다중 파일 .msi만 해당<br>[Intune 소프트웨어 클라이언트를 실행하는 Windows PC에 앱 추가](add-apps-for-windows-pcs-in-microsoft-intune.md)|Microsoft 스토어 앱과 기간 업무 앱에 사용 가능<br>[Windows 스토어 앱을 추가하는 방법](store-apps-windows.md)<br>[Windows LOB(기간 업무) 앱을 추가하는 방법](lob-apps-windows.md)|
 |**앱 보호**|사용할 수 없음|사용 가능 <br>[앱 보호 정책이란?](app-protection-policy.md)|
 |**상태 증명**|사용할 수 없음|사용 가능|

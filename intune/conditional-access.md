@@ -32,7 +32,7 @@ ms.locfileid: "59569495"
 
 Enterprise Mobility + Security(EMS) 조건부 액세스는 독립 실행형 제품이 아니며 EMS의 일부분인 모든 서비스와 제품에 포함되는 솔루션입니다. EMS 조건부 액세스는 회사 데이터의 보안을 유지할 수 있는 세분화된 액세스 제어 기능을 제공하는 동시에, 사용자에게는 모든 위치와 디바이스에서 업무를 가장 효율적으로 수행할 수 있도록 하는 환경을 제공합니다.
 
-위치, 장치, 사용자 상태 및 애플리케이션 민감도 등을 기반으로 회사 데이터에 대한 액세스를 제한하는 조건을 정의할 수 있습니다.
+위치, 디바이스, 사용자 상태 및 애플리케이션 민감도 등을 기반으로 회사 데이터에 대한 액세스를 제한하는 조건을 정의할 수 있습니다.
 
 > [!NOTE] 
 > 조건부 액세스의 기능은 [Office 365 서비스](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/)로도 확장 적용됩니다.

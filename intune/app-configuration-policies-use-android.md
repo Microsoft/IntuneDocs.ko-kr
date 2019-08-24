@@ -86,7 +86,7 @@ Android 디바이스의 경우 다음 키/값 쌍을 사용합니다.
 
    > [!NOTE]
    > 다중 ID를 사용하는 구성된 조직 계정만 허용하는 경우 Android용 Outlook 2.2.222 이상을 사용해야 합니다.<p></p>
-   > Microsoft Intune 관리자는 관리되는 장치에서 Microsoft Office 애플리케이션에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 디바이스에서 개인 계정을 차단할 수 있습니다. 지원 애플리케이션이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.<p></p>
+   > Microsoft Intune 관리자는 관리되는 디바이스에서 Microsoft Office 애플리케이션에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 디바이스에서 개인 계정을 차단할 수 있습니다. 지원 애플리케이션이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.<p></p>
    > Microsoft Word, Microsoft Excel, Microsoft PowerPoint의 경우 앱 버전 16.0.9327.1000 이상을 사용해야 합니다. 
 
 ## <a name="enter-the-json-editor"></a>JSON 편집기 입력

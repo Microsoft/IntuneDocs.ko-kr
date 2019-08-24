@@ -18,7 +18,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c75923440b8b8147f7ed75a06df2435ed6eb0981
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "57565284"
@@ -34,7 +34,7 @@ ms.locfileid: "57565284"
 
 -   **카메라** - 디바이스 카메라를 사용하도록 설정하거나 차단합니다.
 -   **복사 및 붙여넣기** - 디바이스에서 복사 및 붙여넣기 기능을 사용하도록 설정하거나 차단합니다.
--   **이동식 스토리지** - 장치에서 SD 카드와 같은 이동식 스토리지를 사용하도록 허용합니다.
+-   **이동식 스토리지** - 디바이스에서 SD 카드와 같은 이동식 스토리지를 사용하도록 허용합니다.
 -   **지리적 위치** - 디바이스에서 위치 정보를 활용할 수 있습니다.
 -   **Microsoft 계정** - 사용자가 Microsoft 계정을 디바이스에 연결하도록 설정하거나 차단합니다.
 -   **화면 캡처** - 사용자가 화면의 내용을 이미지 파일로 캡처하도록 허용합니다.

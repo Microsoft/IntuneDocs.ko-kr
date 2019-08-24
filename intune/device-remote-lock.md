@@ -56,5 +56,5 @@ ms.locfileid: "57394223"
 
 ## <a name="next-steps"></a>다음 단계
 
-- 이 작업의 상태를 보려면 **Microsoft Intune** > **장치** > **장치 작업**을 선택합니다. 
+- 이 작업의 상태를 보려면 **Microsoft Intune** > **디바이스** > **디바이스 작업**을 선택합니다. 
 - 디바이스를 관리할 수 있는 추가 작업은 [사용 가능한 작업](device-management.md)을 참조하세요.

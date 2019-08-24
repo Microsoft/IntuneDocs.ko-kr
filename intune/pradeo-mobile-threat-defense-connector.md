@@ -29,7 +29,7 @@ Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Pradeo 위
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune과 Pradeo가 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 
-Android 및 iOS용 Pradeo 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 장치 및 애플리케이션 원격 분석을 캡처한 다음, 원격 분석 데이터를 Pradeo 클라우드 서비스로 보내 모바일 위협에 대한 장치의 위험을 평가합니다.
+Android 및 iOS용 Pradeo 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 디바이스 및 애플리케이션 원격 분석을 캡처한 다음, 원격 분석 데이터를 Pradeo 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
 
 Intune 디바이스 준수 정책에는 Pradeo 위험 평가에 기반을 둔 Pradeo Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다. 디바이스가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 디바이스에 설치된 Pradeo 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
 

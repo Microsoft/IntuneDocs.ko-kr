@@ -132,7 +132,7 @@ Lookout MES 콘솔에서 **시스템** > **Manage Enrollment**(등록 관리) > 
 
 - **Disconnected Status**(연결이 끊긴 상태)에 연결이 끊긴 디바이스를 연결 끊김으로 표시하기 전의 일 수를 지정합니다.  
 
-  연결이 끊긴 장치는 Intune 조건부 액세스 정책을 기반으로 규정 비준수로 간주되어 회사 애플리케이션 액세스가 차단됩니다. 1일에서 90일 사이의 값을 지정할 수 있습니다.
+  연결이 끊긴 디바이스는 Intune 조건부 액세스 정책을 기반으로 규정 비준수로 간주되어 회사 애플리케이션 액세스가 차단됩니다. 1일에서 90일 사이의 값을 지정할 수 있습니다.
 
   ![시스템 모듈의 Lookout 등록 설정](./media/lookout-mtd-connector-integration/lookout-console-enrollment-settings.png)
 

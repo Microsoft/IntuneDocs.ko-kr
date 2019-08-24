@@ -41,7 +41,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="create-a-device-compliance-policy"></a>디바이스 준수 정책 만들기
 
-이 빠른 시작에서는 Microsoft Intune을 사용하여 Android 장치의 정보에 대한 액세스 권한이 부여되기 전에 업무용 Android 사용자에게 특정 길이의 암호를 입력하도록 요구합니다.
+이 빠른 시작에서는 Microsoft Intune을 사용하여 Android 디바이스의 정보에 대한 액세스 권한이 부여되기 전에 업무용 Android 사용자에게 특정 길이의 암호를 입력하도록 요구합니다.
 
 1. Intune에서 **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
 2. **Android 준수**를 **이름**으로 추가합니다. 또한 **설명**을 추가합니다.

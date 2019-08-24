@@ -240,7 +240,7 @@ Azure AD(Azure Active Directory)를 사용하여 애플리케이션을 설정하
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Data Warehouse 데이터 모델의 새 엔터티 <!-- 2077804 -->
 
  - [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md) 엔터티가 추가되었습니다. **MobileAppDeviceUserInstallStatus**는 지정된 디바이스 및 사용자의 모바일 앱 설치 상태를 나타냅니다.
- - [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) 엔터티가 추가되었습니다. **MobileAppInstallState** 엔터티는 장치, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 애플리케이션의 설치 상태를 나타냅니다. 
+ - [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) 엔터티가 추가되었습니다. **MobileAppInstallState** 엔터티는 디바이스, 사용자 또는 둘 다를 포함하는 그룹에 할당된 후 모바일 애플리케이션의 설치 상태를 나타냅니다. 
 
 ## <a name="1710"></a>1710
 _2017년 11월 출시됨_

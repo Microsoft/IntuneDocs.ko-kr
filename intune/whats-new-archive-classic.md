@@ -175,7 +175,7 @@ iOS 10.3 릴리스가 2017년 3월 27일에 iOS 사용자에게 배포되기 시
 
 #### <a name="improved-support-for-android-users-based-in-china---720444--"></a>중국에 거주하는 Android 사용자에 대한 지원 개선 <!--720444-->
 
-중국에는 Google Play 스토어를 사용할 수 없으므로 Android 디바이스 사용자는 중국 마켓플레이스에서 앱을 다운로드해야 합니다. 회사 포털은 중국의 Android 사용자가 현지 앱 스토어에서 회사 포털 및 Outlook 앱을 다운로드하도록 리디렉션하여 이 워크플로를 지원합니다. 이는 모바일 장치 관리 및 모바일 애플리케이션 관리에 대한 조건부 액세스 정책이 설정된 경우 사용자 환경을 개선합니다. Android용 회사 포털 및 Outlook 앱은 다음과 같은 중국 앱 스토어에서 사용할 수 있습니다.
+중국에는 Google Play 스토어를 사용할 수 없으므로 Android 디바이스 사용자는 중국 마켓플레이스에서 앱을 다운로드해야 합니다. 회사 포털은 중국의 Android 사용자가 현지 앱 스토어에서 회사 포털 및 Outlook 앱을 다운로드하도록 리디렉션하여 이 워크플로를 지원합니다. 이는 모바일 디바이스 관리 및 모바일 애플리케이션 관리에 대한 조건부 액세스 정책이 설정된 경우 사용자 환경을 개선합니다. Android용 회사 포털 및 Outlook 앱은 다음과 같은 중국 앱 스토어에서 사용할 수 있습니다.
 
 - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 - [Xiaomi](http://en.miui.com/thread-469541-1-1.html)
@@ -223,15 +223,15 @@ Windows 10 데스크톱을 등록하는 기본 동작이 바뀌고 있습니다.
 설명서 및 앱에 대한 링크를 포함하여 iOS용 회사 포털 앱 내의 링크는 Safari의 앱 내 보기를 사용하여 회사 포털 앱에서 직접 열립니다. 이 업데이트는 1월에 서비스 업데이트에서 별도로 제공됩니다.
 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Windows 디바이스용 새 MDM 서버 주소 <!--893007-->
-Windows 및 Windows Phone 사용자가 MDM 서버 주소 입력 메시지가 표시되었을 때 __manage.microsoft.com__ 을 입력할 경우 디바이스 등록이 실패합니다. MDM 서버 주소가 __manage.microsoft.com__ 에서 __enrollment.manage.microsoft.com__ 으로 변경됩니다. 사용자에게 Windows 또는 Windows Phone 디바이스를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 __enrollment.manage.microsoft.com__ 을 사용하라고 알리세요. CNAME 설정을 변경할 필요는 없습니다. 이 변경에 대한 자세한 내용을 보려면 [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)를 방문하세요.
+Windows 및 Windows Phone 사용자가 MDM 서버 주소 입력 메시지가 표시되었을 때 __manage.microsoft.com__을 입력할 경우 디바이스 등록이 실패합니다. MDM 서버 주소가 __manage.microsoft.com__에서 __enrollment.manage.microsoft.com__으로 변경됩니다. 사용자에게 Windows 또는 Windows Phone 디바이스를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 __enrollment.manage.microsoft.com__을 사용하라고 알리세요. CNAME 설정을 변경할 필요는 없습니다. 이 변경에 대한 자세한 내용을 보려면 [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)를 방문하세요.
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android용 회사 포털 앱의 새 사용자 환경 <!--621622-->
 3월부터, Android용 회사 포털 앱이 [material design guidelines](https://material.io/guidelines/material-design/introduction.html)(재료 디자인 지침)에 따라 모양과 느낌이 더욱 세련되어집니다. 이러한 향상된 사용자 환경에는 다음이 포함됩니다.
 
-* __색__ : 탭 헤더에 사용자 지정 색상표에 따라 색을 표시할 수 있습니다.
-* __인터페이스__ : 앱 탭에서 추천 앱 및 모든 앱 단추가 업데이트되었습니다. 검색 단추는 이제 부동 작업 단추입니다.
-* __탐색__ : 모든 앱은 쉽게 탐색할 수 있도록 추천, 전체 및 범주 탭으로 구분된 뷰를 표시합니다.
-* __서비스__ : 내 디바이스 및 IT 담당자 탭 가독성을 개선했습니다.
+* __색__: 탭 헤더에 사용자 지정 색상표에 따라 색을 표시할 수 있습니다.
+* __인터페이스__: 앱 탭에서 추천 앱 및 모든 앱 단추가 업데이트되었습니다. 검색 단추는 이제 부동 작업 단추입니다.
+* __탐색__: 모든 앱은 쉽게 탐색할 수 있도록 추천, 전체 및 범주 탭으로 구분된 뷰를 표시합니다.
+* __서비스__: 내 디바이스 및 IT 담당자 탭 가독성을 개선했습니다.
 
 [UI 업데이트 페이지](whats-new-app-ui.md)에서 이전 및 이후 이미지를 찾을 수 있습니다.
 
@@ -308,7 +308,7 @@ __Azure Portal의 공개 미리 보기에서 통신 비용 관리 통합__ <!--7
 ### <a name="new-capabilities"></a>새로운 기능
 
 __모든 플랫폼에서 다단계 인증__ <!--747590-->
-이제 선택한 사용자 그룹이 Azure 관리 포털에서 iOS, Android, Windows 8.1+ 또는 Windows Phone 8.1+ 장치를 등록할 때 Azure Active Directory의 Microsoft Intune 등록 애플리케이션에서 MFA(Multi-Factor Authentication)를 구성하여 해당 사용자 그룹에 MFA를 적용할 수 있습니다.
+이제 선택한 사용자 그룹이 Azure 관리 포털에서 iOS, Android, Windows 8.1+ 또는 Windows Phone 8.1+ 디바이스를 등록할 때 Azure Active Directory의 Microsoft Intune 등록 애플리케이션에서 MFA(Multi-Factor Authentication)를 구성하여 해당 사용자 그룹에 MFA를 적용할 수 있습니다.
 
 __모바일 디바이스 등록을 제한하는 기능__ <!--747596-->
 Intune은 등록할 수 있는 모바일 디바이스 플랫폼을 제어하는 새로운 등록 제한을 추가합니다. Intune은 모바일 디바이스 플랫폼을 iOS, macOS, Android, Windows 및 Windows Mobile로 구분합니다.
@@ -322,7 +322,7 @@ Intune은 [이 문서](device-enrollment.md)에 설명된 대로 IT 관리자가
 __등록시 Multi-Factor Authentication이 Azure Portal로 이동__ <!--VSO 750545-->
 이전에는 관리자가 Intune 콘솔 또는 Configuration Manager(2016년 10월 이전 릴리스) 콘솔로 이동하여 Intune 등록에 대한 MFA를 설정했습니다. 이 업데이트된 기능을 사용하면 이제 [Microsoft Azure Portal](https://manage.windowsazure.com)에 Intune 자격 증명으로 로그인하고 Azure AD를 통해 MFA 설정을 구성합니다. 이 기능에 대한 자세한 내용은 [여기](https://aka.ms/mfa_ad)를 참조하세요.
 
-__이제 중국에서 Android용 회사 포털 앱 사용 가능__  <!--VSO 658093-->
+__이제 중국에서 Android용 회사 포털 앱 사용 가능__ <!--VSO 658093-->
 중국에서 Android 용 회사 포털 앱을 다운로드할 수 있도록 게시합니다. 중국에는 Google Play 스토어가 없으므로 Android 디바이스는 중국 앱 마켓플레이스에서 앱을 구입해야 합니다. Android용 회사 포털 앱은 다음 스토어에서 다운로드할 수 있습니다.
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
@@ -360,7 +360,7 @@ __Windows 10 디바이스에 사용할 수 있는 새로운 Microsoft Intune 회
 새 앱을 사용하면 사용자가 Windows 10 디바이스에서 SSO(Single Sign-On) 및 인증서 기반 인증과 같은 추가적인 플랫폼 기능도 활용할 수 있습니다. 이 앱은 기존 Windows 8.1 회사 포털과 Windows Phone 8.1 회사 포털에 대한 업그레이드로서 Microsoft 스토어에서 설치해 사용할 수 있습니다. 자세한 내용은 [aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp)를 참조하세요.
 
 > [!IMPORTANT]
-> __Intune 및 Android for Work에 대한 업데이트__ __필수__ 작업을 통해 Android for Work 앱을 배포할 수 있는 반면, Intune 그룹이 새 Azure AD 그룹 환경으로 마이그레이션된 경우에는 앱을 __사용 가능__ 으로만 배포할 수 있습니다.
+> __Intune 및 Android for Work에 대한 업데이트__ __필수__ 작업을 통해 Android for Work 앱을 배포할 수 있는 반면, Intune 그룹이 새 Azure AD 그룹 환경으로 마이그레이션된 경우에는 앱을 __사용 가능__으로만 배포할 수 있습니다.
 
 __Intune 앱 SDK Cordova 플러그 인을 통해 별도의 등록 없이 MAM 사용__ 앱 개발자는 Cordova용 Intune 앱 SDK 플러그 인을 사용하여 Cordova 기반 Android 및 iOS용 앱에 디바이스를 등록하지 않고도 MAM 기능을 설정할 수 있습니다. Cordova용 Intune 앱 SDK 플러그 인은 [여기](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)에서 제공됩니다.
 

@@ -32,7 +32,7 @@ Azure Active Directory 및 Microsoft Intune의 조건부 액세스 정책을 사
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Intune에서 디바이스 준수 정책 설정
 
-1. Microsoft Azure를 열고 **Intune** > **장치 준수** > **정책**으로 이동합니다. 비준수 사용자 및 그룹에 대한 일련의 작업(예: 경고 이메일 보내기) 선택을 포함하여 macOS에 대한 정책을 만들 수 있습니다.
+1. Microsoft Azure를 열고 **Intune** > **디바이스 준수** > **정책**으로 이동합니다. 비준수 사용자 및 그룹에 대한 일련의 작업(예: 경고 이메일 보내기) 선택을 포함하여 macOS에 대한 정책을 만들 수 있습니다.
 2. [정책] > [할당]을 선택합니다. Azure AD(Active Directory) 보안 그룹을 포함하거나 제외할 수 있습니다.
 3. [선택된 그룹]을 선택하면 Azure AD 보안 그룹이 표시됩니다. 이 정책을 적용할 사용자 그룹을 선택한 후 [저장]을 선택하여 정책을 사용자에게 배포합니다.
 
@@ -66,7 +66,7 @@ Azure Active Directory 및 Microsoft Intune의 조건부 액세스 정책을 사
 최종 사용자는 Jamf Self 서비스를 통해 회사 포털 앱을 시작하여 Azure AD가 포함된 디바이스를 Jamf Pro에서 관리되는 디바이스로 등록해야 합니다. 이를 위해서는 최종 사용자가 조치를 취해야 합니다. 전자 메일, Jamf Pro 알림 또는 Jamf Self Service의 단추를 클릭하도록 최종 사용자에게 알리는 다른 방법을 통해 [최종 사용자에게 연락](end-user-educate.md)하는 것이 좋습니다.
 
 > [!WARNING]
-> 디바이스 등록을 시작하려면 회사 포털 앱을 Jamf Self Service에서 시작해야 합니다. <br><br>회사 포털 앱을 수동으로 시작하는 경우(예: 애플리케이션 또는 다운로드 폴더에서) 장치가 등록되지 않습니다. 최종 사용자가 회사 포털 앱을 수동으로 시작하면 'AccountNotOnboarded' 경고가 표시됩니다.
+> 디바이스 등록을 시작하려면 회사 포털 앱을 Jamf Self Service에서 시작해야 합니다. <br><br>회사 포털 앱을 수동으로 시작하는 경우(예: 애플리케이션 또는 다운로드 폴더에서) 디바이스가 등록되지 않습니다. 최종 사용자가 회사 포털 앱을 수동으로 시작하면 'AccountNotOnboarded' 경고가 표시됩니다.
 
 1. Jamf Pro에서 **컴퓨터** > **정책**으로 이동하고 디바이스 등록을 위한 새 정책을 만듭니다.
 2. 트리거 및 실행 빈도를 포함하여 **Microsoft Intune 통합** 페이로드를 구성합니다.

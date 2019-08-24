@@ -123,7 +123,7 @@ Azure AD 연결 웹앱이 모바일 플랫폼에서 Intune Managed Browser를 �
 
 iOS 및 Android의 Microsoft Edge 및 Intune Managed Browser는 Azure AD에 연결된 모든 웹앱(SaaS 및 온-프레미스)에 SSO를 활용할 수도 있습니다. Microsoft Authenticator 앱이 iOS 또는 Android의 Intune 회사 포털 앱에 표시되는 경우, 정책으로 보호되는 브라우저의 사용자는 자격 증명을 다시 입력하지 않고도 Azure AD 연결 웹앱에 액세스할 수 있습니다.
 
-SSO하려면 디바이스를 iOS 또는 Android의 Intune 회사 포털에 있는 Microsoft Authenticator 앱에 등록해야 합니다. 해당 장치가 다른 애플리케이션에 등록되어 있지 않은 경우 Authenticator 앱 또는 Intune 회사 포털을 사용하는 사용자가 정책으로 보호되는 브라우저에서 Azure AD 연결 웹앱으로 이동할 때 해당 장치를 등록하라는 메시지가 표시됩니다. 디바이스가 Intune에서 관리되는 계정으로 등록되면 해당 계정은 Azure AD 연결 웹앱에서 SSO를 사용하도록 설정합니다. 
+SSO하려면 디바이스를 iOS 또는 Android의 Intune 회사 포털에 있는 Microsoft Authenticator 앱에 등록해야 합니다. 해당 디바이스가 다른 애플리케이션에 등록되어 있지 않은 경우 Authenticator 앱 또는 Intune 회사 포털을 사용하는 사용자가 정책으로 보호되는 브라우저에서 Azure AD 연결 웹앱으로 이동할 때 해당 디바이스를 등록하라는 메시지가 표시됩니다. 디바이스가 Intune에서 관리되는 계정으로 등록되면 해당 계정은 Azure AD 연결 웹앱에서 SSO를 사용하도록 설정합니다. 
 
 > [!NOTE]
 > 디바이스 등록은 Azure AD 서비스를 사용하는 간단한 체크 인입니다. 전체 디바이스를 등록할 필요가 없고 디바이스에 대한 추가 권한을 부여하지 않습니다.
@@ -159,7 +159,7 @@ Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대�
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>보호되는 브라우저에 대한 애플리케이션 프록시 설정을 구성하는 방법
 
-Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 애플리케이션 프록시]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 함께 사용하면 iOS 및 Android 장치 사용자에 대해 다음과 같은 시나리오를 지원할 수 있습니다.
+Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 애플리케이션 프록시]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 함께 사용하면 iOS 및 Android 디바이스 사용자에 대해 다음과 같은 시나리오를 지원할 수 있습니다.
 
 - 사용자가 Microsoft Outlook 앱을 다운로드하고 로그인합니다. Intune 앱 보호 정책이 자동으로 적용됩니다. 저장된 데이터를 암호화하고 사용자가 디바이스에서 관리되지 않는 앱 또는 위치로 회사 파일을 전송할 수 없도록 차단합니다. 그런 다음 사용자가 Outlook에서 인트라넷 사이트에 대한 링크를 클릭할 때 해당 링크가 다른 브라우저 대신 보호되는 브라우저 애플리케이션에서 열리도록 지정할 수 있습니다. 보호되는 브라우저는 이 인트라넷 사이트가 애플리케이션 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 애플리케이션 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있으며 Outlook의 링크가 예상대로 작동합니다.
 - 원격 사용자가 보호되는 브라우저 애플리케이션을 열고 내부 URL을 사용하여 인트라넷 사이트로 이동합니다. 보호되는 브라우저는 이 인트라넷 사이트가 애플리케이션 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 애플리케이션 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있습니다.
@@ -232,7 +232,7 @@ Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행�
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>허용 및 차단 URL에 대한 URL 형식
 다음 정보를 사용하여 허용 및 차단 목록에 URL을 지정할 때 사용할 수 있는 형식 및 와일드카드에 대해 알아볼 수 있습니다.
 
-- 다음과 같이 허용되는 패턴 목록의 규칙에 따라 와일드카드 기호(**&#42;**)를 사용할 수 있습니다.
+- 다음과 같이 허용되는 패턴 목록의 규칙에 따라 와일드카드 기호( **&#42;** )를 사용할 수 있습니다.
 
 - URL을 목록에 입력할 때 모든 URL의 앞에 **http** 또는 **https** 를 덧붙여야 합니다.
 

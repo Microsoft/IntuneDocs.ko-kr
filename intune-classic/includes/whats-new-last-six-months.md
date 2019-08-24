@@ -152,7 +152,7 @@ iOS 10.3 릴리스가 2017년 3월 27일에 iOS 사용자에게 배포되기 시
 
 #### <a name="improved-support-for-android-users-based-in-china---720444--"></a>중국에 거주하는 Android 사용자에 대한 지원 개선 <!--720444-->
 
-중국에는 Google Play 스토어를 사용할 수 없으므로 Android 디바이스 사용자는 중국 마켓플레이스에서 앱을 다운로드해야 합니다. 회사 포털은 중국의 Android 사용자가 현지 앱 스토어에서 회사 포털 및 Outlook 앱을 다운로드하도록 리디렉션하여 이 워크플로를 지원합니다. 이는 모바일 장치 관리 및 모바일 애플리케이션 관리에 대한 조건부 액세스 정책이 설정된 경우 사용자 환경을 개선합니다. Android용 회사 포털 및 Outlook 앱은 다음과 같은 중국 앱 스토어에서 사용할 수 있습니다.
+중국에는 Google Play 스토어를 사용할 수 없으므로 Android 디바이스 사용자는 중국 마켓플레이스에서 앱을 다운로드해야 합니다. 회사 포털은 중국의 Android 사용자가 현지 앱 스토어에서 회사 포털 및 Outlook 앱을 다운로드하도록 리디렉션하여 이 워크플로를 지원합니다. 이는 모바일 디바이스 관리 및 모바일 애플리케이션 관리에 대한 조건부 액세스 정책이 설정된 경우 사용자 환경을 개선합니다. Android용 회사 포털 및 Outlook 앱은 다음과 같은 중국 앱 스토어에서 사용할 수 있습니다.
 
 - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 - [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
@@ -285,7 +285,7 @@ __Azure Portal의 공개 미리 보기에서 통신 비용 관리 통합__ <!--7
 ### <a name="new-capabilities"></a>새로운 기능
 
 __모든 플랫폼에서 다단계 인증__ <!--747590-->
-이제 선택한 사용자 그룹이 Azure 관리 포털에서 iOS, Android, Windows 8.1+ 또는 Windows Phone 8.1+ 장치를 등록할 때 Azure Active Directory의 Microsoft Intune 등록 애플리케이션에서 MFA(Multi-Factor Authentication)를 구성하여 해당 사용자 그룹에 MFA를 적용할 수 있습니다.
+이제 선택한 사용자 그룹이 Azure 관리 포털에서 iOS, Android, Windows 8.1+ 또는 Windows Phone 8.1+ 디바이스를 등록할 때 Azure Active Directory의 Microsoft Intune 등록 애플리케이션에서 MFA(Multi-Factor Authentication)를 구성하여 해당 사용자 그룹에 MFA를 적용할 수 있습니다.
 
 __모바일 디바이스 등록을 제한하는 기능__ <!--747596-->
 Intune은 등록할 수 있는 모바일 디바이스 플랫폼을 제어하는 새로운 등록 제한을 추가합니다. Intune은 모바일 디바이스 플랫폼을 iOS, macOS, Android, Windows 및 Windows Mobile로 구분합니다.

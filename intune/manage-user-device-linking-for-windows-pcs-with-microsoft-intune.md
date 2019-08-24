@@ -1,5 +1,5 @@
 ---
-title: Windows PC에 대한 사용자-장치 연결 관리
+title: Windows PC에 대한 사용자-디바이스 연결 관리
 titleSuffix: Microsoft Intune
 description: Intune에서 관리되는 Windows PC에 사용자를 연결하는 방법을 알아봅니다.
 keywords: ''
@@ -24,7 +24,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/19/2019
 ms.locfileid: "68353627"
 ---
-# <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC에 대한 사용자-장치 연결 관리
+# <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC에 대한 사용자-디바이스 연결 관리
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 

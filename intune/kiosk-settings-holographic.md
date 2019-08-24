@@ -62,7 +62,7 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
   - **Azure AD 사용자 또는 그룹(Windows 10, 버전 1803 이상)** : 디바이스에 로그인할 사용자 자격 증명이 필요합니다. **추가**를 선택하여 목록에서 Azure AD 사용자 또는 그룹을 선택합니다. 여러 사용자 및 그룹을 선택할 수 있습니다. **선택**을 선택하여 변경 내용을 저장합니다.
   - **HoloLens 방문자**: 방문자 계정은 [공유된 PC 모드 개념](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts)에 설명된 대로 사용자 자격 증명이나 인증이 필요 없는 게스트 계정입니다.
 
-- **애플리케이션**: 키오스크 장치에서 실행할 앱을 추가합니다. 여러 개의 앱을 추가할 수 있습니다.
+- **애플리케이션**: 키오스크 디바이스에서 실행할 앱을 추가합니다. 여러 개의 앱을 추가할 수 있습니다.
 
   - **스토어 앱을 추가**: 추가 하거나 Intune에 배포 된 기존 앱 선택 [클라이언트 앱](apps-add.md), LOB 앱을 포함 합니다. 나열 된 앱 목록에 없으면 Intune 지원 대부분 [앱 유형](apps-add.md) 했는지 [Intune에 추가](store-apps-windows.md)합니다.
   - **Win32 앱 추가**: Windows Holographic for Business에서 지원되지 않습니다.
