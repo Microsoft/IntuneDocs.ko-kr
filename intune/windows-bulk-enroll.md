@@ -16,12 +16,12 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 1775bdf0030968cdd16d87d91794480a43a22d12
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403379"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651030"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 대량 등록
 
@@ -73,7 +73,7 @@ Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당
 
 2. 디바이스에 프로비전 패키지를 적용하는 방법을 선택합니다.  다음 방법 중 하나로 디바이스에 프로비전 패키지를 적용할 수 있습니다.
    - USB 드라이브에 프로비전 패키지를 넣고, 대량 등록할 디바이스에 USB 드라이브를 삽입한 다음 초기 설정 중 적용
-   - 네트워크 폴더에 프로비전 패키지를 넣고, 초기 설정 후 대량 등록할 디바이스에 삽입하여 적용
+   - 네트워크 폴더에 프로비저닝 패키지를 배치하고 초기 설정 후 적용
 
    프로비전 패키지 적용에 대한 단계별 지침은 [프로비전 패키지 적용](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package)을 참조하세요.
 

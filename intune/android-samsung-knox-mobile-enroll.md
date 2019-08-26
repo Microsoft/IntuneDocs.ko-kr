@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c92f70844594fd8524f2e49c537f1afaadaf96
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a637ae12f3a2ee395503bedd595c490579fdb43c
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783188"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993556"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 디바이스 자동 등록
 
@@ -103,9 +103,9 @@ MDM 프로필을 디바이스에 할당하려면 다음 방법 중 하나를 사
 
 Android용 KME를 사용하여 Intune에 등록된 디바이스의 경우 최종 사용자가 로그인하는 방법을 다음과 같이 구성할 수 있습니다.
 
-- **사용자 이름 연결 없음:** Knox 포털의 **디바이스 세부 정보** 아래에서 추가된 디바이스의 **사용자 ID** 및 **암호** 필드를 비워 둡니다. 이 작업을 수행하려면 Intune에 등록할 때 최종 사용자가 사용자 이름과 암호를 모두 입력해야 합니다.
+- **사용자 이름 연결 없음:** Knox 포털의 **디바이스 세부 정보** 아래에서 추가된 디바이스의 **사용자 ID** 및 **암호** 필드를 비워 둡니다. 이 옵션을 사용하려면 Intune에 등록할 때 최종 사용자가 사용자 이름과 암호를 모두 입력해야 합니다.
 
-- **사용자 이름 연결 사용:** Knox 포털의 **디바이스 세부 정보** 아래에서 추가된 디바이스의 **사용자 ID**(예: 할당된 사용자 또는 [디바이스 등록 관리자](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) 계정의 사용자 이름)를 입력합니다. 이 필드의 경우 사용자 이름이 미리 채워져 있고 최종 사용자가 Intune에 등록할 때 암호를 입력해야 합니다.
+- **사용자 이름 연결 사용:** Knox 포털의 **디바이스 세부 정보** 아래에서 추가된 디바이스의 **사용자 ID**(예: 할당된 사용자 또는 [디바이스 등록 관리자](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) 계정의 사용자 이름)를 입력합니다. 이 옵션의 경우 사용자 이름이 미리 채워져 있고 최종 사용자가 Intune에 등록할 때 암호를 입력해야 합니다.
 
 > [!NOTE]
 >
@@ -116,11 +116,11 @@ Android용 KME를 사용하여 Intune에 등록된 디바이스의 경우 최종
 
 MDM 프로필을 만들고 할당하고, 사용자 이름을 연결하고, Intune에서 디바이스를 회사 소유로 식별한 후 사용자에게 디바이스를 배포할 수 있습니다.
 
-여전히 도움이 필요하세요? 전체 [Knox 모바일 등록 사용자 가이드](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)를 체크 아웃하세요.
+여전히 도움이 필요하세요? 전체 [KME 사용자 가이드](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)를 확인하세요.
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
 
-- **디바이스 소유자 지원:** Intune에서는 Android 엔터프라이즈를 사용하여 키오스크 모드로만 디바이스를 등록할 수 있습니다. Intune에서 사용할 수 있게 되면 다른 Android 엔터프라이즈 디바이스 소유자 모드가 지원됩니다.
+- **디바이스 소유자 지원:**  - **디바이스 소유자 지원:** Intune은 KME 포털을 사용하여 전용 및 완전 관리형 디바이스 등록을 지원합니다. Intune에서 사용할 수 있게 되면 다른 Android 엔터프라이즈 디바이스 소유자 모드가 지원됩니다.
 
 - **작업 프로필이 지원되지 않음:** KME는 Android 회사 디바이스 등록 방법으로, Android 회사 프로필에 등록된 디바이스는 회사 및 개인 데이터가 개인 디바이스에서 분리되도록 합니다. 따라서 KME를 사용하여 회사 프로필에 디바이스를 등록하는 방식은 Intune에서 지원되는 시나리오가 아닙니다.
 

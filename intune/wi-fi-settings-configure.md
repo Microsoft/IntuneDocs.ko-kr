@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dc28a614514bf9b1a4987976cb057529b75a5fc
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412009"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69545921"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune에서 디바이스의 Wi-Fi 설정 추가 및 사용
 
@@ -40,7 +40,7 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
 - Android 4 이상
 - Android 엔터프라이즈 및 키오스크
 - iOS 8.0 이상
-- macOS(Mac OS X 10.11 이상)
+- macOS X 10.11 이상
 - Windows 10 이상, Windows 10 Mobile 및 Windows Holographic for Business
 
 > [!NOTE]
@@ -48,35 +48,39 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
 
 ## <a name="create-a-device-profile"></a>디바이스 프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
-3. Wi-Fi 프로필의 **이름**과 **설명**을 입력합니다.
-4. **플랫폼** 드롭다운 목록에서 Wi-Fi 설정을 적용할 디바이스 플랫폼을 선택합니다. 옵션은 다음과 같습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에서 **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+2. 다음 속성을 입력합니다.
 
-    - **OWA(Outlook Web Access)**
-    - **Android 엔터프라이즈**
-    - **iOS**
-    - **macOS**
-    - **Windows 8.1 이상**
-    - **Windows 10 이상**
+    - **이름**: 프로필에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 프로필 이름을 지정합니다. 예를 들어 **전체 회사에 대한 WiFi 프로필**은 좋은 프로필 이름입니다.
+    - **설명**: 프로필에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
+    - **플랫폼**: 디바이스 플랫폼을 선택합니다. 옵션은 다음과 같습니다.
 
-5. **프로필 유형**에서 **Wi-Fi**를 선택합니다.
+      - **OWA(Outlook Web Access)**
+      - **Android Enterprise**
+      - **iOS**
+      - **macOS**
+      - **Windows 8.1 이상**
+      - **Windows 10 이상**
 
-    - 키오스크로 실행되는 **Android 엔터프라이즈** 디바이스의 경우 **디바이스 소유자만** > **Wi-Fi**를 선택할 수 있습니다.
-    - **Windows 8.1 이상**에서는 **Wi-Fi 가져오기**를 선택할 수 있습니다. 이 옵션을 사용하여 이전에 다른 디바이스에서 내보낸 XML 파일로 Wi-Fi 설정을 가져올 수 있습니다.
+    - **프로필 유형**: **Wi-Fi**를 선택합니다.
 
-6. 일부 Wi-Fi 설정은 플랫폼마다 다릅니다. 특정 플랫폼의 설정을 보려면 다음을 선택합니다.
+      > [!TIP]
+      >
+      > - 전용 디바이스(키오스크)로 실행되는 **Android 엔터프라이즈** 디바이스의 경우 **디바이스 소유자만** > **Wi-Fi**를 선택합니다.
+      > - **Windows 8.1 이상**에서는 **Wi-Fi 가져오기**를 선택할 수 있습니다. 이 옵션을 사용하여 이전에 다른 디바이스에서 내보낸 XML 파일로 Wi-Fi 설정을 가져올 수 있습니다.
+
+3. 일부 Wi-Fi 설정은 플랫폼마다 다릅니다. 특정 플랫폼에 대한 설정을 보려면 플랫폼을 선택합니다.
 
     - [OWA(Outlook Web Access)](wi-fi-settings-android.md)
-    - [Android 엔터프라이즈 및 키오스크](wi-fi-settings-android-enterprise.md)
+    - [Android 엔터프라이즈](wi-fi-settings-android-enterprise.md)(전용 디바이스 포함)
     - [iOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 이상](wi-fi-settings-windows.md)
     - [Windows 8.1 이상 설정](wi-fi-settings-import-windows-8-1.md)(Windows Holographic for Business 포함)
 
-    대부분의 플랫폼에는 **기본** 및 **엔터프라이즈** 설정이 있습니다. **기본**에는 네트워크 이름 및 SSID와 같은 기능이 포함됩니다. **엔터프라이즈**에서는 EAP(확장할 수 있는 인증 프로토콜)와 같은 고급 정보를 제공할 수 있습니다.
+4. 작업이 완료되면 **프로필 만들기** > **만들기**를 선택합니다.
 
-7. Wi-Fi 설정 추가를 완료하면 **프로필 만들기** > **만들기**를 선택하여 구성 프로필을 추가합니다. 프로필이 만들어지고 프로필 목록(**디바이스 구성** > **프로필**)에 표시됩니다.
+프로필이 만들어지고 프로필 목록(**디바이스 구성** > **프로필**)에 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

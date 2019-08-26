@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884046"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960580"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 독립 실행형 - Win32 앱 관리
 
@@ -283,6 +283,8 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 ## <a name="app-dependencies"></a>앱 종속성
 
 앱 종속성은 Win32 앱을 설치하기 전에 설치해야 하는 애플리케이션입니다. 다른 앱이 종속성으로 설치되도록 요구할 수 있습니다. 특히 디바이스는 Win32 앱을 설치하기 전에 종속 앱을 설치해야 합니다. 최대 100개의 종속성이 있으며, 여기에는 앱 자체뿐만 아니라 포함된 모든 종속성의 종속성도 포함됩니다. Win32 앱이 Intune에 추가되고 업로드된 후에만 Win32 앱 종속성을 추가할 수 있습니다. Win32 앱이 추가되면 Win32 앱에 대한 블레이드에 **종속성** 옵션이 표시됩니다. 
+
+모든 Win32 앱 종속성도 Win32 앱이어야 합니다. 단일 MSI LOB 앱 또는 스토어 앱과 같은 다른 앱 유형에 따라 지원하지 않습니다.
 
 앱 종속성을 추가하는 경우 앱 이름과 게시자를 기준으로 검색할 수 있습니다. 또한 앱 이름과 게시자에 따라 추가된 종속성을 정렬할 수도 있습니다. 이전에 추가된 앱 종속성은 이전에 추가된 앱 종속성 목록에서 선택할 수 없습니다. 
 

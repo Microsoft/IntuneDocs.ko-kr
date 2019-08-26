@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: cba8b59931bd60db0d9169af5016f01118c64cf0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548342"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022841"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>출시 통신 계획 개발
 
@@ -50,7 +50,7 @@ ms.locfileid: "67548342"
 
 **등록 후 웨이브**<br/> Intune에 등록한 조직 그룹 및 사용자를 대상으로 하는 통신입니다. 사용자에게 유용할 수 있는 추가 리소스를 제공하고 등록 중과 등록 후의 경험에 대한 피드백을 수집해야 합니다.
 
-이 [최종 사용자 등록 가이드](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)가 도움이 될 수도 있습니다. 이 가이드를 그대로 사용하거나 조직에 맞게 수정할 수 있습니다.
+이 [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit)가 도움이 될 수 있습니다. 이 키트를 그대로 사용하거나 조직에 맞게 수정할 수 있습니다.
 
 ## <a name="communication-delivery-methods"></a>통신 배달 방법
 

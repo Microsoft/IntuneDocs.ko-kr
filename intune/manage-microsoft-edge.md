@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701007"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651167"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -181,7 +181,22 @@ Microsoft Edge에 대한 애플리케이션 프록시를 사용하도록 설정�
 |    Key    |    값    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    유효한 URL을 지정합니다. 잘못된 URL은 보안 조치로 차단됩니다.<br>**예:**  <`https://www.bing.com`>
-    |
+
+## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Microsoft Edge의 새 탭 페이지에 대해 조직의 로고 및 브랜드 색 구성
+
+이러한 설정을 사용하면 Microsoft Edge의 새 탭 페이지를 사용자 지정하여 조직의 로고 및 브랜드 색을 페이지 배경으로 표시할 수 있습니다.
+
+조직의 로고 및 색을 업로드하려면 먼저 다음 단계를 완료하세요.
+- Azure Portal 내에서 [Intune] -> [클라이언트 앱] -> [회사 포털 브랜딩] -> [회사 아이덴티티 브랜딩]으로 이동합니다.
+- 브랜드 로고를 설정하려면 “표시”에서 “회사 로고만”을 선택합니다. 투명한 배경 로고가 권장됩니다. 
+- 브랜드의 배경색을 설정하려면 “표시”에서 “테마 색”을 선택합니다. Microsoft Edge는 새 탭 페이지에서 색의 더 밝은 음영을 적용하여 페이지의 가독성이 향상되도록 합니다. 
+
+다음으로, 다음 키/값 쌍을 사용하여 조직 브랜딩을 Microsoft Edge로 끌어옵니다.
+
+|    Key    |    값    |
+|--------------------------------------------------------------------|------------|
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Microsoft Edge에 대한 관리형 책갈피 구성
 
@@ -232,7 +247,8 @@ Microsoft Edge에 대해 허용되거나 차단된 사이트 목록을 구성하
     |    `http://www.contoso.com`    |    단일 페이지와 일치    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    단일 페이지와 일치    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
     |    `http://www.contoso.com/*;`   |    `www.contoso.com`으로 시작하는 모든 URL과 일치    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    `contoso.com` 아래의 모든 하위 도메인과 일치    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    `contoso.com/`으로 끝나는 모든 하위 도메인과 일치    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    |    `http://*.contoso.com/*`    |    `contoso.com` 아래의 모든 하위 도메인과 일치    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
+    |    `http://*contoso.com/*`    |    `contoso.com/`으로 끝나는 모든 하위 도메인과 일치    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
     `http://www.contoso.com/images`    |    단일 폴더와 일치    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    포트 번호를 사용하여 단일 페이지와 일치    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    안전한 단일 페이지와 일치    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |

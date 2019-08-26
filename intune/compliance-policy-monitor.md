@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041301"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651205"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 디바이스 준수 정책 모니터링
 
@@ -152,7 +152,9 @@ ms.locfileid: "67041301"
 특정 설정을 선택하면 해당 설정에서 대상으로 지정한 각 디바이스에 대한 **준수 상태**, **사용자의 이메일 별칭**, **디바이스 모델** 및 **위치**를 볼 수 있습니다.
 
 > [!NOTE]
-> Azure AD에 가입된 Windows 10 디바이스는 시스템 계정을 준수하지 않는 사용자로 표시할 수 있습니다. 이는 예상되는 동작이고 전체 디바이스 준수에 영향을 주지 않습니다. 
+> 정책을 디바이스에 할당하고 동일한 디바이스에 사용자를 할당할 수 있습니다. 일부 시나리오에서는 디바이스가 다시 부팅되는 경우처럼 사용자가 로그인하기 전에 디바이스가 동기화될 수 있습니다. 규정 준수에서 이 사용자를 평가하고 디바이스를 비규격으로 표시할 수 있습니다. 이 동작은 시스템 계정을 비규격 사용자로 표시할 수도 있습니다.
+>
+> 이는 다중 사용자 Windows 10 디바이스의 알려진 문제입니다. 이 동작에 대한 변경 사항 또는 업데이트는 [개발 중](in-development.md) 및/또는 [새로운 기능](whats-new.md)에서 발표되었습니다.
 
 ## <a name="view-status-of-device-policies"></a>디바이스 정책 상태 보기
 

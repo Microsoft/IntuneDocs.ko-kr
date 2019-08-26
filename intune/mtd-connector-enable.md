@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4dd77be45c21db53dd82322049d377ced247c4c7
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: e7272ddb502075f071b03925c47993c97e447bce
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427335"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960669"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune에서 Mobile Threat Defense 커넥터를 사용하도록 설정
 
@@ -31,11 +31,12 @@ ms.locfileid: "68427335"
 
 Mobile Threat Defense(MTD)를 설치하는 동안 MTD 파트너 콘솔에서 위협을 분류하기 위한 정책을 구성하고 Intune에서 디바이스 준수 정책을 만들었습니다. MTD 파트너 콘솔에서 Intune 커넥터를 이미 구성했다면 이제 Intune에서 MTD 파트너 애플리케이션의 MTD 연결을 사용할 수 있습니다.
 
-Intune Mobile Threat Defense에 새 애플리케이션을 통합하고 연결을 사용하도록 설정하면 Intune은 Azure Active Directory에 클래식 조건부 액세스 정책을 만듭니다. 통합하는 [Defender ATP](advanced-threat-protection.md)나 추가 [MTD파트너](mobile-threat-defense.md#mobile-threat-defense-partners)와 같은 MTD 앱마다 새 클래식 조건부 액세스 정책을 만듭니다.  이러한 정책은 무시할 수 있지만 편집 또는 삭제하거나 사용하지 않도록 설정할 수는 없습니다.
+Intune Mobile Threat Defense에 새 애플리케이션을 통합하고 Intune에 대한 연결을 사용하도록 설정하면 Intune은 Azure Active Directory에 클래식 조건부 액세스 정책을 만듭니다. [Defender ATP](advanced-threat-protection.md)나 추가 [MTD 파트너](mobile-threat-defense.md#mobile-threat-defense-partners)를 포함하여 통합되는 각 MTD 앱은 새 클래식 조건부 액세스 정책을 만듭니다. 이러한 정책은 무시할 수 있지만 편집 또는 삭제하거나 사용하지 않도록 설정할 수는 없습니다.
 
 MTD 앱의 클래식 조건부 액세스 정책: 
 
-- Intune MTD에서 디바이스가 Azure AD에 등록되어 디바이스 ID를 받도록 요구하는 데 사용됩니다. ID가 있어야만 디바이스에서 Intune에 상태를 보고할 수 있습니다.  
+- MTD 파트너와 통신하기 전에 Intune MTD에서 디바이스가 Azure AD에 등록되어 디바이스 ID를 받도록 요구하는 데 사용됩니다. ID가 있어야만 디바이스에서 Intune에 상태를 보고할 수 있습니다.  
+- 다른 클라우드 앱 또는 리소스에는 영향을 주지 않습니다.  
 - MTD 관리를 돕기 위해 만들 수 있는 조건부 액세스 정책과는 다릅니다.
 - 기본적으로 평가에 사용하는 다른 조건부 액세스 정책은 조작하지 마세요.  
 

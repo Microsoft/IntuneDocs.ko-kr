@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68679961"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978518"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -37,7 +37,7 @@ Intune에서 보안 기준을 사용자 또는 디바이스의 그룹에 배포�
 > [!NOTE]
 > 보안 기준의 미리 보기 버전을 프로덕션 환경에서 사용하지 않는 것이 좋습니다. 미리 보기 기준의 설정은 미리 보기 과정에서 변경될 수 있습니다. 
 
-보안 기준을 사용하는 목적은 Microsoft 365로 작업할 때 엔드투엔드 보안 워크플로를 제공하는 것입니다. 몇 가지 이점은 다음과 같습니다.
+보안 기준을 사용하면 Microsoft 365로 작업할 때 엔드투엔드 보안 워크플로를 제공할 수 있습니다. 몇 가지 이점은 다음과 같습니다.
 
 - 보안 기준선에는 보안에 영향을 주는 설정에 대한 모범 사례와 권장 사항이 포함됩니다. Intune은 그룹 정책 보안 기준선을 만드는 동일한 Windows 보안 팀과 협력하고 있습니다. 이러한 권장 사항은 지침 및 광범위한 경험을 토대로 작성된 것입니다.
 - Intune을 처음 사용하고 어디서부터 시작해야 할지 모르는 경우, 보안 기준이 도움이 됩니다. 조직의 리소스와 데이터를 보호하는 데 도움이 된다는 것을 알고 있으면 보안 프로필을 빠르게 만들고 배포할 수 있습니다.
@@ -47,20 +47,21 @@ Intune에서 보안 기준을 사용자 또는 디바이스의 그룹에 배포�
 
 [Windows 보안 기준선](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)은 이 기능에 대해 자세히 알아볼 수 있는 훌륭한 리소스입니다. [MDM(모바일 디바이스 관리)](https://docs.microsoft.com/windows/client-management/mdm/)은 MDM에 대한 정보 및 Windows 디바이스에서 수행할 수 있는 작업에 대해 알아볼 수 있는 훌륭한 리소스입니다.
 
-## <a name="security-baseline-versions-and-instances"></a>보안 기준 버전 및 인스턴스
-때때로 기준의 새 업데이트가 제공될 수 있습니다. 기준의 새 버전 인스턴스 각각에서는 설정을 추가 또는 제거하거나 다른 변경 내용을 도입할 수 있습니다. 예를 들어 새 버전의 Windows 10에서 새 Windows 10 설정이 제공되는 것처럼 MDM 보안 기준에서는 최신 설정을 포함하는 새 버전 인스턴스를 받을 수 있습니다.  
+## <a name="about-baseline-versions-and-instances"></a>기준 버전 및 인스턴스 정보
 
-Intune 콘솔에서 사용할 수 있는 보안 기준과 관련 정보를 확인할 수 있습니다. 사용 가능한 정보는 해당 기준 유형을 사용하는 프로필 수, 사용 가능한 기준 유형의 다른 인스턴스 수, 최신 인스턴스가 제공되거나 게시된 시기 등입니다.  다음 예제에서는 널리 사용 되는 MDM 보안 기준의 타일을 보여 줍니다.  
+기준의 새 버전 인스턴스 각각에서는 설정을 추가 또는 제거하거나 다른 변경 내용을 도입할 수 있습니다. 예를 들어 새 버전의 Windows 10에서 새 Windows 10 설정이 제공되는 것처럼 MDM 보안 기준에서는 최신 설정을 포함하는 새 버전 인스턴스를 받을 수 있습니다.  
+
+Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과 해당 기준에 대한 기본 정보가 표시됩니다. 이 정보에는 해당 기준 유형을 사용하는 프로필 수, 사용 가능한 기준 유형의 개별 인스턴스(버전) 수 및 해당 기준 템플릿이 테넌트에 추가된 시기를 식별하는 *마지막 게시* 날짜가 포함됩니다. 다음 예제에서는 널리 사용 되는 MDM 보안 기준의 타일을 보여 줍니다.  
 
 ![기준 타일](./media/security-baselines/baseline-tile.png)
 
-사용하는 기준 버전 정보를 보려면 기준을 선택한 다음 **버전**을 선택합니다. Intune에 프로필에서 사용 중인 버전에 대한 정보가 표시됩니다. 버전 창에서 단일 버전을 선택하여 해당 버전을 사용하는 프로필에 대해 자세히 확인할 수 있습니다. 또한 두 가지 버전을 선택하고 **기준 비교**를 선택하여 차이점을 자세히 설명하는 CSV 파일을 다운로드할 수도 있습니다.  
+사용하는 기준 버전에 대한 자세한 내용을 보려면 기준 타일을 선택하여 *개요* 창을 연 다음, **버전**을 선택합니다. Intune에는 프로필에서 사용 중인 해당 기준의 버전에 대한 세부 정보가 표시됩니다. 버전 창에서 단일 버전을 선택하여 해당 버전을 사용하는 프로필에 대해 자세히 확인할 수 있습니다. 또한 두 가지 버전을 선택하고 **기준 비교**를 선택하여 차이점을 자세히 설명하는 CSV 파일을 다운로드할 수도 있습니다.  
 
 ![기준 비교](./media/security-baselines/compare-baselines.png)
 
 보안 기준 ‘프로필’을 만들면 프로필에서 최근에 릴리스된 보안 기준 인스턴스를 자동으로 사용합니다.   미리 보기 버전을 사용하여 만든 기준을 포함하여 이전 기준 버전 인스턴스를 사용하여 이전에 만든 프로필을 계속 사용하거나 편집할 수 있습니다. 
 
-보안 기준 프로필은 사용 중인 기준의 [버전 변경](#change-the-baseline-instance-for-a-profile)을 지원합니다. 즉, 새 버전이 출시되는 경우 활용하기 위해 새 기준 프로필을 만들 필요가 없습니다. 대신 준비되면 기준 프로필을 선택한 다음 기본 제공 옵션을 사용하여 해당 프로필의 인스턴스 버전을 변경하면 됩니다.  
+지정된 프로필에서 사용 중인 기준의 [버전을 변경](#change-the-baseline-version-for-a-profile)하도록 선택할 수 있습니다. 즉, 새 버전이 출시되는 경우 활용하기 위해 새 기준 프로필을 만들 필요가 없습니다. 대신 준비가 되면 기준 프로필을 선택한 다음, 기본 제공 옵션을 사용하여 해당 프로필의 인스턴스 버전을 새 버전으로 변경하면 됩니다.  
 
 ## <a name="available-security-baselines"></a>사용 가능한 보안 기준선 
 
@@ -79,18 +80,21 @@ Intune 콘솔에서 사용할 수 있는 보안 기준과 관련 정보를 확�
 
 이전에 미리 보기 템플릿을 기반으로 만든 프로필은 새 프로필을 만드는 데 해당 미리 보기 템플릿을 사용할 수 없더라도 계속 사용하거나 편집할 수 있습니다. 
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="manage-baselines"></a>기준 관리  
+
+보안 기준을 사용할 때의 일반적인 작업은 다음과 같습니다.
+- [프로필 만들기](#create-the-profile) – 사용하려는 설정을 구성한 다음, 그룹에 기준을 할당합니다.
+- [버전 변경](#change-the-baseline-version-for-a-profile) – 프로필에서 사용하는 기준 버전을 변경합니다.
+- [기준 할당 제거](#remove-a-security-baseline-assignment) - 보안 기준으로 설정 관리를 중지할 때 발생하는 상황을 알아봅니다.
+
+
+### <a name="prerequisites"></a>전제 조건
 - Intune에서 기준선을 관리하려면 계정에 [정책 및 프로필 관리자](role-based-access-control.md#built-in-roles) 기본 제공 역할이 있어야 합니다.
 
 - 일부 기준을 사용하려면 Microsoft Defender ATP와 같은 추가 서비스에 대한 활성 구독이 있어야 할 수 있습니다.  
 
-## <a name="co-managed-devices"></a>공동 관리형 디바이스
 
-Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사용하는 공동 관리 디바이스와 유사합니다. 공동 관리 디바이스는 System Center Configuration Manager 및 Microsoft Intune을 사용하여 Windows 10 디바이스를 동시에 관리합니다. 이를 통해 Configuration Manager에 대한 기존 투자를 Intune을 활용하도록 클라우드 연결할 수 있습니다. Configuration Manager를 사용하고 클라우드의 이점도 누리고 싶은 경우 [공동 관리 개요](https://docs.microsoft.com/sccm/comanage/overview)는 훌륭한 리소스입니다.
-
-공동 관리 디바이스를 사용할 때는 **디바이스 구성** 워크로드(해당 설정)를 Intune으로 전환해야 합니다. [디바이스 구성 워크로드](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration)는 자세한 정보를 제공합니다.
-
-## <a name="create-the-profile"></a>프로필 만들기
+### <a name="create-the-profile"></a>프로필 만들기
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **디바이스 보안** > **보안 기준**을 선택하여 사용 가능한 기준 목록을 표시합니다.
 
@@ -131,12 +135,13 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
    ![기준 검토](./media/security-baselines/review.png) 
 
   
-8. 프로필을 만든 후 **디바이스 보안** > **보안 기준**으로 이동하여 편집하고, 구성한 기준 유형을 선택한 다음 **프로필**을 선택합니다.  사용 가능한 프로필 목록에서 프로필을 선택한 다음 **속성**을 선택합니다. 모든 사용 가능한 구성 탭의 설정을 편집하고 **검토 + 저장**을 선택하여 변경 내용을 커밋할 수 있습니다.  
+8. 프로필을 만든 후 **디바이스 보안** > **보안 기준**으로 이동하여 편집하고, 구성한 기준 유형을 선택한 다음 **프로필**을 선택합니다. 사용 가능한 프로필 목록에서 프로필을 선택한 다음 **속성**을 선택합니다. 모든 사용 가능한 구성 탭의 설정을 편집하고 **검토 + 저장**을 선택하여 변경 내용을 커밋할 수 있습니다.  
 
-## <a name="change-the-baseline-instance-for-a-profile"></a>프로필의 기준 인스턴스 변경
-기준 프로필은 프로필에서 사용하는 기준 인스턴스 변경을 지원합니다. 이전 인스턴스 또는 더 일반적으로 동일한 기준의 새 인스턴스를 선택할 수 있습니다.  Defender ATP용 기준 사용에서 MDM 보안 기준 사용으로 프로필을 변경하는 것과 같은 다른 두 기준 간에 변경할 수는 없습니다. 
+### <a name="change-the-baseline-version-for-a-profile"></a>프로필에 대한 기준 버전 변경  
 
-기준 버전 변경을 구성할 때 관련된 두 기준 버전 간의 변경 사항을 나열하는 CSV 파일을 다운로드할 수 있습니다. 원래 기준 버전의 모든 사용자 지정을 유지하고 새 버전에 적용할 수도 있고 선택한 새 기준 버전에 있는 모든 기본값을 구현할 수도 있습니다. 
+프로필에 사용되는 기준 인스턴스의 버전을 변경할 수 있습니다.  버전을 변경할 때 동일한 기준의 사용 가능한 인스턴스를 선택합니다. Defender ATP용 기준 사용에서 MDM 보안 기준 사용으로 프로필을 변경하는 경우와 같이 다른 두 기준 간에 변경할 수는 없습니다. 
+
+기준 버전 변경을 구성할 때 관련된 두 기준 버전 간의 변경 사항을 나열하는 CSV 파일을 다운로드할 수 있습니다. 또한 원래 기준 버전의 모든 사용자 지정 항목을 유지하거나 모든 기본값을 사용하여 새 버전을 구현할 수 있습니다. 프로필에 대한 기준의 버전을 변경하는 경우 개별 설정을 변경할 수 없습니다. 
 
 저장 시 변환이 완료되면 기준이 할당된 그룹에 즉시 다시 배포됩니다.  
 
@@ -147,7 +152,7 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 
   설정이 기준 프로필에서 더 이상 관리되지 않은 경우 해당 설정은 디바이스에서 다시 설정되지 않습니다. 대신, 디바이스의 설정은 다른 프로세스에서 설정을 관리하여 변경할 때까지 마지막 구성으로 유지됩니다. 설정 관리를 중지한 후 설정을 변경할 수 있는 예에는 디바이스에서 만든 다른 기준 프로필, 그룹 정책 설정 또는 수동 구성을 포함하는 것이 포함됩니다. 
 
-### <a name="to-change-the-instance-for-a-baseline"></a>기준의 인스턴스를 변경하려면  
+#### <a name="to-change-the-baseline-version-for-a-profile"></a>프로필에 대한 기준 버전을 변경하려면  
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인한 다음 **디바이스 보안** > **보안 기준**을 선택하고 변경할 프로필이 있는 기준 유형의 제목을 선택합니다.  
 
@@ -159,7 +164,7 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 
    ![버전 선택](./media/security-baselines/select-instance.png)  
    
-4. **업데이트 검토**를 선택하여 프로필 현재 인스턴스 버전과 선택한 새 버전 간의 차이를 표시하는 CSV 파일을 다운로드합니다. 이 파일을 검토하여 추가 또는 제거된 설정과 업데이트된 프로필에서 이러한 설정의 기본값이 무엇인지 파악합니다.  
+4. **업데이트 검토**를 선택하여 프로필 현재 인스턴스 버전과 선택한 새 버전 간의 차이를 표시하는 CSV 파일을 다운로드합니다. 이 파일을 검토하여 새로운 설정이나 제거된 설정과 업데이트된 프로필에서 이러한 설정의 기본값이 무엇인지 파악합니다.  
 
    준비가 되면 다음 단계를 계속합니다.  
 
@@ -169,14 +174,16 @@ Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사�
 
 6. **제출**을 선택합니다. 프로필이 선택한 기준 버전으로 업데이트되고 변환이 완료된 후 기준이 할당된 그룹에 즉시 다시 배포됩니다.
 
-## <a name="remove-a-security-baseline-assignment"></a>보안 기준 할당 제거
+### <a name="remove-a-security-baseline-assignment"></a>보안 기준 할당 제거
 보안 기준 설정이 디바이스에 더 이상 적용되지 않거나 기준의 설정이 ‘구성되지 않음’으로 설정되는 경우 디바이스에서 이러한 설정은 관리 전 구성으로 되돌려집니다.  대신 디바이스에서 이전에 관리되는 설정이 다른 프로세스에서 디바이스의 해당 설정을 업데이트하기 전에 받은 마지막 구성을 유지합니다.  
 
 디바이스에서 나중에 설정을 변경할 수 있는 다른 프로세스에는 다르거나 새로운 보안 기준, 디바이스 구성 프로필, 그룹 정책 구성 또는 디바이스 설정 수동 편집 등이 있습니다.  
 
+## <a name="co-managed-devices"></a>공동 관리형 디바이스
 
+Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사용하는 공동 관리 디바이스와 유사합니다. 공동 관리 디바이스는 System Center Configuration Manager 및 Microsoft Intune을 사용하여 Windows 10 디바이스를 동시에 관리합니다. 이를 통해 Configuration Manager에 대한 기존 투자를 Intune을 활용하도록 클라우드 연결할 수 있습니다. Configuration Manager를 사용하고 클라우드의 이점도 누리고 싶은 경우 [공동 관리 개요](https://docs.microsoft.com/sccm/comanage/overview)는 훌륭한 리소스입니다.
 
-
+공동 관리 디바이스를 사용할 때는 **디바이스 구성** 워크로드(해당 설정)를 Intune으로 전환해야 합니다. [디바이스 구성 워크로드](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration)는 자세한 정보를 제공합니다.  
 
 ## <a name="q--a"></a>Q & A
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680067"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550075"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
@@ -44,6 +44,13 @@ ms.locfileid: "68680067"
 ## <a name="microsoft-store-for-business-apps"></a>비즈니스용 Microsoft 스토어 앱
 
 비즈니스용 Microsoft Store 관리자 포털에서 구매한 최신 앱인 비즈니스용 Microsoft Store 앱은 관리용 Microsoft Intune에 동기화됩니다. 이 앱은 **온라인에서 라이선스**되거나 **오프라인에서 라이선스**될 수 있습니다. 비즈니스용 Microsoft 스토어 앱의 업데이트는 관리자에 의한 추가 작업이 필요 없이 Microsoft Store에서 직접 관리합니다. 사용자 지정 URI(Uniform Resource Identifier)를 사용하여 특정 앱에 대한 업데이트를 방지할 수도 있습니다. 자세한 내용은 [엔터프라이즈 앱 관리 - 앱의 자동 업데이트 방지](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates)를 참조합니다. 디바이스에서 최종 사용자는 모든 비즈니스용 Microsoft 스토어 앱에 대한 업데이트를 사용하지 못하도록 설정할 수도 있습니다. 
+
+### <a name="categorize-microsoft-store-for-business-apps"></a>비즈니스용 Microsoft Store 앱 범주화 
+비즈니스용 Microsoft Store 앱을 범주화하려면 다음 단계를 따르세요. 
+
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+2. **클라이언트 앱** > **앱** > 비즈니스용 Microsoft Store 앱 선택 > **앱 정보** > **범주**를 선택합니다. 
+3. 드롭다운 메뉴에서 범주를 선택합니다.
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 디바이스에서 앱 설치
 앱 형식에 따라 두 가지 방법 중 하나로 Windows 10 디바이스에 앱을 설치할 수 있습니다.
@@ -69,7 +76,7 @@ ms.locfileid: "68680067"
 > [!Note]
 > 특정 배포를 사용하여 앱 할당이 저장되면 최신 앱을 제외하고 해당 할당에 대한 컨텍스트를 변경할 수 없습니다. 최신 앱의 경우 사용자 컨텍스트에서 디바이스 컨텍스트로 컨텍스트를 변경할 수 있습니다. 
 
-단일 사용자/장치에서 정책 충돌이 발생하는 경우 마지막 정책을 결정하는 데 사용할 정책 우선 순위는 다음과 같습니다.
+단일 사용자/디바이스에서 정책 충돌이 발생하는 경우 마지막 정책을 결정하는 데 사용할 정책 우선 순위는 다음과 같습니다.
 - 디바이스 컨텍스트 정책은 사용자 컨텍스트 정책보다 우선 순위가 높습니다. 
 - 설치 정책이 제거 정책보다 우선 순위가 높습니다.
 
