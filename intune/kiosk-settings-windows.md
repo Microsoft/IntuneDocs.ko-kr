@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487745"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998887"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 키오스크로 실행하는 Windows 10 이상 디바이스 설정
 
@@ -97,6 +97,17 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
   - **스토어 앱 추가**: **스토어 앱 추가**를 선택하고 목록에서 앱을 선택합니다.
 
     나열된 앱이 없나요? [클라이언트 앱](apps-add.md)의 단계를 사용하여 일부 앱을 추가합니다.
+    
+ - **앱 다시 시작에 대 한 유지 관리 기간 지정**: 기본값은 "구성 되지 않음"입니다. 설치를 완료 하려면 다시 시작 해야 하는 앱을 확인 하려면 "필요"를 선택 합니다.
+ 
+     키오스크 브라우저 또는 기타 비즈니스 앱 용 Microsoft Store를 사용 하는 경우 응용 프로그램 설치를 완료 하기 위해 다시 시작 해야 하는 앱 업데이트를 확인 하는 빈도를 결정 합니다. 구성 되지 않은 경우 앱 업데이트가 설치 된 후 3 일이 지나면 기간 업무 앱에 대 한 Microsoft Store 다시 시작 됩니다.
+     
+     - **유지 관리 기간 시작 시간**: 클라이언트를 다시 시작 해야 하는 앱 업데이트에 대 한 검사를 시작할 날짜와 시간을 선택 합니다. 기본 시작 시간은 자정 또는 0분입니다.
+     
+     - **유지 관리 기간 되풀이**: 기본값은 매일입니다.
+         앱 업데이트에 대 한 유지 관리 기간을 설정 합니다. 예약 되지 않은 앱 다시 시작을 방지 하기 위한 권장 사항은 매일입니다.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ## <a name="multi-app-kiosks"></a>다중 앱 키오스크
 

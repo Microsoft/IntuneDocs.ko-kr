@@ -541,7 +541,7 @@
       items:
         - name: Intune 앱 관리란?
           href: app-management.md
-        - name: 앱 추가
+        - name: 앱 개요 추가
           href: apps-add.md
           displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
           items:
@@ -645,7 +645,7 @@
               href: apps-selective-wipe.md
             - name: 앱 보호 정책 사용
               items:
-                - name: 앱 보호 정책 이해
+                - name: 앱 보호 정책 개요
                   href: app-protection-policy.md
                   displayName: app; protection; policy
                 - name: 앱 보호 정책 만들기

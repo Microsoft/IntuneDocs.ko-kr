@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: dcfc43c3fe023d54c99a88356f9bfc2a8bdebc47
+ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680058"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69894350"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -55,9 +55,11 @@ Microsoft Intune 앱 SDK Xamarin 바인딩을 사용하면 Xamarin으로 개발�
 
 [사용 약관](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)을 검토합니다. 기록을 위해 사용 조건의 사본을 인쇄하여 보관하세요. Intune 앱 SDK Xamarin 바인딩을 다운로드하여 이러한 사용 조건에 동의합니다. 동의하지 않는 경우 소프트웨어를 사용하지 마세요.
 
-SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) 및 조건부 시작 시나리오를 위한 [ADAL(Active Directory 인증 라이브러리)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)이 필요하며, 이 경우 앱에 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)를 구성해야 합니다. 
+Intune SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) 및 조건부 시작 시나리오를 위한 [ADAL(Active Directory 인증 라이브러리)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)이 필요하며, 이 경우 앱에 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)를 구성해야 합니다. 
 
 애플리케이션이 ADAL 또는 MSAL을 사용하도록 이미 구성되어 있고, Azure Active Directory를 사용하여 인증하는 데 사용되는 고유한 사용자 지정 클라이언트 ID가 있는 경우 Intune MAM(모바일 애플리케이션 관리) 서비스에 대한 Xamarin 앱 사용 권한을 부여하는 단계를 따릅니다. [Intune SDK 시작 가이드](app-sdk-get-started.md)의 "[앱에 Intune 앱 보호 서비스에 대한 액세스 권한 부여](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" 섹션의 지침을 사용합니다.
+
+
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS 모바일 앱에서 Intune 앱 보호 정책을 사용하도록 설정
 1. [Microsoft.Intune.MAM.Xamarin.iOS NuGet 패키지](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS)를 Xamarin.iOS 프로젝트에 추가합니다.
@@ -83,13 +85,15 @@ SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation/articl
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
 
-      앱은 IntuneMAMEnrollmentDelegate의 하위 클래스에서 EnrollmentRequestWithStatus 메서드를 구현하고 IntuneMAMEnrollmentManager의 대리자 속성을 해당 클래스의 인스턴스로 설정하여 등록 시도의 결과를 확인할 수 있습니다. 예를 들어 [샘플 Xamarin.iOS 애플리케이션](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)을 참조하세요.
+      앱은 IntuneMAMEnrollmentDelegate의 하위 클래스에서 EnrollmentRequestWithStatus 메서드를 구현하고 IntuneMAMEnrollmentManager의 대리자 속성을 해당 클래스의 인스턴스로 설정하여 등록 시도의 결과를 확인할 수 있습니다. 
 
       등록이 성공하면 앱은 다음 속성을 쿼리하여 등록된 계정의 UPN(이전에 알 수 없는 경우)을 확인할 수 있습니다. 
 
       ```csharp
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
+### <a name="sample-applications"></a>샘플 응용 프로그램
+Xamarin.ios 앱에서 MAM 기능을 강조 표시 하는 샘플 응용 프로그램은 [GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)에서 사용할 수 있습니다.
 
 > [!NOTE] 
 > iOS용 리매퍼가 없습니다. Xamarin.Forms 앱에 통합하는 것은 일반 Xamarin.iOS 프로젝트와 동일합니다. 
@@ -148,7 +152,7 @@ IMAMUserInfo info = MAMComponents.Get<IMAMUserInfo>();
 return info?.PrimaryUser;
 ```
 
-예: 장치 또는 클라우드 스토리지에 저장이 허용되는지 확인
+예: 디바이스 또는 클라우드 스토리지에 저장이 허용되는지 확인
 
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
@@ -205,6 +209,7 @@ Remapper가 프로젝트에 추가되면 MAM에 해당하는 대체를 수행해
 
 #### <a name="troubleshooting"></a>문제 해결
 * 응용 프로그램을 시작할 때 빈 화면이 표시 되 면 주 스레드에서 탐색 호출을 강제로 실행 해야 할 수 있습니다.
+* Intune SDK Xamarin 바인딩은 MvvmCross와 Intune MAM 클래스 간의 충돌로 인해 MvvmCross과 같은 플랫폼 간 프레임 워크를 사용 하는 앱을 지원 하지 않습니다. 앱을 일반 Xamarin.ios로 이동한 후 일부 고객은 통합에 성공 했을 수 있지만 MvvmCross를 사용 하는 앱 개발자를 위한 명시적 지침 또는 플러그 인은 제공 하지 않습니다.
 
 ### <a name="company-portal-app"></a>회사 포털 앱
 Intune SDK Xamarin 바인딩은 장치에 [회사 포털](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android 앱이 있는지를 사용 하 여 앱 보호 정책을 사용 하도록 설정 합니다. 회사 포털이 Intune 서비스에서 앱 보호 정책을 검색합니다. 앱을 초기화할 때 정책과 회사 포털에서 해당 정책을 적용하는 코드를 로드합니다. 사용자에 게 로그인 할 필요가 없습니다.
@@ -215,7 +220,7 @@ Intune SDK Xamarin 바인딩은 장치에 [회사 포털](https://play.google.co
 디바이스 등록 없이 앱 보호를 사용하기 위해 사용자가 회사 포털 앱을 통해 디바이스를 등록할 필요가 _**없습니다**_ .
 
 ### <a name="sample-applications"></a>샘플 응용 프로그램
-Xamarin Android 및 Xamarin Forms 앱에서 MAM 기능을 강조 표시 하는 샘플 응용 프로그램은 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)에서 사용할 수 있습니다.
+Xamarin.ios 및 Xamarin.ios 앱에서 MAM 기능을 강조 표시 하는 샘플 응용 프로그램은 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)에서 사용할 수 있습니다.
 
 ## <a name="support"></a>Support
-조직이 기존 Intune 고객인 경우 Microsoft 지원 담당자에게 문의해 지원 티켓을 열고 [GitHub 문제 페이지에서](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) 문제를 만들면 가능한 한 빨리 도움을 제공할 수 있습니다. 
+anization is an existing Intune customer, please work with your Microsoft support repr조직이 기존 Intune 고객인 경우 Microsoft 지원 담당자에게 문의해 지원 티켓을 열고 [GitHub 문제 페이지](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)에서 문제를 만듭니다. 가능 하면 즉시 도와 드리겠습니다. 
