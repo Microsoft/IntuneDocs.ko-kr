@@ -29,7 +29,7 @@ Intune에서 [데이터를 수집](privacy-data-collect.md)한 후에는 아래�
 
 ## <a name="storing-personal-data"></a>개인 데이터 저장
 
-수집되는 모든 비 원격 분석 데이터는 Intune 서비스를 통해 처리되며 다음 저장 위치 중 하나 이상에 저장됩니다. 
+수집되는 모든 비 원격 분석 데이터는 Intune 서비스를 통해 처리되며 다음 스토리지 위치 중 하나 이상에 저장됩니다. 
 
 - SQLAzure 
 - 신뢰할 수 있는 컬렉션(서비스 패브릭)  
