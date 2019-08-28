@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680113"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021747"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune에서 사용자 지정 알림 보내기  
 
@@ -51,7 +51,6 @@ Microsoft Intune를 사용하여 관리형 iOS 및 Android 디바이스의 사�
 - 그룹에는 사용자 또는 디바이스가 포함될 수 있지만 메시지는 사용자에게만 전송되며 사용자가 등록한 각 iOS 또는 Android 디바이스로 전송됩니다.  
 
 **배달**:  
-- Intune은 알림을 보낸 후 최대 1시간 안에 배달하려고 합니다.  
 - Intune에서 사용자의 회사 포털 앱에 메시지를 보내면, 포털 앱은 푸시 알림을 만듭니다. 사용자가 앱에 로그인하지 않아도 알림이 디바이스에서 푸시됩니다.  
 - Intune 및 회사 포털 앱에서는 사용자 지정 알림의 배달은 보장할 수 없습니다. 사용자 지정 알림은 몇 시간의 지연 후에 표시될 수 있으므로 긴급한 메시지에는 가능하면 사용하지 않아야 합니다.  
 - Intune의 사용자 지정 알림 메시지는 디바이스에서 표준 푸시 알림으로 표시됩니다. 알림을 받을 때 iOS 디바이스에서 회사 포털 앱이 열리는 경우 알림은 푸시 알림이 아니고 앱에 표시됩니다.  
