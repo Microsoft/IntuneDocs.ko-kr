@@ -510,8 +510,12 @@
           href: certificates-configure.md
           items:
             - name: SCEP
-              href: certificates-scep-configure.md
-              displayName: ksp
+              items:
+                - name: SCEP 인프라
+                  href: certificates-scep-configure.md
+                  displayName: ksp
+                - name: SCEP 인증서 프로필
+                  href: certificates-profile-scep.md
             - name: PKCS
               href: certficates-pfx-configure.md
               displayName: ksp
@@ -733,6 +737,8 @@
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: 조건부 액세스 문제 해결
               href: troubleshoot-conditional-access.md
+            - name: 인증서 커넥터 문제 해결
+              href: troubleshoot-certificate-connector-events.md
             - name: Exchange Connector 문제 해결
               href: troubleshoot-exchange-connector.md
         - name: 지원 받기
