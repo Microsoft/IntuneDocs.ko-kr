@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b6daa574b983b4a03346e521c61f267e13c7de1a
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882374"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122349"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API를 사용하여 SCEP에 대한 타사 CA를 Intune에 추가
 
@@ -304,4 +304,4 @@ Throws:
 - [타사 CA 추가 개요](certificate-authority-add-scep-overview.md)
 - [Intune 설정](setup-steps.md)
 - [디바이스 등록](device-enrollment.md)
-- [SCEP 인증서 프로필 구성](certificates-scep-configure.md#create-a-scep-certificate-profile)(이 시나리오에서는 Microsoft NDES Server\Connector 설치가 사용되지 않음)
+- [SCEP 인증서 프로필 구성](certificates-profile-scep.md)(이 시나리오에서는 Microsoft NDES Server\Connector 설치가 사용되지 않음)
