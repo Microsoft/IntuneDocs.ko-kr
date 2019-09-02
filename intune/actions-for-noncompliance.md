@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1c13bffa797d8480ee0ba1db2b72c787ed94274f
+ms.sourcegitcommit: dbb2410de7e4849626f84ef07cf6a2891bcdd542
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044810"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69974256"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune에서 규정 미준수 디바이스에 대한 이메일 자동화 및 작업 추가
 
@@ -103,7 +103,13 @@ ms.locfileid: "67044810"
     
     - **규정 미준수 디바이스를 원격으로 잠그기**: 디바이스가 규정을 준수하지 않으면 디바이스를 잠급니다. 이렇게 하면 사용자는 디바이스 잠금을 해제하려면 PIN 또는 암호를 입력해야 합니다. 
     
-5. **일정** 구성: 여기에 입력한 일 수(0-365일)만큼 규정 미준수 상태이면 사용자 디바이스에 대한 작업을 트리거합니다. 이 유예 기간이 지나면 조건부 액세스 정책을 적용할 수 있습니다. **0**을 입력하면 조건부 액세스가 **즉시** 적용됩니다. 예를 들어, 디바이스가 비준수 상태이면 회사 리소스에 대한 액세스를 즉시 차단할 수 있습니다.
+5. **일정** 구성: 여기에 입력한 일 수(0-365일)만큼 규정 미준수 상태이면 사용자 디바이스에 대한 작업을 트리거합니다. 이 유예 기간이 지나면 [조건부 액세스](conditional-access-intune-common-ways-use.md) 정책을 적용할 수 있습니다. **0**을 입력하면 조건부 액세스가 **즉시** 적용됩니다. 예를 들어 디바이스가 비규격인 경우 조건부 액세스를 사용하여 메일, SharePoint 및 기타 조직 리소스에 대한 액세스를 즉시 차단할 수 있습니다.
+
+    준수 정책을 만들 경우 **디바이스를 비규격으로 표시** 작업이 자동으로 생성되고, 자동으로 **0**일(즉시)로 설정됩니다. 이 작업을 통해 디바이스가 체크인되면 디바이스가 즉시 비규격으로 평가됩니다. 조건부 액세스도 사용하는 경우 조건부 액세스는 즉시 실행됩니다. 유예 기간을 허용하려는 경우 **디바이스를 비규격으로 표시** 작업의 **일정**을 변경합니다.
+    
+    예를 들어 준수 정책에서 사용자에게도 알리고 싶을 수 있습니다. **최종 사용자에게 메일 보내기** 작업을 추가할 수 있습니다. 이 **메일 보내기** 작업에서 **일정**을 2일로 설정합니다. 디바이스 또는 최종 사용자가 2일째에 여전히 비규격으로 평가되는 경우 2일째에 메일이 전송됩니다. 비준수 5일째에 다시 사용자에게 메일을 보내려면 다른 작업을 추가하고 **일정**을 5일로 설정합니다.
+
+    규정 준수 및 기본 제공 작업에 대한 자세한 내용은 [준수 개요](device-compliance-get-started.md)를 참조하세요.
 
 6. 완료되면 **추가** > **확인**을 선택하여 변경 내용을 저장합니다.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 330bfa319ca0202a5edc09d8f27e40c18ce89d39
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: 0cda32e72956e5998d5ebc8d8bed2baea39951ec
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582939"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021811"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -70,9 +70,10 @@ Intune에서 PKCS 인증서를 사용하려면 다음 인프라가 필요합니�
   이 커넥터는 특정 사용자의 S/MIME 이메일 암호화를 위해 Intune으로 가져온 PFX 파일에 대한 요청을 처리합니다.  
 
   이 커넥터는 새 버전이 출시되면 자동으로 업데이트할 수 있습니다. 업데이트 기능을 사용하려면 다음 단계를 수행해야 합니다.
-  - 가져온 PFX Certificate Connector for Microsoft Intune을 서버에 설치합니다.
-  - 중요 업데이트를 자동으로 받으려면 커넥터가 포트 **443**을 통해 **autoupdate.msappproxy.net**에 연결할 수 있도록 방화벽을 열어야 합니다.  
+  - 가져온 PFX Certificate Connector for Microsoft Intune을 서버에 설치합니다.  
+  - 중요 업데이트를 자동으로 받으려면 커넥터가 포트 **443**을 통해 **autoupdate.msappproxy.net**에 연결할 수 있도록 방화벽을 열어야 합니다.   
 
+  커넥터에서 액세스할 수 있어야 하는 모든 네트워크 엔드포인트에 대한 자세한 내용은 [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector)를 참조하세요.
 
 - **Windows Server**:  
   Windows Server를 사용하여 다음 항목을 호스트합니다.

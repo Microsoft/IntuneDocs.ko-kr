@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2825286c652a7229c32435a24ca816f21b8f2ff4
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: 63ab31845ba4d084c81ff33970703ec630d67daa
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993733"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70002017"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune 보호 앱  
 
-Intune 관리 앱은 풍부한 모바일 애플리케이션 보호 정책을 지원합니다. 관리되는 앱을 통해 다음을 수행할 수 있습니다.
+이 항목에 나열된 앱은 Microsoft Intune에서 일반적으로 사용되는 지원되는 파트너 및 Microsoft 앱니다. Intune 보호 앱은 풍부한 모바일 애플리케이션 보호 정책을 위해 사용하도록 설정되어 있습니다. 이러한 앱을 통해 다음을 수행할 수 있습니다.
 - 복사하여 붙여넣기 및 다른 이름으로 저장 기능 제한
 - 보안 Microsoft 브라우저 내에서 열 웹 링크 구성
 - 다중 ID 사용 및 앱 수준 조건부 액세스를 사용하도록 설정
@@ -77,7 +77,7 @@ Intune 관리 앱은 풍부한 모바일 애플리케이션 보호 정책을 지
 | 앱 제목 | 앱 설명 | 지원되는 플랫폼에 대한 앱 스토어 링크 | 
 |-------------------------------------------------|-------------------------|---------------------------------------------|
 | **Acronis Access**<p><img alt="Partner app - Acronis Access icon" src="./media/apps-supported-intune-apps/icon-p-acronis-access.png" width="100"> | Acronis Access를 사용하여 어디서나 모든 디바이스에서 비즈니스 파일에 안전하게 액세스할 수 있습니다. 파일, 데이터를 안전하고 프라이빗으로 유지하면서 동료, 고객 및 공급 업체와 손쉽게 문서를 공유할 수 있습니다. 이 앱은 비교할 수 없는 보안, 개인 정보 보호 및 관리 기능으로 사용 편의성을 극대화하도록 설계되었습니다. | [iOS 스토어 링크](https://itunes.apple.com/us/app/acronis-access/id429704844?mt=8) |                       
-| **Microsoft Intune용 Adobe Acrobat Reader**<p><img alt="Partner app - Adobe Acrobat Reader for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | Intune용 Adobe Acrobat Reader를 사용하여 Microsoft Intune 관리 환경에서 PDF를 열고, 보며, 작업합니다. iOS 및 Android용으로 사용 가능합니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.adobe.reader.intune),<br>[iOS 스토어 링크](https://geo.itunes.apple.com/us/app/adobe-acrobat-reader-for-microsoft/id1051980424?mt=8) |                      
+| **Adobe Acrobat Reader**<p><img alt="Partner app - Adobe Acrobat Reader icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | Adobe Acrobat Reader를 사용하여 Microsoft Intune 관리 환경에서 PDF를 열고, 보며, 작업합니다. iOS 및 Android용으로 사용 가능합니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.adobe.reader),<br>[iOS 스토어 링크](https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564) |                      
 | **Blackberry Enterprise BRIDGE**<p><img alt="Partner app - Blackberry Enterprise BRIDGE icon" src="./media/apps-supported-intune-apps/icon-p-blackberry-enterprise-bridge.png" width="100"> | BlackBerry Enterprise BRIDGE를 사용하면 Microsoft Word, Microsoft PowerPoint 및 BlackBerry Dynamics의 Microsoft Excel과 같은 Intune 관리 Microsoft 앱을 사용하여 문서를 안전하게 보고, 편집하며, 저장할 수 있습니다. 이메일 첨부 파일로 문서를 공유하고 BlackBerry Dynamics 및 Intune 관리 모바일 앱 간 문서 공유 프로세스 중에 데이터 암호화를 유지 관리할 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.blackberry.intune.bridge),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/blackberry-enterprise-bridge/id1305494864?mt=8) |
 | **Box for EMM**<p><img alt="Partner app - Box for EMM icon" src="./media/apps-supported-intune-apps/icon-p-box-for-emm.png" width="100"> | Box for EMM을 사용하여 모든 모바일 디바이스에 대한 보안, 정책 및 프로비전을 중앙에서 관리하면서 직원을 계속 연결하고 공동 작업할 수 있습니다. | [iOS 스토어 링크](https://itunes.apple.com/us/app/box-for-emm/id882085676?mt=8) |
 | **CellTrust SL2™ for Microsoft Intune**<p><img alt="Partner app - CellTrust SL2 for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-celltrust-sl2.png" width="100"> | CellTrust SL2™ for Microsoft Intune은 bring-your-own 디바이스에 보안 MBN(모바일 비즈니스 번호)을 할당하여 작동하는 엔터프라이즈 수준 애플리케이션이며 단일 디바이스에서 개인 및 비즈니스 통신이 분리되도록 유지합니다. 개인 번호를 사용하지 않고 디바이스에서 SMS 메시지와 비즈니스 통화를 보호하는 간편한 솔루션입니다. eDiscovery 및 준수 요구 사항을 위한 보관뿐 아니라 비즈니스 통신의 보안을 강화해야 하는 기업에 이 기능은 꼭 필요합니다. <br> Microsoft Intune은 회사 데이터를 보호하면서 직원이 생산성을 높일 수 있도록 하는 EMM(엔터프라이즈 이동성 관리) 공간의 클라우드 기반 서비스입니다. <br> CellTrust SL2™ for Microsoft Intune은 강력한 엔터프라이즈 모바일 플랫폼으로 직원들이 보안 비즈니스 애플리케이션과 음성 및 문자 메시지에 쉽게 액세스하여 이동 중에도 작업할 수 있도록 합니다. 이 앱은 조직에서 업계 및 IT 요구 사항에 맞게 조정할 수 있도록 Microsoft Intune SDK 및 사용자 지정 기능을 사용하여 개발되었습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.celltrust.sl2_intune),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/celltrust-sl2-for-intune/id1442087513?mt=8) |

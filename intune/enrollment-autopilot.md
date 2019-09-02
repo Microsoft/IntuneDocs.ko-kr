@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df8922f9f7252c493b4a2119814c0001245fa8b
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549997"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70062941"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -55,6 +55,9 @@ Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다. [자�
     `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
 
     ![Windows AutoPilot 디바이스 추가 스크린샷](media/enrollment-autopilot/autopilot-import-device2.png)
+
+    >[!IMPORTANT]
+    > CSV 업로드를 사용하여 사용자를 할당하는 경우 유효한 UPN을 할당해야 합니다. 잘못된 UPN(잘못된 사용자 이름)을 할당하는 경우 잘못된 할당을 제거할 때까지 디바이스에 액세스할 수 없습니다. CSV 업로드 중 **할당된 사용자** 열에서 수행하는 유일한 유효성 검사는 도메인 이름이 유효한지 확인하는 것입니다. 기존 또는 올바른 사용자를 할당하고 있는지 확인하기 위해 개별 UPN 유효성 검사를 수행할 수 없습니다.
 
 3. **가져오기**를 선택하여 디바이스 정보 가져오기를 시작합니다. 가져오기는 몇 분 정도 걸릴 수 있습니다.
 

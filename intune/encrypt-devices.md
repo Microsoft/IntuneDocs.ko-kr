@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b7c76439b734837b5a4dd7e5fdbba5d21d0681d7
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 5e97e23322150c7a030a3657b6476090d719a448
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960434"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027396"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune에서 디바이스 암호화 사용  
 
@@ -80,6 +80,8 @@ Intune에서 관리할 수 있는 FileVault 설정에 대한 자세한 내용은
 ### <a name="manage-filevault"></a>FileVault 관리  
 
 Intune이 FileVault를 사용하여 macOS 디바이스를 암호화한 후에는 intune [암호화 보고서](encryption-monitor.md)를 볼 때 FileVault 복구 키를 보고 관리할 수 있습니다.  
+
+Intune이 FileVault로 macOS 디바이스를 암호화한 후에는 모든 디바이스의 웹 회사 포털에서 해당 디바이스의 개인 복구 키를 볼 수 있습니다. 웹 회사 포털에서 암호화된 macOS 디바이스를 선택하고 원격 디바이스 작업으로 "복구 키 가져오기"를 선택합니다. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>Windows 10용 BitLocker 암호화  
 

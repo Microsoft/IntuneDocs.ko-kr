@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978518"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063047"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -64,6 +64,12 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 지정된 프로필에서 사용 중인 기준의 [버전을 변경](#change-the-baseline-version-for-a-profile)하도록 선택할 수 있습니다. 즉, 새 버전이 출시되는 경우 활용하기 위해 새 기준 프로필을 만들 필요가 없습니다. 대신 준비가 되면 기준 프로필을 선택한 다음, 기본 제공 옵션을 사용하여 해당 프로필의 인스턴스 버전을 새 버전으로 변경하면 됩니다.  
 
 ## <a name="available-security-baselines"></a>사용 가능한 보안 기준선 
+
+ Intune 환경에서 사용 가능한 기준을 하나 이상 동시에 사용할 수 있습니다. 또한 여러 사용자 지정을 포함하는 동일한 보안 기준의 여러 인스턴스를 사용할 수도 있습니다. 
+
+여러 보안 기준을 사용하는 경우 각각의 설정을 검토하여 여러 기준이 동일한 설정에 대해 충돌하는 값을 도입할 때를 확인합니다. 다른 용도를 위해 설계된 보안 기준을 배포하고 사용자 지정된 설정이 포함된 동일한 기준의 여러 인스턴스를 배포할 수 있으므로 디바이스에 구성 [충돌을 일으킬 수 있고, 이는 반드시 조사하여 해결해야 합니다](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  또한 보안 기준과 동일한 설정을 여러 개 구성할 수 있는 [디바이스 구성 프로필](device-profiles.md)에 대해 알고 있어야 합니다. 
+
+
 
 다음 보안 기준 인스턴스는 Intune에서 사용할 수 있습니다. 링크를 사용하여 각 기준의 최근 인스턴스에 대한 설정을 확인하세요. 
 
