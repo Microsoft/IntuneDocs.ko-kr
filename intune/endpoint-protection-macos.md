@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960410"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70158029"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune에서 macOS 엔드포인트 보호 설정  
 
@@ -100,14 +100,14 @@ Apple 대해 filevault 켭니다 설정에 대 한 자세한 내용은 Apple dev
     - **개인 복구 키 회전** -장치의 개인 복구 키를 회전 하는 빈도를 지정 합니다. **구성 되지 않음**의 기본값 또는 **1** ~ **12** 개월 값을 선택할 수 있습니다.  
 
   - **로그 아웃 시 프롬프트 사용 안 함**  
-    사용자가 로그 아웃할 때 대해 filevault 켭니다을 허용 하도록 요청 하는 메시지를 표시 하지 않습니다.  사용으로 설정 된 경우 로그 아웃 시 프롬프트가 비활성화 되며 대신 사용자가 로그인 할 때 사용자에 게 메시지가 표시 됩니다.  
+    사용자가 로그 아웃할 때 대해 filevault 켭니다을 허용 하도록 요청 하는 메시지를 표시 하지 않습니다.  사용 안 함으로 설정 하면 로그 아웃 시 프롬프트가 비활성화 되 고 대신 사용자가 로그인 할 때 사용자에 게 메시지가 표시 됩니다.  
     - **구성되지 않음**  
-    - **사용** -로그 아웃 시 프롬프트를 사용 하지 않도록 설정 합니다.
+    - **비활성화** -로그 아웃 시 프롬프트를 사용 하지 않도록 설정 합니다.
 
     **기본값**: 구성되지 않음  
 
      > [!IMPORTANT]  
-     > **로그아웃 시 프롬프트 사용 안 함** 설정이 *사용*으로 설정되는 알려진 문제가 있습니다. *사용*으로 설정하면 **바이패스 허용 횟수** 설정이 값으로 설정되어야 하며 *구성되지 않음*으로 설정되어서는 안 됩니다. *구성하지 않음*으로 설정하면, 프로필이 디바이스에서 실패합니다. 이 시나리오에서는 디바이스가 추가 세부 정보 없이 **프로필 상태 요약**을 **오류**로 보고합니다.
+     > **로그아웃 시 프롬프트 사용 안 함** 설정이 *사용 안 함*으로 설정되는 알려진 문제가 있습니다. *사용 안 함*으로 설정하면 **바이패스 허용 횟수** 설정의 값이 지정되어야 하며 *구성되지 않음*으로 설정되어서는 안 됩니다. *구성하지 않음*으로 설정하면, 프로필이 디바이스에서 실패합니다. 이 시나리오에서는 디바이스가 추가 세부 정보 없이 **프로필 상태 요약**을 **오류**로 보고합니다.
      > 
      > **로그아웃 시 프롬프트 사용 안 함**이 *구성되지 않음*으로 설정되면, **바이패스 허용 횟수**가 *구성되지 않음*이나 값이 있을 수 있습니다.  
      > 
@@ -122,4 +122,5 @@ Apple 대해 filevault 켭니다 설정에 대 한 자세한 내용은 Apple dev
  
     **기본값**: 구성되지 않음  
 
+Intune을 사용 하는 대해 filevault 켭니다에 대 한 자세한 내용은 [대해 filevault 켭니다 recovery keys](encryption-monitor.md#filevault-recovery-keys)를 참조 하세요.
 
