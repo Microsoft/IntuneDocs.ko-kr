@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993711"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063009"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
@@ -96,13 +96,13 @@ ms.locfileid: "68993711"
 
 #### <a name="resolution"></a>해결 방법
 1. [Azure Portal](https://portal.azure.com/)에 관리자로 로그인합니다.    
-2. **Azure Active Directory** >  **장치장치**  > **설정**으로 이동 합니다.    
+2. **Azure Active Directory** >  **장치장치** > **설정**으로 이동 합니다.    
 3. **사용자가 디바이스를 Azure AD에 조인할 수 있음**을 **모두**로 설정하세요.    
 4. 디바이스를 다시 등록합니다.   
 
-### <a name="the-device-is-already-enrolled"></a>장치가 이미 등록 되어 있습니다.
+### <a name="the-device-is-already-enrolled"></a>디바이스가 이미 등록되어 있습니다.
 
-오류 8018000a: "오류가 발생 했습니다. 장치가 이미 등록 되어 있습니다.  시스템 관리자에 게는 오류 코드 8018000a를 사용 하 여 문의할 수 있습니다.
+오류 8018000a: "오류가 발생 했습니다. 디바이스가 이미 등록되어 있습니다.  시스템 관리자에 게는 오류 코드 8018000a를 사용 하 여 문의할 수 있습니다.
 
 **원인:** 다음 조건 중 하나에 해당 합니다.
 - 다른 사용자가 이미 Intune에 장치를 등록 했거나 Azure AD에 장치를 조인 했습니다. 이 경우의 사례 인지 확인 하려면 **설정** > **계정** > **회사 액세스**로 이동 합니다. 다음과 유사한 메시지를 찾습니다. "시스템의 다른 사용자가 이미 회사 또는 학교에 연결 되어 있습니다. 해당 회사 또는 학교 연결을 제거 하 고 다시 시도 하세요. "    
@@ -114,7 +114,7 @@ ms.locfileid: "68993711"
 
 ##### <a name="remove-the-other-work-or-school-account"></a>다른 회사 또는 학교 계정 제거
 1. Windows에서 로그 아웃 한 다음 장치를 등록 하거나 가입한 다른 계정을 사용 하 여 로그인 합니다.    
-2. **설정** >  **계정회사**  > **액세스**로 이동한 다음 회사 또는 학교 계정을 제거 합니다.
+2. **설정** >  **계정회사** > **액세스**로 이동한 다음 회사 또는 학교 계정을 제거 합니다.
 3. Windows에서 로그 아웃 한 다음 계정을 사용 하 여 로그인 합니다.    
 4. Intune에 장치를 등록 하거나 장치를 Azure AD에 가입 시킵니다. 
 
@@ -223,7 +223,7 @@ Configuration Manager 클라이언트를 제거한 후 장치를 다시 등록 �
 #### <a name="resolution"></a>해결 방법
 1. [Azure Portal](https://portal.azure.com/)에 관리자로 로그인합니다.    
 2. **장치 설정 > Azure Active Directory > 장치**로 이동 합니다.    
-3. **사용자가 AZURE AD에 장치를 연결할 수 있습니다** 를 **모두** 또는 **선택 됨**으로 설정 합니다.
+3. **사용자가 디바이스를 Azure AD에 조인할 수 있음**을 **모두** 또는 **선택됨**으로 설정하세요.
 
    **선택한**경우 선택 **됨**을 클릭 한 다음 **구성원 추가** 를 클릭 하 여 Azure AD에 장치를 조인할 수 있는 모든 사용자를 추가 합니다. 프로 비전 패키지에 대 한 모든 Azure AD 계정이 추가 되었는지 확인 합니다.
  
@@ -235,7 +235,7 @@ School Pc 설정 앱에 대 한 자세한 내용은 [School Pc 설정 앱 사용
 ### <a name="auto-mdm-enroll-failed"></a>자동 MDM 등록: 실패 
 
 그룹 정책를 사용 하 여 Windows 10 장치를 자동으로 등록 하려고 하면 다음과 같은 문제가 발생 합니다. 
-- 작업 스케줄러의 **Microsoft** >  **Windows**  > **enterprisemgmt**에서, **AAD 작업에서 MDM에 자동으로 등록 하기 위해 등록 클라이언트에서 만든 일정** 의 마지막 실행 결과는 다음과 같습니다. **이벤트 76 자동 MDM 등록: 실패 (알 수 없는 Win32 오류 코드: 0x8018002b)**       
+- 작업 스케줄러의 **Microsoft** >  **Windows** > **enterprisemgmt**에서, **AAD 작업에서 MDM에 자동으로 등록 하기 위해 등록 클라이언트에서 만든 일정** 의 마지막 실행 결과는 다음과 같습니다. **이벤트 76 자동 MDM 등록: 실패 (알 수 없는 Win32 오류 코드: 0x8018002b)**       
 - 이벤트 뷰어에서 다음 이벤트는 **응용 프로그램 및 서비스 Logs/Microsoft/Windows/DeviceManagement/Admin**에 기록 됩니다.   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -331,11 +331,11 @@ Autopilot를 사용 하 여 키오스크 모드에서 Windows 장치를 배포 �
 
 이 문제는 일반적으로 초기 로그인 화면에서 장치가 시간 초과 될 때 하이브리드 Azure AD Autopilot 시나리오에서 장치를 다시 시작 하기 전에 발생 합니다. 연결 문제로 인해 도메인 컨트롤러를 찾을 수 없거나 성공적으로 연결할 수 없음을 의미 합니다. 또는 장치가 도메인에 가입할 수 없는 상태를 입력 했습니다.
 
-**원인:** 가장 일반적인 원인은 하이브리드 Azure AD 조인이 사용 되 고 있으며 사용자 할당 기능이 Autopilot 프로필에 구성 되어 있기 때문입니다. 사용자 할당 기능을 사용 하 여 초기 로그인 화면에서 장치에 대 한 Azure AD 조인을 수행 하면 장치는 온-프레미스 도메인에 가입할 수 없는 상태로 전환 됩니다. 따라서 사용자 할당 기능은 표준 Azure AD 조인 Autopilot 시나리오 에서만 사용 해야 합니다.  하이브리드 Azure AD 조인 시나리오에서이 기능을 사용 해야 합니다.
+**원인:** 가장 일반적인 원인은 하이브리드 Azure AD 조인이 사용 되 고 있으며 사용자 할당 기능이 Autopilot 프로필에 구성 되어 있기 때문입니다. 사용자 할당 기능을 사용 하 여 초기 로그인 화면에서 장치에 대 한 Azure AD 조인을 수행 하면 장치는 온-프레미스 도메인에 가입할 수 없는 상태로 전환 됩니다. 따라서 사용자 할당 기능은 표준 Azure AD 조인 Autopilot 시나리오 에서만 사용 해야 합니다.  하이브리드 Azure AD 조인 시나리오에서는이 기능을 사용 하지 않아야 합니다.
 
 #### <a name="resolution"></a>해결 방법
 
-1. **Intune** >   **장치등록**  > **Windows 등록**  > **장치**로 이동 합니다.
+1. **Intune** >  **장치등록** > **Windows 등록** > **장치**로 이동 합니다.
 2. 문제가 발생 하는 장치를 선택 > 가장 오른쪽에 있는 줄임표 (...)를 클릭 합니다.
 3. **사용자 할당** 해제를 선택 하 고 프로세스가 완료 될 때까지 기다립니다.
 4. OOBE를 다시 시도 하기 전에 하이브리드 Azure AD Autopilot 프로필이 할당 되었는지 확인 합니다.
