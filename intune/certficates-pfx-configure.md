@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cda32e72956e5998d5ebc8d8bed2baea39951ec
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021811"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122393"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -286,6 +286,5 @@ Intune으로 인증서를 가져온 후 **PKCS가 가져온 인증서** 프로�
 
 프로필이 만들어지지만 아직 아무것도 하지 않습니다. 다음으로, [프로필을 할당](device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
-[SCEP 인증서를 사용](certificates-scep-configure.md)하거나 [Digicert PKI 관리자 웹 서비스에서 PKCS 인증서를 발급](certificates-digicert-configure.md)합니다.
-
+[인증서에 SCEP를 사용](certificates-scep-configure.md)하거나 [Symantec PKI 관리자 웹 서비스에서 PKCS 인증서를 발급](certificates-symantec-configure.md)합니다.
 

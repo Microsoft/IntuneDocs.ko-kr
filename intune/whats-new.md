@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/16/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
-ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
+ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69620207"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122150"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -53,6 +53,18 @@ ms.locfileid: "69620207"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-august-26-2019"></a>2019년 8월 26일 주
+
+### <a name="configure-microsoft-edge-settings-using-administrative-templates-for-windows-10-and-newer----5228061---"></a>Windows 10 이상에 대해 관리 템플릿을 사용하여 Microsoft Edge 설정 구성 <!-- 5228061 -->
+
+Windows 10 이상 디바이스에서는 Intune에서 그룹 정책 설정을 구성하는 관리 템플릿을 만들 수 있습니다. 이 업데이트에서는 Microsoft Edge 버전 77 이상에 적용되는 설정을 구성할 수 있습니다.
+
+관리 템플릿에 대한 자세한 내용은 [Windows 10 템플릿을 사용하여 Intune에서 그룹 정책 설정 구성](administrative-templates-windows.md)을 참조하세요.
+
+적용 대상:
+
+- Windows 10 이상(Windows RS4 이상)
 
 ## <a name="week-of-august-12-2019"></a>2019년 8월 12일 주
 
@@ -1016,8 +1028,8 @@ Intune에서 **ChangeAtNextAuth** 설정을 macOS 디바이스에 적용하고 �
 적용 대상:  
 macOS
 
-#### <a name="assign-scep-certificates-to-a-userless-macos-device-----2340521----"></a>SCEP 인증서를 사용자가 없는 macOS 디바이스에 할당  <!-- 2340521  -->
-디바이스 특성을 사용하는 SCEP(단순 인증서 등록 프로토콜) 인증서를 사용자 선호도가 없는 디바이스를 포함한 macOS 디바이스에 할당하고, 인증서 프로필을 Wi-Fi 또는 VPN 프로필에 연결할 수 있습니다. 이렇게 하면 Windows, iOS 및 Android를 실행하는 [사용자 선호도가 있거나 없는 디바이스에 SCEP 인증서를 이미 할당](certificates-scep-configure.md#create-a-scep-certificate-profile)해야 하는 지원이 확장됩니다.  이 업데이트에는 macOS에 대한 SCEP 인증서 프로필을 구성할 때 *디바이스*라는 인증서 종류를 선택하는 옵션이 추가되었습니다.
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521------"></a>SCEP 인증서를 사용자가 없는 macOS 디바이스에 할당    <!-- 2340521    -->
+디바이스 특성을 사용하는 SCEP(단순 인증서 등록 프로토콜) 인증서를 사용자 선호도가 없는 디바이스를 포함한 macOS 디바이스에 할당하고, 인증서 프로필을 Wi-Fi 또는 VPN 프로필에 연결할 수 있습니다. 이렇게 하면 Windows, iOS 및 Android를 실행하는 [사용자 선호도가 있거나 없는 디바이스에 SCEP 인증서를 이미 할당](certificates-profile-scep.md)해야 하는 지원이 확장됩니다.  이 업데이트에는 macOS에 대한 SCEP 인증서 프로필을 구성할 때 *디바이스*라는 인증서 종류를 선택하는 옵션이 추가되었습니다.
 
 적용 대상: 
 - macOS

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: faff917dfafaaedb988cbbfb8174547f0b0ccf3b
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648449"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122256"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP를 사용하여 Intune에 파트너 인증 기관 추가
 
@@ -42,7 +42,7 @@ Azure AD(Active Directory) 애플리케이션을 사용하면 Intune에 권한�
 
 ## <a name="overview"></a>개요
 
-다음 단계는 Intune에서 SCEP 인증서를 발급하는 방법에 대한 개요를 제공합니다.
+다음 단계는 Intune에서 인증서에 SCEP를 사용하는 방법에 대한 개요를 제공합니다.
 
 1. Intune에서 관리자는 SCEP 인증서 프로필을 만든 다음, 프로필 대상을 사용자 또는 디바이스로 지정합니다.
 2. 디바이스가 Intune에 체크 인합니다.
@@ -106,9 +106,9 @@ Azure AD 앱을 등록하는 데 필요한 권한이 있는지 확인합니다. 
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>SCEP 인증서 프로필 구성 및 배포
 관리자는 사용자 또는 디바이스를 대상으로 SCEP 인증서 프로필을 만듭니다. 그런 다음, 프로필을 할당합니다.
 
-- [SCEP 인증서 프로필 만들기](certificates-scep-configure.md#create-a-scep-certificate-profile)
+- [SCEP 인증서 프로필 만들기](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [인증서 프로필 할당](certificates-scep-configure.md#assign-the-certificate-profile)
+- [인증서 프로필 할당](certificates-profile-scep.md#assign-the-certificate-profile)
 
 ## <a name="removing-certificates"></a>인증서 제거
 

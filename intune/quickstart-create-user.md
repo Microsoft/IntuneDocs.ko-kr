@@ -13,16 +13,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 398b8c748fddfa032194cfa60547d76322e28c9a
+ms.sourcegitcommit: 2a7d621587471822b1428440b24f08c8722612dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511375"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70234816"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>빠른 시작: Intune에서 사용자 만들기 및 사용자에게 라이선스 할당
 
-이 빠른 시작에서는 사용자를 만든 다음 사용자에게 Intune을 할당합니다. Intune을 사용할 때 회사 데이터에 액세스할 수 있도록 허용하고 싶은 각 사용자가 본인의 사용자 계정을 갖고 있어야 합니다. Intune 관리자는 이후에 사용자를 구성하여 액세스 제어를 관리할 수 있습니다.
+이 빠른 시작에서는 사용자를 만든 다음 사용자에게 Intune 라이선스를 할당합니다. Intune을 사용할 때 회사 데이터에 액세스할 수 있도록 허용하고 싶은 각 사용자가 본인의 사용자 계정을 갖고 있어야 합니다. Intune 관리자는 이후에 사용자를 구성하여 액세스 제어를 관리할 수 있습니다.
 
 Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)하세요.
 

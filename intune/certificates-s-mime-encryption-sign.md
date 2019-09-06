@@ -1,5 +1,5 @@
 ---
-title: S/MIME를 사용하여 이메일 서명 및 암호화 -Microsoft Intune - Azure | Micrososft Docs
+title: S/MIME를 사용하여 메일 서명 및 암호화 - Microsoft Intune - Azure | Microsoft Docs
 description: 디바이스에서 이메일 서명 및 암호화하기 위해 Microsoft Intune에서 이메일 디지털 인증서를 사용하는 방법을 알아봅니다. 이러한 인증서는 S/MIME라고 하고 디바이스 구성 프로필을 사용하여 구성됩니다. 서명 및 암호화 인증서는 PKCS 또는 프라이빗 인증서를 사용하고 커넥터를 사용하여 인증서를 가져옵니다.
 keywords: ''
 author: MandiOhlinger
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dba3866df9ce5c779deb18cf13852b3d8af1b8d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 755073af455c1ee63fa52f435a397734d2897b47
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048886"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122235"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Intune에서 이메일 서명 및 암호화를 위한 S/MIME 개요
 
@@ -80,7 +80,7 @@ S/MIME 서명 및 암호화 인증서 프로필을 만든 후 [iOS 전용 메일
 
 ## <a name="next-steps"></a>다음 단계
 
-- [SCEP 인증서 사용](certificates-scep-configure.md)
+- [인증서에 SCEP 사용](certificates-scep-configure.md)
 - [PKCS 인증서 사용](certficates-pfx-configure.md)
 - [파트너 CA 사용](certificate-authority-add-scep-overview.md)
 - [Symantec PKI 관리자 웹 서비스에서 PKCS 인증서 발급](certificates-symantec-configure.md)
