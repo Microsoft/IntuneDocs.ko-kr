@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: c76466acb375fe49afefc542606350733970f416
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353347"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302346"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune에서 Endpoint Protection 문제와 가능한 해결 방법
 
@@ -60,20 +60,20 @@ ms.locfileid: "68353347"
 **가능한 해결 방법**: 이러한 기능을 사용하도록 설정합니다. 지침은 다음을 참조하세요.
 
 - [Endpoint Protection 설정 추가](endpoint-protection-configure.md)
-- [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [최종 사용자: 실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>맬웨어 정의가 만료됨
 
 이 상태는 디바이스의 맬웨어 정의가 14일 이상 만료된 상태임을 보여 줍니다. 예를 들어 디바이스가 인터넷과 연결이 끊겼거나 맬웨어 정의가 만료된 경우 이 메시지가 표시될 수 있습니다.
 
-**가능한 해결 방법**: 맬웨어 정의가 만료된 경우 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)을 사용하여 정의를 업데이트합니다.
+**가능한 해결 방법**: 맬웨어 정의가 만료된 경우 [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#microsoft-defender-antivirus)을 사용하여 정의를 업데이트합니다.
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>전체 검색 지연 또는 빠른 검색 지연
 
 전체 검색 또는 빠른 검색이 14일 동안 완료되지 않습니다. 이 시나리오는 전체 검색 중 디바이스를 다시 시작하는 경우에 발생할 수 있습니다.
 
-**가능한 해결 방법**: 검사가 지연되는 경우 일회성 검사를 실행하거나 되풀이 검사를 예약할 수 있습니다. [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#windows-defender-antivirus)을 참조하세요.
+**가능한 해결 방법**: 검사가 지연되는 경우 일회성 검사를 실행하거나 되풀이 검사를 예약할 수 있습니다. [Windows Defender 바이러스 백신](device-restrictions-windows-10.md#microsoft-defender-antivirus)을 참조하세요.
 
 ### <a name="another-endpoint-protection-application-running"></a>다른 엔드포인트 보호 애플리케이션이 실행되고 있음
 
