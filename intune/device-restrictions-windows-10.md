@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
-ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
+ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69998937"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302291"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
-이 문서에서는 Windows 10 이상 디바이스에서 제어할 수 있는 다양한 설정을 모두 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 사용하여 기능을 허용하거나 사용하지 않도록 설정하고, 암호 규칙을 설정하고, 잠금 화면을 사용자 지정하며, Windows Defender를 사용합니다.
+이 문서에서는 Windows 10 이상 디바이스에서 제어할 수 있는 다양한 설정을 모두 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 사용하여 기능을 허용하거나 사용하지 않도록 설정하고, 암호 규칙을 설정하고, 잠금 화면을 사용자 지정하며, Microsoft Defender를 사용합니다.
 
 이러한 설정은 Intune에서 디바이스 구성 프로필에 추가된 다음, Windows 10 디바이스에 할당 또는 배포됩니다.
 
@@ -79,8 +79,6 @@ ms.locfileid: "69998937"
 
   [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="cellular-and-connectivity"></a>셀룰러 및 연결
 
 다음 설정에서는 [연결 정책](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) 및 [Wi-Fi 정책](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) CSP를 사용하며, 지원되는 Windows 버전도 나열합니다.
@@ -114,8 +112,6 @@ ms.locfileid: "69998937"
 
   [ServicesAllowedList 사용 가이드](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide)에는 서비스 목록에 대한 자세한 정보가 있습니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="cloud-and-storage"></a>클라우드 및 스토리지
 
 다음 설정에서는 [계정 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts)를 사용하며, 지원되는 Windows 버전도 나열합니다.
@@ -124,8 +120,6 @@ ms.locfileid: "69998937"
 - **타사 계정**: **차단**은 최종 사용자가 사용자 인터페이스를 사용하여 타사 계정을 추가하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 사용자가 Microsoft 계정과 연결되지 않은 이메일 계정을 추가할 수 있습니다.
 - **Microsoft 계정의 설정 동기화**: **구성되지 않음**(기본값)을 사용하면 Microsoft 계정과 연결된 디바이스 및 앱 설정을 디바이스 간에 동기화할 수 있습니다. **차단**은 이 동기화를 차단합니다.
 - **Microsoft 계정 로그인 도우미**: **구성되지 않음**(기본값)으로 설정하면 최종 사용자가 **Microsoft 계정 로그인 도우미**(wlidsvc) 서비스를 시작하고 중지할 수 있습니다. 사용자는 이 운영 체제 서비스를 통해 Microsoft 계정에 로그인할 수 있습니다. **사용 안 함**은 최종 사용자가 Microsoft 로그인 도우미 서비스(wlidsvc)를 제어하지 못하도록 차단합니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="cloud-printer"></a>클라우드 프린터
 
@@ -140,8 +134,6 @@ ms.locfileid: "69998937"
 
 > [!TIP]
 > [Windows Server 하이브리드 클라우드 인쇄](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview)를 설정하면 이러한 설정을 구성한 다음, Windows 디바이스에 배포할 수 있습니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="control-panel-and-settings"></a>제어판 및 설정
 
@@ -165,8 +157,6 @@ ms.locfileid: "69998937"
   - **개인 정보**: **차단**은 디바이스에 있는 설정 앱의 [개인 정보] 영역에 대한 액세스를 차단합니다. **구성되지 않음**(기본값)은 액세스를 허용합니다.
   - **업데이트 및 보안**: **차단**은 디바이스에 있는 설정 앱의 [업데이트 및 보안] 영역에 대한 액세스를 차단합니다. **구성되지 않음**(기본값)은 액세스를 허용합니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="display"></a>표시
 
 다음 설정에서는 [표시 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display)를 사용하며, 지원되는 Windows 버전도 나열합니다.
@@ -182,8 +172,6 @@ GDI DPI 크기 조정은 DPI를 인식하지 않는 애플리케이션에서 DPI
   GDI DPI 크기 조정이 목록의 모든 레거시 애플리케이션에 대해 해제됩니다.
 
 또한 앱 목록이 있는 .csv 파일을 **가져올** 수도 있습니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="general"></a>일반
 
@@ -230,8 +218,6 @@ GDI DPI 크기 조정은 DPI를 인식하지 않는 애플리케이션에서 DPI
 
 - **작업 관리자에서 프로세스 종료**: 이 설정은 관리자가 아닌 사용자가 작업 관리자를 사용하여 작업을 종료할 수 있는지 여부를 결정합니다. **차단**을 선택하면 표준 사용자(비관리자)가 작업 관리자를 사용하여 디바이스에서 프로세스 또는 작업을 종료하지 못합니다. **구성되지 않음**(기본값)은 표준 사용자가 작업 관리자를 사용하여 프로세스 또는 작업을 종료할 수 있도록 허용합니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="locked-screen-experience"></a>잠긴 화면 환경
 
 - **알림 센터 알림(모바일 전용)** : **차단**은 알림 센터 알림을 디바이스 잠금 화면에 표시하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 사용자가 알림을 잠금 화면에 표시할 앱을 선택할 수 있습니다.
@@ -255,8 +241,6 @@ GDI DPI 크기 조정은 DPI를 인식하지 않는 애플리케이션에서 DPI
 
   [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="messaging"></a>메시징
 
 다음 설정에서는 [메시징 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging)를 사용하며, 지원되는 Windows 버전도 나열합니다.
@@ -264,8 +248,6 @@ GDI DPI 크기 조정은 DPI를 인식하지 않는 애플리케이션에서 DPI
 - **메시지 동기화(모바일 전용)** : **차단**은 문자 메시지를 백업 및 복원하지 않고 Windows 디바이스 간에 메시지를 동기화하지 않도록 설정합니다. 사용하지 않도록 설정되면 정보가 조직에서 제어하지 않는 서버에 저장되지 않습니다. **구성되지 않음**(기본값)을 사용하면 사용자가 이러한 설정을 변경하고 해당 메시지를 동기화할 수 있습니다.
 - **MMS(모바일 전용)** : **차단**은 디바이스에서 MMS 보내기 및 받기 기능을 사용하지 않도록 설정합니다. 기업의 경우 이 정책을 사용하여 감사 또는 관리 요구 사항의 일부로 디바이스에서 MMS를 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)을 사용하면 MMS를 보내고 받을 수 있습니다.
 - **RCS(모바일 전용)** : **차단**은 디바이스에서 RCS(Rich Communication Services) 보내기 및 받기 기능을 사용하지 않도록 설정합니다. 기업의 경우 이 정책을 사용하여 감사 또는 관리 요구 사항의 일부로 디바이스에서 RCS를 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)을 사용하면 RCS를 보내고 받을 수 있습니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge 브라우저
 
@@ -327,7 +309,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Internet Explorer에서 사이트를 열 때 메시지**: 이 설정을 사용하여 Internet Explorer 11에서 사이트가 열리기 전에 알림을 표시하도록 Microsoft Edge를 구성합니다. 옵션은 다음과 같습니다.
   - **메시지를 다시 표시 안 함** : 메시지를 표시하지 않을 수 있는 OS 기본 동작을 사용합니다.
   - **Internet Explorer 11에서 사이트가 열렸다는 메시지 표시**: IE에서 사이트를 열 때 메시지를 표시합니다. 사이트가 IE에서 열립니다. 
-  - **Microsoft Edge에서 사이트를 열기 위한 옵션 없이 메시지 표시**: Edge에서 사이트를 열 때 메시지를 표시합니다. 메시지에는 **Keep going in Microsoft Edge**(Microsoft Edge에서 계속) 링크가 포함되므로 사용자가 IE 대신 Microsoft Edge를 선택할 수 있습니다.
+  - **Microsoft Edge에서 사이트를 열기 위한 옵션과 함께 메시지 표시**: Microsoft Edge에서 사이트를 열 때 메시지를 표시합니다. 메시지에는 **Keep going in Microsoft Edge**(Microsoft Edge에서 계속) 링크가 포함되므로 사용자가 IE 대신 Microsoft Edge를 선택할 수 있습니다.
 
   > [!IMPORTANT]
   > 이 설정을 사용하려면 **엔터프라이즈 모드 사이트 목록 위치** 설정, **Internet Explorer에 인트라넷 트래픽 보내기** 설정 또는 두 설정을 모두 사용해야 합니다.
@@ -335,8 +317,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Microsoft 호환성 목록 허용**: **예**(기본값)는 Microsoft 호환성 목록을 사용할 수 있도록 허용합니다. **아니요**는 Microsoft Edge에서 Microsoft 호환성 목록을 사용하지 못하도록 차단합니다. Microsoft에서 제공하는 이 목록은 Microsoft Edge에서 알려진 호환성 문제가 있는 사이트를 표시하는 데 유용합니다.
 - **시작 페이지 및 새 탭 페이지 미리 로드**: **예**(기본값)는 이러한 페이지를 미리 로드할 수 있는 OS 기본 동작을 사용합니다. 미리 로드하면 Microsoft Edge를 시작하고 새 탭을 로드하는 시간이 최소화됩니다. **아니요**는 Microsoft Edge에서 가 시작 페이지 및 새 탭 페이지를 미리 로드하지 못하도록 차단합니다.
 - **시작 페이지 및 새 탭 페이지 사전 시작**: **예**(기본값)는 이러한 페이지를 미리 시작할 수 있는 OS 기본 동작을 사용합니다. 사전 실행하면 Microsoft Edge 성능이 향상될 수 있고 Microsoft Edge를 시작하는 데 필요한 시간이 최소화됩니다. **아니요**는 Microsoft Edge에서 시작 페이지 및 새 탭 페이지를 사전 시작하지 못하도록 차단합니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ### <a name="favorites-and-search"></a>즐겨찾기 및 검색
 
@@ -357,8 +337,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **검색 엔진 변경 허용**: **예**(기본값)를 통해 사용자는 새 검색 엔진을 추가하거나 Microsoft Edge에서 기본 검색 엔진을 변경할 수 있습니다. 사용자가 검색 엔진을 사용자 지정하지 못하도록 하려면 **아니요**를 선택합니다.
 
   이 설정은 [일반 모드(다중 앱 키오스크)](#use-microsoft-edge-kiosk-mode)에서 실행 중인 때에만 사용할 수 있습니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ### <a name="privacy-and-security"></a>개인 정보 보호 및 보안
 
@@ -383,8 +361,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **라이브 타일 데이터 수집 허용**: **예**(기본값)를 사용하면 Microsoft Edge에서 시작 메뉴에 고정된 라이브 타일로부터 정보를 수집할 수 있습니다. **아니요**는 사용자에게 제한된 환경을 제공할 수 있는 이 정보를 수집하지 못하도록 차단합니다.
 - **사용자가 인증서 오류를 재정의할 수 있음**: **예**(기본값)를 사용하면 사용자가 SSL/TLS(Secure Sockets Layer/Transport Layer Security) 오류가 있는 웹 사이트에 액세스할 수 있습니다. **아니요**(보안 향상을 위해 추천됨)는 사용자가 SSL 또는 TLS 오류가 있는 웹 사이트에 액세스하지 못하도록 차단합니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ### <a name="additional"></a>추가 정보
 
 - **Microsoft Edge 브라우저 허용**(모바일 전용): **예**(기본값)를 사용하면 모바일 디바이스에서 Microsoft Edge 웹 브라우저를 사용할 수 있습니다. **아니요**는 디바이스에서 Microsoft Edge를 사용하지 못하도록 차단합니다. **아니요**를 선택하는 경우 다른 개별 설정은 데스크톱에만 적용됩니다.
@@ -401,8 +377,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
   패키지 패밀리 이름을 포함하는 CSV 파일을 **가져올** 수도 있습니다. 또는 입력한 패키지 패밀리 이름을 **내보냅니다**.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="network-proxy"></a>네트워크 프록시
 
 다음 설정에서는 [NetworkProxy 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)를 사용하며, 지원되는 Windows 버전도 나열합니다.
@@ -415,8 +389,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **포트 번호**: 프록시 서버의 포트 번호를 입력합니다.
   - **프록시 예외**: 프록시 서버를 사용하지 말아야 하는 URL을 입력합니다. 각각 구분을 위해 세미콜론을 사용하세요.
   - **로컬 주소에 프록시 서버 사용 안 함**: **구성되지 않음**(기본값)은 프록시 서버를 인트라넷의 로컬 주소에 사용하지 못하도록 차단합니다. **허용**은 프록시 서버를 로컬 주소에 사용합니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="password"></a>암호
 
@@ -466,8 +438,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
   [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="per-app-privacy-exceptions"></a>앱별 개인 정보 예외
 
 "기본 개인 정보"에 정의된 것과 다른 개인 정보 동작이 필요한 앱을 추가할 수 있습니다.
@@ -496,23 +466,17 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **피드백 및 진단**: 이 앱에서 진단 정보에 액세스할 수 있는지 여부를 정의합니다.
 - **디바이스와 동기화**: 이 앱에서 디바이스와 명시적으로 페어링되지 않은 무선 디바이스와 정보를 자동으로 공유 및 동기화할 수 있는지 여부를 선택합니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="personalization"></a>Personalization
 
 다음 설정에서는 [맞춤 설정 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)를 사용하며, 지원되는 Windows 버전도 나열합니다.
 
 - **바탕 화면 배경 그림 URL(바탕 화면만 해당)** : Windows 바탕 화면 배경으로 사용하려는 .jpg, .jpeg 또는 .png 형식의 그림에 대한 URL을 입력합니다. 사용자는 그림을 변경할 수 없습니다. 예를 들어 다음과 같이 입력합니다. `https://contoso.com/logo.png`
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="printer"></a>프린터
 
 - **프린터**: 추가된 로컬 프린터 목록입니다.
 - **기본 프린터**: 기본 프린터를 설정합니다.
 - **새 프린터 추가에 대한 사용자 액세스**: 로컬 프린터 사용을 허용하거나 차단합니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="privacy"></a>개인 정보 취급 방침
 
@@ -524,8 +488,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **로컬 작업 전용**: **차단**을 선택하면 로컬 작업만 기반으로 작업 전환기에서 최근에 사용한 리소스의 공유 경험 및 검색이 제한됩니다. **구성되지 않음**(기본값)은 이 기능을 사용하도록 설정합니다.
 
 디바이스의 모든 앱이 액세스할 수 있는 정보를 구성할 수 있습니다. **앱별 개인 정보 예외**를 사용하여 앱별 예외를 정의할 수 있습니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ### <a name="exceptions"></a>예외
 
@@ -548,8 +510,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **피드백 및 진단**: 이 앱에서 진단 정보에 액세스할 수 있는지 여부를 선택합니다.
 - **디바이스와 동기화** - 이 앱에서 이 PC, 태블릿 또는 휴대폰과 명시적으로 페어링되지 않은 무선 디바이스와 정보를 자동으로 공유 및 동기화할 수 있는지 여부를 정의합니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="projection"></a>프로젝션
 
 다음 설정에서는 [WirelessDisplay 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay)를 사용하며, 지원되는 Windows 버전도 나열합니다.
@@ -557,8 +517,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **무선 디스플레이 수신기의 사용자 입력**: **차단**은 무선 디스플레이 수신기에서 사용자 입력을 차단합니다. **구성되지 않음**(기본값)을 사용하면 키보드, 마우스, 펜 및 터치식 입력을 무선 디스플레이에서 원본 디바이스로 다시 보낼 수 있습니다.
 - **이 PC로 프로젝션**: **차단**은 다른 디바이스에서 프로젝션할 디바이스를 찾지 못하도록 방지합니다. **구성되지 않음**(기본값)을 사용하면 디바이스를 검색할 수 있으며 디바이스의 잠금 화면 위에 프로젝션할 수 있습니다.
 - **페어링 시 PIN 필요**: **필요**를 선택하면 프로젝션 디바이스에 연결할 때 항상 PIN을 입력하라는 메시지를 표시할 수 있습니다. **구성되지 않음**(기본값)은 디바이스를 프로젝션 디바이스에 페어링하기 위해 PIN을 요구하지 않습니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="reporting-and-telemetry"></a>모니터링 및 원격 분석
 
@@ -602,8 +560,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **고급**: 성인 콘텐츠에 대한 최고 수준의 필터링입니다.
   - **보통**: 성인 콘텐츠에 대한 중간 수준의 필터링입니다. 유효한 검색 결과는 필터링되지 않습니다.
 - **검색에 웹 결과 표시**: **차단**으로 설정하면 사용자가 검색할 수 없으며 웹 결과가 Search에 표시되지 않습니다. **구성되지 않음**(기본값)을 사용하면 사용자가 웹을 검색할 수 있으며 결과가 디바이스에 표시됩니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="start"></a>시작
 
@@ -675,8 +631,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **숨기기**: 바로 가기를 숨기고 설정 앱에서 설정을 사용하지 않도록 설정합니다.
   - **표시**: 바로 가기를 표시하고 설정 앱에서 설정을 사용하지 않도록 설정합니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
 - **Microsoft Edge용 SmartScreen**: **필요**는 Windows Defender SmartScreen을 해제하고, 사용자가 이를 설정하지 못하도록 차단합니다. **구성되지 않음**(기본값)은 SmartScreen을 설정합니다. 사용자를 잠재적인 위협으로부터 보호하고 사용자가 이를 해제하지 못하도록 차단합니다.
@@ -693,8 +647,6 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
 ## <a name="windows-spotlight"></a>Windows 추천
 
 다음 설정에서는 [환경 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience)를 사용하며, 지원되는 Windows 버전도 나열합니다.
@@ -709,38 +661,96 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **Windows 추천 맞춤 설정**: **차단**은 Windows에서 진단 데이터를 사용하여 사용자에 맞춘 사용자 지정 환경을 제공하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 사용자 요구 사항에 맞게 Windows를 조정할 수 있도록 Microsoft에서 진단 데이터를 사용하여 맞춤형 추천, 팁 및 제안을 제공할 수 있습니다.
   - **Windows 시작 환경**: **차단**은 Windows 추천의 Windows 시작 환경 기능을 해제합니다. Windows 및 해당 앱에 대한 업데이트와 변경 내용이 있으면 Windows 시작 환경이 표시되지 않습니다. **구성되지 않음**(기본값)은 사용자에게 새롭거나 업데이트된 기능에 대한 정보를 표시하는 Windows 시작 환경을 허용합니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
-
-## <a name="windows-defender-antivirus"></a>Windows Defender 바이러스 백신
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 바이러스 백신
 
 다음 설정에서는 [Defender 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)를 사용하며, 지원되는 Windows 버전도 나열합니다.
 
-- **실시간 모니터링**: **사용**은 맬웨어, 스파이웨어 및 기타 사용자 동의 없이 설치된 소프트웨어에 대한 실시간 검사를 차단합니다. **구성되지 않음**(기본값)은 이 기능을 허용합니다.
-- **동작 모니터링**: **사용**은 Defender에서 디바이스의 의심스러운 활동에 대해 알려진 특정 패턴을 확인하지 못하도록 차단합니다. **구성되지 않음**(기본값)은 Windows Defender 동작 모니터링을 허용합니다.
-- **NIS(네트워크 검사 시스템)** : NIS를 통해 네트워크 기반 취약성 공격으로부터 디바이스를 보호할 수 있습니다. Microsoft Endpoint Protection Center에서 알려진 취약성의 서명을 사용하여 악성 트래픽을 검색하고 차단합니다.
-- **모든 다운로드 검색**: Defender가 인터넷에서 다운로드하는 모든 파일을 검사하는지 여부를 제어합니다.
-- **Microsoft 웹 브라우저에 로드된 스크립트 검사**: **구성되지 않음**(기본값)을 사용하면 Defender를 통해 Internet Explorer에서 사용되는 스크립트를 검사할 수 있습니다. **사용**은 이 검사를 차단합니다.
-- **Defender에 대한 최종 사용자 액세스**: **차단**은 최종 사용자에게 Windows Defender 사용자 인터페이스를 표시하지 않도록 숨깁니다. 모든 Windows Defender 알림도 표시되지 않습니다. **구성되지 않음**(기본값)은 Windows Defender UI에 대한 사용자 액세스를 허용합니다. 이 설정이 변경되면 다음에 최종 사용자 PC를 다시 시작할 때 적용됩니다.
-- **서명 업데이트 간격(시간)** : Defender에서 새 서명 파일을 확인하는 간격(0-24)을 입력합니다. 옵션은 다음과 같습니다.
+- **실시간 모니터링**: **사용**은 맬웨어, 스파이웨어 및 기타 사용자 동의 없이 설치된 소프트웨어에 대한 실시간 검사를 해제합니다. **구성되지 않음**(기본값)은 이 기능을 허용합니다.
 
-  - **구성되지 않음**(기본값)
-  - **확인 안 함**: Defender에서 새 서명 파일을 검사하지 않습니다.
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **동작 모니터링**: **사용**은 Defender에서 디바이스의 의심스러운 활동에 대해 알려진 특정 패턴을 확인하는 것을 해제합니다. **구성되지 않음**(기본값)은 Windows Defender 동작 모니터링을 허용합니다.
+
+  [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **NIS(네트워크 검사 시스템)** : NIS를 통해 네트워크 기반 취약성 공격으로부터 디바이스를 보호할 수 있습니다. Microsoft Endpoint Protection Center에서 알려진 취약성의 서명을 사용하여 악성 트래픽을 검색하고 차단합니다.
+
+  **구성되지 않음**(기본값)으로 설정하면 이 기능을 비활성화합니다. 사용자가 알려진 취약점에 대 한 연결을 차단 하지 않습니다. **사용**으로 설정 되 면 네트워크 보호 및 네트워크 차단이 설정 되 고 사용자가 해제할 수 없습니다. 사용자가 알려진 취약점에 대 한 연결을 차단 합니다.
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **모든 다운로드 검색**: **구성 되지 않음** (기본값)은 Defender에서 인터넷에서 다운로드 한 모든 파일을 검색 합니다. 이 기능을 **사용**으로 설정 하면이 기능을 사용할 수 없습니다. 따라서 Defender는 다운로드 한 모든 인터넷 파일을 검색 하지 않습니다.
+
+  [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **Microsoft 웹 브라우저에 로드된 스크립트 검사**: **구성되지 않음**(기본값)을 사용하면 Defender를 통해 Internet Explorer에서 사용되는 스크립트를 검사할 수 있습니다. **사용**은 이 검사를 차단합니다.
+
+  [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **Defender에 대한 최종 사용자 액세스**: **차단**은 최종 사용자에게 Windows Defender 사용자 인터페이스를 표시하지 않도록 숨깁니다. 모든 Windows Defender 알림도 표시되지 않습니다. **구성되지 않음**(기본값)은 Windows Defender UI에 대한 사용자 액세스를 허용합니다. 이 설정이 변경되면 다음에 최종 사용자 PC를 다시 시작할 때 적용됩니다.
+
+  [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **보안 인텔리전스 업데이트 간격 (시간)** : Defender에서 새 보안 인텔리전스를 확인 하는 간격 (0-24)을 입력 합니다. 옵션은 다음과 같습니다.
+
+  - **구성 되지 않음** (기본값): 8 시간 마다 업데이트를 확인 합니다.
+  - **확인 안 함**: Defender에서 새 보안 인텔리전스 업데이트를 확인 하지 않습니다.
   - **1-24**: `1`은 매 시간마다 검사하고, `2`는 2시간마다 검사하고, `24`는 매일 검사하는 등등입니다.
-- **파일 및 프로그램 활동 모니터링**: Defender가 디바이스의 파일 및 프로그램 활동을 모니터링하도록 허용합니다.
-- **다음 기간(일) 후 격리된 맬웨어 삭제**: 이전에 영향을 받은 디바이스를 수동으로 확인할 수 있도록 입력한 기간(일) 동안 확인된 맬웨어를 계속 추적합니다. 일 수를 **0**으로 설정하면, 맬웨어가 격리 폴더에 유지되며 자동으로 제거되지 않습니다. `90`으로 설정하면 격리 항목을 90일 동안 시스템에 저장한 다음, 제거합니다.
-- **검색하는 동안 CPU 사용 제한**: 검사에 사용할 수 있는 CPU의 양을 **1**에서 **100** 사이로 제한할 수 있습니다.
-- **보관 파일 검사**: **사용**은 Defender에서 Zip 또는 Cab 파일과 같은 보관 파일을 검사하지 못하도록 차단합니다. **구성되지 않음**(기본값)은 이 검사를 허용합니다.
+  
+  [Defender/서명 Updateinterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **파일 및 프로그램 활동 모니터링**: Defender가 디바이스의 파일 및 프로그램 활동을 모니터링하도록 허용합니다. 옵션은 다음과 같습니다.
+
+  - **구성 되지 않음** (기본값): 모든 파일을 모니터링 합니다.
+  - **모니터링 사용 안 함**
+  - **모든 파일 모니터링**
+  - **들어오는 파일만 모니터링**
+  - **나가는 파일만 모니터링**
+
+  [Defender/RealTimeScanDirection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **다음 기간(일) 후 격리된 맬웨어 삭제**: 이전에 영향을 받은 디바이스를 수동으로 확인할 수 있도록 입력한 기간(일) 동안 확인된 맬웨어를 계속 추적합니다. 기간(일)을 `0`으로 설정하면, 맬웨어가 격리 폴더에 유지되며 자동으로 제거되지 않습니다. `90`으로 설정하면 격리 항목을 90일 동안 시스템에 저장한 다음, 제거합니다.
+
+  [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **검색하는 동안 CPU 사용 제한**: 검사에 사용할 수 있는 CPU의 양을 `0`에서 `100` 사이로 제한할 수 있습니다.
+- **보관 파일 검색**: **Enable** 은 Defender에서 Zip 또는 Cab 파일과 같은 보관 파일을 검색 하지 못하도록 설정 합니다. **구성되지 않음**(기본값)은 이 검사를 허용합니다.
+
+  [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **받는 메일 메시지 검사**: **사용**은 Defender에서 디바이스에 도착하는 이메일 메시지를 검사할 수 있도록 허용합니다. **구성되지 않음**(기본값)은 이메일 검사를 차단합니다.
+
+  [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **전체 검사 중 이동식 드라이브 검사**: **사용**은 이동식 드라이브의 전체 검사를 차단합니다. **구성되지 않음**(기본값)을 사용하면 Defender에서 USB 스틱과 같은 이동식 드라이브를 검사할 수 있습니다.
+
+  빠른 검색 중에는 이동식 드라이브를 계속 검색할 수 있습니다.
+
+  [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **전체 검사 중 매핑된 네트워크 드라이브 검사**: **사용**을 사용하면 Defender에서 매핑된 네트워크 드라이브의 파일을 검사할 수 있습니다. **구성되지 않음**(기본값)은 전체 검사를 차단합니다. 드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다.
+
+  빠른 검색을 수행 하는 동안 매핑된 네트워크 드라이브를 계속 검색할 수 있습니다.
+
+  [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **네트워크 폴더에서 열린 파일 검사**: **구성되지 않음**(기본값)을 사용하면 Defender에서 공유 네트워크 드라이브의 파일(예: UNC 경로를 통해 액세스하는 파일)을 검사할 수 있습니다. **사용**은 이 검사를 차단합니다. 드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다.
+
+  [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **클라우드 보호**: **구성되지 않음**(기본값)을 사용하면 Microsoft 활성 보호 서비스에서 사용자가 관리하는 디바이스의 맬웨어 활동에 대한 정보를 받을 수 있습니다. **사용**은 이 기능을 차단합니다.
+
+  [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **샘플을 제출하기 전에 사용자에게 확인**: 추가 분석이 필요할 수도 있는 악의적 파일을 Microsoft에 자동으로 전송할지 여부를 제어합니다. 옵션은 다음과 같습니다.
-  - **구성되지 않음**
+
+  - **구성 되지 않음** (기본값): 안전 샘플을 자동으로 보냅니다.
   - **항상 확인**
   - **개인 데이터를 보내기 전에 확인**
   - **데이터를 보내지 않음**
   - **확인하지 않고 모든 데이터 보내기**: 데이터를 자동으로 보냅니다.
+
+  [Defender/SubmitSamplesConsent CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **매일 빠른 검색을 수행하는 시간**: 매일 빠른 검색을 실행할 시간을 선택합니다. **구성되지 않음**을 사용하면 매일 검색을 실행하지 않습니다. 추가 사용자 지정을 하려는 경우 **수행할 시스템 검색 유형** 설정을 구성합니다.
 
@@ -756,12 +766,16 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
     - **예약일**: 검사를 실행할 날짜를 선택합니다.
     - **예약 시간**: 검사를 실행할 시간을 선택합니다.
 
-  이 설정은 **매일 빠른 검사를 수행하는 시간** 설정과 충돌할 수 있습니다. 권장 구성 저장:
-
-  - 매일 빠른 검사를 실행하려면 **매일 빠른 검사를 수행하는 시간** 설정을 구성합니다.
-  - 매일 빠른 검사 및 매주 전체 검사를 실행하려면 **매일 빠른 검사를 수행할 시간** 설정을 구성합니다. 날짜와 시간을 사용하여 **수행할 시스템 검사 유형**을 전체 검사로 설정합니다.
-  - **매일 빠른 검색을 수행하는 시간** 설정과 **빠른 검색**으로 설정된 **수행할 시스템 검색 유형**을 동시에 구성하지 마세요. 이러한 설정이 충돌할 수 있으며 검색이 실행되지 않을 수 있습니다.
-  - 매주 화요일 오전 6시에 빠른 검색을 실행하려면 **수행할 시스템 검색 유형** 설정을 구성합니다.
+  > [!TIP]
+  > 이 설정은 **매일 빠른 검사를 수행하는 시간** 설정과 충돌할 수 있습니다. 권장 구성 저장:  
+  >
+  > - 매일 빠른 검색을 예약 하 고 매주 전체 검색을 예약 하려면 다음을 수행 합니다.
+  >   1. **매일 빠른 검색 설정을 수행할 시간** 을 구성 합니다.
+  >   2. 전체 검색을 수행 하기 위해 **수행할 시스템 검색 유형을** 구성 합니다.
+  > 
+  > - 매일 빠른 검색을 한 번만 수행 하려면 (전체 검색 안 함), **매일 빠른 검색을 수행** 하거나 **수행할 시스템 검색 유형을**설정: 시간 중 하나를 사용 합니다. 예를 들어 매주 화요일 오전 6시에 빠른 검색을 실행하려면 **수행할 시스템 검색 유형** 설정을 구성합니다.
+  > 
+  > - **매일 빠른 검색을 수행하는 시간** 설정과 **빠른 검색**으로 설정된 **수행할 시스템 검색 유형**을 동시에 구성하지 마세요. 이러한 설정이 충돌할 수 있으며 검색이 실행되지 않을 수 있습니다.
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
@@ -774,7 +788,10 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
   사용자 동의 없이 설치된 앱에 대한 자세한 내용은 [사용자 동의 없이 설치된 애플리케이션 검색 및 차단](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)을 참조하세요.
 
-- **감지된 맬웨어 위협에 대한 작업**: 검색된 각 위협 수준(낮음, 보통, 높음, 심각)에 대해 Defender에서 수행할 작업을 선택하려면 이 옵션을 사용합니다. 불가능한 경우 Windows Defender는 위협을 해결할 수 있는 최상의 옵션을 선택합니다. 옵션은 다음과 같습니다.
+  [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **검색 된 맬웨어 위협에 대 한 작업**: 맬웨어 스레드를 처리 하는 방법을 선택 합니다. **구성 되지 않음** (기본값) Microsoft Defender에서 가장 적합 한 옵션을 선택할 수 있습니다. **사용**으로 설정한 경우 감지된 각 위협 수준(낮음, 보통, 높음 및 심각)에 대해 Defender에서 수행할 작업을 선택합니다. 옵션은 다음과 같습니다.
+  
   - **정리**
   - **격리**
   - **제거**
@@ -782,15 +799,15 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **사용자 정의**
   - **차단**
 
-**확인**을 선택하여 변경 내용을 저장합니다.
+  작업을 수행할 수 없는 경우, Windows Defender는 위협 요소를 재구성 하는 데 가장 적합 한 옵션을 선택 합니다. 
+
+  [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender 바이러스 백신 제외
 
 - **검색 및 실시간 보호에서 제외할 파일 및 폴더**: 제외 목록에 **C:\Path** 또는 **%ProgramFiles%\Path\filename.exe** 같은 파일과 폴더를 하나 이상 추가합니다. 이러한 파일과 폴더는 실시간 또는 예약된 검색에 포함되지 않습니다.
 - **검색 및 실시간 보호에서 제외할 파일 확장명**: 제외 목록에 **jpg** 또는 **txt**와 같은 하나 이상의 파일 확장명을 추가합니다. 이러한 확장명의 파일은 실시간 또는 예약된 검색에 포함되지 않습니다.
 - **검색 및 실시간 보호에서 제외할 프로세스**: 제외 목록에 **.exe**, **.com** 또는 **.scr** 형식의 프로세스를 하나 이상 추가합니다. 이러한 프로세스는 실시간 검색 또는 예약된 검색에 포함되지 않습니다.
-
-**확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
