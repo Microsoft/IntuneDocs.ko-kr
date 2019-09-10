@@ -4,7 +4,7 @@
 
 ## [회사에서 Intune을 사용하여 볼 수 있는 정보는 무엇인가요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [내 암호 업데이트](password-does-not-meet-it-administrator-requirements.md)
+## [디바이스 암호 요구 사항](password-does-not-meet-it-administrator-requirements.md)
 
 ## [회사 포털에 로그인](sign-in-to-the-company-portal.md)
 
