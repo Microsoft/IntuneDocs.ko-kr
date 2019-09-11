@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 25beef7e6593865b92e349163768ded5ce3b9e2d
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122393"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376945"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -73,7 +73,7 @@ Intune에서 PKCS 인증서를 사용하려면 다음 인프라가 필요합니�
   - 가져온 PFX Certificate Connector for Microsoft Intune을 서버에 설치합니다.  
   - 중요 업데이트를 자동으로 받으려면 커넥터가 포트 **443**을 통해 **autoupdate.msappproxy.net**에 연결할 수 있도록 방화벽을 열어야 합니다.   
 
-  커넥터에서 액세스할 수 있어야 하는 모든 네트워크 엔드포인트에 대한 자세한 내용은 [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector)를 참조하세요.
+  커넥터에서 액세스할 수 있어야 하는 모든 네트워크 엔드포인트에 대한 자세한 내용은 [Microsoft Intune Certificate Connector](intune-endpoints.md)를 참조하세요.
 
 - **Windows Server**:  
   Windows Server를 사용하여 다음 항목을 호스트합니다.
