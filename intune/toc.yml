@@ -546,10 +546,11 @@
         - name: Intune 앱 관리란?
           href: app-management.md
           displayName: mam-we
-        - name: 앱 개요 추가
-          href: apps-add.md
-          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
+        - name: 앱 추가
           items:
+            - name: 앱 개요 추가
+              href: apps-add.md
+              displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
             - name: Intune 보호 앱
               href: apps-supported-intune-apps.md
             - name: 스토어 앱
@@ -561,9 +562,10 @@
                 - name: Windows Phone 8.1 스토어 앱
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft 스토어 앱
-                  href: store-apps-windows.md
                   items:
-                    - name: 수동으로 회사 포털 앱 추가
+                    - name: Windows 앱
+                      href: store-apps-windows.md
+                    - name: 회사 포털 앱
                       href: store-apps-company-portal-app.md
                 - name: 관리되는 Google Play 앱
                   href: apps-add-android-for-work.md
@@ -571,10 +573,13 @@
                   href: apps-add-office365.md
                 - name: macOS용 Office 365 앱
                   href: apps-add-office365-macos.md
+            - name: 웹앱
+              href: web-app.md
+              displayName: web; web link; weblink; web-link
+            - name: 기본 제공 앱
+              href: apps-add-built-in.md
             - name: 앱 빌드(LOB)
               items:
-                - name: Win32 앱 관리
-                  href: apps-win32-app-management.md
                 - name: Android LOB 앱
                   href: lob-apps-android.md
                 - name: iOS LOB 앱
@@ -587,11 +592,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB 앱
                   href: lob-apps-macos.md
-            - name: 웹앱
-              href: web-app.md
-              displayName: web; web link; weblink; web-link
-            - name: 기본 제공 앱
-              href: apps-add-built-in.md
+            - name: Win32 앱 관리
+              href: apps-win32-app-management.md
             - name: PowerShell 스크립트
               href: intune-management-extension.md
         - name: 앱 할당
@@ -849,7 +851,7 @@
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: 교육
+                - name: 보안 평가
                   href: education-settings-windows.md
                 - name: 다중 사용자 디바이스 공유
                   href: shared-user-device-settings-windows.md
