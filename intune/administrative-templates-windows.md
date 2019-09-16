@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214343"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376918"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 템플릿을 사용하여 Microsoft Intune에서 그룹 정책 설정 구성
 
 조직에서 디바이스를 관리하는 경우 다른 디바이스 그룹에 적용되는 설정 그룹을 만들려고 합니다. 예를 들어 여러 디바이스 그룹이 있습니다. GroupA의 경우 특정 설정 세트를 할당하려고 합니다. GroupB의 경우 다른 설정 세트를 할당하려고 합니다. 또한 구성할 수 있는 설정의 간단한 보기를 원합니다.
 
-Microsoft Intune에서 **관리 템플릿**을 사용하여 이 작업을 완료할 수 있습니다. 관리 템플릿은 Microsoft Edge, Internet Explorer, Microsoft Office 프로그램, 원격 데스크톱, OneDrive, 암호 및 PIN 등에 대한 기능을 제어하는 수많은 설정을 포함합니다. 이러한 설정을 사용하여 그룹 관리자는 클라우드를 통해 그룹 정책을 관리할 수 있습니다.
+Microsoft Intune에서 **관리 템플릿**을 사용하여 이 작업을 완료할 수 있습니다. 관리 템플릿은 Microsoft Edge 버전 77 이상, Internet Explorer, Microsoft Office 프로그램, 원격 데스크톱, OneDrive, 암호 및 PIN 등에 대한 기능을 제어하는 수많은 설정을 포함합니다. 이러한 설정을 사용하여 그룹 관리자는 클라우드를 통해 그룹 정책을 관리할 수 있습니다.
 
-Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합니다. 이러한 설정은 Windows에 기본적으로 제공되며, XML을 사용하는 [ADMX 지원 설정](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)입니다. Office 설정은 ADMX에서 수집되며 [Office 관리 템플릿 파일](https://www.microsoft.com/download/details.aspx?id=49030)의 ADMX 설정을 사용합니다. 그러나 Intune 템플릿은 100% 클라우드 기반입니다. 설정을 구성하고, 원하는 설정을 찾는 단순하고 간단한 방법을 제공합니다.
+Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합니다. 이러한 설정은 Windows에 기본적으로 제공되며, XML을 사용하는 [ADMX 지원 설정](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)입니다. Office 및 Microsoft Edge 설정은 ADMX에서 수집되며, [Office 관리 템플릿 파일](https://www.microsoft.com/download/details.aspx?id=49030) 및 [Microsoft Edge 관리 템플릿 파일](https://www.microsoftedgeinsider.com/enterprise)의 ADMX 설정을 사용합니다. 그러나 Intune 템플릿은 100% 클라우드 기반입니다. 설정을 구성하고, 원하는 설정을 찾는 단순하고 간단한 방법을 제공합니다.
 
 **관리 템플릿**은 Intune에 기본 제공되고, OMA-URI 사용을 포함한 사용자 지정이 필요하지 않습니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 원스톱 상점으로 이러한 템플릿 설정을 사용하여 Windows 10 디바이스를 관리합니다.
 
@@ -58,13 +58,14 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
     > [!TIP]
     > Intune의 Windows 설정은 로컬 그룹 정책 편집기(`gpedit`)에 표시되는 온-프레미스 그룹 정책 경로와 관련됩니다.
 
-5. 기본적으로 드롭다운 목록에는 **모든 제품**이 표시됩니다. 이 목록에서 **Windows** 설정만 표시하거나 **Office** 설정만 표시하거나, **Microsoft Edge** 설정만 표시하도록 설정을 필터링할 수도 있습니다.
+5. 기본적으로 드롭다운 목록에는 **모든 제품**이 표시됩니다. 이 목록에서 **Windows** 설정만 표시하거나 **Office** 설정만 표시하거나, **Edge 버전 77 이상** 설정만 표시하도록 설정을 필터링할 수도 있습니다.
 
     ![Intune의 관리 템플릿에서 모든 Windows 또는 모든 Office 설정을 표시하도록 목록을 필터링합니다.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Microsoft Edge 설정은 다음에 적용됩니다.
     >
+    > - Microsoft Edge 버전 77 이상. Microsoft Edge 45 이전 버전을 구성하려면 [Microsoft Edge 브라우저 디바이스 제한 설정](device-restrictions-windows-10.md#microsoft-edge-browser)을 참조하세요.
     > - [KB 4512509](https://support.microsoft.com/kb/4512509)가 설치된 Windows 10 RS4 이상
     > - [KB 4512534](https://support.microsoft.com/kb/4512534)가 설치된 Windows 10 RS5 이상
     > - [KB 4512941](https://support.microsoft.com/kb/4512941)이 설치된 Windows 10 19H1 이상

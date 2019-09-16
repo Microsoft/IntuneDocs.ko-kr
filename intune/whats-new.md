@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122150"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842148"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -53,6 +53,25 @@ ms.locfileid: "70122150"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-september-9-2019"></a>2019년 9월 9일이 있는 주
+
+### <a name="app-management"></a>앱 관리
+
+#### <a name="updates-to-microsoft-intune-app----4997846---"></a>Microsoft Intune 앱 업데이트 <!-- 4997846 -->
+Android용 Microsoft Intune 앱이 다음과 같은 향상된 기능으로 업데이트되었습니다.
+- 가장 중요한 작업으로 이동할 수 있는 아래쪽 탐색 창을 포함하도록 레이아웃을 업데이트하고 개선했습니다.
+- 사용자의 프로필을 표시하는 추가 페이지를 추가했습니다.
+- 사용자를 위해 디바이스 설정 업데이트 필요를 알리는 등의 실행 가능한 알림의 표시를 앱에 추가했습니다.
+- iOS 및 Android용 회사 포털 앱에 최근 추가된 지원 기능에 따라 앱에 사용자 지정 푸시 알림의 표시를 추가했습니다. 자세한 내용은 [Intune에서 사용자 지정 알림 보내기](custom-notifications.md)를 참조하세요.
+
+## <a name="week-of-september-2-2019"></a>2019년 9월 2일이 있는 주
+
+### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
+
+#### <a name="intune-user-interface-update--tenant-status-dashboard-----5273210----"></a>Intune 사용자 인터페이스 업데이트 - 테넌트 상태 대시보드  <!-- 5273210  -->
+테넌트 상태 대시보드의 사용자 인터페이스가 Azure 사용자 인터페이스 스타일에 맞게 업데이트되었습니다. 자세한 내용은 [테넌트 상태](tenant-status.md)를 참조하세요.
+
 
 ## <a name="week-of-august-26-2019"></a>2019년 8월 26일 주
 
@@ -185,7 +204,7 @@ Intune에서 Windows Defender 바이러스 백신을 사용하여 Windows 10 디
 
 이 업데이트에서 이러한 동작이 수정되었습니다. 따라서 **매일 빠른 검색을 수행할 시간** 및 **수행할 시스템 검사 유형** 설정에는 검사가 성공적으로 완료되면 성공 상태가 표시되고, 설정이 적용되지 않으면 실패 상태가 표시됩니다. 
 
-Windows Defender 바이러스 백신 설정에 대한 자세한 내용은 [Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정](device-restrictions-windows-10.md#windows-defender-antivirus)을 참조하세요. 
+Windows Defender 바이러스 백신 설정에 대한 자세한 내용은 [Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정](device-restrictions-windows-10.md#microsoft-defender-antivirus)을 참조하세요. 
 
 ### <a name="device-enrollment"></a>디바이스 등록
 

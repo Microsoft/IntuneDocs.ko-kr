@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062941"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842185"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
 
-Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다. [자체 배포 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)(키오스크, 디지털 간판 또는 공유 디바이스용), [화이트 글러브](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)(파트너 또는 IT 담당자가 Windows 10 PC를 사전 프로비저닝하여 완전히 구성하고 비즈니스에 바로 사용할 수 있음), [기존 디바이스용 Autopilot(](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices)(최신 버전의 Windows 10을 기존 디바이스에 쉽게 배포할 수 있음) 및 [사용자 구동 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)(기존 사용자용) 
+Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다.
+- 키오스크, 디지털 간판 또는 공유 디바이스용 [자체 배포 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)
+- 파트너 또는 IT 직원이 완전히 구성되고 비즈니스 준비가 완료된 Windows 10 PC를 사전에 프로비전할 수 있는 [화이트 글러브](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove), 최신 버전의 Windows 10을 기존 디바이스에 쉽게 배포할 수 있는 [기존 디바이스용 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices)
+- 기존 사용자를 위한 [사용자 구동 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) 
 
 
 ## <a name="prerequisites"></a>전제 조건
@@ -74,9 +77,9 @@ Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다. [자�
     3. **멤버 자격 형식**에서 **할당** 또는 **동적 디바이스**를 선택합니다.
 3. 이전 단계에서 **멤버 자격 형식**에 대해 **할당됨**을 선택했다면 **그룹** 블레이드에서 **멤버**를 선택하고 Autopilot 디바이스를 그룹에 추가합니다.
     아직 등록되지 않은 AutoPilot 디바이스는 디바이스 이름이 디바이스의 일련 번호와 동일한 디바이스입니다.
-4. 위의 **멤버 자격 형식**에 대해 **동적 디바이스**를 선택했다면 **그룹** 블레이드에서 **동적 디바이스 멤버**를 선택하고 **고급 규칙** 상자에서 다음 코드를 입력합니다.
+4. 위의 **멤버 자격 형식**에 대해 **동적 디바이스**를 선택했다면 **그룹** 블레이드에서 **동적 디바이스 멤버**를 선택하고 **고급 규칙** 상자에서 다음 코드를 입력합니다. 이 규칙은 Autopilot 디바이스만 소유하는 특성을 대상으로 하므로 Autopilot 디바이스만 이러한 규칙에 의해 수집됩니다.
     - Autopilot 디바이스를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`를 입력합니다.
-    - Intune의 그룹 태그 필드는 Azure AD 디바이스의 OrderID 특성에 해당합니다. 특정 그룹 태그(OrderID)를 사용하여 모든 Autopilot 디바이스를 포함하는 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")` 형식을 입력해야 합니다.
+    - Intune의 그룹 태그 필드는 Azure AD 디바이스의 OrderID 특성에 해당합니다. 특정 그룹 태그(Azure AD 디바이스 OrderID)를 사용하여 모든 Autopilot 디바이스를 포함하는 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`을 입력해야 합니다.
     - 특별 구매 주문 ID를 사용하여 Autopilot 디바이스를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`를 입력합니다.
     
     **고급 규칙** 코드를 추가한 후에 **저장**을 선택합니다.
@@ -93,7 +96,7 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
 4. **다음**을 선택합니다.
 5. **OOBE(첫 실행 경험)** 페이지에서 **배포 모드**로 다음 두 옵션 중 하나를 선택합니다.
     - **사용자 기반**: 이 프로필을 사용하는 디바이스는 디바이스를 등록한 사용자와 연결됩니다. 디바이스를 등록하려면 사용자 자격 증명이 필요합니다.
-    - **자체 배포(미리 보기)** : (Windows 10, 버전 1809 이상 필요) 이 프로필을 사용하는 디바이스는 디바이스를 등록하는 사용자와 연결되지 않습니다. 디바이스를 등록하는 데 사용자 자격 증명이 필요하지 않습니다.
+    - **자체 배포(미리 보기)** : (Windows 10, 버전 1809 이상 필요) 이 프로필을 사용하는 디바이스는 디바이스를 등록하는 사용자와 연결되지 않습니다. 디바이스를 등록하는 데 사용자 자격 증명이 필요하지 않습니다. 연결된 사용자가 없는 디바이스에는 사용자 기반 규정 준수 정책이 적용되지 않습니다. 자체 배포 모드를 사용하는 경우 디바이스를 대상으로 하는 규정 준수 정책만 적용됩니다.
 
     ![OOBE 페이지 스크린샷](media/enrollment-autopilot/create-profile-outofbox.png)
 

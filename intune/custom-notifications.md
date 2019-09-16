@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,28 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bffbc96e945d522453c299717a6eb413354a4af4
+ms.sourcegitcommit: 98f2597eec28c6096985d5a1acae72430c2afb1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021747"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70878045"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune에서 사용자 지정 알림 보내기  
 
-Microsoft Intune를 사용하여 관리형 iOS 및 Android 디바이스의 사용자에게 사용자 지정 알림을 보낼 수 있습니다. 이러한 메시지는 디바이스에 있는 다른 애플리케이션의 알림이 표시되는 것처럼 사용자 디바이스의 회사 포털 앱에서 표준 푸시 알림으로 표시됩니다. Intune 사용자 지정 알림은 Windows 디바이스에서는 지원되지 않습니다.   
+Microsoft Intune를 사용하여 관리형 iOS 및 Android 디바이스의 사용자에게 사용자 지정 알림을 보낼 수 있습니다. 이러한 메시지는 디바이스에 있는 다른 애플리케이션의 알림이 표시되는 것처럼 사용자 디바이스의 회사 포털 앱 및 Microsoft Intune 앱에서 표준 푸시 알림으로 표시됩니다. Intune 사용자 지정 알림은 Windows 디바이스에서는 지원되지 않습니다.   
 
 사용자 지정 알림 메시지에는 짧은 제목과 500자 이하의 메시지 본문이 포함됩니다. 이러한 메시지는 일반 통신 용도에 맞게 사용자 지정할 수 있습니다.
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>사용자 지정 알림 보내기의 일반적인 시나리오  
 
-- 사용자 지정 알림을 사용하여 회사 포털에서 사용할 수 있는 새로운 앱에 관해 특정 사용자에게 알립니다.  
+- 사용자 지정 알림을 사용하여 회사 포털에서 새로운 앱을 사용할 수 있음을 특정 사용자에게 알립니다.  
 - 악천후로 건물 폐쇄와 같은 일정의 변경 사항을 모든 직원에게 알립니다.  
 
 ## <a name="considerations-for-using-custom-notifications"></a>사용자 지정 알림 사용에 관한 고려 사항  
 
 **디바이스 구성**:  
-- 사용자가 사용자 지정 알림을 받으려면 디바이스에 회사 포털 앱이 설치되어 있어야 합니다. 또한 회사 포털 앱이 푸시 알림을 보내도록 허용하는 권한도 구성했어야 합니다. 회사 포털 앱이 설치되거나 업데이트될 때마다 사용자에게 알림을 허용할지 묻는 메시지가 표시됩니다.  
+- 사용자가 사용자 지정 알림을 받으려면 디바이스에 회사 포털 앱 또는 Microsoft Intune 앱이 설치되어 있어야 합니다. 또한 회사 포털 앱 또는 Microsoft Intune 앱이 푸시 알림을 보내도록 허용하는 권한 구성도 마쳐야 합니다. 필요한 경우 회사 포털 앱 및 Microsoft Intune 앱이 사용자에게 알림을 허용할지 묻는 메시지를 표시할 수 있습니다.  
 - Android에서는 Google Play 서비스가 필수 종속성입니다.  
 - 디바이스가 MDM에 등록되어 있어야 합니다.
 
@@ -51,8 +51,8 @@ Microsoft Intune를 사용하여 관리형 iOS 및 Android 디바이스의 사�
 - 그룹에는 사용자 또는 디바이스가 포함될 수 있지만 메시지는 사용자에게만 전송되며 사용자가 등록한 각 iOS 또는 Android 디바이스로 전송됩니다.  
 
 **배달**:  
-- Intune에서 사용자의 회사 포털 앱에 메시지를 보내면, 포털 앱은 푸시 알림을 만듭니다. 사용자가 앱에 로그인하지 않아도 알림이 디바이스에서 푸시됩니다.  
-- Intune 및 회사 포털 앱에서는 사용자 지정 알림의 배달은 보장할 수 없습니다. 사용자 지정 알림은 몇 시간의 지연 후에 표시될 수 있으므로 긴급한 메시지에는 가능하면 사용하지 않아야 합니다.  
+- Intune에서 사용자의 회사 포털 앱 또는 Microsoft Intune 앱에 메시지를 보내면, 앱이 푸시 알림을 만듭니다. 사용자가 앱에 로그인하지 않아도 알림이 디바이스에서 푸시됩니다.  
+- Intune뿐 아니라 회사 포털 앱 및 Microsoft Intune 앱은 사용자 지정 알림의 전달을 보장할 수 없습니다. 사용자 지정 알림은 몇 시간의 지연 후에 표시될 수 있으므로 긴급한 메시지에는 가능하면 사용하지 않아야 합니다.  
 - Intune의 사용자 지정 알림 메시지는 디바이스에서 표준 푸시 알림으로 표시됩니다. 알림을 받을 때 iOS 디바이스에서 회사 포털 앱이 열리는 경우 알림은 푸시 알림이 아니고 앱에 표시됩니다.  
 - 사용자 지정 알림은 iOS 및 Android 디바이스 모두에서 디바이스 설정에 따라 잠금 화면에 표시될 수 있습니다.  
 - Android 디바이스에서는 다른 앱이 사용자 지정 알림 데이터에 액세스할 수도 있습니다. 따라서 중요한 통신에는 사용자 지정 알림을 사용하지 마세요.  
@@ -80,7 +80,7 @@ Intune은 사용자가 보낸 사용자 지정 알림을 추적하지 않으며 
 
 ## <a name="receive-a-custom-notification"></a>사용자 지정 알림 받기  
 
-디바이스에서 사용자에게 Intune에서 보낸 사용자 지정 알림 메시지가 회사 포털 앱의 표준 푸시 알림으로 표시됩니다. 이러한 알림은 사용자가 디바이스의 다른 앱에서 받는 푸시 알림과 비슷합니다.  
+디바이스에서 사용자에게 Intune에서 보낸 사용자 지정 알림 메시지가 회사 포털 앱 또는 Microsoft Intune 앱의 표준 푸시 알림으로 표시됩니다. 이러한 알림은 사용자가 디바이스의 다른 앱에서 받는 푸시 알림과 비슷합니다.  
 
 iOS 디바이스에서 알림을 받을 때 회사 포털 앱이 열리는 경우 알림은 푸시 알림이 되지 않고 포털 앱에 표시됩니다.  
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3bc5f8a3f0094c363a705b37b904435ef9e91781
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660937"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864484"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune에서 Intune 온-프레미스 Exchange Connector 설정
 이 문서의 정보는 Intune용 Exchange Active Sync 온-프레미스 커넥터를 설치하고 모니터링하는 데 도움이 됩니다.  Intune 온-프레미스 Exchange Connector를 [조건부 액세스 정책과 함께 사용하여 Exchange 온-프레미스 사서함에 대한 액세스를 허용 또는 차단](conditional-access-exchange-create.md)할 수 있습니다. 
@@ -124,6 +124,9 @@ Intune 온-프레미스 Exchange Connector를 설치하려면 다음 단계를 �
    자동 검색 서비스 및 Exchange 웹 서비스가 Exchange 클라이언트 액세스 서버에 구성되어 있는지 확인합니다. 자세한 내용은 [Client Access server](https://technet.microsoft.com/library/dd298114.aspx)(클라이언트 액세스 서버)를 참조하세요.
 
 6. Intune이 Exchange Server에 액세스할 수 있도록 **암호** 필드에 이 계정의 암호를 입력합니다.
+
+   > [!NOTE]
+   > 연결이 성공하려면 테넌트에 로그인하는 데 사용하는 계정이 최소한 Intune 서비스 관리자여야 합니다. 그렇지 않으면 다음 오류가 발생하여 연결에 실패합니다. “원격 서버에서 다음 오류를 반환했습니다. (400) 잘못된 요청입니다.”
 
 7. **연결**을 선택합니다.
 

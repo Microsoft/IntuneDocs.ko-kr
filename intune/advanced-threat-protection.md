@@ -1,26 +1,26 @@
 ---
 title: Microsoft Intune에서 Microsoft Defender ATP 사용 - Azure | Microsoft Docs
-description: Intune에서 Microsoft Defender ATP(Advanced Threat Protection)를 사용하고 ATP를 사용하여 Intune 디바이스를 설정, 구성 및 온보딩한 다음, Intune 디바이스 규정 준수 및 조건부 액세스 정책과 함께 디바이스 ATP 위험 평가를 사용하여 네트워크 리소스를 보호합니다.
+description: Intune에서 Microsoft Defender ATP(Advanced Threat Protection)를 사용하여 Intune 디바이스 설정, 구성, 온보딩 등을 마친 다음, Intune 디바이스 규정 준수 및 조건부 액세스 정책과 함께 디바이스 ATP 위험 평가를 사용하여 네트워크 리소스를 보호합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 0d9fe180e81c9e661954dd0986f05ac3b5e749ed
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960660"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739183"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용  
 
@@ -101,6 +101,7 @@ Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defe
 
 구성 패키지를 사용하여 디바이스를 등록하고 나면 다시 등록할 필요가 없습니다. [그룹 정책 또는 SCCM(System Center Configuration Manager)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)을 사용하여 디바이스를 등록할 수도 있습니다.
 
+
 ### <a name="create-the-device-configuration-profile"></a>디바이스 구성 프로필 만들기
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
@@ -122,6 +123,7 @@ Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defe
 
 7. **확인**, **만들기**를 차례로 선택하여 변경 내용을 저장하면 프로필이 생성됩니다.
 8. Microsoft Defender ATP를 사용하여 평가하려는 디바이스에 [디바이스 구성 프로필을 할당](device-profile-assign.md)합니다.  
+
 
 ## <a name="create-and-assign-the-compliance-policy"></a>규정 준수 정책 만들기 및 할당  
 
@@ -179,6 +181,9 @@ Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defe
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 준수** > **정책 준수**를 선택합니다.
 3. 목록에서 Microsoft Defender ATP 정책을 찾아 어떤 디바이스가 규격 또는 비규격인지 확인합니다.
+
+## <a name="view-onboarding-status"></a>온보딩 상태 보기
+모든 Intune 관리 Windows 10 디바이스의 온보딩 상태를 보려면 **디바이스 준수** > **Microsoft Defender ATP**로 이동할 수 있습니다. 또한 이 페이지에서 Microsoft Defender ATP에 추가 장치를 온보딩하기 위한 디바이스 구성 프로필 만들기를 시작할 수도 있습니다.
 
 ## <a name="next-steps"></a>다음 단계  
 

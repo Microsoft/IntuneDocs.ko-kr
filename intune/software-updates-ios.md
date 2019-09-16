@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373427"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739195"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune에서 iOS 소프트웨어 업데이트 정책 추가
 
@@ -53,14 +53,8 @@ ms.locfileid: "66373427"
 
     - **예약된 업데이트를 변경하지 않고 최종 사용자에게 소프트웨어 업데이트의 지연 표시(일)** : 
 
-      **이 설정은 [디바이스 제한](device-restrictions-ios.md#general)으로 이동되었으며 포털의 이 위치에서 제거될 예정입니다**. 잠시 동안 기존 정책을 여기서 변경할 수 있습니다. 약 한 달 후 이 설정은 기존 정책에서 제거됩니다.
-
-      영향을 제한하기 위해 다음 항목을 수행하는 것이 좋습니다.
-        - 포털의 이 위치에서 기존 정책을 제거합니다.
-        - 새 [디바이스 제한 정책](device-restrictions-ios.md#general)을 만듭니다.
-        - 원래 정책과 동일한 사용자를 대상으로 합니다.
-
-      충돌이 있는 경우 두 값이 *동일하지 않은 이상* 이 설정은 아무 것도 하지 않습니다. 충돌을 방지하려면 포털의 이 위치에서 기존 정책을 변경 또는 제거해야 합니다.
+      **감독된 iOS 디바이스에서 특정 시간 동안 소프트웨어 업데이트 표시를 연기하려면 [디바이스 제한](device-restrictions-ios.md#general)에서 해당 설정을 구성하세요.
+     
       > [! 중요]  
       > *시작 시간* 및 *종료 시간*이 오전 12시로 설정된 정책은 24시간이 아닌 0시간으로 평가됩니다. 이로 인한 제한은 없습니다.  
 

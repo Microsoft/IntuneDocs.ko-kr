@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a66fde0f501bf2e1e7f6b0cc98eddd871717b2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050377"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739222"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Intune에서 데이터 스토리지 및 처리
 
@@ -41,7 +41,7 @@ Intune에서 [데이터를 수집](privacy-data-collect.md)한 후에는 아래�
 
 Microsoft는 전 세계 여러 지역에서 Intune 서비스를 제공하고 운영합니다. Intune은 관리자가 선택한 고객 데이터 스토리지 위치를 우선합니다.
 
-자세한 내용은 [Microsoft Intune 고객 데이터 위치](For more information, see Microsoft Intune Where is my customer data?)를 참조하세요.
+자세한 내용은 [데이터 위치](https://www.microsoft.com/trust-center/privacy/data-location)를 참조하세요.
 
 ### <a name="personal-data-retention"></a>개인 데이터 보존
 
