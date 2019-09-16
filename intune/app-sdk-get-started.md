@@ -107,7 +107,7 @@ Microsoft Intune은 앱의 사용 통계에 대한 데이터를 수집합니다.
 
 * **Android용 Intune 앱 SDK**: Android용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 애플리케이션은 원격 분석 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 PII(개인 식별 정보)를 수집하지 않습니다. 
 
-  * 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 
+  * 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용량 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 
 
 ## <a name="line-of-business-app-version-numbers"></a>기간 업무 앱 버전 번호
 

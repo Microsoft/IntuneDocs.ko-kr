@@ -1798,7 +1798,7 @@ Intune SDK는 Android API에서 제공되는 계약을 유지하지만, 정책 �
 Android 용 Intune 앱 SDK는 앱에서 데이터 수집을 제어하지 않습니다. 기본적으로 회사 포털 애플리케이션은 시스템 생성 데이터를 기록합니다. 이 데이터는 Microsoft Intune로 전송됩니다. Microsoft 정책에 따라 Microsoft는 개인 데이터를 수집하지 않습니다.
 
 > [!NOTE]
-> 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 
+> 최종 사용자가 이 데이터를 보내지 않도록 선택하는 경우 회사 포털 앱의 [설정]에서 원격 분석을 해제해야 합니다. 자세한 내용은 [Microsoft 사용량 현황 데이터 수집 해제](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)를 참조하세요. 
 
 ## <a name="recommended-android-best-practices"></a>권장되는 Android 모범 사례
 
