@@ -1,6 +1,6 @@
 # Intune 사용자 도움말
 
-## [관리되는 디바이스를 사용하여 작업 완료](use-managed-devices-to-get-work-done.md)
+## [디바이스 등록이란?](use-managed-devices-to-get-work-done.md)
 
 ## [회사에서 Intune을 사용하여 볼 수 있는 정보는 무엇인가요?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
@@ -20,7 +20,7 @@
 ### [디바이스를 초기화하게 되면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 ### [잠금 시간 설정](set-the-amount-of-time-before-your-device-is-locked-android.md)
 ### [VPN 설치](install-your-companys-virtual-private-network-VPN-android.md)
-### [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-android.md)
+### [Microsoft 사용량 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-android.md)
 ### [Intune에서 디바이스 등록을 취소하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 #### [디바이스 등록 취소](unenroll-your-device-from-intune-android.md)
 #### [사용 약관을 거부한 경우 디바이스 등록 취소](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
@@ -78,7 +78,7 @@
 #### [Microsoft에 오류 전송](send-logs-to-microsoft-ios.md)
 #### [기존 회사 메일 계정 찾음](existing-company-email-account-found.md)
 #### [디바이스 제한에 도달함](device-limit-wpj-ios.md)
-#### [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-ios.md)
+#### [Microsoft 사용량 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-ios.md)
 #### [오류가 표시됨](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [디바이스 식별](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [일련 번호 찾기](how-do-i-find-the-serial-number-on-my-device-ios.md)
@@ -108,7 +108,7 @@
 #### [macOS 디바이스 업데이트](you-need-to-update-your-macos-device.md)
 #### [회사 포털 오류 제출](send-errors-macos.md)
 #### [다른 사용자에게 할당된 디바이스](unable-to-get-macOS-device-managed.md)
-#### [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-macos.md)
+#### [Microsoft 사용량 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-macos.md)
 #### [이 디바이스는 약간 다릅니다.](device-little-different-jamf.md)
 #### [일련 번호 찾기](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [디바이스 식별](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
@@ -128,7 +128,7 @@
 ### [Intune에서 디바이스 제거](unenroll-your-device-from-intune-windows.md)
 ### [디바이스 등록을 취소하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [디바이스를 초기화하면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
-### [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-windows.md)
+### [Microsoft 사용량 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-windows.md)
 ### [수동으로 디바이스 동기화](sync-your-device-manually-windows.md)
 ### [도움말 및 지원 보기](help-support-windows-cpapp.md)
 
