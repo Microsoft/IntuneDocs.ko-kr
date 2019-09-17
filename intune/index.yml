@@ -9,12 +9,12 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 08/30/2019
-  ms.openlocfilehash: 4d33b03ecf4a83b4fb962dc3672cb4ca45bfeedb
-  ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
+  ms.openlocfilehash: c671531c878863dc56d00cc0c8cdeb5768517c43
+  ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 08/31/2019
-  ms.locfileid: "70206437"
+  ms.lasthandoff: 09/13/2019
+  ms.locfileid: "70986390"
 highlightedContent:
   items:
   - title: Intune이란?
@@ -140,9 +140,20 @@ conceptualContent:
     - url: app-configuration-policies-overview.md
       itemType: overview
       text: 앱 구성 정책
+  - title: 앱 보호 정책
+    links:
     - url: app-protection-policy.md
       itemType: concept
-      text: 앱 보호 정책
+      text: 앱 보호 정책 개요
+    - url: app-protection-policies.md
+      itemType: overview
+      text: 앱 보호 정책 만들기
+    - url: app-protection-policies-validate.md
+      itemType: how-to-guide
+      text: 앱 보호 정책 유효성 검사
+    - url: app-protection-policies-monitor.md
+      itemType: how-to-guide
+      text: 앱 보호 정책 모니터링
   - title: 도움말 및 지원
     links:
     - url: get-support.md
