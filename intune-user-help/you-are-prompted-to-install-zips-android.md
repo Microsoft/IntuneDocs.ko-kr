@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 09/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f83504e5d651d7f981fa605fc9157287bdb09a4
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: b12cb83485c25181bdcc015857c68da795676219
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529279"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864429"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Android 디바이스에 Zimperium zIPS 설치
 
@@ -31,7 +31,7 @@ ms.locfileid: "67529279"
 
 ## <a name="what-you-need-to-do"></a>수행해야 할 작업
 
-1. 화면의 맨 위에서 아래로 끌어서 알림 표시줄을 연 후 **필수 애플리케이션 - Play 스토어에서 Skycure 설치**를 탭합니다. 또한 __준수 세부 정보__에서 이 회사 포털 앱 내부를 찾을 수도 있습니다.
+1. 화면의 맨 위에서 아래로 끌어서 알림 표시줄을 연 후 **필수 애플리케이션 - Play 스토어에서 Zimperium 설치**를 탭합니다. 또한 __준수 세부 정보__에서 이 회사 포털 앱 내부를 찾을 수도 있습니다.
 
 2. Play 스토어에서 Zimperium zIPS 설치 페이지로 이동합니다. Zimperium zIPS를 설치하고 **동의**를 눌러 Zimperium zIPS가 디바이스에 액세스할 수 있도록 합니다.
 

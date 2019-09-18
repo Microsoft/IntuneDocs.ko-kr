@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
+ms.sourcegitcommit: e8d788d033be4320cd72c98c892b383e1bb77e18
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402756"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70912823"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune에서 사용할 수 있는 기본 제공 iOS 앱의 번들 ID
 
@@ -30,11 +30,12 @@ iOS 디바이스에서 기능을 구성할 때 iOS 디바이스에서 기본 제
 
 | 번들 ID                   | 앱 이름     | 게시자 |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | 앱 스토어    | Apple     |
+| com. apple 스토어             | 앱 스토어    | Apple     |
 | com.apple.calculator        | 계산기   | Apple     |
 | com.apple.mobilecal         | 일정     | Apple     |
 | com.apple.camera            | 카메라       | Apple     |
 | com.apple.mobiletimer       | 시계        | Apple     |
+| com. 사과 클립             | Clips        | Apple     |
 | com.apple.compass           | 나침반      | Apple     |
 | com.apple.MobileAddressBook | 연락처     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -74,7 +75,7 @@ iOS 디바이스에서 기능을 구성할 때 iOS 디바이스에서 기본 제
 | com.apple.VoiceMemos        | 음성 메모   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | 보기        | Apple     |
-| com.apple.weather           | 날씨      | Apple     |
+| com.apple.weather           | 날씨      | Apple     |      
 
 ## <a name="next-steps"></a>다음 단계
 
