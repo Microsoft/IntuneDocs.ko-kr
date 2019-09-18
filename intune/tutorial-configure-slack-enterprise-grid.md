@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97bc1658dcd432bdd5e31c7100022959e96c3039
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 83b10bdfacbcf76b9f75b90d99e094b6854d525e
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842072"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061653"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>자습서: EMM 및 앱 구성에 Intune을 사용하도록 Slack 구성
 
@@ -77,7 +77,6 @@ EMM iOS용 Slack을 위한 앱 구성 정책을 추가합니다. 관리 디바�
 5. **연결된 앱**을 선택합니다.
 6. 검색 창에 “EMM용 Slack”을 입력하고 앱을 선택합니다.
 7. **확인**을 클릭한 다음 **구성 설정**을 선택합니다. 
-    - 구성 키와 키의 값에 대한 자세한 내용은 [Slack의 AppConfig 웹 페이지](https://www.appconfig.org/company/slack/)의 "기술" 탭에 있는 문서를 참조하세요.
 8. **확인**을 선택하고 **추가**를 선택합니다.
 9. 검색 창에 “Slack 앱 구성 정책 테스트”를 입력하고 방금 추가한 정책을 선택합니다.
 10. 관리에서 **할당**을 선택합니다.

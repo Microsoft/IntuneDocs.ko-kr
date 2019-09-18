@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a22fef1c04ae52a8a4cc65eaadc1ef6fcd524c19
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043589"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071543"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Intune 사용자에게 역할 할당
 
@@ -41,7 +41,7 @@ Intune 사용자에게 [기본 제공](role-based-access-control.md#built-in-rol
 
 4. **Intune 역할 - 모든 역할** 블레이드에서 할당할 기본 제공 역할을 선택합니다.
 
-5. <역할 이름> - **개요** 블레이드에서 **관리** > **할당**을 선택합니다.
+5. <역할 이름> - **개요** 블레이드에서 **관리** > **할당**을 선택합니다. 
 
 6. 사용자 지정 역할 블레이드에서 **할당**을 선택합니다.
 

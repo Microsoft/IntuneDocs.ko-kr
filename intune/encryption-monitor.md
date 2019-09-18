@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027381"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905054"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Intune에서 디바이스 암호화 모니터링   
 
@@ -201,8 +201,7 @@ Intune은 개인 복구 키를 회전 및 복구하는 여러 옵션을 지원�
   1. 디바이스에서 *‘Intune 회사 포털’* 웹 사이트에 로그인합니다.  
   2. 포털에서 **디바이스**로 이동하고 대해 FileVault로 암호화된 macOS 디바이스를 선택합니다.  
   3. **복구 키 가져오기**를 선택합니다. 현재 복구 키가 표시됩니다.  
-  
-     iPhone에서는 *‘3개’* 의 점을 선택해야만 *‘복구 키 가져오기’* 옵션이 표시됩니다.  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 복구 키  
 

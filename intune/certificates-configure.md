@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9554893a8317b014007bd7089ed62f222975c8
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: 76e6ba8cb1ed6804bfb50f69a00817a50fe1912e
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214310"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012448"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune의 인증에 인증서 사용  
 
@@ -98,5 +98,5 @@ SCEP, PCKS 및 PKCS 가져온 인증서 프로필의 경우처럼 지원하려�
 신뢰할 수 있는 인증서 프로필을 만들고 할당한 후에는 사용하려는 각 플랫폼용으로 SCEP, PKCS 또는 PKCS 가져온 인증서 프로필을 만듭니다. 계속하려면 다음 문서를 참조하세요.  
 - [Intune을 사용하여 SCEP 인증서를 지원하도록 인프라 구성](certificates-scep-configure.md)  
 - [Intune을 사용하여 PKCS 인증서 구성 및 관리](certficates-pfx-configure.md)  
-- [PKCS 가져온 인증서 프로필 만들기](certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [PKCS 가져온 인증서 프로필 만들기](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
 

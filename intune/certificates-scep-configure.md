@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76cd6084815a9f63e653a63d36ba8265a7a0fbd6
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 909dba16e04b11989caa79112c5a89fbb7c52114
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122541"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061388"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Intune을 사용하여 SCEP를 지원하도록 인프라 구성  
   
@@ -355,7 +355,7 @@ Microsoft Intune Certificate Connector는 NDES 서비스를 실행하는 서버�
 8. 명령 프롬프트를 열고, **services.msc**를 입력한 다음, **Enter**를 입력합니다. **Intune 커넥터 서비스** > **다시 시작**을 마우스 오른쪽 단추로 클릭합니다.
 
 
-서비스가 실행되고 있는지 확인하려면 브라우저를 열고 다음 URL을 입력합니다. 그러면 **403** 오류가 반환됩니다. `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`  
+서비스가 실행되고 있는지 확인하려면 브라우저를 열고 다음 URL을 입력합니다. 그러면 **403** 오류가 반환됩니다. `https://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`  
 
 > [!NOTE]  
 > Intune Certificate Connector는 TLS 1.2를 지원합니다. 커넥터를 호스트하는 서버에서 TLS 1.2를 지원하는 경우 TLS 1.2가 사용됩니다. 서버가 TLS 1.2를 지원하지 않으면 TLS 1.1이 사용됩니다. 현재 TLS 1.1은 디바이스와 서버 간 인증에 사용됩니다.
