@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160540"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061585"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
 앱 구성 정책을 사용하면 앱을 실행하기 전에 최종 사용자에게 할당된 정책에 구성 설정을 할당할 수 있으므로 앱 설정 문제를 방지할 수 있습니다. 그러면 최종 사용자 디바이스에서 앱이 구성될 때 설정이 자동으로 제공되므로 최종 사용자가 작업을 수행할 필요가 없습니다. 구성 설정은 각 앱에 대해 고유합니다. 
 
-앱 구성 정책을 만들고 사용하여 iOS 또는 Android 앱용 구성 설정을 제공할 수 있습니다. 이러한 구성 설정을 사용하면 앱 구성 및 관리의 [업계 표준 방법](https://www.appconfig.org/)을 사용하여 앱을 사용자 지정할 수 있습니다. 구성 정책 설정은 앱에서 이러한 설정을 확인할 때(일반적으로는 앱을 처음 실행할 때) 사용됩니다. 
+앱 구성 정책을 만들고 사용하여 iOS 또는 Android 앱용 구성 설정을 제공할 수 있습니다. 이러한 구성 설정을 사용하면 앱 구성 및 관리를 이용해 앱을 사용자 지정할 수 있습니다. 구성 정책 설정은 앱에서 이러한 설정을 확인할 때(일반적으로는 앱을 처음 실행할 때) 사용됩니다. 
 
 예를 들어 앱 구성 설정에서 다음 세부 정보 중 하나를 지정해야 할 수도 있습니다.
 
@@ -60,7 +60,7 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 ## <a name="apps-that-support-app-configuration"></a>앱 구성을 지원하는 앱
 
 ### <a name="managed-devices"></a>관리되는 디바이스
-앱 구성 정책을 지원하는 앱에서 해당 정책을 사용할 수 있습니다. Intune에서 앱 구성을 지원하려면 [AppConfig 커뮤니티](https://www.appconfig.org/members)에 정의된 대로 앱 구성 사용을 지원하도록 앱을 작성해야 합니다. 자세한 내용은 앱 공급업체에 문의하세요.
+앱 구성 정책을 지원하는 앱에서 해당 정책을 사용할 수 있습니다. Intune에서 앱 구성을 지원하려면 OS에 정의된 대로 앱 구성 사용을 지원하도록 앱을 작성해야 합니다. 지원되는 앱 구성 키에 대한 자세한 내용은 앱 공급업체에 문의하세요.
 
 ### <a name="managed-apps"></a>관리되는 앱
 [Intune 앱 SDK](app-sdk.md)를 앱에 연결하거나 앱이 개발된 후 [Intune 앱 래핑 도구](apps-prepare-mobile-application-management.md)로 앱을 래핑하여 기간 업무 앱을 준비할 수 있습니다. Intune 앱 SDK는 앱 개발자에게 요구되는 코드 변경의 양을 최소화하기 위해 노력합니다. 자세한 내용은 [Intune 앱 SDK 개요](app-sdk.md)를 참조하세요. Intune 앱 SDK와 intune 앱 래핑 도구를 비교하려면 [앱 보호 정책에 대해 LOB(기간 업무) 앱 준비](apps-prepare-mobile-application-management.md#feature-comparison)를 참조하세요.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
-ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
+ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70376918"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071062"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 템플릿을 사용하여 Microsoft Intune에서 그룹 정책 설정 구성
 
@@ -36,7 +36,7 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-- 이러한 설정 중 일부는 Windows 10 버전 1703(RS2)부터 사용할 수 있습니다. 최상의 환경을 위해 Windows 10 Enterprise 버전 1903(19H1) 이상을 사용하는 것이 좋습니다.
+- 이러한 설정 중 일부는 Windows 10 버전 1703(RS2)부터 사용할 수 있습니다. Windows 버전에 따라 지원되지 않는 설정도 있습니다. 최상의 환경을 위해 Windows 10 Enterprise 버전 1903(19H1) 이상을 사용하는 것이 좋습니다.
 
 - Windows 설정에서는 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)를 사용합니다. CSP는 Home, Professional, Enterprise 등과 같은 다양한 Windows 버전에서 작동합니다. CSP가 특정 버전에서 작동하는지 확인하려면 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)로 이동합니다.
 

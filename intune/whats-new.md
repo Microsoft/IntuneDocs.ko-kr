@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842148"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061675"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -54,6 +54,21 @@ ms.locfileid: "70842148"
 
 <!-- ########################## -->
 
+## <a name="week-of-september-16-2019"></a>2019년 9월 16일이 있는 주
+
+### <a name="app-management"></a>앱 관리
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>웹 앱에 대한 macOS 지원 <!-- 3174427 -->
+웹에서 URL에 바로 가기를 추가할 수 있는 웹 앱을 macOS 회사 포털을 이용해 독에 설치할 수 있습니다. 최종 사용자는 macos 회사 포털에서 웹 앱의 앱 세부정보 페이지로 이동하면 **설치** 작업을 이용할 수 있습니다. **웹 링크** 앱 유형에 대한 자세한 내용은 [Microsoft Intune에 앱 추가](apps-add.md)와 [Microsoft Intune에 웹앱 추가](web-app.md)를 참조하세요.
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>VPP 앱에 대한 macOS 지원 <!-- 3173501  -->
+Apple Business Manager로 구매한 macOS 앱은 이후 Apple VPP 토큰이 동기화되면 콘솔에 표시됩니다. Intune 콘솔을 이용해 그룹용 디바이스 및 사용자 기반 라이선스를 할당, 취소, 재할당할 수 있습니다. Microsoft Intune을 이용하면 회사에서 사용할 목적으로 구매한 VPP 앱을 다음 기능을 이용해 관리할 수 있습니다.
+- 앱 스토어에서 라이선스 정보 보고.
+- 사용한 라이선스 수 추적.
+- 소유한 양보다 많은 앱 복사본을 설치하지 않도록 도움.
+
+Intune 및 VPP에 대한 자세한 내용은 [Microsoft Intune을 사용하여 대량 구매 앱 및 전자책 관리](vpp-apps.md)를 참조하세요.
+
 ## <a name="week-of-september-9-2019"></a>2019년 9월 9일이 있는 주
 
 ### <a name="app-management"></a>앱 관리
@@ -64,6 +79,10 @@ Android용 Microsoft Intune 앱이 다음과 같은 향상된 기능으로 업�
 - 사용자의 프로필을 표시하는 추가 페이지를 추가했습니다.
 - 사용자를 위해 디바이스 설정 업데이트 필요를 알리는 등의 실행 가능한 알림의 표시를 앱에 추가했습니다.
 - iOS 및 Android용 회사 포털 앱에 최근 추가된 지원 기능에 따라 앱에 사용자 지정 푸시 알림의 표시를 추가했습니다. 자세한 내용은 [Intune에서 사용자 지정 알림 보내기](custom-notifications.md)를 참조하세요.
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>IOS 디바이스에서 회사 포털의 등록 프로세스 개인 정보 화면을 사용자 지정합니다 <!-- 4394993 -->
+Markdown을 이용하면 iOS 등록 과정에서 최종 사용자에게 표시되는 회사 포털의 개인 정보 화면을 사용자 지정할 수 있습니다. 특히 조직이 디바이스에서 볼 수 없거나 해선 안 되는 항목 목록을 사용자 지정할 수 있습니다. 자세한 내용은 [Intune 회사 포털 앱을 구성하는 방법](company-portal-app.md#privacy-statement-customization)을 참조하세요.
+
 
 ## <a name="week-of-september-2-2019"></a>2019년 9월 2일이 있는 주
 
@@ -228,7 +247,7 @@ Android 디바이스 관리자 등록 옵션이 Android 등록 페이지(**Intun
 설정 도우미 사용자 지정에 대한 자세한 내용은 [Create an Apple enrollment profile for iOS](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)(iOS용 Apple 등록 프로필 만들기) 및 [Create an Apple enrollment profile for macOS](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile)(macOS용 Apple 등록 프로필 만들기)를 참조하세요.
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Autopilot 디바이스 CSV 업로드 프로세스에 사용자 열 추가 <!-- 3823054 -->
-이제 Autopilot 디바이스에 대한 CSV 업로드에 사용자 열을 추가할 수 있습니다. 이렇게 하면 CSV를 가져올 때 사용자를 대량으로 할당할 수 있습니다. CSV의 새로운 행 형식은 일련 번호, windows 제품 ID, 하드웨어 해시, 선택적 그룹 태그, 선택적 할당된 사용자와 같습니다. 자세한 내용은 [Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록](enrollment-autopilot.md)을 참조하세요.
+이제 Autopilot 디바이스에 대한 CSV 업로드에 사용자 열을 추가할 수 있습니다. 이렇게 하면 CSV를 가져올 때 사용자를 대량으로 할당할 수 있습니다. 자세한 내용은 [Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록](enrollment-autopilot.md)을 참조하세요.
 
 
 ### <a name="device-management"></a>디바이스 관리

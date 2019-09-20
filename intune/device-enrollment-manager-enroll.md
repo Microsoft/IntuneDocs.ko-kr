@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: damionw
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd870a788ff5cac7e0aff47c5b8175c0bdfacff2
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: cbfe0e30794ddfe5b2f089d50456f9cbdd031e6d
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427286"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071379"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>디바이스 등록 관리자 계정을 사용하여 Intune에서 디바이스 등록
 
@@ -39,7 +39,7 @@ DEM 사용자 계정 및 DEM 사용자 계정을 사용하여 등록된 디바�
 - Apple VPP 디바이스 라이선스가 있는 경우 디바이스는 VPP 앱을 설치할 수 있습니다.
 - Windows 10 1803+를 제외하고 디바이스에 대한 조건부 액세스가 차단됨
 - DEM 계정으로 등록된 모든 디바이스는 Intune에서 관리할 수 있도록 적절한 라이선스가 부여되어야 합니다. 라이선스는 Intune 사용자 라이선스 또는 Intune 디바이스 라이선스일 수 있습니다.
-
+- DEM 계정을 사용하여 [Android 엔터프라이즈 작업 프로필 디바이스를 등록하는 경우](android-work-profile-enroll.md) 계정당 등록할 수 있는 디바이스 수는 최대 10개입니다.
 
 
 ## <a name="add-a-device-enrollment-manager"></a>디바이스 등록 관리자 추가

@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecfd482df452c52d81621cdc49c6ca78c4d4c1f6
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354541"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061714"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적으로 Intune 회사 포털 앱이 추가되고 웹 사이트가 개선됩니다. 이 문서에서는 Intune 관리자 또는 지원 담당자가 다음 작업을 수행하는 데 필요한 정보를 제공합니다.
@@ -33,6 +33,23 @@ Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적
 직원 또는 학생인 경우 회사 포털 도움말 설명서의 스크린샷과 링크를 꼭 확인하세요. 회사 포털 앱을 사용하는 방법에 대한 자세한 내용은 [회사 포털 사용자 도움말 설명서](https://docs.microsoft.com/intune-user-help/)를 참조하세요.  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+
+## <a name="week-of-september-9-2019"></a>2019년 9월 9일이 있는 주
+
+### <a name="updates-to-microsoft-intune-app----4997846---"></a>Microsoft Intune 앱 업데이트 <!-- 4997846 -->
+Android용 Microsoft Intune 앱이 다음과 같은 향상된 기능으로 업데이트되었습니다.
+- 가장 중요한 작업으로 이동할 수 있는 아래쪽 탐색 창을 포함하도록 레이아웃을 업데이트하고 개선했습니다.
+- 사용자의 프로필을 표시하는 추가 페이지를 추가했습니다.
+- 사용자를 위해 디바이스 설정 업데이트 필요를 알리는 등의 실행 가능한 알림의 표시를 앱에 추가했습니다.
+- iOS 및 Android용 회사 포털 앱에 최근 추가된 지원 기능에 따라 앱에 사용자 지정 푸시 알림의 표시를 추가했습니다. 자세한 내용은 [Intune에서 사용자 지정 알림 보내기](custom-notifications.md)를 참조하세요.
+
+    사용자 프로필 예제:<br>
+    <img src="./media/intune-app-android-device-profile.png" alt="Screenshot of Microsoft Intune app for Android - User Profile" width="300">   
+
+    알림 및 하단 탐색 예제:<br>
+    <img src="./media/intune-app-android-device-notify.png" alt="Screenshot of Microsoft Intune app for Android - Notification" width="300">   
+
 
 ## <a name="week-of-june-24-2019"></a>2019년 6월 24일 주  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230f226cba70a7fc61efd236cc0fde0ca6b7fa68
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: cbf2031a316b1f7c2e22d165363cca12cfd70291
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374954"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061571"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 PowerShell 스크립트 사용
 
@@ -181,7 +181,7 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
 - 로그에 오류가 있는지 검토합니다. 이 문서 내의 [Intune 관리 확장 로그](#intune-management-extension-logs)를 참조하세요.
 - 가능한 권한 문제의 경우 PowerShell 스크립트의 속성이 `Run this script using the logged on credentials`로 설정되었는지 확인합니다. 또한 로그인한 사용자에게 스크립트를 실행할 적절한 권한이 있는지 확인합니다.
 
-- 스크립팅 문제를 격리하려면 다음 단계를 수행합니다.
+- 스크립팅 문제를 격리하는 방법은 다음과 같습니다.
 
   - 디바이스에서 PowerShell 실행 구성을 검토합니다. 지침은 [PowerShell 실행 정책](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6)을 참조하세요.
   - Intune 관리 확장을 사용하여 샘플 스크립트를 실행합니다. 예를 들어 `C:\Scripts` 디렉터리를 만들고 모든 사용자에게 모든 권한을 제공합니다. 다음 스크립트를 실행합니다.
@@ -194,7 +194,31 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
 
   - Intune 없이 스크립트 실행을 테스트하려면 로컬로 [psexec 도구](https://docs.microsoft.com/sysinternals/downloads/psexec)를 사용하여 시스템 계정에서 스크립트를 실행합니다.
 
-    `psexec -i -s`
+    `psexec -i -s`  
+    
+  - 스크립트가 성공했다고 보고하지만 실제로는 실패했다면, 바이러스 백신 서비스가 AgentExecutor를 샌드박스 처리하고 있을지도 모릅니다. 다음 스크립트는 Intune에서 항상 실패를 보고합니다. 테스트를 위해 이 스트립트를 사용하세요.
+  
+    ```powershell
+    Write-Error -Message "Forced Fail" -Category OperationStopped
+    mkdir "c:\temp" 
+    echo "Forced Fail" | out-file c:\temp\Fail.txt
+    ```
+
+    스크립트에서 성공했다고 보고한다면 `AgentExecutor.log`를 참조해 오류 출력을 확인하세요. 스크립트가 실행된다면 길이는 2보다 커야 합니다.
+
+  - .error 및 .output 파일을 캡처하려면 다음 코드 조각이 스크립트를 AgentExecutor를 통해 PSx86(`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`)으로 실행해야 합니다. 이렇게 해야 로그가 유지되어 검토할 수 있게 됩니다. Intune 관리 확장은 스크립트가 실행되면 로그를 삭제한다는 점에 유의하세요.
+  
+    ```powershell
+    $scriptPath = read-host "Enter the path to the script file to execute"
+    $logFolder = read-host "Enter the path to a folder to output the logs to"
+    $outputPath = $logFolder+"\output.output"
+    $errorPath =  $logFolder+"\error.error"
+    $timeoutPath =  $logFolder+"\timeout.timeout"
+    $timeoutVal = 60000 
+    $PSFolder = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0"
+    $AgentExec = "C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe"
+    &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
+    ```
 
 ## <a name="next-steps"></a>다음 단계
 

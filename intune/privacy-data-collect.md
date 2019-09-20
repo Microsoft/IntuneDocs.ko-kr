@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 08066c0742ad4ad02f907e55cc84eb65068c9b99
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884770"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986417"
 ---
 # <a name="data-collection-in-intune"></a>Intune에서 데이터 수집
 
@@ -33,6 +33,9 @@ ms.locfileid: "67884770"
 - 진단, 성능 및 사용 정보.
 
 이러한 소스에서 Intune은 [식별된](#identified-data) 데이터, [가명 처리된](#pseudonymized-data) 데이터 및 [집계된](#aggregated-data) 세 가지 범주로 분류되는 정보를 수집합니다.
+
+> [!NOTE]
+> Intune 서비스가 수집하는 모든 데이터는 어떤 이유로든 제3자에게 판매하지 않습니다.
 
 ## <a name="identified-data"></a>식별된 데이터
 
