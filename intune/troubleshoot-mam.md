@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cf8f7753a92ad45a68f976359560ef6da2d1cec
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: a5e1ea8a0f8ea054b2eb75e1c98e60f184b0a45c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648716"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166751"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>모바일 애플리케이션 관리 문제 해결
 
@@ -37,7 +37,7 @@ IT 관리자가 Intune 앱 보호 정책을 사용할 때 발생할 수 있는 �
 | -- | -- | -- |
 | 정책이 비즈니스용 Skype에 적용되지 않음 | Azure Portal에서 만든 디바이스 등록을 포함하지 않는 앱 보호 정책이 iOS 및 Android 디바이스의 비즈니스용 Skype 앱에 적용되지 않습니다. | 최신 인증을 사용하도록 비즈니스용 Skype를 설정해야 합니다.  [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)(최신 인증을 사용하도록 테넌트 설정)의 지침을 따라 Skype에 최신 인증을 설정합니다. |
 | Office 앱 정책이 적용되지 않음 | 모든 사용자에 대해 [지원되는 Office 앱](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)에 앱 보호 정책이 적용되지 않습니다. | 사용자가 Intune용 라이선스를 취득했으며, Office 앱이 배포된 앱 보호 정책의 대상인지 확인합니다. 새로 배포된 앱 보호 정책이 적용되려면 최대 8시간이 걸릴 수 있습니다. |
-| 관리자가 Azure Portal에서 앱 보호 정책을 구성할 수 없음 | IT 관리자가 Azure Portal에서 앱 보호 정책을 구성할 수 없습니다. | Azure Portal에 액세스할 수 있는 사용자 역할은 다음과 같습니다. <ul><li>전역 관리자 - [Microsoft 365 관리 센터](https://admin.microsoft.com/)에서 설정할 수 있습니다.</li><li>소유자 - [Azure Portal](https://portal.azure.com/)에서 설정할 수 있습니다.</li><li>참가자 - [Azure Portal](https://portal.azure.com/)에서 설정할 수 있습니다.</li></ul> 이러한 역할 설정에 대한 도움말은 [Microsoft Intune에서 RBAC(역할 기반 관리 제어)](role-based-access-control.md)를 참조하세요.|
+| 관리자가 Azure Portal에서 앱 보호 정책을 구성할 수 없음 | IT 관리자가 Azure Portal에서 앱 보호 정책을 구성할 수 없습니다. | Azure Portal에 액세스할 수 있는 사용자 역할은 다음과 같습니다. <ul><li>[Microsoft 365 관리 센터](https://admin.microsoft.com/)에서 설정할 수 있는 전역 관리자</li><li>소유자 - [Azure Portal](https://portal.azure.com/)에서 설정할 수 있습니다.</li><li>참가자 - [Azure Portal](https://portal.azure.com/)에서 설정할 수 있습니다.</li></ul> 이러한 역할 설정에 대한 도움말은 [Microsoft Intune에서 RBAC(역할 기반 관리 제어)](role-based-access-control.md)를 참조하세요.|
 |사용자 계정이 앱 보호 정책 보고서에서 누락됨 | 앱 보호 정책을 최근 배포한 사용자 계정이 관리 콘솔 보고서에 표시되지 않습니다. | 사용자가 앱 보호 정책 대상으로 새로 지정된 경우 대상 사용자로 보고서에 표시되는 데 최대 24시간이 걸릴 수 있습니다. |
 | 정책 변경이 적용되지 않음 | 앱 보호 정책에 대한 변경 및 업데이트가 적용되는 데 최대 8시간이 걸릴 수 있습니다. | 해당하는 경우 서비스와 강제로 동기화하도록 최종 사용자가 앱에서 로그아웃했다가 다시 로그인하면 됩니다. |
 | 앱 보호 정책이 DEP에서 작동되지 않음 | 앱 보호 정책이 Apple DEP 디바이스에 적용되지 않습니다. | Apple DEP(디바이스 등록 프로그램)에서 사용자 선호도를 사용 중인지 확인합니다. 사용자 선호도는 DEP에 따라 사용자 인증이 필요한 모든 앱에 필수입니다. <br><br>iOS DEP 등록에 대한 자세한 내용은 [Apple 디바이스 등록 프로그램을 통해 자동으로 iOS 디바이스 등록](device-enrollment-program-enroll-ios.md)을 참조하세요.|
@@ -90,7 +90,7 @@ Android | **회사 포털 필요**: 이 앱에서 회사 또는 학교 계정을
 **규정을 준수하지 않는 디바이스**: 탈옥한 디바이스를 사용 중이므로 이 앱을 사용할 수 없습니다. 도움이 필요하면 IT 관리자에게 문의하세요. | Intune에서 사용자가 탈옥한 디바이스를 사용 중임을 검색했습니다. | 디바이스를 기본 초기 설정으로 다시 설정합니다. Apple 지원 사이트의 [지침](https://support.apple.com/HT201274)을 따르세요.
 **인터넷 연결 필요**: 이 앱을 사용할 수 있는지 확인하려면 인터넷에 연결되어 있어야 합니다. | 디바이스가 인터넷에 연결되어 있지 않습니다. | Wi-Fi 또는 데이터 네트워크에 디바이스를 연결합니다.
 **알 수 없는 오류**: 앱을 다시 시작해 보세요. 문제가 계속될 경우 IT 관리자에게 문의하세요. | 알 수 없는 오류가 발생했습니다. | 잠시 기다린 후 다시 시도하세요. 오류가 계속되면 Intune [지원 티켓](get-support.md#create-an-online-support-ticket)을 작성합니다.
-**조직 데이터에 액세스**: 지정한 회사 또는 학교 계정은 이 앱에 액세스할 수 없습니다. 다른 계정으로 로그인해야 할 수 있습니다. 도움이 필요하면 IT 관리자에게 문의하세요. | Intune에서 사용자가 디바이스용으로 MAM에 등록된 계정이 아닌 두 번째 회사 또는 학교 계정으로 로그인을 시도했음을 발견했습니다. 디바이스당 한 번에 하나의 회사 또는 학교 계정만 MAM을 통해 관리할 수 있습니다. | 사용자가 로그인 화면에 사용자 이름이 미리 입력되어 있는 계정으로 로그인하도록 합니다. [Intune에 대 한 사용자 UPN 설정을 구성](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)해야 할 수 있습니다. <br> <br> 아니면 새 회사 또는 학교 계정으로 로그인하고 MAM에 등록된 기존 계정은 제거하도록 합니다.
+**조직 데이터에 액세스**: 지정한 회사 또는 학교 계정은 이 앱에 액세스할 수 없습니다. 다른 계정으로 로그인해야 할 수 있습니다. 도움이 필요하면 IT 관리자에게 문의하세요. | Intune에서 사용자가 디바이스용으로 MAM에 등록된 계정이 아닌 두 번째 회사 또는 학교 계정으로 로그인을 시도했음을 발견했습니다. 디바이스당 한 번에 하나의 회사 또는 학교 계정만 MAM을 통해 관리할 수 있습니다. | 사용자가 로그인 화면에 사용자 이름이 미리 입력되어 있는 계정으로 로그인하도록 합니다. [Intune에 대 한 사용자 UPN 설정을 구성](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)해야 할 수 있습니다. <br> <br> 아니면 새 회사 또는 학교 계정으로 로그인하고 MAM에 등록된 기존 계정은 제거하도록 합니다.
 **연결 문제**: 예기치 않 은 연결 문제가 발생했습니다. 연결을 확인하고 다시 시도하세요.  |  예기치 않은 오류가 발생했습니다. | 잠시 기다린 후 다시 시도하세요. 오류가 계속되면 Intune [지원 티켓](get-support.md#create-an-online-support-ticket)을 작성합니다.
 **경고**: 이 앱은 더 이상 사용할 수 없습니다. 자세한 내용은 IT 관리자에게 문의하십시오. | 앱의 인증서 유효성을 검사하지 못했습니다. | 앱이 최신 버전인지 확인합니다. <br><br> 앱을 다시 설치합니다.
 **오류**: 이 앱은 문제가 발생하여 닫아야 합니다. 이 오류가 계속되면 IT 관리자에게 문의하세요. | Apple iOS 키 집합에서 MAM 앱 PIN을 읽지 못했습니다. | 디바이스를 다시 시작합니다. 앱이 최신 버전인지 확인합니다. <br><br> 앱을 다시 설치합니다.

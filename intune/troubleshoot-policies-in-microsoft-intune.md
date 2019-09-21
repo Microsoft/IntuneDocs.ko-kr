@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298392"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071716"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune의 문제 해결 정책 및 프로필
 
@@ -31,7 +31,7 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 이 문서에는 몇 가지 일반적인 문제 해결 기술이 나열되고 발생할 수 있는 몇 가지 문제가 설명되어 있습니다.
 
 ## <a name="check-tenant-status"></a>테 넌 트 상태 확인
-확인 합니다 [테 넌 트 상태](tenant-status.md) 구독이 활성 인지 확인 합니다. 또한 활성 인시던트가 및 정책이 나 프로필 배포에 영향을 줄 수 있는 권고에 대 한 세부 정보를 볼 수 있습니다.
+[테 넌 트 상태](tenant-status.md) 를 확인 하 고 구독이 활성 상태 인지 확인 합니다. 정책 또는 프로필 배포에 영향을 줄 수 있는 활성 인시던트 및 권고에 대 한 세부 정보를 볼 수도 있습니다.
 
 ## <a name="use-built-in-troubleshooting"></a>기본 제공 문제 해결 기능 사용
 
@@ -118,10 +118,10 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
 ## <a name="policy-troubleshooting-resources"></a>정책 문제 해결 리소스
 
-- [IOS 또는 Android 정책을 장치에 적용 되지 문제 해결](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (다른 Microsoft 사이트 열림)
-- [Windows 10 Intune 정책 실패 문제 해결](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (열립니다 블로그)
-- [Windows 10 용 CSP 사용자 지정 설정 문제를 해결](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (다른 Microsoft 사이트 열림)
-- [Windows 10 그룹 정책 및 Intune MDM 정책](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (다른 Microsoft 사이트 열림)
+- [장치에 적용 되지 않는 iOS 또는 Android 정책 문제 해결](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (다른 Microsoft 사이트 열기)
+- [Windows 10 Intune 정책 오류 문제 해결](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (블로그 열기)
+- [Windows 10 용 CSP 사용자 지정 설정 문제 해결](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (다른 Microsoft 사이트 열기)
+- [Windows 10 그룹 정책 Vs INTUNE MDM 정책](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (다른 Microsoft 사이트 열기)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>경고: Exchange에 액세스 규칙 저장 실패
 
@@ -135,7 +135,7 @@ Exchange 온-프레미스 정책 작업 영역(관리 콘솔)에서 정책을 �
 
 Windows Phone 디바이스는 MDM 또는 EAS를 사용하여 보안 정책을 설정하면 이 정책의 보안이 저하되는 것을 허용하지 않습니다. 예를 들어 **암호의 최소 문자 수**를 8로 설정한 다음, 4로 줄이려고 하면, 더 제한적인 정책이 디바이스에 적용됩니다.
 
-Windows 10 장치 (배포를 중지) 정책 할당을 취소 하면 보안 정책을 제거할 수 없습니다. 정책이 할당 된 상태로 두고 기본 값으로 다시 보안 설정을 변경 해야 합니다.
+정책 할당을 취소 하면 Windows 10 장치에서 보안 정책을 제거할 수 없습니다 (배포 중지). 정책을 할당 된 상태로 두고 보안 설정을 다시 기본값으로 변경 해야 할 수 있습니다.
 
 디바이스 플랫폼에 따라서, 보안 수준이 낮은 값으로 정책을 변경하려면 보안 정책을 다시 설정해야 할 수 있습니다.
 

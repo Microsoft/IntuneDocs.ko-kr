@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,20 +16,21 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346e6219c10cc8b90d3bf83170adffa677c6c484
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dddcb16a0067ed6e278ff3f9032695e075a0fb6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849009"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163292"
 ---
 # <a name="set-or-change-your-passcode"></a>암호 설정 또는 변경
 
-iOS 디바이스가 회사 지원팀의 암호 정책을 준수하지 않는 경우 문제를 간략하게 기술하고 암호가 요구 사항을 충족하도록 하기 위해 수행해야 하는 사항을 설명하는 메시지가 표시됩니다.
+새 암호를 만들거나 조직의 요구 사항에 맞게 기존 암호를 변경 합니다. 암호를 사용 하면 권한이 없는 사용자가 장치를 잠금 해제 하 고 사용할 수 없습니다. 
 
-회사 지원팀은 암호 요구 사항을 두 개 이상 설정할 수 있습니다. 예를 들어 암호가 특정 문자 수여야 하며, 숫자와 문자의 혼합이어야 하는 등의 요구 사항을 설정할 수 있습니다. 두 개 이상의 요구 사항이 설정될 수 있으므로 아래 지침에서 암호를 설정하거나 변경하는 방법에 대해서만 설명합니다. 요구 사항의 가능한 모든 조합을 설명하지는 않습니다. 이러한 암호는 예를 들어 잠금 화면에서 디바이스에 액세스하는 데 사용됩니다.
+조직에서 암호 요구 사항을 두 개 이상 설정할 수 있습니다. 일반적인 암호 요구 사항 목록은 [등록 된 장치에 대 한 장치 암호 요구 사항](password-does-not-meet-it-administrator-requirements.md)을 참조 하세요.  
 
-암호 요구 사항을 충족하는 암호를 설정하는 데 문제가 있으면 회사 지원팀에 문의하여 도움을 받으세요.
+암호를 만들거나 변경 하는 데 문제가 있는 경우 IT 지원 담당자에 게 문의 하세요.  
+
 
 ## <a name="set-your-passcode"></a>암호 재설정
 

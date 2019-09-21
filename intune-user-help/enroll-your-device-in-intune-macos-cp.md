@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9047dd9bbc55162eae4693d3035cb05ff4becb91
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545721"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099856"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>회사 포털 앱을 사용하여 Intune에 macOS 디바이스 등록
 
@@ -46,7 +46,7 @@ Intune 회사 포털 앱으로 macOS 디바이스를 등록하여 조직의 이�
 등록에 대해 자세히 알아보려면 [회사 포털 앱을 설치하고 디바이스를 등록하면 어떤 일이 생기나요?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)를 참조하세요.  
 
 ## <a name="get-your-device-managed"></a>디바이스를 관리하도록 설정  
-다음 단계를 사용하여 OS X El Capitan 10.11 이상을 실행하는 macOS 디바이스를 등록합니다.   
+MacOS 10.12 이상을 실행 하는 macOS 장치를 등록 하려면 다음 단계를 사용 합니다.   
 
 
 1. 회사 포털 웹 사이트에 액세스하려면 __Safari__에서 새 창을 열고, https://portal.manage.microsoft.com 으로 이동합니다.  

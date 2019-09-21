@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 53a9c3e8b80f611bc9e293ba7e07c1aece0cfc58
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550195"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163030"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정
 
@@ -201,6 +201,9 @@ ms.locfileid: "69550195"
 - **사용자 제거**: **차단**을 선택하여 사용자가 사용자를 제거하지 못하도록 합니다. **구성되지 않음**을 사용하면 사용자가 디바이스에서 다른 사용자를 제거할 수 있습니다.
 - **계정 변경**: **차단**을 선택하여 사용자가 계정을 수정하지 못하도록 합니다. **구성되지 않음**을 사용하면 사용자가 디바이스에서 사용자 계정을 업데이트할 수 있습니다.
 
+  > [!NOTE]
+  > 이 설정은 장치 소유자 (완전히 관리 되는) 장치에서 적용 되지 않습니다. 이 설정을 구성 하면 설정이 무시 되 고 영향을 주지 않습니다.
+
 ### <a name="applications"></a>애플리케이션
 
 - **알 수 없는 소스에서 설치 허용**: **허용**을 선택하면 사용자가 **알 수 없는 소스**를 켤 수 있습니다. 이 설정을 통해 Google Play Store 이외의 소스를 포함한 알 수 없는 소스에서 앱을 설치할 수 있습니다. **구성되지 않음**을 선택하면 사용자가 **알 수 없는 소스**를 켤 수 없습니다.
@@ -270,6 +273,10 @@ ms.locfileid: "69550195"
 - **개인 프로필에서 회사 연락처 검색**: **차단**을 선택하면 사용자가 개인 프로필에서 앱의 회사 연락처를 검색할 수 없습니다. **필요하지 않음**을 사용하면 개인 프로필에서 회사 연락처를 검색할 수 있습니다.
 
 - **카메라**: **차단**을 선택하면 회사 프로필에서 디바이스의 카메라에 액세스할 수 없습니다. 개인용 카메라는 이 설정의 영향을 받지 않습니다. **필요하지 않음**을 사용하면 회사 프로필에서 카메라에 액세스할 수 있습니다.
+
+- **회사 프로필 앱에서 위젯 허용**: **사용을 사용** 하면 최종 사용자가 앱에서 노출 하는 위젯을 홈 화면에 배치할 수 있습니다. **구성되지 않음**(기본값)으로 설정하면 이 기능을 비활성화합니다.
+
+  예를 들어 Outlook은 사용자의 회사 프로필에 설치 됩니다. **사용**으로 설정 하면 사용자가 장치 홈 화면에 어 젠더 위젯을 배치할 수 있습니다.
 
 #### <a name="work-profile-password"></a>회사 프로필 암호
 

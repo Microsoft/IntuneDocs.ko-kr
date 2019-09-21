@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/02/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
-ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.openlocfilehash: 80b904893f118bac1f4d0d79da0cd10498b9f2ed
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70158029"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162860"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune에서 macOS 엔드포인트 보호 설정  
 
@@ -105,13 +105,6 @@ Apple 대해 filevault 켭니다 설정에 대 한 자세한 내용은 Apple dev
     - **비활성화** -로그 아웃 시 프롬프트를 사용 하지 않도록 설정 합니다.
 
     **기본값**: 구성되지 않음  
-
-     > [!IMPORTANT]  
-     > **로그아웃 시 프롬프트 사용 안 함** 설정이 *사용 안 함*으로 설정되는 알려진 문제가 있습니다. *사용 안 함*으로 설정하면 **바이패스 허용 횟수** 설정의 값이 지정되어야 하며 *구성되지 않음*으로 설정되어서는 안 됩니다. *구성하지 않음*으로 설정하면, 프로필이 디바이스에서 실패합니다. 이 시나리오에서는 디바이스가 추가 세부 정보 없이 **프로필 상태 요약**을 **오류**로 보고합니다.
-     > 
-     > **로그아웃 시 프롬프트 사용 안 함**이 *구성되지 않음*으로 설정되면, **바이패스 허용 횟수**가 *구성되지 않음*이나 값이 있을 수 있습니다.  
-     > 
-     > 이 문제는 향후 업데이트에서 해결될 예정입니다. 
 
   - **바이패스에 허용 되는 횟수**  
   사용자가 로그인 하는 데 대해 filevault 켭니다가 필요 하기 전에 사용자가 대해 filevault 켭니다를 사용 하도록 설정 하 라는 메시지를 무시할 수 있는 횟수를 설정 합니다.  

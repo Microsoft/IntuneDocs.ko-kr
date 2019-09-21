@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac74cc547d13e92b87a8e148845ff1bc7be8efe4
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046334"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166992"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure에서 Intune 기능은 어디에 있나요?
 Intune 기능을 Azure Portal로 이동하면서 일부 작업을 더 논리적으로 구성할 수 있게 되었습니다. 하지만 개선 작업을 진행할 때마다 항상 새 구성을 학습하는 비용이 발생하게 됩니다. 이 참조 가이드는 클래식 포털의 Intune에 완전히 익숙하고 Azure Portal의 Intune에서 작업을 수행하는 방법을 궁금해하는 사용자를 위한 것입니다. 찾고 있는 기능이 이 문서에서 다루어지지 않은 경우 Microsoft에서 문서를 업데이트할 수 있도록 문서 하단에 의견을 남겨주세요.
@@ -74,10 +74,10 @@ Azure Portal의 Intune은 [Azure AD(Active Directory)](https://docs.microsoft.co
 
 Azure Portal에서 조건부 액세스 정책을 보고 변경하려면 클래식 포털에서 이전 정책을 제거해야 합니다. 그런 다음, Azure Portal에서 다시 만듭니다. 조건부 액세스 정책을 마이그레이션하는 방법에 대한 자세한 내용은 [Azure Portal에서 클래식 정책 마이그레이션](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)을 참조하세요. 
 
-## <a name="where-did-my-compliance-policies-go"></a>준수 정책이 어디로 이동했나요?
+## <a name="where-did-my-compliance-policies-go"></a>준수 정책이 어디로 이동했습니까?
 테넌트가 Azure Portal로 마이그레이션된 후 테넌트의 준수 정책이 계속 적용됩니다. 그러나 Azure Portal에서는 Intune의 조건부 액세스 정책을 보고 수정할 수 없습니다.
 
-Azure Portal에서 준수 정책을 보고 변경하려면 클래식 포털에서 이전 정책을 제거해야 합니다. 그런 다음, Azure Portal에서 다시 만듭니다. 디바이스 준수 정책에 대한 자세한 내용은 [Intune에서 디바이스 준수 정책 시작](https://docs.microsoft.com/intune/device-compliance-get-started)을 참조하세요. 
+Azure Portal에서 준수 정책을 보고 변경하려면 클래식 포털에서 이전 정책을 제거해야 합니다. 그런 다음, Azure Portal에서 다시 만듭니다. 디바이스 준수 정책에 대한 자세한 내용은 [Intune에서 디바이스 준수 정책 시작](device-compliance-get-started.md)을 참조하세요. 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP는 어디에 있나요?
 클래식 포털에서는 Apple 장비 등록 프로그램과 통합되도록 Intune을 설정하고 Apple 서비스와의 동기화를 수동으로 요청할 수 있었습니다.

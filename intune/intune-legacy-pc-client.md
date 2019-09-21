@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: f3891ce150ea740baa3ba18591139c66d78d9d00
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756521"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166358"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure의 Intune 콘솔 및 레거시 Intune PC 클라이언트
 
@@ -31,7 +31,7 @@ Azure용 Intune을 사용하여 조직의 Windows 디바이스를 관리할 경�
 
 ## <a name="manage-windows-10-devices-by-using-mdm"></a>MDM을 사용하여 Windows 10 디바이스 관리
 
-Linux Intune PC 클라이언트를 사용하는 대신 [MDM(모바일 디바이스 관리)을 사용하여 Windows 10 디바이스를 관리](https://docs.microsoft.com/intune/device-restrictions-windows-10)하는 것이 좋습니다. MDM을 통해 Windows 10을 관리하는 기능은 Azure Portal의 Intune에서 사용할 수 있습니다. Windows 10 MDM은 레거시 Intune PC 클라이언트를 통해 사용할 수 없는 많은 새로운 관리 및 보안 기능을 제공합니다.
+Linux Intune PC 클라이언트를 사용하는 대신 [MDM(모바일 디바이스 관리)을 사용하여 Windows 10 디바이스를 관리](device-restrictions-windows-10.md)하는 것이 좋습니다. MDM을 통해 Windows 10을 관리하는 기능은 Azure Portal의 Intune에서 사용할 수 있습니다. Windows 10 MDM은 레거시 Intune PC 클라이언트를 통해 사용할 수 없는 많은 새로운 관리 및 보안 기능을 제공합니다.
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>레거시 PC 클라이언트 기능은 Silverlight 콘솔에서만 사용 가능합니다.
 
@@ -54,7 +54,7 @@ MDM을 사용하여 관리할 수 없는 Windows 7의 경우 Silverlight 콘솔�
 
 ## <a name="mdm-capabilities"></a>MDM 기능
 
-PC 클라이언트와 MDM 기능 간의 자세한 비교는 [Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교](pc-management-comparison.md)를 참조하세요. MDM 업데이트는 Win 32 앱에 대한 옵션을 평가하는 기능을 포함하여 새로운 관리 기능을 MDM에 등록된 Windows 10 디바이스로 계속 가져옵니다. 서비스에 추가된 최신 릴리스는 [새로운 기능](https://docs.microsoft.com/intune/whats-new)을 확인하세요.
+PC 클라이언트와 MDM 기능 간의 자세한 비교는 [Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교](pc-management-comparison.md)를 참조하세요. MDM 업데이트는 Win 32 앱에 대한 옵션을 평가하는 기능을 포함하여 새로운 관리 기능을 MDM에 등록된 Windows 10 디바이스로 계속 가져옵니다. 서비스에 추가된 최신 릴리스는 [새로운 기능](whats-new.md)을 확인하세요.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>PC 클라이언트에서 MDM으로 전환
 
@@ -62,9 +62,7 @@ Intune PC 클라이언트를 사용하여 Windows 10 디바이스를 관리하�
 
 1. Silverlight 콘솔에서 **선택적 초기화**를 수행하여 PC 클라이언트에서 디바이스를 등록 취소합니다.
   ![' 선택적으로 장치 초기화 ' 라디오 단추가 선택 된 경고 팝업](media/intune-legacy-pc-client/image02.png)
-2. [MDM(및/또는 Azure AD 조인)](https://docs.microsoft.com/intune/windows-enroll)을 사용하여 디바이스를 다시 등록합니다. 
+2. [MDM(및/또는 Azure AD 조인)](windows-enroll.md)을 사용하여 디바이스를 다시 등록합니다.
 
 ## <a name="next-steps"></a>다음 단계
-[Windows 디바이스 등록](https://docs.microsoft.com/intune/windows-enroll)
-
- 
+[Windows 디바이스 등록](windows-enroll.md)

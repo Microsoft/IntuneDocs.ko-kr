@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6b07c77b0d92ceb7bdc960d8c2fd754c277499
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 91b7fc7414c3a6d6517cd4b704cb5e99ddcf96d0
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713243"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167176"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 테스트 가이드
 
@@ -30,20 +30,20 @@ Android용 Microsoft Intune 앱 SDK 테스트 가이드는 Intune 관리 Android
 ## <a name="prerequisite-test-accounts"></a>필수 테스트 계정
 미리 생성된 데이터를 사용하거나 사용하지 않고 새 계정을 만들 수 있습니다. 새 계정을 만들려면 다음 단계를 수행합니다.
 1. [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) 사이트로 이동합니다. 
-2. MDM(모바일 디바이스 관리)을 사용할 수 있도록 [Intune을 설정](https://docs.microsoft.com/intune/setup-steps)합니다.
-3. [사용자를 만듭니다](https://docs.microsoft.com/intune/users-add).
-4. [그룹을 만듭니다](https://docs.microsoft.com/intune/groups-add).
-5. 테스트에 적합한 [라이선스를 할당](https://docs.microsoft.com/intune/licenses-assign)합니다.
+2. MDM(모바일 디바이스 관리)을 사용할 수 있도록 [Intune을 설정](setup-steps.md)합니다.
+3. [사용자를 만듭니다](users-add.md).
+4. [그룹을 만듭니다](groups-add.md).
+5. 테스트에 적합한 [라이선스를 할당](licenses-assign.md)합니다.
 
 
 ## <a name="azure-portal-policy-configuration"></a>Azure Portal 정책 구성
-[Azure Portal의 Intune 블레이드](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)에서 [앱 보호 정책을 만들고 할당](https://docs.microsoft.com/intune/app-protection-policies)합니다. [앱 구성 정책](https://docs.microsoft.com/intune/app-configuration-policies-overview)을 생성하고 Intune 블레이드에 할당할 수도 있습니다.
+[Azure Portal의 Intune 블레이드](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)에서 [앱 보호 정책을 만들고 할당](app-protection-policies.md)합니다. [앱 구성 정책](app-configuration-policies-overview.md)을 생성하고 Intune 블레이드에 할당할 수도 있습니다.
 
 > [!NOTE]
 > 앱이 Azure Portal에 나열되지 않으면 **더 많은 앱** 옵션을 선택하고 텍스트 상자에 패키지 이름을 제공하여 정책의 대상으로 지정할 수 있습니다.
 
 > [!IMPORTANT]
-> 앱 구성 정책을 적용하려면, 등록하는 사용자가 [Intune 앱 보호 정책](https://docs.microsoft.com/intune/app-protection-policy)의 대상이 되어야 합니다.
+> 앱 구성 정책을 적용하려면, 등록하는 사용자가 [Intune 앱 보호 정책](app-protection-policy.md)의 대상이 되어야 합니다.
 
 ## <a name="test-cases"></a>테스트 사례
 
@@ -103,7 +103,7 @@ Android용 Microsoft Intune 앱 SDK 테스트 가이드는 Intune 관리 Android
 ### <a name="unenrollment"></a>등록 취소
 회사 이메일 및 문서를 포함하는 관리형 앱을 원격으로 지울 수 있고, 개인 데이터가 다음과 같이 관리지지 않으면 암호 해독됩니다.
 
-1. Azure Portal에서 [초기화 명령을 실행](https://docs.microsoft.com/intune/apps-selective-wipe)합니다.
+1. Azure Portal에서 [초기화 명령을 실행](apps-selective-wipe.md)합니다.
 2. 앱이 초기화 처리기에 대해 등록되지 않은 경우 다음 조건을 확인합니다.
     - 앱의 전체 초기화가 발생합니다.
 3. 앱이 `WIPE_USER_DATA` 또는 `WIPE_USER_AUXILARY_DATA`에 대해 등록된 경우 다음 조건을 확인합니다.
@@ -123,7 +123,7 @@ Android용 Microsoft Intune 앱 SDK 테스트 가이드는 Intune 관리 Android
 ### <a name="app-configuration-optional"></a>앱 구성(선택 사항)
 관리형 앱의 동작은 다음과 같이 구성할 수 있습니다.
 
-1. 앱 구성 설정이 앱에 사용되는 경우 관리자가 설정할 수 있는 모든 값이 앱에서 제대로 처리되는지 테스트해야 합니다. [앱 구성 정책](https://docs.microsoft.com/intune/app-configuration-policies-overview)은 Intune을 사용하여 만들고 할당할 수 있습니다.
+1. 앱 구성 설정이 앱에 사용되는 경우 관리자가 설정할 수 있는 모든 값이 앱에서 제대로 처리되는지 테스트해야 합니다. [앱 구성 정책](app-configuration-policies-overview.md)은 Intune을 사용하여 만들고 할당할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -18,25 +18,26 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9c25166ed9b004cc4e43e777008e33e88983912
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2ced8f1ec37f652b7e283328141bc591b5961587
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843496"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099829"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>Intune 회사 포털에서 iOS 디바이스 사용
 이 문서에서는 iOS용 회사 포털에 특정된 작업 및 정보를 나열합니다. iOS 디바이스의 문제를 해결하고 관리하는 데 사용합니다. 자세한 세부 정보, 단계 및 스크린샷을 보려면 링크를 클릭합니다.
 
 ## <a name="supported-versions"></a>지원되는 버전
 
-iOS용 회사 포털은 현재 iOS 10.0 이상을 지원합니다.
+iOS용 회사 포털은 현재 iOS 10.0 이상을 지원합니다.  
+
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune에 등록하고 회사 포털 설치
 
 - [Intune 회사 포털 앱 설치 및 로그인](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Intune에서 iOS 디바이스 등록](enroll-your-device-in-intune-ios.md)
-- [Intune에서 회사 포털 앱을 설치하고 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Intune에서 회사 포털 앱을 설치하고 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)  
 
 ## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>디바이스가 Intune에 등록되어 있는 경우 수행할 수 있는 작업
 
@@ -44,7 +45,7 @@ iOS용 회사 포털은 현재 iOS 10.0 이상을 지원합니다.
 - [암호 설정 또는 변경](set-or-change-your-passcode-ios.md)
   <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [분실하거나 도난당한 디바이스 초기화(지우기)](reset-erase-your-device-cpwebsite.md)
-- [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-ios.md)
+- [Microsoft 사용량 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-ios.md)
 - [Intune에서 디바이스 등록 취소](unenroll-your-device-from-intune-ios.md)
 - [Intune에서 디바이스 등록을 취소하면 어떻게 되나요?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 - [회사 포털을 사용하여 디바이스를 재설정하면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)

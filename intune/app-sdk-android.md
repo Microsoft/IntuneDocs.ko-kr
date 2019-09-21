@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 8d6f0182fed362cba1e4c383ac6b4e083b6baa8e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960544"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167168"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -707,7 +707,7 @@ ADAL 메타데이터가 매니페스트에 있으면 **안 됩니다**.
 
 다음과 같이 앱을 Azure AD에 등록하고 앱 보호 정책 서비스에 대한 액세스 권한을 앱에 제공해야 합니다.
 * Azure AD에 애플리케이션을 등록하는 방법에 대한 정보는 [여기](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)를 참조하세요.
-* APP(앱 보호 정책) 서비스에 대한 Android 앱 권한을 부여하는 단계를 따라야 합니다. 앱에 Intune 앱 보호 서비스에 대한 액세스 권한 부여(선택 사항)에서 [Intune SDK 시작 가이드](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)의 지침을 따릅니다. 
+* APP(앱 보호 정책) 서비스에 대한 Android 앱 권한을 부여하는 단계를 따라야 합니다. 앱에 Intune 앱 보호 서비스에 대한 액세스 권한 부여(선택 사항)에서 [Intune SDK 시작 가이드](app-sdk-get-started.md#next-steps-after-integration)의 지침을 따릅니다. 
 
 [조건부 액세스](#conditional-access)를 위한 요구 사항도 참조하세요.
 
@@ -723,18 +723,18 @@ ADAL 메타데이터가 매니페스트에 있으면 **안 됩니다**.
 
 ### <a name="conditional-access"></a>조건부 액세스
 
-조건부 액세스(CA)는 AAD 리소스에 대한 액세스 제어에 사용할 수 있는 Azure Active Directory [기능](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)입니다. [Intune 관리자는](https://docs.microsoft.com/intune/conditional-access) Intune에서 관리하는 디바이스 또는 앱으로부터의 리소스 액세스만 허용하는 CA 규칙을 정의할 수 있습니다. 앱이 적절한 때 리소스에 액세스할 수 있게 하려면 아래 단계를 따라야 합니다. 앱이 AAD 액세스 토큰을 획득하지 않아도 되거나, CA로 보호할 수 없는 리소스에만 액세스하는 경우 이 단계를 생략할 수 있습니다.
+조건부 액세스(CA)는 AAD 리소스에 대한 액세스 제어에 사용할 수 있는 Azure Active Directory [기능](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)입니다. [Intune 관리자는](conditional-access.md) Intune에서 관리하는 디바이스 또는 앱으로부터의 리소스 액세스만 허용하는 CA 규칙을 정의할 수 있습니다. 앱이 적절한 때 리소스에 액세스할 수 있게 하려면 아래 단계를 따라야 합니다. 앱이 AAD 액세스 토큰을 획득하지 않아도 되거나, CA로 보호할 수 없는 리소스에만 액세스하는 경우 이 단계를 생략할 수 있습니다.
 
 1. [ADAL 통합 지침](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)을 따릅니다. 
    특히 11단계에서 브로커 사용을 참조하세요.
 2. [Azure Active Directory 테넌트에 애플리케이션 등록](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
    리디렉션 URI는 위의 ADAL 통합 지침에서 찾을 수 있습니다.
 3. 위의 [공통 ADAL 구성](#common-adal-configurations), 항목 2에 따라 매니페스트 메타데이터 매개 변수를 설정합니다.
-4. [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)에서 [디바이스 기반 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)를 사용하도록 설정하고 확인하여 모든 항목이 제대로 구성되었는지 테스트
+4. [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)에서 [디바이스 기반 CA](conditional-access-intune-common-ways-use.md)를 사용하도록 설정하고 확인하여 모든 항목이 제대로 구성되었는지 테스트
     - 앱에 로그인하면 Intune Company Portal 설치 및 등록을 위한 프롬프트 표시
     - 등록 후 앱 로그인이 완료됩니다.
-5. 앱이 Intune APP SDK 통합을 탑재한 후에는 msintuneappsdk@microsoft.com에 문의하여 [앱 기반 조건부 액세스](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) 승인 앱 목록에 추가되게 합니다.
-6. 앱이 승인 목록에 추가되면 [앱 기반 CA를 구성하고](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) 앱 로그인이 제대로 완료되는지 확인하여 유효성을 검사합니다.
+5. 앱이 Intune APP SDK 통합을 탑재한 후에는 msintuneappsdk@microsoft.com에 문의하여 [앱 기반 조건부 액세스](conditional-access-intune-common-ways-use.md#app-based-conditional-access) 승인 앱 목록에 추가되게 합니다.
+6. 앱이 승인 목록에 추가되면 [앱 기반 CA를 구성하고](app-based-conditional-access-intune-create.md) 앱 로그인이 제대로 완료되는지 확인하여 유효성을 검사합니다.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>디바이스 등록이 없는 앱 보호 정책
 
@@ -1639,7 +1639,7 @@ public final class MAMDataProtectionManager {
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android 애플리케이션에 대해 MAM 대상 구성 사용(선택 사항)
-[MAM-WE](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) 및 [Android 작업 프로필 앱](https://docs.microsoft.com/intune/app-configuration-policies-use-android)에 대한 Intune 콘솔에서 애플리케이션별 키-값 쌍을 구성할 수 있습니다.
+[MAM-WE](app-configuration-policies-managed-app.md) 및 [Android 작업 프로필 앱](app-configuration-policies-use-android.md)에 대한 Intune 콘솔에서 애플리케이션별 키-값 쌍을 구성할 수 있습니다.
 이러한 키-값 쌍은 Intune에서 전혀 해석되지 않고 앱에 전달됩니다. 해당 구성을 수신하려고 하는 애플리케이션은 `MAMAppConfigManager` 및 `MAMAppConfig` 클래스를 사용하여 구성을 수신할 수 있습니다. 동일한 앱에서 여러 정책을 대상으로 지정하면 동일한 키에 사용할 수 있는 여러 개의 충돌 값이 발생할 수 있습니다.
 
 > [!NOTE] 
@@ -1673,7 +1673,7 @@ LOGGER.info("Found value " + valueToUse);
 ### <a name="further-reading"></a>추가 참고 자료
 Graph API의 기능에 대한 자세한 내용은 [Graph API 참조](https://developer.microsoft.com/graph/docs/concepts/overview)를 참조하세요. <br>
 
-Android에서 MAM 대상 앱 구성 정책을 만드는 방법에 대한 자세한 내용은 [Android for Work용 Microsoft Intune 앱 구성 정책을 사용하는 방법](https://docs.microsoft.com/intune/app-configuration-policies-use-android)에서 MAM 대상 앱 구성 섹션을 참조하세요.
+Android에서 MAM 대상 앱 구성 정책을 만드는 방법에 대한 자세한 내용은 [Android for Work용 Microsoft Intune 앱 구성 정책을 사용하는 방법](app-configuration-policies-use-android.md)에서 MAM 대상 앱 구성 섹션을 참조하세요.
 
 ## <a name="style-customization-optional"></a>스타일 사용자 지정(선택사항)
 

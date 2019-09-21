@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/24/2019
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,21 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: f207f1f94d34e6aa1768bb5ae0f5179710839c71
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402658"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099860"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>회사 리소스에 대한 iOS 디바이스 액세스 설정  
 
 Intune 회사 포털 앱으로 iOS 디바이스를 등록하여 조직의 이메일, 파일 및 앱에 대한 보안 액세스 권한을 얻습니다.
 
 디바이스가 등록되면 *관리*됩니다. 조직은 Intune과 같은 MDM(모바일 디바이스 관리) 공급자를 통해 디바이스에 정책과 앱을 할당할 수 있습니다.  
+
+> [!NOTE]
+> Intune 서비스가 수집하는 모든 데이터는 어떤 이유로든 제3자에게 판매하지 않습니다.  
 
 디바이스에서 회사 또는 학교 정보에 대한 액세스를 유지 관리하려면 조직의 기본 설정과 일치하도록 디바이스를 구성해야 합니다. 이 문서에서는 회사 포털을 사용하여 디바이스를 등록하고 조직의 설정 요구 사항을 유지 관리하는 방법을 설명합니다.  
 </br>

@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c592b558ace0a2a39059de9f64531f1e078c539d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847763"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166785"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>관리에 조직 제공 iOS 디바이스 등록
 
@@ -34,15 +34,16 @@ Intune에서 새 iOS 디바이스를 관리하는 방법을 알아봅니다.
 설정을 시작하려면 디바이스의 전원을 켜고 회사 또는 학교 자격 증명으로 로그인합니다. 이 문서의 나머지 부분에서는 설정 도우미를 통해 볼 수 있는 단계와 화면에 대해 설명합니다. 
 
 ## <a name="what-is-apple-dep"></a>Apple DEP란?
-조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 디바이스를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 디바이스를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 디바이스 관리 공급자 내에서 해당 디바이스를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 iOS 디바이스 등록](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)을 참조하세요.  
 
-## <a name="set-up-your-ios-device"></a>iOS 디바이스 설정  
+조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 디바이스를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 디바이스를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 디바이스 관리 공급자 내에서 해당 디바이스를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 iOS 디바이스 등록](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md)을 참조하세요.  
+
+## <a name="set-up-your-ios-device"></a>iOS 디바이스 설정
+
 조직 제공 디바이스가 아닌 자신의 iOS 디바이스를 사용하는 경우 [개인용 및 개인 소유 디바이스 가져오기](enroll-your-device-in-intune-ios.md)의 단계를 따릅니다.  
 
-1. iOS 디바이스를 켭니다. 
+1. iOS 디바이스를 켭니다.
 2. **언어**를 선택하고 디바이스를 Wi-Fi에 연결합니다.
-3. **iOS 디바이스 설정** 화면에서 다음과 같은 작업을 수행할지 여부를 선택합니다. 
- 
+3. **iOS 디바이스 설정** 화면에서 다음과 같은 작업을 수행할지 여부를 선택합니다.
    - **새 디바이스로 설정**
    - **iCloud 백업에서 복원**
    - **iTunes 백업에서 복원**
@@ -53,7 +54,7 @@ Intune에서 새 iOS 디바이스를 관리하는 방법을 알아봅니다.
  
    **구성은 다음에서 제공합니다.[사용자 회사의] iOS 팀 [주소]**
 
-5. Apple ID에 로그인합니다. 로그인을 통해 회사 포털 앱을 설치하고 관리 프로필을 설치하여 회사에 이메일 및 앱과 같은 해당 리소스에 대한 액세스 권한을 부여할 수 있습니다. 
+5. Apple ID에 로그인합니다. 로그인을 통해 회사 포털 앱을 설치하고 관리 프로필을 설치하여 회사에 이메일 및 앱과 같은 해당 리소스에 대한 액세스 권한을 부여할 수 있습니다.
 6. **사용 약관**에 동의하고 진단 정보를 Apple로 보낼 것인지 결정합니다.
 7. 등록이 완료되면 추가 작업을 수행하라는 메시지가 디바이스에 표시됩니다. 이러한 단계에서 이메일 액세스를 위한 암호를 입력하거나 암호를 설정합니다.
 

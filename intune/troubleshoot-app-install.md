@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa723942c9633a3851f75e3e08bf843cbb4bdf55
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 850c7a28c4df1638e9f635713695dcf2e914ffce
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842159"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166941"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>앱 설치 문제 해결
 
@@ -61,7 +61,7 @@ Intune은 특정 사용자 디바이스에 설치된 앱을 기반으로 앱 문
   3. [Azure Active Directory 사용자](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)로 이동 합니다.
   4. 영향을 받는 사용자를 선택 하 고 **장치**를 클릭 합니다.
   5. 사용자가 설정 된 제한을 초과 하는 경우 더 이상 필요 하지 않은 오래 된 레코드를 삭제 합니다.
-- IOS DEP 장치의 경우 사용자가 Intune 장치 개요 블레이드에서 사용자에 **의해 등록** 된 것으로 표시 되는지 확인 합니다. NA가 표시 되 면 Intune 회사 포털에 대 한 구성 정책을 배포 합니다. 자세한 내용은 [회사 포털 앱 구성을 참조하세요](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
+- IOS DEP 장치의 경우 사용자가 Intune 장치 개요 블레이드에서 사용자에 **의해 등록** 된 것으로 표시 되는지 확인 합니다. NA가 표시 되 면 Intune 회사 포털에 대 한 구성 정책을 배포 합니다. 자세한 내용은 [회사 포털 앱 구성을 참조하세요](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 앱 설치 문제 해결
 

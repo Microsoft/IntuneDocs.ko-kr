@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 8d76ff182ea4402b6a4cd3242b15288d8bea16b9
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545230"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166473"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source Code of Conduct(Microsoft 오픈 소스 규정)
 
@@ -23,7 +23,7 @@ Microsoft의 클라우드 및 엔터프라이즈 분야에 관한 기술 콘텐�
 * **브라우저 사용**: 두 가지 옵션이 있습니다. 
 
     **옵션 1: docs.microsoft.com에서 직접 편집**  
-    1. [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune) 등의 토픽으로 이동합니다. 
+    1. [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](troubleshoot-policies-in-microsoft-intune.md) 등의 토픽으로 이동합니다. 
     2. **편집**(오른쪽 위)을 선택합니다. 그러면 GitHub 리포지토리의 markdown 파일을 보여 줍니다.
     3. 연필 아이콘을 선택합니다. 연필 아이콘에 마우스를 올려 놓으면 **이 파일 편집** 도구 설명이 표시됩니다. 
     4. 변경한 다음, 변경 내용을 **커밋**합니다. 
