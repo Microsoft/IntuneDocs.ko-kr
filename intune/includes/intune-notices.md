@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775898"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166348"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Android 디바이스 관리자에 대한 지원 감소 
-Android 디바이스 관리자("레거시" Android 관리라고도 하며 Android 2.2를 통해 출시됨)는 Android 디바이스를 관리하는 방법입니다. 그러나 이제 향상된 관리 기능을 [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise)(Android 5.0을 통해 출시)에서 사용할 수 있습니다. 최신의 풍부하고 보다 안전한 디바이스 관리로 전환하기 위해 Google은 새로운 Android 릴리스에서 디바이스 관리자 지원을 줄이고 있습니다.
+Android 디바이스 관리자("레거시" Android 관리라고도 하며 Android 2.2를 통해 출시됨)는 Android 디바이스를 관리하는 방법입니다. 그러나 이제 향상된 관리 기능을 [Android Enterprise](../connect-intune-android-enterprise.md)(Android 5.0을 통해 출시)에서 사용할 수 있습니다. 최신의 풍부하고 보다 안전한 디바이스 관리로 전환하기 위해 Google은 새로운 Android 릴리스에서 디바이스 관리자 지원을 줄이고 있습니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 Google의 이러한 변경으로 인해 Intune 사용자는 다음과 같은 방식으로 영향을 받습니다. 
@@ -66,7 +66,7 @@ Azure Portal의 Intune에 업데이트된 UI 작성 및 편집 환경을 제공�
 #### <a name="additional-information"></a>추가 정보 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>변경 계획: 9월에 Intune이 iOS 11 이상 지원으로 전환 <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>변경 계획: 9월에 Intune이 iOS 11 이상 지원으로 전환 <!-- 4665324-->
 9월에 Apple이 iOS 13을 출시할 예정입니다. Intune 등록, 회사 포털 및 관리 브라우저는 iOS 13 릴리스 직후에 iOS 11 이상을 지원하도록 전환할 예정입니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
@@ -76,7 +76,7 @@ O365 모바일 앱이 iOS 11.0 이상에서 지원되는 경우 이는 사용자
 - iPhone 5c
 - iPad(4세대)
 
-7월부터 MDM에 iOS 10을 사용하는 디바이스가 등록되고 회사 포털에는 해당 OS 또는 디바이스를 업그레이드하라는 메시지가 표시됩니다. APP(애플리케이션 보호 정책)를 사용하는 경우 “최소 iOS 운영 체제 필수(경고만)” 액세스 설정도 설정할 수 있습니다.
+APP(애플리케이션 보호 정책)를 사용하는 경우 “최소 iOS 운영 체제 필수(경고만)” 액세스 설정도 설정할 수 있습니다.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
 디바이스 또는 사용자가 받을 수 있는 영향에 대해 알아보려면 Intune 보고를 확인하세요. **디바이스** > **모든 디바이스**로 이동하고 OS를 기준으로 필터링합니다. 추가 열에 추가하면 iOS 10을 실행하는 디바이스를 가진 조직의 사용자를 식별하는 데 도움이 됩니다. 최종 사용자는 9월 전에 지원되는 OS 버전으로 자신의 디바이스를 업그레이드하도록 요청합니다.
@@ -96,7 +96,7 @@ Microsoft, 타사 및 LOB(기간 업무) 앱을 확인합니다. Intune 앱으�
 SDK에 대한 이 변경 내용을 포함하려면 설명서 또는 개발자 지침도 업데이트해야 합니다.
 
 #### <a name="additional-information"></a>추가 정보
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[앱 보호 정책에 대해 LOB(기간 업무) 앱 준비](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>변경 계획: Intune의 새로운 Windows 업데이트 설정 <!-- 4464404 -->
 Intune 서비스의 8월 릴리스 또는 1908부터, “사용자가 다시 시작할 수 있도록 허용(개입형 다시 시작)” 대신, 구성할 수 있는 새로운 "최종 기한 설정"이 추가됩니다. 1909 또는 9월 업데이트의 UI에서는 개입형 다시 시작 설정을 사용하지 않도록 설정하고, 10월 말에 콘솔에서 완전히 제거할 예정입니다. 

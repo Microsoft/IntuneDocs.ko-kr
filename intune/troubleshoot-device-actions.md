@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ROBOTS: ''
-ms.reviewer: ''
+ms.reviewer: coferro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 159e236a079adcd55ba73e8fea6f786c09d08bbd
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 8324f53d787bd307ac3befd0ccee52cb8153b611
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68772362"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080024"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Intune에서 장치 작업 문제 해결
 
@@ -53,7 +53,7 @@ Microsoft Intune에는 관리 장치에 도움이 되는 많은 작업이 있습
 ## <a name="remove-devices-action"></a>장치 제거 작업
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>사용 중지/초기화를 시작한 사용자를 알려 어떻게 할까요??
-**Intune** > **장치** >   **장치 작업으로** 이동 하 > **시작** 열을 선택 합니다.
+**Intune** > **장치** **** **** 장치 작업으로 이동 하 > 시작 열을 선택 합니다. > 
 항목이 표시 되지 않으면 장치 사용자가 작업을 시작할 가능성이 가장 큽니다. 회사 포털 앱 또는 portal.manage.microsoft.com를 사용 했을 수 있습니다.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>사용 중지를 사용한 후에도 응용 프로그램이 제거 되지 않는 이유는 무엇 인가요?
@@ -68,7 +68,7 @@ Microsoft Intune에는 관리 장치에 도움이 되는 많은 작업이 있습
 장치를 사용 중지 하면 액세스 토큰이 해지 되지 않으므로 조건부 액세스 정책을 사용 하 여이 문제를 완화할 수 있습니다.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>사용 중지/초기화 작업을 실행 한 후 모니터링 하려면 어떻게 해야 하나요?
-**Intune** >   **장치장치** > **작업**으로 이동 합니다.
+**Intune** >  **** 장치장치 > **작업**으로 이동 합니다.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>때로는가 무기한 보류 중인 것으로 표시 되는 이유는 무엇 인가요?
 다시 설정이 시작 되기 전에 장치는 항상 Intune 서비스에 상태를 보고 하지 않습니다. 따라서 작업은 보류 중으로 표시 됩니다. 작업이 성공 했음을 확인 한 경우 서비스에서 장치를 삭제 합니다.

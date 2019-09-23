@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 4494d5f75336f7152668cfa1bb6fa1cd1a94305c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894302"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167868"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 Intune 보고서 만들기
 
@@ -122,4 +122,4 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로
 ## <a name="next-steps"></a>다음 단계
 
 - Power BI 설명서에서 Power BI Desktop의 [관계 만들기 및 관리](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)에 대해 자세히 알아봅니다.
-- [Intune 데이터 웨어하우스 모델](https://docs.microsoft.com/intune/reports-ref-data-model)을 참조합니다.
+- [Intune 데이터 웨어하우스 모델](reports-ref-data-model.md)을 참조합니다.
