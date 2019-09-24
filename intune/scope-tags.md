@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90865b8a8881ab85089fb379a8398e276574b771
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 2fb82b02057e1e028755da16a05755b0b8ddb93a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550031"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163794"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>분산형 IT에 RBAC(역할 기반 액세스 제어) 및 범위 태그 사용
 
@@ -38,7 +38,7 @@ ms.locfileid: "69550031"
 ## <a name="default-scope-tag"></a>기본 범위 태그
 기본 범위 태그는 범위 태그를 지 원하는 태그가 없는 모든 개체에 자동으로 추가 됩니다.
 
-기본 범위 태그 기능은 System Center Configuration Manager의 보안 범위 기능과 유사 합니다. 
+기본 범위 태그 기능은 System Center Configuration Manager의 보안 범위 기능과 유사합니다. 
 
 ## <a name="to-create-a-scope-tag"></a>범위 태그를 만들려면
 
@@ -101,7 +101,6 @@ ms.locfileid: "69550031"
     - 디바이스 범주
     - 등록 제한
     - Corp 장치 식별자
-    - 사용 약관
     - Autopilot 장치
     - 장치 준수 위치
     - Jamf 장치

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,25 +18,24 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546795"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163353"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>회사 포털 웹 사이트에서 디바이스 암호를 재설정하는 방법
 
-디바이스 PIN 또는 암호를 분실할 경우 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 사용하여 암호를 재설정할 수 있습니다.  
+디바이스 PIN 또는 암호를 분실할 경우 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 사용하여 암호를 재설정할 수 있습니다. 
 
-회사에 등록된 디바이스를 사용하는 경우 디바이스 암호를 재설정하는 옵션이 표시되지 않을 수 있습니다. 회사 지원팀에 암호를 재설정하도록 요청합니다.
+회사에 등록 된 장치에 대해 암호 재설정 옵션이 표시 되지 않을 수 있습니다. 이 경우 회사 지원팀에 문의 하 여 재설정 하도록 합니다.  
 
-   > [!NOTE]
-   > Android 7.0 이상에서는 디바이스의 암호를 재설정할 수 없습니다. 암호를 잊은 경우 이러한 디바이스를 공장 설정으로 초기화해야 합니다. 
+Android 7.0 이상을 실행 하는 장치에는 암호 재설정을 사용할 수 없습니다. 이러한 장치 중 하나에서 암호를 잊은 경우 공장 설정으로 다시 설정 해야 합니다.  
 
 ## <a name="reset-your-passcode"></a>암호 재설정
 
-1. [회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 열고 __메뉴__ 단추 > __장치__를 선택합니다.  
+1. [회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 열고 __메뉴__ 단추 &gt; __디바이스__를 선택합니다.  
 
 2. 암호 재설정에 필요한 디바이스를 선택합니다.  
 
@@ -46,9 +45,9 @@ ms.locfileid: "67546795"
 
    ![이름 바꾸기, 제거, 디바이스 재설정, 암호 재설정, 원격 잠금을 표시하는 맨 위의 링크 목록과 함께 회사 포털 웹 사이트에서 선택한 디바이스에 대한 디바이스 세부 정보 페이지 ](./media/rename-reset-device-1808.png)   
 
-    ![빨간색 화살표로 강조 표시된 자세히 아이콘의 확대된 보기](./media/rename-reset-device-step3-more-1808.png)  
+    ![빨간색 화살표로 강조 표시된 자세히 아이콘의 스크린샷](./media/rename-reset-device-step3-more-1808.png)  
 
-4. 메시지가 표시되면 **로그아웃**을 클릭합니다. 메시지가 다시 표시되면 다시 로그인합니다. 5분 내에 회사 포털 웹 사이트에 다시 로그인해야 합니다. 그렇지 않으면 회사 포털은 디바이스 암호를 재설정하지 않습니다.  
+4. 메시지가 표시되면 **로그아웃**을 클릭합니다. 메시지가 다시 표시되면 다시 로그인합니다. 5분 내에 회사 포털 웹 사이트에 다시 로그인하지 않으면 회사 포털은 디바이스 암호를 재설정하지 않습니다.  
 
    > [!NOTE]
    > ID를 확인하도록 다시 로그인해야 합니다. 디바이스 암호를 재설정하려는 악의적인 시도를 방지하기 위한 것입니다.
@@ -61,7 +60,7 @@ ms.locfileid: "67546795"
 
    ![두 번째 재설정 암호 메시지를 보여주는 예제 스크린샷 설명서에서 새 암호 설정에 대해 자세히 알아보는 링크 및 암호를 재설정하고 취소하는 개별 단추를 포함합니다.](./media/iwp-reset-passcode-popup2-1808.png) 
 
-6. iOS 디바이스에 대한 암호를 재설정하는 경우 해당 기존 암호는 제거됩니다. Windows 또는 Android 디바이스의 경우 디바이스를 잠금 해제하고 새 암호를 설정하는 임시 암호가 발급됩니다. 
+6. iOS 디바이스에 대한 암호를 재설정하는 경우 해당 기존 암호는 제거됩니다. Windows 또는 Android 디바이스의 경우 디바이스를 잠금 해제하고 새 암호를 설정할 수 있도록 임시 암호가 발급됩니다. 
 
    > [!NOTE]
    > 디바이스의 세부 정보 페이지에서 회사 포털의 Windows 및 Android 디바이스에 대한 임시 암호를 찾을 수 있습니다. 자세한 OS별 암호 설명은 섹션 [새 암호 설정](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode)을 참조하세요.  
@@ -76,7 +75,7 @@ ms.locfileid: "67546795"
 
 **Android**: 기존 암호를 제거하고 문자와 숫자로 구성된 임시 암호를 만듭니다.
 
-**iOS**: 기존 암호를 제거하고 임시 암호를 만들지 않습니다. Touch ID 지문 스캐너를 사용하여 디바이스를 열거나 구매하는 경우 다시 설정해야 합니다.  
+**iOS**: 기존 암호를 제거하고 임시 암호를 만들지 않습니다. Touch ID를 사용 하 여 장치를 열거나 구매를 수행 하는 경우 다시 설정 해야 합니다.  
 
 **Windows 10 Mobile**: 기존 암호를 제거하고 문자와 숫자로 구성된 임시 암호를 만듭니다. 설정한 경우 Windows Hello 얼굴 인식은 디바이스에서 계속 작동합니다.
 
