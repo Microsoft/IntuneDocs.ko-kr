@@ -9,12 +9,12 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 08/30/2019
-  ms.openlocfilehash: c671531c878863dc56d00cc0c8cdeb5768517c43
-  ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
+  ms.openlocfilehash: e094a13f20cb4d66e96c3c559d04a0c6a51e7a3a
+  ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/13/2019
-  ms.locfileid: "70986390"
+  ms.lasthandoff: 09/20/2019
+  ms.locfileid: "71166320"
 highlightedContent:
   items:
   - title: Intune이란?
@@ -182,7 +182,7 @@ conceptualContent:
     - url: reports-nav-create-intune-reports.md
       itemType: concept
       text: Microsoft Intune 데이터 웨어하우스 사용
-    - url: https://docs.microsoft.com/intune/app-sdk
+    - url: app-sdk.md
       itemType: overview
       text: Microsoft Intune 앱 SDK 개요
     - url: reports-nav-create-intune-reports.md
@@ -205,7 +205,7 @@ additionalContent:
       - text: US Government용 Enterprise Mobility + Security 서비스 설명
         url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
       - text: Intune US Government 엔드포인트
-        url: https://docs.microsoft.com/intune/intune-us-government-endpoints
+        url: intune-us-government-endpoints.md
       - text: Azure Government 사이트
         url: https://azure.microsoft.com/global-infrastructure/government/
     - title: Microsoft 365
@@ -243,3 +243,4 @@ additionalContent:
     - title: Intune 고객 성공
       summary: Intune 고객 성공 사이트에 대한 도움말 보기
       url: https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess
+  footer: 피드백이 있거나 문서에 참여하시겠습니까? [이 리소스를 참조하세요](use-docs.md)!

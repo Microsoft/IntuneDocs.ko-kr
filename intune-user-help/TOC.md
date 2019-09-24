@@ -60,7 +60,7 @@
 ##### [Zimperium zIPS 사용](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
 ## [iOS 디바이스 사용](using-your-iOS-device-with-intune.md)
-### [iOS 디바이스를 등록하면 어떻게 되나요?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [iOS 디바이스 재설정 효과](effects-of-device-reset-company-portal-ios.md)
 ### [회사 포털 설치 및 로그인](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS 디바이스 등록](enroll-your-device-in-intune-ios.md)
 ### [조직 제공 iOS 디바이스 등록](enroll-your-device-dep-ios.md)

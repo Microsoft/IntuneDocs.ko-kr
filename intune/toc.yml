@@ -321,30 +321,33 @@
           href: device-profiles.md
         - name: 프로필 만들기
           href: device-profile-create.md
-        - name: 관리 템플릿
+        - name: Windows 템플릿 관리
           href: administrative-templates-windows.md
-        - name: 디바이스 기능
+          displayName: 'group policy, gpo, admx'
+        - name: iOS 및 macOS 디바이스 기능
           href: device-features-configure.md
         - name: 디바이스 설정 및 기능 제한
           href: device-restrictions-configure.md
           displayName: Device restrictions
-        - name: 업데이트 제공
+        - name: 업데이트
           href: delivery-optimization-windows.md
-          displayName: delivery optimization; updates
+          displayName: delivery optimization; Windows update
         - name: 버전 및 S 모드 업그레이드
           href: edition-upgrade-configure-windows-10.md
-        - name: 이메일 구성
+        - name: 메일
           href: email-settings-configure.md
-        - name: 키오스크 모드 사용
+        - name: 키오스크 및 전용 디바이스
           href: kiosk-settings.md
-        - name: VPN 추가
+        - name: 다중 사용자 디바이스 공유
+          href: shared-user-device-settings.md
+        - name: VPN
           href: vpn-settings-configure.md
           items:
             - name: Android용 앱별 VPN
               href: android-pulse-secure-per-app-vpn.md
             - name: iOS용 앱별 VPN
               href: vpn-setting-configure-per-app.md
-        - name: 무선 Wi-Fi 네트워크 추가
+        - name: Wi-Fi 네트워크
           href: wi-fi-settings-configure.md
           displayName: wifi
           items:
@@ -354,8 +357,6 @@
           href: kernel-extensions-overview-macos.md
         - name: 교육 테스트 실행 앱
           href: education-settings-configure.md
-        - name: 다중 사용자 디바이스 공유
-          href: shared-user-device-settings.md
         - name: Zebra 디바이스의 이동성 확장
           href: android-zebra-mx-overview.md
           displayName: mx
@@ -594,6 +595,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB 앱
                   href: lob-apps-macos.md
+            - name: Android Enterprise 시스템 앱
+              href: apps-ae-system.md
             - name: Win32 앱 관리
               href: apps-win32-app-management.md
             - name: PowerShell 스크립트
@@ -623,12 +626,24 @@
               href: app-configuration-policies-use-ios.md
             - name: Android 관리되는 디바이스
               href: app-configuration-policies-use-android.md
-            - name: 관리형 홈 화면 구성
-              href: app-configuration-managed-home-screen-app.md
-            - name: 관리되는 앱
+            - name: 등록 없이 관리형 앱 구성
               href: app-configuration-policies-managed-app.md
             - name: iOS 앱 프로비전 프로필
               href: app-provisioning-profile-ios.md
+            - name: 특정 앱 구성
+              items:
+                - name: 관리형 홈 화면 구성
+                  href: app-configuration-managed-home-screen-app.md
+                - name: 회사 포털 구성
+                  href: company-portal-app.md
+                - name: Managed Browser 구성
+                  href: app-configuration-managed-browser.md
+                - name: Microsoft 시작 관리자 구성
+                  href: configure-microsoft-launcher.md
+                - name: Microsoft Edge 구성
+                  href: manage-microsoft-edge.md
+                - name: Outlook 구성
+                  href: app-configuration-policies-outlook.md
             - name: 대량 구매 앱 및 전자책
               items:
                 - name: VPP 앱 및 전자책 관리
@@ -640,14 +655,6 @@
                   href: windows-store-for-business.md
                 - name: iOS 전자책
                   href: vpp-ebooks-ios.md
-            - name: 회사 포털 구성
-              href: company-portal-app.md
-            - name: Managed Browser 구성
-              href: app-configuration-managed-browser.md
-            - name: Microsoft Edge 구성
-              href: manage-microsoft-edge.md
-            - name: Outlook 구성
-              href: app-configuration-policies-outlook.md
         - name: 앱 보호
           items:
             - name: 선택적으로 앱 지우기
