@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96fa9fac25f6de4180d3dcc9ee4022a2cc43fe
-ms.sourcegitcommit: 7484ef8006f6b81d8976c328dd704512a31872ec
-ms.translationtype: MTE75
+ms.openlocfilehash: 4bd5392abba3ea22127cb9bcbbb53ec4929f2d5e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70190240"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166338"
 ---
 # <a name="in-development-for-microsoft-intune---september-2019"></a>Microsoft Intune용으로 개발 중 - 2019년 9월
 
@@ -70,18 +70,18 @@ Intune을 통해 IT 관리자는 Intune 콘솔에 포함 된 iframe을 통해 �
 ### <a name="managed-google-play-iframe-support----2871756----"></a>관리 되는 Google Play iframe 지원 <!-- 2871756  -->
 Intune은 관리 되는 Google Play iframe을 통해 Intune 콘솔에서 직접 웹 링크를 추가 하 고 관리할 수 있도록 지원 합니다.  이를 통해 IT 관리자는 URL 및 아이콘 그래픽을 제출한 다음 일반 Android 앱과 마찬가지로 이러한 링크를 장치에 배포할 수 있습니다. 관리 되는 Google Play을 사용 하는 Android Enterprise 관리 시나리오는이 기능 (회사 프로필, 전용, 완전히 관리 및 등록 되지 않은 장치)을 활용할 수 있습니다.  Intune에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다. 그런 다음 **앱 유형** 목록에서 **관리 Google Play** 를 선택 합니다. 관리 되는 Google Play 앱에 대 한 자세한 내용은 [Intune을 사용 하 여 Android Enterprise 장치에 관리 되는 Google Play 앱 추가](apps-add-android-for-work.md)를 참조 하세요.
 
-### <a name="macos-support-for-vpp-apps----3173501----"></a>VPP 앱에 대 한 macOS 지원 <!-- 3173501  -->
-apple VPP 토큰을 Intune에서 동기화 할 때 Apple Business Manager를 사용 하 여 구매한 macOS 앱이 콘솔에 표시 됩니다. 콘솔을 사용 하 여 그룹에 대 한 장치 및 사용자 기반 라이선스를 할당, 해지 및 재할당할 수 있습니다. Microsoft Intune는 회사에서 사용 하기 위해 구매한 VPP 앱을 관리 하는 데 도움이 됩니다.
+### <a name="macos-support-for-vpp-apps----3173501----"></a>VPP 앱에 대한 macOS 지원 <!-- 3173501  -->
+Apple Business Manager로 구매한 macOS 앱은 Apple VPP 토큰이 Intune에 동기화되면 콘솔에 표시됩니다. 콘솔을 이용해 그룹용 디바이스 및 사용자 기반 라이선스를 할당, 취소, 재할당할 수 있습니다. Microsoft Intune을 이용하면 회사에서 사용할 목적으로 구매한 VPP 앱을 다음 기능을 이용해 관리할 수 있습니다.
 - 앱 스토어에서 라이선스 정보 보고.
 - 사용한 라이선스 수 추적.
 - 소유한 것보다 많은 앱 복사본을 설치하지 않도록 도움.
 Intune 및 VPP에 대한 자세한 내용은 [Microsoft Intune을 사용하여 대량 구매 앱 및 전자책 관리](vpp-apps.md)를 참조하세요.
 
-### <a name="macos-support-for-web-apps----3174427----"></a>웹 앱에 대 한 macOS 지원 <!-- 3174427  -->
-웹 앱을 설치할 수 있습니다 .이를 통해 웹의 URL에 대 한 바로 가기를 macOS 회사 포털를 사용 하는 도크에 추가할 수 있습니다. 최종 사용자는 macOS 회사 포털의 웹 앱에 대 한 앱 세부 정보 페이지에서 **설치** 작업에 액세스할 수 있습니다. **웹 링크** 앱 유형에 대 한 자세한 내용은 [Microsoft Intune에 앱 추가](apps-add.md)를 참조 하세요.
+### <a name="macos-support-for-web-apps----3174427----"></a>웹 앱에 대한 macOS 지원 <!-- 3174427  -->
+웹에서 URL에 바로 가기를 추가할 수 있는 웹앱을 macOS 회사 포털을 이용해 독에 설치할 수 있습니다. 최종 사용자는 macos 회사 포털에서 웹 앱의 앱 세부정보 페이지로 이동하면 **설치** 작업을 이용할 수 있습니다. **웹 링크** 앱 유형에 대 한 자세한 내용은 [Microsoft Intune에 앱 추가](apps-add.md)를 참조 하세요.
 
 #### <a name="assign-microsoft-edge-beta-for-macos----4678761----"></a>MacOS에 대 한 Microsoft Edge beta 할당 <!-- 4678761  -->
-MacOS 장치용 Intune에 최신 버전의 Microsoft Edge beta를 추가 하 고 할당할 수 있습니다. Intune에서 **클라이언트 앱** > **앱** > **앱** > **추가MicrosoftEdge-macos**를선택합니다. 그런 다음 원하는 그룹에 Microsoft Edge beta를 할당 합니다. MAU (microsoft 자동 업데이트)는 Microsoft Edge를 최신 상태로 유지 합니다. Microsoft Edge에 대 한 자세한 내용은 [Microsoft Intune를 사용 하 여 Microsoft edge를 사용 하 여 웹 액세스 관리](manage-microsoft-edge.md)를 참조 하세요.
+MacOS 장치용 Intune에 최신 버전의 Microsoft Edge beta를 추가 하 고 할당할 수 있습니다. Intune에서 **클라이언트 앱** > **앱** > **앱 추가** > **Microsoft Edge - macOS**를 선택합니다. 그런 다음 원하는 그룹에 Microsoft Edge beta를 할당 합니다. MAU (microsoft 자동 업데이트)는 Microsoft Edge를 최신 상태로 유지 합니다. Microsoft Edge에 대 한 자세한 내용은 [Microsoft Intune를 사용 하 여 Microsoft edge를 사용 하 여 웹 액세스 관리](manage-microsoft-edge.md)를 참조 하세요.
 
 ### <a name="read-and-write-graph-api-operations-for-intune-apps----5031704----"></a>Intune 앱에 대 한 읽기 및 쓰기 Graph API 작업 <!-- 5031704  -->
 응용 프로그램은 사용자 자격 증명 없이 앱 id를 사용 하 여 읽기 및 쓰기 작업을 모두 사용 하 여 Intune Graph API를 호출할 수 있습니다. Intune에 대해 Microsoft Graph API를 액세스하는 방법에 대한 자세한 내용은 [Working with Intune in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)(Microsoft Graph에서 Intune 사용)를 참조하세요.
@@ -90,14 +90,14 @@ MacOS 장치용 Intune에 최신 버전의 Microsoft Edge beta를 추가 하 고
 Android 및 iOS 장치에서 Intune 앱 보호 정책 (앱)을 사용 하면 조직 계정에 대 한 앱 알림 콘텐츠를 제어할 수 있습니다. 이 기능을 사용 하려면 응용 프로그램에 대 한 지원이 필요 하며, 응용 프로그램을 사용 하도록 설정 된 응용 프로그램에는이 기능을 APP에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Android 작업 프로필에 사용할 수 있는 Google Play 앱 보고 <!-- 3041956  -->
-Android 작업 프로필 디바이스에서 사용할 수 있는 앱 설치의 경우 앱 설치 상태 및 관리형 Google Play 앱의 설치된 버전을 확인할 수 있습니다. 자세한 정보는 [앱 보호 정책 모니터링 방법](app-protection-policies-monitor.md), [Intune으로 Android 작업 프로필 디바이스 관리](android-enterprise-overview.md) 및 [관리형 Google Play 앱 형식](apps-add-android-for-work.md#managed-google-play-app-type)을 참조하세요.
+Android 작업 프로필 디바이스에서 사용할 수 있는 앱 설치의 경우 앱 설치 상태 및 관리형 Google Play 앱의 설치된 버전을 확인할 수 있습니다. 자세한 정보는 [앱 보호 정책 모니터링 방법](app-protection-policies-monitor.md), [Intune으로 Android 작업 프로필 디바이스 관리](android-enterprise-overview.md) 및 [관리형 Google Play 앱 형식](apps-add-android-for-work.md#managed-google-play-app-types)을 참조하세요.
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>디바이스 구성
 
 ### <a name="device-features-device-restrictions-and-extension-profiles-for-ios-and-macos-settings-are-shown-by-enrollment-type----4886161----"></a>IOS 및 macOS 설정에 대 한 장치 기능, 장치 제한 및 확장 프로필은 등록 형식으로 표시 됩니다. <!-- 4886161  -->
 
-Intune에서 ios 및 macos 장치에 대 한 프로필을 만듭니다 (**장치 구성** > **프로필** > 은 플랫폼 > **장치 기능을 위한 프로필** > **iOS** 또는 **macos** 만들기). **,** **장치 제한**또는 프로필 형식에 대 한 **확장** ). 현재 이러한 프로필에서 사용 가능한 설정이 나열 됩니다. 
+Intune에서 ios 및 macos 장치에 대 한 프로필을 만듭니다 (**장치 구성** > **프로필** > **은 플랫폼** > 장치 기능을 위한 프로필**iOS** 또는 **macos** **만들기**), **장치 제한**또는 프로필 형식에 대 한 **확장** ). 현재 이러한 프로필에서 사용 가능한 설정이 나열 됩니다. 
 
 이후 업데이트에서 Intune 포털의 사용 가능한 설정은 적용 되는 등록 유형에 따라 분류 됩니다.
 
@@ -125,14 +125,14 @@ Intune에서 ios 및 macos 장치에 대 한 프로필을 만듭니다 (**장치
 
 ### <a name="new-voice-control-settings-for-supervised-ios-devices-running-in-kiosk-mode----4892835----"></a>키오스크 모드에서 실행 되는 감독 된 iOS 장치에 대 한 새 음성 제어 설정 <!-- 4892835  -->
 
-Intune에서 감독 된 iOS 장치를 키오스크 또는 전용 장치로 실행 하는 정책을 만들 수 있습니다.**장치 구성** > **프로필** > 은 플랫폼에 대 한**프로필** > **iOS** 를 만듭니다 > **프로필 유형** > **키오스크 (감독**모드인 경우에만)에 대 한 장치 제한 
+Intune에서 감독 된 iOS 장치를 키오스크 또는 전용 장치로 실행 하는 정책을 만들 수 있습니다.**장치 구성** > **프로필** > 은 플랫폼에 대 한**프로필** > **iOS** 를 만듭니다 >**프로필** 유형 > **키오스크 (감독**모드인 경우에만)에 대 한 장치 제한 
 
 향후 업데이트에는 다음을 제어할 수 있는 새로운 설정이 있습니다.
 
 - **음성 컨트롤**: 키오스크 모드에서 장치에 대 한 음성 제어를 사용 하도록 설정 합니다.
 - **음성 컨트롤 수정**: 사용자가 키오스크 모드에서 장치에 대 한 음성 제어 설정을 변경할 수 있습니다.
 
-현재 설정을 보려면 [IOS 키오스크 (감독 모드인 경우에만) 설정](device-restrictions-ios.md#kiosk-supervised-only)으로 이동 합니다.
+현재 설정을 보려면 [IOS 키오스크 (감독 모드인 경우에만) 설정](device-restrictions-ios.md#kiosk)으로 이동 합니다.
 
 적용 대상:
 
@@ -167,7 +167,7 @@ ITunes 앱 스토어 URL (예: `https://itunes.apple.com/us/app/work-folders/id9
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
 
-이러한 설정에 대 한 자세한 내용은 [앱 표시 또는 숨기기 (감독](device-restrictions-ios.md#show-or-hide-apps-supervised-only)모드인 경우에만)를 참조 하세요.
+이러한 설정에 대 한 자세한 내용은 [앱 표시 또는 숨기기](device-restrictions-ios.md#show-or-hide-apps)를 참조 하세요.
 
 적용 대상:
 
@@ -191,10 +191,10 @@ Android의 장치 관리자 기능은 Android Enterprise로 대체 되었습니�
 
 기존 테 넌 트가 환경에서 변경 되지 않습니다. 
 
-Intune의 Android 장치 관리자에 대 한 자세한 내용은 [android 장치 관리자 등록](https://docs.microsoft.com/intune/android-enroll-device-administrator)을 참조 하세요.
+Intune의 Android 장치 관리자에 대 한 자세한 내용은 [android 장치 관리자 등록](android-enroll-device-administrator.md)을 참조 하세요.
 
-### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>IOS 장치에 대해 회사 포털 등록 프로세스 개인 정보 화면을 사용자 지정 합니다. <!-- 4394993  -->
-Markdown를 사용 하면 iOS 등록 중 최종 사용자에 게 표시 되는 회사 포털 개인 정보 화면을 사용자 지정할 수 있습니다. 특히, 조직에서 볼 수 없거나 장치에서 수행할 수 없는 항목 목록을 사용자 지정할 수 있습니다.
+### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>IOS 디바이스에서 회사 포털의 등록 프로세스 개인 정보 화면을 사용자 지정합니다 <!-- 4394993  -->
+Markdown을 이용하면 iOS 등록 과정에서 최종 사용자에게 표시되는 회사 포털의 개인 정보 화면을 사용자 지정할 수 있습니다. 특히 조직이 디바이스에서 볼 수 없거나 해선 안 되는 항목 목록을 사용자 지정할 수 있습니다.
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>디바이스 관리
@@ -203,7 +203,7 @@ Markdown를 사용 하면 iOS 등록 중 최종 사용자에 게 표시 되는 �
 MacOS 장치 그룹에 소프트웨어 업데이트를 배포할 수 있습니다. 이 기능에는 중요, 펌웨어, 구성 파일 및 기타 업데이트가 포함 됩니다. 다음 장치 체크 인에 업데이트를 전송 하거나 사용자가 설정한 기간 내에 업데이트를 배포 하는 주별 일정을 선택할 수 있습니다. 이를 통해 표준 근무 시간 외에 장치를 업데이트 하거나 지원 센터를 완전히 팀으로 구성할 수 있습니다. 또한 업데이트가 배포 된 모든 macOS 장치에 대 한 자세한 보고서를 볼 수 있습니다. 장치별로 보고서를 드릴 하 여 특정 업데이트의 상태를 확인할 수 있습니다.
 
 ### <a name="send-custom-notifications-to-a-device----4928910----"></a>장치에 사용자 지정 알림 보내기 <!-- 4928910  -->
-회사 포털 또는 Intune 앱이 설치 된 특정 장치에 사용자 지정 알림을 보낼 수 있습니다. 이렇게 하려면 **Intune** > **장치** > **모든 장치로 이동 하 여 장치** > **다른 사용자 지정 알림 보내기** > **선택 합니다**. 
+회사 포털 또는 Intune 앱이 설치 된 특정 장치에 사용자 지정 알림을 보낼 수 있습니다. **이렇게 하려면 Intune장치모든장치**  >  **장치** > **선택하세요. **사용자 **지정알림을** > **보냅니다**. 
 
 ### <a name="updates-to-android-enterprise-fully-managed-features----3464667-5227935-4062195-4631425-4631440---"></a>Android Enterprise 완전히 관리 되는 기능에 대 한 업데이트 <!-- 3464667, 5227935, 4062195, 4631425, 4631440 -->
 
@@ -213,7 +213,7 @@ Android 완전히 관리 되는 장치에 대해 다음과 같은 지원이 추�
     - Android Enterprise의 DO 섹션에서 SCEP 프로필 만들기
     - SCEP 인증서를 인증을 위해 Wi-fi 프로필에 연결
     - SCEP 인증서를 연결 하 여 인증을 위해 VPN 프로필 수행
-    - SCEP 인증서를 연결 하 여 인증을 위한 전자 메일 프로필 수행 (AppConfig를 통해)
+    - SCEP 인증서를 연결 하 여 인증을 위한 전자 메일 프로필 수행 (앱 구성 통해)
 - Android 엔터프라이즈 장치에서 시스템 앱이 지원 됩니다. Intune에서 **클라이언트 앱** > **앱** > **추가**를 선택 하 여 Android Enterprise 시스템 앱을 추가 합니다. **앱 유형** 목록에서 **Android Enterprise system App**을 선택 합니다. Intune의 앱을 추가하는 방법에 대한 자세한 내용은 [Microsoft Intune에 앱 추가](apps-add.md)를 참조하세요. <!-- 4062195 -->
 - **장치 준수** > **Android 엔터프라이즈** > **장치 소유자**에서 Google safetynet 증명 수준을 설정 하는 규정 준수 정책을 만들 수 있습니다.   <!-- 4631425 -->
 - Android Enterprise 완전히 관리 되는 장치에서 모바일 위협 방어 공급자가 지원 됩니다. **장치 준수** > **Android 엔터프라이즈** > **장치 소유자**에서 허용 되는 위협 수준을 선택할 수 있습니다. <!-- 4631440 --> [Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Android 엔터프라이즈 설정](compliance-policy-create-android-for-work.md#device-owner)은 현재 설정을 나열합니다.

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 0f78f069f46ce036752fde80519abc03dc7c424c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063009"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167782"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
@@ -96,7 +96,7 @@ ms.locfileid: "70063009"
 
 #### <a name="resolution"></a>해결 방법
 1. [Azure Portal](https://portal.azure.com/)에 관리자로 로그인합니다.    
-2. **Azure Active Directory** >  **장치장치** > **설정**으로 이동 합니다.    
+2. **Azure Active Directory** > **장치장치** > **설정**으로 이동 합니다.    
 3. **사용자가 디바이스를 Azure AD에 조인할 수 있음**을 **모두**로 설정하세요.    
 4. 디바이스를 다시 등록합니다.   
 
@@ -114,7 +114,7 @@ ms.locfileid: "70063009"
 
 ##### <a name="remove-the-other-work-or-school-account"></a>다른 회사 또는 학교 계정 제거
 1. Windows에서 로그 아웃 한 다음 장치를 등록 하거나 가입한 다른 계정을 사용 하 여 로그인 합니다.    
-2. **설정** >  **계정회사** > **액세스**로 이동한 다음 회사 또는 학교 계정을 제거 합니다.
+2. **설정** > **계정** > **회사 액세스**로 이동한 다음 회사 또는 학교 계정을 제거합니다.
 3. Windows에서 로그 아웃 한 다음 계정을 사용 하 여 로그인 합니다.    
 4. Intune에 장치를 등록 하거나 장치를 Azure AD에 가입 시킵니다. 
 
@@ -388,4 +388,4 @@ Description:
 - [Intune 포럼에서 질문하기](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 - [Microsoft Intune 지원 팀 블로그를 확인 하세요.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Microsoft Enterprise Mobility 및 보안 블로그 확인](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
-- [Microsoft Intune에 대한 지원 받기](https://docs.microsoft.com/intune/get-support) 
+- [Microsoft Intune에 대한 지원 받기](get-support.md)
