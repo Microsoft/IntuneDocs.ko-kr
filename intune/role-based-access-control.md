@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080043"
+ms.locfileid: "71094665"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune을 사용하는 RBAC(역할 기반 액세스 제어)
 
@@ -43,7 +43,7 @@ Intune RBAC에 대한 조언과 제안 사항의 경우 예제 및 연습을 보
 - **할당**: 어떤 사용자가 어떤 사용자/디바이스에 액세스할 수 있는지 정의하는 [역할 할당]( assign-role.md) 목록입니다. 한 역할에 여러 권한을 할당할 수 있으며, 한 사용자를 여러 할당에 포함할 수 있습니다.
 
 ### <a name="built-in-roles"></a>기본 제공 역할
-추가 구성 없이 그룹에 기본 제공 역할을 할당할 수 있습니다. 기본 제공 역할의 이름, 설명, 형식 또는 권한을 삭제하거나 편집할 수 없습니다. 각 기본 제공 역할에 대한 사용 권한의 전체 목록은 [Intune RBAC 테이블](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)을 참조하세요.
+추가 구성 없이 그룹에 기본 제공 역할을 할당할 수 있습니다. 기본 제공 역할의 이름, 설명, 형식 또는 권한을 삭제하거나 편집할 수 없습니다.
 
 - **기술 지원팀 운영자**: 사용자와 디바이스에 대해 원격 작업을 수행하며, 사용자 또는 디바이스에 애플리케이션이나 정책을 할당할 수 있습니다.
 - **정책 및 프로필 관리자**: 규정 준수 정책, 구성 프로필, Apple 등록, 회사 디바이스 식별자 및 보안 기준을 관리합니다.

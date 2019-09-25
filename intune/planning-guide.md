@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 03eb6e8f58d644d0f5ad1058984d0dc2ce4a5a9b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568637"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71239556"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 배포 계획, 설계 및 구현 가이드
 
@@ -35,33 +34,33 @@ Microsoft Intune을 성공적으로 배포하려면 먼저 적절히 계획하�
 
 이 가이드는 Intune을 배포하는 전체 프로세스를 안내하는 섹션으로 구성되어 있습니다. 먼저 섹션 1의 설명에 따라 목적, 목표 및 과제를 확인하세요. 그런 다음 요구 사항에 가장 적합한 순서대로 섹션 2-7을 진행하세요. 이러한 섹션을 순서대로 진행할 필요는 없으며 동시에 완료해도 됩니다.
 
--   [섹션 1: 배포 목적, 목표 및 과제 확인](planning-guide-deployment-goals.md)
+- [섹션 1: 배포 목적, 목표 및 과제 확인](planning-guide-deployment-goals.md)
 
--   [섹션 2: 사용 사례 시나리오 확인](planning-guide-scenarios.md)
+- [섹션 2: 사용 사례 시나리오 확인](planning-guide-scenarios.md)
 
--   [섹션 3: 사용 사례 요구 사항 확인](planning-guide-requirements.md)
+- [섹션 3: 사용 사례 요구 사항 확인](planning-guide-requirements.md)
 
--   [섹션 4: 출시 계획 개발](planning-guide-rollout-plan.md)
+- [섹션 4: 출시 계획 개발](planning-guide-rollout-plan.md)
 
--   [섹션 5: 출시 통신 계획 개발](planning-guide-communication-plan.md)
+- [섹션 5: 출시 통신 계획 개발](planning-guide-communication-plan.md)
 
--   [섹션 6: 지원 플랜 개발](planning-guide-support-plan.md)
+- [섹션 6: 지원 플랜 개발](planning-guide-support-plan.md)
 
--   [섹션 7: Intune 설계 만들기](planning-guide-design.md)
+- [섹션 7: Intune 설계 만들기](planning-guide-design.md)
 
--   [섹션 8: Intune 구현](planning-guide-onboarding.md)
+- [섹션 8: Intune 구현](planning-guide-onboarding.md)
 
--   [섹션 9: 테스트 및 유효성 검사](planning-guide-test-validation.md)
+- [섹션 9: 테스트 및 유효성 검사](planning-guide-test-validation.md)
 
 또한 이 가이드는 Intune 배포 계획, 설계 및 구현 프로세스를 지원하는 데 사용할 수 있는 추가 기술 정보 및 테이블 템플릿도 제공합니다.
 
--   [추가 리소스: 링크 및 테이블 템플릿](planning-guide-resources.md)
+- [추가 리소스: 링크 및 테이블 템플릿](planning-guide-resources.md)
 
 ## <a name="assumptions"></a>가정
 
--   PoC(개념 증명) 환경에서 Intune을 이미 확인 했으며 이를 조직의 모바일 디바이스 관리 솔루션으로 사용하도록 결정했습니다.
+- PoC(개념 증명) 환경에서 Intune을 이미 확인 했으며 이를 조직의 모바일 디바이스 관리 솔루션으로 사용하도록 결정했습니다.
 
--   Intune 및 해당 기능을 이미 잘 알고 있습니다.
+- Intune 및 해당 기능을 이미 잘 알고 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

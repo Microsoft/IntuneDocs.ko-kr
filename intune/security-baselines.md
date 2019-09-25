@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
-ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+ms.openlocfilehash: 51f9dcd7a42951d42671888c9ceebcdd57458654
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70815464"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166954"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -74,8 +74,8 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 다음 보안 기준 인스턴스는 Intune에서 사용할 수 있습니다. 링크를 사용하여 각 기준의 최근 인스턴스에 대한 설정을 확인하세요. 
 
 - **MDM 보안 기준**
-  - [2019년 5월 MDM 보안 기준](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
-  - [미리 보기: 2018년 10월 MDM 보안 기준](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
+  - [2019년 5월 MDM 보안 기준](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
+  - [미리 보기: 2018년 10월 MDM 보안 기준](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
 - **Microsoft Defender ATP 기준**  
   ‘(이 기준을 사용하려면 환경이 [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) 사용에 대한 필수 조건을 충족해야 합니다.)’ 

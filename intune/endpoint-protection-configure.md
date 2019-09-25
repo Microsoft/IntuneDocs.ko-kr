@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.openlocfilehash: 8248991e1facc78def580d75a5b7e7e6ba353c98
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482782"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163679"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune에서 엔드포인트 보호 설정 추가  
 
@@ -54,7 +54,6 @@ Intune에서 디바이스 구성 프로필을 사용하여 디바이스에서 �
    프로필이 만들어지고 프로필 목록 페이지에 표시됩니다. 이 프로필을 그룹에 할당하려면 [디바이스 프로필 할당](device-profile-assign.md)을 참조하세요.  
 
 ## <a name="add-custom-firewall-rules-for-windows-10-devices"></a>Windows 10 디바이스의 사용자 지정 방화벽 규칙 추가  
-***사용자 지정 방화벽 규칙은 공개 미리 보기로 제공됩니다.***  
 
 Windows 10의 엔드포인트 보호 규칙을 포함하는 프로필의 일부로 Windows Defender 방화벽을 구성하는 경우 방화벽의 사용자 지정 규칙을 구성할 수 있습니다. 사용자 지정 규칙을 사용하면 Windows 10에서 지원되는 미리 정의된 방화벽 규칙 세트를 확장할 수 있습니다.  
 

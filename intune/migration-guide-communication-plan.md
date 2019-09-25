@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5688039101e7cecf5631a0ad8dee4f343e183d96
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 325a0efeff56a2bc930fa0082023202f9c2e7696
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022847"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166778"
 ---
 # <a name="plan-communications"></a>통신 계획
 
@@ -59,6 +59,6 @@ Intune 등록 가이드의 PDF 및 Word 버전을 모두 제공합니다. 사용
 
 Intune에는 사용자에게 디바이스 등록을 장려하는 데 사용할 수 있는 추가 리소스가 있습니다.
 
-- [Microsoft Intune에 대한 최종 사용자 교육 방법](https://docs.microsoft.com/intune/end-user-educate)에는 모바일 OS 플랫폼별 등록 단계가 설명되어 있습니다.
-- [IT 관리자를 위한 Intune 디바이스 등록](https://docs.microsoft.com/intune/device-enrollment)은 Intune에서 Android, iOS 및 Mac 디바이스를 등록하는 방법을 설명합니다.
+- [Microsoft Intune에 대한 최종 사용자 교육 방법](end-user-educate.md)에는 모바일 OS 플랫폼별 등록 단계가 설명되어 있습니다.
+- [IT 관리자를 위한 Intune 디바이스 등록](device-enrollment.md)은 Intune에서 Android, iOS 및 Mac 디바이스를 등록하는 방법을 설명합니다.
 - [회사 포털 앱 URL](http://go.microsoft.com/fwlink/?LinkID=396941)을 Android, iOS 및 Windows 사용자와 공유합니다. 이 URL은 Android, iOS 및 Windows 디바이스에 있는 적절한 회사 포털 앱 목록으로 리디렉션됩니다.

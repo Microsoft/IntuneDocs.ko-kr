@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10366a41be05dbedee5cd84a1222a727a02a1b93
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 6b7e8f5077f2052a11c980ae3f5629af810a8a0b
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071471"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094702"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Intune에서 사용자 지정 역할 만들기
 
@@ -41,7 +41,7 @@ ms.locfileid: "71071471"
 
 4. **사용자 지정 역할 추가** 블레이드에서 새 역할의 이름 및 설명을 입력하고 **권한**을 클릭합니다.
 
-5. **사용 권한** 블레이드에서 이 역할에 사용할 사용 권한을 선택합니다. [Intune RBAC 테이블](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)을 활용하여 적용할 권한을 결정할 수 있습니다.
+5. **사용 권한** 블레이드에서 이 역할에 사용할 사용 권한을 선택합니다.
 
 6. **범위(태그)** 블레이드에서 이 역할에 대한 태그를 선택합니다. 이 역할은 이러한 태그가 있는 리소스에 액세스할 수도 있습니다.
 

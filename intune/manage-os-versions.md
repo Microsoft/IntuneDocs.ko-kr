@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 4465a8715b84e06e337fb7dee5af4308cdd153ae
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427109"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167648"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune을 사용하여 운영 체제 버전 관리
 최신 모바일 및 데스크톱 플랫폼에서 주요 업데이트, 패치 및 새 버전은 빠른 속도로 출시됩니다. Windows에서는 업데이트와 패치를 완벽하게 관리할 수 있는 컨트롤이 있지만, iOS 및 Android와 같은 다른 플랫폼에서는 최종 사용자가 프로세스에 참여해야 합니다.  Microsoft Intune에는 다양한 플랫폼에서 운영 체제 버전 관리를 구성하는 데 도움이 되는 기능이 있습니다.
@@ -32,30 +32,34 @@ Intune은 다음과 같은 일반적인 시나리오를 처리하는 데 도움�
   
 ## <a name="operating-system-version-control-using-intune-mobile-device-management-mdm-enrollment-restrictions"></a>Intune MDM(모바일 디바이스 관리) 등록 제한을 사용하여 운영 체제 버전 제어
 Intune MDM 등록 제한을 사용하면 디바이스 등록을 허용하기 전에 클라이언트 디바이스 요구 사항을 정의할 수 있습니다. 목표는 최종 사용자가 조직 리소스에 액세스하기 전에 준수 디바이스만 등록하도록 요구하는 것입니다. 디바이스 요구 사항에는 지원되는 플랫폼에 허용되는 최소 및 최대 운영 체제 버전이 모두 포함됩니다.
- 
-![플랫폼 구성 제한 블레이드](./media/os-version-platform-configurations.png) 
- 
+
+![플랫폼 구성 제한 블레이드](./media/os-version-platform-configurations.png)
+
 ### <a name="in-practice"></a>실제 사례:
-조직에서는 디바이스 유형 제한을 사용하여 다음 설정을 통해 조직 리소스에 대한 액세스를 제어합니다. 
-1. 최소 운영 체제 버전을 사용하여 조직의 현재 플랫폼 및 지원되는 플랫폼에서 최종 사용자를 유지합니다. 
+
+조직에서는 디바이스 유형 제한을 사용하여 다음 설정을 통해 조직 리소스에 대한 액세스를 제어합니다.
+
+1. 최소 운영 체제 버전을 사용하여 조직의 현재 플랫폼 및 지원되는 플랫폼에서 최종 사용자를 유지합니다.
 2. 최대 운영 체제를 지정하지 않거나(제한 없음) 조직에서 마지막으로 유효성이 검사된 버전으로 설정하여 최신 운영 체제 릴리스에 대한 내부 테스트 시간을 허용합니다.
 
-자세한 내용은 [디바이스 유형 제한 설정](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)을 참조하세요.
- 
+자세한 내용은 [디바이스 유형 제한 설정](enrollment-restrictions-set.md#create-a-device-type-restriction)을 참조하세요.
+
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>운영 체제 버전 보고 및 Intune MDM 디바이스 준수 정책 준수
-Intune MDM 디바이스 준수 정책에서 제공하는 도구는 다음과 같습니다. 
+
+Intune MDM 디바이스 준수 정책에서 제공하는 도구는 다음과 같습니다.
+
 - 준수 규칙 지정
 - 보고를 통해 준수 상태 보기
 - 디바이스 격리 및 조건부 액세스를 통한 비준수에 대한 작업
 
 등록 제한과 마찬가지로 디바이스 준수 정책에는 최소 및 최대 운영 체제 버전이 모두 포함됩니다. 또한 정책에는 사용자가 준수에 대한 유예 기간을 제공하는 준수 타임라인이 있습니다. 디바이스 준수 정책을 통해 등록된 최종 사용자 디바이스에서 조직 정책을 준수하도록 유지합니다.
 
-![디바이스 준수 - 비준수 디바이스에 대한 작업](./media/os-version-actions-noncompliance.png) 
+![디바이스 준수 - 비준수 디바이스에 대한 작업](./media/os-version-actions-noncompliance.png)
 
 ### <a name="in-practice"></a>실제 사례:
 조직에서는 등록 제한과 동일한 시나리오에 대한 디바이스 준수 정책을 사용합니다. 이러한 정책을 통해 사용자가 조직에서 유효성이 검사된 현재 운영 체제 버전을 유지합니다. 최종 사용자 디바이스에서 정책을 준수하지 않는 경우 최종 사용자가 조직에서 지원되는 운영 체제 범위 내에 있을 때까지 조건부 액세스를 통해 조직 리소스에 대한 액세스가 차단될 수 있습니다. 최종 사용자에게 정책을 준수하지 않는다고 알리고 액세스 권한을 다시 얻기 위한 단계가 제공됩니다.   
 
-자세한 내용은 [디바이스 준수 시작](https://docs.microsoft.com/intune/device-compliance-get-started)을 참조하세요.
+자세한 내용은 [디바이스 준수 시작](device-compliance-get-started.md)을 참조하세요.
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Intune 앱 보호 정책을 사용하여 운영 체제 버전 제어    
 Intune 앱 보호 정책 및 MAM(모바일 애플리케이션 관리) 액세스 설정을 사용하면 앱 계층에서 최소 운영 체제 버전을 지정할 수 있습니다. 이를 통해 최종 사용자가 자신의 운영 체제를 지정한 최소 버전으로 업데이트하도록 알리고 권장하거나 요구할 수 있습니다.
@@ -70,7 +74,7 @@ Intune 앱 보호 정책 및 MAM(모바일 애플리케이션 관리) 액세스 
 ### <a name="in-practice"></a>실제 사례:
 조직에서는 앱을 최신 상태로 유지해야 하는 필요성에 대해 최종 사용자를 교육하는 방법으로 앱을 열거나 다시 시작할 때 앱 보호 정책 설정을 사용합니다. 구성 예에서는 현재 버전 - 1인 경우 최종 사용자에게 경고하고, 현재 버전 - 2인 경우 최종 사용자가 차단됩니다.
  
-자세한 내용은 [앱 보호 정책을 만들고 할당하는 방법](https://docs.microsoft.com/intune/app-protection-policies)을 참조하세요.
+자세한 내용은 [앱 보호 정책을 만들고 할당하는 방법](app-protection-policies.md)을 참조하세요.
 
 ## <a name="managing-a-new-operating-system-version-rollout"></a>새 운영 체제 버전 롤아웃 관리
 이 문서에서 설명하는 Intune 기능을 사용하여 정의한 타임라인 내에서 조직을 새 운영 체제 버전으로 전환할 수 있습니다. 다음 단계에서는 7일 내에 사용자를 운영 체제 v1에서 운영 체제 v2로 전환하는 샘플 배포 모델을 제공합니다.
@@ -84,8 +88,9 @@ Intune 앱 보호 정책 및 MAM(모바일 애플리케이션 관리) 액세스 
   - 이러한 정책을 사용하려면 디바이스에서 조직 데이터에 계속 액세스할 수 있도록 디바이스를 업데이트해야 합니다. 보호된 서비스가 디바이스 조건부 액세스와 함께 사용되면 차단됩니다. 앱 보호 정책을 사용하도록 설정된 앱은 열거나 조직 데이터에 액세스할 때 차단됩니다.
 
 ## <a name="next-steps"></a>다음 단계
-조직의 운영 체제 버전을 관리하려면 다음 리소스를 사용합니다. 
 
-- [디바이스 유형 제한 설정](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
-- [디바이스 준수 시작](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [앱 보호 정책을 만들고 할당하는 방법](https://docs.microsoft.com/intune/app-protection-policies)
+조직의 운영 체제 버전을 관리하려면 다음 리소스를 사용합니다.
+
+- [디바이스 유형 제한 설정](enrollment-restrictions-set.md#create-a-device-type-restriction)
+- [디바이스 준수 시작](device-compliance-get-started.md)
+- [앱 보호 정책을 만들고 할당하는 방법](app-protection-policies.md)

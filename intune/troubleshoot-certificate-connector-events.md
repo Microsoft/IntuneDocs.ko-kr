@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a282662032fe77cbf39da279c587bff31ad9e24
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70123226"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167765"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Intune Certificate Connector 이벤트 및 진단 코드
 
@@ -60,7 +60,7 @@ ms.locfileid: "70123226"
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 성공  | 성공 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 인증 기관이 유효하지 않거나 연결할 수 없습니다. 인증 기관을 사용할 수 있고 서버에서 이 인증 기관과 통신할 수 있는지 확인하세요. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | 로컬 인증서 저장소에 Symantec 클라이언트 인증 인증서가 없습니다. 자세한 내용은 [Symantec Registration Authorization 인증서 설치](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) 문서를 참조하세요.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | 로컬 인증서 저장소에 Symantec 클라이언트 인증 인증서가 없습니다. 자세한 내용은 [Symantec Registration Authorization 인증서 설치](certificates-digicert-configure.md#install-the-digicert-ra-certificate) 문서를 참조하세요.  |
 | 0x00000402 | RevokeCert_AccessDenied  | 지정한 계정에 CA에서 인증서를 해지할 수 있는 권한이 없습니다. 이벤트 메시지 세부 정보의 CA 이름 필드를 참조하여 발급하는 CA를 확인하세요.  |
 | 0x00000403 | CertThumbprint_NotFound  | 사용자 입력과 일치하는 인증서를 찾을 수 없습니다. 인증서 커넥터를 등록하고 다시 시도하세요. |
 | 0x00000404 | Certificate_NotFound  | 제공된 입력과 일치하는 인증서를 찾을 수 없습니다. 인증서 커넥터를 다시 등록하고 다시 시도하세요. |

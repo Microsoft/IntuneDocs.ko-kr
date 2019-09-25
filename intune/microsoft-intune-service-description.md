@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 972f58da34c73253c85f4ca6183ad6fd4ce4c2e7
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882890"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167842"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 서비스 설명
 
@@ -33,7 +33,7 @@ Intune은 직원이 회사 데이터를 보호하면서 생산성을 높일 수 
 
 Intune은 ID 및 액세스 제어를 위한 Azure AD(Azure Active Directory) 및 데이터 보호를 위한 Azure Information Protection과 긴밀하게 통합됩니다. System Center Configuration Manager와 통합하여 관리 기능을 확장할 수도 있습니다.
 
-Intune을 사용하여 디바이스 및 앱을 관리하고 회사 데이터를 보호하는 방법에 대한 자세한 내용은 [Intune 설명서](https://docs.microsoft.com/intune/)를 참조하세요.
+Intune을 사용하여 디바이스 및 앱을 관리하고 회사 데이터를 보호하는 방법에 대한 자세한 내용은 [Intune 설명서](index.yml)를 참조하세요.
 
 ## <a name="30-day-free-trial"></a>30일 평가판
 100개의 사용자 라이선스를 포함하는 30일 무료 평가판으로 Intune 사용을 시작할 수 있습니다. 무료 평가판을 시작하려면 [Intune 등록 페이지로 이동하세요](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). 조직에서 기업 계약 또는 이와 동등한 볼륨 라이선스 계약을 맺은 경우 Microsoft 담당자에게 문의하여 무료 평가판을 설정하세요.

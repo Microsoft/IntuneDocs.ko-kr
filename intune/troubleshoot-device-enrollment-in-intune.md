@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 23b3e8df9b3d5bafb567b6795b08d4be32aa8c88
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375230"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167808"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -373,7 +373,7 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 4. 등록 프로세스를 다시 시작한다고 사용자에게 알립니다.
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>VPP 토큰에서 문제가 발생했는지 확인
-1. **Intune** > **장치 등록** > **Apple 등록** > **등록 프로그램 토큰** > 토큰 이름 > **프로필** > 프로필 이름 > **관리** > **속성**으로 이동합니다.
+1. **Intune** > **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** &gt; 토큰 이름 &gt; **프로필** &gt; 프로필 이름 &gt; **관리** > **속성**으로 이동합니다.
 2. 속성을 검토하여 다음과 유사한 오류가 표시되는지 확인합니다.
     - 이 토큰은 만료되었습니다.
     - 이 토큰은 회사 포털 라이선스에 해당되지 않습니다.
@@ -447,7 +447,7 @@ VPP 토큰에서 발생한 문제를 해결한 후에 차단된 디바이스를 
 
 |오류 메시지|문제|해결 방법|
 |---|---|---|
-|**IT 관리자가 액세스에 대한 라이선스를 할당해야 함**<br>IT 관리자는 사용자에게 이 앱을 사용할 수 있는 액세스 권한을 할당하지 않았습니다. IT 관리자에게 도움을 받거나 나중에 다시 시도하세요.|사용자 계정에 필요한 라이선스가 없으므로 디바이스를 등록할 수 없습니다.|사용자가 디바이스를 등록하려면 먼저 필요한 라이선스를 할당받아야 합니다. 이 메시지는 모바일 디바이스 관리 기관에 맞지 않는 라이선스 형식이 있음을 의미합니다. 예를 들어 다음 두 가지가 모두 true인 경우 이 오류가 표시됩니다. <ol><li>Intune이 모바일 디바이스 관리 기관으로 설정되었습니다.</li><li>System Center 2012 R2 Configuration Manager를 사용하고 있습니다.</li></ol>[사용자 계정에 Intune 라이선스를 할당하는 방법](https://docs.microsoft.com/intune/licenses-assign)에 대한 정보를 참조하세요.|
+|**IT 관리자가 액세스에 대한 라이선스를 할당해야 함**<br>IT 관리자는 사용자에게 이 앱을 사용할 수 있는 액세스 권한을 할당하지 않았습니다. IT 관리자에게 도움을 받거나 나중에 다시 시도하세요.|사용자 계정에 필요한 라이선스가 없으므로 디바이스를 등록할 수 없습니다.|사용자가 디바이스를 등록하려면 먼저 필요한 라이선스를 할당받아야 합니다. 이 메시지는 모바일 디바이스 관리 기관에 맞지 않는 라이선스 형식이 있음을 의미합니다. 예를 들어 다음 두 가지가 모두 true인 경우 이 오류가 표시됩니다. <ol><li>Intune이 모바일 디바이스 관리 기관으로 설정되었습니다.</li><li>System Center 2012 R2 Configuration Manager를 사용하고 있습니다.</li></ol>[사용자 계정에 Intune 라이선스를 할당하는 방법](licenses-assign.md)에 대한 정보를 참조하세요.|
 
 
 

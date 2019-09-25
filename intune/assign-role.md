@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 83e321e932fa2214612836ec994a9a0aa8174dd7
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071543"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094705"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Intune 사용자에게 역할 할당
 
@@ -30,8 +30,6 @@ Intune 사용자에게 [기본 제공](role-based-access-control.md#built-in-rol
 역할을 만들거나 편집하거나 할당하려면 계정에 Azure AD의 다음 사용 권한 중 하나가 있어야 합니다.
 - **전역 관리자**
 - **Intune 서비스 관리자**
-
-각 기본 제공 역할에 대한 사용 권한의 전체 목록은 [Intune RBAC 테이블](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)을 참조하세요.
 
 1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
 

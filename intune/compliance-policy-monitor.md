@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
-ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
+ms.openlocfilehash: 22bee478160347256e7e2fa1422b74ccbead57b9
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69651205"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167056"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 디바이스 준수 정책 모니터링
 
@@ -60,7 +60,7 @@ ms.locfileid: "69651205"
 차트에서는 Intune에 등록된 모든 디바이스에 대한 준수 상태를 보여줍니다. 디바이스 준수 상태는 2개의 데이터베이스, 즉 Intune 및 Azure Active Directory에 보관됩니다. 
 
 > [!IMPORTANT]
-> Intune은 디바이스의 모든 규정 준수 평가에 대한 디바이스 체크 인 일정을 따릅니다. [디바이스 체크 인 일정에 대해 자세히 알아봅니다](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
+> Intune은 디바이스의 모든 규정 준수 평가에 대한 디바이스 체크 인 일정을 따릅니다. [디바이스 체크 인 일정에 대해 자세히 알아봅니다](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 다양한 디바이스 준수 정책 상태의 설명:
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
-ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
+ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270290"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167241"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune을 사용하여 Microsoft Defender ATP가 식별한 취약성 수정  
 
@@ -37,13 +37,15 @@ Microsoft Defender Security Center 콘솔에서 ATP 보안 관리자는 엔드�
 작업을 수락되면 Intune 관리자는 보안 작업의 일부로 제공되는 지침에 따라 Intune을 통해 취약성을 수정합니다.  
 
 일반적인 수정 작업은 다음과 같습니다.  
+
 - 애플리케이션이 실행되지 못하도록 **차단**  
 - 취약성을 완화하기 위해 운영 체제 업데이트 **배포**  
 - 레지스트리 값 **수정**  
 - 취약성에 영향을 미치는 구성을 **사용 안 함** 또는 **사용**으로 설정  
 - **주의 필요**는 제공할 적합한 권장 사항이 없는 경우 관리자에게 위협을 경고하는 작업입니다.  
 
-예제 워크플로:  
+예제 워크플로:
+
 - Microsoft Defender ATP 내에서 Contoso Media Player v4라는 앱의 취약성이 발견되었고 관리자가 해당 앱을 업데이트하기 위한 보안 작업을 만듭니다. Contoso Media Player는 Intune을 사용하여 배포된 비관리형 앱입니다.  
 
   이 보안 작업은 보류 중 상태로 Intune 콘솔에 표시됩니다.  
@@ -61,13 +63,16 @@ Microsoft Defender Security Center 콘솔에서 ATP 보안 관리자는 엔드�
 ## <a name="prerequisites"></a>전제 조건  
 
 **구독**:  
+
 - Microsoft Intune  
 - Microsoft Defender Advanced Threat Protection([평가판에 가입](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink))  
 
 **ATP에 대한 Intune 구성**:  
+
 - Microsoft Defender ATP를 사용하여 서비스 간 연결을 구성합니다.  
 - ATP를 통해 위험을 평가할 디바이스에 **Microsoft Defender ATP(Windows 10 데스크톱)** 의 프로필 유형을 사용하는 디바이스 준수 정책을 배포합니다.
-  ATP를 사용하도록 Intune을 설정하는 방법에 대한 자세한 내용은 [Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune)을 참조하세요.  
+
+  ATP를 사용하도록 Intune을 설정하는 방법에 대한 자세한 내용은 [Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune)을 참조하세요.  
 
 ## <a name="work-with-security-tasks"></a>보안 작업 사용  
 
@@ -89,6 +94,6 @@ Microsoft Defender Security Center 콘솔에서 ATP 보안 관리자는 엔드�
 수정에 성공한 후 수정된 디바이스의 새로운 정보를 기반으로 ATP의 위험 노출 점수가 떨어질 수 있습니다. 
 
 ## <a name="next-steps"></a>다음 단계
-Intune 및 [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection)에 대한 자세한 정보  
-Intune [Mobile Threat Defense](https://docs.microsoft.com/intune/mobile-threat-defense) 검토  
+Intune 및 [Microsoft Defender ATP](advanced-threat-protection.md)에 대한 자세한 정보  
+Intune [Mobile Threat Defense](mobile-threat-defense.md) 검토  
 Microsoft Defender ATP의 [위협 및 취약성 관리 대시보드](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) 검토

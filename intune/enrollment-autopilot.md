@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bb6efa8bff9ff428a7ea6cc1bd245070cfc0e1f
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 301945f96b62dce9ee1cf6caedf40fe6b03499e3
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070937"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166432"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -204,4 +204,4 @@ Configuration Manager를 통해 [기존 디바이스에 대해 Autopilot](https:
 > - “OfflineAutopilotprofile-”로 시작하는 Autopilot 또는 Apple DEP 프로필은 절대 이름으로 설정하지 마세요.
 
 ## <a name="next-steps"></a>다음 단계
-등록한 Windows 10 디바이스에 대해 Windows Autopilot을 구성한 후에는 이러한 디바이스를 관리하는 방법을 알아봅니다. 자세한 내용은 [Microsoft Intune 디바이스 관리란?](https://docs.microsoft.com/intune/device-management)을 참조하세요.
+등록한 Windows 10 디바이스에 대해 Windows Autopilot을 구성한 후에는 이러한 디바이스를 관리하는 방법을 알아봅니다. 자세한 내용은 [Microsoft Intune 디바이스 관리란?](device-management.md)을 참조하세요.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071636"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167425"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 디바이스 자동 등록
 
@@ -105,7 +105,7 @@ Android용 KME를 사용하여 Intune에 등록된 디바이스의 경우 최종
 
 - **사용자 이름 연결 없음:** Knox 포털의 **디바이스 세부 정보** 아래에서 추가된 디바이스의 **사용자 ID** 및 **암호** 필드를 비워 둡니다. 이 옵션을 사용하려면 Intune에 등록할 때 최종 사용자가 사용자 이름과 암호를 모두 입력해야 합니다.
 
-- **사용자 이름 연결 사용:** Knox 포털의 **디바이스 세부 정보** 아래에서 추가된 디바이스의 **사용자 ID**(예: 할당된 사용자 또는 [디바이스 등록 관리자](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) 계정의 사용자 이름)를 입력합니다. 이 옵션의 경우 사용자 이름이 미리 채워져 있고 최종 사용자가 Intune에 등록할 때 암호를 입력해야 합니다.
+- **사용자 이름 연결 사용:** Knox 포털의 **디바이스 세부 정보** 아래에서 추가된 디바이스의 **사용자 ID**(예: 할당된 사용자 또는 [디바이스 등록 관리자](device-enrollment-manager-enroll.md) 계정의 사용자 이름)를 입력합니다. 이 옵션의 경우 사용자 이름이 미리 채워져 있고 최종 사용자가 Intune에 등록할 때 암호를 입력해야 합니다.
 
 > [!NOTE]
 >

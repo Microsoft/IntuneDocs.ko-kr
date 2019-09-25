@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: d6fe60cf53f88186448cd9586d5c75fca4d517ad
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979208"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167382"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook 구성 설정 
 
@@ -30,7 +30,7 @@ iOS 및 Android 디바이스에서 실행되는 Microsoft Outlook 설정을 설�
 - 관리되는 iOS 디바이스용 앱 구성 정책을 만들려면 [관리되는 iOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요. 
 - 관리되는 Android 디바이스용 앱 구성 정책을 만들려면 [관리되는 Android 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-android.md)를 참조하세요. 
 
-등록 취소된 디바이스의 경우 디바이스 등록 [디바이스 등록 없이 관리형 앱용 앱 구성 정책 추가](https://docs.microsoft.com/intune/app-configuration-policies-managed-app)를 참조하여 iOS 및 Android용 Outlook의 앱 구성 정책을 만듭니다.
+등록 취소된 디바이스의 경우 디바이스 등록 [디바이스 등록 없이 관리형 앱용 앱 구성 정책 추가](app-configuration-policies-managed-app.md)를 참조하여 iOS 및 Android용 Outlook의 앱 구성 정책을 만듭니다.
 
 ## <a name="configuration-settings"></a>구성 설정
 

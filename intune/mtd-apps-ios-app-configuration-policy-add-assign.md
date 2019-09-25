@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 55132570683742bd3e8dcec1c20726b9eb2c4b16
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660962"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166829"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune을 사용하여 MTD(Mobile Threat Defense) 앱 추가 및 할당  
 
@@ -35,8 +35,8 @@ Intune을 사용하면 최종 사용자가 모바일 디바이스에서 위협�
 [Azure Portal](https://portal.azure.com/)에서 아래 단계를 완료해야 합니다. 다음 프로세스에 대해 잘 알고 있어야 합니다.
 
 - [Intune에 앱 추가](apps-add.md)
-- [Intune에 iOS 앱 구성 정책 추가](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)
-- [Intune을 사용하여 앱 할당](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)
+- [Intune에 iOS 앱 구성 정책 추가](app-configuration-policies-use-ios.md)
+- [Intune을 사용하여 앱 할당](apps-deploy.md)
 
 > [!TIP]
 > Intune 회사 포털은 사용자의 ID가 Azure AD에서 확인될 수 있도록 Android 디바이스에서 브로커로 작동합니다.
@@ -136,7 +136,7 @@ MTD 공급자에 해당하는 섹션을 선택합니다.
   - [Microsoft Intune에 Android 스토어 앱 추가](store-apps-android.md) 지침을 참조하세요. **7단계**에서 [Wandera Mobile 앱 스토어 URL](https://play.google.com/store/apps/details?id=com.wandera.android)을 사용합니다. **최소 운영 체제**의 경우 **Android 5.0**을 선택합니다.
 
 - **iOS**
-  - [Microsoft Intune에 iOS 스토어 앱 추가](https://docs.microsoft.com/intune/store-apps-ios) 지침을 참조하세요. **11단계**에서 이 [Wandera Mobile 앱 스토어 URL](https://itunes.apple.com/app/wandera/id605469330)을 **앱 스토어 URL**에 사용합니다.
+  - [Microsoft Intune에 iOS 스토어 앱 추가](store-apps-ios.md) 지침을 참조하세요. **11단계**에서 이 [Wandera Mobile 앱 스토어 URL](https://itunes.apple.com/app/wandera/id605469330)을 **앱 스토어 URL**에 사용합니다.
 
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>iOS 앱 구성 정책으로 MTD 앱 구성  
 

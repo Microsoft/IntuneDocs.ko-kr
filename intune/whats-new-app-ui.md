@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061714"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167886"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적으로 Intune 회사 포털 앱이 추가되고 웹 사이트가 개선됩니다. 이 문서에서는 Intune 관리자 또는 지원 담당자가 다음 작업을 수행하는 데 필요한 정보를 제공합니다.
@@ -120,7 +120,7 @@ Windows 10용 회사 포털의 앱 찾아보기 및 선택 환경을 개선하�
 ## <a name="week-of-november-12-2018"></a>2018년 11월 12일 주
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows 회사 포털 바로 가기 키 <!-- 2771518 -->
-이제 최종 사용자는 [바로 가기 키(액셀러레이터 키)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts)를 사용하여 Windows 회사 포털에서 앱 및 디바이스 작업을 트리거할 수 있습니다.
+이제 최종 사용자는 [바로 가기 키(액셀러레이터 키)](company-portal-app.md#windows-company-portal-keyboard-shortcuts)를 사용하여 Windows 회사 포털에서 앱 및 디바이스 작업을 트리거할 수 있습니다.
 
 ## <a name="week-of-october-22-2018"></a>2018년 10월 22일이 있는 주
 
@@ -572,4 +572,4 @@ __이후__ ![이제 설치 진행률 표시줄이 표시되는 업데이트된 �
 ## <a name="see-also"></a>참고 항목
 * [Microsoft Intune 블로그](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [클라우드 플랫폼 로드맵](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune의 새로운 기능](https://docs.microsoft.com/intune/whats-new)
+* [Intune의 새로운 기능](whats-new.md)

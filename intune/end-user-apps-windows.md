@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/05/2016
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9d4216026487541cbdd798f247dde3bf08e1ea
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 421815c6f17e4e9eddf23b3123c95cec51157d61
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388346"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239802"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 사용자가 앱을 얻는 방법
 
@@ -38,6 +37,6 @@ ms.locfileid: "57388346"
 
 **관리되지 않는 앱**은 정책을 통해 관리할 수 있고 Intune에서 래핑되지 않았거나 Intune 앱 SDK를 통합하지 않은 앱입니다. 앱 보호 정책을 이러한 앱에 적용할 수 없습니다.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 [Android 사용자가 앱을 얻는 방법](end-user-apps-android.md)
 [iOS 사용자가 앱을 얻는 방법](end-user-apps-android.md)
