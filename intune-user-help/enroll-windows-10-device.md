@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77b7f3adf4fa8675e3734f7eab8fbaa9391d952a
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2e4def9f0e4e91f7db9e0a81e2ad55852df524f7
+ms.sourcegitcommit: 0d1a02fb3d2a801a95c2244e9ef13ecf22be2eb1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527947"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71302457"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Intune 회사 포털을 사용하여 Windows 10 디바이스 등록
 
@@ -45,7 +45,7 @@ Windows 10은 데스크톱, 휴대폰 및 태블릿을 비롯한 다양한 디�
 
     ![회사 또는 학교 계정 액세스 선택](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. 회사 또는 학교 메일 주소를 입력하고 **다음**을 선택합니다.  
+4. 조직의 Intune 로그인 페이지로 이동 하려면 회사 또는 학교 전자 메일 주소를 입력 합니다. **다음**을 선택합니다.  
 
 
    ![회사 또는 학교 계정 입력](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  

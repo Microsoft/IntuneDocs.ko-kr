@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 05/9/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75628ab45d4c0d7f43f07d530a76988ca5f772b8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 578dcf8a714197d9414e8ffeeec9a6c6e8a30311
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461161"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71302170"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS 교실 앱에 대한 Intune 설정을 구성하는 방법
 
@@ -78,15 +77,14 @@ SDS는 SIS의 정보를 동기화하고 Azure AD에 저장합니다. Azure AD는
 
 ### <a name="configure-general-settings"></a>일반 설정 구성
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
 2. **관리** 섹션 아래의 **디바이스 구성** 창에서 **프로필**을 선택합니다.
-5.  프로필 창에서 **프로필 만들기**를 선택합니다.
-6.  **프로필 만들기** 창에서 iOS 교육 프로필에 대한 **이름** 및 **설명**을 입력합니다.
-7.  **플랫폼** 드롭다운 목록에서 **iOS**를 선택합니다.
-8.  **프로필** 유형 드롭다운 목록에서 선택 **교육**을 선택합니다.
-9.  **설정** > **구성**을 선택합니다.
+5. 프로필 창에서 **프로필 만들기**를 선택합니다.
+6. **프로필 만들기** 창에서 iOS 교육 프로필에 대한 **이름** 및 **설명**을 입력합니다.
+7. **플랫폼** 드롭다운 목록에서 **iOS**를 선택합니다.
+8. **프로필** 유형 드롭다운 목록에서 선택 **교육**을 선택합니다.
+9. **설정** > **구성**을 선택합니다.
 
 
 다음 섹션에서는 교사 및 학생 iPad 간에 트러스트 관계를 설정하기 위한 인증서를 만듭니다. 인증서는 사용자 이름 및 암호를 입력할 필요 없이 디바이스 간 연결을 원활하게 자동으로 인증하는 데 사용됩니다.
@@ -124,8 +122,8 @@ iOS 교육 프로필은 PFX 인증서만 지원하고 SCEP 인증서는 지원�
 
 ### <a name="configure-student-certificates"></a>학생 인증서 구성
 
-1.  **교육** 창에서 **학생 인증서**를 선택합니다.
-2.  **학생 인증서** 창의 **학생 디바이스 인증서** 유형 목록에서 **1:1**을 선택합니다.
+1. **교육** 창에서 **학생 인증서**를 선택합니다.
+2. **학생 인증서** 창의 **학생 디바이스 인증서** 유형 목록에서 **1:1**을 선택합니다.
 
 #### <a name="configure-student-root-certificate"></a>학생 루트 인증서 구성
 
@@ -149,9 +147,9 @@ iOS 교육 프로필은 PFX 인증서만 지원하고 SCEP 인증서는 지원�
 
 ## <a name="finish-up"></a>끝내기
 
-1.  **교육** 창에서 확인을 선택합니다.
-2.  **프로필 만들기** 창에서 **만들기**를 선택합니다.
-    
+1. **교육** 창에서 확인을 선택합니다.
+2. **프로필 만들기** 창에서 **만들기**를 선택합니다.
+
 프로필이 만들어지고 프로필 목록 창에 표시됩니다.
 
 학교 데이터를 Azure AD와 동기화할 때 만들어진 교실 그룹의 학생 디바이스에 프로필을 할당합니다([디바이스 프로필을 할당하는 방법](device-profile-assign.md) 참조.

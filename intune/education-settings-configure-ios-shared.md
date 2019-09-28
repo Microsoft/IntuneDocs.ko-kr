@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e0b8230a842a7b4e3b1368388cb186defa8df72
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8747a398447dc1f477e2b0149104c4c65d3ed741
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566593"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "71302185"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>공유 iPad 디바이스에 대한 Intune 교육 설정 구성
 
@@ -68,8 +67,7 @@ SDS는 SIS의 정보를 동기화하고 Azure AD에 저장합니다. Azure AD는
 
 ### <a name="configure-general-settings"></a>일반 설정 구성
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
 2. **관리** 섹션 아래의 **디바이스 구성** 창에서 **프로필**을 선택합니다.
 5. 프로필 창에서 **프로필 만들기**를 선택합니다.
@@ -139,8 +137,7 @@ iOS 교육 프로필은 PFX 인증서만 지원하고 SCEP 인증서는 지원�
 
 ## <a name="step-3---create-a-device-category"></a>3단계 - 디바이스 범주 만들기
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **디바이스 등록**을 선택합니다.
 4. **디바이스 등록 - 개요** 창에서 **디바이스 범주**를 선택합니다.
 5. **등록 - 디바이스 범주** 창에서 **만들기**를 선택합니다.
@@ -151,8 +148,7 @@ iOS 교육 프로필은 PFX 인증서만 지원하고 SCEP 인증서는 지원�
 
 ## <a name="step-4--create-a-dynamic-group"></a>4단계 - 동적 그룹 만들기
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **그룹**을 선택합니다.
 4. **사용자 및 그룹 - 모든 그룹** 창에서 **새 그룹**을 선택합니다.
 5. **그룹** 창에서 **그룹 유형**을 선택한 다음, 그룹의 **이름**과 **설명**을 입력합니다.
@@ -169,8 +165,7 @@ iOS 교육 프로필은 PFX 인증서만 지원하고 SCEP 인증서는 지원�
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>5단계 - 범주에 디바이스 할당(장바구니)
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **디바이스**를 선택합니다.
 4. **디바이스** 창에서 **모든 디바이스**를 선택합니다.
 5. **디바이스 - 모든 디바이스** 창에서 디바이스를 선택합니다.
@@ -182,14 +177,13 @@ iOS 교육 프로필은 PFX 인증서만 지원하고 SCEP 인증서는 지원�
 
 ## <a name="step-6--create-classroom-profiles"></a>6단계 – 교실 프로필 만들기
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
 4. **디바이스 구성** 창에서 **관리** > **카트 프로필**을 선택합니다.
 5. 프로필 창에서 **프로필 만들기**를 선택합니다.
 6. **연결 만들기** 창에서 **이름** 및 **설명**을 입력합니다.
 7. **클래스 선택** > **구성**을 선택하여 그룹을 카트 프로필에 연결합니다.
-8. 카트 프로필에 포함할 클래스를 선택한 다음 **선택**을 선택합니다. 
+8. 카트 프로필에 포함할 클래스를 선택한 다음 **선택**을 선택합니다. 
 9. **카트 선택** > **구성**을 선택하여 그룹을 카트 프로필에 연결합니다.
 10. 카트 프로필에 포함할 그룹을 선택한 다음 **선택**을 선택합니다.
 11. **연결 만들기** 창에서 **저장**을 선택하여 카트 프로필을 저장합니다.
@@ -198,13 +192,12 @@ iOS 교육 프로필은 PFX 인증서만 지원하고 SCEP 인증서는 지원�
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>7단계 - 클래스에 카트 프로필 할당
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
 4. **디바이스 구성** 창에서 **모니터** > **할당 상태**를 선택합니다.
 5. **할당 상태** 창에서 직접 만든 **카트 프로필**을 선택합니다.
 6. **카트 프로필** 창에서 **할당**을 선택한 다음, **포함**에서 **포함할 그룹 선택**을 선택합니다.
-7. 카트 프로필의 대상으로 지정할 클래스(그룹을 선택하지 않음)를 선택한 다음 **선택**을 선택합니다. 
+7. 카트 프로필의 대상으로 지정할 클래스(그룹을 선택하지 않음)를 선택한 다음 **선택**을 선택합니다. 
 8. 작업이 끝나면 **저장**을 선택합니다.
 
 할당이 완료되고, Intune에서 교실 할당에 따라 대상 디바이스에 교실 프로필을 배포합니다.

@@ -5,23 +5,26 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 08/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
+ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e37d6a2b7371cf20cd36a6f3f75a4dd252c332f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8e13c2dce5e8da2ce71b97de496d5234096c3b22
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048040"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "71301946"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune에서 이메일, 인증 및 동기화를 구성하기 위한 Android Enterprise 디바이스 설정
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 이 문서에서는 Android Enterprise 디바이스에서 제어할 수 있는 다양한 이메일 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 사용하여 메일 서버를 구성하고, SSL을 사용하여 메일을 암호화하는 등의 작업을 수행합니다.
 
@@ -31,7 +34,7 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-[디바이스 구성 프로필을 만들고](email-settings-configure.md#create-a-device-profile), 회사 프로필을 선택합니다.
+[장치 구성 프로필](email-settings-configure.md#create-a-device-profile) 을 만들거나 (회사 프로필 선택) [앱 구성 정책을](app-configuration-policies-use-android.md)만듭니다.
 
 ## <a name="android-enterprise"></a>Android Enterprise
 

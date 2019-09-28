@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c518e0eeb18f51fa17d15a72735e319aef1d647d
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 6a545bff8624f4447ca9805aecf6d4d288fe4314
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167482"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239527"
 ---
 # <a name="enable-code-integrity"></a>코드 무결성 사용
 
@@ -35,7 +35,7 @@ ms.locfileid: "71167482"
 
 ## <a name="additional-resources-for-it-administrators"></a>IT 관리자를 위한 추가 리소스
 
-Intune 관리자 인 경우 intune의 장치 상태 준수 설정에 대해 자세히 알아보려면 [intune에서 Windows 10 장치에 대 한 장치 준수 정책 추가](https://docs.microsoft.com/intune/compliance-policy-create-windows.md)를 참조 하세요. Intune에서 수행할 수 있는 준수 작업을 자세히 확인 하려면 [HEALTHATTESTATION CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)를 참조 하세요.  
+Intune 관리자 인 경우 intune의 장치 상태 준수 설정에 대해 자세히 알아보려면 [intune에서 Windows 10 장치에 대 한 장치 준수 정책 추가](https://docs.microsoft.com/intune/compliance-policy-create-windows)를 참조 하세요. Intune에서 수행할 수 있는 준수 작업을 자세히 확인 하려면 [HEALTHATTESTATION CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)를 참조 하세요.  
 
 ## <a name="next-steps"></a>다음 단계
 

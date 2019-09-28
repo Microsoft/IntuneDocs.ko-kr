@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec071622a2e0d49068864f8bfb47954f54c8ba4
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: bde1c296abb99e8c0c81b44908e78b204c62388e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423614"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304121"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 iOS 설정
 
@@ -84,8 +83,8 @@ Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를
 
     더 큰 값을 설정하면 사용자는 더욱 복잡한 암호를 만들어야 합니다.
 
-- **암호를 요구하기 전까지 최대 비활성 시간(분)**: 사용자가 해당 시간 내에 자신의 암호를 다시 입력해야 하는 유휴 시간을 입력합니다.
-- **암호 만료(일)**: 암호가 만료되기 전에 새로 만들어야 하는 일수를 선택합니다.
+- **암호를 요구하기 전까지 최대 비활성 시간(분)** : 사용자가 해당 시간 내에 자신의 암호를 다시 입력해야 하는 유휴 시간을 입력합니다.
+- **암호 만료(일)** : 암호가 만료되기 전에 새로 만들어야 하는 일수를 선택합니다.
 - **재사용을 방지하기 위한 이전 암호 수**: 사용할 수 없는 이전에 사용된 암호 수를 입력합니다.
 
 ### <a name="device-security"></a>디바이스 보안

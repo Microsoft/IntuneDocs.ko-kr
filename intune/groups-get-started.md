@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/31/2019
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e912c14418d54321b0998dad3081f297ae81114d
-ms.sourcegitcommit: 55323746ca3c1c66326f1453ba66ded9c1b73b0e
+ms.openlocfilehash: 7837ab6e24c5d4fa848218b662cbd89dfbbe7b72
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58867435"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71301892"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Azure Portal의 Microsoft Intune 클래식 그룹
 
@@ -47,11 +46,11 @@ Azure AD 보안 그룹은 사용자와 디바이스 모두에 대한 모든 유�
 ## <a name="how-to-get-started"></a>시작하는 방법
 
 - 다음 항목을 읽고 Azure AD 보안 그룹 및 보안 그룹의 작동 방법을 자세히 알아봅니다.
-    -  [Azure Active Directory 그룹을 사용하여 리소스에 대한 액세스 관리](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)
-    -  [Azure Active Directory에서 그룹 관리](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
-    -  [특성을 사용하여 고급 규칙 만들기](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
--  그룹을 만드는 데 필요한 모든 관리자가 **Intune 서비스 관리자** Azure AD 역할에 추가되어 있는지 확인합니다. Azure AD 서비스 관리자 역할에는 **관리 그룹** 권한이 없습니다.
--  Intune 그룹에서 **다음의 특정 멤버를 제외** 옵션을 사용한 경우 배제하지 않고 이러한 그룹을 다시 설계할 수 있는지 여부 또는 비즈니스 요구 사항을 충족하기 위한 고급 규칙이 필요한지 여부를 결정합니다.
+  - [Azure Active Directory 그룹을 사용하여 리소스에 대한 액세스 관리](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)
+  - [Azure Active Directory에서 그룹 관리](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+  - [특성을 사용하여 고급 규칙 만들기](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
+- 그룹을 만드는 데 필요한 모든 관리자가 **Intune 서비스 관리자** Azure AD 역할에 추가되어 있는지 확인합니다. Azure AD 서비스 관리자 역할에는 **관리 그룹** 권한이 없습니다.
+- Intune 그룹에서 **다음의 특정 멤버를 제외** 옵션을 사용한 경우 배제하지 않고 이러한 그룹을 다시 설계할 수 있는지 여부 또는 비즈니스 요구 사항을 충족하기 위한 고급 규칙이 필요한지 여부를 결정합니다.
 
 
 ## <a name="what-happened-to-intune-groups"></a>Intune 그룹에 미치는 영향

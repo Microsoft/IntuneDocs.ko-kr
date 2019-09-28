@@ -6,9 +6,8 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/27/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,29 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 88681696716080b38d0f7d9e79264d002f335029
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798122"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "71303289"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune 데이터 웨어하우스 사용
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 데이터 웨어하우스를 사용하여 기업 모바일 환경에 대한 정보를 제공하는 보고서를 만듭니다. 예를 들어 일부 보고서는 다음과 같은 내용을 포함합니다.
--   라이선스 구매 최적화를 위한 Intune 등록 사용자 추세
--   모바일 디바이스 상태를 검토하기 위한 앱 및 OS 버전 분석
--   정책 업데이트를 원활하게 롤아웃하기 위한 등록 및 디바이스 규정 준수 추세
+- 라이선스 구매 최적화를 위한 Intune 등록 사용자 추세
+- 모바일 디바이스 상태를 검토하기 위한 앱 및 OS 버전 분석
+- 정책 업데이트를 원활하게 롤아웃하기 위한 등록 및 디바이스 규정 준수 추세
 
 ## <a name="data-warehouse-benefits"></a>데이터 웨어하우스 혜택
 
 데이터 웨어하우스는 Azure 포털보다 모바일 환경에 대해 더 많은 정보를 제공합니다. Intune 데이터 웨어하우스를 통해 다음에 액세스할 수 있습니다.
 
-  -  과거 Intune 데이터
-  -  일 단위로 새로 고침되는 데이터
-  -  OData 표준을 사용하는 데이터 모델
+- 과거 Intune 데이터
+- 일 단위로 새로 고침되는 데이터
+- OData 표준을 사용하는 데이터 모델
 
 > [!Note]
 > System Center Configuration Manager 및 Microsoft Intune과 함께 공동 관리 MDM(모바일 디바이스 관리)을 사용하는 경우 Configuration Manager에서 데이터를 검색해야 합니다. Intune 데이터 웨어하우스에는 Intune 데이터만 포함됩니다. 사용자 지정 보고서에 대한 Configuration Manager Power BI 대시보드를 사용할 수 있습니다. 자세한 내용은 "[System Center Configuration Manager에 대한 Power BI 솔루션 템플릿 발표]( https://powerbi.microsoft.com/blog/sccm-solution-template)" 및 "[Dynamics 365의 Power BI 콘텐츠](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)"를 참조하세요.

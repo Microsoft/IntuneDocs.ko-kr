@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 07/24/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c73e4c8aa5f71fb80110d4a223b9872c8dbaff3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 7d51d504f63e9a9c942bbcbc689c67bc63d74a2c
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798105"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71304920"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune 데이터 웨어하우스 계정 데이터 이동 
 
@@ -43,7 +42,7 @@ ms.locfileid: "58798105"
 Azure Portal 보기의 일부 추세 차트가 다시 설정됩니다. **그래프**에서 다음 스크립트를 실행하여 이러한 차트를 백업할 수 있습니다.   
 
 ### <a name="terms--conditions-acceptance-reports"></a>사용 약관 동의 보고서
-1. Azure Portal에서 **Microsoft Intune** -> **장치 등록** -> **사용 약관**으로 이동합니다.
+1. Azure Portal에서 **Microsoft Intune** -> **디바이스 등록** -> **사용 약관**으로 이동합니다.
 2. 각 **사용 약관** 항목에 대해 **동의 보고서**, **내보내기**를 차례로 선택합니다.
 3. 보고서를 로컬에 저장합니다.
  
@@ -82,5 +81,5 @@ Azure Portal 보기의 일부 추세 차트가 다시 설정됩니다. **그래�
 
 ## <a name="next-steps"></a>다음 단계
 
- - [매주 Intune에 추가되는 새로운 기능](whats-new.md)에 대해 알아봅니다. 예정된 변경, 서비스 관련 중요 공지 및 이전 릴리스 관련 정보에 대해서도 알아볼 수 있습니다.
- - [Microsoft Intune 블로그](https://go.microsoft.com/fwlink/?LinkID=273882)를 읽어 보세요.
+- [매주 Intune에 추가되는 새로운 기능](whats-new.md)에 대해 알아봅니다. 예정된 변경, 서비스 관련 중요 공지 및 이전 릴리스 관련 정보에 대해서도 알아볼 수 있습니다.
+- [Microsoft Intune 블로그](https://go.microsoft.com/fwlink/?LinkID=273882)를 읽어 보세요.

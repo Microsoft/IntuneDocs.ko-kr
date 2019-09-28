@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 8a4e6cbf2d9edcff83ae756c2dbcf098cae0ae54
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798401"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "71301869"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>문제 해결 포털을 사용하여 회사 내 사용자 지원
 
@@ -47,8 +46,7 @@ ms.locfileid: "58798401"
 
 문제 해결 창에서 **사용자 선택**을 선택하여 사용자 정보를 봅니다. 사용자 정보는 사용자와 디바이스의 현재 상태를 이해하는 데 유용합니다.  
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **문제 해결**을 선택합니다.
 4. **선택**을 클릭하여 문제를 해결할 사용자를 선택합니다.
 5. 이름 또는 이메일 주소를 입력하여 사용자를 선택합니다. **선택**을 클릭합니다. 문제 해결 창에서 사용자에 대한 문제 해결 정보가 표시됩니다. 다음 표에서는 이러한 정보에 대해 설명합니다.
@@ -60,7 +58,7 @@ ms.locfileid: "58798401"
 
 **문제 해결** 창을 사용하여 사용자 정보를 검토할 수 있습니다.
 
-![](/intune/media/troubleshooting-dash.png)
+![다음 표에서 설명 하는 번호가 매겨진 영역을 포함 하는 문제 해결 대시보드](/intune/media/troubleshooting-dash.png)
 
 | 영역 | 이름 | 설명 |
 | ---  | ---  | ---         |
@@ -108,7 +106,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection status
 
-An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -121,7 +119,7 @@ An app protection policy is available to mobile apps that integrate with Enterpr
 
 ## App protection policies reference
 
-An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 ### Properties
 
@@ -154,7 +152,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ## Compliance policies reference
 
-Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
 ### Properties
 
@@ -186,7 +184,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -199,7 +197,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 ## Configuration policies reference
 
-An app configuration policy is available to mobile apps with vendor-specific configuration. 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
 ### Properties
 
@@ -232,7 +230,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -294,11 +292,11 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 ## <a name="collect-available-data-from-mobile-device"></a>모바일 디바이스에서 사용 가능한 데이터 수집
 
 사용자의 디바이스 문제를 해결할 때 다음 리소스를 사용하여 디바이스 데이터를 수집할 수 있습니다.
-  - [IT 관리자에게 iOS 등록 오류 보내기](/intune-user-help/send-errors-to-your-it-admin-ios)
-  - [자세한 정보 로깅으로 회사 지원팀의 디바이스 문제 해결 돕기](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
-  - [USB 케이블을 사용하여 회사 지원팀에 Android 로그 보내기](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-  - [메일을 사용하여 IT 관리자에게 Android 진단 데이터 로그 보내기](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
-  - [IT 관리자에게 Android 등록 오류 보내기](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
+- [IT 관리자에게 iOS 등록 오류 보내기](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [자세한 정보 로깅으로 회사 지원팀의 디바이스 문제 해결 돕기](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+- [USB 케이블을 사용하여 회사 지원팀에 Android 로그 보내기](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [메일을 사용하여 IT 관리자에게 Android 진단 데이터 로그 보내기](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+- [IT 관리자에게 Android 등록 오류 보내기](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>다음 단계
 

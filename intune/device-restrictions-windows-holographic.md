@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fed8c33bbf4ff302d08576dc5e34ce1257425090
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bea8d6d8e3503b9ec6fba7b2eda4842b68786e54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565250"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302318"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune를 사용하여 기능을 허용하거나 제한하는 Windows Holographic for Business 디바이스 설정
 
@@ -91,9 +90,9 @@ ms.locfileid: "57565250"
   - **단일 앱 키오스크**: 프로필을 통해 디바이스가 하나의 앱만 실행하도록 설정합니다. 사용자가 로그인할 때 특정 앱이 시작됩니다. 또한 이 모드는 사용자가 새 앱을 열거나 실행 중인 앱을 변경하는 것을 제한합니다.
   - **다중 앱 키오스크**: 프로필을 통해 디바이스에서 여러 앱을 실행할 수 있습니다. 사용자는 추가한 앱만 사용할 수 있습니다. 다중 앱 키오스크 또는 용도가 고정된 디바이스의 혜택은 필요한 앱에만 액세스함으로써 개인이 이해하기 쉬운 환경을 제공하는 것입니다. 필요하지 않은 앱을 해당 보기에서 제거합니다. 
   
-    다중 앱 키오스크 환경에 대해 앱을 추가하는 경우 시작 메뉴 레이아웃 파일도 추가합니다. [시작 메뉴 레이아웃 파일](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune)은 Intune에서 사용할 수 있는 XML 샘플을 포함합니다. 
+    다중 앱 키오스크 환경에 대해 앱을 추가하는 경우 시작 메뉴 레이아웃 파일도 추가합니다. [시작 메뉴 레이아웃 파일](/hololens/hololens-kiosk#start-layout-file-for-mdm-intune-and-others)은 Intune에서 사용할 수 있는 XML 샘플을 포함합니다. 
 
-#### <a name="single-app-kiosks"></a>단일 앱 키오스크
+### <a name="single-app-kiosks"></a>단일 앱 키오스크
 
 다음 설정을 입력합니다.
 
@@ -101,11 +100,11 @@ ms.locfileid: "57565250"
 
     자동 로그온을 사용할 수 있는 공용 환경의 키오스크에서는 최소한의 권한(예: 로컬 표준 사용자 계정)을 지닌 사용자 유형을 사용해야 합니다. 키오스크 모드에 대해 Azure AD(Active Directory) 계정을 구성하려면 `AzureAD\user@contoso.com` 형식을 사용합니다.
 
-- **앱의 AUMID(애플리케이션 사용자 모델 ID)**: 키오스크 앱의 AUMID를 입력합니다. 자세한 내용은 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
+- **앱의 AUMID(애플리케이션 사용자 모델 ID)** : 키오스크 앱의 AUMID를 입력합니다. 자세한 내용은 [설치된 앱의 애플리케이션 사용자 모델 ID 찾기](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)를 참조하세요.
 
 ## <a name="reporting-and-telemetry"></a>보고 및 원격 분석
 
-- **사용 데이터 공유**: 진단 데이터 제출 수준을 선택합니다.
+- **사용량 현황 데이터 공유**: 진단 데이터 제출 수준을 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f7a14d605ae3d1a5a951f40ec789c50c847c455
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 132123b15073569c9a9601841579ca4592f27bd7
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565709"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71301897"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1을 실행하는 디바이스용 Microsoft Intune에서 이메일 프로필 설정
 
@@ -33,7 +32,7 @@ ms.locfileid: "57565709"
 - **Windows Phone 8.1에만 모든 설정 적용** - Intune 클래식 포털에서 구성할 수 있는 설정입니다. Azure Portal에서는 이 설정을 변경할 수 없습니다. **구성됨**으로 설정된 경우 모든 설정이 Windows Phone 8.1 디바이스에만 적용됩니다. **구성되지 않음**으로 설정한 경우 Windows 10 Mobile 디바이스에도 이러한 설정이 적용됩니다.
 - **메일 서버** - Exchange Server의 호스트 이름입니다.
 - **계정 이름** - 디바이스에서 사용자에게 표시되는 전자 메일 계정의 표시 이름입니다.
-- **AAD의 사용자 이름 특성** - 이것은 이메일 프로필에 대한 사용자 이름을 생성하는 데 사용되는 Active Directory(AD) 또는 Azure AD의 특성입니다. **user1@contoso.com**와 같은 **기본 SMTP 주소** 또는 **user1**, **user1@contoso.com**와 같은 **사용자 계정 이름**을 선택합니다.
+- **AAD의 사용자 이름 특성** - 이것은 이메일 프로필에 대한 사용자 이름을 생성하는 데 사용되는 Active Directory(AD) 또는 Azure AD의 특성입니다. **user1@contoso.com** 와 같은 **기본 SMTP 주소** 또는 **user1**, **user1@contoso.com** 와 같은 **사용자 계정 이름**을 선택합니다.
 - **AAD의 메일 주소 특성** - 각 디바이스에서 사용자의 메일 주소가 생성되는 방식을 선택합니다. **기본 SMTP 주소**를 선택하여 Exchange에 로그인하는 기본 SMTP 주소를 사용하거나 **사용자 계정 이름**을 사용하여 메일 주소와 전체 사용자 이름을 사용합니다.
 
 
@@ -51,6 +50,6 @@ ms.locfileid: "57565709"
 ## <a name="content-sync-settings"></a>콘텐츠 동기화 설정
 
 - **동기화할 콘텐츠 형식** - 디바이스에 동기화할 콘텐츠 형식을 선택합니다.
-    - **연락처**
-    - **일정**
-    - **태스크**
+  - **연락처**
+  - **일정**
+  - **태스크**

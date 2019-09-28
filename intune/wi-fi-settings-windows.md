@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 528819452accf4a7f17e54b3c05693dee5cab74f
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884253"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239446"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune에서 Windows 10 이상 디바이스에 대한 Wi-Fi 설정 추가
 
@@ -62,6 +62,9 @@ ms.locfileid: "67884253"
     
       > [!NOTE]
       > Wi-Fi 프로필을 저장하면 보안상의 이유로 입력한 PSK 값이 표시되지 않습니다. PSK가 프로필에 저장되더라도 미리 공유한 키 워터마크에는 **구성되지 않음**이 계속 표시됩니다. PSK를 변경하려면 새 키를 입력하고 프로필을 저장합니다. PSK를 저장하고 정책을 편집한 다음, PSK를 비워 두면 기존 PSK가 계속 사용됩니다.
+      
+      > [!IMPORTANT]
+      > PSK는 profule 대상으로 하는 모든 장치에 대해 동일 합니다. 키가 손상 되 면 모든 장치에서 Wi-fi 네트워크에 연결 하는 데 사용할 수 있습니다. 무단 액세스를 방지 하기 위해 PSKs를 안전 하 게 유지 합니다.
 
 - **회사 프록시 설정**: 조직 내에서 프록시 설정을 사용하도록 선택합니다. 옵션은 다음과 같습니다.
   - **없음**: 프록시 설정을 구성하지 않습니다.

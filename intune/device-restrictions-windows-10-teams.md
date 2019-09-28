@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f82950259746010c347e5dafa832a7335026721c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 20621246f76810ba7efaac3cadbdde1a0229c923
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799314"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71302336"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 Team 디바이스 제한 설정
 
@@ -34,8 +33,8 @@ ms.locfileid: "58799314"
 
 - **방에 사람이 들어오면 화면 켜기** - 센서가 방에서 사람을 감지하면 디바이스가 자동으로 켜지도록 합니다.
 - **시작 화면에 표시되는 모임 정보** - 시작 화면의 모임 타일에 표시되는 정보를 선택하려면 이 옵션을 사용합니다. 다음과 같습니다.
-    - **이끌이 및 시간만 표시**
-    - **이끌이, 시간 및 제목 표시(비공개 모임의 경우 제목이 숨겨짐)**
+  - **이끌이 및 시간만 표시**
+  - **이끌이, 시간 및 제목 표시(프라이빗 모임의 경우 제목이 숨겨짐)**
 - **시작 화면 배경 이미지 URL** - 지정한 URL에서 Windows 10 Team 디바이스의 **시작** 화면에 사용자 지정 배경을 표시하려면 이 설정을 사용하도록 설정합니다.<br>이미지는 PNG 형식이어야 하며 URL은 **https://** 로 시작되어야 합니다.
 
 ## <a name="azure-operational-insights"></a>Azure Operational Insights

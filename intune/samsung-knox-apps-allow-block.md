@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4efa2a813dda16805effe55ff3d1b967ef5d6c88
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: edff9ca3e292a2b5653a8b156a8deaa02bb79e9d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798230"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71303183"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Microsoft Intune에서 사용자 지정 정책을 사용하여 Samsung Knox Standard 디바이스에 대해 앱 허용 및 차단 
 
@@ -36,8 +35,7 @@ ms.locfileid: "58798230"
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>허용되거나 차단된 앱 목록 만들기
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
 2. **디바이스 구성** 창에서 **관리** > **프로필**을 선택합니다.
 2. 프로필 목록 창에서 **프로필 만들기**를 선택합니다.
@@ -51,9 +49,9 @@ ms.locfileid: "58798230"
 
    - **이름** - **PreventStartPackages**를 입력합니다.
    - **설명** - ‘실행이 차단된 앱 목록’과 같이 설명을 선택적으로 입력합니다.
-   -    **데이터 형식** - 드롭다운 목록에서 **문자열**을 선택합니다.
-   -    **OMA-URI** - **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**를 입력합니다.
-   -    **값** - 허용할 앱 패키지 이름 목록을 입력합니다. 구분 기호로 **;:,** 또는 **|** 를 사용할 수 있습니다. (예: package1, package2;)
+   - **데이터 형식** - 드롭다운 목록에서 **문자열**을 선택합니다.
+   - **OMA-URI** - **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**를 입력합니다.
+   - **값** - 허용할 앱 패키지 이름 목록을 입력합니다. 구분 기호로 **;:,** 또는 **|** 를 사용할 수 있습니다. (예: package1, package2;)
 
    사용자가 다른 앱을 모두 제외하는 반면 Google Play 스토어에서 설치할 수 있도록 허용된 앱 목록의 경우
    - **이름** - **AllowInstallPackages**를 입력합니다.

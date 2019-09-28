@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37f76f0e4a382dc356f6d5994c31178ad6f496df
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 22bdb41d8af69ed7e52ee3bcbc7775ac1d6768a6
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166527"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239407"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>MacOS 장치에 대 한 복구 키 가져오기
 
@@ -47,7 +47,7 @@ ms.locfileid: "71166527"
 
 ## <a name="it-pro-support"></a>IT 전문가 지원
 
-IT 지원 담당자 인 경우 macOS 장치에 대 한 대해 filevault 켭니다 암호화를 구성 하 고 관리 하려는 경우 [Intune에서 장치 암호화 사용](https://docs.microsoft.com/intune/encrypt-devices.md)을 참조 하세요.
+IT 지원 담당자 인 경우 macOS 장치에 대 한 대해 filevault 켭니다 암호화를 구성 하 고 관리 하려는 경우 [Intune에서 장치 암호화 사용](https://docs.microsoft.com/intune/encrypt-devices)을 참조 하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
