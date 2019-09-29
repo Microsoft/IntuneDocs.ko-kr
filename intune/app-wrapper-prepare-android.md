@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 07/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 732e391ad3c85c1f3f5da36b3424544cf1cdf4aa
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566049"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71238781"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 Android 앱 준비
 
@@ -36,35 +35,35 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>앱 래핑 도구의 필수 구성 요소 준비
 
--   앱 래핑 도구는 Windows 7 이상을 실행하는 Windows 컴퓨터에서 실행해야 합니다.
+- 앱 래핑 도구는 Windows 7 이상을 실행하는 Windows 컴퓨터에서 실행해야 합니다.
 
--   입력하는 앱은 파일 확장명이 .apk인 유효한 Android 애플리케이션 패키지여야 합니다. 그리고
+- 입력하는 앱은 파일 확장명이 .apk인 유효한 Android 애플리케이션 패키지여야 합니다. 그리고
 
-    -   암호화할 수 없습니다.
-    -   Intune 앱 래핑 도구로 이미 래핑되지 않아야 합니다.
-    -   Android 4.0 이상에서 작성해야 합니다.
+  - 암호화할 수 없습니다.
+  - Intune 앱 래핑 도구로 이미 래핑되지 않아야 합니다.
+  - Android 4.0 이상에서 작성해야 합니다.
 
--   앱이 회사에 의해 또는 회사를 위해 개발되어야 합니다. Google Play 스토어에서 다운로드한 앱에서 이 도구를 사용할 수 없습니다.
+- 앱이 회사에 의해 또는 회사를 위해 개발되어야 합니다. Google Play 스토어에서 다운로드한 앱에서 이 도구를 사용할 수 없습니다.
 
--   앱 래핑 도구를 실행하려면 최신 버전의 [Java 런타임 환경](https://java.com/download/)을 설치한 다음 Windows 환경 변수에 Java path 변수를 C:\ProgramData\Oracle\Java\javapath로 설정해야 합니다. 도움이 더 필요하면 [Java 설명서](https://java.com/download/help/)를 참조하세요.
+- 앱 래핑 도구를 실행하려면 최신 버전의 [Java 런타임 환경](https://java.com/download/)을 설치한 다음 Windows 환경 변수에 Java path 변수를 C:\ProgramData\Oracle\Java\javapath로 설정해야 합니다. 도움이 더 필요하면 [Java 설명서](https://java.com/download/help/)를 참조하세요.
 
     > [!NOTE]
     > 일부 경우에 32비트 버전의 Java에서 메모리 문제가 발생할 수 있습니다. 64비트 버전을 설치하는 것이 좋습니다.
 
-- Android는 모든 앱 패키지(.apk)를 서명해야 합니다. 기존 인증서와 전체 서명 인증서 **재사용** 지침은 [서명 인증서 재사용 및 앱 래핑](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)을 참조하세요. Java 실행 파일 keytool.exe를 사용하여 래핑된 출력 앱에 서명하는 데 필요한 **새** 자격 증명을 생성합니다. 설정된 모든 암호에는 보안이 적용되어야 하지만, 나중에 앱 래핑 도구를 실행하는 데 필요하므로 암호를 적어 두세요.
+- Android는 모든 앱 패키지(.apk)를 서명해야 합니다. 기존 인증서와 전체 서명 인증서 **재사용** 지침은 [서명 인증서 재사용 및 앱 래핑](app-wrapper-prepare-android.md#reusing-signing-certificates-and-wrapping-apps)을 참조하세요. Java 실행 파일 keytool.exe를 사용하여 래핑된 출력 앱에 서명하는 데 필요한 **새** 자격 증명을 생성합니다. 설정된 모든 암호에는 보안이 적용되어야 하지만, 나중에 앱 래핑 도구를 실행하는 데 필요하므로 암호를 적어 두세요.
 
     > [!NOTE]
     > Intune 앱 래핑 도구는 앱 서명 시 Google의 v2 서명 방식과 향후 예정된 v3 서명 방식을 지원하지 않습니다. Intune 앱 래핑 도구를 사용하여 .apk 파일을 래핑한 경우, [Google에서 제공하는 Apksigner 도구]( https://developer.android.com/studio/command-line/apksigner)를 사용하는 것을 추천합니다. 이렇게 하면 앱이 최종 사용자 디바이스에서 Android 표준에 의해 올바르게 실행됩니다. 
 
-- (선택 사항) 경우에 따라 앱은 래핑 중에 추가된 Intune MAM SDK 클래스로 인해 DEX(Dalvik 실행 파일) 크기 제한에 도달할 수 있습니다. DEX 파일은 Android 앱 컴파일의 일부입니다. Intune 앱 래핑 도구는 최소 API 사용 하 여 앱 수준 21 이상에 대 한 래핑 중 DEX 파일 오버플로 자동으로 처리 (의 [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). 최소 API 수준 < 21을 사용 하 여 앱에 대 한 모범 사례는 래퍼를 사용 하 여 API 수준 min을 높이기 위해 것 `-UseMinAPILevelForNativeMultiDex` 플래그입니다. 앱의 최소 API 수준을 높일 수 없습니다 고객에 게 다음 DEX 오버플로 해결 방법이 제공 됩니다. 특정 조직에서는 앱을 컴파일하는 사용자(예: 앱 빌드 팀)와 함께 작업해야 할 수 있습니다.
-* ProGuard를 사용 하 여 앱의 주 DEX 파일에서 사용 되지 않는 클래스 참조를 제거 합니다.
-* V3.1.0를 사용 하는 고객에 대 한 이상의 Android Gradle 플러그 인을 사용 하지 않도록 설정 합니다 [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)합니다.  
+- (선택 사항) 경우에 따라 앱은 래핑 중에 추가된 Intune MAM SDK 클래스로 인해 DEX(Dalvik 실행 파일) 크기 제한에 도달할 수 있습니다. DEX 파일은 Android 앱 컴파일의 일부입니다. Intune 앱 래핑 도구는 최소 API 수준 21 이상 ([v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)의 경우)을 사용 하 여 앱을 래핑하는 동안 DEX 파일 오버플로를 자동으로 처리 합니다. 64값51값202값144 최소 API 수준 < 21 인 앱의 경우 래퍼의 `-UseMinAPILevelForNativeMultiDex` 플래그를 사용 하 여 최소 API 수준을 늘리는 것이 가장 좋습니다. 앱의 최소 API 수준을 늘릴 수 없는 고객의 경우 다음 DEX 오버플로 해결 방법을 사용할 수 있습니다. 특정 조직에서는 앱을 컴파일하는 사용자(예: 앱 빌드 팀)와 함께 작업해야 할 수 있습니다.
+* ProGuard를 사용 하 여 앱의 기본 DEX 파일에서 사용 되지 않는 클래스 참조를 제거 합니다.
+* V 3.1.0 이상의 Android Gradle 플러그 인을 사용 하는 고객의 경우에는 [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)를 사용 하지 않도록 설정 합니다.  
 
 ## <a name="install-the-app-wrapping-tool"></a>앱 래핑 도구 설치
 
-1.  [GitHub 리포지토리](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)에서 Android용 Intune 앱 래핑 도구에 대한 InstallAWT.exe 설치 파일을 Windows 컴퓨터에 다운로드합니다. 설치 파일을 엽니다.
+1. [GitHub 리포지토리](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)에서 Android용 Intune 앱 래핑 도구에 대한 InstallAWT.exe 설치 파일을 Windows 컴퓨터에 다운로드합니다. 설치 파일을 엽니다.
 
-2.  사용권 계약에 동의한 다음 설치를 완료합니다.
+2. 사용권 계약에 동의한 다음 설치를 완료합니다.
 
 이 도구를 설치한 폴더를 메모해 둡니다. 기본 위치는 C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool입니다.
 
@@ -79,6 +78,7 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
    ```
 
 3. **invoke-AppWrappingTool** 명령을 사용하여 도구를 실행합니다. 사용 구문은 다음과 같습니다.
+
    ```PowerShell
    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
@@ -95,7 +95,7 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
 |**-KeyAlias**&lt;String&gt;|서명에 사용할 키의 이름입니다.| |
 |**-KeyPassword**&lt;SecureString&gt;|서명에 사용될 프라이빗 키의 암호를 해독하는 데 사용되는 암호입니다.| |
 |**-SigAlg**&lt;SecureString&gt;| (선택 사항) 서명에 사용할 서명 알고리즘의 이름입니다. 이 알고리즘은 프라이빗 키와 호환해야 합니다.|예: SHA256withRSA, SHA1withRSA|
-|**-UseMinAPILevelForNativeMultiDex**| (선택 사항) 이 플래그를 사용 하 여 원본 Android 앱의 최소 API 수준 21로 증가 합니다. 이 플래그는이 앱을 설치할 수는 제한 하는 대로 확인 메시지가 나타납니다. 사용자가 매개 변수를 추가 하 여 확인 대화 상자를 건너뛸 수 "-확인: $false" PowerShell 명령에 해당 합니다. 플래그를 고객이 DEX 오버플로 오류로 인해 성공적으로 래핑할 실패 하는 최소 API < 21을 사용 하 여 앱에만 사용 해야 합니다. | |
+|**-UseMinAPILevelForNativeMultiDex**| 필드 이 플래그를 사용 하 여 소스 Android 앱의 최소 API 수준을 21로 늘립니다. 이 플래그는이 앱을 설치할 수 있는 사용자를 제한 하므로 확인 메시지를 표시 합니다. 사용자는 PowerShell 명령에 "-Confirm: $false" 매개 변수를 추가 하 여 확인 대화 상자를 건너뛸 수 있습니다. DEX 오버플로 오류로 인해 성공적으로 줄 바꿈되는 데 실패 한 min API < 21이 있는 앱의 고객만 플래그를 사용 해야 합니다. | |
 | **&lt;CommonParameters&gt;** | (선택 사항) 명령은 verbose, debug와 같은 일반적인 PowerShell 매개 변수를 지원합니다. |
 
 
@@ -110,10 +110,13 @@ Android용 Microsoft Intune 앱 래핑 도구를 사용하여 해당 앱 코드�
 **예:**
 
 PowerShell 모듈을 가져옵니다.
+
 ```PowerShell
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
 ```
+
 네이티브 앱 HelloWorld.apk에서 앱 래핑 도구를 실행합니다.
+
 ```PowerShell
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```
@@ -128,12 +131,12 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 * Android용 Intune 앱 줄 바꿈 도구는 주요 버그 수정 또는 새로운 특정 Intune 애플리케이션 보호 정책 기능을 사용할 수 있는 새 버전을 릴리스했습니다. 이는 [Android용 Microsoft Intune 앱 줄 바꿈 도구](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)에 대한 GitHub 리포지토리를 통해 6-8주마다 발생합니다.
 
 다시 줄 바꿈하기 위한 몇 가지 모범 사례는 다음과 같습니다. 
-* 빌드 프로세스 중에 사용된 서명 인증서를 유지 관리하려면 [서명 인증서 재사용 및 앱 래핑](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)을 참조하세요.
+* 빌드 프로세스 중에 사용된 서명 인증서를 유지 관리하려면 [서명 인증서 재사용 및 앱 래핑](app-wrapper-prepare-android.md#reusing-signing-certificates-and-wrapping-apps)을 참조하세요.
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>서명 인증서 재사용 및 앱 래핑
 Android의 경우 Android 디바이스에 설치하려면 유효한 인증서로 모든 앱에 서명해야 합니다.
 
-래핑된 앱은 래핑 프로세스 중에 또는 기존 서명 도구를 사용하여 래핑한 *후에* 서명될 수 있습니다(래핑 전에 앱에 있는 모든 서명 정보는 무시됨). 가능하면 빌드 프로세스에서 이미 사용된 서명 정보를 래핑 중에 사용해야 합니다. 특정 조직에서는 이를 위해 키 저장소 정보를 소유한 사용자(앱 빌드 팀)와 함께 작업해야 할 수 있습니다. 
+래핑된 앱은 래핑 프로세스 중에 또는 기존 서명 도구를 사용하여 래핑한 *후에* 서명될 수 있습니다(래핑 전에 앱에 있는 모든 서명 정보는 무시됨). 가능하면 빌드 프로세스에서 이미 사용된 서명 정보를 래핑 중에 사용해야 합니다. 특정 조직에서는 이를 위해 키 저장소 정보를 소유한 사용자(앱 빌드 팀)와 함께 작업해야 할 수 있습니다. 
 
 이전 서명 인증서를 사용할 수 없거나 앱이 이전에 배포되지 않은 경우 [Android Developer Guide](https://developer.android.com/studio/publish/app-signing.html#signing-manually)(Android 개발자 가이드)의 지침에 따라 새 서명 인증서를 만들 수 있습니다.
 
@@ -142,17 +145,17 @@ Android의 경우 Android 디바이스에 설치하려면 유효한 인증서로
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>앱 래핑 도구를 실행하기 위한 보안 고려 사항
 잠재적인 스푸핑, 정보 공개 및 권한 상승 공격을 방지하려면:
 
--   입력 LOB(기간 업무) 애플리케이션, 출력 애플리케이션 및 Java KeyStore가 앱 래핑 도구를 실행한 것과 같은 Windows 컴퓨터에 있는지 확인합니다.
+- 입력 LOB(기간 업무) 애플리케이션, 출력 애플리케이션 및 Java KeyStore가 앱 래핑 도구를 실행한 것과 같은 Windows 컴퓨터에 있는지 확인합니다.
 
--   출력 애플리케이션을 도구가 실행 중인 것과 같은 컴퓨터의 Intune에 가져옵니다. Java keytool에 대한 자세한 내용은 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)을 참조하세요.
+- 출력 애플리케이션을 도구가 실행 중인 것과 같은 컴퓨터의 Intune에 가져옵니다. Java keytool에 대한 자세한 내용은 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)을 참조하세요.
 
--   출력 애플리케이션 및 도구가 UNC(Universal Naming Convention) 경로에 있는데 도구와 입력 파일을 동일한 컴퓨터에서 실행하지 않는 경우, [IPsec(Internet Protocol Security)](https://wikipedia.org/wiki/IPsec) 또는 [SMB(Server Message Block) 서명](https://support.microsoft.com/kb/887429)을 사용하여 환경을 안전하게 설정합니다.
+- 출력 애플리케이션 및 도구가 UNC(Universal Naming Convention) 경로에 있는데 도구와 입력 파일을 동일한 컴퓨터에서 실행하지 않는 경우, [IPsec(Internet Protocol Security)](https://wikipedia.org/wiki/IPsec) 또는 [SMB(Server Message Block) 서명](https://support.microsoft.com/kb/887429)을 사용하여 환경을 안전하게 설정합니다.
 
--   애플리케이션이 신뢰할 수 있는 소스에서 오는지 확인합니다.
+- 애플리케이션이 신뢰할 수 있는 소스에서 오는지 확인합니다.
 
--   래핑된 앱을 포함하고 있는 출력 디렉터리를 보호합니다. 출력에 대한 사용자 수준 디렉터리를 사용하는 것이 좋습니다.
+- 래핑된 앱을 포함하고 있는 출력 디렉터리를 보호합니다. 출력에 대한 사용자 수준 디렉터리를 사용하는 것이 좋습니다.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 - [Microsoft Intune으로 모바일 애플리케이션 관리용 앱을 준비하는 방법 결정](apps-prepare-mobile-application-management.md)
 
 - [Android용 Microsoft Intune 앱 SDK 개발자 가이드](app-sdk-android.md)
