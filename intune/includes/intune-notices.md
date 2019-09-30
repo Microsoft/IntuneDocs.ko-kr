@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166348"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71279907"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다. 
 
@@ -66,38 +66,6 @@ Azure Portal의 Intune에 업데이트된 UI 작성 및 편집 환경을 제공�
 #### <a name="additional-information"></a>추가 정보 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>변경 계획: 9월에 Intune이 iOS 11 이상 지원으로 전환 <!-- 4665324-->
-9월에 Apple이 iOS 13을 출시할 예정입니다. Intune 등록, 회사 포털 및 관리 브라우저는 iOS 13 릴리스 직후에 iOS 11 이상을 지원하도록 전환할 예정입니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-O365 모바일 앱이 iOS 11.0 이상에서 지원되는 경우 이는 사용자에게 영향을 주지 않을 수 있습니다. 이미 OS 또는 디바이스를 업그레이드했을 가능성이 큽니다. 그러나 아래에 나열된 모든 디바이스가 있거나 아래에 나열된 모든 디바이스를 등록하려는 경우 아래의 디바이스가 iOS 10보다 큰 OS를 지원하지 않는다는 것을 알고 있어야 합니다. 이러한 디바이스는 iOS 11 이상을 지원하는 디바이스로 업그레이드해야 합니다.
-
-- iPhone 5
-- iPhone 5c
-- iPad(4세대)
-
-APP(애플리케이션 보호 정책)를 사용하는 경우 “최소 iOS 운영 체제 필수(경고만)” 액세스 설정도 설정할 수 있습니다.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
-디바이스 또는 사용자가 받을 수 있는 영향에 대해 알아보려면 Intune 보고를 확인하세요. **디바이스** > **모든 디바이스**로 이동하고 OS를 기준으로 필터링합니다. 추가 열에 추가하면 iOS 10을 실행하는 디바이스를 가진 조직의 사용자를 식별하는 데 도움이 됩니다. 최종 사용자는 9월 전에 지원되는 OS 버전으로 자신의 디바이스를 업그레이드하도록 요청합니다.
-
-### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>변경 계획: iOS용 Intune App SDK 버전 8.1.1 이상 지원 <!-- 3586942-->
-2019년 9월부터 Intune은 Intune App SDK 8.1.1 이상을 사용하여 iOS 앱 지원으로 전환됩니다. 8\.1.1 미만의 SDK 버전으로 빌드된 앱은 더 이상 지원되지 않습니다. 이 변경 내용은 9월경에 적용될 예정이며 MC181399에서도 공지되는 Apple의 iOS 13 릴리스와 함께 적용될 예정입니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-Intune App SDK 또는 App Wrapping 통합을 사용하면 데이터 암호화를 통해 승인되지 않은 애플리케이션 및 사용자로부터 회사 데이터를 보호할 수 있습니다. iOS용 Intune App SDK는 Intune APP(앱 보호 정책)에서 암호화를 사용하도록 설정할 때 기본적으로 256비트 암호화 키를 사용합니다. 이 변경 후 128비트 암호화 키를 사용하는 8.1.1 이전 SDK 버전의 iOS 앱은 더 이상 SDK 8.1.1과 통합된 애플리케이션 또는 256비트 키를 사용하여 데이터를 공유할 수 없습니다. 모든 iOS 앱에는 보호된 데이터 공유를 허용하기 위해 SDK 버전 8.1.1 이상이 있어야 합니다.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
-Microsoft, 타사 및 LOB(기간 업무) 앱을 확인합니다. Intune 앱으로 보호되는 모든 애플리케이션이 SDK 버전 8.1.1 이상을 사용하고 있는지 확인합니다.
-
-- LOB 앱의 경우: SDK 버전 8.1.1 이상과 통합된 앱을 다시 게시해야 할 수도 있습니다. 최신 SDK 버전을 사용하는 것이 좋습니다. 앱 보호 정책용 LOB 앱을 준비하는 방법에 대한 내용은 [앱 보호 정책용 기간 업무 앱 준비](../apps-prepare-mobile-application-management.md)를 참조하세요.
-- Microsoft/타사 앱의 경우: 이러한 앱의 최신 버전을 사용자에게 배포하고 있는지 확인합니다.
-
-SDK에 대한 이 변경 내용을 포함하려면 설명서 또는 개발자 지침도 업데이트해야 합니다.
-
-#### <a name="additional-information"></a>추가 정보
-[앱 보호 정책에 대해 LOB(기간 업무) 앱 준비](../apps-prepare-mobile-application-management.md)
-
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>변경 계획: Intune의 새로운 Windows 업데이트 설정 <!-- 4464404 -->
 Intune 서비스의 8월 릴리스 또는 1908부터, “사용자가 다시 시작할 수 있도록 허용(개입형 다시 시작)” 대신, 구성할 수 있는 새로운 "최종 기한 설정"이 추가됩니다. 1909 또는 9월 업데이트의 UI에서는 개입형 다시 시작 설정을 사용하지 않도록 설정하고, 10월 말에 콘솔에서 완전히 제거할 예정입니다. 
 
@@ -132,3 +100,19 @@ Android용 SDK 또는 앱을 사용하고 있지 않거나 향후 사용할 예�
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
 최신 Intune 앱 SDK를 사용하여 앱을 래핑합니다. 사용자가 개인 디바이스의 최종 사용자에게 업그레이드할 것을 알리도록 "최소 OS 버전 필요(경고만)" 조건부 시작 설정을 지정할 수도 있습니다.
+
+
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune 변경 계획: Windows 7 지원 종료 임박 <!-- 3042987 -->
+지난 2018년 9월에 MC148476에서 그리고 2019년 3월에 MC176794에서 다시 공지한 대로 2020년 1월 14일에 Windows 7의 연장 지원이 종료됩니다. 이때 Intune은 Windows 7을 실행하는 디바이스에 대한 지원을 중지하므로 새로운 기술 지원 및 새로운 최종 사용자 환경을 제공하는 데 집중할 수 있습니다. 이 날짜 이후에는 Windows 7 PC를 보호하는 데 유용한 기술 지원과 자동 업데이트를 더 이상 Intune을 통해 받을 수 없습니다. 서비스 또는 지원을 더 이상 받을 수 없게 되는 시나리오를 방지하려면 2020년 1월 1일 이전에 Windows 10으로 전환하는 것이 좋습니다. Windows 지원 수명 주기에 대한 자세한 정보는 [여기](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+현재 레거시 Intune PC 소프트웨어 에이전트를 사용하여 Windows 7 PC를 관리하고 있는 경우 이 메시지가 표시됩니다. Windows 7 연장 지원이 종료되기까지 1년이 안 남은 경우, 가능하면 빨리 조직 차원에서 Windows 10으로 업그레이드를 시작하는 것이 좋습니다. PC 관리 기능은 Windows 10 운영 체제에 직접 구축되므로 Windows 7용 Intune 소프트웨어 클라이언트와 같은 클라이언트 에이전트를 더 이상 설치할 필요가 없습니다. Windows 8.1부터 Microsoft는 MDM(모바일 장치 관리) 아키텍처를 사용하여 Windows PC를 프로비전, 구성, 업데이트 및 관리합니다. Intune 설정을 마치면 MDM 채널을 통해 [Windows 10 PC를 Intune에 등록](..\windows-enroll.md)함으로써 Windows 등록을 간소화할 수 있습니다. 이러한 "에이전트 없는" MDM 관리 솔루션을 사용하여 Windows 10 PC를 관리하는 것이 좋습니다.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+조직 차원에서 이 작업 계획을 즉시 고려하는 것이 좋습니다.
+
+- 2020년 1월 14일 이전에 Windows 7 제품군을 Windows 10으로 업그레이드하는 계획을 세우세요.
+- 기존 Windows 7 PC 제품군을 Windows 10으로 업그레이드하는 방법에 대한 자세한 내용은 [Windows 10 배포 지원](https://docs.microsoft.com/windows/deployment/)을 살펴보세요.
+- Microsoft의 애플리케이션 호환성 약속을 지원하는 FastTrack을 통해 [Desktop App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) 제안을 검토합니다.
+- 기존 레거시 Intune 소프트웨어 클라이언트 관리 디바이스를 Microsoft 권장 솔루션으로 전환함으로써 MDM 관리를 사용하여 Windows 10을 관리합니다. Azure Portal에서 Intune용 MDM 관리를 사용하여 모든 새로운 Windows 10 PC를 등록합니다.
+- 자세한 정보는 [여기에 게시된 블로그](https://aka.ms/Windows7_Intune)를 참조하세요.
