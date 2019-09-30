@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460617"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239587"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune의 지원되는 운영 체제 및 브라우저
 
@@ -115,12 +114,12 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 ### <a name="intune-classic-portal"></a>Intune 클래식 포털
 
-Intune PC 소프트웨어 클라이언트 및 Mobile Threat Defense 파트너와의 통합과 같은 Intune 클래식 전용 기능은 Intune 클래식 포털(https://manage.microsoft.com))에서만 제공됩니다. Intune 클래식 포털에는 Silverlight 브라우저 지원이 필요합니다.
+Intune 클래식 포털은 Intune PC 소프트웨어 클라이언트에 등록된 디바이스를 관리하는 데만 사용됩니다(https://manage.microsoft.com) ). Intune 클래식 포털에는 Silverlight 브라우저 지원이 필요합니다.
 
 Intune 콘솔을 지원하는 Silverlight 브라우저는 다음과 같습니다.
 - Internet Explorer 10 이상
 - Google Chrome(버전 42 이전 버전)
-- Silverlight가 지원되는 Mozilla Firefox [자세히 알아보기](https://go.microsoft.com/fwlink/?linkid=836872)
+- Silverlight가 지원되는 Mozilla Firefox(버전 56 이전 버전)
 
 > [!Note]
 > Microsoft Edge 및 모바일 브라우저는 [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx)를 지원하지 않기 때문에 Intune 클래식 포털용으로 지원되지 않습니다.

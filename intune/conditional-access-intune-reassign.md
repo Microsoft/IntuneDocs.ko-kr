@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 36e7b8468e4ee9d1f6be71a82d18f066bd7568d4
+ms.sourcegitcommit: 9110124a481160039d476cf0374a4fa0464a8509
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883784"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256208"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Intune 클래식 포털에서 Azure Portal로 조건부 액세스 정책 다시 할당
 
@@ -194,15 +194,9 @@ Azure Portal에서 조건부 액세스 정책을 다시 할당했으면 이전�
 
 ### <a name="to-disable-the-conditional-access-policies"></a>조건부 액세스 정책을 사용하지 않도록 설정하려면
 
-1. [Intune 클래식 포털](https://manage.microsoft.com)로 이동한 다음 자격 증명을 사용하여 로그인합니다.
+MDM이 Intune 클래식 포털에서 제거되었으므로 이러한 클래식 정책을 보거나 사용하지 않도록 설정하기 위한 다음 링크가 제공됩니다.
 
-2. 왼쪽 메뉴에서 **정책**을 선택합니다.
-
-3. **조건부 액세스**를 선택한 다음 조건부 액세스 정책을 만든 Microsoft 클라우드 서비스(예: Exchange Online, SharePoint Online 등)를 선택합니다.
-
-4. **조건부 액세스 정책 사용** 옵션의 선택을 취소하고 **저장**을 클릭합니다.
-
-    ![Intune 클래식 포털에서 조건부 액세스 정책 사용 안 함 이미지](./media/reassign-ca-18.png)
+https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies
 
 ## <a name="see-also"></a>참고 항목
 

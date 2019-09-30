@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/28/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8f069405d75b196c26c9c844e0d0a4bd57299199
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394240"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239294"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS 사용자가 앱을 얻는 방법
 
@@ -36,7 +35,7 @@ ms.locfileid: "57394240"
 
 **관리되는 앱**--정책을 통해 관리할 수 있고 Intune에서 "래핑"했거나 Intune 앱 SDK(소프트웨어 개발 키트)로 빌드된 앱입니다. 이러한 앱은 Intune에서 관리할 수 있고, 앱 보호 정책을 적용할 수 있습니다.
 
-**관리되지 않는 앱**--정책을 통해 관리할 수 있고 Intune에서 래핑되지 않았거나 Intune 앱 SDK를 통합하지 않은 앱입니다. Application policies cannot be applied to these apps.
+**관리되지 않는 앱**--사용자가 Intune 앱 SDK와 연결되지 않은 iOS App Store에서 다운로드할 수 있는 앱입니다. Intune은 이러한 앱의 배포, 관리 또는 선택적 초기화를 제어하지 않습니다.  
 
 Apple 제한에 따라 기간 업무 앱과 관리되는 App Store 앱을 회사 포털 앱에 올릴 수 없습니다. 이 문제를 해결하기 위해 iOS용 회사 포털 앱의 타일이 종류에 관계없이 모든 앱에 대해 단일 위치(회사 포털 웹 사이트)에서 서로 다른 보기를 가리킵니다.
 
@@ -53,7 +52,7 @@ Apple 제한에 따라 기간 업무 앱과 관리되는 App Store 앱을 회사
 
 앱을 추가하는 방법에 대한 자세한 내용은 [Microsoft Intune에 앱을 추가하는 방법](apps-add.md)을 참조하세요.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 [Android 사용자가 앱을 얻는 방법](end-user-apps-android.md)
 
 [Windows 사용자가 앱을 얻는 방법](end-user-apps-windows.md)

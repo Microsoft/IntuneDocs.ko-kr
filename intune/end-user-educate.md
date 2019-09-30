@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569781"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239790"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Microsoft Intune에 대한 최종 사용자 교육 방법
 
@@ -58,9 +57,9 @@ __사용자는 Intune으로 인해 어떤 불편을 겪을 수 있을까요?__  
 
 * __쉽게 액세스할 수 있게 합니다.__ 사용자에게 디바이스 문제에 대한 도움말을 검색할 수 있는 위치를 알려줍니다. [회사 포털을 사용자 지정](company-portal-customize.md)하는 경우 IT 관리자의 연락처 정보가 포함되어야 합니다.
 
-* __개인적입니다.__ 조직의 배포와 관련된 지침을 제공합니다. 이 작업은 사용자가 자신의 경험에 관심이 있음을 보여 줍니다. 이 [사용자 지정 가능한 Intune 사용자 등록 템플릿](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c)을 사용하여 사용자에 대한 고유한 등록 지침을 만듭니다.
+* __개인적입니다.__ 조직의 배포와 관련된 지침을 제공합니다. 이 작업은 사용자가 자신의 경험에 관심이 있음을 보여 줍니다. 이 사용자 지정 가능한 [Intune 채택 키트](https://aka.ms/IntuneAdoptionKit)를 사용하여 사용자에 대한 고유한 등록 지침을 만듭니다.
 
-* __다른 커뮤니케이션 방법을 찾습니다.__ 사용자에게는 [다양한 학습 스타일](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/)과 선호하는 정보 사용 방법이 있습니다. Intune에서는 시각적 학습자를 위해 Channel 9에서 [다양한 디바이스 유형을 등록하는 방법에 대한 비디오 버전](https://channel9.msdn.com/Series/IntuneEnrollment)을 제공합니다. 비디오는 사용자 자신의 [SharePoint 사이트](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)에 직접 포함될 수 있습니다. 비디오 또는 오디오 트랙의 로컬 복사본을 다운로드할 수도 있습니다.
+* __다른 커뮤니케이션 방법을 찾습니다.__ 사용자에게는 [다양한 학습 스타일](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/)과 선호하는 정보 사용 방법이 있습니다. Intune에서는 시각적 학습자를 위해 Channel 9에서 [다양한 디바이스 유형을 등록하는 방법에 대한 비디오 버전](https://channel9.msdn.com/Series/IntuneEnrollment)을 제공합니다. 비디오는 사용자 자신의 [SharePoint 사이트](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)에 직접 포함될 수 있습니다. 비디오 또는 오디오 트랙의 로컬 복사본을 다운로드할 수도 있습니다.
 
 * __최종 사용자 경험을 파악합니다.__ Intune 사용자 환경은 생산성에도 영향을 줍니다. 사용자 환경을 이해하면 디바이스 및 사용자 문제를 더 쉽게 해결할 수 있습니다. 예를 들어 사용자가 앱을 얻는 방법을 알아보고 이해할 수 있습니다. 이 정보를 미리 알면 문제를 더 쉽고 빠르게 진단하고 수정할 수 있습니다.
 

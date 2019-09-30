@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99ccc8c61aa781bdcb6ac79c76202253597b8ef6
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 4012dc4046eccf836c73e15409dae182eaf12231
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070984"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163266"
 ---
-# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Android Enterprise 전용 디바이스 또는 완전 관리형 디바이스 등록(미리 보기)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices"></a>Android Enterprise 전용 디바이스 또는 완전 관리형 디바이스 등록
 
 Intune에서 [Android Enterprise 전용 디바이스](android-kiosk-enroll.md) 또는 [완전 관리형 디바이스](android-fully-managed-enroll.md)를 설정한 후에 디바이스를 등록할 수 있습니다. Android Enterprise 디바이스를 등록하는 방법은 운영 체제에 따라 다릅니다.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd4a195af0b3be5038a34b44606abcddf02c5a1e
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 8ca3cf1cfed2d19a4b40aa667c0b6a1325eee531
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071550"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140779"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록
 
@@ -115,7 +115,7 @@ Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 �
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 등록 프로필 만들기
 
-이제 토큰을 설치했으므로 DEP 디바이스의 등록 프로필을 만들 수 있습니다. 디바이스 등록 프로필은 등록 중에 디바이스 그룹에 적용되는 설정을 정의합니다.
+이제 토큰을 설치했으므로 DEP 디바이스의 등록 프로필을 만들 수 있습니다. 디바이스 등록 프로필은 등록 중에 디바이스 그룹에 적용되는 설정을 정의합니다. DEP 토큰당 등록 프로필 수는 100개로 제한됩니다.
 
 > [!NOTE]
 > VPP 토큰에 대한 회사 포털 라이선스가 충분하지 않거나 토큰이 만료된 경우에는 디바이스가 차단됩니다. Intune은 토큰이 만료될 예정이거나 라이선스가 부족한 경우 경고를 표시합니다.

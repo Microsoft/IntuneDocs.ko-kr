@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,24 +16,27 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59569131"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239357"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>최종 사용자가 회사 포털 앱 메시지를 이해할 수 있도록 지원
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> 다음 정보는 Android 6.0 이상 디바이스에만 적용됩니다.
+> 다음 정보는 Android 6.0 이상 및 iOS 10 이상 디바이스에만 적용됩니다.
 
 최종 사용자가 회사 포털에서 볼 수 있는 다양한 앱을 이해합니다. 이러한 앱 메시지는 일반적으로 등록 프로세스의 여러 지점에 표시됩니다. 메시지가 표시되는 위치, 메시지의 의미, 사용자가 액세스를 거부하는 경우 발생되는 작업에 대해 알아봅니다. 또한 사용자에게 메시지를 가장 잘 설명하는 방법에 대해서도 알아봅니다.
 
 - __회사 포털에서 통화를 하고 전화 통화를 관리하도록 허용하시나요?__
 - __회사 포털에서 디바이스의 사진, 미디어 및 파일에 액세스하도록 허용하시겠습니까?__
+
+> [!NOTE]
+> Intune 서비스가 수집하는 모든 데이터는 어떤 이유로든 제3자에게 판매하지 않습니다.
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>회사 포털에서 통화를 하고 전화 통화를 관리하도록 허용하시겠습니까?
 
@@ -57,7 +59,7 @@ ms.locfileid: "59569131"
 사용자가 나중에 액세스를 허용하려는 경우 **설정** > **앱** > **회사 포털** > **사용 권한** > **전화**로 이동하면 됩니다.
 
 ### <a name="how-to-explain-this-to-your-users"></a>사용자에게 이를 설명하는 방법
-사용자에게 [Intune에서 Android 디바이스 등록](/intune-user-help/enroll-your-device-in-intune-android) 항목에서 자세한 내용을 참조하라고 합니다.
+사용자에게 [Intune에서 Android 디바이스 등록](/intune-user-help/enroll-device-android-company-portal) 항목에서 자세한 내용을 참조하라고 합니다.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>회사 포털에 연락처에 대한 액세스를 허용하시겠습니까?
 
@@ -78,7 +80,7 @@ Intune이 회사 계정을 만들어 해당 디바이스에 등록된 사용자�
 사용자가 나중에 액세스를 허용하려는 경우 **설정** > **앱** > **회사 포털** > **사용 권한** > **전화**로 이동하면 됩니다.
 
 ### <a name="how-to-explain-this-to-your-users"></a>사용자에게 이를 설명하는 방법
-사용자에게 [Intune에서 Android 디바이스 등록](/intune-user-help/enroll-your-device-in-intune-android) 항목에서 자세한 내용을 참조하라고 합니다.
+사용자에게 [Intune에서 Android 디바이스 등록](/intune-user-help/enroll-device-android-company-portal) 항목에서 자세한 내용을 참조하라고 합니다.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>회사 포털에서 디바이스의 사진, 미디어 및 파일에 액세스하도록 허용하시겠습니까?
 
@@ -140,5 +142,5 @@ WIP(Windows Information Protection) 앱 보호 정책에서 **허용된 앱** �
     회사 앱을 시작하고 사용할 수 있어야 합니다.
 
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 [Intune 사용 방법에 대해 최종 사용자에게 알릴 내용](end-user-educate.md)

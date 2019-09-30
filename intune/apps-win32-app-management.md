@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 22cf93aa7418e5e8be2338e70f762a451bb3bdcf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842194"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167153"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 독립 실행형 - Win32 앱 관리
 
@@ -194,6 +194,8 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 
     > [!NOTE]
     > **검색 규칙** 창에서 여러 규칙을 추가하도록 선택할 수 있습니다. **모든** 규칙의 조건이 충족되어야 앱을 검색할 수 있습니다.
+    >
+    > Intune에서 앱이 디바이스에 존재하지 않음을 감지하면 Intune은 24시간 후에 앱을 다시 제공합니다. 이러한 작업은 필수 의도가 있는 대상 앱에 대해서만 수행됩니다.
 
     - **검색 규칙을 수동으로 구성** - 다음 규칙 유형 중 하나를 선택할 수 있습니다.
         1. **MSI** - MSI 버전 확인을 기반으로 확인합니다. 이 옵션은 한 번만 추가할 수 있습니다. 이 규칙 유형을 선택하면 다음 두 가지 설정이 가능합니다.
@@ -278,7 +280,7 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 7. **그룹 추가** 창에서 **확인**을 선택합니다.
 8. 앱 **할당** 창에서 **저장**을 선택합니다.
 
-이 시점에서는 Win32 앱을 Intune에 추가하는 단계를 완료했습니다. 앱 할당 및 모니터링에 대한 자세한 내용은 [Microsoft Intune으로 그룹에 앱 할당](https://docs.microsoft.com/intune/apps-deploy) 및 [Microsoft Intune으로 앱 정보 및 할당 모니터링](https://docs.microsoft.com/intune/apps-monitor)을 참조하세요.
+이 시점에서는 Win32 앱을 Intune에 추가하는 단계를 완료했습니다. 앱 할당 및 모니터링에 대한 자세한 내용은 [Microsoft Intune으로 그룹에 앱 할당](apps-deploy.md) 및 [Microsoft Intune으로 앱 정보 및 할당 모니터링](apps-monitor.md)을 참조하세요.
 
 ## <a name="app-dependencies"></a>앱 종속성
 

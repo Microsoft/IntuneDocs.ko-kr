@@ -5,9 +5,8 @@ keywords: Intune이란
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2cde4e37889b981decfd18138feeb4edac46c4c8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460583"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238257"
 ---
 # <a name="what-is-microsoft-intune"></a>Microsoft Intune이란?
 
@@ -85,7 +84,7 @@ MAM(모바일 앱 관리)이라는 용어는 이러한 작업을 개별적으로
 Intune을 EMS의 다른 서비스와 함께 사용하면 모바일 운영 체제와 모바일 앱이 앱 구성을 통해 제공하는 기능 외에도 조직 모바일 앱 보안을 제공할 수 있습니다. EMS를 사용하여 관리되는 앱에서는 다음과 같이 보다 광범위한 일련의 모바일 앱 및 데이터 보호 기능에 액세스할 수 있습니다.
 
 * [Single sign-on](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [다단계 인증](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
+* [다단계 인증](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [앱의 조건부 액세스 - 모바일 앱에 회사 데이터가 포함된 경우 액세스 허용](app-based-conditional-access-intune.md)
 * [동일한 앱 내의 개인 데이터에서 회사 데이터 격리](app-protection-policy.md)
 * [앱 보호 정책(PIN, 암호화, 다른 이름으로 저장, 클립보드 등)](app-protection-policies.md)
@@ -100,7 +99,7 @@ Intune을 EMS의 다른 서비스와 함께 사용하면 모바일 운영 체제
 * 복사, 잘라내기/붙여넣기, 보기 등 사용자가 회사 정보로 수행할 수 있는 작업 제한
 * 모바일 앱에서 회사 데이터 제거(선택적 초기화 또는 회사 초기화라고도 함)
 
-Intune은 **앱 보호 정책** 기능을 통해 모바일 앱 보안을 제공합니다. 앱 보호 정책은 Azure AD ID를 사용하여 개인 데이터에서 회사 데이터를 분리합니다. 회사 자격 증명을 사용하여 액세스 되는 데이터에는 회사의 추가 보호가 제공됩니다.
+Intune은 **앱 보호 정책** 기능을 통해 모바일 앱 보안을 제공합니다. 앱 보호 정책은 Azure AD ID를 사용하여 개인 데이터에서 회사 데이터를 분리합니다. 회사 자격 증명을 사용하여 액세스되는 데이터에는 회사의 추가 보호가 제공됩니다.
 
 예를 들어 사용자가 회사 자격 증명을 사용하여 자신의 디바이스에 로그온할 때 해당 회사 ID를 사용하면 개인 ID에 대해 거부되는 데이터에 액세스할 수 있습니다. 해당 회사 데이터가 사용되면 앱 보호 정책에서 데이터의 저장 및 공유 방법을 제어합니다. 사용자가 자신의 개인 ID를 사용하여 디바이스에 로그온할 때 액세스되는 데이터에 동일한 보호가 적용되지 않습니다. 이러한 방식으로 IT는 회사 데이터를 제어하는 반면 최종 사용자는 개인 데이터에 대한 제어 및 개인 정보 취급 방침을 유지 관리합니다.
 

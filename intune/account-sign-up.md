@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 956fe061912e0eb96a18c410e1455252874d6b84
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 22e5c38be9dc5a8a09888651e471f64bf6739c72
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459954"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71238914"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Microsoft Intune에 등록 또는 로그인
 
@@ -37,7 +36,7 @@ Intune에 등록하기 전에 Microsoft Online Services 계정, 기업계약 또
 >[!WARNING]
 >새 계정을 등록한 후에는 기존 회사 또는 학교 계정을 결합할 수 없습니다.
 
-## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Intune에 등록 또는 로그인하는 방법
+## <a name="how-to-sign-up-for-intune"></a>Intune에 등록하는 방법
 
 1. [Intune 등록 페이지](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)를 방문합니다.
 
@@ -49,3 +48,31 @@ Intune에 등록하기 전에 Microsoft Online Services 계정, 기업계약 또
 새 구독을 등록하면 등록 과정 중에 제공한 메일 주소로 계정 정보가 포함된 메일 메시지를 받게 됩니다. 이 전자 메일을 통해 구독이 활성화된 것을 확인합니다.
 
 등록 과정을 완료하면 사용자를 추가하고 사용자에게 라이선스를 할당하는 데 사용되는 Microsoft 365 관리 센터로 이동됩니다. 기본 onmicrosoft.com 도메인 이름을 사용하는 클라우드 기반 계정만 사용하려면, 그대로 진행하여 이 곳에서 사용자를 추가하고 라이선스를 할당할 수 있습니다. 하지만, 조직의 [사용자 지정 도메인 이름](custom-domain-name-configure.md)을 사용하거나 온-프레미스 Active Directory의 [사용자 계정 정보를 동기화](users-add.md#sync-active-directory-and-add-users-to-intune)하려는 경우 브라우저 창을 닫을 수 있습니다.
+
+## <a name="sign-in-to-microsoft-intune"></a>Microsoft Intune에 로그인
+Intune에 등록한 후에는 [지원 브라우저](supported-devices-browsers.md#intune-supported-web-browsers)에서 디바이스를 사용하여 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인한 후 서비스를 등록할 수 있습니다.
+
+기본적으로 계정에 Azure AD의 다음 사용 권한 중 하나가 있어야 합니다.
+- 전역 관리자
+- Intune 서비스 관리자(Intune 관리자라고도 함)
+
+다른 권한을 가진 사용자에 대해 서비스를 관리할 수 있는 액세스 권한을 부여하려면 [역할 기반 액세스 제어](role-based-access-control.md)를 참조하세요.
+
+### <a name="intune-admin-portal-url"></a>Intune 관리 포털 URL
+
+Microsoft 365 관리 센터: https://devicemanagement.microsoft.com
+
+Intune Azure Portal: https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade
+
+교육용 Intune: https://intuneeducation.portal.azure.com
+
+Intune 클래식 포털: https://manage.microsoft.com Intune 클래식 포털은 Intune PC 소프트웨어 클라이언트에 등록된 디바이스를 관리하는 데만 사용됩니다.
+
+### <a name="urls-for-intune-services-provided-by-office-365"></a>Office 365에서 제공하는 Intune 서비스의 URL
+
+Microsoft 365 Business: https://portal.microsoft.com/adminportal
+
+Office 365 모바일 디바이스 관리: https://portal.office.com/adminportal/home#/MifoDevices
+
+## <a name="see-also"></a>참고 항목
+[Office 365, Azure 또는 Intune에 로그인 할 수 없음](https://support.microsoft.com/help/2412085)

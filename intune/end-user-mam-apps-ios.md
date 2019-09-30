@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f013ec1d40b9593e7eb8d317b5b63545c58f181
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4039c9e3ae53d8db8ee282f802cd86149b40021e
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399131"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "71239755"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황
 
@@ -30,7 +29,7 @@ ms.locfileid: "57399131"
 
  이 항목에서는 앱 보호 정책이 적용되는 앱을 사용하는 경우의 사용자 환경을 설명합니다. 앱 보호 정책은 사용자가 회사 계정을 사용하여 앱에 액세스하거나 회사의 비즈니스용 OneDrive 위치에 저장된 파일에 액세스하는 경우처럼 앱이 업무용으로 사용될 때만 적용됩니다.
 
-##  <a name="access-apps"></a>앱 액세스
+## <a name="access-apps"></a>앱 액세스
 
 디바이스가 **Intune에 등록되지 않은** 경우 사용자가 앱을 처음 사용할 때 앱을 다시 시작하라는 메시지가 표시됩니다. 앱 보호 정책을 앱에 적용할 수 있도록 앱을 다시 시작해야 합니다.
 
@@ -41,7 +40,7 @@ ms.locfileid: "57399131"
 
 **Intune에서 관리를 위해 등록**된 디바이스의 경우 사용자에게 앱이 현재 관리되고 있다는 메시지가 표시됩니다.
 
-##  <a name="use-apps-with-multi-identity-support"></a>다중 ID가 지원되는 앱 사용
+## <a name="use-apps-with-multi-identity-support"></a>다중 ID가 지원되는 앱 사용
 
 다중 ID를 지원하는 앱을 사용하면 앱이 회사 컨텍스트에서 사용되는 경우 앱 보호 정책이 적용되는 동안 다른 계정(회사 및 개인)을 사용하여 동일한 앱에 액세스할 수 있습니다.  
 
@@ -51,13 +50,13 @@ ms.locfileid: "57399131"
 
 앱 보호 정책은 앱을 업무용으로 사용할 때만 적용됩니다. 즉, 앱을 업무용으로 사용하는지 아니면 개인용으로 사용하는지에 따라 작동 방식이 달라질 수 있습니다.
 
-##  <a name="manage-user-accounts-on-the-device"></a>디바이스에서 사용자 계정 관리
+## <a name="manage-user-accounts-on-the-device"></a>디바이스에서 사용자 계정 관리
 
 다중 ID 애플리케이션에서 사용자는 계정을 여러 개 추가할 수 있습니다.  Intune 앱은 하나의 관리 계정만을 지원합니다.  Intune 앱은 관리되지 않는 계정 수를 제한하지 않습니다.
 
 애플리케이션에 관리 계정이 있는 경우:
-*   사용자가 두 번째 관리 계정을 추가하려고 시도한다면 어떤 관리 계정을 사용할 것인지 선택하라는 메시지가 표시됩니다.  다른 계정은 제거됩니다.
-*   IT 관리자가 두 번째 기존 계정에 정책을 추가한다면 어떤 관리 계정을 사용할 것인지 선택하라는 메시지가 표시됩니다.  다른 계정은 제거됩니다.
+* 사용자가 두 번째 관리 계정을 추가하려고 시도한다면 어떤 관리 계정을 사용할 것인지 선택하라는 메시지가 표시됩니다.  다른 계정은 제거됩니다.
+* IT 관리자가 두 번째 기존 계정에 정책을 추가한다면 어떤 관리 계정을 사용할 것인지 선택하라는 메시지가 표시됩니다.  다른 계정은 제거됩니다.
 
 여러 사용자 계정이 처리되는 방법을 더욱 상세하게 파악하려면 다음 예제 시나리오를 확인하세요.
 

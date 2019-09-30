@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 09/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e553229530f826ead91be981ff446b7cb3ebbf2
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: a9091b4623e456f5b00134542282b2032ce70e6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214292"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163747"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune에서 SCEP 인증서 프로필 만들기 및 할당
 
@@ -38,9 +38,19 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
 3. SCEP 인증서 프로필에 대한 **이름** 및 **설명**을 입력합니다.
 4. **플랫폼** 드롭다운 목록에서 이 SCEP 인증서에 대한 [지원되는 디바이스 플랫폼](certificates-configure.md#supported-platforms-and-certificate-profiles)을 선택합니다. 
 5. **프로필** 유형 드롭다운 목록에서 **SCEP 인증서**를 선택합니다.  
+   
+   **Android Enterprise** 플랫폼의 경우 *프로필 유형*이 두 가지 범주인 *디바이스 소유자만* 및 *회사 프로필만*으로 구분됩니다. 관리하는 디바이스에 대해 올바른 SCEP 인증서 프로필을 선택해야 합니다.  
 
-   > [!NOTE]  
-   > **Android Enterprise** 플랫폼의 경우 *프로필 유형*이 두 가지 범주인 *디바이스 소유자만* 및 *회사 프로필만*으로 구분됩니다.  SCEP 인증서 프로필은 *회사 프로필만*에서만 지원됩니다.
+   *디바이스 소유자만* 프로필에 대한 SCEP 인증서 프로필에는 다음과 같은 제한 사항이 있습니다.  
+
+   1. 다음 변수가 지원됩니다.  
+
+      - CN={{OnPrem_Distinguished_Name}}  
+      - CN={{onPremisesSamAccountName}}  
+
+   2. 모니터링에서는 디바이스 소유자 SCEP 인증서 프로필에 대해 인증서 보고를 사용할 수 없습니다.
+   
+   3. 디바이스 소유자용 SCEP 인증서 프로필로 프로비저닝되는 인증서의 해지는 Intune을 통해 지원되지 않지만, 외부 프로세스를 통하거나 인증 기관에서 직접 관리할 수 있습니다.
 
 6. **설정**을 선택하고 다음 구성을 완료합니다.
 

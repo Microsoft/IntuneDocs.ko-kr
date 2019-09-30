@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 80e70db4b64770af1a96ee7f24a3cf875269adce
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69545921"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163503"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune에서 디바이스의 Wi-Fi 설정 추가 및 사용
 
@@ -57,7 +57,7 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
 
       - **OWA(Outlook Web Access)**
       - **Android Enterprise**
-      - **iOS**
+      - **iOS/iPadOS**
       - **macOS**
       - **Windows 8.1 이상**
       - **Windows 10 이상**
@@ -73,7 +73,7 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
 
     - [OWA(Outlook Web Access)](wi-fi-settings-android.md)
     - [Android 엔터프라이즈](wi-fi-settings-android-enterprise.md)(전용 디바이스 포함)
-    - [iOS](wi-fi-settings-ios.md)
+    - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 이상](wi-fi-settings-windows.md)
     - [Windows 8.1 이상 설정](wi-fi-settings-import-windows-8-1.md)(Windows Holographic for Business 포함)

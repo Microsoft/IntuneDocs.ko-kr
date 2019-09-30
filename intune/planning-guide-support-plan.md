@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c71edf84fb1ade261eefc1b3de4543e941bf0657
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548325"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166813"
 ---
 # <a name="develop-a-support-plan"></a>지원 계획 개발
 
@@ -84,7 +84,7 @@ Intune 지원 교육 어젠더의 예가 아래에 제공되어 있습니다.
 
 - Q & A
 
-[Intune 설명서](https://docs.microsoft.com/intune/)에서는 Intune 개요, 자세한 기능 설명, 몇 가지 문제 해결 정보를 제공합니다. [Intune 포럼](https://social.technet.microsoft.com/Forums/home)은 Intune 설명서에서 다루지 않은 항목과 질문을 위한 커뮤니티 기반 리소스입니다.
+[Intune 설명서](index.yml)에서는 Intune 개요, 자세한 기능 설명, 몇 가지 문제 해결 정보를 제공합니다. [Intune 포럼](https://social.technet.microsoft.com/Forums/home)은 Intune 설명서에서 다루지 않은 항목과 질문을 위한 커뮤니티 기반 리소스입니다.
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>초기에 지원 팀을 참여시킬 어떤 기회가 있나요?
 

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b579849d9afdb50470b7a772e003cc616e1f94a0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2a534aef3cdb989376dc1c148abedfb4f4e4f78b
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530042"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162879"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Intune을 사용하여 디바이스에 이메일 설정 추가
 
@@ -40,23 +40,29 @@ Microsoft Intune에는 조직의 디바이스에 배포할 수 있는 여러 이
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
-3. 이메일 프로필의 **이름**과 **설명**을 입력합니다.
-4. 드롭다운 목록에서 **플랫폼**을 선택합니다. 옵션은 다음과 같습니다.
+3. 다음 속성을 입력합니다.
 
-    - **Android**(Samsung Android Knox Standard만 해당)
-    - **Android 엔터프라이즈**
-    - **iOS**
-    - **Windows Phone 8.1**
-    - **Windows 10 이상**
+    - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어, 올바른 정책 이름은 **모든 Windows 디바이스에 대한 메일 설정**입니다.
+    - **설명**: 프로필에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
+    - **플랫폼**: 디바이스 플랫폼을 선택합니다. 옵션은 다음과 같습니다.
 
-5. **프로필** 유형 드롭다운 목록에서 선택 **메일**을 선택합니다.
-6. 구성 가능한 설정은 플랫폼별로 다를 수 있습니다. 구체적인 설정을 보려면 플랫폼을 선택하세요.
+        - **Android**(Samsung Android Knox Standard만 해당)
+        - **Android 엔터프라이즈**
+        - **iOS/iPadOS**
+        - **Windows Phone 8.1**
+        - **Windows 10 이상**
+
+    - **프로필 유형**: **메일**을 선택합니다.
+
+4. 선택한 플랫폼에 따라 구성할 수 있는 설정이 다릅니다. 자세한 설정을 위한 플랫폼을 선택합니다.
 
     - [Android Samsung Knox Standard 설정](email-settings-android.md)
     - [Android Enterprise 설정](email-settings-android-enterprise.md)
-    - [iOS 설정](email-settings-ios.md)
+    - [iOS/iPadOS 설정](email-settings-ios.md)
     - [Windows Phone 8.1 설정](email-settings-windows-phone-8-1.md)
     - [Windows 10 설정](email-settings-windows-10.md)
+
+5. 작업이 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다.
 
 설정을 입력하고 프로필을 만들면 프로필 목록에 프로필이 표시됩니다. 그런 다음, [이 프로필을 그룹에 할당](device-profile-assign.md)합니다.
 

@@ -7,22 +7,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: amyro
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dd8b35fbbff89ca7f4c259e1903f4c9f9a6e3b38
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459903"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71238372"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune에 디바이스를 등록할 수 있도록 사용자에게 라이선스 할당
 
@@ -45,7 +44,7 @@ ms.locfileid: "57459903"
 4. 이제 사용자 계정은 서비스를 사용하고 디바이스를 관리하고 등록하는 데 필요한 권한이 생겼습니다.
 
 > [!NOTE]
-> 사용자는 디바이스를 등록한 후에만 관리 콘솔에 표시됩니다. 또한 사용자 그룹을 선택하여 동시에 편집할 수 있습니다. 즉, 선택한 모든 사용자에 대한 라이선스를 추가하거나 바꾸도록 선택할 수 있습니다.
+> 사용자는 Intune PC 클라이언트를 사용하여 디바이스를 등록한 후에만 클래식 Intune 포털에 표시됩니다. 또한 사용자 그룹을 선택하여 동시에 편집할 수 있습니다. 즉, 선택한 모든 사용자에 대한 라이선스를 추가하거나 바꾸도록 선택할 수 있습니다.
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Azure Active Directory를 사용하여 Intune 라이선스 할당
 
@@ -63,7 +62,7 @@ Intune for Education 라이선스를 할당할 경우 Intune A Direct 라이선�
 SDS에 대한 자세한 내용은 이 [학교 데이터 동기화 및 강의실 개요](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)를 참조하세요.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>사용자 및 디바이스 라이선스가 서비스 액세스에 영향을 주는 방식
-* 사용자 소프트웨어 라이선스를 할당하는 각 **사용자**는 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)에 액세스하여 최대 15대의 디바이스와 애플리케이션을 관리하는 데 해당 서비스와 소프트웨어를 사용할 수 있습니다.
+* 사용자 소프트웨어 라이선스를 할당하는 각 **사용자**는 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)에 액세스하여 최대 15대의 MDM 디바이스와 애플리케이션을 관리하는 데 해당 서비스와 소프트웨어를 사용할 수 있습니다. Intune PC 에이전트는 사용자 라이선스당 5대의 물리적 머신 및 1개의 가상 머신을 허용합니다.
 * 사용자 라이선스와 별도로 모든 디바이스에 대해 라이선스를 구입할 수 있습니다. 디바이스에는 디바이스 라이선스를 할당할 필요가 없습니다. 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)를 액세스하고 사용하는 각 디바이스에는 디바이스 라이선스가 할당되어야 합니다.
 * 여러 사용자가 디바이스를 사용하는 경우 각 사용자에게 디바이스 소프트웨어 라이선스가 있어야 하거나, 모든 사용자에게 사용자 소프트웨어 라이선스가 있어야 합니다.
 

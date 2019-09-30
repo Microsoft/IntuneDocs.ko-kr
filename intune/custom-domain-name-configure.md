@@ -6,9 +6,8 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 33d5c994e4a51542c39c61a1f2311fda5a0a7caf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567246"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71239509"
 ---
 # <a name="configure-a-custom-domain-name"></a>사용자 지정 도메인 이름 구성
 
@@ -33,9 +32,9 @@ ms.locfileid: "59567246"
 
 조직에서 Intune과 같은 Microsoft 클라우드 기반 서비스에 등록하면 Azure AD(Active Directory)에 호스트된 초기 도메인 이름(예: **your-domain.onmicrosoft.com**)이 제공됩니다. 이 예제에서 **your-domain**은 등록 시 선택한 도메인 이름입니다. **onmicrosoft.com**은 구독에 추가하는 계정에 할당되는 접미사입니다. 구독을 통해 제공되는 도메인 이름이 아니라 조직의 사용자 지정 도메인에서 Intune에 액세스하도록 구성할 수 있습니다.
 
-사용자 계정을 만들거나 온-프레미스 Active Directory를 동기화하기 전에 .onmicrosoft.com 도메인만 사용할지 아니면 사용자 지정 도메인 이름을 하나 이상 추가할지를 결정하는 것이 좋습니다. 사용자 관리가 간소화되도록 사용자를 추가하기 전에 사용자 지정 도메인을 설정합니다. 이렇게 하면 사용자가 다른 도메인 리소스에 액세스하는 데 사용하는 자격 증명으로 로그인할 수 있습니다.
+사용자 계정을 만들거나 온-프레미스 Active Directory를 동기화하기 전에 .onmicrosoft.com 도메인만 사용할지 아니면 사용자 지정 도메인 이름을 하나 이상 추가할지를 결정하는 것이 좋습니다. 사용자 관리가 간소화되도록 사용자를 추가하기 전에 사용자 지정 도메인을 설정합니다. 고객 도메인을 설정하면 사용자가 다른 도메인 리소스에 액세스하는 데 사용하는 자격 증명으로 로그인할 수 있습니다.
 
-Microsoft의 클라우드 기반 서비스에 가입한 경우 해당 서비스의 인스턴스는 클라우드 기반 서비스의 ID 및 디렉터리 서비스를 제공하는 Microsoft [Azure AD 테넌트](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)가 됩니다. 또한, 조직의 사용자 지정 도메인 이름을 사용하도록 Intune을 구성하는 작업은 다른 Azure AD 테넌트의 경우와 동일하므로 [도메인 추가](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)에 설명된 정보 및 프로시저를 사용할 수 있습니다.
+Microsoft의 클라우드 기반 서비스에 가입한 경우 해당 서비스의 인스턴스는 클라우드 기반 서비스의 ID 및 디렉터리 서비스를 제공하는 Microsoft [Azure AD 테넌트](https://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)가 됩니다. 조직의 사용자 지정 도메인 이름을 사용하도록 Intune을 구성하는 작업은 다른 Azure AD 테넌트의 경우와 동일하므로 [도메인 추가](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)에 설명된 정보 및 절차를 사용할 수 있습니다.
 
 > [!TIP]
 > 사용자 지정 도메인에 대해 자세히 알아보려면 [Azure Active Directory에서 사용자 지정 도메인 이름의 개념적 개요](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/)를 참조하세요.
@@ -53,7 +52,10 @@ Microsoft의 클라우드 기반 서비스에 가입한 경우 해당 서비스�
 4. **도메인 확인** 대화 상자가 열리고 DNS 호스팅 공급자에서 TXT 레코드를 만들기 위한 값이 표시됩니다.
     - **GoDaddy 사용자**: Microsoft 365 관리 센터는 사용자를 GoDaddy의 로그인 페이지로 리디렉션합니다. 자격 증명을 입력하고 도메인 변경 권한 계약에 동의하면 TXT 레코드가 자동으로 만들어집니다. 또는 [TXT 레코드를 만들](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a) 수도 있습니다.
     - **Register.com 사용자**: [단계별 지침](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify)에 따라 TXT 레코드를 만듭니다.
+5. [Intune 등록에 대한 추가 DNS 레코드를 만들어야 할 수도 있습니다](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium).
 
 사용자 지정 도메인을 추가 및 확인하는 단계는 [Azure Active Directory에서도 수행](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)할 수 있습니다.
 
 [Office 365의 초기 onmicrosoft.com 도메인 정보](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)에서 자세한 내용을 확인할 수 있습니다.
+
+등록을 Intune 서버로 리디렉션하는 DNS CNAME을 만들어 [Azure AD Premium 없이 Windows 등록을 간소화하는 방법](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium)에 대해 자세히 알아볼 수 있습니다.
