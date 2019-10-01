@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ea64a8b9c4e8fb044e0fd66be32dcc71e4a5aefc
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885060"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239442"
 ---
 # <a name="review-client-app-protection-logs"></a>클라이언트 앱 보호 로그 검토
 
@@ -31,7 +31,7 @@ ms.locfileid: "67885060"
 로그를 활성화하고 수집하는 프로세스는 플랫폼별로 다릅니다.
 - **Android 디바이스** - *회사 포털*을 사용합니다. [회사 지원팀에 이메일 로그](/intune-user-help/send-logs-to-your-it-admin-by-email-android)를 참조하세요
 - **iOS 디바이스** - Managed Browser를 사용하거나 *Microsoft Edge*를 사용하여 로그를 수집합니다. 자세한 내용은 Intune 지원 팀 블로그 [Intune Managed Browser의 로그 제출을 위한 새 Intune 진단 콘솔](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021)을 참조하세요. 
-- **Windows 10 디바이스** - *MDMDiag* 및 이벤트 로그를 사용합니다. 참고 항목: Windows 클라이언트에서 [Windows 10의 MDM 진단 오류](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) 및 블로그 [Windows 10 Intune 정책 실패 문제 해결](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
+- **Windows 10 디바이스** - *MDMDiag* 및 이벤트 로그를 사용합니다. 참고 항목: Windows 클라이언트에서 [Windows 10의 MDM 진단 오류](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) 및 블로그 [Windows 10 Intune 정책 실패 문제 해결](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)
 
 
 다음 표에는 로그에 기록된 설정에 대한 이름 및 설명이 나열되어 있습니다.

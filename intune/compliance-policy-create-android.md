@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 07/25/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7670af46657fed048bfe10b8659eae6d45db7620
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: e7c6cec515bfda95fed922785705b0e0b5339983
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423580"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71305086"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Android 설정
 
@@ -43,7 +42,7 @@ Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를
 ## <a name="device-health"></a>Device health
 
 - **루팅된 디바이스**: **블록**을 선택하여 루팅된(무단 해제된) 디바이스를 비준수로 표시합니다. **구성되지 않음**(기본값)을 선택하면 이 설정은 규정 준수 또는 비준수에 대해 평가되지 않습니다.
-- **디바이스가 디바이스 위협 수준이나 그 아래에 있어야 함**: 이 설정을 통해 Lookout MTP 솔루션의 위험 평가를 준수 조건으로 사용할 수 있습니다. **구성되지 않음**(기본값)을 선택하면 이 설정은 규정 준수 또는 비준수에 대해 평가되지 않습니다. 이 설정을 사용하려면 허용되는 위협 수준을 선택합니다.
+- **디바이스가 디바이스 위협 수준이나 그 아래에 있어야 함**: 이 설정을 통해 Lookout Mobile Endpoint Security 솔루션의 위험 평가를 준수 조건으로 사용할 수 있습니다. **구성되지 않음**(기본값)을 선택하면 이 설정은 규정 준수 또는 비준수에 대해 평가되지 않습니다. 이 설정을 사용하려면 허용되는 위협 수준을 선택합니다.
   - **보안**: 이 옵션은 디바이스가 어떠한 위협에도 노출되지 않았으므로 가장 안전합니다. 위협 수준이 있는 디바이스가 검색되면 규정 비준수로 평가됩니다.
   - **낮음**: 낮은 수준의 위협만 있는 경우 디바이스가 규정 준수로 평가됩니다. 더 높은 수준의 위협이 발생하면 디바이스는 규정 비준수 상태가 됩니다.
   - **보통**: 디바이스의 기존 위협이 낮음 또는 보통 수준인 경우 디바이스가 규격으로 평가됩니다. 디바이스에 높은 수준의 위협이 있는 것으로 검색되면 규정 비준수로 결정됩니다.
@@ -78,7 +77,7 @@ Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를
 - **모바일 디바이스의 잠금을 해제하는 데 암호 필요**: **필요**로 설정하면 사용자가 암호를 입력해야 디바이스에 액세스할 수 있습니다. **구성되지 않음**(기본값)을 선택하면 이 설정은 규정 준수 또는 비준수에 대해 평가되지 않습니다.
 - **최소 암호 길이**: 사용자 암호에 포함해야 하는 최소 숫자 또는 문자 수를 입력합니다.
 - **필수 암호 형식**: 암호가 숫자만 사용해야 하는지 또는 숫자와 기타 문자를 함께 사용해야 하는지 선택합니다. 옵션은 다음과 같습니다.
-  - **디바이스 기본값**
+  - **장치 기본값**: 암호 준수를 평가 하려면 **장치 기본값**이외의 암호 강도를 선택 해야 합니다.
   - **낮은 보안 생체 인식**
   - **최소 숫자**(기본값)
   - **복합 숫자**: `1111` 또는 `1234`와 같이 반복 또는 연속된 숫자는 허용되지 않습니다.

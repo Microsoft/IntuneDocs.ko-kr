@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,14 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50269e63f016c1d4f74b006d7748e5c300faac61
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0692a8ac0bcd1fd415d0bceb7f5a269648dd5b30
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050237"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302559"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune에서 macOS 디바이스의 Wi-Fi 설정 추가
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 특정 WiFi 설정을 사용하여 프로필을 만든 후 macOS 디바이스에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, PKS 또는 SCEP 인증서 사용 등을 포함한 많은 기능을 제공합니다.
 
@@ -33,6 +35,9 @@ ms.locfileid: "66050237"
 ## <a name="before-you-begin"></a>시작하기 전에
 
 [디바이스 프로필 만들기](device-profile-create.md).
+
+> [!NOTE]
+> 이러한 설정은 모든 등록 형식에 사용할 수 있습니다. 등록 형식에 대 한 자세한 내용은 [Macos 등록](macos-enroll.md)을 참조 하세요.
 
 ## <a name="basic-profiles"></a>기본 프로필
 
@@ -74,18 +79,12 @@ ms.locfileid: "66050237"
     - **서버 트러스트** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 **추가**합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
     - **서버 유효성 검사를 위한 루트 인증서**: 기존 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서는 클라이언트가 네트워크에 연결할 때 서버에 제공되고 연결을 인증하는 데 사용됩니다.
 
-      **확인**을 선택하여 변경 내용을 저장합니다.
-
     - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)** : 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
-
-      **확인**을 선택하여 변경 내용을 저장합니다.
 
   - **EAP-TTLS**: 또한 다음을 입력합니다.
 
     - **서버 트러스트** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 **추가**합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
     - **서버 유효성 검사를 위한 루트 인증서**: 기존 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서는 클라이언트가 네트워크에 연결할 때 서버에 제공되고 연결을 인증하는 데 사용됩니다.
-
-      **확인**을 선택하여 변경 내용을 저장합니다.
 
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
@@ -96,8 +95,6 @@ ms.locfileid: "66050237"
 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
-        **확인**을 선택하여 변경 내용을 저장합니다.
-
       - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
   - **LEAP**
@@ -107,15 +104,11 @@ ms.locfileid: "66050237"
     - **서버 트러스트** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 **추가**합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
     - **서버 유효성 검사를 위한 루트 인증서**: 기존 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서는 클라이언트가 네트워크에 연결할 때 서버에 제공되고 연결을 인증하는 데 사용됩니다.
 
-      **확인**을 선택하여 변경 내용을 저장합니다.
-
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 
 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
-
-        **확인**을 선택하여 변경 내용을 저장합니다.
 
       - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
@@ -124,12 +117,8 @@ ms.locfileid: "66050237"
   - **수동**: **프록시 서버 주소**(IP 주소) 및 해당 **포트 번호**를 입력합니다.
   - **자동**: 파일을 사용하여 프록시 서버를 구성합니다. 구성 파일이 포함된 **프록시 서버 URL**(예: `http://proxy.contoso.com`)을 입력합니다.
 
-**확인** > **만들기**를 선택하여 변경 내용을 저장합니다. 프로필이 만들어지고 프로필 목록에 표시됩니다.
-
 ## <a name="next-steps"></a>다음 단계
 
-프로필이 만들어지지만 아무것도 하지 않습니다. 그런 다음, [이 프로필을 할당](device-profile-assign.md)합니다.
+프로필이 만들어지지만 아무것도 하지 않습니다. 다음으로, [이 프로필을 할당](device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
-## <a name="more-resources"></a>기타 참고 자료
-
-사용 가능한 다른 플랫폼을 포함한 [Wi-Fi 설정 개요](wi-fi-settings-configure.md).
+[Android](wi-fi-settings-android.md), [android Enterprise](wi-fi-settings-android-enterprise.md), [iOS](wi-fi-settings-ios.md)및 [Windows 10](wi-fi-settings-windows.md) 장치에서 wi-fi 설정을 구성 합니다.

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 12/12/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b71bc2ea893199b83de5fd1480dae5630c3edfd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: a35ebcf6ecbaaa746a6da98c5bd5c13ca9a7b130
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565668"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302752"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Intune을 사용하여 VPN 연결을 추가하기 위한 Windows 10 및 Windows Holographic 디바이스 설정
 
@@ -68,29 +67,29 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 �
   - **PPTP**
 
   VPN 연결 형식을 선택하면 다음 설정을 요청하는 메시지가 표시될 수도 있습니다.  
-    - **Always On**: 다음과 같은 이벤트가 발생할 경우 VPN 연결에 자동으로 연결하려면 **사용**을 선택합니다. 
-      - 자신의 디바이스에 사용자가 로그인하는 경우
-      - 디바이스의 네트워크가 변경되는 경우
-      - 디바이스의 화면이 꺼졌다가 다시 켜지는 경우 
+  - **Always On**: 다음과 같은 이벤트가 발생할 경우 VPN 연결에 자동으로 연결하려면 **사용**을 선택합니다. 
+    - 자신의 디바이스에 사용자가 로그인하는 경우
+    - 디바이스의 네트워크가 변경되는 경우
+    - 디바이스의 화면이 꺼졌다가 다시 켜지는 경우 
 
-    - **인증 방법**: 사용자가 VPN 서버에 인증하도록 할 방법을 선택합니다. **인증서**를 사용하면 무인 환경, 주문형 VPN, 앱별 VPN 등의 향상된 기능이 제공됩니다.
-    - **로그온 시 자격 증명 기억**: 인증 자격 증명을 캐시하려면 선택합니다.
-    - **사용자 지정 XML**: VPN 연결을 구성하는 사용자 지정 XML 명령을 입력합니다.
-    - **EAP XML**: VPN 연결을 구성하는 EAP XML 명령을 입력합니다.
+  - **인증 방법**: 사용자가 VPN 서버에 인증하도록 할 방법을 선택합니다. **인증서**를 사용하면 무인 환경, 주문형 VPN, 앱별 VPN 등의 향상된 기능이 제공됩니다.
+  - **로그온 시 자격 증명 기억**: 인증 자격 증명을 캐시하려면 선택합니다.
+  - **사용자 지정 XML**: VPN 연결을 구성하는 사용자 지정 XML 명령을 입력합니다.
+  - **EAP XML**: VPN 연결을 구성하는 EAP XML 명령을 입력합니다.
 
-#### <a name="pulse-secure-example"></a>Pulse Secure의 예
+### <a name="pulse-secure-example"></a>Pulse Secure의 예
 
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
-#### <a name="f5-edge-client-example"></a>F5 Edge Client의 예
+### <a name="f5-edge-client-example"></a>F5 Edge Client의 예
 
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-#### <a name="sonicwall-mobile-connect-example"></a>SonicWALL Mobile Connect의 예
+### <a name="sonicwall-mobile-connect-example"></a>SonicWALL Mobile Connect의 예
 **로그인 그룹 또는 도메인**: VPN 프로필에 이 속성을 설정할 수 없습니다. 대신, Mobile Connect는 사용자 이름 및 도메인을 `username@domain` 또는 `DOMAIN\username` 형식으로 입력할 경우 이 값을 구문 분석합니다.
 
 예:
@@ -99,13 +98,13 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 �
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 ```
 
-#### <a name="checkpoint-mobile-vpn-example"></a>CheckPoint Mobile VPN의 예
+### <a name="checkpoint-mobile-vpn-example"></a>CheckPoint Mobile VPN의 예
 
 ```
 <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-#### <a name="writing-custom-xml"></a>사용자 지정 XML 작성
+### <a name="writing-custom-xml"></a>사용자 지정 XML 작성
 사용자 지정 XML 명령을 작성하는 방법에 대한 자세한 내용은 각 제조업체의 VPN 설명서를 참조하세요.
 
 사용자 지정 EAP XML을 만드는 방법에 대한 자세한 내용은 [EAP 구성](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration)을 참조하세요.
@@ -143,7 +142,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 �
 
   ![세 개의 점을 선택하고 클릭한 후 끌어 dns 접미사 이동](./media/vpn-settings-windows10-move-dns-suffix.png)
 
-- **이름 확인 정책 테이블 (NRPT) 규칙**: 이름 확인 정책 테이블 (NRPT) 규칙이 DNS 이름을 VPN에 연결 하는 경우를 확인 하는 방법을 정의 합니다. VPN 연결이 설정된 후 VPN 연결에서 사용할 DNS 서버를 선택합니다.
+- **Nrpt (이름 확인 정책 테이블) 규칙**: nrpt (이름 확인 정책 테이블) 규칙은 VPN에 연결 된 경우 DNS에서 이름을 확인 하는 방법을 정의 합니다. VPN 연결이 설정된 후 VPN 연결에서 사용할 DNS 서버를 선택합니다.
 
   입력하는 도메인을 확인하려면 도메인, DNS 서버, 프록시 및 기타 세부 정보를 포함하는 테이블에 규칙을 추가할 수 있습니다. VPN 연결은 사용자가 입력할 도메인을 연결할 때 이러한 규칙을 사용합니다.
 

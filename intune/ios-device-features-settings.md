@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,35 +15,43 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 7eaed88adc8603ee1f79f47cbd94eec1c3b71b95
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387099"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71301859"
 ---
-# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Intune에서 일반적인 iOS 기능을 사용하는 iOS 디바이스 설정
+# <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune에서 일반적인 iOS 기능을 사용하는 iOS 및 iPadOS 디바이스 설정
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune은 iOS 사용자가 해당 디바이스의 다른 Apple 기능을 사용하도록 허용하는 몇 가지 기본 제공 설정을 포함합니다. 예를 들어 관리자는 iOS 사용자가 AirPrint 프린터를 사용하고, 홈 화면의 도킹 및 페이지에 앱 및 폴더를 추가하고, 앱 알림을 표시하고, 잠금 화면에서 자산 태그 정보를 표시하고, Single Sign-On 인증을 사용하고, 인증서를 사용하여 사용자를 인증하는 방법을 제어할 수 있습니다.
 
 이러한 기능을 사용하여 MDM(모바일 디바이스 관리) 솔루션의 일부로 iOS 디바이스를 제어합니다.
 
-이 문서에서는 이러한 설정을 나열하고, 각 설정이 수행하는 작업을 설명합니다.
+이 문서에서는 이러한 설정을 나열하고, 각 설정이 수행하는 작업을 설명합니다. 이러한 기능에 대 한 자세한 내용은 [iOS 또는 macOS 장치 기능 설정 추가](device-features-configure.md)로 이동 하세요.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-[iOS 디바이스 구성 프로필을 만듭니다](device-features-configure.md#create-a-device-profile).
+[iOS 디바이스 구성 프로필을 만듭니다](device-features-configure.md).
+
+> [!NOTE]
+> 이러한 설정은 일부 설정이 모든 등록 옵션에 적용 되는 다양 한 등록 유형에 적용 됩니다. 다양 한 등록 유형에 대 한 자세한 내용은 [iOS 등록](ios-enroll.md)을 참조 하세요.
 
 ## <a name="airprint"></a>AirPrint
+
+### <a name="settings-apply-to-all-enrollment-types"></a>설정이 적용 되는 대상: 모든 등록 형식
 
 - **IP 주소**: 프린터의 IPv4 또는 IPv6 주소를 입력합니다. 호스트 이름을 사용하여 프린터를 식별하는 경우 터미널에서 프린터를 ping하여 IP 주소를 가져올 수 있습니다. IP 주소 및 경로 가져오기(이 문서)에서 자세한 정보를 제공합니다.
 - **경로**: 네트워크의 프린터에 대한 경로는 일반적으로 `ipp/print`입니다. IP 주소 및 경로 가져오기(이 문서)에서 자세한 정보를 제공합니다.
 - **포트**: AirPrint 대상의 수신 대기 포트를 입력합니다. 이 속성을 비워두면 AirPrint는 기본 포트를 사용합니다. iOS 11.0 이상에서 사용할 수 있습니다.
 - **TLS**: TLS(전송 계층 보안)를 사용하여 AirPrint 연결을 보호하려면 **사용**을 선택합니다. iOS 11.0 이상에서 사용할 수 있습니다.
 
-**추가**를 선택하면 목록에 AirPrint 서버가 추가됩니다. 많은 방송 인쇄 서버를 추가할 수 있습니다. 이 정보를 사용하여 쉼표로 구분된 파일(.csv)을 **가져올** 수도 있습니다. **내보내기** 는 추가한 총 인쇄 서버 목록을 만듭니다.
+락 인쇄 서버를 추가 하려면 다음을 수행할 수 있습니다.
 
-**확인**을 선택하여 목록을 저장합니다.
+- **추가**를 선택하면 목록에 AirPrint 서버가 추가됩니다. 많은 방송 인쇄 서버를 추가할 수 있습니다.
+- 이 정보를 사용하여 쉼표로 구분된 파일(.csv)을 **가져옵니다**. 또는 **내보낸** 후 추가한 인쇄 서버 목록을 만듭니다.
 
 ### <a name="get-server-ip-address-resource-path-and-port"></a>서버 IP 주소, 리소스 경로 및 포트 가져오기
 
@@ -60,9 +68,13 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 
 4. IP 주소 및 리소스 경로 값을 사용합니다. 이 예제에서 IP 주소는 `10.50.25.21`이고, 리소스 경로는 `/ipp/port1`입니다.
 
-## <a name="home-screen-layout-settings"></a>홈 화면 레이아웃 설정
+## <a name="home-screen-layout"></a>홈 화면 레이아웃
 
-이러한 설정은 iOS 디바이스의 도킹 및 홈 화면에서 앱 레이아웃 및 폴더를 구성합니다. 이 기능을 사용하려면 iOS 디바이스는 감독 모드에 있어야 하며 iOS 9.3 이상을 실행해야 합니다.
+이 기능은 다음에 적용됩니다.
+
+- iOS 9.3 이상
+
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>설정 적용 대상: 자동 장치 등록 (감독 됨)
 
 ### <a name="dock"></a>도킹
 
@@ -78,8 +90,6 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
     - **앱 이름**: 앱의 이름을 입력합니다. 이 이름은 Azure Portal에서 참조용으로 사용됩니다. iOS 디바이스에 표시되지 *않습니다*.
     - **앱 번들 ID**: 앱의 번들 ID를 입력합니다. 일부 예제는 [기본 제공 iOS 앱에 대한 번들 ID](bundle-ids-built-in-ios-apps.md)를 참조하세요.
 
-    **확인**을 선택하여 변경 내용을 저장합니다.
-
   - **폴더**: 이 옵션을 선택하여 화면의 도킹에 폴더를 추가합니다.
 
     폴더에서 페이지에 추가하는 앱은 목록과 동일한 순서대로 왼쪽에서 오른쪽으로 정렬됩니다. 한 페이지에 들어가는 개수보다 많은 앱을 추가할 경우 앱이 다른 페이지로 이동합니다.
@@ -92,8 +102,6 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
       - **앱 번들 ID**: 앱의 번들 ID를 입력합니다. 일부 예제는 [기본 제공 iOS 앱에 대한 번들 ID](bundle-ids-built-in-ios-apps.md)를 참조하세요.
 
       디바이스 도킹에 최대 **20**개의 페이지를 추가할 수 있습니다.
-
-    **확인**을 선택하여 변경 내용을 저장합니다.
 
 > [!NOTE]
 > Dock 설정을 사용하여 아이콘을 추가하면 홈 화면과 페이지의 아이콘이 잠기므로 이동할 수 없습니다. 이는 iOS 및 Apple의 MDM 정책으로 설계된 것일 수 있습니다.
@@ -132,8 +140,6 @@ iPhone에 정책을 할당할 때 도킹은 다음 이미지와 유사합니다.
         - **앱 이름**: 앱의 이름을 입력합니다. 이 이름은 Azure Portal에서 참조용으로 사용됩니다. iOS 디바이스에 표시되지 *않습니다*.
         - **앱 번들 ID**: 앱의 번들 ID를 입력합니다. 일부 예제는 [기본 제공 iOS 앱에 대한 번들 ID](bundle-ids-built-in-ios-apps.md)를 참조하세요.
 
-      **확인**을 선택하여 변경 내용을 저장합니다.
-
       - **폴더**: 이 옵션을 선택하여 화면의 도킹에 폴더를 추가합니다.
 
         폴더에서 페이지에 추가하는 앱은 목록과 동일한 순서대로 왼쪽에서 오른쪽으로 정렬됩니다. 한 페이지에 들어가는 개수보다 많은 앱을 추가할 경우 앱이 다른 페이지로 이동합니다.
@@ -145,8 +151,6 @@ iPhone에 정책을 할당할 때 도킹은 다음 이미지와 유사합니다.
           - **앱 이름**: 앱의 이름을 입력합니다. 이 이름은 Azure Portal에서 참조용으로 사용됩니다. iOS 디바이스에 표시되지 *않습니다*.
           - **앱 번들 ID**: 앱의 번들 ID를 입력합니다. 일부 예제는 [기본 제공 iOS 앱에 대한 번들 ID](bundle-ids-built-in-ios-apps.md)를 참조하세요.
 
-      **확인**을 선택하여 변경 내용을 저장합니다.
-
 #### <a name="example"></a>예제
 
 다음 예제에서 **Contoso**라는 새 페이지가 추가됩니다. 페이지는 친구 찾기와 설정 앱을 표시합니다. 해당 속성을 표시하도록 설정 앱이 선택되었습니다.
@@ -157,9 +161,9 @@ iPhone에 정책을 할당할 때 페이지는 다음 이미지와 유사합니�
 
 ![수정된 홈 화면을 사용하는 iOS 디바이스](./media/Bd37PHa.png)
 
-## <a name="app-notifications-settings"></a>앱 알림 설정
+## <a name="app-notifications"></a>앱 알림
 
-iOS 디바이스에 설치된 앱에서 알림을 전송하는 방식을 선택합니다. 이 설정은 iOS 9.3 이상을 실행하는 감독 모드 디바이스를 지원합니다.
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>설정 적용 대상: 자동 장치 등록 (감독 됨)
 
 - **추가**: 앱에 대한 알림을 추가합니다.
 
@@ -178,13 +182,13 @@ iOS 디바이스에 설치된 앱에서 알림을 전송하는 방식을 선택�
     - **앱 아이콘 배지**: 앱 아이콘에 배지를 추가하려면 **사용하도록 설정**을 선택합니다. 배지는 앱이 알림을 전송했음을 의미합니다.
     - **소리**: 알림이 전달될 때 소리를 재생하려면 **사용**을 선택합니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
+## <a name="lock-screen-message"></a>잠금 화면 메시지
 
-## <a name="lock-screen-message-settings"></a>잠금 화면 메시지 설정
+이 기능은 다음에 적용됩니다.
 
-이러한 설정을 사용하여 로그인 창 및 잠금 화면에 사용자 지정 메시지 또는 텍스트를 표시합니다. 예를 들어 "분실 시, 돌려주기..." 메시지 및 자산 태그를 정보를 입력할 수 있습니다. 
+- iOS 9.3 이상
 
-이 기능은 iOS 9.3 이상을 실행하는 감독 모드 디바이스를 지원합니다.
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>설정 적용 대상: 자동 장치 등록 (감독 됨)
 
 - **자산 태그 정보**: 디바이스의 자산 태그에 대한 정보를 입력합니다. 예를 들어 `Owned by Contoso Corp` 또는 `Serial Number: {{serialnumber}}`을 입력합니다.
 
@@ -197,18 +201,9 @@ iOS 디바이스에 설치된 앱에서 알림을 전송하는 방식을 선택�
   > [!NOTE]
   > 변수는 UI에서 유효성을 검사 하지 않으며 대/소문자를 구분 합니다. 따라서, 잘못된 입력으로 저장된 프로필을 볼 수 있습니다. 예를 들어 `{{deviceid}}` 대신 `{{DeviceID}}`을 입력하면 디바이스의 고유 ID 대신 리터럴 문자열이 표시될 수 있습니다. 올바른 정보를 입력 해야 합니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
+## <a name="single-sign-on"></a>Single Sign-On
 
-## <a name="single-sign-on-settings"></a>Single Sign-On 설정
-
-대부분의 LOB(기간 업무) 앱이 보안을 지원하려면 일부 수준의 사용자 인증이 필요합니다. 대부분의 경우 인증은 사용자가 동일한 자격 증명을 반복적으로 입력해야 하므로 사용자에게 번거롭습니다. 사용자 환경을 개선하기 위해 개발자는 SSO(Single Sign-On)를 사용하는 앱을 만들 수 있습니다. Single Sign-On을 사용하면 사용자가 자격 증명을 입력해야 하는 횟수를 줄입니다.
-
-Single Sign-On을 사용하려면 다음이 있어야 합니다.
-
-- 디바이스의 Single Sign-On에서 사용자 자격 증명 저장소를 찾도록 코딩된 앱
-- iOS 디바이스 Single Sign-On용으로 구성된 Intune입니다.
-
-![Single Sign-On 창](./media/sso-blade.png)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>설정 적용 대상: 장치 등록, 자동 장치 등록 (감독 됨)
 
 - **AAD의 사용자 이름 특성**: Intune은 Azure AD에서 각 사용자에 대해 이 특성을 찾습니다. 그런 다음, Intune이 디바이스에 설치되는 XML을 생성하기 전에 해당 필드(예: UPN)를 채웁니다. 옵션은 다음과 같습니다.
 
@@ -249,11 +244,9 @@ Single Sign-On을 사용하려면 다음이 있어야 합니다.
 
 - **자격 증명 갱신 인증서**: 인증에 인증서를 사용하는 경우(암호 아님) 인증 인증서로 기존 SCEP 또는 PFX 인증서를 선택합니다. 일반적으로 이 인증서는 VPN, Wi-Fi, 이메일 등의 다른 프로필에 대해 사용자에게 배포되는 것과 동일한 인증서입니다.
 
-**확인**을 선택하여 변경 내용을 저장합니다.
+## <a name="web-content-filter"></a>웹 콘텐츠 필터
 
-## <a name="web-content-filter-settings"></a>웹 콘텐츠 필터 설정
-
-이러한 설정은 감독되는 iOS 디바이스에서 브라우저 URL 액세스를 제어합니다.
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>설정 적용 대상: 자동 장치 등록 (감독 됨)
 
 - **필터 형식**: 특정 웹 사이트를 허용하도록 선택합니다. 옵션은 다음과 같습니다.
 
@@ -261,14 +254,10 @@ Single Sign-On을 사용하려면 다음이 있어야 합니다.
 
     - **허용된 URL**: 허용하려는 URL을 **추가**합니다. 이러한 URL은 Apple 웹 필터를 무시합니다.
 
-      > [!NOTE]
+        > [!NOTE]
         > 입력하는 URL은 Apple 웹 필터에서 평가하지 않으려는 URL입니다. 이러한 URL은 허용되는 웹 사이트 목록이 아닙니다. 허용되는 웹 사이트 목록을 만들려면 **필터 형식**을 **특정 웹 사이트만**으로 설정합니다.
 
-      **확인**을 선택하여 변경 내용을 저장합니다.
-
     - **URL 차단**: Apple 웹 필터 설정에 관계없이 열기를 중지하려는 URL을 **추가**합니다.
-
-      **확인**을 선택하여 변경 내용을 저장합니다.
 
   - **특정 웹 사이트만**(Safari 웹 브라우저만 해당): 이러한 URL은 Safari 브라우저의 책갈피에 추가됩니다. 사용자는 이 사이트**만** 방문이 허용됩니다. 다른 사이트를 열 수 없습니다. 사용자가 액세스할 수 있는 URL의 정확한 목록을 알고 있는 경우에만 이 옵션을 사용합니다.
 
@@ -278,13 +267,68 @@ Single Sign-On을 사용하려면 다음이 있어야 합니다.
 
     URL을 입력하지 않는 경우 최종 사용자는 `microsoft.com`, `microsoft.net` 및 `apple.com`을 제외한 웹 사이트에 액세스할 수 없습니다. 이러한 URL은 Intune에서 자동으로 허용됩니다.
 
-    **확인**을 선택하여 변경 내용을 저장합니다.
+## <a name="single-sign-on-app-extension"></a>Single sign-on 앱 확장
 
-## <a name="wallpaper-settings"></a>배경 무늬 설정
+이 기능은 다음에 적용됩니다.
 
-감독되는 iOS 디바이스에 사용자 지정 .png, .jpg 또는 .jpeg 이미지를 추가합니다. 예를 들어 잠금 화면에 회사 로고를 사용합니다.
+- iOS 13.0 이상
+- iPadOS 13.0 이상
+
+### <a name="settings-apply-to-all-enrollment-types"></a>설정이 적용 되는 대상: 모든 등록 형식
+
+- **Sso 앱 확장 유형**: 자격 증명 sso 앱 확장의 유형을 선택 합니다. 옵션은 다음과 같습니다.
+
+  - **구성 되지 않음**: 앱 확장이 사용 되지 않습니다. 앱 확장을 사용 하지 않도록 설정 하려면 SSO 앱 확장 유형을 **Kerberos** 또는 **자격 증명** 에서 **구성 되지 않음**으로 전환할 수 있습니다.
+  - **자격 증명**: 사용자 지정 가능한 일반 자격 증명 앱 확장을 사용 하 여 SSO를 수행 합니다. 조직의 SSO 앱 확장에 대 한 확장 ID를 알고 있어야 합니다.
+  - **Kerberos**: Apple의 기본 제공 Kerberos 확장을 사용 합니다 .이 확장은 iOS 13.0 이상 및 iPadOS 13.0 이상에 포함 되어 있습니다. 이 옵션은 **자격 증명** 앱 확장의 Kerberos 특정 버전입니다.
+
+  > [!TIP]
+  > **자격 증명** 형식을 사용 하 여 확장을 통과 하는 고유한 구성 값을 추가 합니다. 대신 **Kerberos** 유형에 서 Apple에서 제공 하는 기본 제공 구성 설정을 사용 하는 것이 좋습니다.
+
+- **확장 ID** (자격 증명만): `com.apple.extensiblesso`과 같이 SSO 앱 확장을 식별 하는 번들 식별자를 입력 합니다.
+- **팀 ID** (자격 증명만): SSO 앱 확장의 팀 식별자를 입력 합니다. 팀 식별자는 `ABCDE12345`과 같이 Apple에서 생성 된 10 자 사전순 (숫자 및 문자) 문자열입니다. 팀 ID가 필요 하지 않습니다.
+
+  [팀 ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple 웹 사이트 열기)를 찾아 자세한 정보를 찾습니다.
+
+- **영역**: Kerberos 영역 이름을 입력 합니다. 영역 이름은 대문자 여야 합니다 (예: `CONTOSO.COM`). 일반적으로 영역 이름은 DNS 도메인 이름과 동일 하지만 모두 대문자로 되어 있습니다.
+
+- **도메인**: SSO를 통해 인증할 수 있는 사이트의 도메인 또는 호스트 이름을 입력 합니다. 예를 들어 웹 사이트가 `mysite.contoso.com` 인 경우 `mysite`은 호스트 이름이 고, `contoso.com`는 도메인 이름입니다. 사용자가 이러한 사이트에 연결 하면 앱 확장이 인증 챌린지를 처리 합니다. 이 인증을 사용 하면 사용자가 얼굴 ID, Touch ID 또는 Apple pincode/암호를 사용 하 여 로그인 할 수 있습니다.
+
+  - Single Sign-On 앱 확장 Intune 프로필의 모든 도메인은 고유 해야 합니다. 다른 유형의 SSO 앱 확장을 사용 중인 경우에도 로그온 앱 확장 프로필에서 도메인을 반복할 수 없습니다.
+  - 이러한 도메인은 대/소문자를 구분 하지 않습니다.
+
+- **추가 구성** (자격 증명에만 해당): SSO 앱 확장에 전달할 추가 확장 데이터를 입력 합니다.
+  - **구성 키**: 추가 하려는 항목의 이름을 입력 합니다 (예: `user name`).
+  - **값 유형**: 데이터 유형을 입력 합니다. 옵션은 다음과 같습니다.
+
+    - 문자열
+    - 부울: **구성 값**에 `True` 또는 `False`를 입력 합니다.
+    - 정수: **구성 값**에 숫자를 입력 합니다.
+    
+  - **구성 값**: 데이터를 입력 합니다.
+
+  - **추가**: 구성 키를 추가 하려면 선택 합니다.
+
+- 키 **집합 사용** (Kerberos만 해당): 암호를 저장 하지 않고 키 집합에 저장 하지 못하도록 **차단 하려면 차단** 을 선택 합니다. **구성 되지 않음** (기본값)을 사용 하면 암호를 저장 하 고 키 집합에 저장할 수 있습니다.
+- **얼굴 id, TOUCH id 또는 암호** (Kerberos만 해당): 사용자가 얼굴 Id, touch Id 또는 Apple 암호를 입력 하 여 추가한 도메인에 **로그인 하도록 합니다** . **구성 되지 않음** (기본값)은 사용자가 생체 인식 또는 암호를 사용 하 여 로그인 할 필요가 없습니다.
+- **기본 영역** (Kerberos만): **사용** 을 선택 하 여 기본 영역으로 입력 한 **영역** 값을 설정 합니다. **구성 되지 않음** (기본값)은 기본 영역을 설정 하지 않습니다.
+
+  > [!TIP]
+  > - 조직에서 여러 Kerberos SSO 앱 확장을 구성 하는 경우이 설정을 **사용 하도록** 설정 합니다.
+  > - 여러 영역을 사용 하는 경우이 설정을 **사용 하도록** 설정 합니다. 기본 영역으로 입력 한 **영역** 값을 설정 합니다.
+  > - 영역이 하나만 있는 경우에는 **구성 되지 않음** (기본값)으로 둡니다.
+
+- **보안 주체 이름** (kerberos에만 해당): kerberos 주체의 사용자 이름을 입력 합니다. 영역 이름을 포함할 필요가 없습니다. 예를 들어 `user@contoso.com`에서 `user`은 사용자 이름이 고, `contoso.com`는 영역 이름입니다.
+- **Active Directory 사이트 코드** (kerberos만 해당): kerberos 확장에서 사용 해야 하는 Active Directory 사이트의 이름을 입력 합니다. Kerberos 확장에서 Active Directory 사이트 코드를 자동으로 찾을 수 있으므로이 값을 변경 하지 않아도 됩니다.
+- **캐시 이름** (kerberos만 해당): kerberos 캐시의 GSS (Generic Security Services) 이름을 입력 합니다. 일반적으로이 값을 설정할 필요가 없습니다.
+- **앱 번들 id** (Kerberos만 해당): 장치에서 Single Sign-On를 사용 해야 하는 앱 번들 식별자를 **추가** 합니다. 이러한 앱에는 Kerberos 티켓 부여 티켓과 인증 티켓에 대 한 액세스 권한이 부여 되 고 액세스할 수 있는 서비스에 대 한 사용자가 인증 됩니다.
+- **도메인 영역 매핑** (Kerberos만 해당): 영역에 매핑해야 하는 도메인 DNS 접미사를 **추가** 합니다. 호스트의 DNS 이름이 영역 이름과 일치 하지 않는 경우이 설정을 사용 합니다. 일반적으로이 사용자 지정 도메인-영역 매핑을 만들 필요가 없습니다.
+
+## <a name="wallpaper"></a>배경 무늬
 
 이미지가 없는 프로필을 기존 이미지가 있는 디바이스에 할당하면 예기치 않은 동작이 발생할 수 있습니다. 예를 들어 이미지가 없는 프로필을 만듭니다. 이 프로필이 이미지가 이미 있는 디바이스에 할당됩니다. 이 시나리오에서는 이미지가 디바이스 기본값으로 변경되거나 원래 이미지가 디바이스에 남아있을 수 있습니다. 이런 동작은 Apple의 MDM 플랫폼에 의해 제어되고 제한됩니다.
+
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>설정 적용 대상: 자동 장치 등록 (감독 됨)
 
 - **배경 무늬 표시 위치**: 이미지를 표시할 디바이스의 위치를 선택합니다. 옵션은 다음과 같습니다.
   - **구성되지 않음**: 사용자 지정 이미지는 디바이스에 추가되지 않습니다. 디바이스는 운영 체제 기본값을 사용합니다.

@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/12/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 228a4af302a1344f60dc43c02c12efac23e34f74
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566661"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71238688"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -169,9 +168,9 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 
 ## <a name="download-the-app-wrapping-tool"></a>앱 래핑 도구 다운로드
 
-1.  [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)에서 앱 래핑 도구용 파일을 macOS 컴퓨터로 다운로드합니다.
+1. [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)에서 앱 래핑 도구용 파일을 macOS 컴퓨터로 다운로드합니다.
 
-2.  **Microsoft Intune App Wrapping Tool for iOS.dmg**를 두 번 클릭합니다. EULA(최종 사용자 사용권 계약) 창이 나타납니다. 문서를 주의하여 읽습니다.
+2. **Microsoft Intune App Wrapping Tool for iOS.dmg**를 두 번 클릭합니다. EULA(최종 사용자 사용권 계약) 창이 나타납니다. 문서를 주의하여 읽습니다.
 
 3. **동의**를 선택하여 EULA에 동의하면 패키지가 컴퓨터에 탑재됩니다.
 
@@ -203,30 +202,38 @@ macOS 터미널을 열고 다음 명령을 실행합니다.
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
-|**-h**|앱 래핑 도구에 사용 가능한 명령줄 속성에 대한 자세한 사용법 정보를 표시합니다.|
-|**-v**|(선택 사항) 자세한 정보 메시지를 콘솔에 출력합니다. 오류를 디버깅하려면 이 플래그를 사용하는 것이 좋습니다.|
+|**-h**| 앱 래핑 도구에 사용 가능한 명령줄 속성에 대한 자세한 사용법 정보를 표시합니다. |
+|**-aa**|(옵션) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` (예: `login.windows.net/common` |
+|**-ac**|(선택 사항) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` 클라이언트 ID 필드의 guid는 앱 등록 블레이드의 앱 목록에서 가져온 guid입니다. |
+|**-ar**|(선택 사항) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>`은 앱 등록에 구성 된 리디렉션 URI입니다. 일반적으로이는 조정 된 인증 후 Microsoft Authenticator 앱이 반환 하는 응용 프로그램의 URL 프로토콜입니다. |
+|**-v**| (선택 사항) 자세한 정보 메시지를 콘솔에 출력합니다. 오류를 디버깅하려면 이 플래그를 사용하는 것이 좋습니다. |
 |**-e**| (선택 사항) 이 플래그를 사용하여 앱 래핑 도구에서 앱을 처리할 때 누락된 자격을 제거하도록 합니다. 자세한 내용은 [앱 자격 설정](#setting-app-entitlements)을 참조하세요.|
 |**-xe**| (선택 사항) 앱의 iOS 확장 및 iOS 확장을 사용하기 위해 필요한 자격에 대한 정보를 인쇄합니다. 자세한 내용은 [앱 자격 설정](#setting-app-entitlements)을 참조하세요. |
 |**-x**| (선택 사항) `<An array of paths to extension provisioning profiles>`. 앱에서 확장 프로비저닝 프로필이 필요한 경우 사용합니다.|
-|**-f**|(선택 사항) `<Path to a plist file specifying arguments.>` plist 템플릿을 사용하여 -i, -o, -p와 같은 나머지 IntuneMAMPackager 속성을 지정하도록 선택하는 경우 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 앞에 이 플래그를 사용합니다. plist를 사용하여 인수 입력을 참조하세요. |
 |**-b**|(선택 사항) 래핑된 출력 앱에서 입력 앱과 같은 번들 버전을 사용하려는 경우 인수 없이 -b를 사용합니다(권장하지 않음). <br/><br/> 래핑된 앱에서 사용자 지정 CFBundleVersion을 사용하도록 하려면 `-b <custom bundle version>`을 사용합니다. 사용자 지정 CFBundleVersion을 지정하도록 선택하는 경우 가장 덜 중요한 구성 요소 단위로 네이티브 앱의 CFBundleVersion을 증가하는 것이 좋습니다(예: 1.0.0 -> 1.0.1). |
+|**-citrix**|필드 Citrix XenMobile 앱 SDK (네트워크 전용 변형)를 포함 합니다. 이 옵션을 사용 하려면 [CITRIX MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) 이 설치 되어 있어야 합니다. |
+|**-f**|(선택 사항) `<Path to a plist file specifying arguments.>` plist 템플릿을 사용하여 -i, -o, -p와 같은 나머지 IntuneMAMPackager 속성을 지정하도록 선택하는 경우 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 앞에 이 플래그를 사용합니다. plist를 사용하여 인수 입력을 참조하세요. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>plist를 사용하여 인수 입력
 앱 래핑 도구를 실행하는 간단한 방법은 모든 명령 인수를 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 파일에 두는 것입니다. Plist는 형식 인터페이스를 사용하여 명령줄 인수를 입력하기 위해 사용할 수 있는 XML과 비슷한 파일 형식입니다.
 
 IntuneMAMPackager/Contents/MacOS 폴더에서 텍스트 편집기 또는 Xcode를 사용하여 빈 plist 템플릿인 `Parameters.plist`을(를) 엽니다. 다음 키에 대한 인수를 입력합니다.
 
-| Plist 키 |  기본값| 참고 |
-|------------------|--------------|-----|
-| 입력 애플리케이션 패키지 경로  |비어 있음| -i와 동일합니다.|
-| 출력 애플리케이션 패키지 경로 |비어 있음| -o와 동일합니다.|
-| 프로비저닝 프로필 경로 |비어 있음| -p와 동일합니다.|
-| SHA-1 인증서 해시 |비어 있음| -c와 동일합니다.|
-| 자세한 정보 사용 |false| -v와 동일합니다.|
-| 누락된 자격 제거 | false| -c와 동일합니다.|
-| 기본 빌드 방지 |false | 인수 없이 -b를 사용하는 것과 동일합니다.|
-|문자열 재정의 빌드 | 비어 있음| 래핑된 출력 앱의 사용자 지정 CFBundleVersion |
-|확장 프로비전 프로필 경로 | 비어 있음| 앱에 대한 확장 프로비전 프로필의 배열입니다.
+| Plist 키 | 유형 |  기본값 | 참고 |
+|------------------|-----|--------------|-----|
+| 입력 애플리케이션 패키지 경로 |문자열|비어 있음| -i와 동일합니다.|
+| 출력 애플리케이션 패키지 경로 |문자열|비어 있음| -o와 동일합니다.|
+| 프로비저닝 프로필 경로 |문자열|비어 있음| -p와 동일합니다.|
+| SHA-1 인증서 해시 |문자열|비어 있음| -c와 동일합니다.|
+| ADAL 기관 |문자열|비어 있음| -aa와 동일합니다.|
+| ADAL 클라이언트 ID |문자열|비어 있음| -ac와 동일합니다.|
+| ADAL 회신 URI |문자열|비어 있음| -ar과 동일합니다.|
+| 자세한 정보 사용 |부울|false| -v와 동일합니다.|
+| 누락된 자격 제거 |부울|false| -c와 동일합니다.|
+| 기본 빌드 업데이트 방지 |Boolen|false| 인수 없이 -b를 사용하는 것과 동일합니다.|
+| 문자열 재정의 빌드 |문자열|비어 있음| 래핑된 출력 앱의 사용자 지정 CFBundleVersion|
+| Citrix XenMobile App SDK 포함 (네트워크 전용 변형)|부울|false| -Citrix와 동일|
+| 확장 프로비전 프로필 경로 |문자열 배열|비어 있음| 앱에 대한 확장 프로비전 프로필의 배열입니다.
 
 
 유일한 인수로써 plist와 함께 IntuneMAMPackager를 실행합니다.
@@ -285,15 +292,16 @@ iOS의 경우 앱에 서명하는 데 사용된 원본이 아닌 다른 인증�
 ### <a name="log-files-for-the-app-wrapping-tool"></a>앱 래핑 도구의 로그 파일
 앱 래핑 도구를 사용하여 앱을 래핑하면 iOS 클라이언트 디바이스 콘솔에 작성되는 로그가 생성됩니다. 애플리케이션에서 문제가 발생하여 앱 래핑 도구 관련 문제인지를 파악해야 하는 경우 이 정보가 유용합니다. 이 정보를 검색하려면 다음 단계를 수행합니다.
 
-1.  앱을 실행하여 문제를 재현합니다.
+1. 앱을 실행하여 문제를 재현합니다.
 
-2.  [배포된 iOS 앱 디버깅](https://developer.apple.com/library/ios/qa/qa1747/_index.html)과 관련한 Apple의 지침에 따라 콘솔 출력을 수집합니다.
+2. [배포된 iOS 앱 디버깅](https://developer.apple.com/library/ios/qa/qa1747/_index.html)과 관련한 Apple의 지침에 따라 콘솔 출력을 수집합니다.
 
-3.  콘솔에 다음 스크립트를 입력하여 앱 제한 출력에 대해 저장된 로그를 필터링합니다.
+3. 콘솔에 다음 스크립트를 입력하여 앱 제한 출력에 대해 저장된 로그를 필터링합니다.
 
     ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
+
     필터링된 로그를 Microsoft에 제출할 수 있습니다.
 
     > [!NOTE]
@@ -331,7 +339,7 @@ iOS용 앱 래핑 도구에는 전체 기능을 보장하기 위해 충족해야
 
 ### <a name="steps-to-enable-entitlements"></a>자격을 사용하도록 설정하는 절차
 
-1.  앱에서 기능을 사용하도록 설정합니다.
+1. 앱에서 기능을 사용하도록 설정합니다.
 
     a.  Xcode에서 앱의 대상으로 이동하고 **기능**을 클릭합니다.
 
@@ -341,7 +349,7 @@ iOS용 앱 래핑 도구에는 전체 기능을 보장하기 위해 충족해야
 
     d.  래핑할 앱을 빌드하고 서명합니다.
 
-2.  프로비저닝 프로필에서 자격을 사용하도록 설정합니다.
+2. 프로비저닝 프로필에서 자격을 사용하도록 설정합니다.
 
     a.  Apple Developer Member Center에 로그인합니다.
 
@@ -351,7 +359,7 @@ iOS용 앱 래핑 도구에는 전체 기능을 보장하기 위해 충족해야
 
     d.  프로비저닝 프로필 마법사를 완료하고 파일을 다운로드합니다.
 
-3.  모든 필수 구성 요소가 충족되었는지 확인한 다음 앱을 래핑합니다.
+3. 모든 필수 구성 요소가 충족되었는지 확인한 다음 앱을 래핑합니다.
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>자격과 관련한 일반적인 오류 문제 해결
 iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문제 해결 절차를 수행해 보세요.
@@ -364,20 +372,20 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>서명된 앱의 기존 자격 찾기
 서명된 앱 및 프로비저닝 프로필의 기존 자격을 확인하려면
 
-1.  .ipa 파일을 찾고 확장명을 .zip으로 변경합니다.
+1. .ipa 파일을 찾고 확장명을 .zip으로 변경합니다.
 
-2.  .zip 파일을 확장합니다. .app 번들에 포함된 페이로드 폴더가 생성됩니다.
+2. .zip 파일을 확장합니다. .app 번들에 포함된 페이로드 폴더가 생성됩니다.
 
-3.  codesign 도구를 사용하여 .app 번들의 자격을 확인합니다(여기서 `YourApp.app`은(는) .app 번들의 실제 이름).
+3. codesign 도구를 사용하여 .app 번들의 자격을 확인합니다(여기서 `YourApp.app`은(는) .app 번들의 실제 이름).
 
     ```bash
-    $ codesign -d --entitlements :- "Payload/YourApp.app"
+    codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
-4.  보안 도구를 사용하여 앱의 포함된 프로비저닝 프로필 자격을 확인합니다(여기서 `YourApp.app`은(는) .app 번들의 실제 이름).
+4. 보안 도구를 사용하여 앱의 포함된 프로비저닝 프로필 자격을 확인합니다(여기서 `YourApp.app`은(는) .app 번들의 실제 이름).
 
     ```bash
-    $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
+    security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>–e 매개 변수를 사용하여 앱에서 자격 제거
@@ -390,19 +398,19 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>앱 래핑 도구의 보안 및 개인 정보
 앱 래핑 도구를 사용할 때는 다음의 보안 및 개인 정보 관련 모범 사례를 사용합니다.
 
--   지정하는 서명 인증서, 프로비저닝 프로필, LOB(기간 업무) 앱은 앱 래핑 도구를 실행하는 데 사용하는 것과 같은 macOS 컴퓨터에 있어야 합니다. 파일이 UNC 경로에 있으면 macOS 컴퓨터에서 해당 파일에 액세스할 수 있는지 확인합니다. IPsec 또는 SMB 서명을 통해 경로를 보호해야 합니다.
+- 지정하는 서명 인증서, 프로비저닝 프로필, LOB(기간 업무) 앱은 앱 래핑 도구를 실행하는 데 사용하는 것과 같은 macOS 컴퓨터에 있어야 합니다. 파일이 UNC 경로에 있으면 macOS 컴퓨터에서 해당 파일에 액세스할 수 있는지 확인합니다. IPsec 또는 SMB 서명을 통해 경로를 보호해야 합니다.
 
     관리 콘솔로 가져온 래핑된 애플리케이션은 도구를 실행하는 동일한 컴퓨터에 있어야 합니다. 파일이 UNC 경로에 있으면 관리 콘솔을 실행하는 컴퓨터에서 해당 파일에 액세스할 수 있는지 확인합니다. IPsec 또는 SMB 서명을 통해 경로를 보호해야 합니다.
 
--   GitHub 리포지토리에서 앱 래핑 도구를 다운로드하는 환경은 IPsec 또는 SMB 서명을 통해 보호해야 합니다.
+- GitHub 리포지토리에서 앱 래핑 도구를 다운로드하는 환경은 IPsec 또는 SMB 서명을 통해 보호해야 합니다.
 
--   공격을 차단하려면 신뢰할 수 있는 출처의 앱만 처리해야 합니다.
+- 공격을 차단하려면 신뢰할 수 있는 출처의 앱만 처리해야 합니다.
 
--   앱 래핑 도구에서 지정한 출력 폴더(특히 원격 폴더)를 보호해야 합니다.
+- 앱 래핑 도구에서 지정한 출력 폴더(특히 원격 폴더)를 보호해야 합니다.
 
--   파일 업로드 대화 상자를 포함하는 iOS 앱에서는 사용자가 앱에 적용된 잘라내기, 복사, 붙여넣기 제한을 우회할 수 있습니다. 예를 들어 사용자가 파일 업로드 대화 상자를 사용하여 앱 데이터의 스크린샷을 업로드할 수 있습니다.
+- 파일 업로드 대화 상자를 포함하는 iOS 앱에서는 사용자가 앱에 적용된 잘라내기, 복사, 붙여넣기 제한을 우회할 수 있습니다. 예를 들어 사용자가 파일 업로드 대화 상자를 사용하여 앱 데이터의 스크린샷을 업로드할 수 있습니다.
 
--   래핑된 앱 내에서 디바이스의 문서 폴더를 모니터링할 때는 .msftintuneapplauncher라는 폴더가 표시될 수 있습니다. 이 파일을 변경하거나 삭제하면 제한된 앱이 정상적으로 작동하지 않을 수 있습니다.
+- 래핑된 앱 내에서 디바이스의 문서 폴더를 모니터링할 때는 .msftintuneapplauncher라는 폴더가 표시될 수 있습니다. 이 파일을 변경하거나 삭제하면 제한된 앱이 정상적으로 작동하지 않을 수 있습니다.
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>iOS용 Intune 앱 래핑 도구(Citrix MDX mVPN 포함)
 이 기능은 앱 래핑 도구를 iOS용 Citrix MDX 앱 래퍼에 통합합니다. 통합이 수행되면 일반 Intune 앱 래핑 도구에 추가적인 선택적 명령줄 플래그 `-citrix`가 추가됩니다.
@@ -418,11 +426,13 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 일반적인 앱 래핑 명령에 `-citrix` 플래그를 덧붙여 실행합니다. 현재 `-citrix` 플래그는 인수를 지원하지 않습니다.
 
 **사용 형식**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **명령 예**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
@@ -442,5 +452,5 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 ## <a name="see-also"></a>참고 항목
 
 - [Microsoft Intune으로 모바일 애플리케이션 관리용 앱을 준비하는 방법 결정](apps-prepare-mobile-application-management.md)
-- [일반적인 질문, 문제 및 장치 정책 및 프로필을 사용 하 여 해결 방법](device-profile-troubleshoot.md)
+- [디바이스 정책 및 프로필을 통한 일반적인 질문, 이슈 및 해결 방법](device-profile-troubleshoot.md)
 - [SDK를 사용하여 모바일 애플리케이션 관리에 앱을 사용하도록 설정](app-sdk.md)

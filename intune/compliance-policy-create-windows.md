@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 09/12/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,18 +14,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d956526d483a74ca5929180a48ea2dcd8b3eab7
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: cda6c5f5ffa2244376e318e81a38a1ed410a443f
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423631"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71305041"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Windows 10 이상 설정
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-이 문서에서는 Intune의 Windows 10 이상 디바이스에서 구성할 수 있는 다양한 규정 준수 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 사용하여 BitLocker를 요구하고, 최소 및 최대 운영 체제를 설정하고, Windows Defender ATP(Advanced Threat Protection)를 사용하여 위험 수준을 설정하는 등의 작업을 수행합니다.
+이 문서에서는 Intune의 Windows 10 이상 디바이스에서 구성할 수 있는 다양한 규정 준수 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 사용하여 BitLocker를 요구하고, 최소 및 최대 운영 체제를 설정하고, Microsoft Defender ATP(Advanced Threat Protection)를 사용하여 위험 수준을 설정하는 등의 작업을 수행합니다.
 
 이 기능은 다음에 적용됩니다.
 
@@ -100,23 +99,32 @@ Windows 10 이상을 실행하는 공동 관리 디바이스에만 적용됩니�
 
 ### <a name="password"></a>암호
 
-- **모바일 디바이스의 잠금을 해제하는 데 암호 필요**: **필요**로 설정하면 사용자가 암호를 입력해야 디바이스에 액세스할 수 있습니다.
+- **모바일 디바이스의 잠금을 해제하는 데 암호 필요**: **필요**로 설정하면 사용자가 암호를 입력해야 디바이스에 액세스할 수 있습니다. **구성 되지 않은**경우 Intune은 규정 준수를 위해 암호 설정에 대 한 장치를 평가 하지 않습니다.
 - **단순 암호**: **차단**으로 설정하면 사용자가 **1234** 또는 **1111** 같은 단순 암호를 만들 수 없습니다. **구성되지 않음**으로 설정하면 사용자가 **1234** 또는 **1111** 같은 암호를 만들 수 있습니다.
-- **암호 유형**: 암호에 **숫자**만 사용해야 하는지 또는 숫자와 기타 문자(**영숫자**)를 함께 사용해야 하는지 선택합니다.
+- **암호 유형**: 필요한 암호 또는 PIN의 유형을 선택합니다. 옵션은 다음과 같습니다.
 
-  - **암호에 포함해야 하는 영숫자가 아닌 문자 수**: **필수 암호 유형**이 **영숫자**로 설정된 경우 이 설정은 암호에 포함해야 하는 최소 문자 집합 수를 지정합니다. 4가지 문자 집합은 다음과 같습니다.
-    - 소문자
-    - 대문자
-    - 기호
-    - 숫자
+  - **장치 기본값**: 암호, 숫자 pin 또는 영숫자 pin 필요
+  - **숫자**: 암호 또는 숫자 PIN 필요
+  - **영숫자**: 암호 또는 영숫자 PIN을 요구 합니다. **암호 복잡성**도 선택 합니다. 
+    
+    - **숫자 및 소문자 필요**
+    - **숫자, 소문자 및 대문자 필요**
+    - **숫자, 소문자, 대문자 및 특수 문자 필요**
 
-    더 큰 값을 설정하면 사용자는 더욱 복잡한 암호를 만들어야 합니다.
+    > [!TIP]
+    > 영숫자 암호 정책은 복잡할 수 있습니다. 관리자가 Csp를 읽고 자세한 내용을 확인 하는 것이 좋습니다.
+    >
+    > - [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)
+    > - [DeviceLock/MinDevicePasswordComplexCharacters CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)
 
 - **최소 암호 길이**: 암호에 포함해야 하는 최소 자릿수 또는 문자 수를 입력합니다.
 - **암호를 요구하기 전까지 최대 비활성 시간(분)** : 사용자가 해당 시간 내에 자신의 암호를 다시 입력해야 하는 유휴 시간을 입력합니다.
-- **암호 만료(일)** : 암호가 만료되기 전에 새로 만들어야 하는 일수를 선택합니다.
+- **암호 만료(일)** : 암호가 만료되기 전에 새로 만들어야 하는 일수(1-730)를 입력합니다.
 - **재사용을 방지하기 위한 이전 암호 수**: 사용할 수 없는 이전에 사용된 암호 수를 입력합니다.
 - **디바이스가 유휴 상태에서 되돌아올 때 암호 요구(Mobile 및 Holographic)** : 디바이스가 유휴 상태에서 돌아올 때마다 사용자가 암호를 입력해야 합니다.
+
+  > [!IMPORTANT]
+  > Windows 데스크톱에서 암호 요구 사항이 변경되면 사용자가 다음에 로그인할 때 영향을 받습니다. 디바이스가 유휴 상태에서 활성 상태로 변하기 때문입니다. 요구 사항을 충족하는 암호를 사용하는 사용자에게도 암호를 변경하라는 메시지가 표시됩니다.
 
 ### <a name="encryption"></a>암호화
 
@@ -127,10 +135,30 @@ Windows 10 이상을 실행하는 공동 관리 디바이스에만 적용됩니�
 
 ### <a name="device-security"></a>디바이스 보안
 
-- **바이러스 백신**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/)에 등록된 바이러스 백신 솔루션을 사용하여 규정 준수를 확인할 수 있습니다. **구성되지 않은** 경우 Intune은 디바이스에 설치된 모든 AV 솔루션을 확인하지 않습니다.
-- **스파이웨어 방지**: **필수**로 설정하면 Symantec 및 Windows Defender와 같은 [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/)에 등록된 스파이웨어 방지 솔루션을 사용하여 규정 준수를 확인할 수 있습니다. **구성되지 않은** 경우 Intune은 디바이스에 설치된 스파이웨어 방지 솔루션을 확인하지 않습니다.
+- **방화벽**:을 ( **를)** 사용 하도록 설정 하 여 Microsoft Defender 방화벽을 켜고 사용자가 끄지 못하도록 설정 합니다. **구성 되지 않음** (기본값)은 Microsoft Defender 방화벽을 제어 하거나 기존 설정을 변경 하지 않습니다.
 
-## <a name="windows-defender-atp"></a>Windows Defender ATP
+  [방화벽 CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+- **신뢰할 수 있는 플랫폼 모듈 (TPM)** : **필수**로 설정 된 경우 Intune에서 버전의 준수를 확인 합니다. TPM 칩 버전이 0 보다 큰 경우 장치는 규정을 준수 합니다. 장치에 TPM 버전이 없는 경우 장치는 정책을 준수 하지 않습니다. **구성 되지 않은**경우 Intune은 장치에서 TPM 칩 버전을 확인 하지 않습니다.
+
+  [DeviceStatus CSP-DeviceStatus/TPM/사양 버전 노드](https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp)
+  
+- **바이러스 백신**: **필수**로 설정하면 Symantec 및 Microsoft Defender와 같은 [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/)에 등록된 바이러스 백신 솔루션을 사용하여 규정 준수를 확인할 수 있습니다. **구성되지 않은** 경우 Intune은 디바이스에 설치된 모든 AV 솔루션을 확인하지 않습니다.
+- **스파이웨어 방지**: **필수**로 설정하면 Symantec 및 Microsoft Defender와 같은 [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/)에 등록된 스파이웨어 방지 솔루션을 사용하여 규정 준수를 확인할 수 있습니다. **구성되지 않은** 경우 Intune은 디바이스에 설치된 스파이웨어 방지 솔루션을 확인하지 않습니다.
+
+### <a name="defender"></a>Defender
+
+- **Microsoft Defender 맬웨어 방지 프로그램**:을 사용 하도록 **설정 하 여** microsoft defender 맬웨어 방지 서비스를 켜고 사용자가 끄지 못하도록 합니다. **구성 되지 않음** (기본값)은 서비스를 제어 하거나 기존 설정을 변경 하지 않습니다.
+- **Microsoft Defender 맬웨어 방지 최소 버전**: microsoft defender 맬웨어 방지 서비스의 최소 허용 버전을 입력 합니다. 예를 들어 다음과 같이 입력합니다. `4.11.0.0` 비워 두면 모든 버전의 Microsoft Defender 맬웨어 방지 서비스를 사용할 수 있습니다.
+- **Microsoft Defender 맬웨어 방지 보안 인텔리전스**최신: 장치에서 Windows 보안 바이러스 및 위협 방지 업데이트를 제어 합니다. Microsoft Defender 보안 인텔리전스를 최신 상태로 유지 **해야** 합니다. **구성 되지 않음** (기본값)에는 요구 사항이 적용 되지 않습니다.
+
+  [Microsoft Defender 바이러스 백신 및 기타 microsoft 맬웨어 방지 프로그램에 대 한 보안 인텔리전스 업데이트](https://www.microsoft.com/en-us/wdsi/defenderupdates) 에는 보안 인텔리전스에 대 한 자세한 정보가 포함 되어 있습니다.
+
+- **실시간 보호**: **필요** 에 따라 맬웨어, 스파이웨어 및 기타 사용자 동의 없이 설치 된 소프트웨어를 검색 하는 실시간 보호가 설정 됩니다. **구성 되지 않음** (기본값)은이 기능을 제어 하거나 기존 설정을 변경 하지 않습니다.
+
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+## <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
 
 - **디바이스가 머신 위험 점수나 그 아래에 있어야 함**: 이 설정을 사용하여 위협 방지 서비스에서 준수 조건에 따라 위험 평가를 수행할 수 있습니다. 허용된 최대 위협 수준을 선택합니다.
 
@@ -139,7 +167,7 @@ Windows 10 이상을 실행하는 공동 관리 디바이스에만 적용됩니�
   - **보통**: 디바이스의 기존 위협이 낮음 또는 보통 수준인 경우 디바이스가 규격으로 평가됩니다. 디바이스에 높은 수준의 위협이 있는 것으로 검색되면 비규격으로 결정됩니다.
   - **높음**: 이 옵션은 최소 보안이며 모든 위협 수준을 허용합니다. 이 수준은 이 솔루션을 보고 용도로만 사용하는 경우에 유용할 수 있습니다.
   
-  방어 위협 서비스로 Windows Defender ATP(Advanced Threat Protection)를 설정하려면[조건부 액세스로 Windows Defender ATP 사용](advanced-threat-protection.md)을 참조하세요.
+  방어 위협 서비스로 Microsoft Defender ATP(Advanced Threat Protection)를 설정하려면[조건부 액세스로 Microsoft Defender ATP 사용](advanced-threat-protection.md)을 참조하세요.
 
 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다.
 

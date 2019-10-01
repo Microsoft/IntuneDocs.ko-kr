@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune에서 iOS 디바이스에 대한 이메일 설정 - Azure | Microsoft Docs
+title: Microsoft Intune에서 iOS 디바이스의 메일 설정 구성 - Azure | Microsoft Docs
 description: Exchange 서버 사용 및 Azure Active Directory에서 특성 가져오기를 비롯한 Microsoft Intune에서 iOS 디바이스에 추가하고 구성할 수 있는 모든 이메일 설정 목록을 확인합니다. 또한 SSL을 활성화하고, 인증서 또는 사용자 이름/암호를 인증하고, Microsoft Intune에서 디바이스 구성 프로필을 사용하여 iOS 디바이스에서 이메일을 동기화할 수 있습니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,14 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0faf9220b4859c41ef8c4393fe15f385eaac8cc3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8fa0a7edd1782cd3eae725e6adf0af867e0f3727
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042112"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71301934"
 ---
-# <a name="email-profile-settings-for-ios-devices-in-intune"></a>Intune에서 iOS 디바이스에 대한 이메일 프로필 설정
+# <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스의 메일 설정 추가
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune에서 이메일 서버에 연결하기 위한 이메일을 만들고 구성하고, 사용자가 인증하는 방법을 선택하고, 암호화를 위한 S/MIME를 사용하는 등을 할 수 있습니다.
 
@@ -29,7 +31,10 @@ Microsoft Intune에서 이메일 서버에 연결하기 위한 이메일을 만�
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-[디바이스 구성 프로필을 만듭니다](email-settings-configure.md#create-a-device-profile).
+[디바이스 구성 프로필을 만듭니다](email-settings-configure.md).
+
+> [!NOTE]
+> 이러한 설정은 모든 등록 형식에 사용할 수 있습니다. 등록 유형에 대 한 자세한 내용은 [iOS 등록](ios-enroll.md)을 참조 하세요.
 
 ## <a name="email-settings"></a>전자 메일 설정
 
@@ -98,4 +103,4 @@ Microsoft Intune에서 이메일 서버에 연결하기 위한 이메일을 만�
 
 프로필이 만들어지지만 아직 아무것도 하지 않습니다. 다음으로, [프로필을 할당](device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md) 및 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 디바이스에서 이메일 설정을 구성합니다.
+[Android](email-settings-android.md), [android Enterprise](email-settings-android-enterprise.md), [Windows 10](email-settings-windows-10.md)및 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 장치에서 전자 메일 설정을 구성 합니다.
