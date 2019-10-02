@@ -3,12 +3,11 @@ title: Microsoft Intune에서 Windows Information Protection 설정
 titleSuffix: Microsoft Intune
 description: Windows Information Protection을 관리하는 데 사용할 수 있는 Microsoft Intune 설정을 알아봅니다.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 01/18/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc3684a04611e0b7ec8cd17cb5cdf428c1150a55
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: e3cc2cbc86eefc2344176919bf59f36e2364fb12
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59570379"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71302488"
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Microsoft Intune에서 Windows Information Protection을 구성하는 방법
 
@@ -37,9 +36,8 @@ ms.locfileid: "59570379"
 >[!NOTE]
 > Windows 10 회사 포털 앱에서 Windows 정보 보호를 사용하려면 회사 포털 앱을 Windows 정보 보호의 **예외** 모드에 추가해야 합니다. 
 
-## <a name="next-steps"></a>다음 단계
 자세한 내용은 다음을 참조하십시오.
--  [WIP(Windows Information Protection)를 사용하여 엔터프라이즈 데이터 보호](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)
+- [WIP(Windows Information Protection)를 사용하여 엔터프라이즈 데이터 보호](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)
 - [Microsoft Intune용 클래식 콘솔을 사용하여 WIP(Windows Information Protection) 정책 만들기](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune)
 - [Microsoft Intune용 Azure Portal을 사용하여 MDM이 포함된 WIP(Windows Information Protection) 정책 만들기](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)
 - [Microsoft Intune용 Azure Portal을 사용하여 MAM이 포함된 WIP(Windows Information Protection) 정책 만들기](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure)

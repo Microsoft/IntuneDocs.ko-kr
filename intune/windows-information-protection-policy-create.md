@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8aaa94428a5a8606a7ba05f0661e96600f24e2d4
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.openlocfilehash: 869491098afc9e68ea1bbcb21bf6e7720e80564c
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587419"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "71303217"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포
 
@@ -37,15 +36,15 @@ WIP 정책을 추가할 때 몇 가지 개념에 대해 이해해야 합니다.
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>허용되는 앱과 예외 앱 목록
 
--   **보호된 앱:** 이러한 앱은 이 정책을 준수해야 하는 앱입니다.
+- **보호된 앱:** 이러한 앱은 이 정책을 준수해야 하는 앱입니다.
 
--   **예외 앱:** 이 정책에서 예외로 설정되며 제한 없이 회사 데이터에 액세스할 수 있는 앱입니다.
+- **예외 앱:** 이 정책에서 예외로 설정되며 제한 없이 회사 데이터에 액세스할 수 있는 앱입니다.
 
 ### <a name="types-of-apps"></a>앱의 유형
 
--   **권장 앱:** 사용자가 정책으로 쉽게 가져올 수 있도록 미리 채워진 앱(보통 Microsoft Office) 목록입니다.
--   **스토어 앱:** Windows 스토어의 모든 앱을 정책에 추가할 수 있습니다.
--   **Windows 데스크톱 앱:** 기존 Windows 데스크톱 앱을 정책에 추가할 수 있습니다(예: .exe, .dll).
+- **권장 앱:** 사용자가 정책으로 쉽게 가져올 수 있도록 미리 채워진 앱(보통 Microsoft Office) 목록입니다.
+- **스토어 앱:** Windows 스토어의 모든 앱을 정책에 추가할 수 있습니다.
+- **Windows 데스크톱 앱:** 기존 Windows 데스크톱 앱을 정책에 추가할 수 있습니다(예: .exe, .dll).
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -56,8 +55,8 @@ WIP 앱 보호 정책을 만들려면 먼저 MAM 공급자를 구성해야 합�
 
 다음과 같은 라이센스와 업데이트도 필요합니다.
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 라이선스
--   [Windows 크리에이터 업데이트](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
+- [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 라이선스
+- [Windows 크리에이터 업데이트](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 
 
@@ -81,7 +80,7 @@ WIP 앱 보호 정책을 만들려면 먼저 MAM 공급자를 구성해야 합�
     - **설명:** (선택 사항)설명을 입력합니다.
     - **플랫폼:** 앱 보호 정책에 지원되는 플랫폼으로 **Windows 10**을 선택합니다.
     - **등록 상태:** 정책의 등록 상태로 **등록 없음**을 선택합니다.
-7.  **만들기**를 선택합니다. 정책이 만들어져 **앱 보호 정책** 블레이드의 표에 표시됩니다.
+7. **만들기**를 선택합니다. 정책이 만들어져 **앱 보호 정책** 블레이드의 표에 표시됩니다.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>보호되는 앱 목록에 권장 앱을 추가하려면
 
@@ -150,11 +149,11 @@ WIP를 해제하고 나면 로컬로 연결된 드라이브에서 WIP 태그가 
 
 ### <a name="add-a-protection-mode"></a>보호 모드 추가
 
-1.  **앱 정책** 블레이드에서 정책의 이름을 선택한 다음, **필수 설정**을 선택합니다.
+1. **앱 정책** 블레이드에서 정책의 이름을 선택한 다음, **필수 설정**을 선택합니다.
 
     ![학습 모드 창의 스크린샷](./media/learning-mode-sc1.png)
 
-1.  설정을 선택한 다음, **저장**을 선택합니다.
+1. 설정을 선택한 다음, **저장**을 선택합니다.
 
 ### <a name="use-wip-learning"></a>WIP 학습 사용
 
@@ -188,11 +187,11 @@ WIP를 해제하고 나면 로컬로 연결된 드라이브에서 WIP 태그가 
 
 WIP 앱 보호 정책을 만든 후에는 MAM을 사용하여 조직에 정책을 배포해야 합니다.
 
-1.  **앱 정책** 블레이드에서 새로 만든 앱 보호 정책을 선택하고 **사용자 그룹** > **사용자 그룹 추가**를 선택합니다.
+1. **앱 정책** 블레이드에서 새로 만든 앱 보호 정책을 선택하고 **사용자 그룹** > **사용자 그룹 추가**를 선택합니다.
 
     **사용자 그룹 추가** 블레이드에서 Azure Active Directory의 모든 보안 그룹이 포함된 사용자 그룹 목록이 열립니다.
 
-2.  정책을 적용할 그룹을 선택하고 **선택**을 선택하여 정책을 배포합니다.
+2. 정책을 적용할 그룹을 선택하고 **선택**을 선택하여 정책을 배포합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
