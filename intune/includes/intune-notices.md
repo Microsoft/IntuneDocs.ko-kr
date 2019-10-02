@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: fa251a0edd943d566849b138af5cbab0be248a53
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71279907"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71726403"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Android 디바이스 관리자에 대한 지원 감소 
-Android 디바이스 관리자("레거시" Android 관리라고도 하며 Android 2.2를 통해 출시됨)는 Android 디바이스를 관리하는 방법입니다. 그러나 이제 향상된 관리 기능을 [Android Enterprise](../connect-intune-android-enterprise.md)(Android 5.0을 통해 출시)에서 사용할 수 있습니다. 최신의 풍부하고 보다 안전한 디바이스 관리로 전환하기 위해 Google은 새로운 Android 릴리스에서 디바이스 관리자 지원을 줄이고 있습니다.
+Android 디바이스 관리자("레거시" Android 관리라고도 하며 Android 2.2를 통해 출시됨)는 Android 디바이스를 관리하는 방법입니다. 그러나 이제 향상된 관리 기능을 [Android Enterprise](../enrollment/connect-intune-android-enterprise.md)(Android 5.0을 통해 출시)에서 사용할 수 있습니다. 최신의 풍부하고 보다 안전한 디바이스 관리로 전환하기 위해 Google은 새로운 Android 릴리스에서 디바이스 관리자 지원을 줄이고 있습니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 Google의 이러한 변경으로 인해 Intune 사용자는 다음과 같은 방식으로 영향을 받습니다. 
@@ -67,10 +67,11 @@ Azure Portal의 Intune에 업데이트된 UI 작성 및 편집 환경을 제공�
 https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>변경 계획: Intune의 새로운 Windows 업데이트 설정 <!-- 4464404 -->
-Intune 서비스의 8월 릴리스 또는 1908부터, “사용자가 다시 시작할 수 있도록 허용(개입형 다시 시작)” 대신, 구성할 수 있는 새로운 "최종 기한 설정"이 추가됩니다. 1909 또는 9월 업데이트의 UI에서는 개입형 다시 시작 설정을 사용하지 않도록 설정하고, 10월 말에 콘솔에서 완전히 제거할 예정입니다. 
+Intune 서비스의 8월 릴리스 또는 1908부터, “사용자가 다시 시작할 수 있도록 허용(개입형 다시 시작)” 대신, 구성할 수 있는 새로운 "최종 기한 설정"이 추가됩니다. 1909 또는 9월 업데이트의 UI에서는 개입형 다시 시작 설정을 사용하지 않도록 설정하고, 10월 말에 콘솔에서 완전히 제거할 예정입니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-작업 환경에서 Windows 10 디바이스를 관리하는 경우 
+작업 환경에서 Windows 10 디바이스를 관리하는 경우
+
 - 8월 Intune 업데이트 또는 1908을 사용하면 이전의 개입형 다시 시작 설정 외에 새 최종 기한 설정이 콘솔에 표시됩니다.
 - 이러한 이전 설정과 새 설정이 모두 구성된 경우 최종 기한 설정 값이 개입형 다시 시작 설정 값을 재정의합니다.
 - 1910 업데이트의 콘솔에는 “사용자가 다시 시작할 수 있도록 허용(개입형 다시 시작)” 옵션 대신 최종 기한 설정이 표시됩니다.
@@ -78,7 +79,7 @@ Intune 서비스의 8월 릴리스 또는 1908부터, “사용자가 다시 시
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
 최종 기한 설정을 원하는 값으로 구성하여 1908부터 사용할 수 있습니다. 준비가 끝나면 개입형 다시 시작 설정을 “구성되지 않음”으로 설정하여 10월에는 콘솔에서 이러한 설정을 제거할 수 있게 준비할 수 있습니다.
 
-필요한 경우 설명서 및 모든 자동화 스크립트를 업데이트합니다. 
+필요한 경우 설명서 및 모든 자동화 스크립트를 업데이트합니다.
 
 개입형 다시 시작 설정을 제거하기 전에 업데이트된 정보를 제공하고 메시지 센터에 미리 알림을 게시할 것입니다.
 
@@ -86,12 +87,13 @@ Intune 서비스의 8월 릴리스 또는 1908부터, “사용자가 다시 시
 Intune은 10월에 Android 5.x(Lollipop) 이상을 지원하도록 전환되고 있습니다. 최신 Intune 앱 SDK를 사용하여 래핑된 앱을 업데이트하고 디바이스를 업데이트합니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-Android용 SDK 또는 앱을 사용하고 있지 않거나 향후 사용할 예정인 경우 이 변경의 영향을 받지 않습니다. Intune 앱 SDK를 사용하는 경우 최신 버전으로 업데이트하고, 디바이스를 Android 5.x 이상으로 업데이트해야 합니다. 업데이트하지 않으면 앱은 업데이트를 받지 못하며 해당 환경 품질이 시간이 흐름에 따라 저하됩니다. 
+Android용 SDK 또는 앱을 사용하고 있지 않거나 향후 사용할 예정인 경우 이 변경의 영향을 받지 않습니다. Intune 앱 SDK를 사용하는 경우 최신 버전으로 업데이트하고, 디바이스를 Android 5.x 이상으로 업데이트해야 합니다. 업데이트하지 않으면 앱은 업데이트를 받지 못하며 해당 환경 품질이 시간이 흐름에 따라 저하됩니다.
 
 아래에서 Android 버전 4.x를 실행하는 Intune에 등록된 일반 디바이스 목록을 찾아보세요. 이러한 디바이스 중 하나를 사용하는 경우 이 디바이스에서 Android 버전 5.0 이상을 지원하거나 Android 버전 5.0 이상을 지원하는 디바이스로 대체되도록 적절한 단계를 수행합니다. 이 목록은 평가해야 할 수 있는 모든 디바이스를 포함하지는 않습니다.
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung GT-I9195 
+- Samsung SM-T365
+- Samsung GT-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - Motorola XT1080
@@ -100,7 +102,6 @@ Android용 SDK 또는 앱을 사용하고 있지 않거나 향후 사용할 예�
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
 최신 Intune 앱 SDK를 사용하여 앱을 래핑합니다. 사용자가 개인 디바이스의 최종 사용자에게 업그레이드할 것을 알리도록 "최소 OS 버전 필요(경고만)" 조건부 시작 설정을 지정할 수도 있습니다.
-
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune 변경 계획: Windows 7 지원 종료 임박 <!-- 3042987 -->
 지난 2018년 9월에 MC148476에서 그리고 2019년 3월에 MC176794에서 다시 공지한 대로 2020년 1월 14일에 Windows 7의 연장 지원이 종료됩니다. 이때 Intune은 Windows 7을 실행하는 디바이스에 대한 지원을 중지하므로 새로운 기술 지원 및 새로운 최종 사용자 환경을 제공하는 데 집중할 수 있습니다. 이 날짜 이후에는 Windows 7 PC를 보호하는 데 유용한 기술 지원과 자동 업데이트를 더 이상 Intune을 통해 받을 수 없습니다. 서비스 또는 지원을 더 이상 받을 수 없게 되는 시나리오를 방지하려면 2020년 1월 1일 이전에 Windows 10으로 전환하는 것이 좋습니다. Windows 지원 수명 주기에 대한 자세한 정보는 [여기](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.

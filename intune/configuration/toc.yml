@@ -1,0 +1,190 @@
+- name: 디바이스 설정 구성
+  href: index.yml
+- name: 개요
+  expanded: true
+  items:
+    - name: 디바이스 구성 개요
+      href: device-profiles.md
+- name: 빠른 시작
+  items:
+    - name: 메일 디바이스 프로필 만들기
+      href: quickstart-email-profile.md
+- name: 방법 가이드
+  items:
+    - name: 프로필 만들기
+      href: device-profile-create.md
+    - name: Windows 템플릿 관리
+      href: administrative-templates-windows.md
+    - name: iOS 및 macOS 디바이스 기능
+      href: device-features-configure.md
+    - name: 디바이스 설정 및 기능 제한
+      href: device-restrictions-configure.md
+      displayName: Device restrictions
+    - name: 업데이트
+      href: delivery-optimization-windows.md
+      displayName: delivery optimization; updates
+    - name: 버전 및 S 모드 업그레이드
+      href: edition-upgrade-configure-windows-10.md
+    - name: 메일
+      href: email-settings-configure.md
+    - name: 키오스크 및 전용 디바이스
+      href: kiosk-settings.md
+    - name: 다중 사용자 디바이스 공유
+      href: shared-user-device-settings.md
+    - name: VPN
+      href: vpn-settings-configure.md
+      items:
+        - name: Android용 앱별 VPN
+          href: android-pulse-secure-per-app-vpn.md
+        - name: iOS용 앱별 VPN
+          href: vpn-setting-configure-per-app.md
+    - name: Wi-Fi 네트워크
+      href: wi-fi-settings-configure.md
+      displayName: wifi
+      items:
+        - name: 미리 공유한 키를 사용하는 Wi-Fi
+          href: wi-fi-profile-shared-key.md
+    - name: macOS에서 확장
+      href: kernel-extensions-overview-macos.md
+    - name: 교육 테스트 실행 앱
+      href: education-settings-configure.md
+    - name: Zebra 디바이스의 이동성 확장
+      href: android-zebra-mx-overview.md
+      displayName: mx
+    - name: Android Enterprise의 OEMConfig
+      href: android-oem-configuration-overview.md
+    - name: eSIM 셀룰러 프로필
+      href: esim-device-configuration.md
+    - name: 통신 비용 모니터링
+      href: telecom-expenses-monitor.md
+    - name: 사용자 지정 디바이스 설정
+      href: custom-settings-configure.md
+    - name: 프로필 할당
+      href: device-profile-assign.md
+    - name: 프로필 모니터링
+      href: device-profile-monitor.md
+    - name: 문제 해결
+      items:
+        - name: 정책 및 프로필 문제 해결
+          href: troubleshoot-policies-in-microsoft-intune.md
+        - name: 이메일 프로필 문제 및 해결 방법
+          href: troubleshoot-email-profiles-in-microsoft-intune.md
+        - name: StageNow 로그 및 일반적인 문제
+          href: android-zebra-mx-logs-troubleshoot.md
+        - name: 일반적인 질문 및 답변
+          href: device-profile-troubleshoot.md
+- name: 참조
+  items:
+    - name: 구성 프로필 설정
+      items:
+        - name: Android
+          items:
+            - name: 디바이스 제한 사항
+              href: device-restrictions-android.md
+            - name: 메일
+              href: email-settings-android.md
+            - name: VPN
+              href: vpn-settings-android.md
+            - name: Wi-Fi
+              href: wi-fi-settings-android.md
+            - name: 사용자 지정
+              href: custom-settings-android.md
+              items:
+                - name: Samsung Knox Standard에 대해 앱 허용/차단
+                  href: samsung-knox-apps-allow-block.md
+        - name: Android Enterprise
+          items:
+            - name: 디바이스 제한 사항
+              href: device-restrictions-android-for-work.md
+            - name: 메일
+              href: email-settings-android-enterprise.md
+            - name: VPN
+              href: vpn-settings-android-enterprise.md
+            - name: Wi-Fi
+              href: wi-fi-settings-android-enterprise.md
+            - name: 사용자 지정
+              href: custom-settings-android-for-work.md
+        - name: iOS
+          items:
+            - name: 디바이스 기능
+              href: ios-device-features-settings.md
+            - name: 디바이스 제한 사항
+              href: device-restrictions-ios.md
+            - name: 메일
+              href: email-settings-ios.md
+            - name: VPN
+              href: vpn-settings-ios.md
+            - name: Wi-Fi
+              href: wi-fi-settings-ios.md
+            - name: 사용자 지정
+              href: custom-settings-ios.md
+            - name: 기본 제공 iOS 앱에 대한 번들 ID
+              href: bundle-ids-built-in-ios-apps.md
+        - name: macOS
+          items:
+            - name: 디바이스 기능
+              href: macos-device-features-settings.md
+            - name: 디바이스 제한 사항
+              href: device-restrictions-macos.md
+            - name: VPN
+              href: vpn-settings-macos.md
+            - name: Wi-Fi
+              href: wi-fi-settings-macos.md
+            - name: 확장
+              href: kernel-extensions-settings-macos.md
+            - name: 사용자 지정
+              href: custom-settings-macos.md
+        - name: Windows 10 이상
+          items:
+            - name: 배달 최적화
+              href: delivery-optimization-settings.md
+            - name: 디바이스 제한 사항
+              href: device-restrictions-windows-10.md
+            - name: 디바이스 제한 사항(Windows 10 Team)
+              href: device-restrictions-windows-10-teams.md
+            - name: 버전 업그레이드 및 모드 전환
+              href: edition-upgrade-windows-settings.md
+            - name: 메일
+              href: email-settings-windows-10.md
+            - name: 키오스크
+              href: kiosk-settings-windows.md
+            - name: VPN
+              href: vpn-settings-windows-10.md
+            - name: Wi-Fi
+              href: wi-fi-settings-windows.md
+            - name: 보안 평가
+              href: education-settings-windows.md
+            - name: 다중 사용자 디바이스 공유
+              href: shared-user-device-settings-windows.md
+            - name: 사용자 지정
+              href: custom-settings-windows-10.md
+        - name: Windows Holographic for Business
+          items:
+            - name: 디바이스 제한 사항
+              href: device-restrictions-windows-holographic.md
+            - name: 다중 사용자 디바이스 공유
+              href: shared-user-device-settings-windows-holographic.md
+            - name: 버전 업그레이드 및 모드 전환
+              href: holographic-upgrade.md
+            - name: 키오스크
+              href: kiosk-settings-holographic.md
+            - name: 사용자 지정
+              href: custom-settings-windows-holographic.md
+        - name: Windows 8.1
+          items:
+            - name: 디바이스 제한 사항
+              href: device-restrictions-windows-8-1.md
+            - name: VPN
+              href: vpn-settings-windows-8-1.md
+            - name: Wi-Fi 가져오기
+              href: wi-fi-settings-import-windows-8-1.md
+        - name: Windows Phone 8.1
+          items:
+            - name: 디바이스 제한 사항
+              href: device-restrictions-windows-phone-8-1.md
+            - name: 메일
+              href: email-settings-windows-phone-8-1.md
+            - name: VPN
+              href: vpn-settings-windows-phone-8-1.md
+            - name: 사용자 지정
+              href: custom-settings-windows-phone-8-1.md

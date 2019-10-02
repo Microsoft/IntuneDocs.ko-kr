@@ -8,186 +8,216 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: mtillman
-  ms.date: 08/30/2019
-  ms.openlocfilehash: e094a13f20cb4d66e96c3c559d04a0c6a51e7a3a
-  ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+  ms.date: 09/16/2019
+  ms.openlocfilehash: b7e4a5c9dee8d8a47a90ceafa60290d726637ba1
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/20/2019
-  ms.locfileid: "71166320"
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71721218"
 highlightedContent:
   items:
   - title: Intune이란?
     itemType: overview
-    url: what-is-intune.md
+    url: ./fundamentals/what-is-intune.md
   - title: Intune의 새로운 기능
     itemType: overview
-    url: whats-new.md
+    url: ./fundamentals/whats-new.md
   - title: 개발 기능
     itemType: overview
-    url: in-development.md
+    url: ./fundamentals/in-development.md
   - title: 무료로 Intune 체험하기
     itemType: get-started
-    url: free-trial-sign-up.md
-  - title: 범위 태그를 사용하여 지역 설정 적용
+    url: ./fundamentals/free-trial-sign-up.md
+  - title: Windows 10 디바이스에 대한 자동 등록 설정
     itemType: get-started
-    url: scope-tags.md
+    url: ./enrollment/quickstart-setup-auto-enrollment.md
   - title: Microsoft 권장 설정을 사용하여 Windows 디바이스 보호
     itemType: get-started
-    url: security-baselines.md
+    url: ./protect/security-baselines.md
 conceptualContent:
   items:
   - title: Intune 도입 계획
     links:
-    - url: planning-guide.md
+    - url: ./fundamentals/planning-guide.md
       itemType: concept
       text: Intune 계획 가이드
-    - url: migration-guide.md
+    - url: ./fundamentals/migration-guide.md
       itemType: concept
       text: Intune 마이그레이션 가이드
-    - url: migration-guide-communication-plan.md
+    - url: ./fundamentals/migration-guide-communication-plan.md
       itemType: concept
       text: 사용자에 대한 통신 계획
+    footerLink:
+      text: 자세히 보기
+      url: ./fundamentals/index.yml
   - title: Intune 설정
     links:
-    - url: setup-steps.md
+    - url: ./fundamentals/setup-steps.md
       itemType: how-to-guide
       text: Intune을 설정하는 단계
-    - url: supported-devices-browsers.md
+    - url: ./fundamentals/supported-devices-browsers.md
       itemType: reference
       text: 지원되는 운영 체제 및 브라우저
-    - url: role-based-access-control.md
+    - url: ./fundamentals/role-based-access-control.md
       itemType: reference
       text: 역할 기반 액세스 제어
-    - url: licenses.md
+    - url: ./fundamentals/licenses.md
       itemType: concept
       text: Intune 라이선싱
+    footerLink:
+      text: 자세히 보기
+      url: ./fundamentals/index.yml
   - title: 디바이스 등록
     links:
-    - url: device-enrollment.md
+    - url: ./enrollment/device-enrollment.md
       itemType: concept
       text: 디바이스 등록 개요
-    - url: windows-enroll.md
+    - url: ./enrollment/device-management-capabilities.md
+      itemType: concept
+      text: 등록된 디바이스 관리 기능
+    - url: ./enrollment/windows-enroll.md
       itemType: how-to-guide
       text: Windows 등록 설정
-    - url: ios-enroll.md
+    - url: ./enrollment/ios-enroll.md
       itemType: how-to-guide
       text: iOS 디바이스 등록 설정
-    - url: android-enroll.md
+    - url: ./enrollment/android-enroll.md
       itemType: how-to-guide
       text: Android 디바이스 등록 설정
+    footerLink:
+      text: 자세히 보기
+      url: ./enrollment/index.yml
   - title: 디바이스 원격 관리
     links:
-    - url: device-management.md
-      itemType: concept
-      text: 디바이스 관리 개요
-    - url: device-management-capabilities.md
+    - url: ./remote-actions/device-management.md
       itemType: concept
       text: 디바이스 관리 기능
-    - url: custom-notifications.md
+    - url: ./remote-actions/custom-notifications.md
       itemType: how-to-guide
       text: 사용자 지정 알림 보내기
-    - url: devices-wipe.md
+    - url: ./remote-actions/devices-wipe.md
       itemType: how-to-guide
       text: 디바이스 제거
+    footerLink:
+      text: 자세히 보기
+      url: ./remote-actions/index.yml
   - title: 사용자 및 장치에 대한 준수 규칙 만들기
     links:
-    - url: device-compliance-get-started.md
+    - url: ./protect/device-compliance-get-started.md
       itemType: concept
       text: 규정 준수 개요
-    - url: use-network-locations.md
+    - url: ./protect/use-network-locations.md
       itemType: how-to-guide
       text: Android에서 네트워크 펜싱 + 규정 준수
-    - url: actions-for-noncompliance.md
+    - url: ./protect/actions-for-noncompliance.md
       itemType: how-to-guide
       text: 비규격 디바이스에 대한 작업
+    footerLink:
+      text: 자세히 보기
+      url: ./protect/index.yml
   - title: 디바이스 기능 및 설정 제어
     links:
-    - url: device-profiles.md
+    - url: ./configuration/device-profiles.md
       itemType: concept
       text: 디바이스 구성 개요
-    - url: device-restrictions-configure.md
+    - url: ./configuration/device-restrictions-configure.md
       itemType: how-to-guide
       text: 설정 및 기능 제한
-    - url: vpn-settings-configure.md
+    - url: ./configuration/vpn-settings-configure.md
       itemType: how-to-guide
       text: 디바이스에 VPN 추가
-    - url: administrative-templates-windows.md
+    - url: ./configuration/administrative-templates-windows.md
       itemType: how-to-guide
       text: 그룹 정책 ADMX 설정 구성
+    footerLink:
+      text: 자세히 보기
+      url: ./configuration/index.yml
   - title: 디바이스 및 데이터 보호
     links:
-    - url: device-protect.md
+    - url: ./protect/device-protect.md
       itemType: concept
       text: 디바이스 보호 개요
-    - url: conditional-access.md
+    - url: ./protect/conditional-access.md
       itemType: concept
       text: Intune을 사용하는 조건부 액세스
-    - url: mobile-threat-defense.md
+    - url: ./protect/mobile-threat-defense.md
       itemType: concept
       text: Intune에 Mobile Threat Defense 통합
+    footerLink:
+      text: 자세히 보기
+      url: ./protect/index.yml
   - title: 앱 관리
     links:
-    - url: app-management.md
+    - url: ./apps/app-management.md
       itemType: concept
       text: 앱 관리 개요
-    - url: apps-add.md
+    - url: ./apps/apps-add.md
       itemType: how-to-guide
       text: Intune에 앱 추가
-    - url: apps-deploy.md
+    - url: ./apps/apps-deploy.md
       itemType: how-to-guide
       text: 그룹에 앱 할당
-    - url: app-configuration-policies-overview.md
+    - url: ./apps/app-configuration-policies-overview.md
       itemType: overview
       text: 앱 구성 정책
+    footerLink:
+      text: 자세히 보기
+      url: ./apps/index.yml
   - title: 앱 보호 정책
     links:
-    - url: app-protection-policy.md
+    - url: ./apps/app-protection-policy.md
       itemType: concept
       text: 앱 보호 정책 개요
-    - url: app-protection-policies.md
+    - url: ./apps/app-protection-policies.md
       itemType: overview
       text: 앱 보호 정책 만들기
-    - url: app-protection-policies-validate.md
+    - url: ./apps/app-protection-policies-validate.md
       itemType: how-to-guide
       text: 앱 보호 정책 유효성 검사
-    - url: app-protection-policies-monitor.md
+    - url: ./apps/app-protection-policies-monitor.md
       itemType: how-to-guide
       text: 앱 보호 정책 모니터링
+    footerLink:
+      text: 자세히 보기
+      url: ./apps/index.yml
   - title: 도움말 및 지원
     links:
-    - url: get-support.md
+    - url: ./fundamentals/get-support.md
       itemType: concept
       text: Microsoft Intune에 대한 지원을 받는 방법
-    - url: help-desk-operators.md
+    - url: ./fundamentals/help-desk-operators.md
       itemType: concept
       text: 사용자가 문제 해결할 수 있도록 도움
-    - url: monitor-audit-logs.md
+    - url: ./fundamentals/monitor-audit-logs.md
       itemType: concept
       text: 감사 로그를 사용하여 이벤트 추적 및 모니터링
-    - url: troubleshoot-app-install.md
+    - url: ./apps/troubleshoot-app-install.md
       itemType: concept
       text: 앱 설치 문제 해결
-    - url: troubleshoot-policies-in-microsoft-intune.md
+    - url: ./protect/troubleshoot-policies-in-microsoft-intune.md
       itemType: concept
       text: Intune의 문제 해결 정책 및 프로필
   - title: Developer
     links:
-    - url: intune-graph-apis.md
+    - url: ./developer/intune-graph-apis.md
       itemType: concept
       text: Microsoft Graph에서 Intune API에 액세스
     - url: https://github.com/Microsoft/Intune-PowerShell-SDK/
       itemType: concept
       text: PowerShell cmdlet을 사용하여 작업 자동화
-    - url: reports-nav-create-intune-reports.md
+    - url: ./developer/reports-nav-create-intune-reports.md
       itemType: concept
       text: Microsoft Intune 데이터 웨어하우스 사용
-    - url: app-sdk.md
+    - url: ./developer/app-sdk.md
       itemType: overview
       text: Microsoft Intune 앱 SDK 개요
-    - url: reports-nav-create-intune-reports.md
+    - url: ./developer/reports-nav-create-intune-reports.md
       itemType: concept
       text: Microsoft Intune 데이터 웨어하우스 사용
+    footerLink:
+      text: 자세히 보기
+      url: ./developer/index.yml
 additionalContent:
   sections:
   - title: 디바이스를 관리하기 위한 추가 리소스
