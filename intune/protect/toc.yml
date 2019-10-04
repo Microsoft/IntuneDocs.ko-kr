@@ -1,0 +1,269 @@
+- name: Intune을 사용하여 데이터 및 디바이스 보호
+  href: index.yml
+- name: 개요
+  expanded: true
+  items:
+    - name: 디바이스 보호 개요
+      href: device-protect.md
+      displayName: compliant; noncompliant; mfa
+- name: 빠른 시작
+  items:
+    - name: 디바이스 준수 정책 만들기
+      href: quickstart-set-password-length-android.md
+    - name: 비규격 디바이스로 알림 보내기
+      href: quickstart-send-notification.md
+- name: 자습서
+  items:
+    - name: 관리 디바이스의 이메일 보호
+      href: tutorial-protect-email-on-enrolled-devices.md
+    - name: 관리되지 않는 디바이스의 이메일 보호
+      href: tutorial-protect-email-on-unmanaged-devices.md
+- name: 개념
+  items:
+    - name: 개인 정보 및 개인 데이터
+      href: privacy-personal-data.md
+      items:
+        - name: 데이터 수집
+          href: privacy-data-collect.md
+        - name: 데이터 스토리지 및 처리
+          href: privacy-data-store-process.md
+        - name: 데이터 보안 및 공유
+          href: privacy-data-secure-share.md
+          items:
+            - name: Apple이 Intune에 보내는 데이터
+              href: data-apple-sends-to-intune.md
+            - name: Google이 Intune에 보내는 데이터
+              href: data-google-sends-to-intune.md
+            - name: Intune이 Apple에 보내는 데이터
+              href: data-intune-sends-to-apple.md
+            - name: Intune이 Google에 보내는 데이터
+              href: data-intune-sends-to-google.md
+            - name: Jamf Pro에서 Intune으로 공유된 정보
+              href: data-jamf-sends-to-intune.md
+        - name: 개인 데이터 보기 및 수정
+          href: privacy-data-view-correct.md
+        - name: '감사, 내보내기, 삭제'
+          href: privacy-data-audit-export-delete.md
+        - name: Windows Information Protection
+          href: windows-information-protection-configure.md
+- name: 방법 가이드
+  items:
+    - name: 리소스에 대한 액세스를 허용하는 디바이스에 대한 규칙 설정
+      items:
+        - name: 규정 준수 개요
+          href: device-compliance-get-started.md
+        - name: 정책 만들기
+          href: create-compliance-policy.md
+        - name: 위치 기반 규정 준수
+          href: use-network-locations.md
+        - name: 비준수에 대한 작업
+          href: actions-for-noncompliance.md
+        - name: 디바이스 준수 모니터링
+          href: compliance-policy-monitor.md
+    - name: 디바이스 암호화
+      items:
+        - name: 디바이스 암호화
+          href: encrypt-devices.md
+        - name: 모니터 디바이스 암호화
+          href: encryption-monitor.md
+    - name: 조건부 액세스
+      items:
+        - name: 조건부 액세스 개요
+          href: conditional-access.md
+          displayName: ca
+        - name: 조건부 액세스를 사용하는 일반적인 방법
+          href: conditional-access-intune-common-ways-use.md
+        - name: Exchange On-premises Connector 설치
+          href: exchange-connector-install.md
+        - name: 조건부 액세스 정책 만들기 및 할당
+          href: conditional-access-exchange-create.md
+        - name: 디바이스 기반 조건부 액세스 정책
+          href: create-conditional-access-intune.md
+        - name: Intune 클래식 포털에서 조건부 액세스 정책 다시 할당
+          href: conditional-access-intune-reassign.md
+        - name: 앱 기반 조건부 액세스
+          href: app-based-conditional-access-intune.md
+        - name: 앱 기반 조건부 액세스 설정
+          href: app-based-conditional-access-intune-create.md
+        - name: ADAL 및 Intune
+          href: app-modern-authentication-block.md
+        - name: 준수를 위해 Intune과 Jamf Pro 통합
+          href: conditional-access-integrate-jamf.md
+        - name: Jamf Pro로 관리되는 Mac에서 준수 적용
+          href: conditional-access-assign-jamf.md
+    - name: 위협 방지
+      items:
+        - name: Mobile Threat Defense
+          href: mobile-threat-defense.md
+          items:
+            - name: MTD를 위한 Intune 설정
+              items:
+                - name: MTD 앱 추가
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: MTD 디바이스 준수 정책 만들기
+                  href: mtd-device-compliance-policy-create.md
+                - name: Intune에서 MTD 사용
+                  href: mtd-connector-enable.md
+            - name: MTD 앱
+              items:
+                - name: 더 향상된 모바일 설정
+                  href: better-mobile-threat-defense-connector.md
+                  items:
+                    - name: 더 향상된 모바일 및 Intune 통합
+                      href: better-mobile-mtd-connector-integration.md
+                      displayName: sso
+                - name: Check Point 설정
+                  href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                  items:
+                    - name: Check Point 및 Intune 통합
+                      href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                - name: Lookout 설정
+                  href: lookout-mobile-threat-defense-connector.md
+                  items:
+                    - name: Lookout 및 Intune 통합
+                      href: lookout-mtd-connector-integration.md
+                - name: Pradeo 설정
+                  href: pradeo-mobile-threat-defense-connector.md
+                  items:
+                    - name: Pradeo와 Intune 통합
+                      href: pradeo-mtd-connector-integration.md
+                - name: Sophos Mobile 설정
+                  href: sophos-mtd-connector.md
+                  items:
+                    - name: Sophos Mobile 및 Intune 통합
+                      href: sophos-mtd-connector-integration.md
+                - name: Symantec 설정
+                  href: skycure-mobile-threat-defense-connector.md
+                  items:
+                    - name: Symantec 및 Intune 통합
+                      href: skycure-mtd-connector-integration.md
+                - name: Wandera 설정
+                  href: wandera-mtd-connector.md
+                  items:
+                    - name: Wandera와 Intune 통합
+                      href: wandera-mtd-connector-integration.md
+                - name: Zimperium 설정
+                  href: zimperium-mobile-threat-defense-connector.md
+                  items:
+                    - name: Zimperium 및 Intune 통합
+                      href: zimperium-mtd-connector-integration.md
+        - name: Microsoft Defender
+          items:
+            - name: Microsoft Defender ATP
+              href: advanced-threat-protection.md
+            - name: 보안 작업
+              href: atp-manage-vulnerabilities.md
+    - name: 보안 기준
+      items:
+        - name: 보안 기준
+          href: security-baselines.md
+        - name: 기준 모니터링
+          href: security-baselines-monitor.md
+    - name: Endpoint Protection
+      href: endpoint-protection-configure.md
+    - name: 네트워크 액세스 제어
+      href: network-access-control-integrate.md
+    - name: Windows Hello
+      items:
+        - name: Windows Hello
+          href: windows-hello.md
+        - name: ID 보호
+          href: identity-protection-configure.md
+    - name: 인증서
+      items:
+        - name: 인증에 인증서 사용
+          href: certificates-configure.md
+        - name: SCEP
+          items:
+            - name: SCEP 인프라
+              href: certificates-scep-configure.md
+              displayName: ksp
+            - name: SCEP 인증서 프로필
+              href: certificates-profile-scep.md
+            - name: SCEP를 사용하여 타사 인증 기관 사용
+              href: certificate-authority-add-scep-overview.md
+        - name: PKCS
+          items:
+            - name: PKCS
+              href: certficates-pfx-configure.md
+              displayName: ksp
+            - name: 가져온 PKCS
+              href: certificates-imported-pfx-configure.md
+            - name: S/MIME를 사용하여 메일 암호화
+              href: certificates-s-mime-encryption-sign.md
+              displayName: csr
+        - name: DigiCert PKI 사용
+          href: certificates-digicert-configure.md
+          displayName: ca; pkcs; pki; ra; registration authority
+        - name: SCEP 또는 PKCS 인증서 제거
+          href: remove-certificates.md
+    - name: 소프트웨어 업데이트
+      items:
+        - name: Windows 업데이트
+          items:
+            - name: 비즈니스용 Windows 업데이트 설정
+              href: windows-update-for-business-configure.md
+            - name: Windows 업데이트 준수 보고
+              href: windows-update-compliance-reports.md
+        - name: iOS 업데이트 정책
+          href: software-updates-ios.md
+    - name: 문제 해결
+      items:
+        - name: 정책 및 프로필 문제 해결
+          href: troubleshoot-policies-in-microsoft-intune.md
+        - name: 조건부 액세스 문제 해결
+          href: troubleshoot-conditional-access.md
+        - name: 인증서 커넥터 문제 해결
+          href: troubleshoot-certificate-connector-events.md
+        - name: Exchange Connector 문제 해결
+          items:
+            - name: Exchange Connector 문제 해결
+              href: troubleshoot-exchange-connector.md
+            - name: 일반적인 문제
+              href: troubleshoot-exchange-connector-common-problems.md
+            - name: 일반 오류
+              href: troubleshoot-exchange-connector-common-errors.md
+        - name: BitLocker 정책 문제 해결
+          href: troubleshoot-bitlocker-policies.md
+        - name: Jamf Pro 통합 문제 해결
+          href: troubleshoot-jamf.md
+- name: 참조
+  items:
+    - name: 타사 인증 기관을 추가하는 API
+      href: scep-libraries-apis.md
+    - name: 준수 정책 설정
+      items:
+        - name: 보안 기준
+          items:
+            - name: Windows 10 MDM 기준 설정
+              href: security-baseline-settings-mdm-all.md
+            - name: Microsoft Defender ATP 기준 설정
+              href: security-baseline-settings-defender-atp.md
+        - name: Windows 업데이트 설정
+          href: windows-update-settings.md
+        - name: 규정 준수 정책 설정 - Android
+          href: compliance-policy-create-android.md
+        - name: 규정 준수 정책 설정 - Android Enterprise
+          href: compliance-policy-create-android-for-work.md
+        - name: 규정 준수 정책 설정 - iOS
+          href: compliance-policy-create-ios.md
+        - name: 규정 준수 정책 설정 - MacOS
+          href: compliance-policy-create-mac-os.md
+        - name: 규정 준수 정책 설정 - Windows 10
+          href: compliance-policy-create-windows.md
+        - name: 규정 준수 정책 설정 - Windows 8.1
+          href: compliance-policy-create-windows-8-1.md
+        - name: 규정 준수 정책 설정 - Windows Phone 8.1
+          href: compliance-policy-create-windows-8-1.md
+    - name: 오류 코드와 설명
+      items:
+        - name: 소프트웨어 업데이트 오류
+          href: software-update-agent-error-codes.md
+- name: 시나리오 구현 가이드
+  items:
+    - name: Exchange Online 보호
+      href: exchange-online-protect.md
+    - name: 무단 액세스 방지
+      href: data-outside-protect.md
+    - name: 관리되지 않는 디바이스에서 데이터 누수 방지
+      href: data-leak-prevention.md
