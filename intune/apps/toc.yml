@@ -32,6 +32,7 @@
       items:
         - name: 앱 개요 추가
           href: apps-add.md
+          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
         - name: Intune 보호 앱
           href: apps-supported-intune-apps.md
         - name: 스토어 앱
@@ -104,12 +105,24 @@
           href: app-configuration-policies-use-ios.md
         - name: Android 관리되는 디바이스
           href: app-configuration-policies-use-android.md
-        - name: 관리형 홈 화면 구성
-          href: app-configuration-managed-home-screen-app.md
         - name: 관리되는 앱
           href: app-configuration-policies-managed-app.md
         - name: iOS 앱 프로비전 프로필
           href: app-provisioning-profile-ios.md
+        - name: 특정 앱 구성
+          items:
+            - name: 관리형 홈 화면 구성
+              href: app-configuration-managed-home-screen-app.md
+            - name: 회사 포털 구성
+              href: company-portal-app.md
+            - name: Managed Browser 구성
+              href: app-configuration-managed-browser.md
+            - name: Microsoft 시작 관리자 구성
+              href: configure-microsoft-launcher.md
+            - name: Microsoft Edge 구성
+              href: manage-microsoft-edge.md
+            - name: Outlook 구성
+              href: app-configuration-policies-outlook.md
         - name: 대량 구매 앱 및 전자책
           items:
             - name: VPP 앱 및 전자책 관리
@@ -121,16 +134,6 @@
               href: windows-store-for-business.md
             - name: iOS 전자책
               href: vpp-ebooks-ios.md
-        - name: 회사 포털 구성
-          href: company-portal-app.md
-        - name: Managed Browser 구성
-          href: app-configuration-managed-browser.md
-        - name: Microsoft Edge 구성
-          href: manage-microsoft-edge.md
-        - name: Microsoft 시작 관리자 구성
-          href: configure-microsoft-launcher.md
-        - name: Outlook 구성
-          href: app-configuration-policies-outlook.md
     - name: 앱 보호
       items:
         - name: 선택적으로 앱 지우기
