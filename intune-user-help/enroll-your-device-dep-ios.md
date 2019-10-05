@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4484dbc9a8348101c0f7409b009998baca32f8a4
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: bca7ff55653d12d352b4fb90163f4622a9e573ab
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71239419"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720999"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>관리에 조직 제공 iOS 디바이스 등록
 
@@ -31,11 +31,11 @@ Intune에서 새 iOS 디바이스를 관리하는 방법을 알아봅니다.
 
 회사 또는 학교에서 제공되는 iOS 디바이스는 받기 전에 종종 미리 구성됩니다. 디바이스를 켜고 처음 로그인하면 조직에서는 이러한 미리 구성된 설정을 디바이스로 보냅니다. 디바이스에서 설정을 완료한 후 회사 또는 학교 리소스에 액세스할 수 있습니다.  
 
-설정을 시작하려면 디바이스의 전원을 켜고 회사 또는 학교 자격 증명으로 로그인합니다. 이 문서의 나머지 부분에서는 설정 도우미를 통해 볼 수 있는 단계와 화면에 대해 설명합니다. 
+설정을 시작하려면 디바이스의 전원을 켜고 회사 또는 학교 자격 증명으로 로그인합니다. 이 문서의 나머지 부분에서는 설정 도우미를 통해 볼 수 있는 단계와 화면에 대해 설명합니다.
 
 ## <a name="what-is-apple-dep"></a>Apple DEP란?
 
-조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 디바이스를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 디바이스를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 디바이스 관리 공급자 내에서 해당 디바이스를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 iOS 디바이스 등록](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)을 참조하세요.  
+조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 디바이스를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 디바이스를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 디바이스 관리 공급자 내에서 해당 디바이스를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 iOS 디바이스 등록](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-ios.md)을 참조하세요.  
 
 ## <a name="set-up-your-ios-device"></a>iOS 디바이스 설정
 
@@ -51,7 +51,7 @@ Intune에서 새 iOS 디바이스를 관리하는 방법을 알아봅니다.
 4. Wi-Fi에 연결되면 **구성** 화면이 표시됩니다. **[사용자 회사]에서 자동으로 디바이스를 구성합니다.** 라고 표시합니다.
 
    **구성을 통해 [사용자 조직]이 이 디바이스를 무선으로 관리할 수 있습니다. 관리자가 이메일 및 네트워크 계정을 설정하고, 앱을 설치 및 구성하고, 원격으로 설정을 관리하도록 지원할 수 있습니다. 관리자는 기능을 사용하지 않도록 설정하고, 앱을 설치 및 제거하고, 인터넷 트래픽을 모니터링 및 제한하고, 이 디바이스를 원격으로 지울 수 있습니다.**
- 
+
    **구성은 다음에서 제공합니다.[사용자 회사의] iOS 팀 [주소]**
 
 5. Apple ID에 로그인합니다. 로그인을 통해 회사 포털 앱을 설치하고 관리 프로필을 설치하여 회사에 이메일 및 앱과 같은 해당 리소스에 대한 액세스 권한을 부여할 수 있습니다.

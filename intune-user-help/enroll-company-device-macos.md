@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de0e676e72d46bde922fd97b651cc1a9268e45e
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: f2e2ecc79cd24a68c1a5642f64474f2d31217bd7
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71239767"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721029"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>관리에 조직 제공 macOS 디바이스 등록
 
@@ -35,7 +35,7 @@ Intune에서 새 macOS 디바이스를 관리하는 방법을 알아봅니다.
 
 ## <a name="what-is-apple-dep"></a>Apple DEP란?
 
-조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 디바이스를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 디바이스를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 디바이스 관리 공급자 내에서 해당 디바이스를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 macOS 디바이스 등록](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)을 참조하세요.  
+조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 디바이스를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 디바이스를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 디바이스 관리 공급자 내에서 해당 디바이스를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 macOS 디바이스 등록](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-macos.md)을 참조하세요.  
 
 ## <a name="get-your-device-managed"></a>디바이스를 관리하도록 설정
 
@@ -63,7 +63,7 @@ macOS 디바이스를 관리에 등록하려면 다음 단계를 완료합니다
     * 사용 약관에 동의함
     * 컴퓨터 계정 만들기
     * 빠른 설정을 통해 진행
-    * Mac 설정  
+    * Mac 설정
 
 ## <a name="get-the-company-portal-app"></a>회사 포털 앱 가져오기
 
