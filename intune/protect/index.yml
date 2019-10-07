@@ -1,0 +1,137 @@
+### YamlMime:Landing
+title: Intune을 사용하여 데이터 및 디바이스 보호
+summary: Intune을 사용하면 보안 기준, Azure AD 조건부 액세스 및 모바일 위협 방어용 파트너와 같은 도구를 사용하여 디바이스와 회사 데이터를 보호할 수 있습니다.
+metadata:
+  title: Intune을 사용하여 데이터 및 디바이스 보호
+  description: Intune을 사용하면 보안 기준, Azure AD 조건부 액세스 및 모바일 위협 방어용 파트너와 같은 도구를 사용하여 디바이스와 회사 데이터를 보호할 수 있습니다.
+  services: service
+  ms.service: microsoft-intune
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: brenduns
+  ms.author: brenduns
+  ms.date: 08/20/2019
+  ms.openlocfilehash: 073177f7cd7426a86a110fc1cee7812b37fa083f
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728706"
+landingContent:
+- title: 리소스에 대한 액세스를 허용하는 디바이스에 대한 규칙 설정
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 규정 준수 개요
+      url: ../device-compliance-get-started.md
+  - linkListType: quickstart
+    links:
+    - text: 디바이스 준수 정책 만들기
+      url: ../quickstart-set-password-length-android.md
+  - linkListType: tutorial
+    links:
+    - text: 관리 디바이스에서 Exchange Online 이메일 보호
+      url: ../tutorial-protect-email-on-enrolled-devices.md
+  - linkListType: how-to-guide
+    links:
+    - text: 정책 만들기
+      url: ../create-compliance-policy.md
+    - text: 위치 기반 준수
+      url: ../use-network-locations.md
+    - text: 비준수에 대한 작업
+      url: ../actions-for-noncompliance.md
+- title: 개인 정보 및 개인 데이터 보호
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 개인 정보 및 개인 데이터
+      url: ../privacy-personal-data.md
+  - linkListType: concept
+    links:
+    - text: 데이터 수집
+      url: ../privacy-data-collect.md
+    - text: 데이터 스토리지 및 처리
+      url: ../privacy-data-store-process.md
+    - text: 데이터 보안 및 공유
+      url: ../privacy-data-secure-share.md
+  - linkListType: how-to-guide
+    links:
+    - text: Intune에서 공유하는 데이터
+      url: ../privacy-data-secure-share.md
+    - text: 감사, 내보내기, 삭제
+      url: ../privacy-data-audit-export-delete.md
+    - text: 개인 데이터 보기 및 수정
+      url: ../privacy-data-view-correct.md
+- title: 디바이스 및 네트워크 보호
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 디바이스 보호
+      url: ../device-protect.md
+    - text: Mobile Threat Defense
+      url: ../mobile-threat-defense.md
+  - linkListType: how-to-guide
+    links:
+    - text: Microsoft Defender ATP
+      url: ../advanced-threat-protection.md
+    - text: 모바일 위협 방어 파트너
+      url: ../mtd-apps-ios-app-configuration-policy-add-assign.md
+    - text: 보안 기준
+      url: ../security-baselines.md
+    - text: Endpoint Protection
+      url: ../endpoint-protection-configure.md
+    - text: 네트워크 액세스 제어
+      url: ../network-access-control-integrate.md
+    - text: 디바이스 암호화
+      url: ../encrypt-devices.md
+- title: 보안 인증 방법 사용
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 인증서 및 Intune
+      url: ../certificates-configure.md
+  - linkListType: how-to-guide
+    links:
+    - text: SCEP 인증서 프로필
+      url: ../certificates-scep-configure.md
+    - text: PKCS 인증서 프로필
+      url: ../certficates-pfx-configure.md
+    - text: 가져온 PFX 인증서
+      url: ../certificates-imported-pfx-configure.md
+    - text: 비즈니스용 Windows Hello
+      url: ../windows-hello.md
+- title: 소프트웨어 업데이트 관리
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: iOS
+      url: ../software-updates-ios.md
+    - text: Windows
+      url: ../windows-update-for-business-configure.md
+- title: 조건부 액세스 사용
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 조건부 액세스 개요
+      url: ../conditional-access.md
+    - text: Exchange Online 보호
+      url: ../exchange-online-protect.md
+  - linkListType: tutorial
+    links:
+    - text: 관리 디바이스의 이메일 보호
+      url: ../tutorial-protect-email-on-enrolled-devices.md
+    - text: 관리되지 않는 디바이스의 이메일 보호
+      url: ../tutorial-protect-email-on-unmanaged-devices.md
+  - linkListType: concept
+    links:
+    - text: ADAL 및 Intune
+      url: ../app-modern-authentication-block.md
+  - linkListType: how-to-guide
+    links:
+    - text: 조건부 액세스 정책 만들기 및 할당
+      url: ../conditional-access-exchange-create.md
+    - text: 조건부 액세스를 사용하는 일반적인 방법
+      url: ../conditional-access-intune-common-ways-use.md
+    - text: MacOS용 Jamf Pro
+      url: ../conditional-access-integrate-jamf.md
