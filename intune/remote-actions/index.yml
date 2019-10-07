@@ -1,0 +1,83 @@
+### YamlMime:Landing
+title: Intune을 사용하여 원격으로 디바이스 작업 실행
+summary: Intune은 디바이스 작업을 원격으로 실행하는 기능을 관리자에게 제공합니다. Intune 포털에서 이러한 원격 작업을 사용하여 디바이스를 다시 시작하고, 암호를 다시 설정하고, 분실하거나 도난당한 디바이스를 찾을 수 있습니다.
+metadata:
+  title: Intune을 사용하여 원격으로 디바이스 작업 실행
+  description: Intune을 사용하여 작업을 원격으로 실행할 수 있습니다.
+  services: service
+  ms.service: microsoft-intune
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: ErikjeMS
+  ms.author: erikje
+  ms.date: 09/13/2019
+  ms.openlocfilehash: 37f0a4f8017848f4e1672ae7e3e1979239551af3
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71729148"
+landingContent:
+- title: 디바이스 작업 원격으로 실행
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 디바이스 관리 개요
+      url: device-management.md
+  - linkListType: how-to-guide
+    links:
+    - text: 디바이스 이름 바꾸기
+      url: device-rename.md
+    - text: 디바이스 세부 정보 보기
+      url: device-inventory.md
+    - text: 디바이스로 사용자 지정 알림 보내기
+      url: custom-notifications.md
+    - text: 디바이스 동기화
+      url: device-sync.md
+    - text: TeamViewer를 사용하여 관리자 디바이스를 원격으로 관리
+      url: teamviewer-support.md
+- title: 제거 및 다시 시작
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 제거, 초기화, 사용 중지, 등록 취소
+      url: devices-wipe.md
+    - text: Windows 새로 시작
+      url: device-fresh-start.md
+    - text: 디바이스 다시 시작
+      url: device-restart.md
+- title: 사용자 작업
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 사용자 로그 아웃
+      url: device-logout-user.md
+    - text: 기본 사용자 찾기
+      url: find-primary-user.md
+    - text: 사용자 제거
+      url: device-remove-user.md
+- title: 잠금 및 암호
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 디바이스 잠금
+      url: device-remote-lock.md
+    - text: 디바이스 암호 다시 설정
+      url: device-passcode-reset.md
+    - text: Windows 10 PIN 재설정
+      url: device-lost-mode.md
+- title: Apple 디바이스 작업
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: IOS 디바이스 찾기
+      url: device-locate.md
+    - text: iOS 감독 모드 설정
+      url: device-supervised-mode.md
+    - text: IOS 분실 모드 설정
+      url: device-lost-mode.md
+    - text: MacOS 디바이스에서 데이터 지우기
+      url: device-erase.md
+    - text: 활성화 잠금 무시
+      url: device-activation-lock-bypass.md

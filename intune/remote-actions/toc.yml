@@ -1,0 +1,67 @@
+- name: 원격 작업
+  href: index.yml
+- name: 개요
+  expanded: true
+  items:
+    - name: 디바이스 관리 개요
+      href: device-management.md
+- name: 방법 가이드
+  items:
+    - name: 잠금 및 암호
+      items:
+        - name: 디바이스 잠금
+          href: device-remote-lock.md
+        - name: 암호 초기화
+          href: device-passcode-reset.md
+        - name: Windows 10 PIN 재설정
+          href: device-windows-pin-reset.md
+    - name: 제거 및 다시 시작
+      items:
+        - name: 디바이스 제거
+          href: devices-wipe.md
+        - name: Windows 새로 시작 관리
+          href: device-fresh-start.md
+        - name: 디바이스 다시 시작
+          href: device-restart.md
+    - name: Apple 디바이스 작업
+      items:
+        - name: 분실한 iOS 디바이스 찾기
+          href: device-locate.md
+        - name: iOS 분실 모드 사용
+          href: device-lost-mode.md
+        - name: iOS 감독 모드 설정
+          href: device-supervised-mode.md
+        - name: macOS 디바이스 지우기
+          href: device-erase.md
+        - name: 활성화 잠금 무시
+          href: device-activation-lock-bypass.md
+    - name: 사용자 작업
+      items:
+        - name: 현재 사용자 로그아웃
+          href: device-logout-user.md
+        - name: 사용자 제거
+          href: device-remove-user.md
+        - name: 기본 사용자 찾기
+          href: find-primary-user.md
+    - name: 다른 작업
+      items:
+        - name: 디바이스 이름 바꾸기
+          href: device-rename.md
+        - name: 알림 보내기
+          href: custom-notifications.md
+        - name: 원격 제어 모바일 디바이스
+          href: teamviewer-support.md
+        - name: 디바이스 동기화
+          href: device-sync.md
+        - name: 디바이스 인벤토리 검사
+          href: device-inventory.md
+    - name: 문제 해결
+      items:
+        - name: 디바이스 작업 문제 해결
+          href: troubleshoot-device-actions.md
+- name: 리소스
+  items:
+    - name: 시나리오 구현 가이드
+      items:
+        - name: 지원 센터 비용 절감
+          href: password-reset.md

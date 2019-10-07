@@ -1,0 +1,85 @@
+### YamlMime:Landing
+title: Microsoft Intune 기본 항목
+summary: Microsoft Intune은 직원이 회사 데이터를 보호하는 동시에 생산성을 높일 수 있도록 하는 클라우드 기반 서비스입니다. Intune에 대한 계획, 마이그레이션 및 기본 항목 설정에 대해 자세히 알아보세요.
+metadata:
+  title: Intune 기본 항목
+  description: Intune에 대한 계획, 마이그레이션 및 기본 항목 설정에 대해 자세히 알아보세요.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/29/2019
+  ms.openlocfilehash: c0d75116a31c668971950d144645009a9564654c
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728740"
+landingContent:
+- title: Microsoft Intune 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Intune이란?
+      url: what-is-intune.md
+    - text: 새로운 기능
+      url: whats-new.md
+    - text: 개발 기능
+      url: in-development.md
+  - linkListType: tutorial
+    links:
+    - text: Azure Portal에서 연습
+      url: tutorial-walkthrough-intune-portal.md
+  - linkListType: concept
+    links:
+    - text: 디바이스 관리란?
+      url: what-is-device-management.md
+    - text: 상위 수준 아키텍처
+      url: high-level-architecture.md
+    - text: Intune을 사용하는 일반적인 방법
+      url: common-scenarios.md
+    - text: EMS를 사용한 BYOD에 대한 기술 결정
+      url: byod-technology-decisions.md
+- title: Intune 도입
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 통신 계획
+      url: migration-guide-communication-plan.md
+    - text: 계획 가이드
+      url: planning-guide.md
+    - text: 마이그레이션 가이드
+      url: migration-guide.md
+    - text: Intune Adoption Kit
+      url: https://www.microsoft.com/download/details.aspx?id=58348
+- title: Intune 설정
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 무료로 Intune 체험하기
+      url: free-trial-sign-up.md
+  - linkListType: concept
+    links:
+    - text: 지원되는 구성
+      url: supported-devices-browsers.md
+    - text: 네트워크 구성 요구 사항
+      url: network-bandwidth-use.md
+    - text: Intune 네트워크 엔드포인트
+      url: intune-endpoints.md
+    - text: 역할 기반 액세스 제어
+      url: role-based-access-control.md
+    - text: Intune 라이선스
+      url: licenses.md
+  - linkListType: how-to-guide
+    links:
+    - text: Intune을 설정하는 단계
+      url: setup-steps.md
+    - text: 사용자 추가
+      url: users-add.md
+    - text: 그룹 추가
+      url: groups-add.md
+    - text: 범위 태그 사용
+      url: scope-tags.md

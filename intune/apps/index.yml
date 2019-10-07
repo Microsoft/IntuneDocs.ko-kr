@@ -1,0 +1,111 @@
+### YamlMime:Landing
+title: 앱 관리
+summary: Microsoft Intune을 사용하면 조직에서 사용하는 클라이언트 앱을 관리할 수 있습니다. 다양한 플랫폼과 사용자에 걸쳐 앱을 구성, 추가, 할당, 보호, 모니터링, 업데이트 및 사용 중지할 수 있습니다.
+metadata:
+  title: 앱 관리
+  description: 앱 관리 및 보호
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/25/2019
+  ms.openlocfilehash: ba12c3a3253fd35bf803342214b73fc094abc3aa
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71729012"
+landingContent:
+- title: 앱으로 시작
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 앱 관리 개요
+      url: app-management.md
+  - linkListType: quickstart
+    links:
+    - text: 앱 추가 및 할당
+      url: quickstart-add-assign-app.md
+  - linkListType: concept
+    links:
+    - text: 앱 수명 주기
+      url: app-lifecycle.md
+- title: 앱 추가
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 앱 개요 추가
+      url: apps-add.md
+    - text: Intune 보호 앱
+      url: apps-supported-intune-apps.md
+  - linkListType: how-to-guide
+    links:
+    - text: 스토어 앱
+      url: store-apps-android.md
+    - text: 기간 업무 앱
+      url: lob-apps-android.md
+    - text: Intune 독립 실행형 Win32 앱 관리
+      url: apps-win32-app-management.md
+    - text: Windows 10 디바이스에 PowerShell 스크립트 사용
+      url: intune-management-extension.md
+    - text: 그룹에 앱 할당
+      url: apps-deploy.md
+- title: 앱 할당
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 그룹에 앱 할당
+      url: apps-deploy.md
+    - text: Intune 및 앱 제외
+      url: apps-inc-exl-assignments.md
+    - text: Windows 10 앱 배포
+      url: apps-windows-10-app-deploy.md
+    - text: 정부 환경에 앱 배포
+      url: apps-deploy-gcc-dod.md
+- title: 앱 구성
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 선택적으로 앱 지우기
+      url: apps-selective-wipe.md
+    - text: iOS 관리되는 디바이스
+      url: app-configuration-policies-use-ios.md
+    - text: 관리형 Android 엔터프라이즈 디바이스
+      url: app-configuration-policies-use-android.md
+    - text: 디바이스를 등록하지 않은 관리형 앱
+      url: app-configuration-policies-managed-app.md
+    - text: Managed Browser 구성
+      url: app-configuration-managed-browser.md
+    - text: VPP 앱 및 전자책 관리
+      url: vpp-apps.md
+- title: 앱 보호
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 앱 보호 정책 개요
+      url: app-protection-policy.md
+  - linkListType: how-to-guide
+    links:
+    - text: 앱 보호 정책 만들기 및 할당
+      url: app-protection-policies.md
+    - text: 앱 보호 정책 유효성 검사
+      url: app-protection-policies-validate.md
+    - text: 앱 보호 사용자 상태 모니터링
+      url: app-protection-policies-monitor.md
+    - text: WIP 앱 보호 정책 만들기 및 할당
+      url: windows-information-protection-policy-create.md
+    - text: iOS 앱 간의 데이터 전송 관리
+      url: data-transfer-between-apps-manage-ios.md
+- title: MDT 문제 해결
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 앱 설치 문제 해결
+      url: troubleshoot-app-install.md
+    - text: 모바일 애플리케이션 관리 문제 해결
+      url: troubleshoot-mam.md
+    - text: 앱 보호 로그 검토
+      url: app-protection-policy-settings-log.md

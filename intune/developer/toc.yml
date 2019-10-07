@@ -1,0 +1,79 @@
+- name: 개발자 지침
+  href: index.yml
+- name: 방법 가이드
+  expanded: true
+  items:
+    - name: Intune 앱 SDK를 사용하여 앱 보호
+      href: app-sdk.md
+      items:
+        - name: Intune 앱 SDK 시작
+          href: app-sdk-get-started.md
+        - name: 앱 보호에 대한 LOB 앱 준비
+          href: apps-prepare-mobile-application-management.md
+        - name: iOS용 앱 래핑 도구
+          href: app-wrapper-prepare-ios.md
+        - name: iOS용 Intune 앱 SDK
+          href: app-sdk-ios.md
+        - name: Android용 앱 래핑 도구
+          href: app-wrapper-prepare-android.md
+          displayName: dex
+        - name: Android용 Intune 앱 SDK
+          href: app-sdk-android.md
+          items:
+            - name: Android용 Intune 앱 SDK 테스트 가이드
+              href: app-sdk-android-testing-guide.md
+        - name: Intune 앱 SDK Xamarin 바인딩
+          href: app-sdk-xamarin.md
+    - name: Intune 데이터 웨어하우스 사용
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: 데이터웨어 하우스에 대한 로그 변경
+          href: reports-changelog.md
+        - name: Power BI를 통해 데이터 웨어하우스에 연결
+          href: reports-proc-get-a-link-powerbi.md
+        - name: Power BI를 사용하여 OData 피드에서 보고서 만들기
+          href: reports-proc-create-with-odata.md
+    - name: Intune 데이터 웨어하우스 API를 사용하여 보고
+      href: reports-nav-intune-data-warehouse.md
+      items:
+        - name: REST 클라이언트를 사용하여 데이터 웨어하우스 API에서 데이터 가져오기
+          href: reports-proc-data-rest.md
+        - name: 데이터 웨어하우스 API 엔드포인트
+          href: reports-api-url.md
+        - name: 데이터 웨어하우스 애플리케이션 전용 인증
+          href: data-warehouse-app-only-auth.md
+        - name: 데이터 웨어하우스 데이터 모델
+          href: reports-ref-data-model.md
+          items:
+            - name: 데이터 웨어하우스 컬렉션
+              href: intune-data-warehouse-collections.md
+            - name: 데이터 웨어하우스 컬렉션(베타)
+              items:
+                - name: Intune 데이터 웨어하우스의 사용자 수명 표시
+                  href: reports-ref-user-timeline.md
+                - name: 애플리케이션 엔터티에 대한 참조
+                  href: reports-ref-application.md
+                - name: 날짜 엔터티에 대한 참조
+                  href: reports-ref-date.md
+                - name: 디바이스 엔터티에 대한 참조
+                  href: reports-ref-devices.md
+                - name: Intune 관리 확장 엔터티에 대한 참조
+                  href: reports-ref-intunemanagementextension.md
+                - name: 모바일 앱 관리(MAM) 엔터티에 대한 참조
+                  href: reports-ref-mobile-app-management.md
+                - name: 정책 엔터티에 대한 참조
+                  href: reports-ref-policy.md
+                - name: 사용자 디바이스 연결 엔터티에 대한 참조
+                  href: reports-ref-user-device.md
+                - name: 사용자 엔터티에 대한 참조
+                  href: reports-ref-user.md
+        - name: Intune 데이터 웨어하우스 계정 데이터 이동
+          href: data-warehouse-account-move.md
+    - name: Microsoft Graph에서 Intune API에 액세스
+      items:
+        - name: Azure AD를 사용하여 Microsoft Graph의 Intune API에 액세스
+          href: intune-graph-apis.md
+        - name: Intune API 참조
+          href: 'https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: 디바이스 구성에 사용되는 Graph API
+          href: graph-apis-used-by-intune-device-configuration-windows.md
