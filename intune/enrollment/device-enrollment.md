@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a345cdf2162db6b55fe5698488036fad0677a6e1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e3fb9af260b8fddc78b644b8ede056c90bac24d0
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723270"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999361"
 ---
 # <a name="what-is-device-enrollment"></a>디바이스 등록이란?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -36,7 +36,7 @@ Intune을 사용하여 직원의 디바이스 및 앱을 관리하고 회사 데
 
 | **방법** | **초기화 필요** | [**사용자 선호도**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **잠김** | **세부 정보** |
 |:---:|:---:|:---:|:---:|:---:|
-| | 디바이스는 등록 중 초기화됩니다. | 각 디바이스를 사용자와 연결합니다.| 예인 경우, 사용자가 디바이스 등록을 해제할 수 없습니다. | |
+| | 디바이스는 등록 중 초기화됩니다. | 각 디바이스를 사용자와 연결합니다.| ‘예’인 경우 사용자는 디바이스 등록을 해제할 수 없습니다. | |
 |**[BYOD](#bring-your-own-device)** | 아니요| 예 | 아니요 | [추가 정보](apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| 아니요 |아니요 |아니요 | [추가 정보](device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**| 예 | 선택 사항 | 선택 사항|[추가 정보](device-enrollment-program-enroll-ios.md)|
@@ -76,11 +76,11 @@ Intune을 사용하여 직원의 디바이스 및 앱을 관리하고 회사 데
 |**Android 디바이스 관리자**|**(미리 선언된 IMEI 또는 SN) 회사 포털을 통해 사용자 시작**| 아니요 | 예 | 아니요 | [추가 정보](./../corporate-identifiers-add.md)|
 |**Zebra Mobility 확장을 사용하는 Android 디바이스 관리자**|**회사 포털을 통해 사용자 또는 [DEM](#device-enrollment-manager) 시작**| 아니요 | 사용자 시작이면 예, [DEM](#device-enrollment-manager) 시작이면 아니요 | 아니요 | [추가 정보](../configuration/android-zebra-mx-overview.md)|
 |**Android Enterprise 전용**|**NFC, 토큰, QR 코드, Zero Touch**| 예 | 아니요 | 정책을 통해 구성 가능 | [추가 정보](android-kiosk-enroll.md)|
-|**Android Enterprise 완전 관리형(미리 보기)**|**NFC, 토큰, QR 코드, Zero Touch**| 예 | 예 | 정책을 통해 구성 가능 | [추가 정보](android-dedicated-devices-fully-managed-enroll.md)|
+|**Android 엔터프라이즈 완전 관리형**|**NFC, 토큰, QR 코드, Zero Touch**| 예 | 예 | 정책을 통해 구성 가능 | [추가 정보](android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device
-Bring Your Own Device(BYOD)에는 개인 전화, 태블릿 및 PC가 있습니다. 사용자는 회사 포털 앱을 설치 및 실행하여 BYOD를 등록합니다. 사용자는 이 프로그램을 통해 전자 메일 등의 회사 리소스에 액세스할 수 있습니다.
+BYOD(Bring Your Own Device)에는 개인 전화, 태블릿, PC 등이 있습니다. 사용자는 회사 포털 앱을 설치 및 실행하여 BYOD를 등록합니다. 사용자는 이 프로그램을 통해 전자 메일 등의 회사 리소스에 액세스할 수 있습니다.
 
 ## <a name="corporate-owned-device"></a>회사 소유 디바이스
 [COD(회사 소유 디바이스)](corporate-identifiers-add.md)에는 회사가 직원에게 배포한 전화, 태블릿, PC가 있습니다. COD 등록은 자동 등록, 공유 디바이스 또는 사전 승인된 등록 요구 사항과 같은 관리 시나리오를 지원합니다. COD를 등록하는 일반적인 방법은 관리자가 디바이스 등록 관리자(DEM)를 사용하는 것입니다. Apple에서 제공한 장비 등록 프로그램(DEP) 도구를 통해 iOS 디바이스를 직접 등록할 수 있습니다. IMEI 번호가 있는 디바이스도 회사 소유로 식별되고 태그가 지정됩니다.
@@ -107,7 +107,7 @@ IT 관리자는 USB를 통해 Apple Configurator를 사용하여 등록할 각 �
 - [Configurator 및 설정 도우미를 사용하여 iOS 디바이스 등록](apple-configurator-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-직접 등록의 경우 관리자가 등록 정책을 만들고 Apple Configurator로 내보내어 각 디바이스를 수동으로 등록해야 합니다. USB로 연결된 회사 소유의 디바이스는 직접 등록되고 초기화할 필요가 없습니다. 디바이스는 사용자가 지정되지 않은 디바이스로 관리됩니다. 디바이스는 잠기거나 감독되지 않으며, 조건부 액세스, 탈옥 검색, 모바일 애플리케이션 관리를 지원할 수 없습니다.
+직접 등록의 경우 관리자가 등록 정책을 만들고 Apple Configurator로 내보내어 각 디바이스를 수동으로 등록해야 합니다. USB로 연결된 회사 소유의 디바이스는 직접 등록되고 초기화할 필요가 없습니다. 디바이스는 사용자가 지정되지 않은 디바이스로 관리됩니다. 디바이스는 잠기거나 감독되지 않으며 조건부 액세스, 탈옥 검색, 모바일 애플리케이션 관리를 지원할 수 없습니다.
 
 iOS 등록에 대한 자세한 내용은 다음을 참조하세요.
 

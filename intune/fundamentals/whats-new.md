@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a6f0786c5b11e30bf86b237bc1f5c05a55010d5
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 571974e1736fb78ae633c02fcfd6e6233056379b
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727742"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71920142"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -175,7 +175,7 @@ macOS 디바이스에서 여러 다양한 기능을 구성하고, 정책을 사�
 적용 대상:
 - macOS 10.15 이상
 
-#### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices----4928474-----"></a>iOS 감독 디바이스에서 앱을 표시하거나 숨길 때 iTunes App Store URL에서 "itunes" 및 "앱"을 사용합니다. <!-- 4928474   --> 
+#### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices----4928474-----"></a>iOS 감독 디바이스에서 앱을 표시하거나 숨길 때 iTunes App Store URL에서 "iTunes" 및 "앱"을 사용합니다. <!-- 4928474   --> 
 Intune에서 감독된 iOS 디바이스의 앱을 표시하거나 숨기는 정책을 만들 수 있습니다[**디바이스 구성** > **프로필** > **프로필 만들기** > **iOS**(플랫폼) > **디바이스 제한**(프로필 유형) > **앱 표시 또는 숨기기**]. 
 
 iTunes App Store URL(예: `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`)을 입력할 수 있습니다. 이 업데이트에서는 `apps` 및 `itunes` 둘 다를 URL에서 사용할 수 있습니다. 예를 들면 다음과 같습니다.
@@ -235,7 +235,7 @@ Android 완전 관리형 디바이스에 대해 다음 지원을 추가했습니
 - Android Enterprise 디바이스에서 시스템 앱이 지원됩니다. Intune에서 **클라이언트 앱** > **앱** > **추가**를 선택하여 Android Enterprise 시스템 앱을 추가합니다. **앱 유형** 목록에서 **Android Enterprise 시스템 앱**을 선택합니다. 자세한 내용은 [Microsoft Intune에 Android Enterprise 시스템 앱 추가](../apps/apps-ae-system.md)를 참조하세요. <!-- 4062195 -->
 - **디바이스 준수** > **Android Enterprise** > **디바이스 소유자**에서 Google SafetyNet 증명 수준을 설정하는 규정 준수 정책을 만들 수 있습니다.   <!-- 4631425 -->
 - Android Enterprise 완전 관리형 디바이스에서 모바일 위협 방어 공급자가 지원됩니다. **디바이스 준수** > **Android Enterprise** > **디바이스 소유자**에서 허용되는 위협 수준을 선택할 수 있습니다. <!-- 4631440 --> [Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Android 엔터프라이즈 설정](../protect/compliance-policy-create-android-for-work.md#device-owner)은 현재 설정을 나열합니다.
-- Android Enterprise 완전 관리형 디바이스에서 이제 앱 보호 정책을 통해 Microsoft 시작 관리자 앱이 완전 관리형 디바이스에서 표준화된 최종 사용자 환경을 허용하도록 구성할 수 있습니다. Microsoft 시작 관리자 앱을 사용하여 Android 디바이스를 맞춤형으로 조정할 수 있습니다. Microsoft 계정 또는 회사/학교 계정에서 해당 앱을 사용하여 맞춤형 피드에서 일정, 문서 및 최근 활동에 액세스할 수 있습니다. <!-- 5334044 -->
+- Android Enterprise 완전 관리형 디바이스에서 이제 앱 구성 정책을 통해 Microsoft 시작 관리자 앱이 완전 관리형 디바이스에서 표준화된 최종 사용자 환경을 허용하도록 구성할 수 있습니다. Microsoft 시작 관리자 앱을 사용하여 Android 디바이스를 맞춤형으로 조정할 수 있습니다. Microsoft 계정 또는 회사/학교 계정에서 해당 앱을 사용하여 맞춤형 피드에서 일정, 문서 및 최근 활동에 액세스할 수 있습니다. <!-- 5334044 -->
 
 이 업데이트를 통해 Android Enterprise 완전 관리형에 대한 Intune 지원이 이제 일반 공급됩니다.
 

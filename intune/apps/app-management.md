@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0d495265580bc9801a1fadb636a62274a4f728a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b630709646b2f4489cbfea6284689c9436798ca
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725753"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71916357"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune 앱 관리란?
 
@@ -67,7 +67,7 @@ Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 �
 | 스토어의 앱 | 예 | 예 | 아니요 | 예 | 예 |
 | 앱 업데이트 | 예 | 예 | 아니요 | 예 | 예 |
 
-<sup>1</sup> Windows 10을 실행하는 디바이스에서 앱을 보호하려면 [Windows Information Protection](../windows-information-protection-configure.md)을 사용하는 것이 좋습니다.<br>
+<sup>1</sup> Windows 10을 실행하는 디바이스에서 앱을 보호하려면 [Windows Information Protection](../protect/windows-information-protection-configure.md)을 사용하는 것이 좋습니다.<br>
 <sup>2</sup> Intune에서 관리하는 디바이스에만 적용됩니다.<br>
 <sup>3</sup> Intune은 Android Enterprise 디바이스의 관리되는 Google Play 저장소에서 사용 가능한 앱을 지원합니다.<br>
 <sup>4</sup> Intune은 표준 Android Enterprise 디바이스에서 웹 링크로 앱에 바로 가기를 설치하는 것을 제공하지 않습니다. 그러나 [다중 앱 전용 Android Enterprise 디바이스](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)에 대한 웹 링크 지원은 제공됩니다. 

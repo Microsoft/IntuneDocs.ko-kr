@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/01/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa698aa5c9ed6a523101008d6ce0e21cd4f7bf50
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4958a35f3a83fecffacf26421e4c1d797f45ddaa
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725506"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940386"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>앱 보호 정책을 만들고 할당하는 방법
 
@@ -149,7 +149,7 @@ Intune 앱 보호 정책이 사용자의 ID를 대상으로 지정하기 때문�
 
 > Android 디바이스에는 선택한 앱 유형에 관계없이 Intune 회사 포털 앱을 설치하라는 메시지가 표시됩니다. 예를 들어 'Intune 관리 디바이스의 앱'을 선택하면 관리되지 않는 Android 디바이스 사용자에게는 계속 메시지가 표시됩니다.
 
-iOS의 경우 Intune에 등록된 디바이스의 앱에 APP(앱 보호 정책) 설정을 대상으로 지정하려면 추가 앱 구성 설정이 필요합니다.
+iOS의 경우 Intune에 등록된 디바이스의 앱에 APP(앱 보호 정책) 설정을 지정하려면 추가 앱 구성 설정이 필요합니다.
 
 - 모든 MDM 관리되는 애플리케이션에 대해 **IntuneMAMUPN**을 구성해야 합니다. 자세한 내용은 [Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)을 참조하세요.
 - 모든 타사 및 LOB MDM 관리되는 애플리케이션에 대해 **IntuneMAMDeviceID**를 구성해야 합니다. **IntuneMAMDeviceID**는 디바이스 ID 토큰으로 구성되어야 합니다. 정의합니다(예: `key=IntuneMAMDeviceID, value={{deviceID}}`). 자세한 내용은 [관리되는 iOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.

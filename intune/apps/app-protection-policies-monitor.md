@@ -1,7 +1,7 @@
 ---
 title: 앱 보호 정책을 모니터링하는 방법
 titleSuffix: Microsoft Intune
-description: 이 항목에서는 Intune에서 모바일 앱 관리 정책의 준수 상태를 모니터링하는 방법을 설명합니다.
+description: 이 항목에서는 Intune에서 앱 보호 정책을 모니터링하는 방법에 대해 설명합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -12,24 +12,24 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
-ms.reviewer: joglocke
+ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fad554ace3b7c8c279161f149bc06854dfaca93d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0b4ab3369f241c9f33d4e0bddfd0dcf98c8ab915
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725519"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830588"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>앱 보호 정책을 모니터링하는 방법
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 [Azure Portal](https://portal.azure.com)의 Intune 앱 보호 창에서 사용자에게 적용한 MAM(모바일 앱 관리) 정책의 준수 상태를 모니터링할 수 있습니다. 또한 MAM 정책, MAM 정책 준수 상태 및 사용자에게 발생할 수 있는 문제의 영향을 받는 사용자에 대한 정보를 확인할 수 있습니다.
 
-다음 세 가지 방법으로 MAM 정책의 준수 상태를 모니터링할 수 있습니다.
+앱 보호 정책을 모니터링 하는 세 가지 방법이 있습니다.
 - 요약 보기
 - 상세 보기
 - 보고 보기
@@ -72,10 +72,20 @@ ms.locfileid: "71725519"
 - **상태:**
   - **체크 인**: 정책이 사용자에게 배포되었고, 앱이 회사 컨텍스트에서 적어도 한 번 사용되었습니다.
   - **체크 인 안 됨**: 정책이 사용자에게 정책이 배포되었지만 그 후 회사 컨텍스트에서 앱이 사용되지 않았습니다.
-- **마지막 동기화**: 디바이스가 마지막으로 동기화된 시간입니다.
+- **마지막 동기화**: 앱이 Intune과 마지막으로 동기화된 시간입니다. 
 
 >[!NOTE]
-> 검색한 사용자에게 배포된 MAM 정책이 없으면 해당 사용자가 MAM 정책의 대상이 아니라는 메시지가 표시됩니다.
+> ‘마지막 동기화’ 열은 콘솔 내 사용자 상태 보고서와 앱 보호 정책의 [내보낼 수 있는 .csv 보고서](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv)에서 동일한 값을 나타냅니다. 차이점은 두 보고서의 값 사이에 동기화가 약간 지연된다는 것입니다. 
+>
+> ‘마지막 동기화’에서 참조된 시간은 Intune에서 “앱 인스턴스”를 마지막으로 본 시점입니다. 앱 인스턴스는 앱 + 사용자 + 디바이스의 고유한 조합입니다. 최종 사용자가 앱을 시작하면 마지막으로 체크 인된 시간에 따라 해당 시작 시간에 Intune 앱 보호 서비스와 통신하거나 통신하지 않을 수 있습니다. 이 문서는 [앱 보호 정책 체크 인을 위한 다시 시도 간격 시간](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)을 명확하게 설명해줍니다. 따라서 최종 사용자가 마지막 체크 인 간격(활성 사용일 경우 일반적으로 30분)에서 특정 앱을 사용한 적이 없는 상태로 앱을 시작한 경우 다음을 수행합니다.
+>
+> - 앱 보호 정책의 내보낼 수 있는 .csv 보고서는 1분(일반; 최소)에서 30분(Intune 보고서에서 사용하는 SQL 집계에 의해 실제로 제공되는 최대 SLA) 이내에 최신 시간을 갖게 됩니다.
+> - 사용자 상태 보고서에 최신 시간이 즉시 적용됩니다.
+>
+> 예를 들어 오후 12시에 보호된 앱을 시작하는 사용이 허가된 대상 최종 사용자가 있다고 가정합니다.
+> - 처음으로 로그인하는 경우라면 최종 사용자가 이전에 로그 아웃했음을 의미하며(활성 사용이 아님), Intune을 통한 앱 인스턴스 등록을 하지 않았음을 뜻합니다. 로그인하면 새 앱 인스턴스 등록이 제공되며 연결 문제가 없는 즉시 체크 인됩니다. 이후 체크 인을 위해 위에서 명시한 것과 동일한 지연 시간을 사용합니다. 따라서 마지막 동기화 시간은 사용자 상태 보고서에서 오후 12시로 보고되고, 앱 보호 정책 보고서에는 오후 12시 1분(최악의 경우 오후 12시 30분)으로 보고됩니다. 
+> - 앱을 시작하는 경우 보고된 ‘마지막 동기화’ 시간은 마지막으로 체크 인된 시간에 따라 달라집니다.
+
 
 사용자에 대한 보고를 확인하려면 다음 단계를 수행합니다.
 
@@ -88,6 +98,9 @@ ms.locfileid: "71725519"
     ![앱 보고 창에서 사용자 선택 옵션의 스크린샷](./media/app-protection-policies-monitor/MAM-reporting-2.png)
 
 3. 목록에서 사용자를 선택합니다. 해당 사용자에 대한 준수 상태의 세부 정보를 확인할 수 있습니다.
+
+>[!NOTE]
+> 검색한 사용자에게 배포된 MAM 정책이 없으면 해당 사용자가 MAM 정책의 대상이 아니라는 메시지가 표시됩니다.
 
 ### <a name="flagged-users"></a>플래그가 지정된 사용자
 상세 보기는 오류 메시지, 오류가 발생했을 때 액세스된 앱, 영향을 받는 디바이스 OS 플랫폼 및 타임스탬프를 표시합니다. ‘SafetyNet 디바이스 증명’ 조건부 시작 검사로 플래그가 지정되는 디바이스를 가진 사용자는 Google에서 보고한 이유와 함께 여기에서 보고됩니다.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ffc99b34016eba6511f63d1df2184abc3cae858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c07ce82bbc056e1d76abeb5d31bf57e0973fad6e
+ms.sourcegitcommit: bdf948be824cf5390d5166a277f389f3785c81f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725168"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960887"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Microsoft Intune에 Android Enterprise 시스템 앱 추가
 
@@ -42,9 +42,13 @@ ms.locfileid: "71725168"
 5. **확인**을 선택합니다.
 6. **추가**를 선택합니다.
 
+> [!NOTE]
+> 활성화/비활성화하려는 앱의 패키지 이름을 찾으려면 디바이스 OEM과 협력해야 합니다.
+
 만든 앱이 앱 목록에 표시되며, 여기서 이 앱을 선택한 그룹에 할당할 수 있습니다. 
 
 Android Enterprise 시스템 앱은 이미 플랫폼에 포함된 앱을 사용하거나 사용하지 않도록 설정합니다. 앱을 사용하도록 설정하려면 시스템 앱을 **필수**로 할당합니다. 앱을 사용하지 않도록 설정하려면 시스템 앱을 **제거**로 할당합니다. 시스템 앱은 사용자에게 사용 가능으로 할당할 수 없습니다.
+
 
 ## <a name="next-steps"></a>다음 단계
 

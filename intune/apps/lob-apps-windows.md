@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d9b579e944827e511700073f0b3348b5ef20adc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724700"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036468"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Windows 기간 업무 앱 추가
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 LOB(기간 업무) 앱은 앱 설치 파일로 추가합니다. 이러한 종류의 앱은 일반적으로 사내에서 작성됩니다. 다음 단계는 Windows LOB 앱을 Microsoft Intune에 추가할 수 있도록 지침을 제공합니다.
+
+> [!IMPORTANT]
+> *.msi*확장을 포함한 설치 파일을 사용하여 Win32 앱을 배포할 때 [Intune 관리 확장](../apps/intune-management-extension.md)을 사용하는 것이 좋습니다. AutoPilot 등록 중에 Win32 앱과 LOB(기간 업무) 애플리케이션 설치를 혼합하면 앱 설치가 실패할 수 있습니다.  
 
 ## <a name="step-1-specify-the-software-setup-file"></a>1단계: 소프트웨어 설치 파일 지정
 

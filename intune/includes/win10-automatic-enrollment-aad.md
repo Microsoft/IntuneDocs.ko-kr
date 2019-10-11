@@ -1,33 +1,33 @@
 ---
-ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "71302620"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71912800"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10 자동 등록 사용
 
 자동 등록을 통해 사용자가 Intune에 Windows 10 디바이스를 등록할 수 있습니다. 등록하려면 사용자가 회사 계정을 개인적으로 소유한 디바이스에 추가하거나 회사 소유 디바이스를 Azure Active Directory에 연결합니다. 디바이스는 백그라운드에서 등록되어 Azure Active Directory에 연결됩니다. 등록된 디바이스는 Intune을 통해 관리됩니다.
 
 **필수 구성 요소**
+
 - Azure Active Directory Premium 구독([평가판 구독](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune 구독
-
 
 ### <a name="configure-automatic-mdm-enrollment"></a>자동 MDM 등록 구성
 
 1. [Azure Portal](https://portal.azure.com)에 로그인하고 **Azure Active Directory**를 선택합니다.
 
-   ![Azure Portal의 스크린샷](../media/auto-enroll-azure-main.png)
+   ![Azure Portal의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
 2. **이동성(MDM 및 MAM)** 을 선택합니다.
 
-   ![Azure Portal의 스크린샷](../media/auto-enroll-mdm.png)
+   ![Azure Portal의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
 3. **Microsoft Intune**을 선택합니다.
 
-   ![Azure Portal의 스크린샷](../media/auto-enroll-intune.png)
+   ![Azure Portal의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
 4. **MDM 사용자 범위**를 구성합니다. Microsoft Intune에서 관리해야 하는 사용자의 디바이스를 지정합니다. 이러한 Windows 10 디바이스는 Microsoft Intune을 사용한 관리에 자동으로 등록됩니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "71302620"
    > [!NOTE]
    > MDM 사용자 범위는 사용자 개체를 포함하는 Azure AD 그룹으로 설정해야 합니다.
 
-   ![Azure Portal의 스크린샷](../media/auto-enroll-scope.png)
+   ![Azure Portal의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. 다음 URL의 기본값을 사용합니다.
     - **MDM 사용 약관 URL**
