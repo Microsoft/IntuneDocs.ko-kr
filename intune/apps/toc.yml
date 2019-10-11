@@ -43,18 +43,20 @@
               href: store-apps-ios.md
             - name: Windows Phone 8.1 스토어 앱
               href: store-apps-windows-phone-8-1.md
-            - name: Microsoft 스토어 앱
-              items:
-                - name: Windows 앱
-                  href: store-apps-windows.md
-                - name: 회사 포털 앱
-                  href: store-apps-company-portal-app.md
+            - name: Windows 앱
+              href: store-apps-windows.md
+            - name: 비즈니스용 Microsoft 스토어 앱
+              href: windows-store-for-business.md
             - name: 관리되는 Google Play 앱
               href: apps-add-android-for-work.md
+        - name: Office 365 Suite
+          items:
             - name: Windows 10용 Office 365 앱
               href: apps-add-office365.md
             - name: macOS용 Office 365 앱
               href: apps-add-office365-macos.md
+        - name: Android Enterprise 시스템 앱
+          href: apps-ae-system.md
         - name: 웹앱
           href: web-app.md
           displayName: web; web link; weblink; web-link
@@ -74,10 +76,12 @@
               href: app-sideload-windows.md
             - name: macOS LOB 앱
               href: lob-apps-macos.md
-        - name: Android Enterprise 시스템 앱
-          href: apps-ae-system.md
-        - name: Win32 앱 관리
-          href: apps-win32-app-management.md
+            - name: Win32 앱 관리
+              href: apps-win32-app-management.md
+        - name: 특정 앱 추가
+          items:
+            - name: 회사 포털 앱
+              href: store-apps-company-portal-app.md
         - name: PowerShell 스크립트
           href: intune-management-extension.md
     - name: 앱 할당

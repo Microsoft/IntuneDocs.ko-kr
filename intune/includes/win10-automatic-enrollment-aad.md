@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323405"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71302620"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10 자동 등록 사용
 
@@ -41,7 +41,7 @@ ms.locfileid: "56323405"
       > 회사 디바이스의 경우 두 가지 범위가 모두 사용되면, MDM 사용자 범위가 우선 적용됩니다. 디바이스가 MDM에 등록됩니다.
 
    > [!NOTE]
-   > MAM 사용자 범위는 사용자 그룹 또는 컬렉션으로 설정되어야 합니다.
+   > MDM 사용자 범위는 사용자 개체를 포함하는 Azure AD 그룹으로 설정해야 합니다.
 
    ![Azure Portal의 스크린샷](../media/auto-enroll-scope.png)
 

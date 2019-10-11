@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: f42baa1ca6e3ac6dca3c95a0eb9e422df2506031
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
-ms.translationtype: MTE75
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67881999"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "71721255"
 ---
 ### <a name="apple"></a>Apple
 - Apple iOS 9.0 이상
@@ -26,6 +26,6 @@ ms.locfileid: "67881999"
 - Google Android 4.0 이상(Samsung KNOX Standard 4.0 이상 포함)*
 - Google Android for Work([요구 사항](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
-*다음 Samsung Galaxy Ace 휴대폰 모델은 Intune에서 Samsung KNOX Standard 디바이스로 관리할 수 없습니다. SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY 및 SM-G313U. 이러한 디바이스는 표준 Android 디바이스로 관리됩니다. 자세한 내용은 [Samsung KNOX 웹 사이트](https://www.samsungknox.com/en)를 참조하세요.
+*다음 삼성 Galaxy Ace 휴대폰 모델은 Intune에서 삼성 KNOX Standard 디바이스로 관리할 수 없습니다. SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY 및 SM-G313U. 이러한 디바이스는 표준 Android 디바이스로 관리됩니다. 자세한 내용은 [Samsung KNOX 웹 사이트](https://www.samsungknox.com/en)를 참조하세요.
 
 디바이스 및 관리 방법의 전체 목록은 [Intune 지원 디바이스](/intune/supported-devices-browsers#intune-supported-devices)를 참조하세요.
