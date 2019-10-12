@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca7ff55653d12d352b4fb90163f4622a9e573ab
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0719aca1dbb84358b0c54fbfac57143d2a77c0de
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720999"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163464"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>관리에 조직 제공 iOS 디바이스 등록
 
@@ -35,7 +35,7 @@ Intune에서 새 iOS 디바이스를 관리하는 방법을 알아봅니다.
 
 ## <a name="what-is-apple-dep"></a>Apple DEP란?
 
-조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 디바이스를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 디바이스를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 디바이스 관리 공급자 내에서 해당 디바이스를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 iOS 디바이스 등록](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-ios.md)을 참조하세요.  
+조직은 *Apple 장비 등록 프로그램*(DEP)이라는 것을 통해 해당 디바이스를 구매했을 수 있습니다. Apple DEP를 통해 조직은 대량의 iOS 또는 macOS 디바이스를 구입할 수 있습니다. 그런 다음, 조직은 Intune과 같이 선호하는 모바일 디바이스 관리 공급자 내에서 해당 디바이스를 구성하고 관리할 수 있습니다. 관리자이고 Apple DEP에 대한 자세한 내용을 확인하려면 [Apple의 장비 등록 프로그램을 사용하여 자동으로 iOS 디바이스 등록](/intune/enrollment/device-enrollment-program-enroll-ios)을 참조하세요.
 
 ## <a name="set-up-your-ios-device"></a>iOS 디바이스 설정
 

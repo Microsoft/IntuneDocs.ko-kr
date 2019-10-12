@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 484035603e4fb447b004aad6c6f85726034f3c23
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732830"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251577"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Windows 10 이상 설정
 
@@ -138,6 +138,9 @@ Windows 10 이상을 실행하는 공동 관리 디바이스에만 적용됩니�
 - **방화벽**:을 ( **를)** 사용 하도록 설정 하 여 Microsoft Defender 방화벽을 켜고 사용자가 끄지 못하도록 설정 합니다. **구성 되지 않음** (기본값)은 Microsoft Defender 방화벽을 제어 하거나 기존 설정을 변경 하지 않습니다.
 
   [방화벽 CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+  > [!NOTE]
+  > 다시 부팅 한 후 장치를 즉시 동기화 하거나 즉시 절전 모드에서 절전 모드를 해제 하는 경우이 설정이 **오류로**보고 될 수 있습니다. 이 시나리오는 전체 장치 준수 상태에 영향을 주지 않을 수 있습니다. 준수 상태를 다시 평가 하려면 장치를 수동으로 [동기화](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows)합니다.
 
 - **신뢰할 수 있는 플랫폼 모듈 (TPM)** : **필수**로 설정 된 경우 Intune에서 버전의 준수를 확인 합니다. TPM 칩 버전이 0 보다 큰 경우 장치는 규정을 준수 합니다. 장치에 TPM 버전이 없는 경우 장치는 정책을 준수 하지 않습니다. **구성 되지 않은**경우 Intune은 장치에서 TPM 칩 버전을 확인 하지 않습니다.
 

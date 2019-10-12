@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736002"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237256"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune에 대한 MDM 보안 기준 설정  
 
@@ -1622,7 +1622,7 @@ Intune에서 보안 기준을 사용 하는 방법에 대 한 자세한 내용�
 
 - **이메일 콘텐츠 실행 유형**  
   이 규칙을 통해 다음과 같은 유형의 파일이 Microsoft Outlook 또는 웹 메일(예: Gmail.com 또는 Outlook.com) 중 하나에 표시된 메일에서 실행되거나 시작되는 것을 차단합니다. 실행 파일(예: .exe,.dll 또는 .scr), 스크립트 파일(예: PowerShell.ps, VisualBasic.vbs 또는 JavaScript.js 파일) 및 스크립트 보관 파일입니다.  
-  [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [자세한 정보](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **기본값**: 차단
 
@@ -1632,7 +1632,7 @@ Intune에서 보안 기준을 사용 하는 방법에 대 한 자세한 내용�
 
 - **네트워크 보호 유형**  
   이 정책을 사용하면 Windows Defender Exploit Guard에서 네트워크 보호(차단/감사)를 설정 또는 해제할 수 있습니다. 네트워크 보호는 모든 앱을 사용하는 직원이 인터넷에서 피싱 사기, 악용 호스팅 사이트 및 악성 콘텐츠에 액세스하지 못하도록 보호하는 Windows Defender Exploit Guard의 기능입니다. 이 기능에는 타사 브라우저의 위험한 사이트 연결을 방지하는 것이 포함됩니다. 값 형식은 정수입니다. 이 설정을 사용하도록 설정하면 네트워크 보호가 설정되어 있어 직원이 해제할 수 없습니다. 차단 및 감사 옵션에서 해당 동작을 제어할 수 있습니다. "차단" 옵션이 포함된 이 정책을 사용하도록 설정하면 사용자 및 앱이 위험한 도메인에 연결되지 않도록 차단됩니다. Windows Defender Security Center에서 이 작업을 확인할 수 있습니다. "감사" 옵션이 포함된 이 정책을 사용하도록 설정하면 사용자/앱이 위험한 도메인에 연결하는 것이 차단되지 않습니다. 그러나 Windows Defender Security Center에서 여전히 이 작업을 확인할 수 있습니다. 이 정책을 사용하지 않도록 설정하면 사용자/앱이 위험한 도메인에 연결하는 것이 차단되지 않습니다. Windows Defender Security Center에서 어떤 네트워크 작업도 표시되지 않습니다. 이 정책을 구성하지 않으면 네트워크 차단 기능은 기본적으로 사용하지 않도록 설정됩니다.  
-  [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [자세한 정보](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **기본값**: 사용
   

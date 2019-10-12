@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecc73fc9c51ae11f7541d1b9d28f0ccc8297c187
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8f2e9313cf2a4d639096f783b895596fc2535649
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721201"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163543"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>관리에서 Android 디바이스 등록 취소  
 
@@ -64,7 +64,7 @@ Android용 회사 포털 앱이 디바이스에 저장하는 모든 데이터를
 
 마지막 수단으로 디바이스 관리자로 앱을 디바이스에서 제거할 수 있습니다.  
 
-회사 소유 디바이스가 있는 경우 조직에서는 회사 포털을 항상 디바이스에 설치해야 할 수 있습니다. 제거하는 경우 앱을 다시 설치할 때까지 이메일, 앱, WiFi 또는 VPN과 같은 보호된 회사 리소스에 액세스하지 못할 수 있습니다. 필수 앱을 설치, 업데이트 또는 제거하는 방법에 대한 자세한 내용은 [Microsoft Intune에 앱 추가](https://docs.microsoft.com/intune/apps/apps-add.md#apps-that-are-added-automatically-by-intune)를 참조하세요.
+회사 소유 디바이스가 있는 경우 조직에서는 회사 포털을 항상 디바이스에 설치해야 할 수 있습니다. 제거하는 경우 앱을 다시 설치할 때까지 이메일, 앱, WiFi 또는 VPN과 같은 보호된 회사 리소스에 액세스하지 못할 수 있습니다. 필수 앱을 설치, 업데이트 또는 제거하는 방법에 대한 자세한 내용은 [Microsoft Intune에 앱 추가](/intune/apps/apps-add#apps-that-are-added-automatically-by-intune)를 참조하세요.
 
 디바이스 관리자로 회사 포털을 비활성화하는 방법은 다음과 같습니다. 각 설정의 실제 이름은 Android 디바이스에 따라 다를 수 있습니다.  
 

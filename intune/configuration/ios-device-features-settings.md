@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8cd38174b9332f285e0dc4f938d99dbd5aecf74
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 341609afeec02c67b4ea0d85a541fca61345ced4
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816883"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036482"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune에서 일반적인 iOS 기능을 사용하는 iOS 및 iPadOS 디바이스 설정
 
@@ -42,6 +42,9 @@ Intune은 iOS 사용자가 해당 디바이스의 다른 Apple 기능을 사용�
 ## <a name="airprint"></a>AirPrint
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>설정이 적용 되는 대상: 모든 등록 형식
+
+> [!NOTE]
+> 모든 프린터를 동일한 프로필에 추가 해야 합니다. Apple에서는 여러 개의 방송 인쇄 프로필이 동일한 장치를 대상으로 하지 않도록 합니다.
 
 - **IP 주소**: 프린터의 IPv4 또는 IPv6 주소를 입력합니다. 호스트 이름을 사용하여 프린터를 식별하는 경우 터미널에서 프린터를 ping하여 IP 주소를 가져올 수 있습니다. IP 주소 및 경로 가져오기(이 문서)에서 자세한 정보를 제공합니다.
 - **경로**: 네트워크의 프린터에 대한 경로는 일반적으로 `ipp/print`입니다. IP 주소 및 경로 가져오기(이 문서)에서 자세한 정보를 제공합니다.
@@ -267,7 +270,7 @@ iPhone에 정책을 할당할 때 페이지는 다음 이미지와 유사합니�
 
     URL을 입력하지 않는 경우 최종 사용자는 `microsoft.com`, `microsoft.net` 및 `apple.com`을 제외한 웹 사이트에 액세스할 수 없습니다. 이러한 URL은 Intune에서 자동으로 허용됩니다.
 
-## <a name="single-sign-on-app-extension"></a>Single sign-on 앱 확장
+## <a name="single-sign-on-app-extension"></a>Single Sign-On 앱 확장
 
 이 기능은 다음에 적용됩니다.
 
