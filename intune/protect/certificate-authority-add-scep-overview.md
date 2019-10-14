@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f9b78685e2bbe40a91c80fe71403123dbfaac90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e8df5f46f411a6aee1c3040fa4a1a37fb49d5fb2
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722854"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036421"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP를 사용하여 Intune에 파트너 인증 기관 추가
 
@@ -124,6 +124,7 @@ Azure AD 앱을 등록하는 데 필요한 권한이 있는지 확인합니다. 
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [Venafi](https://www.venafi.com/platform/enterprise-mobility)
 - [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
 Intune과 제품을 통합하는 데 관심이 있는 타사 CA인 경우 API 지침을 검토합니다.

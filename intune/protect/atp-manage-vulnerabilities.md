@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 06fdd8a6b64dfd58457b5d9b92144530aa2856cd
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723010"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940484"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune을 사용하여 Microsoft Defender ATP가 식별한 취약성 수정  
 
@@ -70,7 +70,7 @@ Microsoft Defender Security Center 콘솔에서 ATP 보안 관리자는 엔드�
 **ATP에 대한 Intune 구성**:  
 
 - Microsoft Defender ATP를 사용하여 서비스 간 연결을 구성합니다.  
-- ATP를 통해 위험을 평가할 디바이스에 **Microsoft Defender ATP(Windows 10 데스크톱)** 의 프로필 유형을 사용하는 디바이스 준수 정책을 배포합니다.
+- ATP를 통해 위험을 평가할 디바이스에 **Microsoft Defender ATP(Windows 10 Desktop)** 의 프로필 유형을 사용하는 디바이스구성 정책을 배포합니다.
 
   ATP를 사용하도록 Intune을 설정하는 방법에 대한 자세한 내용은 [Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune)을 참조하세요.  
 

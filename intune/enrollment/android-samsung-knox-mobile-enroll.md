@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b16dca0b6a73e7228e65c840bfbc91f3577bb59a
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723556"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999292"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 디바이스 자동 등록
 
@@ -109,7 +109,8 @@ Android용 KME를 사용하여 Intune에 등록된 디바이스의 경우 최종
 
 > [!NOTE]
 >
->사용자 연결은 Android 등록에만 적용됩니다. 사용자 연결이 정의된 경우 연결된 사용자만 KME를 사용하여 디바이스를 등록할 수 있습니다. 디바이스를 출하 시 설정으로 리셋한 후에도 마찬가지입니다. Knox 포털에 사용자 연결이 정의되어 있지 않은 경우 유효한 Intune 라이선스를 가진 사용자는 KME를 사용하여 디바이스를 등록할 수 있습니다.
+>사용자 연결은 Android 디바이스 관리자 등록에만 적용됩니다. 사용자 연결이 정의된 경우 연결된 사용자만 KME를 사용하여 디바이스를 등록할 수 있습니다. 디바이스를 출하 시 설정으로 리셋한 후에도 마찬가지입니다. Knox 포털에 사용자 연결이 정의되어 있지 않은 경우 유효한 Intune 라이선스를 가진 사용자는 KME를 사용하여 디바이스를 등록할 수 있습니다.
+>Android Enterprise 완전 관리형 디바이스의 경우 사용자 연결을 정의했더라도 디바이스에 전달되거나 디바이스를 사용자에게 연결하지 않습니다.
 >
 
 ## <a name="distribute-devices"></a>디바이스 배포
@@ -126,7 +127,7 @@ MDM 프로필을 만들고 할당하고, 사용자 이름을 연결하고, Intun
 
 - **Android 엔터프라이즈에 등록하기 위해 초기화:** : 이미 설정된 디바이스를 다른 용도로 사용하는 경우 Android 엔터프라이즈에 등록할 때 디바이스를 초기화해야 합니다.
 
-- **Google Play 계정을 사용하여 업데이트:** Google Play 계정은 디바이스를 Microsoft Intune에 등록하는 데 필요하지 않습니다. 그러나 이후 Intune 회사 포털 앱을 업데이트하려면 디바이스에서 Google Play 계정이 필요할 수 있습니다. Google 디바이스 소유자에 등록하는 경우 Google Play 계정이 필요하지 않습니다.
+- **Google Play 계정을 사용하여 업데이트:** Google Play 계정은 디바이스를 Microsoft Intune에 등록하는 데 필요하지 않습니다. 그러나 Android 디바이스 관리자 등록의 경우 Intune 회사 포털 앱을 업데이트하려면 디바이스에서 Google Play 계정이 필요할 수 있습니다. Google 디바이스 소유자에 등록하는 경우 Google Play 계정이 필요하지 않습니다.
 
 - **“암호” 필드가 무시됨:** Knox 포털의 **디바이스 세부 정보**에 채워져 있는 **암호** 필드는 Android 등록 중에 Intune 회사 포털 앱에서 무시됩니다. 디바이스 등록을 완료하려면 최종 사용자가 디바이스에서 암호를 입력해야 합니다.
 

@@ -16,22 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74b920deeb5255f6f938f0c8b07eaab6d765e68e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722971"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999312"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune의 인증에 인증서 사용  
 
 Intune에서 인증서를 사용하여 VPN, Wi-Fi 또는 메일 프로필을 통해 애플리케이션 및 회사 리소스에서 사용자를 인증합니다. 인증서를 사용하여 이러한 연결을 인증하는 경우 최종 사용자가 사용자 이름과 암호를 입력하지 않아도 되므로 원활하게 액세스할 수 있습니다. S/MIME을 사용하여 메일을 서명 및 암호화하는 데도 인증서가 사용됩니다.
 
-Intune은 다음 인증서 유형을 지원합니다.  
-
-- SCEP(단순 인증서 등록 프로토콜)  
-- PKCS #12(또는 PFX)  
-- PKCS 가져온 인증서
+## <a name="intune-supported-certificates-and-usage"></a>Intune에서 지원하는 인증서 및 용도
+| 유형              | 인증 | S/MIME 서명 | S/MIME 암호화  |
+|--|--|--|--|
+| PKCS 가져온 인증서 |  | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png)|
+| PKCS #12(또는 PFX)    | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |  |
+| SCEP(단순 인증서 등록 프로토콜)  | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | |
 
 이러한 인증서를 배포하려면 인증서 프로필을 만들어 디바이스에 할당합니다.  
 

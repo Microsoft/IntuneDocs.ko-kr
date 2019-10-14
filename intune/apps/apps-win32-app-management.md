@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 593c2d2b509047115ebeb3415393d6112484a6a9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 21192d259de0711ad38fa35b294ea82c7d913292
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724986"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036504"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 독립 실행형 - Win32 앱 관리
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724986"
 
 > [!NOTE]
 > 이 앱 관리 기능은 Windows 애플리케이션용 32비트 및 64비트 운영 체제 아키텍처를 모두 지원합니다.
+
+> [!IMPORTANT]
+> Win32 앱을 배포할 때 특히 다중 파일 Win32 앱 설치 프로그램을 사용하는 경우 [Intune 관리 확장](../apps/intune-management-extension.md)만 사용하는 것이 좋습니다. AutoPilot 등록 중에 Win32 앱과 기간 업무 앱 설치를 혼합하면 앱 설치에 실패할 수 있습니다.  
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -89,7 +92,7 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 
 ### <a name="process-flow-to-add-a-win32-app-to-intune"></a>Win32 앱을 Intune에 추가하는 프로세스 흐름
 
-   ![Win32 앱을 Intune에 추가하는 프로세스 흐름](./media/apps-win32-app-management/add-win32-app.svg)
+<img alt="Process flow to add a Win32 app to Intune" src="./media/apps-win32-app-management/add-win32-app.svg" width="500">
 
 ### <a name="add-a-win32-app-to-intune"></a>Intune에 Win32 앱 추가
 

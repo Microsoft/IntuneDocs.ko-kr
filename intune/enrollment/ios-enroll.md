@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80b9091b723e78631a13c9358687ae77c36b8d47
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c4f3424c0d9712affbbf8ba3929e825b62ce5864
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722451"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940325"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune에 iOS 디바이스 등록
 
-Intune은 iPad 및 iPhone의 MDM(모바일 디바이스 관리)을 가능하게 하고, 사용자가 회사 메일 및 앱에 액세스할 수 있게 해줍니다.
+Intune에서는 iPad 및 iPhone에 대한 MDM(모바일 디바이스 관리)을 지원하므로 사용자는 회사 메일, 데이터 및 앱에 안전하게 액세스할 수 있습니다.
 
-Intune 관리자는 iOS 디바이스에 대한 등록을 사용하도록 설정할 수 있습니다. 사용자가 개인적으로 소유한 디바이스를 등록(BYOD("Bring Your Own Device") 등록이라고 함)하도록 허용할 수 있습니다. 회사 소유 디바이스 등록을 사용하도록 설정할 수도 있습니다.
+Intune 관리자는 iOS 및 iPadOS 디바이스에 대한 등록을 설정하여 회사 리소스에 액세스할 수 있습니다. 사용자가 개인 소유 디바이스를 등록(BYOD("Bring Your Own Device") 등록이라고 함)하도록 허용할 수 있습니다. 회사 소유 디바이스의 등록을 설정할 수도 있습니다.
 
 ## <a name="prerequisites-for-ios-enrollment"></a>iOS 등록을 위한 필수 구성 요소
 
@@ -38,9 +38,14 @@ iOS 디바이스를 사용하도록 설정하기 전에 다음 단계를 완료�
 - [Intune 설정](../fundamentals/setup-steps.md) - 이러한 단계에서는 Intune 인프라를 설정합니다. 특히 디바이스를 등록하려면 [MDM 기관을 설정](../fundamentals/mdm-authority-set.md)해야 합니다.
 - [Apple MDM 푸시 인증서 가져오기](apple-mdm-push-certificate-get.md) - Apple의 경우 iOS 및 macOS 디바이스 관리를 사용하려면 인증서가 필요합니다.
 
-## <a name="user-owned-ios-devices-byod"></a>사용자 소유 iOS 디바이스(BYOD)
+## <a name="user-owned-ios-and-ipados-devices-byod"></a>사용자 소유 iOS 및 iPadOS 디바이스(BYOD)
 
-사용자가 Intune 관리에 대해 개인 디바이스를 등록하도록 할 수 있습니다. 이를 "Bring Your Own Device" 또는 BYOD라고 합니다. 필수 구성 요소를 완료하고 사용자 라이선스를 할당하면 앱 스토어에서 Intune 회사 포털 앱을 다운로드하고 앱에서 등록 지침을 수행할 수 있습니다. [개인정보취급방침 사용자 지정](../apps/company-portal-app.md#privacy-statement-customization)의 지침에 따라 iOS 디바이스에서의 회사 포털 개인정보취급방침을 사용자 지정할 수 있습니다.
+사용자가 Intune 관리에 대해 개인 디바이스를 등록하도록 할 수 있습니다. 이를 "Bring Your Own Device" 또는 BYOD라고 합니다. 사용자 등록 옵션은 다음 세 가지입니다.
+- 앱 보호 정책은 앱 수준에서만 관리를 제공하여 가장 가벼운 BYOD 환경을 제공합니다. 그러나 복잡한 6자리 PIN을 사용하여 디바이스를 보호하려면 이 정책을 사용자 등록과 함께 사용하면 됩니다.
+- 디바이스 등록은 일반적인 BYOD 등록으로 이해하시면 됩니다. 이 기능은 관리자에게 다양한 관리 옵션을 제공합니다.
+- 사용자 등록은 더 간소화된 등록 프로세스로서, 관리자에게 디바이스 관리 옵션의 하위 집합을 제공합니다. 이 기능은 현재 미리 보기로 제공됩니다. 
+
+필수 구성 요소를 완료하고 사용자 라이선스를 할당하면 사용자는 앱 스토어에서 Intune 회사 포털 앱을 다운로드하고 앱에서 등록 지침을 따를 수 있습니다. [개인정보취급방침 사용자 지정](../apps/company-portal-app.md#privacy-statement-customization)의 지침에 따라 iOS 디바이스에서의 회사 포털 개인정보취급방침을 사용자 지정할 수 있습니다.
 
 ## <a name="company-owned-ios-devices"></a>회사 소유 iOS 디바이스
 
@@ -55,7 +60,10 @@ iOS 디바이스를 사용하도록 설정하기 전에 다음 단계를 완료�
 
 ## <a name="device-enrollment-program"></a>디바이스 등록 프로그램
 
-조직은 Apple의 DEP(디바이스 등록 프로그램)를 통해 iOS 디바이스를 구매할 수 있습니다. DEP를 통해 등록 프로필을 "무선"으로 배포하여 디바이스를 관리할 수 있습니다. [디바이스 등록 프로그램](device-enrollment-program-enroll-ios.md)에 대해 자세히 알아보세요.
+조직은 Apple의 DEP(디바이스 등록 프로그램)를 통해 iOS 디바이스를 구매할 수 있습니다. DEP를 통해 등록 프로필을 "무선"으로 배포하여 디바이스를 관리할 수 있습니다. 자세한 내용은 [디바이스 등록 프로그램](device-enrollment-program-enroll-ios.md)을 참조하세요.
+
+## <a name="user-enrollment"></a>사용자 등록
+사용자 등록은 다른 등록 방법과 달리 관리자에게 관리 옵션의 하위 집합을 제공합니다. 자세한 내용은 [사용자 등록에서 지원하는 작업, 암호 및 기타 옵션](ios-user-enrollment-supported-actions.md) 및 [iOS 및 iPadOS 사용자 등록 설정](ios-user-enrollment.md)을 참조하세요.
 
 ## <a name="apple-school-manager"></a>Apple School Manager
 

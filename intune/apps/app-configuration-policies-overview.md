@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af81552942805bed07e818d6005231e9305b3460
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 08017be16e4257ef0bd7bfb775197feaa20baf75
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725792"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940369"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
@@ -88,6 +88,77 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 
       ![앱 구성 스크린샷](./media/app-configuration-policies-overview/app-configuration.png)
 
+## <a name="diagnostic-logs"></a>진단 로그
+
+### <a name="ios-configuration-on-unmanaged-devices"></a>관리되지 않는 디바이스에서 iOS 구성
+
+관리 앱 구성에 대해 관리되지 않는 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다.
+
+1. 디바이스에 아직 설치되지 않은 경우 앱 스토어에서 **Intune Managed Browser**를 다운로드하여 설치합니다. 자세한 내용은 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)을 참조하세요.
+2. **Intune Managed Browser**를 시작하고 탐색 모음에서 **정보** > **intunehelp**를 선택합니다.
+3. **시작**을 클릭합니다.
+4. **로그 공유**를 클릭합니다.
+5. PC에서 볼 수 있도록 원하는 메일 앱을 사용하여 로그를 자신에게 보냅니다. 
+6. 텍스트 파일 뷰어에서 **IntuneMAMDiagnostics.txt**를 검토합니다.
+7. `ApplicationConfiguration`를 검색합니다. 결과는 다음과 같이 나타납니다.
+
+    ``` JSON
+        {
+            (
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.BlockListURLs";
+                    Value = "https://www.aol.com";
+                },
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.bookmarks";
+                    Value = "Outlook Web|https://outlook.office.com||Bing|https://www.bing.com";
+                }
+            );
+        },
+        {
+            ApplicationConfiguration =             
+            (
+                {
+                Name = IntuneMAMUPN;
+                Value = "CMARScrubbedM:13c45c42712a47a1739577e5c92b5bc86c3b44fd9a27aeec3f32857f69ddef79cbb988a92f8241af6df8b3ced7d5ce06e2d23c33639ddc2ca8ad8d9947385f8a";
+                },
+                {
+                Name = "com.microsoft.outlook.Mail.NotificationsEnabled";
+                Value = false;
+                }
+            );
+        }
+    ```
+
+애플리케이션 구성 세부 정보는 테넌트에 대해 구성된 애플리케이션 구성 정책과 일치해야 합니다. 
+
+![대상 지정 앱 구성](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
+
+### <a name="ios-configuration-on-managed-devices"></a>관리 디바이스에서 iOS 구성
+
+관리 앱 구성에 대해 관리 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다.
+
+1. 디바이스에 아직 설치되지 않은 경우 앱 스토어에서 **Intune Managed Browser**를 다운로드하여 설치합니다. 자세한 내용은 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)을 참조하세요.
+2. **Intune Managed Browser**를 시작하고 탐색 모음에서 **정보** > **intunehelp**를 선택합니다.
+3. **시작**을 클릭합니다.
+4. **로그 공유**를 클릭합니다.
+5. PC에서 볼 수 있도록 원하는 메일 앱을 사용하여 로그를 자신에게 보냅니다. 
+6. 텍스트 파일 뷰어에서 **IntuneMAMDiagnostics.txt**를 검토합니다.
+7. `AppConfig`를 검색합니다. 결과는 테넌트에 대해 구성된 애플리케이션 구성 정책과 일치해야 합니다.
+
+### <a name="android-configuration-on-managed-devices"></a>관리 디바이스에서 Android 구성
+
+관리 앱 구성에 대해 관리 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다.
+
+Android 디바이스에서 로그를 수집하려면 사용자 또는 최종 사용자가 USB 연결(또는 디바이스에서 **파일 탐색기**에 해당하는 것)을 통해 디바이스에서 로그를 다운로드해야 합니다. 실행할 단계는 다음과 같습니다.
+
+1. USB 케이블로 컴퓨터에 Android 디바이스를 연결합니다.
+2. 컴퓨터에서 디바이스 이름을 가진 디렉터리를 찾습니다. 해당 디렉터리에서 `Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal`을 찾습니다.
+3. `com.microsoft.windowsintune.companyportal` 폴더에서 파일 폴더를 열고 `OMADMLog_0`을 엽니다.
+3. `AppConfigHelper`를 검색하여 앱 구성 관련 메시지를 찾습니다. 결과는 다음 데이터 블록과 비슷합니다.
+
+    `2019-06-17T20:09:29.1970000       INFO   AppConfigHelper     10888  02256  Returning app config JSON [{"ApplicationConfiguration":[{"Name":"com.microsoft.intune.mam.managedbrowser.BlockListURLs","Value":"https:\/\/www.aol.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.bookmarks","Value":"Outlook Web|https:\/\/outlook.office.com||Bing|https:\/\/www.bing.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.homepage","Value":"https:\/\/www.arstechnica.com"}]},{"ApplicationConfiguration":[{"Name":"IntuneMAMUPN","Value":"AdeleV@M365x935807.OnMicrosoft.com"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled","Value":"false"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed","Value":"false"}]}] for user User-875363642`
+    
 ## <a name="graph-api-support-for-app-configuration"></a>앱 구성에 대한 Graph API 지원
 
 Graph API를 사용하여 앱 구성 작업을 수행할 수 있습니다. 자세한 내용은 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)(Graph API 참조 MAM 대상 구성)를 참조하세요.

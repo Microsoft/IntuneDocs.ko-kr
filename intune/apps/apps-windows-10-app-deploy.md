@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 04e943f573fb2485a2ef7f1e3245f08d4222d142
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724973"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830553"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
@@ -36,6 +36,8 @@ ms.locfileid: "71724973"
 > - Windows 10 1709의 경우, [2018년 6월 21일—KB4284822(OS 빌드 16299.522)](https://support.microsoft.com/help/4284822)입니다.
 >
 > 연결된 기본 사용자가 없는 경우 Windows 10 1803 이상에서만 앱 설치를 지원합니다.
+>
+> Windows 10 Home 버전을 실행 중인 디바이스에서는 LOB 앱 배포를 지원하지 않습니다.
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 기간 업무 앱
 

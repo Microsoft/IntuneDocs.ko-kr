@@ -5,7 +5,7 @@ keywords: ''
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b801da3bd4245361e8c55a40c67daf2c8890fd1e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721606"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999331"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>가져온 PKCS 인증서를 Intune을 사용하여 구성 및 사용
 
@@ -168,7 +168,7 @@ HSM(하드웨어 보안 모듈)을 사용하여 공개/개인 키 쌍을 생성�
 
 7. `Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject`를 실행해 **UserPFXCertificate** 개체를 Intune으로 가져옵니다.
 
-8. 인증서를 가져왔는지 확인하려면 `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UsertList "<UserUPN>"`을 실행합니다.
+8. 인증서를 가져왔는지 확인하려면 `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"`을 실행합니다.
 
 사용 가능한 다른 명령에 대한 자세한 내용은 [GitHub의 PFXImport PowerShell 프로젝트](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)에 있는 추가 정보 파일을 참조하세요.
 
@@ -186,7 +186,7 @@ Intune으로 인증서를 가져온 후 **PKCS가 가져온 인증서** 프로�
 
 3. **설정**으로 이동해 다음 속성을 입력합니다.
 
-   - **용도**: 이 프로필로 가져온 인증서의 용도를 지정합니다. 관리자는 다양한 용도(인증, S/MIME 서명, S/MIME 암호화 등)로 인증서를 가져올 수 있습니다. 인증서 프로필에서 선택한 용도는 인증서 프로필과 가져온 인증서를 올바르게 일치시킵니다. 용도는 가져온 인증서를 그룹화하는 태그이며, 태그와 함께 가져온 인증서가 용도를 반드시 충족하는 것은 아닙니다.  
+   - **용도**: 이 프로필로 가져온 인증서의 용도를 지정합니다. 관리자는 자신이 원하는 다양한 용도(S/MIME 서명, S/MIME 암호화 등)로 인증서를 가져올 수 있습니다. 인증서 프로필에서 선택한 용도는 인증서 프로필과 가져온 인증서를 올바르게 일치시킵니다. 용도는 가져온 인증서를 그룹화하는 태그이며, 태그와 함께 가져온 인증서가 용도를 반드시 충족하는 것은 아닙니다.  
    - **인증서 유효 기간**: 인증서 템플릿에서 유효 기간을 변경하지 않는 한, 이 옵션의 기본값은 1년입니다.  
    - **KSP(키 스토리지 공급자)** : Windows의 경우 디바이스에서 키를 저장할 위치를 선택합니다.  
 
