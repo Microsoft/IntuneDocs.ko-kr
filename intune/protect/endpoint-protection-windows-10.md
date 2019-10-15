@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
-ms.translationtype: HT
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732726"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163576"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune을 사용하여 디바이스를 보호하기 위한 Windows 10( 이상) 설정  
 
@@ -776,26 +776,27 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
  
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
 
-[Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)를 사용하여 직원이 사용하는 앱의 공격 노출 영역을 관리하고 줄입니다.  
+[악용 방지](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) 를 사용 하 여 직원이 사용 하는 앱의 공격 노출 영역을 관리 하 고 줄일 수 있습니다.  
 
 ### <a name="attack-surface-reduction"></a>공격 노출 영역 축소  
 
-*공격 노출 영역 축소* 규칙에 대 한 자세한 내용은 Windows Defender exploit guard 설명서에서 [Windows defender exploit guard를 사용 하 여 공격](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) 노출 영역 축소를 참조 하세요.  
+공격 노출 영역 축소 규칙은 맬웨어가 악성 코드를 사용 하 여 컴퓨터를 감염 시키는 데 자주 사용 하는 행위를 방지 합니다.  
 
 #### <a name="attack-surface-reduction-rules"></a>공격 노출 영역 축소 규칙  
 
 - **Windows 로컬 보안 기관 하위 시스템에서 도용하는 자격 증명에 플래그 지정**  
   **기본값**: 구성되지 않음  
-  Exploit Guard: [공격 노출 영역 축소 규칙](https://go.microsoft.com/fwlink/?linkid=874499)
+  규칙: [Windows 로컬 보안 기관 하위 시스템(lsass.exe)에서 도용하는 자격 증명에 플래그를 지정합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
 
   악용 검색 맬웨어가 컴퓨터를 감염시키는 데 일반적으로 사용되는 작업과 앱을 방지합니다.  
+
   - **구성되지 않음**  
   - **사용** - Windows 로컬 보안 기관 하위 시스템(lsass.exe)에서 도용하는 자격 증명에 플래그를 지정합니다.  
   - **감사만**  
 
 - **Adobe Reader에서 프로세스 만들기 (베타)**  
   **기본값**: 구성되지 않음  
-  Exploit Guard: [공격 노출 영역 축소 규칙](https://go.microsoft.com/fwlink/?linkid=853979)  
+  규칙: [Adobe Reader에서 자식 프로세스를 만들지 못하도록 차단](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)  
 
   - **구성되지 않음**  
   - **사용** -Adobe Reader에서 만든 자식 프로세스를 차단 합니다.  
@@ -807,7 +808,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **다른 프로세스에 삽입되는 Office 앱(예외 없음)**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=872974)  
+  규칙: [Office 애플리케이션이 다른 프로세스에 코드를 삽입하지 못하도록 차단합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - **구성되지 않음**  
   - **블록** Office 앱이 다른 프로세스에 삽입 하지 못하도록 차단 합니다.  
@@ -815,7 +816,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **실행 가능 콘텐츠를 만드는 Office 앱/매크로**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=872975)  
+  규칙: [Office 애플리케이션이 실행 가능한 콘텐츠를 생성하지 못하도록 차단합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - **구성되지 않음**  
   - **블록** -Office 앱 및 매크로가 실행 가능 콘텐츠를 만들지 못하도록 차단 합니다.  
@@ -823,7 +824,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **자식 프로세스를 실행하는 Office 앱**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=872976)  
+  규칙: [모든 Office 응용 프로그램에서 자식 프로세스를 만들지 못하도록 차단](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **구성되지 않음**  
   - **블록** -Office 앱이 자식 프로세스를 시작 하지 못하도록 차단 합니다.  
@@ -831,7 +832,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
   
 - **Office 매크로 코드에서 Win32 가져오기**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=872977)  
+  규칙: [Office 매크로에서 Win32 API 호출을 차단합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - **구성되지 않음**  
   - **블록** -Office의 매크로 코드에서 Win32 가져오기를 차단 합니다.  
@@ -839,7 +840,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
   
 - **Office 통신 제품에서 프로세스 만들기**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=874499)  
+  규칙: [Office 통신 응용 프로그램이 자식 프로세스를 만들지 못하도록 차단](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - **구성되지 않음**  
   - **사용** -Office 통신 앱에서 자식 프로세스 만들기를 차단 합니다.  
@@ -851,7 +852,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **난독 처리된 js/vbs/ps/매크로 코드**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=872978)    
+  규칙: [잠재적으로 난독 처리된 스크립트가 실행되지 못하도록 차단합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - **구성되지 않음**  
   - **Block** -난독 처리 된 js/vbs/ps/매크로 코드를 차단 합니다.  
@@ -859,7 +860,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **인터넷에서 다운로드된 페이로드를 실행하는 js/vbs(예외 없음)**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=872979)  
+  규칙: [JavaScript 또는 VBScript가 다운로드된 실행 가능한 콘텐츠를 시작하지 못하도록 차단합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - **구성되지 않음**  
   - **블록** -인터넷에서 다운로드 된 페이로드를 실행 하는 것을 차단 합니다.  
@@ -867,7 +868,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **PSExec 및 WMI 명령에서 프로세스 만들기**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=874500)  
+  규칙: [PSExec 및 WMI 명령에서 발생하는 프로세스 만들기를 차단합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)  
 
   - **구성되지 않음**  
   - **차단** - PSExec 및 WMI 명령에서 발생하는 프로세스 만들기를 차단합니다.  
@@ -876,7 +877,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **USB에서 실행되는 신뢰할 수 없고 서명되지 않은 프로세스**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=874502)    
+  규칙: [USB에서 실행되는 신뢰할 수 없고 서명되지 않은 프로세스를 차단합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb)    
 
   - **구성되지 않음**  
   - **차단** - USB에서 실행되는 신뢰할 수 없고 서명되지 않은 프로세스를 차단합니다.  
@@ -884,7 +885,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
   
 - **전파, 처리 기간 또는 신뢰할 수 있는 목록 조건을 충족하지 않는 실행 파일**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=874503)    
+  규칙: [실행 파일이 출현율, 나이 또는 신뢰할 수 있는 목록 기준을 충족하지 않으면 실행을 차단합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)    
 
   - **구성되지 않음**  
   - **차단** - 실행 파일이 출현율, 나이 또는 신뢰할 수 있는 목록 기준을 충족하지 않으면 실행을 차단합니다.  
@@ -896,7 +897,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **이메일(웹 메일/메일 클라이언트)에서 삭제된 실행 파일 콘텐츠(exe, dll, ps, js, vbs 등)의 실행(예외 없음)**  
   **기본값**: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=872980)  
+  규칙: [이메일 클라이언트 및 웹 메일에서 실행 가능한 콘텐츠를 차단합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - **구성되지 않음**  
   - **차단** - 메일(웹 메일/메일 클라이언트)에서 삭제된 실행 파일 콘텐츠(exe, dll, ps, js, vbs 등)의 실행을 차단합니다.  
@@ -906,7 +907,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **고급 랜섬웨어 보호**  
   기본값: 구성되지 않음  
-  [Exploit Guard 설명서](https://go.microsoft.com/fwlink/?linkid=874504)  
+  규칙: [랜섬웨어로부터 고급 보호 기능을 사용합니다](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware)  
 
   - **구성되지 않음**  
   - **사용** - 적극적인 랜섬웨어 보호를 사용합니다.  
@@ -932,7 +933,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 ### <a name="controlled-folder-access"></a>폴더 액세스 제어  
 
-랜섬웨어와 같은 악성 앱과 위협으로부터 [중요한 데이터를 보호](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)합니다.  
+랜섬웨어와 같은 악성 앱과 위협으로부터 [중요한 데이터를 보호](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders)합니다.  
 
 - **폴더 보호**  
   **기본값**: 구성되지 않음  
@@ -979,7 +980,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 - **XML 업로드**  
   **기본값**: *구성되지 않음*  
 
-  악용 방지를 사용 하 여 [장치를 악용 하지 못하도록 보호](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)하려면 원하는 시스템 및 응용 프로그램 완화 설정이 포함 된 XML 파일을 만듭니다. XML 파일을 만드는 방법에는 다음 두 가지가 있습니다.  
+  악용 방지를 사용 하 여 [장치를 악용 하지 못하도록 보호](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)하려면 원하는 시스템 및 응용 프로그램 완화 설정이 포함 된 XML 파일을 만듭니다. XML 파일을 만드는 방법에는 다음 두 가지가 있습니다.  
 
   - *PowerShell* - *Get-ProcessMitigation*, *Set-ProcessMitigation* 및 *ConvertTo-ProcessMitigationPolicy* PowerShell cmdlet 중 하나 이상을 사용합니다. cmdlet은 완화 설정을 구성하고 이들의 XML 표현을 내보냅니다.  
 
@@ -1332,8 +1333,8 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
   - **사용** -사용자 이름을 숨깁니다.  
   - **구성 되지 않음** -마지막 사용자 이름을 표시 합니다.  
 
-- **로그인 에서 사용자 이름 숨기기**
-  **기본값**: 구성 되지 않음  
+- **로그인 
+  에서 사용자 이름 숨기기**-1**기본값**: 구성 되지 않음  
   LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959)  
 
   
