@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/29/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734793"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251548"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -665,29 +665,55 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
 다음 설정에서는 [Defender 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)를 사용하며, 지원되는 Windows 버전도 나열합니다.
 
-- **실시간 모니터링**: **사용**은 맬웨어, 스파이웨어 및 기타 사용자 동의 없이 설치된 소프트웨어에 대한 실시간 검사를 해제합니다. **구성되지 않음**(기본값)은 이 기능을 허용합니다.
+- **실시간 모니터링**: **사용**하면 맬웨어, 스파이웨어 및 기타 사용자 동의 없이 설치된 소프트웨어에 대한 실시간 검사를 켭니다. 이 옵션은 사용자가 해제할 수 없습니다. 
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는이 기능을 설정 하 고 사용자가 변경할 수 있도록 허용 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
 
   [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
-- **동작 모니터링**: **사용**은 Defender에서 디바이스의 의심스러운 활동에 대해 알려진 특정 패턴을 확인하는 것을 해제합니다. **구성되지 않음**(기본값)은 Windows Defender 동작 모니터링을 허용합니다.
+- **동작 모니터링**: **사용**하면 동작 모니터링을 켜고 Defender에서 디바이스의 의심스러운 활동에 대해 알려진 특정 패턴을 확인합니다. 사용자는 동작 모니터링을 해제할 수 없습니다. 
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는 동작 모니터링을 켜고 사용자가 변경할 수 있도록 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
 
   [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **NIS(네트워크 검사 시스템)** : NIS를 통해 네트워크 기반 취약성 공격으로부터 디바이스를 보호할 수 있습니다. Microsoft Endpoint Protection Center에서 알려진 취약성의 서명을 사용하여 악성 트래픽을 검색하고 차단합니다.
 
-  **구성되지 않음**(기본값)으로 설정하면 이 기능을 비활성화합니다. 사용자가 알려진 취약점에 대 한 연결을 차단 하지 않습니다. **사용**으로 설정 되 면 네트워크 보호 및 네트워크 차단이 설정 되 고 사용자가 해제할 수 없습니다. 사용자가 알려진 취약점에 대 한 연결을 차단 합니다.
+  **사용을 설정 하면** 네트워크 보호 및 네트워크 차단이 사용 됩니다. 이 옵션은 사용자가 해제할 수 없습니다. 사용 하도록 설정 하면 사용자가 알려진 취약점에 대 한 연결을 차단 합니다.
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는 NIS를 켜고 사용자가 변경할 수 있도록 허용 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
 
   [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **모든 다운로드 검색**: **구성 되지 않음** (기본값)은 Defender에서 인터넷에서 다운로드 한 모든 파일을 검색 합니다. 이 기능을 **사용**으로 설정 하면이 기능을 사용할 수 없습니다. 따라서 Defender는 다운로드 한 모든 인터넷 파일을 검색 하지 않습니다.
+- **모든 다운로드 검색**: **사용** 을 설정 하 고, Defender는 인터넷에서 다운로드 한 모든 파일을 검색 합니다. 사용자가이 설정을 해제할 수 없습니다. 
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는이 설정을 켜고 사용자가 변경할 수 있도록 허용 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
 
   [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
-- **Microsoft 웹 브라우저에 로드된 스크립트 검사**: **구성되지 않음**(기본값)을 사용하면 Defender를 통해 Internet Explorer에서 사용되는 스크립트를 검사할 수 있습니다. **사용**은 이 검사를 차단합니다.
+- **Microsoft 웹 브라우저에 로드된 스크립트 검색**: **사용**하면 Defender가 Internet Explorer에 사용되는 스크립트를 검색하도록 허용합니다. 사용자가이 설정을 해제할 수 없습니다. 
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는이 설정을 켜고 사용자가 변경할 수 있도록 허용 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
 
   [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
-- **Defender에 대한 최종 사용자 액세스**: **차단**은 최종 사용자에게 Windows Defender 사용자 인터페이스를 표시하지 않도록 숨깁니다. 모든 Windows Defender 알림도 표시되지 않습니다. **구성되지 않음**(기본값)은 Windows Defender UI에 대한 사용자 액세스를 허용합니다. 이 설정이 변경되면 다음에 최종 사용자 PC를 다시 시작할 때 적용됩니다.
+- **Defender에 대한 최종 사용자 액세스**: **차단**하면 최종 사용자에게 Microsoft Defender 사용자 인터페이스를 표시하지 않도록 숨깁니다. Microsoft Defender 알림도 모두 표시되지 않습니다.
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 차단 하 고 **구성 되지 않음**으로 다시 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는 Microsoft Defender UI에 대 한 사용자 액세스를 허용 하 고 사용자가 변경할 수 있도록 허용 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
+
+  이 설정이 변경되면 다음에 최종 사용자 PC를 다시 시작할 때 적용됩니다.
 
   [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
@@ -714,31 +740,55 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **검색하는 동안 CPU 사용 제한**: 검사에 사용할 수 있는 CPU의 양을 `0`에서 `100` 사이로 제한할 수 있습니다.
-- **보관 파일 검색**: **Enable** 은 Defender에서 Zip 또는 Cab 파일과 같은 보관 파일을 검색 하지 못하도록 설정 합니다. **구성되지 않음**(기본값)은 이 검사를 허용합니다.
+- **보관 파일 검색**: **활성화** 는 Zip 또는 Cab 파일과 같은 보관 파일을 검색 하도록 Defender를 설정 합니다. 사용자가이 설정을 해제할 수 없습니다.
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는이 검색을 설정 하 고 사용자가 변경할 수 있도록 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
 
   [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **받는 메일 메시지 검사**: **사용**은 Defender에서 디바이스에 도착하는 이메일 메시지를 검사할 수 있도록 허용합니다. **구성되지 않음**(기본값)은 이메일 검사를 차단합니다.
+- **받는 메일 메시지 검사**: **사용**은 Defender에서 디바이스에 도착하는 이메일 메시지를 검사할 수 있도록 허용합니다. 사용 하도록 설정 하면 엔진은 사서함 및 메일 파일을 구문 분석 하 여 메일 본문 및 첨부 파일을 분석 합니다. .Pst (Outlook), .dbx, mbx, MIME (Outlook Express) 및 BinHex (Mac) 형식을 검사할 수 있습니다.
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는이 검색을 해제 하 고 사용자가 변경할 수 있도록 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
 
   [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- **전체 검사 중 이동식 드라이브 검사**: **사용**은 이동식 드라이브의 전체 검사를 차단합니다. **구성되지 않음**(기본값)을 사용하면 Defender에서 USB 스틱과 같은 이동식 드라이브를 검사할 수 있습니다.
+- **전체 검색 중 이동식 드라이브 검색**: **사용을 설정** 하면 전체 검색을 수행 하는 동안 Defender 이동식 드라이브 검색을 사용 합니다. 사용자가이 설정을 해제할 수 없습니다.
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로, OS는 Defender가 USB 스틱 같은 이동식 드라이브를 검색 하 고 사용자가이 설정을 변경할 수 있도록 허용 합니다.
 
   빠른 검색 중에는 이동식 드라이브를 계속 검색할 수 있습니다.
 
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
+
   [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
-- **전체 검사 중 매핑된 네트워크 드라이브 검사**: **사용**을 사용하면 Defender에서 매핑된 네트워크 드라이브의 파일을 검사할 수 있습니다. **구성되지 않음**(기본값)은 전체 검사를 차단합니다. 드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다.
+- **전체 검사 중 매핑된 네트워크 드라이브 검사**: **사용**하면 Defender에서 매핑된 네트워크 드라이브의 파일을 검사할 수 있습니다. 드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다. 사용자가이 설정을 해제할 수 없습니다.
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는이 기능을 설정 하 고 사용자가 변경할 수 있도록 허용 합니다.
 
   빠른 검색을 수행 하는 동안 매핑된 네트워크 드라이브를 계속 검색할 수 있습니다.
 
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
+
   [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **네트워크 폴더에서 열린 파일 검사**: **구성되지 않음**(기본값)을 사용하면 Defender에서 공유 네트워크 드라이브의 파일(예: UNC 경로를 통해 액세스하는 파일)을 검사할 수 있습니다. **사용**은 이 검사를 차단합니다. 드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다.
+- **네트워크 폴더에서 열린 파일 검색**: **사용** 은 Defender에서 네트워크 폴더 또는 공유 네트워크 드라이브 (예: UNC 경로에서 액세스 한 파일)에서 연 파일을 검색 합니다. 사용자가이 설정을 해제할 수 없습니다. 드라이브의 파일이 읽기 전용이면, Defender가 파일에서 발견한 맬웨어를 제거할 수 없습니다.
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는 네트워크 폴더에서 열린 파일을 검색 하 여 사용자가 변경할 수 있도록 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
 
   [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
-- **클라우드 보호**: **구성되지 않음**(기본값)을 사용하면 Microsoft 활성 보호 서비스에서 사용자가 관리하는 디바이스의 맬웨어 활동에 대한 정보를 받을 수 있습니다. **사용**은 이 기능을 차단합니다.
+- **클라우드 보호**: **사용**하면 Microsoft 활성 보호 서비스에서 사용자가 관리하는 디바이스의 맬웨어 활동에 대한 정보를 받을 수 있습니다. 사용자가 이 설정을 변경할 수 없습니다. 
+
+  **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 건드리지 않습니다. 설정을 사용 하도록 설정 하 고 다시 **구성 되지 않음**으로 변경 하는 경우 Intune은 이전에 구성 된 상태에서 설정을 그대로 둡니다. 기본적으로 OS는 Microsoft 활성 보호 서비스에서 정보를 받을 수 있도록 하 고 사용자가이 설정을 변경할 수 있도록 허용 합니다.
+
+  Intune은이 기능을 해제 하지 않습니다. 사용 하지 않도록 설정 하려면 사용자 지정 URI를 사용 합니다.
 
   [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732960"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163497"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune에 대한 Microsoft Defender Advanced Threat Protection 기준 설정
 
@@ -86,7 +86,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 ## <a name="attack-surface-reduction"></a>공격 노출 영역 축소  
 
 - **Office 앱이 자식 프로세스 유형을 시작**  
-  [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - ‘차단’으로 설정하면 Office 앱이 자식 프로세스를 만들 수 없습니다.  Office 앱에는 Word, Excel, PowerPoint, OneNote 및 Access가 포함됩니다. 자식 프로세스 만들기는 일반적인 맬웨어 동작으로, 특히 Office 앱을 사용하여 악성 실행 파일을 시작하거나 다운로드하려고 시도하는 매크로 기반 공격에 적용됩니다.  
+  [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘차단’으로 설정하면 Office 앱이 자식 프로세스를 만들 수 없습니다.  Office 앱에는 Word, Excel, PowerPoint, OneNote 및 Access가 포함됩니다. 자식 프로세스 만들기는 일반적인 맬웨어 동작으로, 특히 Office 앱을 사용하여 악성 실행 파일을 시작하거나 다운로드하려고 시도하는 매크로 기반 공격에 적용됩니다.  
 
   **기본값**: 차단
 
@@ -101,7 +101,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   **기본값**: 사용
 
 - **이메일 콘텐츠 실행 유형**  
-  [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - ‘차단’으로 설정하면 이 규칙은 다음 파일 형식이 Microsoft Outlook 또는 웹 메일(예: Gmail.com 또는 Outlook.com) 중 하나에 표시된 메일에서 실행되거나 시작되지 않도록 차단합니다.   
+  [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘차단’으로 설정하면 이 규칙은 다음 파일 형식이 Microsoft Outlook 또는 웹 메일(예: Gmail.com 또는 Outlook.com) 중 하나에 표시된 메일에서 실행되거나 시작되지 않도록 차단합니다.   
 
   - 실행 파일(예: .exe, .dll 또는 .scr)  
   - 스크립트 파일(예: PowerShell.ps, VisualBasic.vbs 또는 JavaScript.js 파일)  
@@ -110,17 +110,17 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   **기본값**: 차단
 
 - **자식 프로세스에서 Adobe Reader 시작**  
-  [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - Adobe Reader가 자식 프로세스를 만들지 못하도록 차단하려면 이 규칙을 ‘사용’으로 설정합니다.  소셜 엔지니어링이나 악용을 통해 맬웨어가 추가 페이로드를 다운로드 및 시작하고 Adobe Reader를 중단합니다.  
+  [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - Adobe Reader가 자식 프로세스를 만들지 못하도록 차단하려면 이 규칙을 ‘사용’으로 설정합니다.  소셜 엔지니어링이나 악용을 통해 맬웨어가 추가 페이로드를 다운로드 및 시작하고 Adobe Reader를 중단합니다.  
 
   **기본값**: 사용
 
 - **스크립트에서 난독 처리된 매크로 코드 유형**  
-  [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 맬웨어 및 기타 위협은 일부 스크립트 파일에서 해당 악성 코드를 난독 처리하거나 숨길 수 있습니다. 이 규칙은 난독 처리된 것으로 보이는 스크립트가 실행되는 것을 방지합니다.  
+  [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 맬웨어 및 기타 위협은 일부 스크립트 파일에서 해당 악성 코드를 난독 처리하거나 숨길 수 있습니다. 이 규칙은 난독 처리된 것으로 보이는 스크립트가 실행되는 것을 방지합니다.  
     
   **기본값**: 차단
 
 - **신뢰할 수 없는 USB 프로세스 유형**  
-  [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – ‘차단’으로 설정하면 USB 이동식 드라이브 및 SD 카드에서 서명되지 않은 실행 파일이나 신뢰할 수 없는 실행 파일을 실행할 수 없습니다. 
+  [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – ‘차단’으로 설정하면 USB 이동식 드라이브 및 SD 카드에서 서명되지 않은 실행 파일이나 신뢰할 수 없는 실행 파일을 실행할 수 없습니다. 
 
   실행 파일은 다음과 같습니다.
   - 실행 파일(예: .exe, .dll 또는 .scr)
@@ -129,22 +129,22 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   **기본값**: 차단
 
 - **Office 앱 및 기타 프로세스 삽입 유형**  
-  [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - ‘차단’으로 설정하면 Word, Excel, PowerPoint 및 OneNote를 포함한 Office 앱이 다른 프로세스에 코드를 삽입할 수 없습니다.  코드 삽입은 일반적으로 바이러스 백신 검사 엔진으로부터 활동을 숨기려는 악성 코드를 실행하는 맬웨어에서 사용됩니다.  
+  [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘차단’으로 설정하면 Word, Excel, PowerPoint 및 OneNote를 포함한 Office 앱이 다른 프로세스에 코드를 삽입할 수 없습니다.  코드 삽입은 일반적으로 바이러스 백신 검사 엔진으로부터 활동을 숨기려는 악성 코드를 실행하는 맬웨어에서 사용됩니다.  
 
   **기본값**: 차단
 
 - **Office 매크로 코드에서 Win32 가져오기 유형**  
-  [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - ‘차단’으로 설정하면 이 규칙은 Win32 DLL을 가져올 수 있는 매크로 코드를 포함하는 Office 파일을 차단하려 합니다.  Office 파일에는 Word, Excel, PowerPoint 및 OneNote가 포함됩니다. 맬웨어는 Office 파일의 매크로 코드를 사용하여 Win32 DLL을 가져오고 로드할 수 있으며, 이 Win32 DLL은 이후 API를 호출하여 시스템 전체에 추가 감염을 일으키는 데 사용됩니다.  
+  [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘차단’으로 설정하면 이 규칙은 Win32 DLL을 가져올 수 있는 매크로 코드를 포함하는 Office 파일을 차단하려 합니다.  Office 파일에는 Word, Excel, PowerPoint 및 OneNote가 포함됩니다. 맬웨어는 Office 파일의 매크로 코드를 사용하여 Win32 DLL을 가져오고 로드할 수 있으며, 이 Win32 DLL은 이후 API를 호출하여 시스템 전체에 추가 감염을 일으키는 데 사용됩니다.  
 
   **기본값**: 차단
 
 - **자식 프로세스에서 Office 통신 앱 시작**  
-  [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - ‘사용’으로 설정하면 이 규칙은 Outlook이 자식 프로세스를 만들지 못하도록 차단합니다.  이 규칙은 자식 프로세스 만들기를 차단하여 소셜 엔지니어링 공격으로부터 보호하고 익스플로잇 코드가 Outlook에서 취약성을 악용하지 못하도록 차단합니다.  
+  [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘사용’으로 설정하면 이 규칙은 Outlook이 자식 프로세스를 만들지 못하도록 차단합니다.  이 규칙은 자식 프로세스 만들기를 차단하여 소셜 엔지니어링 공격으로부터 보호하고 익스플로잇 코드가 Outlook에서 취약성을 악용하지 못하도록 차단합니다.  
 
   **기본값**: 사용
 
 - **Office 앱 실행 파일 콘텐츠 생성 또는 시작 유형**  
-  [공격 표면 감소 규칙](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - ‘차단’으로 설정하면 Office 앱이 실행 가능한 콘텐츠를 만들 수 없습니다.  Office 앱에는 Word, Excel, PowerPoint, OneNote 및 Access가 포함됩니다.  
+  [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘차단’으로 설정하면 Office 앱이 실행 가능한 콘텐츠를 만들 수 없습니다.  Office 앱에는 Word, Excel, PowerPoint, OneNote 및 Access가 포함됩니다.  
 
   이 규칙의 대상은 실행 파일을 만들거나 시작하는 의심스러운 악성 추가 기능 및 스크립트(확장)에서 사용되는 일반적인 동작입니다. 일반적인 맬웨어 기술입니다. 확장은 Office 앱에서 사용되는 것을 차단합니다. 일반적으로 이 확장은 Windows Scripting Host(.wsh 파일)를 사용하여 특정 작업을 자동화하는 스크립트를 실행하거나 사용자가 만든 추가 기능을 제공합니다.
 
@@ -273,7 +273,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 ## <a name="exploit-protection"></a>Exploit Protection  
 
 - **악용 방지 XML**  
-  자세한 내용은 Windows 설명서의 [Import, export, and deploy exploit protection configurations ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml)(악용 방지 구성 가져오기, 내보내기 및 배포)를 참조하세요.  
+  자세한 내용은 Windows 설명서의 [Import, export, and deploy exploit protection configurations](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml)(악용 방지 구성 가져오기, 내보내기 및 배포)를 참조하세요.  
 
   IT 관리자가 원하는 시스템 및 애플리케이션 마이그레이션 옵션을 나타내는 구성을 조직의 모든 디바이스에 내보낼 수 있도록 설정합니다. 구성은 XML로 표시됩니다. 
 

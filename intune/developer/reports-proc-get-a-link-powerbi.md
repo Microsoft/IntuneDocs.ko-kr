@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 10/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5cdb6bbdcce229fbc217726a1ee118f77beff
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9e8fadb625073af2a70d605d3ceabb9ba97906ae
+ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733415"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72008327"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI를 통해 데이터 웨어하우스에 연결
 
@@ -76,9 +76,10 @@ Power BI [Intune Compliance(Data Warehouse)](https://aka.ms/intune/datawarehouse
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. 개요 블레이드의 오른쪽에 있는 **기타 작업** 섹션에서 **Intune 데이터 웨어하우스 설정** 을 클릭 합니다. **Intune 데이터 웨어하우스** 블레이드가 표시 됩니다.
-3. 보고 블레이드에서 사용자 지정 피드 URL을 검색합니다. 예: `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
+3. 보고 블레이드에서 사용자 지정 피드 URL을 검색합니다. 예:<br>
+    `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. **Power BI Desktop**을 엽니다.
-5. **홈** > **데이터 가져오기**를 선택합니다. **OData 피드**를 선택합니다.
+5. **파일** > **데이터 가져오기**를 선택 합니다. **OData 피드**를 선택합니다.
 6. **기본**을 선택합니다.
 7. **OData URL**을 URL 상자에 입력하거나 붙여넣습니다.
 8. **확인**을 선택합니다.
