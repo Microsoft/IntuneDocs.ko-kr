@@ -6,8 +6,9 @@
     - name: Microsoft Intune 개요
       href: what-is-intune.md
       displayName: ems; emm; azure ad; active directory; ad
-    - name: Intune이 회사를 위해 할 수 있는 일은 무엇일까요?
-      href: get-started-evaluation.md
+    - name: 디바이스 관리 개요
+      href: what-is-device-management.md
+      displayName: teamviewer
     - name: 새로운 기능
       href: whats-new.md
       items:
@@ -32,9 +33,6 @@
       href: tutorial-walkthrough-intune-portal.md
 - name: 개념
   items:
-    - name: 디바이스 관리란?
-      href: what-is-device-management.md
-      displayName: teamviewer
     - name: Intune for Education이란?
       href: introduction-intune-education.md
     - name: 상위 수준 아키텍처
