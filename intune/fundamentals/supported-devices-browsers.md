@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c87cb90ee7803b0848c57b91a801976b2aa4d6e9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d2777f2caabc24a457fc407b3e47facb1f6fc3c
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721710"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314624"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune의 지원되는 운영 체제 및 브라우저
 
 Microsoft Intune을 설정하기 전에 지원되는 운영 체제 및 브라우저를 검토합니다.
 
-디바이스에 Intune을 설치하는 방법에 대한 도움말은 [관리 디바이스를 사용하여 작업 완료]https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) 및 [Intune 네트워크 대역폭 사용](network-bandwidth-use.md)을 참조하세요.
+디바이스에 Intune을 설치하는 방법에 대한 도움말은 [관리 디바이스를 사용하여 작업 완료](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) 및 [Intune 네트워크 대역폭 사용](network-bandwidth-use.md)을 참조하세요.
 
 구성 서비스 공급자 지원에 대한 자세한 내용은 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)를 참조하세요.
 

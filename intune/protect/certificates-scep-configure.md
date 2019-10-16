@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 909dba16e04b11989caa79112c5a89fbb7c52114
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 39858a74cd9503ff40de51ab3680ccf509d25c49
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722919"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310951"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Intune을 사용하여 SCEP를 지원하도록 인프라 구성  
   
@@ -37,7 +37,7 @@ Intune에서는 SCEP(단순 인증서 등록 프로토콜)를 사용하여 [앱 
 
 ### <a name="servers-and-server-roles"></a>서버 및 서버 역할  
 다음 온-프레미스 인프라는 웹 애플리케이션 프록시 서버를 제외하고 Active Directory 도메인에 가입된 서버에서 실행해야 합니다.  
-- **인증 기관** - Enterprise 버전의 Windows Server 2008 R2 서비스 팩 1 이상에서 실행되는 Microsoft Active Directory 인증서 서비스 엔터프라이즈 CA(인증 기관)를 사용합니다. 사용하는 Windows Server 버전은 Microsoft에서 계속 지원해야 합니다. 독립 실행형 CA는 지원되지 않습니다. 자세한 내용은 [인증 기관 설치](http://technet.microsoft.com/library/jj125375.aspx)를 참조하세요. CA에서 Windows Server 2008 R2 SP1을 실행하는 경우에는 [KB2483564의 핫픽스를 설치](http://support.microsoft.com/kb/2483564/)해야 합니다.  
+- **인증 기관** - Enterprise 버전의 Windows Server 2008 R2 서비스 팩 1 이상에서 실행되는 Microsoft Active Directory 인증서 서비스 엔터프라이즈 CA(인증 기관)를 사용합니다. 사용하는 Windows Server 버전은 Microsoft에서 계속 지원해야 합니다. 독립 실행형 CA는 지원되지 않습니다. 자세한 내용은 [인증 기관 설치](https://technet.microsoft.com/library/jj125375.aspx)를 참조하세요. CA에서 Windows Server 2008 R2 SP1을 실행하는 경우에는 [KB2483564의 핫픽스를 설치](https://support.microsoft.com/kb/2483564/)해야 합니다.  
 
 - **NDES 서버 역할** – Windows server 2012 R2 이상에서 NDES(네트워크 디바이스 등록 서비스) 서버 역할을 구성해야 합니다. 이 문서의 이후 섹션에서는 [NDES 설치](#set-up-ndes) 과정을 안내합니다.  
 
@@ -45,7 +45,7 @@ Intune에서는 SCEP(단순 인증서 등록 프로토콜)를 사용하여 [앱 
   - 엔터프라이즈 CA를 호스트하는 서버에 설치된 NDES는 사용할 수 없습니다.  
   - NDES를 호스트하는 동일한 서버에 Microsoft Intune Certificate connector를 설치합니다.  
 
-  NDES에 대한 자세한 내용은 Windows Server 설명서의 [네트워크 디바이스 등록 서비스 지침](http://technet.microsoft.com/library/hh831498.aspx) 및 [네트워크 디바이스 등록 서비스와 함께 정책 모듈 사용](https://technet.microsoft.com/library/dn473016.aspx)을 참조하세요.  
+  NDES에 대한 자세한 내용은 Windows Server 설명서의 [네트워크 디바이스 등록 서비스 지침](https://technet.microsoft.com/library/hh831498.aspx) 및 [네트워크 디바이스 등록 서비스와 함께 정책 모듈 사용](https://technet.microsoft.com/library/dn473016.aspx)을 참조하세요.  
 
 - **Microsoft Intune Certificate Connector** – Microsoft Intune Certificate Connector는 Intune에서 SCEP 인증서 프로필을 사용하는 데 필요합니다. 이 문서에서는 [이 커넥터의 설치 과정](#install-the-intune-certificate-connector)을 안내합니다.  
 
@@ -61,7 +61,7 @@ Intune에서는 SCEP(단순 인증서 등록 프로토콜)를 사용하여 [앱 
 
 - **웹 애플리케이션 프록시 서버**(선택 사항) - Windows Server 2012 R2 이상을 WAP(웹 애플리케이션 프록시) 서버로 실행하는 서버를 사용하여 NDES URL을 인터넷에 게시합니다.  그러면 인트라넷 및 인터넷 연결 디바이스 모두에서 인증서를 가져올 수 있습니다.
 
-  WAP를 호스팅하는 서버에는 네트워크 디바이스 등록 서비스에서 사용하는 긴 URL을 지원할 수 있도록 하는 [업데이트를 설치](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 해야 합니다. 이 업데이트는 [2014년 12월 업데이트 롤업](http://support.microsoft.com/kb/3013769)에 포함되어 있으며, [KB3011135](http://support.microsoft.com/kb/3011135)에서 개별적으로 다운로드할 수도 있습니다.  
+  WAP를 호스팅하는 서버에는 네트워크 디바이스 등록 서비스에서 사용하는 긴 URL을 지원할 수 있도록 하는 [업데이트를 설치](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 해야 합니다. 이 업데이트는 [2014년 12월 업데이트 롤업](https://support.microsoft.com/kb/3013769)에 포함되어 있으며, [KB3011135](https://support.microsoft.com/kb/3011135)에서 개별적으로 다운로드할 수도 있습니다.  
 
   WAP 서버에는 외부 클라이언트에 게시된 이름과 일치하는 SSL 인증서가 있어야 하며 NDES 서비스 호스트 컴퓨터에 사용되는 SSL 인증서를 신뢰해야 합니다. 이러한 인증서를 통해 WAP 서버는 클라이언트와의 SSL 연결을 종료하고 NDES 서비스로의 새 SSL 연결을 생성할 수 있습니다.  
 

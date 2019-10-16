@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0d4bf6a52fd860695433e0020e9ec7390f98eca6
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724297"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314639"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 템플릿을 사용하여 Microsoft Intune에서 그룹 정책 설정 구성
 
@@ -38,7 +38,7 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
 
 - 이러한 설정 중 일부는 Windows 10 버전 1703(RS2)부터 사용할 수 있습니다. Windows 버전에 따라 지원되지 않는 설정도 있습니다. 최상의 환경을 위해 Windows 10 Enterprise 버전 1903(19H1) 이상을 사용하는 것이 좋습니다.
 
-- Windows 설정에서는 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)를 사용합니다. CSP는 Home, Professional, Enterprise 등과 같은 다양한 Windows 버전에서 작동합니다. CSP가 특정 버전에서 작동하는지 확인하려면 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)로 이동합니다.
+- Windows 설정에서는 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies)를 사용합니다. CSP는 Home, Professional, Enterprise 등과 같은 다양한 Windows 버전에서 작동합니다. CSP가 특정 버전에서 작동하는지 확인하려면 [Windows 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies)로 이동합니다.
 
 ## <a name="create-a-template"></a>템플릿 만들기
 

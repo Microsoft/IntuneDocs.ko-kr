@@ -1,5 +1,6 @@
 ---
 title: 개인 데이터 감사, 내보내기 또는 삭제
+titleSuffix: Microsoft Intune
 description: 개인 데이터를 감사, 내보내기 또는 삭제하는 방법에 대해 알아봅니다.
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb30e8e07d71b72e337a8c2b27b3ed751c9d03e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 74428abf8141c648b5b81bba3177cc89a3cb01d2
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722009"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306824"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune에서 개인 데이터 감사, 내보내기 또는 삭제
 

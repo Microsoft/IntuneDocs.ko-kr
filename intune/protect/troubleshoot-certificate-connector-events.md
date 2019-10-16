@@ -1,5 +1,6 @@
 ---
 title: Microsoft Intune Certificate Connector 및 이벤트 ID 문제 해결 | Microsoft Docs
+titleSuffix: Microsoft Intune
 description: 이벤트 ID 및 설명을 검토하여 Microsoft Intune Certificate Connector 문제를 해결하고 Intune 커넥터 서비스의 진단 코드를 검토합니다.
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d798f22ee4e0f11f46626eec01ad3b739d61467
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721762"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306715"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Intune Certificate Connector 이벤트 및 진단 코드
 

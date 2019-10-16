@@ -1,5 +1,6 @@
 ---
 title: 개인 데이터 보기 및 수정
+titleSuffix: Microsoft Intune
 description: 개인 데이터를 보고 수정하는 방법에 대해 알아봅니다.
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9261c451a7a5bdf5f718193adbfcb2389fa285a0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9b6ca291f55511be9e88b0ff898d9383691542bf
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727924"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310894"
 ---
 # <a name="view-and-correct-personal-data"></a>개인 데이터 보기 및 수정
 
@@ -43,7 +44,7 @@ Microsoft는 엄격한 제어를 통해 고객 데이터에 대한 액세스를 
 
 RBAC(역할 기반 관리 제어)를 사용하여 최종 사용자 개인 데이터에 대한 액세스를 보호하고 제어할 수 있습니다. 자세한 내용은 [Microsoft Intune과 RBAC](../fundamentals/role-based-access-control.md)를 참조하세요.
 
-온라인 서비스 사용 약관 및 [Microsoft Online Services 개인정보처리방침](http://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409)을 읽으면 Microsoft 데이터 방침에 대해 자세히 알아볼 수 있습니다. 
+온라인 서비스 사용 약관 및 [Microsoft Online Services 개인정보처리방침](https://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409)을 읽으면 Microsoft 데이터 방침에 대해 자세히 알아볼 수 있습니다. 
 
 ## <a name="correct-end-user-personal-data"></a>최종 사용자 개인 데이터 수정
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312aee3752525ab2898c6d4e4ea06da685d1cdec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728366"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379709"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune 디바이스의 기본 사용자 찾기
 
@@ -46,7 +46,7 @@ ms.locfileid: "71728366"
 
 Intune 디바이스에 할당된 기본 사용자가 없으면 회사 포털 앱에서 이 디바이스를 공유 디바이스로 감지합니다. 공유 디바이스는 디바이스 제목에 “공유” 레이블이 표시되므로 시각적으로 식별할 수 있습니다. 이 모드에서도 회사 포털을 사용하여 사용 가능한 앱을 요청하고 설치할 수는 있습니다. 그러나 셀프 서비스 작업(재설정/이름 바꾸기/사용 중지)은 사용할 수 없습니다.  
 
-공유 디바이스의 회사 포털에 표시하려면 사용 가능한 앱을 사용자 그룹에 할당해야 합니다. 이러한 앱은 IT 관리자가 구성한 방법에 따라 시스템 컨텍스트나 사용자 컨텍스트에 설치됩니다. 앱 컨텍스트에 대한 자세한 내용은 [Windows 10 디바이스에서 앱 설치](../apps/apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices)를 참조하세요. 이 기능을 사용하려면 회사 포털 10.3.4651.0 이상 버전이 필요합니다.
+공유 디바이스의 회사 포털에 표시하려면 사용 가능한 앱을 사용자 그룹에 할당해야 합니다. 이러한 앱은 IT 관리자가 구성한 방법에 따라 시스템 컨텍스트나 사용자 컨텍스트에 설치됩니다. 앱 컨텍스트에 대한 자세한 내용은 [Windows 10 디바이스에서 앱 설치](../apps/apps-windows-10-app-deploy.md)를 참조하세요. 이 기능을 사용하려면 회사 포털 10.3.4651.0 이상 버전이 필요합니다.
 
 
 ## <a name="who-is-assigned-as-the-primary-user"></a>누가 기본 사용자로 할당되나요?
