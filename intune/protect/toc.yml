@@ -210,7 +210,7 @@
     - name: 문제 해결
       items:
         - name: 정책 및 프로필 문제 해결
-          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?context=./context/pr-context.yml
+          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?toc=/intune/protect/toc.json&bc=/protect/breadcrumb/toc.json
         - name: 조건부 액세스 문제 해결
           href: troubleshoot-conditional-access.md
         - name: 인증서 커넥터 문제 해결
