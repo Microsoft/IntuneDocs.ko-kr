@@ -1,0 +1,39 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Enterprise Mobility + Security
+      tocHref: /enterprise-mobility-security/
+      topicHref: /enterprise-mobility-security/
+      items:
+        - name: Intune
+          tocHref: /intune/
+          topicHref: /intune/
+          items:
+            - name: 교육용 Intune
+              tocHref: /intune-education/
+              topicHref: /intune-education/
+            - name: Intune 사용자 도움말
+              tocHref: /intune-user-help/
+              topicHref: /intune-user-help/
+            - name: 앱
+              tocHref: /intune/apps/
+              topicHref: /intune/apps/
+            - name: 기본 항목
+              tocHref: /intune/fundamentals/
+              topicHref: /intune/fundamentals/
+            - name: 등록
+              tocHref: /intune/enrollment/
+              topicHref: /intune/enrollment/
+            - name: 원격 작업
+              tocHref: /intune/remote-actions/
+              topicHref: /intune/remote-actions/
+            - name: 구성
+              tocHref: /intune/configuration/
+              topicHref: /intune/configuration/
+            - name: 보호
+              tocHref: /intune/protect/
+              topicHref: /intune/protect/
+            - name: Developer
+              tocHref: /intune/developer/
+              topicHref: /intune/developer/
