@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c535dbd91605a41fdc1c526ecd8ff9d9fc9e2448
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733675"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490978"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -203,9 +204,9 @@ macOS 터미널을 열고 다음 명령을 실행합니다.
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| 앱 래핑 도구에 사용 가능한 명령줄 속성에 대한 자세한 사용법 정보를 표시합니다. |
-|**-aa**|(옵션) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` (예: `login.windows.net/common` |
+|**-aa**|(선택 사항) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` 예: `login.windows.net/common` |
 |**-ac**|(선택 사항) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` 클라이언트 ID 필드의 guid는 앱 등록 블레이드의 앱 목록에서 가져온 guid입니다. |
-|**-ar**|(선택 사항) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>`은 앱 등록에 구성 된 리디렉션 URI입니다. 일반적으로이는 조정 된 인증 후 Microsoft Authenticator 앱이 반환 하는 응용 프로그램의 URL 프로토콜입니다. |
+|**-ar**|(선택 사항) 앱 등록에 구성 된 리디렉션 URI를 `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` 합니다. 일반적으로이는 조정 된 인증 후 Microsoft Authenticator 앱이 반환 하는 응용 프로그램의 URL 프로토콜입니다. |
 |**-v**| (선택 사항) 자세한 정보 메시지를 콘솔에 출력합니다. 오류를 디버깅하려면 이 플래그를 사용하는 것이 좋습니다. |
 |**-e**| (선택 사항) 이 플래그를 사용하여 앱 래핑 도구에서 앱을 처리할 때 누락된 자격을 제거하도록 합니다. 자세한 내용은 [앱 자격 설정](#setting-app-entitlements)을 참조하세요.|
 |**-xe**| (선택 사항) 앱의 iOS 확장 및 iOS 확장을 사용하기 위해 필요한 자격에 대한 정보를 인쇄합니다. 자세한 내용은 [앱 자격 설정](#setting-app-entitlements)을 참조하세요. |

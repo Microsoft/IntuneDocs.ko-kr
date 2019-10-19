@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d31fa30d784f14eeef6f33d2523909c1391f34
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1ea74904657ec5457454e4371fb956648c74c422
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735521"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504802"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Windows PC에 대한 하드웨어 및 소프트웨어 인벤토리 보기
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. 모바일 장치로 등록 된 Windows Pc의 인벤토리를 보려는 경우 [Intune에서 장치 세부 정보 보기](../remote-actions/device-inventory.md)를 참조 하세요.

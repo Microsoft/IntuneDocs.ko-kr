@@ -6,21 +6,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
+ms.reviewer: maholdaa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d341aeace950f62ae699aa7760a65c0fd2f74fa
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4a9bd1691b7943f02c9577e962fb1bcd5d9cf40a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734039"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585327"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune에서 Android를 실행하는 디바이스의 Wi-Fi 설정 추가
 
@@ -38,14 +40,12 @@ ms.locfileid: "71734039"
 
 - **Wi-Fi 유형**: **기본**을 선택합니다.
 - **SSID**: 장치를 연결 하는 무선 네트워크의 실제 이름인 **서비스 집합 식별자**를 입력 합니다. 그러나 사용자에게는 연결을 선택할 때 구성한 **네트워크 이름**만 표시됩니다.
-- **자동으로 연결**: **사용**을 선택하면 디바이스가 범위 내에 있을 때 이 네트워크에 자동으로 연결합니다. **사용 안 함**을 선택하면 디바이스가 자동으로 연결되지 않습니다.
 - **숨겨진 네트워크**: **사용**을 선택하면 이 네트워크가 디바이스의 사용 가능한 네트워크 목록에 숨겨집니다. SSID는 브로드캐스트되지 않습니다. **사용 안 함**을 선택하면 이 네트워크가 디바이스의 사용 가능한 네트워크 목록에 표시됩니다.
 
 ## <a name="enterprise"></a>Enterprise
 
 - **Wi-Fi 유형**: **엔터프라이즈**를 선택합니다.
 - **SSID**: 장치를 연결 하는 무선 네트워크의 실제 이름인 **서비스 집합 식별자**를 입력 합니다. 그러나 사용자에게는 연결을 선택할 때 구성한 **네트워크 이름**만 표시됩니다.
-- **자동으로 연결**: **사용**을 선택하면 디바이스가 범위 내에 있을 때 이 네트워크에 자동으로 연결합니다. **사용 안 함**을 선택하면 디바이스가 자동으로 연결되지 않습니다.
 - **숨겨진 네트워크**: **사용**을 선택하면 이 네트워크가 디바이스의 사용 가능한 네트워크 목록에 숨겨집니다. SSID는 브로드캐스트되지 않습니다. **사용 안 함**을 선택하면 이 네트워크가 디바이스의 사용 가능한 네트워크 목록에 표시됩니다.
 - **EAP 유형**: 보안 무선 연결을 인증하는 데 사용되는 EAP(확장할 수 있는 인증 프로토콜) 유형을 선택합니다. 옵션은 다음과 같습니다. 
 

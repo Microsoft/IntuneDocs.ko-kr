@@ -9,20 +9,21 @@ manager: dougeby
 ms.date: 1/4/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
-ms.assetid: ''
+ms.assetid: 809d9d76-20f8-4329-9e18-cd7d4946a9af
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f74ed8586bcfca21ea7434ec1c6ad045c8bc1bbd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9de5d1550c860d9b160203b47b883550ea4db90e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735560"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504938"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure에서 Intune 기능은 어디에 있나요?
 Intune 기능을 Azure Portal로 이동하면서 일부 작업을 더 논리적으로 구성할 수 있게 되었습니다. 하지만 개선 작업을 진행할 때마다 항상 새 구성을 학습하는 비용이 발생하게 됩니다. 이 참조 가이드는 클래식 포털의 Intune에 완전히 익숙하고 Azure Portal의 Intune에서 작업을 수행하는 방법을 궁금해하는 사용자를 위한 것입니다. 찾고 있는 기능이 이 문서에서 다루어지지 않은 경우 Microsoft에서 문서를 업데이트할 수 있도록 문서 하단에 의견을 남겨주세요.

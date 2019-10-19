@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546030"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501888"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android 디바이스에서 관리되는 앱 사용
 관리되는 앱은 조직의 보안 요구 사항을 충족시키고 회사 및 학교 데이터를 보호하도록 구성됩니다. 이러한 앱은 디바이스에서 자동으로 설치 또는 사용할 수 있습니다. 
@@ -52,18 +53,18 @@ ms.locfileid: "67546030"
 - Microsoft Word, Excel 및 PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>관리되는 앱을 가져오려면 어떻게 하나요?
-관리 되는 앱을 다운로드 하는 방법은 세 가지가 있습니다.  
+관리 되는 앱을 가져오는 방법에는 세 가지가 있습니다.  
 * 조직은 등록 시 자동으로 앱을 디바이스에 설치합니다.  
 * Google Play 스토어에서 앱을 설치한 다음, 회사 또는 학교 계정으로 앱에 로그인합니다.    
-* 조직은 회사 포털에서 관리되는 앱을 사용할 수 있도록 합니다. 회사 포털 앱 또는 웹 사이트로 이동하여 사용 가능한 앱을 검색하고 보고 설치합니다. 이러한 앱에 대 한 자세한 내용은 다음 섹션을 참조 하세요 [사용할 수 있는 앱](#available-apps)합니다.  
+* 조직은 회사 포털에서 관리되는 앱을 사용할 수 있도록 합니다. 회사 포털 앱 또는 웹 사이트로 이동하여 사용 가능한 앱을 검색하고 보고 설치합니다. 이러한 앱에 대 한 자세한 내용은 다음 섹션인 [사용 가능한 앱](#available-apps)을 참조 하세요.  
 
 ### <a name="available-apps"></a>사용 가능한 앱   
- 조직에 적절 하 고 유용 하기 직장 또는 학교 및 사용할 수 있도록 하면 회사 포털에서 앱을 선택할 수 있습니다.  
+ 조직에서는 회사 또는 학교에서 적절 하 고 유용한 앱을 선택 하 여 회사 포털에서 사용할 수 있게 만들 수 있습니다.  
 
  사용자는 디바이스 유형에 따라 앱을 사용할 수 있게 됩니다. 예를 들어 사용자가 Android용 회사 포털 앱을 사용하는 경우 iOS 앱이 아닌 Android 앱에 액세스하게 됩니다.   
 
 ## <a name="request-an-app-for-work-or-school"></a>회사 또는 학교용 앱 요청   
- 사용자가 필요한 앱이 있지만 회사 포털에 없는 경우 이를 요청할 수 있습니다. 에 대 한 연락처 세부 정보를 찾을 하 **기술 지원팀** 하거나 앱의 **IT 담당자** 탭 합니다. 이런 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.   
+ 사용자가 필요한 앱이 있지만 회사 포털에 없는 경우 이를 요청할 수 있습니다. 앱의 **IT 담당자** 탭에서 **기술 지원팀** 의 연락처 정보를 찾을 수 있습니다. 이런 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)에서 찾을 수 있습니다.   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>회사 지원팀이 앱에서 관리할 수 있는 항목은 무엇인가요?  
 다음 목록은 앱 내에서 회사 지원팀에서 관리할 수 있는 설정을 설명합니다. 이 설정은 디바이스에서 회사 또는 학교 데이터를 보고 액세스하고 사용하는 방식에 영향을 줍니다.

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac2ec4224bead13455752488f6ea34af6e012bc8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5f473e376278b454ca2d173c7c147137226a9fc9
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733051"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601502"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 iOS 설정
 
@@ -73,7 +74,7 @@ Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를
 ### <a name="password"></a>암호
 
 > [!NOTE]
-> 준수 또는 구성 정책을 iOS 디바이스에 적용하면 사용자에게 15분마다 암호를 설정하라는 메시지가 표시됩니다. 사용자가 암호를 설정할 때까지 계속 메시지가 표시됩니다.
+> 준수 또는 구성 정책을 iOS 디바이스에 적용하면 사용자에게 15분마다 암호를 설정하라는 메시지가 표시됩니다. 사용자가 암호를 설정할 때까지 계속 메시지가 표시됩니다. IOS 장치에 대 한 암호를 설정 하면 암호화 프로세스가 자동으로 시작 됩니다. 암호를 사용 하지 않도록 설정할 때까지 장치는 암호화 된 상태로 유지 됩니다.
 
 - **모바일 디바이스의 잠금을 해제하는 데 암호 필요**: **필요**로 설정하면 사용자가 암호를 입력해야 디바이스에 액세스할 수 있습니다. 암호를 사용하는 iOS 디바이스는 암호화됩니다.
 - **단순 암호**: **차단**으로 설정하면 사용자가 **1234** 또는 **1111** 같은 단순 암호를 만들 수 없습니다. **구성되지 않음**으로 설정하면 사용자가 **1234** 또는 **1111** 같은 암호를 만들 수 있습니다.

@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
 searchScope:
@@ -19,12 +20,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01edd6fa365a755c87f21ea4b90f348c16b682d9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 955b750ae931d3066e1a98a9baa7c989f2142e1b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841133"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500230"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Windows 디바이스를 업데이트해야 함
 
@@ -37,6 +38,6 @@ Windows를 실행하는 컴퓨터의 경우 **운영 체제**를 검색하고 �
 > [!Note]
 > Windows 8.1 이전 운영 체제가 설치된 컴퓨터를 업데이트하려면 **Windows 업데이트**를 검색합니다.
 
-Windows 10 및 Windows 8.1의 경우 __검색 창__에 __Windows 버전__을 입력합니다. __Can I help?__(도와드릴까요?)에서 __Windows 버전__을 선택합니다. 버전 번호가 표시됩니다. 이 번호는 __10.0.14393.447__과 같이 표시됩니다.
+Windows 10 및 Windows 8.1의 경우 __검색 창__에 __Windows 버전__을 입력합니다. __Can I help?__ (도와드릴까요?)에서 __Windows 버전__을 선택합니다. 버전 번호가 표시됩니다. 이 번호는 __10.0.14393.447__과 같이 표시됩니다.
 
 여전히 도움이 필요하세요? 회사 지원 부서에 문의하세요. 연락처 정보는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 참조하세요.

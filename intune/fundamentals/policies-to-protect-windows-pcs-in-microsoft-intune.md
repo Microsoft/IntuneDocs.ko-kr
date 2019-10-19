@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/28/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4ddb5708b6ea43a1054ca07893eb8a09b5ff29
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 306c67e2744c38cfc8214d1c8dee2732cd0bd1ce
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736210"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505007"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>정책을 사용하여 Intune 클라이언트 소프트웨어를 실행하는 Windows PC를 보호합니다.
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune은 [Intune 클라이언트 소프트웨어](../manage-windows-pcs-with-microsoft-intune.md)에서 관리하는 Windows PC의 보안을 확보하는 데 사용할 수 있는 세 가지 정책을 제공합니다.
 

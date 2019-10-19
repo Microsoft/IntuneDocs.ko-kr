@@ -9,6 +9,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b55368f5c512ff3efd4059d420717321729450ee
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: c81c13d5da8eac1616ab7274b484befaa5685511
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884070"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502167"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>회사 포털 웹 사이트에서 디바이스 원격 잠금
 
@@ -38,7 +39,7 @@ ms.locfileid: "67884070"
 * Windows 10 Mobile(디바이스에 암호가 이미 설정된 경우)
 * Windows Phone 8.1(디바이스에 암호가 이미 설정된 경우)  
 
-1. [회사 포털 웹 사이트](https://portal.manage.microsoft.com)에서 __메뉴__ 단추 > __장치__를 선택합니다.  
+1. [회사 포털 웹 사이트](https://portal.manage.microsoft.com)에서 __메뉴__ 단추 &gt; __디바이스__를 선택합니다.  
 
 2. 잠그려는 디바이스를 선택합니다.  
 

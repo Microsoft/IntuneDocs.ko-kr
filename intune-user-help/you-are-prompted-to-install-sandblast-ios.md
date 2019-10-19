@@ -9,6 +9,7 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 474fe9c8-558a-4348-ac9d-f87c79f150c4
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d4f957af4c05a66de4ce4ae7c233eda297153f8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 7191f16ce367372429df259cef55e58b6e4423de
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527597"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501531"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>iOS 디바이스에 SandBlast Mobile Protect를 설치해야 함
 

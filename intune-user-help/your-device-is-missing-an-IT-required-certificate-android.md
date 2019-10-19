@@ -9,6 +9,7 @@ ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 25ec84946aec9562aedce12b4199269f8de06f76
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862133"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500023"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>조직에 필요한 누락 된 인증서 설치  
 
@@ -43,8 +44,8 @@ ms.locfileid: "68862133"
 
 1. 회사 포털 앱에서 오른쪽 모서리로 이동 하 여 메뉴를 선택 합니다.  
 2. **설정**을 선택합니다.  
-3. 브라우저 액세스 **** 사용 옆에서 사용 **** 을 선택 합니다.  
-4. 장치 관리자 화면에서 활성화 **** 를 선택 합니다. 
+3. **브라우저 액세스 사용** 옆에서 **사용**을 선택 합니다.  
+4. 장치 관리자 화면에서 **활성화**를 선택 합니다. 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>웹 검색을 통해 누락 된 인증서 식별 및 다운로드
 이러한 단계를 완료 하 여 장치에서 인증서를 수동으로 식별 하 고 설치 합니다.  

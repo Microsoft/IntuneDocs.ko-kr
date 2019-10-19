@@ -9,6 +9,7 @@ ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c5accdf3699770444b7aafeb39d431755f9d3ba9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491037"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501825"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Intune 회사 포털에서 Windows 디바이스 사용
 
@@ -54,7 +55,7 @@ ms.locfileid: "61491037"
 
 ## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>디바이스를 관리에 등록한 후 수행할 수 있는 작업
 - [수동으로 디바이스 동기화](sync-your-device-manually-windows.md)
-- [Microsoft 사용 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-windows.md)
+- [Microsoft 사용량 현황 데이터 수집 해제](turn-off-microsoft-usage-data-collection-windows.md)
 - [분실 또는 도난당한 디바이스에서 데이터 지우기](reset-erase-your-device-cpwebsite.md)
 - [회사 포털에서 디바이스를 초기화하면 어떻게 되나요?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 - [관리에서 내 디바이스 제거](unenroll-your-device-from-intune-windows.md)

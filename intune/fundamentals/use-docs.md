@@ -4,18 +4,19 @@ titleSuffix: Microsoft Intune
 description: Intune 문서를 검색 하 고, 문서 피드백을 제공 하 고, 문서에 참여 하는 방법을 알아봅니다.
 ms.date: 09/15/2019
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.topic: conceptual
 ms.assetid: e6e44225-cc9e-47c2-913b-1e629ba9a71e
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fa3529866b786e75892b495102ca5cab46b09a5
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735534"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504807"
 ---
 # <a name="using-the-intune-docs"></a>Intune 문서 사용
 

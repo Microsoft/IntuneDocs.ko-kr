@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3a5a5aa4d30dcac0f954057f0cc51ffde6a950
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734299"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506587"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune에서 메일 프로필 관련 일반적인 문제와 해결 방법
 
@@ -65,7 +66,7 @@ Intune 또는 Office 365 MDM에 등록 하기 전에 사용자가 전자 메일 
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 구성** > **프로필**을 선택합니다.
-3. 전자 메일 프로필 > **속성** > **설정을**선택 합니다.
+3. 전자 메일 프로필 > **속성**  > **설정**을 선택 합니다.
 4. **타사 응용 프로그램에서 전자 메일을 보낼 수 있음** 설정을 **사용**으로 설정 합니다.
 
 ### <a name="configuration-manager-hybrid"></a>Configuration Manager 하이브리드

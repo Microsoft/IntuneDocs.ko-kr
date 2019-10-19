@@ -5,27 +5,32 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2018
+ms.date: 10/15/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f481c17e6cb1285147c7f6361bfff73801b2bba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736132"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510108"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune 소프트웨어 클라이언트를 통해 Windows PC를 컴퓨터로 관리
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
+
+> [!WARNING]
+> Microsoft는 [2020년 1월 14일부로 Windows 7 지원을 종료한다](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)고 발표했습니다. 이 날짜에 Intune도 Windows 7을 실행하는 디바이스에 대한 지원을 만료합니다. 모든 서비스 또는 지원 중단을 방지하려면 Windows 10으로 이동하는 것이 가장 좋습니다.
+> 
+> 자세한 내용은 [Intune의 변경 계획: Windows 7 지원 종료](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-)를 참조 하세요.
 
 > [!NOTE]
 > Microsoft Intune을 사용하여 Windows PC를 [MDM(모바일 디바이스 관리)가 있는 모바일 디바이스](../enrollment/windows-enroll.md)로 관리하거나, 아래 설명된 대로 Intune 소프트웨어 클라이언트가 있는 컴퓨터로 관리할 수 있습니다. 그러나 고객은 가능한 한 [MDM 관리 솔루션을 사용](../enrollment/windows-enroll.md)하는 것이 좋습니다. 자세한 내용은 [Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교](pc-management-comparison.md)를 참조하세요. 
@@ -35,7 +40,6 @@ Intune은 조직에서 모바일 디바이스를 관리할 수 있는 포괄적 
 Intune 소프트웨어 클라이언트는 모바일 디바이스로 관리할 수 없는 Windows 7 등의 레거시 운영 체제를 실행하는 Windows PC에 가장 적합합니다. Intune 소프트웨어 클라이언트에는 클라우드에서 PC를 관리하기 위한 그룹 정책 같은 관리 기능이 사용됩니다.
 
 Intune에서는 소프트웨어 클라이언트를 사용하여 최대 7,000대의 Windows PC를 컴퓨터로 관리하도록 지원합니다. 대규모 배포의 경우 Windows 10 PC를 모바일 디바이스로 관리합니다. Intune의 각 릴리스 및 Windows 10의 업데이트에는 모바일 디바이스 관리 아키텍처에 따른 관리 기능이 포함됩니다. 조직을 모바일 디바이스로 관리되는 Windows 10으로 이동하는 것이 좋습니다.
-
 
 > [!NOTE]
 > Windows 8.1 이상 디바이스는 Intune 클라이언트 소프트웨어를 사용하여 PC로 관리하거나 모바일 디바이스로 관리할 수 있습니다. 두 가지 방법을 같은 디바이스에서 사용할 수는 없습니다. Intune 클라이언트 소프트웨어를 사용하여 PC를 관리하도록 결정하기 전에 신중하게 고려하세요. 이 항목은 Intune 클라이언트 소프트웨어를 실행하여 디바이스를 PC로 관리하는 경우에만 적용됩니다.
@@ -60,9 +64,6 @@ Intune에서는 소프트웨어 클라이언트를 사용하여 최대 7,000대�
 |관리자 권한|클라이언트 소프트웨어를 설치하는 계정에는 해당 디바이스에 대한 로컬 관리자 권한이 있어야 합니다.|
 |Windows Installer 3.1|PC에 최소 Windows Installer 3.1이 설치되어 있어야 합니다.<br /><br />PC의 Windows Installer 버전을 확인하려면<br /><br />  PC에서 **%windir%\System32\msiexec.exe**를 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.<br /><br />Windows Installer의 최신 버전은 Microsoft Developer Network 웹 사이트의 [Windows Installer Redistributables(Windows Installer 재배포 가능 구성 요소)](http://go.microsoft.com/fwlink/?LinkID=234258) 에서 다운로드할 수 있습니다.|
 |호환되지 않는 클라이언트 소프트웨어를 제거합니다.|Intune 클라이언트 소프트웨어를 설치하기 전에 해당 PC에서 Configuration Manager, Operations Manager 및 Service Manager 클라이언트 소프트웨어를 모두 제거하세요.|
-
-> [!WARNING]
-> Microsoft는 [2020년 1월 14일부로 Windows 7 지원을 종료한다](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)고 발표했습니다. 이 날짜에 Intune도 Windows 7을 실행하는 디바이스에 대한 지원을 만료합니다. 모든 서비스 또는 지원 중단을 방지하려면 Windows 10으로 이동하는 것이 가장 좋습니다. 
 
 ## <a name="deploying-the-intune-software-client"></a>Intune 소프트웨어 클라이언트 배포
 Intune 관리자는 Intune 소프트웨어 클라이언트를 다양한 방법으로 사용자에게 제공할 수 있습니다. 자세한 내용은 [Windows PC에 Intune 소프트웨어 클라이언트 설치](../install-the-windows-pc-client-with-microsoft-intune.md)를 참조하세요.

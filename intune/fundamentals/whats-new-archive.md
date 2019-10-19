@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 7/8/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9ba01d60-4a03-4e3e-9aba-8be905c0054c
@@ -18,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1af106227442e91121f6c8c653c261bd677f3a9f
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 327e0d56400a2aac545d1bae92279e242aa2006a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814186"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585233"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune의 새로운 기능 - 지난 달
 
@@ -68,7 +69,7 @@ Android 엔터프라이즈, 다중 앱, 키오스크 모드 디바이스에서 �
 키오스크 설정을 확인하려면 [Android Enterprise 디바이스 제한 사항](../configuration/device-restrictions-android-for-work.md)을 참조하세요.
 
 #### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>앱 보호 정책 할당 저장 및 적용 <!-- 3104570 -->
-이제 [앱 보호 정책 할당](../apps/app-protection-policies.md#deploy-a-policy-to-users)을 더 효율적으로 제어할 수 있습니다. ‘할당’을 선택하여 정책 할당을 설정하거나 편집할 경우 변경을 적용하기 전에 구성을 **저장**해야 합니다.  포함 또는 제외 목록의 변경 내용을 저장하지 않고 모든 변경 내용을 지우려면 **취소**를 사용합니다.  저장 또는 취소를 선택하도록 요구하여 의도한 사용자에게만 앱 보호 정책을 할당합니다.
+이제 [앱 보호 정책 할당](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)을 더 효율적으로 제어할 수 있습니다. ‘할당’을 선택하여 정책 할당을 설정하거나 편집할 경우 변경을 적용하기 전에 구성을 **저장**해야 합니다.  포함 또는 제외 목록의 변경 내용을 저장하지 않고 모든 변경 내용을 지우려면 **취소**를 사용합니다.  저장 또는 취소를 선택하도록 요구하여 의도한 사용자에게만 앱 보호 정책을 할당합니다.
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Windows 10 이상에 대한 새 Microsoft Edge 브라우저 설정 <!-- 3174639 -->
 이 업데이트에는 디바이스에서 Microsoft Edge 브라우저를 제어하고 관리하는 데 도움이 되는 새 설정이 포함됩니다. 이러한 설정 목록은 [Windows 10(이상)에 대한 디바이스 제한](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)을 참조하세요.

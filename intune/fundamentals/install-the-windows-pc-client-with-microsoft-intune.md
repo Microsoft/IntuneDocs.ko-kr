@@ -7,24 +7,24 @@ ms.author: erikje
 ms.date: 07/13/2017
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
-ms.assetid: ''
+ms.assetid: 99dcf916-d80f-42c5-863b-a4595e1ec67a
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45a88e4cc1f84c157b5ece1204bddfb7ebe01b57
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1484aa2cf9ab665796b6c02e060d2d7c4cb4fcd1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736093"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502794"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC에 Intune 소프트웨어 클라이언트 설치
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > Microsoft Intune을 사용하여 Windows PC를 [MDM(모바일 디바이스 관리)가 있는 모바일 디바이스](../enrollment/windows-enroll.md)로 관리하거나, 아래 설명된 대로 Intune 소프트웨어 클라이언트가 있는 컴퓨터로 관리할 수 있습니다. 그러나 고객은 가능한 한 [MDM 관리 솔루션을 사용](../enrollment/windows-enroll.md)하는 것이 좋습니다. 자세한 내용은 [Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교](pc-management-comparison.md)를 참조하세요. 

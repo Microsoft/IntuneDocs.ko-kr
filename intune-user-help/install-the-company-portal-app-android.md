@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe6cd46f6a85204d5859993a69ac5bf5b253e048
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 0e4ed29d6a2da79b7bfd3502ebf8ce53259f1ae6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546336"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506078"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Android용 회사 포털 앱 설치
 
-회사 포털은 회사 또는 학교 앱, 전자 메일 및 인터넷 연결에 액세스할 수 있는 앱입니다. 이 앱은 디바이스를 보호하여 조직의 정보를 안전하게 유지합니다. 예를 들어 회사 앱을 최신 상태로 유지하거나 일정 시간 후에 디바이스가 자동으로 잠기도록 할 수 있습니다. 회사 포털 및 장치 관리에서 해당 파트의 기능에 대 한 자세한 내용은 참조 하세요 [Android 장치를 등록 하는 이유에](why-enroll-android-device.md)합니다.  
+회사 포털은 회사 또는 학교 앱, 전자 메일 및 인터넷 연결에 액세스할 수 있는 앱입니다. 이 앱은 디바이스를 보호하여 조직의 정보를 안전하게 유지합니다. 예를 들어 회사 앱을 최신 상태로 유지하거나 일정 시간 후에 디바이스가 자동으로 잠기도록 할 수 있습니다. 장치 관리에서 회사 포털의 기능 및 해당 기능에 대해 자세히 알아보려면 [Android 장치를 등록 하는 이유](why-enroll-android-device.md)를 참조 하세요.  
 
 1. **홈** > **Play 스토어**를 탭합니다.
 

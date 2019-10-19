@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 217b93fcd78010428ce427a755e6c0c20f4372df
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ab16d79549a7fe7b0249c0c4af79ed56817ecec
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736275"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510055"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 조직은 Microsoft Intune을 사용하여 Windows PC를 모바일 디바이스로 관리할 수도 있고 컴퓨터로 관리할 수도 있습니다. 모바일 디바이스로 관리하는 경우에는 MDM(모바일 디바이스 관리)을 사용하고, 컴퓨터로 관리하는 경우에는 Intune 소프트웨어 클라이언트를 사용합니다.  고객은 가능한 경우 항상 MDM 관리 솔루션을 사용하는 것이 좋습니다. 아래 차트에는 이러한 옵션 간의 차이점을 보다 명확하게 파악할 수 있도록 두 관리 옵션을 비교한 내용이 나와 있습니다.
 

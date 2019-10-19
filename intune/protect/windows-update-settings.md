@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aaa964151477896c236e504ec9b378cf580e838
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736379"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584459"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune에 대한 Windows 업데이트 설정  
 
@@ -216,45 +217,9 @@ Intune에서 Windows 10 업데이트 링에 대한 설정을 구성하면, Windo
   - **다시 시작 경고를 제외 하 고 모든 알림을 해제 합니다.**
   - **다시 시작 경고를 포함 하 여 모든 알림 해제**  
 
-- **사용자가 다시 시작할 수 있도록 허용(개입형 다시 시작)**  
-  **기본값**: 구성되지 않음  
-  > [!IMPORTANT]  
-  > *개입 된 다시 시작* 설정은 더 이상 사용 하지 않는 것이 좋습니다. 대신, 새 *최종 기한* 설정을 사용 하 여 *개입 된 다시 시작* 설정을 대체 합니다. Intune은 향후 업데이트에서 [ *개입 된 다시 시작* 설정에 대 한 지원을 사용 중단](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) 합니다.
-
-  개입 된 다시 시작은 Windows 10 버전 1803 이상에서 지원 됩니다. 
-
-  > [!NOTE]  
-  > Windows 10 버전 1809에서는 기능 및 품질 업데이트에 적용할 별도의 설정을 사용할 수 있는 개입형 다시 시작 설정을 추가로 소개합니다. 그러나 Intune에서 관리되는 설정은 다른 업데이트 유형에 별도로 적용되지 않습니다. 대신, Intune은 기능 및 품질 업데이트에 둘 다 동일한 값을 적용합니다.  
-  
-  - **구성되지 않음**  
-  - **필수** - Windows 10 업데이트에 개입형 다시 시작 옵션을 사용하려면 *필수*로 설정합니다. 이 옵션은 다시 시작이 필요한 업데이트를 설치한 후 디바이스를 다시 시작할 시기를 관리하는 데 도움이 되도록 디바이스 사용자가 참여하도록 합니다.  
-
-  이 옵션에 대한 자세한 내용은 업데이트 배포에 대한 Windows 10 설명서에서 [개입형 다시 시작](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart)을 참조하세요.  
-
-  다음 설정은 개입형 다시 시작 작업이 발생하는 시기를 제어하는 데 사용됩니다.  
-
-  - **자동 다시 시작 후 사용자를 개입형 다시 시작으로 전환(일)**  
-    **기본값**: 구성 되지 않음 Windows 업데이트 CSP: [업데이트/EngagedRestartTransitionSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
-    
-    업데이트가 설치된 후 디바이스가 개입형 다시 시작 동작을 시작할 때까지 걸리는 기간을 **2**~**30**일 사이의 값으로 지정합니다. 구성된 기간(일) 후에 디바이스를 다시 시작할지 묻는 메시지가 사용자에게 표시됩니다.  
-
-  - **개입형 다시 시작 미리 알림 다시 알림(일)**  
-    **기본값**: 구성되지 않음    
-    Windows 업데이트 CSP: [업데이트/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
-    
-    다시 시작 프롬프트를 다시 알림 수 있는 기간에 대해 **1** 에서 **3** 사이의 값을 지정 합니다.  다시 알림 기간 후에 다시 시작 프롬프트가 다시 제공됩니다. 사용자는 설치 기한에 도달할 때까지 미리 알림을 계속 다시 알릴 수 있습니다.  
-
-  - **보류 중인 다시 시작에 대한 최종 기한 설정(일)**  
-    **기본값**: 구성되지 않음  
-    Windows 업데이트 CSP: [업데이트/EngagedRestartDeadline](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  
-    개입형 다시 시작 동작이 시작된 후 디바이스가 필요한 다시 시작을 적용하기 전에 대기할 최대 기간(일)을 **2**~**30** 사이의 값으로 지정합니다. 이 다시 시작은 작업을 저장할지 묻는 메시지를 사용자에게 표시합니다.
-
 - **최종 기한 설정 사용**  
   **기본값**: 구성되지 않음  
-  > [!IMPORTANT]  
-  > Intune에 대 한 8 월 업데이트부터, 사용 중인 다시 시작 설정을 대체 하는 다음과 같은 최종 기한 설정을 사용 하는 것이 좋습니다. Intune은 향후 Intune 업데이트에서 [ *개입 된 다시 시작* 설정을 지원 사용 중단](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) 합니다.  
-
+ 
   사용자가 최종 기한 설정을 사용할 수 있습니다.  
 
   - **구성되지 않음**
@@ -263,21 +228,21 @@ Intune에서 Windows 10 업데이트 링에 대한 설정을 구성하면, Windo
   *허용*으로 설정 하면 마감일에 대해 다음 설정을 구성할 수 있습니다.
 
   - **기능 업데이트 최종 기한**  
-    **기본값**: 7  
+    **기본값**: *구성되지 않음*  
     Windows 업데이트 CSP: [업데이트/ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
     장치에 기능 업데이트가 자동으로 설치 되기 전까지 남은 일 수를 지정 합니다 (2-30).
 
   - **품질 업데이트 최종 기한**  
-    **기본값**: 7  
+    **기본값**: *구성되지 않음*  
     Windows 업데이트 CSP: [업데이트/ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
     사용자가 장치에 자동으로 설치 하기 전까지 남은 일 수를 지정 합니다 (2-30).
 
   - **유예 기간**  
-    **기본값**: 2 Windows 업데이트 CSP: [업데이트/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **기본값**: *구성 되지 않음* Windows 업데이트 CSP: [업데이트/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 
-    다시 시작이 자동으로 발생할 때까지 마감일 이후의 최소 일 수를 지정 합니다 (0-7).
+    다시 시작이 자동으로 발생할 때까지 마감일 이후의 최소 일 수를 지정 합니다 (2-7).
 
   - **최종 기한 전 자동 다시 부팅**  
     **기본값**: 예 Windows 업데이트 CSP: [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
@@ -285,9 +250,6 @@ Intune에서 Windows 10 업데이트 링에 대한 설정을 구성하면, Windo
     최종 기한 전에 장치를 자동으로 다시 부팅 해야 하는지 여부를 지정 합니다.
     - **예**
     - **아니요**
-
-
-
 
 ### <a name="delivery-optimization-download-mode"></a>배달 최적화 다운로드 모드  
 

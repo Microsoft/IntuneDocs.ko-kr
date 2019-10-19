@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 2e427fe0889dcfb51ba5be322ed4db566cc29e9d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251577"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502475"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Windows 10 이상 설정
 

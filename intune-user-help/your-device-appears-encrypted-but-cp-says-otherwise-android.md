@@ -9,6 +9,7 @@ ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721178"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507670"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>장치가 암호화 되어 있지만 앱에는 그렇지 않음
 
@@ -31,7 +32,7 @@ ms.locfileid: "71721178"
 
 ## <a name="add-a-startup-pin"></a>시작 PIN 추가
 
-특정 Android 디바이스에서는 디바이스의 보안을 유지하기 위해 시작 PIN을 만들어야 합니다. 이 설정의 위치는 장치의 **설정** 앱에 배치 됩니다. 설정의 이름 및 위치는 다를 수 있습니다. 예를 들어 Samsung Galaxy S7에서 설정을 **보안 시작**이라고 합니다. 이를 사용 하도록 설정 하 고 암호를 만들려면 **설정** > **잠금 화면 및 보안** > **보안 시작**으로 이동 합니다.  
+특정 Android 디바이스에서는 디바이스의 보안을 유지하기 위해 시작 PIN을 만들어야 합니다. 이 설정의 위치는 장치의 **설정** 앱에 배치 됩니다. 설정의 이름 및 위치는 다를 수 있습니다. 예를 들어 Samsung Galaxy S7에서 설정을 **보안 시작**이라고 합니다. 이를 사용 하도록 설정 하 고 암호를 만들려면 **설정**  > **잠금 화면 및 보안**  > **보안 시작**으로 이동 합니다.  
 
 ## <a name="encrypt-the-entire-device"></a>전체 디바이스 암호화
 

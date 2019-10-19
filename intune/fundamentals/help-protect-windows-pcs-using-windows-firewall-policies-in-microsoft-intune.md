@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4de635066b2f054b9061f6944bc4010a56d54526
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c736c905045fd3afd40a12243986fbe69452ecd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735820"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502819"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune에서 Windows 방화벽 정책을 사용하여 Windows PC 보호
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > 이 항목의 정보는 Intune 소프트웨어 클라이언트를 사용하여 PC를 관리하는 Windows 데스크톱에만 적용됩니다. 모바일 장치로 등록 된 Windows Pc에 대 한 방화벽 설정을 관리 하려면 [Intune에서 endpoint protection 설정 추가](../protect/endpoint-protection-configure.md)를 참조 하세요.
@@ -43,7 +44,7 @@ Windows 방화벽 정책을 통해 관리 PC의 Windows 방화벽을 제어하�
 > [!NOTE]
 > Microsoft Intune 정책 및 그룹 정책이 PC의 동일한 설정을 관리하도록 구성된 경우 그룹 정책 설정이 Microsoft Intune 정책을 재정의합니다. Intune 정책과 그룹 정책 간의 충돌을 방지하는 방법에 대한 정보는 [GPO 및 Microsoft Intune 정책 충돌 해결](resolve-gpo-and-microsoft-intune-policy-conflicts.md)을 참조하세요.
 >
-> Windows Vista를 실행하는 컴퓨터에 Windows 방화벽 설정을 배포하려는 경우에는 먼저 컴퓨터에 [핫픽스 KB971800](http://support2.microsoft.com/kb/971800)을 설치해야 합니다.
+> Windows Vista를 실행하는 컴퓨터에 Windows 방화벽 설정을 배포하려는 경우에는 먼저 컴퓨터에 [핫픽스 KB971800](https://support2.microsoft.com/kb/971800)을 설치해야 합니다.
 
 > [!IMPORTANT]
 > Intune을 사용하여 Windows 방화벽을 관리하려면 다음 두 서비스가 관리할 컴퓨터에서 설정되어 있는지 확인하세요.
@@ -84,7 +85,7 @@ Windows 방화벽 정책을 배포한 후 **정책** 작업 영역의 **모든 �
 이러한 각 설정의 기본값은 가장 안전한 값인 **예**입니다.
 
 > [!IMPORTANT]
-> 서비스 팩이 설치되지 않은 Windows Vista를 실행 중인 관리 컴퓨터가 환경에 포함되어 있는 경우에는 Microsoft 기술 자료의 [문서 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 과 관련된 업데이트를 설치하거나 해당 컴퓨터에 배포된 정책에서 **들어오는 모든 연결 차단** 정책 설정을 사용하지 않도록 설정해야 합니다.
+> 서비스 팩이 설치되지 않은 Windows Vista를 실행 중인 관리 컴퓨터가 환경에 포함되어 있는 경우에는 Microsoft 기술 자료의 [문서 971800](https://go.microsoft.com/fwlink/?LinkId=188405) 과 관련된 업데이트를 설치하거나 해당 컴퓨터에 배포된 정책에서 **들어오는 모든 연결 차단** 정책 설정을 사용하지 않도록 설정해야 합니다.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Windows 방화벽이 새 프로그램을 차단할 때 사용자에게 알림
 

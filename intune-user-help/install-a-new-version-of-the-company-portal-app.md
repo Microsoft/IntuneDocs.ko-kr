@@ -9,6 +9,7 @@ ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: d2bdc4433e48fd77c12bfd5db706f8d226bf95a6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840967"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506047"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>회사 포털 앱을 업데이트하는 방법
 
@@ -44,13 +45,13 @@ ms.locfileid: "66840967"
 
 ## <a name="update-the-company-portal-app-on-your-macos-device"></a>macOS 디바이스에서 회사 포털 앱 업데이트
 
-사용 가능 해지면 이러한 업데이트를 자동으로 설치 하도록 회사 포털을 설정 합니다. 
+업데이트를 사용할 수 있게 되 면 자동으로 설치 하도록 회사 포털를 설정 합니다. 
 
-1. 회사 포털을 열고 이동할 **도움말**합니다. 
+1. 회사 포털를 열고 **도움말**로 이동 합니다. 
 2. **업데이트 확인**을 선택합니다. 
-3. Microsoft 자동 업데이트 화면에서 선택 **자동으로 다운로드 및 설치**합니다. 
+3. Microsoft 자동 업데이트 화면에서 **자동으로 다운로드 및 설치**를 선택 합니다. 
 
-사용 가능한 업데이트를 보려면 선택 **업데이트 확인**합니다.  
+사용 가능한 업데이트를 보려면 **업데이트 확인**을 선택 합니다.  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>Windows 디바이스에서 회사 포털 앱 업데이트
 업데이트가 사용 가능해질 경우 자동으로 가져오려면 Microsoft Store를 열고 **설정**으로 이동합니다. 그런 다음, **앱 업데이트**를 켭니다. 최근 업데이트 및 다운로드 큐에서 대기 중인 앱을 보려면 **다운로드 및 업데이트**로 이동합니다.  

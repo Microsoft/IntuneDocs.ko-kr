@@ -9,24 +9,24 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d144fbc7cbda903df547116e459925c25e7b79c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735391"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502663"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune에서 Windows PC 소프트웨어의 사용권 계약 관리
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune을 사용하여, Microsoft 볼륨 라이선스 계약을 통해 구매한 소프트웨어에 대한 사용권 계약 정보를 추가하고 관리할 수 있습니다. 다른 방법으로 구매한 Microsoft 소프트웨어 또는 타사 소프트웨어에 대한 사용권 계약 정보도 추가하고 관리할 수 있습니다. 이 정보를 논리 그룹으로 구성할 수 있습니다.
 

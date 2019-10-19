@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa4dbfb7c13d767df41655b391767fc7aa13d914
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817588"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508867"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Intune Exchange Connector에 대 한 일반적인 오류 해결
 
@@ -76,7 +77,7 @@ Microsoft Intune Exchange Connector를 구성 하려고 하면 다음과 같은 
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-이 오류는 프록시 서버가 인터넷에 연결 하는 데 사용 되 고 Intune 서비스에 대 한 트래픽을 차단 하는 경우에 발생할 수 있습니다. 프록시가 사용 중인지 확인 하려면 **제어판** > **인터넷 옵션**으로 이동 하 고 **연결** 탭을 선택한 다음 **LAN 설정**을 클릭 합니다.
+이 오류는 프록시 서버가 인터넷에 연결 하는 데 사용 되 고 Intune 서비스에 대 한 트래픽을 차단 하는 경우에 발생할 수 있습니다. 프록시가 사용 중인지 확인 하려면 **제어판**  > **인터넷 옵션**으로 이동 하 고 **연결** 탭을 선택한 다음 **LAN 설정**을 클릭 합니다.
 
 **해결 방법**:  
 
@@ -131,7 +132,7 @@ Intune Exchange Connector를 실행 하는 컴퓨터에서 **WIEC_User** 서비�
 
 1. 관리자 또는 관리자 그룹의 구성원으로 컴퓨터에 로그온 합니다.
 2. **Secpol.msc** 를 실행 하 여 로컬 보안 정책을 엽니다.
-3. **보안 설정** > **로컬 정책**1로 이동한 다음 **사용자 권한 할당**을 선택 합니다.
+3. **보안 설정**  > **로컬 정책**으로 이동한 다음 **사용자 권한 할당**을 선택 합니다.
 4. 올바른 창에서 **서비스로 로그온**을 두 번 클릭합니다.
 5. **사용자 또는 그룹 추가**를 선택 하 고, 정책에 **WIEC_USER** 를 추가한 후 **확인** 을 두 번 선택 합니다.
 

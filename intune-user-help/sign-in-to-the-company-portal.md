@@ -9,6 +9,7 @@ ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16d7142e6dc38a177f8820f60e7335b8b23a1eeb
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099794"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508292"
 ---
 # <a name="sign-in-to-company-portal"></a>회사 포털에 로그인  
 
@@ -39,7 +40,7 @@ ms.locfileid: "71099794"
 
 1. 장치에서 앱을 열고 **로그인**을 탭 합니다.  
 
-   [![회사 포털 로그인 페이지의 예제 스크린샷 ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [회사 포털 로그인 페이지의 ![Example 스크린샷 ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. **회사 또는 학교 계정**을 입력하고 **다음**을 탭합니다.
@@ -78,7 +79,7 @@ ms.locfileid: "71099794"
 
    ![회사 컴퓨터의 고유 암호를 사용하여 https://microsoft.com/devicelogin 페이지로 이동하여 로그인 시 해당 코드를 사용하라는 지침이 제공됩니다.](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. 인증을 위해 사용 중인 다른 장치에서 브라우저를 열고로 [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)이동 합니다. 코드를 입력 하거나 붙여 넣습니다.  
+3. 인증을 위해 사용 중인 다른 장치에서 브라우저를 열고 [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)으로 이동 합니다. 코드를 입력 하거나 붙여 넣습니다.  
 
    ![회사 포털 앱이 아닌 작업 컴퓨터에서 사용자 브라우저 이미지 표시되는 "디바이스 로그인" 페이지에서 사용자에게 회사 포털 앱에서 받은 코드를 입력하라는 메시지가 나타납니다.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 

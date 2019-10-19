@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c46caf4d1c9f9a32a7f324fc5e1734dbe8043bd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735261"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550831"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune에서 OEMConfig를 사용 하 여 Android Enterprise 장치 사용 및 관리
 
@@ -98,7 +99,7 @@ OEMConfig를 사용 하는 경우 다음 정보를 알고 있어야 합니다.
 5. **설정 구성**에서 **구성 디자이너** 또는 **JSON 편집기**를 사용 하도록 선택 합니다.
 
     > [!TIP]
-    > OEM 설명서를 읽고 속성을 올바르게 구성 하 고 있는지 확인 합니다. 이러한 앱 속성은 Intune이 아닌 OEM에 의해 포함 됩니다. Intune은 속성에 대 한 유효성 검사를 최소한으로 수행 하거나 입력 한 내용을 확인 합니다. 예를 들어 포트 번호에 대해 `abcd`을 입력 하면 프로필은 그대로 저장 되 고 구성 된 값을 사용 하 여 장치에 배포 됩니다. 올바른 정보를 입력 해야 합니다.
+    > OEM 설명서를 읽고 속성을 올바르게 구성 하 고 있는지 확인 합니다. 이러한 앱 속성은 Intune이 아닌 OEM에 의해 포함 됩니다. Intune은 속성에 대 한 유효성 검사를 최소한으로 수행 하거나 입력 한 내용을 확인 합니다. 예를 들어 포트 번호에 대 한 `abcd`를 입력 하면 프로필은 그대로 저장 되 고 사용자가 구성한 값으로 장치에 배포 됩니다. 올바른 정보를 입력 해야 합니다.
 
     - **구성 디자이너**:이 옵션을 선택 하면 사용자가 구성할 수 있도록 앱 스키마 내에서 사용할 수 있는 속성이 표시 됩니다.
 
@@ -120,7 +121,7 @@ OEMConfig를 사용 하는 경우 다음 정보를 알고 있어야 합니다.
 
     구성 디자이너에서 변경한 내용은 JSON 편집기 에서도 자동으로 수행 됩니다. 마찬가지로 JSON 편집기에서 변경한 내용은 구성 디자이너에서 자동으로 수행 됩니다. 입력에 잘못 된 값이 포함 된 경우 문제를 해결할 때까지 구성 디자이너와 JSON 편집기 사이를 전환할 수 없습니다.
 
-6. **확인** > **추가** 를 선택 하 여 변경 내용을 저장 합니다. 정책이 만들어지고 목록에 표시됩니다.
+6. **확인** > **추가**를 선택하여 변경 내용을 저장합니다. 정책이 만들어지고 목록에 표시됩니다.
 
 [프로필을 할당](device-profile-assign.md)하고 [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
@@ -144,10 +145,11 @@ OEMConfig를 사용 하는 경우 다음 정보를 알고 있어야 합니다.
 | 얼룩말 기술 | 얼룩말. common | [얼룩말 OEMConfig 개요](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | datalogic 구성 | [Datalogic OEMConfig에 대 한 사용자 설명서](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell 구성 |  |
+| Kyocera | kyocera. enterprisedeviceconfig |  |
 
 -----------------
 
-장치에 대 한 OEMConfig 응용 프로그램이 있지만 위의 표에 없거나 Intune 콘솔에 표시 되지 않는 경우 전자 메일 `IntuneOEMConfig@microsoft.com`으로 메일을 보내세요.
+장치에 대 한 OEMConfig 응용 프로그램이 있지만 위의 표에 없거나 Intune 콘솔에 표시 되지 않는 경우 전자 메일을 `IntuneOEMConfig@microsoft.com` 하세요.
 
 > [!NOTE]
 > Oemconfig 앱은 등록를 사용 하 여 구성 해야 합니다. 앱이 지원 되 면 테 넌 트에서 설정 하는 방법에 대해 Microsoft에 문의할 필요가 없습니다. 이 페이지의 지침을 따르세요.

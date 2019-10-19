@@ -9,6 +9,7 @@ ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8127d10cee17dd445e1830a8e15a278adfa55ad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cdc15f6880abca53ed2110daf6169cddb48464c2
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55848031"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508474"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>회사 포털에서 디바이스 제거
 
@@ -37,7 +38,7 @@ ms.locfileid: "55848031"
 
     ![식별되지 않은 일반적으로 명명된 디바이스를 보여주는 2개의 타일이 포함된 디바이스 페이지의 스크린샷 회색 배너는 디바이스 바로 아래에 있으며 사용 중인 디바이스를 식별하거나 새 디바이스를 추가하라는 메시지를 표시합니다.](./media/rename-reset-device-step2-1808.png) 
 
-3. **제거**를 선택합니다. 제거 옵션이 페이지의 맨 위에 보이지 않는 경우 **자세히(...)** > **제거**를 선택합니다.  
+3. **제거**를 선택합니다. 제거 옵션이 페이지의 맨 위에 보이지 않는 경우 **자세히(...)**  > **제거**를 선택합니다.  
 
    ![이름 바꾸기, 제거, 디바이스 재설정, 암호 재설정, 원격 잠금을 표시하는 맨 위의 링크 목록과 함께 회사 포털 웹 사이트에서 선택한 디바이스에 대한 디바이스 세부 정보 페이지 ](./media/rename-reset-device-1808.png)  
   

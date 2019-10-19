@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77f272053f9034cf89476922649576556de634d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: edf13046a66f825b5f976491d1dd3c22c9f320ac
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735677"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509125"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Intune 소프트웨어 클라이언트를 사용하는 일반 Windows PC 관리 태스크
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 이 항목에서는 Intune 소프트웨어 클라이언트를 설치하여 PC로 관리하는 데스크톱을 관리하기 위해 수행할 수 있는 작업을 나열합니다. 그러나 PC를 모바일 디바이스로 관리하는 작업은 다루지 않습니다. PC에 클라이언트를 아직 설치하지 않은 경우에는 [Intune 소프트웨어 클라이언트 설치](install-the-windows-pc-client-with-microsoft-intune.md)를 참조하세요.
 
