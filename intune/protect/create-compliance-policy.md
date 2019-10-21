@@ -1,26 +1,26 @@
 ---
-title: Microsoft Intune에서 디바이스 준수 정책 - Azure | Microsoft Docs
-description: 디바이스 준수 정책 사용 시작, 상태 및 심각도 수준의 개요, InGracePeriod 상태 사용, 조건부 액세스 작업, 할당된 정책 없이 디바이스 처리 및 Microsoft Intune에서 Azure Portal과 클래식 포털의 준수 차이
+title: Microsoft Intune에서 디바이스 준수 정책 만들기 - Azure | Microsoft Docs
+description: 디바이스 준수 정책 만들기, 상태 및 심각도 수준의 개요, InGracePeriod 상태 사용, 조건부 액세스 작업, 할당된 정책 없이 디바이스 처리 및 Microsoft Intune에서 Azure Portal과 클래식 포털의 준수 차이
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722633"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306588"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 준수 정책 만들기
 
@@ -95,15 +95,15 @@ ms.locfileid: "71722633"
 
 4. 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다. 정책이 만들어지고 목록에 표시됩니다. 다음으로, 그룹에 정책을 할당합니다.
 
-## <a name="assign-user-groups"></a>사용자 그룹 할당
+## <a name="assign-the-policy"></a>정책 할당
 
 정책이 만들어지면 다음 단계에서 그룹에 정책을 할당합니다.
 
 1. 직접 만든 정책을 선택합니다. 기존 정책은 **디바이스 준수** > **정책**에 있습니다.
 2. 정책 > **할당**을 선택합니다. Azure AD(Active Directory) 보안 그룹을 포함하거나 제외할 수 있습니다.
-3. **선택된 그룹**을 선택하면 Azure AD 보안 그룹이 표시됩니다. 이 정책을 적용할 사용자 그룹을 선택한 후 **저장**을 선택하여 정책을 사용자에게 배포합니다.
+3. **선택된 그룹**을 선택하면 Azure AD 보안 그룹이 표시됩니다. 이 정책을 적용할 그룹을 선택한 후 **저장**을 선택하여 정책을 배포합니다.
 
-사용자에게 정책을 적용했습니다. 정책의 대상이 되는 사용자가 사용하는 디바이스의 준수 여부가 평가됩니다.
+정책의 대상으로 지정된 사용자 또는 디바이스는 Intune을 사용하여 체크 인할 때 준수 여부가 평가됩니다.
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>대상으로 지정된 사용자 수 평가
 

@@ -197,6 +197,8 @@
           displayName: ca; pkcs; pki; ra; registration authority
         - name: SCEP 또는 PKCS 인증서 제거
           href: remove-certificates.md
+    - name: 파생된 자격 증명
+      href: derived-credentials.md
     - name: 소프트웨어 업데이트
       items:
         - name: Windows 업데이트

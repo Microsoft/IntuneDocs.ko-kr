@@ -41,6 +41,16 @@
       href: device-lifecycle.md
     - name: 앱 수명 주기
       href: ../apps/app-lifecycle.md
+    - name: 안내 시나리오
+      items:
+        - name: 안내 시나리오 개요
+          href: guided-scenarios-overview.md
+        - name: 모바일용 Microsoft Edge 배포
+          href: guided-scenarios-edge.md
+        - name: 클라우드 관리 Modern Desktop
+          href: guided-scenarios-cloud-managed-pc.md
+        - name: 보안 Microsoft Office 모바일 앱
+          href: guided-scenarios-office-mobile.md
     - name: 일반적인 시나리오
       href: common-scenarios.md
     - name: EMS를 사용한 BYOD에 대한 기술 결정
@@ -175,6 +185,8 @@
       href: ../protect/index.yml
     - name: 앱 관리 및 보호
       href: ../apps/index.yml
+    - name: 정책 집합 사용
+      href: ~/fundamentals/policy-sets.md
     - name: 개발자 지침
       href: ../developer/index.yml
     - name: 도움말 및 지원 보기

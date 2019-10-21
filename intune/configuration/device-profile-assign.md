@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 344ffdfefd8b354c9d2ab31f2d08c2a25456f970
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724115"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237204"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 사용자 및 디바이스 프로필 할당
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724115"
 프로필을 만들고 이 프로필에는 입력한 모든 설정이 포함됩니다. 다음 단계에서는 Azure AD(Azure Active Directory) 사용자 또는 디바이스 그룹에 프로필을 배포 또는 “할당”합니다. 할당된 경우 사용자 및 디바이스는 프로필을 수신하고 입력한 설정이 적용됩니다.
 
 이 문서에서는 프로필을 할당하는 방법을 보여 주고 프로필에서 범위 태그를 사용하는 방법을 설명합니다.
+
+> [!NOTE]  
+> 정책이 제거되거나 더 이상 디바이스에 할당되지 않을 때 설정이 기존 값을 유지할 수도 있습니다. 설정은 기본값으로 되돌아가지 않습니다. 설정을 다른 값으로 변경하려면 새 정책을 만들고 할당합니다.
 
 ## <a name="assign-a-device-profile"></a>디바이스 프로필 할당
 

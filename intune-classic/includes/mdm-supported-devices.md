@@ -1,13 +1,13 @@
 ---
-ms.openlocfilehash: f42baa1ca6e3ac6dca3c95a0eb9e422df2506031
-ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.openlocfilehash: f7916bc38be085625f5a65d7889212827bcae5d3
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "71721255"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314612"
 ---
 ### <a name="apple"></a>Apple
-- Apple iOS 9.0 이상
+- Apple iOS 및 iPadOS 9.0 이상
 - Mac OS X 10.9 이상
 
 ### <a name="windows"></a>Windows
@@ -18,7 +18,7 @@ ms.locfileid: "71721255"
 - Windows Holographic &amp; Windows Holographic Enterprise
 - Windows Phone 8.1, Windows 8.1 RT 및 Windows 8.1을 실행하는 PC(유지 모드)
 
-  EMS(Enterprise Management + Security)가 있는 고객은 [AAD(Azure Active Directory)를 사용하여 Windows 10 디바이스를 등록](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)할 수도 있습니다.
+  EMS(Enterprise Management + Security)가 있는 고객은 [AAD(Azure Active Directory)를 사용하여 Windows 10 디바이스를 등록](/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)할 수도 있습니다.
 
   [Intune 소프트웨어 클라이언트](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)를 사용하면 Windows 7 이상 PC(Windows 10 Home Edition 제외)도 관리할 수 있습니다.
 
@@ -27,5 +27,3 @@ ms.locfileid: "71721255"
 - Google Android for Work([요구 사항](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
 *다음 삼성 Galaxy Ace 휴대폰 모델은 Intune에서 삼성 KNOX Standard 디바이스로 관리할 수 없습니다. SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY 및 SM-G313U. 이러한 디바이스는 표준 Android 디바이스로 관리됩니다. 자세한 내용은 [Samsung KNOX 웹 사이트](https://www.samsungknox.com/en)를 참조하세요.
-
-디바이스 및 관리 방법의 전체 목록은 [Intune 지원 디바이스](/intune/supported-devices-browsers#intune-supported-devices)를 참조하세요.

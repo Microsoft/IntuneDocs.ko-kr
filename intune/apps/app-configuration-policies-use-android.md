@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59d93bed7bae2b757a4bd1e7b1dffc814629f6a1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d31126a259274a2c75f933428632e274d8710aa6
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725740"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350019"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>관리되는 Android 엔터프라이즈 디바이스용 앱 구성 정책 추가
 
@@ -86,9 +86,8 @@ Android 디바이스의 경우 다음 키/값 쌍을 사용합니다.
 | **값** | <ul><li>하나 이상의 <code>;</code>으로 구분된 UPN입니다.</li><li>허용된 계정만 이 키로 정의된 관리되는 사용자 계정입니다.</li><li> Intune 등록 디바이스의 경우 <code>{{userprincipalname}}</code> 토큰을 사용하여 등록된 사용자 계정을 나타낼 수 있습니다.</li></ul> |
 
    > [!NOTE]
-   > 다중 ID를 사용하는 구성된 조직 계정만 허용하는 경우 Android용 Outlook 2.2.222 이상을 사용해야 합니다.<p></p>
+   > 다중 ID로 구성된 조직 계정만 허용하는 경우에는 Android용 Outlook 2.2.222 이상, Android용 Word, Excel, PowerPoint 16.0.9327.1000 이상 또는 Android용 OneDrive 5.28 이상을 사용해야 합니다.<p></p>
    > Microsoft Intune 관리자는 관리되는 디바이스에서 Microsoft Office 애플리케이션에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 디바이스에서 개인 계정을 차단할 수 있습니다. 지원 애플리케이션이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.<p></p>
-   > Microsoft Word, Microsoft Excel, Microsoft PowerPoint의 경우 앱 버전 16.0.9327.1000 이상을 사용해야 합니다. 
 
 ## <a name="enter-the-json-editor"></a>JSON 편집기 입력
 

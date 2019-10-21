@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb684e787a75900ca2157a04150a8fc6c4ba715
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721268"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306796"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>자습서: 관리되지 않는 디바이스에서 Exchange Online 메일 보호
 
@@ -113,7 +113,7 @@ Outlook용 앱 보호 정책이 만들어집니다. 그런 다음, 디바이스�
    3. 다른 확인란을 선택 취소합니다.  
    4. **완료** > **완료**를 선택하여 새 정책 창으로 돌아갑니다.  
 
-   ![Office 365 Exchange Online 앱 선택](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
+   ![모바일 앱 및 클라이언트 선택](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. **액세스 제어**에서 **권한 부여**를 선택합니다. 
      
@@ -123,11 +123,11 @@ Outlook용 앱 보호 정책이 만들어집니다. 그런 다음, 디바이스�
    4. **여러 컨트롤의 경우**에서 **선택된 컨트롤이 모두 필요함**을 선택합니다. 이렇게 설정하면 디바이스가 메일에 액세스를 시도할 때 선택한 요구 사항이 둘 다 적용됩니다.
    5. **선택**을 선택합니다.
      
-   ![Office 365 Exchange Online 앱 선택](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![컨트롤 선택](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
 7. **정책 사용**에서 **On**을 선택한 다음, **만들기**를 선택합니다.  
      
-    ![Office 365 Exchange Online 앱 선택](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
+    ![정책 만들기](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
 최신 인증 클라이언트에 대한 조건부 액세스 정책이 만들어집니다. 이제 Exchange Active Sync 클라이언트에 대한 정책을 만들 수 있습니다.
 
@@ -153,14 +153,14 @@ Outlook용 앱 보호 정책이 만들어집니다. 그런 다음, 디바이스�
    4. 다른 확인란을 모두 선택 취소합니다.  
    5. **완료**를 선택한 후 **완료**를 다시 선택합니다.  
     
-   ![Office 365 Exchange Online 앱 선택](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
+   ![지원되는 플랫폼에 적용](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
 
 7. **액세스 제어**에서 **권한 부여**를 선택합니다.  
    1. **권한 부여** 창에서 **액세스 허용**을 선택합니다.  
    2. **승인된 클라이언트 앱 필요**를 선택합니다. 다른 확인란을 모두 선택 취소합니다.  
    3. **선택**을 선택합니다.  
      
-   ![Office 365 Exchange Online 앱 선택](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
+   ![승인된 클라이언트 앱 필요](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
 
 8. **정책 사용**에서 **켜기**를 선택합니다.  
 

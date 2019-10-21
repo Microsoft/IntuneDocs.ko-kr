@@ -1,5 +1,5 @@
 ---
-title: 자습서 - Intune 관리 디바이스에서 Exchange Online 메일 보호
+title: 자습서 - 관리 디바이스에서 Exchange Online 메일 보호
 titleSuffix: Microsoft Intune
 description: 관리 디바이스 및 Outlook 앱을 사용하도록 요구하는 Azure AD 조건부 액세스 및 iOS Intune 준수 정책을 통해 Exchange Online을 보호하는 방법을 알아봅니다.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2d6f14b4b3e1e981cce789664203b74523b2474
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c20c0c1543cd8fcbf7345a02295486aaaa6ddcea
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727937"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306872"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>자습서: 관리 디바이스에서 Exchange Online 이메일 보호
 디바이스 준수 정책을 조건부 액세스와 함께 사용하여 iOS 디바이스가 Intune에서 관리되고 승인된 메일 앱을 사용하는 경우에만 Exchange Online 메일에 액세스할 수 있도록 하는 방법을 알아봅니다. 
@@ -95,7 +95,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
     2. **포함** 탭에서 **모든 디바이스**를 선택한 후 **완료**를 선택합니다. 
     3. **완료**를 다시 선택합니다.
    
-    ![Office 365 Exchange Online 앱 선택](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
+    ![모든 디바이스 포함](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
 6. **할당** 섹션에서 **조건** > **클라이언트 앱**을 선택합니다.
      
@@ -103,7 +103,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
     2. 이 자습서에서는 **모바일 앱 및 데스크톱 클라이언트** 및 **최신 인증 클라이언트**(iOS용 Outlook 및 Android 용 Outlook 같은 앱을 참조함)를 선택합니다. 다른 확인란을 모두 선택 취소합니다.
     3. **완료**를 선택한 후 **완료**를 다시 선택합니다.
     
-    ![Office 365 Exchange Online 앱 선택](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+    ![앱 및 클라이언트 선택](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7. **액세스 제어**에서 **권한 부여**를 선택합니다. 
      
@@ -113,11 +113,11 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
     4. **여러 컨트롤의 경우**에서 **선택된 컨트롤이 모두 필요함**을 선택합니다. 이렇게 설정하면 디바이스가 메일에 액세스를 시도할 때 선택한 요구 사항이 둘 다 적용됩니다.
     5. **선택**을 선택합니다.
      
-    ![Office 365 Exchange Online 앱 선택](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+    ![컨트롤 선택](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. **정책 사용**에서 **켜기**를 선택합니다.
      
-    ![Office 365 Exchange Online 앱 선택](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+    ![정책 사용](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. **만들기**를 선택합니다.
 

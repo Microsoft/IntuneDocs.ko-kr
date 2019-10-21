@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac86e9155f08683ab073ae0b46ea3f2780060c90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723348"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314685"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>회사 소유의 디바이스 식별
 
@@ -35,7 +35,7 @@ Intune 관리자로서 사용자는 디바이스를 회사 소유로 식별하�
 - [디바이스 등록 관리자](device-enrollment-manager-enroll.md) 계정을 사용하여 등록됨(모든 플랫폼)
 - Apple [장비 등록 프로그램](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) 또는 [Apple Configurator](apple-configurator-enroll-ios.md)를 사용하여 등록됨(iOS만 해당)
 - IMEI(International Mobile Equipment Identifier) 번호(IMEI 번호가 있는 모든 플랫폼) 또는 일련 번호(iOS 및 Android)를 사용하여 [등록 전에 회사 소유로 식별됨](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- Windows 10 Enterprise 디바이스로 Azure Active Directory에 조인
+- 회사 또는 학교 자격 증명으로 Azure Active Directory에 조인됨 [Azure Active Directory 등록 디바이스](https://docs.microsoft.com/azure/active-directory/devices/overview)는 개인용으로 표시됩니다.
 - [디바이스 속성 목록](#change-device-ownership)에서 회사로 설정
 
 등록 후 **개인**과 **회사** 사이에서 [소유권 설정을 변경](#change-device-ownership)할 수 있습니다.

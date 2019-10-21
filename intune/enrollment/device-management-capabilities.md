@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bac049aebfb0fec6c9d86e1e08e81237867175d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bf862e59e135a875f5f18af731c581f3e5ea89d5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723114"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306607"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune의 등록된 디바이스 관리 기능
 
@@ -43,6 +43,7 @@ Microsoft Intune에서 다양한 디바이스를 서비스에 *등록*하여 관
 |구성 정책<br><br>사용자 지정 정책| 조직의 모바일 디바이스에서 많은 설정과 기능을 관리할 수 있습니다. 예를 들어 암호를 요구하고, 실패한 시도 횟수를 제한하고, 화면 잠금 전 시간을 제한하고, 암호 만료 시간을 설정하고, 이전에 사용한 암호의 사용을 금지할 수 있습니다. 디바이스 카메라 또는 웹 브라우저와 같은 하드웨어 및 소프트웨어 기능의 사용을 제어할 수도 있습니다.<br><br>구성 정책에 필요한 설정이 포함되어 있지 않은 경우 사용자 지정 정책을 사용합니다. iOS 디바이스의 경우 Apple 구성기 도구에서 내보낸 설정을 가져올 수 있습니다. 다른 디바이스의 경우 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 디바이스에서 설정 및 기능을 구성할 수 있습니다.|[Microsoft Intune 정책을 사용하여 디바이스의 설정 및 기능 관리](../protect/device-compliance-get-started.md)|
 |원격 초기화, 원격 잠금 및 암호 재설정|디바이스를 분실하거나 도난당하는 경우 중요한 데이터를 지웁니다. 예를 들어, 원격으로 디바이스를 잠그거나, 공장 설정으로 복원하거나, 회사 데이터만 삭제할 수 있습니다.<br><br>디바이스에 액세스하는 방법을 잊어버리거나 분실 또는 도난당한 디바이스를 잠그거나 분실 또는 도난당한 디바이스의 데이터를 초기화할 경우 암호를 재설정할 수 있습니다.|[원격 잠금](../remote-actions/device-remote-lock.md) 또는 [암호 재설정](../remote-actions/device-passcode-reset.md)으로 디바이스 보호 지원|
 |키오스크 모드|화면 캡처 및 전원 스위치와 같은 모바일 디바이스의 특정 기능을 잠글 수 있습니다. 또한 지정한 단일 앱을 실행하도록 디바이스를 제한할 수 있습니다. |[Microsoft Intune의 iOS 구성 정책 설정](../configuration/device-restrictions-ios.md)|
+|Autopilot 재설정|디바이스에 작업을 보내 원격으로 재설정 프로세스를 시작합니다. 따라서 IT 담당자 또는 다른 관리자가 각 컴퓨터를 방문하여 프로세스를 시작할 필요가 없습니다. 디바이스에서 Autopilot 초기화를 사용하면 디바이스의 기본 사용자가 제거됩니다. 초기화 후에 로그인하는 사용자가 기본 사용자로 설정됩니다.|[원격 Windows Autopilot 재설정](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset)|
 
 ## <a name="app-management"></a>앱 관리
 

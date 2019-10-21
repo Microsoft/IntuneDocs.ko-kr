@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32d34c1878bc0355c510ca342091010af43bca7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724921"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350016"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -165,7 +165,7 @@ Intune에서 브랜드 이미지를 추가하거나 변경해도, 회사 포털�
 - **동기화** – 이 작업은 디바이스의 Intune 서비스 체크 인을 시작합니다. 회사 포털에서는 **상태 확인**으로 표시됩니다.
 - **원격 잠금** – 디바이스를 잠그며 잠금을 해제하려면 PIN이 필요합니다.
 - **암호 초기화** – 이 작업은 디바이스 암호를 다시 설정하는 데 사용됩니다. iOS 디바이스에서는 암호가 제거되고 최종 사용자는 설정에서 새 코드를 입력해야 합니다. 지원되는 Android 디바이스에서는 Intune에 의해 새 암호가 생성되어 회사 포털에 임시로 표시됩니다.
-- **키 복구** – 이 작업은 암호화된 디바이스의 암호화 키를 복구하는 데 사용됩니다.
+- **키 복구** – 이 작업은 회사 포털 웹 사이트에서 암호화된 macOS 디바이스의 개인 복구 키를 복구하는 데 사용됩니다. 
 
 ### <a name="self-service-actions"></a>셀프 서비스 작업
 
@@ -180,7 +180,7 @@ Intune에서 브랜드 이미지를 추가하거나 변경해도, 회사 포털�
 
 
 <sup>(1)</sup> 사용 중지는 Azure AD 가입 Windows 디바이스에서 항상 차단됩니다.<br>
-<sup>(2)</sup> MacOS의 키 복구는 웹 포털을 통해서만 사용할 수 있습니다.<br>
+<sup>(2)</sup> macOS에 대한 개인 키 복구는 회사 포털 웹 사이트를 통해서만 사용할 수 있습니다.<br> 
 <sup>(3)</sup> 디바이스 등록 관리자 등록을 사용하는 경우 모든 원격 작업을 사용할 수 없습니다.<br>
 <sup>(4)</sup> 이름 바꾸기는 디바이스가 아니라 회사 포털 앱 또는 웹 사이트의 디바이스 이름만 바꿉니다.<br>
 <sup>(5)</sup> 원격 초기화는 MacOS 디바이스에서 사용할 수 없습니다.<br>

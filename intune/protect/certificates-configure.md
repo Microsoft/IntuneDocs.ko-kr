@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: e993df5c37cfed8d5dd0481543b406dd25ad1a49
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999312"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251569"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune의 인증에 인증서 사용  
 
@@ -51,7 +51,8 @@ Intune에서 인증서를 사용하여 VPN, Wi-Fi 또는 메일 프로필을 통
 | 플랫폼              | 신뢰할 수 있는 인증서 프로필 | PKCS 인증서 프로필 | SCEP 인증서 프로필 | PKCS 가져온 인증서 프로필  |
 |--|--|--|--|---|
 | Android 디바이스 관리자 | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png)|  ![지원됨](./media/certificates-configure/green-check.png) |
-| Android Enterprise <br> - 디바이스 소유자   | ![지원됨](./media/certificates-configure/green-check.png) |   |  |   |
+| Android Enterprise <br> - 완전 관리형(장치 소유자)   | ![지원됨](./media/certificates-configure/green-check.png) |   | ![지원됨](./media/certificates-configure/green-check.png) |   |
+| Android Enterprise <br> - 전용(장치 소유자)   |  |   |  |   |
 | Android Enterprise <br> - 회사 프로필    | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |
 | iOS                   | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |
 | macOS                 | ![지원됨](./media/certificates-configure/green-check.png) |   |![지원됨](./media/certificates-configure/green-check.png)|![지원됨](./media/certificates-configure/green-check.png)|

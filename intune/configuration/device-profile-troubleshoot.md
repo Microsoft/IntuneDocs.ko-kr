@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 10/15/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618f88d6dbacb886f250b74f6a462b8449b59b18
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9944aa59f47b7263d46ac96f6aaca3f8ae5c9486
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724089"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350000"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune의 디바이스 정책 및 프로필을 통한 일반적인 질문, 이슈 및 해결 방법
 
@@ -64,14 +64,14 @@ Intune 서비스에서 디바이스에 체크 인을 알립니다. 알림 시간
 
 | 플랫폼 | 빈도 |
 | --- | --- |
-| iOS | 약 8시간 동안 15분마다/그 이후에는 1시간마다 |  
-| macOS | 약 8시간 동안 15분마다/그 이후에는 1시간마다 | 
+| iOS | 1시간 동안 15분마다/그 이후에는 8시간마다 |  
+| macOS | 1시간 동안 15분마다/그 이후에는 8시간마다 | 
 | Android | 15분 동안 3분마다/그 이후 2시간 동안은 15분마다/그 이후에는 약 8시간마다 | 
-| 디바이스로 등록된 Windows 10 PC | 30분 동안 3분마다/그 이후에는 8시간마다 | 
+| 디바이스로 등록된 Windows 10 PC | 15분 동안 3분마다/그 이후 2시간 동안은 15분마다/그 이후에는 약 8시간마다 | 
 | Windows Phone | 15분 동안 5분마다/그 이후 2시간 동안은 15분마다/그 이후에는 약 8시간마다 | 
 | Windows 8.1 | 15분 동안 5분마다/그 이후 2시간 동안은 15분마다/그 이후에는 약 8시간마다 | 
 
-언제든 사용자는 회사 포털 앱을 열고 디바이스를 동기화하여 즉시 정책 또는 프로필 업데이트를 확인할 수 있습니다.
+언제든 사용자는 회사 포털 앱을 열고 **설정** > **동기화**로 정책 또는 프로필 업데이트를 즉시 확인할 수 있습니다.
 
 사용자 선호도가 없는 디바이스의 경우 등록 직후의 동기화 빈도는 몇 시간에서 하루 이상으로 다양합니다. Intune은 디바이스를 Intune에 체크 인하기 위해 다양한 간격으로 요청을 보냅니다. 그러나 아직도 디바이스의 결정에 따라 체크 인해야 합니다. 초기 등록 후에는 디바이스에서 체크 인을 완료하는 데 걸리는 시간을 예측할 수 없습니다. 또한 시간은 디바이스 등록 형식과 디바이스에 할당된 정책 및 프로필에 따라 달라집니다. 디바이스를 등록하고 모든 초기 정책 및 프로필이 적용되면 디바이스는 Intune에서 디바이스를 등록하는 시간을 기준으로 6~8시간마다 새 정책 및 프로필을 확인합니다.
 

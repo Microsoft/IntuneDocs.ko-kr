@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb9af260b8fddc78b644b8ede056c90bac24d0
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: 304e869460a5396a486b6de0cd5c2f549c192b70
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999361"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379858"
 ---
 # <a name="what-is-device-enrollment"></a>디바이스 등록이란?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -80,7 +80,7 @@ Intune을 사용하여 직원의 디바이스 및 앱을 관리하고 회사 데
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device
-BYOD(Bring Your Own Device)에는 개인 전화, 태블릿, PC 등이 있습니다. 사용자는 회사 포털 앱을 설치 및 실행하여 BYOD를 등록합니다. 사용자는 이 프로그램을 통해 전자 메일 등의 회사 리소스에 액세스할 수 있습니다.
+BYOD(Bring Your Own Device)에는 개인적으로 소유한 전화, 태블릿, PC 등이 있습니다. 사용자는 회사 포털 앱을 설치 및 실행하여 BYOD를 등록합니다. 사용자는 이 프로그램을 통해 전자 메일 등의 회사 리소스에 액세스할 수 있습니다.
 
 ## <a name="corporate-owned-device"></a>회사 소유 디바이스
 [COD(회사 소유 디바이스)](corporate-identifiers-add.md)에는 회사가 직원에게 배포한 전화, 태블릿, PC가 있습니다. COD 등록은 자동 등록, 공유 디바이스 또는 사전 승인된 등록 요구 사항과 같은 관리 시나리오를 지원합니다. COD를 등록하는 일반적인 방법은 관리자가 디바이스 등록 관리자(DEM)를 사용하는 것입니다. Apple에서 제공한 장비 등록 프로그램(DEP) 도구를 통해 iOS 디바이스를 직접 등록할 수 있습니다. IMEI 번호가 있는 디바이스도 회사 소유로 식별되고 태그가 지정됩니다.

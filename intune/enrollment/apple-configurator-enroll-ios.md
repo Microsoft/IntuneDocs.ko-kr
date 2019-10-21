@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d50fdbb766068e643604cdf729e62cdd07d22b62
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a1c2acc2ebe5528e30c344a31c9551ac64bdf3ca
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723517"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306789"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Apple Configurator를 통해 iOS 디바이스 등록 설정
 
@@ -60,6 +60,9 @@ Apple Configurator 등록 방법은 [디바이스 등록 관리자](device-enrol
     - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털을 사용하려는 디바이스의 경우 이 옵션을 선택합니다. 설정 도우미를 사용하여 디바이스에 사용자를 등록해야 합니다. 그러면 디바이스에서 회사 데이터와 메일에 액세스할 수 있습니다. 설치 도우미 등록에만 지원됩니다. 사용자 선호도에는 [WS-Trust 1.3 사용자 이름/혼합 엔드포인트](https://technet.microsoft.com/library/adfs2-help-endpoints)가 필요합니다. [자세히 알아봅니다](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
     - **사용자 선호도를 사용하지 않고 등록** - 단일 사용자로 등록되지 않은 디바이스의 경우 이 옵션을 선택합니다. 로컬 사용자 데이터에 액세스하지 않고 작업을 수행하는 디바이스에 이 옵션을 사용합니다. 기간 업무 앱을 설치하는 데 사용하는 회사 포털 앱 등 사용자 정보가 필요한 앱은 작동하지 않습니다. 직접 등록의 경우 필수입니다.
+
+     > [!NOTE]
+     > **사용자 선호도를 사용하여 등록**을 선택한 경우 디바이스 등록 후 최초 24시간 이내에 설정 도우미를 사용하여 디바이스에 사용자 정보가 등록되어 있는지 확인합니다. 그러지 않으면 등록이 실패할 수 있으며 디바이스를 등록하는 데 초기화가 필요합니다.
 
 4. **사용자 선호도를 사용하여 등록**을 선택한 경우 사용자가 Apple 설정 도우미 대신 회사 포털에서 인증할 수 있도록 하는 옵션이 있습니다.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8beb8291ede1bf2fde32014fadf9f8cd52da5b6
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 204a19546e9466fdf7064e15b8cba7268ec1b757
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830569"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349974"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune에 웹앱 추가
 
@@ -30,7 +30,9 @@ ms.locfileid: "71830569"
 
 Intune은 웹앱을 포함하여 다양한 앱 유형을 지원합니다. 웹앱은 클라이언트-서버 애플리케이션입니다. 서버는 UI, 콘텐츠 및 기능을 포함하는 웹앱을 제공합니다. 또한 플랫폼을 호스팅하는 현대식 웹은 일반적으로 보안, 부하 분산 및 기타 이점을 제공합니다. 웹앱은 웹에서 별도로 유지 관리됩니다. Microsoft Intune을 사용하여 이 앱 유형을 가리킵니다. 또한 이 앱에 액세스할 수 있는 사용자 그룹을 할당합니다. 
 
-사용자의 앱을 관리하고 할당하려면 먼저 Intune에 앱을 추가합니다. Intune이 사용자의 디바이스 홈 화면에 웹앱 바로 가기를 만듭니다.
+사용자의 앱을 관리하고 할당하려면 먼저 Intune에 앱을 추가합니다. 
+
+Intune이 사용자의 디바이스에 웹앱 바로 가기를 만듭니다. iOS 장치의 경우 웹앱에 대한 바로 가기가 홈 화면에 추가됩니다. Android 장치의 경우 웹앱에 대한 바로 가기가 Intune 회사 포털 위젯에 추가되고 사용자가 위젯을 수동으로 고정해야 합니다. Windows 디바이스의 경우 웹앱에 대한 바로 가기가 시작 메뉴에 배치됩니다.
 
 > [!Note]
 > Android 회사 프로필 디바이스에서는 웹앱이 지원되지 않습니다. 웹앱을 시작하려면 사용자의 디바이스에 브라우저가 설치되어 있어야 합니다.

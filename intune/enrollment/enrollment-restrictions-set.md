@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bdeb88f3a69db160dca61bf3038c5a7d0235f2b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722464"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379804"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -48,7 +48,7 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바
 - iOS, Android 디바이스, 관리자, Android Enterprise 회사 프로필, Windows 및 Windows Mobile용 플랫폼 운영 체제 버전입니다. (Windows 10 버전만을 사용할 수 있습니다. Windows 8.1을 허용하는 경우 이 항목을 비워둡니다.)
   - 최소 버전
   - 최대 버전
-- 개인적으로 소유한 디바이스(iOS, Android 디바이스, 관리자, Android Enterprise 회사 프로필, macOS, Windows 및 Windows Mobile만 해당)를 제한합니다.
+- [개인적으로 소유한 디바이스](device-enrollment.md#bring-your-own-device)(iOS, Android 디바이스, 관리자, Android Enterprise 회사 프로필, macOS, Windows 및 Windows Mobile만 해당)를 제한합니다.
 
 ## <a name="default-restrictions"></a>기본 제한 사항
 
@@ -60,7 +60,7 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바
 2. **추가 서비스**를 선택하고 **Intune**을 검색한 다음, **Intune**을 선택합니다.
 3. **디바이스 등록** > **등록 제함** > **제한 만들기** > **디바이스 제한 유형**을 선택합니다.
     ![디바이스 유형 제한 만들기 화면](./media/enrollment-restrictions-set/create-device-type-restriction.png)
-4. **기본 사항** 페이지에서제한에 **이름** 및 선택적 **설명**을 지정합니다.
+4. **기본 사항** 페이지에서 제한에 **이름** 및 선택적 **설명**을 지정합니다.
 5. **다음**을 선택하여 **플랫폼 설정** 페이지로 이동합니다.
 6. **플랫폼**에서 이 제한을 허용하려는 플랫폼에 대해 **허용**을 선택합니다.
     ![플랫폼 설정 선택 화면](./media/enrollment-restrictions-set/choose-platform-settings.png)
@@ -68,9 +68,9 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바
      지원되는 버전 형식은 다음과 같습니다.
     - Android 디바이스 관리자 및 Android Enterprise 회사 프로필 지원 major.minor.rev.build.
     - iOS는 major.minor.rev를 지원합니다. 운영 체제 버전은 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator 앱에 등록되는 Apple 디바이스에 적용되지 않습니다.
-    - Windows는 Windows 10용 major.minor.rev.build만 지원합니다.
+    - Windows는 Windows 10용 major.minor.build.rev만 지원합니다.
     > [!Note]
-    > Windows 10에서는 등록하는 동안 빌드 번호를 제공하지 않습니다. 예를 들어 사용자가 10.0.17134.100을 입력하고 디바이스가 10.0.17134.174 번호를 사용하는 경우 이 번호는 등록하는 동안 차단됩니다.
+    > Windows 10에서는 등록하는 동안 수정 번호를 제공하지 않습니다. 예를 들어 사용자가 10.0.17134.100을 입력하고 디바이스가 10.0.17134.174 번호를 사용하는 경우 이 번호는 등록하는 동안 차단됩니다.
 
 8. **개인 소유**에서 개인 소유 디바이스로 허용할 플랫폼에 대해 **허용**을 선택합니다.
 9. **다음**을 선택하여 **할당** 페이지로 이동합니다.
@@ -87,7 +87,7 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바
 2. **추가 서비스**를 선택하고 **Intune**을 검색한 다음, **Intune**을 선택합니다.
 3. **디바이스 등록** > **등록 제함** > **제한 만들기** > **디바이스 개수 제한**을 선택합니다.
     ![디바이스 개수 제한 만들기 화면](./media/enrollment-restrictions-set/create-device-limit-restriction.png)
-4. **기본 사항** 페이지에서제한에 **이름** 및 선택적 **설명**을 지정합니다.
+4. **기본 사항** 페이지에서 제한에 **이름** 및 선택적 **설명**을 지정합니다.
 5. **다음**을 선택하여 **디바이스 개수 제한** 페이지로 이동합니다.
 6. **디바이스 개수 제한**에서 사용자가 등록할 수 있는 최대 디바이스 수를 선택합니다.
     ![디바이스 개수 제한 선택 화면](./media/enrollment-restrictions-set/choose-device-limit.png)
@@ -151,6 +151,12 @@ BYOD 등록 중에 등록된 디바이스 수가 한도에 다다랐을 때 사�
 - Windows 설정의 [MDM 등록만]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) 옵션
 
 \* Autopilot에 등록된 경우 차단되지 않습니다.
+
+
+## <a name="blocking-personal-ios-devices"></a>개인용 iOS 디바이스 차단
+기본적으로 Intune은 iOS 디바이스를 개인 소유로 분류합니다. 회사 소유로 분류하려면 iOS 디바이스가 다음 조건 중 하나를 충족해야 합니다.
+- 일련 번호 또는 IMEI로 등록됨.
+- 자동화된 장비 등록(이전의 장비 등록 프로그램)을 사용하여 등록됨
 
 
 ## <a name="change-enrollment-restriction-priority"></a>등록 제한 우선 순위 변경

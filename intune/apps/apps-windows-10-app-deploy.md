@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04e943f573fb2485a2ef7f1e3245f08d4222d142
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: b7772a7476f197f455191debf8e252ba83e06f49
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830553"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379750"
 ---
-# <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
+# <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
-현재 Microsoft Intune은 Windows 10 디바이스에서 다양한 앱 형식 및 배포 시나리오를 지원합니다. Intune에 앱이 추가되면 사용자와 디바이스에 해당 앱을 할당할 수 있습니다. 다음 정보에서는 지원되는 Windows 10 시나리오와 관련된 자세한 세부 정보를 제공합니다. 또한 Windows에 앱을 배포할 때 참고할 키 정보도 제공합니다. 
+Microsoft Intune은 Windows 10 디바이스에서 다양한 앱 형식 및 배포 시나리오를 지원합니다. Intune에 앱이 추가되면 사용자와 디바이스에 해당 앱을 할당할 수 있습니다. 이 문서에서는 지원되는 Windows 10 시나리오에 대한 자세한 내용을 제공하고 Windows에 앱을 배포할 때 유의해야 하는 주요 세부 정보를 다룹니다. 
 
-기간 업무(LOB) 앱 및 비즈니스용 Microsoft 스토어 앱은 Windows 10 디바이스에서 지원되는 앱 형식입니다. Windows 앱의 파일 확장명에는 **.msi**, **.appx** 및 **.appxbundle**이 포함됩니다.  
+기간 업무(LOB) 앱 및 비즈니스용 Microsoft 스토어 앱은 Windows 10 디바이스에서 지원되는 앱 형식입니다. Windows 앱의 파일 확장명에는 .msi, .appx 및 .appxbundle이 포함됩니다.  
 
 > [!Note]
-> 최신 앱을 배포하는 데 필요한 최소 Windows 10 업데이트는 다음과 같습니다.
+> 최신 앱을 배포하려면 다음 이상이 필요합니다.
 > - Windows 10 1803의 경우, [2018년 5월 23일—KB4100403(OS 빌드 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)입니다.
 > - Windows 10 1709의 경우, [2018년 6월 21일—KB4284822(OS 빌드 16299.522)](https://support.microsoft.com/help/4284822)입니다.
 >
@@ -39,52 +39,52 @@ ms.locfileid: "71830553"
 >
 > Windows 10 Home 버전을 실행 중인 디바이스에서는 LOB 앱 배포를 지원하지 않습니다.
 
-## <a name="windows-10-line-of-business-apps"></a>Windows 10 기간 업무 앱
+## <a name="windows-10-lob-apps"></a>Windows 10 LOB 앱
 
-서명하고 Intune 관리자 콘솔에 업로드한 Windows 10 LOB 앱에는 UWP(유니버설 Windows 플랫폼) 앱 및 Windows 앱 패키지(AppX) 같은 최신 앱뿐만 아니라, 간단한 MSI(Microsoft Installer) 패키지 파일 같은 Win 32 앱도 포함될 수 있습니다. LOB 앱의 업데이트는 매번 관리자가 수동으로 업로드하고 배포해야 합니다. 배포되는 업데이트는 사용자 개입 없이 앱이 설치된 최종 사용자 디바이스에서 자동으로 설치됩니다. 사용자에게 업데이트에 대한 제어권이 없습니다. 
+Windows 10 LOB 앱을 서명하고 Intune 관리 콘솔에 업로드할 수 있습니다. 여기에는 유니버설 Windows 플랫폼(UWP) 앱 및 Windows 앱 패키지(AppX)와 같은 최신 앱뿐만 아니라 간단한 Microsoft Installer 패키지 파일(MSI)과 같은 Win 32 앱이 포함될 수 있습니다. 관리자는 LOB 앱의 업데이트를 수동으로 업로드하고 배포해야 합니다. 이러한 업데이트는 앱이 설치된 사용자 장치에 자동으로 설치됩니다. 사용자 개입이 필요하지 않으며 사용자가 업데이트를 제어할 수 없습니다. 
 
 ## <a name="microsoft-store-for-business-apps"></a>비즈니스용 Microsoft 스토어 앱
 
-비즈니스용 Microsoft Store 관리자 포털에서 구매한 최신 앱인 비즈니스용 Microsoft Store 앱은 관리용 Microsoft Intune에 동기화됩니다. 이 앱은 **온라인에서 라이선스**되거나 **오프라인에서 라이선스**될 수 있습니다. 비즈니스용 Microsoft 스토어 앱의 업데이트는 관리자에 의한 추가 작업이 필요 없이 Microsoft Store에서 직접 관리합니다. 사용자 지정 URI(Uniform Resource Identifier)를 사용하여 특정 앱에 대한 업데이트를 방지할 수도 있습니다. 자세한 내용은 [엔터프라이즈 앱 관리 - 앱의 자동 업데이트 방지](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates)를 참조합니다. 디바이스에서 최종 사용자는 모든 비즈니스용 Microsoft 스토어 앱에 대한 업데이트를 사용하지 못하도록 설정할 수도 있습니다. 
+비즈니스용 Microsoft Store 앱은 비즈니스용 Microsoft Store 관리 포털에서 구매하는 최신 앱입니다. 그런 다음 관리를 위해 Microsoft Intune으로 동기화됩니다. 이 앱은 온라인에서 라이선스되거나 오프라인에서 라이선스될 수 있습니다. Microsoft Store는 관리자에 의한 추가 작업 없이 업데이트를 직접 관리합니다. 사용자 지정 URI(Uniform Resource Identifier)를 사용하여 특정 앱에 대한 업데이트를 방지할 수도 있습니다. 자세한 내용은 [엔터프라이즈 앱 관리 - 앱의 자동 업데이트 방지](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates)를 참조합니다. 사용자는 모든 비즈니스용 Microsoft Store 앱에 대한 업데이트를 사용하지 못하도록 설정할 수도 있습니다. 
 
 ### <a name="categorize-microsoft-store-for-business-apps"></a>비즈니스용 Microsoft Store 앱 범주화 
-비즈니스용 Microsoft Store 앱을 범주화하려면 다음 단계를 따르세요. 
+비즈니스용 Microsoft Store 앱을 범주화하려면 
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **클라이언트 앱** > **앱** > 비즈니스용 Microsoft Store 앱 선택 > **앱 정보** > **범주**를 선택합니다. 
-3. 드롭다운 메뉴에서 범주를 선택합니다.
+2. **클라이언트 앱** > **앱**을 선택합니다. 비즈니스용 Microsoft Store 앱을 선택합니다. 그런 다음 **앱 정보** > **범주**를 선택합니다. 
+3. 범주를 선택합니다.
 
-## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 디바이스에서 앱 설치
-앱 형식에 따라 두 가지 방법 중 하나로 Windows 10 디바이스에 앱을 설치할 수 있습니다.
+## <a name="install-apps-on-windows-10-devices"></a>Windows 10 디바이스에서 앱 설치
+앱 유형에 따라 두 가지 방법 중 하나로 Windows 10 디바이스에 앱을 설치할 수 있습니다.
 
 - **사용자 컨텍스트**: 사용자 컨텍스트에서 앱을 배포할 경우 관리되는 앱은 사용자가 디바이스에 로그인할 때 해당 사용자를 위해 디바이스에 설치됩니다. 사용자가 디바이스에 로그인할 때까지 앱 설치는 성공할 수 없습니다. 
-  - 최신 기간 업무 앱 및 비즈니스용 Microsoft 스토어 앱(온라인 및 오프라인)은 사용자 컨텍스트에서 배포될 수 있으며 필수적이고 사용 가능한 의도를 지원합니다.
-  - **사용자 모드** 또는 **이중 모드**로 빌드된 Win32 앱은 사용자 컨텍스트에서 배포할 수 있으며 **필수** 및 **사용 가능** 의도를 모두 지원합니다. 
+  - 최신 LOB(기간 업무) 앱 및 비즈니스용 Microsoft Store 앱(온라인 및 오프라인 모두)은 사용자 컨텍스트에 배포할 수 있습니다. 앱은 필수 및 사용 가능 의도를 모두 지원합니다.
+  - 사용자 모드 또는 이중 모드로 빌드된 Win32 앱은 사용자 컨텍스트에서 배포할 수 있으며 필수 및 사용 가능 의도를 모두 지원합니다. 
 - **디바이스 컨텍스트**: 디바이스 컨텍스트에서 앱을 배포하면 Intune에서 관리되는 앱을 디바이스에 직접 설치합니다.
-  - 최신 기간 업무 앱 및 오프라인에서 라이선스된 비즈니스용 Microsoft Store 앱은 디바이스 컨텍스트에서 배포될 수 있으며 필수적인 의도만 지원합니다.
-  - **컴퓨터 모드** 또는 **이중 모드**로 빌드된 Win32 앱은 사용자 컨텍스트에서 배포할 수 있으며 **필수** 의도만 지원합니다.
+  - 최신 기간 업무 앱 및 오프라인에서 라이선스된 비즈니스용 Microsoft Store 앱은 디바이스 컨텍스트에서 배포될 수 있습니다. 이러한 앱은 필수 의도만 지원합니다.
+  - 컴퓨터 모드 또는 이중 모드로 빌드된 Win32 앱은 디바이스 컨텍스트에서 배포할 수 있으며 필수 의도만 지원합니다.
 
 > [!NOTE]
-> **이중 모드** 앱으로 빌드된 Win32 앱의 경우 관리자는 해당 인스턴스와 연결된 모든 할당에 대해 앱이 **사용자 모드** 또는 **컴퓨터 모드** 중 어떤 모드의 앱으로 작동하도록 할지 선택해야 합니다. 배포 컨텍스트를 할당마다 변경할 수는 없습니다.  
+> 이중 모드 앱으로 빌드된 Win32 앱의 경우 관리자는 해당 인스턴스와 연결된 모든 할당에 대해 앱이 사용자 모드 또는 컴퓨터 모드 중 어떤 모드로 작동할지 선택해야 합니다. 배포 컨텍스트를 할당마다 변경할 수는 없습니다.  
 
 디바이스 컨텍스트에서 앱을 배포하면 설치가 디바이스 컨텍스트를 지원하는 디바이스를 대상으로 하는 경우에만 성공할 수 있습니다. 또한 디바이스 컨텍스트에서 배포가 지원하는 조건은 다음과 같습니다.
-- 앱이 디바이스 컨텍스트에서 배포되고 사용자를 대상으로 하는 경우 관리자 콘솔에 표시되는 다음 상태 및 오류로 인해 설치가 실패합니다.
+- 앱이 디바이스 컨텍스트에 배포되고 사용자를 대상으로 하는 경우 설치가 실패합니다. 관리 콘솔에 표시되는 상태 및 오류는 다음과 같습니다.
   - 상태: 실패
   - 오류: 사용자는 디바이스 컨텍스트 설치를 대상으로 할 수 없습니다.
-- 앱이 디바이스 컨텍스트에서 배포되지만 디바이스 컨텍스트를 지원하지 않는 디바이스를 대상으로 하는 경우 관리자 콘솔에 표시되는 다음 상태 및 오류로 인해 설치가 실패합니다.
+- 앱이 디바이스 컨텍스트에 배포되었지만 디바이스 컨텍스트를 지원하지 않는 장치를 대상으로 하는 경우 설치가 실패합니다. 관리 콘솔에 표시되는 상태 및 오류는 다음과 같습니다.
   - 상태: 실패
   - 오류: 이 플랫폼은 디바이스 컨텍스트 설치를 지원하지 않습니다. 
 
 > [!Note]
-> 특정 배포를 사용하여 앱 할당이 저장되면 최신 앱을 제외하고 해당 할당에 대한 컨텍스트를 변경할 수 없습니다. 최신 앱의 경우 사용자 컨텍스트에서 디바이스 컨텍스트로 컨텍스트를 변경할 수 있습니다. 
+> 특정 배포를 사용하여 앱 할당을 저장한 후에는 최신 앱을 제외하고 해당 할당에 대한 컨텍스트를 변경할 수 없습니다. 최신 앱의 경우 컨텍스트를 사용자 컨텍스트에서 디바이스 컨텍스트로 변경할 수 있습니다. 
 
-단일 사용자/디바이스에서 정책 충돌이 발생하는 경우 마지막 정책을 결정하는 데 사용할 정책 우선 순위는 다음과 같습니다.
+단일 사용자 또는 디바이스에 대한 정책에 충돌이 있는 경우 다음 우선 순위가 적용됩니다.
 - 디바이스 컨텍스트 정책은 사용자 컨텍스트 정책보다 우선 순위가 높습니다. 
 - 설치 정책이 제거 정책보다 우선 순위가 높습니다.
 
-Microsoft Intune을 사용하여 앱을 할당하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 그룹에 앱 할당](apps-deploy.md) 및 [Microsoft Intune에서 앱 할당 포함 및 제외](apps-inc-exl-assignments.md)를 참조하세요. Intune의 앱 형식에 대한 자세한 내용은 [Microsoft Intune에 앱 추가](apps-add.md)를 참조하세요.
+자세한 내용은 [Microsoft Intune에서 앱 할당 포함 및 제외](apps-inc-exl-assignments.md)를 참조하세요. Intune의 앱 형식에 대한 자세한 내용은 [Microsoft Intune에 앱 추가](apps-add.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
-- 그룹에 앱을 할당하는 방법에 대한 자세한 내용은 [Microsoft intune을 사용하여 그룹에 앱 할당](apps-deploy.md)을 참조하세요.
-- 앱 할당 모니터링에 대한 자세한 내용은 [앱을 모니터링하는 방법](apps-monitor.md)을 참조하세요.
+- [Microsoft Intune을 사용하여 그룹에 앱 할당](apps-deploy.md)
+- [앱을 모니터링하는 방법](apps-monitor.md)

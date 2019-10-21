@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aafce5cefc26f4f86540a6858249e0bdd0af2328
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723166"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350038"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용  
 
@@ -135,7 +135,8 @@ Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defe
 2. **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
 3. **이름**과 **설명**을 입력합니다.
 4. **플랫폼**에서 **Windows 10 이상**을 선택합니다.
-5. **Microsoft Defender ATP** 설정에서 **디바이스가 머신 위험 점수나 그 아래에 있어야 함**을 기본 설정 수준으로 설정합니다. 
+5. **설정**에서 **Microsoft Defender ATP**를 선택합니다.
+6. **디바이스가 머신 위험 점수나 그 아래에 있어야 함**을 원하는 수준으로 설정합니다. 
    
    위협 수준 분류는 [Microsoft Defender ATP에 의해 결정](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue)됩니다.
 
@@ -145,7 +146,7 @@ Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defe
    - **높음**: 이 수준은 최소 보안이며 모든 위협 수준을 허용합니다. 따라서 높음, 보통 또는 낮은 위협 수준의 디바이스가 규격으로 간주됩니다.
 
 6. **확인**, **만들기**를 차례로 선택하여 변경 내용을 저장하고 정책을 만듭니다.  
-7. 해당하는 그룹에 [디바이스 준수 정책을 할당](create-compliance-policy.md#assign-user-groups)합니다.
+7. 해당하는 그룹에 [디바이스 준수 정책을 할당](create-compliance-policy.md#assign-the-policy)합니다.
 
 
 

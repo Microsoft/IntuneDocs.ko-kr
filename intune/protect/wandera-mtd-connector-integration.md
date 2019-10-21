@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bf8fd189e50a704e96fc24d0804c5c5d6f91bb4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 64a560dc79d3c03f52b8e9389c3e47e3e256ee58
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728223"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306670"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Intune과 Wandera Mobile Threat Protection 통합  
 
@@ -72,7 +72,7 @@ Wandera용 ‘EMM Connect’를 설정하려면 1회성 구성 프로세스를 I
 
 7. RADAR 콘솔을 사용할 때 **EMM Label**(EMM 레이블) 아래에 표시되는 **SyncOnly** 그룹의 이름을 복사합니다. 이 이름은 Intune에서 Wandera와의 동기화를 위해 그룹을 구성할 때 사용합니다.
 
-   ![통합 및 사용 권한](./media/wandera-mtd-connector-integration/sync-group-name.png) 
+   ![동기화 그룹](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
 8. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 콘솔로 돌아가 Wandera MTD 커넥터를 편집합니다. 사용 가능한 토글을 **켜기**로 설정하고 구성을 **저장**합니다.  
 

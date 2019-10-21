@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 542d9c7890f9484311ca8e6400d0a75a41e13d7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 94480c8dcfe44dc451ea6a2409f52f06c2a87cf5
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725701"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350085"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>관리되는 iOS 디바이스용 앱 구성 정책 추가
 
@@ -108,7 +108,7 @@ iOS 디바이스의 경우 다음 키/값 쌍을 사용합니다.
 | **값** | <ul><li>**사용**: 유일하게 허용되는 계정은 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 키로 정의된 관리되는 사용자 계정입니다.</li><li>**사용 안 함**(또는 **사용**과 대소문자를 구분하지 않고 일치하는 모든 값): 모든 계정이 허용됩니다.</li></ul> |.
 
    > [!NOTE]
-   > 다중 ID로 구성된 조직 계정만 허용하는 경우에는 iOS용 OneDrive 10.34 이상 및 iOS용 Outlook 2.99.0 이상을 사용해야 하고 앱을 [Intune 앱 보호 정책](app-protection-policy.md)의 대상으로 지정해야 합니다.
+   > 다중 ID로 구성된 조직 계정만 허용하는 경우에는 iOS용 OneDrive 10.34 이상, iOS용 Outlook 2.99.0 이상 또는 iOS용 Edge 44.8.7 이상을 사용해야 하고 앱을 [Intune 앱 보호 정책](app-protection-policy.md)의 대상으로 지정해야 합니다.
 
 ## <a name="enter-xml-data"></a>XML 데이터 입력
 

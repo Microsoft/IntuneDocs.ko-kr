@@ -82,6 +82,10 @@
           items:
             - name: 회사 포털 앱
               href: store-apps-company-portal-app.md
+            - name: Windows 10용 Microsoft Edge
+              href: apps-windows-edge.md
+            - name: macOS용 Microsoft Edge
+              href: apps-edge-macos.md
         - name: PowerShell 스크립트
           href: intune-management-extension.md
     - name: 앱 할당
