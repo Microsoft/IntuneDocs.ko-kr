@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230ee8c1206a4d091661b51dd239a4cb0b1a1963
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814046"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508850"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Intune Exchange Connector 문제 해결
 
@@ -32,7 +33,7 @@ ms.locfileid: "71814046"
 
 Intune에서 Exchange Connector 문제 해결을 시작 하기 전에 견고한 기반 작업을 수행할 수 있도록 몇 가지 기본적인 정보를 수집 하세요. 이 방법은 문제의 특성을 더 잘 이해 하 고 더 빠르게 해결 하는 데 도움이 될 수 있습니다.
 
-- 프로세스가 설치 요구 사항을 충족 하는지 확인 합니다. [온-프레미스 Intune Exchange Connector 설정](exchange-connector-install.md)을 참조 하세요.
+- 프로세스가 설치 요구 사항을 충족 하는지 확인 합니다. [온-프레미스 Intune Exchange 커넥터 설정](exchange-connector-install.md)을 참조하세요.
 - 계정에 Exchange 및 Intune 관리자 권한이 모두 있는지 확인 합니다.
 - 완전 하 고 정확한 오류 메시지 텍스트, 세부 정보 및 메시지가 표시 되는 위치를 확인 합니다.
 - 문제가 시작 된 시기를 확인 합니다. 
@@ -44,8 +45,8 @@ Intune에서 Exchange Connector 문제 해결을 시작 하기 전에 견고한 
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Powershell을 사용하여 Exchange 커넥터에 더 많은 데이터를 가져오는 문제
 
-- 사서함에 대 한 모든 모바일 장치 목록을 가져오려면 `Get-ActiveSyncDeviceStatistics -mailbox mbx`을 사용 합니다.
-- 사서함에 대 한 SMTP 주소 목록을 가져오려면 `Get-Mailbox -Identity user | select emailaddresses | fl`을 사용 합니다.
+- 사서함에 대 한 모든 모바일 장치 목록을 가져오려면 `Get-ActiveSyncDeviceStatistics -mailbox mbx`를 사용 합니다.
+- 사서함에 대 한 SMTP 주소 목록을 가져오려면 `Get-Mailbox -Identity user | select emailaddresses | fl`를 사용 합니다.
 - 디바이스의 액세스 상태에 대한 상세 정보를 가져오려면 다음을 사용합니다. `Get-CASMailbox <upn> | fl`
 
 ## <a name="review-the-connector-configuration"></a>커넥터 구성 검토

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f462b04166a2204d47f288d225e1490f8d3ea2a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e0be7627403cc95316a99e841127a137e0279ff1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736028"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508976"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Intune에 대한 Windows MDM 보안 기준 설정
 Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 원하는 MDM 보안 기준 설정을 확인 합니다. 이 기준선의 설정에 대 한 기본값은 적용 가능한 장치에 권장 되는 구성을 나타내며, 다른 보안 기준 또는이 기준의 다른 버전의 기준선 기본값과 일치 하지 않을 수 있습니다.
@@ -171,19 +172,19 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
 자세한 내용은 Windows 설명서의 [정책 CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser)를 참조하세요.  
 
 - **Microsoft Edge용 SmartScreen 필요**  
-  Microsoft Edge에서는 Windows Defender SmartScreen(설정됨)을 사용하여 기본적으로 잠재적 피싱 사기 및 악성 소프트웨어로부터 사용자를 보호합니다. 또한 기본적으로 사용자가 Windows Defender SmartScreen을 비활성화(해제)할 수 없습니다. 이 정책을 사용하도록 설정하면 Windows Defender SmartScreen을 해제하고 사용자가 설정하는 것을 방지합니다. 사용자가 Windows Defender SmartScreen을 설정하거나 해제하도록 선택하게 하려면 이 정책을 구성하지 않습니다.  
+  Microsoft Edge에서는 Microsoft Defender SmartScreen(설정됨)을 사용하여 기본적으로 잠재적 피싱 사기 및 악성 소프트웨어로부터 사용자를 보호합니다. 또한 기본적으로 사용자가 Microsoft Defender SmartScreen을 비활성화(해제)할 수 없습니다. 이 정책을 활성화하면 Microsoft Defender SmartScreen을 해제하고 사용자가 설정하는 것을 방지합니다. 사용자가 Microsoft Defender SmartScreen을 설정하거나 해제하도록 선택하게 하려면 이 정책을 구성하지 않습니다.  
   [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067029)   
   
   **기본값**: 예  
   
 - **악성 사이트 액세스 차단**  
-  기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 사이트에 대한 Windows Defender SmartScreen 경고를 무시하고 계속 사이트를 탐색할 수 습니다. 그러나 이 정책을 사용하면 사용자가 경고를 무시하는 것을 방지하고 계속 사이트를 탐색하는 것을 차단하도록 Microsoft Edge를 구성할 수 있습니다.  
+  기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 사이트에 대한 Microsoft Defender SmartScreen 경고를 무시하고 계속 사이트를 탐색할 수 있습니다. 그러나 이 정책을 사용하면 사용자가 경고를 무시하는 것을 방지하고 계속 사이트를 탐색하는 것을 차단하도록 Microsoft Edge를 구성할 수 있습니다.  
   [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067040)   
   
   **기본값**: 예  
   
 - **확인되지 않은 파일 다운로드 차단**  
-  기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 파일에 대한 Windows Defender SmartScreen 경고를 무시하고 확인되지 않은 파일의 다운로드를 계속할 수 있습니다. 이 정책을 사용하도록 설정하면 사용자가 경고를 무시할 수 없도록 방지하고 확인되지 않은 파일을 다운로드하는 것을 차단합니다.  
+  기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 파일에 대한 Microsoft Defender SmartScreen 경고를 무시하고 확인되지 않은 파일의 다운로드를 계속할 수 있습니다. 이 정책을 사용하도록 설정하면 사용자가 경고를 무시할 수 없도록 방지하고 확인되지 않은 파일을 다운로드하는 것을 차단합니다.  
   [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067023)  
   
   **기본값**: 예  
@@ -272,7 +273,7 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **가상화 기반 보안** 
+- **가상화 기반 보안**  
   **기본값**: 보안 부팅을 사용 하 여 VBS 사용
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -1670,7 +1671,7 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
 
   **기본**: 사용
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="microsoft-defender"></a>Microsoft Defender  
 자세한 내용은 Windows 설명서의 [정책 CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)를 참조하세요.  
 
 - **들어오는 이메일 메시지 검색**  
@@ -1686,7 +1687,7 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
   **기본값**: 차단
   
 - **Defender 샘플 제출 동의 형식**  
-  데이터를 전송하려면 Windows Defender의 사용자 동의 수준을 확인합니다. 필요한 동의가 이미 부여된 경우 Windows Defender에서는 해당 동의를 제출합니다. 그렇지 않은 경우(및 사용자가 요청을 지정하지 않은 경우) UI는 데이터를 전송하려면 먼저 사용자 동의(Defender/AllowCloudProtection을 허용하는 경우)를 요청합니다.  
+  데이터를 전송하려면 Microsoft Defender의 사용자 동의 수준을 확인합니다. 필요한 동의가 이미 부여된 경우 Microsoft Defender에서는 해당 동의를 제출합니다. 그렇지 않은 경우(및 사용자가 요청을 지정하지 않은 경우) UI는 데이터를 전송하려면 먼저 사용자 동의(Defender/AllowCloudProtection을 허용하는 경우)를 요청합니다.  
   [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067131)  
   
   **기본**: 자동으로 안전 샘플 보내기 
@@ -1702,7 +1703,7 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
   **기본값**: 차단
   
 - **자격 증명 도용 방지 유형**  
-  Windows Defender Credential Guard는 가상화 기반 보안을 사용하여 권한 있는 시스템 소프트웨어만 액세스할 수 있도록 비밀을 격리합니다. 이러한 암호에 대한 무단 액세스는 Pass-the-Hash 또는 Pass-The-Ticket과 같은 자격 증명 도난 공격을 초래할 수 있습니다. Windows Defender Credential Guard는 NTLM 암호 해시, Kerberos 티켓 부여 티켓 및 애플리케이션에서 도메인 자격 증명으로 저장된 자격 증명을 보호하여 이러한 공격을 방지합니다.  
+  Microsoft Defender Credential Guard는 가상화 기반 보안을 사용하여 권한 있는 시스템 소프트웨어만 액세스할 수 있도록 비밀을 격리합니다. 이러한 암호에 대한 무단 액세스는 Pass-the-Hash 또는 Pass-The-Ticket과 같은 자격 증명 도난 공격을 초래할 수 있습니다. Microsoft Defender Credential Guard는 NTLM 암호 해시, Kerberos 티켓 부여 티켓 및 애플리케이션에서 도메인 자격 증명으로 저장된 자격 증명을 보호하여 이러한 공격을 방지합니다.  
   [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **기본값**: 사용
@@ -1721,9 +1722,9 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **네트워크 보호 유형**  
-  이 정책을 사용하면 Windows Defender Exploit Guard에서 네트워크 보호(차단/감사)를 설정 또는 해제할 수 있습니다. 네트워크 보호는 모든 앱을 사용하는 직원이 인터넷에서 피싱 사기, 악용 호스팅 사이트 및 악성 콘텐츠에 액세스하지 못하도록 보호하는 Windows Defender Exploit Guard의 기능입니다. 이 기능에는 타사 브라우저의 위험한 사이트 연결을 방지하는 것이 포함됩니다. 값 형식은 정수입니다. 이 설정을 사용하도록 설정하면 네트워크 보호가 설정되어 있어 직원이 해제할 수 없습니다. 차단 및 감사 옵션에서 해당 동작을 제어할 수 있습니다. "차단" 옵션이 포함된 이 정책을 사용하도록 설정하면 사용자 및 앱이 위험한 도메인에 연결되지 않도록 차단됩니다. Windows Defender Security Center에서 이 작업을 확인할 수 있습니다. "감사" 옵션이 포함된 이 정책을 사용하도록 설정하면 사용자/앱이 위험한 도메인에 연결하는 것이 차단되지 않습니다. 그러나 Windows Defender Security Center에서 여전히 이 작업을 확인할 수 있습니다. 이 정책을 사용하지 않도록 설정하면 사용자/앱이 위험한 도메인에 연결하는 것이 차단되지 않습니다. Windows Defender Security Center에서 어떤 네트워크 작업도 표시되지 않습니다. 이 정책을 구성하지 않으면 네트워크 차단 기능은 기본적으로 사용하지 않도록 설정됩니다.  
-  [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067102)  
+- **네트워크 보호**  
+  이 정책을 사용하면 Microsoft Defender Exploit Guard에서 네트워크 보호(차단/감사)를 설정 또는 해제할 수 있습니다. 네트워크 보호는 모든 앱을 사용하는 직원이 인터넷에서 피싱 사기, 악용 호스팅 사이트 및 악성 콘텐츠에 액세스하지 못하도록 보호하는 Microsoft Defender Exploit Guard의 기능입니다. 이 기능에는 타사 브라우저의 위험한 사이트 연결을 방지하는 것이 포함됩니다. 값 형식은 정수입니다. 이 설정을 사용하도록 설정하면 네트워크 보호가 설정되어 있어 직원이 해제할 수 없습니다. 차단 및 감사 옵션에서 해당 동작을 제어할 수 있습니다. "차단" 옵션이 포함된 이 정책을 사용하도록 설정하면 사용자 및 앱이 위험한 도메인에 연결되지 않도록 차단됩니다. Microsoft Defender Security Center에서 이 작업을 확인할 수 있습니다. "감사" 옵션이 포함된 이 정책을 사용하도록 설정하면 사용자/앱이 위험한 도메인에 연결하는 것이 차단되지 않습니다. 그러나 Microsoft Defender Security Center에서 여전히 이 작업을 확인할 수 있습니다. 이 정책을 사용하지 않도록 설정하면 사용자/앱이 위험한 도메인에 연결하는 것이 차단되지 않습니다. Microsoft Defender Security Center에서 어떤 네트워크 작업도 표시되지 않습니다. 이 정책을 구성하지 않으면 네트워크 차단 기능은 기본적으로 사용하지 않도록 설정됩니다.  
+  [자세한 정보](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **기본값**: 사용
   
@@ -1733,13 +1734,13 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
   **기본값**: 매일
   
 - **클라우드 제공 보호**  
-  PC를 최대한 잘 보호하기 위해 Windows Defender는 발견한 모든 문제의 정보를 Microsoft로 보냅니다. Microsoft에서는 해당 정보를 분석하고, 사용자 및 기타 고객에게 영향을 미치는 문제에 대해 자세히 알아본 다음, 향상된 솔루션을 제공합니다.  
+  PC를 최대한 잘 보호하기 위해 Microsoft Defender는 발견한 모든 문제의 정보를 Microsoft로 보냅니다. Microsoft에서는 해당 정보를 분석하고, 사용자 및 기타 고객에게 영향을 미치는 문제에 대해 자세히 알아본 다음, 향상된 솔루션을 제공합니다.  
   [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067039)
   
   **기본값**: 예  
 
 - **잠재적으로 필요 없는 Defender 앱 작업**  
-  Windows Defender 바이러스 백신의 PUA(잠재적으로 필요 없는 애플리케이션) 보호 기능을 사용하면 PUA가 네트워크의 엔드포인트에서 다운로드 및 설치하는 것을 식별하고 차단할 수 있습니다. 이러한 애플리케이션은 바이러스, 맬웨어 또는 기타 유형의 위협을 고려하지 않지만, 해당 성능이나 사용에 부정적인 영향을 미치는 작업을 엔드포인트에서 수행할 수 있습니다. PUA는 평판이 좋지 않은 것으로 간주되는 애플리케이션을 참조할 수도 있습니다. 일반적인 PUA 동작에는 다음이 포함됩니다. 문제를 검색하고, 오류를 수정하려면 비용 지불을 요청하지만, 엔드포인트에서 상태를 유지하고, 변경이나 최적화를 수행하지 않는 웹 브라우저 드라이버 및 레지스트리 최적화 프로그램에 다양한 유형의 소프트웨어 묶음 AD를 삽입("Rogue 바이러스 백신" 프로그램이라고도 함)한 애플리케이션. 이 애플리케이션은 네트워크가 맬웨어에 감염될 위험을 높이고 맬웨어 감염 식별을 더 어렵게 만들고 애플리케이션을 정리하는 데 IT 리소스를 낭비할 수 있습니다.  
+  Microsoft Defender 바이러스 백신의 PUA(잠재적으로 필요 없는 애플리케이션) 보호 기능을 사용하면 PUA가 네트워크의 엔드포인트에서 다운로드 및 설치하는 것을 식별하고 차단할 수 있습니다. 이러한 애플리케이션은 바이러스, 맬웨어 또는 기타 유형의 위협을 고려하지 않지만, 해당 성능이나 사용에 부정적인 영향을 미치는 작업을 엔드포인트에서 수행할 수 있습니다. PUA는 평판이 좋지 않은 것으로 간주되는 애플리케이션을 참조할 수도 있습니다. 일반적인 PUA 동작에는 다음이 포함됩니다. 문제를 검색하고, 오류를 수정하려면 비용 지불을 요청하지만, 엔드포인트에서 상태를 유지하고, 변경이나 최적화를 수행하지 않는 웹 브라우저 드라이버 및 레지스트리 최적화 프로그램에 다양한 유형의 소프트웨어 묶음 AD를 삽입("Rogue 바이러스 백신" 프로그램이라고도 함)한 애플리케이션. 이 애플리케이션은 네트워크가 맬웨어에 감염될 위험을 높이고 맬웨어 감염 식별을 더 어렵게 만들고 애플리케이션을 정리하는 데 IT 리소스를 낭비할 수 있습니다.  
   [자세한 정보](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
   
   **기본값**: 차단  
@@ -1751,7 +1752,7 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
   **기본값**: 차단
   
 - **전체 검색 중 이동식 드라이브 검색**  
-  전체 검색 중 이동식 드라이브(예: 플래시 드라이브)에서 Windows Defender가 악성 및 필요 없는 소프트웨어를 검색하게 합니다. Windows Defender 바이러스 백신은 USB 디바이스에서 모든 파일을 실행 전에 검색합니다.  
+  전체 검색 중 이동식 드라이브(예: 플래시 드라이브)에서 Microsoft Defender가 악성 및 필요 없는 소프트웨어를 검색하게 합니다. Microsoft Defender 바이러스 백신은 USB 디바이스에서 모든 파일을 실행 전에 검색합니다.  
   [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067036)  
   
   **기본값**: 예  
@@ -1762,7 +1763,7 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
   **기본값**: 예
   
 - **동작 모니터링**  
-  Windows Defender 동작 모니터링 기능을 허용 하거나 허용 하지 않습니다. Windows 10에 포함된 이러한 센서는 운영 체제에서 동작 신호를 수집하고 처리하며, 이 센서 데이터를 Microsoft Defender ATP의 격리된 프라이빗 클라우드 인스턴스로 보냅니다.  
+  Microsoft Defender 동작 모니터링 기능을 허용 하거나 허용 하지 않습니다. Windows 10에 포함된 이러한 센서는 운영 체제에서 동작 신호를 수집하고 처리하며, 이 센서 데이터를 Microsoft Defender ATP의 격리된 프라이빗 클라우드 인스턴스로 보냅니다.  
   [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **기본값**: 예
@@ -1816,7 +1817,7 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-## <a name="windows-defender-firewall"></a>Windows Defender 방화벽  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender 방화벽  
 자세한 내용은 Windows 프로토콜 설명서에서 [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) 를 참조 하세요.  
 
 - **방화벽 프로필 도메인**  
@@ -1985,11 +1986,11 @@ Windows 10 이상을 실행 하는 장치에 대해 Microsoft Intune에서 지 �
   - **전자 메일 초대 방법**
 
 
-*[새로운 기능]* [**WIndows Defender**](#windows-defender):
+*[새로운 기능]* [**Microsoft Defender**](#microsoft-defender):
 - **자식 프로세스에서 Adobe Reader 시작**  
 - **자식 프로세스에서 Office 통신 앱 시작** 
 
-*[새로운 기능]* [**Windows Defender 방화벽**](#windows-defender-firewall)
+*[새로운 방법]* [ **Microsoft Defender 방화벽**](#microsoft-defender-firewall)
 - **방화벽 프로필 도메인**  
   - **인바운드 연결 차단됨**  
   - **아웃바운드 연결 필요**  

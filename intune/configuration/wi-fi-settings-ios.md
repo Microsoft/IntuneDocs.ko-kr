@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5adde9049f1e5f88df4a55b473f59f1d4a08e396
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733870"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593777"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스의 Wi-Fi 설정 추가
 
@@ -79,7 +80,13 @@ ms.locfileid: "71733870"
     - **서버 트러스트** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 무선 네트워크 액세스 서버에 **추가**합니다. 예를 들어 `mywirelessserver.contoso.com` 또는 `mywirelessserver`을(를) 추가합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
     - **서버 유효성 검사를 위한 루트 인증서**: 기존 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서를 통해 클라이언트는 무선 네트워크 액세스 서버의 인증서를 신뢰할 수 있습니다.
 
-    - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)** : 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
+    - **클라이언트 인증** **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
+      
+      - **파생 된 자격 증명**: 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 그렇게 하 라는 메시지를 표시 합니다.
+      
+      - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
+
+    - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
   - **EAP-TTLS**: 또한 다음을 입력합니다.
 
@@ -88,6 +95,8 @@ ms.locfileid: "71733870"
 
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
+      - **파생 된 자격 증명**: 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 그렇게 하 라는 메시지를 표시 합니다.  
+      
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 또한 다음을 입력합니다.
         - **EAP 이외의 방법(내부 ID)** : 연결을 인증할 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
 
@@ -106,6 +115,8 @@ ms.locfileid: "71733870"
 
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
+      - **파생 된 자격 증명**: 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 그렇게 하 라는 메시지를 표시 합니다.  
+      
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 
 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.

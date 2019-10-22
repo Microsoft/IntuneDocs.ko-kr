@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: de367f28f3f1c7731e5ab67d904aec799925cc03
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733727"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503445"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune 앱 SDK Xamarin 바인딩
 
@@ -92,7 +93,7 @@ Intune SDK가 작동하려면 [인증](https://azure.microsoft.com/documentation
       ```csharp
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
-### <a name="sample-applications"></a>샘플 응용 프로그램
+### <a name="sample-applications"></a>샘플 애플리케이션
 Xamarin.ios 앱에서 MAM 기능을 강조 표시 하는 샘플 응용 프로그램은 [GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)에서 사용할 수 있습니다.
 
 > [!NOTE] 
@@ -108,9 +109,9 @@ Xamarin.ios 앱에서 MAM 기능을 강조 표시 하는 샘플 응용 프로그
 Intune App SDK 통합에 대한 전체 개요는 [Android용 Microsoft Intune App SDK 개발자 가이드](app-sdk-android.md)에서 확인할 수 있습니다. 이 가이드를 읽고 Intune App SDK를 Xamarin 앱과 통합할 때, 다음 섹션에서는 Java에서 개발된 네이티브 Android 앱과 C#에서 개발된 Xamarin 앱의 구현 간의 차이점을 집중 조명합니다. 이 섹션은 보충으로 취급되어야 하며 가이드 전체를 읽는 것으로 대신할 수는 없습니다.
 
 #### <a name="remapper"></a>Remapper
-1\.4428.1 릴리스 부터는 MAM 클래스, 메서드 및 시스템 서비스 교체를 수행 하기 위한 [빌드](app-sdk-android.md#build-tooling) 도구로 xamarin.ios 응용 프로그램에 `Microsoft.Intune.MAM.Remapper` 패키지를 추가할 수 있습니다. Remapper를 포함 하는 경우 응용 프로그램을 빌드할 때 이름이 바뀐 메서드 및 MAM 응용 프로그램 섹션의 MAM 해당 교체 부분이 자동으로 수행 됩니다.
+1\.4428.1 릴리스부터는 MAM 클래스, 메서드 및 시스템 서비스 교체를 수행 하는 [빌드](app-sdk-android.md#build-tooling) 도구로 xamarin.ios 응용 프로그램에 `Microsoft.Intune.MAM.Remapper` 패키지를 추가할 수 있습니다. Remapper를 포함 하는 경우 응용 프로그램을 빌드할 때 이름이 바뀐 메서드 및 MAM 응용 프로그램 섹션의 MAM 해당 교체 부분이 자동으로 수행 됩니다.
 
-Remapper에서 ification의 클래스를 제외 하려면 다음 속성을 프로젝트 `.csproj` 파일에 추가할 수 있습니다.
+Remapper에서 ification의 클래스를 제외 하려면 프로젝트 `.csproj` 파일에 다음 속성을 추가 합니다.
 
 ```xml
   <PropertyGroup>
@@ -219,7 +220,7 @@ Intune SDK Xamarin 바인딩은 장치에 [회사 포털](https://play.google.co
 
 디바이스 등록 없이 앱 보호를 사용하기 위해 사용자가 회사 포털 앱을 통해 디바이스를 등록할 필요가 _**없습니다**_ .
 
-### <a name="sample-applications"></a>샘플 응용 프로그램
+### <a name="sample-applications"></a>샘플 애플리케이션
 Xamarin.ios 및 Xamarin.ios 앱에서 MAM 기능을 강조 표시 하는 샘플 응용 프로그램은 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)에서 사용할 수 있습니다.
 
 ## <a name="support"></a>Support

@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b5a8d45f9fb525010e4d225172a6a1ce22275
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734156"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593781"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 디바이스에 대한 VPN 설정 추가
 
@@ -72,6 +73,8 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
     > [!NOTE]
     > 사용자 이름과 암호를 Cisco IPsec VPN에 대한 인증 방법으로 사용하는 경우 사용자 지정 Apple Configurator 프로필을 통해 SharedSecret을 전달해야 합니다.
 
+  - **파생 된 자격 증명**: 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 그렇게 하 라는 메시지를 표시 합니다.
+
 - **제외된 URL**(Zscaler에만 해당): Zscaler VPN에 연결되면 Zscaler 클라우드 외부에서 나열된 URL에 액세스할 수 있습니다. 
 
 - **분할 터널링**: 디바이스에서 트래픽에 따라 사용할 연결을 결정할 수 있도록 **사용** 또는 **사용 안 함**으로 설정합니다. 예를 들어 호텔에 있는 사용자는 VPN 연결을 사용하여 작업 파일에 액세스하지만, 일반적인 웹 검색에는 호텔의 표준 네트워크를 사용합니다.
@@ -105,7 +108,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 
 ## <a name="ikev2-settings"></a>IKEv2 설정
 
-이러한 설정은 **연결 유형** > **IKEv2**를 선택 하는 경우에 적용 됩니다.
+이러한 설정은**IKEv2** >  **연결 유형** 을 선택 하는 경우에 적용 됩니다.
 
 - **원격 식별자**: IKEv2 서버의 네트워크 IP 주소, Fqdn, userfqdn 또는 ASN1DN을 입력 합니다. 예를 들어 `10.0.0.3` 또는 `vpn.contoso.com`을 입력합니다. 일반적으로 [**연결 이름과**](#base-vpn-settings) 같은 값을 입력 합니다 (이 문서 참조). 그러나 IKEv2 서버 설정에 따라 달라 집니다.
 
@@ -135,8 +138,8 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
   - **보통** (기본값): 10 분 마다 keepalive 메시지를 보냅니다.
   - **High**: 60 초 마다 keepalive 메시지를 보냅니다.
 
-- **Tls 버전 범위 최소**: 사용할 최소 TLS 버전을 입력 합니다. @No__t-0, `1.1` 또는 `1.2`를 입력 합니다. 이 값을 비워 두면 기본값 `1.0`이 사용 됩니다.
-- **Tls 버전 범위 최대**: 사용할 최대 tls 버전을 입력 합니다. @No__t-0, `1.1` 또는 `1.2`를 입력 합니다. 이 값을 비워 두면 기본값 `1.2`이 사용 됩니다.
+- **Tls 버전 범위 최소**: 사용할 최소 TLS 버전을 입력 합니다. `1.0`, `1.1` 또는 `1.2`를 입력 합니다. 이 값을 비워 두면 `1.0`의 기본값이 사용 됩니다.
+- **Tls 버전 범위 최대**: 사용할 최대 tls 버전을 입력 합니다. `1.0`, `1.1` 또는 `1.2`를 입력 합니다. 이 값을 비워 두면 `1.2`의 기본값이 사용 됩니다.
 - **완벽 한 전달 보안**: **사용** 을 선택 하 여 PFS (완벽 한 전달 보안)를 설정 합니다. PFS는 세션 키가 손상 된 경우의 영향을 줄이는 IP 보안 기능입니다. **Disable** (기본값)은 PFS를 사용 하지 않습니다.
 - **인증서 해지 확인**: **사용** 을 선택 하 여 VPN 연결이 성공 하도록 허용 하기 전에 인증서가 해지 되지 않았는지 확인 합니다. 이 확인은 가장 좋은 방법입니다. 인증서가 해지 되었는지 여부를 확인 하기 전에 VPN 서버가 시간 초과 되 면 액세스 권한이 부여 됩니다. **사용 안 함** (기본값)은 해지 된 인증서를 확인 하지 않습니다.
 
@@ -155,7 +158,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
     - SHA2-384
     - SHA2-512
   - **Diffie-hellman 그룹**: 원하는 그룹을 선택 합니다. 기본값은 그룹 `2`입니다.
-  - **수명** (분): 키를 회전할 때까지 보안 연결이 활성 상태로 유지 되는 기간을 선택 합니다. @No__t-0과 `1440` 사이의 전체 값 (1440 분은 24 시간)을 입력 합니다. 기본값은 `1440`입니다.
+  - **수명** (분): 키를 회전할 때까지 보안 연결이 활성 상태로 유지 되는 기간을 선택 합니다. `10`와 `1440` 사이에 전체 값을 입력 합니다 (1440 분은 24 시간). 기본값은 `1440`입니다.
 
 - **자식 보안 연결에 대 한 별도의 매개 변수 집합 구성**: iOS를 사용 하면 IKE 연결 및 자식 연결에 대 한 별도의 매개 변수를 구성할 수 있습니다. 
 
@@ -174,7 +177,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
     - SHA2-384
     - SHA2-512
   - **Diffie-hellman 그룹**: 원하는 그룹을 선택 합니다. 기본값은 그룹 `2`입니다.
-  - **수명** (분): 키를 회전할 때까지 보안 연결이 활성 상태로 유지 되는 기간을 선택 합니다. @No__t-0과 `1440` 사이의 전체 값 (1440 분은 24 시간)을 입력 합니다. 기본값은 `1440`입니다.
+  - **수명** (분): 키를 회전할 때까지 보안 연결이 활성 상태로 유지 되는 기간을 선택 합니다. `10`와 `1440` 사이에 전체 값을 입력 합니다 (1440 분은 24 시간). 기본값은 `1440`입니다.
 
 ## <a name="automatic-vpn-settings"></a>자동 VPN 설정
 

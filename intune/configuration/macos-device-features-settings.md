@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816861"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506661"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune에서 macOS 디바이스 기능 설정
 
@@ -71,7 +72,7 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>설정이 적용 되는 대상: 모든 등록 형식
 
-- **파일, 폴더 및 사용자 지정 앱**: 사용자가 장치에 로그인 할 때 열려는 파일, 폴더, 사용자 지정 앱 또는 시스템 앱의 경로를 **추가** 합니다. 조직에 대해 작성 되거나 사용자 지정 된 시스템 앱 또는 앱은 일반적으로 `Applications` 폴더에 있으며, `/Applications/AppName.app`과 유사 합니다. 
+- **파일, 폴더 및 사용자 지정 앱**: 사용자가 장치에 로그인 할 때 열려는 파일, 폴더, 사용자 지정 앱 또는 시스템 앱의 경로를 **추가** 합니다. 조직에 대해 작성 되거나 사용자 지정 된 시스템 앱 또는 앱은 일반적으로 `Applications` 폴더에 있으며 `/Applications/AppName.app`와 유사한 경로가 있습니다. 
 
   여러 파일, 폴더 및 앱을 추가할 수 있습니다. 예를 들어 다음과 같이 입력합니다.  
   
@@ -120,7 +121,7 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 - **로그아웃 사용 안 함**(macOS 10.13 이상): **사용 안 함**을 사용하면 사용자가 로그인한 후 **로그아웃** 옵션을 선택할 수 없습니다. **구성되지 않음**(기본값)을 사용하면 사용자가 디바이스에서 **로그아웃** 메뉴 항목을 선택할 수 있습니다.
 - **잠금 화면 사용 안 함**(macOS 10.13 이상): **사용 안 함**을 사용하면 사용자가 로그인한 후 **잠금 화면** 옵션을 선택할 수 없습니다. **구성되지 않음**(기본값)을 사용하면 사용자가 디바이스에서 **잠금 화면** 메뉴 항목을 선택할 수 있습니다.
 
-## <a name="single-sign-on-app-extension"></a>Single sign-on 앱 확장
+## <a name="single-sign-on-app-extension"></a>Single Sign-On 앱 확장
 
 이 기능은 다음에 적용됩니다.
 
@@ -176,7 +177,7 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 - **최소 암호 길이** (Kerberos만): 사용자의 암호를 만들 수 있는 최소 문자 수를 입력 합니다. **구성 되지 않음** (기본값)은 사용자에 게 최소 암호 길이를 적용 하지 않습니다.
 - **암호 재사용 제한** (Kerberos에만 해당): 이전 암호를 도메인에서 다시 사용할 수 있을 때까지 사용 해야 하는 새 암호의 수를 1-24에서 입력 합니다. **구성 되지 않음** (기본값)은 암호 다시 사용 제한을 적용 하지 않습니다.
 - **최소 암호 사용 기간** (Kerberos만): 사용자가 암호를 변경 하려면 도메인에서 암호를 사용 해야 하는 일 수를 입력 합니다. **구성 되지 않음** (기본값)은 암호를 변경 하기 전에 최소 사용 기간을 적용 하지 않습니다.
-- **암호 만료 알림** (Kerberos에만 해당): 암호가 만료 될 때까지 사용자에 게 알림이 표시 될 때 까지의 기간 (일)을 입력 합니다. **구성 되지 않음** (기본값)은 `15` 일을 사용 합니다.
+- **암호 만료 알림** (Kerberos에만 해당): 암호가 만료 될 때까지 사용자에 게 알림이 표시 될 때 까지의 기간 (일)을 입력 합니다. **구성 되지 않음** (기본값) `15` 일을 사용 합니다.
 - **암호 만료**에만 해당 디바이스 암호를 변경해야 할 때까지의 기간(일)을 입력합니다. **구성 되지 않음** (기본값)은 사용자 암호가 만료 되지 않음을 의미 합니다.
 - **보안 주체 이름** (kerberos에만 해당): kerberos 주체의 사용자 이름을 입력 합니다. 영역 이름을 포함할 필요가 없습니다. 예를 들어 `user@contoso.com`에서 `user`은 사용자 이름이 고, `contoso.com`는 영역 이름입니다.
 - **Active Directory 사이트 코드** (kerberos만 해당): kerberos 확장에서 사용 해야 하는 Active Directory 사이트의 이름을 입력 합니다. Kerberos 확장에서 Active Directory 사이트 코드를 자동으로 찾을 수 있으므로이 값을 변경 하지 않아도 됩니다.
@@ -185,7 +186,7 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 - **앱 번들 id** (Kerberos만 해당): 장치에서 Single Sign-On를 사용 해야 하는 앱 번들 식별자를 **추가** 합니다. 이러한 앱에는 Kerberos 티켓 부여 티켓과 인증 티켓에 대 한 액세스 권한이 부여 되 고 액세스할 수 있는 서비스에 대 한 사용자가 인증 됩니다.
 - **도메인 영역 매핑** (Kerberos만 해당): 영역에 매핑해야 하는 도메인 DNS 접미사를 **추가** 합니다. 호스트의 DNS 이름이 영역 이름과 일치 하지 않는 경우이 설정을 사용 합니다. 일반적으로이 사용자 지정 도메인-영역 매핑을 만들 필요가 없습니다.
 
-## <a name="associated-domains"></a>연결 된 도메인
+## <a name="associated-domains"></a>연결된 도메인
 
 Intune에서 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -198,28 +199,28 @@ Intune에서 다음과 같은 작업을 수행할 수 있습니다.
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>설정이 적용 되는 대상: 모든 등록 형식
 
-- **앱 ID**: 웹 사이트와 연결할 앱의 앱 id를 입력 합니다. 앱 식별자에는 팀 ID와 번들 ID (`TeamID.BundleID`)가 포함 됩니다.
+- **앱 ID**: 웹 사이트와 연결할 앱의 앱 id를 입력 합니다. 앱 식별자는 팀 ID와 번들 ID (`TeamID.BundleID`)를 포함 합니다.
 
-  팀 ID는 `ABCDE12345`과 같은 앱 개발자를 위해 Apple에서 생성 한 10 자 사전순 (문자 및 숫자) 문자열입니다. [팀 ID](https://help.apple.com/developer-account/#/dev55c3c710c)  (Apple의 웹 사이트 열림)을 찾습니다.
+  팀 ID는 `ABCDE12345`와 같은 앱 개발자를 위해 Apple에서 생성 한 10 자 사전순 (문자 및 숫자) 문자열입니다. [팀 ID](https://help.apple.com/developer-account/#/dev55c3c710c)   (Apple의 웹 사이트 열기)를 찾습니다.
 
-  번들 ID는 응용 프로그램을 고유 하 게 식별 하며 일반적으로 역방향 도메인 이름 표기법으로 지정 됩니다. 예를 들어 Finder의 번들 ID는 `com.apple.finder`입니다. 번들 ID를 찾으려면 터미널에서 AppleScript를 사용 합니다.
+  번들 ID는 응용 프로그램을 고유 하 게 식별 하며 일반적으로 역방향 도메인 이름 표기법으로 지정 됩니다. 예를 들어 Finder의 번들 ID는 `com.apple.finder` 됩니다. 번들 ID를 찾으려면 터미널에서 AppleScript를 사용 합니다.
 
   `osascript -e 'id of app "ExampleApp"'`
 
-- **도메인**: 앱과 연결할 웹 사이트 도메인을 입력 합니다. 도메인은 서비스 유형 및 정규화 된 호스트 이름 (예: `webcredentials:www.contoso.com`)을 포함 합니다.
+- **도메인**: 앱과 연결할 웹 사이트 도메인을 입력 합니다. 도메인에는 서비스 유형과 `webcredentials:www.contoso.com` 같은 정규화 된 호스트 이름이 포함 됩니다.
 
-  도메인의 시작 부분 앞에 `*.` (별표 와일드 카드 및 마침표)을 입력 하 여 연결 된 도메인의 모든 하위 도메인을 일치 시킬 수 있습니다. 기간이 필요 합니다. 정확한 도메인은 와일드 카드 도메인 보다 우선 순위가 높습니다. 따라서 정규화 된 하위 도메인에서 일치 항목을 찾을 수 *없으면* 부모 도메인의 패턴이 일치 합니다.
+  도메인의 시작 부분 앞에 `*.` (별표 와일드 카드 및 마침표)를 입력 하 여 연결 된 도메인의 모든 하위 도메인을 일치 시킬 수 있습니다. 기간이 필요 합니다. 정확한 도메인은 와일드 카드 도메인 보다 우선 순위가 높습니다. 따라서 정규화 된 하위 도메인에서 일치 항목을 찾을 수 *없으면* 부모 도메인의 패턴이 일치 합니다.
 
   서비스 형식은 다음과 같을 수 있습니다.
 
-  - **authsrv**: Single sign-on 앱 확장
+  - **authsrv**: Single Sign-On 앱 확장
   - **사과 잉크**: 범용 링크
   - **webcredentials**: 암호 자동 채우기
 
 - **추가**: 앱 및 연결 된 도메인을 추가 하려면 선택 합니다.
 
 > [!TIP]
-> 문제를 해결 하려면 macOS 장치에서 **시스템 기본 설정** > **프로필**을 엽니다. 만든 프로필이 장치 프로필 목록에 있는지 확인 합니다. 표시 되는 경우 **연결 된 도메인 구성이** 프로필에 있고 올바른 앱 ID 및 도메인을 포함 해야 합니다.
+> 문제를 해결 하려면 macOS 장치에서 **시스템 기본 설정**  > **프로필**을 엽니다. 만든 프로필이 장치 프로필 목록에 있는지 확인 합니다. 표시 되는 경우 **연결 된 도메인 구성이** 프로필에 있고 올바른 앱 ID 및 도메인을 포함 해야 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

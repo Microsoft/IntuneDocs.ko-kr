@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
-ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163576"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502274"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune을 사용하여 디바이스를 보호하기 위한 Windows 10( 이상) 설정  
 
@@ -412,7 +413,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
   다음 옵션 중에서 선택합니다.  
   - **원격 액세스**  
   - **무선**  
-  - **로컬 영역 네트워크**  
+  - **	LAN(Local Area Network)**  
 
 - **이러한 사용자 로부터의 연결만 허용**  
   **기본값**: 모든 사용자 *(목록이 지정 되지 않은 경우 기본적으로 모두 사용 됨)*  
@@ -478,7 +479,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
   *차단*으로 설정 하면 다음 설정을 구성할 수 있습니다.  
 
   - **Azure AD 조인 중에 표준 사용자가 암호화를 활성화하도록 허용**  
-    *이 설정은 Azure Active Directory 조인 된 (Azure ADJ) 장치에만 적용 되며 이전 설정인-1 `Warning for other disk encryption`에 따라 달라 집니다.*  
+    *이 설정은 Azure Active Directory 조인 된 (Azure ADJ) 장치에만 적용 되며, `Warning for other disk encryption` 이전 설정에 따라 달라 집니다.*  
     **기본값**: 구성되지 않음  
     BitLocker CSP: [Allowstandarduserencryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
@@ -1333,8 +1334,8 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
   - **사용** -사용자 이름을 숨깁니다.  
   - **구성 되지 않음** -마지막 사용자 이름을 표시 합니다.  
 
-- **로그인 
-  에서 사용자 이름 숨기기**-1**기본값**: 구성 되지 않음  
+- **로그인 시 사용자 이름 숨기기** 
+  **기본값**: 구성 되지 않음  
   LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959)  
 
   

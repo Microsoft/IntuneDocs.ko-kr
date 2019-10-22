@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1306bfea1880061980413d283943e6521c1ac213
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734494"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506703"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>Intune에서 커널 확장을 구성 및 사용 하는 macOS 장치 설정
 
@@ -57,14 +58,14 @@ Intune의 커널 확장 및 모든 필수 구성 요소에 대 한 자세한 내
 
 - **허용 되는 커널 확장**: 특정 커널 확장을 허용 하려면이 설정을 사용 합니다. 입력 한 커널 확장만 허용 되거나 신뢰할 수 있습니다. 
 
-  로드 하려는 커널 확장의 번들 식별자 및 팀 식별자를 **추가** 합니다. 서명 되지 않은 레거시 커널 확장의 경우 빈 팀 식별자를 사용 합니다. 커널 확장을 여러 개 추가할 수 있습니다. 팀 식별자에는 영숫자 (문자와 숫자)와 10 자가 있어야 합니다. 예를 들어 **번들 ID**에 `com.contoso.appname.macos`을 입력 하 고 **팀 식별자**로 `ABCDE12345`를 입력 합니다.
+  로드 하려는 커널 확장의 번들 식별자 및 팀 식별자를 **추가** 합니다. 서명 되지 않은 레거시 커널 확장의 경우 빈 팀 식별자를 사용 합니다. 커널 확장을 여러 개 추가할 수 있습니다. 팀 식별자에는 영숫자 (문자와 숫자)와 10 자가 있어야 합니다. 예를 들어 **번들 ID**에 `com.contoso.appname.macos`를 입력 하 고 **팀 식별자**로 `ABCDE12345` 합니다.
 
   > [!TIP]
   > MacOS 장치에서 커널 확장 (Kext)의 번들 ID를 가져오려면 다음을 수행할 수 있습니다.
   >
-  > 1. 터미널에서 `kextstat | grep -v com.apple`을 실행 하 고 출력을 확인 합니다. 원하는 소프트웨어 또는 Kext를 설치 합니다. @No__t-0을 다시 실행 하 고 변경 내용을 확인 합니다.
+  > 1. 터미널에서 `kextstat | grep -v com.apple`를 실행 하 고 출력을 확인 합니다. 원하는 소프트웨어 또는 Kext를 설치 합니다. `kextstat | grep -v com.apple`를 다시 실행 하 고 변경 내용을 확인 합니다.
   >
-  >    터미널에서 `kextstat`은 OS의 커널 확장을 모두 나열 합니다. 
+  >    터미널에서 `kextstat`는 OS의 모든 커널 확장을 나열 합니다. 
   >
   > 2. 장치에서 Kext에 대 한 정보 속성 목록 파일 (info.plist)을 엽니다. 번들 ID가 표시 됩니다. 각 Kext에는 내에 저장 된 info.plist 파일이 있습니다. 
 

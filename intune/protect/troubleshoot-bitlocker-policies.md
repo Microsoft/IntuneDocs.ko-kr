@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 197ad888dc8a07cc35efbaec538fde93c76c81c3
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 440eb2d457783ac71b905d064a6d83abaa966cfe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817627"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503780"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Microsoft Intune의 BitLocker 정책 문제 해결
 
@@ -32,9 +33,9 @@ BitLocker 드라이브 암호화는 Microsoft Windows 운영 체제에서 제공
 
 Microsoft Intune를 사용 하 여 Windows 10 장치에서 BitLocker를 관리 하는 다음과 같은 방법을 사용할 수 있습니다.
 
-- **장치 구성 정책** -일부 기본 제공 정책 옵션은 Intune 관리 콘솔의 **장치 구성** > **Endpoint Protection** > **Windows 암호화 정책**에서 사용할 수 있습니다. [Windows 암호화](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)에서 사용 가능한 모든 스위치 및 기능을 찾을 수 있습니다.
+- **장치 구성 정책** -일부 기본 제공 정책 옵션은 Intune 관리 콘솔의 **장치 구성**  > **Endpoint Protection**  > **Windows 암호화 정책**에서 사용할 수 있습니다. [Windows 암호화](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)에서 사용 가능한 모든 스위치 및 기능을 찾을 수 있습니다.
 
-- **보안 기준** - [보안 기준은](security-baselines.md) 관련 보안 팀에서 Windows 장치를 보호 하는 데 권장 하는 설정 및 기본값의 알려진 그룹입니다. *MDM 보안 기준* 또는 *Microsoft Defender ATP 기준선* 과 같은 다양 한 기준 원본은 서로 다른 설정과 동일한 설정을 관리할 수 있습니다. 장치 구성 정책을 사용 하 여 관리 하는 것과 동일한 설정을 관리할 수도 있습니다. 
+- 보안[기준](security-baselines.md) ** -  보안 기준은** Windows 장치를 보호 하는 데 도움이 되는 관련 보안 팀에서 권장 하는 설정 및 기본값의 알려진 그룹입니다. *MDM 보안 기준* 또는 *Microsoft Defender ATP 기준선* 과 같은 다양 한 기준 원본은 서로 다른 설정과 동일한 설정을 관리할 수 있습니다. 장치 구성 정책을 사용 하 여 관리 하는 것과 동일한 설정을 관리할 수도 있습니다. 
 
 Intune 외에도 BitLocker 설정을 그룹 정책 같은 다른 방법으로 관리 하거나 장치 사용자가 수동으로 설정할 수 있습니다.
 
@@ -59,23 +60,23 @@ Windows 10 장치에서 BitLocker 문제를 조사할 때 문제가 Intune 관�
 
 ### <a name="device-configuration-policy-device-status"></a>장치 구성 정책 장치 상태  
 
-장치 구성 정책을 사용 하 여 BitLocker를 구성 하는 경우 Intune 포털에서 정책의 상태를 확인할 수 있습니다. 포털에서 **장치 구성** > **프로필** 로 이동 하 > BitLocker 설정을 포함 하는 프로필을 선택한 다음 **장치 상태**를 선택 합니다. 프로필에 할당 된 장치가 나열 되 고 *장치 상태* 열에 장치가 프로필을 성공적으로 배포 했음을 나타냅니다. 
+장치 구성 정책을 사용 하 여 BitLocker를 구성 하는 경우 Intune 포털에서 정책의 상태를 확인할 수 있습니다. 포털에서 **장치 구성**  > **프로필** 로 이동 하 > BitLocker 설정을 포함 하는 프로필을 선택한 다음 **장치 상태**를 선택 합니다. 프로필에 할당 된 장치가 나열 되 고 *장치 상태* 열에 장치가 프로필을 성공적으로 배포 했음을 나타냅니다. 
 
 BitLocker 정책을 받는 장치와 완전히 암호화 된 드라이브 사이에 지연이 있을 수 있습니다.  
 
  
 ### <a name="use-control-panel-on-the-client"></a>클라이언트에서 제어판 사용  
 
-BitLocker를 사용 하도록 설정 하 고 드라이브를 암호화 한 장치에서는 장치 제어판에서 BitLocker 상태를 볼 수 있습니다. 장치에서 **제어판** > **시스템 및 보안** > **BitLocker 드라이브 암호화**를 엽니다. 다음 그림에 표시 된 것 처럼 확인 메시지가 표시 됩니다.  
+BitLocker를 사용 하도록 설정 하 고 드라이브를 암호화 한 장치에서는 장치 제어판에서 BitLocker 상태를 볼 수 있습니다. 장치에서 **제어판**  > **시스템 및 보안**  > **BitLocker 드라이브 암호화**를 엽니다. 다음 그림에 표시 된 것 처럼 확인 메시지가 표시 됩니다.  
 
 ![BitLocker가 제어판에서 켜 짐](./media/troubleshooting-bitlocker-policies/control-panel.png)
 
 ### <a name="use-a-command-prompt"></a>명령 프롬프트 사용  
 
-BitLocker를 사용 하도록 설정 되 고 드라이브가 암호화 된 장치에서 관리자 자격 증명을 사용 하 여 명령 프롬프트를 시작 하 고 `manage-bde -status`을 실행 합니다. 결과는 다음 예제와 유사 합니다.  
-status 명령의 ![A result](./media/troubleshooting-bitlocker-policies/command.png)
+BitLocker를 사용 하도록 설정 되 고 드라이브가 암호화 된 장치에서 관리자 자격 증명을 사용 하 여 명령 프롬프트를 시작 하 고 `manage-bde -status`를 실행 합니다. 결과는 다음과 같습니다.  
+status 명령의 ![A 결과 ](./media/troubleshooting-bitlocker-policies/command.png)
 
-예를 들면 다음과 같습니다. 
+예제에서는 
 - **BitLocker 보호가** **설정**되어 있습니다.  
 - **암호화된 비율**은 **100%** 입니다.  
 - **암호화 방법은** **XTS-AES 256**입니다.  
@@ -150,7 +151,7 @@ EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
   정책은 장치에 단일 단위로 표시 되므로 일부 설정이 적용 되는 경우 정책 자체를 수신 하는 것을 확신할 수 있습니다. 이 시나리오에서는 장치의 Windows 버전이 문제 설정을 지원 하지 않을 수 있습니다. 각 설정에 대 한 버전 요구 사항에 대 한 자세한 내용은 Windows 설명서의 [BITLOCKER CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) 를 참조 하십시오.  
 
   1. **BitLocker는 모든 하드웨어에서 지원 되지 않습니다**.  
-  올바른 버전의 Windows를 사용 하는 경우에도 기본 장치 하드웨어가 BitLocker 암호화에 대 한 요구 사항을 충족 하지 못할 수 있습니다. [BitLocker에 대 한 시스템 요구 사항 (https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) 은 Windows 설명서에서 확인할 수 있지만, 장치에 호환 되는 TPM 칩 (1.2 이상) 및 TCG(신뢰할 수 있는 컴퓨팅 그룹) (TCG) 규격 BIOS 또는 UEFI 펌웨어가 있는지 확인 해야 합니다.
+  올바른 버전의 Windows를 사용 하는 경우에도 기본 장치 하드웨어가 BitLocker 암호화에 대 한 요구 사항을 충족 하지 못할 수 있습니다. Windows 설명서의 https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) BitLocker에 대 한 시스템 요구 사항을 확인할 수 있지만 확인 해야 하는 주요 사항은 장치에 호환 되는 TPM 칩 (1.2 이상)과 TCG(신뢰할 수 있는 컴퓨팅 그룹) (TCG) 규격 BIOS 또는 UEFI 펌웨어가 있는지를 확인 하는 것입니다.
 
 **예제 조사** -Windows 10 장치에 BitLocker 정책을 배포 하 고, **장치 암호화** 설정은 포털에서 **오류** 상태를 표시 합니다.
 
@@ -168,7 +169,7 @@ EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
 
 - BitLocker는 TPM을 사용 하기 때문에 Intune 또는 정책 문제로 인해 BitLocker가 실패 하지 않고 장치 자체에 TPM 칩이 없거나 BIOS에서 TPM이 사용 하지 않도록 설정 되어 있기 때문입니다.
 
-  추가 팁으로, Windows 이벤트 뷰어의 **응용 프로그램 및 서비스 로그** > **windows** > **BitLocker API**에서 동일한 것을 확인할 수 있습니다. **BITLOCKER API** 이벤트 로그에는 TPM을 사용할 수 없음을 의미 하는 이벤트 ID 853이 있습니다.
+  추가 팁으로 Windows 이벤트 뷰어의 **응용 프로그램 및 서비스 로그**  > **WINDOWS**  > **BitLocker API**에서 동일한 것을 확인할 수 있습니다. **BITLOCKER API** 이벤트 로그에는 TPM을 사용할 수 없음을 의미 하는 이벤트 ID 853이 있습니다.
 
   ![이벤트 ID 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 

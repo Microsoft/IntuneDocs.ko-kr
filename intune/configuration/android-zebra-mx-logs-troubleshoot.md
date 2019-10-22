@@ -6,8 +6,9 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/26/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 324550836cd8e7c8ea2786d15618d5f5010a043f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735248"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506997"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Microsoft Intune에서 Android 얼룩말 장치에 대 한 문제 해결 및 잠재적인 문제 확인
 
@@ -53,14 +54,14 @@ Microsoft Intune에서 [MX (얼룩말 Mobility Extensions)를 사용 하 여 And
 ### <a name="get-logs-using-android-debug-bridge"></a>Android Debug Bridge를 사용 하 여 로그 가져오기
 Intune을 사용 하 여 프로필을 이미 배포한 후에 로그를 가져오려면 [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb) 를 사용 하 여 컴퓨터에 장치를 연결 합니다 (Android의 웹 사이트를 엽니다).
 
-장치에서 로그는 @no__t에 저장 됩니다.
+장치에서 로그는 `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`에 저장 됩니다.
 
 ### <a name="get-logs-from-email"></a>전자 메일에서 로그 가져오기
 Intune을 사용 하 여 프로필을 이미 배포한 후에 로그를 가져오기 위해 최종 사용자는 장치에서 전자 메일 앱을 사용 하 여 로그를 전자 메일로 보낼 수 있습니다. 얼룩말 장치에서 회사 포털 앱을 열고 [로그를 보냅니다](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). 로그 보내기 기능을 사용 하면 Microsoft 지원에 문의 하는 경우 참조할 수 있는 PowerLift 인시던트 ID도 만들어집니다.
 
 ## <a name="read-the-logs"></a>로그 읽기
 
-로그를 볼 때 `<characteristic-error>` 태그가 표시 될 때마다 오류가 발생 합니다. 오류 정보는 `<parm-error>` 태그 > `desc` 속성에 기록 됩니다.
+로그를 볼 때 `<characteristic-error>` 태그가 표시 될 때마다 오류가 발생 합니다. 오류 세부 정보는 `<parm-error>` 태그 > `desc` 속성에 기록 됩니다.
 
 ## <a name="error-types"></a>오류 유형
 
@@ -112,7 +113,7 @@ Intune을 사용 하 여 프로필을 이미 배포한 후에 로그를 가져�
 </wap-provisioningdoc>
 ```
 
-@No__t-0 태그를 포함 하 고 있으므로 로그에 오류가 표시 됩니다. 이 시나리오에서 프로필은 지정 된 경로에 없는 APK (Android 패키지)를 설치 하려고 시도 했습니다.
+`<characteristic-error>` 태그를 포함 하 고 있으므로 로그에 오류가 표시 됩니다. 이 시나리오에서 프로필은 지정 된 경로에 없는 APK (Android 패키지)를 설치 하려고 시도 했습니다.
 
 ```xml
 <wap-provisioningdoc>

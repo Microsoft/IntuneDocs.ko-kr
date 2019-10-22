@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a508a6c9bf834268a797f028a32c7651cf394c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733480"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490482"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Power BI를 사용하여 OData 피드에서 Intune 보고서 만들기
 
@@ -57,7 +58,7 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로
 2. **Microsoft Intune - 개요** 블레이드의 오른쪽에 있는 **기타 작업** 아래에서 데이터 웨어하우스 링크를 선택하여 **Intune 데이터 웨어하우스** 창을 엽니다.
 3. 사용자 지정 피드 URL을 복사합니다. 예를 들어 `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`를 구성할 수 있습니다.
 4. Power BI Desktop을 엽니다.
-5. 메뉴 모음에서 **파일** > **데이터 가져오기** > **Odata 피드**를 선택 합니다.
+5. 메뉴 모음에서 **파일**  > **데이터 가져오기**  > **Odata 피드**를 선택 합니다.
 6. 이전 단계에서 복사한 사용자 지정 피드 URL을 **OData 피드** 창의 URL 상자에 붙여넣습니다.
 7. **기본**을 선택합니다.
 
@@ -93,9 +94,9 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로
 
 1. **시각화** 창에서 **트리 맵**을 찾아 선택 합니다. **트리 맵** 차트가 보고서 캔버스에 추가 됩니다.
 2. **필드** 창에서 `devices` 테이블을 찾습니다.
-3. @No__t-0 테이블을 확장 하 고 `manufacturer` 데이터 필드를 선택 합니다.
-4. @No__t-0 데이터 필드를 보고서 캔버스로 끌어 **트리 맵** 차트에 놓습니다.
-5. @No__t-1 테이블에서 `deviceKey` 데이터 필드를 **시각화** 창으로 끌고 **여기에 데이터 필드 추가**라는 상자의 **값** 섹션 아래에 놓습니다.  
+3. `devices` 테이블을 확장 하 고 `manufacturer` 데이터 필드를 선택 합니다.
+4. `manufacturer` 데이터 필드를 보고서 캔버스로 끌어 **트리 맵** 차트에 놓습니다.
+5. `devices` 테이블의 `deviceKey` 데이터 필드를 **시각화** 창으로 끌고 **여기에 데이터 필드 추가**라는 상자의 **값** 섹션 아래에 놓습니다.  
 
 이제 조직 내의 디바이스 제조업체의 분포를 보여 주는 시각적 개체가 준비되었습니다.
 
@@ -107,10 +108,10 @@ Power BI Desktop의 최신 버전을 설치합니다. Power BI Desktop 다운로
 
 1. 필터를 추가하려면 보고서 캔버스를 선택하고 **시각화** 아래의 **슬라이서 아이콘**(![데이터 모델 및 지원되는 관계가 있는 트리 맵](./media/reports-proc-create-with-odata/reports-create-slicer.png))을 선택합니다. 빈 **슬라이서** 시각화가 캔버스에 표시 됩니다.
 2. **필드** 창에서 `ownerTypes` 테이블을 찾습니다.
-3. @No__t-0 테이블을 확장 하 고 `ownerTypeName` 데이터 필드를 선택 합니다.
-4. @No__t-1 테이블의 `onwerTypeName` 데이터 필드를 **필터** 창으로 끌고 **여기에 데이터 필드 추가**라는 상자에 있는 **이 페이지의 필터** 섹션에 놓습니다.  
+3. `ownerTypes` 테이블을 확장 하 고 `ownerTypeName` 데이터 필드를 선택 합니다.
+4. `ownerTypes` 테이블의 `onwerTypeName` 데이터 필드를 **필터** 창으로 끌어 **데이터 필드를 여기에 추가**라는 상자에 있는 **이 페이지의 필터** 섹션에 놓습니다.  
 
-   @No__t-0 테이블에는 장치가 회사 소유 인지 아니면 개인 인지에 대 한 데이터를 포함 하는 `OwnerTypeKey` 이라는 데이터 필드가 있습니다. 이 필터에 친숙한 이름을 표시하려면 `ownerTypes` 테이블을 찾고 **ownerTypeName**을 슬라이서로 끕니다. 이 예는 데이터 모델에서 테이블 간의 관계를 지원하는 방법을 보여줍니다.
+   `OwnerTypes` 테이블에는 장치가 회사 소유 인지 아니면 개인 인지에 대 한 데이터를 포함 하 `OwnerTypeKey`that 라는 데이터 필드가 있습니다. 이 필터에 친숙한 이름을 표시하려면 `ownerTypes` 테이블을 찾고 **ownerTypeName**을 슬라이서로 끕니다. 이 예는 데이터 모델에서 테이블 간의 관계를 지원하는 방법을 보여줍니다.
 
 ![필터가 있는 트리맵 - 테이블 간 관계 지원](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

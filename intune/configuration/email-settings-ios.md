@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bd91891fa6da770404dc0af6d59016aeefe30b3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4cbf9c29a1e694726b1b42f7072eea859f812751
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734598"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593806"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스의 메일 설정 추가
 
@@ -55,7 +56,7 @@ Microsoft Intune에서 이메일 서버에 연결하기 위한 이메일을 만�
       - **사용할 사용자 지정 도메인 이름**: Intune이 도메인 이름(예: `contoso.com` 또는 `contoso`)에 사용하는 값을 입력합니다.
 
 - **AAD의 이메일 주소 특성**: 사용자의 이메일 주소가 생성되는 방식을 선택합니다. 전체 사용자 이름을 이메일 주소로 사용하려면 **사용자 계정 이름**(`user1@contoso.com` 또는 `user1`)을 선택합니다. 기본 SMTP 주소를 사용하여 Exchange에 로그인하려면 **기본 SMTP 주소**(`user1@contoso.com`)를 선택합니다.
-- **인증 방법**: 이메일 프로필에서 사용되는 인증 방법으로 **사용자 이름 및 암호** 또는 **인증서** 중 하나를 선택합니다. Azure 다단계 인증은 지원되지 않습니다.
+- **인증 방법**: 이메일 프로필에서 사용되는 인증 방법으로 **사용자 이름 및 암호**, **인증서** 또는 **파생된 자격 증명** 중 하나를 선택합니다. Azure 다단계 인증은 지원되지 않습니다.
   - **인증서**를 선택한 경우 Exchange 연결을 인증하는 데 사용할 이전에 만든 클라이언트 SCEP 또는 PKCS 인증서 프로필을 선택합니다.
 - **SSL**: **사용 가능**에서는 이메일을 보내고, 이메일을 받고, Exchange Server와 통신할 때 SSL(Secure Sockets Layer) 통신을 사용합니다.
 - **OAuth**: **사용 가능**에서는 이메일을 보내고, 이메일을 받고, Exchange와 통신할 때 OAuth(Open Authorization) 통신을 사용합니다. OAuth 서버에서 인증서 인증을 사용하는 경우 **인증서**를 **인증 방법**으로 선택하고 프로필에 인증서를 포함합니다. 그렇지 않으면 **사용자 이름 및 암호**를 **인증 방법**으로 선택합니다. OAuth를 사용할 때 다음 사항을 확인합니다.
