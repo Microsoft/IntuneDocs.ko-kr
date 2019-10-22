@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14da6274546cbd4c1867975c08c60ece313714b1
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: e9542212e1b75d97c96c024eed20e20e610e2b5d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71918000"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503654"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Intune Exchange connector와 관련 된 일반적인 문제 해결
  
@@ -55,7 +56,7 @@ Android Knox를 실행 하지 않는 장치에서 온-프레미스 사서함에 
 전자 메일 알림 문제를 해결 하려면 다음 섹션을 검토 하십시오.
 
 ### <a name="check-the-notification-account-that-retrieves-autodiscover-settings"></a>자동 검색 설정을 검색 하는 알림 계정 확인
-1. 자동 검색 서비스와 EWS가 Exchange 클라이언트 액세스 서비스에서 구성 되어 있는지 확인 합니다. 자세한 내용은 [클라이언트 액세스 서비스](https://docs.microsoft.com/Exchange/architecture/client-access/client-access) 및 [Exchange Server의 자동 검색 서비스](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019)를 참조 하세요.
+1. 자동 검색 서비스 및 EWS(Exchange 웹 서비스)가 Exchange 클라이언트 액세스 서비스에 구성되어 있는지 확인합니다. 자세한 내용은 [클라이언트 액세스 서비스](https://docs.microsoft.com/Exchange/architecture/client-access/client-access) 및 [Exchange Server의 자동 검색 서비스](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019)를 참조 하세요.
 
 
 2. 알림 계정이 다음 요구 사항을 충족 하는지 확인 합니다.
@@ -69,10 +70,10 @@ Android Knox를 실행 하지 않는 장치에서 온-프레미스 사서함에 
    1. 명령 프롬프트에서 *NSLOOKUP*을 입력 합니다.  
 
    2. *Autodiscover.SMTPdomain.com*를 입력 합니다. 출력은 다음 이미지와 비슷해야 합니다.  
-      ![Nslookup 결과](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
+      ![Nslookup 결과 ](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
 )
 
-   https://testconnectivity.microsoft.com에서 인터넷에서 자동 검색 서비스를 테스트할 수도 있습니다. 또는 Microsoft 연결 분석기 도구를 사용 하 여 로컬 도메인에서 테스트 합니다. 자세한 내용은 [Microsoft 연결 분석기 도구](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))를 참조 하세요. 필요한 경우 [Microsoft Connectivity Analyzer 도구를 다운로드](http://go.microsoft.com/fwlink/?LinkID=313782)합니다.
+   https://testconnectivity.microsoft.com 인터넷에서 자동 검색 서비스를 테스트할 수도 있습니다. 또는 Microsoft 연결 분석기 도구를 사용 하 여 로컬 도메인에서 테스트 합니다. 자세한 내용은 [Microsoft 연결 분석기 도구](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))를 참조 하세요. 필요한 경우 [Microsoft Connectivity Analyzer 도구를 다운로드](https://go.microsoft.com/fwlink/?LinkID=313782)합니다.
 
 
 ### <a name="check-autodiscovery"></a>자동 검색 확인  
@@ -82,7 +83,7 @@ Android Knox를 실행 하지 않는 장치에서 온-프레미스 사서함에 
 
 2. Intune Exchange connector 구성 파일에서 EWS URL을 하드 코딩 합니다.
 
-   1. EWS URL을 결정 합니다. Exchange의 기본 EWS URL은 `https://<mailServerFQDN>/ews/exchange.asmx` 이지만 URL이 다를 수 있습니다. Exchange 관리자에 게 문의 하 여 사용자 환경에 맞는 올바른 URL을 확인 하십시오.
+   1. EWS URL을 결정 합니다. Exchange의 기본 EWS URL은 `https://<mailServerFQDN>/ews/exchange.asmx` 있지만 URL이 다를 수 있습니다. Exchange 관리자에 게 문의 하 여 사용자 환경에 맞는 올바른 URL을 확인 하십시오.
 
    2. ‘OnPremisesExchangeConnectorServiceConfiguration.xml’ 파일을 편집합니다. 기본적으로이 파일은 Exchange connector를 실행 하는 컴퓨터의 *%ProgramData%\Microsoft\Windows Intune Exchange connector* 에 있습니다. 텍스트 편집기에서 파일을 열고 다음 줄을 변경 하 여 사용자 환경에 대 한 EWS URL을 반영 합니다. `<ExchangeWebServiceURL>https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
     

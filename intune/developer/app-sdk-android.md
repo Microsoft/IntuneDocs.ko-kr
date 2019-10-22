@@ -5,9 +5,10 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1d1d0c52db57ca6b41c399aeefc948735eea0af
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830520"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503481"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
 
@@ -189,7 +190,7 @@ intunemam {
 ```
 
 #### <a name="verification"></a>확인
-빌드 플러그 인은 클래스 처리에서 발생할 수 있는 오류를 찾기 위해 추가 확인을 실행할 수 있습니다. 이를 요청 하려면 `intunemam` 구성 블록에 `verify = true`을 지정 합니다. 플러그 인 작업에서 소요 되는 시간에 몇 초 정도 더할 수 있습니다.
+빌드 플러그 인은 클래스 처리에서 발생할 수 있는 오류를 찾기 위해 추가 확인을 실행할 수 있습니다. 이를 요청 하려면 `intunemam` 구성 블록에 `verify = true`를 지정 합니다. 플러그 인 작업에서 소요 되는 시간에 몇 초 정도 더할 수 있습니다.
 
 ```groovy
 intunemam {
@@ -198,7 +199,7 @@ intunemam {
 ```
 
 #### <a name="incremental-builds"></a>증분 빌드
-증분 빌드에 대 한 지원을 사용 하도록 설정 하려면 `intunemam` 구성 블록에 `incremental = true`을 지정 합니다.  이는 변경 된 입력 파일만 처리 하 여 빌드 성능 향상을 위한 실험적 기능입니다.  기본 구성은 `false`입니다.
+증분 빌드에 대 한 지원을 사용 하도록 설정 하려면 `intunemam` 구성 블록에 `incremental = true`를 지정 합니다.  이는 변경 된 입력 파일만 처리 하 여 빌드 성능 향상을 위한 실험적 기능입니다.  기본 구성은 `false`입니다.
 
 ```groovy
 intunemam {
@@ -380,7 +381,7 @@ Android P를 사용하면서 Google은 AndroidX라는 새로운 이름의 지원
 Android 지원 라이브러리와 달리, AndroidX 라이브러리의 MAM 변형은 제공하지 않습니다. 대신, AndroidX는 다른 외부 라이브러리로 취급되며 빌드 플러그 인/도구로 다시 작성되도록 구성되어야 합니다. Gradle 빌드의 경우 플러그 인 구성의 `includeExternalLibraries` 필드에 `androidx.*`를 포함하여 이처럼 구성할 수 있습니다. 명령줄 도구의 호출은 모든 jar 파일을 명시적으로 나열해야 합니다.
 
 ### <a name="pre-androidx-architecture-components"></a>사전 AndroidX 아키텍처 구성 요소
-Room, ViewModel 및 워크 관리자를 포함 한 많은 Android 아키텍처 구성 요소가 AndroidX에 대해 다시 패키지 되었습니다. 앱이 이러한 라이브러리의 사전 AndroidX 변형을 사용 하는 경우 플러그 인 구성의 `includeExternalLibraries` 필드에 `android.arch.*`을 포함 하 여 다시 쓰기를 적용 해야 합니다. 또는 라이브러리를 해당 하는 AndroidX로 업데이트 합니다.
+Room, ViewModel 및 워크 관리자를 포함 한 많은 Android 아키텍처 구성 요소가 AndroidX에 대해 다시 패키지 되었습니다. 앱이 이러한 라이브러리의 사전 AndroidX 변형을 사용 하는 경우 플러그 인 구성의 `includeExternalLibraries` 필드에 `android.arch.*`를 포함 하 여 다시 쓰기를 적용 해야 합니다. 또는 라이브러리를 해당 하는 AndroidX로 업데이트 합니다.
 
 ## <a name="sdk-permissions"></a>SDK 권한
 
@@ -547,15 +548,6 @@ String toString();
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>예: 앱에 PIN이 필요한지 확인
-
-앱에 고유 PIN 사용자 환경이 있는 경우 IT 관리자가 앱 PIN을 묻도록 SDK를 구성했으면 이를 사용하지 않게 설정할 수 있습니다. IT 관리자가 이 앱에 앱 PIN 정책을 배포했는지 확인하려면 현재 최종 사용자에 대해 다음 메소드를 호출하세요.
-
-```java
-
-MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
-```
-
 ### <a name="example-determine-the-primary-intune-user"></a>예: 기본 Intune 사용자 확인
 
 AppPolicy에 노출된 API 외에도, `MAMUserInfo` 인터페이스에 정의된 `getPrimaryUser()` API를 통해 사용자 계정 이름(**UPN**)도 노출됩니다. UPN을 가져오려면 다음을 호출합니다.
@@ -622,9 +614,9 @@ NotificationRestriction notificationRestriction =
     MAMPolicyManager.getPolicyForIdentity(notificationIdentity).getNotificationRestriction();
 ```
 
-제한이 `BLOCKED` 이면 앱은이 정책과 연결 된 사용자에 대 한 알림을 표시 해서는 안 됩니다. `BLOCK_ORG_DATA` 인 경우 앱은 조직 데이터를 포함 하지 않는 수정 된 알림을 표시 해야 합니다. `UNRESTRICTED` 인 경우 모든 알림이 허용 됩니다.
+제한이 `BLOCKED` 경우 앱은이 정책과 연결 된 사용자에 대 한 알림을 표시 해서는 안 됩니다. `BLOCK_ORG_DATA` 경우에는 앱에서 조직 데이터를 포함 하지 않는 수정 된 알림을 표시 해야 합니다. `UNRESTRICTED` 경우 모든 알림이 허용 됩니다.
 
-`getNotificationRestriction`이 호출 되지 않은 경우 MAM SDK는 단일 id 앱에 대 한 알림을 자동으로 제한 하기 위해 최상의 노력을 합니다. 자동 차단을 사용 하 고 `BLOCK_ORG_DATA`을 설정 하면 알림이 전혀 표시 되지 않습니다. 보다 세분화 된 제어를 위해 `getNotificationRestriction` 값을 확인 하 고 앱 알림을 적절 하 게 수정 합니다.
+`getNotificationRestriction` 를 호출 하지 않으면 MAM SDK가 단일 id 앱에 대 한 알림을 자동으로 제한 하기 위해 최상의 노력을 합니다. 자동 차단을 사용 하 고 `BLOCK_ORG_DATA` 설정 하면 알림이 전혀 표시 되지 않습니다. 보다 세분화 된 제어를 위해 `getNotificationRestriction`의 값을 확인 하 고 앱 알림을 적절 하 게 수정 합니다.
 
 ## <a name="register-for-notifications-from-the-sdk"></a>SDK에서 알림 등록
 
@@ -681,7 +673,7 @@ public interface MAMNotificationReceiver {
 
 다음과 같은 알림이 앱에 전송되고, 일부 알림의 경우 앱 참여가 필요할 수 있습니다.
 
-* **WIPE_USER_DATA**: 이 알림은 `MAMUserNotification` 클래스를 통해 전송됩니다. 이 알림이 수신 되 면 앱은 관리 되는 id와 연결 된 모든 데이터를 삭제 *해야* 합니다 (`MAMUserNotification.getUserIdentity()`). 앱이 `unregisterAccountForMAM`를 호출 하는 경우, IT 관리자가 초기화를 시작 하거나 관리자가 요구 하는 조건부 액세스 정책이 충족 되지 않는 경우를 비롯 한 다양 한 이유로 알림이 발생할 수 있습니다. 앱이이 알림에 등록 하지 않으면 기본 초기화 동작이 수행 됩니다. 기본 동작은 다중 id 앱에 대 한 단일 id 앱 또는 관리 되는 id로 태그가 지정 된 모든 파일에 대 한 모든 파일을 삭제 합니다. 이 알림은 UI 스레드에서 전송 되지 않습니다.
+* **WIPE_USER_DATA**: 이 알림은 `MAMUserNotification` 클래스를 통해 전송됩니다. 이 알림이 수신 되 면 앱은 `MAMUserNotification.getUserIdentity()`에서 관리 되는 id와 연결 된 모든 데이터를 삭제 *해야* 합니다. 이 알림은 앱이 `unregisterAccountForMAM` 호출 하는 경우, IT 관리자가 초기화를 시작 하는 경우 또는 관리자가 요청한 조건부 액세스 정책이 충족 되지 않는 경우를 포함 하 여 다양 한 이유로 발생할 수 있습니다. 앱이이 알림에 등록 하지 않으면 기본 초기화 동작이 수행 됩니다. 기본 동작은 다중 id 앱에 대 한 단일 id 앱 또는 관리 되는 id로 태그가 지정 된 모든 파일에 대 한 모든 파일을 삭제 합니다. 이 알림은 UI 스레드에서 전송 되지 않습니다.
 
 * **WIPE_USER_AUXILIARY_DATA**: Intune 앱 SDK에서 기본 선택적 초기화 동작을 수행하며 초기화 발생 시 일부 보조 데이터도 제거되도록 하려면 앱에서 이 알림을 등록할 수 있습니다. 이 알림은 단일 ID 앱에는 사용할 수 없습니다. 다중 ID 앱에만 보내집니다. 이 알림은 UI 스레드에서 전송 되지 않습니다.
 
@@ -978,7 +970,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 | `NOT_LICENSED` | 사용자에게 Intune에 대한 사용권이 없거나 Intune MAM 서비스에 연결하려 했지만 실패했습니다.  앱은 비관리(정상) 상태로 지속되어야 하며 사용자를 차단하지 않아야 합니다.  사용자에게 나중에 사용권이 부여되는 경우를 대비하여 주기적으로 등록을 시도합니다. |
 | `ENROLLMENT_SUCCEEDED` | 등록에 성공하거나 사용자가 이미 등록되었습니다.  등록에 성공하면 이 알림 전에 정책 새로 고침 알림이 전송됩니다.  회사 데이터에 액세스하도록 허용해야 합니다. |
 | `ENROLLMENT_FAILED` | 등록에 실패했습니다.  자세한 내용은 디바이스 로그에 있습니다.  사용자에게 Intune에 대한 사용권이 있음이 이미 확인되었으므로 앱에서는 이 상태로 회사 데이터에 액세스하게 허용하지 않아야 합니다.|
-| `WRONG_USER` | MAM 서비스를 통해 디바이스당 한 명의 사용자만 앱을 등록할 수 있습니다. 이 결과는이 결과가 전달 된 사용자 (두 번째 사용자)가 MAM 정책으로 대상이 지정 되었지만 다른 사용자가 이미 등록 되었음을 나타냅니다. 두 번째 사용자에 게 MAM 정책을 적용할 수 없기 때문에 앱에서이 사용자의 데이터에 대 한 액세스를 허용 하지 않아야 합니다 .이 사용자에 대 한 등록은 나중에 성공할 때까지/이 사용자의 데이터에 대 한 액세스를 허용 하지 않아야 합니다. 이 `WRONG_USER`를 제공 하는 동시-0 결과, MAM은 기존 계정을 제거 하는 옵션을 묻는 메시지를 표시 합니다. 사용자가 찬성에서 대답 하는 경우에는 나중에 두 번째 사용자를 짧은 시간에 등록할 수 있습니다. 두 번째 사용자가 등록 된 상태로 유지 되는 동안 MAM은 주기적으로 등록을 다시 시도 합니다. |
+| `WRONG_USER` | MAM 서비스를 통해 디바이스당 한 명의 사용자만 앱을 등록할 수 있습니다. 이 결과는이 결과가 전달 된 사용자 (두 번째 사용자)가 MAM 정책으로 대상이 지정 되었지만 다른 사용자가 이미 등록 되었음을 나타냅니다. 두 번째 사용자에 게 MAM 정책을 적용할 수 없기 때문에 앱에서이 사용자의 데이터에 대 한 액세스를 허용 하지 않아야 합니다 .이 사용자에 대 한 등록은 나중에 성공할 때까지/이 사용자의 데이터에 대 한 액세스를 허용 하지 않아야 합니다. 이 `WRONG_USER` 결과를 제공 하는 동시에 MAM은 기존 계정을 제거 하는 옵션을 묻는 메시지를 표시 합니다. 사용자가 찬성에서 대답 하는 경우에는 나중에 두 번째 사용자를 짧은 시간에 등록할 수 있습니다. 두 번째 사용자가 등록 된 상태로 유지 되는 동안 MAM은 주기적으로 등록을 다시 시도 합니다. |
 | `UNENROLLMENT_SUCCEEDED` | 등록이 취소되었습니다.|
 | `UNENROLLMENT_FAILED` | 등록 취소 요청이 실패했습니다.  자세한 내용은 디바이스 로그에 있습니다. 일반적으로 앱이 유효한 (null 또는 비어 있지 않음) UPN을 전달 하는 한이는 발생 하지 않습니다. 앱에서 수행할 수 있는 직접적인 안정적인 수정이 없습니다. 유효한 UPN의 등록을 취소할 때이 값이 수신 되 면 Intune MAM 팀에 버그로 보고 해 주세요.|
 | `PENDING` | 사용자의 초기 등록을 진행 중입니다.  등록 결과를 알 때까지 앱에서 회사 데이터에 대한 액세스를 차단할 수 있지만, 필수는 아닙니다. |
@@ -1119,7 +1111,7 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### <a name="implementation-notes"></a>구현 노트
 > [!NOTE]
 > **중요 변경**  <br>
-> 앱의 `MAMServiceAuthenticationCallback.acquireToken()` 메서드는 새 `forceRefresh` 플래그의 *false* 를 `acquireTokenSilentSync()`으로 전달 해야 합니다.
+> 앱의 `MAMServiceAuthenticationCallback.acquireToken()` 메서드는 새 `forceRefresh` 플래그에 대해 *false* 를 전달 하 여 `acquireTokenSilentSync()` 합니다.
 > 이전에는 broker에서 토큰을 새로 고치는 것과 관련 된 문제를 해결 하기 위해 *true* 를 전달 하는 것이 좋지만,이 플래그가 *true*인 경우 일부 시나리오에서 토큰을 획득 하지 못할 수 있는 ADAL 문제가 발견 되었습니다.
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ false);
@@ -1319,9 +1311,9 @@ ID를 설정하는 데 사용된 모든 메서드는 `MAMIdentitySwitchResult`�
 | `CANCELLED`    | 사용자가 보통 PIN 또는 인증 프롬프트에서 뒤로 단추를 눌러 ID 변경을 취소했습니다. |
 | `FAILED`       | 알 수 없는 이유로 ID 변경에 실패했습니다.|
 
-앱에서 회사 데이터를 표시하거나 사용하기 전에 ID 전환이 성공적인지 확인해야 합니다. 현재는 다중 ID 사용 앱에 대한 프로세스 및 스레드 ID 전환이 항상 성공하지만, 실패 조건을 추가할 권한은 Microsoft가 보유합니다. UI ID가 스레드 ID와 충돌하거나 사용자가 조건부 시작 요구 사항을 취소하는 경우 잘못된 인수로 인해 UI ID 전환이 실패할 수 있습니다(예: PIN 화면에서 [뒤로] 단추를 누름). 활동에서 실패 한 UI id 스위치의 기본 동작은 활동을 종료 하는 것입니다 (아래 `onSwitchMAMIdentityComplete` 참조).
+앱에서 회사 데이터를 표시하거나 사용하기 전에 ID 전환이 성공적인지 확인해야 합니다. 현재는 다중 ID 사용 앱에 대한 프로세스 및 스레드 ID 전환이 항상 성공하지만, 실패 조건을 추가할 권한은 Microsoft가 보유합니다. UI ID가 스레드 ID와 충돌하거나 사용자가 조건부 시작 요구 사항을 취소하는 경우 잘못된 인수로 인해 UI ID 전환이 실패할 수 있습니다(예: PIN 화면에서 [뒤로] 단추를 누름). 활동에서 실패 한 UI id 스위치에 대 한 기본 동작은 활동을 완료 하는 것입니다 (아래 `onSwitchMAMIdentityComplete` 참조).
 
-`setUIPolicyIdentity`를 통해 `Context` ID를 설정할 경우 결과는 비동기적으로 보고됩니다. `Context`가 `Activity`인 경우에는 SDK가 PIN이나 전체 회사 자격 증명을 입력해야 할 수 있는 조건부 시작이 수행된 후까지 ID 변경에 성공했는지 알 수 없게 됩니다. 앱은이 결과를 수신 하는 `MAMSetUIIdentityCallback`을 구현 하거나 콜백 개체에 대해 null을 전달할 수 있습니다. *동일한 컨텍스트에서* `setUIPolicyIdentity`에 대 한 이전 호출의 결과가 아직 전달 되지 않은 상태에서 `setUIPolicyIdentity`을 호출 하는 경우 새 콜백은 이전 콜백을 대체 하 고 원래 콜백은 결과를 받지 않습니다.
+`setUIPolicyIdentity`를 통해 `Context` ID를 설정할 경우 결과는 비동기적으로 보고됩니다. `Context`가 `Activity`인 경우에는 SDK가 PIN이나 전체 회사 자격 증명을 입력해야 할 수 있는 조건부 시작이 수행된 후까지 ID 변경에 성공했는지 알 수 없게 됩니다. 앱은이 결과를 수신 하는 `MAMSetUIIdentityCallback`를 구현 하거나 콜백 개체에 대해 null을 전달할 수 있습니다. *동일한 컨텍스트에서* `setUIPolicyIdentity`에 대 한 이전 호출의 결과를 아직 전달 하지 않은 상태에서 `setUIPolicyIdentity`를 호출 하는 경우 새 콜백은 이전 콜백을 대체 하 고 원래 콜백은 결과를 받지 않습니다.
 
 ```java
     public interface MAMSetUIIdentityCallback {
@@ -1675,7 +1667,7 @@ contentIdentity)` 메서드의 정적 버전을 호출할 수 있습니다.
 이러한 키-값 쌍은 Intune에서 전혀 해석되지 않고 앱에 전달됩니다. 해당 구성을 수신하려고 하는 애플리케이션은 `MAMAppConfigManager` 및 `MAMAppConfig` 클래스를 사용하여 구성을 수신할 수 있습니다. 동일한 앱에서 여러 정책을 대상으로 지정하면 동일한 키에 사용할 수 있는 여러 개의 충돌 값이 발생할 수 있습니다.
 
 > [!NOTE] 
-> MAM을 통한 배달용 구성 설정-`offline` (회사 포털 설치 되지 않은 경우)으로 delievered 수 없습니다.  오직 Android Enterprise AppRestrictions만이 이 예의 빈 ID에 대한 `MAMUserNotification`을 통해 전송됩니다.
+> MAM을 통한 배달용 구성 설정-회사 포털 설치 되지 않은 경우 `offline` delievered 수 없습니다.  오직 Android Enterprise AppRestrictions만이 이 예의 빈 ID에 대한 `MAMUserNotification`을 통해 전송됩니다.
 
 ### <a name="get-the-app-config-for-a-user"></a>사용자에 대 한 앱 구성 가져오기
 다음과 같이 앱 구성을 검색할 수 있습니다.
@@ -1756,7 +1748,7 @@ enum StringQueryType {
 
 앱은 키-값 쌍 집합의 목록으로 원시 데이터를 요청할 수도 있습니다.
 
-```
+```java
 List<Map<String, String>> getFullData()
 ```
 
