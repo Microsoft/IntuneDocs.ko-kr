@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e459e4e22c7985e2e68e624c413ce967e1a8ba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723855"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506632"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune에서 Telecom Expense Management 서비스 설정
 
@@ -118,7 +119,7 @@ Intune은 다음 Telecom Expense Management 공급자와 통합되어 있습니�
 
 조직 소유의 줄에서만 데이터 사용량 현황이 수집되는지 확인하려면 다음을 수행해야 합니다.
 
-- Intune에서 디바이스 범주 만들기
+- Intune에서 디바이스 범주를 만듭니다.
 - 조직의 전화만 Datalert 앱의 대상으로 지정합니다.
 
 이 섹션에서는 이러한 단계를 설명합니다.

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e07952b6e7147ffa9b84cfbd1988ebb927b411dd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723569"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503378"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android 엔터프라이즈 전용 디바이스의 Intune 등록 설정
 
@@ -54,7 +55,7 @@ Android 엔터프라이즈 전용 디바이스 관리를 설정하려면 다음 
 ### <a name="create-an-enrollment-profile"></a>등록 프로필 만들기
 
 > [!NOTE]
-> 토큰이 만료된 경우, 토큰에 연결된 프로필은 **디바이스 등록** > **Android 등록** > **회사 소유 전용 디바이스**에 표시되지 않습니다. 활성 토큰과 비활성 토큰 모두에 연결된 모든 프로필을 보려면 **필터**를 클릭하고 "활성" 및 "비활성" 정책 상태의 확인란을 모두 선택합니다. 
+> 토큰이 만료된 경우 토큰에 연결된 프로필은 **디바이스 등록** > **Android 등록** > **회사 소유 전용 디바이스**에 표시되지 않습니다. 활성 토큰과 비활성 토큰 모두에 연결된 모든 프로필을 보려면 **필터**를 클릭하고 "활성" 및 "비활성" 정책 상태의 확인란을 모두 선택합니다. 
 
 전용 디바이스를 등록할 수 있도록 등록 프로필을 만들어야 합니다. 프로필이 만들어지면 등록 토큰(임의 문자열) 및 QR 코드를 제공합니다. Android OS 및 디바이스 버전에 따라 토큰 또는 QR 코드를 사용하여 [전용 디바이스를 등록](#enroll-the-dedicated-devices)할 수 있습니다.
 

@@ -8,20 +8,20 @@ manager: dougeby
 ms.date: 08/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
-ms.technology: ''
 ms.assetid: 4a94440c-11cb-11e8-b642-0ed5f89f718b
 ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: def679ec8e530ce94aae6f8884f9ad94bf2cf58d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 346960d8d1d79afc4494064570d1a03e83b8a302
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726039"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510153"
 ---
 # <a name="microsoft-intune-licensing"></a>Microsoft Intune 라이선스
 Microsoft Intune은 학교와 소규모 비즈니스를 위한 사용이 간단한 관리 경험부터 엔터프라이즈 고객에게 필요한 고급 기능까지, 다양한 고객 요구 사항 및 조직 규모를 위해 제공됩니다. Microsoft Intune이 포함된 대부분의 라이선스에서는 구독이 활성 상태인 한 System Center Configuration Manager를 사용할 수 있는 권리도 제공합니다. 

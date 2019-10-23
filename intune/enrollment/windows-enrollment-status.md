@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bc472a8b15746a46b5e0cda3a8fe11db7aa4974
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722308"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503028"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>등록 상태 페이지 설정
  
@@ -55,7 +56,7 @@ ESP(등록 상태 페이지)는 초기 디바이스를 등록하는 동안 Windo
 <tr><td>설치 오류 발생 시 사용자가 디바이스를 사용하도록 허용<td>설치에 실패한 경우 <b>계속</b> 단추가 표시됩니다.<td>설치에 실패한 경우 <b>계속</b> 단추가 표시되지 않습니다.
 <tr><td>설치가 지정된 시간(분)보다 오래 걸리면 시간 초과 오류 표시<td colspan="2">설치가 완료될 때까지 대기할 시간(분)을 지정합니다. 기본값은 60분으로 입력됩니다.
 <tr><td>오류가 발생하는 경우 사용자 지정 메시지 표시<td>설치 오류가 발생하는 경우 표시할 사용자 지정 메시지를 지정할 수 있는 텍스트 상자가 제공됩니다.<td>다음과 같은 기본 메시지가 표시됩니다. <br><b>조직에서 설정한 설치 제한 시간을 초과했습니다. 다시 시도하거나 IT 지원 담당자에게 문의하여 도움을 요청하세요.<b>
-<tr><td>사용자가 설치 오류에 대한 로그를 수집하는 것을 허용<td>설치 오류가 발생하는 경우 <b>로그 수집</b> 단추가 표시됩니다. <br>사용자가 이 단추를 클릭하면 로그 파일 <b>MDMDiagReport.cab</b>을 저장할 위치를 선택하라는 메시지가 표시됩니다.<td>설치 오류가 발생하는 경우 <b>로그 수집</b> 단추가 표시되지 않습니다.
+<tr><td>사용자가 설치 오류에 대한 로그를 수집하는 것을 허용<td>설치 오류가 발생하는 경우 <b>로그 수집</b> 단추가 표시됩니다. <br>사용자가 이 단추를 클릭하면 로그 파일 <b>MDMDiagReport.cab</b>을 저장할 위치를 선택하라는 메시지가 표시됩니다.<td>설치에 실패한 경우 <b>로그 수집</b> 단추가 표시되지 않습니다.
 <tr><td>이러한 필수 앱이 사용자/디바이스에 할당된 경우 이러한 필수 앱이 설치될 때까지 디바이스 사용 차단<td colspan="2"><b>모두</b> 또는 <b>선택됨</b>을 선택합니다. <br><br><b>선택됨</b>을 선택하는 경우 디바이스를 사용하도록 설정하기 전에 설치해야 하는 앱을 선택할 수 있는 <b>앱 선택</b> 단추가 표시됩니다.
 </table>
 

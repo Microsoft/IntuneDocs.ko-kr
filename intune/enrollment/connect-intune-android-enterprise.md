@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ad9c098c0c9575f511c14c7b2b8120815abe3cb
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0fad076b33bed5375dd8e53dd401a2c9c4c39237
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723387"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505563"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Intune 계정을 관리형 Google Play 계정에 연결
 
@@ -60,7 +61,7 @@ Android 엔터프라이즈 관리를 더 쉽게 구성하고 사용할 수 있�
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Android 엔터프라이즈 관리 계정 연결 끊기
 
-Android 엔터프라이즈 등록 및 관리를 끌 수 있습니다. 이렇게 하려면 먼저 회사 프로필 디바이스, 전용 디바이스 및 완전히 관리되는 디바이스 등 등록된 Android 엔터프라이즈 디바이스를 사용 중지해야 합니다. 그런 다음, Intune 관리 콘솔에서 **연결 끊기**를 선택하여 등록된 모든 Android 엔터프라이즈 회사 프로필 디바이스 및 완전 관리형 디바이스를 등록에서 제거합니다. 관리형 Google Play 계정과 Intune의 관계도 제거됩니다.
+Android 엔터프라이즈 등록 및 관리를 끌 수 있습니다. 이렇게 하려면 먼저 회사 프로필 디바이스, 전용 디바이스 및 완전히 관리되는 디바이스 등 등록된 Android 엔터프라이즈 디바이스를 사용 중지해야 합니다. 그런 다음, Intune 관리 콘솔에서 **연결 끊기**를 선택하여 등록된 모든 Android 엔터프라이즈 회사 프로필 디바이스, 전용 디바이스 및 완전 관리형 디바이스를 등록에서 제거합니다. 관리형 Google Play 계정과 Intune의 관계도 제거됩니다.
 
 1. Intune 관리자는 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **디바이스 등록** > **Android 등록** > **관리되는 Google Play** > **연결 끊기**를 선택합니다.

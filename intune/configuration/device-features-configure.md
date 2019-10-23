@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83328652c366eea6e1a3cbb81ea4979d8844a96b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 54d7ccabf958c3b8532f1a115724559607783a57
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724193"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72495228"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune에서 iOS 및 macOS 디바이스 기능 설정 추가
 
@@ -141,7 +142,7 @@ Single Sign-On을 사용하려면 다음이 있어야 합니다.
 
 ![Single Sign-On 창](./media/device-features-configure/sso-blade.png)
 
-Intune에서 구성할 수 있는 설정 목록은 [iOS의 Single Sign-On](ios-device-features-settings.md#single-sign-on)을 참조하세요.
+Intune에서 구성할 수 있는 설정 목록은 [iOS의 SSO(단일 로그인)](ios-device-features-settings.md#single-sign-on)를 참조하세요.
 
 적용 대상:
 
@@ -159,7 +160,7 @@ Intune에서 구성할 수 있는 설정 목록은 [iOS SSO 앱 확장](ios-devi
 SSO 앱 확장을 개발하는 방법에 대한 자세한 내용은 Apple 웹 사이트의 [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301)를 참조하세요.
 
 > [!NOTE]
-> **Single Sign-On 앱 확장** 기능은 **Single Sign-On** 기능과 다릅니다.
+> **SSO(단일 로그인) 앱 확장** 기능은 **SSO(단일 로그인)** 기능과 다릅니다.
 >
 > - **Single Sign-On 앱 확장** 설정은 iPadOS 13.0 이상 및 iOS 13.0 이상에 적용됩니다. **Single Sign-On** 설정은 iPadOS 13.0 이상 및 iOS 7.0 이상에 적용됩니다.
 > - **Single Sign_On 앱 확장**은 운영 체제에서 인증을 처리합니다. **Single Sigen-On**에서는 특정 앱이 인증을 처리합니다.
@@ -167,7 +168,7 @@ SSO 앱 확장을 개발하는 방법에 대한 자세한 내용은 Apple 웹 �
 >
 >    **Single Sign-On 앱 확장**은 Apple 운영 체제를 사용하여 인증합니다. 따라서 더 나은 최종 사용자 환경을 제공할 수 있습니다.
 >
-> - 개발 관점에서 **Single Sign-On 앱 확장**은 모든 유형의 자격 증명 SSO 인증을 사용할 수 있습니다. **Single Sign-On**을 사용할 경우 Kerberos SSO 인증만 사용할 수 있습니다.  
+> - 개발 관점에서 **SSO(단일 로그인) 앱 확장**은 모든 유형의 자격 증명 SSO 인증을 사용할 수 있습니다. **Single Sign-On**을 사용할 경우 Kerberos SSO 인증만 사용할 수 있습니다.  
 
 적용 대상:
 

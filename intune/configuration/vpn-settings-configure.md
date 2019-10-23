@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96de28e517a989fc1e749176039e6c02ef51e0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723777"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72491758"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune에서 VPN 서버에 연결할 VPN 프로필 생성
 
@@ -52,7 +53,7 @@ VPN(가상 사설망)을 사용하면 사용자가 조직 네트워크에 안전
 |Citrix SSO|- Android<br/>- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS<br/>- Windows 10|
 |사용자 지정 VPN|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|IKEv2|Windows 10|
+|IKEv2| - iOS<br/>- Windows 10|
 |L2TP|Windows 10|
 |Palo Alto Networks GlobalProtect|- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS<br/>- Windows 10|
 |PPTP|Windows 10|

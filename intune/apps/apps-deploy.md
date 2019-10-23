@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f0f00b635a04f4ffe5bc09489b9909e9243ee98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 99e89db1bbef3d08cd6709b2600c4a684ac618f7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725155"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498616"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
@@ -87,7 +88,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>앱 의도 간의 충돌을 해결하는 방법
 
-단일 그룹은 여러 앱 할당 의도의 대상으로 지정될 수 없지만 사용자 또는 디바이스가 각각 다른 의도로 할당된 여러 그룹의 멤버인 경우 충돌이 발생합니다. 애플리케이션에 대한 할당 충돌을 만드는 것은 권장되지 않습니다.
+단일 그룹은 여러 앱 할당 의도에 대해 대상으로 지정되지 않습니다. 그러나 사용자 또는 디바이스가 각각 다른 의도를 사용하여 할당된 여러 그룹의 멤버인 경우 충돌이 발생합니다. 애플리케이션에 대한 할당 충돌을 만드는 것은 권장되지 않습니다.
 다음 표의 정보는 충돌 발생 시 그로 인한 의도를 이해하는 데 도움이 될 수 있습니다.
 
 | 그룹 1 의도 | 그룹 2 의도 | 결과 의도 |
@@ -148,7 +149,7 @@ iOS 디바이스의 경우 Intune에서 디바이스를 등록 취소하거나 *
 
 새 할당의 경우 다음과 같이 설정의 기본값이 미리 채워집니다.
 
-|iOS 앱 유형 | "디바이스 제거 시 제거"의 기본 설정 |
+|iOS 앱 유형 | “디바이스 제거 시 제거”의 기본 설정 |
 |--------------------|----------------|
 | LOB(기간 업무) 앱 | 예 |
 | 스토어 앱 | 아니요 |
@@ -156,7 +157,7 @@ iOS 디바이스의 경우 Intune에서 디바이스를 등록 취소하거나 *
 | 기본 제공 앱 | 아니요 |
 
 >[!NOTE]
->**"사용 가능" 할당 유형:** "등록된 디바이스에 사용 가능" 또는 "등록 유무에 상관없이 사용 가능" 그룹에 대해 이 설정을 업데이트하는 경우 관리되는 앱이 이미 있는 사용자는 디바이스를 Intune과 동기화하고 앱을 다시 설치할 때까지 업데이트된 설정을 가져올 수 없습니다. 
+>**“사용 가능한” 할당 유형:** “등록된 디바이스에 사용 가능” 또는 “등록 유무에 상관없이 사용 가능” 그룹에 대해 이 설정을 업데이트하는 경우 관리되는 앱이 이미 있는 사용자는 디바이스를 Intune과 동기화하고 앱을 다시 설치할 때까지 업데이트된 설정을 가져올 수 없습니다. 
 >
 >**기존 할당:** 이 설정이 도입되기 전에 존재했던 할당은 수정되지 않으며 관리되는 모든 앱은 관리에서 디바이스를 제거할 때 제거됩니다.
 

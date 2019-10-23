@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45e6f473eaec082b3f566b6bf717aed7c3b49f80
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c18da57282a190dec363e3dfbde5293f5228cb0b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722737"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504625"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange 온-프레미스 및 레거시 Exchange Online Dedicated에 대한 조건부 액세스 정책 만들기
 
@@ -38,7 +39,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 
 - Exchange 버전이 **Exchange 2010 SP1 이상**입니다. Exchange Server CAS(클라이언트 액세스 서버) 배열이 지원됩니다.
 
-- Intune을 온-프레미스 Exchange에 연결하는 [Exchange Active Sync 온-프레미스 Exchange 커넥터](exchange-connector-install.md)를 설치하여 사용해야 합니다.
+- Intune을 온-프레미스 Exchange에 연결하는 [Exchange Active Sync 온-프레미스 Exchange 커넥터](exchange-connector-install.md)를 사용합니다.
 
     >[!IMPORTANT]  
     >Intune은 구독당 여러 개의 온-프레미스 Exchange Connector를 지원합니다.  그러나 각 온-프레미스 Exchange 커넥터는 단일 Intune 테넌트별로 다르며 다른 테넌트에서는 사용할 수 없습니다.  둘 이상의 온-프레미스 Exchange 조직이 있는 경우 각 Exchange 조직에 대해 별도의 커넥터를 설정할 수 있습니다.

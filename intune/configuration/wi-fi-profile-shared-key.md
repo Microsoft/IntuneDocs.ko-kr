@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 175be4d51b034745ce6fab050f68be277f1d4858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 623c6652964ae5a4f16a9c689dda3aee99c50d31
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723764"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506502"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>사용자 지정 디바이스 프로필을 사용하여 미리 공유한 키로 Wi-Fi 프로필 만들기 - Intune
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -219,7 +220,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 3. `netsh wlan show profiles`를 실행합니다. 모든 프로필의 이름이 나열됩니다.
 4. `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`를 실행합니다. 이 명령은 c:\Wifi.에 `Wi-Fi-YourProfileName.xml`이라는 파일을 만듭니다.
 
-    - 미리 공유한 키를 포함하는 Wi-Fi 프로필을 내보내는 경우 명령에 `key=clear`를 추가합니다.
+    - 미리 공유한 키를 포함하는 Wi-Fi 프로필을 내보내는 경우 명령에 `key=clear`를 추가해야 합니다.
   
       `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
 

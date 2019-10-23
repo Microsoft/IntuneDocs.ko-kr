@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
@@ -16,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49246302cf71fc95d20cdb84099323ba9beffdb3
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 8fab3ea722e94f2613a0fb1e474a16ecb5971569
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940477"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585258"
 ---
 # <a name="configure-app-protection-policies-optional"></a>앱 보호 정책 구성(선택 사항)
 
@@ -51,9 +52,7 @@ Intune에서는 디바이스 수준 관리 방법이 없는 경우 회사 데이
 
 ## <a name="task-list-for-app-protection-policies"></a>앱 보호 정책에 대한 작업 목록
 
-1. [앱 보호 정책 만들기](../apps/app-protection-policies.md#create-an-app-protection-policy)
-2. [정책 배포](../apps/app-protection-policies.md#deploy-a-policy-to-users)
-
+- [앱 보호 정책을 만들고 할당하는 방법](~/apps/app-protection-policies.md)
 
 ## <a name="next-steps"></a>다음 단계
 

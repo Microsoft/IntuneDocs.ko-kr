@@ -4,21 +4,23 @@ description: 빠른 시작 - 원격 디바이스 관리자에 대한 사용자 �
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
+ms.assetid: 0b3ac749-4a61-4717-bf08-e0e6a15c3b0a
 ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d84e4d63c16911d83754cf6f70609f830cd709f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727118"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509901"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>빠른 시작: 사용자 지정 역할 만들기 및 할당
 

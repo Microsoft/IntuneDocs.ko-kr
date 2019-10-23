@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1679eb656e04296e53d8994dcd47144621c99d0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dc0194bfaf1ec5e3120b6bd30eb6b2eb82c6ec2d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721775"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504735"
 ---
 # <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>DigiCert PKI 플랫폼용 Intune Certificate Connector 설정  
 
@@ -74,11 +75,11 @@ DigiCert CA에만 커넥터를 사용하는 경우 이 문서의 지침을 사�
         
         ;----------------------------------------------- 
 
-2. 관리자 권한으로 명령 프롬프트를 열고 다음 명령을 사용하여 인증서 서명 요청(CSR)을 생성합니다.
+2. 관리자 권한 명령 프롬프트를 열고 다음 명령을 사용하여 인증서 서명 요청(CSR)을 생성합니다.
 
    `Certreq.exe -new certreq.ini request.csr`
 
-3. 메모장에서 request.csr 파일을 열고 다음 형식의 CSR 콘텐츠를 복사합니다.
+3. Notepad에서 request.csr 파일을 열고 다음 형식의 CSR 콘텐츠를 복사합니다.
 
 
         -----BEGIN NEW CERTIFICATE REQUEST-----
@@ -190,7 +191,7 @@ Intune 관리 포털에서 최신 Intune Certificate Connector 버전을 다운�
 
 기본적으로 Intune Certificate Connector는 **%ProgramFiles%\Microsoft Intune\NDESConnectorSvc**에 설치됩니다.
 
-1. **NDESConnectorSvc** 폴더에서 **NDESConnector.exe.config** 파일을 메모장으로 엽니다.
+1. **NDESConnectorSvc** 폴더에서 Notepad로 **NDESConnector.exe.config** 파일을 엽니다.
 
    a. 이전 섹션에서 복사한 인증서 지문 값으로 `RACertThumbprint` 키 값을 업데이트합니다. 예를 들면 다음과 같습니다.
 
@@ -220,7 +221,7 @@ Intune 관리 포털에서 최신 Intune Certificate Connector 버전을 다운�
 
 4. **로그인**을 선택한 다음 **확인**을 선택하여 성공적으로 등록되었는지 확인합니다. 그런 다음 NDES Connector 사용자 인터페이스를 닫을 수 있습니다.
    
-   !["등록 성공" 메시지가 있는 NDES Connector 인터페이스](./media/certificates-digicert-configure/certificates-digicert-configure-connector-configure.png)
+   ![“등록 성공” 메시지가 있는 NDES Connector 인터페이스](./media/certificates-digicert-configure/certificates-digicert-configure-connector-configure.png)
 
 
 
@@ -324,10 +325,10 @@ Intune Certificate Connector 서비스 로그는 NDES Connector 컴퓨터의 **%
 | NDES Connector UI에서 Intune 테넌트 관리자 계정으로 로그인할 수 없습니다. | 이 문제는 Intune 관리 포털에서 온-프레미스 인증서 커넥터가 사용하도록 설정되지 않은 경우 발생할 수 있습니다. 이 문제를 해결하려면 다음 절차 중 하나를 사용하세요. <br><br> Silverlight UI에서: <br> 1. [Intune 관리 포털](https://admin.manage.microsoft.com)에 로그인합니다. <br> 2. **관리자**를 선택합니다. <br> 3. **모바일 디바이스 관리** > **인증서 커넥터**를 선택합니다. <br> 4. **온-프레미스 인증서 커넥터 구성**을 선택합니다. <br> 5. **인증서 커넥터 사용** 확인란을 선택합니다. <br> 6. **확인**을 선택합니다. <br><br> Azure Portal UI에서: <br> 1. [Azure 포털](https://portal.azure.com)에 로그인합니다. <br> 2. Microsoft Intune으로 이동합니다. <br> 3. **디바이스 구성** > **인증 기관**을 선택합니다. <br> 4. **사용**을 선택합니다. <br><br> Silverlight UI 또는 Azure Portal에서 이전 단계를 완료한 후 NDES Connector UI에서 동일한 Intune 테넌트 관리자 계정으로 로그인해 보세요. |
 | NDES Connector 인증서를 찾을 수 없습니다. <br><br> System.ArgumentNullException: 값은 null일 수 없습니다. | Intune 테넌트 관리자 계정이 NDES Connector UI에 로그인한 적이 없는 경우 Intune Certificate Connector가 이 오류를 표시합니다. <br><br> 이 오류가 지속되면 Intune Service Connector를 다시 시작합니다. <br><br> 1. **services.msc**를 엽니다. <br> 2. **Intune Connector 서비스**를 선택합니다. <br> 3. 마우스 오른쪽 단추를 클릭하고 **다시 시작**을 선택합니다.|
 | NDES Connector - IssuePfx-Generic 예외: <br> System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다. | 이 오류는 일시적입니다. Intune Service Connector를 다시 시작합니다. <br><br> 1. **services.msc**를 엽니다. <br> 2. **Intune Connector 서비스**를 선택합니다. <br> 3. 마우스 오른쪽 단추를 클릭하고 **다시 시작**을 선택합니다. |
-| DigiCert 공급자 - DigiCert 정책을 가져오지 못했습니다. <br><br>“작업 시간이 초과되었습니다.” | Intune Certificate Connector가 DigiCert CA와 통신하는 동안 작업 시간 초과 오류가 발생했습니다. 이 오류가 계속 발생하면 연결 제한 시간 값을 늘리고 다시 시도합니다. <br><br> 연결 제한 시간을 늘리려면: <br> 1. NDES Connector 컴퓨터로 이동합니다. <br>2. 메모장에서 **%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config** 파일을 엽니다. <br> 3. 다음 매개 변수의 제한 시간 값을 늘립니다. <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Intune Certificate Connector 서비스를 다시 시작합니다. <br><br> 문제가 계속되면 DigiCert 고객 지원에 문의하세요. |
+| DigiCert 공급자 - DigiCert 정책을 가져오지 못했습니다. <br><br>“작업 시간이 초과되었습니다.” | Intune Certificate Connector가 DigiCert CA와 통신하는 동안 작업 시간 초과 오류가 발생했습니다. 이 오류가 계속 발생하면 연결 제한 시간 값을 늘리고 다시 시도합니다. <br><br> 연결 제한 시간을 늘리려면: <br> 1. NDES Connector 컴퓨터로 이동합니다. <br>2. Notepad에서 **%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config** 파일을 엽니다. <br> 3. 다음 매개 변수의 제한 시간 값을 늘립니다. <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Intune Certificate Connector 서비스를 다시 시작합니다. <br><br> 문제가 계속되면 DigiCert 고객 지원에 문의하세요. |
 | DigiCert 공급자 - 클라이언트 인증서를 가져오지 못했습니다. | Intune Certificate Connector가 로컬 컴퓨터-개인 인증서 저장소에서 리소스 권한 부여 인증서를 검색하지 못했습니다. 이 문제를 해결하려면 로컬 컴퓨터-개인 인증서 저장소에 프라이빗 키와 함께 리소스 권한 부여 인증서를 설치합니다. <br><br> DigiCert CA에서 리소스 권한 부여 인증서를 받아야 합니다. 자세한 내용은 DigiCert 고객 지원에 문의하세요. | 
 | DigiCert 공급자 - DigiCert 정책을 가져오지 못했습니다. <br><br>“요청이 중단되었습니다. SSL/TLS 보안 채널을 만들 수 없음”을 가져오지 못함 | 이 오류는 다음과 같은 경우에 발생합니다. <br><br> 1. Intune Certificate Connector 서비스에 로컬 컴퓨터-개인 인증서 저장소에서 프라이빗 키와 함께 리소스 권한 부여 인증서를 읽을 권한이 없습니다. 이 문제를 해결하려면 services.msc에서 커넥터 서비스의 실행 중인 컨텍스트 계정을 확인합니다. 커넥터 서비스는 NT AUTHORITY\SYSTEM 컨텍스트에서 실행되어야 합니다. <br><br> 2. Intune 관리 포털의 PKCS 인증서 프로필이 DigiCert CA의 잘못된 기본 서비스 FQDN으로 구성되었을 수 있습니다. FQDN은 **pki-ws.symauth.com**과 비슷합니다. 이 문제를 해결하려면 해당 URL이 구독에 적합한지 DigiCert 고객 지원에 확인합니다. <br><br> 3. Intune Certificate Connector가 프라이빗 키를 검색할 수 없으므로 리소스 권한 부여 인증서를 통해 DigiCert CA에 인증하지 못했습니다. 이 문제를 해결하려면 로컬 컴퓨터-개인 인증서 저장소에 프라이빗 키와 함께 리소스 권한 부여 인증서를 설치합니다. <br><br> 문제가 계속되면 DigiCert 고객 지원에 문의하세요. |
-| DigiCert 공급자 - DigiCert 정책을 가져오지 못했습니다. <br><br>“요청 요소가 인식되지 않습니다.” | 클라이언트 프로필 OID가 Intune 인증서 프로필과 일치하지 않으므로 Intune Certificate Connector가 DigiCert 인증서 프로필 템플릿을 가져오지 못했습니다. 다른 경우에 Intune Certificate Connector가 DigiCert CA에서 클라이언트 프로필 OID와 연결된 인증서 프로필 템플릿을 찾을 수 없습니다. <br><br> 이 문제를 해결하려면 DigiCert CA의 DigiCert 인증서 템플릿에서 올바른 클라이언트 프로필 OID를 얻습니다. 그런 다음 Intune 관리 포털에서 PKCS 인증서 프로필을 업데이트합니다. <br><br> DigiCert CA에서 클라이언트 프로필 OID 얻기: <br> 1. DigiCert CA 관리 포털에 로그인합니다. <br> 2. **인증서 프로필 관리**를 선택합니다. <br> 3. 사용할 인증서 프로필을 선택합니다. <br> 4. 인증서 프로필 OID를 가져옵니다. 다음 예제와 같이 표시됩니다. <br> `Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109` <br><br> 올바른 인증서 프로필 OID를 사용하여 PKCS 인증서 프로필 업데이트: <br>1. Intune 관리 포털에 로그인합니다. <br> 2. PKCS 인증서 프로필로 이동하여 **편집**을 선택합니다. <br> 3. 인증서 템플릿 이름 필드에서 인증서 프로필 OID를 업데이트합니다. <br> 4. PKCS 인증서 프로필을 저장합니다. |
+| DigiCert 공급자 - DigiCert 정책을 가져오지 못했습니다. <br><br>“요청 요소가 인식되지 않습니다.” | 클라이언트 프로필 OID가 Intune 인증서 프로필과 일치하지 않으므로 Intune Certificate Connector가 DigiCert 인증서 프로필 템플릿을 가져오지 못했습니다. 다른 경우에 Intune Certificate Connector가 DigiCert CA에서 클라이언트 프로필 OID와 연결된 인증서 프로필 템플릿을 찾을 수 없습니다. <br><br> 이 문제를 해결하려면 DigiCert CA의 DigiCert 인증서 템플릿에서 올바른 클라이언트 프로필 OID를 얻습니다. 그런 다음 Intune 관리 포털에서 PKCS 인증서 프로필을 업데이트합니다. <br><br> DigiCert CA에서 클라이언트 프로필 OID 얻기: <br> 1. DigiCert CA 관리 포털에 로그인합니다. <br> 2. **인증서 프로필 관리**를 선택합니다. <br> 3. 사용할 인증서 프로필을 선택합니다. <br> 4. 인증서 프로필 OID 가져옵니다. 다음 예제와 같이 표시됩니다. <br> `Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109` <br><br> 올바른 인증서 프로필 OID를 사용하여 PKCS 인증서 프로필 업데이트: <br>1. Intune 관리 포털에 로그인합니다. <br> 2. PKCS 인증서 프로필로 이동하여 **편집**을 선택합니다. <br> 3. 인증서 템플릿 이름 필드에서 인증서 프로필 OID를 업데이트합니다. <br> 4. PKCS 인증서 프로필을 저장합니다. |
 | DigiCert 공급자 - 정책 확인에 실패했습니다. <br><br> 특성이 DigiCert 지원 인증서 템플릿 특성 목록에 포함되지 않습니다. | DigiCert CA는 DigiCert 인증서 프로필 템플릿과 Intune 인증서 프로필이 일치하지 않을 경우 이 메시지를 표시합니다. 이 문제는 **SubjectName** 또는 **SubjectAltName**의 특성 불일치로 인해 발생했을 수 있습니다. <br><br> 이 문제를 해결하려면 DigiCert 인증서 프로필 템플릿에서 **SubjectName** 및 **SubjectAltName**에 대한 Intune 지원 특성을 선택합니다. 자세한 내용은 **인증서 매개 변수** 섹션에서 Intune 지원 특성을 참조하세요. |
 | 일부 사용자 디바이스가 DigiCert CA에서 PKCS 인증서를 수신하지 않습니다. | 사용자 UPN에 밑줄 같은 특수 문자가 포함된 경우(예: `global_admin@intune.onmicrosoft.com`) 이 문제가 발생합니다. <br><br> DigiCert CA는 **mail_firstname** 및 **mail_lastname**에서 특수 문자를 지원하지 않습니다. <br><br> 이 문제를 해결하려면 다음 단계를 따릅니다. <br><br> 1. DigiCert CA 관리 포털에 로그인합니다. <br> 2. **인증서 프로필 관리**로 이동합니다. <br> 3. Intune에 사용되는 인증서 프로필을 선택합니다. <br> 4. **옵션 사용자 지정** 링크를 선택합니다. <br> 5. **고급 옵션** 단추를 선택합니다. <br> 6. **인증서 필드 - 주체 DN** 아래에 **CN(일반 이름)** 필드를 추가하고 기존 **CN(일반 이름)** 필드를 삭제합니다. 추가 및 삭제 작업은 함께 수행해야 합니다. <br> 7. **저장**을 선택합니다. <br><br> 이전 변경에 따라 DigiCert 인증서 프로필이 **mail_firstname** 및 **mail_lastname** 대신 **“CN=<upn>”** 을 요청합니다. |
 | 사용자가 디바이스에서 이미 배포된 인증서를 수동으로 삭제했습니다. | Intune은 다음 체크 인 또는 정책 적용 중에 동일한 인증서를 다시 배포합니다. 이 경우 NDES Connector는 PKCS 인증서 요청을 수신하지 않습니다. |
