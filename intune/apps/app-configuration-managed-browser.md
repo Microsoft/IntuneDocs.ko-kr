@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63e3a02f9df52052f27714403e8f189d089c6690
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725896"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507561"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 웹 액세스 관리
 
@@ -38,7 +39,7 @@ Intune 정책(Microsoft Edge 또는 Intune Managed Browser)으로 보호되는 �
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge 지원
 
-iOS 및 Android 디바이스의 엔터프라이즈 시나리오에서 Microsoft Edge를 사용할 수 있습니다. Microsoft Edge는 최종 사용자 환경에 향상된 기능을 추가하여 Intune Managed Browser와 동일한 모든 관리 시나리오를 모두 지원합니다. Intune 정책을 통해 다음 Microsoft Edge 엔터프라이즈 기능을 사용할 수 있습니다.
+iOS 및 Android 디바이스의 엔터프라이즈 시나리오에서 Microsoft Edge를 사용할 수 있습니다. Microsoft Edge는 최종 사용자 환경에 향상된 기능을 추가하여 Intune Managed Browser와 동일한 모든 관리 시나리오를 모두 지원합니다. Intune 정책을 통해 사용할 수 있는 Microsoft Edge 엔터프라이즈 기능은 다음과 같습니다.
 
 - **이중 ID** - 사용자는 검색을 위해 회사 계정뿐 아니라 개인 계정을 추가할 수 있습니다. Office 365 및 Outlook의 아키텍처 및 환경과 비슷한 두 ID는 완전히 분리됩니다. Intune 관리자는 회사 계정 내에서 보호된 검색 환경에 대해 원하는 정책을 설정할 수 있습니다. 
 - **Intune 앱 보호 정책 통합** - 관리자는 이제 잘라내기, 복사 및 붙여넣기 제어, 화면 캡처 방지, 사용자가 선택한 링크가 다른 관리형 앱에서만 열리도록 하는 기능을 포함하여 앱 보호 정책의 대상을 Microsoft Edge로 지정할 수 있습니다.
@@ -154,7 +155,7 @@ Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대�
 3. 다음 블레이드에서 **할당**을 선택합니다.
 4. **할당** 블레이드에서 앱 구성을 할당할 Azure AD 그룹을 선택하고 **확인**을 선택합니다.
 
-## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>조직의 보호되는 브라우저로 Microsoft Edge를 설정하는 방법
+## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>Microsoft Edge를 조직의 보호되는 브라우저로 설정하는 방법
 
 이 설정을 사용하면 Microsoft Edge와 Intune Managed Browser 모두 앱 보호 정책을 사용하여 대상 지정된다고 가정할 때 사용자가 Microsoft Edge 또는 Intune Managed Browser로 리디렉션됩니다. **이 애플리케이션 구성 정책 설정은 웹 링크가 열리는 Intune 관리 앱을 대상으로 해야 합니다.** 
 
@@ -169,16 +170,16 @@ Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대�
 - 사용자가 Managed Browser 또는 Microsoft Edge 중 **하나**를 다운로드한 경우 해당 브라우저 앱이 시작됩니다. 
 - 사용자가 어느 브라우저 앱도 다운로드하지 않은 경우 Managed Browser를 다운로드하라는 메시지가 표시됩니다.
 
-위의 절차를 사용하여 Microsoft Edge 앱 구성을 만듭니다. **구성** 블레이드에서 **구성 설정**을 선택할 때 다음 키 및 값 쌍을 제공합니다(9단계):
+위 절차를 사용하여 Microsoft Edge 앱 구성을 만듭니다. **구성** 블레이드에서 **구성 설정**을 선택할 때 다음 키-값 쌍을 제공합니다(9단계).
 
 | Key                              |  값   |
 |----------------------------------|----------|
 | **com.microsoft.intune.useEdge** | **true** |
 
 > [!NOTE]
-> Microsoft Edge 및 앱 구성에서 지정한 연결된 앱을 관리하는 앱 보호 정책에서 다음 데이터 보호 정책 설정이 설정되어 있는지 확인합니다.
+> Microsoft Edge와 앱 구성에서 지정한 연결 앱을 관리하는 앱 보호 정책에서 다음 데이터 보호 정책 설정이 설정되어 있는지 확인합니다.
 > - 다른 앱에 조직 데이터 보내기: **정책 관리 앱**
-> - 정책 관리형 브라우저와 웹 콘텐츠 공유: **필요**
+> - 웹 콘텐츠를 정책 관리 브라우저와 공유: **필요**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>보호되는 브라우저에 대한 애플리케이션 프록시 설정을 구성하는 방법
 
@@ -202,10 +203,10 @@ Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 애플리�
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>1단계: Outlook에서 보호되는 브라우저로 자동 리디렉션 사용 설정
 **Managed Browser에서 표시할 수 있는 웹 콘텐츠 제한** 설정을 사용하도록 설정하는 앱 보호 정책으로 Outlook이 구성되어 있어야 합니다.
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>2단계: 보호되는 브라우저에 대해 할당되는 앱 구성 정책 할당
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>2단계: 보호되는 브라우저에 할당되는 앱 구성 정책 할당
 이 절차에서는 앱 프록시 리디렉션을 사용하도록 Managed Browser 또는 Microsoft Edge 앱을 구성합니다. 
 
-정책의 구성 설정에서 **Edge** 탭을 열고 애플리케이션 리디렉션 값에 대해 **사용**을 선택합니다. 이 설정을 사용하도록 설정하면 사용자는 회사 링크와 Azure 애플리케이션 프록시를 통해 게시된 온-프레미스 웹 앱에 액세스할 수 있습니다.
+정책의 구성 설정에서 **Edge** 탭을 열고 애플리케이션 리디렉션 값에 대해 **사용**을 선택합니다. 이 설정을 사용하도록 설정하면 사용자는 회사 링크와 Azure 애플리케이션 프록시를 통해 게시된 온-프레미스 웹앱에 액세스할 수 있습니다.
 
 온-프레미스 웹앱에 원활한(및 보호된) 액세스와 함께 Managed Browser, Microsoft Edge 및 Azure AD 애플리케이션 프록시를 사용하는 방법에 대한 자세한 내용은 Enterprise Mobility + Security 블로그 게시물 [연계를 통해 성능 향상: 사용자 액세스를 개선하려는 Intune 및 Azure Active Directory 팀](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)을 참조하세요.
 
@@ -300,7 +301,7 @@ Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행�
   
 ## <a name="soft-transitions-from-work-to-personal-accounts"></a>회사 계정에서 개인 계정으로 부드럽게 전환
 
-Microsoft Edge 모바일 엔터프라이즈 환경의 초석은 이중 ID 모델입니다. 즉, Microsoft Edge는 회사 계정과 개인 계정을 모두 지원합니다. Office 365 및 Outlook 앱과 같이 이 이중 ID 모델을 통해 최종 사용자는 탐색이 필요할 때 항상 Microsoft Edge를 사용하고 관리자가 정의한 콘텐츠 정책에 따라 쉽게 두 가지 환경 간에 이동할 수 있습니다. 개인 컨텍스트에서의 탐색은 영향을 받지 않으며 회사 정보는 Microsoft Edge 내의 회사 컨텍스트 내로 완전히 제한됩니다. 
+Microsoft Edge 모바일 엔터프라이즈 환경의 초석은 이중 ID 모델입니다. 즉, Microsoft Edge에서는 회사 ID와 개인 ID를 모두 지원합니다. Office 365 및 Outlook 앱에서처럼 이 이중 ID 모델을 통해 최종 사용자는 탐색이 필요할 때 항상 Microsoft Edge를 사용하고 관리자가 정의한 콘텐츠 정책에 따라 쉽게 두 환경 사이를 이동할 수 있습니다. 개인 컨텍스트에서의 탐색은 영향을 받지 않으며 회사 정보는 Microsoft Edge 내의 회사 컨텍스트 내로 완전히 제한됩니다. 
 
 이 모델의 이점 중 하나는 조직에서 허용하지 않는 사이트에 대한 링크(예: 신문 기사 등)를 열려고 하는 사용자는 회사 컨텍스트와 완전히 분리된 자신의 개인 컨텍스트에서 이 작업을 수행할 수 있다는 점입니다. 이러한 부드러운 전환은 기본적으로 사용하도록 설정되어 있습니다. 
 
@@ -308,7 +309,7 @@ Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행�
 
 | Key                                                                | 값                                                 |
 |--------------------------------------------------------------------|-------------------------------------------------------|
-| **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | **False**는 이러한 부드러운 전환이 이루어지는 것을 차단합니다 |
+| **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | **False**는 이러한 부드러운 전환이 이루어지는 것을 차단합니다. |
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS에서 Managed Browser를 사용하여 관리되는 앱 로그에 액세스하는 방법
 
