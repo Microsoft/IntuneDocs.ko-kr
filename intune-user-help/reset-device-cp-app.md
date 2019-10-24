@@ -9,6 +9,7 @@ ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5aff186d3850e8f9a6081168a5adc9956504019
-ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71163351"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502109"
 ---
 # <a name="reset-device-from-the-company-portal-app"></a>회사 포털 앱에서 장치 다시 설정  
 
-사용 되는 장치를 회사 포털 앱에서 공장 설정으로 다시 설정 합니다.  
+회사 포털 앱에서 사용, 분실 또는 도난된 디바이스를 출하 시 초기 설정으로 재설정합니다.  
 
 장치를 다시 설정한 후에는 회사 포털에 더 이상 표시 되지 않습니다. 기존 앱과 파일이 삭제 되 고 기본 설정으로 복원 됩니다.  
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,18 +17,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a02e403fdba34b576aa90b82062b7a602cbb517
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735690"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509238"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
 이 문서는 intune 관리자가 Intune에서 iOS 장치를 등록할 때의 문제를 이해 하 고 해결 하는 데 도움이 됩니다
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 문제 해결을 시작 하기 전에 몇 가지 기본적인 정보를 수집 하는 것이 중요 합니다. 이 정보를 통해 문제를 보다 잘 이해 하 고 해결 시간을 단축할 수 있습니다.
 
@@ -51,7 +52,7 @@ ms.locfileid: "71735690"
 #### <a name="resolution"></a>해결 방법
 
 1. 다음 단계에서 데이터 손실을 방지 하려면 (iOS 복원은 장치의 모든 데이터를 삭제 함) 데이터를 백업 해야 합니다.
-2. 장치를 복구 모드로 전환 하 고 복원 합니다. 새 장치로 설정 했는지 확인 합니다. IOS 장치를 복원 하는 방법에 대 한 자세한 내용은 [https://support.apple.com/HT201263](https://support.apple.com/HT201263)을 참조 하세요.
+2. 장치를 복구 모드로 전환 하 고 복원 합니다. 새 장치로 설정 했는지 확인 합니다. IOS 장치를 복원 하는 방법에 대 한 자세한 내용은 [https://support.apple.com/HT201263](https://support.apple.com/HT201263)를 참조 하세요.
 3. 디바이스 다시 등록.
 
 ### <a name="profile-installation-failed-connection-to-the-server-could-not-be-established"></a>프로필 설치 실패. 서버에 대한 연결을 설정할 수 없습니다.
@@ -62,7 +63,7 @@ ms.locfileid: "71735690"
 1. Azure Portal에 로그인합니다.
 2. **추가 서비스**를 선택하고 Intune을 검색한 다음, **Intune**을 선택합니다.
 3. **디바이스 등록** > **등록 제한**을 선택합니다.
-4. **장치 유형 제한**에서 > **속성**을 설정 하려는 제한을 선택 합니다.  > **플랫폼을 선택** > **iOS**에 대해 **허용** 을 선택 하 고 **확인**을 클릭 합니다.
+4. **장치 유형 제한**에서 **속성** > 설정 하려는 제한을 선택 하  > **플랫폼** 을 선택 하 > **iOS**에 대해 **허용** 을 선택 하 고 **확인**을 클릭 합니다.
 5. **플랫폼 구성**을 선택 하 고 개인적으로 소유한 iOS 장치에 대해 **허용** 을 선택한 다음 **확인**을 클릭 합니다.
 6. 디바이스 다시 등록.
 
@@ -89,10 +90,10 @@ ms.locfileid: "71735690"
 **원인:** 사용자가 장치 등록 제한 보다 더 많은 장치를 등록 하려고 합니다.
 
 #### <a name="resolution"></a>해결 방법
-1. [Intune 관리 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **장치** > **모든 장치**를 열고 사용자가 등록 한 장치의 수를 확인 합니다.
+1. **모든 장치** >  [Intune 관리 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)  >  열고 사용자가 등록**한 장치의 수** 를 확인 합니다.
     > [!NOTE]
     > 또한 [Intune 사용자 포털](https://portal.manage.microsoft.com/) 에 영향을 받는 사용자 로그온이 있어야 하 고 등록 된 장치를 확인 해야 합니다. Intune [사용자 포털](https://portal.manage.microsoft.com/) 에는 표시 되지만 [intune 관리 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)에는 표시 되지 않는 장치가 있을 수 있습니다. 이러한 장치는 장치 등록 제한에도 해당 합니다.
-2. **관리자** > **모바일 장치 관리** > **등록 규칙** 으로 이동 하 > 장치 등록 제한을 확인 합니다. 기본적으로 제한은 15로 설정 되어 있습니다. 
+2. **관리자**  > **모바일 장치 관리**  > **등록 규칙** 으로 이동 하 > 장치 등록 제한을 확인 합니다. 기본적으로 제한은 15입니다. 
 3. 등록 된 장치의 수가 한도에 도달 하면 불필요 한 장치를 제거 하거나 장치 등록 제한을 늘립니다. 등록 된 모든 장치에서 Intune 라이선스를 사용 하기 때문에 항상 불필요 한 장치를 먼저 제거 하는 것이 좋습니다.
 4. 디바이스 다시 등록.
 
@@ -110,8 +111,8 @@ ms.locfileid: "71735690"
 **원인:** 장치를 등록 하려고 하는 사용자에 게 유효한 Intune 라이선스가 없습니다.
 
 #### <a name="resolution"></a>해결 방법
-1. [Microsoft 365 관리 센터](https://portal.office.com/adminportal/home#/homepage)로 이동한 다음 **사용자** > **활성 사용자**를 선택 합니다.
-2. 영향을 받는 사용자 계정 > **제품 라이선스** > **편집**을 선택 합니다.
+1. [Microsoft 365 관리 센터](https://portal.office.com/adminportal/home#/homepage)로 이동한 다음 **사용자**  > **활성 사용자**를 선택 합니다.
+2. 영향을 받는 사용자 계정 > **제품 라이선스**  > **편집**을 선택 합니다.
 3. 이 사용자에 게 유효한 Intune 라이선스가 할당 되어 있는지 확인 하십시오.
 4. 디바이스 다시 등록.
 
@@ -119,8 +120,8 @@ ms.locfileid: "71735690"
 
 **원인:** 장치를 등록 하려고 하는 사용자에 게 유효한 Intune 라이선스가 없습니다.
 
-1. [Microsoft 365 관리 센터](https://portal.office.com/adminportal/home#/homepage)로 이동한 다음 **사용자** > **활성 사용자**를 선택 합니다.
-2. 영향을 받는 사용자 계정을 선택한 다음 **제품 라이선스** > **편집**을 선택 합니다.
+1. [Microsoft 365 관리 센터](https://portal.office.com/adminportal/home#/homepage)로 이동한 다음 **사용자**  > **활성 사용자**를 선택 합니다.
+2. 영향을 받는 사용자 계정을 선택한 다음 **제품 라이선스**  > **편집**을 선택 합니다.
 3. 이 사용자에 게 유효한 Intune 라이선스가 할당 되어 있는지 확인 하십시오.
 4. 디바이스 다시 등록.
 
@@ -130,7 +131,7 @@ ms.locfileid: "71735690"
 
 #### <a name="resolution"></a>해결 방법
 
-1. IOS 장치 > **일반** > **장치 관리**에서 **설정** 을 엽니다.
+1. IOS 장치에서 **설정** > **일반**  > **장치 관리**를 엽니다.
 2. 기존 관리 프로필을 탭 하 고 **관리 제거**를 탭 합니다.
 3. 디바이스 다시 등록.
 
@@ -183,7 +184,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>해결 방법
 
 1. 등록 프로필을 편집 합니다. 프로필을 변경할 수 있습니다. 용도는 프로필의 수정 시간을 업데이트 하는 것입니다.
-2. DEP 관리 장치 동기화: Intune 포털 > **Admin** > **모바일 장치 관리** > **iOS** > **장비 등록 프로그램** > **동기화**를 엽니다. 동기화 요청이 Apple에 전송됩니다.
+2. DEP 관리 장치 동기화: Intune 포털 > **Admin**  > **모바일 장치 관리**  > **iOS**  > **장비 등록 프로그램** >  **지금 동기화**를 엽니다. 동기화 요청이 Apple에 전송됩니다.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>사용자 로그인 시 DEP 등록 중단
 등록 프로필을 할당 하는 DEP 관리 장치를 켜면 자격 증명을 입력 한 후 초기 설치가 시작 됩니다.

@@ -96,13 +96,21 @@
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
-            - name: MTD를 위한 Intune 설정
+            - name: 등록 취소된 디바이스의 MTD
               items:
-                - name: MTD 앱 추가
+                - name: 등록 취소된 디바이스에 MTD 앱 추가
+                  href: mtd-add-apps-unenrolled-devices.md
+                - name: MTD 앱 보호 정책 만들기
+                  href: mtd-app-protection-policy.md
+                - name: 등록 취소된 디바이스에 대해 MTD 사용
+                  href: mtd-enable-unenrolled-devices.md
+            - name: 등록된 디바이스의 MTD
+              items:
+                - name: 등록된 디바이스의 MTD 앱 추가
                   href: mtd-apps-ios-app-configuration-policy-add-assign.md
                 - name: MTD 디바이스 준수 정책 만들기
                   href: mtd-device-compliance-policy-create.md
-                - name: Intune에서 MTD 사용
+                - name: 등록된 디바이스에 대해 MTD 사용
                   href: mtd-connector-enable.md
             - name: MTD 앱
               items:
