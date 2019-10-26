@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506661"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776920"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune에서 macOS 디바이스 기능 설정
 
@@ -42,7 +42,7 @@ Intune에는 macOS 디바이스의 기능을 사용자 지정하기 위한 몇 �
 
 ## <a name="airprint"></a>AirPrint
 
-### <a name="settings-apply-to-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록 
 
 - **IP 주소**: 프린터의 IPv4 또는 IPv6 주소를 입력합니다. 호스트 이름을 사용하여 프린터를 식별하는 경우 터미널 앱에서 프린터를 ping하여 IP 주소를 가져올 수 있습니다. [IP 주소 및 경로 가져오기](#get-the-ip-address-and-path)(이 문서)에서 자세한 정보를 제공합니다.
 - **경로**: 프린터의 경로를 입력합니다. 네트워크의 프린터에 대한 경로는 일반적으로 `ipp/print`입니다. [IP 주소 및 경로 가져오기](#get-the-ip-address-and-path)(이 문서)에서 자세한 정보를 제공합니다.
@@ -85,7 +85,7 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 
 ## <a name="login-window"></a>로그인 창
 
-### <a name="settings-apply-to-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록 
 
 #### <a name="window-layout"></a>창 레이아웃
 

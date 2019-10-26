@@ -19,17 +19,19 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a2c4e26c191f612705a4cc404955b96b4b5982c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50eb3495362d4b88071707e25a5faa39b76b6c3b
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501832"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810351"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune 회사 포털 웹 사이트 사용
-[회사 포털 웹 사이트](https://portal.manage.microsoft.com)를 사용하여 관리되는 디바이스를 보고, 편집하고, 추가 및 제거합니다.
+[회사 포털 웹 사이트](https://portal.manage.microsoft.com) 를 사용 하 여 학교 또는 업무용 앱을 검색, 설치 및 제거할 수 있습니다. 등록 된 장치를 확인, 편집, 추가 및 제거할 수 있습니다.  
 
 회사 포털 웹 사이트에서 다음 작업을 수행할 수 있습니다.
+
+- [앱 관리](manage-apps-cpweb.md)  
 
 - [디바이스 이름 바꾸기](rename-your-device-cpwebsite.md)
 

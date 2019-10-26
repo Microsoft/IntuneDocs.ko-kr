@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585375"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915714"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정
 
@@ -193,7 +193,8 @@ ms.locfileid: "72585375"
 
 ### <a name="power-settings"></a>전원 설정
 
-- **화면을 잠그는 시간**: 디바이스가 잠기기 전에 필요한 유휴 시간을 설정합니다.
+- **화면 잠금 시간**: 장치가 잠길 때까지 사용자가 설정할 수 있는 최대 시간을 입력 합니다. 예를 들어이 설정을 **10 분**으로 설정 하면 사용자가 15 초에서 최대 10 분까지 시간을 설정할 수 있습니다. **구성 되지 않음** (기본값)으로 설정 되 면 Intune은이 설정을 변경 하거나 제어 하지 않습니다.
+
 - **디바이스가 연결된 동안 화면 켜짐**: 전원을 연결하면 디바이스의 화면이 켜진 상태를 유지하도록 할 전원 소스를 선택합니다.
 
 ### <a name="users-and-accounts-settings"></a>사용자 및 계정 설정

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584884"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785514"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 iOS 및 iPadOS 디바이스 설정
 
@@ -300,6 +300,11 @@ ms.locfileid: "72584884"
 
   이 기능은 다음에 적용됩니다.  
   - iOS 12.2 이상
+
+  > [!NOTE]
+  > **Siri commands 설정에 대 한 서버 쪽 로깅은** Apple에서 더 이상 사용 되지 않습니다. 향후 릴리스에서는이 설정이 Intune 콘솔에서 제거 되었습니다.
+  >
+  > 현재이 설정은 관리 profile에 표시 되더라도 장치에는 영향을 주지 않습니다. 정책에서이 설정을 삭제 하려면 정책을 열고 사소한 변경을 수행한 다음 정책을 저장 합니다. 정책이 업데이트 되 고 해당 설정이 장치에서 삭제 됩니다.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>설정 적용 대상: 자동 장치 등록 (감독 됨)
 

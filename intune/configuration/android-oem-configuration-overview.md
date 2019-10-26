@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550831"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915721"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune에서 OEMConfig를 사용 하 여 Android Enterprise 장치 사용 및 관리
 
@@ -66,7 +66,7 @@ OEMConfig를 사용 하는 경우 다음 정보를 알고 있어야 합니다.
 
 - Intune에 등록 된 Android Enterprise 장치입니다.
 - OEM에서 빌드하고 Google Play로 업로드 되는 OEMConfig 앱입니다. Google Play 되지 않은 경우 자세한 내용은 OEM에 게 문의 하세요.
-- Intune 관리자에 게는 **Mobile apps** 및 **DeviceConfigurations**에 대 한 RBAC (역할 기반 액세스 제어) 권한이 있습니다. 이러한 권한은 OEMConfig 프로필에서 관리 되는 앱 구성을 사용 하 여 장치 구성을 관리 하기 때문에 필요 합니다.
+- Intune 관리자는 **Mobile apps**에 대 한 RBAC (역할 기반 액세스 제어) 권한, **장치 구성**및 **Android for Work**의 "읽기" 권한이 있습니다. 이러한 권한은 OEMConfig 프로필에서 관리 되는 앱 구성을 사용 하 여 장치 구성을 관리 하기 때문에 필요 합니다.
 
 ## <a name="prepare-the-oemconfig-app"></a>OEMConfig 앱 준비
 

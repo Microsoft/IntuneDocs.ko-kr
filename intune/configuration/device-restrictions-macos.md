@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494018"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776876"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 macOS 디바이스 설정
 
@@ -40,7 +40,7 @@ ms.locfileid: "72494018"
 
 ## <a name="general"></a>일반
 
-### <a name="settings-apply-to-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록
 
 - **정의 조회**: **차단**을 선택하면 사용자가 단어를 강조 표시한 다음, 디바이스에서 해당 정의를 조회할 수 없습니다. **구성되지 않음**(기본값)을 통해 정의 조회 기능에 액세스할 수 있습니다.
 - **받아쓰기**: **차단**을 선택하면 사용자가 음성 입력을 사용하여 텍스트를 입력할 수 없습니다. **구성되지 않음**(기본값)을 통해 사용자가 받아쓰기 입력을 사용할 수 있습니다.
@@ -82,7 +82,7 @@ ms.locfileid: "72494018"
 
 ## <a name="password"></a>암호
 
-### <a name="settings-apply-to-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록
 
 - **암호**: **필요**를 선택하면 최종 사용자에게 디바이스에 액세스하기 위해 암호를 입력해야 합니다. **구성 되지 않음** (기본값)에는 암호가 필요 하지 않습니다. 또한 단순한 암호를 차단 하거나 최소 길이를 설정 하는 등의 제한을 적용 하지 않습니다.
   - **필수 암호 유형**: 암호를 숫자만으로 구성할 수 있는지 아니면 영숫자(문자와 숫자 포함)로 구성해야 하는지 지정합니다.
@@ -114,7 +114,7 @@ ms.locfileid: "72494018"
 
 ## <a name="built-in-apps"></a>기본 제공 앱
 
-### <a name="settings-apply-to-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록
 
 - **Safari 자동 채우기 차단**: **차단**을 선택하면 디바이스의 Safari에서 자동 채우기 기능을 사용할 수 없습니다. **구성되지 않음**(기본값)을 통해 사용자가 웹 브라우저에서 자동 완성 설정을 변경할 수 있습니다.
 - **카메라 차단**: **차단**을 선택하면 디바이스에서 카메라에 액세스할 수 없습니다. **구성되지 않음**(기본값)을 통해 디바이스의 카메라에 액세스할 수 있습니다.
@@ -127,7 +127,7 @@ ms.locfileid: "72494018"
 
 ## <a name="restricted-apps"></a>제한된 앱
 
-### <a name="settings-apply-to-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록
 
 - **제한 된 앱 목록 유형**: 사용자가 설치 또는 사용할 수 없는 앱의 목록을 만듭니다. 옵션은 다음과 같습니다.
 
@@ -145,14 +145,14 @@ ms.locfileid: "72494018"
 
 ## <a name="connected-devices"></a>연결된 디바이스
 
-### <a name="settings-apply-to-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록
 
 - **AirDrop 차단**: **차단**을 선택하면 디바이스에서 AirDrop을 사용할 수 없습니다. **구성되지 않음**(기본값)을 통해 AirDrop 기능을 사용하여 주변 디바이스와 콘텐츠를 교환할 수 있습니다.
 - **Apple Watch 자동 잠금 해제 차단**: **블록**은 사용자가 자신의 Apple Watch를 사용하여 macOS 디바이스를 잠금 해제하지 못하도록 합니다. **구성되지 않음**(기본값)을 사용하면 사용자가 자신의 Apple Watch를 사용하여 macOS 다바이스 잠금을 해제할 수 있습니다.
 
 ## <a name="cloud-and-storage"></a>클라우드 및 스토리지
 
-### <a name="settings-apply-to-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록
 
 - **iCloud 키 집합 동기화 차단**: **차단**을 선택하면 키 집합에 저장된 자격 증명을 iCloud에 동기화할 수 없습니다. **구성되지 않음**(기본값)을 통해 사용자가 이러한 자격 증명을 동기화할 수 있습니다.
 - **iCloud 문서 동기화 차단**: **블록**은 iCloud가 문서와 데이터를 동기화하지 못하게 합니다. **구성되지 않음**(기본값)을 통해 iCloud 스토리지 공간에 대한 문서 및 키 값 동기화가 가능합니다.
@@ -170,7 +170,7 @@ ms.locfileid: "72494018"
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록
 
 - **메일 도메인 URL**: 목록에 하나 이상의 URL을 **추가**합니다. 사용자가 구성한 도메인이 아닌 다른 도메인에서 받은 메일은 macOS 메일 앱에서 신뢰할 수 없는 메일로 표시됩니다.
 
