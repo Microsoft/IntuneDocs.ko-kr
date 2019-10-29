@@ -5,24 +5,24 @@ description: Microsoft Defender Advanced Threat Protection 관리를 위해 Intu
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: karthib
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cb5d7375ae5b76a24861872d4abf786f199dfd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508996"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923396"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune에 대한 Microsoft Defender Advanced Threat Protection 기준 설정
 
@@ -31,12 +31,6 @@ Microsoft Intune에서 지원하는 Microsoft Defender Advanced Threat Protectio
 사용자의 환경이 [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) 사용에 대한 필수 조건을 충족하는 경우 Microsoft Defender Advanced Threat Protection 기준을 사용할 수 있습니다. 
 
 이 기준은 물리적 장치에 최적화 되어 있으며, 현재 Vm (가상 머신) 또는 VDI 끝점에서 사용 하지 않는 것이 좋습니다. 특정 기준 설정은 가상화된 환경의 원격 대화형 세션에 영향을 줄 수 있습니다. 자세한 내용은 Windows 문서에서 [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)(Microsoft Defender ATP 보안 기준의 준수 강화)을 참조하세요.
-
-
-> [!NOTE]  
-> ATP 기준 설정은 **미리 보기**로 제공됩니다. 미리 보기 상태에서 사용 가능한 설정 목록 및 이 콘텐츠가 해당 설정을 제공하는 순서는 포털에서 사용 가능한 항목과 일치하지 않을 수 있습니다.  
->
-> 기준 설정이 미리 보기가 아닌 경우 이 콘텐츠는 Intune에서 지원하는 현재 보안 기준 설정 목록을 반영하도록 업데이트됩니다.
 
 ## <a name="application-guard"></a>Application Guard  
 자세한 내용은 Windows 설명서의 [WindowsDefenderApplicationGuard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp)를 참조하세요.  
@@ -55,13 +49,13 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   - **클립보드 동작** - *Settings/ClipboardSettings*  
     로컬 PC와 Application Guard 가상 브라우저 간에 허용되는 복사 및 붙여넣기 작업을 선택합니다.  다음 옵션을 사용할 수 있습니다.
-    - ‘구성되지 않음’   
-    - ‘둘 다 차단’ - PC와 가상 브라우저 간에 데이터를 전송할 수 없습니다.   
-    - ‘호스트-컨테이너 차단’ - PC에서 가상 브라우저로 데이터를 전송할 수 없습니다. 
-    - ‘컨테이너-호스트 차단’ - 가상 브라우저에서 호스트 PC로 데이터를 전송할 수 없습니다. 
-    - ‘차단 안 함’ - 콘텐츠가 차단되지 않습니다.   
+    - 구성되지 않음  
+    - PC와 브라우저 블록 간 복사 및 붙여넣기를 차단 합니다. PC와 가상 브라우저 간에 데이터를 전송할 수 없습니다.  
+    - 브라우저에서 PC로의 복사 및 붙여넣기 허용-데이터를 PC에서 가상 브라우저로 전송할 수 없습니다.
+    - PC에서 브라우저로 복사 및 붙여넣기 허용-데이터를 가상 브라우저에서 호스트 PC로 전송할 수 없습니다.
+    - PC와 브라우저 간 복사 및 붙여넣기 허용-콘텐츠에 대 한 블록이 없습니다.  
 
-    **기본값**: 둘 다 차단  
+    **기본값**: PC와 브라우저 간 복사 및 붙여넣기 차단  
 
 - **Windows 네트워크 격리 정책 – 엔터프라이즈 네트워크 도메인 이름**  
   자세한 내용은 Windows 설명서의 [Policy CSP - NetworkIsolation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-networkisolation)(정책 CSP - NetworkIsolation)을 참조하세요.
@@ -101,7 +95,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   **기본값**: 사용
 
-- **이메일 콘텐츠 실행 유형**  
+- **이메일 콘텐츠 실행**  
   [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘차단’으로 설정하면 이 규칙은 다음 파일 형식이 Microsoft Outlook 또는 웹 메일(예: Gmail.com 또는 Outlook.com) 중 하나에 표시된 메일에서 실행되거나 시작되지 않도록 차단합니다.   
 
   - 실행 파일(예: .exe, .dll 또는 .scr)  
@@ -115,12 +109,12 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   **기본값**: 사용
 
-- **스크립트에서 난독 처리된 매크로 코드 유형**  
+- **스크립트에서 난독 처리된 매크로 코드**  
   [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 맬웨어 및 기타 위협은 일부 스크립트 파일에서 해당 악성 코드를 난독 처리하거나 숨길 수 있습니다. 이 규칙은 난독 처리된 것으로 보이는 스크립트가 실행되는 것을 방지합니다.  
     
   **기본값**: 차단
 
-- **신뢰할 수 없는 USB 프로세스 유형**  
+- **신뢰할 수 없는 USB 프로세스**  
   [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – ‘차단’으로 설정하면 USB 이동식 드라이브 및 SD 카드에서 서명되지 않은 실행 파일이나 신뢰할 수 없는 실행 파일을 실행할 수 없습니다. 
 
   실행 파일은 다음과 같습니다.
@@ -129,12 +123,12 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   **기본값**: 차단
 
-- **Office 앱 및 기타 프로세스 삽입 유형**  
+- **Office 앱 및 기타 프로세스 삽입**  
   [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘차단’으로 설정하면 Word, Excel, PowerPoint 및 OneNote를 포함한 Office 앱이 다른 프로세스에 코드를 삽입할 수 없습니다.  코드 삽입은 일반적으로 바이러스 백신 검사 엔진으로부터 활동을 숨기려는 악성 코드를 실행하는 맬웨어에서 사용됩니다.  
 
   **기본값**: 차단
 
-- **Office 매크로 코드에서 Win32 가져오기 유형**  
+- **Office 매크로 코드에서 Win32 가져오기 허용**  
   [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘차단’으로 설정하면 이 규칙은 Win32 DLL을 가져올 수 있는 매크로 코드를 포함하는 Office 파일을 차단하려 합니다.  Office 파일에는 Word, Excel, PowerPoint 및 OneNote가 포함됩니다. 맬웨어는 Office 파일의 매크로 코드를 사용하여 Win32 DLL을 가져오고 로드할 수 있으며, 이 Win32 DLL은 이후 API를 호출하여 시스템 전체에 추가 감염을 일으키는 데 사용됩니다.  
 
   **기본값**: 차단
@@ -144,7 +138,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   **기본값**: 사용
 
-- **Office 앱 실행 파일 콘텐츠 생성 또는 시작 유형**  
+- **Office 앱 실행 파일 콘텐츠 만들기 또는 시작**  
   [공격 표면 감소 규칙](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - ‘차단’으로 설정하면 Office 앱이 실행 가능한 콘텐츠를 만들 수 없습니다.  Office 앱에는 Word, Excel, PowerPoint, OneNote 및 Access가 포함됩니다.  
 
   이 규칙의 대상은 실행 파일을 만들거나 시작하는 의심스러운 악성 추가 기능 및 스크립트(확장)에서 사용되는 일반적인 동작입니다. 일반적인 맬웨어 기술입니다. 확장은 Office 앱에서 사용되는 것을 차단합니다. 일반적으로 이 확장은 Windows Scripting Host(.wsh 파일)를 사용하여 특정 작업을 자동화하는 스크립트를 실행하거나 사용자가 만든 추가 기능을 제공합니다.
@@ -170,6 +164,10 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   - **암호화 메서드**  
     **기본값**: AES 128비트 CBC
+
+- **저장소 카드 암호화 (모바일 전용)** *예* 를 선택 하면 모바일 장치의 저장소 카드가 암호화 됩니다.  
+
+   **기본값**: 예
 
 - **BitLocker 고정 드라이브 정책**  
   이 정책의 값은 BitLocker가 고정 드라이브의 암호화에 사용하는 암호화 수준을 결정합니다. 기업은 보안 향상을 위해 암호화 수준을 제어할 수 있습니다(AES-256이 AES-128보다 강력함). 이 설정을 사용하도록 설정하면 고정 데이터 드라이브, 운영 체제 드라이브 및 이동식 데이터 드라이브에 대한 암호화 알고리즘 및 키 암호 수준을 개별적으로 구성할 수 있습니다. 고정 및 운영 체제 드라이브의 경우 XTS-AES 알고리즘을 사용하는 것이 좋습니다. 이동식 드라이브의 경우 해당 드라이브가 Windows 10 버전 1511 이상을 실행하지 않는 다른 디바이스에서 사용될 경우 AES-CBC 128비트 또는 AES-CBC 256비트를 사용해야 합니다. 암호화 메서드를 변경해도 드라이브가 이미 암호화된 경우 또는 암호화가 진행 중인 경우에는 영향이 없습니다. 이러한 경우 이 정책을 무시합니다.
@@ -224,12 +222,12 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   - **일치하는 하드웨어 디바이스 제거**  
     이 설정은 *디바이스 식별자에 의한 하드웨어 디바이스 설치*가 *하드웨어 디바이스 설치 차단*으로 설정된 경우에만 사용할 수 있습니다.  
 
-    **기본**: *기본 구성 없음*
+    **기본값**: 예
 
   - **차단된 하드웨어 디바이스 식별자**  
     이 설정은 *디바이스 식별자에 의한 하드웨어 디바이스 설치*가 *하드웨어 디바이스 설치 차단*으로 설정된 경우에만 사용할 수 있습니다. 이 설정을 구성하려면 옵션을 확장하고, **+ 추가**를 선택한 다음, 차단할 하드웨어 디바이스 식별자를 지정합니다.  
 
-    **기본값**: ‘디바이스가 차단되지 않음’   
+    **기본값**: PCI\CC_0C0A
 
 - **직접 메모리 액세스 차단**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) - 이 정책 설정을 사용하여 사용자가 Windows에 로그인할 때까지 디바이스에서 모든 핫 플러그형 PCI 다운스트림 포트에 대한 DMA(직접 메모리 액세스)를 차단합니다. 사용자가 로그인하면 Windows는 호스트 플러그 PCI 포트에 연결된 PCI 디바이스를 열거합니다. 사용자가 머신을 잠글 때마다 DMA는 사용자가 다시 로그인할 때까지 자식 디바이스가 없는 핫플러그 PCI 포트에서 차단됩니다. 머신을 잠그지 않은 경우 이미 열거된 디바이스는 분리될 때까지 계속 기능합니다. 
@@ -249,23 +247,23 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   - **일치하는 하드웨어 디바이스 제거**  
     이 설정은 *설치 클래스에 의한 하드웨어 디바이스 설치*가 *하드웨어 디바이스 설치 차단*으로 설정된 경우에만 사용할 수 있습니다.  
  
-    **기본**: *기본 구성 없음*  
+    **기본값**: 예  
 
   - **차단된 하드웨어 디바이스 식별자**  
     이 설정은 [설치 클래스에 의한 하드웨어 디바이스 설치]가 [하드웨어 디바이스 설치 차단]으로 설정된 경우에만 사용할 수 있습니다. 이 설정을 구성하려면 옵션을 확장하고, **+ 추가**를 선택한 다음, 차단할 하드웨어 디바이스 식별자를 지정합니다.  
  
-    **기본값**: ‘디바이스가 차단되지 않음’ 
+    **기본값**: {d48179be-ec20-11d1-b6b8-00c04fa372a7}
 
 ## <a name="endpoint-detection-and-response"></a>엔드포인트 검색 및 응답  
 자세한 내용은 Windows 설명서의 [WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp)를 참조하세요.  
 
-- **원격 분석 보고 주기 단축** - *Configuration/TelemetryReportingFrequency*  
+- **원격 분석 보고 주기 단축** - *Configuration/TelemetryReportingFrequency*
 
   Microsoft Defender Advanced Threat Protection 원격 분석 보고 주기를 단축합니다.  
 
   **기본값**: 예
 
-- **모든 파일에 대해 샘플 공유** - *Configuration/SampleSharing*  
+- **모든 파일에 대해 샘플 공유** - *Configuration/SampleSharing* 
 
   Microsoft Defender Advanced Threat Protection 샘플 공유 구성 매개 변수를 반환하거나 설정합니다.  
 
@@ -286,43 +284,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – 사용자가 Windows Defender Security Center에서 악용 방지 설정 영역을 변경하지 못하도록 차단하려면 ‘예’로 설정합니다.  이 설정을 사용하지 않도록 설정하거나 구성하지 않은 경우 로컬 사용자는 악용 방지 설정 영역을 변경할 수 있습니다.  
   **기본값**: 예  
 
-- **제어된 폴더 액세스**  
-  [Defender/ControlledFolderAccessAllowedApplications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessallowedapplications) 및 [Defender/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders)를 참조하세요. 
-  
-   인증되지 않은 앱이 파일 및 폴더를 무단으로 변경할 수 없도록 보호합니다.
-
-  **기본값**: 감사 모드
-
-## <a name="web--network-protection"></a>웹 및 네트워크 보호  
-
-- **네트워크 보호 유형**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 이 정책을 사용하면 Windows Defender Exploit Guard에서 네트워크 보호를 켜거나 끌 수 있습니다. 네트워크 보호는 모든 앱을 사용하는 직원이 인터넷에서 피싱 사기, 악용 호스팅 사이트 및 악성 콘텐츠에 액세스하지 못하도록 보호하는 Windows Defender Exploit Guard의 기능입니다. 이 기능에는 타사 브라우저의 위험한 사이트 연결을 방지하는 것이 포함됩니다.  
-
-  ‘사용’ 또는 ‘감사 모드’로 설정하면 사용자가 네트워크 보호를 끌 수 없으며 Windows Defender Security Center를 사용하여 연결 시도 정보를 볼 수 있습니다.    
- 
-  - ‘사용’으로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단됩니다.   
-  - ‘감사 모드’로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단되지 않습니다.   
-
-  ‘사용자 정의’로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단되지 않고 Windows Defender Security Center에서 연결 정보를 사용할 수 없습니다.   
-
-  **기본값**: 감사 모드
-
-- **Microsoft Edge용 SmartScreen 필요**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge에서는 Windows Defender SmartScreen(켜짐)을 사용하여 기본적으로 잠재적 피싱 사기 및 악성 소프트웨어로부터 사용자를 보호합니다. 기본적으로 이 정책은 사용하도록 설정되고(‘예’로 설정), 사용하도록 설정되면 사용자가 Windows Defender SmartScreen을 끄지 못하도록 차단됩니다.   디바이스에 대한 실제 정책이 [구성되지 않음]으로 설정되면 사용자가 Windows Defender SmartScreen을 켤 수 있으므로 디바이스가 보호되지 않습니다.  
-
-  **기본값**: 예
-  
-- **악성 사이트 액세스 차단**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 사이트에 대한 Windows Defender SmartScreen 경고를 무시하고 계속 사이트를 탐색할 수 있습니다. 이 정책을 사용하도록 설정하면(‘예’로 설정) Microsoft Edge에서는 사용자가 경고를 무시하지 못하고 계속 사이트를 탐색하지 못하도록 차단합니다.   
-
-  **기본값**: 예
-
-- **확인되지 않은 파일 다운로드 차단**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 파일에 대한 Windows Defender SmartScreen 경고를 무시하고 확인되지 않은 파일의 다운로드를 계속할 수 있습니다. 이 정책을 사용하도록 설정하면(‘예’로 설정) 사용자는 경고를 무시하지 못하도록 차단되고 확인되지 않은 파일을 다운로드할 수 없습니다.   
-
-  **기본값**: 예
-
-## <a name="windows-defender-anti-virus----settings-review-pending-for-this-section"></a>Windows Defender 바이러스 백신    [이 섹션에 대한 설정 검토 보류 중]
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 바이러스 백신  
 
 자세한 내용은 Windows 설명서의 [정책 CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)를 참조하세요.
 
@@ -336,7 +298,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   **기본값**: 예
 
-- **Defender 샘플 제출 동의 형식**  
+- **Defender 샘플 제출 동의**  
   [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - 데이터를 전송하려면 Windows Defender의 사용자 동의 수준을 확인합니다. 필요한 동의가 이미 부여된 경우 Windows Defender에서는 해당 동의를 제출합니다. 그렇지 않은 경우(및 사용자가 요청을 지정하지 않은 경우) 데이터를 전송하기 전에 UI가 시작되어 사용자 동의를 요청합니다(‘클라우드 제공 보호’가 ‘예’로 설정된 경우).    
 
   **기본**: 자동으로 안전 샘플 보내기
@@ -594,6 +556,35 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
 - **인증서 해지 목록 확인**  
   **기본값**: 디바이스 기본값
+
+## <a name="web--network-protection"></a>웹 및 네트워크 보호  
+
+- **네트워크 보호 유형**  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 이 정책을 사용하면 Windows Defender Exploit Guard에서 네트워크 보호를 켜거나 끌 수 있습니다. 네트워크 보호는 모든 앱을 사용하는 직원이 인터넷에서 피싱 사기, 악용 호스팅 사이트 및 악성 콘텐츠에 액세스하지 못하도록 보호하는 Windows Defender Exploit Guard의 기능입니다. 이 기능에는 타사 브라우저의 위험한 사이트 연결을 방지하는 것이 포함됩니다.  
+
+  ‘사용’ 또는 ‘감사 모드’로 설정하면 사용자가 네트워크 보호를 끌 수 없으며 Windows Defender Security Center를 사용하여 연결 시도 정보를 볼 수 있습니다.    
+ 
+  - ‘사용’으로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단됩니다.   
+  - ‘감사 모드’로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단되지 않습니다.   
+
+  ‘사용자 정의’로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단되지 않고 Windows Defender Security Center에서 연결 정보를 사용할 수 없습니다.   
+
+  **기본값**: 감사 모드
+
+- **Microsoft Edge용 SmartScreen 필요**  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge에서는 Windows Defender SmartScreen(켜짐)을 사용하여 기본적으로 잠재적 피싱 사기 및 악성 소프트웨어로부터 사용자를 보호합니다. 기본적으로 이 정책은 사용하도록 설정되고(‘예’로 설정), 사용하도록 설정되면 사용자가 Windows Defender SmartScreen을 끄지 못하도록 차단됩니다.   디바이스에 대한 실제 정책이 [구성되지 않음]으로 설정되면 사용자가 Windows Defender SmartScreen을 켤 수 있으므로 디바이스가 보호되지 않습니다.  
+
+  **기본값**: 예
+  
+- **악성 사이트 액세스 차단**  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 사이트에 대한 Windows Defender SmartScreen 경고를 무시하고 계속 사이트를 탐색할 수 있습니다. 이 정책을 사용하도록 설정하면(‘예’로 설정) Microsoft Edge에서는 사용자가 경고를 무시하지 못하고 계속 사이트를 탐색하지 못하도록 차단합니다.   
+
+  **기본값**: 예
+
+- **확인되지 않은 파일 다운로드 차단**  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 파일에 대한 Windows Defender SmartScreen 경고를 무시하고 확인되지 않은 파일의 다운로드를 계속할 수 있습니다. 이 정책을 사용하도록 설정하면(‘예’로 설정) 사용자는 경고를 무시하지 못하도록 차단되고 확인되지 않은 파일을 다운로드할 수 없습니다.   
+
+  **기본값**: 예
 
 ## <a name="windows-hello-for-business"></a>비즈니스용 Windows Hello  
 

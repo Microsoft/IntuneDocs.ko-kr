@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503098"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892534"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
@@ -163,7 +163,7 @@ Configuration Manager 클라이언트를 제거한 후 장치를 다시 등록 �
 - Intune PC 클라이언트 (Intune PC 에이전트) 또는 Configuration Manager 클라이언트 에이전트가 Windows 10 컴퓨터에 설치 되어 있어야 합니다.
 
 #### <a name="resolution"></a>해결 방법
-이 문제를 해결 하려면 다음 방법 중 하나를 사용 합니다.
+다음 방법 중 하나를 사용하여 이 문제를 해결할 수 있습니다.
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Azure에서 MDM 자동 등록을 사용 하지 않도록 설정 합니다.
 1. [Azure 포털](https://portal.azure.com/)에 로그인합니다.    
@@ -390,3 +390,4 @@ Description:
 - [Microsoft Intune 지원 팀 블로그를 확인 하세요.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Microsoft Enterprise Mobility 및 보안 블로그 확인](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Microsoft Intune에 대한 지원 받기](../fundamentals/get-support.md)
+- [공동 관리 등록 오류 찾기](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
