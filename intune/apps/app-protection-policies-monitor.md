@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507445"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889585"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>앱 보호 정책을 모니터링하는 방법
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "72507445"
 - **마지막 동기화**: 앱이 Intune과 마지막으로 동기화된 시간입니다. 
 
 >[!NOTE]
-> **마지막 동기화** 열은 콘솔 내 사용자 상태 보고서와 앱 보호 정책의 [내보낼 수 있는 .csv 보고서](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv)에서 동일한 값을 나타냅니다. 차이점은 두 보고서의 값 사이에 동기화가 약간 지연된다는 것입니다. 
+> **마지막 동기화** 열은 콘솔 내 사용자 상태 보고서와 앱 보호 정책의 [내보낼 수 있는 .csv 보고서](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities)에서 동일한 값을 나타냅니다. 차이점은 두 보고서의 값 사이에 동기화가 약간 지연된다는 것입니다. 
 >
 > 마지막 동기화에서 참조된 시간은 Intune에서 앱 인스턴스를 마지막으로 본 시점입니다. 사용자가 앱을 시작하면 마지막으로 체크 인된 시간에 따라 해당 시작 시간에 Intune 앱 보호 서비스에게 알릴 수 있습니다. [앱 보호 정책 체크 인 재시도 간격 시간](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)을 참조하세요. 사용자가 마지막 체크 인 간격(활성 사용일 경우 일반적으로 30분)에서 특정 앱을 사용한 적이 없는 상태로 앱을 시작한 경우 다음을 수행합니다.
 >

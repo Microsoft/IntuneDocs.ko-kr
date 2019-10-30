@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 10/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01c3bfe853d87f42a6171999f6b358fb73844fb1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499471"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813340"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune 모바일 애플리케이션 관리(MAM) 데이터 전송 정책에 대한 예외를 만드는 방법
 

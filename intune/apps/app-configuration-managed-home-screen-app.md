@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47cee2c26960775d268b317845c118e99b85fe9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507585"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813485"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise용 Microsoft Managed Home Screen 앱 구성
 
@@ -60,25 +60,15 @@ Managed Home Screen의 구성 설정을 정의할 때 선택할 수 있는 방�
 | 구성 키 | 값 형식 | 기본값 | 설명 |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 그리드 크기 설정 | 문자열 | 자동 | Managed Home Screen에 배치할 앱의 그리드 크기를 설정할 수 있습니다. 앱 행과 열 수를 설정하여 형식 `columns;rows`를 사용하여 그리드 크기를 정의할 수 있습니다. 그리드 크기를 정의할 경우 홈 화면의 행에 표시되는 최대 앱 수는 설정한 행 수가 되고, 홈 화면의 열에 표시되는 최대 앱 수는 설정한 열 수가 됩니다. |
-| 화면 헤더 사용 | 부울 | TRUE | 피드, 피드 카드 등, 관리형 홈 화면이 제공하는 여러 보기에 대한 위 헤더를 사용합니다. 이 설정을 사용할 경우 디바이스 사용자에게 헤더가 표시됩니다. |
-| 디바이스 상태 표시줄 사용 | 부울 | TRUE | 홈 화면에서 상태 표시줄을 사용합니다(WiFi 등, 현재 연결을 표시하는 위쪽 막대). 이 구성 키를 사용할 경우 최종 사용자는 연결 및 활성 앱을 나타내는 상태 표시줄에 아이콘이 표시되는 것을 볼 수 있습니다. |
 | 알림 배지 사용 | 부울 | FALSE | 앱의 새 알림 수를 표시하는 앱 아이콘의 알림 배지를 사용합니다. 이 설정을 사용할 경우 최종 사용자에게 읽지 않은 알림이 있는 앱에 대한 알림 배지가 표시됩니다. 이 구성 키를 사용하지 않는 경우 최종 사용자에게 읽지 않은 알림이 있더라도 앱에 알림 배지가 표시되지 않습니다. |
 | 홈 화면 잠금 | 부울 | TRUE | 최종 사용자가 홈 화면에서 앱 아이콘을 움직일 수 있는 기능을 제거합니다. 이 구성 키를 사용할 경우 홈 화면의 앱 아이콘이 잠기며 최종 사용자가 홈 화면의 다른 그리드 위치에 끌어서 놓을 수 없습니다. `false`로 하면 최종 사용자가 Managed Home Screen에서 애플리케이션과 웹 링크 아이콘을 이동할 수 있습니다.  |
 | 디바이스 배경 무늬 설정 | 문자열 | Default | 배경 무늬로 설정하려는 이미지의 URL을 입력하여 원하는 배경 무늬를 설정할 수 있습니다. |
 | 앱 아이콘 크기 설정 | integer | 2 | 홈 화면에 표시되는 앱의 아이콘 크기를 설정할 수 있습니다. 이 구성을 0(가장 작음), 1(작음), 2(보통), 3(큼) 및 4(가장 큼) 등의 값을 사용하여 다른 크기로 선택할 수 있습니다. |
 | 앱 폴더 아이콘 설정 | integer | 0 | 홈 화면의 앱 폴더 표시를 정의할 수 있습니다. 다음 값 중에서 모양을 선택할 수 있습니다. 짙은 정사각(0), 짙은 원(1), 얇은 정사각(2), 얇은 원(3) |
-| 제스처 사용 | 부울 | FALSE | 최종 사용자가 위로 살짝 밀기, 아래로 살짝 밀기 등, 여러 제스처에 동작을 할당할 수 있습니다. 이 구성 키를 사용하지 않도록 설정하면 최종 사용자가 다음 페이지가 있는 경우 오른쪽으로 밀었다가 홈 페이지로 돌아오는 작업만 가능합니다. |
-| 세로 스크롤 사용 | 부울 | FALSE | Managed Home Screen의 세로 스크롤을 사용합니다. 이 구성 키를 사용할 경우 최종 사용자는 가로로 미는 것이 아니라 세로 동작을 통해서만 다른 페이지로 이동할 수 있습니다. |
-| 홈 화면 테마 설정 | 문자열 | Theme.Light.Blue | 여러 색상으로 미리 정의된 테마 집합 중에서 홈 화면 테마를 선택할 수 있습니다. 다음 형식으로 문자열 값을 입력하여 다음 테마를 선택할 수 있습니다.   Theme.Light.Green. Light를 Dark로 바꾸면 더 어두운 테마가 되고 Green은 Blue, Yellow, Pink, Red, Orange 및 Purple로 바꿀 수 있습니다. |
-| 고정 사용 | 부울 | FALSE | 영구 앱을 표시하고 설치된 모든 앱의 시작 지점이 되는 홈 화면 맨 아래의 앱 고정 섹션을 사용합니다. 이 구성 키를 사용할 경우 최종 사용자가 고정에서 앱에 액세스하고, 모든 앱 섹션을 통해 허용 목록에 있는지 여부에 관계없이 디바이스에 설치된 모든 앱 목록으로 이동할 수 있습니다. |
 | 화면 방향 설정 | integer | 1 | 홈 화면의 방향을 가로 모드나 세로 모드로 설정하거나, 자동 회전을 허용할 수 있습니다. 값 1(세로 모드), 2(가로 모드), 3(자동 회전)을 입력하여 방향을 설정할 수 있습니다. |
-| 홈 화면 피드 사용 | 부울 | FALSE | 홈 화면의 왼쪽을 살짝 밀면 표시되는 홈 화면 피드를 사용합니다. 이 피드는 뉴스, 캘린더, 자주 사용하는 앱, Cortana 음성 도우미 카드 등, 다양한 콘텐츠 형식을 표시합니다. 이 항목을 활성화하면 최종 사용자가 홈 화면을 왼쪽으로 살짝 밀어 피드로 이동할 수 있습니다. |
-| 개요 모드 사용 | 부울 | FALSE | 최종 사용자가 기본 화면에서 오른쪽으로 살짝 밀어 액세스하는 홈 화면에서 다른 페이지를 추가하거나 제거할 수 있습니다. 이 항목을 사용할 경우 최종 사용자는 홈 화면 기본 페이지의 오른쪽에 페이지를 추가하고, 기본 페이지를 변경하며, Managed Home Screen의 설정에 액세스할 수 있습니다. |
 | 디바이스 원격 분석 사용 | 부울 | FALSE | Managed Home Screen에 대해 수집되는 모든 원격 분석을 사용합니다. 이 항목을 사용하면 Microsoft가 특정 앱이 해당 디바이스에서 실행된 횟수 등과 같은 디바이스 사용 원격 분석을 수집할 수 있습니다. |
 | 허용 목록에 있는 애플리케이션 설정 | bundleArray | FALSE | 디바이스에 설치된 앱 중에서 홈 화면에 표시할 앱 세트를 정의할 수 있습니다. 표시하려는 앱의 앱 패키지 이름을 입력해 정의할 수 있습니다. 예를 들어, com.microsoft.emmx는 홈 화면에서 설정에 액세스할 수 있게 지정합니다. 이 섹션에서 허용 목록에 넣은 앱은 기존에 디바이스에 설치되어 있어야 홈 화면에 표시될 수 있습니다. |
 | 고정된 웹 링크 설정 | bundleArray | FALSE | 홈 화면에서 웹 사이트를 빠른 시작 아이콘으로 고정할 수 있습니다. 이 구성을 통해 URL을 정의하고 홈 화면에 등록하여 최종 사용자가 한 번의 탭으로 브라우저 안에서 실행할 수 있게 합니다. |
-| 검색 창 사용 | 부울 | FALSE | 홈 화면에 검색 창을 사용하도록 설정합니다. 이 항목을 사용하면 디바이스 사용자가 홈 화면에 표시되는 검색 창에서 웹에 검색하려는 항목을 무엇이든 입력할 수 있습니다. |
-| 설정 앱 사용 안 함 | 부울 | FALSE | Managed Home Screen의 설정 페이지를 사용하지 않습니다. 이 항목을 사용하지 않게 설정하면 디바이스의 최종 사용자가 Managed Home Screen의 설정으로 이동할 수 없습니다. |
 | 화면 보호기 사용 | 부울 | FALSE | 화면 보호기 모드를 사용하거나 사용하지 않도록 지정합니다. true로 설정할 경우 **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** 및 **media_detect_screen_saver**를 구성합니다. |
 | 화면 보호기 이미지 | 문자열 |   | 화면 보호기 이미지의 URL을 설정합니다. URL을 설정하지 않은 경우 디바이스는 화면 보호기가 활성화될 때 기본 화면 보호기를 표시합니다. 기본 이미지에는 Managed Home Screen 앱 아이콘이 표시됩니다.  |
 | 화면 보호기 표시 시간 | integer | 0 | 디바이스가 화면 보호기 모드 중에 화면 보호기를 표시하는 시간을 초 단위로 설정하는 옵션을 제공합니다. 0으로 설정하면 디바이스가 활성 상태가 될 때까지 화면 보호기 모드로 화면 보호기가 계속 표시됩니다.  |
@@ -116,18 +106,6 @@ JSON 데이터를 입력하여 Managed Home Screen에 사용 가능한 모든 �
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
         {
-            "key": "keep_page_header",
-            "valueBool": true
-        },
-        {
-            "key": "keep_status_bar",
-            "valueBool": true
-        },
-        {
-            "key": "show_notification_badge",
-            "valueBool": false
-        },
-        {
             "key": "lock_home_screen",
             "valueBool": true
         },
@@ -144,32 +122,8 @@ JSON 데이터를 입력하여 Managed Home Screen에 사용 가능한 모든 �
             "valueInteger": 0
         },
         {
-            "key": "gesture_on",
-            "valueBool": false
-        },
-        {
-            "key": "vertical_scrolling",
-            "valueBool": false
-        },
-        {
-            "key": "theme",
-            "valueString": "Theme.Light.Blue"
-        },
-        {
-            "key": "dock_enable",
-            "valueBool": false
-        },
-        {
             "key": "screen_orientation",
             "valueInteger": 1
-        },
-        {
-            "key": "feed_enable",
-            "valueBool": false
-        },
-        {
-            "key": "allow_overview_mode",
-            "valueBool": false
         },
         {
             "key": "enable_telemetry",
@@ -204,14 +158,6 @@ JSON 데이터를 입력하여 Managed Home Screen에 사용 가능한 모든 �
                     ]
                 }
             ]
-        },
-        {
-            "key": "search_bar",
-            "valueBool": false
-        },
-        {
-            "key": "hide_settings",
-            "valueBool": false
         },
         {
             "key": "show_virtual_home",
