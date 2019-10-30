@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 6df77d168bb8be3775c566f63833b46130515b36
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036468"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601569"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Windows 기간 업무 앱 추가
 
@@ -82,12 +83,12 @@ LOB(기간 업무) 앱은 앱 설치 파일로 추가합니다. 이러한 종류
 
    > [!NOTE]
    > Intune 서비스에서 새 APPX 파일을 디바이스에 성공적으로 배포하려면 APPX 패키지의 AppxManifest.xml 파일에 있는 `Version` 문자열을 증분해야 합니다.
-    
+
 ## <a name="configure-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>버전 확인 프로세스를 무시하도록 자체 업데이트 모바일 MSI 앱 구성
 
-버전 확인 프로세스를 무시하도록 알려진 자체 업데이트 모바일 MSI 앱을 구성할 수 있습니다. 
+버전 확인 프로세스를 무시하도록 알려진 자체 업데이트 모바일 MSI 앱을 구성할 수 있습니다.
 
-MSI 설치 관리자 기반의 일부 앱은 앱 개발자가 자동으로 업데이트합니다. 자동으로 업데이트되는 이러한 MSI 앱의 경우 **앱 정보** 창에서 **앱 버전 무시** 설정을 구성할 수 있습니다. 이 설정을 **예**로 전환하면 Microsoft Intune에서 Windows 클라이언트에 설치된 앱 버전을 적용하지 않습니다. 
+MSI 설치 관리자 기반의 일부 앱은 앱 개발자 또는 다른 업데이트 방법이 자동으로 업데이트합니다. 자동으로 업데이트되는 이러한 MSI 앱의 경우 **앱 정보** 창에서 **앱 버전 무시** 설정을 구성할 수 있습니다. 이 설정을 **예**로 전환하면 Microsoft Intune에서 Windows 클라이언트에 설치된 앱 버전을 적용하지 않습니다.
 
 이 기능은 경합 상태를 방지하는 데 유용합니다. 예를 들어 앱 개발자가 앱을 자동으로 업데이트하는데 Intune에서 앱을 업데이트할 경우 경합 상태가 발생할 수 있습니다. 둘 다 Windows 클라이언트에서 앱 버전을 적용하려 시도할 수 있으며, 이로 인해 충돌이 발생합니다.
 

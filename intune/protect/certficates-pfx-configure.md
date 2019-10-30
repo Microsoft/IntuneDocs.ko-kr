@@ -1,13 +1,14 @@
 ---
 title: Microsoft Intune에서 프라이빗 및 퍼블릭 키 인증서 사용 - Azure | Microsoft Docs
-description: Microsoft Intune에서 루트 인증서를 내보내고, 인증서 템플릿을 구성하고, Intune Certificate Connector(NDES)를 다운로드 및 설치하고, 디바이스 구성 프로필을 만들고, Azure 및 인증 기관에서 PKCS(공개 키 암호 표준 ) 인증서 프로필을 만드는 단계를 포함하여 PKCS 인증서를 추가하거나 만듭니다.
+description: Microsoft Intune에서 PKCS(공개 키 암호화 표준) 인증서를 사용합니다. 여기에는 루트 인증서 및 인증서 템플릿을 사용한 작업, Intune Certificate Connector(NDES) 설치 및 PKCS 인증서용 디바이스 구성 프로필이 포함됩니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5ef1b5c59bbef3834d44354508b767ae99088
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722932"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72787870"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -58,7 +59,7 @@ Intune에서 PKCS 인증서를 사용하려면 다음 인프라가 필요합니�
 - **Microsoft Intune Certificate Connector**(*NDES 인증서 커넥터*라고도 함):  
   Intune 포털에서 **디바이스 구성** > **인증서 커넥터** > **추가**로 이동하여 *PKCS용 커넥터 설치 단계 #12*를 따릅니다. 포털의 다운로드 링크를 사용하여 인증서 커넥터 설치 관리자 **NDESConnectorSetup.exe**의 다운로드를 시작합니다.  
 
-  Intune은 테넌트당 이 커넥터의 인스턴스를 최대 100개까지 지원하며, 각 인스턴스는 별도의 Windows 서버에 있습니다. 이 커넥터의 인스턴스를 Microsoft Intune용 PFX 인증서 커넥터 인스턴스와 동일한 서버에 설치할 수 있습니다. 여러 커넥터를 사용하는 경우 사용 가능한 커넥터 인스턴스가 PKCS 인증서 요청을 처리할 수 있으므로 커넥터 인프라는 고가용성 및 부하 분산을 지원합니다. 
+  Intune은 테넌트당 이 커넥터의 인스턴스를 최대 100개 지원합니다. 커넥터의 각 인스턴스는 별도의 Windows 서버에 있습니다. 이 커넥터의 인스턴스를 Microsoft Intune용 PFX 인증서 커넥터 인스턴스와 동일한 서버에 설치할 수 있습니다. 여러 커넥터를 사용하는 경우 사용 가능한 커넥터 인스턴스가 PKCS 인증서 요청을 처리할 수 있으므로 커넥터 인프라는 고가용성 및 부하 분산을 지원합니다. 
 
   이 커넥터는 인증 또는 S/MIME 이메일 서명에 사용되는 PKCS 인증서 요청을 처리합니다.
 
@@ -75,7 +76,7 @@ Intune에서 PKCS 인증서를 사용하려면 다음 인프라가 필요합니�
   - Microsoft Intune용 PFX 인증서 커넥터를 서버에 설치합니다.  
   - 중요 업데이트를 자동으로 받으려면 커넥터가 포트 **443**을 통해 **autoupdate.msappproxy.net**에 연결할 수 있도록 방화벽을 열어야 합니다.   
 
-  Intune과 커넥터에서 액세스할 수 있어야 하는 네트워크 엔드포인트에 대한 자세한 내용은 [Microsoft Intune에 대한 네트워크 엔드포인트](../fundamentals/intune-endpoints.md)를 참조하세요.
+  Intune과 커넥터가 액세스하는 네트워크 엔드포인트에 대한 자세한 내용은 [Microsoft Intune에 대한 네트워크 엔드포인트](../fundamentals/intune-endpoints.md)를 참조하세요.
 
 - **Windows Server**:  
   Windows Server를 사용하여 다음 항목을 호스트합니다.
@@ -102,7 +103,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 
 1. 관리 권한이 있는 계정으로 엔터프라이즈 CA에 로그인합니다.
 2. **인증 기관** 콘솔을 열고 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택합니다.
-3. **사용자** 인증서 템플릿을 찾아서 마우스 오른쪽 단추로 클릭하고 **템플릿 복제**를 선택합니다. **새 템플릿의 속성**이 열립니다.
+3. **사용자** 인증서 템플릿을 찾아서 마우스 오른쪽 단추로 클릭하고 **템플릿 복제**를 선택하여 **새 템플릿의 속성**을 엽니다.
 
     > [!NOTE]
     > S/MIME 이메일 서명 및 암호화 시나리오의 경우 많은 관리자가 서명 및 암호화를 위한 별도의 인증서를 사용합니다. Microsoft Active Directory 인증서 서비스를 사용하는 경우 S/MIME 이메일 서명 인증서의 **Exchange 서명 전용** 템플릿 및 S/MIME 암호화 인증서의 **Exchange 사용자** 템플릿을 사용할 수 있습니다.  타사 인증 기관을 사용하는 경우 해당 지침을 검토하여 서명 및 암호화 템플릿을 설정하는 것이 좋습니다.
@@ -165,7 +166,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 
 ## <a name="create-a-trusted-certificate-profile"></a>신뢰할 수 있는 인증서 프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **Intune** > **디바이스 구성** > **프로필** > **프로필 만들기**로 이동합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **디바이스 구성** > **프로필** > **프로필 만들기**로 이동합니다.
     ![Intune으로 이동하여 신뢰할 수 있는 인증서에 대한 새 프로필 만들기](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. 다음 속성을 입력합니다.
@@ -187,7 +188,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 
 ## <a name="create-a-pkcs-certificate-profile"></a>PKCS 인증서 프로필 만들기
 
-1. [Azure Portal](https://portal.azure.com)에서 **Intune** > **디바이스 구성** > **프로필** > **프로필 만들기**로 이동합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **디바이스 구성** > **프로필** > **프로필 만들기**로 이동합니다.
 2. 다음 속성을 입력합니다.
 
     - 프로필의 **이름**
@@ -195,22 +196,81 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
     - 프로필을 배포할 **플랫폼**
     - **프로필 형식**을 **PKCS 인증서**로 설정
 
-3. **설정**으로 이동해 다음 속성을 입력합니다.
-
-    - **갱신 임계값(%)** : 추천되는 값은 20%입니다.
-    - **인증서 유효 기간**: 인증서 템플릿을 변경하지 않은 경우 이 옵션은 1년으로 설정할 수 있습니다.
-    - **KSP(키 스토리지 공급자)** : Windows의 경우 디바이스에서 키를 저장할 위치를 선택합니다.
-    - **인증 기관**: 엔터프라이즈 CA의 내부 FQDN(정규화된 도메인 이름)을 표시합니다.
-    - **인증 기관 이름**: "Contoso 인증 기관"과 같은 엔터프라이즈 CA의 이름을 나열합니다.
-    - **인증서 템플릿 이름**: 이전에 만든 템플릿의 이름입니다. 기본적으로 **템플릿 이름**은 *공백 없이* **템플릿 표시 이름**과 동일합니다.
-    - **주체 이름 형식**: 달리 필요하지 않은 경우 이 옵션을 **일반 이름**으로 설정합니다.
-    - **주체 대체 이름**: 달리 필요하지 않은 경우 이 옵션을 **UPN(사용자 계정 이름)** 으로 설정합니다.
+3. **설정**으로 이동하고 선택한 플랫폼에 적용할 속성을 구성합니다.  
+   
+   |Setting     | 플랫폼     | 세부 정보   |
+   |------------|------------|------------|
+   |**갱신 임계값(%)**        |모두         |추천되는 값은 20%입니다.  | 
+   |**인증서 유효 기간**  |모두         |인증서 템플릿을 변경하지 않은 경우 이 옵션은 1년으로 설정할 수 있습니다. |
+   |**KSP(키 스토리지 공급자)**   |Windows 10  | Windows의 경우 디바이스에서 키를 저장할 위치를 선택합니다. |
+   |**인증 기관**      |모두         |엔터프라이즈 CA의 내부 FQDN(정규화된 도메인 이름)을 표시합니다.  |
+   |**인증 기관 이름** |모두         |"Contoso 인증 기관"과 같은 엔터프라이즈 CA의 이름을 나열합니다. |
+   |**인증서 유형**             |macOS       |유형 선택: <br> **-** **사용자** 인증서는 인증서의 주체와 SAN에 사용자 및 디바이스 특성을 모두 포함할 수 있습니다. <br><br>**-** **디바이스** 인증서는 인증서의 주체와 SAN에 있는 디바이스 특성만 포함할 수 있습니다. 키오스크 또는 기타 공유 디바이스처럼 사용자가 없는 디바이스 등의 시나리오에 디바이스를 사용합니다.  <br><br> 이 선택 항목은 주체 이름 형식에 영향을 줍니다. |
+   |**주체 이름 형식**          |모두         |대부분의 플랫폼에서는 별도로 필요한 경우가 아니면 이 옵션을 **일반 이름**으로 설정합니다.<br><br>macOS의 경우 주체 이름 형식은 인증서 유형에 따라 결정됩니다. 이 문서의 뒷부분에 있는 [macOS의 주체 이름 형식](#subject-name-format-for-macos)을 참조하세요. |
+   |**주체 대체 이름**     |모두         |달리 필요하지 않은 경우 이 옵션을 **UPN(사용자 계정 이름)** 으로 설정합니다. |
+   |**확장 키 사용**           |**-** Android 디바이스 관리자 <br>**-** Android Enterprise(‘디바이스 소유자’, ‘회사 프로필’)   <br> **-** Windows 10 |일반적으로 인증서는 사용자 또는 디바이스가 서버에 인증할 수 있는 ‘클라이언트 인증’이 필요합니다.  |
+   |**모든 앱이 프라이빗 키에 액세스할 수 있도록 허용** |macOS  |연결된 mac 디바이스용으로 구성된 앱에 PKCS 인증서 프라이빗 키에 대한 액세스 권한을 제공하려면 **사용**으로 설정합니다. <br><br> 이 설정에 대한 자세한 내용은 Apple 개발자 설명서에서 [구성 프로필 참조](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)의 *AllowAllAppsAccess* 인증서 페이로드 섹션을 참조하세요. |
+   |**루트 인증서**             |**-** Android 디바이스 관리자 <br> **-** Android Enterprise(‘디바이스 소유자’, ‘회사 프로필’)   |이전에 할당된 루트 CA 인증서 프로필을 선택합니다. |
 
 4. **확인** > **만들기**를 선택하여 프로필을 저장합니다.
 5. 하나 이상의 디바이스에 새 프로필을 할당하려면 [Microsoft Intune 디바이스 프로필 할당](../configuration/device-profile-assign.md)을 참조하세요.
 
    > [!NOTE]
    > Android 엔터프라이즈 프로필을 사용하는 디바이스에서는 PKCS 인증서 프로필을 사용하여 설치된 인증서가 디바이스에 표시되지 않습니다. 인증서 배포 성공 여부를 확인하려면 Intune 콘솔에서 프로필의 상태를 확인합니다.
+
+### <a name="subject-name-format-for-macos"></a>macOS의 주체 이름 형식
+
+macOS PKCS 인증서 프로필을 만들 때 주체 이름 형식에 대한 옵션은 **사용자** 또는 **디바이스** 중에서 선택하는 인증서 유형에 따라 달라집니다.  
+
+> [!NOTE]  
+> 결과 CSR(인증서 서명 요청)의 주체 이름에 다음 문자 중 하나가 이스케이프 문자로 포함되면(앞에 백슬래시 \\ 포함) [SCEP](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters)에 대해 표시된 것과 동일한 이슈인, PKCS를 사용하여 인증서를 가져오는 알려진 문제가 있습니다.
+> - \+
+> - ;
+> - ,
+> - =
+
+- **사용자 인증서 유형**  
+  ‘주체 이름 형식’의 형식 옵션에는 다음 두 개의 변수가 포함됩니다.  **CN(일반 이름)** 및 **E(메일)** 을 지원합니다. **CN(일반 이름)** 은 다음 변수 중 하나로 설정할 수 있습니다.
+
+  - **CN={{UserName}}** : 사용자의 사용자 계정 이름입니다(예: janedoe@contoso.com).
+  - **CN={{AAD_Device_ID}}** : Azure AD(Active Directory)에서 디바이스를 등록하는 경우 할당된 ID입니다. 이 ID는 일반적으로 Azure AD로 인증하는 데 사용됩니다.
+  - **CN={{SERIALNUMBER}}** : 일반적으로 디바이스를 식별하는 제조업체에서 사용되는 고유한 SN(일련 번호)입니다.
+  - **CN={{IMEINumber}}** : 휴대폰을 식별하는 데 사용되는 IMEI(International Mobile Equipment Identity) 고유 번호입니다.
+  - **CN={{OnPrem_Distinguished_Name}}** : 쉼표로 구분된 상대 고유 이름 순서(예: *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*)입니다.
+
+    *{{OnPrem_Distinguished_Name}}* 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하여 *onpremisesdistinguishedname* 사용자 특성을 Azure AD와 동기화해야 합니다.
+
+  - **CN={{onPremisesSamAccountName}}** : 관리자는 Azure AD Connect를 사용하여 Azure AD에 대한 Active Directory의 samAccountName 특성을 *onPremisesSamAccountName* 특성으로 동기화할 수 있습니다. Intune에서는 해당 변수를 인증서의 제목에 있는 인증 발급 요청의 일부로 대체할 수 있습니다. samAccountName 특성은 이전 버전의 Windows(Windows 2000 이전)에서 클라이언트 및 서버를 지원하는 데 사용되는 사용자 로그인 이름입니다. 사용자 로그인 이름 형식은 다음과 같습니다. *DomainName\testUser* 또는 *testUser*만
+
+    *{{onPremisesSamAccountName}}* 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하여 *onPremisesSamAccountName* 사용자 특성을 Azure AD와 동기화해야 합니다.
+
+  이러한 변수 및 정적 문자열을 한 개 이상 조합하여 다음과 같은 사용자 지정 주체 이름 형식을 만들 수 있습니다.  
+  - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+  
+  이 예제에는 CN 및 E 변수를 사용하는 주체 이름 형식과 조직 구성 단위, 조직, 위치, 상태 및 국가 값에 해당하는 문자열이 포함됩니다. [CertStrToName 함수](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)에서는 이 함수와 지원되는 문자열을 보여 줍니다.
+
+- **디바이스 인증서 유형**  
+  주체 이름 형식에 대한 형식 옵션은 다음 변수를 포함합니다. 
+  - **{{AAD_Device_ID}}**
+  - **{{Device_Serial}}**
+  - **{{Device_IMEI}}**
+  - **{{SerialNumber}}**
+  - **{{IMEINumber}}**
+  - **{{AzureADDeviceId}}**
+  - **{{WiFiMacAddress}}**
+  - **{{IMEI}}**
+  - **{{DeviceName}}**
+  - **{{FullyQualifiedDomainName}}** *(Windows 및 도메인 가입 디바이스에만 적용됨)*
+  - **{{MEID}}**
+   
+  텍스트 상자에서 이러한 변수와 변수 텍스트를 차례로 지정할 수 있습니다. 예를 들어, *Device1*이라는 디바이스의 일반 이름을 **CN={{DeviceName}}Device1**으로 추가할 수 있습니다.
+
+  > [!IMPORTANT]  
+  > - 변수를 지정하는 경우 오류를 방지하기 위해 예제에 표시된 대로 변수 이름을 중괄호 { }로 묶습니다.  
+  > - **IMEI**, **SerialNumber** 및 **FullyQualifiedDomainName**과 같이 디바이스 인증서의 *주체* 또는 *SAN*에 사용되는 디바이스 속성은 디바이스에 대해 액세스 권한이 있는 사람이 스푸핑할 수 있는 속성입니다.
+  > - 디바이스는 해당 디바이스에 설치할 해당 프로필의 인증서 프로필에 지정된 모든 변수를 지원해야 합니다.  예를 들어, SCEP 프로필의 주체 이름에 **{{IMEI}}** 가 사용되며 IMEI 번호가 없는 디바이스에 할당된 경우 프로필을 설치하지 못합니다.  
+ 
+
 
 ## <a name="whats-new-for-connectors"></a>커넥터의 새로운 기능
 두 인증서 커넥터의 업데이트가 정기적으로 릴리스됩니다. 커넥터를 업데이트할 때 여기서 변경 내용을 읽을 수 있습니다. 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2ebca165c067afbc3d830e5f75ac9f8e29effb2
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: f2a1d964f157f33e439f659713fe8c2e02f852b3
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237222"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749418"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -77,7 +78,7 @@ Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다.
     3. **멤버 자격 형식**에서 **할당** 또는 **동적 디바이스**를 선택합니다.
 3. 이전 단계에서 **멤버 자격 형식**에 대해 **할당됨**을 선택했다면 **그룹** 블레이드에서 **멤버**를 선택하고 Autopilot 디바이스를 그룹에 추가합니다.
     아직 등록되지 않은 AutoPilot 디바이스는 디바이스 이름이 디바이스의 일련 번호와 동일한 디바이스입니다.
-4. 위의 **멤버 자격 형식**에 대해 **동적 디바이스**를 선택했다면 **그룹** 블레이드에서 **동적 디바이스 멤버**를 선택하고 **고급 규칙** 상자에서 다음 코드를 입력합니다. 이 규칙은 Autopilot 디바이스만 소유하는 특성을 대상으로 하므로 Autopilot 디바이스만 이러한 규칙에 의해 수집됩니다.
+4. 위의 **멤버 자격 형식**에 대해 **동적 디바이스**를 선택했다면 **그룹** 블레이드에서 **동적 디바이스 멤버**를 선택하고 **고급 규칙** 상자에서 다음 코드를 입력합니다. 이 규칙은 Autopilot 디바이스만 소유하는 특성을 대상으로 하므로 Autopilot 디바이스만 이러한 규칙에 의해 수집됩니다. Autopilot이 아닌 특성을 기반으로 그룹을 만드는 경우 그룹에 포함된 디바이스가 실제로 Autopilot에 등록되지 않을 수 있습니다.
     - Autopilot 디바이스를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`를 입력합니다.
     - Intune의 그룹 태그 필드는 Azure AD 디바이스의 OrderID 특성에 해당합니다. 특정 그룹 태그(Azure AD 디바이스 OrderID)를 사용하여 모든 Autopilot 디바이스를 포함하는 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`을 입력해야 합니다.
     - 특별 구매 주문 ID를 사용하여 Autopilot 디바이스를 모두 포함한 그룹을 만들려는 경우 `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`를 입력합니다.
@@ -167,6 +168,11 @@ Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분
     ![친숙한 이름 스크린샷](./media/enrollment-autopilot/friendly-name.png)
 
 4. **확인**을 선택합니다.
+
+## <a name="autopilot-deployments-report"></a>Autopilot 배포 보고서
+Windows Autopilot을 통해 배포된 각 디바이스에 대한 세부 정보를 볼 수 있습니다.
+보고서를 보려면 **Intune**으로 이동하고 **모니터**에서 **Autopilot 배포**를 선택합니다.
+데이터는 배포 후 30일 동안 사용할 수 있습니다.
 
 
 ## <a name="delete-autopilot-devices"></a>Autopilot 디바이스 삭제

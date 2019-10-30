@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350016"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585002"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -128,6 +129,14 @@ Intune에서 브랜드 이미지를 추가하거나 변경해도, 회사 포털�
 - **기본값**을 수락하여 표시된 목록을 사용하거나
 - **사용자 지정**을 선택하여 관리되는 iOS 디바이스에서 조직이 보거나 수행할 수 없는 항목의 목록을 사용자 지정합니다. [markdown](https://daringfireball.net/projects/markdown/)을 사용하여 글머리 기호, 굵게 표시, 기울임꼴, 링크를 추가할 수 있습니다.
 
+## <a name="company-portal-derived-credentials-for-ios-devices"></a>iOS 디바이스용 회사 포털 파생 자격 증명
+Intune은 자격 증명 공급자 DISA Purebred, Entrust Datacard 및 Intercede와 파트너 관계를 맺고 PIV(Personal Identity Verification) 및 CAC(Common Access Card) 파생 자격 증명을 지원합니다. 최종 사용자는 iOS 디바이스 등록 후 추가 단계를 수행하여 회사 포털 애플리케이션에서 해당 ID를 확인합니다. 먼저 테넌트의 자격 증명 공급자를 설정한 후 사용자 또는 디바이스에 대한 파생 자격 증명을 사용하는 프로필을 대상으로 지정하여 사용자에 대해 파생 자격 증명을 사용하도록 설정합니다.
+
+> [!NOTE]
+> 사용자는 Intune을 통해 지정한 링크를 기반으로 파생 자격 증명에 대한 지침을 볼 수 있습니다.
+
+iOS 디바이스의 파생 자격 증명에 대한 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](~/protect/derived-credentials.md)을 참조하세요.
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 회사 포털 바로 가기 키
 
 최종 사용자는 바로 가기 키(액셀러레이터 키)를 사용하여 Windows 회사 포털에서 탐색, 앱 및 디바이스 작업을 트리거할 수 있습니다.
@@ -171,21 +180,25 @@ Intune에서 브랜드 이미지를 추가하거나 변경해도, 회사 포털�
 
 일부 플랫폼과 구성에서는 셀프 서비스 디바이스 작업을 허용하지 않습니다. 아래 표는 셀프 서비스 작업에 대한 추가 세부 정보를 보여줍니다.
 
-|     플랫폼    |    사용 중지    |    초기화     |    이름 바꾸기<sup>(4)</sup>    |    동기화    |    원격 잠금    |    암호 초기화    |    키 복구    |
-|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    사용 가능<sup>(1)</sup>    |    사용 가능    |    사용 가능    |    사용 가능    |    Windows Phone만 해당    |    Windows Phone만 해당    |    해당 없음    |
-|    iOS<sup>(3)</sup>    |    사용 가능    |    사용 가능    |    사용 가능    |    사용 가능    |    사용 가능    |    사용 가능    |    해당 없음    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    사용 가능    |    해당 없음    |    사용 가능    |    사용 가능    |    사용 가능    |    해당 없음    |    사용 가능<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    사용 가능<sup>(7)</sup>    |    사용 가능<sup>(7)</sup>    |    사용 가능    |    사용 가능    |    사용 가능    |    사용 가능<sup>(6)</sup>    |    해당 없음    |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
+| 사용 중지 | 사용 가능<sup>(1)</sup> | 사용 가능<sup>(8)</sup> | 사용 가능 | 사용 가능<sup>(7)</sup> |
+| 초기화 | 사용 가능 | 사용 가능 | 해당 없음 | 사용 가능<sup>(7)</sup> |
+| 이름 바꾸기<sup>(4)</sup> | 사용 가능 | 사용 가능<sup>(8)</sup> | 사용 가능 | 사용 가능 |
+| 동기화 | 사용 가능 | 사용 가능 | 사용 가능 | 사용 가능 |
+| 원격 잠금 | Windows Phone만 해당 | 사용 가능 | 사용 가능 | 사용 가능 |
+| 암호 초기화 | Windows Phone만 해당 | 사용 가능 | 해당 없음 | 사용 가능<sup>(6)</sup> |
+| 키 복구 | 해당 없음 | 해당 없음 | 사용 가능<sup>(2)</sup> | 해당 없음 |
+| 어둡게 모드 | 해당 없음 | 사용 가능 | 해당 없음 | 해당 없음 |
 
-
-<sup>(1)</sup> 사용 중지는 Azure AD 가입 Windows 디바이스에서 항상 차단됩니다.<br>
-<sup>(2)</sup> macOS에 대한 개인 키 복구는 회사 포털 웹 사이트를 통해서만 사용할 수 있습니다.<br> 
+<sup>(1)</sup> **사용 중지**는 Azure AD 조인 Windows 디바이스에서 항상 차단됩니다.<br>
+<sup>(2)</sup> MacOS의 **키 복구**는 웹 포털을 통해서만 사용할 수 있습니다.<br>
 <sup>(3)</sup> 디바이스 등록 관리자 등록을 사용하는 경우 모든 원격 작업을 사용할 수 없습니다.<br>
-<sup>(4)</sup> 이름 바꾸기는 디바이스가 아니라 회사 포털 앱 또는 웹 사이트의 디바이스 이름만 바꿉니다.<br>
-<sup>(5)</sup> 원격 초기화는 MacOS 디바이스에서 사용할 수 없습니다.<br>
-<sup>(6)</sup> 암호 초기화는 일부 Android 및 Android Enterprise 구성에서 지원되지 않습니다. 자세한 내용은 [Intune에서 디바이스 암호 초기화 또는 제거](../remote-actions/device-passcode-reset.md)를 참조하세요.<br>
-<sup>(7)</sup> 사용 중지 및 초기화는 Android Enterprise 디바이스 소유자 시나리오(COPE, COBO, COSU)에서 사용할 수 없습니다.<br> 
+<sup>(4)</sup> **이름 바꾸기**는 디바이스가 아니라 회사 포털 앱 또는 웹 사이트의 디바이스 이름만 바꿉니다.<br>
+<sup>(5)</sup> **원격 초기화**는 MacOS 디바이스에서 사용할 수 없습니다.<br>
+<sup>(6)</sup> **암호 초기화**는 일부 Android 및 Android Enterprise 구성에서 지원되지 않습니다. 자세한 내용은 [Intune에서 디바이스 암호 초기화 또는 제거](../remote-actions/device-passcode-reset.md)를 참조하세요.<br>
+<sup>(7)</sup> **사용 중지** 및 **초기화**는 Android Enterprise 디바이스 소유자 시나리오(COPE, COBO, COSU)에서 사용할 수 없습니다.<br> 
+<sup>(8)</sup> **사용 중지**(디바이스 제거) 및 **이름 바꾸기**는 모든 유형의 등록에 사용할 수 있습니다. 다른 작업은 사용자 등록에서 지원되지 않습니다.<br> 
 
 ## <a name="next-steps"></a>다음 단계
 

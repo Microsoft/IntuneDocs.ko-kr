@@ -2,29 +2,28 @@
 title: Microsoft Intune에서 디바이스 준수 정책 - Azure | Microsoft Docs
 description: 디바이스 준수 정책 사용 시작, 상태 및 심각도 수준의 개요, InGracePeriod 상태 사용, 조건부 액세스 작업, 할당된 정책 없이 디바이스 처리 및 Microsoft Intune에서 Azure Portal과 클래식 포털의 준수 차이
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a743bb3b2003b1dbdf8088aca19bce898c8e40a8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721424"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749178"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune을 사용하여 조직의 리소스 액세스를 허용하도록 디바이스에서 규칙을 설정합니다.
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 많은 MDM(모바일 디바이스 관리) 솔루션은 사용자와 디바이스가 일부 요구 사항을 충족해야 하므로 조직 데이터를 보호하는 데 도움이 됩니다. Intune에서 이 기능을 “준수 정책”이라고 합니다. 준수 정책은 사용자 및 디바이스가 준수하려면 충족해야 하는 규칙 및 설정을 정의합니다. 조건부 액세스를 함께 사용하면 관리자가 규칙을 충족하지 않는 사용자 및 디바이스를 차단할 수 있습니다.
 
@@ -89,10 +88,10 @@ Intune에는 기본 제공 준수 정책 설정 세트도 포함됩니다. 다�
 
 - **준수 정책이 할당되지 않은 디바이스를 다음으로 표시**: 이 속성에는 두 개의 값이 있습니다.
 
-  - **준수**(기본값): 보안 기능 해제
+  - **준수**(*기본값*): 보안 기능 끄기
   - **비준수**: 보안 기능 켜기
 
-  디바이스에 할당된 준수 정책이 없으면 이 디바이스는 기본적으로 준수함으로 간주됩니다. 준수 정책과 함께 조건부 액세스를 사용하는 경우 **비준수**로 기본 설정을 변경하는 것이 좋습니다. 정책이 할당되지 않아 최종 사용자가 준수하지 않으면, [회사 포털 앱](../apps/company-portal-app.md)에 `No compliance policies have been assigned`가 표시됩니다.
+  디바이스에 할당된 준수 정책이 없으면 이 디바이스는 기본적으로 준수함으로 간주됩니다. 준수 정책과 함께 조건부 액세스를 사용하는 경우 기본 설정을 **비준수**로 변경하는 것이 좋습니다. 정책이 할당되지 않아 최종 사용자가 준수하지 않으면, [회사 포털 앱](../apps/company-portal-app.md)에 `No compliance policies have been assigned`가 표시됩니다.
 
 - **향상된 탈옥 검색**: 이 설정을 사용하도록 지정하면 iOS 디바이스에서 Intune으로 더 자주 체크 인할 수 있습니다. 이 속성을 사용하면 디바이스의 위치 서비스를 사용하고 배터리 사용에 영향을 줍니다. 사용자 위치 데이터는 Intune에서 저장되지 않습니다.
 
@@ -115,13 +114,13 @@ Intune에는 기본 제공 준수 정책 설정 세트도 포함됩니다. 다�
 
 |**정책 설정**| **플랫폼** |
 | --- | ----|
-| **PIN 또는 암호 구성** | - **Android 4.0 이상**: 격리됨</br>- **Samsung Knox Standard 4.0 이상**: 격리됨</br>- **Android 엔터프라이즈**: 격리됨</br></br>- **iOS 8.0 이상**: 재구성됨</br>- **macOS 10.11 이상**: 재구성됨</br></br>- **Windows 8.1 이상**: 재구성됨</br>- **Windows Phone 8.1 이상**: 재구성됨|
-| **디바이스 암호화** | - **Android 4.0 이상**: 격리됨</br>- **Samsung Knox Standard 4.0 이상**: 격리됨</br>- **Android 엔터프라이즈**: 격리됨</br></br>- **iOS 8.0 이상**: 재구성됨(PIN 설정)</br>- **macOS 10.11 이상**: 재구성됨(PIN 설정)</br></br>- **Windows 8.1 이상**: 해당 없음</br>- **Windows Phone 8.1 이상**: 재구성됨 |
-| **무단 해제 또는 루팅된 디바이스** | - **Android 4.0 이상**: 격리됨(설정 아님)</br>- **Samsung Knox Standard 4.0 이상**: 격리됨(설정 아님)</br>- **Android 엔터프라이즈**: 격리됨(설정 아님)</br></br>- **iOS 8.0 이상**: 격리됨(설정 아님)</br>- **macOS 10.11 이상**: 해당 없음</br></br>- **Windows 8.1 이상**: 해당 없음</br>- **Windows Phone 8.1 이상**: 해당 없음 |
-| **전자 메일 프로필** | - **Android 4.0 이상**: 해당 없음</br>- **Samsung Knox Standard 4.0 이상**: 해당 없음</br>- **Android 엔터프라이즈**: 해당 없음</br></br>- **iOS 8.0 이상**: 격리됨</br>- **macOS 10.11 이상**: 격리됨</br></br>- **Windows 8.1 이상**: 해당 없음</br>- **Windows Phone 8.1 이상**: 해당 없음 |
-| **최소 OS 버전** | - **Android 4.0 이상**: 격리됨</br>- **Samsung Knox Standard 4.0 이상**: 격리됨</br>- **Android 엔터프라이즈**: 격리됨</br></br>- **iOS 8.0 이상**: 격리됨</br>- **macOS 10.11 이상**: 격리됨</br></br>- **Windows 8.1 이상**: 격리됨</br>- **Windows Phone 8.1 이상**: 격리됨 |
-| **최대 OS 버전** | - **Android 4.0 이상**: 격리됨</br>- **Samsung Knox Standard 4.0 이상**: 격리됨</br>- **Android 엔터프라이즈**: 격리됨</br></br>- **iOS 8.0 이상**: 격리됨</br>- **macOS 10.11 이상**: 격리됨</br></br>- **Windows 8.1 이상**: 격리됨</br>- **Windows Phone 8.1 이상**: 격리됨 |
-| **Windows 상태 증명** | - **Android 4.0 이상**: 해당 없음</br>- **Samsung Knox Standard 4.0 이상**: 해당 없음</br>- **Android 엔터프라이즈**: 해당 없음</br></br>- **iOS 8.0 이상**: 해당 없음</br>- **macOS 10.11 이상**: 해당 없음</br></br>- **Windows 10 및 Windows 10 Mobile**: 격리됨</br>- **Windows 8.1 이상**: 격리됨</br>- **Windows Phone 8.1 이상**: 해당 없음 |
+| **PIN 또는 암호 구성** | - **Android 4.0 이상**: 격리됨<br>- **Samsung Knox Standard 4.0 이상**: 격리됨<br>- **Android 엔터프라이즈**: 격리됨  <br>  <br>- **iOS 8.0 이상**: 재구성됨<br>- **macOS 10.11 이상**: 재구성됨  <br>  <br>- **Windows 8.1 이상**: 재구성됨<br>- **Windows Phone 8.1 이상**: 재구성됨|
+| **디바이스 암호화** | - **Android 4.0 이상**: 격리됨<br>- **Samsung Knox Standard 4.0 이상**: 격리됨<br>- **Android 엔터프라이즈**: 격리됨<br><br>- **iOS 8.0 이상**: 재구성됨(PIN 설정)<br>- **macOS 10.11 이상**: 재구성됨(PIN 설정)<br><br>- **Windows 8.1 이상**: 해당 없음<br>- **Windows Phone 8.1 이상**: 재구성됨 |
+| **무단 해제 또는 루팅된 디바이스** | - **Android 4.0 이상**: 격리됨(설정 아님)<br>- **Samsung Knox Standard 4.0 이상**: 격리됨(설정 아님)<br>- **Android 엔터프라이즈**: 격리됨(설정 아님)<br><br>- **iOS 8.0 이상**: 격리됨(설정 아님)<br>- **macOS 10.11 이상**: 해당 없음<br><br>- **Windows 8.1 이상**: 해당 없음<br>- **Windows Phone 8.1 이상**: 해당 없음 |
+| **전자 메일 프로필** | - **Android 4.0 이상**: 해당 없음<br>- **Samsung Knox Standard 4.0 이상**: 해당 없음<br>- **Android 엔터프라이즈**: 해당 없음<br><br>- **iOS 8.0 이상**: 격리됨<br>- **macOS 10.11 이상**: 격리됨<br><br>- **Windows 8.1 이상**: 해당 없음<br>- **Windows Phone 8.1 이상**: 해당 없음 |
+| **최소 OS 버전** | - **Android 4.0 이상**: 격리됨<br>- **Samsung Knox Standard 4.0 이상**: 격리됨<br>- **Android 엔터프라이즈**: 격리됨<br><br>- **iOS 8.0 이상**: 격리됨<br>- **macOS 10.11 이상**: 격리됨<br><br>- **Windows 8.1 이상**: 격리됨<br>- **Windows Phone 8.1 이상**: 격리됨 |
+| **최대 OS 버전** | - **Android 4.0 이상**: 격리됨<br>- **Samsung Knox Standard 4.0 이상**: 격리됨<br>- **Android 엔터프라이즈**: 격리됨<br><br>- **iOS 8.0 이상**: 격리됨<br>- **macOS 10.11 이상**: 격리됨<br><br>- **Windows 8.1 이상**: 격리됨<br>- **Windows Phone 8.1 이상**: 격리됨 |
+| **Windows 상태 증명** | - **Android 4.0 이상**: 해당 없음<br>- **Samsung Knox Standard 4.0 이상**: 해당 없음<br>- **Android 엔터프라이즈**: 해당 없음<br><br>- **iOS 8.0 이상**: 해당 없음<br>- **macOS 10.11 이상**: 해당 없음<br><br>- **Windows 10 및 Windows 10 Mobile**: 격리됨<br>- **Windows 8.1 이상**: 격리됨<br>- **Windows Phone 8.1 이상**: 해당 없음 |
 
 ---------------------------
 
@@ -156,8 +155,9 @@ Azure Portal에서 디바이스 준수와 관련된 기능을 사용하려는 �
   - [Android Enterprise](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows 10 이상](compliance-policy-create-windows.md)
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
-  - [Windows 8.1 및 Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows 8.1 이상](compliance-policy-create-windows-8-1.md)
+  - [Windows 10 이상](compliance-policy-create-windows.md)
 
 - [정책 엔터티에 대한 참조](../reports-ref-policy.md)에는 Intune Data Warehouse 정책 엔터티에 대한 정보가 있습니다.

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3fb2f050-ec94-42ab-be05-c3d4101148bb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724778"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593685"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -204,7 +205,7 @@ Microsoft Edge에 대한 애플리케이션 프록시를 사용하도록 설정�
 
 다음은 몇 가지 세부 정보입니다.
 
-- 이 책갈피는 사용자가 Microsoft Edge의 회사 모드를 사용할 때만 나타납니다. 
+- 이 책갈피는 사용자가 Microsoft Edge의 [회사 모드](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser)를 사용할 때만 나타납니다. 
 - 이 책갈피는 사용자가 삭제하거나 수정할 수 없습니다.
 - 이 책갈피는 목록 맨 위에 표시됩니다. 사용자가 만드는 모든 책갈피는 이 책갈피 아래에 표시됩니다.
 - 애플리케이션 프록시 리디렉션을 사용한 경우 내부 또는 외부 URL 중 하나를 사용하여 애플리케이션 프록시 웹앱을 추가할 수 있습니다.

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314685"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503306"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>회사 소유의 디바이스 식별
 
@@ -121,7 +122,7 @@ International Mobile Equipment Identifiers에 대한 자세한 사양은 [3GGPP 
 
 ## <a name="change-device-ownership"></a>디바이스 소유권 변경
 
-디바이스 속성은 Intune의 각 디바이스 레코드에 대한 **소유권**을 표시합니다. 관리자는 디바이스를 **개인** 또는 **회사**로 지정할 수 있습니다.
+디바이스 속성은 Intune의 각 디바이스 레코드에 대한 **소유권**을 표시합니다. 관리자는 디바이스를 **개인** 또는 **회사**로 지정할 수 있습니다. 디바이스의 소유권 유형이 개인에서 회사로 변경되면 Intune은 7일 내에 해당 디바이스에서 이전에 수집된 모든 앱 정보를 삭제합니다. 해당하는 경우 Intune은 레코드에서 전화 번호도 삭제합니다. 
 
 **디바이스 소유권을 변경하려면 다음과 같이 합니다.**
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **디바이스**로 이동하여 디바이스를 선택합니다.

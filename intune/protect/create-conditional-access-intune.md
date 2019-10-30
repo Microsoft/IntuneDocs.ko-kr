@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e27997b45f0a68f6eb9247c69fafc363787fb457
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b775bb09c289733cdc2837984874b7c1c7e286bc
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722594"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681379"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>디바이스 기반 조건부 액세스 정책 만들기
 
@@ -61,7 +62,7 @@ Intune을 통해 액세스 제어에 모바일 디바이스 규정 준수를 추
 
     - **앱 선택**: 이 옵션을 선택하고 **선택**을 선택한 후 애플리케이션 목록을 사용하여 보호하려는 앱 또는 서비스를 검색하고 선택합니다.
     
-      ![새 조건부 액세스 정책 만들기](./media/create-conditional-access-intune/create-ca-select-apps.png)
+      ![조건부 액세스 정책에 대한 할당 구성](./media/create-conditional-access-intune/create-ca-select-apps.png)
 
 7. **완료**를 선택합니다.
 8. **할당** 섹션에서 **조건**을 선택합니다.
@@ -71,7 +72,7 @@ Intune을 통해 액세스 제어에 모바일 디바이스 규정 준수를 추
     - **클라이언트 앱**: 정책을 브라우저 앱, 모바일 앱 및 데스크톱 클라이언트에 적용해야 하는 경우 **예**를 선택합니다. **최신 인증 클라이언트**(예: iOS용 Outlook 또는 Android용 Outlook) 및 **Exchange ActiveSync 클라이언트**를 선택할 수도 있습니다.
     - **디바이스 상태**: 예를 선택하고 디바이스가 하이브리드 Azure AD에 조인된 상태 또는 디바이스가 규격으로 표시된 상태(또는 두 상태를 모두 갖는 경우)를 특별히 제외하도록 선택하지 않으면 조건부 액세스 정책이 모든 디바이스 상태에 적용됩니다.
     
-      ![새 조건부 액세스 정책 만들기](./media/create-conditional-access-intune/create-ca-device-platforms.png)
+      ![조건부 액세스 정책에 대한 조건 설정](./media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
       > **최신 인증** 클라이언트와 **Exchange ActiveSync 클라이언트**를 둘 다 보호하려는 경우 각 클라이언트 유형에 대해 하나씩 두 개의 조건부 액세스 정책을 따로 만듭니다. Exchange ActiveSync가 최신 인증을 지원하지만 Exchange ActiveSync에서 지원하는 유일한 조건은 플랫폼입니다. 다단계 인증을 포함하는 기타 조건은 지원되지 않습니다. Exchange ActiveSync에서 Exchange Online에 대한 액세스를 효과적으로 보호하려면 지원되는 플랫폼에만 적용 정책을 선택하고 클라우드 앱 Office 365 Exchange Online 및 클라이언트 앱 Exchange ActiveSync를 지정하는 조건부 액세스 정책을 만듭니다.

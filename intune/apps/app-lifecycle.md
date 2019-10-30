@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c351c1bef09d559ee6fb07b2c5135b25ca69d9d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 53425b56985cbafb4033b11df54597959c0b0d59
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725714"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499714"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune에 대한 앱 수명 주기 개요
 
@@ -29,7 +30,7 @@ ms.locfileid: "71725714"
 
 Microsoft Intune 앱 수명 주기는 앱이 추가될 때 시작되어 앱을 제거할 때까지 추가 단계를 진행해 나갑니다. 이러한 단계를 이해해야 Intune에서 앱 관리를 시작하는 데 필요한 세부 정보를 얻게 됩니다.
 
-![앱 수명 주기 - 추가, 배포, 구성, 보호 및 사용 중지 ](./media/app-lifecycle/app-lifecycle.png "Intune 앱 수명 주기")
+![앱 수명 주기 - 추가, 배포, 구성, 보호 및 사용 중지](./media/app-lifecycle/app-lifecycle.png "Intune 앱 수명 주기")
 
 ## <a name="add"></a>추가
 

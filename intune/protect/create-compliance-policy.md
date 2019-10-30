@@ -2,12 +2,13 @@
 title: Microsoft Intune에서 디바이스 준수 정책 만들기 - Azure | Microsoft Docs
 description: 디바이스 준수 정책 만들기, 상태 및 심각도 수준의 개요, InGracePeriod 상태 사용, 조건부 액세스 작업, 할당된 정책 없이 디바이스 처리 및 Microsoft Intune에서 Azure Portal과 클래식 포털의 준수 차이
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: samyada
@@ -15,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306588"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786070"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 준수 정책 만들기
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 디바이스 준수 정책은 Intune을 사용하여 조직의 리소스를 보호할 때 핵심적인 기능입니다. Intune에서 디바이스가 규정을 준수하는 것으로 간주되기 위해 충족해야 하는 규칙 및 설정(예: 최소 OS 버전)을 만들 수 있습니다. 디바이스가 규정을 준수하지 않을 경우 [조건부 액세스](conditional-access.md)를 사용하여 데이터 및 리소스에 대한 액세스를 차단할 수 있습니다.
 
@@ -48,10 +47,10 @@ ms.locfileid: "72306588"
 
 - 지원되는 플랫폼을 사용합니다.
 
-  - Android
+  - Android 디바이스 관리자
   - Android Enterprise
   - iOS
-  - macOS(미리 보기)
+  - macOS
   - Windows 10
   - Windows 8.1
   - Windows Phone 8.1
@@ -72,26 +71,40 @@ ms.locfileid: "72306588"
 
 3. **정책** > **정책 만들기**를 선택합니다. 다음 속성을 입력합니다.
 
-    - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 **iOS 무단 해제 디바이스를 비준수로 표시**는 좋은 정책 이름입니다.
-    - **설명**: 정책에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
-    - **플랫폼**: 디바이스 플랫폼을 선택합니다. 옵션은 다음과 같습니다.  
+   - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 **iOS 무단 해제 디바이스를 비준수로 표시**는 좋은 정책 이름입니다.  
 
-       - **OWA(Outlook Web Access)**
-       - **Android 엔터프라이즈**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 이상**
-       - **Windows 10 이상**
+   - **설명**: 정책에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.  
 
-    - **설정**: 다음 문서에서는 각 플랫폼의 설정을 나열 및 설명합니다.
+   - **플랫폼**: 디바이스 플랫폼을 선택합니다. 옵션은 다음과 같습니다.
+     - **Android 디바이스 관리자**
+     - **Android Enterprise**
+     - **iOS/iPadOS**
+     - **macOS**
+     - **Windows Phone 8.1**
+     - **Windows 8.1 이상**
+     - **Windows 10 이상**
 
-        - [OWA(Outlook Web Access)](compliance-policy-create-android.md)
-        - [Android Enterprise](compliance-policy-create-android-for-work.md)
-        - [iOS](compliance-policy-create-ios.md)
-        - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1, Windows 8.1 이상](compliance-policy-create-windows-8-1.md)
-        - [Windows 10 이상](compliance-policy-create-windows.md)
+     *Android Enterprise*의 경우 **프로필 유형**을 선택해야 합니다.
+     - **디바이스 소유자**
+     - **회사 프로필**
+
+   - **설정**: 다음 문서에서는 각 플랫폼의 설정을 나열 및 설명합니다.
+     - [Android 디바이스 관리자](compliance-policy-create-android.md)
+     - [Android Enterprise](compliance-policy-create-android-for-work.md)
+     - [iOS/iPadOS](compliance-policy-create-ios.md)
+     - [macOS](compliance-policy-create-mac-os.md)
+     - [Windows Phone 8.1, Windows 8.1 이상](compliance-policy-create-windows-8-1.md)
+     - [Windows 10 이상](compliance-policy-create-windows.md)  
+
+   - **위치**’(Android 디바이스 관리자)’:  정책에서 디바이스의 위치에 따라 규정 준수를 강제 적용할 수 있습니다. 기존 위치에서 선택합니다. 아직 위치가 없나요? Intune에서 [위치(네트워크 펜스) 사용](use-network-locations.md)에는 몇 가지 지침이 제공됩니다.  
+
+   - **비준수에 대한 작업**: 준수 정책을 따르지 않는 디바이스의 경우 자동으로 적용할 작업 시퀀스를 추가할 수 있습니다. 디바이스가 비준수로 표시되면 일정을 변경할 수 있습니다(예: 하루 후). 디바이스가 준수하지 않으면 사용자에게 이메일을 보내는 두 번째 작업을 구성할 수도 있습니다.
+    
+     [비규격 디바이스에 대한 작업 추가](actions-for-noncompliance.md)는 사용자에게 알림 이메일을 생성하는 작업을 비롯한 자세한 정보를 제공합니다.
+
+     예를 들어 위치 기능을 사용하고 규정 준수 정책에서 위치를 추가합니다. 비준수에 대한 기본 작업은 하나 이상의 위치를 선택하는 경우에 적용됩니다. 디바이스가 선택한 위치에 연결되지 않으면 즉시 비준수로 간주됩니다. 사용자에게 하루와 같은 유예 기간을 지정할 수 있습니다.
+
+   - **범위(태그)** : 범위 태그는 영업, HR, 모든 US-NC 직원 등과 같은 특정 그룹으로 정책을 할당 및 필터링할 수 있는 좋은 방법입니다. 설정을 추가한 후 준수 정책에 범위 태그를 추가할 수도 있습니다. [범위 태그를 사용하여 정책 필터링](../fundamentals/scope-tags.md)은 좋은 리소스입니다.
 
 4. 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다. 정책이 만들어지고 목록에 표시됩니다. 다음으로, 그룹에 정책을 할당합니다.
 
@@ -114,17 +127,18 @@ ms.locfileid: "72306588"
 
 **평가** 단추가 회색으로 표시되면 정책이 하나 이상의 그룹에 할당되었는지 확인합니다.
 
-## <a name="actions-for-noncompliance"></a>비준수에 대한 작업
+<!-- ## Actions for noncompliance
 
-준수 정책을 따르지 않는 디바이스의 경우 자동으로 적용할 작업 시퀀스를 추가할 수 있습니다. 디바이스가 비준수로 표시되면 일정을 변경할 수 있습니다(예: 하루 후). 디바이스가 준수하지 않으면 사용자에게 이메일을 보내는 두 번째 작업을 구성할 수도 있습니다.
+For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
 
-[비규격 디바이스에 대한 작업 추가](actions-for-noncompliance.md)는 사용자에게 알림 이메일을 생성하는 작업을 비롯한 자세한 정보를 제공합니다.
+[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
-예를 들어 위치 기능을 사용하고 규정 준수 정책에서 위치를 추가합니다. 비준수에 대한 기본 작업은 하나 이상의 위치를 선택하는 경우에 적용됩니다. 디바이스가 선택한 위치에 연결되지 않으면 즉시 비준수로 간주됩니다. 사용자에게 하루와 같은 유예 기간을 지정할 수 있습니다.
+For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-## <a name="scope-tags"></a>범위 태그
+## Scope tags
 
-범위 태그는 영업, HR, 모든 US-NC 직원 등과 같은 특정 그룹으로 정책을 할당 및 필터링할 수 있는 좋은 방법입니다. 설정을 추가한 후 준수 정책에 범위 태그를 추가할 수도 있습니다. [범위 태그를 사용하여 정책 필터링](../fundamentals/scope-tags.md)은 좋은 리소스입니다.
+Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+-->
 
 ## <a name="refresh-cycle-times"></a>주기 시간 새로 고침
 

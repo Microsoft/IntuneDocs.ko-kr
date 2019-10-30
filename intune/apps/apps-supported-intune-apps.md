@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 003ce5af-7ee1-43fb-8d16-9d08c7957a85
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5e4d4b3326eda01a1345cd628af31dd66e14533
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724999"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786028"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune 보호 앱  
 
@@ -71,6 +72,7 @@ ms.locfileid: "71724999"
 | **Microsoft Visio Viewer**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | 이동 중에도 iPhone에서 무료로 Visio 다이어그램을 보고 상호 작용할 수 있습니다. Microsoft 계정으로 로그인하거나 이메일에서 Visio 첨부 파일을 열고 iOS 9.0 이상을 실행하는 모든 iPhone에서 Visio 다이어그램의 놀라운 보기를 즐기세요. 또한 Visio가 Windows 데스크톱에 설치되어 있지 않은 경우에도 iPhone 또는 웹 브라우저에서 Visio 다이어그램을 볼 수 있는 모든 사용자와 다이어그램을 공유할 수 있습니다.| [iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | 태블릿과 휴대폰에서 Word 문서가 더 보기 좋게 나타납니다. 문서를 편집하거나 만들면 컴퓨터, Mac, 태블릿 및 휴대폰에서 원하는 방식으로 정확하게 표시됩니다. 직관적인 터치 환경과 더불어 익숙한 Office 모양과 느낌으로 즉시 사용할 수 있습니다.<p><p>이 앱은 Android 및 iOS용 다중 ID 앱으로 사용할 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.office.word),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Microsoft 클라우드 폴더**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | 개별 직원은 Windows Server 기능인 클라우드 폴더를 사용하여 회사 내부 및 외부 환경에서 파일에 안전하게 액세스할 수 있습니다. | [iOS 스토어 링크](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
+| **Microsoft Whiteboard**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | Microsoft Whiteboard 앱은 팀이 클라우드를 통해 시각적으로 관념화하고, 만들고, 협업할 수 있는 자유 형식 인텔리전트 캔버스를 제공합니다.  모든 팀 멤버가 어디서나 실시간으로 캔버스에서 직접 편집하고 댓글을 달 수 있게 하여 팀워크를 강화합니다. 또한 모든 작업은 클라우드에 안전하게 유지되며 모든 디바이스에서 백업을 선택할 수 있습니다. | [iOS 스토어 링크](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yammer**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | Yammer로 조직 사일로를 분석하고 팀 협업을 원활하게 진행합니다. 조직의 적합한 사람에게 연락하고, 팀 간에 정보를 공유 및 검색하며, 프로젝트 및 아이디어를 중심으로 구성하여 더 많은 일을 할 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.yammer.v1),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>파트너 앱 

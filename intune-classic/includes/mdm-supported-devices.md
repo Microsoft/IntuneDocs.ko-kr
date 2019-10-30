@@ -1,16 +1,18 @@
 ---
-ms.openlocfilehash: f7916bc38be085625f5a65d7889212827bcae5d3
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: 748174ded8e8331c032ffd9f3b70b2c09b724f85
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314612"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72601030"
 ---
 ### <a name="apple"></a>Apple
-- Apple iOS 및 iPadOS 9.0 이상
+
+- Apple iOS 및 iPadOS 10.0 이상
 - Mac OS X 10.9 이상
 
 ### <a name="windows"></a>Windows
+
 - Windows 10(Home, Pro, Education 및 Enterprise 버전)을 실행하는 PC
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise(x86, x64)를 실행하는 디바이스
@@ -23,6 +25,7 @@ ms.locfileid: "72314612"
   [Intune 소프트웨어 클라이언트](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)를 사용하면 Windows 7 이상 PC(Windows 10 Home Edition 제외)도 관리할 수 있습니다.
 
 ### <a name="google"></a>Google
+
 - Google Android 4.0 이상(Samsung KNOX Standard 4.0 이상 포함)*
 - Google Android for Work([요구 사항](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 

@@ -6,24 +6,28 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65d9844d7e0e56e46dc6373dfe63ec3e8b18fde3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 32e67ac961f2831a881bc160e19cefdb75723ff0
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722048"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681247"
 ---
 # <a name="integrate-pradeo-mobile-threat-defense-with-intune"></a>Pradeo Mobile Threat Defense와 Intune 통합
 
 Intune과 Pradeo Mobile Threat Defense 솔루션을 통합하려면 다음 단계를 완료하세요.
+
+> [!NOTE]  
+> 이 Mobile Threat Defense 공급업체는 등록되지 않은 디바이스에서 지원되지 않습니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -86,4 +90,4 @@ Pradeo 앱 권한 부여 프로세스는 다음과 같습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Pradeo 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [등록된 디바이스용 Pradeo 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)

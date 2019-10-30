@@ -1,13 +1,14 @@
 ---
 title: Microsoft Intune - Azure에서 인증서 프로필 만들기 | Microsoft Docs
-description: 사용자 디바이스에 대해 SCEP 또는 PKCS 인증서 환경을 구성하여 인증서 프로필을 만들거나 추가하고, 공용 인증서를 내보내고, Azure Portal에서 프로필을 만든 다음, SCEP 또는 PKCS를 Azure Portal의 Microsoft Intune에서 인증서 프로필에 할당합니다
+description: Microsoft Intune을 통해 SCEP(단순 인증서 등록 프로토콜) 또는 PKCS(공개 키 암호 표준) 인증서 및 인증서 프로필을 사용하는 방법에 대해 알아봅니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
@@ -16,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e993df5c37cfed8d5dd0481543b406dd25ad1a49
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 65ced1dfb0fe872129b7437e8dda3dde680b5d07
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251569"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786824"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune의 인증에 인증서 사용  
 
-Intune에서 인증서를 사용하여 VPN, Wi-Fi 또는 메일 프로필을 통해 애플리케이션 및 회사 리소스에서 사용자를 인증합니다. 인증서를 사용하여 이러한 연결을 인증하는 경우 최종 사용자가 사용자 이름과 암호를 입력하지 않아도 되므로 원활하게 액세스할 수 있습니다. S/MIME을 사용하여 메일을 서명 및 암호화하는 데도 인증서가 사용됩니다.
+Intune에서 인증서를 사용하여 VPN, Wi-Fi 또는 메일 프로필을 통해 애플리케이션 및 회사 리소스에서 사용자를 인증합니다. 인증서를 사용하여 해당 연결을 인증하는 경우 최종 사용자가 사용자 이름과 암호를 입력하지 않아도 되므로 원활하게 액세스할 수 있습니다. S/MIME을 사용하여 메일을 서명 및 암호화하는 데도 인증서가 사용됩니다.
 
 ## <a name="intune-supported-certificates-and-usage"></a>Intune에서 지원하는 인증서 및 용도
 | 유형              | 인증 | S/MIME 서명 | S/MIME 암호화  |
 |--|--|--|--|
-| PKCS 가져온 인증서 |  | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png)|
+| PKCS(공개 키 암호화 표준)에 따라 가져온 인증서 |  | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png)|
 | PKCS #12(또는 PFX)    | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |  |
 | SCEP(단순 인증서 등록 프로토콜)  | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | |
 
@@ -43,9 +44,9 @@ Intune에서 인증서를 사용하여 VPN, Wi-Fi 또는 메일 프로필을 통
 - Microsoft Active Directory 인증서 서비스를 사용하여 SCEP 인증서 프로필을 사용하는 경우 NDES(네트워크 디바이스 등록 서비스) 서버를 구성합니다.
 - 인증 기관 파트너 중 하나에서 SCEP를 사용하는 경우 [Intune과 연결](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration)해야 합니다.
 - SCEP 및 PKCS 인증서 프로필을 사용하려면 둘 다 Microsoft Intune Certificate Connector를 다운로드, 설치 및 구성해야 합니다. 
-- PCKS 가져온 인증서를 사용하려면 Microsoft Intune용 PFX Certificate Connector를 다운로드, 설치 및 구성해야 합니다.
+- PKCS에 따라 가져온 인증서를 사용하려면 Microsoft Intune용 PFX Certificate Connector를 다운로드, 설치 및 구성해야 합니다.
 - PKCS 가져온 인증서를 사용하려면 인증 기관에서 인증서를 내보내고, Microsoft Intune으로 가져와야 합니다. [PFXImport PowerShell 프로젝트](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)를 참조하세요.
-- 디바이스에서 SCEP, PCKS 또는 PKCS 가져온 인증서 프로필을 사용하려면 해당 디바이스가 루트 인증 기관을 신뢰해야 합니다. *신뢰할 수 있는 인증서 프로필*을 사용하여 신뢰할 수 있는 루트 CA 인증서를 디바이스에 배포합니다.  
+- 디바이스에서 SCEP, PKCS 또는 PKCS 가져온 인증서 프로필을 사용하려면 해당 디바이스가 루트 인증 기관을 신뢰해야 합니다. *신뢰할 수 있는 인증서 프로필*을 사용하여 신뢰할 수 있는 루트 CA 인증서를 디바이스에 배포합니다.  
 
 ## <a name="supported-platforms-and-certificate-profiles"></a>지원되는 플랫폼 및 인증서 프로필  
 | 플랫폼              | 신뢰할 수 있는 인증서 프로필 | PKCS 인증서 프로필 | SCEP 인증서 프로필 | PKCS 가져온 인증서 프로필  |
@@ -55,22 +56,22 @@ Intune에서 인증서를 사용하여 VPN, Wi-Fi 또는 메일 프로필을 통
 | Android Enterprise <br> - 전용(장치 소유자)   |  |   |  |   |
 | Android Enterprise <br> - 회사 프로필    | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |
 | iOS                   | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |
-| macOS                 | ![지원됨](./media/certificates-configure/green-check.png) |   |![지원됨](./media/certificates-configure/green-check.png)|![지원됨](./media/certificates-configure/green-check.png)|
+| macOS                 | ![지원됨](./media/certificates-configure/green-check.png) |  ![지원됨](./media/certificates-configure/green-check.png) |![지원됨](./media/certificates-configure/green-check.png)|![지원됨](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![지원됨](./media/certificates-configure/green-check.png)  |  | ![지원됨](./media/certificates-configure/green-check.png)| ![지원됨](./media/certificates-configure/green-check.png) |
 | Windows 8.1 이상 |![지원됨](./media/certificates-configure/green-check.png)  |  |![지원됨](./media/certificates-configure/green-check.png) |   |
 | Windows 10 이상  | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |
 
 ## <a name="export-the-trusted-root-ca-certificate"></a>신뢰할 수 있는 루트 CA 인증서 내보내기  
-PKCS, SCEP 및 PKCS 가져온 인증서를 사용하려면 디바이스가 루트 인증 기관을 신뢰해야 합니다. 이 트러스트를 설정하기 위해 신뢰할 수 있는 루트 CA(인증 기관) 인증서 뿐만 아니라 중간 또는 발급 인증 기관 인증서를 공용 인증서(.cer)로서 내보냅니다. 발급 CA 또는 발급 CA를 신뢰하는 디바이스에서 이러한 인증서를 가져올 수 있습니다.  
+PKCS, SCEP 및 PKCS 가져온 인증서를 사용하려면 디바이스가 루트 인증 기관을 신뢰해야 합니다. 트러스트를 설정하기 위해 신뢰할 수 있는 루트 CA(인증 기관) 인증서뿐만 아니라 중간 또는 발급 인증 기관 인증서를 공용 인증서(.cer)로서 내보냅니다. 발급 CA 또는 발급 CA를 신뢰하는 디바이스에서 이러한 인증서를 가져올 수 있습니다.  
 
 인증서를 내보내려면 인증 기관에 대한 설명서를 참조하세요. 공용 인증서를 .cer 파일로 내보내야 합니다.  프라이빗 키인 .pfx 파일은 내보내지 마세요.  
 
 해당 인증서를 디바이스에 배포하기 위해 [신뢰할 수 있는 인증서 프로필을 만들 때는 ](#create-trusted-certificate-profiles) 이 .cer 파일을 사용합니다.  
 
 ## <a name="create-trusted-certificate-profiles"></a>신뢰할 수 있는 인증서 프로필 만들기  
-SCEP, PKCS 또는 PKCS 가져온 인증서 프로필을 만들려면 먼저 신뢰할 수 있는 인증서 프로필을 만듭니다. 신뢰할 수 있는 인증서 프로필을 배포하면 각 디바이스가 CA의 합법성을 인정합니다. SCEP 인증서 프로필은 신뢰할 수 있는 인증서 프로필을 직접 참조합니다. PKCS 인증서 프로필은 신뢰할 수 있는 인증서 프로필을 직접 참조하지 않고, CA를 호스트하는 서버를 직접 참조합니다. PKCS 가져온 인증서 프로필은 신뢰할 수 있는 인증서 프로필을 직접 참조하지 않고, 디바이스에서 이 프로필을 활용할 수 있습니다. 디바이스에 신뢰할 수 있는 인증서 프로필을 배포하면 이 트러스트가 설정됩니다. 디바이스에서 루트 CA를 신뢰하지 않는 경우 SCEP 또는 PKCS 인증서 프로필 정책이 실패합니다.  
+SCEP, PKCS 또는 PKCS 가져온 인증서 프로필을 만들려면 먼저 신뢰할 수 있는 인증서 프로필을 만듭니다. 신뢰할 수 있는 인증서 프로필을 배포하면 각 디바이스가 CA의 합법성을 인정합니다. SCEP 인증서 프로필은 신뢰할 수 있는 인증서 프로필을 직접 참조합니다. PKCS 인증서 프로필은 신뢰할 수 있는 인증서 프로필을 직접 참조하지 않고, CA를 호스트하는 서버를 직접 참조합니다. PKCS 가져온 인증서 프로필은 신뢰할 수 있는 인증서 프로필을 직접 참조하지 않고, 디바이스에서 이 프로필을 사용할 수 있습니다. 디바이스에 신뢰할 수 있는 인증서 프로필을 배포하면 이 트러스트가 설정됩니다. 디바이스에서 루트 CA를 신뢰하지 않는 경우 SCEP 또는 PKCS 인증서 프로필 정책이 실패합니다.  
 
-SCEP, PCKS 및 PKCS 가져온 인증서 프로필의 경우처럼 지원하려는 각 디바이스 플랫폼에 대해 별도의 신뢰할 수 있는 인증서 프로필을 만듭니다.  
+SCEP, PKCS 및 PKCS 가져온 인증서 프로필의 경우처럼 지원하려는 각 디바이스 플랫폼에 대해 별도의 신뢰할 수 있는 인증서 프로필을 만듭니다.  
 
 
 ### <a name="to-create-a-trusted-certificate-profile"></a>신뢰할 수 있는 인증서 프로필을 만들려면  
@@ -86,7 +87,7 @@ SCEP, PCKS 및 PKCS 가져온 인증서 프로필의 경우처럼 지원하려�
    - **컴퓨터 인증서 저장소 - 중간**
    - **사용자 인증서 저장소 - 중간**
 8. 작업이 완료되면 **확인**을 선택하고 **프로필 만들기** 창으로 돌아와서 **만들기**를 선택합니다.
-프로필은 *디바이스 구성 - 프로필* 보기 창의 프로필 목록에 나타나며, 프로필 유형은 **신뢰할 수 있는 인증서**입니다.  SCEP 또는 PCKS 인증서를 사용하는 디바이스에 이 프로필을 할당해야 합니다. 이 프로필을 그룹에 할당하려면 [디바이스 프로필 할당](../configuration/device-profile-assign.md)을 참조하세요.
+프로필은 *디바이스 구성 - 프로필* 보기 창의 프로필 목록에 나타나며, 프로필 유형은 **신뢰할 수 있는 인증서**입니다.  SCEP 또는 PKCS 인증서를 사용하는 디바이스에 이 프로필을 할당해야 합니다. 이 프로필을 그룹에 할당하려면 [디바이스 프로필 할당](../configuration/device-profile-assign.md)을 참조하세요.
 
 > [!NOTE]  
 > Android 디바이스에 제3자가 신뢰할 수 있는 인증서를 설치했다는 메시지가 표시될 수 있습니다.  
@@ -97,7 +98,7 @@ SCEP, PCKS 및 PKCS 가져온 인증서 프로필의 경우처럼 지원하려�
 - [타사 인증 기관 사용](certificate-authority-add-scep-overview.md)  
 
 ## <a name="next-steps"></a>다음 단계  
-신뢰할 수 있는 인증서 프로필을 만들고 할당한 후에는 사용하려는 각 플랫폼용으로 SCEP, PKCS 또는 PKCS 가져온 인증서 프로필을 만듭니다. 계속하려면 다음 문서를 참조하세요.  
+사용하려는 각 플랫폼용으로 SCEP, PKCS 또는 PKCS 가져온 인증서 프로필을 만듭니다. 계속하려면 다음 문서를 참조하세요.  
 - [Intune을 사용하여 SCEP 인증서를 지원하도록 인프라 구성](certificates-scep-configure.md)  
 - [Intune을 사용하여 PKCS 인증서 구성 및 관리](certficates-pfx-configure.md)  
 - [PKCS 가져온 인증서 프로필 만들기](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  

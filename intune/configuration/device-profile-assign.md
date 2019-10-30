@@ -5,9 +5,10 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237204"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550812"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 사용자 및 디바이스 프로필 할당
 
@@ -33,6 +34,10 @@ ms.locfileid: "72237204"
 
 > [!NOTE]  
 > 정책이 제거되거나 더 이상 디바이스에 할당되지 않을 때 설정이 기존 값을 유지할 수도 있습니다. 설정은 기본값으로 되돌아가지 않습니다. 설정을 다른 값으로 변경하려면 새 정책을 만들고 할당합니다.
+
+## <a name="before-you-begin"></a>시작하기 전에
+
+정책을 할당하려면 적절한 역할이 있어야 합니다. 자세한 내용은 [Microsoft Intune을 통한 RBAC(역할 기반 액세스 제어)](../fundamentals/role-based-access-control.md)를 참조하세요.
 
 ## <a name="assign-a-device-profile"></a>디바이스 프로필 할당
 

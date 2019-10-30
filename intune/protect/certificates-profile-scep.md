@@ -5,10 +5,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
-ms.topic: article
-ms.prod: ''
+ms.date: 10/18/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e6b9f7d6aeda219af0f0cf3d0f5c34a3f03d258
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722893"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585427"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune에서 SCEP 인증서 프로필 만들기 및 할당
 
@@ -50,7 +50,7 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
 
    2. 모니터링에서는 디바이스 소유자 SCEP 인증서 프로필에 대해 인증서 보고를 사용할 수 없습니다.
    
-   3. 디바이스 소유자용 SCEP 인증서 프로필로 프로비저닝되는 인증서의 해지는 Intune을 통해 지원되지 않지만, 외부 프로세스를 통하거나 인증 기관에서 직접 관리할 수 있습니다.
+   3. Intune을 사용하여 디바이스 소유자의 SCEP 인증서 프로필을 통해 프로비저닝된 인증서를 해지할 수 없습니다. 외부 프로세스를 통해 또는 인증 기관에서 직접 해지를 관리할 수 있습니다. 
 
 6. **설정**을 선택하고 다음 구성을 완료합니다.
 
@@ -113,15 +113,13 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** *(Windows 및 도메인 가입 디바이스에만 적용됨)*
         - **{{MEID}}**
-        
+
         텍스트 상자에서 이러한 변수와 변수 텍스트를 차례로 지정할 수 있습니다. 예를 들어, *Device1*이라는 디바이스의 일반 이름을 **CN={{DeviceName}}Device1**으로 추가할 수 있습니다.
 
         > [!IMPORTANT]  
         > - 변수를 지정하는 경우 오류를 방지하기 위해 예제에 표시된 대로 변수 이름을 중괄호 { }로 묶습니다.  
         > - **IMEI**, **SerialNumber** 및 **FullyQualifiedDomainName**과 같이 디바이스 인증서의 *주체* 또는 *SAN*에 사용되는 디바이스 속성은 디바이스에 대해 액세스 권한이 있는 사람이 스푸핑할 수 있는 속성입니다.
         > - 디바이스는 해당 디바이스에 설치할 해당 프로필의 인증서 프로필에 지정된 모든 변수를 지원해야 합니다.  예를 들어, SCEP 프로필의 주체 이름에 **{{IMEI}}** 가 사용되며 IMEI 번호가 없는 디바이스에 할당된 경우 프로필을 설치하지 못합니다.  
- 
-
 
    - **주체 대체 이름**:  
      인증서 요청 시 Intune에서 SAN(주체 대체 이름)을 자동으로 만드는 방식을 선택합니다. SAN에 대한 옵션은 **사용자** 또는 **디바이스** 중에서 선택하는 인증서 유형에 따라 달라집니다.  
@@ -198,7 +196,7 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
      인증서의 용도에 대한 값을 추가합니다. 대부분의 경우 인증서는 사용자 또는 디바이스가 서버에 인증할 수 있도록 *클라이언트 인증*이 필요합니다. 필요에 따라 다른 키 사용을 추가할 수 있습니다.
 
    - **갱신 임계값(%)** :  
-     디바이스에서 인증서 갱신을 요청하기 전까지 남은 인증서 수명을 백분율로 입력합니다. 예를 들어, 20을 입력하면 인증서 갱신은 인증서가 80% 만료될 때 시도되며 갱신에 성공할 때까지 계속 시도됩니다. 갱신되면 새 인증서가 생성되어 새 퍼블릭/프라이빗 키 쌍이 생성됩니다.
+     디바이스에서 인증서 갱신을 요청하기 전까지 남은 인증서 수명을 백분율로 입력합니다. 예를 들어 20을 입력하면 인증서가 80% 만료될 때 인증서 갱신이 시도됩니다. 갱신 시도는 갱신이 완료될 때까지 계속됩니다. 갱신되면 새 인증서가 생성되어 새 퍼블릭/프라이빗 키 쌍이 생성됩니다.
 
    - **SCEP 서버 URL**:  
      SCEP를 통해 인증서를 발급하는 NDES 서버의 URL을 하나 이상 입력합니다. 예를 들어 *https://ndes.contoso.com/certsrv/mscep/mscep.dll* 과 같이 입력합니다. URL이 이 프로필을 사용하여 디바이스에 무작위로 푸시되는 경우 필요에 따라 부하 분산을 위해 다른 SCEP URL을 추가할 수 있습니다. SCEP 서버 중 하나를 사용할 수 없는 경우 SCEP 요청은 실패하며 후속 디바이스 체크 인에서 가동 중지된 동일한 서버에 대해 인증서 요청이 수행될 수 있습니다.
@@ -206,7 +204,7 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
 7. **확인**을 선택하고 **만들기**를 선택합니다. 프로필이 만들어지고 *디바이스 구성 - 프로필* 목록에 나타납니다.
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>이스케이프된 특수 문자를 사용하여 인증서 서명 요청 방지
-다음 특수 문자 중 하나 이상이 이스케이프 문자로 들어 있는 CN(주체 이름)이 포함된 SCEP 인증서 요청에 대해 알려진 문제가 있습니다. 주체 이름에 특수 문자 중 하나를 이스케이프 문자로 포함하면 CSR의 주체 이름이 올바르지 않게 되며, 이로 인해 Intune SCEP 챌린지 유효성 검사가 실패하고 인증서가 발급되지 않습니다.  
+다음 특수 문자 중 하나 이상이 이스케이프 문자로 들어 있는 CN(주체 이름)이 포함된 SCEP 및 PKCS 인증서 요청에 대해 알려진 문제가 있습니다. 주체 이름에 특수 문자 중 하나를 이스케이프 문자로 포함하면 CSR의 주체 이름이 올바르지 않게 됩니다. 잘못된 주체 이름으로 인해 Intune SCEP 챌린지 유효성 검사가 실패하고 인증서가 발급되지 않습니다.
 
 특수 문자는 다음과 같습니다.
 - \+

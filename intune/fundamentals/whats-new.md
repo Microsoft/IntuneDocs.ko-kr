@@ -6,9 +6,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/23/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571974e1736fb78ae633c02fcfd6e6233056379b
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71920142"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786140"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -50,8 +51,170 @@ ms.locfileid: "71920142"
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
-
 -->  
+
+
+<!-- ########################## -->
+
+## <a name="week-of-october-21-2019"></a>2019년 10월 21일이 있는 주
+
+### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>Windows 10 이상 디바이스용 새 디바이스 펌웨어 구성 인터페이스 프로필 <!-- 2266073 idready wnready -->
+
+Windows 10 이상에서는 디바이스 구성 프로필을 만들어 설정 및 기능을 제어할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼용 **Windows 10 이상**). 이 업데이트에는 Intune에서 UEFI(BIOS) 설정을 관리하는 데 사용되는 새 디바이스 펌웨어 구성 인터페이스 프로필 유형이 있습니다.
+
+이 기능에 대한 자세한 내용은 [Microsoft Intune에서 Windows 디바이스의 DFCI 프로필 사용](../configuration/device-firmware-configuration-interface-windows.md)을 참조하세요.
+
+적용 대상:
+
+- 지원되는 펌웨어의 Windows 10 RS5(1809) 이상
+
+## <a name="week-of-october-14-2019"></a>2019년 10월 14일이 있는 주
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>앱 관리 
+
+#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956-----"></a>Android 작업 프로필에 사용할 수 있는 Google Play 앱 보고 <!-- 3041956   -->
+Android Enterprise 회사 프로필, 전용 및 완전 관리형 디바이스에서 사용할 수 있는 앱 설치의 경우 앱 설치 상태와 관리형 Google Play 앱의 설치된 버전을 확인할 수 있습니다. 자세한 정보는 [앱 보호 정책 모니터링 방법](~/apps/app-protection-policies-monitor.md), [Intune으로 Android 작업 프로필 디바이스 관리](~/enrollment/android-enterprise-overview.md) 및 [관리형 Google Play 앱 형식](~/apps/apps-add-android-for-work.md#managed-google-play-app-types)을 참조하세요.
+
+#### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Windows 10 및 macOS용 Microsoft Edge 버전 77 이상(공개 미리 보기) <!-- 3872025, 4678761  -->
+이제 Windows 10 및 macOS를 실행하는 PC에 Microsoft Edge 버전 77 이상을 배포할 수 있습니다. 공개 미리 보기는 Windows 10의 **개발** 및 **베타** 채널과 macOS의 **베타** 채널을 제공합니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. 또한 브라우저의 자동 업데이트는 기본적으로 **켜지고** Microsoft Edge는 제거할 수 없습니다. 자세한 내용은 [Microsoft Intune에 Windows 10용 Microsoft Edge 추가](~/apps/apps-windows-edge.md) 및 [Microsoft Edge 설명서](https://go.microsoft.com/fwlink/?linkid=2103823)를 참조하세요.
+
+#### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>앱 보호 UI 및 iOS 앱 프로비저닝 UI 업데이트 <!-- 4102027, 4102029   -->
+Intune에서 앱 보호 정책 및 iOS 앱 프로비저닝 프로필을 만들고 편집하는 UI가 업데이트되었습니다. UI 변경 사항에는 다음이 포함됩니다.
+- 하나의 블레이드 내에 압축된 마법사 스타일 형식을 사용하여 간소화된 환경 
+- 할당을 포함하는 만들기 흐름에 대한 업데이트
+- 속성을 볼 때, 새 정책을 만들기 전에 또는 속성을 편집할 때 설정된 모든 항목의 요약된 페이지 또한 속성을 편집할 때 요약에는 편집 중인 속성 범주의 항목 목록만 표시됩니다.
+
+자세한 내용은 [앱 보호 정책을 만들고 할당하는 방법](~/apps/app-protection-policies.md) 및 [iOS 앱 프로비저닝 프로필 사용](~/apps/app-provisioning-profile-ios.md)을 참조하세요.
+
+#### <a name="intune-guided-scenarios----4850318-4831296-3610611----"></a>Intune 단계별 시나리오 <!-- 4850318, 4831296, 3610611  -->
+이제 intune은 Intune 내에서 특정 작업 또는 작업 세트를 완료하는 데 도움이 되는 단계별 시나리오를 제공합니다. 단계별 시나리오는 하나의 포괄적인 사용 사례를 중심으로 하는 일련의 사용자 지정된 단계(워크플로)입니다. 일반적인 시나리오는 조직에서 관리자, 사용자 또는 디바이스가 수행하는 역할을 기반으로 정의됩니다. 일반적으로 이 워크플로에는 최상의 사용자 환경 및 보안을 제공하기 위해 신중하게 오케스트레이션된 프로필, 설정, 애플리케이션 및 보안 컨트롤 컬렉션이 필요합니다. 새로운 단계별 시나리오는 다음과 같습니다.
+- [모바일용 Microsoft Edge 배포](~/fundamentals/guided-scenarios-edge.md)
+- [보안 Microsoft Office 모바일 앱](~/fundamentals/guided-scenarios-office-mobile.md) 
+- [클라우드 관리 Modern Desktop](~/fundamentals/guided-scenarios-cloud-managed-pc.md)
+
+자세한 내용은 [Intune 단계별 시나리오 개요](guided-scenarios-overview.md)를 참조하세요.
+
+#### <a name="additional-app-configuration-variable-available----4969237-----"></a>사용 가능한 추가 앱 구성 변수 <!-- 4969237   -->
+앱 구성 정책을 만들 때 구성 설정의 일부로 `AAD Device ID` 구성 변수를 포함할 수 있습니다. Intune에서 **클라이언트 앱** > **앱 구성 정책** > **추가**를 선택합니다. 구성 정책 세부 정보를 입력하고 **구성 설정**을 선택하여 **구성 설정** 블레이드를 표시합니다. 자세한 내용은 [관리형 Android Enterprise 디바이스의 앱 구성 정책 - 구성 디자이너 사용](~/apps/app-configuration-policies-use-android.md#use-the-configuration-designer)을 참조하세요.
+
+
+#### <a name="create-groups-of-management-objects-called-policy-sets----3762880----"></a>정책 세트라는 관리 개체 그룹 만들기 <!-- 3762880  -->
+정책 세트를 사용하면 단일 개념 단위로 식별, 대상 지정 및 모니터링해야 하는 기존 관리 엔터티에 대한 참조 번들을 만들 수 있습니다. 정책 세트는 기존 개념 또는 개체를 대체하지 않습니다. Intune에서 개별 개체를 계속 할당할 수 있으며 정책 세트의 일부로 개별 개체를 참조할 수 있습니다. 따라서 해당 개별 개체의 모든 변경 내용이 정책 세트에 반영됩니다.  Intune에서 **정책 설정** > **만들기**를 선택하여 새 정책 세트를 만듭니다. 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>디바이스 구성
+
+#### <a name="ui-update-for-creating-and-editing-windows-10-update-rings-----4099089-----------"></a>Windows 10 업데이트 링을 만들고 편집하기 위한 UI 업데이트  <!-- 4099089         -->
+Intune용 [Windows 10 업데이트 링을 만들고 편집](../protect/windows-update-for-business-configure.md#create-and-assign-update-rings)하기 위한 UI 환경을 업데이트했습니다. UI 변경 내용은 다음과 같습니다.  
+- 단일 콘솔 블레이드로 압축된 마법사 스타일 형식으로, 이전에 업데이트 링을 구성할 때 표시된 블레이드 확장이 제거됩니다.   
+- 수정된 워크플로에는 링의 초기 구성을 완료하기 전 할당이 포함됩니다.
+- 새 업데이트 링을 저장하고 배포하기 전에 만든 모든 구성을 검토하는 데 사용할 수 있는 요약 페이지입니다. 업데이트 링을 편집할 때 요약에는 편집한 속성 범주 내에 설정된 항목 목록만 표시됩니다.
+
+#### <a name="ui-update-for-creating-and-editing-ios-software-update-policy-----4099090---------"></a>iOS 소프트웨어 업데이트 정책을 만들고 편집하기 위한 UI 업데이트  <!-- 4099090       --> 
+Intune에 대한 iOS 소프트웨어 업데이트 정책을 [만들고](../protect/software-updates-ios.md#configure-the-policy) [편집](../protect/software-updates-ios.md#edit-a-policy)하기 위한 UI 환경을 업데이트했습니다.  UI 변경 내용은 다음과 같습니다.  
+- 단일 콘솔 블레이드로 압축된 마법사 스타일 형식으로, 이전에 업데이트 정책을 구성할 때 표시된 블레이드 확장이 제거됩니다.   
+- 수정된 워크플로에는 정책의 초기 구성을 완료하기 전 할당이 포함됩니다.
+- 새 정책을 저장하고 배포하기 전에 만든 모든 구성을 검토하는 데 사용할 수 있는 요약 페이지입니다. 정책을 편집할 때 요약에는 편집한 속성 범주 내에 설정된 항목 목록만 표시됩니다.
+
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings------4464404---wnready-----"></a>Windows 업데이트 링의 개입형 다시 시작 설정이 제거됨  <!--  4464404   WNReady   -->
+이전에 발표한 대로, 이제 Intune의 Windows 10 업데이트 링은 [최종 기한 설정을 지원](../protect/windows-update-settings.md)하며 더 이상 ‘개입형 다시 시작’을 지원하지 않습니다.  Intune에서 업데이트 링을 구성하거나 관리하는 경우 ‘개입형 다시 시작’ 설정을 더 이상 사용할 수 없습니다.   
+
+이 변경 내용은 최근 [Windows 서비스 변경 내용](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing)에 맞게 조정되며 Windows 10 1903 이상을 실행하는 디바이스에서는 ‘기한’이 ‘개입형 다시 시작’의 구성을 대체합니다.  
+
+#### <a name="prevent-installation-of-apps-from-unknown-sources-on-android-enterprise-work-profile-devices----4760025-----"></a>Android Enterprise 회사 프로필 디바이스에서 알 수 없는 출처의 앱 설치 방지 <!-- 4760025   -->
+Android Enterprise 회사 프로필 디바이스에서는 사용자가 알 수 없는 출처의 앱을 설치할 수 없습니다. 이 업데이트에는 **개인 프로필에서 알 수 없는 출처의 앱 설치 방지**라는 새 설정이 있습니다. 기본적으로 이 설정은 사용자가 알 수 없는 출처의 앱을 디바이스의 개인 프로필에 테스트용으로 로드하지 못하도록 합니다.
+
+구성할 수 있는 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정](../configuration/device-restrictions-android-for-work.md)으로 이동합니다.
+
+적용 대상:
+- Android Enterprise 회사 프로필
+
+#### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339-----"></a>Android Enterprise 디바이스 소유자 디바이스에서 전역 HTTP 프록시 만들기 <!-- 4816339   -->
+Android Enterprise 디바이스에서 조직의 웹 검색 표준을 충족하도록 전역 HTTP 프록시를 구성할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼용 **Android Enterprise** > **디바이스 소유자 > 프로필 유형의 디바이스 제한** > **연결**). 구성된 후에는 모든 HTTP 트래픽이 이 프록시를 사용합니다.
+
+이 기능을 구성하고 구성하는 모든 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정](../configuration/device-restrictions-android-for-work.md)으로 이동합니다.
+
+적용 대상:
+- Android Enterprise 디바이스 소유자
+
+#### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise----5021055-----"></a>Android 디바이스 관리자 및 Android Enterprise의 Wi-Fi 프로필에서 자동으로 연결 설정이 제거됨 <!-- 5021055   -->
+Android 디바이스 관리자 및 Android Enterprise 디바이스에서는 Wi-Fi 프로필을 만들어 다양한 설정을 구성할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼용 **Android 디바이스 관리자** 또는 **Android Enterprise** > 프로필 유형용 **Wi-Fi**). 이 업데이트에서 **자동으로 연결** 설정은 [Android에서 지원되지 않으므로](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29) 제거되었습니다. 
+
+Wi-Fi 프로필에서 이 설정을 사용하는 경우 **자동으로 연결**이 작동하지 않는다는 것을 알 수 있습니다. 어떤 작업도 수행할 필요가 없지만 이 설정은 Intune 사용자 인터페이스에서 제거됩니다.
+
+현재 설정을 확인하려면 [Android Wi-Fi 설정](../configuration/wi-fi-settings-android.md) 또는 [Android Enterprise Wi-Fi 설정](../configuration/wi-fi-settings-android-enterprise.md)으로 이동합니다.
+
+적용 대상:
+- Android 디바이스 관리자 
+- Android Enterprise
+
+
+#### <a name="new-device-configuration-settings-for-supervised-ios-and-ipados-devices----5199328-----"></a>감독 모드 iOS 및 iPadOS 디바이스의 새 디바이스 구성 설정 <!-- 5199328   -->
+iOS 및 iPadOS 디바이스에서는 프로필을 만들어 디바이스의 기능 및 설정을 제한할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼용 **iOS/iPadOS** > 프로필 유형별 **디바이스 제한**). 이 업데이트에는 제어할 수 있는 새로운 설정은 다음과 같습니다. 
+- Files 앱에서 네트워크 드라이브에 액세스  
+- Files 앱에서 USB 드라이브에 액세스 
+- Wi-Fi 항상 켜짐 
+
+설정을 확인하려면 [Intune을 사용하여 기능을 허용하거나 제한하는 iOS 디바이스 설정](../configuration/device-restrictions-ios.md)으로 이동합니다.
+
+적용 대상:
+- iOS 13.0 이상
+- iPadOS 13.0 이상
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>디바이스 등록
+
+#### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment----4350697-----"></a>회사 프로필 또는 디바이스 관리자 등록에 등록되는 Android 디바이스 운영 체제 버전 지정 <!-- 4350697   -->
+Intune 디바이스 유형 제한을 사용하면 디바이스의 OS 버전을 사용하여 Android Enterprise 회사 프로필 등록 또는 Android 디바이스 관리자 등록을 사용할 사용자 디바이스를 지정할 수 있습니다.  자세한 내용은 [등록 제한 설정](../enrollment/enrollment-restrictions-set.md)을 참조하세요.
+
+#### <a name="windows-autopilot-deployment-reports----3856172---"></a>Windows AutoPilot 배포 보고서 <!-- 3856172 -->
+새 보고서는 Windows Autopilot을 통해 배포된 각 디바이스에 대해 자세히 설명합니다. 자세한 내용은 [Autopilot 배포 보고서](../enrollment/enrollment-autopilot.md#autopilot-deployments-report)를 참조하세요. Microsoft는 모든 고객에게 이 기능을 롤아웃하고 있으며, 다음 주 말이면 해당 과정이 완료된 것으로 예상합니다.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>디바이스 관리
+
+#### <a name="new-restrictions-for-renaming-windows-devices----3478938----"></a>Windows 디바이스 이름 바꾸기에 대한 새로운 제한 <!-- 3478938  -->
+Windows 디바이스 이름을 바꾸는 경우 새 규칙을 따라야 합니다.
+- 15자 이하(63바이트보다 작거나 같아야 함, 후행 NULL을 포함하지 않음)
+- null 또는 빈 문자열이 아님
+- 허용된 ASCII: 문자(a-z, A-Z), 숫자(0-9) 및 하이픈
+- 허용된 유니코드: 문자 >= 0x80, 유효한 UTF8이어야 함, IDN 매핑 가능해야 함(RtlIdnToNameprepUnicode가 성공함, RFC 3492 참조)
+- 이름에 숫자만 포함할 수는 없음
+- 이름에 공백이 없음
+- 허용되지 않는 문자: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
+
+ 자세한 내용은 [Intune에서 디바이스 이름 바꾸기](../remote-actions/device-rename.md)를 참조하세요.
+
+### <a name="new-android-report-on-devices-overview-page----4924364---"></a>디바이스 개요 페이지의 새 Android 보고서 <!-- 4924364 -->
+디바이스 개요 페이지에 대한 새 보고서에는 각 장치 관리 솔루션에 등록된 Android 디바이스 수가 표시됩니다. 이 차트에는 회사 프로필, 완전 관리형, 전용 및 디바이스 관리자 등록 디바이스 수가 표시됩니다. 보고서를 보려면 **Intune** > **디바이스** > **개요**를 선택합니다.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>디바이스 보안 
+
+#### <a name="pkcs-certificates-for-macos-----1333650---------"></a>macOS의 PKCS 인증서  <!-- 1333650       -->
+이제 [macOS에서 PKCS 인증서를 사용](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)할 수 있습니다. macOS의 프로필 유형으로 PKCS 인증서를 선택하고 [사용자 지정된 주체 및 주체 대체 이름 필드](../protect/certficates-pfx-configure.md#subject-name-format-for-macos)가 있는 사용자 및 디바이스 인증서를 배포할 수 있습니다.  
+
+도한 macOS용 PKCS 인증서는 새로운 설정인 _모든 앱 액세스 허용_을 지원합니다. 이 설정을 사용하면 연결된 모든 앱이 인증서의 프라이빗 키에 액세스하도록 설정할 수 있습니다.  이 설정에 대한 자세한 내용은 https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf 에서 Apple 설명서를 참조하세요.
+
+####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----------1736036-1736037-1772050-2777333-----------"></a>인증서를 사용하여 iOS 모바일 디바이스를 프로비저닝하기 위한 파생 자격 증명      <!--  1736036, 1736037, 1772050, 2777333         -->  
+Intune에서는 iOS 디바이스의 S/MIME 서명 및 암호화를 위해 인증 방법으로 [파생 자격 증명](../protect/derived-credentials.md) 사용을 지원합니다. 파생 자격 증명은 디바이스에 인증서를 배포하기 위한 *NIST(National Institute of Standards and Technology) 800-157* 표준의 구현입니다.  
+
+파생 자격 증명은 스마트 카드와 같은 PIV(Personal Identity Verification) 또는 CAC(Common Access Card) 카드의 사용을 기반으로 합니다. 모바일 디바이스의 파생 자격 증명을 가져오기 위해 사용자는 회사 포털 앱에서 시작하고 사용하는 공급자에 고유한 등록 워크플로를 따릅니다.  컴퓨터에서 스마트 카드를 사용하여 파생 자격 증명 공급자를 인증하는 것은 모든 공급자에 공통적인 요구 사항입니다. 해당 공급자는 사용자의 스마트 카드에서 파생된 디바이스에 대한 인증서를 발급합니다.  
+
+Intune에서 지원하는 파생 자격 증명 공급자는 다음과 같습니다.   
+- DISA Purebred
+- Entrust Datacard
+- Intercede
+
+VPN, Wi-Fi 및 메일에 대한 디바이스 구성 프로필의 인증 방법으로 파생 자격 증명을 사용합니다. 앱 인증과 S/MIME 서명 및 암호화에도 사용할 수 있습니다.  
+
+표준에 대한 자세한 내용은 www.nccoe.nist.gov에서 [Derived PIV Credentials](https://www.nccoe.nist.gov/projects/building-blocks/piv-credentials)(파생된 PIV 자격 증명)를 참조하세요.
+
+#### <a name="use-graph-api-to-specify-a-on-premises-user-principal-name-as-a-variable-for-scep-certificates--------5437939----------"></a>Graph API를 사용하여 온-프레미스 사용자 계정 이름을 SCEP 인증서의 변수로 지정합니다.    <!--  5437939        -->  
+[Intune Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)를 사용하는 경우 SCEP 인증서의 SAN(주체 대체 이름)에 대한 변수로 onPremisesUserPrincipalName을 지정할 수 있습니다.
+
+
 
 <!-- ########################## -->
 
@@ -367,7 +530,7 @@ macOS 디바이스에서 기능을 사용하도록 설정하고 구성할 수 �
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>최종 기한이 Windows 업데이트 링의 개입형 다시 시작 설정 대체   <!-- 4464404        -->
 최신 [Windows 서비스 변경 내용](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)과 맞추기 위해 이제 Intune의 Windows 10 업데이트 링에서 [최종 기한에 대한 설정을 지원](../protect/windows-update-settings.md)합니다. ‘최종 기한’은 디바이스에서 기능 및 보안 업데이트를 설치하는 시기를 결정합니다.   Windows 10 1903 이상이 실행되는 디바이스에서 ‘최종 기한’은 ‘개입형 다시 시작’에 대한 구성을 대체합니다.    나중에 ‘최종 기한’은 이전 버전의 Windows 10에서도 ‘개입형 다시 시작’을 대체하게 됩니다.    
 
-‘최종 기한’을 구성하지 않으면 디바이스에서 ‘개입형 다시 시작’ 설정을 계속 사용하지만 향후 업데이트에서 [Intune은 개입형 다시 시작 설정을 더 이상 지원하지 않습니다](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-).    
+‘최종 기한’을 구성하지 않으면 디바이스에서 ‘개입형 다시 시작’ 설정을 계속 사용하지만 향후 업데이트에서 Intune은 개입형 다시 시작 설정을 더 이상 지원하지 않습니다.    
 
 모든 Windows 10 디바이스에서 ‘최종 기한’을 사용하도록 계획합니다  . ‘최종 기한’에 대한 설정이 구현되면 ‘개입형 다시 시작’에 대한 Intune 구성을 [구성되지 않음]으로 변경할 수 있습니다.   [구성되지 않음]으로 설정하면 Intune은 디바이스에서 해당 설정 관리를 중지하지만 설정에 대한 마지막 구성을 디바이스에서 제거하지는 않습니다. 따라서 ‘개입형 다시 시작’에 대해 설정된 마지막 구성은 Intune 이외의 다른 방법에 의해 수정될 때까지 디바이스에서 활성화되어 사용 중인 상태로 유지됩니다.  나중에 Windows의 디바이스 버전이 변경되거나 ‘최종 기한’에 대한 Intune 지원이 디바이스 Windows 버전으로 확장되면 디바이스는 이미 구현된 새 설정을 사용하기 시작합니다. 
 

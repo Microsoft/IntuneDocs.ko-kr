@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/21/2017
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
@@ -17,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7271937c7675e82d2d3b3f32074ec07431536a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6c28b222307ee20e3198033ef6aa4af3d756e7e
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726702"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681330"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Intune과 Symantec Endpoint Protection Mobile 통합 설정
 
 Intune과 SEP Mobile(Symantec Endpoint Protection Mobile) 솔루션을 통합하려면 다음 단계를 완료하세요. Single Sign-On 기능을 보유하려면 Azure AD에 SEP Mobile 앱을 추가해야 합니다.
+
+> [!NOTE]
+> 이 Mobile Threat Defense 공급업체는 등록되지 않은 디바이스에서 지원되지 않습니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 

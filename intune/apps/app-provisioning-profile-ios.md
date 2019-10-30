@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624c6cec2a887396cb6ef6508ab26a16d72f8f7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725324"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584940"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>iOS 앱 프로비전 프로필을 사용하여 모바일 앱이 만료되지 않도록 방지
 
@@ -44,14 +45,22 @@ iPhone 및 iPad에 할당된 Apple iOS LOB(기간 업무) 앱은 포함된 프�
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS 모바일 앱 프로비전 프로필을 만드는 방법
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-1. **클라이언트 앱** 워크로드에서 **관리** > **iOS 앱 프로비전 프로필**을 선택합니다.
-2. 프로필 목록 창에서 **프로필 만들기**를 선택합니다.
-3. **프로필 만들기** 창에서 다음 값을 구성합니다.
+2. **Intune** 창에서 **클라이언트 앱** > **iOS 앱 프로비저닝 프로필** > **프로필 만들기**를 선택합니다.
+3. **기본 사항** 페이지에서 다음 값을 추가합니다.
     - **이름** - 이 모바일 프로비전 프로필의 이름을 제공합니다.
     - **설명** - 필요에 따라 정책에 대한 설명을 제공합니다.
     - **프로필 파일 업로드** - **열기** 아이콘을 선택하고 [Apple 개발자 웹 사이트](https://developer.apple.com/)에서 다운로드한 Apple 모바일 구성 프로필 파일(확장명 `.mobileprovision`)을 선택합니다.
-4. 작업이 끝나면 **만들기**를 선택합니다.
+
+   **만료 날짜**는 위에서 추가한 Apple 모바일 구성 프로필 파일의 값으로 채워집니다.<br>
+
+   <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png">
+
+4. **다음: 범위 태그**를 클릭합니다.<br>
+   **범위 태그** 페이지에서 필요에 따라 Intune에서 iOS 앱 프로비저닝 프로필을 볼 수 있는 사용자를 결정하도록 범위 태그를 구성할 수 있습니다. 범위 태그에 대한 자세한 내용은 [분산형 IT에 역할 기반 액세스 제어 및 범위 태그 사용](../fundamentals/scope-tags.md)을 참조하세요.
+5. **다음: 할당**을 클릭합니다.<br>
+   **할당** 페이지에서는 사용자 및 디바이스에 프로필을 할당할 수 있습니다. Intune에서 디바이스를 관리하는지 여부와 관계없이 디바이스에 프로필을 할당할 수 있다는 점에 유의해야 합니다.
+6. **다음: 검토 + 만들기**를 클릭하여 프로필에 대해 입력한 값을 검토합니다.
+7. 작업이 완료되면 **만들기**를 클릭하여 Intune에서 iOS 앱 프로비저닝 프로필을 만듭니다. 
 
 ## <a name="next-steps"></a>다음 단계
 

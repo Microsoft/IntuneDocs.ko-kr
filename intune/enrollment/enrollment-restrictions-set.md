@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379804"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587948"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -30,7 +31,9 @@ ms.locfileid: "72379804"
 
 Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바이스를 정의하는 등록 제한을 만들고 관리할 수 있습니다. 여기에는
 - 총 디바이스 수
-- 운영 체제 및 버전이 포함됩니다. 다수의 제한 사항을 만들어서 다른 사용자 그룹에 적용할 수 있습니다. 다양한 제한 사항에 대한 [우선 순위](#change-enrollment-restriction-priority)를 설정할 수 있습니다.
+- 운영 체제 및 버전이 포함됩니다.
+
+다수의 제한을 만들어서 다른 사용자 그룹에 적용할 수 있습니다. 다양한 제한 사항에 대한 [우선 순위](#change-enrollment-restriction-priority)를 설정할 수 있습니다.
 
 >[!NOTE]
 >등록 제한은 보안 기능이 아닙니다. 손상된 디바이스는 해당 상태를 잘못 표시할 수 있습니다. 이러한 제한 사항은 악의가 없는 사용자를 위한 최선의 방어책입니다.
@@ -69,8 +72,17 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바
     - Android 디바이스 관리자 및 Android Enterprise 회사 프로필 지원 major.minor.rev.build.
     - iOS는 major.minor.rev를 지원합니다. 운영 체제 버전은 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator 앱에 등록되는 Apple 디바이스에 적용되지 않습니다.
     - Windows는 Windows 10용 major.minor.build.rev만 지원합니다.
-    > [!Note]
-    > Windows 10에서는 등록하는 동안 수정 번호를 제공하지 않습니다. 예를 들어 사용자가 10.0.17134.100을 입력하고 디바이스가 10.0.17134.174 번호를 사용하는 경우 이 번호는 등록하는 동안 차단됩니다.
+    
+    > [!IMPORTANT]
+    > Android Enterprise(회사 프로필) 및 Android 디바이스 관리자 플랫폼에는 다음 동작이 포함됩니다.
+    > - 두 플랫폼이 모두 동일한 그룹에 허용되는 경우 디바이스가 회사 프로필을 지원하면 사용자가 회사 프로필에 등록되고, 지원하지 않으면 DA로 등록됩니다. 
+    > - 두 플랫폼이 모두 그룹에 허용되고 겹치지 않는 특정 버전용으로 구체화되는 경우 사용자는 사용 중인 OS 버전용으로 정의된 등록 흐름을 받습니다. 
+    > - 두 플랫폼이 모두 허용되지만 동일한 버전에 대해 차단되는 경우 차단된 버전이 있는 디바이스의 사용자는 Android 디바이스 관리자 등록 흐름에서 제거된 후 등록이 차단되고 로그아웃하라는 메시지가 표시됩니다. 
+    >
+    > Android 등록에서 적절한 필수 구성 요소를 완료하지 않으면 회사 프로필 또는 디바이스 관리자 등록이 모두 작동하지 않습니다. 
+    
+   > [!Note]
+   > Windows 10에서는 등록하는 동안 수정 번호를 제공하지 않습니다. 예를 들어 사용자가 10.0.17134.100을 입력하고 디바이스가 10.0.17134.174 번호를 사용하는 경우 이 번호는 등록하는 동안 차단됩니다.
 
 8. **개인 소유**에서 개인 소유 디바이스로 허용할 플랫폼에 대해 **허용**을 선택합니다.
 9. **다음**을 선택하여 **할당** 페이지로 이동합니다.

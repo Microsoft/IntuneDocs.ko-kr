@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9306c7429adbe4a5159879ccbe7cb0f13e65ed
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725571"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785683"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune에서 앱 보호 정책 조건부 시작 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -59,6 +60,7 @@ iOS의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대한 �
 - 최소 앱 버전
 - 최소 SDK 버전
 - 디바이스 모델
+- 허용된 최대 디바이스 위협 수준
 
 **디바이스 모델** 설정을 사용하려면 세미콜론으로 구분된 iOS 모델 식별자 목록을 입력합니다. [HockeyApp의 지원 문서](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)의 디바이스 유형 열 아래에서 iOS 모델 식별자를 찾을 수 있습니다.<br>
 입력의 예: *iPhone5,2;iPhone5,3*
@@ -83,6 +85,7 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 - 디바이스 제조업체
 - SafetyNet 디바이스 증명
 - 앱에서 위협 검색
+- 허용된 최대 디바이스 위협 수준
 
 **디바이스 제조업체** 설정을 사용하려면 세미콜론으로 구분된 Android 제조업체 목록을 입력합니다. 디바이스의 Android 제조업체는 디바이스 설정에서 찾을 수 있습니다.<br>
 입력의 예: ‘제조업체 A;제조업체 B’  

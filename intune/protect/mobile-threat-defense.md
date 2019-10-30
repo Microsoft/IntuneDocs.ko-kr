@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
@@ -17,15 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97efe5c2445263bba11ee083e89d36fde1986dc1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4abc35b625b9aa072e38c02d2fc4160faa916fb3
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727872"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785759"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune과 Mobile Threat Defense의 통합이란?
-Intune은 규정 준수 정책 및 조건부 액세스 규칙의 정보 소스인 Mobile Threat Defense 공급업체의 데이터를 통합할 수 있습니다. 이 정보를 사용하여 손상된 모바일 디바이스의 액세스를 차단함으로써 Exchange 및 SharePoint 같은 회사 리소스를 보호할 수 있습니다.  
+Intune은 디바이스 준수 정책 및 디바이스 조건부 액세스 규칙의 정보 원본인 Mobile Threat Defense 공급업체의 데이터를 통합할 수 있습니다. 이 정보를 사용하여 손상된 모바일 디바이스의 액세스를 차단함으로써 Exchange 및 SharePoint 같은 회사 리소스를 보호할 수 있습니다.
+
+Intune은 Intune 앱 보호 정책을 사용하여 등록되지 않은 디바이스의 원본과 동일한 이 데이터를 사용할 수 있습니다. 따라서 관리자는 이 정보를 사용하여 [Microsoft Intune 보호 앱](~/apps/apps-supported-intune-apps.md) 내에서 회사 데이터를 보호하고 블록 또는 선택 초기화를 실행할 수 있습니다.
 
 ## <a name="what-problem-does-this-solve"></a>이 기능을 통해 어떤 문제가 해결되나요?
 Mobile Threat Defense 공급업체의 정보를 통합하면 모바일 플랫폼에 영향을 주는 위협으로부터 회사 리소스를 보호할 수 있습니다.  
@@ -42,7 +45,7 @@ Intune은 Mobile Threat Defense 커넥터를 사용하여 Intune과 고객이 �
 
 사용 설정하면 Intune이 개인 및 회사 소유 디바이스 모두에서 앱 인벤토리 정보를 수집하여 Lookout for Work와 같은 MTD(Mobile Threat Defense) 공급자가 페치할 수 있도록 합니다. iOS 디바이스의 사용자로부터 앱 인벤토리를 수집할 수 있습니다.
 
-이 서비스는 옵트인된 것입니다. 기본적으로 앱 인벤토리 정보는 공유되지 않습니다. Intune 관리자는 앱 인벤토리 정보를 공유하기 전에 서비스 설정에서 iOS 디바이스에 대한 앱 동기화를 설정해야 합니다.
+이 서비스는 옵트인된 것입니다. 기본적으로 앱 인벤토리 정보는 공유되지 않습니다. Intune 관리자는 앱 인벤토리 정보를 공유하기 전에 Mobile Threat Defense 커넥터 설정에서 **iOS 디바이스에 대한 앱 동기화**를 설정해야 합니다.
 
 **앱 인벤토리**  
 iOS 디바이스용 앱 동기화를 사용하면 회사 및 개인 소유 iOS 디바이스 모두의 인벤토리가 MTD 서비스 공급자에게 전송됩니다. 앱 인벤토리의 데이터에는 다음이 포함됩니다.
@@ -56,7 +59,7 @@ iOS 디바이스용 앱 동기화를 사용하면 회사 및 개인 소유 iOS �
 - 앱의 유효성 검사 여부
 - 앱이 관리되는지 여부
 
-## <a name="sample-scenarios"></a>샘플 시나리오:
+## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>디바이스 준수 정책을 사용하는 등록된 디바이스의 샘플 시나리오
 
 모바일 위협 방어 솔루션에서 디바이스가 감염된 것으로 간주되는 경우
 
@@ -66,14 +69,22 @@ iOS 디바이스용 앱 동기화를 사용하면 회사 및 개인 소유 iOS �
 
 ![Mobile Threat Defense 감염된 장치를 보여주는 이미지](./media/mobile-threat-defense/MTD-image-2.png)
 
+## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>Intune 앱 보호 정책을 사용하는 등록된 디바이스의 샘플 시나리오
+
+모바일 위협 방어 솔루션에서 디바이스가 감염된 것으로 간주되는 경우<br>
+![Mobile Threat Defense 감염된 디바이스를 보여주는 이미지](./media/mobile-threat-defense/MTD-image-3.png)
+
+디바이스를 재구성하면 액세스가 허용됩니다.<br>
+![Mobile Threat Defense 감염된 디바이스를 보여주는 이미지](./media/mobile-threat-defense/MTD-image-4.png)
+
 > [!NOTE] 
-> Intune에서 여러 Mobile Threat Defense 공급 업체를 사용하도록 지원되지 않습니다. 여러 MTD 도구를 사용하면 모든 MTD 앱을 설치하도록 강제하고 디바이스에서 위협을 검사합니다.
+> Intune에서 여러 Mobile Threat Defense 공급 업체를 사용하도록 지원되지 않습니다. 여러 MTD 커넥터를 사용하면 모든 MTD 앱을 설치하도록 강제하고 디바이스에서 위협을 검사합니다.
 
 ## <a name="mobile-threat-defense-partners"></a>모바일 위협 방어 파트너
 
 다음을 사용하여 디바이스, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스를 보호하는 방법을 알아봅니다.
 
-- [Lookout](lookout-mobile-threat-defense-connector.md)
+- [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)

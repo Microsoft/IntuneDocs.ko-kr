@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d31126a259274a2c75f933428632e274d8710aa6
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350019"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584988"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>관리되는 Android 엔터프라이즈 디바이스용 앱 구성 정책 추가
 
@@ -68,14 +69,16 @@ Microsoft Intune의 앱 구성 정책은 관리되는 Android 엔터프라이즈
 
 | 옵션 | 예제 |
 |----|----|
-| Mail | john@contoso.com |
-| 사용자 계정 이름 | john@contoso.com |
-| 부분 UPN | john |
-| 도메인 | contoso.com |
-| 사용자 이름 | John Doe |
+| AAD 디바이스 ID | dc0dc142-11d8-4b12-bfea-cae2a8514c82 |
 | 계정 ID | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| Intune 디바이스 ID | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| 도메인 | contoso.com |
+| Mail | john@contoso.com |
+| 부분 UPN | john |
 | 사용자 ID | 3ec2c00f-b125-4519-acf0-302ac3761822 |
-| 디바이스 ID | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| 사용자 이름 | John Doe |
+| 사용자 계정 이름 | john@contoso.com |
+
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>다중 ID 앱에서 구성된 조직 계정만 허용 
 

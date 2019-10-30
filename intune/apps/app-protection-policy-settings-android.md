@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc4c301ebc4e8dc4a26a49957d344ad52316f66a
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4be8c383ded85dbfa9cf1c1b293bb979201ee4ab
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036408"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785674"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune의 Android 앱 보호 정책 설정
 이 문서에서는 Android 디바이스에 대한 앱 보호 정책 설정을 설명합니다. 설명하는 정책 설정은 Azure Portal의 **설정** 블레이드에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.
@@ -126,3 +127,4 @@ ms.locfileid: "72036408"
 | **디바이스 제조업체** | 세미콜론으로 구분된 제조업체 목록을 지정합니다. 여러 값의 목록에서 공백을 방지합니다. 이러한 값은 대/소문자를 구분하지 않습니다. *작업*은 다음과 같습니다. <br><ul><li>**지정됨 허용(비지정됨 차단)** - 지정된 제조업체와 일치하는 디바이스만 앱을 사용할 수 있습니다. 다른 모든 디바이스는 차단됩니다. </li></ul> <ul><li>**지정됨 허용(비지정됨 초기화)** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다. </li></ul> 이 설정 사용에 대한 자세한 내용은 [조건부 시작 작업](app-protection-policies-access-actions.md#android-policy-settings)을 참조하세요. |
 | **SafetyNet 디바이스 증명** | 앱 보호 정책은 일부 Google Play Protect API를 지원합니다. 특히 이 설정은 최종 사용자 디바이스의 Google SafetyNet 증명을 구성합니다. **기본 무결성** 또는 **기본 무결성 및 인증된 디바이스**를 지정하세요. **기본 무결성**은 디바이스의 일반 무결성에 대해 알려줍니다. 변조 흔적이 있는 루팅된 디바이스, 에뮬레이터, 가상 디바이스 및 디바이스는 기본 무결성을 실패합니다. **기본 무결성 및 인증된 디바이스**는 Google 서비스를 사용하는 디바이스의 호환성을 알려줍니다. Google의 인증을 받은 수정되지 않은 디바이스만이 이 검사를 통과할 수 있습니다. *작업*은 다음과 같습니다. <br><ul><li>**경고** - 구성된 값에 따라 디바이스가 Google의 SafetyNet 증명 검사를 충족하지 않는 경우 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다. </li></ul><ul><li>**액세스 차단** - 구성된 값에 따라 디바이스가 Google의 SafetyNet 증명 검사를 충족하지 않는 경우 사용자 액세스가 차단됩니다. </li></ul> <ul><li>**데이터 초기화** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다. </li></ul> </li></ul> 이 설정과 관련된 자주 묻는 질문은 [MAM 및 앱 보호에 관한 질문과 대답](mam-faq.md#app-experience-on-android)을 참조하세요. |
 | **앱에서 위협 검색** | 앱 보호 정책은 일부 Google Play Protect API를 지원합니다. 이 설정은 특히 최종 사용자 디바이스에 Google의 앱 확인 검사를 사용하도록 켭니다. 이 설정을 구성하면 최종 사용자가 자신의 Android 디바이스에서 Google의 앱 검사를 켤 때까지 액세스가 차단됩니다. *작업*은 다음과 같습니다. <br><ul><li>**경고** - 디바이스에서 Google의 앱 확인 검사가 꺼져 있으면 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다. </li></ul><ul><li>**액세스 차단** - 디바이스에서 Google의 앱 확인 검사가 꺼져 있으면 사용자 액세스가 차단됩니다. </li></ul></li></ul> Google의 앱 확인 검사 결과는 콘솔의 **잠재적으로 위험한 앱** 보고서에 표시됩니다. |
+| **허용된 최대 디바이스 위협 수준** | 앱 보호 정책은 Intune-MTD 커넥터를 활용할 수 있습니다. 이 앱을 사용하기 위해 허용되는 최대 위협 수준을 지정합니다. 위협은 최종 사용자 디바이스에서 선택한 MTD(Mobile Threat Defense) 공급업체 앱에 따라 결정됩니다. ‘보안됨’, ‘낮음’, ‘보통’ 또는 ‘높음’을 지정합니다.     ‘보안됨’의 경우 디바이스에 위협이 없어야 하며 구성할 수 있는 가장 제한적인 값이지만, ‘높음’의 경우 기본적으로 활성 Intune-MTD 연결이 필요합니다.   *작업*은 다음과 같습니다. <br><ul><li>**액세스 차단** - 최종 사용자 디바이스에서 선택한 MTD(Mobile Threat Defense) 공급업체 앱에 따라 결정된 위협 수준이 이 요구 사항을 충족하지 않을 경우 사용자 액세스가 차단됩니다.</li></ul> <ul><li>**데이터 초기화** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다.</li></ul>이 설정을 사용하는 방법에 대한 자세한 내용은(##등록되지 않은 디바이스에서 MTD를 위한 Intune 설정)을 참조하세요. |

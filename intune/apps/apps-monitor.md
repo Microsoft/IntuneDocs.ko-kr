@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03c38472a3100ec2d717e802e07e189a53ac0866
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ee22ee435830137a423423aa692376aabbb6cecb
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725012"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585409"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune으로 앱 정보 및 할당 모니터링
 
@@ -37,6 +38,8 @@ Intune에서는 관리하는 앱 속성을 모니터링하고 앱 할당 상태�
 
 > [!NOTE]
 > **사용 가능** 상태로 배포되는 Android 스토어 앱은 설치 상태를 보고하지 않습니다.
+>
+> Android Enterprise 회사 프로필 디바이스에 배포된 관리형 Google Play 앱의 경우 Intune을 사용하여 디바이스에 설치된 앱의 상태 및 버전 번호를 볼 수 있습니다. 
 
 ## <a name="app-overview-pane"></a>앱 개요 창
 

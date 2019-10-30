@@ -5,23 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036439"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749346"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필을 사용하여 디바이스에서 기능 및 설정 적용
 
@@ -48,7 +49,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이 구성 프로필�
 
 이 기능은 다음을 지원합니다.
 
-- Windows 10 이상
+- 지원되는 펌웨어의 Windows 10 1809 이상
 
 ## <a name="certificates"></a>인증서
 
@@ -66,7 +67,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이 구성 프로필�
 
 ## <a name="custom-profile"></a>사용자 지정 프로필
 
-[사용자 지정 설정](../custom-settings-configure.md)을 사용하면 관리자가 Intune에 기본 제공되지 않는 디바이스 설정을 할당할 수 있습니다. Android 디바이스에서는 OMA-URI 값을 입력할 수 있습니다. IOS 디바이스의 경우 Apple Configurator에서 만든 구성 파일을 가져올 수 있습니다.
+[사용자 지정 설정](custom-settings-configure.md)을 사용하면 관리자가 Intune에 기본 제공되지 않는 디바이스 설정을 할당할 수 있습니다. Android 디바이스에서는 OMA-URI 값을 입력할 수 있습니다. IOS 디바이스의 경우 Apple Configurator에서 만든 구성 파일을 가져올 수 있습니다.
 
 이 기능은 다음을 지원합니다.
 
@@ -78,7 +79,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이 구성 프로필�
 
 ## <a name="delivery-optimization"></a>배달 최적화
 
-[배달 최적화](../delivery-optimization-windows.md)는 소프트웨어 업데이트를 배달하기 위한 향상된 환경을 제공합니다. 이러한 설정은 **소프트웨어 업데이트** > **Windows 10 업데이트 링** 설정을 대체합니다.
+[배달 최적화](delivery-optimization-windows.md)는 소프트웨어 업데이트를 배달하기 위한 향상된 환경을 제공합니다. 이러한 설정은 **소프트웨어 업데이트** > **Windows 10 업데이트 링** 설정을 대체합니다.
 
 이러한 설정을 사용하여 조직의 디바이스에 소프트웨어 업데이트를 다운로드하는 방법을 제어할 수 있습니다. 예를 들어 사용자가 자신만의 업데이트를 가져오거나 디바이스 프로필에서 배달 최적화 클라우드 서비스를 사용하여 업데이트를 가져오도록 설정할 수 있습니다.
 
@@ -88,12 +89,20 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이 구성 프로필�
 
 ## <a name="device-features"></a>디바이스 기능
 
-[디바이스 기능](../device-features-configure.md)을 통해 iOS 및 macOS 디바이스에서 AirPrint, 알림 및 잠금 화면 메시지와 같은 기능을 제어합니다.
+[디바이스 기능](device-features-configure.md)을 통해 iOS 및 macOS 디바이스에서 AirPrint, 알림 및 잠금 화면 메시지와 같은 기능을 제어합니다.
 
 이 기능은 다음을 지원합니다.
 
 - iOS/iPadOS
 - macOS
+
+## <a name="device-firmware-configuration-interface"></a>디바이스 펌웨어 구성 인터페이스
+
+DFCI([디바이스 펌웨어 구성 인터페이스](device-firmware-configuration-interface-windows.md))를 사용하면 관리자는 Intune을 통해 UEFI(BIOS) 설정을 사용하거나 사용하지 않도록 설정할 수 있습니다. 이 설정을 사용하여 일반적으로 악의적인 공격에 더 탄력적인 펌웨어 수준에서 보안을 강화합니다.
+
+이 기능은 다음을 지원합니다.
+
+- Windows 10 이상
 
 ## <a name="device-restrictions"></a>디바이스 제한 사항
 
@@ -210,9 +219,9 @@ Microsoft Intune에서 WDATP(Microsoft Defender Advanced Threat Protection)를 �
 
 ## <a name="update-policies"></a>업데이트 정책
 
-[iOS 업데이트 정책](../software-updates-ios.md)은 iOS 디바이스에 소프트웨어 업데이트를 설치하기 위한 iOS 정책을 만들고 할당하는 방법을 보여 줍니다. 설치 상태를 검토할 수도 있습니다.
+[iOS 업데이트 정책](../protect/software-updates-ios.md)은 iOS 디바이스에 소프트웨어 업데이트를 설치하기 위한 iOS 정책을 만들고 할당하는 방법을 보여 줍니다. 설치 상태를 검토할 수도 있습니다.
 
-Windows 디바이스의 업데이트 정책은 [배달 최적화](../delivery-optimization-windows.md)를 참조하세요. 
+Windows 디바이스의 업데이트 정책은 [배달 최적화](delivery-optimization-windows.md)를 참조하세요. 
 
 이 기능은 다음을 지원합니다.
 
@@ -265,7 +274,7 @@ VPN(가상 프라이빗 네트워크)을 사용하면 사용자가 회사 네트
 
 ## <a name="manage-and-troubleshoot"></a>관리 및 문제 해결
 
-[프로필을 관리](../device-profile-monitor.md)하여 디바이스 및 할당 된 프로필의 상태를 확인합니다. 또한 충돌을 일으키는 설정과 이 설정이 포함된 프로필을 확인하여 충돌을 해결할 수 있습니다. [일반적인 문제 및 해결 방법](device-profile-troubleshoot.md)은 관리자가 프로필 작업을 수행하는 데 도움이 됩니다. 이 문서는 프로필 삭제 시 발생하는 상황, 디바이스로 보내는 알림의 원인 등을 설명합니다.
+[프로필을 관리](device-profile-monitor.md)하여 디바이스 및 할당 된 프로필의 상태를 확인합니다. 또한 충돌을 일으키는 설정과 이 설정이 포함된 프로필을 확인하여 충돌을 해결할 수 있습니다. [일반적인 문제 및 해결 방법](device-profile-troubleshoot.md)은 관리자가 프로필 작업을 수행하는 데 도움이 됩니다. 이 문서는 프로필 삭제 시 발생하는 상황, 디바이스로 보내는 알림의 원인 등을 설명합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

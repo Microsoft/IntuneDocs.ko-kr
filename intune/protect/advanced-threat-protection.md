@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: shpate
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: e0ef623fef49fdf43efc80375716af711bdbcb3c
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350038"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681340"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용  
 
@@ -56,6 +57,9 @@ Intune에서 Microsoft Defender ATP를 사용하려면 다음을 구성했으며
 - Enterprise Mobility + Security E3 및 Windows E5(또는 Microsoft 365 Enterprise E5)에 대한 라이선스가 부여된 테넌트
 - Azure AD에 연결된 [Intune 관리](../enrollment/windows-enroll.md) Windows 10 디바이스가 포함된 Microsoft Intune 환경
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 및 Microsoft Defender Security Center(ATP 포털)에 대한 액세스 권한
+
+> [!NOTE]
+> Microsoft Defender ATP는 Intune 앱 보호 정책에서 지원되지 않습니다.
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Intune에서 Microsoft Defender ATP 사용
 

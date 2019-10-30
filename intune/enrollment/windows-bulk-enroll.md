@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
@@ -16,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed71676b434dfe30c7591ad3a3391d2252c3275d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722334"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585285"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 대량 등록
 
@@ -89,6 +90,8 @@ Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당
 
 - 로컬 계정을 만들지 않는 Active Directory 도메인 또는 Azure Active Directory 테넌트에 연결하려는 프로비전 패키지의 경우 네트워크 연결 중단으로 인해 도메인 연결 프로세스가 실패하는 경우 디바이스에 연결할 수 없습니다.
 - 프로비저닝 패키지에서 실행된 스크립트는 시스템 컨텍스트에서 실행됩니다. 스크립트는 디바이스 파일 시스템과 구성을 임의로 변경할 수 있습니다. 악의적이거나 잘못된 스크립트는 디바이스를 이미지로 다시 설치하거나 초기화하는 방법으로만 복구할 수 있는 상태를 만듭니다.
+
+이벤트 뷰어의 **Provisioning-Diagnostics-Provider** 관리자 로그에서 패키지의 설정 성공/실패를 확인할 수 있습니다.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi를 통한 대량 등록 
 

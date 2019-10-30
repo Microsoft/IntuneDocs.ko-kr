@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4d40d3f15fe23511f3f15f7c13181a0fa72f6b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 91627a47f9dccfb436e64aaadeeb392648dff821
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726520"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585291"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune에 대한 지원을 받는 방법  
 
@@ -82,7 +83,7 @@ Intune에 대한 도움말 및 지원 환경은 [Microsoft 365 디바이스 관�
   4. Intune 도움말 및 지원 연결 페이지를 선택합니다.
 
 > [!NOTE]  
-> Intune 인스턴스가 Azure Government와 같은 소버린 클라우드라고도 하는 GCC(정부 컴퓨팅 클라우드)에서 호스트되는 경우 이 문서 뒷부분에 나오는 정부 컴퓨팅 클라우드에 대한 Intune 지원을 참조하세요. Intune *도움말 및 지원* 환경은 올해 후반부가 지나야 GCC에서 사용할 수 있게 됩니다. 
+> Intune 인스턴스가 Azure Government와 같은 소버린 클라우드라고도 하는 정부 기관용 프라이빗 클라우드에서 호스트되는 경우 이 문서 뒷부분에 나오는 [정부용 프라이빗 클라우드에 대한 Intune 지원](#intune-support-for-private-cloud-for-government)을 참조하세요. Intune ‘도움말 및 지원’ 환경은 올해 후반부가 지나야 정부용 프라이빗 클라우드에서 사용할 수 있게 됩니다.  
 
 
 *도움말 및 지원*을 열면 포털은 활성 지원 인시던트가 있는지 여부에 따라 좌우되는 보기를 표시합니다. 프리미어 지원이 있는 경우 다음과 같은 몇 가지 추가 요소와 옵션이 제공됩니다.
@@ -162,20 +163,20 @@ Intune에 대한 도움말 및 지원 환경은 [Microsoft 365 디바이스 관�
 
 왼쪽 탐색 창의 **도움말 + 지원**을 사용하거나 Azure Portal의 오른쪽 위 모서리에 있는 **?** 옵션을 사용하여 Intune 도움말 및 지원 환경과는 별개인 Azure 도움말 + 지원 환경을 엽니다.  
 
-2019년 4월부터, 구독이 GCC(정부 컴퓨팅 클라우드)에 있는 경우를 제외하고 Azure *도움말 + 지원* 환경에 액세스하여 Intune에 대한 지원을 받을 수 없습니다.  
+2019년 4월부터, 구독이 정부 기관용 프라이빗 클라우드에 있는 경우를 제외하고 Azure ‘도움말 + 지원’환경에 액세스하여 Intune에 대한 지원을 받을 수 없습니다.   
 
-Intune 인스턴스가 GCC에서 실행되지 않는 경우, Azure *도움말 + 지원*을 통해 이동할 경우 지원 인시던트를 만들고 관리하기 위한 Intune *도움말 및 지원* 환경으로 리디렉션됩니다.  
+Intune 인스턴스가 정부용 프라이빗 클라우드에서 실행되지 않는 경우, Azure ‘도움말 + 지원’을 통해 이동할 경우 지원 인시던트를 만들고 관리하기 위한 Intune ‘도움말 및 지원’ 환경으로 리디렉션됩니다.    
 
 
-## <a name="intune-support-for-government-compute-cloud"></a>정부 컴퓨팅 클라우드에 대한 Intune 지원  
+## <a name="intune-support-for-private-cloud-for-government"></a>정부용 프라이빗 클라우드에 대한 Intune 지원  
 
-Azure Government와 같은 소버린 클라우드라고도 하는 GCC(정부 컴퓨팅 클라우드)에서 Intune 구독을 호스트하는 경우 최신 Intune 도움말 및 지원 환경에 아직 액세스할 수 없습니다.  대신 다음 정보를 사용하여 Intune에 대한 지원을 받습니다. 
+Azure Government와 같은 소버린 클라우드라고도 하는 정부 기관용 프라이빗 클라우드에서 Intune 구독을 호스트하는 경우 최신 Intune 도움말 및 지원 환경에 아직 액세스할 수 없습니다.  대신 다음 정보를 사용하여 Intune에 대한 지원을 받습니다. 
 
 
 ### <a name="create-an-online-support-ticket"></a>온라인 지원 티켓 만들기 
 
 >[!IMPORTANT]    
-> *도움말 및 지원*은 아직 GCC에 사용할 수 없는 새 시스템으로 전환되므로, 지원 인시던트를 만들 때 포털은 15자리 ID 번호를 사용하는 지원 사례를 식별합니다. 15자리 사례가 생성되면 Microsoft 지원에서 사용하기 위해 해당 사례의 미러가 만들어집니다. 이 미러 사례는 새 지원 시스템에서 만들어지고 8자리 사례 ID를 사용하며 지원 서비스에서 지원 인시던트에 대한 모든 작업 및 통신을 추적하는 데 사용됩니다. 15자리 사례가 만들어지면 지원 서비스에서 사용하는 미러된 지원 사례의 8자리 번호를 식별하는 메일을 받게 됩니다.  
+> ‘도움말 및 지원’은 아직 정부용 프라이빗 클라우드에 사용할 수 없는 새 시스템으로 전환되므로, 지원 인시던트를 만들 때 포털은 15자리 ID 번호를 사용하는 지원 사례를 식별합니다.  15자리 사례가 생성되면 Microsoft 지원에서 사용하기 위해 해당 사례의 미러가 만들어집니다. 이 미러 사례는 새 지원 시스템에서 만들어지고 8자리 사례 ID를 사용하며 지원 서비스에서 지원 인시던트에 대한 모든 작업 및 통신을 추적하는 데 사용됩니다. 15자리 사례가 만들어지면 지원 서비스에서 사용하는 미러된 지원 사례의 8자리 번호를 식별하는 메일을 받게 됩니다.  
 > 
 > 8자리 지원 사례의 개인 작업 및 통신을 지원하고, 8자리 지원 사례를 사용하여 통신을 기록하고 인시던트 진행 상황을 추적할 수 있습니다. 따라서 사례 작업 추적 레코드 역할을 하는 8자리 지원 사례의 메일 업데이트를 받게 됩니다. 15자리 지원 인시던트에는 자세한 정보가 기록되지 않습니다. 지원이 종료되고 8자리 지원 사례가 닫히면 이 상태는 Azure Portal 내에서 볼 수 있는 15자리 지원 사례에서 반영됩니다.  15자리 지원 사례에 대해서는 다른 업데이트나 상태 변경이 필요하지 않습니다.  
 > 
@@ -223,7 +224,7 @@ Azure Portal 내에서 지원 요청을 볼 수 있습니다. 그렇지만 제�
 2. **도움말 + 지원** 페이지에서 **최근 지원 요청** 목록을 볼 수 있습니다.
 
    > [!IMPORTANT]  
-   > 정부 컴퓨팅 클라우드 고객은 15자리 지원 사례 번호와 인시던트 상태만 볼 수 있습니다. 모든 사례 통신과 작업 또는 경고 추적은 메일로 전송되며, Intune 콘솔 내에서 열린 지원 사례의 미러로 생성된 8자리 지원 사례 번호를 참조합니다.   
+   > 정부 고객용 프라이빗 클라우드에서는 15자리 지원 사례 번호와 인시던트 상태만 볼 수 있습니다. 모든 사례 통신과 작업 또는 경고 추적은 메일로 전송되며, Intune 콘솔 내에서 열린 지원 사례의 미러로 생성된 8자리 지원 사례 번호를 참조합니다.   
 
 ## <a name="additional-resources"></a>추가 리소스  
 

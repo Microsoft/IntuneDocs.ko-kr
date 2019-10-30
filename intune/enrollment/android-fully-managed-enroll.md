@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2abf391ddbdb1f7087cd06ed1865b3da8b155178
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723582"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505600"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Android 엔터프라이즈 완전 관리형 디바이스의 Intune 등록 설정 
 
@@ -61,7 +62,7 @@ Android 엔터프라이즈 완전 관리형 디바이스 관리를 설정하려�
 > [!NOTE]
 > *규정 준수 상태로 표시된 디바이스 필요* 컨트롤을 사용하고 **모든 클라우드 앱**, **Android** 및 **브라우저**에 적용되는 Azure AD 조건부 액세스 정책이 정의된 경우, 이 정책에서 **Microsoft Intune** 클라우드 앱을 제외해야 합니다. 이는 Android 설치 프로세스가 Chrome 탭을 사용하여 등록 중에 사용자를 인증하기 때문입니다. 자세한 내용은 [Azure AD 조건부 액세스 설명서](https://docs.microsoft.com/azure/active-directory/conditional-access/)를 참조하세요.
 
-이 설정이 **예**로 설정된 경우 등록 토큰(임의 문자열)과 Intune 테넌트에 대한 QR 코드를 제공합니다. 이 단일 등록 토큰은 모든 사용자에게 유효하며 만료되지 않습니다. Android OS 및 디바이스 버전에 따라 토큰 또는 QR 코드를 사용하여 키오스크 디바이스를 등록할 수 있습니다.
+이 설정이 **예**로 설정된 경우 등록 토큰(임의 문자열)과 Intune 테넌트에 대한 QR 코드를 제공합니다. 이 단일 등록 토큰은 모든 사용자에게 유효하며 만료되지 않습니다. Android OS 및 디바이스 버전에 따라 토큰 또는 QR 코드를 사용하여 디바이스를 등록할 수 있습니다.
 
 ## <a name="enroll-the-fully-managed-devices"></a>완전 관리형 디바이스 등록
 이제 [완전 관리형 디바이스를 등록](android-dedicated-devices-fully-managed-enroll.md)할 수 있습니다.

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b16b4ee95647b3bb182af075bbe7f7aad71351f0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9c4d47a11f07a2099d79f5ce4ce90795a087718b
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726806"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681469"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune에서 보안 기준 및 프로필 모니터링  
 
@@ -59,7 +60,7 @@ Intune은 보안 기준을 모니터링하는 여러 가지 옵션을 제공합�
 차트를 클릭하면 다양한 상태의 디바이스 목록을 드릴스루하여 살펴볼 수 있습니다. 그런 다음, 목록에서 개별 디바이스를 선택하여 개발 디바이스의 세부 정보를 볼 수 있습니다. 예를 들면 다음과 같습니다.
 - **디바이스 구성**을 선택하고, 오류 상태인 프로필을 선택합니다.
 
-  ![디바이스의 상태 확인](./media/security-baselines-monitor/device-configuration-profile-list.png)
+  ![프로필 상태 보기](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
 - 오류 프로필을 선택합니다. 프로필의 모든 설정 목록 및 해당 상태가 표시됩니다. 이제 스크롤하여 오류를 발생시키는 설정을 확인할 수 있습니다.
 
