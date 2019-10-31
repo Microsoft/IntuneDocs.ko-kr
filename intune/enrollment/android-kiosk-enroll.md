@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503378"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923384"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android 엔터프라이즈 전용 디바이스의 Intune 등록 설정
 
@@ -78,7 +78,7 @@ Android 엔터프라이즈 전용 디바이스 관리를 설정하려면 다음 
 4. **동적 멤버 관리 규칙** 블레이드에서 다음과 같은 필드를 입력합니다.
     - **동적 멤버 관리 규칙 추가**: 단순 규칙
     - **다음 위치에 디바이스 추가**: enrollmentProfileName
-    - 가운데 상자에서 **일치**를 선택합니다.
+    - 가운데 상자에서 **같음**을 선택합니다.
     - 마지막 필드에 이전에 만든 등록 프로필 이름을 입력합니다.
     동적 멤버 관리 규칙에 대한 자세한 내용은 [AAD에서 그룹에 대한 동적 멤버 관리 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)을 참조하세요. 
 5. **쿼리 추가** > **만들기**를 선택합니다.

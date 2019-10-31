@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53f50c42e768eeb652a8602bea49c04d29364c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504415"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810296"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune에서 Mobile Threat Defense 커넥터를 사용하도록 설정
 
@@ -44,7 +44,7 @@ MTD 앱의 클래식 조건부 액세스 정책:
 클래스 조건부 액세스 정책을 보려면 [Azure](https://portal.azure.com/#home)에서 **Azure Active Directory** > **조건부 정책** > **클래식 정책**으로 이동합니다.
 
 
-## <a name="to-enable-the-mtd-connector"></a>MTD 커넥터를 사용하도록 설정하려면
+## <a name="to-enable-the-mobile-threat-defense-connector"></a>Mobile Threat Defense 커넥터를 사용하도록 설정
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 
@@ -58,20 +58,23 @@ MTD 앱의 클래식 조건부 액세스 정책:
 
 7. 조직의 요구 사항에 따라 전환 옵션을 사용하도록 설정합니다. 표시되는 설정/해제 옵션은 MTD 파트너에 따라 다릅니다.
 
-## <a name="mtd-toggle-options"></a>MTD 설정/해제 옵션
+## <a name="mobile-threat-defense-toggle-options"></a>Mobile Threat Defense 설정/해제 옵션
 
-조직의 요구 사항에 따라 사용 하도록 설정해야 하는 MTD 설정/해제 옵션을 결정할 수 있습니다. 아래에 자세한 내용이 나와 있습니다.
+조직의 요구 사항에 따라 사용하도록 설정해야 하는 Mobile Threat Defense 설정/해제 옵션을 결정할 수 있습니다. 아래에 자세한 내용이 나와 있습니다.
 
-- **Android 4.1+ 디바이스를 [MTD 파트너 이름] for Work MTD에 연결**: 이 옵션을 사용하도록 설정하는 경우 Android 4.1 이상 디바이스가 보안 위험을 Intune에 다시 보고하도록 지정할 수 있습니다.
-  - **수신된 데이터가 없는 경우 비규격으로 표시**: Intune이 MTD 파트너로부터 이 플랫폼에 대한 데이터를 받지 못한 경우 해당 디바이스를 비규격으로 간주합니다.
-<br></br>
-- **iOS 8.0+ 디바이스를 [MTD 파트너 이름] for Work MTD에 연결**: 이 옵션을 사용하도록 설정하면 iOS 8.0+ 디바이스가 보안 위험을 Intune에 보고하게 할 수 있습니다.
-  - **수신된 데이터가 없는 경우 비규격으로 표시**: Intune이 MTD 파트너로부터 이 플랫폼에 대한 데이터를 받지 못한 경우 해당 디바이스를 비규격으로 간주합니다.
-<br></br>
+**MDM 준수 정책 설정**
+- **Android 4.1+ 디바이스를 *\<MTD 파트너 이름>***에 연결: 이 옵션을 사용하도록 설정하는 경우 Android 4.1 이상 디바이스가 보안 위험을 Intune에 다시 보고하도록 지정할 수 있습니다.
+- **IOS 8.0+ 디바이스를 *\<MTD 파트너 이름>***에 연결: 이 옵션을 사용하도록 설정하면 iOS 8.0+ 디바이스가 보안 위험을 Intune에 보고하게 할 수 있습니다.
 - **iOS 디바이스에 대해 앱 동기화 사용**: 이 Mobile Threat Defense 파트너가 위협 분석 목적으로 사용할 iOS 애플리케이션의 메타데이터를 Intune에서 요청하도록 합니다.
-
 - **지원되지 않은 OS 버전 차단**: 디바이스가 지원되는 최소 버전보다 낮은 운영 체제를 실행 중인 경우 차단합니다.
 
+**앱 보호 정책 설정**
+- **앱 보호 정책 평가를 위해 ‘\<MTD 파트너 이름>’에 Android 디바이스 버전 4.1 이상 연결**:  이 옵션을 사용하도록 설정하면 디바이스 위협 수준 규칙을 사용하는 앱 보호 정책이 이 커넥터의 데이터를 포함하여 디바이스를 평가합니다.
+- **앱 보호 정책 평가를 위해 ‘\<MTD 파트너 이름>’에 iOS 디바이스 버전 8.0 이상 연결**:  이 옵션을 사용하도록 설정하면 디바이스 위협 수준 규칙을 사용하는 앱 보호 정책이 이 커넥터의 데이터를 포함하여 디바이스를 평가합니다.
+
+Intune 앱 보호 정책 평가를 위해 Mobile Threat Defense 커넥터를 사용하는 방법에 대한 자세한 내용은 [등록되지 않은 디바이스에 대한 Mobile Threat Defense](~/protect/mtd-enable-unenrolled-devices.md)를 참조하세요.
+
+**일반 공유 설정**
 - **파트너가 응답하지 않을 때까지 기간(일)** : 연결이 끊어져서 Intune에서 파트너가 응답하지 않는 것으로 간주할 때까지의 비활성 상태 기간(일)입니다. Intune은 응답하지 않는 MTD 파트너에 대한 준수 상태를 무시합니다.
 
 > [!IMPORTANT] 

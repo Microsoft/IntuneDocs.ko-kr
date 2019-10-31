@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ba94a649f9d7b49437d5d97bb621b0b0a94466c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508693"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810307"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Intune 및 Zimperium 통합
 
@@ -31,8 +31,7 @@ Intune과 Zuneperium Mobile Threat Defense 솔루션을 통합하려면 다음 �
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-> [!NOTE]
-> [Zimperium MTD 콘솔](https://www.zimperium.com/platform)에서 다음 단계를 완료해야 합니다.
+다음 단계는 [Zimperium MTD 콘솔](https://www.zimperium.com/platform)에서 완료되며, Intune 등록된 디바이스(디바이스 준수 사용)와 등록되지 않은 디바이스(앱 보호 정책 사용) 모두에 대해 Lookout 서비스에 연결할 수 있습니다.
 
 Intune과 Zimperium을 통합하는 과정을 시작하기 전에 다음의 구독과 자격 증명이 있는지 확인합니다.
 
@@ -90,4 +89,5 @@ Zimperium 앱 권한 부여 프로세스는 다음과 같습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Zimperium 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [등록된 디바이스에 대해 Zimperium 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [등록되지 않은 디바이스에 대해 Zimperium 앱 설정](~/protect/mtd-add-apps-unenrolled-devices.md)

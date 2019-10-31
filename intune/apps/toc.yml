@@ -78,6 +78,8 @@
               href: lob-apps-macos.md
             - name: Win32 앱 관리
               href: apps-win32-app-management.md
+            - name: Win32 앱 S 모드 디바이스
+              href: apps-win32-s-mode.md
         - name: 특정 앱 추가
           items:
             - name: 회사 포털 앱

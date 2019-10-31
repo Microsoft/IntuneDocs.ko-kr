@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9faf34a9b417962e412eaa730cf91cd821ff7eb6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0528ec962165f358b35afce98f58c8b9b4efe93c
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509625"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810328"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Intune과 Better Mobile 통합
 
@@ -28,8 +28,7 @@ Intune과 Better Mobile Threat Defense 솔루션을 통합하려면 다음 단�
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-> [!NOTE]
-> 다음 단계는 [Better Mobile 관리 콘솔](https://aad.bmobi.net)에서 수행해야 합니다.
+다음 단계는 [더 나은 모바일 관리 콘솔](https://aad.bmobi.net)에서 완료해야 하며, Intune 등록된 디바이스(디바이스 준수 사용)와 등록되지 않은 디바이스(앱 보호 정책 사용) 모두에 대해 더 나은 모바일 서비스에 연결할 수 있습니다.
 
 Intune과 Better Mobile을 통합하는 과정을 시작하기 전에 다음 항목이 있는지 확인합니다.
 
@@ -76,4 +75,5 @@ Better Mobile 앱 권한 부여 프로세스는 다음과 같습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Better Client 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [등록된 디바이스에 대해 더 나은 모바일 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [등록되지 않은 디바이스에 대해 더 나은 모바일 앱 설정](~/protect/mtd-add-apps-unenrolled-devices.md)

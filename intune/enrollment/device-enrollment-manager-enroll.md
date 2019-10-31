@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 740a4ce34c5344fd6b2c09fe17116330bb5005f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2b3c82faab08248640e19573582ccbd232e0587d
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505553"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923346"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>디바이스 등록 관리자 계정을 사용하여 Intune에서 디바이스 등록
 
-DEM(디바이스 등록 관리자) 계정을 사용하여 단일 Azure Active Directory 계정에서 최대 1,000개의 모바일 디바이스를 등록할 수 있습니다. DEM은 AAD 사용자 계정에 적용될 수 있는 Intune 사용 권한이며 이를 통해 사용자가 최대 1,000개의 디바이스를 등록할 수 있습니다. DEM 계정은 디바이스를 등록하고 디바이스의 사용자에게 전달하기 전에 준비하는 시나리오에 유용합니다. 기본적으로 Microsoft Intune의 DEM(디바이스 등록 관리자) 계정은 25개로 제한됩니다.
+DEM(디바이스 등록 관리자) 계정을 사용하여 단일 Azure Active Directory 계정에서 최대 1,000개의 모바일 디바이스를 등록할 수 있습니다. DEM은 AAD 사용자 계정에 적용될 수 있는 Intune 사용 권한이며 이를 통해 사용자가 최대 1,000개의 디바이스를 등록할 수 있습니다. DEM 계정은 디바이스를 등록하고 디바이스의 사용자에게 전달하기 전에 준비하는 시나리오에 유용합니다. 기본적으로 Microsoft Intune의 DEM(디바이스 등록 관리자) 계정은 150개로 제한됩니다.
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>DEM 계정을 사용하여 등록된 디바이스의 제한 사항
 

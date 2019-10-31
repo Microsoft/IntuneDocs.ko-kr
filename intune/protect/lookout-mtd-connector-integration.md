@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b61281b0e82bcb839efdc31726d398eea08c364f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502193"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810231"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Intune과 Lookout Mobile Endpoint Security 통합 설정
 [필수 조건](lookout-mobile-threat-defense-connector.md#prerequisites)에 맞는 환경에서는 Intune과 Lookout Mobile Endpoint Security를 통합할 수 있습니다. 이 문서의 정보에서는 통합을 설정하고 Intune과 함께 사용하기 위해 Lookout에서 중요 설정을 구성하는 방법을 안내합니다.  
@@ -69,6 +69,9 @@ Intune과 Lookout Mobile Endpoint Security 구독 통합을 사용하도록 설�
    이 정보를 수집한 후 Lookout 지원 센터로 문의하세요(메일: enterprisesupport@lookout.com). Lookout 지원 팀은 주요 담당자와 함께 제공받은 정보를 사용하여 구독을 등록하고 Lookout 엔터프라이즈 계정을 만듭니다.  
 
 ## <a name="configure-your-lookout-subscription"></a>Lookout 구독 구성  
+
+다음 단계는 Lookout Enterprise 관리 콘솔에서 완료해야 하며 Intune 등록된 디바이스(디바이스 컴플라이언스를 통해) **및** 등록되지 않은 디바이스(앱 보호 정책을 통해)에 대해 Lookout 서비스에 연결할 수 있습니다.
+
 Lookout 지원 팀이 Lookout 엔터프라이즈 계정을 만들면 사용자 회사의 주요 담당자에게 로그인 URL의 링크(https://aad.lookout.com/les?action=consent )가 포함된 이메일을 전송합니다. 
 
 ### <a name="initial-sign-in"></a>초기 로그인  
@@ -110,20 +113,7 @@ MES Lookout 콘솔에 처음 로그인하면 동의 페이지(https://aad.lookou
 6. **커넥터 만들기**를 선택하여 커넥터 구성을 완료합니다. 결과에 만족한 경우 나중에 등록을 추가 사용자 그룹으로 확장할 수 있습니다.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Lookout을 Mobile Threat Defense 공급자로 사용하도록 Intune 구성
-Lookout MES를 구성한 후에 Intune에서 Lookout의 연결을 설정해야 합니다.  
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-
-2. **디바이스 준수** > **Mobile Threat Defense**로 이동하고 **추가**를 선택합니다.
-
-3. ‘커넥터 추가’ 창에서 드롭다운 목록을 사용하여 **Lookout for Work**를 선택합니다.   
-
-4. **만들기**를 선택합니다. 커넥터에서 Lookout MES와의 연결이 설정되면 ‘커넥터 설정’을 사용할 수 있습니다. 
-
-5. **iOS 디바이스에 대해 앱 동기화 사용**을 **켬**으로 설정합니다. 
-
-6. **저장**을 선택하여 구성을 완료합니다.  Intune과 Lookout MES가 이제 통합되고 사용할 준비가 됩니다.
-
+Lookout MES를 구성한 후에 [Intune에서 Lookout](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable)의 연결을 설정해야 합니다.  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>MES Lookout 콘솔의 추가 설정
 다음은 MES Lookout 콘솔에서 구성할 수 있는 추가 설정입니다.  
@@ -146,8 +136,6 @@ Lookout MES 콘솔에서 **시스템** > **Manage Enrollment**(등록 관리) > 
 
   ![사용자 계정이 표시된 기본 설정 페이지의 스크린샷](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
 
-
-
 ## <a name="configure-threat-classifications"></a>위협 분류 구성  
 Lookout Mobile Endpoint Security는 다양한 종류의 모바일 위협을 분류합니다. Lookout 위협 분류에는 기본 위험 수준이 연결되어 있습니다. 위협 수준은 언제든지 회사 요구 사항에 맞게 변경할 수 있습니다.
 
@@ -167,4 +155,5 @@ Lookout Mobile Endpoint Security는 다양한 종류의 모바일 위협을 분�
 
 ## <a name="next-steps"></a>다음 단계
 
-[Lookout 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [등록된 디바이스에 대해 Lookout 앱 설정](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [등록되지 않은 디바이스에 대해 Lookout 앱 설정](~/protect/mtd-add-apps-unenrolled-devices.md)
