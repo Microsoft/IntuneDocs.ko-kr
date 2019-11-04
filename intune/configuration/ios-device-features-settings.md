@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506732"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057656"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune에서 일반적인 iOS 기능을 사용하는 iOS 및 iPadOS 디바이스 설정
 
@@ -266,7 +266,7 @@ iPhone에 정책을 할당할 때 페이지는 다음 이미지와 유사합니�
   - **특정 웹 사이트만**(Safari 웹 브라우저만 해당): 이러한 URL은 Safari 브라우저의 책갈피에 추가됩니다. 사용자는 이 사이트**만** 방문이 허용됩니다. 다른 사이트를 열 수 없습니다. 사용자가 액세스할 수 있는 URL의 정확한 목록을 알고 있는 경우에만 이 옵션을 사용합니다.
 
     - **URL**: 허용하려는 웹 사이트의 URL을 입력합니다. 예를 들어 다음과 같이 입력합니다. `https://www.contoso.com`
-    - **책갈피 경로**: 책갈피를 저장할 경로를 입력합니다. 예를 들어 다음과 같이 입력합니다. `/Contoso/Business Apps` 경로를 추가하지 않으면 디바이스의 기본 책갈피 폴더에 책갈피가 추가됩니다.
+    - **책갈피 경로**: Apple이 설정을 변경 했습니다. 모든 책갈피는 승인 된 **사이트** 폴더로 이동 합니다. 책갈피는 입력 하는 책갈피 경로로 이동 하지 않습니다.
     - **제목**: 책갈피에 대한 설명이 포함된 제목을 입력합니다.
 
     URL을 입력하지 않는 경우 최종 사용자는 `microsoft.com`, `microsoft.net` 및 `apple.com`을 제외한 웹 사이트에 액세스할 수 없습니다. 이러한 URL은 Intune에서 자동으로 허용됩니다.
@@ -280,7 +280,7 @@ iPhone에 정책을 할당할 때 페이지는 다음 이미지와 유사합니�
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>설정이 적용 되는 대상: 모든 등록 형식
 
-- **Sso 앱 확장 유형**: 자격 증명 sso 앱 확장의 유형을 선택 합니다. SSO 앱 확장 프로필을 저장 하는 경우 SSO 앱 확장 유형을 변경할 수 없습니다. 옵션은 다음과 같습니다.
+- **Sso 앱 확장 유형**: 자격 증명 sso 앱 확장의 유형을 선택 합니다. 옵션은 다음과 같습니다.
 
   - **구성 되지 않음**: 앱 확장이 사용 되지 않습니다. 앱 확장을 사용 하지 않도록 설정 하려면 SSO 앱 확장 유형을 **Kerberos** 또는 **자격 증명** 에서 **구성 되지 않음**으로 전환할 수 있습니다.
   - **자격 증명**: 사용자 지정 가능한 일반 자격 증명 앱 확장을 사용 하 여 SSO를 수행 합니다. 조직의 SSO 앱 확장에 대 한 확장 ID를 알고 있어야 합니다.

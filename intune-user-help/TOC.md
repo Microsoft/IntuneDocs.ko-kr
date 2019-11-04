@@ -64,8 +64,14 @@
 ## [iOS 디바이스 사용](using-your-iOS-device-with-intune.md)
 ### [iOS 디바이스 재설정 효과](effects-of-device-reset-company-portal-ios.md)
 ### [회사 포털 설치 및 로그인](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
-### [iOS 디바이스 등록](enroll-your-device-in-intune-ios.md)
-### [조직 제공 iOS 디바이스 등록](enroll-your-device-dep-ios.md)
+### 디바이스 등록
+#### [iOS 디바이스 등록](enroll-your-device-in-intune-ios.md)
+#### [조직 제공 iOS 디바이스 등록](enroll-your-device-dep-ios.md)
+#### 파생된 자격 증명을 사용하여 등록
+##### [Entrust Datacard를 사용하여 등록](enroll-ios-device-entrust-datacard.md)
+##### [Intercede를 사용하여 등록](enroll-ios-device-intercede.md)
+##### [DISA Purebred를 사용하여 등록](enroll-ios-device-disa-purebred.md)
+
 
 ### [디바이스에서 관리되는 앱 사용](use-managed-apps-on-your-device-ios.md)
 ### [암호 설정 또는 변경](set-or-change-your-passcode-ios.md)

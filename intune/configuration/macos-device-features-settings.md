@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776920"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143165"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune에서 macOS 디바이스 기능 설정
 
@@ -129,7 +129,7 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>설정이 적용 되는 대상: 모든 등록 형식 
 
-- **Sso 앱 확장 유형**: 자격 증명 sso 앱 확장의 유형을 선택 합니다. SSO 앱 확장 프로필을 저장 하는 경우 SSO 앱 확장 유형을 변경할 수 없습니다. 옵션은 다음과 같습니다.
+- **Sso 앱 확장 유형**: 자격 증명 sso 앱 확장의 유형을 선택 합니다. 옵션은 다음과 같습니다.
 
   - **구성 되지 않음**: 앱 확장이 사용 되지 않습니다. SSO 앱 확장을 사용 하지 않도록 설정 하려면 SSO 앱 확장 유형을 **Kerberos** 또는 **자격 증명** 에서 **구성 되지 않음**으로 전환 합니다.
   - **자격 증명**: 사용자 지정 가능한 일반 자격 증명 앱 확장을 사용 하 여 SSO를 사용 합니다. 조직의 SSO 앱 확장에 대 한 확장 ID 및 팀 ID를 알고 있어야 합니다.  
@@ -143,7 +143,7 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 
   [팀 ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple 웹 사이트 열기)를 찾아 자세한 정보를 찾습니다.
 
-- **영역**: Kerberos 영역 이름을 입력 합니다. 영역 이름은 대문자 여야 합니다 (예: `CONTOSO.COM`). 일반적으로 영역 이름은 DNS 도메인 이름과 동일 하지만 모두 대문자로 되어 있습니다.
+- **영역**: 인증 영역 이름을 입력 합니다. 영역 이름은 대문자 여야 합니다 (예: `CONTOSO.COM`). 일반적으로 영역 이름은 DNS 도메인 이름과 동일 하지만 모두 대문자로 되어 있습니다.
 - **도메인**: SSO를 통해 인증할 수 있는 사이트의 도메인 또는 호스트 이름을 입력 합니다. 예를 들어 웹 사이트가 `mysite.contoso.com` 인 경우 `mysite`은 호스트 이름이 고, `contoso.com`는 도메인 이름입니다. 사용자가 이러한 사이트에 연결 하면 앱 확장이 인증 챌린지를 처리 합니다. 이 인증을 사용 하면 사용자가 얼굴 ID, Touch ID 또는 Apple pincode/암호를 사용 하 여 로그인 할 수 있습니다.
 
   - Single Sign-On 앱 확장 Intune 프로필의 모든 도메인은 고유 해야 합니다. 다른 유형의 SSO 앱 확장을 사용 중인 경우에도 로그온 앱 확장 프로필에서 도메인을 반복할 수 없습니다.

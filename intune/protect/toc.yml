@@ -249,6 +249,8 @@
               href: security-baseline-settings-mdm-all.md
             - name: Microsoft Defender ATP 기준 설정
               href: security-baseline-settings-defender-atp.md
+            - name: Microsoft Edge 기준선 설정
+              href: security-baseline-settings-edge.md
         - name: Windows 업데이트 설정
           href: windows-update-settings.md
         - name: 규정 준수 정책 설정 - Android

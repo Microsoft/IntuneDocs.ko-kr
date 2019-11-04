@@ -17,24 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490978"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413869"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 iOS용 Microsoft Intune 앱 래핑 도구를 사용하면 앱 자체의 코드를 변경하지 않고 사내 iOS 앱에 대한 Intune 앱 보호 정책을 사용하도록 설정할 수 있습니다.
 
 이 도구는 앱 주위에 '래퍼'를 만드는 Mac OS 명령줄 애플리케이션입니다. 앱이 처리된 후 해당 앱에 [앱 보호 정책](../apps/app-protection-policies.md)을 배포하여 앱의 기능을 변경할 수 있습니다.
 
 이 도구를 다운로드하려면 GitHub에서 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)(iOS용 Microsoft Intune 앱 래핑 도구)를 참조하세요.
-
-
 
 ## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>앱 래핑 도구의 일반 필수 조건
 
@@ -74,6 +70,7 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 * 내부 배포 프로비전 프로필
 
 ### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Apple Developer Enterprise 계정을 만드는 단계
+
 1. [Apple Developer Enterprise Program 사이트](https://developer.apple.com/programs/enterprise/)로 이동합니다.
 
 2. 페이지의 오른쪽 위에서 **Enroll**(등록)을 클릭합니다.
@@ -86,11 +83,11 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 
 6. 조직의 정보로 양식을 작성합니다. **Continue(계속)** 를 클릭합니다. 이제, Apple에서 사용자에게 연락하여 조직을 등록할 권한이 있는지 확인합니다.
 
-8. 확인 후 **Agree to License**(라이선스에 동의)를 클릭합니다.
+7. 확인 후 **Agree to License**(라이선스에 동의)를 클릭합니다.
 
-9. 라이선스에 동의한 후 **프로그램을 구매하고 활성화**하여 완료합니다.
+8. 라이선스에 동의한 후 **프로그램을 구매하고 활성화**하여 완료합니다.
 
-10. 팀 에이전트(조직을 대신하여 Apple Developer Enterprise Program에 참가하는 사람)인 경우 먼저 팀 구성원을 초대하고 역할을 할당하여 팀을 구성합니다. 팀을 관리하는 방법을 알아보려면 [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1)(개발자 계정 팀 관리)에 대한 Apple 설명서를 참조하세요.
+9. 팀 에이전트(조직을 대신하여 Apple Developer Enterprise Program에 참가하는 사람)인 경우 먼저 팀 구성원을 초대하고 역할을 할당하여 팀을 구성합니다. 팀을 관리하는 방법을 알아보려면 [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1)(개발자 계정 팀 관리)에 대한 Apple 설명서를 참조하세요.
 
 ### <a name="steps-to-create-an-apple-signing-certificate"></a>Apple 서명 인증서를 만드는 단계
 
@@ -145,8 +142,6 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 
     ![iPhone 정보 - SHA1 문자열 지문](./media/app-wrapper-prepare-ios/iOS-signing-cert-9.png)
 
-
-
 ### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>내부 배포 프로비전 프로필을 만드는 단계
 
 1. [Apple Developer 계정 포털](https://developer.apple.com/account/)로 돌아가 조직의 Apple ID로 **로그인**합니다.
@@ -164,8 +159,6 @@ Intune에서 래핑된 앱을 배포하려면 다음과 같은 항목이 필요�
 6. macOS 컴퓨터로 프로필(확장명 .mobileprovision)을 다운로드는 단계를 따릅니다.
 
 7. 기억하기 쉬운 위치에 파일을 저장합니다. 이 파일은 앱 래핑 도구를 사용하는 동안 -p 매개 변수에 사용됩니다.
-
-
 
 ## <a name="download-the-app-wrapping-tool"></a>앱 래핑 도구 다운로드
 
@@ -195,6 +188,7 @@ macOS 터미널을 열고 다음 명령을 실행합니다.
 ```
 
 ### <a name="command-line-parameters"></a>명령줄 매개 변수
+
 앱 래핑 도구에는 다음 명령줄 매개 변수를 사용할 수 있습니다.
 
 |속성|사용 방법|
@@ -216,6 +210,7 @@ macOS 터미널을 열고 다음 명령을 실행합니다.
 |**-f**|(선택 사항) `<Path to a plist file specifying arguments.>` plist 템플릿을 사용하여 -i, -o, -p와 같은 나머지 IntuneMAMPackager 속성을 지정하도록 선택하는 경우 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 앞에 이 플래그를 사용합니다. plist를 사용하여 인수 입력을 참조하세요. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>plist를 사용하여 인수 입력
+
 앱 래핑 도구를 실행하는 간단한 방법은 모든 명령 인수를 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 파일에 두는 것입니다. Plist는 형식 인터페이스를 사용하여 명령줄 인수를 입력하기 위해 사용할 수 있는 XML과 비슷한 파일 형식입니다.
 
 IntuneMAMPackager/Contents/MacOS 폴더에서 텍스트 편집기 또는 Xcode를 사용하여 빈 plist 템플릿인 `Parameters.plist`을(를) 엽니다. 다음 키에 대한 인수를 입력합니다.
@@ -236,7 +231,6 @@ IntuneMAMPackager/Contents/MacOS 폴더에서 텍스트 편집기 또는 Xcode�
 | Citrix XenMobile App SDK 포함 (네트워크 전용 변형)|부울|false| -Citrix와 동일|
 | 확장 프로비전 프로필 경로 |문자열 배열|비어 있음| 앱에 대한 확장 프로비전 프로필의 배열입니다.
 
-
 유일한 인수로써 plist와 함께 IntuneMAMPackager를 실행합니다.
 
 ```bash
@@ -255,19 +249,24 @@ IntuneMAMPackager/Contents/MacOS 폴더에서 텍스트 편집기 또는 Xcode�
 이제 앱을 사용자 그룹에 배포하고 앱 보호 정책을 적용할 대상으로 지정할 수 있습니다. 지정한 앱 보호 정책을 사용하여 디바이스에서 앱이 실행됩니다.
 
 ## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 iOS 애플리케이션을 얼마나 자주 다시 래핑해야 하나요?
+
 애플리케이션을 다시 줄 바꿈해야 하는 주요 시나리오는 다음과 같습니다.
+
 * 애플리케이션 자체가 새 버전을 릴리스했습니다. 이전 버전의 앱이 래핑되어 Intune 콘솔에 업로드되었습니다.
 * iOS용 Intune 앱 래핑 도구는 주요 버그 수정 또는 새로운 특정 Intune 애플리케이션 보호 정책 기능을 사용할 수 있는 새 버전을 릴리스했습니다. 이 릴리스는 [iOS용 Microsoft Intune 앱 래핑 도구](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)에 대한 GitHub 리포지토리를 통해 6-8주 후에 발생합니다.
 
 iOS의 경우 앱에 서명하는 데 사용된 원본이 아닌 다른 인증서/프로비전 프로필을 사용하여 래핑할 수 있지만, 앱에 지정된 자격이 새 프로비전 프로필에 포함되어 있지 않으면 래핑이 실패합니다. 누락된 자격을 앱에서 제거하는 "-e" 명령줄 옵션을 사용하여 이 시나리오에서 래핑이 실패하지 않도록 강제로 적용하면 앱에서 기능이 손상될 수 있습니다.
 
 다시 줄 바꿈하기 위한 몇 가지 모범 사례는 다음과 같습니다.
+
 * 다른 프로비전 프로필에 모든 필요한 자격이 이전 프로비전 프로필로 있는지 확인합니다. 
 
 ## <a name="error-messages-and-log-files"></a>오류 메시지 및 로그 파일
+
 앱 래핑 도구 관련 문제를 해결하려면 다음 정보를 사용하세요.
 
 ### <a name="error-messages"></a>오류 메시지
+
 앱 래핑 도구가 정상적으로 완료되지 않으면 다음 오류 메시지 중 하나가 콘솔에 표시됩니다.
 
 |오류 메시지|추가 정보|
@@ -291,6 +290,7 @@ iOS의 경우 앱에 서명하는 데 사용된 원본이 아닌 다른 인증�
 |경고: SHA1 인증서 해시를 지정하지 않았습니다. 배포 전에 래핑된 애플리케이션이 서명되어 있는지 확인하세요.|–c 명령줄 플래그 다음에 유효한 SHA1 해시를 지정했는지 확인합니다. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>앱 래핑 도구의 로그 파일
+
 앱 래핑 도구를 사용하여 앱을 래핑하면 iOS 클라이언트 디바이스 콘솔에 작성되는 로그가 생성됩니다. 애플리케이션에서 문제가 발생하여 앱 래핑 도구 관련 문제인지를 파악해야 하는 경우 이 정보가 유용합니다. 이 정보를 검색하려면 다음 단계를 수행합니다.
 
 1. 앱을 실행하여 문제를 재현합니다.
@@ -310,7 +310,6 @@ iOS의 경우 앱에 서명하는 데 사용된 원본이 아닌 다른 인증�
 
     래핑된 앱은 앱 작동이 중단된 후 전자 메일을 통해 디바이스에서 로그를 직접 보내는 옵션도 제공합니다. 사용자는 개발자가 점검하여 필요한 경우 Microsoft로 전달할 수 있는 로그를 보낼 수 있습니다.
 
-
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>인증서, 프로비저닝 프로필 및 인증 요구 사항
 
 iOS용 앱 래핑 도구에는 전체 기능을 보장하기 위해 충족해야 하는 몇 가지 요구 사항이 있습니다.
@@ -321,8 +320,8 @@ iOS용 앱 래핑 도구에는 전체 기능을 보장하기 위해 충족해야
 |iOS 서명 인증서|서명 인증서를 지정하기 전에 인증서가 유효한지 확인합니다. 도구에서는 iOS 앱을 처리할 때 인증서가 만료되었는지 확인하지 않습니다. 따라서 만료된 인증서의 해시를 제공하면 도구에서 앱을 처리하고 서명을 하기는 하지만 디바이스에 앱을 설치하지는 못합니다.<br /><br />래핑된 앱에 서명하기 위해 제공된 인증서와 일치하는 항목이 프로비저닝 프로필에 있는지 확인합니다. 도구에서는 래핑된 애플리케이션에 서명하기 위해 제공된 인증서에 대해 프로비저닝 프로필에 일치하는 항목이 있는지 확인하지 않습니다.|
 |인증|암호화가 작동하려면 디바이스에 PIN이 있어야 합니다. 사용자는 래핑된 앱을 배포한 디바이스의 상태 표시줄을 터치할 때 회사 또는 학교 계정을 사용하여 다시 로그인해야 합니다. 래핑된 앱의 기본 정책은 *다시 시작할 때 인증*입니다. iOS는 앱을 종료했다가 다시 시작할 때 전화 통화 등의 외부 알림을 처리합니다.
 
-
 ## <a name="setting-app-entitlements"></a>앱 자격 설정
+
 앱을 래핑하기 전에 *자격*을 부여하여 앱이 일반적으로 수행할 수 있는 작업을 초과하는 추가적인 권한 및 기능을 제공할 수 있습니다. *자격 파일*은 앱 내에서 특정 권한(예: 공유 키 집합에 대한 액세스 권한)을 지정하는 코드 서명 동안 사용됩니다. *기능*이라는 특정 앱 서비스는 앱 개발 동안 Xcode 내에서 사용하도록 설정됩니다. 이렇게 사용하도록 설정되면 기능이 자격 파일에 반영됩니다. 자격 및 기능에 대한 자세한 내용은 iOS 개발자 라이브러리의 [기능 추가](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)를 참조하세요. 지원되는 전체 기능 목록이 필요하면 [지원되는 기능](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html)을 참조하세요.
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>IOS용 앱 래핑 도구에 지원되는 기능
@@ -363,6 +362,7 @@ iOS용 앱 래핑 도구에는 전체 기능을 보장하기 위해 충족해야
 3. 모든 필수 구성 요소가 충족되었는지 확인한 다음 앱을 래핑합니다.
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>자격과 관련한 일반적인 오류 문제 해결
+
 iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문제 해결 절차를 수행해 보세요.
 
 |문제|원인|해결 방법|
@@ -371,6 +371,7 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 |프로비저닝 프로필에 자격이 누락되었습니다(누락된 자격이 나열됨). 이러한 자격이 있는 프로비저닝 프로필로 앱을 다시 패키징합니다.|프로비저닝 프로필에서 사용할 수 있는 자격과 앱에서 사용할 수 있는 기능 간에 일치하지 않는 사항이 있습니다. 이 불일치는 특정 기능(앱 그룹 및 키 집합 액세스 등)과 연결된 ID에도 적용됩니다.|일반적으로 앱과 동일한 기능을 사용하는 새 프로비저닝 프로필을 만들 수 있습니다. 프로필과 앱 간 ID가 일치하지 않으면 가능할 경우 앱 래핑 도구가 ID 대체하게 됩니다. 새 프로비저닝 프로필을 만든 후에도 이 오류가 여전히 발생하면 -e 매개 변수를 사용하여 앱에서 자격의 제거를 시도할 수 있습니다(앱 섹션의 "-e 매개 변수를 사용하여 앱에서 자격 제거" 참조).|
 
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>서명된 앱의 기존 자격 찾기
+
 서명된 앱 및 프로비저닝 프로필의 기존 자격을 확인하려면
 
 1. .ipa 파일을 찾고 확장명을 .zip으로 변경합니다.
@@ -390,6 +391,7 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>–e 매개 변수를 사용하여 앱에서 자격 제거
+
 이 명령은 자격 파일에 없는 앱에서 사용할 수 있는 기능을 모두 제거합니다. 앱에서 사용 중인 기능을 제거하면 앱이 중단될 수 있습니다. 누락된 기능을 제거할 수 있는 경우의 예는 기본적으로 모든 기능을 갖춘 공급업체 제작 앱입니다.
 
 ```bash
@@ -397,6 +399,7 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 ```
 
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>앱 래핑 도구의 보안 및 개인 정보
+
 앱 래핑 도구를 사용할 때는 다음의 보안 및 개인 정보 관련 모범 사례를 사용합니다.
 
 - 지정하는 서명 인증서, 프로비저닝 프로필, LOB(기간 업무) 앱은 앱 래핑 도구를 실행하는 데 사용하는 것과 같은 macOS 컴퓨터에 있어야 합니다. 파일이 UNC 경로에 있으면 macOS 컴퓨터에서 해당 파일에 액세스할 수 있는지 확인합니다. IPsec 또는 SMB 서명을 통해 경로를 보호해야 합니다.
@@ -414,6 +417,7 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 - 래핑된 앱 내에서 디바이스의 문서 폴더를 모니터링할 때는 .msftintuneapplauncher라는 폴더가 표시될 수 있습니다. 이 파일을 변경하거나 삭제하면 제한된 앱이 정상적으로 작동하지 않을 수 있습니다.
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>iOS용 Intune 앱 래핑 도구(Citrix MDX mVPN 포함)
+
 이 기능은 앱 래핑 도구를 iOS용 Citrix MDX 앱 래퍼에 통합합니다. 통합이 수행되면 일반 Intune 앱 래핑 도구에 추가적인 선택적 명령줄 플래그 `-citrix`가 추가됩니다.
 
 ### <a name="requirements"></a>요구 사항
@@ -424,6 +428,7 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 > Intune과 Citrix 통합에 대한 지원은 iOS 10 이상의 디바이스에서만 지원됩니다.
 
 ### <a name="use-the--citrix-flag"></a>`-citrix` 플래그 사용
+
 일반적인 앱 래핑 명령에 `-citrix` 플래그를 덧붙여 실행합니다. 현재 `-citrix` 플래그는 인수를 지원하지 않습니다.
 
 **사용 형식**:
@@ -439,6 +444,7 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 ```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>래핑된 애플리케이션에 대한 로그 가져오기
+
 문제 해결 중에 래핑된 애플리케이션에 대한 로그를 가져오려면 다음 단계를 따르세요.
 
 1. 디바이스에서 iOS 설정 앱으로 이동한 다음 LOB 앱을 선택합니다.

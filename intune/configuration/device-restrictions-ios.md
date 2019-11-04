@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785514"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414686"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 iOS 및 iPadOS 디바이스 설정
 
@@ -167,7 +167,33 @@ ms.locfileid: "72785514"
   iOS에는이 설정에 영향을 줄 수 있는 기본 제공 보안이 있습니다. 예를 들어 iOS는 로그인 실패 횟수에 따라 정책 트리거를 지연 시킬 수 있습니다. 한 번의 시도로 동일한 암호를 반복적으로 입력 하는 것을 고려할 수도 있습니다. Apple의 [iOS 보안 가이드](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (apple의 웹 사이트 열림)는 좋은 리소스 이며 암호에 대 한 보다 구체적인 정보를 제공 합니다.
   
 - **화면 잠금 후 암호를 요구하기 전까지 최대 시간(분)** <sup>1</sup>: 사용자가 암호를 다시 입력해야 하기 전까지 디바이스가 유휴 상태로 있는 시간을 입력합니다. 입력한 시간이 현재 디바이스에 설정된 시간보다 길면 디바이스는 입력된 시간을 무시합니다. iOS 8.0 이상 디바이스에서 지원됩니다.
-- **화면이 잠기기 전까지 최대 비활성 시간(분)** <sup>1</sup>: 디바이스에서 화면이 잠기기 전까지 비활성 상태로 유지될 수 있는 최대 시간(분)을 입력합니다. 입력한 시간이 현재 디바이스에 설정된 시간보다 길면 디바이스는 입력된 시간을 무시합니다. **즉시**로 설정 하면 해당 장치의 최소 시간에 따라 화면이 잠깁니다. IPhone에서는 30 초입니다. IPad에서 2 분입니다.
+
+- **화면이 잠기기 전까지 최대 비활성 시간(분)** <sup>1</sup>: 디바이스에서 화면이 잠기기 전까지 비활성 상태로 유지될 수 있는 최대 시간(분)을 입력합니다.
+
+  **iOS 옵션**:  
+
+  - **구성 되지 않음** (기본값): Intune이이 설정을 건드리지 않습니다.
+  - **즉시**: 비활성 30 초 후 화면 잠금.
+  - **1**분 동안 작업을 수행 하지 않으면 화면 잠금
+  - **2**: 2 분 동안 활동이 없으면 화면이 잠깁니다.
+  - **3**: 3 분 동안 활동이 없으면 화면이 잠깁니다.
+  - **4**: 비활성 시간 4 분 후 화면 잠금
+  - **5**분 비활성 후 5 분 후 화면 잠금
+    
+  **iPadOS 옵션**:  
+
+  - **구성 되지 않음** (기본값): Intune이이 설정을 건드리지 않습니다.
+  - **즉시**: 2 분 동안 활동이 없으면 화면이 잠깁니다.
+  - **2**: 2 분 동안 활동이 없으면 화면이 잠깁니다.
+  - **5**분 비활성 후 5 분 후 화면 잠금
+  - **10**: 비활성 시간이 10 분 이면 화면이 잠깁니다.
+  - **15**: 15 분 동안 활동이 없으면 화면이 잠깁니다.
+
+  값이 iOS 또는 iPadOS에 적용 되지 않는 경우 Apple은 가장 가까운 가장 *작은* 값을 사용 합니다. 예를 들어 `4` 분을 입력 하는 경우 iPadOS 장치는 `2` 분을 사용 합니다. `10` 분을 입력 하면 iOS 장치에서 `5` 분이 사용 됩니다. 이는 Apple의 제한 사항입니다.
+  
+  > [!NOTE]
+  > 이 설정에 대 한 Intune UI는 iOS 및 iPadOS 지원 되는 값을 구분 하지 않습니다. 이후 릴리스에서 UI를 업데이트할 수 있습니다.
+
 - **암호 만료(일)** : 디바이스 암호를 변경해야 할 때까지의 기간(일)을 입력합니다.
 - **이전 암호 다시 사용 방지**: 이전 암호를 다시 사용하기 전까지 사용해야 하는 새 암호의 수를 입력합니다.
 - **TOUCH id 및 FACE id 잠금 해제**: 지문 또는 얼굴을 사용 하 여 장치의 잠금을 해제 하지 못하도록 **차단** 을 선택 합니다. **구성되지 않음**을 사용하면 사용자가 이러한 방법을 사용하여 디바이스 잠금을 해제할 수 있습니다.

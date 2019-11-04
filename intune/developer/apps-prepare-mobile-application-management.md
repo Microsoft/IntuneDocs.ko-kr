@@ -17,20 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1750f789cfac98af998ebbd86b10a4e93a1772a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490824"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413824"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>앱 보호 정책에 대해 LOB(기간 업무) 앱 준비
-
-[!INCLUDE[both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Intune 앱 래핑 도구 또는 Intune 앱 SDK를 사용하여 앱에서 앱 보호 정책을 사용할 수 있게 할 수 있습니다. 이 정보를 사용하여 이러한 두 가지 방법 및 사용 시기에 대해 알아보세요.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune 앱 래핑 도구
+
 앱 래핑 도구는 **내부** LOB(기간 업무) 앱에 주로 사용됩니다. 이 도구는 앱을 둘러싸는 래퍼를 만들어 앱이 Intune 앱 보호 정책에 의해 관리될 수 있게 하는 명령줄 애플리케이션입니다. ISV(Independent Software Vendor)가 제공하는 앱을 보호할 때는 ISV가 래핑된 앱을 계속해서 지원할지 여부를 명시하는 것이 중요합니다.
 
 도구를 사용하기 위해 소스 코드가 필요하지는 않지만 서명 자격 증명이 필요합니다. 서명 자격 증명에 대한 자세한 내용은 [Intune 블로그](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)를 참조하세요. 앱 래핑 도구 설명서는 [Android 앱 래핑 도구](app-wrapper-prepare-android.md) 및 [iOS 앱 래핑 도구](app-wrapper-prepare-ios.md) 항목을 참조하세요.
@@ -40,6 +39,7 @@ Intune 앱 래핑 도구 또는 Intune 앱 SDK를 사용하여 앱에서 앱 보
 Intune에 등록되지 않은 디바이스의 앱 보호 정책에 대한 앱 래핑 도구에 대한 자세한 내용은 [Microsoft Intune에 등록되지 않은 디바이스의 기간 업무 앱 및 데이터 보호](../apps/apps-add.md)를 참조하세요.
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>앱 래핑 도구를 사용하는 이유
+
 * 앱에 기본 제공 데이터 보호 기능이 없습니다.
 * 앱이 간단합니다.
 * 앱이 내부적으로 배포됩니다.
@@ -55,11 +55,13 @@ Intune에 등록되지 않은 디바이스의 앱 보호 정책에 대한 앱 �
 |**OWA(Outlook Web Access)**|아니요 – [Intune 앱 SDK Xamarin 바인딩](app-sdk-xamarin.md)을 사용합니다.|예|
 
 ## <a name="intune-app-sdk"></a>Intune 앱 SDK
+
 앱 SDK는 주로 Apple 앱 스토어 및/또는 Google Play 스토어에 앱이 있으며 Intune으로 앱을 관리할 수 있기를 원하는 고객을 위해 설계되었습니다. 그러나 기간 업무 앱을 비롯한 모든 앱은 SDK 통합을 활용할 수 있습니다.
 
 SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하세요. SDK 사용을 시작하려면 [Microsoft Intune 앱 SDK 시작](app-sdk-get-started.md) 항목을 참조하세요.
 
 ### <a name="reasons-to-use-the-sdk"></a>SDK를 사용하는 이유
+
 * 앱에 기본 제공 데이터 보호 기능이 없습니다.
 * 앱이 복잡하며 다양한 환경을 포함하고 있습니다.
 * 앱이 Google Play 또는 Apple의 앱 스토어와 같은 공개 앱 스토어에 배포됩니다.
@@ -74,10 +76,12 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 |**iOS**|예 – [Intune 앱 SDK Xamarin 바인딩](app-sdk-xamarin.md)을 사용합니다.|아니요|
 |**OWA(Outlook Web Access)**| 예 – [Intune 앱 SDK Xamarin 바인딩](app-sdk-xamarin.md)을 사용합니다.|아니요|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>위에 나열 된 앱 개발 플랫폼을 사용 하지 않나요? 
+### <a name="not-using-an-app-development-platform-listed-above"></a>위에 나열 된 앱 개발 플랫폼을 사용 하지 않나요?
+
 Intune SDK 개발 팀에서는 네이티브 Android, iOS(Obj-C, Swift), Xamarin, Xamarin.Forms 및 Cordova 플랫폼으로 빌드된 앱을 적극적으로 테스트하고 해당 앱에 대한 지원을 유지합니다. 일부 고객은 React Native와 NativeScript 같은 다른 플랫폼과 Intune SDK 통합에 성공했지만, Microsoft는 지원되는 플랫폼 외에 다른 플랫폼을 사용하는 앱 개발자를 위한 명확한 지침이나 플러그 인을 제공하지 않습니다. 
 
 ## <a name="feature-comparison"></a>기능 비교
+
 이 표에는 앱 SDK 및 앱 래핑 도구에 사용할 수 있는 설정이 나와 있습니다.
 
 > [!NOTE]

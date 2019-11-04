@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915714"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143033"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정
 
@@ -42,7 +42,7 @@ ms.locfileid: "72915714"
   - **자동 허용**: 사용 권한이 자동으로 부여됩니다.
   - **자동 거부**: 사용 권한이 자동으로 거부됩니다.
 - **날짜 및 시간 변경**: **차단**을 선택하면 사용자가 날짜 및 시간을 수동으로 설정할 수 없습니다. **구성되지 않음**을 사용하면 사용자가 디바이스에서 날짜 및 시간을 설정할 수 있습니다.
-- **볼륨 변경**: **차단**을 선택하여 사용자가 디바이스의 볼륨을 변경하지 못하도록 합니다. **구성되지 않음**을 사용하면 디바이스에서 볼륨 설정을 사용할 수 있습니다.
+- **볼륨 변경**: **블록** 은 사용자가 장치의 볼륨을 변경 하는 것을 방지 하 고 마스터 볼륨도 mutes 합니다. **구성되지 않음**을 사용하면 디바이스에서 볼륨 설정을 사용할 수 있습니다.
 - **초기화**: **차단**을 선택하면 사용자가 디바이스 설정에서 초기화 옵션을 사용할 수 없습니다. **구성되지 않음**을 사용하면 사용자가 디바이스에서 이 설정을 사용할 수 있습니다.
 - **안전 부팅**: **차단**을 선택하여 디바이스를 안전 모드로 다시 부팅하지 못하도록 합니다. **구성되지 않음**을 사용하면 사용자가 디바이스를 안전 모드로 다시 부팅할 수 있습니다.
 - **상태 표시줄**: **차단**을 선택하면 사용자가 알림 및 빠른 설정을 포함한 상태 표시줄에 액세스할 수 없습니다. **구성되지 않음**을 사용하면 사용자가 상태 표시줄에 액세스할 수 있습니다.
