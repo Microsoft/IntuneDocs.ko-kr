@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c42e5ef50f8a5a8514bc43670fc743f42b1b2d6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 1716da820fd0d9a4b6d1bbc5024440cfb141c5a1
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585828"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889561"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Microsoft Intune에서 파생 자격 증명 사용
 
@@ -64,7 +64,7 @@ Intune은 테넌트당 하나의 파생 자격 증명 발급자를 지원합니�
 - **Entrust Datacard**: https://www.entrustdatacard.com/
 - **Intercede**: https://www.intercede.com/
 
-다른 발급자를 사용하는 방법에 대한 중요한 세부 정보는 발급자 최종 사용자 워크플로를 포함하여 해당 발급자에 대한 지침을 검토합니다. 자세한 내용은 이 문서에서 [파생 자격 증명에 대한 계획](#plan-for-derived-credentials)을 참조하세요.
+다른 발급자를 사용하는 방법에 대한 중요한 세부 정보는 해당 발급자에 대한 지침을 검토합니다<!-- , including the issuers end-user workflow-->. 자세한 내용은 이 문서에서 [파생 자격 증명에 대한 계획](#plan-for-derived-credentials)을 참조하세요.
 
 > [!IMPORTANT]  
 > 테넌트에서 파생 자격 증명 발급자를 삭제하면 해당 발급자를 통해 설정된 파생 자격 증명이 더 이상 작동하지 않습니다.  
@@ -101,11 +101,14 @@ iOS 디바이스의 경우 [Microsoft Intune에 iOS 스토어 앱 추가](../app
 
 ### <a name="2-review-the-end-user-workflow-for-your-chosen-issuer"></a>2) 선택한 발급자에 대한 최종 사용자 워크플로 검토
 
-다음은 지원되는 각 파트너에 대한 주요 고려 사항과 해당 발급자 최종 사용자 워크플로의 링크입니다.  이 정보를 숙지하여 사용자 및 디바이스가 해당 발급자의 파생 자격 증명 등록을 완료하는 것이 Intune 정책 및 구성에 따라 차단되지 않도록 하세요.
+각 지원 대상 파트너에 관한 주요 고려 사항은 다음과 같습니다<!--  , and links to that issuers end-user workflow -->.  이 정보를 숙지하여 사용자 및 디바이스가 해당 발급자의 파생 자격 증명 등록을 완료하는 것이 Intune 정책 및 구성에 따라 차단되지 않도록 하세요.
 
 #### <a name="disa-purebred"></a>DISA Purebred
 
-[user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred)(DISA Purebred의 사용자 워크플로)를 검토하세요. 이 워크플로의 주요 요구 사항은 다음과 같습니다.  
+최종 사용자 워크플로와 주요 요구 사항 이해하기:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Key requirements for this workflow include:  
+-->
 
 - 사용자는 해당 스마트 카드를 사용하여 발급자에 대해 인증할 수 있는 컴퓨터 또는 키오스크에 액세스할 수 있어야 합니다. 
 
@@ -120,8 +123,11 @@ iOS 디바이스의 경우 [Microsoft Intune에 iOS 스토어 앱 추가](../app
 DISA Purebred 앱을 가져오고 구성하는 방법에 대한 자세한 내용은 이 문서의 뒷부분에 나오는 [DISA Purebred 앱 배포](#deploy-the-disa-purebred-app)를 참조하세요.  
 
 #### <a name="entrust-datacard"></a>Entrust Datacard  
-[user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust)(Entrust Datacard의 사용자 워크플로)를 검토하세요. 이 워크플로의 주요 요구 사항은 다음과 같습니다. 
 
+최종 사용자 워크플로와 주요 요구 사항 이해하기:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Key requirements for this workflow include: 
+--> 
 - 사용자는 해당 스마트 카드를 사용하여 발급자에 대해 인증할 수 있는 컴퓨터 또는 키오스크에 액세스할 수 있어야 합니다. 
 
 - 파생 자격 증명을 등록할 디바이스는 Intune 회사 포털 앱을 설치해야 합니다.
@@ -129,8 +135,11 @@ DISA Purebred 앱을 가져오고 구성하는 방법에 대한 자세한 내용
 - 디바이스 카메라를 사용하여 모바일 디바이스의 파생 자격 증명 요청에 인증 요청을 연결하는 QR 코드를 검색합니다.
 
 #### <a name="intercede"></a>Intercede
-[user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede)(Intercede의 사용자 워크플로)를 검토하세요. 이 워크플로의 주요 요구 사항은 다음과 같습니다. 
 
+최종 사용자 워크플로와 주요 요구 사항 이해하기:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Key requirements for this workflow include: 
+-->
 - 사용자는 해당 스마트 카드를 사용하여 발급자에 대해 인증할 수 있는 컴퓨터 또는 키오스크에 액세스할 수 있어야 합니다. 
 
 - 파생 자격 증명을 등록할 디바이스는 Intune 회사 포털 앱을 설치해야 합니다.

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786140"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057635"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -54,20 +54,90 @@ ms.locfileid: "72786140"
 -->  
 
 
-<!-- ########################## -->
+## <a name="week-of-october-28-2019"></a>2019년 10월 28일이 있는 주
 
+### <a name="app-management"></a>앱 관리 
+
+#### <a name="dark-mode-for-ios-company-portal----4911422---"></a>iOS 회사 포털의 어두운 모드 <!-- 4911422 -->
+어두운 모드는 iOS 회사 포털에 사용할 수 있습니다. 사용자는 회사 앱을 다운로드하고, 디바이스를 관리하며, 디바이스 설정에 따라 본인이 선택한 색 구성표에 관해 IT 지원을 받을 수 있습니다. iOS 회사 포털에서는 최종 사용자의 디바이스 설정을 어두운 또는 밝은 모드에 자동으로 맞춥니다. 자세한 내용은 [iOS용 Microsoft Intune 회사 포털의 어두운 모드 소개](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453)를 참조하세요. iOS 회사 포털에 대한 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](~/apps/company-portal-app.md)을 참조하세요.
+
+#### <a name="android-company-portal-enforced-minimum-app-version----2378776---"></a>Android 회사 포털 적용 최소 앱 버전 <!-- 2378776 -->
+앱 보호 정책의 **최소 회사 포털 버전** 설정을 통해 최종 사용자의 디바이스에 적용되는 정의된 특정 최소 버전의 회사 포털을 지정할 수 있습니다. 이 조건부 시작 설정을 통해서는 값이 일치하지 않을 때 가능한 조치로서 **액세스 차단**, **데이터 지우기**, **경고**를 설정할 수 있습니다. 이 값에 가능한 형식은 *[주].[부]* , *[주].[부].[빌드]* , or *[주].[부].[빌드].[수정]* 의 패턴을 따릅니다. 
+
+**최소 회사 포털 버전** 설정은 구성될 경우 버전 5.0.4560.0이나 그 이후의 회사 포털을 받는 최종 사용자에게 영향을 미칩니다. 이 설정은 이 기능이 릴리스되는 버전 이전의 회사 포털을 사용할 경우 영향을 미치지 않습니다. 앱 자동 업데이트를 디바이스에서 사용 중인 최종 사용자에게는 최신 버전의 회사 포털을 사용하고 있을 수 있으므로 이 기능의 대화 상자가 표시되지 않을 수도 있습니다. 이 설정은 등록 및 미등록 디바이스용 앱 보호 장치가 있는 Android로 한정됩니다. 자세한 내용은 [Android 앱 보호 정책 설정 - 조건부 시작](~/apps/app-protection-policy-settings-android.md#conditional-launch)을 참조하세요.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+
+### <a name="microsoft-365-device-management"></a>Microsoft 365 장치 관리
+
+#### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management-------5630102---"></a>Microsoft 365 장치 관리의 엔드포인트 보안 노드 소개    <!-- 5630102 -->
+
+현재 **엔드포인트 보안** 노드는 다음과 같은 엔드포인트 보호 기능을 그룹화하는 https://devicemanagement.microsoft.com 의 Microsoft 365 장치 관리 전문가 작업 영역에서 일반적으로 사용할 수 있습니다.
+
+- 보안 기준:  사전 구성된 설정 구성으로서 Microsoft가 권장하는 기본값과 알려진 설정 구성을 적용하는 데 도움이 됩니다.
+
+- 보안 작업: Microsoft Defender ATP 위협 요소 및 취약성 관리(TVM)의 이점을 활용하고 Intune을 사용해 엔드포인트의 약점을 해결합니다.
+
+- Microsoft Defender ATP: 통합형 Microsoft Defender Advanced Threat Protection(ATP)으로서 보안 위반 문제 예방에 도움이 됩니다.
+
+이 설정은 디바이스 같은 다른 적용 가능 노드에서 계속 액세스할 수 있으며, 현재 구성된 상태는 어디서 액세스해 이 기능을 활성화하든 동일합니다.
+
+이러한 개선 사항에 대한 자세한 내용은 Microsoft Tech Community 웹 사이트의 [Intune 고객 성공 블로그 게시물](https://aka.ms/Endpoint_security_node)을 참조하세요.
+
+### <a name="device-management"></a>디바이스 관리
+
+#### <a name="intune-supports-ios-11-and-later----4665324----"></a>Intune은 iOS 11 이상을 지원합니다 <!-- 4665324  -->
+
+Intune 등록과 회사 포털은 현재 iOS 버전 11 이상을 지원합니다. 이전 버전은 지원되지 않습니다.
+
+### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
+
+#### <a name="updated-support-experience------5012398---"></a>업데이트된 지원 환경   <!-- 5012398 -->
+
+[Intune 관련 도움말과 지원을 받기](get-support.md)위한 콘솔 내 환경의 업데이트와 간소화를 마쳤습니다.  콘솔 내의 일반 문제 검색과 피드백, 그리고 고객 지원팀 연락에 이용하는 워크플로도 개선되었습니다. 지원 문제를 열 때 언제 콜백이나 이메일 회신을 받게 될지에 대한 예상 정보가 실시간으로 표시되며 프리미어 및 통합 지원 고객은 문제의 심각도를 간편히 지정해 지원을 더 신속히 받을 수 있습니다.
+
+<!-- ########################## -->
 ## <a name="week-of-october-21-2019"></a>2019년 10월 21일이 있는 주
 
-### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>Windows 10 이상 디바이스용 새 디바이스 펌웨어 구성 인터페이스 프로필 <!-- 2266073 idready wnready -->
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="microsoft-365-device-management"></a>Microsoft 365 장치 관리
 
-Windows 10 이상에서는 디바이스 구성 프로필을 만들어 설정 및 기능을 제어할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼용 **Windows 10 이상**). 이 업데이트에는 Intune에서 UEFI(BIOS) 설정을 관리하는 데 사용되는 새 디바이스 펌웨어 구성 인터페이스 프로필 유형이 있습니다.
+#### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>Microsoft 365 장치 관리의 개선된 관리 환경
+
+이제 새롭게 고치고 간소화한 관리 환경을 [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)의 Microsoft 365 장치 관리 전문가 작업 영역에서 흔히 사용할 수 있게 되었으며, 여기에는 다음이 포함됩니다.
+
+- **탐색 업데이트**: 여러 기능을 논리적으로 그룹화하는 간소화된 첫 번째 수준 탐색을 확인할 수 있습니다.
+- **새 플랫폼 필터**: 사용자는 디바이스 및 앱 페이지에서 선택된 플랫폼의 정책과 앱만 표시되는 단일 플랫폼을 선택할 수 있습니다.
+- **새 홈페이지**: 서비스 상태, 테넌트 상태, 뉴스 등을 홈페이지에서 빠르게 확인할 수 있습니다.
+
+이러한 개선 사항에 대한 자세한 내용은 Microsoft Tech Community 웹 사이트의 [Enterprise Mobility + Security 블로그 게시물](https://go.microsoft.com/fwlink/?linkid=2109094)을 참조하세요.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>앱 관리
+
+#### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>등록되지 않은 디바이스에 Mobile Threat Defense 앱 추가 <!-- 3005337 -->
+사용자 회사 데이터를 디바이스 상태에 따라 차단하거나 선택적으로 지울 수 있는 Intune 앱 보호 정책을 만들 수 있습니다. 디바이스의 상태는 사용자가 선택한 MTD(Mobile Threat Defense) 솔루션으로 확인합니다. 이 기능은 현재 Intune 등록 디바이스의 디바이스 정책 준수 설정으로서 존재합니다. 이 새 기능을 통해 Mobile Threat Defense 공급업체의 위협 감지 역량을 미등록 디바이스로도 확장하게 됩니다. Android에서 이 기능을 사용하려면 디바이스에 최신 회사 포털이 있어야 합니다. iOS에서는 앱이 최신 Intune SDK(버전 12.0.15 이상)를 통합하는 경우 이 기능을 사용할 수 있습니다. 첫 번째 앱이 최신 Intune SDK를 채택하는 경우 새로운 기능 항목을 업데이트합니다. 나머지 앱은 롤링 방식으로 사용할 수 있게 됩니다. 자세한 내용은 [Intune을 사용하여 Mobile Threat Defense 앱 보호 정책 만들기](~/protect/mtd-app-protection-policy.md)를 참조하세요.
+
+### <a name="device-configuration"></a>디바이스 구성
+
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Windows 10 이상 디바이스용 새 디바이스 펌웨어 구성 인터페이스 프로필 <!-- 2266073  -->
+
+Windows 10 이상에서는 디바이스 구성 프로필을 만들어 설정 및 기능을 제어할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼용 **Windows 10 이상**). 이 업데이트에는 Intune에서 UEFI(BIOS) 설정을 관리하는 데 사용되는 새 디바이스 펌웨어 구성 인터페이스 프로필 유형이 있습니다. Microsoft는 모든 고객에게 이 기능을 롤아웃하고 있으며, 다음 주 말이면 해당 과정이 완료된 것으로 예상합니다.
 
 이 기능에 대한 자세한 내용은 [Microsoft Intune에서 Windows 디바이스의 DFCI 프로필 사용](../configuration/device-firmware-configuration-interface-windows.md)을 참조하세요.
 
 적용 대상:
-
 - 지원되는 펌웨어의 Windows 10 RS5(1809) 이상
 
+### <a name="device-enrollment"></a>디바이스 등록
+
+#### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe---3959566--"></a>OOBE(첫 실행 경험)로 프로비저닝된 디바이스에 등록 상태 페이지만 표시되도록 설정합니다. <!--3959566-->
+이제 Autopilot OOBE로 프로비저닝된 디바이스에 등록 상태 페이지만 표시되도록 할 수 있습니다.
+
+새 토글을 확인하려면 **Intune** > **디바이스 등록** > **Windows 등록** > **등록 상태 페이지** > **프로필 만들기** > **설정** > **OOBE(첫 실행 경험)로 프로비저닝된 디바이스에 페이지만 표시**를 선택합니다.
+
+
+<!-- ########################## -->
 ## <a name="week-of-october-14-2019"></a>2019년 10월 14일이 있는 주
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -77,7 +147,12 @@ Windows 10 이상에서는 디바이스 구성 프로필을 만들어 설정 및
 Android Enterprise 회사 프로필, 전용 및 완전 관리형 디바이스에서 사용할 수 있는 앱 설치의 경우 앱 설치 상태와 관리형 Google Play 앱의 설치된 버전을 확인할 수 있습니다. 자세한 정보는 [앱 보호 정책 모니터링 방법](~/apps/app-protection-policies-monitor.md), [Intune으로 Android 작업 프로필 디바이스 관리](~/enrollment/android-enterprise-overview.md) 및 [관리형 Google Play 앱 형식](~/apps/apps-add-android-for-work.md#managed-google-play-app-types)을 참조하세요.
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Windows 10 및 macOS용 Microsoft Edge 버전 77 이상(공개 미리 보기) <!-- 3872025, 4678761  -->
-이제 Windows 10 및 macOS를 실행하는 PC에 Microsoft Edge 버전 77 이상을 배포할 수 있습니다. 공개 미리 보기는 Windows 10의 **개발** 및 **베타** 채널과 macOS의 **베타** 채널을 제공합니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. 또한 브라우저의 자동 업데이트는 기본적으로 **켜지고** Microsoft Edge는 제거할 수 없습니다. 자세한 내용은 [Microsoft Intune에 Windows 10용 Microsoft Edge 추가](~/apps/apps-windows-edge.md) 및 [Microsoft Edge 설명서](https://go.microsoft.com/fwlink/?linkid=2103823)를 참조하세요.
+Windows 10 및 macOS를 실행하는 PC에 Microsoft Edge 버전 77 이상을 배포할 수 있습니다. 
+
+>[!NOTE]
+>이 기능의 출시는 이번 달 말로 연기되었습니다.
+
+공개 미리 보기는 Windows 10의 **개발** 및 **베타** 채널과 macOS의 **베타** 채널을 제공합니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. 또한 브라우저의 자동 업데이트는 기본적으로 **켜지고** Microsoft Edge는 제거할 수 없습니다. 자세한 내용은 [Microsoft Intune에 Windows 10용 Microsoft Edge 추가](~/apps/apps-windows-edge.md) 및 [Microsoft Edge 설명서](https://go.microsoft.com/fwlink/?linkid=2103823)를 참조하세요.
 
 #### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>앱 보호 UI 및 iOS 앱 프로비저닝 UI 업데이트 <!-- 4102027, 4102029   -->
 Intune에서 앱 보호 정책 및 iOS 앱 프로비저닝 프로필을 만들고 편집하는 UI가 업데이트되었습니다. UI 변경 사항에는 다음이 포함됩니다.

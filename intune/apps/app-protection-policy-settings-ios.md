@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7939364c04c65334b8be5d75fb43fc2162a0b965
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: ea7c3931dd9226ec7645895be1998dc13b099e92
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785568"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999550"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 앱 보호 정책 설정
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -110,13 +110,12 @@ Intune 앱 보호 정책에서 특정 시나리오의 데이터 송수신을 허
 | **오프라인 유예 기간** | MAM 앱이 오프라인으로 실행할 수 있는 시간(분)입니다. 앱에 대한 액세스 요구 사항을 다시 확인하기 전의 시간(분)을 지정합니다. *작업*은 다음과 같습니다. <br><ul><li>**액세스 차단(분)** - MAM 앱이 오프라인으로 실행할 수 있는 시간(분)입니다. 앱에 대한 액세스 요구 사항을 다시 확인하기 전의 시간(분)을 지정합니다. 구성된 기간이 만료되면 네트워크에 액세스할 수 있을 때까지 앱이 회사 또는 학교 데이터에 대한 액세스를 차단합니다. 이 정책 설정 형식은 양의 정수를 지원합니다.<br><br>기본값 = **720**분(12시간) </li></ul> <ul><li>**데이터 초기화(일)** - 관리자가 정의한 대로 앱이 오프라인으로 실행된 기간(일) 후에 사용자가 네트워크에 연결하고 다시 인증해야 합니다. 성공적으로 인증하고 나면 데이터에 계속 액세스할 수 있으며 오프라인 간격이 재설정됩니다.  사용자가 인증에 실패하면 앱에서 사용자 계정과 데이터가 선택적으로 초기화됩니다.  선택적 초기화로 제거되는 데이터에 대한 자세한 내용은 [Intune-관리 앱에서 회사 데이터만 초기화하는 방법](apps-selective-wipe.md)을 참조하세요. 이 정책 설정 형식은 양의 정수를 지원합니다. <br><br> 기본값 = **90일** </li></ul>  이 항목은 여러 번 나타날 수 있으며, 각 인스턴스에서 다른 작업을 지원합니다. |
 | **탈옥/루팅된 디바이스** | 이 설정에는 값을 설정할 필요가 없습니다. *작업*은 다음과 같습니다. <br><ul><li>**액세스 차단** - 이 앱이 탈옥 또는 루팅된 디바이스에서 실행되지 않도록 차단합니다. 사용자는 개인 작업에 이 앱을 계속 사용할 수 있지만, 다른 디바이스를 사용하여 이 앱의 회사 또는 학교 데이터에 액세스해야 합니다.</li></ul> <ul><li>**데이터 초기화** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다. </li></ul> |
 | **최소 앱 버전** | 최소 운영 체제에 대한 값을 지정합니다. *작업*은 다음과 같습니다. <br><ul><li>**경고** - 디바이스의 앱 버전이 요구 사항을 충족하지 않으면 사용자에게 알림이 표시됩니다. 이 알림은 무시할 수 있습니다.</li></ul> <ul><li>**액세스 차단** - 디바이스의 앱 버전이 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다. </li></ul> <ul><li>**데이터 초기화** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다. </li></ul> </li></ul>   응용 프로그램 간에 서로 다른 버전 지정 체계를 종종 있는 하나의 앱을 대상으로 하는 하나의 최소 응용 프로그램 버전으로는 정책(예를 들어 ‘Outlook 버전 정책’)을 만듭니다. <br><br> 이 항목은 여러 번 나타날 수 있으며, 각 인스턴스에서 다른 작업을 지원합니다.<br><br> 이 정책 설정 형식은 major.minor, major.minor.build, major.minor.build.revision을 지원합니다.<br><br> **참고:** 앱에 Intune SDK 버전 7.0.1 이상이 있어야 합니다. <br><br> 또한 최종 사용자가 LOB(기간 업무) 앱의 업데이트된 버전을 다운로드할 수 있는 **위치**를 구성할 수 있습니다. 최종 사용자는 **최소 앱 버전** 조건부 시작 대화 상자에서 이 기능을 사용할 수 있습니다. 이 대화 상자는 최종 사용자에게 최소 버전의 LOB 앱으로 업데이트할지 묻는 메시지를 표시합니다. iOS에서 이 기능을 사용하려면 앱을 iOS용 Intune SDK v. 10.0.7 이상과 통합(또는 래핑 도구를 사용하여 래핑)해야 합니다. 최종 사용자가 LOB 앱을 업데이트하는 방법을 구성하려면 앱에 관리형 [앱 구성 정책](app-configuration-policies-managed-app.md)과 `com.microsoft.intune.myappstore` 키가 함께 전송되어야 합니다. 전송된 값은 최종 사용자가 앱을 다운로드할 스토어를 정의합니다. 회사 포털을 통해 앱을 배포한 경우 값은 `CompanyPortal`이어야 합니다. 다른 스토어의 경우에는 전체 URL을 입력해야 합니다. |
-| **최소 SDK 버전** | Intune SDK 버전의 최솟값을 지정합니다. *작업*은 다음과 같습니다. <br><ul><li>**액세스 차단** - 앱의 Intune 앱 보호 정책 SDK 버전이 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다. </li></ul> <ul><li>**데이터 초기화** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다. </li></ul></li></ul><br><br> Intune 앱 보호 정책 SDK에 대한 자세한 내용은 [Intune 앱 SDK 개요](../developer/app-sdk.md)를 참조하세요. 앱에 따라 종종 서로 다른 Intune SDK 버전을 사용하므로 한 앱을 대상으로 하는 하나의 최소 Intune SDK 버전을 사용하여 정책을 만듭니다(예: ‘Outlook용 Intune SDK 버전 정책’).  <br><br> 이 항목은 여러 번 나타날 수 있으며, 각 인스턴스에서 다른 작업을 지원합니다.|
+| **최소 SDK 버전** | Intune SDK 버전의 최솟값을 지정합니다. *작업*은 다음과 같습니다. <br><ul><li>**액세스 차단** - 앱의 Intune 앱 보호 정책 SDK 버전이 요구 사항을 충족하지 않으면 사용자 액세스가 차단됩니다. </li></ul><ul><li>**데이터 초기화** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다. </li></ul></li></ul>Intune 앱 보호 정책 SDK에 대한 자세한 내용은 [Intune 앱 SDK 개요](../developer/app-sdk.md)를 참조하세요. 앱에 따라 종종 서로 다른 Intune SDK 버전을 사용하므로 한 앱을 대상으로 하는 하나의 최소 Intune SDK 버전을 사용하여 정책을 만듭니다(예: ‘Outlook용 Intune SDK 버전 정책’).  <br><br> 이 항목은 여러 번 나타날 수 있으며, 각 인스턴스에서 다른 작업을 지원합니다.|
 | **디바이스 모델** | 세미콜론으로 구분된 모델 식별자 목록을 지정합니다. 여러 값의 목록에서 공백을 방지합니다. 이러한 값은 대/소문자를 구분하지 않습니다. *작업*은 다음과 같습니다. <br><ul><li>**지정됨 허용(비지정됨 차단)** - 지정된 디바이스 모델과 일치하는 디바이스만 앱을 사용할 수 있습니다. 다른 모든 디바이스 모델은 차단됩니다. </li></ul> <ul><li>**지정됨 허용(비지정됨 초기화)** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다.</li></ul> 이 설정 사용에 대한 자세한 내용은 [조건부 시작 작업](app-protection-policies-access-actions.md#ios-policy-settings)을 참조하세요. |
-| **허용된 최대 디바이스 위협 수준** | 앱 보호 정책은 Intune-MTD 커넥터를 활용할 수 있습니다. 이 앱을 사용하기 위해 허용되는 최대 위협 수준을 지정합니다. 위협은 최종 사용자 디바이스에서 선택한 MTD(Mobile Threat Defense) 공급업체 앱에 따라 결정됩니다. ‘보안됨’, ‘낮음’, ‘보통’ 또는 ‘높음’을 지정합니다.     ‘보안됨’의 경우 디바이스에 위협이 없어야 하며 구성할 수 있는 가장 제한적인 값이지만, ‘높음’의 경우 기본적으로 활성 Intune-MTD 연결이 필요합니다.   *작업*은 다음과 같습니다. <br><ul><li>**액세스 차단** - 최종 사용자 디바이스에서 선택한 MTD(Mobile Threat Defense) 공급업체 앱에 따라 결정된 위협 수준이 이 요구 사항을 충족하지 않을 경우 사용자 액세스가 차단됩니다.</li></ul><ul><li>**데이터 초기화** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다.</li></ul>**참고:** ‘앱에 Intune SDK 버전 TBD 이상이 있어야 합니다.’  <br><br> 이 설정을 사용하는 방법에 대한 자세한 내용은(##등록되지 않은 디바이스에서 MTD를 위한 Intune 설정)을 참조하세요. |
+| **허용된 최대 디바이스 위협 수준** | 앱 보호 정책은 Intune-MTD 커넥터를 활용할 수 있습니다. 이 앱을 사용하기 위해 허용되는 최대 위협 수준을 지정합니다. 위협은 최종 사용자 디바이스에서 선택한 MTD(Mobile Threat Defense) 공급업체 앱에 따라 결정됩니다. ‘보안됨’, ‘낮음’, ‘보통’ 또는 ‘높음’을 지정합니다.     ‘보안됨’의 경우 디바이스에 위협이 없어야 하며 구성할 수 있는 가장 제한적인 값이지만, ‘높음’의 경우 기본적으로 활성 Intune-MTD 연결이 필요합니다.   *작업*은 다음과 같습니다. <br><ul><li>**액세스 차단** - 최종 사용자 디바이스에서 선택한 MTD(Mobile Threat Defense) 공급업체 앱에 따라 결정된 위협 수준이 이 요구 사항을 충족하지 않을 경우 사용자 액세스가 차단됩니다.</li></ul><ul><li>**데이터 초기화** - 애플리케이션과 연결된 사용자 계정이 디바이스에서 초기화됩니다.</li></ul>**참고:** *앱에 Intune SDK 버전 12.0.15 이상이 있어야 합니다.* <br><br> 이 설정을 사용하는 방법에 대한 자세한 내용은 [등록되지 않은 디바이스에 MTD 사용](~/protect/mtd-enable-unenrolled-devices.md)을 참조하세요. |
 
 ### <a name="learn-more"></a>자세한 정보
-
 - [Microsoft 앱의 LinkedIn 정보 및기능](https://go.microsoft.com/fwlink/?linkid=850740)에 대해 알아봅니다.
-- [Office 365 로드맵 페이지](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc)에서 LinkedIn 계정 연결 릴리스에 대해 알아봅니다. 
+- [Office 365 로드맵 페이지](https://products.office.com/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc)에서 LinkedIn 계정 연결 릴리스에 대해 알아봅니다. 
 - [LinkedIn 계정 연결 구성](https://docs.microsoft.com/azure/active-directory/linkedin-integration)에 대해 알아봅니다.
 - 사용자의 LinkedIn와 Microsoft 간에 공유되는 데이터에 대한 자세한 내용은 [회사 또는 학교의 Microsoft 애플리케이션에서의 LinkedIn](https://www.linkedin.com/help/linkedin/answer/84077)을 참조하세요.

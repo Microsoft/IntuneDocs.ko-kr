@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 492feb3f2ef5f5bbbc1537d4c60ac12d5fd6bdcd
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585607"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892581"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Intune에 Windows 10용 Microsoft Edge 추가
 
-앱을 배포, 구성, 모니터링 또는 보호하려면 앱을 Intune에 추가해야 합니다. 사용 가능한 [앱 유형](~/apps/apps-add.md#app-types-in-microsoft-intune) 중 하나는 Microsoft Edge ‘버전 77 이상’입니다. Intune에서 이 앱 유형을 선택하면 Windows 10을 실행하고 직접 관리하는 디바이스에 Microsoft Edge ‘버전 77 이상’을 할당하고 설치할 수 있습니다.
+앱을 배포, 구성, 모니터링 또는 보호하려면 앱을 Intune에 추가해야 합니다. 사용 가능한 [앱 유형](~/apps/apps-add.md#app-types-in-microsoft-intune) 중 하나는 Microsoft Edge ‘버전 77 이상’입니다.  Intune에서 이 앱 유형을 선택하면 Windows 10을 실행하고 직접 관리하는 디바이스에 Microsoft Edge ‘버전 77 이상’을 할당하고 설치할 수 있습니다. 
 
 > [!IMPORTANT]
 > 이 앱 유형은 **공개 미리 보기**로 제공되며 Windows 10용 개발자 및 베타 채널을 제공합니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. 또한 Edge의 자동 업데이트는 기본적으로 **켜지고** Edge는 제거할 수 없습니다.
 
 > [!NOTE]
-> Microsoft Edge ‘버전 77 이상’은 macOS에서도 사용할 수 있습니다.
+> Microsoft Edge ‘버전 77 이상’은 macOS에서도 사용할 수 있습니다. 
 > 
 > 작업 공간 연결 컴퓨터에는 Microsoft Edge의 기본 제공 애플리케이션 배포를 사용할 수 없습니다. 기본 제공 애플리케이션 배포에는 AAD 조인 디바이스용으로만 존재하는 Intune 관리 확장이 필요합니다. **클라이언트 앱**에 업로드된 *.msi*를 사용하여 Microsoft Edge *버전 77 이상*을 배포할 수 있습니다. [Microsoft Intune에 Windows 기간 업무 앱 추가](~/apps/lob-apps-windows.md)를 참조하세요.
 
@@ -79,7 +79,7 @@ ms.locfileid: "72585607"
 
 ## <a name="select-scope-tags-optional"></a>범위 태그 선택(선택 사항)
 범위 태그를 사용하여 Intune에서 클라이언트 앱 정보를 볼 수 있는 사용자를 결정할 수 있습니다. 범위 태그에 대한 자세한 내용은 분산형 IT에 역할 기반 액세스 제어 및 범위 태그 사용을 참조하세요.
-1.  **범위(태그)** > **추가**를 선택합니다.
+1.  **범위(태그)**  > **추가**를 선택합니다.
 2.  **선택** 상자를 사용하여 범위 태그를 검색합니다.
 3.  이 앱에 할당하려는 범위 태그 옆의 확인란을 선택합니다.
 4.  **선택** > **확인**을 클릭합니다.
@@ -94,7 +94,7 @@ ms.locfileid: "72585607"
 
 ## <a name="troubleshooting"></a>문제 해결
 **Windows 10용 Microsoft Edge 버전 77 이상:**<br>
-Intune은 Intune 관리 확장을 사용하여 할당된 Windows 10 디바이스에 Microsoft Edge 설치 관리자를 다운로드하고 배포한 다음, CDN에서 직접 Microsoft Edge 브라우저를 다운로드하고 설치하는 Microsoft Edge 설치 관리자에 배포 설정을 전달합니다. [Intune 관리 확장의 필수 구성 요소](~/apps/intune-management-extension.md#prerequisites)와 Azure 업데이트 서비스 및 CDN 액세스에 간략하게 설명된 모범 사례를 참조하여 네트워크 구성에서 Windows 10 디바이스가 이 위치에 액세스하도록 허용하는지 확인합니다.
+Intune은 Intune 관리 확장을 사용하여 할당된 Windows 10 디바이스에 Microsoft Edge 설치 관리자를 다운로드하고 배포한 다음, CDN에서 직접 Microsoft Edge 브라우저를 다운로드하고 설치하는 Microsoft Edge 설치 관리자에 배포 설정을 전달합니다. [Intune 관리 확장의 필수 구성 요소](~/apps/intune-management-extension.md#prerequisites)와 Azure 업데이트 서비스 및 CDN 액세스에 간략하게 설명된 모범 사례를 참조하여 네트워크 구성에서 Windows 10 디바이스가 이 위치에 액세스하도록 허용하는지 확인합니다. 또한 브라우저 설치를 위해 CDN에서의 설치 파일 액세스를 허용하려면 Windows 업데이트 엔드포인트로의 액세스를 허용해야 합니다. 자세한 내용은 [Windows 10 버전 1809의 연결 엔드포인트 관리 – Windows 업데이트](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints#windows-update)와 [Microsoft Intune에 대한 네트워크 엔드포인트](~/fundamentals/intune-endpoints.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 - [그룹에 앱 할당](~/apps/apps-deploy.md)

@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
-ms.reviewer: heenamac
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550812"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892624"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 사용자 및 디바이스 프로필 할당
 
@@ -69,19 +69,28 @@ Windows 10 디바이스에서 **적용 가능성 규칙**을 추가하여 프로
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>프로필 할당에서 그룹 제외
 
-Intune 디바이스 구성 프로필을 통해 정책 할당에서 그룹을 제외할 수 있습니다.
+Intune 디바이스 구성 프로필을 통해 정책 할당에 그룹을 포함하거나 반대로 제외할 수 있습니다.
 
-Intune은 사용자-디바이스 그룹 관계를 확인하지 않습니다. 디바이스 그룹을 제외하고 사용자 그룹을 포함하면 기대한 결과를 가져올 수 없습니다. 사용자 그룹-사용자 그룹 및 디바이스 그룹-디바이스 그룹 시나리오에서 제외가 포함보다 우선적으로 적용됩니다.
+사용자 그룹의 정책을 만들고 할당하는 것이 가장 좋습니다. 그리고 디바이스 그룹에 대해 다른 정책을 특별히 만들고 할당합니다. 그룹에 대한 자세한 내용은 [그룹을 추가하여 사용자 및 디바이스 구성](../fundamentals/groups-add.md)을 참조하세요.
 
-예를 들어 **모든 회사 사용자** 사용자 그룹에 디바이스 프로필을 할당하되 **Senior Management Staff** 사용자 그룹의 구성원을 제외할 수 있습니다. 두 그룹 모두 사용자 그룹이기 때문에 **Senior Management Staff**의 모든 멤버는 **모든 회사 사용자** 포함 그룹의 멤버인 경우에도 정책에서 제외됩니다.
+정책을 할당하는 경우 그룹을 포함하거나 제외할 때 다음 표를 사용합니다. 확인 표시가 있으면 할당이 지원됨을 의미합니다.
 
-사용자 그룹-사용자 그룹 또는 디바이스 그룹-디바이스 그룹과 같이 혼합된 그룹을 사용하는 경우 제외가 포함보다 우선적으로 적용됩니다.
+![지원되는 옵션에서는 프로필 할당에서 그룹이 포함 또는 제외됩니다.](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-예를 들어 키오스크 디바이스를 제외한 조직의 모든 사용자에 디바이스 프로필을 할당하려고 합니다. **모든 사용자** 그룹을 포함하되 **모든 디바이스** 그룹을 제외합니다. 이 경우 사용자 디바이스가 **모든 디바이스** 그룹에 속하는 경우에도 모든 사용자와 해당 디바이스에 정책이 적용됩니다.
+### <a name="what-you-should-know"></a>알아야 할 사항
 
-제외는 그룹의 직접 구성원만 해당하며 사용자와 연결된 디바이스는 포함하지 않습니다. 그러나 사용자가 없는 디바이스는 정책을 얻지 못합니다. 이 동작은 사용자가 없는 디바이스가 **모든 사용자** 그룹과 아무 관계도 없기 때문에 발생합니다.
+- 다음과 같이 동일한 그룹 유형 시나리오에서는 제외가 포함보다 우선하게 됩니다.
 
-**모든 디바이스**를 포함하고 **모든 사용자**를 제외하면 모든 디바이스에 정책이 적용됩니다. 이 시나리오의 의도는 연결된 사용자가 있는 디바이스를 이 정책에서 제외하기 위한 것입니다. 하지만 제외는 직접적인 그룹 구성원만 비교하기 때문에 디바이스는 제외하지 않습니다.
+  - 사용자 그룹 포함 및 제외
+  - 디바이스 그룹 포함 및 제외
+
+  예를 들어 **모든 회사 사용자** 사용자 그룹에 디바이스 프로필을 할당하되 **Senior Management Staff** 사용자 그룹의 구성원을 제외할 수 있습니다. 두 그룹 모두 사용자 그룹이므로 **Senior Management Staff**를 제외한 **모든 회사 사용자**가 정책을 가져옵니다.
+
+- Intune은 사용자-디바이스 그룹 관계를 평가하지 않습니다. 혼합 그룹에 정책을 할당하는 경우, 결과는 원하는 대로 표시되지 않을 수 있습니다.
+
+  예를 들어 **모든 사용자** 사용자 그룹에 디바이스 프로필을 할당하되 **모든 개인 디바이스** 디바이스 프로필은 제외한다고 가정해 보겠습니다. 이 혼합 그룹 정책 할당에서 **모든 사용자**가 정책을 가져옵니다. 제외는 적용되지 않습니다.
+
+  따라서 혼합 그룹에 정책을 할당하지 않는 것이 좋습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

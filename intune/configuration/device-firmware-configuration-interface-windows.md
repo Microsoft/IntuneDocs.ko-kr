@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f34e321476ea634030a5e602bc362d409eee8f5
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785546"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889564"
 ---
-# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune"></a>Microsoft Intune에서 Windows 디바이스에 디바이스 펌웨어 구성 인터페이스 프로필 사용
+# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Microsoft Intune에서 Windows 디바이스에 디바이스 펌웨어 구성 인터페이스 프로필 사용(공개 미리 보기)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+> [!Note]
+> 각각의 [월별 업데이트](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)는 출시까지 며칠이 소요될 수 있습니다. 일부 기능은 몇 주에 걸쳐 출시될 수 있고 몇몇 고객에게는 즉시 제공되지 않을 수 있습니다.
 
 Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 DFCI(디바이스 펌웨어 구성 인터페이스)를 사용하여 등록된 후 UEFI(BIOS) 설정을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [DFCI 개요](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/)를 참조하세요.
 
@@ -167,15 +170,9 @@ Windows를 초기화하여 디바이스 용도를 변경하려면  [디바이스
 
 ### <a name="recover"></a>복구
 
-디바이스를 초기화하고 UEFI(BIOS) 메뉴의 잠금을 해제하기 전에 Autopilot 레코드를 삭제하면 메뉴는 잠긴 상태로 유지됩니다. Intune은 프로필 업데이트를 보내 잠금을 해제할 수 없습니다. 디바이스의 잠금을 해제하려면 다음을 수행하면 됩니다.
+디바이스를 초기화하고 UEFI(BIOS) 메뉴의 잠금을 해제하기 전에 Autopilot 레코드를 삭제하면 메뉴는 잠긴 상태로 유지됩니다. Intune은 프로필 업데이트를 보내 잠금을 해제할 수 없습니다.
 
-- **옵션 1**: Autopilot에 디바이스를 다시 등록하도록 CSP 또는 OEM 직접 디바이스 공급업체에 요청합니다. Intune에 다시 등록하여 Autopilot 및 DFCI 프로필을 다시 적용합니다.
-
-  그런 다음, [디바이스 사용 중지](#retire)(이 문서)의 단계를 사용하여 UEFI 메뉴의 잠금을 해제합니다.
-
-- **옵션 2**: UEFI(BIOS) 메뉴를 열고 복구 옵션을 선택합니다. 디바이스가 DFCI 관리용으로 등록되지 않았는지 확인하고 메뉴의 잠금을 해제합니다. 복구 옵션은 모든 UEFI(BIOS) 설정을 마지막 Intune DFCI 프로필의 값으로 유지합니다.
-
-  그런 다음, [디바이스 사용 중지](#retire)(이 문서)의 단계를 사용하여 UEFI 메뉴의 잠금을 해제합니다.
+디바이스를 잠금 해제하려면 UEFI(BIOS) 메뉴를 열고 네트워크에서 관리를 새로 고칩니다. 복구 기능으로는 메뉴가 잠금 해제되지만 모든 UEFI(BIOS) 설정이 이전 Intune DFCI 프로필의 값으로 설정됩니다.
 
 ## <a name="end-user-impact"></a>최종 사용자 영향
 

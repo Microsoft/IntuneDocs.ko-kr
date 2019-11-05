@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785683"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999485"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune에서 앱 보호 정책 조건부 시작 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -84,8 +84,11 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 - 최소 패치 버전
 - 디바이스 제조업체
 - SafetyNet 디바이스 증명
-- 앱에서 위협 검색
+- 앱에서 위협 검색 필요
+- 최소 회사 포털 버전
 - 허용된 최대 디바이스 위협 수준
+
+**최소 회사 포털 버전**으로는 최종 사용자의 디바이스에 적용되는 정의된 특정 최소 버전의 회사 포털을 지정할 수 있습니다. 이 조건부 시작 설정을 통해서는 각 값이 일치하지 않을 때 가능한 조치로서 **액세스 차단**, **데이터 지우기**, **경고** 값을 설정할 수 있습니다. 이 값에 가능한 형식은 *[주].[부]* , *[주].[부].[빌드]* , or *[주].[부].[빌드].[수정]* 의 패턴을 따릅니다. 일부 최종 사용자는 즉각적인 강제 업데이트를 선호하지 않을 수 있다는 점을 고려하면 이 설정을 구성할 때 ‘경고’ 옵션이 가장 바람직할 수 있습니다. Google Play Store는 앱 업데이트의 델타 바이트를 전송만 한다는 데서 바람직하다고 할 수 있지만, 이 또한 사용자가 업데이트가 필요한 시점의 데이터일 경우 사용을 원하지 않을 수도 있는 대용량 데이터가 될 소지가 있습니다. 업데이트를 강제로 적용하여 업데이트된 앱을 다운로드하면 업데이트 당시에 예기치 않은 데이터 변경이 발생할 수 있습니다. **최소 회사 포털 버전** 설정은 구성될 경우 버전 5.0.4560.0이나 그 이후의 회사 포털을 받는 최종 사용자에게 영향을 미칩니다. 이 설정은 이 기능이 릴리스되는 버전 이전의 회사 포털을 사용할 경우 영향을 미치지 않습니다. 앱 자동 업데이트를 디바이스에서 사용 중인 최종 사용자에게는 최신 버전의 회사 포털을 사용하고 있을 수 있으므로 이 기능의 대화 상자가 표시되지 않을 수도 있습니다. 이 설정은 등록 및 미등록 디바이스용 앱 보호 장치가 있는 Android로 한정됩니다.
 
 **디바이스 제조업체** 설정을 사용하려면 세미콜론으로 구분된 Android 제조업체 목록을 입력합니다. 디바이스의 Android 제조업체는 디바이스 설정에서 찾을 수 있습니다.<br>
 입력의 예: ‘제조업체 A;제조업체 B’  
