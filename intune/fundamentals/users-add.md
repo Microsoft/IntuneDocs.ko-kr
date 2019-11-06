@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90066bf55f50819ba77babee1e1d4230bdead613
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504873"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415017"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Intune에 사용자 추가 및 관리 권한 부여
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 관리자는 사용자를 직접 추가할 수도 있고 온-프레미스 Active Directory에서 사용자를 동기화할 수도 있습니다. 추가된 사용자는 디바이스를 등록하고 회사 리소스에 액세스할 수 있습니다. *전역 관리자*, *서비스 관리자* 등의 추가 권한을 사용자에게 제공할 수도 있습니다.
 
 ## <a name="add-users-to-intune"></a>Intune에 사용자 추가
+
 [Microsoft 365 관리 센터](https://admin.microsoft.com) 또는 [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)을 통해 Intune 구독에 사용자를 수동으로 추가할 수 있습니다. 관리자는 사용자 계정을 편집하여 Intune 라이선스를 할당할 수 있습니다. Microsoft 365 관리 센터 또는 Intune Azure Portal에서 라이선스를 할당할 수 있습니다. Microsoft 365 관리 센터 사용에 대한 자세한 내용은 [Microsoft 365 관리 센터에 개별적으로 또는 대량으로 사용자 추가](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)를 참조하세요.
 
 ### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>Microsoft 365 관리 센터에서 Intune 사용자 추가
+
 1. 전역 관리자 또는 사용자 관리 관리자 계정으로 [Microsoft 365 관리 센터](https://admin.microsoft.com)에 로그인합니다.
 2. Office 365 메뉴에서 **관리**를 선택합니다.
 3. 관리 센터에서 **사용자 추가**를 선택합니다.
@@ -56,6 +56,7 @@ ms.locfileid: "72504873"
 6. **추가**를 선택하여 새 사용자를 만듭니다.
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Azure Portal에서 Intune 사용자 추가
+
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. **사용자** > **모든 사용자**를 선택합니다.
 3. 관리 센터에서 **새로운 사용자**를 선택합니다.
@@ -78,6 +79,7 @@ ms.locfileid: "72504873"
 Intune 구독에 사용자를 추가한 후에는 몇 가지 사용자 관리 권한을 부여하는 것이 좋습니다.  관리 권한을 부여하려면 다음 단계를 따르세요.
 
 ### <a name="give-admin-permissions-in-office-365"></a>Office 365에서 관리 권한 부여
+
 1. 전역 관리자 계정으로 [Microsoft 365 관리 센터](https://admin.microsoft.com)에 로그인합니다.
 2. Office 365 메뉴에서 **관리**를 선택합니다.
 3. 관리 센터에서 **활성 사용자**를 선택하고 사용자를 선택하여 관리 권한을 부여합니다.
@@ -91,6 +93,7 @@ Intune 구독에 사용자를 추가한 후에는 몇 가지 사용자 관리 �
 6. **저장**을 선택합니다.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Azure Portal에서 관리자 권한 부여
+
 1. [Azure Portal](https://portal.azure.com)에 전역 관리자 계정으로 로그인합니다.
 2. Azure Portal에서 **사용자**를 선택한 후 관리 권한을 부여할 사용자를 선택합니다.
 3. **디렉터리 역할**을 선택한 다음 권한을 선택합니다.
@@ -113,9 +116,11 @@ Microsoft Intune 구독을 만드는 데 사용하는 계정은 전역 관리자
 Microsoft 365 관리 센터에 액세스하려면 계정에 **로그인 허용**이 설정되어 있어야 합니다. Azure Portal의 **프로필**에서 **로그인 차단**을 **아니요**로 설정하여 액세스를 허용합니다. 이 상태는 구독에 대한 라이선스 보유와는 다른 문제입니다. 기본적으로 모든 사용자 계정은 **허용**됩니다. 관리자 권한이 없는 사용자는 Microsoft 365 관리 센터를 사용하여 Intune 암호를 재설정할 수 있습니다.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Active Directory를 동기화하고 Intune에 사용자 추가
+
 온-프레미스 Active Directory에서 Microsoft Azure AD(Azure Active Directory)로 Intune 사용자를 포함한 사용자 계정을 가져오도록 디렉터리 동기화를 구성할 수 있습니다. 온-프레미스 Active Directory 서비스를 모든 Azure Active Directory 기반 서비스와 연결하면 사용자 ID를 훨씬 간편하게 관리할 수 있습니다. 사용자에게 친숙하고 간편한 인증 환경을 제공하도록 Single Sign-On 기능을 구성할 수도 있습니다. 같은 [Azure AD 테넌트](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)를 여러 서비스와 연결하면 이전에 동기화했던 사용자 계정을 모든 클라우드 기반 서비스에 사용할 수 있습니다.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>Azure AD와 온-프레미스 사용자를 동기화하는 방법
+
 Azure AD와 사용자 계정을 동기화하기 위해 필요한 유일한 도구는 [Azure AD Connect 마법사](https://www.microsoft.com/download/details.aspx?id=47594)입니다. Azure AD Connect 마법사는 온-프레미스 ID 인프라를 클라우드에 연결하도록 안내하는 간단한 환경을 제공합니다. 토폴로지 및 요구 사항(단일 디렉터리 또는 여러 디렉터리, 암호 해시 동기화, 통과 인증 또는 페더레이션)을 선택합니다. 마법사는 연결이 작동되도록 하는 데 필요한 모든 구성 요소를 배포하고 구성합니다. 여기에는 동기화 서비스, AD FS(Active Directory Federation Services) 및 Azure AD PowerShell 모듈이 포함됩니다.
 
 > [!TIP]

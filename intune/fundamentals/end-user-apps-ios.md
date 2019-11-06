@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc298691ea3df923d1804005be61217325f52112
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510277"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413987"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS 사용자가 앱을 얻는 방법
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 이 정보를 사용하여 최종 사용자가 Microsoft Intune을 통해 배포하는 앱을 얻는 방법과 위치를 이해합니다.
 
@@ -48,12 +46,12 @@ Apple 제한에 따라 기간 업무 앱과 관리되는 App Store 앱을 회사
 
 - **범주**는 회사 포털 웹 사이트의 범주 탭을 가리킵니다.
 
-
 ![iOS 회사 포털 앱 화면](./media/end-user-apps-ios/ios-cp-app-main-apps-screen.png)
 
 앱을 추가하는 방법에 대한 자세한 내용은 [Microsoft Intune에 앱을 추가하는 방법](../apps/apps-add.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
+
 [Android 사용자가 앱을 얻는 방법](end-user-apps-android.md)
 
 [Windows 사용자가 앱을 얻는 방법](end-user-apps-windows.md)

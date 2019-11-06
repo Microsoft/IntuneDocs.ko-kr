@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503028"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143178"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>등록 상태 페이지 설정
  
@@ -191,7 +191,6 @@ ESP(등록 상태 페이지)는 초기 디바이스를 등록하는 동안 Windo
 - ESP 프로필을 사용하지 않도록 설정해도 디바이스에서 ESP 정책이 제거되지 않으며 사용자가 처음으로 디바이스에 로그인하면 ESP를 계속 가져옵니다. 이 정책은 ESP 프로필을 사용하지 않도록 설정한 경우에도 제거되지 않습니다. ESP를 사용하지 않도록 설정하려면 OMA-URI를 배포해야 합니다. OMA-URI를 사용하여 ESP를 사용하지 않도록 설정하는 방법에 대한 지침은 위 내용을 참조하세요. 
 - 재부팅을 보류하면 항상 시간 초과가 발생합니다. 디바이스를 재부팅해야 하기 때문에 시간 초과가 발생합니다. 등록 상태 페이지에서 추적한 항목이 완료되는 시간이 필요하기 때문에 재부팅해야 합니다. 재부팅하면 등록 상태 페이지가 종료되고 재부팅 후 계정 설정 중에는 디바이스를 사용할 수 없습니다.  애플리케이션 설치 시에는 재부팅을 하지 않는 것이 좋습니다. 
 - 디바이스를 설정하는 동안 재부팅하면 계정 설정 단계로 전환되기 전에 사용자가 자격 증명을 입력해야 합니다. 재부팅 중에는 사용자 자격 증명이 유지되지 않습니다. 사용자에게 자격 증명을 입력하도록 한 다음, 등록 상태 페이지를 계속 진행할 수 있습니다. 
-- 비즈니스용 Windows Hello 정책을 사용한 SCEP 인증서는 사용자가 SCEP 인증서 설치의 경쟁을 허용하도록 Hello pin 구성을 완료할 수 없기 때문에 시간 초과가 발생합니다.  해결 방법은 없습니다. ETA 수정은 2019년 여름입니다. 
 - Windows 10 버전 1903 미만에서 회사 및 학교 계정 등록을 추가하는 동안 등록 상태 페이지가 항상 시간 초과됩니다. 등록 상태 페이지는 Azure AD 등록이 완료될 때까지 기다립니다. 이 문제는 Windows 10 버전 1903 이상에서 해결되었습니다.  
 - ESP를 사용하는 하이브리드 Azure AD Autopilot 배포는 ESP 프로필에 정의된 시간 제한보다 오래 걸립니다. 하이브리드 Azure AD Autopilot 배포에서 ESP는 ESP 프로필에 설정된 값보다 40분 이상 더 소요됩니다. 이러한 지연은 온-프레미스 AD 커넥터에서 Azure AD에 대한 새 디바이스 레코드를 만들 시간을 제공합니다. 
 - Windows 로그온 페이지가 Autopilot 사용자 기반 모드의 사용자 이름으로 미리 채워져 있지 않습니다. ESP의 디바이스 설정 단계에서 재부팅하는 경우:

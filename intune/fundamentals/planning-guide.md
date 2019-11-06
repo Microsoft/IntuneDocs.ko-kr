@@ -18,16 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 950f74795c8f1a1a17c70d75125d9613beb7f20e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba1bb1117be387d9be78358175022ee2fc024840
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509912"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414371"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 배포 계획, 설계 및 구현 가이드
-
-[!INCLUDE [note for both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Microsoft Intune을 성공적으로 배포하려면 먼저 적절히 계획하고 설계해야 합니다. 이 가이드의 목적은 배포 계획, 설계 생성, Intune 온보딩 및 프로덕션 출시의 과정을 단계별로 안내하는 것입니다.
 

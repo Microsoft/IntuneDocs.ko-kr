@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc5362df560d2e93bf5cd7a6cdc32a441d97d05c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 40e8dd8409f70a70934684c56ed9e9729f4ebf0f
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505422"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414595"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android 사용자가 앱을 얻는 방법
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 이 문서를 참조하여 최종 사용자가 Microsoft Intune을 통해 배포하는 Android 앱을 얻는 방법과 위치를 이해할 수 있습니다. 해당 정보는 네이티브 Android 디바이스와 Samsung Knox Standard 디바이스 등 디바이스 유형에 따라 다를 수 있습니다.
 

@@ -16,24 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f09f4ba58e3da5821eea06fcfec6e55c9c007d44
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502709"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414085"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune에 디바이스를 등록할 수 있도록 사용자에게 라이선스 할당
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 수동으로 사용자를 추가하든 아니면 온-프레미스 Active Directory에서 동기화하든 상관없이 먼저 각 사용자에게 Intune 라이선스를 할당해야 사용자가 Intune에 디바이스를 등록할 수 있습니다. 라이선스 목록은 [Intune을 포함하는 라이선스](../licenses.md)를 참조하세요.
 
 ## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Microsoft 365 관리 센터에서 Intune 라이선스 할당
 
-[Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)를 사용하여 클라우드 기반 사용자를 수동으로 추가하고, 클라우드 기반 사용자 계정 및 온-프레미스 Active Directory에서 Azure AD로 동기화한 계정에 라이선스를 할당할 수 있습니다.
+[Microsoft 365 관리 센터](https://go.microsoft.com/fwlink/p/?LinkId=698854)를 사용하여 클라우드 기반 사용자를 수동으로 추가하고, 클라우드 기반 사용자 계정 및 온-프레미스 Active Directory에서 Azure AD로 동기화한 계정에 라이선스를 할당할 수 있습니다.
 
-1. 테넌트 관리자 자격 증명을 사용하여 [Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)에 로그인한 후 **사용자** > **활성 사용자**를 선택합니다.
+1. 테넌트 관리자 자격 증명을 사용하여 [Microsoft 365 관리 센터](https://go.microsoft.com/fwlink/p/?LinkId=698854)에 로그인한 후 **사용자** > **활성 사용자**를 선택합니다.
 
 2. Intune 사용자 라이선스를 할당할 사용자 계정을 선택한 후 **제품 라이선스** > **편집**을 선택합니다.
 
@@ -51,6 +49,7 @@ ms.locfileid: "72502709"
 Azure Active Directory를 사용하여 Intune 라이선스를 사용자에게 할당할 수도 있습니다. 자세한 내용은 [Azure Active Directory 문서에서 사용자에게 라이선스 할당](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)을 참조하세요. 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>학교 데이터 동기화를 사용하여 Intune for Education에서 사용자에게 라이선스 할당
+
 교육 기관일 경우 SDS(학교 데이터 동기화)를 사용하여 Intune for Education 라이선스를 동기화된 사용자에게 할당할 수 있습니다. SDS 프로필을 설정할 때 [Intune for Education] 확인란을 선택하면 됩니다.  
 
 ![SDS 프로필 설정 스크린샷](./media/licenses-assign/i4e-sds-profile-setup-setting.png)
@@ -62,6 +61,7 @@ Intune for Education 라이선스를 할당할 경우 Intune A Direct 라이선�
 SDS에 대한 자세한 내용은 이 [학교 데이터 동기화 및 강의실 개요](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)를 참조하세요.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>사용자 및 디바이스 라이선스가 서비스 액세스에 영향을 주는 방식
+
 * 사용자 소프트웨어 라이선스를 할당하는 각 **사용자**는 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)에 액세스하여 최대 15대의 MDM 디바이스와 애플리케이션을 관리하는 데 해당 서비스와 소프트웨어를 사용할 수 있습니다. Intune PC 에이전트는 사용자 라이선스당 5대의 물리적 머신 및 1개의 가상 머신을 허용합니다.
 * 사용자 라이선스와 별도로 모든 디바이스에 대해 라이선스를 구입할 수 있습니다. 디바이스에는 디바이스 라이선스를 할당할 필요가 없습니다. 온라인 서비스 및 관련 소프트웨어(System Center 소프트웨어 포함)를 액세스하고 사용하는 각 디바이스에는 디바이스 라이선스가 할당되어야 합니다.
 * 여러 사용자가 디바이스를 사용하는 경우 각 사용자에게 디바이스 소프트웨어 라이선스가 있어야 하거나, 모든 사용자에게 사용자 소프트웨어 라이선스가 있어야 합니다.
@@ -73,9 +73,6 @@ Intune을 구입한 방법에 따라 구독 정보를 확인하는 방법은 다
 - 기업계약을 통해 Intune을 구입한 경우 **구독**의 볼륨 라이선스 포털에서 구독 정보를 찾을 수 있습니다.
 - 클라우드 솔루션 공급자를 통해 Intune을 구입한 경우 재판매인으로부터 확인합니다.
 - CC# 또는 송장을 포함한 Intune을 구입한 경우 라이선스는 사용자 기반입니다.
-
-
-
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>PowerShell을 사용하여 EMS 사용자 라이선스를 선택적으로 관리
 Microsoft Enterprise Mobility + Security(이전 명칭 Enterprise Mobility Suite)를 사용하는 조직에는 EMS 패키지의 Intune 서비스 또는 Azure Active Directory Premium만 필요한 사용자가 있을 수 있습니다. [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx)을 사용하여 한 가지 서비스 또는 서비스 하위 집합을 할당할 수 있습니다.
@@ -97,7 +94,6 @@ EMS 서비스에 대해 사용자 라이선스를 선택적으로 할당하려�
 
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
-
 
 다음을 통해 검증합니다.
 

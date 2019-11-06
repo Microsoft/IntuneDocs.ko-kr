@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1cd4dd270d276969d759bc9a9dccef80b281251
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502921"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414590"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 사용자가 앱을 얻는 방법
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 이 정보를 사용하여 사용자가 Microsoft Intune을 통해 배포하는 앱을 얻는 방법과 위치를 이해합니다.
 
@@ -39,5 +37,6 @@ ms.locfileid: "72502921"
 **관리되지 않는 앱**은 정책을 통해 관리할 수 있고 Intune에서 래핑되지 않았거나 Intune 앱 SDK를 통합하지 않은 앱입니다. 앱 보호 정책을 이러한 앱에 적용할 수 없습니다.
 
 ## <a name="see-also"></a>참고 항목
+
 [Android 사용자가 앱을 얻는 방법](end-user-apps-android.md)
 [iOS 사용자가 앱을 얻는 방법](end-user-apps-android.md)

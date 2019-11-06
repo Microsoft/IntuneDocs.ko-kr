@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999675"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415056"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune의 지원되는 운영 체제 및 브라우저
 
@@ -37,14 +37,14 @@ Microsoft Intune을 설정하기 전에 지원되는 운영 체제 및 브라우
 
 다음 운영 체제를 실행하는 디바이스를 관리할 수 있습니다.
 
-[!INCLUDE [mdm-supported-devices](../../intune-classic/includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>지원되는 Samsung Knox Standard 디바이스
 
 MDM 등록을 방해하는 Knox 활성화 오류를 방지하기 위해 회사 포털 앱은 디바이스가 [지원되는 Knox 디바이스 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 표시되는 경우에만 MDM 등록 중에 Samsung Knox 활성화를 시도합니다. Samsung Knox 활성화를 지원하지 않는 디바이스는 표준 Android 디바이스로 등록됩니다. 모든 Samsung 디바이스에 Knox를 지원하는 모델 번호가 있는 것은 아닙니다. Samsung 디바이스를 구매하고 배포하기 전에 디바이스 재판매인의 Knox 호환성을 검사합니다.
 
 > [!NOTE]
-> Samsung Knox 디바이스를 등록하는 경우 [Samsung 서버에 대한 액세스를 허용](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)해야 할 수도 있습니다. 
+> Samsung Knox 디바이스를 등록하는 경우 [Samsung 서버에 대한 액세스를 허용](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)해야 할 수도 있습니다.
 
 다음 Samsung 디바이스 모델 목록은 Knox를 지원하지 않습니다. Android용 회사 포털 앱에서 네이티브 Android 디바이스로 등록됩니다.
 
@@ -85,18 +85,17 @@ MDM 등록을 방해하는 Knox 활성화 오류를 방지하기 위해 회사 �
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### <a name="windows-pc-software-client"></a>Windows PC 소프트웨어 클라이언트
 
-Windows PC에서는 대체 등록 방법으로 [Intune 소프트웨어 클라이언트](../manage-windows-pcs-with-microsoft-intune.md)를 배포하고 설치할 수 있습니다. 이 기능은 Intune 클래식 포털을 통해서만 사용할 수 있습니다. Intune 소프트웨어 클라이언트를 사용하면 Windows 7 이상 버전(Windows 10 Home Edition은 제외)을 실행하는 PC를 관리할 수 있습니다.
+Windows PC에서는 대체 등록 방법으로 [Intune 소프트웨어 클라이언트](manage-windows-pcs-with-microsoft-intune.md)를 배포하고 설치할 수 있습니다. 이 기능은 Intune 클래식 포털을 통해서만 사용할 수 있습니다. Intune 소프트웨어 클라이언트를 사용하면 Windows 7 이상 버전(Windows 10 Home Edition은 제외)을 실행하는 PC를 관리할 수 있습니다.
 
 > [!Note]
 > Microsoft는 2020년 1월 14일부로 Windows 7 지원을 중단한다고 발표했습니다. 이 날짜에 Intune도 Windows 7을 실행하는 디바이스에 대한 지원을 만료합니다.
-
-> 자세한 내용은 [Intune 변경 계획: Windows 7 지원 종료](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)를 참조하세요.
-
+>
+> 자세한 내용은 [Intune 변경 계획: Windows 7 지원 종료](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)를 참조하세요.
+>
 > Microsoft Intune은 Silverlight 기반 Intune 콘솔 지원을 2020년 10월 15일에 중단할 예정입니다. Silverlight 콘솔 구성된 PC소프트웨어 클라이언트(또한 PC에이전트로 알려진)도 포함됩니다.
-
+>
 > 자세한 내용은 [Microsoft Intune Silverlight 기반 관리 콘솔 지원 종료](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)를 참조하세요.
 
 <!--  ### Exchange ActiveSync management
@@ -107,24 +106,23 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 여러 관리 태스크를 수행하려면 다음과 같은 관리 웹 사이트 중 하나를 사용해야 합니다.
 
-- [Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 관리 센터](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure Portal](https://portal.azure.com/)
 
 이러한 포털에 대해 지원되는 브라우저는 다음과 같습니다.
+
 - Microsoft Edge(최신 버전)
 - Microsoft Internet Explorer 11
 - Safari(최신 버전, Mac만)
 - Chrome(최신 버전)
 - Firefox(최신 버전)
 
-
-
-
 ### <a name="intune-classic-portal"></a>Intune 클래식 포털
 
 Intune 클래식 포털은 Intune PC 소프트웨어 클라이언트에 등록된 디바이스를 관리하는 데만 사용됩니다(https://manage.microsoft.com) ). Intune 클래식 포털에는 Silverlight 브라우저 지원이 필요합니다.
 
 Intune 콘솔을 지원하는 Silverlight 브라우저는 다음과 같습니다.
+
 - Internet Explorer 10 이상
 - Google Chrome(버전 42 이전 버전)
 - Silverlight가 지원되는 Mozilla Firefox(버전 56 이전 버전)

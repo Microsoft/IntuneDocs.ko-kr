@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e8d0a38d385e034b948b96a96df2189666362a9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 04708842373abf296b5350d9f77e02fa08ce48ed
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505446"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414610"
 ---
 # <a name="configure-a-custom-domain-name"></a>사용자 지정 도메인 이름 구성
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 이 항목에서는 관리자에게 DNS CNAME를 만들어 Microsoft Intune을 사용하는 로그온 환경을 간소화하고 사용자 지정하는 방법을 알려줍니다.
 

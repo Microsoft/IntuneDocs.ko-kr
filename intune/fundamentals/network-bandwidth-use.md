@@ -18,20 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505237"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415103"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 네트워크 구성 요구 사항 및 대역폭
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 이 정보를 사용하여 Intune 배포에 대한 대역폭 요구 사항을 이해할 수 있습니다.
 
 ## <a name="average-network-traffic"></a>평균 네트워크 트래픽
+
 이 표에는 각 클라이언트의 네트워크를 통해 전송되는 공통 콘텐츠의 대략적인 크기 및 주기가 정리되어 있습니다.
 
 > [!NOTE]
@@ -53,9 +52,11 @@ ms.locfileid: "72505237"
 |소프트웨어 배포|상황에 따라 다름<br /><br />크기는 배포하는 소프트웨어에 따라 달라집니다.|**상황에 따라 다름**<br /><br />소프트웨어를 배포하는 시기에 따라 달라집니다.|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>네트워크 대역폭 사용량을 줄이는 방법
+
 다음 방법 중 하나 이상을 사용하여 Intune 클라이언트의 네트워크 대역폭 사용을 줄일 수 있습니다.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>프록시 서버를 사용하여 콘텐츠 요청 캐시
+
 프록시 서버는 콘텐츠를 캐시하여 중복 다운로드를 줄이고 인터넷에서 콘텐츠의 네트워크 대역폭을 줄일 수 있습니다.
 
 클라이언트 컴퓨터에서 콘텐츠를 받는 캐싱 프록시 서버는 해당 콘텐츠를 검색하고 웹 응답 및 다운로드를 모두 캐시할 수 있습니다. 서버는 캐시된 데이터를 사용하여 클라이언트의 후속 요청에 응답합니다.
@@ -74,6 +75,7 @@ ms.locfileid: "72505237"
 프록시 서버를 사용하여 콘텐츠를 캐시하는 방법에 대해서는 사용 중인 프록시 서버 솔루션의 설명서를 참조하세요.
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>컴퓨터에서 BITS(Background Intelligent Transfer Service) 사용
+
 구성한 시간 동안 Windows 컴퓨터에서 BITS를 사용하여 네트워크 대역폭을 줄일 수 있습니다. Intune 에이전트 정책의 **네트워크 대역폭** 페이지에서 BITS 정책을 구성할 수 있습니다.
 
 > [!NOTE]
@@ -82,14 +84,15 @@ ms.locfileid: "72505237"
 BITS 및 Windows 컴퓨터에 대한 자세한 내용은 TechNet 라이브러리의 [Background Intelligent Transfer Service](https://technet.microsoft.com/library/bb968799.aspx)를 참조하세요.
 
 ### <a name="delivery-optimization"></a>배달 최적화
+
 배달 최적화를 사용하면 Windows 10 디바이스에서 애플리케이션 및 업데이트를 다운로드할 때 Intune을 통해 대역폭 소비를 줄일 수 있습니다. 자체 구성 분산 캐시를 사용하여 기존 서버와 대체 원본(예: 네트워크 피어)에서 다운로드를 끌어올 수 있습니다.
 
 배달 최적화에서 지원되는 Windows 10 버전 및 콘텐츠 형식의 전체 목록을 보려면 [Windows 10 업데이트에 대한 배달 최적화 문서](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements)를 참조하세요.
 
 디바이스 구성 프로필의 일부로서 [배달 최적화를 설정](../configuration/delivery-optimization-settings.md)할 수 있습니다.
 
-
 ### <a name="use-branchcache-on-computers"></a>컴퓨터에서 BranchCache 사용
+
 Intune 클라이언트는 BranchCache를 사용하여 WAN(광역 네트워크) 트래픽을 줄일 수 있습니다. 다음 운영 체제에서 BranchCache를 지원합니다.
 
 - Windows 7

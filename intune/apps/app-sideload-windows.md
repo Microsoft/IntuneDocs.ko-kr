@@ -16,16 +16,14 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507389"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414694"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune으로 Windows 디바이스에 기간 업무 앱을 배포할 수 있도록 앱에 서명
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 유니버설 앱을 Windows 8.1 Desktop 또는 Windows 10 Desktop 및 Mobile 디바이스에 배포할 수 있습니다. Windows 8.1 Desktop 또는 Windows 10 Desktop 및 Mobile 디바이스에 .appx 앱을 배포하려면 Windows 디바이스에서 이미 신뢰하는 퍼블릭 인증 기관의 코드 서명 인증서를 사용하거나 사용자 고유의 인증 기관을 사용할 수 있습니다.
 
@@ -53,6 +51,7 @@ Windows 10에서 테스트용 로드는 다음과 같은 측면에서 이전 버
 ### <a name="upload-the-code-signing-certificate"></a>코드 서명 인증서 업로드
 
 Windows 10 디바이스에서 인증 기관을 아직 신뢰하지 않는 경우, appx 패키지에 서명하고 Intune 서비스에 업로드한 후에 다음과 같이 Intune 포털에 코드 서명 인증서를 업로드해야 합니다.
+
 1. 클라이언트 앱 클릭
 2. Windows 엔터프라이즈 인증서 클릭
 3. 코드 서명 인증서에서 '파일 선택' 선택
@@ -77,6 +76,7 @@ Windows 8.1 Desktop/Windows 10 Desktop 및 Mobile
 인증서 기간이 만료된 경우 appx 파일이 더 이상 시작되지 않을 수 있습니다. 새 .cer 파일을 얻고 지침에 따라 배포된 각 appx 파일을 코드 서명하고 모든 appx 파일 및 업데이트된 .cer 파일을 Intune 포털의 Windows 엔터프라이즈 인증서 섹션에 다시 업로드해야 합니다.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Windows 10 회사 포털 앱 수동 배포
+
 Microsoft Store에 대한 액세스 권한을 제공하지 않으려는 경우 MSFB(비즈니스용 Microsoft Store)와 Intune을 통합하지 않았더라도 Intune에서 곧바로 Windows 10 회사 포털 앱을 수동으로 배포할 수 있습니다. 또는 통합한 경우에는 [MSFB를 사용하여 앱 배포](store-apps-windows.md)를 사용하여 회사 포털 앱을 배포할 수 있습니다.
 
  > [!NOTE]
@@ -100,9 +100,11 @@ Microsoft Store에 대한 액세스 권한을 제공하지 않으려는 경우 M
 Intune에서 유니버설 앱의 종속성을 처리하는 방식에 대한 자세한 내용은 [Deploying an appxbundle with dependencies via Microsoft Intune MDM(Microsoft Intune MDM을 통해 종속성이 포함된 appxbundle 배포)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)을 참조하세요.  
 
 ### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>사용자가 이미 스토어에서 이전 앱을 설치한 경우 어떻게 사용자의 디바이스에서 회사 포털을 업데이트하나요?
-사용자가 이미 스토어에서 Windows 8.1 또는 Windows Phone 8.1 회사 포털 앱을 설치한 경우 관리자나 사용자의 별도 조치가 필요 없이 앱이 자동으로 새 버전으로 업데이트됩니다. 업데이트가 이루어지지 않는 경우 사용자에게 디바이스에서 스토어 앱에 대해 자동 업데이트를 활성화했는지 확인하도록 요청합니다.   
+
+사용자가 이미 스토어에서 Windows 8.1 또는 Windows Phone 8.1 회사 포털 앱을 설치한 경우 관리자나 사용자의 별도 조치가 필요 없이 앱이 자동으로 새 버전으로 업데이트됩니다. 업데이트가 이루어지지 않는 경우 사용자에게 디바이스에서 스토어 앱에 대해 자동 업데이트를 활성화했는지 확인하도록 요청합니다.
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>사이드로드한 Windows 8.1 회사 포털 앱을 Windows 10 회사 포털 앱으로 어떻게 업그레이드하나요?
+
 권장되는 마이그레이션 경로는 배포 작업을 "제거"로 설정하여 Windows 8.1 회사 포털 앱의 배포를 삭제하는 것입니다. 이 작업이 완료되면 위의 옵션 중 하나를 사용하여 Windows 10 회사 포털 앱을 배포할 수 있습니다.  
 
 앱을 사이드로드해야 하며 Symantec 인증서로 서명하지 않고 Windows 8.1 회사 포털을 배포한 경우에는 위의 Intune 섹션을 통해 직접 배포의 단계를 따라 업그레이드를 완료합니다.
@@ -110,6 +112,7 @@ Intune에서 유니버설 앱의 종속성을 처리하는 방식에 대한 자�
 앱을 사이드로드해야 하며 Symantec 코드 서명 인증서로 Windows 8.1 회사 포털을 서명 및 배포한 경우에는 아래 섹션의 단계를 따릅니다.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>서명 및 사이드로드된 Windows Phone 8.1 회사 포털 앱이나 Windows 8.1 회사 포털 앱을 어떻게 Windows 10 회사 포털 앱으로 업그레이드하나요?
+
 권장되는 마이그레이션 경로는 배포 작업을 "제거"로 설정하여 Windows Phone 8.1 회사 포털 앱 또는 Windows 8.1 회사 포털 앱의 기존 배포를 삭제하는 것입니다. 이 작업이 완료되면 Windows 10 회사 포털 앱을 정상적으로 배포할 수 있습니다.  
 
 이 작업을 마치지 않는 경우에는 업그레이드 경로를 준수하도록 Windows 10 회사 포털 앱을 적절하게 업데이트하고 서명해야 합니다.  
