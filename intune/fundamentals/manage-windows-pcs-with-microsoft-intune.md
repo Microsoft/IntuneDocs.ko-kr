@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510108"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414402"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune 소프트웨어 클라이언트를 통해 Windows PC를 컴퓨터로 관리
 
@@ -30,7 +30,7 @@ ms.locfileid: "72510108"
 > [!WARNING]
 > Microsoft는 [2020년 1월 14일부로 Windows 7 지원을 종료한다](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)고 발표했습니다. 이 날짜에 Intune도 Windows 7을 실행하는 디바이스에 대한 지원을 만료합니다. 모든 서비스 또는 지원 중단을 방지하려면 Windows 10으로 이동하는 것이 가장 좋습니다.
 > 
-> 자세한 내용은 [Intune의 변경 계획: Windows 7 지원 종료](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-)를 참조 하세요.
+> 자세한 내용은 [Intune 변경 계획: Windows 7 지원 종료](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7)를 참조하세요.
 
 > [!NOTE]
 > Microsoft Intune을 사용하여 Windows PC를 [MDM(모바일 디바이스 관리)가 있는 모바일 디바이스](../enrollment/windows-enroll.md)로 관리하거나, 아래 설명된 대로 Intune 소프트웨어 클라이언트가 있는 컴퓨터로 관리할 수 있습니다. 그러나 고객은 가능한 한 [MDM 관리 솔루션을 사용](../enrollment/windows-enroll.md)하는 것이 좋습니다. 자세한 내용은 [Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교](pc-management-comparison.md)를 참조하세요. 
@@ -62,7 +62,7 @@ Intune에서는 소프트웨어 클라이언트를 사용하여 최대 7,000대�
 |---------------|--------------------|
 |운영 체제 | Windows 7 SP1 및 Windows 8.1 이상을 실행하는 Windows 디바이스 </br></br>**Home Edition 버전은 지원되지 않습니다.**|
 |관리자 권한|클라이언트 소프트웨어를 설치하는 계정에는 해당 디바이스에 대한 로컬 관리자 권한이 있어야 합니다.|
-|Windows Installer 3.1|PC에 최소 Windows Installer 3.1이 설치되어 있어야 합니다.<br /><br />PC의 Windows Installer 버전을 확인하려면<br /><br />  PC에서 **%windir%\System32\msiexec.exe**를 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.<br /><br />Windows Installer의 최신 버전은 Microsoft Developer Network 웹 사이트의 [Windows Installer Redistributables(Windows Installer 재배포 가능 구성 요소)](http://go.microsoft.com/fwlink/?LinkID=234258) 에서 다운로드할 수 있습니다.|
+|Windows Installer 3.1|PC에 최소 Windows Installer 3.1이 설치되어 있어야 합니다.<br /><br />PC의 Windows Installer 버전을 확인하려면<br /><br />  PC에서 **%windir%\System32\msiexec.exe**를 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.<br /><br />Windows Installer의 최신 버전은 Microsoft Developer Network 웹 사이트의 [Windows Installer Redistributables(Windows Installer 재배포 가능 구성 요소)](https://go.microsoft.com/fwlink/?LinkID=234258) 에서 다운로드할 수 있습니다.|
 |호환되지 않는 클라이언트 소프트웨어를 제거합니다.|Intune 클라이언트 소프트웨어를 설치하기 전에 해당 PC에서 Configuration Manager, Operations Manager 및 Service Manager 클라이언트 소프트웨어를 모두 제거하세요.|
 
 ## <a name="deploying-the-intune-software-client"></a>Intune 소프트웨어 클라이언트 배포

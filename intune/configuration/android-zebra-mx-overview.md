@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13e5e7d49ec7e808f7cb5ba419dc881717539564
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
-ms.translationtype: MTE75
+ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496048"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182852"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Microsoft Intune에서 Zebra Mobility Extensions를 사용하여 Zebra 디바이스 사용 및 관리
 
@@ -30,7 +30,7 @@ ms.locfileid: "72496048"
 
 Intune에는 앱 관리 및 디바이스 설정 구성 등 다양한 기능이 포함되어 있습니다. 이러한 기본 제공 기능 및 설정은 "Zebra 디바이스"라고도 알려진 Zebra Technologies에서 제조한 Android 디바이스를 관리합니다.
 
-Android 디바이스에서 **MX(Mobility Extensions)** 프로필을 사용하여 Zebra 관련 설정을 사용자 지정하거나 추가합니다.
+Android 디바이스에서 Zebra의 **MX(Mobility Extensions)** 프로필을 사용하여 Zebra 관련 설정을 사용자 지정하거나 추가합니다.
 
 이 문서에서는 Microsoft Intune의 Zebra 디바이스에서 Zebra MX(Mobility Extensions)를 사용하는 방법을 보여줍니다.
 
@@ -52,6 +52,7 @@ Intune을 사용하면 Zebra 디바이스를 등록하여 기간 업무 앱을 �
 - Zebra Technologies의 StageNow 데스크톱 앱의 최신 버전이 있는지 확인합니다.
 - [Zebra의 전체 MX 기능 매트릭스](http://techdocs.zebra.com/mx/compatibility)(Zebra의 웹 사이트 열기)를 확인하여 만든 프로필이 디바이스의 MX 버전, OS 버전 및 모델과 호환되는지 확인합니다.
 - TC20/25 디바이스와 같은 특정 디바이스는 StageNow에서 사용할 수 있는 모든 MX 기능을 지원하지 않습니다. 업데이트된 지원 정보는 [Zebra의 기능 매트릭스](http://techdocs.zebra.com/mx/tc2x/)(Zebra의 웹 사이트 열기)를 확인합니다.
+
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>1단계: 최신 회사 포털 앱 설치
 
