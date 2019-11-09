@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892534"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712852"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
@@ -60,7 +60,7 @@ ms.locfileid: "72892534"
 이 문제에 대 한 몇 가지 가능한 해결 방법은 다음과 같습니다.
 
 ##### <a name="remove-devices-that-were-enrolled"></a>등록 된 장치 제거
-1. [Azure 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)에 로그인합니다.    
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.    
 2. **사용자**  > **모든 사용자**로 이동 합니다.    
 3. 영향을 받는 사용자 계정을 선택 하 고 **장치**를 클릭 합니다.    
 4. 사용 하지 않거나 원치 않는 장치를 선택 하 고 **삭제**를 클릭 합니다. 
@@ -70,12 +70,12 @@ ms.locfileid: "72892534"
 > [!NOTE]
 > 이 메서드는 영향을 받는 사용자 뿐 아니라 모든 사용자에 대 한 장치 등록 제한을 늘립니다.
 
-1. [Azure 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.
 2. **장치 등록**  > **등록 제한**으로 이동한 다음 **장치 제한 제한**을 선택 합니다.    
 3. **장치 제한**값을 늘립니다. 
 
 ##### <a name="check-device-type-restrictions"></a>디바이스 유형 제한 확인
-1. [Intune 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)에 전역 관리자 계정으로 로그인합니다.
+1. 전역 관리자 계정을 사용 하 여 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431) 에 로그인 합니다.
 2. **장치 등록**  > **등록 제한**으로 이동한 후 **장치 유형 제한**에서 **기본** 제한을 선택 합니다.    
 3. **플랫폼**을 선택 하 고 Windows **허용** **(MDM)** 을 선택 합니다.
 

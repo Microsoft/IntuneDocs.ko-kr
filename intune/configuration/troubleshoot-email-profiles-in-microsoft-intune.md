@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506587"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755009"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune에서 메일 프로필 관련 일반적인 문제와 해결 방법
 
@@ -32,7 +32,6 @@ ms.locfileid: "72506587"
 ## <a name="what-you-need-to-know"></a>기억해야 하는 사항
 
 - 장치를 등록 한 사용자에 대 한 전자 메일 프로필을 배포 합니다. 전자 메일 프로필을 구성 하기 위해 Intune은 등록 중에 사용자의 전자 메일 프로필에서 AD (Azure Active Directory) 속성을 사용 합니다. [장치에 메일 설정 추가](email-settings-configure.md) 가 좋은 리소스 일 수 있습니다.
-- Configuration Manager 하이브리드에서 Intune 독립 실행형으로 마이그레이션한 후 Configuration Manager 하이브리드의 메일 프로필은 7 일 동안 장치에 유지 됩니다. 이는 예상된 동작입니다. 전자 메일 프로필이 더 빨리 제거 되어야 하는 경우 [Intune 지원](../fundamentals/get-support.md)에 문의 하세요.
 - Android Enterprise의 경우 관리 되는 Google Play 스토어을 사용 하 여 Gmail 또는 9 for Work를 배포 합니다. [관리 되는 Google Play 앱 추가](../apps/apps-add-android-for-work.md) 단계를 나열 합니다.
 - IOS 및 Android 용 Microsoft Outlook은 전자 메일 프로필을 지원 하지 않습니다. 대신, 앱 구성 정책을 배포 합니다. 자세한 내용은 [Outlook 구성 설정](../apps/app-configuration-policies-outlook.md)을 참조 하세요.
 - 장치 그룹 (사용자 그룹 아님)을 대상으로 하는 전자 메일 프로필이 장치에 배달 되지 않을 수 있습니다. 장치에 기본 사용자가 있는 경우 장치 대상 지정이 작동 해야 합니다. 전자 메일 프로필에 사용자 인증서가 포함 된 경우 사용자 그룹을 대상으로 해야 합니다.
@@ -62,22 +61,10 @@ Intune 또는 Office 365 MDM에 등록 하기 전에 사용자가 전자 메일 
 
 자동으로 구성된 메일 계정이 있는 사용자가 디바이스에서 그림이나 이미지를 보낼 수 없습니다. 이 시나리오는 **타사 애플리케이션에서 이메일을 보내도록 허용** 옵션이 활성화되지 않은 경우에 발생할 수 있습니다.
 
-### <a name="intune-solution"></a>Intune 솔루션
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.
+2. **장치** > **구성 프로필**을 선택 합니다.
 3. 전자 메일 프로필 > **속성**  > **설정**을 선택 합니다.
 4. **타사 응용 프로그램에서 전자 메일을 보낼 수 있음** 설정을 **사용**으로 설정 합니다.
-
-### <a name="configuration-manager-hybrid"></a>Configuration Manager 하이브리드
-
-1. Configuration Manager 콘솔 > **자산 및 호환성**을 엽니다.
-
-2. **개요** > **호환성 설정** > **회사 리소스 액세스**를 확장하고 **이메일 프로필**을 선택합니다.
-
-3. 전자 메일 프로필을 마우스 오른쪽 단추로 클릭하고 **속성**을 엽니다.
-
-4. **동기화 설정** 탭에서 **타사 애플리케이션에서 전자 메일을 보내도록 허용**을 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

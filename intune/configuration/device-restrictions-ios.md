@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414686"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709749"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 iOS 및 iPadOS 디바이스 설정
 
@@ -417,6 +417,9 @@ IOS 9.3 이상 버전을 실행 하는 장치에 적용 됩니다.
 - **앱 목록 유형**: 표시 하거나 숨길 앱 목록을 만듭니다. 기본 제공 앱 및 lob (기간 업무) 앱을 표시 하거나 숨길 수 있습니다. Apple의 웹 사이트에는 [기본 제공 apple 앱](https://support.apple.com/HT208094)목록이 있습니다. 옵션은 다음과 같습니다.
 
   - **숨겨진 앱**: 사용자에게 표시되지 않는 앱 목록을 입력합니다. 사용자가 이러한 앱을 보거나 열 수 없습니다.
+  
+    Apple에서는 일부 네이티브 앱을 숨길 수 없습니다. 예를 들어 장치에서 **설정** 또는 전자/ **작은** 앱을 숨길 수 없습니다. [기본 제공 Apple 앱 삭제](https://support.apple.com/HT208094) 는 숨길 수 있는 앱을 나열 합니다.
+  
   - **표시된 앱**: 사용자가 보고 시작할 수 있는 앱 목록을 입력합니다. 다른 앱은 보거나 시작할 수 없습니다.
 
 - **앱 url**: 표시 하거나 숨기려는 앱의 스토어 앱 URL을 입력 합니다. 예를 들면 다음과 같습니다.

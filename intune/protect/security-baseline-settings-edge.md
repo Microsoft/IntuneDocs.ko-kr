@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f4e56340d871ea5e0bcec7e541a418c32d021d0
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
-ms.translationtype: HT
+ms.openlocfilehash: c75029c60609b0383e2f647e5b94144d4186248c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415648"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754872"
 ---
 # <a name="microsoft-edge-baseline-settings-for-intune"></a>Intune에 대 한 Microsoft Edge 기준선 설정
 
@@ -68,7 +68,7 @@ Microsoft Intune에서 지 원하는 Microsoft Edge 웹 브라우저 기준 설�
 
 - **기본 Adobe Flash 설정**  
   **기본**: 사용  
-  Microsoft Edge CSP: [browser/AllowFlash](https://docs.microsoft.coms/windows/client-management/mdm/policy-csp-browser#browser-allowflash)및 [browser/AllowFlashClickToRun](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun)  
+  Microsoft Edge CSP: [browser/AllowFlash](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflash)및 [browser/AllowFlashClickToRun](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun)  
 
   ' PluginsAllowedForUrls ' 또는 ' PluginsBlockedForUrls '가 적용 되지 않는 웹 사이트에서 Adobe Flash 플러그 인을 자동으로 실행할 수 있는지 여부를 결정 합니다. 
 

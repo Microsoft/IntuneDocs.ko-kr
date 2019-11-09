@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2e7dc729879eb6d16a4ab3555d8fe319501a53e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492130"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754940"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune의 문제 해결 정책 및 프로필
 
@@ -32,11 +32,12 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 이 문서에는 몇 가지 일반적인 문제 해결 기술이 나열되고 발생할 수 있는 몇 가지 문제가 설명되어 있습니다.
 
 ## <a name="check-tenant-status"></a>테 넌 트 상태 확인
+
 [테 넌 트 상태](../fundamentals/tenant-status.md) 를 확인 하 고 구독이 활성 상태 인지 확인 합니다. 정책 또는 프로필 배포에 영향을 줄 수 있는 활성 인시던트 및 권고에 대 한 세부 정보를 볼 수도 있습니다.
 
 ## <a name="use-built-in-troubleshooting"></a>기본 제공 문제 해결 기능 사용
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에서 **문제 해결**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **문제 해결 + 지원**을 선택 합니다.
 
     ![Intune에서 도움말 및 지원으로 이동하여 문제 해결을 선택합니다.](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -102,7 +103,7 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>프로필이 제대로 적용되었는지 확실하지 않은 경우
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.
 2. **디바이스** > **모든 디바이스**를 선택하고 디바이스를 선택한 다음, **디바이스 구성**을 선택합니다. 
 
     모든 디바이스는 해당 프로필이 나열됩니다. 모든 프로필에는 **상태**가 있습니다. 상태는 하드웨어 및 OS 제한 사항과 요구 사항을 비롯한 할당된 모든 프로필이 함께 고려되어 적용됩니다. 가능한 상태는 다음과 같습니다.

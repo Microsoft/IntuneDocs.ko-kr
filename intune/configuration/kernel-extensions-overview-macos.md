@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 11/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abcd7b96de8f5f3984c2d4407abaf11b7b6b7e4f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e69f1b11833da0906aaf831f8bb82b04241e442f
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492488"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755176"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Intune에서 macOS 커널 확장 추가
 
@@ -67,8 +67,8 @@ Intune은 "구성 프로필"을 사용하여 조직의 요구 사항에 맞게 �
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.
+2. **장치** > **구성 프로필** 을 선택 하 > **프로필 만들기**를 선택 합니다.
 3. 다음 속성을 입력합니다.
 
     - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.

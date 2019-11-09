@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915721"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756766"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune에서 OEMConfig를 사용 하 여 Android Enterprise 장치 사용 및 관리
 
@@ -80,8 +80,8 @@ OEMConfig를 사용 하는 경우 다음 정보를 알고 있어야 합니다.
 
 ## <a name="create-an-oemconfig-profile"></a>OEMConfig 프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.
+2. **장치** > **구성 프로필** 을 선택 하 > **프로필 만들기**를 선택 합니다.
 3. 다음 속성을 입력합니다.
 
     - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.
@@ -108,11 +108,11 @@ OEMConfig를 사용 하는 경우 다음 정보를 알고 있어야 합니다.
       - 많은 설정에 OEM에서 제공 하는 기본값이 있습니다. 기본값이 있는지 확인 하려면 설정 옆의 정보 아이콘을 마우스로 가리킵니다. 도구 설명에는 해당 설정의 기본값 (해당 하는 경우)과 OEM에서 제공 하는 자세한 정보가 표시 됩니다.
 
       - **지우기** 를 클릭 하면 프로필에서 설정이 삭제 됩니다. 프로필이 프로필에 없는 경우 프로필이 적용 될 때 장치에서 해당 값이 변경 되지 않습니다.
-        
+
       - 구성 디자이너에서 비어 있는 (구성 되지 않은) 번들을 만드는 경우 JSON 편집기로 전환할 때 삭제 됩니다.
 
     - **Json 편집기**:이 옵션을 선택 하면 앱에 포함 된 전체 구성 스키마에 대 한 템플릿이 포함 된 JSON 편집기가 열립니다. 편집기에서 다른 설정의 값으로 템플릿을 사용자 지정 합니다. **구성 디자이너** 를 사용 하 여 값을 변경 하는 경우 JSON 편집기는 구성 디자이너의 값으로 템플릿을 덮어씁니다.
-    
+
       - 기존 프로필을 업데이트 하는 경우 JSON 편집기는 프로필을 사용 하 여 마지막으로 저장 한 설정을 표시 합니다.
 
       - OEMConfig 스키마는 크고 복잡할 수 있습니다. 다른 편집기를 사용 하 여 이러한 설정을 업데이트 하려면 **JSON 템플릿 다운로드** 단추를 선택 합니다. 선택한 편집기를 사용 하 여 템플릿에 구성 값을 추가 합니다. 그런 다음 업데이트 된 JSON을 복사 하 여 **json 편집기** 속성에 붙여넣습니다.

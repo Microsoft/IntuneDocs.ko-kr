@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: jieyan
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
-ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
-ms.translationtype: HT
+ms.openlocfilehash: 7f343ace48c917e65d9d59cd7c42c53e9b892968
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182852"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756720"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Microsoft Intune에서 Zebra Mobility Extensions를 사용하여 Zebra 디바이스 사용 및 관리
 
@@ -52,7 +52,6 @@ Intune을 사용하면 Zebra 디바이스를 등록하여 기간 업무 앱을 �
 - Zebra Technologies의 StageNow 데스크톱 앱의 최신 버전이 있는지 확인합니다.
 - [Zebra의 전체 MX 기능 매트릭스](http://techdocs.zebra.com/mx/compatibility)(Zebra의 웹 사이트 열기)를 확인하여 만든 프로필이 디바이스의 MX 버전, OS 버전 및 모델과 호환되는지 확인합니다.
 - TC20/25 디바이스와 같은 특정 디바이스는 StageNow에서 사용할 수 있는 모든 MX 기능을 지원하지 않습니다. 업데이트된 지원 정보는 [Zebra의 기능 매트릭스](http://techdocs.zebra.com/mx/tc2x/)(Zebra의 웹 사이트 열기)를 확인합니다.
-
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>1단계: 최신 회사 포털 앱 설치
 
@@ -134,8 +133,8 @@ StageNow에서 프로필을 만들 때 마지막 단계에서 **MDM으로 내보
 
 Intune에서 디바이스 구성 프로필 만들기:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.
+2. **장치** > **구성 프로필** 을 선택 하 > **프로필 만들기**를 선택 합니다.
 3. 다음 속성을 입력합니다.
 
     - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493899"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755270"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -223,12 +223,12 @@ GDI DPI 크기 조정은 DPI를 인식하지 않는 애플리케이션에서 DPI
 
 - **알림 센터 알림(모바일 전용)** : **차단**은 알림 센터 알림을 디바이스 잠금 화면에 표시하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 사용자가 알림을 잠금 화면에 표시할 앱을 선택할 수 있습니다.
 
-  [AboveLock/AllowActionCenterNotifications CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
+  [AboveLock/AllowActionCenterNotifications CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **잠긴 화면 그림 URL(데스크톱 전용)** : Windows 잠금 화면 배경으로 사용되는 JPG, JPEG 또는 PNG 형식의 그림에 대한 URL을 입력합니다. 예를 들어 다음과 같이 입력합니다. `https://contoso.com/image.png` 이 설정은 이미지를 잠그고 나중에 변경할 수 없습니다.
 - **사용자 구성 가능 화면 시간 제한(모바일 전용)** : **허용**을 사용하면 화면 시간 제한을 구성할 수 있습니다. **구성되지 않음**(기본값)은 사용자에게 이 옵션을 제공하지 않습니다.
 
-  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
+  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
 - **잠긴 화면 위 Cortana**(데스크톱 전용): **차단**은 디바이스가 잠금 화면으로 있을 때 사용자가 Cortana와 상호 작용하지 못하도록 차단합니다. **구성되지 않음**(기본값)은 Cortana와의 상호 작용을 허용합니다.
 
@@ -240,7 +240,7 @@ GDI DPI 크기 조정은 DPI를 인식하지 않는 애플리케이션에서 DPI
 
 - **화면 시간 제한(모바일 전용)** : 화면 잠금에서 화면 해제까지의 기간(분)을 설정합니다. 지원되는 값은 11-1800입니다. 예를 들어 이 시간 제한을 5분으로 설정하려면 `300`을 입력합니다.
 
-  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
+  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
 ## <a name="messaging"></a>메시징
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413824"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635329"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>앱 보호 정책에 대해 LOB(기간 업무) 앱 준비
 
@@ -110,7 +110,7 @@ Intune SDK 개발 팀에서는 네이티브 Android, iOS(Obj-C, Swift), Xamarin,
 |앱 데이터 전체 초기화|X|X|
 |다중 ID 시나리오에서 회사 및 학교 데이터 선택적 초기화 <br><br>**참고:** iOS의 경우 관리 프로필을 제거하면 앱도 제거됩니다.|X||
 |"다른 이름으로 저장" 차단|X||
-|대상 응용 프로그램 구성 (또는 "MAM 채널"을 통한 앱 구성)|X|X|
+|대상 응용 프로그램 구성 (또는 "MAM 채널"을 통한 앱 구성)|X||
 |다중 ID 지원|X||
 |사용자 지정 가능한 스타일 |X|||
 |Citrix mVPN을 통한 주문형 애플리케이션 VPN|X|X| 
