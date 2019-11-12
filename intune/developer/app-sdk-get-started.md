@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6886060cce77004b107dac02ecea57f2090ac8f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503475"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592017"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -63,7 +63,7 @@ Microsoft에서는 사용자의 설문지 응답에 명시된 메일 주소를 �
 앱의 딥 링크가 향후에 변경되면 앱을 다시 등록해야 합니다.
 
 > [!NOTE]
-> 새 버전의 Intune 앱 SDK를 사용하여 앱을 업데이트하는 경우에도 Microsoft에 알려 주세요.
+> 새 버전의 Intune 앱 SDK를 사용하여 앱을 업데이트하는 경우에도 Microsoft에 알려주셔야 합니다.
 
 ## <a name="download-the-sdk-files"></a>SDK 파일 다운로드
 
@@ -181,6 +181,9 @@ Azure 테넌트 내에서 앱을 등록한 후에 해당 앱이 **모든 애플�
 5. 검색 상자에 **Microsoft 모바일 애플리케이션 관리**를 입력합니다.
 6. **위임된 권한**에서 **DeviceManagementManagedApps.ReadWrite: 사용자 앱 관리 데이터 읽기 및 쓰기*** 확인란을 선택합니다.
 7. **권한 추가**를 클릭합니다.
+
+> [!NOTE]
+> 앱이이 리소스에 액세스 하는 동안 오류가 발생 하 여 로그인을 제한 하는 경우: https://intunemam.microsoftonline.com , 앱의 클라이언트 ID와 msintuneappsdk@microsoft.com 에 대 한 메모를 전송 해야 합니다. 현재 수동 승인 프로세스입니다.
 
 ### <a name="badge-your-app-optional"></a>앱에 배지 지정(선택 사항)
 

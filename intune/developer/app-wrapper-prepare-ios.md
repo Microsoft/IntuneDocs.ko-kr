@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413869"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713483"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -44,7 +44,7 @@ iOS용 Microsoft Intune 앱 래핑 도구를 사용하면 앱 자체의 코드�
 
   * 입력 앱 파일의 확장명은 **.ipa** 또는 **.app**이어야 합니다.
 
-  * iOS 10 이상에 대한 입력 앱을 컴파일해야 합니다.
+  * iOS 11 이상에 대한 입력 앱을 컴파일해야 합니다.
 
   * 입력 앱은 암호화할 수 없습니다.
 
@@ -289,26 +289,27 @@ iOS의 경우 앱에 서명하는 데 사용된 원본이 아닌 다른 인증�
 |지정한 입력 앱은 이미 래핑되었으며 최신 정책 템플릿 버전을 사용합니다.|앱 래핑 도구는 기존에 래핑된 앱을 최신 정책 템플릿 버전을 사용하여 다시 래핑하지 않습니다.|
 |경고: SHA1 인증서 해시를 지정하지 않았습니다. 배포 전에 래핑된 애플리케이션이 서명되어 있는지 확인하세요.|–c 명령줄 플래그 다음에 유효한 SHA1 해시를 지정했는지 확인합니다. |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>앱 래핑 도구의 로그 파일
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>장치에서 래핑된 응용 프로그램에 대 한 로그 수집
+문제 해결 중에 래핑된 애플리케이션에 대한 로그를 가져오려면 다음 단계를 따르세요.
 
-앱 래핑 도구를 사용하여 앱을 래핑하면 iOS 클라이언트 디바이스 콘솔에 작성되는 로그가 생성됩니다. 애플리케이션에서 문제가 발생하여 앱 래핑 도구 관련 문제인지를 파악해야 하는 경우 이 정보가 유용합니다. 이 정보를 검색하려면 다음 단계를 수행합니다.
+1. 디바이스에서 iOS 설정 앱으로 이동한 다음 LOB 앱을 선택합니다.
+2. **진단 콘솔**을 **켜짐**으로 전환합니다.
+3. LOB 애플리케이션을 시작합니다.
+4. "시작" 링크를 클릭합니다.
+5. 이제 메일을 통해 또는 OneDrive 위치에 복사하여 로그를 공유할 수 있습니다.
+
+> [!NOTE]
+> 로깅 기능은 Intune App Wrapping Tool 버전 7.1.13 이상으로 래핑된 앱에서 사용할 수 있습니다.
+
+### <a name="collecting-crash-logs-from-the-system"></a>시스템에서 충돌 로그 수집
+
+앱에서 iOS 클라이언트 장치 콘솔에 유용한 정보를 로깅할 수 있습니다. 애플리케이션에서 문제가 발생하여 앱 래핑 도구나 앱 자체 관련 문제인지를 파악해야 하는 경우 이 정보가 유용합니다. 이 정보를 검색하려면 다음 단계를 수행합니다.
 
 1. 앱을 실행하여 문제를 재현합니다.
 
 2. [배포된 iOS 앱 디버깅](https://developer.apple.com/library/ios/qa/qa1747/_index.html)과 관련한 Apple의 지침에 따라 콘솔 출력을 수집합니다.
 
-3. 콘솔에 다음 스크립트를 입력하여 앱 제한 출력에 대해 저장된 로그를 필터링합니다.
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    필터링된 로그를 Microsoft에 제출할 수 있습니다.
-
-    > [!NOTE]
-    > 로그 파일에서 항목 '빌드 버전'은 Xcode의 빌드 버전을 나타냅니다.
-
-    래핑된 앱은 앱 작동이 중단된 후 전자 메일을 통해 디바이스에서 로그를 직접 보내는 옵션도 제공합니다. 사용자는 개발자가 점검하여 필요한 경우 Microsoft로 전달할 수 있는 로그를 보낼 수 있습니다.
+래핑된 앱은 앱 작동이 중단된 후 전자 메일을 통해 디바이스에서 로그를 직접 보내는 옵션도 제공합니다. 사용자는 개발자가 점검하여 필요한 경우 Microsoft로 전달할 수 있는 로그를 보낼 수 있습니다.
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>인증서, 프로비저닝 프로필 및 인증 요구 사항
 
@@ -442,19 +443,6 @@ iOS용 앱 래핑 도구에 자격 오류가 표시되는 경우 다음의 문�
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>래핑된 애플리케이션에 대한 로그 가져오기
-
-문제 해결 중에 래핑된 애플리케이션에 대한 로그를 가져오려면 다음 단계를 따르세요.
-
-1. 디바이스에서 iOS 설정 앱으로 이동한 다음 LOB 앱을 선택합니다.
-2. **진단 콘솔**을 **켜짐**으로 전환합니다.
-3. LOB 애플리케이션을 시작합니다.
-4. "시작" 링크를 클릭합니다.
-5. 이제 메일을 통해 또는 OneDrive 위치에 복사하여 로그를 공유할 수 있습니다.
-
-> [!NOTE]
-> 로깅 기능은 Intune App Wrapping Tool 버전 7.1.13 이상으로 래핑된 앱에서 사용할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
