@@ -1,24 +1,20 @@
 ---
-ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: a20d1df2bf1e5052bcb2d3d83e919e190f8d9175
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "71239595"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445875"
 ---
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 10.0 이상
+- Apple iOS 및 iPadOS 11.0 이상
 - Mac OS X 10.12 이상
 
 ### <a name="google"></a>Google
-- Android 4.4 이상(Samsung Knox Standard 4.4 이상 포함)
-
-  확인된 Samsung Knox Standard 디바이스의 전체 목록은 [Android 및 Samsung Knox Standard 정책 설정](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)에서 확인할 수 있습니다.
-
-
-- Android 엔터프라이즈 [요구 사항](https://support.google.com/work/android/answer/6174145?hl=en).
+- Android 5.0 이상(Samsung KNOX Standard 2.4 이상: [요구 사항](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+) 포함)
+- Android 엔터프라이즈: [요구 사항](https://support.google.com/work/android/topic/9428066)
 
 ### <a name="microsoft"></a>Microsoft
 
@@ -26,18 +22,18 @@ ms.locfileid: "71239595"
 - Windows 10(Home, S, Pro, Education 및 Enterprise 버전)
 - Windows 10 Enterprise 2019 LTSC
 
-  Windows 10 2019 LTSC를 실행하는 디바이스를 관리하는 방법에 대한 자세한 내용은 [Windows 10 Enterprise 2019 LTSC의 새로운 기능](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019)을 참조하세요.
+  Windows 10 2019 LTSC를 실행하는 디바이스를 관리하는 방법에 대한 자세한 내용은 [Windows 10 Enterprise 2019 LTSC의 새로운 기능](https://docs.microsoft.com/windows/whats-new/ltsc/whats-new-windows-10-2019)을 참조하세요.
   
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise(x86, x64)
 - Windows 10 IoT Mobile Enterprise
 - Windows Holographic for Business
 
-  Windows Holographic for Business를 실행하는 디바이스를 관리하는 방법에 대한 자세한 내용은 [Windows Holographic for Business 지원](../windows-holographic-for-business.md)을 참조하세요.
+  Windows Holographic for Business를 실행하는 디바이스를 관리하는 방법에 대한 자세한 내용은 [Windows Holographic for Business 지원](../fundamentals/windows-holographic-for-business.md)을 참조하세요.
 
 - Windows 10 Teams(Surface Hub)
 
-   Windows 10 Teams를 실행하는 디바이스를 관리하는 방법에 대한 자세한 내용은 [MDM으로 Surface Hub 관리](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub)를 참조하세요.
+   Windows 10 Teams를 실행하는 디바이스를 관리하는 방법에 대한 자세한 내용은 [MDM으로 Surface Hub 관리](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub)를 참조하세요.
 - Windows Phone 8.1, Windows 8.1 RT, Windows 8.1을 실행하는 PC(유지 모드)
 
 > [!NOTE]

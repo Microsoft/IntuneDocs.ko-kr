@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 할당
+title: Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 추가
 titleSuffix: ''
 description: Microsoft Intune을 사용하여 Windows 10 디바이스에 Office 365 앱을 설치하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35545d6c01e3acf7e54c3b932a4450c93f3dd4a9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507318"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635380"
 ---
-# <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 할당
+# <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 추가
 
 앱을 할당, 모니터링, 구성 또는 보호하려면 앱을 Intune에 추가해야 합니다. 사용 가능한 [앱 유형](apps-add.md#app-types-in-microsoft-intune) 중 하나는 Windows 10 디바이스용 Office 365 앱입니다. Intune에서 이 앱 유형을 선택하면 Windows 10을 실행하는 디바이스에 Office 365 앱을 설치하고 배포할 수 있습니다. 또한 Microsoft Project Online 데스크톱 클라이언트 및 Microsoft Visio Online Plan 2에 대한 라이선스가 있는 경우 관련 앱을 할당하고 설치할 수 있습니다. 사용 가능한 Office 365 앱은 Azure 내부에서 Intune 콘솔의 앱 목록에 단일 항목으로 표시됩니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "72507318"
 - 이 설치 방법은 Windows Home, Windows Team, Windows Holographic 또는 Windows Holographic for Business 디바이스에서 지원되지 않습니다.
 - Intune은 Microsoft 스토어의 365 데스크톱 앱(Office Centennial 앱)을 이미 Intune으로 Office 365 앱을 배포한 디바이스에 설치하는 것을 지원하지 않습니다. 이 구성을 설치할 경우 데이터 손실이나 손상이 발생할 수 있습니다.
 - 다수의 필수 또는 사용 가능한 앱 할당은 추가되지 않습니다. 이후 앱 할당은 기존에 설치된 앱 할당을 덮어씁니다. 예를 들어, 첫 번째 Office 앱 집합에 Word가 포함되어 있고 이후 Office 앱에는 포함되어 있지 않으면 Word가 제거됩니다. 이 조건은 모든 Visio 또는 Project 애플리케이션에 적용되지 않습니다.
-- 현재 여러 Office 365 배포는 지원되지 않습니다. 디바이스에 하나의 배포만 제공됩니다.
+- 현재 여러 개의 Office 365 배포는 지원되지 않습니다. 디바이스에 하나의 배포만 제공됩니다.
 - **Office 버전** - Office의 32비트 또는 64비트 비전을 할당할지 여부를 선택합니다. 32비트 버전은 32비트 및 64비트 디바이스에 모두 설치할 수 있지만, 64비트 버전은 64비트 디바이스에만 설치할 수 있습니다.
 - **최종 사용자 디바이스에서 MSI 제거** - 최종 사용자 디바이스에서 기존 Office .MSI 앱을 제거할지 여부를 선택합니다. 최종 사용자 디바이스에 기존 .MSI 앱이 있으면 설치가 실패합니다. 최종 사용자 디바이스에서 모든 Office(MSI) 앱을 제거하므로 제거할 앱은 **앱 제품군 구성**에서 설치하도록 선택한 앱으로만 제한되지 않습니다. 자세한 내용은 [Office 365 ProPlus로 업그레이드 시 기존 MSI 버전의 Office 제거](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)를 참조하세요. Intune에서 최종 사용자의 머신에 Office를 재설치하면 최종 사용자는 이전 .MSI Office 설치 프로그램과 함께 갖고 있던 것과 동일한 언어 팩을 자동으로 가져옵니다.
 
@@ -142,12 +142,60 @@ ms.locfileid: "72507318"
 
 ## <a name="finish-up"></a>끝내기
 
-작업을 완료하면 **앱 추가** 창에서 **추가**를 선택합니다. 만든 앱은 앱 목록에 표시됩니다.
+작업을 완료하면 **앱 추가** 창에서 **추가**를 선택합니다. 만든 앱은 앱 목록에 표시됩니다. 다음 단계는 선택한 그룹에 앱을 할당하는 것입니다. 자세한 내용은 [그룹에 앱 할당](~/apps/apps-deploy.md)을 참조하세요.
+
+## <a name="deployment-details"></a>배포 세부 정보
+
+[Office CSP(Configuration Service Provider )](https://docs.microsoft.com/windows/client-management/mdm/office-csp)를 통해 Intune의 배포 정책을 대상 머신에 할당하면 최종 디바이스가 *officecdn.microsoft.com* 위치에서 설치 패키지를 자동으로 다운로드합니다. *Program Files* 디렉터리에 두 개의 디렉터리가 표시됩니다.
+
+![Program Files 디렉터리의 Office 설치 패키지](./media/apps-add-office365/office-folder.png)
+
+*Microsoft Office* 디렉터리에서 설치 파일이 저장된 위치에 새 폴더가 만들어집니다.
+
+![Microsoft Office 디렉터리에 새로 만든 폴더](./media/apps-add-office365/created-folder.png)
+
+*Microsoft Office 15* 디렉터리에 Office 간편 실행 설치 시작 관리자 파일이 저장됩니다. 할당 형식이 필요한 경우 설치가 자동으로 시작됩니다.
+
+![설치 시작 관리자 파일을 실행하려면 클릭](./media/apps-add-office365/clicktorun-files.png)
+
+O365 제품군의 할당이 필수로 구성된 경우 설치는 자동 모드로 설정됩니다. 설치에 성공하면 다운로드한 설치 파일이 삭제됩니다. 할당이 **사용 가능**으로 구성된 경우에는 최종 사용자가 설치를 수동으로 트리거할 수 있도록 Office 애플리케이션이 회사 포털 애플리케이션에 표시됩니다.
 
 ## <a name="troubleshooting"></a>문제 해결
 Intune은 [Office 배포 도구](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)를 사용하여 Office 365 ProPlus를 다운로드하고 [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)을 사용하는 클라이언트 컴퓨터에 배포합니다. [Office 365 엔드포인트 관리](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)에 설명된 모범 사례를 참조하여 네트워크 구성에서 클라이언트가 중앙 프록시를 통해 CDN 트래픽을 라우팅하지 않고 CDN에 직업 액세스하도록 허용하여 불필요한 대기 시간을 초래하지 않는지 확인합니다.
 
 설치 또는 런타임 문제가 발생하는 경우 대상 디바이스에서 [Office 365용 Microsoft 지원 및 복구 도우미](https://diagnostics.office.com)를 실행합니다.
+
+### <a name="additional-troubleshooting-details"></a>추가 문제 해결 세부 정보
+
+디바이스에 O365 앱을 설치할 수 없는 경우 문제가 Intune 관련 또는 OS/Office 관련인지 여부를 확인해야 합니다. 디바이스의 *Program Files* 디렉터리에 두 개의 폴더(*Microsoft Office* 및 *Microsoft Office 15*)가 표시되면 Intune에서 배포를 성공적으로 시작했는지 확인할 수 있습니다. *Program Files*에 두 개의 폴더가 표시되지 않으면 다음 사항을 확인해야 합니다.
+
+- 디바이스가 Microsoft Intune에 제대로 등록되어 있습니다. 
+- 디바이스에 활성 네트워크 연결이 있습니다. 디바이스가 비행기 모드이거나, 꺼져 있거나, 서비스가 제공되지 않는 위치에 있는 경우에는 네트워크 연결이 설정될 때까지 정책이 적용되지 않습니다.
+- Intune 및 Office 365 네트워크 요구 사항이 모두 충족되었으며 다음 문서에 따라 관련 IP 범위에 액세스할 수 있습니다.
+
+  - [Intune 네트워크 구성 요구 사항 및 대역폭](https://docs.microsoft.com/intune/network-bandwidth-use)
+  - [Office 365 URL 및 IP 주소 범위](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+
+- 올바른 그룹이 O365 앱 제품군에 할당되었습니다. 
+
+또한 *C:\Program Files\Microsoft Office\Updates\Download* 디렉터리의 크기를 모니터링합니다. Intune 클라우드에서 다운로드한 설치 패키지는 이 위치에 저장됩니다. 크기가 증가하지 않거나 매우 느린 속도로만 증가하는 경우 네트워크 연결 및 대역폭을 다시 확인하는 것이 좋습니다.
+
+Intune 및 네트워크 인프라가 모두 정상적으로 작동한다고 결론을 내리면 OS 관점에서 문제를 추가로 분석해야 합니다. 다음 조건을 확인합니다.
+
+- 대상 디바이스는 Windows 10 크리에이터스 업데이트 이상에서 실행해야 합니다.
+- Intune에서 애플리케이션을 배포하는 동안 기존 Office 앱이 열리지 않습니다.
+- 기존 MSI 버전의 Office가 디바이스에서 제대로 제거되었습니다. Intune에서 Office MSI와 호환되지 않는 Office 간편 실행을 활용합니다. 이 동작은 이 문서에 자세히 설명되어 있습니다.<br>
+  [동일한 컴퓨터에 간편 실행 및 Windows Installer로 설치된 Office는 지원되지 않음](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
+- 로그인 사용자에게는 디바이스에 애플리케이션을 설치할 수 있는 권한이 있어야 합니다.
+- Windows 이벤트 뷰어 로그 **Windows 로그** -> **애플리케이션**을 기반으로 문제가 없는지 확인합니다.
+- 설치하는 동안 Office 설치 자세한 정보 표시 로그를 캡처합니다. 이를 수행하려면 다음 단계를 따르십시오.<br>
+    1. 대상 머신에 Office 설치를 위한 자세한 정보 표시 로깅을 활성화합니다. 이 작업을 수행하려면 다음 명령을 실행하여 레지스트리를 수정합니다.<br>
+        `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
+    2. 대상 머신에 Office 365 제품군을 다시 배포합니다.<br>
+    3. 약 15~20분 동안 기다린 후 **%temp%** 폴더, **%windir%\temp** 폴더로 차례로 이동하고 **수정된 날짜**별로 정렬한 다음, 재현 시간에 따라 수정된 *{Machine Name}-{TimeStamp}.log* 파일을 선택합니다.<br>
+    4. 자세한 정보 표시 로그를 사용하지 않도록 설정하려면 다음 명령을 실행합니다.<br>
+        `reg delete HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /f`<br>
+        자세한 정보 표시 로그를 통해 설치 프로세스에 대한 자세한 정보를 추가로 제공할 수 있습니다.
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>앱 제품군 설치 중에 오류 발생
 

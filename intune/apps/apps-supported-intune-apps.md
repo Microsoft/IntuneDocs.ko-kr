@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 4e0cef06f2f939c996fe59d5b6acb10560125718
+ms.sourcegitcommit: e7798c9faa7b7471d0994de2dcd94c259ee8874c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786028"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73931018"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune 보호 앱  
 
@@ -53,7 +53,7 @@ ms.locfileid: "72786028"
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | 태블릿과 휴대폰에서 Excel 스프레드시트가 더 보기 좋게 나타납니다. 스프레드시트를 편집하거나 만들면 컴퓨터, Mac, 태블릿 및 휴대폰에서 원하는 방식으로 정확하게 표시됩니다. 직관적인 터치 환경과 더불어 익숙한 Office 모양과 느낌으로 즉시 사용할 수 있습니다.<p><p>이 앱은 Android 및 iOS용 다중 ID 앱으로 사용할 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.office.excel),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  
 | **Microsoft Flow**<p><img alt="Microsoft Flow icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-flow.png" width="100"> | Microsoft Flow의 모든 기능을 주머니에 휴대해 보세요. Flow를 사용하면 즐겨 찾는 앱과 서비스 간에 자동화된 워크플로를 만들어 비즈니스 간소화하고 시간을 절약하며 보다 효율적으로 작업할 수 있습니다.| [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.flow),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-flow/id1094928825) |  
 | **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | 회사 IT 관리자가 Intune 모바일 애플리케이션 관리 정책을 사용하여 관리하는 웹 검색 솔루션을 제공합니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
-| **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft Invoicing을 사용하면 중소기업이 전문가 수준의 견적과 송장을 작성하고, 신속하게 지불하며, 시간을 절약할 수 있습니다. 사무실 또는 이동 중에도 송장 발부를 통해 송장 작성 및 보내기, 온라인 지불이 가능하며, 서류 작업에 드는 시간을 단축하는 동시에 비용을 절감할 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.invoice&hl=en),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
+| **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft Invoicing을 사용하면 중소기업이 전문가 수준의 견적과 송장을 작성하고, 신속하게 지불하며, 시간을 절약할 수 있습니다. 사무실 또는 이동 중에도 송장 발부를 통해 송장 작성 및 보내기, 온라인 지불이 가능하며, 서류 작업에 드는 시간을 단축하는 동시에 비용을 절감할 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | Microsoft Kaizala는 대규모 그룹 통신 및 작업 관리를 위해 설계된 모바일 앱 및 서비스입니다. Kaizala를 사용하면 현장 직원, 공급 업체, 파트너 및 고객을 포함한 전체 가치 체인과 작업을 쉽게 연결하고 조정할 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer),<br>[iOS 스토어 링크](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Microsoft Launcher**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | Microsoft Launcher(이전의 Arrow Launcher)는 배경 무늬, 테마 색, 아이콘 팩 등을 사용하여 사용자 스타일에 맞게 Android 디바이스를 개인 설정할 수 있습니다. Microsoft 계정 또는 회사/학교 계정으로 맞춤형 피드에서 일정, 문서 및 최근 활동에 액세스할 수 있습니다. Windows PC에서 사진, 문서 및 웹 페이지를 열어 모든 디바이스에서 생산성을 높일 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  
 | **Microsoft 비즈니스용 OneDrive**<p><img alt="Microsoft app - Microsoft OneDrive for Business icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-onedrive-for-business.png" width="100"> | 작업 파일을 온라인 스토리지에 저장하여 회사 또는 학교의 다른 사람과 공유하고 공동 작업할 수 있습니다. 또한 이동 중에도 개인 및 업무용 파일에 쉽게 액세스할 수 있습니다.<p><p>이 앱은 Android 및 iOS용 다중 ID 앱으로 사용할 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.microsoft.skydrive),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/onedrive-cloud-storage-for/id477537958?mt=8) |  
