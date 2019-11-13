@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a75b1403e351981d1f6ab827d4c10648430b21fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504603"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627656"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>준수를 위해 Intune과 Jamf Pro 통합
 
@@ -94,7 +94,7 @@ Intune을 Jamf Pro에 연결하려면 다음을 수행합니다.
 
    **권한 추가**를 선택하여 이 구성을 저장합니다.  
 
-8. **API 사용 권한** 페이지에서 ***\<테넌트>*에 대한 관리자 동의 허용**을 선택한 후 **예**를 선택합니다.  앱이 성공적으로 등록되면 API 사용 권한이 다음과 같이 표시됩니다. ![성공적인 사용 권한](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
+8. **API 권한** 페이지에서 **테넌트에 대한 _\<관리자 동의 허용>_** 을 선택한 후 **예**를 선택합니다.  앱이 성공적으로 등록되면 API 사용 권한이 다음과 같이 표시됩니다. ![성공적인 사용 권한](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 
    Azure AD에서 앱 등록 프로세스가 완료되었습니다.
 

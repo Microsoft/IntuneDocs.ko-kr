@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c3cf75c1b5d6984a7f922af8b969458b4e4336e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78d38b72c9853a9eadaf71fcdff7567fc66d35ca
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509165"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414664"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Microsoft Intune에 등록 또는 로그인
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 이 항목에서는 시스템 관리자가 Intune 계정을 등록하는 방법을 알려줍니다.
 
@@ -46,14 +44,17 @@ Intune에 등록하기 전에 Microsoft Online Services 계정, 기업계약 또
 2. 등록 페이지에서 로그인 또는 등록하여 Intune의 새로운 구독을 관리합니다.
 
 ## <a name="post-sign-up-considerations"></a>등록 후 고려 사항
+
 새 구독을 등록하면 등록 과정 중에 제공한 메일 주소로 계정 정보가 포함된 메일 메시지를 받게 됩니다. 이 전자 메일을 통해 구독이 활성화된 것을 확인합니다.
 
 등록 과정을 완료하면 사용자를 추가하고 사용자에게 라이선스를 할당하는 데 사용되는 Microsoft 365 관리 센터로 이동됩니다. 기본 onmicrosoft.com 도메인 이름을 사용하는 클라우드 기반 계정만 사용하려면, 그대로 진행하여 이 곳에서 사용자를 추가하고 라이선스를 할당할 수 있습니다. 하지만, 조직의 [사용자 지정 도메인 이름](custom-domain-name-configure.md)을 사용하거나 온-프레미스 Active Directory의 [사용자 계정 정보를 동기화](users-add.md#sync-active-directory-and-add-users-to-intune)하려는 경우 브라우저 창을 닫을 수 있습니다.
 
 ## <a name="sign-in-to-microsoft-intune"></a>Microsoft Intune에 로그인
+
 Intune에 등록한 후에는 [지원 브라우저](supported-devices-browsers.md#intune-supported-web-browsers)에서 디바이스를 사용하여 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인한 후 서비스를 등록할 수 있습니다.
 
 기본적으로 계정에 Azure AD의 다음 사용 권한 중 하나가 있어야 합니다.
+
 - 전역 관리자
 - Intune 서비스 관리자(Intune 관리자라고도 함)
 
@@ -76,4 +77,5 @@ Microsoft 365 Business: https://portal.microsoft.com/adminportal
 Office 365 모바일 디바이스 관리: https://portal.office.com/adminportal/home#/MifoDevices
 
 ## <a name="see-also"></a>참고 항목
+
 [Office 365, Azure 또는 Intune에 로그인 할 수 없음](https://support.microsoft.com/help/2412085)

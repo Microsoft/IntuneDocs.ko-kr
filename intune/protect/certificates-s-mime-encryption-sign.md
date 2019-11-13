@@ -2,8 +2,8 @@
 title: S/MIME를 사용하여 메일 서명 및 암호화 - Microsoft Intune - Azure | Microsoft Docs
 description: 디바이스에서 이메일 서명 및 암호화하기 위해 Microsoft Intune에서 이메일 디지털 인증서를 사용하는 방법을 알아봅니다. 이러한 인증서는 S/MIME라고 하고 디바이스 구성 프로필을 사용하여 구성됩니다. 서명 및 암호화 인증서는 PKCS 또는 프라이빗 인증서를 사용하고 커넥터를 사용하여 인증서를 가져옵니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b16953b3402bf8aa48f0a01e5e11d9f90d56f2d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502494"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801485"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Intune에서 이메일 서명 및 암호화를 위한 S/MIME 개요
 

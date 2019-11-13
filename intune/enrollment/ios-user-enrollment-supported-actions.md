@@ -18,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505408"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445305"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple 사용자 등록에서 지원되는 Intune 작업 및 옵션
 
 사용자 등록에서는 디바이스 관리 옵션의 하위 집합을 지원합니다. 기존 구성 프로필이 사용자 등록 디바이스에 적용되는 경우 사용자 등록에서 지원하는 설정만 해당 디바이스에 적용됩니다.
+
+> [!NOTE]
+> Intune에서 Apple의 사용자 등록에 대한 지원은 현재 미리 보기 상태입니다.
 
 ## <a name="password-settings"></a>암호 설정
 
@@ -97,6 +100,19 @@ Apple 사용자 등록을 사용하여 등록된 디바이스에 대해 Intune�
 - 관리 APFS 볼륨 외부의 애플리케이션에 대한 MDM 제어.
 - 애플리케이션 보호 정책은 이러한 앱에 계속 적용됩니다. 그러나 사용자가 이 앱의 관리 버전을 디바이스에서 삭제하지 않으면 이 앱에 대한 관리를 인수받거나 이 앱을 배포할 수 없습니다.
 - 감독해야 하는 작업, 구성, 설정 및 명령입니다. 
+
+## <a name="options-not-supported-in-preview"></a>미리 보기에서 지원되지 않는 옵션
+- 개인적으로 소유한 디바이스를 허용/차단하기 위한 등록 디바이스 유형 제한 
+
+## <a name="known-issues-in-preview"></a>미리 보기의 알려진 문제
+- VPP 라이선스 해지: 라이선스가 해지되었다는 알림이 표시되지 않습니다. 현재 동작이 해지에 성공했지만 최종 사용자에게는 알림이 표시되지 않습니다. 
+- VPP 애플리케이션 보고: 클라이언트 앱 > 앱 > [앱 이름] > 디바이스 설치 상태에 있는 보고서에서 사용자 등록 디바이스에 배포된 VPP 애플리케이션은 디바이스에 애플리케이션이 배포된 경우에도 "실패"로 보고됩니다. 
+- 애플리케이션 보고: 사용자 등록에 지원되지 않는 앱 유형의 경우 보고서는 관련이 없는 오류 메시지를 제공할 수 있습니다. 
+- 회사 포털 앱 환경: 사용자는 해당 애플리케이션 유형이 사용자 등록 디바이스에서 지원되는지 여부에 관계없이 대상으로 지정된 모든 애플리케이션을 볼 수 있습니다. 
+- 회사 포털 앱 환경: 사용자에게는 조직에서 사용자 및 디바이스 등록에 대해 볼 수 있는 항목과 볼 수 없는 항목을 나타내는 동일한 텍스트가 표시됩니다.
+- 사용자가 등록 중에 "내 조직이 이 디바이스를 소유함"을 선택하는 경우 관리 콘솔 내에서 또는 그래프를 통해 수정하지 않는 한 디바이스는 계속해서 Intune 내에서 개인으로 식별됩니다. 
+- 등록 대상: iPadOS는 플랫폼 선택기에 표시되지 않습니다. iPadOS는 미리 보기에서 지원되지만 관리 콘솔 내에서는 명시적으로 제시되지 않습니다. 
+
 
 ## <a name="next-steps"></a>다음 단계
 

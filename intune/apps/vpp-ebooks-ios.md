@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 022df428658a3c8791a07cbd797145bfe9a392bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ae29d2ee5add475db89f6895b22299793a94ac36
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496471"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984091"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 전자책을 관리하는 방법
 
@@ -42,7 +42,6 @@ Microsoft Intune을 사용하면 이 프로그램을 통해 구매한 책을 동
 ## <a name="before-you-start"></a>시작하기 전에
 시작하기 전에 Apple에서 VPP 토큰 하나를 가져와 Intune 계정에 업로드하세요. 추가 필수 구성 요소:
 
-* Intune 계정에는 VPP 토큰을 256개까지 연결할 수 있습니다.
 * 이전에 VPP 토큰을 다른 제품에 사용한 경우 Intune에 사용할 토큰을 새로 생성해야 합니다.
 * 각 토큰은 1년 동안 유효합니다.
 * 기본적으로 Intune에서는 하루에 두 번 Apple VPP 서비스와 동기화합니다. 언제든지 수동 동기화를 시작할 수 있습니다.
@@ -77,7 +76,7 @@ Microsoft Intune을 사용하면 이 프로그램을 통해 구매한 책을 동
 
 3. **Intune** 창에서 **전자책**을 선택합니다.
 1. **전자책** 워크로드에서 **관리** > **모든 전자책**을 선택합니다.
-2. 전자책 목록 창에서 할당할 전자책을 선택한 다음, ‘ **...** ’ > **그룹 할당**을 선택합니다.
+2. 전자책 목록 창에서 할당할 전자책을 선택한 다음, ‘**...**’ > **그룹 할당**을 선택합니다.
 3. <*전자책 이름*> - **할당된 그룹** 창에서 **관리** > **할당된 그룹**을 선택합니다.
 4. **그룹 할당**을 선택하고 **그룹 선택** 창에서 전자책을 할당할 Azure AD 사용자 그룹을 선택합니다. 디바이스 그룹은 현재 지원되지 않습니다.
 할당 작업 **사용 가능** 또는 **필수**를 선택합니다. 

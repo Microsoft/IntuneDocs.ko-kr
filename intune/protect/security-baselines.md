@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d447f2bf45d1bf3e6355a9d5dcc42b4bc2f3a9f3
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999750"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413832"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -80,6 +80,9 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 
   > [!NOTE]
   > Microsoft Defender ATP 보안 기준은 물리적 디바이스에 최적화되었으며 현재 VM(가상 머신) 또는 VDI 엔드포인트에서 사용하지 않는 것이 좋습니다. 특정 기준 설정은 가상화된 환경의 원격 대화형 세션에 영향을 줄 수 있습니다.  자세한 내용은 Windows 문서에서 [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)(Microsoft Defender ATP 보안 기준의 준수 강화)을 참조하세요.
+
+- **Microsoft Edge 기준** 
+  - [미리 보기: Microsoft Edge 기준](security-baseline-settings-edge.md)
 
 이전에 미리 보기 템플릿을 기반으로 만든 프로필은 새 프로필을 만드는 데 해당 미리 보기 템플릿을 사용할 수 없더라도 계속 사용하거나 편집할 수 있습니다.
 

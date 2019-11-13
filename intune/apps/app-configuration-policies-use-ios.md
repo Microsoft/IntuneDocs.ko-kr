@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c388e632f545b48a18ef6ed7b76132c290f16a9e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
+ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813447"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566175"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>관리되는 iOS 디바이스용 앱 구성 정책 추가
 
@@ -166,8 +166,8 @@ Intune에서는 속성 목록의 다음 데이터 형식을 지원합니다.
 ### <a name="tokens-used-in-the-property-list"></a>속성 목록에 사용되는 토큰
 
 또한 Intune은 속성 목록에서 다음과 같은 토큰 형식을 지원합니다.
-- \{\{userprincipalname\}\}—예: **John@contoso.com**
-- \{\{mail\}\}—예: **John@contoso.com**
+- \{\{userprincipalname\}\} - 예: **John\@contoso.com**
+- \{\{mail\}\} - 예: **John\@contoso.com**
 - \{\{partialupn\}\}—예: **John**
 - \{\{accountid\}\}—예: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
 - \{\{deviceid\}\}—예: **b9841cd9-9843-405f-be28-b2265c59ef97**

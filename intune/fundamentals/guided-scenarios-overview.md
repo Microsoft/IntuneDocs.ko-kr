@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c88366ea64182ccf8d45bc3e890a2579df20f1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585646"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635360"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Intune 단계별 시나리오 개요 
 
@@ -46,7 +46,7 @@ ms.locfileid: "72585646"
 
 ### <a name="launching"></a>시작  
 
-모든 단계별 시나리오는 **[장치 관리 포털](https://devicemanagement.microsoft.com)**  > **문제 해결 + 도움말** > **단계별 시나리오**에서 사용할 수 있습니다. 
+모든 단계별 시나리오는 **[디바이스 관리 포털](https://devicemanagement.microsoft.com)**  > **문제 해결 + 지원** > **단계별 시나리오**에서 제공됩니다. 
 
 단계별 시나리오는 시나리오의 목적 및 설정을 완료하는 데 필요한 모든 필수 구성 요소를 설명하는 소개로 시작합니다. 현재는 관리자 권한을 확인하여 시나리오를 완료하는 데 필요한 모든 권한이 있는지 확인합니다.  
 

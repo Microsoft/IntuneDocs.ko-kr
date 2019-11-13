@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.openlocfilehash: fae163cbcd97feb4f333d8ddfd44f2202dd343d6
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810296"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627693"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune에서 Mobile Threat Defense 커넥터를 사용하도록 설정
 
@@ -63,8 +63,8 @@ MTD 앱의 클래식 조건부 액세스 정책:
 조직의 요구 사항에 따라 사용하도록 설정해야 하는 Mobile Threat Defense 설정/해제 옵션을 결정할 수 있습니다. 아래에 자세한 내용이 나와 있습니다.
 
 **MDM 준수 정책 설정**
-- **Android 4.1+ 디바이스를 *\<MTD 파트너 이름>***에 연결: 이 옵션을 사용하도록 설정하는 경우 Android 4.1 이상 디바이스가 보안 위험을 Intune에 다시 보고하도록 지정할 수 있습니다.
-- **IOS 8.0+ 디바이스를 *\<MTD 파트너 이름>***에 연결: 이 옵션을 사용하도록 설정하면 iOS 8.0+ 디바이스가 보안 위험을 Intune에 보고하게 할 수 있습니다.
+- **Android 4.1+ 디바이스를 _\<MTD 파트너 이름>_** 에 연결: 이 옵션을 사용하도록 설정하는 경우 Android 4.1 이상 디바이스가 보안 위험을 Intune에 다시 보고하도록 지정할 수 있습니다.
+- **iOS 8.0+ 디바이스를 _\<MTD 파트너 이름>_** 에 연결: 이 옵션을 사용하도록 설정하면 iOS 8.0+ 디바이스가 보안 위험을 Intune에 보고하게 할 수 있습니다.
 - **iOS 디바이스에 대해 앱 동기화 사용**: 이 Mobile Threat Defense 파트너가 위협 분석 목적으로 사용할 iOS 애플리케이션의 메타데이터를 Intune에서 요청하도록 합니다.
 - **지원되지 않은 OS 버전 차단**: 디바이스가 지원되는 최소 버전보다 낮은 운영 체제를 실행 중인 경우 차단합니다.
 

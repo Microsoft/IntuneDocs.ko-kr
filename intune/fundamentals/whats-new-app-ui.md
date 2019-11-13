@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509989"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801788"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 
@@ -36,6 +36,23 @@ Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>2019년 10월 28일이 있는 주  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Android용 회사 포털 앱의 향상된 검사 목록 디자인 <!-- 5550857 -->  
+Android용 회사 포털 앱의 설정 검사 목록이 간단한 디자인과 새로운 아이콘을 갖춰 업데이트되었습니다. 변경 내용은 iOS용 회사 포털 앱에 대한 최근 업데이트와 동일합니다. 업데이트된 등록 단계에 대한 자세한 내용은 [Android 회사 프로필로 등록](/intune-user-help/enroll-device-android-work-profile) 및 [Android 디바이스 등록](/intune-user-help/enroll-device-android-company-portal)을 참조하세요.  
+
+다음 화면에는 Android 회사 프로필 등록에 대한 업데이트된 검사 목록이 표시됩니다.
+
+|업데이트됨|이전|  
+|---|---|  
+|![회사 포털에서 회사 프로필 설정의 이미지 예로, 간소화된 검사 목록 및 새 아이콘을 보여줍니다.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![회사 포털에서 이전 회사 프로필 설정의 이미지 예로, 더 많은 검사 목록을 보여줍니다.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+다음 화면에는 Android 디바이스 관리자 등록에 대한 업데이트된 검사 목록이 표시됩니다.  
+
+|업데이트됨|이전|  
+|---|---|  
+|![회사 포털에서 Android 디바이스 관리자 설정의 이미지 예로, 간소화된 검사 목록 및 새 아이콘을 보여줍니다.](./media/whats-new-app-ui/android-checklist-1911.png)|![회사 포털에서 Android 디바이스 관리자 설정의 이미지 예로, 더 많은 검사 목록을 보여줍니다.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>2019년 9월 9일이 있는 주
 
@@ -572,6 +589,6 @@ __이후__ ![이제 설치 진행률 표시줄이 표시되는 업데이트된 �
 
 
 ## <a name="see-also"></a>참고 항목
-* [Microsoft Intune 블로그](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Microsoft Intune 블로그](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [클라우드 플랫폼 로드맵](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune의 새로운 기능](../whats-new.md)
+* [Intune의 새로운 기능](whats-new.md)
