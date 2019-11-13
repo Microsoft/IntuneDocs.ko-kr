@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507561"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592087"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 웹 액세스 관리
 
@@ -179,7 +179,7 @@ Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대�
 > [!NOTE]
 > Microsoft Edge와 앱 구성에서 지정한 연결 앱을 관리하는 앱 보호 정책에서 다음 데이터 보호 정책 설정이 설정되어 있는지 확인합니다.
 > - 다른 앱에 조직 데이터 보내기: **정책 관리 앱**
-> - 웹 콘텐츠를 정책 관리 브라우저와 공유: **필요**
+> - 다른 앱을 사용하여 웹 콘텐츠 전송 제한: **정책 관리 브라우저**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>보호되는 브라우저에 대한 애플리케이션 프록시 설정을 구성하는 방법
 
