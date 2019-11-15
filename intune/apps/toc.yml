@@ -185,7 +185,7 @@
     - name: 문제 해결
       items:
         - name: 사용자가 문제 해결할 수 있도록 도움
-          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
+          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: 앱 설치 문제 해결
           href: troubleshoot-app-install.md
         - name: 모바일 애플리케이션 관리 문제 해결
