@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure에서 소프트웨어 업데이트 오류 및 설명 | Microsoft Docs
 description: Microsoft Intune에서 오류 코드, 심볼 이름, 오류 설명 등 소프트웨어 업데이트 에이전트 오류 코드 목록을 확인합니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/29/2019
 ms.topic: troubleshooting
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7e170680d2c7e2771c47b73bf744f8422b2e978
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c73ed7973fa15d796aee1e33efc37191777c222a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508898"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058052"
 ---
 # <a name="software-update-agent-error-codes-and-descriptions-in-microsoft-intune"></a>Microsoft Intune에서 소프트웨어 업데이트 에이전트 오류 코드 및 설명
 

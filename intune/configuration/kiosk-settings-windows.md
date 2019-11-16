@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17dce8f7c5aa55a2044e663f724a5784cee8b375
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506688"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059336"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune에서 키오스크로 실행하는 Windows 10 이상 디바이스 설정
 
@@ -40,6 +40,8 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 
   1. 이 키오스크 프로필을 만들어 디바이스를 키오스크 모드로 실행합니다.
   2. [디바이스 제한 프로필](device-restrictions-windows-10.md#microsoft-edge-browser)을 만들고 Microsoft Edge에서 허용되는 특정 기능 및 설정을 구성합니다.
+
+- 모든 파일, 스크립트 및 바로 가기는 로컬 시스템에 있어야 합니다. 다른 Windows 요구 사항을 비롯 한 자세한 내용은 [사용자 지정 및 내보내기 시작 레이아웃](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)을 참조 하세요.
 
 > [!IMPORTANT]
 > 이 키오스크 프로필을 [Microsoft Edge 프로필](device-restrictions-windows-10.md#microsoft-edge-browser)과 동일한 디바이스에 할당해야 합니다.
@@ -194,3 +196,5 @@ Intune에서 Windows 키오스크 기능에 대한 자세한 내용은 [키오�
 [프로필을 할당](device-profile-assign.md)하고, 해당 [상태를 모니터링](device-profile-monitor.md)합니다.
 
 [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 및 [Windows Holographic for Business](kiosk-settings-holographic.md) 디바이스에 대한 키오스크 프로필을 만들 수도 있습니다.
+
+또한 Windows 지침에서 [단일 앱 키오스크 설정](https://docs.microsoft.com/windows/configuration/kiosk-single-app) 또는 [다중 앱 키오스크 설정](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps) 을 참조 하세요.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143165"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117860"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune에서 macOS 디바이스 기능 설정
 
@@ -138,13 +138,13 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
   > [!TIP]
   > **자격 증명** 형식을 사용 하 여 확장을 통과 하는 고유한 구성 값을 추가 합니다. 대신 **Kerberos** 유형에 서 Apple에서 제공 하는 기본 제공 구성 설정을 사용 하는 것이 좋습니다.
 
-- **확장 ID** (자격 증명만): `com.apple.ssoexample`과 같이 SSO 앱 확장을 식별 하는 번들 식별자를 입력 합니다.
-- **팀 ID** (자격 증명만): SSO 앱 확장의 팀 식별자를 입력 합니다. 팀 식별자는 `ABCDE12345`과 같이 Apple에서 생성 된 10 자 사전순 (숫자 및 문자) 문자열입니다. 
+- **확장 ID** (자격 증명만): `com.apple.ssoexample`와 같이 SSO 앱 확장을 식별 하는 번들 식별자를 입력 합니다.
+- **팀 ID** (자격 증명만): SSO 앱 확장의 팀 식별자를 입력 합니다. 팀 식별자는 `ABCDE12345`와 같이 Apple에서 생성 된 10 자 사전순 (숫자 및 문자) 문자열입니다. 
 
   [팀 ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple 웹 사이트 열기)를 찾아 자세한 정보를 찾습니다.
 
 - **영역**: 인증 영역 이름을 입력 합니다. 영역 이름은 대문자 여야 합니다 (예: `CONTOSO.COM`). 일반적으로 영역 이름은 DNS 도메인 이름과 동일 하지만 모두 대문자로 되어 있습니다.
-- **도메인**: SSO를 통해 인증할 수 있는 사이트의 도메인 또는 호스트 이름을 입력 합니다. 예를 들어 웹 사이트가 `mysite.contoso.com` 인 경우 `mysite`은 호스트 이름이 고, `contoso.com`는 도메인 이름입니다. 사용자가 이러한 사이트에 연결 하면 앱 확장이 인증 챌린지를 처리 합니다. 이 인증을 사용 하면 사용자가 얼굴 ID, Touch ID 또는 Apple pincode/암호를 사용 하 여 로그인 할 수 있습니다.
+- **도메인**: SSO를 통해 인증할 수 있는 사이트의 도메인 또는 호스트 이름을 입력 합니다. 예를 들어 웹 사이트가 `mysite.contoso.com`된 경우 `mysite` 호스트 이름이 고 `contoso.com`는 도메인 이름입니다. 사용자가 이러한 사이트에 연결 하면 앱 확장이 인증 챌린지를 처리 합니다. 이 인증을 사용 하면 사용자가 얼굴 ID, Touch ID 또는 Apple pincode/암호를 사용 하 여 로그인 할 수 있습니다.
 
   - Single Sign-On 앱 확장 Intune 프로필의 모든 도메인은 고유 해야 합니다. 다른 유형의 SSO 앱 확장을 사용 중인 경우에도 로그온 앱 확장 프로필에서 도메인을 반복할 수 없습니다.
   - 이러한 도메인은 대/소문자를 구분 하지 않습니다.
@@ -154,7 +154,7 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
   - **값 유형**: 데이터 유형을 입력 합니다. 옵션은 다음과 같습니다.
 
     - 문자열
-    - 부울: **구성 값**에 `True` 또는 `False`를 입력 합니다.
+    - 부울: **구성 값**에 `True` 또는 `False`을 입력 합니다.
     - 정수: **구성 값**에 숫자를 입력 합니다.
     
   - **구성 값**: 데이터를 입력 합니다.
@@ -179,12 +179,13 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 - **최소 암호 사용 기간** (Kerberos만): 사용자가 암호를 변경 하려면 도메인에서 암호를 사용 해야 하는 일 수를 입력 합니다. **구성 되지 않음** (기본값)은 암호를 변경 하기 전에 최소 사용 기간을 적용 하지 않습니다.
 - **암호 만료 알림** (Kerberos에만 해당): 암호가 만료 될 때까지 사용자에 게 알림이 표시 될 때 까지의 기간 (일)을 입력 합니다. **구성 되지 않음** (기본값) `15` 일을 사용 합니다.
 - **암호 만료**에만 해당 디바이스 암호를 변경해야 할 때까지의 기간(일)을 입력합니다. **구성 되지 않음** (기본값)은 사용자 암호가 만료 되지 않음을 의미 합니다.
-- **보안 주체 이름** (kerberos에만 해당): kerberos 주체의 사용자 이름을 입력 합니다. 영역 이름을 포함할 필요가 없습니다. 예를 들어 `user@contoso.com`에서 `user`은 사용자 이름이 고, `contoso.com`는 영역 이름입니다.
+- **보안 주체 이름** (kerberos에만 해당): kerberos 주체의 사용자 이름을 입력 합니다. 영역 이름을 포함할 필요가 없습니다. 예를 들어 `user@contoso.com`에서 `user`는 주 이름이 고 `contoso.com`은 영역 이름입니다.
 - **Active Directory 사이트 코드** (kerberos만 해당): kerberos 확장에서 사용 해야 하는 Active Directory 사이트의 이름을 입력 합니다. Kerberos 확장에서 Active Directory 사이트 코드를 자동으로 찾을 수 있으므로이 값을 변경 하지 않아도 됩니다.
 - **캐시 이름** (kerberos만 해당): kerberos 캐시의 GSS (Generic Security Services) 이름을 입력 합니다. 일반적으로이 값을 설정할 필요가 없습니다.  
 - **암호 요구 사항 메시지** (Kerberos만 해당): 사용자에 게 표시 되는 조직의 암호 요구 사항 텍스트 버전을 입력 합니다. Active Directory의 암호 복잡성 요구 사항이 필요 하지 않거나 최소 암호 길이를 입력 하지 않은 경우 메시지가 표시 됩니다.  
 - **앱 번들 id** (Kerberos만 해당): 장치에서 Single Sign-On를 사용 해야 하는 앱 번들 식별자를 **추가** 합니다. 이러한 앱에는 Kerberos 티켓 부여 티켓과 인증 티켓에 대 한 액세스 권한이 부여 되 고 액세스할 수 있는 서비스에 대 한 사용자가 인증 됩니다.
 - **도메인 영역 매핑** (Kerberos만 해당): 영역에 매핑해야 하는 도메인 DNS 접미사를 **추가** 합니다. 호스트의 DNS 이름이 영역 이름과 일치 하지 않는 경우이 설정을 사용 합니다. 일반적으로이 사용자 지정 도메인-영역 매핑을 만들 필요가 없습니다.
+- **PKINIT certificate** (Kerberos만 해당): 사용자 개입 없이 Kerberos 자격 증명을 갱신 하는 데 사용할 수 있는 PKINIT (초기 인증) 인증서에 대 한 공개 키 암호화를 **선택** 합니다. 인증서는 이전에 Intune에 추가한 PKCS 또는 SCEP 인증서 여야 합니다.
 
 ## <a name="associated-domains"></a>연결된 도메인
 

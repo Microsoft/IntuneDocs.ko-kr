@@ -3,8 +3,8 @@ title: 지원 센터 비용 절감
 titleSuffix: Microsoft Intune
 description: 셀프 서비스 암호 재설정을 통해 지원 센터 비용 절감
 keywords: Azure Active Directory SSPR 암호 재설정
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: archived
@@ -15,16 +15,17 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1da1758dcc1743087191f69bd4d57bc113774d81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08dc14a3abed634721b39fedaae840e2b18c151b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509306"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058107"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>셀프 서비스 암호 재설정을 통해 지원 센터 비용 절감
 
 직원이 회사 및 학교 계정 암호를 지원 센터의 도움 없이 다시 설정할 수 있도록 허용할 수 있습니다. 이러한 유형의 셀프 서비스 암호 재설정은 다음과 같은 경우에 권장됩니다.
+
 * 회사와 학교에서 업무 및 학교 계정에 대해 Azure Active Directory를 사용하는 경우
 * 직원과 학생에게 인터넷 액세스 권한이 있는 경우
 * 지원 센터 비용을 절감하려는 경우
@@ -39,6 +40,7 @@ ms.locfileid: "72509306"
 ## <a name="next-steps"></a>다음 단계
 
 다음 아티클에 대해 자세히 알아보세요.
+
 * [암호 모범 사례](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [셀프 서비스 암호 재설정 라이선스](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 

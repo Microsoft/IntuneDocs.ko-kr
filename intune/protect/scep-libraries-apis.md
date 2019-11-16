@@ -3,8 +3,8 @@ title: 타사 인증 기관을 온보딩하기 위한 API
 titleSuffix: Microsoft Intune
 description: 타사 CA(인증 기관)용 SCEP GitHub 솔루션을 추가하거나 통합하여 Microsoft Intune의 디바이스에 SCEP 인증서를 발급합니다. 이 솔루션에는 유효성을 검사하고, 성공 및 실패 알림을 Intune에 보내고, Intune과 통신할 때 SSL 소켓 팩터리를 사용하는 Java 및 C# API가 포함됩니다. SCEP CA 구성을 테스트하는 단계에 대한 개요를 볼 수도 있습니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cadadcb8379d2de73b166d863c0b471747f5f6c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504102"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058231"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API를 사용하여 SCEP에 대한 타사 CA를 Intune에 추가
 

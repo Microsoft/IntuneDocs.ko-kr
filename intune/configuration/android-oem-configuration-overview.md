@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73756766"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059639"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune에서 OEMConfig를 사용 하 여 Android Enterprise 장치 사용 및 관리
 
@@ -141,7 +141,7 @@ OEMConfig를 사용 하는 경우 다음 정보를 알고 있어야 합니다.
 
 | OEM | 번들 ID | OEM 설명서 (사용할 수 있는 경우) |
 | --- | --- | ---|
-| 삼성 | kpu입니다. | [Knox 서비스 플러그 인 관리자 가이드](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| 삼성 | kpu입니다. | [Knox 서비스 플러그 인 관리자 가이드](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
 | 얼룩말 기술 | 얼룩말. common | [얼룩말 OEMConfig 개요](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | datalogic 구성 | [Datalogic OEMConfig에 대 한 사용자 설명서](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell 구성 |  |
