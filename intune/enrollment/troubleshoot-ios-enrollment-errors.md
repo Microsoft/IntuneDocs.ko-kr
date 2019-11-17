@@ -17,18 +17,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509238"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126140"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
 이 문서는 intune 관리자가 Intune에서 iOS 장치를 등록할 때의 문제를 이해 하 고 해결 하는 데 도움이 됩니다
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 문제 해결을 시작 하기 전에 몇 가지 기본적인 정보를 수집 하는 것이 중요 합니다. 이 정보를 통해 문제를 보다 잘 이해 하 고 해결 시간을 단축할 수 있습니다.
 
@@ -84,6 +84,8 @@ ms.locfileid: "72509238"
 1. 디바이스에서 회사 포털 앱을 제거합니다.
 2. **App Store**에서 **Microsoft Intune 회사 포털** 앱을 다운로드하고 설치합니다.
 3. 디바이스 다시 등록.
+ > [!NOTE]
+    > 사용자가 장치 등록을 허용 하도록 구성 된 것 보다 많은 장치를 등록 하려고 하는 경우에도이 오류가 발생할 수 있습니다. 이러한 단계를 수행 해도 문제가 해결 되지 않으면 아래 **에 있는 장치 상한** 에 대 한 해결 단계를 따르세요.
 
 ### <a name="device-cap-reached"></a>디바이스 최댓값 도달
 
@@ -156,7 +158,7 @@ APNs 인증서를 갱신 하 고 장치를 다시 등록 합니다.
 - Configuration Manager를 사용 하 여 Intune 하이브리드에서 APNs 인증서를 갱신 하려면 [System Center Configuration Manager 및 Microsoft Intune를 사용 하 여 iOS 하이브리드 장치 관리 설정](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac)을 참조 하세요.
 - Office 365에서 APNs 인증서를 갱신 하려면 [iOS 장치용 Apns 인증서 만들기](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7)를 참조 하세요.
 
-### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR 연결 유효 하지 않음
+### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR 연결이 잘못 되었습니다.
 
 등록 프로필이 할당 된 DEP 관리 장치를 켜면 등록이 실패 하 고 다음과 같은 오류 메시지가 표시 됩니다.
 
@@ -184,7 +186,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>해결 방법
 
 1. 등록 프로필을 편집 합니다. 프로필을 변경할 수 있습니다. 용도는 프로필의 수정 시간을 업데이트 하는 것입니다.
-2. DEP 관리 장치 동기화: Intune 포털 > **Admin**  > **모바일 장치 관리**  > **iOS**  > **장비 등록 프로그램** >  **지금 동기화**를 엽니다. 동기화 요청이 Apple에 전송됩니다.
+2. DEP 관리 장치 동기화: Intune 포털 > **Admin**  > **모바일 장치 관리**  > **iOS**  > **장비 등록 프로그램** **지금 동기화**를 엽니다. 동기화 요청이 Apple에 전송됩니다.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>사용자 로그인 시 DEP 등록 중단
 등록 프로필을 할당 하는 DEP 관리 장치를 켜면 자격 증명을 입력 한 후 초기 설치가 시작 됩니다.
