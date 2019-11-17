@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b80b0dbd8128606db9220178baf0d05af1a3800
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498789"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635486"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune을 사용하여 Android 장치용 Google Chrome 구성 
 
@@ -46,7 +46,7 @@ Intune 앱 구성 정책을 사용하여 Android 장치용 Google Chrome을 구�
 
 Intune에 관리되는 Google Play 앱을 추가하는 방법에 대한 자세한 내용은 [관리되는 Google Play 스토어 앱](~/apps/apps-add-android-for-work.md#managed-google-play-store-apps)을 참조하세요.
 
-## <a name="add-an-app-configuration-policy-for-managed-android-enterprise-devices"></a>관리되는 Android 엔터프라이즈 디바이스용 앱 구성 정책 추가
+## <a name="add-app-configuration-for-managed-ae-devices"></a>관리되는 AE 디바이스에 대한 앱 구성 추가
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 창에서 **앱 구성 정책** > **추가**를 선택합니다.
 2. 정책 이름을 추가한 다음 디바이스 등록 유형에서 **관리 디바이스**를 선택하고 플랫폼에서 **Android**를 선택합니다.

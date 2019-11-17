@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,19 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
+ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889564"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432536"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Microsoft Intune에서 Windows 디바이스에 디바이스 펌웨어 구성 인터페이스 프로필 사용(공개 미리 보기)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-> [!Note]
-> 각각의 [월별 업데이트](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)는 출시까지 며칠이 소요될 수 있습니다. 일부 기능은 몇 주에 걸쳐 출시될 수 있고 몇몇 고객에게는 즉시 제공되지 않을 수 있습니다.
 
 Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 DFCI(디바이스 펌웨어 구성 인터페이스)를 사용하여 등록된 후 UEFI(BIOS) 설정을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [DFCI 개요](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/)를 참조하세요.
 
@@ -45,7 +42,7 @@ Intune에서 이 기능을 사용하여 BIOS 설정을 제어합니다. 일반�
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-- 디바이스 제조업체는 제조 프로세스에서 UEFI 펌웨어에 또는 설치하는 펌웨어 업데이트로 DFCI를 추가해야 합니다. 디바이스 공급업체와 협력하여 DFCI를 지원하는 제조업체 또는 DFCI를 사용하는 데 필요한 펌웨어 버전을 확인합니다.
+- 디바이스 제조업체는 제조 프로세스에서 UEFI 펌웨어에 또는 설치하는 펌웨어 업데이트로 DFCI를 추가해야 합니다. 디바이스 공급업체와 협력하여 [DFCI를 지원하는 공급업체](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/#oems-that-support-dfci) 또는 DFCI를 사용하는 데 필요한 펌웨어 버전을 확인합니다.
 
 - 디바이스는 [Microsoft CSP(클라우드 솔루션 공급자) 파트너](https://partner.microsoft.com/cloud-solution-provider)가 Windows Autopilot에 등록하거나 OEM이 직접 등록해야 합니다. 
 
@@ -92,7 +89,7 @@ DFCI를 사용하려면 다음 프로필을 만들고 그룹에 할당합니다.
 4. 설정을 구성합니다.
 
     - **로컬 사용자가 UEFI(BIOS) 설정을 변경하도록 허용**: 옵션은 다음과 같습니다.
-      - **구성되지 않은 설정만**: 로컬 사용자는 Intune에 의해 **사용** 또는 **사용 안 함**으로 명시적으로 설정된 설정을 ‘제외한’ 모든 설정을 변경할 수 있습니다. 
+      - **구성되지 않은 설정만**: 로컬 사용자는 Intune에 의해 **사용** 또는 **사용 안 함**으로 명시적으로 설정된 설정을 ‘제외한’ 모든 설정을 변경할 수 있습니다.
       - **없음**: 로컬 사용자는 DFCI 프로필에 표시되지 않는 설정을 포함하여 모든 UEFI(BIOS) 설정을 변경할 수 없습니다.
 
     - **CPU 및 IO 가상화**: 옵션은 다음과 같습니다.
@@ -107,7 +104,7 @@ DFCI를 사용하려면 다음 프로필을 만들고 그룹에 할당합니다.
         - **구성되지 않음** Intune은 이 기능을 변경하지 않으며 모든 설정을 그대로 유지합니다.
         - **사용**: UEFI(BIOS)에서 직접 관리되는 모든 기본 제공 마이크 및 스피커를 사용할 수 있습니다. USB 디바이스와 같은 주변 디바이스는 영향을 받지 않습니다.
         - **사용 안 함**: UEFI(BIOS)에서 직접 관리되는 모든 기본 제공 마이크 및 스피커를 사용할 수 없습니다. USB 디바이스와 같은 주변 디바이스는 영향을 받지 않습니다.
-    - **라디오(Bluetooth, Wi-Fi, NFC 등)** : 옵션은 다음과 같습니다.
+    - **라디오(Bluetooth, Wi-Fi, NFC 등)**: 옵션은 다음과 같습니다.
         - **구성되지 않음** Intune은 이 기능을 변경하지 않으며 모든 설정을 그대로 유지합니다.
         - **사용**: UEFI(BIOS)에서 직접 관리되는 모든 기본 제공 라디오를 사용할 수 있습니다. USB 디바이스와 같은 주변 디바이스는 영향을 받지 않습니다.
         - **사용 안 함**: UEFI(BIOS)에서 직접 관리되는 모든 기본 제공 라디오를 사용할 수 없습니다. USB 디바이스와 같은 주변 디바이스는 영향을 받지 않습니다.
