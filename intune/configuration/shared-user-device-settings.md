@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8dfab31d770c012acf88eb3775313634c3c14cc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7fa8fb95579d887228dc6ec8f241d157169450b7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492309"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755075"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>Intune을 사용하여 공유 PC 또는 다중 사용자 디바이스에서 액세스, 계정 및 전원 기능 제어
 
@@ -42,8 +42,8 @@ ms.locfileid: "72492309"
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 
    - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.

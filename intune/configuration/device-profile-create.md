@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 51ec328a60ef2737c776bf6cf5d4b8dc1b32460c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681452"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755320"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필 만들기
 
@@ -39,16 +39,16 @@ ms.locfileid: "72681452"
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-2. **디바이스 구성**을 선택합니다. 다음과 같은 옵션을 선택할 수 있습니다.
+2. **디바이스** > **구성 프로필**을 선택합니다. 다음과 같은 옵션을 선택할 수 있습니다.
 
     - **개요**: 사용자 프로필의 상태를 나열하고 사용자 및 디바이스에 할당한 프로필에 관한 추가 세부 내용을 제공합니다.
     - **관리**: 디바이스 프로필을 만들어 프로필 내에서 실행할 사용자 지정 [PowerShell 스크립트](../apps/intune-management-extension.md)를 업로드하고, [eSIM](esim-device-configuration.md)을 사용하는 디바이스에 데이터 플랜을 추가합니다.
     - **모니터**: 성공 또는 실패에 대한 프로필 상태를 확인하고 프로필 로그도 봅니다.
     - **설치**: SCEP 또는 PFX 인증 기관을 추가하거나 [TEM(Telecom Expense Management)](telecom-expenses-monitor.md)을 프로필에 사용하도록 설정합니다.
 
-3. **프로필** > **프로필 만들기**를 선택합니다. 다음 속성을 입력합니다.
+3. **프로필 만들기**를 선택합니다. 다음 속성을 입력합니다.
 
    - **이름**: 프로필에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 프로필 이름을 지정합니다. 예를 들어 **전체 회사에 대한 WP 메일 프로필**은 좋은 프로필 이름입니다.
    - **설명**: 프로필에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.

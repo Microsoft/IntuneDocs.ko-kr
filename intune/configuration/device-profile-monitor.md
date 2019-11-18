@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1c68421bf7c5dea0d93d45e0cbb748204d0f66b
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 4dc349ef7af2683b4dafeaa1cc09f5b7a727e843
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749408"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755296"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필 모니터링
 
@@ -32,8 +32,8 @@ Intune에는 디바이스 구성 프로필을 모니터링하고 관리하는 �
 
 ## <a name="view-existing-profiles"></a>기존 프로필 보기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **구성 프로필**을 선택합니다.
 
 모든 기존 프로필이 나열되고 이러한 프로필은 플랫폼과 같은 세부 정보가 포함되며 프로필이 모든 디바이스에 할당되었는지 여부가 표시됩니다.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54d7ccabf958c3b8532f1a115724559607783a57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 272a7303e7d529a4867334cbe05e6df31e6c5683
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495228"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755367"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune에서 iOS 및 macOS 디바이스 기능 설정 추가
 
@@ -200,8 +200,8 @@ Intune에서 구성할 수 있는 설정 목록은 [iOS의 웹 콘텐츠 필터]
 
 ## <a name="create-a-device-profile"></a>디바이스 프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 
     - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 좋은 정책 이름은 **macOS: 로그인 화면 구성**입니다.

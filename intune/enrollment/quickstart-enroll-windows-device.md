@@ -2,7 +2,7 @@
 title: 빠른 시작 - Microsoft Intune에서 Windows 10 Desktop 디바이스 등록
 description: 빠른 시작 - 회사 포털을 사용하여 Microsoft Intune에서 Windows 10 Desktop 디바이스를 Microsoft Intune에 등록합니다.
 services: microsoft-intune
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 07/30/2019
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0aeeb55804a2bdd3ef1143bbb88dee968892c5c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 91f20411f668428c8bf3af8b0bd4ae6f4b0b545f
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509279"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713512"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>빠른 시작: Windows 10 디바이스 등록
 
@@ -91,7 +91,7 @@ Windows 10 Desktop을 등록하기 전에 설치한 Windows 버전을 확인해�
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Intune에서 디바이스 등록 확인
 
-1. [Intune](https://aka.ms/intuneportal)에 글로벌 관리자 또는 Intune 서비스 관리자로 로그인합니다.
+1. 전역 관리자 또는 Intune 서비스 관리자로 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. Intune에 등록된 디바이스를 보려면 **디바이스** > **모든 디바이스**를 선택합니다.
 3. Intune에 추가 디바이스가 등록되어 있는지 확인합니다.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6f594e20abf1a507d1d4e00641a4821fe1ba9b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509336"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712248"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune 디바이스의 기본 사용자 찾기
 
@@ -30,7 +30,7 @@ ms.locfileid: "72509336"
 
 ## <a name="how-to-find-a-devices-primary-user"></a>디바이스의 기본 사용자를 찾는 방법
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **디바이스** 메뉴를 선택하고 디바이스를 선택합니다.
 3. **개요** 페이지에서 **자세히 보기**를 선택하여 기본 사용자를 나열합니다.
 

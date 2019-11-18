@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057534"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712228"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune을 사용하여 iOS 디바이스에서 분실 모드 설정
 
@@ -41,7 +41,7 @@ ms.locfileid: "73057534"
 
 ## <a name="enable-lost-mode"></a>분실 모드 설정
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 3. **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
 4. 관리하는 디바이스 목록에서 iOS 디바이스를 선택한 다음 **분실 모드(감독 모드만)** 를 선택합니다.
 5. **분실 모드**에서 **사용**을 선택합니다.

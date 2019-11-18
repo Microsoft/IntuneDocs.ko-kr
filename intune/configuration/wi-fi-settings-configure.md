@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a794d724fe162ad7d464760661fecb45bd874431
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 589fc32db22de02f70ba78f79ebb413a31e92f1d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506442"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754850"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune에서 디바이스의 Wi-Fi 설정 추가 및 사용
 
@@ -49,8 +50,9 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
 
 ## <a name="create-a-device-profile"></a>디바이스 프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에서 **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
-2. 다음 속성을 입력합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
+3. 다음 속성을 입력합니다.
 
     - **이름**: 프로필에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 프로필 이름을 지정합니다. 예를 들어 **전체 회사에 대한 WiFi 프로필**은 좋은 프로필 이름입니다.
     - **설명**: 프로필에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
@@ -70,7 +72,7 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
       > - 전용 디바이스(키오스크)로 실행되는 **Android 엔터프라이즈** 디바이스의 경우 **디바이스 소유자만** > **Wi-Fi**를 선택합니다.
       > - **Windows 8.1 이상**에서는 **Wi-Fi 가져오기**를 선택할 수 있습니다. 이 옵션을 사용하여 이전에 다른 디바이스에서 내보낸 XML 파일로 Wi-Fi 설정을 가져올 수 있습니다.
 
-3. 일부 Wi-Fi 설정은 플랫폼마다 다릅니다. 특정 플랫폼에 대한 설정을 보려면 플랫폼을 선택합니다.
+4. 일부 Wi-Fi 설정은 플랫폼마다 다릅니다. 특정 플랫폼에 대한 설정을 보려면 플랫폼을 선택합니다.
 
     - [OWA(Outlook Web Access)](wi-fi-settings-android.md)
     - [Android 엔터프라이즈](wi-fi-settings-android-enterprise.md)(전용 디바이스 포함)
@@ -79,7 +81,7 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
     - [Windows 10 이상](wi-fi-settings-windows.md)
     - [Windows 8.1 이상 설정](wi-fi-settings-import-windows-8-1.md)(Windows Holographic for Business 포함)
 
-4. 작업이 완료되면 **프로필 만들기** > **만들기**를 선택합니다.
+5. 작업이 완료되면 **프로필 만들기** > **만들기**를 선택합니다.
 
 프로필이 만들어지고 프로필 목록(**디바이스 구성** > **프로필**)에 표시됩니다.
 

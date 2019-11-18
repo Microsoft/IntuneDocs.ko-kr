@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 11/07/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4890410f5948cdc9bd1c6e3d85125d8e0713d9b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1929e58d3b22e4cb5bc5f6ad2121f2b6f903d023
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492320"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755101"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>빠른 시작: iOS용 이메일 디바이스 프로필 만들기
 
@@ -33,39 +33,40 @@ Intune 구독이 없으면 [평가판 계정에 등록](../fundamentals/free-tri
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 
-[Intune](https://aka.ms/intuneportal)에 글로벌 관리자 또는 Intune 서비스 관리자로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
+전역 관리자 또는 Intune 서비스 관리자로 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="create-an-ios-email-profile"></a>iOS 이메일 프로필 만들기
-1. Intune에서 **디바이스 구성**을 선택하고 **프로필**을 선택합니다.
-2. **프로필 만들기**를 선택합니다.
-   
+
+1. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
+
    ![iOS에 대한 이메일 프로필 만들기](./media/quickstart-email-profile/ios-create-profile.png)
 
-3. **이름** 아래에 새 프로필에 대해 설명하는 이름을 입력합니다. 이 예에서는 **iOS에서 회사 이메일 요구**를 입력합니다.
-4. 다음 프로필 정보를 입력합니다.
-   - **설명**에 **iOS 디바이스에 회사 이메일을 사용하도록 요구**를 입력합니다.
-   - **플랫폼**에서 **iOS**를 선택합니다.
-   - **프로필 유형**으로 **이메일**을 선택합니다.
-    
-     ![iOS에서 사용할 이메일 프로필 만들기](./media/quickstart-email-profile/ios-email-profile-name.png)
+2. **이름** 아래에 새 프로필에 대해 설명하는 이름을 입력합니다. 이 예에서는 **iOS에서 회사 이메일 요구**를 입력합니다.
+3. 다음 프로필 정보를 입력합니다.
+    - **설명**에 **iOS 디바이스에 회사 이메일을 사용하도록 요구**를 입력합니다.
+    - **플랫폼**에서 **iOS**를 선택합니다.
+    - **프로필 유형**으로 **이메일**을 선택합니다.
 
-5. **설정**을 선택하고 다음 설정을 입력합니다(그 외의 설정은 기본값 유지).
+        ![iOS에서 사용할 이메일 프로필 만들기](./media/quickstart-email-profile/ios-email-profile-name.png)
+
+4. **설정**을 선택하고 다음 설정을 입력합니다(그 외의 설정은 기본값 유지).
    - **메일 서버**: 이 빠른 시작에서는 **outlook.office365.com**을 입력합니다. 이 설정은 iOS 메일 앱이 이메일에 연결하는 데 사용할 이메일 서버의 Exchange 위치(URL)를 지정합니다.
    - **계정 이름**: **회사 이메일**을 입력합니다.
    - **AAD의 사용자 이름 특성**: 이 이름은 Intune이 Azure AD(Azure Active Directory)에서 가져오는 특성입니다. Intune은 이 이름을 사용하여 이 프로필의 사용자 이름을 동적으로 생성합니다. 이 빠른 시작에서는 **사용자 계정 이름**을 프로필의 사용자 이름으로 사용할 것입니다(예: user1@contoso.com).
    - **AAD의 메일 주소 특성**: 이 설정은 Exchange에 로그인하는 데 사용되는 Azure AD의 이메일 주소입니다. 이 빠른 시작에서는 **사용자 계정 이름**을 선택합니다.
    - **인증 방법**: 이 빠른 시작에서는 **사용자 이름 및 암호**를 선택합니다. (Intune에 대한 인증서를 이미 설정한 경우 **인증서**를 선택해도 됩니다.)
-    
-     ![iOS 사용에 대한 이메일 프로필 만들기](./media/quickstart-email-profile/ios-email-profile.png)
 
-6. **확인**을 선택합니다.
-7. **만들기**를 선택합니다. 프로필 목록에 새 프로필이 나타나고 대시보드가 표시되므로 프로필이 iOS 디바이스 및 iOS 사용자에게 어떻게 할당되었는지 모니터링할 수 있습니다.
-8. **할당**을 선택합니다.
-9. **포함** 탭을 선택하고 **모든 사용자 및 모든 디바이스**를 선택합니다. 
-10. **저장**을 선택합니다.
+        ![iOS 사용에 대한 이메일 프로필 만들기](./media/quickstart-email-profile/ios-email-profile.png)
+
+5. **확인** > **만들기**를 선택합니다. 프로필 목록에 새 프로필이 나타나고 대시보드가 표시되므로 프로필이 iOS 디바이스 및 iOS 사용자에게 어떻게 할당되었는지 모니터링할 수 있습니다.
+6. **할당**을 선택합니다.
+7. **포함** 탭을 선택하고 **모든 사용자 및 모든 디바이스**를 선택합니다. 
+8. **저장**을 선택합니다.
 
 ## <a name="clean-up-resources"></a>리소스 정리
+
 여기서 만든 프로필을 다른 자습서 또는 테스트에 더 이상 사용하지 않으려는 경우 지금 삭제할 수 있습니다.
+
 1. Intune에서 **디바이스 구성**을 선택하고 **프로필**을 선택합니다.
 2. 여기서 만든 테스트 프로필 **iOS에서 회사 이메일 요구**를 선택합니다.
 3. 프로필 옆에서 줄임표( **...** )를 선택하고 **삭제**를 선택합니다.

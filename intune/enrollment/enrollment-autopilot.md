@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e2f654d9e505afba00a1a9090febe4c06ca77ff
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445341"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709477"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -49,7 +49,7 @@ Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다.
 
 디바이스 정보가 포함된 CSV 파일을 가져와서 Windows Autopilot 디바이스를 추가할 수 있습니다.
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **디바이스** > **가져오기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **디바이스** > **가져오기**를 선택합니다.
 
     ![Windows Autopilot 디바이스 스크린샷](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -71,7 +71,7 @@ Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다.
 
 ## <a name="create-an-autopilot-device-group"></a>Autopilot 디바이스 그룹 만들기
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **그룹** > **새 그룹**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **그룹** > **새 그룹**을 선택합니다.
 2. **그룹** 블레이드에서:
     1. **그룹 형식**에서 **보안**을 선택합니다.
     2. **그룹 이름** 및 **그룹 설명**을 입력합니다.
@@ -88,7 +88,7 @@ Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다.
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Autopilot 배포 프로필 만들기
 Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용됩니다. 테넌트당 최대 350개의 프로필을 만들 수 있습니다.
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 차례로 선택합니다.
 2. **기본 사항** 페이지에서 **이름** 및 선택적 **설명**을 입력합니다.
 
     ![기본 페이 스크린샷의](./media/enrollment-autopilot/create-profile-basics.png)
@@ -97,22 +97,22 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
 4. **다음**을 선택합니다.
 5. **OOBE(첫 실행 경험)** 페이지에서 **배포 모드**로 다음 두 옵션 중 하나를 선택합니다.
     - **사용자 기반**: 이 프로필을 사용하는 디바이스는 디바이스를 등록한 사용자와 연결됩니다. 디바이스를 등록하려면 사용자 자격 증명이 필요합니다.
-    - **자체 배포(미리 보기)**: (Windows 10, 버전 1809 이상 필요) 이 프로필을 사용하는 디바이스는 디바이스를 등록하는 사용자와 연결되지 않습니다. 디바이스를 등록하는 데 사용자 자격 증명이 필요하지 않습니다. 연결된 사용자가 없는 디바이스에는 사용자 기반 규정 준수 정책이 적용되지 않습니다. 자체 배포 모드를 사용하는 경우 디바이스를 대상으로 하는 규정 준수 정책만 적용됩니다.
+    - **자체 배포(미리 보기)** : (Windows 10, 버전 1809 이상 필요) 이 프로필을 사용하는 디바이스는 디바이스를 등록하는 사용자와 연결되지 않습니다. 디바이스를 등록하는 데 사용자 자격 증명이 필요하지 않습니다. 연결된 사용자가 없는 디바이스에는 사용자 기반 규정 준수 정책이 적용되지 않습니다. 자체 배포 모드를 사용하는 경우 디바이스를 대상으로 하는 규정 준수 정책만 적용됩니다.
 
     ![OOBE 페이지 스크린샷](./media/enrollment-autopilot/create-profile-outofbox.png)
 
 6. **다음으로 Azure AD에 조인** 상자에서 **Azure AD 조인됨**을 선택합니다.
 7. 다음 옵션을 구성합니다.
-    - **EULA(최종 사용자 사용권 계약)**: 사용자에게 EULA를 표시할지 여부를 선택합니다(Windows 10 버전 1709 이상).
+    - **EULA(최종 사용자 사용권 계약)** : 사용자에게 EULA를 표시할지 여부를 선택합니다(Windows 10 버전 1709 이상).
     - **개인 정보 설정**: 사용자에게 개인 정보 설정을 표시할지 여부를 선택합니다.
     >[!IMPORTANT]
     >진단 데이터 설정의 기본값은 Windows 버전에 따라 다릅니다. Windows 10 버전 1903을 실행하는 디바이스의 경우, 첫 실행 경험 중에 기본값이 전체로 설정됩니다. 자세한 내용은 [Windows 진단 데이터](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data)를 참조하세요. <br>
     
-    - **계정 변경 옵션 숨기기(Windows 10, 버전 1809 이상 필요)**: **숨기기**를 선택하면 계정 변경 옵션이 회사 로그인 및 도메인 오류 페이지에서 표시되지 않습니다. 이러한 옵션을 사용하려면 [Azure Active Directory에서 회사 브랜딩을 구성](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)해야 합니다.
+    - **계정 변경 옵션 숨기기(Windows 10, 버전 1809 이상 필요)** : **숨기기**를 선택하면 계정 변경 옵션이 회사 로그인 및 도메인 오류 페이지에서 표시되지 않습니다. 이러한 옵션을 사용하려면 [Azure Active Directory에서 회사 브랜딩을 구성](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)해야 합니다.
     - **사용자 계정 유형**: 사용자 계정 유형(**관리자** 또는 **표준** 사용자)을 선택합니다. 디바이스에 연결된 사용자가 로컬 관리자 그룹에 디바이스를 추가하여 로컬 관리자가 되도록 허용합니다. Microsoft는 디바이스에서 그러한 사용자를 기본 관리자로 사용하도록 설정하지 않습니다.
     - **화이트 글러브 OOBE 허용**(Windows 10 1903 이상 버전 필요. [추가 물리적 요구 사항](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): 화이트 글러브 지원을 허용하려면 **예**를 선택합니다.
     - **디바이스 이름 템플릿 적용**(Windows 10 1809 이상 버전 및 Azure Active Directory 조인 유형 필요): **예**를 선택하여 등록하는 동안 디바이스의 이름을 지정할 때 사용할 템플릿을 만듭니다. 이름은 15자 이하여야 하고, 문자, 숫자 및 하이픈만 포함할 수 있습니다. 이름이 모두 숫자일 수는 없습니다. [%SERIAL% 매크로](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)를 사용하여 하드웨어별 일련 번호를 추가합니다. 또는 [%RAND:x% 매크로](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)를 사용하여 숫자의 임의 문자열을 추가합니다. 여기서 x는 추가할 자릿수입니다. [도메인 조인 프로필](windows-autopilot-hybrid.md#create-and-assign-a-domain-join-profile)에서 하이브리드 디바이스에 대한 접두사만 제공할 수 있습니다. 
-    - **언어(지역)**\*: 디바이스에 사용할 언어를 선택합니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
+    - **언어(지역)** \*: 디바이스에 사용할 언어를 선택합니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
     - **키보드 자동으로 구성**\*: **언어(지역)** 를 선택한 경우 **예**를 선택하여 키보드 선택 영역 페이지를 건너뜁니다. 이 옵션은 **배포 모드**에 대해 **자체 배포**를 선택한 경우에만 사용할 수 있습니다.
 8. **다음**을 선택합니다.
 9. **범위 태그** 페이지에서 필요에 따라 이 프로필에 적용하려는 범위 태그를 추가합니다. 범위 태그에 대한 자세한 내용은 [분산형 IT에 역할 기반 액세스 제어 및 범위 태그 사용](../fundamentals/scope-tags.md)을 참조하세요.
@@ -134,7 +134,7 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
 ## <a name="edit-an-autopilot-deployment-profile"></a>Autopilot 배포 프로필 편집
 Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분을 편집할 수 있습니다.   
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록**을 선택합니다.
 2. **Windows 등록** 아래의 **Windows Autopilot** 섹션에서 **배포 프로필**을 선택합니다.
 3. 편집하려는 프로필을 선택합니다.
 4. 왼쪽에 있는 **속성**을 클릭하여 배포 프로필의 이름이나 설명을 변경합니다. 변경한 후에 **저장**을 클릭합니다.
@@ -155,7 +155,7 @@ Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분
 
 필수 조건: Windows 10, 버전 1809 이상에서 Azure Active Directory 회사 포털이 구성되었습니다.
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **디바이스** &gt; 디바이스 선택 &gt; **사용자 할당**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **디바이스**를 선택하고 디바이스를 선택한 후 **사용자 할당**을 선택합니다.
 
     ![사용자 할당 스크린샷](./media/enrollment-autopilot/assign-user.png)
 
@@ -204,7 +204,7 @@ Configuration Manager를 통해 [기존 디바이스에 대해 Autopilot](https:
 
 >[!WARNING] 
 > 관련자 ID는 Intune에 미리 나열되지 않으므로 디바이스에서 원하는 관련자 ID를 보고할 수 있습니다. 사용자가 Autopilot 또는 Apple DEP 프로필 이름과 일치하는 관련자 ID를 만드는 경우 enrollmentProfileName 특성을 기반으로 하는 동적 Azure AD 디바이스 그룹에 디바이스가 추가됩니다. 이 충돌을 방지하려면:
-> - 항상 ‘전체’ enrollmentProfileName 값과 일치하는 동적 그룹 규칙을 생성합니다.
+> - 항상 ‘전체’ enrollmentProfileName 값과 일치하는 동적 그룹 규칙을 생성합니다. 
 > - “OfflineAutopilotprofile-”로 시작하는 Autopilot 또는 Apple DEP 프로필은 절대 이름으로 설정하지 마세요.
 
 ## <a name="next-steps"></a>다음 단계

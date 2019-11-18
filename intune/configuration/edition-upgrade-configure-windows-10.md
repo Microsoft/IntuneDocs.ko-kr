@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5519429bae69fe277c72b12a2801a1875295824
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4cce3fafa1a8a074ea70692f855be1e032f0462f
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493779"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755253"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Windows 10 버전을 업그레이드하거나 Microsoft Intune을 사용하여 디바이스에서 S 모드 전환
 
@@ -96,16 +96,13 @@ S 모드에 대해 [자주 묻는 질문](https://support.microsoft.com/help/402
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 
     - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다. 예를 들어 `Windows 10 edition upgrade profile` 또는 `Windows 10 switch off S mode`와 같이 입력합니다.
     - **설명**: 프로필에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
-    - **플랫폼**: 플랫폼 선택:  
-
-        - **Windows 10 이상**
-
+    - **플랫폼**: **Windows 10 이상**을 선택합니다.
     - **프로필 유형**: **버전 업그레이드**를 선택합니다.
     - **설정**: 구성할 설정을 입력합니다. 모든 설정 목록 및 수행할 작업은 다음을 참조하세요.
 

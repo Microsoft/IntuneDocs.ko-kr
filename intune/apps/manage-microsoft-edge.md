@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593685"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754414"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -106,7 +106,7 @@ Microsoft Edge의 앱 구성을 만들려면
 7. **구성 설정**을 선택합니다. **구성** 블레이드에서 키와 값 쌍을 정의하여 Microsoft Edge에 대한 구성을 제공합니다. 이 문서의 뒷부분에 나오는 섹션에서 정의할 수 있는 다양한 키와 값 쌍에 대해 알아보세요.
 
     > [!NOTE]
-    > Microsoft Edge는 Managed Browser와 동일한 키와 값 쌍을 사용합니다. 
+    > Microsoft Edge는 Managed Browser와 동일한 키와 값 쌍을 사용합니다. Android에서 앱 구성 정책을 적용하려면 Microsoft Edge를 앱 보호 정책 대상으로 지정해야 합니다.
 
 8. 작업이 완료되면 **확인**을 선택합니다.
 9. **구성 정책 추가** 블레이드에서 **추가**를 선택합니다.<br>

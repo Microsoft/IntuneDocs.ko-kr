@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509483"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713203"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 디바이스 세부 정보 참조
 
@@ -33,7 +33,7 @@ ms.locfileid: "72509483"
 
 ## <a name="view-the-device-details"></a>디바이스 세부 정보 보기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 3. **디바이스** > **모든 디바이스** 선택 &gt; 해당 세부 정보를 열려면 나열된 디바이스 중 하나를 선택합니다.
 
    - **개요**는 디바이스 이름을 표시하고 BYOD(bring-your-own-device) 디바이스인지 여부, 체크 인 시간 등과 같은 디바이스의 몇 가지 주요 속성을 나열합니다. 이 디바이스에서는 다음 작업을 수행할 수 있습니다.

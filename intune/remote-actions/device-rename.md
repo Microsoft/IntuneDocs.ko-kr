@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 0f5ee9a0fe27c3cf9de758fd7155dbd127fb1e5e
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584529"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712210"
 ---
 # <a name="rename-a-device-in-intune"></a>Intune에서 디바이스 이름 바꾸기
 
@@ -36,7 +36,7 @@ ms.locfileid: "72584529"
 
 ## <a name="rename-a-device"></a>디바이스 이름 바꾸기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 3. **디바이스** > **모든 디바이스**를 선택한 후 디바이스 > **기타** > **디바이스 이름 바꾸기**를 선택합니다.
 4. **디바이스 이름 바꾸기** 블레이드에서 텍스트 상자에 새 이름을 입력합니다. 문자, 숫자 및 하이픈을 사용할 수 있습니다. 이름은 하나 이상의 문자 또는 하이픈을 포함해야 합니다.
 5. 이름을 바꾼 후 디바이스를 다시 시작하려면 **이름을 바꾼 후 다시 시작** 옆에 있는 **예**를 선택합니다.

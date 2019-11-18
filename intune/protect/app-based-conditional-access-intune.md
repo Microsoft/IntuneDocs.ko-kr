@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502607"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713292"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune을 사용하는 앱 기반 조건부 액세스
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 [Intune 앱 보호 정책](../apps/app-protection-policy.md)을 사용하면 Intune에 등록된 디바이스에서 회사 데이터를 보호하는 데 도움이 됩니다. Intune에서 관리를 위해 등록되지 않은 직원 소유 디바이스에서 앱 보호 정책을 사용할 수도 있습니다. 이 경우 회사에서 디바이스를 관리하지 않더라도 여전히 회사 데이터와 리소스가 보호되고 있음을 확인해야 합니다.
 
@@ -39,6 +37,7 @@ ms.locfileid: "72502607"
 Microsoft Outlook 앱만 Exchange Online에 액세스할 수 있도록 하려는 경우 iOS 및 Android에서 기본 제공 메일 앱을 차단할 수 있습니다. 또한 Intune 앱 보호 정책이 적용되지 않은 앱은 SharePoint Online에 액세스하지 못하도록 차단할 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
+
 앱 기반 조건부 액세스 정책을 만들려면 다음 항목을 준비해야 합니다.
 
 - **EMS(Enterprise Mobility + Security)** 또는 **Azure AD(Active Directory) Premium 구독**
@@ -57,7 +56,7 @@ Microsoft Outlook 앱만 Exchange Online에 액세스할 수 있도록 하려는
 이 예에서는 관리자가 앱 보호 정책을 Outlook 앱에 적용한 다음, 회사 이메일에 액세스할 때 사용할 수 있는 승인된 앱 목록에 Outlook 앱을 추가하는 조건부 액세스 규칙을 적용합니다.
 
 > [!NOTE]
-> 아래의 순서도 구조는 다른 관리되는 앱에도 사용할 수 있습니다.
+> 다음 순서도는 다른 관리형 앱에도 사용할 수 있습니다.
 
 ![순서도에 예시된 앱 기반 조건부 액세스 프로세스](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
 

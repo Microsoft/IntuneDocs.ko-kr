@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b7d09700847eae6a43111b0a4e865522f01862b9
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492360"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755155"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Intune을 사용하여 Windows 10 및 Holographic for Business 디바이스를 전용 키오스크로 실행하기 위한 설정
 
@@ -39,8 +39,8 @@ Intune은 "구성 프로필"을 사용하여 조직의 요구 사항에 맞게 �
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 
    - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.
@@ -60,7 +60,7 @@ Intune은 "구성 프로필"을 사용하여 조직의 요구 사항에 맞게 �
       - [Windows 10 키오스크 설정](kiosk-settings-windows.md)
       - [Windows Holographic for Business 키오스크 설정](kiosk-settings-holographic.md)
 
-5. 작업이 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다. 
+5. 작업이 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다.
 
 프로필이 만들어지고 프로필 목록에 표시됩니다. 그런 다음, 프로필을 [할당](device-profile-assign.md)합니다.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9d22ff4b203a4e7a85121df6c021eec1bcd1e3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d03859d5775193e6bbc482c06b28942a1a5bce2f
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508529"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712148"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer를 사용하여 Intune 디바이스 원격 관리
 
@@ -47,8 +47,8 @@ TeamViewer를 사용하면 Intune Connector용 TeamViewer가 TeamViewer 세션�
 
 디바이스에 대한 원격 지원을 제공하려면 먼저 다음 단계에 따라 Intune TeamViewer 커넥터를 구성합니다.
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Microsoft Intune**을 검색합니다.
-2. **Microsoft Intune**에서 **디바이스**를 선택한 다음, **TeamViewer 커넥터**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **TeamViewer 커넥터**를 선택합니다.
 3. **연결**을 선택한 다음, 라이선스에 동의합니다.
 4. **권한을 부여하려면 TeamViewer에 로그인합니다**를 선택합니다.
 5. TeamViewer 사이트 웹 페이지가 열립니다. TeamViewer 라이선스 자격 증명을 입력하고 **로그인**합니다.
@@ -57,8 +57,8 @@ TeamViewer를 사용하면 Intune Connector용 TeamViewer가 TeamViewer 세션�
 
 커넥터를 구성한 후 원격으로 디바이스를 관리할 준비가 되었습니다. 다음 단계를 따르십시오. 
 
-1. [Azure Portal](https://portal.azure.com)에서 **모든 서비스**를 선택하고 **Microsoft Intune**을 검색합니다.
-2. **Microsoft Intune**에서 **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 다음을 수행합니다.
+2. **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
 3. 목록에서 원격으로 관리하려는 디바이스를 선택합니다. 디바이스 속성에서 **새 원격 지원 세션**을 선택합니다.
 4. Intune이 TeamViewer 서비스에 연결되면 디바이스에 대한 정보를 확인할 수 있습니다. **연결**하여 원격 세션을 시작합니다.
 

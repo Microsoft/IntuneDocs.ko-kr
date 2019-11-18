@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a813d3bb574ae940b0003ac451b6e76638a0dd0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 02d0fb91df07d8bba233a6f814ffcf36d408e95d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508653"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712368"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune을 사용하여 감독된 iOS 디바이스에서 활성화 잠금 무시
 
@@ -74,7 +74,7 @@ Intune에서는 iOS 8.0 이상을 실행하는 감독된 디바이스의 활성�
 
 Intune **활성화 잠금 무시** 원격 디바이스 작업으로 사용자의 Apple ID와 암호를 요구하지 않으면서 iOS 디바이스에서 활성화 잠금을 제거합니다. 활성화 잠금을 무시한 후 내 iPhone 찾기 앱이 시작되면 디바이스에서 활성화 잠금이 다시 켜집니다. 디바이스에 실제로 액세스하는 경우에만 활성화 잠금을 무시합니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 3. **Intune** 블레이드에서 **디바이스**를 선택합니다.
 4. **디바이스** 블레이드에서 **모든 디바이스**를 선택합니다.
 5. 관리하는 디바이스 목록에서 **활성화 잠금 무시** 디바이스 원격 작업을 선택합니다.

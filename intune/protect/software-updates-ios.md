@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681348"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984190"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune에서 iOS 소프트웨어 업데이트 정책 추가
 
@@ -28,7 +28,7 @@ ms.locfileid: "72681348"
 
 - iOS 10.3 이상(감독 모드)
 
-디바이스는 약 8시간마다 Intune에 체크 인합니다. 업데이트를 사용할 수 있는 경우 제한된 기간을 제외하고 디바이스가 업데이트를 다운로드하여 설치합니다. 디바이스를 업데이트하기 위해 사용자 상호 작용이 필요하지 않습니다. 이 정책은 사용자가 OS를 수동으로 업데이트하는 것을 방지하지 않습니다.
+디바이스는 약 8시간마다 Intune에 체크 인합니다. 업데이트를 사용할 수 있는 경우 제한된 기간을 제외하고 디바이스가 업데이트를 다운로드하여 설치합니다. 업데이트 프로세스에는 일반적으로 사용자 조작이 수반되지 않지만 디바이스에 암호가 있는 경우 소프트웨어 업데이트를 시작하기 위해 사용자가 암호를 입력해야 합니다. 이러한 방식은 iOS 10.3 이상 버전에 적용됩니다. 이 정책은 사용자가 OS를 수동으로 업데이트하는 것을 방지하지 않습니다.
 
 ## <a name="configure-the-policy"></a>정책 구성
 

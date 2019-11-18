@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635351"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882487"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -53,12 +53,20 @@ ms.locfileid: "73635351"
 ### Role-based access control
 -->  
 
+## <a name="week-of-november-4-2019"></a>2019년 11월 4일 주
+
+### <a name="device-security"></a>디바이스 보안
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>보안 기준은 Microsoft Azure Government에서 지원됩니다.<!-- 4062552 -->
+
+*Microsoft Azure Government*에서 호스트되는 Intune 인스턴스는 이제 [보안 기준](../protect/security-baselines.md)을 사용하여 사용자와 디바이스를 보호하는 데 도움이 될 수 있습니다.
+
 ## <a name="week-of-october-28-2019"></a>2019년 10월 28일이 있는 주
 
 ### <a name="app-management"></a>앱 관리
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Android용 회사 포털 앱의 향상된 검사 목록 디자인<!-- 5550857 -->  
-Android용 회사 포털 앱의 설정 검사 목록이 간단한 디자인과 새로운 아이콘을 갖춰 업데이트되었습니다. 변경 내용은 iOS용 회사 포털 앱에 대한 최근 업데이트와 동일합니다. Microsoft는 모든 고객에게 앱 업데이트를 롤아웃하고 있으며, 다음 주 후반이면 이러한 과정이 완료될 예정입니다. 변경 내용에 대한 세부 비교는 [앱 UI의 새로운 기능](whats-new-app-ui.md)을 참조하세요. 업데이트된 등록 단계에 대한 자세한 내용은 [Android 회사 프로필로 등록](/intune-user-help/enroll-device-android-work-profile) 및 [Android 디바이스 등록](/intune-user-help/enroll-device-android-company-portal)을 참조하세요.  
+Android용 회사 포털 앱의 설정 검사 목록이 간단한 디자인과 새로운 아이콘을 갖춰 업데이트되었습니다. 변경 내용은 iOS용 회사 포털 앱에 대한 최근 업데이트와 동일합니다. 변경 내용에 대한 세부 비교는 [앱 UI의 새로운 기능](whats-new-app-ui.md)을 참조하세요. 업데이트된 등록 단계에 대한 자세한 내용은 [Android 회사 프로필로 등록](/intune-user-help/enroll-device-android-work-profile) 및 [Android 디바이스 등록](/intune-user-help/enroll-device-android-company-portal)을 참조하세요.  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>Windows 10 S 모드 디바이스의 Win32 앱<!-- 3747604 --> 
 Windows 10 S 모드 관리 디바이스에서 Win32 앱을 설치 및 실행할 수 있습니다. 이 작업을 수행하려면 WDAC(Windows Defender Application Control) PowerShell 도구를 사용하여 S 모드에 대한 추가 정책을 하나 이상 만들면 됩니다. Device Guard 서명 포털을 사용하여 추가 정책에 서명한 다음, Intune을 통해 정책을 업로드 및 배포하세요. Intune에서 **클라이언트 앱** > **Windows 10 S 추가 정책**을 선택하여 이 기능을 찾을 수 있습니다. 자세한 내용은 [S 모드 디바이스에서 Win32 앱 사용](~/apps/apps-win32-s-mode.md)을 참조하세요.
@@ -73,7 +81,7 @@ Win32 앱이 설치된 후 디바이스를 다시 시작하도록 지정할 수 
 어두운 모드는 iOS 회사 포털에 사용할 수 있습니다. 사용자는 회사 앱을 다운로드하고, 디바이스를 관리하며, 디바이스 설정에 따라 본인이 선택한 색 구성표에 관해 IT 지원을 받을 수 있습니다. iOS 회사 포털에서는 최종 사용자의 디바이스 설정을 어두운 또는 밝은 모드에 자동으로 맞춥니다. 자세한 내용은 [iOS용 Microsoft Intune 회사 포털의 어두운 모드 소개](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453)를 참조하세요. iOS 회사 포털에 대한 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](~/apps/company-portal-app.md)을 참조하세요.
 
 #### <a name="android-company-portal-enforced-minimum-app-version---2378776---"></a>Android 회사 포털 적용 최소 앱 버전<!-- 2378776 -->
-앱 보호 정책의 **최소 회사 포털 버전** 설정을 통해 최종 사용자의 디바이스에 적용되는 정의된 특정 최소 버전의 회사 포털을 지정할 수 있습니다. 이 조건부 시작 설정을 통해서는 값이 일치하지 않을 때 가능한 조치로서 **액세스 차단**, **데이터 지우기**, **경고**를 설정할 수 있습니다. 이 값에 가능한 형식은 *[주].[부]*, *[주].[부].[빌드]*, or *[주].[부].[빌드].[수정]* 의 패턴을 따릅니다.
+앱 보호 정책의 **최소 회사 포털 버전** 설정을 통해 최종 사용자의 디바이스에 적용되는 정의된 특정 최소 버전의 회사 포털을 지정할 수 있습니다. 이 조건부 시작 설정을 통해서는 값이 일치하지 않을 때 가능한 조치로서 **액세스 차단**, **데이터 지우기**, **경고**를 설정할 수 있습니다. 이 값에 가능한 형식은 *[주].[부]* , *[주].[부].[빌드]* , or *[주].[부].[빌드].[수정]* 의 패턴을 따릅니다.
 
 **최소 회사 포털 버전** 설정은 구성될 경우 버전 5.0.4560.0이나 그 이후의 회사 포털을 받는 최종 사용자에게 영향을 미칩니다. 이 설정은 이 기능이 릴리스되는 버전 이전의 회사 포털을 사용할 경우 영향을 미치지 않습니다. 앱 자동 업데이트를 디바이스에서 사용 중인 최종 사용자에게는 최신 버전의 회사 포털을 사용하고 있을 수 있으므로 이 기능의 대화 상자가 표시되지 않을 수도 있습니다. 이 설정은 등록 및 미등록 디바이스용 앱 보호 장치가 있는 Android로 한정됩니다. 자세한 내용은 [Android 앱 보호 정책 설정 - 조건부 시작](~/apps/app-protection-policy-settings-android.md#conditional-launch)을 참조하세요.
 
@@ -83,7 +91,7 @@ Win32 앱이 설치된 후 디바이스를 다시 시작하도록 지정할 수 
 
 #### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management---5630102---"></a>Microsoft 365 장치 관리의 엔드포인트 보안 노드 소개<!-- 5630102 -->
 
-현재 **엔드포인트 보안** 노드는 다음과 같은 엔드포인트 보호 기능을 그룹화하는 https://devicemanagement.microsoft.com의 Microsoft 365 장치 관리 전문가 작업 영역에서 일반적으로 사용할 수 있습니다.
+현재 **엔드포인트 보안** 노드는 다음과 같은 엔드포인트 보호 기능을 그룹화하는 https://devicemanagement.microsoft.com 의 Microsoft 365 장치 관리 전문가 작업 영역에서 일반적으로 사용할 수 있습니다.
 
 - 보안 기준:  사전 구성된 설정 구성으로서 Microsoft가 권장하는 기본값과 알려진 설정 구성을 적용하는 데 도움이 됩니다.
 
@@ -201,9 +209,9 @@ Intune에 대한 iOS 소프트웨어 업데이트 정책을 [만들고](../prote
 - 새 정책을 저장하고 배포하기 전에 만든 모든 구성을 검토하는 데 사용할 수 있는 요약 페이지입니다. 정책을 편집할 때 요약에는 편집한 속성 범주 내에 설정된 항목 목록만 표시됩니다.
 
 #### <a name="engaged-restart-settings-are-removed-from-windows-update-rings----4464404---wnready-----"></a>Windows 업데이트 링의 개입형 다시 시작 설정이 제거됨<!--  4464404   WNReady   -->
-이전에 발표한 대로, 이제 Intune의 Windows 10 업데이트 링은 [최종 기한 설정을 지원](../protect/windows-update-settings.md)하며 더 이상 ‘개입형 다시 시작’을 지원하지 않습니다. Intune에서 업데이트 링을 구성하거나 관리하는 경우 ‘개입형 다시 시작’ 설정을 더 이상 사용할 수 없습니다.  
+이전에 발표한 대로, 이제 Intune의 Windows 10 업데이트 링은 [최종 기한 설정을 지원](../protect/windows-update-settings.md)하며 더 이상 ‘개입형 다시 시작’을 지원하지 않습니다.  Intune에서 업데이트 링을 구성하거나 관리하는 경우 ‘개입형 다시 시작’ 설정을 더 이상 사용할 수 없습니다.   
 
-이 변경 내용은 최근 [Windows 서비스 변경 내용](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing)에 맞게 조정되며 Windows 10 1903 이상을 실행하는 디바이스에서는 ‘기한’이 ‘개입형 다시 시작’의 구성을 대체합니다.
+이 변경 내용은 최근 [Windows 서비스 변경 내용](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing)에 맞게 조정되며 Windows 10 1903 이상을 실행하는 디바이스에서는 ‘기한’이 ‘개입형 다시 시작’의 구성을 대체합니다.  
 
 #### <a name="prevent-installation-of-apps-from-unknown-sources-on-android-enterprise-work-profile-devices---4760025-----"></a>Android Enterprise 회사 프로필 디바이스에서 알 수 없는 출처의 앱 설치 방지<!-- 4760025   -->
 Android Enterprise 회사 프로필 디바이스에서는 사용자가 알 수 없는 출처의 앱을 설치할 수 없습니다. 이 업데이트에는 **개인 프로필에서 알 수 없는 출처의 앱 설치 방지**라는 새 설정이 있습니다. 기본적으로 이 설정은 사용자가 알 수 없는 출처의 앱을 디바이스의 개인 프로필에 테스트용으로 로드하지 못하도록 합니다.
@@ -278,7 +286,7 @@ Windows 디바이스 이름을 바꾸는 경우 새 규칙을 따라야 합니�
 #### <a name="pkcs-certificates-for-macos---1333650---------"></a>macOS의 PKCS 인증서<!-- 1333650       -->
 이제 [macOS에서 PKCS 인증서를 사용](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)할 수 있습니다. macOS의 프로필 유형으로 PKCS 인증서를 선택하고 [사용자 지정된 주체 및 주체 대체 이름 필드](../protect/certficates-pfx-configure.md#subject-name-format-for-macos)가 있는 사용자 및 디바이스 인증서를 배포할 수 있습니다.  
 
-도한 macOS용 PKCS 인증서는 새로운 설정인 _모든 앱 액세스 허용_을 지원합니다. 이 설정을 사용하면 연결된 모든 앱이 인증서의 프라이빗 키에 액세스하도록 설정할 수 있습니다.  이 설정에 대한 자세한 내용은 https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf에서 Apple 설명서를 참조하세요.
+도한 macOS용 PKCS 인증서는 새로운 설정인 _모든 앱 액세스 허용_을 지원합니다. 이 설정을 사용하면 연결된 모든 앱이 인증서의 프라이빗 키에 액세스하도록 설정할 수 있습니다.  이 설정에 대한 자세한 내용은 https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf 에서 Apple 설명서를 참조하세요.
 
 ####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----1736036-1736037-1772050-2777333-----------"></a>인증서를 사용하여 iOS 모바일 디바이스를 프로비저닝하기 위한 파생 자격 증명<!--  1736036, 1736037, 1772050, 2777333         -->  
 Intune에서는 iOS 디바이스의 S/MIME 서명 및 암호화를 위해 인증 방법으로 [파생 자격 증명](../protect/derived-credentials.md) 사용을 지원합니다. 파생 자격 증명은 디바이스에 인증서를 배포하기 위한 *NIST(National Institute of Standards and Technology) 800-157* 표준의 구현입니다.  
@@ -611,11 +619,11 @@ macOS 디바이스에서 기능을 사용하도록 설정하고 구성할 수 �
 - macOS
 
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings---4464404----------"></a>최종 기한이 Windows 업데이트 링의 개입형 다시 시작 설정 대체<!-- 4464404        -->
-최신 [Windows 서비스 변경 내용](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)과 맞추기 위해 이제 Intune의 Windows 10 업데이트 링에서 [최종 기한에 대한 설정을 지원](../protect/windows-update-settings.md)합니다. ‘최종 기한’은 디바이스에서 기능 및 보안 업데이트를 설치하는 시기를 결정합니다.  Windows 10 1903 이상이 실행되는 디바이스에서 ‘최종 기한’은 ‘개입형 다시 시작’에 대한 구성을 대체합니다.  나중에 ‘최종 기한’은 이전 버전의 Windows 10에서도 ‘개입형 다시 시작’을 대체하게 됩니다.  
+최신 [Windows 서비스 변경 내용](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)과 맞추기 위해 이제 Intune의 Windows 10 업데이트 링에서 [최종 기한에 대한 설정을 지원](../protect/windows-update-settings.md)합니다. ‘최종 기한’은 디바이스에서 기능 및 보안 업데이트를 설치하는 시기를 결정합니다.   Windows 10 1903 이상이 실행되는 디바이스에서 ‘최종 기한’은 ‘개입형 다시 시작’에 대한 구성을 대체합니다.    나중에 ‘최종 기한’은 이전 버전의 Windows 10에서도 ‘개입형 다시 시작’을 대체하게 됩니다.    
 
-‘최종 기한’을 구성하지 않으면 디바이스에서 ‘개입형 다시 시작’ 설정을 계속 사용하지만 향후 업데이트에서 Intune은 개입형 다시 시작 설정을 더 이상 지원하지 않습니다.  
+‘최종 기한’을 구성하지 않으면 디바이스에서 ‘개입형 다시 시작’ 설정을 계속 사용하지만 향후 업데이트에서 Intune은 개입형 다시 시작 설정을 더 이상 지원하지 않습니다.    
 
-모든 Windows 10 디바이스에서 ‘최종 기한’을 사용하도록 계획합니다. ‘최종 기한’에 대한 설정이 구현되면 ‘개입형 다시 시작’에 대한 Intune 구성을 [구성되지 않음]으로 변경할 수 있습니다. [구성되지 않음]으로 설정하면 Intune은 디바이스에서 해당 설정 관리를 중지하지만 설정에 대한 마지막 구성을 디바이스에서 제거하지는 않습니다. 따라서 ‘개입형 다시 시작’에 대해 설정된 마지막 구성은 Intune 이외의 다른 방법에 의해 수정될 때까지 디바이스에서 활성화되어 사용 중인 상태로 유지됩니다. 나중에 Windows의 디바이스 버전이 변경되거나 ‘최종 기한’에 대한 Intune 지원이 디바이스 Windows 버전으로 확장되면 디바이스는 이미 구현된 새 설정을 사용하기 시작합니다.
+모든 Windows 10 디바이스에서 ‘최종 기한’을 사용하도록 계획합니다  . ‘최종 기한’에 대한 설정이 구현되면 ‘개입형 다시 시작’에 대한 Intune 구성을 [구성되지 않음]으로 변경할 수 있습니다.   [구성되지 않음]으로 설정하면 Intune은 디바이스에서 해당 설정 관리를 중지하지만 설정에 대한 마지막 구성을 디바이스에서 제거하지는 않습니다. 따라서 ‘개입형 다시 시작’에 대해 설정된 마지막 구성은 Intune 이외의 다른 방법에 의해 수정될 때까지 디바이스에서 활성화되어 사용 중인 상태로 유지됩니다.  나중에 Windows의 디바이스 버전이 변경되거나 ‘최종 기한’에 대한 Intune 지원이 디바이스 Windows 버전으로 확장되면 디바이스는 이미 구현된 새 설정을 사용하기 시작합니다. 
 
 #### <a name="support-for-multiple-microsoft-intune-certificate-connectors-----4704642--------"></a>여러 Microsoft Intune Certificate Connector에 대한 지원<!--   4704642      -->
 이제 Intune에서 여러 [Microsoft Intune Certificate Connectors for PKCS operations](../protect/certficates-pfx-configure.md)(PKCS용 Microsoft Intune Certificate Connector 작업)의 설치 및 사용을 지원합니다. 이러한 변경은 커넥터의 부하 분산 및 고가용성을 지원합니다. 각 커넥터 인스턴스는 Intune의 인증서 요청을 처리할 수 있습니다.  한 커넥터를 사용할 수 없는 경우 다른 커넥터에서 계속 요청을 처리합니다.
@@ -631,10 +639,10 @@ iOS 및 macOS를 실행하는 디바이스에서 프로필을 만들어 설정�
 
 - **iOS** > **디바이스 제한**에는 다음과 같은 몇 가지 변경 사항이 있습니다.
 
-  - **기본 제공 앱** > **내 iPhone 찾기(감독 모드인 경우에만)**: 내 앱 찾기 기능에서 이 기능을 차단하는 새로운 설정입니다. 
-  - **기본 제공 앱** > **내 친구 찾기(감독 모드인 경우에만)**: 내 앱 찾기 기능에서 이 기능을 차단하는 새로운 설정입니다. 
-  - **무선** > **Wi-Fi 상태 수정(감독 모드인 경우에만)**: 사용자가 디바이스에서 Wi-Fi를 켜거나 끌 수 없도록 하는 새로운 설정입니다.
-  - **키보드 및 사전** > **QuickPath(감독 모드인 경우에만)**: QuickPath 기능을 차단하는 새로운 설정입니다.
+  - **기본 제공 앱** > **내 iPhone 찾기(감독 모드인 경우에만)** : 내 앱 찾기 기능에서 이 기능을 차단하는 새로운 설정입니다. 
+  - **기본 제공 앱** > **내 친구 찾기(감독 모드인 경우에만)** : 내 앱 찾기 기능에서 이 기능을 차단하는 새로운 설정입니다. 
+  - **무선** > **Wi-Fi 상태 수정(감독 모드인 경우에만)** : 사용자가 디바이스에서 Wi-Fi를 켜거나 끌 수 없도록 하는 새로운 설정입니다.
+  - **키보드 및 사전** > **QuickPath(감독 모드인 경우에만)** : QuickPath 기능을 차단하는 새로운 설정입니다.
   - **클라우드 및 스토리지**: **활동 연속**은 **핸드오프**로 이름이 바뀌었습니다.
 
   현재 설정을 확인하려면 [Intune을 사용하여 기능을 허용하거나 제한하는 iOS 디바이스 설정](../configuration/device-restrictions-ios.md)으로 이동하세요.

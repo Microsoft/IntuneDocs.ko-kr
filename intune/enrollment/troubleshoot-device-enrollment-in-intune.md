@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509260"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713497"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -64,9 +64,9 @@ ms.locfileid: "72509260"
 
 다음 단계에 따라 사용자가 최대 디바이스 수를 초과하여 할당받지 않았는지 확인합니다.
 
-1. Intune에서 **디바이스 등록** > **등록 제한** > **디바이스 개수 제한**을 선택합니다. **디바이스 제한** 열의 값을 확인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **등록 제한** > **디바이스 개수 제한**을 차례로 선택합니다. **디바이스 제한** 열의 값을 확인합니다.
 
-2. Intune에서 **사용자** > **모든 사용자** &gt; 사용자 선택 &gt; **디바이스**를 선택합니다. 디바이스 수를 확인합니다.
+2. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **사용자** > **모든 사용자**를 차례로 선택하고 **디바이스**를 선택합니다. 디바이스 수를 확인합니다.
 
 3. 사용자의 등록된 디바이스 수가 이미 해당 디바이스 개수 제한과 동일한 경우 다음이 될 때까지 더 이상 등록할 수 없습니다.
     - [기존 디바이스가 제거됨](../remote-actions/devices-wipe.md) 또는

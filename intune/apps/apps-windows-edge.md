@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892581"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709911"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Intune에 Windows 10용 Microsoft Edge 추가
 
 앱을 배포, 구성, 모니터링 또는 보호하려면 앱을 Intune에 추가해야 합니다. 사용 가능한 [앱 유형](~/apps/apps-add.md#app-types-in-microsoft-intune) 중 하나는 Microsoft Edge ‘버전 77 이상’입니다.  Intune에서 이 앱 유형을 선택하면 Windows 10을 실행하고 직접 관리하는 디바이스에 Microsoft Edge ‘버전 77 이상’을 할당하고 설치할 수 있습니다. 
 
 > [!IMPORTANT]
-> 이 앱 유형은 **공개 미리 보기**로 제공되며 Windows 10용 개발자 및 베타 채널을 제공합니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. 또한 Edge의 자동 업데이트는 기본적으로 **켜지고** Edge는 제거할 수 없습니다.
+> 이 앱 유형은 **공개 미리 보기**로 제공되며 Windows 10용 개발자 및 베타 채널을 제공합니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. Intune은 기존의 모든 Microsoft Edge 설치를 검색합니다. 사용자 컨텍스트에 설치된 경우 시스템 설치가 덮어씁니다. 시스템 컨텍스트에 설치된 경우 설치 성공이 보고됩니다. 또한 Microsoft Edge의 자동 업데이트는 기본적으로 **On** 상태이며 Microsoft Edge는 제거할 수 없습니다.
 
 > [!NOTE]
 > Microsoft Edge ‘버전 77 이상’은 macOS에서도 사용할 수 있습니다. 

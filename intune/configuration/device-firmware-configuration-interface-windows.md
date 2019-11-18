@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432536"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755351"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Microsoft Intune에서 Windows 디바이스에 디바이스 펌웨어 구성 인터페이스 프로필 사용(공개 미리 보기)
 
@@ -77,8 +77,8 @@ DFCI를 사용하려면 다음 프로필을 만들고 그룹에 할당합니다.
 
 이 프로필에는 사용자가 구성하는 DFCI 설정이 포함됩니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 
     - **이름**: 프로필에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 좋은 프로필 이름은 **Windows: Windows 디바이스에서 DFCI 설정 구성**입니다.
@@ -89,7 +89,7 @@ DFCI를 사용하려면 다음 프로필을 만들고 그룹에 할당합니다.
 4. 설정을 구성합니다.
 
     - **로컬 사용자가 UEFI(BIOS) 설정을 변경하도록 허용**: 옵션은 다음과 같습니다.
-      - **구성되지 않은 설정만**: 로컬 사용자는 Intune에 의해 **사용** 또는 **사용 안 함**으로 명시적으로 설정된 설정을 ‘제외한’ 모든 설정을 변경할 수 있습니다.
+      - **구성되지 않은 설정만**: 로컬 사용자는 Intune에 의해 **사용** 또는 **사용 안 함**으로 명시적으로 설정된 설정을 ‘제외한’ 모든 설정을 변경할 수 있습니다. 
       - **없음**: 로컬 사용자는 DFCI 프로필에 표시되지 않는 설정을 포함하여 모든 UEFI(BIOS) 설정을 변경할 수 없습니다.
 
     - **CPU 및 IO 가상화**: 옵션은 다음과 같습니다.
@@ -104,7 +104,7 @@ DFCI를 사용하려면 다음 프로필을 만들고 그룹에 할당합니다.
         - **구성되지 않음** Intune은 이 기능을 변경하지 않으며 모든 설정을 그대로 유지합니다.
         - **사용**: UEFI(BIOS)에서 직접 관리되는 모든 기본 제공 마이크 및 스피커를 사용할 수 있습니다. USB 디바이스와 같은 주변 디바이스는 영향을 받지 않습니다.
         - **사용 안 함**: UEFI(BIOS)에서 직접 관리되는 모든 기본 제공 마이크 및 스피커를 사용할 수 없습니다. USB 디바이스와 같은 주변 디바이스는 영향을 받지 않습니다.
-    - **라디오(Bluetooth, Wi-Fi, NFC 등)**: 옵션은 다음과 같습니다.
+    - **라디오(Bluetooth, Wi-Fi, NFC 등)** : 옵션은 다음과 같습니다.
         - **구성되지 않음** Intune은 이 기능을 변경하지 않으며 모든 설정을 그대로 유지합니다.
         - **사용**: UEFI(BIOS)에서 직접 관리되는 모든 기본 제공 라디오를 사용할 수 있습니다. USB 디바이스와 같은 주변 디바이스는 영향을 받지 않습니다.
         - **사용 안 함**: UEFI(BIOS)에서 직접 관리되는 모든 기본 제공 라디오를 사용할 수 없습니다. USB 디바이스와 같은 주변 디바이스는 영향을 받지 않습니다.
@@ -127,9 +127,11 @@ DFCI를 사용하려면 다음 프로필을 만들고 그룹에 할당합니다.
 
 프로필이 생성된 후에는 [프로필을 할당할 수 있습니다](../configuration/device-profile-assign.md). DFCI 디바이스를 포함하는 Azure AD 보안 그룹에 프로필을 할당해야 합니다.
 
-다음번에 디바이스가 동기화되거나 다시 부팅되면 DFCI 프로필 설정이 적용됩니다. 정책이 적용된 후 디바이스를 다시 부팅합니다.
+디바이스에서 Windows Autopilot을 실행하면 등록 상태 페이지에서 DFCI가 강제로 다시 부팅될 수 있습니다. 이 첫 번째 다시 부팅에서 UEFI가 Intune에 등록됩니다. 
 
-디바이스에서 Windows 디바이스 설정을 실행하면 DFCI가 등록 상태 페이지에서 강제로 다시 부팅될 수 있습니다. 설정이 완료되면 디바이스를 다시 부팅하여 DFCI 설정이 활성 상태인지 확인할 수 있습니다. 그런 다음, 디바이스 제조업체의 지침을 사용하여 UEFI 메뉴를 엽니다.
+디바이스가 등록되었는지 확인하려면 디바이스를 다시 부팅해야 하지만 필수는 아닙니다. 디바이스 제조업체의 지침을 사용하여 UEFI 메뉴를 열고 UEFI가 이제 관리되고 있는지 확인합니다.
+
+다음번에 디바이스가 Intune과 동기화될 때 Windows는 DFCI 설정을 수신합니다. 디바이스를 다시 부팅합니다. UEFI가 Windows에서 DFCI 설정을 받으려면 이 세 번째 다시 부팅이 필요합니다.
 
 ## <a name="update-existing-dfci-settings"></a>기존 DFCI 설정 업데이트
 
@@ -156,7 +158,7 @@ Windows를 초기화하여 디바이스 용도를 변경하려면  [디바이스
 
 디바이스를 사용 중지하고 관리에서 해제할 준비가 되면 DFCI 프로필을 종료 상태에서 원하는 UEFI(BIOS) 설정으로 업데이트합니다. 일반적으로 모든 설정을 사용하도록 설정하려고 합니다. 예를 들면 다음과 같습니다.
 
-1. DFCI 프로필을 엽니다(**디바이스 구성** > **프로필**).
+1. DFCI 프로필을 엽니다(**디바이스** > **구성 프로필**).
 2. **로컬 사용자가 UEFI(BIOS) 설정을 변경하도록 허용**을 **구성되지 않은 설정만**으로 변경합니다.
 3. 다른 모든 설정을 **구성되지 않음**으로 설정합니다.
 4. 설정을 저장합니다.

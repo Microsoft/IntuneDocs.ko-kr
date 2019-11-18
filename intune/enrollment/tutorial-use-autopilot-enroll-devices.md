@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39ea8b3859d3d2525433c4cafdf566e7a2c8d2ab
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509206"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709193"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>자습서: Autopilot을 사용하여 Intune에서 Windows 디바이스 등록
 
@@ -60,7 +60,7 @@ Windows Autopilot을 설정하는 첫 번째 단계는 Intune에 Windows 디바�
 
 2. CSV 파일을 저장합니다.
 
-3. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **디바이스** > **가져오기**를 선택합니다.
+3. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **디바이스** > **가져오기**를 선택합니다.
 
     ![Windows Autopilot 디바이스 스크린샷](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
 
@@ -78,7 +78,7 @@ Windows Autopilot을 설정하는 첫 번째 단계는 Intune에 Windows 디바�
 
 다음으로 디바이스 그룹을 만들고 방금 로드한 Autopilot 디바이스를 디바이스 그룹에 넣습니다.
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **그룹** > **새 그룹**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **그룹** > **새 그룹**을 선택합니다.
 2. **그룹** 블레이드에서:
     1. **그룹 형식**에서 **보안**을 선택합니다.
     2. **그룹 이름**으로 ‘Autopilot 그룹’을 입력합니다.  **그룹 설명**으로 ‘Autopilot 디바이스의 테스트 그룹’을 입력합니다. 
@@ -90,7 +90,7 @@ Windows Autopilot을 설정하는 첫 번째 단계는 Intune에 Windows 디바�
 
 디바이스 그룹을 만든 후 Autopilot 디바이스를 구성할 수 있도록 배포 프로필을 만들어야 합니다.
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 차례로 선택합니다.
 2. **기본** 페이지에서 **이름**으로 ‘Autopilot 프로필’을 입력합니다.  **설명**으로 ‘Autopilot 디바이스의 테스트 프로필’을 입력합니다. 
 3. **모든 대상 디바이스를 Autopilot으로 변환**을 **예**로 설정합니다. 이렇게 설정하면 목록의 모든 디바이스가 Autopilot 배포 서비스를 사용하여 등록됩니다. 등록을 처리하는 데 48시간 정도가 걸립니다.
 4. **다음**을 선택합니다.
@@ -116,7 +116,7 @@ Windows Autopilot을 설정하는 첫 번째 단계는 Intune에 Windows 디바�
 
 1. 디바이스가 Intune에 등록된 경우 먼저 [Azure Active Directory 포털에서 삭제](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)해야 합니다.
 
-2. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **디바이스**를 선택합니다.
+2. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **디바이스**를 선택합니다.
 
 3. **Windows AutoPilot 디바이스**에서 삭제할 디바이스를 선택한 다음, **삭제**를 선택합니다.
 

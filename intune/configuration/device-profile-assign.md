@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 50b91251572e45669f197df7ac4e5ff94caf47a1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892624"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755326"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 사용자 및 디바이스 프로필 할당
 
@@ -41,8 +41,8 @@ ms.locfileid: "72892624"
 
 ## <a name="assign-a-device-profile"></a>디바이스 프로필 할당
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필**을 선택합니다. 모든 프로필이 나열됩니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **구성 프로필**을 선택합니다. 모든 프로필이 나열됩니다.
 3. 할당하려는 프로필을 선택한 후 **할당**을 선택합니다.
 4. 그룹을 **포함**하거나 **제외**하도록 선택한 다음, 그룹을 선택합니다. 그룹을 선택하면 Azure AD 그룹을 선택합니다. 여러 그룹을 선택하려면 **Ctrl** 키를 누른 상태로 그룹을 선택합니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "72892624"
 
 프로필을 할당하면 영향을 받는 사용자 수를 **평가**할 수도 있습니다. 이 기능은 사용자 수를 계산하며, 디바이스 수는 계산하지 않습니다.
 
-1. Intune에서 **디바이스 구성** > **프로필**을 선택합니다.
+1. 관리 센터에서 **디바이스** > **구성 프로필**을 선택합니다.
 2. 프로필을 선택한 후 **할당** > **평가**를 선택합니다. 메시지는 이 프로필의 대상이 되는 사용자 수를 보여 줍니다.
 
 **평가** 단추가 회색으로 표시되면 프로필이 하나 이상의 그룹에 할당되었는지 확인합니다.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3ee6240d9efb0d09c41a6a9b1260cd4189927a8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8c31bbd8eb9efb2b748163223ce1b8fa555f0dc6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509422"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713525"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune 디바이스 관리란?
 
@@ -33,7 +33,7 @@ IT 관리자의 경우 관리되는 디바이스가 위험으로부터 해당 �
 
 ## <a name="get-to-your-devices"></a>디바이스로 가져오기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 3. **디바이스**를 선택합니다. 이 보기는 개별 디바이스에 대한 자세한 정보 및 다음을 포함해 이 정보로 할 수 있는 작업을 표시합니다.
 
    - **개요**는 등록된 디바이스에 대한 시각적 스냅샷을 표시하고 또한 얼마나 많은 디바이스가 Android, iOS 등을 포함한 다른 플랫폼을 사용하는지를 표시합니다.

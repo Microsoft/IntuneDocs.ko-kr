@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143178"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709317"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>등록 상태 페이지 설정
  
@@ -64,14 +64,14 @@ ESP(등록 상태 페이지)는 초기 디바이스를 등록하는 동안 Windo
 
 등록 상태 페이지를 켜려면 아래 단계에 따릅니다.
  
-1. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지**를 선택합니다.
 2. **등록 상태 페이지** 블레이드에서 **기본값** > **설정**을 선택합니다.
 3. **프로필 및 앱 설치 진행률 표시**에서 **예**를 선택합니다.
 4. 사용하려는 다른 설정을 선택한 다음, **저장**을 선택합니다.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>등록 상태 페이지 프로필을 만들고 그룹에 할당
 
-1. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지** > **프로필 만들기**를 선택합니다.
 2. **이름** 및 **설명**을 제공합니다.
 3. **만들기**를 선택합니다.
 4. **등록 상태 페이지** 목록에서 새 프로필을 선택합니다.
@@ -82,7 +82,7 @@ ESP(등록 상태 페이지)는 초기 디바이스를 등록하는 동안 Windo
 
 사용자는 여러 그룹에 속할 수 있으며 등록 상태 페이지 프로필을 여러 개 사용할 수 있습니다. 이러한 충돌을 해결하려면 각 프로필의 우선 순위를 설정하면 됩니다. 등록 중에 누군가 등록 상태 페이지 프로필을 두 개 이상 보유하고 있다면 우선 순위가 가장 높은 프로필만 등록하는 디바이스에 적용됩니다.
 
-1. [Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지**를 선택합니다.
 2. 목록의 프로필을 마우스로 가리키세요.
 3. 세로 점 세 개를 사용하여 목록의 원하는 위치로 프로필을 끕니다.
 
@@ -90,7 +90,7 @@ ESP(등록 상태 페이지)는 초기 디바이스를 등록하는 동안 Windo
 
 사용자가 바탕 화면에 액세스하기 전에 설치해야 하는 앱을 지정할 수 있습니다.
 
-1. Intun에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지**를 선택합니다.
 2. 프로필 > **설정**을 선택합니다.
 3. **프로필 및 앱 설치 진행률 표시**에서 **예**를 선택합니다.
 4. **모든 앱 및 프로필이 설치될 때까지 디바이스 차단**에서 **예**를 선택합니다.

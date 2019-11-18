@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030d455c366a9c447444c247e9690e5d31613982
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 772cdbe203b0489a9b2312a1cc10ea1b3182b35d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508597"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713165"
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>공유 iOS 디바이스에서 사용자 제거
 
@@ -41,12 +41,11 @@ ms.locfileid: "72508597"
 
 ## <a name="remove-a-user"></a>사용자 제거
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **디바이스**를 선택합니다.
-4. **디바이스** 창에서 **모든 디바이스**를 선택합니다.
-5. 관리하는 디바이스 목록에서 iOS 디바이스를 선택합니다.
-6. 디바이스에 대한 창에서 **사용자**를 선택합니다.
-7. 목록에서 제거할 사용자를 마우스 오른쪽 단추로 클릭한 다음, **사용자 제거**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **모든 디바이스**를 선택합니다.
+3. 관리하는 디바이스 목록에서 iOS 디바이스를 선택합니다.
+4. 디바이스에 대한 창에서 **사용자**를 선택합니다.
+5. 목록에서 제거할 사용자를 마우스 오른쪽 단추로 클릭한 다음, **사용자 제거**를 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

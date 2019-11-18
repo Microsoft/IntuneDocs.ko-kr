@@ -6,24 +6,24 @@ keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/09/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
-ms.reviewer: sumitp
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 20743d19ba101a9c400cb9f72dca59223254e6de
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506632"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755065"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune에서 Telecom Expense Management 서비스 설정
 
@@ -54,7 +54,7 @@ Intune과 함께 Datalert 서비스를 사용할 수 있도록 Datalert 및 Intu
 
 ## <a name="prerequisites"></a>전제 조건
 
-- Microsoft Intune 구독 및 [Azure Portal 액세스](https://portal.azure.com) 권한
+- Microsoft Intune에 대한 구독 및 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 대한 액세스 권한
 - [Datalert](http://www.datalert.biz/)에 대한 구독(Datalert의 웹 사이트 열림)
 
 ## <a name="telecom-expense-management-providers"></a>Telecom Expense Management 공급자
@@ -109,9 +109,9 @@ Intune은 다음 Telecom Expense Management 공급자와 통합되어 있습니�
 
 1단계를 완료하면 연결이 자동으로 설정됩니다. Intune에서 연결 상태는 **활성**을 표시합니다. 활성 상태인지 확인하려면 다음 단계를 사용 합니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-2. **디바이스 구성** > Telecom Expense Management**를 선택합니다**. **활성** 연결 상태를 찾습니다.
+2. **테넌트 관리** > **커넥터 및 토큰** > **Telecom Expense Management**를 차례로 선택합니다. **활성** 연결 상태를 찾습니다.
 
    ![Datalert 연결 상태가 활성임을 보여 주는 Intune 페이지](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
@@ -138,7 +138,7 @@ Intune에서 디바이스 범주를 만드는 방법은 [그룹에 디바이스 
 
 다음은 Datalert 앱을 추가하는 단계입니다. 예를 들어, iOS가 사용됩니다. [앱 추가](../apps/apps-add.md) 및 [범위 태그 사용](../fundamentals/scope-tags.md)에 이러한 단계에 대한 보다 구체적인 정보가 있습니다.
 
-1. **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** 에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **앱** > **모든 앱** > **추가**를 선택합니다.
 
 2. **앱 유형**을 선택합니다. 예를 들어 iOS의 경우 **스토어 앱 - iOS**를 선택합니다.
 
@@ -156,7 +156,7 @@ Intune에서 디바이스 범주를 만드는 방법은 [그룹에 디바이스 
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>회사 디바이스 그룹에 Datalert 앱 할당
 
-1. **클라이언트 앱 - 앱**에서 이전 단계에서 추가한 Datalert 앱을 선택합니다.
+1. **앱** > **모든 앱**에서 이전 단계에서 추가한 Datalert 앱을 선택합니다.
 
 2. **할당** > **그룹 추가**를 선택합니다. 앱이 할당되는 방식을 선택합니다. [Intune에서 그룹에 앱 할당](../apps/apps-deploy.md)은 이러한 설정에 대한 자세한 정보를 포함합니다.
 
@@ -183,7 +183,7 @@ Intune에서 디바이스 범주를 만드는 방법은 [그룹에 디바이스 
 
 ## <a name="turn-off-the-datalert-service"></a>Datalert 서비스 해제
 
-1. **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** 에서 **디바이스 구성** > **Telecom Expense Management**를 선택하세요.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **테넌트 관리** > **커넥터 및 토큰** > **Telecom Expense Management**를 선택합니다.
 2. **Telecom Expense Management를 사용하도록 설정하고, 사용 할당량을 초과하는 디바이스에서 셀룰러 또는 로밍 데이터를 차단**하여 **사용하지 않도록 설정**합니다.
 3. 변경 내용을 **저장**합니다.
 

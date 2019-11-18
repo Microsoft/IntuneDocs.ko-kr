@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492870"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755199"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Intune을 사용하여 디바이스에 이메일 설정 추가
 
@@ -39,8 +39,8 @@ Microsoft Intune에는 조직의 디바이스에 배포할 수 있는 여러 이
 
 ## <a name="create-a-device-profile"></a>디바이스 프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 
     - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어, 올바른 정책 이름은 **모든 Windows 디바이스에 대한 메일 설정**입니다.
@@ -71,7 +71,7 @@ Microsoft Intune에는 조직의 디바이스에 배포할 수 있는 여러 이
 
 이메일 프로필은 사용자 그룹이 아닌 디바이스 그룹에 할당됩니다. 디바이스에 이메일 프로필이 하나뿐인 경우에도 디바이스에서 이메일 프로필을 제거하는 여러 가지 방법이 있습니다.
 
-- **옵션 1**: 이메일 프로필을 열고(**디바이스 구성** > **프로필**) **할당**을 선택합니다. **포함** 탭은 프로필에 할당된 그룹을 보여줍니다. 그룹을 마우스 오른쪽 단추로 클릭하고 **제거**를 선택합니다. 변경 내용을 **저장**합니다.
+- **옵션 1**: 메일 프로필(**디바이스** > **구성 프로필**을 열고 프로필을 선택한 다음, **할당**을 선택합니다. **포함** 탭은 프로필에 할당된 그룹을 보여줍니다. 그룹을 마우스 오른쪽 단추로 클릭하고 **제거**를 선택합니다. 변경 내용을 **저장**합니다.
 
 - **옵션 2**: [디바이스를 초기화 또는 사용 중지합니다](../remote-actions/devices-wipe.md). 이러한 작업을 통해 데이터 및 설정을 선택적으로 또는 완전히 제거할 수 있습니다.
 
@@ -103,4 +103,4 @@ Microsoft Intune에는 조직의 디바이스에 배포할 수 있는 여러 이
 
 ## <a name="next-steps"></a>다음 단계
 
-프로필이 생성되면 아직 아무 작업도 수행하지 않습니다. 다음으로, [일부 디바이스에 프로필을 할당](../device-profile-assign.md)합니다.
+프로필이 생성되면 아직 아무 작업도 수행하지 않습니다. 그런 다음, [프로필을 할당합니다](../device-profile-assign.md).

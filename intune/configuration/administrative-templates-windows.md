@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50fc2d274531dce3d2466ba40a4738035b9b6811
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507026"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756776"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 템플릿을 사용하여 Microsoft Intune에서 그룹 정책 설정 구성
 
@@ -43,8 +43,8 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
 
 ## <a name="create-a-template"></a>템플릿 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 
     - **이름**: 프로필의 이름을 입력합니다.
@@ -59,7 +59,7 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
     > [!TIP]
     > Intune의 Windows 설정은 로컬 그룹 정책 편집기(`gpedit`)에 표시되는 온-프레미스 그룹 정책 경로와 관련됩니다.
 
-5. 기본적으로 드롭다운 목록에는 **모든 제품**이 표시됩니다. 이 목록에서 **Windows** 설정만 표시하거나 **Office** 설정만 표시하거나, **Edge 버전 77 이상** 설정만 표시하도록 설정을 필터링할 수도 있습니다.
+5. 드롭다운 목록에서 **모든 제품**을 선택합니다. 이 목록에서 **Windows** 설정만 표시하거나 **Office** 설정만 표시하거나, **Edge 버전 77 이상** 설정만 표시하도록 설정을 필터링할 수도 있습니다.
 
     ![Intune의 관리 템플릿에서 모든 Windows 또는 모든 Office 설정을 표시하도록 목록을 필터링합니다.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 

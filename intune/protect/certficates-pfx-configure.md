@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72787870"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801675"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -142,13 +142,14 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 > [!IMPORTANT]  
 > Microsoft Intune Certificate Connector는 발급 인증 기관(CA)에 설치할 수 없고, 별도의 Windows 서버에 설치해야 합니다.  
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **인증 커넥터** > **추가**를 선택합니다.
-3. 커넥터를 설치할 서버에서 액세스할 수 있는 위치에 커넥터 파일을 다운로드하고 저장합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-    ![Microsoft Intune Certificate Connector 다운로드](./media/certficates-pfx-configure/download-ndes-connector.png)
+2. **테넌트 관리** > **커넥터 및 토큰** > **인증서 커넥터** >  **+추가**를 선택합니다.
+
+3. PKCS #12용 커넥터에 대해 *인증서 커넥터 소프트웨어 다운로드*를 클릭하고 커넥터를 설치할 서버에서 액세스할 수 있는 위치에 해당 파일을 저장합니다.
+
+   ![Microsoft Intune Certificate Connector 다운로드](./media/certficates-pfx-configure/download-ndes-connector.png)
  
-
 4. 다운로드가 완료되면 서버에 로그인합니다. 그런 다음:
 
     1. NDES 인증서 커넥터에 필요하므로 .NET 4.5 Framework 이상이 설치되어 있는지 확인합니다. .NET 4.5 Framework는 Windows Server 2012 R2 및 최신 버전에 자동으로 포함됩니다.
@@ -166,37 +167,44 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 
 ## <a name="create-a-trusted-certificate-profile"></a>신뢰할 수 있는 인증서 프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **디바이스 구성** > **프로필** > **프로필 만들기**로 이동합니다.
-    ![Intune으로 이동하여 신뢰할 수 있는 인증서에 대한 새 프로필 만들기](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-2. 다음 속성을 입력합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
+
+   ![Intune으로 이동하여 신뢰할 수 있는 인증서에 대한 새 프로필 만들기](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+
+3. 다음 속성을 입력합니다.
 
     - 프로필의 **이름**
     - 선택적으로 설명 설정
     - 프로필을 배포할 **플랫폼**
     - **프로필 형식**을 **신뢰할 수 있는 인증서**로 설정
 
-3. **설정**으로 이동하여 이전에 내보낸 .cer 파일 루트 CA 인증서를 입력합니다.
+4. **설정**을 선택하고 이전에 내보낸 .cer 파일 루트 CA 인증서를 지정합니다.
 
    > [!NOTE]
    > **2단계**에서 선택한 플랫폼에 따라 인증서의 **대상 저장소**를 선택하는 옵션이 제공되거나 제공되지 않을 수 있습니다.
 
-   ![프로필을 만들고 신뢰할 수 있는 인증서 업로드](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
+   ![프로필을 만들고 신뢰할 수 있는 인증서 업로드](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png)
 
-4. **확인** > **만들기**를 선택하여 프로필을 저장합니다.
-5. 하나 이상의 디바이스에 새 프로필을 할당하려면 [Microsoft Intune 디바이스 프로필 할당](../configuration/device-profile-assign.md)을 참조하세요.
+5. **확인** > **만들기**를 선택하여 프로필을 저장합니다.
+
+6. 하나 이상의 디바이스에 새 프로필을 할당하려면 [Microsoft Intune 디바이스 프로필 할당](../configuration/device-profile-assign.md)을 참조하세요.
 
 ## <a name="create-a-pkcs-certificate-profile"></a>PKCS 인증서 프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **디바이스 구성** > **프로필** > **프로필 만들기**로 이동합니다.
-2. 다음 속성을 입력합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**로 이동한 후 선택합니다.
+
+3. 다음 속성을 입력합니다.
 
     - 프로필의 **이름**
     - 선택적으로 설명 설정
     - 프로필을 배포할 **플랫폼**
     - **프로필 형식**을 **PKCS 인증서**로 설정
 
-3. **설정**으로 이동하고 선택한 플랫폼에 적용할 속성을 구성합니다.  
+4. **설정**을 선택한 후 선택한 플랫폼에 적용할 속성을 구성합니다.
    
    |Setting     | 플랫폼     | 세부 정보   |
    |------------|------------|------------|
@@ -212,8 +220,9 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
    |**모든 앱이 프라이빗 키에 액세스할 수 있도록 허용** |macOS  |연결된 mac 디바이스용으로 구성된 앱에 PKCS 인증서 프라이빗 키에 대한 액세스 권한을 제공하려면 **사용**으로 설정합니다. <br><br> 이 설정에 대한 자세한 내용은 Apple 개발자 설명서에서 [구성 프로필 참조](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)의 *AllowAllAppsAccess* 인증서 페이로드 섹션을 참조하세요. |
    |**루트 인증서**             |**-** Android 디바이스 관리자 <br> **-** Android Enterprise(‘디바이스 소유자’, ‘회사 프로필’)   |이전에 할당된 루트 CA 인증서 프로필을 선택합니다. |
 
-4. **확인** > **만들기**를 선택하여 프로필을 저장합니다.
-5. 하나 이상의 디바이스에 새 프로필을 할당하려면 [Microsoft Intune 디바이스 프로필 할당](../configuration/device-profile-assign.md)을 참조하세요.
+5. **확인** > **만들기**를 선택하여 프로필을 저장합니다.
+
+6. 하나 이상의 디바이스에 새 프로필을 할당하려면 [Microsoft Intune 디바이스 프로필 할당](../configuration/device-profile-assign.md)을 참조하세요.
 
    > [!NOTE]
    > Android 엔터프라이즈 프로필을 사용하는 디바이스에서는 PKCS 인증서 프로필을 사용하여 설치된 인증서가 디바이스에 표시되지 않습니다. 인증서 배포 성공 여부를 확인하려면 Intune 콘솔에서 프로필의 상태를 확인합니다.
@@ -262,7 +271,7 @@ macOS PKCS 인증서 프로필을 만들 때 주체 이름 형식에 대한 옵�
   - **{{DeviceName}}**
   - **{{FullyQualifiedDomainName}}** *(Windows 및 도메인 가입 디바이스에만 적용됨)*
   - **{{MEID}}**
-   
+
   텍스트 상자에서 이러한 변수와 변수 텍스트를 차례로 지정할 수 있습니다. 예를 들어, *Device1*이라는 디바이스의 일반 이름을 **CN={{DeviceName}}Device1**으로 추가할 수 있습니다.
 
   > [!IMPORTANT]  
@@ -273,21 +282,25 @@ macOS PKCS 인증서 프로필을 만들 때 주체 이름 형식에 대한 옵�
 
 
 ## <a name="whats-new-for-connectors"></a>커넥터의 새로운 기능
-두 인증서 커넥터의 업데이트가 정기적으로 릴리스됩니다. 커넥터를 업데이트할 때 여기서 변경 내용을 읽을 수 있습니다. 
+
+두 인증서 커넥터의 업데이트가 정기적으로 릴리스됩니다. 커넥터를 업데이트할 때 여기서 변경 내용을 읽을 수 있습니다.
 
 *Microsoft Intune용 PFX 인증서 커넥터*는 [자동 업데이트를 지원](#requirements)하는 반면, *Intune 인증서 커넥터*는 수동으로 업데이트해야 합니다.
 
-### <a name="may-17-2019"></a>2019년 5월 17일  
+### <a name="may-17-2019"></a>2019년 5월 17일
+
 - **Microsoft Intune용 PFX 인증서 커넥터 - 버전 6.1905.0.404**  
   이 릴리스의 변경 내용:  
   - 커넥터가 새 요청 처리를 중지하게 하는 기존 PFX 인증서가 계속 재처리되는 문제가 해결되었습니다. 
 
-### <a name="may-6-2019"></a>2019년 5월 6일  
+### <a name="may-6-2019"></a>2019년 5월 6일
+
 - **Microsoft Intune용 PFX 인증서 커넥터 - 버전 6.1905.0.402**  
   이 릴리스의 변경 내용:  
   - 커넥터에 대한 폴링 간격을 5분에서 30초로 줄입니다.
  
-### <a name="april-2-2019"></a>2019년 4월 2일  
+### <a name="april-2-2019"></a>2019년 4월 2일
+
 - **Intune 인증서 커넥터 - 버전 6.1904.1.0**  
   이 릴리스의 변경 내용:  
   - 글로벌 관리자 계정으로 커넥터에 로그인한 후 커넥터가 Intune에 등록하지 못하는 문제가 해결되었습니다.  

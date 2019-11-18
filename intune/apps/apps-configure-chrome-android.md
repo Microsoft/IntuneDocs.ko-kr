@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635486"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801658"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune을 사용하여 Android 장치용 Google Chrome 구성 
 
@@ -63,7 +63,7 @@ Intune에 관리되는 Google Play 앱을 추가하는 방법에 대한 자세�
 
     다음은 일반 설정의 예입니다.
     - **URL 목록에 대한 액세스 차단**: `["*"]`
-    - **URL 목록에 대한 액세스 허용**: `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **URL 목록에 대한 액세스 허용**: `["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **관리되는 책갈피**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **Incognito 모드 가용성**: `Incognito mode disabled`
 
@@ -71,7 +71,7 @@ Intune에 관리되는 Google Play 앱을 추가하는 방법에 대한 자세�
 
     ![일반 설정](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    위 설정은 책갈피를 만들고 `baidu.com`, `yahoo.com` 및 `chrome://`을 제외한 모든 웹 사이트에 대한 액세스를 허용합니다.
+    위 설정은 책갈피를 만들고 `baidu.com`, `yahoo.com`, `chromium.org` 및 `chrome://`을 제외한 모든 URL에 대한 액세스를 차단합니다.
 
 5. **확인**과 **추가**를 클릭하여 구성 정책을 Intune에 추가합니다.
 6. 이 구성 정책을 사용자 그룹에 할당합니다. 자세한 내용은 [Microsoft Intune을 사용하여 그룹에 앱 할당](~/apps/apps-deploy.md)을 참조하세요. 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 445737a1b0a72e380844af6225cdb735cd3ec02c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509360"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713096"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Intune을 사용하여 Windows 디바이스의 암호 재설정
 
@@ -64,11 +64,10 @@ Windows 디바이스에서 암호를 재설정하려면 PIN 재설정 서비스�
 
 ## <a name="reset-the-passcode"></a>암호 재설정
 
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다. 
-2. **모든 서비스**를 선택하고 **Intune**에서 필터링하고 **Microsoft Intune**을 선택합니다.
-3. **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
-4. 암호를 재설정하려는 디바이스를 선택합니다. 디바이스 속성에서 **새 암호**를 선택합니다.
-5. **예**를 선택하여 확인합니다. 암호가 생성되고 다음 7일 동안 포털에 표시됩니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다. 
+2. **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
+3. 암호를 재설정하려는 디바이스를 선택합니다. 디바이스 속성에서 **새 암호**를 선택합니다.
+4. **예**를 선택하여 확인합니다. 암호가 생성되고 다음 7일 동안 포털에 표시됩니다.
 
 ## <a name="next-step"></a>다음 단계
 

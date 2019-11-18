@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55147de71d764feb89aa305c7e3282cfb1fff3c1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503054"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709204"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 등록 설정
 
@@ -102,7 +102,7 @@ EnterpriseEnrollment-s.manage.microsoft.com은 등록에 선호되는 FQDN이지
 CNAME 구성 이외의 메서드를 사용하는 것이 지원되지 않습니다. 예를 들어 프록시 서버를 사용하여 enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc를 enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc 또는 manage.microsoft.com/EnrollmentServer/Discovery.svc로 리디렉션하는 것이 지원되지 않습니다.
 
 **2단계: CNAME 확인**(선택 사항)<br>
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **Windows 등록** > **CNAME 유효성 검사**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **CNAME 유효성 검사**를 선택합니다.
 2. **도메인** 상자에서 회사 웹 사이트를 입력한 다음, **테스트**를 선택합니다.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>사용자에게 Windows 디바이스를 등록하는 방법 안내

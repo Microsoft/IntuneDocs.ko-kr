@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86dc2e26e3c4091785cb6462a84e75b770634881
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508557"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713441"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>디바이스를 동기화하여 Intune에서 최신 정책과 작업 가져오기
 
@@ -38,8 +38,8 @@ ms.locfileid: "72508557"
 
 ## <a name="sync-a-device"></a>디바이스 동기화
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다. 
-3. **Intune**에서 **디바이스** > **모든 디바이스**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다. 
+3. **디바이스** > **모든 디바이스**를 선택합니다.
 4. 관리하는 디바이스의 목록에서 디바이스를 선택하여 *개요* 창을 열고 **동기화**를 선택합니다.
 5. 확인하려면 **예**를 선택합니다.
 

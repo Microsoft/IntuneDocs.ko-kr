@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 59a1b5679b81a8de90e39d6ec13bbe87dac90947
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491758"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984179"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune에서 VPN 서버에 연결할 VPN 프로필 생성
 
@@ -50,7 +50,7 @@ VPN(가상 사설망)을 사용하면 사용자가 조직 네트워크에 안전
 |검사점 캡슐 VPN|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |Cisco AnyConnect|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형)<br/>- iOS<br/>- macOS|
 |Cisco(IPsec)|iOS|
-|Citrix SSO|- Android<br/>- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS<br/>- Windows 10|
+|Citrix SSO|- Android<br/>- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형) [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS<br/>- Windows 10|
 |사용자 지정 VPN|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |IKEv2| - iOS<br/>- Windows 10|
@@ -68,8 +68,9 @@ VPN(가상 사설망)을 사용하면 사용자가 조직 네트워크에 안전
 
 ## <a name="create-a-device-profile"></a>디바이스 프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에서 **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
-2. 다음 속성을 입력합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
+3. 다음 속성을 입력합니다.
 
     - **이름**: 프로필에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 프로필 이름을 지정합니다. 예를 들어 **전체 회사에 대한 VPN 프로필**은 좋은 프로필 이름입니다.
     - **설명**: 프로필에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
@@ -86,7 +87,7 @@ VPN(가상 사설망)을 사용하면 사용자가 조직 네트워크에 안전
 
     - **프로필 유형**: **VPN**을 선택합니다.
 
-3. 선택한 플랫폼에 따라 구성할 수 있는 설정이 다릅니다. 각 플랫폼에 대한 자세한 설정을 보려면 다음 문서로 이동하세요.
+4. 선택한 플랫폼에 따라 구성할 수 있는 설정이 다릅니다. 각 플랫폼에 대한 자세한 설정을 보려면 다음 문서로 이동하세요.
 
     - [Android 설정](vpn-settings-android.md)
     - [Android Enterprise 설정](vpn-settings-android-enterprise.md)
@@ -96,7 +97,7 @@ VPN(가상 사설망)을 사용하면 사용자가 조직 네트워크에 안전
     - [Windows 8.1 설정](vpn-settings-windows-8-1.md)
     - [Windows 10 설정](vpn-settings-windows-10.md)(Windows Holographic for Business 포함)
 
-4. 작업이 완료되면 프로필을 **만듭니다**.
+5. 작업이 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다.
 
 프로필이 만들어지고 프로필 목록에 표시됩니다. 이 프로필을 그룹에 할당하려면 [디바이스 프로필 할당](device-profile-assign.md)을 참조하세요.
 

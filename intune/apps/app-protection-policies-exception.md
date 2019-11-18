@@ -1,7 +1,7 @@
 ---
 title: 응용 프로그램을 위한 데이터 전송 정책 예외
 titleSuffix: Microsoft Intune
-description: Intune 모바일 애플리케이션 관리(MAM) 데이터 전송 정책에 대한 예외를 만듭니다.
+description: Intune APP(앱 보호 정책) 데이터 전송 정책에 대한 예외를 만듭니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813340"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984064"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune 모바일 애플리케이션 관리(MAM) 데이터 전송 정책에 대한 예외를 만드는 방법
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Intune APP(앱 보호 정책) 데이터 전송 정책에 대한 예외를 만드는 방법
 
-관리자로서 Intune 모바일 애플리케이션 관리(MAM) 데이터 전송 정책에 대한 예외를 만들 수 있습니다. 예외를 통해 관리되지 않는 응용 프로그램과 관리되는 응용 프로그램 간에 데이터를 전송할 수 있도록 구체적으로 선택할 수 있습니다. IT는 예외 목록에 포함된 관리되지 않는 앱을 신뢰해야 합니다. 
+관리자는 Intune APP(앱 보호 정책) 데이터 전송 정책에 대한 예외를 만들 수 있습니다. 예외를 통해 관리되지 않는 응용 프로그램과 관리되는 응용 프로그램 간에 데이터를 전송할 수 있도록 구체적으로 선택할 수 있습니다. IT는 예외 목록에 포함된 관리되지 않는 앱을 신뢰해야 합니다. 
 
 >[!WARNING] 
 > 데이터 전송 예외 정책의 변경에 책임이 있습니다. 이 정책에 대한 추가는 관리되지 않는 응용프로그램(Intune에서 관리되지 않는 응용프로그램)이 관리되는 응용프로그램의 보호를 받는 데이터에 액세스할 수 있게 합니다. 보호된 데이터에 대한 액세스는 데이터 보안이 유출될 수 있습니다. 조직이 사용해야 하는 애플리케이션에 대한 데이터 전송 예외만 추가하지만 Intune APP(애플리케이션 보호 정책)을 지원하지는 않습니다. 또한 데이터 유출 위험으로 간주되지 않는 응용 프로그램에 대한 예외만 추가합니다.
@@ -65,6 +65,8 @@ Android 대상으로 하는 정책의 경우 응용 프로그램 패키지 이�
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Android **인증서 설치 관리자** 예: Android용 Outlook에서 S/MIME 인증서(메일 첨부 파일로 제공)를 Android 키 저장소에 설치할 수 있도록 네이티브 **인증서 설치 관리자** 앱을 제외하려면 문자열 <code>com.android.certinstaller</code>에 대한 데이터 전송 예외를 추가해야 합니다. 자세한 내용은 [iOS 및 Android용 Outlook의 민감도 레이블 지정 및 보호](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

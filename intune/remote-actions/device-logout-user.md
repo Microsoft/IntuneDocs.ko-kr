@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8336f5b29cd21bb6875285177071542080eb95f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fdb23916319b06fb4d85b913209d1ac9e007d551
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509462"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713172"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Intune 관리 iOS 디바이스에서 현재 사용자 로그아웃
 
@@ -41,9 +41,7 @@ ms.locfileid: "72509462"
 
 ## <a name="how-to-log-out-the-current-user"></a>현재 사용자를 로그아웃시키는 방법
 
-1. Azure 포털에 로그인합니다.
-2. **추가 서비스** > **모니터링 + 관리** > **Intune**을 선택합니다.
-3. **Intune** 블레이드에서 **디바이스**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **디바이스**를 선택합니다.
 4. **디바이스 및 그룹** 블레이드에서 **모든 디바이스**를 선택합니다.
 5. 관리하는 디바이스 목록에서 iOS 디바이스를 선택한 다음 **현재 사용자 로그아웃** 디바이스 원격 작업을 선택합니다.
 
