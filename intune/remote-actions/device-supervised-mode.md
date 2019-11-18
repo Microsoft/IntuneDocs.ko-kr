@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99f27992009332a2a5fae0768225d8c69d3ac5ad
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509400"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713437"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>iOS 감독 모드 설정
 
@@ -37,7 +37,7 @@ Intune은 Apple [DEP(디바이스 등록 프로그램)](../enrollment/device-enr
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>등록 중 감독 모드 설정
 
-Intune에서 [DEP에 Apple 등록 프로필을 만들](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) 때 디바이스에 대해 감독 모드를 설정할 수 있습니다. **디바이스 관리 설정** 아래에서 **감독 됨** 상자를 확인합니다.
+[Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 [DEP에 Apple 등록 프로필을 만들](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) 때 디바이스에 대해 감독 모드를 설정할 수 있습니다. **디바이스 관리 설정** 아래에서 **감독 됨** 상자를 확인합니다.
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>등록 후 감독 모드 설정
 
