@@ -5,7 +5,7 @@ description: Microsoft Defender Advanced Threat Protection 관리를 위해 Intu
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923396"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060064"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune에 대한 Microsoft Defender Advanced Threat Protection 기준 설정
 
@@ -91,7 +91,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   **기본값**: 차단 
 
 - **자격 증명 도용 방지 유형**  
-  [Credential Guard를 사용하여 파생된 도메인 자격 증명을 보호](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)하려면 ‘사용’으로 설정합니다.  Windows Defender Credential Guard는 가상화 기반 보안을 사용하여 권한 있는 시스템 소프트웨어만 액세스할 수 있도록 비밀을 격리합니다. 이러한 암호에 대한 무단 액세스는 Pass-the-Hash 또는 Pass-The-Ticket과 같은 자격 증명 도난 공격을 초래할 수 있습니다. Windows Defender Credential Guard는 NTLM 암호 해시, Kerberos 티켓 부여 티켓 및 애플리케이션에서 도메인 자격 증명으로 저장된 자격 증명을 보호하여 이러한 공격을 방지합니다.  
+  [Credential Guard를 사용하여 파생된 도메인 자격 증명을 보호](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)하려면 ‘사용’으로 설정합니다.  Microsoft Defender Credential Guard는 가상화 기반 보안을 사용하여 권한 있는 시스템 소프트웨어만 액세스할 수 있도록 비밀을 격리합니다. 이러한 암호에 대한 무단 액세스는 Pass-the-Hash 또는 Pass-The-Ticket과 같은 자격 증명 도난 공격을 초래할 수 있습니다. Microsoft Defender Credential Guard는 NTLM 암호 해시, Kerberos 티켓 부여 티켓 및 애플리케이션에서 도메인 자격 증명으로 저장된 자격 증명을 보호하여 이러한 공격을 방지합니다.  
 
   **기본값**: 사용
 
@@ -227,7 +227,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   - **차단된 하드웨어 디바이스 식별자**  
     이 설정은 *디바이스 식별자에 의한 하드웨어 디바이스 설치*가 *하드웨어 디바이스 설치 차단*으로 설정된 경우에만 사용할 수 있습니다. 이 설정을 구성하려면 옵션을 확장하고, **+ 추가**를 선택한 다음, 차단할 하드웨어 디바이스 식별자를 지정합니다.  
 
-    **기본값**: PCI\CC_0C0A
+    **기본값**: PCI \ CC_0C0A
 
 - **직접 메모리 액세스 차단**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) - 이 정책 설정을 사용하여 사용자가 Windows에 로그인할 때까지 디바이스에서 모든 핫 플러그형 PCI 다운스트림 포트에 대한 DMA(직접 메모리 액세스)를 차단합니다. 사용자가 로그인하면 Windows는 호스트 플러그 PCI 포트에 연결된 PCI 디바이스를 열거합니다. 사용자가 머신을 잠글 때마다 DMA는 사용자가 다시 로그인할 때까지 자식 디바이스가 없는 핫플러그 PCI 포트에서 차단됩니다. 머신을 잠그지 않은 경우 이미 열거된 디바이스는 분리될 때까지 계속 기능합니다. 
@@ -281,7 +281,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   또한 기존 EMET 구성 XML 파일을 악용 방지 구성 XML로 변환하고 가져올 수 있습니다.
 
 - **재정의 차단**  
-  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – 사용자가 Windows Defender Security Center에서 악용 방지 설정 영역을 변경하지 못하도록 차단하려면 ‘예’로 설정합니다.  이 설정을 사용하지 않도록 설정하거나 구성하지 않은 경우 로컬 사용자는 악용 방지 설정 영역을 변경할 수 있습니다.  
+  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – 사용자가 Microsoft Defender 보안 센터에서 악용 방지 설정 영역을 변경하지 못하도록 차단하려면 *예*로 설정합니다. 이 설정을 사용하지 않도록 설정하거나 구성하지 않은 경우 로컬 사용자는 악용 방지 설정 영역을 변경할 수 있습니다.  
   **기본값**: 예  
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 바이러스 백신  
@@ -289,17 +289,17 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 자세한 내용은 Windows 설명서의 [정책 CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)를 참조하세요.
 
 - **Microsoft 웹 브라우저에 로드된 스크립트 검사**  
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – Windows Defender 스크립트 검사 기능을 허용하려면 ‘예’로 설정합니다.   
+  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – Microsoft Defender 스크립트 검사 기능을 허용하려면 *예*로 설정합니다.  
 
   **기본값**: 예
 
 - **들어오는 메일 메시지 검사**  
-  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – Windows Defender가 메일을 검사하도록 허용하려면 ‘예’로 설정합니다.   
+  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – Microsoft Defender가 메일을 검사하도록 허용하려면 *예*로 설정합니다.  
 
   **기본값**: 예
 
 - **Defender 샘플 제출 동의**  
-  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - 데이터를 전송하려면 Windows Defender의 사용자 동의 수준을 확인합니다. 필요한 동의가 이미 부여된 경우 Windows Defender에서는 해당 동의를 제출합니다. 그렇지 않은 경우(및 사용자가 요청을 지정하지 않은 경우) 데이터를 전송하기 전에 UI가 시작되어 사용자 동의를 요청합니다(‘클라우드 제공 보호’가 ‘예’로 설정된 경우).    
+  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - 데이터를 전송하려면 Microsoft Defender의 사용자 동의 수준을 확인합니다. 필요한 동의가 이미 부여된 경우 Microsoft Defender에서는 해당 동의를 제출합니다. 그렇지 않은 경우(및 사용자가 요청을 지정하지 않은 경우) 데이터를 전송하기 전에 UI가 시작되어 사용자 동의를 요청합니다(‘클라우드 제공 보호’가 ‘예’로 설정된 경우).    
 
   **기본**: 자동으로 안전 샘플 보내기
 
@@ -319,7 +319,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
     **기본값**: 예
 
 - **Defender 액세스 시 보호 차단**  
-  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – ‘예’로 설정하면 Windows Defender 액세스 시 보호가 사용하도록 설정됩니다.   
+  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – *예*로 설정하면 Microsoft Defender 액세스 시 보호가 사용하도록 설정됩니다.  
 
   **기본값**: 예
 
@@ -346,30 +346,30 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   **기본값**: 오전 2시
 
 - **클라우드 제공 보호**  
-  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – ‘예’로 설정하면 Windows Defender가 발견한 문제에 대한 정보를 Microsoft에 보냅니다.  Microsoft에서는 해당 정보를 분석하고, 사용자 및 기타 고객에게 영향을 미치는 문제에 대해 자세히 알아본 다음, 향상된 솔루션을 제공합니다.
+  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – *예*로 설정하면 Microsoft Defender가 발견한 문제에 대한 정보를 Microsoft에 보냅니다. Microsoft에서는 해당 정보를 분석하고, 사용자 및 기타 고객에게 영향을 미치는 문제에 대해 자세히 알아본 다음, 향상된 솔루션을 제공합니다.
 
   이 정책을 ‘예’로 설정하면 ‘Defender 샘플 전송 동의 유형’을 사용하여 사용자에게 디바이스에서 정보를 보내는 작업을 제어할 권한을 제공할 수 있습니다.    
 
   **기본값**: 예
 
 - **잠재적으로 필요 없는 Defender 앱 작업**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Windows Defender 바이러스 백신은 PUA(‘사용자 동의 없이 설치된 애플리케이션’)를 식별하고 PUA가 네트워크의 엔드포인트에서 다운로드 및 설치되지 않도록 차단할 수 있습니다.  
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Microsoft Defender 바이러스 백신은 *PUA(사용자 동의 없이 설치된 애플리케이션)* 를 식별하고 PUA가 네트워크의 엔드포인트에서 다운로드 및 설치되지 않도록 차단할 수 있습니다. 
  
-  - ‘차단’으로 설정하면 Windows Defender는 PUA를 차단하고 다른 위협과 함께 기록에 나열합니다. 
-  - ‘감사’로 설정하면 Windows Defender는 PUA를 검색하지만 차단하지는 않습니다.  Windows Defender가 작업을 수행하는 대상 애플리케이션에 대한 정보를 찾으려면 이벤트 뷰어에서 Windows Defender에서 생성된 이벤트를 검색합니다.  
+  - *차단*으로 설정하면 Microsoft Defender는 PUA를 차단하고 다른 위협과 함께 기록에 나열합니다.
+  - *감사*로 설정하면 Microsoft Defender는 PUA를 검색하지만 차단하지는 않습니다. Microsoft Defender가 작업을 수행하는 대상 애플리케이션에 대한 정보를 찾으려면 이벤트 뷰어에서 Microsoft Defender에서 생성된 이벤트를 검색합니다.  
   - ‘디바이스 기본값’으로 설정하면 PUA 보호가 꺼집니다.   
  
   **기본값**: 차단
 
 - **Defender 클라우드 제한 시간 연장**  
-  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - Windows Defender 바이러스 백신이 클라우드의 결과를 기다리는 동안 파일을 차단해야 하는 최대 추가 시간을 지정합니다. Windows Defender가 대기하는 기본 시간은 10초입니다. 여기에서 지정하는 추가 시간(최대 50초)은 기본 10초에 추가됩니다. 대부분의 경우 검사에는 최댓값보다 적은 시간이 걸립니다. 시간을 확장하면 클라우드가 의심스러운 파일을 철저하게 조사할 수 있습니다.  
+  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - Microsoft Defender 바이러스 백신이 클라우드의 결과를 기다리는 동안 파일을 차단해야 하는 최대 추가 시간을 지정합니다. Microsoft Defender가 대기하는 기본 시간은 10초입니다. 여기에서 지정하는 추가 시간(최대 50초)은 기본 10초에 추가됩니다. 대부분의 경우 검사에는 최댓값보다 적은 시간이 걸립니다. 시간을 확장하면 클라우드가 의심스러운 파일을 철저하게 조사할 수 있습니다.  
 
   기본적으로 연장된 시간 값은 0(사용 안 함)입니다. Intune에서는 이 설정을 사용하도록 설정하고 추가로 적어도 20초를 지정하도록 권장합니다.  
  
   **기본값**: 0
 
 - **보관 파일 검색**  
-  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – Windows Defender가 보관 파일을 검사하게 하려면 ‘예’로 설정합니다.   
+  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – Microsoft Defender가 보관 파일을 검사하게 하려면 *예*로 설정합니다.  
 
   **기본값**: 예
 
@@ -381,17 +381,17 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   **기본값**: 사용자 정의
 
 - **동작 모니터링**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Windows Defender 동작 모니터링 기능을 켜려면 ‘예’로 설정합니다.  Windows 10에 포함된 Windows Defender 동작 모니터링 센서는 운영 체제에서 동작 신호를 수집하고 처리하며, 이 센서 데이터를 Microsoft Defender ATP의 격리된 프라이빗 클라우드 인스턴스로 보냅니다.  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Microsoft Defender 동작 모니터링 기능을 켜려면 *예*로 설정합니다. Windows 10에 포함된 Microsoft Defender 동작 모니터링 센서는 운영 체제에서 동작 신호를 수집하고 처리하며, 이 센서 데이터를 Microsoft Defender ATP의 격리된 프라이빗 클라우드 인스턴스로 보냅니다.  
 
   **기본값**: 예
 
 - **네트워크 폴더에서 열린 파일 검색**  
-  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – Windows Defender가 네트워크에 있는 파일을 검사하게 하려면 ‘예’로 설정합니다.  사용자는 읽기 전용 파일에서 검색된 맬웨어를 제거할 수 없습니다.  
+  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – Microsoft Defender가 네트워크에 있는 파일을 검사하게 하려면 *예*로 설정합니다. 사용자는 읽기 전용 파일에서 검색된 맬웨어를 제거할 수 없습니다.  
 
   **기본값**: 예
 
 - **Defender 클라우드 차단 수준**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – 이 정책을 사용하여 적극적인 Windows Defender 바이러스 백신이 의심스러운 파일을 차단 및 검사하는 방법을 결정합니다. 다음 옵션을 사용할 수 있습니다.
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – 이 정책을 사용하여 적극적인 Microsoft Defender 바이러스 백신이 의심스러운 파일을 차단 및 검사하는 방법을 결정합니다. 다음 옵션을 사용할 수 있습니다.
 
   - 높음 - 클라이언트 성능을 최적화하는 동안 적극적으로 알 수 없는 파일을 차단합니다(거짓 긍정의 가능성 큼).
   - 높음 + - 적극적으로 알 수 없는 파일을 차단하고 추가 보호 수단을 적용합니다(클라이언트 성능에 영향을 줄 수 있음).
@@ -400,24 +400,24 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
   **기본값**: 구성되지 않음
 
 - **실시간 모니터링**  
-  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – Windows Defender 실시간 모니터링을 허용하려면 ‘예’로 설정합니다.   
+  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – Microsoft Defender 실시간 모니터링을 허용하려면 *예*로 설정합니다.  
 
   **기본값**: 예
 
 - **검색하는 동안 CPU 사용 제한**  
-  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Windows Defender가 검사하는 동안 사용할 수 있는 최대 평균 CPU 사용률을 지정합니다.  
+  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Microsoft Defender가 검사하는 동안 사용할 수 있는 최대 평균 CPU 사용률을 지정합니다.  
 
   **기본값**: 50
 
 - **전체 검색 중 매핑된 네트워크 드라이브 검색**  
-  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) – Windows Defender가 네트워크에 있는 파일을 검사하게 하려면 ‘예’로 설정합니다.  사용자는 읽기 전용 파일에서 검색된 맬웨어를 제거할 수 없습니다.
+  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) – Microsoft Defender가 네트워크에 있는 파일을 검사하게 하려면 *예*로 설정합니다. 사용자는 읽기 전용 파일에서 검색된 맬웨어를 제거할 수 없습니다.
 
   이 목록의 관련 설정: *Defender/AllowScanningNetworkFiles*
 
   **기본값**: 예
 
 - **Defender에 대한 최종 사용자 액세스 차단**  
-  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – 디바이스에서 최종 사용자가 Windows Defender UI에 액세스하지 못하게 차단하려면 ‘예’로 설정합니다.   
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – 디바이스에서 최종 사용자가 Microsoft Defender UI에 액세스하지 못하게 차단하려면 *예*로 설정합니다.  
 
   **기본값**: 예
 
@@ -426,7 +426,7 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 
   **기본값**: 오전 2시
 
-## <a name="windows-defender-firewall"></a>Windows Defender 방화벽
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender 방화벽
 자세한 내용은 Windows 설명서의 [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)(방화벽 CSP)를 참조하세요.
 
 - **삭제 전 보안 연결 유휴 시간** - *MdmStore/Global/SaIdleTime*   
@@ -560,29 +560,29 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 ## <a name="web--network-protection"></a>웹 및 네트워크 보호  
 
 - **네트워크 보호 유형**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 이 정책을 사용하면 Windows Defender Exploit Guard에서 네트워크 보호를 켜거나 끌 수 있습니다. 네트워크 보호는 모든 앱을 사용하는 직원이 인터넷에서 피싱 사기, 악용 호스팅 사이트 및 악성 콘텐츠에 액세스하지 못하도록 보호하는 Windows Defender Exploit Guard의 기능입니다. 이 기능에는 타사 브라우저의 위험한 사이트 연결을 방지하는 것이 포함됩니다.  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 이 정책을 사용하면 Microsoft Defender Exploit Guard에서 네트워크 보호를 켜거나 끌 수 있습니다. 네트워크 보호는 모든 앱을 사용하는 직원이 인터넷에서 피싱 사기, 악용 호스팅 사이트 및 악성 콘텐츠에 액세스하지 못하도록 보호하는 Microsoft Defender Exploit Guard의 기능입니다. 이 기능에는 타사 브라우저의 위험한 사이트 연결을 방지하는 것이 포함됩니다.  
 
-  ‘사용’ 또는 ‘감사 모드’로 설정하면 사용자가 네트워크 보호를 끌 수 없으며 Windows Defender Security Center를 사용하여 연결 시도 정보를 볼 수 있습니다.    
+  *사용* 또는 *감사 모드*로 설정하면 사용자가 네트워크 보호를 끌 수 없으며 Microsoft Defender 보안 센터를 사용하여 연결 시도 정보를 볼 수 있습니다.  
  
   - ‘사용’으로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단됩니다.   
   - ‘감사 모드’로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단되지 않습니다.   
 
-  ‘사용자 정의’로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단되지 않고 Windows Defender Security Center에서 연결 정보를 사용할 수 없습니다.   
+  *사용자 정의*로 설정하면 사용자와 앱이 위험한 도메인에 연결하지 못하도록 차단되지 않고 Microsoft Defender 보안 센터에서 연결 정보를 사용할 수 없습니다.  
 
   **기본값**: 감사 모드
 
 - **Microsoft Edge용 SmartScreen 필요**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge에서는 Windows Defender SmartScreen(켜짐)을 사용하여 기본적으로 잠재적 피싱 사기 및 악성 소프트웨어로부터 사용자를 보호합니다. 기본적으로 이 정책은 사용하도록 설정되고(‘예’로 설정), 사용하도록 설정되면 사용자가 Windows Defender SmartScreen을 끄지 못하도록 차단됩니다.   디바이스에 대한 실제 정책이 [구성되지 않음]으로 설정되면 사용자가 Windows Defender SmartScreen을 켤 수 있으므로 디바이스가 보호되지 않습니다.  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge에서는 Microsoft Defender SmartScreen(켜짐)을 사용하여 기본적으로 잠재적 피싱 사기 및 악성 소프트웨어로부터 사용자를 보호합니다. 기본적으로 이 정책은 사용하도록 설정되고(*예*로 설정), 사용하도록 설정되면 사용자가 Microsoft Defender SmartScreen을 끌 수 없습니다.  디바이스에 대한 실제 정책이 구성되지 않음으로 설정되면 사용자가 Microsoft Defender SmartScreen을 켤 수 있으므로 디바이스가 보호되지 않습니다.  
 
   **기본값**: 예
   
 - **악성 사이트 액세스 차단**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 사이트에 대한 Windows Defender SmartScreen 경고를 무시하고 계속 사이트를 탐색할 수 있습니다. 이 정책을 사용하도록 설정하면(‘예’로 설정) Microsoft Edge에서는 사용자가 경고를 무시하지 못하고 계속 사이트를 탐색하지 못하도록 차단합니다.   
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 사이트에 대한 Microsoft Defender SmartScreen 경고를 무시하고 계속 사이트를 탐색할 수 있습니다. 이 정책을 사용하도록 설정하면(‘예’로 설정) Microsoft Edge에서는 사용자가 경고를 무시하지 못하고 계속 사이트를 탐색하지 못하도록 차단합니다.   
 
   **기본값**: 예
 
 - **확인되지 않은 파일 다운로드 차단**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 파일에 대한 Windows Defender SmartScreen 경고를 무시하고 확인되지 않은 파일의 다운로드를 계속할 수 있습니다. 이 정책을 사용하도록 설정하면(‘예’로 설정) 사용자는 경고를 무시하지 못하도록 차단되고 확인되지 않은 파일을 다운로드할 수 없습니다.   
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 기본적으로 Microsoft Edge를 사용하면 사용자는 잠재적 악성 파일에 대한 Microsoft Defender SmartScreen 경고를 무시하고 확인되지 않은 파일의 다운로드를 계속할 수 있습니다. 이 정책을 사용하도록 설정하면(‘예’로 설정) 사용자는 경고를 무시하지 못하도록 차단되고 확인되지 않은 파일을 다운로드할 수 없습니다.   
 
   **기본값**: 예
 

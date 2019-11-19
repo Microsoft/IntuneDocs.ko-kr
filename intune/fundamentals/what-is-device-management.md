@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise는 Microsoft Intune을 포함하고 있습
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfa7e34d19465eb43b5eb9cd68b7513545938fa8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504782"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058534"
 ---
 # <a name="device-management-overview"></a>디바이스 관리 개요
 
@@ -84,7 +84,7 @@ Intune을 설정할 때 오직 Azure Portal에서만 디바이스를 관리하�
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>디바이스 관리의 관리 센터를 사용하여 IT 작업 간소화
 
-[디바이스 관리의 관리 센터](https://devicemanagement.microsoft.com/)는 모바일 디바이스에 대한 작업을 관리하고 완료할 수 있는 원스톱 샵입니다. 이 작업 영역에는 Intune 및 Azure Active Directory를 비롯한 디바이스와 클라이언트 앱 관리에 사용되는 서비스가 포함되어 있습니다.
+[Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)는 모바일 디바이스에 대한 작업을 관리하고 완료할 수 있는 원스톱 샵입니다. 이 작업 영역에는 Intune 및 Azure Active Directory를 비롯한 디바이스와 클라이언트 앱 관리에 사용되는 서비스가 포함되어 있습니다.
 
 장치 관리 관리 센터에서 다음을 수행할 수 있습니다.
 

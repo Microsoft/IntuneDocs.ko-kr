@@ -7,14 +7,48 @@ ms.topic: include
 ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73612116"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74125542"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
+
+### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 변경 계획: Windows 10, 버전 1703 회사 포털 지원 종료<!--5026679-->
+Windows 10, 버전 1703(Windows 10, RS2라고도 함)은 2019년 10월 8일 자로 Enterprise 및 EDU Edition에 대한 서비스가 중단되었습니다. Intune은 2019년 12월 26일부터 RS2/RS1용 회사 포털 앱에 대한 지원을 종료합니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+앞으로 이 버전의 회사 포털 앱에 새 기능이 표시되지는 않지만, 2019년 12월 26일까지 필요에 따라 회사 포털 앱에 대한 보안 업데이트 제공을 포함하여 이 회사 포털 앱 버전을 계속 지원합니다. 그러나 서비스 중단 이후에는 Windows 10, 버전 1703이 보안 업데이트를 받지 못하므로 새로운 기능 및 추가 기능을 계속 제공받을 수 있도록 Windows 디바이스를 보다 최신의 Windows 버전으로 업데이트하고 최신 회사 포털 앱을 사용하는 것이 좋습니다.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+수행할 단계는 환경 구성에 따라 달라집니다. 일반적으로 이전 버전의 OS 및/또는 회사 포털이 설치된 디바이스를 식별하여 업데이트해야 합니다. Windows 10 업데이트 링을 설정하려면 Intune -> 소프트웨어 업데이트 – Windows 10 업데이트 링에 로그인합니다. 최신 버전의 회사 포털은 버전 10.3.5601.0입니다. 사용자에게 향후 릴리스로 최신 상태를 유지할 수 있게 Microsoft Store에서 최신 버전을 다운로드하도록 지시하세요. Intune을 사용하여 [비즈니스용 Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business)를 통해 Windows 디바이스에 최신 버전을 설치할 수도 있습니다.
+
+#### <a name="additional-information"></a>추가 정보
+[Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 수동으로 추가](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+
+
+### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>작업 수행: 보호된 Intune 브라우저 환경에 Microsoft Edge 사용<!--5728447-->
+작년 한 해 동안 공유하면서 Microsoft Edge 모바일은 Managed Browser와 동일한 관리 기능 집합을 지원하는 한편, 훨씬 향상된 최종 사용자 환경을 제공하고 있습니다. Microsoft Edge에서 제공하는 강력한 환경을 사용할 수 있도록 Intune Managed Browser의 사용을 중단합니다. 2020년 1월 27일부터 Intune은 더 이상 Intune Managed Browser를 지원하지 않습니다.  
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요? 
+2020년 2월 1일부터 Intune Managed Browser는 더 이상 Google Play 스토어 또는 iOS 앱 스토어에서 사용할 수 없습니다. 이 시점에서 새 앱 보호 정책의 대상으로 Intune Managed Browser를 지정할 수는 있지만 새로운 사용자가 Intune Managed Browser 앱을 다운로드할 수 없습니다. 또한 iOS에서 MDM에 등록된 디바이스로 푸시되는 새 웹 클립이 Intune Managed Browser 대신 Microsoft Edge에서 열립니다.  
+
+2020년 3월 31일로 Azure 콘솔에서 Intune Managed Browser가 제거됩니다. 즉, 더 이상 Intune Managed Browser에 대한 새 정책을 만들 수 없습니다. 기존 Intune Managed Browser 정책은 영향을 받지 않습니다. Intune Managed Browser는 콘솔에서 아이콘이 없는 LOB 앱으로 표시되고, 기존 정책은 이 앱을 대상으로 하는 것으로 계속 표시됩니다. 이 시점에서 앱 보호 정책의 데이터 보호 섹션 내에서 Intune Managed Browser 웹 콘텐츠를 리디렉션하는 옵션도 제거됩니다.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요? 
+Intune Managed Browser에서 Microsoft Edge로 원활하게 전환하려면 다음 단계를 사전에 수행하는 것이 좋습니다. 
+
+1. 앱 보호 정책(MAM이라고도 함) 및 앱 구성 설정의 대상으로 iOS 및 Android용 Microsoft Edge를 지정합니다. 기존 정책의 대상을 Microsoft Edge로 지정하기만 해도 Intune Managed Browser 정책을 Microsoft Edge에 다시 사용할 수 있습니다.  
+2. 사용자 환경의 모든 MAM 보호 앱에서 앱 보호 정책 설정인 "다른 앱을 사용한 웹 콘텐츠 전송 제한"이 "정책 관리 브라우저"로 설정되어 있는지 확인합니다. 
+3. 모든 MAM 보호 앱에 대해 앱 구성 설정 "com.microsoft.intune.useEdge"를 true로 설정합니다. 다음 달 1911 릴리스부터 앱 보호 정책의 데이터 보호 섹션에서 "다른 앱을 사용한 웹 콘텐츠 전송 제한" 설정에 "Microsoft Edge"를 선택하도록 구성하여 2단계와 3단계를 완료할 수 있습니다. 
+
+iOS 및 Android의 웹 클립에 대한 지원이 제공됩니다. 이 지원이 릴리스될 때 기존 웹 클립의 대상을 변경하여 Managed Browser가 아닌 Microsoft Edge에서 열 수 있도록 해야 합니다. 
+
+#### <a name="additional-information"></a>추가 정보
+자세한 내용은 [앱 보호 정책과 함께 Microsoft Edge 사용](../apps/manage-microsoft-edge.md)에 대한 문서를 참조하거나 [지원 블로그 게시물](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)을 참조하세요.
+
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>변경 계획: Intune에서 Android Enterprise 전용 디바이스를 등록할 때 업데이트된 환경<!--5198878-->
 Intune의 11월 또는 1911 릴리스에서는 Android Enterprise 전용 디바이스에 SCEP 디바이스 인증서 배포 지원을 추가하여 Wi-Fi 프로필에 대한 인증서 기반 액세스를 지원합니다. 이러한 변경 내용에는 Android Enterprise 전용 디바이스를 등록하는 경우 몇 가지 사소한 변경 내용도 포함됩니다.
@@ -33,7 +67,7 @@ Intune의 11월 또는 1911 릴리스에서는 Android Enterprise 전용 디바�
 
 ### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>변경 계획: Intune 콘솔에서 ‘Siri 명령의 서버 쪽 로깅’ 설정이 제거됩니다. <!-- 5468501-->
 
-Intune 서비스의 11월 업데이트에서 Intune 콘솔에서 “Siri 명령의 서버 쪽 로깅” 설정을 제거할 예정입니다. 이 변경 사항은 Apple 측에서 이미 설정을 제거한 상태입니다.
+Intune 서비스의 11월 업데이트에서 Intune 콘솔에서 "Siri 명령의 서버 쪽 로깅" 설정을 제거할 예정입니다. 이 변경 사항은 Apple 측에서 이미 설정을 제거한 상태입니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 11월 업데이트나 1911이 11월 중반에 롤아웃되면, Intune 콘솔에서 iOS 구성 프로필에 대해 디바이스 제한 메뉴(기본 제공 앱)에서 이 설정이 제거된 것을 확인할 수 있습니다. 정책 및 대상 디바이스의 관리 프로필에 나타날 수 있지만 설정은 디바이스에 영향을 주지 않습니다. 관리 프로필에 표시되더라도 현재 디바이스에서 작동하지 않으므로 기능에 많은 영향을 미치지 않을 것으로 예상합니다.

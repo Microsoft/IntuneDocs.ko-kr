@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593777"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059210"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스의 Wi-Fi 설정 추가
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-특정 WiFi 설정을 사용하여 프로필을 만든 후 iOS 디바이스에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, PKS 또는 SCEP 인증서 사용 등을 포함한 많은 기능을 제공합니다.
+특정 WiFi 설정을 사용하여 프로필을 만든 후 iOS 디바이스에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, PKCS 또는 SCEP 인증서 사용 등을 포함한 많은 기능을 제공합니다.
 
 이러한 Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정의 두 범주로 구분됩니다.
 
@@ -81,9 +79,9 @@ ms.locfileid: "72593777"
     - **서버 유효성 검사를 위한 루트 인증서**: 기존 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서를 통해 클라이언트는 무선 네트워크 액세스 서버의 인증서를 신뢰할 수 있습니다.
 
     - **클라이언트 인증** **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
-      
-      - **파생 된 자격 증명**: 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 그렇게 하 라는 메시지를 표시 합니다.
-      
+
+      - **파생 된 자격 증명**: 사용자의 스마트 카드에서 파생 된 인증서를 사용 합니다. 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 해당 발급자를 추가 하 라는 메시지를 표시 합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조 하세요.
+
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
     - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
@@ -95,8 +93,8 @@ ms.locfileid: "72593777"
 
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
-      - **파생 된 자격 증명**: 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 그렇게 하 라는 메시지를 표시 합니다.  
-      
+      - **파생 된 자격 증명**: 사용자의 스마트 카드에서 파생 된 인증서를 사용 합니다. 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 해당 발급자를 추가 하 라는 메시지를 표시 합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조 하세요.
+
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 또한 다음을 입력합니다.
         - **EAP 이외의 방법(내부 ID)** : 연결을 인증할 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
 
@@ -115,8 +113,8 @@ ms.locfileid: "72593777"
 
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
-      - **파생 된 자격 증명**: 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 그렇게 하 라는 메시지를 표시 합니다.  
-      
+      - **파생 된 자격 증명**: 사용자의 스마트 카드에서 파생 된 인증서를 사용 합니다. 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 해당 발급자를 추가 하 라는 메시지를 표시 합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조 하세요.
+
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 
 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.

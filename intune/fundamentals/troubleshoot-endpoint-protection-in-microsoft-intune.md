@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure에서 일반적인 Endpoint Protection 메시지 | Microsoft Docs
-description: Microsoft Intune에서 Endpoint Protection 및 Windows Defender를 사용하고 문제를 해결할 때 일반적인 메시지와 가능한 해결 방법을 확인하세요.
+description: Microsoft Intune에서 Endpoint Protection 및 Microsoft Defender를 사용하고 문제를 해결할 때 일반적인 메시지와 가능한 해결 방법을 확인하세요.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 11/13/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e34e1cb30469593c8ec9e756659ad03589ae38bc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 819586a923f5c0f3a81a6d59c4a3895898182f6b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509785"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059167"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune에서 Endpoint Protection 문제와 가능한 해결 방법
 
 이 문서에서는 몇 가지 오류 및 경고의 잠재적 원인과 해결 방법을 설명합니다. 이 정보를 사용하면 Endpoint Protection을 사용하는 동안 발생하는 문제를 해결할 수 있습니다.
 
-## <a name="windows-defender-error-codes"></a>Windows Defender 오류 코드
+## <a name="microsoft-defender-error-codes"></a>Microsoft Defender 오류 코드
 
-이벤트 로그 및 오류 코드를 검토하여 [Windows Defender AV 관련 문제를 해결](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)하세요.
+이벤트 로그 및 오류 코드를 검토하여 [Microsoft Defender AV 관련 문제를 해결](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)합니다.
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>일반적인 Intune 오류와 가능한 해결 방법
 
@@ -48,7 +48,7 @@ ms.locfileid: "72509785"
 
 ### <a name="features-are-disabled"></a>기능을 사용할 수 않음
 
-일부 기능을 사용할 수 없다는 메시지가 표시될 수 있습니다. 이러한 메시지는 관리자가 구성 프로필을 사용하여 Intune Endpoint Protection 또는 Windows Defender를 사용하지 않도록 설정한 경우에 발생할 수 있습니다. 또는 디바이스에서 최종 사용자가 사용하지 않도록 설정했습니다. 가능한 메시지:
+일부 기능을 사용할 수 없다는 메시지가 표시될 수 있습니다. 이러한 메시지는 관리자가 구성 프로필을 사용하여 Intune Endpoint Protection 또는 Microsoft Defender를 사용하지 않도록 설정한 경우에 발생할 수 있습니다. 또는 디바이스에서 최종 사용자가 사용하지 않도록 설정했습니다. 가능한 메시지:
 
 `Endpoint Protection disabled`  
 `Real-time protection disabled`  
@@ -61,20 +61,20 @@ ms.locfileid: "72509785"
 **가능한 해결 방법**: 이러한 기능을 사용하도록 설정합니다. 지침은 다음을 참조하세요.
 
 - [Endpoint Protection 설정 추가](../protect/endpoint-protection-configure.md)
-- [Windows Defender 바이러스 백신](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
+- [Microsoft Defender 바이러스 백신](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [최종 사용자: 실시간 보호를 켜서 회사 리소스에 액세스](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>맬웨어 정의가 만료됨
 
 이 상태는 디바이스의 맬웨어 정의가 14일 이상 만료된 상태임을 보여 줍니다. 예를 들어 디바이스가 인터넷과 연결이 끊겼거나 맬웨어 정의가 만료된 경우 이 메시지가 표시될 수 있습니다.
 
-**가능한 해결 방법**: 맬웨어 정의가 만료된 경우 [Windows Defender 바이러스 백신](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)을 사용하여 정의를 업데이트합니다.
+**가능한 해결 방법**: 맬웨어 정의가 만료된 경우 [Microsoft Defender 바이러스 백신](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)을 사용하여 정의를 업데이트합니다.
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>전체 검색 지연 또는 빠른 검색 지연
 
 전체 검색 또는 빠른 검색이 14일 동안 완료되지 않습니다. 이 시나리오는 전체 검색 중 디바이스를 다시 시작하는 경우에 발생할 수 있습니다.
 
-**가능한 해결 방법**: 검사가 지연되는 경우 일회성 검사를 실행하거나 되풀이 검사를 예약할 수 있습니다. [Windows Defender 바이러스 백신](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)을 참조하세요.
+**가능한 해결 방법**: 검사가 지연되는 경우 일회성 검사를 실행하거나 되풀이 검사를 예약할 수 있습니다. [Microsoft Defender 바이러스 백신](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)을 참조 하세요.
 
 ### <a name="another-endpoint-protection-application-running"></a>다른 엔드포인트 보호 애플리케이션이 실행되고 있음
 

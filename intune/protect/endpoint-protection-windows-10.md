@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune에서 Windows 10 디바이스 보호 설정 - Azure | Microsoft Docs
-description: Windows 10 디바이스에서 엔드포인트 보호 설정을 사용하거나 추가하여 Windows Defender 기능을 사용하도록 설정합니다. 여기에는 Application Guard, 방화벽, SmartScreen, 암호화 및 BitLocker, Exploit Guard, Application Control, Security Center 및 Microsoft Intune의 로컬 디바이스에 대한 보안이 포함됩니다.
+description: Windows 10 디바이스에서 엔드포인트 보호 설정을 사용하거나 추가하여 Microsoft Defender 기능을 사용하도록 설정합니다. 여기에는 Application Guard, 방화벽, SmartScreen, 암호화 및 BitLocker, Exploit Guard, Application Control, Security Center 및 Microsoft Intune의 로컬 디바이스에 대한 보안이 포함됩니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,20 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502274"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058420"
 ---
-# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune을 사용하여 디바이스를 보호하기 위한 Windows 10( 이상) 설정  
+# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune을 사용하여 디바이스를 보호하기 위한 Windows 10( 이상) 설정
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]  
+Microsoft Intune에는 디바이스를 보호할 수 있는 많은 설정이 포함되어 있습니다. 이 문서에서는 Windows 10 이상 디바이스에서 사용하도록 설정하고 구성할 수 있는 모든 설정에 대해 설명합니다. 이러한 설정은 BitLocker 및 Microsoft Defender를 포함한 보안을 제어하기 위해 Intune의 엔드포인트 보호 구성 프로필에 만들어집니다.  
 
-Microsoft Intune에는 디바이스를 보호할 수 있는 많은 설정이 포함되어 있습니다. 이 문서에서는 Windows 10 이상 디바이스에서 사용하도록 설정하고 구성할 수 있는 모든 설정에 대해 설명합니다. 이러한 설정은 BitLocker 및 Windows Defender를 포함한 보안을 제어하기 위해 Intune의 엔드포인트 보호 구성 프로필에 만들어집니다.  
-
-Windows Defender 바이러스 백신을 구성하려면 [Windows 10 디바이스 제한 사항](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)을 참조하세요.  
+Microsoft Defender 바이러스 백신을 구성하려면 [Windows 10 디바이스 차단](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)을 참조하세요.  
 
 ## <a name="before-you-begin"></a>시작하기 전에  
 
@@ -38,9 +36,9 @@ Windows Defender 바이러스 백신을 구성하려면 [Windows 10 디바이스
 
 Csp (구성 서비스 공급자)에 대 한 자세한 내용은 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)를 참조 하세요.  
 
-## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard  
+## <a name="microsoft-defender-application-guard"></a>Microsoft Defender Application Guard  
 
-Microsoft Edge를 사용하는 동안 Windows Defender Application Guard는 조직에서 신뢰하지 않는 사이트로부터 환경을 보호합니다. 사용자가 격리된 네트워크 경계에 나열되지 않은 사이트를 방문하면 해당 사이트가 Hyper-V 가상화된 브라우징 세션에서 열립니다. 신뢰할 수 있는 사이트는 디바이스 구성에 구성되는 네트워크 경계로 정의됩니다.  
+Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 조직에서 신뢰하지 않는 사이트로부터 환경을 보호합니다. 사용자가 격리된 네트워크 경계에 나열되지 않은 사이트를 방문하면 해당 사이트가 Hyper-V 가상화된 브라우징 세션에서 열립니다. 신뢰할 수 있는 사이트는 디바이스 구성에 구성되는 네트워크 경계로 정의됩니다.  
 
 Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 있습니다. 이 프로필을 사용하면 Win32 구성 요소가 설치되어 Application Guard를 활성화할 수 있습니다.  
 
@@ -122,7 +120,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
   - **사용** - 사용자가 가상화된 브라우저에서 호스트 운영 체제로 파일을 다운로드할 수 있습니다.  
   - **구성되지 않음** - 파일을 디바이스에서 로컬로 유지하고, 호스트 파일 시스템에 파일을 다운로드하지 않습니다.  
 
-## <a name="windows-defender-firewall"></a>Windows Defender 방화벽  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender 방화벽  
  
 ### <a name="global-settings"></a>전역 설정  
 
@@ -196,7 +194,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
 
 #### <a name="general-settings"></a>일반 설정  
 
-- **Windows Defender 방화벽**  
+- **Microsoft Defender 방화벽**  
   **기본값**: 구성되지 않음  
   방화벽 CSP: [Enablefirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -224,7 +222,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
   **기본값**: 구성되지 않음  
   방화벽 CSP: [차폐](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **구성되지 않음**  
-    - **차단** -Windows Defender 방화벽을 설정 하 고이 설정을 *차단*으로 설정 하면 다른 정책 설정에 관계 없이 들어오는 모든 트래픽이 차단 됩니다. 
+    - **차단** -Microsoft Defender 방화벽을 설정 하 고이 설정을 *차단*으로 설정 하면 다른 정책 설정에 관계 없이 들어오는 모든 트래픽이 차단 됩니다. 
     - **허용** - *허용*으로 설정 하면이 설정이 해제 되 고 다른 정책 설정에 따라 들어오는 트래픽이 허용 됩니다.
 
 - **멀티캐스트 브로드캐스트에 대한 유니캐스트 응답**  
@@ -264,7 +262,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
 
 #### <a name="rule-merging"></a>규칙 병합  
 
-- **로컬 스토리지의 권한 있는 애플리케이션 Windows Defender 방화벽 규칙**  
+- **로컬 스토리지의 권한 있는 애플리케이션 Microsoft Defender 방화벽 규칙**  
   **기본값**: 구성되지 않음  
   방화벽 CSP: [AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)  
 
@@ -273,7 +271,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
   - **허용** -
    **사용**을 선택하면 방화벽 규칙을 로컬 저장소에 적용하여 해당 규칙이 인식 및 적용됩니다.  
 
-- **로컬 저장소의 글로벌 포트 Windows Defender 방화벽 규칙**  
+- **로컬 저장소의 전역 포트 Microsoft Defender 방화벽 규칙**  
   **기본값**: 구성되지 않음  
   방화벽 CSP: [GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)  
 
@@ -281,7 +279,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
   - **Block** -로컬 저장소의 전역 포트 방화벽 규칙은 무시 되 고 적용 되지 않습니다.  
   - **허용** - 인식 및 적용할 글로벌 포트 방화벽 규칙을 로컬 저장소에 적용합니다.  
 
-- **로컬 저장소의 Windows Defender 방화벽 규칙**  
+- **로컬 저장소의 Microsoft Defender 방화벽 규칙**  
   **기본값**: 구성되지 않음  
   방화벽 CSP: [Allowlocalpolicymerge](https://go.microsoft.com/fwlink/?linkid=872567)  
 
@@ -335,7 +333,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
 
 #### <a name="application-settings"></a>애플리케이션 설정  
 
-- **응용 프로그램**  
+- **애플리케이션**  
   **기본값**: 모두  
 
   앱 또는 프로그램에 대 한 연결을 제어 합니다. 다음 옵션 중 하나를 선택 하 고 추가 구성을 완료 합니다.  
@@ -422,7 +420,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
   이 규칙에 대 한 권한이 있는 로컬 사용자 목록을 지정 합니다. 이 규칙이 Windows 서비스에 적용 되는 경우 권한 있는 사용자 목록을 지정할 수 없습니다.  
 
 
-## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen 설정  
+## <a name="microsoft-defender-smartscreen-settings"></a>Microsoft Defender SmartScreen 설정  
  
 장치에 Microsoft Edge가 설치 되어 있어야 합니다.  
 
@@ -443,8 +441,6 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
 ## <a name="windows-encryption"></a>Windows 암호화  
  
 ### <a name="windows-settings"></a>Windows 설정  
-
-이러한 암호화 설정은 모든 버전의 Windows 10에 적용 됩니다.  
 
 - **디바이스 암호화**  
   **기본값**: 구성되지 않음  
@@ -479,7 +475,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
   *차단*으로 설정 하면 다음 설정을 구성할 수 있습니다.  
 
   - **Azure AD 조인 중에 표준 사용자가 암호화를 활성화하도록 허용**  
-    *이 설정은 Azure Active Directory 조인 된 (Azure ADJ) 장치에만 적용 되며, `Warning for other disk encryption` 이전 설정에 따라 달라 집니다.*  
+    *이 설정은 Azure Active Directory 조인 된 (Azure ADJ) 장치에만 적용 되며, `Warning for other disk encryption`이전 설정에 따라 달라 집니다.*  
     **기본값**: 구성되지 않음  
     BitLocker CSP: [Allowstandarduserencryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
@@ -775,7 +771,7 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
     - **차단** - 다른 조직에서 구성된 디바이스에 대한 쓰기 액세스를 허용합니다.  
     - **구성 되지 않음** -쓰기 액세스를 거부 합니다.  
  
-## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
+## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender Exploit Guard  
 
 [악용 방지](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) 를 사용 하 여 직원이 사용 하는 앱의 공격 노출 영역을 관리 하 고 줄일 수 있습니다.  
 
@@ -825,7 +821,7 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
 - **자식 프로세스를 실행하는 Office 앱**  
   **기본값**: 구성되지 않음  
-  규칙: [모든 Office 응용 프로그램에서 자식 프로세스를 만들지 못하도록 차단](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
+  규칙: [모든 Office 애플리케이션에서 하위 프로세스 생성 차단](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **구성되지 않음**  
   - **블록** -Office 앱이 자식 프로세스를 시작 하지 못하도록 차단 합니다.  
@@ -971,21 +967,20 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
 
   이 설정은 인터넷의 피싱 사기, 익스플로잇 호스팅 사이트 및 악성 콘텐츠에 대 한 액세스 권한이 있는 앱에서 최종 사용자를 보호 하는 데 목적이 있습니다. 또한 타사 브라우저에서 위험한 사이트에 연결할 수 없습니다.  
 
-  - **구성되지 않음** - 이 기능이 사용되지 않습니다. 사용자와 앱이 위험한 도메인에 연결 하는 것을 차단 하지 않습니다. 관리자는 Windows Defender Security Center에서 이 작업을 확인할 수 없습니다.  
-  - **사용** -네트워크 보호를 켜고 사용자 및 앱이 위험한 도메인에 연결 하지 못하도록 합니다. 관리자는 Windows Defender Security Center에서 이 작업을 확인할 수 있습니다.  
-  - **감사만**:-사용자와 앱이 위험한 도메인에 연결 하지 못하도록 차단 되지 않습니다. 관리자는 Windows Defender Security Center에서 이 작업을 확인할 수 있습니다.  
+  - **구성되지 않음** - 이 기능이 사용되지 않습니다. 사용자와 앱이 위험한 도메인에 연결 하는 것을 차단 하지 않습니다. 관리자는 Microsoft Defender 보안 센터에서 이 작업을 확인할 수 없습니다.  
+  - **사용** -네트워크 보호를 켜고 사용자 및 앱이 위험한 도메인에 연결 하지 못하도록 합니다. 관리자는 Microsoft Defender 보안 센터에서 이 작업을 확인할 수 있습니다.  
+  - **감사만**:-사용자와 앱이 위험한 도메인에 연결 하지 못하도록 차단 되지 않습니다. 관리자는 Microsoft Defender 보안 센터에서 이 작업을 확인할 수 있습니다.  
 
 ### <a name="exploit-protection"></a>악용 방지  
- 
 
 - **XML 업로드**  
   **기본값**: *구성되지 않음*  
 
-  악용 방지를 사용 하 여 [장치를 악용 하지 못하도록 보호](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)하려면 원하는 시스템 및 응용 프로그램 완화 설정이 포함 된 XML 파일을 만듭니다. XML 파일을 만드는 방법에는 다음 두 가지가 있습니다.  
+  악용 방지를 사용 하 여 [장치를 악용 하지 못하도록 보호](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)하려면 원하는 시스템 및 응용 프로그램 완화 설정이 포함 된 XML 파일을 만듭니다. XML 파일을 만드는 방법에는 다음 두 가지가 있습니다.  
 
   - *PowerShell* - *Get-ProcessMitigation*, *Set-ProcessMitigation* 및 *ConvertTo-ProcessMitigationPolicy* PowerShell cmdlet 중 하나 이상을 사용합니다. cmdlet은 완화 설정을 구성하고 이들의 XML 표현을 내보냅니다.  
 
-  - *Windows Defender 보안 센터 UI* - Windows Defender 보안 센터에서 앱 및 브라우저 컨트롤을 클릭한 다음, 결과 화면의 아래쪽으로 스크롤하여 Exploit Protection을 찾습니다. 먼저 시스템 설정 및 프로그램 설정 탭을 사용하여 완화 설정을 구성합니다. 그런 다음 화면 아래쪽의 설정 내보내기 링크를 찾아서 해당 XML 표현을 내보냅니다.  
+  - *Microsoft Defender 보안 센터 UI* - Microsoft Defender 보안 센터에서 앱 및 브라우저 컨트롤을 클릭한 다음, 결과 화면의 아래쪽으로 스크롤하여 Exploit Protection을 찾습니다. 먼저 시스템 설정 및 프로그램 설정 탭을 사용하여 완화 설정을 구성합니다. 그런 다음 화면 아래쪽의 설정 내보내기 링크를 찾아서 해당 XML 표현을 내보냅니다.  
 
 - **악용 방지 인터페이스의 사용자 편집**  
   **기본값**: 구성되지 않음  
@@ -995,9 +990,9 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
   - **블록** -메모리, 제어 흐름 및 정책 제한을 구성할 수 있는 XML 파일을 업로드 합니다. XML 파일의 설정을 사용하여 애플리케이션의 악용을 방지할 수 있습니다.  
   - **구성 되지 않음** -사용자 지정 구성을 사용 하지 않습니다.  
 
-## <a name="windows-defender-application-control"></a>Windows Defender 애플리케이션 제어  
+## <a name="microsoft-defender-application-control"></a>Microsoft Defender 애플리케이션 제어  
 
-에서 감사 해야 하거나 Windows Defender 응용 프로그램 제어에서 실행할 수 있도록 신뢰할 수 있는 추가 앱을 선택 합니다. Windows 구성 요소 및 모든 Windows 저장소 앱의 실행은 자동으로 신뢰할 수 있습니다.  
+에서 감사 해야 하거나 Microsoft Defender 응용 프로그램 제어에서 실행할 수 있도록 신뢰할 수 있는 추가 앱을 선택 합니다. Windows 구성 요소 및 모든 Windows 저장소 앱의 실행은 자동으로 신뢰할 수 있습니다.  
 
 
 - **응용 프로그램 제어 코드 무결성 정책**  
@@ -1012,9 +1007,9 @@ Office 앱에서 다음 작업을 수행하지 못하도록 차단합니다.
  
   - **감사 전용** -응용 프로그램이 차단 되지 않습니다. 모든 이벤트는 로컬 클라이언트의 로그에 기록 됩니다.  
 
-## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard  
+## <a name="microsoft-defender-credential-guard"></a>Microsoft Defender Credential Guard  
 
-Windows Defender Credential Guard는 자격 증명 도난 공격을 방어합니다. 권한 있는 시스템 소프트웨어만 액세스할 수 있도록 비밀을 격리합니다.  
+Microsoft Defender Credential Guard는 자격 증명 도난 공격을 방어합니다. 권한 있는 시스템 소프트웨어만 액세스할 수 있도록 비밀을 격리합니다.  
 
 - **Credential Guard**  
   **기본값**: 사용 안 함  
@@ -1036,19 +1031,19 @@ Windows Defender Credential Guard는 자격 증명 도난 공격을 방어합니
   - **보안 부팅 및 직접 메모리 액세스**  
     VBS가 보안 부팅 및 DMA(직접 메모리 액세스) 보호를 통해 켜집니다. DMA 보호는 하드웨어 지원이 필요하며 올바르게 구성된 디바이스에서만 작동합니다.  
 
-## <a name="windows-defender-security-center"></a>Windows Defender 보안 센터  
+## <a name="microsoft-defender-security-center"></a>Microsoft Defender 보안 센터  
 
-Windows Defender 보안 센터는 각각의 개별 기능에서 별도의 응용 프로그램 또는 프로세스로 작동합니다. 또한 알림 센터를 통해 알림을 표시합니다. 수집기 또는 단일 위치로 작동하여 상태를 확인하고 각 기능에 대한 일부 구성을 실행합니다. [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) 문서에서 자세한 내용을 알아보세요.  
+Microsoft Defender 보안 센터는 각각의 개별 기능에서 별도의 응용 프로그램 또는 프로세스로 작동합니다. 또한 알림 센터를 통해 알림을 표시합니다. 수집기 또는 단일 위치로 작동하여 상태를 확인하고 각 기능에 대한 일부 구성을 실행합니다. [Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) 문서에서 자세히 알아보세요.  
 
-### <a name="windows-defender-security-center-app-and-notifications"></a>Windows Defender 보안 센터 앱 및 알림  
+### <a name="microsoft-defender-security-center-app-and-notifications"></a>Microsoft Defender 보안 센터 앱 및 알림  
 
-Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용자 액세스를 차단합니다. 또한 섹션을 숨기면 관련 알림도 차단됩니다.  
+Microsoft Defender 보안 센터 앱의 다양한 영역에 대한 최종 사용자 액세스를 차단합니다. 또한 섹션을 숨기면 관련 알림도 차단됩니다.  
 
 - **바이러스 및 위협 방지**  
   **기본값**: 구성되지 않음  
   WindowsDefenderSecurityCenter CSP: [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  최종 사용자가 Windows Defender Security Center에서 바이러스 및 위협 방지 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 바이러스 및 위협 방지와 관련 된 모든 알림도 차단 됩니다.  
+  최종 사용자가 Microsoft Defender Security Center에서 바이러스 및 위협 방지 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 바이러스 및 위협 방지와 관련 된 모든 알림도 차단 됩니다.  
 
   - **구성되지 않음**  
   - **숨기기**  
@@ -1057,7 +1052,7 @@ Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용
   **기본값**: 구성되지 않음  
   WindowsDefenderSecurityCenter CSP: [HideRansomwareDataRecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  최종 사용자가 Windows Defender Security Center에서 랜 섬 웨어 보호 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 랜 섬 웨어 보호와 관련 된 모든 알림도 차단 됩니다.  
+  최종 사용자가 Microsoft Defender Security Center에서 랜 섬 웨어 보호 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 랜 섬 웨어 보호와 관련 된 모든 알림도 차단 됩니다.  
 
   - **구성되지 않음**  
   - **숨기기**  
@@ -1066,7 +1061,7 @@ Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용
   **기본값**: 구성되지 않음  
   WindowsDefenderSecurityCenter CSP: [DisableAccountProtectionUI](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  최종 사용자가 Windows Defender Security Center의 계정 보호 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 계정 보호와 관련 된 모든 알림도 차단 됩니다.  
+  최종 사용자가 Microsoft Defender Security Center의 계정 보호 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 계정 보호와 관련 된 모든 알림도 차단 됩니다.  
 
   - **구성되지 않음**  
   - **숨기기**  
@@ -1075,7 +1070,7 @@ Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용
   **기본값**: 구성되지 않음  
   WindowsDefenderSecurityCenter CSP: [DisableNetworkUI](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  최종 사용자가 Windows Defender 보안 센터에서 방화벽 및 네트워크 보호 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 방화벽 및 네트워크 보호와 관련 된 모든 알림도 차단 됩니다.  
+  최종 사용자가 Microsoft Defender 보안 센터에서 방화벽 및 네트워크 보호 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 방화벽 및 네트워크 보호와 관련 된 모든 알림도 차단 됩니다.  
 
   - **구성되지 않음**  
   - **숨기기**  
@@ -1084,7 +1079,7 @@ Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용
   **기본값**: 구성되지 않음  
   WindowsDefenderSecurityCenter CSP: [Disableappbrowserui](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  최종 사용자가 Windows Defender 보안 센터에서 앱 및 브라우저 컨트롤 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 앱 및 브라우저 컨트롤과 관련 된 모든 알림도 차단 됩니다.  
+  최종 사용자가 Microsoft Defender 보안 센터에서 앱 및 브라우저 제어 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 앱 및 브라우저 컨트롤과 관련 된 모든 알림도 차단 됩니다.  
 
   - **구성되지 않음**  
   - **숨기기**  
@@ -1093,7 +1088,7 @@ Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용
   **기본값**: 구성되지 않음  
   WindowsDefenderSecurityCenter CSP: [DisableDeviceSecurityUI](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  최종 사용자가 Windows Defender Security Center의 하드웨어 보호 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 하드웨어 보호와 관련 된 모든 알림도 차단 됩니다.  
+  최종 사용자가 Microsoft Defender Security Center의 하드웨어 보호 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 하드웨어 보호와 관련 된 모든 알림도 차단 됩니다.  
 
   - **구성되지 않음**  
   - **숨기기**  
@@ -1102,7 +1097,7 @@ Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용
   **기본값**: 구성되지 않음  
   WindowsDefenderSecurityCenter CSP: [DisableHealthUI](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  최종 사용자가 Windows Defender 보안 센터에서 장치 성능 및 상태 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 장치 성능 및 상태와 관련 된 모든 알림도 차단 됩니다.  
+  최종 사용자가 Microsoft Defender 보안 센터에서 장치 성능 및 상태 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 장치 성능 및 상태와 관련 된 모든 알림도 차단 됩니다.  
   
   - **구성되지 않음**  
   - **숨기기**  
@@ -1111,7 +1106,7 @@ Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용
   **기본값**: 구성되지 않음  
   WindowsDefenderSecurityCenter CSP: [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  최종 사용자가 Windows Defender 보안 센터에서 제품군 옵션 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 제품군 옵션과 관련 된 모든 알림도 차단 됩니다.  
+  최종 사용자가 Microsoft Defender 보안 센터에서 제품군 옵션 영역을 볼 수 있는지 여부를 구성 합니다. 이 섹션을 숨기면 제품군 옵션과 관련 된 모든 알림도 차단 됩니다.  
   
   - **구성되지 않음**  
   - **숨기기**  
@@ -1120,7 +1115,7 @@ Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용
   **기본값**: 구성되지 않음  
   WindowsDefenderSecurityCenter CSP: [DisableNotifications](https://go.microsoft.com/fwlink/?linkid=873675)  
 
-  최종 사용자에게 표시할 알림을 선택합니다. 중요하지 않은 알림에는 검색 완료 시 알림을 포함한 Windows Defender 바이러스 백신 활동의 요약이 포함됩니다. 다른 모든 알림은 중요 알림으로 간주합니다.  
+  최종 사용자에게 표시할 알림을 선택합니다. 중요하지 않은 알림에는 검색 완료 시 알림을 포함한 Microsoft Defender 바이러스 백신 활동의 요약이 포함됩니다. 다른 모든 알림은 중요 알림으로 간주합니다.  
 
   - **구성되지 않음**  
   - **중요 하지 않은 알림 차단**  
@@ -1160,7 +1155,7 @@ Windows Defender Security Center 앱의 다양한 영역에 대한 최종 사용
 
 ### <a name="it-contact-information"></a>IT 연락처 정보  
 
-Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 정보를 제공합니다.  
+Microsoft Defender 보안 센터 앱 및 앱 알림에 표시할 IT 연락처 정보를 제공합니다.  
 
 **앱 및 알림에 표시**, **앱에만 표시**, **알림에만 표시** 또는 **표시 안 함**을 선택할 수 있습니다. **IT 조직 이름**과 다음 연락처 옵션 중 하나 이상을 입력합니다.  
 
@@ -1639,6 +1634,240 @@ Windows Defender Security Center 앱 및 앱 알림에 표시할 IT 연락처 �
   - **수동**
   - **자동**
   - **사용 안 함**
+
+## <a name="user-rights"></a>사용자 권한
+
+- **신뢰할 수 있는 호출자로 액세스 자격 증명 관리자**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
+
+  이 사용자 권한은 백업 및 복원 작업 중에 자격 증명 관리자에서 사용 됩니다. 이 권한이 다른 엔터티에 부여 되 면 사용자가 저장 한 자격 증명이 손상 될 수 있습니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **로컬 로그온 허용**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/AllowLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
+
+  이 사용자 권한은 컴퓨터에 로그온 할 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **네트워크에서 액세스 허용**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/AccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
+
+  이 사용자 권한은 네트워크를 통해 컴퓨터에 연결할 수 있는 사용자 및 그룹을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **운영 체제의 일부로 작동**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
+
+  운영 체제의 일부로 작동
+  - **구성되지 않음**
+  - **허용**  
+
+- **파일 및 디렉터리 백업**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/BackupFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
+
+  이 사용자 권한은 파일 및 디렉터리를 백업할 때 파일, 디렉터리, 레지스트리 및 기타 영구 개체 사용 권한을 무시할 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **시스템 시간 변경**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/ChangeSystemTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
+
+  이 사용자 권한은 컴퓨터의 내부 클록에서 시간 및 날짜를 변경할 수 있는 사용자 및 그룹을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **전역 개체 만들기**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/CreateGlobalObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
+
+  이 보안 설정은 사용자가 모든 세션에서 사용할 수 있는 전역 개체를 만들 수 있는지 여부를 결정 합니다. 전역 개체를 만들 수 있는 사용자는 다른 사용자의 세션에서 실행 되는 프로세스에 영향을 줄 수 있으므로 응용 프로그램 오류나 데이터 손상을 초래할 수 있습니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **페이지 파일 만들기**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/CreatePageFile](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
+
+  이 사용자 권한은 내부 API를 호출 하 여 페이지 파일의 크기를 만들고 변경할 수 있는 사용자 및 그룹을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **영구 공유 개체 만들기**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/CreatePermanentSharedObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
+
+  이 사용자 권한은 프로세스에서 개체 관리자를 사용 하 여 디렉터리 개체를 만드는 데 사용할 수 있는 계정을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **기호 링크 만들기**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/CreateSymbolicLinks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
+
+  이 사용자 권한은 사용자가 로그온 한 컴퓨터에서 바로 가기 링크를 만들 수 있는지 여부를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **토큰 만들기**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/메서드인 appserviceloginhandler.createtoken](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
+
+  이 사용자 권한은 프로세스에서 내부 API를 사용 하 여 액세스 토큰을 만들 때 모든 로컬 리소스에 대 한 액세스 권한을 얻는 데 사용할 수 있는 토큰을 만드는 프로세스에서 사용할 수 있는 사용자/그룹을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **프로그램 디버그**  
+  **기본값**: 구성되지 않음  
+    CSP: [Userrights/DebugPrograms](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
+
+  이 사용자 권한은 디버거를 프로세스나 커널에 연결할 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **네트워크에서 액세스 거부**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/DenyAccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
+
+  이 사용자 권한은 네트워크를 통해 컴퓨터에 액세스할 수 없는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **서비스로 로그온 거부**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/DenyLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
+
+  이 보안 설정은 프로세스를 서비스로 등록할 수 없도록 하는 서비스 계정을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **원격 데스크톱 서비스를 통한 로그온 거부**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
+
+  이 사용자 권한은 원격 데스크톱 서비스 클라이언트로 로그온 할 수 없는 사용자 및 그룹을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **위임 사용**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/EnableDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
+
+ 이 사용자 권한은 사용자 또는 컴퓨터 개체에서 위임용으로 트러스트 된 사용자를 설정할 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **보안 감사 생성**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/GenerateSecurityAudits](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
+
+  이 사용자 권한은 프로세스에서 보안 로그에 항목을 추가 하는 데 사용할 수 있는 계정을 결정 합니다. 보안 로그는 권한이 없는 시스템 액세스를 추적 하는 데 사용 됩니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **클라이언트 가장**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/ImpersonateClient](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
+
+  사용자에 게이 사용자 권한을 할당 하면 해당 사용자 대신 실행 되는 프로그램에서 클라이언트를 가장할 수 있습니다. 이러한 종류의 가장에 대해이 사용자 권한을 요구 하면 권한이 없는 사용자가 클라이언트를 속여 사용자가 만든 서비스에 연결 하 여 해당 클라이언트를 가장 하는 것을 방지할 수 있습니다. 이렇게 하면 권한이 없는 사용자의 권한을 상승 시킬 수 있습니다. 관리 또는 시스템 수준
+  - **구성되지 않음**
+  - **허용**
+
+- **예약 우선 순위 증가**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/IncreaseSchedulingPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
+
+  이 사용자 권한은 다른 프로세스에 할당 된 실행 우선 순위를 높이기 위해 다른 프로세스에 대 한 쓰기 속성 액세스 권한이 있는 프로세스를 사용할 수 있는 계정을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **디바이스 드라이버 로드 및 언로드**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
+
+  이 사용자 권한은에서 커널 모드로 장치 드라이버 또는 기타 코드를 동적으로 로드 하 고 언로드할 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **메모리의 페이지 잠금**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/LockMemory](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
+
+  이 사용자 권한 데이터를 실제 메모리에 유지하는 프로세스를 사용하여 시스템이 디스크의 가상 메모리로 데이터를 페이징하지 않도록 방지할 수 있는 계정을 결정합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **감사 및 보안 로그 관리**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
+
+  이 사용자 권한은 파일, Active Directory 개체 및 레지스트리 키와 같은 개별 리소스에 대 한 개체 액세스 감사 옵션을 지정할 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **볼륨 유지 관리 작업 수행**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/ManageVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
+
+  이 사용자 권한은 볼륨에서 유지 관리 작업을 실행할 수 있는 사용자 및 그룹 (예: 원격 조각 모음)을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **펌웨어 환경 값 수정**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/ModifyFirmwareEnvironment](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
+
+  이 사용자 권한은 펌웨어 환경 값을 수정할 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **개체 레이블 수정**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/ModifyObjectLabel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
+
+  이 사용자 권한은 파일, 레지스트리 키 또는 다른 사용자가 소유한 프로세스와 같은 개체의 무결성 레이블을 수정할 수 있는 사용자 계정을 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **단일 프로세스 프로파일링**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/프로필 Ingleprocess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
+
+  이 사용자 권한은 성능 모니터링 도구를 사용 하 여 시스템 프로세스의 성능을 모니터링할 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+
+- **원격 종료**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/RemoteShutdown](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
+
+  이 사용자 권한은 네트워크의 원격 위치에서 컴퓨터를 종료할 수 있는 사용자를 결정 합니다. 이 사용자 권한을 잘못 사용 하면 서비스 거부가 발생할 수 있습니다.
+  - **구성되지 않음**
+  - **허용**
+  
+- **파일 및 디렉터리 복원**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/RestoreFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
+  
+  이 사용자 권한은 백업 된 파일 및 디렉터리를 복원할 때 파일, 디렉터리, 레지스트리 및 기타 영구 개체 권한을 무시할 수 있는 사용자를 결정 하 고 유효한 보안 주체를 개체의 소유자로 설정할 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
+  
+- **파일 또는 개체의 소유권 가져오기**  
+  **기본값**: 구성되지 않음  
+  CSP: [Userrights/TakeOwnership](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
+
+  이 사용자 권한은 Active Directory 개체, 파일 및 폴더, 프린터, 레지스트리 키, 프로세스 및 스레드를 포함 하 여 시스템에서 보안 개체의 소유권을 가져올 수 있는 사용자를 결정 합니다.
+  - **구성되지 않음**
+  - **허용**
 
 ## <a name="next-steps"></a>다음 단계
 

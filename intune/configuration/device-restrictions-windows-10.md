@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure에서 Windows 10을 위한 디바이스 제한 설정 | Microsoft Docs
-description: Windows 10 이상 디바이스의 디바이스 제한 사항을 만들기 위한 모든 설정 및 관련 설명 목록을 확인합니다. 구성 프로필에 있는 이러한 설정을 사용하여 스크린샷, 암호 요구 사항, 키오스크 설정, 스토어의 앱, Microsoft Edge 브라우저, Windows defender, 클라우드 액세스, 시작 메뉴 및 Microsoft Intune의 기타 기능을 제어합니다.
+description: Windows 10 이상 디바이스의 디바이스 제한 사항을 만들기 위한 모든 설정 및 관련 설명 목록을 확인합니다. 구성 프로필에 있는 이러한 설정을 사용하여 스크린샷, 암호 요구 사항, 키오스크 설정, 스토어의 앱, Microsoft Edge 브라우저, Microsoft Defender, 클라우드 액세스, 시작 메뉴 및 Microsoft Intune의 기타 기능을 제어합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755270"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059488"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -523,7 +523,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
 - **사용량 현황 데이터 공유**: 전송되는 진단 데이터 수준을 선택합니다. 옵션은 다음과 같습니다.
   - **구성되지 않음**: 데이터가 공유되지 않습니다.
-  - **보안**: 연결된 사용자 환경 및 원격 분석 구성 요소 설정, 악성 소프트웨어 제거 도구 및 Windows Defender에 대한 데이터를 포함하여 Windows 보안을 더욱 강화하는 데 필요한 정보입니다.
+  - **보안**: 연결된 사용자 환경 및 원격 분석 구성 요소 설정, 악성 소프트웨어 제거 도구 및 Microsoft Defender에 대한 데이터를 포함하여 Windows 보안을 더욱 강화하는 데 필요한 정보입니다.
   - **기본**: 품질 관련 데이터, 앱 호환성, 앱 사용량 데이터 및 보안 수준 데이터를 포함한 기본 디바이스 정보입니다.
   - **고급**: Windows, Windows Server, System Center 및 앱을 사용하는 방법, 성능, 고급 안정성 데이터 및 기본 및 보안 수준 모두의 데이터를 포함한 추가 인사이트입니다.
   - **전체**: 보안, 기본 및 고급 수준의 데이터를 포함하여 문제를 식별하고 해결하는 데 필요한 모든 데이터입니다.
@@ -632,19 +632,19 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **숨기기**: 바로 가기를 숨기고 설정 앱에서 설정을 사용하지 않도록 설정합니다.
   - **표시**: 바로 가기를 표시하고 설정 앱에서 설정을 사용하지 않도록 설정합니다.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 스마트 화면
 
-- **Microsoft Edge용 SmartScreen**: **필요**는 Windows Defender SmartScreen을 해제하고, 사용자가 이를 설정하지 못하도록 차단합니다. **구성되지 않음**(기본값)은 SmartScreen을 설정합니다. 사용자를 잠재적인 위협으로부터 보호하고 사용자가 이를 해제하지 못하도록 차단합니다.
+- **Microsoft Edge용 SmartScreen**: **필요**는 Microsoft Defender SmartScreen을 해제하고, 사용자가 이를 설정하지 못하도록 차단합니다. **구성되지 않음**(기본값)은 SmartScreen을 설정합니다. 사용자를 잠재적인 위협으로부터 보호하고 사용자가 이를 해제하지 못하도록 차단합니다.
 
-  Microsoft Edge는 Windows Defender SmartScreen(설정됨)을 사용하여 잠재적 피싱 사기 및 악성 소프트웨어로부터 사용자를 보호합니다.
+  Microsoft Edge에서는 Microsoft Defender SmartScreen(설정됨)을 사용하여 잠재적 피싱 사기 및 악성 소프트웨어로부터 사용자를 보호합니다.
 
   [Browser/AllowSmartScreen CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 
-- **악성 사이트 액세스**: **차단**은 사용자가 Windows Defender SmartScreen 필터 경고를 무시하지 못하도록 차단하고, 사이트로도 이동하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 사용자가 경고를 무시하고 사이트를 계속 사용할 수 있습니다.
+- **악성 사이트 액세스**: **차단**은 사용자가 Microsoft Defender SmartScreen 필터 경고를 무시하지 못하도록 차단하고, 사이트로도 이동하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 사용자가 경고를 무시하고 사이트를 계속 사용할 수 있습니다.
 
   [Browser/PreventSmartScreenPromptOverride CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 
-- **확인되지 않은 파일 다운로드**: **차단**은 사용자가 Windows Defender SmartScreen 필터 경고를 무시하지 못하도록, 확인되지 않은 파일도 다운로드하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 사용자가 경고를 무시하고 확인되지 않은 파일을 계속 다운로드할 수 있습니다.
+- **확인되지 않은 파일 다운로드**: **차단**은 사용자가 Microsoft Defender SmartScreen 필터 경고를 무시하지 못하도록, 확인되지 않은 파일도 다운로드하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 사용자가 경고를 무시하고 확인되지 않은 파일을 계속 다운로드할 수 있습니다.
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
@@ -833,9 +833,9 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **사용자 동의 없이 설치된 애플리케이션 검색**: Windows에서 사용자 동의 없이 설치된 애플리케이션을 검색하는 경우의 보호 수준을 선택합니다. 옵션은 다음과 같습니다.
-  - **구성되지 않음**(기본값): Windows Defender의 사용자 동의 없이 설치된 애플리케이션 보호를 사용하지 않도록 설정합니다.
-  - **차단**: Windows Defender에서 사용자 동의 없이 설치된 애플리케이션을 검색하고 검색된 항목을 차단합니다. 이러한 항목은 다른 위협과 함께 기록에 표시됩니다.
-  - **감사**: Windows Defender에서 사용자 동의 없이 설치된 애플리케이션을 검색하지만 아무런 조치도 수행하지 않습니다. Windows Defender에서 조치를 취할 애플리케이션에 대한 정보를 검토할 수 있습니다. 예를 들어 Windows Defender에서 만든 이벤트를 이벤트 뷰어에서 검색합니다.
+  - **구성되지 않음**(기본값): Microsoft Defender의 사용자 동의 없이 설치된 애플리케이션 보호를 사용하지 않도록 설정합니다.
+  - **차단**: Microsoft Defender에서 사용자 동의 없이 설치된 애플리케이션을 검색하고 검색된 항목을 차단합니다. 이러한 항목은 다른 위협과 함께 기록에 표시됩니다.
+  - **감사**: Microsoft Defender에서 사용자 동의 없이 설치된 애플리케이션을 검색하지만 아무런 조치도 수행하지 않습니다. Microsoft Defender에서 조치를 취할 애플리케이션에 대한 정보를 검토할 수 있습니다. 예를 들어 Microsoft Defender에서 만든 이벤트를 이벤트 뷰어에서 검색합니다.
 
   사용자 동의 없이 설치된 앱에 대한 자세한 내용은 [사용자 동의 없이 설치된 애플리케이션 검색 및 차단](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)을 참조하세요.
 
@@ -850,11 +850,11 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **사용자 정의**
   - **차단**
 
-  작업을 수행할 수 없는 경우, Windows Defender는 위협 요소를 재구성 하는 데 가장 적합 한 옵션을 선택 합니다. 
+  작업을 수행할 수 없는 경우 Microsoft Defender는 위협 요소를 재구성 하는 데 가장 적합 한 옵션을 선택 합니다. 
 
   [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender 바이러스 백신 제외
+### <a name="microsoft-defender-antivirus-exclusions"></a>Microsoft Defender 바이러스 백신 제외
 
 - **검색 및 실시간 보호에서 제외할 파일 및 폴더**: 제외 목록에 **C:\Path** 또는 **%ProgramFiles%\Path\filename.exe** 같은 파일과 폴더를 하나 이상 추가합니다. 이러한 파일과 폴더는 실시간 또는 예약된 검색에 포함되지 않습니다.
 - **검색 및 실시간 보호에서 제외할 파일 확장명**: 제외 목록에 **jpg** 또는 **txt**와 같은 하나 이상의 파일 확장명을 추가합니다. 이러한 확장명의 파일은 실시간 또는 예약된 검색에 포함되지 않습니다.

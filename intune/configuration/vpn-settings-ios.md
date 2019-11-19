@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593781"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059810"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 디바이스에 대한 VPN 설정 추가
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설정이 포함됩니다. 조직의 네트워크에 VPN 연결을 만들고 구성하는 데 이러한 설정이 사용됩니다. 이 문서에서는 이러한 설정을 설명합니다. 일부 설정은 Citrix, Zscaler 등과 같은 일부 VPN 클라이언트에 대해서만 지원됩니다.
 
@@ -73,7 +71,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
     > [!NOTE]
     > 사용자 이름과 암호를 Cisco IPsec VPN에 대한 인증 방법으로 사용하는 경우 사용자 지정 Apple Configurator 프로필을 통해 SharedSecret을 전달해야 합니다.
 
-  - **파생 된 자격 증명**: 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 그렇게 하 라는 메시지를 표시 합니다.
+  - **파생 된 자격 증명**: 사용자의 스마트 카드에서 파생 된 인증서를 사용 합니다. 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 해당 발급자를 추가 하 라는 메시지를 표시 합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조 하세요.
 
 - **제외된 URL**(Zscaler에만 해당): Zscaler VPN에 연결되면 Zscaler 클라우드 외부에서 나열된 URL에 액세스할 수 있습니다. 
 
@@ -102,7 +100,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
   - NAC를 사용하도록 설정하는 경우 VPN의 연결이 24시간마다 끊어졌습니다. VPN을 즉시 다시 연결할 수 있습니다.
   - 디바이스 ID는 프로필의 일부이지만 Intune에는 표시되지 않습니다. 이 ID는 Microsoft에서 저장되거나 공유되지 않습니다.
 
-  디바이스 ID가 VPN 파트너에 의해 지원되면 Citrix SSO와 같은 VPN 클라이언트가 ID를 가져올 수 있습니다. 그런 다음, Intune을 쿼리하여 디바이스가 등록되었는지 확인하고 VPN 프로필이 정책을 준수하는지 여부를 확인합니다.
+  장치 ID를 지 원하는 VPN 파트너의 경우 Citrix SSO와 같은 VPN 클라이언트에서 ID를 가져올 수 있습니다. 그런 다음, Intune을 쿼리하여 디바이스가 등록되었는지 확인하고 VPN 프로필이 정책을 준수하는지 여부를 확인합니다.
 
   - 이 설정을 제거하려면 프로필을 다시 만들고 **동의함**을 선택하지 않습니다. 그런 다음, 프로필을 다시 할당합니다.
 
@@ -138,8 +136,8 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
   - **보통** (기본값): 10 분 마다 keepalive 메시지를 보냅니다.
   - **High**: 60 초 마다 keepalive 메시지를 보냅니다.
 
-- **Tls 버전 범위 최소**: 사용할 최소 TLS 버전을 입력 합니다. `1.0`, `1.1` 또는 `1.2`를 입력 합니다. 이 값을 비워 두면 `1.0`의 기본값이 사용 됩니다.
-- **Tls 버전 범위 최대**: 사용할 최대 tls 버전을 입력 합니다. `1.0`, `1.1` 또는 `1.2`를 입력 합니다. 이 값을 비워 두면 `1.2`의 기본값이 사용 됩니다.
+- **Tls 버전 범위 최소**: 사용할 최소 TLS 버전을 입력 합니다. `1.0`, `1.1`또는 `1.2`를 입력 합니다. 이 값을 비워 두면 `1.0`의 기본값이 사용 됩니다.
+- **Tls 버전 범위 최대**: 사용할 최대 tls 버전을 입력 합니다. `1.0`, `1.1`또는 `1.2`를 입력 합니다. 이 값을 비워 두면 `1.2`의 기본값이 사용 됩니다.
 - **완벽 한 전달 보안**: **사용** 을 선택 하 여 PFS (완벽 한 전달 보안)를 설정 합니다. PFS는 세션 키가 손상 된 경우의 영향을 줄이는 IP 보안 기능입니다. **Disable** (기본값)은 PFS를 사용 하지 않습니다.
 - **인증서 해지 확인**: **사용** 을 선택 하 여 VPN 연결이 성공 하도록 허용 하기 전에 인증서가 해지 되지 않았는지 확인 합니다. 이 확인은 가장 좋은 방법입니다. 인증서가 해지 되었는지 여부를 확인 하기 전에 VPN 서버가 시간 초과 되 면 액세스 권한이 부여 됩니다. **사용 안 함** (기본값)은 해지 된 인증서를 확인 하지 않습니다.
 
@@ -189,7 +187,10 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 - **주문형 VPN**: VPN 연결이 시작되는 시기를 제어하는 조건부 규칙을 구성합니다. 예를 들어 디바이스가 회사 Wi-Fi 네트워크에 연결되지 않은 경우에만 VPN 연결이 사용되는 조건을 만듭니다. 또는 조건을 만듭니다. 예를 들어 사용자가 입력한 DNS 검색 도메인에 디바이스가 액세스할 수 없는 경우 VPN 연결이 시작되지 않습니다.
 
   - **SSID 또는 DNS 검색 도메인**: 이 조건에서 무선 네트워크 **SSID** 또는 **DNS 검색 도메인**을 사용할지를 선택합니다. 하나 이상의 SSID 또는 검색 도메인을 구성하려면 **추가**를 선택합니다.
-  - **URL 문자열 프로브:** : 선택 사항입니다. 규칙이 테스트로 사용하는 URL을 입력합니다. 이 프로필을 포함한 디바이스에서 리디렉션 없이 이 URL에 액세스하는 경우 VPN 연결이 시작됩니다. 또한 디바이스가 대상 URL에 연결됩니다. 사용자에게 URL 문자열 프로브 사이트가 표시되지 않습니다. URL 문자열 프로브 예제는 VPN을 연결하기 전에 디바이스 준수를 확인하는 감사 웹 서버의 주소입니다. 또는 VPN을 통해 디바이스를 대상 URL에 연결하기 전에 URL에서 VPN이 사이트에 연결할 수 있는지 테스트할 수도 있습니다.
+  - **URL 문자열 프로브:** : 선택 사항입니다. 규칙이 테스트로 사용하는 URL을 입력합니다. 디바이스에서 리디렉션 없이 이 URL에 액세스하는 경우 VPN 연결이 시작됩니다. 또한 디바이스가 대상 URL에 연결됩니다. 사용자에게 URL 문자열 프로브 사이트가 표시되지 않습니다.
+
+    예를 들어 URL 문자열 프로브는 VPN을 연결하기 전에 디바이스 준수를 확인하는 감사 웹 서버 URL입니다. 또는 VPN을 통해 대상 URL에 장치를 연결 하기 전에 URL에서 VPN의 기능을 테스트 하 여 사이트에 연결 합니다.
+.
   - **도메인 작업**: 다음 항목 중 하나를 선택합니다.
     - 필요한 경우 연결
     - 연결 안 함

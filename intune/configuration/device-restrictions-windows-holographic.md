@@ -1,11 +1,11 @@
 ---
 title: Windows Holographic Business 디바이스 설정 - Microsoft Intune - Azure | Microsoft Docs
-description: 등록 취소, 지리적 위치, 암호, 앱 스토어에서 앱 설치, Microsoft Edge에서 쿠키 및 팝업, Windows Defender, 검색, 클라우드 및 스토리지, Bluetooth 연결, 시스템 시간 및 Azure에서 사용량 데이터를 포함하여 Windows Holographic for Business에 대한 Microsoft Intune에서 디바이스 제한 설정을 읽고 구성합니다.
+description: 등록 취소, 지리적 위치, 암호, 앱 스토어에서 앱 설치, Microsoft Edge에서 쿠키 및 팝업, Microsoft Defender, 검색, 클라우드 및 스토리지, Bluetooth 연결, 시스템 시간 및 Azure에서 사용량 데이터를 포함하여 Windows Holographic for Business에 대한 Microsoft Intune에서 디바이스 제한 설정을 읽고 구성합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28a697b841d8b264a19d97059d272b7119bc7f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493911"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059499"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune를 사용하여 기능을 허용하거나 제한하는 Windows Holographic for Business 디바이스 설정
 
@@ -57,7 +57,7 @@ ms.locfileid: "72493911"
 - **암호 관리자**: Microsoft Edge 암호 관리자 기능을 사용하거나 사용하지 않습니다.
 - **추적 방지 헤더 보내기**: 사용자가 방문하는 웹 사이트에 추적 방지 헤더를 보내도록 Microsoft Edge 브라우저를 구성합니다.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 스마트 화면
 
 - **Microsoft Edge용 SmartScreen**: 사이트 및 파일 다운로드에 액세스하는 데 Microsoft Edge SmartScreen을 사용하도록 설정합니다.
 
