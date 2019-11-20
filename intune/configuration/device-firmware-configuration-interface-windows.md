@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755351"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059600"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Microsoft Intune에서 Windows 디바이스에 디바이스 펌웨어 구성 인터페이스 프로필 사용(공개 미리 보기)
 

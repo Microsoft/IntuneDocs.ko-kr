@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7f888a5a384503393c086a27d1c2ce6410357fd
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755031"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059835"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Intune에서 사용자 지정 디바이스 프로필을 사용하여 미리 공유한 키로 WiFi 프로필 만들기
 

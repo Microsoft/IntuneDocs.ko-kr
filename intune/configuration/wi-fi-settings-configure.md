@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 589fc32db22de02f70ba78f79ebb413a31e92f1d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 61957140fa8d942be0f3dca2543da2aed6183535
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754850"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059263"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune에서 디바이스의 Wi-Fi 설정 추가 및 사용
 

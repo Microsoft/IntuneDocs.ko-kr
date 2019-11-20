@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999534"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199207"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -32,7 +32,7 @@ ms.locfileid: "72999534"
 Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스하고 디바이스 등록, 앱 설치, IT 부서 지원 정보 찾기 등의 일반적인 작업을 수행할 수 있습니다. 또한 사용자는 회사 포털 앱을 통해 회사 리소스에 안전하게 액세스할 수 있습니다. 회사 포털 앱은 홈, 앱, 앱 세부 정보, 디바이스 및 디바이스 세부 정보와 같은 여러 페이지를 제공합니다. 앱 페이지에서 앱을 필터링하면 회사 포털 내에서 앱을 신속하게 찾을 수 있습니다.
 
 > [!IMPORTANT]
-> Google의 Firebase Cloud Messaging(FCM)을 지원하려면 Android 회사 포털 앱을 최신 버전으로 업데이트해야 합니다. 자세한 내용은 새로운 기능 - [Android 회사 포털 앱을 최신 버전으로 업데이트](../fundamentals/whats-new.md#update-your-android-company-portal-app-to-the-latest-version-)를 참조하세요.
+> Google의 Firebase Cloud Messaging(FCM)을 지원하려면 Android 회사 포털 앱을 최신 버전으로 업데이트해야 합니다.  
 
 > [!Tip]
 > 회사 포털을 사용자 지정할 때는 구성이 회사 포털 웹 사이트 및 회사 포털 앱에 모두 적용됩니다. 회사 포털 웹 사이트에 액세스하려면 Intune 라이선스가 할당되어야 합니다.

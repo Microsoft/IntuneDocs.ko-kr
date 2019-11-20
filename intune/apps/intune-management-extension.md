@@ -2,8 +2,8 @@
 title: Microsoft Intune에서 Windows 10 디바이스에 PowerShell 스크립트 추가 - Azure | Microsoft Docs
 description: PowerShell 스크립트를 만들고 실행하고, Azure Active Directory 그룹에 스크립트 정책을 할당하고, 보고서를 사용하여 스크립트를 모니터링하고, Microsoft Intune에서 Windows 10 디바이스에 추가한 스크립트를 삭제하는 단계를 살펴보세요. 또한 몇 가지 일반적인 문제 및 해결 방법을 참조하세요.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94653c51bccc59fde93fdacc16f2b83e7860346b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497797"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059716"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 PowerShell 스크립트 사용
 
