@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059639"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390832"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune에서 OEMConfig를 사용 하 여 Android Enterprise 장치 사용 및 관리
 
@@ -80,8 +80,8 @@ OEMConfig를 사용 하는 경우 다음 정보를 알고 있어야 합니다.
 
 ## <a name="create-an-oemconfig-profile"></a>OEMConfig 프로필 만들기
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.
-2. **장치** > **구성 프로필** 을 선택 하 > **프로필 만들기**를 선택 합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 
     - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.
@@ -146,10 +146,15 @@ OEMConfig를 사용 하는 경우 다음 정보를 알고 있어야 합니다.
 | Datalogic | datalogic 구성 | [Datalogic OEMConfig에 대 한 사용자 설명서](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell 구성 |  |
 | Kyocera | kyocera. enterprisedeviceconfig |  |
+| Spectralink-바코드 | spectralink. |  |
+| Spectralink-단추 | spectralink |  |
+| Spectralink-장치 | spectralink nkdevicesettings  |  |
+| Spectralink-로깅 | spectralink. nknnn로거에서 |  |
+| Spectralink-VQO | spectralink. slnkvqo |  |
 
 -----------------
 
-장치에 대 한 OEMConfig 응용 프로그램이 있지만 위의 표에 없거나 Intune 콘솔에 표시 되지 않는 경우 전자 메일을 `IntuneOEMConfig@microsoft.com` 하세요.
+장치에 대 한 OEMConfig 응용 프로그램이 있지만 위의 표에 없거나 Intune 콘솔에 표시 되지 않는 경우 전자 메일을 `IntuneOEMConfig@microsoft.com`하세요.
 
 > [!NOTE]
 > Oemconfig 앱은 등록를 사용 하 여 구성 해야 합니다. 앱이 지원 되 면 테 넌 트에서 설정 하는 방법에 대해 Microsoft에 문의할 필요가 없습니다. 이 페이지의 지침을 따르세요.
