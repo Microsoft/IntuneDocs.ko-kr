@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb99a363bda762ccfb834388f3abb4ab80f81a
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: cc950f9e60f5549a7a74c2963f33c36369d3ebd3
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709709"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126158"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>자습서: ABM(Apple Business Manager)의 Apple 기업 디바이스 등록 기능을 사용하여 Intune에서 iOS 디바이스 등록
 Apple Business Manager의 디바이스 등록 기능을 사용하면 디바이스를 간단하게 등록할 수 있습니다. Intune에서는 Apple의 이전 DEP(디바이스 등록 프로그램) 포털도 지원하지만 이제 새 Apple Business Manager를 사용하는 것이 좋습니다. Microsoft Intune 및 Apple Corporate Device Enrollment를 사용할 경우 사용자가 처음 디바이스를 켜면 자동으로 디바이스가 안전하게 등록됩니다. 따라서 각 디바이스를 개별적으로 설정하지 않고도 여러 사용자에게 디바이스를 제공할 수 있습니다. 
@@ -90,7 +90,7 @@ ABM 또는 DEP 포털을 사용하여 디바이스 등록 토큰을 만듭니다
 
 5. 등록할 때 디바이스의 **사용자 선호도**의 지정 여부를 결정합니다. 사용자 선호도는 특정 사용자가 사용하는 디바이스를 대상으로 설계되었습니다. 사용자가 앱 설치 같은 서비스에 회사 포털을 사용하려는 경우 **사용자 선호도를 사용하여 등록**을 선택합니다. 사용자가 회사 포털을 필요로 하지 않거나 많은 사용자를 대상으로 디바이스를 프로비저닝하려는 경우 **사용자 선호도 없이 등록**을 선택합니다.
 
-6. 사용자 선호도를 사용한 등록을 선택할 경우 회사 포털 또는 Apple Setup Assistant로 인증할지 결정합니다. 다단계 인증을 사용하거나, 사용자가 최초 로그인에서 암호를 변경할 수 있게 하거나, 사용자가 등록 중에 만료된 암호를 다시 설정하도록 요청하려면 **Apple Setup Assistant 대신 회사 포털을 사용하여 인증**에서 **예**를 선택합니다. Apple에서 제공하는 Apple Setup Assistant를 사용한 기본 HTTP 인증에 익숙하다면 **아니요**를 선택합니다.
+6. 사용자 선호도를 사용한 등록을 선택할 경우 회사 포털 또는 Apple Setup Assistant로 인증할지 결정합니다. 다단계 인증을 사용하거나, 사용자가 최초 로그인에서 암호를 변경할 수 있게 하거나, 사용자가 등록 중에 만료된 암호를 다시 설정하도록 요청하려면 **Apple Setup Assistant 대신 회사 포털을 사용하여 인증**에서 **예**를 선택합니다. Apple에서 제공하는 Apple Setup Assistant를 사용한 기본 HTTP 인증에 익숙하다면 **아니요**를 선택합니다. **예**를 선택하고 회사 포털 애플리케이션이 최종 사용자의 디바이스에서 자동으로 업데이트되도록 하려면 별도로 Apple의 VPP(Volume Purchasing Program)를 통해 해당 사용자에게 회사 포털을 필수 앱으로 배포합니다.
 
 7. 사용자 선호도 및 회사 포털을 통한 인증 등록을 선택한 경우 Apple VPP(Volume Purchase Program)를 통해 회사 포털을 설치할지 결정합니다. VPP 토큰으로 회사 포털을 설치할 경우 등록 중에 App Store에서 회사 포털을 다운로드하기 위해 사용자가 Apple ID와 암호를 입력하지 않아도 됩니다. **VPP를 사용하여 회사 포털 설치**에서 **토큰 사용:** 을 선택하여 사용 가능한 회사 포털의 무료 라이선스가 있는 VPP 토큰을 선택합니다. VPP를 사용하여 회사 포털을 배포하지 않으려면 **VPP를 사용하여 회사 포털 설치**에서 **VPP 사용 안 함**을 선택합니다. 
 

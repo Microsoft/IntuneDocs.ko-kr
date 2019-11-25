@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbdef7cffa76beeb158c47ab3651d438de2d6ccc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503162"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098193"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune에서 macOS 디바이스 등록 설정
 
@@ -42,15 +42,16 @@ macOS 디바이스 등록을 설정하기 전에 다음 필수 구성 요소를 
 - [MDM 기관 설정](../fundamentals/mdm-authority-set.md)
 - [그룹 만들기](../fundamentals/groups-add.md)
 - [회사 포털 구성](../apps/company-portal-app.md)
-- [Microsoft 365 관리 센터](http://go.microsoft.com/fwlink/p/?LinkId=698854)에서 사용자 라이선스 할당
+- [Microsoft 365 관리 센터](https://go.microsoft.com/fwlink/p/?LinkId=698854)에서 사용자 라이선스 할당
 - [Apple MDM Push Certificate 가져오기](../enrollment/apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>사용자 소유 macOS 디바이스(BYOD)
 
-사용자가 Intune 관리에 대해 개인 디바이스를 등록하도록 할 수 있습니다. 이를 "Bring Your Own Device" 또는 BYOD라고 합니다. 필수 사전 작업을 완료하고 사용자 라이선스를 할당하면 사용자는 다음과 같은 방법으로 디바이스를 등록할 수 있습니다.
+사용자가 개인 디바이스를 Intune 관리에 등록하도록 할 수 있습니다. 이를 "BYOD(Bring Your Own Device)"라고 합니다. 필수 사전 작업을 완료하고 사용자 라이선스를 할당하면 사용자는 다음과 같은 방법으로 디바이스를 등록할 수 있습니다.
 - [회사 포털 웹 사이트](https://portal.manage.microsoft.com)로 이동
-- 회사 포털 앱 다운로드
-또한 온라인 등록 단계: [Intune에서 macOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)에 대한 링크를 최종 사용자에게 전송할 수 있습니다.
+- [aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac)에서 Mac 회사 포털 앱을 다운로드.
+
+또한 사용자에게 온라인 등록 단계 링크를 보낼 수도 있습니다. [Intune에서 macOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)에 대한 링크를 최종 사용자에게 전송할 수 있습니다.
 
 최종 사용자의 다른 작업에 대한 정보는 다음 문서를 참조하세요.
 
@@ -77,12 +78,17 @@ macOS 디바이스 등록을 설정하기 전에 다음 필수 구성 요소를 
 VMware Fusion의 경우 [.vmx 파일을 편집](https://kb.vmware.com/s/article/1014782)하여 가상 머신의 하드웨어 모델 및 일련 번호를 설정해야 합니다. 가상 머신을 실행하는 디바이스의 하드웨어 형식을 사용자가 만드는 가상 머신의 하드웨어 형식과 일치시키는 것이 좋습니다. **Apple 메뉴** > **이 Mac 정보** > **시스템 보고서** > **모델 식별자**에서 이러한 하드웨어 형식을 찾을 수 있습니다. 
 
 ## <a name="user-approved-enrollment"></a>사용자 승인됨 등록
-
 사용자 승인됨 MDM 등록은 특정 보안 관련 설정을 관리하는 데 사용할 수 있는 macOS 등록 유형입니다. 자세한 내용은 [Apple의 지원 문서](https://support.apple.com/HT208019)를 참조하세요.
 
-사용자가 승인되려면 최종 사용자가 macOS 회사 포털을 사용하여 등록한 후에 시스템 환경설정을 사용하여 수동으로 승인을 제공해야 합니다. 이 작업에 대한 지침은 macOS 10.13.2 이상에서 사용자의 macOS 회사 포털을 통해 제공됩니다.
+2019년 11월부터 모든 새로운 사용자 소유 macOS 등록이 사용자 승인됩니다. 성공적으로 등록하기 위해서는 사용자가 수동으로 관리 프로필을 설치해야 하기 때문입니다. [등록 프로세스](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp) 도중 사용자는 **시스템 기본 설정** > **프로필**에서 Apple 관리 프로필을 설치하게 됩니다.  관리 프로필을 설치하는 지침은 macOS 회사 포털 앱에서 사용할 수 있습니다.
 
-디바이스가 사용자 승인됨 상태인지 확인하려면 Intune 포털로 이동한 다음, **디바이스** > **모든 디바이스** &gt; 디바이스 &gt; **하드웨어**를 선택합니다. **사용자 승인됨** 필드를 확인합니다.
+사용자가 관리 프로필을 수동으로 승인하지 않은 경우 2019년 11월 이전에 등록된 디바이스는 사용자 승인되지 않을 수 있습니다. 그러나 사용자는 뒤로 돌아가 **시스템 기본 설정** > **프로필**에서 **관리 프로필** > **승인**을 선택하여 관리 프로필을 승인할 수 있습니다.
+
+### <a name="find-out-if-a-device-is-user-approved"></a>디바이스가 사용자 승인되었는지 확인
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **모든 디바이스**> 디바이스 선택 > **하드웨어**를 선택합니다.
+3. **사용자 승인 등록** 필드를 확인합니다.
+
 
 ## <a name="next-steps"></a>다음 단계
 

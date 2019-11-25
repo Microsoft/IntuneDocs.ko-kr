@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3a9eb45898102e9d5fcde88f69026467255c513
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445264"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059764"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S 모드 디바이스에서 Win32 앱 사용
 
-[Windows 10 S 모드](https://docs.microsoft.com/windows/deployment/s-mode)는 스토어 앱만 실행하는 잠긴 운영 체제입니다. 기본적으로 Windows S 모드 디바이스에서는 Win32 앱을 설치 및 실행할 수 없습니다. 이러한 디바이스에는 단일 *Win 10 S 기본 정책*이 포함되어 있습니다. 이 정책에 따라 S 모드 디바이스에서는 Win32 앱을 실행할 수 없습니다. 그러나 Intune에서 **S 모드 추가 정책**을 만들고 사용하여 Windows 10 S 모드 관리 디바이스에서 Win32 앱을 설치 및 실행할 수 있습니다. [WDAC(Windows Defender Application Control)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) PowerShell 도구를 사용하여 Windows S 모드에 대 한 추가 정책을 하나 이상 만들 수 있습니다. [DGSS(Device Guard Signing Service)](https://go.microsoft.com/fwlink/?linkid=2095629) 또는 [SignTool.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool)를 사용하여 추가 정책에 서명한 다음, Intune을 통해 정책을 업로드 및 배포해야 합니다. 또는 조직의 코드 서명 인증서로 추가 정책에 서명할 수 있지만 DGSS를 사용하는 것이 좋습니다. 조직의 코드 서명 인증서를 사용하는 경우 코드 서명 인증서가 연결된 루트 인증서가 디바이스에 있어야 합니다.
+[Windows 10 S 모드](https://docs.microsoft.com/windows/deployment/s-mode)는 스토어 앱만 실행하는 잠긴 운영 체제입니다. 기본적으로 Windows S 모드 디바이스에서는 Win32 앱을 설치 및 실행할 수 없습니다. 이러한 디바이스에는 단일 *Win 10 S 기본 정책*이 포함되어 있습니다. 이 정책에 따라 S 모드 디바이스에서는 Win32 앱을 실행할 수 없습니다. 그러나 Intune에서 **S 모드 추가 정책**을 만들고 사용하여 Windows 10 S 모드 관리 디바이스에서 Win32 앱을 설치 및 실행할 수 있습니다. [WDAC(Microsoft Defender Application Control)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) PowerShell 도구를 사용하여 Windows S 모드에 대한 추가 정책을 하나 이상 만들 수 있습니다. [DGSS(Device Guard Signing Service)](https://go.microsoft.com/fwlink/?linkid=2095629) 또는 [SignTool.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool)를 사용하여 추가 정책에 서명한 다음, Intune을 통해 정책을 업로드 및 배포해야 합니다. 또는 조직의 코드 서명 인증서로 추가 정책에 서명할 수 있지만 DGSS를 사용하는 것이 좋습니다. 조직의 코드 서명 인증서를 사용하는 경우 코드 서명 인증서가 연결된 루트 인증서가 디바이스에 있어야 합니다.
 
 Intune에서 S 모드 추가 정책을 할당하면 디바이스가 기존 S 모드 정책에 대한 예외를 적용할 수 있습니다. 그러면 서명된 해당 앱 카탈로그를 업로드할 수 있습니다. 이 정책은 S 모드 디바이스에서 사용할 수 있는 앱(앱 카탈로그)의 허용 목록을 설정합니다.
 
@@ -40,7 +40,7 @@ S 모드의 Windows 10 디바이스에서 Win32 앱을 실행하도록 허용하
 
 1. Windows 10 S 등록 프로세스의 일부로 Intune을 통해 S 모드 디바이스를 사용하도록 설정합니다.
 2. Win32 앱을 허용하는 추가 정책을 만듭니다.
-   - [WDAC(Windows Defender Application Control)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) 도구를 사용하여 추가 정책을 만들 수 있습니다. 정책 내의 기본 정책 ID는 클라이언트에서 하드 코드된 모드 기본 정책 ID와 일치해야 합니다. 또한 정책 버전이 이전 버전보다 높아야 합니다.
+   - [WDAC(Microsoft Defender Application Control)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) 도구를 사용하여 추가 정책을 만들 수 있습니다. 정책 내의 기본 정책 ID는 클라이언트에서 하드 코드된 모드 기본 정책 ID와 일치해야 합니다. 또한 정책 버전이 이전 버전보다 높아야 합니다.
    - DGSS를 사용하여 추가 정책에 서명할 수 있습니다. 자세한 내용은 [Device Guard 서명을 사용하여 코드 무결성 정책 서명](https://docs.microsoft.com/microsoft-store/sign-code-integrity-policy-with-device-guard-signing)을 참조하세요.
    - Windows 10 S 모드 추가 정책(아래 참조)을 만들어 서명된 추가 정책을 Intune에 업로드합니다.
 3. Intune을 통해 다음과 같이 Win32 앱 카탈로그를 허용합니다.

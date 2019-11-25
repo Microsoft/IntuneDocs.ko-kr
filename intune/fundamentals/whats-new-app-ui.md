@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801788"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098212"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 
@@ -36,6 +36,20 @@ Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-november-11-2019"></a>2019년 11월 11일 주  
+
+#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Windows 회사 포털 앱에서 시작된 웹앱<!-- 5030972 -->
+이제 최종 사용자가 Windows 회사 포털 앱에서 직접 웹앱을 시작할 수 있습니다. 최종 사용자는 웹앱을 선택한 다음 **브라우저에서 열기** 옵션을 선택할 수 있습니다. 게시된 웹 URL이 웹 브라우저에서 직접 열립니다. 이 기능은 다음 주에 출시될 예정입니다. 웹앱에 대한 자세한 내용은 [Microsoft Intune에 웹앱 추가](~/apps/web-app.md)를 참조하세요.
+
+![Windows 회사 포털 앱에서 시작된 웹앱의 이미지 예](./media/whats-new-app-ui/webapp-open-in-browser.png)  
+
+### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>회사 포털의 개선된 macOS 등록 환경 <!-- 5074349 WNready -->  
+macOS용 회사 포털 등록 환경은 iOS용 회사 포털 등록 환경과 보다 긴밀하게 정렬된 더 간단한 등록 프로세스를 제공합니다. 이제 디바이스 사용자에게 다음과 같은 이점이 제공됩니다.  
+
+* 보다 간소화된 사용자 인터페이스.  
+* 향상된 등록 확인 목록.  
+* 보다 명확하게 설명된 디바이스 등록 방법.  
+* 개선된 문제 해결 옵션.  
 
 ## <a name="week-of-october-28-2019"></a>2019년 10월 28일이 있는 주  
 

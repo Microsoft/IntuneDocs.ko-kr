@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9dd31c87d27ec7885d25269988cfd968e81e08
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 179d135ee8e216495cd7435bf38d8087e5c990e8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504552"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188286"
 ---
 # <a name="learn-about-conditional-access-and-intune"></a>조건부 액세스와 Intune에 대해 알아봅니다.
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+조건부 액세스를 사용하면 메일 및 회사 리소스에 연결할 수 있는 앱과 디바이스를 제어할 수 있습니다. 
 
-조건부 액세스는 메일 및 회사 리소스에 연결할 수 있는 앱과 디바이스를 제어할 수 있는 방법을 말합니다. 이 항목에서는 디바이스 기반 및 앱 기반 조건부 액세스에 대해 알아보고 Intune을 사용한 조건부 액세스를 사용하는 일반적인 시나리오를 찾아봅니다.
-
-Enterprise Mobility + Security(EMS) 조건부 액세스는 독립 실행형 제품이 아니며 EMS의 일부분인 모든 서비스와 제품에 포함되는 솔루션입니다. EMS 조건부 액세스는 회사 데이터의 보안을 유지할 수 있는 세분화된 액세스 제어 기능을 제공하는 동시에, 사용자에게는 모든 위치와 디바이스에서 업무를 가장 효율적으로 수행할 수 있도록 하는 환경을 제공합니다.
+EMS(Enterprise Mobility + Security)는 독립 실행형 제품이 아닙니다. EMS를 구성하는 모든 서비스 및 제품에서 역할을 수행하는 솔루션입니다. 조건부 액세스는 회사 데이터의 보안을 유지할 수 있는 세분화된 액세스 제어 기능을 제공하는 동시에, 사용자에게는 모든 위치와 디바이스에서 업무를 가장 효율적으로 수행할 수 있도록 하는 환경을 제공합니다.
 
 위치, 디바이스, 사용자 상태 및 애플리케이션 민감도 등을 기반으로 회사 데이터에 대한 액세스를 제한하는 조건을 정의할 수 있습니다.
 
-> [!NOTE] 
+> [!NOTE]
 > 조건부 액세스의 기능은 [Office 365 서비스](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)로도 확장 적용됩니다.
 
-![조건부 액세스 아키텍처 다이어그램](./media/conditional-access/ca-diagram-1.png)
+![조건부 액세스 다이어그램](./media/conditional-access/ca-diagram-1.png)
 
 ## <a name="use-conditional-access-with-intune"></a>Intune을 사용하는 조건부 액세스 사용
 

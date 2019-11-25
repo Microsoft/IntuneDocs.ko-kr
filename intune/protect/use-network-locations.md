@@ -2,10 +2,10 @@
 title: Microsoft Intune에서 네트워크 위치별로 Android 디바이스 바인딩 - Azure | Microsoft Docs
 description: Android 디바이스용 Microsoft Intune에서 네트워크 위치를 만들거나 구성합니다. 디바이스의 네트워크 위치를 기반으로 하여 디바이스를 비준수로 표시할 수 있습니다. 디바이스가 네트워크 위치 외부로 나가면 회사 리소스에 대한 액세스를 차단할 수 있습니다.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749447"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058143"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune에서 위치(네트워크 펜스) 사용
 
@@ -50,7 +50,7 @@ ms.locfileid: "72749447"
 
 ## <a name="create-a-location"></a>위치 만들기
 
-1. Intune에서 **디바이스 준수** > **위치** > **만들기**를 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **준수 정책** > **위치** > **만들기**를 선택합니다.
 
 2. 다음 속성을 입력합니다.  
 
@@ -69,8 +69,7 @@ ms.locfileid: "72749447"
 
 ## <a name="create-the-location-compliance-policy"></a>위치 준수 정책 만들기
 
-[준수 정책을 만드는](create-compliance-policy.md) 경우 **플랫폼**에 대해 **Android**를 선택합니다. **위치**에서 추가한 네트워크 위치 중 하나 이상을 선택할 수 있습니다. 이러한 위치는 디바이스에 대해 만드는 네트워크 펜스에 속합니다. 
-
+[준수 정책을 만드는](create-compliance-policy.md) 경우 **플랫폼**에 대해 **Android**를 선택합니다. **위치**에서 추가한 네트워크 위치 중 하나 이상을 선택할 수 있습니다. 이러한 위치는 디바이스에 대해 만드는 네트워크 펜스에 속합니다.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>비준수에 대한 작업 구성
 
@@ -83,5 +82,6 @@ ms.locfileid: "72749447"
 디바이스가 사용자의 위치에 연결되면 회사 포털 앱에서 해당 디바이스가 준수로 표시됩니다. 디바이스가 사용자의 위치 중 하나에 연결되어 있지 않으면 해당 디바이스가 비준수로 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
+
 [디바이스 준수 정책 모니터링](compliance-policy-monitor.md)  
 [준수 정책 시작](device-compliance-get-started.md)

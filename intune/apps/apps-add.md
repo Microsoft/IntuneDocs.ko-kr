@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e61be086323a16a6220573874ed80ce4e9bd32
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498977"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164704"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가 
 
@@ -151,7 +151,7 @@ Intune 관리 앱은 등록 없이 앱 보호를 사용할 수도 있으므로 �
 - 업로드하는 파일의 최대 크기는 8GB입니다.
 
   > [!NOTE]
-  > Windows LOB(기간 업무) 앱의 최대 크기 한도는 앱당 8GB입니다. iOS LOB 앱의 최대 크기 한도는 앱당 4GB입니다.
+  > Windows LOB(기간 업무) 앱(Win32, Windows 유니버설 AppX, Windows 유니버설 AppX 번들, Windows 유니버설 MSI X, Windows 유니버설 MSI X 번들 등)은 앱당 8GB의 최대 크기 제한이 있습니다. iOS LOB 앱을 비롯한 다른 모든 LOB 앱은 앱당 최대 크기가 2GB로 제한됩니다.
 
 ## <a name="create-and-edit-categories-for-apps"></a>앱의 범주 만들기 및 편집
 

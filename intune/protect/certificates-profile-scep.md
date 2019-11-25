@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3cfcc4ac0c5125324102c55dc7bc887006df6b
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: b9f9d6626d26e919efbd3a3d8b5dd735ecb7fb62
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801430"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199132"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune에서 SCEP 인증서 프로필 만들기 및 할당
 
@@ -49,14 +49,9 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
 
    *디바이스 소유자만* 프로필에 대한 SCEP 인증서 프로필에는 다음과 같은 제한 사항이 있습니다.
 
-   1. 다음 변수가 지원됩니다.
+   1. 모니터링에서는 디바이스 소유자 SCEP 인증서 프로필에 대해 인증서 보고를 사용할 수 없습니다.
 
-      - CN={{OnPrem_Distinguished_Name}}
-      - CN={{onPremisesSamAccountName}}
-
-   2. 모니터링에서는 디바이스 소유자 SCEP 인증서 프로필에 대해 인증서 보고를 사용할 수 없습니다.
-
-   3. Intune을 사용하여 디바이스 소유자의 SCEP 인증서 프로필을 통해 프로비저닝된 인증서를 해지할 수 없습니다. 외부 프로세스를 통해 또는 인증 기관에서 직접 해지를 관리할 수 있습니다. 
+   2. Intune을 사용하여 디바이스 소유자의 SCEP 인증서 프로필을 통해 프로비저닝된 인증서를 해지할 수 없습니다. 외부 프로세스를 통해 또는 인증 기관에서 직접 해지를 관리할 수 있습니다. 
 
 7. **설정**을 선택하고 다음 구성을 완료합니다.
 
@@ -115,12 +110,11 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
 
         주체 이름 형식에 대한 형식 옵션은 다음 변수를 포함합니다.
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** 또는 **{{AzureADDeviceId}}** - 한 변수를 사용하여 Azure AD ID로 디바이스를 식별할 수 있습니다.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
@@ -157,12 +151,11 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
 
         *디바이스* 인증서 유형을 사용하면 값에 다음 디바이스 인증서 변수를 사용할 수 있습니다.
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** 또는 **{{AzureADDeviceId}}** - 한 변수를 사용하여 Azure AD ID로 디바이스를 식별할 수 있습니다.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**

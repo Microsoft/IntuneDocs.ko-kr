@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
-ms.reviewer: stama
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18da57282a190dec363e3dfbde5293f5228cb0b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504625"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188463"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange 온-프레미스 및 레거시 Exchange Online Dedicated에 대한 조건부 액세스 정책 만들기
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 이 문서에서는 디바이스 준수를 기반으로 Exchange 온-프레미스에 대한 조건부 액세스를 구성하는 방법을 설명합니다.
 
@@ -46,7 +44,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 
 - 컴퓨터에서 Exchange Server와 통신할 수 있는 한 해당되는 모든 컴퓨터에 온-프레미스 Exchange 조직에 대한 커넥터를 설치할 수 있습니다.
 
-- 이 커넥터는 **Exchange CAS 환경**을 지원합니다. Intune은 Exchange CAS 서버에 직접 커넥터를 설치하는 것을 지원하지만 커넥터가 서버에 배치하는 추가 로드로 인해 별도의 컴퓨터에 설치하는 것이 좋습니다. 커넥터를 구성할 때는 커넥터가 Exchange CAS 서버 중 하나와 통신하도록 설정해야 합니다.
+- 이 커넥터는 **Exchange CAS 환경**을 지원합니다. Intune은 Exchange CAS 서버에 직접 커넥터를 설치하는 것을 지원합니다. 커넥터 때문에 서버에서 추가 로드가 발생하므로 별도의 컴퓨터에 설치하는 것이 좋습니다. 커넥터를 구성할 때는 커넥터가 Exchange CAS 서버 중 하나와 통신하도록 설정해야 합니다.
 
 - **Exchange ActiveSync**는 인증서 기반 인증 또는 사용자 자격 증명 항목으로 구성되어야 합니다.
 
@@ -60,7 +58,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 
 - 디바이스가 조건부 액세스 설정을 충족하지 않으면 사용자가 로그인할 때 다음 메시지 중 하나가 표시됩니다.
   - 디바이스를 Intune에 등록하지 않았거나 Azure Active Directory에 등록하지 않은 경우, 회사 포털 앱을 설치하고 디바이스를 등록하며 이메일을 활성화하는 방법에 대한 지침이 포함된 메시지가 표시됩니다. 이 프로세스는 또한 디바이스의 Exchange ActiveSync ID를 Azure Active Directory의 디바이스 레코드와 연결합니다.
-  - 디바이스가 정책을 준수하지 않으면 사용자가 문제에 관한 정보와 문제 해결 방법을 찾을 수 있는 Intune 회사 포털 웹 사이트 또는 회사 포털 앱을 알려주는 메시지가 표시됩니다.
+  - 디바이스가 규정을 준수하지 않으면 사용자를 Intune 회사 포털 웹 사이트 또는 회사 포털 앱으로 디렉션한다는 메시지가 표시됩니다. 회사 포털에서 문제에 대한 정보와 이를 해결하는 방법을 찾을 수 있습니다.
 
 ### <a name="support-for-mobile-devices"></a>모바일 디바이스에 대한 지원
 
@@ -70,7 +68,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 - EAS 메일 클라이언트 **Android 회사 프로필 디바이스:** **회사 프로필**의 **Gmail** 및 **Nine Work for Android Enterprise**만 Android 회사 프로필에 대해 지원됩니다. 조건부 액세스가 Android 회사 프로필에서 작동하려면 Gmail 또는 Nine Work for Android 엔터프라이즈 앱에 대한 이메일 프로필을 배포해야 하며, 이러한 앱을 필수 설치로 배포해야 합니다.
 
 > [!NOTE]
-> Android 및 iOS용 Microsoft Outlook은 Exchange 온-프레미스 커넥터를 통해 사용할 수 없습니다. 온-프레미스 사서함에 대해 iOS 및 Android용 Outlook에서 Azure Active Directory 조건부 액세스 정책 및 Intune 앱 보호 정책을 활용하려는 경우 [iOS 및 Android용 Outlook에서 하이브리드 최신 인증 사용](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)을 참조하세요. 
+> Android 및 iOS용 Microsoft Outlook은 Exchange 온-프레미스 커넥터를 통해 사용할 수 없습니다. 온-프레미스 사서함에 대해 iOS 및 Android용 Outlook에서 Azure Active Directory 조건부 액세스 정책 및 Intune 앱 보호 정책을 활용하려는 경우 [iOS 및 Android용 Outlook에서 하이브리드 최신 인증 사용](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)을 참조하세요.
 
 ### <a name="support-for-pcs"></a>PC 지원
 
@@ -80,19 +78,19 @@ Windows 8.1 이상에 설치된 기본 **메일** 애플리케이션(Intune을 �
 
 Exchange 온-프레미스 액세스 제어를 설정하려면 다음 절차를 사용하기 전에 Exchange 온-프레미스에 대한 [Intune 온-프레미스 Exchange Connector](exchange-connector-install.md)를 하나 이상 설치하고 구성해야 합니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-2. **Exchange 액세스**로 이동한 다음 **Exchange 온-프레미스 액세스**를 선택합니다. 
+2. **테넌트 관리** > **Exchange 액세스**로 이동한 다음 **Exchange 온-프레미스 액세스**를 선택합니다.
 
 3. **Exchange 온-프레미스 액세스** 창에서 *Exchange 온-프레미스 액세스 제어 사용*에 대해 **예**를 선택합니다.
 
-4. **할당**에서 **포함할 그룹 선택**을 선택한 다음 액세스를 구성할 하나 이상의 그룹을 선택합니다. 
+4. **할당**에서 **포함할 그룹 선택**을 선택한 다음 액세스를 구성할 하나 이상의 그룹을 선택합니다.
 
    선택한 그룹의 구성원에게는 그러한 구성원에게 적용되는 Exchange 온-프레미스 액세스용 조건부 액세스 정책이 있습니다. 이 정책을 받는 사용자는 Intune에 디바이스를 등록하고 준수 프로필을 준수해야 Exchange 온-프레미스에 액세스할 수 있습니다.
 
 5. 그룹을 제외하려면 **제외할 그룹 선택**을 선택한 다음 디바이스 등록 요구 사항에서 제외되는 하나 이상의 그룹을 선택하고 Exchange 온-프레미스에 액세스하기 전에 준수 프로필을 준수합니다. 
 
-6. 그런 다음 Intune 온-프레미스 Exchange Connector 구성을 구성합니다.  **Exchange 액세스 창**의 **Setup**에서 **Exchange ActiveSync 온-프레미스 Connector**를 선택한 다음 구성할 Exchange 조직의 커넥터를 선택합니다.
+6. 그런 다음 Intune 온-프레미스 Exchange Connector 구성을 구성합니다.  *Exchange 온-프레미스 액세스* 창의 **설정**에서 **Exchange ActiveSync 온-프레미스 커넥터**를 선택한 다음 구성할 Exchange 조직의 커넥터를 선택합니다.
 
 7. **설정**에서 **사용자 알림**을 선택하여 디바이스가 비준수 상태일 때 Exchange 온-프레미스에 액세스해야 할 경우에 사용자에게 전송되는 기본 이메일 메시지를 수정합니다. 메시지 템플릿에는 마크업 언어가 사용됩니다.  입력할 때 메시지 모양에 대한 미리 보기도 표시될 수 있습니다.
    > [!TIP]
@@ -120,6 +118,6 @@ Exchange 온-프레미스 액세스 제어를 설정하려면 다음 절차를 �
 
 그런 다음 규정 준수 정책을 만들고 사용자에게 할당하여 Intune에서 모바일 디바이스를 평가하게 합니다. [디바이스 규정 준수 시작](device-compliance-get-started.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="next-steps"></a>다음 단계
 
-[Microsoft Intune에서 Intune 온-프레미스 Exchange Connector 문제 해결](https://support.microsoft.com/help/4471887)
+[Microsoft Intune에서 Intune 온-프레미스 Exchange 커넥터 문제 해결](https://support.microsoft.com/help/4471887)

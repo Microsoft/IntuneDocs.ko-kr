@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709204"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098189"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 등록 설정
 
@@ -117,6 +117,15 @@ CNAME 구성 이외의 메서드를 사용하는 것이 지원되지 않습니�
 > 자동 MDM 등록을 사용하지 않지만 Windows 10 디바이스가 Azure AD에 가입된 경우 등록한 후에 두 레코드가 Intune 콘솔에 표시됩니다. Azure AD 가입 디바이스를 가진 사용자가 동일한 계정을 사용하여 **계정** > **회사 또는 학교에 액세스** 및 **연결**로 이동하는지 확인하여 중지할 수 있습니다. 
 
 최종 사용자 작업에 대한 자세한 내용은 [Microsoft Intune에서 최종 사용자 환경 관련 리소스](../fundamentals/end-user-educate.md)를 참조하세요.
+
+## <a name="registration-and-enrollment-cnames"></a>등록 및 등록 CNAME
+Azure Active Directory에는 iOS, Android 및 Windows 디바이스의 디바이스 등록에 사용되는 다른 CNAME이 있습니다. Intune 조건부 액세스를 사용하려면 디바이스를 등록해야 합니다("회사 조인"이라고도 함). 조건부 액세스를 사용하려는 경우 각 회사 이름에 대해 EnterpriseRegistration CNAME을 구성해야 합니다.
+
+| 유형 | 호스트 이름 | 지시 대상 | TTL |
+| --- | --- | --- | --- |
+| 이름 | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1시간|
+
+디바이스 등록에 대한 자세한 내용은[Azure Portal을 사용하여 디바이스 ID 관리](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

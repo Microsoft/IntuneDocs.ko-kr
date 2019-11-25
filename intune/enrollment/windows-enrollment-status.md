@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709317"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059698"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>등록 상태 페이지 설정
  
@@ -197,7 +197,7 @@ ESP(등록 상태 페이지)는 초기 디바이스를 등록하는 동안 Windo
     - 사용자 자격 증명이 유지되지 않습니다.
     - 사용자가 디바이스 설정 단계에서 계정 설정 단계로 진행하기 전에 자격 증명을 다시 입력해야 합니다.
 - ESP가 오랫동안 중지되었거나 "식별 중" 단계가 완료되지 않습니다. Intune은 식별 단계 중에 ESP 정책을 평가합니다. 현재 사용자에게 Intune 라이선스가 할당되지 않은 경우 디바이스에서 ESP 정책 평가를 완료하지 못할 수 있습니다.  
-- Windows Defender 애플리케이션 제어를 구성하면 Autopilot 중에 재부팅하라는 메시지가 표시됩니다. Windows Defender 애플리케이션(AppLocker CSP)을 구성하려면 재부팅해야 합니다. 이 정책이 구성되면 디바이스가 Autopilot 중에 재부팅될 수 있습니다. 현재는 재부팅을 억제하거나 연기할 수 있는 방법이 없습니다.
+- Microsoft Defender 애플리케이션 제어를 구성하면 Autopilot 중에 재부팅하라는 메시지가 표시됩니다. Microsoft Defender 애플리케이션(AppLocker CSP)을 구성하려면 재부팅해야 합니다. 이 정책이 구성되면 디바이스가 Autopilot 중에 재부팅될 수 있습니다. 현재는 재부팅을 억제하거나 연기할 수 있는 방법이 없습니다.
 - DeviceLock 정책(https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) 을 ESP 프로필의 일부로 사용하도록 설정된 경우 두 가지 이유 때문에 OOBE 또는 사용자 데스크톱 자동 로그온이 예기치 않게 실패할 수 있습니다.
   - ESP 디바이스 설정 단계를 종료하기 전에 디바이스를 재부팅하지 않으면 사용자에게 Azure AD 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 사용자에게 Windows 첫 번째 로그인 애니메이션이 표시되는 자동 로그온 성공 메시지 대신 이 메시지가 표시됩니다.
   - 사용자가 Azure AD 자격 증명을 입력했지만 ESP 디바이스 설정 단계를 종료하기 전에 디바이스를 재부팅하면 자동 로그온에 실패합니다. 이 오류는 ESP 디바이스 설정 단계가 완료되지 않았기 때문에 발생합니다. 해결 방법은 디바이스를 재설정하는 것입니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6026cf3ef8d044c92680cf4c4c88ba55c9777e0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713268"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199176"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용
 
@@ -31,7 +31,7 @@ Microsoft Defender ATP(Microsoft Defender Advanced Threat Protection)를 Mobile 
 
 - **Intune과 Microsoft Defender ATP 간에 서비스간 연결을 설정합니다.** . 이 연결을 통해 Microsoft Defender ATP는 Intune으로 관리하는 Windows 10 디바이스에서 컴퓨터 위험에 대한 데이터를 수집할 수 있습니다.
 - **디바이스 구성 프로필을 사용하여 Microsoft Defender ATP에 디바이스를 온보딩합니다**. 디바이스를 온보딩하여 Microsoft Defender ATP와 통신하도록 구성하고 위험 수준을 평가하는 데 유용한 데이터를 제공합니다.
-- **디바이스 규정 준수 정책을 사용하여 허용하려는 위험 수준을 설정합니다**. 위험 수준은 Microsoft Defender ATP에서 보고됩니다.  허용되는 위험 수준을 초과하는 디바이스는 비규격으로 식별됩니다.
+- **디바이스 규정 준수 정책을 사용하여 허용하려는 위험 수준을 설정합니다**. 위험 수준은 Microsoft Defender ATP에서 보고됩니다. 허용되는 위험 수준을 초과하는 디바이스는 비규격으로 식별됩니다.
 - **조건부 액세스 정책을 사용**하여 사용자가 비규격 디바이스에서 회사 리소스에 액세스하지 못하도록 차단합니다.
 
 Intune을 Microsoft Defender ATP에 통합하면 ATP의 TVM(위협 및 취약성 관리)을 활용하고 [Intune을 사용하여 TVM이 식별한 엔드포인트 약점을 수정](atp-manage-vulnerabilities.md)할 수 있습니다.
@@ -49,7 +49,7 @@ Intune을 Microsoft Defender ATP에 통합하면 ATP의 TVM(위협 및 취약성
 Microsoft Defender ATP를 사용하면 이 시나리오와 같은 보안 이벤트를 편리하게 해결할 수 있습니다.
 
 - 이 예제에서 Microsoft Defender ATP는 디바이스에서 비정상적인 코드가 실행되었으며, 프로세스 권한 에스컬레이션이 발생하고 악성 코드가 삽입되고 의심스러운 원격 셸이 실행되었음을 감지합니다.
-- 디바이스의 이러한 작업을 기준으로, Microsoft Defender ATP는 [해당 디바이스를 고위험으로 분류하고](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue#severity) Microsoft Defender Security Center 포털에 의심스러운 활동에 대한 자세한 보고서를 포함합니다.
+- 디바이스의 이러한 작업을 기준으로, Microsoft Defender ATP는 [해당 디바이스를 위험 수준이 높은 것으로 분류하고](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue#severity) Microsoft Defender Security Center 포털에 의심스러운 활동에 대한 자세한 보고서를 포함합니다.
 
 Intune 디바이스 규정 준수 정책에 따라 디바이스가 *중간* 또는 *높음* 위험 수준으로 분류되므로 손상된 디바이스는 비규격으로 분류됩니다. 이 분류를 통해 조건부 액세스 정책이 시작되고 해당 디바이스에서 회사 리소스에 대한 액세스를 차단할 수 있습니다.
 
@@ -62,7 +62,7 @@ Intune에서 Microsoft Defender ATP를 사용하려면 다음을 구성했으며
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 및 Microsoft Defender Security Center(ATP 포털)에 대한 액세스 권한
 
 > [!NOTE]
-> Microsoft Defender ATP는 Intune 앱 보호 정책에서 지원되지 않습니다.
+> Microsoft Defender ATP는 iOS 및 Android Intune 앱 보호 정책에서 지원되지 않습니다.
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Intune에서 Microsoft Defender ATP 사용
 
@@ -70,7 +70,7 @@ Intune에서 Microsoft Defender ATP를 사용하려면 다음을 구성했으며
 
 ### <a name="to-enable-defender-atp"></a>Defender ATP를 사용하도록 설정하려면
 
-테넌트당 한번만 Defender ATP를 사용하도록 설정하면 됩니다. 
+테넌트당 한번만 Defender ATP를 사용하도록 설정하면 됩니다.
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
@@ -92,6 +92,8 @@ Intune에서 Microsoft Defender ATP를 사용하려면 다음을 구성했으며
 
 > [!TIP]
 > Intune Mobile Threat Defense에 새 애플리케이션을 통합하고 Intune에 대한 연결을 사용하도록 설정하면 Intune은 Azure Active Directory에 클래식 조건부 액세스 정책을 만듭니다. [Defender ATP](advanced-threat-protection.md)나 추가 [MTD 파트너](mobile-threat-defense.md#mobile-threat-defense-partners)를 포함하여 통합되는 각 MTD 앱은 새 클래식 조건부 액세스 정책을 만듭니다. 이러한 정책은 무시할 수 있지만 편집 또는 삭제하거나 사용하지 않도록 설정할 수는 없습니다.
+>
+> 클래식 정책이 삭제된 경우 해당 연결을 담당하는 Intune에 대한 연결을 삭제한 다음 다시 설정해야 합니다. 그러면 클래식 정책이 다시 만들어집니다. MTD 앱에 대한 클래식 정책을 조건부 액세스를 위한 새 정책 형식으로 마이그레이션하는 것은 지원되지 않습니다.
 >
 > MTD 앱의 클래식 조건부 액세스 정책:
 >
@@ -130,7 +132,7 @@ Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defe
      [System Center Configuration Manager를 사용하여 Windows 10 컴퓨터 온보딩](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)에는 Microsoft Defender ATP 설정에 대한 자세한 정보가 포함되어 있습니다.
 
 7. **확인**, **만들기**를 차례로 선택하여 변경 내용을 저장하면 프로필이 생성됩니다.
-8. Microsoft Defender ATP를 사용하여 평가하려는 디바이스에 [디바이스 구성 프로필을 할당](../configuration/device-profile-assign.md)합니다.  
+8. Microsoft Defender ATP를 사용하여 평가하려는 디바이스에 [디바이스 구성 프로필을 할당](../configuration/device-profile-assign.md)합니다.
 
 ## <a name="create-and-assign-the-compliance-policy"></a>규정 준수 정책 만들기 및 할당
 

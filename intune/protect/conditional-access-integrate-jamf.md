@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/20/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
-ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
+ms.openlocfilehash: 6615933f604f2ff4156885bc6559af7e46d4ccb2
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627656"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188512"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>준수를 위해 Intune과 Jamf Pro 통합
 
@@ -70,7 +70,7 @@ Intune을 Jamf Pro에 연결하려면 다음을 수행합니다.
 2. Intune을 Jamf Pro와 통합할 수 있도록 설정합니다.
 3. Jamf Pro에서 조건부 액세스를 구성합니다.
 
-## <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory에서 애플리케이션 만들기
+### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory에서 애플리케이션 만들기
 
 1. [Azure Portal](https://portal.azure.com)에서 **Azure Active Directory** > **앱 등록**으로 이동한 후 **새 등록**을 선택합니다. 
 
@@ -102,15 +102,17 @@ Intune을 Jamf Pro에 연결하려면 다음을 수행합니다.
     > [!NOTE]
     > 클라이언트 암호가 만료되면 Azure에서 새 클라이언트 암호를 만든 후 Jamf Pro에서 조건부 액세스 데이터를 업데이트해야 합니다. Azure를 사용하면 서비스 중단을 방지하기 위해 이전 비밀과 새 비밀을 모두 활성화할 수 있습니다.
 
-## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune을 Jamf Pro와 통합할 수 있도록 설정
+### <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune을 Jamf Pro와 통합할 수 있도록 설정
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **Microsoft Intune** > **디바이스 준수** > **파트너 디바이스 관리**로 이동합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-2. 이전 절차 중 저장한 애플리케이션 ID를 **Jamf Azure Active Directory 앱 ID** 필드에 붙여넣어 Jamf용 준수 커넥터를 사용하도록 설정합니다.
+2. **테넌트 관리** > **커넥터 및 토큰** > **파트너 디바이스 관리**를 선택합니다.
 
-3. **저장**을 선택합니다.
+3. 이전 절차에서 저장한 애플리케이션 ID를 **Jamf Azure Active Directory 앱 ID 지정** 필드에 붙여넣어 *Jamf용 준수 커넥터*를 사용하도록 설정합니다.
 
-## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro에서 Microsoft Intune 통합 구성
+4. **저장**을 선택합니다.
+
+### <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro에서 Microsoft Intune 통합 구성
 
 1. Jamf Pro에서 **전역 관리** > **조건부 액세스**로 이동합니다. **macOS Intune 통합** 탭에서 **편집** 단추를 클릭합니다.
 
@@ -125,17 +127,22 @@ Intune을 Jamf Pro에 연결하려면 다음을 수행합니다.
 Intune과 Jamf 사이의 통합을 구성한 후에는 [규정 준수 정책을 Jamf에서 관리되는 디바이스에 적용](conditional-access-assign-jamf.md)해야 합니다.
 
 
-## <a name="disconnect-jamf-pro-and-intune"></a>Jamf Pro와 Intune 연결 끊기 
+## <a name="disconnect-jamf-pro-and-intune"></a>Jamf Pro와 Intune 연결 끊기
 
-조직에서 Jamf Pro로 Mac을 관리하고 싶지 않으며 사용자를 Intune으로 관리하게 하려면, Jamf Pro와 Intune의 연결을 끊어야 합니다. Jamf Pro 콘솔을 사용하여 연결을 제거하세요. 
+조직에서 Jamf Pro로 Mac을 관리하고 싶지 않으며 사용자를 Intune으로 관리하게 하려면, Jamf Pro와 Intune의 연결을 끊어야 합니다. Jamf Pro 콘솔을 사용하여 연결을 제거하세요.
 
 1. Jamf Pro에서 **전역 관리** > **조건부 액세스**로 이동합니다. **macOS Intune 통합** 탭에서 **편집**을 선택합니다.
+
 2. **macOS용 Intune 통합 사용** 확인란을 선택 취소합니다.
+
 3. **저장**을 선택합니다. Jamf Pro가 Intune에 구성을 보내고 통합이 종료됩니다.
-4. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다. **Microsoft Intune** > **디바이스 준수** > **파트너 디바이스 관리**로 이동해 상태가 **종료됨**으로 변경되었는지 확인합니다. 
+
+4. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+
+5. **테넌트 관리** > **커넥터 및 토큰** > **파트너 디바이스 관리**를 선택하여 이제 상태가 **종료됨**인지 확인합니다.
 
    > [!NOTE]
-   > 조직의 Mac 디바이스는 콘솔에 표시되는 날짜(3개월)에 제거됩니다. 
+   > 조직의 Mac 디바이스는 콘솔에 표시되는 날짜(3개월)에 제거됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

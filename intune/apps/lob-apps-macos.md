@@ -18,18 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9802b85a9674535cea62ae28f135153352ef76c
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: aeae231e07ceeee6a54f8f60ec5d53cc96d55be0
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813275"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117889"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Microsoft Intune에 macOS LOB(사업 부문) 앱을 추가하는 방법
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 이 문서의 정보를 사용하면 Microsoft Intune에 macOS 사업 부문 앱을 추가하는 데 도움이 됩니다. 사업 부문 파일을 Microsoft Intune에 업로드하기 전에 *.pkg* 파일을 전처리하려면 외부 도구를 다운로드해야 합니다. *.pkg* 파일의 전처리는 macOS 디바이스에서 수행해야 합니다.
+
+> [!NOTE]
+> macOS Catalina 10.15 릴리스부터 앱을 Intune에 추가하기 전에 macOS LOB 앱이 공증되었는지 확인해야 합니다. LOB 앱 개발자가 앱을 공증하지 않은 경우 사용자의 macOS 디바이스에서 앱이 실행되지 않습니다. 앱이 공증되었는지 확인하는 방법에 대한 자세한 내용은 [macOS 앱을 공증하여 macOS Catalina 준비](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Notarizing-your-macOS-apps-to-prepare-for-macOS/ba-p/808579)를 참조하세요.
 
 > [!NOTE]
 > macOS 디바이스 사용자는 주식, 지도 같은 기본 제공 macOS 앱 중 일부를 제거할 수 있으나 Intune을 사용하여 해당 앱을 다시 배포할 수는 없습니다. 최종 사용자가 이러한 앱을 삭제하는 경우 앱 스토어로 이동하여 수동으로 다시 설치해야 합니다.

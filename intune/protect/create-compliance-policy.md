@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786070"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188256"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 준수 정책 만들기
 
@@ -61,19 +61,15 @@ ms.locfileid: "72786070"
 
 ## <a name="create-the-policy"></a>정책 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 준수**를 선택합니다. 다음과 같은 옵션을 선택할 수 있습니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-    - **개요**: 준수 디바이스, 평가되지 않는 디바이스 등 디바이스의 요약 및 개수를 보여 줍니다. 또한 정책 및 정책의 개별 설정을 나열합니다. [Intune 디바이스 준수 정책 모니터링](compliance-policy-monitor.md)에서는 몇 가지 유용한 정보를 제공합니다.
-    - **관리**: 디바이스 정책을 만들고, [알림](quickstart-send-notification.md)을 비준수 디바이스에 보내고, [네트워크 펜싱](use-network-locations.md)을 사용하도록 설정합니다.
-    - **모니터**: 디바이스, 설정 및 정책 수준에서 디바이스의 준수 상태를 확인합니다. [Intune 디바이스 준수 정책 모니터링](compliance-policy-monitor.md)은 좋은 리소스입니다. 또한 로그를 확인하고 디바이스의 위협 에이전트 상태를 확인합니다.
-    - **설치**: [기본 제공 준수 정책](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies)을 사용하고, [Microsoft Defender ATP(Advanced Threat Protection)](advanced-threat-protection.md)를 사용하도록 설정하고, [Mobile Threat Defense 커넥터](mobile-threat-defense.md)를 추가하고, [Jamf](conditional-access-integrate-jamf.md)를 사용합니다.
+2. **디바이스** > **준수 정책** > **정책 만들기**를 선택합니다.
 
-3. **정책** > **정책 만들기**를 선택합니다. 다음 속성을 입력합니다.
+3. 다음 속성을 지정합니다.
 
-   - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 **iOS 무단 해제 디바이스를 비준수로 표시**는 좋은 정책 이름입니다.  
+   - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 **iOS 무단 해제 디바이스를 비준수로 표시**는 좋은 정책 이름입니다.
 
-   - **설명**: 정책에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.  
+   - **설명**: 정책에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
 
    - **플랫폼**: 디바이스 플랫폼을 선택합니다. 옵션은 다음과 같습니다.
      - **Android 디바이스 관리자**
@@ -99,7 +95,7 @@ ms.locfileid: "72786070"
    - **위치**’(Android 디바이스 관리자)’:  정책에서 디바이스의 위치에 따라 규정 준수를 강제 적용할 수 있습니다. 기존 위치에서 선택합니다. 아직 위치가 없나요? Intune에서 [위치(네트워크 펜스) 사용](use-network-locations.md)에는 몇 가지 지침이 제공됩니다.  
 
    - **비준수에 대한 작업**: 준수 정책을 따르지 않는 디바이스의 경우 자동으로 적용할 작업 시퀀스를 추가할 수 있습니다. 디바이스가 비준수로 표시되면 일정을 변경할 수 있습니다(예: 하루 후). 디바이스가 준수하지 않으면 사용자에게 이메일을 보내는 두 번째 작업을 구성할 수도 있습니다.
-    
+
      [비규격 디바이스에 대한 작업 추가](actions-for-noncompliance.md)는 사용자에게 알림 이메일을 생성하는 작업을 비롯한 자세한 정보를 제공합니다.
 
      예를 들어 위치 기능을 사용하고 규정 준수 정책에서 위치를 추가합니다. 비준수에 대한 기본 작업은 하나 이상의 위치를 선택하는 경우에 적용됩니다. 디바이스가 선택한 위치에 연결되지 않으면 즉시 비준수로 간주됩니다. 사용자에게 하루와 같은 유예 기간을 지정할 수 있습니다.
@@ -112,8 +108,10 @@ ms.locfileid: "72786070"
 
 정책이 만들어지면 다음 단계에서 그룹에 정책을 할당합니다.
 
-1. 직접 만든 정책을 선택합니다. 기존 정책은 **디바이스 준수** > **정책**에 있습니다.
-2. 정책 > **할당**을 선택합니다. Azure AD(Active Directory) 보안 그룹을 포함하거나 제외할 수 있습니다.
+1. 직접 만든 정책을 선택합니다. 기존 정책은 **디바이스** > **준수 정책** > **정책**에 있습니다.
+
+2. *정책* > **할당**을 선택합니다. Azure AD(Active Directory) 보안 그룹을 포함하거나 제외할 수 있습니다.
+
 3. **선택된 그룹**을 선택하면 Azure AD 보안 그룹이 표시됩니다. 이 정책을 적용할 그룹을 선택한 후 **저장**을 선택하여 정책을 배포합니다.
 
 정책의 대상으로 지정된 사용자 또는 디바이스는 Intune을 사용하여 체크 인할 때 준수 여부가 평가됩니다.
@@ -122,8 +120,9 @@ ms.locfileid: "72786070"
 
 정책을 할당하면 영향을 받는 사용자 수를 **평가**할 수도 있습니다. 이 기능은 사용자 수를 계산하며, 디바이스 수는 계산하지 않습니다.
 
-1. Intune에서 **디바이스 준수** > **정책**을 선택합니다.
-2. 정책을 선택한 후 **할당** > **평가**를 선택합니다. 메시지는 이 정책의 대상이 되는 사용자 수를 보여 줍니다.
+1. Intune에서 **디바이스** > **준수 정책** > **정책**을 선택합니다.
+
+2. *정책* > **할당** > **평가**를 선택합니다. 메시지는 이 정책의 대상이 되는 사용자 수를 보여 줍니다.
 
 **평가** 단추가 회색으로 표시되면 정책이 하나 이상의 그룹에 할당되었는지 확인합니다.
 

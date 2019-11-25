@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5bcdf9c3218df91bea85858ea21e88718e81633
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498322"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199245"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune 관리 앱에서 회사 데이터만 초기화하는 방법
 
@@ -44,23 +44,12 @@ WIP(Windows Information Protection) 정책은 MDM 사용자가 Windows 10 디바
 
 ## <a name="create-a-wipe-request"></a>초기화 요청 만들기
 
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
-
-2. **모든 서비스**를 선택하고 필터 텍스트 상자에 **Intune**을 입력하고 **Intune**을 선택합니다. Intune 창이 열리면 **클라이언트 앱** 창을 선택합니다.
-
-    ![Microsoft Intune 창 스크린샷](./media/apps-selective-wipe/apps-selective-wipe01.png)
-
-3. **클라이언트 앱 창**에서 **앱 선택적 초기화**를 선택합니다.
-
-4. **새 초기화 요청**을 선택합니다. **새 초기화 요청** 창이 열립니다.
-
-    ![새 초기화 요청 창의 스크린샷](./media/apps-selective-wipe/AzurePortal_MAM_NewWipeRequest.png)
-
-5. 사용자를 선택한 다음, **선택**을 선택하여 초기화할 앱 데이터의 사용자를 선택합니다.
-
-6. 다음으로 **새 초기화 요청** 창에서 **디바이스**를 선택합니다. 선택한 사용자와 연결된 모든 디바이스를 나열하고 디바이스 이름(사용자가 정의한 이름) 및 디바이스 유형, 디바이스 플랫폼의 두 열도 제공하는 **디바이스 선택** 창이 열립니다. 초기화하려는 디바이스를 선택합니다.
-
-7. 이제 **새 초기화 요청** 창으로 다시 전환됩니다. 초기화 요청을 수행하려면 **확인**을 클릭합니다.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+2. Intune 창에서 **클라이언트 앱** > **앱 선택적 초기화** > **초기화 요청 만들기**를 선택합니다.<br>
+   **초기화 요청 만들기** 창이 표시됩니다.
+3. **사용자 선택**을 클릭하여 앱 데이터를 초기화하려는 사용자를 선택한 다음, **사용자** 창 맨 아래에서 **선택**을 클릭합니다.
+4. **디바이스 선택**을 클릭하여 디바이스를 선택한 다음, **디바이스 선택** 창의 맨 아래에서 **선택**을 클릭합니다.
+5. **만들기**를 클릭하여 초기화 요청을 수행합니다.
 
 서비스에서 디바이스의 각 보호된 앱 및 초기화 요청과 연결된 사용자에 대해 별도의 초기화 요청을 만들고 추적합니다.
 

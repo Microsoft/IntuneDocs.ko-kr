@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/18/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e648d2eff8fd95cd3c995e9cce1bd0c9dfff32da
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 0f82fce8cc31a831f2c032b85d6464e418bd215c
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889512"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058493"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Intune을 사용하여 Windows Holographic 및 HoloLens 디바이스의 다양한 디바이스 관리 기능 관리 및 사용
 
@@ -42,6 +42,7 @@ Azure AD(Active Directory)는 Windows Holographic for Business를 실행하는 �
 - **[Windows 디바이스에 대한 대량 등록](../enrollment/windows-bulk-enroll.md)** : 여러 새로운 Windows 디바이스를 Azure AD(Active Directory) 및 Intune에 조인할 수 있습니다. 이 기능을 대량 등록이라고 하며, 프로비전 패키지를 사용합니다. 이러한 패키지는 Windows Holographic for Business를 실행하는 디바이스를 Azure AD 테넌트에 조인하고, Intune에 등록합니다.
 
 ## <a name="company-portal"></a>회사 포털
+
 **[회사 포털 앱 구성](../apps/company-portal-app.md)**
 
 Intune은 사용자가 회사 데이터에 액세스하고, 디바이스를 등록하고, 앱을 설치하고, IT 부서에 문의하는 회사 포털 앱을 제공합니다. Windows Holographic for Business를 실행하는 디바이스에 대한 회사 포털 앱을 사용자 지정할 수 있습니다.
@@ -54,6 +55,7 @@ Intune은 사용자가 회사 데이터에 액세스하고, 디바이스를 등�
 - 설정 앱 또는 회사 포털 앱에서 [수동으로 디바이스 동기화](/intune-user-help/sync-your-device-manually-windows)
 
 ## <a name="compliance-policy"></a>준수 정책
+
 **[디바이스 준수 정책 만들기](../protect/compliance-policy-create-windows.md)**
 
 준수 정책은 디바이스가 준수하려면 반드시 충족해야 할 규칙과 설정입니다. 비준수 디바이스용 회사 리소스에 대한 액세스를 차단하려면 조건부 액세스를 통해 이러한 정책을 사용합니다. Intune에서 Windows Holographic for Business을 실행하는 디바이스에 대한 액세스를 허용하거나 차단하기 위한 준수 정책을 만듭니다. 예를 들어 Bitlocker를 사용하도록 설정할 것을 요구하는 정책을 만들 수 있습니다.
@@ -61,6 +63,7 @@ Intune은 사용자가 회사 데이터에 액세스하고, 디바이스를 등�
 **[준수 정책 시작](../protect/device-compliance-get-started.md)** 을 참조합니다.
 
 ## <a name="deploy-and-manage-apps"></a>앱 배포 및 관리
+
 **[Intune에 앱 추가](../apps/apps-add.md)**
 
 Intune을 사용하여 Windows Holographic for Business를 실행하는 디바이스에 앱을 추가할 수 있습니다. 다음을 포함하여 앱을 배포하는 방법은 많습니다.
@@ -83,6 +86,7 @@ Microsoft Intune은 Windows Holographic for Business를 실행하는 Microsoft H
 > Windows 10 Holographic for Business 1607을 실행하는 HoloLens 디바이스는 비즈니스용 Microsoft Store에서 구입한, 온라인 사용이 허가된 앱을 지원하지 않습니다. 자세한 내용은 [HoloLens에 앱 설치](/hololens/holographic-store-apps)를 참조하세요.
 
 ## <a name="device-actions"></a>디바이스 작업
+
 Intune에는 IT 관리자가 디바이스에서 로컬로 또는 Azure Portal에서 Intune을 사용하여 원격으로 다른 작업을 수행할 수 있는 몇 가지 기본 제공 작업이 있습니다. 또한 사용자가 Intune 회사 포털에서 Intune에 등록된 개인적으로 소유한 디바이스로 원격 명령을 실행할 수 있습니다.
 
 Windows Holographic for Business를 실행하는 디바이스를 사용할 때 다음 작업을 사용할 수 있습니다. 
@@ -96,14 +100,16 @@ Windows Holographic for Business를 실행하는 디바이스를 사용할 때 �
 **[Microsoft Intune 디바이스 관리란?](../remote-actions/device-management.md)** 은 Azure Portal을 사용하여 디바이스를 관리하는 방법에 대한 유용한 리소스입니다. 
 
 ## <a name="device-categories-and-groups"></a>디바이스 범주 및 그룹
+
 **[디바이스를 그룹으로 분류](../enrollment/device-group-mapping.md)**
 
 판매, 회계, 인사 등의 만든 범주 기반 그룹에 디바이스를 자동으로 추가하려면 Intune을 사용하여 디바이스 범주를 만들 수 있습니다. 이를 통해 Windows Holographic for Business를 실행 중인 디바이스 관리를 더 쉽게 할 수 있습니다.
 
-## <a name="device-configuration-profiles"></a>디바이스 구성 프로필 
+## <a name="device-configuration-profiles"></a>디바이스 구성 프로필
+
 **[구성 프로필 시작](../configuration/device-profiles.md) 및 [자신의 프로필 만들기](../configuration/device-profile-create.md)**
 
-Intune은 조직 내의 다른 디바이스에서 사용하거나 사용하지 않게 할 수 있는 설정 및 기능을 포함합니다. 이러한 설정 및 기능은 프로필을 사용하여 관리됩니다. 예를 들어 Cortana를 사용하도록 설정하거나 Windows Holographic for Business를 실행하는 디바이스에서 Windows Defender Smart Screen을 사용하는 프로필을 만들 수 있습니다.
+Intune은 조직 내의 다른 디바이스에서 사용하거나 사용하지 않게 할 수 있는 설정 및 기능을 포함합니다. 이러한 설정 및 기능은 프로필을 사용하여 관리됩니다. 예를 들어 Cortana를 사용하도록 설정하거나 Windows Holographic for Business를 실행하는 디바이스에서 Microsoft Defender Smart Screen을 사용하는 프로필을 만들 수 있습니다.
 
 프로필에서 OMA URI를 사용하여 일부 설정을 사용자 지정하고 디바이스 제한을 만들고 VPN(가상 프라이빗 네트워크) 및 Wi-Fi를 구성할 수 있습니다.
 
@@ -128,21 +134,29 @@ VPN(가상 프라이빗 네트워크)을 사용하면 사용자가 회사 네트
 또한 Windows Holographic for Business 디바이스에 무선 네트워크 설정을 할당하는 Intune에서 Wi-Fi 프로필을 만들 수 있습니다. Wi-Fi 프로필을 할당하면 최종 사용자는 네트워크 구성 없이도 회사 네트워크 액세스 권한을 가져옵니다. 예를 들어 Windows Holographic for Business 디바이스 전용 Wi-Fi 네트워크를 만들 수 있습니다.
 
 ## <a name="shared-multi-user-devices"></a>다중 사용자 디바이스 공유
+
 [공유 디바이스](../configuration/shared-user-device-settings-windows-holographic.md)
 
 Microsoft HoloLens와 같이 Windows Holographic for Business를 실행하는 디바이스에는 여러 사용자가 있을 수 있습니다. Intune에는 이러한 공유 디바이스에서 로컬 스토리지 및 계정 관리를 사용하여 전원 관리와 같은 다양한 기능을 제어할 수 있는 설정이 포함됩니다. 또한 서로 다른 운영 체제를 사용하여 디바이스에 구성 프로필을 적용할 수 있습니다. 예를 들어 디바이스 그룹에는 동일한 그룹에서 RS2 및 RS3를 실행하는 디바이스가 있을 수 있습니다.
 
 ## <a name="software-updates"></a>소프트웨어 업데이트
+
 **[소프트웨어 업데이트 관리](../protect/windows-update-for-business-configure.md)**
 
 Intune에는 Windows 10 디바이스용 업데이트 링이라는 기능이 포함되어 있습니다. 이러한 업데이트 링은 업데이트를 설치하는 방법을 결정하는 설정 그룹을 포함합니다. 예를 들어 업데이트를 설치하기 위한 유지 관리 기간을 만들거나 업데이트가 설치된 후 다시 시작을 선택할 수 있습니다. 업데이트 링은 Windows Holographic for Business를 실행하는 여러 디바이스에 적용할 수 있습니다.
 
 ## <a name="terms-and-conditions"></a>사용 약관
+
 **[사용자 액세스에 대한 회사의 사용 약관 설정](../enrollment/terms-and-conditions-create.md)**
 
 사용자가 디바이스를 등록하고 이메일을 포함한 회사 앱에 액세스하기 전에 사용자가 회사의 사용 약관에 동의할 것을 요구할 수 있습니다. Intune에서 사용 약관이 회사 포털에 표시되는 방식을 정의하고 또한 이러한 약관을 Windows Holographic for Business를 실행하는 디바이스에 할당합니다.
 
 ## <a name="windows-hello-for-business"></a>비즈니스용 Windows Hello
+
 **[비즈니스용 Windows Hello 사용](../protect/windows-hello.md)**
 
 비즈니스용 Hello는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 대체 로그인 방법입니다. 비즈니스용 Hello를 사용하면 Windows Holographic for Business 디바이스는 설정한 최소 길이의 PIN으로 로그인할 수 있습니다.
+
+## <a name="next-steps"></a>다음 단계
+
+[Intune 설정](setup-steps.md).

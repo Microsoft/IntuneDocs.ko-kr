@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
-ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
+ms.openlocfilehash: 71045489ac703860073a3023e6d6170778117d33
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73882487"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199285"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -52,6 +52,46 @@ ms.locfileid: "73882487"
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+## <a name="week-of-november-18-2019"></a>2019년 11월 18일 주
+
+### <a name="device-configuration"></a>디바이스 구성
+
+#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 기능 업데이트(공개 미리 보기)<!-- 2384877 -->
+
+이제 Windows 10 디바이스에 [Windows 10 기능 업데이트](../protect/windows-update-for-business-configure.md#windows-10-feature-updates)를 배포할 수 있습니다. Windows 10 기능 업데이트는 디바이스에 설치하고 유지할 Windows 10 버전을 설정하는 새로운 소프트웨어 업데이트 정책입니다. 기존 Windows 10 업데이트 링과 함께 이 새로운 정책 유형을 사용할 수 있습니다.
+
+Windows 10 기능 업데이트 정책이 적용되는 디바이스는 지정된 버전의 Windows를 설치하고 정책이 편집 또는 제거될 때까지 해당 버전으로 유지됩니다. 이후 버전의 Windows를 실행하는 디바이스는 현재 버전으로 유지됩니다. 특정 버전의 Windows로 유지되는 디바이스는 Windows 10 업데이트 링에서 해당 버전에 대한 품질 및 보안 업데이트를 계속 설치할 수 있습니다.
+
+이번 주에 이 새로운 유형의 정책이 테넌트로 롤아웃되기 시작합니다. 테넌트에서 이 새로운 정책을 아직 사용할 수 없는 경우 곧 제공될 예정입니다.
+
+### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
+
+#### <a name="updated-support-experience---5012398---"></a>업데이트된 지원 환경<!-- 5012398 -->
+
+오늘부터 [Intune에 대한 도움말 및 지원 받기](get-support.md)를 위한 업데이트되고 간소화된 콘솔 내 환경이 테넌트에 롤아웃됩니다. 이 새로운 환경을 아직 사용할 수 없는 경우 곧 제공될 예정입니다.
+
+콘솔 내의 일반 문제 검색과 피드백, 그리고 고객 지원팀 연락에 이용하는 워크플로도 개선되었습니다. 지원 문제를 열 때 언제 콜백이나 이메일 회신을 받게 될지에 대한 예상 정보가 실시간으로 표시되며 프리미어 및 통합 지원 고객은 문제의 심각도를 간편히 지정해 지원을 더 신속히 받을 수 있습니다.
+
+## <a name="week-of-november-11-2019"></a>2019년 11월 11일 주  
+
+### <a name="app-management"></a>앱 관리  
+
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>회사 포털의 개선된 macOS 등록 환경 <!-- 5074349 WNready -->  
+macOS용 회사 포털 등록 환경은 iOS용 회사 포털 등록 환경과 보다 긴밀하게 정렬된 더 간단한 등록 프로세스를 제공합니다. 이제 디바이스 사용자에게 다음과 같은 이점이 제공됩니다.  
+
+* 보다 간소화된 사용자 인터페이스.  
+* 향상된 등록 확인 목록.  
+* 보다 명확하게 설명된 디바이스 등록 방법.  
+* 개선된 문제 해결 옵션.  
+
+#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Windows 회사 포털 앱에서 시작된 웹앱<!-- 5030972 -->
+이제 최종 사용자가 Windows 회사 포털 앱에서 직접 웹앱을 시작할 수 있습니다. 최종 사용자는 웹앱을 선택한 다음 **브라우저에서 열기** 옵션을 선택할 수 있습니다. 게시된 웹 URL이 웹 브라우저에서 직접 열립니다. 이 기능은 다음 주에 출시될 예정입니다. 웹앱에 대한 자세한 내용은 [Microsoft Intune에 웹앱 추가](~/apps/web-app.md)를 참조하세요.  
+
+
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Windows 10용 회사 포털의 새 할당 유형 열 <!-- 5459950 WNready -->
+회사 포털 > **설치된 앱** > **할당 유형** 열의 이름이 **조직에서 요구**로 변경되었습니다.  이 열 아래에 **예** 또는 **아니요** 값이 표시되어 조직에서 해당 앱을 필수 또는 선택 사항으로 지정했는지 나타냅니다. 이러한 변경 사항은 디바이스 사용자가 사용 가능한 앱 개념을 혼동하기 때문에 적용된 것입니다. 최종 사용자는 [디바이스에 앱 설치 및 공유](/intune-user-help/install-apps-cpapp-windows)에서 회사 포털에서 앱을 설치하는 자세한 내용을 확인할 수 있습니다. 최종 사용자를 위해 회사 포털 앱을 구성하는 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](~/apps/company-portal-app.md)을 참조하세요.  
+
 
 ## <a name="week-of-november-4-2019"></a>2019년 11월 4일 주
 
@@ -139,7 +179,7 @@ Intune 등록과 회사 포털은 현재 iOS 버전 11 이상을 지원합니다
 
 ### <a name="device-configuration"></a>디바이스 구성
 
-#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices---2266073----"></a>Windows 10 이상 디바이스용 새 디바이스 펌웨어 구성 인터페이스 프로필<!-- 2266073  -->
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices-public-preview---2266073----"></a>Windows 10 이상 디바이스용 새 디바이스 펌웨어 구성 인터페이스 프로필(공개 미리 보기)<!-- 2266073  -->
 
 Windows 10 이상에서는 디바이스 구성 프로필을 만들어 설정 및 기능을 제어할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼용 **Windows 10 이상**). 이 업데이트에는 Intune에서 UEFI(BIOS) 설정을 관리하는 데 사용되는 새 디바이스 펌웨어 구성 인터페이스 프로필 유형이 있습니다.
 
@@ -516,7 +556,7 @@ Intune Endpoint Protection 설정을 사용하여 Windows 버전 1909 이상을 
 이 설정은 고정 데이터 드라이브에서 OS 드라이브 복구(bootmgr 또는 WinRE를 사용하여) 및 복구 암호를 잠금 해제 후 클라이언트 기반 복구 암호 새로 고침을 시작합니다. 이 설정은 사용된 특정 복구 암호를 새로 고치며, 볼륨에서 사용되지 않은 다른 암호는 변경되지 않은 상태로 유지됩니다. 자세한 내용은[ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)에 대한 BitLocker CSP 설명서를 참조하세요.
 
 #### <a name="tamper-protection-for-windows-defender-antivirus---4705448----------"></a>Windows Defender 바이러스 백신에 대한 변조 보호<!-- 4705448        -->
-Intune을 사용하여 Windows Defender 바이러스 백신의 *변조 보호*를 관리합니다. Windows 10 엔드포인트 보호를 위해 디바이스 구성 프로필을 사용하는 경우 Microsoft Defender Security Center 그룹에서 [변조 보호 설정](../protect/endpoint-protection-windows-10.md#windows-defender-security-center)을 찾을 수 있습니다. 변조 보호 제한을 켜려면 변조 보호를 *사용*으로 설정하고, 끄려면 *사용 안 함*으로 설정하고, 디바이스를 현재 구성 상태로 두려면 *구성되지 않음*으로 설정합니다.  
+Intune을 사용하여 Windows Defender 바이러스 백신의 *변조 보호*를 관리합니다. Windows 10 엔드포인트 보호를 위해 디바이스 구성 프로필을 사용하는 경우 Microsoft Defender Security Center 그룹에서 [변조 보호 설정](../protect/endpoint-protection-windows-10.md#microsoft-defender-security-center)을 찾을 수 있습니다. 변조 보호 제한을 켜려면 변조 보호를 *사용*으로 설정하고, 끄려면 *사용 안 함*으로 설정하고, 디바이스를 현재 구성 상태로 두려면 *구성되지 않음*으로 설정합니다.  
 
 변조 보호에 대한 자세한 내용은 Windows 설명서에서 [ 변조 보호를 사용하여 보안 설정 변경 방지](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)를 참조하세요.
 

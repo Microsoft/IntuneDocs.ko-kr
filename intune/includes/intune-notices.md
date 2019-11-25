@@ -4,17 +4,37 @@ description: 파일 포함
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 11/4/2019
+ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: b59419be9f381a1c646a7778b73ed172526f6ef6
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74125542"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188427"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
+
+### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Intune Outlook APP(앱 보호 정책) 업데이트<!--2576686-->
+메시지 센터에서 MC195618을 받은 경우 작업을 수행해야 할 수 있습니다. Microsoft 365 로드맵 기능 ID: 56325 및 56326에서 공지한 대로, Intune 및 iOS 및 Android용 Outlook은 메일 알림과 일정 미리 알림에서 중요한 데이터를 제한하는 기능을 롤아웃 중입니다. 이러한 개선의 결과로 iOS 및 Android용 Outlook은 현재 알림을 관리하는 데 활용하는 여러 데이터 보호 앱 구성 키에 대한 지원을 중단할 예정입니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+새 기능이 아직 제공되지 않지만, 제공될 경우 다음 앱 구성 키가 iOS 및 Android용 Outlook에서 더 이상 작동하지 않습니다.
+- com.microsoft.outlook.Mail.NotificationsEnabled
+- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
+- com.microsoft.outlook.Calendar.NotificationsEnabled
+- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+이 새로운 기능에 대한 준비로 Intune 앱 보호 정책 데이터 보호 설정 "조직 데이터 알림"을 "조직 데이터 차단" 값으로 구성하는 것이 좋습니다. 2019년 12월 16일부터 iOS 및 Android 용 Outlook은 "조직 데이터 알림" 데이터 보호 설정을 적용하며 더 이상 앞서 언급한 키를 지원하지 않습니다. 이 새로운 설정을 구성하면 위의 구성 키가 더 이상 지원되지 않을 때 중요한 데이터가 유출되지 않습니다. 또한 추가 앱 구성 설정인 "일정 알림"을 사용하여 데이터 보호 설정인 "조직 데이터 알림"을 "조직 데이터 차단"으로 설정하면 Outlook에서 추가 세분성을 제공합니다. 앱 보호 정책 설정과 이 앱 구성 설정의 조합은 메일 알림에서 중요한 정보를 제한하는 동시에 일정 알림에 중요한 정보를 노출하여 사용자가 알림 또는 알림 센터를 빠르게 훑어보고 회의에 참석할 수 있습니다.
+
+#### <a name="additional-information"></a>추가 정보
+APP 설정 및 Outlook 설정에 대한 자세한 내용은 다음을 참조하세요.
+- [앱 보호 정책 설정, Android](../apps/app-protection-policy-settings-android.md)
+- [앱 보호 정책 설정, iOS](../apps/app-protection-policy-settings-ios.md)
+- [iOS 및 Android용 Outlook 앱 구성 설정 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 변경 계획: Windows 10, 버전 1703 회사 포털 지원 종료<!--5026679-->
 Windows 10, 버전 1703(Windows 10, RS2라고도 함)은 2019년 10월 8일 자로 Enterprise 및 EDU Edition에 대한 서비스가 중단되었습니다. Intune은 2019년 12월 26일부터 RS2/RS1용 회사 포털 앱에 대한 지원을 종료합니다.
@@ -40,7 +60,7 @@ Windows 10, 버전 1703(Windows 10, RS2라고도 함)은 2019년 10월 8일 자�
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요? 
 Intune Managed Browser에서 Microsoft Edge로 원활하게 전환하려면 다음 단계를 사전에 수행하는 것이 좋습니다. 
 
-1. 앱 보호 정책(MAM이라고도 함) 및 앱 구성 설정의 대상으로 iOS 및 Android용 Microsoft Edge를 지정합니다. 기존 정책의 대상을 Microsoft Edge로 지정하기만 해도 Intune Managed Browser 정책을 Microsoft Edge에 다시 사용할 수 있습니다.  
+1. 앱 보호 정책(MAM이라고도 함) 및 앱 구성 설정의 대상으로 iOS 및 Android용 Microsoft Edge를 지정합니다. 기존 정책의 대상을 Microsoft Edge로 지정하면 Intune Managed Browser 정책을 Microsoft Edge에 다시 사용할 수 있습니다.  
 2. 사용자 환경의 모든 MAM 보호 앱에서 앱 보호 정책 설정인 "다른 앱을 사용한 웹 콘텐츠 전송 제한"이 "정책 관리 브라우저"로 설정되어 있는지 확인합니다. 
 3. 모든 MAM 보호 앱에 대해 앱 구성 설정 "com.microsoft.intune.useEdge"를 true로 설정합니다. 다음 달 1911 릴리스부터 앱 보호 정책의 데이터 보호 섹션에서 "다른 앱을 사용한 웹 콘텐츠 전송 제한" 설정에 "Microsoft Edge"를 선택하도록 구성하여 2단계와 3단계를 완료할 수 있습니다. 
 
@@ -48,7 +68,6 @@ iOS 및 Android의 웹 클립에 대한 지원이 제공됩니다. 이 지원이
 
 #### <a name="additional-information"></a>추가 정보
 자세한 내용은 [앱 보호 정책과 함께 Microsoft Edge 사용](../apps/manage-microsoft-edge.md)에 대한 문서를 참조하거나 [지원 블로그 게시물](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)을 참조하세요.
-
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>변경 계획: Intune에서 Android Enterprise 전용 디바이스를 등록할 때 업데이트된 환경<!--5198878-->
 Intune의 11월 또는 1911 릴리스에서는 Android Enterprise 전용 디바이스에 SCEP 디바이스 인증서 배포 지원을 추가하여 Wi-Fi 프로필에 대한 인증서 기반 액세스를 지원합니다. 이러한 변경 내용에는 Android Enterprise 전용 디바이스를 등록하는 경우 몇 가지 사소한 변경 내용도 포함됩니다.
@@ -65,23 +84,9 @@ Intune의 11월 또는 1911 릴리스에서는 Android Enterprise 전용 디바�
 #### <a name="additional-information"></a>추가 정보
 [https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
-### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>변경 계획: Intune 콘솔에서 ‘Siri 명령의 서버 쪽 로깅’ 설정이 제거됩니다. <!-- 5468501-->
-
-Intune 서비스의 11월 업데이트에서 Intune 콘솔에서 "Siri 명령의 서버 쪽 로깅" 설정을 제거할 예정입니다. 이 변경 사항은 Apple 측에서 이미 설정을 제거한 상태입니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-11월 업데이트나 1911이 11월 중반에 롤아웃되면, Intune 콘솔에서 iOS 구성 프로필에 대해 디바이스 제한 메뉴(기본 제공 앱)에서 이 설정이 제거된 것을 확인할 수 있습니다. 정책 및 대상 디바이스의 관리 프로필에 나타날 수 있지만 설정은 디바이스에 영향을 주지 않습니다. 관리 프로필에 표시되더라도 현재 디바이스에서 작동하지 않으므로 기능에 많은 영향을 미치지 않을 것으로 예상합니다.
-
-다음 두 경로 중 하나를 선택할 수 있습니다.
-- 정책에서 이 설정을 삭제하려는 경우 이 설정이 있는 프로필로 이동하여 약간 편집하고 정책을 저장합니다. 이 정책은 백 엔드에서 다시 컴퓨팅되고 설정은 정책에서 삭제됩니다.
-- 이 작업을 수행하지 않도록 선택하면 최종 사용자는 디바이스의 관리 프로필에서 이 설정을 볼 수 있지만 설정은 적용되지 않습니다.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
-위의 섹션에 따라 작업을 수행하거나 정책을 그대로 둘 수 있습니다. 이 변경 내용이 롤아웃될 때 새로운 기능 페이지 및 설명서를 업데이트할 예정입니다.
-
 ### <a name="end-of-support-for-legacy-pc-management"></a>레거시 PC 관리에 대한 지원 종료
 
-레거시 PC 관리 지원이 2020년 10월 15일 종료됩니다. 디바이스가 Intune에서 계속 관리되도록 하려면 디바이스를 Windows 10으로 업그레이드하고 MDM 디바이스로 다시 등록하세요.
+레거시 PC 관리 지원이 2020년 10월 15일 종료됩니다. 디바이스가 Intune에서 계속 관리되도록 하려면 디바이스를 Windows 10으로 업그레이드하고 MDM(모바일 디바이스 관리) 디바이스로 다시 등록하세요.
 
 [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2107122)
 
@@ -93,7 +98,7 @@ Google의 이러한 변경으로 인해 Intune 사용자는 다음과 같은 방
 - Intune은 Android 10 이상(Android Q라고도 함)을 실행하는 디바이스 관리자 관리형 Android 디바이스에 대한 지원을 2020년 여름까지만 제공할 수 있습니다. 이 날짜는 Android의 차기 주 버전이 출시될 것으로 예상되는 날짜입니다.   
 - 2020 여름 이후에 Android 10 이상을 실행하는 디바이스 관리자 관리형 디바이스는 더 이상 완전히 관리할 수는 없게 됩니다.       
 - Android 10 미만의 Android 버전을 유지하는 디바이스 관리자 관리형 Android 디바이스는 영향을 받지 않으며, 디바이스 관리자를 통해 계속해서 완전히 관리할 수 있습니다.    
-- Android 10 이상을 실행하는 모든 디바이스에 대해 Google은 회사 포털과 같은 디바이스 관리자 관리 에이전트가 디바이스 식별자 정보에 액세스하는 기능을 제한하고 있습니다. 이러한 점은 디바이스를 Android 10 이상으로 업데이트한 이후에 다음 Intune 기능에 영향을 줍니다.  
+- Android 10 이상을 실행하는 모든 디바이스에 대해 Google은 회사 포털과 같은 디바이스 관리자 관리 에이전트가 디바이스 식별자 정보에 액세스하는 기능을 제한하고 있습니다. 이 제한 사항은 디바이스를 Android 10 이상으로 업데이트한 이후에 다음 Intune 기능에 영향을 줍니다.  
     - VPN에 대한 네트워크 액세스 제어는 더 이상 작동하지 않습니다.   
     - IMEI 또는 일련 번호를 사용하여 회사 소유의 디바이스를 식별해도 디바이스가 회사 소유로 자동으로 표시되지 않습니다.  
     - IMEI 및 일련 번호는 Intune의 IT 관리자에게 더 이상 표시되지 않습니다. 
@@ -108,31 +113,6 @@ Google의 이러한 변경으로 인해 Intune 사용자는 다음과 같은 방
 #### <a name="additional-information"></a>추가 정보
 - [디바이스 관리자에서 Android Enterprise로 마이그레이션하기 위한 Google 지침](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [디바이스 관리자 API 사용 중단 계획에 대한 Google 설명서](https://developers.google.com/android/work/device-admin-deprecation)
-
-### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Android 회사 포털 앱을 최신 버전으로 업데이트 <!--4536963-->
-Intune은 Android 회사 포털 앱에 대한 업데이트를 주기적으로 릴리스합니다. 2018년 11월에 Microsoft는 회사 포털 업데이트를 발표했습니다. 이 업데이트에는 Google의 기존 알림 플랫폼에서 FCM(Firebase Cloud Messaging)으로 변경할 수 있도록 지원하는 백엔드 스위치가 포함되어 있습니다. Google이 기존 알림 플랫폼을 사용 중지하고 FCM으로 이동하면 최종 사용자는 회사 포털 앱을 2018년 11월 릴리스 이상으로 업데이트해야 Google Play 스토어와 계속 통신할 수 있습니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-원격 측정 결과 회사 포털 버전이 5.0.4269.0 이전인 디바이스가 있습니다. 회사 포털 앱이 이 버전 이상이 설치되지 않은 경우 IT 팀에서 시작한 디바이스 작업(예: 삭제, 암호 재설정, 사용 가능한 애플리케이션 설치 및 필수 애플리케이션 설치, 인증서 등록)이 예상대로 작동하지 않을 수 있습니다. 디바이스가 Intune에 등록된 MDM인 경우 클라이언트 앱 - 검색된 앱으로 이동하여 회사 포털 버전과 사용자를 볼 수 있습니다. 회사 포털 앱의 이전 버전을 선택하면 회사 포털 앱을 업데이트하지 않은 최종 사용자가 어떤 디바이스를 가지고 있는지 확인할 수 있습니다.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
-업데이트되지 않은 Android 디바이스의 최종 사용자에게 Google Play를 통해 회사 포털 앱을 업데이트하도록 요청합니다. 사용자가 회사 포털 앱을 자동 업데이트하지 않은 경우 기술 지원팀에 알립니다. Google의 FCM 플랫폼 및 변경 사항에 대한 자세한 내용은 *추가 정보* 링크를 참조하시기 바랍니다.
-
-#### <a name="additional-information"></a>추가 정보
-https://firebase.google.com/docs/cloud-messaging/
-
-
-### <a name="new-full-screen-experience-coming-to-intune---4593669--"></a>Intune에 제공하는 새로운 전체 화면 환경 <!--4593669-->
-Azure Portal의 Intune에 업데이트된 UI 작성 및 편집 환경을 제공합니다. 이 새로운 환경은 하나의 블레이드 내에 압축된 마법사 스타일 형식을 사용하여 기존 워크플로를 단순화합니다. 이 업데이트는 "블레이드 확장"또는 딥 블레이드 이동 경로에 드릴다운해야 하는 모든 작성 및 편집 흐름을 제거합니다. 또한 앱 할당을 제외한 할당을 포함하도록 생성 워크플로도 업데이트됩니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-전체 화면 환경은 다음 몇 달 동안 portal.azure.com 및 devicemanagement.microsoft.com 모두에서 Intune으로 롤아웃됩니다. UI에 대한 이 업데이트는 기존 정책 및 프로필의 기능에 영향을 주지 않지만 약간 수정된 워크플로를 볼 수 있습니다. 예를 들어 새 정책을 생성할 때 정책을 생성한 후 할당을 설정하지 않고 이 흐름의 일부로 설정할 수 있습니다. 콘솔에서 새로운 환경이 어떻게 보일지 스크린샷에 대한 *추가 정보*는 블로그 게시물을 참조하세요.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
-어떠한 조치도 취할 필요가 없지만 필요한 경우 IT 전문가 지침 업데이트를 고려할 수 있습니다. 이 환경이 Azure Portal의 Intune에 있는 다양한 블레이드에 롤아웃됨에 따라 문서를 업데이트할 것입니다.
-
-#### <a name="additional-information"></a>추가 정보 
-https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>변경 계획: 향후 릴리스에서 Android 5.0 이상을 지원하도록 Android용 Intune 앱 SDK 및 앱 보호 정책 전환 <!--4911065 -->
 Intune은 향후 릴리스에 Android 5.x(Lollipop) 이상을 지원하도록 전환되고 있습니다. 최신 Intune 앱 SDK를 사용하여 래핑된 앱을 업데이트하고 디바이스를 업데이트합니다.
@@ -171,3 +151,5 @@ PC 관리 기능은 Windows 10 운영 체제에 직접 구축되므로 Windows 7
 - 기존 레거시 Intune 소프트웨어 클라이언트 관리 디바이스를 Microsoft 권장 솔루션으로 전환함으로써 MDM 관리를 사용하여 Windows 10을 관리합니다. Azure Portal에서 Intune용 MDM 관리를 사용하여 모든 새로운 Windows 10 PC를 등록합니다.
 
 자세한 정보는 [여기에서 블로그 게시물](https://aka.ms/Windows7_Intune)을 참조하세요.
+
+

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749321"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164572"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>단계별 시나리오 - 클라우드 관리 Modern Desktop
 
-Modern Desktop은 정보 근로자를 위한 최신 생산성 플랫폼입니다. Office 365 ProPlus 및 Windows 10은 Windows 10 및 Windows Defender Advanced Threat Protection의 최신 보안 기준과 함께 Modern Desktop의 핵심 구성 요소입니다. 
+Modern Desktop은 정보 근로자를 위한 최신 생산성 플랫폼입니다. Office 365 ProPlus 및 Windows 10은 Windows 10 및 Microsoft Defender Advanced Threat Protection의 최신 보안 기준과 함께 Modern Desktop의 핵심 구성 요소입니다. 
 
 클라우드에서 Modern Desktop을 관리하면 인터넷 전체 원격 작업을 추가로 활용할 수 있습니다. 클라우드 관리는 기본 제공 Windows 모바일 장치 관리 정책을 활용하고 로컬 Active Directory 그룹 정책에 대한 종속성을 제거합니다. 
 
@@ -33,7 +33,7 @@ Modern Desktop은 정보 근로자를 위한 최신 생산성 플랫폼입니다
 
 ## <a name="prerequisites"></a>전제 조건
 - [MDM 기관을 Intune으로 설정](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) - MDM(모바일 장치 관리) 기관 설정에 따라 디바이스를 관리하는 방법이 결정됩니다. IT 관리자가 MDM 기관을 설정해야 사용자가 관리를 위해 디바이스를 등록할 수 있습니다.
-- M356 E3 이상(또는 최상의 보안을 위해 M365 E5)
+- M365 E3 이상(또는 최상의 보안을 위해 M365 E5)
 - Windows 10 1903 디바이스(최상의 최종 사용자 환경을 위해 Windows Autopilot에 등록됨)
 - 이 단계별 시나리오를 완료하는 데 필요한 Intune 관리자 권한:
   - 디바이스 구성 읽기, 만들기, 삭제, 할당 및 업데이트
@@ -118,5 +118,5 @@ Windows Autopilot은 사용자가 IT 지원 없이 기본적으로 사용할 수
 
 ## <a name="next-steps"></a>다음 단계
 
-- Windows Defender Advanced Threat Detection을 사용하는 경우 규정을 준수하기 위해 Defender 위협 분석을 요구하는 [Intune 준수 정책](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy)을 만듭니다.
+- Microsoft Defender Advanced Threat Detection을 사용하는 경우 규정을 준수하기 위해 Defender 위협 분석을 요구하는 [Intune 준수 정책](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy)을 만듭니다.
 - 디바이스가 Intune 준수를 충족하지 않는 경우 액세스를 차단하는 [디바이스 기반 조건부 액세스 정책](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy)을 만듭니다.

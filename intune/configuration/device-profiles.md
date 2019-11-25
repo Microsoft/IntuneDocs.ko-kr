@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune의 디바이스 기능 및 설정 | Microsoft Docs
-description: 다양한 Microsoft Intune 디바이스 프로필의 개요입니다. 기능, 제한 사항, 메일, wifi, VPN, 교육, 인증서, Windows 10 업그레이드, BitLocker 및 Windows defender, Windows Information Protection, 관리 템플릿 및 Azure Portal에서 사용자 지정 디바이스 구성 설정에 대한 정보를 확인합니다. 이러한 프로필을 사용하여 회사의 디바이스와 데이터를 관리하고 보호합니다.
+description: 다양한 Microsoft Intune 디바이스 프로필의 개요입니다. 기능, 제한 사항, 메일, wifi, VPN, 교육, 인증서, Windows 10 업그레이드, BitLocker 및 Microsoft Defender, Windows Information Protection, 관리 템플릿 및 Azure Portal에서 사용자 지정 디바이스 구성 설정에 대한 정보를 확인합니다. 이러한 프로필을 사용하여 회사의 디바이스와 데이터를 관리하고 보호합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749346"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059889"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필을 사용하여 디바이스에서 기능 및 설정 적용
 
@@ -145,7 +145,7 @@ DFCI([디바이스 펌웨어 구성 인터페이스](device-firmware-configurati
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
 
-[Windows 10에 대한 Endpoint Protection 설정](../protect/endpoint-protection-windows-10.md)은 Windows 10 디바이스에 대한 BitLocker 및 Windows Defender 설정을 구성합니다.
+[Windows 10에 대한 Endpoint Protection 설정](../protect/endpoint-protection-windows-10.md)은 Windows 10 디바이스에 대한 BitLocker 및 Microsoft Defender 설정을 구성합니다.
 
 Microsoft Intune에서 WDATP(Microsoft Defender Advanced Threat Protection)를 온보드하려면 [MDM(모바일 디바이스 관리) 도구를 사용하여 엔드포인트 구성](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm)을 참조하세요.
 

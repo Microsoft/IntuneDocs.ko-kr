@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/28/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30b5debc6e1ab113a08d8930f96f6cbc9bf12b48
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 62db99fc2e47bdfa1a767db3bb2916649dedc074
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509526"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164698"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>온-프레미스 Intune Exchange 커넥터 설정
 Exchange에 대한 액세스를 보호하기 위해 Intune은 Microsoft Intune Exchange 커넥터라고 하는 온-프레미스 구성 요소를 사용합니다. Intune 콘솔의 일부 위치에서는 이 커넥터를 *Exchange ActiveSync 온-프레미스 커넥터*라고도 합니다. 
@@ -80,14 +80,15 @@ Intune Exchange 커넥터용 Active Directory 사용자 계정을 만들어야 �
 
 ## <a name="download-the-installation-package"></a>설치 패키지 다운로드
 
-1. Intune Exchange 커넥터를 지원할 수 있는 Windows 서버에서 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다. 온-프레미스 Exchange 서버의 관리자이고 Exchange 서버를 사용할 수 있는 라이선스가 있는 계정을 사용합니다.
+Intune Exchange 커넥터를 지원할 수 있는Windows 서버에서:
 
-2. **Intune** > **Exchange 액세스**로 이동합니다.  
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.  온-프레미스 Exchange 서버의 관리자이고 Exchange 서버를 사용할 수 있는 라이선스가 있는 계정을 사용합니다.
+
+2. **테넌트 관리** > **Exchange 액세스**를 선택합니다.  
 
 3. **설정**에서 **Exchange ActiveSync 온-프레미스 커넥터**를 선택한 다음 **추가**를 선택합니다.
 
 4. **커넥터 추가** 페이지에서 **온-프레미스 커넥터 다운로드**를 선택합니다. Intune Exchange 커넥터는 열거나 저장할 수 있는 압축(.zip) 폴더에 있습니다. **파일 다운로드** 대화 상자에서 **저장**을 선택하여 이 압축 폴더를 안전한 위치에 저장합니다.
-
 
 ## <a name="install-and-configure-the-intune-exchange-connector"></a>Intune Exchange 커넥터 설치 및 구성
 
@@ -149,8 +150,6 @@ Exchange 커넥터에서 연결이 설정되면 Exchange에서 관리하는 사�
 > [!NOTE]
 > Intune Exchange 커넥터를 설치하고 나중에 Exchange 연결을 삭제해야 하는 경우 커넥터가 설치된 컴퓨터에서 커넥터를 제거해야 합니다.
 
-
-
 ## <a name="install-connectors-for-multiple-exchange-organizations"></a>여러 Exchange 조직에 대한 커넥터 설치
 
 Intune은 구독 한 건당 여러 개의 Intune Exchange 커넥터를 지원합니다. Exchange 조직이 여러 개인 테넌트의 경우 Exchange 조직마다 하나의 커넥터를 설정할 수 있습니다. 
@@ -161,52 +160,60 @@ Intune에 연결하는 각 Exchange 조직에서는 고가용성, 모니터링 �
 
 ## <a name="on-premises-intune-exchange-connector-high-availability-support"></a>온-프레미스 Intune Exchange 커넥터 고가용성 지원  
 
-온-프레미스 커넥터의 고가용성이란 커넥터에서 사용하는 Exchange CAS를 사용할 수 없게 되면 해당 Exchange 조직에 다른 CAS를 사용하도록 커넥터를 전환할 수 있음을 뜻합니다. Exchange 커넥터 자체는 고가용성을 지원하지 않습니다. 커넥터가 실패해도 자동 장애 조치(failover)는 수행되지 않습니다. 실패한 커넥터를 교체하려면 [새 커넥터를 설치](#reinstall-the-intune-exchange-connector)해야 합니다. 
+온-프레미스 커넥터의 고가용성이란 커넥터에서 사용하는 Exchange CAS를 사용할 수 없게 되면 해당 Exchange 조직에 다른 CAS를 사용하도록 커넥터를 전환할 수 있음을 뜻합니다. Exchange 커넥터 자체는 고가용성을 지원하지 않습니다. 커넥터가 실패해도 자동 장애 조치(failover)는 수행되지 않습니다. 실패한 커넥터를 교체하려면 [새 커넥터를 설치](#reinstall-the-intune-exchange-connector)해야 합니다.
 
-장애 조치(failover)를 취하기 위해 커넥터는 지정된 CAS를 사용하여 Exchange에 연결합니다. 그런 다음 해당 Exchange 조직에 대한 추가 CAS 를 검색합니다. 이러한 검색을 통해 커넥터는 주 CAS를 다시 사용할 수 있을 때까지 다른 CAS로(있는 경우) 장애 조치(failover)할 수 있습니다. 
+장애 조치(failover)를 취하기 위해 커넥터는 지정된 CAS를 사용하여 Exchange에 연결합니다. 그런 다음 해당 Exchange 조직에 대한 추가 CAS 를 검색합니다. 이러한 검색을 통해 커넥터는 주 CAS를 다시 사용할 수 있을 때까지 다른 CAS로(있는 경우) 장애 조치(failover)할 수 있습니다.
 
-기본적으로 추가 CAS 검색이 사용됩니다. 장애 조치(failover)를 해제해야 하는 경우:  
-1. Exchange 커넥터가 설치된 서버에서 **%*ProgramData*%\Microsoft\Windows Intune Exchange Connector**로 이동합니다. 
+기본적으로 추가 CAS 검색이 사용됩니다. 장애 조치(failover)를 해제해야 하는 경우:
+
+1. Exchange 커넥터가 설치된 서버에서 **%*ProgramData*%\Microsoft\Windows Intune Exchange Connector**로 이동합니다.
+
 2. 텍스트 편집기를 사용하여 **OnPremisesExchangeConnectorServiceConfiguration.xml**을 엽니다.
-3. **\<IsCasFailoverEnabled>*true*\</IsCasFailoverEnabled>** 를 **\<IsCasFailoverEnabled>*false*\</IsCasFailoverEnabled>** 로 변경합니다.  
- 
+
+3. **\<IsCasFailoverEnabled>*true*\</IsCasFailoverEnabled>** 를 **\<IsCasFailoverEnabled>*false*\</IsCasFailoverEnabled>** 로 변경합니다.
+
 ## <a name="performance-tune-the-exchange-connector-optional"></a>Exchange 커넥터의 성능 조정(선택 사항)
 
-Exchange ActiveSync에서 5000대 이상의 디바이스를 지원하는 경우 선택적 설정을 구성하여 커넥터의 성능을 향상할 수 있습니다. Exchange에서 PowerShell 명령 실행 공간의 여러 인스턴스를 사용하도록 설정하면 성능이 향상됩니다. 
+Exchange ActiveSync에서 5000대 이상의 디바이스를 지원하는 경우 선택적 설정을 구성하여 커넥터의 성능을 향상할 수 있습니다. Exchange에서 PowerShell 명령 실행 공간의 여러 인스턴스를 사용하도록 설정하면 성능이 향상됩니다.
 
-변경하기 전에 Exchange Connector를 실행하는 데 사용하는 계정이 다른 Exchange 관리 목적으로 사용되고 있지 않은지 확인합니다. Exchange 계정에는 제한된 수의 실행 공간이 있으며 대부분은 커넥터가 사용합니다. 
+변경하기 전에 Exchange Connector를 실행하는 데 사용하는 계정이 다른 Exchange 관리 목적으로 사용되고 있지 않은지 확인합니다. Exchange 계정에는 제한된 수의 실행 공간이 있으며 대부분은 커넥터가 사용합니다.
 
-성능 조정은 구형이나 속도가 느린 하드웨어에서 실행되는 커넥터에는 적합하지 않습니다.  
+성능 조정은 구형이나 속도가 느린 하드웨어에서 실행되는 커넥터에는 적합하지 않습니다.
 
-Exchange 커넥터 성능을 향상하려면 다음 작업을 수행합니다. 
+Exchange 커넥터 성능을 향상하려면 다음 작업을 수행합니다.
 
-1. 커넥터가 설치된 서버에서 커넥터의 설치 디렉터리를 엽니다.  기본 위치는 ‘C:\ProgramData\Microsoft\Windows Intune Exchange Connector’입니다.  
+1. 커넥터가 설치된 서버에서 커넥터의 설치 디렉터리를 엽니다.  기본 위치는 ‘C:\ProgramData\Microsoft\Windows Intune Exchange Connector’입니다. 
+
 2. ‘OnPremisesExchangeConnectorServiceConfiguration.xml’ 파일을 편집합니다. 
-3. **EnableParallelCommandSupport**를 찾아 값을 **true**로 설정합니다.  
-     
+
+3. **EnableParallelCommandSupport**를 찾아 값을 **true**로 설정합니다.
+
    \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+
 4. 파일을 저장한 다음 Microsoft Intune Exchange Connector 서비스를 다시 시작합니다.
 
 ## <a name="reinstall-the-intune-exchange-connector"></a>Intune Exchange 커넥터 다시 설치
 
 Intune Exchange 커넥터를 다시 설치해야 하는 경우가 있습니다. 각 Exchange 조직에는 한 개의 커넥터만 연결할 수 있으므로 한 조직에 대해 두 번째 커넥터를 설치하면 새로 설치된 커넥터가 원래 커넥터를 대체합니다.
 
-1. 새 커넥터를 설치하려면 [Exchange 커넥터 설치 및 구성](#install-and-configure-the-intune-exchange-connector) 섹션의 단계를 따르세요. 
-2. 메시지가 표시되면 **바꾸기**를 선택하여 새 커넥터를 설치합니다.  
+1. 새 커넥터를 설치하려면 [Exchange 커넥터 설치 및 구성](#install-and-configure-the-intune-exchange-connector) 섹션의 단계를 따르세요.
+
+2. 메시지가 표시되면 **바꾸기**를 선택하여 새 커넥터를 설치합니다.
    ![커넥터를 바꾸라는 구성 경고](./media/exchange-connector-install/prompt-to-replace.png)
 
 3. [Intune Exchange 커넥터 설치 및 구성](#install-and-configure-the-intune-exchange-connector) 섹션의 단계를 계속 진행하고 Intune에 다시 로그인합니다.
-4. 최종 창에서 **닫기**를 선택하여 설치를 완료합니다.  
+
+4. 최종 창에서 **닫기**를 선택하여 설치를 완료합니다.
    ![설정 마침](./media/exchange-connector-install/successful-reinstall.png)
- 
 
 ## <a name="monitor-an-exchange-connector"></a>Exchange 커넥터 모니터링
 
-Exchange 커넥터를 성공적으로 구성한 후에는 연결 상태 및 마지막으로 성공한 동기화 시도를 볼 수 있습니다. 
+Exchange 커넥터를 성공적으로 구성한 후에는 연결 상태 및 마지막으로 성공한 동기화 시도를 볼 수 있습니다.
 
 Exchange Connector 연결의 유효성을 검사하려면 다음을 수행합니다.
 
 1. Intune 대시보드에서 **Exchange 액세스**를 선택합니다.
+
 2. **Exchange 온-프레미스 액세스**를 선택하여 각 Exchange 커넥터의 연결 상태를 확인합니다.
 
 마지막으로 성공한 동기화 시도의 시간과 날짜를 확인할 수도 있습니다.
@@ -219,13 +226,14 @@ Intune Exchange 커넥터는 정기적으로 EAS와 Intune 디바이스 레코�
 
 - **빠른 동기화**는 하루에 여러 번 정기적으로 수행됩니다. 빠른 동기화는 조건부 액세스 대상으로 지정되고 마지막 동기화 이후 변경된 Intune 사용 허가 및 온-프레미스 Exchange 사용자의 디바이스 정보를 검색합니다.
 
-- **전체 동기화**는 기본적으로 하루에 한 번 수행됩니다. 전체 동기화는 조건부 액세스 대상으로 지정된 모든 Intune 사용 허가 및 온-프레미스 Exchange 사용자의 디바이스 정보를 검색합니다. 또한 전체 동기화는 Exchange Server 정보를 검색하고, Azure Portal의 Intune에서 지정한 구성이 Exchange Server에서 업데이트되도록 합니다. 
-
+- **전체 동기화**는 기본적으로 하루에 한 번 수행됩니다. 전체 동기화는 조건부 액세스 대상으로 지정된 모든 Intune 사용 허가 및 온-프레미스 Exchange 사용자의 디바이스 정보를 검색합니다. 또한 전체 동기화는 Exchange Server 정보를 검색하고, Azure Portal의 Intune에서 지정한 구성이 Exchange Server에서 업데이트되도록 합니다.
 
 다음과 같이 Intune 대시보드에서 **빠른 동기화** 또는 **전체 동기화** 옵션을 사용하여 커넥터에서 동기화를 실행하도록 강제할 수 있습니다.
 
    1. Intune 대시보드에서 **Exchange 액세스**를 선택합니다.
+
    2. **Exchange 온-프레미스 액세스**를 선택합니다.
+
    3. 동기화하려는 커넥터를 선택한 다음, **빠른 동기화** 또는 **전체 동기화**를 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
