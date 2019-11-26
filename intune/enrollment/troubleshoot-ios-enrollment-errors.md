@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 11/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74126140"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199280"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
@@ -38,7 +38,7 @@ ms.locfileid: "74126140"
 - 어디서 오류 메시지가 표시됩니까?
 - 문제가 언제 시작되었습니까? 등록이 작동 했습니까?
 - 어떤 플랫폼 (Android, iOS, Windows)에 문제가 있나요?
-- 영향을 받는 사용자는 몇 개입니까? 모든 사용자에 게 영향을 미치는지 아니면 일부에만 적용 되나요?
+- 얼마나 많은 사용자가 영향을 받습니까? 모든 사용자에 게 영향을 미치는지 아니면 일부에만 적용 되나요?
 - 영향을 받는 장치는 몇 개입니까? 모든 장치가 영향을 받는지 아니면 일부 입니까?
 - MDM 기관 이란? System Center Configuration Manager 경우 사용 중인 Configuration Manager 버전은 무엇 인가요?
 - 등록을 수행 하는 방법 등록 프로필을 사용 하 여 BYOD (사용자 소유의 장치) 또는 DEP (Apple 장비 등록 프로그램)를 사용 하나요?
@@ -63,9 +63,53 @@ ms.locfileid: "74126140"
 1. Azure Portal에 로그인합니다.
 2. **추가 서비스**를 선택하고 Intune을 검색한 다음, **Intune**을 선택합니다.
 3. **디바이스 등록** > **등록 제한**을 선택합니다.
-4. **장치 유형 제한**에서 **속성** > 설정 하려는 제한을 선택 하  > **플랫폼** 을 선택 하 > **iOS**에 대해 **허용** 을 선택 하 고 **확인**을 클릭 합니다.
+4. **장치 유형 제한**에서 **속성** > 설정 하려는 제한을 선택 하 > **플랫폼** 을 선택 하 > **iOS**에 대해 **허용** 을 선택 하 고 **확인**을 클릭 합니다.
 5. **플랫폼 구성**을 선택 하 고 개인적으로 소유한 iOS 장치에 대해 **허용** 을 선택한 다음 **확인**을 클릭 합니다.
 6. 디바이스 다시 등록.
+
+**원인:** DNS에 필요한 CNAME 레코드가 없습니다.
+
+#### <a name="resolution"></a>해결 방법
+회사의 도메인에 대한 CNAME DNS 리소스 레코드를 만듭니다. 예를 들어 회사의 도메인이 contoso.com인 경우 DNS에 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 CNAME을 만듭니다.
+
+CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 사용하면 사용자가 보다 쉽게 등록할 수 있습니다. 등록 CNAME 레코드가 없으면 사용자에게 MDM 서버 이름인 enrollment.manage.microsoft.com을 수동으로 입력하라는 메시지가 표시됩니다.
+
+확인된 도메인이 둘 이상 있는 경우 각 도메인에 대해 CNAME 레코드를 만듭니다. CNAME 리소스 레코드에는 다음 정보가 포함되어야 합니다.
+
+|유형|호스트 이름|지시 대상|TTL|
+|------|------|------|------|
+|CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com|1시간|
+|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1시간|
+
+회사에서 사용자 자격 증명에 여러 도메인을 사용하는 경우 각 도메인용으로 CNAME 레코드를 만듭니다.
+
+> [!NOTE]
+> DNS 레코드 변경 내용이 전파되는 데는 최대 72시간이 걸릴 수 있습니다. DNS 레코드가 전파될 때까지 Intune에서 DNS 변경 내용을 확인할 수 없습니다.
+
+**원인:** 이전에 다른 사용자 계정에 등록 된 장치를 등록 하 고 이전 사용자가 Intune에서 적절 하 게 제거 되지 않았습니다.
+
+#### <a name="resolution"></a>해결 방법
+1. 현재 프로필 설치를 취소 합니다.
+2. Safari에서 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) 를 엽니다.
+3. 디바이스 다시 등록.
+
+> [!NOTE]
+> 등록이 여전히 실패 하면 Safari (쿠키 차단 안 함)에서 쿠키를 제거 하 고 장치를 다시 등록 합니다.
+
+**원인:** 장치가 다른 MDM 공급자에 이미 등록 되어 있습니다.
+
+#### <a name="resolution"></a>해결 방법
+1. IOS 장치에서 **설정** 을 열고 **일반 > 장치 관리**로 이동 합니다.
+2. 기존 관리 프로필을 제거 합니다.
+3. 디바이스 다시 등록.
+
+**원인:** 장치를 등록 하려고 하는 사용자에 게 Microsoft Intune 라이선스가 없습니다.
+
+#### <a name="resolution"></a>해결 방법
+1. [Office 365 관리 센터](https://portal.office.com/adminportal/home#/homepage)로 이동한 다음 **사용자 > 활성 사용자**를 선택 합니다.
+2. Intune 사용자 라이선스를 할당할 사용자 계정을 선택한 후 **제품 라이선스 > 편집**을 선택합니다.
+3. 이 사용자에 게 할당 하려는 **라이선스의 설정/해제 위치로 전환** 하 고 **저장**을 선택 합니다.
+4. 디바이스 다시 등록.
 
 ### <a name="this-service-is-not-supported-no-enrollment-policy"></a>이 서비스는 지원 되지 않습니다. 등록 정책 없음.
 
@@ -92,10 +136,10 @@ ms.locfileid: "74126140"
 **원인:** 사용자가 장치 등록 제한 보다 더 많은 장치를 등록 하려고 합니다.
 
 #### <a name="resolution"></a>해결 방법
-1. **모든 장치** >  [Intune 관리 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)  >  열고 사용자가 등록**한 장치의 수** 를 확인 합니다.
+1. **모든 장치** > [Intune 관리 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > 열고 사용자가 등록 **한 장치의 수** 를 확인 합니다.
     > [!NOTE]
     > 또한 [Intune 사용자 포털](https://portal.manage.microsoft.com/) 에 영향을 받는 사용자 로그온이 있어야 하 고 등록 된 장치를 확인 해야 합니다. Intune [사용자 포털](https://portal.manage.microsoft.com/) 에는 표시 되지만 [intune 관리 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)에는 표시 되지 않는 장치가 있을 수 있습니다. 이러한 장치는 장치 등록 제한에도 해당 합니다.
-2. **관리자**  > **모바일 장치 관리**  > **등록 규칙** 으로 이동 하 > 장치 등록 제한을 확인 합니다. 기본적으로 제한은 15입니다. 
+2. **관리자** > **모바일 장치 관리** > **등록 규칙** 으로 이동 하 > 장치 등록 제한을 확인 합니다. 기본적으로 제한은 15입니다. 
 3. 등록 된 장치의 수가 한도에 도달 하면 불필요 한 장치를 제거 하거나 장치 등록 제한을 늘립니다. 등록 된 모든 장치에서 Intune 라이선스를 사용 하기 때문에 항상 불필요 한 장치를 먼저 제거 하는 것이 좋습니다.
 4. 디바이스 다시 등록.
 
@@ -113,8 +157,8 @@ ms.locfileid: "74126140"
 **원인:** 장치를 등록 하려고 하는 사용자에 게 유효한 Intune 라이선스가 없습니다.
 
 #### <a name="resolution"></a>해결 방법
-1. [Microsoft 365 관리 센터](https://portal.office.com/adminportal/home#/homepage)로 이동한 다음 **사용자**  > **활성 사용자**를 선택 합니다.
-2. 영향을 받는 사용자 계정 > **제품 라이선스**  > **편집**을 선택 합니다.
+1. [Microsoft 365 관리 센터](https://portal.office.com/adminportal/home#/homepage)로 이동한 다음 **사용자** > **활성 사용자**를 선택 합니다.
+2. 영향을 받는 사용자 계정 > **제품 라이선스** > **편집**을 선택 합니다.
 3. 이 사용자에 게 유효한 Intune 라이선스가 할당 되어 있는지 확인 하십시오.
 4. 디바이스 다시 등록.
 
@@ -122,8 +166,8 @@ ms.locfileid: "74126140"
 
 **원인:** 장치를 등록 하려고 하는 사용자에 게 유효한 Intune 라이선스가 없습니다.
 
-1. [Microsoft 365 관리 센터](https://portal.office.com/adminportal/home#/homepage)로 이동한 다음 **사용자**  > **활성 사용자**를 선택 합니다.
-2. 영향을 받는 사용자 계정을 선택한 다음 **제품 라이선스**  > **편집**을 선택 합니다.
+1. [Microsoft 365 관리 센터](https://portal.office.com/adminportal/home#/homepage)로 이동한 다음 **사용자** > **활성 사용자**를 선택 합니다.
+2. 영향을 받는 사용자 계정을 선택한 다음 **제품 라이선스** > **편집**을 선택 합니다.
 3. 이 사용자에 게 유효한 Intune 라이선스가 할당 되어 있는지 확인 하십시오.
 4. 디바이스 다시 등록.
 
@@ -133,7 +177,7 @@ ms.locfileid: "74126140"
 
 #### <a name="resolution"></a>해결 방법
 
-1. IOS 장치에서 **설정** > **일반**  > **장치 관리**를 엽니다.
+1. IOS 장치에서 **설정** > **일반** > **장치 관리**를 엽니다.
 2. 기존 관리 프로필을 탭 하 고 **관리 제거**를 탭 합니다.
 3. 디바이스 다시 등록.
 
@@ -186,7 +230,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>해결 방법
 
 1. 등록 프로필을 편집 합니다. 프로필을 변경할 수 있습니다. 용도는 프로필의 수정 시간을 업데이트 하는 것입니다.
-2. DEP 관리 장치 동기화: Intune 포털 > **Admin**  > **모바일 장치 관리**  > **iOS**  > **장비 등록 프로그램** **지금 동기화**를 엽니다. 동기화 요청이 Apple에 전송됩니다.
+2. DEP 관리 장치 동기화: Intune 포털 > **Admin** > **모바일 장치 관리** > **iOS** > **장비 등록 프로그램** **지금 동기화**를 엽니다. 동기화 요청이 Apple에 전송됩니다.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>사용자 로그인 시 DEP 등록 중단
 등록 프로필을 할당 하는 DEP 관리 장치를 켜면 자격 증명을 입력 한 후 초기 설치가 시작 됩니다.
