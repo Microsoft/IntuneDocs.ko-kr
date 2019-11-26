@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/01/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d85793dcf0ee6fa0186147606c9fd695a268e529
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bd2ab7ad8eb155719695bede1f539d5c264d455b
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506969"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319825"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Microsoft Intune의 Android 엔터프라이즈 디바이스에 대한 사용자 지정 설정 사용
 
@@ -30,11 +30,11 @@ Microsoft Intune을 사용하면 "사용자 지정 프로필"을 사용하여 An
 
 Android 엔터프라이즈 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 설정을 사용하여 Android 엔터프라이즈에서 기능을 제어합니다. 이러한 설정은 일반적으로 모바일 디바이스 제조업체에서 이러한 기능을 제어하기 위해 사용합니다.
 
-Intune은 다음을 포함 하 여 제한 된 수의 Android Enterprise 사용자 지정 프로필을 지원 합니다.
+Intune은 다음과 같은 제한 된 수의 Android Enterprise 사용자 지정 프로필을 지원 합니다.
 
 - ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [미리 공유한 키를 사용 하 여 wi-fi 프로필을 만드는](wi-fi-profile-shared-key.md) 몇 가지 예가 있습니다.
 - ./Vendor/MSFT/VPN/Profile/Name/PackageList: [앱 별 VPN 프로필 만들기](android-pulse-secure-per-app-vpn.md) 에 몇 가지 예가 있습니다.
-- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste:이 문서에서 [예제](#example) 를 참조 하세요.
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste:이 문서의 [예제](#example) 를 참조 하세요. 이 설정은 사용자 인터페이스 에서도 사용할 수 있습니다. 자세한 내용은 [기능을 허용하거나 제한하는 Android 엔터프라이즈 디바이스 설정](device-restrictions-android-for-work.md)을 참조하세요.
 
 추가 설정이 필요한 경우 [Android Enterprise에 대 한 Oemconfig](android-oem-configuration-overview.md)를 참조 하세요.
 

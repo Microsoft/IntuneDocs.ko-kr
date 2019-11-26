@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac40be5cf3d0a0a217340b3c745daf740a24e8e7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490371"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290949"
 ---
 # <a name="reference-for-application-entities"></a>애플리케이션 엔터티에 대한 참조
 
-**애플리케이션** 범주는 다음과 같은 정보를 추적하는 모바일 디바이스에 대한 엔터티를 포함합니다.
+**애플리케이션** 범주는 다음과 같은 정보를 추적하는 디바이스에 대한 엔터티를 포함합니다.
 
 - 앱 버전
 - 앱의 설치 원본

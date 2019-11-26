@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 266786de3122f8886bb3ed310764459568e1df6a
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 04d35f49f9e07cb72a1fea92210b05e0a95ec256
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585371"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390800"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Microsoft Intune에서 Android 엔터프라이즈 및 Android 키오스크를 실행하는 디바이스의 Wi-Fi 설정 추가
+# <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>Microsoft Intune에서 Android Enterprise 전용 및 완전히 관리 되는 장치에 대 한 Wi-fi 설정 추가
 
-특정 WiFi 설정을 사용하여 프로필을 만든 후 Android 엔터프라이즈 및 Android 전용 디바이스에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, 미리 공유한 키 사용 등을 포함한 많은 기능을 제공합니다.
+특정 Wi-Fi 설정을 사용하여 프로필을 만든 후 Android 엔터프라이즈 완전 관리형 및 전용 디바이스에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, 미리 공유한 키 사용 등을 포함한 많은 기능을 제공합니다.
 
 이 문서에서는 이러한 설정을 설명합니다. [디바이스에서 Wi-Fi 사용](wi-fi-settings-configure.md)에는 Microsoft Intune의 Wi-Fi 기능에 대한 자세한 정보가 포함되어 있습니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "72585371"
 
 ## <a name="device-owner-only"></a>디바이스 소유자만
 
-Android 엔터프라이즈 전용 디바이스를 키오스크로 사용하는 경우 이 옵션을 선택합니다.
+Android Enterprise 전용 또는 완전히 관리 되는 장치에 배포 하는 경우이 옵션을 선택 합니다.  Android Enterprise 전용 및 완전히 관리 되는 장치는 현재 SCEP 인증서 배포를 지원 하지만 PKCS는 지원 하지 않습니다.
 
 ### <a name="basic"></a>기본
 
@@ -60,7 +60,7 @@ Android 엔터프라이즈 전용 디바이스를 키오스크로 사용하는 �
 
     - **서버 트러스트** - **서버 유효성 검사를 위한 루트 인증서**: 기존 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 클라이언트가 네트워크에 연결될 때 이 인증서는 서버에 제공되고 연결을 인증합니다.
 
-    - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)** : 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
+    - **클라이언트 인증** - **클라이언트 인증을 위한 클라이언트 인증서(ID 인증서)** : 디바이스에도 배포되는 SCEP 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
     - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
@@ -77,7 +77,7 @@ Android 엔터프라이즈 전용 디바이스를 키오스크로 사용하는 �
           - **MS-CHAP(Microsoft CHAP)**
           - **MS-CHAP v2(Microsoft CHAP 버전 2)**
 
-      - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
+      - **인증서**: 디바이스에도 배포되는 SCEP 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
       - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
@@ -93,7 +93,7 @@ Android 엔터프라이즈 전용 디바이스를 키오스크로 사용하는 �
           - **없음**
           - **MS-CHAP v2(Microsoft CHAP 버전 2)**
 
-      - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
+      - **인증서**: 디바이스에도 배포되는 SCEP 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
       - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 

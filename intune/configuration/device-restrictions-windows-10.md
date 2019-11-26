@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e5e1e1de0c8ec80a390f76f5e8de3965d4f800a9
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059488"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188168"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -213,9 +213,11 @@ GDI DPI 크기 조정은 DPI를 인식하지 않는 애플리케이션에서 DPI
 
   이 설정은 다음에 디바이스를 초기화하거나 재설정할 때 적용됩니다. 다른 Intune 구성과 마찬가지로, 구성 설정을 수신하려면 디바이스를 Intune에서 등록하고 관리해야 합니다. 그러나 등록하고 정책을 수신한 다음, 디바이스를 다시 설정하면 다음 Windows 설치 중에 설정이 적용됩니다.
 
+  [TenantLockdown CSP](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)
+
 - **직접 메모리 액세스**: **차단**을 선택하면 사용자가 Windows에 로그인할 때까지 모든 핫 플러그형 PCI 다운스트림 포트에 대한 DMA(직접 메모리 액세스)가 차단됩니다. **사용**(기본값)으로 설정하면, 사용자가 로그인되지 않은 경우에도 DMA에 액세스할 수 있습니다.
 
-  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+  [DataProtection/AllowDirectMemoryAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **작업 관리자에서 프로세스 종료**: 이 설정은 관리자가 아닌 사용자가 작업 관리자를 사용하여 작업을 종료할 수 있는지 여부를 결정합니다. **차단**을 선택하면 표준 사용자(비관리자)가 작업 관리자를 사용하여 디바이스에서 프로세스 또는 작업을 종료하지 못합니다. **구성되지 않음**(기본값)은 표준 사용자가 작업 관리자를 사용하여 프로세스 또는 작업을 종료할 수 있도록 허용합니다.
 
