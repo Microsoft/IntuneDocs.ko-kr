@@ -133,6 +133,8 @@
               href: manage-microsoft-edge.md
             - name: Outlook 구성
               href: app-configuration-policies-outlook.md
+            - name: Outlook용 S/MIME 구성
+              href: app-configuration-policies-outlook-smime.md
             - name: Android용 Google Chrome 구성
               href: apps-configure-chrome-android.md
         - name: 대량 구매 앱 및 전자책

@@ -205,6 +205,10 @@
           href: use-docs.md
         - name: 지원 받기
           href: get-support.md
+    - name: 보고서
+      items:
+        - name: Intune 보고서
+          href: reports.md
 - name: 참조
   items:
     - name: 오류 코드와 설명
