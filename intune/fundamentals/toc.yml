@@ -16,6 +16,8 @@
           href: whats-new-app-ui.md
         - name: 개발 기능
           href: in-development.md
+        - name: 중요 알림
+          href: 'whats-new.md#notices'
 - name: 빠른 시작
   items:
     - name: 무료로 Intune 체험하기

@@ -7,14 +7,23 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: b59419be9f381a1c646a7778b73ed172526f6ef6
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: fa2b1c5c9d267b9f860da2268d03c928ebf7693b
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188427"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74309818"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
+
+### <a name="end-support-for-windows-phone-81--3544909--"></a>Windows Phone 8.1에 대한 최종 지원<!--3544909-->
+Windows Phone 8.1에 대한 Microsoft 일반 지원은 2017년 7월에 종료되었으며 추가 지원은 2019년 6월에 종료되었습니다. Windows Phone 8.1용 회사 포털 앱은 2017년 10월부터 지속 모드에 있습니다. Microsoft Intune은 이제 2020년 2월 20일에 Windows Phone 8.1에 대한 지원을 종료합니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+2020년 2월 20일 이후에는 이러한 디바이스가 보안 업데이트를 받지 못하며 새 디바이스를 등록할 수 없습니다. 기존 Windows Phone 8.1 디바이스는 계속 등록 상태(정책, 앱, 보고)로 유지되지만, 타사 인증서와 같은 많은 구성 요소가 이미 플랫폼에 대한 지원을 종료했기 때문에 이 날짜 이후에는 기존 등록 문제 해결이 지원되지 않습니다. Intune은 Intune 및 Windows Phone 8.1과의 호환성 테스트를 중지합니다.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+Intune 보고를 확인하여 디바이스 또는 사용자가 받을 수 있는 영향에 대해 알아볼 수 있습니다. 디바이스 &gt; 모든 디바이스로 이동하고 OS를 기준으로 필터링합니다. 추가 열에 추가하면 Windows Phone 8.1을 실행하는 디바이스를 가진 조직의 사용자를 식별하는 데 도움이 됩니다. 최종 사용자는 지원되는 OS 버전으로 자신의 디바이스를 업그레이드하도록 요청합니다.
 
 ### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Intune Outlook APP(앱 보호 정책) 업데이트<!--2576686-->
 메시지 센터에서 MC195618을 받은 경우 작업을 수행해야 할 수 있습니다. Microsoft 365 로드맵 기능 ID: 56325 및 56326에서 공지한 대로, Intune 및 iOS 및 Android용 Outlook은 메일 알림과 일정 미리 알림에서 중요한 데이터를 제한하는 기능을 롤아웃 중입니다. 이러한 개선의 결과로 iOS 및 Android용 Outlook은 현재 알림을 관리하는 데 활용하는 여러 데이터 보호 앱 구성 키에 대한 지원을 중단할 예정입니다.
