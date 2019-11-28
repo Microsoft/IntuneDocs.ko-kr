@@ -3,8 +3,8 @@ title: Active Directory용 Intune Connector의 프록시 설정 구성
 description: 기존 온-프레미스 프록시 서버와 함께 작동하도록 Active Directory용 Intune Connector를 구성하는 방법을 설명합니다.
 keywords: ''
 author: master11218
-ms.author: tanvira
-manager: smantri
+ms.author: erikje
+manager: dougeby
 ms.date: 4/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11537902e8306d753d6c3e144e0ac15f90ab3b51
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3a1af2e7c8aff281e04e92344b3e2c762bb23e0a
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503282"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465753"
 ---
 # <a name="work-with-existing-on-premises-proxy-servers"></a>기존 온-프레미스 프록시 서버 작업
 
