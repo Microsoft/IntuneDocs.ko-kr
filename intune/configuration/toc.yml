@@ -14,7 +14,11 @@
     - name: 프로필 만들기
       href: device-profile-create.md
     - name: Windows 템플릿 관리
-      href: administrative-templates-windows.md
+      items:
+        - name: Windows 템플릿 관리
+          href: administrative-templates-windows.md
+        - name: 관리 템플릿을 사용허여 Office 업데이트
+          href: administrative-templates-update-office.md
     - name: iOS 및 macOS 디바이스 기능
       href: device-features-configure.md
     - name: 디바이스 설정 및 기능 제한
@@ -47,6 +51,8 @@
       items:
         - name: 미리 공유한 키를 사용하는 Wi-Fi
           href: wi-fi-profile-shared-key.md
+        - name: Wi-Fi 문제 해결
+          href: troubleshoot-wi-fi-profiles.md
     - name: macOS에서 확장
       href: kernel-extensions-overview-macos.md
     - name: 교육 테스트 실행 앱
