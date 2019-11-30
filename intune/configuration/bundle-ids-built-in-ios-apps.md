@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 27a020f4b45ae878718bed4ee6e230c3d288f260
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: b7e2bd869f898bbe7f894cfd9e9c767c8b42e9c4
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755425"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465641"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune에서 사용할 수 있는 기본 제공 iOS 앱의 번들 ID
 
@@ -69,6 +69,7 @@ iOS 디바이스에서 기능을 구성할 때 iOS 디바이스에서 기본 제
 | com.apple.reminders         | 미리 알림    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | 설정     | Apple     |
+| .com. 바로 가기         | 바로 가기    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 주식       | Apple     |
 | com.apple.tips              | 팁         | Apple     |

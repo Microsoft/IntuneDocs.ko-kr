@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390853"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465646"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 iOS 및 iPadOS 디바이스 설정
 
@@ -244,6 +244,10 @@ ms.locfileid: "74390853"
 ### <a name="settings-apply-to-all-enrollment-types"></a>설정이 적용 되는 대상: 모든 등록 형식
 
 - **비관리형 앱에서 회사 문서 보기**: **차단**을 선택하면 비관리형 앱에서 회사 외 문서를 볼 수 없습니다. **구성되지 않음**(기본값)을 사용하면 임의의 앱에서 회사 문서를 볼 수 있습니다. 예를 들어 사용자가 OneDrive 앱의 파일을 Dropbox에 저장하지 못하게 하려면 이 설정을 **차단**으로 구성하세요. 디바이스는 정책을 수용하면(예: 다시 시작) 저장을 더 이상 허용하지 않습니다.
+
+
+  > [!NOTE]
+  > 이 설정이 차단 되 면 앱 스토어에서 설치 된 타사 키보드도 차단 됩니다.
 
   - 관리 **되는 앱이 관리 되는 연락처 계정에서 읽을 수 있도록 허용**: **허용**으로 설정 되 면 기본 제공 iOS 연락처 앱과 같은 관리 되지 않는 앱에서 Outlook 모바일 앱을 포함 하 여 관리 되는 앱의 연락처 정보를 읽고 액세스할 수 있습니다. **구성되지 않음**(기본값)으로 선택하면 디바이스의 기본 연락처 앱에서 중복 제거를 포함한 읽기 작업이 제한됩니다.  
   

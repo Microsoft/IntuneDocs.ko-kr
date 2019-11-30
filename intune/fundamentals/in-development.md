@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796439581ca0ae91e788a91ab0bc2ef8f6019626
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199333"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540732"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>Microsoft Intune에 대해 개발 중 - 2019년 12월
 
@@ -181,34 +181,12 @@ IOS 장치에서 Siri 명령에 대 한 서버 쪽 로깅을 구성 하는 장�
 <!--## Device enrollment-->
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>디바이스 관리
+<!--## Device management-->
 
-
-
-### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>Autopilot 장치에 대 한 장치 이름 값 편집<!-- 2640074  -->
-Azure AD 가입 Autopilot 장치에 대 한 장치 이름 값을 편집할 수 있습니다. 이렇게 하려면 **Intune** > **장치 등록** > Windows **등록** > windows **Autopilot** > **장치** 로 이동 하 > 장치를 선택 하 > 오른쪽 창에서 **장치 이름** 값을 변경 합니다. **저장**을 > 합니다.
-
-### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>Autopilot 장치에 대 한 그룹 태그 값 편집<!-- 4816775 -->
-Autopilot 장치에 대 한 **그룹 태그** 값을 편집할 수 있습니다.
-
-1. **Intune** > **장치 등록** > Windows **등록** > **windows Autopilot** > **장치**를 선택 합니다.
-1. 장치를 선택 합니다.
-1. 오른쪽 창에서 **그룹 태그** 값을 변경 합니다.
-1. **저장**을 선택합니다.
-
-### <a name="target-macos-user-groups-to-require-jamf-management---4061739---"></a>Jamf 관리를 필요로 하는 macOS 사용자 그룹을 대상으로 합니다.<!-- 4061739 -->
-특정 사용자 그룹을 대상으로 지정 하 여 Jamf에서 macOS 장치를 관리 하도록 요구할 수 있습니다. 이 대상 지정을 통해 macOS 장치 하위 집합에 Jamf 준수 통합을 적용할 수 있으며, 다른 장치는 Intune에서 계속 관리 됩니다. 대상 지정을 통해 한 MDM (모바일 장치 관리) 시스템에서 다른 MDM (모바일 장치 관리) 시스템으로 사용자 장치를 점진적으로 마이그레이션할 수도 있습니다.
 
 <!-- ***********************************************-->
-## <a name="intune-apps"></a>Intune 앱
-
-### <a name="improved-macos-enrollment-experience-in-company-portal---5074349----"></a>회사 포털에서 macOS 등록 환경이 개선 됨<!-- 5074349  -->
-MacOS 등록 환경에 대 한 회사 포털에는 iOS 등록 환경에 대 한 회사 포털 보다 긴밀 하 게 맞는 등록 프로세스가 포함 됩니다. 장치 사용자에 게 표시 되는 항목:  
-
-* Sleeker 사용자 인터페이스입니다.  
-* 향상 된 등록 검사 목록.  
-* 장치를 등록 하는 방법에 대 한 자세한 지침입니다.  
-* 향상 된 문제 해결 옵션  
+<!--## Intune apps-->
+ 
 
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>모니터링 및 문제 해결
@@ -217,10 +195,8 @@ MacOS 등록 환경에 대 한 회사 포털에는 iOS 등록 환경에 대 한 
 새 중앙 집중식 감사 로그 환경에서는 모든 범주에 대 한 감사 로그를 한 페이지에 수집 합니다. 여기서는 로그를 필터링 하 여 원하는 데이터를 가져올 수 있습니다. 감사 로그를 보려면 **테 넌 트 관리** > **감사 로그**로 이동 합니다. 자세한 내용은 [Intune에서 감사 로그의 예정 된 변경 내용](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858)을 참조 하세요.
 
 <!-- ***********************************************-->
-## <a name="role-based-access-control"></a>역할 기반 액세스 제어
+<!--## Role-based access control-->
 
-### <a name="duplicate-custom-or-built-in-roles---1081938---"></a>중복 사용자 지정 또는 기본 제공 역할<!-- 1081938 -->
-기본 제공 및 사용자 지정 역할을 복사할 수 있습니다. 이렇게 하려면 **Intune** > **역할** > **모든 역할** 로 이동 하 > 목록에서 역할을 선택 하 > **복제**를 선택 합니다. 고유한 새 이름을 입력 해야 합니다.
 
 <!-- ***********************************************-->
 
