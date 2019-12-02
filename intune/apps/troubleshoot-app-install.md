@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497053"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563477"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>앱 설치 문제 해결
 
@@ -32,8 +32,8 @@ Microsoft Intune MDM 관리 디바이스에서 앱 설치에 실패하는 경우
 
 Intune은 특정 사용자 디바이스에 설치된 앱을 기반으로 앱 문제 해결 세부 정보를 제공합니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **문제 해결**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+3. **문제 해결 + 지원**을 선택 합니다.
 4. **사용자 선택**을 클릭하여 문제를 해결할 사용자를 선택합니다. **사용자 선택** 창이 표시됩니다.
 5. 이름 또는 이메일 주소를 입력하여 사용자를 선택합니다. 창 아래쪽에서 **선택**을 클릭합니다. **문제 해결** 창에 사용자에 대한 문제 해결 정보가 표시됩니다. 
 6. **디바이스** 목록에서 문제를 해결할 디바이스를 선택합니다.
@@ -57,12 +57,12 @@ Intune은 특정 사용자 디바이스에 설치된 앱을 기반으로 앱 문
 - 앱이 회사 포털에 표시 되지 않으면 **사용 가능한** 의도를 사용 하 여 앱을 배포 하 고 사용자가 앱에서 지원 되는 장치 유형에 서 회사 포털에 액세스 하 고 있는지 확인 합니다.
 - Windows BYOD 장치의 경우 사용자가 장치에 회사 계정을 추가 해야 합니다.
 - 사용자가 AAD 장치 제한을 초과 하 고 있는지 확인 합니다.
-  1. [Azure Active Directory 장치 설정](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)으로 이동 합니다.
+  1. [Azure Active Directory 장치 설정](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId)으로 이동 합니다.
   2. **사용자 당 최대 장치**수에 대해 설정 된 값을 기록해 둡니다.
-  3. [Azure Active Directory 사용자](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)로 이동 합니다.
+  3. [Azure Active Directory 사용자](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)로 이동 합니다.
   4. 영향을 받는 사용자를 선택 하 고 **장치**를 클릭 합니다.
   5. 사용자가 설정 된 제한을 초과 하는 경우 더 이상 필요 하지 않은 오래 된 레코드를 삭제 합니다.
-- IOS DEP 장치의 경우 사용자가 Intune 장치 개요 블레이드에서 사용자에 **의해 등록** 된 것으로 표시 되는지 확인 합니다. NA가 표시 되 면 Intune 회사 포털에 대 한 구성 정책을 배포 합니다. 자세한 내용은 [회사 포털 앱 구성을 참조하세요](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- IOS DEP 장치의 경우 사용자가 Intune 장치 개요 창에서 **사용자가 등록** 한 것으로 표시 되는지 확인 합니다. NA가 표시 되 면 Intune 회사 포털에 대 한 구성 정책을 배포 합니다. 자세한 내용은 [회사 포털 앱 구성을 참조하세요](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 앱 설치 문제 해결
 
@@ -75,7 +75,7 @@ Intune 관리 확장을 사용하여 배포된 Win32 앱을 선택합니다. Win
 
 Win32 앱 설치 로그를 수집하려면 먼저 [앱 문제 해결 세부 정보](troubleshoot-app-install.md#app-troubleshooting-details) 섹션에 나와 있는 단계를 따릅니다. 그런 다음, 다음 절차를 계속 수행합니다.
 
-1. **설치 세부 정보** 블레이드에서 **로그 수집** 옵션을 클릭합니다.
+1. **설치 세부 정보** 창에서 **로그 수집** 옵션을 클릭합니다.
 
     <image alt="Win32 app installation details - Collect log option" src="./media/troubleshoot-app-install/troubleshoot-app-install-04.png" width="500" />
 
