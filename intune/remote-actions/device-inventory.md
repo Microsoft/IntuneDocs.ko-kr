@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713203"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564392"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 디바이스 세부 정보 참조
 
@@ -84,7 +84,7 @@ ms.locfileid: "73713203"
 |ICCID|집적 회로 카드 식별자, 즉, SIM 카드의 고유한 ID 번호입니다.|Windows, iOS, Android|
 |등록된 날짜|Intune에서 디바이스를 등록한 날짜 및 시간입니다.|Windows, iOS, Android|
 |마지막 연결 시간|Intune에 디바이스를 마지막으로 연결한 날짜 및 시간입니다.|Windows, iOS, Android|
-|활성화 잠금 무시 코드|활성화 잠금을 무시할 수 있는 코드입니다.|Windows, iOS, Android|
+|활성화 잠금 무시 코드|활성화 잠금을 무시할 수 있는 코드입니다.|iOS|
 |Azure AD 등록됨|**예**인 경우 디바이스가 Azure Active Directory에 등록되어 있습니다.|Windows, iOS, Android|
 |Intune에 등록됨|**예**인 경우 디바이스가 Intune에 등록되어 있음|Windows, iOS, Android|
 |준수|디바이스의 준수 상태입니다.|Windows, iOS, Android|
