@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/20/2019
+ms.date: 1/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84ef86a0b3c0ffbfffde572c9759c62645d57dc5
-ms.sourcegitcommit: 8c651a3ed1f358f19b65206a52f7808282de97c3
+ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73844871"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410157"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 디바이스 준수 정책 모니터링
 
@@ -56,7 +57,7 @@ ms.locfileid: "73844871"
 
 이 보고를 살펴보면서 각 설정에 대한 준수 상태를 포함하여 특정 디바이스에 적용되는 모든 특정 준수 정책 및 설정을 볼 수도 있습니다.
 
-### <a name="device-compliance-status-report"></a>디바이스 준수 상태 보고서
+### <a name="device-compliance-status"></a>디바이스 준수 상태
 
 **디바이스 준수 상태** 차트에서는 Intune에 등록된 모든 디바이스에 대한 준수 상태를 보여 줍니다. 디바이스 준수 상태는 2개의 데이터베이스, 즉 Intune 및 Azure Active Directory에 보관됩니다.
 
@@ -119,7 +120,8 @@ ms.locfileid: "73844871"
 
 Intune에서는 해당 디바이스에 적용된 디바이스 준수 정책 설정에 대한 자세한 정보를 표시합니다. 특정 정책을 선택하면 정책에서 모든 설정을 보여줍니다.
 
-### <a name="devices-without-compliance-policy"></a>준수 정책 없는 디바이스
+### <a name="devices-without-compliance"></a>준수하지 않는 디바이스
+
 *준수 상태* 페이지에서 *정책 준수* 차트 옆에 있는 **준수 정책을 사용하지 않는 디바이스** 타일을 선택하여 준수 정책이 할당되지 않은 디바이스에 대한 정보를 볼 수 있습니다.
 
 ![준수 정책이 없는 디바이스 확인](./media/compliance-policy-monitor/devices-without-policies.png)
@@ -136,13 +138,13 @@ Intune에서는 해당 디바이스에 적용된 디바이스 준수 정책 설�
 
 - 모든 유형의 준수 정책이 할당된 사용자는 디바이스 플랫폼에 관계 없이 보고서에 표시되지 않습니다. 예를 들어 Android 디바이스를 사용하여 Windows 준수 정책을 사용자에게 할당한 경우 디바이스는 보고서에 표시되지 않습니다. 그러나 Intune은 해당 Android 디바이스를 비준수로 간주합니다. 문제를 방지하려면 각 디바이스 플랫폼에 대한 정책을 만들어 모든 사용자에게 배포하는 것 좋습니다.
 
-### <a name="per-policy-device-compliance-report"></a>정책별 디바이스 준수 보고서
+### <a name="per-policy-device-compliance"></a>정책별 디바이스 준수
 
 **정책 준수** 차트는 정책과 규정을 준수하는 디바이스와 그렇지 않은 디바이스의 수를 표시합니다. 
 
 ![정책의 목록, 해당 정책에 대한 준수 및 비준수 디바이스의 수 확인](./media/compliance-policy-monitor/idc-8.png)
 
-## <a name="setting-compliance-report"></a>준수 보고서 설정
+### <a name="setting-compliance"></a>설정 준수
 
 **설정 준수** 차트는 모든 준수 정책의 모든 디바이스 준수 정책 설정, 디바이스 설정이 적용되는 플랫폼 및 비준수 디바이스의 수를 표시합니다.
 
@@ -152,6 +154,24 @@ Intune에서는 해당 디바이스에 적용된 디바이스 준수 정책 설�
 > 정책을 디바이스에 할당하고 동일한 디바이스에 사용자를 할당할 수 있습니다. 일부 시나리오에서는 디바이스가 다시 부팅되는 경우처럼 사용자가 로그인하기 전에 디바이스가 동기화될 수 있습니다. 규정 준수에서 이 사용자를 평가하고 디바이스를 비규격으로 표시할 수 있습니다. 이 동작은 시스템 계정을 비규격 사용자로 표시할 수도 있습니다.
 >
 > 이는 다중 사용자 Windows 10 디바이스의 알려진 문제입니다. 이 동작에 대한 변경 사항 또는 업데이트는 [개발 중](../fundamentals/in-development.md) 및/또는 [새로운 기능](../fundamentals/whats-new.md)에서 발표되었습니다.
+
+## <a name="view-compliance-reports"></a>새로운 규정 준수 보고서
+
+*준수 상태*에 대한 차트를 사용하는 것 외에도 관리 센터의 *모니터링* 페이지에서 규정 준수 보고서를 볼 수 있습니다.
+
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+
+2. **디바이스** > **모니터링**을 선택한 다음, **준수** 아래에서 보려는 보고서를 선택합니다. 사용 가능한 몇 가지 규정 준수 보고서는 다음과 같습니다.
+
+   - 디바이스 정책 준수
+   - 비규격 디바이스
+   - 준수 정책 없는 디바이스
+   - 설정 준수
+   - 정책 규정 준수
+   - Windows 상태 증명 보고서
+   - 위협 에이전트 상태
+
+보고서에 대한 자세한 내용은 [Intune 보고서](../fundamentals/reports.md)를 참조하세요.
 
 ## <a name="view-status-of-device-policies"></a>디바이스 정책 상태 보기
 

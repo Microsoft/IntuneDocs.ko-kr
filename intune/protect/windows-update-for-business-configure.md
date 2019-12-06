@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: aiwang
+ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53ac86ce88481176ab6f2472b1c0fbae8d3453c1
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199323"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291096"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune에서 Windows 10 소프트웨어 업데이트 관리
 
@@ -208,13 +208,18 @@ Windows 업데이트 정책에 대한 자세한 내용은 Windows 클라이언�
 
 - 업데이트 링에서 *일시 중지*를 사용할 경우 35일 후 만료되는 것과 달리 Windows 10 기능 업데이트 정책은 계속 유효합니다. 디바이스는 Windows 10 기능 업데이트 정책을 수정하거나 제거할 때까지 새 Windows 버전을 설치하지 않습니다. 정책을 편집하여 최신 버전을 지정하는 경우 디바이스가 해당 Windows 버전의 기능을 설치할 수 있습니다.
 
-> [!IMPORTANT]
-> *Windows 10 기능 업데이트*와 *Windows 10 업데이트 링* 정책을 동일한 장치에 모두 배포하는 경우 업데이트 링에서 다음 구성을 검토합니다.
->
-> - **기능 업데이트 지연 기간(일)** 을 **0**으로 설정해야 합니다.
-> - 업데이트 링에 대한 기능 업데이트가 *실행 중*이어야 합니다. 이를 일시 중지하면 안 됩니다.
+### <a name="limitations-for-windows-10-feature-updates"></a>Windows 10 기능 업데이트에 대한 제한 사항
 
-Windows 10 기능 업데이트는 Windows Autopilot에서 지원되지 않습니다.
+- *Windows 10 기능 업데이트* 정책을 *Windows 10 업데이트 링* 정책도 수신하는 디바이스에 배포하는 경우 업데이트 링에서 다음 구성을 검토합니다.
+  - **기능 업데이트 지연 기간(일)** 을 **0**으로 설정해야 합니다.
+  - 업데이트 링에 대한 기능 업데이트가 *실행 중*이어야 합니다. 이를 일시 중지하면 안 됩니다.
+
+- *Windows 10 기능 업데이트* 정책은 Autopilot에서 지원되지 않습니다. Intune은 다음으로 정책을 배포하지 않습니다.
+  - Autopilot에서 프로비저닝되는 디바이스
+  - 이전에 Autopilot으로 프로비저닝했던 디바이스
+
+  이러한 제한 사항을 조사하여 향후 지원 가능한지 확인합니다.
+
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10 기능 업데이트 만들기 및 할당
 

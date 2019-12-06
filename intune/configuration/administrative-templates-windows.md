@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cec7395fc766f6a937e6c43ef3a32fb21610be
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059981"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547981"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 템플릿을 사용하여 Microsoft Intune에서 그룹 정책 설정 구성
 
@@ -101,3 +101,5 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
 ## <a name="next-steps"></a>다음 단계
 
 템플릿이 만들어지지만 아직 아무것도 하지 않습니다. 다음으로 [프로필이라고도 하는 템플릿을 할당](device-profile-assign.md)하고 [해당 상태를 모니터링](device-profile-monitor.md)합니다.
+
+[관리 템플릿을 사용하여 Office 365 업데이트](administrative-templates-update-office.md).

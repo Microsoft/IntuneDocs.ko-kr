@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199302"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390758"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune에 대한 지원을 받는 방법
 
@@ -39,7 +39,7 @@ Intune 관리자 권한으로 **도움말 및 지원** 옵션을 사용하여 Az
 
 ## <a name="help-and-support-experience"></a>도움말 및 지원 환경
 
-Intune에 대한 도움말 및 지원 환경은 [Microsoft 365 디바이스 관리 포털](https://devicemanagement.microsoft.com)에서 그리고 Azure Portal의 Intune 아래에 있는 모든 블레이드(또는 페이지)에서 사용할 수 있습니다.
+Intune에 대한 도움말 및 지원 환경은 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)와 Azure Portal의 Intune 아래에 있는 모든 블레이드(또는 페이지)에서 사용할 수 있습니다.
 
 이 *도움말 + 지원* 환경은 [Microsoft 365 관리 센터](https://admin.microsoft.com/)에 표시되는 환경과 비슷하고, Azure의 다른 서비스를 대신하는 이전 *도움말 + 지원* 환경을 대체합니다.
 
@@ -48,16 +48,27 @@ Intune에 대한 도움말 및 지원 환경은 [Microsoft 365 디바이스 관�
 
 ### <a name="options-to-access-help-and-support"></a>도움말 및 지원에 액세스하는 옵션
 
-- **Azure Portal에서:**
+Intune에 새로 만든 테넌트를 사용하는 경우 *도움말 및 지원*이 열리지 않고 다음 메시지가 반환될 수 있습니다.
+
+- *알 수 없는 문제가 발생했습니다. 페이지를 새로 고쳐도 문제가 지속되면 [M365 관리 센터](https://admin.microsoft.com)를 통해 사례를 만들고 제공된 세션 ID를 참조하세요.*
+
+오류 세부 정보에는 *세션 ID*, *확장* 세부 정보 등이 포함됩니다. 
+ 
+이 문제는 **M365 관리 센터**(https://admin.microsoft.com ) 또는 **Office 365 포털**(https://portal.office.com )을 통해 새 테넌트 계정을 아직 인증하지 않은 경우에 발생합니다. 이 문제를 해결하려면 메시지에서 *M365 관리 센터*에 대한 링크를 선택하거나 https://portal.office.com 을 방문한 후 로그인합니다. 이러한 사이트에서 인증을 진행하면 Intune에 대한 *도움말 및 지원*에 액세스할 수 있게 됩니다.
+
+
+**도움말 및 지원 액세스**:
+
+- **Azure Portal에서**
 
   - Intune 블레이드 또는 페이지에서 **도움말 및 지원**을 선택합니다.
 
   > [!NOTE]  
   > Intune 인스턴스가 Azure Government처럼 소버린 클라우드라고도 하는 정부용 프라이빗 클라우드에서 호스트되는 경우 이 문서 뒷부분에 나오는 [정부용 프라이빗 클라우드에 대한 Intune 지원](#intune-support-for-private-cloud-for-government)을 참조하세요. Intune *도움말 및 지원* 환경은 내년이 지나야 정부용 프라이빗 클라우드에서 사용할 수 있게 됩니다.
 
-- **디바이스 관리 대시보드에서:**
+- **Microsoft Endpoint Manager 관리 센터에서** 다음을 수행합니다.
   - Intune에 대한 기능 영역을 선택한 후 **도움말 + 지원** 옵션을 선택합니다.
-  - 디바이스 관리 포털의 노드에서 포털 오른쪽 위 모서리에 있는 **?** 아이콘을 선택한 다음, 드롭다운 목록을 사용하여 도움을 원하는 서비스를 선택합니다. 디바이스 관리 포털의 **?** 아이콘은 여러 서비스를 지원하며, 지원하려는 특정 서비스를 선택해야 합니다.  
+  - Microsoft Endpoint Manager 관리 센터의 임의 노드에서 **?** 를 선택합니다. 아이콘을 선택한 다음, 드롭다운 목록을 사용하여 도움을 원하는 서비스를 선택합니다. 디바이스 관리 포털의 **?** Microsoft Endpoint Manager 관리 센터의 아이콘은 여러 서비스를 지원하며, 지원하려는 특정 서비스를 선택해야 합니다.  
 
     ![서비스 선택](./media/get-support/select-a-service.png)
 

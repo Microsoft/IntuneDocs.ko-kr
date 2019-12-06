@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61771ce2b6179b2e74a4d13f72794ece97907034
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9454353ec4f8291d4d8c0001cc977838ecec787b
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502578"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540810"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP를 사용하여 Intune에 파트너 인증 기관 추가
 
@@ -57,7 +57,8 @@ Azure AD(Active Directory) 애플리케이션을 사용하면 Intune에 권한�
 
 다음 다이어그램에서는 Intune과 타사 SCEP 통합의 자세한 흐름을 보여 줍니다.
 
-![타사 인증 기관 SCEP를 Microsoft Intune과 통합하는 방법](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
+> [!div class="mx-imgBorder"]
+> ![타사 인증 기관 SCEP를 Microsoft Intune과 통합하는 방법](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
 
 ## <a name="set-up-third-party-ca-integration"></a>타사 CA 통합 설정
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 8d24a858ec66433e72d63bea922eac0c4072a27c
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709477"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547722"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -49,7 +49,7 @@ Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다.
 
 디바이스 정보가 포함된 CSV 파일을 가져와서 Windows Autopilot 디바이스를 추가할 수 있습니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **디바이스** > **가져오기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **Windows** > **디바이스**(**Windows Autopilot 배포 프로그램**) > **가져오기**를 선택합니다.
 
     ![Windows Autopilot 디바이스 스크린샷](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -65,7 +65,7 @@ Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다.
 
 3. **가져오기**를 선택하여 디바이스 정보 가져오기를 시작합니다. 가져오기는 몇 분 정도 걸릴 수 있습니다.
 
-4. 가져오기가 완료되면 **디바이스 등록** > **Windows 등록** > **Windows Autopilot** > **디바이스** > **동기화**를 선택합니다. 동기화가 진행 중이라는 메시지가 표시됩니다. 동기화되는 디바이스의 수에 따라 프로세스가 완료되는 데 몇 분 정도 걸릴 수 있습니다.
+4. 가져오기가 완료되면 **디바이스** > **Windows** > **Windows 등록** > **디바이스**(**Windows Autopilot 배포 프로그램**) > **동기화**를 선택합니다. 동기화가 진행 중이라는 메시지가 표시됩니다. 동기화되는 디바이스의 수에 따라 프로세스가 완료되는 데 몇 분 정도 걸릴 수 있습니다.
 
 5. 보기를 새로 고쳐 새 디바이스를 확인합니다.
 
@@ -88,7 +88,7 @@ Autopilot 배포에는 다음과 같은 네 가지 유형이 있습니다.
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Autopilot 배포 프로필 만들기
 Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용됩니다. 테넌트당 최대 350개의 프로필을 만들 수 있습니다.
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **Windows** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 선택합니다.
 2. **기본 사항** 페이지에서 **이름** 및 선택적 **설명**을 입력합니다.
 
     ![기본 페이 스크린샷의](./media/enrollment-autopilot/create-profile-basics.png)
@@ -129,25 +129,35 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
     ![검토 페이지 스크린샷](./media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune은 할당된 그룹의 새 디바이스에 대해 주기적으로 확인한 다음, 해당 디바이스에 프로필을 할당하는 프로세스를 시작합니다. 이 프로세스를 완료하는 데 몇 분 정도 걸릴 수 있습니다. 디바이스를 배포하기 전에 이 프로세스가 완료되었는지 확인합니다.  **디바이스 등록** > **Windows 등록** > **디바이스**에서 확인할 수 있습니다. 여기에서 "할당되지 않음"에서 "할당"으로, 마지막으로 "할당됨"으로 프로필 상태 변경이 표시됩니다.
+> Intune은 할당된 그룹의 새 디바이스에 대해 주기적으로 확인한 다음, 해당 디바이스에 프로필을 할당하는 프로세스를 시작합니다. 이 프로세스를 완료하는 데 몇 분 정도 걸릴 수 있습니다. 디바이스를 배포하기 전에 이 프로세스가 완료되었는지 확인합니다.  **디바이스** > **Windows** > **Windows 등록** > **디바이스**(**Windows Autopilot 배포 프로그램**)에서 확인할 수 있습니다. 여기에서 "할당되지 않음"에서 "할당"으로, 마지막으로 "할당됨"으로 프로필 상태 변경이 표시됩니다.
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Autopilot 배포 프로필 편집
 Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분을 편집할 수 있습니다.   
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록**을 선택합니다.
-2. **Windows 등록** 아래의 **Windows Autopilot** 섹션에서 **배포 프로필**을 선택합니다.
-3. 편집하려는 프로필을 선택합니다.
-4. 왼쪽에 있는 **속성**을 클릭하여 배포 프로필의 이름이나 설명을 변경합니다. 변경한 후에 **저장**을 클릭합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **Windows** > **Windows 등록** > **배포 프로필**을 선택합니다.
+2. 편집하려는 프로필을 선택합니다.
+3. 왼쪽에 있는 **속성**을 선택하여 배포 프로필의 이름이나 설명을 변경합니다. 변경한 후에 **저장**을 클릭합니다.
 5. OOBE 설정을 변경하려면 **설정**을 클릭합니다. 변경한 후에 **저장**을 클릭합니다.
 
 > [!NOTE]
 > 프로필의 변경 내용은 해당 프로필에 할당된 디바이스에 적용됩니다. 그러나 디바이스를 다시 설정하고 다시 등록할 때까지는 Intune에 이미 등록되어 있는 디바이스에 업데이트된 프로필이 적용되지 않습니다.
 
+## <a name="edit-autopilot-device-attributes"></a>Autopilot 디바이스 특성 편집
+Autopilot 디바이스를 업로드한 후에는 디바이스의 특정 특성을 편집할 수 있습니다.
+
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **Windows** > **Windows 등록** > **디바이스**(**Windows Autopilot 배포 프로그램**)를 선택합니다.
+2. 편집하려는 디바이스를 선택합니다.
+3. 화면 오른쪽에 있는 창에서 디바이스 이름, 그룹 태그 또는 사용자에게 친숙한 이름(사용자를 할당한 경우)을 편집할 수 있습니다.
+4. **저장**을 선택합니다.
+
+> [!NOTE]
+> 디바이스 이름은 모든 디바이스에 대해 구성할 수 있지만 하이브리드 Azure AD 조인 배포에서는 무시됩니다. 하이브리드 Azure AD 디바이스의 경우 디바이스 이름이 도메인 가입 프로필에서 제공됩니다.
+
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows Autopilot 할당되지 않은 디바이스에 대한 경고  <!-- 163236 -->  
 
 경보에는 Autopilot 배포 프로필이 없는 Autopilot 프로그램 디바이스 수가 표시됩니다. 경고의 정보를 사용하여 프로필을 만들어서 할당되지 않은 디바이스에 할당하십시오. 경고를 클릭하면 Windows Autopilot 디바이스의 전체 목록과 해당 디바이스에 대한 자세한 정보가 표시됩니다.
 
-할당되지 않은 디바이스에 대한 경고를 보려면 [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **개요** > **할당되지 않은 디바이스**를 선택합니다.  
+할당되지 않은 디바이스에 대한 경고를 보려면 [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스** > **개요** > **할당 경고** > **할당되지 않은 디바이스**를 선택합니다.  
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>특정 Autopilot 디바이스에 사용자 할당
 
@@ -155,7 +165,7 @@ Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분
 
 필수 조건: Windows 10, 버전 1809 이상에서 Azure Active Directory 회사 포털이 구성되었습니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **디바이스**를 선택하고 디바이스를 선택한 후 **사용자 할당**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **Windows** > **Windows 등록** > **디바이스**(**Windows Autopilot 배포 프로그램**)를 선택하고 디바이스를 선택한 후 **사용자 할당**을 선택합니다.
 
     ![사용자 할당 스크린샷](./media/enrollment-autopilot/assign-user.png)
 
@@ -171,7 +181,7 @@ Autopilot 배포 프로필을 만든 후에는 배포 프로필의 특정 부분
 
 ## <a name="autopilot-deployments-report"></a>Autopilot 배포 보고서
 Windows Autopilot을 통해 배포된 각 디바이스에 대한 세부 정보를 볼 수 있습니다.
-보고서를 보려면 **Intune**으로 이동하고 **모니터**에서 **Autopilot 배포**를 선택합니다.
+보고서를 보려면 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)로 이동한 후 **디바이스** > **모니터** > **Autopilot 배포**를 선택합니다.
 데이터는 배포 후 30일 동안 사용할 수 있습니다.
 
 
@@ -179,7 +189,7 @@ Windows Autopilot을 통해 배포된 각 디바이스에 대한 세부 정보�
 
 Intune에 등록되지 않은 Windows Autopilot 디바이스를 삭제할 수 있습니다.
 
-- **디바이스 등록** > **Windows 등록** > **디바이스**에서 디바이스를 Windows Autopilot에서 삭제합니다. 삭제할 디바이스를 선택한 다음, **삭제**를 선택합니다. Windows Autopilot 디바이스 삭제는 몇 분 정도 걸릴 수 있습니다.
+- **디바이스** > **Windows** > **Windows 등록** > **디바이스**(**Windows Autopilot 배포 프로그램**)에서 Windows Autopilot의 디바이스를 삭제합니다. 삭제할 디바이스를 선택한 다음, **삭제**를 선택합니다. Windows Autopilot 디바이스 삭제는 몇 분 정도 걸릴 수 있습니다.
 
 테넌트에서 디바이스를 완전히 제거하려면 Intune 디바이스, Azure Active Directory 디바이스 및 Windows Autopilot 디바이스 레코드를 삭제해야 합니다. 이 작업은 모두 Intune에서 수행할 수 있습니다.
 
@@ -187,7 +197,7 @@ Intune에 등록되지 않은 Windows Autopilot 디바이스를 삭제할 수 �
 
 2. **디바이스** > **Azure AD 디바이스**에서 디바이스를 Azure Active Directory 디바이스에서 삭제합니다.
 
-3. **디바이스 등록** > **Windows 등록** > **디바이스**에서 디바이스를 Windows Autopilot에서 삭제합니다. 삭제할 디바이스를 선택한 다음, **삭제**를 선택합니다. Windows Autopilot 디바이스 삭제는 몇 분 정도 걸릴 수 있습니다.
+3. **디바이스** > **Windows** > **Windows 등록** > **디바이스**(**Windows Autopilot 배포 프로그램**)에서 Windows Autopilot의 디바이스를 삭제합니다. 삭제할 디바이스를 선택한 다음, **삭제**를 선택합니다. Windows Autopilot 디바이스 삭제는 몇 분 정도 걸릴 수 있습니다.
 
 ## <a name="using-autopilot-in-other-portals"></a>다른 포털에서 Autopilot 사용
 모바일 디바이스 관리에 관심이 없는 경우 다른 포털에서 Autopilot을 사용할 수 있습니다. 다른 포털을 옵션으로 사용할 수 있지만, Intune만 사용하여 Autopilot 배포를 관리하는 것이 좋습니다. Intune과 다른 포털을 사용하는 경우 Intune에서 수행할 수 없는 작업은 다음과 같습니다.  

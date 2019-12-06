@@ -5,23 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413832"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409984"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -81,7 +81,7 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
   > [!NOTE]
   > Microsoft Defender ATP 보안 기준은 물리적 디바이스에 최적화되었으며 현재 VM(가상 머신) 또는 VDI 엔드포인트에서 사용하지 않는 것이 좋습니다. 특정 기준 설정은 가상화된 환경의 원격 대화형 세션에 영향을 줄 수 있습니다.  자세한 내용은 Windows 문서에서 [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)(Microsoft Defender ATP 보안 기준의 준수 강화)을 참조하세요.
 
-- **Microsoft Edge 기준** 
+- **Microsoft Edge 기준**
   - [미리 보기: Microsoft Edge 기준](security-baseline-settings-edge.md)
 
 이전에 미리 보기 템플릿을 기반으로 만든 프로필은 새 프로필을 만드는 데 해당 미리 보기 템플릿을 사용할 수 없더라도 계속 사용하거나 편집할 수 있습니다.
@@ -103,13 +103,15 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 
 ### <a name="create-the-profile"></a>프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인하고 **디바이스 보안** > **보안 기준**을 선택하여 사용 가능한 기준 목록을 표시합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+
+2. **엔드포인트 보안** > **보안 기준**을 선택하여 사용 가능한 기준 목록을 봅니다.
 
    ![구성할 보안 기준을 선택](./media/security-baselines/available-baselines.png)
 
-2. 사용하려는 기준을 선택한 후 **프로필 만들기**를 선택합니다.
+3. 사용하려는 기준을 선택한 후 **프로필 만들기**를 선택합니다.
 
-3. **기본 사항** 탭에서 다음 속성을 지정합니다.
+4. **기본 사항** 탭에서 다음 속성을 지정합니다.
 
    - **이름**: 보안 기준선 프로필의 이름을 입력합니다. 예를 들어 ‘Defender ATP용 표준 프로필’을 입력합니다. 
 
@@ -117,7 +119,7 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 
    **다음**을 선택하여 다음 탭으로 이동합니다. 새 탭으로 이동한 후 탭 이름을 선택하여 이전에 보던 탭으로 돌아갈 수 있습니다.
 
-4. 구성 설정 탭에서 선택한 기준에서 사용할 수 있는 **설정**의 그룹을 확인합니다. 그룹을 확장하여 해당 그룹의 설정 및 기준의 설정에 대한 기본값을 확인할 수 있습니다. 특정 설정을 찾으려면
+5. 구성 설정 탭에서 선택한 기준에서 사용할 수 있는 **설정**의 그룹을 확인합니다. 그룹을 확장하여 해당 그룹의 설정 및 기준의 설정에 대한 기본값을 확인할 수 있습니다. 특정 설정을 찾으려면
    - 그룹을 선택하여 확장하고 사용 가능한 설정을 검토합니다.
    - ‘검색’ 창에 키워드를 지정하여 검색 기준을 포함하는 그룹만 표시하도록 보기를 필터링합니다. 
 
@@ -125,13 +127,13 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 
    ![그룹을 확장하여 해당 그룹에 대한 설정 보기](./media/security-baselines/sample-list-of-settings.png)
 
-5. **범위 태그** 탭에서 **범위 태그 선택**을 선택하여 *태그 선택* 창을 열고 프로필에 범위 태그를 할당합니다.
+6. **범위 태그** 탭에서 **범위 태그 선택**을 선택하여 *태그 선택* 창을 열고 프로필에 범위 태그를 할당합니다.
 
-6. **할당** 탭에서 **포함할 그룹 선택**을 선택한 다음 하나 이상의 그룹에 기준을 할당합니다. **제외할 그룹 선택**을 사용하여 할당을 미세 조정합니다.
+7. **할당** 탭에서 **포함할 그룹 선택**을 선택한 다음 하나 이상의 그룹에 기준을 할당합니다. **제외할 그룹 선택**을 사용하여 할당을 미세 조정합니다.
 
    ![프로필 할당](./media/security-baselines/assignments.png)
 
-7. 기준을 배포할 준비가 된 경우 **검토 + 만들기** 탭으로 이동하여 기준에 대한 세부 정보를 검토합니다. **만들기**를 선택하여 프로필을 저장하고 배포합니다.
+8. 기준을 배포할 준비가 된 경우 **검토 + 만들기** 탭으로 이동하여 기준에 대한 세부 정보를 검토합니다. **만들기**를 선택하여 프로필을 저장하고 배포합니다.
 
    프로필을 만들면 프로필은 바로 할당된 그룹에 푸시되고 즉시 적용할 수 없습니다.
 
@@ -140,7 +142,7 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 
    ![기준 검토](./media/security-baselines/review.png)
 
-8. 프로필을 만든 후 **디바이스 보안** > **보안 기준**으로 이동하여 편집하고, 구성한 기준 유형을 선택한 다음 **프로필**을 선택합니다. 사용 가능한 프로필 목록에서 프로필을 선택한 다음 **속성**을 선택합니다. 모든 사용 가능한 구성 탭의 설정을 편집하고 **검토 + 저장**을 선택하여 변경 내용을 커밋할 수 있습니다.
+9. 프로필을 만든 후 **디바이스 보안** > **보안 기준**으로 이동하여 편집하고, 구성한 기준 유형을 선택한 다음 **프로필**을 선택합니다. 사용 가능한 프로필 목록에서 프로필을 선택한 다음 **속성**을 선택합니다. 모든 사용 가능한 구성 탭의 설정을 편집하고 **검토 + 저장**을 선택하여 변경 내용을 커밋할 수 있습니다.
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>프로필에 대한 기준 버전 변경
 
@@ -160,25 +162,27 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 
 #### <a name="to-change-the-baseline-version-for-a-profile"></a>프로필에 대한 기준 버전을 변경하려면
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인한 다음 **디바이스 보안** > **보안 기준**을 선택하고 변경할 프로필이 있는 기준 유형의 제목을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다. 
 
-2. 다음으로 **프로필**을 선택한 다음 편집할 프로필의 확인란을 선택하고 **버전 변경**을 선택합니다.
+2. **엔드포인트 보안** > **보안 기준**을 선택하고 변경할 프로필이 있는 기준 유형의 제목을 선택합니다.
+
+3. 다음으로 **프로필**을 선택한 다음 편집할 프로필의 확인란을 선택하고 **버전 변경**을 선택합니다.
 
    ![기준 선택](./media/security-baselines/select-baseline.png)
 
-3. **버전 변경** 창에서 **Select a security baseline to update to**(업데이트할 보안 기준 선택) 드롭다운을 사용하여 사용할 버전 인스턴스를 선택합니다.
+4. **버전 변경** 창에서 **Select a security baseline to update to**(업데이트할 보안 기준 선택) 드롭다운을 사용하여 사용할 버전 인스턴스를 선택합니다.
 
    ![버전 선택](./media/security-baselines/select-instance.png)
 
-4. **업데이트 검토**를 선택하여 프로필 현재 인스턴스 버전과 선택한 새 버전 간의 차이를 표시하는 CSV 파일을 다운로드합니다. 이 파일을 검토하여 새로운 설정이나 제거된 설정과 업데이트된 프로필에서 이러한 설정의 기본값이 무엇인지 파악합니다.
+5. **업데이트 검토**를 선택하여 프로필 현재 인스턴스 버전과 선택한 새 버전 간의 차이를 표시하는 CSV 파일을 다운로드합니다. 이 파일을 검토하여 새로운 설정이나 제거된 설정과 업데이트된 프로필에서 이러한 설정의 기본값이 무엇인지 파악합니다.
 
    준비가 되면 다음 단계를 계속합니다.
 
-5. **Select a method to update the profile**(프로필을 업데이트할 방법 선택)에서 다음 두 가지 옵션 중 하나를 선택합니다.
+6. **Select a method to update the profile**(프로필을 업데이트할 방법 선택)에서 다음 두 가지 옵션 중 하나를 선택합니다.
    - **Accept baseline changes but keep my existing setting customizations**(기준 변경 사항을 적용하지만 기존 설정 사용자 지정 유지) - 이 옵션은 기준 프로필의 사용자 지정 내용을 유지하고 사용하도록 선택한 새 버전에 적용합니다.
    - **Accept baseline changes and discard existing setting customizations**(기준 변경 사항을 적용하고 기존 설정 사용자 지정 삭제) - 이 옵션은 원래 프로필을 완전히 덮어씁니다. 업데이트된 프로필에서는 모든 설정에 기본값을 사용합니다.
 
-6. **제출**을 선택합니다. 프로필이 선택한 기준 버전으로 업데이트되고 변환이 완료된 후 기준이 할당된 그룹에 즉시 다시 배포됩니다.
+7. **제출**을 선택합니다. 프로필이 선택한 기준 버전으로 업데이트되고 변환이 완료된 후 기준이 할당된 그룹에 즉시 다시 배포됩니다.
 
 ### <a name="remove-a-security-baseline-assignment"></a>보안 기준 할당 제거
 

@@ -18,20 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99d946366724b03ecdf5c47d8ba7b1d820ed3055
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 55fc7149d23336519af76c423862bd81f065b88f
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164720"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239227"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록
 
 Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 iOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. DEP를 사용하면 터치하지 않고도 많은 수의 디바이스를 등록할 수 있습니다. iPhone 및 iPad와 같은 디바이스를 사용자에게 직접 제공할 수 있습니다. 사용자가 디바이스를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 디바이스가 관리용으로 등록됩니다.
 
-DEP 등록을 사용하도록 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 관리용으로 Intune에 디바이스를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다.
-
-그러나 DEP 등록은 [디바이스 등록 관리자](device-enrollment-manager-enroll.md)에서 작동하지 않습니다.
+DEP 등록을 사용하도록 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 관리용으로 Intune에 디바이스를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다. DEP 등록은 [디바이스 등록 관리자](device-enrollment-manager-enroll.md) 계정에서 사용할 수 없습니다.
 
 > [!NOTE]
 > DEP는 최종 사용자가 제거할 수 없는 디바이스 구성을 설정합니다. 따라서 [DEP로 마이그레이션](../fundamentals/migration-guide-considerations.md)하기 전에 디바이스를 초기화하여 기본(신규) 상태로 되돌려 놓아야 합니다.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c6e519f4f5f31a11bd2e762b9e33357825d783d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984165"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390384"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 앱 보호 정책 설정
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -46,6 +46,7 @@ ms.locfileid: "73984165"
 | **다른 앱 간에 잘라내기, 복사하기 및 붙여넣기 제한** | 이 앱에서 잘라내기, 복사 및 붙여넣기 동작을 사용할 수 있는 경우를 지정합니다. 다음 중에서 선택합니다. <ul><li>**차단됨**:  이 앱과 다른 앱 간에 잘라내기, 복사 및 붙여넣기 작업을 허용하지 않습니다.</li><li>**정책 관리 앱**: 이 앱과 다른 정책 관리 앱 간에만 잘라내기, 복사 및 붙여넣기 작업을 허용합니다.</li><li>**정책 관리 앱에 붙여넣기**: 이 앱과 다른 정책 관리 앱 간에 잘라내기 또는 복사를 허용합니다. 모든 앱의 데이터를 이 앱에 붙여넣을 수 있습니다.</li><li>**모든 앱**: 이 앱과 다른 앱 간의 잘라내기, 복사 및 붙여넣기에 대한 제한이 없습니다.</ul> | **모든 앱**   |
 | <ul><ui>**앱의 문자 제한 잘라내기 및 복사** | 조직 데이터 및 계정에서 잘라내거나 복사할 수 있는 문자 수를 지정합니다.  이렇게 하면 **다른 앱에서 잘라내기, 복사 및 붙여넣기 제한** 설정에 관계없이 지정된 문자 수를 모든 애플리케이션과 공유할 수 있습니다.<p>기본값은 0입니다.<p>**참고**: *앱에 Intune SDK 버전 9.0.14 이상이 있어야 합니다.*  | **0**   |
 | **조직 데이터 알림** | 조직 계정에 대해 OS 알림을 통해 공유되는 조직 데이터의 양을 지정합니다. 이 정책 설정은 로컬 디바이스 및 연결된 디바이스(예: 착용식 및 스마트 스피커)에 영향을 줍니다. 앱은 알림 동작을 사용자 지정하는 추가 컨트롤을 제공하거나 일부 값만 적용하도록 선택할 수 있습니다. 다음 중에서 선택합니다. <ul><li>**차단**:  알림을 공유하지 않습니다.</li><ul><li>애플리케이션에서 지원하지 않는 경우 알림이 허용됩니다.</li></ul><li>**조직 데이터 차단**: 알림에서 조직 데이터를 공유하지 않습니다(예:</li><UL><li>"새 메일이 있습니다.", "회의가 있습니다.").</li><li>애플리케이션에서 지원하지 않는 경우 알림이 차단됩니다.</li></ul><li>**허용**: 알림에서 조직 데이터 공유</li><li>**모든 앱**: 이 앱과 다른 앱 간의 잘라내기, 복사 및 붙여넣기에 대한 제한이 없습니다.</ul> <p>**참고**: *이 설정에는 앱 지원이 필요합니다. 현재, 2019년 12월 16일 주에 출시될 예정인 iOS용 Outlook 버전 4.16.0 이상에서 이 설정을 지원하게 됩니다.* | **허용**   |
+| **타사 키보드** | 관리되는 애플리케이션에서 타사 키보드를 사용하지 못하도록 하려면 **차단**을 선택합니다.<p>이 설정을 사용하는 경우 사용자는 타사 키보드 사용이 차단되었다고 알리는 일회성 메시지를 받습니다. 이 메시지는 사용자가 처음으로 키보드를 사용해야 하는 조직 데이터와 상호 작용할 때 표시됩니다. 관리되는 애플리케이션을 사용하는 동안 표준 iOS 키보드만 사용할 수 있으며 다른 모든 키보드 옵션은 비활성화됩니다. 이 설정은 다중 ID 애플리케이션의 조직 및 개인 계정 둘 다에 영향을 줍니다. 이 설정은 관리되지 않는 애플리케이션에서 타사 키보드 사용에 적용되지 않습니다.<p>**참고:** 이 기능을 사용하려면 앱에서 Intune SDK 버전 12.0.16 이상을 사용해야 합니다. 8\.0.14에서 12.0.15 범위의 SDK 버전을 사용하는 앱의 경우 다중 ID 앱에 대해 이 기능이 올바르게 적용되지 않습니다. 자세한 내용은 [알려진 문제: 타사 키보드가 개인 계정의 iOS에서 차단되지 않습니다](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Updated-Known-issue-Third-party-keyboards-are-not-blocked-in-iOS/ba-p/339486). | **허용**  |
 
 ### <a name="encryption"></a>암호화
 | Setting | 사용 방법 | 기본값 |

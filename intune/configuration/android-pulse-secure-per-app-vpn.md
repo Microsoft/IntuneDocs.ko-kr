@@ -6,30 +6,31 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
-ms.reviewer: chrisbal
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3683d2aeada791c6ec827e915e02365a336e6045
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059670"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319852"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune 사용자 지정 프로필을 사용하여 Android 디바이스에 대한 앱별 VPN 프로필 만들기
 
-[!INCLUDE[azure_portal](../includes/azure_portal.md)]
-
 Intune으로 관리되는 Android 5.0 이상 디바이스용 앱별 VPN 프로필을 만들 수 있습니다. 먼저 Pulse Secure 또는 Citrix 연결 형식을 사용하는 VPN 프로필을 만듭니다. 그런 다음 VPN 프로필을 특정 앱과 연결하는 사용자 지정 구성 정책을 만듭니다.
+
+> [!NOTE]
+> Android 엔터프라이즈 디바이스에서 앱별 VPN을 사용하려면 다음 단계를 사용할 수도 있습니다. 그러나 VPN 클라이언트 앱에 대해 [앱 구성 정책](../apps/app-configuration-policies-use-android.md)를 사용하는 것이 좋습니다.
 
 Android 디바이스 또는 사용자 그룹에 정책을 할당한 후에 사용자가 PulseSecure 또는 Citrix VPN 클라이언트를 시작해야 합니다. 그러면 VPN 클라이언트는 지정한 앱에서 생성되는 트래픽만 열린 VPN 연결을 사용하도록 허용합니다.
 
@@ -48,7 +49,7 @@ Android 디바이스 또는 사용자 그룹에 정책을 할당한 후에 사�
     - **플랫폼**: **Android**를 선택합니다.
     - **프로필 유형**: **VPN**을 선택합니다.
 
-4. **설정** > **구성**을 선택한 다음 [VPN 설정을 구성하는 방법](vpn-settings-configure.md) 및 [Android 디바이스에 대한 Intune VPN 설정](vpn-settings-android.md)의 설정에 따라 VPN 프로필을 구성합니다.
+4. **설정** > **구성**을 선택합니다. 그런 다음, VPN 프로필을 구성합니다. 자세한 내용은 [VPN 설정 구성 방법](vpn-settings-configure.md) 및 [Android 디바이스에 대한 Intune VPN 설정](vpn-settings-android.md)을 참조하세요.
 
 VPN 프로필을 만들 때 지정하는 **연결 이름** 값을 적어 두세요. 다음 단계에서 이 이름이 필요합니다. 예를 들면 **MyAppVpnProfile**입니다.
 
@@ -75,7 +76,7 @@ VPN 프로필을 만들 때 지정하는 **연결 이름** 값을 적어 두세�
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>앱 목록을 블랙리스트 또는 허용 목록으로 설정(옵션)
 
-**블랙리스트** 값을 사용하여 VPN 연결을 사용*할 수 없는* 앱 목록을 입력할 수 있습니다. 다른 모든 앱은 VPN을 통해 연결됩니다. 또는 **허용 목록** 값을 사용하여 VPN 연결을 사용*할 수 있는* 앱 목록을 입력할 수 있습니다. 목록에 없는 앱은 VPN을 통해 연결되지 않습니다.
+*블랙리스트* 값을 사용하여 VPN 연결을 사용**할 수 없는** 앱 목록을 입력할 수 있습니다. 다른 모든 앱은 VPN을 통해 연결됩니다. 또는 **허용 목록** 값을 사용하여 VPN 연결을 사용*할 수 있는* 앱 목록을 입력합니다. 목록에 없는 앱은 VPN을 통해 연결되지 않습니다.
 
 1. **사용자 지정 OMA-URI 설정** 창에서 **추가**를 선택합니다.
 2. 설정 이름을 입력합니다.

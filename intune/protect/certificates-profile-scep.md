@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9f9d6626d26e919efbd3a3d8b5dd735ecb7fb62
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199132"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390296"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune에서 SCEP 인증서 프로필 만들기 및 할당
 
@@ -53,6 +53,9 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
 
    2. Intune을 사용하여 디바이스 소유자의 SCEP 인증서 프로필을 통해 프로비저닝된 인증서를 해지할 수 없습니다. 외부 프로세스를 통해 또는 인증 기관에서 직접 해지를 관리할 수 있습니다. 
 
+   4. Android Enterprise 전용 디바이스에서는 SCEP 인증서 프로필이 Wi-Fi 네트워크 구성 및 인증에서만 지원됩니다.  Android Enterprise 전용 디바이스의 SCEP 인증서 프로필은 VPN 또는 앱 인증에 대해 지원되지 않습니다.   
+
+   
 7. **설정**을 선택하고 다음 구성을 완료합니다.
 
    - **인증서 유형**:

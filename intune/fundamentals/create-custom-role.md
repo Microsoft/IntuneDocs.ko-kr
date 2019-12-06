@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b60e4d801d09a834e11119260d3054cf43251bbd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3ca83287c58f8d2fb7c8eec5f8cc793e2c67b77a
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502965"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390696"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Intune에서 사용자 지정 역할 만들기
 
@@ -49,6 +49,21 @@ ms.locfileid: "72502965"
 7. 작업이 완료되면 **확인**을 선택합니다.
 
 8. **사용자 지정 역할 추가** 블레이드에서 **만들기**를 클릭합니다. **Intune 역할 - 모든 역할** 블레이드의 목록에 새 역할이 표시됩니다.
+
+
+## <a name="copy-a-role"></a>역할 복사
+
+기존 역할을 복사할 수도 있습니다.
+
+1. Intune 자격 증명을 사용하여 [Azure Portal](https://portal.azure.com)에 로그인하고 **Intune**을 선택합니다.
+
+2. **역할** > **모든 역할**을 선택하고 목록에서 역할을 선택한 후 **중복**을 선택합니다.
+
+3. **중복 역할**에서 이름을 입력합니다. 고유한 이름을 사용해야 합니다.
+
+4. 원본 역할의 모든 권한 및 범위 태그는 이미 선택되어 있습니다. 나중에 중복 역할의 **이름**, **설명**, **권한**및 **범위(태그)** 를 변경할 수 있습니다.
+
+5. **만들기**를 선택합니다. 
 
 ## <a name="next-steps"></a>다음 단계
 - [사용자에게 역할 할당](assign-role.md)

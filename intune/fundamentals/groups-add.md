@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,52 +18,92 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0702eebdd3899c6da527af0078e5e7d47cf95194
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510241"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261607"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>사용자 및 디바이스를 구성하기 위한 그룹 추가
-Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사용자를 관리합니다. Intune 관리자의 경우 조직의 요구에 맞게 그룹을 설정할 수 있습니다. 그룹을 만들어 지리적 위치, 부서 또는 하드웨어 특성별로 사용자 또는 디바이스를 구성합니다. 그룹을 사용하여 대규모 작업을 관리합니다. 예를 들어 많은 사용자에 대해 정책을 설정하거나 디바이스 집합에 앱을 배포할 수 있습니다.
+
+Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사용자를 관리합니다. Intune 관리자의 경우 조직의 요구에 맞게 그룹을 설정할 수 있습니다. 그룹을 만들어 지리적 위치, 부서 또는 하드웨어 특성별로 사용자 또는 디바이스를 구성합니다. 그룹을 사용하여 대규모 작업을 관리합니다. 예를 들어 많은 사용자에 대해 정책을 설정하거나 디바이스 세트에 앱을 배포할 수 있습니다.
 
 다음 유형의 그룹을 추가할 수 있습니다.
-- **할당된 그룹** - 수동으로 정적 그룹에 사용자 또는 디바이스를 추가합니다.
-- **동적 그룹** - (Azure Active Directory Premium 사용) 단순 또는 고급 규칙을 사용하여 정의된 사용자 또는 디바이스 그룹을 동적으로 작성할 수 있습니다.
+
+- **할당된 그룹** - 수동으로 정적 그룹에 사용자 또는 디바이스를 추가합니다. 
+- **동적 그룹**(Azure AD Premium 필요) - 만든 식에 따라, 사용자 또는 디바이스를 사용자 그룹 또는 디바이스 그룹에 자동으로 추가합니다.
+
+  예를 들어, 제목이 관리자인 사용자를 추가하는 경우 해당 사용자는 **모든 관리자** 사용자 그룹에 자동으로 추가됩니다. 또는 디바이스에 iOS 디바이스 OS 유형이 있는 경우 해당 디바이스는 **모든 iOS 디바이스** 디바이스 그룹에 자동으로 추가됩니다.
 
 ## <a name="add-a-new-group"></a>새 그룹 추가
 
 새 그룹을 만들려면 다음 단계를 따르세요.
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **그룹**으로 이동한 다음, **모든 그룹** 창에서 **새로운 그룹**을 선택합니다.
-   ![새 그룹이 선택된 Azure Portal의 스크린샷](./media/groups-add/groups-add-new.png)
-4. **그룹 유형**의 경우 다음 옵션 중 하나를 선택합니다.
-    - **보안**: 보안 그룹은 사용자 그룹을 구성할 때 유용하게 사용할 수 있는 리소스입니다. 보안 그룹은 누가 어떤 리소스에 액세스할 수 있는지 정의하기 때문에 Intune 사용자 그룹으로 쉽게 변환 가능합니다. Active Directory에서 Azure Active Directory로 동기화되는 보안 그룹이나 Microsoft 365 관리 센터 또는 Azure Portal을 통해 Azure Active Directory에서 직접 만든 보안 그룹은 모두 Intune에서 사용자 그룹을 만드는 데 사용할 수 있습니다.
-    - **Office 365**
 
-5. 새 그룹의 **이름** 및 **설명**을 입력하세요. 이러한 속성은 관리 포털에만 나타나고 사용자에게 표시되지 않습니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **그룹** > **새 그룹**을 선택합니다.
 
-6. **멤버 자격 유형**을 선택합니다.
-   - **할당됨** - 수동으로 할당된 구성원으로 그룹을 만듭니다. [Azure AD 할당된 그룹](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)에 대해 자세히 알아봅니다.
-   - **동적 사용자** - **동적 쿼리**로 정의된 사용자 그룹을 만듭니다.
-   - **동적 디바이스** - **동적 쿼리**로 정의된 디바이스 그룹을 만듭니다.
+   ![새 그룹이 선택된 Azure Portal 스크린샷](./media/groups-add/groups-add-new.png)
 
-   ![Intune 그룹 속성의 스크린샷](./media/groups-add/groups-add-properties.png)
+3. **그룹 유형**에서 다음 옵션 중 하나를 선택합니다.
 
-   Azure AD를 통해 멤버 자격을 정의하는 규칙에 따라 동적 그룹을 만들 수 있습니다. [특성 기반 동적 그룹을 만드는 방법](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)을 알아봅니다.
+    - **보안**: 보안 그룹은 리소스에 액세스할 수 있는 사용자를 정의하며, Intune의 그룹에 권장됩니다. 예를 들어, **모든 Charlotte 직원** 또는 **Contoso의 모든 여성** 등의 사용자 그룹을 만들 수 있습니다. **모든 iOS 디바이스** 또는 **모든 Windows 10 학생용 디바이스** 등의 디바이스 그룹도 만들 수 있습니다.
 
-7. **Office 기능 사용**을 선택하여 사용자 그룹 구성원에게 공유 Office 365 앱에 대한 액세스 권한을 부여할 수 있습니다. [Office 365 그룹](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)에 대해 자세히 알아보세요.
-8. 새 그룹을 추가하려면 **만들기**를 선택합니다.
+        > [!TIP]
+        > 만든 사용자 및 그룹은 [Microsoft 365 관리 센터](https://admin.microsoft.com), Azure Active Directory 관리 센터 및 [Azure Portal의 Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에도 표시될 수 있습니다. 조직 테넌트에서 이러한 모든 영역에서 그룹을 만들고 관리할 수 있습니다.
+        >
+        > 기본 역할이 디바이스 관리인 경우 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)를 사용하는 것이 좋습니다.
+
+    - **Office 365**: 이러한 그룹은 액세스를 제어하고 Office 365 리소스를 공유하도록 디자인되었습니다. 예를 들어, Outlook 받은 편지함 또는 일정을 공유하는 Office 365 그룹을 만들 수 있습니다. 자세한 내용은 [Office 365 그룹에 대해 알아보기](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)를 참조하세요.
+
+4. 새 그룹의 **그룹 이름** 및 **그룹 설명**을 입력합니다. 다른 사람이 어떤 그룹인지 알 수 있도록 구체적으로 지정하고 정보를 포함하세요.
+
+    예를 들어, 그룹 이름으로 **모든 Windows 10 학생용 디바이스**를 입력하고 그룹 설명으로 **Contoso의 고등학교 9-12학년 학생이 사용하는 모든 Windows 10 디바이스**를 입력합니다.
+
+5. **멤버 자격 유형**을 입력합니다. 옵션은 다음과 같습니다.
+
+    - **할당됨**: 관리자는 이 그룹에 사용자 또는 디바이스를 수동으로 할당하고 사용자 또는 디바이스를 수동으로 제거합니다.
+    - **동적 사용자**: 관리자는 멤버 자격 규칙을 만들어 멤버를 자동으로 추가하고 제거합니다.
+    - **동적 디바이스**: 관리자는 동적 그룹 규칙을 만들어 디바이스를 자동으로 추가하고 제거합니다.
+
+        ![Intune 그룹 속성의 스크린샷](./media/groups-add/groups-add-properties.png)
+
+    이러한 멤버 자격 형식과 동적 식을 만드는 방법에 대한 자세한 내용은 다음을 참조하세요.
+
+    - [Azure AD를 사용하여 기본 그룹 만들기 및 멤버 추가](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+    - [Azure AD의 그룹에 대한 동적 멤버 자격 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)
+
+    > [!NOTE]
+    > 이 관리 센터에서 사용자 또는 그룹을 만들 때 **Azure Active Directory** 브랜딩이 표시되지 않을 수 있습니다. 그러나 이 기능을 사용하게 될 것입니다.
+
+6. 새 그룹을 추가하려면 **만들기**를 선택합니다. 그룹이 목록에 표시됩니다.
+
+> [!TIP]
+> 다음과 같이 만들 수 있는 다른 동적 사용자 및 디바이스 그룹 중 일부를 고려해 보세요.
+>
+> - Contoso 고등학교의 모든 학생
+> - 모든 Android 엔터프라이즈 디바이스
+> - 모든 iOS 11 이하 디바이스
+> - Marketing
+> - 인사
+> - 모든 Charlotte 직원
+> - 모든 WA 직원
 
 ## <a name="groups-and-policies"></a>그룹 및 정책
 
-그룹을 만들 때 [정책](../protect/device-compliance-get-started.md) 적용 방법을 고려해야 합니다. 예를 들어 디바이스 운영 체제와 관련된 정책과 조직의 서로 다른 역할이나 Active Directory에 이미 정의된 조직 단위와 관련된 정책이 있을 수 있습니다. iOS, Android 및 Windows용의 개별 디바이스 그룹과 함께 각 조직 역할에 대한 사용자 그룹이 있으면 유용합니다.
+조직의 리소스에 대한 액세스는 만든 사용자 및 조직에서 제어합니다.
 
-또한 모든 그룹 및 디바이스에 적용되는 기본 정책을 만들어 조직의 기본 규정 준수 요구 사항을 설정해도 좋을 것입니다. 그러면 가장 넓은 범주의 사용자와 디바이스에 대해 더 구체적인 정책을 만들 수 있습니다. 예를 들어 각 디바이스 운영 체제에 대한 메일 정책을 만들 수 있습니다.
+그룹을 만들 때 [준수 정책](../protect/device-compliance-get-started.md) 및 [구성 프로필](../configuration/device-profiles.md)을 적용하는 방법을 고려합니다. 예를 들어, 다음 정책이 있을 수 있습니다.
 
+- 디바이스 운영 체제와 관련된 정책
+- 조직의 다른 역할과 관련된 정책
+- Active Directory에서 정의한 조직 구성 단위와 관련된 정책
 
+조직의 기본 규정 준수 요구 사항을 만들려면 모든 그룹 및 디바이스에 적용되는 기본 정책을 만들 수 있습니다. 그런 후에 가장 넓은 범주의 사용자와 디바이스에 대해 더 구체적인 정책을 만듭니다. 예를 들어 각 디바이스 운영 체제에 대한 메일 정책을 만들 수 있습니다.
+
+구성 프로필 권장 사항 및 지침은 [사용자 그룹 또는 디바이스 그룹에 정책 할당](../configuration/device-profile-assign.md#user-groups-vs-device-groups) 및 [프로필 권장 사항](../configuration/device-profile-create.md#recommendations)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
-- [Azure Active Directory 그룹을 사용하여 리소스에 대한 액세스 관리](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
-- [Azure Portal의 Intune 클래식 그룹](groups-get-started.md)
+
+- [Microsoft Intune을 사용하는 RBAC(역할 기반 액세스 제어)](role-based-access-control.md)
+- [Azure AD 그룹으로 리소스에 대한 액세스 관리](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

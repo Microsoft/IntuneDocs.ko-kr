@@ -7,14 +7,29 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fa2b1c5c9d267b9f860da2268d03c928ebf7693b
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309818"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74549460"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
+
+### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>'Intune용 Adobe Acrobat Reader' 모바일 앱에 대한 업데이트된 지원 정책<!--5746776-->
+8월 말에 MC188653에서 Intune용 Adobe Acrobat Reader 모바일 앱이 2019년 12월 1일에 지원 종료되며, Adobe가 주 Acrobat Reader 앱 내에서 Intune의 앱 보호 정책을 지원하도록 계획 중이라는 소식을 제공했습니다. 그 이후에 IT 관리자가 Intune용 Adobe Acrobat Reader를 대상으로 지정하고 최종 사용자가 Intune용 Adobe Acrobat Reader 사용을 시작할 수 있도록 시간을 좀 더 제공해야 한다는 고객 의견을 받았습니다. 최종 사용자 디바이스에서 Intune용 Adobe Acrobat Reader가 많이 사용되고 있으며 엔터프라이즈 시나리오에서 중요도가 높다고 가정할 경우, 작업 환경이 조직의 앱 보호 요구를 충족하는지 확인하려고 할 것입니다. 
+
+Acrobat Reader 모바일 앱은 앱 보호 정책을 지원하고 Intune SDK에 연결하므로 정책에서 여전히 일반 Acrobat Reader 모바일 앱을 대상으로 지정하는 것이 좋지만, Intune용 Adobe Acrobat Reader 앱은 2020년 3월 31일까지 계속 지원될 예정입니다. 
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+이 보고 기능이 조직의 하나 이상의 정책이 Intune용 Adobe Acrobat Reader 애플리케이션을 대상으로 하기 때문에 여러분은 앞으로 메시지를 받게 되거나, 이전 EOL 통신을 받았을 수 있습니다. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+최종 사용자와 기술 지원팀에 이 변경 내용을 알립니다. [회사 포털의 지원 정보 기능](../apps/company-portal-app.md#support-information)을 사용하여 Intune 관련 질문에 대한 채널을 설정할 수 있습니다.
+
+#### <a name="additional-information"></a>추가 정보
+https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
+
 
 ### <a name="end-support-for-windows-phone-81--3544909--"></a>Windows Phone 8.1에 대한 최종 지원<!--3544909-->
 Windows Phone 8.1에 대한 Microsoft 일반 지원은 2017년 7월에 종료되었으며 추가 지원은 2019년 6월에 종료되었습니다. Windows Phone 8.1용 회사 포털 앱은 2017년 10월부터 지속 모드에 있습니다. Microsoft Intune은 이제 2020년 2월 20일에 Windows Phone 8.1에 대한 지원을 종료합니다.

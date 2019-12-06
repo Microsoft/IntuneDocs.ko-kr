@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a20d1df2bf1e5052bcb2d3d83e919e190f8d9175
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: f31e500b7a3383c5c0c53f1df72cb4a42660328f
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445875"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74284133"
 ---
 
 
@@ -41,4 +41,5 @@ ms.locfileid: "73445875"
 
 EMS(Enterprise Management + Security)가 있는 고객은 [Azure AD(Azure Active Directory)를 사용하여 Windows 10 디바이스를 등록](/intune/windows-enroll)할 수도 있습니다.
 
+Intune에서 Windows 10 가상 머신을 사용하는 방법에 대한 지침은 [Windows 10 가상 머신 사용](../fundamentals/windows-10-virtual-machines.md)을 참조하세요.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199176"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410204"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용
 
@@ -193,6 +193,12 @@ Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defe
 2. **디바이스** > **모니터링** > **정책 준수**를 선택합니다.
 
 3. 목록에서 Microsoft Defender ATP 정책을 찾아 어떤 디바이스가 규격 또는 비규격인지 확인합니다.
+
+동일한 위치의 비규격 디바이스에 대해 *작동* 보고서를 사용할 수도 있습니다.
+
+1. **디바이스** > **모니터링** > **비규격 디바이스**를 선택합니다.
+
+보고서에 대한 자세한 내용은 [Intune 보고서](../fundamentals/reports.md)를 참조하세요.
 
 ## <a name="view-onboarding-status"></a>온보딩 상태 보기
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: e00600abb8327623eff4efe8509670779710ab7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dbf6d95c8902a95993b972ff7639d4afb4324ac8
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509024"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410169"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune에서 SCEP 및 PKCS 인증서 제거
 
@@ -55,14 +55,17 @@ Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공�
 - 인증서 프로필이 그룹 할당에서 제거됩니다.
 
 다음과 같은 경우 SCEP 인증서가 해지됩니다.
+
 - 관리자가 SCEP 프로필을 변경하거나 업데이트합니다.
 
 다음과 같은 경우 루트 인증서가 제거됩니다.
+
 - 사용자가 등록을 취소합니다.
 - 관리자가 [초기화](../remote-actions/devices-wipe.md#wipe) 작업을 실행합니다.
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 
 다음과 같은 경우 SCEP 인증서가 디바이스에 *남아 있습니다*(인증서는 해지되거나 제거되지 않음).
+
 - 사용자가 Intune 라이선스를 상실합니다.
 - 관리자가 Intune 라이선스를 철회합니다.
 - 관리자가 Azure AD에서 사용자 또는 그룹을 제거합니다.
@@ -76,11 +79,13 @@ Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공�
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 
 다음과 같은 경우 루트 인증서가 제거됩니다.
+
 - 사용자가 등록을 취소합니다.
 - 관리자가 [초기화](../remote-actions/devices-wipe.md#wipe) 작업을 실행합니다.
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 
 다음과 같은 경우 PKCS 인증서가 디바이스에 *남아 있습니다*(인증서는 해지되거나 제거되지 않음).
+
 - 사용자가 Intune 라이선스를 상실합니다.
 - 관리자가 Intune 라이선스를 철회합니다.
 - 관리자가 Azure AD에서 사용자 또는 그룹을 제거합니다.
@@ -101,14 +106,17 @@ Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공�
 - 인증서 프로필이 그룹 할당에서 제거됩니다.
 
 다음과 같은 경우 SCEP 인증서가 해지됩니다.
+
 - 관리자가 SCEP 프로필을 변경하거나 업데이트합니다.
 
 다음과 같은 경우 루트 인증서가 제거됩니다.
+
 - 사용자가 등록을 취소합니다.
 - 관리자가 [초기화](../remote-actions/devices-wipe.md#wipe) 작업을 실행합니다.
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 
 다음과 같은 경우 SCEP 인증서가 디바이스에 *남아 있습니다*(인증서는 해지되거나 제거되지 않음).
+
 - 사용자가 Intune 라이선스를 상실합니다.
 - 관리자가 Intune 라이선스를 철회합니다.
 - 관리자가 Azure AD에서 사용자 또는 그룹을 제거합니다.
@@ -122,14 +130,17 @@ Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공�
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 
 다음과 같은 경우 PKCS 인증서가 제거됩니다.
+
 - 인증서 프로필이 그룹 할당에서 제거됩니다.
 
 다음과 같은 경우 루트 인증서가 제거됩니다.
+
 - 사용자가 등록을 취소합니다.
 - 관리자가 [초기화](../remote-actions/devices-wipe.md#wipe) 작업을 실행합니다.
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 
 다음과 같은 경우 PKCS 인증서가 디바이스에 *남아 있습니다*(인증서는 해지되거나 제거되지 않음).
+
 - 사용자가 Intune 라이선스를 상실합니다.
 - 관리자가 Intune 라이선스를 철회합니다.
 - 관리자가 Azure AD에서 사용자 또는 그룹을 제거합니다.
@@ -140,10 +151,12 @@ Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공�
 ### <a name="scep-certificates"></a>SCEP 인증서
 
 다음과 같은 경우 SCEP 인증서가 해지 *및* 제거됩니다.
+
 - 사용자가 등록을 취소합니다.
 - 관리자가 [초기화](../remote-actions/devices-wipe.md#wipe) 작업을 실행합니다.
 
 다음과 같은 경우 SCEP 인증서가 해지됩니다.
+
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 - 디바이스가 Azure AD 그룹에서 제거됩니다.
 - 인증서 프로필이 그룹 할당에서 제거됩니다.
@@ -151,11 +164,13 @@ Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공�
 - 관리자가 SCEP 프로필을 변경하거나 업데이트합니다.
 
 다음과 같은 경우 루트 인증서가 제거됩니다.
+
 - 사용자가 등록을 취소합니다.
 - 관리자가 [초기화](../remote-actions/devices-wipe.md#wipe) 작업을 실행합니다.
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 
 다음과 같은 경우 SCEP 인증서가 디바이스에 *남아 있습니다*(인증서는 해지되거나 제거되지 않음).
+
 - 사용자가 Intune 라이선스를 상실합니다.
 - 관리자가 Intune 라이선스를 철회합니다.
 - 관리자가 Azure AD에서 사용자 또는 그룹을 제거합니다.
@@ -169,12 +184,14 @@ Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공�
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 
 다음과 같은 경우 루트 인증서가 제거됩니다.
+
 - 사용자가 등록을 취소합니다.
 - 관리자가 [초기화](../remote-actions/devices-wipe.md#wipe) 작업을 실행합니다.
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 
 다음과 같은 경우 PKCS 인증서가 디바이스에 *남아 있습니다*(인증서는 해지되거나 제거되지 않음).
 - 사용자가 Intune 라이선스를 상실합니다.
+
 - 관리자가 Intune 라이선스를 철회합니다.
 - 관리자가 Azure AD에서 사용자 또는 그룹을 제거합니다.
 - 관리자가 PKCS 프로필을 변경하거나 업데이트합니다.
@@ -190,15 +207,18 @@ Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공�
 ### <a name="scep-certificates"></a>SCEP 인증서
 
 다음과 같은 경우 SCEP 인증서가 해지 *및* 제거됩니다.
+
 - 사용자가 등록을 취소합니다.
 - 관리자가 [사용 중지](../remote-actions/devices-wipe.md#retire) 작업을 실행합니다.
 - 디바이스가 Azure AD 그룹에서 제거됩니다.
 - 인증서 프로필이 그룹 할당에서 제거됩니다.
 
 다음과 같은 경우 SCEP 인증서가 해지됩니다.
+
 - 관리자가 SCEP 프로필을 변경하거나 업데이트합니다.
 
 다음과 같은 경우 SCEP 인증서가 디바이스에 *남아 있습니다*(인증서는 해지되거나 제거되지 않음).
+
 - 사용자가 Intune 라이선스를 상실합니다.
 - 관리자가 Intune 라이선스를 철회합니다.
 - 관리자가 Azure AD에서 사용자 또는 그룹을 제거합니다.
@@ -210,3 +230,6 @@ Microsoft Intune에서 SCEP(단순 인증서 등록 프로토콜) 및 PKCS(공�
 
 PKCS 인증서는 macOS에서 지원되지 않습니다.
 
+## <a name="next-steps"></a>다음 단계
+
+[인증에 인증서 사용](certificates-configure.md)

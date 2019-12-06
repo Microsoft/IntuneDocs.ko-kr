@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02603651587837211d9a67d7e4bbeb90cb358dc5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059570"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390880"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필 만들기
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 디바이스 프로필을 사용하여 설정을 추가 및 구성한 후 조직의 디바이스에 이 설정을 밀어넣을 수 있습니다. 수행할 수 있는 작업을 포함하여 자세한 내용은 [디바이스 프로필을 사용하여 디바이스에서 기능 및 설정 적용](device-profiles.md)을 참조하세요.
 
@@ -78,6 +76,7 @@ ms.locfileid: "74059570"
        - [키오스크](kiosk-settings.md)
        - [PKCS 인증서](../protect/certficates-pfx-configure.md)
        - [PKCS 가져온 인증서](../protect/certificates-imported-pfx-configure.md)
+       - [기본 설정 파일](preference-file-settings-macos.md)
        - [SCEP 인증서](../protect/certificates-scep-configure.md)
        - [신뢰할 수 있는 인증서](../protect/certificates-configure.md)
        - [업데이트 정책](../software-updates-ios.md)
@@ -160,6 +159,32 @@ ms.locfileid: "74059570"
 Intune은 다양한 새로 고침 주기를 사용하여 구성 프로필에 대한 업데이트를 확인합니다. 최근 등록된 디바이스인 경우 다음과 같이 체크 인이 더 자주 실행됩니다. [정책 및 프로필 새로 고침 주기](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)에는 예상 새로 고침 시간이 나열됩니다.
 
 언제든 사용자는 회사 포털 앱을 열고 디바이스를 동기화하여 즉시 프로필 업데이트를 확인할 수 있습니다.
+
+## <a name="recommendations"></a>권장 사항
+
+프로필을 만들 때 다음 권장 사항을 고려합니다.
+
+- 어떤 정책인지와 어떤 작업을 수행하는지 알 수 있는 이름을 정책에 지정합니다. 모든 [준수 정책](../protect/create-compliance-policy.md) 및 [구성 프로필](../configuration/device-profile-create.md)에는 선택적 **설명** 속성이 있습니다. **설명**은 다른 사람이 어떤 정책인지 알 수 있도록 구체적으로 지정하고 정보를 포함합니다.
+
+  일부 구성 프로필 예제는 다음과 같습니다.
+
+  **프로필 이름**: 관리 템플릿 - 모든 Windows 10 사용자를 위한 OneDrive 구성 프로필  
+  **프로필 설명**: 모든 Windows 10 사용자에 대한 최소 및 기본 설정이 포함된 OneDrive 관리 템플릿 프로필입니다. 사용자가 조직 데이터를 개인 OneDrive 계정과 공유하지 못하도록 하기 위해 user@contoso.com에서 생성합니다.
+
+  **프로필 이름**: 모든 iOS 사용자의 VPN 프로필  
+  **프로필 설명**: 모든 iOS 사용자가 Contoso VPN에 연결하는 데 필요한 최소 및 기본 설정이 포함된 VPN 프로필입니다. 사용자 이름과 암호를 묻는 메시지를 표시하는 대신, 사용자가 VPN에서 자동으로 인증되도록 하기 위해 user@contoso.com에서 생성합니다.
+
+- Microsoft Edge 설정 구성, Microsoft Defender 바이러스 백신 설정 사용, iOS 탈 옥 디바이스 차단 등의 작업에 따라 프로필을 만듭니다.
+
+- 마케팅, 영업, IT 관리자, 위치 또는 학교 시스템 등의 특정 그룹에 적용되는 프로필을 만듭니다.
+
+- 디바이스 정책에서 사용자 정책을 분리합니다.
+
+  예를 들어, [Intune의 관리 템플릿](administrative-templates-windows.md)에는 수백 개의 ADMX 설정이 있습니다. 이러한 템플릿은 설정이 사용자 또는 디바이스에 적용되는지 여부를 표시합니다. 관리 템플릿을 만들 때 사용자 설정을 사용자 그룹에 할당하고 디바이스 그룹에 디바이스 설정을 할당합니다.
+
+  다음 이미지는 사용자 및/또는 디바이스에 적용될 수 있는 설정의 예를 보여 줍니다.
+
+  ![사용자 및 디바이스에 적용되는 Intune 관리 템플릿](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## <a name="next-steps"></a>다음 단계
 

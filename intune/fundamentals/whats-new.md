@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71045489ac703860073a3023e6d6170778117d33
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7ad5c26770537ce6a285989f8ca3804277616419
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199285"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540783"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -53,18 +53,93 @@ ms.locfileid: "74199285"
 ### Role-based access control
 -->  
 
-## <a name="week-of-november-18-2019"></a>2019년 11월 18일 주
+<!-- ########################## -->
+## <a name="week-of-november-18-2019-1911-service-release"></a>2019년 11월 18일 주(1911 서비스 릴리스)
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>앱 관리
+
+#### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>iOS용 Microsoft Outlook의 S/MIME 지원<!-- 2669398 idready -->
+Intune은 iOS 디바이스에서 iOS용 Outlook과 함께 사용할 수 있는 S/MIME 서명 및 암호화 인증서 배달을 지원합니다. 자세한 내용은 [iOS용 Outlook의 S/MIME 관리 구성](~/apps/app-configuration-policies-outlook-smime.md)을 참조하세요.
+
+#### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>앱 데이터를 선택적으로 초기화하는 경우의 UI 업데이트<!-- 4102028 -->
+Intune에서 앱 데이터를 선택적으로 초기화하는 UI가 업데이트되었습니다. UI 변경 사항에는 다음이 포함됩니다.
+- 하나의 창 내에 압축된 마법사 스타일 형식을 사용하여 간소화된 환경
+- 할당을 포함하는 만들기 흐름에 대한 업데이트
+- 속성을 볼 때, 새 정책을 만들기 전에 또는 속성을 편집할 때 설정된 모든 항목의 요약된 페이지 또한 속성을 편집할 때 요약에는 편집 중인 속성 범주의 항목 목록만 표시됩니다.
+
+자세한 내용은 [Intune 관리 앱에서 회사 데이터만 초기화하는 방법](~/apps/apps-selective-wipe.md)을 참조하세요.
+
+#### <a name="ios-and-ipados-third-party-keyboard-support---4922950---"></a>iOS 및 iPadOS 타사 키보드 지원<!-- 4922950 -->
+2019년 3월에는 iOS 앱 보호 정책 설정 "타사 키보드"의 지원이 제거된다는 소실을 발표했습니다. 이 기능은 iOS 및 iPadOS가 모두 지원되는 Intune으로 전환될 예정입니다. 이 설정을 사용하려면 새 또는 기존 iOS/iPadOS 앱 보호 정책의 **데이터 보호** 탭으로 이동한 후 **데이터 전송** 아래의 **타사 키보드** 설정을 찾습니다.
+
+이 정책 설정의 동작은 이전 구현과 약간 다릅니다. 이 설정이 **차단**으로 구성된 앱 보호 정책의 대상으로 지정된 SDK 버전 12.0.16 이상을 사용하는 다중 ID 앱에서 최종 사용자는 조직 및 개인 계정 모두에서 타사 키보드를 옵트인(opt in)할 수 없습니다. SDK 버전 12.0.12 이하 버전을 사용하는 앱은 블로그 게시물 제목, [알려진 문제: 타사 키보드가 개인 계정의 iOS에서 차단되지 않습니다](https://aka.ms/3rdparty_iOS_Intune)에 설명된 동작을 계속 발생합니다.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-configuration"></a>디바이스 구성
 
-#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 기능 업데이트(공개 미리 보기)<!-- 2384877 -->
+#### <a name="target-macos-user-groups-to-require-jamf-management---4061739----"></a>Jamf 관리가 필요한 macOS 사용자 그룹을 대상으로 지정합니다.<!-- 4061739  --> 
+[macOS 디바이스를 Jamf로 관리](../protect/conditional-access-integrate-jamf.md)할 특정 사용자 그룹을 대상으로 지정할 수 있습니다. 이렇게 하면 다른 디바이스가 Intune에서 관리되는 동안 macOS 디바이스 하위 세트에 Jamf 준수 통합을 적용할 수 있습니다. Jamf 통합을 이미 사용하고 있는 경우 모든 사용자는 기본적으로 통합의 대상이 됩니다.
 
+#### <a name="new-exchange-activesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824-----"></a>iOS 디바이스에서 메일 디바이스 구성 프로필을 만들 경우 새로운 Exchange ActiveSync 설정<!-- 4892824   --> 
+iOS/iPadOS 디바이스의 디바이스 구성 프로필에서 메일 연결을 구성할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에 대해  > **iOS/iPadOS** 선택 > 프로필 유형에 대해 **메일** 선택). 
+
+다음을 포함하는 새 Exchange ActiveSync 설정을 사용할 수 있습니다.
+- **동기화할 Exchange 데이터**: 일정, 연락처, 미리 알림, 메모 및 메일에 대해 동기화(또는 동기화를 차단)할 Exchange 서비스를 선택합니다.
+- **사용자가 동기화 설정을 변경할 수 있도록 허용**: 사용자가 디바이스에서 이러한 서비스에 대한 동기화 설정을 변경할 수 있도록 허용(또는 차단)합니다.  
+
+이러한 설정에 대한 자세한 내용은 [Intune에서 iOS 디바이스에 대한 메일 프로필 설정](../configuration/email-settings-ios.md)으로 이동합니다. 
+
+적용 대상:
+- iOS 13.0 이상
+- iPadOS 13.0 이상
+
+#### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-fully-managed-and-dedicated-devices---5353228-----"></a>사용자가 Android Enterprise 완전 관리형 및 전용 디바이스에 개인 Google 계정을 추가하지 못하도록 차단<!-- 5353228   -->
+Android Enterprise 완전 관리형 및 전용 디바이스에는 사용자가 개인 Google 계정을 만들 수 없도록 하는 새로운 설정이 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에 대해 **Android Enterprise** > 프로필 유형에 대해 **디바이스 소유자만 > 디바이스 제한** > **사용자 및 계정 설정** > **개인 Google 계정**).
+
+구성할 수 있는 모든 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정](../configuration/device-restrictions-android-for-work.md)으로 이동하세요.
+
+적용 대상:
+- Android Enterprise 완전 관리형 디바이스
+- Android 엔터프라이즈 전용 디바이스
+
+#### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-iosipados-device-restrictions-profile----5468501-----"></a>Siri용 서버 쪽 로깅 명령 설정이 iOS/iPadOS 디바이스 제한 프로필에서 제거됨 <!-- 5468501   -->
+iOS 및 iPadOS 디바이스에서 **Siri용 서버 쪽 로깅 명령** 설정이 Microsoft Endpoint Manager 관리자 콘솔(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에 대해 **iOS/iPadOS** > 프로필 유형에 대해 **디바이스 제한** > **기본 제공 앱**)에서 제거됩니다. 
+
+이 설정은 디바이스에 영향을 주지 않습니다. 기존 프로필에서 설정을 제거하려면 프로필을 열고 원하는 대로 변경한 다음, 프로필을 저장합니다. 프로필이 업데이트되고 설정이 디바이스에서 삭제됩니다.
+
+구성할 수 있는 모든 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 iOS 및 iPadOS 디바이스 설정](../configuration/device-restrictions-ios.md)을 참조하세요.
+
+적용 대상:
+- iOS/iPadOS
+
+#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 기능 업데이트(공개 미리 보기)<!-- 2384877 -->
 이제 Windows 10 디바이스에 [Windows 10 기능 업데이트](../protect/windows-update-for-business-configure.md#windows-10-feature-updates)를 배포할 수 있습니다. Windows 10 기능 업데이트는 디바이스에 설치하고 유지할 Windows 10 버전을 설정하는 새로운 소프트웨어 업데이트 정책입니다. 기존 Windows 10 업데이트 링과 함께 이 새로운 정책 유형을 사용할 수 있습니다.
 
 Windows 10 기능 업데이트 정책이 적용되는 디바이스는 지정된 버전의 Windows를 설치하고 정책이 편집 또는 제거될 때까지 해당 버전으로 유지됩니다. 이후 버전의 Windows를 실행하는 디바이스는 현재 버전으로 유지됩니다. 특정 버전의 Windows로 유지되는 디바이스는 Windows 10 업데이트 링에서 해당 버전에 대한 품질 및 보안 업데이트를 계속 설치할 수 있습니다.
 
 이번 주에 이 새로운 유형의 정책이 테넌트로 롤아웃되기 시작합니다. 테넌트에서 이 새로운 정책을 아직 사용할 수 없는 경우 곧 제공될 예정입니다.
 
+#### <a name="add-and-change-key-information-in-plist-files-for-macos-applications---4736278---"></a>macOS 애플리케이션용 plist 파일에서 키 정보 추가 및 변경<!-- 4736278 -->
+macOS 디바이스에서 이제 앱 또는 디바이스에 연결된 속성 목록 파일(.plist)을 업로드하는 디바이스 구성 프로필을 만들 수 있습니다(**디바이스** > **구성 프로필** > **프로필 만들기** > 플랫폼에 대해 **macOS** > 프로필 유형에 대해 **기본 설정 파일**).
+
+일부 앱에서만 관리형 기본 설정을 지원하며, 이러한 앱에서 모든 설정을 관리할 수 있는 것은 아닙니다. 사용자 채널 설정이 아니라 디바이스 채널 설정을 구성하는 속성 목록 파일을 업로드해야 합니다.
+
+이 기능에 대한 자세한 내용은 [Microsoft Intune을 사용하여 macOS 디바이스에 속성 목록 파일 추가](../configuration/preference-file-settings-macos.md)를 참조하세요.
+
+적용 대상:
+- 10.7 이상 버전을 실행하는 macOS 디바이스
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>디바이스 관리
+
+#### <a name="edit-device-name-value-for-autopilot-devices---2640074---"></a>Autopilot 디바이스에 대한 디바이스 이름 값 편집<!-- 2640074 -->
+Azure AD 조인 Autopilot 디바이스에 대한 디바이스 이름 값을 편집할 수 있습니다.  자세한 내용은 [Autopilot 디바이스 특성 편집](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes)을 참조하세요.
+
+#### <a name="edit-group-tag-value-for-autopilot-devices---4816775-----"></a>Autopilot 디바이스에 대한 그룹 태그 값 편집<!-- 4816775   -->
+Autopilot 디바이스에 대한 그룹 태그 값을 편집할 수 있습니다. 자세한 내용은 [Autopilot 디바이스 특성 편집](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes)을 참조하세요.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
 
 #### <a name="updated-support-experience---5012398---"></a>업데이트된 지원 환경<!-- 5012398 -->
@@ -73,8 +148,41 @@ Windows 10 기능 업데이트 정책이 적용되는 디바이스는 지정된 
 
 콘솔 내의 일반 문제 검색과 피드백, 그리고 고객 지원팀 연락에 이용하는 워크플로도 개선되었습니다. 지원 문제를 열 때 언제 콜백이나 이메일 회신을 받게 될지에 대한 예상 정보가 실시간으로 표시되며 프리미어 및 통합 지원 고객은 문제의 심각도를 간편히 지정해 지원을 더 신속히 받을 수 있습니다.
 
+#### <a name="improved-intune-reporting-experience-public-preview----3791418---"></a>향상된 Intune 보고 환경(퍼블릭 미리 보기) <!-- 3791418 -->
+이제 Intune은 새로운 보고서 유형, 더 나은 보고서 구성, 더 집중된 보기, 향상 된 보고서 기능, 좀 더 일관되고 시기 적절한 데이터를 포함하는 향상된 보고 환경을 제공합니다. 새 보고서 유형은 다음에 주안점을 둡니다.
+- **작동** - 음수(-) 상태 포커스가 있는 새 레코드를 제공합니다. 
+- **조직** - 전반적인 상태에 대한 광범위한 요약을 제공합니다.
+- **기록** - 일정 시간 동안의 패턴 및 추세를 제공합니다.
+- **전문가** - 원시 데이터를 사용하여 고유한 사용자 지정 보고서를 만들 수 있습니다.
+
+새 보고서의 첫 번째 세트는 디바이스 준수에 주안점을 둡니다. 자세한 내용은 [블로그 - Microsoft Intune 보고 프레임워크](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553) 및 [Intune 보고서](~/fundamentals/reports.md)를 참조하세요.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>역할 기반 액세스 제어
+
+#### <a name="duplicate-custom-or-built-in-roles----1081938-----"></a>중복된 사용자 지정 또는 기본 제공 역할 <!-- 1081938   -->
+이제 기본 제공 및 사용자 지정 역할을 복사할 수 있습니다. 자세한 내용은 [역할 복사](../fundamentals/create-custom-role.md#copy-a-role)를 참조하세요.
+
+#### <a name="new-permissions-for-school-administrator-role----5621805----"></a>학교 관리자 역할에 대한 새 권한 <!-- 5621805  -->  
+2개의 새 사용 권한인 **프로필 할당** 및 **디바이스 동기화**가 학교 관리자 역할 > **권한** > **등록 프로그램**에 추가되었습니다. 프로필 동기화 권한을 통해 관리자는 Windows Autopilot 디바이스를 동기화할 수 있습니다. 프로필 할당 권한을 통해 사용자가 시작한 Apple 등록 프로필을 삭제할 수 있습니다. 또한 Autopilot 디바이스 할당 및 Autopilot 배포 프로필 할당을 관리할 수 있는 권한도 부여됩니다. 모든 학교 관리자/그룹 관리자 권한 목록은 [그룹 관리자 할당](https://docs.microsoft.com/intune-education/group-admin-delegate)을 참조하세요. 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="security"></a>보안
+
+#### <a name="bitlocker-key-rotation---2564951----"></a>BitLocker 키 순환<!-- 2564951  -->
+Intune 디바이스 작업을 사용하여 Windows 버전 1909 이상을 실행하는 관리 디바이스에 대한 [BitLocker 복구 키를 원격으로 순환](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys)할 수 있습니다. 복구 키를 순환할 수 있으려면 복구 키 순환을 지원하도록 디바이스를 구성해야 합니다.  
+
+#### <a name="updates-to-dedicated-device-enrollment-to-support-scep-device-certificate-deployment----5198878----"></a>SCEP 디바이스 인증서 배포를 지원하도록 전용 디바이스 등록 업데이트 <!-- 5198878  -->
+이제 Intune은 Wi-Fi 프로필에 대한 인증서 기반 액세스를 위해 Android Enterprise 전용 디바이스에 SCEP 디바이스 인증서를 배포하도록 지원합니다. 배포가 작동하려면 디바이스에 Microsoft Intune 앱이 있어야 합니다. 따라서 Android Enterprise 전용 디바이스의 등록 환경이 업데이트되었습니다. 새 등록은 동일하게 시작되지만(QR, NFC, Zero-touch 또는 디바이스 식별자 사용), 이제 사용자에게 Intune 앱을 설치하도록 요구하는 단계가 제공됩니다. 기존 디바이스에서 롤링을 기준으로 앱을 자동으로 설치하기 시작합니다.
+
+#### <a name="intune-audit-logs-for-business-to-business-collaboration--5670211---"></a>기업 간 공동 작업을 위한 Intune 감사 로그<!--5670211 -->
+B2B(기업 간) 공동 작업을 사용하여 회사의 애플리케이션과 서비스를 다른 조직의 게스트 사용자와 안전하게 공유하면서 자체 회사 데이터에 대한 제어를 유지할 수 있습니다. 이제 Intune에서 B2B 게스트 사용자에 대한 감사 로그를 지원합니다. 예를 들어, 게스트 사용자가 변경을 수행하는 경우 Intune에서 감사 로그를 통해이 데이터를 캡처할 수 있습니다. 자세한 내용은 [Azure Active Directory B2B의 게스트 사용자 액세스란?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)을 참조하세요.
+
+
+<!-- ########################## -->
 ## <a name="week-of-november-11-2019"></a>2019년 11월 11일 주  
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>앱 관리  
 
 #### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>회사 포털의 개선된 macOS 등록 환경 <!-- 5074349 WNready -->  
@@ -92,17 +200,20 @@ macOS용 회사 포털 등록 환경은 iOS용 회사 포털 등록 환경과 �
 #### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Windows 10용 회사 포털의 새 할당 유형 열 <!-- 5459950 WNready -->
 회사 포털 > **설치된 앱** > **할당 유형** 열의 이름이 **조직에서 요구**로 변경되었습니다.  이 열 아래에 **예** 또는 **아니요** 값이 표시되어 조직에서 해당 앱을 필수 또는 선택 사항으로 지정했는지 나타냅니다. 이러한 변경 사항은 디바이스 사용자가 사용 가능한 앱 개념을 혼동하기 때문에 적용된 것입니다. 최종 사용자는 [디바이스에 앱 설치 및 공유](/intune-user-help/install-apps-cpapp-windows)에서 회사 포털에서 앱을 설치하는 자세한 내용을 확인할 수 있습니다. 최종 사용자를 위해 회사 포털 앱을 구성하는 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](~/apps/company-portal-app.md)을 참조하세요.  
 
-
+<!-- ########################## -->
 ## <a name="week-of-november-4-2019"></a>2019년 11월 4일 주
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-security"></a>디바이스 보안
 
 #### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>보안 기준은 Microsoft Azure Government에서 지원됩니다.<!-- 4062552 -->
 
 *Microsoft Azure Government*에서 호스트되는 Intune 인스턴스는 이제 [보안 기준](../protect/security-baselines.md)을 사용하여 사용자와 디바이스를 보호하는 데 도움이 될 수 있습니다.
 
+<!-- ########################## -->
 ## <a name="week-of-october-28-2019"></a>2019년 10월 28일이 있는 주
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>앱 관리
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Android용 회사 포털 앱의 향상된 검사 목록 디자인<!-- 5550857 -->  
@@ -143,12 +254,14 @@ Win32 앱이 설치된 후 디바이스를 다시 시작하도록 지정할 수 
 
 이러한 개선 사항에 대한 자세한 내용은 Microsoft Tech Community 웹 사이트의 [Intune 고객 성공 블로그 게시물](https://aka.ms/Endpoint_security_node)을 참조하세요.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>디바이스 관리
 
 #### <a name="intune-supports-ios-11-and-later---4665324----"></a>Intune은 iOS 11 이상을 지원합니다<!-- 4665324  -->
 
 Intune 등록과 회사 포털은 현재 iOS 버전 11 이상을 지원합니다. 이전 버전은 지원되지 않습니다.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-security"></a>디바이스 보안
 
 #### <a name="microsoft-edge-baseline-preview----3787164----"></a>Microsoft Edge 기준(미리 보기)<!--  3787164  -->
@@ -156,7 +269,7 @@ Intune 등록과 회사 포털은 현재 iOS 버전 11 이상을 지원합니다
 [Microsoft Edge 설정](../protect/security-baseline-settings-edge.md)에 대한 보안 기준 미리 보기가 추가되었습니다. 
 
 <!-- ########################## -->
-## <a name="week-of-october-21-2019"></a>2019년 10월 21일이 있는 주
+## <a name="week-of-october-21-2019-1910-service-release"></a>2019년 10월 21일 주(1910 서비스 릴리스)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="microsoft-365-device-management"></a>Microsoft 365 장치 관리
@@ -299,9 +412,6 @@ iOS 및 iPadOS 디바이스에서는 프로필을 만들어 디바이스의 기�
 #### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment---4350697-----"></a>회사 프로필 또는 디바이스 관리자 등록에 등록되는 Android 디바이스 운영 체제 버전 지정<!-- 4350697   -->
 Intune 디바이스 유형 제한을 사용하면 디바이스의 OS 버전을 사용하여 Android Enterprise 회사 프로필 등록 또는 Android 디바이스 관리자 등록을 사용할 사용자 디바이스를 지정할 수 있습니다.  자세한 내용은 [등록 제한 설정](../enrollment/enrollment-restrictions-set.md)을 참조하세요.
 
-#### <a name="windows-autopilot-deployment-reports---3856172---"></a>Windows AutoPilot 배포 보고서<!-- 3856172 -->
-새 보고서는 Windows Autopilot을 통해 배포된 각 디바이스에 대해 자세히 설명합니다. 자세한 내용은 [Autopilot 배포 보고서](../enrollment/enrollment-autopilot.md#autopilot-deployments-report)를 참조하세요. Microsoft는 모든 고객에게 이 기능을 롤아웃하고 있으며, 다음 주 말이면 해당 과정이 완료된 것으로 예상합니다.
-
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>디바이스 관리
 
@@ -367,7 +477,7 @@ Intune은 이제 iPadOS 및 iOS 13.1 디바이스 관리를 지원합니다. 자
 
 <!-- ########################## -->
 
-## <a name="week-of-september-16-2019"></a>2019년 9월 16일이 있는 주
+## <a name="week-of-september-16-2019-1909-service-release"></a>2019년 9월 16일 주(1909 서비스 릴리스)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>앱 관리 
@@ -603,7 +713,7 @@ Windows 10 이상 디바이스에서는 Intune에서 그룹 정책 설정을 구
 
 - Windows 10 이상(Windows RS4 이상)
 
-## <a name="week-of-august-12-2019"></a>2019년 8월 12일 주
+## <a name="week-of-august-12-2019-1908-service-release"></a>2019년 8월 12일 주(1908 서비스 릴리스)
 
 ### <a name="app-management"></a>앱 관리
 
@@ -775,7 +885,7 @@ Intune에서는 OEMConfig를 사용하여 디바이스 구성 프로필을 만�
 
 <!-- ########################## -->
 
-## <a name="week-of-july-22-2019"></a>2019년 7월 22일 주 
+## <a name="week-of-july-22-2019-1907-service-release"></a>2019년 7월 22일 주(1907 서비스 릴리스)
 
 ### <a name="app-management"></a>앱 관리
 
@@ -916,7 +1026,7 @@ Intune에서 온-프레미스 그룹 정책 관리와 비슷한 관리 템플릿
 
 AAD 업데이트에 더해, 이제 완전 관리형 Android 엔터프라이즈 디바이스에서 Intune APP(앱 보호 정책)가 지원됩니다. 이 기능은 점진적으로 적용될 예정입니다. 자세한 내용은 [Intune을 사용하여 Android 엔터프라이즈 디바이스에 관리형 Google Play 앱 추가](../apps/apps-add-android-for-work.md)를 참조하세요.
 
-## <a name="week-of-june-24-2019"></a>2019년 6월 24일 주
+## <a name="week-of-june-24-2019-1906-service-release"></a>2019년 6월 24일 주(1906 서비스 릴리스)
 
 ### <a name="app-management"></a>앱 관리
 
@@ -1076,7 +1186,7 @@ Intune은 이제 Android 디바이스에서 잠재적으로 유해한 앱에 대
 
 더 직관적이 되도록 Autopilot 디바이스의 **OrderID** 특성 이름이 **그룹 태그**로 변경되었습니다. CSV를 사용하여 Autopilot 디바이스 정보를 업로드하는 경우 OrderID가 아닌 열 머리글로 그룹 태그를 사용해야 합니다.  
 
-## <a name="week-of-may-13-2019"></a>2019년 5월 13일 주
+## <a name="week-of-may-13-2019-1905-service-release"></a>2019년 5월 13일 주(1905 서비스 릴리스)
 
 ### <a name="app-management"></a>앱 관리
 

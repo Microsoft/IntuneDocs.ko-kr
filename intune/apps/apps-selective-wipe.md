@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 4e827075b56d1751e837c25d85c304201bcafa01
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199245"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390410"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune 관리 앱에서 회사 데이터만 초기화하는 방법
 
@@ -47,17 +47,25 @@ WIP(Windows Information Protection) 정책은 MDM 사용자가 Windows 10 디바
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 2. Intune 창에서 **클라이언트 앱** > **앱 선택적 초기화** > **초기화 요청 만들기**를 선택합니다.<br>
    **초기화 요청 만들기** 창이 표시됩니다.
-3. **사용자 선택**을 클릭하여 앱 데이터를 초기화하려는 사용자를 선택한 다음, **사용자** 창 맨 아래에서 **선택**을 클릭합니다.
+3. **사용자 선택**을 클릭하여 앱 데이터를 초기화하려는 사용자를 선택한 다음, **사용자 선택** 창 맨 아래에서 **선택**을 클릭합니다.
+
+    !['사용자 선택' 창 스크린샷](./media/apps-selective-wipe/apps-selective-wipe-01.png)
+
 4. **디바이스 선택**을 클릭하여 디바이스를 선택한 다음, **디바이스 선택** 창의 맨 아래에서 **선택**을 클릭합니다.
+
+    ![디바이스가 선택된 '초기화 요청 만들기' 창 스크린샷](./media/apps-selective-wipe/apps-selective-wipe-02.png)
+
 5. **만들기**를 클릭하여 초기화 요청을 수행합니다.
 
 서비스에서 디바이스의 각 보호된 앱 및 초기화 요청과 연결된 사용자에 대해 별도의 초기화 요청을 만들고 추적합니다.
+
+   ![‘클라이언트 앱 - 앱 선택적 초기화’ 창 스크린샷](./media/apps-selective-wipe/apps-selective-wipe-03.png)
 
 ## <a name="monitor-your-wipe-requests"></a>초기화 요청 모니터링
 
 초기화 요청의 전반적인 상태를 표시하고, 보류 중인 요청 및 오류의 수가 포함된 요약된 보고서를 생성할 수 있습니다. 세부 정보를 확인하려면 다음 단계를 따릅니다.
 
-1. **클라이언트 앱 - 앱 선택적 초기화** 창에서 사용자별로 그룹화된 요청 목록을 확인할 수 있습니다. 시스템에서는 디바이스에서 실행 중인 각각의 보호된 앱에 대해 초기화 요청을 생성하므로 한 사용자에 대해 여러 요청이 표시될 수 있습니다. 상태를 통해 초기화 요청이 **보류 중**인지, **실패**했는지 아니면 **성공**했는지 확인할 수 있습니다.
+1. **클라이언트 앱** > **앱 선택적 초기화** 창에서 사용자별로 그룹화된 요청 목록을 확인할 수 있습니다. 시스템에서는 디바이스에서 실행 중인 각각의 보호된 앱에 대해 초기화 요청을 생성하므로 한 사용자에 대해 여러 요청이 표시될 수 있습니다. 상태를 통해 초기화 요청이 **보류 중**인지, **실패**했는지 아니면 **성공**했는지 확인할 수 있습니다.
 
     ![앱 선택적 초기화 창의 초기화 요청 상태 스크린샷](./media/apps-selective-wipe/wipe-request-status-1.png)
 
