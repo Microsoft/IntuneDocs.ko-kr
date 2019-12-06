@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9dda9a1aa1e81b46533c1c15d996807984193d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712938"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563734"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Microsoft Intune에서 앱 보호 정책 설정의 유효성을 검사하는 방법
 
@@ -43,8 +43,8 @@ ms.locfileid: "73712938"
 - 각 사용자의 앱 보호 앱 상태가 예상대로 나타나는지 여부 앱의 가능한 상태는 **체크 인됨** 및 **체크 인되지 않음**입니다.
 
 ### <a name="user-app-protection-status"></a>사용자 앱 보호 상태
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **클라이언트 앱** >  **앱 보호 상태**를 선택하고 **할당된 사용자** 타일을 선택합니다. 
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+3. **앱** >  **앱 보호 상태**를 선택하고 **할당된 사용자** 타일을 선택합니다. 
 4. **앱 보고** 페이지에서 **사용자 선택**을 선택하여 사용자 및 그룹 목록을 표시합니다. 
 5. 목록에서 사용자를 검색한 후 선택하고 **사용자 선택**을 선택합니다. **앱 보고** 창 맨 위에 사용자에게 앱 보호 사용이 허가되었는지 여부가 표시됩니다. 사용자에게 O365 사용이 허가되었는지 여부와 해당 사용자의 모든 디바이스에 대한 앱 상태가 표시되는지 여부를 확인할 수 있습니다.
 

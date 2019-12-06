@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 31bad59c33a34d0b92d93979b20b58f70fd042ef
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584940"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564092"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>iOS 앱 프로비전 프로필을 사용하여 모바일 앱이 만료되지 않도록 방지
 
@@ -44,8 +44,8 @@ iPhone 및 iPad에 할당된 Apple iOS LOB(기간 업무) 앱은 포함된 프�
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS 모바일 앱 프로비전 프로필을 만드는 방법
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **Intune** 창에서 **클라이언트 앱** > **iOS 앱 프로비저닝 프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **iOS 앱 프로비저닝 프로필** > **프로필 만들기**를 선택합니다.
 3. **기본 사항** 페이지에서 다음 값을 추가합니다.
     - **이름** - 이 모바일 프로비전 프로필의 이름을 제공합니다.
     - **설명** - 필요에 따라 정책에 대한 설명을 제공합니다.

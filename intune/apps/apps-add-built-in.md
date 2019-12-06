@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82a2414e7458d1eb0ce48c5afb8ac1bc9bddb636
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712923"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563596"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune에 기본 제공 앱 추가
 
@@ -37,24 +37,20 @@ ms.locfileid: "73712923"
 ## <a name="add-a-built-in-app"></a>기본 제공 앱 추가
 
 Microsoft Intune에서 사용 가능한 앱에 기본 제공 앱을 추가하려면 다음을 수행합니다.
-1. Azure Portal에 로그인합니다.
-2. Microsoft Intune 창을 표시하려면 **추가 서비스** > **모니터링 + 관리** > **Intune**을 선택합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-4. **클라이언트 앱** 창의 **관리** 아래에서 **앱**을 선택합니다.
-5. **추가**를 선택합니다.
-6. **추가** 앱 창의 **앱 유형** 목록에서 **기본 제공 앱**을 선택합니다.
-7. **앱 선택**을 선택합니다.
-8. **기본 제공 앱** 창에서 포함할 앱을 선택합니다.
-9. **앱 추가** 창에서 **추가**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
+3. **추가** 앱 창의 **앱 유형** 목록에서 **기본 제공 앱**을 선택합니다.
+4. **앱 선택**을 선택합니다.
+5. **기본 제공 앱** 창에서 포함할 앱을 선택합니다.
+6. **앱 추가** 창에서 **추가**를 선택합니다.
 
 
 ## <a name="configure-app-information"></a>앱 정보 구성
 
 기본 제공 앱에 대한 정보를 수정할 수 있습니다. 이 정보를 사용하여 Intune에서 앱을 식별하고 사용자가 회사 포털에서 앱을 찾을 수 있습니다.
-1. **클라이언트 앱 - 앱** 창에서 수정하려는 기본 제공 앱을 선택합니다.  
-    기본 제공 앱에 대한 창이 표시됩니다.
-2. **관리**에서 **속성** 옵션을 선택합니다.
-3. 기본 제공 앱 정보를 수정하려면 **구성** 옵션을 선택합니다.
+1. **앱** > **모든 앱**을 선택하고 수정하려는 기본 제공 앱을 선택합니다.  
+   기본 제공 앱에 대한 창이 표시됩니다.
+2. **속성** > **구성**을 선택합니다.
 4. **앱 정보** 창에서 다음 정보를 수정할 수 있습니다.
     - **이름**: 회사 포털에 표시되는 기본 제공 앱의 이름을 입력합니다. 사용하는 모든 이름이 고유한지 확인합니다. 동일한 앱 이름을 두 번 사용하는 경우에는 회사 포털에서 앱 중 하나만 사용자에게 표시됩니다.
     - **설명**: 앱에 대한 설명을 입력합니다. 

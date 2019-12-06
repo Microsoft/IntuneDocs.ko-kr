@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcda312274e78d327a3a515eb6c95454e38c96f1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1800fa91ed5650fd57a31d24fdb3767a60dc5816
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507130"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563787"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>빠른 시작: 앱 보호 정책 만들기 및 할당
 
@@ -43,7 +43,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](../fundamentals/free-tri
 
 다음 단계에 따라 앱 보호 정책을 만듭니다.
 
-1. [Intune](https://aka.ms/intuneportal)에서 **클라이언트 앱** > **앱 보호 정책** > **정책 만들기**를 선택합니다. 
+1. [Intune](https://aka.ms/intuneportal)에서 **앱** > **앱 보호 정책** > **정책 만들기**를 선택합니다. 
 2. 다음 세부 정보를 입력하세요. 
 
     - **이름**: *Windows 10 콘텐츠 보호*
@@ -67,7 +67,7 @@ Intune에서 앱 보호 정책을 만든 후에는 그룹에 할당할 수 있�
 
 다음 단계에 따라 앱 보호 정책을 할당합니다.
 
-1. [Intune](https://aka.ms/intuneportal)에서 **Intune** > **클라이언트 앱** > **보호 정책**을 선택합니다. 
+1. [Intune](https://aka.ms/intuneportal)에서 **Intune** > **앱** > **보호 정책**을 선택합니다. 
 2. 이전에 만든 앱 보호 정책을 선택합니다. 이 빠른 시작에서 정책은 **Windows 10 콘텐츠 보호**입니다.
 3. **할당**을 선택합니다.
 4. **포함** 탭에서 **포함할 그룹 선택**을 클릭합니다.

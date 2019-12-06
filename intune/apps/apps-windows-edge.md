@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709911"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563573"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Intune에 Windows 10용 Microsoft Edge 추가
 
@@ -34,7 +34,7 @@ ms.locfileid: "73709911"
 > [!NOTE]
 > Microsoft Edge ‘버전 77 이상’은 macOS에서도 사용할 수 있습니다. 
 > 
-> 작업 공간 연결 컴퓨터에는 Microsoft Edge의 기본 제공 애플리케이션 배포를 사용할 수 없습니다. 기본 제공 애플리케이션 배포에는 AAD 조인 디바이스용으로만 존재하는 Intune 관리 확장이 필요합니다. **클라이언트 앱**에 업로드된 *.msi*를 사용하여 Microsoft Edge *버전 77 이상*을 배포할 수 있습니다. [Microsoft Intune에 Windows 기간 업무 앱 추가](~/apps/lob-apps-windows.md)를 참조하세요.
+> 작업 공간 연결 컴퓨터에는 Microsoft Edge의 기본 제공 애플리케이션 배포를 사용할 수 없습니다. 기본 제공 애플리케이션 배포에는 AAD 조인 디바이스용으로만 존재하는 Intune 관리 확장이 필요합니다. **앱**에 업로드된 *.msi*를 사용하여 Microsoft Edge *버전 77 이상*을 배포할 수 있습니다. [Microsoft Intune에 Windows 기간 업무 앱 추가](~/apps/lob-apps-windows.md)를 참조하세요.
 
 ## <a name="prerequisites"></a>전제 조건
 - Windows 10 RS2 이상이 필요합니다.
@@ -43,15 +43,15 @@ ms.locfileid: "73709911"
 ## <a name="configure-the-app-in-intune"></a>Intune에서 앱 구성
 다음 단계를 사용하여 Microsoft Edge 버전 77 이상을 Intune에 추가할 수 있습니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **Intune** 창에서 **클라이언트 앱** > **앱** > **추가**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
 3. **Microsoft Edge 버전 77 이상** 아래 **앱 유형**에서 **Windows 10**을 선택합니다.
 
 ## <a name="configure-app-information"></a>앱 정보 구성
 이 단계에서는 이 앱 배포에 대한 정보를 제공합니다. 이 정보를 통해 Intune에서 앱을 식별하며 사용자가 회사 포털에서 앱을 찾을 수 있습니다.
 
-1. **앱 정보**를 클릭하여 **앱 정보** 블레이드를 표시합니다.
-2. **앱 정보** 블레이드에서 이 앱 배포에 대한 정보를 제공합니다. 이 정보를 통해 Intune에서 앱을 식별하며 사용자가 회사 포털에서 앱을 찾을 수 있습니다.
+1. **앱 정보**를 클릭하여 **앱 정보** 창을 표시합니다.
+2. **앱 정보** 창에서 이 앱 배포에 대한 정보를 제공합니다. 이 정보를 통해 Intune에서 앱을 식별하며 사용자가 회사 포털에서 앱을 찾을 수 있습니다.
     - **이름**: 회사 포털에 표시되는 앱의 이름을 입력합니다. 모든 이름이 고유한지 확인합니다. 동일한 앱 이름을 두 번 사용하는 경우에는 회사 포털에서 앱 중 하나만 사용자에게 표시됩니다.
     - **설명**: 앱에 대한 설명을 입력합니다. 예를 들어 설명에 대상 사용자를 나열할 수 있습니다.
     - **게시자**: Microsoft가 게시자로 표시됩니다.
@@ -67,8 +67,8 @@ ms.locfileid: "73709911"
 ## <a name="configure-app-settings"></a>앱 설정 구성
 이 단계에서는 앱에 대한 설치 옵션을 구성합니다.
 
-1. **앱 추가** 블레이드에서 **앱 설정**을 선택합니다.
-2. **앱 설정** 블레이드의 **채널** 목록에서 **베타** 또는 **개발자**를 선택하여 앱을 배포할 Edge 채널을 결정합니다.
+1. **앱 추가** 창에서 **앱 설정**을 선택합니다.
+2. **앱 설정** 창의 **채널** 목록에서 **베타** 또는 **개발자**를 선택하여 앱을 배포할 Edge 채널을 결정합니다.
     - **베타** 채널은 가장 안정적인 Microsoft Edge 미리 보기 환경이며 조직 내에서 전체 파일럿에 대한 가장 적합한 선택입니다. 6주마다 제공되는 주요 업데이트를 통해 각 릴리스는 개발자 채널의 학습 및 향상된 기능을 통합합니다.
     - **개발자** 채널은 Windows, Windows Server 및 macOS에서 엔터프라이즈 피드백을 받을 수 있습니다. 매주 업데이트되며 최신 향상된 기능과 수정이 포함됩니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "73709911"
 4.  **선택** > **확인**을 클릭합니다.
 
 ## <a name="add-the-app"></a>앱 추가
-앱 구성을 완료한 후 **App 앱** 블레이드에서 **추가**를 선택합니다. 
+앱 구성을 완료한 후 **App 앱** 창에서 **추가**를 선택합니다. 
 
 만든 앱이 앱 목록에 표시되며, 여기서 이 앱을 선택한 그룹에 할당할 수 있습니다. 
 

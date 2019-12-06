@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059716"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563474"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 PowerShell 스크립트 사용
 
@@ -62,7 +62,7 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
     
     - 사용자는 Azure AD 계정을 사용하여 디바이스에 로그인한 다음, Intune에 등록합니다.
 
-  - Configuration Manager 및 Intune을 사용하는 공동 관리 디바이스. **클라이언트 앱** 워크로드가 **파일럿 Intune** 또는 **Intune**으로 설정되어 있어야 합니다. 지침은 다음 문서를 참조하세요. 
+  - Configuration Manager 및 Intune을 사용하는 공동 관리 디바이스. **앱** 워크로드가 **파일럿 Intune** 또는 **Intune**으로 설정되어 있어야 합니다. 지침은 다음 문서를 참조하세요. 
   
     - [What is co-management](https://docs.microsoft.com/sccm/comanage/overview)(공동 관리란?) 
     - [클라이언트 앱 워크로드](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -73,8 +73,8 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
 
 ## <a name="create-a-script-policy-and-assign-it"></a>스크립트 정책 만들기 및 할당
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **PowerShell 스크립트** > **추가**를 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **PowerShell 스크립트** > **추가**를 선택합니다.
 
     ![Microsoft Intune에서 PowerShell 스크립트 추가 및 사용](./media/intune-management-extension/mgmt-extension-add-script.png)
 

@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc950f9e60f5549a7a74c2963f33c36369d3ebd3
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.openlocfilehash: 56b8ab9507acda8fc1145bd65c4438da838dd806
+ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74126158"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74558162"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>자습서: ABM(Apple Business Manager)의 Apple 기업 디바이스 등록 기능을 사용하여 Intune에서 iOS 디바이스 등록
 Apple Business Manager의 디바이스 등록 기능을 사용하면 디바이스를 간단하게 등록할 수 있습니다. Intune에서는 Apple의 이전 DEP(디바이스 등록 프로그램) 포털도 지원하지만 이제 새 Apple Business Manager를 사용하는 것이 좋습니다. Microsoft Intune 및 Apple Corporate Device Enrollment를 사용할 경우 사용자가 처음 디바이스를 켜면 자동으로 디바이스가 안전하게 등록됩니다. 따라서 각 디바이스를 개별적으로 설정하지 않고도 여러 사용자에게 디바이스를 제공할 수 있습니다. 
@@ -44,7 +44,7 @@ Apple의 회사 등록 기능으로 iOS 디바이스를 등록하려면 먼저 A
 
 ABM 또는 DEP 포털을 사용하여 디바이스 등록 토큰을 만듭니다. 또한 관리를 위해 포털을 사용하여 디바이스를 Intune에 할당할 수 있습니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** > **추가**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰** > **추가**를 선택합니다.
 
 2. **동의**를 선택하여 Microsoft에서 Apple에 사용자 및 디바이스 정보를 보낼 수 있도록 권한을 부여합니다.
 
@@ -80,7 +80,7 @@ ABM 또는 DEP 포털을 사용하여 디바이스 등록 토큰을 만듭니다
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 등록 프로필 만들기
 이제 토큰을 설치했으므로 회사 소유 iOS 디바이스의 등록 프로필을 만들 수 있습니다. 디바이스 등록 프로필은 등록 중에 디바이스 그룹에 적용되는 설정을 정의합니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택합니다.
 
 2. 방금 설치한 토큰을 선택하고, **프로필** > **프로필 만들기**를 선택합니다.
 
@@ -118,13 +118,13 @@ ABM 또는 DEP 포털을 사용하여 디바이스 등록 토큰을 만듭니다
 
 ABM, ASM 또는 DEP에 등록 프로그램 토큰을 설정하고 디바이스에 MDM 서버를 할당한 후에는 이 디바이스가 Intune 서비스에 동기화되도록 기다리거나 직접 동기화를 푸시할 수 있습니다. 수동 동기화를 하지 않으면 디바이스가 Azure Portal에 표시되는 데 최대 24시간이 소요됩니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택한 후 **디바이스** > **동기화**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택한 후 **디바이스** > **동기화**를 선택합니다.
 
 ## <a name="assign-an-enrollment-profile-to-ios-devices"></a>iOS 디바이스에 등록 프로필 할당
 
 먼저 등록 프로그램 프로필을 디바이스에 할당해야 디바이스를 등록할 수 있습니다. 이러한 디바이스는 Apple에서 Intune으로 동기화되며 ABM, ASM 또는 DEP 포털에서 적합한 MDM 토큰에 할당되어야 합니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택합니다.
 2. **디바이스**를 선택하고 목록에서 디바이스를 선택한 다음 **프로필 할당**을 선택합니다.
 3. **프로필 할당** 아래에서 디바이스의 프로필 &gt; **할당**을 선택합니다.
 

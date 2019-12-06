@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c53166b6e6dc6ab3f780ccdfd4f11eb4c6a9d730
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c5616b27b97d5623958ec872390e2a6de79db3c5
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497552"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563441"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Microsoft Intune에 iOS 스토어 앱 추가
 
@@ -41,18 +41,16 @@ ms.locfileid: "72497552"
 >[!NOTE]
 >Microsoft Intune에서 작업하는 경우 Microsoft Edge 또는 Google Chrome 브라우저를 사용하는 것이 좋습니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-4. **클라이언트 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
-5. **앱** 창에서 **추가**를 선택합니다.
-6. **앱 유형** 목록의 **스토어 앱** 유형 아래에서 **iOS**를 선택합니다.
-7. **앱 스토어 검색**을 선택합니다.
-8. **앱 스토어 검색** 창에서 앱 스토어 국가/지역 로캘을 선택합니다.
-9. **검색** 상자에서 앱 이름(또는 이름의 일부)을 입력합니다.  
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
+3. **앱 유형** 목록의 **스토어 앱** 유형 아래에서 **iOS**를 선택합니다.
+4. **앱 스토어 검색**을 선택합니다.
+5. **앱 스토어 검색** 창에서 앱 스토어 국가/지역 로캘을 선택합니다.
+6. **검색** 상자에서 앱 이름(또는 이름의 일부)을 입력합니다.  
     Intune에서 스토어를 검색하고 관련 결과의 목록을 반환합니다.
-10. 결과 목록에서 원하는 앱을 선택한 다음, **선택**을 선택합니다.
-11. **앱 추가** 창에서 **앱 정보**를 선택해 앱을 구성합니다.
-12. **앱 정보** 창에서 앱 정보를 추가합니다. 선택한 앱에 따라 이 창의 일부 값이 자동으로 채워질 수 있습니다.
+7. 결과 목록에서 원하는 앱을 선택한 다음, **선택**을 선택합니다.
+8. **앱 추가** 창에서 **앱 정보**를 선택해 앱을 구성합니다.
+9. **앱 정보** 창에서 앱 정보를 추가합니다. 선택한 앱에 따라 이 창의 일부 값이 자동으로 채워질 수 있습니다.
     - **이름**: 회사 포털에 표시하려는 앱 이름을 입력합니다. 사용하는 모든 앱 이름이 고유한지 확인합니다. 앱 이름이 중복될 경우 한 이름만 회사 포털에서 사용자에게 표시됩니다.
     - **설명**: 앱에 대한 설명을 입력합니다. 이 설명은 회사 포털에서 사용자에게 표시됩니다.
     - **게시자**: 앱 게시자의 이름을 입력합니다.
@@ -67,8 +65,8 @@ ms.locfileid: "72497552"
     - **소유자**: 필요한 경우 이 앱의 소유자 이름을 입력합니다(예: *HR 부서*). 이 필드는 관리자에게만 표시되며 사용자에게 표시되지 않습니다.
     - **메모**: 선택 사항으로, 이 앱과 연결할 모든 메모를 입력합니다. 이 필드는 관리자에게만 표시되며, 최종 사용자에게는 표시되지 않습니다.
     - **로고**: 필요한 경우 앱과 연결할 아이콘을 업로드합니다. 사용자가 회사 포털을 찾아볼 때 이 아이콘이 앱과 함께 표시됩니다.
-13. **확인**을 선택합니다.
-14. **추가**를 선택합니다.
+10. **확인**을 선택합니다.
+11. **추가**를 선택합니다.
 
 만든 앱이 앱 목록에 표시되며, 여기서 이 앱을 선택한 그룹에 할당할 수 있습니다.
 

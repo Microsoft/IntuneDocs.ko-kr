@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754414"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563886"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -58,15 +58,15 @@ Microsoft Edge가 Intune 정책을 대상으로 지정하지 않은 경우, 사�
 Azure AD 조건부 액세스를 사용하여 Microsoft Edge를 통해서만 회사 콘텐츠에 액세스하도록 사용자를 리디렉션할 수 있습니다. 이렇게 하면 Azure AD 연결 웹앱의 모바일 브라우저 액세스가 정책에 따라 보호되는 Microsoft Edge로 제한됩니다. 그러면 Safari 또는 Chrome과 같은 다른 보호되지 않는 브라우저에서의 액세스를 차단합니다. 조건부 액세스를 Exchange Online 및 SharePoint Online과 같은 Azure 리소스, Microsoft 365 관리 센터 및 [Azure AD 애플리케이션 프록시](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 통해 외부 사용자에게 노출한 온-프레미스 사이트에도 적용될 수 있습니다.
 
 iOS 및 Android에서 Microsoft Edge를 사용하도록 Azure AD 연결 웹앱을 제한하려면
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. Intune 노드에서 **조건부 액세스** > **새 정책**을 선택합니다.
-3. 블레이드의 **액세스 제어** 섹션에서 **권한 부여**를 선택합니다.
+3. 창의 **액세스 제어** 섹션에서 **권한 부여**를 선택합니다.
 4. **승인된 클라이언트 앱 필요**를 선택합니다.
-5. **권한 부여** 블레이드에서 **선택**을 선택합니다. 이 정책은 Intune Managed Browser 앱에만 액세스할 수 있도록 하려는 클라우드 앱에 할당되어야 합니다.
+5. **권한 부여** 창에서 **선택**을 선택합니다. 이 정책은 Intune Managed Browser 앱에만 액세스할 수 있도록 하려는 클라우드 앱에 할당되어야 합니다.
 
     ![조건부 액세스 정책 - 권한 부여의 스크린샷](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
-6. [할당] 섹션에서 **조건** > **클라이언트 앱**을 선택합니다. **클라이언트 앱** 블레이드가 표시됩니다.
+6. 할당 섹션에서 **조건** > **앱**을 선택합니다. **앱** 창이 표시됩니다.
 7. **구성** 아래에서 **예**를 선택하여 특정 클라이언트 앱에 정책을 적용합니다.
 8. **브라우저**가 클라이언트 앱으로 선택되었는지 확인하세요.
 
@@ -97,29 +97,29 @@ SSO를 사용하려면 iOS 디바이스용 Microsoft Authenticator 앱 또는 An
 
 Microsoft Edge의 앱 구성을 만들려면
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **클라이언트 앱** > **앱 구성 정책** > **추가**를 선택합니다.
-3. **구성 정책 추가** 블레이드에서 앱 구성 설정에 대한 **이름** 및 **설명**(선택 사항)을 입력합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **앱 구성 정책** > **추가**를 선택합니다.
+3. **구성 정책 추가** 창에서 앱 구성 설정에 대한 **이름** 및 **설명**(선택 사항)을 입력합니다.
 4. **디바이스 등록** 유형에 **관리되는 앱**를 선택합니다.
-5. **필수 앱 선택**을 선택하고 **대상 앱** 블레이드에서 iOS나 Android 중 하나 또는 둘 다에 대해 **Managed Browser** 또는 **Edge**를 선택합니다.
-6. **확인**을 선택하여 **구성 정책 추가** 블레이드로 돌아옵니다.
-7. **구성 설정**을 선택합니다. **구성** 블레이드에서 키와 값 쌍을 정의하여 Microsoft Edge에 대한 구성을 제공합니다. 이 문서의 뒷부분에 나오는 섹션에서 정의할 수 있는 다양한 키와 값 쌍에 대해 알아보세요.
+5. **필수 앱 선택**을 선택하고 **대상 앱** 창에서 iOS나 Android 중 하나 또는 둘 다에 대해 **Managed Browser** 또는 **Edge**를 선택합니다.
+6. **확인**을 선택하여 **구성 정책 추가** 창으로 돌아옵니다.
+7. **구성 설정**을 선택합니다. **구성** 창에서 키와 값 쌍을 정의하여 Microsoft Edge에 대한 구성을 제공합니다. 이 문서의 뒷부분에 나오는 섹션에서 정의할 수 있는 다양한 키와 값 쌍에 대해 알아보세요.
 
     > [!NOTE]
     > Microsoft Edge는 Managed Browser와 동일한 키와 값 쌍을 사용합니다. Android에서 앱 구성 정책을 적용하려면 Microsoft Edge를 앱 보호 정책 대상으로 지정해야 합니다.
 
 8. 작업이 완료되면 **확인**을 선택합니다.
-9. **구성 정책 추가** 블레이드에서 **추가**를 선택합니다.<br>
-    새 구성이 생성되어 **앱 구성** 블레이드에 표시됩니다.
+9. **구성 정책 추가** 창에서 **추가**를 선택합니다.<br>
+    새 구성이 생성되어 **앱 구성** 창에 표시됩니다.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>작성한 구성 설정을 할당합니다. 
 
 Azure AD의 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대상이 지정된 보호되는 브라우저 앱을 설치한 경우에는 지정한 설정을 통해 앱이 관리됩니다.
 
-1. Intune 모바일 애플리케이션 관리 대시보드의 **클라이언트 앱** 블레이드에서 **앱 구성 정책**을 선택합니다.
+1. Intune 모바일 애플리케이션 관리 대시보드의 **앱** 창에서 **앱 구성 정책**을 선택합니다.
 2. 앱 구성 목록에서 할당하려는 구성을 선택합니다.
-3. 다음 블레이드에서 **할당**을 선택합니다.
-4. **할당** 블레이드에서 앱 구성을 할당할 Azure AD 그룹을 선택하고 **확인**을 선택합니다.
+3. 다음 창에서 **할당**을 선택합니다.
+4. **할당** 창에서 앱 구성을 할당할 Azure AD 그룹을 선택하고 **확인**을 선택합니다.
 
 ## <a name="direct-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Intune Managed Browser 대신 Microsoft Edge로 사용자 연결 
 

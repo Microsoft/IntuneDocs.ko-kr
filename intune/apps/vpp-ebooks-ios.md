@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae29d2ee5add475db89f6895b22299793a94ac36
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 08275e2573fe8aae8c59ea25c85cdd8f7a3246ee
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984091"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563756"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 전자책을 관리하는 방법
 
@@ -57,15 +57,14 @@ Microsoft Intune을 사용하면 이 프로그램을 통해 구매한 책을 동
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP 토큰을 가져와 업로드하려면
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-1. **클라이언트 앱** 워크로드에서 **설정** > **iOS VPP 토큰**을 선택합니다.
-2. VPP 토큰 목록 창에서 **만들기**를 클릭합니다.
-3. **새 VPP 토큰** 창에서 다음 정보를 지정합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **테넌트 관리** > **커넥터 및 토큰** > **Apple VPP 토큰**을 선택합니다.
+3. VPP 토큰 목록 창에서 **만들기**를 클릭합니다.
+5. **새 VPP 토큰** 창에서 다음 정보를 지정합니다.
     - **VPP 토큰 파일** - 비즈니스 또는 교육용 대량 구매 프로그램에 등록했는지 확인합니다. 그런 다음 계정용 Apple VPP 토큰을 다운로드하고 여기서 선택합니다.
     - **Apple ID** - 대량 구매 프로그램과 연결된 계정의 Apple ID를 입력합니다.
     - **VPP 계정 유형** - **비즈니스** 또는 **교육**을 선택합니다.
-4. 완료되면 **만들기**를 클릭합니다.
+5. 완료되면 **만들기**를 클릭합니다.
 
 토큰은 토큰 목록 창에 표시됩니다.
 
@@ -74,9 +73,8 @@ Microsoft Intune을 사용하면 이 프로그램을 통해 구매한 책을 동
 
 ## <a name="to-assign-a-volume-purchased-app"></a>대량 구매 앱을 할당하려면
 
-3. **Intune** 창에서 **전자책**을 선택합니다.
-1. **전자책** 워크로드에서 **관리** > **모든 전자책**을 선택합니다.
-2. 전자책 목록 창에서 할당할 전자책을 선택한 다음, ‘**...**’ > **그룹 할당**을 선택합니다.
+1. **앱** > **전자책** > **모든 전자책**을 선택합니다.
+2. 전자책 목록 창에서 할당할 전자책을 선택한 다음, ‘ **...** ’ > **그룹 할당**을 선택합니다.
 3. <*전자책 이름*> - **할당된 그룹** 창에서 **관리** > **할당된 그룹**을 선택합니다.
 4. **그룹 할당**을 선택하고 **그룹 선택** 창에서 전자책을 할당할 Azure AD 사용자 그룹을 선택합니다. 디바이스 그룹은 현재 지원되지 않습니다.
 할당 작업 **사용 가능** 또는 **필수**를 선택합니다. 

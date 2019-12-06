@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04bc1fac8d3362a173c4777cdf5228fed6b6349d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712542"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562505"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune을 사용하여 비즈니스용 Microsoft Store에서 대량 구매 앱을 관리하는 방법
 
@@ -51,7 +51,7 @@ ms.locfileid: "73712542"
 - 이 기능을 사용하려면 디바이스가 Active Directory Domain Services에 가입하거나 작업 공간에 연결되어 있어야 합니다.
 - 등록된 디바이스가 1511 릴리스의 Windows 10 이상을 사용 중이어야 합니다.
 
-또한 비즈니스용 Microsoft 스토어에서 동기화된 오프 라인 사용이 허가된 앱 및 관련 집합은 이제 UI에서 단일 앱 항목으로 통합되게 됩니다. 개별 패키지에서의 모든 배포 세부 정보는 단일 항목으로 마이그레이션됩니다. Azure Portal에서 관련 집합을 보려면 **클라이언트 앱** 블레이드에서 **앱 라이선스**를 선택합니다.
+또한 비즈니스용 Microsoft 스토어에서 동기화된 오프 라인 사용이 허가된 앱 및 관련 집합은 이제 UI에서 단일 앱 항목으로 통합되게 됩니다. 개별 패키지에서의 모든 배포 세부 정보는 단일 항목으로 마이그레이션됩니다. Azure Portal에서 관련 집합을 보려면 **앱** 창에서 **앱 라이선스**를 선택합니다.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>비즈니스용 Microsoft 스토어 계정을 Intune에 연결
 Intune 콘솔에서 동기화를 사용하기 전에 관리 도구로 Intune을 사용하도록 스토어 계정을 구성해야 합니다.
@@ -66,17 +66,16 @@ Intune 콘솔에서 동기화를 사용하기 전에 관리 도구로 Intune을 
 
 ## <a name="configure-synchronization"></a>동기화 구성
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-1. **클라이언트 앱** 창에서 **설치** > **비즈니스용 Microsoft Store**를 선택합니다.
-2. **사용**을 클릭합니다.
-3. 아직 수행하지 않은 경우에는 링크를 클릭하여 비즈니스용 Microsoft 스토어에 등록하고 이전에 설명된 대로 계정을 연결합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **테넌트 관리** > **커넥터 및 토큰** > **비즈니스용 Microsoft Store**를 선택합니다.
+3. **사용**을 클릭합니다.
+4. 아직 수행하지 않은 경우에는 링크를 클릭하여 비즈니스용 Microsoft 스토어에 등록하고 이전에 설명된 대로 계정을 연결합니다.
 5. **언어** 드롭다운 목록에서 비즈니스용 Microsoft Store의 앱이 Azure Portal에 표시되는 언어를 선택합니다. 표시되는 언어에 관계없이 사용 가능한 경우 최종 사용자의 언어로 설치됩니다.
 6. **동기화**를 클릭하여 Microsoft 스토어에서 구입한 앱을 Intune으로 가져옵니다.
 
 ## <a name="synchronize-apps"></a>앱 동기화
 
-1. **클라이언트 앱** 워크로드에서 **설치** > **비즈니스용 Microsoft Store**를 선택합니다.
+1. **테넌트 관리** > **커넥터 및 토큰** > **비즈니스용 Microsoft Store**를 선택합니다.
 2. **동기화**를 클릭하여 Microsoft 스토어에서 구입한 앱을 Intune으로 가져옵니다.
 
 > [!NOTE]

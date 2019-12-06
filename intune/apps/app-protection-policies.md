@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98976403d58c33f22f7ceeabec1d38f076f9bbe7
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592065"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563717"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>앱 보호 정책을 만들고 할당하는 방법
 
@@ -44,9 +44,9 @@ MAM을 지원하는 앱 목록을 확인하려면 [MAM 앱 목록](https://www.m
 iOS/iPadOS 및 Android 앱용 앱 보호 정책을 만드는 경우 최신 Intune 프로세스 흐름에 따라 새 앱 보호 정책을 만듭니다.
 
 ### <a name="create-an-iosipados-or-android-app-protection-policy"></a>iOS/iPadOS 또는 Android 앱 보호 정책 만들기
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. Intune 포털에서 **클라이언트 앱** > **앱 보호 정책**을 선택합니다. **앱 보호 정책** 세부내용이 열리고, 여기서 새 정책을 만들고 기존 정책을 편집할 수 있습니다.
-3. **정책 만들기**를 선택하고 **iOS/iPadOS** 또는 **Android**를 선택합니다. **정책 만들기** 블레이드가 표시됩니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. Intune 포털에서 **앱** > **앱 보호 정책**을 선택합니다. **앱 보호 정책** 세부내용이 열리고, 여기서 새 정책을 만들고 기존 정책을 편집할 수 있습니다.
+3. **정책 만들기**를 선택하고 **iOS/iPadOS** 또는 **Android**를 선택합니다. **정책 만들기** 창이 표시됩니다.
 4. **기본 사항** 페이지에서 다음 값을 추가합니다.
 
     | 값 | 설명 |
@@ -57,7 +57,7 @@ iOS/iPadOS 및 Android 앱용 앱 보호 정책을 만드는 경우 최신 Intun
 
     **플랫폼** 값은 위의 선택에 따라 설정됩니다.
 
-    ![정책 만들기 블레이드의 기본 사항 페이지 스크린샷](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+    ![정책 만들기 창의 기본 사항 페이지 스크린샷](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
 
 5. **다음**을 클릭하여 **앱** 페이지를 표시합니다.<br>
     **앱** 페이지에서는 다양한 디바이스의 앱에 이 정책을 적용하는 방법을 선택할 수 있습니다. 앱을 하나 이상 추가해야 합니다.<p>
@@ -171,7 +171,7 @@ iOS/iPadOS 및 Android 앱용 앱 보호 정책을 만드는 경우 최신 Intun
 
 Intune 앱 보호 정책이 사용자의 ID를 대상으로 지정하기 때문에 사용자에 대한 보호 설정은 등록된 디바이스(관리된 MDM) 및 미등록된 디바이스(관리되지 않는 MDM) 모두에 적용될 수 있습니다. 따라서 Intune 등록 또는 미등록 iOS 및 Android 디바이스에 Intune 앱 보호 정책을 대상으로 지정할 수 있습니다. 엄격한 DLP(데이터 손실 방지) 컨트롤이 적절히 마련되어 있는 관리되지 않는 디바이스에 대해 하나의 보호 정책이 있을 수 있고, DLP 컨트롤이 조금 더 느슨할 수 있는 MDM 관리 디바이스에 대해 별도의 보호 정책이 있을 수 있습니다. 이것이 개인 Android 엔터프라이즈 디바이스에서 작동하는 방식에 대한 자세한 내용은 [앱 보호 정책 및 회사 프로필](android-deployment-scenarios-app-protection-work-profiles.md)을 참조하세요.
 
-이러한 정책을 만들려면 Intune 콘솔에서 **클라이언트 앱** > **앱 보호 정책**으로 이동한 다음, **정책 만들기**를 선택합니다. 기존 앱 보호 정책을 편집할 수도 있습니다. 앱 보호 정책을 관리형 디바이스 및 비관리형 디바이스 모두에 적용하려면 **앱** 페이지로 이동하여 **모든 디바이스 유형에 있는 앱 대상**이 기본값인 **예**로 설정되어 있는지 확인합니다. 관리 상태에 따라 할당을 세부적으로 할당하려면 **모든 디바이스 유형에 있는 앱 대상**을 **아니요**로 설정합니다. 
+이러한 정책을 만들려면 Intune 콘솔에서 **앱** > **앱 보호 정책**으로 이동한 다음, **정책 만들기**를 선택합니다. 기존 앱 보호 정책을 편집할 수도 있습니다. 앱 보호 정책을 관리형 디바이스 및 비관리형 디바이스 모두에 적용하려면 **앱** 페이지로 이동하여 **모든 디바이스 유형에 있는 앱 대상**이 기본값인 **예**로 설정되어 있는지 확인합니다. 관리 상태에 따라 할당을 세부적으로 할당하려면 **모든 디바이스 유형에 있는 앱 대상**을 **아니요**로 설정합니다. 
 
 ### <a name="device-types"></a>디바이스 유형
 

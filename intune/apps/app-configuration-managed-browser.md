@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592087"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564301"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 웹 액세스 관리
 
@@ -91,29 +91,28 @@ Azure AD 연결 웹앱이 모바일 플랫폼에서 Intune Managed Browser를 �
 > [!TIP]  
 > 조건부 액세스는 Azure AD(Azure Active Directory) 기술입니다. *Intune*에서 액세스되는 조건부 액세스 노드는 *Azure AD*에서 액세스한 것과 동일한 노드입니다.  
 
-
-1. Intune 포털에서 **조건부 액세스** > **새 정책**을 선택합니다. 
-2. 다음으로 블레이드의 **액세스 제어** 섹션에서 **권한 부여**를 선택합니다. 
-3. **승인된 클라이언트 앱 필요**를 클릭합니다. 
-4. **권한 부여** 블레이드에서 **선택**을 클릭합니다. 이 정책은 Intune Managed Browser 앱에만 액세스할 수 있도록 하려는 클라우드 앱에 할당되어야 합니다.
-
-    ![Azure AD - Managed Browser 조건부 액세스 정책](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
-
-5. **할당** 섹션에서 **조건** > **클라이언트 앱**을 선택합니다. **클라이언트 앱** 블레이드가 표시됩니다.
-6. **구성** 아래에서 **예**를 클릭하여 특정 클라이언트 앱에 정책을 적용합니다.
-7. **브라우저**가 클라이언트 앱으로 선택되었는지 확인하세요.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **조건부 액세스** > **새 정책**을 선택합니다.
+3. 정책 **이름**을 추가합니다. 
+4. **할당** 섹션에서 **조건** > **클라이언트 앱**을 선택합니다. **클라이언트 앱** 창이 표시됩니다.
+5. **구성** 아래에서 **예**를 클릭하여 특정 클라이언트 앱에 정책을 적용합니다.
+6. **브라우저**가 클라이언트 앱으로 선택되었는지 확인하세요.
 
     ![Azure AD - Managed Browser - 클라이언트 앱 선택](./media/app-configuration-managed-browser/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
     > 이러한 클라우드 애플리케이션에 액세스할 수 있는 네이티브 앱(비 브라우저 앱)을 제한하려는 경우 **모바일 앱 및 데스크톱 클라이언트**를 선택할 수도 있습니다.
 
-8. **할당** 섹션에서 **사용자 및 그룹**을 선택한 다음, 이 정책을 할당하려는 사용자 또는 그룹을 선택합니다. 
+7. **완료** > **완료**를 클릭합니다.
+8. **할당** 섹션에서 **사용자 및 그룹**을 선택한 다음, 이 정책을 할당하려는 사용자 또는 그룹을 선택합니다. **완료**를 클릭하여 창을 닫습니다.
+9. **할당** 섹션에서 **클라우드 앱 또는 작업**을 선택하여 이 정책으로 보호할 앱을 선택합니다. **완료**를 클릭하여 창을 닫습니다.
+10. 창의 **액세스 제어** 섹션에서 **권한 부여**를 선택합니다. 
+11. **액세스 권한 부여**를 클릭하고 **승인된 클라이언트 앱 필요**를 클릭합니다. 
+12. **권한 부여** 창에서 **선택**을 클릭합니다. 이 정책은 Intune Managed Browser 앱에만 액세스할 수 있도록 하려는 클라우드 앱에 할당되어야 합니다.
 
-    > [!NOTE]
-    > 사용자는 또한 앱 구성 정책을 받으려면 Intune 앱 보호 정책을 사용해야 합니다. Intune 앱 보호 정책에 대한 자세한 내용은 [앱 보호 정책이란?](app-protection-policy.md)을 참조하세요.
+    ![Azure AD - Managed Browser 조건부 액세스 정책](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
 
-9. **할당** 섹션에서 **클라우드 앱**을 선택하여 이 정책으로 보호할 앱을 선택합니다.
+
 
 위의 정책이 구성되면 사용자는 Intune Managed Browser를 사용하도록 강제하여 이 정책으로 보호한 Azure AD 연결 웹앱에 액세스할 수 있습니다. 사용자가 이 시나리오에서 관리되지 않는 브라우저를 사용하는 경우 Intune Managed Browser를 대신 사용해야 한다는 알림이 표시됩니다.
 
@@ -133,27 +132,28 @@ SSO하려면 디바이스를 iOS 또는 Android의 Intune 회사 포털에 있�
 >[!IMPORTANT]
 >앱 구성을 적용하려면 사용자의 보호되는 브라우저 또는 디바이스의 다른 앱이 [Intune 앱 보호 정책]( ../app-protection-policy.md)을 통해 이미 관리되고 있어야 합니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. [관리] 목록의 **클라이언트 앱** 블레이드에서 **앱 구성 정책**을 선택합니다.
-4. **앱 구성 정책** 블레이드에서 **추가**를 선택합니다.
-5. **구성 정책 추가** 블레이드에서 앱 구성 설정에 대한 **이름** 및 **설명**(선택 사항)을 입력합니다.
-6. **디바이스 등록** 유형에 **관리되는 앱**를 선택합니다.
-7. **필수 앱 선택**을 선택하고 **대상 앱** 블레이드에서 iOS나 Android 중 하나 또는 둘 다에 대해 **Managed Browser** 및/또는 **Edge**를 선택합니다.
-8. **확인**을 선택하여 **구성 정책 추가** 블레이드로 돌아옵니다.
-9. **구성 설정**을 선택합니다. **구성** 블레이드에서 키와 값 쌍을 정의하여 Managed Browser에 대한 구성을 제공합니다. 이 문서의 뒷부분에 나오는 섹션에서 정의할 수 있는 다양한 키와 값 쌍에 대해 알아보세요.
-10. 작업이 끝나면 **확인**을 선택합니다.
-11. **구성 정책 추가** 블레이드에서 **추가**를 선택합니다.
-12. 새 구성이 작성되어 **앱 구성** 블레이드에 표시됩니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **앱 구성 정책** > **추가** > **관리형 앱**을 선택합니다.
+3. **구성 정책 추가** 창의 **앱 구성 정책 만들기** 창에서 앱 구성 설정에 대한 **이름** and optional **설명**(선택 사항)을 입력합니다.
+4. **퍼블릭 앱 선택**을 선택하고 iOS, Android 또는 둘 다에 대해 **Managed Browser** 및/또는 **Edge**를 선택합니다.
+5. **선택**을 클릭하여 **앱 구성 정책 만들기** 창으로 돌아갑니다.
+6. **다음**을 클릭하여 **설정** 페이지를 표시합니다.
+7. **설정** 페이지에서 앱용 구성을 제공할 키 및 값 쌍을 정의합니다. 이 문서의 뒷부분에 나오는 섹션에서 정의할 수 있는 다양한 키와 값 쌍에 대해 알아보세요.
+8. **다음**을 클릭하여 **할당** 페이지를 표시한 후 **포함할 그룹 선택** 및/또는 **제외할 그룹 선택**을 클릭합니다.
+9. **다음**를 클릭하여 **검토 + 만들기** 페이지를 표시합니다.
+10. 앱 구성 정책을 검토한 후 **만들기**를 클릭합니다.
+
+새 구성이 생성되어 **앱 구성** 창에 표시됩니다.
 
 
 ## <a name="assign-the-configuration-settings-you-created"></a>작성한 구성 설정을 할당합니다.
 
 Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대상이 지정된 보호되는 브라우저 앱을 설치한 경우에는 지정한 설정을 통해 앱이 관리됩니다.
 
-1. Intune 모바일 애플리케이션 관리 대시보드의 **클라이언트 앱** 블레이드에서 **앱 구성 정책**을 선택합니다.
+1. Intune 모바일 애플리케이션 관리 대시보드의 **앱** 창에서 **앱 구성 정책**을 선택합니다.
 2. 앱 구성 목록에서 할당하려는 구성을 선택합니다.
-3. 다음 블레이드에서 **할당**을 선택합니다.
-4. **할당** 블레이드에서 앱 구성을 할당할 Azure AD 그룹을 선택하고 **확인**을 선택합니다.
+3. 다음 창에서 **할당**을 선택합니다.
+4. **할당** 창에서 앱 구성을 할당할 Azure AD 그룹을 선택하고 **확인**을 선택합니다.
 
 ## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>Microsoft Edge를 조직의 보호되는 브라우저로 설정하는 방법
 
@@ -170,7 +170,7 @@ Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대�
 - 사용자가 Managed Browser 또는 Microsoft Edge 중 **하나**를 다운로드한 경우 해당 브라우저 앱이 시작됩니다. 
 - 사용자가 어느 브라우저 앱도 다운로드하지 않은 경우 Managed Browser를 다운로드하라는 메시지가 표시됩니다.
 
-위 절차를 사용하여 Microsoft Edge 앱 구성을 만듭니다. **구성** 블레이드에서 **구성 설정**을 선택할 때 다음 키-값 쌍을 제공합니다(9단계).
+위 절차를 사용하여 Microsoft Edge 앱 구성을 만듭니다. **구성** 창에서 **구성 설정**을 선택할 때 다음 키-값 쌍을 제공합니다(9단계).
 
 | Key                              |  값   |
 |----------------------------------|----------|

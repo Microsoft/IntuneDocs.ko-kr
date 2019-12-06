@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df77d168bb8be3775c566f63833b46130515b36
-ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
+ms.openlocfilehash: 6f4c7b5e3cca06a3ec10ea1b3dfc5e45546c841f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601569"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563916"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Windows 기간 업무 앱 추가
 
@@ -36,11 +36,9 @@ LOB(기간 업무) 앱은 앱 설치 파일로 추가합니다. 이러한 종류
 
 ## <a name="step-1-specify-the-software-setup-file"></a>1단계: 소프트웨어 설치 파일 지정
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-4. **클라이언트 앱** 워크로드에서 **관리** > **앱**을 차례로 선택합니다.
-5. 앱 목록 위에서 **추가**를 선택합니다.
-6. **앱 추가** 창에서 **기간 업무 앱**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
+3. **앱 추가** 창에서 **앱 유형**으로 **기간 업무 앱**을 선택합니다.
 
 ## <a name="step-2-configure-the-app-package-file"></a>2단계: 앱 패키지 파일 구성
 

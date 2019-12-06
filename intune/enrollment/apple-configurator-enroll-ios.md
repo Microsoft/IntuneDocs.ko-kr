@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6a9c6b824f8d6369f7bf2d06b44fa8a20417d1c
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: f80312c2bd82063ed0b61c36bef9b8bf4ae3e1aa
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713139"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691788"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Apple Configurator를 통해 iOS 디바이스 등록 설정
 
@@ -48,7 +48,7 @@ Apple Configurator 등록 방법은 [디바이스 등록 관리자](device-enrol
 
 디바이스 등록 프로필은 등록 중에 적용되는 설정을 정의합니다. 이러한 설정은 한 번만 적용됩니다. Apple Configurator로 iOS 디바이스를 등록하기 위한 등록 프로필을 만들려면 이 단계를 따릅니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **Apple Configurator** > **프로필** > **만들기**를 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **프로필** > **만들기**를 차례로 선택합니다.
 
     ![Apple Configurator에 대한 프로필 만들기](./media/apple-configurator-enroll-ios/apple-config-create-profile.png)
 
@@ -88,7 +88,7 @@ Apple Configurator 등록 방법은 [디바이스 등록 관리자](device-enrol
     DLXQPCWVGHMJ,디바이스 세부 정보
 
    [iOS 디바이스 일련 번호를 확인하는 방법](https://support.apple.com/HT204073)을 알아봅니다.
-2. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **Apple Configurator** > **디바이스** > **추가**를 차례로 선택합니다.
+2. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **디바이스** > **추가**를 차례로 선택합니다.
 
 5. 가져올 일련 번호에 적용할 **등록 프로필**을 선택합니다. 기존 세부 정보를 새 일련 번호 정보로 덮어쓰려는 경우 **기존 식별자에 대한 세부 정보를 덮어씁니다.** 를 선택합니다.
 6. **디바이스 가져오기**에서 일련 번호의 csv 파일을 찾은 다음 **추가**를 선택합니다.
@@ -100,18 +100,18 @@ Apple Configurator 등록을 위해 iOS 일련 번호를 가져올 때 등록 �
 - **AC 프로필**
 
 #### <a name="assign-from-apple-configurator-devices"></a>Apple Configurator 디바이스에서 할당
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **Apple Configurator** > **디바이스**를 차례로 선택하고 일련 번호를 선택한 후 **프로필 할당**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **디바이스**를 선택하고 일련 번호를 선택한 후 **프로필 할당**을 선택합니다.
 2. **프로필 할당**에서 할당할 **새 프로필**을 선택한 다음 **할당**을 선택합니다.
 
 #### <a name="assign-from-profiles"></a>프로필에서 할당
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **Apple Configurator** > **프로필**을 차례로 선택하고 프로필을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **프로필**을 차례로 선택하고 프로필을 선택합니다.
 2. 프로필에서 **할당된 디바이스**를 선택한 다음 **할당**을 선택합니다.
 3. 프로필에 할당할 디바이스 일련 번호를 찾기 위해 필터링하고, 디바이스를 선택한 다음 **할당**을 선택합니다.
 
 ### <a name="export-the-profile"></a>프로필 내보내기
 프로필을 만들고 일련 번호를 할당한 다음 Intune에서 프로필을 URL로 내보내야 합니다. 그런 다음 디바이스에 배포하기 위해 Mac에서 Apple Configurator로 가져옵니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **Apple Configurator** > **프로필**을 차례로 선택하고 내보낼 프로필을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **프로필**을 차례로 선택하고 내보낼 프로필을 선택합니다.
 2. 프로필에서 **프로필 내보내기**를 선택합니다.
 3. **프로필 URL**을 복사합니다. 그런 다음 Apple Configurator에서 추가하여 iOS 디바이스가 사용하는 Intune 프로필을 정의할 수 있습니다.
 
@@ -147,7 +147,7 @@ Apple Configurator를 사용하여 iOS 디바이스를 직접 등록하는 경�
 
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>프로필을 .mobileconfig로 iOS 디바이스에 내보내기
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **Apple Configurator** > **프로필**을 차례로 선택하고 내보낼 프로필을 선택한 후 **프로필 내보내기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **프로필**을 차례로 선택하고 내보낼 프로필을 선택한 후 **프로필 내보내기**를 선택합니다.
 2. **직접 등록**에서 **프로필 다운로드**를 선택하고 파일을 저장합니다. 등록 프로필 파일은 2주 동안만 유효합니다. 이 때에 다시 만들어야 합니다.
 3. [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)를 실행하는 Mac 컴퓨터에 파일을 전송하여 iOS 디바이스에 관리 프로필로 직접 푸시합니다.
 4. 다음 단계를 사용하여 Apple Configurator로 디바이스를 준비합니다.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813485"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564217"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise용 Microsoft Managed Home Screen 앱 구성
 
@@ -31,12 +31,12 @@ Managed Home Screen은 Intune을 통해 등록되어 다중 앱 키오스크 모
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>Microsoft Managed Home Screen 앱 구성 시기
 
-일반적으로 디바이스 구성을 통해 설정을 사용할 수 있는 경우 여기서 설정을 구성합니다. 이렇게 하면 시간을 절약하고 오류를 최소화하며 더 나은 Intune 지원 환경을 제공합니다. 그러나 일부 Managed Home Screen 설정은 현재 Intune 콘솔의 **앱 구성 정책** 블레이드를 통해서만 사용할 수 있습니다. 이 문서를 통해 구성 디자이너 또는 JSON 스크립트를 사용하여 다양한 설정을 구성하는 방법을 알아봅니다. 
+일반적으로 디바이스 구성을 통해 설정을 사용할 수 있는 경우 여기서 설정을 구성합니다. 이렇게 하면 시간을 절약하고 오류를 최소화하며 더 나은 Intune 지원 환경을 제공합니다. 그러나 일부 Managed Home Screen 설정은 현재 Intune 콘솔의 **앱 구성 정책** 창을 통해서만 사용할 수 있습니다. 이 문서를 통해 구성 디자이너 또는 JSON 스크립트를 사용하여 다양한 설정을 구성하는 방법을 알아봅니다. 
 
 > [!NOTE]
-> 현재 **클라이언트 앱**과 **디바이스 구성**을 통한 허용 목록의 애플리케이션 및 고정 웹 링크 설정이 가능하며 사용할 수 있습니다. Managed Home Screen에 영향을 미치는 **디바이스 구성**에서 사용 가능한 전체 설정 목록은 [전용 디바이스 설정](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)을 참조하세요.  
+> 현재 **앱**과 **디바이스 구성**을 통한 허용 목록의 애플리케이션 및 고정 웹 링크 설정이 가능하며 사용할 수 있습니다. Managed Home Screen에 영향을 미치는 **디바이스 구성**에서 사용 가능한 전체 설정 목록은 [전용 디바이스 설정](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)을 참조하세요.  
 
-먼저 Azure Portal의 Intune 콘솔로 이동하여 **클라이언트 앱** > **앱 구성 정책**으로 이동합니다. **Android**를 실행하는 **관리 디바이스**에 대한 구성 정책을 추가하고 연결된 앱으로 **Managed Home Screen**을 선택합니다. **구성 설정**을 클릭하여 사용 가능한 여러 Managed Home Screen 설정을 구성할 수 있습니다. 
+먼저 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)로 이동한 후 **앱** > **앱 구성 정책**을 선택합니다. **Android**를 실행하는 **관리 디바이스**에 대한 구성 정책을 추가하고 연결된 앱으로 **Managed Home Screen**을 선택합니다. **구성 설정**을 클릭하여 사용 가능한 여러 Managed Home Screen 설정을 구성할 수 있습니다. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>구성 설정 형식 선택
 

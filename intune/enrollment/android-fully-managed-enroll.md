@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44e757be5f109b81772daa6ff59505ccc0f033f8
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709432"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562376"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Android 엔터프라이즈 완전 관리형 디바이스의 Intune 등록 설정 
 
@@ -56,7 +56,7 @@ Android 엔터프라이즈 완전 관리형 디바이스 관리를 설정하려�
 
 ### <a name="enable-corporate-owned-user-devices"></a>회사 소유 사용자 디바이스 사용
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하여 **디바이스 등록** > **Android 등록** > **회사 소유의 완전 관리형 사용자 디바이스**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하여 **디바이스** > **Android** > **Android 등록**  > **회사 소유의 완전 관리형 사용자 디바이스**를 선택합니다.
 2. **사용자가 회사 소유 디바이스를 등록할 수 있도록 허용**에서 **예**를 선택합니다.
 
 > [!NOTE]

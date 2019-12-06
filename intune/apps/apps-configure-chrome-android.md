@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/07/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801658"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564037"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune을 사용하여 Android 장치용 Google Chrome 구성 
 
@@ -36,8 +36,8 @@ Intune 앱 구성 정책을 사용하여 Android 장치용 Google Chrome을 구�
 
 ## <a name="add-the-google-chrome-app-to-intune"></a>Intune에 Google Chrome 앱 추가
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **Intune** 창에서 **클라이언트 앱** > **앱** > **추가**를 선택한 다음 **관리되는 Google Play** 앱을 추가합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택한 후 **관리형 Google Play** 앱을 추가합니다.
 3. 관리되는 Google Play로 이동하여 **Google Chrome**을 검색하고 승인합니다.
 
     ![Google Chrome 검색 및 승인](~/apps/media/apps-configure-chrome-android/search.png)

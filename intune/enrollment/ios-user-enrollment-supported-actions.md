@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445305"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562418"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple 사용자 등록에서 지원되는 Intune 작업 및 옵션
 
@@ -57,13 +57,18 @@ ms.locfileid: "73445305"
 - 원격 잠금
 - 상태 확인
 
+## <a name="app-deployment-options"></a>앱 배포 옵션
+사용자 등록 디바이스에 다음 앱 유형을 배포할 수 있습니다.
+- 사용자 지정 앱을 포함하는 사용자가 사용을 허가한 VPP(볼륨 구매 플랜) 앱
+- LOB(기간 업무) 앱
+- 웹앱
+
 ## <a name="other-supported-options"></a>기타 지원 옵션
 
 Apple 사용자 등록을 사용하여 등록된 디바이스에 대해 Intune에서 지원하는 옵션은 다음과 같습니다.
 - 앱별 VPN 사용자 등록에서 Safari 설정 구성을 지원하지 않으므로 이 지원에서 Safari 도메인은 제외됩니다.
 - WiFi 
 - 등록 취소 시 회사 앱 제거
-- 사용자에게 사용이 허가된 VPP(대량 구매 계획)를 통한 앱 배포
 - 탈옥 검색
 
 지원되는 제한 사항은 다음과 같습니다.
@@ -97,6 +102,7 @@ Apple 사용자 등록을 사용하여 등록된 디바이스에 대해 Intune�
 - 주체 이름 형식의 일련 번호가 있는 SCEP 사용자 프로필.
 - 디바이스 수준 VPN.
 - 디바이스에 사용이 허가된 VPP 앱 배포.
+- App Store 앱을 관리형 앱으로 설치합니다.
 - 관리 APFS 볼륨 외부의 애플리케이션에 대한 MDM 제어.
 - 애플리케이션 보호 정책은 이러한 앱에 계속 적용됩니다. 그러나 사용자가 이 앱의 관리 버전을 디바이스에서 삭제하지 않으면 이 앱에 대한 관리를 인수받거나 이 앱을 배포할 수 없습니다.
 - 감독해야 하는 작업, 구성, 설정 및 명령입니다. 

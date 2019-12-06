@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11618d844fe7c4e190295ad06111ae0944deda95
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d45455a97f8016527dce49839b5493f16b173d43
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507286"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563653"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Microsoft Intune에 Android Enterprise 시스템 앱 추가
 
@@ -33,8 +33,8 @@ ms.locfileid: "72507286"
 
 다음을 수행하여 Azure Portal에서 Android Enterprise 시스템 앱을 Intune에 추가할 수 있습니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **Intune** 창에서 **클라이언트 앱** > **앱** > **추가**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
 3. **앱 추가** 창의 사용할 수 있는 **기타** 유형 아래에서 **Android Enterprise 시스템 앱**을 선택합니다.
 4. 앱 정보를 구성하려면 **구성**을 선택하고 다음 정보를 제공합니다.
     - **앱 이름**: 앱의 이름을 입력합니다.

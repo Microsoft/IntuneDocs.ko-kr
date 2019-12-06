@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199207"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563632"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -37,7 +37,7 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 > [!Tip]
 > 회사 포털을 사용자 지정할 때는 구성이 회사 포털 웹 사이트 및 회사 포털 앱에 모두 적용됩니다. 회사 포털 웹 사이트에 액세스하려면 Intune 라이선스가 할당되어야 합니다.
 
-회사 포털을 사용자 지정하면 최종 사용자에게 친숙하고 유용한 환경을 제공하는 데 도움이 됩니다. 이렇게 하려면 Intune 포털에서 **클라이언트 앱** > **브랜딩 및 사용자 지정**을 선택한 후 필요한 설정을 구성합니다.
+회사 포털을 사용자 지정하면 최종 사용자에게 친숙하고 유용한 환경을 제공하는 데 도움이 됩니다. 이렇게 하려면 Intune 포털에서 **앱** > **브랜딩 및 사용자 지정**을 선택한 후 필요한 설정을 구성합니다.
 
 회사 포털에서 iOS 애플리케이션을 설치하는 사용자에게는 메시지가 표시됩니다. 이 동작은 iOS 앱이 앱 스토어에 연결되어 있거나 VPP(Volume Purchase Program)에 연결되어 있거나 기간 업무(LOB) 앱에 연결되어 있는 경우 발생합니다. 사용자는 표시되는 메시지를 통해 작업을 수락하거나 앱 관리를 허용할 수 있습니다. 메시지에는 회사 이름이 표시되며, 회사 이름을 사용할 수 없는 경우 **회사 포털**이 표시됩니다. 
 
@@ -92,7 +92,7 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 
 ### <a name="brand-image-for-company-portal"></a>회사 포털의 브랜드 이미지
 
-회사 브랜드를 반영하는 브랜드 이미지를 표시합니다. 변경 내용이 저장되면 Intune 웹 포털의 블레이드 위쪽에서 **설정 미리 보기**를 선택하여 구성의 모양을 확인할 수 있습니다. iOS 디바이스에 표시되는 브랜드 이미지만 미리 볼 수 있습니다(Intune 웹 포털은 불가). 
+회사 브랜드를 반영하는 브랜드 이미지를 표시합니다. 변경 내용이 저장되면 Intune 웹 포털의 창 위쪽에서 **설정 미리 보기**를 선택하여 구성의 모양을 확인할 수 있습니다. iOS 디바이스에 표시되는 브랜드 이미지만 미리 볼 수 있습니다(Intune 웹 포털은 불가). 
 
 |필드 이름|추가 정보|
 |---|---|

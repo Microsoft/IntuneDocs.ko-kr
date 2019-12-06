@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8ce24081eae1808d3db0c5078026b306fd209d5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507245"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563934"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
@@ -51,9 +51,10 @@ Windows 10 LOB 앱을 서명하고 Intune 관리 콘솔에 업로드할 수 있�
 ### <a name="categorize-microsoft-store-for-business-apps"></a>비즈니스용 Microsoft Store 앱 범주화 
 비즈니스용 Microsoft Store 앱을 범주화하려면 
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **클라이언트 앱** > **앱**을 선택합니다. 비즈니스용 Microsoft Store 앱을 선택합니다. 그런 다음 **앱 정보** > **범주**를 선택합니다. 
-3. 범주를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱**을 선택합니다. 
+3. 비즈니스용 Microsoft Store 앱을 선택합니다. 그런 다음, **속성** > **앱 정보** > **범주**를 선택합니다. 
+4. 범주를 선택합니다.
 
 ## <a name="install-apps-on-windows-10-devices"></a>Windows 10 디바이스에서 앱 설치
 앱 유형에 따라 두 가지 방법 중 하나로 Windows 10 디바이스에 앱을 설치할 수 있습니다.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aeae231e07ceeee6a54f8f60ec5d53cc96d55be0
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 81a084528fdc500bf9b6de0ca5fa847c2e0b3797
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117889"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563919"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Microsoft Intune에 macOS LOB(사업 부문) 앱을 추가하는 방법
 
@@ -71,11 +71,9 @@ ms.locfileid: "74117889"
 
 ## <a name="step-1---specify-the-software-setup-file"></a>단계 1 - 소프트웨어 설치 파일 지정
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-4. **클라이언트 앱** 워크로드에서 **관리** > **앱**을 차례로 선택합니다.
-5. 앱 목록 위에서 **추가**를 선택합니다.
-6. **앱 추가** 창에서 **LOB(기간 업무) 앱**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
+3. **앱 추가** 창에서 **앱 유형**으로 **기간 업무 앱**을 선택합니다.
 
 ## <a name="step-2---configure-the-app-package-file"></a>2단계: 앱 패키지 파일 구성
 

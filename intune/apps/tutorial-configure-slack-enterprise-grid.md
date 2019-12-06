@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496728"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563393"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>자습서: EMM 및 앱 구성에 Intune을 사용하도록 Slack 구성
 
@@ -55,7 +55,7 @@ iOS 앱 EMM용 Slack을 Intune 테넌트에 추가하고 앱 구성 정책을 �
 
 ### <a name="add-slack-for-emm-to-intune"></a>Intune에 EMM용 Slack 추가
 Intune에서 EMM용 Slack을 관리 iOS 앱으로 추가하고 Slack 사용자를 할당합니다. 앱은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 Intune 앱을 따로 추가해야 합니다.
-1. Intune에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다.
+1. Intune에서 **앱** > **모든 앱** > **추가**를 선택합니다.
 2. 앱 유형에서  **- iOS**를 선택합니다.
 3. **앱 스토어 검색**을 선택합니다. 검색어 “EMM용 Slack”을 입력하고 앱을 선택합니다.
 4. **앱 정보**를 필요에 따라 변경 내용을 구성합니다.
@@ -71,7 +71,7 @@ Intune에서 EMM용 Slack을 관리 iOS 앱으로 추가하고 Slack 사용자�
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>EMM용 Slack을 위한 앱 구성 정책 추가
 EMM iOS용 Slack을 위한 앱 구성 정책을 추가합니다. 관리 디바이스의 앱 구성 정책은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 정책을 따로 추가해야 합니다.
-1. Intune에서 **클라이언트 앱** > **앱 구성 정책** > **추가**를 선택합니다.
+1. Intune에서 **앱** > **앱 구성 정책** > **추가**를 선택합니다.
 2. 이름에 Slack 앱 구성 정책 테스트를 입력합니다.
 3. 디바이스 등록 유형에서 **관리 디바이스**를 선택합니다.
 4. 플랫폼에서 **iOS**를 선택합니다.
@@ -107,7 +107,7 @@ Slack 관리형 Google Play 앱을 Intune 테넌트에 추가하고 앱 구성 �
 
 ### <a name="add-slack-to-intune"></a>Intune에 Slack 추가
 Intune에서 Slack을 관리형 Google Play 앱으로 추가하고 Slack 사용자를 할당합니다. 앱은 플랫폼별로 다르므로 iOS 디바이스의 Slack 사용자를 위한 Intune 앱을 따로 추가해야 합니다.
-1. Intune에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다.
+1. Intune에서 **앱** > **모든 앱** > **추가**를 선택합니다.
 2. 앱 유형에서 **스토어 앱 - 관리형 Google Play**를 선택합니다.
 3. **관리형 Google Play - 승인**을 선택합니다. 검색어 “EMM용 Slack”을 입력하고 앱을 선택합니다.
 4. **승인**을 선택합니다.
@@ -122,7 +122,7 @@ Intune에서 Slack을 관리형 Google Play 앱으로 추가하고 Slack 사용�
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Slack을 위한 앱 구성 정책 추가
 Slack을 위한 앱 구성 정책을 추가합니다. 관리 디바이스의 앱 구성 정책은 플랫폼별로 다르므로 iOS 디바이스의 Slack 사용자를 위한 정책을 따로 추가해야 합니다.
-1. Intune에서 **클라이언트 앱** > **앱 구성 정책** > **추가**를 선택합니다.
+1. Intune에서 **앱** > **앱 구성 정책** > **추가**를 선택합니다.
 2. 이름에 Slack 앱 구성 정책 테스트를 입력합니다.
 3. 디바이스 등록 유형에서 **관리 디바이스**를 선택합니다.
 4. 플랫폼에서 **Android**를 선택합니다.

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78620818bfd13f0292e159c6a3670b5e3af53dab
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709496"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562303"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>빠른 시작: Windows 10 디바이스에 대한 자동 등록 설정
 
@@ -41,7 +41,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](../fundamentals/free-tri
 
 이 예제에서는 회사 및 BYOD(bring-your-own-devices)를 모두 자동으로 등록할 수 있도록 MDM 등록을 사용합니다. Azure Active Directory Premium 무료 구독을 신청할 수 있습니다.
 
-1. Azure에서 **Azure Active Directory** > **모바일(MDM 및 MAM)** 을 선택합니다.
+1. [Azure Portal](https://portal.azure.com)에서 **Azure Active Directory** > **모바일(MDM 및 MAM)** 을 선택합니다.
 2. **Premium 평가판을 받아서 이 기능 사용**을 선택하세요. 이 옵션을 선택하면 Azure Active Directory Premium 평가판을 사용하여 자동 등록할 수 있습니다. 
 
     ![Azure Active Directory Premium 평가판 선택](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)

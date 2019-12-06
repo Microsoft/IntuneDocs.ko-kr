@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 26972bb034ea4cb65f1bf64c61c20395cf94dc36
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889585"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564179"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>앱 보호 정책을 모니터링하는 방법
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -42,9 +42,8 @@ ms.locfileid: "72889585"
 
 ## <a name="summary-view"></a>요약 보기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-4. 요약 보기를 보려면 **클라이언트 앱** 워크로드에서 **모니터** 아래의 **앱 보호 상태**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+3. **앱** > **모니터링** > **앱 보호 상태**를 선택합니다.
 
    ![Intune 모바일 애플리케이션 관리 창의 요약 타일 스크린샷](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
@@ -78,7 +77,7 @@ ms.locfileid: "72889585"
 >[!NOTE]
 > **마지막 동기화** 열은 콘솔 내 사용자 상태 보고서와 앱 보호 정책의 [내보낼 수 있는 .csv 보고서](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities)에서 동일한 값을 나타냅니다. 차이점은 두 보고서의 값 사이에 동기화가 약간 지연된다는 것입니다. 
 >
-> 마지막 동기화에서 참조된 시간은 Intune에서 앱 인스턴스를 마지막으로 본 시점입니다. 사용자가 앱을 시작하면 마지막으로 체크 인된 시간에 따라 해당 시작 시간에 Intune 앱 보호 서비스에게 알릴 수 있습니다. [앱 보호 정책 체크 인 재시도 간격 시간](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)을 참조하세요. 사용자가 마지막 체크 인 간격(활성 사용일 경우 일반적으로 30분)에서 특정 앱을 사용한 적이 없는 상태로 앱을 시작한 경우 다음을 수행합니다.
+> 마지막 동기화에서 참조된 시간은 Intune에서 앱 인스턴스를 마지막으로 본 시점입니다. 사용자가 앱을 시작하면 마지막으로 체크 인된 시간에 따라 해당 시작 시간에 Intune 앱 보호 서비스에게 알릴 수 있습니다. [앱 보호 정책 체크 인 재시도 간격 시간](~/apps/app-protection-policy-delivery.md)을 참조하세요. 사용자가 마지막 체크 인 간격(활성 사용일 경우 일반적으로 30분)에서 특정 앱을 사용한 적이 없는 상태로 앱을 시작한 경우 다음을 수행합니다.
 >
 > - 앱 보호 정책을 내보낼 수 있는 .csv 보고서는 최신 시간이 최소 1분에서 최대 30분 사이입니다.
 > - 사용자 상태 보고서에 최신 시간이 즉시 적용됩니다.
@@ -104,7 +103,7 @@ ms.locfileid: "72889585"
 > 검색한 사용자에게 배포된 MAM 정책이 없으면 해당 사용자가 MAM 정책의 대상이 아니라는 메시지가 표시됩니다.
 
 ### <a name="flagged-users"></a>플래그가 지정된 사용자
-상세 보기는 오류 메시지, 오류가 발생했을 때 액세스된 앱, 영향을 받는 디바이스 OS 플랫폼 및 타임스탬프를 표시합니다. 오류는 일반적으로 탈옥(iOS) 또는 루팅(Android)된 디바이스에 대한 것입니다. 또한 ‘SafetyNet 디바이스 증명’ 조건부 시작 검사로 플래그가 지정되는 디바이스를 가진 사용자는 Google에서 보고한 이유와 함께 여기에서 보고됩니다. 사용자를 보고서에서 제거하려면 결과를 보고해야 하는 다음 루트 검색 검사(또는 탈옥 검사/SafetyNet 검사 발생) 이후에 발생하는 디바이스 자체의 상태를 변경해야 합니다. 디바이스가 실제로 재구성된 경우 블레이드가 다시 로드될 때 플래그가 지정된 사용자 보고서에서 새로 고침이 수행됩니다.
+상세 보기는 오류 메시지, 오류가 발생했을 때 액세스된 앱, 영향을 받는 디바이스 OS 플랫폼 및 타임스탬프를 표시합니다. 오류는 일반적으로 탈옥(iOS) 또는 루팅(Android)된 디바이스에 대한 것입니다. 또한 ‘SafetyNet 디바이스 증명’ 조건부 시작 검사로 플래그가 지정되는 디바이스를 가진 사용자는 Google에서 보고한 이유와 함께 여기에서 보고됩니다. 사용자를 보고서에서 제거하려면 결과를 보고해야 하는 다음 루트 검색 검사(또는 탈옥 검사/SafetyNet 검사 발생) 이후에 발생하는 디바이스 자체의 상태를 변경해야 합니다. 디바이스가 실제로 재구성된 경우 창이 다시 로드될 때 플래그가 지정된 사용자 보고서에서 새로 고침이 수행됩니다.
 
 ### <a name="users-with-potentially-harmful-apps"></a>잠재적으로 유해한 앱이 있는 사용자
 자세히 보기에는 다음이 표시됩니다.
@@ -121,14 +120,14 @@ ms.locfileid: "72889585"
 
 ## <a name="reporting-view"></a>보고 보기
 
-**앱 보호 상태** 블레이드 위쪽에서 동일한 보고서를 찾을 수 있습니다.
+**앱 보호 상태** 창 위쪽에서 동일한 보고서를 찾을 수 있습니다.
 
 > [!NOTE]
-> Intune은 앱 등록 ID, Android 제조업체, 모델 및 보안 패치 버전을 포함한 추가 디바이스 보고 필드와 iOS 모델을 제공합니다. Intune에서 **클라이언트 앱** > **앱 보호 상태** > **앱 보호 보고서: iOS, Android**를 선택하여 이러한 필드에 액세스합니다. 또한 이러한 매개 변수를 사용하여 디바이스 제조업체(Android)의 **허용** 목록, 디바이스 모델(Android 및 iOS)의 **허용** 목록 및 최소 Android 보안 패치 버전 설정을 구성할 수 있습니다. 
+> Intune은 앱 등록 ID, Android 제조업체, 모델 및 보안 패치 버전을 포함한 추가 디바이스 보고 필드와 iOS 모델을 제공합니다. Intune에서 **앱** > **앱 보호 상태** > **앱 보호 보고서: iOS, Android**를 선택하여 이러한 필드에 액세스합니다. 또한 이러한 매개 변수를 사용하여 디바이스 제조업체(Android)의 **허용** 목록, 디바이스 모델(Android 및 iOS)의 **허용** 목록 및 최소 Android 보안 패치 버전 설정을 구성할 수 있습니다. 
 
-MAM 정책 준수 상태에 도움이 되는 추가 보고서를 사용할 수 있습니다. 이러한 보고서를 보려면 **클라이언트 앱** > **앱 보호 상태** > **보고서**를 선택합니다. 
+MAM 정책 준수 상태에 도움이 되는 추가 보고서를 사용할 수 있습니다. 이러한 보고서를 보려면 **앱** > **앱 보호 상태** > **보고서**를 선택합니다. 
 
-**보고서** 블레이드는 다음을 비롯한 사용자와 앱을 기반으로 하는 여러 보고서를 제공합니다.
+**보고서** 창은 다음을 비롯한 사용자와 앱을 기반으로 하는 여러 보고서를 제공합니다.
 
 - **사용자 보고서**: 이 보고서는 위 [상세 보기](app-protection-policies-monitor.md#detailed-view) 섹션의 **사용자 상태** 보고서에서 찾을 수 있는 정보와 동일한 내용에 대해 간략하게 설명합니다.
 
@@ -139,7 +138,7 @@ MAM 정책 준수 상태에 도움이 되는 추가 보고서를 사용할 수 �
     - 해당 앱을 한 명의 사용자가 사용하거나, 현재 MAM 정책에서 대상으로 지정되지 않은 앱에서 사용
     - 모든 앱이 체크 인되었으나 MAM 정책을 가져오지 않음
 
-    ![3개의 앱에 대한 세부 정보가 포함된 사용자 앱 보고 블레이드의 스크린샷](./media/app-protection-policies-monitor/MAM-reporting-4.png)
+    ![3개의 앱에 대한 세부 정보가 포함된 사용자 앱 보고 창 스크린샷](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
 - **사용자 구성 보고서**: 선택한 사용자에 따라 이 보고서는 사용자가 받은 모든 앱 구성의 세부 정보를 제공합니다.
 - **앱 구성 보고서**: 선택한 플랫폼 및 앱을 기반으로 이 보고서는 선택한 앱의 구성을 받은 사용자에 대한 세부 정보를 제공합니다.

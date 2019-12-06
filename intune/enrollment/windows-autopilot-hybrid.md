@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3724072144a78e1f4f5a17914eff941469e27242
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
+ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709589"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74558179"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포
 Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Active Directory) 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 이 문서의 단계를 수행합니다.
@@ -42,7 +42,7 @@ Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Acti
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 자동 등록 설정
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 왼쪽 창에서 **Azure Active Directory**를 선택합니다.
+1. Azure에 로그인하고 왼쪽 창에서 **Azure Active Directory**를 선택합니다.
 
    ![Azure Portal](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
@@ -107,14 +107,14 @@ Active Directory용 Intune Connector는 온-프레미스 Active Directory 도메
 
 Active Directory용 Intune Connector는 Windows Server 2016 이상을 실행하는 컴퓨터에 설치해야 합니다. 컴퓨터가 인터넷과 Active Directory에 액세스할 수 있어야 합니다. 규모와 및 가용성을 늘리거나 여러 Active Directory 도메인을 지원하기 위해 환경에 여러 개의 커넥터를 설치할 수 있습니다. 다른 Intune 커넥터를 실행하지 않는 서버에 커넥터를 설치하는 것이 좋습니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **Active Directory용 Intune Connector** > **추가**를 차례로 선택합니다. 
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **Windows** > **Windows 등록** > **Active Directory용 Intune Connector** > **추가**를 차례로 선택합니다. 
 2. 지침에 따라 커넥터를 다운로드합니다.
 3. 다운로드한 커넥터 설치 파일, *ODJConnectorBootstrapper.exe*를 열어서 커넥터를 설치합니다.
 4. 설치가 끝나면 **구성**을 선택합니다.
 5. **로그인**을 선택합니다.
 6. 사용자 글로벌 관리자 또는 Intune 관리자 역할 자격 증명을 입력합니다.  
    사용자 계정에는 할당된 Intune 라이선스가 있어야 합니다.
-7. **디바이스 등록** > **Windows 등록** > **Active Directory용 Intune Connector**로 차례로 이동한 다음, 연결 상태가 **활성**인지 확인합니다.
+7. **디바이스** > **Windows** > **Windows 등록** > **Active Directory용 Intune Connector**로 이동한 후 연결 상태가 **활성**인지 확인합니다.
 
 > [!NOTE]
 > 커넥터에서 로그인한 후 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 표시되는 데 몇 분 정도 걸릴 수 있습니다. Intune 서비스와 통신할 수 있는 경우에만 표시됩니다.
@@ -183,7 +183,7 @@ Autopilot 디바이스가 등록되면, 해당 이름이 디바이스의 호스�
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Autopilot 배포 프로필 만들기 및 할당
 Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용됩니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **Windows** > **Windows 등록** > **배포 프로필** > **프로필 만들기**를 선택합니다.
 2. **기본 사항** 페이지에서 **이름** 및 선택적 **설명**을 입력합니다.
 3. 할당된 그룹의 모든 디바이스가 자동으로 Autopilot으로 변환되도록 하려면 **모든 대상 디바이스를 다시 Autopilot으로 변환**을 **예**로 설정합니다. 할당된 그룹에서 Autopilot이 아닌 모든 회사 소유 디바이스는 Autopilot 배포 서비스에 등록됩니다. 개인 소유 디바이스는 Autopilot으로 변환되지 않습니다. 등록을 처리하는 데 48시간 정도가 걸립니다. 디바이스 등록을 취소하고 재설정하면 Autopilot이 해당 디바이스를 등록합니다. 이 방법으로 디바이스를 등록한 후 이 옵션을 비활성화하거나 프로필 할당을 제거해도 디바이스가 Autopilot 배포 서비스에서 제거되지 않습니다. 대신 [디바이스를 직접 제거](enrollment-autopilot.md#delete-autopilot-devices)해야 합니다.
 4. **다음**을 선택합니다.
@@ -200,7 +200,7 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(선택 사항) 등록 상태 페이지 설정
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Windows 등록** > **등록 상태 페이지**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **Windows** > **Windows 등록** > **등록 상태 페이지**를 선택합니다.
 1. **등록 상태 페이지** 창에서 **기본값** > **설정**을 선택합니다.
 1. **프로필 및 앱 설치 진행률 표시** 상장에서 **예**를 선택합니다.
 1. 필요에 따라 다른 옵션을 구성합니다.
@@ -208,7 +208,7 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>도메인 조인 프로필 만들기 및 할당
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **프로필** > **프로필 만들기**를 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 1. 다음 속성을 입력합니다.
    - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.
    - **설명**: 프로필에 대한 설명을 입력합니다.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519ad00024be43371cd118e3f37ae2fbc57898b
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813377"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564256"
 ---
 # <a name="intune-discovered-apps"></a>Intune 검색된 앱
 
@@ -33,18 +33,18 @@ Intune **검색된 앱**은 테넌트의 Intune 등록 디바이스에서 검색
 
 Intune은 테넌트의 Intune 등록 디바이스에서 검색된 앱의 집계된 목록을 제공합니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **Intune** 창에서 **클라이언트 앱** > **검색된 앱**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모니터링** > **검색된 앱**을 선택합니다.
 
 >[!NOTE]
->**검색된 앱** 블레이드에서 **내보내기**를 선택하여 검색된 앱 목록을 .csv 파일로 내보낼 수 있습니다.
+>**검색된 앱** 창에서 **내보내기**를 선택하여 검색된 앱 목록을 .csv 파일로 내보낼 수 있습니다.
 >
 >검색된 Win32 앱의 경우 현재 집계 개수가 없습니다. 이러한 유형의 데이터는 디바이스별로만 볼 수 있습니다.
 
 또한 Intune은 테넌트의 개별 디바이스에 대해 검색된 앱 목록을 제공합니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. Intune 창에서 **디바이스** > **모든 디바이스**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **모든 디바이스**를 선택합니다.
 3. 디바이스를 선택합니다.
 4. 이 디바이스에 대해 검색된 앱을 보려면 **모니터** 섹션에서 **검색된 앱**을 선택합니다.
 
@@ -69,7 +69,7 @@ Intune은 테넌트의 Intune 등록 디바이스에서 검색된 앱의 집계�
 
 검색된 앱의 수는 앱 설치 상태 수와 일치하지 않을 수 있습니다. 일치하지 않는 경우는 다음과 같습니다.
 
-- 설치된 관리 앱의 대상 지정이 변경되면 상태 블레이드의 설치 수는 감속하지만 감지된 앱에는 보고된 상태로 남아 있을 수 있습니다.
+- 설치된 관리 앱의 대상 지정이 변경되면 상태 창의 설치 수는 감속하지만 감지된 앱에는 보고된 상태로 남아 있을 수 있습니다.
 - 하나의 테넌트에 있는 동일한 앱의 여러 인스턴스를 대상으로 지정하면 사용자 또는 디바이스가 중복될 가능성이 있으므로 수가 달라집니다. 앱의 각 인스턴스는 중복 사용자를 계산하지만 검색된 앱은 중복된 수를 갖습니다.
 - 검색된 앱과 앱 상태가 서로 다른 시간 간격으로 수집되어 앱 수가 달라지게 됩니다.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 997cf043f8ea61133d6e61f4584ad9349aedbf73
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 68e2e768067a88b8ae58adeb38c17d90ac995a30
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060035"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781229"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune에 웹앱 추가
 
@@ -33,21 +33,22 @@ Intune은 웹앱을 포함하여 다양한 앱 유형을 지원합니다. 웹앱
 
 사용자의 앱을 관리하고 할당하려면 먼저 Intune에 앱을 추가합니다. 
 
-Intune이 사용자의 디바이스에 웹앱 바로 가기를 만듭니다. iOS 디바이스의 경우 웹앱에 대한 바로 가기가 홈 화면에 추가됩니다. Android 장치의 경우 웹앱에 대한 바로 가기가 Intune 회사 포털 위젯에 추가되고 사용자가 위젯을 수동으로 고정해야 합니다. Windows 디바이스의 경우 웹앱에 대한 바로 가기가 시작 메뉴에 배치됩니다.
+Intune이 사용자의 디바이스에 웹앱 바로 가기를 만듭니다. iOS 디바이스의 경우 웹앱에 대한 바로 가기가 홈 화면에 추가됩니다. Android 디바이스 관리자 디바이스의 경우 웹앱에 대한 바로 가기가 Intune 회사 포털 위젯에 추가되고 사용자가 위젯을 수동으로 고정해야 합니다. Windows 디바이스의 경우 웹앱에 대한 바로 가기가 시작 메뉴에 배치됩니다.
 
 > [!Note]
 > 웹앱을 시작하려면 사용자의 디바이스에 브라우저가 설치되어 있어야 합니다. 
 
+> [!Note]
+> Android Enterprise 디바이스에 대해서는 [관리형 Google Play 웹 링크](apps-add-android-for-work.md#managed-google-play-web-links)를 참조하세요.
+
 ## <a name="add-a-web-app-to-intune"></a>Intune에 웹앱 추가
 Intune에 앱을 웹용 앱의 바로 가기로 추가하려면 다음 작업을 수행하세요.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-4. **클라이언트 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
-5. **앱** 창에서 **추가**를 선택합니다.
-6. **앱 추가** 창의 **앱 유형** 드롭다운 목록에서 **웹 링크** 유형을 선택합니다.
-7. **구성**을 선택합니다.
-8. **앱 정보** 창에서 다음 정보를 추가합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
+3. **앱 추가** 창의 **앱 유형** 드롭다운 목록에서 **웹 링크** 유형을 선택합니다.
+4. **구성**을 선택합니다.
+5. **앱 정보** 창에서 다음 정보를 추가합니다.
     - **이름**:  회사 포털에 표시하려는 앱 이름을 입력합니다. 
 
         > [!NOTE]
@@ -60,12 +61,10 @@ Intune에 앱을 웹용 앱의 바로 가기로 추가하려면 다음 작업을
     - **회사 포털에서 이 항목을 추천 앱으로 표시**: 사용자가 앱을 찾아볼 때 회사 포털의 기본 페이지에 앱 제품군을 눈에 띄게 표시하려면 이 옵션을 선택합니다.
     - **이 링크를 열려면 Managed Browser가 필요**: Intune Managed Browser에서 열 수 있는 웹 사이트 또는 웹앱 링크를 사용자에게 할당하려면 이 옵션을 선택합니다. 이 브라우저는 디바이스에 설치되어 있어야 합니다.
     - **로고**: 앱과 연결할 아이콘을 업로드합니다. 사용자가 회사 포털을 찾아볼 때 이 아이콘이 앱과 함께 표시됩니다.
-9. **확인**을 선택합니다.
-10. **앱 추가** 창에서 **추가**를 선택합니다.
+6. **확인**을 선택합니다.
+7. **앱 추가** 창에서 **추가**를 선택합니다.
 
 > [!Note]
-> 사용자는 자신의 홈 화면에 Intune 위젯을 추가하여 Android 디바이스에 할당된 웹앱을 표시해야 합니다.
->
 > 현재, iOS 디바이스로 Intune 웹앱 배포는 관리 프로필과 연결되어 있어 수동으로 제거할 수 없습니다. Intune 포털에서 배포 유형을 **제거**로 변경하면 웹앱을 자동으로 제거할 수 있습니다. 그러나 앱 할당 의도를 **제거**로 변경하기 전에 배포를 제거하면 디바이스가 Intune에서 등록 취소될 때까지 웹앱은 영구히 남아 있습니다.
 
 최종 사용자는 웹앱을 선택한 다음 **브라우저에서 열기** 옵션을 선택하여 Windows 회사 포털 앱에서 직접 웹앱을 시작할 수 있습니다. 게시된 웹 URL이 웹 브라우저에서 직접 열립니다. 

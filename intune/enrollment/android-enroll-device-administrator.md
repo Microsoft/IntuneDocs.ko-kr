@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08193aa329a1bee4e66638de5c0d7518d15db2a4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 678eb92bb6f5f23756092cd5d9cc1a645e1e8db3
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547922"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562364"
 ---
 # <a name="android-device-administrator-enrollment"></a>Android 디바이스 관리자 등록
 
@@ -49,7 +49,7 @@ Google의 Android Enterprise 기능에 대한 자세한 내용은 다음 문서�
 ## <a name="set-up-device-administrator-enrollment"></a>디바이스 관리자 등록 설정
 
 1. 모바일 디바이스 관리를 준비하려면 MDM 기관을 **Microsoft Intune**으로 설정해야 합니다. 지침은 [MDM 기관 설정](../fundamentals/mdm-authority-set.md)을 참조하세요. 이 항목은 모바일 디바이스 관리에 대해 Intune을 처음 설정할 때 한 번만 설정하면 됩니다.
-2. **Intune** > **디바이스 등록** > **Android 등록** > **디바이스 관리 권한이 있는 개인 및 회사 소유 디바이스** > **디바이스 관리자를 사용하여 디바이스를 관리합니다.** 로 이동합니다.
+2. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **디바이스** > **Android** > **Android 등록** > **디바이스 관리 권한이 있는 개인 및 회사 소유 디바이스** > **디바이스 관리자를 사용하여 디바이스를 관리합니다.** 로 이동합니다.
 3. [사용자에게 디바이스를 등록하는 방법을 알려 줍니다](/intune-user-help/enroll-your-device-in-intune-android).  
 
 사용자가 등록한 후 [규정 준수 정책 할당](../protect/compliance-policy-create-android.md), [앱 관리](../apps/app-management.md) 등을 포함한 Intune에서 디바이스 관리를 시작할 수 있습니다.

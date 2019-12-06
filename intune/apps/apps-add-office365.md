@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635380"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563671"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 추가
 
@@ -49,11 +49,9 @@ ms.locfileid: "73635380"
 
 ## <a name="get-started"></a>시작
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-4. **클라이언트 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다.
-5. **추가**를 선택합니다.
-6. **앱 추가** 창의 **앱 유형** 목록에 있는 **Office 365 제품군** 아래에서 **Windows 10**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
+3. **앱 추가** 창의 **앱 유형** 목록에 있는 **Office 365 제품군** 아래에서 **Windows 10**을 선택합니다.
 
 ## <a name="select-settings-format"></a>설정 형식 선택
 
@@ -61,13 +59,13 @@ ms.locfileid: "73635380"
 - 구성 디자이너
 - XML 데이터 입력
 
-**구성 디자이너**를 선택하면 **앱 추가** 블레이드가 다음과 같은 두 가지 추가 설정 옵션을 제공하도록 변경됩니다.
+**구성 디자이너**를 선택하면 **앱 추가** 창이 다음과 같은 두 가지 추가 설정 옵션을 제공하도록 변경됩니다.
 - 앱 제품군 구성
 - 앱 제품군 설정
 
 <img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-**XML 데이터 입력**을 선택하면 **앱 추가** 블레이드에 **XML 데이터 입력** 옵션이 표시됩니다. 이 옵션을 선택하면 **구성 파일** 블레이드가 표시됩니다. 
+**XML 데이터 입력**을 선택하면 **앱 추가** 창에 **XML 데이터 입력** 옵션이 표시됩니다. 이 옵션을 선택하면 **구성 파일** 창이 표시됩니다. 
 
 ![Office 365 구성 디자이너 추가](./media/apps-add-office365/apps-add-office365-01.png)
     
@@ -94,7 +92,7 @@ ms.locfileid: "73635380"
 
 ## <a name="configure-app-suite"></a>앱 제품군 구성
 
-**설정 형식** 드롭다운 상자에서 **구성 디자이너**를 선택한 경우 **앱 추가** 블레이드에 **앱 제품군 구성** 옵션이 표시됩니다. 디바이스에 할당할 Office 앱을 선택합니다.
+**설정 형식** 드롭다운 상자에서 **구성 디자이너**를 선택한 경우 **앱 추가** 창에 **앱 제품군 구성** 옵션이 표시됩니다. 디바이스에 할당할 Office 앱을 선택합니다.
 
 1. **앱 추가** 창에서 **앱 제품군 구성**을 선택합니다.
 2. **앱 제품군 구성** 창에서 디바이스에 할당할 표준 Office 앱을 선택합니다.  
@@ -103,7 +101,7 @@ ms.locfileid: "73635380"
 
 ## <a name="configure-app-suite-settings"></a>앱 제품군 설정 구성
 
-**설정 형식** 드롭다운 상자에서 **구성 디자이너**를 선택한 경우 **앱 추가** 블레이드에 **앱 제품군 설정** 옵션이 표시됩니다. 이 단계에서는 앱 패키지에 대한 설치 옵션을 구성합니다. 설정은 제품군에 추가한 모든 앱에 적용됩니다.
+**설정 형식** 드롭다운 상자에서 **구성 디자이너**를 선택한 경우 **앱 추가** 창에 **앱 제품군 설정** 옵션이 표시됩니다. 이 단계에서는 앱 패키지에 대한 설치 옵션을 구성합니다. 설정은 제품군에 추가한 모든 앱에 적용됩니다.
 
 1. **앱 추가** 창에서 **앱 제품군 설정**을 선택합니다.
 2. **앱 제품군 설정** 창에서 다음을 수행합니다.
@@ -126,7 +124,7 @@ ms.locfileid: "73635380"
     - **앱 최종 사용자 사용권 계약에 자동으로 동의**: 최종 사용자가 사용권 계약에 동의하도록 요구하지 않으려는 경우 이 옵션을 선택합니다. Intune에서 자동으로 계약에 동의합니다.
     - **공유 컴퓨터 인증 사용**: 여러 사용자가 컴퓨터를 공유할 경우 이 옵션을 선택합니다. 자세한 내용은 [Office 365의 공유 컴퓨터 인증 개요](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)를 참조하세요.
     - **언어**: Office는 최종 사용자 디바이스에 Windows와 함께 설치된 지원 언어로 자동으로 설치됩니다. 앱 패키지와 함께 추가 언어를 설치하려면 이 옵션을 선택합니다. <p></p>
-    Intune을 통해 관리되는 Office 365 Pro Plus 앱의 추가 언어를 배포할 수 있습니다. 사용 가능한 언어 목록에는 언어 팩 **유형**(코어, 부분 및 언어 교정)이 포함되어 있습니다. Azure Portal에서 **Microsoft Intune** > **클라이언트 앱** > **앱** > **추가**를 차례로 선택합니다. **앱 추가** 블레이드의**앱 유형** 목록에 있는 **Office 365 제품군** 아래에서 **Windows 10**을 선택합니다. **앱 제품군 설정** 블레이드에서 **언어**를 선택합니다. 추가 정보는 [Office 365 ProPlus의 언어 배포 개요](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)를 참조하세요.
+    Intune을 통해 관리되는 Office 365 Pro Plus 앱의 추가 언어를 배포할 수 있습니다. 사용 가능한 언어 목록에는 언어 팩 **유형**(코어, 부분 및 언어 교정)이 포함되어 있습니다. Azure Portal에서 **Microsoft Intune** > **앱** > **앱 추가** > **추가**를 차례로 선택합니다. **앱 추가** 창의 **앱 유형** 목록에 있는 **Office 365 제품군** 아래에서 **Windows 10**을 선택합니다. **앱 제품군 설정** 창에서 **언어**를 선택합니다. 추가 정보는 [Office 365 ProPlus의 언어 배포 개요](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)를 참조하세요.
 
 ## <a name="select-scope-tags-optional"></a>범위 태그 선택(선택 사항)
 범위 태그를 사용하여 Intune에서 클라이언트 앱 정보를 볼 수 있는 사용자를 결정할 수 있습니다. 범위 태그에 대한 자세한 내용은 [분산형 IT에 역할 기반 액세스 제어 및 범위 태그 사용](../fundamentals/scope-tags.md)을 참조하세요.
@@ -138,7 +136,7 @@ ms.locfileid: "73635380"
 
 ## <a name="enter-xml-format"></a>XML 형식 입력
 
-**설정 형식** 드롭다운 상자에서 **XML 데이터 입력**을 선택한 경우 **앱 추가** 블레이드에 **XML 형식 입력** 옵션이 표시됩니다. 자세한 내용은 [Office 배포 도구의 구성 옵션](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)을 참조하세요.
+**설정 형식** 드롭다운 상자에서 **XML 데이터 입력**을 선택한 경우 **앱 추가** 창에 **XML 형식 입력** 옵션이 표시됩니다. 자세한 내용은 [Office 배포 도구의 구성 옵션](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)을 참조하세요.
 
 ## <a name="finish-up"></a>끝내기
 

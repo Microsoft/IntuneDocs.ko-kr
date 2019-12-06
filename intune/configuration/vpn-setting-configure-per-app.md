@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36039334f7e93b66735e10d0ac2c5d80602e2b83
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: f0cd3dd71a5999b69e3f5c34ef4cc73fb3d6a938
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059867"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781161"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune에서 iOS 디바이스용 앱당 VPN(가상 프라이빗 네트워크) 설정
 
@@ -37,6 +37,9 @@ VPN이 앱당 VPN을 지원하는지 확인하려면 VPN 공급 기업의 설명
 이 문서에서는 앱당 VPN 프로필을 만들고 앱에 이 프로필을 할당하는 방법을 보여 줍니다. 이러한 단계를 사용하여 최종 사용자에 대한 원활한 앱당 VPN 환경을 만들 수 있습니다. 앱당 VPN을 지원하는 대부분의 VPN의 경우 사용자는 앱을 열면 자동으로 VPN에 연결됩니다.
 
 일부 VPN은 앱당 VPN을 통해 사용자 이름 및 암호 인증을 허용합니다. 즉, 사용자는 VPN에 연결하려면 사용자 이름 및 암호를 입력해야 합니다.
+
+> [!IMPORTANT]
+> iOS용 IKEv2 VPN 프로필에는 앱별 VPN이 지원되지 않습니다.
 
 ## <a name="per-app-vpn-with-zscaler"></a>Zscaler를 사용한 앱당 VPN
 

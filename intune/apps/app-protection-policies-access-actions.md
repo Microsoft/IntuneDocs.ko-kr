@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984027"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564130"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune에서 앱 보호 정책 조건부 시작 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -33,16 +33,16 @@ Intune 앱 보호 정책을 사용하면 최종 사용자가 회사 앱 또는 �
 
 ## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>조건부 시작 작업을 사용하여 앱 보호 정책 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱** > **앱 보호 정책**을 선택합니다.
-4. **정책 추가**(기존 정책을 편집할 수도 있음)를 클릭합니다. 
-5. **필요한 설정 구성**을 클릭하여 정책에 대해 구성할 수 있는 설정 목록을 볼 수 있습니다. 
-6. [설정] 창에서 아래로 스크롤하면 편집 가능한 테이블이 있는 **조건부 시작**이라는 섹션이 표시됩니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **앱 보호 정책**을 선택합니다.
+3. **정책 만들기**를 클릭하고 정책에 대한 디바이스의 플랫폼을 선택합니다. 
+4. **필요한 설정 구성**을 클릭하여 정책에 대해 구성할 수 있는 설정 목록을 볼 수 있습니다. 
+5. [설정] 창에서 아래로 스크롤하면 편집 가능한 테이블이 있는 **조건부 시작**이라는 섹션이 표시됩니다.
 
     ![Intune 앱 보호 액세스 작업의 스크린샷](./media/app-protection-policies-access-actions/apps-selective-wipe-access-actions01.png)
 
-7. **설정**을 선택하고 사용자가 회사 앱에 로그인하기 위해 충족해야 하는 **값**을 입력합니다. 
-8. 사용자가 요구 사항을 충족하지 않을 경우 **작업**을 선택합니다. 경우에 따라 단일 설정에 대해 여러 작업을 구성할 수 있습니다. 자세한 내용은 [앱 보호 정책을 만들고 할당하는 방법](app-protection-policies.md)을 참조하세요.
+6. **설정**을 선택하고 사용자가 회사 앱에 로그인하기 위해 충족해야 하는 **값**을 입력합니다. 
+7. 사용자가 요구 사항을 충족하지 않을 경우 **작업**을 선택합니다. 경우에 따라 단일 설정에 대해 여러 작업을 구성할 수 있습니다. 자세한 내용은 [앱 보호 정책을 만들고 할당하는 방법](app-protection-policies.md)을 참조하세요.
 
 ## <a name="policy-settings"></a>정책 설정 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507470"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564355"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune 앱 관리란?
 
@@ -76,14 +76,14 @@ Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 �
 
 ## <a name="get-started"></a>시작
 
-대부분의 앱 관련 정보는 다음과 같이 수행하여 액세스할 수 있는 **클라이언트 앱** 워크로드에서 확인할 수 있습니다.
+대부분의 앱 관련 정보는 다음과 같이 액세스할 수 있는 **앱** 워크로드에서 확인할 수 있습니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Microsoft Intune** 창에서 **클라이언트 앱**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+3. **앱**을 선택합니다.
 
-    !["클라이언트 앱" 워크로드 창](./media/app-management/apps-workload.png)
+    ![앱 워크로드 창](./media/app-management/apps-workload.png)
 
-다음 네 개의 섹션에서는 **클라이언트 앱** 창에서 사용할 수 있는 옵션에 대해 설명합니다.
+다음 네 개의 섹션에서는 **앱** 창에서 사용할 수 있는 옵션에 대해 설명합니다.
 
 ### <a name="manage"></a>관리
 - **앱**: 직원이 사용하는 앱을 추가하고, 보고, 할당하고, 모니터링하려면 이 옵션을 선택합니다. 자세한 내용은 다음을 참조하십시오.

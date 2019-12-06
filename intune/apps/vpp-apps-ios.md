@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9a37a1dd815b6ec9d7522604796310e7f0b5ce
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984100"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563819"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Apple Volume Purchase Program을 통해 구매한 iOS 및 macOS 앱을 관리하는 방법
 
@@ -82,8 +82,8 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP 토큰을 가져와 업로드하려면
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창의 **설정** 아래에서 **클라이언트 앱** > **Apple VPP 토큰**을 차례로 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+3. **테넌트 관리** > **커넥터 및 토큰** > **Apple VPP 토큰**을 선택합니다.
 4. VPP 토큰 목록 창에서 **만들기**를 선택합니다.
 5. **VPP 토큰 만들기** 창에서 다음 정보를 지정합니다.
     - **VPP 토큰 파일** - 아직 수행하지 않은 경우 비즈니스용 Volume Purchase Program 또는 교육용 Volume Purchase Program에 등록합니다. 등록한 후 계정에 대한 Apple VPP 토큰을 다운로드하여 선택합니다.
@@ -110,7 +110,7 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 
 ## <a name="to-assign-a-volume-purchased-app"></a>대량 구매 앱을 할당하려면
 
-1. **Intune** 창의 **관리** 아래에서 **클라이언트 앱** > **앱**을 차례로 선택합니다.
+1. **앱** > **모든 앱**을 선택합니다.
 2. 앱 목록 창에서 할당할 앱을 선택한 다음, **할당**을 선택합니다.
 3. ***앱 이름*** - **할당**에서 **그룹 선택**을 선택한 다음, **그룹 추가** 창에서 **할당 형식**을 선택하고, 앱을 할당하려는 Azure AD 사용자 또는 디바이스 그룹을 선택합니다.
 5. 선택한 각 그룹에 대해 다음 설정을 선택합니다.
@@ -176,8 +176,8 @@ Apple Volume Purchase Program 포털에서 새로운 토큰을 다운로드하�
 
 Intune에서 사용자 지정 관리자 역할에 할당된 사용 권한을 사용하여 Apple VPP 토큰 및 VPP 앱에 대한 액세스를 독립적으로 제어할 수 있습니다.
 
-* Intune 사용자 지정 역할로 **클라이언트 앱** > **Apple VPP 토큰**에서 Apple VPP 토큰을 관리하도록 허용하려면 **관리되는 앱**에 대한 권한을 할당합니다.
-* Intune 사용자 지정 역할로 **클라이언트 앱** > **Apple**에서 iOS VPP 토큰을 사용하여 구입한 앱을 관리하도록 허용하려면 **관리되는 앱**에 대한 권한을 할당합니다. 
+* Intune 사용자 지정 역할로 **앱** > **Apple VPP 토큰**에서 Apple VPP 토큰을 관리하도록 허용하려면 **관리되는 앱**에 대한 권한을 할당합니다.
+* Intune 사용자 지정 역할로 **앱** > **모든 앱**에서 iOS VPP 토큰을 사용하여 구입한 앱을 관리하도록 허용하려면 **모바일 앱**에 대한 권한을 할당합니다. 
 
 ## <a name="additional-information"></a>추가 정보
 
@@ -196,7 +196,7 @@ Intune 포털에 **외부 MDM에 할당됨**이 표시되는 경우 관리자는
 예. Intune 관리자는 앱을 초과 구독할 수 있습니다. 예를 들어 관리자가 XYZ 앱에 대한 100개의 라이선스를 구입한 다음, 500명의 멤버를 포함한 그룹에 앱을 대상으로 지정하는 경우 처음 100명의 멤버(사용자 또는 디바이스)는 라이선스를 할당받습니다. 그리고 나머지 멤버는 라이선스 할당에 실패합니다.
 
 ### <a name="how-frequently-does-intune-sync-vpp-tokens-with-apple"></a>Intune이 VPP 토큰을 Apple과 동기화하는 빈도
-Intune에서는 Apple과 하루에 두 번 VPP 토큰과 라이선스를 동기화합니다. Intune 관리자는 **클라이언트 앱** > **Apple VPP 토큰**에서 수동 동기화를 시작할 수 있습니다.
+Intune에서는 Apple과 하루에 두 번 VPP 토큰과 라이선스를 동기화합니다. Intune 관리자는 **앱** > **Apple VPP 토큰**에서 수동 동기화를 시작할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

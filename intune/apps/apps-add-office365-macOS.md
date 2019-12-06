@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796b1709260c7f507e78aa8404129fa996b59088
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498818"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564070"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 macOS 디바이스에 Office 365 할당
 
@@ -41,14 +41,12 @@ macOS 디바이스에 Office 365를 추가하기 전에 다음 세부 정보를 
 ## <a name="create-and-configure-the-app-suite"></a>앱 패키지 만들기 및 구성
 
 **앱** 창에서 Office 365를 추가합니다.
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-4. **클라이언트 앱** 워크로드 창의 **관리** 아래에서 **앱**을 선택합니다. 
-5. **추가**를 선택합니다.
-6. **앱 유형** 목록의 **Office 365 제품군** 그룹에서 **macOS**를 선택합니다.
-7. 앱 제품군에 대한 정보를 가져오려면 **앱 제품군 정보**를 선택합니다.  
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
+3. **앱 유형** 목록의 **Office 365 제품군** 그룹에서 **macOS**를 선택합니다.
+4. 앱 제품군에 대한 정보를 가져오려면 **앱 제품군 정보**를 선택합니다.  
     이 정보를 사용하여 Intune에서 앱 제품군을 식별할 수 있으며, 사용자가 회사 포털에서 앱 제품군을 찾을 수도 있습니다.
-8. 다음 정보를 입력합니다.
+5. 다음 정보를 입력합니다.
     - **제품군 이름**: 회사 포털에 표시되는 앱 제품군의 이름을 입력합니다. 사용하는 모든 제품군 이름이 고유한지 확인합니다. 같은 앱 패키지 이름이 두 번 나타나는 경우 앱 중 하나만 회사 포털에서 사용자에게 표시됩니다.
     - **제품군 설명**: 앱 제품군에 대한 설명을 입력합니다.
     - **게시자**: Microsoft가 게시자로 표시됩니다.
@@ -60,8 +58,8 @@ macOS 디바이스에 Office 365를 추가하기 전에 다음 세부 정보를 
     - **소유자**: Microsoft가 소유자로 표시됩니다.
     - **메모**: 선택 사항으로, 이 앱과 연결할 모든 메모를 입력합니다.
     - **로고**: Office 365 로고는 사용자가 회사 포털을 찾을 때 앱과 함께 표시되는 로고입니다.
-9. **확인**을 선택합니다.
-10. **앱 추가** 창에서 **추가**를 선택합니다.  
+6. **확인**을 선택합니다.
+7. **앱 추가** 창에서 **추가**를 선택합니다.  
     패키지가 앱 목록에 단일 항목으로 표시됩니다.
 
 ## <a name="configure-app-assignments"></a>앱 할당 구성

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6726f731fba5bc41893f999ac627bff9a8aca1e
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754845"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563577"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Microsoft Intune을 사용하여 macOS 디바이스에 Microsoft Edge 추가
 
@@ -40,15 +40,15 @@ ms.locfileid: "73754845"
 ## <a name="add-microsoft-edge-to-intune"></a>Intune에 Microsoft Edge 추가
 다음 단계를 사용하여 Microsoft Edge 버전 77 이상을 Intune에 추가할 수 있습니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **Intune** 창에서 **클라이언트 앱** > **앱** > **추가**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > **추가**를 선택합니다.
 3. **Microsoft Edge 버전 77 이상** 아래 **앱 유형**에서 **macOS**를 선택합니다.
 
 ## <a name="configure-app-information"></a>앱 정보 구성
 이 단계에서는 이 앱 배포에 대한 정보를 제공합니다. 이 정보를 통해 Intune에서 앱을 식별하며 사용자가 회사 포털에서 앱을 찾을 수 있습니다.
 
-1. **앱 정보**를 클릭하여 **앱 정보** 블레이드를 표시합니다.
-2. **앱 정보** 블레이드에서 이 앱 배포에 대한 정보를 제공합니다. 이 정보를 통해 Intune에서 앱을 식별하며 사용자가 회사 포털에서 앱을 찾을 수 있습니다.
+1. **앱 정보**를 클릭하여 **앱 정보** 창을 표시합니다.
+2. **앱 정보** 창에서 이 앱 배포에 대한 정보를 제공합니다. 이 정보를 통해 Intune에서 앱을 식별하며 사용자가 회사 포털에서 앱을 찾을 수 있습니다.
     - **이름**: 회사 포털에 표시되는 앱의 이름을 입력합니다. 모든 이름이 고유한지 확인합니다. 동일한 앱 이름을 두 번 사용하는 경우에는 회사 포털에서 앱 중 하나만 사용자에게 표시됩니다.
     - **설명**: 앱에 대한 설명을 입력합니다. 예를 들어 설명에 대상 사용자를 나열할 수 있습니다.
     - **게시자**: Microsoft가 게시자로 표시됩니다.
@@ -64,8 +64,8 @@ ms.locfileid: "73754845"
 ## <a name="configure-microsoft-edge-settings"></a>Microsoft Edge 설정 구성
 이 단계에서는 앱에 대한 설치 옵션을 구성합니다.
 
-1. **앱 추가** 블레이드에서 **앱 설정**을 선택합니다.
-2. **앱 설정** 블레이드에서 **베타** 채널이 자동으로 선택되며 변경할 수 없습니다.
+1. **앱 추가** 창에서 **앱 설정**을 선택합니다.
+2. **앱 설정** 창에서 **베타** 채널이 자동으로 선택되며 변경할 수 없습니다.
     - **베타** 채널은 가장 안정적인 Microsoft Edge 미리 보기 환경이며 조직 내에서 전체 파일럿에 대한 가장 적합한 선택입니다. 6주마다 주요 업데이트를 포함합니다.
 
     > [!NOTE]
@@ -80,7 +80,7 @@ ms.locfileid: "73754845"
 4.  **선택** > **확인**을 클릭합니다.
 
 ## <a name="add-the-app"></a>앱 추가
-구성을 완료한 후 **App 앱** 블레이드에서 **추가**를 선택합니다. 
+구성을 완료한 후 **App 앱** 창에서 **추가**를 선택합니다. 
 
 만든 앱이 앱 목록에 표시되며, 여기서 이 앱을 선택한 그룹에 할당할 수 있습니다. 
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
+ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059889"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74694950"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필을 사용하여 디바이스에서 기능 및 설정 적용
 
@@ -49,7 +49,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이 구성 프로필�
 
 이 기능은 다음을 지원합니다.
 
-- 지원되는 펌웨어의 Windows 10 1809 이상
+- Windows 10 이상
 
 ## <a name="certificates"></a>인증서
 
@@ -102,7 +102,7 @@ DFCI([디바이스 펌웨어 구성 인터페이스](device-firmware-configurati
 
 이 기능은 다음을 지원합니다.
 
-- Windows 10 이상
+- 지원되는 펌웨어의 Windows 10 1809 이상
 
 ## <a name="device-restrictions"></a>디바이스 제한 사항
 

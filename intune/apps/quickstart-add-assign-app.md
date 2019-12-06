@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afd51fe27feb0c058ba703ed11e4a15a5ea2f0d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813415"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563423"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>빠른 시작: 클라이언트 앱 추가 및 할당
 
@@ -44,7 +44,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](../fundamentals/free-tri
 Intune이 앱의 측면을 관리할 수 있도록 앱을 포함할 수 있습니다. 
 
 다음 단계에 따라 Intune에 앱을 추가할 수 있습니다.
-1. [Intune](https://aka.ms/intuneportal)에서 **클라이언트 앱** > **앱** > **추가**를 선택합니다. 
+1. [Intune](https://aka.ms/intuneportal)에서 **앱** > **모든 앱** > **추가**를 선택합니다. 
 2. **앱 유형** 드롭다운 상자의 **Office 365 제품군** 섹션에서 **Windows 10**을 선택합니다.
 3. **앱 제품군 구성**을 선택하여 Intune 사용자에게 할당할 Office 앱을 선택합니다.
 4. **확인**을 클릭하여 기본 선택 앱을 적용합니다.
@@ -68,9 +68,9 @@ Microsoft Intune에 앱을 추가한 후 사용자와 다바이스 그룹에 해
 > 이 빠른 시작은 이 시리즈의 이전 빠른 시작에서 빌드합니다. 자세한 정보는 이 빠른 시작의 [필수 구성 요소](quickstart-add-assign-app.md#prerequisites)를 참조하세요.
 
 다음 단계에 따라 그룹에 앱을 할당합니다.
-1. [Intune](https://aka.ms/intuneportal)에서 **클라이언트 앱** > **앱**을 선택합니다. 
+1. [Intune](https://aka.ms/intuneportal)에서 **앱** > **모든 앱**을 선택합니다. 
 2. 그룹에 할당하려는 앱을 선택합니다.
-3. **할당** > **그룹 추가**를 클릭하여 **그룹 추가** 블레이드를 표시합니다.
+3. **할당** > **그룹 추가**를 클릭하여 **그룹 추가** 창을 표시합니다.
 4. **할당 유형** 드롭다운 상자에서 **등록된 디바이스에 사용 가능**을 선택합니다. 
 5. **포함된 그룹** > **포함할 그룹 선택** > **Contoso 테스터**를 클릭합니다.
 6. **선택** > **확인** > **확인** > **저장**을 클릭하여 그룹을 할당합니다.

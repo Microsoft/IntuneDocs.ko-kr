@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a62a048ebb15bac620ad9aad57ed3903e9568cf
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 1c574714b4bd4f748c2dbe898555de35b0e03190
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712975"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691833"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager를 통해 iOS 디바이스 등록 설정
 
@@ -48,9 +48,9 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>1단계. Apple 토큰을 만드는 데 필요한 Intune 공개 키 인증서 다운로드
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** > **추가**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰** > **추가**를 선택합니다.
 
-   ![등록 프로그램 토큰을 가져옵니다.](./media/apple-school-manager-set-up-ios/image01.png)
+   ![등록 프로그램 토큰을 가져옵니다.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. **등록 프로그램 토큰** 블레이드에서 **공개 키 다운로드**를 선택하여 암호화 키(.pem) 파일을 다운로드하고 로컬로 저장합니다. .pem 파일은 Apple School Manager 포털에서 트러스트 관계 인증서를 요청하는 데 사용됩니다.
      ![등록 프로그램 토큰 블레이드입니다.](./media/apple-school-manager-set-up-ios/image02.png)
@@ -81,7 +81,7 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 등록 프로필 만들기
 이제 토큰을 설치했으므로 Apple School 디바이스의 등록 프로필을 만들 수 있습니다. 디바이스 등록 프로필은 등록 중에 디바이스 그룹에 적용되는 설정을 정의합니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택합니다.
 2. 토큰을 선택하고 **프로필**을 선택한 다음 **프로필 만들기**를 선택합니다.
 
 3. **프로필 만들기**에서 관리 목적으로 프로필의 **이름** 및 **설명**을 입력합니다. 사용자는 이러한 세부 정보를 볼 수 없습니다. 이 **이름** 필드를 사용하여 Azure Active Directory에 동적 그룹을 만들 수 있습니다. 이 등록 프로필로 디바이스를 할당하기 위해 프로필 이름을 사용하여 enrollmentProfileName 매개 변수를 정의합니다. [Azure Active Directory 동적 그룹](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices)에 대해 자세히 알아보세요.
@@ -155,7 +155,7 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
 ## <a name="connect-school-data-sync"></a>학교 데이터 동기화 연결
 (선택 사항) Apple School Manager에서는 Microsoft SDS(학교 데이터 동기화)를 사용하여 학급 명단 데이터를 Azure AD(Active Directory)에 동기화할 수 있습니다. 하나의 토큰만 SDS와 동기화할 수 있습니다. 학교 데이터 동기화를 사용하여 다른 토큰을 설정하면 이전에 SDS가 설정된 토큰에서 SDS가 제거됩니다. 새 연결이 현재 토큰을 대체합니다. SDS를 사용하여 학교 데이터를 동기화하려면 다음 단계를 완료하세요.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택합니다.
 2. Apple School Manager 토큰을 선택한 다음 **학교 데이터 동기화**를 선택합니다.
 3. **학교 데이터 동기화**에서 **허용**을 선택합니다. Intune은 이 설정을 통해 Office 365에서 SDS와 연결할 수 있습니다.
 4. Apple School Manager와 Azure AD 간의 연결을 사용하도록 설정하려면 **Microsoft School Data Sync 설정**을 선택합니다. [학교 데이터 동기화를 설정하는 방법](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)에 대해 자세히 알아보세요.
@@ -165,7 +165,7 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
 
 Intune에 Apple School Manager 디바이스 관리 권한이 할당된 후 Intune을 Apple 서비스와 동기화하여 Intune에서 관리 디바이스를 확인합니다.
 
-[Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택한 후 **디바이스** > **동기화**를 선택합니다. ![등록 프로그램 디바이스 노드 및 동기화 링크의 스크린샷](./media/apple-school-manager-set-up-ios/image06.png)
+[Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택한 후 **디바이스** > **동기화**를 선택합니다. ![등록 프로그램 디바이스 노드 및 동기화 링크의 스크린샷](./media/apple-school-manager-set-up-ios/image06.png)
 
 허용되는 등록 프로그램 트래픽에 대한 Apple 약관을 준수하기 위해 Intune에서는 다음과 같은 제한 사항을 적용합니다.
 - 전체 동기화는 7일마다 한 번씩만 실행할 수 있습니다. 전체 동기화 동안 Intune은 Intune에 할당된 모든 Apple 일련 번호를 새로 고칩니다. 전체 동기화를 이전 전체 동기화의 7일 이내에 시도하는 경우 Intune은 Intune에 나열되지 않은 일련 번호만 새로 고칩니다.
@@ -178,7 +178,7 @@ Intune에 Apple School Manager 디바이스 관리 권한이 할당된 후 Intun
 ## <a name="assign-a-profile-to-devices"></a>디바이스에 프로필 할당
 Intune에서 관리하는 Apple School Manager 디바이스를 등록하려면 등록 프로필을 할당해야 합니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택합니다.
 2. **디바이스**를 선택하고 목록에서 디바이스를 선택한 다음 **프로필 할당**을 선택합니다.
 3. **프로필 할당**에서 디바이스의 프로필을 선택한 다음, **할당**을 선택합니다.
 

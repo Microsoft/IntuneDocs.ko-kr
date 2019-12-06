@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e404f6591eb042fa4d035f3377e211a219fabe4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1dc2e2ce7e19933accdb1063ccacf99fa3f54b09
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497967"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563959"
 ---
 # <a name="configure-microsoft-launcher"></a>Microsoft 시작 관리자 구성
 
@@ -33,7 +33,7 @@ Android Enterprise 완전 관리형 디바이스에서 시작 관리자를 통�
 
 ## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>Microsoft Managed Home Screen 앱 구성 방법 
 
-Azure Portal의 Intune 콘솔로 이동하여 **클라이언트 앱** > **앱 구성 정책**으로 이동합니다. **Android**를 실행하는 **관리 디바이스**에 대한 구성 정책을 추가하고 연결된 앱으로 **Microsoft 시작 관리자**를 선택합니다. **구성 설정**을 클릭하여 사용 가능한 여러 Managed Home Screen 설정을 구성할 수 있습니다. 
+[Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)로 이동한 후 **앱** > **앱 구성 정책**을 선택합니다. **Android**를 실행하는 **관리 디바이스**에 대한 구성 정책을 추가하고 연결된 앱으로 **Microsoft 시작 관리자**를 선택합니다. **구성 설정**을 클릭하여 사용 가능한 여러 Managed Home Screen 설정을 구성할 수 있습니다. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>구성 설정 형식 선택 
 
