@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291096"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691780"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune에서 Windows 10 소프트웨어 업데이트 관리
 
@@ -214,9 +214,7 @@ Windows 업데이트 정책에 대한 자세한 내용은 Windows 클라이언�
   - **기능 업데이트 지연 기간(일)** 을 **0**으로 설정해야 합니다.
   - 업데이트 링에 대한 기능 업데이트가 *실행 중*이어야 합니다. 이를 일시 중지하면 안 됩니다.
 
-- *Windows 10 기능 업데이트* 정책은 Autopilot에서 지원되지 않습니다. Intune은 다음으로 정책을 배포하지 않습니다.
-  - Autopilot에서 프로비저닝되는 디바이스
-  - 이전에 Autopilot으로 프로비저닝했던 디바이스
+- Windows 10 기능 업데이트 정책은 OOBE(첫 실행 경험) 중에 적용될 수 없으며, 디바이스가 프로비저닝을 완료한 후(일반적으로 하루) 첫 번째 Windows 업데이트 검사 시에만 적용됩니다. 또한 AutoPilot을 사용하여 프로비저닝된 디바이스는 정책을 받지 않습니다.
 
   이러한 제한 사항을 조사하여 향후 지원 가능한지 확인합니다.
 

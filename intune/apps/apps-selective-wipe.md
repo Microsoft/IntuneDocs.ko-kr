@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e827075b56d1751e837c25d85c304201bcafa01
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 9c0ca82b434b83937c7962b2676ce3c2a12c1424
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390410"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564014"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune 관리 앱에서 회사 데이터만 초기화하는 방법
 
@@ -44,8 +44,8 @@ WIP(Windows Information Protection) 정책은 MDM 사용자가 Windows 10 디바
 
 ## <a name="create-a-wipe-request"></a>초기화 요청 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. Intune 창에서 **클라이언트 앱** > **앱 선택적 초기화** > **초기화 요청 만들기**를 선택합니다.<br>
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **앱 선택적 초기화** > **초기화 요청 만들기**를 선택합니다.<br>
    **초기화 요청 만들기** 창이 표시됩니다.
 3. **사용자 선택**을 클릭하여 앱 데이터를 초기화하려는 사용자를 선택한 다음, **사용자 선택** 창 맨 아래에서 **선택**을 클릭합니다.
 
@@ -65,7 +65,7 @@ WIP(Windows Information Protection) 정책은 MDM 사용자가 Windows 10 디바
 
 초기화 요청의 전반적인 상태를 표시하고, 보류 중인 요청 및 오류의 수가 포함된 요약된 보고서를 생성할 수 있습니다. 세부 정보를 확인하려면 다음 단계를 따릅니다.
 
-1. **클라이언트 앱** > **앱 선택적 초기화** 창에서 사용자별로 그룹화된 요청 목록을 확인할 수 있습니다. 시스템에서는 디바이스에서 실행 중인 각각의 보호된 앱에 대해 초기화 요청을 생성하므로 한 사용자에 대해 여러 요청이 표시될 수 있습니다. 상태를 통해 초기화 요청이 **보류 중**인지, **실패**했는지 아니면 **성공**했는지 확인할 수 있습니다.
+1. **앱** > **앱 선택적 초기화** 창에서 사용자별로 그룹화된 요청 목록을 확인할 수 있습니다. 시스템에서는 디바이스에서 실행 중인 각각의 보호된 앱에 대해 초기화 요청을 생성하므로 한 사용자에 대해 여러 요청이 표시될 수 있습니다. 상태를 통해 초기화 요청이 **보류 중**인지, **실패**했는지 아니면 **성공**했는지 확인할 수 있습니다.
 
     ![앱 선택적 초기화 창의 초기화 요청 상태 스크린샷](./media/apps-selective-wipe/wipe-request-status-1.png)
 

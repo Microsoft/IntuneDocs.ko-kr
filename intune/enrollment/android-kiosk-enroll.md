@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 83f0d980bc4fa1bfd0b48f87839fd6efa130aa70
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390716"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563870"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android 엔터프라이즈 전용 디바이스의 Intune 등록 설정
 
@@ -59,7 +59,7 @@ Android 엔터프라이즈 전용 디바이스 관리를 설정하려면 다음 
 
 전용 디바이스를 등록할 수 있도록 등록 프로필을 만들어야 합니다. 프로필이 만들어지면 등록 토큰(임의 문자열) 및 QR 코드를 제공합니다. Android OS 및 디바이스 버전에 따라 토큰 또는 QR 코드를 사용하여 [전용 디바이스를 등록](#enroll-the-dedicated-devices)할 수 있습니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하여 **디바이스 등록** > **Android 등록** > **회사 소유의 전용 디바이스**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하여 **디바이스** > **Android** > **Android 등록** > **회사 소유의 전용 디바이스**를 선택합니다.
 2. **만들기**를 선택하고 필수 필드를 작성합니다.
     - **이름**: 프로필을 동적 디바이스 그룹에 할당할 때 사용할 이름을 입력합니다.
     - **토큰 만료 날짜**: 토큰이 만료되는 날짜입니다. Google은 최대 90일을 적용합니다.
@@ -92,7 +92,7 @@ Android 엔터프라이즈 전용 디바이스 관리를 설정하려면 다음 
 
 토큰/QR 코드를 교체하거나 취소해도 이미 등록된 디바이스에는 영향을 주지 않습니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하여 **디바이스 등록** > **Android 등록** > **회사 소유의 전용 디바이스**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하여 **디바이스** > **Android** > **Android 등록** > **회사 소유의 전용 디바이스**를 선택합니다.
 2. 사용하려는 프로필을 선택합니다.
 3. **토큰**을 선택합니다.
 4. 토큰을 바꾸려면 **토큰 바꾸기**를 선택합니다.

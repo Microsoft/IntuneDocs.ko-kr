@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390384"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781246"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 앱 보호 정책 설정
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-이 문서에서는 iOS 디바이스에 대한 앱 보호 정책 설정을 설명합니다. 설명하는 정책 설정은 새 정책을 만들 때 Azure Portal의 **설정** 블레이드에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.
+이 문서에서는 iOS 디바이스에 대한 앱 보호 정책 설정을 설명합니다. 설명하는 정책 설정은 새 정책을 만들 때 Azure Portal의 **설정** 창에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.
 
 정책 설정에는 다음 세 가지 범주가 있습니다. *데이터 재배치*, *액세스 요구 사항* 및 *조건부 시작*. 이 문서에서 ***정책 관리 앱***이라는 용어는 앱 보호 정책으로 구성된 앱을 나타냅니다.
 
@@ -88,7 +88,7 @@ Intune 앱 보호 정책에서 특정 시나리오의 데이터 송수신을 허
 | <ul><ui> **최소 PIN 길이 선택** | PIN 시퀀스의 최소 자릿수를 지정합니다.  | **4**  |
 | <ul><ui> **액세스용 PIN 대신 Touch ID(iOS 8 이상)** | 사용자가 앱 액세스를 위해 PIN 대신 [Touch ID](https://support.apple.com/HT201371)를 사용하도록 허용하려면 **허용**을 선택합니다.    | **허용**  |
 |<ul><ui><ul><ui>**제한 시간 후 PIN으로 Touch ID 재정의**|  이 설정을 사용하려면 **필요**를 선택한 다음, 비활성 시간 제한을 구성합니다.  |**필요**  |
-| <ul><ui><ul><ui><ul><ui> **제한 시간(분 단위 비활성 시간)** |  암호 또는 숫자(구성된 대로) PIN에서 지문 사용을 재정의할 시간(분)을 지정합니다. 이 제한 시간 값은 ‘다음 시간(분) 후에 액세스 요구 사항 다시 확인’에 지정된 값보다 커야 합니다.  |**30**  |
+| <ul><ui><ul><ui><ul><ui> **제한 시간(분 단위 비활성 시간)** |  암호 또는 숫자(구성된 대로) PIN에서 액세스 방법으로 지문 또는 얼굴 사용을 재정의할 시간(분)을 지정합니다. 이 제한 시간 값은 ‘다음 시간(분) 후에 액세스 요구 사항 다시 확인’에 지정된 값보다 커야 합니다.  |**30**  |
 | <ul><ui><ul><ui>**액세스용 PIN 대신 Face ID(iOS 11 이상)** | iOS 디바이스에서 안면 인식 기술을 사용하여 사용자를 인증하도록 허용하려면 **허용**을 선택합니다. 허용하는 경우 Face ID 지원 디바이스에서 앱에 액세스하려면 Face ID를 사용해야 합니다.    | **허용**  |
 | <ul><ui>**지정 일 수가 지나면 PIN 다시 설정** | 지정한 기간(일 단위)이 지난 후 사용자에게 앱 PIN을 변경하도록 요구하려면 **예**를 선택합니다.  <br><br>*예*로 설정하면 PIN 재설정을 요구하기 전 경과 일수를 구성할 수 있습니다. |**아니요**  |  
 | <ul><ui><ul><ui> **일 수** | PIN 재설정을 요구하기 전 경과 일수를 구성합니다.  |**90**  |

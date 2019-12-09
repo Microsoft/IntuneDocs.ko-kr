@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547960"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563972"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune에서 앱 할당 포함 및 제외
 
@@ -55,34 +55,34 @@ Intune에서 포함 및 제외할 사용자 그룹을 할당하여 앱에 액세
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>앱을 할당할 때 그룹 포함 및 제외 
 포함 및 제외 할당을 사용하여 그룹에 앱을 할당하려면:
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-3. **Intune** 창에서 **클라이언트 앱**을 선택합니다.
-4. **클라이언트 앱** 창에서 **앱**을 선택합니다. 추가된 앱 목록이 표시됩니다.
-5. 할당하려는 앱을 선택합니다. 대시보드에는 앱에 대한 정보가 표시됩니다. 
-6. 메뉴의 **관리** 섹션에서 **할당**을 선택합니다. 
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱**을 선택합니다. 추가된 앱 목록이 표시됩니다.
+3. 할당하려는 앱을 선택합니다. 대시보드에는 앱에 대한 정보가 표시됩니다. 
+4. 메뉴의 **관리** 섹션에서 **할당**을 선택합니다. 
 
     ![앱을 할당할 때 앱 할당 포함](./media/apps-inc-exl-assignments/apps-inc-exl-01.png)
-7. **그룹 추가**를 선택하여 앱이 할당된 사용자 그룹을 추가합니다. 
-8. **그룹 추가** 창의 사용 가능한 할당 유형에서 **할당 유형**을 선택합니다.
-9. 할당 유형으로 **등록 유무에 상관없이 사용 가능**을 선택합니다.
+
+5. **그룹 추가**를 선택하여 앱이 할당된 사용자 그룹을 추가합니다. 
+6. **그룹 추가** 창의 사용 가능한 할당 유형에서 **할당 유형**을 선택합니다.
+7. 할당 유형으로 **등록 유무에 상관없이 사용 가능**을 선택합니다.
 
     ![Intune 앱 할당 - 그룹 추가](./media/apps-inc-exl-assignments/apps-inc-exl-02.png)
-10. **포함된 그룹**을 선택하여 이 앱을 사용할 수 있도록 하려는 사용자 그룹을 선택합니다.
+8. **포함된 그룹**을 선택하여 이 앱을 사용할 수 있도록 하려는 사용자 그룹을 선택합니다.
 
     > [!NOTE]
     > 그룹을 추가할 때 특정 할당 유형에 이미 다른 그룹이 포함되어 있으면 해당 앱은 다른 포함 할당 유형에 대해 미리 선택되며 수정할 수 없습니다. 사용된 해당 그룹은 포함된 그룹으로 사용할 수 없습니다.
 
-11. **예**를 선택하면 모든 사용자가 이 앱을 사용할 수 있습니다.
+9. **예**를 선택하면 모든 사용자가 이 앱을 사용할 수 있습니다.
 
     ![Intune 앱 할당 - 그룹 포함](./media/apps-inc-exl-assignments/apps-inc-exl-03.png)
-12. **확인**을 선택하여 포함할 그룹을 설정합니다.
-13. **제외된 그룹**을 선택하여 이 앱을 사용할 수 없도록 하려는 사용자 그룹을 선택합니다. 
-14. 제외할 그룹을 선택합니다. 이렇게 하면 해당 그룹에서 이 앱을 사용할 수 없습니다.
+10. **확인**을 선택하여 포함할 그룹을 설정합니다.
+11. **제외된 그룹**을 선택하여 이 앱을 사용할 수 없도록 하려는 사용자 그룹을 선택합니다. 
+12. 제외할 그룹을 선택합니다. 이렇게 하면 해당 그룹에서 이 앱을 사용할 수 없습니다.
 
     ![Intune 앱 할당 - 그룹 제외](./media/apps-inc-exl-assignments/apps-inc-exl-04.png)
-15. **선택**을 선택하여 그룹 선택을 완료합니다.
-16. **그룹 추가** 창에서 **확인**을 선택합니다. 앱 **할당** 목록이 표시됩니다.
-17. **저장**을 클릭하여 앱에 대한 그룹 할당을 활성화합니다.
+13. **선택**을 선택하여 그룹 선택을 완료합니다.
+14. **그룹 추가** 창에서 **확인**을 선택합니다. 앱 **할당** 목록이 표시됩니다.
+15. **저장**을 클릭하여 앱에 대한 그룹 할당을 활성화합니다.
 
 그룹을 할당할 때 이미 할당된 그룹은 수정할 수 없습니다. 현재 사용할 수 없는 그룹을 선택하려면 먼저 앱의 할당 목록에서 해당 앱을 제거합니다. 
 
