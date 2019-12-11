@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9937fc25ffa3dc32c1addbf0acc2516000b055b
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: b957857702de10e10c581364f2c34c869026810d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390891"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819755"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune 디바이스 관리란?
 
@@ -69,6 +69,7 @@ IT 관리자의 경우 관리되는 디바이스가 위험으로부터 해당 �
   - [Windows 10 PIN 재설정](device-windows-pin-reset.md)
   - [Android 원격 제어](teamviewer-support.md)
   - [디바이스 동기화](device-sync.md)
+  - [디바이스 이름 바꾸기](device-rename.md)
   - [사용자 지정 알림 보내기](custom-notifications.md#send-a-custom-notification-to-a-single-device)(Android, iOS)
   - [BitLocker 키 순환](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys)(Windows에만 해당)
 
