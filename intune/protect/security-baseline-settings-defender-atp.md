@@ -5,7 +5,7 @@ description: Microsoft Defender Advanced Threat Protection 관리를 위해 Intu
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 85d0b28de6c133ece5116dd78b1646f497ff2f6b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060064"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882331"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune에 대한 Microsoft Defender Advanced Threat Protection 기준 설정
 
@@ -593,8 +593,18 @@ Microsoft Edge를 사용하는 동안 Microsoft Defender Application Guard는 �
 - **비즈니스용 Windows Hello 구성** - *TenantId/Policies/UsePassportForWork*    
   비즈니스용 Windows Hello는 암호, 스마트 카드 및 가상 스마트 카드를 대체하여 Windows에 로그인할 수 있는 대체 방법입니다.  
 
-  - *예*로 설정 되 면이 정책을 사용 하도록 설정 하 고 장치에서 비즈니스용 Windows Hello를 프로 비전 합니다.  
-  - *구성 되지 않음*으로 설정 된 경우 기준은 장치의 정책 설정에 영향을 주지 않습니다. 즉, 장치에서 비즈니스용 Windows Hello를 사용 하지 않도록 설정한 경우 사용 하지 않도록 설정 된 상태로 유지 됩니다. 사용 하도록 설정 된 경우 사용 하도록 설정 된 상태로 유지 됩니다. 
+
+  > [!IMPORTANT]
+  > 이 설정에 대 한 옵션은 암시 된 의미에서 반대로 바뀝니다. 반대로, *예* 를 사용 하는 경우 Windows Hello를 사용 하도록 설정 하지 않고 대신 *구성 되지 않은*것으로 간주 됩니다. 이 설정이 *구성 되지 않음*으로 설정 된 경우이 기준을 수신 하는 장치에서 Windows Hello가 사용 하도록 설정 됩니다.
+  >
+  > 이 동작을 반영 하도록 다음 설명이 수정 되었습니다. 설정의 반전은이 보안 기준에 대 한 향후 업데이트에서 수정 될 예정입니다.
+
+  - *구성 되지 않음*으로 설정 된 경우 windows hello를 사용 하도록 설정 하 고 장치에서 비즈니스용 windows hello를 프로 비전 합니다.
+  - *예*로 설정 되 면 기준은 장치의 정책 설정에 영향을 주지 않습니다. 즉, 장치에서 비즈니스용 Windows Hello를 사용 하지 않도록 설정한 경우 사용 하지 않도록 설정 된 상태로 유지 됩니다. 사용 하도록 설정 된 경우 사용 하도록 설정 된 상태로 유지 됩니다.
+  <!-- expected behavior 
+  - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
+  - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   이 기준선을 통해 비즈니스용 Windows Hello를 사용 하지 않도록 설정할 수 없습니다. [Windows 등록](windows-hello.md)을 구성 하거나 [id 보호](identity-protection-configure.md)를 위한 장치 구성 프로필의 일부로 비즈니스용 windows Hello를 사용 하지 않도록 설정할 수 있습니다.  
 

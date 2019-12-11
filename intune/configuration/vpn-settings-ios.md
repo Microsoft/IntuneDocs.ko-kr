@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059810"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781144"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 디바이스에 대한 VPN 설정 추가
 
@@ -106,7 +106,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 
 ## <a name="ikev2-settings"></a>IKEv2 설정
 
-이러한 설정은**IKEv2** >  **연결 유형** 을 선택 하는 경우에 적용 됩니다.
+이러한 설정은 **IKEv2** > **연결 유형** 을 선택 하는 경우에 적용 됩니다.
 
 - **원격 식별자**: IKEv2 서버의 네트워크 IP 주소, Fqdn, userfqdn 또는 ASN1DN을 입력 합니다. 예를 들어 `10.0.0.3` 또는 `vpn.contoso.com`을 입력합니다. 일반적으로 [**연결 이름과**](#base-vpn-settings) 같은 값을 입력 합니다 (이 문서 참조). 그러나 IKEv2 서버 설정에 따라 달라 집니다.
 
@@ -179,7 +179,7 @@ Microsoft Intune에는 iOS 디바이스에 배포할 수 있는 여러 VPN 설�
 
 ## <a name="automatic-vpn-settings"></a>자동 VPN 설정
 
-- **앱당 VPN**: 앱당 VPN을 사용하도록 설정합니다. VPN 연결이 특정 앱을 열 때 자동으로 트리거될 수 있습니다. 이 VPN 프로필을 사용하여 앱을 연결할 수도 있습니다. 자세한 내용은 [iOS용 앱당 VPN을 설정하기 위한 지침](vpn-setting-configure-per-app.md)을 참조하세요.
+- **앱당 VPN**: 앱당 VPN을 사용하도록 설정합니다. VPN 연결이 특정 앱을 열 때 자동으로 트리거될 수 있습니다. 이 VPN 프로필을 사용하여 앱을 연결할 수도 있습니다. 앱 별 VPN은 IKEv2에서 지원 되지 않습니다. 자세한 내용은 [iOS용 앱당 VPN을 설정하기 위한 지침](vpn-setting-configure-per-app.md)을 참조하세요. 
   - **공급자 형식**: Pulse Secure 및 사용자 지정 VPN에 대해서만 지원됩니다.
   - Pulse Secure 또는 사용자 지정 VPN과 함께 iOS **앱당 VPN** 프로필을 사용하면 앱 계층 터널링(app-proxy) 또는 패킷 수준 터널링(packet-tunnel)을 선택합니다. **ProviderType** 값은 앱 계층 터널링의 경우 **app-proxy**로 설정하고, 패킷 계층 터널링의 경우 **packet-tunnel**로 설정합니다. 사용할 값을 모르는 경우 VPN 공급자의 설명서를 확인하세요.
   - **이 VPN을 트리거하는 Safari URL**: 하나 이상의 웹 사이트 URL을 추가합니다. 디바이스에서 Safari 브라우저를 사용하여 이러한 URL을 방문할 때 VPN 연결이 자동으로 설정됩니다.

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfe795a812572fa92c51a23b9e15b7fe48254174
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a167fa4f0ddc9832ea70b4281a42b5c0aae5bb81
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495778"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74694933"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune의 iOS 디바이스에 대한 사용자 지정 설정
 
@@ -57,7 +57,7 @@ iOS 디바이스를 사용하는 경우 사용자 지정을 Intune으로 가져�
 ## <a name="custom-configuration-profile-settings"></a>사용자 지정 구성 프로필 설정
 
 - **사용자 지정 구성 프로필 이름**: 정책의 이름을 입력합니다. 이 이름은 디바이스 및 Intune 상태에서 표시됩니다.
-- **구성 프로필 파일** - Apple Configurator 또는 Apple Profile Manager를 사용하여 만든 구성 프로필을 찾아봅니다. 가져온 파일은 **파일 내용** 영역에 표시됩니다.
+- **구성 프로필 파일** - Apple Configurator 또는 Apple Profile Manager를 사용하여 만든 구성 프로필을 찾아봅니다. 최대 파일 크기는 100만 바이트 (1MB 미만)입니다. 가져온 파일은 **파일 내용** 영역에 표시됩니다.
 
   사용자 지정 구성 파일에 장치 토큰을 추가할 수도 있습니다. 장치 토큰은 장치 관련 정보를 추가 하는 데 사용 됩니다. 예를 들어 일련 번호를 표시하려면 `{{serialnumber}}`를 입력합니다. 장치에서 텍스트는 각 장치에 고유한 `123456789ABC`와 유사 하 게 표시 됩니다. 변수를 입력할 때 `{{ }}` 중괄호를 사용해야 합니다. [앱 구성 토큰](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)에는 사용할 수 있는 변수 목록이 포함됩니다. `deviceid` 또는 기타 디바이스 관련 값을 사용할 수도 있습니다.
 

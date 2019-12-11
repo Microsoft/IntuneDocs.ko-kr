@@ -21,10 +21,10 @@ ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0e0699758b31a8ca32b8522969379e8a3e502889
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72499779"
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>사용 중인 iOS 디바이스의 운영 체제 버전이 아직 지원되지 않는 경우

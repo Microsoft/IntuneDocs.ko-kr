@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503570"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>Jamf Pro와 Microsoft Intune의 통합 문제 해결
@@ -45,7 +45,7 @@ Intune과 Jamf Pro 통합을 조사할 때 다음 정보를 고려 하세요.
 - 정확한 오류 메시지가 무엇입니까?
 - 오류 메시지는 어디에 있습니까?
 - 문제가 언제 시작되었습니까?  Intune과 Jamf Pro 통합이 작동 했습니까?
-- 영향을 받는 사용자는 몇 개입니까? 모든 사용자에 게 영향을 미치는지 아니면 일부에만 적용 되나요?
+- 얼마나 많은 사용자가 영향을 받습니까? 모든 사용자에 게 영향을 미치는지 아니면 일부에만 적용 되나요?
 - 영향을 받는 장치는 몇 개입니까? 모든 장치가 영향을 받는지 아니면 일부 입니까?
  
 
@@ -61,7 +61,7 @@ Intune과 Jamf Pro 통합을 조사할 때 다음 정보를 고려 하세요.
 |  **Mac 장치가 Intune에서 호환 되지만 Azure에서 비준수를 표시 함** | [장치 등록 문제](#mac-device-shows-compliant-in-intune-but-noncompliant-in-azure) |
 | **Jamf를 사용 하 여 등록 된 Mac 장치용 Intune 콘솔에 중복 된 항목이 표시 됩니다.** | [동일한 장치를 가져오면 하는 여러 등록](#duplicate-entries-appear-in-the-intune-console-for-mac-devices-enrolled-by-using-jamf) |
 | **준수 정책에서 장치를 평가 하지 못함** | [정책 대상 장치 그룹](#compliance-policy-fails-to-evaluate-the-device) |
-| **Microsoft Graph API에 대 한 액세스 토큰을 검색할 수 없습니다.** | 다음과 같은 원인이 적용 될 수 있습니다. <br> [Azure에서 Jamf Pro 앱에 대 한 사용 권한](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure) - <br> [Jamf 또는 Intune에 대 한 -  만료 된 라이선스](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [포트가 열려 있지 않습니다](#the-required-ports-arent-open-on-your-network) .|
+| **Microsoft Graph API에 대 한 액세스 토큰을 검색할 수 없습니다.** | 다음과 같은 원인이 적용 될 수 있습니다. <br> [Azure에서 Jamf Pro 앱에 대 한 사용 권한](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure) - <br> [Jamf 또는 Intune에 대 한 - 만료 된 라이선스](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [포트가 열려 있지 않습니다](#the-required-ports-arent-open-on-your-network) .|
  
 
 ### <a name="devices-are-marked-as-unresponsive-in-jamf-pro"></a>Jamf Pro에서 장치가 응답 하지 않는 것으로 표시 됨  
@@ -111,7 +111,7 @@ Mac 장치를 등록 하는 데 실패 하는 몇 가지 일반적인 원인은 
 
 **Azure의 Jamf Pro enterprise 응용 프로그램에 잘못 된 권한이 있거나 둘 이상의 사용 권한이 있습니다.**  
 
-  Azure에서 앱을 만들 때 모든 기본 API 권한을 제거한 후 Intune에 *update_device_attributes*의 단일 사용 권한을 할당 해야 합니다. 
+  Azure에서 앱을 만들 때 모든 기본 API 권한을 제거한 다음 Intune에 *update_device_attributes*의 단일 사용 권한을 할당 해야 합니다. 
 
   **해결 방법**  
   검토 하 고 필요한 경우 Azure AD에서 만든 Jamf 앱에 대 한 사용 권한을 수정 합니다. [AZURE AD에서 Jamf에 대 한 응용 프로그램을 만들려면](conditional-access-integrate-jamf.md#create-an-application-in-azure-active-directory)절차를 참조 하세요. 
@@ -294,7 +294,7 @@ Intune 및 Jamf Pro 통합에서 장치를 제거 하는 경우 일부 데이터
 
 Azure에서 Jamf Pro 앱을 등록 하는 동안 다음 조건 중 하나가 발생 했습니다.  
 - 앱에서 두 개 이상의 사용 권한을 받았습니다.
-- ***\<your 회사 >* 에 대 한 관리자 동의 부여** 옵션이 선택 되지 않았습니다.  
+- ***회사 >\<* 에 대 한 관리자 동의 부여** 옵션이 선택 되지 않았습니다.  
 
 **해결 방법**  
 이 문서의 앞부분에 나오는 장치에 대 한 [등록 실패](#devices-fail-to-register)문제 해결을 참조 하세요.

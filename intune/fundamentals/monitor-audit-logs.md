@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: d6af0718f2b926383bb943b6321b4d5839346ce7
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585253"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991984"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>감사 로그를 사용하여 Microsoft Intune에서 이벤트를 추적하고 모니터링합니다.
 
@@ -40,9 +40,14 @@ ms.locfileid: "72585253"
 
 각 Intune 워크로드에 대한 모니터링 그룹에서 감사 로그를 검토할 수 있습니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. 감사 로그를 검토하려는 워크로드를 선택합니다. 예를 들어 **디바이스**를 선택합니다.
-3. **모니터링**에서 **감사 로그**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **감사 로그** > **테 넌 트 관리** 를 선택 합니다.
+3. 결과를 필터링 하려면 다음 옵션을 사용 하 여 **필터** 를 선택 하 고 결과를 구체화 합니다.
+    - **범주**: **규정 준수**, **장치**및 **역할**입니다.
+    - **활동**: 여기에 나열 된 옵션은 **범주**아래에서 선택한 옵션에 의해 제한 됩니다.
+    - **날짜 범위**: 이전 월, 주 또는 날짜에 대 한 로그를 선택할 수 있습니다.
+4. **적용**을 선택합니다.
+4. 활동 세부 정보를 보려면 목록에서 항목을 선택 합니다.
 
 ## <a name="route-logs-to-azure-monitor"></a>Azure Monitor로 로그 라우팅
 
@@ -53,32 +58,10 @@ ms.locfileid: "72585253"
 > [!NOTE]
 > 이 기능에 대 한 자세한 내용 및 사용을 위한 필수 구성 요소를 검토 하려면 [저장소, 이벤트 허브 또는 log analytics로 로그 데이터 보내기](review-logs-using-azure-monitor.md)를 참조 하세요.
 
-## <a name="review-audit-events"></a>감사 이벤트 검토
-
-![이벤트가 발생하는 경우 작업 및 날짜를 확인하려면 Intune에서 감사 로그 선택](./media/monitor-audit-logs/monitor-audit-logs.png "감사 로그")
-
-감사 로그에는 다음 항목을 표시하는 기본 목록 보기가 있습니다.
-
-- 발생 날짜 및 시간
-- 시작한 사람(행위자)
-- 애플리케이션 이름
-- 활동
-- 대상
-- Category
-- 상태
-
-이벤트에 대한 더 구체적인 정보를 보려면 목록에서 항목을 선택합니다.
-
-![Intune의 감사 로그에서 누가 무엇을 했는지에 관해 더 구체적인 정보 얻기](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
-
 > [!NOTE]
 > **시작한 사람(행위자)** 에는 태스크를 실행한 사람에 대한 정보 및 실행된 위치에 대한 정보가 포함되어 있습니다. 예를 들어 Azure Portal의 Intune에서 활동을 실행하는 경우 **애플리케이션**에 항상 **Microsoft Intune 포털 확장**이 나열되고 **애플리케이션 ID**에 항상 동일한 GUID가 사용됩니다.
 >
 > **대상** 섹션에는 여러 대상과 변경된 속성이 나열될 수 있습니다.  
-
-## <a name="filter-audit-events"></a>감사 이벤트 필터링
-
-각 워크로드에는 해당 창과 관련된 감사 이벤트 범주를 사전 필터링하는 메뉴 항목이 있습니다. 별도의 필터 옵션을 사용하여 다른 범주와 해당 범주 내의 이벤트 작업 세부 정보로 변경할 수 있습니다. UPN(예: 작업을 수행한 사용자)으로 검색할 수 있습니다. 날짜 범위 필터는 24시간, 7일 또는 30일 옵션을 허용합니다. 기본적으로 최근 30일의 감사 이벤트가 표시됩니다.
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Graph API를 사용하여 감사 이벤트 검색
 

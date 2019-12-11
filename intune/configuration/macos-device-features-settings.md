@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117860"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992906"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune에서 macOS 디바이스 기능 설정
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune에는 macOS 디바이스의 기능을 사용자 지정하기 위한 몇 가지 기본 제공 설정이 포함되어 있습니다. 예를 들어, 관리자는 어 인쇄 프린터를 추가 하 고, 사용자가 로그인 하 고, 전원 제어를 구성 하 고, Single Sign-On 인증을 사용 하는 방법을 선택할 수 있습니다.
 
@@ -85,7 +83,7 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 
 ## <a name="login-window"></a>로그인 창
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록 
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>설정이 적용 되는 대상: 장치 등록 및 자동화 된 장치 등록
 
 #### <a name="window-layout"></a>창 레이아웃
 
@@ -131,33 +129,40 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 
 - **Sso 앱 확장 유형**: 자격 증명 sso 앱 확장의 유형을 선택 합니다. 옵션은 다음과 같습니다.
 
-  - **구성 되지 않음**: 앱 확장이 사용 되지 않습니다. SSO 앱 확장을 사용 하지 않도록 설정 하려면 SSO 앱 확장 유형을 **Kerberos** 또는 **자격 증명** 에서 **구성 되지 않음**으로 전환 합니다.
-  - **자격 증명**: 사용자 지정 가능한 일반 자격 증명 앱 확장을 사용 하 여 SSO를 사용 합니다. 조직의 SSO 앱 확장에 대 한 확장 ID 및 팀 ID를 알고 있어야 합니다.  
+  - **구성 되지 않음**: 앱 확장이 사용 되지 않습니다. 앱 확장을 사용 하지 않도록 설정 하려면 SSO 앱 확장 유형을 **구성 되지 않음**으로 전환 합니다.
+  - **리디렉션**: 최신 인증 흐름을 사용 하 여 SSO를 수행 하기 위해 일반 사용자 지정 가능 리디렉션 앱 확장을 사용 합니다. 조직의 앱 확장에 대 한 확장 및 팀 ID를 알고 있어야 합니다.
+  - **자격 증명**: 사용자 지정 가능한 일반 자격 증명 앱 확장을 사용 하 여 챌린지 및 응답 인증 흐름으로 SSO를 수행 합니다. 조직의 SSO 앱 확장에 대 한 확장 ID 및 팀 ID를 알고 있어야 합니다.  
   - **Kerberos**: Macos catalina.properties 10.15 이상에 포함 된 Apple의 기본 제공 Kerberos 확장을 사용 합니다. 이 옵션은 **자격 증명** 앱 확장의 Kerberos 특정 버전입니다.
 
   > [!TIP]
-  > **자격 증명** 형식을 사용 하 여 확장을 통과 하는 고유한 구성 값을 추가 합니다. 대신 **Kerberos** 유형에 서 Apple에서 제공 하는 기본 제공 구성 설정을 사용 하는 것이 좋습니다.
+  > **리디렉션** 및 **자격 증명** 형식을 사용 하 여 확장을 통과 하는 고유한 구성 값을 추가 합니다. **자격 증명**을 사용 하는 경우에는 **Kerberos** 유형에 서 Apple에서 제공 하는 기본 제공 구성 설정을 사용 하는 것이 좋습니다.
 
-- **확장 ID** (자격 증명만): `com.apple.ssoexample`와 같이 SSO 앱 확장을 식별 하는 번들 식별자를 입력 합니다.
-- **팀 ID** (자격 증명만): SSO 앱 확장의 팀 식별자를 입력 합니다. 팀 식별자는 `ABCDE12345`와 같이 Apple에서 생성 된 10 자 사전순 (숫자 및 문자) 문자열입니다. 
+- **확장 ID** (리디렉션 및 자격 증명): `com.apple.ssoexample`와 같은 SSO 앱 확장을 식별 하는 번들 식별자를 입력 합니다.
+- **팀 ID** (리디렉션 및 자격 증명): SSO 앱 확장의 팀 식별자를 입력 합니다. 팀 식별자는 `ABCDE12345`와 같이 Apple에서 생성 된 10 자 사전순 (숫자 및 문자) 문자열입니다. 
 
   [팀 ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple 웹 사이트 열기)를 찾아 자세한 정보를 찾습니다.
 
-- **영역**: 인증 영역 이름을 입력 합니다. 영역 이름은 대문자 여야 합니다 (예: `CONTOSO.COM`). 일반적으로 영역 이름은 DNS 도메인 이름과 동일 하지만 모두 대문자로 되어 있습니다.
-- **도메인**: SSO를 통해 인증할 수 있는 사이트의 도메인 또는 호스트 이름을 입력 합니다. 예를 들어 웹 사이트가 `mysite.contoso.com`된 경우 `mysite` 호스트 이름이 고 `contoso.com`는 도메인 이름입니다. 사용자가 이러한 사이트에 연결 하면 앱 확장이 인증 챌린지를 처리 합니다. 이 인증을 사용 하면 사용자가 얼굴 ID, Touch ID 또는 Apple pincode/암호를 사용 하 여 로그인 할 수 있습니다.
+- **영역** (자격 증명 및 Kerberos): 인증 영역 이름을 입력 합니다. 영역 이름은 대문자 여야 합니다 (예: `CONTOSO.COM`). 일반적으로 영역 이름은 DNS 도메인 이름과 동일 하지만 모두 대문자로 되어 있습니다.
+
+- **도메인** (자격 증명 및 Kerberos): SSO를 통해 인증할 수 있는 사이트의 도메인 또는 호스트 이름을 입력 합니다. 예를 들어 웹 사이트가 `mysite.contoso.com`된 경우 `mysite` 호스트 이름이 고 `contoso.com`는 도메인 이름입니다. 사용자가 이러한 사이트에 연결 하면 앱 확장이 인증 챌린지를 처리 합니다. 이 인증을 사용 하면 사용자가 얼굴 ID, Touch ID 또는 Apple pincode/암호를 사용 하 여 로그인 할 수 있습니다.
 
   - Single Sign-On 앱 확장 Intune 프로필의 모든 도메인은 고유 해야 합니다. 다른 유형의 SSO 앱 확장을 사용 중인 경우에도 로그온 앱 확장 프로필에서 도메인을 반복할 수 없습니다.
   - 이러한 도메인은 대/소문자를 구분 하지 않습니다.
 
-- **추가 구성** (자격 증명에만 해당): SSO 앱 확장에 전달할 추가 확장 데이터를 입력 합니다.
-  - **구성 키**: 추가 하려는 항목의 이름을 입력 합니다 (예: `user name`).
-  - **값 유형**: 데이터 유형을 입력 합니다. 옵션은 다음과 같습니다.
+- **Url** (리디렉션만 해당): 리디렉션 앱 확장이 SSO를 수행 하는 id 공급자의 URL 접두사를 입력 합니다. 사용자가 이러한 Url로 리디렉션되는 경우 SSO 앱 확장이 개입 하 고 SSO에 메시지를 표시 합니다.
+
+  - Intune Single Sign-On 앱 확장 프로필의 모든 Url은 고유 해야 합니다. 다른 유형의 SSO 앱 확장을 사용 중인 경우에도 SSO 앱 확장 프로필에서 도메인을 반복할 수 없습니다.
+  - Url은 http://또는 https://로 시작 해야 합니다.
+
+- **추가 구성** (리디렉션 및 자격 증명): SSO 앱 확장에 전달할 추가 확장 데이터를 입력 합니다.
+  - **키**: 추가 하려는 항목의 이름을 입력 합니다 (예: `user name`).
+  - **유형**: 데이터 유형을 입력 합니다. 옵션은 다음과 같습니다.
 
     - 문자열
     - 부울: **구성 값**에 `True` 또는 `False`을 입력 합니다.
     - 정수: **구성 값**에 숫자를 입력 합니다.
     
-  - **구성 값**: 데이터를 입력 합니다.
+  - **값**: 데이터를 입력 합니다.
   
   - **추가**: 구성 키를 추가 하려면 선택 합니다.
 
@@ -179,13 +184,19 @@ AirPrinter 서버를 추가하려면 프린터의 IP 주소, 리소스 경로 �
 - **최소 암호 사용 기간** (Kerberos만): 사용자가 암호를 변경 하려면 도메인에서 암호를 사용 해야 하는 일 수를 입력 합니다. **구성 되지 않음** (기본값)은 암호를 변경 하기 전에 최소 사용 기간을 적용 하지 않습니다.
 - **암호 만료 알림** (Kerberos에만 해당): 암호가 만료 될 때까지 사용자에 게 알림이 표시 될 때 까지의 기간 (일)을 입력 합니다. **구성 되지 않음** (기본값) `15` 일을 사용 합니다.
 - **암호 만료**에만 해당 디바이스 암호를 변경해야 할 때까지의 기간(일)을 입력합니다. **구성 되지 않음** (기본값)은 사용자 암호가 만료 되지 않음을 의미 합니다.
+- **암호 변경 URL** (kerberos만 해당): 사용자가 Kerberos 암호 변경을 시작할 때 시작 되는 Url을 입력 합니다.
 - **보안 주체 이름** (kerberos에만 해당): kerberos 주체의 사용자 이름을 입력 합니다. 영역 이름을 포함할 필요가 없습니다. 예를 들어 `user@contoso.com`에서 `user`는 주 이름이 고 `contoso.com`은 영역 이름입니다.
+
+  > [!TIP]
+  > - `{{ }}`중괄호를 입력 하 여 보안 주체 이름에 변수를 사용할 수도 있습니다. 예를 들어 사용자 이름을 표시 하려면 `Username: {{username}}`을 입력 합니다. 
+  > - 그러나 변수는 UI에서 유효성이 검사 되지 않으며 대/소문자를 구분 하기 때문에 변수를 대체 해야 합니다. 올바른 정보를 입력 해야 합니다.
+  
 - **Active Directory 사이트 코드** (kerberos만 해당): kerberos 확장에서 사용 해야 하는 Active Directory 사이트의 이름을 입력 합니다. Kerberos 확장에서 Active Directory 사이트 코드를 자동으로 찾을 수 있으므로이 값을 변경 하지 않아도 됩니다.
 - **캐시 이름** (kerberos만 해당): kerberos 캐시의 GSS (Generic Security Services) 이름을 입력 합니다. 일반적으로이 값을 설정할 필요가 없습니다.  
 - **암호 요구 사항 메시지** (Kerberos만 해당): 사용자에 게 표시 되는 조직의 암호 요구 사항 텍스트 버전을 입력 합니다. Active Directory의 암호 복잡성 요구 사항이 필요 하지 않거나 최소 암호 길이를 입력 하지 않은 경우 메시지가 표시 됩니다.  
 - **앱 번들 id** (Kerberos만 해당): 장치에서 Single Sign-On를 사용 해야 하는 앱 번들 식별자를 **추가** 합니다. 이러한 앱에는 Kerberos 티켓 부여 티켓과 인증 티켓에 대 한 액세스 권한이 부여 되 고 액세스할 수 있는 서비스에 대 한 사용자가 인증 됩니다.
 - **도메인 영역 매핑** (Kerberos만 해당): 영역에 매핑해야 하는 도메인 DNS 접미사를 **추가** 합니다. 호스트의 DNS 이름이 영역 이름과 일치 하지 않는 경우이 설정을 사용 합니다. 일반적으로이 사용자 지정 도메인-영역 매핑을 만들 필요가 없습니다.
-- **PKINIT certificate** (Kerberos만 해당): 사용자 개입 없이 Kerberos 자격 증명을 갱신 하는 데 사용할 수 있는 PKINIT (초기 인증) 인증서에 대 한 공개 키 암호화를 **선택** 합니다. 인증서는 이전에 Intune에 추가한 PKCS 또는 SCEP 인증서 여야 합니다.
+- **PKINIT certificate** (kerberos만 해당): kerberos 인증에 사용할 수 있는 PKINIT (초기 인증) 인증서에 대 한 공개 키 암호화를 **선택** 합니다. Intune에서 추가한 [PKCS](../protect/certficates-pfx-configure.md) 또는 [SCEP](../protect/certificates-scep-configure.md) 인증서를 선택할 수 있습니다. 인증서에 대 한 자세한 내용은 [Microsoft Intune의 인증에 인증서 사용](../protect/certificates-configure.md)을 참조 하세요.
 
 ## <a name="associated-domains"></a>연결된 도메인
 
@@ -202,13 +213,13 @@ Intune에서 다음과 같은 작업을 수행할 수 있습니다.
 
 - **앱 ID**: 웹 사이트와 연결할 앱의 앱 id를 입력 합니다. 앱 식별자는 팀 ID와 번들 ID (`TeamID.BundleID`)를 포함 합니다.
 
-  팀 ID는 `ABCDE12345`와 같은 앱 개발자를 위해 Apple에서 생성 한 10 자 사전순 (문자 및 숫자) 문자열입니다. [팀 ID](https://help.apple.com/developer-account/#/dev55c3c710c)   (Apple의 웹 사이트 열기)를 찾습니다.
+  팀 ID는 `ABCDE12345`와 같은 앱 개발자를 위해 Apple에서 생성 한 10 자 사전순 (문자 및 숫자) 문자열입니다. [팀 ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple의 웹 사이트 열기)를 찾습니다.
 
-  번들 ID는 응용 프로그램을 고유 하 게 식별 하며 일반적으로 역방향 도메인 이름 표기법으로 지정 됩니다. 예를 들어 Finder의 번들 ID는 `com.apple.finder` 됩니다. 번들 ID를 찾으려면 터미널에서 AppleScript를 사용 합니다.
+  번들 ID는 응용 프로그램을 고유 하 게 식별 하며 일반적으로 역방향 도메인 이름 표기법으로 지정 됩니다. 예를 들어 Finder의 번들 ID는 `com.apple.finder`됩니다. 번들 ID를 찾으려면 터미널에서 AppleScript를 사용 합니다.
 
   `osascript -e 'id of app "ExampleApp"'`
 
-- **도메인**: 앱과 연결할 웹 사이트 도메인을 입력 합니다. 도메인에는 서비스 유형과 `webcredentials:www.contoso.com` 같은 정규화 된 호스트 이름이 포함 됩니다.
+- **도메인**: 앱과 연결할 웹 사이트 도메인을 입력 합니다. 도메인에는 서비스 유형과 `webcredentials:www.contoso.com`같은 정규화 된 호스트 이름이 포함 됩니다.
 
   도메인의 시작 부분 앞에 `*.` (별표 와일드 카드 및 마침표)를 입력 하 여 연결 된 도메인의 모든 하위 도메인을 일치 시킬 수 있습니다. 기간이 필요 합니다. 정확한 도메인은 와일드 카드 도메인 보다 우선 순위가 높습니다. 따라서 정규화 된 하위 도메인에서 일치 항목을 찾을 수 *없으면* 부모 도메인의 패턴이 일치 합니다.
 
@@ -221,7 +232,7 @@ Intune에서 다음과 같은 작업을 수행할 수 있습니다.
 - **추가**: 앱 및 연결 된 도메인을 추가 하려면 선택 합니다.
 
 > [!TIP]
-> 문제를 해결 하려면 macOS 장치에서 **시스템 기본 설정**  > **프로필**을 엽니다. 만든 프로필이 장치 프로필 목록에 있는지 확인 합니다. 표시 되는 경우 **연결 된 도메인 구성이** 프로필에 있고 올바른 앱 ID 및 도메인을 포함 해야 합니다.
+> 문제를 해결 하려면 macOS 장치에서 **시스템 기본 설정** > **프로필**을 엽니다. 만든 프로필이 장치 프로필 목록에 있는지 확인 합니다. 표시 되는 경우 **연결 된 도메인 구성이** 프로필에 있고 올바른 앱 ID 및 도메인을 포함 해야 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
