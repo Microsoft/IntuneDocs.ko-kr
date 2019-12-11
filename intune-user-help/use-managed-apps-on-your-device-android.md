@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501888"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781212"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android 디바이스에서 관리되는 앱 사용
 관리되는 앱은 조직의 보안 요구 사항을 충족시키고 회사 및 학교 데이터를 보호하도록 구성됩니다. 이러한 앱은 디바이스에서 자동으로 설치 또는 사용할 수 있습니다. 
@@ -39,9 +39,7 @@ ms.locfileid: "72501888"
 조직에서 작업 파일 열기 또는 웹 링크 액세스와 같이 관리되는 앱을 사용하여 작업을 수행하도록 요구할 수 있습니다. 앱이 없는 경우 작업을 계속하지 못할 수 있습니다. 일부 관리되는 앱의 경우 설치는 할 수 있으나 필수는 아닙니다.
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>관리되는 앱을 사용하는지 어떻게 알 수 있습니까?
-관리되는 앱에서 회사 또는 학교 데이터에 처음 액세스하면 아래의 예제 스크린샷과 유사한 메시지가 표시됩니다. 계속하면 앱을 다시 시작하라는 메시지가 나타납니다.
-
-![사용자가 디바이스에서 관리되는 앱을 열 때 표시되는 메시지 스크린샷입니다. "조직이 이제 이 앱에서 조직 데이터를 보호합니다. 계속하려면 앱을 다시 시작해야 합니다."라는 메시지가 표시되면 확인 버튼을 클릭합니다.](./media/managed-apps-message.png)
+관리 되는 앱에서 회사 또는 학교 데이터에 액세스 하려고 하면 조직에서 앱을 보호 하는 화면 메시지를 받게 됩니다. 
 
 ## <a name="commonly-managed-apps"></a>일반적으로 관리되는 앱  
 학교와 직장 내에서 일반적으로 필요하거나 사용할 수 있는 관리되는 앱의 예제는 다음과 같습니다.

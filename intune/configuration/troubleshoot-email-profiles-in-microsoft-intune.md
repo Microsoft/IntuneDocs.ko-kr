@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059852"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune에서 메일 프로필 관련 일반적인 문제와 해결 방법
@@ -61,9 +61,9 @@ Intune 또는 Office 365 MDM에 등록 하기 전에 사용자가 전자 메일 
 
 자동으로 구성된 메일 계정이 있는 사용자가 디바이스에서 그림이나 이미지를 보낼 수 없습니다. 이 시나리오는 **타사 애플리케이션에서 이메일을 보내도록 허용** 옵션이 활성화되지 않은 경우에 발생할 수 있습니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.
-2. **장치** > **구성 프로필**을 선택 합니다.
-3. 전자 메일 프로필 > **속성**  > **설정**을 선택 합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **구성 프로필**을 선택합니다.
+3. 전자 메일 프로필 > **속성** > **설정**을 선택 합니다.
 4. **타사 응용 프로그램에서 전자 메일을 보낼 수 있음** 설정을 **사용**으로 설정 합니다.
 
 ## <a name="next-steps"></a>다음 단계

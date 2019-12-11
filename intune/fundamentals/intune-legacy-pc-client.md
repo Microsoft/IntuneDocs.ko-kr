@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510178"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure의 Intune 콘솔 및 레거시 Intune PC 클라이언트
@@ -63,7 +63,7 @@ PC 클라이언트와 MDM 기능 간의 자세한 비교는 [Windows PC를 컴�
 Intune PC 클라이언트를 사용하여 Windows 10 디바이스를 관리하는 방식에서 MDM을 사용하여 관리하는 방식으로 전환하려면 아래 단계를 따릅니다.
 
 1. Silverlight 콘솔에서 **선택적 초기화**를 수행하여 PC 클라이언트에서 디바이스를 등록 취소합니다.
-  ' 선택적으로 장치 초기화 ' 라디오 단추가 선택 된 ![Warning 팝업 ](./media/intune-legacy-pc-client/image02.png)
+  ' 선택적으로 장치 초기화 ' 라디오 단추가 선택 된 ![경고 팝업](./media/intune-legacy-pc-client/image02.png)
 2. [MDM(및/또는 Azure AD 조인)](../enrollment/windows-enroll.md)을 사용하여 디바이스를 다시 등록합니다.
 
 ## <a name="next-steps"></a>다음 단계

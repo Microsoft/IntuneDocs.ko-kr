@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503481"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android용 Microsoft Intune 앱 SDK 개발자 가이드
@@ -614,9 +614,9 @@ NotificationRestriction notificationRestriction =
     MAMPolicyManager.getPolicyForIdentity(notificationIdentity).getNotificationRestriction();
 ```
 
-제한이 `BLOCKED` 경우 앱은이 정책과 연결 된 사용자에 대 한 알림을 표시 해서는 안 됩니다. `BLOCK_ORG_DATA` 경우에는 앱에서 조직 데이터를 포함 하지 않는 수정 된 알림을 표시 해야 합니다. `UNRESTRICTED` 경우 모든 알림이 허용 됩니다.
+제한이 `BLOCKED`경우 앱은이 정책과 연결 된 사용자에 대 한 알림을 표시 해서는 안 됩니다. `BLOCK_ORG_DATA`경우에는 앱에서 조직 데이터를 포함 하지 않는 수정 된 알림을 표시 해야 합니다. `UNRESTRICTED`경우 모든 알림이 허용 됩니다.
 
-`getNotificationRestriction` 를 호출 하지 않으면 MAM SDK가 단일 id 앱에 대 한 알림을 자동으로 제한 하기 위해 최상의 노력을 합니다. 자동 차단을 사용 하 고 `BLOCK_ORG_DATA` 설정 하면 알림이 전혀 표시 되지 않습니다. 보다 세분화 된 제어를 위해 `getNotificationRestriction`의 값을 확인 하 고 앱 알림을 적절 하 게 수정 합니다.
+`getNotificationRestriction`를 호출 하지 않으면 MAM SDK가 단일 id 앱에 대 한 알림을 자동으로 제한 하기 위해 최상의 노력을 합니다. 자동 차단을 사용 하 고 `BLOCK_ORG_DATA` 설정 하면 알림이 전혀 표시 되지 않습니다. 보다 세분화 된 제어를 위해 `getNotificationRestriction`의 값을 확인 하 고 앱 알림을 적절 하 게 수정 합니다.
 
 ## <a name="register-for-notifications-from-the-sdk"></a>SDK에서 알림 등록
 
@@ -673,7 +673,7 @@ public interface MAMNotificationReceiver {
 
 다음과 같은 알림이 앱에 전송되고, 일부 알림의 경우 앱 참여가 필요할 수 있습니다.
 
-* **WIPE_USER_DATA**: 이 알림은 `MAMUserNotification` 클래스를 통해 전송됩니다. 이 알림이 수신 되 면 앱은 `MAMUserNotification.getUserIdentity()`에서 관리 되는 id와 연결 된 모든 데이터를 삭제 *해야* 합니다. 이 알림은 앱이 `unregisterAccountForMAM` 호출 하는 경우, IT 관리자가 초기화를 시작 하는 경우 또는 관리자가 요청한 조건부 액세스 정책이 충족 되지 않는 경우를 포함 하 여 다양 한 이유로 발생할 수 있습니다. 앱이이 알림에 등록 하지 않으면 기본 초기화 동작이 수행 됩니다. 기본 동작은 다중 id 앱에 대 한 단일 id 앱 또는 관리 되는 id로 태그가 지정 된 모든 파일에 대 한 모든 파일을 삭제 합니다. 이 알림은 UI 스레드에서 전송 되지 않습니다.
+* **WIPE_USER_DATA**: 이 알림은 `MAMUserNotification` 클래스를 통해 전송됩니다. 이 알림이 수신 되 면 앱은 `MAMUserNotification.getUserIdentity()`에서 관리 되는 id와 연결 된 모든 데이터를 삭제 *해야* 합니다. 이 알림은 앱이 `unregisterAccountForMAM`호출 하는 경우, IT 관리자가 초기화를 시작 하는 경우 또는 관리자가 요청한 조건부 액세스 정책이 충족 되지 않는 경우를 포함 하 여 다양 한 이유로 발생할 수 있습니다. 앱이이 알림에 등록 하지 않으면 기본 초기화 동작이 수행 됩니다. 기본 동작은 다중 id 앱에 대 한 단일 id 앱 또는 관리 되는 id로 태그가 지정 된 모든 파일에 대 한 모든 파일을 삭제 합니다. 이 알림은 UI 스레드에서 전송 되지 않습니다.
 
 * **WIPE_USER_AUXILIARY_DATA**: Intune 앱 SDK에서 기본 선택적 초기화 동작을 수행하며 초기화 발생 시 일부 보조 데이터도 제거되도록 하려면 앱에서 이 알림을 등록할 수 있습니다. 이 알림은 단일 ID 앱에는 사용할 수 없습니다. 다중 ID 앱에만 보내집니다. 이 알림은 UI 스레드에서 전송 되지 않습니다.
 
@@ -1111,7 +1111,7 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### <a name="implementation-notes"></a>구현 노트
 > [!NOTE]
 > **중요 변경**  <br>
-> 앱의 `MAMServiceAuthenticationCallback.acquireToken()` 메서드는 새 `forceRefresh` 플래그에 대해 *false* 를 전달 하 여 `acquireTokenSilentSync()` 합니다.
+> 앱의 `MAMServiceAuthenticationCallback.acquireToken()` 메서드는 새 `forceRefresh` 플래그에 대해 *false* 를 전달 하 여 `acquireTokenSilentSync()`합니다.
 > 이전에는 broker에서 토큰을 새로 고치는 것과 관련 된 문제를 해결 하기 위해 *true* 를 전달 하는 것이 좋지만,이 플래그가 *true*인 경우 일부 시나리오에서 토큰을 획득 하지 못할 수 있는 ADAL 문제가 발견 되었습니다.
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ false);

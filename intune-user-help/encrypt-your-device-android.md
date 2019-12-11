@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506353"
 ---
 # <a name="encrypting-your-android-device"></a>Android 디바이스 암호화
@@ -45,7 +45,7 @@ ms.locfileid: "72506353"
     c. 화면의 지시에 따라 화면 잠금을 구성 합니다.  
 
 2. **잠금 화면 및 보안** 으로 돌아가서 **보안 시작**을 선택 합니다.
-3. **장치가 켜지 면 PIN 필요**  > **확인을**선택 합니다.
+3. **장치가 켜지 면 PIN 필요** > **확인을**선택 합니다.
 4. PIN을 입력 하 여 장치를 확인 하 고 암호화 합니다.
 5. 회사 포털 또는 Microsoft Intune 앱을 엽니다.
     * 회사 포털 앱 사용자: 디바이스를 선택하고 **디바이스 설정 확인**을 탭합니다. 
@@ -53,9 +53,9 @@ ms.locfileid: "72506353"
 
 Android 4.4 이전 버전을 실행 하는 장치에는 **보안 시작** 옵션이 없을 수 있습니다. 이 경우 다음 단계를 완료 하 여 장치를 암호화 합니다.
 
-1. **설정**  > **보안**  > **장치 암호화**로 이동 합니다. 화면 레이블은 Android 장치 마다 다릅니다. **장치 암호화** 옵션이 표시 되지 않으면 다음을 선택 합니다.
-    * **저장소**  > **storage 암호화**
-    * **저장소**  > **잠금 화면 및 보안**  > **기타 보안 설정** 
+1. **설정** > **보안** > **장치 암호화**로 이동 합니다. 화면 레이블은 Android 장치 마다 다릅니다. **장치 암호화** 옵션이 표시 되지 않으면 다음을 선택 합니다.
+    * **저장소** > **storage 암호화**
+    * **저장소** > **잠금 화면 및 보안** > **기타 보안 설정** 
 
 2. 화면의 지시를 따릅니다. 암호화가 진행되는 동안 디바이스가 여러 번 다시 시작될 수 있습니다.
 3. 회사 포털 또는 Microsoft Intune 앱을 엽니다.

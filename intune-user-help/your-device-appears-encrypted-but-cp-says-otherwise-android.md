@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507670"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>장치가 암호화 되어 있지만 앱에는 그렇지 않음
@@ -32,7 +32,7 @@ ms.locfileid: "72507670"
 
 ## <a name="add-a-startup-pin"></a>시작 PIN 추가
 
-특정 Android 디바이스에서는 디바이스의 보안을 유지하기 위해 시작 PIN을 만들어야 합니다. 이 설정의 위치는 장치의 **설정** 앱에 배치 됩니다. 설정의 이름 및 위치는 다를 수 있습니다. 예를 들어 Samsung Galaxy S7에서 설정을 **보안 시작**이라고 합니다. 이를 사용 하도록 설정 하 고 암호를 만들려면 **설정**  > **잠금 화면 및 보안**  > **보안 시작**으로 이동 합니다.  
+특정 Android 디바이스에서는 디바이스의 보안을 유지하기 위해 시작 PIN을 만들어야 합니다. 이 설정의 위치는 장치의 **설정** 앱에 배치 됩니다. 설정의 이름 및 위치는 다를 수 있습니다. 예를 들어 Samsung Galaxy S7에서 설정을 **보안 시작**이라고 합니다. 이를 사용 하도록 설정 하 고 암호를 만들려면 **설정** > **잠금 화면 및 보안** > **보안 시작**으로 이동 합니다.  
 
 ## <a name="encrypt-the-entire-device"></a>전체 디바이스 암호화
 
@@ -56,7 +56,7 @@ ms.locfileid: "72507670"
 > [!Note]
 > Microsoft는 제조업체와 협력하여 테스트 중에 확인되거나 사용자들이 보고하는 문제를 해결합니다. 새로운 정보를 사용할 수 있을 때마다 이 문서를 업데이트합니다.
 
-## <a name="update-devices"></a>장치 업데이트
+## <a name="update-devices"></a>디바이스 업데이트
 
 장치를 최신 버전의 Android로 업데이트 하지 않은 경우 장치의 **설정** 앱으로 이동 하 여 **업데이트**를 선택 합니다.  
 

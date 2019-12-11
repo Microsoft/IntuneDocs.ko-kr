@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8eef3af9a82e7a61bc5200bf45143657072d6db7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508361"
 ---
 # <a name="upload-and-email-logs"></a>업로드 및 이메일 로그  
@@ -38,7 +38,7 @@ ms.locfileid: "72508361"
 ## <a name="upload-and-email-logs-from-company-portal"></a>회사 포털에서 로그 업로드 및 전자 메일 보내기  
 
 1. 회사 포털 앱에는 전자 메일 지원을 시작 하는 두 가지 방법이 있습니다.
-    * 홈 화면: **메뉴** ** > 를** 탭 하 여**전자 메일 지원** >  합니다.  
+    * 홈 화면: **메뉴** ** > 를** 탭 하 여 **전자 메일 지원** > 합니다.  
     * 오류 메시지에서: **도움말** 또는 **정보 보내기**(사용 가능한 경우)를 누릅니다.  
 
     > [!NOTE]
@@ -52,7 +52,7 @@ ms.locfileid: "72508361"
 ## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Microsoft Intune 앱에서 로그 업로드 및 전자 메일 보내기   
 
 1. Microsoft Intune 앱에는 전자 메일 지원을 시작 하는 두 가지 방법이 있습니다.  
-    * 홈 화면: **메뉴** ** > 를** 탭 하 여**지원 받기** >  합니다.  
+    * 홈 화면: **메뉴** ** > 를** 탭 하 여 **지원 받기** > 합니다.  
     * 오류 메시지에서: **도움말** 또는 **정보 보내기**(사용 가능한 경우)를 누릅니다.  
 
     > [!NOTE]

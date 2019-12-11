@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059282"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune의 문제 해결 정책 및 프로필
@@ -103,7 +103,7 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>프로필이 제대로 적용되었는지 확실하지 않은 경우
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인 합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **디바이스** > **모든 디바이스**를 선택하고 디바이스를 선택한 다음, **디바이스 구성**을 선택합니다. 
 
     모든 디바이스는 해당 프로필이 나열됩니다. 모든 프로필에는 **상태**가 있습니다. 상태는 하드웨어 및 OS 제한 사항과 요구 사항을 비롯한 할당된 모든 프로필이 함께 고려되어 적용됩니다. 가능한 상태는 다음과 같습니다.

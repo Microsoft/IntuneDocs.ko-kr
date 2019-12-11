@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 381ceea979dedf9b33cb7ef9c47291e3ac6ce20c
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117902"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992951"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune에서 일반적인 iOS 기능을 사용하는 iOS 및 iPadOS 디바이스 설정
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune은 iOS 사용자가 해당 디바이스의 다른 Apple 기능을 사용하도록 허용하는 몇 가지 기본 제공 설정을 포함합니다. 예를 들어 관리자는 iOS 사용자가 AirPrint 프린터를 사용하고, 홈 화면의 도킹 및 페이지에 앱 및 폴더를 추가하고, 앱 알림을 표시하고, 잠금 화면에서 자산 태그 정보를 표시하고, Single Sign-On 인증을 사용하고, 인증서를 사용하여 사용자를 인증하는 방법을 제어할 수 있습니다.
 
@@ -280,36 +278,43 @@ iPhone에 정책을 할당할 때 페이지는 다음 이미지와 유사합니�
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>설정이 적용 되는 대상: 모든 등록 형식
 
-- **Sso 앱 확장 유형**: 자격 증명 sso 앱 확장의 유형을 선택 합니다. 옵션은 다음과 같습니다.
+- **Sso 앱 확장 유형**: sso 앱 확장의 유형을 선택 합니다. 옵션은 다음과 같습니다.
 
-  - **구성 되지 않음**: 앱 확장이 사용 되지 않습니다. 앱 확장을 사용 하지 않도록 설정 하려면 SSO 앱 확장 유형을 **Kerberos** 또는 **자격 증명** 에서 **구성 되지 않음**으로 전환할 수 있습니다.
-  - **자격 증명**: 사용자 지정 가능한 일반 자격 증명 앱 확장을 사용 하 여 SSO를 수행 합니다. 조직의 SSO 앱 확장에 대 한 확장 ID를 알고 있어야 합니다.
+  - **구성 되지 않음**: 앱 확장이 사용 되지 않습니다. 앱 확장을 사용 하지 않도록 설정 하려면 SSO 앱 확장 유형을 **구성 되지 않음**으로 전환할 수 있습니다.
+  - **리디렉션**: 최신 인증 흐름을 사용 하 여 SSO를 수행 하기 위해 일반 사용자 지정 가능 리디렉션 앱 확장을 사용 합니다. 조직의 앱 확장에 대 한 확장 ID를 알고 있어야 합니다.
+  - **자격 증명**: 사용자 지정 가능한 일반 자격 증명 앱 확장을 사용 하 여 챌린지 및 응답 인증 흐름으로 SSO를 수행 합니다. 조직의 앱 확장에 대 한 확장 ID를 알고 있어야 합니다.
   - **Kerberos**: Apple의 기본 제공 Kerberos 확장을 사용 합니다 .이 확장은 iOS 13.0 이상 및 iPadOS 13.0 이상에 포함 되어 있습니다. 이 옵션은 **자격 증명** 앱 확장의 Kerberos 특정 버전입니다.
 
   > [!TIP]
-  > **자격 증명** 형식을 사용 하 여 확장을 통과 하는 고유한 구성 값을 추가 합니다. 대신 **Kerberos** 유형에 서 Apple에서 제공 하는 기본 제공 구성 설정을 사용 하는 것이 좋습니다.
+  > **리디렉션** 및 **자격 증명** 형식을 사용 하 여 확장을 통과 하는 고유한 구성 값을 추가 합니다. **자격 증명**을 사용 하는 경우 Apple에서 제공 하는 **Kerberos** 유형에 서 기본 제공 구성 설정을 사용 하는 것이 좋습니다.
 
-- **확장 ID** (자격 증명만): `com.apple.extensiblesso`와 같이 SSO 앱 확장을 식별 하는 번들 식별자를 입력 합니다.
-- **팀 ID** (자격 증명만): SSO 앱 확장의 팀 식별자를 입력 합니다. 팀 식별자는 `ABCDE12345`와 같이 Apple에서 생성 된 10 자 사전순 (숫자 및 문자) 문자열입니다. 팀 ID가 필요 하지 않습니다.
+- **확장 ID** (리디렉션 및 자격 증명): `com.apple.extensiblesso`와 같은 SSO 앱 확장을 식별 하는 번들 식별자를 입력 합니다.
+
+- **팀 ID** (리디렉션 및 자격 증명): SSO 앱 확장의 팀 식별자를 입력 합니다. 팀 식별자는 `ABCDE12345`와 같이 Apple에서 생성 된 10 자 사전순 (숫자 및 문자) 문자열입니다. 팀 ID가 필요 하지 않습니다.
 
   [팀 ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple 웹 사이트 열기)를 찾아 자세한 정보를 찾습니다.
 
-- **영역**: Kerberos 영역 이름을 입력 합니다. 영역 이름은 대문자 여야 합니다 (예: `CONTOSO.COM`). 일반적으로 영역 이름은 DNS 도메인 이름과 동일 하지만 모두 대문자로 되어 있습니다.
+- **영역** (자격 증명 및 Kerberos): 인증 영역 이름을 입력 합니다. 영역 이름은 대문자 여야 합니다 (예: `CONTOSO.COM`). 일반적으로 영역 이름은 DNS 도메인 이름과 동일 하지만 모두 대문자로 되어 있습니다.
 
-- **도메인**: SSO를 통해 인증할 수 있는 사이트의 도메인 또는 호스트 이름을 입력 합니다. 예를 들어 웹 사이트가 `mysite.contoso.com`된 경우 `mysite` 호스트 이름이 고 `contoso.com`는 도메인 이름입니다. 사용자가 이러한 사이트에 연결 하면 앱 확장이 인증 챌린지를 처리 합니다. 이 인증을 사용 하면 사용자가 얼굴 ID, Touch ID 또는 Apple pincode/암호를 사용 하 여 로그인 할 수 있습니다.
+- **도메인** (자격 증명 및 Kerberos): SSO를 통해 인증할 수 있는 사이트의 도메인 또는 호스트 이름을 입력 합니다. 예를 들어 웹 사이트가 `mysite.contoso.com`된 경우 `mysite` 호스트 이름이 고 `contoso.com`는 도메인 이름입니다. 사용자가 이러한 사이트에 연결 하면 앱 확장이 인증 챌린지를 처리 합니다. 이 인증을 사용 하면 사용자가 얼굴 ID, Touch ID 또는 Apple pincode/암호를 사용 하 여 로그인 할 수 있습니다.
 
   - Single Sign-On 앱 확장 Intune 프로필의 모든 도메인은 고유 해야 합니다. 다른 유형의 SSO 앱 확장을 사용 중인 경우에도 로그온 앱 확장 프로필에서 도메인을 반복할 수 없습니다.
   - 이러한 도메인은 대/소문자를 구분 하지 않습니다.
 
-- **추가 구성** (자격 증명에만 해당): SSO 앱 확장에 전달할 추가 확장 데이터를 입력 합니다.
-  - **구성 키**: 추가 하려는 항목의 이름을 입력 합니다 (예: `user name`).
-  - **값 유형**: 데이터 유형을 입력 합니다. 옵션은 다음과 같습니다.
+- **Url** (리디렉션만 해당): 리디렉션 앱 확장이 SSO를 수행 하는 id 공급자의 URL 접두사를 입력 합니다. 사용자가 이러한 Url로 리디렉션되는 경우 SSO 앱 확장이 개입 하 고 SSO에 메시지를 표시 합니다.
+
+  - Intune Single Sign-On 앱 확장 프로필의 모든 Url은 고유 해야 합니다. 다른 유형의 SSO 앱 확장을 사용 중인 경우에도 SSO 앱 확장 프로필에서 도메인을 반복할 수 없습니다.
+  - Url은 http://또는 https://로 시작 해야 합니다.
+
+- **추가 구성** (리디렉션 및 자격 증명): SSO 앱 확장에 전달할 추가 확장 데이터를 입력 합니다.
+  - **키**: 추가 하려는 항목의 이름을 입력 합니다 (예: `user name`).
+  - **유형**: 데이터 유형을 입력 합니다. 옵션은 다음과 같습니다.
 
     - 문자열
     - 부울: **구성 값**에 `True` 또는 `False`을 입력 합니다.
     - 정수: **구성 값**에 숫자를 입력 합니다.
     
-  - **구성 값**: 데이터를 입력 합니다.
+  - **값**: 데이터를 입력 합니다.
 
   - **추가**: 구성 키를 추가 하려면 선택 합니다.
 
@@ -323,11 +328,16 @@ iPhone에 정책을 할당할 때 페이지는 다음 이미지와 유사합니�
   > - 영역이 하나만 있는 경우에는 **구성 되지 않음** (기본값)으로 둡니다.
 
 - **보안 주체 이름** (kerberos에만 해당): kerberos 주체의 사용자 이름을 입력 합니다. 영역 이름을 포함할 필요가 없습니다. 예를 들어 `user@contoso.com`에서 `user`는 주 이름이 고 `contoso.com`은 영역 이름입니다.
+
+  > [!TIP]
+  > - `{{ }}`중괄호를 입력 하 여 보안 주체 이름에 변수를 사용할 수도 있습니다. 예를 들어 사용자 이름을 표시 하려면 `Username: {{username}}`을 입력 합니다. 
+  > - 그러나 변수는 UI에서 유효성이 검사 되지 않으며 대/소문자를 구분 하기 때문에 변수를 대체 해야 합니다. 올바른 정보를 입력 해야 합니다.
+
 - **Active Directory 사이트 코드** (kerberos만 해당): kerberos 확장에서 사용 해야 하는 Active Directory 사이트의 이름을 입력 합니다. Kerberos 확장에서 Active Directory 사이트 코드를 자동으로 찾을 수 있으므로이 값을 변경 하지 않아도 됩니다.
 - **캐시 이름** (kerberos만 해당): kerberos 캐시의 GSS (Generic Security Services) 이름을 입력 합니다. 일반적으로이 값을 설정할 필요가 없습니다.
 - **앱 번들 id** (Kerberos만 해당): 장치에서 Single Sign-On를 사용 해야 하는 앱 번들 식별자를 **추가** 합니다. 이러한 앱에는 Kerberos 티켓 부여 티켓과 인증 티켓에 대 한 액세스 권한이 부여 되 고 액세스할 수 있는 서비스에 대 한 사용자가 인증 됩니다.
 - **도메인 영역 매핑** (Kerberos만 해당): 영역에 매핑해야 하는 도메인 DNS 접미사를 **추가** 합니다. 호스트의 DNS 이름이 영역 이름과 일치 하지 않는 경우이 설정을 사용 합니다. 일반적으로이 사용자 지정 도메인-영역 매핑을 만들 필요가 없습니다.
-- **PKINIT certificate** (Kerberos만 해당): 사용자 개입 없이 Kerberos 자격 증명을 갱신 하는 데 사용할 수 있는 PKINIT (초기 인증) 인증서에 대 한 공개 키 암호화를 **선택** 합니다. 인증서는 이전에 Intune에 추가한 PKCS 또는 SCEP 인증서 여야 합니다.
+- **PKINIT certificate** (kerberos만 해당): kerberos 인증에 사용할 수 있는 PKINIT (초기 인증) 인증서에 대 한 공개 키 암호화를 **선택** 합니다. Intune에서 추가한 [PKCS](../protect/certficates-pfx-configure.md) 또는 [SCEP](../protect/certificates-scep-configure.md) 인증서를 선택할 수 있습니다. 인증서에 대 한 자세한 내용은 [Microsoft Intune의 인증에 인증서 사용](../protect/certificates-configure.md)을 참조 하세요.
 
 ## <a name="wallpaper"></a>배경 무늬
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f52d3a7c40f27555a07682adf86b0339cef616
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 647e8869caf24638f6809479274dbf7a7b967b9e
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491922"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946634"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Intune에서 VPN을 구성 하는 Android 엔터프라이즈 장치 설정
 
@@ -31,6 +31,9 @@ ms.locfileid: "72491922"
 Intune 관리자는 VPN 설정을 만들어 Android Enterprise 디바이스에 할당할 수 있습니다. 
 
 Intune의 VPN 프로필에 대 한 자세한 내용은 [vpn 프로필](vpn-settings-configure.md)을 참조 하세요.
+
+> [!NOTE]
+> Always on VPN을 구성 하려면 VPN 프로필을 만들고 Always on VPN 설정을 구성 하 여 [장치 제한](device-restrictions-android-for-work.md#connectivity) 프로필을 만들어야 합니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 

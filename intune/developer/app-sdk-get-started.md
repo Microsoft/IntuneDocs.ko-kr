@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592017"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899397"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune 앱 SDK 시작
 
@@ -164,7 +164,7 @@ iOS 또는 Android 앱을 Intune 앱 SDK와 통합하는 데 필요한 단계를
 
   * 최종 사용자 계정을 사용하여 모바일 디바이스에서 앱을 테스트하는 경우, 관리자 계정으로 로그인한 후 Microsoft 365 관리 센터 웹 사이트에서 해당 계정에 Intune 라이선스를 부여했는지 확인합니다. [Microsoft Intune 라이선스 할당](../fundamentals/licenses-assign.md)을 참조하세요.
 
-* **Intune 앱 보호 정책**: 모든 Intune 앱 보호 정책에 대해 앱을 테스트하려면 각 정책 설정에 대해 예상되는 동작이 무엇인지 알고 있어야 합니다. [iOS 앱 보호 정책](../apps/app-protection-policy-settings-ios.md) 및 [Android 앱 보호 정책](../apps/app-protection-policy-settings-android.md)에 대한 설명을 참조하세요. 앱에 Intune SDK를 통합했지만 앱이 아직 Azure Portal에 대상 앱으로 나열되지 않는 경우 “+ 더 많은 앱” 옵션을 선택하고 텍스트 상자에 번들 ID(iOS) 또는 패키지 이름(Android)을 입력하여 정책을 통해 앱을 대상으로 지정할 수 있습니다.
+* **Intune 앱 보호 정책**: 모든 Intune 앱 보호 정책에 대해 앱을 테스트하려면 각 정책 설정에 대해 예상되는 동작이 무엇인지 알고 있어야 합니다. [iOS 앱 보호 정책](../apps/app-protection-policy-settings-ios.md) 및 [Android 앱 보호 정책](../apps/app-protection-policy-settings-android.md)에 대한 설명을 참조하세요. 앱이 Intune SDK를 통합 했지만 가능 apps 목록에 나열 되어 있지 않은 경우 ' 사용자 지정 앱 '을 선택할 때 텍스트 상자에 앱의 번들 ID (iOS) 또는 패키지 이름 (Android)을 지정할 수 있습니다. 
 
 * **문제 해결**: 앱의 설치 사용자 환경을 수동으로 테스트하는 동안 문제가 발생하면 [앱 설치 문제 해결](../apps/troubleshoot-app-install.md)을 참조하세요. 
 

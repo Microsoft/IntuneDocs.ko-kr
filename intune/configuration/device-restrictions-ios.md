@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465646"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992944"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 iOS 및 iPadOS 디바이스 설정
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 이 문서에서는 iOS 및 iPadOS 디바이스에서 제어할 수 있는 다양한 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 사용하여 기능을 허용하거나 사용하지 않도록 설정하고, 암호 규칙을 설정하고, 특정 앱을 허용 또는 제한합니다.
 
@@ -52,7 +50,7 @@ ms.locfileid: "74465646"
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>설정 적용 대상: 장치 등록, 자동 장치 등록 (감독 됨)
 
 - **신뢰할 수 없는 TLS 인증서**: **차단**을 선택하면 디바이스에서 신뢰할 수 없는 TLS(전송 계층 보안) 인증서가 차단됩니다. **구성되지 않음**(기본값)을 사용하면 TLS 인증서가 허용됩니다.
-- **Allow over-the-air PKI updates**(무선 PKI 업데이트 허용): **허용**을 사용하면 사용자가 디바이스를 컴퓨터에 연결할 필요 없이 소프트웨어 업데이트를 받을 수 있습니다.
+- **무선 PKI 업데이트 차단**: **차단** 을 사용 하면 사용자가 장치를 컴퓨터에 연결 하지 않고도 소프트웨어 업데이트를 받을 수 있습니다. **구성 되지 않음** (기본값)은 장치에서이 설정을 업데이트 하지 않습니다.
 - **광고 추적 제한**: **제한**을 선택하여 디바이스 광고 식별자를 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)으로 설정된 상태를 유지합니다.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>설정 적용 대상: 자동 장치 등록 (감독 됨)
@@ -95,7 +93,7 @@ ms.locfileid: "74465646"
 - **구성 프로필 변경**: **차단**을 선택하면 디바이스에서 구성 프로필 변경이 제한됩니다. **구성되지 않음**(기본값)을 통해 사용자는 구성 프로필을 설치할 수 있습니다.
 - **활성화 잠금**: **허용**을 선택하면 감독 모드의 iOS 디바이스에서 활성화 잠금을 사용하도록 설정할 수 있습니다. 활성화 잠금을 사용하면 분실되거나 도난 당한 디바이스를 다시 활성화하기 더 어렵습니다.
 - **앱 차단 제거**: **차단**을 선택하여 사용자가 앱을 제거하지 못하도록 합니다. **구성되지 않음**(기본값)을 통해 사용자가 디바이스에서 앱을 제거할 수 있습니다.
-- **USB 제한 모드 차단**: **차단**을 선택하면 감독 모드 디바이스에서 USB 제한 모드가 사용하지 않도록 설정됩니다. USB 제한 모드는 한 시간 동안 USB 액세서리가 잠긴 디바이스와 데이터를 교환하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 USB 제한 모드가 허용됩니다.
+- **장치가 잠겨 있는 동안 usb 액세서리 허용**: **허용** 을 사용 하면 usb 액세서리에서 한 시간 이상 잠긴 장치와 데이터를 교환할 수 있습니다. **구성 되지 않음** (기본값)은 장치에서 USB 제한 모드를 업데이트 하지 않습니다.
 - **자동 날짜 및 시간 적용**: **필요**를 선택하면 감독 모드 디바이스가 날짜 및 시간을 자동으로 설정합니다. 디바이스가 셀룰러 또는 Wi-Fi에 연결되고 위치 서비스가 사용하도록 설정되면 디바이스의 표준 시간대가 업데이트됩니다.
 - **학생이 교실 과정을 종료하려면 권한을 요청 해야 함**: **필요**를 선택하면 교실 앱을 사용하여 비관리형 과정에 등록된 학생이 과정을 종료하려면 교사에게 권한을 요청해야 합니다. **구성되지 않음**(기본값)을 통해 학생이 권한을 요청하지 않아도 됩니다.
 

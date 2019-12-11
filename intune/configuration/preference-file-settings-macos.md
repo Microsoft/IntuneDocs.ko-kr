@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9acad2e8539da7210c349ffb254af62f370af5f6
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74391500"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691685"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Microsoft Intune를 사용 하 여 macOS 장치에 속성 목록 파일 추가
 
@@ -29,7 +29,7 @@ Microsoft Intune를 사용 하 여 macOS 장치에 대 한 속성 목록 파일 
 
 이 기능은 다음에 적용됩니다.
 
-- 10.7 이상 버전을 실행 하는 macOS 장치
+- 10.7 이상 버전을 실행하는 macOS 디바이스
 
 일반적으로 속성 목록 파일에는 macOS 응용 프로그램에 대 한 정보가 포함 됩니다. 자세한 내용은 [정보 속성 목록 파일](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) (Apple 웹 사이트) 및 [사용자 지정 페이로드 설정](https://support.apple.com/guide/mdm/custom-mdm9abbdbe7/1/web/1)정보를 참조 하세요.
 
@@ -59,3 +59,5 @@ Microsoft Intune를 사용 하 여 macOS 장치에 대 한 속성 목록 파일 
 ## <a name="next-steps"></a>다음 단계
 
 프로필이 만들어지지만 아직 아무것도 하지 않습니다. 다음으로, [프로필을 할당](device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
+
+Microsoft Edge의 기본 설정 파일에 대 한 자세한 내용은 [macOS에서 Microsoft Edge 정책 설정 구성](https://docs.microsoft.com/deployedge/configure-microsoft-edge-on-mac)을 참조 하세요.
