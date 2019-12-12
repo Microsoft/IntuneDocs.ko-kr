@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8efb9dcf9129375252b5d9a7d1e6255dce39625c
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801404"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Android 설정
@@ -149,7 +149,7 @@ Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를
 - **알 수 없는 출처의 앱 차단**:
 
   - **구성되지 않음**(*기본값*) - 이 설정은 규정 준수 또는 비준수에 대해 평가되지 않습니다.
-  - **보안 > 알 수 없는 소스** 를 사용 하는 **블록** 장치-Android 4.x를 통해 android 4.0에서 지원 *. Android 8.0 이상에서는 지원되지 않음).
+  - **보안 > 알 수 없는 소스** 를 사용 하는 **블록** 장치-Android 4.x를 통해 android 4.0에서 지원 *. Android 8.0 이상에서는 지원되지 않음*).
 
   앱을 테스트용으로 로드하려면 알 수 없는 소스를 허용해야 합니다. Android 앱을 테스트용으로 로드하는 경우가 아니면 이 기능을 **차단**으로 설정하여 이 준수 정책을 사용하도록 설정합니다.
 

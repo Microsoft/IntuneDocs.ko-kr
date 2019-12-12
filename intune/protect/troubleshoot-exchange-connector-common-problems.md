@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: de365312a7d293527c3c83fbbd84ab55de41d530
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74547683"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Intune Exchange connector와 관련 된 일반적인 문제 해결
@@ -84,7 +84,7 @@ Android Knox를 실행 하지 않는 장치에서 온-프레미스 사서함에 
 
    1. EWS URL을 결정 합니다. Exchange의 기본 EWS URL은 `https://<mailServerFQDN>/ews/exchange.asmx`있지만 URL이 다를 수 있습니다. Exchange 관리자에 게 문의 하 여 사용자 환경에 맞는 올바른 URL을 확인 하십시오.
 
-   2. ‘OnPremisesExchangeConnectorServiceConfiguration.xml’ 파일을 편집합니다.  기본적으로이 파일은 Exchange connector를 실행 하는 컴퓨터의 *%ProgramData%\Microsoft\Windows Intune Exchange connector* 에 있습니다. 텍스트 편집기에서 파일을 열고 다음 줄을 변경 하 여 사용자 환경에 대 한 EWS URL을 반영 합니다. `<ExchangeWebServiceURL>https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
+   2. ‘OnPremisesExchangeConnectorServiceConfiguration.xml’ 파일을 편집합니다.  기본적으로이 파일은 Exchange connector를 실행 하는 컴퓨터의 *%ProgramData%\Microsoft\Windows Intune Exchange connector* 에 있습니다. 텍스트 편집기에서 파일을 열고 다음 줄을 변경 하 여 사용자 환경에 대 한 EWS URL을 반영 합니다. `<ExchangeWebServiceURL> https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
 
 3. 파일을 저장한 다음 컴퓨터 또는 Microsoft Intune Exchange Connector 서비스를 다시 시작합니다.
 
