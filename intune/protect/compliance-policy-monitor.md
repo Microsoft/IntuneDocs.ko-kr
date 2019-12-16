@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/14/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410157"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992991"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 디바이스 준수 정책 모니터링
 
@@ -98,8 +98,7 @@ ms.locfileid: "74410157"
 
 ![비준수 상태 선택](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-이 작업을 수행하면 **디바이스 준수** 창이 열리고 **디바이스 상태** 차트에 디바이스가 표시됩니다. 이 차트는 운영 체제 플랫폼, 마지막 체크 인 날짜 등을 포함하여 해당 상태의 디바이스에 대한 자세한 정보를 보여 줍니다. 
-
+이 작업을 수행하면 **디바이스 준수** 창이 열리고 **디바이스 상태** 차트에 디바이스가 표시됩니다. 이 차트는 운영 체제 플랫폼, 마지막 체크 인 날짜 등을 포함하여 해당 상태의 디바이스에 대한 자세한 정보를 보여 줍니다.
 ![해당 특정 상태의 디바이스에 대한 자세한 정보를 보여주는 대시보드 이미지](./media/compliance-policy-monitor/drill-down-details.png)
 
 특정 사용자가 소유하는 모든 디바이스를 보려는 경우 사용자의 이메일을 입력하여 차트 보고서를 필터링할 수도 있습니다.
@@ -132,7 +131,7 @@ Intune에서는 해당 디바이스에 적용된 디바이스 준수 정책 설�
 
 - **할당된 준수 정책이 없는 디바이스 표시** 보안 설정을 사용하여 준수 정책이 없는 디바이스를 식별하는 것은 중요합니다. 최소 하나 이상의 준수 정책을 장치에 할당할 수 있습니다.
 
-  보안 설정은 Intune 포털에서 구성할 수 있습니다. **디바이스** > **준수 정책** > **준수 정책 설정**으로 이동합니다. 그런 다음, **할당된 준수 정책이 없는 디바이스 표시**를 **준수** 또는 **비준수**로 설정합니다. 
+  보안 설정은 Intune 포털에서 구성할 수 있습니다. **디바이스** > **준수 정책** > **준수 정책 설정**으로 이동합니다. 그런 다음, **할당된 준수 정책이 없는 디바이스 표시**를 **준수** 또는 **비준수**로 설정합니다.
 
   [Intune 서비스에서 보안 강화](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/)를 자세히 읽어보세요.
 
@@ -140,7 +139,7 @@ Intune에서는 해당 디바이스에 적용된 디바이스 준수 정책 설�
 
 ### <a name="per-policy-device-compliance"></a>정책별 디바이스 준수
 
-**정책 준수** 차트는 정책과 규정을 준수하는 디바이스와 그렇지 않은 디바이스의 수를 표시합니다. 
+**정책 준수** 차트는 정책과 규정을 준수하는 디바이스와 그렇지 않은 디바이스의 수를 표시합니다.
 
 ![정책의 목록, 해당 정책에 대한 준수 및 비준수 디바이스의 수 확인](./media/compliance-policy-monitor/idc-8.png)
 
@@ -149,11 +148,6 @@ Intune에서는 해당 디바이스에 적용된 디바이스 준수 정책 설�
 **설정 준수** 차트는 모든 준수 정책의 모든 디바이스 준수 정책 설정, 디바이스 설정이 적용되는 플랫폼 및 비준수 디바이스의 수를 표시합니다.
 
 ![다른 정책에서 모든 설정의 목록 확인](./media/compliance-policy-monitor/idc-10.png)
-
-> [!NOTE]
-> 정책을 디바이스에 할당하고 동일한 디바이스에 사용자를 할당할 수 있습니다. 일부 시나리오에서는 디바이스가 다시 부팅되는 경우처럼 사용자가 로그인하기 전에 디바이스가 동기화될 수 있습니다. 규정 준수에서 이 사용자를 평가하고 디바이스를 비규격으로 표시할 수 있습니다. 이 동작은 시스템 계정을 비규격 사용자로 표시할 수도 있습니다.
->
-> 이는 다중 사용자 Windows 10 디바이스의 알려진 문제입니다. 이 동작에 대한 변경 사항 또는 업데이트는 [개발 중](../fundamentals/in-development.md) 및/또는 [새로운 기능](../fundamentals/whats-new.md)에서 발표되었습니다.
 
 ## <a name="view-compliance-reports"></a>새로운 규정 준수 보고서
 
@@ -183,14 +177,15 @@ Intune에서는 해당 디바이스에 적용된 디바이스 준수 정책 설�
 2. 정책 > **개요**를 선택합니다. 이 보기에서 정책 할당은 다음 상태를 포함합니다.
 
     - **성공**: 정책이 적용됩니다.
-    - **오류**: 정책을 적용하지 못했습니다. 메시지는 일반적으로 설명으로 연결되는 오류 코드와 함께 표시됩니다. 
+    - **오류**: 정책을 적용하지 못했습니다. 메시지는 일반적으로 설명으로 연결되는 오류 코드와 함께 표시됩니다.
     - **충돌**: 두 설정이 같은 디바이스에 적용되고, Intune에서 충돌을 해결할 수 없습니다. 관리자가 검토해야 합니다.
-    - **보류 중**: 아직 정책을 받기 위해 디바이스가 Intune을 사용하여 체크 인되지 않았습니다. 
-    - **해당 없음**: 디바이스가 치가 정책을 받을 수 없습니다. 예를 들어 정책이 iOS 11.1에 관련된 설정을 업데이트하지만, 디바이스에서 iOS 10이 사용되고 있습니다. 
+    - **보류 중**: 아직 정책을 받기 위해 디바이스가 Intune을 사용하여 체크 인되지 않았습니다.
+    - **해당 없음**: 디바이스가 치가 정책을 받을 수 없습니다. 예를 들어 정책이 iOS 11.1에 관련된 설정을 업데이트하지만, 디바이스에서 iOS 10이 사용되고 있습니다.
 
 3. 이 정책을 사용하여 디바이스의 세부 정보를 확인하려면 상태 중 하나를 선택합니다. 예를 들어 **성공**을 선택합니다. 다음 창에서 디바이스 이름 및 배포 상태를 포함한 특정 디바이스 세부 정보가 나열됩니다.
 
 ## <a name="how-intune-resolves-policy-conflicts"></a>Intune에서 정책 충돌을 해결하는 방법
+
 정책 충돌은 디바이스에 여러 Intune 정책을 적용할 때 발생할 수 있습니다. 정책 설정이 겹치면 Intune에서는 다음 규칙을 사용하여 충돌을 해결합니다.
 
 - Intune 구성 정책과 준수 정책에 충돌하는 설정이 있는 경우 구성 정책 설정보다 준수 정책 설정이 우선합니다. 이 문제는 구성 정책 설정이 더 안전하더라도 발생합니다.

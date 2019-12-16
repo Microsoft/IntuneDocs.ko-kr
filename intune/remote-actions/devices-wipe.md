@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712208"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991775"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>초기화, 사용 중지 또는 수동으로 디바이스 등록을 취소하여 디바이스 제거
 
@@ -47,6 +47,8 @@ ms.locfileid: "73712208"
 
 **등록 상태 및 사용자 계정 유지** 옵션은 Windows 10 버전 1709 이상에만 사용할 수 있습니다.
 
+**보호되는 초기화 수행** 옵션을 사용하면 디바이스를 꺼도 초기화 작업을 우회할 수 없습니다. 보호되는 초기화는 성공할 때까지 디바이스 재설정을 계속 시도합니다. 일부 구성에서 이 작업을 수행하면 디바이스를 다시 부팅할 수 없는 상태로 남을 수 있습니다.
+
 MDM 정책은 다음에 디바이스가 Intune에 연결될 때 다시 적용됩니다.
 
 초기화는 새로운 사용자에게 디바이스를 제공하기 전이나 디바이스를 분실하거나 도난당한 경우 디바이스를 다시 설정하는 데 유용합니다. **초기화**는 주의하여 선택해야 합니다. 디바이스의 데이터가 복구될 수 없습니다.
@@ -57,7 +59,7 @@ MDM 정책은 다음에 디바이스가 Intune에 연결될 때 다시 적용됩
 3. **디바이스** > **모든 디바이스**를 선택합니다.
 4. 초기화하려는 디바이스의 이름을 선택합니다.
 5. 디바이스 이름을 보여주는 창에서 **초기화**를 선택합니다.
-6. Windows 10 버전 1709 이상의 경우 **등록 상태 및 사용자 계정 유지** 옵션이 있습니다. 
+6. Windows 10 버전 1709 이상의 경우 **디바이스 초기화, 등록 상태 및 연결된 사용자 계정 유지** 옵션이 있습니다. 
     
     |초기화하는 동안 유지 |보존되지 않음|
     | -------------|------------|

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713232"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907290"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune에서 사용자 지정 알림 보내기  
 
@@ -69,7 +69,7 @@ Microsoft Intune를 사용하여 관리형 iOS 및 Android 디바이스의 사�
 
 ## <a name="send-a-custom-notification-to-groups"></a>그룹에 사용자 지정 알림 보내기  
 
-1. 알림을 만들고 보낼 권한이 있는 계정으로 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **디바이스** > **사용자 지정 알림 보내기**로 이동합니다.  
+1. 알림을 만들고 보낼 권한이 있는 계정으로 [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **테넌트 관리** > **사용자 지정 알림**으로 이동합니다.  
 
 2. 기본 탭에 다음을 지정하고 **다음**을 선택하여 계속합니다.  
    - **제목** –이 알림의 제목을 지정합니다. 제목은 50자로 제한됩니다.  
@@ -93,7 +93,7 @@ Intune은 사용자가 보낸 사용자 지정 알림을 추적하지 않으며 
 
 2. 알림을 전송하려는 디바이스를 선택합니다.  
 
-3. 디바이스 **개요** 페이지의 왼쪽 위에서 **...기타**를 선택합니다.  
+3. 디바이스 **개요** 페이지의 왼쪽 위에서 **...** (줄임표) 옵션을 선택합니다.  
 
 4. **사용자 지정 알림 보내기** 디바이스 작업을 선택하여 다음 메시지 세부 정보를 지정하는 *사용자 지정 알림 보내기* 창을 엽니다.  
 

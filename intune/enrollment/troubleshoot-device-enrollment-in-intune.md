@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713497"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832733"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -64,7 +64,7 @@ ms.locfileid: "73713497"
 
 다음 단계에 따라 사용자가 최대 디바이스 수를 초과하여 할당받지 않았는지 확인합니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스 등록** > **등록 제한** > **디바이스 개수 제한**을 차례로 선택합니다. **디바이스 제한** 열의 값을 확인합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **등록 제한** > **디바이스 개수 제한**을 차례로 선택합니다. **디바이스 제한** 열의 값을 확인합니다.
 
 2. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **사용자** > **모든 사용자**를 차례로 선택하고 **디바이스**를 선택합니다. 디바이스 수를 확인합니다.
 
@@ -374,7 +374,7 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 4. 등록 프로세스를 다시 시작한다고 사용자에게 알립니다.
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>VPP 토큰에서 문제가 발생했는지 확인
-1. **Intune** > **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** &gt; 토큰 이름 &gt; **프로필** &gt; 프로필 이름 &gt; **관리** > **속성**으로 이동합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰** > 토큰 이름 > **프로필** > 프로필 이름 > **관리** > **속성**을 선택합니다.
 2. 속성을 검토하여 다음과 유사한 오류가 표시되는지 확인합니다.
     - 이 토큰은 만료되었습니다.
     - 이 토큰은 회사 포털 라이선스에 해당되지 않습니다.
@@ -384,13 +384,13 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 3. 토큰에 대한 문제를 해결합니다.
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>VPP 토큰에서 차단된 디바이스 식별
-1. **Intune** > **디바이스 등록** > **Apple 등록** > **등록 프로그램 토큰** &gt; 토큰 이름 &gt; **디바이스**로 이동합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS**k > **iOS 등록** > **등록 프로그램 토큰** > 토큰 이름 > **디바이스**를 선택합니다.
 2. **프로필 상태** 열을 **차단됨**으로 필터링합니다.
 3. **차단됨** 상태인 모든 디바이스에 대한 일련 번호를 기록해 둡니다.
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>원격으로 차단된 디바이스 초기화
 VPP 토큰에서 발생한 문제를 해결한 후에 차단된 디바이스를 초기화해야 합니다.
-1. **Intune** > **디바이스** > **모든 디바이스** > **열** > **일련 번호** > **적용**으로 이동합니다. 
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **모든 디바이스** > **열** > **일련 번호** > **적용**을 선택합니다. 
 2. 차단된 디바이스 각각의 경우 **모든 디바이스** 목록에서 선택한 다음, **초기화** > **예**를 선택합니다.
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>등록 프로세스를 다시 시작한다고 사용자에게 알립니다.
@@ -414,8 +414,8 @@ VPP 토큰에서 발생한 문제를 해결한 후에 차단된 디바이스를 
 - 조직에서 개인 macOS 디바이스를 차단하는 등록 제한을 설정하는 경우 수동으로 [개인 디바이스 일련 번호 추가](corporate-identifiers-add.md#manually-enter-corporate-identifiers)를 Intune에 추가해야 합니다.  
 - 디바이스가 Intune의 다른 사용자에게 여전히 할당된 경우 이전 소유자가 회사 포털 앱을 사용하여 디바이스를 제거하거나 재설정하지 않았습니다. Intune에서 부실 디바이스 레코드를 정리하려면:  
 
-    1. [Azure Portal의 Intune](https://portal.manage.microsoft.com)으로 이동하여 관리 자격 증명을 사용하여 로그인합니다.
-    2. Intune > **디바이스** > **모든 디바이스**로 이동합니다.  
+    1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 관리 자격 증명을 사용하여 로그인합니다.
+    2. **디바이스** > **모든 디바이스**를 선택합니다.  
     3. 등록 문제가 있는 디바이스를 찾습니다. 디바이스 이름 또는 MAC/HW 주소로 검색하여 결과를 좁힙니다.
     4. 디바이스 > **삭제**를 선택합니다. 디바이스와 연결된 다른 모든 항목을 삭제합니다.  
 

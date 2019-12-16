@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/05/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346960d8d1d79afc4494064570d1a03e83b8a302
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8d7b8d96ae1582b5cb434c80d44ef55a31c4781b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510153"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882290"
 ---
 # <a name="microsoft-intune-licensing"></a>Microsoft Intune 라이선스
 Microsoft Intune은 학교와 소규모 비즈니스를 위한 사용이 간단한 관리 경험부터 엔터프라이즈 고객에게 필요한 고급 기능까지, 다양한 고객 요구 사항 및 조직 규모를 위해 제공됩니다. Microsoft Intune이 포함된 대부분의 라이선스에서는 구독이 활성 상태인 한 System Center Configuration Manager를 사용할 수 있는 권리도 제공합니다. 
@@ -35,8 +35,8 @@ Intune은 다음과 같은 라이선스에 포함되어 있습니다.
 - Enterprise Mobility + Security E3
 - Microsoft 365 Business
 - Microsoft 365 F1
-
-
+- Microsoft 365 Government G5
+- Microsoft 365 Government G3
 
 ## <a name="microsoft-intune-for-education"></a>Microsoft Intune for Education
 Intune for Education은 다음과 같은 라이선스에 포함되어 있습니다.
@@ -46,7 +46,7 @@ Intune for Education은 다음과 같은 라이선스에 포함되어 있습니�
 
 ## <a name="additional-information"></a>추가 정보
 - 위에 나열된 번들에 더해 독립 실행형인 Microsoft Intune 사용자 및 디바이스 구독도 있습니다.
-- Microsoft Intune 디바이스 전용 구독은 사용자 선호도 기능이 필요하지 않은 키오스크 유형 시나리오에서 사용 가능합니다.
+- Microsoft Intune 디바이스 전용 구독은 키오스크, 전용 디바이스, 전화 회의 공간용 디바이스, IoT 및 사용자 기반 보안 및 관리 기능이 필요하지 않은 기타 단일 사용 디바이스를 관리하는 데 사용할 수 있습니다.
 - 사용자 또는 디바이스가 직접적 또는 간접적으로 Microsoft Intune 서비스의 혜택을 받는 경우([Microsoft API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)를 통해 Microsoft Intune 서비스에 액세스하는 경우 포함)에는 적절한 Microsoft Intune 라이선스가 필요합니다.
 - 위 표에 나열되지 않은 라이선스에는 Intune이 포함되어 있지 않습니다.
 

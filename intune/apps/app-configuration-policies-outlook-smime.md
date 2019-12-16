@@ -16,16 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c9572f4accb1be232d4667d99b98beff90d81379
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564198"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000417"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>iOS용 Outlook을 사용하여 S/MIME 구성
 
 S/MIME(Secure/Multipurpose Internet Mail Extensions)은 EAS(Exchange ActiveSync) 계정에서 송수신되는 메일에 대해 추가적인 보안 계층을 제공합니다. [Microsoft Outlook](https://aka.ms/omsmime)은 S/MIME을 활용하여 사용자가 보내는 메시지와 첨부 파일을 모두 암호화할 수 있도록 함으로써 의도한 받는 사람만 Office 365 계정을 사용하여 메시지 내용을 읽고 액세스할 수 있도록 합니다. 또한 사용자는 메시지에 디지털로 서명하여 받는 사람이 보낸 사람의 ID를 확인하고 메시지가 변조되지 않았는지 확인하도록 할 수 있습니다. 이 기능은 인증서를 활용하여 가능합니다. 자세한 내용은 [S/MIME 이해](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN)를 참조하세요.
+
+> [!NOTE]
+> 이 기능은 지연되었지만 곧 릴리스될 예정입니다.
 
 > [!NOTE]
 > 이 항목에서는 [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)를 통해 신뢰할 수 있는 루트 인증서를 배포하는 방법을 설명합니다. Microsoft Endpoint Manager는 모든 엔드포인트를 관리하기 위한 단일 통합형 엔드포인트 관리 플랫폼입니다. 이 Microsoft Endpoint Manager 관리 센터는 ConfigMgr와 Microsoft Intune에 연결됩니다.
@@ -78,9 +81,6 @@ iOS용 Outlook에서 사용할 수 있는 S/MIME 인증서를 자동으로 배�
 6. **구성 설정**을 클릭하여 구성 설정을 추가합니다. 
     - **구성 설정 형식** 옆에 있는 **구성 디자이너 사용**을 선택하고 기본 설정을 적용합니다. 자세한 내용은 [Microsoft Outlook 구성 설정](~/apps/app-configuration-policies-outlook.md)을 참조하세요.
 7. **S/MIME**을 클릭하여 **Outlook S/MIME 설정**을 표시합니다.
-
-    ![iOS용 Outlook S/MIME 설정 스크린샷](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
 8. **S/MIME 사용**을 **예**로 설정합니다.
 9. **Intune에서 S/MIME 인증서 배포**를 **예**로 설정합니다.
 10. **인증서 프로필 유형** 옆에 있는 **서명 인증서**에서 다음 옵션 중 하나를 선택합니다.

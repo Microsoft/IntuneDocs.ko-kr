@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18cf8e3aec0c7ed7d8869c0f5b13b6e39df23d77
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: b7b77c4f0127c9ee16b255d0e0e28622b85c323b
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713418"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907256"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Intune을 사용하여 원격으로 디바이스 다시 시작
 
@@ -46,7 +46,7 @@ ms.locfileid: "73713418"
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 3. **디바이스** > **모든 디바이스**를 선택합니다.
-4. 관리하는 디바이스 목록에서 디바이스를 선택하고 **자세히**를 선택한 다음, **다시 시작** 디바이스 원격 작업을 선택합니다.
+4. 관리하는 디바이스 목록에서 디바이스를 선택하고 **다시 시작** > **예**를 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

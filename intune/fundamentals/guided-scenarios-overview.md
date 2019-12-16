@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635360"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899134"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Intune 단계별 시나리오 개요 
 
@@ -33,7 +33,7 @@ ms.locfileid: "73635360"
 
 ## <a name="types-of-guided-scenarios"></a>단계별 시나리오 유형 
 
-간단히 하기 위해 모든 단계별 시나리오에서는 범위 태그 <link>, 제외 그룹 및 가상 그룹 할당 <link> 같은 복잡한 범위 지정 기능을 생략합니다. 단계별 시나리오에서 생성된 모든 리소스는 시나리오를 완료하는 관리자의 모든 범위 태그를 상속합니다. 특정 시나리오에서는 밀접하게 관련된 시나리오를 처리하도록 일반 설정을 일정 수준 사용자 지정할 수 있습니다. 이 시나리오에서는 포함 그룹에 대한 그룹 할당만 지원합니다. 다른 단계별 시나리오의 경우 전체 시나리오는 사용자 지정을 허용하지 않아 하나의 일관된 환경을 보장하며 모든 할당을 수신할 새 그룹을 자동으로 생성합니다. 단계별 시나리오를 완료한 후 기존 정책, 앱 및 프로필 워크로드를 통해 직접 보다 정교한 할당을 자유롭게 사용할 수 있습니다.  
+간단히 하기 위해 모든 단계별 시나리오에서는 범위 태그, 제외 그룹 및 가상 그룹 할당 같은 복잡한 범위 지정 기능을 생략합니다. 단계별 시나리오에서 생성된 모든 리소스는 시나리오를 완료하는 관리자의 모든 범위 태그를 상속합니다. 특정 시나리오에서는 밀접하게 관련된 시나리오를 처리하도록 일반 설정을 일정 수준 사용자 지정할 수 있습니다. 이 시나리오에서는 포함 그룹에 대한 그룹 할당만 지원합니다. 다른 단계별 시나리오의 경우 전체 시나리오는 사용자 지정을 허용하지 않아 하나의 일관된 환경을 보장하며 모든 할당을 수신할 새 그룹을 자동으로 생성합니다. 단계별 시나리오를 완료한 후 기존 정책, 앱 및 프로필 워크로드를 통해 직접 보다 정교한 할당을 자유롭게 사용할 수 있습니다.  
 
 다음 단계별 시나리오를 사용할 수 있습니다. 
 - 모바일용 Microsoft Edge 배포 

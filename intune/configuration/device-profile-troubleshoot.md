@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/04/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199184"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832611"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune의 디바이스 정책 및 프로필을 통한 일반적인 질문, 이슈 및 해결 방법
 
@@ -50,7 +50,9 @@ Intune의 디바이스 프로필 및 정책을 사용하는 경우 일반적인 
 
 Intune 서비스에서 디바이스에 체크 인을 알립니다. 알림 시간은 즉시에서 몇 시간까지 다양합니다. 이러한 알림 시간은 플랫폼에 따라서도 다릅니다.
 
-첫 번째 알림 이후 디바이스가 정책 또는 프로필을 수신하기 위해 체크 인하지 않으면 알림을 3번 더 보냅니다. 꺼져 있거나 네트워크에 연결되지 않은 오프라인 디바이스는 알림을 받지 못할 수 있습니다. 이 경우 디바이스는 Intune 서비스를 사용하여 예약된 다음 체크 인에서 정책 또는 프로필을 가져옵니다. **예상 시간**은 다음과 같습니다.
+첫 번째 알림 이후 디바이스가 정책 또는 프로필을 수신하기 위해 체크 인하지 않으면 알림을 3번 더 보냅니다. 꺼져 있거나 네트워크에 연결되지 않은 오프라인 디바이스는 알림을 받지 못할 수 있습니다. 이 경우 디바이스는 Intune 서비스를 사용하여 예약된 다음 체크 인에서 정책 또는 프로필을 가져옵니다. 규정을 준수하지 않는 상태로 전환하는 디바이스를 포함하여 비준수에 대해 확인하는 경우에도 마찬가지입니다.
+
+**예상** 빈도:
 
 | 플랫폼 | 새로 고침 주기|
 | --- | --- |
@@ -61,7 +63,7 @@ Intune 서비스에서 디바이스에 체크 인을 알립니다. 알림 시간
 | Windows Phone | 약 8시간마다 |
 | Windows 8.1 | 약 8시간마다 |
 
-최근 등록된 디바이스인 경우 다음과 같이 준수 및 구성 체크 인이 더 자주 실행됩니다. **예상 시간**은 다음과 같습니다.
+최근 등록된 디바이스의 경우 다음과 같이 준수, 비준수 및 구성 체크 인이 더 자주 실행됩니다. **예상 시간**은 다음과 같습니다.
 
 | 플랫폼 | 빈도 |
 | --- | --- |

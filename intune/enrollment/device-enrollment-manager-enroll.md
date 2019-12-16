@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0012a80f0e9ea60b41c94a582e42d5f647c6bbc2
-ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
+ms.openlocfilehash: 30191aea892e8409bb6165034256a99f6f32a502
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239214"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955408"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>디바이스 등록 관리자 계정을 사용하여 Intune에서 디바이스 등록
 
@@ -46,7 +46,7 @@ DEM 사용자 계정 및 DEM 사용자 계정을 사용하여 등록된 디바�
 
 ## <a name="add-a-device-enrollment-manager"></a>디바이스 등록 관리자 추가
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록** > **디바이스 등록 관리자**를 선택합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하여 **디바이스** > **디바이스 등록** > **디바이스 등록 관리자**를 선택합니다.
 
 2. **추가**를 선택합니다.
 
@@ -67,6 +67,6 @@ DEM 사용자 계정 및 DEM 사용자 계정을 사용하여 등록된 디바�
 
 **디바이스 등록 관리자를 제거하려면**
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록**을 선택한 다음, **디바이스 등록 관리자**를 선택합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하여 **디바이스** > **디바이스 등록** > **디바이스 등록 관리자**를 선택합니다.
 2. **디바이스 등록 관리자** 블레이드에서 DEM 사용자를 선택하고 **삭제**를 선택합니다.
 

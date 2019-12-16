@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ab720ffee3f468d3700558dfbde460ee8f712ea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505490"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955374"
 ---
 # <a name="categorize-devices-into-groups"></a>디바이스를 그룹으로 분류
 
@@ -45,11 +45,10 @@ ms.locfileid: "72505490"
 ## <a name="how-to-configure-device-categories"></a>디바이스 범주를 구성하는 방법
 
 ### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>1단계: Azure Portal의 Intune 블레이드에서 디바이스 범주 만들기
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스 등록**을 선택합니다.
-2. **디바이스 등록** 블레이드에서 **디바이스 범주**를 선택합니다.
-3. **디바이스 범주** 페이지에서 **만들기**를 선택하여 새 범주를 추가합니다.
-4. **디바이스 범주 만들기** 블레이드에서 새 범주의 **이름** 및 선택적 **설명**을 입력합니다.
-5. 작업이 완료되면 **만들기**를 선택합니다. 범주 목록에서 새 범주를 확인할 수 있습니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **디바이스** > **디바이스 범주**를 선택합니다.
+2. **디바이스 범주** 페이지에서 **만들기**를 선택하여 새 범주를 추가합니다.
+3. **디바이스 범주 만들기** 블레이드에서 새 범주의 **이름** 및 선택적 **설명**을 입력합니다.
+4. 작업이 완료되면 **만들기**를 선택합니다. 범주 목록에서 새 범주를 확인할 수 있습니다.
 
 2단계에서 Azure AD(Azure Active Directory) 보안 그룹을 만들 때 디바이스 범주 이름을 사용합니다.
 
@@ -64,20 +63,16 @@ ms.locfileid: "72505490"
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>관리하는 디바이스의 범주 보기
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스**를 선택합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **디바이스** > **모든 디바이스**를 선택합니다.
 
-2. **관리** 아래에서 **모든 디바이스**를 선택합니다.
+2. 디바이스 목록에서 **디바이스 범주** 열을 확인합니다.
 
-3. 디바이스 목록에서 **디바이스 범주** 열을 확인합니다.
-
-**디바이스 범주** 열이 표시되지 않는 경우 **열**을 선택합니다. 목록에서 **디바이스 범주**를 선택한 다음, **적용**을 선택합니다.
+**디바이스 범주** 열이 표시되지 않는 경우 **열** > **범주** > **적용**을 선택합니다.
 
 ### <a name="change-the-category-of-a-device"></a>디바이스의 범주 변경
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 **디바이스**를 선택합니다.
-2. **관리** 섹션 아래 **디바이스** 블레이드에서 **모든 디바이스**를 선택합니다.
-3. 디바이스 목록에서 원하는 디바이스를 선택합니다. **관리** 섹션 아래의 디바이스 속성 블레이드에서 **속성**을 선택합니다.
-4. 다음 블레이드에서 선택한 디바이스의 **디바이스 범주**를 이전에 구성한 범주 이름으로 변경할 수 있습니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **디바이스** > **모든 디바이스**, 지우려는 디바이스를 선택하고 **속성**을 선택합니다.
+2. 다음 블레이드에서 선택한 디바이스의 **디바이스 범주**를 이전에 구성한 범주 이름으로 변경할 수 있습니다.
 
 ## <a name="after-you-configure-device-groups"></a>디바이스 그룹 구성 후
 

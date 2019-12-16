@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune에서 디바이스 준수 정책 - Azure | Microsoft Docs
-description: 디바이스 준수 정책 사용 시작, 상태 및 심각도 수준의 개요, InGracePeriod 상태 사용, 조건부 액세스 작업, 할당된 정책 없이 디바이스 처리 및 Microsoft Intune에서 Azure Portal과 클래식 포털의 준수 차이
+description: 디바이스 준수 정책 및 상태와 심각도 수준의 개요 사용, InGracePeriod 상태 사용, 조건부 액세스 작업, 할당된 정책 없는 디바이스 처리를 시작합니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749178"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860298"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune을 사용하여 조직의 리소스 액세스를 허용하도록 디바이스에서 규칙을 설정합니다.
 
@@ -130,21 +130,6 @@ Intune에는 기본 제공 준수 정책 설정 세트도 포함됩니다. 다�
 
 - 조건부 액세스 정책이 사용자에게 적용될 경우 디바이스가 차단됩니다.
 - 회사 포털 앱은 모든 준수 문제에 대해 사용자에게 알립니다.
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Azure 클래식 포털 대 Azure 포털
-
-Azure Portal에서 디바이스 준수 정책을 사용하는 경우 주요 차이점은 다음과 같습니다.
-
-- Azure Portal에서 준수 정책은 지원되는 각 플랫폼에 대해 개별적으로 생성됩니다.
-- Azure 클래식 포털에서는 하나의 디바이스 준수 정책이 지원되는 모든 플랫폼에 공통적으로 적용됩니다.
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-[클래식 포털](https://manage.microsoft.com)에서 생성된 디바이스 준수가 [Azure Portal](https://portal.azure.com)에는 표시되지 않습니다. 그러나 해당 정책은 여전히 사용자를 대상으로 하며 클래식 포털을 통해 관리할 수 있습니다.
-
-Azure Portal에서 디바이스 준수와 관련된 기능을 사용하려는 경우 Azure Portal에서 새로운 디바이스 준수 정책을 만들어야 합니다. 클래식 포털에서도 디바이스 준수 정책을 할당받은 사용자에게 Azure Portal의 디바이스 준수 정책을 할당하는 경우 Azure Portal의 디바이스 준수 정책이 클래식 포털에서 만든 정책보다 우선합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

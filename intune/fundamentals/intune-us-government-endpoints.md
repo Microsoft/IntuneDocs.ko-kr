@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5e52d1967ff6f5cf97334c099bc2b5b854ae87c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502690"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000400"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune에 대한 미국 정부 엔드포인트
 
@@ -57,3 +57,25 @@ ms.locfileid: "72502690"
 - AAD Graph: https:\//directory.microsoftazure.us 및 https:\//graph.microsoftazure.us
 - MS Graph: https:\//graph.microsoft.us
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
+
+## <a name="windows-push-notification-services"></a>Windows Push Notification Services
+MDM(모바일 디바이스 관리)을 사용하여 관리되는 Intune 관리 디바이스에서 디바이스 작업 및 기타 작업을 즉시 수행하려면 Windows PUsh Notification Services(WNS)가 필요합니다. 자세한 내용은 [WNS 트래픽을 지원하기 위한 엔터프라이즈 방화벽 및 프록시 구성](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)을 참조하세요.
+
+## <a name="apple-device-network-information"></a>Apple 디바이스 네트워크 정보
+
+|**사용 목적**|**호스트 이름(IP 주소/서브넷)**|**프로토콜**|**포트**|
+|------------|-----------|------------|-----------|
+|Apple 서버에서 콘텐츠 받기 및 표시|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
+|APNS 서버와 통신|#-courier.push.apple.com<br>‘#’은 0~50 사이 임의 숫자입니다.|TCP|5223 및 443|
+|인터넷, iTunes Store, macOS 앱 스토어, iCloud, 메시지 등 액세스를 포함한 다양한 기능|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 또는 443|
+
+자세한 내용은 다음을 참조하십시오.
+
+- [Apple 소프트웨어 제품에서 사용하는 TCP 및 UDP 포트](https://support.apple.com/HT202944)
+- [macOS, iOS 및 iTunes 서버 호스트 연결 및 iTunes 백그라운드 프로세스 정보](https://support.apple.com/HT201999)
+- [macOS 및 iOS 클라이언트가 Apple 푸시 알림을 받지 못하는 경우](https://support.apple.com/HT203609)
+
+## <a name="next-steps"></a>다음 단계
+[Microsoft Intune에 대한 네트워크 엔드포인트](intune-endpoints.md)
+
+[Windows 10 자동 등록 및 디바이스 등록](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

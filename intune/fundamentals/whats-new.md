@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/22/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ad5c26770537ce6a285989f8ca3804277616419
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540783"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000383"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -54,12 +54,42 @@ ms.locfileid: "74540783"
 -->  
 
 <!-- ########################## -->
+## <a name="week-of-december-9-2019"></a>2019년 12월 9일 주
+
+#### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>관리되는 검색 시나리오를 위해 Microsoft Edge로 마이그레이션<!-- 5173762 -->
+
+Intune Managed Browser가 점차 사용 중지되는 상황에서 사용자를 Edge로 이동하는 데 필요한 단계를 간소화하기 위해 앱 보호 정책을 변경했습니다. 앱 보호 정책 설정 **다른 앱을 사용한 웹 콘텐츠 전송 제한**에 대한 옵션을 다음 중 하나로 업데이트했습니다.
+
+- 모든 앱
+- Intune Managed Browser
+- Microsoft Edge
+- 관리되지 않는 브라우저 
+
+**Microsoft Edge**를 선택하면 관리되는 검색 시나리오에 Microsoft Edge가 필요하다는 액세스 조건 메시지가 최종 사용자에게 표시됩니다. 해당 AAD 계정으로 Microsoft Edge를 다운로드하여 로그인하라는 메시지가 표시됩니다(아직 수행하지 않은 경우).  이는 애플리케이션 구성 설정을 사용하여 MAM 지원 앱을 대상으로 `com.microsoft.intune.useEdge`를 **True**로 설정하는 것과 동일합니다. **정책 관리 브라우저** 설정을 사용하는 기존 앱 보호 정책에 이제 **Intune Managed Browser**가 선택되었으며 작동에는 변화가 없습니다. 즉, **useEdge** 앱 구성 설정을 **True**로 설정한 경우 사용자에 게 Microsoft Edge를 사용하라는 메시지가 표시됩니다. 관리되는 검색 시나리오를 활용하는 모든 고객은 **다른 앱을 사용한 웹 콘텐츠 전송 제한**을 포함해 앱 보호 정책을 업데이트하여 연결을 시작하는 앱에 관계없이 사용자가 Microsoft Edge로 전환하기 위한 적절한 지침을 확인하는 것이 좋습니다. 
+
+<!-- ########################## -->
+## <a name="week-of-december-2-2019"></a>2019년 12월 2일 주
+
+#### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>새 Microsoft Endpoint Configuration Manager 공동 관리 라이선스<!--5027281-->
+이제 Software Assurance가 있는 Configuration Manager 고객이 공동 관리를 위해 추가 Intune 라이선스를 구매할 필요 없이 Windows 10 PC용 Intune 공동 관리를 할 수 있는 새로운 라이선스가 제공됩니다. 고객은 이제 Windows 10 공동 관리를 위해 최종 사용자에게 개별 Intune/EMS 라이선스를 할당할 필요가 없습니다.
+- Configuration Manager에서 관리되고 공동 관리에 등록된 디바이스는 Intune 독립 실행형 MDM 관리 PC와 거의 동일한 권한을 가집니다. 그러나 다시 설정한 후에는 Autopilot을 사용하여 다시 프로비전할 수 없습니다.
+- 다른 수단을 사용하여 Intune에 등록된 Windows 10 디바이스에는 전체 Intune 라이선스가 필요합니다.
+- 다른 플랫폼의 디바이스에는 여전히 전체 Intune 라이선스가 필요합니다.
+
+자세한 내용은 [라이선스 사용 약관](https://www.microsoft.com/en-us/Licensing/product-licensing/products)을 참조하세요.
+
+
+<!-- ########################## -->
 ## <a name="week-of-november-18-2019-1911-service-release"></a>2019년 11월 18일 주(1911 서비스 릴리스)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>앱 관리
 
 #### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>iOS용 Microsoft Outlook의 S/MIME 지원<!-- 2669398 idready -->
+
+   > [!NOTE]
+   > 이 기능은 지연되었지만 곧 릴리스될 예정입니다.
+
 Intune은 iOS 디바이스에서 iOS용 Outlook과 함께 사용할 수 있는 S/MIME 서명 및 암호화 인증서 배달을 지원합니다. 자세한 내용은 [iOS용 Outlook의 S/MIME 관리 구성](~/apps/app-configuration-policies-outlook-smime.md)을 참조하세요.
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>앱 데이터를 선택적으로 초기화하는 경우의 UI 업데이트<!-- 4102028 -->

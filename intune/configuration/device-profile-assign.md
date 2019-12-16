@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261681"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860318"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 사용자 및 디바이스 프로필 할당
 
@@ -61,7 +61,7 @@ ms.locfileid: "74261681"
 
 프로필을 만들거나 업데이트하면 프로필에 범위 태그 및 적용 가능성 규칙을 추가할 수도 있습니다.
 
-**범위 태그**는 인사 관리 또는 모든 US-NC 직원과 같은 특정 그룹으로 프로필을 할당 및 필터링할 수 있는 좋은 방법입니다. 자세한 내용은 [분산형 IT에 RBAC 및 범위 태그 사용](../fundamentals/scope-tags.md)을 참조하세요.
+**범위 태그**는 `US-NC IT Team` 또는 `JohnGlenn_ITDepartment` 등 특정 그룹에 프로필을 필터링할 수 있는 좋은 방법입니다. 자세한 내용은 [분산형 IT에 RBAC 및 범위 태그 사용](../fundamentals/scope-tags.md)을 참조하세요.
 
 Windows 10 디바이스에서 **적용 가능성 규칙**을 추가하여 프로필이 특정 OS 버전 또는 특정 Windows 버전에만 적용되도록 할 수 있습니다. [적용 가능성 규칙](device-profile-create.md#applicability-rules)에 대한 추가 정보가 있습니다.
 

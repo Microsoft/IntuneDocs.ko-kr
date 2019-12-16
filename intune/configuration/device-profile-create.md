@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390880"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860386"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필 만들기
 
@@ -93,7 +93,7 @@ ms.locfileid: "74390880"
 
 ## <a name="scope-tags"></a>범위 태그
 
-설정을 추가한 후 프로필에 범위 태그를 추가할 수도 있습니다. 범위 태그는 HR 또는 모든 US-NC 직원과 같은 특정 그룹으로 정책을 할당 및 필터링합니다.
+설정을 추가한 후 프로필에 범위 태그를 추가할 수도 있습니다. 범위 태그는 프로필을 특정 IT 그룹(예: `US-NC IT Team` 또는 `JohnGlenn_ITDepartment`)으로 필터링합니다.
 
 범위 태그 및 수행할 수 있는 작업에 대한 자세한 내용은 [분산형 IT에 RBAC 및 범위 태그 사용](../fundamentals/scope-tags.md)을 참조하세요.
 
@@ -185,6 +185,8 @@ Intune은 다양한 새로 고침 주기를 사용하여 구성 프로필에 대
   다음 이미지는 사용자 및/또는 디바이스에 적용될 수 있는 설정의 예를 보여 줍니다.
 
   ![사용자 및 디바이스에 적용되는 Intune 관리 템플릿](./media/device-profile-create/setting-applies-to-user-and-device.png)
+
+- 제한적인 정책을 만들 때마다 사용자에게 이러한 변경 사항을 알려야 합니다. 예를 들어 암호 요구 사항을 4자에서 6자로 변경하는 경우 정책을 할당하기 전에 사용자에게 알립니다.
 
 ## <a name="next-steps"></a>다음 단계
 

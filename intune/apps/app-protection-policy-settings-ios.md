@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.openlocfilehash: 6dc2a0e54a9051cd5b9d9991a490a5f53dfbbbbb
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74781246"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955323"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 앱 보호 정책 설정
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "74781246"
 ### <a name="functionality"></a>기능
 | Setting | 사용 방법 | 기본값 |
 |------|----------|-------|
-| **네이티브 연락처 앱과 앱 동기화** |  앱에서 디바이스의 네이티브 연락처 앱에 데이터를 저장하지 못하도록 하려면 **사용 안 함**을 선택합니다. **사용**을 선택하면 앱에서 디바이스의 네이티브 연락처 앱에 데이터를 저장할 수 있습니다. <br><br>선택적 초기화를 수행하여 앱에서 회사 또는 학교 데이터를 제거할 경우 앱에서 네이티브 연락처 앱으로 직접 동기화된 연락처가 제거됩니다. 기본 주소록에서 다른 외부 소스에 동기화된 연락처는 초기화할 수 없습니다. 현재 Microsoft Outlook 앱에만 적용됩니다.   | **사용**  |
-| **조직 데이터 인쇄** | 앱에서 회사 또는 학교 데이터를 인쇄하지 못하도록 하려면 **사용 안 함**을 선택합니다. 이 설정을 기본값인 **사용** 상태로 두면 사용자가 모든 조직 데이터를 내보내고 인쇄할 수 있습니다.  | **사용**  |
-| **정책 관리형 브라우저와 웹 콘텐츠 공유** | 정책 관리 애플리케이션에서 웹 콘텐츠(http/https 링크)를 여는 방법을 지정합니다. 다음 중에서 선택합니다. <ul><li>**정책 관리 브라우저**: 정책 관리 브라우저에서만 웹 콘텐츠를 열 수 있습니다.</li><li>**비관리형 브라우저**: 웹 콘텐츠를 **비관리형 브라우저 프로토콜** 설정으로 정의된 비관리형 브라우저에서만 열도록 허용합니다. 웹 콘텐츠가 대상 브라우저에서 관리되지 않습니다.<br>**참고**: 앱에 Intune SDK 버전 11.0.9 이상이 있어야 합니다.</li><li>**모든 앱**: 모든 앱의 웹 링크를 허용합니다. </li></ul> Intune을 사용하여 디바이스를 관리하는 경우 [Microsoft Intune에서 Managed Browser 정책을 사용하여 인터넷 액세스 관리](app-configuration-managed-browser.md)를 참조하세요.<br><br>**정책 관리 브라우저**<br>여러 정책 관리 브라우저를 배포하는 경우 하나만 시작됩니다.  시작 순서는 Intune Managed Browser 다음으로, Microsoft Edge입니다.<p>정책 관리 브라우저가 필요하지만 설치되지 않은 경우 최종 사용자에게 Intune Managed Browser를 설치하라는 메시지가 표시됩니다.<p>정책 관리 브라우저가 필요한 경우 iOS 유니버설 링크가 **앱에서 다른 앱으로 데이터 전송 허용** 정책 설정에 의해 관리됩니다. <p>**Intune 디바이스 등록**<br>Intune을 사용하여 디바이스를 관리하는 경우 Microsoft Intune에서 관리되는 브라우저 정책을 사용하여 인터넷 액세스 관리를 참조하세요. <p>**정책 관리 Microsoft Edge**<br>모바일 디바이스(iOS 및 Android)용 Microsoft Edge 브라우저는 Intune 앱 보호 정책을 지원합니다. Microsoft Edge 브라우저 애플리케이션에서 회사 Azure AD 계정으로 로그인하는 사용자는 Intune에서 보호됩니다. Microsoft Edge 브라우저는 Intune SDK를 통합하고, 다음과 같은 방지를 제외하고는 모든 데이터 보호 정책을 지원합니다.<br><ul><li>**다른 이름으로 저장**: Microsoft Edge 브라우저에서 사용자가 클라우드 스토리지 공급자(예: OneDrive)에 앱 내 연결을 직접 추가할 수 없습니다.</li><li>**연락처 동기화**: Microsoft Edge 브라우저는 기본 연락처 목록에 저장하지 않습니다.</li></ul><br>**참고**:*Intune SDK는 대상 앱이 브라우저인지 확인할 수 없습니다. iOS 디바이스에서는 다른 관리되는 브라우저 앱이 허용되지 않습니다.*    | **구성되지 않음**  |
+| **네이티브 연락처 앱과 앱 동기화** |  앱에서 디바이스의 기본 연락처 앱에 데이터를 저장하는 것을 방지하려면 **차단**을 선택합니다. **허용**을 선택하면 앱에서 디바이스의 기본 연락처 앱에 데이터를 저장할 수 있습니다. <br><br>선택적 초기화를 수행하여 앱에서 회사 또는 학교 데이터를 제거할 경우 앱에서 네이티브 연락처 앱으로 직접 동기화된 연락처가 제거됩니다. 기본 주소록에서 다른 외부 소스에 동기화된 연락처는 초기화할 수 없습니다. 현재 Microsoft Outlook 앱에만 적용됩니다.   | **허용**  |
+| **조직 데이터 인쇄** | 앱에서 회사 또는 학교 데이터를 인쇄하는 것을 방지하려면 **차단**을 선택합니다. 이 설정에서 **허용**을 기본값으로 두면 사용자가 모든 조직 데이터를 내보내고 인쇄할 수 있습니다.  | **허용**  |
+| **다른 앱을 사용한 웹 콘텐츠 전송 제한** | 정책 관리 애플리케이션에서 웹 콘텐츠(http/https 링크)를 여는 방법을 지정합니다. 다음 중에서 선택합니다. <ul><li>**모든 앱**: 모든 앱의 웹 링크를 허용합니다.</li><li>**Intune Managed Browser**: Intune Managed Browser에서만 웹 콘텐츠를 열 수 있습니다. 이 브라우저는 정책 관리형 브라우저입니다.</li><li>**Microsoft Edge**: Microsoft Edge에서만 웹 콘텐츠를 열 수 있습니다. 이 브라우저는 정책 관리형 브라우저입니다.</li><li>**비관리형 브라우저**: 웹 콘텐츠를 **비관리형 브라우저 프로토콜** 설정으로 정의된 비관리형 브라우저에서만 열도록 허용합니다. 웹 콘텐츠가 대상 브라우저에서 관리되지 않습니다.<br>**참고**: 앱에 Intune SDK 버전 11.0.9 이상이 있어야 합니다.</li></ul> Intune을 사용하여 디바이스를 관리하는 경우 [Microsoft Intune에서 Managed Browser 정책을 사용하여 인터넷 액세스 관리](app-configuration-managed-browser.md)를 참조하세요.<br><br>정책 관리 브라우저가 필요하지만 설치되지 않은 경우 최종 사용자에게 Microsoft Edge를 설치하라는 메시지가 표시됩니다.<p>정책 관리 브라우저가 필요한 경우 iOS 유니버설 링크가 **앱에서 다른 앱으로 데이터 전송 허용** 정책 설정에 의해 관리됩니다. <p>**Intune 디바이스 등록**<br>Intune을 사용하여 디바이스를 관리하는 경우 Microsoft Intune에서 관리되는 브라우저 정책을 사용하여 인터넷 액세스 관리를 참조하세요. <p>**정책 관리 Microsoft Edge**<br>모바일 디바이스(iOS 및 Android)용 Microsoft Edge 브라우저는 Intune 앱 보호 정책을 지원합니다. Microsoft Edge 브라우저 애플리케이션에서 회사 Azure AD 계정으로 로그인하는 사용자는 Intune에서 보호됩니다. Microsoft Edge 브라우저는 Intune SDK를 통합하고, 다음과 같은 방지를 제외하고는 모든 데이터 보호 정책을 지원합니다.<br><ul><li>**다른 이름으로 저장**: Microsoft Edge 브라우저에서 사용자가 클라우드 스토리지 공급자(예: OneDrive)에 앱 내 연결을 직접 추가할 수 없습니다.</li><li>**연락처 동기화**: Microsoft Edge 브라우저는 기본 연락처 목록에 저장하지 않습니다.</li></ul><br>**참고**:*Intune SDK는 대상 앱이 브라우저인지 확인할 수 없습니다. iOS 디바이스에서는 다른 관리되는 브라우저 앱이 허용되지 않습니다.*    | **구성되지 않음**  |
 |<ul><ui>**비관리형 브라우저 프로토콜** | 단일 비관리형 브라우저의 프로토콜을 입력합니다. 이 프로토콜을 지원하는 모든 앱에서 정책 관리 애플리케이션의 웹 콘텐츠(http/https 링크)가 열립니다. 웹 콘텐츠가 대상 브라우저에서 관리되지 않습니다. <br><br>**참고**: *프로토콜 접두사만 포함합니다. 브라우저에 `mybrowser://www.microsoft.com` 형식의 링크가 필요한 경우 `mybrowser`를 입력합니다.*<br>링크는 다음과 같이 변환됩니다.<br><ul><li>`http://www.microsoft.com` > `mybrowser://www.microsoft.com`</li><li>`https://www.microsoft.com` > `mybrowsers://www.microsoft.com`</li></ul> | **비어 있음**  |
 
 > [!NOTE]  

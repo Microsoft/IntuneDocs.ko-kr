@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564392"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819785"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 디바이스 세부 정보 참조
 
@@ -77,7 +77,7 @@ ms.locfileid: "74564392"
 |MEID|디바이스의 MEID(Mobile Equipment Identifier)입니다.|Windows, iOS, Android|
 |제조업체|디바이스의 제조업체입니다.|Windows, iOS, Android|
 |모델|디바이스의 모델입니다.|Windows, iOS, Android|
-|전화 번호|디바이스에 할당된 전화 번호입니다.|Windows, iOS, Android|
+|전화 번호|디바이스에 할당된 전화 번호입니다.|Windows, iOS, Android*|
 |구독자의 통신사|디바이스의 무선 통신사입니다.|Windows, iOS, Android|
 |셀룰러 기술|디바이스에서 사용하는 라디오 시스템입니다.|Windows, iOS, Android|
 |Wi-Fi MAC|디바이스의 미디어 액세스 제어 주소입니다.|Windows, iOS, Android|
@@ -93,7 +93,7 @@ ms.locfileid: "74564392"
 |감독됨|**예**인 경우 관리자는 디바이스에 대한 제어를 강화했습니다.|Windows, iOS, Android|
 |암호화됨|**예**인 경우 디바이스에 저장된 데이터가 암호화됩니다.|Windows, iOS, Android|
 
-
+\* 완전히 관리되는 디바이스 및 전용 디바이스 등 Google 정책 관리자가 포함된 Android에서 사용할 수 없음
 
 ## <a name="next-steps"></a>다음 단계
 Intune을 사용하여 [디바이스를 관리](device-management.md)하기 위해 수행할 수 있는 작업을 참조하세요.

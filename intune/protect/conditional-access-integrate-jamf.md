@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59edb9956ee117e0dbdb9d90a4fd4ef313fd5c66
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390472"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946685"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>준수를 위해 Intune과 Jamf Pro 통합
 
@@ -90,13 +90,21 @@ Intune을 Jamf Pro에 연결하려면 다음을 수행합니다.
    > [!IMPORTANT]
    > 이 페이지를 나가기 전에 클라이언트 암호 값을 복사하고 나중에 사용할 수 있도록 기록합니다. 나중 절차에서 이 값이 필요합니다. 앱 등록을 다시 만들지 않으면 이 값을 다시 사용할 수 없습니다.
 
-6. **관리**에서 **API 사용 권한**을 선택합니다. 기존 권한을 선택한 후 **권한 제거**를 선택하여 해당 권한을 삭제합니다. 새 권한을 추가하고, 애플리케이션은 단일 필수 권한이 있는 경우에만 작동하므로 기존 권한을 모두 제거해야 합니다.
+6. **관리**에서 **API 사용 권한**을 선택합니다. 
 
-7. 새 권한을 할당하려면 **권한 추가**를 선택합니다. **API 사용 권한 요청** 페이지에서 **Intune**을 선택한 후 **애플리케이션 권한**을 선택합니다. **update_device_attributes** 확인란만 선택합니다.
+7. API 사용 권한 페이지에서 **권한 추가**를 선택하여 새 사용 권한을 추가합니다. **API 사용 권한 요청** 페이지에서 **Intune**을 선택한 후 **애플리케이션 권한**을 선택합니다. **update_device_attributes** 확인란만 선택합니다.
 
-   **권한 추가**를 선택하여 이 구성을 저장합니다.
+8. 새 사용 권한이 적용될 수 있도록 몇 분 정도 기다립니다. 그런 다음 **_\<테넌트>_** 에 대한 관리자 동의 권한 부여를 선택합니다. 새 창에서 계정을 인증하고 프롬프트에 따라 애플리케이션 액세스 권한을 부여합니다.  
 
-8. **API 권한** 페이지에서 **테넌트에 대한 _\<관리자 동의 허용>_** 을 선택한 후 **예**를 선택합니다.  앱이 성공적으로 등록되면 API 사용 권한이 다음과 같이 표시됩니다.
+9. 관리자 동의가 적용될 수 있도록 몇 분 정도 기다려야 할 수 있습니다.
+
+10. 페이지 맨 위에 있는 **새로 고침** 단추를 클릭하여 페이지를 새로 고칩니다. **update_device_attributes** 권한에 대해 관리자 동의 권한이 부여되었는지 확인합니다. 
+
+11. **...** 메뉴를 선택하고 **관리자 동의 철회**를 선택하여 **User.Read** 권한의 관리자 동의를 제거합니다.
+
+12. 또한 **User.Read** 권한을 제거해야 합니다. **User.Read**의 **...** 메뉴를 선택하고 **권한 제거**를 선택합니다. 
+
+8. 앱이 성공적으로 등록되면 API 권한에는 **update_device_attributes**라는 하나의 권한만 포함되어야 하며 다음과 같이 표시되어야 합니다.
 
    ![성공적인 사용 권한](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

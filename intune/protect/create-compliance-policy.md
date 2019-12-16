@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188256"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860233"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 준수 정책 만들기
 
@@ -100,7 +100,7 @@ ms.locfileid: "74188256"
 
      예를 들어 위치 기능을 사용하고 규정 준수 정책에서 위치를 추가합니다. 비준수에 대한 기본 작업은 하나 이상의 위치를 선택하는 경우에 적용됩니다. 디바이스가 선택한 위치에 연결되지 않으면 즉시 비준수로 간주됩니다. 사용자에게 하루와 같은 유예 기간을 지정할 수 있습니다.
 
-   - **범위(태그)** : 범위 태그는 영업, HR, 모든 US-NC 직원 등과 같은 특정 그룹으로 정책을 할당 및 필터링할 수 있는 좋은 방법입니다. 설정을 추가한 후 준수 정책에 범위 태그를 추가할 수도 있습니다. [범위 태그를 사용하여 정책 필터링](../fundamentals/scope-tags.md)은 좋은 리소스입니다.
+   - **범위(태그)** : 범위 태그는 `US-NC IT Team` 또는 `JohnGlenn_ITDepartment` 등 특정 그룹에 정책을 필터링할 수 있는 좋은 방법입니다. 설정을 추가한 후 준수 정책에 범위 태그를 추가할 수도 있습니다. [범위 태그를 사용하여 정책 필터링](../fundamentals/scope-tags.md)은 좋은 리소스입니다.
 
 4. 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다. 정책이 만들어지고 목록에 표시됩니다. 다음으로, 그룹에 정책을 할당합니다.
 

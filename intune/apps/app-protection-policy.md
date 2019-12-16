@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31bb0e2ff4379c55829afc65fb99b768c9099a47
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498941"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899425"
 ---
 # <a name="app-protection-policies-overview"></a>앱 보호 정책 개요
 
@@ -177,7 +177,7 @@ Microsoft Office 앱에서 앱 보호 정책을 사용하는 경우 알아야 �
   > Office 모바일 앱은 현재 SharePoint Online만 지원하고 SharePoint 온-프레미스는 지원하지 않습니다.
 
 ### <a name="managed-location-needed-for-office"></a>Office에 필요한 관리되는 위치
-Office에 필요한 관리되는 위치(예: OneDrive)입니다. Intune에서는 앱의 모든 데이터를 "회사" 또는 "개인"으로 표시합니다. 데이터는 비즈니스 위치에서 시작될 경우 "회사" 데이터로 간주됩니다. Office 앱의 경우 Intune은 전자 메일(Exchange) 또는 클라우드 스토리지(비즈니스용 OneDrive 계정이 있는 OneDrive 앱)를 비즈니스 위치로 간주합니다.
+Office에 관리되는 위치(예: OneDrive)가 필요합니다. Intune에서는 앱의 모든 데이터를 "회사" 또는 "개인"으로 표시합니다. 데이터는 비즈니스 위치에서 시작될 경우 "회사" 데이터로 간주됩니다. Office 앱의 경우 Intune은 전자 메일(Exchange) 또는 클라우드 스토리지(비즈니스용 OneDrive 계정이 있는 OneDrive 앱)를 비즈니스 위치로 간주합니다.
 
 ### <a name="skype-for-business"></a>비즈니스용 Skype
 비즈니스용 Skype 사용에 대한 추가 요구 사항이 있습니다. [비즈니스용 Skype](https://products.office.com/skype-for-business/it-pros) 라이선스 요구 사항을 참조하세요. SfB(비즈니스용 Skype) 하이브리드 및 온-프레미스 구성에 대해서는 [Hybrid Modern Auth for SfB and Exchange goes GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756)(SfB 및 Exchange의 하이브리드 최신 인증이 GA(일반 공급) 상태가 됨) 및 [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910)(AAD를 사용한 SfB 온-프레미스의 최신 인증)를 각각 참조하세요.
@@ -215,12 +215,12 @@ PIN(개인 식별 번호)은 올바른 사용자가 애플리케이션에서 조
 **PIN 프롬프트**<br>
 사용자가 “회사” 데이터에 액세스하려고 하면 Intune에서 사용자의 앱 PIN을 묻는 메시지가 표시됩니다. Word, Excel 또는 PowerPoint와 같은 다중 ID 앱에서는 사용자가 "회사" 문서나 파일을 열려고 할 때 PIN을 묻는 메시지가 표시됩니다. [Intune 앱 래핑 도구](../developer/apps-prepare-mobile-application-management.md)를 사용하여 관리되는 기간 업무 앱 등의 단일 ID 앱에서는 [Intune 앱 SDK](../developer/app-sdk.md)에서 앱의 사용자 환경이 항상 “회사”라는 사실을 알고 있기 때문에 시작 시 PIN을 묻는 메시지가 표시됩니다.
 
-**PIN 프롬프트 빈도**<br>
-IT 관리자는 Intune 관리 콘솔에서 Intune 앱 보호 정책 설정인 **다음 시간(분) 후에 액세스 요구 사항 다시 확인**을 정의할 수 있습니다. 이 설정은 디바이스에서 액세스 요구 사항을 확인하고 애플리케이션 PIN 화면이 다시 표시되기까지의 시간을 지정합니다. 그러나 사용자에게 표시되는 빈도에 영향을 미치는 PIN에 대한 중요한 세부 정보는 다음과 같습니다.
+**PIN 프롬프트 또는 회사 자격 증명 프롬프트, 빈도**<br>
+IT 관리자는 Intune 관리 콘솔에서 Intune 앱 보호 정책 설정인 **다음 시간(분) 후에 액세스 요구 사항 다시 확인**을 정의할 수 있습니다. 이 설정은 디바이스에서 액세스 요구 사항을 확인하고 애플리케이션 PIN 화면 또는 회사 자격 증명 프롬프트가 다시 표시되기까지의 시간을 지정합니다. 그러나 사용자에게 표시되는 빈도에 영향을 미치는 PIN에 대한 중요한 세부 정보는 다음과 같습니다.
 
-- **The PIN is shared among apps of the same publisher to improve usability**(유용성 향상을 위해 동일한 게시자의 앱 간에 PIN 공유):<br> iOS에서 **동일한 앱 게시자**의 모든 앱에서 하나의 앱 PIN을 공유합니다. Android의 경우 하나의 앱 PIN이 모든 앱 간에서 공유됩니다.
-  - **디바이스 재부팅 후에 *다음 시간(분) 후에 액세스 요구 사항 다시 확인* 동작:**<br> “PIN 타이머”는 다음번에 Intune 앱 PIN을 표시할 시기를 결정하는 비활성 시간(분)을 추적합니다. iOS에서 PIN 타이머는 디바이스 재부팅에 영향을 받지 않습니다. 따라서 디바이스 다시 시작은 Intune PIN 정책을 사용하는 iOS 앱에서 사용자가 비활성화된 시간(분)에 영향을 주지 않습니다. Android에서는 PIN 타이머가 디바이스 재부팅 시 다시 설정됩니다. 따라서 Intune PIN 정책을 사용하는 Android 앱은 **디바이스 재부팅 후** ‘다음 시간(분) 후에 액세스 요구 사항 다시 확인’ 설정 값에 상관없이 앱 PIN을 묻는 메시지를 표시합니다.  
-  - **PIN과 관련된 타이머의 롤링 특성:**<br> 앱(앱 A)에 액세스하기 위해 PIN을 입력하고 앱이 디바이스에서 포그라운드(기본 입력 포커스)를 나가면, PIN 타이머가 해당 PIN을 재설정합니다. 이 PIN을 공유하는 어떠한 앱(앱 B)도 타이머가 재설정되었기 때문에 사용자에게 PIN 입력을 요구하지는 않습니다. '다음 시간(분) 후에 액세스 요구 사항 다시 확인' 값이 다시 충족되면 메시지가 다시 나타납니다.
+- **The PIN is shared among apps of the same publisher to improve usability**(유용성 향상을 위해 동일한 게시자의 앱 간에 PIN 공유):<br> iOS에서 **동일한 앱 게시자**의 모든 앱에서 하나의 앱 PIN을 공유합니다. 예를 들어 모든 Microsoft 앱은 동일한 PIN을 공유합니다. Android의 경우 하나의 앱 PIN이 모든 앱 간에서 공유됩니다.
+- **디바이스 재부팅 후에 *다음 시간(분) 후에 액세스 요구 사항 다시 확인* 동작:**<br> 타이머는 다음번에 Intune 앱 PIN 또는 회사 자격 증명 프롬프트를 표시할 시기를 결정하는 비활성 시간(분)을 추적합니다. iOS에서 타이머는 디바이스 재부팅에 영향을 받지 않습니다. 따라서 디바이스 재부팅은 Intune PIN(또는 대상 회사 자격 증명) 정책을 사용하는 iOS 앱에서 사용자가 비활성화된 시간(분)에 영향을 주지 않습니다. Android에서는 타이머가 디바이스 재부팅 시 다시 설정됩니다. 따라서 Intune PIN(또는 회사 자격 증명) 정책을 사용하는 Android 앱은 **디바이스 재부팅 후** ‘다음 시간(분) 후에 액세스 요구 사항 다시 확인’ 설정 값에 상관없이 앱 PIN 또는 회사 자격 증명 프롬프트를 묻는 메시지를 표시합니다.  
+- **PIN과 관련된 타이머의 롤링 특성:**<br> 앱(앱 A)에 액세스하기 위해 PIN을 입력하고 앱이 디바이스에서 전경(기본 입력 포커스)을 나가면, 타이머가 해당 PIN을 재설정합니다. 이 PIN을 공유하는 어떠한 앱(앱 B)도 타이머가 재설정되었기 때문에 사용자에게 PIN 입력을 요구하지는 않습니다. '다음 시간(분) 후에 액세스 요구 사항 다시 확인' 값이 다시 충족되면 메시지가 다시 나타납니다.
 
 iOS 디바이스의 경우 PIN이 다른 게시자의 앱 간에 공유되는 경우에도 **다음 시간(분) 후에 액세스 요구 사항 다시 확인** 값이 주 입력 포커스가 아닌 앱에 다시 충족할 때 프롬프트가 다시 표시됩니다. 따라서 예를 들어 사용자에게 게시자 _X_의 앱 _A_와 게시자 _Y_의 앱 _B_가 있는 경우 이러한 두 앱은 동일한 PIN을 공유합니다. 사용자는 앱 _A_(전경)에 중점을 두고, 앱 _B_는 최소화됩니다. **다음 시간(분) 후에 액세스 요구 사항 다시 확인** 값이 충족되고 사용자가 앱 _B_로 전환한 후 PIN이 필요합니다.
 
@@ -262,7 +262,6 @@ IT 관리자의 앱 보호 정책에 따라 "회사"로 표시된 데이터만 �
 [Intune 앱 래핑 도구](../developer/apps-prepare-mobile-application-management.md)에서 관리되는 기간 업무 앱의 경우 모든 앱 데이터가 “회사” 데이터로 간주됩니다.
 
 **원격으로 데이터 초기화**<br>
-
 Intune은 다음 세 가지 방법으로 앱 데이터를 초기화할 수 있습니다. 
 - 전체 디바이스 초기화
 - MDM에 대한 선택적 초기화 
