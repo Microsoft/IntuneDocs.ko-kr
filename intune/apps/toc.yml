@@ -121,13 +121,13 @@
           href: app-provisioning-profile-ios.md
         - name: 특정 앱 구성
           items:
-            - name: 관리형 홈 화면 구성
+            - name: Managed Home Screen 구성
               href: app-configuration-managed-home-screen-app.md
             - name: 회사 포털 구성
               href: company-portal-app.md
             - name: Managed Browser 구성
               href: app-configuration-managed-browser.md
-            - name: Microsoft 시작 관리자 구성
+            - name: Microsoft Launcher 구성
               href: configure-microsoft-launcher.md
             - name: Microsoft Edge 구성
               href: manage-microsoft-edge.md
