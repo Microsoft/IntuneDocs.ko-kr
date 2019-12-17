@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 752b4ae8440df0ebefbabbf7e5ccb48fed684827
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: f56808b6841d120e10541a978a835282041fd3c3
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540827"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946713"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune 보호 앱  
 
@@ -93,6 +93,7 @@ ms.locfileid: "74540827"
 | **SAP Fiori**<p><img alt="Partner app - SAP Fiori icon" src="./media/apps-supported-intune-apps/icon-p-sap-fiori.png" width="100"> | iPhone 및 iPad용 SAP Fiori Client 모바일 앱을 사용하여 언제 어디서나 가장 일반적인 비즈니스 작업을 처리하여 일일 생산성을 높일 수 있습니다. 750가지가 넘는 SAP Fiori 앱의 웹 버전에 맞게 개선된 모바일 런타임을 사용하여 향상된 첨부 파일 처리 및 전체 화면 작업으로 차세대 모바일 환경을 제공합니다. 또한 Intune 모바일 앱 관리를 지원하도록 준비된 SAP Fiori 모바일 서비스를 사용하여 고객이 빌드한 사용자 지정 SAP Fiori 모바일 앱에 액세스합니다. | [iOS 스토어 링크](https://itunes.apple.com/us/app/sap-fiori-client/id824997258?mt=8) |  
 | **말하는 이메일**<p><img alt="Partner app - Speaking Email icon" src="./media/apps-supported-intune-apps/icon-p-speaking-email-icon.png" width="100">   | 이동 중에도 이메일을 읽어 주어 하루에 더 많은 시간을 확보해 줍니다. 운전 중에 사용하기에 안전하도록 설계된 음성 명령 및 간단한 제스처는 이동 중에 보관, 표시 또는 회신할 수 있는 기능을 제공합니다.<p>스마트 콘텐츠 검색은 고지 사항, 회신 제목 및 이메일 서명을 건너뛰고 군더더기 없이 콘텐츠만 말합니다.<p>직원은 Intune을 통해 로그인하여 Office 365 Exchange 이메일에 액세스할 수 있습니다. | [iOS 스토어 링크](https://itunes.apple.com/app/apple-store/id991406423?ct=intune) | 
 | **Synergi Life**<p><img alt="Partner app - Synergi Life icon" src="./media/apps-supported-intune-apps/icon-p-synergi-life.png" width="100"> | Synergi Life의 확장 버전인 Synergi Life Mobile App을 통해 사용자는 자신의 휴대폰을 사용하여 스냅샷을 찍고 음성 녹음을 하여 언제, 어디서나 관찰 및 인시던트 보고서를 만들 수 있습니다.<p>Synergi Life(이전의 Synergi)는 모든 비준수, 인시던트, 위험, 위험 분석, 감사, 평가 및 개선 제안을 관리하는 위험 및 QHSE 관리를 위한 완벽한 비즈니스 솔루션입니다.<p>Synergi Life Mobile App을 사용하려면 Synergi Life 위험 및 QHSE 관리 시스템의 허가된 사용자여야 하며 필요한 백 엔드 라이선스 소프트웨어 및 서비스가 있어야 합니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.dnv.mobilesolutions.synergimobile.uibase), [iOS 스토어 링크](https://itunes.apple.com/us/app/synergi-life/id641181737)  |  
+| **Tact for Intune**<p><img alt="Partner app - Tact for Intune icon" src="./media/apps-supported-intune-apps/icon-p-tact-icon.png" width="100"> | Tact for Intune은 Salesforce.com, 이메일, 달력, 지도 및 기타 일상적인 도구의 데이터를 사용자에게 친숙한 대화형 환경으로 통합하는 최초의 CRM 및 영업 도우미입니다. AI 기반의 Tact는 판매 직원에 대한 관리 작업을 자동화하고, 다른 데이터 원본과 CRM을 통합하여 단일 창을 제공하고, 각 판매자에게 인텔리전스를 푸시하여 고성능 동작을 실현할 수 있게 해 줍니다. 이제 기업은 Tact for Intune을 사용하여 애플리케이션 계층에서 엔터프라이즈급 보안을 유지하면서 판매자 생산성을 높이고 고객 데이터를 풍부화하며 CRM 도입을 향상시킬 수 있습니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.tactile.tact), [iOS 스토어 링크](https://apps.apple.com/us/app/tact-for-intune/id1477117416?mt=8)  |  
 | **Vera for Intune**<p><img alt="Partner app - Vera for Intune icon" src="./media/apps-supported-intune-apps/icon-p-vera.png" width="100"> | Vera for Intune을 사용하여 모바일 디바이스에서 파일 및 이메일 첨부 파일에 대한 액세스를 직접 해지하고 암호화 및 추적합니다. 사용하는 앱(예: Microsoft, Box, Google, Dropbox 등)이 무엇이든 상관 없이 가장 중요한 정보를 보호합니다. | [iOS 스토어 링크](https://itunes.apple.com/us/app/vera-for-intune/id1235182010?mt=8) |  
 | **Workspace ONE Send**<p><img alt="Partner app - Intune partner app - Workspace ONE Send icon" src="./media/apps-supported-intune-apps/icon-p-workspace-one-send-icon.png" width="100"> | Workspace ONE Send는 Microsoft Intune을 사용하여 VMware 생산성 앱으로 Office 365 앱을 관리하는 고객을 위한 원활한 편집 및 전송 기능을 제공합니다. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=com.airwatch.vmsend),<br>[iOS 스토어 링크](https://itunes.apple.com/us/app/vmware-workspace-one-send/id1336333505?mt=8) |
 | **Zoom for Intune**<p><img alt="Partner app - Zoom for Intune icon" src="./media/apps-supported-intune-apps/icon-p-zoom.png" width="100"> | Zoom은 회의, 웨비나, 채팅 및 클라우드 전화를 위한 통신 허브입니다. 데스크톱, 모바일 또는 회의실에서 완벽한 비디오, 선명한 오디오 및 빠른 화면 공유를 이용하여 회의를 시작하거나 참여하세요. | [Android 스토어 링크](https://play.google.com/store/apps/details?id=us.zoom.videomeetings4intune),<br>[iOS 스토어 링크](https://apps.apple.com/us/app/zoom-for-intune/id1462818858?mt=8) |  

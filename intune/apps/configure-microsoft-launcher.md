@@ -1,7 +1,7 @@
 ---
-title: Intune을 사용하여 Android Enterprise에 대한 Microsoft 시작 관리자 구성
+title: Intune을 사용하여 Android Enterprise에 대한 Microsoft Launcher 구성
 titleSuffix: ''
-description: Microsoft 시작 관리자에서 Intune 구성 정책을 사용합니다.
+description: Microsoft Launcher에서 Intune 구성 정책을 사용합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -25,15 +25,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/27/2019
 ms.locfileid: "74563959"
 ---
-# <a name="configure-microsoft-launcher"></a>Microsoft 시작 관리자 구성
+# <a name="configure-microsoft-launcher"></a>Microsoft Launcher 구성
 
-Microsoft 시작 관리자는 사용자가 휴대폰을 맞춤형으로 설정하고, 즉시 구성하고, 휴대폰 작업에서 PC로 전환할 수 있게 해 주는 Android 애플리케이션입니다. 
+Microsoft Launcher는 사용자가 휴대폰을 맞춤형으로 설정하고, 즉시 구성하고, 휴대폰 작업에서 PC로 전환할 수 있게 해 주는 Android 애플리케이션입니다. 
 
 Android Enterprise 완전 관리형 디바이스에서 시작 관리자를 통해 엔터프라이즈 IT 관리자는 배경 무늬, 앱 및 아이콘 위치를 선택하여 관리되는 디바이스의 홈 화면을 사용자 지정할 수 있습니다. 이렇게 하면 여러 OEM 디바이스 및 시스템 버전에서 모든 관리되는 Android 디바이스의 모양과 느낌이 표준화됩니다. 
 
 ## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>Microsoft Managed Home Screen 앱 구성 방법 
 
-[Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)로 이동한 후 **앱** > **앱 구성 정책**을 선택합니다. **Android**를 실행하는 **관리 디바이스**에 대한 구성 정책을 추가하고 연결된 앱으로 **Microsoft 시작 관리자**를 선택합니다. **구성 설정**을 클릭하여 사용 가능한 여러 Managed Home Screen 설정을 구성할 수 있습니다. 
+[Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)로 이동한 후 **앱** > **앱 구성 정책**을 선택합니다. **Android**를 실행하는 **관리 디바이스**에 대한 구성 정책을 추가하고 연결된 앱으로 **Microsoft Launcher**를 선택합니다. **구성 설정**을 클릭하여 사용 가능한 여러 Managed Home Screen 설정을 구성할 수 있습니다. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>구성 설정 형식 선택 
 
@@ -53,7 +53,7 @@ Managed Home Screen의 구성 설정을 정의할 때 선택할 수 있는 방�
 
    ![구성 설정 형식 - JSON 데이터 입력](./media/configure-microsoft-launcher/configure-microsoft-launcher-02.png)
 
-다음 표는 Microsoft 시작 관리자의 사용 가능한 구성 키, 값 형식, 기본값 및 설명을 나열합니다. 설명은 선택한 값에서 예상되는 디바이스 작동을 제공합니다. 구성 디자이너에서 사용할 수 없는 구성 키는 이 표에 나열되지 않았습니다.
+다음 표는 Microsoft Launcher의 사용 가능한 구성 키, 값 형식, 기본값 및 설명을 나열합니다. 설명은 선택한 값에서 예상되는 디바이스 작동을 제공합니다. 구성 디자이너에서 사용할 수 없는 구성 키는 이 표에 나열되지 않았습니다.
 
 |    구성 키    |    값 형식    |    기본값    |    설명     |
 |---------------------------------------------------|------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -67,7 +67,7 @@ Managed Home Screen의 구성 설정을 정의할 때 선택할 수 있는 방�
 
 ## <a name="enter-json-data"></a>JSON 데이터 입력
 
-JSON 데이터를 입력하여 아래와 같이 Microsoft 시작 관리자에 사용 가능한 모든 설정과 **구성 디자이너**에서 사용하지 않게 지정된 설정을 구성합니다.
+JSON 데이터를 입력하여 아래와 같이 Microsoft Launcher에 사용 가능한 모든 설정과 **구성 디자이너**에서 사용하지 않게 지정된 설정을 구성합니다.
 
    ![구성 디자이너 - JSON 데이터](./media/configure-microsoft-launcher/configure-microsoft-launcher-03.png)
 

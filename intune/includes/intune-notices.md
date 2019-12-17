@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549460"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829100"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
 
@@ -119,8 +119,8 @@ Android 디바이스 관리자("레거시" Android 관리라고도 하며 Androi
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 Google의 이러한 변경으로 인해 Intune 사용자는 다음과 같은 방식으로 영향을 받습니다.  
-- Intune은 Android 10 이상(Android Q라고도 함)을 실행하는 디바이스 관리자 관리형 Android 디바이스에 대한 지원을 2020년 여름까지만 제공할 수 있습니다. 이 날짜는 Android의 차기 주 버전이 출시될 것으로 예상되는 날짜입니다.   
-- 2020 여름 이후에 Android 10 이상을 실행하는 디바이스 관리자 관리형 디바이스는 더 이상 완전히 관리할 수는 없게 됩니다.       
+- Intune은 Android 10 이상 ~ Q2 CY2020을 실행하는 디바이스 관리자 관리형 Android 디바이스만 지원할 수 있습니다. 이 시점 이후에 Android 10 이상을 실행하는 디바이스 관리자 관리형 디바이스는 더 이상 완전히 관리할 수는 없게 됩니다. 특히 영향을 받는 디바이스에는 새 암호 요구 사항이 없습니다.
+    - Intune과 Knox 플랫폼의 통합을 통해 확장된 지원이 제공되므로 이 기간 동안 Samsung Knox 디바이스는 영향을 받지 않습니다. 이를 통해 더 많은 시간 동안 디바이스 관리 전환을 계획할 수 있습니다.    
 - Android 10 미만의 Android 버전을 유지하는 디바이스 관리자 관리형 Android 디바이스는 영향을 받지 않으며, 디바이스 관리자를 통해 계속해서 완전히 관리할 수 있습니다.    
 - Android 10 이상을 실행하는 모든 디바이스에 대해 Google은 회사 포털과 같은 디바이스 관리자 관리 에이전트가 디바이스 식별자 정보에 액세스하는 기능을 제한하고 있습니다. 이 제한 사항은 디바이스를 Android 10 이상으로 업데이트한 이후에 다음 Intune 기능에 영향을 줍니다.  
     - VPN에 대한 네트워크 액세스 제어는 더 이상 작동하지 않습니다.   
@@ -130,7 +130,7 @@ Google의 이러한 변경으로 인해 Intune 사용자는 다음과 같은 방
         > 이러한 문제는 Android 10 이상의 디바이스 관리자 관리형 디바이스에만 영향을 주고 Android Enterprise로 관리되는 디바이스에는 영향을 주지 않습니다. 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
-2020년 여름에 시작될 기능 감소를 피하려면 다음을 수행하는 것이 좋습니다.
+Q3 CY2020에 제공될 기능 감소를 피하려면 다음을 수행하는 것이 좋습니다.
 - 새 디바이스를 디바이스 관리자 관리에 온보딩하지 마세요.
 - 디바이스에 Android 10에 대한 업데이트가 수신될 예정인 경우, 디바이스 관리자 관리에서 Android Enterprise 관리 및/또는 앱 보호 정책으로 마이그레이션합니다.
 
