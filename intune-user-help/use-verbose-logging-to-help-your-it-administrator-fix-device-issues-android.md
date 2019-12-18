@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508010"
 ---
 # <a name="configure-logging-settings"></a>로깅 설정 구성
@@ -44,7 +44,7 @@ ms.locfileid: "72508010"
 Microsoft Intune 앱에서 로그 세부 정보 수준을 구성할 수 있습니다. 수준 기본값은 **중요**합니다. 로깅 세부 정보를 조정 하려면:  
 
 1. Microsoft Intune 앱을 엽니다.  
-2. **설정**을 탭 합니다.  
+2. **설정**을 탭합니다.  
 3. **로그 수준 세부**정보에서 자세히 **를 선택 하 여 기록** 된 세부 정보 수준을 늘리거나 **끄기** 를 선택 하 여 로깅을 해제 합니다.  
 
 ## <a name="next-steps"></a>다음 단계  

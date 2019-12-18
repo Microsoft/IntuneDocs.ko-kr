@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540732"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>Microsoft Intune에 대해 개발 중 - 2019년 12월
@@ -138,19 +138,19 @@ Intune은 iOS, iPadOS 및 macOS 장치에 대 한 Single Sign-On 설정을 추�
 관리 되는 Android 앱에서 사용할 승인 된 키보드 목록을 지정할 수 있습니다. 관리 되는 앱에서 사용자에 게 장치에 이미 설치 된 승인 된 키보드 중 하나로 전환 하 라는 메시지가 표시 되거나, 필요한 경우 승인 된 키보드 중 하나를 다운로드 하 고 설정 하는 Google Play 스토어으로 이동 됩니다. 활성 키보드가 승인 된 키보드 중 하나인 경우에만 사용자가 관리 되는 앱의 텍스트 필드를 편집할 수 있습니다.
 
 ### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices---3246388----"></a>Windows 10 이상 장치에서 Wi-fi 프로필에 PKCS 인증서 사용<!-- 3246388  -->
-현재 SCEP 인증서 (**장치 구성** ** > > >  > ** **프로필** ) **를 사용 하** **여 windows wi-fi** 프로필을 인증할 수 있습니다. 프로필 유형 > **Enterprise** > **EAP 유형**). Windows Wi-fi 프로필에 PKCS 인증서를 사용할 수 있습니다. 이 기능을 사용 하면 사용자가 테 넌 트에서 새로운 또는 기존 PKCS 인증서 프로필을 사용 하 여 Wi-fi 프로필을 인증할 수 있습니다. 
+현재는 SCEP 인증서 (**장치 구성** > **프로필** )를 사용 하 여 windows wi-fi 프로필을 인증 하 고, **플랫폼 >에 대 한** **프로필** > **windows 10 이상** > 프로 파일 유형 > **엔터프라이즈** > **EAP 유형**)에 인증할 수 있습니다. Windows Wi-fi 프로필에 PKCS 인증서를 사용할 수 있습니다. 이 기능을 사용 하면 사용자가 테 넌 트에서 새로운 또는 기존 PKCS 인증서 프로필을 사용 하 여 Wi-fi 프로필을 인증할 수 있습니다. 
 
 Wi-fi 프로필에 대 한 자세한 내용은 [Intune에서 Windows 10 이상 장치에 대 한 wi-fi 설정 추가](../configuration/wi-fi-settings-windows.md)를 참조 하세요.
 
 적용 대상:
 - Windows 10 이상
 
-### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>IOS 장치에서 전자 메일 장치 구성 프로필을 만들 때 새 ExchangeActiveSync 설정<!-- 4892824  --> 
-IOS/iPadOS 장치에서 장치 구성 프로필에서 전자 메일 연결을 구성할 수 있습니다. 장치 **구성 프로필 (** **장치 구성** > 프로필 > **Create profile** > **iOS/iPadOS** for platform > **email** 프로필 형식). 
+### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>iOS 디바이스에서 메일 디바이스 구성 프로필을 만들 경우 새로운 ExchangeActiveSync 설정<!-- 4892824  --> 
+iOS/iPadOS 디바이스의 디바이스 구성 프로필에서 메일 연결을 구성할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에 대해  > **iOS/iPadOS** 선택 > 프로필 유형에 대해 **메일** 선택). 
 
 다음을 비롯 한 새로운 ExchangeActiveSync 설정이 제공 됩니다.
 - 전자 메일, 일정 및 연락처와 같은 동기화 할 서비스 (또는 동기화 차단)를 선택 합니다.
-- 사용자가 자신의 장치에서 이러한 서비스에 대 한 동기화 설정을 변경할 수 있도록 허용 하거나 차단 합니다. 
+- 사용자가 디바이스에서 이러한 서비스에 대한 동기화 설정을 변경할 수 있도록 허용(또는 차단)합니다. 
 
 현재 설정을 보려면 [Intune에서 iOS 장치에 대 한 메일 프로필 설정](../configuration/email-settings-ios.md)으로 이동 합니다.
 
@@ -158,8 +158,8 @@ IOS/iPadOS 장치에서 장치 구성 프로필에서 전자 메일 연결을 �
 - iOS 13.0 이상
 - iPadOS 13.0 이상
 
-### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>사용자가 Android Enterprise 장치 소유자 및 전용 장치에 개인 Google 계정을 추가 하지 못하도록 설정<!-- 5353228  -->
-사용자가 Android Enterprise 장치 소유자 및 전용 장치 (**장치 구성** > **프로필** > **프로필** > **android enterprise에서 개인 Google 계정을 만들지 못하도록 할 수 있습니다.** 플랫폼 > 장치 소유자는 프로필 유형 > **사용자 및 계정 설정**)에 대 한 **장치 제한만 >** 합니다.
+### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>사용자가 Android Enterprise 디바이스 소유자 및 전용 디바이스에 개인 Google 계정을 추가하지 못하도록 차단<!-- 5353228  -->
+사용자가 Android Enterprise 디바이스 소유자 및 전용 디바이스에 개인 Google 계정을 추가하지 못하도록 차단할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼에 대한 **Android Enterprise** > **디바이스 소유자만 > 프로필 유형에 대한 디바이스 제한** > **사용자 및 계정 설정**).
 
 구성할 수 있는 현재 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정](../configuration/device-restrictions-android-for-work.md)으로 이동하세요.
 
@@ -167,8 +167,8 @@ IOS/iPadOS 장치에서 장치 구성 프로필에서 전자 메일 연결을 �
 - Android Enterprise 디바이스 소유자
 - Android 엔터프라이즈 전용 디바이스
 
-### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>Siri commands 설정에 대 한 서버 쪽 로깅은 iOS 장치 제한 프로필에서 제거 됩니다.<!-- 5468501  -->
-IOS 장치에서 Siri 명령에 대 한 서버 쪽 로깅을 구성 하는 장치 제한 프로필을 만들 수 있습니다. 장치**구성** > **프로필** > 프로필 > **iOS/iPadOS** for platform을 **만듭니다** . 프로필 형식 > **기본 제공 앱**)에 대 한 **장치 제한 사항을** > 합니다. **Siri commands 설정에 대 한 서버 쪽 로깅이** 제거 됩니다.
+### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>Siri 명령의 서버 쪽 로깅 설정이 iOS 디바이스 제한 프로필에서 제거됨<!-- 5468501  -->
+IOS 장치에서 Siri 명령에 대 한 서버 쪽 로깅을 구성 하는 장치 제한 프로필을 만들 수 있습니다 **(장치 구성** ** > 프로필 > 프로필 유형** > **기본 제공 앱**에 대 한 플랫폼 > **장치 제한** 에 대 한 **iOS/iPadOS** **프로필 > 만듭니다** ). **Siri commands 설정에 대 한 서버 쪽 로깅이** 제거 됩니다.
 
 이 설정은 Intune 관리 콘솔에서 제거 됩니다. 이 설정이 구성 된 기존 정책에서 설정을 계속 표시 하더라도이 설정은 장치에 영향을 주지 않습니다. 기존 정책에서 설정을 제거 하려면 정책으로 이동 하 고, 사소한 편집을 수행 하 고, 저장 하 고, 정책이 업데이트 됩니다.
 

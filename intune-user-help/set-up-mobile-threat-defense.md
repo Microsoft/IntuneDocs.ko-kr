@@ -1,6 +1,6 @@
 ---
 title: 모바일 디바이스에 Mobile Threat Defense 설치
-description: 모바일 장치에 모바일 위협 방어를 설치 하는 방법에 대해 알아봅니다.
+description: 모바일 디바이스에 Mobile Threat Defense 설치하는 방법을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,10 +18,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72980360"
 ---
 # <a name="install-mobile-threat-defense"></a>Mobile Threat Defense 설치   

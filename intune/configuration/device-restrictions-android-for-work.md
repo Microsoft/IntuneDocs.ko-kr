@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390918"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946658"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정
 
@@ -31,6 +31,8 @@ ms.locfileid: "74390918"
 [디바이스 구성 프로필을 만듭니다](device-restrictions-configure.md).
 
 ## <a name="device-owner-only"></a>디바이스 소유자만
+
+이러한 설정은 android Enterprise 완전히 관리 되는 장치 또는 전용 장치와 같이 Intune에서 전체 장치를 제어 하는 Android Enterprise 등록 유형에 적용 됩니다.
 
 ### <a name="general-settings"></a>일반 설정
 
@@ -229,7 +231,7 @@ ms.locfileid: "74390918"
   모든 VPN 클라이언트에 대해 Always-On VPN을 사용하지 않도록 설정하려면 **구성되지 않음**을 선택합니다.
 
   > [!IMPORTANT]
-  > 단일 디바이스에 항상 하나의 Always On VPN 정책만 배포해야 합니다. 단일 디바이스에 여러 VPN 정책을 배포하는 것은 지원되지 않습니다.
+  > 단일 디바이스에 항상 하나의 Always-On VPN 정책만 배포해야 합니다. 단일 디바이스에 여러 Always-on VPN 정책을 배포하는 것은 지원되지 않습니다.
 
 - **VPN 클라이언트**: Always On을 지원하는 VPN 클라이언트를 선택합니다. 옵션은 다음과 같습니다.
   - Cisco AnyConnect
@@ -242,6 +244,7 @@ ms.locfileid: "74390918"
   > [!IMPORTANT]
   > - 선택한 VPN 클라이언트는 디바이스에 설치되어 있어야 하고 회사 프로필의 앱별 VPN을 지원해야 합니다. 그렇지 않으면 오류가 발생합니다. 
   > - **관리 Google Play 스토어**에 있는 VPN 클라이언트 앱을 승인하고 Intune과 앱을 동기화하고, 앱을 디바이스에 배포해야 합니다. 이렇게 하면 앱이 사용자의 회사 프로필에 설치됩니다.
+  > - Vpn [프로필](vpn-settings-android-enterprise.md)을 사용 하거나 [앱 구성 프로필](../apps/app-configuration-policies-use-android.md)을 통해 vpn 클라이언트를 구성 해야 합니다.
   > - Android 3.0.4용 F5 Access와 함께 앱별 VPN을 사용할 때 알려진 문제가 있을 수 있습니다. 자세한 내용은 [Android 3.0.4용 F5 Access에 대한 F5의 릴리스 정보](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)를 참조하세요.
 
 - **잠금 모드**: 강제로 모든 네트워크 트래픽이 VPN 터널을 사용하도록 하려면 **사용**을 선택합니다. VPN에 연결되어 있지 않으면 디바이스에 네트워크 액세스 권한이 없습니다.
@@ -264,6 +267,8 @@ ms.locfileid: "74390918"
     PAC 파일에 대 한 자세한 내용은 [pac (프록시 자동 구성) 파일](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (타사 사이트 열기)을 참조 하세요.
 
 ## <a name="work-profile-only"></a>작업 프로필만
+
+이러한 설정은 Android enterprise 등록 유형에 적용 됩니다. 여기서 Intune은 개인에 대 한 Android Enterprise 회사 프로필 등록 또는 BYOD (사용자 소유의 장치)를 제어 합니다.
 
 ### <a name="work-profile-settings"></a>업무용 프로필 설정
 

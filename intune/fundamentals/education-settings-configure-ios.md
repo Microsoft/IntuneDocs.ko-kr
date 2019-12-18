@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dd9a97fdafff784bab2eae1d466855082fd397a
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 6814b4d98b8512ce95119b05cc299964e486ac64
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117829"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784224"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS 교실 앱에 대한 Intune 설정을 구성하는 방법
 
 > [!NOTE]
-> Intune은 현재 교실 앱 구성을 지원 하지 않습니다. 이 문서는 Intune에서 기존 iOS 교육 프로필이 있는 사용자에게만 적용됩니다.  
+> Intune은 현재 교실 앱 구성을 지원 하지 않습니다. 이 문서는 Intune에 기존 iOS 교육 프로필이 있는 사용자에게만 적용됩니다.  
 
 ## <a name="introduction"></a>소개
 [교실](https://itunes.apple.com/app/id1085319084)은 교사들이 교실에서 학습을 지도하고 학생 디바이스를 제어하도록 도와주는 앱입니다. 예를 들어 앱을 통해 교사는 다음을 수행할 수 있습니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3c6c029a5c5864eda46a68832b2f9f655553846
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889533"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946665"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Windows 10 이상 설정
 
@@ -161,6 +161,7 @@ Windows 10 이상을 실행하는 공동 관리 디바이스에만 적용됩니�
 ### <a name="encryption"></a>암호화
 
 - **디바이스에 있는 데이터 스토리지의 암호화**:  
+  이 설정은 장치의 모든 드라이브에 적용 됩니다.
   - **구성되지 않음**(*기본값*)
   - **필요** - 디바이스의 데이터 스토리지를 암호화하려면 *필요*를 사용합니다.
 
@@ -196,9 +197,9 @@ Windows 10 이상을 실행하는 공동 관리 디바이스에만 적용됩니�
 
 *Windows 10 Desktop에서 지원 되는 호환성 설정은 다음과 같습니다.*
 
-- **Microsoft Defender 맬웨어 방지**:  
+- **Microsoft Defender 맬웨어 방지 프로그램**:  
   - **구성 되지 않음** (*기본값*)-Intune은 서비스를 제어 하거나 기존 설정을 변경 하지 않습니다.
-  - Microsoft Defender 맬웨어 방지 서비스를 **사용 하도록 설정** 하 고 사용자가 끄지 못하도록 합니다. 
+  - Microsoft Defender 맬웨어 방지 서비스를 **사용 하도록 설정** 하 고 사용자가 끄지 못하도록 합니다.
 
 - **Microsoft Defender 맬웨어 방지 최소 버전**:  
   Microsoft Defender 맬웨어 방지 서비스의 최소 허용 버전을 입력 합니다. 예를 들어 다음과 같이 입력합니다. `4.11.0.0` 비워 두면 모든 버전의 Microsoft Defender 맬웨어 방지 서비스를 사용할 수 있습니다.  
@@ -206,10 +207,12 @@ Windows 10 이상을 실행하는 공동 관리 디바이스에만 적용됩니�
   *기본적으로 버전은 구성 되어 있지*않습니다.
 
 - **Microsoft Defender 맬웨어 방지 보안 인텔리전스 최신 상태**:  
-  장치에서 Windows 보안 바이러스 및 위협 방지 업데이트를 제어 합니다.  
+  장치에서 Windows 보안 바이러스 및 위협 방지 업데이트를 제어 합니다.
   - **구성 되지 않음** (*기본값*)-Intune에서 요구 사항을 적용 하지 않습니다.
-  - -Force를 **요구** 하면 Microsoft Defender 보안 인텔리전스를 최신 상태로 유지 합니다. 
+  - -Force를 **요구** 하면 Microsoft Defender 보안 인텔리전스를 최신 상태로 유지 합니다.
 
+  [Defender/Health/SignatureOutOfDate CSP](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   자세한 내용은 [Microsoft Defender 바이러스 백신 및 기타 microsoft 맬웨어 방지 프로그램에 대 한 보안 인텔리전스 업데이트](https://www.microsoft.com/en-us/wdsi/defenderupdates)를 참조 하세요.
 
 - **실시간 보호**:  
