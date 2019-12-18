@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199280"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832568"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
@@ -136,10 +136,10 @@ CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 �
 **원인:** 사용자가 장치 등록 제한 보다 더 많은 장치를 등록 하려고 합니다.
 
 #### <a name="resolution"></a>해결 방법
-1. **모든 장치** > [Intune 관리 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > 열고 사용자가 등록 **한 장치의 수** 를 확인 합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **장치** > **모든 장치**를 선택 하 고 사용자가 등록 한 장치 수를 확인 합니다.
     > [!NOTE]
     > 또한 [Intune 사용자 포털](https://portal.manage.microsoft.com/) 에 영향을 받는 사용자 로그온이 있어야 하 고 등록 된 장치를 확인 해야 합니다. Intune [사용자 포털](https://portal.manage.microsoft.com/) 에는 표시 되지만 [intune 관리 포털](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)에는 표시 되지 않는 장치가 있을 수 있습니다. 이러한 장치는 장치 등록 제한에도 해당 합니다.
-2. **관리자** > **모바일 장치 관리** > **등록 규칙** 으로 이동 하 > 장치 등록 제한을 확인 합니다. 기본적으로 제한은 15입니다. 
+2. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 장치 > **등록 제한** 을 선택 하 **> 장치 등록** 제한을 확인 합니다. 기본적으로 제한은 15입니다. 
 3. 등록 된 장치의 수가 한도에 도달 하면 불필요 한 장치를 제거 하거나 장치 등록 제한을 늘립니다. 등록 된 모든 장치에서 Intune 라이선스를 사용 하기 때문에 항상 불필요 한 장치를 먼저 제거 하는 것이 좋습니다.
 4. 디바이스 다시 등록.
 
@@ -230,7 +230,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>해결 방법
 
 1. 등록 프로필을 편집 합니다. 프로필을 변경할 수 있습니다. 용도는 프로필의 수정 시간을 업데이트 하는 것입니다.
-2. DEP 관리 장치 동기화: Intune 포털 > **Admin** > **모바일 장치 관리** > **iOS** > **장비 등록 프로그램** **지금 동기화**를 엽니다. 동기화 요청이 Apple에 전송됩니다.
+2. DEP 관리 디바이스를 동기화합니다. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택하고 토큰을 선택한 후 **지금 동기화**를 선택합니다. 동기화 요청이 Apple에 전송됩니다.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>사용자 로그인 시 DEP 등록 중단
 등록 프로필을 할당 하는 DEP 관리 장치를 켜면 자격 증명을 입력 한 후 초기 설치가 시작 됩니다.
@@ -244,5 +244,5 @@ MFA를 사용 하지 않도록 설정 하 고 장치를 다시 등록 합니다.
 
 - [Intune에서 디바이스 등록 문제 해결](../troubleshoot-device-enrollment-in-intune.md)
 - [Intune 포럼에서 질문하기](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-- [Microsoft Intune 지원 팀 블로그를 확인 하세요.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
-- [Microsoft Enterprise Mobility 및 보안 블로그 확인](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
+- [Microsoft Intune 지원 팀 블로그 보기](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+- [Microsoft Enterprise Mobility + Security 블로그 보기](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)

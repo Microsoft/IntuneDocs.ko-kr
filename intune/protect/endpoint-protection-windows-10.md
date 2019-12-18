@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058420"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune을 사용하여 디바이스를 보호하기 위한 Windows 10( 이상) 설정
@@ -495,28 +495,28 @@ Application Guard는 Windows 10(64비트) 디바이스에서만 사용할 수 �
     **기본값**: XTS-AES 128 비트  
    
     운영 체제 드라이브에 대한 암호화 방법을 선택합니다. XTS-AES 알고리즘을 사용하는 것이 좋습니다.  
-    - **AES-CBC 128 비트**  
-    - **AES-CBC 256 비트**  
-    - **XTS-AES 128 비트**  
-    - **XTS-AES 256 비트**  
+    - **AES-CBC 128비트**  
+    - **AES-CBC 256비트**  
+    - **XTS-AES 128비트**  
+    - **XTS-AES 256비트**  
 
   - **고정 데이터 드라이브에 대한 암호화**  
     **기본값**: AES-CBC 128 비트  
    
     고정(기본 제공) 데이터 드라이브에 대한 암호화 방법을 선택합니다. XTS-AES 알고리즘을 사용하는 것이 좋습니다.  
-    - **AES-CBC 128 비트**  
-    - **AES-CBC 256 비트**  
-    - **XTS-AES 128 비트**  
-    - **XTS-AES 256 비트**  
+    - **AES-CBC 128비트**  
+    - **AES-CBC 256비트**  
+    - **XTS-AES 128비트**  
+    - **XTS-AES 256비트**  
 
   - **이동식 데이터 드라이브에 대한 암호화**  
     **기본값**: AES-CBC 128 비트  
 
     이동식 데이터 드라이브에 대한 암호화 방법을 선택합니다. Windows 10을 실행하지 않는 디바이스에서 이동식 드라이브를 사용하는 경우 AES-CBC 알고리즘을 사용하는 것이 좋습니다.  
-    - **AES-CBC 128 비트**  
-    - **AES-CBC 256 비트**  
-    - **XTS-AES 128 비트**  
-    - **XTS-AES 256 비트**  
+    - **AES-CBC 128비트**  
+    - **AES-CBC 256비트**  
+    - **XTS-AES 128비트**  
+    - **XTS-AES 256비트**  
 
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker OS 드라이브 설정  
 
@@ -1329,7 +1329,7 @@ Microsoft Defender 보안 센터 앱 및 앱 알림에 표시할 IT 연락처 �
   - **사용** -사용자 이름을 숨깁니다.  
   - **구성 되지 않음** -마지막 사용자 이름을 표시 합니다.  
 
-- **로그인 시 사용자 이름 숨기기** 
+- **로그인 시 사용자 이름 숨기기**
   **기본값**: 구성 되지 않음  
   LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959)  
 

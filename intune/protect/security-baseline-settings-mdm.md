@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0d673650a26f3917fa32babba42e5e2054c87e59
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74060017"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune에 대한 MDM 보안 기준 설정  
@@ -1889,7 +1889,7 @@ Intune에서 보안 기준을 사용 하는 방법에 대 한 자세한 내용�
 - **자식 프로세스에서 Adobe Reader 시작**  
 - **자식 프로세스에서 Office 통신 앱 시작** 
 
-*[새로운 방법]* [ **Microsoft Defender 방화벽**](#microsoft-defender-firewall)
+*[새로운 기능]* [**Microsoft Defender 방화벽**](#microsoft-defender-firewall)
 - **방화벽 프로필 도메인**  
   - **인바운드 연결 차단됨**  
   - **아웃바운드 연결 필요**  

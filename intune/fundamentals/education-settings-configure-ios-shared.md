@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86b61f628dc559bf0520dbe16ef58644bd360269
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188441"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784258"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>공유 iPad 디바이스에 대한 Intune 교육 설정 구성
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> Intune은 현재 교실 앱 구성을 지원 하지 않습니다. 이 문서는 Intune에서 기존 iOS 교육 프로필이 있는 사용자에게만 적용됩니다.
+> Intune은 현재 교실 앱 구성을 지원 하지 않습니다. 이 문서는 Intune에 기존 iOS 교육 프로필이 있는 사용자에게만 적용됩니다.
 
 Intune에서는 교사들이 학습을 지도하고 교실에서 학생 디바이스를 제어하는 데 도움이 되는 iOS 교실 앱을 지원합니다. 또한 Apple은 여러 학생이 단일 디바이스를 공유할 수 있도록 교실 앱에서 학생 iPad 디바이스를 구성할 수 있는 기능을 지원합니다. 이 문서에서는 Intune으로 이러한 작업을 수행하는 과정을 안내합니다.
 
