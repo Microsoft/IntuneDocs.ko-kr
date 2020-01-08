@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf872387d6e6f4f91af9f074f54695b081b79119
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 63ebbc22c5452c99439d34813509b5652daef1f0
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549111"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548094"
 ---
 # <a name="use-update-channel-and-target-version-settings-to-update-office-365-with-microsoft-intune-administrative-templates"></a>업데이트 채널 및 대상 버전 설정을 사용하여 Microsoft Intune 관리 템플릿으로 Office 365를 업데이트합니다.
 
@@ -75,7 +75,7 @@ Office 앱에 대해 [Office365 ProPlus 자동 업데이트를 사용하도록 �
     ![관리 템플릿 L_Updatebranch 레지스트리 키 예제](./media/administrative-templates-update-office/admx-update-branch-registry-key.png)
 
     > [!TIP]
-    > [Configuration Manager를 사용하여 Office 365 ProPlus 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)에 값과 의미가 나와 있습니다. 레지스트리 값은 선택된 배포 채널을 기준으로 합니다.
+    > [Configuration Manager를 사용하여 Office 365 ProPlus 관리](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)에 값과 의미가 나와 있습니다. 레지스트리 값은 선택된 배포 채널을 기준으로 합니다.
     >
     >- 월별 채널                - value="Current"
     >- 월별 채널(대상 지정)     - value="Current"
@@ -95,7 +95,7 @@ Office 앱에 대해 [Office365 ProPlus 자동 업데이트를 사용하도록 �
     - `UpdateChannel`: 구성된 설정에 따라 변경되는 동적 키입니다.
     - `CDNBaseUrl`: 디바이스에 Office 365를 설치할 때 설정합니다.
 
-3. `UpdateChannel` 값을 확인하세요. 값은 Office가 업데이트되는 빈도를 알려 줍니다. [Configuration Manager를 사용하여 Office 365 ProPlus 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)에 값과 설정 값이 나와 있습니다.
+3. `UpdateChannel` 값을 확인하세요. 값은 Office가 업데이트되는 빈도를 알려 줍니다. [Configuration Manager를 사용하여 Office 365 ProPlus 관리](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)에 값과 설정 값이 나와 있습니다.
 
     다음 예제를 살펴보면 `UpdateChannel`이 `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`(**월별**)으로 설정되어 있는 것을 알 수 있습니다.
 
@@ -173,7 +173,7 @@ Office 앱에 대해 [Office365 ProPlus 자동 업데이트를 사용하도록 �
 
 ## <a name="next-steps"></a>다음 단계
 
-[Office 365 클라이언트의 업데이트 채널 값](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)
+[Office 365 클라이언트의 업데이트 채널 값](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)
 
 [Office 365 ProPlus의 Office 클라우드 정책 서비스 개요](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service)
 

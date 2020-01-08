@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860386"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206672"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필 만들기
 
@@ -124,7 +124,7 @@ ms.locfileid: "74860386"
 
 - Contoso에서 HR(인사 관리 부서)의 모든 사용자를 포함하는 사용자 그룹을 만듭니다. 프로필에서 Windows 10 Professional 또는 Enterprise를 실행하는 디바이스에 적용되는 적용 가능성 규칙을 추가합니다. HR 사용자 그룹에 이 프로필을 할당합니다.
 
-  할당된 프로필은 Windows 10 Professional 또는 Enterprise를 실행하는 장치에 적용됩니다. 이러한 버전을 실행하지 않는 장치의 경우 상태가 **적용할 수 없음**으로 표시됩니다.
+  할당된 프로필은 Windows 10 Professional 또는 Enterprise를 실행하는 디바이스에 적용됩니다. 이러한 버전을 실행하지 않는 장치의 경우 상태가 **적용할 수 없음**으로 표시됩니다.
 
 - 동일한 설정을 사용하는 프로필이 두 개 있으면 적용 가능성 규칙이 없는 프로필이 적용됩니다. 
 

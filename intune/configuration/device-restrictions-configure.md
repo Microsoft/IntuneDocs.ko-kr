@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 704da2ee4f0f2e6dce222c89704c83a35368c02c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059532"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206570"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 제한 설정 구성
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune에는 관리자가 Android, iOS, macOS 및 Windows 디바이스를 제어하는 데 도움이 되는 디바이스 제한 정책이 포함되어 있습니다. 이러한 제한을 통해 광범위한 설정과 기능을 제어하여 조직의 리소스를 보호할 수 있습니다. 예를 들어 관리자는 다음을 수행할 수 있습니다.
 

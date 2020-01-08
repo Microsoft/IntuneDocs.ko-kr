@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899404"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205533"
 ---
 # <a name="intune-discovered-apps"></a>Intune 검색된 앱
 
@@ -54,7 +54,7 @@ Intune은 테넌트의 Intune 등록 디바이스에서 검색된 앱의 집계�
 
 | 플랫폼 | 개인 소유 디바이스 | 회사 소유 디바이스 | 새로 고침 주기 |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Windows 10(Win32 앱) 참고: 디바이스에 [Intune 관리 확장 필요](intune-management-extension.md) | 해당 없음 | 프로그램 추가/제거 목록에 있는 모든 Win32 앱 | 디바이스 등록 시부터 24시간마다 |
+| Windows 10(Win32 앱) 참고: 디바이스에 [Intune 관리 확장 필요](intune-management-extension.md) | 해당 없음 | 관리되는 앱만 | 디바이스 등록 시부터 24시간마다 |
 | Windows 10(최신 앱) | 최신 관리형 앱만 | 디바이스에 설치된 모든 최신 앱 | 디바이스 등록 시부터 7일마다 |
 | Windows 8.1 | 관리되는 앱만 | 관리되는 앱만 | 디바이스 등록 시부터 7일마다 |
 | Windows Phone 8 | 관리되는 앱만 | 관리되는 앱만 | 디바이스 등록 시부터 7일마다 |

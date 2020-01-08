@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6cc64c3a65af72fd74bc58ed7c06a214797510
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b3485a87120cbf565a275cefb38cfe3549ee31d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059459"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206451"
 ---
 # <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune의 Windows 10 디바이스에서 테스트 실행 앱 사용
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune의 교육 프로필은 학생이 디바이스에서 시험에 응시할 수 있도록 설계되었습니다. 이 기능에는 **테스트 실행** 앱과 테스트 URL을 추가하는 설정, 최종 사용자가 테스트에 로그인하는 방법 등이 포함됩니다. 이 기능은 다음 플랫폼을 지원합니다.
 

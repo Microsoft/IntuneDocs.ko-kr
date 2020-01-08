@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5a65000d46941876b95e0b110d21f2dfb900ca33
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059835"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206230"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Intune에서 사용자 지정 디바이스 프로필을 사용하여 미리 공유한 키로 WiFi 프로필 만들기
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 일반적으로 PSK(미리 공유한 키)를 사용하여 WiFi 네트워크 또는 무선 LAN에서 사용자를 인증합니다. Intune에서 미리 공유한 키를 사용하여 Wi-Fi 프로필을 만들 수 있습니다. 프로필을 만들려면 Intune 내에서 **사용자 지정 디바이스 프로필** 기능을 사용합니다. 이 아티클에는 EAP 기반 Wi-Fi 프로필을 만드는 방법에 대한 예제가 포함됩니다.
 

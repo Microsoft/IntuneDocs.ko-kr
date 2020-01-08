@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb9aa6349a88f226c063703d6cb035b3c89636fd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503243"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547842"
 ---
 # <a name="what-is-device-enrollment"></a>디바이스 등록이란?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -35,7 +35,7 @@ Intune을 사용하여 직원의 디바이스 및 앱을 관리하고 회사 데
 
 ## <a name="ios-enrollment-methods"></a>iOS 등록 방법
 
-| **방법** | **초기화 필요** | [**사용자 선호도**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **잠김** | **세부 정보** |
+| **방법** | **초기화 필요** | [**사용자 선호도**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Locked** | **세부 정보** |
 |:---:|:---:|:---:|:---:|:---:|
 | | 디바이스는 등록 중 초기화됩니다. | 각 디바이스를 사용자와 연결합니다.| ‘예’인 경우 사용자는 디바이스 등록을 해제할 수 없습니다. | |
 |**[BYOD](#bring-your-own-device)** | 아니요| 예 | 아니요 | [추가 정보](apple-mdm-push-certificate-get.md)|
@@ -60,7 +60,7 @@ Intune을 사용하여 직원의 디바이스 및 앱을 관리하고 회사 데
 |**자동 등록** | 아니요 |예 |아니요 | [추가 정보](windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Autopilot** |예 |예 |아니요 | [추가 정보](enrollment-autopilot.md)
 |**대량 등록** |아니요 |아니요 |아니요 | [추가 정보](windows-bulk-enroll.md) |
-|**공동 관리** |아니요 |예 |아니요 | [추가 정보](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**공동 관리** |아니요 |예 |아니요 | [추가 정보](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
 |**GPO** |아니요 |예 |아니요 | [추가 정보](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 ## <a name="android-enrollment-methods"></a>Android 등록 방법

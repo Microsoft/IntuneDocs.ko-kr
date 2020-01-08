@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059302"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206281"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune에서 VPN 서버에 연결할 VPN 프로필 생성
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 VPN(가상 사설망)을 사용하면 사용자가 조직 네트워크에 안전하게 원격으로 액세스할 수 있습니다. 디바이스에서 VPN 연결 프로필을 사용하여 VPN 서버와의 연결을 시작합니다. Microsoft Intune의 **VPN 프로필**은 조직의 사용자 및 디바이스에 VPN 설정을 할당하여 조직 네트워크에 쉽고 안전하게 연결할 수 있습니다.
 
@@ -44,7 +44,7 @@ VPN(가상 사설망)을 사용하면 사용자가 조직 네트워크에 안전
 
 다음의 연결 유형을 사용하여 VPN 프로필을 만들 수 있습니다.
 
-|연결 형식|플랫폼|
+|연결 유형|플랫폼|
 |-|-|
 |자동|Windows 10|
 |검사점 캡슐 VPN|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|

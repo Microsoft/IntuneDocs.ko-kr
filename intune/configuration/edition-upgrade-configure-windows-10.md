@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 13fca4de8e36b1bdeb9026985e2eabd21e56e924
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059509"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206944"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Windows 10 버전을 업그레이드하거나 Microsoft Intune을 사용하여 디바이스에서 S 모드 전환
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 MDM(모바일 디바이스 관리) 솔루션의 일부로, Windows 10 디바이스를 업그레이드할 수 있습니다. 예를 들어 Windows 10 Professional 디바이스를 Windows 10 Enterprise로 업그레이드하려고 합니다. 또는 디바이스가 S 모드로 전환해야 합니다.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563671"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205975"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Office 365 앱을 Windows 10 디바이스에 추가
 
@@ -197,7 +197,7 @@ Intune 및 네트워크 인프라가 모두 정상적으로 작동한다고 결�
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>앱 제품군 설치 중에 오류 발생
 
-자세한 설치 로그를 보는 방법에 대한 자세한 내용은 [How to enable Office 365 ProPlus ULS logging](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging)(Office 365 ProPlus ULS 로깅을 사용하도록 설정하는 방법)을 참조하세요.
+자세한 설치 로그를 보는 방법에 대한 자세한 내용은 [How to enable Office 365 ProPlus ULS logging](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging)(Office 365 ProPlus ULS 로깅을 사용하도록 설정하는 방법)을 참조하세요.
 
 다음 표에는 발생할 수 있는 일반적인 오류 코드와 해당 의미가 나와 있습니다.
 

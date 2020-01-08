@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 340659adfa3bbd40f98ccec9d8d44e952f7ec9b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059935"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207114"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune에서 Telecom Expense Management 서비스 설정
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune을 사용하여 조직 소유의 모바일 디바이스에서 데이터 사용량으로부터 통신 비용을 관리할 수 있습니다. Intune은 Saaswedo의 [Datalert Telecom Expense Management](http://datalert.biz/get-started)와 통합됩니다. Datalert는 통신 데이터 사용량을 관리할 수 있는 실시간 통신 비용 관리 솔루션입니다. 이 솔루션은 Intune 관리 디바이스에 대해 비용이 많이 들고 예기치 않은 데이터와 로밍 요금을 방지하게 해줍니다.
 

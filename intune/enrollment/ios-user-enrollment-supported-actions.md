@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562418"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324868"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple 사용자 등록에서 지원되는 Intune 작업 및 옵션
 
@@ -38,7 +38,7 @@ ms.locfileid: "74562418"
 
 예를 들어 **암호 만료** 설정을 구성하고 이 정책을 사용자가 등록한 장치에 푸시하면 디바이스에 다음과 같은 상황이 발생합니다.
 - **암호 만료** 설정은 무시됩니다.
-- `1111` 또는 `1234`와 같은 단순 암호는 허용되지 않습니다.
+- `111111` 또는 `123456`와 같은 단순 암호는 허용되지 않습니다.
 - 6자리 PIN이 적용됩니다.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>관리자 원격 디바이스 작업 및 옵션

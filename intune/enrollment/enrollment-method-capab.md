@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11b93d41ac09f637d6c75a3f2f4b7f4213cecec7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b68ec61496c3c15acc8facc22a6fdfe3c65f06eb
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819774"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547862"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Windows 디바이스용 Intune 등록 방법 기능
 [!INCLUDE[azure_portal](../includes/azure_portal.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "74819774"
 Intune에서 작업자의 디바이스를 등록하는 몇 가지 방법이 있습니다. 아래 표에 나와 있는 것처럼 각 방법에는 다른 모범 사례 및 기능이 포함됩니다.
 
 ## <a name="best-practices-by-enrollment-method"></a>등록 방법별 모범 사례
-| **모범 사례** | **[Azure AD 조인됨](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Autopilot을 사용하여 Azure AD 조인됨(사용자 구동 모드)](enrollment-autopilot.md)** |**[Autopilot을 사용하여 Azure AD 조인됨(셀프 배포 모드)](enrollment-autopilot.md)** |**[대량](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** | **[공동 관리](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)** |
+| **모범 사례** | **[Azure AD 조인됨](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Autopilot을 사용하여 Azure AD 조인됨(사용자 구동 모드)](enrollment-autopilot.md)** |**[Autopilot을 사용하여 Azure AD 조인됨(셀프 배포 모드)](enrollment-autopilot.md)** |**[대량](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** | **[공동 관리](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |EDU에 일반적으로 사용됨|![X](./media/enrollment-method-capab/xmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|
 |디바이스를 공유 디바이스로 사용 가능|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|
@@ -39,7 +39,7 @@ Intune에서 작업자의 디바이스를 등록하는 몇 가지 방법이 있�
 
 ## <a name="capabilities-by-enrollment-method"></a>등록 방법별 기능
 
-| **기능** | **[Azure AD 조인됨](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Autopilot을 사용하여 Azure AD 조인됨(사용자 구동 모드)](enrollment-autopilot.md)** |**[Autopilot을 사용하여 Azure AD 조인됨(셀프 배포 모드)](enrollment-autopilot.md)** |**[대량](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** | **[공동 관리](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)** |
+| **기능** | **[Azure AD 조인됨](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Autopilot을 사용하여 Azure AD 조인됨(사용자 구동 모드)](enrollment-autopilot.md)** |**[Autopilot을 사용하여 Azure AD 조인됨(셀프 배포 모드)](enrollment-autopilot.md)** |**[대량](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** | **[공동 관리](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |조건부 액세스                                      |![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)\*\*|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|
 |디바이스와 연결된 사용자                    |![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|![확인 표시](./media/enrollment-method-capab/checkmark.png)|

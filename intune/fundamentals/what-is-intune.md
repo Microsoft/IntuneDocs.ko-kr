@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3c03c67a99b78804c999250f8d1148a4b3d1d97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6d24d1c7dbae12fb33ec277419b1bbfd47b46b07
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504756"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548065"
 ---
 # <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune은 디바이스에 대한 MDM 및 MAM 공급자입니다.
 
-Microsoft Intune은 MDM(모바일 장치 관리) 및 MAM(모바일 응용 프로그램 관리)에 중점을 둔 클라우드 기반 서비스입니다. Intune은 Microsoft의 [Enterprise Mobility + Security(EMS) 제품군](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)에 포함되어 있으므로 사용자는 조직 데이터를 보호하면서 생산성을 높일 수 있습니다. 액세스 권한이 있는 사용자 및 액세스 권한이 있는 사용자를 제어하기 위해 Microsoft 365 및 Azure AD(Azure Active Directory)를 비롯한 다른 서비스와 통합되며, 데이터 보호를 위해 Azure Information Protection과 통합됩니다. Intune과 Microsoft 365를 함께 사용하면 조직의 정보를 보호하면서 직원이 사용하는 모든 디바이스에서 생산성을 높이도록 할 수 있습니다.
+Microsoft Intune은 MDM(모바일 디바이스 관리) 및 MAM(모바일 응용 프로그램 관리)에 중점을 둔 클라우드 기반 서비스입니다. Intune은 Microsoft의 [Enterprise Mobility + Security(EMS) 제품군](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)에 포함되어 있으므로 사용자는 조직 데이터를 보호하면서 생산성을 높일 수 있습니다. 액세스 권한이 있는 사용자 및 액세스 권한이 있는 사용자를 제어하기 위해 Microsoft 365 및 Azure AD(Azure Active Directory)를 비롯한 다른 서비스와 통합되며, 데이터 보호를 위해 Azure Information Protection과 통합됩니다. Intune과 Microsoft 365를 함께 사용하면 조직의 정보를 보호하면서 직원이 사용하는 모든 디바이스에서 생산성을 높이도록 할 수 있습니다.
 
 ![Intune 아키텍처의 이미지](./media/what-is-intune/intunearch_sm.png)
 
@@ -34,7 +34,7 @@ Intune 아키텍처 다이어그램의 [확대 버전](./media/what-is-intune/in
 
 Intune을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
 
-- Intune을 사용하는 100% 클라우드를 선택하거나 Configuration Manager 및 Intune을 사용하는 [공동 관리](https://docs.microsoft.com/sccm/comanage/overview)를 선택합니다.
+- Intune을 사용하는 100% 클라우드를 선택하거나 Configuration Manager 및 Intune을 사용하는 [공동 관리](https://docs.microsoft.com/configmgr/comanage/overview)를 선택합니다.
 - 개인 또는 조직이 소유한 디바이스에서 데이터 및 네트워크에 액세스할 수 있도록 규칙을 설정하고 설정을 구성합니다.
 - 디바이스(온-프레미스 및 모바일)에 앱을 배포하고 인증합니다.
 - 사용자가 정보에 액세스하고 공유하는 방법을 제어하여 회사 정보를 보호합니다.

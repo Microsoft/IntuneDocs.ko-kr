@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832611"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206638"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune의 디바이스 정책 및 프로필을 통한 일반적인 질문, 이슈 및 해결 방법
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune의 디바이스 프로필 및 정책을 사용하는 경우 일반적인 질문에 대한 답변을 얻을 수 있습니다. 이 문서에서는 체크 인 시간 간격을 나열하고, 충돌에 대한 추가적인 세부 정보 등도 제공합니다.
 

@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8823aa8467ef380223a486874c68d52926db733
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
+ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503751"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75564920"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Intune과 Sophos Mobile Threat Defense 커넥터 사용
 Microsoft Intune과 통합된 MTD(Mobile Threat Defense) 솔루션인 Sophos Mobile에서 수행된 위험 평가에 따라 조건부 액세스를 사용하여 모바일 디바이스에서 회사 리소스에 대한 액세스를 제어할 수 있습니다. 위험은 Sophos Mobile 앱을 실행하는 디바이스에서 수집된 원격 분석에 기반하여 평가됩니다.
@@ -54,7 +54,7 @@ Intune 디바이스 준수 정책에는 Sophos Mobile 위험 평가에 기반을
 **수정 시 액세스 권한 부여됨**:   
 ![수정 시 액세스 권한 부여됨](./media/sophos-mtd-connector/sophos_network_wifi_unblocked.png)  
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어  
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크 위협에 따라 SharePoint Online에 대한 액세스 제어  
 메시지 가로채기(man-in-the-middle) 공격 같은 네트워크에 대한 위협을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.  
 
 **네트워크 위협이 감지되면 SharePoint Online 차단**:   
@@ -72,7 +72,7 @@ Intune 디바이스 준수 정책에는 Sophos Mobile 위험 평가에 기반을
 - Microsoft Intune 구독 
 - Sophos Mobile Threat Defense 구독
 
-자세한 내용은 [Sophos 웹 사이트](https://www.sophos.com/products/mobile-control)를 참조하세요.  
+자세한 내용은 [Sophos 웹 사이트](https://www.sophos.com/en-us/products/mobile-control.aspx)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계  
 - [Intune과 Sophos 통합](sophos-mtd-connector-integration.md)

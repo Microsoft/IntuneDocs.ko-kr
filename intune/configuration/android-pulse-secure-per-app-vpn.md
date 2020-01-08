@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
-ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
+ms.openlocfilehash: 83b2ffc7e942492be4560a56af0f3514cb1638a4
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74319852"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206859"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune 사용자 지정 프로필을 사용하여 Android 디바이스에 대한 앱별 VPN 프로필 만들기
 
