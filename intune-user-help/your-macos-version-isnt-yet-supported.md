@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a84e1a102d7b1bd00a77f5cb28f14811989e8c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: fdbf6647de084282fc9038f3c5f0152ae4c43c6c
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507658"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857097"
 ---
 # <a name="your-macos-devices-operating-system-version-isnt-yet-supported"></a>사용 중인 macOS 디바이스의 운영 체제 버전이 아직 지원되지 않는 경우
 

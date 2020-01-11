@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdffefb54291a6ee7b2da0d8fe6ac623f478b0e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fcb3a9f817b0e765fee79342bcd212f33509209a
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713393"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653549"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune 앱 SDK 개요
 iOS와 Android 둘 다에 사용할 수 있는 Intune 앱 SDK를 통해 앱에서 Intune [앱 보호 정책](../apps/app-protection-policy.md)을 지원할 수 있습니다. 앱에 앱 보호 정책이 적용되면 Intune에서 관리할 수 있으며 Intune에서 관리 앱으로 인식됩니다. SDK는 앱 개발자에게 요구되는 코드 변경의 양을 최소화하기 위해 노력합니다. 앱의 동작을 변경하지 않고 대부분의 SDK 기능을 사용하도록 설정할 수 있습니다. 최종 사용자 및 IT 관리자 환경을 개선하기 위해 SDK의 API를 활용하여 앱 참여가 필요한 기능을 지원하도록 앱 동작을 사용자 지정할 수 있습니다.

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a0ffebe7472666ce9ccd53a47460ab5f0a9b34d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e70ef0a31b2503944fb86356f96f81f375205cb7
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508323"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858006"
 ---
 # <a name="upload-and-email-logs-using-a-usb-cable"></a>USB 케이블을 사용 하 여 로그 업로드 및 전자 메일 보내기
 

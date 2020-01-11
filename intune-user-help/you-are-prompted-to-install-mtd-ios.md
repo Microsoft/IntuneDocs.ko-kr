@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08da009d6c53b19ca18cae6b88e38eb475456b57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 5f8fca650d631b6e7df3d7e9c4d787f0ef7add51
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501553"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858729"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>iOS 디바이스에 Mobile Threat Defense 설치
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4202ad2bc4a9c03e572b906b43dd5d67d551b768
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 224c2a36d0f95eccbaec1a3b95340b55f088c37f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505817"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854928"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Windows 디바이스를 암호화하는 방법
 

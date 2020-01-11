@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50eb3495362d4b88071707e25a5faa39b76b6c3b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f23e17be92f8d5ce8f8eff1fe1847d56d2215e59
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810351"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857608"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune 회사 포털 웹 사이트 사용
 [회사 포털 웹 사이트](https://portal.manage.microsoft.com) 를 사용 하 여 학교 또는 업무용 앱을 검색, 설치 및 제거할 수 있습니다. 등록 된 장치를 확인, 편집, 추가 및 제거할 수 있습니다.  

@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb1833a6a54fe0a7f78958e653468921df952b4d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ef8fd91744931e1a4a8b7f52d5646c4f8201c255
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505703"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654059"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>모바일 앱 관리(MAM) 엔터티에 대한 참조
 
@@ -126,6 +126,6 @@ ms.locfileid: "72505703"
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        platformKey         |     데이터 웨어하우스의 플랫폼에 대한 고유 식별자 - 서로게이트 키      |                           123                           |
 |          플랫폼          | 플랫폼에 대한 고유 식별자 - PlatformKey와 비슷하지만 자연 키입니다. |                           123                           |
-|        platformName        |                                   플랫폼 이름                                   | 사용할 수 없음 <br>없음 <br>Windows <br>iOS <br>Android: |
+|        platformName        |                                   플랫폼 이름                                   | 사용할 수 없음 <br>없음 <br>Windows <br>IOS <br>Android: |
 | RowLastModifiedDateTimeUtc | 데이터 웨어하우스에서 해당 플랫폼을 마지막으로 수정한 UTC 날짜 및 시간  |                 11/23/2016 12:00:00 AM                  |
 

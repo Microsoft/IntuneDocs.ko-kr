@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 170ed2fbf300299796401b10a906d875b6f50bf5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e19cc606792c59d2f5676aeca41d862308f1ab32
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490450"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654144"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 데이터 웨어하우스 API 엔드포인트
 
@@ -78,7 +78,7 @@ URL에는 다음 요소가 포함됩니다.
 > [!NOTE]
 > 필터 예제에서는 오늘 날짜를 2019년 2월 21일로 가정합니다.
 
-|                             Filter                             |           성능 최적화           |                                          설명                                          |
+|                             필터                             |           성능 최적화           |                                          설명                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    전체                                      |    `DateKey`가 20180214와 20180221 사이에 있는 데이터를 반환합니다.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    전체                                      |    `DateKey`가 20180214와 동일한 데이터를 반환합니다.                                                    |

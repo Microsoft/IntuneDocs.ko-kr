@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2f075aed1c9cc00963c89a9e76122484d1a430b1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74781212"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857642"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android 디바이스에서 관리되는 앱 사용
 관리되는 앱은 조직의 보안 요구 사항을 충족시키고 회사 및 학교 데이터를 보호하도록 구성됩니다. 이러한 앱은 디바이스에서 자동으로 설치 또는 사용할 수 있습니다. 

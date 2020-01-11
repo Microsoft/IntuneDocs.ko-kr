@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9b44e50300c3bd034ca2bb3b0454a5ce953dc18
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058231"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206978"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API를 사용하여 SCEP에 대한 타사 CA를 Intune에 추가
 
@@ -202,7 +202,7 @@ SCEP 요청을 처리하는 도중에 인증서가 생성되었음을 Intune에 
 
     - transactionId      SCEP 트랜잭션 ID
     - certificateRequest    DER로 인코딩된 PKCS #10 인증서 요청 문자열로 인코딩된 Base64
-    - certThumprint      프로비전된 인증서의 지문
+    - 프로 비전 된 인증서의 지문에 대 한 certThumprint SHA1 해시
     - certSerialNumber    프로비전된 인증서의 일련 번호
     - certExpirationDate    프로비전된 인증서의 만료 날짜. 날짜 시간 문자열은 웹 UTC 시간(YYYY-MM-DDThh:mm:ss.sssTZD) ISO 8601 형식이어야 합니다.
     - certIssuingAuthority   인증서를 발급한 기관의 이름

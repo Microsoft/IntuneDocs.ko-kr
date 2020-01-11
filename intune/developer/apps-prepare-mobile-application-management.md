@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74547696"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653940"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>앱 보호 정책에 대해 LOB(기간 업무) 앱 준비
 
@@ -92,7 +92,7 @@ Intune SDK 개발 팀에서는 네이티브 Android, iOS(Obj-C, Swift), Xamarin,
 |앱이 다른 앱의 데이터를 받도록 허용|X|X|
 |다른 앱에서 잘라내기, 복사 및 붙여넣기 제한|X|X|
 |관리형 앱에서 잘라내거나 복사할 수 있는 문자 수를 지정합니다.|X|X|
-|액세스용 단순 PIN 필요|X|X|
+|액세스 시 단순 PIN 필요|X|X|
 |PIN을 다시 설정하기 전 시도 횟수 지정|X|X|
 |PIN 대신 지문 허용|X|X|
 |PIN 대신 안면 인식 허용(iOS에만 해당)|X|X|

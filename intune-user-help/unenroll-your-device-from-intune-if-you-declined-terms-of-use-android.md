@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 169007541bccfc3e26184ac71197265931afbfdd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f54f0d9453e93ad54a1d2a96ff25051f3d8bd3a1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508111"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857676"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>“사용 약관”을 거부한 경우 관리에서 디바이스 제거
 
@@ -38,7 +38,7 @@ ms.locfileid: "72508111"
 
 Intune에서 디바이스를 제거하고 회사 포털 앱을 제거하려면:
 
-1. **설정**&gt;**보안 및 화면 잠금**&gt;**디바이스 관리자**로 이동합니다.
+1. **설정** &gt; **보안 &amp; 화면 잠금** &gt; **장치 관리자**로 이동 합니다.
 
     이 단계를 완료하면 디바이스 등록이 즉시 취소됩니다.
 

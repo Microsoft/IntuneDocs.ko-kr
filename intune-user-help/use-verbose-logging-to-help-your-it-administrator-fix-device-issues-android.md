@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b8da85deae3113995e2836d6af924c5e8938e6ec
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508010"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858950"
 ---
 # <a name="configure-logging-settings"></a>로깅 설정 구성
 
@@ -37,7 +37,7 @@ ms.locfileid: "72508010"
 자세한 로깅은 회사 포털 앱에서 수행 하는 모든 작업을 기록 합니다. 기본적으로 장치에서 사용 하도록 설정 됩니다. 회사 포털에서 자세한 정보 로깅을 해제 하려면 다음을 수행 합니다.  
 
 1. 회사 포털 앱에 로그인합니다.
-2. **설정**을 탭 합니다.
+2. **설정**을 탭합니다.
 3. **자세한 정보 로깅**옆의 스위치를 **해제**로 전환 합니다.
 
 ## <a name="configure-microsoft-intune-app-logging"></a>앱 로깅 Microsoft Intune 구성

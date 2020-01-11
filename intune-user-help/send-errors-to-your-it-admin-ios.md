@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81f90c8022fb471ffa8783d636c88ce67a296595
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e37a82fe3cca461e8384843dc0710cb00c36b79c
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502062"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858082"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS 디바이스의 문제에 대해 회사 지원팀에 오류 보내기
 경우에 따라 iOS 디바이스에서 회사 포털 앱을 사용하는 동안 오류가 발생할 수 있습니다. 이 경우 회사의 지원 담당자에게 오류에 대한 세부 정보를 이메일 발송할 수 있습니다. 이러한 세부 정보는 사용자에 대한 문제를 해결하는 데 필요한 컨텍스트를 제공합니다.
