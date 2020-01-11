@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3f1996052e31a70ca44c40c277a7c5ff93819a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 774c67b67094782d98e8ca325f092f8a5760dd2f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507986"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858933"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>Intune 회사 포털에서 iOS 디바이스 사용
 이 문서에서는 iOS용 회사 포털에 특정된 작업 및 정보를 나열합니다. iOS 디바이스의 문제를 해결하고 관리하는 데 사용합니다. 자세한 세부 정보, 단계 및 스크린샷을 보려면 링크를 클릭합니다.

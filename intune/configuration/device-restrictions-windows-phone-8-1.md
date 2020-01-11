@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc29a7a5026691371370b167a4445bfd70cc76bd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 37fa650fb8c742b1f1b0cfbf154fe8cf63d35c89
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489797"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206468"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1 디바이스 제한 설정
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 이 아티클에서는 Windows Phone 8.1을 실행하는 디바이스에 대해 구성할 수 있는 Microsoft Intune 디바이스 제한 설정을 보여줍니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "72489797"
 
 앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 이 URL을 허용되는 앱 또는 차단되는 앱 목록에서 URL로 사용할 수 있습니다.
 
-예: 스토어에서 Skype 앱을 검색합니다. 사용하는 URL은 `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`입니다.
+예제: Skype 앱의 저장소를 검색합니다. 사용하는 URL은 `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`입니다.
 
 
 
