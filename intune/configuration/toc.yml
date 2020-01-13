@@ -9,6 +9,10 @@
   items:
     - name: 메일 디바이스 프로필 만들기
       href: quickstart-email-profile.md
+- name: 자습서
+  items:
+    - name: 관리 템플릿 만들기
+      href: tutorial-walkthrough-administrative-templates.md
 - name: 방법 가이드
   items:
     - name: 프로필 만들기
@@ -135,7 +139,7 @@
               href: macos-device-features-settings.md
             - name: 디바이스 제한 사항
               href: device-restrictions-macos.md
-            - name: Endpoint Protection
+            - name: 엔드포인트 보호
               href: ../protect/endpoint-protection-macos.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: 확장
               href: kernel-extensions-settings-macos.md
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: 유선 네트워크
-              href: wired-network-settings-macos.md
             - name: 사용자 지정
               href: custom-settings-macos.md
         - name: Windows 10 이상
@@ -161,7 +163,7 @@
               href: edition-upgrade-windows-settings.md
             - name: 메일
               href: email-settings-windows-10.md
-            - name: Endpoint Protection
+            - name: 엔드포인트 보호
               href: ../protect/endpoint-protection-windows-10.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: ID 보호
               href: ../protect/identity-protection-windows-settings.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
