@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
-ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
+ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
+ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75323027"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760972"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
 
@@ -55,19 +55,6 @@ Windows Phone 8.1에 대한 Microsoft 일반 지원은 2017년 7월에 종료되
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
 Intune 보고를 확인하여 디바이스 또는 사용자가 받을 수 있는 영향에 대해 알아볼 수 있습니다. 디바이스 &gt; 모든 디바이스로 이동하고 OS를 기준으로 필터링합니다. 추가 열에 추가하면 Windows Phone 8.1을 실행하는 디바이스를 가진 조직의 사용자를 식별하는 데 도움이 됩니다. 최종 사용자는 지원되는 OS 버전으로 자신의 디바이스를 업그레이드하도록 요청합니다.
-
-
-### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 변경 계획: Windows 10, 버전 1703 회사 포털 지원 종료<!--5026679-->
-Windows 10, 버전 1703(Windows 10, RS2라고도 함)은 2019년 10월 8일 자로 Enterprise 및 EDU Edition에 대한 서비스가 중단되었습니다. Intune은 2019년 12월 26일부터 RS2/RS1용 회사 포털 앱에 대한 지원을 종료합니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-앞으로 이 버전의 회사 포털 앱에 새 기능이 표시되지는 않지만, 2019년 12월 26일까지 필요에 따라 회사 포털 앱에 대한 보안 업데이트 제공을 포함하여 이 회사 포털 앱 버전을 계속 지원합니다. 그러나 서비스 중단 이후에는 Windows 10, 버전 1703이 보안 업데이트를 받지 못하므로 새로운 기능 및 추가 기능을 계속 제공받을 수 있도록 Windows 디바이스를 보다 최신의 Windows 버전으로 업데이트하고 최신 회사 포털 앱을 사용하는 것이 좋습니다.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
-수행할 단계는 환경 구성에 따라 달라집니다. 일반적으로 이전 버전의 OS 및/또는 회사 포털이 설치된 디바이스를 식별하여 업데이트해야 합니다. Windows 10 업데이트 링을 설정하려면 Intune -> 소프트웨어 업데이트 – Windows 10 업데이트 링에 로그인합니다. 최신 버전의 회사 포털은 버전 10.3.5601.0입니다. 사용자에게 향후 릴리스로 최신 상태를 유지할 수 있게 Microsoft Store에서 최신 버전을 다운로드하도록 지시하세요. Intune을 사용하여 [비즈니스용 Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business)를 통해 Windows 디바이스에 최신 버전을 설치할 수도 있습니다.
-
-#### <a name="additional-information"></a>추가 정보
-[Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 수동으로 추가](https://docs.microsoft.com/intune/store-apps-company-portal-app)
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>작업 수행: 보호된 Intune 브라우저 환경에 Microsoft Edge 사용<!--5728447-->
