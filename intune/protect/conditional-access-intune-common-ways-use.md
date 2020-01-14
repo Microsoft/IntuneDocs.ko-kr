@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9795ca8a585fd926cc269d493760b37aa7666eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74051966"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547061"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune에서 조건부 액세스를 사용하는 일반적인 방법이란?
 
@@ -83,11 +83,11 @@ PC에 대한 조건부 액세스는 모바일 디바이스에 사용할 수 있�
 
 #### <a name="corporate-owned"></a>회사 소유
 
-- **온-프레미스 AD 도메인 가입:** 기존에 자사에서 AD 그룹 정책 또는 System Center Configuration Manager로 PC를 관리하는 방식에 어느 정도 익숙한 조직에서 흔히 사용되는 옵션입니다.
+- **온-프레미스 AD 도메인 가입:** 기존에 자사에서 AD 그룹 정책 또는 Configuration Manager로 PC를 관리하는 방식에 어느 정도 익숙한 조직에서 흔히 사용되는 옵션입니다.
 
 - **Azure AD 도메인 가입 및 Intune 관리:** 이 시나리오는 클라우드 우선(즉, 온-프레미스 인프라 사용을 줄이기 위해 클라우드 서비스를 주로 사용함) 또는 클라우드 전용(온-프레미스 인프라 없음)을 사용하려는 조직을 위한 것입니다. Azure AD 조인은 하이브리드 환경에서 정상적으로 작동하여 클라우드 및 온-프레미스 앱과 리소스에 모두 액세스할 수 있도록 합니다. 디바이스가 Azure AD에 조인되고 Intune에 등록되면 회사 리소스에 액세스할 때 조건부 액세스 조건으로 사용할 수 있습니다.
 
-- **AD 도메인 가입 및 System Center Configuration Manager:** 현재 분기를 기준으로 할 때 System Center Configuration Manager는 도메인에 가입된 PC 이외에 다음과 같은 특정 준수 기준도 평가할 수 있는 조건부 액세스 기능을 제공합니다.
+- **AD 도메인 가입 및 Configuration Manager:** 현재 분기를 기준으로 할 때 Configuration Manager는 도메인에 가입된 PC 이외에 다음과 같은 특정 준수 기준도 평가할 수 있는 조건부 액세스 기능을 제공합니다.
 
   - PC의 암호화 여부
 

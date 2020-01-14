@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4f5d3a232cab25c60189132732a0ea3f347c74a
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188246"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683802"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune을 사용하는 Windows 10 디바이스에서 Windows Hello for Business 사용
 
@@ -71,6 +71,9 @@ Intune은 "구성 프로필"을 사용하여 조직의 요구 사항에 맞게 �
 5. 작업이 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다.
 
 프로필이 만들어지고 프로필 목록에 표시됩니다. 그런 다음, 요구에 맞도록 사용자와 디바이스 그룹에 이 프로필을 [할당](../configuration/device-profile-assign.md)합니다.
+
+> [!IMPORTANT]
+> 여러 사용자를 디바이스에 프로비전할 수 있도록 하려면 비즈니스용 Windows Hello 정책을 디바이스에 적용하도록 지정합니다. 정책이 사용자에게만 적용되는 경우 하나의 디바이스에 하나의 사용자만 프로비전할 수 있습니다.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

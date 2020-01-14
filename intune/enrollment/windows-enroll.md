@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000434"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207437"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 등록 설정
 
@@ -128,6 +128,9 @@ Azure Active Directory에는 iOS, Android 및 Windows 디바이스의 디바이�
 디바이스 등록에 대한 자세한 내용은[Azure Portal을 사용하여 디바이스 ID 관리](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)를 참조하세요.
 
 ## <a name="windows-10-auto-enrollment-and-device-registration"></a>Windows 10 자동 등록 및 디바이스 등록
+
+이 섹션은 미국 정부 클라우드 고객에 적용됩니다.
+
 CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 사용하면 사용자가 보다 쉽게 등록할 수 있습니다. 등록 CNAME 레코드가 없으면 사용자에게 MDM 서버 이름인 enrollment.manage.microsoft.us를 수동으로 입력하라는 메시지가 표시됩니다.
 
 | 유형 | 호스트 이름 | 지시 대상 | TTL |

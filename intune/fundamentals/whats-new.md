@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/09/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: b2bb9d921f30e343b309be60438f5318d7c66518
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000383"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692253"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-매주 Microsoft Intune에 추가되는 새로운 기능에 대해 알아봅니다. 또한 [중요한 공지](#notices), [과거 릴리스](whats-new-archive.md) 및 [Intune 서비스 업데이트가 릴리스되는 방법](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)에 관한 정보도 찾을 수 있습니다.
+매주 Microsoft Intune에 추가되는 새로운 기능에 대해 알아봅니다. 또한 [중요한 공지](#notices), [과거 릴리스](whats-new-archive.md) 및 [Intune 서비스 업데이트가 릴리스되는 방법](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)에 관한 정보도 찾을 수 있습니다. 
 
 > [!Note]
 > 각 [월별 업데이트](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)는 출시에 최대 3일이 걸릴 수 있고 다음 순서로 출시됩니다.
@@ -54,10 +54,60 @@ ms.locfileid: "75000383"
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-december-9-2019"></a>2019년 12월 9일 주
+## <a name="week-of-january-6-2020"></a>2020년 1월 6일이 포함된 주
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>앱 관리
+
+#### <a name="smime-support-for-microsoft-outlook-for-ios---2669398---"></a>iOS용 Microsoft Outlook의 S/MIME 지원<!-- 2669398 -->
+Intune은 iOS 디바이스에서 iOS용 Outlook과 함께 사용할 수 있는 S/MIME 서명 및 암호화 인증서 배달을 지원합니다. 자세한 내용은 [iOS 및 Android용 Outlook의 민감도 레이블 지정 및 보호](https://aka.ms/omsmime)를 참조하세요.
+
+<!-- ########################## -->
+## <a name="week-of-december-30-2019"></a>2019년 12월 30일이 포함된 주
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>앱 관리
+
+#### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>MEM 암호화된 macOS 디바이스에서 개인 복구 키 검색<!-- 4851745 -->
+최종 사용자는 iOS 회사 포털 앱을 사용하여 개인 복구 키(FileVault 키)를 검색할 수 있습니다. 개인 복구 키를 포함한 디바이스는 Intune에 등록하고 Intune을 통한 FileVault로 암호화해야 합니다. iOS 회사 포털 앱을 사용하면 최종 사용자는 **복구 키 가져오기**를 클릭해 암호화된 macOS 디바이스에서 개인 복구 키를 검색할 수 있습니다. Intune에서 **디바이스** > *암호화되어 등록된 macOS 디바이스* > **복구 키 가져오기**를 선택하여 복구 키를 검색할 수도 있습니다. FileVault에 대한 자세한 내용은 [macOS용 FileVault 암호화](~/protect/encrypt-devices.md#filevault-encryption-for-macos)를 참조하세요.
+
+#### <a name="ios-user-licensed-vpp-apps---5619268---"></a>iOS 사용자에게 사용이 허가된 VPP 앱<!-- 5619268 -->
+사용자가 등록한 iOS 디바이스의 경우 최종 사용자에게 디바이스에서 사용이 허가된 VPP 앱 배포를 이용할 수 없다고 표시됩니다. 그러나 회사 포털에서는 최종 사용자가 사용자에게 사용이 허가된 모든 VPP 앱을 계속 볼 수 있습니다. VPP 앱에 대한 자세한 내용은 [Microsoft Intune을 사용하여 Apple Volume Purchase Program을 통해 구매한 iOS 및 macOS 앱을 관리하는 방법](~/apps/vpp-apps-ios.md)을 참조하세요.
+
+<!-- ########################## -->
+## <a name="week-of-december-23-2019"></a>2019년 12월 23일이 포함된 주
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>앱 관리
+
+#### <a name="notice---windows-10-1703-rs2-will-be-moving-out-of-support----5026679---"></a>알림 - Windows 10 1703(RS2)의 지원 종료 <!-- 5026679 -->
+2018년 10월 9일부터 Microsoft 플랫폼의 Home, Pro, Pro for Workstations 에디션용 Windows 10 1703(RS2)의 지원이 중단되었습니다. Windows 10 Enterprise 및 Education 에디션의 경우 2019년 10월 8일부터 Windows 10 1703(RS2)의 지원이 중단되었습니다. 2019년 12월 26일부터 Windows 회사 포털 애플리케이션을 최소 Windows 10 1709(RS3)으로 업데이트할 예정입니다. 1709 이전 버전으로 실행되는 컴퓨터는 Microsoft Store에서 업데이트된 버전의 애플리케이션을 받을 수 없습니다. 이 변경 사항은 메시지 센터를 통해 Windows 10의 이전 버전을 사용하는 사용자에게 전달되었습니다. 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
+
+<!-- ########################## -->
+
+## <a name="week-of-december-16-2019"></a>2019년 12월 16일이 포함된 주
+
+### <a name="device-configuration"></a>디바이스 구성
+
+#### <a name="updates-to-administrative-templates-for-windows-10-devices----5941568---"></a>Windows 10 디바이스용 관리 템플릿 업데이트 <!-- 5941568 -->
+
+Microsoft Intune의 ADMX 템플릿을 사용해 Microsoft Edge, Office, Windows의 설정을 제어하고 관리할 수 있습니다. Intune의 관리 템플릿에 다음과 같은 정책 설정이 업데이트되었습니다.
+
+- Microsoft Edge 버전 78 및 79 지원 추가
+- [관리 템플릿 파일(ADMX/ADML) 및 Office 365 ProPlus, Office 2019, Office 2016용 Office 사용자 지정 도구](https://www.microsoft.com/download/details.aspx?id=49030)에 2019년 11월 11일의 ADMX 파일 포함
+
+Intune의 ADMX 템플릿에 대한 자세한 내용은 [Windows 10 템플릿을 사용해 Microsoft Intune의 그룹 정책 설정 구성하기](../configuration/administrative-templates-windows.md)를 참조하세요.
+
+적용 대상:
+
+- Windows 10 이상
+
+## <a name="week-of-december-9-2019-1912-service-release"></a>2019년 12월 9일이 포함된 주(1912 서비스 릴리스)
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>앱 관리
 
 #### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>관리되는 검색 시나리오를 위해 Microsoft Edge로 마이그레이션<!-- 5173762 -->
-
 Intune Managed Browser가 점차 사용 중지되는 상황에서 사용자를 Edge로 이동하는 데 필요한 단계를 간소화하기 위해 앱 보호 정책을 변경했습니다. 앱 보호 정책 설정 **다른 앱을 사용한 웹 콘텐츠 전송 제한**에 대한 옵션을 다음 중 하나로 업데이트했습니다.
 
 - 모든 앱
@@ -66,6 +116,85 @@ Intune Managed Browser가 점차 사용 중지되는 상황에서 사용자를 E
 - 관리되지 않는 브라우저 
 
 **Microsoft Edge**를 선택하면 관리되는 검색 시나리오에 Microsoft Edge가 필요하다는 액세스 조건 메시지가 최종 사용자에게 표시됩니다. 해당 AAD 계정으로 Microsoft Edge를 다운로드하여 로그인하라는 메시지가 표시됩니다(아직 수행하지 않은 경우).  이는 애플리케이션 구성 설정을 사용하여 MAM 지원 앱을 대상으로 `com.microsoft.intune.useEdge`를 **True**로 설정하는 것과 동일합니다. **정책 관리 브라우저** 설정을 사용하는 기존 앱 보호 정책에 이제 **Intune Managed Browser**가 선택되었으며 작동에는 변화가 없습니다. 즉, **useEdge** 앱 구성 설정을 **True**로 설정한 경우 사용자에 게 Microsoft Edge를 사용하라는 메시지가 표시됩니다. 관리되는 검색 시나리오를 활용하는 모든 고객은 **다른 앱을 사용한 웹 콘텐츠 전송 제한**을 포함해 앱 보호 정책을 업데이트하여 연결을 시작하는 앱에 관계없이 사용자가 Microsoft Edge로 전환하기 위한 적절한 지침을 확인하는 것이 좋습니다. 
+
+#### <a name="configure-app-notification-content-for-organization-accounts---2576686----"></a>조직 계정용 앱 알림 콘텐츠 구성<!-- 2576686  -->
+Android 및 iOS 디바이스의 Intune 앱 보호 정책(APP)으로 조직 계정용 앱 알림 콘텐츠를 제어할 수 있습니다. 옵션(허용, 조직 데이터 차단, 차단)을 선택해 선택한 앱에서 조직 계정이 표시되는 알림 방식을 지정할 수 있습니다. 이 기능을 사용하려면 애플리케이션에서 지원이 필요하며, APP을 사용하는 모든 애플리케이션에서 사용 가능하지 않을 수 있습니다. iOS 버전 4.15.0 이상을 지원하는 Outlook 및 Android 4.83.0 이상을 지원하는 Outlook은 이 설정을 지원합니다. 콘솔에서도 이 설정을 사용할 수 있지만 해당 기능은 2019년 12월 16일부터 실제 사용이 가능합니다. APP에 대한 자세한 내용은 [앱 보호 정책이란?](../apps/app-protection-policy.md)을 참조하세요.
+
+#### <a name="microsoft-app-icons-update--4677605----"></a>Microsoft 앱 아이콘 업데이트<!--4677605  -->
+앱 보호 정책 및 앱 구성 정책을 위한 앱 대상 창 내 Microsoft 앱용 아이콘이 업데이트되었습니다.
+
+#### <a name="require-use-of-approved-keyboards-on-android--4761794----"></a>Android에서 승인된 키보드 필수 사용<!--4761794  -->
+앱 보호 정책의 일환으로 [**승인된 키보드**](../apps/app-protection-policy-settings-android.md#data-protection)의 설정을 지정하여 관리되는 Android 앱에서 사용할 수 있는 Android 키보드를 관리할 수 있습니다. 사용자가 관리되는 앱을 열었을 때 사전에 앱에서 승인된 키보드가 없는 경우, 기존에 디바이스에 설치된 승인된 키보드 중 하나로 변경하도록 합니다. 필요한 경우 승인된 키보드의 Google Play 스토어 다운로드 링크를 표시하여 이를 설치하고 설정하도록 합니다. 사용 중인 키보드가 승인된 키보드가 아닐 경우 사용자는 관리되는 앱의 텍스트 필드만 편집이 가능합니다.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>디바이스 구성
+
+#### <a name="updated-single-sign-on-experience-for-apps-and-websites-on-your-ios-ipados-and-macos-devices---4999578----"></a>iOS, iPadOS, macOS 디바이스의 앱 및 웹 사이트에서 업데이트된 Single Sign-On 환경<!-- 4999578  -->
+Intune에 iOS, iPadOS, macOS 디바이스용 Single Sign-On(SSO) 설정이 더 추가되었습니다. 이제 ID 공급자 또는 조직이 작성한 리디렉션 SSO 앱 확장을 구성할 수 있습니다. 이 설정을 사용하면 OAuth나 SAML2와 같이 현대적인 인증 방식을 사용하는 앱이나 웹 사이트에서 더욱 매끄러운 Single Sign-On 환경을 구성할 수 있습니다. 
+
+이 새 설정은 SSO 앱 확장 및 Apple 내장 Kerberos 확장의 기존 설정을 보강합니다(**디바이스** > **디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼 유형: **iOS/iPadOS** 또는 **macOS** > 프로필 유형: **디바이스 기능**). 
+
+구성할 수 있는 SSO 앱 확장 설정의 전체 범위를 확인하려면 [iOS의 SSO](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) 및 [macOS의 SSO](../configuration/macos-device-features-settings.md#single-sign-on-app-extension)로 이동하세요.
+
+적용 대상:
+
+- iOS/iPadOS
+- macOS
+
+#### <a name="we-have-updated-two-device-restriction-settings-for-ios-and-ipados-devices-to-correct-their-behavior---5701352-wnready-----"></a>디바이스의 동작 수정을 위해 iOS 및 iPadOS용 디바이스 제한 설정 두 가지를 업데이트했습니다<!-- 5701352 WNReady   -->
+iOS 디바이스의 경우 디바이스 제한 프로필을 생성해 **무선 PKI 업데이트를 허용**하고 **USB 제한 모드를 차단**할 수 있습니다(**디바이스** > **디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼: **iOS/iPadOS** > 프로필 유형: **디바이스 제한**). 이번 릴리스에서 다음 설정에 대한 UI 설정과 설명의 오류가 수정되었습니다. 이번 릴리스에서 이 설정 동작은 다음과 같습니다.
+
+**무선 PKI 업데이트 차단**: **차단**하면 디바이스가 컴퓨터에 연결될 때까지 사용자의 소프트웨어 업데이트 수신을 차단합니다. **구성 안 함**(기본): 컴퓨터와 연결하지 않고도 디바이스의 소프트웨어 업데이트 수신을 허용합니다.
+- 이전까지 이 설정 구성은 다음과 같았습니다. **허용**하면 사용자가 컴퓨터에 디바이스를 연결하지 않아도 소프트웨어 업데이트를 수신합니다.
+**디바이스가 잠겨 있는 동안 USB 액세서리 허용**: **허용**하면 USB 액세서리가 1시간 이상 잠겨 있는 디바이스와 데이터를 교환할 수 있습니다. **구성되지 않음**(기본)은 디바이스의 USB 제한 모드 업데이트를 하지 않으며, 디바이스가 1시간 이상 잠겨 있는 경우 USB 액세서리의 데이터 전송이 차단됩니다.
+- 이전까지 이 설정 구성은 다음과 같았습니다. **차단**을 선택하면 감독 모드 디바이스에서 USB 제한 모드를 사용하지 않습니다.
+
+구성할 수 있는 모든 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 iOS 및 iPadOS 디바이스 설정](../configuration/device-restrictions-ios.md)을 참조하세요.
+
+이 기능은 다음에 적용됩니다.
+
+- OS/iPadOS
+
+#### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>macOS 디바이스의 유선 네트워크 디바이스 구성 프로필<!-- 3508686  -->
+   > [!NOTE]
+   > 이 기능은 지연되었지만 곧 릴리스될 예정입니다.
+
+#### <a name="block-users-from-configuring-certificate-credentials-in-the-managed-keystore-on-android-enterprise-device-owner-devices---3311998---"></a>Android 엔터프라이즈 디바이스 소유자 디바이스의 관리되는 키 저장소에서 사용자의 인증서 자격 증명 구성 차단<!-- 3311998 -->
+Android 엔터프라이즈 디바이스 소유자 디바이스의 관리되는 키 저장소에서 사용자가 인증서 자격 증명을 구성하지 못하도록 새 설정을 구성할 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼: **Android 엔터프라이즈** > **디바이스 소유자만 > 프로필 유형: 디바이스 제한** > **사용자 및 계정**).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>디바이스 관리
+
+#### <a name="protected-wipe-action-now-available--51150000---"></a>보호되는 초기화 동작 사용<!--51150000 -->
+디바이스의 보호되는 초기화를 수행하는 초기화 디바이스 동작을 사용하는 옵션을 선택할 수 있습니다. 보호되는 초기화는 기본 초기화와 동일하지만 디바이스 종료가 불가능하다는 점에서 차이가 있습니다. 보호되는 초기화는 성공할 때까지 디바이스 재설정을 계속 시도합니다. 일부 구성에서 이 작업을 수행하면 디바이스를 다시 부팅할 수 없는 상태로 남을 수 있습니다. 자세한 내용은 [디바이스 사용 중지 및 초기화](../remote-actions/devices-wipe.md)를 참조하세요.
+
+#### <a name="device-ethernet-mac-address-added-to-devices-overview-page--5562275---"></a>디바이스 개요 페이지에 디바이스 이더넷 MAC 주소 추가<!--5562275 -->
+디바이스 세부 페이지(**디바이스** > **모든 디바이스** > 디바이스 선택 > **개요**)에서 디바이스의 이더넷 MAC 주소를 확인할 수 있습니다.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>디바이스 보안
+
+#### <a name="improved-experience-on-a-shared-device-when-device-based-conditional-access-policies-are-enabled---1734096----"></a>디바이스 기반 조건부 액세스 정책을 사용할 경우 공유 디바이스의 환경 개선<!-- 1734096  -->
+정책을 적용할 때 사용자의 최신 규정 준수 평가를 확인해 디바이스 기반 조건부 액세스 정책 대상인 여러 사용자의 공유 디바이스 환경을 개선했습니다. 자세한 내용은 다음 개요 문서를 참조하세요.
+- [조건부 액세스에 대한 Azure 개요](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Intune 디바이스 규정 준수 개요](../protect/device-compliance-get-started.md)
+
+#### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>인증서로 디바이스를 프로비전할 때 PKCS 인증서 프로필 사용<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
+이제 Wi-Fi나 VPN에서 PKCS 인증서 프로필과 연결된 경우 PKCS 인증서 프로필을 사용해 Android for Work, iOS, Windows를 실행하는 *디바이스*에 인증서를 발행할 수 있습니다. 이전까지 이 세 플랫폼은 사용자 기반 인증서만 지원했으며 디바이스 기반 지원은 macOS에만 제한되었습니다.
+
+디바이스 기반 인증서를 사용하려면 지원되는 플랫폼에서 [PKCS 인증서 프로필을 만들 때](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile) **설정**을 선택합니다. 이제 디바이스 또는 사용자 옵션을 지원하는 **인증 유형** 설정을 확인할 수 있습니다.
+
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="monitor-and-troubleshoot"></a>모니터링 및 문제 해결
+
+#### <a name="centralized-audit-logs--5603185-5697164---"></a>중앙화된 감사 로그<!--5603185, 5697164 -->
+새롭게 중앙화된 감사 로그는 모든 범위의 감사 로그를 한 페이지에 수집합니다. 이제 로그를 필터링하여 찾는 데이터를 확인할 수 있습니다. 감사 로그를 보려면 **테넌트 관리** > **감사 로그**로 이동합니다. 
+
+#### <a name="scope-tag-information-included-in-audit-log-activity-details--5763534---"></a>감사 로그 활동 세부 사항에 범위 태그 정보 포함<!--5763534 -->
+감사 로그 활동 세부 사항이 이제 범위 태그 정보를 포함합니다(범위 태그를 지원하는 Intune 개체용). 감사 로그에 대한 자세한 내용은 [감사 로그를 사용하여 이벤트 추적 및 모니터링](monitor-audit-logs.md)을 참조하세요.
+
 
 <!-- ########################## -->
 ## <a name="week-of-december-2-2019"></a>2019년 12월 2일 주
@@ -85,13 +214,6 @@ Intune Managed Browser가 점차 사용 중지되는 상황에서 사용자를 E
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>앱 관리
 
-#### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>iOS용 Microsoft Outlook의 S/MIME 지원<!-- 2669398 idready -->
-
-   > [!NOTE]
-   > 이 기능은 지연되었지만 곧 릴리스될 예정입니다.
-
-Intune은 iOS 디바이스에서 iOS용 Outlook과 함께 사용할 수 있는 S/MIME 서명 및 암호화 인증서 배달을 지원합니다. 자세한 내용은 [iOS용 Outlook의 S/MIME 관리 구성](~/apps/app-configuration-policies-outlook-smime.md)을 참조하세요.
-
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>앱 데이터를 선택적으로 초기화하는 경우의 UI 업데이트<!-- 4102028 -->
 Intune에서 앱 데이터를 선택적으로 초기화하는 UI가 업데이트되었습니다. UI 변경 사항에는 다음이 포함됩니다.
 - 하나의 창 내에 압축된 마법사 스타일 형식을 사용하여 간소화된 환경
@@ -101,7 +223,7 @@ Intune에서 앱 데이터를 선택적으로 초기화하는 UI가 업데이트
 자세한 내용은 [Intune 관리 앱에서 회사 데이터만 초기화하는 방법](~/apps/apps-selective-wipe.md)을 참조하세요.
 
 #### <a name="ios-and-ipados-third-party-keyboard-support---4922950---"></a>iOS 및 iPadOS 타사 키보드 지원<!-- 4922950 -->
-2019년 3월에는 iOS 앱 보호 정책 설정 "타사 키보드"의 지원이 제거된다는 소실을 발표했습니다. 이 기능은 iOS 및 iPadOS가 모두 지원되는 Intune으로 전환될 예정입니다. 이 설정을 사용하려면 새 또는 기존 iOS/iPadOS 앱 보호 정책의 **데이터 보호** 탭으로 이동한 후 **데이터 전송** 아래의 **타사 키보드** 설정을 찾습니다.
+2019년 3월에는 iOS 앱 보호 정책 설정 "타사 키보드"의 지원이 제거된다는 소식을 발표했습니다. 이 기능은 iOS 및 iPadOS가 모두 지원되는 Intune으로 전환될 예정입니다. 이 설정을 사용하려면 새 또는 기존 iOS/iPadOS 앱 보호 정책의 **데이터 보호** 탭으로 이동한 후 **데이터 전송** 아래의 **타사 키보드** 설정을 찾습니다.
 
 이 정책 설정의 동작은 이전 구현과 약간 다릅니다. 이 설정이 **차단**으로 구성된 앱 보호 정책의 대상으로 지정된 SDK 버전 12.0.16 이상을 사용하는 다중 ID 앱에서 최종 사용자는 조직 및 개인 계정 모두에서 타사 키보드를 옵트인(opt in)할 수 없습니다. SDK 버전 12.0.12 이하 버전을 사용하는 앱은 블로그 게시물 제목, [알려진 문제: 타사 키보드가 개인 계정의 iOS에서 차단되지 않습니다](https://aka.ms/3rdparty_iOS_Intune)에 설명된 동작을 계속 발생합니다.
 
@@ -121,6 +243,7 @@ iOS/iPadOS 디바이스의 디바이스 구성 프로필에서 메일 연결을 
 이러한 설정에 대한 자세한 내용은 [Intune에서 iOS 디바이스에 대한 메일 프로필 설정](../configuration/email-settings-ios.md)으로 이동합니다. 
 
 적용 대상:
+
 - iOS 13.0 이상
 - iPadOS 13.0 이상
 
@@ -130,6 +253,7 @@ Android Enterprise 완전 관리형 및 전용 디바이스에는 사용자가 �
 구성할 수 있는 모든 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정](../configuration/device-restrictions-android-for-work.md)으로 이동하세요.
 
 적용 대상:
+
 - Android Enterprise 완전 관리형 디바이스
 - Android 엔터프라이즈 전용 디바이스
 
@@ -141,6 +265,7 @@ iOS 및 iPadOS 디바이스에서 **Siri용 서버 쪽 로깅 명령** 설정이
 구성할 수 있는 모든 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 iOS 및 iPadOS 디바이스 설정](../configuration/device-restrictions-ios.md)을 참조하세요.
 
 적용 대상:
+
 - iOS/iPadOS
 
 #### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 기능 업데이트(공개 미리 보기)<!-- 2384877 -->
@@ -158,6 +283,7 @@ macOS 디바이스에서 이제 앱 또는 디바이스에 연결된 속성 목�
 이 기능에 대한 자세한 내용은 [Microsoft Intune을 사용하여 macOS 디바이스에 속성 목록 파일 추가](../configuration/preference-file-settings-macos.md)를 참조하세요.
 
 적용 대상:
+
 - 10.7 이상 버전을 실행하는 macOS 디바이스
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -215,7 +341,7 @@ B2B(기업 간) 공동 작업을 사용하여 회사의 애플리케이션과 �
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>앱 관리  
 
-#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>회사 포털의 개선된 macOS 등록 환경 <!-- 5074349 WNready -->  
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349----"></a>회사 포털의 개선된 macOS 등록 환경 <!-- 5074349  -->  
 macOS용 회사 포털 등록 환경은 iOS용 회사 포털 등록 환경과 보다 긴밀하게 정렬된 더 간단한 등록 프로세스를 제공합니다. 이제 디바이스 사용자에게 다음과 같은 이점이 제공됩니다.  
 
 * 보다 간소화된 사용자 인터페이스.  
@@ -227,7 +353,7 @@ macOS용 회사 포털 등록 환경은 iOS용 회사 포털 등록 환경과 �
 이제 최종 사용자가 Windows 회사 포털 앱에서 직접 웹앱을 시작할 수 있습니다. 최종 사용자는 웹앱을 선택한 다음 **브라우저에서 열기** 옵션을 선택할 수 있습니다. 게시된 웹 URL이 웹 브라우저에서 직접 열립니다. 이 기능은 다음 주에 출시될 예정입니다. 웹앱에 대한 자세한 내용은 [Microsoft Intune에 웹앱 추가](~/apps/web-app.md)를 참조하세요.  
 
 
-#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Windows 10용 회사 포털의 새 할당 유형 열 <!-- 5459950 WNready -->
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950----"></a>Windows 10용 회사 포털의 새 할당 유형 열 <!-- 5459950  -->
 회사 포털 > **설치된 앱** > **할당 유형** 열의 이름이 **조직에서 요구**로 변경되었습니다.  이 열 아래에 **예** 또는 **아니요** 값이 표시되어 조직에서 해당 앱을 필수 또는 선택 사항으로 지정했는지 나타냅니다. 이러한 변경 사항은 디바이스 사용자가 사용 가능한 앱 개념을 혼동하기 때문에 적용된 것입니다. 최종 사용자는 [디바이스에 앱 설치 및 공유](/intune-user-help/install-apps-cpapp-windows)에서 회사 포털에서 앱을 설치하는 자세한 내용을 확인할 수 있습니다. 최종 사용자를 위해 회사 포털 앱을 구성하는 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](~/apps/company-portal-app.md)을 참조하세요.  
 
 <!-- ########################## -->
@@ -329,6 +455,7 @@ Windows 10 이상에서는 디바이스 구성 프로필을 만들어 설정 및
 이 기능에 대한 자세한 내용은 [Microsoft Intune에서 Windows 디바이스의 DFCI 프로필 사용](../configuration/device-firmware-configuration-interface-windows.md)을 참조하세요.
 
 적용 대상:
+
 - 지원되는 펌웨어의 Windows 10 RS5(1809) 이상
 
 ### <a name="device-enrollment"></a>디바이스 등록
@@ -386,12 +513,12 @@ Intune용 [Windows 10 업데이트 링을 만들고 편집](../protect/windows-u
 - 새 업데이트 링을 저장하고 배포하기 전에 만든 모든 구성을 검토하는 데 사용할 수 있는 요약 페이지입니다. 업데이트 링을 편집할 때 요약에는 편집한 속성 범주 내에 설정된 항목 목록만 표시됩니다.
 
 #### <a name="ui-update-for-creating-and-editing-ios-software-update-policy---4099090---------"></a>iOS 소프트웨어 업데이트 정책을 만들고 편집하기 위한 UI 업데이트<!-- 4099090       --> 
-Intune에 대한 iOS 소프트웨어 업데이트 정책을 [만들고](../protect/software-updates-ios.md#configure-the-policy) [편집](../protect/software-updates-ios.md#edit-a-policy)하기 위한 UI 환경을 업데이트했습니다.  UI 변경 내용은 다음과 같습니다.  
+Intune에 대한 iOS 소프트웨어 업데이트 정책을 [만들고](../protect/software-updates-ios.md#configure-the-policy)[편집](../protect/software-updates-ios.md#edit-a-policy)하기 위한 UI 환경을 업데이트했습니다.  UI 변경 내용은 다음과 같습니다.  
 - 단일 콘솔 블레이드로 압축된 마법사 스타일 형식으로, 이전에 업데이트 정책을 구성할 때 표시된 블레이드 확장이 제거됩니다.   
 - 수정된 워크플로에는 정책의 초기 구성을 완료하기 전 할당이 포함됩니다.
 - 새 정책을 저장하고 배포하기 전에 만든 모든 구성을 검토하는 데 사용할 수 있는 요약 페이지입니다. 정책을 편집할 때 요약에는 편집한 속성 범주 내에 설정된 항목 목록만 표시됩니다.
 
-#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings----4464404---wnready-----"></a>Windows 업데이트 링의 개입형 다시 시작 설정이 제거됨<!--  4464404   WNReady   -->
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings----4464404--------"></a>Windows 업데이트 링의 개입형 다시 시작 설정이 제거됨<!--  4464404      -->
 이전에 발표한 대로, 이제 Intune의 Windows 10 업데이트 링은 [최종 기한 설정을 지원](../protect/windows-update-settings.md)하며 더 이상 ‘개입형 다시 시작’을 지원하지 않습니다.  Intune에서 업데이트 링을 구성하거나 관리하는 경우 ‘개입형 다시 시작’ 설정을 더 이상 사용할 수 없습니다.   
 
 이 변경 내용은 최근 [Windows 서비스 변경 내용](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing)에 맞게 조정되며 Windows 10 1903 이상을 실행하는 디바이스에서는 ‘기한’이 ‘개입형 다시 시작’의 구성을 대체합니다.  
@@ -402,6 +529,7 @@ Android Enterprise 회사 프로필 디바이스에서는 사용자가 알 수 �
 구성할 수 있는 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정](../configuration/device-restrictions-android-for-work.md)으로 이동합니다.
 
 적용 대상:
+
 - Android Enterprise 회사 프로필
 
 #### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices---4816339-----"></a>Android Enterprise 디바이스 소유자 디바이스에서 전역 HTTP 프록시 만들기<!-- 4816339   -->
@@ -410,6 +538,7 @@ Android Enterprise 디바이스에서 조직의 웹 검색 표준을 충족하�
 이 기능을 구성하고 구성하는 모든 설정을 보려면 [Intune을 사용하여 기능을 허용하거나 제한하는 Android Enterprise 디바이스 설정](../configuration/device-restrictions-android-for-work.md)으로 이동합니다.
 
 적용 대상:
+
 - Android Enterprise 디바이스 소유자
 
 #### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise---5021055-----"></a>Android 디바이스 관리자 및 Android Enterprise의 Wi-Fi 프로필에서 자동으로 연결 설정이 제거됨<!-- 5021055   -->
@@ -420,6 +549,7 @@ Wi-Fi 프로필에서 이 설정을 사용하는 경우 **자동으로 연결**�
 현재 설정을 확인하려면 [Android Wi-Fi 설정](../configuration/wi-fi-settings-android.md) 또는 [Android Enterprise Wi-Fi 설정](../configuration/wi-fi-settings-android-enterprise.md)으로 이동합니다.
 
 적용 대상:
+
 - Android 디바이스 관리자 
 - Android Enterprise
 
@@ -433,6 +563,7 @@ iOS 및 iPadOS 디바이스에서는 프로필을 만들어 디바이스의 기�
 설정을 확인하려면 [Intune을 사용하여 기능을 허용하거나 제한하는 iOS 디바이스 설정](../configuration/device-restrictions-ios.md)으로 이동합니다.
 
 적용 대상:
+
 - iOS 13.0 이상
 - iPadOS 13.0 이상
 
@@ -464,7 +595,7 @@ Windows 디바이스 이름을 바꾸는 경우 새 규칙을 따라야 합니�
 ### <a name="device-security"></a>디바이스 보안
 
 #### <a name="pkcs-certificates-for-macos---1333650---------"></a>macOS의 PKCS 인증서<!-- 1333650       -->
-이제 [macOS에서 PKCS 인증서를 사용](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)할 수 있습니다. macOS의 프로필 유형으로 PKCS 인증서를 선택하고 [사용자 지정된 주체 및 주체 대체 이름 필드](../protect/certficates-pfx-configure.md#subject-name-format-for-macos)가 있는 사용자 및 디바이스 인증서를 배포할 수 있습니다.  
+이제 [macOS에서 PKCS 인증서를 사용](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)할 수 있습니다. macOS의 프로필 유형으로 PKCS 인증서를 선택하고 [사용자 지정된 주체 및 주체 대체 이름 필드](../protect/certficates-pfx-configure.md#subject-name-format)가 있는 사용자 및 디바이스 인증서를 배포할 수 있습니다.  
 
 도한 macOS용 PKCS 인증서는 새로운 설정인 _모든 앱 액세스 허용_을 지원합니다. 이 설정을 사용하면 연결된 모든 앱이 인증서의 프라이빗 키에 액세스하도록 설정할 수 있습니다.  이 설정에 대한 자세한 내용은 https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf 에서 Apple 설명서를 참조하세요.
 
@@ -498,9 +629,10 @@ Apple의 iOS 13.1 릴리스에는 iOS 디바이스를 위한 새롭고 가벼운
 - 최종 사용자가 디바이스를 등록할 때 더 가벼운 사용자 등록과 더 강력한 디바이스 등록 중에서 선택할 수 있는 기능을 제공합니다.
 
 iOS 13.1이 릴리스되는 2019년 9월 24일부터 모든 고객에게 이러한 업데이트를 롤아웃하고 있으며, 다음주 말까지 이러한 과정이 완료될 것으로 예상합니다.
+
 적용 대상:
 
-iOS 13.1 이상
+- iOS 13.1 이상
 
 #### <a name="intune-support-for-ipados-and-ios-131-devices--5439574--"></a>iPadOS 및 iOS 13.1 디바이스에 대한 Intune 지원<!--5439574-->
 Intune은 이제 iPadOS 및 iOS 13.1 디바이스 관리를 지원합니다. 자세한 내용은 [이 블로그 게시물](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-1-and-iPadOS/ba-p/873094)을 참조하세요.
@@ -555,6 +687,7 @@ iOS용 Intune 앱 SDK는 앱 보호 정책에서 암호화를 사용하도록 �
 구성할 수 있는 최신 VPN 설정은 [iOS 디바이스에서 VPN 설정 구성](../configuration/vpn-settings-ios.md)을 참조하세요.
 
 적용 대상:
+
 - iOS
 
 #### <a name="device-features-device-restrictions-and-extension-profiles-for-ios-and-macos-settings-are-shown-by-enrollment-type---4886161-----"></a>iOS 및 macOS 설정에 대한 디바이스 기능, 디바이스 제한 및 확장 프로필은 등록 형식으로 표시됩니다.<!-- 4886161   -->
@@ -576,6 +709,7 @@ Intune에서 iOS 및 macOS 디바이스의 프로필을 만들 수 있습니다[
   - 모든 등록 유형
 
 적용 대상:
+
 - iOS
 
 #### <a name="new-voice-control-settings-for-supervised-ios-devices-running-in-kiosk-mode---4892835-----"></a>키오스크 모드에서 실행되는 감독된 iOS 디바이스에 대한 새 음성 제어 설정<!-- 4892835   -->
@@ -588,6 +722,7 @@ Intune에서 감독된 iOS 디바이스를 키오스크 또는 전용 디바이�
 현재 설정을 보려면 [iOS 키오스크 설정](../configuration/device-restrictions-ios.md#kiosk)으로 이동합니다.
 
 적용 대상:
+
 - iOS 13.0 이상
 
 #### <a name="use-single-sign-on-for-apps-and-websites-on-your-ios-and-macos-devices---4893175-----"></a>iOS 및 macOS 디바이스에서 앱 및 웹 사이트에 Single Sign-On 사용<!-- 4893175   -->
@@ -598,6 +733,7 @@ Intune에서 감독된 iOS 디바이스를 키오스크 또는 전용 디바이�
 구성할 수 있는 현재 디바이스 기능을 보려면 [iOS 디바이스 기능](../configuration/ios-device-features-settings.md) 및 [macOS 디바이스 기능](../configuration/macos-device-features-settings.md)으로 이동합니다.
 
 적용 대상:
+
 - iOS 13.0 이상
 - macOS 10.15 이상
 
@@ -607,6 +743,7 @@ macOS 디바이스에서 여러 다양한 기능을 구성하고, 정책을 사�
 구성할 수 있는 최신 기능을 보려면 Intune의 [macOS 디바이스 기능 설정](../configuration/macos-device-features-settings.md)으로 이동하세요.
 
 적용 대상:
+
 - macOS 10.15 이상
 
 #### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices---4928474-----"></a>iOS 감독 디바이스에서 앱을 표시하거나 숨길 때 iTunes App Store URL에서 "iTunes" 및 "앱"을 사용합니다.<!-- 4928474   --> 
@@ -869,7 +1006,7 @@ Windows Defender 바이러스 백신 설정에 대한 자세한 내용은 [Intun
 ### <a name="device-enrollment"></a>디바이스 등록
 
 #### <a name="default-scope-tags---3702875----"></a>기본 범위 태그<!-- 3702875  -->
-이제 새로운 기본 제공 기본 범위 태그를 사용할 수 있습니다. 범위 태그를 지원하는 태그가 지정되지 않은 모든 Intune 개체는 기본 범위 태그에 자동으로 할당됩니다. 현재 관리자 환경에서 패리티를 유지하기 위해 **기본** 범위 태그는 기존의 모든 역할 할당에 추가됩니다. 관리자가 기본 범위 태그를 사용하여 Intune 개체를 표시하지 않도록 하려면 역할 할당에서 기본 범위 태그를 제거합니다. 이 기능은 System Center Configuration Manager의 보안 범위 기능과 유사합니다. 자세한 내용은 [분산형 IT에 RBAC 및 범위 태그 사용](scope-tags.md)을 참조하세요.
+이제 새로운 기본 제공 기본 범위 태그를 사용할 수 있습니다. 범위 태그를 지원하는 태그가 지정되지 않은 모든 Intune 개체는 기본 범위 태그에 자동으로 할당됩니다. 현재 관리자 환경에서 패리티를 유지하기 위해 **기본** 범위 태그는 기존의 모든 역할 할당에 추가됩니다. 관리자가 기본 범위 태그를 사용하여 Intune 개체를 표시하지 않도록 하려면 역할 할당에서 기본 범위 태그를 제거합니다. 이 기능은 Configuration Manager의 보안 범위 기능과 유사합니다. 자세한 내용은 [분산형 IT에 RBAC 및 범위 태그 사용](scope-tags.md)을 참조하세요.
 
 #### <a name="android-enrollment-device-administrator-support---4869749-----"></a>Android 등록 디바이스 관리자 지원<!-- 4869749   -->
 Android 디바이스 관리자 등록 옵션이 Android 등록 페이지(**Intune** > **디바이스 등록** > **Android 등록**)에 추가되었습니다. Android 디바이스 관리자는 모든 테넌트에 대해 기본적으로 사용하도록 설정되어 있습니다.  자세한 내용은 [Android 디바이스 관리자 등록](../enrollment/android-enroll-device-administrator.md)을 참조하세요.
@@ -930,7 +1067,7 @@ Intune으로 관리하는 iOS 및 Android 디바이스를 사용하는 사용자
 
 ### <a name="device-configuration"></a>디바이스 구성
 
-#### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910-eeready---idstaged---"></a>Windows 10 디바이스 구성 프로필을 만들 때 "적용 가능성 규칙" 사용 <!-- 2549910 eeready   idstaged -->
+#### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910-eeready------"></a>Windows 10 디바이스 구성 프로필을 만들 때 "적용 가능성 규칙" 사용 <!-- 2549910 eeready    -->
 
 Windows 10 다비이스 구성 프로필을 만듭니다(**디바이스 구성** > **프로필** > **프로필 만들기** > 플랫폼은 **Windows 10** 선택 > **적용 가능성 규칙**). 이 업데이트에서는 프로필이 특정 에디션 또는 특정 버전에만 적용되도록 **적용 가능성 규칙**을 만들 수 있습니다. 예를 들어 일부 BitLocker 설정을 사용하도록 설정하는 프로필을 만듭니다. 프로필을 추가한 후에는 적용 가능한 규칙을 사용하여 프로필을 Windows 10 Enterprise를 실행하는 디바이스에만 적용되도록 합니다.
 
@@ -1262,7 +1399,7 @@ IT 관리자가 Android Enterprise 관리를 보다 쉽게 구성하고 사용�
 #### <a name="intune-security-tasks-for-defender-atp-in-public-preview---3208597---"></a>Defender ATP에 대한 Intune 보안 작업(공개 미리 보기로 제공)<!-- 3208597 -->
 공개 미리 보기에서 Intune을 사용하여 [Microsoft Defender ATP(Advanced Threat Protection)의 보안 작업](../protect/atp-manage-vulnerabilities.md)을 관리할 수 있습니다. 이와 같이 ATP와 통합되면 검색부터 문제 완화까지의 기간을 단축하면서 엔드포인트 취약성 및 구성 오류를 검색하고, 우선 순위를 지정하고, 수정할 수 있는 위험 기반 접근 방식이 추가됩니다.
 
-#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671---idstaged--"></a>Windows 10 디바이스 준수 정책에서 TPM 칩셋 확인<!-- 3617671   idstaged-->
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671-----"></a>Windows 10 디바이스 준수 정책에서 TPM 칩셋 확인<!-- 3617671   -->
 많은 Windows 10 이상 디바이스에는 TPM(신뢰할 수 있는 플랫폼 모듈) 칩셋이 있습니다. 이 업데이트는 디바이스에서 TPM 칩 버전을 확인하는 새 규정 준수 설정을 포함 합니다.
 
 [Windows 10 이상 규정 준수 정책 설정](../protect/compliance-policy-create-windows.md#device-security)에서 이 설정을 설명합니다.
@@ -1280,7 +1417,7 @@ iOS 디바이스에서 디바이스 제한 프로필을 만듭니다[**디바이
 적용 대상: iOS 12.2 이상
 
 #### <a name="new-classroom-app-device-restriction-settings-for-macos-devices---4097905-----"></a>macOS 디바이스에 대한 새로운 강의식 앱 디바이스 제한 설정<!-- 4097905   --> 
-macOS 디바이스에서 디바이스 구성 프로필을 만들 수 있습니다[**디바이스 구성** > **프로필** > **프로필 만들기**  >  **macOS**(플랫폼) > **디바이스 제한**(프로필 유형)]. 이 업데이트는 새로운 강의실 앱 설정, 스크린샷을 차단하는 옵션, iCloud 사진 라이브러리를 사용하지 않도록 설정하는 옵션을 포함합니다.
+macOS 디바이스에서 디바이스 구성 프로필을 만들 수 있습니다[**디바이스 구성** > **프로필** > **프로필 만들기** > **macOS**(플랫폼) > **디바이스 제한**(프로필 유형)]. 이 업데이트는 새로운 강의실 앱 설정, 스크린샷을 차단하는 옵션, iCloud 사진 라이브러리를 사용하지 않도록 설정하는 옵션을 포함합니다.
 
 현재 설정을 확인하려면 [Intune을 사용하여 기능을 허용하거나 제한하는 macOS 디바이스 설정](../configuration/device-restrictions-macos.md)으로 이동하세요.
 

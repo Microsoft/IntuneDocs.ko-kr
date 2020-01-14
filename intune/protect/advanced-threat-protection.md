@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 2fa80697f24167e2a9634bd506e9548ca654129f
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410204"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547083"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune에서 조건부 액세스로 Microsoft Defender ATP에 대한 규정 준수 적용
 
@@ -108,9 +108,7 @@ Intune에서 Microsoft Defender ATP를 사용하려면 다음을 구성했으며
 
 Intune과 Microsoft Defender ATP 간에 서비스간 연결을 설정한 후에는 해당 위험 수준에 대한 데이터를 수집하고 사용할 수 있도록 Intune 관리형 디바이스를 ATP에 온보딩합니다. 디바이스를 온보딩하려면 Microsoft Defender ATP용 디바이스 구성 프로필을 사용합니다.
 
-Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defender ATP에서 Microsoft Defender ATP 온보딩 구성 패키지를 받습니다. 이 패키지는 디바이스 구성 프로필을 사용하여 디바이스에 배포됩니다. 이 구성 패키지는 [Microsoft Defender ATP 서비스 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)와 통신하면서 파일을 검색하고, 위협을 감지하고, Microsoft Defender ATP에 위험을 보고하도록 디바이스를 구성합니다.
-
-구성 패키지를 사용하여 디바이스를 등록하고 나면 다시 등록할 필요가 없습니다. [그룹 정책 또는 SCCM(System Center Configuration Manager)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)을 사용하여 디바이스를 등록할 수도 있습니다.
+Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defender ATP에서 Microsoft Defender ATP 온보딩 구성 패키지를 받습니다. 이 패키지는 디바이스 구성 프로필을 사용하여 디바이스에 배포됩니다. 이 구성 패키지는 [Microsoft Defender ATP 서비스 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)와 통신하면서 파일을 검색하고, 위협을 감지하고, Microsoft Defender ATP에 위험을 보고하도록 디바이스를 구성합니다. 구성 패키지를 사용하여 디바이스를 등록하고 나면 다시 등록할 필요가 없습니다. [그룹 정책 또는 Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)를 사용하여 디바이스를 온보딩할 수도 있습니다.
 
 ### <a name="create-the-device-configuration-profile"></a>디바이스 구성 프로필 만들기
 
@@ -129,7 +127,7 @@ Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defe
    - **모든 파일에 대해 샘플 공유**: **사용**을 사용하면 샘플을 수집하고 Microsoft Defender ATP와 공유할 수 있습니다. 예를 들어 의심스러운 파일을 발견할 경우 심층 분석을 위해 Microsoft Defender ATP에 제출할 수 있습니다. **구성되지 않음**은 Microsoft Defender ATP에 샘플을 공유하지 않습니다.
    - **원격 분석 보고 주기 단축**: 위험이 큰 디바이스의 경우 이 설정을 **사용**하여 원격 분석을 Microsoft Defender ATP 서비스에 더 자주 보고합니다.
 
-     [System Center Configuration Manager를 사용하여 Windows 10 컴퓨터 온보딩](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)에는 Microsoft Defender ATP 설정에 대한 자세한 정보가 포함되어 있습니다.
+     [Microsoft Endpoint Configuration Manager를 사용하여 Windows 10 컴퓨터 온보딩](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)에는 Microsoft Defender ATP 설정에 대한 자세한 정보가 포함되어 있습니다.
 
 7. **확인**, **만들기**를 차례로 선택하여 변경 내용을 저장하면 프로필이 생성됩니다.
 8. Microsoft Defender ATP를 사용하여 평가하려는 디바이스에 [디바이스 구성 프로필을 할당](../configuration/device-profile-assign.md)합니다.
@@ -151,7 +149,7 @@ Microsoft Defender ATP에 대한 연결을 설정하면 Intune은 Microsoft Defe
 
    - **지우기**: 이 수준이 가장 안전합니다. 디바이스가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 디바이스는 비규격으로 평가됩니다. (Microsoft Defender ATP 사용자 값 *Secure*)
    - **낮음**: 낮은 수준의 위협만 있는 디바이스는 규격 디바이스입니다. 보통 또는 높은 위협 수준의 디바이스는 비규격 디바이스입니다.
-   - **보통**: 낮음 또는 보통 수준의 위협이 있는 디바이스는 규격 디바이스입니다. 높은 수준의 위협이 검색되는 경우 해당 디바이스는 비규격으로 간주됩니다.
+   - **중간**: 낮음 또는 보통 수준의 위협이 있는 디바이스는 규격 디바이스입니다. 높은 수준의 위협이 검색되는 경우 해당 디바이스는 비규격으로 간주됩니다.
    - **높음**: 이 수준은 최소 보안이며 모든 위협 수준을 허용합니다. 따라서 높음, 보통 또는 낮은 위협 수준의 디바이스가 규격으로 간주됩니다.
 
 7. **확인**, **만들기**를 차례로 선택하여 변경 내용을 저장하고 정책을 만듭니다.

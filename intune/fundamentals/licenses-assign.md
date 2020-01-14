@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414085"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207362"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune에 디바이스를 등록할 수 있도록 사용자에게 라이선스 할당
 
 수동으로 사용자를 추가하든 아니면 온-프레미스 Active Directory에서 동기화하든 상관없이 먼저 각 사용자에게 Intune 라이선스를 할당해야 사용자가 Intune에 디바이스를 등록할 수 있습니다. 라이선스 목록은 [Intune을 포함하는 라이선스](../licenses.md)를 참조하세요.
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Microsoft 365 관리 센터에서 Intune 라이선스 할당
+> [!NOTE]
+> Intune 앱 보호 정책을 할당하고 디바이스를 Microsoft Intune에 등록하지 않은 사용자도 정책을 받기 위해 Intune 라이선스가 필요합니다. 
 
-[Microsoft 365 관리 센터](https://go.microsoft.com/fwlink/p/?LinkId=698854)를 사용하여 클라우드 기반 사용자를 수동으로 추가하고, 클라우드 기반 사용자 계정 및 온-프레미스 Active Directory에서 Azure AD로 동기화한 계정에 라이선스를 할당할 수 있습니다.
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>Microsoft 엔드포인트 관리자 관리 센터 Intune 라이선스 할당
 
-1. 테넌트 관리자 자격 증명을 사용하여 [Microsoft 365 관리 센터](https://go.microsoft.com/fwlink/p/?LinkId=698854)에 로그인한 후 **사용자** > **활성 사용자**를 선택합니다.
+[Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)를 사용하여 클라우드 기반 사용자를 수동으로 추가하고, 클라우드 기반 사용자 계정 및 온-프레미스 Active Directory에서 Azure AD로 동기화한 계정에 라이선스를 할당할 수 있습니다.
 
-2. Intune 사용자 라이선스를 할당할 사용자 계정을 선택한 후 **제품 라이선스** > **편집**을 선택합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **사용자** > **모든 사용자** > 사용자 선택 > **라이선스** > **할당**을 선택합니다.
 
-3. **Intune** 또는 **Enterprise Mobility + Security**를 **켬**으로 전환하고 **저장**을 선택합니다.
+2. **Intune** > **저장** 상자를 선택합니다.
 
-   ![Microsoft 365 관리 센터 제품 라이선스 섹션의 스크린샷입니다.](./media/licenses-assign/office-assign-license.png)
+   ![Microsoft 365 관리 센터 제품 라이선스 섹션의 스크린샷입니다.](./media/licenses-assign/mem-assign-license.png)
 
-4. 이제 사용자 계정은 서비스를 사용하고 디바이스를 관리하고 등록하는 데 필요한 권한이 생겼습니다.
+3. 이제 사용자 계정은 서비스를 사용하고 디바이스를 관리하고 등록하는 데 필요한 권한이 생겼습니다.
 
 > [!NOTE]
 > 사용자는 Intune PC 클라이언트를 사용하여 디바이스를 등록한 후에만 클래식 Intune 포털에 표시됩니다. 또한 사용자 그룹을 선택하여 동시에 편집할 수 있습니다. 즉, 선택한 모든 사용자에 대한 라이선스를 추가하거나 바꾸도록 선택할 수 있습니다.
@@ -85,7 +86,7 @@ EMS 서비스에 대해 사용자 라이선스를 선택적으로 할당하려�
 
 다음 명령을 실행하여 Intune 서비스 계획을 제외할 수 있습니다. 같은 방법을 사용하여 전체 보안 그룹으로 확장하거나 보다 세분화된 필터를 사용할 수 있습니다.
 
-**예제 1**<br>
+**예 1**<br>
 명령줄에서 새로운 사용자를 만들고 라이선스의 Intune 부분을 비활성화한 상태로 EMS 라이선스를 할당합니다.
 
     Connect-MsolService
@@ -99,7 +100,7 @@ EMS 서비스에 대해 사용자 라이선스를 선택적으로 할당하려�
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-**예제 2:**<br>
+**예 2**<br>
 이미 라이선스가 할당된 사용자에 대해 EMS 라이선스의 Intune 부분을 비활성화합니다.
 
     Connect-MsolService

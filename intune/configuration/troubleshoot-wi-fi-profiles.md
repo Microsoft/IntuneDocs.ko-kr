@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77f5787509438ec3280f29be8449d78979806042
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74542665"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547968"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune에서 Wi-Fi 디바이스 구성 프로필 문제 해결
 
@@ -181,7 +181,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
 - Wi-Fi 프로필이 올바른 그룹에 할당되었는지 확인합니다.
 
-    1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **구성 프로필**을 선택합니다.
+    1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **구성 프로필**을 선택합니다.
     2. 프로필 > **할당**을 선택합니다. 선택한 그룹이 올바른지 확인합니다.
     3. Endpoint Manager에서 **문제 해결 + 지원**을 선택합니다. **할당** 정보를 검토합니다.
 
@@ -236,7 +236,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   - 전체 인증서 체인의 모든 필수 인증서가 Android 디바이스에 있는지 확인합니다. 그렇지 않으면 디바이스에 Wi-Fi 프로필을 설치할 수 없습니다. 자세한 내용은 [중간 인증 기관 누락](https://developer.android.com/training/articles/security-ssl#MissingCa)(Android의 웹 사이트 열기)를 참조하세요.
   - 키워드로 Omadmlog를 필터링하여 Wi-Fi 프로필에 사용되는 인증서 및 프로필이 성공적으로 적용되었는지 여부 등의 정보를 확인합니다.
 
-    예를 들어 [CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace)를 사용하여 로그를 읽습니다. 다음과 같이 검색 문자열을 사용하여 "wifimgr"을 필터링합니다.
+    예를 들어 [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace)를 사용하여 로그를 읽습니다. 다음과 같이 검색 문자열을 사용하여 "wifimgr"을 필터링합니다.
 
     > [!div class="mx-imgBorder"]
     > ![CMTrace를 필터링하여 Android 디바이스에서 WiFiMgr 구성 프로필 찾기](./media/troubleshoot-wi-fi-profiles/cmtrace-filter-wifimgr.png)

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390296"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547063"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune에서 SCEP 인증서 프로필 만들기 및 할당
 
@@ -58,7 +58,7 @@ SCEP(단순 인증서 등록 프로토콜) 인증서를 지원하도록 [인프�
    
 7. **설정**을 선택하고 다음 구성을 완료합니다.
 
-   - **인증서 유형**:
+   - **인증서 종류**:
 
      *(적용 대상:  Android, Android Enterprise, iOS, macOS, Windows 8.1 이상 및 Windows 10 이상)*
 
@@ -275,7 +275,7 @@ Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation
 
 - 디바이스를 등록한 후 인증서를 디바이스에 빠르게 게시하려면 인증서 프로필을 디바이스 그룹이 아닌 사용자 그룹에 할당합니다. 디바이스 그룹에 프로필을 할당하는 경우에는 디바이스에서 정책을 수신하기 전에 전체 디바이스 등록을 수행해야 합니다.
 
-- Intune 및 Configuration Manager의 공동 관리를 사용하는 경우 Configuration Manager에서 리소스 액세스 정책의 [워크로드 슬라이더](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)를 **Intune** 또는 **파일럿 Intune**으로 설정합니다. 이렇게 설정하면 Windows 10 클라이언트가 인증서 요청 프로세스를 시작할 수 있습니다.
+- Intune 및 Configuration Manager의 공동 관리를 사용하는 경우 Configuration Manager에서 리소스 액세스 정책의 [워크로드 슬라이더 설정](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)을 **Intune** 또는 **파일럿 Intune**으로 설정합니다. 이렇게 설정하면 Windows 10 클라이언트가 인증서 요청 프로세스를 시작할 수 있습니다.
 
 - 신뢰할 수 있는 인증서 프로필 및 SCEP 인증서 프로필을 따로 만들어 할당하는 경우에도 둘 다 할당해야 합니다. 디바이스에 설치하지 않은 경우 SCEP 인증서 정책이 실패합니다. 신뢰할 수 있는 루트 인증서 프로필이 SCEP 프로필과 동일한 그룹에도 배포되어 있는지 확인합니다.
 

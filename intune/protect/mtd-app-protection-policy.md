@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48dc7de86965741d8ed42bd5a5f29f72ae66d4f3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188507"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545959"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Intune을 사용하여 Mobile Threat Defense 앱 보호 정책 만들기
 
@@ -34,7 +34,7 @@ Intune 및 MTD(Mobile Threat Defense)를 사용하면 위협을 검색하고 모
 > 이 문서는 앱 보호 정책을 지원하는 모든 Mobile Threat Defense 파트너에게 적용됩니다.
 >
 > - Better Mobile(Android)
-> - Zimperium(iOS)
+> - Zimperium(Android, iOS)
 > - Lookout for Work (Android, iOS).
 
 ## <a name="before-you-begin"></a>시작하기 전에
@@ -56,7 +56,7 @@ MTD를 사용한 앱 보호 정책에 대한 필수 구성 요소:
 
   - **보안**: 이 수준이 가장 안전합니다. 디바이스가 어떠한 위협에도 노출되지 않았으며 회사 리소스에 계속 액세스할 수 있습니다. 어떠한 위협이든 확인되는 디바이스는 비규격으로 평가됩니다.
   - **낮음**: 낮은 수준의 위협만 있는 디바이스는 규격 디바이스입니다. 더 높은 수준의 위협이 발생하면 디바이스는 규정 비준수 상태가 됩니다.
-  - **보통**: 낮음 또는 보통 수준의 위협이 있는 디바이스는 규격 디바이스입니다. 높은 수준의 위협이 검색되는 경우 해당 디바이스는 비규격으로 간주됩니다.
+  - **중간**: 낮음 또는 보통 수준의 위협이 있는 디바이스는 규격 디바이스입니다. 높은 수준의 위협이 검색되는 경우 해당 디바이스는 비규격으로 간주됩니다.
   - **높음**: 보안이 가장 취약한 수준입니다. 이 수준은 모든 위협 수준을 허용하며 보고용으로만 Mobile Threat Defense를 사용합니다. 디바이스에 MTD 앱이 이 설정으로 활성화되어 있어야 합니다.
 
   **작업** 옵션:

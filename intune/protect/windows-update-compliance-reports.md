@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de98a0820e15a09c2b3724b216359580327259e
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: f1e493e0d2d562c0f69454d1999e82b528c724a2
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465714"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731282"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>업데이트에 대한 Intune 규정 준수 보고서
 
@@ -51,7 +51,7 @@ Windows Analytics 솔루션인 [업데이트 규정 준수](https://technet.micr
 
 이 솔루션을 사용하는 경우 업데이트 규정 준수를 보고할 Intune 관리형 Windows 10 디바이스에 상용 ID를 배포합니다.  
 
-Intune에서 사용자 지정 정책의 OMA-URI 설정을 사용하여 상용 ID를 구성합니다. [Microsoft Intune의 Windows 10 디바이스용 Intune 정책 설정](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)을 참조하세요.  
+Intune에서 사용자 지정 정책의 OMA-URI 설정을 사용하여 상용 ID를 구성합니다. [Intune에서 Windows 10 디바이스에 대한 사용자 지정 설정 사용](../configuration/custom-settings-windows-10.md)을 참조하세요.
 
 상용 ID 구성을 위한 OMA-URI 경로(대/소문자 구분)는 *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*입니다.  
 

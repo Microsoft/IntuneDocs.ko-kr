@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563474"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548019"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune에서 Windows 10 디바이스에 PowerShell 스크립트 사용
 
@@ -64,9 +64,9 @@ Intune 관리 확장에는 다음과 같은 필수 구성 요소가 있습니다
 
   - Configuration Manager 및 Intune을 사용하는 공동 관리 디바이스. **앱** 워크로드가 **파일럿 Intune** 또는 **Intune**으로 설정되어 있어야 합니다. 지침은 다음 문서를 참조하세요. 
   
-    - [What is co-management](https://docs.microsoft.com/sccm/comanage/overview)(공동 관리란?) 
-    - [클라이언트 앱 워크로드](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Configuration Manager 워크로드를 Intune으로 전환](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [What is co-management](https://docs.microsoft.com/configmgr/comanage/overview)(공동 관리란?) 
+    - [클라이언트 앱 워크로드](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [Configuration Manager 워크로드를 Intune으로 전환하는 방법](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > 디바이스가 Azure AD에 [조인](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)되어 있어야 합니다. Azure AD에 [등록](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)만 되어 있는 디바이스는 스크립트를 받지 않습니다.
@@ -134,7 +134,7 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
 
 ## <a name="intune-management-extension-logs"></a>Intune 관리 확장 로그
 
-클라이언트 컴퓨터의 에이전트 로그는 일반적으로 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`에 있습니다. [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools)를 사용하여 이러한 로그 파일을 볼 수 있습니다. 
+클라이언트 컴퓨터의 에이전트 로그는 일반적으로 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`에 있습니다. [CMTrace.exe](https://docs.microsoft.com/configmgr/core/support/cmtrace)를 사용하여 이러한 로그 파일을 볼 수 있습니다.
 
 ![Microsoft Intune의 스크린샷 또는 샘플 cmtrace 에이전트 로그](./media/apps-win32-app-management/apps-win32-app-10.png)  
 
@@ -144,7 +144,7 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
 
 ## <a name="common-issues-and-resolutions"></a>일반적인 문제 및 해결 방법
 
-### <a name="issue-intune-management-extension-doesnt-download"></a>문제점: Intune 관리 확장이 다운로드되지 않음
+### <a name="issue-intune-management-extension-doesnt-download"></a>문제: Intune 관리 확장이 다운로드되지 않음
 
 **가능한 해결 방법**:
 
@@ -163,7 +163,7 @@ Azure Portal에서 사용자 및 디바이스에 대한 PowerShell 스크립트�
 
 [Windows 10 자동 등록 사용](../enrollment/windows-enroll.md#enable-windows-10-automatic-enrollment)에는 Intune에서 자동 등록을 구성하는 단계가 포함됩니다.
 
-### <a name="issue-powershell-scripts-do-not-run"></a>문제점: PowerShell 스크립트가 실행되지 않음
+### <a name="issue-powershell-scripts-do-not-run"></a>문제: PowerShell 스크립트가 실행되지 않음
 
 **가능한 해결 방법**:
 

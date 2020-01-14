@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563615"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204904"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S 모드 디바이스에서 Win32 앱 사용
 
@@ -57,7 +57,7 @@ S 모드의 Windows 10 디바이스에서 Win32 앱을 실행하도록 허용하
 
 Windows 10 S 모드 추가 정책을 만들려면 다음 단계를 수행하세요.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **앱** > **S 모드 추가 정책** > **정책 만들기**를 선택합니다.
 3. **정책 파일**을 추가하기 전에 해당 파일을 만들고 서명해야 합니다. 자세한 내용은 다음을 참조하십시오.
     - [ PowerShell 도구를 사용하여 WDAC 정책을 만들고 이진 형식으로 변환](https://go.microsoft.com/fwlink/?linkid=2095387)
@@ -68,7 +68,7 @@ Windows 10 S 모드 추가 정책을 만들려면 다음 단계를 수행하세�
     | 값 | 설명 |
     |--------------|------------------------------------------------|
     | 정책 파일 | WDAC 정책을 포함하는 파일입니다. |
-    | 이름 | 이 정책의 이름입니다. |
+    | Name | 이 정책의 이름입니다. |
     | 설명 | [선택 사항] 이 정책에 대한 설명입니다. |
 
 5. **다음: 범위 태그**를 클릭합니다.<br>

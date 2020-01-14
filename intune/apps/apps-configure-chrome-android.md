@@ -1,7 +1,7 @@
 ---
-title: Intune을 사용하여 Android 장치용 Google Chrome 구성
+title: Intune을 사용하여 Android 디바이스용 Google Chrome 구성
 titleSuffix: Microsoft Intune
-description: Android 장치용 Google Chrome에서 Intune 구성 정책을 사용합니다.
+description: Android 디바이스용 Google Chrome에서 Intune 구성 정책을 사용합니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c02ea34417073091e2f2841b363edfb9966ce558
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564037"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205907"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune을 사용하여 Android 장치용 Google Chrome 구성 
 
-Intune 앱 구성 정책을 사용하여 Android 장치용 Google Chrome을 구성할 수 있습니다. 앱 설정을 자동으로 적용할 수 있습니다. 예를 들어 차단하거나 허용하려는 책갈피와 URL을 구체적으로 설정할 수 있습니다.
+Intune 앱 구성 정책을 사용하여 Android 디바이스용 Google Chrome을 구성할 수 있습니다. 앱 설정을 자동으로 적용할 수 있습니다. 예를 들어 차단하거나 허용하려는 책갈피와 URL을 구체적으로 설정할 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -48,12 +48,16 @@ Intune에 관리되는 Google Play 앱을 추가하는 방법에 대한 자세�
 
 ## <a name="add-app-configuration-for-managed-ae-devices"></a>관리되는 AE 디바이스에 대한 앱 구성 추가
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 창에서 **앱 구성 정책** > **추가**를 선택합니다.
-2. 정책 이름을 추가한 다음 디바이스 등록 유형에서 **관리 디바이스**를 선택하고 플랫폼에서 **Android**를 선택합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **앱** > **앱 구성 정책** > **추가** > **관리 디바이스**를 선택합니다.
+2. 다음 세부 정보를 설정합니다.
+    - **이름** - Azure Portal에 표시되는 프로필의 이름입니다.
+    - **설명** - Azure Portal에 표시되는 프로필의 설명입니다.
+    - **디바이스 등록 유형** - 설정이 **관리 디바이스**여야 합니다.
+    - **플랫폼** - **Android**를 선택합니다.
 
     ![Google Chrome 구성 정책 추가](~/apps/media/apps-configure-chrome-android/add-policy.png)
 
-3. **연결된 앱**을 클릭하고 **Google Chrome**을 선택합니다.
+3. **연결된 앱**을 클릭해 **연결된 앱** 창을 엽니다. **Google Chrome**을 찾아 선택합니다. [승인했으며 Intune과 동기화한 관리되는 Google Play 앱](~/apps/apps-add-android-for-work.md) 목록에서 선택합니다.
 
     ![연결된 앱에서 Google Chrome 선택](~/apps/media/apps-configure-chrome-android/associated-app.png)
 
@@ -78,7 +82,7 @@ Intune에 관리되는 Google Play 앱을 추가하는 방법에 대한 자세�
 
 ## <a name="verify-the-device-settings"></a>디바이스 설정 확인
 
-Android 엔터프라이즈에 Android 장치를 등록하면 포트폴리오 아이콘이 포함된 관리되는 Google Chrome 앱이 자동으로 배포됩니다.
+Android 엔터프라이즈에 Android 디바이스를 등록하면 포트폴리오 아이콘이 포함된 관리되는 Google Chrome 앱이 자동으로 배포됩니다.
  
    <img alt="Managed Google Chrome with the portfolio icon" src="~/apps/media/apps-configure-chrome-android/chrome-icon.png" width="350">
 

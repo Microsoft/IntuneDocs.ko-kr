@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19d02694ab5e53dc43e0861c6a427a044bf50648
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a01b6643de2dd75c41aec0806b97df6154d99a7a
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502643"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547760"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>모바일 디바이스 관리 기관을 설정합니다.
 
@@ -34,7 +34,7 @@ MDM(모바일 디바이스 관리) 기관 설정에 따라 디바이스를 관�
 
 - **Intune 독립 실행형** - Azure Portal을 사용하여 구성하는 클라우드 전용 관리입니다. Intune에서 제공하는 모든 기능 집합을 포함합니다. [Intune 콘솔에서 MDM 기관을 설정합니다](#set-mdm-authority-to-intune).
 
-- **Intune 공동 관리** - Windows 10 디바이스를 위한 Intune 클라우드 솔루션과 System Center Configuration Manager의 통합입니다. Configuration Manager 콘솔을 사용하여 Intune을 구성합니다. [Intune에 대한 디바이스 자동 등록 구성](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune) 
+- **Intune 공동 관리** - Windows 10 디바이스를 위한 Intune 클라우드 솔루션과 Configuration Manager의 통합입니다. Configuration Manager 콘솔을 사용하여 Intune을 구성합니다. [Intune에 대한 디바이스 자동 등록을 구성합니다](https://docs.microsoft.com/configmgr/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
     >새 하이브리드 MDM 고객의 온보딩은 더 이상 사용되지 않습니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리에서 Azure의 Intune으로 이동](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) 블로그 게시물을 참조하세요.
@@ -45,9 +45,9 @@ MDM(모바일 디바이스 관리) 기관 설정에 따라 디바이스를 관�
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM 기관을 Intune으로 설정
 
-MDM 기관을 아직 설정하지 않은 경우 다음 단계를 수행합니다. SCCM에서 변경하려면 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.
+MDM 기관을 아직 설정하지 않은 경우 다음 단계를 수행합니다. SCCM에서 변경하려면 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](https://docs.microsoft.com/configmgr/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.
 
-1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에서 주황색 배너를 선택하여 **모바일 디바이스 관리 기관** 설정을 엽니다. 주황색 배너는 MDM 기관을 아직 설정하지 않은 경우만 표시됩니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 주황색 배너를 선택하여 **모바일 디바이스 관리 기관** 설정을 엽니다. 주황색 배너는 MDM 기관을 아직 설정하지 않은 경우만 표시됩니다.
 2. **모바일 디바이스 관리 기관** 아래에서, 다음 옵션 중에서 MDM 기관을 선택합니다.
    - **Intune MDM 기관**
    - **없음**

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a45160fc0e728b4c53590455a2bd0b5d904ddb1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2a300070e06725e165316172bf10ca079861f56f
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504904"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547571"
 ---
 # <a name="set-up-intune"></a>Intune 설정
 
@@ -30,7 +30,7 @@ ms.locfileid: "72504904"
 
 Intune 구독 설정 및 MDM 기관 설정과 같은 일부 단계는 대부분의 시나리오에 필요합니다. 사용자 지정 도메인 구성 또는 앱 추가와 같은 다른 단계는 회사의 요구 사항에 따라 적용할 수 있는 선택 사항입니다.
 
-현재 Microsoft System Center Configuration Manager를 사용하여 컴퓨터와 서버를 관리하는 경우 [공동 관리로 구성 관리자를 클라우드에 연결](https://docs.microsoft.com/sccm/comanage/overview)할 수 있습니다.
+현재 Microsoft Endpoint Configuration Manager를 사용하여 컴퓨터와 서버를 관리하는 경우 [공동 관리로 구성 관리자를 클라우드에 연결](https://docs.microsoft.com/configmgr/comanage/overview)할 수 있습니다.
 
 >[!TIP]
 >적격 플랜을 통해 Intune에 대한 라이선스를 150개 이상 구매하는 경우 *FastTrack 센터 혜택*을 사용할 수 있습니다. 이 서비스를 통해 Microsoft 전문가는 사용자와 협력하여 Intune에 맞게 사용자 환경을 준비합니다. [EMS(Enterprise Mobility + Security)에 대한 FastTrack 센터 혜택](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)을 참조하세요.

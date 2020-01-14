@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 001e68fdbab7074abb4e1bbefc697d3e34c47762
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465778"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683785"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Microsoft Intune과 비즈니스용 Windows Hello 통합  
 
@@ -53,9 +53,9 @@ Intune은 다음 두 가지 방법으로 비즈니스용 Hello에 통합됩니�
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>비즈니스용 Windows Hello 정책 만들기
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431 에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-2. **디바이스** >  등록** > **디바이스 등록** > **Windows 등록** > **비즈니스용 Windows Hello**로 이동합니다. 비즈니스용 Windows Hello 창이 열립니다.
+2. **디바이스** >  **등록** > **디바이스 등록** > **Windows 등록** > **비즈니스용 Windows Hello**로 이동합니다. 비즈니스용 Windows Hello 창이 열립니다.
 
 3. 다음 중에서 **비즈니스용 Windows Hello 구성**을 위한 옵션을 선택합니다.
 

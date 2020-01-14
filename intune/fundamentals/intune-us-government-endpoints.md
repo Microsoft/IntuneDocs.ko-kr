@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000400"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207386"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune에 대한 미국 정부 엔드포인트
 
@@ -37,6 +37,8 @@ ms.locfileid: "75000400"
 개별 클라이언트 컴퓨터에서 프록시 서버 설정을 수정할 수 있습니다. 그룹 정책을 사용하여 지정된 프록시 서버로 보호되는 모든 클라이언트 컴퓨터의 설정을 변경할 수도 있습니다.
 
 관리되는 디바이스를 사용하려면 **모든 사용자**가 방화벽을 통해 서비스에 액세스할 수 있도록 구성해야 합니다.
+
+미국 정부 고객을 위한 Windows 10 자동 등록 및 디바이스 등록에 대한 자세한 내용은 [Windows 디바이스 등록 설정](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration)을 참조하세요.
 
 다음 표에는 Intune 클라이언트에서 액세스하는 포트 및 서비스가 정리되어 있습니다.
 
@@ -78,4 +80,3 @@ MDM(모바일 디바이스 관리)을 사용하여 관리되는 Intune 관리 �
 ## <a name="next-steps"></a>다음 단계
 [Microsoft Intune에 대한 네트워크 엔드포인트](intune-endpoints.md)
 
-[Windows 10 자동 등록 및 디바이스 등록](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe2377bfd353dc00ddfdf53a6d091c486644194
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d0ef42e301efe2c323ea98265272ba71596a8083
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059370"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206400"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune에서 eSIM 셀룰러 프로필 구성 - 공개 미리 보기
 
@@ -95,7 +95,7 @@ eSIM 지원 디바이스로 공표됐거나 현재 시장에서 유통되는 디
 
         ![모바일 운영자 활성화 코드 샘플 csv 파일](./media/esim-device-configuration/url-activation-code-examples.png)
 
-3. csv 파일 이름은 Azure Portal에서 셀룰러 구독 풀 이름으로 됩니다. 이전 이미지에서 파일 이름은 `UnlimitedDataSkynet.csv`이므로, Intune도 구독 풀을 `UnlimitedDataSkynet.csv`로 명명합니다.
+3. csv 파일 이름은 Endpoint Manager 관리 센터의 셀룰러 구독 풀 이름이 됩니다. 이전 이미지에서 파일 이름은 `UnlimitedDataSkynet.csv`이므로, Intune도 구독 풀을 `UnlimitedDataSkynet.csv`로 명명합니다.
 
     ![셀룰러 구독 풀은 활성화 코드 샘플 csv 파일 이름으로 명명됩니다.](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 

@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84f82cf2fde7d400e5531bac219b6cbb4877032f
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
+ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478930"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545937"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Intune에서 등록되지 않은 디바이스에 Mobile Threat Defense 커넥터를 사용하도록 설정
 
 MTD(Mobile Threat Defense)를 설치하는 동안 Mobile Threat Defense 파트너 콘솔에서 위협을 분류하기 위한 정책을 구성하고 Intune에서 앱 보호 정책을 만들었습니다. MTD 파트너 콘솔에서 Intune 커넥터를 이미 구성했다면 이제 Intune에서 MTD 파트너 애플리케이션의 MTD 연결을 사용할 수 있습니다.
 
 > [!NOTE]
-> 이 문서는 앱 보호 정책을 지원하는 모든 Mobile Threat Defense 파트너에게 적용됩니다. Better Mobile(Android), Zimperium(iOS), Lookout for Work(Android/iOS).
+> 이 문서는 앱 보호 정책을 지원하는 모든 Mobile Threat Defense 파트너에게 적용됩니다. Better Mobile(Android), Zimperium(Android, iOS), Lookout for Work(Android/iOS).
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>MTD 앱의 클래식 조건부 액세스 정책
 
@@ -62,11 +62,11 @@ MTD 앱의 클래식 조건부 액세스 정책:
 
     <!-- ![MTD setup in Intune](PLACEHOLDER, need a new screenshot of this page) -->
 
-5. 조직의 요구 사항에 따라 전환 옵션을 사용하도록 설정합니다. 표시되는 설정/해제 옵션은 MTD 파트너에 따라 다릅니다.
+5. 조직의 요구 사항에 따라 설정/해제 옵션을 사용하도록 설정합니다. 표시되는 설정/해제 옵션은 MTD 파트너에 따라 다릅니다.
 
 ## <a name="mobile-threat-defense-toggle-options"></a>Mobile Threat Defense 설정/해제 옵션
 
-조직의 요구 사항에 따라 사용하도록 설정해야 하는 MTD 설정/해제 옵션을 결정할 수 있습니다. 아래에 자세한 내용이 나와 있습니다.
+조직의 요구 사항에 따라 사용 하도록 설정해야 하는 MTD 설정/해제 옵션을 결정할 수 있습니다. 다음은 자세한 내용입니다.
 
 **앱 보호 정책 설정**
 

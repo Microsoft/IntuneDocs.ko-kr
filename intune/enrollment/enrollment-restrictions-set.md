@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955510"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547821"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -144,7 +144,7 @@ BYOD 등록 중에 등록된 디바이스 수가 한도에 다다랐을 때 사�
 - 디바이스가 Windows Autopilot에 등록되어 있지만 Windows 설정의 MDM 등록만 옵션은 아닙니다.
 - 디바이스의 IMEI 번호가 **디바이스 등록** >  **[회사 디바이스 식별자](corporate-identifiers-add.md)** 에 나열되어 있습니다. (Windows Phone 8.1에 대해 지원되지 않음)
 - 디바이스에서 [대량 프로비전 패키지](windows-bulk-enroll.md)를 통해 등록합니다.
-- 디바이스가 GPO 또는 [SCCM에서 공동 관리를 위한 자동 등록](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1)을 통해 등록합니다.
+- 디바이스가 GPO 또는 [Configuration Manager에서 공동 관리를 위한 자동 등록](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1)을 통해 등록합니다.
  
 다음 등록은 Intune에서 회사로 표시됩니다. 그러나 Intune 관리자가 디바이스별 제어를 제공하지 않으므로 다음과 같이 차단됩니다.
 - [Windows 설치 중에 Azure Active Directory 조인](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*을 사용한 [자동 MDM 등록](windows-enroll.md#enable-windows-10-automatic-enrollment).

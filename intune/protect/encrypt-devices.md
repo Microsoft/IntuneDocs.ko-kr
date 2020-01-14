@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390322"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654263"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune에서 디바이스 암호화 사용
 
@@ -58,7 +58,7 @@ Intune에서 관리할 수 있는 FileVault 설정에 대한 자세한 내용은
 3. 다음 옵션을 설정합니다.
 
    - 플랫폼: macOS
-   - 프로필 유형: Endpoint Protection
+   - 프로필 유형: 엔드포인트 보호
 
 4. **설정** > **FileVault**를 선택합니다.
 
@@ -87,6 +87,10 @@ Intune이 FileVault를 사용하여 macOS 디바이스를 암호화한 후에는
 
 Intune이 FileVault로 macOS 디바이스를 암호화한 후에는 모든 디바이스의 웹 회사 포털에서 해당 디바이스의 개인 복구 키를 볼 수 있습니다. 웹 회사 포털에서 암호화된 macOS 디바이스를 선택하고 원격 디바이스 작업으로 "복구 키 가져오기"를 선택합니다.
 
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>MEM 암호화된 macOS 디바이스에서 개인 복구 키 검색
+
+최종 사용자는 iOS 회사 포털 앱을 사용하여 개인 복구 키(FileVault 키)를 검색할 수 있습니다. 개인 복구 키를 포함한 디바이스는 Intune에 등록하고 Intune을 통한 FileVault로 암호화해야 합니다. iOS 회사 포털 앱을 사용하면 최종 사용자는 FileVault 개인 복구 키가 포함된 웹 페이지를 열 수 있습니다. Intune에서 **디바이스** > *암호화되어 등록된 macOS 디바이스* > **복구 키 가져오기**를 선택하여 복구 키를 검색할 수도 있습니다. 
+
 ## <a name="bitlocker-encryption-for-windows-10"></a>Windows 10용 BitLocker 암호화
 
 Intune을 사용하여 Windows 10을 실행하는 디바이스에서 BitLocker 드라이브 암호화를 구성할 수 있습니다. 그런 다음 Intune 암호화 보고서를 사용하여 해당 디바이스의 암호화 정보를 확할 수 있습니다. 또한 Azure AD(Azure Active Directory)에 있는 디바이스의 BitLocker에 대한 중요한 정보에 액세스할 수 있습니다.
@@ -106,7 +110,7 @@ Windows 10 이상 플랫폼의 엔드포인트 보호를 위한 [디바이스 �
 3. 다음 옵션을 설정합니다.
 
    - 플랫폼: Windows 10 이상
-   - 프로필 유형: Endpoint Protection
+   - 프로필 유형: 엔드포인트 보호
 
 4. **설정** > **Windows 암호화**를 선택합니다.
 

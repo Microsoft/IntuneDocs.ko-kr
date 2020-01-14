@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984190"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207488"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune에서 iOS 소프트웨어 업데이트 정책 추가
 
@@ -32,8 +32,8 @@ ms.locfileid: "73984190"
 
 ## <a name="configure-the-policy"></a>정책 구성
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **소프트웨어 업데이트** > **iOS에 대한 정책 업데이트** > **만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **iOS 업데이트 정책** > **만들기**를 선택합니다.
 3. **기본 사항** 탭에서 이 정책의 이름을 지정하고 **다음**을 선택합니다.
 
    ![기본 사항 탭](./media/software-updates-ios/basics-tab.png) 
@@ -77,7 +77,7 @@ Intune 지원 팀의 지침은 [Intune에서 감독 모드인 디바이스의 �
 ## <a name="edit-a-policy"></a>정책 편집
 제한된 시간 변경을 포함하여 기존 정책을 편집할 수 있습니다.
 
-1. **소프트웨어 업데이트**에서 **iOS용 업데이트 정책**을 선택한 후 편집할 정책을 선택합니다.
+1. **디바이스** > **iOS 업데이트 정책**을 선택합니다. 편집하려는 정책을 선택합니다.
 
 2. 정책 **속성**을 보는 동안 수정할 정책 페이지의 **편집**을 선택합니다.  
    ![정책 편집](./media/software-updates-ios/edit-policy.png)   

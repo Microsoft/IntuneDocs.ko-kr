@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563886"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548006"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -199,6 +199,14 @@ Microsoft Edge에 대한 애플리케이션 프록시를 사용하도록 설정�
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
 
+## <a name="display-relevant-industry-news-on-new-tab-pages"></a>새 탭 페이지에서 관련 분야 뉴스 표시
+
+Microsoft Edge 모바일 내 새 탭 페이지에 조직과 관련된 산업 분야 뉴스를 표시하도록 환경을 구성할 수 있습니다. 이 기능을 사용하면 Microsoft Edge 모바일은 조직의 도메인 이름을 사용해 웹에서 조직, 조직의 분야, 경쟁자의 뉴스를 수집하므로 사용자는 Microsoft Edge의 중앙화된 새 탭 페이지에서 모든 관련 외부 뉴스를 검색할 수 있습니다. 관련 뉴스는 표시되지 않는 것이 기본 설정이며 조직에서 이를 사용하도록 설정할 수 있습니다. 
+
+|    Key    |    값    |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    'com.microsoft.intune.SohwIndustryNews'    |    **True**를 선택하면 Microsoft Edge 모바일 새 탭 페이지에서 관련 업계 뉴스를 표시합니다.<p>**False**(기본값)를 선택하면 새 탭 페이지에서 관련 업계 뉴스를 숨깁니다.    |
+
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Microsoft Edge에 대한 관리형 책갈피 구성
 
 액세스의 편의성을 위해 Microsoft Edge를 사용할 때 사용자가 사용할 책갈피를 구성할 수 있습니다. 
@@ -214,7 +222,7 @@ Microsoft Edge에 대한 애플리케이션 프록시를 사용하도록 설정�
 
 |    Key    |    값    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 `|` 문자로 구분합니다.      예:<br>`Microsoft Bing|https://www.bing.com`<br>여러 책갈피를 구성하려면 각 쌍을 이중 문자 `||`로 구분합니다.<p>예:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 `|` 문자로 구분합니다.      예제:<br>`Microsoft Bing|https://www.bing.com`<br>여러 책갈피를 구성하려면 각 쌍을 이중 문자 `||`로 구분합니다.<p>예제:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## <a name="display-myapps-within-microsoft-edge-bookmarks"></a>Microsoft Edge 책갈피 내에 MyApps 표시
 
@@ -268,7 +276,7 @@ Microsoft Edge에 대해 허용되거나 차단된 사이트 목록을 구성하
   - `http://www.contoso.com:*`
   - `http://www.contoso.com: /*`
 
-## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>사용자가 차단된 사이트에 액세스하려고 할 때 동작 정의
+## <a name="transition-users-to-their-personal-context-when-trying-to-access-a-blocked-site"></a>차단된 사이트에 액세스하려고 할 때 사용자의 개인 컨텍스트로 전환
 
 Microsoft Edge에 기본 제공된 이중 ID 모델을 사용하면 Intune Managed Browser보다 더 유연한 환경을 최종 사용자에게 제공할 수 있습니다. 사용자가 Microsoft Edge에서 차단된 사이트에 연결하는 경우 회사 컨텍스트가 아니라 프라이빗 컨텍스트에서 링크를 열라는 메시지를 사용자에게 표시할 수 있습니다. 이렇게 하면 사용자도 보호하고 회사 리소스를 안전하게 유지할 수 있습니다. 예를 들어 사용자가 Outlook 통해 뉴스 기사의 링크를 받는 경우 프라이빗 컨텍스트 또는 InPrivate 탭에서 링크를 열 수 있습니다. 회사 컨텍스트에서는 뉴스 웹 사이트를 허용하지 않습니다. 기본적으로 이러한 전환이 허용됩니다.
 
@@ -276,7 +284,16 @@ Microsoft Edge에 기본 제공된 이중 ID 모델을 사용하면 Intune Manag
 
 |    Key    |    값    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    **True**를 선택하면 InPrivate 브라우징에서 직접 제한된 링크를 엽니다.<p>**False**(기본)를 선택하면 사용자가 제한된 링크를 열 때 InPrivate 브라우징 또는 관리 서비스 계정(MSA)를 선택하도록 합니다.    |
+
+## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>InPrivate 탭 페이지에서 직접 제한된 링크 열기
+
+제한된 링크를 InPrivate 브라우징에서 직접 열도록 구성하면 사용자가 더욱 원활한 브라우징 환경을 갖게 됩니다. 이렇게 하면 사용자가 사이트를 볼 때 개인 컨텍스트로 전환하는 단계가 필요하지 않습니다. InPrivate 브라우징은 관리되지 않는 것으로 간주되므로 사용자가 InPrivate 브라우징 모드를 사용할 때는 액세스할 수 없습니다. 
+
+|    Key    |    값    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True**이면 Microsoft Edge에서 사용자를 프라이빗 컨텍스트로 전환하여 차단된 사이트를 열 수 있습니다.<p>**차단**이면 Microsoft Edge에서 사용자를 전환할 수 없습니다. 사용자에게는 액세스하려는 사이트가 차단되었다는 메시지만 표시됩니다.    |
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>iOS에서 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스 
 

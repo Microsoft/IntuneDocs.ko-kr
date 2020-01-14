@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cddb9b74d9132ace07c17a3156e61148b720d66
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098193"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207182"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune에서 macOS 디바이스 등록 설정
 
@@ -78,11 +78,9 @@ macOS 디바이스 등록을 설정하기 전에 다음 필수 구성 요소를 
 VMware Fusion의 경우 [.vmx 파일을 편집](https://kb.vmware.com/s/article/1014782)하여 가상 머신의 하드웨어 모델 및 일련 번호를 설정해야 합니다. 가상 머신을 실행하는 디바이스의 하드웨어 형식을 사용자가 만드는 가상 머신의 하드웨어 형식과 일치시키는 것이 좋습니다. **Apple 메뉴** > **이 Mac 정보** > **시스템 보고서** > **모델 식별자**에서 이러한 하드웨어 형식을 찾을 수 있습니다. 
 
 ## <a name="user-approved-enrollment"></a>사용자 승인됨 등록
-사용자 승인됨 MDM 등록은 특정 보안 관련 설정을 관리하는 데 사용할 수 있는 macOS 등록 유형입니다. 자세한 내용은 [Apple의 지원 문서](https://support.apple.com/HT208019)를 참조하세요.
-
-2019년 11월부터 모든 새로운 사용자 소유 macOS 등록이 사용자 승인됩니다. 성공적으로 등록하기 위해서는 사용자가 수동으로 관리 프로필을 설치해야 하기 때문입니다. [등록 프로세스](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp) 도중 사용자는 **시스템 기본 설정** > **프로필**에서 Apple 관리 프로필을 설치하게 됩니다.  관리 프로필을 설치하는 지침은 macOS 회사 포털 앱에서 사용할 수 있습니다.
-
-사용자가 관리 프로필을 수동으로 승인하지 않은 경우 2019년 11월 이전에 등록된 디바이스는 사용자 승인되지 않을 수 있습니다. 그러나 사용자는 뒤로 돌아가 **시스템 기본 설정** > **프로필**에서 **관리 프로필** > **승인**을 선택하여 관리 프로필을 승인할 수 있습니다.
+사용자 승인됨 MDM 등록은 특정 보안 관련 설정을 관리하는 데 사용할 수 있는 macOS 등록 유형입니다. 자세한 내용은 [Apple의 지원 문서](https://support.apple.com/HT208019)를 참조하세요.  
+ 
+BYOD 등록 프로세스 중 사용자는 Apple 관리 프로필을 직접 승인하도록 요청받을 수 있습니다. 자세한 내용은 macOS의 회사 포털 앱에서 제공됩니다. 등록에 관리 프로필 승인이 꼭 필요한 것은 아니지만 Intune은 사용자 승인 등록을 권장합니다. 사용자가 등록 중 프로필 승인을 하지 않은 경우 **시스템 기본 설정** > **프로필**에서 관리 프로필을 선택하고 **승인**을 선택할 수 있습니다.    
 
 ### <a name="find-out-if-a-device-is-user-approved"></a>디바이스가 사용자 승인되었는지 확인
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.

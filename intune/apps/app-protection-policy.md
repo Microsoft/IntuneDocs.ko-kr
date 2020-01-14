@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899425"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692116"
 ---
 # <a name="app-protection-policies-overview"></a>앱 보호 정책 개요
 
@@ -95,7 +95,7 @@ Intune 앱 보호 정책 플랫폼 지원은 Android 및 iOS 디바이스용 Off
 ### <a name="data-protection-with-app-protection-policies-app"></a>앱 보호 정책(APP)을 사용하여 데이터 보호
 
 앱 보호 정책을 사용하여 회사 데이터가 디바이스의 로컬 스토리지에 저장되지 않도록 할 수 있습니다(아래 그림 참조). 앱 보호 정책으로 보호되지 않는 다른 앱으로 데이터 이동을 제한할 수도 있습니다. 앱 보호 정책 설정은 다음과 같습니다.
-- **다른 이름으로 저장 차단** 및 **잘라내기, 복사 및 붙여넣기 제한**과 같은 데이터 재배치 정책
+- **조직 데이터 복사본 저장**, **잘라내기, 복사, 붙여넣기 제한**과 같은 데이터 재배치 정책
 - **액세스용 단순 PIN 필요** 및 **관리되는 앱이 탈옥 또는 루팅 상태의 디바이스에서 실행되지 않도록 차단**과 같은 액세스 정책 설정
 
 ![정책에 의해 보호되는 회사 데이터를 보여주는 개념 이미지](./media/app-protection-policy/apps-with-protection-policies.png)
@@ -169,7 +169,7 @@ Microsoft Office 앱에서 앱 보호 정책을 사용하는 경우 알아야 �
 
 - 최종 사용자의 Azure Active Directory 계정에 [Office 365 Business 또는 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) 라이선스가 연결되어 있어야 합니다. 구독에는 모바일 디바이스의 Office 앱이 포함되어야 하며 [비즈니스용 OneDrive](https://onedrive.live.com/about/business/)의 클라우드 스토리지 계정이 포함될 수 있습니다. 다음 [지침](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)에 따라 [Microsoft 365 관리 센터](https://admin.microsoft.com)에서 Office 365 라이선스를 할당받을 수 있습니다.
 
-- 최종 사용자에게 “다른 이름으로 저장 금지” 애플리케이션 보호 정책 설정에서 세분화된 다른 이름으로 저장 기능을 사용하여 구성된 관리 위치가 있어야 합니다. 예를 들어 관리 위치가 OneDrive인 경우 최종 사용자의 Word, Excel 또는 PowerPoint 앱에 [OneDrive](https://onedrive.live.com/about/) 앱이 구성되어 있어야 합니다.
+- 최종 사용자는 “조직 데이터 복사본 저장” 애플리케이션 보호 정책 설정에서 세분화된 저장을 기능으로 사용하여 구성된 관리 위치가 있어야 합니다. 예를 들어 관리 위치가 OneDrive인 경우 최종 사용자의 Word, Excel 또는 PowerPoint 앱에 [OneDrive](https://onedrive.live.com/about/) 앱이 구성되어 있어야 합니다.
 
 - 관리 위치가 OneDrive인 경우 해당 앱이 최종 사용자에게 배포된 앱 보호 정책의 대상으로 지정되어야 합니다.
 
@@ -257,7 +257,7 @@ IT 관리자는 앱 데이터 암호화를 요구하는 앱 보호 정책을 배
 IT 관리자의 앱 보호 정책에 따라 "회사"로 표시된 데이터만 암호화됩니다. 데이터는 비즈니스 위치에서 시작될 경우 "회사" 데이터로 간주됩니다. Office 앱의 경우 Intune은 다음을 비즈니스 위치로 간주합니다.
 
 - 이메일(Exchange) 
-- 클라우드 저장소(비즈니스용 OneDrive 계정을 사용하는 OneDrive 앱)
+- 클라우드 스토리지(비즈니스용 OneDrive 계정을 사용하는 OneDrive 앱)
 
 [Intune 앱 래핑 도구](../developer/apps-prepare-mobile-application-management.md)에서 관리되는 기간 업무 앱의 경우 모든 앱 데이터가 “회사” 데이터로 간주됩니다.
 

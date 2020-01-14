@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992991"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206077"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 디바이스 준수 정책 모니터링
 
@@ -36,9 +36,9 @@ ms.locfileid: "74992991"
 
 **Intune 디바이스 준수 대시보드**를 엽니다.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-2. **디바이스 준수** > **개요**를 선택합니다. **디바이스 준수 대시보드**가 열립니다.
+2. **디바이스** > **개요** > **준수 상태** 탭을 선택합니다.
 
 > [!IMPORTANT]
 > 디바이스 Intune에 등록해야 디바이스 준수 정책을 수신할 수 있습니다.
@@ -151,7 +151,7 @@ Intune에서는 해당 디바이스에 적용된 디바이스 준수 정책 설�
 
 ## <a name="view-compliance-reports"></a>새로운 규정 준수 보고서
 
-*준수 상태*에 대한 차트를 사용하는 것 외에도 관리 센터의 *모니터링* 페이지에서 규정 준수 보고서를 볼 수 있습니다.
+*준수 상태*의 차트를 사용하거나 **보고서** > **디바이스 준수**로 이동할 수 있습니다.
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
@@ -191,3 +191,7 @@ Intune에서는 해당 디바이스에 적용된 디바이스 준수 정책 설�
 - Intune 구성 정책과 준수 정책에 충돌하는 설정이 있는 경우 구성 정책 설정보다 준수 정책 설정이 우선합니다. 이 문제는 구성 정책 설정이 더 안전하더라도 발생합니다.
 
 - 여러 준수 정책을 배포한 경우 Intune은 이러한 정책 중 가장 안전한 정책을 사용합니다.
+
+## <a name="next-steps"></a>다음 단계
+
+[준수 정책 개요](device-compliance-get-started.md)

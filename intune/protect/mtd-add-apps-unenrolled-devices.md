@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8dd7127594a0e23c85b9f8141ce6d398d9a447a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1cf0a3d8b30955be8413b376acd223a924be843
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72794461"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545935"
 ---
 # <a name="add-mobile-threat-defense-apps-to-unenrolled-devices"></a>등록되지 않은 디바이스에 Mobile Threat Defense 앱 추가
 
@@ -34,7 +34,7 @@ ms.locfileid: "72794461"
 필요에 따라 Intune을 사용하여 Microsoft Authenticator 및 MTD(Mobile Threat Defense) 앱도 추가하고 배포할 수 있습니다.
 
 > [!NOTE] 
-> 이 문서는 앱 보호 정책을 지원하는 모든 Mobile Threat Defense 파트너에게 적용됩니다. Better Mobile(Android), Zimperium(iOS), Lookout for Work(Android/iOS).
+> 이 문서는 앱 보호 정책을 지원하는 모든 Mobile Threat Defense 파트너에게 적용됩니다. Better Mobile(Android), Zimperium(Android, iOS), Lookout for Work(Android/iOS).
 > 
 > 등록되지 않은 디바이스의 경우 Intune과 함께 사용하는 iOS용 Mobile Threat Defense 앱을 설정하는 **iOS 앱 구성 정책이 필요하지 않습니다**. 이것이 Intune 등록된 디바이스에 대한 주요 차이점입니다. 
 
@@ -76,8 +76,8 @@ Mobile Threat Defense와 함께 Intune 앱 보호 정책을 사용하는 경우 
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Check Point SandBlast Mobile - App Store URL](https://apps.apple.com/us/app/sandblast-mobile-protect/id1006390797) when completing the **Configure app information** section. -->
 
 ### <a name="making-zimperium-available-to-end-users"></a>최종 사용자가 Zimperium을 사용할 수 있도록 설정
-<!-- - **Android**
-  - See the instructions for [adding Android store apps to Microsoft Intune](../apps/store-apps-android.md). Use this [Zimperium - Play Store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) when completing the **Configure app information** section. -->
+- **OWA(Outlook Web Access)**
+  - [Microsoft Intune에 Android 스토어 앱 추가](../apps/store-apps-android.md) 지침을 참조하세요. **앱 정보 구성** 섹션을 완료하면 이 [Zimperium - Play 스토어 URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en)을 사용합니다.
 - **iOS**
   - [Microsoft Intune에 iOS 스토어 앱 추가](../apps/store-apps-ios.md) 지침을 참조하세요. **앱 정보 구성** 섹션을 완료하면 이 [Zimperium - App Store URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)을 사용합니다.
  

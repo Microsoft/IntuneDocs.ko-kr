@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585711"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691814"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>단계별 시나리오 - 보안 Microsoft Office 모바일 앱 
 
@@ -46,7 +46,7 @@ Office 모바일 앱 및 모바일용 Microsoft Edge는 이중 ID를 지원합�
 [Intune 앱 보호 정책](~/apps/app-protection-policy.md)을 사용하면 Intune에 등록된 디바이스에서 작업 파일을 보호하는 데 도움이 됩니다. Intune에서 관리를 위해 등록되지 않은 직원 소유 디바이스에서 앱 보호 정책을 사용할 수도 있습니다. 이 경우 회사에서 디바이스를 관리하지 않더라도 여전히 작업 파일과 리소스가 보호되고 있음을 확인해야 합니다.
 
 앱 보호 정책을 사용하여 사용자가 보호되지 않는 위치에 작업 파일을 저장하지 못하도록 할 수 있습니다. 앱 보호 정책으로 보호되지 않는 다른 앱으로 데이터 이동을 제한할 수도 있습니다. 앱 보호 정책 설정은 다음과 같습니다.
-- 다른 이름으로 저장 차단 및 잘라내기, 복사 및 붙여넣기 제한과 같은 데이터 재배치 정책
+- **조직 데이터 복사본 저장**, **잘라내기, 복사, 붙여넣기 제한**과 같은 데이터 재배치 정책
 - 단순한 액세스용 PIN을 요구하고 관리형 앱이 탈옥 또는 루팅된 디바이스에서 실행되는 것을 차단하는 액세스 정책 설정
 
 앱 기반 조건부 액세스 및 클라이언트 앱 관리는 Intune 앱 보호 정책을 지원하는 클라이언트 앱만 Exchange Online 및 기타 Office 365 서비스에 액세스할 수 있도록 함으로써 보안 계층을 추가합니다.

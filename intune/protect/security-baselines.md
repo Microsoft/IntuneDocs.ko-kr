@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409984"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548134"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -192,9 +192,9 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 
 ## <a name="co-managed-devices"></a>공동 관리형 디바이스
 
-Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사용하는 공동 관리 디바이스와 유사합니다. 공동 관리 디바이스는 System Center Configuration Manager 및 Microsoft Intune을 사용하여 Windows 10 디바이스를 동시에 관리합니다. 이를 통해 Configuration Manager에 대한 기존 투자를 Intune을 활용하도록 클라우드 연결할 수 있습니다. Configuration Manager를 사용하고 클라우드의 이점도 누리고 싶은 경우 [공동 관리 개요](https://docs.microsoft.com/sccm/comanage/overview)는 훌륭한 리소스입니다.
+Intune 관리 디바이스의 보안 기준선은 Configuration Manager를 사용하는 공동 관리 디바이스와 유사합니다. 공동 관리 디바이스는 Configuration Manager 및 Microsoft Intune을 사용하여 Windows 10 디바이스를 동시에 관리합니다. 이를 통해 Configuration Manager에 대한 기존 투자를 Intune을 활용하도록 클라우드 연결할 수 있습니다. Configuration Manager를 사용하고 클라우드의 이점도 누리고 싶은 경우 [공동 관리 개요](https://docs.microsoft.com/configmgr/comanage/overview)는 훌륭한 리소스입니다.
 
-공동 관리 디바이스를 사용할 때는 **디바이스 구성** 워크로드(해당 설정)를 Intune으로 전환해야 합니다. [디바이스 구성 워크로드](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration)는 자세한 정보를 제공합니다.
+공동 관리 디바이스를 사용할 때는 **디바이스 구성** 워크로드(해당 설정)를 Intune으로 전환해야 합니다. [디바이스 구성 워크로드](https://docs.microsoft.com/configmgr/comanage/workloads#device-configuration)는 자세한 정보를 제공합니다.
 
 ## <a name="q--a"></a>Q & A
 

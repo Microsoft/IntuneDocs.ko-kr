@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832733"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547806"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -113,7 +113,7 @@ ms.locfileid: "74832733"
 
     4. DirSync를 다시 설정하고 이제 사용자가 제대로 동기화되었는지 확인합니다.
 
-3. Intune에서 System Center Configuration Manager를 사용하는 시나리오에서는 사용자에게 유효한 클라우드 사용자 ID가 있는지 확인합니다.
+3. Intune에서 Configuration Manager를 사용하는 시나리오에서는 사용자에게 유효한 클라우드 사용자 ID가 있는지 확인합니다.
 
     1. SQL Management Studio를 엽니다.
 
@@ -332,7 +332,7 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 
 5. iOS용 Safari가 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune에서 System Center Configuration Manager를 사용하면, 등록된 iOS 디바이스가 콘솔에 표시되지 않습니다.
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Intune에서 Configuration Manager를 사용하면, 등록된 iOS 디바이스가 콘솔에 표시되지 않습니다.
 **문제:** 사용자가 iOS 디바이스를 등록하지만 Configuration Manager 관리 콘솔에 표시되지 않습니다. 디바이스가 등록되었다는 것을 표시하지 않습니다. 가능한 원인:
 
 - Configuration Manager 사이트의 Microsoft Intune 커넥터가 Intune 서비스와 통신하지 못합니다.
@@ -419,7 +419,7 @@ VPP 토큰에서 발생한 문제를 해결한 후에 차단된 디바이스를 
     3. 등록 문제가 있는 디바이스를 찾습니다. 디바이스 이름 또는 MAC/HW 주소로 검색하여 결과를 좁힙니다.
     4. 디바이스 > **삭제**를 선택합니다. 디바이스와 연결된 다른 모든 항목을 삭제합니다.  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager with Intune 사용 시 문제
+## <a name="issues-when-using-configuration-manager-with-intune"></a>Configuration Manager with Intune 사용 시 문제
 
 ### <a name="mobile-devices-disappear"></a>모바일 디바이스가 사라집니다.
 
@@ -433,7 +433,7 @@ VPP 토큰에서 발생한 문제를 해결한 후에 차단된 디바이스를 
 
 #### <a name="check-how-device-was-removed"></a>디바이스가 제거된 방법 확인
 
-1. Configuration Manager 관리자 콘솔에서 **모니터링** &gt; **시스템 상태** &gt; **상태 메시지 쿼리**를 선택합니다.
+1. Configuration Manager 관리자 콘솔에서 **모니터링**&gt;**시스템 상태**&gt;**상태 메시지 쿼리**를 선택합니다.
 
 2. **Collection Member Resources Manually Deleted**를 마우스 오른쪽 단추로 클릭하고 **메시지 표시**를 선택합니다.
 

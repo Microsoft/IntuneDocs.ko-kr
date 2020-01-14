@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 442432e7638c69083dcad5abc571c00e4051553d
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547981"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731527"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 템플릿을 사용하여 Microsoft Intune에서 그룹 정책 설정 구성
 
@@ -52,16 +52,10 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
     - **플랫폼**: **Windows 10 이상**을 선택합니다.
     - **프로필 유형**: **관리 템플릿**을 선택합니다.
 
-4. **만들기**를 선택합니다. 새 창에서 **설정**을 선택합니다. 모든 설정이 나열되고, 화살표 앞과 뒤를 사용하여 자세한 설정을 볼 수 있습니다.
+4. **만들기**를 선택합니다. 새 창에서 드롭다운 목록을 선택하고 **모든 제품**을 선택합니다. 이 목록에서 **Windows** 설정만 표시하거나 **Office** 설정만 표시하거나, **Edge 버전 77 이상** 설정만 표시하도록 설정을 필터링할 수도 있습니다.
 
-    ![설정의 샘플 목록을 보고 이전 및 다음 단추를 사용합니다.](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
-
-    > [!TIP]
-    > Intune의 Windows 설정은 로컬 그룹 정책 편집기(`gpedit`)에 표시되는 온-프레미스 그룹 정책 경로와 관련됩니다.
-
-5. 드롭다운 목록에서 **모든 제품**을 선택합니다. 이 목록에서 **Windows** 설정만 표시하거나 **Office** 설정만 표시하거나, **Edge 버전 77 이상** 설정만 표시하도록 설정을 필터링할 수도 있습니다.
-
-    ![Intune의 관리 템플릿에서 모든 Windows 또는 모든 Office 설정을 표시하도록 목록을 필터링합니다.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+    > [!div class="mx-imgBorder"]
+    > ![Intune의 관리 템플릿에서 모든 Windows 또는 모든 Office 설정을 표시하도록 목록을 필터링](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)합니다.
 
     > [!NOTE]
     > Microsoft Edge 설정은 다음에 적용됩니다.
@@ -70,6 +64,14 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
     > - [KB 4512509](https://support.microsoft.com/kb/4512509)가 설치된 Windows 10 RS4 이상
     > - [KB 4512534](https://support.microsoft.com/kb/4512534)가 설치된 Windows 10 RS5 이상
     > - [KB 4512941](https://support.microsoft.com/kb/4512941)이 설치된 Windows 10 19H1 이상
+
+5. 모든 설정이 나열되고, 화살표 앞과 뒤를 사용하여 자세한 설정을 볼 수 있습니다.
+
+    > [!div class="mx-imgBorder"]
+    > ![설정의 샘플 목록을 보고 이전 및 다음 단추를 사용](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)합니다.
+
+    > [!TIP]
+    > Intune의 Windows 설정은 로컬 그룹 정책 편집기(`gpedit`)에 표시되는 온-프레미스 그룹 정책 경로와 관련됩니다.
 
 6. 설정을 선택합니다. 예를 들어 **Office**에 대해 필터링하고 **제한된 찾아보기 활성화**를 선택합니다. 설정에 대한 자세한 설명이 표시됩니다. **사용**이나 **사용 안 함**을 선택하거나 설정을 **구성되지 않음**(기본값) 상태로 둡니다. 자세한 설명은 **사용**, **사용 안 함** 또는 **구성되지 않음**을 선택하는 경우 발생하는 작업을 설명합니다.
 7. **확인**을 선택하여 변경 내용을 저장합니다.
@@ -88,13 +90,15 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
 
 이러한 템플릿에서 사용할 수 있는 수백 가지 설정이 있습니다. 특정 설정을 쉽게 찾으려면 기본 제공 기능을 사용합니다.
 
-- 템플릿에서 **설정**, **상태**, **설정 유형** 또는 **경로** 열을 선택하여 목록을 정렬합니다. 예를 들어 **경로** 열을 선택하여 `Microsoft Excel` 경로의 모든 설정을 봅니다.
+- 템플릿에서 **설정**, **상태**, **설정 유형** 또는 **경로** 열을 선택하여 목록을 정렬합니다. 예를 들어 **경로** 열을 선택하고 다음 화살표를 사용해 `Microsoft Excel` 경로의 모든 설정을 봅니다.
 
-  ![Intune의 관리 템플릿에서 그룹 정책 또는 ADMX 경로를 기준으로 그룹화한 모든 설정을 표시하려면 경로를 클릭합니다.](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  > [!div class="mx-imgBorder"]
+  > ![Intune의 관리 템플릿에서 그룹 정책 또는 ADMX 경로를 기준으로 그룹화한 모든 설정을 표시하려면 경로를 클릭](./media/administrative-templates-windows/path-filter-shows-excel-options.png)합니다.
 
-- 템플릿에서 **검색** 상자를 사용하여 특정 설정을 찾습니다. 제목 또는 경로를 설정하여 검색할 수 있습니다. 예를 들어 `copy`을 검색합니다. `copy`와 함께 모든 설정이 표시됩니다.
+- 템플릿에서 **검색** 상자를 사용하여 특정 설정을 찾습니다. 설정 또는 경로를 설정하여 검색할 수 있습니다. 예를 들어 `copy`을 검색합니다. `copy`와 함께 모든 설정이 표시됩니다.
 
-  ![copy를 검색하면 Intune의 관리 템플릿의 모든 Windows 및 Office 설정이 표시됩니다.](./media/administrative-templates-windows/search-copy-settings.png) 
+  > [!div class="mx-imgBorder"]
+  > ![copy를 검색하면 Intune의 관리 템플릿 내 모든 Windows 및 Office 설정이 표시](./media/administrative-templates-windows/search-copy-settings.png)됩니다. 
 
   다른 예제에서 `microsoft word`를 검색합니다. Microsoft Word 프로그램에 대해 설정할 수 있는 모든 설정이 표시됩니다. `explorer`를 검색하여 템플릿에 추가할 수 있는 모든 Internet Explorer 설정을 봅니다.
 
@@ -103,3 +107,5 @@ Windows 설정은 AD(Active Directory)의 GPO(그룹 정책) 설정과 유사합
 템플릿이 만들어지지만 아직 아무것도 하지 않습니다. 다음으로 [프로필이라고도 하는 템플릿을 할당](device-profile-assign.md)하고 [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
 [관리 템플릿을 사용하여 Office 365 업데이트](administrative-templates-update-office.md).
+
+[자습서: 클라우드를 사용해 ADMX 템플릿과 Microsoft Intune으로 Windows 10 디바이스에서 그룹 정책 구성](tutorial-walkthrough-administrative-templates.md)

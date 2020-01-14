@@ -1,20 +1,36 @@
 ---
 title: 파일 포함
-description: 파일 포함
+description: 포함 파일
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
+ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829100"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75323027"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
+
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>업데이트된 기능: Intune에 새 RBAC 역할 등장<!--4253397-->
+1월 Intune 서비스 업데이트에서 Intune에 새 보안 역할을 릴리스할 계획입니다. 이 역할은 Intune의 “엔드포인트 보안 관리자”로 표시될 것이며 Azure AD의 “보안 관리자” 역할이 확장된 역할입니다.
+ 
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+현재 Azure AD는 보안 전문가를 위한 세 가지 역할이 있습니다.
+- Azure AD의 보안 읽기 권한자 역할은 Intune에 읽기 전용 역할을 제공합니다.
+- Azure AD의 보안 연산자 역할은 Intune에 읽기 전용 역할을 제공합니다.
+- Azure AD의 보안 관리자. Intune의 1월 업데이트가 완료되면 Intune에 읽기 전용 권한뿐 아니라 다음과 같은 엔드포인트 보안 관리자 역할이 제공하는 새로운 권한이 추가됩니다.
+    - 디바이스 규정 준수 정책의 읽기, 만들기, 업데이트, 삭제, 할당
+    - 관리 디바이스 읽기, 삭제, 업데이트
+    - 보안 기준 읽기, 만들기, 업데이트, 삭제, 할당
+    - 보안 작업 읽기 및 업데이트
+ 
+### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
+현재의 모든 Intune RBAC 역할을 검토합니다. 현재 역할이 전역 관리자인 경우 변경이 필요하지 않습니다. 엔드포인트 보안 관리자가 제공하는 세부 역할을 사용하려면 해당 역할이 제공된 뒤 해당 역할을 할당하세요. Intune의 [새로운 내용](../fundamentals/whats-new.md) 페이지에서 Intune의 최신 릴리스 정보를 확인하세요. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>'Intune용 Adobe Acrobat Reader' 모바일 앱에 대한 업데이트된 지원 정책<!--5746776-->
 8월 말에 MC188653에서 Intune용 Adobe Acrobat Reader 모바일 앱이 2019년 12월 1일에 지원 종료되며, Adobe가 주 Acrobat Reader 앱 내에서 Intune의 앱 보호 정책을 지원하도록 계획 중이라는 소식을 제공했습니다. 그 이후에 IT 관리자가 Intune용 Adobe Acrobat Reader를 대상으로 지정하고 최종 사용자가 Intune용 Adobe Acrobat Reader 사용을 시작할 수 있도록 시간을 좀 더 제공해야 한다는 고객 의견을 받았습니다. 최종 사용자 디바이스에서 Intune용 Adobe Acrobat Reader가 많이 사용되고 있으며 엔터프라이즈 시나리오에서 중요도가 높다고 가정할 경우, 작업 환경이 조직의 앱 보호 요구를 충족하는지 확인하려고 할 것입니다. 
@@ -24,7 +40,7 @@ Acrobat Reader 모바일 앱은 앱 보호 정책을 지원하고 Intune SDK에 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 이 보고 기능이 조직의 하나 이상의 정책이 Intune용 Adobe Acrobat Reader 애플리케이션을 대상으로 하기 때문에 여러분은 앞으로 메시지를 받게 되거나, 이전 EOL 통신을 받았을 수 있습니다. 
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
 최종 사용자와 기술 지원팀에 이 변경 내용을 알립니다. [회사 포털의 지원 정보 기능](../apps/company-portal-app.md#support-information)을 사용하여 Intune 관련 질문에 대한 채널을 설정할 수 있습니다.
 
 #### <a name="additional-information"></a>추가 정보
@@ -37,27 +53,8 @@ Windows Phone 8.1에 대한 Microsoft 일반 지원은 2017년 7월에 종료되
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 2020년 2월 20일 이후에는 이러한 디바이스가 보안 업데이트를 받지 못하며 새 디바이스를 등록할 수 없습니다. 기존 Windows Phone 8.1 디바이스는 계속 등록 상태(정책, 앱, 보고)로 유지되지만, 타사 인증서와 같은 많은 구성 요소가 이미 플랫폼에 대한 지원을 종료했기 때문에 이 날짜 이후에는 기존 등록 문제 해결이 지원되지 않습니다. Intune은 Intune 및 Windows Phone 8.1과의 호환성 테스트를 중지합니다.
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
 Intune 보고를 확인하여 디바이스 또는 사용자가 받을 수 있는 영향에 대해 알아볼 수 있습니다. 디바이스 &gt; 모든 디바이스로 이동하고 OS를 기준으로 필터링합니다. 추가 열에 추가하면 Windows Phone 8.1을 실행하는 디바이스를 가진 조직의 사용자를 식별하는 데 도움이 됩니다. 최종 사용자는 지원되는 OS 버전으로 자신의 디바이스를 업그레이드하도록 요청합니다.
-
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Intune Outlook APP(앱 보호 정책) 업데이트<!--2576686-->
-메시지 센터에서 MC195618을 받은 경우 작업을 수행해야 할 수 있습니다. Microsoft 365 로드맵 기능 ID: 56325 및 56326에서 공지한 대로, Intune 및 iOS 및 Android용 Outlook은 메일 알림과 일정 미리 알림에서 중요한 데이터를 제한하는 기능을 롤아웃 중입니다. 이러한 개선의 결과로 iOS 및 Android용 Outlook은 현재 알림을 관리하는 데 활용하는 여러 데이터 보호 앱 구성 키에 대한 지원을 중단할 예정입니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-새 기능이 아직 제공되지 않지만, 제공될 경우 다음 앱 구성 키가 iOS 및 Android용 Outlook에서 더 이상 작동하지 않습니다.
-- com.microsoft.outlook.Mail.NotificationsEnabled
-- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
-- com.microsoft.outlook.Calendar.NotificationsEnabled
-- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
-이 새로운 기능에 대한 준비로 Intune 앱 보호 정책 데이터 보호 설정 "조직 데이터 알림"을 "조직 데이터 차단" 값으로 구성하는 것이 좋습니다. 2019년 12월 16일부터 iOS 및 Android 용 Outlook은 "조직 데이터 알림" 데이터 보호 설정을 적용하며 더 이상 앞서 언급한 키를 지원하지 않습니다. 이 새로운 설정을 구성하면 위의 구성 키가 더 이상 지원되지 않을 때 중요한 데이터가 유출되지 않습니다. 또한 추가 앱 구성 설정인 "일정 알림"을 사용하여 데이터 보호 설정인 "조직 데이터 알림"을 "조직 데이터 차단"으로 설정하면 Outlook에서 추가 세분성을 제공합니다. 앱 보호 정책 설정과 이 앱 구성 설정의 조합은 메일 알림에서 중요한 정보를 제한하는 동시에 일정 알림에 중요한 정보를 노출하여 사용자가 알림 또는 알림 센터를 빠르게 훑어보고 회의에 참석할 수 있습니다.
-
-#### <a name="additional-information"></a>추가 정보
-APP 설정 및 Outlook 설정에 대한 자세한 내용은 다음을 참조하세요.
-- [앱 보호 정책 설정, Android](../apps/app-protection-policy-settings-android.md)
-- [앱 보호 정책 설정, iOS](../apps/app-protection-policy-settings-ios.md)
-- [iOS 및 Android용 Outlook 앱 구성 설정 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 변경 계획: Windows 10, 버전 1703 회사 포털 지원 종료<!--5026679-->
@@ -66,7 +63,7 @@ Windows 10, 버전 1703(Windows 10, RS2라고도 함)은 2019년 10월 8일 자�
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 앞으로 이 버전의 회사 포털 앱에 새 기능이 표시되지는 않지만, 2019년 12월 26일까지 필요에 따라 회사 포털 앱에 대한 보안 업데이트 제공을 포함하여 이 회사 포털 앱 버전을 계속 지원합니다. 그러나 서비스 중단 이후에는 Windows 10, 버전 1703이 보안 업데이트를 받지 못하므로 새로운 기능 및 추가 기능을 계속 제공받을 수 있도록 Windows 디바이스를 보다 최신의 Windows 버전으로 업데이트하고 최신 회사 포털 앱을 사용하는 것이 좋습니다.
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
 수행할 단계는 환경 구성에 따라 달라집니다. 일반적으로 이전 버전의 OS 및/또는 회사 포털이 설치된 디바이스를 식별하여 업데이트해야 합니다. Windows 10 업데이트 링을 설정하려면 Intune -> 소프트웨어 업데이트 – Windows 10 업데이트 링에 로그인합니다. 최신 버전의 회사 포털은 버전 10.3.5601.0입니다. 사용자에게 향후 릴리스로 최신 상태를 유지할 수 있게 Microsoft Store에서 최신 버전을 다운로드하도록 지시하세요. Intune을 사용하여 [비즈니스용 Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business)를 통해 Windows 디바이스에 최신 버전을 설치할 수도 있습니다.
 
 #### <a name="additional-information"></a>추가 정보
@@ -81,7 +78,7 @@ Windows 10, 버전 1703(Windows 10, RS2라고도 함)은 2019년 10월 8일 자�
 
 2020년 3월 31일로 Azure 콘솔에서 Intune Managed Browser가 제거됩니다. 즉, 더 이상 Intune Managed Browser에 대한 새 정책을 만들 수 없습니다. 기존 Intune Managed Browser 정책은 영향을 받지 않습니다. Intune Managed Browser는 콘솔에서 아이콘이 없는 LOB 앱으로 표시되고, 기존 정책은 이 앱을 대상으로 하는 것으로 계속 표시됩니다. 이 시점에서 앱 보호 정책의 데이터 보호 섹션 내에서 Intune Managed Browser 웹 콘텐츠를 리디렉션하는 옵션도 제거됩니다.  
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요? 
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요? 
 Intune Managed Browser에서 Microsoft Edge로 원활하게 전환하려면 다음 단계를 사전에 수행하는 것이 좋습니다. 
 
 1. 앱 보호 정책(MAM이라고도 함) 및 앱 구성 설정의 대상으로 iOS 및 Android용 Microsoft Edge를 지정합니다. 기존 정책의 대상을 Microsoft Edge로 지정하면 Intune Managed Browser 정책을 Microsoft Edge에 다시 사용할 수 있습니다.  
@@ -102,7 +99,7 @@ Intune의 11월 또는 1911 릴리스에서는 Android Enterprise 전용 디바�
 - 새로운 Android 엔터프라이즈 전용 디바이스를 등록하는 경우: 등록하는 동안 최종 사용자에게 디바이스에 대한 여러 단계가 표시됩니다. 등록은 현재와 같은 방식(QR, NFC, Zero-touch 또는 디바이스 식별자 사용)으로 계속 시작되지만 11월 서비스 릴리스 이후에는 필수 앱 설치 단계가 있습니다.
 - 전용 디바이스로 등록된 기존 Android 디바이스의 경우: Intune은 11월 초부터 디바이스에 Microsoft Intune 앱을 자동으로 설치합니다. 사용자는 아무 작업도 수행할 필요가 없습니다. 해당 앱이 자동으로 다운로드되고 디바이스에 설치됩니다. 
 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변화를 위해 무엇을 준비할 수 있나요?
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
 최종 사용자 지침 업데이트를 계획하고 이 변경 내용을 지원 센터에 알려야 합니다. 자세한 내용 및 스크린샷을 보려면 추가 정보를 클릭하세요. 이 변경 내용이 롤아웃될 때 새로운 기능 페이지가 업데이트됩니다.
 
 #### <a name="additional-information"></a>추가 정보
@@ -129,7 +126,7 @@ Google의 이러한 변경으로 인해 Intune 사용자는 다음과 같은 방
         > [!NOTE]
         > 이러한 문제는 Android 10 이상의 디바이스 관리자 관리형 디바이스에만 영향을 주고 Android Enterprise로 관리되는 디바이스에는 영향을 주지 않습니다. 
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
 Q3 CY2020에 제공될 기능 감소를 피하려면 다음을 수행하는 것이 좋습니다.
 - 새 디바이스를 디바이스 관리자 관리에 온보딩하지 마세요.
 - 디바이스에 Android 10에 대한 업데이트가 수신될 예정인 경우, 디바이스 관리자 관리에서 Android Enterprise 관리 및/또는 앱 보호 정책으로 마이그레이션합니다.
@@ -155,7 +152,7 @@ Android용 SDK 또는 앱을 사용하고 있지 않거나 향후 사용할 예�
 - Samsung GT-I9305
 - Samsung SM-T231
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
 최신 Intune 앱 SDK를 사용하여 앱을 래핑합니다. 사용자가 개인 디바이스의 최종 사용자에게 업그레이드할 것을 알리도록 "최소 OS 버전 필요(경고만)" 조건부 시작 설정을 지정할 수도 있습니다.
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Intune 변경 계획: Windows 7에 대한 지원이 거의 종료<!-- 3042987 -->
@@ -166,7 +163,7 @@ Android용 SDK 또는 앱을 사용하고 있지 않거나 향후 사용할 예�
 
 PC 관리 기능은 Windows 10 운영 체제에 직접 구축되므로 Windows 7용 Intune 소프트웨어 클라이언트와 같은 클라이언트 에이전트를 더 이상 설치할 필요가 없습니다. Windows 8.1부터 Microsoft는 MDM(모바일 장치 관리) 아키텍처를 사용하여 Windows PC를 프로비전, 구성, 업데이트 및 관리합니다. Intune을 설정하면 MDM 채널을 통해 [Windows 10 PC를 Intune에 등록](..\windows-enroll.md)함으로써 Windows 등록을 간소화할 수 있습니다. 이러한 "에이전트 없는" MDM 관리 솔루션을 사용하여 Windows 10 PC를 관리하는 것이 좋습니다.
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대해 준비하려면 어떻게 해야 하나요?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
 조직 차원에서 이 작업 계획을 즉시 고려하는 것이 좋습니다.
 
 - 2020년 1월 14일 이전에 Windows 7 제품군을 Windows 10으로 업그레이드하는 계획을 세우세요.

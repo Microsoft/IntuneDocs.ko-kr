@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune의 디바이스 기능 및 설정 | Microsoft Docs
-description: 다양한 Microsoft Intune 디바이스 프로필의 개요입니다. 기능, 제한 사항, 메일, wifi, VPN, 교육, 인증서, Windows 10 업그레이드, BitLocker 및 Microsoft Defender, Windows Information Protection, 관리 템플릿 및 Azure Portal에서 사용자 지정 디바이스 구성 설정에 대한 정보를 확인합니다. 이러한 프로필을 사용하여 회사의 디바이스와 데이터를 관리하고 보호합니다.
+description: 다양한 Microsoft Intune 디바이스 프로필의 개요입니다. 기능, 제한 사항, 이메일, Wi-fi, VPN, 교육, 인증서, Windows 10 업그레이드, BitLocker 및 Microsoft Defender, Windows Information Protection, 관리 템플릿, Microsoft 엔드포인트 관리자 관리 센터의 사용자 지정 디바이스 구성 설정에 대한 정보를 확인합니다. 이러한 프로필을 사용하여 회사의 디바이스와 데이터를 관리하고 보호합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
+ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74694950"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206621"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필을 사용하여 디바이스에서 기능 및 설정 적용
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune은 조직 내의 다른 디바이스에서 사용하거나 사용하지 않게 할 수 있는 설정 및 기능을 포함합니다. 이러한 설정 및 기능을 "구성 프로필"에 추가합니다. iOS, Android 및 Windows를 포함하여 다양한 디바이스 및 플랫폼에 대한 프로필을 만들 수 있습니다. 그런 다음, Intune을 사용하여 디바이스에 프로필을 적용 또는 “할당”합니다.
 
@@ -143,7 +143,7 @@ DFCI([디바이스 펌웨어 구성 인터페이스](device-firmware-configurati
 - Windows Phone 8.1
 - Windows 10 이상
 
-## <a name="endpoint-protection"></a>Endpoint Protection
+## <a name="endpoint-protection"></a>엔드포인트 보호
 
 [Windows 10에 대한 Endpoint Protection 설정](../protect/endpoint-protection-windows-10.md)은 Windows 10 디바이스에 대한 BitLocker 및 Microsoft Defender 설정을 구성합니다.
 

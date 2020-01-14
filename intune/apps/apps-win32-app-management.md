@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
+ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564034"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622530"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 독립 실행형 - Win32 앱 관리
 
@@ -328,6 +328,9 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 
 Windows 10 1709 이상 클라이언트는 Windows 10 클라이언트의 전송 최적화 구성 요소를 사용하여 Intune Win32 앱 콘텐츠를 다운로드합니다. 배달 최적화는 기본적으로 켜져 있는 피어 투 피어 기능을 제공합니다. 전송 최적화는 그룹 정책 및 Intune 디바이스 구성을 통해 구성할 수 있습니다. 자세한 내용은 [Windows 10 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)를 참조하세요. 
 
+> [!NOTE]
+> Intune Win32 앱 콘텐츠를 캐시하기 위해 Configuration Manager 배포 지점에 Microsoft Connected 캐시 서버를 설치할 수 있습니다. 자세한 내용은 [Configuration Manager의 Microsoft Connected Cache-Intune Win32 앱 지원](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune)을 참조하세요.
+
 ## <a name="install-required-and-available-apps-on-devices"></a>디바이스에 사용 가능한 필수 앱 설치
 
 최종 사용자는 사용 가능한 필수 앱 설치에 대한 Windows 알림 메시지를 받게 됩니다. 다음 이미지는 디바이스가 다시 시작될 때까지 앱 설치가 완료되지 않았다는 알림 메시지를 나타낸 것입니다. 
@@ -375,7 +378,7 @@ Win32 앱에 대한 시작 시간 및 최종 기한 시간을 구성할 수 있�
 > Win32 앱에 설치된 Intune 관리 확장은 등록되지 않은 디바이스에서 제거되지 않습니다. 관리자는 할당 제외를 활용하여 Win32 앱을 BYOD 디바이스에 제공하지 않을 수 있습니다.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 앱 문제 해결
-클라이언트 컴퓨터에 대한 에이전트 로그는 일반적으로 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`에 있습니다. `CMTrace.exe`를 이용하여 이러한 로그 파일을 볼 수 있습니다. *CMTrace.exe*는 [Configuration Manager 클라이언트 도구](https://docs.microsoft.com/sccm/core/support/tools)에서 다운로드할 수 있습니다. 
+클라이언트 컴퓨터에 대한 에이전트 로그는 일반적으로 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`에 있습니다. `CMTrace.exe`를 이용하여 이러한 로그 파일을 볼 수 있습니다. 자세한 내용은 [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace)를 참조하세요.
 
 ![클라이언트 컴퓨터의 에이전트 로그 스크린샷](./media/apps-win32-app-management/apps-win32-app-10.png)    
 

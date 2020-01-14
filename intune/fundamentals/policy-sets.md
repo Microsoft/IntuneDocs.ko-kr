@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e539f44fc9c9b4e7382368c0f3ad9f79bb1c98b1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585659"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206128"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>정책 세트를 사용하여 관리 개체 컬렉션 그룹화
 
@@ -56,8 +56,8 @@ ms.locfileid: "72585659"
 
 ## <a name="how-to-create-a-policy-set"></a>정책 세트를 만드는 방법
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **Intune** 블레이드에서 **정책 세트** > **정책 세트** > **만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스** > **정책 세트** > **정책 세트** > **만들기**를 선택합니다.
 3. **기본 사항** 페이지에서 다음 값을 추가합니다.
     - **정책 세트 이름** - 이 정책 세트의 이름을 제공합니다.
     - **설명** - 필요에 따라 정책 세트에 대한 설명을 제공합니다.

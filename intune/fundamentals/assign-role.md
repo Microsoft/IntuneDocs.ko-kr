@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9e337d47757e3c5507c94433f90d5c2863bc1b0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503016"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207165"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Intune 사용자에게 역할 할당
 
@@ -32,27 +32,23 @@ Intune 사용자에게 [기본 제공](role-based-access-control.md#built-in-rol
 - **전역 관리자**
 - **Intune 서비스 관리자**
 
-1. 로그인은 [Azure 포털](https://portal.azure.com)합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **역할** > **모든 역할**을 선택합니다.
 
-2. **모든 서비스** > **Intune**을 선택합니다. Intune은 **모니터링 + 관리** 섹션에 있습니다.
+2. **Intune 역할 - 모든 역할** 블레이드에서 할당할 기본 제공 역할을 선택합니다.
 
-3. **Intune** 블레이드에서 **역할** > **모든 역할**을 선택합니다.
+3. <역할 이름> - **개요** 블레이드에서 **관리** > **할당**을 선택합니다.
 
-4. **Intune 역할 - 모든 역할** 블레이드에서 할당할 기본 제공 역할을 선택합니다.
+4. 사용자 지정 역할 블레이드에서 **할당**을 선택합니다.
 
-5. <역할 이름> - **개요** 블레이드에서 **관리** > **할당**을 선택합니다. 
+5. **역할 할당** 블레이드에서 할당에 대한 **할당 이름** 및 선택적 **할당 설명**을 입력합니다.
 
-6. 사용자 지정 역할 블레이드에서 **할당**을 선택합니다.
+6. **구성원(그룹)** 의 경우, 사용 권한을 부여할 사용자가 포함된 그룹을 선택합니다.
 
-7. **역할 할당** 블레이드에서 할당에 대한 **할당 이름** 및 선택적 **할당 설명**을 입력합니다.
+7. **범위(그룹)** 의 경우, 위의 구성원이 관리할 수 있는 사용자/디바이스를 포함하는 그룹을 선택합니다.
 
-8. **구성원(그룹)** 의 경우, 사용 권한을 부여할 사용자가 포함된 그룹을 선택합니다.
+8. **범위(태그)** 의 경우, 이 역할 할당을 적용할 태그를 선택합니다.
 
-9. **범위(그룹)** 의 경우, 위의 구성원이 관리할 수 있는 사용자/디바이스를 포함하는 그룹을 선택합니다.
-
-10. **범위(태그)** 의 경우, 이 역할 할당을 적용할 태그를 선택합니다.
-
-11. 작업이 완료되면 **확인**을 선택합니다. 새 할당이 할당 목록에 표시됩니다.
+9. 작업이 완료되면 **확인**을 선택합니다. 새 할당이 할당 목록에 표시됩니다.
 
 
 ## <a name="next-steps"></a>다음 단계

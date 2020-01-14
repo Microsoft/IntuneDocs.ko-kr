@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f290370dd6ec05677a7073d9ca3edd854c9aa5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505578"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692155"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>삼성 Knox 모바일 등록을 사용하여 Android 디바이스 자동 등록
 
@@ -68,14 +68,14 @@ KME를 사용하여 Intune에 등록하려면 먼저 다음 단계에 따라 삼
 |설명        | 아니요        |프로필을 설명하는 텍스트를 입력합니다. 
 |MDM 에이전트 APK      | 예       |https://aka.ms/intune_kme_deviceowner 
 |이 앱을 Google 디바이스 소유자로 사용 | 예 | Android 엔터프라이즈에 등록하려면 이 옵션을 선택합니다. 
-|지원되는 MDM      | 예       |Microsoft Intune 
+|지원되는 MDM      | 예       |Microsoft Intune 
 |모든 시스템 앱을 사용하도록 설정된 상태로 유지 | 아니요 | 모든 앱을 사용하도록 설정하고 프로필에 사용할 수 있도록 하려면 이 옵션을 선택합니다. 이 옵션을 선택하지 않으면 매우 제한된 시스템 앱 집합만 디바이스의 앱 트레이에 표시됩니다. 이메일 앱과 같은 앱은 숨겨져 있습니다. 
 |사용자 지정 JSON        | 아니요        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Intune 등록 토큰 문자열 입력"}. [등록 프로필을 만드는 방법](android-kiosk-enroll.md)을 알아보세요. 
 | 법적 계약 추가 | 아니요 | 이 필드를 비워 둡니다. 
 
 ### <a name="for-android"></a>Android의 경우
 
-단계별 지침은 [Samsung Knox Profile Setup Wizard](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm)(삼성 Knox 프로필 설정 마법사) 지침을 참조하세요.
+단계별 지침은 [삼성 프로필 만들기](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm) 지침을 참조하세요.
 
 | MDM 프로필 필드| 필수 여부 | 값 |
 |-------------------|-----------|-------|
@@ -120,7 +120,7 @@ MDM 프로필을 만들고 할당하고, 사용자 이름을 연결하고, Intun
 
 여전히 도움이 필요하세요? 전체 [KME 사용자 가이드](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)를 확인하세요.
 
-## <a name="frequently-asked-questions"></a>질문과 대답
+## <a name="frequently-asked-questions"></a>자주 묻는 질문
 
 - **디바이스 소유자 지원:**  - **디바이스 소유자 지원:** Intune은 KME 포털을 사용하여 전용 및 완전 관리형 디바이스 등록을 지원합니다. Intune에서 사용할 수 있게 되면 다른 Android 엔터프라이즈 디바이스 소유자 모드가 지원됩니다.
 

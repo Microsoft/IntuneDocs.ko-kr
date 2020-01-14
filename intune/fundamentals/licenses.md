@@ -16,17 +16,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d7b8d96ae1582b5cb434c80d44ef55a31c4781b
-ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
+ms.openlocfilehash: 23708968ac229c2721635d9fc31527558e9bd3d2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882290"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547483"
 ---
 # <a name="microsoft-intune-licensing"></a>Microsoft Intune 라이선스
-Microsoft Intune은 학교와 소규모 비즈니스를 위한 사용이 간단한 관리 경험부터 엔터프라이즈 고객에게 필요한 고급 기능까지, 다양한 고객 요구 사항 및 조직 규모를 위해 제공됩니다. Microsoft Intune이 포함된 대부분의 라이선스에서는 구독이 활성 상태인 한 System Center Configuration Manager를 사용할 수 있는 권리도 제공합니다. 
+Microsoft Intune은 학교와 소규모 비즈니스를 위한 사용이 간단한 관리 경험부터 엔터프라이즈 고객에게 필요한 고급 기능까지, 다양한 고객 요구 사항 및 조직 규모를 위해 제공됩니다. Microsoft Intune이 포함된 대부분의 라이선스에서는 구독이 활성 상태인 한 Microsoft Endpoint Configuration Manager를 사용할 수 있는 권리도 제공합니다. 
 
-## <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-intune"></a>Microsoft Intune
 Intune은 다음과 같은 라이선스에 포함되어 있습니다.
 
 - Microsoft 365 E5

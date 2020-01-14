@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505207"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547542"
 ---
 # <a name="create-a-design"></a>설계 만들기
 
@@ -84,7 +84,7 @@ Intune 설계는 [이 가이드의 다른 섹션](../planning-guide.md)을 완�
 
   - PC 및 서버 환경을 어떻게 관리하고 있나요?
 
-  - System Center Configuration Manager를 사용 중인가요? 타사 시스템 관리 플랫폼을 사용하고 있나요?
+  - Microsoft Endpoint Configuration Manager를 사용하고 있나요? 타사 시스템 관리 플랫폼을 사용하고 있나요?
 
 - **VPN 솔루션**
 
@@ -101,7 +101,7 @@ Intune 설계는 [이 가이드의 다른 섹션](../planning-guide.md)을 완�
 | **SharePoint** | SharePoint 온-프레미스 | SharePoint Online으로 이동할 계획 없음 |  
 | **현재 MDM** | Exchange ActiveSync |  |
 | **인증서 솔루션** | Microsoft Server 2012 R2, AD 인증서 서비스 | 웹 사이트 서버에 PKI만 사용 |
-| **시스템 관리** | System Center Configuration Manager CB 1606 | Intune 하이브리드 솔루션을 조사하려 함 |
+| **시스템 관리** | Configuration Manager CB 1606 | Intune 하이브리드 솔루션을 조사하려 함 |
 | **VPN 솔루션** | Cisco AnyConnect |  |
 
 
@@ -109,7 +109,7 @@ Intune 설계는 [이 가이드의 다른 섹션](../planning-guide.md)을 완�
 
 ## <a name="choose-an-intune-deployment-option"></a>Intune 배포 옵션 선택
 
-Intune은 두 가지 배포 옵션 즉, 독립 실행형 및 하이브리드를 제공합니다. 독립 실행형은 클라우드에서 실행되는 Intune 서비스를 나타내며, 하이브리드는 Intune과 System Center Configuration Manager의 통합을 나타냅니다. 이 가이드는 주로 독립 실행형 옵션에 사용합니다. [어떤 옵션이 비즈니스 요구 사항에 적합한지 결정](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)하세요.
+Intune은 두 가지 배포 옵션 즉, 독립 실행형 및 하이브리드를 제공합니다. 독립 실행형은 클라우드에서 실행되는 Intune 서비스를 나타내며, 하이브리드는 Intune과 Configuration Manager의 통합을 나타냅니다. 이 가이드는 주로 독립 실행형 옵션에 사용합니다. [어떤 옵션이 비즈니스 요구 사항에 적합한지 결정](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)하세요.
 
 > [!Important]
 >새 하이브리드 MDM 고객의 온보딩은 더 이상 사용되지 않습니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리에서 Azure의 Intune으로 이동](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) 블로그 게시물을 참조하세요.

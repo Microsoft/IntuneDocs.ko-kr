@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261607"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303071"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>사용자 및 디바이스를 구성하기 위한 그룹 추가
 
@@ -47,7 +47,7 @@ Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사
 
 3. **그룹 유형**에서 다음 옵션 중 하나를 선택합니다.
 
-    - **보안**: 보안 그룹은 리소스에 액세스할 수 있는 사용자를 정의하며, Intune의 그룹에 권장됩니다. 예를 들어, **모든 Charlotte 직원** 또는 **Contoso의 모든 여성** 등의 사용자 그룹을 만들 수 있습니다. **모든 iOS 디바이스** 또는 **모든 Windows 10 학생용 디바이스** 등의 디바이스 그룹도 만들 수 있습니다.
+    - **보안**: 보안 그룹은 리소스에 액세스할 수 있는 사용자를 정의하며, Intune의 그룹에 권장됩니다. 예를 들어, **모든 Charlotte 직원** 또는 **원격 작업자** 등의 사용자 그룹을 만들 수 있습니다. **모든 iOS 디바이스** 또는 **모든 Windows 10 학생용 디바이스** 등의 디바이스 그룹도 만들 수 있습니다.
 
         > [!TIP]
         > 만든 사용자 및 그룹은 [Microsoft 365 관리 센터](https://admin.microsoft.com), Azure Active Directory 관리 센터 및 [Azure Portal의 Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에도 표시될 수 있습니다. 조직 테넌트에서 이러한 모든 영역에서 그룹을 만들고 관리할 수 있습니다.
@@ -85,7 +85,7 @@ Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사
 > - 모든 Android 엔터프라이즈 디바이스
 > - 모든 iOS 11 이하 디바이스
 > - Marketing
-> - 인사
+> - 인적 자원
 > - 모든 Charlotte 직원
 > - 모든 WA 직원
 

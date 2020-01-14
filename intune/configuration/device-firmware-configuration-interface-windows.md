@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1d07066bcd599dc0cdbaf8fcf90ac1ee76be45fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059600"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206689"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Microsoft Intune에서 Windows 디바이스에 디바이스 펌웨어 구성 인터페이스 프로필 사용(공개 미리 보기)
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 DFCI(디바이스 펌웨어 구성 인터페이스)를 사용하여 등록된 후 UEFI(BIOS) 설정을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [DFCI 개요](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/)를 참조하세요.
 
@@ -54,7 +54,7 @@ Intune에서 이 기능을 사용하여 BIOS 설정을 제어합니다. 일반�
 
 ## <a name="create-your-azure-ad-security-groups"></a>Azure AD 보안 그룹 만들기
 
-Autopilot 배포 프로필은 Azure AD 보안 그룹에 할당됩니다. DFCI 지원 디바이스를 포함하는 그룹을 만들어야 합니다. DFCI 디바이스의 경우 대부분의 조직에서는 사용자 그룹 대신 디바이스 그룹을 만들 수 있습니다. 다음과 같은 시나리오를 가정해 보겠습니다.
+Autopilot 배포 프로필은 Azure AD 보안 그룹에 할당됩니다. DFCI 지원 디바이스를 포함하는 그룹을 만들어야 합니다. DFCI 디바이스의 경우 대부분의 조직에서는 사용자 그룹 대신 디바이스 그룹을 만들 수 있습니다. 다음 시나리오를 고려하세요.
 
 - HR(인사 관리)에는 다양한 Windows 디바이스가 있습니다. 보안상의 이유로 이 그룹의 모든 사용자가 디바이스에서 카메라를 사용할 수 없도록 합니다. 이 시나리오에서는 디바이스 유형과 관계없이 HR 그룹의 사용자에게 정책이 적용되도록 HR 보안 사용자 그룹을 만들 수 있습니다.
 - 제조 공간에는 10개의 디바이스가 있습니다. 모든 디바이스에서 USB 디바이스를 통해 디바이스를 부팅하지 못하도록 합니다. 이 시나리오에서는 보안 디바이스 그룹을 만들고 이 10개의 디바이스를 그룹에 추가할 수 있습니다.

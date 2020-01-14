@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b17b87462b2c73e265f062c33a06a810e7c58bf8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cfa2c5366d1b38cf819cfc68840a29fad9002979
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504337"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548105"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune의 데이터 보안 및 공유
 
@@ -68,11 +68,11 @@ Microsoft 에이전트 역할을 하는 모든 타사는 [온라인 서비스 �
 - [Google이 Intune에 보내는 데이터](data-google-sends-to-intune.md)
 - [Intune에 보내는 데이터 Jamf Pro](data-jamf-sends-to-intune.md)
 
-### <a name="system-center-configuration-manager-data-sharing"></a>System Center Configuration Manager 데이터 공유
+### <a name="microsoft-endpoint-configuration-manager-data-sharing"></a>Microsoft Endpoint Configuration Manager 데이터 공유
 
-Microsoft Intune은 System Center Configuration Manager와 데이터를 공유하지 않습니다. System Center Configuration Manager는 고객이 직접 배포하고, 관리하고, 운영하는 온-프레미스 제품입니다. Configuration Manager에서 수집하는 진단 및 사용 현황 데이터는 향후 릴리스의 설치 환경, 품질 및 보안을 개선하기 위해서만 사용됩니다.
+Microsoft Intune은 Configuration Manager와 데이터를 공유하지 않습니다. Configuration Manager는 고객이 직접 배포, 관리, 운영하는 온-프레미스 제품입니다. Configuration Manager에서 수집하는 진단 및 사용 현황 데이터는 향후 릴리스의 설치 환경, 품질 및 보안을 개선하기 위해서만 사용됩니다.
 
-자세한 내용은 [SCCM의 진단 및 사용량 현황 데이터](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요. 
+자세한 내용은 [Configuration Manager용 진단 및 사용량 데이터](https://docs.microsoft.com/configmgr/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요. 
 
 
 ## <a name="next-steps"></a>다음 단계

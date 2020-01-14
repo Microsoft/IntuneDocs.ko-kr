@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563393"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206910"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>자습서: EMM 및 앱 구성에 Intune을 사용하도록 Slack 구성
 
@@ -48,32 +48,31 @@ Intune 구독이 없으면 [평가판 계정에 등록](../fundamentals/free-tri
 [Slack의 지침](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm)에 따라 Slack Enterprise Grid 플랜에 대해 EMM을 켜고 Grid 플랜의 IDP(ID 공급자)로 [Azure Active Directory를 연결](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial)합니다.
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
-[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 글로벌 관리자 또는 Intune 서비스 관리자로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
+전역 관리자 또는 Intune 서비스 관리자로 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>iOS 디바이스에서 EMM용 Slack 설정
 iOS 앱 EMM용 Slack을 Intune 테넌트에 추가하고 앱 구성 정책을 만들어 조직의 iOS 사용자가 Intune을 EMM 공급자로 사용하여 Slack에 액세스할 수 있도록 합니다.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Intune에 EMM용 Slack 추가
 Intune에서 EMM용 Slack을 관리 iOS 앱으로 추가하고 Slack 사용자를 할당합니다. 앱은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 Intune 앱을 따로 추가해야 합니다.
-1. Intune에서 **앱** > **모든 앱** > **추가**를 선택합니다.
-2. 앱 유형에서  **- iOS**를 선택합니다.
-3. **앱 스토어 검색**을 선택합니다. 검색어 “EMM용 Slack”을 입력하고 앱을 선택합니다.
-4. **앱 정보**를 필요에 따라 변경 내용을 구성합니다.
-5. **추가**를 선택합니다.
-6. 검색 창에 “EMM용 Slack”을 입력하고 방금 추가한 앱을 선택합니다.
-7. 관리에서 **할당**을 선택합니다.
-8. **그룹 추가**를 선택합니다. Slack에 대해 EMM을 켤 때 영향을 받도록 선택한 사용자에 따라 **할당 유형**에서 다음을 선택할 수 있습니다.
+1. 관리 센터에서 **앱** > **모든 앱** > **추가**를 선택합니다.
+2. **앱 유형**에서 **iOS** 스토어 앱을 선택합니다.
+3. **앱 스토어 검색**을 선택합니다. 검색어 “EMM용 Slack”을 입력하고 앱을 선택합니다. **App Store에서 검색** 창에서 **선택**을 클릭합니다.
+4. **앱 정보**를 필요에 따라 변경 내용을 구성합니다. **OK**를 선택해 앱 정보를 설정합니다.
+5. **추가**를 클릭합니다.
+6. **할당**을 선택합니다.
+7. **작업 추가**를 클릭합니다. Slack에 대해 EMM을 켤 때 영향을 받도록 선택한 사용자에 따라 **할당 유형**에서 다음을 선택할 수 있습니다.
     - **등록된 디바이스에 사용 가능** - “All members (including guests)”(모든 구성원(게스트 포함)를 선택한 경우
     - **등록 유무에 상관없이 사용 가능** - “All members (excluding guests)”(모든 구성원(게스트 제외)) 또는 “선택 사항”을 선택한 경우
-9. **포함된 그룹**을 선택하고 이 앱을 모든 사용자가 사용할 수 있도록 설정에서 **예**를 선택합니다.
-10. **확인**을 클릭한 다음 **확인**을 다시 클릭합니다.
-11. **저장**을 클릭합니다.
+8. **포함된 그룹**을 선택하고 **이 앱을 모든 사용자가 사용할 수 있도록 설정**에서 **네**를 선택합니다.
+9. **확인**을 클릭한 다음 **확인**을 다시 클릭해 그룹을 추가합니다.
+10. **저장**을 클릭합니다.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>EMM용 Slack을 위한 앱 구성 정책 추가
 EMM iOS용 Slack을 위한 앱 구성 정책을 추가합니다. 관리 디바이스의 앱 구성 정책은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 정책을 따로 추가해야 합니다.
-1. Intune에서 **앱** > **앱 구성 정책** > **추가**를 선택합니다.
-2. 이름에 Slack 앱 구성 정책 테스트를 입력합니다.
-3. 디바이스 등록 유형에서 **관리 디바이스**를 선택합니다.
+1. 관리 센터에서 **앱** > **앱 구성 정책** > **추가** > **관리 디바이스**를 선택합니다.
+2. 이름에 ‘Slack 앱 구성 정책 테스트’를 입력합니다.
+3. 디바이스 등록 유형에서 **관리 디바이스**가 선택되었는지 확인합니다.
 4. 플랫폼에서 **iOS**를 선택합니다.
 5. **연결된 앱**을 선택합니다.
 6. 검색 창에 “EMM용 Slack”을 입력하고 앱을 선택합니다.
@@ -86,7 +85,7 @@ EMM iOS용 Slack을 위한 앱 구성 정책을 추가합니다. 관리 디바�
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(선택 사항) iOS 디바이스 준수 정책 만들기
 Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태로 간주하기 위해 충족해야 하는 조건을 설정합니다. 이 자습서에서는 iOS 디바이스의 디바이스 준수 정책을 만듭니다. 준수 정책은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 정책을 따로 만들어야 합니다.
-1. Intune에서 **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
+1. 관리 센터에서 **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
 2. 이름에 “iOS 준수 정책 테스트”를 입력합니다.
 3. 설명에 “iOS 준수 정책 테스트”를 입력합니다.
 4. 플랫폼에서 **iOS**를 선택합니다.

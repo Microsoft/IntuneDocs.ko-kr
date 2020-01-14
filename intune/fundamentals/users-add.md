@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b25b761b3857fdf91bbbe827d288d09e350a1a7a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415017"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206094"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Intune에 사용자 추가 및 관리 권한 부여
 
@@ -57,22 +57,20 @@ ms.locfileid: "73415017"
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Azure Portal에서 Intune 사용자 추가
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **사용자** > **모든 사용자**를 선택합니다.
-3. 관리 센터에서 **새로운 사용자**를 선택합니다.
-   ![새 사용자 스크린샷](./media/users-add/intune-add-user.png)
-4. 다음 사용자 정보를 지정합니다.
+1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **사용자** > **모든 사용자**를 선택합니다.
+2. 관리 센터에서 **새로운 사용자**를 선택합니다.
+3. 다음 사용자 정보를 지정합니다.
    - **이름**
-   - **사용자 이름** - Azure Active Directory 포털의 새 이름 ![이름 및 사용자 이름 추가하는 스크린샷](./media/users-add/intune-add-user-info.png) **확인**을 선택하여 계속합니다.
-5. 필요에 따라 다음과 같은 사용자 속성을 지정할 수 있습니다.
+   - **사용자 이름** - Azure Active Directory 포털의 새 이름 ![이름 및 사용자 이름 추가하는 스크린샷](./media/users-add/intune-add-user-info.png)**확인**을 선택하여 계속합니다.
+4. 필요에 따라 다음과 같은 사용자 속성을 지정할 수 있습니다.
    - **프로필** - **직위** 및 **부서**를 비롯한 작업 정보
    - **그룹** - 사용자에 대해 추가할 그룹 선택
    - **디렉터리 역할** -사용자에게 Intune 서비스 관리자 역할을 포함한 관리 권한을 부여합니다.
 
    **만들기**를 선택하여 Intune에 새 사용자를 추가합니다.
-6. **프로필**을 선택한 다음 새 사용자의 **사용 위치**를 선택합니다. 새 사용자에게 Intune 라이선스를 할당하려면 사용 위치가 필요합니다. **저장**을 선택하여 계속합니다.
+5. **프로필**을 선택한 다음 새 사용자의 **사용 위치**를 선택합니다. 새 사용자에게 Intune 라이선스를 할당하려면 사용 위치가 필요합니다. **저장**을 선택하여 계속합니다.
     ![사용 위치의 스크린샷](./media/users-add/intune-add-user-loc.png)
-7. **라이선스**를 선택한 다음 **할당**을 선택하여 이 사용자에게 Intune 라이선스를 할당합니다. 디바이스를 등록하거나 회사 리소스에 액세스하려면 Intune 라이선스가 필요합니다. **제품**을 선택하고 라이선스 형식을 선택한 다음 **선택**, **할당**을 차례로 선택합니다.
+6. **라이선스**를 선택한 다음 **할당**을 선택하여 이 사용자에게 Intune 라이선스를 할당합니다. 디바이스를 등록하거나 회사 리소스에 액세스하려면 Intune 라이선스가 필요합니다. **제품**을 선택하고 라이선스 형식을 선택한 다음 **선택**, **할당**을 차례로 선택합니다.
 
 ## <a name="grant-admin-permissions"></a>관리자 권한 부여
 

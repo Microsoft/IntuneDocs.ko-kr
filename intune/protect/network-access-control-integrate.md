@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b2083a493fd723c649bdfe2b709dbaa4c0ec663
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: baeece091358a7cd05f0d1f8db7c0032870fc262
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810269"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207097"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Intune과 NAC(네트워크 액세스 제어) 통합
 
 Intune은 디바이스가 온-프레미스 리소스에 액세스하려고 할 때 조직이 회사 데이터를 보호할 수 있도록 네트워크 액세스 제어 파트너와 통합됩니다.
+
+>[!IMPORTANT]
+> NAC는 현재 Android 엔터프라이즈 완전 관리형 또는 Android 엔터프라이즈 전용 디바이스를 지원하지 않습니다.
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune 및 NAC 솔루션은 조직 리소스를 어떻게 보호하나요?
 
