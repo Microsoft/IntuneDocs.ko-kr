@@ -2,33 +2,33 @@
 title: 가져온 PFX 인증서를 Microsoft Intune에서 사용 - Azure | Microsoft Docs
 description: 가져온 PKCS(Public Key Cryptography Standards) 인증서를 Microsoft Intune에서 사용합니다. 여기에는 인증서 가져오기, 인증서 템플릿 구성, Intune 가져온 PFX 인증서 커넥터 설치, 가져온 PKCS 인증서 프로필 만들기가 포함됩니다.
 keywords: ''
-author: ralms
+author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: lacranda
+ms.reviewer: lacranda; rimarram
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d54c58523fdb44080b6c4210d639f9ad0ce476e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801540"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886031"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>가져온 PKCS 인증서를 Intune을 사용하여 구성 및 사용
 
 Microsoft Intune은 주로 이메일 프로필을 이용한 S/MIME 암호화에 사용하는, 가져온 공개 키 쌍 (PKCS) 인증서 사용을 지원합니다. Intune의 특정 이메일 프로필은 S/MIME를 활성화해 S/MIME 서명 인증서와 S/MIME 암호화 인증서를 정의하는 기능을 지원합니다.
 
-S/MIME 암호화는 이메일을 특정 인증서로 암호화하기 때문에 해독하기가 어렵습니다. 암호를 해독하려면 이메일을 읽는 디바이스에서 이메일을 암호화한 인증서의 개인 키가 있어야 합니다. 암호화 인증서는 정기적으로 갱신됩니다. 따라서 이전 메일을 읽으려면 모든 디바이스에서의 암호화 기록이 필요할 수도 있습니다.  모든 디바이스에서 동일한 인증서를 사용해야 하므로, [SCEP](certificates-scep-configure.md)나 [PKCS](certficates-pfx-configure.md) 인증서 프로필은 이 목적으로 사용할 수 없습니다. 디바이스마다 고유한 인증서를 전달하기 때문입니다.
+S/MIME 암호화는 이메일을 특정 인증서로 암호화하기 때문에 해독하기가 어렵습니다. 암호를 해독하려면 이메일을 읽는 디바이스에서 이메일을 암호화한 인증서의 프라이빗 키가 있어야 합니다. 암호화 인증서는 정기적으로 갱신됩니다. 따라서 이전 메일을 읽으려면 모든 디바이스에서의 암호화 기록이 필요할 수도 있습니다.  모든 디바이스에서 동일한 인증서를 사용해야 하므로, [SCEP](certificates-scep-configure.md)나 [PKCS](certficates-pfx-configure.md) 인증서 프로필은 이 목적으로 사용할 수 없습니다. 디바이스마다 고유한 인증서를 전달하기 때문입니다.
 
 S/MIME를 Intune에서 사용하는 방법에 대한 자세한 내용은 [S/MIME를 사용하여 메일 암호화](certificates-s-mime-encryption-sign.md)를 참조하세요.
 
@@ -46,22 +46,25 @@ S/MIME를 Intune에서 사용하는 방법에 대한 자세한 내용은 [S/MIME
 
   커넥터에서 액세스하는 모든 네트워크 엔드포인트에 대한 자세한 내용은 [Intune 네트워크 구성 요구 사항 및 대역폭](../fundamentals/network-bandwidth-use.md)을 참조하세요.
 
-- **Windows Server**:  
+- **Windows Server**:
+
   Microsoft Intune용 PFX 인증서 커넥터를 호스트하려면 Windows Server를 사용해야 합니다.  커넥터는 Intune으로 가져온 인증서 관련 요청을 처리하는 데 사용합니다.
 
   Intune은 *Microsoft Intune Certificate Connector*를 *Microsoft Intune용 PFX 인증서 커넥터*와 같은 서버에 설치하는 기능을 지원합니다.
 
   커넥터를 지원하려면 서버는 .NET 4.6 Framework 이상을 실행해야 합니다. 커넥터 설치를 시작할 때 .NET 4.6 Framework가 설치되어 있지 않다면, 커넥터 설치 과정으로 자동으로 설치됩니다.
 
-- **Visual Studio 2015 이상**(선택 사항): 도우미 PowerShell 모듈을 cmdlet으로 빌드해 PFX 인증서를 Microsoft Intune으로 가져오려면 Visual Studio를 사용해야 합니다. 도우미 PowerShell cmdlet을 가져오는 방법은 [ GitHub의 PFXImport PowerShell 프로젝트](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)를 참조하세요.
+- **Visual Studio 2015 이상**(선택 사항):
+
+  도우미 PowerShell 모듈을 cmdlet으로 빌드해 PFX 인증서를 Microsoft Intune으로 가져오려면 Visual Studio를 사용해야 합니다. 도우미 PowerShell cmdlet을 가져오는 방법은 [ GitHub의 PFXImport PowerShell 프로젝트](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)를 참조하세요.
 
 ## <a name="how-it-works"></a>작동 방식
 
 **가져온 PFX 인증서**를 Intune을 사용해 사용자에게 배포할 때는 디바이스 외에 다음과 같은 두 요소도 사용합니다.
 
-- **Intune 서비스**: PFX 인증서를 암호화된 상태로 보관하고 사용자 디바이스에 대한 인증서 배포를 처리합니다.  인증서의 개인 키를 보호하는 암호는 HSM(하드웨어 보안 모듈)이나 Windows 암호화를 이용해 업로드되기 전에 암호화되기 때문에, Intune은 절대로 개인 키에 액세스할 수 없습니다.
+- **Intune 서비스**: PFX 인증서를 암호화된 상태로 보관하고 사용자 디바이스에 대한 인증서 배포를 처리합니다.  인증서의 프라이빗 키를 보호하는 암호는 HSM(하드웨어 보안 모듈)이나 Windows 암호화를 이용해 업로드되기 전에 암호화되기 때문에, Intune은 절대로 프라이빗 키에 액세스할 수 없습니다.
 
-- **Microsoft Intune용 PFX 인증서 커넥터**: Intune으로 가져온 PFX 인증서를 디바이스가 요청하면, 암호화된 암호와 인증서 및 디바이스의 공개 키가 커넥터에 전송됩니다.  커넥터는 온-프레미스 개인 키를 이용해 암호를 해독하고, 디바이스 키를 이용해 암호를 다시 암호화한 다음(iOS 사용 시에는 plist 프로필도 암호화) 인증서를 Intune으로 재전송합니다.  그러면 Intune은 인증서를 디바이스에 전송하고, 디바이스는 디바이스의 개인 키를 이용해 인증서 암호를 해독한 다음 인증서를 설치합니다.
+- **Microsoft Intune용 PFX 인증서 커넥터**: Intune으로 가져온 PFX 인증서를 디바이스가 요청하면, 암호화된 암호와 인증서 및 디바이스의 공개 키가 커넥터에 전송됩니다.  커넥터는 온-프레미스 프라이빗 키를 이용해 암호를 해독하고, 디바이스 키를 이용해 암호를 다시 암호화한 다음(iOS 사용 시에는 plist 프로필도 암호화) 인증서를 Intune으로 재전송합니다.  그러면 Intune은 인증서를 디바이스에 전송하고, 디바이스는 디바이스의 프라이빗 키를 이용해 인증서 암호를 해독한 다음 인증서를 설치합니다.
 
 ## <a name="download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune"></a>Microsoft Intune용 PFX 인증서 커넥터 다운로드, 설치 및 구성
 
@@ -114,7 +117,7 @@ PowerShell cmdlet을 사용하려면 Visual Studio를 이용해 프로젝트를 
 
 ### <a name="create-the-encryption-public-key"></a>암호화 공개 키 만들기
 
-PFX 인증서 및 관련 개인 키를 Intune으로 가져옵니다. 개인 키를 보호하는 암호는 온-프레미스에 저장된 공개 키로 암호화됩니다. Windows 암호화, 하드웨어 보안 모듈 또는 다른 암호화 유형을 이용해 공개/개인 키 쌍을 생성하고 저장할 수 있습니다.  사용하는 암호화 유형에 따라 공개/개인 키 쌍을 파일 형식으로 내보내 백업할 수도 있습니다.
+PFX 인증서 및 관련 프라이빗 키를 Intune으로 가져옵니다. 프라이빗 키를 보호하는 암호는 온-프레미스에 저장된 공개 키로 암호화됩니다. Windows 암호화, 하드웨어 보안 모듈 또는 다른 암호화 유형을 이용해 공개/프라이빗 키 쌍을 생성하고 저장할 수 있습니다.  사용하는 암호화 유형에 따라 공개/프라이빗 키 쌍을 파일 형식으로 내보내 백업할 수도 있습니다.
 
 PowerShell 모듈은 Windows 암호화를 사용하여 키를 만드는 메서드를 제공합니다. 다른 도구를 이용해 키를 만들 수도 있습니다.  
 
@@ -133,25 +136,24 @@ PowerShell 모듈은 Windows 암호화를 사용하여 키를 만드는 메서�
 
    워크스테이션에서 인증서를 가져오고 싶다면, 다음 명령어를 이용해 이 키를 파일로 내보낼 수 있습니다.  `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path to write to>"`
 
-   가져온 PFX 인증서를 제대로 처리하려면, Microsoft Intune용 PFX 인증서 커넥터를 호스트하는 서버로 개인 키를 가져와야 합니다.
+   가져온 PFX 인증서를 제대로 처리하려면, Microsoft Intune용 PFX 인증서 커넥터를 호스트하는 서버로 프라이빗 키를 가져와야 합니다.
 
 #### <a name="to-use-a-hardware-security-module-hsm"></a>HSM(하드웨어 보안 모듈) 사용
 
-HSM(하드웨어 보안 모듈)을 사용하여 공개/개인 키 쌍을 생성하고 저장할 수 있습니다. 자세한 내용은 HSM 공급자의 설명서를 참조하세요.
+HSM(하드웨어 보안 모듈)을 사용하여 공개/프라이빗 키 쌍을 생성하고 저장할 수 있습니다. 자세한 내용은 HSM 공급자의 설명서를 참조하세요.
 
 ### <a name="import-pfx-certificates"></a>PFX 인증서 가져오기
 
 다음 프로세스는 PFX 인증서를 가져오는 예제로 PowerShell cmdlet을 사용합니다. 요구 사항에 맞는 다양한 옵션을 선택할 수 있습니다.
 
-다음 옵션을 사용할 수 있습니다.  
-- 용도(태그를 기준으로 인증서를 그룹화):  
+다음 옵션을 사용할 수 있습니다.
+
+- 용도(태그를 기준으로 인증서를 그룹화):
   - 할당되지 않음
   - smimeEncryption
   - smimeSigning
 
-- 패딩 체계:  
-  - pkcs1
-  - oaepSha1
+- 패딩 체계:
   - oaepSha256
   - oaepSha384
   - oaepSha512
@@ -175,7 +177,7 @@ HSM(하드웨어 보안 모듈)을 사용하여 공개/개인 키 쌍을 생성�
 
 6. **UserPFXCertificate** 개체를 만들려면 `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>"`을 실행합니다.
 
-   예를 들어 `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`를 구성할 수 있습니다.
+   `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`
 
    > [!NOTE]
    > 커넥터를 설치한 서버가 아닌 다른 시스템에서 인증서를 가져올 때는, 키 파일 경로를 포함하는 다음 명령을 사용해야 합니다. `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>" "<File path to public key file>"`

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd320dddeb7717461188bdb701044bf060e7d75e
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 4e5a16a8be6fcce8c6c34d3ddf8979b17eccddd1
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324885"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920133"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록  
 Windows Autopilot이 Intune에 디바이스를 등록하는 작업을 간소화합니다. 사용자 지정 운영 체제 이미지 빌드 및 유지 관리는 시간이 오래 걸리는 프로세스입니다. 또한 최종 사용자에게 제공하기 전에 이러한 사용자 지정 운영 체제 이미지를 새 디바이스에 적용하여 사용 준비를 하는 데에도 시간이 걸릴 수 있습니다. Microsoft Intune 및 Autopilot을 사용하면 사용자 지정 운영 체제 이미지를 빌드 및 유지 관리하고 디바이스에 적용할 필요 없이 최종 사용자에게 새 디바이스를 제공할 수 있습니다. Intune을 사용하여 Autopilot 디바이스를 관리하는 경우 디바이스를 등록한 후에 정책, 프로필, 앱 등을 관리할 수 있습니다. 이점, 시나리오 및 필수 구성 요소에 대한 개요는 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요.
@@ -178,11 +178,6 @@ Autopilot 디바이스를 업로드한 후에는 디바이스의 특정 특성�
     ![친숙한 이름 스크린샷](./media/enrollment-autopilot/friendly-name.png)
 
 4. **확인**을 선택합니다.
-
-## <a name="autopilot-deployments-report"></a>Autopilot 배포 보고서
-Windows Autopilot을 통해 배포된 각 디바이스에 대한 세부 정보를 볼 수 있습니다.
-보고서를 보려면 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)로 이동한 후 **디바이스** > **모니터** > **Autopilot 배포**를 선택합니다.
-데이터는 배포 후 30일 동안 사용할 수 있습니다.
 
 
 ## <a name="delete-autopilot-devices"></a>Autopilot 디바이스 삭제

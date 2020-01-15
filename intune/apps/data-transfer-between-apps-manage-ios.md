@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414631"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839297"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법
 
@@ -74,7 +74,7 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
 
    |타사 MDM 공급자| 구성 키 | 값 형식 | 구성 값|
    | ------- | ---- | ---- | ---- |
-   |Microsoft Intune| IntuneMAMUPN | 문자열 | {{UserPrincipalName}}|
+   |Microsoft Intune| IntuneMAMUPN | 문자열 | {{UserPrincipalName}}|
    |VMware AirWatch| IntuneMAMUPN | 문자열 | {UserPrincipalName}|
    |MobileIron | IntuneMAMUPN | 문자열 | ${userUPN} **또는** ${userEmailAddress} |
    |Citrix 엔드포인트 관리 | IntuneMAMUPN | 문자열 | ${user.userprincipalname} |
@@ -88,7 +88,7 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
 
 *OS 공유를* 사용하여 정책 관리 앱에서 *다른 애플리케이션으로 공유*
 
-1. 사용자가 등록된 iOS 장치에서 Microsoft OneDrive 앱을 열고 회사 계정에 로그인합니다.  사용자가 입력하는 계정은 Microsoft OneDrive 앱에 대한 앱 구성 설정에서 지정한 계정 UPN과 일치해야 합니다.
+1. 사용자가 등록된 iOS 디바이스에서 Microsoft OneDrive 앱을 열고 회사 계정에 로그인합니다.  사용자가 입력하는 계정은 Microsoft OneDrive 앱에 대한 앱 구성 설정에서 지정한 계정 UPN과 일치해야 합니다.
 
 2. 로그인하면 관리자가 구성한 앱 설정이 Microsoft OneDrive의 사용자 계정에 적용됩니다.  여기에는 **다른 앱에 조직 데이터 보내기** 설정을 **OS 공유가 적용된 정책 관리 앱** 값으로 구성하는 과정이 포함됩니다.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881a97e1cf4e4690a72916a1a2325fba5f9b63dd
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 7744fe217f39436e91f90fdf567f469c01986da4
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547535"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885647"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 서비스 설명
 
@@ -45,11 +45,9 @@ Intune을 사용하여 디바이스 및 앱을 관리하고 회사 데이터를 
 
 - [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
 
-- [Hybrid mobile device management (MDM) with Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
-
-For more about Configuration Manager, see [Documentation for Microsoft Endpoint Configuration Manager](/sccm/index).--->
+--->
 ## <a name="intune-onboarding-benefit"></a>Intune 등록 혜택
-Microsoft는 적합한 플랜의 적합한 서비스에 대해 Intune 온보딩 혜택을 제공합니다. 등록 혜택을 이용하면 Microsoft 전문가와 원격으로 함께 작업하여 Intune 환경을 즉시 사용하도록 준비할 수 있습니다. 등록 혜택에 대한 자세한 내용은 [Microsoft Intune 등록 혜택 설명](http://go.microsoft.com/fwlink/?LinkId=619281)을 참조하세요.
+Microsoft는 적합한 플랜의 적합한 서비스에 대해 Intune 온보딩 혜택을 제공합니다. 등록 혜택을 이용하면 Microsoft 전문가와 원격으로 함께 작업하여 Intune 환경을 즉시 사용하도록 준비할 수 있습니다. 등록 혜택에 대한 자세한 내용은 [Microsoft Intune 등록 혜택 설명](https://go.microsoft.com/fwlink/?LinkId=619281)을 참조하세요.
 
 
 ## <a name="learn-how-intune-service-updates-affect-you"></a>Intune 서비스 업데이트가 영향을 주는 방식 알아보기
@@ -99,7 +97,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 
 - **Intune stand-alone configuration.** Use the web-based admin console in Intune to manage devices in your organization. Intune can be used without any on-premises IT infrastructure. If you use Intune with Active Directory Domain Services, you can use domain user accounts that you manage with Domain Services with Intune.
 
-- **Intune with Microsoft Endpoint Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
+--->
 
 ## <a name="language-support"></a>언어 지원
 Intune은 다음과 같은 언어를 지원하는 Azure Portal에서 실행됩니다. 중국어(간체), 중국어(번체), 체코어, 네덜란드어, 영어, 독일어, 헝가리어, 이탈리아어, 일본어, 포르투갈어(브라질), 포르투갈어(포르투갈), 러시아어, 스페인어, 영어, 프랑스어, 한국어, 폴란드어, 스웨덴어, 터키어.

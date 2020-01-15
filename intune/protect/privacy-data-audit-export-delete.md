@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cfb0f69d74cc6146b2497cd53be3e123f79cc70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdcf88449a4f6ec0b3b352afb87ebcb5bd0b8389
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504349"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885738"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune에서 개인 데이터 감사, 내보내기 또는 삭제
 
@@ -74,16 +74,6 @@ Intune에서 최종 사용자의 개인 데이터를 삭제하려면 관리자�
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>Microsoft Intune에서 테넌트 삭제
 
 Intune 테넌트 고객이 Intune 계정을 취소하면 고객이 Intune 계정을 폐쇄한 후 180일 내에 모든 테넌트 데이터가 삭제됩니다. AAD 테넌트가 다른 Microsoft 엔터프라이즈 구독(Azure, Office 365)과 연결되어 있으면, Intune 고객 데이터만 삭제됩니다. AAD 테넌트 리소스는 다른 구독에서 사용할 수 있도록 유지됩니다. Intune 계정이 AAD 테넌트와 연결된 유일한 구독인 경우 테넌트가 삭제되고 모든 리소스와 고객 데이터도 삭제됩니다.
-
-### <a name="delete-a-user-in-a-hybrid-mobile-device-management-mdm-environment"></a>하이브리드 MDM(모바일 디바이스 관리) 환경에서 사용자 삭제
-하이브리드 MDM(Configuration Manager와 통합된 Intune)이 있는 경우 사용자를 완전히 삭제하고 로컬 Active Directory, Configuration Manager 및 Intune에서 완전히 제거하려면 다음 작업을 순서대로 완료해야 합니다.
-
-1. 로컬 AD(Active Directory)에서 사용자를 삭제합니다. 이렇게 하면 사용자가 Azure AD로 동기화되지 않고 Configuration Manager 검색으로 검색되지도 않습니다. 
-2. Configuration Manager 콘솔에서 사용자를 삭제하여 Configuration Manager에서 사용자 및 관련 데이터를 제거합니다. 콘솔에서 **자산 및 준수** > **사용자**로 이동하여 삭제할 사용자를 마우스 오른쪽 단추로 클릭한 다음, **삭제**를 클릭합니다.
-3. [AAD에서 사용자를 삭제](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user)하면 Azure Active Directory와 Intune 모두에서 사용자 및 관련 데이터가 동시에 제거됩니다. 사용자가 AAD에서 삭제되면(하드 삭제) Intune은 AAD에서 삭제 신호를 수신한 다음, Intune 서비스에서 해당 사용자의 모든 개인 데이터를 자동으로 삭제하기 시작합니다. 사용자의 정보는 제거 작업 후 30일 내에 Intune 서비스에서 삭제됩니다.
-
-> [!Important]
->새 하이브리드 MDM 고객의 온보딩은 더 이상 사용되지 않습니다. 자세한 내용은 [하이브리드 모바일 디바이스 관리에서 Azure의 Intune으로 이동](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) 블로그 게시물을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

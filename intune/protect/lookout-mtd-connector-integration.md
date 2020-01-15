@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 331d4d312541f587077c70e19634e331f9ddc21e
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810231"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956343"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Intune과 Lookout Mobile Endpoint Security 통합 설정
 [필수 조건](lookout-mobile-threat-defense-connector.md#prerequisites)에 맞는 환경에서는 Intune과 Lookout Mobile Endpoint Security를 통합할 수 있습니다. 이 문서의 정보에서는 통합을 설정하고 Intune과 함께 사용하기 위해 Lookout에서 중요 설정을 구성하는 방법을 안내합니다.  
@@ -97,7 +97,7 @@ MES Lookout 콘솔에 처음 로그인하면 동의 페이지(https://aad.lookou
 
 3. **Enrollment Management**(등록 관리)를 선택하고 **Use the following Azure AD security groups to identify devices that should be enrolled in Lookout for Work**(다음 Azure AD 보안 그룹을 사용하여 Lookout for Work에서 등록할 디바이스 식별)에서 Lookout에서 사용할 Azure AD 그룹의 ‘그룹 이름’을 지정한 다음 **변경 내용 저장**을 선택합니다. 
 
-    ![Intune Connector 등록 페이지의 스크린샷](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)  
+    ![Intune 커넥터 등록 페이지 스크린샷](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)  
 
    **사용하는 그룹에 관한 내용**:
    - 모범 사례로 Lookout 통합을 테스트하는 작은 수의 사용자를 포함하는 Azure AD 보안 그룹으로 시작합니다.
@@ -108,12 +108,12 @@ MES Lookout 콘솔에 처음 로그인하면 동의 페이지(https://aad.lookou
 
 5. **Error Management**(오류 관리)를 선택하고 오류 보고서를 받을 메일 주소를 지정한 다음 **변경 내용 저장**을 선택합니다.
  
-   ![Intune Connector 오류 관리 페이지의 스크린샷](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
+   ![Intune 커넥터 오류 관리 페이지 스크린샷](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
 
 6. **커넥터 만들기**를 선택하여 커넥터 구성을 완료합니다. 결과에 만족한 경우 나중에 등록을 추가 사용자 그룹으로 확장할 수 있습니다.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Lookout을 Mobile Threat Defense 공급자로 사용하도록 Intune 구성
-Lookout MES를 구성한 후에 [Intune에서 Lookout](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable)의 연결을 설정해야 합니다.  
+Lookout MES를 구성한 후에 [Intune에서 Lookout](~/protect/mtd-connector-enable.md)의 연결을 설정해야 합니다.  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>MES Lookout 콘솔의 추가 설정
 다음은 MES Lookout 콘솔에서 구성할 수 있는 추가 설정입니다.  

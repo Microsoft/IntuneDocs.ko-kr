@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801569"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886005"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Intune을 사용하여 SCEP를 지원하도록 인프라 구성
 
@@ -373,8 +373,7 @@ Microsoft Intune Certificate Connector는 NDES 서비스를 실행하는 서버�
 
    2. 설치 관리자(**NDESConnectorSetup.exe**)를 실행합니다. 설치 관리자는 NDES에 대한 정책 모듈 및 IIS CRP(인증서 등록 지점) 웹 서비스도 설치합니다. CRP 웹 서비스 *CertificateRegistrationSvc*는 IIS에서 애플리케이션으로 실행됩니다.
 
-      - 독립 실행형 Intune에 NDES를 설치하면 CRP 서비스가 인증서 커넥터와 함께 자동으로 설치됩니다.
-      - 구성 관리자와 함께 Intune을 사용할 때는 Configuration Manager 사이트 시스템 역할로 인증서 등록 지점을 설치합니다.
+      독립 실행형 Intune에 NDES를 설치하면 CRP 서비스가 인증서 커넥터와 함께 자동으로 설치됩니다.
 
 5. Certificate Connector용 클라이언트 인증서를 입력하라는 메시지가 표시되면 **선택**을 선택하고 이 문서 앞부분에 나오는 [NDES 호스트 서버에 인증서 설치 및 바인딩](#install-and-bind-certificates-on-the-server-that-hosts-ndes) 절차, 3단계 동안 NDES 서버에 설치한 **클라이언트 인증** 인증서를 선택합니다.
 

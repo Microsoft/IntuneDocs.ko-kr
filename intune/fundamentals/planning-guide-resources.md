@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a23409b03047cac8edb0a50ad5188e006d35049a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 23b7264f2b7c9be0805ae30afca5c8cb15b83482
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505152"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956240"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune 배포 계획을 위한 추가 리소스
 
@@ -50,7 +50,7 @@ ms.locfileid: "72505152"
 
 Intune 배포 계획, 디자인 및 구현 프로세스 중 유용할 수 있는 추가 정보는 다음 리소스를 확인해 보세요.
 
-- [Microsoft Intune 설명서](http://docs.microsoft.com/intune/) - Intune 설명서의 전체 집합입니다.
+- [Microsoft Intune 설명서](https://docs.microsoft.com/intune/) - Intune 설명서의 전체 집합입니다.
 
 - [Microsoft 보안 센터](https://www.microsoft.com/TrustCenter) - 모든 Microsoft 클라우드 제품과 서비스의 보안, 개인 정보, 규정 준수 및 투명성에 대한 Microsoft의 접근 방식을 알아볼 수 있습니다.
 
