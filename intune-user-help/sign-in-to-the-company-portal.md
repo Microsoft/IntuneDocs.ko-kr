@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 12/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f82549cfbdd3c987b2f51f4d90b9c18cce8c25be
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508292"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857806"
 ---
 # <a name="sign-in-to-company-portal"></a>회사 포털에 로그인  
 
@@ -56,6 +56,7 @@ ms.locfileid: "72508292"
    ![인증 프로세스를 진행하고 나면 회사 포털 앱에 로그인되며 이 상태는 로드 중 막대로 표현됩니다.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
 ## <a name="sign-in-with-certificate-based-authentication"></a>인증서 기반 인증으로 로그인
+조직에서 인증서 기반 인증을 허용 하 고 사용할 수 있는 인증서가 있는 경우에만이 로그인 옵션이 표시 됩니다.  
 
 1. 디바이스에서 회사 포털 앱을 엽니다.  
 
@@ -73,7 +74,7 @@ ms.locfileid: "72508292"
 
 1. **다른 디바이스에서 로그인**을 선택합니다.  
 
-   ![회사 포털 로그인 페이지는 사용자에게 이메일 주소에 대한 메시지를 표시합니다.  "다음" 단추 및 "다른 디바이스에서 로그인"에 대한 링크를 표시합니다. 또한 "계정에 액세스할 수 없습니까?"에 대한 링크를 포함합니다. Microsoft 개인정보처리방침 정보로 이동하게 하는 하단의 링크](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+   ![회사 포털 로그인 페이지는 사용자에게 메일 주소에 대한 메시지를 표시합니다.  "다음" 단추 및 "다른 디바이스에서 로그인"에 대한 링크를 표시합니다. 또한 "계정에 액세스할 수 없습니까?"에 대한 링크를 포함합니다. Microsoft 개인정보처리방침 정보로 이동하게 하는 하단의 링크](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 
 2. 회사 포털에 로그인하기 위한 고유한 일회성 코드를 받게 됩니다. 코드를 복사 합니다.
 

@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 044b35b34a9a5b01537e82dcfddca74a284ebdcc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e0bb2cb757e944369642807f117683dad3a9805a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72491004"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206264"
 ---
 # <a name="add-vpn-settings-on-macos-devices-in-microsoft-intune"></a>Microsoft Intune의 macOS 디바이스에 대한 VPN 설정 추가
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 이 아티클에서는 macOS를 실행하는 디바이스에서 VPN 연결을 구성하는 데 사용할 수 있는 Intune 설정을 설명합니다.
 
@@ -39,8 +39,8 @@ ms.locfileid: "72491004"
 
 ## <a name="base-vpn-settings"></a>기본 VPN 설정
 
-**연결 이름**: 이 연결에 대한 이름을 입력합니다. 최종 사용자가 디바이스에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
-- **IP 주소 또는 FQDN**: 디바이스가 연결되는 VPN 서버의 IP 주소 또는 정규화된 도메인 이름을 입력합니다. 예: **192.168.1.1**, **vpn.contoso.com**.
+**연결 이름**: 이 연결의 이름을 입력합니다. 최종 사용자가 디바이스에서 사용 가능한 VPN 연결 목록을 찾아볼 때 이 이름이 표시됩니다.
+- **IP 주소 또는 FQDN**: 디바이스를 연결할 VPN 서버의 정규화된 도메인 이름 또는 IP 주소를 입력합니다. 예: **192.168.1.1**, **vpn.contoso.com**.
 - **인증 방법**: 디바이스가 VPN 서버에 인증하는 방법을 선택합니다.
   - **인증서**: **인증 인증서** 아래에서 이전에 연결을 인증하기 위해 만든 SCEP 또는 PKCS 인증서 프로필을 선택합니다. 인증서 프로필에 대한 자세한 내용은 [인증서를 구성하는 방법](../protect/certificates-configure.md)을 참조하세요.
   - **사용자 이름 및 암호**: 최종 사용자는 VPN 서버에 로그인하기 위해 사용자 이름 및 암호를 제공해야 합니다.
@@ -66,7 +66,7 @@ ms.locfileid: "72491004"
 
 - **자동 구성 스크립트**: 파일을 사용하여 프록시 서버를 구성합니다. 구성 파일을 포함하는 **프록시 서버 URL**을 입력합니다. 예를 들어 다음과 같이 입력합니다. `http://proxy.contoso.com`
 - **주소**: 프록시 서버 주소를 IP 주소로 입력합니다.
-- **포트 번호**: 프록시 서버와 연결된 포트 번호 입력
+- **포트 번호**: 프록시 서버와 연결된 포트 번호를 입력합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

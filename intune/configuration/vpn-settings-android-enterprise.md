@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 647e8869caf24638f6809479274dbf7a7b967b9e
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: a0c11be374e36ec32feb9540f6cfd4f1bc794e9c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946634"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206315"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Intune에서 VPN을 구성 하는 Android 엔터프라이즈 장치 설정
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 이 문서에서는 Android Enterprise 디바이스에서 제어할 수 있는 다양한 VPN 연결 설정을 나열하고 설명합니다. MDM (모바일 장치 관리) 솔루션의 일부로, 이러한 설정을 사용 하 여 VPN 연결을 만들고, VPN에서 인증 하는 방법, VPN 서버 유형 등을 선택 합니다.
 
@@ -41,7 +41,7 @@ Intune의 VPN 프로필에 대 한 자세한 내용은 [vpn 프로필](vpn-setti
 
 ## <a name="device-owner-only"></a>디바이스 소유자만
 
-- **연결 이름**: 이 연결에 대한 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다. 예를 들어 다음과 같이 입력합니다. `Contoso VPN`
+- **연결 이름**: 이 연결의 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다. 예를 들어 다음과 같이 입력합니다. `Contoso VPN`
 - **IP 주소 또는 FQDN**: 디바이스가 연결되는 VPN 서버의 IP 주소 또는 FQDN(정규화된 도메인 이름)을 입력합니다. 예를 들어 **192.168.1.1** 또는 **vpn.contoso.com**을 입력합니다.
 
   - **인증 방법**: 디바이스가 VPN 서버에 인증하는 방법을 선택합니다. 옵션은 다음과 같습니다.
@@ -57,7 +57,7 @@ Intune의 VPN 프로필에 대 한 자세한 내용은 [vpn 프로필](vpn-setti
 
 ## <a name="work-profile-only"></a>작업 프로필만
 
-- **연결 이름**: 이 연결에 대한 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다. 예를 들어 다음과 같이 입력합니다. `Contoso VPN`
+- **연결 이름**: 이 연결의 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다. 예를 들어 다음과 같이 입력합니다. `Contoso VPN`
 - **IP 주소 또는 FQDN**: 디바이스가 연결되는 VPN 서버의 IP 주소 또는 FQDN(정규화된 도메인 이름)을 입력합니다. 예를 들어 **192.168.1.1** 또는 **vpn.contoso.com**을 입력합니다.
 
   - **인증 방법**: 디바이스가 VPN 서버에 인증하는 방법을 선택합니다. 옵션은 다음과 같습니다.

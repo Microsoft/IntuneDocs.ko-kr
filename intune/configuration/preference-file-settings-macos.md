@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 01/09/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d226a5b8ee448b7b168a03fe6b8a1c63bc1be432
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691685"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827788"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Microsoft Intune를 사용 하 여 macOS 장치에 속성 목록 파일 추가
 
@@ -53,6 +53,16 @@ Microsoft Intune를 사용 하 여 macOS 장치에 대 한 속성 목록 파일 
 - **기본 설정 도메인 이름**: 속성 목록 파일은 일반적으로 웹 브라우저 (microsoft Edge), [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)및 사용자 지정 앱에 사용 됩니다. 기본 설정 도메인을 만들면 번들 ID도 만들어집니다. `com.company.application`와 같은 번들 ID를 입력 합니다. 예를 들어 `com.Contoso.applicationName`, `com.Microsoft.Edge` 또는 `com.microsoft.wdav`를 입력합니다.
 - **속성 목록 파일**: 앱과 연결 된 속성 목록 파일을 선택 합니다. `.plist` 또는 `.xml` 파일 이어야 합니다. 예를 들어 `YourApp-Manifest.plist` 또는 `YourApp-Manifest.xml` 파일을 업로드 합니다.
 - **파일 내용**: 속성 목록 파일의 키 정보가 표시 됩니다. 키 정보를 변경 해야 하는 경우에는 다른 편집기에서 목록 파일을 열고 Intune에서 해당 파일을 다시 업로드 합니다.
+
+파일의 형식이 올바르게 지정 되어 있어야 합니다. 파일에는 키 값 쌍만 있어야 하 고 `<dict>`, `<plist>`또는 `<xml>` 태그로 래핑되지 않아야 합니다. 예를 들어 속성 목록 파일은 다음 파일과 비슷해야 합니다.
+
+```xml
+<key>SomeKey</key>
+<string>someString</string>
+<key>AnotherKey</key>
+<false/>
+...
+```
 
 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다. 프로필이 만들어지고 프로필 목록에 표시됩니다.
 

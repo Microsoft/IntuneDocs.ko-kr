@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bfafa4f35d0b8f1255d66a70c3f7cd0acf01a889
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b976e9a47a56c7af1e754f5b5b0162410e278025
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415765"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856395"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-entrust-datacard"></a>회사 포털 및 Entrust Datacard를 사용 하 여 iOS 또는 iPadOS 장치 설정
 
@@ -56,7 +56,7 @@ Intune 회사 포털 앱으로 디바이스를 등록하여 조직의 메일, �
 
 * 학교 또는 회사에서 제공 하는 스마트 카드
 * 스마트 카드를 사용 하 여 로그인 할 수 있는 컴퓨터 또는 키오스크에 대 한 액세스
-* 모바일 장치
+* 모바일 디바이스
 * 장치에 설치 된 iOS 및 iPadOS 용 Intune 회사 포털 앱  
 
 

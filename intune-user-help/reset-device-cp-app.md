@@ -18,22 +18,22 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dc36e2d53282b8f40f0250f40cb2f01ec920d936
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502109"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858215"
 ---
-# <a name="reset-device-from-the-company-portal-app"></a>회사 포털 앱에서 장치 다시 설정  
+# <a name="reset-device-from-the-company-portal-app"></a>회사 포털 앱에서 디바이스 다시 설정  
 
 회사 포털 앱에서 사용, 분실 또는 도난된 디바이스를 출하 시 초기 설정으로 재설정합니다.  
 
 장치를 다시 설정한 후에는 회사 포털에 더 이상 표시 되지 않습니다. 기존 앱과 파일이 삭제 되 고 기본 설정으로 복원 됩니다.  
 
 
-1. 회사 포털를 엽니다.  
+1. 회사 포털을 엽니다.  
 2. **내 디바이스**에서 다시 설정할 디바이스를 선택합니다.   
 
     ![회사 포털 앱, 홈 화면, 내 장치 섹션을 강조 표시 하는 예제 스크린샷](./media/1802-cp-app-windows-home.png)  

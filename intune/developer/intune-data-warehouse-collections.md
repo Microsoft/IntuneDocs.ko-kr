@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 7ceaf5c62f34cc248813a064de9e8e3710797779
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899237"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547926"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune 데이터 웨어하우스 컬렉션
 
@@ -36,7 +36,7 @@ ms.locfileid: "74899237"
 |:--------------------------:|:-------------------------------------------------------------------------------------:|:------------------------------------:|
 | AppKey                     | 앱에 대한 고유 식별자                                                         | 123                                  |
 | ApplicationId              | 앱의 고유 식별자 - AppKey와 유사하지만 이 키는 자연어입니다.        | b66bc706-ffff-7437-0340-032819502773 |
-| 수정                   | 이진 파일을 업로드하는 동안 관리자가 설명한 버전입니다.                   | 2                                    |
+| 수정 버전                   | 이진 파일을 업로드하는 동안 관리자가 설명한 버전입니다.                   | 2                                    |
 | 제목                      | 앱의 제목                                                                     | Excel                                |
 | 게시자                  | 앱의 게시자                                                                 | Microsoft                            |
 | UploadState                | 앱의 업로드 상태                                                              | 1                                    |
@@ -61,7 +61,7 @@ ms.locfileid: "74899237"
 
 ### <a name="example"></a>예제
 
-| AppTypeID |                이름               |                     설명                     |
+| AppTypeID |                Name               |                     설명                     |
 |:---------:|:---------------------------------:|:---------------------------------------------------:|
 | 0         | Android 스토어 앱               | Android 스토어 앱                             |
 | 1         | Android LOB 앱                 | Android 기간 업무 앱                  |
@@ -203,7 +203,7 @@ ms.locfileid: "74899237"
 | deviceRegistrationStateName | 등록 상태                                                                  |
 |    NotRegistered                     |    등록 안 됨                                                                                                                                                                  |
 |    등록됨                        |       등록됨                                                                                                                                                                   |
-|    Revoked                           |       IT 관리자가 클라이언트를 차단했고 클라이언트가 차단 해제될 수 있음을 나타내는 상태입니다. 디바이스는 초기화 또는 사용 중지 후 취소 상태가 될 수 있습니다.        |
+|    해지됨                           |       IT 관리자가 클라이언트를 차단했고 클라이언트가 차단 해제될 수 있음을 나타내는 상태입니다. 디바이스는 초기화 또는 사용 중지 후 취소 상태가 될 수 있습니다.        |
 |    KeyConflict                       |    키 충돌                                                                                                                                                                    |
 |    ApprovalPending                   |    승인 보류 중                                                                                                                                                                |
 |    CertificateReset                  |    인증서 재설정                                                                                                                                                               |
@@ -263,7 +263,7 @@ ms.locfileid: "74899237"
 
 ### <a name="example"></a>예제
 
-| deviceTypeID |        이름       |                      설명                      |
+| deviceTypeID |        Name       |                      설명                      |
 |:------------:|:-----------------:|:-----------------------------------------------------:|
 | -1           | 사용할 수 없음   | 이 디바이스 유형을 사용할 수 없습니다.                     |
 | 0            | 데스크톱           | Windows 데스크톱 디바이스                              |
@@ -300,7 +300,7 @@ ms.locfileid: "74899237"
 
 ### <a name="example"></a>예제
 
-| enrollmentTypeID |                이름                |                                        설명                                       |
+| enrollmentTypeID |                Name                |                                        설명                                       |
 |:----------------:|:----------------------------------:|:----------------------------------------------------------------------------------------:|
 | 0                | Unknown                            | 등록 형식이 수집되지 않았습니다.                                                      |
 | 1                | UserEnrollment                     | BYOD 채널을 통한 사용자 구동 등록입니다.                                           |
@@ -504,7 +504,7 @@ ms.locfileid: "74899237"
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     데이터 웨어하우스의 플랫폼에 대한 고유 식별자 - 서로게이트 키      |                           123                           |
 |          플랫폼          | 플랫폼에 대한 고유 식별자 - PlatformKey와 비슷하지만 자연 키입니다. |                           123                           |
-|        PlatformName        |                                   플랫폼 이름                                   | 사용할 수 없음 <br>없음 <br>Windows <br>iOS <br>Android: |
+|        PlatformName        |                                   플랫폼 이름                                   | 사용할 수 없음 <br>없음 <br>Windows <br>IOS <br>Android: |
 | RowLastModifiedDateTimeUtc | 데이터 웨어하우스에서 해당 플랫폼을 마지막으로 수정한 UTC 날짜 및 시간  |                 11/23/2016 12:00:00 AM                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
@@ -518,14 +518,14 @@ ms.locfileid: "74899237"
 
 ### <a name="example"></a>예제
 
-| ManagementAgentTypeID |                이름               |                                  설명                                 |
+| ManagementAgentTypeID |                Name               |                                  설명                                 |
 |:---------------------:|:---------------------------------:|:----------------------------------------------------------------------------:|
 | 1                     | EAS                               | 디바이스가 Exchange Active Sync를 통해 관리됨                         |
 | 2                     | MDM                               | 디바이스가 MDM 에이전트를 사용하여 관리됨                                   |
 | 3                     | EasMdm                            | 디바이스가 Exchange Active Sync와 MDM 에이전트를 둘 다 사용하여 관리됨        |
 | 4                     | IntuneClient                      | 디바이스가 Intune PC 에이전트로 관리됨                               |
 | 5                     | EasIntuneClient                   | 디바이스가 Exchange Active Sync와 Intune PC 에이전트를 둘 다 사용하여 관리됨 |
-| 8                     | ConfigManagerClient               | 디바이스가 System Center Configuration Manager 에이전트를 사용하여 관리됨     |
+| 8                     | ConfigManagerClient               | 디바이스가 Configuration Manager 에이전트에서 관리됨     |
 | 10                    | ConfigurationManagerClientMdm     | 디바이스가 Configuration Manager 및 MDM에서 관리됩니다.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | 이 디바이스는 Configuration Manager, MDM 및 Exchange Active Sync에서 관리됩니다.               |
 | 16                    | Unknown                           | 알 수 없는 관리 에이전트 유형                                              |
@@ -543,7 +543,7 @@ ms.locfileid: "74899237"
 
 ### <a name="example"></a>예제
 
-| managementStateID |      이름      |                                                   설명                                                   |
+| managementStateID |      Name      |                                                   설명                                                   |
 |:-----------------:|:--------------:|:---------------------------------------------------------------------------------------------------------------:|
 | 0                 | 관리 대상        | 보류 중인 원격 작업 없이 관리됩니다.                                                                       |
 | 1                 | RetirePending  | 디바이스에 대해 보류 중인 사용 중지 명령이 있습니다.                                                             |
@@ -586,7 +586,7 @@ Microsoft Intune을 통해 모바일 애플리케이션 관리를 사용하여 �
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | 소유자 유형에 대한 고유 식별자                                                                                                                                               |                            |
 | ownerTypeKey  | 데이터 웨어하우스의 소유자 유형의 고유 식별자 - 서로게이트 키                                                                                                       |                            |
-| ownerTypeName | 디바이스 소유자 유형을 나타냅니다. 회사 - 엔터프라이즈 소유 디바이스입니다.  개인 - 개인 소유 디바이스입니다(BYOD).   알 수 없음 - 이 디바이스에 대한 정보가 없습니다. | 회사 개인 알 수 없음 |
+| ownerTypeName | 디바이스의 소유자 유형을 나타냅니다.  회사 - 회사 소유 디바이스입니다.  개인 - 개인 소유 디바이스입니다(BYOD).   알 수 없음 - 이 디바이스에 대한 정보가 없습니다. | 회사 개인 알 수 없음 |
 
 > [!Note]  
 > 디바이스용 동적 그룹을 만들 때 AzureAD의 `ownerTypeName` 필터의 대해 `deviceOwnership` 값을 `Company`로 설정해야 합니다. 자세한 내용은 [디바이스 규칙](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)을 참조하세요. 
@@ -666,7 +666,7 @@ Microsoft Intune을 통해 모바일 애플리케이션 관리를 사용하여 �
 |    termsAndConditionsKey    |    'userTermsAndConditionsAcceptances' 컬렉션의 항목에 해당하는 키입니다.    |    123    |
 |    termsAndCondidionsId    |    termsAndConditions 항목의 ID입니다.    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
 |    termsAndConditionsVersion    |    이 사용 약관 항목의 버전입니다.    |    1    |
-|    (이름)    |    이 termsAndConditions 항목의 이름입니다.        |    Intune 사용 약관     |
+|    name    |    이 termsAndConditions 항목의 이름입니다.        |    Intune 사용 약관     |
 |    description    |    이러한 사용 약관의 설명입니다.     |         |
 |    title    |    이러한 사용 약관의 제목입니다.     |    디바이스 관리 회사 정책        |
 |    summaryOfTerms    |    사용자에게 제공된 조건의 요약입니다.     |    사용 약관에 동의함    |
@@ -678,7 +678,7 @@ Microsoft Intune을 통해 모바일 애플리케이션 관리를 사용하여 �
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 **UserDeviceAssociation** 엔터티에는 조직의 사용자 디바이스 연결이 포함되어 있습니다.
 
-|        이름        |                                             설명                                            |     예제     |
+|        Name        |                                             설명                                            |     예제     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | 데이터 웨어하우스에서 사용자의 고유 식별자입니다.   (서로게이트 키입니다.)                            | 123             |
 | DeviceKey          | 데이터 웨어하우스의 디바이스에 대한 고유 식별자                                             | 123             |
@@ -724,7 +724,7 @@ Microsoft Intune을 통해 모바일 애플리케이션 관리를 사용하여 �
 
 ### <a name="example"></a>예제
 
-|             VppProgramID             |         이름        | 설명                |
+|             VppProgramID             |         Name        | 설명                |
 |:------------------------------------:|:-------------------:|----------------------------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft           | Microsoft의 VPP 프로그램 |
 | 00000000-0000-0000-0000-000000000000 | 아직 사용할 수 없음 | 기본값, VPP 없음   |

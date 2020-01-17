@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c87d9b423eeb96acbc984040ef49e44c1853a18
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74290949"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654246"
 ---
 # <a name="reference-for-application-entities"></a>애플리케이션 엔터티에 대한 참조
 
@@ -69,7 +69,7 @@ ms.locfileid: "74290949"
 
 ### <a name="example"></a>예제
 
-| AppTypeID  | 이름 | 설명 |
+| AppTypeID  | Name | 설명 |
 |---------|------------|--------|
 | 0 |Android 스토어 앱 | Android 스토어 앱 |
 | 1 |Android LOB 앱 | Android 기간 업무 앱 |
@@ -98,7 +98,7 @@ ms.locfileid: "74290949"
 
 ### <a name="example"></a>예제
 
-| VppProgramID  | 이름 | 설명 |
+| VppProgramID  | Name | 설명 |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft의 VPP 프로그램 |
 | 00000000-0000-0000-0000-000000000000 | 아직 사용할 수 없음 | 기본값, VPP 없음 |

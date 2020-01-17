@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 83048061cc7b3e1aaeb09ff54dec819720f2571f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059611"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206825"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Microsoft Intune에서 Zebra Mobility Extensions를 사용하여 Zebra 디바이스 사용 및 관리
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune에는 앱 관리 및 디바이스 설정 구성 등 다양한 기능이 포함되어 있습니다. 이러한 기본 제공 기능 및 설정은 "Zebra 디바이스"라고도 알려진 Zebra Technologies에서 제조한 Android 디바이스를 관리합니다.
 
@@ -138,9 +138,9 @@ Intune에서 디바이스 구성 프로필 만들기:
 3. 다음 속성을 입력합니다.
 
     - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.
-    - **설명**: 설정에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
-    - **플랫폼** - **Android**를 선택합니다.
-    - **프로필 유형**: **MX 프로필(Zebra에만 해당)** 을 선택합니다.
+    - **설명**: 프로필에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
+    - **플랫폼**: **Android**를 선택합니다.
+    - **프로필 유형**: **MX 프로필(Zebra만)** 을 선택합니다.
 
 4. **.xml 형식의 MX 프로필**에서 [StageNow에서 내보낸](#step-4-create-a-device-management-profile-in-stagenow) XML 프로필 파일을 추가합니다(이 문서에서).
 5. **확인** > **만들기**를 선택하여 변경 내용을 저장합니다. 정책이 만들어지고 목록에 표시됩니다.

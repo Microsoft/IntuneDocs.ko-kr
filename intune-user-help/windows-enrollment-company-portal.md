@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86aeb2b54d45f111864d71e65b8c90fce7205868
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 86c158f73d820fa2e719fe92b884c77f315fcb94
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508033"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858814"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune 회사 포털에서 Windows 디바이스 등록  
 
@@ -62,8 +62,8 @@ Windows 10 디바이스의 버전에 따라 등록 단계가 다릅니다. 다�
 
 4. 확인된 버전이:  
 
-    * __1607 이상이면__: [**설정** > **계정** > **회사 또는 학교 액세스** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)를 통해 디바이스를 등록합니다.   
-    * __1511 이하이면__: [**설정** > **계정** > **내 계정** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)를 통해 디바이스를 등록합니다.  
+    * __1607 이상__: [**설정** > **계정** > **회사 또는 학교 액세스** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)를 통해 디바이스를 등록합니다.   
+    * __1511 이하__: [**설정** > **계정** > **내 계정** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)를 통해 디바이스를 등록합니다.  
 
 ### <a name="windows-10-mobile-devices"></a>Windows 10 모바일 디바이스
 
@@ -72,8 +72,8 @@ Windows 10 디바이스의 버전에 따라 등록 단계가 다릅니다. 다�
 3. __디바이스 정보__에서 __버전__을 확인합니다.  
 4. 확인된 버전이:  
 
-    * __1607 이상이면__: [**설정** > **회사 또는 학교 액세스** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)를 사용하여 디바이스를 등록합니다.   
-    * __1511 이하이면__: [**설정** > **계정** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)를 사용하여 디바이스를 등록합니다.  
+    * __1607 이상__: [**설정** > **회사 또는 학교 액세스** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)를 사용하여 디바이스를 등록합니다.   
+    * __1511 이하__: [**설정** > **계정** 경로](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)를 사용하여 디바이스를 등록합니다.  
 
 ## <a name="enroll-non-windows-10-devices"></a>Windows 10 이외의 디바이스 등록  
 다음 문서를 사용하여 회사 포털 웹 사이트를 통해 지원되는 기타 Windows 디바이스를 등록할 수 있습니다.   

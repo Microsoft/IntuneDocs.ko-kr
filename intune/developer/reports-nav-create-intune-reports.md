@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f382ce35d1d13a59f1aa5ca6a904c0c9babff8c1
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 58c4db1f4c778050bc91bde79494742e018f5329
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899350"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547896"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune 데이터 웨어하우스 사용
 
@@ -43,7 +43,7 @@ Intune 데이터 웨어하우스를 사용하여 기업 모바일 환경에 대�
 - OData 표준을 사용하는 데이터 모델
 
 > [!Note]
-> System Center Configuration Manager 및 Microsoft Intune과 함께 공동 관리 MDM(모바일 디바이스 관리)을 사용하는 경우 Configuration Manager에서 데이터를 검색해야 합니다. Intune 데이터 웨어하우스에는 Intune 데이터만 포함됩니다. 사용자 지정 보고서에 대한 Configuration Manager Power BI 대시보드를 사용할 수 있습니다. 자세한 내용은 "[System Center Configuration Manager에 대한 Power BI 솔루션 템플릿 발표]( https://powerbi.microsoft.com/blog/sccm-solution-template)" 및 "[Dynamics 365의 Power BI 콘텐츠](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)"를 참조하세요.
+> Microsoft Endpoint Configuration Manager 및 Microsoft Intune과 함께 공동 관리 MDM(모바일 디바이스 관리)을 사용하는 경우 Configuration Manager에서 데이터를 검색해야 합니다. Intune 데이터 웨어하우스에는 Intune 데이터만 포함됩니다. 사용자 지정 보고서에 대한 Configuration Manager Power BI 대시보드를 사용할 수 있습니다. 자세한 내용은 "[Configuration Manager에 대한 Power BI 솔루션 템플릿 발표](https://powerbi.microsoft.com/blog/sccm-solution-template)" 및 "[Dynamics 365의 Power BI 콘텐츠](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)"를 참조하세요.
 
 > [!Important]  
 > 이제 쿼리 매개 변수  `api-version=v1.0`을(를) 설정하여 Intune 데이터 웨어하우스의 v1.0 버전을 사용할 수 있습니다. 데이터 웨어하우스에서 컬렉션 업데이트는 가산적이므로 기존 시나리오가 중단되지 않습니다.<br><br>

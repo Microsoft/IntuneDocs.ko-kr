@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946665"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547034"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Windows 10 이상 설정
 
@@ -44,7 +44,7 @@ Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를
 ### <a name="windows-health-attestation-service-evaluation-rules"></a>Windows 상태 증명 서비스 평가 규칙
 
 - **BitLocker 필요**:  
-   Windows BitLocker 드라이브 암호화는 Windows 운영 체제 볼륨에 저장된 모든 데이터를 암호화합니다. BitLocker는 TPM (신뢰할 수 있는 플랫폼 모듈)을 사용 하 여 Windows 운영 체제 및 사용자 데이터를 보호 합니다. 따라서 컴퓨터를 방치하거나 분실하거나 도난당하더라도 변조를 방지할 수 있습니다. 컴퓨터에 호환되는 TPM이 장착되어 있으면 BitLocker는 TPM을 사용하여 데이터를 보호하는 암호화 키를 잠급니다. 따라서 TPM에서 컴퓨터의 상태를 확인할 때까지 키에 액세스할 수 없습니다.  
+   Windows BitLocker 드라이브 암호화는 Windows 운영 체제 볼륨에 저장된 모든 데이터를 암호화합니다. BitLocker는 TPM (신뢰할 수 있는 플랫폼 모듈)을 사용 하 여 Windows 운영 체제 및 사용자 데이터를 보호 합니다. 따라서 컴퓨터를 방치하거나 분실하거나 도난당하더라도 변조를 방지할 수 있습니다. 컴퓨터에 호환 가능한 TPM이 장착된 경우 BitLocker는 TPM을 사용하여 데이터를 보호하는 암호화 키를 잠급니다. 따라서 TPM에서 컴퓨터의 상태를 확인할 때까지 키에 액세스할 수 없습니다.  
 
    - **구성되지 않음**(*기본값*) - 이 설정은 규정 준수 또는 비준수에 대해 평가되지 않습니다.
    - **필요** - 디바이스가 꺼져 있거나 최대 절전 모드일 때 드라이브에 저장된 데이터를 무단 액세스로부터 보호할 수 있습니다.  
@@ -102,9 +102,9 @@ Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를
 
 Windows 10 이상을 실행하는 공동 관리 디바이스에만 적용됩니다. Intune 전용 디바이스는 사용할 수 없음 상태를 반환합니다.
 
-- **System Center Configuration Manager에서 디바이스 준수 필요**:  
+- **Configuration Manager에서 장치 준수 필요**:  
   - **구성되지 않음**(*기본값*) - Intune은 규정 준수에 대한 Configuration Manager 설정을 확인하지 않습니다.
-  - **필요** - System Center Configuration Manager의 모든 설정(구성 항목)을 준수해야 합니다.  
+  - **필요** - Configuration Manager의 모든 설정(구성 항목)을 준수해야 합니다.  
 
     예를 들어 모든 소프트웨어 업데이트를 디바이스에 설치해야 합니다. Configuration Manager에서 이 요구 사항의 상태는 “설치됨”입니다. 디바이스의 프로그램이 알 수 없는 상태에 있는 경우 디바이스는 Intune에서 비준수가 됩니다.
 

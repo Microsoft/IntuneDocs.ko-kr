@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1362f6c6453569d1c306cd16397cc9a7f83736e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6ed1f43e7c7e6f0580cb22513a489fb32c30e5f6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72495338"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206757"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Intune에서 Windows Phone 8.1 디바이스에 대한 사용자 지정 설정 사용
 
@@ -33,21 +33,21 @@ Windows Phone 8.1 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uni
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
-    - **이름**: `windows phone custom profile` 등의 프로필의 이름을 입력합니다.
-    - **설명**: 설정에 대한 설명을 입력합니다.
-    - **플랫폼**: **Windows Phone 8.1**을 선택합니다.
-    - **프로필 유형**: **사용자 지정**을 선택합니다.
+    - **이름**: 프로필에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 프로필 이름을 지정합니다. 예를 들어 좋은 프로필 이름은 **Windows phone 사용자 지정 프로필**입니다.
+    - **설명**: 설정에 대한 개요와 기타 중요한 모든 세부 정보를 제공하는 설명을 입력합니다.
+    - **플랫폼**: **Windows Phone 8.1**를 선택 합니다.
+    - **프로필 유형**: **사용자 지정**을 선택 합니다.
 
 4. **사용자 지정 OMA-URI 설정**에서 **추가**를 선택합니다. 다음 설정을 입력합니다.
 
     - **이름**: 설정 목록에서 쉽게 식별할 수 있도록 OMA-URI 설정에 대한 고유한 이름을 입력합니다.
     - **설명**: 설정 개요를 제공하는 설명과 프로필을 찾는 데 도움이 되는 기타 관련 정보를 입력합니다.
-    - **OMA-URI**(대/소문자 구분): 설정으로 사용할 OMA-URI를 입력합니다.
-    - **데이터 형식**: 이 OMA URI 설정에 사용할 데이터 형식을 선택합니다. 옵션은 다음과 같습니다.
+    - **OMA-URI**(대/소문자 구분): 설정으로 사용하려는 OMA-URI를 입력합니다.
+    - **데이터 형식**: 이 OMA-URI 설정에 사용할 데이터 형식을 선택합니다. 옵션은 다음과 같습니다.
 
         - 문자열
         - 문자열(XML 파일)
@@ -57,16 +57,16 @@ Windows Phone 8.1 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uni
         - 부울
         - Base64(파일)
 
-    - **값**: 입력한 OMA-URI와 연결할 데이터를 입력합니다. 값은 선택한 데이터 형식에 따라 달라집니다. 예를 들어 **날짜 및 시간**을 선택한 경우 날짜 선택에서 값을 선택합니다.
+    - **값**: 입력한 OMA-URI와 연결할 데이터를 입력합니다. 값은 선택한 데이터 형식에 따라 달라집니다. 예를 들어, **날짜 및 시간**을 선택한 경우 날짜 선택에서 값을 선택합니다.
 
     일부 설정을 추가한 후 **내보내기**를 선택할 수 있습니다. **내보내기**는 쉼표로 구분된 값(.csv) 파일에서 추가한 모든 값의 목록을 만듭니다.
 
 5. **확인**을 선택하여 변경 내용을 저장합니다. 필요에 따라 더 많은 설정을 계속 추가합니다.
-6. 끝나면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **디바이스 구성 - 프로필** 목록에 나타납니다.
+6. 완료되면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **디바이스 - 구성 프로필** 목록에 표시됩니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서 Windows 8.1 전화 장치는 캐리어 범위를 벗어날 때 셀룰러 네트워크를 변경할 수 없습니다.
+다음 예에서는 휴대폰 장치를 외부로 이동할 때 휴대폰 장치에서 셀룰러 네트워크를 변경할 수 Windows 8.1.
 
 - **이름**: 셀룰러 데이터 로밍 허용
 - **설명**: 셀룰러 데이터 로밍을 허용 하거나 허용 하지 않습니다.
@@ -76,6 +76,6 @@ Windows Phone 8.1 사용자 지정 프로필은 OMA-URI(Open Mobile Alliance Uni
 
 ## <a name="next-steps"></a>다음 단계
 
-프로필이 만들어지지만 아직 아무것도 하지 않습니다. 그런 다음, [프로필을 할당합니다](device-profile-assign.md).
+프로필이 만들어지지만 아직 아무것도 하지 않습니다. 다음으로, [프로필을 할당](../device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Windows 10 디바이스](../custom-settings-windows-10.md)에 대한 사용자 지정 프로필을 만드는 방법을 참조하세요.
+[Windows 10 디바이스에 대한 사용자 지정 프로필](../custom-settings-windows-10.md)을 만듭니다.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d3d9473b68f0420670130203409abf477355d93f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508850"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885527"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Intune Exchange Connector 문제 해결
 
@@ -40,7 +40,7 @@ Intune에서 Exchange Connector 문제 해결을 시작 하기 전에 견고한 
   - 커넥터를 처음으로 설정 하 고 있습니까? 
   - 커넥터가 제대로 작동 하 고 실패 하나요?
   - 작동 하 고 있는 경우 Intune 환경, Exchange 환경 또는 connector 소프트웨어를 실행 하는 컴퓨터에서 어떤 변경이 발생 하나요?
-- MDM 기관 이란? System Center Configuration Manager 되는 경우 사용 하는 Configuration Manager 버전은 무엇 인가요?
+- MDM 기관 이란?
 - 어떤 버전의 Exchange를 사용 하 고 있습니까?
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Powershell을 사용하여 Exchange 커넥터에 더 많은 데이터를 가져오는 문제
@@ -65,10 +65,10 @@ Intune에서 Exchange Connector 문제 해결을 시작 하기 전에 견고한 
 
 ### <a name="common-issues-for-connector-configurations"></a>커넥터 구성에 대 한 일반적인 문제
 
-- **계정 사용 권한**: Microsoft Intune Exchange Connector 대화 상자에서 [필수 Windows PowerShell Exchange cmdlet](exchange-connector-install.md#exchange-cmdlet-requirements)을 실행할 수 있는 적절한 사용 권한이 있는 사용자 계정을 지정했는지 확인합니다.
+- **계정 권한**: Microsoft Intune Exchange Connector 대화 상자에서 [필수 Windows PowerShell Exchange cmdlet](exchange-connector-install.md#exchange-cmdlet-requirements)을 실행할 수 있는 적절한 사용 권한이 있는 사용자 계정을 지정했는지 확인합니다.
 - **알림 전자 메일 메시지**: 알림을 사용 하도록 설정 하 고 알림 계정을 지정 합니다.
 - **클라이언트 액세스 서버 동기화**: exchange connector를 구성할 때 exchange connector를 호스트 하는 서버에서 네트워크 대기 시간이 가장 낮은 ca를 지정 합니다. CAS와 Exchange 커넥터 간의 통신 대기 시간은 특히 Exchange Online Dedicated를 사용할 때 디바이스 검색을 지연시킬 수 있습니다.
-- **동기화 일정**: 디바이스를 새로 등록한 사용자는 Exchange 커넥터가 Exchange CAS와 동기화될 때까지 액세스가 지연될 수 있습니다. 전체 동기화는 하루에 한 번 수행되며 델타(빠른) 동기화는 하루에 여러 번 수행됩니다. [수동으로 빠른 동기화 또는 전체 동기화를 강제 수행](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync)하여 지연을 최소화할 수 있습니다.
+- **동기화 일정**: 디바이스를 새로 등록한 사용자는 Exchange Connector가 Exchange CAS와 동기화될 때까지 액세스가 지연될 수 있습니다. 전체 동기화는 하루에 한 번 수행되며 델타(빠른) 동기화는 하루에 여러 번 수행됩니다. [수동으로 빠른 동기화 또는 전체 동기화를 강제 수행](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync)하여 지연을 최소화할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 다음 문서는 일반적인 문제 및 특정 오류를 해결 하는 데 도움이 될 수 있습니다.

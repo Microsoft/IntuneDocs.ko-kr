@@ -1,12 +1,12 @@
 ---
-title: Windows 8.1을 실행하는 디바이스에 대한 Microsoft Intune 디바이스 제한 설정
+title: Microsoft Intune의 Windows 8.1 디바이스 제한 설정 - Azure | Microsoft Docs
 titleSuffix: ''
 description: Windows 8.1을 실행하는 디바이스에서 디바이스 설정 및 기능을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,19 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 82eaf1bc2c0737e1cc54751ff6fb5751227d180c
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489839"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302977"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 이상 디바이스 제한 설정
+# <a name="microsoft-intune-windows-81-device-restriction-settings"></a>Microsoft Intune Windows 8.1 디바이스 제한 설정
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-이 아티클에서는 Windows 8.1 이상을 실행하는 디바이스에 대해 구성할 수 있는 Microsoft Intune 디바이스 제한 설정을 보여줍니다.
-
+이 문서에서는 Windows 8.1을 실행하는 디바이스에 대해 구성할 수 있는 Microsoft Intune 디바이스 제한 설정을 보여줍니다.
 
 ## <a name="general"></a>일반
 
@@ -48,8 +45,6 @@ ms.locfileid: "72489839"
 Windows 8.1 디바이스에 대해 이 설정을 사용하려면 디바이스의 모든 사용자가 Microsoft 계정을 가지고 있어야 합니다.
 암호화가 작동하려면 디바이스가 [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) 하드웨어 인증 요구 사항을 만족해야 합니다.
 디바이스에 암호화를 적용하는 경우, 복구 키는 자신의 OneDrive 계정에서 액세스한 Microsoft 계정에서만 액세스할 수 있습니다. 사용자를 대신하여 이 키를 복구할 수 없습니다. 
-
-
 
 ## <a name="browser"></a>브라우저
 - **자동 채우기** - 사용자가 브라우저에서 자동 완성 설정을 변경할 수 있습니다.
@@ -75,3 +70,7 @@ Windows 8.1 디바이스에 대해 이 설정을 사용하려면 디바이스의
 ## <a name="cloud-and-storage"></a>클라우드 및 스토리지
 - **작업 폴더 URL** - 문서를 디바이스 간에 동기화될 수 있도록 작업 폴더의 URL을 설정합니다.
 - **Microsoft 계정이 없는 Windows Mail 앱 액세스** - Microsoft 계정 없이 Windows Mail 애플리케이션에 대한 액세스를 사용하도록 설정합니다.
+
+## <a name="next-steps"></a>다음 단계
+
+[Windows 10 이상](device-restrictions-windows-10.md)에서 장치 제한 프로필을 만듭니다.

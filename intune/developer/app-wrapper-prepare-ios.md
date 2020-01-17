@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713483"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653668"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune 앱 래핑 도구를 사용하여 앱 보호 정책에 대해 iOS 앱 준비
 
@@ -181,7 +181,7 @@ macOS 터미널을 열고 다음 명령을 실행합니다.
 > [!NOTE]
 > 아래 표에 나와 있는 것처럼 일부 매개 변수는 선택 사항입니다.
 
-**예:** 다음 예제 명령은 MyApp.ipa 앱에 대해 앱 래핑 도구를 실행합니다. 프로비저닝 프로필 및 서명 인증서의 SHA-1 해시가 지정되고 래핑된 앱에 서명하는 데 사용됩니다. 출력 앱(MyApp_Wrapped.ipa)이 생성되어 데스크탑 폴더에 저장됩니다.
+**예제:** 다음 예제 명령은 MyApp.ipa 앱에 대해 앱 래핑 도구를 실행합니다. 프로비저닝 프로필 및 서명 인증서의 SHA-1 해시가 지정되고 래핑된 앱에 서명하는 데 사용됩니다. 출력 앱(MyApp_Wrapped.ipa)이 생성되어 데스크탑 폴더에 저장됩니다.
 
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true

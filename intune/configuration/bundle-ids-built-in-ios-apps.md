@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 01/06/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7e2bd869f898bbe7f894cfd9e9c767c8b42e9c4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74465641"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691857"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune에서 사용할 수 있는 기본 제공 iOS 앱의 번들 ID
 
@@ -31,7 +31,7 @@ iOS 디바이스에서 기능을 구성할 때 iOS 디바이스에서 기본 제
 
 | 번들 ID                   | 앱 이름     | 게시자 |
 |-----------------------------|--------------|-----------|
-| com. apple 스토어             | 앱 스토어    | Apple     |
+| com.apple.AppStore          | 앱 스토어    | Apple     |
 | com.apple.calculator        | 계산기   | Apple     |
 | com.apple.mobilecal         | 일정     | Apple     |
 | com.apple.camera            | 카메라       | Apple     |

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5665ae7d8093decc8ef2ea4ab1911b27e20e25dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: edea807b8c71f519c28f19b0343fa8ea0977712a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505782"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855149"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Android 디바이스에서 화면이 잠기기까지 걸리는 기간을 설정하는 방법
 
@@ -32,17 +32,17 @@ ms.locfileid: "72505782"
 
 ## <a name="native-non-samsung-knox-device"></a>네이티브(비 Samsung Knox) 디바이스
 
-1. 디바이스의 **설정**에서 **보안**&gt;**자동으로 잠금**을 누릅니다(일부 디바이스에서는 **다음 시간 후 전화 잠금**으로 표시됨).
+1. 디바이스의 **설정**에서 **보안** &gt; **자동으로 잠금**을 누릅니다(일부 디바이스에서는 **다음 시간 후 전화 잠금**으로 표시됨).
 
-    **자동으로 잠금**(일부 디바이스의 경우 **다음 시간 후 전화 잠금**)이 표시되지 않으면 **설정**&gt;**화면 잠금**&gt;**암호**에서 올바른 암호를 설정했는지 확인합니다.
+    **자동으로 잠금**(일부 디바이스의 경우 **다음 시간 후 전화 잠금**)이 표시되지 않으면 **설정** &gt; **화면 잠금** &gt; **암호**에서 올바른 암호를 설정했는지 확인합니다.
 
 2. 암호 제한 시간 값을 선택합니다.
 
 ## <a name="samsung-knox-device"></a>Samsung Knox 디바이스
 
-1. 디바이스의 **설정**에서 **잠금 화면 및 보안**&gt;**자동으로 잠금**을 누릅니다.
+1. 디바이스의 **설정**에서 **잠금 화면 및 보안** &gt; **자동으로 잠금**을 탭합니다.
 
-    **자동으로 잠금**(일부 디바이스의 경우 **다음 시간 후 전화 잠금**)이 표시되지 않으면 **설정**&gt;**화면 잠금**&gt;**암호**에서 올바른 암호를 설정했는지 확인합니다.
+    **자동으로 잠금**(일부 디바이스의 경우 **다음 시간 후 전화 잠금**)이 표시되지 않으면 **설정** &gt; **화면 잠금** &gt; **암호**에서 올바른 암호를 설정했는지 확인합니다.
 
 2. 암호 제한 시간 값을 선택합니다.
 

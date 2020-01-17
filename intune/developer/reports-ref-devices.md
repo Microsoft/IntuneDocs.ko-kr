@@ -6,7 +6,7 @@ keywords: Intune 데이터 웨어하우스
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503423"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654076"
 ---
 # <a name="reference-for-devices-entities"></a>디바이스 엔터티에 대한 참조
 
@@ -50,7 +50,7 @@ ms.locfileid: "72503423"
 
 ### <a name="example"></a>예제
 
-| deviceTypeID  | 이름 | 설명 |
+| deviceTypeID  | Name | 설명 |
 |---------|------------|--------|
 | 0 |데스크톱 |Windows 데스크톱 디바이스 |
 | 1 |WindowsRT |WindowsRT 디바이스 |
@@ -184,7 +184,7 @@ ms.locfileid: "72503423"
 
 ### <a name="example"></a>예제
 
-| managementStateID  | 이름 | 설명 |
+| managementStateID  | Name | 설명 |
 |---------|------------|--------|
 | 0 |관리 대상 | 보류 중인 원격 작업 없이 관리됨 |
 | 1 |RetirePending | 디바이스에 대한 보류 중인 사용 중지 명령이 없습니다. |
@@ -211,14 +211,14 @@ ms.locfileid: "72503423"
 
 ### <a name="example"></a>예제
 
-| ManagementAgentTypeID  | 이름 | 설명 |
+| ManagementAgentTypeID  | Name | 설명 |
 |---------|------------|--------|
 | 1 |EAS | Exchange Active Sync를 통해 디바이스를 관리 |
 | 2 |MDM | 디바이스가 MDM 에이전트를 사용하여 관리됨 |
 | 3 |EasMdm | 디바이스가 Exchange Activesync와 MDM 에이전트를 둘 다 사용하여 관리됨 |
 | 4 |IntuneClient | 디바이스가 Intune PC 에이전트를 사용하여 관리됨 |
 | 5 |EasIntuneClient | 디바이스가 Exchange Active Sync와 Intune PC 에이전트를 둘 다 사용하여 관리됨 |
-| 8 |ConfigManagerClient | 디바이스가 System Center Configuration Manager 에이전트를 사용하여 관리됨 |
+| 8 |ConfigManagerClient | 디바이스가 Configuration Manager 에이전트에서 관리됨 |
 | 16 |Unknown | 알 수 없는 관리 에이전트 유형 |
 
 ## <a name="devices"></a>디바이스

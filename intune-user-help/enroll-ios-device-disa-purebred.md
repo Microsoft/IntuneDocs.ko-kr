@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c484b98466c1418016f4ebc6cc805e412d7891e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 31858828cbbfaa1ca71d94f6e0f568c35bb490c1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415791"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856582"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-disa-purebred"></a>회사 포털 및 DISA Purebred를 사용 하 여 iOS 또는 iPadOS 장치 설정  
 
@@ -56,7 +56,7 @@ Intune 회사 포털 앱으로 디바이스를 등록하여 조직의 메일, �
 
 * 학교 또는 회사에서 제공 하는 스마트 카드
 * 스마트 카드를 사용 하 여 로그인 할 수 있는 컴퓨터 또는 키오스크에 대 한 액세스
-* 모바일 장치
+* 모바일 디바이스
 * 장치에 설치 된 iOS 및 iPadOS 용 Intune 회사 포털 앱   
 
 또한 설치 하는 동안 Purebred 에이전트 나 담당자에 게 문의 해야 합니다.      

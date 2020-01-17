@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2319fb0d1198289398912793e52482bf66d87173
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506997"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206842"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Microsoft Intune에서 Android 얼룩말 장치에 대 한 문제 해결 및 잠재적인 문제 확인
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune에서 [MX (얼룩말 Mobility Extensions)를 사용 하 여 Android 얼룩말 장치를 관리할](android-zebra-mx-overview.md)수 있습니다. 얼룩말 장치를 사용 하는 경우 StageNow에서 프로필을 만들어 설정을 관리 하 고 Intune에 업로드 합니다. Intune은 StageNow 앱을 사용 하 여 장치에 설정을 적용 합니다. 또한 StageNow 앱은 문제를 해결 하는 데 사용 되는 자세한 로그 파일을 장치에 만듭니다.
 

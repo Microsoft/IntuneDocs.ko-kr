@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832568"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885927"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
@@ -40,7 +40,7 @@ ms.locfileid: "74832568"
 - 어떤 플랫폼 (Android, iOS, Windows)에 문제가 있나요?
 - 얼마나 많은 사용자가 영향을 받습니까? 모든 사용자에 게 영향을 미치는지 아니면 일부에만 적용 되나요?
 - 영향을 받는 장치는 몇 개입니까? 모든 장치가 영향을 받는지 아니면 일부 입니까?
-- MDM 기관 이란? System Center Configuration Manager 경우 사용 중인 Configuration Manager 버전은 무엇 인가요?
+- MDM 기관 이란?
 - 등록을 수행 하는 방법 등록 프로필을 사용 하 여 BYOD (사용자 소유의 장치) 또는 DEP (Apple 장비 등록 프로그램)를 사용 하나요?
 
 ## <a name="error-messages"></a>오류 메시지
@@ -186,7 +186,7 @@ CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 �
 **원인:** APNs (Apple Push Notification Service) 인증서가 없거나 잘못 되었거나 만료 되었습니다.
 
 #### <a name="resolution"></a>해결 방법
-유효한 APNs 인증서가 Intune에 추가 되었는지 확인 합니다. 자세한 내용은 [iOS 및 Mac 디바이스 관리 설정](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)을 참조하세요. 
+유효한 APNs 인증서가 Intune에 추가 되었는지 확인 합니다. 자세한 내용은 [iOS 등록 설정](ios-enroll.md)을 참조 하세요.
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,6 @@ APNs 인증서를 갱신 하 고 장치를 다시 등록 합니다.
 > APNs 인증서를 갱신 해야 합니다. APNs 인증서를 바꾸지 마세요. 인증서를 교체 하는 경우 Intune에서 모든 iOS 장치를 다시 등록 해야 합니다. 
 
 - Intune 독립 실행형에서 APNs 인증서를 갱신 하려면 [APPLE MDM push Certificate 갱신](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate)을 참조 하세요.
-- Configuration Manager를 사용 하 여 Intune 하이브리드에서 APNs 인증서를 갱신 하려면 [System Center Configuration Manager 및 Microsoft Intune를 사용 하 여 iOS 하이브리드 장치 관리 설정](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac)을 참조 하세요.
 - Office 365에서 APNs 인증서를 갱신 하려면 [iOS 장치용 Apns 인증서 만들기](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7)를 참조 하세요.
 
 ### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR 연결이 잘못 되었습니다.
@@ -230,7 +229,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>해결 방법
 
 1. 등록 프로필을 편집 합니다. 프로필을 변경할 수 있습니다. 용도는 프로필의 수정 시간을 업데이트 하는 것입니다.
-2. DEP 관리 디바이스를 동기화합니다. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택하고 토큰을 선택한 후 **지금 동기화**를 선택합니다. 동기화 요청이 Apple에 전송됩니다.
+2. 다음과 같이 DEP 관리 디바이스를 동기화합니다. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택하고 토큰을 선택한 후 **지금 동기화**를 선택합니다. 동기화 요청이 Apple에 전송됩니다.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>사용자 로그인 시 DEP 등록 중단
 등록 프로필을 할당 하는 DEP 관리 장치를 켜면 자격 증명을 입력 한 후 초기 설치가 시작 됩니다.

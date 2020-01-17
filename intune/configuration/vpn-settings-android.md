@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d9fefc2413e2dafbf5d0ad67ea15f5f8406cc1c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 458c38e4cce7022d7a56e86cc171365f1496741e
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506553"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206298"
 ---
 # <a name="android-device-settings-to-configure-vpn-in-intune"></a>Intune에서 VPN을 구성 하는 Android 장치 설정
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 이 문서에서는 Android 디바이스에서 제어할 수 있는 다양한 메일 설정을 나열하고 설명합니다. MDM (모바일 장치 관리) 솔루션의 일부로, 이러한 설정을 사용 하 여 VPN 연결을 만들고, VPN에서 인증 하는 방법, VPN 서버 유형 등을 선택 합니다.
 
@@ -38,7 +38,7 @@ Intune의 VPN 프로필에 대 한 자세한 내용은 [vpn 프로필](vpn-setti
 
 ## <a name="base-vpn"></a>기본 VPN
 
-- **연결 이름**: 이 연결에 대한 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다. 예를 들어 다음과 같이 입력합니다. `Contoso VPN`
+- **연결 이름**: 이 연결의 이름을 입력합니다. 최종 사용자는 디바이스에서 사용 가능한 VPN 연결을 검색할 때 이 이름을 볼 수 있습니다. 예를 들어 다음과 같이 입력합니다. `Contoso VPN`
 - **IP 주소 또는 FQDN**: 디바이스가 연결되는 VPN 서버의 IP 주소 또는 FQDN(정규화된 도메인 이름)을 입력합니다. 예를 들어 **192.168.1.1** 또는 **vpn.contoso.com**을 입력합니다.
 
   - **인증 방법**: 디바이스가 VPN 서버에 인증하는 방법을 선택합니다. 옵션은 다음과 같습니다.
@@ -55,8 +55,8 @@ Intune의 VPN 프로필에 대 한 자세한 내용은 [vpn 프로필](vpn-setti
   - **Pulse Secure**
   - **Citrix SSO**
 
-- **지문**(Check Point Capsule VPN에만 해당): VPN 서버를 신뢰할 수 있는지 확인하려면 **Contoso 지문 코드**와 같은 문자열을 입력합니다. 클라이언트가 동일한 지문을 가진 서버를 신뢰 하는 것을 알 수 있도록 지문이 클라이언트에 전송 됩니다. 디바이스에 지문이 없으면, 사용자에게 지문을 보여주면서 VPN 서버를 신뢰할 것인지 묻는 메시지가 표시됩니다. 사용자는 지문을 수동으로 확인한 후 연결할 신뢰를 선택합니다.
-- **Citrix VPN 특성에 대한 키 및 값 쌍을 입력**(Citrix에만 해당): Citrix에서 제공하는 키 및 값 쌍을 입력합니다. 이러한 값은 VPN 연결의 속성을 구성합니다. 
+- **지문**(검사점 캡슐 VPN에만 해당): VPN 서버를 신뢰할 수 있는지 확인하려면 **Contoso 지문 코드**와 같은 문자열을 입력합니다. 클라이언트가 동일한 지문을 가진 서버를 신뢰 하는 것을 알 수 있도록 지문이 클라이언트에 전송 됩니다. 디바이스에 지문이 없으면, 사용자에게 지문을 보여주면서 VPN 서버를 신뢰할 것인지 묻는 메시지가 표시됩니다. 사용자는 지문을 수동으로 확인한 후 연결할 신뢰를 선택합니다.
+- **Citrix VPN 특성에 대한 키 및 값 쌍 입력**(Citrix에만 해당): Citrix에서 제공하는 키 및 값 쌍을 입력합니다. 이러한 값은 VPN 연결의 속성을 구성합니다. 
 
   키와 값 쌍을 사용 하 여 쉼표로 구분 된 값 파일 (.csv)을 **가져올** 수도 있습니다. **내 데이터에 헤더** 및 **키** 속성이 있는지 검토 해야 합니다.
 

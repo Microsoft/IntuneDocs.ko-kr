@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e04950a67938d883b0762c03efa371fcb74d0731
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098161"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855479"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>회사 포털 앱을 사용 하 여 macOS 장치 등록  
 
@@ -56,7 +56,7 @@ Intune 회사 포털 앱으로 macOS 디바이스를 등록하여 회사 또는 
 2. 회사 포털 pkg 파일이 다운로드 됩니다. 설치 관리자를 열고 단계를 계속 진행 합니다. 
 3. 소프트웨어 사용권 계약에 동의합니다. 
 4. 소프트웨어를 설치 하려면 장치 암호 또는 등록 된 지문을 입력 하세요.  
-5. 회사 포털를 엽니다. 
+5. 회사 포털을 엽니다. 
 
 > [!IMPORTANT]
 > Microsoft 자동 업데이트가 열리고 Microsoft 소프트웨어를 업데이트할 수 있습니다. 모든 업데이트를 설치한 후 회사 포털 앱을 엽니다. 최상의 설치 환경을 위해 최신 버전의 Microsoft 자동 업데이트 및 회사 포털를 설치 합니다.  
@@ -67,18 +67,17 @@ Intune 회사 포털 앱으로 macOS 디바이스를 등록하여 회사 또는 
 
 1. 회사 또는 학교 계정을 사용하여 회사 포털에 로그인합니다.  
 2. 앱이 열리면 **시작**을 선택 합니다.  
-3. 조직에서 등록 된 장치에서 [볼 수 있는 사항과 볼 수 없는 내용을](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) 검토 합니다. 그런 다음 **계속**을 선택합니다.  
-4. **관리 프로필 설치** 화면에서 **프로필 다운로드**를 선택 합니다.   
+3. 조직에서 등록 된 장치에서 볼 수 있는 사항과 볼 수 없는 내용을 검토 합니다. 그런 다음 **계속**을 선택합니다.
+4.  메시지가 표시 되 면 **관리 프로필 설치** 화면에서 장치 암호를 입력 합니다.
 
-    ![회사 포털의 예제 스크린샷, 관리 프로필 설치 화면, "프로필 다운로드" 단추 강조 표시](./media/install-mgmt-profile-mac-1911.PNG)   
-5. 장치의 시스템 기본 설정이 열립니다. **설치** 를 선택한 다음 **설치** 를 다시 선택 합니다. 메시지가 표시 되 면 장치 암호를 입력 합니다.  
+    ![회사 포털의 예제 스크린샷, 관리 프로필 설치 화면, 암호 프롬프트 강조 표시](./media/install-management-profile-macos-1912.PNG)   
+5. **장치 관리 확인** 화면에서 **시스템 기본 설정 열기**를 선택 합니다.  
 
-    ![MacOS 시스템 기본 설정, 설치 프롬프트, "설치" 단추를 강조 표시 하는 예제 스크린샷](./media/system-preference-install-1911.PNG)  
-6. 프로필이 설치 되 면 **관리 프로필** 아래의 프로필 목록에 표시 됩니다.  
-
-   ![설치 된 관리 프로필을 강조 표시 하는 macOS 시스템 기본 설정, 프로필 화면의 예제 스크린샷](./media/system-preference-verify-1911.PNG)   
-7. 회사 포털로 돌아갑니다.   
-8. 조직에서 장치 설정을 업데이트 해야 할 수 있습니다. 설정 업데이트가 완료 되 면 **설정 확인**을 선택 합니다.  
+    !["시스템 기본 설정 열기" 단추를 강조 표시 하는 장치 관리 확인 화면의 예제 스크린샷](./media/confirm-device-management-macos-1912.PNG)  
+6. 장치의 시스템 기본 설정이 열립니다. 장치 프로필 목록에서 **관리 프로필** **을 선택 하 고 승인 > ** **승인**을 선택 합니다.  
+    ![시스템 기본 설정의 스크린샷 스크린샷, 관리 프로필 화면, "승인" 단추를 강조 표시 합니다.](./media/management-profile-approve-macos-1912.PNG)   
+1. 회사 포털로 돌아가서 **계속**을 선택 합니다.    
+2. 조직에서 장치 설정을 업데이트 해야 할 수 있습니다. 설정 업데이트가 완료 되 면 **설정 확인**을 선택 합니다.  
 
     ![회사 포털, 장치 설정 업데이트 화면의 예제 스크린샷, "설정 확인" 단추가 강조 표시 됩니다.](./media/update-settings-mac-1911.PNG)  
 9. 설치가 완료 되 면 **완료**를 선택 합니다.  
@@ -88,7 +87,7 @@ Intune 회사 포털 앱으로 macOS 디바이스를 등록하여 회사 또는 
 
 등록 하는 동안 문제가 발생 하는 경우 **도움말** > **진단 보고서 보내기** 로 이동 하 여 Microsoft 앱 개발자에 게 문제를 보고 합니다. 이 정보는 앱을 개선 하는 데 사용 됩니다. 또한 IT 지원 담당자가 도움을 받을 수 있는 경우이 정보를 사용 하 여 문제를 해결 합니다.  
 
-Microsoft에 문제를 보고 한 후 사용자 환경의 세부 정보를 IT 지원 담당자에 게 보낼 수 있습니다. **전자 메일 세부 정보**를 선택 합니다. 전자 메일의 본문에서 경험을 입력 합니다. 지원 담당자의 전자 메일 주소를 찾으려면 회사 포털 앱 > **연락처**로 이동 합니다. 또는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 확인 합니다.  
+Microsoft에 문제를 보고 한 후 사용자 환경의 세부 정보를 IT 지원 담당자에 게 보낼 수 있습니다. **전자 메일 세부 정보**를 선택 합니다. 전자 메일의 본문에서 경험을 입력 합니다. 지원 담당자의 전자 메일 주소를 찾으려면 회사 포털 앱 > **연락처**로 이동 합니다. 또는 [회사 포털 웹 사이트](https://go.microsoft.com/fwlink/?linkid=2010980)를 확인합니다.  
  
 
 또한 Microsoft Intune 회사 포털 팀은 여러분의 의견을 듣고 싶습니다. **도움말** > **사용자 의견 보내기** 로 이동 하 여 생각과 아이디어를 공유 합니다.  

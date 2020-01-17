@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2019
 ms.article: article
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54c38bac5ddf9eee1dd5f1dc6d544de3fa2395ab
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d986097f4f3dda0278d767c911b8c1e957e9c010
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506908"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206740"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune에서 Windows Holographic for Business 디바이스에 대한 사용자 지정 설정 사용
 
@@ -37,21 +37,21 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 구성** > **프로필** > **프로필 만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
-    - **이름**: `hololens custom profile` 등의 프로필의 이름을 입력합니다.
-    - **설명**: 설정에 대한 설명을 입력합니다.
+    - **이름**: 프로필에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 프로필 이름을 지정합니다. 예를 들어, 좋은 프로필 이름은 **Hololens 사용자 지정 프로필**입니다.
+    - **설명**: 설정에 대한 개요와 기타 중요한 모든 세부 정보를 제공하는 설명을 입력합니다.
     - **플랫폼**: **Windows 10 이상**을 선택합니다.
-    - **프로필 유형**: **사용자 지정**을 선택합니다.
+    - **프로필 유형**: **사용자 지정**을 선택 합니다.
 
 4. **사용자 지정 OMA-URI 설정**에서 **추가**를 선택합니다. 다음 설정을 입력합니다.
 
     - **이름**: 설정 목록에서 쉽게 식별할 수 있도록 OMA-URI 설정에 대한 고유한 이름을 입력합니다.
     - **설명**: 설정에 대한 개요와 기타 중요한 모든 세부 정보를 제공하는 설명을 입력합니다.
-    - **OMA-URI**(대/소문자 구분): 설정으로 사용할 OMA-URI를 입력합니다.
-    - **데이터 형식**: 이 OMA URI 설정에 사용할 데이터 형식을 선택합니다. 옵션은 다음과 같습니다.
+    - **OMA-URI**(대/소문자 구분): 설정으로 사용하려는 OMA-URI를 입력합니다.
+    - **데이터 형식**: 이 OMA-URI 설정에 사용할 데이터 형식을 선택합니다. 옵션은 다음과 같습니다.
 
         - 문자열
         - 문자열(XML 파일)
@@ -61,12 +61,12 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
         - 부울
         - Base64(파일)
 
-    - **값**: 입력한 OMA-URI와 연결할 데이터를 입력합니다. 값은 선택한 데이터 형식에 따라 달라집니다. 예를 들어 **날짜 및 시간**을 선택한 경우 날짜 선택에서 값을 선택합니다.
+    - **값**: 입력한 OMA-URI와 연결할 데이터를 입력합니다. 값은 선택한 데이터 형식에 따라 달라집니다. 예를 들어, **날짜 및 시간**을 선택한 경우 날짜 선택에서 값을 선택합니다.
 
     일부 설정을 추가한 후 **내보내기**를 선택할 수 있습니다. **내보내기**는 쉼표로 구분된 값(.csv) 파일에서 추가한 모든 값의 목록을 만듭니다.
 
 5. **확인**을 선택하여 변경 내용을 저장합니다. 필요에 따라 더 많은 설정을 계속 추가합니다.
-6. 끝나면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **디바이스 구성 - 프로필** 목록에 나타납니다.
+6. 완료되면 **확인** > **만들기**를 선택하여 Intune 프로필을 만듭니다. 완료되면 프로필이 **디바이스 - 구성 프로필** 목록에 표시됩니다.
 
 ## <a name="recommended-custom-settings"></a>권장되는 사용자 지정 설정
 
@@ -77,28 +77,28 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Integer<br/>0 – 허용되지 않음<br/>1 - 허용됨(기본값)|
+> |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|정수<br/>0 – 허용되지 않음<br/>1 - 허용됨(기본값)|
 
 ### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Integer<br/>0 - 업데이트 서비스가 허용되지 않습니다 <br/>1 - 업데이트 서비스가 허용됨(기본값).|
+> |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|정수<br/>0 - 업데이트 서비스가 허용되지 않습니다 <br/>1 - 업데이트 서비스가 허용됨(기본값).|
 
 ### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 – 허용되지 않음<br/>1 - 허용됨(기본값)|
+> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|정수<br/>0 – 허용되지 않음<br/>1 - 허용됨(기본값)|
 
 ### <a name="requireupdatesapprovalhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-requireupdateapproval"></a>[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0 – 구성되지 않음. 디바이스는 모든 적용 가능한 업데이트를 설치합니다.<br/>1 – 디바이스는 적용 가능한 업데이트뿐 아니라 승인된 업데이트 목록에 있는 업데이트도 설치합니다. 배포에 앞서 테스트가 필요한 경우처럼 디바이스에 업데이트의 배포를 IT로 제어하고자 하는 경우 이 정책을 1로 설정하십시오.|
+> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|정수<br/>0 – 구성되지 않음. 디바이스는 모든 적용 가능한 업데이트를 설치합니다.<br/>1 – 디바이스는 적용 가능한 업데이트뿐 아니라 승인된 업데이트 목록에 있는 업데이트도 설치합니다. 배포에 앞서 테스트가 필요한 경우처럼 디바이스에 업데이트의 배포를 IT로 제어하고자 하는 경우 이 정책을 1로 설정하십시오.|
 
 ### <a name="scheduledinstalltimehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-scheduledinstalltime"></a>[ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
 
@@ -133,7 +133,7 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Integer<br/>0 - 디바이스가 현재 활성 사용자가 없는 상태로 돌아오는 경우 즉시 삭제<br/>1 - 스토리지 용량 임계값(기본값)에서 삭제<br/>2 - 스토리지 용량 임계값 및 프로필 비활성 임계값 모두에서 삭제|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|정수<br/>0 - 디바이스가 현재 활성 사용자가 없는 상태로 돌아오는 경우 즉시 삭제<br/>1 - 스토리지 용량 임계값(기본값)에서 삭제<br/>2 - 스토리지 용량 임계값 및 프로필 비활성 임계값 모두에서 삭제|
 
 ### <a name="enableprofilemanagerhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[EnableProfileManager](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
@@ -147,7 +147,7 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|Integer<br/>기본값은 30입니다.|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|정수<br/>기본값은 30입니다.|
 
 
 ### <a name="storagecapacitystartdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStartDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
@@ -155,14 +155,14 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStartDeletion|Integer<br/>기본값은 25입니다.|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStartDeletion|정수<br/>기본값은 25입니다.|
 
 ### <a name="storagecapacitystopdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStopDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
 > [!div class="mx-tableFixed"]
 > |OMA URI|데이터 형식|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStopDeletion|Integer<br/>기본값은 50입니다.|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStopDeletion|정수<br/>기본값은 50입니다.|
 
 ## <a name="find-the-policies-you-can-configure"></a>구성할 수 있는 정책 찾기
 
@@ -172,6 +172,6 @@ Windows Holographic for Business는 많은 CSP(구성 서비스 공급자) 설�
 
 ## <a name="next-steps"></a>다음 단계
 
-프로필이 만들어지지만 아직 아무것도 하지 않습니다. 그런 다음, [프로필을 할당합니다](device-profile-assign.md).
+프로필이 만들어지지만 아직 아무것도 하지 않습니다. 다음으로, [프로필을 할당](../device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Windows 10 디바이스](../custom-settings-windows-10.md)에 대한 사용자 지정 프로필을 만드는 방법을 참조하세요.
+[Windows 10 디바이스에 대한 사용자 지정 프로필](../custom-settings-windows-10.md)을 만듭니다.

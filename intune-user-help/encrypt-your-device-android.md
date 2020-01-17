@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2774a4f4c571b8a965c9ec47376a671df2dbf006
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506353"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856685"
 ---
 # <a name="encrypting-your-android-device"></a>Android 디바이스 암호화
 
@@ -48,7 +48,7 @@ ms.locfileid: "72506353"
 3. **장치가 켜지 면 PIN 필요** > **확인을**선택 합니다.
 4. PIN을 입력 하 여 장치를 확인 하 고 암호화 합니다.
 5. 회사 포털 또는 Microsoft Intune 앱을 엽니다.
-    * 회사 포털 앱 사용자: 디바이스를 선택하고 **디바이스 설정 확인**을 탭합니다. 
+    * 회사 포털 사용자: 디바이스를 선택하고 **디바이스 설정 확인**을 탭합니다. 
     * Microsoft Intune 사용자: 페이지를 업데이트할 때까지 기다려야 합니다. 단, 암호화 상태를 준수로 변경 해야 합니다.  
 
 Android 4.4 이전 버전을 실행 하는 장치에는 **보안 시작** 옵션이 없을 수 있습니다. 이 경우 다음 단계를 완료 하 여 장치를 암호화 합니다.
@@ -59,7 +59,7 @@ Android 4.4 이전 버전을 실행 하는 장치에는 **보안 시작** 옵션
 
 2. 화면의 지시를 따릅니다. 암호화가 진행되는 동안 디바이스가 여러 번 다시 시작될 수 있습니다.
 3. 회사 포털 또는 Microsoft Intune 앱을 엽니다.
-    * 회사 포털 앱 사용자: 디바이스를 선택하고 **디바이스 설정 확인**을 탭합니다.  
+    * 회사 포털 사용자: 디바이스를 선택하고 **디바이스 설정 확인**을 탭합니다.  
     * Microsoft Intune 사용자: 페이지를 업데이트할 때까지 기다려야 합니다. 단, 암호화 상태를 준수로 변경 해야 합니다.
 
 ## <a name="troubleshoot"></a>문제 해결  

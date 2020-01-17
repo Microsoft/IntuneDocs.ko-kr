@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cc2f84ad73c86a823984e6caa11dad5d4aec8a8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f056b44301c1d0f94dde2dbb6202ed7c78e90fbf
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507817"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857362"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work가 발견한 위협 해결  
 
@@ -52,7 +52,7 @@ Lookout for Work 앱에서 보안 또는 바이러스 위협을 감지하는 경
 
 Lookout for Work에서 위협으로 식별하는 앱을 설치하는 경우 아래 스크린샷에 표시된 것과 같은 메시지를 받게 됩니다.  
 
-![Lookout for Work 앱 인터페이스를 통해 Lookout 바이러스 경고 메시지를 보여주는 예제 스크린샷 세 개의 단추, "닫기", "추가 정보" 및 "제거"를 보여줍니다.](./media/lookout-virus-alert-android.png)  
+![Lookout for Work 앱 인터페이스를 통해 Lookout 바이러스 경고 메시지를 보여주는 예제 스크린샷 3개의 단추 "닫기", "추가 정보" 및 "제거"를 표시합니다.](./media/lookout-virus-alert-android.png)  
 
 회사 이메일 및 데이터에 대한 상실한 액세스 권한을 다시 얻으려면 의심스러운 앱을 제거합니다. 디바이스에 해당 앱이 있는 한 회사 리소스에 액세스할 수 없습니다.    
 

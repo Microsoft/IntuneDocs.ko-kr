@@ -18,19 +18,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce0736845b1aca2f70b5c8802e726995ca18159b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 749bc2e7015bd43a811fae8de55169a3cfcc2999
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508271"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857933"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>디바이스가 잠기기까지 걸리는 기간을 설정하는 방법
 
 Android 디바이스에서 데이터를 보다 안전하게 유지하기 위해 회사 지원팀은 디바이스가 유휴 상태에서 자동으로 잠금 상태로 전환되는 기간을 설정하도록 요구하는 정책을 설정할 수 있습니다. 다음 단계에 따라 디바이스가 잠금 상태가 되는 기간을 설정합니다.
 
-1. 디바이스의 **설정**에서 **보안**&gt;**자동으로 잠금**을 클릭합니다(일부 디바이스에서는 **다음 시간 후 전화 잠금**으로 표시됨).
+1. 디바이스의 **설정**에서 **보안** &gt; **자동으로 잠금**을 클릭합니다(일부 디바이스에서는 **다음 시간 후 전화 잠금**으로 표시됨).
 
 2. 암호 제한 시간 값을 지정합니다.
 
