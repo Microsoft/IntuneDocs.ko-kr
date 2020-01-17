@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991808"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885882"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스 등록 문제 해결
 
@@ -40,7 +40,7 @@ ms.locfileid: "74991808"
 - 어떤 플랫폼 (Android, iOS, Windows)에 문제가 있나요?
 - 얼마나 많은 사용자가 영향을 받습니까? 모든 사용자에 게 영향을 미치는지 아니면 일부에만 적용 되나요?
 - 영향을 받는 장치는 몇 개입니까? 모든 장치가 영향을 받는지 아니면 일부 입니까?
-- MDM 기관 이란? System Center Configuration Manager 경우 사용 중인 Configuration Manager 버전은 무엇 인가요?
+- MDM 기관 이란?
 - 등록을 수행 하는 방법 등록 프로필을 사용 하 여 BYOD (사용자 소유의 장치) 또는 DEP (Apple 장비 등록 프로그램)를 사용 하나요?
 
 ## <a name="error-messages"></a>오류 메시지
@@ -50,7 +50,7 @@ ms.locfileid: "74991808"
 오류 0x801c003: "이 사용자는 등록할 수 있는 권한이 없습니다. 이 작업을 다시 시도 하거나 시스템 관리자에 게 오류 코드 (0x801c0003)를 요청할 수 있습니다.
 오류 80180003: "오류가 발생했습니다. 이 사용자는 등록할 수 있는 권한이 없습니다. 이 작업을 다시 시도 하거나 시스템 관리자에 게 오류 코드 80180003을 요청할 수 있습니다. "
 
-**원인:** 다음 조건 중 하나입니다. 
+**원인:** 다음 조건이 발생한 경우: 
 
 - 사용자가 Intune에서 허용 된 최대 장치 수를 이미 등록 했습니다.    
 - 장치가 장치 유형 제한에 의해 차단 되었습니다.    
@@ -71,7 +71,7 @@ ms.locfileid: "74991808"
 > 이 메서드는 영향을 받는 사용자 뿐 아니라 모든 사용자에 대 한 장치 등록 제한을 늘립니다.
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
-2. 장치 **제한 (장치** 제한 **) > >** **속성** > **편집** (장치 제한 **사항**)으로 이동 하 **여 장치** 한 **도** (최대 15) > **검토 + 저장** **을 > 합니다** .    
+2. **장치** > **등록 제한** > **기본** **>** **속성** >  **(장치** 제한 **)** > (**장치 제한** >) **검토 + 저장으로 이동 합니다**.    
  
 
 ##### <a name="check-device-type-restrictions"></a>디바이스 유형 제한 확인
@@ -107,7 +107,6 @@ ms.locfileid: "74991808"
 
 **원인:** 다음 조건 중 하나 이상이 true일 경우:
 - 다른 사용자가 이미 Intune에 장치를 등록 했거나 Azure AD에 장치를 조인 했습니다. 이 경우에 해당 하는지 확인 하려면 **설정** > **계정** > **회사 액세스**로 이동 합니다. 다음과 유사한 메시지를 찾습니다. "시스템의 다른 사용자가 이미 회사 또는 학교에 연결 되어 있습니다. 해당 회사 또는 학교 연결을 제거 하 고 다시 시도 하세요. "    
-- 컴퓨터에 구성 관리자 클라이언트 에이전트가 설치되어 있습니다.    
 
 #### <a name="resolution"></a>해결 방법
 
@@ -118,9 +117,6 @@ ms.locfileid: "74991808"
 2. **설정** > **계정** > **회사 액세스**로 이동한 다음 회사 또는 학교 계정을 제거합니다.
 3. Windows에서 로그 아웃 한 다음 계정을 사용 하 여 로그인 합니다.    
 4. Intune에 장치를 등록 하거나 장치를 Azure AD에 가입 시킵니다. 
-
-##### <a name="remove-the-configuration-manager-client"></a>구성 관리자 클라이언트 제거
-Configuration Manager 클라이언트를 제거한 후 장치를 다시 등록 합니다.
 
 
 
@@ -142,7 +138,7 @@ Configuration Manager 클라이언트를 제거한 후 장치를 다시 등록 �
 
 #### <a name="resolution"></a>해결 방법
 
-이 문제를 해결 하려면 다음 방법 중 하나를 사용 합니다. 
+이 문제를 해결하려면 다음 방법 중 하나를 사용하세요. 
  
 ##### <a name="assign-a-valid-license-to-the-user"></a>사용자에 게 유효한 라이선스 할당
 [Microsoft 365 관리 센터](https://portal.office.com/adminportal/home)로 이동한 다음 Intune 또는 Office 365 라이선스를 사용자에 게 할당 합니다.
@@ -160,18 +156,18 @@ Configuration Manager 클라이언트를 제거한 후 장치를 다시 등록 �
 
 **원인:** 이 오류는 Windows 10 컴퓨터를 Azure AD에 가입 하려고 시도 하 고 다음 두 조건에 모두 해당 하는 경우에 발생할 수 있습니다. 
 - Azure에서 MDM 자동 등록을 사용 하도록 설정 합니다.    
-- Intune PC 클라이언트 (Intune PC 에이전트) 또는 Configuration Manager 클라이언트 에이전트가 Windows 10 컴퓨터에 설치 되어 있어야 합니다.
+- Intune PC 클라이언트 (Intune PC 에이전트)는 Windows 10 컴퓨터에 설치 됩니다.
 
 #### <a name="resolution"></a>해결 방법
 다음 방법 중 하나를 사용하여 이 문제를 해결할 수 있습니다.
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Azure에서 MDM 자동 등록을 사용 하지 않도록 설정 합니다.
-1. [Azure 포털](https://portal.azure.com/)에 로그인합니다.    
+1. [Azure Portal](https://portal.azure.com/)에 로그인합니다.    
 2. **Azure Active Directory** > **Mobility (MDM 및 MAM)**  > **Microsoft Intune**로 이동 합니다.    
 3. **MDM 사용자 범위** 를 **없음**으로 설정 하 고 **저장**을 클릭 합니다.    
      
 ##### <a name="uninstall"></a>제거
-컴퓨터에서 Intune PC 클라이언트 또는 Configuration Manager 클라이언트 에이전트를 제거 합니다.    
+컴퓨터에서 Intune PC 클라이언트 에이전트를 제거 합니다.    
 
 ### <a name="the-software-cannot-be-installed"></a>소프트웨어를 설치할 수 없습니다.
 
@@ -208,13 +204,6 @@ Configuration Manager 클라이언트를 제거한 후 장치를 다시 등록 �
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 장치 > **등록 제한** **> 선택 하** 여 장치 유형 제한을 선택 합니다.    
 2. **속성** > **편집** ( **플랫폼 설정**옆) > **MDM (Windows** **허용** )을 선택 합니다.    
 3. **검토 + 저장**을 클릭 합니다.    
- 
-하이브리드 MDM에서 Intune 및 Configuration Manager로이 문제를 해결 하려면 다음 단계를 수행 합니다. 
-1. Configuration Manager 콘솔을 엽니다.    
-2. **관리**를 선택한 다음 **Cloud Services**를 선택 합니다.    
-3. **Microsoft Intune 구독**을 마우스 오른쪽 단추로 클릭 한 다음 **플랫폼 구성 > Windows**를 선택 합니다.    
-4. **Windows 등록** > **사용** > 확인란**을**선택 합니다.  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>대량 등록 중에 설치 오류가 발생 했습니다.
 
@@ -235,7 +224,7 @@ School Pc 설정 앱에 대 한 자세한 내용은 [School Pc 설정 앱 사용
 ### <a name="auto-mdm-enroll-failed"></a>자동 MDM 등록: 실패 
 
 그룹 정책를 사용 하 여 Windows 10 장치를 자동으로 등록 하려고 하면 다음과 같은 문제가 발생 합니다. 
-- 작업 스케줄러의 **Microsoft** >  **Windows** > **enterprisemgmt**에서, **AAD 작업에서 MDM에 자동으로 등록 하기 위해 등록 클라이언트에서 만든 일정** 의 마지막 실행 결과는 다음과 같습니다. **이벤트 76 자동 MDM 등록: 실패 (알 수 없는 Win32 오류 코드: 0x8018002b)**       
+- 작업 스케줄러의 **Microsoft** > **Windows** > **enterprisemgmt**에서, **AAD 작업에서 MDM에 자동으로 등록 하기 위해 등록 클라이언트에서 만든 일정**의 마지막 실행 결과는 다음과 같습니다. **이벤트 76 자동 MDM 등록: 실패(알 수 없는 Win32 오류 코드: 0x8018002b)**       
 - 이벤트 뷰어에서 다음 이벤트는 **응용 프로그램 및 서비스 Logs/Microsoft/Windows/DeviceManagement/Admin**에 기록 됩니다.   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -389,4 +378,4 @@ Description:
 - [Microsoft Intune 지원 팀 블로그 보기](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Microsoft Enterprise Mobility + Security 블로그 보기](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Microsoft Intune에 대한 지원 받기](../fundamentals/get-support.md)
-- [공동 관리 등록 오류 찾기](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [공동 관리 등록 오류 찾기](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504950"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548131"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>분산형 IT에 RBAC(역할 기반 액세스 제어) 및 범위 태그 사용
 
@@ -39,14 +39,15 @@ ms.locfileid: "72504950"
 ## <a name="default-scope-tag"></a>기본 범위 태그
 기본 범위 태그는 범위 태그를 지 원하는 태그가 없는 모든 개체에 자동으로 추가 됩니다.
 
-기본 범위 태그 기능은 System Center Configuration Manager의 보안 범위 기능과 유사합니다. 
+기본 범위 태그 기능은 Microsoft Endpoint Configuration Manager의 보안 범위 기능과 유사합니다. 
 
 ## <a name="to-create-a-scope-tag"></a>범위 태그를 만들려면
 
-1. Intune에서 **역할** > **범위(태그)**  > **만들기**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **테 넌 트 관리** > **역할** > **범위 (태그)**  > **만들기**를 선택 합니다.
 
     ![범위 태그 만들기 스크린샷입니다.](./media/scope-tags/create-scope-tag.png)
 
+2. **이름** 및 **설명**(선택 사항)을 입력합니다.
 3. 특정 그룹의 모든 장치를 원하는 경우 **선택한 그룹의 모든 장치에 범위 태그 할당**을 선택 합니다.
     1. **포함할 그룹 선택** 페이지에서이 범위 태그를 할당 하려는 장치를 포함 하는 그룹을 선택 합니다.
     2. **선택**을 선택합니다.
@@ -54,10 +55,7 @@ ms.locfileid: "72504950"
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>범위 태그를 역할에 할당하려면
 
-1. Intune에서 **역할** > **모든 역할** > 역할 선택 > **할당** > **할당**을 선택합니다.
-
-    ![역할에 범위를 할당하는 스크린샷입니다.](./media/scope-tags/assign-scope-to-role.png)
-
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **테 넌 트 관리** > **역할** > 모든 역할  **> 할당** > **할당** > 할당 **역할을 선택 합니다**.
 2. **할당 이름**과 **설명**을 제공합니다.
 3. **멤버(그룹)**  > **추가**를 선택하고, 이 할당의 일부로 설정할 그룹을 선택하고, **선택** > **확인**을 누릅니다. 이 그룹의 사용자에 게는 범위 (그룹)에서 사용자/장치를 관리할 수 있는 권한이 부여 됩니다.
 
@@ -81,9 +79,7 @@ ms.locfileid: "72504950"
 
 범위 태그를 지 원하는 개체의 경우 일반적으로 범위 태그가 **속성**아래에 나타납니다. 예를 들어 구성 프로필에 범위 태그를 할당 하려면 다음 단계를 수행 합니다.
 
-1. Intune에서 **디바이스 구성** > **프로필**을 선택하고, 프로필을 선택합니다.
-
-    ![프로필 선택 스크린샷입니다.](./media/scope-tags/choose-profile.png)
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **장치** > **구성 프로필** 을 선택 하 > 프로필을 선택 합니다.
 
 2. **속성** > **범위(태그)**  > **추가**를 선택합니다.
 
