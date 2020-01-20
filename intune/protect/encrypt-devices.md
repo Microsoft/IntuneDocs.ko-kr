@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654263"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756011"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune에서 디바이스 암호화 사용
 
@@ -38,6 +38,8 @@ Intune을 통해 디바이스 기본 제공 디스크 또는 드라이브 암호
 ## <a name="filevault-encryption-for-macos"></a>macOS를 위한 FileVault 암호화
 
 Intune을 사용하여 macOS를 실행하는 디바이스에서 FileVault 디스크 암호화를 구성할 수 있습니다. 그런 다음 Intune 암호화 보고서를 사용하여 해당 디바이스의 암호화 세부 정보를 확인하고 FileVault로 암호화된 디바이스의 복구 키를 관리할 수 있습니다.
+
+FileVault가 디바이스에서 작동하려면 사용자 승인 디바이스 등록이 필요합니다. 사용자는 등록이 사용자의 승인을 받은 것으로 간주되도록 시스템 기본 설정에서 관리 프로필을 수동으로 승인해야 합니다. 
 
 FileVault는 macOS에 포함된 전체 디스크 암호화 프로그램입니다. Intune을 사용하여 **macOS 10.13 이상**을 실행하는 디바이스에서 FileVault를 구성할 수 있습니다.
 
@@ -72,14 +74,7 @@ Intune에서 관리할 수 있는 FileVault 설정에 대한 자세한 내용은
 
 7. 비즈니스 요구에 맞게 나머지 [FileVault 설정](endpoint-protection-macos.md#filevault)을 구성한 다음, **확인**을 선택합니다.
 
-   > [!IMPORTANT]
-   > **로그아웃 시 프롬프트 사용 안 함** 설정이 *사용*으로 설정되는 알려진 문제가 있습니다. *사용*으로 설정하면 **바이패스 허용 횟수** 설정이 값으로 설정되어야 하며 *구성되지 않음*으로 설정되어서는 안 됩니다. *구성하지 않음*으로 설정하면, 프로필이 디바이스에서 실패합니다. 이 시나리오에서는 디바이스가 추가 세부 정보 없이 **프로필 상태 요약**을 **오류**로 보고합니다.
-   >
-   > **로그아웃 시 프롬프트 사용 안 함**이 *구성되지 않음*으로 설정되면, **바이패스 허용 횟수**가 *구성되지 않음*이나 값이 있을 수 있습니다.
-   >
-   > 이 문제는 향후 업데이트에서 해결될 예정입니다.
-
-8. 추가 설정 구성을 완료한 다음 프로필을 저장합니다.  
+  8. 추가 설정 구성을 완료한 다음 프로필을 저장합니다.  
 
 ### <a name="manage-filevault"></a>FileVault 관리
 

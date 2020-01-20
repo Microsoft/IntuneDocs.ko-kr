@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a6f57783b0878cd25e6c7eacdf4b32e462790916
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810307"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925803"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Intune 및 Zimperium 통합
 
@@ -31,7 +31,7 @@ Intune과 Zuneperium Mobile Threat Defense 솔루션을 통합하려면 다음 �
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-다음 단계는 [Zimperium MTD 콘솔](https://www.zimperium.com/platform)에서 완료되며, Intune 등록된 디바이스(디바이스 준수 사용)와 등록되지 않은 디바이스(앱 보호 정책 사용) 모두에 대해 Lookout 서비스에 연결할 수 있습니다.
+다음 단계는 [Zimperium MTD 콘솔](https://www.zimperium.com/platform)에서 완료되며, Intune 등록된 디바이스(디바이스 준수 사용)와 등록되지 않은 디바이스(앱 보호 정책 사용) 모두에 대해 Zimperium 서비스에 연결할 수 있습니다.
 
 Intune과 Zimperium을 통합하는 과정을 시작하기 전에 다음의 구독과 자격 증명이 있는지 확인합니다.
 

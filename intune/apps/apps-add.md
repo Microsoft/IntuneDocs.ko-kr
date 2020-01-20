@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74784241"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956192"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가 
 
@@ -189,7 +189,7 @@ Intune은 다음 조건에 따라 필수 앱을 자동으로 재설치, 업데�
 
 ## <a name="app-installation-errors"></a>앱 설치 오류
 
-Intune 앱 설치 오류에 대한 자세한 내용은 [앱 설치 오류](troubleshoot-app-install.md#app-installation-errors)를 참조하세요.
+Intune 앱 설치 오류에 대한 자세한 내용은 [앱 설치 오류](troubleshoot-app-install.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -211,4 +211,4 @@ Intune 앱 설치 오류에 대한 자세한 내용은 [앱 설치 오류](troub
 - [macOS용 Microsoft Edge](apps-edge-macos.md)
 - [기본 제공 앱](apps-add-built-in.md)
 - [Android Enterprise 시스템 앱](apps-ae-system.md)
-- [Win32 앱](app-management.md)
+- [Win32 앱](~/apps/apps-win32-app-management.md)

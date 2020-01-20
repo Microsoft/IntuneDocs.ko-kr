@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d8397dea1dca97122aac6716ee3d51295b913538
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562376"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885932"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Android 엔터프라이즈 완전 관리형 디바이스의 Intune 등록 설정 
 
@@ -36,7 +36,7 @@ Intune을 사용하면 Android 엔터프라이즈 완전 관리형 디바이스�
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 
-Android 엔터프라이즈 완전 관리형 디바이스를 관리하려면 Intune 독립 실행형 테넌트가 있어야 합니다. 하이브리드(Configuration Manager가 연결됨) 모드 또는 레거시 Silverlight 관리 콘솔에서는 완전 관리형 디바이스 관리를 사용할 수 없습니다.
+Android 엔터프라이즈 완전 관리형 디바이스를 관리하려면 Intune 독립 실행형 테넌트가 있어야 합니다. 레거시 Silverlight 관리 콘솔에서는 완전 관리형 디바이스 관리를 사용할 수 없습니다.
 
 Android 엔터프라이즈 완전 관리형 디바이스로 관리하려면 디바이스가 다음 요구 사항을 충족해야 합니다.
 

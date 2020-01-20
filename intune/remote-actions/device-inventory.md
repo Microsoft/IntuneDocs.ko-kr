@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819785"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756026"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 디바이스 세부 정보 참조
 
@@ -59,7 +59,7 @@ ms.locfileid: "74819785"
 
 |세부 정보|설명|플랫폼| 
 |--------------|----------------------|----|  
-|이름|서버의 이름입니다.|Windows, iOS|
+|Name|서버의 이름입니다.|Windows, iOS|
 |관리 이름|콘솔에서만 사용되는 디바이스 이름입니다. 이 이름을 변경해도 디바이스의 이름을 변경하지 않습니다.|Windows, iOS|
 |UDID|디바이스의 고유한 디바이스 식별자입니다.|Windows, iOS|
 |Intune 디바이스 ID|디바이스를 고유하게 식별하는 GUID입니다.|Windows, iOS|
@@ -83,7 +83,7 @@ ms.locfileid: "74819785"
 |Wi-Fi MAC|디바이스의 미디어 액세스 제어 주소입니다.|Windows, iOS, Android|
 |ICCID|집적 회로 카드 식별자, 즉, SIM 카드의 고유한 ID 번호입니다.|Windows, iOS, Android|
 |등록된 날짜|Intune에서 디바이스를 등록한 날짜 및 시간입니다.|Windows, iOS, Android|
-|마지막 연결 시간|Intune에 디바이스를 마지막으로 연결한 날짜 및 시간입니다.|Windows, iOS, Android|
+|마지막 연결|Intune에 디바이스를 마지막으로 연결한 날짜 및 시간입니다.|Windows, iOS, Android|
 |활성화 잠금 무시 코드|활성화 잠금을 무시할 수 있는 코드입니다.|iOS|
 |Azure AD 등록됨|**예**인 경우 디바이스가 Azure Active Directory에 등록되어 있습니다.|Windows, iOS, Android|
 |Intune에 등록됨|**예**인 경우 디바이스가 Intune에 등록되어 있음|Windows, iOS, Android|
@@ -94,6 +94,9 @@ ms.locfileid: "74819785"
 |암호화됨|**예**인 경우 디바이스에 저장된 데이터가 암호화됩니다.|Windows, iOS, Android|
 
 \* 완전히 관리되는 디바이스 및 전용 디바이스 등 Google 정책 관리자가 포함된 Android에서 사용할 수 없음
+
+> [!Note]  
+> Android Enterprise 전용 또는 완전 관리형 디바이스에서는 전화 번호가 인벤토리에 포함되지 않습니다.
 
 ## <a name="next-steps"></a>다음 단계
 Intune을 사용하여 [디바이스를 관리](device-management.md)하기 위해 수행할 수 있는 작업을 참조하세요.

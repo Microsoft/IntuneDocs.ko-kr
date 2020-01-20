@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547806"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885955"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -56,7 +56,7 @@ ms.locfileid: "75547806"
 이러한 문제는 모든 디바이스 플랫폼에서 발생할 수 있습니다.
 
 ### <a name="device-cap-reached"></a>디바이스 최대값 도달
-**문제:** 사용자에게는 **회사 포털을 일시적으로 사용할 수 없음**과 같은 오류가 등록하는 동안 표시되고, Configuration Manager의 DMPdownloader.log에는 **DeviceCapReached**라는 오류가 포함됩니다.
+**문제:** 등록 중에 사용자에게 오류가 표시됩니다(예: **회사 포털을 일시적으로 사용할 수 없음**).
 
 **해결 방법:**
 
@@ -113,23 +113,6 @@ ms.locfileid: "75547806"
 
     4. DirSync를 다시 설정하고 이제 사용자가 제대로 동기화되었는지 확인합니다.
 
-3. Intune에서 Configuration Manager를 사용하는 시나리오에서는 사용자에게 유효한 클라우드 사용자 ID가 있는지 확인합니다.
-
-    1. SQL Management Studio를 엽니다.
-
-    2. 적절한 DB에 연결합니다.
-
-    3. 데이터베이스 폴더를 열고 **CM_DBName** 폴더를 찾아 엽니다. 여기서 DBName은 고객 데이터베이스의 이름입니다.
-
-    4. 맨 위에서 **새 쿼리**를 클릭하고 다음 쿼리를 실행합니다.
-
-        - 모든 사용자를 보려면: `select * from [CM_ DBName].[dbo].[User_DISC]`
-
-        - 특정 사용자를 보려면 다음 쿼리를 사용합니다. 여기서 %testuser1%은 조회하려는 사용자에 대한 username@domain.com의 자리 표시자입니다. `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
-
-        쿼리를 작성한 후에 **!Execute**를 선택합니다.
-        결과가 반환되면 클라우드 사용자 ID를 찾습니다.  ID를 찾을 수 없으면 Intune을 사용할 라이선스가 없는 것입니다.
-
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>회사 이름에 특수 문자가 포함되어 있으면 정책을 만들거나 디바이스를 등록할 수 없습니다.
 **문제:** 정책을 만들거나 디바이스를 등록할 수 없습니다.
 
@@ -144,7 +127,7 @@ ms.locfileid: "75547806"
 - 조직 내 사용자의 UPN 접미사에 대해 여러 최상위 도메인 보유(예: @contoso.com 또는 @fabrikam.com)
 
 
-[AD FS 2.0 롤업](http://support.microsoft.com/kb/2607496)은 <strong>SupportMultipleDomain</strong> 스위치와 함께 작동하여 AD FS 서버가 추가적인 AD FS 2.0 서버를 필요로 하지 않고 이 시나리오를 지원할 수 있도록 합니다. 자세한 내용은 [이 블로그](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)를 참조하세요.
+[AD FS 2.0 롤업](https://support.microsoft.com/kb/2607496)은 <strong>SupportMultipleDomain</strong> 스위치와 함께 작동하여 AD FS 서버가 추가적인 AD FS 2.0 서버를 필요로 하지 않고 이 시나리오를 지원할 수 있도록 합니다. 자세한 내용은 [이 블로그](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)를 참조하세요.
 
 
 ## <a name="android-issues"></a>Android 문제
@@ -332,23 +315,6 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 
 5. iOS용 Safari가 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Intune에서 Configuration Manager를 사용하면, 등록된 iOS 디바이스가 콘솔에 표시되지 않습니다.
-**문제:** 사용자가 iOS 디바이스를 등록하지만 Configuration Manager 관리 콘솔에 표시되지 않습니다. 디바이스가 등록되었다는 것을 표시하지 않습니다. 가능한 원인:
-
-- Configuration Manager 사이트의 Microsoft Intune 커넥터가 Intune 서비스와 통신하지 못합니다.
-- Data Discovery Manager(ddm) 구성 요소 또는 상태 관리자(statmgr) 구성 요소가 Intune 서비스의 메시지를 처리하지 않습니다.
-- 하나의 계정으로 MDM 인증서를 다운로드하고 다른 계정에서 사용했을 수 있습니다.
-
-
-**해결 방법:** 다음 로그 파일에서 가능한 오류를 확인하세요.
-
-- dmpdownloader.log
-- ddm.log
-- statmgr.log
-
-이러한 로그 파일에서 어떤 내용을 찾을지 보여 주는 예가 곧 추가될 예정입니다.
-
-
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>10분 넘게 사용자의 iOS 디바이스가 등록 화면에서 중단되었습니다.
 
 **문제**: 등록 중인 디바이스가 두 화면 중 하나에서 중단되었을 수 있습니다.
@@ -418,36 +384,6 @@ VPP 토큰에서 발생한 문제를 해결한 후에 차단된 디바이스를 
     2. **디바이스** > **모든 디바이스**를 선택합니다.  
     3. 등록 문제가 있는 디바이스를 찾습니다. 디바이스 이름 또는 MAC/HW 주소로 검색하여 결과를 좁힙니다.
     4. 디바이스 > **삭제**를 선택합니다. 디바이스와 연결된 다른 모든 항목을 삭제합니다.  
-
-## <a name="issues-when-using-configuration-manager-with-intune"></a>Configuration Manager with Intune 사용 시 문제
-
-### <a name="mobile-devices-disappear"></a>모바일 디바이스가 사라집니다.
-
-**문제:** 모바일 디바이스를 Configuration Manager에 성공적으로 등록하면 모바일 디바이스가 모바일 디바이스 컬렉션에서 사라집니다. 하지만 디바이스에는 여전히 관리 프로필이 있고 CSS 게이트웨이에는 이 디바이스가 나열됩니다.
-
-**해결 방법:** 다음의 원인으로 이 문제가 발생할 수 있습니다.
-
-- 도메인에 조인되지 않은 디바이스를 제거하는 사용자 지정 프로세스가 있거나
-- 사용자가 구독에서 디바이스를 사용 중지했습니다.
-어느 프로세스나 사용자 계정이 Configuration Manager 콘솔에서 디바이스를 제거했는지 확인하려면 다음 절차를 수행하세요.
-
-#### <a name="check-how-device-was-removed"></a>디바이스가 제거된 방법 확인
-
-1. Configuration Manager 관리자 콘솔에서 **모니터링**&gt;**시스템 상태**&gt;**상태 메시지 쿼리**를 선택합니다.
-
-2. **Collection Member Resources Manually Deleted**를 마우스 오른쪽 단추로 클릭하고 **메시지 표시**를 선택합니다.
-
-3. 적절한 시간/날짜 또는 지난 12시간을 선택합니다.
-
-4. 문제의 디바이스를 찾아 디바이스가 제거된 방법을 확인합니다. 다음 예제에서는 SCCMInstall 계정이 알 수 없는 애플리케이션을 통해 디바이스를 삭제했음을 보여 줍니다.
-
-    ![디바이스 삭제 진단 스크린샷](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
-
-5. Configuration Manager에 예약된 작업, 스크립트 또는 기타 프로세스가 없는지 확인합니다. 이러한 항목은 도메인이 아닌, 모바일 또는 관련 디바이스를 자동으로 제거할 수 있습니다.
-
-### <a name="other-ios-enrollment-errors"></a>기타 iOS 등록 오류
-
-[Microsoft Intune에서 iOS 디바이스 등록 문제 해결](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune)의 설명서에서 iOS 등록 오류 목록이 제공됩니다.
 
 ## <a name="pc-issues"></a>PC 문제
 

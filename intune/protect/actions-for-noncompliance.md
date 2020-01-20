@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50478ecb615cf39bba0a205cb06f83e47728e366
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712902"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827839"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune에서 규정 미준수 디바이스에 대한 이메일 자동화 및 작업 추가
 
@@ -66,7 +66,7 @@ ms.locfileid: "73712902"
 2. **디바이스** > **준수 정책** > **알림** > **알림 만들기**를 선택합니다.
 3. *기본*에서 다음 정보를 지정합니다.
 
-   - **이름**
+   - **Name**
    - **제목**
    - **Message**
 
@@ -91,7 +91,7 @@ ms.locfileid: "73712902"
 
 디바이스 준수 정책을 만들면 Intune은 비준수 디바이스인 경우에 수행할 작업을 자동으로 만듭니다. 디바이스가 규정 준수 정책을 충족하지 않는 경우 이 작업은 디바이스를 규정 미준수로 표시합니다. 디바이스가 비준수로 표시되는 기간을 사용자 지정할 수 있습니다. 이 작업은 제거할 수 없습니다.
 
-준수 정책을 만들 때 다른 작업을 추가하거나 기존 정책을 업데이트할 수도 있습니다.
+디바이스 비규격 표시를 위한 기본 작업에 더해 준수 정책을 새로 만들거나 기존 정책을 업데이트할 때에도 선택적 작업을 추가할 수 있습니다.
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 

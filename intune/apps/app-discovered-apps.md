@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205533"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857046"
 ---
 # <a name="intune-discovered-apps"></a>Intune 검색된 앱
 
@@ -67,6 +67,7 @@ Intune은 테넌트의 Intune 등록 디바이스에서 검색된 앱의 집계�
 > [!NOTE]
 > - Configuration Manager의 앱 관리 워크로드에 표시된 Windows 10 하이브리드 Azure AD 가입 디바이스는 현재 위의 일정에 따라 Intune Management Extension(IME)을 통해 앱 인벤토리를 수집하지 않습니다. 이 문제를 완화하기 위해 IME를 디바이스에 설치할 수 있도록 Configuration Manager의 앱 관리 워크로드를 Intune으로 전환해야 합니다(IME는 Win32 인벤토리 및 PowerShell 배포에 필요합니다). 이 동작에 대한 변경 사항 또는 업데이트는 [개발 중](../fundamentals/in-development.md) 및/또는 [새로운 기능](../fundamentals/whats-new.md)에서 발표됩니다.
 > - 2019년 11월 이전에 등록된 개인 소유의 macOS 디바이스는 해당 디바이스를 다시 등록할 때까지 설치된 모든 앱을 계속 표시할 수 있습니다.
+> - Android Enterprise 완전 관리형 및 전용에는 검색된 앱이 표시되지 않습니다.
 
 검색된 앱의 수는 앱 설치 상태 수와 일치하지 않을 수 있습니다. 일치하지 않는 경우는 다음과 같습니다.
 

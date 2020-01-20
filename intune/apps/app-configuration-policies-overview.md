@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 479d88c09f48acbbfaedf1f4c69546b7f52dfbf1
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692185"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885802"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
@@ -93,7 +93,7 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>관리되지 않는 디바이스에서 iOS 구성
 
-관리 앱 구성에 대해 관리되지 않는 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다.
+관리 앱 구성에 대해 관리되지 않는 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다. 아래 단계 외에도 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스할 수 있습니다. 자세한 내용은 [iOS에서 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)를 참조하세요.
 
 1. 디바이스에 아직 설치되지 않은 경우 앱 스토어에서 **Intune Managed Browser**를 다운로드하여 설치합니다. 자세한 내용은 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)을 참조하세요.
 2. **Intune Managed Browser**를 시작하고 탐색 모음에서 **정보** > **intunehelp**를 선택합니다.
@@ -162,7 +162,7 @@ Android 디바이스에서 로그를 수집하려면 사용자 또는 최종 사
     
 ## <a name="graph-api-support-for-app-configuration"></a>앱 구성에 대한 Graph API 지원
 
-Graph API를 사용하여 앱 구성 작업을 수행할 수 있습니다. 자세한 내용은 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)(Graph API 참조 MAM 대상 구성)를 참조하세요.
+Graph API를 사용하여 앱 구성 작업을 수행할 수 있습니다. 자세한 내용은 [Graph API Reference MAM Targeted Config](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta)(Graph API 참조 MAM 대상 구성)를 참조하세요. Intune과 Graph에 대한 자세한 내용은 [Microsoft Graph에서 Intune 사용](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta)을 참조하세요.
 
 ## <a name="troubleshooting"></a>문제 해결
 

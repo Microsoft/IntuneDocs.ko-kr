@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547997"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885763"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>관리되는 iOS 디바이스용 앱 구성 정책 추가
 
@@ -182,7 +182,7 @@ DEP(Apple의 장비 등록 프로그램) 등록은 회사 포털 앱의 앱 스�
 
 1. Intune에서 필요한 경우 **Intune** > **앱** > **모든 앱** > **추가**로 이동하여 Intune 회사 포털을 추가합니다.
 2. **앱** > **앱 구성 정책**으로 이동하여 회사 포털 앱에 대한 앱 구성 정책을 만듭니다.
-3. 아래 XML을 사용하여 앱 구성 정책을 만듭니다. 앱 구성 정책을 만들고 XML 데이터를 입력하는 방법에 대한 자세한 내용은 [관리되는 iOS 디바이스에 대한 앱 구성 정책 추가](app-configuration-policies-use-ios.md)에서, 또는 하이브리드 MDM의 경우 [Configuration Manager에서 앱 구성 정책을 사용하여 iOS 앱에 설정 적용](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)에서 확인할 수 있습니다.
+3. 아래 XML을 사용하여 앱 구성 정책을 만듭니다. 앱 구성 정책 생성과 XML 데이터 입력에 대한 자세한 내용은 [관리형 iOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)에서 확인할 수 있습니다.
 
     ``` xml
     <dict>

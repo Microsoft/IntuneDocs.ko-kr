@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 01/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207454"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956279"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune에서 Windows 10 소프트웨어 업데이트 관리
 
@@ -34,7 +34,7 @@ Intune은 업데이트를 관리하기 위해 다음과 같은 정책 유형을 
 
 - **Windows 10 업데이트 링**: 이 정책은 Windows 10 업데이트 설치 시기를 구성하는 설정의 모음입니다.
 
-- **Windows 10 기능 업데이트(공개 미리 보기)**: 이 정책은 지정하는 Windows 버전을 디바이스에 적용하고, 이후의 Windows 버전으로 업데이트하도록 선택할 때까지 해당 디바이스에서 기능 집합을 고정합니다.  기능 버전은 정적으로 유지되지만 디바이스는 해당 기능 버전에 사용할 수 있는 품질 및 보안 업데이트를 계속 설치할 수 있습니다.
+- **Windows 10 기능 업데이트(공개 미리 보기)** : 이 정책은 지정하는 Windows 버전을 디바이스에 적용하고, 이후의 Windows 버전으로 업데이트하도록 선택할 때까지 해당 디바이스에서 기능 집합을 고정합니다.  기능 버전은 정적으로 유지되지만 디바이스는 해당 기능 버전에 사용할 수 있는 품질 및 보안 업데이트를 계속 설치할 수 있습니다.
 
 Windows 10 업데이트 링 및 Windows 10 기능 업데이트에 대한 정책을 디바이스 그룹에 할당합니다. 동일한 Intune 환경에서 두 정책 유형을 모두 사용하여 Windows 10 디바이스에 대한 소프트웨어 업데이트를 관리하고 비즈니스 요구를 반영하는 업데이트 전략을 만들 수 있습니다.
 
@@ -63,7 +63,7 @@ Intune에서 Windows 10 디바이스의 Windows 업데이트를 사용하려면 
   > - Windows 10 Mobile  
   > - Windows 10 Enterprise LTSC입니다. WUfB(비즈니스용 Windows 업데이트)에서는 현재 *장기 서비스 채널* 릴리스를 지원하지 않습니다. WSUS 또는 Configuration Manager와 같은 대체 패치 방법을 사용하세요.
 
-- Windows 디바이스에서 **피드백 및 진단** > **진단 및 사용량 현황 데이터**를 **기본**, **고급** 또는 **전체**로 설정해야 합니다.  
+- Windows 디바이스에서 **피드백 및 진단** > **진단 및 사용량 현황 데이터**를 **기본**, **고급** 또는 **전체**로 설정해야 합니다.
 
   Windows 10 디바이스에 대해 *진단 및 사용량 데이터* 설정을 수동으로 구성하거나 Windows 10 이상에 대해 Intune 디바이스 제한 프로필을 사용할 수 있습니다. 장치 제한 프로필을 사용하는 경우 **사용 현황 데이터 공유**의 [디바이스 제한 설정](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)을 **기본** 이상으로 설정합니다. 이 설정은 Windows 10 이상에 대해 디바이스 제한 정책을 구성하는 경우 **보고 및 원격 분석** 범주에서 찾을 수 있습니다.
 
@@ -88,7 +88,7 @@ Windows 10 업데이트 링은 [범위 태그](../fundamentals/scope-tags.md)를
 
 5. 업데이트 링에 범위 태그를 적용하려면 **범위 태그** 아래에서 **+ 범위 태그 선택**을 선택하여 *태그 선택* 창을 엽니다. 태그를 하나 이상 선택한 후 **선택**을 클릭하여 업데이트 링에 추가하고 *범위 태그* 페이지로 돌아갑니다.
 
-   준비가 되면 **다음**을 선택하여 ‘할당’으로 이동합니다.
+   준비가 되면 **다음**을 선택하여 ‘할당’으로 이동합니다. 
 
 6. **할당** 아래에서 **+ 포함할 그룹 선택**을 선택한 후 업데이트 링을 하나 이상의 그룹에 할당합니다. **+ 제외할 그룹 선택**을 사용하여 할당을 미세 조정합니다. 계속하려면 **다음**을 선택합니다.
 
@@ -157,7 +157,7 @@ Intune에서 링을 삭제해도 업데이트 링이 할당된 디바이스의 �
 
 #### <a name="uninstall"></a>제거  
 
-Intune 관리자는 **제거**를 사용하여 활성 또는 일시 중지된 업데이트 링의 최신 ‘기능’ 업데이트 또는 ‘품질’ 업데이트를 제거(롤백)할 수 있습니다. 하나의 형식을 제거한 후 다른 형식을 제거할 수 있습니다. Intune에서는 사용자가 업데이트를 제거할 수 있는 기능을 지원하거나 관리하지 않습니다.  
+Intune 관리자는 **제거**를 사용하여 활성 또는 일시 중지된 업데이트 링의 최신 ‘기능’ 업데이트 또는 ‘품질’ 업데이트를 제거(롤백)할 수 있습니다.   하나의 형식을 제거한 후 다른 형식을 제거할 수 있습니다. Intune에서는 사용자가 업데이트를 제거할 수 있는 기능을 지원하거나 관리하지 않습니다.  
 
 > [!IMPORTANT]
 > *제거* 옵션을 사용하는 경우 Intune은 제거 요청을 디바이스에 즉시 전달합니다.
@@ -215,6 +215,10 @@ Windows 업데이트 정책에 대한 자세한 내용은 Windows 클라이언�
 
   이러한 제한 사항을 조사하여 향후 지원 가능한지 확인합니다.
 
+> [!IMPORTANT]
+> Intune에서 기능 업데이트 정책을 사용하려면 디바이스의 원격 분석이 켜져 있어야 하며 [*기본 사항*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) 최소 설정이 필요합니다. 원격 분석은 [디바이스 제한 정책](../configuration/device-restrictions-configure.md)의 일환으로서 *보고 및 원격 분석*에서 구성됩니다.
+>
+> 기능 업데이트 정책을 받고 원격 분석이 *구성되지 않음*으로 설정되어 꺼진 상태의 디바이스는 기능 업데이트 정책에 정의된 것보다 이후 버전의 Windows를 설치할 수 있습니다. 이 기능은 향후 일반에 출시될 예정으로서 원격 분석 필요 조건을 검토 중입니다.
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10 기능 업데이트 만들기 및 할당
 
@@ -245,4 +249,3 @@ Windows 업데이트 정책에 대한 자세한 내용은 Windows 클라이언�
 [업데이트에 대한 Intune 준수 보고서](../windows-update-compliance-reports.md)
 
 [Windows 10 업데이트 링 문제 해결](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
-

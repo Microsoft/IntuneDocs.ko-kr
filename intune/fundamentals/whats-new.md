@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2bb9d921f30e343b309be60438f5318d7c66518
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 311941c3981e5883d392359dc0919bb85156c4be
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692253"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920084"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -62,6 +62,15 @@ ms.locfileid: "75692253"
 #### <a name="smime-support-for-microsoft-outlook-for-ios---2669398---"></a>iOS용 Microsoft Outlook의 S/MIME 지원<!-- 2669398 -->
 Intune은 iOS 디바이스에서 iOS용 Outlook과 함께 사용할 수 있는 S/MIME 서명 및 암호화 인증서 배달을 지원합니다. 자세한 내용은 [iOS 및 Android용 Outlook의 민감도 레이블 지정 및 보호](https://aka.ms/omsmime)를 참조하세요.
 
+#### <a name="cache-win32-app-content-using-microsoft-connected-cache-server---6030314---"></a>Microsoft Connected 캐시 서버를 사용 중인 캐시 Win32 앱 콘텐츠<!-- 6030314 -->
+Intune Win32 앱 콘텐츠를 캐시하기 위해 Configuration Manager 배포 지점에 Microsoft Connected 캐시 서버를 설치할 수 있습니다. 자세한 내용은 [Configuration Manager의 Microsoft Connected Cache-Intune Win32 앱 지원](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune)을 참조하세요.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>역할 기반 액세스 제어
+
+#### <a name="windows-10-administrative-templates-admx-profiles-now-support-scope-tags---5137390-wnready--"></a>현재 범위 태그를 지원 중인 Windows 10 관리 템플릿(ADMX) 프로필 <!--5137390 wnready-->
+이제는 관리 템플릿 프로필(ADMX)에 범위 태그를 할당할 수 있습니다. 이 작업을 위해서는 **Intune** > **디바이스** > **구성 프로필** > 목록에서 관리 템플릿 프로필 선택 > **속성** > **범위 태그** 순서로 이동합니다. 범위 태그에 대한 자세한 내용은 [다른 개체로 범위 태그 할당](../fundamentals/scope-tags.md#assign-scope-tags-to-other-objects)을 참조하세요.
+
 <!-- ########################## -->
 ## <a name="week-of-december-30-2019"></a>2019년 12월 30일이 포함된 주
 
@@ -71,8 +80,8 @@ Intune은 iOS 디바이스에서 iOS용 Outlook과 함께 사용할 수 있는 S
 #### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>MEM 암호화된 macOS 디바이스에서 개인 복구 키 검색<!-- 4851745 -->
 최종 사용자는 iOS 회사 포털 앱을 사용하여 개인 복구 키(FileVault 키)를 검색할 수 있습니다. 개인 복구 키를 포함한 디바이스는 Intune에 등록하고 Intune을 통한 FileVault로 암호화해야 합니다. iOS 회사 포털 앱을 사용하면 최종 사용자는 **복구 키 가져오기**를 클릭해 암호화된 macOS 디바이스에서 개인 복구 키를 검색할 수 있습니다. Intune에서 **디바이스** > *암호화되어 등록된 macOS 디바이스* > **복구 키 가져오기**를 선택하여 복구 키를 검색할 수도 있습니다. FileVault에 대한 자세한 내용은 [macOS용 FileVault 암호화](~/protect/encrypt-devices.md#filevault-encryption-for-macos)를 참조하세요.
 
-#### <a name="ios-user-licensed-vpp-apps---5619268---"></a>iOS 사용자에게 사용이 허가된 VPP 앱<!-- 5619268 -->
-사용자가 등록한 iOS 디바이스의 경우 최종 사용자에게 디바이스에서 사용이 허가된 VPP 앱 배포를 이용할 수 없다고 표시됩니다. 그러나 회사 포털에서는 최종 사용자가 사용자에게 사용이 허가된 모든 VPP 앱을 계속 볼 수 있습니다. VPP 앱에 대한 자세한 내용은 [Microsoft Intune을 사용하여 Apple Volume Purchase Program을 통해 구매한 iOS 및 macOS 앱을 관리하는 방법](~/apps/vpp-apps-ios.md)을 참조하세요.
+#### <a name="ios-and-ipados-user-licensed-vpp-apps---5619268---"></a>iOS 및 iPadOS 사용자에게 사용이 허가된 VPP 앱<!-- 5619268 -->
+사용자가 등록한 iOS 및 iPadOS 디바이스의 경우 최종 사용자에게는 디바이스에서 사용이 허가된 신규 생성 VPP 앱 배포를 이용할 수 있다는 메시지가 더 이상 표시되지 않습니다. 그러나 회사 포털에서는 최종 사용자가 사용자에게 사용이 허가된 모든 VPP 앱을 계속 볼 수 있습니다. VPP 앱에 대한 자세한 내용은 [Microsoft Intune을 사용하여 Apple Volume Purchase Program을 통해 구매한 iOS 및 macOS 앱을 관리하는 방법](~/apps/vpp-apps-ios.md)을 참조하세요.
 
 <!-- ########################## -->
 ## <a name="week-of-december-23-2019"></a>2019년 12월 23일이 포함된 주
@@ -181,6 +190,9 @@ Android 엔터프라이즈 디바이스 소유자 디바이스의 관리되는 �
 
 #### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>인증서로 디바이스를 프로비전할 때 PKCS 인증서 프로필 사용<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
 이제 Wi-Fi나 VPN에서 PKCS 인증서 프로필과 연결된 경우 PKCS 인증서 프로필을 사용해 Android for Work, iOS, Windows를 실행하는 *디바이스*에 인증서를 발행할 수 있습니다. 이전까지 이 세 플랫폼은 사용자 기반 인증서만 지원했으며 디바이스 기반 지원은 macOS에만 제한되었습니다.
+
+> [!NOTE]
+> PKCS 인증서 프로필은 Wi-Fi 프로필로 지원되지 않습니다. 그 대신 [EAP 유형](../configuration/wi-fi-settings-windows.md#enterprise-profile)을 사용할 때 SCEP 인증서 프로필을 사용합니다.
 
 디바이스 기반 인증서를 사용하려면 지원되는 플랫폼에서 [PKCS 인증서 프로필을 만들 때](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile) **설정**을 선택합니다. 이제 디바이스 또는 사용자 옵션을 지원하는 **인증 유형** 설정을 확인할 수 있습니다.
 

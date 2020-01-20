@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510019"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885848"
 ---
 # <a name="basic-setup"></a>기본 설정
 
@@ -74,9 +74,9 @@ Intune으로 마이그레이션하려면 먼저, Intune 구독이 필요합니�
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>태스크 3: MDM 기관을 Intune으로 설정
 
-Intune은 Azure Portal 또는 Configuration Manager 현재 분기 콘솔을 통해 관리할 수 있습니다. Intune을 Configuration Manager 현재 분기 배포와 통합해야 하는 경우가 아니라면 [Azure Portal](https://portal.azure.com)에서 Intune을 관리하는 것이 좋습니다.
+Intune은 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)를 사용하여 관리하는 것이 좋습니다.
 
-Intune Azure Portal을 사용하도록 설정하려면 MDM 기관을 **Intune**으로 설정합니다. 다른 MDM 기관을 사용하면 Intune에서 MDM 관리를 대체 Microsoft 관리 콘솔로 전송할 수 있습니다. 이러한 경우는 일반적이지 않습니다.
+MDM 기관을 **Intune**으로 설정하세요. 다른 MDM 기관을 사용하면 Intune에서 MDM 관리를 대체 Microsoft 관리 콘솔로 전송할 수 있습니다. 이러한 경우는 일반적이지 않습니다.
 
 > [!IMPORTANT]
 > 모바일 디바이스 관리를 Intune에 처음으로 전송할 경우 MDM 기관을 Intune으로 설정해야 합니다.

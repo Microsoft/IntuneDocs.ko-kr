@@ -17,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cbdd99dfb7b42677048b4f214e7de537db0edda
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585285"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925815"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 디바이스에 대한 대량 등록
 
@@ -95,7 +95,7 @@ Azure AD 사용자는 이러한 디바이스에서 표준 사용자이며 할당
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi를 통한 대량 등록 
 
-대량 등록 디바이스는 사용자 대상 인증서 및 Wi-Fi 배포를 사용할 수 없습니다. 이러한 연결을 관리하려면 [디바이스 수준 인증서](../protect/certificates-configure.md)를 사용해야 합니다. 
+공개 네트워크를 사용하지 않는 경우 [디바이스 수준 인증서](../protect/certificates-configure.md)를 사용하여 연결을 시작해야 합니다. 대량 등록 디바이스는 네트워크 액세스에 사용자 대상 인증서를 사용할 수 없습니다. 
 
 ### <a name="conditional-access"></a>조건부 액세스
 대량 등록을 사용하여 등록된 Windows 디바이스에는 조건부 액세스를 사용할 수 없습니다.

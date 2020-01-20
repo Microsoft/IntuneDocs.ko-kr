@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
-ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
+ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303071"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956271"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>사용자 및 디바이스를 구성하기 위한 그룹 추가
 
@@ -54,7 +54,7 @@ Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사
         >
         > 기본 역할이 디바이스 관리인 경우 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)를 사용하는 것이 좋습니다.
 
-    - **Office 365**: 이러한 그룹은 액세스를 제어하고 Office 365 리소스를 공유하도록 디자인되었습니다. 예를 들어, Outlook 받은 편지함 또는 일정을 공유하는 Office 365 그룹을 만들 수 있습니다. 자세한 내용은 [Office 365 그룹에 대해 알아보기](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)를 참조하세요.
+    - **Office 365**: 멤버들에게 공유 사서함, 캘린더, 파일, SharePoint 사이트 등에 대한 액세스 권한을 부여하여 협업 기회를 제공합니다. 또한 이 옵션을 사용하면 조직 외부인에게도 그룹 액세스 권한을 부여할 수 있습니다. 자세한 내용은 [Office 365 그룹에 대해 알아보기](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)를 참조하세요.
 
 4. 새 그룹의 **그룹 이름** 및 **그룹 설명**을 입력합니다. 다른 사람이 어떤 그룹인지 알 수 있도록 구체적으로 지정하고 정보를 포함하세요.
 
