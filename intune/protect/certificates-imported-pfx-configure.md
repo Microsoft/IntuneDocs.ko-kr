@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 1bad86e561c8695d58296c8f473815a203ef210a
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886031"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258488"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>가져온 PKCS 인증서를 Intune을 사용하여 구성 및 사용
 
@@ -134,7 +134,7 @@ PowerShell 모듈은 Windows 암호화를 사용하여 키를 만드는 메서�
    > [!TIP]
    > PFX 인증서를 가져올 때 사용한 공급자를 다시 선택해야 합니다. **Microsoft 소프트웨어 키 저장소 공급자**를 이용할 수 있지만, 다른 공급자를 사용할 수도 있습니다. 키 이름도 예제로 제공되며, 원하는 다른 키 이름을 사용해도 됩니다.
 
-   워크스테이션에서 인증서를 가져오고 싶다면, 다음 명령어를 이용해 이 키를 파일로 내보낼 수 있습니다.  `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path to write to>"`
+   워크스테이션에서 인증서를 가져오고 싶다면, 다음 명령어를 이용해 이 키를 파일로 내보낼 수 있습니다.  `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path\Filename.PFX>"`
 
    가져온 PFX 인증서를 제대로 처리하려면, Microsoft Intune용 PFX 인증서 커넥터를 호스트하는 서버로 프라이빗 키를 가져와야 합니다.
 

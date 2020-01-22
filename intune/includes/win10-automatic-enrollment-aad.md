@@ -1,29 +1,29 @@
 ---
-ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 748141dc494e28f25a09039a7a500411af76ace7
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71912800"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76038129"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10 자동 등록 사용
 
 자동 등록을 통해 사용자가 Intune에 Windows 10 디바이스를 등록할 수 있습니다. 등록하려면 사용자가 회사 계정을 개인적으로 소유한 디바이스에 추가하거나 회사 소유 디바이스를 Azure Active Directory에 연결합니다. 디바이스는 백그라운드에서 등록되어 Azure Active Directory에 연결됩니다. 등록된 디바이스는 Intune을 통해 관리됩니다.
 
-**필수 구성 요소**
+**전제 조건**
 
-- Azure Active Directory Premium 구독([평가판 구독](http://go.microsoft.com/fwlink/?LinkID=816845))
+- Azure Active Directory Premium 구독([평가판 구독](https://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune 구독
 
 ### <a name="configure-automatic-mdm-enrollment"></a>자동 MDM 등록 구성
 
 1. [Azure Portal](https://portal.azure.com)에 로그인하고 **Azure Active Directory**를 선택합니다.
 
-   ![Azure Portal의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
+   ![Azure 포털의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
 2. **이동성(MDM 및 MAM)** 을 선택합니다.
 
-   ![Azure Portal의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
+   ![Azure 포털의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
 3. **Microsoft Intune**을 선택합니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "71912800"
    > [!NOTE]
    > MDM 사용자 범위는 사용자 개체를 포함하는 Azure AD 그룹으로 설정해야 합니다.
 
-   ![Azure Portal의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-scope.png)
+   ![Azure 포털의 스크린샷](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. 다음 URL의 기본값을 사용합니다.
     - **MDM 사용 약관 URL**
@@ -52,4 +52,4 @@ ms.locfileid: "71912800"
 
 6. **저장**을 선택합니다.
 
-기본적으로 2단계 인증이 서비스에 대해 활성화되어 있지 않습니다. 그러나 디바이스를 등록할 때 2단계 인증이 권장됩니다. 2단계 인증을 요구하려면 Azure AD에서 2단계 인증 공급자를 구성하고 다단계 인증에 대한 사용자 계정을 구성합니다. [Azure Multi-Factor Authentication Server 시작](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)을 참조하세요.
+기본적으로 서비스에 대해 2단계 인증이 사용되도록 설정되지 않습니다. 그러나 디바이스를 등록할 때 2단계 인증이 권장됩니다. 2단계 인증을 요구하려면 Azure AD에서 2단계 인증 공급자를 구성하고 다단계 인증에 대한 사용자 계정을 구성합니다. [Azure Multi-Factor Authentication Server 시작](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)을 참조하세요.

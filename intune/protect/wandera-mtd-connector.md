@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc63be3c7c536cba67ef92288c12cc4032ae200
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508811"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036632"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Intune과 Wandera Mobile Threat Defense 커넥터 사용  
 
@@ -48,7 +48,7 @@ Intune에 등록한 경우 다음과 같은 플랫폼에서 Wandera가 지원됩
 - Android 5.0 이상  
 - iOS 10.2 이상  
 
-플랫폼 및 디바이스에 대한 자세한 내용은 [Wandera 웹 사이트](https://www.wandera.com/why-wandera/features/device-support/)를 참조하세요.
+플랫폼 및 디바이스에 대한 자세한 내용은 [Wandera 웹 사이트](https://www.wandera.com/classic-help-center/)를 참조하세요.
 
 ## <a name="prerequisites"></a>전제 조건  
 
@@ -90,7 +90,7 @@ Intune과 함께 Wandera MTD를 사용할 때의 일반적인 시나리오는 �
 
 ![수정 시 액세스 권한 부여됨](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
 
-## <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
+## <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크 위협에 따라 SharePoint Online에 대한 액세스 제어
 
 메시지 가로채기(man-in-the-middle) 공격 같은 네트워크에 대한 위협을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 
