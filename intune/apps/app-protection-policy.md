@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956328"
+ms.locfileid: "76036636"
 ---
 # <a name="app-protection-policies-overview"></a>앱 보호 정책 개요
 
@@ -184,7 +184,7 @@ Office에 관리되는 위치(예: OneDrive)가 필요합니다. Intune에서는
 
 ## <a name="app-protection-global-policy"></a>앱 보호 글로벌 정책
 
-OneDrive 관리자가 **admin.office.com**을 탐색하고 **디바이스** 액세스를 선택하는 경우 OneDrive 및 SharePoint 클라이언트 앱에 **모바일 애플리케이션 관리** 제어를 설정할 수 있습니다. 
+OneDrive 관리자가 **admin.onedrive.com**을 탐색하고 **디바이스 액세스**를 선택하는 경우 OneDrive 및 SharePoint 클라이언트 앱에 **모바일 애플리케이션 관리** 제어를 설정할 수 있습니다. 
 
 OneDrive 관리자 콘솔에 사용 가능하게 만든 설정은 **글로벌** 정책이라는 특별한 Intune 앱 보호 정책을 구성합니다. 이 글로벌 정책은 테넌트의 모든 사용자에게 적용할 수 있으므로 정책 대상을 제어할 방법이 없습니다. 
 

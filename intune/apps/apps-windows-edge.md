@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/17/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 42f1c8fae156eaf08203f4a88cad8433749940ac
+ms.sourcegitcommit: b6fe084b0419b3c9d456a8b0439b00f8c784db23
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563573"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "76294798"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Intune에 Windows 10용 Microsoft Edge 추가
 
 앱을 배포, 구성, 모니터링 또는 보호하려면 앱을 Intune에 추가해야 합니다. 사용 가능한 [앱 유형](~/apps/apps-add.md#app-types-in-microsoft-intune) 중 하나는 Microsoft Edge ‘버전 77 이상’입니다.  Intune에서 이 앱 유형을 선택하면 Windows 10을 실행하고 직접 관리하는 디바이스에 Microsoft Edge ‘버전 77 이상’을 할당하고 설치할 수 있습니다. 
 
 > [!IMPORTANT]
-> 이 앱 유형은 **공개 미리 보기**로 제공되며 Windows 10용 개발자 및 베타 채널을 제공합니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. Intune은 기존의 모든 Microsoft Edge 설치를 검색합니다. 사용자 컨텍스트에 설치된 경우 시스템 설치가 덮어씁니다. 시스템 컨텍스트에 설치된 경우 설치 성공이 보고됩니다. 또한 Microsoft Edge의 자동 업데이트는 기본적으로 **On** 상태이며 Microsoft Edge는 제거할 수 없습니다.
+> 이 앱 유형은 Windows 10용 안정, Beta 및 Dev 채널을 제공하는 **공개 미리 보기**입니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. Intune은 기존의 모든 Microsoft Edge 설치를 검색합니다. 사용자 컨텍스트에 설치된 경우 시스템 설치가 덮어씁니다. 시스템 컨텍스트에 설치된 경우 설치 성공이 보고됩니다. 또한 Microsoft Edge의 자동 업데이트는 기본적으로 **On** 상태이며 Microsoft Edge는 제거할 수 없습니다.
 
 > [!NOTE]
 > Microsoft Edge ‘버전 77 이상’은 macOS에서도 사용할 수 있습니다. 
@@ -38,7 +38,7 @@ ms.locfileid: "74563573"
 
 ## <a name="prerequisites"></a>전제 조건
 - Windows 10 RS2 이상이 필요합니다.
-- 사용자 컨텍스트의 **개발자** 및 **베타** 채널에 대한 Microsoft Edge *버전 77 이상*의 미리 설치된 버전은 시스템 컨텍스트에서 설치된 Edge가 덮어씁니다.
+- 사용자 컨텍스트의 모든 채널에 대한 Microsoft Edge *버전 77 이상*의 미리 설치된 버전은 시스템 컨텍스트에서 설치된 Edge가 덮어씁니다.
 
 ## <a name="configure-the-app-in-intune"></a>Intune에서 앱 구성
 다음 단계를 사용하여 Microsoft Edge 버전 77 이상을 Intune에 추가할 수 있습니다.
@@ -68,9 +68,10 @@ ms.locfileid: "74563573"
 이 단계에서는 앱에 대한 설치 옵션을 구성합니다.
 
 1. **앱 추가** 창에서 **앱 설정**을 선택합니다.
-2. **앱 설정** 창의 **채널** 목록에서 **베타** 또는 **개발자**를 선택하여 앱을 배포할 Edge 채널을 결정합니다.
-    - **베타** 채널은 가장 안정적인 Microsoft Edge 미리 보기 환경이며 조직 내에서 전체 파일럿에 대한 가장 적합한 선택입니다. 6주마다 제공되는 주요 업데이트를 통해 각 릴리스는 개발자 채널의 학습 및 향상된 기능을 통합합니다.
-    - **개발자** 채널은 Windows, Windows Server 및 macOS에서 엔터프라이즈 피드백을 받을 수 있습니다. 매주 업데이트되며 최신 향상된 기능과 수정이 포함됩니다.
+2. **앱 설정** 창의 **채널** 목록에서 **안정**, **Beta** 또는 **Dev**를 선택하여 앱을 배포할 Edge 채널을 결정합니다.
+    - **안정** 채널은 엔터프라이즈 환경에서 광범위하게 배포하도록 권장되는 채널입니다. 6주마다 업데이트되는 각 릴리스는 Beta 채널의 향상된 기능을 통합합니다.
+    - **Beta** 채널은 가장 안정적인 Microsoft Edge 미리 보기 환경이며 조직 내에서 전체 파일럿에 대한 가장 적합한 선택입니다. 6주마다 제공되는 주요 업데이트를 통해 각 릴리스는 Dev 채널의 학습 및 향상된 기능을 통합합니다.
+    - **Dev** 채널은 Windows, Windows Server 및 macOS에서 엔터프라이즈 피드백을 받을 수 있습니다. 매주 업데이트되며 최신 향상된 기능과 수정이 포함됩니다.
 
     > [!NOTE]
     > 사용자가 회사 포털을 찾아볼 때 Microsoft Edge 브라우저 로고가 앱과 함께 표시됩니다.

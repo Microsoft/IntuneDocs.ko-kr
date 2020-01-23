@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67ff4f0cbe11c24c03b504968735e0a68d54f12d
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692168"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125341"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune 보호 앱  
 
@@ -45,6 +45,7 @@ ms.locfileid: "75692168"
 
 | 앱 제목 | 앱 설명 및 정보 | 지원되는 플랫폼에 대한 앱 스토어 링크 |
 |-------------------------------------------------|-------------------------|---------------------------------------------|
+| **Field Service Mobile**<p><img alt="Microsoft app - Field Service Mobile icon" src="./media/apps-supported-intune-apps/icon-m-field-service-mobile.png" width="100"> | Dynamics 365 for Field Service는 필드 서비스 작업자의 요구에 맞게 특별히 제작된 플랫폼 간 다중 디바이스 Field Service Mobile 애플리케이션을 제공합니다. 안정적인 오프라인 기능을 통해 필드 서비스 작업자는 인터넷에 연결하지 않고도 원격 대상을 방문하는 데 필요한 데이터에 계속 액세스하고 상호 작용할 수 있습니다. 필드 서비스 작업자는 적절한 작업을 수행하거나 적절히 시작할 수 있도록 주기적으로 서버로 데이터를 동기화하여 필드에서 수행되는 작업에 대한 정보를 지속적으로 백오피스에 제공할 수 있습니다. 모바일 애플리케이션은 완전한 사용자 지정 및 확장이 가능하여 모든 조직이 애플리케이션을 고유하게 브랜딩하고, 서비스 작업자가 액세스할 수 있는 데이터의 유형을 정의하는 등의 작업을 수행할 수 있습니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.d365.fs.mobile), [App Store 링크(iOS)](https://apps.apple.com/us/app/field-service-mobile/id1414669075) |
 | **Microsoft Azure Information Protection 뷰어**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | AIP 뷰어 앱을 사용하여 다른 사용자와 안전하게 공동 작업을 수행합니다. 다른 사용자와 공유하는 보호된 파일(권한 보호 이메일 메시지, PDF 파일, 사진, 텍스트 파일)을 봅니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer), [App Store 링크(iOS)](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) |
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings는 예약, 직원 및 고객을 추적하는 데 도움이 되는 약속 예약 앱입니다. 약속을 놓치는 일이 없으므로 노쇼가 줄어듭니다.<p>Bookings 앱을 사용하여 다음을 수행할 수 있습니다.<br><ul><li>일정 보기 및 관리</li><li>이동 중에 예약 만들기 또는 기존 예약 변경</li><li>직원 멤버의 실시간 가용성 보기</li><li>고객에게 빠르고 쉽게 응답</li><li>다음 예약 장소로 가는 빠른 길 찾기</li><li>고객 목록 관리</li></ul> | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings),<br>[App Store 링크(iOS)](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | 개인 비서 Cortana를 사용하여 업무와 일상생활을 빠르고, 쉽고, 재미있게 관리하세요. 휴대폰에 스마트 디지털 비서를 설치하여 어디서나 여러 디바이스에서 중요한 사항을 추적할 수 있습니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.cortana),<br>[App Store 링크(iOS)](https://apps.apple.com/us/app/cortana/id1054501703)

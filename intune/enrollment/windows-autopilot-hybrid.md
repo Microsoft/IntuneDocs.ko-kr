@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558179"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125313"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD 조인 디바이스 배포
 Intune 및 Windows Autopilot을 사용하여 하이브리드 Azure AD(Azure Active Directory) 조인 디바이스를 설정할 수 있습니다. 이렇게 하려면 이 문서의 단계를 수행합니다.
@@ -209,17 +209,30 @@ Autopilot 배포 프로필은 Autopilot 디바이스를 구성하는 데 사용�
 ## <a name="create-and-assign-a-domain-join-profile"></a>도메인 조인 프로필 만들기 및 할당
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **구성 프로필** > **프로필 만들기**를 선택합니다.
-1. 다음 속성을 입력합니다.
+2. 다음 속성을 입력합니다.
    - **이름**: 새 프로필에 대한 설명이 포함된 이름을 입력합니다.
    - **설명**: 프로필에 대한 설명을 입력합니다.
    - **플랫폼**: **Windows 10 이상**을 선택합니다.
    - **프로필 유형**: **도메인 가입(미리 보기)** 을 선택합니다.
-1. **설정**을 선택하고 **컴퓨터 이름 접두사**, **도메인 이름** 및 [DN 형식](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)의 **조직 구성 단위**(선택 사항)를 제공합니다. 
+3. **설정**을 선택한 다음 **컴퓨터 이름 접두사**, **도메인 이름**을 입력합니다.
+4. (선택 사항) **OU**(조직 구성 단위)를 [DN 형식](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)으로 제공합니다. 다음과 같은 선택 사항이 있습니다.
+   - Intune Connector를 실행하는 Windows 2016 디바이스에 제어를 위임한 OU를 제공합니다.
+   - 온-프레미스 Active Directory의 루트 컴퓨터에 제어를 위임한 OU를 제공합니다.
+   - 이 값을 비워 두면 컴퓨터 개체가 Active Directory 기본 컨테이너에 생성됩니다([변경하지 않은 경우](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom) CN=Computers).
+   
+   몇 가지 유효한 예는 다음과 같습니다.
+   - OU=Level 1,OU=Level2,DC=contoso,DC=com
+   - OU=Mine,DC=contoso,DC=com
+   
+   다음은 몇 가지 유효하지 않은 예입니다.
+   - CN=Computers,DC=contoso,DC=com(컨테이너는 지정할 수 없습니다. 대신 도메인에 대한 기본값을 사용하려면 값을 비워 둡니다.)
+   - OU=Mine(DC= 특성을 통해 도메인을 지정해야 합니다.)
+     
    > [!NOTE]
    > **조직 구성 단위**의 값에 따옴표를 사용하지 마세요.
-1. **확인** > **만들기**를 선택합니다.  
+5. **확인** > **만들기**를 선택합니다.  
     프로필이 만들어지고 목록에 표시됩니다.
-1. 프로필을 할당하려면 [디바이스 프로필 할당](../configuration/device-profile-assign.md#assign-a-device-profile)의 단계에 따라 프로필을 [디바이스 그룹](windows-autopilot-hybrid.md#create-a-device-group) 단계에서 사용한 것과 같은 그룹에 할당합니다.
+6. 프로필을 할당하려면 [디바이스 프로필 할당](../configuration/device-profile-assign.md#assign-a-device-profile)의 단계에 따라 프로필을 [디바이스 그룹](windows-autopilot-hybrid.md#create-a-device-group) 단계에서 사용한 것과 같은 그룹에 할당합니다.
    - 여러 도메인 가입 프로필 배포
    
      a. 특정 Autopilot 배포 프로필을 통해 모든 Autopilot 디바이스를 포함하는 동적 그룹을 만들고 (device.enrollmentProfileName -eq "Autopilot 프로필 이름")을 입력합니다. 

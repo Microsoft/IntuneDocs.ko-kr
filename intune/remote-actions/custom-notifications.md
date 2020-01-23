@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 01/15/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907290"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036601"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune에서 사용자 지정 알림 보내기  
 
@@ -89,13 +89,13 @@ Intune은 사용자가 보낸 사용자 지정 알림을 추적하지 않으며 
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>단일 디바이스에 사용자 지정 알림 보내기  
 
-1. 알림을 만들고 보낼 권한이 있는 계정으로 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **디바이스** > **모든 디바이스**로 이동합니다.  
+1. 알림을 만들고 보낼 권한이 있는 계정으로 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **디바이스** > **모든 디바이스**로 이동합니다.
 
-2. 알림을 전송하려는 디바이스를 선택합니다.  
+2. 알림을 보내려는 관리 디바이스의 이름을 두 번 클릭하여 해당 디바이스의 *개요* 페이지를 엽니다.
 
-3. 디바이스 **개요** 페이지의 왼쪽 위에서 **...** (줄임표) 옵션을 선택합니다.  
+3. 디바이스 **개요** 페이지에서 **사용자 지정 알림 보내기** 디바이스 작업을 선택하여 *사용자 지정 알림 보내기* 창을 엽니다. 이 옵션을 사용할 수 없는 경우 페이지의 오른쪽 위에서 **...** (줄임표) 옵션을 선택하고 **사용자 지정 알림 보내기**를 선택합니다.
 
-4. **사용자 지정 알림 보내기** 디바이스 작업을 선택하여 다음 메시지 세부 정보를 지정하는 *사용자 지정 알림 보내기* 창을 엽니다.  
+4. **사용자 지정 알림 보내기** 창에서 다음 메시지 세부 정보를 지정합니다.  
 
    - **제목** –이 알림의 제목을 지정합니다. 제목은 50자로 제한됩니다.  
    - **본문** – 메시지를 지정합니다. 메시지는 500자로 제한됩니다.  

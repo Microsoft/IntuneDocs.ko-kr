@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548006"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258496"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -205,7 +205,7 @@ Microsoft Edge 모바일 내 새 탭 페이지에 조직과 관련된 산업 분
 
 |    Key    |    값    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    'com.microsoft.intune.SohwIndustryNews'    |    **True**를 선택하면 Microsoft Edge 모바일 새 탭 페이지에서 관련 업계 뉴스를 표시합니다.<p>**False**(기본값)를 선택하면 새 탭 페이지에서 관련 업계 뉴스를 숨깁니다.    |
+|    com.microsoft.intune.ShowIndustryNews    |    **True**를 선택하면 Microsoft Edge 모바일 새 탭 페이지에서 관련 업계 뉴스를 표시합니다.<p>**False**(기본값)를 선택하면 새 탭 페이지에서 관련 업계 뉴스를 숨깁니다.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Microsoft Edge에 대한 관리형 책갈피 구성
 
@@ -217,6 +217,7 @@ Microsoft Edge 모바일 내 새 탭 페이지에 조직과 관련된 산업 분
 - 이 책갈피는 사용자가 삭제하거나 수정할 수 없습니다.
 - 이 책갈피는 목록 맨 위에 표시됩니다. 사용자가 만드는 모든 책갈피는 이 책갈피 아래에 표시됩니다.
 - 애플리케이션 프록시 리디렉션을 사용한 경우 내부 또는 외부 URL 중 하나를 사용하여 애플리케이션 프록시 웹앱을 추가할 수 있습니다.
+- URL을 목록에 입력할 때 모든 URL의 앞에 **http://** 또는 **https://** 를 붙여야 합니다.
 
 관리 책갈피를 구성하려면 다음 키/값 쌍을 사용합니다.
 
@@ -243,7 +244,7 @@ Microsoft Edge에 대해 허용되거나 차단된 사이트 목록을 구성하
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>허용되거나 차단된 사이트 목록의 URL 형식 
 다양한 URL 형식을 사용하여 허용/차단된 사이트 목록을 작성할 수 있습니다. 이러한 허용되는 패턴은 다음 표에 자세히 설명되어 있습니다. 시작하기 전에 다음과 같은 몇 가지 참고 사항이 있습니다. 
-- URL을 목록에 입력할 때 모든 URL의 앞에 **http** 또는 **https** 를 덧붙여야 합니다.
+- URL을 목록에 입력할 때 모든 URL의 앞에 **http://** 또는 **https://** 를 붙여야 합니다.
 - 다음과 같이 허용되는 패턴 목록의 규칙에 따라 와일드카드 기호(\*)를 사용할 수 있습니다.
 - 와일드카드는 호스트 이름의 전체 구성 요소(마침표로 구분됨) 또는 경로의 전체 부분(슬래시로 구분됨)만 일치할 수 있습니다. 예를 들어 `http://*contoso.com`은 지원되지 **않습니다**.
 - 주소에 포트 번호를 지정할 수 있습니다. 포트 번호를 지정하지 않으면 다음 값이 사용됩니다.
