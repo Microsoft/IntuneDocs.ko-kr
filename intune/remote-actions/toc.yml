@@ -33,8 +33,8 @@
           href: device-supervised-mode.md
         - name: macOS 디바이스 지우기
           href: device-erase.md
-        - name: 활성화 잠금 무시
-          href: device-activation-lock-bypass.md
+        - name: 활성화 잠금 사용 안 함
+          href: device-activation-lock-disable.md
     - name: 사용자 작업
       items:
         - name: 현재 사용자 로그아웃

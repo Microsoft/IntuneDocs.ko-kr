@@ -43,7 +43,7 @@
               href: store-apps-ios.md
             - name: Windows Phone 8.1 스토어 앱
               href: store-apps-windows-phone-8-1.md
-            - name: Windows 앱
+            - name: Windows 스토어 앱
               href: store-apps-windows.md
             - name: 비즈니스용 Microsoft 스토어 앱
               href: windows-store-for-business.md
@@ -133,8 +133,6 @@
               href: manage-microsoft-edge.md
             - name: Outlook 구성
               href: app-configuration-policies-outlook.md
-            - name: Outlook용 S/MIME 구성
-              href: app-configuration-policies-outlook-smime.md
             - name: Android용 Google Chrome 구성
               href: apps-configure-chrome-android.md
         - name: 대량 구매 앱 및 전자책
@@ -190,6 +188,8 @@
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: 앱 설치 문제 해결
           href: troubleshoot-app-install.md
+        - name: 앱 설치 오류 참조
+          href: app-install-error-codes.md
         - name: 모바일 애플리케이션 관리 문제 해결
           href: troubleshoot-mam.md
         - name: 앱 보호 로그 검토

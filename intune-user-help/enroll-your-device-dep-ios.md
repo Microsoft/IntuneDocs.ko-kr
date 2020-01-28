@@ -19,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 6c1b6417489d1443596113a18476b9cbc8f3832e
+ms.sourcegitcommit: 8cc3eca2bce847b0c2b40d8531698e21df848878
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855513"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951469"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>관리에 조직 제공 iOS 디바이스 등록
 
@@ -44,11 +44,7 @@ Intune에서 새 iOS 디바이스를 관리하는 방법을 알아봅니다.
 
 1. iOS 디바이스를 켭니다.
 2. **언어**를 선택하고 디바이스를 Wi-Fi에 연결합니다.
-3. **iOS 디바이스 설정** 화면에서 다음과 같은 작업을 수행할지 여부를 선택합니다.
-   - **새 디바이스로 설정**
-   - **iCloud 백업에서 복원**
-   - **iTunes 백업에서 복원**
-
+3. **iOS 디바이스 설정** 화면에서 **새 디바이스로 설정**을 선택합니다.  
 4. Wi-Fi에 연결되면 **구성** 화면이 표시됩니다. **[사용자 회사]에서 자동으로 디바이스를 구성합니다.** 라고 표시합니다.
 
    **구성을 통해 [사용자 조직]이 이 디바이스를 무선으로 관리할 수 있습니다. 관리자가 이메일 및 네트워크 계정을 설정하고, 앱을 설치 및 구성하고, 원격으로 설정을 관리하도록 지원할 수 있습니다. 관리자는 기능을 사용하지 않도록 설정하고, 앱을 설치 및 제거하고, 인터넷 트래픽을 모니터링 및 제한하고, 이 디바이스를 원격으로 지울 수 있습니다.**
