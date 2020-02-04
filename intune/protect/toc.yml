@@ -93,7 +93,7 @@
           href: conditional-access-assign-jamf.md
     - name: 위협 방지
       items:
-        - name: Mobile Threat Defense
+        - name: 모바일 위협 방어
           href: mobile-threat-defense.md
           items:
             - name: 등록 취소된 디바이스의 MTD
@@ -167,7 +167,7 @@
           href: security-baselines.md
         - name: 기준 모니터링
           href: security-baselines-monitor.md
-    - name: Endpoint Protection
+    - name: 엔드포인트 보호
       href: endpoint-protection-configure.md
     - name: 네트워크 액세스 제어
       href: network-access-control-integrate.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: 인증서 커넥터 문제 해결
           href: troubleshoot-certificate-connector-events.md
+        - name: SCEP 인증서 프로필 문제 해결
+          items:
+            - name: SCEP 인증서 프로필 문제 해결
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: 디바이스에 프로필 배포
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: 디바이스 - NDES 통신
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: NDES 작업
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: 디바이스에 인증서 제공
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: 인증서 배포에 대한 보고
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Exchange Connector 문제 해결
           items:
             - name: Exchange Connector 문제 해결
@@ -267,7 +281,7 @@
           href: compliance-policy-create-windows-8-1.md
         - name: 규정 준수 정책 설정 - Windows Phone 8.1
           href: compliance-policy-create-windows-8-1.md
-    - name: 오류 코드와 설명
+    - name: 오류 코드 및 설명
       items:
         - name: 소프트웨어 업데이트 오류
           href: software-update-agent-error-codes.md

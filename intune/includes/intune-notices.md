@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760972"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912638"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
 
@@ -77,20 +77,6 @@ iOS 및 Android의 웹 클립에 대한 지원이 제공됩니다. 이 지원이
 #### <a name="additional-information"></a>추가 정보
 자세한 내용은 [앱 보호 정책과 함께 Microsoft Edge 사용](../apps/manage-microsoft-edge.md)에 대한 문서를 참조하거나 [지원 블로그 게시물](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)을 참조하세요.
 
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>변경 계획: Intune에서 Android Enterprise 전용 디바이스를 등록할 때 업데이트된 환경<!--5198878-->
-Intune의 11월 또는 1911 릴리스에서는 Android Enterprise 전용 디바이스에 SCEP 디바이스 인증서 배포 지원을 추가하여 Wi-Fi 프로필에 대한 인증서 기반 액세스를 지원합니다. 이러한 변경 내용에는 Android Enterprise 전용 디바이스를 등록하는 경우 몇 가지 사소한 변경 내용도 포함됩니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-사용 중인 환경에서 Android Enterprise 전용 디바이스를 관리하는 경우 11월에 일부 변경 내용이 롤아웃됩니다.
-
-- 새로운 Android 엔터프라이즈 전용 디바이스를 등록하는 경우: 등록하는 동안 최종 사용자에게 디바이스에 대한 여러 단계가 표시됩니다. 등록은 현재와 같은 방식(QR, NFC, Zero-touch 또는 디바이스 식별자 사용)으로 계속 시작되지만 11월 서비스 릴리스 이후에는 필수 앱 설치 단계가 있습니다.
-- 전용 디바이스로 등록된 기존 Android 디바이스의 경우: Intune은 11월 초부터 디바이스에 Microsoft Intune 앱을 자동으로 설치합니다. 사용자는 아무 작업도 수행할 필요가 없습니다. 해당 앱이 자동으로 다운로드되고 디바이스에 설치됩니다. 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
-최종 사용자 지침 업데이트를 계획하고 이 변경 내용을 지원 센터에 알려야 합니다. 자세한 내용 및 스크린샷을 보려면 추가 정보를 클릭하세요. 이 변경 내용이 롤아웃될 때 새로운 기능 페이지가 업데이트됩니다.
-
-#### <a name="additional-information"></a>추가 정보
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>레거시 PC 관리에 대한 지원 종료
 
