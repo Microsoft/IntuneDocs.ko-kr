@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885793"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886734"
 ---
 # <a name="create-a-design"></a>설계 만들기
 
@@ -308,7 +308,10 @@ Wi-Fi 프로필은 모바일 디바이스를 무선 네트워크에 자동으로
 
 다음은 Wi-Fi 프로필에 대한 설계의 예입니다.
 
-| **유형** | **프로필 이름** | **디바이스 플랫폼** | **사용 사례** | | Wi-Fi | 아시아 Wi-Fi 프로필 | Android | Corporate, BYOD 아시아 지역| | Wi-Fi | 북아메리카 Wi-Fi 프로필 | Android, iOS, Windows 10 Mobile | Corporate, BYOD 북아메리카 지역 |
+| **유형** | **프로필 이름** | **디바이스 플랫폼** | **사용 사례** |
+|:---:|:---:|:---:|:---:|
+| Wi-Fi | 아시아 Wi-Fi 프로필 | Android | 회사, BYOD 아시아 지역|
+| Wi-Fi | 북아메리카 Wi-Fi 프로필 | Android, iOS, Windows 10 Mobile | 회사, BYOD 북아메리카 지역 |
 
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 Wi-Fi 프로필 요구 사항을 파악합니다.
 

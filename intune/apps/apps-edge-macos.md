@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6ebcb81cd0f186a3fd23e0701d12ea871eab129a
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563577"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912575"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Microsoft Intune을 사용하여 macOS 디바이스에 Microsoft Edge 추가
 
@@ -65,11 +65,15 @@ ms.locfileid: "74563577"
 이 단계에서는 앱에 대한 설치 옵션을 구성합니다.
 
 1. **앱 추가** 창에서 **앱 설정**을 선택합니다.
-2. **앱 설정** 창에서 **베타** 채널이 자동으로 선택되며 변경할 수 없습니다.
-    - **베타** 채널은 가장 안정적인 Microsoft Edge 미리 보기 환경이며 조직 내에서 전체 파일럿에 대한 가장 적합한 선택입니다. 6주마다 주요 업데이트를 포함합니다.
+2. **앱 설정** 창의 **채널** 목록에서 **안정**, **Beta** 또는 **Dev**를 선택하여 앱을 배포할 Edge 채널을 결정합니다.
+
+    - **안정** 채널은 엔터프라이즈 환경에서 광범위하게 배포하도록 권장되는 채널입니다. 6주마다 업데이트되는 각 릴리스는 Beta 채널의 향상된 기능을 통합합니다.
+    - **Beta** 채널은 가장 안정적인 Microsoft Edge 미리 보기 환경이며 조직 내에서 전체 파일럿에 대한 가장 적합한 선택입니다. 6주마다 제공되는 주요 업데이트를 통해 각 릴리스는 Dev 채널의 학습 및 향상된 기능을 통합합니다.
+    - **Dev** 채널은 Windows, Windows Server 및 macOS에서 엔터프라이즈 피드백을 받을 수 있습니다. 매주 업데이트되며 최신 향상된 기능과 수정이 포함됩니다.
 
     > [!NOTE]
     > 사용자가 회사 포털을 찾아볼 때 Microsoft Edge 브라우저 로고가 앱과 함께 표시됩니다.
+
 3.  **확인**을 선택합니다.
 
 ## <a name="select-scope-tags-optional"></a>범위 태그 선택(선택 사항)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bad86e561c8695d58296c8f473815a203ef210a
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 469ee615cd9a9f1d3a7aee40ce764b8d8100fe69
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258488"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912902"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>가져온 PKCS 인증서를 Intune을 사용하여 구성 및 사용
 
@@ -175,9 +175,9 @@ HSM(하드웨어 보안 모듈)을 사용하여 공개/프라이빗 키 쌍을 �
 
 5. 가져오는 각 PFX 파일의 암호를 `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force`를 실행해 안전한 문자열로 변환합니다.
 
-6. **UserPFXCertificate** 개체를 만들려면 `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>"`을 실행합니다.
+6. **UserPFXCertificate** 개체를 만들려면 `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>"`을 실행합니다.
 
-   `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`
+   `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption"`
 
    > [!NOTE]
    > 커넥터를 설치한 서버가 아닌 다른 시스템에서 인증서를 가져올 때는, 키 파일 경로를 포함하는 다음 명령을 사용해야 합니다. `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>" "<File path to public key file>"`

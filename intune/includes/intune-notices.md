@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912638"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966364"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>업데이트된 기능: Intune에 새 RBAC 역할 등장<!--4253397-->
-1월 Intune 서비스 업데이트에서 Intune에 새 보안 역할을 릴리스할 계획입니다. 이 역할은 Intune의 “엔드포인트 보안 관리자”로 표시될 것이며 Azure AD의 “보안 관리자” 역할이 확장된 역할입니다.
- 
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-현재 Azure AD는 보안 전문가를 위한 세 가지 역할이 있습니다.
-- Azure AD의 보안 읽기 권한자 역할은 Intune에 읽기 전용 역할을 제공합니다.
-- Azure AD의 보안 연산자 역할은 Intune에 읽기 전용 역할을 제공합니다.
-- Azure AD의 보안 관리자. Intune의 1월 업데이트가 완료되면 Intune에 읽기 전용 권한뿐 아니라 다음과 같은 엔드포인트 보안 관리자 역할이 제공하는 새로운 권한이 추가됩니다.
-    - 디바이스 규정 준수 정책의 읽기, 만들기, 업데이트, 삭제, 할당
-    - 관리 디바이스 읽기, 삭제, 업데이트
-    - 보안 기준 읽기, 만들기, 업데이트, 삭제, 할당
-    - 보안 작업 읽기 및 업데이트
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
-현재의 모든 Intune RBAC 역할을 검토합니다. 현재 역할이 전역 관리자인 경우 변경이 필요하지 않습니다. 엔드포인트 보안 관리자가 제공하는 세부 역할을 사용하려면 해당 역할이 제공된 뒤 해당 역할을 할당하세요. Intune의 [새로운 내용](../fundamentals/whats-new.md) 페이지에서 Intune의 최신 릴리스 정보를 확인하세요. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>'Intune용 Adobe Acrobat Reader' 모바일 앱에 대한 업데이트된 지원 정책<!--5746776-->
 8월 말에 MC188653에서 Intune용 Adobe Acrobat Reader 모바일 앱이 2019년 12월 1일에 지원 종료되며, Adobe가 주 Acrobat Reader 앱 내에서 Intune의 앱 보호 정책을 지원하도록 계획 중이라는 소식을 제공했습니다. 그 이후에 IT 관리자가 Intune용 Adobe Acrobat Reader를 대상으로 지정하고 최종 사용자가 Intune용 Adobe Acrobat Reader 사용을 시작할 수 있도록 시간을 좀 더 제공해야 한다는 고객 의견을 받았습니다. 최종 사용자 디바이스에서 Intune용 Adobe Acrobat Reader가 많이 사용되고 있으며 엔터프라이즈 시나리오에서 중요도가 높다고 가정할 경우, 작업 환경이 조직의 앱 보호 요구를 충족하는지 확인하려고 할 것입니다. 
