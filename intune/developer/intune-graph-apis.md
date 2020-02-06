@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ac63ef1f35e7b4730e275c6c9e566c53463c72ce
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490514"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754799"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD를 사용하여 Microsoft Graph의 Intune API에 액세스하는 방법
 
@@ -62,7 +62,7 @@ Microsoft Graph에서 Intune API에 액세스하려면 다음 항목이 필요�
 
 Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니다.
 
-1. 관리 자격 증명을 사용 하 여 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 에 로그인 합니다.
+1. 관리 자격 증명을 사용하여 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
 
     해당하는 경우 다음 계정을 사용할 수 있습니다.
     - 테넌트 관리자 계정
@@ -90,7 +90,7 @@ Microsoft Graph API를 사용할 앱을 등록하려면 다음을 수행합니�
 
     1. **애플리케이션 ID** 값을 적어 둡니다.
 
-    2. **설정** &gt; **API 액세스** &gt; **필요한 권한**을 선택합니다.
+    2. **설정** &gt; **API 액세스** &gt; **필수 권한**을 선택합니다.
 
     <img src="../media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
@@ -140,7 +140,7 @@ _OAuth 범위_라고도 하는 권한 범위는 특정 Intune 엔터티 및 해�
 - [Azure AD 인증](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [애플리케이션 권한 범위](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Microsoft Graph에 권한을 부여하는 경우 다음 범위를 지정하여 Intune 기능에 대한 액세스를 제어할 수 있습니다. 아래 표에는 Intune API 권한 범위가 요약되어 있습니다.  첫 번째 열에는 Azure Portal에 표시되는 기능의 이름이 표시되어 있고 두 번째 열에는 권한 범위 이름이 나와 있습니다.
+Microsoft Graph에 권한을 부여하는 경우 다음 범위를 지정하여 Intune 기능에 대한 액세스를 제어할 수 있습니다. 다음 표에는 Intune API 권한 범위가 요약되어 있습니다.  첫 번째 열에는 Azure Portal에 표시되는 기능의 이름이 표시되어 있고 두 번째 열에는 권한 범위 이름이 나와 있습니다.
 
 _액세스 사용_ 설정 | 범위 이름
 :--|:--
@@ -240,7 +240,7 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 
 - 다음과 같은 원격 작업도 허용됩니다.
   - 디바이스 찾기
-  - 활성화 잠금 무시
+  - 활성화 잠금 사용 안 함
   - 원격 지원 요청
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
@@ -276,7 +276,7 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
   - 통신 비용 관리
   - 클라우드 PKI
   - 브랜딩
-  - Mobile Threat Defense
+  - 모바일 위협 방어
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
@@ -344,7 +344,7 @@ __Microsoft Intune 구성 읽기__ | DeviceManagementServiceConfig.Read.All
 3. 솔루션 탐색기를 사용하여 프로젝트에 Microsoft ADAL NuGet 패키지를 추가합니다.
 
     1. 솔루션 탐색기를 마우스 오른쪽 단추로 클릭합니다.
-    2. **NuGet 패키지 관리...** &gt; **찾아보기**를 선택합니다.
+    2. **NuGet 패키지 관리...** &gt; **찾아보기**.
     3. `Microsoft.IdentityModel.Clients.ActiveDirectory`를 선택하고 **설치**를 선택합니다.
 
     <img src="../media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />

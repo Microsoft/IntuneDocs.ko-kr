@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/27/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8ade7676cb8f6265dd63eb1ba7847c50f526a9a
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: HT
+ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541863"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812448"
 ---
 # <a name="intune-app-installation-error-reference"></a>Intune 앱 설치 오류 참조
 
@@ -90,9 +90,7 @@ ms.locfileid: "76541863"
 | 0x87D13B72 | -2016330894 | 인터넷 연결이 끊어졌습니다.  | 네트워크 연결(연결이 끊어짐)로 인해 앱 매니페스트 유효성 검사에 실패했습니다. |
 | 0x87D13B73 | -2016330893 | 인터넷 연결이 끊어졌습니다.  | 네트워크 연결(인터넷에 연결되지 않음)로 인해 앱 매니페스트 유효성 검사에 실패했습니다. |
 | 0x87D13B77 | -2016330889 | 보안 연결에 실패했습니다.  | 네트워크 연결(보안 연결 실패)로 인해 앱 매니페스트 유효성 검사에 실패했습니다. |
-| 0x87D13B6F | -2016330897 |  |   |
 | 0x87D13B80 | -2016330880 | CannotConnectToITunesStoreError | ITunes Store에 연결하지 못해 앱을 설치하지 못했습니다. |
-| 0x87D13B6E | -2016330898 |   | 네트워크 연결(알 수 없음)로 인해 앱 매니페스트 유효성 검사에 실패했습니다. |
 | 0x87D13B9F  | -2016330849 | VPP 앱에 사용할 수 있는 업데이트가 있습니다. | 이 코드는 VPP 앱이 설치되어 있지만 사용 가능한 최신 버전이 있는 경우에 반환됩니다. |
 
 ## <a name="other-installation-errors"></a>기타 설치 오류

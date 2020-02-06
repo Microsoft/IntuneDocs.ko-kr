@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653940"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912678"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>앱 보호 정책에 대해 LOB(기간 업무) 앱 준비
 
@@ -41,7 +41,6 @@ Intune에 등록되지 않은 디바이스의 앱 보호 정책에 대한 앱 �
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>앱 래핑 도구를 사용하는 이유
 
 * 앱에 기본 제공 데이터 보호 기능이 없습니다.
-* 앱이 간단합니다.
 * 앱이 내부적으로 배포됩니다.
 * 앱의 소스 코드에 액세스할 수 없습니다.
 * 앱 개발자가 아닙니다.
@@ -63,7 +62,6 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 ### <a name="reasons-to-use-the-sdk"></a>SDK를 사용하는 이유
 
 * 앱에 기본 제공 데이터 보호 기능이 없습니다.
-* 앱이 복잡하며 다양한 환경을 포함하고 있습니다.
 * 앱이 Google Play 또는 Apple의 앱 스토어와 같은 공개 앱 스토어에 배포됩니다.
 * 앱 개발자이며 SDK를 사용할 수 있는 기술적 배경을 가지고 있습니다.
 * 앱에 다른 SDK 통합이 있습니다.
@@ -76,13 +74,13 @@ SDK에 대해 자세히 알아보려면 [개요](app-sdk.md) 항목을 참조하
 |**iOS**|예 – [Intune 앱 SDK Xamarin 바인딩](app-sdk-xamarin.md)을 사용합니다.|아니요|
 |**OWA(Outlook Web Access)**| 예 – [Intune 앱 SDK Xamarin 바인딩](app-sdk-xamarin.md)을 사용합니다.|아니요|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>위에 나열 된 앱 개발 플랫폼을 사용 하지 않나요?
+## <a name="not-using-an-app-development-platform-listed-above"></a>위에 나열된 앱 개발 플랫폼을 사용하지 않나요?
 
 Intune SDK 개발 팀에서는 네이티브 Android, iOS(Obj-C, Swift), Xamarin, Xamarin.Forms 및 Cordova 플랫폼으로 빌드된 앱을 적극적으로 테스트하고 해당 앱에 대한 지원을 유지합니다. 일부 고객은 React Native와 NativeScript 같은 다른 플랫폼과 Intune SDK 통합에 성공했지만, Microsoft는 지원되는 플랫폼 외에 다른 플랫폼을 사용하는 앱 개발자를 위한 명확한 지침이나 플러그 인을 제공하지 않습니다. 
 
 ## <a name="feature-comparison"></a>기능 비교
 
-이 표에는 앱 SDK 및 앱 래핑 도구에 사용할 수 있는 설정이 나와 있습니다.
+이 표에는 앱이 앱 SDK 또는 앱 래핑 도구를 사용하는 경우 사용 가능한 설정이 나와 있습니다. 일부 기능의 경우 앱 개발자가 Intune SDK와의 기본적인 통합 외에 일부 논리를 적용해야 하며, 앱에서 앱 래핑 도구를 사용하는 경우에는 이 기능을 사용할 수 없습니다. 
 
 |기능|앱 SDK|앱 래핑 도구|
 |-----------|---------------------|-----------|
@@ -107,7 +105,7 @@ Intune SDK 개발 팀에서는 네이티브 Android, iOS(Obj-C, Swift), Xamarin,
 |앱 데이터 전체 초기화|X|X|
 |다중 ID 시나리오에서 회사 및 학교 데이터 선택적 초기화 <br><br>**참고:** iOS의 경우 관리 프로필을 제거하면 앱도 제거됩니다.|X||
 |"다른 이름으로 저장" 차단|X||
-|대상 응용 프로그램 구성 (또는 "MAM 채널"을 통한 앱 구성)|X||
+|대상 애플리케이션 구성(또는 "MAM 채널"을 통한 앱 구성)|X|X|
 |다중 ID 지원|X||
 |사용자 지정 가능한 스타일 |X|||
 |Citrix mVPN을 통한 주문형 애플리케이션 VPN|X|X| 
@@ -117,8 +115,13 @@ Intune SDK 개발 팀에서는 네이티브 Android, iOS(Obj-C, Swift), Xamarin,
 |최소 운영 체제 필요|X|X|
 |최소 Android 보안 패치 버전 필요(Android에만 해당)|X|X|
 |iOS용 최소 Intune SDK 필요(iOS에만 해당)|X|X|
-|로의 Etynet 장치 증명 (Android에만 해당)|X|X|
-|앱에서 위협 검색 (Android에만 해당)|X|X|
+|SafetyNet 디바이스 증명(Android에만 해당)|X|X|
+|앱에서 위협 검색(Android에만 해당)|X|X|
+|최대 Mobile Threat Defense 공급업체 디바이스 위험 수준 필요|X||
+|조직 계정용 앱 알림 콘텐츠 구성|X|X|
+|승인된 키보드 필수 사용(Android에만 해당)|X|X|
+|앱 보호 정책 필요(조건부 액세스)|X||
+|승인된 클라이언트 앱 필요(조건부 액세스)|X||
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
-ms.translationtype: HT
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517561"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812326"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 Windows 10 이상 디바이스 설정
 
@@ -39,8 +39,11 @@ ms.locfileid: "76517561"
 
 다음 설정에서는 [ApplicationManagement 정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement)를 사용하며, 지원되는 Windows 버전도 나열합니다.
 
-- **App Store**(모바일 전용): **구성되지 않음**(기본값)을 사용하면 최종 사용자가 모바일 디바이스의 앱 스토어에 액세스할 수 있습니다. **차단**은 앱 스토어를 사용하지 못하도록 차단합니다.
-- **Store에서 앱 자동 업데이트**: **구성되지 않음**(기본값)을 사용하면 Microsoft Store에서 설치된 앱을 자동으로 업데이트할 수 있습니다. **차단**은 업데이트가 자동으로 설치되지 않도록 차단합니다.
+- **앱 스토어**(모바일 전용): **차단**을 선택하면 최종 사용자가 모바일 디바이스에서 앱 스토어에 액세스할 수 없습니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 OS에서 최종 사용자의 앱 스토어 액세스를 허용할 수 있습니다.
+- **스토어에서 앱 자동 업데이트**:**차단**을 선택하면 업데이트가 Microsoft Store에서 자동으로 설치되지 않습니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 OS에서 앱이 Microsoft Store에서 자동으로 업데이트되도록 허용할 수 있습니다.
+
+  [ApplicationManagement/AllowAppStoreAutoUpdate CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **신뢰할 수 있는 앱 설치**: 비 Microsoft Store 앱을 설치할 수 있는 경우(사이드로드라고도 함) 이 설정을 선택합니다. 사이드로드는 Microsoft Store에서 인증하지 않은 앱을 설치한 다음, 실행하거나 테스트합니다. 예를 들어 회사 내부에만 있는 앱입니다. 옵션은 다음과 같습니다.
   - **구성되지 않음**(기본값): Intune에서 이 설정을 변경하거나 업데이트하지 않습니다.
   - **차단**: 사이드로드를 차단합니다. 비 Microsoft Store 앱을 설치할 수 없습니다.
@@ -51,16 +54,36 @@ ms.locfileid: "76517561"
   - **허용**: 개발자 모드 및 앱 사이드로드를 허용합니다.
 
   [디바이스를 개발에 사용할 수 있도록 설정](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)에는 이 기능에 대한 자세한 정보가 있습니다.
+  
+  [ApplicationManagement/AllowAllTrustedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **공유 사용자 앱 데이터**: **허용**을 선택하면 동일한 디바이스의 다른 사용자와 해당 앱의 다른 인스턴스 간에 애플리케이션 데이터를 공유할 수 있습니다. **구성되지 않음**(기본값)은 동일한 앱의 다른 사용자 및 다른 인스턴스와 데이터를 공유하지 못하도록 차단합니다.
-- **프라이빗 스토어만 사용**: **허용**을 사용하면 소매 카탈로그를 포함하여 프라이빗 스토어에서만 앱을 다운로드할 수 있고 퍼블릭 스토어에서는 다운로드할 수 없습니다. **구성되지 않음**(기본값)을 사용하면 프라이빗 스토어와 퍼블릿 스토어에서 앱을 다운로드할 수 있습니다.
-- **스토어에서 시작된 앱 시작**: **차단**은 디바이스에 미리 설치되어 있거나 Microsoft Store에서 다운로드한 앱을 모두 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)을 사용하면 이러한 앱을 열 수 있습니다.
-- **시스템 볼륨에 앱 데이터 설치**: **차단**은 앱에서 데이터를 디바이스의 시스템 볼륨에 저장하지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 앱에서 데이터를 시스템 디스크 볼륨에 저장할 수 있습니다.
-- **시스템 드라이브에 앱 설치**: **차단**은 앱이 디바이스의 시스템 드라이브에 설치되지 못하도록 차단합니다. **구성되지 않음**(기본값)을 사용하면 앱을 시스템 드라이브에 설치할 수 있습니다.
-- **게임 DVR**(데스크톱 전용): **차단**은 Windows 게임 녹화 및 방송을 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)을 사용하면 게임을 녹화하고 브로드캐스트할 수 있습니다.
+- **공유 사용자 앱 데이터**: **허용**을 선택하면 동일한 디바이스의 다른 사용자와 해당 앱의 다른 인스턴스 간에 애플리케이션 데이터를 공유할 수 있습니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 OS에서 동일한 앱의 다른 사용자 및 다른 인스턴스와 데이터를 공유하는 것을 차단할 수 있습니다.
+
+  [ApplicationManagement/AllowSharedUserAppData CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **프라이빗 스토어만 사용**: **허용**을 사용하면 소매 카탈로그를 포함하여 프라이빗 스토어에서만 앱을 다운로드할 수 있고 퍼블릭 스토어에서는 다운로드할 수 없습니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 OS에서 프라이빗 스토어와 퍼블릭 스토어로부터 앱 다운로드를 허용할 수 있습니다.
+
+  [ApplicationManagement/RequirePrivateStoreOnly CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **스토어에서 시작된 앱 시작**: **차단**은 디바이스에 미리 설치되어 있거나 Microsoft Store에서 다운로드한 앱을 모두 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 OS에서 이러한 앱이 열리게 허용할 수 있습니다.
+
+  [ApplicationManagement/DisableStoreOriginatedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **시스템 볼륨에 앱 데이터 설치**: **차단**은 앱에서 데이터를 디바이스의 시스템 볼륨에 저장하지 못하도록 차단합니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 OS에서 앱이 데이터를 시스템 디스크 볼륨에 저장하도록 허용할 수 있습니다.
+
+  [ApplicationManagement/RestrictAppDataToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **시스템 드라이브에 앱 설치**: **차단**은 앱이 디바이스의 시스템 드라이브에 설치되지 못하도록 차단합니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 OS에서 앱이 시스템 드라이브에 설치되도록 허용할 수 있습니다.
+
+  [ApplicationManagement/RestrictAppToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **게임 DVR**(데스크톱 전용): **차단**은 Windows 게임 녹화 및 방송을 사용하지 않도록 설정합니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 OS에서 게임 녹화 및 브로드캐스트를 허용할 수 있습니다.
+
+  [ApplicationManagement/AllowGameDVR CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **스토어 전용 앱**: 이 설정은 사용자가 Microsoft Store 외의 다른 곳에서 앱을 설치할 때 사용자 환경을 확인합니다. 옵션은 다음과 같습니다.
 
-  - **구성되지 않음**(기본값): 최종 사용자가 다른 정책 설정에 정의된 앱을 포함하여 Microsoft Store 외의 다른 곳에서 앱을 설치할 수 있습니다.  
+  - **구성되지 않음**(기본값): Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 OS에서 최종 사용자가 다른 정책 설정에 정의된 앱을 포함하여 Microsoft Store 외의 다른 곳에서 앱을 설치할 수 있게 허용할 수 있습니다.  
   - **모든 위치**: 앱 권장 사항을 끄고, 사용자가 모든 위치에서 앱을 설치할 수 있습니다.  
   - **Store만**: 최종 사용자가 Microsoft Store에서만 앱을 설치할 수 있도록 합니다.
   - **권장 사항**: Microsoft Store에서 사용할 수 있는 앱을 웹에서 설치할 때 사용자에게 Store에서 다운로드하는 것이 좋다는 메시지를 표시합니다.  
@@ -68,11 +91,11 @@ ms.locfileid: "76517561"
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **설치에 대한 사용자 제어**: **구성되지 않음**(기본값)으로 설정하면 Windows Installer에서 사용자가 파일을 설치할 디렉터리 입력 등 일반적으로 시스템 관리자용으로 예약된 설치 옵션을 변경하지 못하도록 합니다. **차단**: 사용자가 이러한 설치 옵션을 변경하는 것을 허용하며, 일부 Windows Installer 보안 기능이 무시됩니다.
+- **설치에 대한 사용자 정의 컨트롤**: **차단**을 선택하면 사용자가 파일을 설치할 디렉터리 입력 등 일반적으로 시스템 관리자용으로 예약된 설치 옵션을 변경하지 못합니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 Windows Installer는 사용자가 이러한 설치 옵션을 변경하는 것을 방지할 수 있으며, Windows Installer 보안 기능 중 일부는 무시됩니다.
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **높은 권한으로 앱 설치**: **구성되지 않음**(기본값)으로 설정하면 시스템에서 시스템 관리자가 배포하거나 제공하지 않은 프로그램을 설치할 때 현재 사용자의 권한을 적용합니다. **차단**: Windows Installer가 시스템에 프로그램을 설치할 때 높은 권한을 사용하도록 지시합니다. 이러한 권한은 모든 프로그램으로 확장됩니다.
+- **높은 권한으로 앱 설치**: **차단**을 선택하면 Windows Installer가 시스템에 프로그램을 설치할 때 높은 권한을 사용하도록 지시합니다. 이러한 권한은 모든 프로그램으로 확장됩니다. **구성되지 않음**(기본값)으로 설정하면 Intune에서 이 설정을 변경하거나 업데이트하지 않습니다. 기본적으로 시스템에서는 시스템 관리자가 배포하거나 제공하지 않은 프로그램을 설치할 때 현재 사용자의 권한을 적용할 수 있습니다. 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -232,7 +255,7 @@ GDI DPI 크기 조정은 DPI를 인식하지 않는 애플리케이션에서 DPI
 
 - **잠긴 화면 그림 URL(데스크톱 전용)** : Windows 잠금 화면 배경으로 사용되는 JPG, JPEG 또는 PNG 형식의 그림에 대한 URL을 입력합니다. 예를 들어 다음과 같이 입력합니다. `https://contoso.com/image.png` 이 설정은 이미지를 잠그고 나중에 변경할 수 없습니다.
 
-  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **사용자 구성 가능 화면 시간 초과(모바일 전용)** : **허용**을 선택하면 사용자가 화면 시간 초과를 구성할 수 있습니다. **구성되지 않음**(기본값)은 사용자에게 이 옵션을 제공하지 않습니다.
 
