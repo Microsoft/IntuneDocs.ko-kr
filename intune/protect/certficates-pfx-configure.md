@@ -116,7 +116,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 5. **일반** 탭에서 **템플릿 표시 이름**을 의미 있는 이름으로 설정합니다.
 
     > [!WARNING]
-    > 기본적으로 **템플릿 이름**은 *공백 없이***템플릿 표시 이름**과 동일합니다. 나중에 필요하므로 템플릿 이름을 참고합니다.
+    > 기본적으로 **템플릿 이름** 은 *공백 없이* **템플릿 표시 이름** 과 동일합니다. 나중에 필요하므로 템플릿 이름을 참고합니다.
 
 6. **요청 처리**에서 **프라이빗 키를 내보낼 수 있음**을 선택합니다.
 7. **암호화**에서 **최소 키 크기**가 2048로 설정되었는지 확인합니다.
@@ -144,7 +144,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
-2. **테넌트 관리** > **커넥터 및 토큰** > **인증서 커넥터** > **+추가**를 선택합니다.
+2. **테넌트 관리** > **커넥터 및 토큰** > **인증서 커넥터** >  **+추가**를 선택합니다.
 
 3. PKCS #12용 커넥터에 대해 *인증서 커넥터 소프트웨어 다운로드*를 클릭하고 커넥터를 설치할 서버에서 액세스할 수 있는 위치에 해당 파일을 저장합니다.
 
@@ -214,7 +214,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
    |**인증서 유형**             |<ul><li>Android 엔터프라이즈(*회사 프로필*)</li><li>iOS</li><li>macOS</li><li>Windows 10 이상|유형 선택: <ul><li> **사용자** 인증서는 인증서의 주체와 SAN에 사용자 및 디바이스 특성을 모두 포함할 수 있습니다. </il><li>**디바이스** 인증서는 인증서의 주체와 SAN에 있는 디바이스 특성만 포함할 수 있습니다. 키오스크 또는 기타 공유 디바이스처럼 사용자가 없는 디바이스 등의 시나리오에 디바이스를 사용합니다.  <br><br> 이 선택 항목은 주체 이름 형식에 영향을 줍니다. |
    |**주체 이름 형식**          |<ul><li>모두         |대부분의 플랫폼에서는 별도로 필요한 경우가 아니면 이 옵션을 **일반 이름**으로 설정합니다.<br><br>다음 플랫폼에서 주체 이름 형식은 인증서 유형에 따라 결정됩니다. <ul><li>Android 엔터프라이즈(*회사 프로필*)</li><li>iOS</li><li>macOS</li><li>Windows 10 이상</li></ul>  <p> 이 문서의 뒷부분에 있는 [주체 이름 형식](#subject-name-format)을 참조하세요. |
    |**주체 대체 이름**     |<ul><li>모두         |달리 필요하지 않은 경우 이 옵션을 **UPN(사용자 계정 이름)** 으로 설정합니다. |
-   |**확장 키 사용**           |<ul><li> Android 디바이스 관리자 </li><li>Android 엔터프라이즈(*디바이스 소유자*, *회사 프로필*) </li><li>Windows 10 |일반적으로 인증서는 사용자 또는 디바이스가 서버에 인증할 수 있는 ‘클라이언트 인증’이 필요합니다. |
+   |**확장 키 사용**           |<ul><li> Android 디바이스 관리자 </li><li>Android 엔터프라이즈(*디바이스 소유자*, *회사 프로필*) </li><li>Windows 10 |일반적으로 인증서는 사용자 또는 디바이스가 서버에 인증할 수 있는 ‘클라이언트 인증’이 필요합니다.  |
    |**모든 앱이 프라이빗 키에 액세스할 수 있도록 허용** |<ul><li>macOS  |연결된 mac 디바이스용으로 구성된 앱에 PKCS 인증서 프라이빗 키에 대한 액세스 권한을 제공하려면 **사용**으로 설정합니다. <br><br> 이 설정에 대한 자세한 내용은 Apple 개발자 설명서에서 [구성 프로필 참조](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)의 *AllowAllAppsAccess* 인증서 페이로드 섹션을 참조하세요. |
    |**루트 인증서**             |<ul><li>Android 디바이스 관리자 </li><li>Android 엔터프라이즈(*디바이스 소유자*, *회사 프로필*) |이전에 할당된 루트 CA 인증서 프로필을 선택합니다. |
 
@@ -244,17 +244,17 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 > - =
 
 - **사용자 인증서 유형**  
-  ‘주체 이름 형식’의 형식 옵션에는 다음 두 개의 변수가 포함됩니다. **CN(일반 이름)** 및 **E(메일)** 을 지원합니다. **CN(일반 이름)** 은 다음 변수 중 하나로 설정할 수 있습니다.
+  ‘주체 이름 형식’의 형식 옵션에는 다음 두 개의 변수가 포함됩니다.  **CN(일반 이름)** 및 **E(메일)** 을 지원합니다. **CN(일반 이름)** 은 다음 변수 중 하나로 설정할 수 있습니다.
 
-  - **CN={{UserName}}**: 사용자의 사용자 계정 이름입니다(예: janedoe@contoso.com).
-  - **CN={{AAD_Device_ID}}**: Azure AD(Active Directory)에서 디바이스를 등록하는 경우 할당된 ID입니다. 이 ID는 일반적으로 Azure AD로 인증하는 데 사용됩니다.
-  - **CN={{SERIALNUMBER}}**: 일반적으로 디바이스를 식별하는 제조업체에서 사용되는 고유한 SN(일련 번호)입니다.
-  - **CN={{IMEINumber}}**: 휴대폰을 식별하는 데 사용되는 IMEI(International Mobile Equipment Identity) 고유 번호입니다.
-  - **CN={{OnPrem_Distinguished_Name}}**: 쉼표로 구분된 상대 고유 이름 순서(예: *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*)입니다.
+  - **CN={{UserName}}** : 사용자의 사용자 계정 이름입니다(예: janedoe@contoso.com).
+  - **CN={{AAD_Device_ID}}** : Azure AD(Active Directory)에서 디바이스를 등록하는 경우 할당된 ID입니다. 이 ID는 일반적으로 Azure AD로 인증하는 데 사용됩니다.
+  - **CN={{SERIALNUMBER}}** : 일반적으로 디바이스를 식별하는 제조업체에서 사용되는 고유한 SN(일련 번호)입니다.
+  - **CN={{IMEINumber}}** : 휴대폰을 식별하는 데 사용되는 IMEI(International Mobile Equipment Identity) 고유 번호입니다.
+  - **CN={{OnPrem_Distinguished_Name}}** : 쉼표로 구분된 상대 고유 이름 순서(예: *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*)입니다.
 
     *{{OnPrem_Distinguished_Name}}* 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하여 *onpremisesdistinguishedname* 사용자 특성을 Azure AD와 동기화해야 합니다.
 
-  - **CN={{onPremisesSamAccountName}}**: 관리자는 Azure AD Connect를 사용하여 Azure AD에 대한 Active Directory의 samAccountName 특성을 *onPremisesSamAccountName* 특성으로 동기화할 수 있습니다. Intune에서는 해당 변수를 인증서의 제목에 있는 인증 발급 요청의 일부로 대체할 수 있습니다. samAccountName 특성은 이전 버전의 Windows(Windows 2000 이전)에서 클라이언트 및 서버를 지원하는 데 사용되는 사용자 로그인 이름입니다. 사용자 로그인 이름 형식은 다음과 같습니다. *DomainName\testUser* 또는 *testUser*만
+  - **CN={{onPremisesSamAccountName}}** : 관리자는 Azure AD Connect를 사용하여 Azure AD에 대한 Active Directory의 samAccountName 특성을 *onPremisesSamAccountName* 특성으로 동기화할 수 있습니다. Intune에서는 해당 변수를 인증서의 제목에 있는 인증 발급 요청의 일부로 대체할 수 있습니다. samAccountName 특성은 이전 버전의 Windows(Windows 2000 이전)에서 클라이언트 및 서버를 지원하는 데 사용되는 사용자 로그인 이름입니다. 사용자 로그인 이름 형식은 다음과 같습니다. *DomainName\testUser* 또는 *testUser*만
 
     *{{onPremisesSamAccountName}}* 변수를 사용하려면 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용하여 *onPremisesSamAccountName* 사용자 특성을 Azure AD와 동기화해야 합니다.
 
@@ -274,7 +274,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
   - **{{WiFiMacAddress}}**
   - **{{IMEI}}**
   - **{{DeviceName}}**
-  - **{{FullyQualifiedDomainName}}***(Windows 및 도메인 가입 디바이스에만 적용됨)*
+  - **{{FullyQualifiedDomainName}}** *(Windows 및 도메인 가입 디바이스에만 적용됨)*
   - **{{MEID}}**
 
   텍스트 상자에서 이러한 변수와 변수 텍스트를 차례로 지정할 수 있습니다. 예를 들어, *Device1*이라는 디바이스의 일반 이름을 **CN={{DeviceName}}Device1**으로 추가할 수 있습니다.
