@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207386"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966286"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune에 대한 미국 정부 엔드포인트
 
@@ -61,7 +61,7 @@ ms.locfileid: "75207386"
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
 
 ## <a name="windows-push-notification-services"></a>Windows Push Notification Services
-MDM(모바일 디바이스 관리)을 사용하여 관리되는 Intune 관리 디바이스에서 디바이스 작업 및 기타 작업을 즉시 수행하려면 Windows PUsh Notification Services(WNS)가 필요합니다. 자세한 내용은 [WNS 트래픽을 지원하기 위한 엔터프라이즈 방화벽 및 프록시 구성](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)을 참조하세요.
+MDM(모바일 장치 관리)을 사용하여 관리되는 Intune 관리 디바이스에서 디바이스 작업 및 기타 작업을 즉시 수행하려면 Windows Push Notification Services(WNS)가 필요합니다. 자세한 내용은 [WNS 트래픽을 지원하기 위한 엔터프라이즈 방화벽 및 프록시 구성](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)을 참조하세요.
 
 ## <a name="apple-device-network-information"></a>Apple 디바이스 네트워크 정보
 

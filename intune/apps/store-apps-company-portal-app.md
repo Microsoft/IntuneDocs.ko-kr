@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93570bc9dab20801ea6681f6a142de62990a1c57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712953"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755037"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 수동으로 추가
 
@@ -56,7 +56,7 @@ ms.locfileid: "73712953"
     이 작업은 x86, x64, ARM 아키텍처에 대해 수행해야 합니다.<br> 
     *필수 프레임 워크 패키지는 최소 OS 버전으로 1507을 선택할 때 9개, 1511을 선택할 때 12개, 1607을 선택할 때 15개가 있습니다.*
 
-8. Azure Portal의 Microsoft Intune에서 회사 포털 앱을 새 앱으로 업로드합니다. **앱 추가** 창에서 **앱 유형**으로 LOB(기간 업무) 앱을 선택하여 애플리케이션을 추가합니다. 그런 다음 앱 패키지 파일을 선택합니다(확장자 .AppxBundle).
+8. Azure Portal의 Microsoft Intune에서 회사 포털 앱을 새 앱으로 업로드합니다. **앱 유형 선택** 창에서 **앱 유형**으로 LOB(기간 업무) 앱을 선택하여 애플리케이션을 추가합니다. 그런 다음 앱 패키지 파일을 선택합니다(확장자 .AppxBundle).
 
 9. **종속성 앱 파일 선택**에서 Shift 클릭을 사용하여 7단계에서 다운로드한 모든 종속성을 선택하고, 필요한 아키텍처가 **추가됨** 열에 **예**로 표시되는지 확인합니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "73712953"
 
 Intune이 유니버설 앱의 종속성을 처리하는 방식에 대한 자세한 내용은 [Microsoft Intune MDM을 통해 종속성이 포함된 appxbundle 배포](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)를 참조하세요.  
 
-## <a name="frequently-asked-questions"></a>질문과 대답 
+## <a name="frequently-asked-questions"></a>자주 묻는 질문 
 ### <a name="how-do-i-update-the-company-portal-app-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>사용자가 이미 스토어에서 이전 앱을 설치한 경우 어떻게 사용자의 디바이스에서 회사 포털 앱을 업데이트하나요?
 사용자가 이미 Microsoft Store에서 Windows 8.1 또는 Windows Phone 8.1 회사 포털 앱을 설치한 경우 관리자나 사용자의 별도 조치가 없어도 앱이 자동으로 최신 버전으로 업데이트됩니다. 앱이 업데이트되지 않는 경우 사용자에게 디바이스에서 스토어 앱에 자동 업데이트를 사용하도록 설정했는지 확인해 보라고 요청합니다.   
 

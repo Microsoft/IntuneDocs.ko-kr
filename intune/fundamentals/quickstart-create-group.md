@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/17/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d73cc367e6c3308b34c2d2dd14c9fed94d80ba74
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d9b06043dd10f92b6176d4b2e9f90f1b7c87aac9
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813397"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540958"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>빠른 시작: 사용자 관리를 위한 그룹 만들기
 
@@ -36,22 +36,23 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 
 ## <a name="prerequisites"></a>전제 조건
 
+- Microsoft Intune 구독 - [평가판 계정에 등록](../fundamentals/free-trial-sign-up.md)하세요.
 - 이 빠른 시작을 완료하려면 [사용자를 만들어야 합니다](quickstart-create-user.md).
 
-## <a name="sign-in-to-intune"></a>Intune에 로그인
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Microsoft 엔드포인트 관리자의 Intune에 로그인
 
-[Intune 포털](https://aka.ms/intuneportal)에 [글로벌 관리자 또는 Intune 서비스 관리자](users-add.md#types-of-administrators)로 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
+[전역 관리자 또는 Intune 서비스 관리자](users-add.md#types-of-administrators)로 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="create-a-group"></a>그룹 만들기
 
 이 빠른 시작 시리즈에서 나중에 사용될 그룹을 만듭니다. 그룹 만들기:
 
-1. **Microsoft Intune** 창을 연 후에는 **그룹** > **새 그룹**을 선택합니다.
+1. **Microsoft Endpoint Manager**를 연 다음 **그룹** > **새 그룹**을 선택합니다.
 2. **그룹 형식** 드롭다운 상자에서 **보안**을 선택합니다.
 3. **그룹 이름** 필드에서 새 그룹의 이름(예: **Contoso 테스터**)을 입력합니다.
-4. 그룹 **설명**을 추가합니다.
+4. 그룹의 **그룹 설명**을 추가합니다.
 5. **멤버 자격 형식**을 **할당됨**으로 설정합니다. 
-6. **멤버**를 클릭하고 목록에서 그룹에 하나 이상의 멤버를 선택합니다.
+6. **멤버**에서 링크를 클릭하고 목록에서 그룹의 멤버 하나 이상을 선택합니다.
 
     ![Microsoft Intune에서 그룹 만들기 스크린샷](./media/quickstart-create-group/quickstart-use-groups-01.png)
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57aa0546950a12cdb2d4a2e3c8ed721bfc24b8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564149"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755394"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune을 사용하여 Android Enterprise 디바이스에 관리되는 Google Play 앱 추가
 
-관리되는 Google Play는 Google의 엔터프라이즈 앱 스토어이며 Android Enterprise용 응용 프로그램의 유일한 소스입니다. Intune을 사용하여 Android 엔터프라이즈 시나리오(회사 프로필, 전용 및 완전 관리형 등록 포함)에 대한 관리되는 Google Play를 통해 앱 배포를 오케스트레이션할 수 있습니다. Intune에 관리되는 Google Play 앱을 추가하는 방법은 Android 외 Enterprise에 Android 앱을 추가하는 방법과 다릅니다. 스토어 앱, LOB(기간 업무) 앱 및 웹앱은 관리되는 Google Play에서 승인되거나 그에 추가된 후 Intune으로 동기화되어 클라이언트 앱 목록에 표시됩니다. 클라이언트 앱 목록에 표시되면 다른 앱과 마찬가지로 관리되는 Google Play 앱의 할당을 관리할 수 있습니다.
+관리되는 Google Play는 Google의 엔터프라이즈 앱 스토어이며 Android Enterprise용 애플리케이션의 유일한 소스입니다. Intune을 사용하여 Android 엔터프라이즈 시나리오(회사 프로필, 전용 및 완전 관리형 등록 포함)에 대한 관리되는 Google Play를 통해 앱 배포를 오케스트레이션할 수 있습니다. Intune에 관리되는 Google Play 앱을 추가하는 방법은 Android 외 Enterprise에 Android 앱을 추가하는 방법과 다릅니다. 스토어 앱, LOB(기간 업무) 앱 및 웹앱은 관리되는 Google Play에서 승인되거나 그에 추가된 후 Intune으로 동기화되어 클라이언트 앱 목록에 표시됩니다. 클라이언트 앱 목록에 표시되면 다른 앱과 마찬가지로 관리되는 Google Play 앱의 할당을 관리할 수 있습니다.
 
 Android 엔터프라이즈 관리를 더 쉽게 구성하고 사용할 수 있도록 Intune에서는 Intune 테넌트를 관리되는 Google Play에 연결하자마자 일반적인 Android 엔터프라이즈 관련 앱 4개를 Intune 관리자 콘솔에 자동으로 추가합니다. 이 네 가지 앱은 다음과 같습니다.
 
@@ -37,7 +37,7 @@ Android 엔터프라이즈 관리를 더 쉽게 구성하고 사용할 수 있�
 - **[관리 홈 화면](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise)** - Android 엔터프라이즈 전용 다중 앱 키오스크 시나리오에 사용합니다. IT 관리자는 할당을 만들어 다중 앱 키오스크 시나리오에서 사용할 전용 디바이스에 이 앱을 설치해야 합니다.
 
 >[!NOTE]
->최종 사용자가 Android 엔터프라이즈 완전 관리형 디바이스를 등록하면 Intune 회사 포털 앱이 자동으로 설치되고 응용 프로그램 아이콘이 최종 사용자에게 표시됩니다. 최종 사용자가 Intune 회사 포털 앱을 시작하려고 하면 최종 사용자는 Microsoft Intune 앱으로 리디렉션되고 이어서 회사 포털 앱 아이콘이 숨겨집니다.
+>최종 사용자가 Android 엔터프라이즈 완전 관리형 디바이스를 등록하면 Intune 회사 포털 앱이 자동으로 설치되고 애플리케이션 아이콘이 최종 사용자에게 표시됩니다. 최종 사용자가 Intune 회사 포털 앱을 시작하려고 하면 최종 사용자는 Microsoft Intune 앱으로 리디렉션되고 이어서 회사 포털 앱 아이콘이 숨겨집니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 - 관리되는 Google Play에 Intune 테넌트를 연결했는지 확인합니다.  자세한 내용은 [Intune 계정을 관리형 Google Play 계정에 연결](../enrollment/connect-intune-android-enterprise.md)을 참조하세요.
@@ -59,19 +59,41 @@ Android 엔터프라이즈 관리를 더 쉽게 구성하고 사용할 수 있�
 1. Intune 콘솔에서 직접 찾아 승인하는 방법 - Intune 내에서 호스팅되는 뷰에서 스토어 앱을 찾고 승인합니다. 이 뷰는 Intune 콘솔에서 직접 열리며 다른 계정으로 다시 인증하지 않아도 됩니다.
 1. 관리되는 Google Play 콘솔에서 찾아 승인하는 방법 - 원하는 경우 관리되는 Google Play 콘솔을 직접 열어 여기에서 앱을 승인합니다. 자세한 내용은 [관리되는 Google Play 앱을 Intune과 동기화](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)를 참조하세요.  이렇게 하려면 Intune 테넌트를 관리되는 Google Play에 연결하는 데 사용한 계정을 사용하여 별도로 로그인해야 합니다.
 
-
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>관리되는 Google Play 스토어 앱을 Intune 콘솔에서 직접 추가
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **앱** > **모든 앱** > **추가**를 선택합니다.
-3. **앱 유형** 드롭다운 상자에서 **관리되는 Google Play**를 선택합니다.
-4. **관리되는 Google Play - 열기**를 선택하여 관리되는 Google Play 카탈로그를 엽니다.
-5. Google Play 카탈로그에서 **Play 스토어 검색**을 선택합니다.
-6. 검색 상자를 사용하여 관리하려는 앱을 검색합니다.
-7. **승인**을 클릭하여 관리되는 Google Play에서 앱을 승인하고 **승인**을 클릭하여 앱 권한을 허용합니다.
-8. [승인 설정] 창에서 **앱이 새 권한을 요청할 때 승인 유지**를 선택한 후 **저장**을 클릭합니다. 이 옵션을 선택하지 않으면, 앱 개발자가 업데이트를 게시하는 경우, 새 권한을 수동으로 승인해야 합니다. 이렇게 하면 권한이 승인될 때까지 설치 및 업데이트가 중지됩니다. 이런 이유로 새 권한을 자동으로 승인하도록 옵션을 선택하는 것이 좋습니다. 
-9. **확인**을 클릭하여 승인한 앱을 포함합니다.
-10. **APP 앱** 창에서 **동기화**를 클릭하여 관리되는 Google Play 서비스와 동기화합니다.
+3. **앱 유형 선택** 창의 사용 가능한 **스토어 앱** 유형 아래에서 **관리되는 Google Play 앱**을 선택합니다.
+4. **선택**을 클릭합니다. **관리되는 Google Play** 앱 스토어가 표시됩니다.
+
+    > [!NOTE]
+    > 관리되는 Google Play 스토어 앱을 탐색하려면 Intune 테넌트 계정이 Android Enterprise 계정에 연결되어야 합니다. 자세한 내용은 [Intune 계정을 관리형 Google Play 계정에 연결](../enrollment/connect-intune-android-enterprise.md)을 참조하세요.
+
+5. 앱 세부 정보를 볼 앱을 선택합니다.
+6. 앱을 표시하는 페이지에서 **승인**을 클릭합니다. 앱 창이 열리면서 앱에서 다양한 작업을 수행할 수 있는 권한을 부여하라는 메시지가 표시됩니다.
+7. **승인**을 선택하여 앱 사용 권한에 동의하고 계속합니다.
+8. **승인 설정** 탭에서 **앱이 새 권한을 요청할 때 승인 유지**를 선택한 후 **완료**를 클릭합니다. 
+
+    > [!IMPORTANT]
+    > 이 옵션을 선택하지 않으면, 앱 개발자가 업데이트를 게시하는 경우, 새 권한을 수동으로 승인해야 합니다. 이렇게 하면 권한이 승인될 때까지 설치 및 업데이트가 중지됩니다. 이런 이유로 새 권한을 자동으로 승인하도록 옵션을 선택하는 것이 좋습니다. 
+
+9. **선택**을 클릭하여 앱을 선택합니다.
+10. 블레이드 맨 위에서 **동기화**를 클릭하여 관리되는 Google Play 서비스와 앱을 동기화합니다.
+11. **새로 고침**을 클릭하여 앱 목록을 업데이트하고 새로 추가된 앱을 표시합니다.
+
+### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>관리되는 Google Play 스토어 앱에 추가 앱 설정 추가
+1. 추가 앱 세부 정보를 추가해야 하는 경우 앱 목록에서 앱을 선택합니다.
+2. **앱 정보** 옆의 **속성** > **편집**을 클릭합니다. **앱 정보** 페이지가 표시됩니다.
+3. **앱 정보** 페이지에서 앱 세부 정보를 추가합니다.
+    - **범주**: 필요한 경우, 기본 제공 앱 범주 중 하나 이상 또는 사용자가 만든 범주를 선택합니다. 이렇게 하면 사용자가 회사 포털을 찾아볼 때 앱을 더 쉽게 찾을 수 있습니다.
+    - **회사 포털에서 이 항목을 추천 앱으로 표시**: 사용자가 앱을 찾아볼 때 회사 포털의 기본 페이지에 앱 제품군을 눈에 띄게 표시하려면 이 옵션을 선택합니다.
+    - **정보 URL**: 필요에 따라 이 앱에 대한 정보를 포함하는 웹 사이트의 URL을 입력합니다. URL은 회사 포털에서 사용자에게 표시됩니다.
+    - **개인정보취급방침 URL**: 필요에 따라 이 앱에 대한 개인정보 관련 정보를 포함하는 웹 사이트의 URL을 입력합니다. URL은 회사 포털에서 사용자에게 표시됩니다.
+    - **개발자**: 선택적으로, 앱 개발자의 이름을 입력합니다.
+    - **소유자**: 필요한 경우 이 앱의 소유자 이름을 입력합니다(예: *HR 부서*).
+    - **메모**: 선택 사항으로, 이 앱과 연결할 모든 메모를 입력합니다.
+4. **검토 + 저장** 페이지를 보려면 **검토 + 저장**을 클릭합니다. 
+5. 작업이 완료되면 **저장**을 클릭하여 Intune에서 앱을 업데이트합니다.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>관리되는 Google Play 콘솔에서 관리되는 Google Play 스토어 앱 추가(대안)
 Intune을 사용하여 직접 추가하는 것이 아니라 Intune을 사용하여 관리되는 Google Play 앱을 동기화하려는 경우 다음 단계를 사용합니다.
@@ -81,7 +103,7 @@ Intune을 사용하여 직접 추가하는 것이 아니라 Intune을 사용하�
 
 1. [관리되는 Google Play 스토어](https://play.google.com/work)로 이동합니다. Intune과 Android 엔터프라이즈 간 연결을 구성하는 데 사용한 계정으로 로그인합니다.
 2. Intune을 사용하여 스토어를 검색하고 할당할 앱을 선택합니다.
-3. 앱을 표시하는 페이지에서 **승인**을 선택합니다.  
+3. 앱을 표시하는 페이지에서 **승인**을 클릭합니다.  
     다음 예제에서는 Microsoft Excel 앱이 선택되었습니다.
 
     ![관리되는 Google Play 스토어의 승인 단추](./media/apps-add-android-for-work/approve.png)
@@ -109,20 +131,22 @@ Intune을 사용하여 직접 추가하는 것이 아니라 Intune을 사용하�
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **앱** > **모든 앱** > **추가**를 선택합니다.
-3. **앱 유형** 드롭다운 상자에서 **관리되는 Google Play**를 선택합니다.
-4. **관리되는 Google Play - 열기**를 선택하여 관리되는 Google Play 카탈로그를 엽니다.
-5. Google Play 카탈로그에서 **비공개 앱**을 선택합니다.
-6. **"+"** 단추를 클릭하여 새 앱을 추가합니다.
-7. 앱에 대한 앱 제목 및 APK 패키지 제출
+3. **앱 유형 선택** 창의 사용 가능한 **스토어 앱** 유형 아래에서 **관리되는 Google Play 앱**을 선택합니다.
+4. **선택**을 클릭합니다. **관리되는 Google Play** 앱 스토어가 Intune 안에 표시됩니다.
+5. Google Play 창에서 (*잠금* 아이콘 옆에 있는) **비공개 앱**을 선택합니다. 
+6. 오른쪽 아래에 있는 **"+"** 단추를 클릭하여 새 앱을 추가합니다.
+7. 앱 **제목**을 추가하고 **APK 업로드**를 클릭하여 APK 앱 패키지를 추가합니다.
 8. **만들기**를 클릭합니다.
 9. 앱 추가를 완료했으면 관리되는 Google Play 창을 닫습니다.
-10. **APP 앱** 창에서 **동기화**를 클릭하여 관리되는 Google Play 서비스와 동기화합니다. 비공개 앱은 동기화할 준비가 완료되는 데 몇 분 정도 걸릴 수 있습니다. 동기화를 처음 수행할 때 표시되지 않으면 몇 분 기다렸다가 새 동기화를 시작합니다.
+10. **APP 앱** 창에서 **동기화**를 클릭하여 관리되는 Google Play 서비스와 동기화합니다. 
+
+    > [!NOTE]
+    > 비공개 앱은 동기화할 준비가 완료되는 데 몇 분 정도 걸릴 수 있습니다. 동기화를 처음 수행할 때 앱이 표시되지 않으면 몇 분 기다렸다가 새 동기화를 시작합니다.
 
 FAQ를 비롯해 관리되는 Google Play 비공개 앱에 대한 자세한 내용은 Google의 지원 문서를 참조하세요. https://support.google.com/googleplay/work/answer/9146439
 
->[!NOTE]
+>[!IMPORTANT]
 >이 메서드를 사용하여 추가한 비공개 앱은 공개로 변경할 수 없습니다. 이 앱이 항상 조직 전용으로 사용되는 경우에만 이 게시 옵션을 사용하세요.
-  
 
 ### <a name="managed-google-play-private-lob-app-publishing-using-the-google-developer-console"></a>관리되는 Google Play 비공개(LOB) 앱을 Google 개발자 콘솔을 사용하여 게시
 
@@ -151,13 +175,17 @@ FAQ를 비롯해 관리되는 Google Play 비공개 앱에 대한 자세한 내�
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **앱** > **모든 앱** > **추가**를 선택합니다.
-3. **앱 유형** 드롭다운 상자에서 **관리되는 Google Play**를 선택합니다.
-4. **관리되는 Google Play - 열기**를 선택하여 관리되는 Google Play 카탈로그를 엽니다.
-5. Google Play 카탈로그에서 **웹앱**을 선택합니다.
-6. **"+"** 단추를 클릭하여 새 앱을 추가합니다.
-7. 필요한 정보를 입력한 다음 **만들기**를 클릭합니다.
-8. 앱 추가를 완료했으면 관리되는 Google Play 창을 닫습니다.
-9. **APP 앱** 창에서 **동기화**를 클릭하여 관리되는 Google Play 서비스와 동기화합니다. 비공개 앱은 동기화할 준비가 완료되는 데 몇 분 정도 걸릴 수 있습니다. 동기화를 처음 수행할 때 표시되지 않으면 몇 분 기다렸다가 새 동기화를 시작합니다.
+3. **앱 유형 선택** 창의 사용 가능한 **스토어 앱** 유형 아래에서 **관리되는 Google Play 앱**을 선택합니다.
+4. **선택**을 클릭합니다. **관리되는 Google Play** 앱 스토어가 Intune 안에 표시됩니다.
+5. Google Play 창에서 (*지구* 아이콘 옆에 있는) **웹앱**을 선택합니다.
+6. 오른쪽 아래에 있는 **"+"** 단추를 클릭하여 새 앱을 추가합니다.
+7. 앱 **제목**, 웹앱 **URL**을 추가하고, 앱이 표시되는 방법을 선택하고, 앱 아이콘을 선택합니다.
+8. **만들기**를 클릭합니다.
+9. 앱 추가를 완료했으면 관리되는 Google Play 창을 닫습니다.
+10. **APP 앱** 창에서 **동기화**를 클릭하여 관리되는 Google Play 서비스와 동기화합니다. 
+
+    > [!NOTE]
+    > 웹앱은 동기화할 준비가 완료되는 데 몇 분 정도 걸릴 수 있습니다. 동기화를 처음 수행할 때 앱이 표시되지 않으면 몇 분 기다렸다가 새 동기화를 시작합니다.
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Intune과 관리되는 Google Play 앱 동기화
 

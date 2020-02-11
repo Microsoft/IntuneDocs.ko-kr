@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509816"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754306"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune을 사용하는 RBAC(역할 기반 액세스 제어)
 
@@ -52,6 +52,7 @@ Intune RBAC에 대한 조언과 제안 사항의 경우 예제 및 연습을 보
 - **애플리케이션 관리자**: 모바일 및 관리되는 애플리케이션을 관리하며, 디바이스 정보를 읽고, 디바이스 구성 프로필을 볼 수 있습니다.
 - **Intune 역할 관리자**: 사용자 지정 Intune 역할을 관리하고 기본 제공 Intune 역할에 대한 할당을 추가합니다. 관리자에게 사용 권한을 할당할 수 있는 유일한 Intune 역할입니다.
 - **학교 관리자**: [Intune for Education](../introduction-intune-education.md)으로 Windows 10 디바이스를 관리합니다.
+- **엔드포인트 보안 관리자**: 보안 기준, 디바이스 준수, 조건부 액세스 및 Microsoft Defender ATP와 같은 보안 및 규정 준수 기능을 관리합니다.
 
 ### <a name="custom-roles"></a>사용자 지정 역할
 사용자 지정 권한을 사용하여 사용자 고유의 역할을 만들 수 있습니다. 사용자 지정 역할에 대한 자세한 내용은 [사용자 지정 역할 만들기](create-custom-role.md)를 참조하세요.
@@ -62,7 +63,7 @@ Intune RBAC에 대한 조언과 제안 사항의 경우 예제 및 연습을 보
 | 전역 관리자 | 읽기/쓰기 | 읽기/쓰기 |
 | Intune 서비스 관리자 | 읽기/쓰기 | 읽기/쓰기 |
 | 조건부 액세스 관리자 | 없음 | 없음 |
-| 보안 관리자 | 읽기 전용 | 읽기 전용 |
+| 보안 관리자 | 읽기 전용(엔드포인트 보안 노드에 대한 전체 관리 권한) | 읽기 전용 |
 | 보안 운영자 | 읽기 전용 | 읽기 전용 |
 | 보안 Reader | 읽기 전용 | 읽기 전용 |
 | 규정 준수 관리자 | 없음 | 읽기 전용 |

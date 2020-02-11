@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,16 +16,16 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 03b8f050dc6232b87d1149aff0a93cd7b06839cd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691836"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755411"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune으로 Windows 디바이스에 기간 업무 앱을 배포할 수 있도록 앱에 서명
 
-Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 유니버설 앱을 Windows 8.1 Desktop 또는 Windows 10 Desktop 및 Mobile 디바이스에 배포할 수 있습니다. Windows 8.1 Desktop 또는 Windows 10 Desktop 및 Mobile 디바이스에 .appx 앱을 배포하려면 Windows 디바이스에서 이미 신뢰하는 퍼블릭 인증 기관의 코드 서명 인증서를 사용하거나 사용자 고유의 인증 기관을 사용할 수 있습니다.
+Intune 관리자는 회사 포털 앱을 비롯한 LOB(기간 업무) 유니버설 앱을 Windows 8.1 Desktop 또는 Windows 10 Desktop 및 Mobile 디바이스에 배포할 수 있습니다. Windows 8.1 Desktop 또는 Windows 10 Desktop 및 Mobile 디바이스에 *.appx* 앱을 배포하려면 Windows 디바이스에서 이미 신뢰하는 퍼블릭 인증 기관의 코드 서명 인증서를 사용하거나 사용자 고유의 인증 기관을 사용할 수 있습니다.
 
  > [!NOTE]
  > Windows 8.1 Desktop에는 테스트용 로드를 사용하도록 설정하기 위한 엔터프라이즈 정책이나 테스트용 로드 키(도메인 가입 디바이스에 대해 자동으로 사용 가능)가 필요합니다. 자세한 내용은 [Windows 8 테스트용 로드](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/)를 참조하세요.
@@ -52,10 +52,11 @@ Windows 10에서 테스트용 로드는 다음과 같은 측면에서 이전 버
 
 Windows 10 디바이스에서 인증 기관을 아직 신뢰하지 않는 경우, appx 패키지에 서명하고 Intune 서비스에 업로드한 후에 다음과 같이 Intune 포털에 코드 서명 인증서를 업로드해야 합니다.
 
-1. 클라이언트 앱 클릭
-2. Windows 엔터프라이즈 인증서 클릭
-3. 코드 서명 인증서에서 '파일 선택' 선택
-4. .cer 파일 선택 및 업로드 클릭
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **테넌트 관리** > **커넥터 및 토큰** > **Windows 엔터프라이즈 인증서**를 클릭합니다.
+3. **코드 서명 인증서 파일**에서 파일을 선택합니다.
+4. *.cer* 파일을 선택하고 **열기**를 클릭합니다.
+5. **업로드**를 클릭하여 인증서 파일을 Intune에 추가합니다.
 
 이제 Intune 서비스에서 appx 배포를 사용하는 모든 Windows 10 Desktop 및 Mobile 디바이스는 해당 엔터프라이즈 인증서를 자동으로 다운로드하며 설치 후에 애플리케이션을 시작할 수 있습니다.
 
@@ -94,7 +95,7 @@ Microsoft Store에 대한 액세스 권한을 제공하지 않으려는 경우 M
       ![APPXBUN 파일과 함께 저장된 Dependencies 폴더의 이미지](./media/app-sideload-windows/Win10CP-Dependencies-save.png)
    2. Dependencies 폴더에 9개의 종속성 패키지를 배치합니다.  
       종속성을 이 형식으로 배치하지 않는 경우 Intune은 패키지 업로드 도중에 패키지를 인식 및 업로드할 수 없습니다. 이에 따라 업로드에 실패하고 다음과 같은 오류가 표시됩니다.  
-      ![오류 메시지 - Windows 앱 종속성을 제공해야 합니다.](./media/app-sideload-windows/Win10CP-error-message.png)
+      <img alt="Error message - The Windows app dependency must be provided." src="./media/app-sideload-windows/Win10CP-error-message.png" width="200">
 6. Intune으로 돌아간 후 회사 포털 앱을 새 앱으로 업로드합니다. 원하는 대상 사용자 집합에게 필수 앱으로 배포합니다.  
 
 Intune에서 유니버설 앱의 종속성을 처리하는 방식에 대한 자세한 내용은 [Deploying an appxbundle with dependencies via Microsoft Intune MDM(Microsoft Intune MDM을 통해 종속성이 포함된 appxbundle 배포)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)을 참조하세요.  

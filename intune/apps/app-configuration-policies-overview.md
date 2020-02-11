@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885802"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812473"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
@@ -95,8 +95,8 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 
 관리 앱 구성에 대해 관리되지 않는 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다. 아래 단계 외에도 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스할 수 있습니다. 자세한 내용은 [iOS에서 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)를 참조하세요.
 
-1. 디바이스에 아직 설치되지 않은 경우 앱 스토어에서 **Intune Managed Browser**를 다운로드하여 설치합니다. 자세한 내용은 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)을 참조하세요.
-2. **Intune Managed Browser**를 시작하고 탐색 모음에서 **정보** > **intunehelp**를 선택합니다.
+1. **Microsoft Edge**가 디바이스에 아직 설치되지 않았다면 앱 스토어에서 다운로드하여 설치합니다. 자세한 내용은 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)을 참조하세요.
+2. **Microsoft Edge**를 시작하고 탐색 모음에서 **정보** > **intunehelp**를 선택합니다.
 3. **시작**을 클릭합니다.
 4. **로그 공유**를 클릭합니다.
 5. PC에서 볼 수 있도록 원하는 메일 앱을 사용하여 로그를 자신에게 보냅니다. 
@@ -139,8 +139,8 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 
 관리 앱 구성에 대해 관리 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다.
 
-1. 디바이스에 아직 설치되지 않은 경우 앱 스토어에서 **Intune Managed Browser**를 다운로드하여 설치합니다. 자세한 내용은 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)을 참조하세요.
-2. **Intune Managed Browser**를 시작하고 탐색 모음에서 **정보** > **intunehelp**를 선택합니다.
+1. **Microsoft Edge**가 디바이스에 아직 설치되지 않았다면 앱 스토어에서 다운로드하여 설치합니다. 자세한 내용은 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)을 참조하세요.
+2. **Microsoft Edge**를 시작하고 탐색 모음에서 **정보** > **intunehelp**를 선택합니다.
 3. **시작**을 클릭합니다.
 4. **로그 공유**를 클릭합니다.
 5. PC에서 볼 수 있도록 원하는 메일 앱을 사용하여 로그를 자신에게 보냅니다. 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188463"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755672"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange 온-프레미스 및 레거시 Exchange Online Dedicated에 대한 조건부 액세스 정책 만들기
 
@@ -37,7 +37,7 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 
 - Exchange 버전이 **Exchange 2010 SP1 이상**입니다. Exchange Server CAS(클라이언트 액세스 서버) 배열이 지원됩니다.
 
-- Intune을 온-프레미스 Exchange에 연결하는 [Exchange Active Sync 온-프레미스 Exchange 커넥터](exchange-connector-install.md)를 사용합니다.
+- Intune을 온-프레미스 Exchange에 연결하는 [Exchange Active Sync 온-프레미스 Exchange 커넥터](exchange-connector-install.md)를 설치했고 사용합니다.
 
     >[!IMPORTANT]  
     >Intune은 구독당 여러 개의 온-프레미스 Exchange Connector를 지원합니다.  그러나 각 온-프레미스 Exchange 커넥터는 단일 Intune 테넌트별로 다르며 다른 테넌트에서는 사용할 수 없습니다.  둘 이상의 온-프레미스 Exchange 조직이 있는 경우 각 Exchange 조직에 대해 별도의 커넥터를 설정할 수 있습니다.
@@ -84,40 +84,57 @@ Exchange 온-프레미스 액세스 제어를 설정하려면 다음 절차를 �
 
 3. **Exchange 온-프레미스 액세스** 창에서 *Exchange 온-프레미스 액세스 제어 사용*에 대해 **예**를 선택합니다.
 
+   > [!div class="mx-imgBorder"]
+   > ![Exchange 온-프레미스 액세스의 예시 스크린샷](./media/conditional-access-exchange-create/exchange-on-premises-access.png)
+
 4. **할당**에서 **포함할 그룹 선택**을 선택한 다음 액세스를 구성할 하나 이상의 그룹을 선택합니다.
 
    선택한 그룹의 구성원에게는 그러한 구성원에게 적용되는 Exchange 온-프레미스 액세스용 조건부 액세스 정책이 있습니다. 이 정책을 받는 사용자는 Intune에 디바이스를 등록하고 준수 프로필을 준수해야 Exchange 온-프레미스에 액세스할 수 있습니다.
 
-5. 그룹을 제외하려면 **제외할 그룹 선택**을 선택한 다음 디바이스 등록 요구 사항에서 제외되는 하나 이상의 그룹을 선택하고 Exchange 온-프레미스에 액세스하기 전에 준수 프로필을 준수합니다. 
+   > [!div class="mx-imgBorder"]
+   > ![포함할 그룹 선택](./media/conditional-access-exchange-create/select-groups.png)
 
-6. 그런 다음 Intune 온-프레미스 Exchange Connector 구성을 구성합니다.  *Exchange 온-프레미스 액세스* 창의 **설정**에서 **Exchange ActiveSync 온-프레미스 커넥터**를 선택한 다음 구성할 Exchange 조직의 커넥터를 선택합니다.
+5. 그룹을 제외하려면 **제외할 그룹 선택**을 선택한 다음 디바이스 등록 요구 사항에서 제외되는 하나 이상의 그룹을 선택하고 Exchange 온-프레미스에 액세스하기 전에 준수 프로필을 준수합니다.
 
-7. **설정**에서 **사용자 알림**을 선택하여 디바이스가 비준수 상태일 때 Exchange 온-프레미스에 액세스해야 할 경우에 사용자에게 전송되는 기본 이메일 메시지를 수정합니다. 메시지 템플릿에는 마크업 언어가 사용됩니다.  입력할 때 메시지 모양에 대한 미리 보기도 표시될 수 있습니다.
+   **저장**을 선택하여 구성을 저장하고 **Exchange 액세스** 창으로 돌아갑니다.
+
+6. 그런 다음 Intune 온-프레미스 Exchange Connector 구성을 구성합니다. 콘솔에서 **테넌트 관리** > **Exchange 액세스**> **Exchange ActiveSync 온-프레미스 커넥터**를 선택한 다음 구성하려는 Exchange 조직의 커넥터를 선택합니다.
+
+7. **사용자 알림**에서 **편집**을 선택하여 *사용자 알림* 메시지를 수정할 수 있는 **조직 편집** 워크플로를 엽니다.
+
+   > [!div class="mx-imgBorder"]
+   > ![알림을 위한 조직 편집 워크플로의 예시 스크린샷](./media/conditional-access-exchange-create/edit-organization-user-notification.png)
+
+   디바이스가 비규격이고 Exchange 온-프레미스에 액세스하려는 사용자에게 전송되는 기본 전자 메일 메시지를 수정합니다. 메시지 템플릿에는 마크업 언어가 사용됩니다. 입력할 때 메시지의 미리 보기도 볼 수 있습니다.
+
+   **검토 + 저장**을 선택한 다음 **저장**을 선택하여 편집 내용을 저장하면 Exchange 온-프레미스 액세스의 구성이 완료됩니다.
+
    > [!TIP]
    > 마크업 언어에 대한 자세한 내용은 이 Wikipedia [문서](https://en.wikipedia.org/wiki/Markup_language)를 참조하세요.
- 
-   **확인**을 선택하여 편집 내용을 저장함으로써 Exchange 온-프레미스 액세스의 구성을 완료합니다.
 
-8. 그런 다음 **Advanced Exchange Active Sync 액세스 설정**을 선택하여 디바이스 액세스 규칙을 구성하는 *고급 Exchange ActiveSync 액세스 설정* 창을 엽니다.  
+8. 그런 다음 **Advanced Exchange ActiveSync 액세스 설정**을 선택하여 디바이스 액세스 규칙을 구성하는 *고급 Exchange ActiveSync 액세스 설정* 워크플로를 엽니다.
+
+   > [!div class="mx-imgBorder"]
+   > ![고급 설정을 위한 조직 편집 워크플로의 예시 스크린샷](./media/conditional-access-exchange-create/edit-organization-advanced-settings.png)
 
    - **관리되지 않는 디바이스 액세스**의 경우는 다음과 같이 조건부 액세스의 영향을 받지 않는 디바이스에서 액세스하는 전역 기본값 규칙 또는 기타 규칙을 설정합니다.
 
      - **액세스 허용** - 모든 디바이스에서 Exchange 온-프레미스에 즉시 액세스할 수 있습니다. 이전 절차에 포함된 것으로 구성한 그룹의 사용자에게 속한 디바이스는 이후에 준수 정책을 준수하지 않거나 Intune에 등록되지 않은 것으로 평가되는 경우 차단됩니다.
 
-     - **액세스 차단** 및 **격리** – 모든 디바이스가 Exchange 온-프레미스에 초기 액세스하지 못하도록 즉시 차단합니다. 이전 절차에 포함된 것으로 구성한 그룹의 사용자에게 속한 디바이스는 Intune에서 디바이스를 등록한 후에 액세스를 받고 준수 상태로 평가됩니다. 
+     - **액세스 차단** 및 **격리** – 모든 디바이스가 Exchange 온-프레미스에 초기 액세스하지 못하도록 즉시 차단합니다. 이전 절차에 포함된 것으로 구성한 그룹의 사용자에게 속한 디바이스는 Intune에서 디바이스를 등록한 후에 액세스를 받고 준수 상태로 평가됩니다.
 
        삼성 Knox Standard를 실행하지 *않는* Android 디바이스는 이 설정을 지원하지 않으므로 항상 차단됩니다.
 
-   -  **디바이스 플랫폼 예외**에서 **추가**를 선택한 다음 사용자 환경에 필요한 대로 플랫폼 세부 정보를 지정합니다. 
-   
+   - **디바이스 플랫폼 예외**에서 **추가**를 선택한 다음 사용자 환경의 필요에 따라 세부 정보를 지정합니다.
+
       **관리되지 않는 디바이스 액세스** 설정이 **차단됨**으로 설정된 경우 등록되고 준수 상태에 있는 디바이스는 차단에 대한 플랫폼 예외가 있는 경우에도 허용됩니다.  
-   
-   **확인**을 선택하여 편집 내용을 저장합니다.
 
-9. **저장**을 선택하여 Exchange 조건부 액세스 정책을 저장합니다.
+9. **확인**을 선택하여 편집 내용을 저장합니다.
 
-그런 다음 규정 준수 정책을 만들고 사용자에게 할당하여 Intune에서 모바일 디바이스를 평가하게 합니다. [디바이스 규정 준수 시작](device-compliance-get-started.md)을 참조하세요.
+10. **검토 + 저장**을 선택한 다음 **저장**을 선택하여 Exchange 조건부 액세스 정책을 저장합니다.
 
 ## <a name="next-steps"></a>다음 단계
+
+그런 다음 규정 준수 정책을 만들고 사용자에게 할당하여 Intune에서 모바일 디바이스를 평가하게 합니다. [디바이스 규정 준수 시작](device-compliance-get-started.md)을 참조하세요.
 
 [Microsoft Intune에서 Intune 온-프레미스 Exchange 커넥터 문제 해결](https://support.microsoft.com/help/4471887)

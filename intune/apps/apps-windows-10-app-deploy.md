@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/30/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563934"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912560"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
@@ -40,9 +40,29 @@ Microsoft Intune은 Windows 10 디바이스에서 다양한 앱 형식 및 배�
 >
 > Windows 10 Home 버전을 실행 중인 디바이스에서는 LOB 앱 배포를 지원하지 않습니다.
 
+## <a name="supported-windows-10-app-types"></a>지원되는 Windows 10 앱 유형
+
+사용자가 실행하는 Windows 10 버전에 따라 지원되는 구체적인 앱 유형이 달라집니다. 다음 표에는 앱 유형 및 Windows 10 지원 가능성이 나와 있습니다.
+
+| 앱 유형 | 홈 | Pro | 비즈니스 | Enterprise | 교육 | S-모드 | Hololense | SurfaceHub | WCOS | 휴대폰 |
+|----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
+|  .MSI | 아니요 | 예 | 예 | 예 | 예 | 아니요 | 아니요 | 아니요 | 아니요 | 아니요 |
+| .IntuneWin | 아니요 | 예 | 예 | 예 | 예 | 19H2+ | 아니요 | 아니요 | 아니요 | 아니요 |
+| Office C2R | 아니요 | 예 | 예 | 예 | 예 | 아니요 | 아니요 | 아니요 | 아니요 | 아니요 |
+| LOB: APPX/MSIX | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 |
+| MSFB 오프라인 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 |
+| MSFB 온라인 | 예 | 예 | 예 | 예 | 예 | 예 | RS4+ | 예 | 예 | 예 |
+| Web Apps | 예 | 예 | 예 | 예 | 예 | 예 | 예<sup>1 | 예<sup>1 | 예 | 예 |
+| Store 링크 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 |
+
+<sup>1</sup> 회사 포털에서만 시작합니다.
+
+> [!NOTE]
+> 모든 Windows 앱 유형은 등록이 필요합니다.
+
 ## <a name="windows-10-lob-apps"></a>Windows 10 LOB 앱
 
-Windows 10 LOB 앱을 서명하고 Intune 관리 콘솔에 업로드할 수 있습니다. 여기에는 유니버설 Windows 플랫폼(UWP) 앱 및 Windows 앱 패키지(AppX)와 같은 최신 앱뿐만 아니라 간단한 Microsoft Installer 패키지 파일(MSI)과 같은 Win 32 앱이 포함될 수 있습니다. 관리자는 LOB 앱의 업데이트를 수동으로 업로드하고 배포해야 합니다. 이러한 업데이트는 앱이 설치된 사용자 장치에 자동으로 설치됩니다. 사용자 개입이 필요하지 않으며 사용자가 업데이트를 제어할 수 없습니다. 
+Windows 10 LOB 앱을 서명하고 Intune 관리 콘솔에 업로드할 수 있습니다. 여기에는 유니버설 Windows 플랫폼(UWP) 앱 및 Windows 앱 패키지(AppX)와 같은 최신 앱뿐만 아니라 간단한 Microsoft Installer 패키지 파일(MSI)과 같은 Win 32 앱이 포함될 수 있습니다. 관리자는 LOB 앱의 업데이트를 수동으로 업로드하고 배포해야 합니다. 이러한 업데이트는 앱이 설치된 사용자 디바이스에 자동으로 설치됩니다. 사용자 개입이 필요하지 않으며 사용자가 업데이트를 제어할 수 없습니다. 
 
 ## <a name="microsoft-store-for-business-apps"></a>비즈니스용 Microsoft 스토어 앱
 
@@ -60,22 +80,28 @@ Windows 10 LOB 앱을 서명하고 Intune 관리 콘솔에 업로드할 수 있�
 앱 유형에 따라 두 가지 방법 중 하나로 Windows 10 디바이스에 앱을 설치할 수 있습니다.
 
 - **사용자 컨텍스트**: 사용자 컨텍스트에서 앱을 배포할 경우 관리되는 앱은 사용자가 디바이스에 로그인할 때 해당 사용자를 위해 디바이스에 설치됩니다. 사용자가 디바이스에 로그인할 때까지 앱 설치는 성공할 수 없습니다. 
-  - 최신 LOB(기간 업무) 앱 및 비즈니스용 Microsoft Store 앱(온라인 및 오프라인 모두)은 사용자 컨텍스트에 배포할 수 있습니다. 앱은 필수 및 사용 가능 의도를 모두 지원합니다.
+  - 최신 LOB 앱 및 비즈니스용 Microsoft Store 앱(온라인 및 오프라인 모두)은 사용자 컨텍스트에서 배포할 수 있습니다. 앱은 필수 및 사용 가능 의도를 모두 지원합니다.
   - 사용자 모드 또는 이중 모드로 빌드된 Win32 앱은 사용자 컨텍스트에서 배포할 수 있으며 필수 및 사용 가능 의도를 모두 지원합니다. 
 - **디바이스 컨텍스트**: 디바이스 컨텍스트에서 앱을 배포하면 Intune에서 관리되는 앱을 디바이스에 직접 설치합니다.
-  - 최신 기간 업무 앱 및 오프라인에서 라이선스된 비즈니스용 Microsoft Store 앱은 디바이스 컨텍스트에서 배포될 수 있습니다. 이러한 앱은 필수 의도만 지원합니다.
+  - 최신 LOB 앱 및 오프라인 사용 허가된 비즈니스용 Microsoft Store 앱은 디바이스 컨텍스트에서 배포할 수 있습니다. 이러한 앱은 필수 의도만 지원합니다.
   - 컴퓨터 모드 또는 이중 모드로 빌드된 Win32 앱은 디바이스 컨텍스트에서 배포할 수 있으며 필수 의도만 지원합니다.
 
 > [!NOTE]
 > 이중 모드 앱으로 빌드된 Win32 앱의 경우 관리자는 해당 인스턴스와 연결된 모든 할당에 대해 앱이 사용자 모드 또는 컴퓨터 모드 중 어떤 모드로 작동할지 선택해야 합니다. 배포 컨텍스트를 할당마다 변경할 수는 없습니다.  
 
-디바이스 컨텍스트에서 앱을 배포하면 설치가 디바이스 컨텍스트를 지원하는 디바이스를 대상으로 하는 경우에만 성공할 수 있습니다. 또한 디바이스 컨텍스트에서 배포가 지원하는 조건은 다음과 같습니다.
-- 앱이 디바이스 컨텍스트에 배포되고 사용자를 대상으로 하는 경우 설치가 실패합니다. 관리 콘솔에 표시되는 상태 및 오류는 다음과 같습니다.
+앱은 디바이스 및 Intune 앱 유형에서 지원되는 경우에만 디바이스 컨텍스트에서 설치할 수 있습니다. 디바이스 컨텍스트에서 다음 앱 유형을 설치하고 이러한 앱을 디바이스 그룹에 할당할 수 있습니다.
+
+- Win32 앱
+- 오프라인 라이선스가 부여된 비즈니스용 Microsoft Store 앱
+- LOB 앱(MSI, APPX 및 MSIX)
+- Office 365 ProPlus
+
+디바이스 컨텍스트에서 설치하기로 선택한 Windows LOB 앱(구체적으로 APPX 및 MSIX) 및 비즈니스용 Microsoft Store 앱(오프라인 앱)은 디바이스 그룹에 할당되어야 합니다. 이러한 앱 중 하나가 사용자 컨텍스트에 배포되는 경우 설치가 실패합니다. 관리 콘솔에 표시되는 상태 및 오류는 다음과 같습니다.
   - 상태: 실패
   - 오류: 사용자는 디바이스 컨텍스트 설치를 대상으로 할 수 없습니다.
-- 앱이 디바이스 컨텍스트에 배포되었지만 디바이스 컨텍스트를 지원하지 않는 장치를 대상으로 하는 경우 설치가 실패합니다. 관리 콘솔에 표시되는 상태 및 오류는 다음과 같습니다.
-  - 상태: 실패
-  - 오류: 이 플랫폼은 디바이스 컨텍스트 설치를 지원하지 않습니다. 
+
+> [!IMPORTANT]
+> Autopilot white glove 프로비전 시나리오와 함께 사용하는 경우 디바이스 그룹을 대상으로 하는 디바이스 컨텍스트에 배포된 비즈니스용 Microsoft Store 앱 및 LOB 앱에 대한 요구 사항은 없습니다. 자세한 내용은 [Windows Autopilot white glove 배포](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)를 참조하세요.
 
 > [!Note]
 > 특정 배포를 사용하여 앱 할당을 저장한 후에는 최신 앱을 제외하고 해당 할당에 대한 컨텍스트를 변경할 수 없습니다. 최신 앱의 경우 컨텍스트를 사용자 컨텍스트에서 디바이스 컨텍스트로 변경할 수 있습니다. 

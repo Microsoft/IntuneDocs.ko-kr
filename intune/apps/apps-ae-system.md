@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d45455a97f8016527dce49839b5493f16b173d43
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 613369070d847265f371a7b228a2b6d81bf813fe
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563653"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755258"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Microsoft Intune에 Android Enterprise 시스템 앱 추가
 
@@ -35,13 +35,20 @@ ms.locfileid: "74563653"
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **앱** > **모든 앱** > **추가**를 선택합니다.
-3. **앱 추가** 창의 사용할 수 있는 **기타** 유형 아래에서 **Android Enterprise 시스템 앱**을 선택합니다.
-4. 앱 정보를 구성하려면 **구성**을 선택하고 다음 정보를 제공합니다.
+3. **앱 유형 선택** 창의 사용 가능한 **기타** 유형 아래에서 **Android Enterprise 시스템 앱**을 선택합니다.
+4. **선택**을 클릭합니다. **앱 추가** 단계가 표시됩니다.
+**앱 정보** 페이지에서 앱 세부 정보를 추가합니다.
     - **앱 이름**: 앱의 이름을 입력합니다.
     - **게시자**: 앱 게시자의 이름을 입력합니다.  
     - **패키지 이름**: 패키지 이름을 입력합니다. Intune에서 패키지 이름이 유효한지 확인합니다.
-5. **확인**을 선택합니다.
-6. **추가**를 선택합니다.
+5. **다음**을 클릭하여 **범위 태그** 페이지를 표시합니다.
+8. **범위 태그 선택**을 클릭하여 앱의 범위 태그를 선택적으로 추가합니다. 자세한 내용은 [분산형 IT에 RBAC(역할 기반 액세스 제어) 및 범위 태그 사용](~/fundamentals/scope-tags.md)을 참조하세요.
+9. **다음**을 클릭하여 **할당** 페이지를 표시합니다.
+10. 앱의 그룹 할당을 선택합니다. 자세한 내용은 [그룹을 추가하여 사용자 및 디바이스 구성](~/fundamentals/groups-add.md)을 참조하세요. 
+11. **다음**를 클릭하여 **검토 + 만들기** 페이지를 표시합니다. 앱에 대해 입력한 값과 설정을 검토합니다.
+12. 완료되면 **만들기**를 클릭하여 Intune에 앱을 추가합니다.
+
+만든 앱의 **개요 블레이드**가 표시됩니다.
 
 > [!NOTE]
 > 활성화/비활성화하려는 앱의 패키지 이름을 찾으려면 디바이스 OEM과 협력해야 합니다.

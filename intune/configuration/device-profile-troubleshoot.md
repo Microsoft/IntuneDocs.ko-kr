@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206638"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812356"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune의 디바이스 정책 및 프로필을 통한 일반적인 질문, 이슈 및 해결 방법
-
-
 
 Intune의 디바이스 프로필 및 정책을 사용하는 경우 일반적인 질문에 대한 답변을 얻을 수 있습니다. 이 문서에서는 체크 인 시간 간격을 나열하고, 충돌에 대한 추가적인 세부 정보 등도 제공합니다.
 
@@ -83,6 +81,8 @@ Intune 서비스에서 디바이스에 체크 인을 알립니다. 알림 시간
 디바이스는 체크 인하라는 알림을 받거나 예약된 체크 인 시간 동안 Intune에 체크 인합니다. 잠금, 암호 재설정, 앱, 프로필 또는 정책 할당과 같은 작업을 통해 디바이스 또는 사용자를 대상으로 지정하면, Intune에서 이러한 업데이트를 받으려면 체크 인해야 한다는 알림을 디바이스에 즉시 보냅니다.
 
 회사 포털 앱에서 연락처 정보를 수정하는 등의 기타 변경 작업을 수행하는 경우에는 디바이스에 알림이 즉시 전송되지 않습니다.
+
+정책 또는 프로필의 설정은 모든 체크 인에 적용됩니다. [Windows 10 MDM 정책 새로 고침 블로그 게시물](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/)이 좋은 리소스가 될 수 있습니다.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>여러 정책을 같은 사용자 또는 디바이스에 할당하는 경우 적용되는 설정은 어떻게 확인할 수 있는가요?
 

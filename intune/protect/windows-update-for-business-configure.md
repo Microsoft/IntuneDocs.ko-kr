@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956279"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886808"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune에서 Windows 10 소프트웨어 업데이트 관리
 
@@ -205,20 +205,22 @@ Windows 업데이트 정책에 대한 자세한 내용은 Windows 클라이언�
 
 - 업데이트 링에서 *일시 중지*를 사용할 경우 35일 후 만료되는 것과 달리 Windows 10 기능 업데이트 정책은 계속 유효합니다. 디바이스는 Windows 10 기능 업데이트 정책을 수정하거나 제거할 때까지 새 Windows 버전을 설치하지 않습니다. 정책을 편집하여 최신 버전을 지정하는 경우 디바이스가 해당 Windows 버전의 기능을 설치할 수 있습니다.
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Windows 10 기능 업데이트의 필수 구성 요소
+
+Intune에서 Windows 10 기능 업데이트를 사용하려면 다음 필수 구성 요소를 충족해야 합니다.
+
+- 디바이스는 Intune MDM에 등록되어야 하고 Azure AD 조인 디바이스 또는 Azure AD 등록 디바이스여야 합니다.
+- Intune에서 기능 업데이트 정책을 사용하려면 디바이스의 원격 분석이 켜져 있어야 하며 [*기본 사항*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) 최소 설정이 필요합니다. 원격 분석은 [디바이스 제한 정책](../configuration/device-restrictions-configure.md)의 일환으로서 *보고 및 원격 분석*에서 구성됩니다.
+  
+  기능 업데이트 정책을 받고 원격 분석이 *구성되지 않음*으로 설정되어 꺼진 상태의 디바이스는 기능 업데이트 정책에 정의된 것보다 이후 버전의 Windows를 설치할 수 있습니다. 이 기능은 향후 일반에 출시될 예정으로서 원격 분석 필요 조건을 검토 중입니다.
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Windows 10 기능 업데이트에 대한 제한 사항
 
 - *Windows 10 기능 업데이트* 정책을 *Windows 10 업데이트 링* 정책도 수신하는 디바이스에 배포하는 경우 업데이트 링에서 다음 구성을 검토합니다.
   - **기능 업데이트 지연 기간(일)** 을 **0**으로 설정해야 합니다.
   - 업데이트 링에 대한 기능 업데이트가 *실행 중*이어야 합니다. 이를 일시 중지하면 안 됩니다.
 
-- Windows 10 기능 업데이트 정책은 OOBE(첫 실행 경험) 중에 적용될 수 없으며, 디바이스가 프로비저닝을 완료한 후(일반적으로 하루) 첫 번째 Windows 업데이트 검사 시에만 적용됩니다. 또한 AutoPilot을 사용하여 프로비저닝된 디바이스는 정책을 받지 않습니다.
-
-  이러한 제한 사항을 조사하여 향후 지원 가능한지 확인합니다.
-
-> [!IMPORTANT]
-> Intune에서 기능 업데이트 정책을 사용하려면 디바이스의 원격 분석이 켜져 있어야 하며 [*기본 사항*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) 최소 설정이 필요합니다. 원격 분석은 [디바이스 제한 정책](../configuration/device-restrictions-configure.md)의 일환으로서 *보고 및 원격 분석*에서 구성됩니다.
->
-> 기능 업데이트 정책을 받고 원격 분석이 *구성되지 않음*으로 설정되어 꺼진 상태의 디바이스는 기능 업데이트 정책에 정의된 것보다 이후 버전의 Windows를 설치할 수 있습니다. 이 기능은 향후 일반에 출시될 예정으로서 원격 분석 필요 조건을 검토 중입니다.
+- Windows 10 기능 업데이트 정책은 Autopilot OOBE(첫 실행 경험) 중에 적용될 수 없으며, 디바이스가 프로비저닝을 완료한 후(일반적으로 하루) 첫 번째 Windows 업데이트 검사 시에만 적용됩니다.
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10 기능 업데이트 만들기 및 할당
 
@@ -242,10 +244,12 @@ Windows 업데이트 정책에 대한 자세한 내용은 Windows 클라이언�
 - **속성**을 선택하여 배포를 수정합니다.  *속성* 창에서 **편집**을 선택하여 *배포 설정 또는 할당*을 엽니다. 여기에서 배포를 수정할 수 있습니다.
 - **최종 사용자 업데이트 상태**를 선택하여 정책에 대한 정보를 봅니다.
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Windows 10 업데이트 유효성 검사 및 보고
+
+Windows 10 업데이트 링 및 Windows 10 기능 업데이트 모두 [업데이트에 대한 Intune 준수 보고서](../windows-update-compliance-reports.md)를 사용하여 디바이스의 업데이트 상태를 모니터링합니다. 이 솔루션은 Azure 구독과 함께 [업데이트 준수](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)를 사용합니다.
+
 ## <a name="next-steps"></a>다음 단계
 
 [Intune에서 지원하는 Windows 업데이트 설정](../windows-update-settings.md)
-
-[업데이트에 대한 Intune 준수 보고서](../windows-update-compliance-reports.md)
 
 [Windows 10 업데이트 링 문제 해결](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)

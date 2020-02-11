@@ -16,13 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-redirect_url: https://docs.microsoft.com/intune
-ms.openlocfilehash: ff82b1ed70d3021c33a166c694e3efe5d10905e0
-ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
+ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75731367"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754255"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune 디바이스 관리란?
 
@@ -62,7 +61,7 @@ IT 관리자의 경우 관리되는 디바이스가 위험으로부터 해당 �
   - [초기화](devices-wipe.md#wipe)
   - [원격 잠금](device-remote-lock.md)
   - [암호 초기화](device-passcode-reset.md)
-  - [활성화 잠금 무시](device-activation-lock-bypass.md)(iOS만 해당)
+  - [활성화 잠금 사용 안 함](device-activation-lock-bypass.md)(iOS만 해당)
   - [새로 시작](device-fresh-start.md)(Windows만 해당)
   - [분실 모드](device-lost-mode.md)(iOS만 해당)
   - [디바이스 찾기](device-locate.md)(iOS만 해당)

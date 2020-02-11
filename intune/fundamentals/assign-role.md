@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 780a248f16a8a5028875c9c2401921ea23d0af24
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207165"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540931"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Intune 사용자에게 역할 할당
 
@@ -32,11 +32,11 @@ Intune 사용자에게 [기본 제공](role-based-access-control.md#built-in-rol
 - **전역 관리자**
 - **Intune 서비스 관리자**
 
-1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **역할** > **모든 역할**을 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **테넌트 관리** > **역할** > **모든 역할**을 선택합니다.
 
 2. **Intune 역할 - 모든 역할** 블레이드에서 할당할 기본 제공 역할을 선택합니다.
 
-3. <역할 이름> - **개요** 블레이드에서 **관리** > **할당**을 선택합니다.
+3. <역할 이름> - **개요** 블레이드에서 **관리** > **할당**을 선택합니다. 
 
 4. 사용자 지정 역할 블레이드에서 **할당**을 선택합니다.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205040"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755500"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>관리되는 Android 엔터프라이즈 디바이스용 앱 구성 정책 추가
 
@@ -34,21 +34,43 @@ Microsoft Intune의 앱 구성 정책은 관리되는 Android 엔터프라이즈
 > [!NOTE]  
 > 모든 앱이 앱 구성을 지원하지는 않습니다. 앱에서 앱 구성 정책을 지원하는지 앱 개발자와 함께 확인하세요.
 
-1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **앱** > **앱 구성 정책** >  **추가** > **관리 디바이스**를 선택합니다.
-2. 다음 속성을 추가합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **앱 구성 정책** > **추가** > **관리 디바이스**를 선택합니다. **관리되는 디바이스**와 **관리되는 앱** 중에서 선택할 수 있습니다. 자세한 내용은 [앱 구성을 지원하는 애플리케이션](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration)을 참조하세요.
+3. **기본 사항** 페이지에서 다음 세부 정보를 설정합니다.
+    - **이름** - Azure Portal에 표시되는 프로필의 이름입니다.
+    - **설명** - Azure Portal에 표시되는 프로필의 설명입니다.
+    - **디바이스 등록 유형** - 설정이 **관리 디바이스**여야 합니다.
+4. **Android Enterprise**를 **플랫폼**으로 선택합니다.
+5. **대상 앱** 옆의 **앱 선택**을 클릭합니다. **연결된 앱** 창이 표시됩니다. 
+6. **연결된 앱** 창에서 구성 정책에 연결할 관리되는 앱을 선택하고 **확인**을 클릭합니다.
+7. **다음**을 클릭하여 **설정** 페이지를 표시합니다.
+8. **추가**를 클릭하여 **권한 추가** 창을 표시합니다.
+9. 재정의하려는 권한을 클릭합니다. 부여되는 권한은 선택한 앱의 "기본 앱 권한" 정책을 재정의합니다.
+10. 각 권한의 **권한 상태**를 설정합니다. **프롬프트**, **자동 부여** 또는 **자동 거부** 중에서 선택할 수 있습니다. 권한에 대한 자세한 내용은 [Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 Android Enterprise 설정](~/protect/compliance-policy-create-android-for-work.md)을 참조하세요.
+11. 드롭다운 상자에서 **구성 설정 형식**을 선택합니다. 다음 방법 중 하나를 선택하여 구성 정보를 추가합니다.
+    - **구성 디자이너 사용**
+    - **JSON 데이터 입력**<br><br>
+    구성 디자이너 사용에 대한 자세한 내용은 [구성 디자이너 사용](#use-the-configuration-designer)을 참조하세요. XML 데이터 입력에 대한 자세한 내용은 [JSON 데이터 입력](#enter-json-data)을 참조하세요. 
+12. **다음**을 클릭하여 **할당** 페이지를 표시합니다.
+13. **할당 대상** 옆의 드롭다운 상자에서 **선택한 그룹**, **모든 사용자**, **모든 디바이스** 또는 **모든 사용자 및 모든 디바이스** 중 앱 구성 정책을 할당할 대상을 선택합니다.
 
-    - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 올바른 정책 이름은 **전체 회사에 대한 Android Enterprise Nine Work 앱 정책**입니다.
-    - **설명**: 프로필에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
-    - **디바이스 등록 유형**: 이 설정은 **관리 디바이스**로 설정됩니다.
-    - **플랫폼**: **Android**를 선택합니다.
+    ![정책 할당 포함 탭의 스크린샷](./media/app-configuration-policies-use-ios/app-config-policy01.png)
 
-3. **연결된 앱**을 선택합니다. 이 앱 구성 정책을 연결할 Android 앱을 선택합니다. 목록에서 [승인했으며 Intune과 동기화한 관리되는 Google Play 앱](~/apps/apps-add-android-for-work.md)을 선택합니다.
-4. **사용 권한**을 선택합니다. 다음을 사용하여 구성을 설정할 수 있습니다.
+14. 드롭다운 상자에서 **모든 사용자**를 선택합니다.
 
-    - [구성 디자이너](#use-the-configuration-designer)
-    - [JSON 편집기](#enter-the-json-editor)
+    ![정책 할당의 스크린샷 - 모든 사용자 드롭다운 옵션](./media/app-configuration-policies-use-ios/app-config-policy02.png)
 
-5. **확인** > **추가**를 선택합니다.
+15. **제외할 그룹 선택**을 클릭하여 관련 창을 표시합니다.
+
+    ![정책 할당의 스크린샷 - 제외할 그룹 선택 창](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
+16. 제외하려는 그룹을 클릭한 다음, **선택**을 클릭합니다.
+
+    >[!NOTE]
+    >그룹을 추가할 때 주어진 할당 유형에 이미 다른 그룹이 포함되어 있으면 다른 포함 할당 유형에 대해 사전 선택되며 변경할 수 없습니다. 따라서 사용된 해당 그룹은 제외된 그룹으로 사용할 수 없습니다.
+
+17. **다음**를 클릭하여 **검토 + 만들기** 페이지를 표시합니다.
+18. **만들기**를 클릭하여 앱 구성 정책을 Intune에 추가합니다.
 
 ## <a name="use-the-configuration-designer"></a>구성 디자이너 사용
 
@@ -92,7 +114,7 @@ Android 디바이스의 경우 다음 키/값 쌍을 사용합니다.
    > 다중 ID로 구성된 조직 계정만 허용하는 경우에는 Android용 Outlook 2.2.222 이상, Android용 Word, Excel, PowerPoint 16.0.9327.1000 이상 또는 Android용 OneDrive 5.28 이상을 사용해야 합니다.<p></p>
    > Microsoft Intune 관리자는 관리되는 디바이스에서 Microsoft Office 애플리케이션에 추가할 사용자 계정을 제어할 수 있습니다. 허용되는 조직 사용자 계정만 액세스하도록 제한하고 등록된 디바이스에서 개인 계정을 차단할 수 있습니다. 지원 애플리케이션이 앱 구성을 처리하고 승인되지 않은 계정을 제거 및 차단합니다.<p></p>
 
-## <a name="enter-the-json-editor"></a>JSON 편집기 입력
+## <a name="enter-json-data"></a>JSON 데이터 입력
 
 앱의 일부 구성 설정(예: 번들 유형 관련 설정)은 구성 디자이너를 사용하여 구성할 수 없습니다. 이러한 값에는 JSON 편집기를 사용합니다. 설정은 앱을 설치하면 앱에 자동으로 제공됩니다.
 

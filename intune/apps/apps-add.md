@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956192"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755275"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가 
 
@@ -74,10 +74,10 @@ Intune은 다양한 앱 유형을 지원합니다. 사용 가능한 옵션은 �
 
 <sup>1</sup> Android Enterprise 및 Android 회사 프로필에 대한 자세한 내용은 아래의 [사용이 허가된 앱 이해](apps-add.md#understanding-licensed-apps)를 참조하세요.
 
-Microsoft Intune에서 **앱** > **모든 앱** > **추가**를 차례로 선택하여 앱을 추가할 수 있습니다. **앱 추가** 창이 표시되고 **앱 유형**을 선택할 수 있습니다. 
+Microsoft Intune에서 **앱** > **모든 앱** > **추가**를 차례로 선택하여 앱을 추가할 수 있습니다. **앱 유형 선택** 창이 표시되고 **앱 유형**을 선택할 수 있습니다. 
 
 >[!TIP]
-> LOB 앱은 앱 설치 파일에서 추가하는 앱입니다. 예를 들어 iOS LOB 앱을 설치하려면 **앱 추가** 창에서 **앱 유형**으로 **기간 업무 앱**을 선택하여 애플리케이션을 추가합니다. 그런 다음, 앱 패키지 파일(확장명 .ipa)을 선택합니다. 이러한 유형의 앱은 일반적으로 사내에서 작성됩니다.
+> LOB 앱은 앱 설치 파일에서 추가하는 앱입니다. 예를 들어 iOS LOB 앱을 설치하려면 **앱 유형 선택** 창에서 **앱 유형**으로 **기간 업무 앱**을 선택하여 애플리케이션을 추가합니다. 그런 다음, 앱 패키지 파일(확장명 .ipa)을 선택합니다. 이러한 유형의 앱은 일반적으로 사내에서 작성됩니다.
 
 ## <a name="assess-app-requirements"></a>앱 요구 사항 평가
 IT 관리자는 그룹에서 사용해야 하는 앱뿐 아니라 각 그룹과 하위 그룹에 필요한 기능도 결정합니다. 각 앱에 대해 필요한 플랫폼, 앱이 필요한 사용자 그룹, 해당 그룹에 적용할 구성 정책, 적용할 보호 정책을 결정합니다.  

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1624117cc87c5cf3971f9cfb541106c700d4ffd
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 11f194d702d0de123ec010409874eb40ab38a9fa
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204938"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971826"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune의 Android 앱 보호 정책 설정
 이 문서에서는 Android 디바이스에 대한 앱 보호 정책 설정을 설명합니다. 설명된 정책 설정은 Azure Portal의 **설정** 창에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.

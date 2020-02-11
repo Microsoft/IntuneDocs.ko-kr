@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
-ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
+ms.openlocfilehash: 5c916e5cfb09da50bfcbfbe2ac4b094172357e80
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76125341"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812393"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune 보호 앱  
 
@@ -53,7 +53,7 @@ ms.locfileid: "76125341"
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge는 여러 디바이스를 사용하는 Windows 10 사용자를 위한 하나의 일관된 검색 환경을 만듭니다. 백그라운드에서 콘텐츠와 데이터가 원활하게 동기화되므로 사용자는 비트를 건너뛰지 않고 여러 디바이스를 탐색할 수 있습니다. 허브와 같이 친숙한 Microsoft Edge 기능을 통해 사용자는 간단하게 웹을 구성할 수 있으므로 이동 중에도 쉽게 콘텐츠를 찾고, 보며, 관리할 수 있습니다. Microsoft Edge는 Windows 10 사용자가 흐름을 방해하지 않고 어디서나 원하는 방식으로 웹을 탐색할 수 있도록 설계되었습니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US),<br>[App Store 링크(iOS)](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | 태블릿과 휴대폰에서 Excel 스프레드시트가 더 보기 좋게 나타납니다. 스프레드시트를 편집하거나 만들면 컴퓨터, Mac, 태블릿 및 휴대폰에서 원하는 방식으로 정확하게 표시됩니다. 직관적인 터치 환경과 더불어 익숙한 Office 모양과 느낌으로 즉시 사용할 수 있습니다.<p><p>이 앱은 Android 및 iOS용 다중 ID 앱으로 사용할 수 있습니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.excel),<br>[App Store 링크(iOS)](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  
 | **Power Automate**<p><img alt="Microsoft Flow icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-flow.png" width="100"> | Power Automate의 모든 기능을 주머니에 휴대해 보세요. Power Automate를 사용하면 즐겨 찾는 앱과 서비스 간에 자동화된 워크플로를 만들어 비즈니스를 간소화하고, 시간을 절약하며, 보다 효율적으로 작업할 수 있습니다.| [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.flow),<br>[App Store 링크(iOS)](https://itunes.apple.com/us/app/microsoft-flow/id1094928825) |  
-| **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | 회사 IT 관리자가 Intune 모바일 애플리케이션 관리 정책을 사용하여 관리하는 웹 검색 솔루션을 제공합니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser),<br>[App Store 링크(iOS)](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
+| **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | 회사 IT 관리자가 Intune 모바일 애플리케이션 관리 정책을 사용하여 관리하는 웹 검색 솔루션을 제공합니다.<p>**참고:** Intune Managed Browser가 사용 중지됩니다. 보호된 Intune 브라우저 환경에서 Microsoft Edge를 사용하세요. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser),<br>[App Store 링크(iOS)](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
 | **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft Invoicing을 사용하면 중소기업이 전문가 수준의 견적과 송장을 작성하고, 신속하게 지불하며, 시간을 절약할 수 있습니다. 사무실 또는 이동 중에도 송장 발부를 통해 송장 작성 및 보내기, 온라인 지불이 가능하며, 서류 작업에 드는 시간을 단축하는 동시에 비용을 절감할 수 있습니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira),<br>[App Store 링크(iOS)](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | Microsoft Kaizala는 대규모 그룹 통신 및 작업 관리를 위해 설계된 모바일 앱 및 서비스입니다. Kaizala를 사용하면 현장 직원, 공급 업체, 파트너 및 고객을 포함한 전체 가치 체인과 작업을 쉽게 연결하고 조정할 수 있습니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer),<br>[App Store 링크(iOS)](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Microsoft Launcher**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | Microsoft Launcher(이전의 Arrow Launcher)는 배경 무늬, 테마 색, 아이콘 팩 등을 사용하여 사용자 스타일에 맞게 Android 디바이스를 개인 설정할 수 있습니다. Microsoft 계정 또는 회사/학교 계정으로 맞춤형 피드에서 일정, 문서 및 최근 활동에 액세스할 수 있습니다. Windows PC에서 사진, 문서 및 웹 페이지를 열어 모든 디바이스에서 생산성을 높일 수 있습니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  

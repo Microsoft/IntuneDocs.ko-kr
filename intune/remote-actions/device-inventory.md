@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756026"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754204"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 디바이스 세부 정보 참조
 
@@ -84,7 +84,7 @@ ms.locfileid: "75756026"
 |ICCID|집적 회로 카드 식별자, 즉, SIM 카드의 고유한 ID 번호입니다.|Windows, iOS, Android|
 |등록된 날짜|Intune에서 디바이스를 등록한 날짜 및 시간입니다.|Windows, iOS, Android|
 |마지막 연결|Intune에 디바이스를 마지막으로 연결한 날짜 및 시간입니다.|Windows, iOS, Android|
-|활성화 잠금 무시 코드|활성화 잠금을 무시할 수 있는 코드입니다.|iOS|
+|활성화 잠금 무시 코드|활성화 잠금을 사용하지 않도록 설정하는 데 사용할 수 있는 코드입니다.|iOS|
 |Azure AD 등록됨|**예**인 경우 디바이스가 Azure Active Directory에 등록되어 있습니다.|Windows, iOS, Android|
 |Intune에 등록됨|**예**인 경우 디바이스가 Intune에 등록되어 있음|Windows, iOS, Android|
 |준수|디바이스의 준수 상태입니다.|Windows, iOS, Android|
@@ -92,8 +92,6 @@ ms.locfileid: "75756026"
 |EAS 활성화 ID|디바이스의 Exchange ActiveSync 식별자입니다.|Windows, iOS, Android|
 |감독됨|**예**인 경우 관리자는 디바이스에 대한 제어를 강화했습니다.|Windows, iOS, Android|
 |암호화됨|**예**인 경우 디바이스에 저장된 데이터가 암호화됩니다.|Windows, iOS, Android|
-
-\* 완전히 관리되는 디바이스 및 전용 디바이스 등 Google 정책 관리자가 포함된 Android에서 사용할 수 없음
 
 > [!Note]  
 > Android Enterprise 전용 또는 완전 관리형 디바이스에서는 전화 번호가 인벤토리에 포함되지 않습니다.

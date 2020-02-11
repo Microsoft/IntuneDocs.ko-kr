@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713127"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812488"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune에서 디바이스 암호 다시 설정 또는 제거
 
@@ -34,7 +34,7 @@ ms.locfileid: "73713127"
 | 플랫폼 | 지원 여부 |
 | ---- | ---- |
 | 버전 6.x 이하의 Android 디바이스 | 예 |
-| 키오스크 모드의 Android 엔터프라이즈 디바이스 | 예 |
+| 디바이스 소유자로 등록된 Android Enterprise 디바이스 | 예 |
 | iOS 디바이스 | 예 |
 | 사용자 등록에 등록된 iOS 디바이스 | 아니요 |
 | 작업 프로필에 등록된 Android 디바이스 | 아니요 |

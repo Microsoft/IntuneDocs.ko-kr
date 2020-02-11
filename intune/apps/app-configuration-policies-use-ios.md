@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885763"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755768"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>관리되는 iOS 디바이스용 앱 구성 정책 추가
 
@@ -51,34 +51,39 @@ Microsoft Intune 관리자는 관리되는 디바이스에서 Microsoft Office �
 ## <a name="create-an-app-configuration-policy"></a>앱 구성 정책 만들기
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
-2. **앱** > **앱 구성 정책** > **추가** > **관리 디바이스**를 선택합니다.
-3. 다음 세부 정보를 설정합니다.
+2. **앱** > **앱 구성 정책** > **추가** > **관리 디바이스**를 선택합니다. **관리되는 디바이스**와 **관리되는 앱** 중에서 선택할 수 있습니다. 자세한 내용은 [앱 구성을 지원하는 애플리케이션](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration)을 참조하세요.
+3. **기본 사항** 페이지에서 다음 세부 정보를 설정합니다.
     - **이름** - Azure Portal에 표시되는 프로필의 이름입니다.
     - **설명** - Azure Portal에 표시되는 프로필의 설명입니다.
     - **디바이스 등록 유형** - 설정이 **관리 디바이스**여야 합니다.
-4. **플랫폼**으로 **iOS**를 선택합니다.
-5. **연결된 앱**을 선택합니다. 그런 다음, **연결된 앱** 창에서 구성을 적용할 관리되는 앱을 선택하고 **확인**을 선택합니다.
-6. **구성 설정**을 선택하여 **구성 설정** 창을 표시합니다.
-7. **구성 설정 형식**을 선택합니다. 다음 방법 중 하나를 선택하여 구성 정보를 추가합니다.
+4. **플랫폼**으로 **iOS/iPadOS**를 선택합니다.
+5. **대상 앱** 옆의 **앱 선택**을 클릭합니다. **연결된 앱** 창이 표시됩니다. 
+6. **대상 앱** 창에서 구성 정책에 연결할 관리되는 앱을 선택하고 **확인**을 클릭합니다.
+7. **다음**을 클릭하여 **설정** 페이지를 표시합니다.
+8. 드롭다운 상자에서 **구성 설정 형식**을 선택합니다. 다음 방법 중 하나를 선택하여 구성 정보를 추가합니다.
     - **구성 디자이너 사용**
     - **XML 데이터 입력**<br><br>
     구성 디자이너 사용에 대한 자세한 내용은 [구성 디자이너 사용](#use-configuration-designer)을 참조하세요. XML 데이터 입력에 대한 자세한 내용은 [XML 데이터 입력](#enter-xml-data)을 참조하세요. 
-8. 구성 정보를 추가했으면 **확인**을 선택한 다음, **추가**를 선택하여 구성 정책을 추가합니다. 구성 정책에 대한 개요 창이 표시됩니다.
-9. **할당**을 선택하여 포함 및 제외 옵션을 표시합니다. 
+9. **다음**을 클릭하여 **할당** 페이지를 표시합니다.
+10. **할당 대상** 옆의 드롭다운 상자에서 **선택한 그룹**, **모든 사용자**, **모든 디바이스** 또는 **모든 사용자 및 모든 디바이스** 중 앱 구성 정책을 할당할 대상을 선택합니다.
 
     ![정책 할당 포함 탭의 스크린샷](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-10. **포함** 탭에서 **모든 사용자**를 선택합니다.
+
+11. 드롭다운 상자에서 **모든 사용자**를 선택합니다.
 
     ![정책 할당의 스크린샷 - 모든 사용자 드롭다운 옵션](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-11. **제외** 탭을 선택합니다. 
+
 12. **제외할 그룹 선택**을 클릭하여 관련 창을 표시합니다.
 
     ![정책 할당의 스크린샷 - 제외할 그룹 선택 창](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
 13. 제외하려는 그룹을 클릭한 다음, **선택**을 클릭합니다.
 
     >[!NOTE]
     >그룹을 추가할 때 주어진 할당 유형에 이미 다른 그룹이 포함되어 있으면 다른 포함 할당 유형에 대해 사전 선택되며 변경할 수 없습니다. 따라서 사용된 해당 그룹은 제외된 그룹으로 사용할 수 없습니다.
-14. **저장**을 클릭합니다.
+
+14. **다음**를 클릭하여 **검토 + 만들기** 페이지를 표시합니다.
+15. **만들기**를 클릭하여 앱 구성 정책을 Intune에 추가합니다.
 
 ## <a name="use-configuration-designer"></a>구성 디자이너 사용
 

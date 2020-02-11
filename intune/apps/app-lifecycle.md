@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e70191ed133d9427a3c8565d1dbf03573b628b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 6ce23d77d9b9d89ce51738a9c4e244dfca9a1c59
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692225"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812415"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune에 대한 앱 수명 주기 개요
 
@@ -43,7 +43,7 @@ Microsoft Intune 앱 수명 주기는 앱이 추가될 때 시작되어 앱을 �
 앱 수명 주기의 일부로 새 버전의 앱이 정기적으로 출시됩니다. Intune은 배포한 [앱을 쉽게 최신 버전으로 업데이트](apps-add.md)하는 도구를 제공합니다. 또한 일부 앱에 대한 추가 기능을 구성할 수 있으며, 예를 들면 다음과 같습니다.
 
 - [iOS 앱 구성 정책](app-configuration-policies-use-ios.md)은 앱이 실행될 때 사용되는 호환되는 iOS 앱에 대한 설정을 제공합니다. 예를 들어 앱이 특정 브랜드 설정 또는 연결해야 하는 서버의 이름을 요구할 수 있습니다.
-- [관리되는 브라우저 정책](app-configuration-managed-browser.md)은 기본 디바이스 브라우저를 바꾸는 Intune Managed Browser에 대한 설정을 구성하고 사용자가 방문할 수 있는 웹 사이트를 제한하는 데 도움이 됩니다.
+- [관리되는 브라우저 정책](app-configuration-managed-browser.md)은 기본 디바이스 브라우저를 바꾸고 사용자가 방문할 수 있는 웹사이트를 제한할 수 있는 [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps)의 설정을 구성하는 데 도움이 됩니다.
 
 ## <a name="protect"></a>보호
 

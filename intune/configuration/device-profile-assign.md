@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206706"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812381"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 사용자 및 디바이스 프로필 할당
 
@@ -31,7 +31,11 @@ ms.locfileid: "75206706"
 이 문서에서는 프로필을 할당하는 방법을 보여 주고 프로필에서 범위 태그를 사용하는 방법을 설명합니다.
 
 > [!NOTE]  
-> 프로필이 제거되거나 더 이상 디바이스에 할당되지 않을 때 설정이 기존 값을 유지할 수도 있습니다. 설정은 기본값으로 되돌아가지 않습니다. 설정을 다른 값으로 변경하려면 새 프로필을 만들고 할당합니다.
+> 프로필이 제거되거나 디바이스에 더 이상 할당되지 않으면 프로필의 설정에 따라 다른 상황이 발생할 수 있습니다. 설정은 CSP를 기반으로 하며, 각 CSP는 프로필 제거를 다르게 처리할 수 있습니다. 예를 들어 설정에서 기존 값을 유지하고 기본값으로 되돌리지 않을 수 있습니다. 동작은 운영 체제의 각 CSP에 의해 제어됩니다. Windows CSP 목록은 [CSP(구성 서비스 공급자) 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)에서 확인하세요.
+>
+> 설정을 다른 값으로 변경하려면 새 프로필을 만들고 **구성되지 않음**으로 설정을 구성한 다음 프로필을 할당합니다. 사용자는 디바이스에 적용된 설정을 선호하는 값으로 변경할 수 있습니다.
+>
+> 이러한 설정을 구성할 때는 파일럿 그룹에 배포하는 것이 좋습니다. 자세한 Intune 출시 조언은 [출시 계획 만들기](../fundamentals/planning-guide-rollout-plan.md)를 참조하세요.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 

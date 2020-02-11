@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3168d517ebbb59dc9d6fe5a9c262ad8e1c909619
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d43e0f913020e3e2e8b0ac463d5983447d7c1fa2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563815"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754952"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Microsoft Intune에 Windows Phone 8.1 스토어 앱 추가
 
@@ -36,8 +36,11 @@ ms.locfileid: "74563815"
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **앱** > **모든 앱** > **추가**를 선택합니다.
-3. **앱 추가** 창에서 **앱 형식**을 **Windows Phone 8.1**로 선택하고 **앱 정보**를 선택합니다.
-4. **앱 정보** 창에서 앱 정보를 추가합니다. 선택한 앱에 따라 이 창의 일부 값이 자동으로 채워질 수 있습니다.
+3. **앱 유형 선택** 창의 사용 가능한 **스토어 앱** 유형 아래에서 **Windows Phone 8.1 스토어 앱**을 선택합니다.
+4. **선택**을 클릭합니다.<br>
+   **앱 추가** 단계가 표시됩니다.
+5. Windows Phone 8.1 스토어 앱의 **앱 정보**를 구성하려면 [Microsoft Store](https://www.microsoft.com/store/apps/windows-phone)로 이동하여 배포하려는 앱을 검색합니다. 앱 페이지를 표시하고 앱 세부 정보를 기록합니다. 
+6. **앱 정보** 페이지에서 앱 세부 정보를 추가합니다.
     - **이름**: 회사 포털에 표시하려는 앱 이름을 입력합니다. 사용하는 모든 앱 이름이 고유한지 확인합니다. 앱 이름이 중복될 경우 한 이름만 회사 포털에서 사용자에게 표시됩니다.
     - **설명**: 앱에 대한 설명을 입력합니다. 이 설명은 회사 포털에서 사용자에게 표시됩니다.
     - **게시자**: 앱 게시자의 이름을 입력합니다.
@@ -50,8 +53,15 @@ ms.locfileid: "74563815"
     - **소유자**: 필요한 경우 이 앱의 소유자 이름을 입력합니다(예: *HR 부서*).
     - **메모**: 선택 사항으로, 이 앱과 연결할 모든 메모를 입력합니다.
     - **로고**: 필요한 경우 앱과 연결할 아이콘을 업로드합니다. 사용자가 회사 포털을 찾아볼 때 이 아이콘이 앱과 함께 표시됩니다.
-5. **확인**을 선택합니다.
-6. **추가**를 선택합니다.
+7. **다음**을 클릭하여 **범위 태그** 페이지를 표시합니다.
+8. **범위 태그 선택**을 클릭하여 앱의 범위 태그를 선택적으로 추가합니다. 자세한 내용은 [분산형 IT에 RBAC(역할 기반 액세스 제어) 및 범위 태그 사용](~/fundamentals/scope-tags.md)을 참조하세요.
+9. **다음**을 클릭하여 **할당** 페이지를 표시합니다.
+10. 앱의 그룹 할당을 선택합니다. 자세한 내용은 [그룹을 추가하여 사용자 및 디바이스 구성](~/fundamentals/groups-add.md)을 참조하세요. 
+11. **다음**를 클릭하여 **검토 + 만들기** 페이지를 표시합니다. 앱에 대해 입력한 값과 설정을 검토합니다.
+12. 완료되면 **만들기**를 클릭하여 Intune에 앱을 추가합니다.
+
+만든 앱의 **개요 블레이드**가 표시됩니다.
+
 
 만든 앱이 앱 목록에 표시되며, 여기서 이 앱을 선택한 그룹에 할당할 수 있습니다.
 

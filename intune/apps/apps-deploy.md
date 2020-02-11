@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563991"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912661"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
@@ -132,7 +132,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
 Intune 콘솔에서 APP 선택적 초기화가 실행되면, 회사 계정은 Play 스토어 앱에서 자동으로 제거되고 최종 사용자는 이때부터 더 이상 Play 스토어 앱 카탈로그에서 회사 앱을 볼 수 없습니다. 회사 계정이 디바이스에서 제거되는 경우에도 Play 스토어에서 설치된 앱은 디바이스에 설치되어 있고, 제거되지 않습니다. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>iOS 관리되는 앱의 앱 제거 설정
-iOS 디바이스의 경우 Intune에서 디바이스를 등록 취소하거나 **디바이스 제거 시 제거** 설정을 사용하여 관리 프로필을 제거할 때 관리되는 앱에 수행되는 작업을 선택할 수 있습니다. 이 설정은 디바이스가 등록되고 앱이 관리되는 앱으로 설치된 후에만 앱에 적용됩니다. 웹 앱 또는 웹 링크에는 이 설정을 구성할 수 없습니다. 
+iOS 디바이스의 경우 Intune에서 디바이스를 등록 취소하거나 **디바이스 제거 시 제거** 설정을 사용하여 관리 프로필을 제거할 때 관리되는 앱에 수행되는 작업을 선택할 수 있습니다. 이 설정은 디바이스가 등록되고 앱이 관리되는 앱으로 설치된 후에만 앱에 적용됩니다. 웹 앱 또는 웹 링크에는 이 설정을 구성할 수 없습니다. 앱 선택적 초기화에 의한 사용 중지 후 MAM(모바일 응용 프로그램 관리)으로 보호되는 데이터만 제거됩니다.
 
 새 할당의 경우 다음과 같이 설정의 기본값이 미리 채워집니다.
 

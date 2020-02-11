@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7b77c4f0127c9ee16b255d0e0e28622b85c323b
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907256"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517544"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Intune을 사용하여 원격으로 디바이스 다시 시작
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-**다시 시작** 디바이스 작업을 수행하면 선택한 디바이스가 다시 시작됩니다. 디바이스 소유자에게 다시 시작이 자동으로 알려지지 않고 작업을 손실할 수 있습니다.
+**다시 시작** 디바이스 작업을 수행하면 선택한 디바이스가 다시 시작됩니다(5분 이내). 디바이스 소유자에게 다시 시작이 자동으로 알려지지 않고 작업을 손실할 수 있습니다.
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 

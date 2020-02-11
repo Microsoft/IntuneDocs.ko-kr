@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 471eb35cb7b96166aaacfbe1ce0ee36cfa06e9c0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502359"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755581"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Microsoft Intune으로 디바이스 보호
 
@@ -59,8 +59,8 @@ Intune에서는 앱과 해당 데이터를 보호하는 데 사용할 수 있는
 ## <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Windows 디바이스에서 비즈니스용 Windows Hello 설정 제어
 Active Directory를 사용하는 Windows 10 이상 버전 또는 Azure Active Directory 계정에서 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 로그인 방법인 [비즈니스용 Windows Hello](windows-hello.md)와 Intune을 통합할 수 있습니다.
 
-## <a name="bypass-activation-lock-on-ios-devices"></a>iOS 디바이스에서 활성화 잠금 무시
-활성화 잠금은 사용자 디바이스를 보호하는 데 도움이 되는 기능입니다. 이 기능은 누군가가 디바이스를 초기화하거나 다시 활성화하기 전에 사용자가 Apple ID와 암호를 입력하도록 요구합니다. 그러나 이 기능은 사용자가 잠금을 제거하지 않고 퇴사하는 경우 등에 문제가 발생할 수 있습니다. [iOS 활성화 잠금 무시](../remote-actions/device-activation-lock-bypass.md)는 감독 되는 iOS 디바이스에서 잠금을 제거하여 디바이스를 다시 할당하거나 지울 수 있도록 합니다.
+## <a name="disable-activation-lock-on-ios-devices"></a>iOS 디바이스에서 활성화 잠금 사용 안 함
+활성화 잠금은 사용자 디바이스를 보호하는 데 도움이 되는 기능입니다. 이 기능은 누군가가 디바이스를 초기화하거나 다시 활성화하기 전에 사용자가 Apple ID와 암호를 입력하도록 요구합니다. 그러나 이 기능은 사용자가 잠금을 제거하지 않고 퇴사하는 경우 등에 문제가 발생할 수 있습니다. [iOS 활성화 잠금 사용 안 함](../remote-actions/device-activation-lock-disable.md)은 감독되는 iOS 디바이스에서 잠금을 제거하여 디바이스를 다시 할당하거나 지울 수 있도록 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

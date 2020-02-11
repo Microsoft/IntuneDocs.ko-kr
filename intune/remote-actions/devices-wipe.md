@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991775"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812453"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>초기화, 사용 중지 또는 수동으로 디바이스 등록을 취소하여 디바이스 제거
 
@@ -88,7 +88,7 @@ MDM 정책은 다음에 디바이스가 Intune에 연결될 때 다시 적용됩
 
 |데이터 형식|iOS|
 |-------------|-------|
-|Intune에서 설치한 회사 앱 및 관련 데이터|**회사 포털을 사용하여 설치된 앱:** 관리 프로필에 고정된 앱의 경우 모든 앱 데이터와 앱이 제거됩니다. 이러한 앱에는 App Store에서 처음에 설치되고, 나중에 회사 앱으로 관리된 앱이 포함됩니다. <br /><br /> **모바일 앱 관리를 사용하고 App Store에서 설치한 Microsoft 앱:** 회사 포털에서 관리되지 않는 앱의 경우 앱 로컬 스토리지 내에서 MAM(모바일 애플리케이션 관리) 암호화로 보호되는 회사 앱 데이터가 제거됩니다. 앱 외부에서 MAM 암호화로 보호되는 데이터는 암호화되고 사용할 수 없는 상태로 유지되지만 제거되지는 않습니다. 개인 앱 데이터와 앱은 제거되지 않습니다.|
+|Intune에서 설치한 회사 앱 및 관련 데이터|**회사 포털을 사용하여 설치된 앱:** 관리 프로필에 고정된 앱의 경우 모든 앱 데이터와 앱이 제거됩니다. 디바이스 제거 시 제거되지 않도록 앱이 구성된 경우를 제외하고 이러한 앱에는 원래 앱 스토어에서 설치되고 나중에 회사 앱으로 관리되는 앱이 포함됩니다. <br /><br /> **모바일 앱 관리를 사용하고 App Store에서 설치한 Microsoft 앱:** 회사 포털에서 관리되지 않는 앱의 경우 앱 로컬 스토리지 내에서 MAM(모바일 애플리케이션 관리) 암호화로 보호되는 회사 앱 데이터가 제거됩니다. 앱 외부에서 MAM 암호화로 보호되는 데이터는 암호화되고 사용할 수 없는 상태로 유지되지만 제거되지는 않습니다. 개인 앱 데이터와 앱은 제거되지 않습니다.|
 |설정|Intune 정책에서 설정한 구성은 더 이상 적용되지 않습니다. 사용자는 설정을 변경할 수 있습니다.|
 |Wi-Fi 및 VPN 프로필 설정|제거됩니다.|
 |인증서 프로필 설정|인증서가 제거되고 해지됩니다.|

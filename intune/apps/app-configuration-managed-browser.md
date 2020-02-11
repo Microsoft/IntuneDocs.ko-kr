@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564301"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812510"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 웹 액세스 관리
 
@@ -36,6 +36,9 @@ Intune 정책(Microsoft Edge 또는 Intune Managed Browser)으로 보호되는 �
 - Single Sign-On
 - 애플리케이션 구성 설정
 - Azure 애플리케이션 프록시 통합
+
+> [!IMPORTANT]
+> Intune Managed Browser가 사용 중지됩니다. 보호된 Intune 브라우저 환경에서 Microsoft Edge를 사용하세요. 
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge 지원
 
@@ -235,7 +238,7 @@ Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행�
 
 |                                Key                                 |                                                                                                                                                                                                                                                         값                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 <strong>&#124;</strong> 문자로 구분합니다.<br><br>예:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>여러 책갈피를 구성하려면 각 쌍을 이중 문자 <strong>&#124;&#124;</strong>로 구분합니다.<br><br>예:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 이 구성에 대한 값은 책갈피 목록입니다. 각 책갈피는 책갈피 제목과 책갈피 URL로 이루어져 있습니다. 제목과 URL을 <strong>&#124;</strong> 문자로 구분합니다.<br><br>예제:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>여러 책갈피를 구성하려면 각 쌍을 이중 문자 <strong>&#124;&#124;</strong>로 구분합니다.<br><br>예제:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>보호되는 브라우저에 대해 허용 URL 및 차단 URL을 지정하는 방법
 

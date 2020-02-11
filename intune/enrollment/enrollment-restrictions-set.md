@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547821"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971869"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -82,12 +82,13 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바
    > Windows 10에서는 등록하는 동안 수정 번호를 제공하지 않습니다. 예를 들어 사용자가 10.0.17134.100을 입력하고 디바이스가 10.0.17134.174 번호를 사용하는 경우 이 번호는 등록하는 동안 차단됩니다.
 
 6. **개인 소유**에서 개인 소유 디바이스로 허용할 플랫폼에 대해 **허용**을 선택합니다.
-7. **다음**을 선택하여 **할당** 페이지로 이동합니다.
-8. **포함할 그룹**을 선택한 다음 검색 상자를 사용하여 이 제한에 포함하려는 그룹을 찾습니다. 제한은 할당된 그룹에만 적용됩니다. 제한을 하나 이상의 그룹에 할당하지 않으면 아무런 효과가 없습니다. 그런 다음, **선택**을 선택합니다. 
+7. **디바이스 제조업체**에서 차단하려는 제조업체의 쉼표로 구분된 목록을 입력합니다.
+8. **다음**을 선택하여 **할당** 페이지로 이동합니다.
+9. **포함할 그룹**을 선택한 다음 검색 상자를 사용하여 이 제한에 포함하려는 그룹을 찾습니다. 제한은 할당된 그룹에만 적용됩니다. 제한을 하나 이상의 그룹에 할당하지 않으면 아무런 효과가 없습니다. 그런 다음, **선택**을 선택합니다. 
     ![플랫폼 설정 선택 화면](./media/enrollment-restrictions-set/select-groups.png)
-9. **다음**을 선택하여 **검토 + 만들기** 페이지로 이동합니다.
-10. **만들기**를 선택하여 제한을 만듭니다.
-11. 새로운 제한은 기본값 바로 위의 우선 순위로 만들어집니다. [우선 순위는 변경](#change-enrollment-restriction-priority)할 수 있습니다.
+10. **다음**을 선택하여 **검토 + 만들기** 페이지로 이동합니다.
+11. **만들기**를 선택하여 제한을 만듭니다.
+12. 새로운 제한은 기본값 바로 위의 우선 순위로 만들어집니다. [우선 순위는 변경](#change-enrollment-restriction-priority)할 수 있습니다.
 
 
 ## <a name="create-a-device-limit-restriction"></a>디바이스 개수 제한 만들기

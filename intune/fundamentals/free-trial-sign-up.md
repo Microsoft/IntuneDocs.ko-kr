@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/09/2020
+ms.date: 01/16/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35dd017eaa2dd3cd6c17dc611aaa9d457b18aca2
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: e1baf0b4273a9074ac7172c08240a8e3c3a9d7fa
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839252"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76541118"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>빠른 시작: Microsoft Intune 평가판 체험
 
 Microsoft Intune을 사용하면 디바이스 및 앱을 관리하여 직원의 회사 데이터를 보호할 수 있습니다. 이 빠른 시작에서는 평가판 구독을 만들고 테스트 환경에서 Intune을 사용해 봅니다.
 
-Intune은 Microsoft Azure portal을 통해 관리되는 안전한 클라우드 기반 서비스에서 MDM(모바일 디바이스 관리) 및 MAM(모바일 앱 관리)을 제공합니다. Intune을 사용하면 직원의 회사 리소스(데이터, 디바이스 및 앱)가 올바르게 구성, 액세스 및 업데이트되고 회사의 준수 정책 및 요구 사항을 충족합니다.
+Intune은 Microsoft Endpoint Manager 관리 센터를 통해 관리되는 안전한 클라우드 기반 서비스에서 MDM(모바일 장치 관리) 및 MAM(모바일 응용 프로그램 관리)을 제공합니다. Intune을 사용하면 직원의 회사 리소스(데이터, 디바이스 및 앱)가 올바르게 구성, 액세스 및 업데이트되고 회사의 준수 정책 및 요구 사항을 충족합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 Microsoft Intune을 설정하기 전에, 다음 요구 사항을 검토하세요.
@@ -60,27 +60,31 @@ Intune 평가판은 30일 동안 무료로 사용할 수 있습니다. 회사 �
 
     ![계정 정보 이미지](./media/free-trial-sign-up/intune-end-of-sign-up-process.png) 
 
-## <a name="sign-in-to-the-azure-portal"></a>Azure Portal에 로그인
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Microsoft 엔드포인트 관리자의 Intune에 로그인
 
-1. 새 브라우저 창을 열고 주소 표시줄에 **https://portal.azure.com** 을 입력합니다. 
-2. 위의 단계에서 제공된 자격 증명을 사용하여 로그인합니다.
+아직 포털에 로그인하지 않았다면 다음 단계를 완료하세요.
 
-    ![Azure Portal 로그인 페이지의 이미지](./media/free-trial-sign-up/azure-portal-signin.png)
+1. 새 브라우저 창을 열고 주소 표시줄에 **https://devicemanagement.microsoft.com** 을 입력합니다. 
+2. 위 단계에서 제공된 사용자 ID를 사용하여 로그인합니다( *yourID@yourdomain* .onmicrosoft.com).
 
-3. Azure Portal에서 Microsoft Intune을 보려면 페이지 왼쪽에 있는 사이드바에서 **모든 서비스**를 선택합니다.
-4. 필터 상자에서 **Microsoft Intune**을 검색하여 선택합니다.
-5. **별** 모양 아이콘을 선택하여 Intune을 자주 사용하는 서비스 목록 맨 아래에 추가하고 Intune 대시보드를 엽니다.
+    ![포털 로그인 페이지의 이미지](./media/free-trial-sign-up/azure-portal-signin.png)
 
 평가판에 등록하는 경우 등록 과정 중에 입력한 이메일 주소로 계정 정보가 포함된 이메일 메시지가 전송됩니다. 이 전자 메일을 통해 평가판이 활성화된 것을 확인합니다.
 
 > [!TIP]
-> Azure Portal을 사용하는 경우 프라이빗 모드가 아닌 일반 모드에서 브라우저를 사용하면 더 나은 결과를 얻을 수 있습니다.
+> Microsoft Endpoint Manager를 사용하는 경우 비공개 모드가 아닌 일반 모드에서 브라우저를 사용하면 더 나은 결과를 얻을 수 있습니다.
 
-## <a name="set-the-mdm-authority-to-intune"></a>MDM 기관을 Intune으로 설정
+## <a name="confirm-the-mdm-authority-in-intune"></a>Intune에서 MDM 기관 확인
 
-Azure Portal에 로그인하고 Intune을 선택하면 MDM 기관을 아직 설정하지 않았음을 나타내는 주황색 배너가 표시될 수 있습니다. MDM(모바일 디바이스 관리) 기관 설정에 따라 디바이스를 관리하는 방법이 결정됩니다. 사용자가 관리를 위해 디바이스를 등록하려면 먼저 MDM 권한을 설정해야 합니다.
+기본적으로 무료 평가판을 만들 때 MDM 기관이 설정됩니다. 다음 단계를 사용하면 MDM 기관이 설정되었는지 확인할 수 있습니다.
 
-MDM 기관을 Intune으로 설정하려면 다음 단계를 수행합니다.
+1. 아직 로그인하지 않았다면 Microsoft Endpoint Manager에 로그인합니다.
+2. **테넌트 관리**를 클릭합니다.
+3. 테넌트 세부 정보를 확인합니다. **MDM 기관**이 **Microsoft Intune**으로 설정되어야 합니다.
+
+Microsoft Endpoint Manager에 로그인한 후 MDM 기관이 설정되지 않았다고 표시하는 주황색 배너가 보이면 지금 활성화시킬 수 있습니다. MDM(모바일 디바이스 관리) 기관 설정에 따라 디바이스를 관리하는 방법이 결정됩니다. 사용자가 관리를 위해 디바이스를 등록하려면 먼저 MDM 권한을 설정해야 합니다.
+
+### <a name="to-set-the-mdm-authority-to-intune-follow-these-steps"></a>MDM 기관을 Intune으로 설정하려면 다음 단계를 수행합니다.
 
 1. 새 브라우저 창을 열고 주소 표시줄에 **https://portal.azure.com** 을 입력합니다. 
 2. **모든 서비스** > **Microsoft Intune**을 선택합니다.
@@ -121,9 +125,9 @@ MDM 기관에 대한 자세한 내용은 [모바일 디바이스 관리 권한 �
 
 ## <a name="admin-experiences"></a>관리자 환경
 
-사용할 수 있는 포털이 두 개 있습니다.
-- Azure의 Intune 대시보드([portal.azure.com](https://portal.azure.com))에서는 [Intune의 기능](what-is-intune.md)을 탐색할 수 있습니다. 일반적으로 Intune 대시보드에서 작업을 수행합니다.
-- Azure Active Directory를 사용하지 않는 경우 Microsoft 365 관리 센터([admin.microsoft.com](https://admin.microsoft.com))에서 사용자를 추가하고 관리할 수 있습니다. 또한 대금 청구 및 지원을 포함하여 계정의 다른 측면을 관리할 수 있습니다.
+가장 자주 사용하게 될 포털이 두 개 있습니다.
+- Microsoft Endpoint Manager 관리 센터([https://devicemanagement.microsoft.com/](https://devicemanagement.microsoft.com/))에서 [Intune의 기능](what-is-intune.md)을 탐색할 수 있습니다. 관리자는 여기서 Intune 작업을 합니다.
+- Azure Active Directory를 사용하지 않는 경우 Microsoft 365 관리 센터([https://admin.microsoft.com](https://admin.microsoft.com))에서 사용자를 추가하고 관리할 수 있습니다. 또한 대금 청구 및 지원을 포함하여 계정의 다른 측면을 관리할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
