@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae7ffe5a8c20aa7edd67853ff86ef9e28cf2d175
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
+ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915826"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034246"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Microsoft Intune에서 SCEP 인증서 프로필 문제 해결 개요
 
@@ -115,11 +115,11 @@ NDES(네트워크 장치 등록 서비스) 문제를 해결하려면 support.mic
 
 ### <a name="logs-for-android-devices"></a>Android 디바이스의 로그
 
-Android를 실행하는 디바이스의 경우 **Android 회사 포털** 앱 로그 파일 **OMADM.log**를 사용합니다. 로그를 수집하고 검토하기 전에 [자세한 정보 로깅](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)을 사용하도록 설정되었는지 확인한 다음 문제를 재현합니다.
+Android를 실행하는 디바이스의 경우 **Android 회사 포털** 앱 로그 파일 **OMADM.log**를 사용합니다. 로그를 수집하고 검토하기 전에 [자세한 정보 로깅](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)을 사용하도록 설정되었는지 확인한 다음 문제를 재현합니다.
 
-디바이스에서 OMADM.log를 수집하려면 [USB 케이블을 사용하여 로그 업로드 및 전자 메일 보내기](/intune-user-help/send-logs-to-your-it-admin-using-cable-android.md)를 참조하세요.
+디바이스에서 OMADM.log를 수집하려면 [USB 케이블을 사용하여 로그 업로드 및 전자 메일 보내기](/intune-user-help/send-logs-to-your-it-admin-using-cable-android)를 참조하세요.
 
-지원을 위한 [로그 업로드 및 전자 메일 보내기](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md#upload-and-email-logs-from-microsoft-intune-app)도 가능합니다.
+지원을 위한 [로그 업로드 및 전자 메일 보내기](/intune-user-help/send-logs-to-your-it-admin-by-email-android#upload-and-email-logs-from-microsoft-intune-app)도 가능합니다.
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>iOS 및 iPadOS 디바이스의 로그
 
