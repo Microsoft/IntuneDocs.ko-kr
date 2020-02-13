@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258496"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125016"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -285,16 +285,27 @@ Microsoft Edge에 기본 제공된 이중 ID 모델을 사용하면 Intune Manag
 
 |    Key    |    값    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    **True**를 선택하면 InPrivate 브라우징에서 직접 제한된 링크를 엽니다.<p>**False**(기본)를 선택하면 사용자가 제한된 링크를 열 때 InPrivate 브라우징 또는 관리 서비스 계정(MSA)를 선택하도록 합니다.    |
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True**(기본값)이면 Microsoft Edge에서 사용자를 프라이빗 컨텍스트로 전환하여 차단된 사이트를 열 수 있습니다.<p>**False**이면 Microsoft Edge에서 사용자를 전환할 수 없습니다. 사용자에게는 액세스하려는 사이트가 차단되었다는 메시지만 표시됩니다.    |
 
 ## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>InPrivate 탭 페이지에서 직접 제한된 링크 열기
 
-제한된 링크를 InPrivate 브라우징에서 직접 열도록 구성하면 사용자가 더욱 원활한 브라우징 환경을 갖게 됩니다. 이렇게 하면 사용자가 사이트를 볼 때 개인 컨텍스트로 전환하는 단계가 필요하지 않습니다. InPrivate 브라우징은 관리되지 않는 것으로 간주되므로 사용자가 InPrivate 브라우징 모드를 사용할 때는 액세스할 수 없습니다. 
+제한된 링크를 InPrivate 브라우징에서 직접 열도록 구성하면 사용자가 더욱 원활한 브라우징 환경을 갖게 됩니다. 이렇게 하면 사용자가 사이트를 볼 때 개인 컨텍스트로 전환하는 단계가 필요하지 않습니다. InPrivate 브라우징은 관리되지 않는 것으로 간주되므로 사용자가 InPrivate 브라우징 모드를 사용할 때는 액세스할 수 없습니다.
 
 |    Key    |    값    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True**이면 Microsoft Edge에서 사용자를 프라이빗 컨텍스트로 전환하여 차단된 사이트를 열 수 있습니다.<p>**차단**이면 Microsoft Edge에서 사용자를 전환할 수 없습니다. 사용자에게는 액세스하려는 사이트가 차단되었다는 메시지만 표시됩니다.    |
 
+## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Microsoft Edge 프롬프트를 사용하지 않도록 설정하여 암호 저장
+
+|    Key    |    값    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True**를 선택하면 InPrivate 브라우징에서 직접 제한된 링크를 엽니다.<p>**False**(기본)를 선택하면 사용자가 제한된 링크를 열 때 InPrivate 브라우징 또는 관리 서비스 계정(MSA)를 선택하도록 합니다.    |
+
+기본적으로 iOS의 Microsoft Edge는 사용자 암호를 키 집합에 저장하도록 합니다. 조직에 대해 이 프롬프트를 사용하지 않도록 하려면 다음 설정을 구성합니다.
+
+|    Key    |    값    |
+|-----------|-------------|
+|     ‘com.microsoft.intune.mam.managedbrowser.disableFeatures’    |    **password**는 암호 저장 프롬프트를 사용하지 않도록 설정합니다.    |
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>iOS에서 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스 
 

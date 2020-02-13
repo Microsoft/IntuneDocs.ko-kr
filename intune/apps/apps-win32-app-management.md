@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755292"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075827"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 독립 실행형 - Win32 앱 관리
 
@@ -204,7 +204,7 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
         2. 요구 사항 규칙 설정을 마쳤으면 **확인**을 선택합니다.
 2. **다음**을 클릭하여 **검색 규칙** 페이지를 표시합니다.   
 
-### <a name="step-4-detection-rules"></a>4단계: 검색 규칙
+## <a name="step-4-detection-rules"></a>4단계: 검색 규칙
 
 1. **검색 규칙** 페이지에서 앱의 존재를 검색하기 위한 규칙을 구성합니다.
     
@@ -268,7 +268,7 @@ LOB(사업 부문) 앱과 마찬가지로 Win32 앱을 Microsoft Intune에 추�
 
 2. 규칙을 추가한 후 **다음**을 선택하여 **종속성** 페이지를 표시합니다.
 
-### <a name="step-5-dependencies"></a>5단계: 종속성
+## <a name="step-5-dependencies"></a>5단계: 종속성
 
 앱 종속성은 Win32 앱을 설치하기 전에 설치해야 하는 애플리케이션입니다. 다른 앱이 종속성으로 설치되도록 요구할 수 있습니다. 특히 디바이스는 Win32 앱을 설치하기 전에 종속 앱을 설치해야 합니다. 최대 100개의 종속성이 있으며, 여기에는 앱 자체뿐만 아니라 포함된 모든 종속성의 종속성도 포함됩니다. Win32 앱이 Intune에 추가되고 업로드된 후에만 Win32 앱 종속성을 추가할 수 있습니다. Win32 앱이 추가되면 Win32 앱에 대한 창에 **종속성** 옵션이 표시됩니다. 
 

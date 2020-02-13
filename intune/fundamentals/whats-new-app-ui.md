@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098212"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125050"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 
@@ -36,9 +36,14 @@ Microsoft Intune 앱의 최신 업데이트에 대해 알아보세요. 주기적
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-february-3-2020"></a>2020년 2월 3일이 포함된 주
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment---6103987---"></a>회사 포털에서 화면이 제거됨, Android 회사 프로필 등록 <!--6103987 -->
+사용자 환경을 간소화하기 위해 **다음 단계** 화면이 회사 포털의 Android 회사 프로필 등록 흐름에서 제거되었습니다. [Android 회사 프로필에 등록](/intune-user-help/enroll-device-android-work-profile)으로 이동하여 업데이트된 Android 회사 프로필 등록 흐름을 확인합니다.  
+
 ## <a name="week-of-november-11-2019"></a>2019년 11월 11일 주  
 
-#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Windows 회사 포털 앱에서 시작된 웹앱<!-- 5030972 -->
+### <a name="web-apps-launched-from-the-windows-company-portal-app----5030972---"></a>Windows 회사 포털 앱에서 시작된 웹앱 <!-- 5030972 -->
 이제 최종 사용자가 Windows 회사 포털 앱에서 직접 웹앱을 시작할 수 있습니다. 최종 사용자는 웹앱을 선택한 다음 **브라우저에서 열기** 옵션을 선택할 수 있습니다. 게시된 웹 URL이 웹 브라우저에서 직접 열립니다. 이 기능은 다음 주에 출시될 예정입니다. 웹앱에 대한 자세한 내용은 [Microsoft Intune에 웹앱 추가](~/apps/web-app.md)를 참조하세요.
 
 ![Windows 회사 포털 앱에서 시작된 웹앱의 이미지 예](./media/whats-new-app-ui/webapp-open-in-browser.png)  
@@ -169,11 +174,11 @@ Microsoft Intune 관리자는 iOS 회사 포털 앱의 사용자 프로필 페�
 
 - 모든 디바이스 플랫폼에서 간소화된 워크플로
 - 향상된 디바이스 식별 및 등록 흐름
-- 더 유용한 오류 메시지
+- 오류 메시지의 효율성 향상
 - 전문 기술 용어는 줄이고 친근한 언어 사용
 - 앱에 대한 직접 링크를 공유하는 기능
 - 대규모 앱 카탈로그의 성능 개선
-- 향상된 모든 사용자에 대한 접근성  
+- 모든 사용자의 접근성 향상  
 
 |업데이트됨|이전|
 |---|---|
@@ -191,7 +196,7 @@ Microsoft Intune 관리자는 iOS 회사 포털 앱의 사용자 프로필 페�
 
 이제 Windows용 회사 포털 앱에서 앱을 탐색 또는 검색할 때 기존 **타일** 보기와 새로운 **세부 정보** 보기 간에 전환할 수 있습니다. 새로운 보기에는 이름, 게시자, 게시 날짜 및 설치 상태와 같은 애플리케이션 세부 정보가 나열됩니다.  
 
-**앱** 페이지의 **설치됨** 보기를 통해 완료 및 진행 중인 앱 설치에 대한 세부 정보를 볼 수 있습니다.  
+**앱** 페이지의 **설치된** 보기를 사용하면 완료 및 진행 중인 앱 설치에 대한 세부 정보를 볼 수 있습니다.  
 
 타일 보기를 보여 주는 예제 스크린샷:  
  
@@ -262,7 +267,7 @@ Android의 [자료 디자인](https://material.io/) 지침에 따르도록 Andro
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>버전 2.9.0에 대한 iOS 회사 포털의 향상된 디바이스 설정 워크플로 기능 <!-- 1417174 -->
 
-iOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습니다. 언어는 더욱 친숙하게 변경되었으며, 최대한 화면을 결합했습니다. 또한 전체 설정 텍스트에서 회사 이름을 사용하여 언어가 회사에 더욱 구체적으로 변경되었습니다.
+iOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습니다. 언어는 더욱 친숙하게 변경되었으며, 최대한 화면을 결합했습니다. 또한 설정 텍스트 전체에서 회사 이름을 사용하여 회사에 대한 언어의 관련성을 높였습니다.
 
 > [!NOTE]
 > **Microsoft Intune** > **클라이언트 앱** > **회사 포털 브랜딩** > **회사 이름**에는 Azure Portal에서 설정한 회사 이름이 사용됩니다. 이 값을 설정하지 않으면 **Azure Active Directory** > **속성** > **이름**에 설정된 테넌트 이름이 사용됩니다. 회사 포털 브랜딩에서 회사 이름을 설정하지 않았고 테넌트 이름을 표시하지 않으려면 [회사 포털 브랜딩] 탭에서 회사 이름을 설정하는 것이 좋습니다. 이 문자열을 회사 포털의 헤더에 표시하지 않으려면 “로고 옆에 회사 이름 표시” 확인란을 선택 취소하면 됩니다.
@@ -340,7 +345,7 @@ Android 회사 프로필 디바이스에서 추가 단계가 개선되었습니�
 
 ### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android용 회사 포털 앱의 구문을 쉽게 이해 <!-- 1396349 -->  
 
-최종 사용자가 쉽게 등록할 수 있도록 새로운 텍스트가 포함되어 Android용 회사 포털 앱의 등록 프로세스가 간소화되었습니다. 사용자 지정 등록 설명서가 있는 경우 새 화면을 반영하도록 업데이트하려고 합니다. 아래에서 샘플 이미지를 찾을 수 있습니다.
+최종 사용자가 쉽게 등록할 수 있도록 새로운 텍스트가 포함되어 Android용 회사 포털 앱의 등록 프로세스가 간소화되었습니다. 사용자 지정 등록 설명서가 있는 경우 새 화면을 반영하도록 업데이트할 수 있습니다. 아래에서 샘플 이미지를 찾을 수 있습니다.
 
 |이전|이러한|
 |---|---|
@@ -465,7 +470,7 @@ __다른 디바이스에서 로그인__ 링크를 누릅니다.
 
 ### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>Windows 10 크리에이터스 업데이트와 동기화하는 앱 개선 사항 <!--676505-->
 
-Windows 10용 회사 포털 앱은 이제 Windows 10 크리에이터스 업데이트(버전 1703)가 설치되어 있는 디바이스의 앱 설치 요청 동기화를 자동으로 시작합니다. 이렇게 하면 "동기화 보류 중" 상태에 있는 동안의 앱 설치 지연 문제를 줄일 수 있습니다. 사용자가 수동으로 앱 내에서 동기화를 시작할 수도 있습니다.
+Windows 10용 회사 포털 앱은 이제 Windows 10 크리에이터스 업데이트(버전 1703)가 설치되어 있는 디바이스의 앱 설치 요청 동기화를 자동으로 시작합니다. 이렇게 하면 "동기화 보류 중" 상태에 있는 동안의 앱 설치 지연 문제를 줄일 수 있습니다. 또한 사용자는 앱 내에서 수동으로 동기화를 시작할 수 있습니다.
 
 ![Microsoft Word 다운로드가 회사 포털 앱 스토어에서 보류 중 상태인 Windows 10 회사 포털 앱 이미지](./media/whats-new-app-ui/w10_download_pending_after_1706.png)
 
@@ -530,11 +535,11 @@ Managed Browser 앱의 Android 및 iOS 버전 모두에서 아이콘이 업데�
 </body>
 </html>
 
-회사 포털도 앱의 Android, iOS 및 Windows 버전에 대해 업데이트된 아이콘을 수신하므로 EM+S의 다른 앱과의 일관성을 개선합니다. 이러한 아이콘은 4월부터 5월 말까지 여러 플랫폼에서 점진적으로 출시됩니다.
+회사 포털도 앱의 Android, iOS 및 Windows 버전에 대해 업데이트된 아이콘을 수신하므로 EM+S의 다른 앱과의 일관성을 개선합니다. 이러한 아이콘은 4월부터 5월 말까지 점진적으로 전체 플랫폼에 릴리스됩니다.
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 회사 포털의 로그인 진행률 표시기 <!--953374-->
 
-Android 회사 포털 앱의 업데이트에는 사용자가 앱을 시작하거나 다시 시작할 때 로그인 진행률 표시기가 표시됩니다. 표시기에서는 "연결 중..."에서부터 "로그인 중...", "보안 요구 사항을 확인하는 중..."까지 새로운 상태를 진행한 후 사용자가 앱에 액세스할 수 있도록 허용합니다.
+Android 회사 포털 앱의 업데이트에는 사용자가 앱을 시작하거나 다시 시작할 때 로그인 진행률 표시기가 표시됩니다. 사용자가 앱에 액세스하도록 허용하기 전에 표시기가 “연결 중...”, “로그인 중...”, “보안 요구 사항 확인 중...”과 같이 새로운 상태로 진행됩니다.
 
 <html>
 <body>
@@ -561,7 +566,7 @@ __이전__ ![상태가 ‘설치 중’으로 표시되는 이전 버전의 로�
 
 __이후__ ![이제 설치 진행률 표시줄이 표시되는 업데이트된 버전의 로딩 화면 이미지](./media/whats-new-app-ui/cp_win10_install_status_after_1704.png)
 
-## <a name="february-2017"></a>2017 년 2월
+## <a name="february-2017"></a>2017년 2월
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Android용 회사 포털 앱의 새 사용자 환경 <!--621622, announced 1702-->
 3월부터, Android용 회사 포털 앱이 [material design guidelines](https://material.io/guidelines/material-design/introduction.html)(재료 디자인 지침)에 따라 모양과 느낌이 더욱 세련되어집니다. 이러한 향상된 사용자 환경에는 다음이 포함됩니다.

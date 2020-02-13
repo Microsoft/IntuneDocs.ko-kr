@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 02/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa0156d059513a2586eb7d8866d23508be0af10c
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: 8d5082376c42ff3b92e3979a53b6deac3e59c88e
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886671"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075810"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Intune에 Windows 10용 Microsoft Edge 추가
 
 앱을 배포, 구성, 모니터링 또는 보호하려면 앱을 Intune에 추가해야 합니다. 사용 가능한 [앱 유형](~/apps/apps-add.md#app-types-in-microsoft-intune) 중 하나는 Microsoft Edge ‘버전 77 이상’입니다.  Intune에서 이 앱 유형을 선택하면 Windows 10을 실행하고 직접 관리하는 디바이스에 Microsoft Edge ‘버전 77 이상’을 할당하고 설치할 수 있습니다. 
 
 > [!IMPORTANT]
-> 이 앱 유형은 Windows 10용 안정, Beta 및 Dev 채널을 제공하는 **공개 미리 보기**입니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. Intune은 기존의 모든 Microsoft Edge 설치를 검색합니다. 사용자 컨텍스트에 설치된 경우 시스템 설치가 덮어씁니다. 시스템 컨텍스트에 설치된 경우 설치 성공이 보고됩니다. 또한 Microsoft Edge의 자동 업데이트는 기본적으로 **On** 상태이며 Microsoft Edge는 제거할 수 없습니다.
+> 이 앱 유형은 Windows 10용 안정, Beta 및 Dev 채널을 제공하는 **공개 미리 보기**입니다. 배포는 영어(EN)로만 가능하지만 최종 사용자가 브라우저의 **설정** > **언어**에서 표시 언어를 변경할 수 있습니다. Microsoft Edge는 시스템 컨텍스트 및 유사한 아키텍처(x86 OS의 x86 앱 및 x64 OS의 x64 앱)에 설치된 Win32 앱입니다. Intune은 기존의 모든 Microsoft Edge 설치를 검색합니다. 사용자 컨텍스트에 설치된 경우 시스템 설치가 덮어씁니다. 시스템 컨텍스트에 설치된 경우 설치 성공이 보고됩니다. 또한 Microsoft Edge의 자동 업데이트는 기본적으로**On** 상태입니다.
 
 > [!NOTE]
 > Microsoft Edge ‘버전 77 이상’은 macOS에서도 사용할 수 있습니다. 
@@ -92,6 +92,28 @@ ms.locfileid: "76886671"
 
 > [!NOTE]
 > 현재 Microsoft Edge 배포의 할당을 취소하는 경우 해당 배포는 디바이스에서 유지됩니다.
+
+## <a name="uninstall-the-app"></a>앱 제거
+
+사용자의 디바이스에서 Microsoft Edge를 제거해야 하는 경우 다음 단계를 사용합니다.
+
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **앱** > **모든 앱** > ’Microsoft Edge’ 앱 > **할당** > **그룹 추가**를 선택합니다. 
+3. **그룹 추가** 창에서 **제거**를 선택합니다.
+
+    > [!NOTE]
+    > 이전에 Intune에서 동일한 배포를 사용하여 **등록된 디바이스에 사용 가능** 또는 **필수** 할당을 통해 디바이스에 애플리케이션을 설치한 경우 선택한 그룹의 디바이스에서 앱이 제거됩니다.
+4. 이 앱 할당으로 인해 영향을 받는 사용자 그룹을 선택하려면 **포함되는 그룹**을 선택합니다.
+5. 제거 할당을 적용하려는 그룹을 선택합니다.
+6. **그룹 선택** 창에서 **선택**을 클릭합니다.
+7. 할당을 설정하려면 **할당** 창에서 **확인**을 클릭합니다.
+8. 이 앱 할당에서 영향을 주지 않도록 사용자 그룹을 제외하려면 **그룹 제외**를 선택합니다.
+9. 그룹을 제외하도록 선택한 경우, **그룹 선택**에서 **선택**을 선택합니다.
+10. **그룹 추가** 창에서 **확인**을 선택합니다.
+11. 앱 **할당** 창에서 **저장**을 선택합니다.
+
+> [!IMPORTANT]
+> 앱을 제거하려면 제거되도록 지정하기 전에 설치에 대한 멤버 또는 그룹 할당을 제거해야 합니다. 앱 설치 및 앱 제거 모두에 그룹을 할당하면 앱은 그대로 유지되며 제거되지 않습니다.
 
 ## <a name="troubleshooting"></a>문제 해결
 **Windows 10용 Microsoft Edge 버전 77 이상:**<br>

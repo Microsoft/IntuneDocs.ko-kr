@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bc511669ec8a88523581b3afbcca161d5208934
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956217"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051629"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Apple Volume Purchase Program을 통해 구매한 iOS 및 macOS 앱을 관리하는 방법
 
@@ -130,6 +130,11 @@ Apple Business Manager나 Apple School Manager에서 구매된 기존 VPP 콘텐
 
 >[!NOTE]
 >사용 가능한 배포 의도는 디바이스 그룹에 대해서는 지원되지 않고 사용자 그룹에 대해서만 지원됩니다. 표시되는 앱 목록은 토큰과 관련이 있습니다. 여러 개의 VPP 토큰과 연결된 앱이 있을 경우 동일한 앱이 각 토큰마다 한 번씩, 여러 번 표시됩니다.
+
+> [!NOTE]  
+> Intune(또는 해당 문제에 대한 다른 MDM)은 실제로 VPP 앱을 설치하지 않습니다. 대신 Intune은 VPP 계정에 연결하여 어떤 디바이스에 어떤 앱 라이선스를 할당할지 Apple에 알려줍니다. 이제부터 실제 설치는 모두 Apple과 디바이스 사이에서 처리됩니다.
+> 
+> [Apple MDM 프로토콜 참조, 135페이지](https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf)
 
 ## <a name="end-user-prompts-for-vpp"></a>VPP에 대한 최종 사용자 프롬프트
 

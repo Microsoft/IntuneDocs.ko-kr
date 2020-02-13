@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545959"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075708"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Intune을 사용하여 Mobile Threat Defense 앱 보호 정책 만들기
 
@@ -49,7 +49,7 @@ MTD를 사용한 앱 보호 정책에 대한 필수 구성 요소:
 
 [iOS/iPadOS 또는 Android용 애플리케이션 보호 정책 만들기](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps) 절차를 사용하고 *앱*, *조건부 시작* 및 *할당* 페이지에 대한 다음 정보를 사용합니다.
 
-- **앱**: 사용하는 Mobile Threat Defense 파트너에 대한 앱을 선택합니다.
+- **앱**: 앱 보호 정책의 대상으로 지정하려는 앱을 선택합니다. 이 기능 집합의 경우 선택한 모바일 위협 방어 공급업체의 디바이스 위험 평가에 따라 이러한 앱이 차단되거나 선택적으로 초기화됩니다. 
 - **조건부 시작**:  *디바이스 조건* 아래에서 드롭다운 상자를 사용하여 **허용되는 최대 장치 위협 수준**을 선택합니다.
 
   위협 수준 **값** 옵션:

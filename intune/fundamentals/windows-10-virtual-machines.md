@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9afaf2c8a63bfaed1fdb593baf42c8fa258d7893
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 486ca7eae1b1e8b016f44c735ec04a23145421a8
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74263119"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124982"
 ---
 # <a name="using-windows-10-virtual-machines-with-intune"></a>Intune에서 Windows 10 가상 머신 사용
 
@@ -33,7 +33,7 @@ Intune을 사용하여 Windows 10 VM을 관리하는 경우 다음 사항을 염
 
 ## <a name="enrollment"></a>등록
 - 주문형 세션 호스트 가상 머신은 Intune으로 관리하지 않는 것이 좋습니다. 각 VM은 만들 때 등록해야 합니다. 또한 정기적으로 VM을 삭제하면 분리된 디바이스 레코드를 [정리](../remote-actions/devices-wipe.md#automatically-delete-devices-with-cleanup-rules)할 때까지 Intune에 남아 있게 됩니다. 
-- Windows Autopilot 자동 배포 모드는 TPM(신뢰할 수 있는 플랫폼 모듈)이 필요하기 때문에 지원되지 않습니다. 
+- Windows Autopilot 자체 배포 및 화이트 글러브 배포 유형은 TPM(신뢰할 수 있는 플랫폼 모듈)이 필요하기 때문에 지원되지 않습니다. 
 - RDP를 사용해야만 액세스할 수 있는 VM(예: Azure에서 호스트되는 VM)에서는 OOBE(첫 실행 경험) 등록이 지원되지 않습니다. 이러한 제한 사항은 다음을 의미합니다.
     - Windows Autopilot 및 상업적 OOBE가 지원되지 않습니다.
     - 디바이스 컨텍스트 정책에 대한 등록 상태 페이지 옵션이 지원되지 않습니다.

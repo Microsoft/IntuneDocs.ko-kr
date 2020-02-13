@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,22 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059969"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124812"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune의 전송 최적화 설정
 
-Intune이 있으면 Windows 10 디바이스에 전송 최적화 설정을 사용하여 디바이스로 애플리케이션 및 업데이트를 다운로드할 때 대역폭 소비를 줄일 수 있습니다. 전송 최적화는 디바이스 구성 프로필의 일부로 구성됩니다.  
+Intune이 있으면 Windows 10 디바이스에 전송 최적화 설정을 사용하여 디바이스로 애플리케이션 및 업데이트를 다운로드할 때 대역폭 소비를 줄일 수 있습니다. 디바이스 구성 프로필의 일부로 전송 최적화를 설정할 수 있습니다.  
 
 이 문서에서는 디바이스 구성 프로필의 일부로 전송 최적화 설정을 구성 는 방법을 설명합니다. 프로필을 만든 후에는 해당 프로필을 Windows 10 디바이스에 할당 또는 배포합니다. 
 
-Intune에서 지원하는 전송 최적화 설정 목록은 [Intune의 전송 최적화 설정](../delivery-optimization-settings.md)을 참조하세요.  
+Intune에서 지원하는 전송 최적화 설정 목록을 보려면 [Intune의 전송 최적화 설정](../delivery-optimization-settings.md)을 참조하세요.  
 
 Windows 10의 전송 최적화에 대한 자세한 내용은 Windows 설명서의 [전송 최적화 업데이트](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)를 참조하세요.  
-
-> [!NOTE]
-> **소프트웨어 업데이트 - Windows 10 업데이트 링**은 **배달 최적화** 설정으로 대체됩니다. 기존 업데이트 링은 **배달 최적화** 설정을 사용하도록 변경할 수 있습니다. [기존 업데이트 링을 전송 최적화로 이동](#move-existing-update-rings-to-delivery-optimization)(본 문서의 내용)
 
 ## <a name="create-the-profile"></a>프로필 만들기
 
@@ -54,11 +51,16 @@ Windows 10의 전송 최적화에 대한 자세한 내용은 Windows 설명서�
 
 프로필이 만들어지고 목록에 표시됩니다. 다음으로, [프로필을 할당](device-profile-assign.md)하고 [상태를 모니터링](device-profile-monitor.md)합니다.
 
-## <a name="move-existing-update-rings-to-delivery-optimization"></a>기존 업데이트 링을 배달 최적화로 이동
+<!-- ## Move existing update rings to delivery optimization
 
-**전송 최적화** 설정은 **소프트웨어 업데이트 - Windows 10 업데이트 링**을 대체합니다. 기존 업데이트 링은 **배달 최적화** 설정을 사용하도록 쉽게 변경할 수 있습니다. 전송 최적화 프로필을 만들 때 동일한 설정을 유지하려면 동일한 *전송 최적화 다운로드 모드*를 사용한 다음, 이미 사용 중인 설정과 똑같이 설정하면 됩니다. 하지만 전송 최적화 프로필로 관리할 수 있는 추가 설정을 최대한 활용하도록 전송 최적화 설정을 다시 구성할 수도 있습니다.
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To maintain the same settings when you create a delivery optimization profile, use the same *Delivery optimization download mode* and then set the same settings as you already use. However, you can choose to reconfigure delivery optimization settings to take advantage of the full range of addition settings that the Delivery Optimization profile can manage. 
+-->
 
-1. 배달 최적화 구성 프로필을 만듭니다.
+## <a name="remove-delivery-optimization-from-windows-10-update-rings"></a>Windows 10 업데이트 링에서 전송 최적화 제거
+
+전송 최적화는 이전에 소프트웨어 업데이트 링의 일부로 구성되었습니다. 2019 년 2월부터 전송 최적화 설정이 전송 최적화 장치 구성 프로필의 일부로 구성되어 디바이스에 소프트웨어 업데이트 전송 이상의 영향을 주는 추가 설정이 포함됩니다. 아직 하지 않았다면 전송 최적화 설정을 ‘구성되지 않음’으로 설정하여 업데이트 링에서 제거한 후 전송 최적화 프로필을 사용하여 사용 가능한 옵션을 더 광범위하게 관리할 수 있습니다. 
+
+1. 전송 최적화 디바이스 구성 프로필 만들기:
 
     1. Microsoft Endpoint Manager 관리 센터에서 **디바이스** > **구성 프로필** > **프로필 만들기**를 선택합니다.
     2. 다음 속성을 입력합니다.

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/07/2019
+ms.date: 02/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,31 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39775f3acf1a1c3da7c836afe1699958560d509a
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: b3fe6d1e2a0dcdeafad56d3facccb96f5d0721e4
+ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691843"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074668"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록
 
-Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 iOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. DEP를 사용하면 터치하지 않고도 많은 수의 디바이스를 등록할 수 있습니다. iPhone 및 iPad와 같은 디바이스를 사용자에게 직접 제공할 수 있습니다. 사용자가 디바이스를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 디바이스가 관리용으로 등록됩니다.
+Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 iOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. DEP를 사용하면 터치하지 않고도 많은 수의 디바이스를 등록할 수 있습니다. iPhone, iPad 및 MacBook과 같은 디바이스를 사용자에게 직접 제공할 수 있습니다. 사용자가 디바이스를 켜면 Apple 제품의 전형적인 OOBE(out-of-box-experience)를 포함하는 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 디바이스가 관리용으로 등록됩니다.
 
-DEP 등록을 사용하도록 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 관리용으로 Intune에 디바이스를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다. DEP 등록은 [디바이스 등록 관리자](device-enrollment-manager-enroll.md) 계정에서 사용할 수 없습니다.
+DEP 등록을 활성화하려면 Intune과 ABM(Apple Business Manager) 또는 ASM(Apple School Manager) 포털을 모두 사용해야 합니다. ABM/ASM에서 관리용으로 Intune에 디바이스를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 DEP 등록 프로필을 Intune에서 만듭니다. DEP 등록은 [디바이스 등록 관리자](device-enrollment-manager-enroll.md) 계정에서 사용할 수 없습니다.
 
 > [!NOTE]
-> DEP는 최종 사용자가 제거할 수 없는 디바이스 구성을 설정합니다. 따라서 [DEP로 마이그레이션](../fundamentals/migration-guide-considerations.md)하기 전에 디바이스를 초기화하여 기본(신규) 상태로 되돌려 놓아야 합니다.
+> DEP는 최종 사용자가 절대 제거할 수 없는 디바이스 구성을 설정합니다. 따라서 [DEP로 마이그레이션](../fundamentals/migration-guide-considerations.md)하기 전에 디바이스를 초기화하여 기본(신규) 상태로 되돌려 놓아야 합니다.
 
 ## <a name="dep-and-the-company-portal"></a>DEP 및 회사 포털
 
-DEP 등록은 회사 포털 앱의 앱 스토어 버전과 호환되지 않습니다. DEP 디바이스에서 회사 포털 앱에 대한 액세스 권한을 사용자에게 제공할 수 있습니다. 액세스 권한을 부여하려면 DEP 프로필에서 **VPP(대량 구매 프로그램)로 회사 포털 설치**를 사용하여 디바이스에 앱을 푸시합니다. 자세한 내용은 [Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)을 참조하세요.
+DEP 등록은 회사 포털 앱의 앱 스토어 버전과 호환되지 않습니다. DEP 디바이스에서 회사 포털 앱에 대한 액세스 권한을 사용자에게 제공할 수 있습니다. 사용자가 디바이스에서 사용하려는 회사 앱을 선택하거나 최신 인증을 사용하여 등록 프로세스를 완료할 수 있도록 이 액세스를 제공할 수 있습니다. 
 
- DEP에 이미 등록된 디바이스에 회사 포털 앱을 설치할 수 있습니다. 이렇게 하려면 [애플리케이션 구성 정책](../apps/app-configuration-policies-use-ios.md)이 적용된 Intune을 통해 회사 포털 앱을 배포합니다.
+등록 중에 최신 인증을 사용하도록 설정하려면 DEP 프로필에 **VPP로 회사 포털 설치**를 사용하여 앱을 디바이스에 푸시합니다. 자세한 내용은 [Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)을 참조하세요.
+
+회사 포털을 자동으로 업데이트하고 DEP에 이미 등록된 디바이스에서 회사 포털 앱을 제공할 수 있도록 하려면 회사 포털 앱을 [애플리케이션 구성 정책](../apps/app-configuration-policies-use-ios.md)이 적용된 필수 VPP(Volume Purchase Program) 앱으로서 Intune을 통해 배포합니다.
 
 ## <a name="what-is-supervised-mode"></a>감독됨 모드란?
 
-Apple은 iOS 5에서 감독됨 모드를 도입했습니다. 감독됨 모드에서 iOS 디바이스를 더 세밀하게 관리할 수 있습니다. 이와 같이 회사 소유 디바이스에 특히 유용합니다. Intune은 Apple DEP(디바이스 등록 프로그램)의 일부로 감독됨 모드의 디바이스를 구성하도록 지원합니다.
+Apple은 iOS 5에서 감독됨 모드를 도입했습니다. 감독 모드의 iOS 디바이스는 화면 캡처 차단, App Store에서 앱 설치 차단 등의 더 많은 제어로 관리할 수 있습니다. 이와 같이 회사 소유 디바이스에 특히 유용합니다. Intune은 Apple DEP(디바이스 등록 프로그램)의 일부로 감독됨 모드의 디바이스를 구성하도록 지원합니다.
 
 iOS 11에서는 감독되지 않는 DEP 디바이스에 대한 지원이 중단됩니다. iOS 11 이상에서는 DEP 구성 디바이스가 항상 감독됩니다. 향후 iOS 릴리스에서는 DEP is_supervised 플래그가 무시됩니다.
 
@@ -63,7 +65,7 @@ iOS 11에서는 감독되지 않는 DEP 디바이스에 대한 지원이 중단�
 
 iOS 디바이스를 DEP에 등록하려면 Apple의 DEP 토큰(.p7m) 파일이 필요합니다. Intune에서는 이 토큰을 통해 회사에서 소유한 DEP 디바이스에 대한 정보를 동기화할 수 있습니다. 또한 Apple에 등록 프로필을 업로드하고 이러한 프로필에 디바이스를 할당할 수 있습니다.
 
-Apple DEP 포털을 사용하여 DEP 토큰을 만듭니다. 관리용으로 Intune에 디바이스를 할당하는 데도 DEP 포털을 사용할 수 있습니다.
+Apple Business Manager 또는 Apple School Manager 포털을 사용하여 토큰을 만듭니다. 관리용으로 Intune에 디바이스를 할당하는 데도 ABM/ASM 포털을 사용할 수 있습니다.
 
 > [!NOTE]
 > Azure로 마이그레이션하기 전에 Intune 클래식 포털에서 토큰을 삭제하면 Intune이 삭제된 Apple DEP 토큰을 복원할 수 있습니다. Azure Portal에서 DEP 토큰을 다시 삭제할 수 있습니다.
@@ -91,7 +93,7 @@ Apple DEP 포털을 사용하여 DEP 토큰을 만듭니다. 관리용으로 Int
 
 5. **&lt;ServerName&gt; 추가** 대화 상자가 열리고 **공개 키 업로드**가 표시됩니다. **파일 선택...** 을 선택합니다. .pem 파일을 업로드하고 **다음**을 선택합니다.
 
-6. **배포 프로그램**&gt;**디바이스 등록 프로그램**&gt;**디바이스 관리**로 이동합니다.
+6. **배포 프로그램** &gt; **디바이스 등록 프로그램** &gt; **디바이스 관리**로 이동합니다.
 7. **디바이스 선택 기준**에서 디바이스를 식별하는 방법을 지정합니다.
     - **일련 번호**
     - **주문 번호**
@@ -101,7 +103,7 @@ Apple DEP 포털을 사용하여 DEP 토큰을 만듭니다. 관리용으로 Int
 
 8. **작업 선택**에서 **서버에 할당**, Microsoft Intune에 지정된 &lt;ServerName&gt; 및 **확인**을 순서대로 선택합니다. Apple Portal에서 관리를 위해 지정된 디바이스를 Intune 서버에 할당한 다음 **할당 완료**를 표시합니다.
 
-   Apple Portal에서 **배포 프로그램**&gt;**장비 등록 프로그램**&gt;**할당 기록 보기**로 이동하여 디바이스 목록 및 해당 MDM 서버 할당을 확인합니다.
+   Apple Portal에서 **배포 프로그램** &gt; **장비 등록 프로그램** &gt; **할당 기록 보기**로 이동하여 디바이스 목록 및 해당 MDM 서버 할당을 확인합니다.
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3단계: 이 토큰을 만드는 데 사용되는 Apple ID 저장
 
@@ -137,7 +139,7 @@ Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 �
 4. **다음: 디바이스 관리 설정**을 선택합니다.
 
 5. **사용자 선호도**에서 이 프로필이 있는 디바이스가 할당된 사용자로 등록되어야 하는지, 할당된 사용자 없이 등록되어야 하는지 선택합니다.
-    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털을 사용하려는 디바이스의 경우 이 옵션을 선택합니다. ADFS 및 등록 프로필을 사용하는데 **Authenticate with Company Portal instead of Setup Assistant**(설정 도우미 대신 회사 포털로 인증)가 **아니요**로 설정된 경우 [WS-Trust 1.3 사용자 이름/혼합 엔드포인트](https://technet.microsoft.com/library/adfs2-help-endpoints)([자세한 정보](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint))가 필요합니다.
+    - **사용자 선호도를 사용하여 등록** - 사용자에게 속하고 앱 설치 같은 서비스에 회사 포털을 사용하려는 디바이스의 경우 이 옵션을 선택합니다. ADFS 및 등록 프로필을 사용하는 데 **Authenticate with Company Portal instead of Setup Assistant**(설정 도우미 대신 회사 포털로 인증)가 **아니요**로 설정된 경우 [WS-Trust 1.3 사용자 이름/혼합 엔드포인트](https://technet.microsoft.com/library/adfs2-help-endpoints)([자세한 정보](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint))가 필요합니다.
 
     - **사용자 선호도를 사용하지 않고 등록** - 단일 사용자로 등록되지 않은 디바이스의 경우 이 옵션을 선택합니다. 로컬 사용자 데이터에 액세스하지 않는 디바이스에 대해 이 옵션을 사용합니다. 회사 포털 앱과 같은 앱이 작동하지 않습니다.
 
@@ -241,7 +243,7 @@ Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 �
 ## <a name="sync-managed-devices"></a>관리되는 디바이스 동기화
 이제 Intune에 디바이스 관리 권한이 있으므로 Intune을 Apple과 동기화하여 Azure 포털의 Intune에서 관리되는 디바이스를 확인할 수 있습니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰** > 목록에서 토큰 선택 > **디바이스** > **동기화**를 선택합니다. ![등록 프로그램 디바이스 노드 및 동기화 링크의 스크린샷](./media/device-enrollment-program-enroll-ios/image06.png)
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스**> **iOS**>**iOS 등록** >**등록 프로그램 토큰** > 목록에서 토큰 선택 > **디바이스** >**동기화**를 선택합니다. ![등록 프로그램 디바이스 노드 및 동기화 링크의 스크린샷](./media/device-enrollment-program-enroll-ios/image06.png)
 
    허용되는 등록 프로그램 트래픽에 대한 Apple 약관을 준수하기 위해 Intune에서는 다음과 같은 제한 사항을 적용합니다.
    - 전체 동기화는 7일마다 한 번씩만 실행할 수 있습니다. 전체 동기화 중에 Intune은 Intune에 연결된 Apple MDM 서버에 할당된 일련 번호의 전체 업데이트된 목록을 가져옵니다. Intune 포털에서 DEP 디바이스를 삭제한 경우에는 DEP 포털의 Apple MDM 서버에서 할당을 해제해야 합니다. 할당 해제하지 않으면 전체 동기화를 실행한 다음에야 Intune으로 다시 가져올 수 있습니다.   

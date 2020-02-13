@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c916e5cfb09da50bfcbfbe2ac4b094172357e80
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 28357a87ca429f808da1cfa063307f24e7c3ed7c
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812393"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124924"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune 보호 앱  
 
@@ -95,6 +95,7 @@ ms.locfileid: "76812393"
 | **Microsoft용 PrinterOn**<p><img alt="Partner app - PrinterOn for Microsoft icon" src="./media/apps-supported-intune-apps/icon-p-printeron.png" width="100"> | PrinterOn의 무선 모바일 인쇄 솔루션을 사용하면 사용자가 보안 네트워크를 통해 언제 어디서나 원격으로 인쇄할 수 있습니다.| [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.printeron.droid.phone),<br>[App Store 링크(iOS)](https://itunes.apple.com/us/app/printeron-for-microsoft/id1258715414?mt=8) | 
 | **Qlik Sense Mobile**<p><img alt="Partner app - Qlik Sense Mobile icon" src="./media/apps-supported-intune-apps/icon-p-qlik.png" width="100"> | Qlik Sense는 자체 분석 분야에서 시장을 선도하는 차세대 애플리케이션입니다. Qlik의 특허받은 결합 기술을 사용하면 쿼리 기반 도구와 달리 제약 없이 다양한 출처의 데이터를 쉽게 결합하고 자유롭게 검토할 수 있습니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.qlik.qliksense.mobile),<br>[App Store 링크(iOS)](https://apps.apple.com/us/app/qlik-sense-mobile/id1217049362) | 
 | **SAP Fiori**<p><img alt="Partner app - SAP Fiori icon" src="./media/apps-supported-intune-apps/icon-p-sap-fiori.png" width="100"> | iPhone 및 iPad용 SAP Fiori Client 모바일 앱을 사용하여 언제 어디서나 가장 일반적인 비즈니스 작업을 처리하여 일일 생산성을 높일 수 있습니다. 750가지가 넘는 SAP Fiori 앱의 웹 버전에 맞게 개선된 모바일 런타임을 사용하여 향상된 첨부 파일 처리 및 전체 화면 작업으로 차세대 모바일 환경을 제공합니다. 또한 Intune 모바일 앱 관리를 지원하도록 준비된 SAP Fiori 모바일 서비스를 사용하여 고객이 빌드한 사용자 지정 SAP Fiori 모바일 앱에 액세스합니다. | [App Store 링크(iOS)](https://itunes.apple.com/us/app/sap-fiori-client/id824997258?mt=8) |  
+| **Intune용 Smartcrypt**<p><img alt="Partner app - Smartcrypt for Intune icon" src="./media/apps-supported-intune-apps/icon-p-smartcrypt.png" width="100"> | Intune용 Smartcrypt는 Intune 환경에서 작업하는 기존 PKWARE 고객을 위해 특별히 설계되었습니다. Smartcrypt를 사용하면 이동 중에도 작업할 수 있습니다. 빠르고 안전하며 사용이 간편하므로 어디에서나 생산성을 높일 수 있습니다. Smartcrypt를 갖고 있는지 확실하지 않은 경우 회사의 IT 관리자에게 문의하세요. Smartcrypt를 사용하면 다음을 수행할 수 있습니다. Smartkeys를 사용하여 파일을 암호화 및 해독하고, X.509 디지털 인증서를 사용하여 보관 파일을 해독하고, X.509 디지털 인증서를 사용하여 디지털 서명 및 데이터 인증을 수행하고, AE2를 포함한 강력한 암호를 사용하여 파일을 암호화 및 해독하고, 기존 Active Directory 자격 증명으로 로그인하고, 암호화되지 않은 zip 보관 파일을 만들고 볼 수 있습니다. Smartcrypt는 핵심 데이터를 사용하여 데이터가 사용, 공유 또는 저장되는 모든 곳에서 취약점을 제거합니다. 30년 가까운 기간 동안 PKWARE는 3만여 기업 고객 및 200여 정부 기관에게 암호화 및 압축 소프트웨어를 제공했습니다. iOS 및 Android용으로 사용 가능합니다. | [App Store 링크(iOS)](https://apps.apple.com/app/smartcrypt-for-intune/id1489232256) |  
 | **말하는 이메일**<p><img alt="Partner app - Speaking Email icon" src="./media/apps-supported-intune-apps/icon-p-speaking-email-icon.png" width="100">   | 이동 중에도 이메일을 읽어 주어 하루에 더 많은 시간을 확보해 줍니다. 운전 중에 사용하기에 안전하도록 설계된 음성 명령 및 간단한 제스처는 이동 중에 보관, 표시 또는 회신할 수 있는 기능을 제공합니다.<p>스마트 콘텐츠 검색은 고지 사항, 회신 제목 및 이메일 서명을 건너뛰고 군더더기 없이 콘텐츠만 말합니다.<p>직원은 Intune을 통해 로그인하여 Office 365 Exchange 이메일에 액세스할 수 있습니다. | [App Store 링크(iOS)](https://itunes.apple.com/app/apple-store/id991406423?ct=intune) | 
 | **Synergi Life**<p><img alt="Partner app - Synergi Life icon" src="./media/apps-supported-intune-apps/icon-p-synergi-life.png" width="100"> | Synergi Life의 확장 버전인 Synergi Life Mobile App을 통해 사용자는 자신의 휴대폰을 사용하여 스냅샷을 찍고 음성 녹음을 하여 언제, 어디서나 관찰 및 인시던트 보고서를 만들 수 있습니다.<p>Synergi Life(이전의 Synergi)는 모든 비준수, 인시던트, 위험, 위험 분석, 감사, 평가 및 개선 제안을 관리하는 위험 및 QHSE 관리를 위한 완벽한 비즈니스 솔루션입니다.<p>Synergi Life Mobile App을 사용하려면 Synergi Life 위험 및 QHSE 관리 시스템의 허가된 사용자여야 하며 필요한 백 엔드 라이선스 소프트웨어 및 서비스가 있어야 합니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.dnv.mobilesolutions.synergimobile.uibase), [App Store 링크(iOS)](https://itunes.apple.com/us/app/synergi-life/id641181737)  |  
 | **Tact for Intune**<p><img alt="Partner app - Tact for Intune icon" src="./media/apps-supported-intune-apps/icon-p-tact-icon.png" width="100"> | Tact for Intune은 Salesforce.com, 이메일, 달력, 지도 및 기타 일상적인 도구의 데이터를 사용자에게 친숙한 대화형 환경으로 통합하는 최초의 CRM 및 영업 도우미입니다. AI 기반의 Tact는 판매 직원에 대한 관리 작업을 자동화하고, 다른 데이터 원본과 CRM을 통합하여 단일 창을 제공하고, 각 판매자에게 인텔리전스를 푸시하여 고성능 동작을 실현할 수 있게 해 줍니다. 이제 기업은 Tact for Intune을 사용하여 애플리케이션 계층에서 엔터프라이즈급 보안을 유지하면서 판매자 생산성을 높이고 고객 데이터를 풍부화하며 CRM 도입을 향상시킬 수 있습니다. | [Google Play 링크(Android)](https://play.google.com/store/apps/details?id=com.tactile.tact), [App Store 링크(iOS)](https://apps.apple.com/us/app/tact-for-intune/id1477117416?mt=8)  |  

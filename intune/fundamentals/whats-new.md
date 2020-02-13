@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/03/2020
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f46b8c7f0f57ab7831d6487495946aa9326b2d5
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977787"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125033"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -60,8 +60,14 @@ ms.locfileid: "76977787"
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>앱 관리
 
+#### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Windows 10 디바이스에서 Microsoft Edge 버전 77 이상<!-- 5843584 -->
+이제 Intune은 Windows 10 디바이스에서 Microsoft Edge 버전 77 이상 제거를 지원합니다. 자세한 내용은 [Microsoft Intune에 Microsoft Edge for Windows 10 추가](~/apps/apps-windows-edge.md)를 참조하세요.
+
 #### <a name="company-portal-app-improved-performance---6178652---"></a>회사 포털 앱 향상된 성능<!-- 6178652 -->
 Surface Pro X와 같이 ARM64 프로세서를 사용하는 디바이스의 향상된 성능을 지원하도록 회사 포털 앱이 업데이트되었습니다. 이전에는 에뮬레이트된 ARM32 모드에서 회사 포털이 작동했습니다. 이제 회사 포털 앱은 기본적으로 ARM64에 대해 컴파일됩니다. 회사 포털 앱에 대한 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](~/apps/company-portal-app.md)을 참조하세요.
+
+#### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>회사 포털에서 화면이 제거됨, Android 회사 프로필 등록<!--6103987 -->
+사용자 환경을 간소화하기 위해 **다음 단계** 화면이 회사 포털의 Android 회사 프로필 등록 흐름에서 제거되었습니다. [Android 회사 프로필에 등록](/intune-user-help/enroll-device-android-work-profile)으로 이동하여 업데이트된 Android 회사 프로필 등록 흐름을 확인합니다.  
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>2020년 1월 27일이 포함된 주
@@ -69,29 +75,11 @@ Surface Pro X와 같이 ARM64 프로세서를 사용하는 디바이스의 향�
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>앱 관리
 
-#### <a name="new-setting-to-remove-specific-windows-built-in-apps---6184390---"></a>특정 Windows 기본 제공 앱을 제거하는 새 설정<!-- 6184390 -->
-새 Windows 10 디바이스 구성 정책 설정을 사용하여 다음 Windows 기본 제공 앱을 제거할 수 있습니다.
-
-- Mixed Reality 뷰어
-- MSN 날씨
-- 앱 설치 관리자
-- Microsoft 팁
-- 내 Office
-- Microsoft Solitaire Collection 
-- 모바일 요금제
-- 피드백 허브 
-- Xbox 
-- 그루브 음악
-- Mail
-- 일정
-
-Microsoft Endpoint Manager 관리 센터에서 **디바이스** > **구성 프로필** > **프로필 만들기**를 선택합니다. 그런 다음 **Windows 10 이상**을 **플랫폼**으로 선택합니다. **프로필 유형**으로 **디바이스 제한**을 선택합니다. **디바이스 제한** 창에서 **App Store**를 선택합니다. **기본 제공 앱 제거** 옆의 창 아래에서 **제거**를 선택합니다. 기본 제공 앱에 대한 자세한 내용은 [Microsoft Intune에 기본 제공 앱 추가](~/apps/apps-add-built-in.md)를 참조하세요.
-
 #### <a name="intune-support-for-additional-microsoft-edge-version-77-deployment-channel-for-macos---5983950----"></a>macOS용 추가 Microsoft Edge 버전 77 배포 채널에 대한 Intune 지원<!-- 5983950  -->
 이제 Microsoft Intune은 macOS용 Microsoft Edge 앱을 위한 **안정적인** 추가 배포 채널을 지원합니다. **안정** 채널은 엔터프라이즈 환경에서 Microsoft Edge를 광범위하게 배포할 때 권장되는 채널입니다. 6주마다 업데이트되는 각 릴리스는 **Beta** 채널의 향상된 기능을 통합합니다. **안정** 채널과 **Beta** 채널 외에도 Intune은 **Dev** 채널을 지원합니다. 공개 미리 보기는 macOS용 Microsoft Edge 버전 77 이상을 위한 안정 채널과 Dev 채널을 제공합니다. 브라우저의 자동 업데이트가 기본적으로 켜져 있습니다. 자세한 내용은 [Microsoft Intune을 사용하여 macOS 디바이스에 Microsoft Edge 추가](~/apps/apps-edge-macos.md)를 참조하세요.
 
 #### <a name="retirement-of-intune-managed-browser--5728447---"></a>Intune Managed Browser 사용 중지<!--5728447 -->
-Intune Managed Browser가 사용 중지됩니다. 보호된 Intune 브라우저 환경에서 Microsoft Edge를 사용하세요. 자세한 내용은 아래 [알림](~/fundamentals/whats-new.md#notices) 섹션의 '[조치 취하기: 보호된 Intune 브라우저 환경에 Microsoft Edge 사용](~/fundamentals/whats-new.md#take-action-use-microsoft-edge-for-your-protected-intune-browser-experience)' 항목을 참조하세요.
+Intune Managed Browser가 사용 중지됩니다. 보호된 Intune 브라우저 환경에서 Microsoft Edge를 사용하세요. 자세한 내용은 아래 [알림](~/fundamentals/whats-new.md#notices) 섹션의 ‘[조치 취하기: 보호된 Intune 브라우저 환경에서 Microsoft Edge 사용](~/fundamentals/whats-new.md#take-action-use-microsoft-edge-for-your-protected-intune-browser-experience)’ 항목을 참조하세요.
 
 <!-- ########################## -->
 ## <a name="week-of-january-20-2020-2001-service-release"></a>2020년 1월 20일이 포함된 주(2001 서비스 릴리스)
