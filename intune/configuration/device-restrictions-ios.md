@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754578"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051612"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune을 사용하여 기능을 허용하거나 제한하는 iOS 및 iPadOS 디바이스 설정
 
@@ -420,8 +420,6 @@ iOS 9.3 이상 버전을 실행하는 디바이스에 적용됩니다.
   앱 URL을 찾으려면 iTunes App Store를 열고 앱을 검색합니다. 예를 들어 `Microsoft Remote Desktop` 또는 `Microsoft Word`를 검색합니다. 앱을 선택하고 URL을 복사합니다.
 
   또한 iTunes를 사용하여 앱을 찾은 다음, **링크 복사** 작업을 사용하여 앱 URL을 가져올 수 있습니다.
-  
-  번들 ID 찾기에 대한 자세한 내용은 [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)(iOS 앱의 번들 ID를 찾는 방법)을 참조하세요.
 
 - **앱 번들 ID**: 앱의 [앱 번들 ID](bundle-ids-built-in-ios-apps.md)를 입력합니다. 기본 제공 앱과 기간 업무 앱을 표시하거나 숨길 수 있습니다. Apple의 웹 사이트에 [기본 제공 Apple 앱](https://support.apple.com/HT208094) 목록이 있습니다.
 - **앱 이름**: 원하는 앱의 앱 이름을 입력합니다. 기본 제공 앱과 기간 업무 앱을 표시하거나 숨길 수 있습니다. Apple의 웹 사이트에 [기본 제공 Apple 앱](https://support.apple.com/HT208094) 목록이 있습니다.
@@ -559,7 +557,9 @@ iOS 9.3 이상 버전을 실행하는 디바이스에 적용됩니다.
 
 ## <a name="autonomous-single-app-mode"></a>자치 단일 앱 모드
 
-이러한 설정을 사용하여 iOS 디바이스에서 특정 앱을 자체 단일 앱 모드로 실행하도록 구성합니다. 이 모드가 구성되고 앱이 실행되면 디바이스가 잠깁니다. 해당 앱만 실행할 수 있습니다. 예를 들어 사용자가 디바이스에서 시험에 응시할 수 있는 앱을 추가합니다. 앱의 작업이 완료되거나 이 정책을 제거하면 디바이스가 일반 상태로 돌아옵니다.
+해당 설정을 사용하여 iOS/iPadOS 디바이스에서 특정 앱을 자체 단일 앱 모드로 실행하도록 구성합니다. 이 모드가 구성되고 사용자가 구성된 앱 중 하나를 시작하면 디바이스가 해당 앱으로 잠깁니다. 사용자가 허용된 앱을 종료할 때까지 앱/작업 전환이 사용되지 않습니다.
+
+예를 들어 학교 또는 대학교 환경에서는 사용자가 디바이스에서 테스트를 수행할 수 있도록 하는 앱을 추가합니다. 또는 최종 사용자가 인증될 때까지 디바이스를 회사 포털 앱으로 잠급니다. 사용자가 앱 작업을 완료하거나 관리자가 이 정책을 제거하면 디바이스가 정상 상태로 돌아갑니다.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>설정 적용 대상: 자동 디바이스 등록(감독됨)
 
