@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: a727cf03f53ee003c27708a04ad475f0b370c487
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75857046"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415010"
 ---
 # <a name="intune-discovered-apps"></a>Intune 검색된 앱
 
@@ -59,7 +59,7 @@ Intune은 테넌트의 Intune 등록 디바이스에서 검색된 앱의 집계�
 | Windows 8.1 | 관리되는 앱만 | 관리되는 앱만 | 디바이스 등록 시부터 7일마다 |
 | Windows Phone 8 | 관리되는 앱만 | 관리되는 앱만 | 디바이스 등록 시부터 7일마다 |
 | Windows RT | 관리되는 앱만 | 관리되는 앱만 | 디바이스 등록 시부터 7일마다 |
-| iOS | 관리되는 앱만 | 디바이스에 설치되는 모든 앱 | 디바이스 등록 시부터 7일마다 |
+| iOS/iPadOS | 관리되는 앱만 | 디바이스에 설치되는 모든 앱 | 디바이스 등록 시부터 7일마다 |
 | macOS | 관리되는 앱만 | 디바이스에 설치되는 모든 앱 | 디바이스 등록 시부터 7일마다 |
 | Android | 관리되는 앱만 | 디바이스에 설치되는 모든 앱 | 디바이스 등록 시부터 7일마다 |
 | Android Enterprise | 관리되는 앱만 | 작업 프로필에 설치된 앱만 | 디바이스 등록 시부터 7일마다 |
