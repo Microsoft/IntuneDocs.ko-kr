@@ -12,12 +12,12 @@ metadata:
   author: ErikjeMS
   ms.author: erikje
   ms.date: 09/13/2019
-  ms.openlocfilehash: 726efeb7ea552db423332617fff074dbc14f478d
-  ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+  ms.openlocfilehash: d4c2a3b09a4c63b87109322a139bdbddefbe5458
+  ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 01/26/2020
-  ms.locfileid: "76754000"
+  ms.lasthandoff: 02/18/2020
+  ms.locfileid: "77438041"
 landingContent:
 - title: 디바이스 작업 원격으로 실행
   linkLists:
@@ -71,11 +71,11 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: IOS 디바이스 찾기
+    - text: 분실한 iOS/iPadOS 디바이스 찾기
       url: device-locate.md
-    - text: iOS 감독 모드 설정
+    - text: iOS/iPadOS 감독 모드 켜기
       url: device-supervised-mode.md
-    - text: IOS 분실 모드 설정
+    - text: iOS/iPadOS 분실 모드 켜기
       url: device-lost-mode.md
     - text: MacOS 디바이스에서 데이터 지우기
       url: device-erase.md

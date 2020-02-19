@@ -25,11 +25,11 @@
           href: device-restart.md
     - name: Apple 디바이스 작업
       items:
-        - name: 분실한 iOS 디바이스 찾기
+        - name: 분실한 iOS/iPadOS 디바이스 찾기
           href: device-locate.md
-        - name: iOS 분실 모드 사용
+        - name: iiOS/iPadOSOS 분실 모드 사용
           href: device-lost-mode.md
-        - name: iOS 감독 모드 설정
+        - name: iOS/iPadOS 감독 모드 켜기
           href: device-supervised-mode.md
         - name: macOS 디바이스 지우기
           href: device-erase.md
