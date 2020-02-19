@@ -20,7 +20,7 @@
   items:
     - name: Autopilot을 사용하여 Windows 디바이스 등록
       href: tutorial-use-autopilot-enroll-devices.md
-    - name: DEP를 사용하여 iOS 디바이스 등록
+    - name: DEP를 사용하여 iOS/iPadOS 디바이스 등록
       href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: 개념
   items:
@@ -84,12 +84,12 @@
         - name: 삼성 Knox 모바일 등록
           href: android-samsung-knox-mobile-enroll.md
           displayName: kda; kme
-    - name: iOS 등록 설정
+    - name: iOS/iPadOS 등록 설정
       href: ios-enroll.md
       items:
         - name: 디바이스 등록 프로그램
           href: device-enrollment-program-enroll-ios.md
-        - name: iOS 및 iPadOS 사용자 등록 설정
+        - name: iOS/iPadOS 및 iPadOS 사용자 등록 설정
           href: ios-user-enrollment.md
         - name: 사용자 등록 지원 동작 및 옵션
           href: ios-user-enrollment-supported-actions.md
@@ -109,7 +109,7 @@
         - name: 디바이스 등록 문제 해결
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-        - name: iOS 디바이스 등록 문제 해결
+        - name: iOS/iPadOS 디바이스 등록 문제 해결
           href: troubleshoot-ios-enrollment-errors.md
         - name: Windows 디바이스 등록 문제 해결
           href: troubleshoot-windows-enrollment-errors.md

@@ -12,12 +12,12 @@ metadata:
   ms.author: dougeby
   manager: dougeby
   ms.date: 08/07/2019
-  ms.openlocfilehash: 20bdfb02f0a8dda4b9578fd7bc30cb72c7250adf
-  ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+  ms.openlocfilehash: be5cae95460064287fa347d1ca42626ab75a2809
+  ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/24/2019
-  ms.locfileid: "72892596"
+  ms.lasthandoff: 02/17/2020
+  ms.locfileid: "77414166"
 landingContent:
 - title: 등록 정보
   linkLists:
@@ -73,29 +73,29 @@ landingContent:
       url: android-kiosk-enroll.md
     - text: Android 엔터프라이즈 완전 관리형 디바이스의 Intune 등록 설정(미리 보기)
       url: android-fully-managed-enroll.md
-- title: IOS 등록
+- title: iOS/iPadOS 등록
   linkLists:
   - linkListType: overview
     links:
-    - text: IOS 등록 정보
+    - text: iOS/iPadOS 등록 정보
       url: ios-enroll.md
   - linkListType: tutorial
     links:
-    - text: Apple의 회사 디바이스 등록 기능을 사용하여 iOS 디바이스 등록
+    - text: Apple의 회사 디바이스 등록 기능을 사용하여 iOS/iPadOS 디바이스 등록
       url: tutorial-use-device-enrollment-program-enroll-ios.md
   - linkListType: how-to-guide
     links:
-    - text: iOS 등록 설정
+    - text: iOS/iPadOS 등록 설정
       url: ios-enroll.md
-    - text: Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록
+    - text: Apple의 장비 등록 프로그램을 통해 iOS/iPadOS 디바이스 자동 등록
       url: device-enrollment-program-enroll-ios.md
-    - text: iOS 및 iPadOS 사용자 등록 설정
+    - text: iOS/iPadOS 및 iPadOS 사용자 등록 설정
       url: ios-user-enrollment.md
     - text: 사용자 등록 지원 동작 및 옵션
       url: ios-user-enrollment-supported-actions.md
-    - text: Apple School Manager를 통해 iOS 디바이스 등록 설정
+    - text: Apple School Manager를 통해 iOS/iPadOS 디바이스 등록
       url: apple-school-manager-set-up-ios.md
-    - text: Apple Configurator를 통해 iOS 디바이스 등록 설정
+    - text: Apple Configurator를 통해 iOS/iPadOS 디바이스 등록
       url: apple-configurator-enroll-ios.md
 - title: MacOS 등록
   linkLists:
@@ -105,7 +105,7 @@ landingContent:
       url: macos-enroll.md
   - linkListType: tutorial
     links:
-    - text: Apple의 회사 디바이스 등록 기능을 사용하여 iOS 디바이스 등록
+    - text: Apple의 회사 디바이스 등록 기능을 사용하여 iOS/iPadOS 디바이스 등록
       url: tutorial-use-device-enrollment-program-enroll-ios.md
   - linkListType: how-to-guide
     links:
@@ -113,5 +113,5 @@ landingContent:
       url: macos-enroll.md
     - text: 장비 등록 프로그램 또는 Apple School Manager를 사용하여 macOS 디바이스 자동 등록
       url: device-enrollment-program-enroll-macos.md
-    - text: Apple Configurator를 통해 iOS 디바이스 등록 설정
+    - text: Apple Configurator를 통해 iOS/iPadOS 디바이스 등록
       url: apple-configurator-enroll-ios.md
