@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812510"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414897"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 웹 액세스 관리
 
@@ -42,7 +42,7 @@ Intune 정책(Microsoft Edge 또는 Intune Managed Browser)으로 보호되는 �
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge 지원
 
-iOS 및 Android 디바이스의 엔터프라이즈 시나리오에서 Microsoft Edge를 사용할 수 있습니다. Microsoft Edge는 최종 사용자 환경에 향상된 기능을 추가하여 Intune Managed Browser와 동일한 모든 관리 시나리오를 모두 지원합니다. Intune 정책을 통해 사용할 수 있는 Microsoft Edge 엔터프라이즈 기능은 다음과 같습니다.
+iOS/iPadOS 및 Android 디바이스의 엔터프라이즈 시나리오에서 Microsoft Edge를 사용할 수 있습니다. Microsoft Edge는 최종 사용자 환경에 향상된 기능을 추가하여 Intune Managed Browser와 동일한 모든 관리 시나리오를 모두 지원합니다. Intune 정책을 통해 사용할 수 있는 Microsoft Edge 엔터프라이즈 기능은 다음과 같습니다.
 
 - **이중 ID** - 사용자는 검색을 위해 회사 계정뿐 아니라 개인 계정을 추가할 수 있습니다. Office 365 및 Outlook의 아키텍처 및 환경과 비슷한 두 ID는 완전히 분리됩니다. Intune 관리자는 회사 계정 내에서 보호된 검색 환경에 대해 원하는 정책을 설정할 수 있습니다. 
 - **Intune 앱 보호 정책 통합** - 관리자는 이제 잘라내기, 복사 및 붙여넣기 제어, 화면 캡처 방지, 사용자가 선택한 링크가 다른 관리형 앱에서만 열리도록 하는 기능을 포함하여 앱 보호 정책의 대상을 Microsoft Edge로 지정할 수 있습니다.
@@ -57,9 +57,9 @@ Microsoft Edge 및 Intune Managed Browser는 공개 앱 스토어에서 다운�
 
 브라우저 정책에 대한 운영 체제 요구 사항:
 - Android 4 이상
-- iOS 8.0 이상
+- iOS/iPadOS 8.0 이상
 
-Android 및 iOS 이전 버전에서도 계속 Managed Browser를 사용할 수는 있지만 새로운 버전의 앱을 설치할 수 없고 모든 기능을 액세스하지 못할 수 있습니다. 이러한 디바이스를 지원되는 운영 체제 버전으로 업데이트하는 것이 좋습니다.
+Android 및 iOS/iPadOS 이전 버전에서도 계속 Managed Browser를 사용할 수는 있지만 새로운 버전의 앱을 설치할 수 없고 모든 기능을 액세스하지 못할 수 있습니다. 이러한 디바이스를 지원되는 운영 체제 버전으로 업데이트하는 것이 좋습니다.
 
 >[!NOTE]
 >Managed Browser는 SSLv3(Secure Sockets Layer 버전 3) 암호화 프로토콜을 지원하지 않습니다.
@@ -123,9 +123,9 @@ Azure AD 연결 웹앱이 모바일 플랫폼에서 Intune Managed Browser를 �
 
 ## <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>정책으로 보호되는 브라우저에서 Azure AD 연결 웹앱에 Single Sign-On
 
-iOS 및 Android의 Microsoft Edge 및 Intune Managed Browser는 Azure AD에 연결된 모든 웹앱(SaaS 및 온-프레미스)에 SSO를 활용할 수도 있습니다. Microsoft Authenticator 앱이 iOS 또는 Android의 Intune 회사 포털 앱에 표시되는 경우, 정책으로 보호되는 브라우저의 사용자는 자격 증명을 다시 입력하지 않고도 Azure AD 연결 웹앱에 액세스할 수 있습니다.
+iOS/iPadOS 및 Android의 Microsoft Edge 및 Intune Managed Browser는 Azure AD에 연결된 모든 웹앱(SaaS 및 온-프레미스)에 SSO를 활용할 수도 있습니다. Microsoft Authenticator 앱이 iOS/iPadOS 또는 Android의 Intune 회사 포털 앱에 표시되는 경우, 정책으로 보호되는 브라우저의 사용자는 자격 증명을 다시 입력하지 않고도 Azure AD 연결 웹앱에 액세스할 수 있습니다.
 
-SSO하려면 디바이스를 iOS 또는 Android의 Intune 회사 포털에 있는 Microsoft Authenticator 앱에 등록해야 합니다. 해당 디바이스가 다른 애플리케이션에 등록되어 있지 않은 경우 Authenticator 앱 또는 Intune 회사 포털을 사용하는 사용자가 정책으로 보호되는 브라우저에서 Azure AD 연결 웹앱으로 이동할 때 해당 디바이스를 등록하라는 메시지가 표시됩니다. 디바이스가 Intune에서 관리되는 계정으로 등록되면 해당 계정은 Azure AD 연결 웹앱에서 SSO를 사용하도록 설정합니다. 
+SSO는 디바이스를 iOS/iPadOS 또는 Android의 Intune 회사 포털에 있는 Microsoft Authenticator 앱에 등록하는 작업이 필요합니다. 해당 디바이스가 다른 애플리케이션에 등록되어 있지 않은 경우 Authenticator 앱 또는 Intune 회사 포털을 사용하는 사용자가 정책으로 보호되는 브라우저에서 Azure AD 연결 웹앱으로 이동할 때 해당 디바이스를 등록하라는 메시지가 표시됩니다. 디바이스가 Intune에서 관리되는 계정으로 등록되면 해당 계정은 Azure AD 연결 웹앱에서 SSO를 사용하도록 설정합니다. 
 
 > [!NOTE]
 > 디바이스 등록은 Azure AD 서비스를 사용하는 간단한 체크 인입니다. 전체 디바이스를 등록할 필요가 없고 디바이스에 대한 추가 권한을 부여하지 않습니다.
@@ -138,7 +138,7 @@ SSO하려면 디바이스를 iOS 또는 Android의 Intune 회사 포털에 있�
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **앱** > **앱 구성 정책** > **추가** > **관리형 앱**을 선택합니다.
 3. **구성 정책 추가** 창의 **앱 구성 정책 만들기** 창에서 앱 구성 설정에 대한 **이름** and optional **설명**(선택 사항)을 입력합니다.
-4. **퍼블릭 앱 선택**을 선택하고 iOS, Android 또는 둘 다에 대해 **Managed Browser** 및/또는 **Edge**를 선택합니다.
+4. **퍼블릭 앱 선택**을 선택하고 iOS/iPadOS, Android 또는 둘 다에 대해 **Managed Browser** 및/또는 **Edge**를 선택합니다.
 5. **선택**을 클릭하여 **앱 구성 정책 만들기** 창으로 돌아갑니다.
 6. **다음**을 클릭하여 **설정** 페이지를 표시합니다.
 7. **설정** 페이지에서 앱용 구성을 제공할 키 및 값 쌍을 정의합니다. 이 문서의 뒷부분에 나오는 섹션에서 정의할 수 있는 다양한 키와 값 쌍에 대해 알아보세요.
@@ -170,7 +170,7 @@ Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대�
 이 설정이 "False"로 설정된 경우:
 
 - 사용자가 Managed Browser와 Microsoft Edge를 **모두** 다운로드한 경우 Managed Browser가 시작됩니다. 
-- 사용자가 Managed Browser 또는 Microsoft Edge 중 **하나**를 다운로드한 경우 해당 브라우저 앱이 시작됩니다. 
+- 사용자가 Managed Browser **또는** Microsoft Edge 중 **하나**를 다운로드한 경우 해당 브라우저 앱이 시작됩니다. 
 - 사용자가 어느 브라우저 앱도 다운로드하지 않은 경우 Managed Browser를 다운로드하라는 메시지가 표시됩니다.
 
 위 절차를 사용하여 Microsoft Edge 앱 구성을 만듭니다. **구성** 창에서 **구성 설정**을 선택할 때 다음 키-값 쌍을 제공합니다(9단계).
@@ -186,7 +186,7 @@ Azure AD 사용자 그룹에 설정을 할당합니다. 해당 사용자가 대�
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>보호되는 브라우저에 대한 애플리케이션 프록시 설정을 구성하는 방법
 
-Microsoft Edge 및 Intune Managed Browser와 [Azure Active Directory 애플리케이션 프록시]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 함께 사용하면 iOS 및 Android 디바이스 사용자에 대해 다음과 같은 시나리오를 지원할 수 있습니다.
+Microsoft Edge 및 Intune Managed Browser와 [Azure AD 애플리케이션 프록시]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)를 함께 사용하면 iOS/iPadOS 및 Android 디바이스 사용자에 대해 다음과 같은 시나리오를 지원할 수 있습니다.
 
 - 사용자가 Microsoft Outlook 앱을 다운로드하고 로그인합니다. Intune 앱 보호 정책이 자동으로 적용됩니다. 저장된 데이터를 암호화하고 사용자가 디바이스에서 관리되지 않는 앱 또는 위치로 회사 파일을 전송할 수 없도록 차단합니다. 그런 다음 사용자가 Outlook에서 인트라넷 사이트에 대한 링크를 클릭할 때 해당 링크가 다른 브라우저 대신 보호되는 브라우저 애플리케이션에서 열리도록 지정할 수 있습니다. 보호되는 브라우저는 이 인트라넷 사이트가 애플리케이션 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 애플리케이션 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있으며 Outlook의 링크가 예상대로 작동합니다.
 - 원격 사용자가 보호되는 브라우저 애플리케이션을 열고 내부 URL을 사용하여 인트라넷 사이트로 이동합니다. 보호되는 브라우저는 이 인트라넷 사이트가 애플리케이션 프록시를 통해 사용자에게 공개된 것을 인식합니다. 사용자는 인트라넷 사이트에 연결하기 전에 적용 가능한 다단계 인증 및 조건부 액세스를 사용하여 인증하도록 애플리케이션 프록시를 통해 자동으로 라우팅됩니다. 이전에는 사용자가 원격으로 작업하는 동안 찾을 수 없었던 이 사이트에 이제 액세스할 수 있습니다.
@@ -316,9 +316,9 @@ Microsoft Edge 또는 Managed Browser 앱 구성을 만드는 절차를 수행�
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS에서 Managed Browser를 사용하여 관리되는 앱 로그에 액세스하는 방법
 
-iOS 디바이스에 Managed Browser가 설치된 최종 사용자는 Microsoft에서 게시한 모든 앱의 관리 상태를 볼 수 있습니다. 관리되는 iOS 앱의 문제를 해결하기 위해 로그를 보낼 수 있습니다.
+iOS/iPadOS 디바이스에 Managed Browser가 설치된 최종 사용자는 Microsoft에서 게시한 모든 앱의 관리 상태를 볼 수 있습니다. 관리되는 iOS/iPadOS 앱의 문제를 해결하기 위해 로그를 보낼 수 있습니다.
 
-1. iOS **설정**을 엽니다.
+1. iOS/iPadOS **설정**을 엽니다.
 2. 관리되는 **브라우저** 애플리케이션 설정을 엽니다.
 3. **Intune 진단 사용**을 토글하여 브라우저를 문제 해결 모드에 설정합니다.
 4. 관리되는 **브라우저**를 엽니다. **Intune 앱 상태 보기**를 클릭하여 개별 애플리케이션 정책 설정을 봅니다.
@@ -345,7 +345,7 @@ iOS 디바이스에 Managed Browser가 설치된 최종 사용자는 Microsoft�
 ### <a name="turn-off-usage-data"></a>사용량 현황 데이터 해제
 Microsoft는 Microsoft 제품 및 서비스를 개선하기 위해 Managed Browser의 성능 및 사용에 대한 익명의 데이터를 자동으로 수집합니다. 사용자는 디바이스에서 **사용량 현황 데이터** 설정을 사용하여 데이터의 수집을 해제할 수 있습니다. 이 데이터의 수집은 제어할 수 없습니다.
 
-- iOS 디바이스에서 만료되거나 신뢰할 수 없는 인증서가 있는 웹 사이트를 사용자가 방문하면 해당 웹 사이트를 열 수 없습니다.
+- iOS/iPadOS 디바이스에서 만료되거나 신뢰할 수 없는 인증서가 있는 웹 사이트를 사용자가 방문하면 해당 웹 사이트를 열 수 없습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
