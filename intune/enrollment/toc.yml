@@ -100,7 +100,7 @@
     - name: macOS 등록 설정
       href: macos-enroll.md
       items:
-        - name: 장비 등록 프로그램 또는 Apple School Manager
+        - name: 자동 디바이스 등록
           href: device-enrollment-program-enroll-macos.md
     - name: 불완전한 등록 보고서
       href: enrollment-report-company-portal-abandon.md

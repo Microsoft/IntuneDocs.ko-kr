@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: Android 앱을 다운로드하는 방법
               href: end-user-apps-android.md
-            - name: iOS 앱을 다운로드하는 방법
+            - name: iOS/iPadOS 앱을 다운로드하는 방법
               href: end-user-apps-ios.md
             - name: Windows 앱을 다운로드하는 방법
               href: end-user-apps-windows.md
@@ -201,10 +201,6 @@
           href: tenant-status.md
         - name: 사용자가 문제 해결할 수 있도록 도움
           href: help-desk-operators.md
-        - name: Intune 활동에 대한 감사 로그
-          href: monitor-audit-logs.md
-        - name: Azure Monitor를 사용하여 로그 검토
-          href: review-logs-using-azure-monitor.md
         - name: Intune 문서 사용
           href: use-docs.md
         - name: 지원 받기
@@ -213,9 +209,13 @@
       items:
         - name: Intune 보고서
           href: reports.md
+        - name: Intune 활동에 대한 감사 로그
+          href: monitor-audit-logs.md
+        - name: Azure Monitor를 사용하여 로그 검토
+          href: review-logs-using-azure-monitor.md
 - name: 참조
   items:
-    - name: 오류 코드와 설명
+    - name: 오류 코드 및 설명
       items:
         - name: 회사 리소스 액세스 문제 해결
           href: troubleshoot-company-resource-access-problems.md
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Intune 클래식 그룹
           href: groups-get-started.md
-        - name: iOS 교육 설정
+        - name: iOS/iPadOS 교육 설정
           items:
             - name: iPad
               href: education-settings-configure-ios.md

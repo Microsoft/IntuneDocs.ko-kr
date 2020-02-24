@@ -11,13 +11,13 @@ metadata:
   ms.collection: collection
   author: dougeby
   ms.author: dougeby
-  ms.date: 09/16/2019
-  ms.openlocfilehash: afd555e5f245ee9bc28bd21268ae64ae69afbad3
-  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+  ms.date: 02/18/2020
+  ms.openlocfilehash: d6404a4c77507374b5e8759ba2078e541cde35d8
+  ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72492543"
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77511054"
 landingContent:
 - title: 디바이스에 기능 및 설정 적용
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
       url: device-profiles.md
   - linkListType: quickstart
     links:
-    - text: iOS용 이메일 디바이스 프로필 만들기
+    - text: iOS/iPadOS용 이메일 디바이스 프로필 만들기
       url: quickstart-email-profile.md
   - linkListType: how-to-guide
     links:
@@ -69,11 +69,11 @@ landingContent:
       url: wi-fi-settings-configure.md
     - text: 공유 PC 또는 다중 사용자 디바이스에서 액세스, 계정 및 전원 기능 제어
       url: shared-user-device-settings.md
-- title: IOS 디바이스용 설정
+- title: iOS/iPadOS에 대한 설정
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: IOS 디바이스 기능 설정
+    - text: iOS/iPadOS 디바이스 기능 설정 추가
       url: device-features-configure.md
     - text: 디바이스 제한 설정 구성
       url: device-restrictions-configure.md
@@ -81,7 +81,7 @@ landingContent:
       url: email-settings-configure.md
     - text: VPN 서버에 연결할 VPN 프로필 생성
       url: vpn-settings-configure.md
-    - text: IOS 디바이스용 애플리케이션별 VPN 프로필 생성
+    - text: iOS/iPadOS 디바이스용 앱별 VPN 프로필 생성
       url: vpn-setting-configure-per-app.md
     - text: 디바이스에서 Wi-Fi 설정 추가 및 사용
       url: wi-fi-settings-configure.md
@@ -89,7 +89,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: IOS 디바이스 기능 설정
+    - text: iOS/iPadOS 디바이스 기능 설정 추가
       url: device-features-configure.md
     - text: 디바이스 제한 설정 구성
       url: device-restrictions-configure.md
@@ -137,7 +137,7 @@ landingContent:
       url: device-restrictions-android.md
     - text: Android Enterprise
       url: device-restrictions-android-for-work.md
-    - text: iOS
+    - text: iOS/iPadOS
       url: ios-device-features-settings.md
     - text: macOS
       url: macos-device-features-settings.md

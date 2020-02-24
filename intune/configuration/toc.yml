@@ -23,7 +23,7 @@
           href: administrative-templates-windows.md
         - name: 관리 템플릿을 사용허여 Office 업데이트
           href: administrative-templates-update-office.md
-    - name: iOS 및 macOS 디바이스 기능
+    - name: iOS/iPadOS 및 macOS 디바이스 기능
       href: device-features-configure.md
     - name: 디바이스 설정 및 기능 제한
       href: device-restrictions-configure.md
@@ -47,7 +47,7 @@
       items:
         - name: Android용 앱별 VPN
           href: android-pulse-secure-per-app-vpn.md
-        - name: iOS용 앱별 VPN
+        - name: iOS/iPadOS용 앱별 VPN
           href: vpn-setting-configure-per-app.md
     - name: Wi-Fi 네트워크
       href: wi-fi-settings-configure.md
@@ -117,7 +117,7 @@
               href: wi-fi-settings-android-enterprise.md
             - name: 사용자 지정
               href: custom-settings-android-for-work.md
-        - name: iOS
+        - name: iOS/iPadOS
           items:
             - name: 디바이스 기능
               href: ios-device-features-settings.md
