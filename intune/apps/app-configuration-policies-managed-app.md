@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06c1119b474d82c4d00db3276179b962ff5b5a44
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 4301afca471d0aa56fa1a0826ad7f88bcdf23de2
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755564"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414863"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>디바이스 등록 없이 관리되는 앱용 앱 구성 정책 추가
 
@@ -41,7 +41,7 @@ ms.locfileid: "76755564"
 5. **다음**을 클릭하여 **설정** 페이지를 표시합니다.
 6. 앱에서 지원하는 각 구성 설정의 경우 **이름** 및 **값**을 입력합니다. 
 
-   Intune 앱 SDK를 사용할 수 있는 앱은 키-값 쌍의 구성을 지원합니다. 지원되는 키-값 구성에 대한 자세한 내용은 각 앱의 설명서를 참조하세요. 또한 애플리케이션에 의해 생성된 데이터로 동적으로 채워지는 토큰을 사용할 수 있습니다. 자세한 내용은 [토큰 사용을 위한 구성 값](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens)을 참조하세요. iOS용 Outlook 앱 구성 정책 설정에 대한 자세한 내용은 [Microsoft Intune을 사용하여 iOS용 Outlook 앱 구성 관리](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx)를 참조하세요.
+   Intune 앱 SDK를 사용할 수 있는 앱은 키-값 쌍의 구성을 지원합니다. 지원되는 키-값 구성에 대한 자세한 내용은 각 앱의 설명서를 참조하세요. 또한 애플리케이션에 의해 생성된 데이터로 동적으로 채워지는 토큰을 사용할 수 있습니다. 자세한 내용은 [토큰 사용을 위한 구성 값](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens)을 참조하세요. iOS/iPadOS용 Outlook 앱 구성 정책 설정에 대한 자세한 내용은 [Microsoft Intune을 사용하여 iOS/iPadOS용 Outlook 앱 구성 관리](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx)를 참조하세요.
 
     구성을 삭제하려면 줄임표( **...** )를 선택하고 **삭제**를 선택합니다.  
 

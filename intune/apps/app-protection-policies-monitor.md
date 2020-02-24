@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205261"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437973"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>앱 보호 정책을 모니터링하는 방법
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ ms.locfileid: "75205261"
 - **플래그가 지정된 사용자**: 디바이스에 문제가 발생하는 사용자 수입니다. 무단 해제된(iOS) 디바이스와 루팅된(Android) 디바이스는 **플래그가 지정된 사용자**로 보고됩니다. 또한 Google SafetyNet 디바이스 증명 검사(IT 관리자가 켜는 경우)를 통해 플래그가 지정되는 디바이스를 가진 사용자는 여기에서 보고됩니다. 
 - **잠재적으로 유해한 앱이 있는 사용자**: Google Play 보호를 통해 검색된 Android 디바이스에 유해한 앱이 있을 수 있는 사용자 수입니다. 
 - **iOS 사용자 상태** 및 **Android 사용자 상태**: 관련된 플랫폼에 대한 업무 환경에서 할당된 정책이 있는 앱을 사용한 사용자 수입니다. 이 정보는 정책에서 관리되는 사용자 수뿐만 아니라 업무 환경에서 정책에 의해 지정되지 않은 앱을 사용하는 사용자의 수를 보여줍니다. 정책에 이러한 사용자를 추가하는 것이 좋습니다.
-- **상위 보호된 iOS 앱** 및 **상위 보호된 Android 앱**: 이 정보는 가장 많이 사용하는 iOS 및 Android 앱을 기반으로 플랫폼별 보호된/보호되지 않은 앱 수를 보여줍니다.
-- **등록 없이 구성된 상위 iOS 앱** 및 **등록 없이 구성된 상위 Android 앱**: 이 정보는 등록되지 않은 디바이스의 가장 많이 사용하는 iOS 및 Android 앱을 기반으로 구성된(즉, 앱 구성 정책을 사용한) 앱의 수를 플랫폼별로 보여 줍니다.
+- **상위 보호된 iOS/iPadOS 앱** 및 **상위 보호된 Android 앱**: 이 정보는 가장 많이 사용하는 iOS/iPadOS 및 Android 앱을 기반으로 플랫폼별 보호된/보호되지 않은 앱 수를 보여줍니다.
+- **등록 없이 구성된 상위 iOS/iPadOS 앱** 및 **등록 없이 구성된 상위 Android 앱**: 이 정보는 등록되지 않은 디바이스의 가장 많이 사용하는 iOS/iPadOS 및 Android 앱을 기반으로 구성된(즉, 앱 구성 정책을 사용한) 앱의 수를 플랫폼별로 보여 줍니다.
 
     > [!NOTE]
     > 플랫폼당 정책이 여러 개 있는 경우 사용자에게 하나 이상의 정책이 할당되면 정책을 통해 사용자를 관리하는 것으로 간주됩니다.
@@ -170,9 +170,9 @@ ms.locfileid: "75205261"
     ![보고서 저장 확인 상자 스크린 샷](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune은 앱 등록 ID, Android 제조업체, 모델 및 보안 패치 버전을 포함한 추가 디바이스 보고 필드와 iOS 모델을 제공합니다. Intune에서 **앱** > **앱 보호 상태** > **앱 보호 보고서: iOS, Android**를 선택하여 이러한 필드에 액세스합니다. 또한 이러한 매개 변수를 사용하여 디바이스 제조업체(Android)의 **허용** 목록, 디바이스 모델(Android 및 iOS)의 **허용** 목록 및 **최소 Android 보안 패치 버전** 설정을 구성할 수 있습니다.   
+> Intune은 앱 등록 ID, Android 제조업체, 모델 및 보안 패치 버전을 포함한 추가 디바이스 보고 필드와 iOS/iPadOS 모델을 제공합니다. Intune에서 **앱** > **앱 보호 상태** > **앱 보호 보고서: iOS/iPadOS, Android**를 선택하여 이러한 필드에 액세스합니다. 또한 이러한 매개 변수를 사용하여 디바이스 제조업체(Android)의 **허용** 목록, 디바이스 모델(Android 및 iOS)의 **허용** 목록 및 **최소 Android 보안 패치 버전** 설정을 구성할 수 있습니다.   
  
 ## <a name="see-also"></a>참고 항목
-- [iOS 앱 간의 데이터 전송 관리](data-transfer-between-apps-manage-ios.md)
+- [iOS/iPadOS 앱 간의 데이터 전송 관리](data-transfer-between-apps-manage-ios.md)
 - [Android 앱이 앱 보호 정책으로 관리될 때 예상되는 상황](../fundamentals/end-user-mam-apps-android.md)
-- [iOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황](../fundamentals/end-user-mam-apps-ios.md)
+- [iOS/iPadOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황](../fundamentals/end-user-mam-apps-ios.md)

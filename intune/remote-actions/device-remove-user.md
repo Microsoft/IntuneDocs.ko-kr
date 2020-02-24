@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune을 사용하여 iOS 디바이스에서 사용자 제거
+title: Microsoft Intune을 사용하여 iOS/iPadOS 디바이스에서 사용자 제거
 titleSuffix: ''
-description: Intune을 사용하여 공유 iOS 디바이스에서 사용자를 제거하는 방법을 알아봅니다.
+description: Intune을 사용하여 공유 iOS/iPadOS 디바이스에서 사용자를 제거하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 772cdbe203b0489a9b2312a1cc10ea1b3182b35d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8b6b2b3492b9edece6b69e4b302741c0443c0a3e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713165"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415560"
 ---
-# <a name="remove-a-user-from-a-shared-ios-device"></a>공유 iOS 디바이스에서 사용자 제거
+# <a name="remove-a-user-from-a-shared-iosipados-device"></a>공유 iOS/iPadOS 디바이스에서 사용자 제거
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-**사용자 제거** 작업은 공유 iPad 디바이스의 로컬 캐시에서 선택한 사용자를 삭제합니다. iPad 디바이스는 [iOS 교육 프로필](../fundamentals/education-settings-configure-ios.md)을 사용하여 iOS 클래스룸 앱을 관리하도록 설정되어야 합니다. 
+**사용자 제거** 작업은 공유 iPad 디바이스의 로컬 캐시에서 선택한 사용자를 삭제합니다. iPad 디바이스는 [iOS/iPadOS 교육 프로필](../fundamentals/education-settings-configure-ios.md)을 사용하여 iOS/iPadOS 클래스룸 앱을 관리하도록 설정되어야 합니다. 
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
 - Windows - 지원되지 않음
 - Windows Phone - 지원되지 않음
-- iOS - iOS 9.3 및 이상에서 지원됨(공유 iPad 디바이스만 해당)
+- iOS/iPadOS - iOS/iPadOS 9.3 및 이상에서 지원됨(공유 iPad 디바이스만 해당)
 - macOS - 지원되지 않음
 - Android - 지원되지 않음
 
@@ -43,7 +43,7 @@ ms.locfileid: "73713165"
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **디바이스** > **모든 디바이스**를 선택합니다.
-3. 관리하는 디바이스 목록에서 iOS 디바이스를 선택합니다.
+3. 관리하는 디바이스 목록에서 iOS/iPadOS 디바이스를 선택합니다.
 4. 디바이스에 대한 창에서 **사용자**를 선택합니다.
 5. 목록에서 제거할 사용자를 마우스 오른쪽 단추로 클릭한 다음, **사용자 제거**를 선택합니다.
 

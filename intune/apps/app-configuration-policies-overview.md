@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune용 앱 구성 정책
 titleSuffix: ''
-description: Microsoft Intune에서 iOS 또는 Android 디바이스에 앱 구성 정책을 사용하는 방법을 알아봅니다.
+description: Microsoft Intune에서 iOS/iPadOS 또는 Android 디바이스에 앱 구성 정책을 사용하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812473"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414848"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
 앱 구성 정책을 사용하면 앱을 실행하기 전에 최종 사용자에게 할당된 정책에 구성 설정을 할당할 수 있으므로 앱 설정 문제를 방지할 수 있습니다. 그러면 최종 사용자 디바이스에서 앱이 구성될 때 설정이 자동으로 제공되므로 최종 사용자가 작업을 수행할 필요가 없습니다. 구성 설정은 각 앱에 대해 고유합니다. 
 
-앱 구성 정책을 만들고 사용하여 iOS 또는 Android 앱용 구성 설정을 제공할 수 있습니다. 이러한 구성 설정을 사용하면 앱 구성 및 관리를 이용해 앱을 사용자 지정할 수 있습니다. 구성 정책 설정은 앱에서 이러한 설정을 확인할 때(일반적으로는 앱을 처음 실행할 때) 사용됩니다. 
+앱 구성 정책을 만들고 사용하여 iOS/iPadOS 또는 Android 앱용 구성 설정을 제공할 수 있습니다. 이러한 구성 설정을 사용하면 앱 구성 및 관리를 이용해 앱을 사용자 지정할 수 있습니다. 구성 정책 설정은 앱에서 이러한 설정을 확인할 때(일반적으로는 앱을 처음 실행할 때) 사용됩니다. 
 
 예를 들어 앱 구성 설정에서 다음 세부 정보 중 하나를 지정해야 할 수도 있습니다.
 
@@ -71,7 +71,7 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 ![디바이스 등록 유형](./media/app-configuration-policies-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> Microsoft Outlook과 같은 다중 ID 앱의 경우 사용자 기본 설정을 고려할 수 있습니다. 예를 들어, 중요 받은 편지함은 사용자 설정을 준수하며 구성은 변경하지 않습니다. 다른 매개 변수를 사용하여 사용자가 설정을 변경할 수 있는지 여부를 제어할 수 있습니다. 자세한 내용은 [iOS 및 Android용 Outlook 앱 구성 설정 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)를 참조하세요.
+> Microsoft Outlook과 같은 다중 ID 앱의 경우 사용자 기본 설정을 고려할 수 있습니다. 예를 들어, 중요 받은 편지함은 사용자 설정을 준수하며 구성은 변경하지 않습니다. 다른 매개 변수를 사용하여 사용자가 설정을 변경할 수 있는지 여부를 제어할 수 있습니다. 자세한 내용은 [iOS/iPadOS 및 Android용 Outlook 앱 구성 설정 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)를 참조하세요.
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>적용된 앱 구성 정책 유효성 검사
 
@@ -93,7 +93,7 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>관리되지 않는 디바이스에서 iOS 구성
 
-관리 앱 구성에 대해 관리되지 않는 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다. 아래 단계 외에도 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스할 수 있습니다. 자세한 내용은 [iOS에서 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)를 참조하세요.
+관리 앱 구성에 대해 관리되지 않는 디바이스의 **Intune 진단 로그**를 사용하여 iOS/iPadOS 구성의 유효성을 검사할 수 있습니다. 아래 단계 외에도 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스할 수 있습니다. 자세한 내용은 [iOS/iPadOS에서 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)를 참조하세요.
 
 1. **Microsoft Edge**가 디바이스에 아직 설치되지 않았다면 앱 스토어에서 다운로드하여 설치합니다. 자세한 내용은 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)을 참조하세요.
 2. **Microsoft Edge**를 시작하고 탐색 모음에서 **정보** > **intunehelp**를 선택합니다.
@@ -137,7 +137,7 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 
 ### <a name="ios-configuration-on-managed-devices"></a>관리 디바이스에서 iOS 구성
 
-관리 앱 구성에 대해 관리 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다.
+관리 앱 구성에 대해 관리 디바이스의 **Intune 진단 로그**를 사용하여 iOS/iPadOS 구성의 유효성을 검사할 수 있습니다.
 
 1. **Microsoft Edge**가 디바이스에 아직 설치되지 않았다면 앱 스토어에서 다운로드하여 설치합니다. 자세한 내용은 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)을 참조하세요.
 2. **Microsoft Edge**를 시작하고 탐색 모음에서 **정보** > **intunehelp**를 선택합니다.
@@ -149,7 +149,7 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 
 ### <a name="android-configuration-on-managed-devices"></a>관리 디바이스에서 Android 구성
 
-관리 앱 구성에 대해 관리 디바이스의 **Intune 진단 로그**를 사용하여 iOS 구성의 유효성을 검사할 수 있습니다.
+관리 앱 구성에 대해 관리 디바이스의 **Intune 진단 로그**를 사용하여 iOS/iPadOS 구성의 유효성을 검사할 수 있습니다.
 
 Android 디바이스에서 로그를 수집하려면 사용자 또는 최종 사용자가 USB 연결(또는 디바이스에서 **파일 탐색기**에 해당하는 것)을 통해 디바이스에서 로그를 다운로드해야 합니다. 실행할 단계는 다음과 같습니다.
 
@@ -173,7 +173,7 @@ Graph API를 사용하여 앱 구성 작업을 수행할 수 있습니다. 자�
 
 ### <a name="managed-devices"></a>관리되는 디바이스
 
-- iOS 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리형 iOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.
+- iOS/iPadOS 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리형 iOS/iPadOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.
 - Android 디바이스로 앱 구성을 사용하는 방법을 알아봅니다.  [관리되는 Android 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-android.md)를 참조하세요.
 
 ### <a name="managed-apps"></a>관리되는 앱

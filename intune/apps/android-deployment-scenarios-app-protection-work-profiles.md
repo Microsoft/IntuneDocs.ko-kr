@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 99738de7efc473c7886762534c6e377b4dba8397
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059786"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415102"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune의 Android Enterprise 디바이스에 대한 애플리케이션 보호 정책 및 회사 프로필
 
@@ -106,7 +106,7 @@ Outlook 및 OneDrive와 같은 Office 애플리케이션에는 "다중 ID" 동�
 
 회사 프로필을 사용하는 경우, 이 다중 ID 동작을 사용하지 않도록 설정할 수 있습니다. 이를 사용하지 않도록 설정하면, 회사 프로필에서 배지가 달린 앱 인스턴스의 경우, 조직 ID를 사용하여 구성해야 합니다. Office Android 앱을 지원하기 위한 허용된 계정 앱 구성 설정을 사용합니다.
 
-자세한 내용은 [iOS 및 Android용 Outlook 앱 구성 설정 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)를 참조하세요.
+자세한 내용은 [iOS/iPadOS 및 Android용 Outlook 앱 구성 설정 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)를 참조하세요.
 
 ## <a name="when-to-use-intune-app"></a>Intune APP를 사용하는 경우
 

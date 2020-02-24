@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c4218dc02f11b9ada07126ce24d6dc4080b23ec
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0b16ab43a2b2c3b2a38aeee14614f2c8361c3d83
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692146"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415431"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 앱 및 전자책 관리
 
@@ -39,6 +39,6 @@ Microsoft Intune에서는 이러한 프로그램을 통해 구매한 앱과 전�
 
 Intune을 사용하여 iOS 스토어에서 대량으로 구매한 앱과 책 및 비즈니스용 Microsoft 스토어에서 구매한 앱을 관리할 수 있습니다. 각 스토어에서 사용이 허가된 앱을 관리하는 방법을 검색하려면 아래 항목 중 하나를 선택합니다.
 
-- [iOS 대량 구매 앱 관리](vpp-apps-ios.md)
+- [iOS/iPadOS 대량 구매 앱 관리](vpp-apps-ios.md)
 - [비즈니스용 Microsoft 스토어에서 대량 구매 앱 관리](windows-store-for-business.md)
-- [iOS 전자책을 관리하는 방법](vpp-ebooks-ios.md)
+- [iOS/iPadOS 전자책을 관리하는 방법](vpp-ebooks-ios.md)

@@ -1,7 +1,7 @@
 ---
-title: iOS 디바이스 등록 - 사용자 등록
+title: iOS/iPadOS 디바이스 등록 - 사용자 등록
 titleSuffix: Microsoft Intune
-description: iOS 및 iPadOS 사용자 등록 설정 방법을 알아봅니다.
+description: iOS/iPadOS 및 iPadOS 사용자 등록 설정 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: d22d8d4772754fddbd366610402d64acc28ffc65
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754633"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415255"
 ---
-# <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>iOS 및 iPadOS 사용자 등록 설정(미리 보기)
+# <a name="set-up-iosipados-and-ipados-user-enrollment-preview"></a>iOS/iPadOS 및 iPadOS 사용자 등록 설정(미리 보기)
 
-Apple의 사용자 등록 프로세스를 사용하여 iOS 및 iPadOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. 사용자 등록에서는 다른 등록 방법과 달리 관리자에게 간소화된 관리 옵션 하위 집합을 제공합니다.
+Apple의 사용자 등록 프로세스를 사용하여 iOS/iPadOS 및 iPadOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. 사용자 등록에서는 다른 등록 방법과 달리 관리자에게 간소화된 관리 옵션 하위 집합을 제공합니다.
 
 사용자 등록에서 사용할 수 있는 옵션에 대한 자세한 내용은 [사용자 등록에서 지원하는 작업, 암호 및 기타 옵션](ios-user-enrollment-supported-actions.md)을 참조하세요.
 
@@ -43,7 +43,7 @@ Apple의 사용자 등록 프로세스를 사용하여 iOS 및 iPadOS 디바이�
 
 등록 프로필에서는 등록 중에 디바이스 그룹에 적용되는 설정을 정의합니다. 
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 유형(미리 보기)**  > **프로필 만들기** > **iOS/iPadOS**를 차례로 선택합니다. 이 프로필은 iOS 및 iPadOS 최종 사용자가 Apple사의 방법을 통해 등록되지 않은 디바이스에서 사용할 등록 환경을 표시하는 곳입니다. 변경하려면 이 프로필을 만든 후 편집할 수 있습니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 유형(미리 보기)**  > **프로필 만들기** > **iOS/iPadOS**를 차례로 선택합니다. 이 프로필은 iOS/iPadOS 및 iPadOS 최종 사용자가 Apple사의 방법을 통해 등록되지 않은 디바이스에서 사용할 등록 환경을 표시하는 곳입니다. 변경하려면 이 프로필을 만든 후 편집할 수 있습니다.
 
     ![Apple 등록 프로필 만들기](./media/ios-user-enrollment/create-profile.png)
 
@@ -60,7 +60,7 @@ Apple의 사용자 등록 프로세스를 사용하여 iOS 및 iPadOS 디바이�
 
     - **디바이스 등록**: 이 프로필의 모든 사용자는 디바이스 등록을 사용합니다.
     - **사용자 등록**: 이 프로필의 모든 사용자는 사용자 등록을 사용합니다.
-    - **사용자 선택에 따라 결정**: 이 그룹의 모든 사용자는 사용할 등록 유형을 선택할 수 있습니다. 사용자가 디바이스를 등록할 때 **이 디바이스의 소유자임**과 **(회사)이(가) 이 디바이스를 소유함** 중에서 선택할 수 있는 옵션이 표시됩니다. 후자를 선택하는 경우 디바이스는 디바이스 등록을 사용해 등록됩니다. 사용자가 **이 디바이스의 소유자임**을 선택하는 경우 전체 디바이스 보호와 작업 관련 앱 및 데이터 보호 중에서 선택할 수 있는 또 다른 옵션이 제공됩니다. 최종 사용자가 자신이 디바이스의 소유자인지 여부를 선택하면 해당 디바이스에 구현되는 등록 유형이 결정됩니다. 이 사용자 선택은 Intune의 디바이스 소유권 특성에도 반영됩니다. 사용자 환경에 대해 자세히 알아보려면 [회사 리소스에 대한 IOS 디바이스 액세스 설정](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)을 참조하세요.
+    - **사용자 선택에 따라 결정**: 이 그룹의 모든 사용자는 사용할 등록 유형을 선택할 수 있습니다. 사용자가 디바이스를 등록할 때 **이 디바이스의 소유자임**과 **(회사)이(가) 이 디바이스를 소유함** 중에서 선택할 수 있는 옵션이 표시됩니다. 후자를 선택하는 경우 디바이스는 디바이스 등록을 사용해 등록됩니다. 사용자가 **이 디바이스의 소유자임**을 선택하는 경우 전체 디바이스 보호와 작업 관련 앱 및 데이터 보호 중에서 선택할 수 있는 또 다른 옵션이 제공됩니다. 최종 사용자가 자신이 디바이스의 소유자인지 여부를 선택하면 해당 디바이스에 구현되는 등록 유형이 결정됩니다. 이 사용자 선택은 Intune의 디바이스 소유권 특성에도 반영됩니다. 사용자 환경에 대해 자세히 알아보려면 [회사 리소스에 대한 iOS/iPadOS 디바이스 액세스 설정](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)을 참조하세요.
     
 5. **다음**을 선택합니다.
 

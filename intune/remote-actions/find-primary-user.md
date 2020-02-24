@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712248"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413687"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune 디바이스의 기본 사용자 찾기
 
@@ -67,8 +67,8 @@ Intune에서는 등록하는 중이나 끝나고 바로 디바이스에 기본 �
 | Windows | Azure AD 조인(Autopilot 자체 배포 모드) | 없음 | 해당 없음 | 
 | 플랫폼 간 사용 가능 | 회사 포털 앱을 사용한 사용자 주도 등록 | 등록하는 사용자 | 등록 중 |
 | 플랫폼 간 사용 가능 | DEM(디바이스 등록 관리자) | 등록하는 DEM 사용자 | 등록 중 |
-| iOS, macOS | 사용자 선호도를 사용한 Apple DEP(자동 디바이스 등록) | 등록하는 사용자 | 등록 중 |
-| iOS, macOS | 사용자 선호도를 사용하지 않는 Apple DEP(자동 디바이스 등록) | 없음 | 해당 없음 |
+| iOS/iPadOS, macOS | 사용자 선호도를 사용한 Apple DEP(자동 디바이스 등록) | 등록하는 사용자 | 등록 중 |
+| iOS/iPadOS, macOS | 사용자 선호도를 사용하지 않는 Apple DEP(자동 디바이스 등록) | 없음 | 해당 없음 |
 | Android | Android 회사 소유 전용 디바이스 | 없음 | 해당 없음 |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>기본 사용자 및 Azure AD 디바이스 소유자

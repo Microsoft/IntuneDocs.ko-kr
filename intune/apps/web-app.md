@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e018fb9888db19995556a6671d93a1db5fa78c2a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754782"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415443"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune에 웹앱 추가
 
@@ -33,7 +33,7 @@ Intune은 웹앱을 포함하여 다양한 앱 유형을 지원합니다. 웹앱
 
 사용자의 앱을 관리하고 할당하려면 먼저 Intune에 앱을 추가합니다. 
 
-Intune이 사용자의 디바이스에 웹앱 바로 가기를 만듭니다. iOS 디바이스의 경우 웹앱에 대한 바로 가기가 홈 화면에 추가됩니다. Android 디바이스 관리자 디바이스의 경우 웹앱에 대한 바로 가기가 Intune 회사 포털 위젯에 추가되고 사용자가 위젯을 수동으로 고정해야 합니다. Windows 디바이스의 경우 웹앱에 대한 바로 가기가 시작 메뉴에 배치됩니다.
+Intune이 사용자의 디바이스에 웹앱 바로 가기를 만듭니다. iOS/iPadOS 디바이스의 경우 웹앱에 대한 바로 가기가 홈 화면에 추가됩니다. Android 디바이스 관리자 디바이스의 경우 웹앱에 대한 바로 가기가 Intune 회사 포털 위젯에 추가되고 사용자가 위젯을 수동으로 고정해야 합니다. Windows 디바이스의 경우 웹앱에 대한 바로 가기가 시작 메뉴에 배치됩니다.
 
 > [!Note]
 > 웹앱을 시작하려면 사용자의 디바이스에 브라우저가 설치되어 있어야 합니다. 
@@ -71,7 +71,7 @@ Intune에 앱을 웹용 앱의 바로 가기로 추가하려면 다음 작업을
     만든 앱의 **개요 블레이드**가 표시됩니다.
 
 > [!Note]
-> 현재, iOS 디바이스로 Intune 웹앱 배포는 관리 프로필과 연결되어 있어 수동으로 제거할 수 없습니다. Intune 포털에서 배포 유형을 **제거**로 변경하면 웹앱을 자동으로 제거할 수 있습니다. 그러나 앱 할당 의도를 **제거**로 변경하기 전에 배포를 제거하면 디바이스가 Intune에서 등록 취소될 때까지 웹앱은 영구히 남아 있습니다.
+> 현재 iOS/iPadOS 디바이스로 Intune 웹앱 배포는 관리 프로필과 연결되어 있어 수동으로 제거할 수 없습니다. Intune 포털에서 배포 유형을 **제거**로 변경하면 웹앱을 자동으로 제거할 수 있습니다. 그러나 앱 할당 의도를 **제거**로 변경하기 전에 배포를 제거하면 디바이스가 Intune에서 등록 취소될 때까지 웹앱은 영구히 남아 있습니다.
 
 최종 사용자는 웹앱을 선택한 다음 **브라우저에서 열기** 옵션을 선택하여 Windows 회사 포털 앱에서 직접 웹앱을 시작할 수 있습니다. 게시된 웹 URL이 웹 브라우저에서 직접 열립니다. 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971869"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415317"
 ---
 # <a name="set-enrollment-restrictions"></a>등록 제한 설정
 
@@ -44,11 +44,11 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바
 - 등록할 수 있는 디바이스 플랫폼:
   - Android 디바이스 관리자
   - Android Enterprise 회사 프로필
-  - iOS
+  - iOS/iPadOS
   - macOS
   - Windows
   - Windows Mobile
-- iOS, Android 디바이스, 관리자, Android Enterprise 회사 프로필, Windows 및 Windows Mobile용 플랫폼 운영 체제 버전입니다. (Windows 10 버전만을 사용할 수 있습니다. Windows 8.1을 허용하는 경우 이 항목을 비워둡니다.)
+- iOS/iPadOS, Android 디바이스, 관리자, Android Enterprise 회사 프로필, Windows 및 Windows Mobile용 플랫폼 운영 체제 버전입니다. (Windows 10 버전만을 사용할 수 있습니다. Windows 8.1을 허용하는 경우 이 항목을 비워둡니다.)
   - 최소 버전
   - 최대 버전
 - [개인적으로 소유한 디바이스](device-enrollment.md#bring-your-own-device)(iOS, Android 디바이스, 관리자, Android Enterprise 회사 프로필, macOS, Windows 및 Windows Mobile만 해당)를 제한합니다.
@@ -67,7 +67,7 @@ Intune 관리자는 Intune을 사용하여 관리에 등록할 수 있는 디바
 5. **버전**에서 허용되는 플랫폼에서 지원할 최소 및 최대 버전을 선택합니다. 버전 제한은 회사 포털에 등록된 디바이스에만 적용됩니다.
      지원되는 버전 형식은 다음과 같습니다.
     - Android 디바이스 관리자 및 Android Enterprise 회사 프로필 지원 major.minor.rev.build.
-    - iOS는 major.minor.rev를 지원합니다. 운영 체제 버전은 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator 앱에 등록되는 Apple 디바이스에 적용되지 않습니다.
+    - iOS/iPadOS는 major.minor.rev를 지원합니다. 운영 체제 버전은 장비 등록 프로그램, Apple School Manager 또는 Apple Configurator 앱에 등록되는 Apple 디바이스에 적용되지 않습니다.
     - Windows는 Windows 10용 major.minor.build.rev만 지원합니다.
     
     > [!IMPORTANT]
@@ -158,8 +158,8 @@ BYOD 등록 중에 등록된 디바이스 수가 한도에 다다랐을 때 사�
 \* Autopilot에 등록된 경우 차단되지 않습니다.
 
 
-## <a name="blocking-personal-ios-devices"></a>개인용 iOS 디바이스 차단
-기본적으로 Intune은 iOS 디바이스를 개인 소유로 분류합니다. 회사 소유로 분류하려면 iOS 디바이스가 다음 조건 중 하나를 충족해야 합니다.
+## <a name="blocking-personal-iosipados-devices"></a>개인용 iOS/iPadOS 디바이스 차단
+기본적으로 Intune은 iOS/iPadOS 디바이스를 개인 소유로 분류합니다. 회사 소유로 분류하려면 iOS/iPadOS 디바이스가 다음 조건 중 하나를 충족해야 합니다.
 - 일련 번호 또는 IMEI로 등록됨.
 - 자동화된 장비 등록(이전의 장비 등록 프로그램)을 사용하여 등록됨
 

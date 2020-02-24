@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune 디바이스 등록이란?
 titleSuffix: Microsoft Intune
-description: iOS, Android 및 Windows 디바이스 등록에 대해 알아봅니다.
+description: iOS/iPadOS, Android 및 Windows 디바이스에 대한 등록을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 7955c91a33edef37b86f5bd8f29dfb681d28030e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547842"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415338"
 ---
 # <a name="what-is-device-enrollment"></a>디바이스 등록이란?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -33,7 +33,7 @@ Intune을 사용하여 직원의 디바이스 및 앱을 관리하고 회사 데
 
 기본적으로 모든 플랫폼의 디바이스를 Intune에서 등록할 수 있습니다. 그러나 [플랫폼별로 디바이스를 제한](enrollment-restrictions-set.md#create-a-device-type-restriction)할 수 있습니다.
 
-## <a name="ios-enrollment-methods"></a>iOS 등록 방법
+## <a name="iosipados-enrollment-methods"></a>iOS/iPadOS 등록 방법
 
 | **방법** | **초기화 필요** | [**사용자 선호도**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Locked** | **세부 정보** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -84,36 +84,36 @@ Intune을 사용하여 직원의 디바이스 및 앱을 관리하고 회사 데
 BYOD(Bring Your Own Device)에는 개인적으로 소유한 전화, 태블릿, PC 등이 있습니다. 사용자는 회사 포털 앱을 설치 및 실행하여 BYOD를 등록합니다. 사용자는 이 프로그램을 통해 전자 메일 등의 회사 리소스에 액세스할 수 있습니다.
 
 ## <a name="corporate-owned-device"></a>회사 소유 디바이스
-[COD(회사 소유 디바이스)](corporate-identifiers-add.md)에는 회사가 직원에게 배포한 전화, 태블릿, PC가 있습니다. COD 등록은 자동 등록, 공유 디바이스 또는 사전 승인된 등록 요구 사항과 같은 관리 시나리오를 지원합니다. COD를 등록하는 일반적인 방법은 관리자가 디바이스 등록 관리자(DEM)를 사용하는 것입니다. Apple에서 제공한 장비 등록 프로그램(DEP) 도구를 통해 iOS 디바이스를 직접 등록할 수 있습니다. IMEI 번호가 있는 디바이스도 회사 소유로 식별되고 태그가 지정됩니다.
+[COD(회사 소유 디바이스)](corporate-identifiers-add.md)에는 회사가 직원에게 배포한 전화, 태블릿, PC가 있습니다. COD 등록은 자동 등록, 공유 디바이스 또는 사전 승인된 등록 요구 사항과 같은 관리 시나리오를 지원합니다. COD를 등록하는 일반적인 방법은 관리자가 디바이스 등록 관리자(DEM)를 사용하는 것입니다. Apple에서 제공한 장비 등록 프로그램(DEP) 도구를 통해 iOS/iPadOS 디바이스를 직접 등록할 수 있습니다. IMEI 번호가 있는 디바이스도 회사 소유로 식별되고 태그가 지정됩니다.
 
 ### <a name="device-enrollment-manager"></a>디바이스 등록 관리자
 DEM(디바이스 등록 관리자)은 회사 소유 디바이스를 여러 개 등록하여 관리할 수 있는 특수 사용자 계정입니다. 관리자는 회사 포털을 설치하고 사용자 정보가 없는 디바이스를 여러 대 등록할 수 있습니다. 이러한 디바이스 유형은 예를 들어 POS(Point-Of-Sale) 또는 유틸리티 앱에는 유용하지만 이메일 또는 회사 리소스에 액세스해야 하는 사용자에게는 유용하지 않습니다. [DEM](device-enrollment-manager-enroll.md)에 대해 자세히 알아보세요.
 
 ### <a name="apple-device-enrollment-program"></a>Apple 장비 등록 프로그램
-Apple DEP(장비 등록 프로그램) 관리에서는 정책을 만든 후, 구입한 iOS 및 macOS 디바이스 중에서 DEP로 관리하는 디바이스에 "무선으로" 정책을 배포할 수 있습니다. 사용자가 처음으로 디바이스를 켜고 설치 도우미를 실행하면 디바이스가 등록됩니다. 이 방법은 iOS 감독 모드를 지원하며, 이 모드에서는 특정 기능을 사용하여 디바이스를 구성할 수 있습니다.
+Apple DEP(장비 등록 프로그램) 관리에서는 정책을 만든 후, 구입한 iOS/iPadOS 및 macOS 디바이스 중에서 DEP로 관리하는 디바이스에 "무선으로" 정책을 배포할 수 있습니다. 사용자가 처음으로 디바이스를 켜고 설치 도우미를 실행하면 디바이스가 등록됩니다. 이 방법은 iOS/iPadOS 감독 모드를 지원하며, 이 모드에서는 특정 기능을 사용하여 디바이스를 구성할 수 있습니다.
 
-iOS DEP 등록에 대한 자세한 내용은 다음을 참조하세요.
+iOS/iPadOS DEP 등록에 대한 자세한 내용은 다음을 참조하세요.
 
-- [iOS 디바이스를 등록하는 방법 선택](ios-enroll.md)
-- [디바이스 등록 프로그램을 사용하여 iOS 디바이스 등록](device-enrollment-program-enroll-ios.md)
+- [iOS/iPadOS 디바이스를 등록하는 방법 선택](ios-enroll.md)
+- [디바이스 등록 프로그램을 사용하여 iOS/iPadOS 디바이스 등록](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
 IT 관리자는 USB를 통해 Apple Configurator를 사용하여 등록할 각 회사 소유 디바이스를 설정 도우미를 사용하여 수동으로 준비합니다. IT 관리자는 등록 프로필을 만들어 Apple Configurator로 내보냅니다. 사용자가 디바이스를 받으면 설정 도우미를 실행하여 디바이스를 등록하라는 메시지가 표시됩니다. 이 방법은 **iOS 감독** 모드를 지원하며, 이 모드에서는 다음 기능을 사용할 수 있습니다.
 - 잠긴 등록
 - 키오스크 모드와 다른 고급 구성 및 제한 사항
 
-설정 도우미를 사용한 iOS Apple Configurator 등록에 대한 자세한 내용은 다음을 참조하세요.
+설정 도우미를 사용한 iOS/iPadOS Apple Configurator 등록에 대한 자세한 내용은 다음을 참조하세요.
 
-- [iOS 디바이스를 등록하는 방법 결정](ios-enroll.md)
-- [Configurator 및 설정 도우미를 사용하여 iOS 디바이스 등록](apple-configurator-enroll-ios.md)
+- [iOS/iPadOS 디바이스를 등록하는 방법 결정](ios-enroll.md)
+- [Configurator 및 설정 도우미를 사용하여 iOS/iPadOS 디바이스 등록](apple-configurator-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
 직접 등록의 경우 관리자가 등록 정책을 만들고 Apple Configurator로 내보내어 각 디바이스를 수동으로 등록해야 합니다. USB로 연결된 회사 소유의 디바이스는 직접 등록되고 초기화할 필요가 없습니다. 디바이스는 사용자가 지정되지 않은 디바이스로 관리됩니다. 디바이스는 잠기거나 감독되지 않으며 조건부 액세스, 탈옥 검색, 모바일 애플리케이션 관리를 지원할 수 없습니다.
 
-iOS 등록에 대한 자세한 내용은 다음을 참조하세요.
+iOS/iPadOS 등록에 대한 자세한 내용은 다음을 참조하세요.
 
-- [iOS 디바이스를 등록하는 방법 결정](ios-enroll.md)
-- [Configurator 및 직접 등록을 사용하여 iOS 디바이스 등록](apple-configurator-enroll-ios.md)
+- [iOS/iPadOS 디바이스를 등록하는 방법 결정](ios-enroll.md)
+- [Configurator 및 직접 등록을 사용하여 iOS/iPadOS 디바이스 등록](apple-configurator-enroll-ios.md)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 인증서 만료 후 모바일 디바이스 정리
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564355"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414692"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune 앱 관리란?
 
@@ -51,7 +51,7 @@ Intune MAM은 다음과 같은 두 가지 구성을 지원합니다.
 
 Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 도와주는 다양한 기능을 제공합니다. 다음 표에서 앱 관리 기능의 요약을 제공합니다.
 
-|  | Android/Android Enterprise | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|  | Android/Android Enterprise | iOS/iPadOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | 디바이스 및 사용자에게 앱 추가 및 할당 | 예 | 예 | 예 | 예 | 예 |
 | Intune에 등록되지 않은 디바이스에 앱 할당 | 예 | 예 | 아니요 | 아니요 | 아니요 |
@@ -98,7 +98,7 @@ Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 �
   - [앱 보호 정책](app-protection-policies.md)
 - **앱 선택적 초기화**: 선택한 사용자의 디바이스에서 회사 데이터만 제거하려면 이 옵션을 선택합니다. 자세한 내용은 다음을 참조하십시오.
   - [앱 선택적 초기화](apps-selective-wipe.md)
-- **iOS 앱 프로비전 프로필**: iOS 앱에는 인증서로 서명된 프로비전 프로필 및 코드가 포함됩니다. 인증서가 만료되면 앱을 더 이상 실행할 수 없습니다. Intune은 만료가 임박한 앱이 있는 디바이스에 새 프로비전 프로필 정책을 미리 할당하기 위한 도구를 제공합니다. 자세한 내용은 다음을 참조하십시오.
+- **iOS 앱 프로비전 프로필**: iOS/iPadOS 앱에는 인증서로 서명된 프로비전 프로필 및 코드가 포함됩니다. 인증서가 만료되면 앱을 더 이상 실행할 수 없습니다. Intune은 만료가 임박한 앱이 있는 디바이스에 새 프로비전 프로필 정책을 미리 할당하기 위한 도구를 제공합니다. 자세한 내용은 다음을 참조하십시오.
   - [iOS 앱 프로비전 프로필](app-provisioning-profile-ios.md)
 
 이 섹션에 대한 자세한 내용은 [앱 관리](app-management.md)를 참조하세요.
@@ -115,7 +115,7 @@ Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 �
 이 섹션에 대한 자세한 내용은 [앱 모니터링](apps-monitor.md)을 참조하세요.
 
 ### <a name="set-up"></a>설정
-- **iOS VPP 토큰**: iOS VPP(대량 구매 프로그램) 라이선스를 적용하고 볼 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+- **iOS VPP 토큰**: iOS/iPadOS VPP(대량 구매 프로그램) 라이선스를 적용하고 볼 수 있습니다. 자세한 내용은 다음을 참조하십시오.
   - [iOS 대량 구매 앱](vpp-apps-ios.md)
 - **Windows 엔터프라이즈 인증서**: 관리되는 Windows 디바이스에 기간 업무 앱을 배포하는 데 사용되는 코드 서명 인증서의 상태를 적용하거나 볼 수 있습니다.
 - **Windows Symantec 인증서**: Windows 10 Mobile 디바이스에 XAP 및 WP8.x appx 파일을 배포하는 데 필요한 Symantec 코드 서명 인증서의 상태를 적용하거나 볼 수 있습니다.

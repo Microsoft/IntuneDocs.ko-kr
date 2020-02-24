@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7861d26650aaf74ea9c58608c33e72495244575
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503184"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414218"
 ---
 # <a name="incomplete-user-enrollments-report"></a>사용자 등록 미완료 보고서
 
@@ -44,7 +44,7 @@ ms.locfileid: "72503184"
 
 ## <a name="what-does-the-report-show"></a>보고서에 표시된 내용은 무엇인가요?
 
-보고서에는 iOS 및 Android 디바이스에 대한 데이터가 포함됩니다.
+보고서에는 iOS/iPadOS 및 Android 디바이스에 대한 데이터가 포함됩니다.
 
 보고서는 최근 2주 동안의 데이터를 표시하지만 과거의 최대 30일 기간을 표시하도록 보고서를 필터링할 수 있습니다.
 
@@ -86,10 +86,10 @@ ms.locfileid: "72503184"
 
 | 작업 이름 | 화면 또는 흐름 | 플랫폼 | 작업 |
 | ---- |---- |---- |---- |
-| iOSProfileLaunch | 구성 프로필을 표시하는 프롬프트 | iOS | **무시** |
-| iOSProfileLaunch | 프로필 설치 화면 | iOS | **취소** |
-| iOSProfileLaunch | 디바이스를 등록할 프로필의 원본을 신뢰하는 프롬프트 | iOS | **취소** |
-| iOSProfileLaunch | 프로필이 설치될 때까지의 프로필 설치 화면 | iOS | 30분 초과 소요 |
+| iOSProfileLaunch | 구성 프로필을 표시하는 프롬프트 | iOS/iPadOS | **무시** |
+| iOSProfileLaunch | 프로필 설치 화면 | iOS/iPadOS | **취소** |
+| iOSProfileLaunch | 디바이스를 등록할 프로필의 원본을 신뢰하는 프롬프트 | iOS/iPadOS | **취소** |
+| iOSProfileLaunch | 프로필이 설치될 때까지의 프로필 설치 화면 | iOS/iPadOS | 30분 초과 소요 |
 | AndroidPermissions | 디바이스 관리자 활성화 화면 | Android | **취소** |
 | AndroidPermissions | 디바이스 관리자가 **활성화**될 때까지의 전화 통화를 수행하고 관리하는 승인 프롬프트 | Android | 30분 초과 소요 |
 | KnoxActivation | KLMS 에이전트 활성화(Samsung에만 해당) | Android| **취소** |
@@ -108,7 +108,7 @@ ms.locfileid: "72503184"
 | ---- |---- |---- |---- |
 | 준수 | 디바이스 준수(관리자가 구성한 경우)는 액세스 설정 후 등록에서 녹색이 아닌 색으로 표시됩니다.| iOS/Android | **연기** |
 | 준수 | 디바이스 준수는 녹색을 표시하도록 업데이트될 때까지 녹색이 아닌 색을 표시합니다. | iOS/Android | 30분 초과 소요 |
-| 정품 인증 | 등록 활성화(관리자가 구성한 경우)는 액세스 설정에서 녹색이 아닌 색으로 표시됩니다. | iOS/Android | **연기** |
+| 활성화 | 등록 활성화(관리자가 구성한 경우)는 액세스 설정에서 녹색이 아닌 색으로 표시됩니다. | iOS/Android | **연기** |
 | 준수 | 디바이스 활성화는 녹색을 표시하도록 업데이트될 때까지 녹색이 아닌 색을 표시합니다. | iOS/Android | 30분 초과 소요 |
 
 ## <a name="next-steps"></a>다음 단계

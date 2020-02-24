@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 96cd4997029c15396db91e9866bbb387c20f1044
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755377"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414442"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune에 기본 제공 앱 추가
 
-*기본 제공* 앱 유형을 사용하면 Office 365 앱과 같이 엄격히 관리되는 앱을 iOS 및 Android 디바이스에 쉽게 할당할 수 있습니다. Excel, OneDrive, Outlook, Skype 등의 특정 앱을 이 앱 유형에 할당할 수 있습니다. 앱을 추가하면 *기본 제공 iOS 앱* 또는 *기본 제공 Android 앱* 중 하나로 앱 유형이 표시됩니다. 기본 제공 앱 유형을 사용하여 어떤 앱을 디바이스 사용자에게 게시할지 선택할 수 있습니다.
+*기본 제공* 앱 유형을 사용하면 Office 365 앱과 같이 엄격히 관리되는 앱을 iOS/iPadOS 및 Android 디바이스에 쉽게 할당할 수 있습니다. Excel, OneDrive, Outlook, Skype 등의 특정 앱을 이 앱 유형에 할당할 수 있습니다. 앱을 추가하면 *기본 제공 iOS 앱* 또는 *기본 제공 Android 앱* 중 하나로 앱 유형이 표시됩니다. 기본 제공 앱 유형을 사용하여 어떤 앱을 디바이스 사용자에게 게시할지 선택할 수 있습니다.
 
 이전 버전의 Intune 콘솔에서 Intune은 Outlook, OneDrive 등의 몇 가지 관리되는 기본 Office 365 앱을 제공했습니다. 이 관리되는 앱의 앱 유형은 *관리되는 iOS 스토어 앱* 또는 *관리되는 Android 앱*으로 태그되었습니다. 이러한 앱 유형을 사용하는 대신 기본 제공 앱 유형을 사용하는 것이 좋습니다. 기본 제공 앱 유형을 사용하면 보다 유연하게 Office 365 앱을 편집하고 삭제할 수 있습니다.
 

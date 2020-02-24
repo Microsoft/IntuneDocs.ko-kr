@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9cb323dc6f8110d77343fb11c9e0a1c40f9e3cd8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885955"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415273"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 등록 문제 해결
 
@@ -36,7 +36,7 @@ ms.locfileid: "75885955"
 문제 해결을 시작하기 전에 등록이 설정되도록 Intune을 올바르게 구성했는지 확인하세요. 다음에서 이러한 구성 요구 사항에 대해 자세히 읽어볼 수 있습니다.
 
 - [Microsoft Intune에 디바이스를 등록하도록 준비](../fundamentals/setup-steps.md)
-- [iOS 및 Mac 디바이스 관리 설정](../ios-enroll.md)
+- [iOS/iPadOS 및 Mac 디바이스 관리 설정](../ios-enroll.md)
 - [Windows 디바이스 관리 설정](windows-enroll.md)
 - [Android 디바이스 관리 설정](android-enroll.md) - 추가 단계 불필요
 
@@ -49,7 +49,7 @@ ms.locfileid: "75885955"
 관리되는 디바이스 사용자는 여러분이 검토할 등록 및 진단 로그를 수집할 수 있습니다. 로그 수집에 대한 지침은 다음과 같이 제공됩니다.
 
 - [IT 관리자에게 Android 등록 오류 보내기](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
-- [IT 관리자에게 iOS 오류 보내기](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
+- [IT 관리자에게 iOS/iPadOS 오류 보내기](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>일반적인 등록 문제
@@ -93,7 +93,7 @@ ms.locfileid: "75885955"
 
 4. 이것이 하면 사용자의 자격 증명이 Azure Active Directory와 올바로 동기화했는지 확인합니다.
 
-5. 사용자가 성공적으로 로그인하면 iOS 디바이스에 Intune 회사 포털 앱을 설치하고 등록하라는 메시지가 나타납니다. Android 디바이스에서는 Intune 회사 포털 앱을 수동으로 설치해야 합니다. 그런 후에 다시 등록할 수 있습니다.
+5. 사용자가 성공적으로 로그인하면 iOS/iPadOS 디바이스에 Intune 회사 포털 앱을 설치하고 등록하라는 메시지가 나타납니다. Android 디바이스에서는 Intune 회사 포털 앱을 수동으로 설치해야 합니다. 그런 후에 다시 등록할 수 있습니다.
 
 ### <a name="mdm-authority-not-defined"></a>MDM 기관이 정의되지 않았습니다
 **문제:** 사용자에게 **MDM 기관이 정의되지 않았습니다.** 오류가 표시됩니다.
@@ -244,23 +244,23 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 서버 인증서가 올바르게 설치되어 있으면 결과의 모든 항목에 확인 표시가 나타납니다. 위에서 설명한 문제가 있는 경우에는 보고서의 "Certificate Name Matches"(인증서 이름 일치) 및 "SSL Certificate is correctly Installed"(SSL 인증서가 올바르게 설치됨) 섹션에 빨간색 X가 표시됩니다.
 
 
-## <a name="ios-issues"></a>iOS 문제
+## <a name="iosipados-issues"></a>iOS/iPadOS 문제
 
-### <a name="ios-enrollment-errors"></a>iOS 등록 오류
-다음 표에서는 Intune에 iOS 디바이스를 등록하는 동안 최종 사용자에게 표시될 수 있는 오류를 보여 줍니다.
+### <a name="iosipados-enrollment-errors"></a>iOS/iPadOS 등록 오류
+다음 표에서는 Intune에 iOS/iPadOS 디바이스를 등록하는 동안 최종 사용자에게 표시될 수 있는 오류를 보여 줍니다.
 
 |오류 메시지|문제|해결 방법|
 |-------------|-----|----------|
-|NoEnrollmentPolicy|등록 정책을 찾을 수 없음|APNs(Apple Push Notification Service)와 같은 모든 등록 필수 구성 요소가 설정되었는지와 "플랫폼으로 iOS 사용"이 설정되었는지 확인합니다. 자세한 내용은 [iOS 및 Mac 디바이스 관리 설정](../ios-enroll.md)을 참조하세요.|
-|DeviceCapReached|너무 많은 모바일 디바이스가 이미 등록되어 있습니다.|사용자는 다른 모바일 디바이스를 등록하기 전에 현재 등록된 모바일 디바이스 중 하나를 회사 포털에서 제거해야 합니다. 다음 중에서 사용 중인 디바이스 유형에 대한 지침을 참조하세요. [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|모바일 디바이스가 회사 네트워크와 통신할 수 있도록 하는 인증서에 문제가 있습니다.<br /><br />|APNs(Apple Push Notification Service)에서 등록된 iOS 디바이스에 연결할 수 있는 채널을 제공합니다. 다음과 같은 경우 등록에 실패하면 이 메시지가 표시됩니다.<ul><li>APNs 인증서를 가져오는 단계가 완료되지 않았거나</li><li>APNs 인증서가 만료되었습니다.</li></ul>[Active Directory를 동기화하고 Intune에 사용자 추가](../fundamentals/users-add.md) 및 [사용자 및 디바이스 구성](../fundamentals/groups-add.md)에서 사용자를 설정하는 방법에 대한 정보를 검토하세요.|
-|AccountNotOnboarded|모바일 디바이스가 회사 네트워크와 통신할 수 있도록 하는 인증서에 문제가 있습니다.<br /><br />|APNs(Apple Push Notification Service)에서 등록된 iOS 디바이스에 연결할 수 있는 채널을 제공합니다. 다음과 같은 경우 등록에 실패하면 이 메시지가 표시됩니다.<ul><li>APNs 인증서를 가져오는 단계가 완료되지 않았거나</li><li>APNs 인증서가 만료되었습니다.</li></ul>자세한 내용은 [Microsoft Intune을 사용한 iOS 및 Mac 관리 설정](../ios-enroll.md)을 검토하세요.|
-|DeviceTypeNotSupported|사용자가 비 iOS 디바이스를 사용하여 등록하려고 했을 수 있습니다. 등록하려는 모바일 디바이스 유형이 지원되지 않습니다.<br /><br />디바이스가 iOS 버전 8.0 이상을 실행하고 있는지 확인합니다.<br /><br />|사용자 디바이스가 iOS 버전 8.0 이상을 실행하고 있어야 합니다.|
-|UserLicenseTypeInvalid|사용자 계정이 아직 필수 사용자 그룹의 멤버가 아니므로 디바이스를 등록할 수 없습니다.<br /><br />|사용자가 디바이스를 등록하려면 올바른 사용자 그룹의 구성원이어야 합니다. 이 메시지는 모바일 디바이스 관리 기관에 맞지 않는 라이선스 형식이 있음을 의미합니다. 예를 들어 다음 두 가지가 모두 true인 경우 이 오류가 표시됩니다.<ol><li>Intune이 모바일 디바이스 관리 기관으로 설정되었습니다.</li><li>System Center 2012 R2 Configuration Manager를 사용하고 있습니다.</li></ol>자세한 내용은 다음 문서를 검토하세요.<br /><br />[Microsoft Intune을 사용한 iOS 및 Mac 관리 설정](../ios-enroll.md)과 [Active Directory를 동기화하고 Intune에 사용자 추가](../fundamentals/users-add.md) 및 [사용자 및 디바이스 구성](../fundamentals/groups-add.md)의 사용자를 설정하는 방법에 대한 정보를 검토하세요.|
+|NoEnrollmentPolicy|등록 정책을 찾을 수 없음|APNs(Apple Push Notification Service)와 같은 모든 등록 필수 구성 요소가 설정되었는지와 "플랫폼으로 iOS/iPadOS 사용"이 설정되었는지 확인합니다. 자세한 내용은 [iOS/iPadOS 및 Mac 디바이스 관리 설정](../ios-enroll.md)을 참조하세요.|
+|DeviceCapReached|너무 많은 모바일 디바이스가 이미 등록되어 있습니다.|사용자는 다른 모바일 디바이스를 등록하기 전에 현재 등록된 모바일 디바이스 중 하나를 회사 포털에서 제거해야 합니다. 다음 중에서 사용 중인 디바이스 유형에 대한 지침을 참조하세요. [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS/iPadOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
+|APNSCertificateNotValid|모바일 디바이스가 회사 네트워크와 통신할 수 있도록 하는 인증서에 문제가 있습니다.<br /><br />|APNs(Apple Push Notification Service)에서 등록된 iOS/iPadOS 디바이스에 연결할 수 있는 채널을 제공합니다. 다음과 같은 경우 등록에 실패하면 이 메시지가 표시됩니다.<ul><li>APNs 인증서를 가져오는 단계가 완료되지 않았거나</li><li>APNs 인증서가 만료되었습니다.</li></ul>[Active Directory를 동기화하고 Intune에 사용자 추가](../fundamentals/users-add.md) 및 [사용자 및 디바이스 구성](../fundamentals/groups-add.md)에서 사용자를 설정하는 방법에 대한 정보를 검토하세요.|
+|AccountNotOnboarded|모바일 디바이스가 회사 네트워크와 통신할 수 있도록 하는 인증서에 문제가 있습니다.<br /><br />|APNs(Apple Push Notification Service)에서 등록된 iOS/iPadOS 디바이스에 연결할 수 있는 채널을 제공합니다. 다음과 같은 경우 등록에 실패하면 이 메시지가 표시됩니다.<ul><li>APNs 인증서를 가져오는 단계가 완료되지 않았거나</li><li>APNs 인증서가 만료되었습니다.</li></ul>자세한 내용은 [Microsoft Intune을 사용한 iOS/iPadOS 및 Mac 관리 설정](../ios-enroll.md)을 검토하세요.|
+|DeviceTypeNotSupported|사용자가 비 iOS 디바이스를 사용하여 등록하려고 했을 수 있습니다. 등록하려는 모바일 디바이스 유형이 지원되지 않습니다.<br /><br />디바이스가 iOS/iPadOS 버전 8.0 이상을 실행하고 있는지 확인합니다.<br /><br />|사용자 디바이스가 iOS/iPadOS 버전 8.0 이상을 실행하고 있어야 합니다.|
+|UserLicenseTypeInvalid|사용자 계정이 아직 필수 사용자 그룹의 멤버가 아니므로 디바이스를 등록할 수 없습니다.<br /><br />|사용자가 디바이스를 등록하려면 올바른 사용자 그룹의 구성원이어야 합니다. 이 메시지는 모바일 디바이스 관리 기관에 맞지 않는 라이선스 형식이 있음을 의미합니다. 예를 들어 다음 두 가지가 모두 true인 경우 이 오류가 표시됩니다.<ol><li>Intune이 모바일 디바이스 관리 기관으로 설정되었습니다.</li><li>System Center 2012 R2 Configuration Manager를 사용하고 있습니다.</li></ol>자세한 내용은 다음 문서를 검토하세요.<br /><br />[Microsoft Intune을 사용한 iOS/iPadOS 및 Mac 관리 설정](../ios-enroll.md)과 [Active Directory를 동기화하고 Intune에 사용자 추가](../fundamentals/users-add.md) 및 [사용자 및 디바이스 구성](../fundamentals/groups-add.md)의 사용자를 설정하는 방법에 대한 정보를 검토하세요.|
 |MdmAuthorityNotDefined|모바일 디바이스 관리 기관이 정의되지 않았습니다.<br /><br />|모바일 디바이스 관리 기관이 Intune에서 설정되지 않았습니다.<br /><br />그러면 [Microsoft Intune 30일 평가판으로 시작하기](../fundamentals/free-trial-sign-up.md)에서 “6단계: 모바일 디바이스 등록 및 앱 설치” 섹션의 항목 #1을 검토합니다.|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>디바이스가 비활성 상태이거나, 관리 콘솔에서 통신할 수 없습니다.
-**문제:** iOS 디바이스가 Intune 서비스에서 체크 인되지 않습니다. 디바이스는 보호되는 회사 리소스에 대한 액세스를 유지하기 위해 서비스와 정기적으로 체크 인해야 합니다. 디바이스가 체크 인되지 않으면 다음과 같이 됩니다.
+**문제:** iOS/iPadOS 디바이스가 Intune 서비스에서 체크 인되지 않습니다. 디바이스는 보호되는 회사 리소스에 대한 액세스를 유지하기 위해 서비스와 정기적으로 체크 인해야 합니다. 디바이스가 체크 인되지 않으면 다음과 같이 됩니다.
 
 - 장치가 Intune 서비스에서 정책, 앱 및 원격 명령을 받을 수 없습니다.
 - 관리자 콘솔에서 관리 상태가 **비정상**으로 표시됩니다.
@@ -268,15 +268,15 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 
 **해결 방법:** 최종 사용자에게 다음 해결 방법을 공유하여 회사 리소스에 대한 액세스 권한을 다시 얻도록 지원합니다.
 
-사용자는 iOS 회사 포털 앱을 시작하는 경우 디바이스와 Intune과의 연결이 끊겼는지 알 수 있습니다. 연결이 끊겼다고 감지되면 다시 연결하기 위해 Intune과 동기화를 자동으로 시도합니다(사용자에게는 **동기화하는 중...** 이라는 메시지가 표시됨).
+iOS/iPadOS 회사 포털 앱을 시작할 때 디바이스와 Intune과의 연결이 끊겼는지 알 수 있습니다. 연결이 끊겼다고 감지되면 다시 연결하기 위해 Intune과 동기화를 자동으로 시도합니다(사용자에게는 **동기화하는 중...** 이라는 메시지가 표시됨).
 
   ![동기화하는 중 알림](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-동기화에 성공한 경우 iOS 회사 포털 앱에 **동기화 성공** 인라인 알림이 표시되어 디바이스가 정상 상태임을 나타냅니다.
+동기화에 성공한 경우 iOS/iPadOS 회사 포털 앱에 **동기화 성공** 인라인 알림이 표시되어 디바이스가 정상 상태임을 나타냅니다.
 
   ![동기화 성공 알림](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-동기화에 실패할 경우 iOS 회사 포털 앱에 **동기화할 수 없음** 인라인 알림이 표시됩니다.
+동기화에 실패할 경우 iOS/iPadOS 회사 포털 앱에 **동기화할 수 없음** 인라인 알림이 표시됩니다.
 
   ![동기화할 수 없음 알림](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
@@ -287,7 +287,7 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 등록하고 나면 디바이스는 정상 상태로 되돌아가고 회사 리소스에 대한 액세스 권한을 다시 얻게 됩니다.
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>WS-Trust 1.3이 사용하도록 설정되어 있는지 확인
-**문제** DEP(디바이스 등록 프로그램) iOS 디바이스를 등록할 수 없습니다.
+**문제** DEP(디바이스 등록 프로그램) iOS/iPadOS 디바이스를 등록할 수 없습니다.
 
 사용자 선호도를 사용하여 DEP 디바이스를 등록하려면 WS-Trust 1.3 사용자 이름/혼합 엔드포인트를 사용하도록 설정하여 사용자 토큰을 요청해야 합니다. 기본적으로 Active Directory에서는 이 엔드포인트를 사용하도록 설정합니다. 설정된 엔드포인트 목록을 가져오려면 Get-AdfsEndpoint PowerShell cmdlet을 사용하고 trust/13/UsernameMixed 엔드포인트를 조회합니다. 예를 들면 다음과 같습니다.
 
@@ -301,7 +301,7 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 
 
 ### <a name="profile-installation-failed"></a>프로필 설치 실패
-**문제:** iOS 디바이스에서 **프로필 설치 실패** 오류가 사용자에게 표시됩니다.
+**문제:** iOS/iPadOS 디바이스에서 **프로필 설치 실패** 오류가 사용자에게 표시됩니다.
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>실패한 프로필 설치에 대한 문제 해결 절차
 
@@ -313,9 +313,9 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 
 4. [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)으로 이동하고 메시지가 표시되면 프로필을 설치하도록 시도합니다.
 
-5. iOS용 Safari가 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
+5. iOS/iPadOS용 Safari가 기본 브라우저이고 쿠키가 사용할 수 있도록 설정되어 있는지 확인합니다.
 
-### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>10분 넘게 사용자의 iOS 디바이스가 등록 화면에서 중단되었습니다.
+### <a name="users-iosipados-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>10분 넘게 사용자의 iOS/iPadOS 디바이스가 등록 화면에서 중단되었습니다.
 
 **문제**: 등록 중인 디바이스가 두 화면 중 하나에서 중단되었을 수 있습니다.
 - "Microsoft"에서 최종 구성 대기 중
@@ -323,11 +323,11 @@ Android 디바이스의 경우 중간 인증서가 [SSL 서버 hello](https://te
 
 이 문제는 다음과 같은 경우에 발생할 수 있습니다.
 - Apple 서비스에서 임시 중단이 발생했거나
-- iOS 등록은 테이블에 표시된 대로 VPP 토큰을 사용하도록 설정되어 있지만 VPP 토큰에 문제가 발생했습니다.
+- iOS/iPadOS 등록은 테이블에 표시된 대로 VPP 토큰을 사용하도록 설정되어 있지만 VPP 토큰에 문제가 발생했습니다.
 
 | 등록 설정 | 값 |
 | ---- | ---- |
-| 플랫폼 | iOS |
+| 플랫폼 | iOS/iPadOS |
 | 사용자 선호도 | 사용자 선호도를 사용하여 등록 |
 |Apple 설정 도우미 대신 회사 포털을 사용하여 인증 | 예 |
 | VPP를 사용하여 회사 포털 설치 | 토큰 사용: 토큰 주소 |

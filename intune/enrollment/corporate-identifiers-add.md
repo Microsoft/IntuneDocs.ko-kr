@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 51538f8994557bba718f0e8344b1da8d3c7193fa
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956306"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414416"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>회사 소유의 디바이스 식별
 
@@ -54,7 +54,7 @@ Intune 관리자는 14자리 IMEI 번호 또는 일련 번호가 나열된 쉼�
 | 디바이스 관리자 관리 Android OS v10 | 지원되지 않음 | 지원되지 않음 |
 | 기타 Android | 지원되지 않음 | 지원됨 |
 
-<!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
+<!-- When you upload serial numbers for corporate-owned iOS/iPadOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
 [Apple 디바이스 일련 번호를 확인하는 방법을 알아봅니다](https://support.apple.com/HT204308).<br>
 [Android 디바이스 일련 번호를 확인하는 방법을 알아봅니다](https://support.google.com/store/answer/3333000).
@@ -77,8 +77,8 @@ Intune 관리자는 14자리 IMEI 번호 또는 일련 번호가 나열된 쉼�
 ```
 
 > [!IMPORTANT]
-> 일부 Android 및 iOS 디바이스에는 IMEI 번호가 여러 개 있습니다. Intune은 등록된 디바이스당 하나의 IMEI 번호만 읽습니다. IMEI 번호를 가져오지만 Intune에서 인벤토리에 배정한 IMEI가 아닌 경우 디바이스는 회사 소유 디바이스가 아니라 개인 디바이스로 분류됩니다. 한 디바이스에 대해 여러 IMEI 번호를 가져오면 인벤토리에 배정되지 않은 번호는 등록 상태가 **알 수 없음**으로 표시됩니다.<br>
->다음 항목도 참고하세요. 일련 번호는 iOS 디바이스에 권장되는 식별 형식입니다.
+> 일부 Android 및 iOS/iPadOS 디바이스에는 IMEI 번호가 여러 개 있습니다. Intune은 등록된 디바이스당 하나의 IMEI 번호만 읽습니다. IMEI 번호를 가져오지만 Intune에서 인벤토리에 배정한 IMEI가 아닌 경우 디바이스는 회사 소유 디바이스가 아니라 개인 디바이스로 분류됩니다. 한 디바이스에 대해 여러 IMEI 번호를 가져오면 인벤토리에 배정되지 않은 번호는 등록 상태가 **알 수 없음**으로 표시됩니다.<br>
+>다음 항목도 참고하세요. 일련 번호는 iOS/iPadOS 디바이스에 권장되는 식별 형식입니다.
 >Android 일련 번호는 고유함이나 존재가 보장되지 않습니다. 일련 번호가 신뢰할 수 있는 디바이스 ID인지는 해당 디바이스 공급자에게 확인하세요.
 >디바이스에서 Intune으로 보고된 일련 번호는 디바이스의 Android 설정/정보 메뉴에 표시되는 ID와 일치하지 않을 수 있습니다. 디바이스 제조업체에 보고된 일련 번호 형식을 확인하세요.
 >점(.)을 포함하는 일련 번호를 사용하여 파일 업로드를 시도하면 업로드가 실패합니다. 점이 있는 일련 번호는 지원되지 않습니다.

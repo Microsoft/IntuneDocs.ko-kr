@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ea66458060417fc828b2b7735b384e8cd3e25a9
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839386"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437854"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Intune APP(앱 보호 정책) 데이터 전송 정책에 대한 예외를 만드는 방법
 
@@ -38,7 +38,7 @@ Intune Application Protection Policy 내에서 **앱이 다른 앱으로 데이�
 > 데이터 전송 정책 예외의 수정이나 추가는 제한 자르기, 복사 및 붙여넣기 같은 다른 앱 보호 정책에 영향을 미치지 않습니다. 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS 데이터 전송 예외
-IOS를 대상으로 하는 정책의 경우 URL 프로토콜에서 데이터 전송 예외를 구성할 수 있습니다. 예외를 추가하려면 지원되는 URL 프로토콜 정보 찾기 응용 프로그램의 개발자가 제공한 설명서를 확인합니다. IOS 데이터 전송 예외에 대한 자세한 내용은 [iOS 앱 보호 정책 설정 - 데이터 전송 예외](app-protection-policy-settings-ios.md#data-transfer-exemptions)를 참조하세요.
+iOS/iPadOS를 대상으로 하는 정책의 경우 URL 프로토콜에서 데이터 전송 예외를 구성할 수 있습니다. 예외를 추가하려면 지원되는 URL 프로토콜 정보 찾기 응용 프로그램의 개발자가 제공한 설명서를 확인합니다. iOS/iPadOS 데이터 전송 예외에 대한 자세한 내용은 [iOS 앱 보호 정책 설정 - 데이터 전송 예외](app-protection-policy-settings-ios.md#data-transfer-exemptions)를 참조하세요.
 
 > [!NOTE]
 > Microsoft는 타사 애플리케이션에 대한 앱 예외를 만들기 위한 URL 프로토콜을 수동으로 찾을 수 있는 방법이 없습니다. 
@@ -53,9 +53,9 @@ Android 대상으로 하는 정책의 경우 응용 프로그램 패키지 이�
 ### <a name="example"></a>예제
 **Webex** 패키지를 예외로 MAM 데이터 전송 정책에 추가함으로써 관리되는 Outlook 이메일 메시지 내의 Webex 링크는 Webex 애플리케이션에서 직접 열 수 있습니다. 데이터 전송은 관리되지 않는 다른 응용 프로그램에서 계속 제한됩니다.
 
-- iOS **Webex** 예제:   Intune 관리 앱이 호출할 수 있도록 **Webex** 앱을 제외하려면 다음 문자열에 대한 데이터 전송 예외를 추가해야 합니다. <code>wbx</code>
+- iOS/iPadOS **Webex** 예제:   Intune 관리 앱이 호출할 수 있도록 **Webex** 앱을 제외하려면 다음 문자열에 대한 데이터 전송 예외를 추가해야 합니다. <code>wbx</code>
     
-- iOS **Maps** 예제:   Intune 관리 앱이 호출할 수 있도록 네이티브 **Maps** 앱을 제외하려면 다음 문자열에 대한 데이터 전송 예외를 추가해야 합니다. <code>maps</code>
+- iOS/iPadOS **Maps** 예제:   Intune 관리 앱이 호출할 수 있도록 네이티브 **Maps** 앱을 제외하려면 다음 문자열에 대한 데이터 전송 예외를 추가해야 합니다. <code>maps</code>
 
 - Android **Webex** 예제:   Intune 관리 앱이 호출할 수 있도록 **Webex** 앱을 제외하려면 다음 문자열에 대한 데이터 전송 예외를 추가해야 합니다. <code>com.cisco.webex.meetings</code>
     
@@ -66,7 +66,7 @@ Android 대상으로 하는 정책의 경우 응용 프로그램 패키지 이�
     
     <code>com.samsung.android.messaging</code>
 
-- Android **인증서 설치 관리자** 예: Android용 Outlook에서 S/MIME 인증서(메일 첨부 파일로 제공)를 Android 키 저장소에 설치할 수 있도록 네이티브 **인증서 설치 관리자** 앱을 제외하려면 문자열 <code>com.android.certinstaller</code>에 대한 데이터 전송 예외를 추가해야 합니다. 자세한 내용은 [iOS 및 Android용 Outlook의 민감도 레이블 지정 및 보호](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)를 참조하세요.
+- Android **인증서 설치 관리자** 예: Android용 Outlook에서 S/MIME 인증서(메일 첨부 파일로 제공)를 Android 키 저장소에 설치할 수 있도록 네이티브 **인증서 설치 관리자** 앱을 제외하려면 문자열 <code>com.android.certinstaller</code>에 대한 데이터 전송 예외를 추가해야 합니다. 자세한 내용은 [iOS/iPadOS 및 Android용 Outlook의 민감도 레이블 지정 및 보호](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

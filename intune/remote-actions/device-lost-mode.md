@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune-Azure를 사용하여 iOS 분실 모드 활성화 | Microsoft Docs
-description: Microsoft Intune을 사용하여 분실되거나 도난당한 iOS 디바이스의 잠금 화면에서 표시하는 메시지를 사용자 지정하기 위해 분실 모드를 켜거나 시작합니다. 그리고 분실 모드 작업을 사용하는 경우 보안 및 개인 정보 취급 방침에 대한 세부 정보를 가져옵니다.
+title: Microsoft Intune-Azure를 사용하여 iOS/iPadOS 분실 모드 활성화 | Microsoft Docs
+description: Microsoft Intune을 사용하여 분실했거나 도난당한 iOS/iPadOS 디바이스의 잠금 화면에서 표시하는 메시지를 사용자 지정하기 위해 분실 모드를 켜거나 시작합니다. 그리고 분실 모드 작업을 사용하는 경우 보안 및 개인 정보 취급 방침에 대한 세부 정보를 가져옵니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712228"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415593"
 ---
-# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune을 사용하여 iOS 디바이스에서 분실 모드 설정
+# <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>Intune을 사용하여 iOS/iPadOS 디바이스에서 분실 모드 설정
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-**분실 모드** 디바이스 작업을 수행하면 분실했거나 도난당한 iOS 디바이스에 대해 분실 모드를 사용하도록 설정할 수 있습니다. 이 모드를 통해 디바이스의 잠금 화면에 표시되는 메시지 및 전화 번호를 입력할 수 있습니다. 디바이스에서 분실 모드를 사용하려면 감독 모드인 회사 소유 iOS 디바이스여야 합니다.
+**분실 모드** 디바이스 작업을 수행하면 분실했거나 도난당한 iOS/iPadOS 디바이스에 대해 분실 모드를 사용하도록 설정할 수 있습니다. 이 모드를 통해 디바이스의 잠금 화면에 표시되는 메시지 및 전화 번호를 입력할 수 있습니다. 디바이스에서 분실 모드를 사용하려면 감독 모드인 회사 소유 iOS/iPadOS 디바이스여야 합니다.
 
 ## <a name="supported-platforms"></a>지원되는 플랫폼
 
-- iOS 9.3 이상
+- iOS/iPadOS 9.3 이상
 
 다음에서는 이 기능이 지원되지 않습니다. 
 - Windows
@@ -43,7 +43,7 @@ ms.locfileid: "73712228"
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 3. **디바이스**를 선택한 다음, **모든 디바이스**를 선택합니다.
-4. 관리하는 디바이스 목록에서 iOS 디바이스를 선택한 다음 **분실 모드(감독 모드만)** 를 선택합니다.
+4. 관리하는 디바이스 목록에서 iOS/iPadOS 디바이스를 선택한 다음 **분실 모드(감독 모드만)** 를 선택합니다.
 5. **분실 모드**에서 **사용**을 선택합니다.
 6. **잠금 화면에서 표시할 메시지**에서 디바이스의 잠금 화면에 표시할 메시지를 입력합니다.
 7. 필요에 따라 **표시할 전화 번호** 상자에 전화 번호를 입력합니다.

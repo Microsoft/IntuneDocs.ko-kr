@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692111"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414604"
 ---
 # <a name="protecting-application-extensions"></a>애플리케이션 확장 보호
 
@@ -31,7 +31,7 @@ ms.locfileid: "75692111"
 
 ## <a name="add-ins-for-outlook-app"></a>Outlook 앱용 추가 기능
 
-Outlook 추가 기능을 사용하면 인기 있는 앱을 메일 클라이언트와 통합할 수 있습니다. Outlook용 추가 기능은 웹, Windows, Mac, Android 및 iOS용 Outlook에서 사용할 수 있습니다. Intune APP SDK 및 Intune 앱 보호 정책에는 Outlook용 추가 기능 관리를 위한 지원이 포함되어 있지 않으나 사용을 제한하는 다른 방법이 있습니다. 추가 기능은 Microsoft Exchange를 통해 관리되기 때문에 사용자는 Outlook 및 관리되지 않는 추가 기능 애플리케이션에서 데이터와 메시지를 공유할 수 있습니다(Exchange에서 사용자에 대해 추가 기능을 해제하지 않은 경우).
+Outlook 추가 기능을 사용하면 인기 있는 앱을 메일 클라이언트와 통합할 수 있습니다. Outlook용 추가 기능은 웹, Windows, Mac, Android 및 iOS/iPadOS용 Outlook에서 사용할 수 있습니다. Intune APP SDK 및 Intune 앱 보호 정책에는 Outlook용 추가 기능 관리를 위한 지원이 포함되어 있지 않으나 사용을 제한하는 다른 방법이 있습니다. 추가 기능은 Microsoft Exchange를 통해 관리되기 때문에 사용자는 Outlook 및 관리되지 않는 추가 기능 애플리케이션에서 데이터와 메시지를 공유할 수 있습니다(Exchange에서 사용자에 대해 추가 기능을 해제하지 않은 경우).
 
 최종 사용자가 Outlook 추가 기능에 액세스하고 설치하는 것을 중지하려면(이는 모든 Outlook 클라이언트에 영향을 줌) Exchange 관리 센터에서 역할을 다음과 같이 변경해야 합니다.
 

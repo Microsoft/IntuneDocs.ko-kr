@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune을 사용하여 사용자에게 사용자 지정 알림 보내기
 titleSuffix: Microsoft Intune
-description: Intune을 사용하여 사용자 지정 푸시 알림을 만들고 iOS 및 Android 디바이스의 사용자에게 보내기
+description: Intune을 사용하여 사용자 지정 푸시 알림을 만들고 iOS/iPadOS 및 Android 디바이스의 사용자에게 보내기
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,30 +18,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 412dc631f2092d1eb7d9a7332b903a4742472202
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517506"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413877"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune에서 사용자 지정 알림 보내기  
 
-Microsoft Intune를 사용하여 관리형 iOS 및 Android 디바이스의 사용자에게 사용자 지정 알림을 보낼 수 있습니다. 이러한 메시지는 디바이스에 있는 다른 애플리케이션의 알림이 표시되는 것처럼 사용자 디바이스의 회사 포털 앱 및 Microsoft Intune 앱에서 표준 푸시 알림으로 표시됩니다. Intune 사용자 지정 알림은 macOS 및 Windows 디바이스에서는 지원되지 않습니다.   
+Microsoft Intune를 사용하여 관리형 iOS/iPadOS 및 Android 디바이스의 사용자에게 사용자 지정 알림을 보낼 수 있습니다. 이러한 메시지는 디바이스에 있는 다른 애플리케이션의 알림이 표시되는 것처럼 사용자 디바이스의 회사 포털 앱 및 Microsoft Intune 앱에서 표준 푸시 알림으로 표시됩니다. Intune 사용자 지정 알림은 macOS 및 Windows 디바이스에서는 지원되지 않습니다.   
 
 사용자 지정 알림 메시지에는 짧은 제목과 500자 이하의 메시지 본문이 포함됩니다. 이러한 메시지는 일반 통신 용도에 맞게 사용자 지정할 수 있습니다.
 
-### <a name="what-the-notification-looks-like-on-an-ios-device"></a>iOS 디바이스에서 알림 모양
+### <a name="what-the-notification-looks-like-on-an-iosipados-device"></a>iOS/iPadOS 디바이스에서의 알림 모양
 
-iOS 디바이스에서 열린 회사 포털 앱의 알림은 다음 스크린샷과 유사합니다.
+iOS/iPadOS 디바이스에서 열린 회사 포털 앱의 알림은 다음 스크린샷과 유사합니다.
 
 > [!div class="mx-imgBorder"]
-> ![회사 포털 iOS 테스트 알림](./media/custom-notifications/105046-1.png)
+> ![회사 포털 iOS/iPadOS 테스트 알림](./media/custom-notifications/105046-1.png)
 
 디바이스가 잠긴 경우 알림은 다음 스크린샷과 비슷합니다.
 
 > [!div class="mx-imgBorder"]
-> ![잠긴 디바이스 iOS 테스트 알림](./media/custom-notifications/105046-2.png)
+> ![잠긴 디바이스 iOS/iPadOS 테스트 알림](./media/custom-notifications/105046-2.png)
 
 ### <a name="what-the-notification-looks-like-on-an-android-device"></a>Android 디바이스에서 알림 모양
 
@@ -75,14 +75,14 @@ Android 디바이스에서 열린 회사 포털 앱의 알림은 다음 스크�
 - 개별 디바이스로 메시지를 보낼 때는 시간당 최대 10개의 메시지를 동일한 장치로 보낼 수 있습니다. 
 - 알림을 그룹에 할당하여 여러 사용자 또는 디바이스에 알림을 보낼 수 있습니다. 그룹을 사용할 경우 각 알림은 최대 25개 그룹을 직접 대상으로 할 수 있습니다. 중첩된 그룹은 이 합계 계산에 포함되지 않습니다.  
 
-  그룹에는 사용자 또는 디바이스가 포함될 수 있지만 메시지는 사용자에게만 전송되며 사용자가 등록한 각 iOS 또는 Android 디바이스로 전송됩니다.  
+  그룹에는 사용자 또는 디바이스가 포함될 수 있지만 메시지는 사용자에게만 전송되며 사용자가 등록한 각 iOS/iPadOS 또는 Android 디바이스로 전송됩니다.  
 - 단일 디바이스로 알림을 보낼 수 있습니다. 그룹을 사용하는 대신, 디바이스를 선택한 후 원격 [디바이스 작업](device-management.md#available-device-actions)을 사용하여 사용자 지정 알림을 보냅니다.  
 
 **배달**:  
 - Intune에서 사용자의 회사 포털 앱 또는 Microsoft Intune 앱에 메시지를 보내면, 앱이 푸시 알림을 만듭니다. 사용자가 앱에 로그인하지 않아도 알림이 디바이스에서 푸시됩니다.  
 - Intune뿐 아니라 회사 포털 앱 및 Microsoft Intune 앱은 사용자 지정 알림의 전달을 보장할 수 없습니다. 사용자 지정 알림은 몇 시간의 지연 후에 표시될 수 있으므로 긴급한 메시지에는 가능하면 사용하지 않아야 합니다.  
-- Intune의 사용자 지정 알림 메시지는 디바이스에서 표준 푸시 알림으로 표시됩니다. 알림을 받을 때 iOS 디바이스에서 회사 포털 앱이 열리는 경우 알림은 푸시 알림이 아니고 앱에 표시됩니다.  
-- 사용자 지정 알림은 iOS 및 Android 디바이스 모두에서 디바이스 설정에 따라 잠금 화면에 표시될 수 있습니다.  
+- Intune의 사용자 지정 알림 메시지는 디바이스에서 표준 푸시 알림으로 표시됩니다. 알림을 받을 때 iOS/iPadOS 디바이스에서 회사 포털 앱이 열리는 경우 알림은 푸시 알림이 아니고 앱에 표시됩니다.  
+- 사용자 지정 알림은 iOS/iPadOS 및 Android 디바이스 모두에서 디바이스 설정에 따라 잠금 화면에 표시될 수 있습니다.  
 - Android 디바이스에서는 다른 앱이 사용자 지정 알림 데이터에 액세스할 수도 있습니다. 따라서 중요한 통신에는 사용자 지정 알림을 사용하지 마세요.  
 - 최근에 등록 취소된 디바이스의 사용자나 그룹에서 제거된 사용자가 이후 해당 그룹에 전송된 사용자 지정 알림을 계속 받을 수 있습니다.  마찬가지로 그룹에 사용자 지정 알림을 보낸 후 그룹에 사용자를 추가하는 경우 새로 추가된 사용자가 이전에 전송된 알림 메시지를 받을 수 있습니다.  
 
@@ -127,7 +127,7 @@ Intune은 메시지를 즉시 처리합니다. 메시지가 전송되는 유일�
 
 디바이스에서 사용자에게 Intune에서 보낸 사용자 지정 알림 메시지가 회사 포털 앱 또는 Microsoft Intune 앱의 표준 푸시 알림으로 표시됩니다. 이러한 알림은 사용자가 디바이스의 다른 앱에서 받는 푸시 알림과 비슷합니다.  
 
-iOS 디바이스에서 알림을 받을 때 회사 포털 앱이 열리는 경우 알림은 푸시 알림이 되지 않고 포털 앱에 표시됩니다.  
+iOS/iPadOS 디바이스에서 알림을 받을 때 회사 포털 앱이 열리는 경우 알림은 푸시 알림이 되지 않고 포털 앱에 표시됩니다.  
 
 알림은 사용자가 해제할 때까지 유지됩니다.  
 

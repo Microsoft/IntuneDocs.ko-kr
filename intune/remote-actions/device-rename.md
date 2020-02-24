@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f5ee9a0fe27c3cf9de758fd7155dbd127fb1e5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 11b339a3e94e60db43e8237d9f3d2c729b48a57d
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712210"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413604"
 ---
 # <a name="rename-a-device-in-intune"></a>Intune에서 디바이스 이름 바꾸기
 
@@ -29,7 +29,7 @@ ms.locfileid: "73712210"
 
 다음 유형의 디바이스 이름을 바꿀 수 있습니다.
 - 회사 소유 Windows 
-- 감독되는 iOS
+- iOS/iPadOS 감독
 - 회사 소유 MacOS 10
 
 이 기능은 현재 하이브리드 Azure AD Windows 디바이스의 이름 바꾸기를 지원하지 않습니다.

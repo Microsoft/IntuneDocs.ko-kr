@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207250"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258099"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -76,7 +76,7 @@ Intune에서 PKCS 인증서를 사용하려면 다음 인프라가 필요합니�
   - Microsoft Intune용 PFX 인증서 커넥터를 서버에 설치합니다.  
   - 중요 업데이트를 자동으로 받으려면 커넥터가 포트 **443**을 통해 **autoupdate.msappproxy.net**에 연결할 수 있도록 방화벽을 열어야 합니다.   
 
-  Intune과 커넥터가 액세스하는 네트워크 엔드포인트에 대한 자세한 내용은 [Microsoft Intune에 대한 네트워크 엔드포인트](../fundamentals/intune-endpoints.md)를 참조하세요.
+  자세한 내용은 [Microsoft Intune용 네트워크 엔드포인트](../fundamentals/intune-endpoints.md)와 [Intune 네트워크 구성 요구 사항 및 대역폭](../fundamentals/network-bandwidth-use.md)을 참조하세요.
 
 - **Windows Server**:  
   Windows Server를 사용하여 다음 항목을 호스트합니다.
@@ -290,7 +290,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 
 두 인증서 커넥터의 업데이트가 정기적으로 릴리스됩니다. 커넥터를 업데이트할 때 여기서 변경 내용을 읽을 수 있습니다.
 
-*Microsoft Intune용 PFX 인증서 커넥터*는 [자동 업데이트를 지원](#requirements)하는 반면, *Intune 인증서 커넥터*는 수동으로 업데이트해야 합니다.
+*Microsoft Intune용 PFX 인증서 커넥터*는 [자동 업데이트를 지원](#requirements)하는 반면, *Intune Certificate Connector*는 수동으로 업데이트해야 합니다.
 
 ### <a name="may-17-2019"></a>2019년 5월 17일
 

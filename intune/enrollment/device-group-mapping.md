@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: f0976ff8e6ec45f1f861fd4a4e0474255d701ae4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955374"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414249"
 ---
 # <a name="categorize-devices-into-groups"></a>디바이스를 그룹으로 분류
 
@@ -32,7 +32,7 @@ ms.locfileid: "74955374"
 
 디바이스 범주에는 다음 워크플로가 사용됩니다.
 1. 사용자가 자신의 디바이스를 등록할 때 선택할 수 있는 범주를 만듭니다.
-2. iOS 및 Android 디바이스의 사용자는 디바이스를 등록할 경우 구성된 범주 목록에서 범주를 선택해야 합니다. Windows 디바이스에 범주를 할당하려면 사용자는 회사 포털 웹 사이트를 사용해야 합니다.
+2. iOS/iPadOS 및 Android 디바이스의 사용자는 디바이스를 등록할 경우 구성된 범주 목록에서 범주를 선택해야 합니다. Windows 디바이스에 범주를 할당하려면 사용자는 회사 포털 웹 사이트를 사용해야 합니다.
 3. 그런 다음 이러한 그룹에 정책 및 앱을 배포할 수 있습니다.
 
 원하는 모든 디바이스 범주를 만들 수 있습니다. 예를 들면 다음과 같습니다.
@@ -76,13 +76,13 @@ ms.locfileid: "74955374"
 
 ## <a name="after-you-configure-device-groups"></a>디바이스 그룹 구성 후
 
-iOS 및 Android 디바이스의 사용자는 해당 디바이스를 등록할 경우 구성된 범주 목록에서 범주를 선택해야 합니다. 범주를 선택하고 등록을 완료한 후에 이 디바이스는 선택한 범주에 해당하는 Intune 디바이스 그룹 또는 Active Directory 보안 그룹에 추가됩니다.
+iOS/iPadOS 및 Android 디바이스의 사용자는 해당 디바이스를 등록할 경우 구성된 범주 목록에서 범주를 선택해야 합니다. 범주를 선택하고 등록을 완료한 후에 이 디바이스는 선택한 범주에 해당하는 Intune 디바이스 그룹 또는 Active Directory 보안 그룹에 추가됩니다.
 
 Windows 사용자는 회사 포털 웹 사이트를 사용해 범주를 선택해야 합니다.
 
 사용자는 플랫폼과 관계없이 디바이스를 등록한 후 언제든지 toportal.manage.microsoft.com으로 이동할 수 있습니다. 사용자가 회사 포털 웹 사이트에 액세스하여 **내 디바이스**로 이동하게 합니다. 사용자는 페이지에 나열되어 있는 등록된 디바이스를 선택하고 범주를 선택할 수 있습니다.
 
-범주를 선택하고 나면 작성한 해당 그룹에 디바이스가 자동으로 추가됩니다. 범주를 구성하기 전에 디바이스가 이미 등록돼 있는 경우 회사 포털 웹 사이트에서 디바이스에 대한 알림을 사용자에게 표시합니다. 이렇게 하면 사용자는 다음에 iOS 또는 Android에서 회사 포털 앱에 액세스할 때 범주를 선택할 수 있습니다.
+범주를 선택하고 나면 작성한 해당 그룹에 디바이스가 자동으로 추가됩니다. 범주를 구성하기 전에 디바이스가 이미 등록돼 있는 경우 회사 포털 웹 사이트에서 디바이스에 대한 알림을 사용자에게 표시합니다. 이렇게 하면 사용자는 다음에 iOS/iPadOS 또는 Android에서 회사 포털 앱에 액세스할 때 범주를 선택할 수 있습니다.
 
 ## <a name="further-information"></a>추가 정보
 - Azure Portal에서 디바이스 범주를 편집할 수 있지만, 해당 범주를 참조하는 모든 Azure AD 보안 그룹을 수동으로 업데이트해야 합니다.

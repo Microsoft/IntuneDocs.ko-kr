@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812488"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415557"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune에서 디바이스 암호 다시 설정 또는 제거
 
@@ -35,8 +35,8 @@ ms.locfileid: "76812488"
 | ---- | ---- |
 | 버전 6.x 이하의 Android 디바이스 | 예 |
 | 디바이스 소유자로 등록된 Android Enterprise 디바이스 | 예 |
-| iOS 디바이스 | 예 |
-| 사용자 등록에 등록된 iOS 디바이스 | 아니요 |
+| iOS/iPadOS 디바이스 | 예 |
+| 사용자 등록에 등록된 iOS/iPadOS 디바이스 | 아니요 |
 | 작업 프로필에 등록된 Android 디바이스 | 아니요 |
 | 버전 7.0 이상의 Android 디바이스 | 아니요 |
 | macOS | 아니요 |
@@ -68,9 +68,9 @@ ms.locfileid: "76812488"
 8\.x 이상 버전을 실행 중이고 회사 프로필에 등록된 Android 엔터프라이즈 디바이스의 경우 등록이 완료된 직후에 재설정된 암호를 활성화한다는 알림이 최종 사용자에게 표시됩니다. 회사 프로필 암호가 필요하고 설정된 경우 알림이 표시됩니다. 암호를 입력하면 알림은 해제됩니다.
 
 
-## <a name="remove-ios-passcodes"></a>iOS 암호 제거
+## <a name="remove-iosipados-passcodes"></a>iOS/iPadOS 암호 제거
 
-다시 설정하는 대신 iOS 디바이스에서 암호가 제거됩니다. 암호 준수 정책이 설정되어 있는 경우 디바이스는 설정에서 새 암호를 설정하라는 메시지를 사용자에게 표시합니다.
+다시 설정하는 대신 iOS/iPadOS 디바이스에서 암호가 제거됩니다. 암호 준수 정책이 설정되어 있는 경우 디바이스는 설정에서 새 암호를 설정하라는 메시지를 사용자에게 표시합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

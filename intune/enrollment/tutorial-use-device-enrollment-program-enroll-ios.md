@@ -1,7 +1,7 @@
 ---
-title: 자습서 - Apple Business Manager 또는 디바이스 등록 프로그램을 사용하여 Intune에서 iOS 디바이스 등록
+title: 자습서 - Apple Business Manager 또는 디바이스 등록 프로그램을 사용하여 Intune에서 iOS/iPadOS 디바이스 등록
 titleSuffix: Microsoft Intune
-description: 이 자습서에서는 ABM에서 Apple의 기업 디바이스 등록 기능을 설정하여 Intune에서 iOS 디바이스를 등록합니다.
+description: 이 자습서에서는 ABM에서 Apple의 기업 디바이스 등록 기능을 설정하여 Intune에서 iOS/iPadOS 디바이스를 등록합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,14 +15,14 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 9aab0233c05416fc50413a7889435cb221179730
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971773"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415134"
 ---
-# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>자습서: ABM(Apple Business Manager)의 Apple 기업 디바이스 등록 기능을 사용하여 Intune에서 iOS 디바이스 등록
+# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-iosipados-devices-in-intune"></a>자습서: ABM(Apple Business Manager)의 Apple 기업 디바이스 등록 기능을 사용하여 Intune에서 iOS/iPadOS 디바이스 등록
 Apple Business Manager의 디바이스 등록 기능을 사용하면 디바이스를 간단하게 등록할 수 있습니다. Intune에서는 Apple의 이전 DEP(디바이스 등록 프로그램) 포털도 지원하지만 이제 새 Apple Business Manager를 사용하는 것이 좋습니다. Microsoft Intune 및 Apple Corporate Device Enrollment를 사용할 경우 사용자가 처음 디바이스를 켜면 자동으로 디바이스가 안전하게 등록됩니다. 따라서 각 디바이스를 개별적으로 설정하지 않고도 여러 사용자에게 디바이스를 제공할 수 있습니다. 
 
 이 자습서에서는 다음 작업을 수행하는 방법을 알아봅니다.
@@ -40,7 +40,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](../fundamentals/free-tri
 - [Apple MDM 푸시 인증서](apple-mdm-push-certificate-get.md) 가져오기
 
 ## <a name="get-an-apple-device-enrollment-token"></a>Apple 디바이스 등록 토큰 받기
-Apple의 회사 등록 기능으로 iOS 디바이스를 등록하려면 먼저 Apple 디바이스 등록 토큰(.pem) 파일이 필요합니다. 이 토큰을 통해 Intune이 회사 보유 Apple 디바이스 정보를 동기화할 수 있습니다. 또한 Apple에 등록 프로필을 업로드하고 이러한 프로필에 디바이스를 할당할 수 있습니다.
+Apple의 회사 등록 기능으로 iOS/iPadOS 디바이스를 등록하려면 먼저 Apple 디바이스 등록 토큰(.pem) 파일이 필요합니다. 이 토큰을 통해 Intune이 회사 보유 Apple 디바이스 정보를 동기화할 수 있습니다. 또한 Apple에 등록 프로필을 업로드하고 이러한 프로필에 디바이스를 할당할 수 있습니다.
 
 ABM 또는 DEP 포털을 사용하여 디바이스 등록 토큰을 만듭니다. 또한 관리를 위해 포털을 사용하여 디바이스를 Intune에 할당할 수 있습니다.
 
@@ -78,13 +78,13 @@ ABM 또는 DEP 포털을 사용하여 디바이스 등록 토큰을 만듭니다
 11. 범위 태그를 사용하여 관리자의 토큰 액세스를 제한하려면 범위를 선택합니다.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 등록 프로필 만들기
-이제 토큰을 설치했으므로 회사 소유 iOS 디바이스의 등록 프로필을 만들 수 있습니다. 디바이스 등록 프로필은 등록 중에 디바이스 그룹에 적용되는 설정을 정의합니다.
+이제 토큰을 설치했으므로 회사 소유 iOS/iPadOS 디바이스의 등록 프로필을 만들 수 있습니다. 디바이스 등록 프로필은 등록 중에 디바이스 그룹에 적용되는 설정을 정의합니다.
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택합니다.
 
 2. 방금 설치한 토큰을 선택하고, **프로필** > **프로필 만들기**를 선택합니다.
 
-3. **프로필 만들기**에서 **이름**에 *TestDEPProfile*을 입력하고 **설명**에 *iOS 디바이스용 DEP 테스트*를 입력합니다. 사용자는 이러한 세부 정보를 볼 수 없습니다.
+3. **프로필 만들기**에서 **이름**에 *TestDEPProfile*을 입력하고 **설명**에 *iOS/iPadOS 디바이스용 DEP 테스트*를 입력합니다. 사용자는 이러한 세부 정보를 볼 수 없습니다.
 
 4. **플랫폼**에서 **iOS**를 선택합니다.
 
@@ -96,11 +96,11 @@ ABM 또는 DEP 포털을 사용하여 디바이스 등록 토큰을 만듭니다
 
 8. 사용자 선호도로 등록, 회사 포털을 사용하여 인증, VPP를 사용하여 회사 포털 설치를 선택한 경우 인증될 때까지 단일 앱 모드에서 회사 포털을 실행할지 결정합니다. 이 설정을 사용하면 사용자가 회사 등록을 마치기 전까지는 다른 앱에 액세스하지 못하게 할 수 있습니다. 등록이 완료될 때까지 사용자에게 이 흐름을 제한하려면 **인증될 때까지 단일 앱 모드에서 포털 실행**에서 **예**를 선택합니다. 
 
-9. **디바이스 관리 설정**을 선택하고, **감독됨** 아래에서 **예**를 선택합니다. 감독되는 디바이스는 회사 iOS 디바이스에 대한 대부분의 관리 옵션을 제공합니다.
+9. **디바이스 관리 설정**을 선택하고, **감독됨** 아래에서 **예**를 선택합니다. 감독되는 디바이스는 회사 iOS/iPadOS 디바이스에 대한 대부분의 관리 옵션을 제공합니다.
 
 10. 사용자가 회사 디바이스의 관리를 제거할 수 없도록 **잠긴 등록**에서 **예**를 선택합니다. 
 
-11. **컴퓨터와 동기화**에서 옵션을 선택하여 iOS 디바이스가 컴퓨터에 동기화할 수 있는지 여부를 결정합니다.
+11. **컴퓨터와 동기화**에서 옵션을 선택하여 iOS/iPadOS 디바이스가 컴퓨터에 동기화할 수 있는지 여부를 결정합니다.
 
 12. 기본적으로 Apple은 디바이스를 디바이스 유형(예: iPad)으로 명명합니다. 다른 이름 템플릿을 제공하려면 **디바이스 이름 템플릿 적용**에서 **예**를 선택합니다. 디바이스에 적용할 이름을 입력합니다. 여기서 *{{SERIAL}}* 및 *{{DEVICETYPE}}* 문자열은 각 디바이스의 일련 번호와 디바이스 유형을 대체합니다. 그렇지 않으면 **디바이스 이름 템플릿 적용**에서 **아니요**를 선택합니다.
 
@@ -118,9 +118,9 @@ ABM 또는 DEP 포털을 사용하여 디바이스 등록 토큰을 만듭니다
 
 ABM, ASM 또는 DEP에 등록 프로그램 토큰을 설정하고 디바이스에 MDM 서버를 할당한 후에는 이 디바이스가 Intune 서비스에 동기화되도록 기다리거나 직접 동기화를 푸시할 수 있습니다. 수동 동기화를 하지 않으면 디바이스가 Azure Portal에 표시되는 데 최대 24시간이 소요됩니다.
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택한 후 **디바이스** > **동기화**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **등록 프로그램 토큰** > 목록에서 토큰 선택 > **디바이스** > **동기화**를 선택합니다.
 
-## <a name="assign-an-enrollment-profile-to-ios-devices"></a>iOS 디바이스에 등록 프로필 할당
+## <a name="assign-an-enrollment-profile-to-iosipados-devices"></a>iOS/iPadOS 디바이스에 등록 프로필 할당
 
 먼저 등록 프로그램 프로필을 디바이스에 할당해야 디바이스를 등록할 수 있습니다. 이러한 디바이스는 Apple에서 Intune으로 동기화되며 ABM, ASM 또는 DEP 포털에서 적합한 MDM 토큰에 할당되어야 합니다.
 
@@ -134,12 +134,12 @@ Apple과 Intune 간의 동기화 및 관리를 설정했으며, DEP 디바이스
 
 ## <a name="next-steps"></a>다음 단계
 
-iOS 디바이스를 등록할 수 있는 기타 옵션에 대한 자세한 정보를 찾을 수 있습니다.
+iOS/iPadOS 디바이스를 등록할 수 있는 기타 옵션에 대한 자세한 정보를 찾을 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [자세한 iOS DEP 등록 문서](device-enrollment-program-enroll-ios.md)
+> [자세한 iOS/iPadOS DEP 등록 문서](device-enrollment-program-enroll-ios.md)
 
 <!--commenting out because inaccurate>
 ## Clean up resources
-<!--If you don't want to use iOS corporate enrolled devices anymore, you can delete them.>
+<!--If you don't want to use iOS/iPadOS corporate enrolled devices anymore, you can delete them.>
 <!--- If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).>

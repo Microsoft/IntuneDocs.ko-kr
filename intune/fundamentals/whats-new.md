@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 7018e2ab4290219c752f44b4b391822438461e8e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125033"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415076"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -55,7 +55,11 @@ ms.locfileid: "77125033"
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-february-03-2020"></a>2020년 2월 3일이 포함된 주
+## <a name="week-of-february-10-2020"></a>2020년 2월 10일이 포함된 주
+
+### <a name="windows-7-ends-extended-support---3042987--"></a>Windows 7 확장 지원 종료 <!--3042987-->
+Windows 7은 2020년 1월 14일부로 확장 지원이 종료되었습니다. Intune은 Windows 7 동시 실행 디바이스를 지원하지 않습니다. PC 보호에 유용한 기술 지원과 자동 업데이트를 더 이상 사용할 수 없습니다. Windows 10으로 업그레이드해야 합니다. 자세한 내용은 [변경 계획 블로그 게시물](https://aka.ms/Windows7_Intune)을 참조하세요.
+
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>앱 관리
@@ -63,11 +67,11 @@ ms.locfileid: "77125033"
 #### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Windows 10 디바이스에서 Microsoft Edge 버전 77 이상<!-- 5843584 -->
 이제 Intune은 Windows 10 디바이스에서 Microsoft Edge 버전 77 이상 제거를 지원합니다. 자세한 내용은 [Microsoft Intune에 Microsoft Edge for Windows 10 추가](~/apps/apps-windows-edge.md)를 참조하세요.
 
-#### <a name="company-portal-app-improved-performance---6178652---"></a>회사 포털 앱 향상된 성능<!-- 6178652 -->
-Surface Pro X와 같이 ARM64 프로세서를 사용하는 디바이스의 향상된 성능을 지원하도록 회사 포털 앱이 업데이트되었습니다. 이전에는 에뮬레이트된 ARM32 모드에서 회사 포털이 작동했습니다. 이제 회사 포털 앱은 기본적으로 ARM64에 대해 컴파일됩니다. 회사 포털 앱에 대한 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](~/apps/company-portal-app.md)을 참조하세요.
-
 #### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>회사 포털에서 화면이 제거됨, Android 회사 프로필 등록<!--6103987 -->
 사용자 환경을 간소화하기 위해 **다음 단계** 화면이 회사 포털의 Android 회사 프로필 등록 흐름에서 제거되었습니다. [Android 회사 프로필에 등록](/intune-user-help/enroll-device-android-work-profile)으로 이동하여 업데이트된 Android 회사 프로필 등록 흐름을 확인합니다.  
+
+#### <a name="company-portal-app-improved-performance---6178652---"></a>회사 포털 앱 향상된 성능<!-- 6178652 -->
+Surface Pro X와 같이 ARM64 프로세서를 사용하는 디바이스의 향상된 성능을 지원하도록 회사 포털 앱이 업데이트되었습니다. 이전에는 에뮬레이트된 ARM32 모드에서 회사 포털이 작동했습니다. 이제 버전 10.4.7080.0 이상의 회사 포털 앱은 기본적으로 ARM64에 대해 컴파일됩니다. 회사 포털 앱에 대한 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](~/apps/company-portal-app.md)을 참조하세요.
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>2020년 1월 27일이 포함된 주

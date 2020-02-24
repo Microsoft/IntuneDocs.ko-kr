@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 697e950c881a0c4233358d8363aa6cc7ec0006b2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832691"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414500"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>장비 등록 프로그램 또는 Apple School Manager를 사용하여 macOS 디바이스 자동 등록
 
@@ -80,7 +80,7 @@ Apple 포털을 사용하여 토큰을 만듭니다. 관리용으로 Intune에 �
 
 5. **&lt;ServerName&gt; 추가** 대화 상자가 열리고 **공개 키 업로드**가 표시됩니다. **파일 선택...** 을 선택하여 .pem 파일을 업로드하고 **다음**을 선택합니다.
 
-6. **배포 프로그램**&gt;**디바이스 등록 프로그램**&gt;**디바이스 관리**로 이동합니다.
+6. **배포 프로그램** &gt; **디바이스 등록 프로그램** &gt; **디바이스 관리**로 이동합니다.
 7. **디바이스 선택 기준**에서 디바이스를 식별하는 방법을 지정합니다.
     - **일련 번호**
     - **주문 번호**
@@ -165,7 +165,7 @@ Apple 포털을 사용하여 토큰을 만듭니다. 관리용으로 Intune에 �
 
 이제 Intune에 디바이스 관리 권한이 있으므로 Intune을 Apple과 동기화하여 Azure 포털의 Intune에서 관리되는 디바이스를 확인할 수 있습니다.
 
-1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **macOS** > **macOS 등록** > **등록 프로그램 토큰** > 목록에서 토큰 선택 > **디바이스** > **동기화**를 선택합니다. ![등록 프로그램 디바이스 노드가 선택되고 동기화 링크를 선택하는 스크린샷](./media/device-enrollment-program-enroll-macos/image06.png)
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **macOS** > **macOS 등록** > **등록 프로그램 토큰** > 목록에서 토큰 선택 > **디바이스** > **동기화**를 선택합니다. ![등록 프로그램 디바이스 노드가 선택되고 동기화 링크를 선택하는 스크린샷](./media/device-enrollment-program-enroll-macos/image06.png)
 
    허용되는 등록 프로그램 트래픽에 대한 Apple 약관을 준수하기 위해 Intune에서는 다음과 같은 제한 사항을 적용합니다.
    - 전체 동기화는 7일마다 한 번씩만 실행할 수 있습니다. 전체 동기화 중에 Intune은 Intune에 연결된 Apple MDM 서버에 할당된 일련 번호의 전체 업데이트된 목록을 가져옵니다. DEP 포털의 Apple MDM 서버에서 할당을 취소하지 않고 등록 프로그램 디바이스를 Intune 포털에서 삭제하면 전체 동기화가 실행될 때까지 Intune으로 다시 가져오지 않습니다.   
@@ -181,7 +181,7 @@ Apple 포털을 사용하여 토큰을 만듭니다. 관리용으로 Intune에 �
 
 ### <a name="assign-a-default-profile"></a>기본 프로필 할당
 
-특정 토큰을 사용하여 등록하는 모든 디바이스에 적용할 기본 macOS 및 iOS 프로필을 선택할 수 있습니다. 
+특정 토큰을 사용하여 등록하는 모든 디바이스에 적용할 기본 macOS 및 iOS/iPadOS 프로필을 선택할 수 있습니다. 
 
 1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **macOS** > **macOS 등록** > **등록 프로그램 토큰**을 선택하고 목록에서 토큰을 선택합니다.
 2. **기본 프로필 설정**을 선택하고 드롭다운 목록에서 프로필을 선택한 다음 **저장**을 선택합니다. 이 프로필은 토큰에 등록하는 모든 디바이스에 적용됩니다.

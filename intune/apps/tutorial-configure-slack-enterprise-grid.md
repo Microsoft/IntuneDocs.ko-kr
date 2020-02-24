@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206910"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415473"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>자습서: EMM 및 앱 구성에 Intune을 사용하도록 Slack 구성
 
@@ -69,7 +69,7 @@ Intune에서 EMM용 Slack을 관리 iOS 앱으로 추가하고 Slack 사용자�
 10. **저장**을 클릭합니다.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>EMM용 Slack을 위한 앱 구성 정책 추가
-EMM iOS용 Slack을 위한 앱 구성 정책을 추가합니다. 관리 디바이스의 앱 구성 정책은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 정책을 따로 추가해야 합니다.
+EMM iOS/iPadOS용 Slack을 위한 앱 구성 정책을 추가합니다. 관리 디바이스의 앱 구성 정책은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 정책을 따로 추가해야 합니다.
 1. 관리 센터에서 **앱** > **앱 구성 정책** > **추가** > **관리 디바이스**를 선택합니다.
 2. 이름에 ‘Slack 앱 구성 정책 테스트’를 입력합니다.
 3. 디바이스 등록 유형에서 **관리 디바이스**가 선택되었는지 확인합니다.

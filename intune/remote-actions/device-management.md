@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754255"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413781"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune 디바이스 관리란?
 
@@ -36,7 +36,7 @@ IT 관리자의 경우 관리되는 디바이스가 위험으로부터 해당 �
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 3. **디바이스**를 선택합니다. 이 보기는 개별 디바이스에 대한 자세한 정보 및 다음을 포함해 이 정보로 할 수 있는 작업을 표시합니다.
 
-   - **개요**는 등록된 디바이스에 대한 시각적 스냅샷을 표시하고 또한 얼마나 많은 디바이스가 Android, iOS 등을 포함한 다른 플랫폼을 사용하는지를 표시합니다.
+   - **개요**는 등록된 디바이스에 대한 시각적 스냅샷을 표시하고 또한 얼마나 많은 디바이스가 Android, iOS/iPadOS 등을 포함한 다른 플랫폼을 사용하는지를 표시합니다.
    - **모든 디바이스** - 관리하는 등록된 디바이스의 목록을 표시합니다.
 
      **내보내기** 기능을 사용하여 10,000개(Internet Explorer) 또는 30,000개(Microsoft Edge, Chrome)씩 늘어나도록 모든 디바이스의 .csv 목록을 만듭니다.
@@ -70,7 +70,7 @@ IT 관리자의 경우 관리되는 디바이스가 위험으로부터 해당 �
   - [Android 원격 제어](teamviewer-support.md)
   - [디바이스 동기화](device-sync.md)
   - [디바이스 이름 바꾸기](device-rename.md)
-  - [사용자 지정 알림 보내기](custom-notifications.md#send-a-custom-notification-to-a-single-device)(Android, iOS)
+  - [사용자 지정 알림 보내기](custom-notifications.md#send-a-custom-notification-to-a-single-device)(Android, iOS/iPadOS)
   - [BitLocker 키 순환](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys)(Windows에만 해당)
 
 ## <a name="next-steps"></a>다음 단계

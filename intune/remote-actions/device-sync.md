@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 21167b226556100e7e9920f31f859d6d6ce2a7bb
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713441"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415539"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>디바이스를 동기화하여 Intune에서 최신 정책과 작업 가져오기
 
@@ -49,7 +49,7 @@ ms.locfileid: "73713441"
 
 ## <a name="retryable-error-codes"></a>다시 시도 가능 오류 코드
 
-관리자가 **동기화** 디바이스 작업을 실행하는 경우 실패하고 다시 시도 가능 오류 코드가 발생한 iOS 및 Android 앱이 디바이스에 제공됩니다. 그러나 다시 시도 가능이 아닌 오류 코드가 발생한 앱은 디바이스에서 제공되기 전에 7일 동안 기다려야 합니다.
+관리자가 **동기화** 디바이스 작업을 실행하는 경우 실패하고 다시 시도 가능 오류 코드가 발생한 iOS/iPadOS 및 Android 앱이 디바이스에 제공됩니다. 그러나 다시 시도 가능이 아닌 오류 코드가 발생한 앱은 디바이스에서 제공되기 전에 7일 동안 기다려야 합니다.
 
 
 | 오류 코드  | 제안되는 설명 | 다시 시도 가능 |

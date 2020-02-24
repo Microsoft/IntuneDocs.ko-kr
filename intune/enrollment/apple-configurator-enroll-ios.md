@@ -1,7 +1,7 @@
 ---
-title: iOS 디바이스 등록 - Apple Configurator 설정 도우미
+title: iOS/iPadOS 디바이스 등록 - Apple Configurator 설정 도우미
 titleSuffix: Microsoft Intune
-description: Apple Configurator를 사용하여 설정 도우미를 통해 회사 소유 iOS 디바이스를 등록하는 방법을 알아봅니다.
+description: Apple Configurator를 사용하여 설정 도우미를 통해 회사 소유 iOS/iPadOS 디바이스를 등록하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,26 +18,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f80312c2bd82063ed0b61c36bef9b8bf4ae3e1aa
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 8ccd41b6ebc9bdf62c1603e508cb881a1be62ee7
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691788"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415394"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Apple Configurator를 통해 iOS 디바이스 등록 설정
+# <a name="set-up-iosipados-device-enrollment-with-apple-configurator"></a>Apple Configurator를 통해 iOS/iPadOS 디바이스 등록
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune은 Mac 컴퓨터에서 실행되는 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)를 사용하여 iOS 디바이스를 등록하도록 지원합니다. Apple Configurator를 사용하여 디바이스를 등록하려면 각 iOS 디바이스를 USB로 Mac 컴퓨터에 연결하여 회사 등록을 설정해야 합니다. 다음 두 가지 방법으로 Apple Configurator를 사용하여 Intune에 디바이스를 등록할 수 있습니다.
+Intune은 Mac 컴퓨터에서 실행되는 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)를 사용하여 iOS/iPadOS 디바이스를 등록하도록 지원합니다. Apple Configurator를 사용하여 디바이스를 등록하려면 각 iOS/iPadOS 디바이스를 USB로 Mac 컴퓨터에 연결하여 회사 등록을 설정해야 합니다. 다음 두 가지 방법으로 Apple Configurator를 사용하여 Intune에 디바이스를 등록할 수 있습니다.
 - **설정 도우미 등록** - 디바이스를 초기화하고, 설정 도우미 중에 등록하도록 준비합니다.
-- **직접 등록** - 디바이스를 초기화하지 않고, iOS 설정을 통해 디바이스를 등록합니다. 이 방법은 **사용자 선호도가 없는** 디바이스만 지원합니다.
+- **직접 등록** - 디바이스를 초기화하지 않고, iOS/iPadOS 설정을 통해 디바이스를 등록합니다. 이 방법은 **사용자 선호도가 없는** 디바이스만 지원합니다.
 
 Apple Configurator 등록 방법은 [디바이스 등록 관리자](device-enrollment-manager-enroll.md)에서 사용할 수 없습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
-- IOS 디바이스에 대한 실제 액세스
+- iOS/iPadOS 디바이스에 대한 실제 액세스
 - [MDM 기관 설정](../fundamentals/mdm-authority-set.md)
 - [Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 - 디바이스 일련 번호(설정 도우미 등록에만 해당)
@@ -46,7 +46,7 @@ Apple Configurator 등록 방법은 [디바이스 등록 관리자](device-enrol
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>디바이스에 대한 Apple Configurator 프로필 만들기
 
-디바이스 등록 프로필은 등록 중에 적용되는 설정을 정의합니다. 이러한 설정은 한 번만 적용됩니다. Apple Configurator로 iOS 디바이스를 등록하기 위한 등록 프로필을 만들려면 이 단계를 따릅니다.
+디바이스 등록 프로필은 등록 중에 적용되는 설정을 정의합니다. 이러한 설정은 한 번만 적용됩니다. Apple Configurator로 iOS/iPadOS 디바이스를 등록하기 위한 등록 프로필을 만들려면 이 단계를 따릅니다.
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **프로필** > **만들기**를 차례로 선택합니다.
 
@@ -87,7 +87,7 @@ Apple Configurator 등록 방법은 [디바이스 등록 관리자](device-enrol
     F7TLWCLBX196,디바이스 세부 정보</br>
     DLXQPCWVGHMJ,디바이스 세부 정보
 
-   [iOS 디바이스 일련 번호를 확인하는 방법](https://support.apple.com/HT204073)을 알아봅니다.
+   [iOS/iPadOS 디바이스 일련 번호를 확인하는 방법](https://support.apple.com/HT204073)을 알아봅니다.
 2. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **디바이스** > **추가**를 차례로 선택합니다.
 
 5. 가져올 일련 번호에 적용할 **등록 프로필**을 선택합니다. 기존 세부 정보를 새 일련 번호 정보로 덮어쓰려는 경우 **기존 식별자에 대한 세부 정보를 덮어씁니다.** 를 선택합니다.
@@ -95,7 +95,7 @@ Apple Configurator 등록 방법은 [디바이스 등록 관리자](device-enrol
 
 ### <a name="reassign-a-profile-to-device-serial-numbers"></a>디바이스 일련 번호에 프로필 재할당
 
-Apple Configurator 등록을 위해 iOS 일련 번호를 가져올 때 등록 프로필을 할당할 수 있습니다. Azure Portal의 다음 두 위치에서 프로필을 할당할 수도 있습니다.
+Apple Configurator 등록을 위해 iOS/iPadOS 일련 번호를 가져올 때 등록 프로필을 할당할 수 있습니다. Azure Portal의 다음 두 위치에서 프로필을 할당할 수도 있습니다.
 - **Apple Configurator 디바이스**
 - **AC 프로필**
 
@@ -113,9 +113,9 @@ Apple Configurator 등록을 위해 iOS 일련 번호를 가져올 때 등록 �
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **프로필**을 차례로 선택하고 내보낼 프로필을 선택합니다.
 2. 프로필에서 **프로필 내보내기**를 선택합니다.
-3. **프로필 URL**을 복사합니다. 그런 다음 Apple Configurator에서 추가하여 iOS 디바이스가 사용하는 Intune 프로필을 정의할 수 있습니다.
+3. **프로필 URL**을 복사합니다. 그런 다음 Apple Configurator에서 추가하여 iOS/iPadOS 디바이스가 사용하는 Intune 프로필을 정의할 수 있습니다.
 
-   다음 절차에서 Apple Configurator에 이 프로필을 가져와 iOS 디바이스에서 사용하는 Intune 프로필을 정의합니다.
+   다음 절차에서 Apple Configurator에 이 프로필을 가져와 iOS/iPadOS 디바이스에서 사용하는 Intune 프로필을 정의합니다.
 
 ### <a name="enroll-devices-with-setup-assistant"></a>설정 도우미를 사용하여 디바이스 등록
 
@@ -125,15 +125,15 @@ Apple Configurator 등록을 위해 iOS 일련 번호를 가져올 때 등록 �
     > 디바이스가 Apple ID 계정에 이미 등록된 경우 등록 프로세스를 시작하기 전에 Apple iCloud에서 디바이스를 삭제해야 합니다. "[디바이스 이름]을(를) 활성화할 수 없습니다"라는 오류 메시지가 나타납니다.
 
 2. **기본 설정** 창에서 **서버**를 선택하고 더하기 기호(+)를 선택하여 MDM 서버 마법사를 시작합니다. **다음**을 선택합니다.
-3. Microsoft Intune을 사용한 iOS 디바이스용 설정 도우미 등록 아래 MDM 서버에 대한 **호스트 이름 또는 URL** 및 **등록 URL**을 입력합니다. 등록 URL에 Intune에서 내보낸 등록 프로필 URL을 입력합니다. **다음**을 선택합니다.  
+3. Microsoft Intune을 사용한 iOS/iPadOS 디바이스용 설정 도우미 등록 아래 MDM 서버에 대한 **호스트 이름 또는 URL** 및 **등록 URL**을 입력합니다. 등록 URL에 Intune에서 내보낸 등록 프로필 URL을 입력합니다. **다음**을 선택합니다.  
     "서버 URL이 확인되지 않음"을 알리는 경고는 무시해도 안전합니다. 계속하려면 마법사가 완료될 때까지 **다음**을 선택합니다.
-4. USB 어댑터를 사용하여 Mac 컴퓨터에 iOS 모바일 디바이스를 연결합니다.
-5. 관리하려는 iOS 디바이스를 선택한 후 **준비**를 선택합니다. **iOS 디바이스 준비** 창에서 **수동**을 선택하고 **다음**을 선택합니다.
+4. USB 어댑터를 사용하여 Mac 컴퓨터에 iOS/iPadOS 모바일 디바이스를 연결합니다.
+5. 관리하려는 iOS/iPadOS 디바이스를 선택한 후 **준비**를 선택합니다. **iOS/iPadOS 디바이스 준비** 창에서 **수동**을 선택하고 **다음**을 선택합니다.
 6. **MDM 서버에 등록** 창에서 만든 서버 이름을 선택하고 **다음**을 선택합니다.
 7. **디바이스 감독** 창에서 감독 수준을 선택하고 **다음**을 선택합니다.
 8. **조직 만들기** 창에서 **조직**을 선택하거나 새 조직을 만들고 **다음**을 선택합니다.
-9. **iOS 설정 도우미 구성** 창에서 사용자에게 제공되는 단계를 선택하고 **준비**를 선택합니다. 메시지가 표시되면 신뢰 설정을 업데이트하도록 인증합니다.  
-10. iOS 디바이스 준비가 완료되면 USB 케이블을 분리합니다.  
+9. **iOS/iPadOS 설정 도우미 구성** 창에서 사용자에게 제공되는 단계를 선택하고 **준비**를 선택합니다. 메시지가 표시되면 신뢰 설정을 업데이트하도록 인증합니다.  
+10. iOS/iPadOS 디바이스 준비가 완료되면 USB 케이블을 분리합니다.  
 
 ### <a name="distribute-devices"></a>디바이스 배포
 이제 디바이스를 회사에 등록할 준비가 되었습니다. 디바이스를 끈 다음 사용자에게 배포합니다. 사용자가 디바이스를 켜면 설정 도우미가 시작됩니다.
@@ -141,34 +141,34 @@ Apple Configurator 등록을 위해 iOS 일련 번호를 가져올 때 등록 �
 사용자가 디바이스를 받으면 설정 도우미를 완료해야 합니다. 사용자 선호도로 구성한 디바이스에서 회사 포털 앱을 설치하고 실행하여 앱을 다운로드하고 디바이스를 관리할 수 있습니다.
 
 ## <a name="direct-enrollment"></a>직접 등록
-Apple Configurator를 사용하여 iOS 디바이스를 직접 등록하는 경우 디바이스의 일련 번호를 몰라도 디바이스를 등록할 수 있습니다. 또한 등록 중에 Intune에서 디바이스 이름을 확인하기 전에 식별을 위해 디바이스에 이름을 지정할 수도 있습니다. 직접 등록된 디바이스의 경우 회사 포털 앱이 지원되지 않습니다. 이 방법은 디바이스를 초기화하지 않습니다.
+Apple Configurator를 사용하여 iOS/iPadOS 디바이스를 직접 등록하는 경우 디바이스의 일련 번호를 몰라도 디바이스를 등록할 수 있습니다. 또한 등록 중에 Intune에서 디바이스 이름을 확인하기 전에 식별을 위해 디바이스에 이름을 지정할 수도 있습니다. 직접 등록된 디바이스의 경우 회사 포털 앱이 지원되지 않습니다. 이 방법은 디바이스를 초기화하지 않습니다.
 
 기간 업무 앱을 설치하는 데 사용하는 회사 포털 앱 등 사용자 정보가 필요한 앱은 설치할 수 없습니다.
 
-### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>프로필을 .mobileconfig로 iOS 디바이스에 내보내기
+### <a name="export-the-profile-as-mobileconfig-to-iosipados-devices"></a>프로필을 .mobileconfig로 iOS/iPadOS 디바이스에 내보내기
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **디바이스** > **iOS** > **iOS 등록** > **Apple Configurator** > **프로필**을 차례로 선택하고 내보낼 프로필을 선택한 후 **프로필 내보내기**를 선택합니다.
 2. **직접 등록**에서 **프로필 다운로드**를 선택하고 파일을 저장합니다. 등록 프로필 파일은 2주 동안만 유효합니다. 이 때에 다시 만들어야 합니다.
-3. [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)를 실행하는 Mac 컴퓨터에 파일을 전송하여 iOS 디바이스에 관리 프로필로 직접 푸시합니다.
+3. [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)를 실행하는 Mac 컴퓨터에 파일을 전송하여 iOS/iPadOS 디바이스에 관리 프로필로 직접 푸시합니다.
 4. 다음 단계를 사용하여 Apple Configurator로 디바이스를 준비합니다.
     1. Mac 컴퓨터에서 Apple Configurator 2.0을 엽니다.
-    2. USB 코드를 사용하여 iOS 디바이스를 Mac 컴퓨터에 연결합니다. 사진, iTunes 및 디바이스를 검색할 때 디바이스에 대해 열려 있는 기타 앱을 닫습니다.
-    3. Apple Configurator에서 연결된 iOS 디바이스를 한 번 선택한 다음 **추가** 단추를 선택합니다. 디바이스에 추가할 수 있는 옵션이 드롭다운 목록에 나타납니다. **프로필**을 선택합니다.
+    2. USB 코드를 사용하여 iOS/iPadOS 디바이스를 Mac 컴퓨터에 연결합니다. 사진, iTunes 및 디바이스를 검색할 때 디바이스에 대해 열려 있는 기타 앱을 닫습니다.
+    3. Apple Configurator에서 연결된 iOS/iPadOS 디바이스를 한 번 선택한 다음 **추가** 단추를 선택합니다. 디바이스에 추가할 수 있는 옵션이 드롭다운 목록에 나타납니다. **프로필**을 선택합니다.
 
         ![프로필 URL이 강조 표시된 설정 도우미 등록의 스크린샷 프로필 내보내기](./media/apple-configurator-enroll-ios/ios-apple-configurator-add-profile.png)
 
     4. 파일 선택기를 사용하여 Intune에서 내보낸 .mobileconfig 파일을 선택하고 **추가**를 선택합니다. 프로필이 디바이스에 추가됩니다. 디바이스가 감독되지 않음인 경우 디바이스에서 설치에 동의해야 합니다.
-5. 다음 단계를 사용하여 iOS 디바이스에 프로필을 설치합니다. 디바이스가 설정 도우미를 이미 완료했으며 사용할 준비가 된 상태여야 합니다. 등록 시 앱을 배포해야 하는 경우 앱 배포 시 Apple ID로 앱 스토어에 로그인해야 하기 때문에 디바이스에 Apple ID가 설정되어 있어야 합니다.
-    1. iOS 디바이스 잠금을 해제합니다.
+5. 다음 단계를 사용하여 iOS/iPadOS 디바이스에 프로필을 설치합니다. 디바이스가 설정 도우미를 이미 완료했으며 사용할 준비가 된 상태여야 합니다. 등록 시 앱을 배포해야 하는 경우 앱 배포 시 Apple ID로 앱 스토어에 로그인해야 하기 때문에 디바이스에 Apple ID가 설정되어 있어야 합니다.
+    1. iOS/iPadOS 디바이스 잠금을 해제합니다.
     2. **관리 프로필**에 대한 **프로필 설치** 대화 상자에서 **설치**를 선택합니다.
     3. 필요한 경우 디바이스 암호 또는 Apple ID를 제공합니다.
     4. **경고**를 수락하고 **설치**를 선택합니다.
     5. **원격 경고**를 수락하고 **신뢰**를 선택합니다.
     6. **프로필 설치됨** 상자에서 프로필이 설치됨 상태임을 확인하면 **완료**를 선택합니다.
 
-6. iOS 디바이스에서 **설정**을 열고 **일반** > **디바이스 관리** > **관리 프로필**로 이동합니다. 프로필 설치가 나열되는지 확인하고 iOS 정책 제한 및 설치된 앱을 확인합니다. 정책 제한 및 앱이 디바이스에 표시되는 데 최대 10분 정도 걸릴 수 있습니다.
+6. iOS/iPadOS 디바이스에서 **설정**을 열고 **일반** > **디바이스 관리** > **관리 프로필**로 이동합니다. 프로필 설치가 나열되는지 확인하고 iOS/iPadOS 정책 제한 및 설치된 앱을 확인합니다. 정책 제한 및 앱이 디바이스에 표시되는 데 최대 10분 정도 걸릴 수 있습니다.
 
-7. 디바이스를 배포합니다. 이제 iOS 디바이스가 Intune에 등록되고 관리됩니다.
+7. 디바이스를 배포합니다. 이제 iOS/iPadOS 디바이스가 Intune에 등록되고 관리됩니다.
 
 
 

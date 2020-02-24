@@ -1,5 +1,5 @@
 ---
-title: 대량 구매 iOS 전자책 관리
+title: 대량 구매 iOS/iPadOS 전자책 관리
 titleSuffix: Microsoft Intune
 description: iOS 스토어에서 대량 구매한 책을 Intune에 동기화하고 해당 사용을 추적 및 관리하는 방법에 대해 알아봅니다.
 keywords: ''
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08275e2573fe8aae8c59ea25c85cdd8f7a3246ee
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: f7c2bd0603961b9d618b3f743ecb323fb7fc9823
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563756"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437871"
 ---
-# <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS 전자책을 관리하는 방법
+# <a name="how-to-manage-iosipados-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 대량 구매 프로그램을 통해 구매한 iOS/iPadOS 전자책을 관리하는 방법
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -37,7 +37,7 @@ Microsoft Intune을 사용하면 이 프로그램을 통해 구매한 책을 동
 책 관리 절차는 [VPP 앱 관리](../vpp-apps-ios.md)와 비슷합니다.
 
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>iOS 디바이스용 대량 구매 책 관리
-[Apple 비즈니스용 대량 구매 프로그램](https://www.apple.com/business/vpp/) 또는 [Apple 교육용 대량 구매 프로그램](https://volume.itunes.apple.com/us/store)을 통해 iOS 책용 라이선스를 여러 개 구매합니다. 이 프로세스에서는 Apple 웹 사이트에서 Apple VPP 계정을 설정하고 Apple VPP 토큰을 Intune에 업로드합니다.  그런 다음 대량 구매 정보를 Intune과 동기화하고 대량 구매 전자책 사용을 추적할 수 있습니다.
+[비즈니스용 Apple Volume Purchase Program](https://www.apple.com/business/vpp/) 또는 [교육용 Apple Volume Purchase Program](https://volume.itunes.apple.com/us/store)을 통해 iOS/iPadOS 책용 라이선스를 여러 개 구매합니다. 이 프로세스에서는 Apple 웹 사이트에서 Apple VPP 계정을 설정하고 Apple VPP 토큰을 Intune에 업로드합니다.  그런 다음 대량 구매 정보를 Intune과 동기화하고 대량 구매 전자책 사용을 추적할 수 있습니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 시작하기 전에 Apple에서 VPP 토큰 하나를 가져와 Intune 계정에 업로드하세요. 추가 필수 구성 요소:
@@ -46,7 +46,7 @@ Microsoft Intune을 사용하면 이 프로그램을 통해 구매한 책을 동
 * 각 토큰은 1년 동안 유효합니다.
 * 기본적으로 Intune에서는 하루에 두 번 Apple VPP 서비스와 동기화합니다. 언제든지 수동 동기화를 시작할 수 있습니다.
 * VPP 토큰을 Intune으로 가져온 후 같은 토큰을 다른 디바이스 관리 솔루션으로 가져오지 마세요. 가져오면 라이선스 할당과 사용자 레코드가 손실될 수 있습니다.
-* Intune에서 iOS 책을 사용하기 전에 다른 MDM(모바일 디바이스 관리) 공급업체를 사용하여 만든 기존 VPP 사용자 계정을 제거합니다. Intune은 보안 조치로 해당 사용자 계정을 Intune에 동기화하지 않습니다. Intune은 Intune에서 만든 Apple VPP 서비스의 데이터만 동기화합니다.
+* Intune에서 iOS/iPadOS 책을 사용하기 전에 다른 MDM(모바일 디바이스 관리) 공급업체를 사용하여 만든 기존 VPP 사용자 계정을 제거합니다. Intune은 보안 조치로 해당 사용자 계정을 Intune에 동기화하지 않습니다. Intune은 Intune에서 만든 Apple VPP 서비스의 데이터만 동기화합니다.
 * 디바이스에 책을 할당할 때 해당 디바이스에는 기본 제공 iBooks 앱이 설치되어 있어야 합니다. 이 앱이 설치되어 있지 않은 경우 최종 사용자는 앱을 다시 설치해야 전자책을 읽을 수 있습니다. 현재로는 Intune을 사용하여 제거된 기본 제공 앱을 복원할 수 없습니다.
 * Apple 대량 구매 프로그램 사이트의 책만 할당할 수 있습니다. 내부에서 만든 책은 업로드한 다음 할당할 수 없습니다.
 * 현재는 앱에 사용하는 것과 같은 방법으로 책을 최종 사용자 범주에 할당할 수 없습니다.

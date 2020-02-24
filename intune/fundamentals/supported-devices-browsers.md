@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415056"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437922"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune의 지원되는 운영 체제 및 브라우저
 
@@ -87,12 +87,12 @@ MDM 등록을 방해하는 Knox 활성화 오류를 방지하기 위해 회사 �
 
 ### <a name="windows-pc-software-client"></a>Windows PC 소프트웨어 클라이언트
 
-Windows PC에서는 대체 등록 방법으로 [Intune 소프트웨어 클라이언트](manage-windows-pcs-with-microsoft-intune.md)를 배포하고 설치할 수 있습니다. 이 기능은 Intune 클래식 포털을 통해서만 사용할 수 있습니다. Intune 소프트웨어 클라이언트를 사용하면 Windows 7 이상 버전(Windows 10 Home Edition은 제외)을 실행하는 PC를 관리할 수 있습니다.
+Windows PC에서는 대체 등록 방법으로 [Intune 소프트웨어 클라이언트](manage-windows-pcs-with-microsoft-intune.md)를 배포하고 설치할 수 있습니다. 이 기능은 Intune 클래식 포털을 통해서만 사용할 수 있습니다. Intune 소프트웨어 클라이언트를 사용하면 10 이상의 버전(Windows 10 Home Edition은 제외)을 실행하는 PC를 관리할 수 있습니다.
 
 > [!Note]
 > Microsoft는 2020년 1월 14일부로 Windows 7 지원을 중단한다고 발표했습니다. 이 날짜에 Intune도 Windows 7을 실행하는 디바이스에 대한 지원을 만료합니다.
 >
-> 자세한 내용은 [Intune 변경 계획: Windows 7 지원 종료](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)를 참조하세요.
+> 자세한 내용은 [Intune 변경 계획: Windows 7 지원 종료](https://docs.microsoft.com/intune/fundamentals/whats-new#windows-7-ends-extended-support-)를 참조하세요.
 >
 > Microsoft Intune은 Silverlight 기반 Intune 콘솔 지원을 2020년 10월 15일에 중단할 예정입니다. Silverlight 콘솔 구성된 PC소프트웨어 클라이언트(또한 PC에이전트로 알려진)도 포함됩니다.
 >

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune을 사용하여 iOS 감독 모드 설정
+title: Microsoft Intune을 사용하여 iOS/iPadOS 감독 모드 설정
 titleSuffix: ''
-description: Intune을 사용하여 iOS 감독 모드를 설정하는 방법에 대해 알아봅니다.
+description: Intune을 사용하여 iOS/iPadOS 감독 모드를 설정하는 방법에 대해 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d266dbc9fa72b1579e05e7798315e2e718a9797
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713437"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413654"
 ---
-# <a name="turn-on-ios-supervised-mode"></a>iOS 감독 모드 설정
+# <a name="turn-on-iosipados-supervised-mode"></a>iOS/iPadOS 감독 모드 켜기
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple iOS 감독 모드는 Apple 디바이스를 관리하는 경우 관리자에게 더 많은 옵션을 제공하여 회사에서 소유한 디바이스를 대량으로 배포하는 데 유용합니다. 예를 들어, AirDrop 또는 사용자가 디바이스의 이름을 변경하는 것을 제한하거나 방지할 수 있습니다. 감독 모드가 필요한 설정 목록은 [Intune에서 iOS 디바이스 제한 설정](../configuration/device-restrictions-ios.md)을 참조하세요.
+Apple iOS/iPadOS 감독 모드는 Apple 디바이스를 관리하는 경우 관리자에게 더 많은 옵션을 제공하여 회사에서 소유한 디바이스를 대량으로 배포하는 데 유용합니다. 예를 들어, AirDrop 또는 사용자가 디바이스의 이름을 변경하는 것을 제한하거나 방지할 수 있습니다. 감독 모드가 필요한 설정 목록은 [Intune에서 iOS 디바이스 제한 설정](../configuration/device-restrictions-ios.md)을 참조하세요.
 
 Intune은 Apple [DEP(디바이스 등록 프로그램)](../enrollment/device-enrollment-program-enroll-ios.md)의 일부로 감독 모드를 지원합니다.
 
@@ -41,7 +41,7 @@ Intune은 Apple [DEP(디바이스 등록 프로그램)](../enrollment/device-enr
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>등록 후 감독 모드 설정
 
-등록 후 감독 모드를 설정하는 유일한 방법은 iOS 디바이스를 Mac에 연결하고 [Apple Configurator를 사용](../enrollment/apple-configurator-enroll-ios.md)(디바이스가 다시 설정됨)하는 것입니다. 등록 후에는 Intune에서 디바이스를 감독 모드로 구성할 수 없습니다.
+등록 후 감독 모드를 설정하는 유일한 방법은 iOS/iPadOS 디바이스를 Mac에 연결하고 [Apple Configurator를 사용](../enrollment/apple-configurator-enroll-ios.md)(디바이스가 다시 설정됨)하는 것입니다. 등록 후에는 Intune에서 디바이스를 감독 모드로 구성할 수 없습니다.
 
 ## <a name="identify-a-supervised-device"></a>감독된 디바이스 확인
 

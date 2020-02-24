@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469ee615cd9a9f1d3a7aee40ce764b8d8100fe69
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912902"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258133"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>가져온 PKCS 인증서를 Intune을 사용하여 구성 및 사용
 
@@ -44,7 +44,7 @@ S/MIME를 Intune에서 사용하는 방법에 대한 자세한 내용은 [S/MIME
 
   이 커넥터는 새 버전이 출시되면 자동으로 업데이트할 수 있습니다. 업데이트 기능을 사용하려면 커넥터가 포트 **443**을 통해 **autoupdate.msappproxy.net**에 연결할 수 있도록 방화벽을 열어야 합니다.
 
-  커넥터에서 액세스하는 모든 네트워크 엔드포인트에 대한 자세한 내용은 [Intune 네트워크 구성 요구 사항 및 대역폭](../fundamentals/network-bandwidth-use.md)을 참조하세요.
+  자세한 내용은 [Microsoft Intune용 네트워크 엔드포인트](../fundamentals/intune-endpoints.md)와 [Intune 네트워크 구성 요구 사항 및 대역폭](../fundamentals/network-bandwidth-use.md)을 참조하세요.
 
 - **Windows Server**:
 

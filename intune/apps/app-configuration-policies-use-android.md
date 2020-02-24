@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 52c8d10f0b8d06d68d75450c3d708f910bc5ddd4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755500"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415034"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>관리되는 Android 엔터프라이즈 디바이스용 앱 구성 정책 추가
 
@@ -152,7 +152,7 @@ Android 디바이스 기능에 액세스하기 위한 앱의 권한을 미리 �
 ## <a name="additional-information"></a>추가 정보
 
 - [Android 엔터프라이즈 디바이스에 관리되는 Google Play 앱 할당](apps-add-android-for-work.md#assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices)
-- [iOS 및 Android용 Outlook 앱 구성 설정 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [iOS/iPadOS 및 Android용 Outlook 앱 구성 설정 배포](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune을 사용하는 디바이스에서 디바이스 사용 중지 또는 초기화 - Azure | Microsoft Docs
-description: Microsoft Intune을 사용하여 Android의 디바이스, Android 회사 프로필, iOS, macOS 또는 Windows 디바이스를 사용 중지하거나 초기화합니다. 또한 Azure Active Directory에서 디바이스를 삭제합니다.
+description: Microsoft Intune을 사용하여 Android의 디바이스, Android 회사 프로필, iOS/iPadOS, macOS 또는 Windows 디바이스를 사용 중지하거나 초기화합니다. 또한 Azure Active Directory에서 디바이스를 삭제합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812453"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415508"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>초기화, 사용 중지 또는 수동으로 디바이스 등록을 취소하여 디바이스 제거
 
@@ -43,7 +43,7 @@ ms.locfileid: "76812453"
 
 
 > [!NOTE]
-> 사용자 등록에 등록된 iOS 디바이스에는 초기화 작업을 사용할 수 없습니다.
+> 사용자 등록에 등록된 iOS/iPadOS 디바이스에는 초기화 작업을 사용할 수 없습니다.
 
 **등록 상태 및 사용자 계정 유지** 옵션은 Windows 10 버전 1709 이상에만 사용할 수 있습니다.
 

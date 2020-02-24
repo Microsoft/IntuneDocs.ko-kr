@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db04b93deffd2476a97b952fd1c6942fa79e1f05
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 14347d12888ff5ef61d4543409a08fbdeb371c89
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955391"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415213"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune 디바이스 등록에 대한 다단계 인증 요구
 
@@ -36,7 +36,7 @@ MFA는 다음과 같은 검증 방법 중 두 가지 이상을 요구하는 방�
 - 사용자가 가지고 있는 항목(휴대폰처럼 쉽게 복제할 수 없으며 신뢰할 수 있는 디바이스)
 - 사용자의 특징을 나타내는 항목(지문과 같은 생체 인식)
 
-MFA는 iOS, Android, Windows 8.1 이상, Windows Phone 8.1 또는 Windows 10 Mobile 이상의 디바이스에서 지원됩니다.
+MFA는 iOS/iPadOS, Android, Windows 8.1 이상, Windows Phone 8.1 또는 Windows 10 Mobile 이상의 디바이스에서 지원됩니다.
 
 MFA를 사용하도록 설정하면 최종 사용자가 디바이스를 등록하기 위해 두 가지 형식의 자격 증명을 제공해야 합니다.
 

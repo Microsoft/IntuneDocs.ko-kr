@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754204"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413753"
 ---
 # <a name="see-device-details-in-intune"></a>Intune에서 디바이스 세부 정보 참조
 
@@ -73,25 +73,25 @@ ms.locfileid: "76754204"
 |보안 패치 수준|디바이스에 대한 보안 패치 수준입니다.|Android|
 |총 스토리지 공간|디바이스의 총 스토리지 공간(기가바이트)입니다.|Windows, iOS|
 |사용 가능한 스토리지 공간|디바이스에서 사용되지 않은 스토리지 공간(기가바이트)입니다.|Windows, iOS|
-|IMEI|디바이스의 IMEI(International Mobile Equipment Identity)입니다.|Windows, iOS, Android|
-|MEID|디바이스의 MEID(Mobile Equipment Identifier)입니다.|Windows, iOS, Android|
-|제조업체|디바이스의 제조업체입니다.|Windows, iOS, Android|
-|모델|디바이스의 모델입니다.|Windows, iOS, Android|
-|전화 번호|디바이스에 할당된 전화 번호입니다.|Windows, iOS, Android*|
-|구독자의 통신사|디바이스의 무선 통신사입니다.|Windows, iOS, Android|
-|셀룰러 기술|디바이스에서 사용하는 라디오 시스템입니다.|Windows, iOS, Android|
-|Wi-Fi MAC|디바이스의 미디어 액세스 제어 주소입니다.|Windows, iOS, Android|
-|ICCID|집적 회로 카드 식별자, 즉, SIM 카드의 고유한 ID 번호입니다.|Windows, iOS, Android|
-|등록된 날짜|Intune에서 디바이스를 등록한 날짜 및 시간입니다.|Windows, iOS, Android|
-|마지막 연결|Intune에 디바이스를 마지막으로 연결한 날짜 및 시간입니다.|Windows, iOS, Android|
+|IMEI|디바이스의 IMEI(International Mobile Equipment Identity)입니다.|Windows, iOS/iPadOS, Android|
+|MEID|디바이스의 MEID(Mobile Equipment Identifier)입니다.|Windows, iOS/iPadOS, Android|
+|제조업체|디바이스의 제조업체입니다.|Windows, iOS/iPadOS, Android|
+|모델|디바이스의 모델입니다.|Windows, iOS/iPadOS, Android|
+|전화 번호|디바이스에 할당된 전화 번호입니다.|Windows, iOS/iPadOS, Android*|
+|구독자의 통신사|디바이스의 무선 통신사입니다.|Windows, iOS/iPadOS, Android|
+|셀룰러 기술|디바이스에서 사용하는 라디오 시스템입니다.|Windows, iOS/iPadOS, Android|
+|Wi-Fi MAC|디바이스의 미디어 액세스 제어 주소입니다.|Windows, iOS/iPadOS, Android|
+|ICCID|집적 회로 카드 식별자, 즉, SIM 카드의 고유한 ID 번호입니다.|Windows, iOS/iPadOS, Android|
+|등록된 날짜|Intune에서 디바이스를 등록한 날짜 및 시간입니다.|Windows, iOS/iPadOS, Android|
+|마지막 연결|Intune에 디바이스를 마지막으로 연결한 날짜 및 시간입니다.|Windows, iOS/iPadOS, Android|
 |활성화 잠금 무시 코드|활성화 잠금을 사용하지 않도록 설정하는 데 사용할 수 있는 코드입니다.|iOS|
-|Azure AD 등록됨|**예**인 경우 디바이스가 Azure Active Directory에 등록되어 있습니다.|Windows, iOS, Android|
-|Intune에 등록됨|**예**인 경우 디바이스가 Intune에 등록되어 있음|Windows, iOS, Android|
-|준수|디바이스의 준수 상태입니다.|Windows, iOS, Android|
-|EAS 활성화됨|**예**인 경우 디바이스는 교환 사서함과 동기화됩니다.|Windows, iOS, Android|
-|EAS 활성화 ID|디바이스의 Exchange ActiveSync 식별자입니다.|Windows, iOS, Android|
-|감독됨|**예**인 경우 관리자는 디바이스에 대한 제어를 강화했습니다.|Windows, iOS, Android|
-|암호화됨|**예**인 경우 디바이스에 저장된 데이터가 암호화됩니다.|Windows, iOS, Android|
+|Azure AD 등록됨|**예**인 경우 디바이스가 Azure Active Directory에 등록되어 있습니다.|Windows, iOS/iPadOS, Android|
+|Intune에 등록됨|**예**인 경우 디바이스가 Intune에 등록되어 있음|Windows, iOS/iPadOS, Android|
+|준수|디바이스의 준수 상태입니다.|Windows, iOS/iPadOS, Android|
+|EAS 활성화됨|**예**인 경우 디바이스는 교환 사서함과 동기화됩니다.|Windows, iOS/iPadOS, Android|
+|EAS 활성화 ID|디바이스의 Exchange ActiveSync 식별자입니다.|Windows, iOS/iPadOS, Android|
+|감독됨|**예**인 경우 관리자는 디바이스에 대한 제어를 강화했습니다.|Windows, iOS/iPadOS, Android|
+|암호화됨|**예**인 경우 디바이스에 저장된 데이터가 암호화됩니다.|Windows, iOS/iPadOS, Android|
 
 > [!Note]  
 > Android Enterprise 전용 또는 완전 관리형 디바이스에서는 전화 번호가 인벤토리에 포함되지 않습니다.

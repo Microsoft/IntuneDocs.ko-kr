@@ -1,7 +1,7 @@
 ---
-title: iOS 디바이스 등록 - 디바이스 등록 프로그램
+title: iOS/iPadOS 디바이스 등록 - 디바이스 등록 프로그램
 titleSuffix: Microsoft Intune
-description: 장비 등록 프로그램을 사용하여 회사 소유 iOS 디바이스를 등록하는 방법을 알아봅니다.
+description: 장비 등록 프로그램을 사용하여 회사 소유 iOS/iPadOS 디바이스를 등록하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3fe6d1e2a0dcdeafad56d3facccb96f5d0721e4
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
+ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074668"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415368"
 ---
-# <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록
+# <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>Apple의 장비 등록 프로그램을 통해 iOS/iPadOS 디바이스 자동 등록
 
-Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 iOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. DEP를 사용하면 터치하지 않고도 많은 수의 디바이스를 등록할 수 있습니다. iPhone, iPad 및 MacBook과 같은 디바이스를 사용자에게 직접 제공할 수 있습니다. 사용자가 디바이스를 켜면 Apple 제품의 전형적인 OOBE(out-of-box-experience)를 포함하는 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 디바이스가 관리용으로 등록됩니다.
+Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com)를 통해 구매한 iOS/iPadOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. DEP를 사용하면 터치하지 않고도 많은 수의 디바이스를 등록할 수 있습니다. iPhone, iPad 및 MacBook과 같은 디바이스를 사용자에게 직접 제공할 수 있습니다. 사용자가 디바이스를 켜면 Apple 제품의 전형적인 OOBE(out-of-box-experience)를 포함하는 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 디바이스가 관리용으로 등록됩니다.
 
 DEP 등록을 활성화하려면 Intune과 ABM(Apple Business Manager) 또는 ASM(Apple School Manager) 포털을 모두 사용해야 합니다. ABM/ASM에서 관리용으로 Intune에 디바이스를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 DEP 등록 프로필을 Intune에서 만듭니다. DEP 등록은 [디바이스 등록 관리자](device-enrollment-manager-enroll.md) 계정에서 사용할 수 없습니다.
 
@@ -38,15 +38,15 @@ DEP 등록을 활성화하려면 Intune과 ABM(Apple Business Manager) 또는 AS
 
 DEP 등록은 회사 포털 앱의 앱 스토어 버전과 호환되지 않습니다. DEP 디바이스에서 회사 포털 앱에 대한 액세스 권한을 사용자에게 제공할 수 있습니다. 사용자가 디바이스에서 사용하려는 회사 앱을 선택하거나 최신 인증을 사용하여 등록 프로세스를 완료할 수 있도록 이 액세스를 제공할 수 있습니다. 
 
-등록 중에 최신 인증을 사용하도록 설정하려면 DEP 프로필에 **VPP로 회사 포털 설치**를 사용하여 앱을 디바이스에 푸시합니다. 자세한 내용은 [Apple 디바이스 등록 프로그램을 통해 iOS 디바이스를 자동으로 등록](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)을 참조하세요.
+등록 중에 최신 인증을 사용하도록 설정하려면 DEP 프로필에 **VPP로 회사 포털 설치**를 사용하여 앱을 디바이스에 푸시합니다. 자세한 내용은 [Apple 디바이스 등록 프로그램을 통해 iOS/iPadOS 디바이스를 자동으로 등록](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)을 참조하세요.
 
 회사 포털을 자동으로 업데이트하고 DEP에 이미 등록된 디바이스에서 회사 포털 앱을 제공할 수 있도록 하려면 회사 포털 앱을 [애플리케이션 구성 정책](../apps/app-configuration-policies-use-ios.md)이 적용된 필수 VPP(Volume Purchase Program) 앱으로서 Intune을 통해 배포합니다.
 
 ## <a name="what-is-supervised-mode"></a>감독됨 모드란?
 
-Apple은 iOS 5에서 감독됨 모드를 도입했습니다. 감독 모드의 iOS 디바이스는 화면 캡처 차단, App Store에서 앱 설치 차단 등의 더 많은 제어로 관리할 수 있습니다. 이와 같이 회사 소유 디바이스에 특히 유용합니다. Intune은 Apple DEP(디바이스 등록 프로그램)의 일부로 감독됨 모드의 디바이스를 구성하도록 지원합니다.
+Apple은 iOS/iPadOS 5에서 감독 모드를 도입했습니다. 감독 모드의 iOS/iPadOS 디바이스는 화면 캡처 차단, App Store에서 앱 설치 차단 등의 더 많은 제어로 관리할 수 있습니다. 이와 같이 회사 소유 디바이스에 특히 유용합니다. Intune은 Apple DEP(디바이스 등록 프로그램)의 일부로 감독됨 모드의 디바이스를 구성하도록 지원합니다.
 
-iOS 11에서는 감독되지 않는 DEP 디바이스에 대한 지원이 중단됩니다. iOS 11 이상에서는 DEP 구성 디바이스가 항상 감독됩니다. 향후 iOS 릴리스에서는 DEP is_supervised 플래그가 무시됩니다.
+iOS/iPadOS 11에서는 감독되지 않는 DEP 디바이스에 대한 지원이 중단됩니다. iOS/iPadOS 11 이상에서는 DEP 구성 디바이스가 항상 감독됩니다. 향후 iOS/iPadOS 릴리스에서는 DEP is_supervised 플래그가 무시됩니다.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -63,7 +63,7 @@ iOS 11에서는 감독되지 않는 DEP 디바이스에 대한 지원이 중단�
 
 ## <a name="get-an-apple-dep-token"></a>Apple DEP 토큰 가져오기
 
-iOS 디바이스를 DEP에 등록하려면 Apple의 DEP 토큰(.p7m) 파일이 필요합니다. Intune에서는 이 토큰을 통해 회사에서 소유한 DEP 디바이스에 대한 정보를 동기화할 수 있습니다. 또한 Apple에 등록 프로필을 업로드하고 이러한 프로필에 디바이스를 할당할 수 있습니다.
+iOS/iPadOS 디바이스를 DEP에 등록하려면 Apple의 DEP 토큰(.p7m) 파일이 필요합니다. Intune에서는 이 토큰을 통해 회사에서 소유한 DEP 디바이스에 대한 정보를 동기화할 수 있습니다. 또한 Apple에 등록 프로필을 업로드하고 이러한 프로필에 디바이스를 할당할 수 있습니다.
 
 Apple Business Manager 또는 Apple School Manager 포털을 사용하여 토큰을 만듭니다. 관리용으로 Intune에 디바이스를 할당하는 데도 ABM/ASM 포털을 사용할 수 있습니다.
 
@@ -117,7 +117,7 @@ Apple Business Manager 또는 Apple School Manager 포털을 사용하여 토큰
 2. 이 DEP 토큰에 [범위 태그](../fundamentals/scope-tags.md)를 적용하려면 **범위(태그)** 를 선택하고 원하는 범위 태그를 선택합니다. 토큰에 적용되는 범위 태그는 이 토큰에 추가된 프로필 및 디바이스가 상속합니다.
 3. **만들기**를 선택합니다.
 
-Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 정책을 푸시하여 iOS 디바이스를 등록하고 관리할 수 있습니다. Intune이 Apple과 자동으로 동기화되어 등록 프로그램 계정을 확인합니다.
+Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 정책을 푸시하여 iOS/iPadOS 디바이스를 등록하고 관리할 수 있습니다. Intune이 Apple과 자동으로 동기화되어 등록 프로그램 계정을 확인합니다.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 등록 프로필 만들기
 
@@ -155,7 +155,7 @@ Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 �
     >
     > 이러한 설정은 Apple 설정 도우미를 사용하여 인증하는 경우에는 지원되지 않습니다.
 
-6. **사용자가 인증해야 하는 위치 선택**에서 **회사 포털**을 선택한 경우 VPP 토큰을 사용하여 디바이스에 회사 포털을 자동으로 설치할 수 있습니다. 이 경우 사용자는 Apple ID를 제공할 필요가 없습니다. VPP 토큰을 사용하여 회사 포털을 설치하려면 **VPP로 회사 포털 설치** 아래에 토큰을 선택합니다. 회사 포털이 VPP 토큰에 이미 추가되어 있어야 합니다. 등록 후 회사 포털 앱이 계속 업데이트되도록 하려면 Intune(Intune>클라이언트 앱)에서 앱 배포를 구성했는지 확인합니다. 사용자 상호 작용이 필요하지 않은 경우에는 회사 포털을 iOS VPP 앱으로 사용하고, 필수 앱으로 설정하고, 할당에 디바이스 라이선스를 사용하는 것이 좋습니다. 토큰이 만료되지 않았고 회사 포털 앱에 대한 충분한 디바이스 라이선스가 있는지 확인합니다. 토큰이 만료되거나 라이선스가 부족한 경우 Intune은 대신 앱 스토어 회사 포털을 설치하고 Apple ID에 대한 메시지를 표시합니다. 
+6. **사용자가 인증해야 하는 위치 선택**에서 **회사 포털**을 선택한 경우 VPP 토큰을 사용하여 디바이스에 회사 포털을 자동으로 설치할 수 있습니다. 이 경우 사용자는 Apple ID를 제공할 필요가 없습니다. VPP 토큰을 사용하여 회사 포털을 설치하려면 **VPP로 회사 포털 설치** 아래에 토큰을 선택합니다. 회사 포털이 VPP 토큰에 이미 추가되어 있어야 합니다. 등록 후 회사 포털 앱이 계속 업데이트되도록 하려면 Intune(Intune>클라이언트 앱)에서 앱 배포를 구성했는지 확인합니다. 사용자 상호 작용이 필요하지 않은 경우에는 회사 포털을 iOS/iPadOS VPP 앱으로 사용하고, 필수 앱으로 설정하고, 할당에 디바이스 라이선스를 사용하는 것이 좋습니다. 토큰이 만료되지 않았고 회사 포털 앱에 대한 충분한 디바이스 라이선스가 있는지 확인합니다. 토큰이 만료되거나 라이선스가 부족한 경우 Intune은 대신 앱 스토어 회사 포털을 설치하고 Apple ID에 대한 메시지를 표시합니다. 
 
     > [!NOTE]
     > **사용자가 인증해야 하는 위치 선택**이 **회사 포털**이 되려면 회사 포털이 DEP 디바이스로 다운로드되는 처음 24시간 내에 디바이스 등록 프로세스가 수행되어야 합니다. 그러지 않으면 등록이 실패할 수 있으며 디바이스를 등록하는 데 초기화가 필요합니다.
@@ -168,7 +168,7 @@ Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 �
 
     단일 앱 모드에서 잠긴 단일 디바이스에서는 다단계 인증이 지원되지 않습니다. 이러한 제한이 적용되는 이유는 디바이스를 다른 앱으로 전환하여 두 번째 인증 단계를 완료할 수 없기 때문입니다. 따라서 단일 앱 모드 디바이스에서 다단계 인증을 원하는 경우에는 두 번째 단계가 다른 디바이스에 있어야 합니다.
 
-    이 기능은 iOS 11.3.1 이상에서만 지원됩니다.
+    이 기능은 iOS/iPadOS 11.3.1 이상에서만 지원됩니다.
 
    ![단일 앱 모드의 스크린샷.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
@@ -176,7 +176,7 @@ Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 �
 
     ![디바이스 관리 설정 스크린샷](./media/device-enrollment-program-enroll-ios/supervisedmode.png)
 
-    **감독**되는 디바이스의 경우 더 많은 관리 옵션이 제공되며 기본적으로 활성화 잠금을 사용할 수 없습니다. 특히 많은 수의 iOS 디바이스를 배포하는 경우 감독됨 모드를 사용하기 위한 메커니즘으로 DEP를 사용하는 것이 좋습니다.
+    **감독**되는 디바이스의 경우 더 많은 관리 옵션이 제공되며 기본적으로 활성화 잠금을 사용할 수 없습니다. 특히 많은 수의 iOS/iPadOS 디바이스를 배포하는 경우 감독 모드를 사용하기 위한 메커니즘으로 DEP를 사용하는 것이 좋습니다.
 
     사용자는 해당 디바이스가 감독된다는 알림을 다음 두 가지 방법으로 받습니다.
 
@@ -184,9 +184,9 @@ Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 �
    - **설정** > **일반** > **정보** 화면에 다음이 표시됩니다. “이 iPhone은 감독됩니다. Contoso는 사용자의 인터넷 트래픽을 모니터링하고 이 디바이스를 찾습니다."라는 메시지를
 
      > [!NOTE]
-     > 감독 없이 등록된 디바이스는 Apple Configurator를 사용하여 감독으로만 다시 설정할 수 있습니다. 이러한 방식으로 디바이스를 다시 설정하려면 iOS 디바이스를 Mac에 USB 케이블로 연결해야 합니다. 이에 대해 [Apple Configurator 문서](http://help.apple.com/configurator/mac/2.3)에서 자세히 알아보세요.
+     > 감독 없이 등록된 디바이스는 Apple Configurator를 사용하여 감독으로만 다시 설정할 수 있습니다. 이러한 방식으로 디바이스를 다시 설정하려면 iOS/iPadOS 디바이스를 Mac에 USB 케이블로 연결해야 합니다. 이에 대해 [Apple Configurator 문서](http://help.apple.com/configurator/mac/2.3)에서 자세히 알아보세요.
 
-10. 이 프로필을 사용하는 디바이스에 대해 잠긴 환경을 사용할지를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 디바이스를 등록한 후에 이 설정을 변경하려면 디바이스를 초기화해야 합니다. 이러한 디바이스는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
+10. 이 프로필을 사용하는 디바이스에 대해 잠긴 환경을 사용할지를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS/iPadOS 설정을 사용할 수 없습니다. 디바이스를 등록한 후에 이 설정을 변경하려면 디바이스를 초기화해야 합니다. 이러한 디바이스는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
 
 11. 이 프로필을 사용하는 디바이스가 **컴퓨터와 동기화**할 수 있도록 할지를 선택합니다. **인증서로 Apple Configurator 허용**을 선택한 경우 **Apple Configurator 인증서** 아래에서 인증서를 선택해야 합니다.
 
@@ -270,7 +270,7 @@ Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 �
 ## <a name="distribute-devices"></a>디바이스 배포
 Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 DEP 디바이스를 등록할 수 있는 프로필을 할당했습니다. 이제 사용자에게 디바이스를 배포할 수 있습니다. 사용자 선호도가 있는 디바이스의 경우 각 사용자에게 Intune 라이선스를 할당해야 합니다. 사용자 선호도를 사용하지 않는 디바이스에는 디바이스 라이선스가 필요합니다. 활성화된 디바이스는 디바이스가 초기화된 다음에야 등록 프로필을 적용할 수 있습니다.
 
-[장비 등록 프로그램을 통해 Intune에서 iOS 디바이스 등록](/intune-user-help/enroll-your-device-dep-ios)을 참조하세요.
+[장비 등록 프로그램을 통해 Intune에서 iOS/iPadOS 디바이스 등록](/intune-user-help/enroll-your-device-dep-ios)을 참조하세요.
 
 ## <a name="renew-a-dep-token"></a>DEP 토큰 갱신  
 1. deploy.apple.com으로 이동합니다.  

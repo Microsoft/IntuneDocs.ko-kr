@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5c980b3f9ababaf94aa7b279e533679ed74b0e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6941b3b79dd690c9861c8efead7f525e56e2b350
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503366"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415408"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune으로 Android 회사 프로필 디바이스 관리
 
@@ -55,7 +55,7 @@ Android 엔터프라이즈는 앱 구성 값을 지원하는 앱에 배포하기
 
 ## <a name="email-configuration"></a>메일 구성
 
-Android 엔터프라이즈는 iOS에서 제공하는 기본 이메일 앱이나 기본 이메일 프로필을 제공하지 않습니다. 대신, 앱 구성 설정을 지원하는 앱에 해당 설정을 적용하여 메일 구성을 설정할 수 있습니다. Gmail 및 Nine Work는 Android 엔터프라이즈 앱 구성이 포함된 구성을 지원하는 Play 스토어의 두 가지 EAS(Exchange ActiveSync) 클라이언트 앱입니다.
+Android 엔터프라이즈는 iOS/iPadOS에서 제공하는 기본 이메일 앱이나 기본 이메일 프로필을 제공하지 않습니다. 대신, 앱 구성 설정을 지원하는 앱에 해당 설정을 적용하여 메일 구성을 설정할 수 있습니다. Gmail 및 Nine Work는 Android 엔터프라이즈 앱 구성이 포함된 구성을 지원하는 Play 스토어의 두 가지 EAS(Exchange ActiveSync) 클라이언트 앱입니다.
 
 Intune은 작업용 앱으로 관리되는 경우 Gmail 및 Nine Work 앱에 대한 구성 템플릿을 제공합니다. 앱 구성 프로필을 지원하는 기타 이메일 앱은 모바일 앱 구성 정책을 통해 구성할 수 있습니다.
 

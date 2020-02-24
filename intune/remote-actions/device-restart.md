@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune을 사용하여 디바이스 다시 시작 - Azure | Microsoft Docs
-description: 다시 시작 원격 동작을 사용하는 Azure Portal에서 Microsoft Intune을 사용하여 Windows 및 iOS 디바이스를 다시 시작합니다.
+description: 다시 시작 원격 동작을 사용하는 Azure Portal에서 Microsoft Intune을 사용하여 Windows 및 iOS/iPadOS 디바이스를 다시 시작합니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 54fa0f796e96a2487793197cbbbe548fd8490856
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517544"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415609"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Intune을 사용하여 원격으로 디바이스 다시 시작
 
@@ -35,10 +35,10 @@ ms.locfileid: "76517544"
 - Windows - Windows 8.1 이상에서 지원됨
 - Windows Phone - Windows Phone 8.1 이상에서 지원됨
 - Android 키오스크 디바이스 - Android 7.0 이상 지원됨
-- iOS - 지원됨
+- iOS/iPadOS - 지원됨
 
     > [!Note]  
-    > 이 명령은 감독되는 디바이스 및 **디바이스 잠금** 액세스 권한에 필요합니다. 디바이스를 즉시 다시 시작합니다. 암호로 잠긴 iOS 디바이스는 다시 시작한 후에 Wi-Fi 네트워크에 다시 연결되지 않습니다. 디바이스는 다시 시작한 후에 서버와 통신하지 못할 수 있습니다.
+    > 이 명령은 감독되는 디바이스 및 **디바이스 잠금** 액세스 권한에 필요합니다. 디바이스를 즉시 다시 시작합니다. 암호로 잠긴 iOS/iPadOS 디바이스는 다시 시작한 후에 Wi-Fi 네트워크에 다시 연결되지 않습니다. 디바이스는 다시 시작한 후에 서버와 통신하지 못할 수 있습니다.
 - macOS - 지원되지 않음
 - Android 및 Android 작업 프로필 디바이스 - 지원되지 않음
 

@@ -1,7 +1,7 @@
 ---
-title: iOS 디바이스의 사용자 로그아웃
+title: iOS/iPadOS 디바이스의 사용자 로그아웃
 titleSuffix: Microsoft Intune
-description: Intune을 사용하여 iOS 디바이스의 현재 사용자를 로그아웃하는 방법을 알아봅니다."
+description: Intune을 사용하여 iOS/iPadOS 디바이스의 현재 사용자를 로그아웃하는 방법을 알아봅니다."
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdb23916319b06fb4d85b913209d1ac9e007d551
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6e23f95d169a95244abc8669eb9a19150cff8138
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713172"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413702"
 ---
-# <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Intune 관리 iOS 디바이스에서 현재 사용자 로그아웃
+# <a name="logout-the-current-user-on-intune-managed-iosipados-devices"></a>Intune 관리 iOS/iPadOS 디바이스에서 현재 사용자 로그아웃
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "73713172"
 
 - Windows - 지원되지 않음
 - Windows Phone - 지원되지 않음
-- iOS - iOS 9.3 및 이상에서 지원됨(공유 iPad 디바이스만 해당)
+- iOS/iPadOS - iOS/iPadOS 9.3 및 이상에서 지원됨(공유 iPad 디바이스만 해당)
 - macOS - 지원되지 않음
 - Android - 지원되지 않음
 
@@ -43,7 +43,7 @@ ms.locfileid: "73713172"
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인하고 **디바이스**를 선택합니다.
 4. **디바이스 및 그룹** 블레이드에서 **모든 디바이스**를 선택합니다.
-5. 관리하는 디바이스 목록에서 iOS 디바이스를 선택한 다음 **현재 사용자 로그아웃** 디바이스 원격 작업을 선택합니다.
+5. 관리하는 디바이스 목록에서 iOS/iPadOS 디바이스를 선택한 다음 **현재 사용자 로그아웃** 디바이스 원격 작업을 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

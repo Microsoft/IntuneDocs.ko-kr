@@ -1,7 +1,7 @@
 ---
-title: iOS 디바이스용 Apple School Manager 프로그램 등록
+title: iOS/iPadOS 디바이스용 Apple School Manager 프로그램 등록
 titleSuffix: Microsoft Intune
-description: Intune을 사용하여 회사 소유 iOS 디바이스에 대해 Apple School Manager 프로그램 등록을 설정하는 방법을 알아봅니다.
+description: Intune을 사용하여 회사 소유 iOS/iPadOS 디바이스에 대해 Apple School Manager 프로그램 등록을 설정하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,24 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c574714b4bd4f748c2dbe898555de35b0e03190
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 3336ed09c414538e2879a7c50d1e3a0111f58b11
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691833"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415372"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager를 통해 iOS 디바이스 등록 설정
+# <a name="set-up-iosipados-device-enrollment-with-apple-school-manager"></a>Apple School Manager를 통해 iOS/iPadOS 디바이스 등록
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-[Apple School Manager](https://school.apple.com/) 프로그램을 통해 구입한 iOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. Intune을 Apple School Manager와 함께 사용하면 많은 수의 iOS 디바이스를 직접 조작하지 않고 쉽게 등록할 수 있습니다. 학생이나 교사가 디바이스를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 디바이스가 관리용으로 등록됩니다.
+[Apple School Manager](https://school.apple.com/) 프로그램을 통해 구입한 iOS/iPadOS 디바이스를 등록하도록 Intune을 설정할 수 있습니다. Intune을 Apple School Manager와 함께 사용하면 많은 수의 iOS/iPadOS 디바이스를 직접 조작하지 않고 쉽게 등록할 수 있습니다. 학생이나 교사가 디바이스를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 디바이스가 관리용으로 등록됩니다.
 
 Apple School Manager 등록을 활성화하려면 Intune과 Apple School Manager 포털을 모두 사용해야 합니다. 관리용으로 Intune에 디바이스를 할당할 수 있으려면 일련 번호 또는 구매 주문 번호 목록이 필요합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 DEP 등록 프로필을 만듭니다.
 
 Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enrollment-program-enroll-ios.md) 또는 [디바이스 등록 관리자](device-enrollment-manager-enroll.md)와 함께 사용할 수 없습니다.
 
-**필수 구성 요소**
+**전제 조건**
 - [Apple MDM(모바일 디바이스 관리) 푸시 인증서](apple-mdm-push-certificate-get.md)
 - [MDM 기관](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
@@ -44,7 +44,7 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Apple 토큰 가져오기 및 디바이스 할당
 
-회사 소유 iOS 디바이스를 Apple School Manager에 등록하려면 Apple의 토큰(.p7m) 파일이 필요합니다. Intune에서는 이 토큰을 통해 Apple School Manager 참가 디바이스에 대한 정보를 동기화할 수 있습니다. 또한 Apple에 등록 프로필을 업로드하고 이러한 프로필에 디바이스를 할당할 수 있습니다. Apple 포털을 사용하는 동안 관리할 디바이스 일련 번호를 할당할 수도 있습니다.
+회사 소유 iOS/iPadOS 디바이스를 Apple School Manager에 등록하려면 Apple의 토큰(.p7m) 파일이 필요합니다. Intune에서는 이 토큰을 통해 Apple School Manager 참가 디바이스에 대한 정보를 동기화할 수 있습니다. 또한 Apple에 등록 프로필을 업로드하고 이러한 프로필에 디바이스를 할당할 수 있습니다. Apple 포털을 사용하는 동안 관리할 디바이스 일련 번호를 할당할 수도 있습니다.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>1단계. Apple 토큰을 만드는 데 필요한 Intune 공개 키 인증서 다운로드
 
@@ -76,7 +76,7 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
 ![등록 프로그램 토큰을 만드는 데 사용되는 Apple ID를 지정하고 등록 프로그램 토큰을 찾는 스크린샷](./media/apple-school-manager-set-up-ios/image03.png)
 
 ### <a name="step-4-upload-your-token"></a>4단계. 토큰 업로드
-**Apple 토큰** 상자에서 인증서(.pem) 파일을 찾은 다음 **열기**, **만들기**를 차례로 선택합니다. Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 정책을 푸시하여 iOS 디바이스를 등록하고 관리할 수 있습니다. Intune은 Apple에서 Apple School Manager 디바이스를 자동으로 동기화합니다.
+**Apple 토큰** 상자에서 인증서(.pem) 파일을 찾은 다음 **열기**, **만들기**를 차례로 선택합니다. Push Certificate가 있으면 Intune에서 등록된 모바일 디바이스에 정책을 푸시하여 iOS/iPadOS 디바이스를 등록하고 관리할 수 있습니다. Intune은 Apple에서 Apple School Manager 디바이스를 자동으로 동기화합니다.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 등록 프로필 만들기
 이제 토큰을 설치했으므로 Apple School 디바이스의 등록 프로필을 만들 수 있습니다. 디바이스 등록 프로필은 등록 중에 디바이스 그룹에 적용되는 설정을 정의합니다.
@@ -106,7 +106,7 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
     > 이러한 설정은 Apple 설정 도우미를 사용하여 인증하는 경우에는 지원되지 않습니다.
 
 6. **디바이스 관리 설정**을 선택한 다음 이 프로필을 사용하는 디바이스를 감독할지 여부를 선택합니다.
-    **감독**되는 디바이스의 경우 더 많은 관리 옵션이 제공되며 기본적으로 활성화 잠금을 사용할 수 없습니다. 특히 많은 수의 iOS 디바이스를 배포하는 조직의 경우 감독됨 모드를 사용하기 위한 메커니즘으로 DEP를 사용하는 것이 좋습니다.
+    **감독**되는 디바이스의 경우 더 많은 관리 옵션이 제공되며 기본적으로 활성화 잠금을 사용할 수 없습니다. 특히 많은 수의 iOS/iPadOS 디바이스를 배포하는 조직의 경우 감독 모드를 사용하기 위한 메커니즘으로 DEP를 사용하는 것이 좋습니다.
 
     사용자는 해당 디바이스가 감독된다는 알림을 다음 두 가지 방법으로 받습니다.
 
@@ -114,9 +114,9 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
    - **설정** > **일반** > **정보** 화면에 다음이 표시됩니다. “이 iPhone은 감독됩니다. Contoso는 사용자의 인터넷 트래픽을 모니터링하고 이 디바이스를 찾습니다."라는 메시지를
 
      > [!NOTE]
-     > 감독 없이 등록된 디바이스는 Apple Configurator를 사용하여 감독으로만 다시 설정할 수 있습니다. 이러한 방식으로 디바이스를 다시 설정하려면 iOS 디바이스를 Mac에 USB 케이블로 연결해야 합니다. 이에 대해 [Apple Configurator 문서](http://help.apple.com/configurator/mac/2.3)에서 자세히 알아보세요.
+     > 감독 없이 등록된 디바이스는 Apple Configurator를 사용하여 감독으로만 다시 설정할 수 있습니다. 이러한 방식으로 디바이스를 다시 설정하려면 iOS/iPadOS 디바이스를 Mac에 USB 케이블로 연결해야 합니다. 이에 대해 [Apple Configurator 문서](http://help.apple.com/configurator/mac/2.3)에서 자세히 알아보세요.
 
-7. 이 프로필을 사용하는 디바이스에 대해 잠긴 환경을 사용할지를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS 설정을 사용할 수 없습니다. 디바이스를 등록한 후에 이 설정을 변경하려면 디바이스를 초기화해야 합니다. 이러한 디바이스는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
+7. 이 프로필을 사용하는 디바이스에 대해 잠긴 환경을 사용할지를 선택합니다. **잠긴 환경**에서는 **설정** 메뉴에서 관리 프로필을 제거할 수 있는 iOS/iPadOS 설정을 사용할 수 없습니다. 디바이스를 등록한 후에 이 설정을 변경하려면 디바이스를 초기화해야 합니다. 이러한 디바이스는 **감독됨** 관리 모드가 *예*로 설정되어 있어야 합니다. 
 
 8. 여러 사용자가 관리되는 Apple ID를 사용하여 등록된 iPad에 로그온하도록 설정할 수 있습니다. 이렇게 하려면 **공유 iPad**에서 **예**를 선택합니다(이 옵션을 사용하려면 **사용자 선호도 없이 등록**하고 **감독됨**모드를 **예**로 설정해야 함). 관리되는 Apple ID는 Apple School Manager 포털에서 작성됩니다. [공유 iPad](../fundamentals/education-settings-configure-ios-shared.md) 및 [Apple의 공유 iPad 요구 사항](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)에 대해 자세히 알아보세요.
 
@@ -135,7 +135,7 @@ Apple School Manager 등록은 [Apple의 장비 등록 프로그램](device-enro
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>부서 이름</strong>     |                                                             정품 인증을 하는 동안 사용자가 <strong>구성 정보</strong>를 탭하면 표시됩니다.                                                              |
     |    <strong>부서 전화</strong>     |                                                          정품 인증을 하는 동안 사용자가 <strong>도움이 필요하세요?</strong> 단추를 클릭하면 표시됩니다.                                                          |
-    | <strong>설정 도우미 옵션</strong> |                                                     다음 선택적 설정은 나중에 iOS <strong>설정</strong> 메뉴에서 지정할 수 있습니다.                                                      |
+    | <strong>설정 도우미 옵션</strong> |                                                     다음 선택적 설정은 나중에 iOS/iPadOS <strong>설정</strong> 메뉴에서 지정할 수 있습니다.                                                      |
     |        <strong>암호</strong>         | 정품 인증을 하는 동안 암호를 묻는 메시지가 표시됩니다. 디바이스를 하나의 앱으로 제한하는 키오스크 모드와 같이 액세스가 다른 방식으로 제어되지 않은 경우 보안되지 않은 디바이스에 대해 항상 암호를 요구합니다. |
     |    <strong>위치 서비스</strong>    |                                                                 이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 서비스를 확인하는 메시지가 표시됩니다.                                                                  |
     |         <strong>복원</strong>         |                                                                이 옵션을 사용하도록 설정하면 정품 인증을 하는 동안 설정 도우미에서 iCloud 백업을 확인하는 메시지가 표시됩니다.                                                                 |
@@ -184,4 +184,4 @@ Intune에서 관리하는 Apple School Manager 디바이스를 등록하려면 �
 
 ## <a name="distribute-devices-to-users"></a>사용자에게 디바이스 배포
 
-Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 Apple School 디바이스의 등록을 허용하는 프로필을 할당했습니다. 이제 사용자에게 디바이스를 배포할 수 있습니다. 켜져 있는 iOS Apple School Manager 디바이스는 Intune에서 관리하도록 등록됩니다. 디바이스를 초기화할 때까지는 현재 사용 중인 활성화된 디바이스에 프로필을 적용할 수 없습니다.
+Apple과 Intune 간의 동기화 및 관리를 사용하도록 설정했으며 Apple School 디바이스의 등록을 허용하는 프로필을 할당했습니다. 이제 사용자에게 디바이스를 배포할 수 있습니다. 켜져 있는 iOS/iPadOS Apple School Manager 디바이스는 Intune에서 관리하도록 등록됩니다. 디바이스를 초기화할 때까지는 현재 사용 중인 활성화된 디바이스에 프로필을 적용할 수 없습니다.
