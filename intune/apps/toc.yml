@@ -82,12 +82,16 @@
               href: apps-win32-s-mode.md
         - name: 특정 앱 추가
           items:
-            - name: 회사 포털 앱
+            - name: 회사 포털 앱 - Autopilot
+              href: store-apps-company-portal-autopilot.md
+            - name: 회사 포털 앱 - 다운로드
               href: store-apps-company-portal-app.md
             - name: Windows 10용 Microsoft Edge
               href: apps-windows-edge.md
             - name: macOS용 Microsoft Edge
               href: apps-edge-macos.md
+            - name: macOS용 Microsoft Defender ATP
+              href: apps-advanced-threat-protection-macos.md
         - name: PowerShell 스크립트
           href: intune-management-extension.md
     - name: 앱 할당
