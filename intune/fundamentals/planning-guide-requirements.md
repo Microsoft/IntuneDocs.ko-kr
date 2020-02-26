@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a03a92f715496b3c647a12bb99457d151ead54a3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505129"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514934"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>사용 사례 시나리오 요구 사항 확인
 
@@ -35,13 +35,13 @@ ms.locfileid: "72505129"
 
 다음은 조직 사용 사례 요구 사항의 몇 가지 예로, 각 사용 사례 및 하위 사용 사례 시나리오, 조직 그룹 및 모바일 디바이스 플랫폼에 대한 다양한 요구 사항 집합이 나와 있습니다. 아래 표를 사용하여 조직의 사용 사례 요구 사항을 입력할 수도 있습니다.
 
-| **사용 사례** | **하위 사용 사례** | **그룹** | **디바이스 플랫폼** | **요구 사항** |
+| **사용 사례** | **하위 사용 사례** | **그룹** | **디바이스 플랫폼** | **Requirements** |
 |:---:|:---:|:---:|:---:|:---:|
-| 회사 | 정보 근로자 | HR, 재무 | iOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |                                                          
-| 회사 | 임원 | HR, 재무 | iOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |                                                         
+| 회사 | 정보 근로자 | HR, 재무 | iOS/iPadOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |                                                          
+| 회사 | 임원 | HR, 재무 | iOS/iPadOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |                                                         
 | 회사 | 키오스크 | 소매 | Android | 디바이스 설정, 프로필, 앱 |
-| BYOD | 정보 근로자 | 마케팅, 영업 | iOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |                                                         
-| BYOD | 임원 | 마케팅, 영업 | iOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |
+| BYOD | 정보 근로자 | 마케팅, 영업 | iOS/iPadOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |                                                         
+| BYOD | 임원 | 마케팅, 영업 | iOS/iPadOS | 보안 전자 메일, 디바이스 설정, 프로필, 앱 |
 
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 조직의 사용 사례 및 하위 사용 사례 요구 사항을 입력할 수 있습니다.
 

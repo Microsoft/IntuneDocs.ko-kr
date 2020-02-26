@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: 373aeea9ab4fcbd075ac2ab18f205f3ddd191a39
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529341"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609284"
 ---
 이러한 알림은 향후 Intune 변경 사항 및 기능을 준비하는 데 도움이 되는 중요한 정보를 제공합니다.
 
@@ -84,7 +84,7 @@ iOS 및 Android의 웹 클립에 대한 지원이 제공됩니다. 이 지원이
 
 [자세한 정보](https://go.microsoft.com/fwlink/?linkid=2107122)
 
-### <a name="decreasing-support-for-android-device-administrator"></a>Android 디바이스 관리자에 대한 지원 감소 
+### <a name="decreasing-support-for-android-device-administrator--5857738--"></a>Android 디바이스 관리자에 대한 지원 감소<!--5857738-->
 Android 디바이스 관리자("레거시" Android 관리라고도 하며 Android 2.2를 통해 출시됨)는 Android 디바이스를 관리하는 방법입니다. 그러나 이제 향상된 관리 기능을 [Android Enterprise](../enrollment/connect-intune-android-enterprise.md)(Android 5.0을 통해 출시)에서 사용할 수 있습니다. 최신의 풍부하고 보다 안전한 디바이스 관리로 전환하기 위해 Google은 새로운 Android 릴리스에서 디바이스 관리자 지원을 줄이고 있습니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
@@ -108,24 +108,5 @@ Q3 CY2020에 제공될 기능 감소를 피하려면 다음을 수행하는 것�
 - [디바이스 관리자에서 Android Enterprise로 마이그레이션하기 위한 Google 지침](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [디바이스 관리자 API 사용 중단 계획에 대한 Google 설명서](https://developers.google.com/android/work/device-admin-deprecation)
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>변경 계획: 향후 릴리스에서 Android 5.0 이상을 지원하도록 Android용 Intune 앱 SDK 및 앱 보호 정책 전환 <!--4911065 -->
-Intune은 향후 릴리스에 Android 5.x(Lollipop) 이상을 지원하도록 전환되고 있습니다. 최신 Intune 앱 SDK를 사용하여 래핑된 앱을 업데이트하고 디바이스를 업데이트합니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-Android용 SDK 또는 앱을 사용하고 있지 않거나 향후 사용할 예정인 경우 이 변경의 영향을 받지 않습니다. Intune 앱 SDK를 사용하는 경우 최신 버전으로 업데이트하고, 디바이스를 Android 5.x 이상으로 업데이트해야 합니다. 업데이트하지 않으면 앱은 업데이트를 받지 못하며 해당 환경 품질이 시간이 흐름에 따라 저하됩니다.
-
-아래에서 Android 버전 4.x를 실행하는 Intune에 등록된 일반 디바이스 목록을 찾아보세요. 이러한 디바이스 중 하나를 사용하는 경우 이 디바이스에서 Android 버전 5.0 이상을 지원하거나 Android 버전 5.0 이상을 지원하는 디바이스로 대체되도록 적절한 단계를 수행합니다. 이 목록은 평가해야 할 수 있는 모든 디바이스를 포함하지는 않습니다.
-
-- Samsung SM-T561  
-- Samsung SM-T365
-- Samsung GT-I9195
-- Samsung SM-G800F
-- Samsung SM-G357FZ
-- Motorola XT1080
-- Samsung GT-I9305
-- Samsung SM-T231
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
-최신 Intune 앱 SDK를 사용하여 앱을 래핑합니다. 사용자가 개인 디바이스의 최종 사용자에게 업그레이드할 것을 알리도록 "최소 OS 버전 필요(경고만)" 조건부 시작 설정을 지정할 수도 있습니다.
 
 
