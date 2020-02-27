@@ -39,6 +39,8 @@
   items:
     - name: Intune for Education이란?
       href: introduction-intune-education.md
+    - name: 미국 정부용 Intune 이란?
+      href: introduction-intune-government.md
     - name: 상위 수준 아키텍처
       href: high-level-architecture.md
     - name: 디바이스 수명 주기

@@ -113,3 +113,5 @@
           href: troubleshoot-ios-enrollment-errors.md
         - name: Windows 디바이스 등록 문제 해결
           href: troubleshoot-windows-enrollment-errors.md
+        - name: Android 디바이스 등록 문제 해결
+          href: troubleshoot-android-enrollment.md
