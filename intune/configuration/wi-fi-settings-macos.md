@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a479bfa7b6a572ab2191fb651ce04145d8508c4b
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 8aa9fa9462b6278da566a3ff54264540144a38de
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206995"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512265"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune에서 macOS 디바이스의 Wi-Fi 설정 추가
-
-
 
 특정 WiFi 설정을 사용하여 프로필을 만든 후 macOS 디바이스에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, PKS 또는 SCEP 인증서 사용 등을 포함한 많은 기능을 제공합니다.
 
@@ -38,7 +36,7 @@ Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정이라는 두 
 [디바이스 프로필 만들기](device-profile-create.md).
 
 > [!NOTE]
-> 이러한 설정은 모든 등록 형식에 사용할 수 있습니다. 등록 형식에 대 한 자세한 내용은 [Macos 등록](../enrollment/macos-enroll.md)을 참조 하세요.
+> 이러한 설정은 모든 등록 유형에 사용할 수 있습니다. 등록 유형에 대한 자세한 내용은 [macOS 등록](../enrollment/macos-enroll.md)을 참조하세요.
 
 ## <a name="basic-profiles"></a>기본 프로필
 
@@ -122,4 +120,4 @@ Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정이라는 두 
 
 프로필이 만들어지지만 아무것도 하지 않습니다. 다음으로, [이 프로필을 할당](device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Android](wi-fi-settings-android.md), [android Enterprise](wi-fi-settings-android-enterprise.md), [iOS](wi-fi-settings-ios.md)및 [Windows 10](wi-fi-settings-windows.md) 장치에서 wi-fi 설정을 구성 합니다.
+[Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [iOS/iPadOS](wi-fi-settings-ios.md) 및 [Windows 10](wi-fi-settings-windows.md) 디바이스에서 Wi-Fi 설정을 구성합니다.

@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune에서 Android Enterprise에 대한 VPN 설정 사용 - Azure | Microsoft Docs
-description: Microsoft Intune의 Android 엔터프라이즈 장치에서 VPN 연결을 만드는 모든 설정을 참조 하세요. VPN 서버의 연결 이름, IP 주소 또는 FQDN을 입력 하 고, 사용자가 인증 하는 방법을 선택 하 고, Citrix, SonicWall, Check Point 캡슐 및 Pulse Secure 연결 형식을 선택 합니다.
+description: Microsoft Intune의 Android Enterprise 디바이스에서 VPN 연결을 만드는 모든 설정을 참조하세요. VPN 서버의 연결 이름, IP 주소 또는 FQDN을 입력하고, 사용자가 인증하는 방법을 선택하며 Citrix, SonicWall, Check Point 캡슐 및 Pulse Secure 연결 형식을 선택합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0c11be374e36ec32feb9540f6cfd4f1bc794e9c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 81300651355e52f438ea2a314eeb1d0d48e3fcbc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206315"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510867"
 ---
-# <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Intune에서 VPN을 구성 하는 Android 엔터프라이즈 장치 설정
+# <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Intune에서 VPN을 구성하는 Android Enterprise 디바이스 설정
 
-
-
-이 문서에서는 Android Enterprise 디바이스에서 제어할 수 있는 다양한 VPN 연결 설정을 나열하고 설명합니다. MDM (모바일 장치 관리) 솔루션의 일부로, 이러한 설정을 사용 하 여 VPN 연결을 만들고, VPN에서 인증 하는 방법, VPN 서버 유형 등을 선택 합니다.
+이 문서에서는 Android Enterprise 디바이스에서 제어할 수 있는 다양한 VPN 연결 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일환으로 이러한 설정을 사용하여 VPN 연결을 만들고, VPN에서 인증하는 방법, VPN 서버 유형 등을 선택합니다.
 
 Intune 관리자는 VPN 설정을 만들어 Android Enterprise 디바이스에 할당할 수 있습니다. 
 
-Intune의 VPN 프로필에 대 한 자세한 내용은 [vpn 프로필](vpn-settings-configure.md)을 참조 하세요.
+Intune의 VPN 프로필에 대한 자세한 내용은 [VPN 프로필](vpn-settings-configure.md)을 참조하세요.
 
 > [!NOTE]
-> Always on VPN을 구성 하려면 VPN 프로필을 만들고 Always on VPN 설정을 구성 하 여 [장치 제한](device-restrictions-android-for-work.md#connectivity) 프로필을 만들어야 합니다.
+> 상시 VPN을 구성하려면 VPN 프로필을 만들고 상시 VPN 설정을 구성하여 [디바이스 제한](device-restrictions-android-for-work.md#connectivity) 프로필을 만들어야 합니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -77,4 +75,4 @@ Intune의 VPN 프로필에 대 한 자세한 내용은 [vpn 프로필](vpn-setti
 
 [프로필을 할당](device-profile-assign.md)하고, 해당 [상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md), [macos](vpn-settings-macos.md), [Windows 10 이상](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md)및 [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md) 장치에 대 한 VPN 프로필을 만들 수도 있습니다.
+[Android](vpn-settings-android.md), [iOS/iPadOS](vpn-settings-ios.md), [macOS](vpn-settings-macos.md), [Windows 10 및 이후 버전](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md) 및 [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md) 디바이스에 대한 VPN 프로필을 만들 수도 있습니다.

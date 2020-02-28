@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea4f4cd53af06bf6ec47ed14976526116d963690
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 7520e5883a89d6cd040be670aedc8436cc40fadb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502388"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515189"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Microsoft Intune을 사용하여 회사 데이터에 대한 무단 액세스 방지
 
@@ -50,5 +50,5 @@ ms.locfileid: "72502388"
 
 다음 단계의 일부로, 다음을 비롯하여 회사 데이터의 보안을 향상할 수 있는 다른 방법에 대해 자세히 알아볼 수 있습니다. 
 
-* [iOS 및 Android 디바이스에서 Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)을 사용하는 방법을 알아봅니다.
+* [iOS/iPadOS 및 Android 디바이스에서 Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)을 사용하는 방법에 대해 알아봅니다.
 * Windows Phone 및 Mac 컴퓨터의 경우 [Microsoft Rights Management 공유 애플리케이션](https://technet.microsoft.com/dn451248)에 대해 알아봅니다.

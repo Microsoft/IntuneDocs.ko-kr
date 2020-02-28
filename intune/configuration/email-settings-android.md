@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43a2b00ae824656621c8a586e41ba6425c69ed40
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0a1bc53e0f05818b28bbd975e0de5cf5c9368afb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506774"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512860"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune에서 이메일, 인증 및 동기화를 구성하기 위한 Android 디바이스 설정
 
@@ -36,10 +36,10 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
 
 ## <a name="android-samsung-knox"></a>Android(Samsung Knox)
 
-- **이메일 서버**: Exchange 서버의 호스트 이름을 입력합니다. 예를 들어 다음과 같이 입력합니다. `outlook.office365.com`
-- **계정 이름**: 이메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 디바이스에서 사용자에게 표시됩니다.
+- **메일 서버**: Exchange 서버의 호스트 이름을 입력합니다. 예를 들어 다음과 같이 입력합니다. `outlook.office365.com`
+- **계정 이름**: 메일 계정의 표시 이름을 입력합니다. 이 이름은 해당 디바이스에서 사용자에게 표시됩니다.
 - **AAD의 사용자 이름 특성**: 이 이름은 Intune이 Azure AD(Azure Active Directory)에서 가져오는 특성입니다. Intune은 이 프로필에서 사용되는 사용자 이름을 동적으로 생성합니다. 옵션은 다음과 같습니다.
-  - **사용자 계정 이름**: `user1` 또는 `user1@contoso.com`과 같은 이름을 가져옵니다.
+  - **사용자 계정 이름**: 이름(예: `user1` 또는 `user1@contoso.com`)을 가져옵니다.
   - **사용자 이름**: `user1`과 같은 이름만 가져옵니다.
   - **sAM 계정 이름**: `domain\user1`과 같은 도메인이 필요합니다. sAM 계정 이름은 Android 디바이스에서만 사용됩니다.
 
@@ -52,22 +52,22 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
       **사용자 지정** 특성을 사용하도록 선택할 때 다음을 입력합니다.
       - **사용할 사용자 지정 도메인 이름**: Intune이 도메인 이름(예: `contoso.com` 또는 `contoso`)에 사용하는 값을 입력합니다.
 
-- **AAD의 이메일 주소 특성**: 이 이름은 Intune이 Azure AD에서 가져오는 이메일 특성입니다. Intune은 이 프로필에서 사용되는 이메일 주소를 동적으로 생성합니다. 옵션은 다음과 같습니다.
-  - **사용자 계정 이름**: `user1@contoso.com` 또는 `user1`과 같은 전체 사용자 계정 이름을 이메일 주소로 사용합니다.
+- **AAD의 메일 주소 특성**: 이 이름은 Intune이 Azure AD에서 가져오는 이메일 특성입니다. Intune은 이 프로필에서 사용되는 이메일 주소를 동적으로 생성합니다. 옵션은 다음과 같습니다.
+  - **사용자 계정 이름**:  `user1@contoso.com` 또는 `user1`과 같은 전체 사용자 계정 이름을 이메일 주소로 사용합니다.
   - **기본 SMTP 주소**: `user1@contoso.com`과 같은 기본 SMTP 주소를 사용하여 Exchange에 로그인합니다.
 
-- **인증 방법**: 이메일 프로필에서 사용되는 인증 방법으로 **사용자 이름 및 암호** 또는 **인증서** 중 하나를 선택합니다.
+- **인증 방법**: 전자 메일 프로필에서 사용되는 인증 방법으로 **사용자 이름 및 암호** 또는 **인증서**중 하나를 선택합니다.
   - **인증서**를 선택한 경우 Exchange 연결을 인증하기 위해 이전에 만든 클라이언트 SCEP 또는 PKCS 인증서 프로필을 선택합니다.
 
 ### <a name="security-settings"></a>보안 설정
 
-- **SSL**: 이메일을 전송하거나 수신할 때와 Exchange Server와 통신할 때 SSL(Secure Sockets Layer) 통신을 사용합니다.
-- **S/MIME**: S/MIME 암호화를 사용하여 보내는 이메일을 전송합니다.
+- **SSL**: 전자 메일을 전송하거나 수신할 때와 Exchange Server와 통신할 때 SSL(Secure Sockets Layer) 통신을 사용합니다.
+- **S/MIME**: S/MIME 암호화를 사용하여 발신 전자 메일을 전송합니다.
   - **인증서**를 선택한 경우 Exchange 연결을 인증하기 위해 이전에 만든 클라이언트 SCEP 또는 PKCS 인증서 프로필을 선택합니다.
 
 ### <a name="synchronization-settings"></a>동기화 설정
 
-- **동기화할 이메일 양**: 동기화할 이메일의 일 수를 선택하거나, **무제한**을 선택하여 사용 가능한 모든 이메일을 동기화합니다.
+- **동기화할 메일 양**: 동기화할 메일의 일 수 또는 **무제한**을 선택하여 사용 가능한 모든 메일을 동기화합니다.
 - **동기화 일정**: Exchange 서버의 데이터를 동기화하는 디바이스의 일정을 선택합니다. 데이터가 도착하는 즉시 동기화하는 **메시지가 도착할 때**를 선택하거나 디바이스의 사용자가 동기화를 시작해야 하는 **수동**을 선택할 수도 있습니다.
 
 ### <a name="content-sync-settings"></a>콘텐츠 동기화 설정
@@ -83,4 +83,4 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
 
 [프로필을 할당](device-profile-assign.md)하고, 해당 [상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Android Enterprise - 회사 프로필](email-settings-android-enterprise.md), [iOS](email-settings-ios.md), [Windows 10 이상](email-settings-windows-10.md) 및 [Windows Phone 8.1](email-settings-windows-phone-8-1.md)에 대한 이메일 프로필을 만들 수도 있습니다.
+[Android Enterprise - 회사 프로필](email-settings-android-enterprise.md), [iOS/iPadOS](email-settings-ios.md), [Windows 10 이상](email-settings-windows-10.md) 및 [Windows Phone 8.1](email-settings-windows-phone-8-1.md)에 대한 메일 프로필을 만들 수도 있습니다.

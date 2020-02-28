@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 545f287e8b7ee82e2008f239171b22e01714b8c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755598"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514747"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Intune에서 디바이스 작업 문제 해결
 
@@ -34,7 +34,7 @@ Microsoft Intune에는 관리 디바이스에 도움이 되는 많은 작업이 
 ### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>포털에서 "활성화 잠금 사용 안 함" 작업을 클릭했지만 디바이스에서 아무 일도 발생하지 않았습니다.
 이는 예상된 결과입니다. 활성화 잠금 사용 안 함 작업이 시작된 후에는 Apple에서 Intune에 업데이트된 코드를 요청합니다. 디바이스가 활성화 잠금 화면에 있는 경우 암호 필드에 코드를 수동으로 입력합니다. 이 코드는 15일 동안만 유효하므로, 작업을 클릭하고 코드를 복사한 후에 초기화를 실행해야 합니다.
 
-### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>iOS 디바이스의 하드웨어 개요 블레이드에서 활성화 잠금 사용 안 함 코드가 표시되지 않는 이유는 무엇인가요?
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-iosipados-device"></a>iOS/iPadOS 디바이스의 하드웨어 개요 블레이드에서 활성화 잠금 사용 안 함 코드가 표시되지 않는 이유는 무엇인가요?
 가장 가능성이 큰 원인은 다음과 같습니다.
 - 코드가 만료되어 서비스에서 지워졌습니다.
 - 디바이스가 활성화 잠금을 허용하는 디바이스 제한 정책으로 감독되지 않습니다.
@@ -43,7 +43,7 @@ Microsoft Intune에는 관리 디바이스에 도움이 되는 많은 작업이 
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>iOS 디바이스에 대해 활성화 잠금 사용 안 함 작업이 회색으로 표시되는 이유는 무엇인가요?
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-iosipados-device"></a>iOS/iPadOS 디바이스에 대해 활성화 잠금 사용 안 함 작업이 회색으로 표시되는 이유는 무엇인가요?
 가장 가능성이 큰 원인은 다음과 같습니다. 
 - 코드가 만료되어 서비스에서 지워졌습니다.
 - 디바이스가 활성화 잠금을 허용하는 디바이스 제한 정책으로 감독되지 않습니다.
@@ -90,8 +90,22 @@ MDM 인증서가 만료될 때까지 디바이스는 **사용 중지/초기화 �
 3. 최종 사용자는 보조 프롬프트를 수락하여 암호 재설정을 허용해야 합니다.
 이러한 단계를 완료한 후에는 더 이상 이 응답을 받지 않게 됩니다.
 
-### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>iOS 디바이스에서 암호 제거 작업을 실행할 때 새 암호를 설정하라는 메시지가 표시되는 이유는 무엇인가요?
+### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>iOS/iPadOS 디바이스에서 암호 제거 작업을 실행할 때 새 암호를 설정하라는 메시지가 표시되는 이유는 무엇인가요?
 규정 준수 정책 중 하나에 암호가 필요하기 때문입니다.
+
+
+## <a name="wipe-action"></a>초기화 작업
+
+### <a name="i-cant-restart-a-windows-10-device-after-using-the-wipe-action"></a>초기화 작업을 사용한 후 Windows 10 디바이스를 다시 시작할 수 없습니다.
+이 문제는 **디바이스 초기화 선택을 사용하는 경우에 발생할 수 있으며 디바이스 전원이 꺼진 경우에도 초기화를 계속 실행합니다. 이 옵션을 선택하는 경우, 일부 Windows 10 디바이스를 다시 시작하지 못할 수도 있습니다.** (Windows 10 디바이스에서)
+
+이 문제는 Windows 설치 시 운영 체제를 다시 설치할 수 없는 중대한 손상이 있을 때 발생할 수 있습니다. 이 경우, 프로세스는 실패하며 시스템은 [Windows 복구 환경]( https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference)에 그대로 유지됩니다.
+
+### <a name="i-cant-restart-a-bitlocker-encrypted-device-after-using-the-wipe-action"></a>초기화 작업을 사용한 후 BitLocker로 암호화된 디바이스를 다시 시작할 수 없습니다.
+이 문제는 **디바이스 초기화 선택을 사용하는 경우에 발생할 수 있으며 디바이스 전원이 꺼진 경우에도 초기화를 계속 실행합니다. 이 옵션을 선택하는 경우, 일부 Windows 10 디바이스를 다시 시작하지 못할 수도 있습니다.** BitLocker로 암호화된 디바이스의 옵션.
+
+이 문제를 해결하려면 부팅 가능한 미디어를 사용하여 디바이스에 Windows 10을 다시 설치합니다.
+
 
 ## <a name="next-steps"></a>다음 단계
 

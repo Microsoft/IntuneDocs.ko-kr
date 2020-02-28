@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: f3b32268d0b04dee84a737b9a1c768bc4fab7202
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886791"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556502"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Microsoft Intune의 BitLocker 정책 문제 해결
 
@@ -39,7 +39,9 @@ Microsoft Intune을 사용하여 다음과 같은 방법으로 Windows 10 디바
 
 - **보안 기준** - [보안 기준](security-baselines.md)은 관련 보안 팀에서 권장하는 알려진 설정 및 기본값 그룹으로, Windows 디바이스 보안을 지원합니다. *MDM 보안 기준* 또는 *Microsoft Defender ATP 기준*과 같은 다양한 기준 원본은 서로 다른 설정뿐 아니라 동일한 설정도 관리할 수 있습니다. 디바이스 구성 정책을 사용하여 관리하는 것과 동일한 설정을 관리할 수도 있습니다. 
 
-Intune 외에도 BitLocker 설정을 그룹 정책 같은 다른 방법으로 관리하거나 디바이스 사용자가 수동으로 설정할 수 있습니다.
+Intune 외에도 Modern Standby 및 HSTI 규격인 하드웨어의 경우, 이러한 기능 중 하나를 사용하면 사용자가 디바이스를 Azure AD에 조인할 때마다 BitLocker 디바이스 암호화가 자동으로 설정됩니다. Azure AD는 복구 키도 백업되는 포털을 제공하므로 사용자는 필요 시 셀프 서비스를 위한 자체 복구 키를 검색할 수 있습니다.
+
+BitLocker 설정을 그룹 정책 같은 다른 방법으로 관리하거나 디바이스 사용자가 수동으로 설정할 수도 있습니다.
 
 디바이스에 설정을 적용하는 방법과 관계없이 BitLocker 정책은 [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)를 사용하여 디바이스에서 암호화를 구성합니다. BitLocker CSP는 Windows에 기본적으로 제공되며 Intune에서 할당된 디바이스에 BitLocker 정책을 배포하는 경우 정책의 설정이 적용될 수 있도록 Windows 레지스트리에 적절한 값을 기록하는 디바이스에 대한 BitLocker CSP입니다.
 
@@ -103,7 +105,7 @@ Confirm-SecureBootUEFI
 
 ### <a name="review-the-devices-registry-key-configuration"></a>디바이스 레지스트리 키 구성 검토
 
-BitLocker 정책이 디바이스에 성공적으로 배포되면 디바이스에서 다음 레지스트리 키를 확인하여 BitLocker 설정의 구성을 검토할 수 있습니다. *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker* 아래 예를 살펴보세요.
+BitLocker 정책이 디바이스에 성공적으로 배포되면 디바이스에서 다음 레지스트리 키를 확인하여 BitLocker 설정의 구성을 검토할 수 있습니다.  *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. 아래 예를 살펴보세요.
 
 ![BitLocker 레지스트리 키](./media/troubleshooting-bitlocker-policies/registry.png)
 
@@ -164,6 +166,15 @@ EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
 
   2. **BitLocker가 일부 하드웨어에서만 지원됨**.
      올바른 버전의 Windows를 사용하는 경우에도 기본 디바이스 하드웨어가 BitLocker 암호화를 위한 요구 사항을 충족하지 못할 수 있습니다. Windows 설명서에서 [BitLocker의 시스템 요구 사항](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements)을 확인할 수 있지만 확인해야 할 주요 사항은 that the 디바이스에 호환되는 TPM 칩(1.2 이상)과 TCG(신뢰할 수 있는 컴퓨팅 그룹) 규격 BIOS 또는 UEFI 펌웨어가 있는지 확인하는 것입니다.
+     
+**Bitlocker 암호화가 자동으로 수행되지 않습니다** - "다른 디스크 암호화에 대한 경고" 설정이 차단으로 설정되고 암호화 마법사가 계속 다음과 같이 표시되는 Endpoint Protection 정책을 구성했습니다.
+
+- **Windows 버전에서 자동 암호화를 지원하는지 확인** 이를 위해서는 최소한 버전 1803이 필요합니다. 사용자가 디바이스의 관리자가 아닌 경우, 최소 버전 1809가 필요합니다. 또한 버전 1809는 Modern Standby를 지원하지 않는 디바이스에 대한 지원을 추가했습니다.
+
+**Bitlocker로 암호화된 디바이스가 Intune 준수 정책에 맞지 않는 것으로 나타남** -BitLocker 암호화가 완료되지 않을 때 이러한 문제가 발생합니다. 디스크 크기, 파일 수, BitLocker 설정 등의 제반 요인에 따라 BitLocker 암호화는 시간이 오래 걸릴 수 있습니다. 암호화가 완료되면 디바이스는 준수 상태로 표시됩니다. Windows 업데이트를 최근에 설치한 직후에도 디바이스가 일시적으로 비준수 상태를 보일 수 있습니다.
+
+**정책이 256 비트를 지정할 때 디바이스는 128비트 알고리즘을 사용하여 암호화됩니다.** -- 기본적으로 Windows 10은 XTS-AES 128비트 암호화로 드라이브를 암호화합니다. [Autopilot 진행 중 BitLocker에 대한 256비트 암호화를 설정](https://techcommunity.microsoft.com/t5/intune-customer-success/setting-256-bit-encryption-for-bitlocker-during-autopilot-with/ba-p/323791#)하려면 이 가이드를 참조하세요.
+
 
 **조사 예제**
 

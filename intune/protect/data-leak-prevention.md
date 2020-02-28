@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502405"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514441"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Microsoft Intune을 사용하여 관리되지 않는 디바이스에서 데이터 유출 방지
 
@@ -47,7 +47,7 @@ Intune 앱 보호 정책은 디바이스 관리와 별개입니다. 앱 보호 �
 
 ## <a name="action-plan"></a>작업 계획
 
-iOS 및 Android 디바이스의 경우
+iOS/iPadOS 및 Android 디바이스:
 
 1. [앱 보호 정책](../apps/app-protection-policy.md)이 작동하는 방법을 알아봅니다.
 2. Office 모바일 앱용 [앱 보호 정책을 만들어 배포하는 방법](../apps/app-protection-policies.md)을 알아봅니다.
@@ -63,7 +63,7 @@ Windows 10 디바이스의 경우
 
 필요에 따라 추가 정보를 제공하려면 다음 링크를 공유합니다.
 
-* [iOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황](../fundamentals/end-user-mam-apps-ios.md)
+* [iOS/iPadOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황](../fundamentals/end-user-mam-apps-ios.md)
 * [Android 앱이 앱 보호 정책으로 관리될 때 예상되는 상황](../fundamentals/end-user-mam-apps-android.md)
 
 ## <a name="next-steps"></a>다음 단계

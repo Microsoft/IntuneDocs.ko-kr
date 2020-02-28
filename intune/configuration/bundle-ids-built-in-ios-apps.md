@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune의 기본 제공 앱용 iOS 번들 ID - Azure | Microsoft Docs
+title: Microsoft Intune의 기본 제공 앱용 iOS/iPadOS 번들 ID - Azure | Microsoft Docs
 titleSuffix: ''
-description: 기본 제공 iOS 앱의 번들 ID 목록을 참조하세요. 이러한 번들 ID를 사용하여 Microsoft Intune의 디바이스 구성 프로필 및 정책에서 앱을 명시적으로 허용합니다.
+description: 기본 제공 iOS 및 iPadOS 앱의 번들 ID 목록을 참조하세요. 이러한 번들 ID를 사용하여 Microsoft Intune의 디바이스 구성 프로필 및 정책에서 앱을 명시적으로 허용합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
-ms.translationtype: MTE75
+ms.openlocfilehash: 10c6ea8e3afd7bb1f5a583c0088c72fc155cb0f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691857"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513302"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune에서 사용할 수 있는 기본 제공 iOS 앱의 번들 ID
+# <a name="bundle-ids-for-built-in-ios-and-ipados-apps-you-can-use-in-intune"></a>Intune에서 사용할 수 있는 기본 제공 iOS 및 iPadOS 앱의 번들 ID
 
-iOS 디바이스에서 기능을 구성할 때 iOS 디바이스에서 기본 제공 앱을 추가할 수도 있습니다. 이 문서는 몇 가지 일반적인 기본 제공 iOS 앱의 번들 ID를 나열합니다. 다른 앱의 번들 ID를 찾으려면 소프트웨어 공급업체에 문의하세요. Apple의 [iOS 번들 ID](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web)(Apple의 웹 사이트가 열림) 목록을 참조하세요.
+iOS/iPadOS 디바이스에서 기능을 구성할 때 iOS/iPadOS 디바이스에서 기본 제공 앱을 추가할 수도 있습니다. 이 문서는 몇 가지 일반적인 기본 제공 iOS/iPadOS 앱의 번들 ID를 나열합니다. 다른 앱의 번들 ID를 찾으려면 소프트웨어 공급업체에 문의하세요. Apple의 [iOS/iPadOS 번들 ID](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web)(Apple의 웹 사이트가 열림) 목록을 참조하세요.
 
 ## <a name="bundle-ids"></a>번들 ID
 
@@ -36,7 +36,7 @@ iOS 디바이스에서 기능을 구성할 때 iOS 디바이스에서 기본 제
 | com.apple.mobilecal         | 일정     | Apple     |
 | com.apple.camera            | 카메라       | Apple     |
 | com.apple.mobiletimer       | 시계        | Apple     |
-| com. 사과 클립             | Clips        | Apple     |
+| com.apple.clips             | Clips        | Apple     |
 | com.apple.compass           | 나침반      | Apple     |
 | com.apple.MobileAddressBook | 연락처     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -55,7 +55,7 @@ iOS 디바이스에서 기능을 구성할 때 iOS 디바이스에서 기본 제
 | com.apple.Keynote           | 키노트      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | 맵         | Apple     |
-| .com. measure           | 측정 항목      | Apple     |
+| com.apple.measure           | 측정 항목      | Apple     |
 | com.apple.MobileSMS         | 메시지     | Apple     |
 | com.apple.Music             | 음악        | Apple     |
 | com.apple.news              | 뉴스         | Apple     |
@@ -69,7 +69,7 @@ iOS 디바이스에서 기능을 구성할 때 iOS 디바이스에서 기본 제
 | com.apple.reminders         | 미리 알림    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | 설정     | Apple     |
-| .com. 바로 가기         | 바로 가기    | Apple     |
+| com.apple.shortcuts         | 바로 가기    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 주식       | Apple     |
 | com.apple.tips              | 팁         | Apple     |
@@ -78,8 +78,8 @@ iOS 디바이스에서 기능을 구성할 때 iOS 디바이스에서 기본 제
 | com.apple.VoiceMemos        | 음성 메모   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | 보기        | Apple     |
-| com.apple.weather           | 날씨      | Apple     |      
+| com.apple.weather           | 날씨      | Apple     |
 
 ## <a name="next-steps"></a>다음 단계
 
-이러한 번들 ID를 사용하여 [디바이스 기능](ios-device-features-settings.md)을 구성하고 iOS 디바이스에서 [일부 설정을 허용하거나 제한합니다](device-restrictions-ios.md).
+이러한 번들 ID를 사용하여 [디바이스 기능](ios-device-features-settings.md)을 구성하고 iOS/iPadOS 디바이스에서 [일부 설정을 허용하거나 제한](device-restrictions-ios.md)합니다.

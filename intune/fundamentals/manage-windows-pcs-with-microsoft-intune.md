@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a4fdbf7ca252af9eb8513d437e3275692a1f8d13
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414402"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415248"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune 소프트웨어 클라이언트를 통해 Windows PC를 컴퓨터로 관리
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414402"
 > [!WARNING]
 > Microsoft는 [2020년 1월 14일부로 Windows 7 지원을 종료한다](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)고 발표했습니다. 이 날짜에 Intune도 Windows 7을 실행하는 디바이스에 대한 지원을 만료합니다. 모든 서비스 또는 지원 중단을 방지하려면 Windows 10으로 이동하는 것이 가장 좋습니다.
 > 
-> 자세한 내용은 [Intune 변경 계획: Windows 7 지원 종료](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7)를 참조하세요.
+> 자세한 내용은 [변경 계획 블로그 게시물](https://aka.ms/Windows7_Intune)을 참조하세요.
 
 > [!NOTE]
 > Microsoft Intune을 사용하여 Windows PC를 [MDM(모바일 디바이스 관리)가 있는 모바일 디바이스](../enrollment/windows-enroll.md)로 관리하거나, 아래 설명된 대로 Intune 소프트웨어 클라이언트가 있는 컴퓨터로 관리할 수 있습니다. 그러나 고객은 가능한 한 [MDM 관리 솔루션을 사용](../enrollment/windows-enroll.md)하는 것이 좋습니다. 자세한 내용은 [Windows PC를 컴퓨터로 관리하는 방식과 모바일 디바이스로 관리하는 방식 비교](pc-management-comparison.md)를 참조하세요. 

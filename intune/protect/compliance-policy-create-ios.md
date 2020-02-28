@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune에서 iOS 디바이스 규정 준수 설정 - Azure | Microsoft Docs
-description: Microsoft Intune에서 iOS 디바이스의 규정 준수를 설정할 때 사용할 수 있는 모든 설정 목록을 참조하세요. 이메일을 요구하거나, 무단 해제 또는 루팅된 디바이스 확인하고, 허용되는 최소 및 최대 운영 체제 설정, 암호 길이 및 디바이스 비활성화, 암호 제한 등을 포함한 모든 암호 제한 사항을 설정할 수 있습니다.
+title: Microsoft Intune에서 iOS/iPadOS 디바이스 규정 준수 설정 - Azure | Microsoft Docs
+description: Microsoft Intune에서 iOS/iPadOS 디바이스의 규정 준수를 설정할 때 사용할 수 있는 모든 설정 목록을 참조하세요. 이메일을 요구하거나, 무단 해제 또는 루팅된 디바이스 확인하고, 허용되는 최소 및 최대 운영 체제 설정, 암호 길이 및 디바이스 비활성화, 암호 제한 등을 포함한 모든 암호 제한 사항을 설정할 수 있습니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
-ms.translationtype: MTE75
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074634"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514033"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 iOS 설정
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune을 사용하여 디바이스를 규격 또는 비규격으로 표시하는 iOS/iPadOS 설정
 
-이 문서에서는 Intune의 iOS 디바이스에서 구성할 수 있는 다양한 규정 준수 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 사용하여 이메일을 요구하고, 루팅된(무단 해제) 디바이스를 비규격으로 표시하고, 허용되는 위협 수준을 설정하고, 암호를 만료되도록 설정하는 등의 작업을 수행합니다.
+이 문서에서는 Intune의 iOS/iPadOS 디바이스에서 구성할 수 있는 다양한 규정 준수 설정을 나열하고 설명합니다. MDM(모바일 디바이스 관리) 솔루션의 일부로, 이러한 설정을 사용하여 이메일을 요구하고, 루팅된(무단 해제) 디바이스를 비규격으로 표시하고, 허용되는 위협 수준을 설정하고, 암호를 만료되도록 설정하는 등의 작업을 수행합니다.
 
 이 기능은 다음에 적용됩니다.
 
@@ -86,11 +86,11 @@ Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를
 ### <a name="password"></a>암호
 
 > [!NOTE]
-> 준수 또는 구성 정책을 iOS 디바이스에 적용하면 사용자에게 15분마다 암호를 설정하라는 메시지가 표시됩니다. 사용자가 암호를 설정할 때까지 계속 메시지가 표시됩니다. iOS 디바이스의 암호를 설정하면 암호화 프로세스가 자동으로 시작됩니다. 암호가 사용되지 않을 때까지 디바이스는 암호화된 상태로 유지됩니다.
+> 준수 또는 구성 정책을 iOS/iPadOS 디바이스에 적용하면 사용자에게 15분마다 암호를 설정하라는 메시지가 표시됩니다. 사용자가 암호를 설정할 때까지 계속 메시지가 표시됩니다. iOS/iPadOS 디바이스의 암호를 설정하면 암호화 프로세스가 자동으로 시작됩니다. 암호가 사용되지 않을 때까지 디바이스는 암호화된 상태로 유지됩니다.
 
 - **모바일 디바이스의 잠금을 해제하는 데 암호 필요**:  
   - **구성되지 않음**(*기본값*) - 이 설정은 규정 준수 또는 비준수에 대해 평가되지 않습니다.  
-  - **필요** - 사용자는 암호를 입력해야 자신의 디바이스에 액세스할 수 있습니다. 암호를 사용하는 iOS 디바이스는 암호화됩니다.
+  - **필요** - 사용자는 암호를 입력해야 자신의 디바이스에 액세스할 수 있습니다. 암호를 사용하는 iOS/iPadOS 디바이스는 암호화됩니다.
 
 - **단순 암호**:  
   - **구성되지 않음**(‘기본값’) - 사용자가 단순 암호(예: **1234** 또는 **1111**)를 만들 수 있습니다. 
@@ -125,7 +125,7 @@ Intune 관리자는 이러한 규정 준수 설정을 통해 조직 리소스를
   정책에 해당 번들 ID를 추가하여 앱을 제한할 수 있습니다. 디바이스에 앱이 설치되어 있으면 디바이스는 비규격으로 표시됩니다.
 
   - **앱 이름** - 번들 ID를 식별할 수 있도록 친숙한 이름을 입력합니다.
-  - **앱 번들 ID** - 앱 공급자가 할당한 고유한 번들 식별자를 입력합니다. 번들 ID를 찾으려면 [iOS 앱에 대한 번들 ID를 찾는 방법](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)(다른 Microsoft 웹 사이트 열기)을 참조하세요.  
+  - **앱 번들 ID** - 앱 공급자가 할당한 고유한 번들 식별자를 입력합니다. 번들 ID를 찾으려면 [iOS/iPadOS 앱에 대한 번들 ID를 찾는 방법](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)(다른 Microsoft 웹 사이트 열기)을 참조하세요.  
 
 ## <a name="next-steps"></a>다음 단계
 

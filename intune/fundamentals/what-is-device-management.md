@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3a15bf0bd8ed0a46f330b159e45d0a5d5a4c7059
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058534"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510387"
 ---
 # <a name="device-management-overview"></a>디바이스 관리 개요
 
@@ -33,7 +33,7 @@ ms.locfileid: "74058534"
 
 답은 [Microsoft Intune](what-is-intune.md)입니다. Intune은 MDM(모바일 디바이스 관리) 및 MAM(모바일 애플리케이션 관리)을 제공합니다. MAM 또는 MDM 솔루션의 핵심 작업은 다음과 같습니다.
 
-- 다양한 모바일 환경을 지원하고 iOS, Android, Windows 및 macOS 디바이스를 안전하게 관리합니다.
+- 다양한 모바일 환경을 지원하고 iOS/iPadOS, Android, Windows 및 macOS 디바이스를 안전하게 관리합니다.
 - 디바이스와 앱이 조직의 보안 요구 사항을 준수하는지 확인합니다.
 - 조직 소유 디바이스와 개인 디바이스에서 조직 데이터를 안전하게 보호하는 정책을 만듭니다.
 - 통합된 단일 모바일 솔루션을 사용하여 이러한 정책을 적용하고 디바이스, 앱, 사용자 및 그룹 관리를 도와줍니다.
@@ -41,13 +41,13 @@ ms.locfileid: "74058534"
 
 Intune은 Microsoft Azure, Microsoft 365에 포함되어 있으며 Azure Active Directory(Azure AD)와 통합됩니다. Azure AD는 누가 무엇에 액세스할 수 있는지를 제어합니다.
 
-## <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-intune"></a>Microsoft Intune
 
 Microsoft를 비롯한 여러 조직에서는 사용자가 회사 소유 디바이스 및 개인용 모바일 디바이스로 액세스하는 회사 데이터를 안전하게 보호하기 위해 Intune을 사용합니다. Intune에는 데이터 액세스를 보호하고 모니터링하는 데 도움이 되는 디바이스 및 앱 구성 정책, 소프트웨어 업데이트 정책 및 설치 상태(차트, 테이블 및 보고서)가 포함되어 있습니다.
 
 사람들이 서로 다른 플랫폼을 사용하는 여러 디바이스를 보유하고 있는 것을 흔히 볼 수 있습니다. 예를 들어 한 직원이 회사 업무에는 Surface Pro를 사용하고 개인 생활에서는 Android 모바일 디바이스를 사용할 수 있습니다. 사람들이 이처럼 여러 디바이스에서 Microsoft Outlook이나 SharePoint 같은 조직 리소스에 액세스하는 것도 매우 흔한 일입니다.
 
-Intune을 사용하면 사용자별로 여러 디바이스를 관리하고 iOS, macOS, Android 및 Windows를 포함하여 각 디바이스에서 실행되는 여러 플랫폼을 관리할 수 있습니다. Intune은 디바이스 플랫폼별로 정책 및 설정을 구분합니다. 따라서 특정 플랫폼의 디바이스를 쉽게 관리하고 볼 수 있습니다.
+Intune을 사용하면 사용자별로 여러 디바이스를 관리하고 iOS/iPadOS, macOS, Android 및 Windows를 포함하여 각 디바이스에서 실행되는 여러 플랫폼을 관리할 수 있습니다. Intune은 디바이스 플랫폼별로 정책 및 설정을 구분합니다. 따라서 특정 플랫폼의 디바이스를 쉽게 관리하고 볼 수 있습니다.
 
 **[일반적인 시나리오](common-scenarios.md)** 는 모바일 디바이스를 사용할 때 자주 발생하는 문제를 Intune이 어떻게 해결하는지 볼 수 있는 유용한 리소스입니다. 다음과 같은 시나리오를 찾을 수 있습니다.  
 
@@ -55,7 +55,7 @@ Intune을 사용하면 사용자별로 여러 디바이스를 관리하고 iOS, 
 - Office 365에 안전하게 액세스
 - 개인용 디바이스를 사용하여 조직 리소스에 액세스
 
-Intune에 대 한 자세한 내용은 [Intune 이란?](what-is-intune.md)을 참조 하세요.
+Intune에 대한 자세한 내용은 [Intune이란?](what-is-intune.md)을 참조하세요.
 
 ## <a name="integration-with-secure-and-protect-services"></a>안전하게 보호되는 서비스와 통합
 
@@ -63,7 +63,7 @@ Intune에 대 한 자세한 내용은 [Intune 이란?](what-is-intune.md)을 참
 
 - **Microsoft 365**는 일반적인 IT 작업을 간소화하는 핵심 구성 요소입니다. Microsoft 365 관리 센터에서 사용자를 만들고 그룹을 관리합니다. Intune, Azure AD 등과 같은 다른 서비스에도 액세스할 수 있습니다.
 
-  예를 들어 Microsoft 365에서 iOS 디바이스 그룹을 만듭니다. 그런 다음, Intune을 사용하여 앱 스토어 액세스, iCloud에 백업, Apple 웹 필터 사용 등과 같은 iOS 기능에 집중하는 정책을 iOS 디바이스 그룹에 푸시합니다.
+  예를 들어, Microsoft 365에서 iOS/iPadOS 디바이스 그룹을 만듭니다. 그런 다음, Intune을 사용하여 앱 스토어 액세스, AirDrop 사용, iCloud에 백업, Apple 웹 필터 사용 등과 같은 iOS/iPadOS 기능에 집중하는 정책을 iOS/iPadOS 디바이스 그룹에 푸시합니다.
 
 - **Windows Defender**는 Windows 10 디바이스를 보호하는 여러 보안 기능을 갖추고 있습니다. 예를 들어 Intune 및 Windows Defender를 함께 사용하여 다음을 수행할 수 있습니다.
 
@@ -86,7 +86,7 @@ Intune을 설정할 때 오직 Azure Portal에서만 디바이스를 관리하�
 
 [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)는 모바일 디바이스에 대한 작업을 관리하고 완료할 수 있는 원스톱 샵입니다. 이 작업 영역에는 Intune 및 Azure Active Directory를 비롯한 디바이스와 클라이언트 앱 관리에 사용되는 서비스가 포함되어 있습니다.
 
-장치 관리 관리 센터에서 다음을 수행할 수 있습니다.
+디바이스 관리 센터에서는 다음을 수행할 수 있습니다.
 
 - [디바이스 등록](../enrollment/device-enrollment.md)
 - [디바이스 준수 설정](../protect/device-compliance-get-started.md)
@@ -97,7 +97,7 @@ Intune을 설정할 때 오직 Azure Portal에서만 디바이스를 관리하�
 - [역할 관리](role-based-access-control.md)  
 - 소프트웨어 업데이트 관리
   - [Windows 10 업데이트 관리](../protect/windows-update-for-business-configure.md)  
-  - [iOS 업데이트 관리](../protect/software-updates-ios.md)  
+  - [iOS/iPadOS 업데이트 관리](../protect/software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [사용자 관리](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [그룹 및 멤버 관리](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)

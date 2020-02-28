@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
-ms.translationtype: MTE75
+ms.openlocfilehash: 7113552e09a7c7fa145a452e56575bfaf5297c3e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977753"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514570"
 ---
 # <a name="in-development-for-microsoft-intune---february-2020"></a>개발 중인 Microsoft Intune 기능 - 2020년 2월
 
@@ -65,8 +65,8 @@ ms.locfileid: "76977753"
 회사 포털 앱은 최종 사용자에게 앱 설치 상태 메시지를 추가로 표시합니다. 새 Win32 종속성 기능에는 다음과 같은 조건이 적용됩니다.
 - 앱을 설치하지 못했습니다. 관리자가 정의한 종속성이 충족되지 않았습니다.
 
-### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>iOS 디바이스에서 Microsoft Edge로 웹 클립의 대상 변경<!-- 5455276 -->
-웹 클립은 iOS 디바이스에서 고정된 웹앱 역할을 하는 것으로, 업데이트가 필요합니다. 보호되는 브라우저에서 열어야 하는 경우 새로 배포된 웹 클립은 Intune Managed Browser 대신 Microsoft Edge에서 열립니다. Managed Browser 대신 Microsoft Edge에서 열리도록 기존 웹 클립의 대상을 변경해야 합니다.
+### <a name="retarget-web-clips-to-microsoft-edge-on-iosipados-devices---5455276---"></a>iOS/iPadOS 디바이스에서 Microsoft Edge로 웹 클립의 대상 변경<!-- 5455276 -->
+웹 클립은 iOS/iPadOS 디바이스에서 고정된 웹앱 역할을 하는 것으로, 업데이트가 필요합니다. 보호되는 브라우저에서 열어야 하는 경우 새로 배포된 웹 클립은 Intune Managed Browser 대신 Microsoft Edge에서 열립니다. Managed Browser 대신 Microsoft Edge에서 열리도록 기존 웹 클립의 대상을 변경해야 합니다.
 
 ### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>macOS 회사 포털 사용자 환경 향상<!-- 5568987 -->
 Microsoft에서는 macOS 디바이스 등록 환경 및 Mac용 회사 포털 앱을 개선하고 있습니다. 다음을 기대할 수 있습니다.
@@ -92,22 +92,22 @@ Intune에서는 macOS용 Microsoft Defender ATP(Advanced Threat Protection) 앱�
 적용 대상:
 - macOS
 
-### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-ios-devices----1947932-idready---"></a>IKEv2 VPN 연결이 포함된 VPN 프로필이 iOS 디바이스에서 항상 사용할 수 있음 <!-- 1947932 idready -->
-iOS 디바이스에서 IKEv2 연결을 사용하는 VPN 프로필을 만들 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **iOS/iPadOS**(플랫폼) > **VPN**(프로필 유형) 선택). 이후 업데이트에서는 IKEv2에 대해 항상 사용하도록 구성할 수 있습니다. 구성된 경우 IKEv2 VPN 프로필은 자동으로 연결되며 VPN에 연결된 상태를 유지합니다(또는 빠르게 다시 연결). 네트워크 간에 이동하거나 디바이스를 다시 시작하는 경우에도 연결된 상태를 유지합니다.
+### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-iosipados-devices----1947932-idready---"></a>IKEv2 VPN 연결이 포함된 VPN 프로필이 iOS/iPadOS 디바이스에서 항상 사용할 수 있음 <!-- 1947932 idready -->
+iOS/iPadOS 디바이스에서 IKEv2 연결을 사용하는 VPN 프로필을 만들 수 있습니다(**디바이스 구성** > **프로필** > **프로필 만들기** > **iOS/iPadOS**(플랫폼) > **VPN**(프로필 유형) 선택). 이후 업데이트에서는 IKEv2에 대해 항상 사용하도록 구성할 수 있습니다. 구성된 경우 IKEv2 VPN 프로필은 자동으로 연결되며 VPN에 연결된 상태를 유지합니다(또는 빠르게 다시 연결). 네트워크 간에 이동하거나 디바이스를 다시 시작하는 경우에도 연결된 상태를 유지합니다.
 
-iOS에서 항상 사용 VPN은 IKEv2 프로필로 제한됩니다.
+iOS/iPadOS에서 항상 사용 VPN은 IKEv2 프로필로 제한됩니다.
 
-구성할 수 있는 최신 IKEv2 설정은 [Microsoft Intune의 iOS 디바이스에서 VPN 설정 추가](../configuration/vpn-settings-ios.md#ikev2-settings)를 참조하세요.
+구성할 수 있는 최신 IKEv2 설정은 [Microsoft Intune의 iOS/iPadOS 디바이스에서 VPN 설정 추가](../configuration/vpn-settings-ios.md#ikev2-settings)를 참조하세요.
 
 적용 대상:
 - iOS
 
-### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-ios-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>iOS 및 macOS 디바이스에서 구성 프로필을 만들 때 향상된 사용자 인터페이스 환경<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
-iOS 또는 macOS 디바이스용 프로필을 만들면 Endpoint Management 관리 센터의 환경이 업데이트됩니다. 이 변경의 영향을 받는 디바이스 구성 프로필은 다음과 같습니다(**디바이스** > **구성 프로필** > **프로필 만들기** > **iOS** 또는 **macOS**(플랫폼) 선택).
+### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-iosipados-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>iOS/iPadOS 및 macOS 디바이스에서 구성 프로필을 만들 때 향상된 사용자 인터페이스 환경<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+iOS/iPadOS 또는 macOS 디바이스용 프로필을 만들면 Endpoint Management 관리 센터의 환경이 업데이트됩니다. 이 변경의 영향을 받는 디바이스 구성 프로필은 다음과 같습니다(**디바이스** > **구성 프로필** > **프로필 만들기** > **iOS** 또는 **macOS**(플랫폼) 선택).
 
-- 사용자 지정: iOS, macOS
-- 디바이스 기능: iOS, macOS
-- 디바이스 제한: iOS, macOS
+- 사용자 지정: iOS/iPadOS, macOS
+- 디바이스 기능: iOS/iPadOS, macOS
+- 디바이스 제한: iOS/iPadOS, macOS
 - Endpoint Protection: macOS
 - 확장: macOS
 - 기본 설정 파일: macOS

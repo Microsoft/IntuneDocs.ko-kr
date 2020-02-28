@@ -1,7 +1,7 @@
 ---
-title: iOS 교실 앱에 대한 Intune 공유 디바이스 설정
+title: iOS/iPadOS 교실 앱에 대한 Intune 공유 디바이스 설정
 titleSuffix: Microsoft Intune
-description: iOS 디바이스에서 교실 앱에 대한 설정을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
+description: iOS/iPadOS 디바이스에서 교실 앱에 대한 설정을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 412dc9a12f5a13b5fbd738f3ac1b5b1033a2635b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784258"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514713"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>공유 iPad 디바이스에 대한 Intune 교육 설정 구성
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> Intune은 현재 교실 앱 구성을 지원 하지 않습니다. 이 문서는 Intune에 기존 iOS 교육 프로필이 있는 사용자에게만 적용됩니다.
+> Intune은 현재 교실 앱 구성을 지원하지 않습니다. 이 문서는 Intune에 기존 iOS/iPadOS 교육 프로필이 있는 사용자에게만 적용됩니다.
 
-Intune에서는 교사들이 학습을 지도하고 교실에서 학생 디바이스를 제어하는 데 도움이 되는 iOS 교실 앱을 지원합니다. 또한 Apple은 여러 학생이 단일 디바이스를 공유할 수 있도록 교실 앱에서 학생 iPad 디바이스를 구성할 수 있는 기능을 지원합니다. 이 문서에서는 Intune으로 이러한 작업을 수행하는 과정을 안내합니다.
+Intune에서는 교사들이 학습을 지도하고 교실에서 학생 디바이스를 제어하는 데 도움이 되는 iOS/iPadOS 교실 앱을 지원합니다. 또한 Apple은 여러 학생이 단일 디바이스를 공유할 수 있도록 교실 앱에서 학생 iPad 디바이스를 구성할 수 있는 기능을 지원합니다. 이 문서에서는 Intune으로 이러한 작업을 수행하는 과정을 안내합니다.
 
-교실 앱을 사용할 전용(1:1) iPad 디바이스를 구성하는 방법에 대한 자세한 내용은 [iOS 교실 앱에 대한 Intune 설정을 구성하는 방법](education-settings-configure-ios.md)을 참조하세요.
+교실 앱을 사용할 전용(1:1) iPad 디바이스를 구성하는 방법에 대한 자세한 내용은 [iOS/iPadOS 교실 앱에 대한 Intune 설정을 구성하는 방법](education-settings-configure-ios.md)을 참조하세요.
 
 ## <a name="before-you-start"></a>시작하기 전에
 
@@ -64,7 +64,7 @@ SDS는 SIS의 정보를 동기화하고 Azure AD에 저장합니다. Azure AD는
 - [Azure Active Directory에서 그룹 기반 라이선스 기본](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>2단계 - Intune에서 iOS 교육 프로필 만들기 및 할당
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>2단계 - Intune에서 iOS/iPadOS 교육 프로필 만들기 및 할당
 
 ### <a name="configure-general-settings"></a>일반 설정 구성
 
@@ -72,7 +72,7 @@ SDS는 SIS의 정보를 동기화하고 Azure AD에 저장합니다. Azure AD는
 3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
 2. **관리** 섹션 아래의 **디바이스 구성** 창에서 **프로필**을 선택합니다.
 5. 프로필 창에서 **프로필 만들기**를 선택합니다.
-6. **프로필 만들기** 창에서 iOS 교육 프로필에 대한 **이름** 및 **설명**을 입력합니다.
+6. **프로필 만들기** 창에서 iOS/iPadOS 교육 프로필에 대한 **이름** 및 **설명**을 입력합니다.
 7. **플랫폼** 드롭다운 목록에서 **iOS**를 선택합니다.
 8. **프로필** 유형 드롭다운 목록에서 선택 **교육**을 선택합니다.
 9. **설정** > **구성**을 선택합니다.

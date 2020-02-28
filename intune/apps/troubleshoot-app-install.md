@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be66f99006b06dce9f9bfe21eafa9f2be302e7b9
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: MTE75
+ms.openlocfilehash: 13aea23f58c69d5c7e38f77ae7dfa19bd12edd35
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540982"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511654"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>앱 설치 문제 해결
 
@@ -50,7 +50,7 @@ Intune은 특정 사용자 디바이스에 설치된 앱을 기반으로 앱 문
     > 같은 앱을 여러 그룹에 할당하되, 앱에 대해 의도한 동작(의도)을 각각 다르게 할 수 있습니다. 예를 들어 앱 할당 중에 사용자에 대해 앱이 제외된 경우 앱에 대해 확인된 의도에 **제외**가 표시됩니다. 자세한 내용은 [앱 의도 간의 충돌을 해결하는 방법](apps-deploy.md#how-conflicts-between-app-intents-are-resolved)을 참조하세요.<br><br>
     > 필수 앱에 대해 설치 오류가 발생하는 경우 사용자 또는 사용자의 지원 센터는 디바이스를 동기화하고 앱 설치를 다시 시도할 수 있습니다.
 
-앱 설치 오류 세부 정보에 문제가 표시됩니다. 이러한 세부 정보를 사용하여 문제를 해결하기 위해 수행할 최상의 조치를 결정할 수 있습니다. 앱 설치 문제를 해결하는 방법에 대한 자세한 내용은 [Android 앱 설치 오류](app-install-error-codes.md#android-app-installation-errors) 및 [iOS 앱 설치 오류](app-install-error-codes.md#ios-app-installation-errors)를 참조하세요.
+앱 설치 오류 세부 정보에 문제가 표시됩니다. 이러한 세부 정보를 사용하여 문제를 해결하기 위해 수행할 최상의 조치를 결정할 수 있습니다. 앱 설치 문제를 해결하는 방법에 대한 자세한 내용은 [Android 앱 설치 오류](app-install-error-codes.md#android-app-installation-errors) 및 [iOS 앱 설치 오류](app-install-error-codes.md#ios-and-ipados-app-installation-errors)를 참조하세요.
 
 > [!Note]  
 > 브라우저를 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)으로 전환하여 **문제 해결** 창에 액세스할 수도 있습니다.
@@ -65,7 +65,7 @@ Intune은 특정 사용자 디바이스에 설치된 앱을 기반으로 앱 문
   3. [Azure Active Directory 사용자](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)로 이동합니다.
   4. 영향을 받는 사용자를 선택하고 **디바이스**를 클릭합니다.
   5. 사용자가 설정된 제한을 초과하는 경우 더 이상 필요하지 않은 오래된 레코드를 삭제합니다.
-- iOS DEP 디바이스의 경우, Intune 디바이스 개요 창에서 사용자가 **사용자가 등록함**으로 표시되는지 확인합니다. NA가 표시되는 경우 Intune 회사 포털에 대한 구성 정책을 배포합니다. 자세한 내용은 [회사 포털 앱 구성을 참조하세요](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- iOS/iPadOS DEP 디바이스의 경우, Intune 디바이스 개요 창에서 **사용자가 등록함**이 표시되는지 확인합니다. NA가 표시되는 경우 Intune 회사 포털에 대한 구성 정책을 배포합니다. 자세한 내용은 [회사 포털 앱 구성을 참조하세요](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 앱 설치 문제 해결
 

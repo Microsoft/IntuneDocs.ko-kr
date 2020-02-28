@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510261"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514594"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>문제 해결 포털을 사용하여 회사 내 사용자 지원
 
@@ -59,9 +59,9 @@ ms.locfileid: "72510261"
 
 **문제 해결** 창을 사용하여 사용자 정보를 검토할 수 있습니다.
 
-![다음 표에서 설명 하는 번호가 매겨진 영역을 포함 하는 문제 해결 대시보드](./media/help-desk-operators/troubleshooting-dash.png)
+![다음 표에서 설명하는 번호가 매겨진 영역들을 포함하는 문제 해결 대시보드](./media/help-desk-operators/troubleshooting-dash.png)
 
-| 영역 | 이름 | 설명 |
+| 영역 | Name | 설명 |
 | ---  | ---  | ---         |
 | 1.   | 계정 상태  | 현재 Intune 테넌트의 상태가 **활성** 또는 **비활성**으로 표시됩니다.       |
 | 2.   | 사용자를 선택합니다.  | 현재 선택된 사용자의 이름입니다. **사용자 변경**을 클릭하여 새 사용자를 선택합니다.       |
@@ -269,7 +269,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 | 오류 | 세부 정보 |
 |-------------|----------|
-| iOS 시간 제한 또는 오류 | 사용자 등록이 완료되는 데 너무 오래 걸렸기 때문에 발생한 디바이스와 Intune 간의 시간 제한입니다. |
+| iOS/iPadOS 시간 제한 또는 오류 | 사용자 등록이 완료되는 데 너무 오래 걸렸기 때문에 발생한 디바이스와 Intune 간의 시간 제한입니다. |
 | 사용자를 찾을 수 없음 또는 사용이 허가되지 않은 사용자 | 사용자에게 라이선스가 없거나 사용자가 서비스에서 제거되었습니다. |
 | 이미 등록된 디바이스 | 사용자가 다른 사용자에 의해 등록된 디바이스에서 회사 포털을 사용하여 디바이스를 등록하려고 했습니다. |
 | Intune에 온보딩되지 않음 | Intune MDM(모바일 디바이스 관리) 기관이 구성되지 않았을 때 등록이 시도되었습니다. |
@@ -286,14 +286,14 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | 예기치 않은 Autopilot 등록 방법 | 디바이스에서 허용되지 않는 방법을 사용하여 등록하려고 했습니다. |
 | Autopilot 디바이스가 제거됨 | 등록하려고 하는 디바이스가 이 계정에 대한 Autopilot에서 제거되었습니다. |
 | 디바이스 최대값 도달 | 이 등록은 관리자 구성 디바이스 제한 사항으로 인해 차단되었습니다. |
-| Apple 온보딩 | 모든 iOS 디바이스는 Intune 내에서 누락되거나 만료된 Apple MDM 푸시 인증서로 인해 현재 등록에서 차단되었습니다. |
+| Apple 온보딩 | 모든 iOS/iPadOS 디바이스는 Intune 내에서 누락되거나 만료된 Apple MDM 푸시 인증서로 인해 현재 등록에서 차단되었습니다. |
 | 디바이스가 미리 등록되지 않음 | 회사 및 모든 개인 등록이 관리자에 의해 차단되므로 디바이스는 미리 등록되지 않았습니다. |
 | 기능이 지원되지 않음 | 사용자가 Intune 구성과 호환되지 않는 메서드를 통해 등록하려고 시도했었을 수 있습니다. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>모바일 디바이스에서 사용 가능한 데이터 수집
 
 사용자의 디바이스 문제를 해결할 때 다음 리소스를 사용하여 디바이스 데이터를 수집할 수 있습니다.
-- [IT 관리자에게 iOS 등록 오류 보내기](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [IT 관리자에게 iOS/iPadOS 등록 오류 보내기](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [자세한 정보 로깅으로 회사 지원팀의 디바이스 문제 해결 돕기](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [USB 케이블을 사용하여 회사 지원팀에 Android 로그 보내기](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [메일을 사용하여 IT 관리자에게 Android 진단 데이터 로그 보내기](/intune-user-help/send-logs-to-your-it-admin-by-email-android)

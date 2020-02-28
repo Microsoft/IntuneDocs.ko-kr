@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ffcc4a7e48064e6a458126667cf6ab2c4e75777
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: ac670fd5e17462688fdfcde1b047e1071a49353a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502265"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515206"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>디바이스를 관리할 필요 없이 Office 365 Exchange Online 보호
 
-디바이스 관리 시스템 설정에 대한 오버헤드 없이 직원에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우 그렇게 할 수 있습니다. Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있습니다. 필요한 관리 설정을 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS 또는 Android 디바이스](../fundamentals/supported-devices-browsers.md)가 있어야 합니다. 
+디바이스 관리 시스템 설정에 대한 오버헤드 없이 직원에게 회사 메일에 대한 액세스 권한을 제공하고 싶은 경우 그렇게 할 수 있습니다. Intune을 통해 Office 365 Exchange Online에 대한 액세스 권한을 제공할 수 있습니다. 필요한 관리 설정을 완료하려면 Microsoft 365 또는 Azure Active Directory (Premium) 및 Intune에 대한 라이선스가 있는지 확인합니다. 직원에게는 [지원되는 iOS/iPadOS 또는 Android 디바이스](../fundamentals/supported-devices-browsers.md)가 있어야 합니다. 
 
 디바이스 관리 시스템을 설정하려면 그렇게 할 수 있습니다. 이러한 유형의 앱 보호는 디바이스 관리와 독립적으로 작동합니다. 
 
@@ -41,7 +41,7 @@ ms.locfileid: "72502265"
 
 ## <a name="what-to-tell-employees-and-students"></a>직원 및 학생에게 정보 안내
 
-* 직원 및 학생에게 iOS용인 경우 Microsoft Outlook 또는 Microsoft SharePoint를 Apple 앱 스토어에서, Android용인 경우 Google Play 스토어에서 다운로드하고 설치하도록 요청합니다. 
+* Microsoft Outlook 또는 Microsoft SharePoint는 iOS/iPadOS용인 경우 Apple 앱 스토어에서 다운로드하고 Android용인 경우 Google Play 스토어에서 다운로드한 후 설치하도록 직원 및 학생들에게 요청합니다. 
 * 최신 인증을 사용하지 않는 앱에 대한 액세스를 차단하는 경우, 직원 및 학생에게 이러한 제한을 알립니다. 
 
 ## <a name="next-steps"></a>다음 단계

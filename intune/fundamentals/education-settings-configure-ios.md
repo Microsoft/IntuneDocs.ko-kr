@@ -1,7 +1,7 @@
 ---
-title: iOS 교실 앱에 대한 Intune 설정
+title: iOS/iPadOS 교실 앱에 대한 Intune 설정
 titleSuffix: Microsoft Intune
-description: iOS 디바이스에서 교실 앱에 대한 설정을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
+description: iOS/iPadOS 디바이스에서 교실 앱에 대한 설정을 제어하는 데 사용할 수 있는 Intune 설정을 알아봅니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6814b4d98b8512ce95119b05cc299964e486ac64
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 74b9e6818de2853ae22a1fa1bb580b32075dcf19
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784224"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514424"
 ---
-# <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS 교실 앱에 대한 Intune 설정을 구성하는 방법
+# <a name="how-to-configure-intune-settings-for-the-iosipados-classroom-app"></a>iOS/iPadOS 교실 앱에 대한 Intune 설정을 구성하는 방법
 
 > [!NOTE]
-> Intune은 현재 교실 앱 구성을 지원 하지 않습니다. 이 문서는 Intune에 기존 iOS 교육 프로필이 있는 사용자에게만 적용됩니다.  
+> Intune은 현재 교실 앱 구성을 지원하지 않습니다. 이 문서는 Intune에 기존 iOS/iPadOS 교육 프로필이 있는 사용자에게만 적용됩니다.  
 
 ## <a name="introduction"></a>소개
 [교실](https://itunes.apple.com/app/id1085319084)은 교사들이 교실에서 학습을 지도하고 학생 디바이스를 제어하도록 도와주는 앱입니다. 예를 들어 앱을 통해 교사는 다음을 수행할 수 있습니다.
@@ -39,7 +39,7 @@ ms.locfileid: "74784224"
 - 학생 iPad를 책의 책갈피 또는 장으로 이동
 - 학생 iPad의 화면을 Apple TV에 표시
 
-디바이스에서 교실을 설정하려면 Intune iOS 교육 디바이스 프로필을 만들고 구성해야 합니다.
+디바이스에서 교실을 설정하려면 Intune iOS/iPadOS 교육 디바이스 프로필을 만들고 구성해야 합니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 
@@ -47,9 +47,9 @@ ms.locfileid: "74784224"
 
 - 교사 및 학생 iPad가 Intune에 등록되어 있어야 합니다.
 - 교사의 디바이스에 [Apple 교실](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) 앱을 설치했는지 확인합니다. 앱을 수동으로 설치하거나 [Intune 앱 관리](../apps/app-management.md)를 사용할 수 있습니다.
-- 교사 디바이스와 학생 디바이스 간 연결을 인증하도록 인증서를 구성해야 합니다(2단계, Intune에서 iOS 교육 프로필 만들기 및 할당 참조).
+- 교사 디바이스와 학생 디바이스 간 연결을 인증하도록 인증서를 구성해야 합니다(2단계, Intune에서 iOS/iPadOS 교육 프로필 만들기 및 할당 참조).
 - 교사 및 학생 iPad가 같은 Wi-Fi 네트워크에 있고 Bluetooth를 사용할 수 있어야 합니다.
-- 교실 앱은 iOS 9.3 이상을 실행하는 감독 모드 iPad에서 실행됩니다.
+- 교실 앱은 iOS/iPadOS 9.3 또는 이후 버전을 실행하는 감독 모드 iPad에서 실행됩니다.
 - 이 릴리스의 Intune에서는 각 학생이 전용 iPad를 보유한 1:1 시나리오 관리를 지원합니다.
 
 
@@ -72,7 +72,7 @@ SDS는 SIS의 정보를 동기화하고 Azure AD에 저장합니다. Azure AD는
 - [Find out more about Microsoft School Data Sync](https://sds.microsoft.com/)(Microsoft 학교 데이터 동기화에 대해 자세히 알아보기)
 - [Azure Active Directory에서 그룹 기반 라이선스 기본](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>2단계 - Intune에서 iOS 교육 프로필 만들기 및 할당
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>2단계 - Intune에서 iOS/iPadOS 교육 프로필 만들기 및 할당
 
 ### <a name="configure-general-settings"></a>일반 설정 구성
 
@@ -80,7 +80,7 @@ SDS는 SIS의 정보를 동기화하고 Azure AD에 저장합니다. Azure AD는
 3. **Intune** 창에서 **디바이스 구성**을 선택합니다.
 2. **관리** 섹션 아래의 **디바이스 구성** 창에서 **프로필**을 선택합니다.
 5. 프로필 창에서 **프로필 만들기**를 선택합니다.
-6. **프로필 만들기** 창에서 iOS 교육 프로필에 대한 **이름** 및 **설명**을 입력합니다.
+6. **프로필 만들기** 창에서 iOS/iPadOS 교육 프로필에 대한 **이름** 및 **설명**을 입력합니다.
 7. **플랫폼** 드롭다운 목록에서 **iOS**를 선택합니다.
 8. **프로필** 유형 드롭다운 목록에서 선택 **교육**을 선택합니다.
 9. **설정** > **구성**을 선택합니다.

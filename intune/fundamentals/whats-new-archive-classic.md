@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 94ff28cf36457d2d8b20e173508b7c9894a7d5bc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72999517"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510540"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 클래식 포털의 새로운 기능 - 지난 달
 
@@ -42,11 +42,11 @@ Microsoft MyApps는 이제 Managed Browser 내에서 더 나은 지원을 제공
 
 Managed Browser 앱의 Android 및 iOS 버전 모두에서 아이콘이 업데이트됩니다. 새 아이콘은 업데이트된 Intune 배지를 포함하므로 EM+S(Enterprise Mobility + Security)의 다른 앱과 더 일관된 환경을 제공합니다. [Intune 앱 UI 페이지의 새로운 기능](whats-new-app-ui.md)에서 Managed Browser의 새 아이콘을 볼 수 있습니다.
 
-회사 포털에서는 EM + S에 있는 다른 앱과의 일관성을 향상시키기 위해 Android, iOS 및 Windows 버전의 앱에 대한 업데이트된 아이콘도 받습니다. 이러한 아이콘은 4월부터 5월 말까지 여러 플랫폼에서 점진적으로 출시됩니다.
+회사 포털에서는 EM + S에 있는 다른 앱과의 일관성을 향상시키기 위해 Android, iOS 및 Windows 버전의 앱에 대한 업데이트된 아이콘도 받습니다. 이러한 아이콘은 4월부터 5월 말까지 점진적으로 전체 플랫폼에 릴리스됩니다.
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 회사 포털의 로그인 진행률 표시기 <!--953374-->
 
-Android 회사 포털 앱의 업데이트에는 사용자가 앱을 시작하거나 다시 시작할 때 로그인 진행률 표시기가 표시됩니다. 표시기에서는 "연결 중..."에서부터 "로그인 중...", "보안 요구 사항을 확인하는 중..."까지 새로운 상태를 진행한 후 사용자가 앱에 액세스할 수 있도록 허용합니다. [Intune 앱 UI 페이지의 새로운 기능](whats-new-app-ui.md)에서 Android용 회사 포털 앱의 새 화면을 볼 수 있습니다.
+Android 회사 포털 앱의 업데이트에는 사용자가 앱을 시작하거나 다시 시작할 때 로그인 진행률 표시기가 표시됩니다. 사용자가 앱에 액세스하도록 허용하기 전에 표시기가 “연결 중...”, “로그인 중...”, “보안 요구 사항 확인 중...”과 같이 새로운 상태로 진행됩니다. [Intune 앱 UI의 새로운 기능 페이지](whats-new-app-ui.md)에서 Android용 회사 포털 앱의 새 화면이 표시됩니다.
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>앱이 SharePoint Online에 액세스하지 못하도록 차단 <!-- 679339 -->
 
@@ -126,7 +126,7 @@ Android, iOS 및 Windows용 Intune 회사 포털 앱에 대한 로그인 환경�
 
 #### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple의 Application Transport Security 업데이트 요구 <!--748318-->
 
-Apple에서는 ATS(Application Transport Security)에 대한 특정 요구 사항을 적용할 것이라고 발표했습니다. ATS는 HTTPS를 통한 모든 앱 통신에서 보다 엄격한 보안을 적용하는 데 사용됩니다. 이 변경 사항은 iOS 회사 포털 앱을 사용하는 Intune 고객에게 영향을 줍니다.
+Apple에서는 ATS(Application Transport Security)에 대한 특정 요구 사항을 적용할 것이라고 발표했습니다. ATS는 HTTPS를 통한 모든 앱 통신에 더 엄격한 보안을 적용하는 데 사용됩니다. 이 변경 사항은 iOS 회사 포털 앱을 사용하는 Intune 고객에게 영향을 줍니다.
 
 새로운 ATS 요구 사항을 적용하는 Apple TestFlight 프로그램을 통해 iOS용 회사 포털 앱 버전을 제공했습니다. ATS 준수를 테스트하는 데 이 버전을 사용해 보려면 이름, 성, 메일 주소, 회사 이름을 포함하여 <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a>에 메일을 보내 주세요. 자세한 내용은 [Intune 지원 블로그](https://aka.ms/compportalats)를 참조하세요.
 
@@ -197,7 +197,7 @@ Microsoft는 지원되는 모든 플랫폼에서 콘솔 및 회사 포털 앱에
 Microsoft는 Microsoft Teams의 일반적인 가용성을 발표했습니다. iOS 및 Android용 업데이트된 Microsoft Teams 앱은 이제 Intune MAM(모바일 앱 관리) 기능이 활성화되었습니다. 따라서 대화 및 회사 데이터를 보호하면서도 팀원들이 여러 디바이스에서 자유롭게 작업하도록 할 수 있습니다. 자세한 내용은 Enterprise Mobility + Security 블로그에서 [Microsoft Teams 알림](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/)을 참조하세요.
 
 
-## <a name="february-2017"></a>2017 년 2월
+## <a name="february-2017"></a>2017년 2월
 
 ### <a name="new-capabilities"></a>새로운 기능
 
@@ -256,7 +256,7 @@ Azure의 Intune 미리 보기에 대한 새로운 기능은 [여기](whats-new.m
 등록된 디바이스 및 등록되지 않은 디바이스 모두에 대한 새 앱 보호 보고서가 추가되었습니다. [intune을 사용하여 모바일 앱 관리 정책을 모니터링](../apps/app-protection-policies-monitor.md)할 수 있는 방법을 자세히 알아보세요.
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 지원 <!--694397-->
-Intune은 이제 Android 7.1.1을 완벽하게 지원하고 관리합니다.
+이제 Intune에서 Android 7.1.1을 완벽하게 지원하고 관리합니다.
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>iOS 디바이스가 비활성 상태이거나, 관리 콘솔에서 통신할 수 없는 경우 문제 해결 <!--unknown-->
 사용자 디바이스에서 Intune과의 연결이 끊기는 경우 회사 리소스에 대한 액세스 권한을 다시 얻도록 새로운 문제 해결 단계를 제공할 수 있습니다. [디바이스가 비활성 상태이거나 관리 콘솔이 디바이스와 통신할 수 없음](../enrollment/troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them)을 참조하세요.
@@ -361,9 +361,9 @@ __Windows 10 디바이스에 사용할 수 있는 새로운 Microsoft Intune 회
 > [!IMPORTANT]
 > __Intune 및 Android for Work에 대한 업데이트__ __필수__ 작업을 통해 Android for Work 앱을 배포할 수 있는 반면, Intune 그룹이 새 Azure AD 그룹 환경으로 마이그레이션된 경우에는 앱을 __사용 가능__으로만 배포할 수 있습니다.
 
-__Intune 앱 SDK Cordova 플러그 인을 통해 별도의 등록 없이 MAM 사용__ 앱 개발자는 Cordova용 Intune 앱 SDK 플러그 인을 사용하여 Cordova 기반 Android 및 iOS용 앱에 디바이스를 등록하지 않고도 MAM 기능을 설정할 수 있습니다. Cordova용 Intune 앱 SDK 플러그 인은 [여기](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)에서 제공됩니다.
+__Intune 앱 SDK Cordova 플러그 인을 통해 별도의 등록 없이 MAM 사용__ 앱 개발자는 Cordova용 Intune 앱 SDK 플러그 인을 사용하여 Cordova 기반 Android 및 iOS/iPadOS용 앱에 디바이스를 등록하지 않고도 MAM 기능을 설정할 수 있습니다. Cordova용 Intune 앱 SDK 플러그 인은 [여기](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)에서 제공됩니다.
 
-__Intune 앱 SDK Xamarin 구성 요소를 통해 별도의 등록 없이 MAM 사용__ 앱 개발자는 Intune 앱 SDK Xamarin 구성 요소를 사용하여 Xamarin 기반 Android 및 iOS용 앱에 디바이스를 등록하지 않고도 MAM 기능을 설정할 수 있습니다. Intune 앱 SDK Xamarin 구성 요소는 [여기](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)에서 제공됩니다.
+__Intune 앱 SDK Xamarin 구성 요소를 통해 별도의 등록 없이 MAM 사용__ 앱 개발자는 Intune 앱 SDK Xamarin 구성 요소를 사용하여 Xamarin 기반 Android 및 iOS/iPadOS용 앱에 디바이스를 등록하지 않고도 MAM 기능을 설정할 수 있습니다. Intune 앱 SDK Xamarin 구성 요소는 [여기](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)에서 제공됩니다.
 
 ### <a name="notices"></a>알림
 

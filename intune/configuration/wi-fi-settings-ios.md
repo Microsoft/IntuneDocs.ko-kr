@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune에서 iOS 디바이스의 Wi-Fi 설정 구성 - Azure | Microsoft Docs
+title: Microsoft Intune에서 iOS/iPadOS 디바이스의 Wi-Fi 설정 구성 - Azure | Microsoft Docs
 titleSuffix: ''
-description: iOS 디바이스의 WiFi 디바이스 구성 프로필을 만들거나 추가합니다. Microsoft Intune에서 인증서 추가, EAP 유형 선택 및 인증 방법 선택을 포함하여 다양한 설정을 확인합니다.
+description: iOS/iPadOS 디바이스의 WiFi 디바이스 구성 프로필을 만들거나 추가합니다. Microsoft Intune에서 인증서 추가, EAP 유형 선택 및 인증 방법 선택을 포함하여 다양한 설정을 확인합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 68685428ac94dfe08306858774eaf98fb079e66c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059210"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512316"
 ---
-# <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune에서 iOS 디바이스의 Wi-Fi 설정 추가
+# <a name="add-wi-fi-settings-for-ios-and-ipados-devices-in-microsoft-intune"></a>Microsoft Intune에서 iOS 및 iPadOS 디바이스의 Wi-Fi 설정 추가
 
-특정 WiFi 설정을 사용하여 프로필을 만든 후 iOS 디바이스에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, PKCS 또는 SCEP 인증서 사용 등을 포함한 많은 기능을 제공합니다.
+특정 WiFi 설정을 사용하여 프로필을 만든 후 iOS/iPadOS 디바이스에 이 프로필을 배포할 수 있습니다. Microsoft Intune은 네트워크에 인증, PKCS 또는 SCEP 인증서 사용 등을 포함한 많은 기능을 제공합니다.
 
-이러한 Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정의 두 범주로 구분됩니다.
+Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정이라는 두 가지 범주로 구분됩니다.
 
 이 문서에서는 이러한 설정을 설명합니다.
 
@@ -36,7 +36,7 @@ ms.locfileid: "74059210"
 [디바이스 프로필 만들기](../device-profile-create.md).
 
 > [!NOTE]
-> 이러한 설정은 모든 등록 형식에 사용할 수 있습니다. 등록 유형에 대 한 자세한 내용은 [iOS 등록](../enrollment/ios-enroll.md)을 참조 하세요.
+> 이러한 설정은 모든 등록 유형에 사용할 수 있습니다. 등록 유형에 대한 자세한 내용은 [iOS/iPadOS 등록](../enrollment/ios-enroll.md)을 참조하세요.
 
 ## <a name="basic-profiles"></a>기본 프로필
 
@@ -51,7 +51,7 @@ ms.locfileid: "74059210"
   - **WPA/WPA2 - 개인**: **미리 공유한 키**에 암호를 입력합니다. 조직의 네트워크를 설정하거나 구성할 때 암호 또는 네트워크 키도 구성합니다. PSK 값에 이 암호 또는 네트워크 키를 입력합니다.
   - **4**
 
-- **프록시 설정**: 옵션:
+- **프록시 설정**: 옵션은 다음과 같습니다.
   - **없음**: 프록시 설정을 구성하지 않습니다.
   - **수동**: **프록시 서버 주소**(IP 주소) 및 해당 **포트 번호**를 입력합니다.
   - **자동**: 파일을 사용하여 프록시 서버를 구성합니다. 구성 파일이 포함된 **프록시 서버 URL**(예: `http://proxy.contoso.com`)을 입력합니다.
@@ -75,53 +75,53 @@ ms.locfileid: "74059210"
 
   - **EAP-TLS**: 또한 다음을 입력합니다.
 
-    - **서버 트러스트** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 무선 네트워크 액세스 서버에 **추가**합니다. 예를 들어 `mywirelessserver.contoso.com` 또는 `mywirelessserver`을(를) 추가합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
-    - **서버 유효성 검사를 위한 루트 인증서**: 기존 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서를 통해 클라이언트는 무선 네트워크 액세스 서버의 인증서를 신뢰할 수 있습니다.
+    - **서버 신뢰** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 무선 네트워크 액세스 서버에 **추가**합니다. 예를 들어 `mywirelessserver.contoso.com` 또는 `mywirelessserver`을(를) 추가합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
+    - **서버 유효성 검사에 대한 루트 인증서**: 기존의 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서를 통해 클라이언트는 무선 네트워크 액세스 서버의 인증서를 신뢰할 수 있습니다.
 
     - **클라이언트 인증** **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
-      - **파생 된 자격 증명**: 사용자의 스마트 카드에서 파생 된 인증서를 사용 합니다. 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 해당 발급자를 추가 하 라는 메시지를 표시 합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조 하세요.
+      - **파생된 자격 증명**: 사용자의 스마트 카드에서 파생된 인증서를 사용합니다. 파생된 자격 증명 발급자가 구성되지 않은 경우, Intune에서 해당 발급자를 추가하라는 메시지를 표시합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조하세요.
 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
-    - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
+    - **ID 개인 정보 사용(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
   - **EAP-TTLS**: 또한 다음을 입력합니다.
 
-    - **서버 트러스트** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 무선 네트워크 액세스 서버에 **추가**합니다. 예를 들어 `mywirelessserver.contoso.com` 또는 `mywirelessserver`을(를) 추가합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
-    - **서버 유효성 검사를 위한 루트 인증서**: 기존 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서를 통해 클라이언트는 무선 네트워크 액세스 서버의 인증서를 신뢰할 수 있습니다.
+    - **서버 신뢰** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 무선 네트워크 액세스 서버에 **추가**합니다. 예를 들어 `mywirelessserver.contoso.com` 또는 `mywirelessserver`을(를) 추가합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
+    - **서버 유효성 검사에 대한 루트 인증서**: 기존의 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서를 통해 클라이언트는 무선 네트워크 액세스 서버의 인증서를 신뢰할 수 있습니다.
 
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
-      - **파생 된 자격 증명**: 사용자의 스마트 카드에서 파생 된 인증서를 사용 합니다. 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 해당 발급자를 추가 하 라는 메시지를 표시 합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조 하세요.
+      - **파생된 자격 증명**: 사용자의 스마트 카드에서 파생된 인증서를 사용합니다. 파생된 자격 증명 발급자가 구성되지 않은 경우, Intune에서 해당 발급자를 추가하라는 메시지를 표시합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조하세요.
 
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 또한 다음을 입력합니다.
-        - **EAP 이외의 방법(내부 ID)** : 연결을 인증할 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
+        - **EAP 이외의 방법(내부 ID)** : 연결을 인증하는 방법을 선택합니다. Wi-Fi 네트워크에 구성된 동일한 프로토콜을 선택해야 합니다.
 
-          선택 사항: **암호화되지 않은 암호(PAP)** , **CHAP(Challenge Handshake 인증 프로토콜)** , **MS-CHAP(Microsoft CHAP)** 또는 **MS-CHAP v2(Microsoft CHAP 버전 2)**
+          옵션은 다음과 같습니다. **암호화되지 않은 암호(PAP)** , **CHAP(Challenge Handshake 인증 프로토콜)** , **MS-CHAP(Microsoft CHAP)** 또는 **MS-CHAP v2(Microsoft CHAP 버전 2)**
 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
-      - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
+      - **ID 개인 정보 사용(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
   - **LEAP**
 
   - **PEAP**: 또한 다음을 입력합니다.
 
-    - **서버 트러스트** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 무선 네트워크 액세스 서버에 **추가**합니다. 예를 들어 `mywirelessserver.contoso.com` 또는 `mywirelessserver`을(를) 추가합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
-    - **서버 유효성 검사를 위한 루트 인증서**: 기존 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서를 통해 클라이언트는 무선 네트워크 액세스 서버의 인증서를 신뢰할 수 있습니다.
+    - **서버 신뢰** - **인증서 서버 이름**: 신뢰할 수 있는 CA(인증 기관)에서 발급하는 인증서에 사용되는 하나 이상의 일반적인 이름을 무선 네트워크 액세스 서버에 **추가**합니다. 예를 들어 `mywirelessserver.contoso.com` 또는 `mywirelessserver`을(를) 추가합니다. 이 정보를 입력하면 Wi-Fi 네트워크에 연결할 때 사용자 디바이스에 표시되는 동적 트러스트 창을 무시할 수 있습니다.
+    - **서버 유효성 검사에 대한 루트 인증서**: 기존의 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서를 통해 클라이언트는 무선 네트워크 액세스 서버의 인증서를 신뢰할 수 있습니다.
 
     - **클라이언트 인증** - **인증 방법**을 선택합니다. 옵션은 다음과 같습니다.
 
-      - **파생 된 자격 증명**: 사용자의 스마트 카드에서 파생 된 인증서를 사용 합니다. 파생 된 자격 증명 발급자가 구성 되지 않은 경우 Intune에서 해당 발급자를 추가 하 라는 메시지를 표시 합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조 하세요.
+      - **파생된 자격 증명**: 사용자의 스마트 카드에서 파생된 인증서를 사용합니다. 파생된 자격 증명 발급자가 구성되지 않은 경우, Intune에서 해당 발급자를 추가하라는 메시지를 표시합니다. 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](../protect/derived-credentials.md)을 참조하세요.
 
       - **사용자 이름 및 암호**: 연결을 인증하기 위해 사용자 이름 및 암호를 입력하라는 메시지가 사용자에게 표시됩니다. 
 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
-      - **ID 개인 정보(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
+      - **ID 개인 정보 사용(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
-- **프록시 설정**: 옵션:
+- **프록시 설정**: 옵션은 다음과 같습니다.
   - **없음**: 프록시 설정을 구성하지 않습니다.
   - **수동**: **프록시 서버 주소**(IP 주소) 및 해당 **포트 번호**를 입력합니다.
   - **자동**: 파일을 사용하여 프록시 서버를 구성합니다. 구성 파일이 포함된 **프록시 서버 URL**(예: `http://proxy.contoso.com`)을 입력합니다.
@@ -130,4 +130,4 @@ ms.locfileid: "74059210"
 
 프로필이 만들어지지만 아무것도 하지 않습니다. 다음으로, [이 프로필을 할당](device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Android](wi-fi-settings-android.md), [android Enterprise](wi-fi-settings-android-enterprise.md), [macos](wi-fi-settings-macos.md)및 [Windows 10](wi-fi-settings-windows.md) 장치에서 wi-fi 설정을 구성 합니다.
+[Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [macOS](wi-fi-settings-macos.md) 및 [Windows 10](wi-fi-settings-windows.md) 디바이스에서 Wi-Fi 설정을 구성합니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 9acb934cdf67aae9c18091a0340f27de635b5399
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059282"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511020"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune의 문제 해결 정책 및 프로필
 
@@ -31,13 +31,13 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
 이 문서에는 몇 가지 일반적인 문제 해결 기술이 나열되고 발생할 수 있는 몇 가지 문제가 설명되어 있습니다.
 
-## <a name="check-tenant-status"></a>테 넌 트 상태 확인
+## <a name="check-tenant-status"></a>테넌트 상태 확인
 
-[테 넌 트 상태](../fundamentals/tenant-status.md) 를 확인 하 고 구독이 활성 상태 인지 확인 합니다. 정책 또는 프로필 배포에 영향을 줄 수 있는 활성 인시던트 및 권고에 대 한 세부 정보를 볼 수도 있습니다.
+[테넌트 상태](../fundamentals/tenant-status.md)를 확인하고 구독이 활성 상태인지 확인합니다. 정책 또는 프로필 배포에 영향을 줄 수 있는 활성 인시던트 및 권고에 대한 세부 정보를 볼 수도 있습니다.
 
 ## <a name="use-built-in-troubleshooting"></a>기본 제공 문제 해결 기능 사용
 
-1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **문제 해결 + 지원**을 선택 합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **문제 해결 + 지원**을 선택합니다.
 
     ![Intune에서 도움말 및 지원으로 이동하여 문제 해결을 선택합니다.](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -53,7 +53,7 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
 4. **디바이스**에서 문제가 있는 디바이스를 찾습니다. 다른 열을 검토합니다.
 
-    - **관리**: 디바이스가 규정 준수 정책이나 구성 정책을 수신하려면 이 속성에 **MDM** 또는 **EAS/MDM**이 표시되어야 합니다.
+    - **관리됨**: 준수 정책이나 구성 정책을 수신할 디바이스는 이 속성이 **MDM**이나 **EAS/MDM**으로 표시되어야 합니다.
 
         - **관리됨**이 **MDM**이나 **EAS/MDM**으로 설정되어 있지 않으면 디바이스가 등록되지 않은 것입니다. 등록될 때까지 준수 정책이나 구성 정책을 수신하지 못합니다.
 
@@ -77,7 +77,7 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
         - 체크 인을 강제로 수행하려면:
             - Android 디바이스를 열고 회사 포털 앱 > **디바이스**를 열고 목록에서 디바이스를 선택한 다음, **디바이스 설정 확인**을 선택합니다.
-            - iOS 디바이스를 열고 회사 포털 앱 > **디바이스**를 열고 목록에서 디바이스를 선택한 다음, **설정 확인**을 선택합니다.
+            - iOS/iPadOS 디바이스를 열고 회사 포털 앱 > **디바이스**를 열고 목록에서 디바이스를 선택한 다음, **설정 확인**을 선택합니다.
 
         - Windows 디바이스에서 **설정** > **계정** > **회사 또는 학교 액세스**를 열어서 계정이나 MDM 등록을 선택하고 **정보** > **동기화**를 선택합니다.
 
@@ -91,9 +91,9 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
         **정책 상태**:
 
-        - **적용되지 않음**: 이 정책은 이 플랫폼에서 지원되지 않습니다. 예를 들어, iOS 정책은 Android에서 작동하지 않습니다. Samsung KNOX 정책은 Windows 디바이스에서 작동하지 않습니다.
+        - **해당 없음**: 이 정책은 이 플랫폼에서 지원되지 않습니다. 예를 들어, iOS/iPadOS 정책은 Android에서 작동하지 않습니다. Samsung KNOX 정책은 Windows 디바이스에서 작동하지 않습니다.
         - **충돌**: 디바이스에 Intune이 재정의할 수 없는 기존 설정이 있습니다. 아니면, 다른 값을 사용하여 동일한 설정으로 두 개의 정책을 배포했습니다.
-        - **보류 중**: 디바이스가 Intune에 체크 인되지 않아서 정책을 수신하지 못했습니다. 아니면, 디바이스가 정책을 수신했지만 Intune에 상태가 보고되지 않았습니다.
+        - **보류 중**: 디바이스가 ntune에 체크 인되지 않아서 정책을 수신하지 못했습니다. 아니면, 디바이스가 정책을 수신했지만 Intune에 상태가 보고되지 않았습니다.
         - **오류**: 오류 및 가능한 해결 방법은 [회사 리소스 액세스 문제 해결](../fundamentals/troubleshoot-company-resource-access-problems.md)에서 찾아보세요.
 
         **유용한 링크**: 
@@ -110,7 +110,7 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
     - **준수**: 디바이스가 프로필을 수신하고 Intune에 설정을 준수한다고 보고합니다.
 
-    - **적용할 수 없음**: 프로필 설정을 적용할 수 없습니다. 예를 들어 iOS 디바이스의 이메일 설정은 Android 디바이스에 적용되지 않습니다.
+    - **해당 없음**: 프로필 설정을 적용할 수 없습니다. 예를 들어, iOS/iPadOS 디바이스의 이메일 설정은 Android 디바이스에 적용되지 않습니다.
 
     - **보류 중**: 프로필이 디바이스에 전송되었지만, Intune에 상태를 보고하지 않았습니다. 예를 들어 Android에서의 암호화의 경우, 사용자가 암호화를 사용하도록 설정해야 하고 보류 중으로 표시될 수 있습니다.
 
@@ -121,10 +121,10 @@ Microsoft Intune에는 몇 가지 기본 제공 문제 해결 기능이 포함�
 
 ## <a name="policy-troubleshooting-resources"></a>정책 문제 해결 리소스
 
-- [장치에 적용 되지 않는 iOS 또는 Android 정책 문제 해결](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (다른 Microsoft 사이트 열기)
-- [Windows 10 Intune 정책 오류 문제 해결](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (블로그 열기)
-- [Windows 10에 대 한 CSP 사용자 지정 설정 문제 해결](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (다른 Microsoft 사이트 열기)
-- [Windows 10 그룹 정책 Vs INTUNE MDM 정책](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (다른 Microsoft 사이트 열기)
+- [디바이스에 적용되지 않는 iOS/iPadOS 또는 Android 정책의 문제 해결](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154)(다른 Microsoft 사이트 열기)
+- [Windows 10 Intune 정책 실패 문제 해결](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)(블로그 열기)
+- [Windows 10에 대한 CSP 사용자 지정 설정 문제 해결](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune)(다른 Microsoft 사이트 열기)
+- [Windows 10 그룹 정책과 Intune MDM 정책의 비교](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/)(다른 Microsoft 사이트 열기)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>경고: Exchange에 액세스 규칙 저장 실패
 
@@ -138,13 +138,13 @@ Exchange 온-프레미스 정책 작업 영역(관리 콘솔)에서 정책을 �
 
 Windows Phone 디바이스는 MDM 또는 EAS를 사용하여 보안 정책을 설정하면 이 정책의 보안이 저하되는 것을 허용하지 않습니다. 예를 들어 **암호의 최소 문자 수**를 8로 설정한 다음, 4로 줄이려고 하면, 더 제한적인 정책이 디바이스에 적용됩니다.
 
-정책 할당을 취소 하면 Windows 10 장치에서 보안 정책을 제거할 수 없습니다 (배포 중지). 정책을 할당 된 상태로 두고 보안 설정을 다시 기본값으로 변경 해야 할 수 있습니다.
+정책 할당을 취소하면 Windows 10 디바이스에서 보안 정책을 제거할 수 없습니다(배포 중지). 정책을 할당된 상태로 둔 다음, 보안 설정을 다시 기본값으로 변경해야 할 수 있습니다.
 
 디바이스 플랫폼에 따라서, 보안 수준이 낮은 값으로 정책을 변경하려면 보안 정책을 다시 설정해야 할 수 있습니다.
 
 예를 들어, 데스크톰의 Windows 8.1에서 오른쪽으로 살짝 밀어 **참 메뉴** 모음을 엽니다. **설정** > **제어판** > **U사용자 계정**을 선택합니다. 왼쪽에서 **보안 정책 재설정** 링크를 선택하고 **정책 재설정**을 선택합니다.
 
-Android, iOS, Windows Phone 8.1과 같은 기타 플랫폼의 경우, 덜 엄격한 정책을 적용하려면 사용을 중지하고 다시 등록해야 해야 합니다.
+Android, iOS/iPadOS, Windows Phone 8.1과 같은 기타 플랫폼의 경우, 덜 엄격한 정책을 적용하려면 사용을 중지하고 다시 등록해야 해야 합니다.
 
 [디바이스 등록 문제 해결](../enrollment/troubleshoot-device-enrollment-in-intune.md)이 유용한 리소스가 될 수 있습니다.
 

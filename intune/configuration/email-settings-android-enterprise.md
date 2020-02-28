@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/07/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc86e82f189377d63422cc3306b8554637164b0f
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 978ddf279dc221a56fddaf99da4dbb2377a93c24
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206434"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511156"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune에서 이메일, 인증 및 동기화를 구성하기 위한 Android Enterprise 디바이스 설정
 
@@ -35,7 +35,7 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-[장치 구성 프로필](email-settings-configure.md#create-a-device-profile) 을 만들거나 (회사 프로필 선택) [앱 구성 정책을](../apps/app-configuration-policies-use-android.md)만듭니다.
+[디바이스 구성 프로필](email-settings-configure.md#create-a-device-profile)을 만들거나(회사 프로필을 선택) [앱 구성 정책](../apps/app-configuration-policies-use-android.md)을 만듭니다.
 
 ## <a name="android-enterprise"></a>Android Enterprise
 
@@ -63,4 +63,4 @@ Intune의 이메일 프로필에 대한 자세한 내용은 [이메일 설정 �
 
 [프로필을 할당](device-profile-assign.md)하고, 해당 [상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Android Samsung Knox](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 이상](email-settings-windows-10.md) 및 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 디바이스용 이메일 프로필을 만들 수도 있습니다.
+[Android Samsung Knox](email-settings-android.md), [iOS/iPadOS](email-settings-ios.md), [Windows 10 이상](email-settings-windows-10.md) 및 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 디바이스용 이메일 프로필을 만들 수도 있습니다.

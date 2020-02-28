@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 47be57dece7867109565622ec2a1380e9a9d57d7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207063"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512503"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Intune을 사용하여 VPN 연결을 추가하기 위한 Windows 10 및 Windows Holographic 디바이스 설정
 
@@ -143,7 +143,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 �
 
   ![세 개의 점을 선택하고 클릭한 후 끌어 dns 접미사 이동](./media/vpn-settings-windows-10/vpn-settings-windows10-move-dns-suffix.png)
 
-- **Nrpt (이름 확인 정책 테이블) 규칙**: nrpt (이름 확인 정책 테이블) 규칙은 VPN에 연결 된 경우 DNS에서 이름을 확인 하는 방법을 정의 합니다. VPN 연결이 설정된 후 VPN 연결에서 사용할 DNS 서버를 선택합니다.
+- **NRPT(이름 확인 정책 테이블) 규칙**: NRPT(이름 확인 정책 테이블) 규칙은 VPN에 연결 시 DNS가 이름을 확인하는 방법을 정의합니다. VPN 연결이 설정된 후 VPN 연결에서 사용할 DNS 서버를 선택합니다.
 
   입력하는 도메인을 확인하려면 도메인, DNS 서버, 프록시 및 기타 세부 정보를 포함하는 테이블에 규칙을 추가할 수 있습니다. VPN 연결은 사용자가 입력할 도메인을 연결할 때 이러한 규칙을 사용합니다.
 
@@ -183,6 +183,6 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이러한 설정을 �
 
 ## <a name="next-steps"></a>다음 단계
 
-프로필이 만들어지지만 아직 아무것도 하지 않습니다. 그럼 다음, [프로필을 할당](device-profile-assign.md)하고 [해당 상태를 모니터링](device-profile-monitor.md)합니다.
+프로필이 만들어지지만 아직 아무것도 하지 않습니다. 다음으로, [프로필을 할당](device-profile-assign.md)하고, [해당 상태를 모니터링](device-profile-monitor.md)합니다.
 
-[Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md) 및 [macOS](vpn-settings-macos.md) 디바이스에서 VPN 설정을 구성합니다.
+[Android](vpn-settings-android.md), [iOS/iPadOS](vpn-settings-ios.md) 및 [macOS](vpn-settings-macos.md) 디바이스에서 VPN 설정을 구성합니다.
