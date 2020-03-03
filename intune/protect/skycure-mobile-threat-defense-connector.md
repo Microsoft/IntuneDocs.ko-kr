@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be8fbb0bd96891eb3af3157deddfc325ebc5f2b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508932"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515274"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 커넥터
 
@@ -41,7 +41,7 @@ Intune 디바이스 준수 정책을 통해 SEP Mobile 위협 평가를 사용�
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune과 SEP Mobile이 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 
-Android 또는 iOS용 SEP Mobile 앱은 파일 시스템, 네트워크 스택, 디바이스 및 애플리케이션 원격 분석(사용 가능한 경우)을 캡처한 다음, Symantec 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
+Android 또는 iOS/iPadOS용 SEP Mobile 앱은 파일 시스템, 네트워크 스택, 디바이스 및 애플리케이션 원격 분석(사용 가능한 경우)을 캡처한 다음, Symantec 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
 
 Intune 디바이스 준수 정책에는 SEP Mobile 위험 평가를 기반으로 하는 SEP Mobile에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다.
 
@@ -87,7 +87,7 @@ Intune은 SEP Mobile과의 통합을 두 가지 모드로 지원합니다.
 
 ![수정 시 액세스 권한 부여됨](./media/skycure-mobile-threat-defense-connector/symantec-arch-4.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크 위협에 따라 SharePoint Online에 대한 액세스 제어
 
 네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 공격을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 
@@ -121,7 +121,7 @@ SEP Mobile과 Intune을 통합하기 위해 완료해야 할 단계는 다음과
 
 - [Intune과 SEP Mobile 통합 설정](skycure-mtd-connector-integration.md)
 
-- [SEP Mobile 앱, Microsoft Authenticator 및 iOS 앱 구성 정책 추가 및 할당](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [SEP Mobile 앱, Microsoft Authenticator 및 iOS/iPadOS 앱 구성 정책 추가 및 할당](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
 - [Intune을 사용하여 SEP Mobile 디바이스 준수 정책 만들기](mtd-device-compliance-policy-create.md)
 

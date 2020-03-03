@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f1be7a2457cca7da62883370c9e273168c6a29
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c550fba45e5e6b16e49e7103fde40de1e08ba55
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502433"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576485"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune이 Apple에 보내는 데이터
 
@@ -59,7 +59,7 @@ Microsoft Intune이 연결을 설정하기 전에 Apple 서비스 각각에 대�
 | ASM/DEP | profile_status | 프로필의 설치 상태입니다. 가능한 값: **빈**, **할당됨**, **푸시됨** 또는 **제거됨**입니다. |
 | ASM/DEP | profile_uuid | 지정된 프로필의 고유 ID입니다. |
 | ASM/DEP | device_assigned_by | 디바이스에 할당된 사용자의 이메일입니다. |
-| ASM/DEP | os | 디바이스 운영 체제: iOS, OSX, 또는 tvOS입니다. 이 키는 X-서버-프로토콜-버전 2 이상에서 유효합니다. |
+| ASM/DEP | os | 디바이스 운영 체제: iOS/iPadOS, OSX, 또는 tvOS. 이 키는 X-서버-프로토콜-버전 2 이상에서 유효합니다. |
 | ASM/DEP | device_family | 디바이스의 Apple 제품군: iPad, iPhone, iPod, Mac 또는 AppleTV입니다. 이 키는 X-서버-프로토콜-버전 2 이상에서 유효합니다. |
 | ASM/DEP | profile_name | 문자열입니다. 사람이 읽을 수 있는 프로필 이름입니다. |
 | ASM/DEP | support_phone_number | 선택 사항입니다. 문자열입니다. 조직에 대한 지원 전화 번호입니다. |

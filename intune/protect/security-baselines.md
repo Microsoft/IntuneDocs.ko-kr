@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 43e104d9f32f6b6204ffc3bd461bb06764543e3c
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548134"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569271"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune에서 보안 기준을 사용하여 Windows 10 디바이스 구성
 
@@ -142,7 +142,7 @@ Intune 콘솔에서 각 기준에 대한 타일에는 기준 템플릿 이름과
 
    ![기준 검토](./media/security-baselines/review.png)
 
-9. 프로필을 만든 후 **디바이스 보안** > **보안 기준**으로 이동하여 편집하고, 구성한 기준 유형을 선택한 다음 **프로필**을 선택합니다. 사용 가능한 프로필 목록에서 프로필을 선택한 다음 **속성**을 선택합니다. 모든 사용 가능한 구성 탭의 설정을 편집하고 **검토 + 저장**을 선택하여 변경 내용을 커밋할 수 있습니다.
+9. 프로필을 만든 후 **엔드포인트 보안** > **보안 기준**으로 이동하여 편집하고, 구성한 기준 유형을 선택한 다음, **프로필**을 선택합니다. 사용 가능한 프로필 목록에서 프로필을 선택한 다음 **속성**을 선택합니다. 모든 사용 가능한 구성 탭의 설정을 편집하고 **검토 + 저장**을 선택하여 변경 내용을 커밋할 수 있습니다.
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>프로필에 대한 기준 버전 변경
 
@@ -214,7 +214,7 @@ Microsoft 보안 팀은 지난 수년 동안 Windows 개발자 및 보안 커뮤
 
 - Microsoft는 수년 동안 그랬듯이 GPO(그룹 정책) 및 [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10)에 대한 보안 기준선을 지속적으로 게시하고 있습니다. 이러한 기준선은 대부분의 조직에서 사용됩니다. 이러한 기준선의 권장 사항은 Microsoft 보안 팀이 DoD(국방부), NIST(국가 표준 기술 연구소) 등을 비롯한 기업 고객 및 외부 기관과 협력한 결과입니다. Microsoft는 당사의 권장 사항과 기준선을 이러한 조직과 공유합니다. 이러한 조직은 Microsoft의 권장 사항을 충실하게 반영하는 자체적인 권장 사항도 보유하고 있습니다. MDM(모바일 디바이스 관리)이 클라우드 환경으로 지속적으로 성장함에 따라 Microsoft는 이러한 그룹 정책 기준선에 대한 동일한 MDM 권장 사항을 작성했습니다. 이러한 추가 기준선은 Microsoft Intune에 기본 제공되며 기준선을 따르거나 따르지 않는 사용자, 그룹 및 디바이스에 대한 규정 준수 보고서를 포함합니다.
 
-- 많은 고객이 Intune 기준선 권장 사항을 시작점으로 사용하여 IT 및 보안 요구 사항에 맞게 사용자 지정합니다. Microsoft의 Windows 10 RS5 **MDM 보안 기준선**은 릴리스할 첫 번째 기준선입니다. 이 기준선은 고객이 CIS, NIST 및 기타 표준을 기반으로 하고 궁극적으로는 다른 보안 기준선을 가져올 수 있도록 해주는 범용 인프라로 작성되었습니다. 현재 Windows용으로 제공되며 나중에는 iOS 및 Android를 포함할 예정입니다.
+- 많은 고객이 Intune 기준선 권장 사항을 시작점으로 사용하여 IT 및 보안 요구 사항에 맞게 사용자 지정합니다. Microsoft의 Windows 10 RS5 **MDM 보안 기준선**은 릴리스할 첫 번째 기준선입니다. 이 기준선은 고객이 CIS, NIST 및 기타 표준을 기반으로 하고 궁극적으로는 다른 보안 기준선을 가져올 수 있도록 해주는 범용 인프라로 작성되었습니다. 현재 Windows용으로 제공되며 나중에는 iOS/iPadOS 및 Android를 포함할 예정입니다.
 
 - Microsoft Intune에서 Azure AD(Active Directory)를 사용하여 온-프레미스 Active Directory 그룹 정책을 순수 클라우드 솔루션으로 마이그레이션할 계획입니다. 도움을 주기 위해 [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10)(보안 준수 툴킷)에는 하이브리드 AD 및 Azure AD 조인 디바이스를 관리하는 데 도움이 되는 그룹 정책 템플릿이 포함되어 있습니다. 이러한 디바이스는 필요에 따라 클라우드(Intune)의 MDM 설정과 온-프레미스 도메인 컨트롤러의 그룹 정책 설정을 가져올 수 있습니다.
 

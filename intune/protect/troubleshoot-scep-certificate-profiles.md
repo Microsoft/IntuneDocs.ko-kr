@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034246"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515223"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Microsoft Intune에서 SCEP 인증서 프로필 문제 해결 개요
 
@@ -123,9 +123,9 @@ Android를 실행하는 디바이스의 경우 **Android 회사 포털** 앱 로
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>iOS 및 iPadOS 디바이스의 로그
 
-iOS 또는 iPadOS를 실행하는 디바이스의 경우 디버그 로그 및 Mac 컴퓨터에서 실행되는 **Xcode**를 사용합니다.
+iOS/iPadOS를 실행하는 디바이스의 경우 디버그 로그 및 Mac 컴퓨터에서 실행되는 **Xcode**를 사용합니다.
 
-1. iOS 디바이스를 Mac에 연결하고 **애플리케이션** > **유틸리티**로 이동하여 콘솔 앱을 엽니다. 
+1. iOS/iPadOS 디바이스를 Mac에 연결하고 **애플리케이션** > **유틸리티**로 이동하여 콘솔 앱을 엽니다. 
 
 2. **작업**에서 **정보 메시지 포함** 및 **디버그 메시지 포함**을 선택합니다.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415368"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473751"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>Apple의 장비 등록 프로그램을 통해 iOS/iPadOS 디바이스 자동 등록
 
@@ -77,6 +77,9 @@ Apple Business Manager 또는 Apple School Manager 포털을 사용하여 토큰
     ![등록 프로그램 토큰을 가져옵니다.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. **동의**를 선택하여 Microsoft에서 Apple에 사용자 및 디바이스 정보를 보낼 수 있도록 권한을 부여합니다.
+
+> [!NOTE]
+> 2단계 이후 계속해서 Intune 공개 키 인증서를 다운로드한 후에는 마법사를 닫거나 이 페이지에서 다른 곳으로 이동하지 마세요. 이렇게 하면 다운로드한 인증서가 무효화되며 이 프로세스를 다시 반복해야 합니다. 해당 상황이 발생하는 경우에는 일반적으로 [검토 + 만들기] 탭의 [만들기] 단추가 회색으로 표시되며 프로세스를 완료할 수 없습니다.
 
    ![공개 키를 다운로드하기 위한 Apple 인증서 작업 영역의 등록 프로그램 토큰 창 스크린샷](./media/device-enrollment-program-enroll-ios/add-enrollment-program-token-pane.png)
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3deb9f3c96a4c2c2de72b7016aca855f679bbd7
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: ceb4d2354ca073cf05f526df7638aebf8f16d5b7
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755133"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569492"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 Windows 기간 업무 앱 추가
 
@@ -32,7 +32,7 @@ ms.locfileid: "76755133"
 LOB(기간 업무) 앱은 앱 설치 파일로 추가합니다. 이러한 종류의 앱은 일반적으로 사내에서 작성됩니다. 다음 단계는 Windows LOB 앱을 Microsoft Intune에 추가할 수 있도록 지침을 제공합니다.
 
 > [!IMPORTANT]
-> *.msi*확장을 포함한 설치 파일을 사용하여 Win32 앱을 배포할 때 [Intune 관리 확장](../apps/intune-management-extension.md)을 사용하는 것이 좋습니다. AutoPilot 등록 중에 Win32 앱과 기간 업무 앱 설치를 혼합하면 앱 설치에 실패할 수 있습니다.  
+> .msi 확장명을 포함한 설치 파일(콘텐츠 준비 도구를 사용하여 .intunewin 파일로 패키지됨)을 사용하여 Win32 앱을 배포할 때 [Intune 관리 확장](../apps/intune-management-extension.md)을 사용하는 것이 좋습니다. AutoPilot 등록 중에 Win32 앱과 기간 업무 앱 설치를 혼합하면 앱 설치에 실패할 수 있습니다.  
 
 ## <a name="select-the-app-type"></a>앱 유형을 선택합니다.
 

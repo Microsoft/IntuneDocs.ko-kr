@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 53985a9af523ecf60efda5c5c651161c132e326c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206570"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511224"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 제한 설정 구성
 
 
 
-Intune에는 관리자가 Android, iOS, macOS 및 Windows 디바이스를 제어하는 데 도움이 되는 디바이스 제한 정책이 포함되어 있습니다. 이러한 제한을 통해 광범위한 설정과 기능을 제어하여 조직의 리소스를 보호할 수 있습니다. 예를 들어 관리자는 다음을 수행할 수 있습니다.
+Intune에는 관리자가 Android, iOS/iPadOS, macOS 및 Windows 디바이스를 제어하는 데 도움이 되는 디바이스 제한 정책이 포함되어 있습니다. 이러한 제한을 통해 광범위한 설정과 기능을 제어하여 조직의 리소스를 보호할 수 있습니다. 예를 들어 관리자는 다음을 수행할 수 있습니다.
 
 - 디바이스 카메라를 허용하거나 차단
 - Google Play, 앱 스토어, 문서 보기, 게임에 대한 액세스 제어
@@ -44,7 +44,7 @@ Intune에는 관리자가 Android, iOS, macOS 및 Windows 디바이스를 제어
 2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 속성을 입력합니다.
 
-    - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 좋은 정책 이름의 예로 **iOS:를 들 수 있습니다. 디바이스에서 카메라를 차단합니다**.
+    - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 좋은 정책 이름의 예는 다음과 같습니다. **iOS/iPadOS: 디바이스에서 카메라를 차단합니다**.
     - **설명**: 정책에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
     - **플랫폼**: 디바이스 플랫폼을 선택합니다. 옵션은 다음과 같습니다.  
 

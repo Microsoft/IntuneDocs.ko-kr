@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556405"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569288"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune에서 보안 기준 및 프로필 모니터링
 
@@ -106,6 +106,18 @@ Intune은 보안 기준을 모니터링하는 여러 가지 옵션을 제공합�
 
    ![보안 기준 프로필에 대한 다양한 모니터링 옵션 확인](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>디바이스별 엔드포인트 보안 구성 보기
+
+개별 디바이스에 적용되는 보안 구성의 세부 정보를 확인합니다. 이 정보를 사용하여 잘못 구성된 설정을 격리할 수 있습니다.
+
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+
+2. **디바이스** > **모든 디바이스**로 이동하고 보려는 디바이스를 선택합니다.
+
+3. ‘모니터’ 범주에서 **엔드포인트 보안 구성**을 선택하여 해당 디바이스에 적용되는 보안 구성 목록을 확인합니다. 
+
+4. 엔드포인트 보안 구성을 선택하여 상세히 검색하고 디바이스에서 해당 보안 구성의 평가에 대한 추가 세부 정보를 볼 수 있습니다.
+
 ## <a name="troubleshoot-using-per-setting-status"></a>설정당 상태를 사용하여 문제 해결
 
 보안 기준을 배포했지만 배포 상태가 오류를 표시합니다. 다음 단계는 오류 문제 해결에 대한 일부 지침을 제공합니다.
@@ -135,6 +147,7 @@ Windows 10 디바이스에는 기본 제공 MDM 진단 정보 보고서가 있�
 [Windows 10에서 MDM 실패 진단](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)은 이 기본 제공 보고서에 대한 자세한 정보를 제공합니다.
 
 > [!TIP]
+>
 > - 또한 일부 설정은 GUID를 나열합니다. 설정 값에 대한 로컬 레지스트리(regedit)에서 이 GUID를 검색할 수 있습니다.
 > - 이벤트 뷰어 로그는 문제가 있는 설정에 대한 일부 오류 정보를 포함할 수도 있습니다(**이벤트 뷰어** > **애플리케이션 및 서비스 로그** > **Microsoft** > **Windows** > **DeviceManagement-엔터프라이즈-진단-공급 기업** > **관리자**).
 

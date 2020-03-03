@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755190"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609168"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune에 iOS 기간 업무 앱 추가
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755190"
 
 이 문서의 정보를 사용하여 Microsoft Intune에 iOS LOB(기간 업무) 앱을 추가할 수 있습니다. LOB(기간 업무) 앱은 IPA 앱 설치 파일에서 Intune에 추가하는 앱입니다. 이러한 종류의 앱은 일반적으로 사내에서 작성됩니다. 먼저 iOS Developer Enterprise 프로그램에 가입해야 합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Apple 웹사이트](https://developer.apple.com/programs/ios/enterprise/)를 참조하세요.
 
->[!NOTE]
->iOS 디바이스 사용자는 주식, 지도 같은 기본 제공 iOS 앱 중 일부를 제거할 수 있습니다. Intune를 사용하여 해당 앱을 다시 배포할 수는 없습니다. 사용자가 이러한 앱을 삭제하는 경우 앱 스토어로 이동해서 수동으로 다시 설치해야 합니다.
+> [!NOTE]
+> iOS 디바이스 사용자는 주식, 지도 같은 기본 제공 iOS 앱 중 일부를 제거할 수 있습니다. Intune를 사용하여 해당 앱을 다시 배포할 수는 없습니다. 사용자가 이러한 앱을 삭제하는 경우 앱 스토어로 이동해서 수동으로 다시 설치해야 합니다.
 >
->iOS LOB 앱의 최대 크기 한도는 앱당 4GB입니다.
+> iOS LOB 앱의 최대 크기 한도는 앱당 4GB입니다.
+
+> [!NOTE]
+> 번들 식별자(예: *com.contoso.app*)는 앱의 고유 식별자여야 합니다. 예를 들어 테스트 목적으로 프로덕션 버전 옆에 베타 버전의 LOB 앱을 설치하려면 베타 버전에 다른 고유 식별자(예: *com.contoso.app-beta*)를 사용해야 합니다. 그렇지 않으면 베타 버전이 프로덕션과 겹치고 업그레이드로 처리됩니다. .ipa 파일 이름을 바꾸면 이 동작에 영향을 주지 않습니다.
 
 ## <a name="select-the-app-type"></a>앱 유형 선택
 

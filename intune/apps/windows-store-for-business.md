@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562505"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609151"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune을 사용하여 비즈니스용 Microsoft Store에서 대량 구매 앱을 관리하는 방법
 
@@ -48,7 +48,7 @@ ms.locfileid: "74562505"
 - 비즈니스용 Microsoft 스토어에서 구매한 온라인 및 오프라인 사용이 허가된 앱은 Intune Portal에 동기화됩니다. 그런 다음 이러한 앱을 디바이스 그룹 또는 사용자 그룹에 배포할 수 있습니다. 
 - 온라인 앱 설치는 스토어에서 관리합니다.
 - 무료 오프라인 앱도 Intune에 동기화할 수 있습니다. 이런 앱은 스토어가 아닌 Intune을 통해 설치됩니다.
-- 이 기능을 사용하려면 디바이스가 Active Directory Domain Services에 가입하거나 작업 공간에 연결되어 있어야 합니다.
+- 이 기능을 사용하려면 디바이스가 Active Directory Domain Services에 가입되거나, Azure AD에 조인되거나 Workplace 조인되어야 합니다.
 - 등록된 디바이스가 1511 릴리스의 Windows 10 이상을 사용 중이어야 합니다.
 
 또한 비즈니스용 Microsoft 스토어에서 동기화된 오프 라인 사용이 허가된 앱 및 관련 집합은 이제 UI에서 단일 앱 항목으로 통합되게 됩니다. 개별 패키지에서의 모든 배포 세부 정보는 단일 항목으로 마이그레이션됩니다. Azure Portal에서 관련 집합을 보려면 **앱** 창에서 **앱 라이선스**를 선택합니다.

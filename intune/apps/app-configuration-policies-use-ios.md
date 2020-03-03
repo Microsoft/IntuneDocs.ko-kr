@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/11/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: af3c4e05a47e015384716588a28a6074898e2f6a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438007"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513965"
 ---
 # <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>관리형 iOS/iPadOS 디바이스용 앱 구성 정책 추가
 
@@ -43,7 +43,7 @@ Microsoft Intune 관리자는 관리되는 디바이스에서 Microsoft Office �
 > [!TIP]
 > 이 정책 유형은 현재 iOS/iPadOS 8.0 이상을 실행하는 디바이스에서만 사용 가능합니다. 지원하는 앱 설치 유형은 다음과 같습니다.
 >
-> - **앱 스토어의 관리되는 iOS 앱**
+> - **앱 스토어의 관리형 iOS/iPadOS 앱**
 > - **iOS용 앱 패키지**
 >
 > 앱 설치 유형에 대한 자세한 내용은 [Microsoft Intune에 앱을 추가하는 방법](apps-add.md)을 참조하세요. 관리되는 장치의 .ipa 앱 패키지로 앱 구성을 통합하는 방법에 대한 자세한 내용은 [iOS 개발자 설명서](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html)의 관리되는 앱 구성을 참조하세요.
@@ -108,9 +108,10 @@ Microsoft Intune은 앱에 고유한 구성 설정을 제공합니다. Microsoft
 
 iOS/iPadOS 디바이스의 경우 다음 키/값 쌍을 사용합니다.
 
-| **Key** | IntuneMAMAllowedAccountsOnly |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **값** | <ul><li>**사용**: 유일하게 허용되는 계정은 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 키로 정의된 관리되는 사용자 계정입니다.</li><li>**사용 안 함**(또는 **사용**과 대소문자를 구분하지 않고 일치하는 모든 값): 모든 계정이 허용됩니다.</li></ul> |.
+| **Key** | **값** |
+|----|----|
+| IntuneMAMAllowedAccountsOnly | <ul><li>**사용**: 유일하게 허용되는 계정은 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 키로 정의된 관리되는 사용자 계정입니다.</li><li>**사용 안 함**(또는 **사용**과 대소문자를 구분하지 않고 일치하는 모든 값): 모든 계정이 허용됩니다.</li></ul> |
+| IntuneMAMUPN | <ul><li>앱에 로그인할 수 있는 계정의 UPN입니다.</li><li> Intune 등록 디바이스의 경우 <code>{{userprincipalname}}</code> 토큰을 사용하여 등록된 사용자 계정을 나타낼 수 있습니다.</li></ul>  |
 
    > [!NOTE]
    > 다중 ID로 구성된 조직 계정만 허용하는 경우에는 iOS용 OneDrive 10.34 이상, iOS용 Outlook 2.99.0 이상 또는 iOS용 Edge 44.8.7 이상을 사용해야 하고 앱을 [Intune 앱 보호 정책](app-protection-policy.md)의 대상으로 지정해야 합니다.
@@ -181,7 +182,7 @@ Intune에서는 속성 목록의 다음 데이터 형식을 지원합니다.
 - \{\{serialnumberlast4digits\}\}—예: **G5V2**(iOS/iPadOS 디바이스)
 - \{\{aaddeviceid\}\}-예: **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>iOS DEP 디바이스를 지원하도록 회사 포털 앱 구성
+## <a name="configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices"></a>iOS 및 iPadOS DEP 디바이스를 지원하도록 회사 포털 앱 구성
 
 DEP(Apple의 장비 등록 프로그램) 등록은 회사 포털 앱의 앱 스토어 버전과 호환되지 않습니다. 그러나 다음 단계를 사용하여 iOS/iPadOS DEP 디바이스를 지원하도록 회사 포털 앱을 구성할 수 있습니다.
 
@@ -204,7 +205,7 @@ DEP(Apple의 장비 등록 프로그램) 등록은 회사 포털 앱의 앱 스�
 3. 원하는 그룹을 대상으로 하는 앱 구성 정책을 사용하여 디바이스에 회사 포털을 배포합니다. 이미 DEP가 등록된 디바이스 그룹에만 정책을 배포해야 합니다.
 4. 최종 사용자에게 회사 포털 앱이 자동으로 설치되면 로그인하도록 알립니다.
 
-## <a name="monitor-ios--app-configuration-status-per-device"></a>디바이스별 iOS 앱 구성 상태 모니터링 
+## <a name="monitor-iosipados--app-configuration-status-per-device"></a>디바이스별 iOS/iPadOS 앱 구성 상태 모니터링 
 구성 정책이 할당되면 각 관리 디바이스에 대한 iOS/iPadOS 앱 구성 상태를 모니터링할 수 있습니다. Azure Portal의 **Microsoft Intune**에서 **디바이스** > **모든 디바이스**를 차례로 선택합니다. 관리 디바이스 목록에서 디바이스에 대한 창을 표시할 특정 디바이스를 선택합니다. 디바이스 창에서 **앱 구성**을 선택합니다.  
 
 ## <a name="additional-information"></a>추가 정보

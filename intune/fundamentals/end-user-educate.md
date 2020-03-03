@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 94c52257072bc713cfd3b7a44f342d5d9a4ba2f8
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502899"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514679"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Microsoft Intune에 대한 최종 사용자 교육 방법
 
@@ -68,8 +68,8 @@ __사용자는 Intune으로 인해 어떤 불편을 겪을 수 있을까요?__  
   * [Android 사용자가 앱을 얻는 방법](end-user-apps-android.md)
 
 * **iOS**
-  * [Intune에서 iOS 디바이스 사용](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
-  * [iOS 사용자가 앱을 얻는 방법](end-user-apps-ios.md)
+  * [Intune에서 iOS/iPadOS 디바이스 사용](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
+  * [iOS/iPadOS 사용자가 앱을 얻는 방법](end-user-apps-ios.md)
 
 * **Windows**
   * [Intune에서 Windows 디바이스 사용](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1cdfc7d42d3bffe1abe21deddfe146af953b150a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505192"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514951"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune 계획 구현
 
@@ -39,7 +39,7 @@ ms.locfileid: "72505192"
 
 - Office 365 구독(Office 앱 및 앱 보호 정책 관리 앱용)
 
-- Apple APNs 인증서(iOS 디바이스 플랫폼 관리를 사용하도록 설정하기 위해)
+- Apple APN 인증서(iOS/iPadOS 디바이스 플랫폼 관리를 사용하도록 설정하기 위해)
 
 - Azure AD Connect(디렉터리 동기화용)
 
@@ -88,7 +88,7 @@ Intune을 사용하여 디바이스를 설치/구성/관리/등록하려면 먼�
 
 ### <a name="task-6-enable-device-platforms"></a>태스크 6: 디바이스 플랫폼을 사용하도록 설정
 
-기본적으로 Apple 디바이스(iOS 및 Mac)를 제외한 대부분의 디바이스 플랫폼을 사용하도록 설정할 수 있습니다. Intune에서 iOS 디바이스를 등록하고 관리하려면 먼저, 디바이스 플랫폼을 사용하도록 설정해야 합니다. 이렇게 하려면 MDM 푸시 인증서를 만들어 Intune에 추가해야 합니다.
+기본적으로 Apple 디바이스(iOS/iPadOS 및 Mac)를 제외한 대부분의 디바이스 플랫폼을 사용하도록 설정할 수 있습니다. Intune에서 iOS/iPadOS 디바이스를 등록하고 관리하려면 먼저, 디바이스 플랫폼을 사용하도록 설정해야 합니다. 이렇게 하려면 MDM 푸시 인증서를 만들어 Intune에 추가해야 합니다.
 
 - [등록을 위해 Apple 디바이스를 사용하도록 설정하는 방법](../enrollment/apple-mdm-push-certificate-get.md)을 자세히 알아보세요.
 
@@ -130,7 +130,7 @@ Intune은 Exchange Online, Exchange 온-프레미스, SharePoint Online, 비즈�
 
 ### <a name="task-13-enroll-devices"></a>태스크 13: 디바이스 등록
 
-Intune은 iOS, Mac OS, Android, Windows 데스크톱 및 Windows 모바일 디바이스 플랫폼을 지원합니다. Intune 배포 사용 사례 및 요구 사항에 따라 적절히 모바일 디바이스 플랫폼을 등록합니다.
+Intune은 iOS/iPadOS, Mac OS, Android, Windows 데스크톱 및 Windows 모바일 디바이스 플랫폼을 지원합니다. Intune 배포 사용 사례 및 요구 사항에 따라 적절히 모바일 디바이스 플랫폼을 등록합니다.
 
 - [디바이스를 등록하는 방법](../enrollment/device-enrollment.md)에 대해 자세히 알아보세요.
 

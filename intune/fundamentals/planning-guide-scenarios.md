@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505164"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514900"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>모바일 디바이스 관리 사용 사례 시나리오 확인
 
@@ -79,15 +79,15 @@ ms.locfileid: "72505164"
 
 다음 단계에서는 각 사용 사례 시나리오와 관련된 모바일 디바이스 플랫폼을 확인합니다. 플랫폼이 여러 개일 수도 있습니다.
 
-예를 들어 회사 사용 사례 시나리오가 iOS 및 Android Samsung Knox 디바이스 플랫폼을 지원할 수 있습니다. 그리고 BYOD 정책의 경우 Samsung Knox가 아닌 Android 및 Windows 10 Mobile과 같은 추가 모바일 디바이스 플랫폼 지원을 포함할 수 있습니다. 위의 예를 토대로 하여 각 사용 사례 시나리오와 연결된 모바일 디바이스 플랫폼이 아래에 나와 있습니다.
+예를 들어 회사 사용 사례 시나리오가 iOS/iPadOS 및 Android Samsung Knox 디바이스 플랫폼을 지원할 수 있습니다. 그리고 BYOD 정책의 경우 Samsung Knox가 아닌 Android 및 Windows 10 Mobile과 같은 추가 모바일 디바이스 플랫폼 지원을 포함할 수 있습니다. 위의 예를 토대로 하여 각 사용 사례 시나리오와 연결된 모바일 디바이스 플랫폼이 아래에 나와 있습니다.
 
 | **사용 사례** | **하위 사용 사례** | **그룹** | **디바이스 플랫폼** |   
 |:---:|:---:|:---:|:---:|
-| 회사 | 정보 근로자 | HR, 재무 | iOS |                                                           
-| 회사 | 임원 | HR, 재무 | iOS |                                                           
+| 회사 | 정보 근로자 | HR, 재무 | iOS/iPadOS |                                                           
+| 회사 | 임원 | HR, 재무 | iOS/iPadOS |                                                           
 | 회사 | 키오스크 | 소매 | Android |
-| BYOD | 정보 근로자 | 마케팅, 영업 | iOS |                                                           
-| BYOD | 임원 | 마케팅, 영업 | iOS |
+| BYOD | 정보 근로자 | 마케팅, 영업 | iOS/iPadOS |                                                           
+| BYOD | 임원 | 마케팅, 영업 | iOS/iPadOS |
 
 ## <a name="next-steps"></a>다음 단계
 

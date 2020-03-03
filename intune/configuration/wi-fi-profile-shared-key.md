@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9b56ba1515608afb6c2a0d151f5412711d49e57
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: b83367bb2f1d3622a1fc4e11eedd88f3f26ee8dd
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886710"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510608"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Intune에서 사용자 지정 디바이스 프로필을 사용하여 미리 공유한 키로 WiFi 프로필 만들기
 
@@ -44,7 +44,7 @@ ms.locfileid: "76886710"
 
 - 나중에 이 아티클에서 설명한 대로 해당 네트워크에 연결된 컴퓨터에서 코드를 쉽게 복사할 수 있습니다.
 - 더 많은 OMA-URI 설정을 추가하여 여러 네트워크와 키를 추가할 수 있습니다.
-- iOS의 경우 Mac 스테이션의 Apple Configurator를 사용하여 프로필을 설정합니다.
+- iOS/iPadOS의 경우 Mac 스테이션의 Apple Configurator를 사용하여 프로필을 설정합니다.
 - PSK는 64자리 16진수 문자열 또는 인쇄 가능한 8~63자의 ASCII 문자를 요구합니다. 별표(*) 등의 일부 문자는 지원되지 않습니다.
 
 ## <a name="create-a-custom-profile"></a>사용자 지정 프로필 만들기

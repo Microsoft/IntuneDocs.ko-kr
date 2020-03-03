@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune에서 디바이스에 VPN 설정 추가 - Azure | Microsoft Docs
-description: Android, Android 엔터프라이즈, iOS, macOS 및 Windows 디바이스의 경우 기본 제공 설정을 사용하여 Microsoft Intune에서 VPN(가상 사설망) 연결을 만듭니다.
+description: Android, Android 엔터프라이즈, iOS, iPadOS, macOS 및 Windows 디바이스의 경우 기본 제공 설정을 사용하여 Microsoft Intune에서 VPN(가상 사설망) 연결을 만듭니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 134ef9a2a4dfe8a4576c753a001439c42f678adc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206281"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510816"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune에서 VPN 서버에 연결할 VPN 프로필 생성
 
@@ -28,7 +28,7 @@ ms.locfileid: "75206281"
 
 VPN(가상 사설망)을 사용하면 사용자가 조직 네트워크에 안전하게 원격으로 액세스할 수 있습니다. 디바이스에서 VPN 연결 프로필을 사용하여 VPN 서버와의 연결을 시작합니다. Microsoft Intune의 **VPN 프로필**은 조직의 사용자 및 디바이스에 VPN 설정을 할당하여 조직 네트워크에 쉽고 안전하게 연결할 수 있습니다.
 
-예를 들어 조직 네트워크에서 파일 공유에 연결하는 데 필요한 설정을 사용하여 모든 iOS 디바이스를 구성하려고 할 수 있습니다. 이러한 설정이 포함된 VPN 프로필을 만듭니다. 그런 다음, iOS 디바이스를 사용하는 모든 사용자에게 이 프로필을 할당합니다. 사용자에게는 지원되는 네트워크 목록에서 VPN 연결이 표시되어 최소한의 노력으로 연결할 수 있습니다.
+예를 들어 조직 네트워크에서 파일 공유에 연결하는 데 필요한 설정을 사용하여 모든 iOS/iPadOS 디바이스를 구성하려고 할 수 있습니다. 이러한 설정이 포함된 VPN 프로필을 만듭니다. 그런 다음, iOS/iPadOS 디바이스를 사용하는 모든 사용자에게 이 프로필을 할당합니다. 사용자에게는 지원되는 네트워크 목록에서 VPN 연결이 표시되어 최소한의 노력으로 연결할 수 있습니다.
 
 > [!NOTE]
 > [Intune 사용자 지정 구성 정책](custom-settings-configure.md)을 사용하여 다음 플랫폼에 대한 VPN 프로필을 만들 수 있습니다.
@@ -47,19 +47,19 @@ VPN(가상 사설망)을 사용하면 사용자가 조직 네트워크에 안전
 |연결 유형|플랫폼|
 |-|-|
 |자동|Windows 10|
-|검사점 캡슐 VPN|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Cisco AnyConnect|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형)<br/>- iOS<br/>- macOS|
-|Cisco(IPsec)|iOS|
-|Citrix SSO|- Android<br/>- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형) [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS<br/>- Windows 10|
-|사용자 지정 VPN|- iOS<br/>- macOS|
-|F5 Access|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|IKEv2| - iOS<br/>- Windows 10|
+|검사점 캡슐 VPN|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Cisco AnyConnect|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형)<br/>- iOS/iPadOS<br/>- macOS|
+|Cisco(IPsec)|iOS/iPadOS|
+|Citrix SSO|- Android<br/>- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형) [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS/iPadOS<br/>- Windows 10|
+|사용자 지정 VPN|- iOS/iPadOS<br/>- macOS|
+|F5 Access|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|IKEv2| - iOS/iPadOS<br/>- Windows 10|
 |L2TP|Windows 10|
-|Palo Alto Networks GlobalProtect|- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS<br/>- Windows 10|
+|Palo Alto Networks GlobalProtect|- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS/iPadOS<br/>- Windows 10|
 |PPTP|Windows 10|
-|Pulse Secure|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|SonicWall Mobile Connect|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Zscaler|- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS|
+|Pulse Secure|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- Android 엔터프라이즈 디바이스 소유자(완전 관리형)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|SonicWall Mobile Connect|- Android<br/>- Android 엔터프라이즈 회사 프로필<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Zscaler|- Android 엔터프라이즈 회사 프로필: [앱 구성 정책](../apps/app-configuration-policies-use-android.md) 사용<br/>- iOS/iPadOS|
 
 > [!IMPORTANT]
 > 디바이스에 할당된 VPN 프로필을 사용하려면 프로필에 적용 가능한 VPN 앱을 설치해야 합니다. [Microsoft Intune의 앱 관리란?](../apps/app-management.md) 아티클의 정보를 참조하여 Intune을 사용해 앱을 할당할 수 있습니다.  
@@ -119,4 +119,4 @@ Intune에서 인증서 프로필을 만들고 사용하는 방법에 대한 자�
 
 프로필이 생성되면 아직 아무 작업도 수행하지 않습니다. 다음으로, 일부 디바이스에 [프로필을 할당](device-profile-assign.md)합니다.
 
-[Android](android-pulse-secure-per-app-vpn.md) 및 [iOS](vpn-setting-configure-per-app.md)디바이스에서 앱별 VPN을 만들고 사용할 수도 있습니다.
+[Android](android-pulse-secure-per-app-vpn.md) 및 [iOS/iPadOS](vpn-setting-configure-per-app.md) 디바이스에서 앱별 VPN을 만들고 사용할 수도 있습니다.

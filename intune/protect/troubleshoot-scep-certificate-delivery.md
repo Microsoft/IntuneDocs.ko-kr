@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77be59d126dc7e73bee468ca938938c6bb1b2e1a
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 40075ad3c90f9ce5131d88780d15eec5c258e276
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915878"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515257"
 ---
 # <a name="troubleshoot-the-delivery-of-certificates-provisioned-by-scep-to-devices-in-microsoft-intune"></a>Microsoft Intune에서 SCEP에 의해 디바이스로 프로비전되는 인증서의 배달 문제 해결
 
@@ -73,9 +73,9 @@ Android에서 설치된 인증서를 보려면 타사 인증서 보기 앱을 �
 2018-02-27T05:20:15.3520000    INFO    Event     com.microsoft.omadm.platforms.android.certmgr.state.NativeScepCertInstallStateMachine    18327       21    SCEP cert 'ModelName=AC_51…%2FLogicalName_39907…;Hash=1677525787' state changed from CERT_ACCESS_REQUESTED to CERT_ACCESS_GRANTED
 ```
 
-### <a name="ios-and-ipados"></a>iOS 및 iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
-iOS 또는 iPadOS 디바이스에서는 장치 관리 프로필 아래에서 인증서를 볼 수 있습니다. 설치된 인증서의 세부 정보를 보려면 드릴인합니다.
+iOS/iPadOS 또는 iPadOS 디바이스에서는 디바이스 관리 프로필 아래에서 인증서를 볼 수 있습니다. 설치된 인증서의 세부 정보를 보려면 드릴인합니다.
 
 ![iOS 인증서](../protect/media/troubleshoot-scep-certificate-delivery/ios-certificate.png)
 
@@ -108,7 +108,7 @@ Windows 디바이스에서 인증서가 배달되었는지 확인합니다.
 
 이 단계의 문제를 해결하려면 OMA DM 로그에 기록된 오류를 검토합니다.
 
-### <a name="ios-and-ipados"></a>iOS 및 iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
 이 단계의 문제를 해결하려면 디바이스 디버그 로그에 기록된 오류를 검토합니다.
 

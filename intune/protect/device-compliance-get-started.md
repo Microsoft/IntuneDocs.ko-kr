@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413640"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515172"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune을 사용하여 조직의 리소스 액세스를 허용하도록 디바이스에서 규칙을 설정합니다.
 
@@ -95,9 +95,9 @@ Intune에는 기본 제공 준수 정책 설정 세트도 포함됩니다. 다�
 
 
 > [!NOTE]
-> iOS 디바이스의 향상된 탈옥 검색이 Intune에서 일시적으로 사용하지 않도록 설정되었습니다.
+> iOS/iPadOS 디바이스의 향상된 무단 해제 검색이 Intune에서 일시적으로 사용할 수 없도록 설정되었습니다.
 
-- **향상된 탈옥 검색**: 이 설정을 사용하도록 지정하면 iOS 디바이스에서 Intune으로 더 자주 체크 인할 수 있습니다. 이 속성을 사용하면 디바이스의 위치 서비스를 사용하고 배터리 사용에 영향을 줍니다. 사용자 위치 데이터는 Intune에서 저장되지 않습니다.
+- **향상된 탈옥 검색**: 이 설정을 사용하도록 지정하면 iOS/iPadOS 디바이스에서 Intune으로 더 자주 체크 인할 수 있습니다. 이 속성을 사용하면 디바이스의 위치 서비스를 사용하고 배터리 사용에 영향을 줍니다. 사용자 위치 데이터는 Intune에서 저장되지 않습니다.
 
   이 설정을 사용하면 디바이스를 다음과 같이 설정해야 합니다.
   - OS 수준에서 위치 서비스를 사용하도록 설정합니다.

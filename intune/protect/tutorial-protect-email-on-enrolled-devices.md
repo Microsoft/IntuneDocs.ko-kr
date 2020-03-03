@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409934"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576278"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>자습서: 관리 디바이스에서 Exchange Online 이메일 보호
 
@@ -45,7 +45,7 @@ Intune 구독이 없으면 [평가판 계정에 등록](../fundamentals/free-tri
 
 - Exchange([평가판](https://go.microsoft.com/fwlink/p/?LinkID=510938))를 포함하는 Office 365 Business 구독
 
-시작하기 전에 [빠른 시작: iOS용 이메일 디바이스 프로필 만들기](../configuration/quickstart-email-profile.md)의 단계에 따라 iOS 디바이스의 테스트 디바이스 프로필을 만듭니다.
+시작하기 전에 [빠른 시작: iOS/iPadOS용 메일 디바이스 프로필을 만드십시오](../configuration/quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Intune에 로그인
 
@@ -162,7 +162,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
 
 ## <a name="try-it-out"></a>기능 직접 사용해 보기
 
-직접 만든 정책을 사용하면 Office 365에 로그인을 시도하는 모든 iOS 디바이스가 Intune에 등록하고 iOS용 Outlook 모바일 앱을 사용해야 합니다. iOS 디바이스에서 이 시나리오를 테스트하려면 테스트 테넌트에서 사용자의 자격 증명을 사용하여 Exchange Online에 로그인을 시도합니다. 디바이스를 등록하고 Outlook 모바일 앱을 설치하라는 메시지가 표시됩니다.
+직접 만든 정책을 사용하면 Office 365에 로그인을 시도하는 모든 iOS 디바이스가 Intune에 등록하고 iOS/iPadOS용 Outlook 모바일 앱을 사용해야 합니다. iOS 디바이스에서 이 시나리오를 테스트하려면 테스트 테넌트에서 사용자의 자격 증명을 사용하여 Exchange Online에 로그인을 시도합니다. 디바이스를 등록하고 Outlook 모바일 앱을 설치하라는 메시지가 표시됩니다.
 
 1. iPhone에서 테스트하려면 **설정** > **암호 및 계정** > **계정 추가** > **Exchange**로 이동합니다.
 

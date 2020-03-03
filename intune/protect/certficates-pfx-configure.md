@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 99983b2d2776e72232c65fcfb12d8075061d804b
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258099"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609351"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune을 사용하여 PKCS 인증서 구성 및 사용
 
@@ -66,7 +66,7 @@ Intune에서 PKCS 인증서를 사용하려면 다음 인프라가 필요합니�
   Microsoft Intune Certificate Connector는 FIPS(Federal Information Processing Standard) 모드도 지원합니다. FIPS가 필수는 아니지만, 활성화되면 인증서를 발급하고 해지할 수 있습니다.
 
 - **Microsoft Intune용 PFX 인증서 커넥터**:  
-  S/MIME 이메일 암호화를 사용하려는 경우 Intune 포털을 사용하여 PFX 인증서 가져오기를 지원하는 *PFX 인증서 커넥터*를 다운로드합니다.  **디바이스 구성** > **인증서 커넥터** > **추가**로 이동하여 *가져온 PFX 인증서용 커넥터 설치 단계*를 따릅니다. 포털의 다운로드 링크를 사용하여 설치 관리자 **PfxCertificateConnectorBootstrapper.exe**의 다운로드를 시작합니다. 
+  S/MIME 이메일 암호화를 사용하려는 경우 Intune 포털을 사용하여 PFX 인증서 가져오기를 지원하는 *PFX 인증서 커넥터*를 다운로드합니다.  **디바이스 구성** > **인증서 커넥터** > **추가**로 이동하여 *가져온 PFX 인증서용 커넥터 설치 단계*를 따릅니다. 포털의 다운로드 링크를 사용하여 설치 관리자 **PfxCertificateConnectorBootstrapper.exe**의 다운로드를 시작합니다.
 
   각 Intune 테넌트는 이 커넥터의 단일 인스턴스를 지원합니다. 이 커넥터를 Microsoft Intune Certificate Connector 인스턴스와 동일한 서버에 설치할 수 있습니다.
 
@@ -83,6 +83,8 @@ Intune에서 PKCS 인증서를 사용하려면 다음 인프라가 필요합니�
 
   - Microsoft Intune Certificate Connector - 인증 및 S/MIME 이메일 서명 시나리오에 사용됩니다.
   - PFX Certificate Connector for Microsoft Intune - S/MIME 이메일 암호화 시나리오에 사용됩니다.
+
+  커넥터를 사용하려면 [디바이스 엔드포인트 콘텐츠](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices)에 있는 관리형 디바이스에 대해 설명된 것과 동일한 포트에 대한 액세스가 필요합니다.
 
   Intune은 *PFX 인증서 커넥터*를 *Microsoft Intune Certificate Connector*와 같은 서버에 설치하는 기능을 지원합니다.
   
@@ -124,7 +126,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 9. **확장**에서 **애플리케이션 정책** 아래에 파일 시스템 암호화, 메일 보안 및 클라이언트 인증이 표시되는지 확인합니다.
 
     > [!IMPORTANT]
-    > iOS 인증서 템플릿의 경우 **확장** 탭으로 이동해서 **키 사용**을 업데이트한 다음 **서명이 원본 증명임**이 선택되지 않은 것을 확인합니다.
+    > iOS/iPadOS 인증서 템플릿의 경우 **확장** 탭으로 이동해서 **키 사용**을 업데이트한 다음, **서명이 원본 증명임**이 선택되지 않은 것을 확인합니다.
 
 10. **보안**에서 Microsoft Intune Certificate Connector를 설치할 서버의 컴퓨터 계정을 추가합니다. 이 계정에 **읽기** 및 **등록** 권한을 허용합니다.
 11. **적용** > **확인**을 선택하여 인증서 템플릿을 저장합니다. **인증서 템플릿 콘솔**을 닫습니다.
@@ -208,12 +210,13 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
    |------------|------------|------------|
    |**갱신 임계값(%)**        |<ul><li>모두         |추천되는 값은 20%입니다.  | 
    |**인증서 유효 기간**  |<ul><li>모두         |인증서 템플릿을 변경하지 않은 경우 이 옵션은 1년으로 설정할 수 있습니다. |
-   |**KSP(키 스토리지 공급자)**   |<ul><li>Windows 10  | Windows의 경우 디바이스에서 키를 저장할 위치를 선택합니다. |
+   |**KSP(키 스토리지 공급자)**   |<ul><li>Windows 10  |Windows의 경우 디바이스에서 키를 저장할 위치를 선택합니다. |
    |**인증 기관**      |<ul><li>모두         |엔터프라이즈 CA의 내부 FQDN(정규화된 도메인 이름)을 표시합니다.  |
    |**인증 기관 이름** |<ul><li>모두         |"Contoso 인증 기관"과 같은 엔터프라이즈 CA의 이름을 나열합니다. |
+   |**인증서 템플릿 이름**    |<ul><li>모두         |인증서 템플릿의 이름을 나열합니다. |
    |**인증서 유형**             |<ul><li>Android 엔터프라이즈(*회사 프로필*)</li><li>iOS</li><li>macOS</li><li>Windows 10 이상|유형 선택: <ul><li> **사용자** 인증서는 인증서의 주체와 SAN에 사용자 및 디바이스 특성을 모두 포함할 수 있습니다. </il><li>**디바이스** 인증서는 인증서의 주체와 SAN에 있는 디바이스 특성만 포함할 수 있습니다. 키오스크 또는 기타 공유 디바이스처럼 사용자가 없는 디바이스 등의 시나리오에 디바이스를 사용합니다.  <br><br> 이 선택 항목은 주체 이름 형식에 영향을 줍니다. |
-   |**주체 이름 형식**          |<ul><li>모두         |대부분의 플랫폼에서는 별도로 필요한 경우가 아니면 이 옵션을 **일반 이름**으로 설정합니다.<br><br>다음 플랫폼에서 주체 이름 형식은 인증서 유형에 따라 결정됩니다. <ul><li>Android 엔터프라이즈(*회사 프로필*)</li><li>iOS</li><li>macOS</li><li>Windows 10 이상</li></ul>  <p> 이 문서의 뒷부분에 있는 [주체 이름 형식](#subject-name-format)을 참조하세요. |
-   |**주체 대체 이름**     |<ul><li>모두         |달리 필요하지 않은 경우 이 옵션을 **UPN(사용자 계정 이름)** 으로 설정합니다. |
+   |**주체 이름 형식**          |<ul><li>모두         |주체 이름 형식을 구성하는 방법에 대한 자세한 내용은 이 문서의 뒷부분에 나오는 [주체 이름 형식](#subject-name-format)을 참조하세요.  <br><br> 대부분의 플랫폼에서는 **일반 이름** 옵션을 사용합니다. <br><br>다음 플랫폼에서 주체 이름 형식은 인증서 유형에 따라 결정됩니다. <ul><li>Android 엔터프라이즈(*회사 프로필*)</li><li>iOS</li><li>macOS</li><li>Windows 10 이상</li></ul>  <p>  |
+   |**주체 대체 이름**     |<ul><li>모두         |‘특성’의 경우 별도로 요구하지 않는 한 **UPN(사용자 계정 이름)** 을 선택하고, 해당 ‘값’을 구성한 다음, **추가**를 클릭합니다.   <br><br>자세한 내용은 이 문서의 뒷부분에 나오는 [주체 이름 형식](#subject-name-format)을 참조하세요.|
    |**확장 키 사용**           |<ul><li> Android 디바이스 관리자 </li><li>Android 엔터프라이즈(*디바이스 소유자*, *회사 프로필*) </li><li>Windows 10 |일반적으로 인증서는 사용자 또는 디바이스가 서버에 인증할 수 있는 ‘클라이언트 인증’이 필요합니다.  |
    |**모든 앱이 프라이빗 키에 액세스할 수 있도록 허용** |<ul><li>macOS  |연결된 mac 디바이스용으로 구성된 앱에 PKCS 인증서 프라이빗 키에 대한 액세스 권한을 제공하려면 **사용**으로 설정합니다. <br><br> 이 설정에 대한 자세한 내용은 Apple 개발자 설명서에서 [구성 프로필 참조](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)의 *AllowAllAppsAccess* 인증서 페이로드 섹션을 참조하세요. |
    |**루트 인증서**             |<ul><li>Android 디바이스 관리자 </li><li>Android 엔터프라이즈(*디바이스 소유자*, *회사 프로필*) |이전에 할당된 루트 CA 인증서 프로필을 선택합니다. |
@@ -284,8 +287,6 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
   > - **IMEI**, **SerialNumber** 및 **FullyQualifiedDomainName**과 같이 디바이스 인증서의 *주체* 또는 *SAN*에 사용되는 디바이스 속성은 디바이스에 대해 액세스 권한이 있는 사람이 스푸핑할 수 있는 속성입니다.
   > - 디바이스는 해당 디바이스에 설치할 해당 프로필의 인증서 프로필에 지정된 모든 변수를 지원해야 합니다.  예를 들어, SCEP 프로필의 주체 이름에 **{{IMEI}}** 가 사용되며 IMEI 번호가 없는 디바이스에 할당된 경우 프로필을 설치하지 못합니다.  
  
-
-
 ## <a name="whats-new-for-connectors"></a>커넥터의 새로운 기능
 
 두 인증서 커넥터의 업데이트가 정기적으로 릴리스됩니다. 커넥터를 업데이트할 때 여기서 변경 내용을 읽을 수 있습니다.
@@ -303,7 +304,7 @@ VPN, WiFi 또는 다른 리소스를 사용하여 디바이스를 인증하려�
 - **Microsoft Intune용 PFX 인증서 커넥터 - 버전 6.1905.0.402**  
   이 릴리스의 변경 내용:  
   - 커넥터에 대한 폴링 간격을 5분에서 30초로 줄입니다.
- 
+
 ### <a name="april-2-2019"></a>2019년 4월 2일
 
 - **Intune 인증서 커넥터 - 버전 6.1904.1.0**  

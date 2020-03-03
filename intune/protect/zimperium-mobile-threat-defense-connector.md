@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4ff350bd8c1c16eedd30a6b7af4f3927bce3c3e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508759"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515240"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune 및 Zimperium MTD(Mobile Threat Defense) 커넥터 통합
 
@@ -33,7 +33,7 @@ Intune 디바이스 규정 준수 정책을 통해 사용하도록 설정된 Zim
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune과 Zimperium이 회사 리소스를 어떻게 보호하나요?
 
-Android 및 iOS용 Zimperium 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 디바이스 및 애플리케이션 원격 분석을 캡처한 다음, 원격 분석 데이터를 Zimperium 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
+Android 및 iOS/iPadOS용 Zimperium 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 디바이스 및 애플리케이션 원격 분석을 캡처한 다음, 원격 분석 데이터를 Zimperium 클라우드 서비스로 보내 모바일 위협에 대한 디바이스의 위험을 평가합니다.
 
 Intune 디바이스 준수 정책에는 Zimperium 위험 평가에 기반한 Zimperium Mobile Threat Defense에 대한 규칙이 포함되어 있습니다. 이 규칙을 사용하면 Intune에서 디바이스가 사용되는 정책을 준수하는지를 평가합니다. 디바이스가 정책을 준수하지 않으면 Exchange Online, SharePoint Online 등의 회사 리소스에 대한 사용자의 액세스가 차단됩니다. 또한 사용자는 디바이스에 설치된 Zimperium 앱에서 지침을 받아 문제를 해결하고 회사 리소스에 대한 액세스 권한을 다시 얻을 수 있습니다.
 
@@ -71,7 +71,7 @@ Intune과 Zimperium을 통합하는 경우 아래의 몇 가지 시나리오를 
 
 ![수정 시 액세스 권한 부여됨](./media/zimperium-mobile-threat-defense-connector/network_wifi_unblocked_Zimperium.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크에 대한 위협에 따라 SharePoint Online에 대한 액세스 제어
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>네트워크 위협에 따라 SharePoint Online에 대한 액세스 제어
 
 네트워크에서 **메시지 가로채기(man-in-the-middle)** 와 같은 공격을 감지하여, 디바이스 위험에 따라 회사 파일 동기화를 금지합니다.
 

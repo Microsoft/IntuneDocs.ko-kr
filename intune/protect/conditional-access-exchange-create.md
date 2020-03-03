@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755672"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576062"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange 온-프레미스 및 레거시 Exchange Online Dedicated에 대한 조건부 액세스 정책 만들기
 
@@ -63,12 +63,12 @@ Exchange Online Dedicated 환경이 있고 신규 또는 기존 구성 상태인
 ### <a name="support-for-mobile-devices"></a>모바일 디바이스에 대한 지원
 
 - Windows Phone 8.1 이상
-- iOS의 기본 메일 앱
+- iOS/iPadOS의 기본 메일 앱
 - EAS 메일 클라이언트(예: Android 4 이상의 Gmail).
 - EAS 메일 클라이언트 **Android 회사 프로필 디바이스:** **회사 프로필**의 **Gmail** 및 **Nine Work for Android Enterprise**만 Android 회사 프로필에 대해 지원됩니다. 조건부 액세스가 Android 회사 프로필에서 작동하려면 Gmail 또는 Nine Work for Android 엔터프라이즈 앱에 대한 이메일 프로필을 배포해야 하며, 이러한 앱을 필수 설치로 배포해야 합니다.
 
 > [!NOTE]
-> Android 및 iOS용 Microsoft Outlook은 Exchange 온-프레미스 커넥터를 통해 사용할 수 없습니다. 온-프레미스 사서함에 대해 iOS 및 Android용 Outlook에서 Azure Active Directory 조건부 액세스 정책 및 Intune 앱 보호 정책을 활용하려는 경우 [iOS 및 Android용 Outlook에서 하이브리드 최신 인증 사용](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)을 참조하세요.
+> Android 및 iOS/iPadOS용 Microsoft Outlook은 Exchange 온-프레미스 커넥터를 통해 사용할 수 없습니다. 온-프레미스 사서함에 대해 iOS/iPadOS 및 Android용 Outlook에서 Azure Active Directory 조건부 액세스 정책 및 Intune 앱 보호 정책을 활용하려는 경우 [iOS/iPadOS 및 Android용 Outlook에서 하이브리드 최신 인증 사용](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)을 참조하세요.
 
 ### <a name="support-for-pcs"></a>PC 지원
 

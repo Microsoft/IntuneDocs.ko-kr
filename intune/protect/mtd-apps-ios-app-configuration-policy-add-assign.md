@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04a18befe73ce63f5619c3efc6def4189db9c8df
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: efdb1912fdbb2f28c6859fae4407116173daa99d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188477"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576297"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune을 사용하여 MTD(Mobile Threat Defense) 앱 추가 및 할당
 
@@ -203,7 +203,7 @@ Zimperium iOS 앱 구성 정책을 추가하려면 [iOS에 대해 Microsoft Intu
 
 ### <a name="pradeo-app-configuration-policy"></a>Pradeo 앱 구성 정책
 
-Pradeo는 iOS에서 애플리케이션 구성을 지원하지 않습니다.  대신, 구성된 앱을 가져오려면 Pradeo와 함께 원하는 설정으로 미리 구성된 사용자 지정 IPA 또는 APK 파일을 구현합니다.
+Pradeo는 iOS/iPadOS에서 애플리케이션 구성 정책을 지원하지 않습니다.  대신, 구성된 앱을 가져오려면 Pradeo와 함께 원하는 설정으로 미리 구성된 사용자 지정 IPA 또는 APK 파일을 구현합니다.
 
 ### <a name="better-mobile-app-configuration-policy"></a>Better Mobile 앱 구성 정책
 

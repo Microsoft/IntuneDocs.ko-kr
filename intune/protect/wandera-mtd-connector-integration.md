@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: d90e3757ced90bea21e4033b6baa93bfa201b1f2
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207471"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514220"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Intune과 Wandera Mobile Threat Protection 통합  
 
@@ -91,7 +91,7 @@ Wandera를 배포하려면 사용하는 플랫폼(iOS 및 Android)용 Wandera �
 Wandera의 이 프로세스에 관해 자세히 알아보려면 Wandera [RADAR](https://radar.wandera.com/login)에 로그인하세요. **설정** > **EMM Integration**(EMM 통합)으로 이동하고 **앱 푸시** 탭을 선택한 다음 **Microsoft Intune**을 선택합니다. 앱 푸시 탭이 Intune 관련 지침으로 업데이트됩니다.  
 
 ### <a name="add-the-wandera-apps"></a>Wandera 앱 추가  
-Android 및 iOS 디바이스에 Wandera 앱을 배포하기 위한 클라이언트 앱을 Intune에서 만듭니다. Wandera 앱과 관련된 절차와 맞춤형 세부 정보는 [Add MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md)(MTD 앱 추가)를 참조하세요.  
+Android 및 iOS/iPadOS 디바이스에 Wandera 앱을 배포하기 위한 클라이언트 앱을 Intune에서 만듭니다. Wandera 앱과 관련된 절차와 맞춤형 세부 정보는 [Add MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md)(MTD 앱 추가)를 참조하세요.  
 
 앱을 만든 후 여기로 돌아와 동기화 그룹을 만들어 앱을 할당합니다.
 
@@ -105,14 +105,14 @@ Android 및 iOS 디바이스에 Wandera 앱을 배포하기 위한 클라이언�
 
    ![동기화 그룹 구성](./media/wandera-mtd-connector-integration/configure-sync-group.png)
 
-3. **구성원**을 선택하고 Wandera에서 사용할 Android 및 iOS 디바이스를 포함하는 그룹을 할당합니다.
+3. **구성원**을 선택하고 Wandera에서 사용할 Android 및 iOS/iPadOS 디바이스를 포함하는 그룹을 할당합니다.
 
 4. **만들기**를 선택하여 그룹을 저장합니다.
 
 자세한 내용은 [앱 배포](../apps/apps-deploy.md)를 참조하세요.
 
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>동기화 그룹에 Wandera 앱 할당  
-iOS 및 Android용으로 만든 Wandera 앱에 대해 다음 절차를 반복합니다.
+iOS/iPadOS 및 Android용으로 만든 Wandera 앱에 대해 다음 절차를 반복합니다.
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **앱** > **모든 앱**을 선택하고 Wandera 앱을 선택합니다.

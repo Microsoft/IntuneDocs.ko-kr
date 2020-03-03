@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206060"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575990"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP를 사용하여 Intune에 파트너 인증 기관 추가
 
-Intune에서 타사 CA(인증 기관)를 사용합니다. 타사 CA는 SCEP(단순 인증서 등록 프로토콜)을 사용하여 새 인증서나 갱신된 인증서로 모바일 디바이스를 프로비저닝할 수 있고 Windows, iOS, Android 및 macOS 디바이스를 지원할 수 있습니다.
+Intune에서 타사 CA(인증 기관)를 사용합니다. 타사 CA는 SCEP(단순 인증서 등록 프로토콜)를 사용하여 새 인증서나 갱신된 인증서로 모바일 디바이스를 프로비저닝할 수 있고 Windows, iOS/iPadOS, Android 및 macOS 디바이스를 지원할 수 있습니다.
 
 이 기능의 사용법은 오픈 소스 API와 Intune 관리자 작업이라는 두 가지 부분으로 나뉘어 있습니다.
 

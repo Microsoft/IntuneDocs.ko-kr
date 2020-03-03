@@ -1,7 +1,7 @@
 ---
-title: macOS 디바이스 등록 - 장비 등록 프로그램 또는 Apple School Manager
+title: macOS 디바이스 등록 - Apple Business Manager 또는 Apple School Manager
 titleSuffix: ''
-description: 장비 등록 프로그램을 사용하여 회사 소유 macOS 디바이스를 등록하는 방법을 알아봅니다.
+description: 회사 소유 macOS 디바이스를 등록하는 방법을 알아봅니다.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414500"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514339"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>장비 등록 프로그램 또는 Apple School Manager를 사용하여 macOS 디바이스 자동 등록
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>Apple Business Manager 또는 Apple School Manager를 사용하여 macOS 디바이스를 자동으로 등록
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple의 [DEP(장비 등록 프로그램)](https://deploy.apple.com) 또는 [Apple School Manager](https://school.apple.com/)를 통해 구매한 macOS 디바이스에 대해 Intune 등록을 설정할 수 있습니다. 디바이스를 건드리지 않고 다수의 디바이스에서 이러한 등록 중 하나를 사용할 수 있습니다. macOS 디바이스를 직접 사용자에게 제공할 수 있습니다. 사용자가 디바이스를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 디바이스가 Intune 관리용으로 등록됩니다.
+Apple의 [Apple Business Manager](https://business.apple.com/) 또는 [Apple School Manager](https://school.apple.com/)를 통해 구매한 macOS 디바이스에 대한 Intune 등록을 설정할 수 있습니다. 디바이스를 건드리지 않고 다수의 디바이스에서 이러한 등록 중 하나를 사용할 수 있습니다. macOS 디바이스를 직접 사용자에게 제공할 수 있습니다. 사용자가 디바이스를 켜면 설정 도우미가 미리 구성된 설정을 사용하여 실행되고 디바이스가 Intune 관리용으로 등록됩니다.
 
-등록을 설정하려면 Intune과 Apple DEP 포털을 둘 다 사용합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 등록 프로필을 만듭니다.
+등록을 설정하려면 Intune과 Apple 포털을 둘 다 사용합니다. 등록 중에 디바이스에 적용된 설정을 포함하는 등록 프로필을 만듭니다.
 
-DEP 등록 및 Apple School Manager는 [디바이스 등록 관리자](device-enrollment-manager-enroll.md)와 함께 사용할 수 없습니다.
+Apple Business Manager 등록 및 Apple School Manager는 [디바이스 등록 관리자](device-enrollment-manager-enroll.md)와 함께 사용할 수 없습니다.
 
 <!--
 **Steps to enable enrollment programs from Apple**

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dae74321b6825a1b94551addfd7621450fd8ae4
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 26eb6a5cb8e7aba01ce32ab8bec8ad917604a55c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76916047"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514781"
 ---
 # <a name="troubleshoot-deployment-of-a-scep-certificate-profile-to-devices-in-microsoft-intune"></a>Microsoft Intune에서 디바이스에 SCEP 인증서 프로필 배포 문제 해결
 
@@ -59,9 +59,9 @@ Time    VERB    Event     com.microsoft.omadm.syncml.SyncmlSession     9595     
 - `ModelName=AC_51bad41f-3854-4eb5-a2f2-0f7a94034ee8%2FLogicalName_39907e78_e61b_4730_b9fa_d44a53e4111c%3BHash=-1518303401`
 - `NDESUrls&amp;gt;&amp;lt;NDESUrl&amp;gt;https://<server>-contoso.msappproxy.net/certsrv/mscep/mscep.dll&amp;lt;/NDESUrl&amp;gt;&amp;lt;/NDESUrls`
 
-## <a name="ios-and-ipados"></a>iOS 및 iPadOS
+## <a name="iosipados"></a>iOS/iPadOS
 
-### <a name="validate-that-the-ios-or-ipados-device-was-sent-the-policy"></a>iOS 또는 iPadOS 디바이스에 정책이 전송됐는지 확인
+### <a name="validate-that-the-iosipados-device-was-sent-the-policy"></a>iOS/iPadOS 디바이스에 정책이 전송됐는지 확인
 
 예상하는 디바이스에 프로필이 전송됐는지 확인하려면 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **문제 해결 + 지원** > **문제 해결**로 이동합니다.  *문제 해결* 창에서 **할당**을 **구성 프로필**로 설정한 후 다음 구성의 유효성을 검사합니다.
 

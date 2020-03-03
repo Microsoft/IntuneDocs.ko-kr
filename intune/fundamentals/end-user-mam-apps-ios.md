@@ -1,6 +1,6 @@
 ---
-title: 앱 보호 정책을 사용하는 iOS 앱
-description: 이 항목에서는 앱 보호 정책을 통해 iOS 앱이 관리될 때 예상되는 결과를 설명합니다.
+title: 앱 보호 정책을 사용하는 iOS/iPadOS 앱
+description: 이 토픽에서는 앱 보호 정책을 통해 iOS/iPadOS 앱이 관리될 때 예상되는 결과를 설명합니다.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
-ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
+ms.openlocfilehash: c854811a9deb938613af872f3cf86244ab9121b3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606624"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514662"
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황
+# <a name="what-to-expect-when-your-iosipados-app-is-managed-by-app-protection-policies"></a>iOS/iPadOS 앱이 앱 보호 정책으로 관리될 때 예상되는 상황
 
 Intune 앱 보호 정책은 직장이나 학교에서 사용하는 앱에 적용됩니다. 직원이나 학생이 개인 컨텍스트에서 앱을 사용할 경우에도 환경에 차이가 발생하지 않는다는 의미입니다. 그러나 직장이나 학교 컨텍스트에서 계정 선택, 업데이트 설정, 지원 문의 등이 표시될 수 있습니다. 이 문서에서는 Intune 보호 앱을 액세스하고 사용할 때 사용자의 환경에 대해 안내합니다.  
 
@@ -34,7 +34,7 @@ Intune 앱 보호 정책은 직장이나 학교에서 사용하는 앱에 적용
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
-<!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
+<!---  ![Screenshot of the iOS/iPadOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
 **Intune에서 관리를 위해 등록**된 디바이스의 경우 사용자에게 앱이 현재 관리되고 있다는 메시지가 표시됩니다.
 

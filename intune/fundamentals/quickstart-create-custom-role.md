@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5b38df90e47e709e02f12a6ccdab68714d04ca93
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509901"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575867"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>빠른 시작: 사용자 지정 역할 만들기 및 할당
 
@@ -77,4 +77,4 @@ Intune 구독이 없으면 [평가판 계정에 등록](free-trial-sign-up.md)�
 다음 Intune 빠른 시작을 진행하기 위해서는 아래 빠른 시작 링크를 클릭하세요.
 
 > [!div class="nextstepaction"]
-> [빠른 시작: iOS용 이메일 디바이스 프로필 만들기](../configuration/quickstart-email-profile.md)
+> [빠른 시작: iOS/iPadOS용 메일 디바이스 프로필 만들기](../configuration/quickstart-email-profile.md)

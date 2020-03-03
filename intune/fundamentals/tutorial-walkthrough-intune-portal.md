@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 203d243df3e8ae496e7ff78f20222fd361417c3d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712988"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514050"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>자습서: Azure Portal에서 Microsoft Intune 연습
 
@@ -67,7 +67,7 @@ Azure Portal에서 Intune을 더 잘 이해하려면 다음 단계를 따릅니�
     
     Intune을 사용하면 회사 데이터에 액세스하는 방법을 포함하여 직원의 디바이스 및 앱을 관리할 수 있습니다. 이 MDM(모바일 디바이스 관리) 서비스를 사용하려면 먼저 디바이스를 Intune에 등록해야 합니다. 디바이스가 등록되면 MDM 인증서가 발급됩니다. 이 인증서는 Intune 서비스와 통신하는 데 사용됩니다. 
 
-    Intune에 직원의 디바이스를 등록하는 몇 가지 방법이 있습니다. 각 방법은 디바이스의 소유권(개인 또는 회사), 기기 유형(iOS, Windows, Android) 및 관리 요구 사항(재설정, 선호도, 잠금)에 따라 다릅니다. 그러나 디바이스 등록을 활성화하기 전에 Intune 인프라를 설정해야 합니다. 특히 디바이스를 등록하려면 [MDM 기관을 설정](mdm-authority-set.md)해야 합니다. Intune 환경(테넌트)을 준비하는 방법에 대한 자세한 내용은 [Intune 설정](setup-steps.md)을 참조하세요. Intune 테넌트가 준비되면 디바이스를 등록할 수 있습니다. 디바이스 등록에 대한 자세한 내용은 [디바이스 등록이란?](../enrollment/device-enrollment.md)을 참조하세요.
+    Intune에 직원의 디바이스를 등록하는 몇 가지 방법이 있습니다. 각 방법은 디바이스의 소유권(개인 또는 회사), 디바이스 유형(iOS/iPadOS, Windows, Android) 및 관리 요구 사항(재설정, 선호도, 잠금)에 따라 다릅니다. 그러나 디바이스 등록을 활성화하기 전에 Intune 인프라를 설정해야 합니다. 특히 디바이스를 등록하려면 [MDM 기관을 설정](mdm-authority-set.md)해야 합니다. Intune 환경(테넌트)을 준비하는 방법에 대한 자세한 내용은 [Intune 설정](setup-steps.md)을 참조하세요. Intune 테넌트가 준비되면 디바이스를 등록할 수 있습니다. 디바이스 등록에 대한 자세한 내용은 [디바이스 등록이란?](../enrollment/device-enrollment.md)을 참조하세요.
 
 3. [Intune](https://aka.ms/intuneportal)에서 **디바이스 준수**를 선택하여 Intune에서 관리되는 디바이스의 규정 준수에 대한 세부 정보를 표시합니다. 다음 이미지와 비슷하게 세부 정보가 표시됩니다.
 
@@ -85,7 +85,7 @@ Azure Portal에서 Intune을 더 잘 이해하려면 다음 단계를 따릅니�
 
     ![디바이스 구성 창 스크린샷](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    Intune은 조직 내의 다른 디바이스에서 사용하거나 사용하지 않게 할 수 있는 설정 및 기능을 포함합니다. 이러한 설정 및 기능을 "구성 프로필"에 추가합니다. iOS, Android 및 Windows를 포함하여 다양한 디바이스 및 플랫폼에 대한 프로필을 만들 수 있습니다. 그런 다음, Intune을 사용하여 조직의 디바이스에 프로필을 적용할 수 있습니다.   
+    Intune은 조직 내의 다른 디바이스에서 사용하거나 사용하지 않게 할 수 있는 설정 및 기능을 포함합니다. 이러한 설정 및 기능을 "구성 프로필"에 추가합니다. iOS/iPadOS, Android 및 Windows를 포함하여 다양한 디바이스 및 플랫폼에 대한 프로필을 만들 수 있습니다. 그런 다음, Intune을 사용하여 조직의 디바이스에 프로필을 적용할 수 있습니다.   
 
     디바이스 구성에 대한 자세한 내용은 [Microsoft Intune에서 디바이스 프로필을 사용하여 디바이스에서 기능 설정 적용](../configuration/device-profiles.md)을 참조하세요.
 

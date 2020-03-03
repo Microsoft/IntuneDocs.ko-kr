@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azur에서 사용자 지정 디바이스 설정 사용 | Microsoft Docs
-description: Microsoft Intune을 사용하여 Windows Phone, Windows 8.1, Windows 10 이상, Android, Android 엔터프라이즈, macOS 및 iOS 디바이스에 대한 사용자 지정 설정을 사용할 프로필 추가 또는 만들기
+description: Microsoft Intune을 사용하여 Windows Phone, Windows 8.1, Windows 10 이상, Android, Android 엔터프라이즈, macOS 및 iOS/iPadOS 디바이스에 대한 사용자 지정 설정을 사용할 프로필 추가 또는 만들기
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,22 +15,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c815a2c911dba6d17fc864b446122931fa88e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d2ca5a120e50819208743564279a5d16c6b4aa2f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73755388"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511517"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune에서 사용자 지정 설정을 사용하여 프로필 만들기
 
 ## <a name="what-are-custom-profiles"></a>사용자 지정 프로필이란
 
-Microsoft Intune에는 디바이스의 여러 기능을 제어하는 많은 기본 제공 설정이 있습니다. 사용자 지정 프로필을 만들 수도 있습니다. 사용자 지정 프로필은 Intune에 기본 제공되지 않은 디바이스 설정 및 기능을 사용하려는 경우 유용합니다. 이러한 프로필에는 조직에서 디바이스를 제어하기 위한 기능과 설정이 있습니다. 예를 들어, 모든 iOS 디바이스에 동일한 기능을 설정하는 사용자 지정 프로필을 만들 수 있습니다.
+Microsoft Intune에는 디바이스의 여러 기능을 제어하는 많은 기본 제공 설정이 있습니다. 사용자 지정 프로필을 만들 수도 있습니다. 사용자 지정 프로필은 Intune에 기본 제공되지 않은 디바이스 설정 및 기능을 사용하려는 경우 유용합니다. 이러한 프로필에는 조직에서 디바이스를 제어하기 위한 기능과 설정이 있습니다. 예를 들어 모든 iOS/iPadOS 디바이스에 동일한 기능을 설정하는 사용자 지정 프로필을 만들 수 있습니다.
 
 구성 프로필에 대한 자세한 내용은 [Microsoft Intune 디바이스 프로필이란?](device-profiles.md)을 참조하세요. 
 
-이 문서에는 Android, Android 엔터프라이즈, iOS, macOS 및 Windows에 대한 사용자 지정 프로필을 만드는 데 필요한 링크가 있습니다.
+이 문서에는 Android, Android 엔터프라이즈, iOS/iPadOS, macOS 및 Windows에 대한 사용자 지정 프로필을 만드는 데 필요한 링크가 있습니다.
 
 ## <a name="available-platforms"></a>사용 가능한 플랫폼
 

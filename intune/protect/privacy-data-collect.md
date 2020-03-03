@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509074"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514237"
 ---
 # <a name="data-collection-in-intune"></a>Intune에서 데이터 수집
 
@@ -112,7 +112,7 @@ Intune에서 수집되는 가명 처리된 데이터는 다음을 포함할 수 
   - 계정 ID
   - EAS 디바이스 ID
   - 플랫폼별 ID
-  - iOS 디바이스용 AppleID
+  - iOS/iPadOS 디바이스용 AppleID
   - Mac 디바이스용 Mac 주소
   - Windows 디바이스용 Windows ID
 - 관리되는 애플리케이션 정보

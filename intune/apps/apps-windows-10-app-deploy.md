@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 7251a2db0c36db9d01e51ca8fc62bd4e072d80e6
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912560"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609217"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 앱 배포 
 
@@ -44,18 +44,19 @@ Microsoft Intune은 Windows 10 디바이스에서 다양한 앱 형식 및 배�
 
 사용자가 실행하는 Windows 10 버전에 따라 지원되는 구체적인 앱 유형이 달라집니다. 다음 표에는 앱 유형 및 Windows 10 지원 가능성이 나와 있습니다.
 
-| 앱 유형 | 홈 | Pro | 비즈니스 | Enterprise | 교육 | S-모드 | Hololense | SurfaceHub | WCOS | 휴대폰 |
+| 앱 유형 | 홈 | Pro | 비즈니스 | Enterprise | 교육 | S-모드 | HoloLens<sup>1 | Surface Hub | WCOS | 휴대폰 |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  .MSI | 아니요 | 예 | 예 | 예 | 예 | 아니요 | 아니요 | 아니요 | 아니요 | 아니요 |
 | .IntuneWin | 아니요 | 예 | 예 | 예 | 예 | 19H2+ | 아니요 | 아니요 | 아니요 | 아니요 |
-| Office C2R | 아니요 | 예 | 예 | 예 | 예 | 아니요 | 아니요 | 아니요 | 아니요 | 아니요 |
+| Office C2R | 아니요 | 예 | 예 | 예 | 예 | RS4+ | 아니요 | 아니요 | 아니요 | 아니요 |
 | LOB: APPX/MSIX | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 |
 | MSFB 오프라인 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 |
-| MSFB 온라인 | 예 | 예 | 예 | 예 | 예 | 예 | RS4+ | 예 | 예 | 예 |
-| Web Apps | 예 | 예 | 예 | 예 | 예 | 예 | 예<sup>1 | 예<sup>1 | 예 | 예 |
+| MSFB 온라인 | 예 | 예 | 예 | 예 | 예 | 예 | RS4+ | 아니요 | 예 | 예 |
+| Web Apps | 예 | 예 | 예 | 예 | 예 | 예 | 예<sup>2 | 예<sup>2 | 예 | 예<sup>2 |
 | Store 링크 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 | 예 |
 
-<sup>1</sup> 회사 포털에서만 시작합니다.
+<sup>1</sup> 앱 관리의 잠금을 해제하려면 HoloLens 디바이스를 [Holographic for Business](../fundamentals/windows-holographic-for-business.md)로 업그레이드합니다.<br />
+<sup>2</sup> 회사 포털에서만 시작합니다.
 
 > [!NOTE]
 > 모든 Windows 앱 유형은 등록이 필요합니다.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206672"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511432"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필 만들기
 
@@ -87,7 +87,7 @@ ms.locfileid: "75206672"
 
      예를 들어 플랫폼에 **iOS/iPadOS**를 선택하는 경우 프로필 유형 옵션은 다음 프로필과 비슷하게 표시됩니다.
 
-     ![Intune에서 iOS 프로필 만들기](./media/device-profile-create/create-device-profile.png)
+     ![Intune에서 iOS/iPadOS 프로필 만들기](./media/device-profile-create/create-device-profile.png)
 
 4. 완료되면 **확인** > **만들기**를 선택하여 변경 내용을 저장합니다. 프로필이 만들어지고 목록에 표시됩니다.
 
@@ -171,10 +171,10 @@ Intune은 다양한 새로 고침 주기를 사용하여 구성 프로필에 대
   **프로필 이름**: 관리 템플릿 - 모든 Windows 10 사용자를 위한 OneDrive 구성 프로필  
   **프로필 설명**: 모든 Windows 10 사용자에 대한 최소 및 기본 설정이 포함된 OneDrive 관리 템플릿 프로필입니다. 사용자가 조직 데이터를 개인 OneDrive 계정과 공유하지 못하도록 하기 위해 user@contoso.com에서 생성합니다.
 
-  **프로필 이름**: 모든 iOS 사용자의 VPN 프로필  
-  **프로필 설명**: 모든 iOS 사용자가 Contoso VPN에 연결하는 데 필요한 최소 및 기본 설정이 포함된 VPN 프로필입니다. 사용자 이름과 암호를 묻는 메시지를 표시하는 대신, 사용자가 VPN에서 자동으로 인증되도록 하기 위해 user@contoso.com에서 생성합니다.
+  **프로필 이름**: 모든 iOS/iPadOS 사용자의 VPN 프로필  
+  **프로필 설명**: 모든 iOS/iPadOS 사용자가 Contoso VPN에 연결하는 데 필요한 최소 및 기본 설정이 포함된 VPN 프로필입니다. 사용자 이름과 암호를 묻는 메시지를 표시하는 대신, 사용자가 VPN에서 자동으로 인증되도록 하기 위해 user@contoso.com에서 생성합니다.
 
-- Microsoft Edge 설정 구성, Microsoft Defender 바이러스 백신 설정 사용, iOS 탈 옥 디바이스 차단 등의 작업에 따라 프로필을 만듭니다.
+- Microsoft Edge 설정 구성, Microsoft Defender 바이러스 백신 설정 사용, iOS/iPadOS 무단 해제된 디바이스 차단과 같은 작업을 통해 프로필을 만듭니다.
 
 - 마케팅, 영업, IT 관리자, 위치 또는 학교 시스템 등의 특정 그룹에 적용되는 프로필을 만듭니다.
 

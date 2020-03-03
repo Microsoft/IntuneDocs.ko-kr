@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886734"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514968"
 ---
 # <a name="create-a-design"></a>설계 만들기
 
@@ -188,7 +188,7 @@ Intune에서 VPN, Wi-Fi 또는 메일 프로필과 함께 인증서를 사용할
 
 ### <a name="determine-supported-device-platforms"></a>지원되는 디바이스 플랫폼 확인
 
-환경에서 사용할 디바이스를 알아야 하며, 설계를 만들 때 Intune에서 해당 디바이스를 지원하는지 여부를 확인해야 합니다. Intune은 iOS, Android 및 Windows 플랫폼을 지원합니다.
+환경에서 사용할 디바이스를 알아야 하며, 설계를 만들 때 Intune에서 해당 디바이스를 지원하는지 여부를 확인해야 합니다. Intune은 iOS/iPadOS, Android 및 Windows 플랫폼을 지원합니다.
 
 [Intune 지원 디바이스의 전체 목록](supported-devices-browsers.md).
 
@@ -296,8 +296,8 @@ Intune에서는 회사 소유 디바이스 및 개인 디바이스를 모두 지
 
 | **유형** | **프로필 이름** | **디바이스 플랫폼** | **사용 사례** |   
 |:---:|:---:|:---:|:---:|
-| 루트 CA | 회사 루트 CA | Android, iOS, Windows Mobile | 회사, BYOD  |                                                           
-| SCEP | 사용자 인증서 | Android, iOS, Windows Mobile | 회사, BYOD |                                                           
+| 루트 CA | 회사 루트 CA | Android, iOS/iPadOS, Windows Mobile | 회사, BYOD  |                                                           
+| SCEP | 사용자 인증서 | Android, iOS/iPadOS, Windows Mobile | 회사, BYOD |                                                           
 
 
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 인증서 프로필 요구 사항을 파악합니다.
@@ -311,7 +311,7 @@ Wi-Fi 프로필은 모바일 디바이스를 무선 네트워크에 자동으로
 | **유형** | **프로필 이름** | **디바이스 플랫폼** | **사용 사례** |
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | 아시아 Wi-Fi 프로필 | Android | 회사, BYOD 아시아 지역|
-| Wi-Fi | 북아메리카 Wi-Fi 프로필 | Android, iOS, Windows 10 Mobile | 회사, BYOD 북아메리카 지역 |
+| Wi-Fi | 북아메리카 Wi-Fi 프로필 | Android, iOS/iPadOS, Windows 10 Mobile | 회사, BYOD 북아메리카 지역 |
 
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 Wi-Fi 프로필 요구 사항을 파악합니다.
 
@@ -323,7 +323,7 @@ VPN 프로필을 통해 사용자가 원격 위치에서 네트워크에 안전�
 
 | **유형** | **프로필 이름** | **디바이스 플랫폼** | **사용 사례** |
 |:---:|:---:|:---:|:---:|
-| VPN | VPN Cisco의 모든 연결 프로필 | Android, iOS, Windows 10 Mobile | 회사, BYOD 북아메리카 및 독일|
+| VPN | VPN Cisco의 모든 연결 프로필 | Android, iOS/iPadOS, Windows 10 Mobile | 회사, BYOD 북아메리카 및 독일|
 | VPN | Pulse Secure | Android | 회사, BYOD 아시아 지역 |
 
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 VPN 프로필 요구 사항을 파악합니다.
@@ -374,7 +374,7 @@ Intune을 사용하여 여러 방법으로 사용자 또는 디바이스에 앱�
 | **애플리케이션** | **용도** | **플랫폼** | **사용 사례** | **앱 보호 정책** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | 사용 가능 | iOS | 회사 - 임원 | 무단 해제할 수 없음, 파일 암호화 |                                                         
-| Word | 사용 가능 | iOS, Android - Samsung Knox, 비 Knox, Windows 10 Mobile | 회사, BYOD | 무단 해제할 수 없음, 파일 암호화 |                                                         
+| Word | 사용 가능 | iOS/iPadOS, Android - Samsung Knox, 비 Knox, Windows 10 Mobile | 회사, BYOD | 무단 해제할 수 없음, 파일 암호화 |                                                         
 
 
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 앱 보호 정책 요구 사항을 파악할 수 있습니다.
@@ -388,7 +388,7 @@ Intune을 사용하여 여러 방법으로 사용자 또는 디바이스에 앱�
 
 | **정책 이름** | **디바이스 플랫폼** | **설정** | **대상 그룹** |
 |:---:|:---:|:---:|:---:|
-| 준수 정책 | iOS, Android - Samsung Knox, 비 Knox, Windows 10 Mobile | PIN - 필수, 무단 해제할 수 없음 | 회사, BYOD |
+| 준수 정책 | iOS/iPadOS, Android - Samsung Knox, 비 Knox, Windows 10 Mobile | PIN - 필수, 무단 해제할 수 없음 | 회사, BYOD |
 
 
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 준수 정책 요구 사항을 파악할 수 있습니다.
@@ -404,8 +404,8 @@ Intune을 사용하여 여러 방법으로 사용자 또는 디바이스에 앱�
 
 | **서비스** | **최신 인증용 플랫폼** | **기본 인증** | **사용 사례** |
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS, Android | Intune에서 지원하는 플랫폼에서 비규격 디바이스 차단 | 회사, BYOD |
-| SharePoint Online | iOS, Android |  | 회사, BYOD |
+| Exchange Online | iOS/iPadOS, Android | Intune에서 지원하는 플랫폼에서 비규격 디바이스 차단 | 회사, BYOD |
+| SharePoint Online | iOS/iPadOS, Android |  | 회사, BYOD |
 
 [위 표의 템플릿을 다운로드](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)하여 조건부 액세스 정책 요구 사항을 파악할 수 있습니다.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 191be009f8d9e6fc448126834ef48f0bc6e2edc4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c8e4671790b72583219f1df64a0ef3491d707ea7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505333"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515036"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune에 마이그레이션할 때 디바이스 준수 및 앱 관리 정책 구성
 
@@ -60,11 +60,11 @@ Intune으로 마이그레이션할 때 주요 목표는 모든 디바이스를 I
 
 디바이스 수준 설정을 적용할 디바이스 구성 프로필(예: 카메라 사용 안 함, 앱 스토어, 단일 앱 모드 구성, 홈 화면 등)을 만들어야 합니다. [디바이스 프로필](../configuration/device-profiles.md)에 대해 자세히 알아보세요.
 
-#### <a name="directly-import-ios-configuration-profiles-optional"></a>iOS 구성 프로필 직접 가져오기(선택 사항)
+#### <a name="directly-import-iosipados-configuration-profiles-optional"></a>iOS/iPadOS 구성 프로필 직접 가져오기(선택 사항)
 
 - **Apple Configurator iOS 프로필(iOS 7.1 이상):** 기존 MDM 솔루션에서 Apple Configurator 프로필(.mobileconfig 파일)을 사용하는 경우 Intune에서 해당 프로필을 사용자 지정 구성 정책으로 직접 가져올 수 있습니다.
 
-- **iOS 모바일 애플리케이션 구성 정책:** 기존 MDM 솔루션에서 iOS 모바일 애플리케이션 구성 정책을 사용하는 경우 해당 정책이 Apple에서 속성 목록에 대해 지정한 XML 형식을 충족하는 한 Intune에서 이 정책을 직접 가져올 수 있습니다.
+- **iOS 모바일 애플리케이션 구성 정책:** 기존 MDM 솔루션에서 iOS/iPadOS 모바일 애플리케이션 구성 정책을 사용하는 경우 해당 정책이 Apple에서 속성 목록에 대해 지정한 XML 형식을 충족하는 한 Intune에서 이 정책을 직접 가져올 수 있습니다.
 
 - [iOS](../configuration/custom-settings-ios.md) 사용자 지정 정책을 추가하는 방법에 대해 알아보세요.
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 서비스 설명
-description: Microsoft Intune은 Windows, iOS, Mac OS X, Android 및 Windows 모바일 디바이스를 관리하는 데 유용한 클라우드 기반 서비스입니다.
+description: Microsoft Intune은 Windows, iOS/iPadOS, Mac OS X, Android 및 Windows 모바일 디바이스를 관리하는 데 유용한 클라우드 기반 서비스입니다.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7744fe217f39436e91f90fdf567f469c01986da4
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 2b65276ed2da827017406c67838afd89a766b2dc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885647"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515070"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 서비스 설명
 

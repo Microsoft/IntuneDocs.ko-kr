@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912661"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511857"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune을 사용하여 그룹에 앱 할당
 
@@ -49,7 +49,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
 | 최종 사용자가 웹 기반 회사 포털에서 사용 가능한 앱 설치 | 예 | 예 |
 
 > [!NOTE]
-> 현재 Intune에 등록되지 않은 디바이스에 iOS 및 Android 앱(사업 부문 및 스토어 구매 앱)을 할당할 수 있습니다.
+> 현재 Intune에 등록되지 않은 디바이스에 iOS/iPadOS 및 Android 앱(사업 부문 및 스토어 구매 앱)을 할당할 수 있습니다.
 >
 > Intune에 등록되지 않은 디바이스에 앱 업데이트를 받으려면 디바이스 사용자는 조직의 회사 포털로 이동해 수동으로 앱 업데이트를 설치해야 합니다.
 
@@ -67,9 +67,9 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
    - **제거**: 이전에 Intune에서 “등록된 디바이스에 사용 가능”을 통해 또는 동일한 배포를 사용하여 “필수” 할당을 통해 디바이스에 애플리케이션을 설치한 경우 앱이 선택한 그룹의 디바이스에서 제거됩니다. 배포 후에는 웹 링크를 제거할 수 없습니다.
 
      > [!NOTE]
-     > **iOS 앱 전용**:
-     > - 디바이스가 더 이상 관리되지 않을 때 관리되는 앱에 수행되는 작업을 구성하려면 **디바이스 제거 시 제거** 아래에서 원하는 설정을 선택할 수 있습니다. 자세한 내용은 [iOS 관리되는 앱의 앱 제거 설정](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps)을 참조하세요.
-     > - 앱당 VPN 설정을 포함하는 iOS VPN 프로필을 만든 경우 **VPN**에서 VPN 프로필을 선택할 수 있습니다. 앱을 실행하면 VPN 연결이 열립니다. 자세한 내용은 [iOS 디바이스의 VPN 설정](../vpn-settings-ios.md)을 참조하세요.
+     > **iOS/iPadOS 앱 전용**:
+     > - 디바이스가 더 이상 관리되지 않을 때 관리되는 앱에 수행되는 작업을 구성하려면 **디바이스 제거 시 제거** 아래에서 원하는 설정을 선택할 수 있습니다. 자세한 내용은 [iOS/iPadOS 관리형 앱의 앱 제거 설정](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps)을 참조하세요.
+     > - 앱당 VPN 설정을 포함하는 iOS/iPadOS VPN 프로필을 만든 경우 **VPN**에서 VPN 프로필을 선택할 수 있습니다. 앱을 실행하면 VPN 연결이 열립니다. 자세한 내용은 [iOS/iPadOS 디바이스의 VPN 설정](../vpn-settings-ios.md)을 참조하세요.
      >
      > **Android 앱 전용**: **등록 여부에 상관없이 사용 가능**으로 Android 앱을 배포하는 경우, 보고 상태는 등록된 디바이스에서만 사용할 수 있습니다.
      >
@@ -114,7 +114,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
 
 > [!NOTE]
 > 관리되는 iOS 스토어 앱의 경우에만 이러한 앱을 Microsoft Intune에 추가하고 **필수**로 할당할 때 앱은 **필수** 및 **사용 가능** 의도로 자동으로 생성됩니다.<br><br>
-> 의도적인 대상으로 지정된 iOS 스토어 앱(iOS VPP 앱이 아님)은 디바이스 체크 인 시 디바이스에 적용되며 회사 포털 앱에도 표시됩니다.<br><br>
+> 의도적인 대상으로 지정된 iOS 스토어 앱(iOS/iPadOS VPP 앱이 아님)은 디바이스 체크 인 시 디바이스에 적용되며 회사 포털 앱에도 표시됩니다.<br><br>
 > **디바이스 제거 시 제거** 설정에서 충돌이 발생하는 경우 디바이스가 더 이상 관리되지 않으면 앱이 디바이스에서 제거되지 않습니다.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>관리되지 않는 디바이스에 관리되는 Google Play 앱 배포
@@ -132,7 +132,7 @@ Microsoft Intune에 [앱이 추가](apps-add.md)되면 사용자와 디바이스
 Intune 콘솔에서 APP 선택적 초기화가 실행되면, 회사 계정은 Play 스토어 앱에서 자동으로 제거되고 최종 사용자는 이때부터 더 이상 Play 스토어 앱 카탈로그에서 회사 앱을 볼 수 없습니다. 회사 계정이 디바이스에서 제거되는 경우에도 Play 스토어에서 설치된 앱은 디바이스에 설치되어 있고, 제거되지 않습니다. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>iOS 관리되는 앱의 앱 제거 설정
-iOS 디바이스의 경우 Intune에서 디바이스를 등록 취소하거나 **디바이스 제거 시 제거** 설정을 사용하여 관리 프로필을 제거할 때 관리되는 앱에 수행되는 작업을 선택할 수 있습니다. 이 설정은 디바이스가 등록되고 앱이 관리되는 앱으로 설치된 후에만 앱에 적용됩니다. 웹 앱 또는 웹 링크에는 이 설정을 구성할 수 없습니다. 앱 선택적 초기화에 의한 사용 중지 후 MAM(모바일 응용 프로그램 관리)으로 보호되는 데이터만 제거됩니다.
+iOS/iPadOS 디바이스의 경우 Intune에서 디바이스를 등록 취소하거나 **디바이스 제거 시 제거** 설정을 사용하여 관리 프로필을 제거할 때 관리형 앱에 수행되는 작업을 선택할 수 있습니다. 이 설정은 디바이스가 등록되고 앱이 관리되는 앱으로 설치된 후에만 앱에 적용됩니다. 웹 앱 또는 웹 링크에는 이 설정을 구성할 수 없습니다. 앱 선택적 초기화에 의한 사용 중지 후 MAM(모바일 응용 프로그램 관리)으로 보호되는 데이터만 제거됩니다.
 
 새 할당의 경우 다음과 같이 설정의 기본값이 미리 채워집니다.
 

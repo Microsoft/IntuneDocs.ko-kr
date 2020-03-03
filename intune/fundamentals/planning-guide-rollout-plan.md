@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509955"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514917"
 ---
 # <a name="develop-a-rollout-plan"></a>출시 계획 개발
 
@@ -58,7 +58,7 @@ ms.locfileid: "72509955"
 
 - **지리적 위치** <br/>이 방식을 사용하는 경우에는 동일한 대륙, 국가/지역 또는 동일한 회사의 건물과 같은 특정 지리적 위치의 모든 사용자에게 솔루션을 배포합니다. 이 유형의 단계적 배포를 통해 사용자의 특정 위치에 솔루션을 중점적으로 배포할 수 있습니다. 따라서 동시에 Intune을 배포하는 위치의 수가 줄어들므로 더 많은 [화이트 글러브](#user-assisted-enrollment) 접근 방식을 제공할 수 있습니다. 동일한 위치에 다양한 부서 또는 사용 사례가 있을 수 있으므로 동시에 다양한 사용 사례를 배포하게 될 수 있습니다.
 
-- **플랫폼** <br/>이 유형의 배포에서는 동시에 비슷한 플랫폼을 배포하게 됩니다. 첫 달에 모든 iOS 디바이스를 배포하고 다음 달에 Android, Windows 디바이스를 차례로 배포하는 경우를 예로 들 수 있습니다. 이 유형의 단계별 배포를 진행하면 기술 지원팀이 한 번에 하나의 플랫폼만 지원하면 되므로 지원을 손쉽게 제공할 수 있습니다.
+- **플랫폼** <br/>이 유형의 배포에서는 동시에 비슷한 플랫폼을 배포하게 됩니다. 첫 달에 모든 iOS/iPadOS 디바이스를 배포하고 다음 달에 Android, Windows 디바이스를 차례로 배포하는 경우를 예로 들 수 있습니다. 이 유형의 단계별 배포를 진행하면 기술 지원팀이 한 번에 하나의 플랫폼만 지원하면 되므로 지원을 손쉽게 제공할 수 있습니다.
 
 다음은 대상 그룹 및 타임라인이 포함된 Intune 출시 계획의 예입니다.
 

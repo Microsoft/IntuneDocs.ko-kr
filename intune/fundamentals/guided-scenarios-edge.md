@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88beb8f4791c127b0a225878f5bc43b6dd9b4025
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 9afb8f431ae301fe74f420c11205a7ed2637434b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839370"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514628"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>단계별 시나리오 - 모바일용 Microsoft Edge 배포 
 
-이 [단계별 시나리오](~/fundamentals/guided-scenarios-overview.md)에 따라 조직의 iOS 또는 Android 디바이스에서 사용자에게 Microsoft Edge 앱을 할당할 수 있습니다. 이 앱을 할당하면 사용자가 회사 디바이스를 사용하여 콘텐츠를 원활하게 찾아볼 수 있습니다. 
+이 [단계별 시나리오](~/fundamentals/guided-scenarios-overview.md)에 따라 조직의 iOS/iPadOS 또는 Android 디바이스에서 사용자에게 Microsoft Edge 앱을 할당할 수 있습니다. 이 앱을 할당하면 사용자가 회사 디바이스를 사용하여 콘텐츠를 원활하게 찾아볼 수 있습니다. 
 
-Microsoft Edge를 사용하면 사용자가 작업 콘텐츠를 통합, 정렬 및 관리하는 데 도움이 되는 기본 제공 기능으로 웹의 혼란을 줄일 수 있습니다. Microsoft Edge 애플리케이션에서 회사 Azure AD 계정으로 로그인하는 iOS 및 Android 디바이스 사용자는 정의되는 작업 공간 **즐겨찾기** 및 웹 사이트 필터를 사용하여 미리 로드된 브라우저를 찾습니다.
+Microsoft Edge를 사용하면 사용자가 작업 콘텐츠를 통합, 정렬 및 관리하는 데 도움이 되는 기본 제공 기능으로 웹의 혼란을 줄일 수 있습니다. Microsoft Edge 애플리케이션에서 회사 Azure AD 계정으로 로그인하는 iOS/iPadOS 및 Android 디바이스 사용자는 정의되는 작업 공간 **즐겨찾기** 및 웹 사이트 필터를 사용하여 미리 로드된 브라우저를 찾습니다.
 
 > [!NOTE]
-> 사용자가 iOS 또는 Android 디바이스를 등록하는 것을 차단한 경우 이 시나리오에서는 등록을 사용할 수 없으며 사용자는 직접 Edge를 설치해야 합니다.
+> 사용자가 iOS/iPadOS 또는 Android 디바이스를 등록하는 것을 차단한 경우 이 시나리오에서는 등록을 사용할 수 없으며 사용자는 직접 Edge를 설치해야 합니다.
 Intune 정책을 통해 사용할 수 있는 Microsoft Edge 엔터프라이즈 기능은 다음과 같습니다. 
 
 - **이중 ID** - 사용자는 검색을 위해 회사 계정뿐 아니라 개인 계정을 추가할 수 있습니다. Office 365 및 Outlook의 아키텍처 및 환경과 비슷한 두 ID는 완전히 분리됩니다. Intune 관리자는 회사 계정 내에서 보호된 검색 환경에 대해 원하는 정책을 설정할 수 있습니다. 
@@ -49,9 +49,9 @@ Intune 정책을 통해 사용할 수 있는 Microsoft Edge 엔터프라이즈 �
 
 ## <a name="step-1---introduction"></a>1단계 - 소개
 
-**모바일용 Microsoft Edge 배포** 단계별 시나리오에 따라 선택된 iOS 및 Android 사용자 그룹을 위해 기본 Microsoft Edge 배포를 설정합니다. 이 배포에서는 **이중 ID** 및 **관리형 즐겨찾기 및 홈페이지 바로 가기**를 구현합니다. 또한 선택된 사용자가 등록한 디바이스에는 Intune을 통해 Microsoft Edge 앱이 자동으로 설치됩니다. 이 자동 설치는 다음을 포함한 모든 사용자 기반 등록 유형에서 수행됩니다. 
-- 회사 포털 앱을 통한 iOS 등록 
-- Apple Business Manager를 통한 iOS 사용자 선호도 등록 
+**모바일용 Microsoft Edge 배포** 단계별 시나리오에 따라 선택된 iOS/iPadOS 및 Android 사용자 그룹을 위해 기본 Microsoft Edge 배포를 설정합니다. 이 배포에서는 **이중 ID** 및 **관리형 즐겨찾기 및 홈페이지 바로 가기**를 구현합니다. 또한 선택된 사용자가 등록한 디바이스에는 Intune을 통해 Microsoft Edge 앱이 자동으로 설치됩니다. 이 자동 설치는 다음을 포함한 모든 사용자 기반 등록 유형에서 수행됩니다. 
+- 회사 포털 앱을 통한 iOS/iPadOS 등록 
+- Apple Business Manager를 통한 iOS/iPadOS 사용자 선호도 등록 
 - 회사 포털 앱을 통한 레거시 Android 등록 
 
 이 단계별 시나리오에서는 Microsoft Edge 즐겨찾기에 표시되는 **MyApps**를 자동으로 사용하도록 설정하고 Intune 회사 포털 앱에 대해 설정한 것과 동일한 브랜딩을 사용하여 브라우저를 구성합니다. 
@@ -60,13 +60,13 @@ Intune 정책을 통해 사용할 수 있는 Microsoft Edge 엔터프라이즈 �
 사용자에게 필요한 작업 공간 즐겨찾기 및 웹 브라우징에 필요한 필터에 대해 질문합니다. 계속하기 전에 다음 작업을 완료했는지 확인합니다.
 
 - Azure AD 그룹에 사용자를 추가합니다. 자세한 내용은 [Create a basic group and add members using Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=2102458)(Azure Active Directory를 사용하여 기본 그룹 만들기 및 멤버 추가)를 참조하세요.
-- Intune에서 iOS 또는 Android 디바이스를 등록합니다. 자세한 내용은 [디바이스 등록](https://go.microsoft.com/fwlink/?linkid=2102547)을 참조하세요.
+- Intune에서 iOS/iPadOS 또는 Android 디바이스를 등록합니다. 자세한 내용은 [디바이스 등록](https://go.microsoft.com/fwlink/?linkid=2102547)을 참조하세요.
 - Microsoft Edge에서 추가할 작업 공간 즐겨찾기 목록을 수집합니다.
 - Microsoft Edge에서 적용할 웹 사이트 필터 목록을 수집합니다.
 
 ## <a name="step-2---basics"></a>2단계 - 기본 사항
 
-이 단계에서는 새 Microsoft Edge 정책의 이름 및 설명을 입력해야 합니다. 할당 및 구성을 변경해야 하는 경우 나중에 이 정책을 참조할 수 있습니다. 이 단계별 시나리오에서는 iOS 디바이스용 Microsoft Edge iOS 앱과 Android 디바이스용 Microsoft Edge Android 앱을 둘 다 추가하고 할당합니다. 또한 이 단계에서는 이 앱에 대한 구성 정책을 만듭니다.
+이 단계에서는 새 Microsoft Edge 정책의 이름 및 설명을 입력해야 합니다. 할당 및 구성을 변경해야 하는 경우 나중에 이 정책을 참조할 수 있습니다. 이 단계별 시나리오에서는 iOS/iPadOS 디바이스용 Microsoft Edge iOS/iPadOS 앱과 Android 디바이스용 Microsoft Edge Android 앱을 둘 다 추가하고 할당합니다. 또한 이 단계에서는 이 앱에 대한 구성 정책을 만듭니다.
 
 ## <a name="step-3---configuration"></a>3단계 - 구성
 
@@ -74,7 +74,7 @@ Intune 정책을 통해 사용할 수 있는 Microsoft Edge 엔터프라이즈 �
 
 ## <a name="step-4---assignments"></a>4단계 - 할당
 
-이 단계에서는 Microsoft Edge 모바일을 작업용으로 구성하도록 포함하려는 사용자 그룹을 선택할 수 있습니다. 또한 Microsoft Edge는 이 사용자가 등록한 모든 iOS 및 Android 디바이스에 설치됩니다.
+이 단계에서는 Microsoft Edge 모바일을 작업용으로 구성하도록 포함하려는 사용자 그룹을 선택할 수 있습니다. 또한 Microsoft Edge는 이 사용자가 등록한 모든 iOS/iPadOS 및 Android 디바이스에 설치됩니다.
 
 ## <a name="step-5---review--create"></a>5단계 - 검토 + 만들기
 

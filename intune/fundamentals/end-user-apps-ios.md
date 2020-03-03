@@ -1,6 +1,6 @@
 ---
-title: iOS 사용자가 앱을 얻는 방법
-description: 최종 사용자에게 iOS 앱을 제공하기 위한 방법
+title: iOS/iPadOS 사용자가 앱을 얻는 방법
+description: 최종 사용자에게 iOS/iPadOS 앱을 제공하기 위한 방법
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 344c2e3f3ed53852aa6b749c9ebf6d451dd313ff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73413987"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514390"
 ---
-# <a name="how-your-ios-users-get-their-apps"></a>iOS 사용자가 앱을 얻는 방법
+# <a name="how-your-iosipados-users-get-their-apps"></a>iOS/iPadOS 사용자가 앱을 얻는 방법
 
 이 정보를 사용하여 최종 사용자가 Microsoft Intune을 통해 배포하는 앱을 얻는 방법과 위치를 이해합니다.
 
@@ -34,9 +34,9 @@ ms.locfileid: "73413987"
 
 **관리되는 앱**--정책을 통해 관리할 수 있고 Intune에서 "래핑"했거나 Intune 앱 SDK(소프트웨어 개발 키트)로 빌드된 앱입니다. 이러한 앱은 Intune에서 관리할 수 있고, 앱 보호 정책을 적용할 수 있습니다.
 
-**관리되지 않는 앱**--사용자가 Intune 앱 SDK와 연결되지 않은 iOS App Store에서 다운로드할 수 있는 앱입니다. Intune은 이러한 앱의 배포, 관리 또는 선택적 초기화를 제어하지 않습니다.  
+**관리되지 않는 앱**--사용자가 Intune 앱 SDK와 연결되지 않은 iOS/iPadOS App Store에서 다운로드할 수 있는 앱입니다. Intune은 이러한 앱의 배포, 관리 또는 선택적 초기화를 제어하지 않습니다.  
 
-Apple 제한에 따라 기간 업무 앱과 관리되는 App Store 앱을 회사 포털 앱에 올릴 수 없습니다. 이 문제를 해결하기 위해 iOS용 회사 포털 앱의 타일이 종류에 관계없이 모든 앱에 대해 단일 위치(회사 포털 웹 사이트)에서 서로 다른 보기를 가리킵니다.
+Apple 제한에 따라 기간 업무 앱과 관리되는 App Store 앱을 회사 포털 앱에 올릴 수 없습니다. 이 문제를 해결하기 위해 iOS/iPadOS용 회사 포털 앱의 타일이 종류에 관계없이 모든 앱에 대해 단일 위치(회사 포털 웹 사이트)에서 서로 다른 보기를 가리킵니다.
 
 등록된 사용자는 회사 포털 앱의 앱 화면에서 다음 타일을 탭하여 앱을 얻습니다.
 

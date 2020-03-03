@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413687"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569458"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune 디바이스의 기본 사용자 찾기
 
-사용자 디바이스 선호도라고도 하는 기본 사용자는 각 Intune 디바이스의 속성입니다. Intune 디바이스에는 기본 사용자를 0개나 1개 할당할 수 있습니다. 할당된 기본 사용자가 없는 디바이스는 "공유 디바이스"라고 합니다.
+사용자 디바이스 선호도라고도 하는 기본 사용자는 각 Intune 디바이스의 속성입니다. Intune 디바이스에는 기본 사용자를 0개나 1개 할당할 수 있습니다. 할당된 기본 사용자가 없는 디바이스는 “공유 디바이스”라고 합니다.
 
-## <a name="how-to-find-a-devices-primary-user"></a>디바이스의 기본 사용자를 찾는 방법
+## <a name="find-a-devices-primary-user"></a>디바이스의 기본 사용자 찾기
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **디바이스** 메뉴를 선택하고 디바이스를 선택합니다.
@@ -38,7 +38,7 @@ ms.locfileid: "77413687"
 기본 사용자 속성은 다음에서 허가받은 Intune 사용자를 다바이스에 매핑하는 데 사용됩니다.
 - 회사 포털 앱
 - 최종 사용자 웹 사이트
-- Azure Portal의 문제 해결 페이지와 같은 IT 전문가 환경 이러한 페이지에서는 기본 사용자를 사용하여 사용자 계정을 디바이스에 매핑합니다.    
+- Azure Portal의 문제 해결 페이지와 같은 IT 전문가 환경 이러한 페이지에서는 기본 사용자를 사용하여 사용자 계정을 디바이스에 매핑합니다. 
 
 ### <a name="company-portal-app"></a>회사 포털 앱
 회사 포털 앱에서는 회사 포털에 로그인한 사용자 계정이 해당 디바이스의 기본 사용자라고 예상합니다. 다른 사용자가 기본 사용자로 할당된 경우 회사 포털에서는 경고를 표시합니다.

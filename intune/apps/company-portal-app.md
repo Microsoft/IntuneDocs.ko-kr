@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4c938aba7fde84536af2452f13f6ed030fa1d823
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563632"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576424"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune 회사 포털 앱을 구성하는 방법
 
@@ -37,9 +37,9 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 > [!Tip]
 > 회사 포털을 사용자 지정할 때는 구성이 회사 포털 웹 사이트 및 회사 포털 앱에 모두 적용됩니다. 회사 포털 웹 사이트에 액세스하려면 Intune 라이선스가 할당되어야 합니다.
 
-회사 포털을 사용자 지정하면 최종 사용자에게 친숙하고 유용한 환경을 제공하는 데 도움이 됩니다. 이렇게 하려면 Intune 포털에서 **앱** > **브랜딩 및 사용자 지정**을 선택한 후 필요한 설정을 구성합니다.
+회사 포털을 사용자 지정하면 최종 사용자에게 친숙하고 유용한 환경을 제공하는 데 도움이 됩니다. 이렇게 하려면 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)로 이동하여 **테넌트 관리** > **브랜딩 및 사용자 지정**을 선택한 다음, 필요한 설정을 구성합니다.
 
-회사 포털에서 iOS 애플리케이션을 설치하는 사용자에게는 메시지가 표시됩니다. 이 동작은 iOS 앱이 앱 스토어에 연결되어 있거나 VPP(Volume Purchase Program)에 연결되어 있거나 기간 업무(LOB) 앱에 연결되어 있는 경우 발생합니다. 사용자는 표시되는 메시지를 통해 작업을 수락하거나 앱 관리를 허용할 수 있습니다. 메시지에는 회사 이름이 표시되며, 회사 이름을 사용할 수 없는 경우 **회사 포털**이 표시됩니다. 
+회사 포털에서 iOS/iPadOS 애플리케이션을 설치하는 사용자에게는 메시지가 표시됩니다. 이 동작은 iOS/iPadOS 앱이 앱 스토어에 연결되어 있거나 VPP(Volume Purchase Program)에 연결되어 있거나 기간 업무 앱에 연결되어 있는 경우 발생합니다. 사용자는 표시되는 메시지를 통해 작업을 수락하거나 앱 관리를 허용할 수 있습니다. 메시지에는 회사 이름이 표시되며, 회사 이름을 사용할 수 없는 경우 **회사 포털**이 표시됩니다. 
 
 > [!Note]
 > Azure Government를 사용하는 경우 문제에 대한 도움말을 얻을 수 있는 절차를 시작할 때 공유할 방법을 결정하도록 최종 사용자에게 앱 로그가 제공됩니다. 그러나 Azure Government를 사용하지 않는 경우 Windows 10용 회사 포털은 사용자가 문제에 대한 도움을 받기 위해 프로세스를 시작할 때 Microsoft에 직접 앱 로그를 보냅니다. 앱 로그를 Microsoft에 보내면 문제를 더 쉽게 해결할 수 있습니다. 
@@ -92,11 +92,11 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 
 ### <a name="brand-image-for-company-portal"></a>회사 포털의 브랜드 이미지
 
-회사 브랜드를 반영하는 브랜드 이미지를 표시합니다. 변경 내용이 저장되면 Intune 웹 포털의 창 위쪽에서 **설정 미리 보기**를 선택하여 구성의 모양을 확인할 수 있습니다. iOS 디바이스에 표시되는 브랜드 이미지만 미리 볼 수 있습니다(Intune 웹 포털은 불가). 
+회사 브랜드를 반영하는 브랜드 이미지를 표시합니다. 변경 내용이 저장되면 Intune 웹 포털의 창 위쪽에서 **설정 미리 보기**를 선택하여 구성의 모양을 확인할 수 있습니다. iOS/iPadOS 디바이스에 표시되는 브랜드 이미지만 미리 볼 수 있습니다(Intune 웹 포털은 불가). 
 
 |필드 이름|추가 정보|
 |---|---|
-|**브랜드 이미지 업로드**| 이 옵션을 사용하여 브랜드 이미지를 표시할 수 있습니다. iOS 회사 포털에서는 사용자의 프로필 페이지에 배경 이미지로 표시합니다.<p><ul><li>권장 이미지 너비: 1125px 이상(최소 650px이어야 함)</li><li>최대 이미지 크기: 1.3MB</li><li>파일 형식: PNG, JPG 또는 JPEG</li></ul>|
+|**브랜드 이미지 업로드**| 이 옵션을 사용하여 브랜드 이미지를 표시할 수 있습니다. iOS/iPadOS 회사 포털에서는 사용자의 프로필 페이지에 배경 이미지로 표시합니다.<p><ul><li>권장 이미지 너비: 1125px 이상(최소 650px이어야 함)</li><li>최대 이미지 크기: 1.3MB</li><li>파일 형식: PNG, JPG 또는 JPEG</li></ul>|
 
 오른쪽 브랜드 이미지는 회사 브랜드의 강력한 인상을 심어주어 회사 포털에 대한 사용자의 신뢰를 높여줄 수 있습니다. 회사 포털의 이미지를 가져오고, 선택하고, 최적화할 때 고려하면 좋은 몇 가지 팁이 있습니다. 
 
@@ -108,7 +108,7 @@ Microsoft Intune 회사 포털에서 사용자는 회사 데이터에 액세스�
 
 - 불필요한 메타데이터를 제거합니다. 이미지 파일에는 카메라 프로필, 지리적 위치, 제목, 캡션 등과 같은 메타데이터가 함께 제공될 수 있습니다. 파일 크기 제한을 충족하면서 품질을 유지하려면 이미지 최적화 도구를 사용하여 이 정보를 제거하세요. 
 
-Intune에서 브랜드 이미지를 추가하거나 변경해도, 회사 포털이 시작 시 변경 내용을 인식하고 다시 시작된 후 브랜드 이미지를 표시할 때까지 최종 사용자의 iOS 디바이스에 변경 내용이 표시되지 않을 수 있습니다. 
+Intune에서 브랜드 이미지를 추가하거나 변경해도, 회사 포털이 시작 시 변경 내용을 인식하고 다시 시작된 후 브랜드 이미지를 표시할 때까지 최종 사용자의 iOS/iPadOS 디바이스에 변경 내용이 표시되지 않을 수 있습니다. 
 
 ### <a name="brand-image-examples"></a>브랜드 이미지 예제
 
@@ -122,20 +122,20 @@ Intune에서 브랜드 이미지를 추가하거나 변경해도, 회사 포털�
 
 ## <a name="privacy-statement-customization"></a>개인정보처리방침 사용자 지정
 
-관리되는 iOS 디바이스에 조직에 대해 표시되는 개인정보처리방침을 사용자 지정할 수 있습니다. 이 메시지는 관리되는 iOS 디바이스에서 조직이 보거나 수행할 수 없는 항목을 나열합니다.
+관리형 iOS/iPadOS 디바이스에 조직에 대해 표시되는 개인정보처리방침을 사용자 지정할 수 있습니다. 이 메시지는 관리형 iOS/iPadOS 디바이스에서 조직이 보거나 수행할 수 없는 항목을 나열합니다.
 
 **회사 포털 사용자 지정** > **디바이스 관리 및 개인 정보 메시지**에서 다음을 수행할 수 있습니다.
 
 - **기본값**을 수락하여 표시된 목록을 사용하거나
-- **사용자 지정**을 선택하여 관리되는 iOS 디바이스에서 조직이 보거나 수행할 수 없는 항목의 목록을 사용자 지정합니다. [markdown](https://daringfireball.net/projects/markdown/)을 사용하여 글머리 기호, 굵게 표시, 기울임꼴, 링크를 추가할 수 있습니다.
+- **사용자 지정**을 선택하여 관리형 iOS/iPadOS 디바이스에서 조직이 보거나 수행할 수 없는 항목의 목록을 사용자 지정합니다. [markdown](https://daringfireball.net/projects/markdown/)을 사용하여 글머리 기호, 굵게 표시, 기울임꼴, 링크를 추가할 수 있습니다.
 
 ## <a name="company-portal-derived-credentials-for-ios-devices"></a>iOS 디바이스용 회사 포털 파생 자격 증명
-Intune은 자격 증명 공급자 DISA Purebred, Entrust Datacard 및 Intercede와 파트너 관계를 맺고 PIV(Personal Identity Verification) 및 CAC(Common Access Card) 파생 자격 증명을 지원합니다. 최종 사용자는 iOS 디바이스 등록 후 추가 단계를 수행하여 회사 포털 애플리케이션에서 해당 ID를 확인합니다. 먼저 테넌트의 자격 증명 공급자를 설정한 후 사용자 또는 디바이스에 대한 파생 자격 증명을 사용하는 프로필을 대상으로 지정하여 사용자에 대해 파생 자격 증명을 사용하도록 설정합니다.
+Intune은 자격 증명 공급자 DISA Purebred, Entrust Datacard 및 Intercede와 파트너 관계를 맺고 PIV(Personal Identity Verification) 및 CAC(Common Access Card) 파생 자격 증명을 지원합니다. 최종 사용자는 iOS/iPadOS 디바이스 등록 후 추가 단계를 수행하여 회사 포털 애플리케이션에서 해당 ID를 확인합니다. 먼저 테넌트의 자격 증명 공급자를 설정한 후 사용자 또는 디바이스에 대한 파생 자격 증명을 사용하는 프로필을 대상으로 지정하여 사용자에 대해 파생 자격 증명을 사용하도록 설정합니다.
 
 > [!NOTE]
 > 사용자는 Intune을 통해 지정한 링크를 기반으로 파생 자격 증명에 대한 지침을 볼 수 있습니다.
 
-iOS 디바이스의 파생 자격 증명에 대한 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](~/protect/derived-credentials.md)을 참조하세요.
+iOS/iPadOS 디바이스의 파생 자격 증명에 대한 자세한 내용은 [Microsoft Intune에서 파생 자격 증명 사용](~/protect/derived-credentials.md)을 참조하세요.
 
 ## <a name="dark-mode-for-ios-company-portal"></a>iOS 회사 포털의 어두운 모드
 
@@ -177,7 +177,7 @@ iOS 디바이스의 파생 자격 증명에 대한 자세한 내용은 [Microsof
 - **이름 변경** – 이 작업은 사용자가 회사 포털에서 볼 수 있는 디바이스 이름을 변경합니다. 로컬 디바이스 이름은 변경되지 않고 회사 포털의 목록만 변경됩니다.
 - **동기화** – 이 작업은 디바이스의 Intune 서비스 체크 인을 시작합니다. 회사 포털에서는 **상태 확인**으로 표시됩니다.
 - **원격 잠금** – 디바이스를 잠그며 잠금을 해제하려면 PIN이 필요합니다.
-- **암호 초기화** – 이 작업은 디바이스 암호를 다시 설정하는 데 사용됩니다. iOS 디바이스에서는 암호가 제거되고 최종 사용자는 설정에서 새 코드를 입력해야 합니다. 지원되는 Android 디바이스에서는 Intune에 의해 새 암호가 생성되어 회사 포털에 임시로 표시됩니다.
+- **암호 초기화** – 이 작업은 디바이스 암호를 다시 설정하는 데 사용됩니다. iOS/iPadOS 디바이스에서는 암호가 제거되고 최종 사용자는 설정에서 새 코드를 입력해야 합니다. 지원되는 Android 디바이스에서는 Intune에 의해 새 암호가 생성되어 회사 포털에 임시로 표시됩니다.
 - **키 복구** – 이 작업은 회사 포털 웹 사이트에서 암호화된 macOS 디바이스의 개인 복구 키를 복구하는 데 사용됩니다. 
 
 ### <a name="self-service-actions"></a>셀프 서비스 작업

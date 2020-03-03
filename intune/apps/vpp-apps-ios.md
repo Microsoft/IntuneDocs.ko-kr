@@ -1,7 +1,7 @@
 ---
 title: Apple 대량 구매 앱 관리
 titleSuffix: Microsoft Intune
-description: iOS 및 macOS App Store에서 대량 구매한 앱을 Microsoft Intune에 동기화하고 해당 사용을 추적 및 관리하는 방법을 알아봅니다.
+description: iOS/iPadOS 및 macOS App Store에서 대량 구매한 앱을 Microsoft Intune에 동기화하고 해당 사용을 추적 및 관리하는 방법을 알아봅니다.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.openlocfilehash: 9127ee06bc2125f476c18e9b8e46a127e48d0245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051629"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513404"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Apple Volume Purchase Program을 통해 구매한 iOS 및 macOS 앱을 관리하는 방법
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple을 사용하면 사용자의 조직 내에서 [Apple Business Manager](https://business.apple.com/)나 [Apple School Manager](https://school.apple.com/)를 이용 중인 iOS 및 macOS 디바이스로 사용하려는 앱에 대해 여러 라이선스를 구매할 수 있습니다. 그런 다음 대량 구매 정보를 Intune과 동기화하고 대량 구매 앱 사용을 추적할 수 있습니다. 앱 라이선스를 구매하면 회사 내에서의 효율적 앱 관리, 구매된 앱의 소유권 보유와 지속적인 제어가 가능합니다. 
+Apple을 사용하면 사용자의 조직 내에서 [Apple Business Manager](https://business.apple.com/)나 [Apple School Manager](https://school.apple.com/)를 이용 중인 iOS/iPadOS 및 macOS 디바이스로 사용하려는 앱에 대해 여러 라이선스를 구매할 수 있습니다. 그런 다음 대량 구매 정보를 Intune과 동기화하고 대량 구매 앱 사용을 추적할 수 있습니다. 앱 라이선스를 구매하면 회사 내에서의 효율적 앱 관리, 구매된 앱의 소유권 보유와 지속적인 제어가 가능합니다. 
 
 Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구매한 앱을 관리할 수 있습니다.
 
@@ -38,13 +38,13 @@ Microsoft Intune에서는 다음을 수행하여 이 프로그램을 통해 구�
 - 구매된 앱에 사용 가능하거나 이미 사용된 라이선스의 수를 추적합니다.
 - 사용자가 소유한 라이선스 수만큼 앱을 설치하는 데 도움이 됩니다.
 
-또한 Apple Business Manager에서 구매한 책을 Intune에서 iOS로 동기화, 관리 및 할당할 수 있습니다. 자세한 내용은 [대량 구매 프로그램을 통해 구매한 iOS 전자책을 관리하는 방법](vpp-ebooks-ios.md)을 참조하세요.
+또한 Apple Business Manager에서 구매한 책을 Intune에서 iOS/iPadOS 디바이스로 동기화, 관리 및 할당할 수 있습니다. 자세한 내용은 [Volume Purchase Program을 통해 구매한 iOS/iPadOS eBook을 관리하는 방법](vpp-ebooks-ios.md)을 참조하세요.
 
 ## <a name="what-are-location-tokens"></a>위치 토큰이란 무엇인가요?
 위치 토큰은 VPP(Volume Purchase Program) 토큰이라고도 합니다. 이 토큰은 Apple Business Manager를 사용하여 구매한 라이선스를 할당 및 관리하는 데 사용됩니다. 콘텐츠 관리자는 Apple Business Manager에서 권한을 보유한 위치 토큰으로 라이선스를 구매하고 연결할 수 있습니다. 이러한 위치 토큰은 이후에 Apple Business Manager에서 다운로드되고 Microsoft Intune에서 업로드됩니다. Microsoft Intune은 테넌트별로 여러 위치 토큰의 업로드를 지원합니다. 각 토큰은 1년 동안 유효합니다.
 
 ## <a name="how-are-purchased-apps-licensed"></a>구매한 앱의 라이선스는 어떻게 되나요?
-구매한 앱은 Apple에서 iOS 및 macOS 디바이스에 대해 제공하는 두 유형의 라이선스를 사용하여 그룹에 할당할 수 있습니다.
+구매한 앱은 Apple에서 iOS/iPadOS 및 macOS 디바이스에 대해 제공하는 두 유형의 라이선스를 사용하여 그룹에 할당할 수 있습니다.
 
 |   | 디바이스 라이선싱 | 사용자 라이선싱 |
 |-----|------------------|----------------|
@@ -156,9 +156,9 @@ Apple Business Manager나 Apple School Manager에서 구매된 기존 VPP 콘텐
 
 ## <a name="revoking-app-licenses"></a>앱 라이선스 철회
 
-지정된 디바이스, 사용자 또는 앱에 따라 모든 연결된 iOS 또는 macOS VPP(volume-purchase program) 앱 라이선스를 철회할 수 있습니다.  그러나 iOS 및 macOS 플랫폼 간에는 몇 가지 차이점이 있습니다. 
+지정된 디바이스, 사용자 또는 앱에 따라 모든 연결된 iOS/iPadOS 또는 macOS VPP(Volume Purchase Program) 앱 라이선스를 철회할 수 있습니다.  그러나 iOS/iPadOS 및 macOS 플랫폼 간에는 몇 가지 차이점이 있습니다. 
 
-|   | iOS | macOS |
+|   | iOS/iPadOS | macOS |
 |-----|------------------|----------------|
 | **앱 할당 제거** | 사용자에게 할당된 앱을 제거하는 경우 Intune은 사용자 또는 디바이스 라이선스를 회수하고 디바이스에서 앱을 제거합니다. | 사용자에게 할당된 앱을 제거하는 경우 Intune은 사용자 또는 디바이스 라이선스를 회수합니다. 앱은 디바이스에서 제거되지 않습니다. |
 | **앱 라이선스 해지** | 앱 라이선스를 해지하면 사용자 또는 디바이스에서 앱 라이선스가 회수됩니다. 디바이스에서 앱을 제거하려면 할당을 **제거**로 변경해야 합니다. | 앱 라이선스를 해지하면 사용자 또는 디바이스에서 앱 라이선스가 회수됩니다. 라이선스가 철회된 macOS 앱은 장치에서 계속 사용할 수 있지만, 사용자 또는 디바이스에 라이선스가 다시 할당될 때까지는 업데이트할 수 없습니다. Apple에 따라 이러한 앱은 30일 유예 기간이 지난 후 제거됩니다. 그러나 Apple은 제거 할당 작업을 사용하여 Intune에서 앱을 제거하는 수단을 제공하지 않습니다.
@@ -184,14 +184,14 @@ Apple Business Manager나 Apple School Manager에서 새로운 토큰을 다운�
 
 ## <a name="deleting-a-vpp-app"></a>VPP 앱 삭제
 
-현재 iOS VPP 앱은 Microsoft Intune에서 삭제할 수 없습니다.
+현재 iOS/iPadOS VPP 앱은 Microsoft Intune에서 삭제할 수 없습니다.
 
 ## <a name="assigning-custom-role-permissions-for-vpp"></a>VPP에 대한 사용자 지정 역할 권한 할당
 
 Intune에서 사용자 지정 관리자 역할에 할당된 사용 권한을 사용하여 Apple VPP 토큰 및 VPP 앱에 대한 액세스를 독립적으로 제어할 수 있습니다.
 
 * Intune 사용자 지정 역할로 **앱** > **Apple VPP 토큰**에서 Apple VPP 토큰을 관리하도록 허용하려면 **관리되는 앱**에 대한 권한을 할당합니다.
-* Intune 사용자 지정 역할로 **앱** > **모든 앱**에서 iOS VPP 토큰을 사용하여 구입한 앱을 관리하도록 허용하려면 **모바일 앱**에 대한 권한을 할당합니다. 
+* Intune 사용자 지정 역할로 **앱** > **모든 앱**에서 iOS/iPadOS VPP 토큰을 사용하여 구매한 앱을 관리하도록 허용하려면 **모바일 앱**에 대한 권한을 할당합니다. 
 
 ## <a name="additional-information"></a>추가 정보
 

@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune에서 디바이스의 Wi-Fi 프로필 만들기 - Azure | Microsoft Docs
-description: Microsoft Intune에서 Wi-Fi 디바이스 구성 프로필을 만드는 단계를 참조하세요. Android, Android 엔터프라이즈, Android 키오스크, iOS, macOS, Windows 10 이상 및 Windows Holographic for Business의 프로필을 만듭니다. 이러한 프로필을 사용하여 인증서 사용, EAP 유형 선택, 인증 방법 선택, 프록시 사용 설정을 위한 WiFi 연결을 만듭니다.
+description: Microsoft Intune에서 Wi-Fi 디바이스 구성 프로필을 만드는 단계를 참조하세요. Android, Android 엔터프라이즈, Android 키오스크, iOS, iPadOS, macOS, Windows 10 이상 및 Windows Holographic for Business의 프로필을 만듭니다. 이러한 프로필을 사용하여 인증서 사용, EAP 유형 선택, 인증 방법 선택, 프록시 사용 설정을 위한 WiFi 연결을 만듭니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47eae4d2e662be85de2831666f944e57ba674417
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 3110998970eeaf654ab57397ec827090a4103f34
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206111"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512333"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune에서 디바이스의 Wi-Fi 설정 추가 및 사용
 
 Wi-Fi는 많은 모바일 디바이스가 네트워크 액세스 권한을 가져오는 데 사용되는 무선 네트워크입니다. Microsoft Intune에는 조직의 사용자 및 디바이스에 배포할 수 있는 기본 제공 Wi-Fi 설정이 포함되어 있습니다. 이 설정 그룹을 "프로필"이라고 하며 다른 사용자 및 그룹에 할당할 수 있습니다. 할당되면 사용자가 직접 구성하지 않고도 조직의 Wi-Fi 네트워크에 액세스할 수 있습니다.
 
-예를 들어 Contoso Wi-Fi라는 새 Wi-Fi 네트워크를 설치합니다. 그런 다음, 이 네트워크에 연결할 모든 iOS 디바이스를 설정하려고 합니다. 프로세스는 다음과 같습니다.
+예를 들어 Contoso Wi-Fi라는 새 Wi-Fi 네트워크를 설치합니다. 그런 다음, 이 네트워크에 연결할 모든 iOS/iPadOS 디바이스를 설정하려고 합니다. 프로세스는 다음과 같습니다.
 
 1. Contoso Wi-Fi 무선 네트워크에 연결하는 설정을 포함하는 Wi-Fi 프로필을 만듭니다.
-2. iOS 디바이스의 모든 사용자를 포함하는 그룹에 프로필을 할당합니다.
+2. iOS/iPadOS 디바이스의 모든 사용자를 포함하는 그룹에 프로필을 할당합니다.
 3. 사용자는 디바이스의 무선 네트워크 목록에서 새 Contoso Wi-Fi 네트워크를 찾습니다. 그런 다음, 선택한 인증 방법을 사용하여 네트워크에 연결할 수 있습니다.
 
 이 문서에서는 Wi-Fi 프로필을 만드는 단계가 나열되어 있습니다. 각 플랫폼에 대한 여러 설정을 설명하는 링크도 포함되어 있습니다.
@@ -42,6 +42,7 @@ Wi-Fi 프로필은 다음 디바이스 플랫폼을 지원합니다.
 - Android 4 이상
 - Android 엔터프라이즈 및 키오스크
 - iOS 8.0 이상
+- iPadOS 13.0 이상
 - macOS X 10.11 이상
 - Windows 10 이상, Windows 10 Mobile 및 Windows Holographic for Business
 

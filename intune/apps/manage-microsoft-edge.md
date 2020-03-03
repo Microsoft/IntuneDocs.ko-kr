@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 9622eb33cb4e7732b573e8caf56acf4e3966badb
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125016"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609130"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune과 함께 Microsoft Edge를 사용하여 웹 액세스 관리
 
@@ -101,7 +101,7 @@ Microsoft Edge의 앱 구성을 만들려면
 2. **앱** > **앱 구성 정책** > **추가**를 선택합니다.
 3. **구성 정책 추가** 창에서 앱 구성 설정에 대한 **이름** 및 **설명**(선택 사항)을 입력합니다.
 4. **디바이스 등록** 유형에 **관리되는 앱**를 선택합니다.
-5. **필수 앱 선택**을 선택하고 **대상 앱** 창에서 iOS나 Android 중 하나 또는 둘 다에 대해 **Managed Browser** 또는 **Edge**를 선택합니다.
+5. **필수 앱 선택**을 선택하고 **대상 앱** 창에서 iOS/iPadOS나 Android 중 하나 또는 둘 다에 대해 **Managed Browser** 또는 **Edge**를 선택합니다.
 6. **확인**을 선택하여 **구성 정책 추가** 창으로 돌아옵니다.
 7. **구성 설정**을 선택합니다. **구성** 창에서 키와 값 쌍을 정의하여 Microsoft Edge에 대한 구성을 제공합니다. 이 문서의 뒷부분에 나오는 섹션에서 정의할 수 있는 다양한 키와 값 쌍에 대해 알아보세요.
 
@@ -136,7 +136,7 @@ Android:
 - 디바이스에 Microsoft Edge만 다운로드되고 Intune 정책을 대상으로 하는 경우 Microsoft Edge가 실행됩니다.
 - 디바이스에 Managed Browser만 있고 Intune 정책의 대상으로 지정된 경우 Managed Browser가 실행됩니다.
 
-iOS, iOS용 Intune SDK v. 9.0.9+를 통합한 앱:
+iOS/iPadOS에서 앱을 iOS v용 Intune SDK에 통합합니다. 9.0.9+를 통합한 앱:
 - Managed Browser와 Microsoft Edge가 모두 디바이스에 있는 경우 Intune Managed Browser가 실행됩니다.  
 - 디바이스에 Microsoft Edge만 있고 Intune 정책의 대상으로 지정된 경우 Microsoft Edge가 실행됩니다.
 - 디바이스에 Managed Browser만 있고 Intune 정책의 대상으로 지정된 경우 Managed Browser가 실행됩니다.
@@ -188,7 +188,7 @@ Microsoft Edge에 대한 애플리케이션 프록시를 사용하도록 설정�
 이러한 설정을 사용하면 Microsoft Edge의 새 탭 페이지를 사용자 지정하여 조직의 로고 및 브랜드 색을 페이지 배경으로 표시할 수 있습니다.
 
 조직의 로고 및 색을 업로드하려면 먼저 다음 단계를 완료하세요.
-- Azure Portal 내에서 [Intune] -> [클라이언트 앱] -> [회사 포털 브랜딩] -> [회사 아이덴티티 브랜딩]으로 이동합니다.
+- Azure Portal 내에서 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431) -> **테넌트 관리** -> **브랜딩 및 사용자 지정** -> **회사 ID 브랜딩**으로 이동합니다.
 - 브랜드 로고를 설정하려면 “표시”에서 “회사 로고만”을 선택합니다. 투명한 배경 로고가 권장됩니다. 
 - 브랜드의 배경색을 설정하려면 “표시”에서 “테마 색”을 선택합니다. Microsoft Edge는 새 탭 페이지에서 색의 더 밝은 음영을 적용하여 페이지의 가독성이 향상되도록 합니다. 
 
@@ -293,19 +293,48 @@ Microsoft Edge에 기본 제공된 이중 ID 모델을 사용하면 Intune Manag
 
 |    Key    |    값    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True**이면 Microsoft Edge에서 사용자를 프라이빗 컨텍스트로 전환하여 차단된 사이트를 열 수 있습니다.<p>**차단**이면 Microsoft Edge에서 사용자를 전환할 수 없습니다. 사용자에게는 액세스하려는 사이트가 차단되었다는 메시지만 표시됩니다.    |
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True**이면 개인 계정으로 전환할지 사용자에게 묻지 않고 [InPrivate] 탭에서 직접 자동으로 사이트가 열립니다. <p> **False**(기본값)이면 Microsoft Edge 내에서 사이트가 차단되며 보려는 개인 계정으로 전환하라는 메시지가 사용자에게 표시됩니다.    |
 
-## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Microsoft Edge 프롬프트를 사용하지 않도록 설정하여 암호 저장
+## <a name="disable-microsoft-edge-features-to-customize-the-end-user-experience-for-your-organizations-needs"></a>Microsoft Edge 기능을 사용하지 않도록 설정하여 조직의 요구 사항에 맞는 최종 사용자 환경 사용자 지정
+
+### <a name="disable-prompts-to-share-usage-data-for-personalization"></a>개인 설정에 대한 사용량 현황 데이터를 공유할지 묻는 메시지 사용 안 함 
+
+기본적으로 Microsoft Edge는 검색 환경을 개인 설정하기 위해 사용량 현황 데이터 수집에 대한 메시지를 사용자에게 표시합니다. 이 메시지가 최종 사용자에게 표시되지 않도록 차단하여 이 데이터 공유를 사용하지 않도록 설정할 수 있습니다. 
 
 |    Key    |    값    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True**를 선택하면 InPrivate 브라우징에서 직접 제한된 링크를 엽니다.<p>**False**(기본)를 선택하면 사용자가 제한된 링크를 열 때 InPrivate 브라우징 또는 관리 서비스 계정(MSA)를 선택하도록 합니다.    |
+|    `com.microsoft.intune.mam.managedbrowser.disableShareUsageData`    |     **true**이면 이 메시지가 최종 사용자에게 표시되지 않습니다.    |
 
+### <a name="disable-prompts-to-share-browsing-history"></a>검색 기록을 공유할지 묻는 메시지 사용 안 함 
+
+기본적으로 Microsoft Edge는 검색 환경을 개인 설정하기 위해 검색 기록 데이터 수집에 대한 메시지를 사용자에게 표시합니다. 이 메시지가 최종 사용자에게 표시되지 않도록 차단하여 이 데이터 공유를 사용하지 않도록 설정할 수 있습니다.
+
+|    Key    |    값    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     `com.microsoft.intune.man.managedbrowser.disableShareBrowsingHistory`    |     **true**이면 이 메시지가 최종 사용자에게 표시되지 않습니다.     |
+
+### <a name="disable-prompts-that-offer-to-save-passwords"></a>암호를 저장하기 위해 제공되는 프롬프트 사용 안 함
 기본적으로 iOS의 Microsoft Edge는 사용자 암호를 키 집합에 저장하도록 합니다. 조직에 대해 이 프롬프트를 사용하지 않도록 하려면 다음 설정을 구성합니다.
 
 |    Key    |    값    |
+|-----------------------|-----------------------|
+|    `com.microsoft.intune.mam.managedbrowser.disableFeatures`    |    **password**를 선택하면 최종 사용자의 암호를 저장하기 위해 제공되는 프롬프트가 사용하지 않도록 설정됩니다.    |
+
+### <a name="disable-inprivate-browsing-and-microsoft-accounts-to-restrict-browsing-to-work-only-contexts"></a>작업 전용 컨텍스트 검색을 제한하기 위해 InPrivate 브라우징 및 Microsoft 계정을 사용하지 않도록 설정
+
+조직이 규제가 심한 산업 환경에서 운영되거나 앱별 VPN을 사용하여 사용자가 Microsoft Edge를 통해 회사 리소스에 액세스하도록 허용하는 경우, Microsoft Edge 사용 범위를 MAM으로 보호된 컨텍스트로만 지정할 수 있습니다. 이 기능은 MDM에 등록된 디바이스에만 제공됩니다.
+
+|    Key    |    값    |
 |-----------|-------------|
-|     ‘com.microsoft.intune.mam.managedbrowser.disableFeatures’    |    **password**는 암호 저장 프롬프트를 사용하지 않도록 설정합니다.    |
+|    `com.microsoft.intune.mam.managedbrowser.disableFeatures`    |    **inprivate**을 선택하면 InPrivate 브라우징이 사용하지 않도록 설정됩니다. <br> **msa**이면 사용자가 Microsoft Edge 앱에 개인 MSA(Microsoft 계정)를 추가할 수 없습니다. <br> 여러 기능을 사용하지 않도록 설정하려면 `|`로 값을 구분합니다. 예를 들어 `inprivate|msa`는 InPrivate 및 개인 계정을 둘 다 차단합니다.   |
+
+### <a name="restrict-microsoft-edge-use-to-allowed-accounts-only"></a>Microsoft Edge 사용을 허용된 계정으로만 제한
+
+InPrivate 브라우징 및 MSA 검색을 차단하는 것 외에도 사용자가 AAD 계정으로 로그인하는 경우에만 Microsoft Edge 사용을 허용할 수 있습니다. 이 기능은 MDM에 등록된 사용자에만 사용할 수 있습니다. 이 설정을 구성하는 방법에 대한 자세한 내용은 다음을 참조하세요.
+
+- [Android 설정](~/apps/app-configuration-policies-use-android.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
+- [iOS 설정](~/apps/app-configuration-policies-use-ios.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>iOS에서 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스 
 
@@ -322,7 +351,7 @@ Android 디바이스의 로그를 보는 방법을 확인하려면 [이메일을
 
 Microsoft Edge의 추가 보안 및 개인 정보 고려 사항은 다음과 같습니다.
 
-- Microsoft Edge는 사용자가 해당 디바이스의 기본 브라우저에서 지정한 설정에 액세스할 수 없어 이러한 설정을 사용하지 않습니다.
+- Microsoft Edge는 사용자가 해당 디바이스의 기본 브라우저 https://docs.microsoft.com/en-us/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-multi-identity-apps 에서 지정한 설정에 액세스할 수 없어 해당 설정을 사용하지 않습니다.
 - Microsoft Edge와 연결된 앱 보호 정책에서 **액세스용 단순 PIN 필요** 또는 **액세스용 회사 자격 증명 필요** 옵션을 구성할 수 있습니다. 사용자가 인증 페이지의 도움말 링크를 선택하면 정책의 차단된 목록에 추가되었는지와 관계없이 모든 인트라넷 사이트든 검색할 수 있습니다.
 - Microsoft Edge는 직접 액세스하는 사이트에 대한 액세스만 차단할 수 있습니다. 사용자가 중간 서비스(변환 서비스 등)를 사용하여 사이트에 액세스하는 경우 액세스를 차단하지 않습니다.
 - 인증 및 Intune 문서에 대한 액세스를 허용하기 위해 허용 또는 차단 목록 설정에서 * **.microsoft.com**이 제외됩니다. 항상 허용됩니다.

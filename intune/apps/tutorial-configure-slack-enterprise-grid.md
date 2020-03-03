@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f5045e78eaca19e5a78468c7c4b6698e4e1a5019
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415473"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511551"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>자습서: EMM 및 앱 구성에 Intune을 사용하도록 Slack 구성
 
@@ -32,8 +32,8 @@ Slack은 Microsoft Intune에서 사용할 수 있는 협업 앱입니다.
 이 자습서에서는 다음 작업을 수행하게 됩니다.
 > [!div class="checklist"]
 > - Slack Enterprise Grid에서 Intune을 EMM(Enterprise Mobility Management) 공급자로 설정합니다. Grid 플랜 작업 영역의 액세스를 Intune 관리형 디바이스로 제한할 수 있습니다.
-> - 앱 구성 정책을 만들어 iOS의 EMM용 Slack 앱 및 Android 회사 프로필 디바이스용 Slack 앱을 관리합니다.
-> - Intune 디바이스 준수 정책을 만들어 Android 및 iOS 디바이스가 규격 디바이스로 간주되기 위해 충족해야 하는 조건을 설정합니다.
+> - 앱 구성 정책을 만들어 iOS/iPadOS의 EMM용 Slack 앱 및 Android 회사 프로필 디바이스용 Slack 앱을 관리합니다.
+> - Intune 디바이스 규정 준수 정책을 만들어 Android 및 iOS/iPadOS 디바이스가 규격 디바이스로 간주되기 위해 충족해야 하는 조건을 설정합니다.
 
 Intune 구독이 없으면 [평가판 계정에 등록](../fundamentals/free-trial-sign-up.md)하세요.
 
@@ -51,10 +51,10 @@ Intune 구독이 없으면 [평가판 계정에 등록](../fundamentals/free-tri
 전역 관리자 또는 Intune 서비스 관리자로 [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다. Intune 평가판 구독을 만든 경우 구독을 만든 계정은 글로벌 관리자입니다.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>iOS 디바이스에서 EMM용 Slack 설정
-iOS 앱 EMM용 Slack을 Intune 테넌트에 추가하고 앱 구성 정책을 만들어 조직의 iOS 사용자가 Intune을 EMM 공급자로 사용하여 Slack에 액세스할 수 있도록 합니다.
+iOS/iPadOS 앱 EMM용 Slack을 Intune 테넌트에 추가하고 앱 구성 정책을 만들어 조직의 iOS/iPadOS 사용자가 Intune을 EMM 공급자로 사용하여 Slack에 액세스할 수 있도록 합니다.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Intune에 EMM용 Slack 추가
-Intune에서 EMM용 Slack을 관리 iOS 앱으로 추가하고 Slack 사용자를 할당합니다. 앱은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 Intune 앱을 따로 추가해야 합니다.
+Intune에서 EMM용 Slack을 관리형 iOS/iPadOS 앱으로 추가하고 Slack 사용자를 할당합니다. 앱은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 Intune 앱을 따로 추가해야 합니다.
 1. 관리 센터에서 **앱** > **모든 앱** > **추가**를 선택합니다.
 2. **앱 유형**에서 **iOS** 스토어 앱을 선택합니다.
 3. **앱 스토어 검색**을 선택합니다. 검색어 “EMM용 Slack”을 입력하고 앱을 선택합니다. **App Store에서 검색** 창에서 **선택**을 클릭합니다.
@@ -84,7 +84,7 @@ EMM iOS/iPadOS용 Slack을 위한 앱 구성 정책을 추가합니다. 관리 �
 12. **저장**을 클릭합니다.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(선택 사항) iOS 디바이스 준수 정책 만들기
-Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태로 간주하기 위해 충족해야 하는 조건을 설정합니다. 이 자습서에서는 iOS 디바이스의 디바이스 준수 정책을 만듭니다. 준수 정책은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 정책을 따로 만들어야 합니다.
+Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태로 간주하기 위해 충족해야 하는 조건을 설정합니다. 이 자습서에서는 iOS/iPadOS 디바이스의 디바이스 규정 준수 정책을 만듭니다. 준수 정책은 플랫폼별로 다르므로 Android 디바이스의 Slack 사용자를 위한 정책을 따로 만들어야 합니다.
 1. 관리 센터에서 **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
 2. 이름에 “iOS 준수 정책 테스트”를 입력합니다.
 3. 설명에 “iOS 준수 정책 테스트”를 입력합니다.
@@ -105,7 +105,7 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
 Slack 관리형 Google Play 앱을 Intune 테넌트에 추가하고 앱 구성 정책을 만들어 조직의 Android 사용자가 Intune을 EMM 공급자로 사용하여 Slack에 액세스할 수 있도록 합니다.
 
 ### <a name="add-slack-to-intune"></a>Intune에 Slack 추가
-Intune에서 Slack을 관리형 Google Play 앱으로 추가하고 Slack 사용자를 할당합니다. 앱은 플랫폼별로 다르므로 iOS 디바이스의 Slack 사용자를 위한 Intune 앱을 따로 추가해야 합니다.
+Intune에서 Slack을 관리형 Google Play 앱으로 추가하고 Slack 사용자를 할당합니다. 앱은 플랫폼별로 다르므로 iOS/iPadOS 디바이스의 Slack 사용자를 위한 Intune 앱을 따로 추가해야 합니다.
 1. Intune에서 **앱** > **모든 앱** > **추가**를 선택합니다.
 2. 앱 유형에서 **스토어 앱 - 관리형 Google Play**를 선택합니다.
 3. **관리형 Google Play - 승인**을 선택합니다. 검색어 “EMM용 Slack”을 입력하고 앱을 선택합니다.
@@ -120,7 +120,7 @@ Intune에서 Slack을 관리형 Google Play 앱으로 추가하고 Slack 사용�
 10. **저장**을 클릭합니다.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Slack을 위한 앱 구성 정책 추가
-Slack을 위한 앱 구성 정책을 추가합니다. 관리 디바이스의 앱 구성 정책은 플랫폼별로 다르므로 iOS 디바이스의 Slack 사용자를 위한 정책을 따로 추가해야 합니다.
+Slack을 위한 앱 구성 정책을 추가합니다. 관리형 디바이스의 앱 구성 정책은 플랫폼별로 다르므로 iOS/iPadOS 디바이스의 Slack 사용자를 위한 정책을 따로 추가해야 합니다.
 1. Intune에서 **앱** > **앱 구성 정책** > **추가**를 선택합니다.
 2. 이름에 Slack 앱 구성 정책 테스트를 입력합니다.
 3. 디바이스 등록 유형에서 **관리 디바이스**를 선택합니다.
@@ -136,7 +136,7 @@ Slack을 위한 앱 구성 정책을 추가합니다. 관리 디바이스의 앱
 12. **저장**을 클릭합니다.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(선택 사항) Android 디바이스 준수 정책 만들기
-Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태로 간주하기 위해 충족해야 하는 조건을 설정합니다. 이 자습서에서는 Android 디바이스의 디바이스 준수 정책을 만듭니다. 준수 정책은 플랫폼별로 다르므로 iOS 디바이스의 Slack 사용자를 위한 정책을 따로 만들어야 합니다.
+Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태로 간주하기 위해 충족해야 하는 조건을 설정합니다. 이 자습서에서는 Android 디바이스의 디바이스 준수 정책을 만듭니다. 규정 준수 정책은 플랫폼별로 다르므로 iOS/iPadOS 디바이스의 Slack 사용자를 위한 정책을 따로 만들어야 합니다.
 1. Intune에서 **디바이스 준수** > **정책** > **정책 만들기**를 선택합니다.
 2. 이름에 “Android 준수 정책 테스트”를 입력합니다.
 3. 설명에 “Android 준수 정책 테스트”를 입력합니다.
@@ -155,13 +155,13 @@ Intune 디바이스 준수 정책을 설정하여 디바이스가 준수 상태�
 
 ## <a name="launch-slack"></a>Slack 시작
 
-방금 만든 정책에 따라 작업 영역 중 하나에 로그인하려고 하는 모든 iOS 또는 Android 회사 프로필 디바이스는 Intune에 등록해야 합니다. 이 시나리오를 테스트하려면 Intune에 등록된 iOS 디바이스에서 EMM용 Slack을 시작해 보거나 Intune에 등록된 Android 회사 프로필 디바이스에서 Slack을 시작해 봅니다. 
+방금 만든 정책에 따라 작업 영역 중 하나에 로그인하려고 하는 모든 iOS/iPadOS 또는 Android 회사 프로필 디바이스는 Intune에 등록해야 합니다. 이 시나리오를 테스트하려면 Intune에 등록된 iOS/iPadOS 디바이스에서 EMM용 Slack을 시작해 보거나 Intune에 등록된 Android 회사 프로필 디바이스에서 Slack을 시작해 봅니다. 
 
 ## <a name="next-steps"></a>다음 단계
 
 이 자습서의 내용
 - Slack Enterprise Grid에서 Intune을 EMM(Enterprise Mobility Management) 공급자로 설정했습니다. 
-- 앱 구성 정책을 만들어 iOS의 EMM용 Slack 앱 및 Android 회사 프로필 디바이스용 Slack 앱을 관리했습니다.
-- Intune 디바이스 준수 정책을 만들어 Android 및 iOS 디바이스가 규격 디바이스로 간주되기 위해 충족해야 하는 조건을 설정했습니다.
+- 앱 구성 정책을 만들어 iOS/iPadOS의 EMM용 Slack 앱 및 Android 회사 프로필 디바이스용 Slack 앱을 관리했습니다.
+- Intune 디바이스 규정 준수 정책을 만들어 Android 및 iOS/iPadOS 디바이스가 규격 디바이스로 간주되기 위해 충족해야 하는 조건을 설정했습니다.
 
 앱 구성 정책에 대한 자세한 내용은 [Microsoft Intune용 앱 구성 정책](app-configuration-policies-overview.md)을 참조하세요. 디바이스 준수 정책에 대해 자세히 알아보려면 [Intune을 사용하여 조직의 리소스 액세스를 허용하도록 디바이스에서 규칙 설정](../protect/device-compliance-get-started.md)을 참조하세요.

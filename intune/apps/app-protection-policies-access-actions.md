@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 0425b6a3f2c82f6ad2119286c8697f0eb0fc2f82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437888"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513913"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune에서 앱 보호 정책 조건부 시작 작업을 사용하여 선택적으로 데이터 초기화
 
@@ -122,5 +122,5 @@ Android의 경우 **설정** 드롭다운을 사용하여 다음 설정에 대�
 
 Intune 앱 보호 정책에 대한 자세한 내용은 다음을 참조하세요.
 - [앱 보호 정책을 만들고 할당하는 방법](app-protection-policies.md)
-- [iOS 앱 보호 정책 설정](app-protection-policy-settings-ios.md)
+- [iOS/iPadOS 앱 보호 정책 설정](app-protection-policy-settings-ios.md)
 - [Microsoft Intune의 Android 앱 보호 정책 설정](app-protection-policy-settings-android.md) 

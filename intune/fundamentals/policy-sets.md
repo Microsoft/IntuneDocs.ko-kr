@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206128"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514832"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>정책 세트를 사용하여 관리 개체 컬렉션 그룹화
 
@@ -52,7 +52,7 @@ ms.locfileid: "75206128"
 정책 세트를 만들 때 단일 할당 단위를 만들고 여러 개체 간 연결을 관리합니다. 정책 세트는 외부 개체에 대한 참조가 됩니다. 포함된 개체의 모든 변경 내용이 정책 세트에도 영향을 줍니다. 정책 세트를 만든 후 해당 개체 및 할당을 반복적으로 보고 편집할 수 있습니다. 
 
 > [!NOTE]
-> 정책 세트는 Windows, Android, macOS 및 iOS 설정을 지원하며 플랫폼 간에 할당될 수 있습니다.
+> 정책 세트는 Windows, Android, macOS 및 iOS/iPadOS 설정을 지원하며 플랫폼 간에 할당될 수 있습니다.
 
 ## <a name="how-to-create-a-policy-set"></a>정책 세트를 만드는 방법
 
@@ -82,15 +82,15 @@ ms.locfileid: "75206128"
 - 정책 세트를 만들 때 범위가 지정된 관리자가 범위 태그를 선택하지 않고 정책 세트를 만들려고 하면 **검토 + 만들기** 페이지에 도달할 때 유효성 검사에 실패하며 상태 표시줄에 오류가 표시됩니다. 관리자는 프로세스의 다른 페이지로 전환한 후 **검토 + 만들기** 페이지로 돌아가야 합니다. 이렇게 하면 **만들기** 옵션을 사용할 수 있습니다.  
  
 - 현재 정책 세트에서 지원되는 앱 유형은 다음과 같습니다.
-    - iOS 스토어 앱
-    - iOS 기간 업무 앱
-    - 관리형 iOS 기간 업무 앱
+    - iOS/iPadOS 스토어 앱
+    - iOS/iPadOS 기간 업무 앱
+    - 관리형 iOS/iPadOS 기간 업무 앱
     - Android 스토어 앱
     - Android 기간 업무 앱
     - 관리형 Android 기간 업무 앱
     - Office 365 ProPlus 제품군(Windows 10)
     - 웹 링크
-    - 기본 제공 iOS 앱
+    - 기본 제공 iOS/iPadOS 앱
     - 기본 제공 Android 앱
 
 - **모든 사용자**의 정책 세트 할당을 **Autopilot 프로필**로 설정할 수는 없습니다.
@@ -103,18 +103,18 @@ ms.locfileid: "75206128"
 
 - 정책 세트를 지원하는 MAM 정책 유형은 다음과 같습니다. 
     - MAM WIP(Windows) MDM 대상 관리형 앱 보호 
-    - MAM iOS 대상 관리형 앱 보호
+    - MAM iOS/iPadOS 대상 관리형 앱 보호
     - MAM Android 대상 관리형 앱 보호
-    - MAM iOS 대상 관리형 앱 구성
+    - MAM iOS/iPadOS 대상 관리형 앱 구성
     - MAM Android 대상 관리형 앱 구성
 
 - 정책 세트를 지원하지 않는 MAM 정책 유형은 다음과 같습니다. 
     - MAM WIP(Windows) 대상 관리형 앱 보호
 
 - MAM은 정책 세트 할당을 다음 정책 유형의 직접 할당으로 처리합니다.
-    - MAM iOS 대상 관리형 앱 보호
+    - MAM iOS/iPadOS 대상 관리형 앱 보호
     - MAM Android 대상 관리형 앱 보호
-    - MAM iOS 대상 관리형 앱 구성
+    - MAM iOS/iPadOS 대상 관리형 앱 구성
     - MAM Android 대상 관리형 앱 구성
 
     그룹에 배포된 정책 세트에 정책이 추가되면 그룹은 “정책 세트를 통해 할당됨”이 아니라 워크로드에서 직접 할당됨으로 표시됩니다. 이로 인해 MAM은 정책 세트에서 들어오는 그룹 할당 삭제를 처리하지 않습니다.

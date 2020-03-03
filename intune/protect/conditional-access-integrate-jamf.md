@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
-ms.reviewer: elocholi
+ms.reviewer: jinyoon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 9dab1025e283ed1591c22b03ed4e3a61d40a20c3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946685"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515087"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>준수를 위해 Intune과 Jamf Pro 통합
 
@@ -92,19 +92,17 @@ Intune을 Jamf Pro에 연결하려면 다음을 수행합니다.
 
 6. **관리**에서 **API 사용 권한**을 선택합니다. 
 
-7. API 사용 권한 페이지에서 **권한 추가**를 선택하여 새 사용 권한을 추가합니다. **API 사용 권한 요청** 페이지에서 **Intune**을 선택한 후 **애플리케이션 권한**을 선택합니다. **update_device_attributes** 확인란만 선택합니다.
+7. API 권한 페이지에서 기존의 각 권한 옆에 있는 **...** 아이콘을 선택하여 이 앱에서 사용 권한을 제거합니다. 이 작업은 필수입니다. 이 앱 등록에 예기치 않은 추가 권한이 있는 경우에는 통합에 실패합니다.
 
-8. 새 사용 권한이 적용될 수 있도록 몇 분 정도 기다립니다. 그런 다음 **_\<테넌트>_** 에 대한 관리자 동의 권한 부여를 선택합니다. 새 창에서 계정을 인증하고 프롬프트에 따라 애플리케이션 액세스 권한을 부여합니다.  
+8. 다음으로, 디바이스 특성을 업데이트할 권한을 추가합니다. **API 권한** 페이지의 왼쪽 위에서 **권한 추가**를 선택하여 새 권한을 추가합니다. 
 
-9. 관리자 동의가 적용될 수 있도록 몇 분 정도 기다려야 할 수 있습니다.
+9. **API 사용 권한 요청** 페이지에서 **Intune**을 선택한 후 **애플리케이션 권한**을 선택합니다. **update_device_attributes** 확인란만 선택하고 새 권한을 저장합니다.
 
-10. 페이지 맨 위에 있는 **새로 고침** 단추를 클릭하여 페이지를 새로 고칩니다. **update_device_attributes** 권한에 대해 관리자 동의 권한이 부여되었는지 확인합니다. 
+10. 그런 다음, **API 권한** 페이지의 왼쪽 위에 있는 **_\<테넌트>_ 에 대한 관리자 동의 허용**을 선택하여 이 앱에 대한 관리자 동의를 허용합니다. 새 창에서 계정을 다시 인증하고 프롬프트에 따라 애플리케이션 액세스 권한을 부여합니다.  
 
-11. **...** 메뉴를 선택하고 **관리자 동의 철회**를 선택하여 **User.Read** 권한의 관리자 동의를 제거합니다.
+11. 페이지 맨 위에 있는 **새로 고침** 단추를 클릭하여 페이지를 새로 고칩니다. **update_device_attributes** 권한에 대해 관리자 동의 권한이 부여되었는지 확인합니다. 
 
-12. 또한 **User.Read** 권한을 제거해야 합니다. **User.Read**의 **...** 메뉴를 선택하고 **권한 제거**를 선택합니다. 
-
-8. 앱이 성공적으로 등록되면 API 권한에는 **update_device_attributes**라는 하나의 권한만 포함되어야 하며 다음과 같이 표시되어야 합니다.
+12. 앱이 성공적으로 등록되면 API 권한에는 **update_device_attributes**라는 하나의 권한만 포함되어야 하며 다음과 같이 표시되어야 합니다.
 
    ![성공적인 사용 권한](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

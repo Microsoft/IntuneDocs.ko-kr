@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c6678c3fbc247ac0595775c0ccc72c7bdb9c55e1
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812381"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513098"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 사용자 및 디바이스 프로필 할당
 
@@ -89,7 +89,7 @@ Windows 10 디바이스에서 **적용 가능성 규칙**을 추가하여 프로
 
 ### <a name="user-groups"></a>사용자 그룹
 
-사용자 그룹에 적용된 프로필 설정은 항상 사용자를 따라 이동하며, 여러 디바이스에 로그인한 경우 사용자를 따라 이동합니다. 일반적으로 사용자는 업무용 Surface 및 개인 iOS 디바이스와 같은 여러 디바이스를 사용하게 됩니다. 또한 개인 사용자는 일반적으로 이러한 디바이스에서 메일 및 기타 조직 리소스에 액세스하게 됩니다.
+사용자 그룹에 적용된 프로필 설정은 항상 사용자를 따라 이동하며, 여러 디바이스에 로그인한 경우 사용자를 따라 이동합니다. 일반적으로 사용자는 업무용 Surface 및 개인 iOS/iPadOS 디바이스와 같은 여러 디바이스를 사용하게 됩니다. 또한 개인 사용자는 일반적으로 이러한 디바이스에서 메일 및 기타 조직 리소스에 액세스하게 됩니다.
 
 예를 들면 다음과 같습니다.
 

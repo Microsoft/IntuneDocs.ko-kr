@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8a9c74281df61fbf81914461286353d49b89a4f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504971"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510748"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune에서 스토리지, Event Hubs 또는 Log Analytics에 로그 데이터 전송(미리 보기)
 
 Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 제공 로그가 포함되어 있습니다.
 
-- **감사 로그**는 Intune에서 발생하는 다른 이벤트 또는 작업에 대한 세부 정보를 표시합니다.
+- **감사 로그**는 만들기, 업데이트(편집), 삭제, 할당 및 원격 작업을 포함하여 Intune에서 변경을 생성하는 활동 레코드를 보여 줍니다.
 - **작업 로그(미리 보기)** 는 비규격 디바이스에 대한 세부 정보뿐만 아니라 등록에 성공(또는 실패)한 사용자 및 디바이스에 대한 세부 정보를 표시합니다.
 - **디바이스 준수 조직 로그(미리 보기)** 는 Intune의 디바이스 규정 준수에 대한 조직 보고서와 비규격 디바이스에 대한 세부 정보를 표시합니다.
 
@@ -59,10 +59,11 @@ Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 
 
 ## <a name="send-logs-to-azure-monitor"></a>Azure Monitor로 로그 보내기
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **모니터링**에서 **진단 설정**을 선택합니다. 처음으로 여는 경우 다음과 같이 켭니다. 그렇지 않은 경우 설정을 추가합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+2. **보고서** > **진단 설정**을 선택합니다. 처음으로 여는 경우 다음과 같이 켭니다. 그렇지 않은 경우 설정을 추가합니다.
 
-    ![Intune에서 진단 설정을 켜서 Azure Monitor로 로그 보내기](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
+    > [!div class="mx-imgBorder"]
+    > ![Intune에서 진단 설정을 켜서 Azure Monitor로 로그 보내기](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
 
 3. 다음 속성을 입력합니다.
 
@@ -104,7 +105,8 @@ Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 
 
     완료되면 설정이 다음 설정과 유사하게 표시됩니다. 
 
-    ![Azure Storage 계정에 Intune 감사 로그를 전송하는 간단한 이미지](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure Storage 계정에 Intune 감사 로그를 전송하는 샘플 이미지](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
 
 4. 변경 내용을 **저장**합니다. 설정이 목록에 표시됩니다. 만든 후 **설정 편집** > **저장**을 선택하여 설정을 변경할 수 있습니다.
 
@@ -112,14 +114,7 @@ Microsoft Intune에는 사용자 환경에 대한 정보를 제공하는 기본 
 
 등록, 규정 준수, 구성, 디바이스, 클라이언트 앱 등을 포함하여 Intune의 다른 부분에 감사 로그를 내보낼 수도 있습니다.
 
-예를 들어 디바이스 규정 준수를 사용할 때 감사 로그를 내보내려면 다음을 수행합니다.
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에 로그인합니다.
-2. **디바이스 규정 준수** > **모니터** > **감사 로그**를 선택합니다.
-
-    ![감사 로그를 선택하여 Intune 데이터를 Azure Monitor 스토리지, 이벤트 허브 또는 분석으로 라우팅](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
-
-3. **데이터 내보내기 설정**을 선택합니다. 활성화되어 있지 않은 경우 **진단 설정**을 켤 수 있습니다. [Azure 모니터로 로그 보내기](#send-logs-to-azure-monitor)(이 문서)에서 설명된 대로 로그를 보낼 위치를 선택할 수도 있습니다.
+자세한 내용은 [감사 로그를 사용하여 이벤트 추적 및 모니터링](monitor-audit-logs.md)을 참조하세요. [로 로그 보내기](#send-logs-to-azure-monitor)(이 문서)에서 설명된 대로 감사 로그를 보낼 위치를 선택할 수 있습니다.
 
 ## <a name="cost-considerations"></a>비용 고려 사항
 
@@ -183,7 +178,7 @@ Microsoft Intune 라이선스가 이미 있는 경우 스토리지 계정 및 Ev
 
 Log Analytics 작업 영역 관리와 관련된 비용을 검토하려면 [Log Analytics에서 데이터 볼륨 및 보존을 제어하여 비용 관리](https://docs.microsoft.com/azure/log-analytics/log-analytics-manage-cost-storage)를 참조하세요.
 
-## <a name="frequently-asked-questions"></a>질문과 대답
+## <a name="frequently-asked-questions"></a>자주 묻는 질문
 
 자주 묻는 질문에 대한 답변을 확인하고 Azure Monitor의 Intune 로그와 관련된 알려진 문제에 대해 알아봅니다.
 

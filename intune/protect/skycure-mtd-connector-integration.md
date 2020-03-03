@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19c1bb959212ebeaea40f7089cba5533b6efeb71
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 9f639c4d2c2bcfa62f828fa18973fe6a513b1a82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912610"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514866"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Intune과 Symantec Endpoint Protection Mobile 통합 설정
 
@@ -54,7 +54,7 @@ SEP Mobile은 Intune과의 통합을 두 가지 모드로 지원합니다.
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile 앱을 Azure AD 및 Intune과 함께 사용하는 방법은 무엇인가요?
 
-- **iOS 앱:** 최종 사용자가 iOS 앱을 사용하여 Azure AD에 로그인할 수 있습니다.
+- **iOS 앱:** 최종 사용자가 iOS/iPadOS 앱을 사용하여 Azure AD에 로그인할 수 있습니다.
 
 - **Android 앱:** 최종 사용자가 Android 앱을 사용하여 Azure AD에 로그인할 수 있습니다.
 
@@ -77,11 +77,11 @@ SEP Mobile은 Intune과의 통합을 두 가지 모드로 지원합니다.
 
 5. 로그인 페이지가 열리면 Intune 자격 증명을 입력한 다음, **동의**를 선택합니다.
 
-    ![iOS 앱 Intune 로그인 프롬프트 이미지](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
+    ![iOS/iPadOS 앱 Intune 로그인 프롬프트 이미지](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
 
 6. Azure AD에 앱을 추가한 후, 앱이 성공적으로 추가되었다는 표시가 나타납니다.
 
-    ![iOS 앱 완료 화면 이미지](./media/skycure-mtd-connector-integration/symantec-portal-basic-added.png)
+    ![iOS/iPadOS 앱 완료 화면 이미지](./media/skycure-mtd-connector-integration/symantec-portal-basic-added.png)
 
 7. **SEP Mobile Android** 및 **관리** 앱에 대해 이러한 단계를 반복합니다.
 
@@ -136,11 +136,11 @@ SEP Mobile은 Mobile Threat Defense 서비스를 실행하는 디바이스를 Az
 
 6. **iOS 앱** 옆에 있는 **Active Directory에 추가** 단추를 선택합니다.
 
-    ![Active Directory에 iOS 앱을 추가하는 작업을 보여주는 이미지](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
+    ![Active Directory에 iOS/iPadOS 앱을 추가하는 작업을 보여 주는 이미지](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
 
 7. 디렉터리를 관리하는 Office 365 계정용 Azure Active Directory 자격 증명을 사용하여 로그인합니다.
 
-8. **동의** 단추를 선택하여 SEP Mobile iOS 앱을 Azure Active Directory에 추가합니다.
+8. **동의** 단추를 선택하여 SEP Mobile iOS/iPadOS 앱을 Azure Active Directory에 추가합니다.
 
     ![동의 단추를 보여주는 이미지](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
 

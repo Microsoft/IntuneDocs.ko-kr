@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 334cadfb7e668febad95a512eb34f62a73667ec6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414848"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513999"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune용 앱 구성 정책
 
@@ -91,7 +91,7 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 
 ## <a name="diagnostic-logs"></a>진단 로그
 
-### <a name="ios-configuration-on-unmanaged-devices"></a>관리되지 않는 디바이스에서 iOS 구성
+### <a name="iosipados-configuration-on-unmanaged-devices"></a>관리되지 않는 디바이스에서 iOS/iPadOS 구성
 
 관리 앱 구성에 대해 관리되지 않는 디바이스의 **Intune 진단 로그**를 사용하여 iOS/iPadOS 구성의 유효성을 검사할 수 있습니다. 아래 단계 외에도 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스할 수 있습니다. 자세한 내용은 [iOS/iPadOS에서 Microsoft Edge를 사용하여 관리형 앱 로그에 액세스](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)를 참조하세요.
 
@@ -135,7 +135,7 @@ Intune에서 앱 구성 정책을 사용하는 두 가지 옵션이 있습니다
 
 ![대상 지정 앱 구성](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
 
-### <a name="ios-configuration-on-managed-devices"></a>관리 디바이스에서 iOS 구성
+### <a name="iosipados-configuration-on-managed-devices"></a>관리형 디바이스에서 iOS/iPadOS 구성
 
 관리 앱 구성에 대해 관리 디바이스의 **Intune 진단 로그**를 사용하여 iOS/iPadOS 구성의 유효성을 검사할 수 있습니다.
 

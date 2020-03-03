@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 91442d262adb1d85217cb73f2f415766b89267af
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207209"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510523"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Microsoft Intune에서 파생 자격 증명 사용
 
@@ -37,7 +37,7 @@ ms.locfileid: "75207209"
 
 - Intune 관리자는 다음 개체의 ‘인증 방법’으로 **파생 자격 증명**을 지정합니다. 
 
-  - iOS 네이티브 메일 앱을 포함하는 Wi-Fi, VPN 및 메일과 같은 일반적인 프로필 유형
+  - iOS/iPadOS 기본 메일 앱을 포함하는 Wi-Fi, VPN 및 메일과 같은 일반적인 프로필 유형
 
   - 앱 인증
 
@@ -76,7 +76,7 @@ Intune은 테넌트당 하나의 파생 자격 증명 발급자를 지원합니�
 
 파생 자격 증명을 등록할 디바이스에 Intune 회사 포털 앱을 배포하도록 계획합니다. 디바이스 사용자는 회사 포털 앱을 사용하여 자격 증명 등록 프로세스를 시작합니다.
 
-iOS 디바이스의 경우 [Microsoft Intune에 iOS 스토어 앱 추가](../apps/store-apps-ios.md)를 참조하세요.
+iOS/iPadOS 디바이스에 대한 자세한 내용은 [Microsoft Intune에 iOS/iPadOS 스토어 앱 추가](../apps/store-apps-ios.md)를 참조하세요.
 
 ## <a name="plan-for-derived-credentials"></a>파생 자격 증명에 대한 계획
 
@@ -198,7 +198,7 @@ Intune을 사용하여 앱을 배포하는 것 외에도 DISA Purebred 애플리
 **다음 작업을 완료합니다.**
   
 1. [DISA Purebred 애플리케이션](https://cyber.mil/pki-pke/purebred/)을 다운로드합니다.
-2. Intune에 DISA Purebred 애플리케이션을 배포합니다.  [Microsoft Intune에 iOS 기간 업무 앱 추가](../apps/lob-apps-ios.md)를 참조하세요.
+2. Intune에 DISA Purebred 애플리케이션을 배포합니다.  [Microsoft Intune에 iOS/iPadOS 기간 업무 앱 추가](../apps/lob-apps-ios.md)를 참조하세요.
 3. DISA Purebred 애플리케이션용 [앱별 VPN](../configuration/vpn-settings-configure.md)을 만듭니다.
 
 ## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>인증과 S/MIME 서명 및 암호화에 파생 자격 증명 사용
@@ -224,7 +224,7 @@ Intune을 사용하여 앱을 배포하는 것 외에도 DISA Purebred 애플리
 2. **디바이스 구성** > **구성 프로필** > **프로필 만들기**를 선택합니다.
 3. 다음 설정을 입력합니다.
 
-    - **이름**: 프로필에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 프로필 이름을 지정합니다. 예를 들어 **iOS 디바이스 프로필에 대한 파생된 자격 증명**과 같은 이름이 좋은 프로필 이름입니다.
+    - **이름**: 프로필에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 프로필 이름을 지정합니다. 예를 들어 **iOS/iPadOS 디바이스 프로필에 대한 파생된 자격 증명**과 같은 이름이 좋은 프로필 이름입니다.
     - **설명**: 설정에 대한 개요와 기타 중요한 모든 세부 정보를 제공하는 설명을 입력합니다.
     - **플랫폼**: **iOS/iPadOS**를 선택합니다.
     - **프로필 유형**: **파생된 자격 증명**을 선택합니다.

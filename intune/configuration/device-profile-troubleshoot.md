@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812356"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511330"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune의 디바이스 정책 및 프로필을 통한 일반적인 질문, 이슈 및 해결 방법
 
@@ -36,11 +36,11 @@ Intune의 디바이스 프로필 및 정책을 사용하는 경우 일반적인 
 
 일부 추가 권장 사항.  
 
-- 연결하려는 Wi-Fi 네트워크에 암호가 사용되는 경우 Wi-Fi 라우터에 직접 연결할 수 있는지 확인합니다. iOS 디바이스로 테스트할 수 있습니다.
+- 연결하려는 Wi-Fi 네트워크에 암호가 사용되는 경우 Wi-Fi 라우터에 직접 연결할 수 있는지 확인합니다. iOS/iPadOS 디바이스로 테스트할 수 있습니다.
 - Wi-Fi 엔드포인트(Wi-Fi 라우터)에 연결을 완료한 후 사용한 SSID와 자격 증명(이 값은 암호)을 기록해 둡니다.
 - 미리 공유한 키 필드에 SSID와 자격 증명(암호)을 입력합니다. 
 - 사용자 수가 제한된 테스트 그룹(가급적 IT 팀)에 배포합니다. 
-- iOS 디바이스를 Intune에 동기화합니다. 아직 등록하지 않은 경우 등록합니다. 
+- iOS/iPadOS 디바이스를 Intune에 동기화합니다. 아직 등록하지 않은 경우 등록합니다. 
 - 동일한 Wi-Fi 엔드포인트에 다시 연결을 테스트합니다(첫 번째 단계 참조).
 - 더 큰 그룹에 롤아웃하고 최종적으로 조직의 모든 예상 사용자에게 롤아웃합니다. 
 
@@ -54,7 +54,7 @@ Intune 서비스에서 디바이스에 체크 인을 알립니다. 알림 시간
 
 | 플랫폼 | 새로 고침 주기|
 | --- | --- |
-| iOS | 약 8시간마다 |
+| iOS/iPadOS | 약 8시간마다 |
 | macOS | 약 8시간마다 |
 | Android | 약 8시간마다 |
 | 디바이스로 등록된 Windows 10 PC | 약 8시간마다 |
@@ -65,7 +65,7 @@ Intune 서비스에서 디바이스에 체크 인을 알립니다. 알림 시간
 
 | 플랫폼 | 빈도 |
 | --- | --- |
-| iOS | 1시간 동안 15분마다/그 이후에는 8시간마다 |  
+| iOS/iPadOS | 1시간 동안 15분마다/그 이후에는 8시간마다 |  
 | macOS | 1시간 동안 15분마다/그 이후에는 8시간마다 | 
 | Android | 15분 동안 3분마다/그 이후 2시간 동안은 15분마다/그 이후에는 약 8시간마다 | 
 | 디바이스로 등록된 Windows 10 PC | 15분 동안 3분마다/그 이후 2시간 동안은 15분마다/그 이후에는 약 8시간마다 | 
@@ -102,7 +102,7 @@ Intune 서비스에서 디바이스에 체크 인을 알립니다. 알림 시간
 
 정책이 앱에 배포되고 적용됩니다. 두 번째 정책이 배포됩니다. 이 시나리오에서는 첫 번째 정책이 우선 적용되어 계속 적용됩니다. 두 번째 정책은 충돌을 보여 줍니다. 둘 다 동시에 적용되면 이전 정책이 없으므로 두 정책이 충돌하게 됩니다. 충돌하는 설정은 가장 제한적인 값으로 설정됩니다.
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS 사용자 지정 정책 충돌 시의 결과
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>iOS/iPadOS 사용자 지정 정책 충돌 시의 결과
 
 Intune은 Apple 구성 파일 또는 사용자 지정 OMA-URI(Open Mobile Alliance Uniform Resource Identifier) 정책 페이로드를 평가하지 않으며 전달 메커니즘으로만 작동합니다.
 
@@ -144,7 +144,7 @@ Intune은 Apple 구성 파일 또는 사용자 지정 OMA-URI(Open Mobile Allian
     - NFC 허용
     - Wi-Fi 허용
 
-  - **iOS**: 다음을 제외한 모든 설정이 제거됩니다.
+  - **iOS/iPadOS**: 다음을 제외한 모든 설정이 제거됩니다.
   
     - 음성 로밍 허용
     - 데이터 로밍 허용
@@ -156,7 +156,7 @@ Intune은 Apple 구성 파일 또는 사용자 지정 OMA-URI(Open Mobile Allian
 
 프로필을 덜 안전한 값으로 변경하려면 보안 정책을 다시 설정합니다. 예를 들어 Windows 8.1의 데스크톱에서 오른쪽에서 안쪽으로 살짝 민 후 **설정** > **제어판**을 선택합니다. **사용자 계정** 애플릿을 선택합니다. 왼쪽 탐색 메뉴에서 **보안 정책 재설정** 링크가 있습니다(아래쪽 방향). 이를 선택한 다음, **정책 다시 설정**을 선택합니다.
 
-Android, Windows Phone 8.1 이상, iOS 및 Windows 10과 같은 기타 MDM 디바이스의 경우 제한적이지 않은 프로필을 적용할 수 있도록 사용을 중지하고 Intune에 다시 등록해야 해야 합니다.
+Android, Windows Phone 8.1 이상, iOS/iPadOS 및 Windows 10과 같은 기타 MDM 디바이스의 경우 제한적이지 않은 프로필을 적용할 수 있도록 사용을 중지하고 Intune에 다시 등록해야 합니다.
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Windows 10 프로필의 일부 설정은 "해당 없음"을 반환합니다.
 

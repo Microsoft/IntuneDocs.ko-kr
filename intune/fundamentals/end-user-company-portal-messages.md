@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414066"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514730"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>최종 사용자가 회사 포털 앱 메시지를 이해할 수 있도록 지원
 
@@ -126,7 +126,7 @@ Intune이 회사 계정을 만들어 해당 디바이스에 등록된 사용자�
 
 WIP(Windows Information Protection) 앱 보호 정책에서 **허용된 앱** 또는 **예외 앱** 목록에 회사 포털을 추가합니다. 자세한 내용은 [Intune을 사용하여 WIP(Windows Information Protection) 앱 보호 정책 만들기 및 배포](../apps/windows-information-protection-policy-create.md)를 참조하세요.
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>iOS 디바이스에서 iOS 회사 앱(기간 업무 앱) 승인 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>iOS/iPadOS 디바이스에서 iOS/iPadOS 회사 앱(기간 업무 앱) 승인 
 
 ### <a name="where-it-appears"></a>표시되는 곳
 
@@ -136,7 +136,7 @@ WIP(Windows Information Protection) 앱 보호 정책에서 **허용된 앱** �
 
 ### <a name="what-it-means"></a>의미
 
-이 메시지는 iOS 디바이스에서 회사가 개발한 앱을 승인 및 설치하려면 iOS 디바이스 설정을 수정해야 함을 의미합니다.
+이 메시지는 iOS/iPadOS 디바이스에서 회사가 개발한 앱을 승인 및 설치하려면 iOS/iPadOS 디바이스 설정을 수정해야 함을 의미합니다.
 
 회사 포털을 사용하여 해당 앱을 설치하고 앱을 시작하는 경우에는 다음 단계에 따라 앱을 다운로드한 후 앱을 승인합니다.
 

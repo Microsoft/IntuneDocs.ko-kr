@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: baeece091358a7cd05f0d1f8db7c0032870fc262
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 472b23581cddad16a1b7eaf37ddf99e7e37e70f5
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207097"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569237"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Intune과 NAC(네트워크 액세스 제어) 통합
 
@@ -67,31 +67,34 @@ NAC는 조건부 액세스와 연동하여 액세스 제어 결정을 제공합�
 
 ## <a name="use-nac-for-vpn-on-your-ios-devices"></a>iOS 디바이스에서 VPN에 대한 NAC 사용  
 
-- NAC는 VPN 프로필에서 NAC를 사용하도록 설정하지 않고도 다음 VPN에서 사용할 수 있습니다.
+NAC는 VPN 프로필에서 NAC를 사용하도록 설정하지 않고도 다음 VPN에서 사용할 수 있습니다.
 
   - Cisco Legacy AnyConnect용 NAC
   - F5 Access Legacy
   - Citrix VPN
 
-- NAC는 Citrix SSO 및 F5 Access에도 사용할 수 있습니다. Citrix SSO에 대해 NAC을 사용하도록 설정하려면
+NAC는 Cisco AnyConnect, Citrix SSO 및 F5 액세스에도 지원됩니다. 
+
+### <a name="to-enable-nac-for-cisco-anyconnect-for-ios"></a>iOS용 Cisco AnyConnect에 대해 NAC를 사용하도록 설정하려면:
+
+  - 아래 링크에 설명된 대로 NAC를 위해 Intune에 ISE를 통합합니다.
+  - VPN 프로필에서 **NAC(네트워크 액세스 제어) 사용** 설정을 **예**로 지정합니다.
+
+### <a name="to-enable-nac-for-citrix-sso"></a>Citrix SSO에 대해 NAC을 사용하도록 설정하려면
 
   - Citrix Gateway 12.0.59 이상을 사용합니다.  
   - Citrix SSO 1.1.6 이상을 설치해야 합니다.
   - Citrix 제품 설명서에 설명된 대로 [NAC를 위해 Intune에 NetScaler를 통합](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)합니다.
   - VPN 프로필에서 **기본 설정** > **NAC(네트워크 액세스 제어) 사용** > **동의**를 선택합니다.
 
-  보안상의 이유로 24시간마다 VPN 연결이 끊어집니다. VPN을 즉시 다시 연결할 수 있습니다.
 
-- F5 Access에 대해 NAC을 사용하도록 설정하려면
+### <a name="to-enable-nac-for-f5-access"></a>F5 Access에 대해 NAC을 사용하도록 설정하려면
 
   - F5 BIG-IP 13.1.1.5를 사용합니다. BIG-IP 14는 지원되지 않습니다.
   - BIG-IP와 NAC용 Intune을 통합하세요. [개요: 엔드포인트 관리 시스템을 사용하여 디바이스 상태 검사를 위한 APM 구성](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 가이드에 단계가 나열됩니다.
   - VPN 프로필에서 **기본 설정** > **NAC(네트워크 액세스 제어) 사용** > **동의**를 선택합니다.
 
   보안상의 이유로 24시간마다 VPN 연결이 끊어집니다. VPN을 즉시 다시 연결할 수 있습니다.
-
-- iOS에서 다음 VPN 클라이언트에는 네트워크 액세스 제어가 지원되지 않습니다.
-  - Cisco AnyConnect
 
 Microsoft는 이러한 최신 클라이언트를 위한 NAC 솔루션을 출시하기 위해 파트너와 협업하고 있습니다. 솔루션이 준비되면 이 문서가 추가 정보를 통해 업데이트될 것입니다.
 

@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune에서 Wi-Fi 디바이스 프로필 로그 문제 해결 및 검토 - Azure | Microsoft Docs
-description: Microsoft Intune에서 Android, iOS 및 Windows 디바이스에 대한 Wi-Fi 디바이스 구성 프로필 문제를 이해하고 해결합니다. 로그를 검토하고 몇 가지 일반적인 문제 및 가능한 해결 방법을 확인합니다.
+description: Microsoft Intune에서 Android, iOS/iPadOS 및 Windows 디바이스에 대한 Wi-Fi 디바이스 구성 프로필 문제를 이해하고 해결합니다. 로그를 검토하고 몇 가지 일반적인 문제 및 가능한 해결 방법을 확인합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: db663f96f1e4fe84c506395b98c52956069e5426
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547968"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512826"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune에서 Wi-Fi 디바이스 구성 프로필 문제 해결
 
-Intune에서 WiFi 네트워크에 대한 연결 설정을 포함하는 디바이스 구성 프로필을 만들 수 있습니다. 이러한 설정을 사용하여 사용자의 Android, iOS 및 Windows 디바이스를 조직 네트워크에 연결합니다.
+Intune에서 WiFi 네트워크에 대한 연결 설정을 포함하는 디바이스 구성 프로필을 만들 수 있습니다. 해당 설정을 사용하여 사용자의 Android, iOS/iPadOS 및 Windows 디바이스를 조직 네트워크에 연결합니다.
 
 이 문서에서는 Wi-Fi 프로필을 디바이스에 성공적으로 적용한 경우의 모습을 보여 줍니다. 여기에는 로그 정보, 일반적인 문제 등도 포함됩니다. 이 문서를 사용하여 Wi-Fi 프로필 문제를 해결할 수 있습니다.
 
@@ -100,25 +100,25 @@ Android에서 **Omadmlog.log** 파일은 디바이스에 설치된 Wi-Fi 프로�
 
 ```
 
-## <a name="ios"></a>iOS
+## <a name="iosipados"></a>iOS/iPadOS
 
 Wi-Fi 프로필을 디바이스에 설치하면 **관리 프로필**에 표시됩니다.
 
 > [!div class="mx-imgBorder"]
-> ![iOS 디바이스의 관리 프로필](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
+> ![Intune에 있는 iOS/iPadOS 디바이스의 관리 프로필](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
 > [!div class="mx-imgBorder"]
-> ![Wi-Fi 연결이 iOS 디바이스에서 Wi-Fi 네트워크로 표시됨](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
+> ![Wi-Fi 연결이 Intune에 있는 iOS/iPadOS 디바이스에서 Wi-Fi 네트워크로 표시됨](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
-### <a name="review-the-ios-console-and-device-logs"></a>iOS 콘솔 및 디바이스 로그 검토
+### <a name="review-the-iosipados-console-and-device-logs"></a>iOS/iPadOS 콘솔 및 디바이스 로그 검토
 
-iOS 디바이스에서 회사 포털 앱 로그는 Wi-Fi 프로필에 대한 정보를 포함하지 않습니다. Wi-Fi 프로필에 대한 설치 세부 정보를 보려면 콘솔/디바이스 로그를 사용합니다.
+iOS/iPadOS 디바이스에서 회사 포털 앱 로그는 Wi-Fi 프로필에 대한 정보를 포함하지 않습니다. Wi-Fi 프로필에 대한 설치 세부 정보를 보려면 콘솔/디바이스 로그를 사용합니다.
 
-1. iOS 디바이스를 Mac에 연결합니다. **애플리케이션** > **유틸리티**로 이동한 후 콘솔 앱을 엽니다.
+1. iOS/iPadOS 디바이스를 Mac에 연결합니다. **애플리케이션** > **유틸리티**로 이동한 후 콘솔 앱을 엽니다.
 2. **작업**에서 **정보 메시지 포함** 및 **디버그 메시지 포함**을 선택합니다.
 
     > [!div class="mx-imgBorder"]
-    > ![iOS 콘솔 앱에 정보 메시지 포함 및 디버그 메시지 포함](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
+    > ![iOS/iPadOS 콘솔 앱에 정보 메시지 포함 및 디버그 메시지 포함](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
 3. 시나리오를 재현하고 로그를 텍스트 파일에 저장합니다.
 
@@ -263,7 +263,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
 - Microsoft Intune의 Wi-Fi 프로필에 대한 자세한 내용은 다음 문서를 참조하세요.
 
-  - [Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md) 및 [Windows 10 이상](wi-fi-settings-windows.md)을 실행하는 디바이스에서 Wi-Fi 설정을 추가합니다.
+  - [Android](wi-fi-settings-android.md), [iOS/iPadOS](wi-fi-settings-ios.md) 및 [Windows 10 이상](wi-fi-settings-windows.md)을 실행하는 디바이스에서 Wi-Fi 설정을 추가합니다.
   - [지원 팁 - Intune에서 SCEP 인증서 배포를 위해 NDES를 구성하는 방법](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125)
   - [SCEP 인증서 프로필 배포](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune) 및 [NDES 구성](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune) 문제를 해결합니다.
 

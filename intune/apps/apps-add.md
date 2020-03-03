@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc262dc67c967ffd2c6525c4370df8e9fa0e4dff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755275"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511840"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune에 앱 추가 
 
@@ -52,7 +52,7 @@ Intune은 다양한 앱 유형을 지원합니다. 사용 가능한 옵션은 �
 | --- | --- | --- |
 | Android 스토어 앱  | 스토어 앱  | **앱 유형**으로 **Android**를 선택하고 앱의 Google Play 스토어 URL을 입력합니다. |
 | Android Enterprise 앱  | 스토어 앱  | **앱 유형**으로 **Android**를 선택하고 앱의 관리되는 Google Play 스토어 URL을 입력합니다. <sup>1</sup> |
-| iOS 스토어 앱  | 스토어 앱  | **앱 유형**으로 **iOS**를 선택하고 앱을 검색한 다음 Intune에서 앱을 선택합니다. |
+| iOS/iPadOS 스토어 앱  | 스토어 앱  | **앱 유형**으로 **iOS**를 선택하고 앱을 검색한 다음 Intune에서 앱을 선택합니다. |
 | Windows Phone 8.1 스토어 앱  | 스토어 앱  | **앱 유형**으로 **Windows Phone 8.1**을 선택하고 앱의 Microsoft Store URL을 입력합니다. |
 | Microsoft Store 앱  | 스토어 앱  | **앱 유형**으로 **Windows**를 선택하고 앱의 Microsoft Store URL을 입력합니다. |
 | 관리되는 Google Play 앱 | 스토어 앱  | **관리되는 Google Play**를 **앱 유형**으로 선택하고 앱을 검색한 후 Intune에서 앱을 선택합니다. |
@@ -61,10 +61,10 @@ Intune은 다양한 앱 유형을 지원합니다. 사용 가능한 옵션은 �
 | Windows 10용 Microsoft Edge 버전 77 이상 | 스토어 앱 | **앱 유형**에서 **Microsoft Edge, 버전 77 이상**에서 **Windows 10**을 선택합니다. |
 | macOS용 Microsoft Edge 버전 77 이상 | 스토어 앱 | **앱 유형**에서 **Microsoft Edge, 버전 77 이상**에서 **macOS**을 선택합니다. |
 | Android LOB(기간 업무) 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.apk**인 Android 설치 파일을 입력합니다.  |
-| iOS LOB 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.ipa**인 iOS 설치 파일을 입력합니다.  |
+| iOS/iPadOS LOB 앱 | LOB 앱 | **앱 유형**으로 **기간 업무** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음 확장명이 **.ipa**인 iOS/iPadOS 설치 파일을 입력합니다.  |
 | Windows Phone LOB 앱 | LOB 앱 | **앱 유형**으로 **LOB(기간 업무)** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.xap**인 Windows Phone 설치 파일을 입력합니다.  |
 | Windows LOB 앱 | LOB 앱 | 앱 유형으로 **사업 부문** 앱을 선택하고 **앱 패키지 파일**을 선택한 다음, 확장명이 **.msi**, **.appx**, **.appxbundle**, **.msix** 및 **.msixbundle**인 Windows 설치 파일을 입력합니다. |
-| 기본 제공 iOS 앱  | 기본 제공 앱 | **앱 유형**으로 **기본 제공 앱**을 선택한 다음, 제공된 앱 목록에서 기본 제공 앱을 선택합니다.  |
+| 기본 제공 iOS/iPadOS 앱  | 기본 제공 앱 | **앱 유형**으로 **기본 제공 앱**을 선택한 다음, 제공된 앱 목록에서 기본 제공 앱을 선택합니다.  |
 | 기본 제공 Android 앱  | 기본 제공 앱 | **앱 유형**으로 **기본 제공 앱**을 선택한 다음, 제공된 앱 목록에서 기본 제공 앱을 선택합니다.  |
 | 웹앱  | 웹앱  | **앱 유형**으로 **웹 링크**를 선택하고 웹앱을 가리키는 유효한 URL을 입력합니다.  |
 | Android Enterprise 시스템 앱  | 스토어 앱  | **Android Enterprise 시스템 앱**을 **앱 유형**으로 선택한 다음 앱 이름, 게시자, 패키지 파일을 입력합니다.  |
@@ -77,7 +77,7 @@ Intune은 다양한 앱 유형을 지원합니다. 사용 가능한 옵션은 �
 Microsoft Intune에서 **앱** > **모든 앱** > **추가**를 차례로 선택하여 앱을 추가할 수 있습니다. **앱 유형 선택** 창이 표시되고 **앱 유형**을 선택할 수 있습니다. 
 
 >[!TIP]
-> LOB 앱은 앱 설치 파일에서 추가하는 앱입니다. 예를 들어 iOS LOB 앱을 설치하려면 **앱 유형 선택** 창에서 **앱 유형**으로 **기간 업무 앱**을 선택하여 애플리케이션을 추가합니다. 그런 다음, 앱 패키지 파일(확장명 .ipa)을 선택합니다. 이러한 유형의 앱은 일반적으로 사내에서 작성됩니다.
+> LOB 앱은 앱 설치 파일에서 추가하는 앱입니다. 예를 들어 iOS/iPadOS LOB 앱을 설치하려면 **앱 유형 선택** 창에서 **앱 유형**으로 **기간 업무 앱**을 선택하여 애플리케이션을 추가합니다. 그런 다음, 앱 패키지 파일(확장명 .ipa)을 선택합니다. 이러한 유형의 앱은 일반적으로 사내에서 작성됩니다.
 
 ## <a name="assess-app-requirements"></a>앱 요구 사항 평가
 IT 관리자는 그룹에서 사용해야 하는 앱뿐 아니라 각 그룹과 하위 그룹에 필요한 기능도 결정합니다. 각 앱에 대해 필요한 플랫폼, 앱이 필요한 사용자 그룹, 해당 그룹에 적용할 구성 정책, 적용할 보호 정책을 결정합니다.  
@@ -109,8 +109,8 @@ Intune을 사용하여 디바이스를 관리하지 않고 MAM으로 앱을 관�
 ### <a name="determine-the-type-of-app-for-your-solution"></a>솔루션에 사용할 앱 유형 결정
 
 다음 앱 유형 중에서 선택할 수 있습니다.
-- **스토어의 앱**: Microsoft Store, iOS 스토어 또는 Android 스토어에 업로드된 앱은 스토어 앱입니다. 스토어 앱의 공급자가 앱 업데이트를 유지 관리하고 제공합니다. 스토어 목록에서 앱을 선택하고, Intune을 통해 사용자가 사용할 수 있는 앱으로 추가합니다.
-- **사내에서 작성한 앱(기간 업무)** : 사내에서 만든 앱은 LOB(기간 업무) 앱입니다. 이러한 유형의 앱 기능은 Windows, iOS, macOS 또는 Android 등 Intune에서 지원하는 플랫폼 중 하나에서 사용할 수 있도록 개발되었습니다. 조직에서 업데이트를 별도 파일로 만들어서 관리자에게 제공합니다. 관리자는 Intune으로 업데이트를 추가 및 배포하여 사용자에게 앱 업데이트를 제공합니다.
+- **스토어의 앱**: Microsoft Store, iOS/iPadOS 스토어 또는 Android 스토어에 업로드된 앱은 스토어 앱입니다. 스토어 앱의 공급자가 앱 업데이트를 유지 관리하고 제공합니다. 스토어 목록에서 앱을 선택하고, Intune을 통해 사용자가 사용할 수 있는 앱으로 추가합니다.
+- **사내에서 작성한 앱(기간 업무)** : 사내에서 만든 앱은 LOB(기간 업무) 앱입니다. 해당 유형의 앱 기능은 Windows, iOS/iPadOS, macOS 또는 Android 등 Intune에서 지원하는 플랫폼 중 하나에서 사용할 수 있도록 개발되었습니다. 조직에서 업데이트를 별도 파일로 만들어서 관리자에게 제공합니다. 관리자는 Intune으로 업데이트를 추가 및 배포하여 사용자에게 앱 업데이트를 제공합니다.
 - **웹의 앱**: 웹앱은 클라이언트-서버 애플리케이션입니다. 서버는 UI, 콘텐츠 및 기능을 포함하는 웹앱을 제공합니다. 또한 플랫폼을 호스팅하는 현대식 웹은 일반적으로 보안, 부하 분산 및 기타 이점을 제공합니다. 이 앱 유형은 웹에서 별도로 유지 관리됩니다. Intune을 사용하여 이 앱 유형을 가리킵니다. 앱에 액세스할 수 있는 사용자 그룹도 할당합니다. Android는 웹앱을 지원하지 않습니다.
 
 조직에 필요한 앱을 결정하는 경우 앱이 클라우드 서비스와 통합되는 방식, 앱이 액세스하는 데이터, BYOD 사용자가 앱을 사용할 수 있는지 여부, 앱에 인터넷 액세스가 필요한지 여부를 고려하세요.
@@ -128,7 +128,7 @@ Intune 관리 앱은 등록 없이 앱 보호를 사용할 수도 있으므로 �
 
 ### <a name="understanding-licensed-apps"></a>라이선스 앱 이해
 웹앱, 스토어 앱, LOB 앱을 이해하는 것은 물론 다음과 같은 대량 구매 프로그램 앱과 사용이 허가된 앱의 대상도 알고 있어야 합니다. 
-- **비즈니스용 Apple 대량 구매 프로그램(iOS)** : iOS App Store에서는 회사에서 실행하려는 앱의 라이선스를 여러 개 구매할 수 있습니다. 여러 복사본을 구매하면 회사에서 앱을 효율적으로 관리할 수 있습니다. 자세한 내용은 [iOS 대량 구매 앱 관리](vpp-apps-ios.md)를 참조하세요.
+- **비즈니스용 Apple 대량 구매 프로그램(iOS)** : iOS/iPadOS App Store에서는 회사에서 실행하려는 앱의 라이선스를 여러 개 구매할 수 있습니다. 여러 복사본을 구매하면 회사에서 앱을 효율적으로 관리할 수 있습니다. 자세한 내용은 [iOS/iPadOS 대량 구매 앱 관리](vpp-apps-ios.md)를 참조하세요.
 - **Android 회사 프로필**: Android 회사 프로필 디바이스에 앱을 할당하는 방법은 표준 Android 디바이스에 앱을 할당하는 방법과 다릅니다. Android 회사 프로필에 대해 설치하는 모든 앱은 Google Play 스토어에서 제공됩니다. Intune을 사용하여 원하는 앱을 찾아 승인합니다. 그러면 Azure Portal의 **사용이 허가된 앱** 노드에 앱이 표시되며, 다른 앱과 마찬가지로 앱의 할당을 관리할 수 있습니다.
 - **비즈니스용 Microsoft Store(Windows 10)** : 비즈니스용 Microsoft Store에서는 조직에서 사용하는 앱을 하나씩 또는 대량으로 찾아 구매할 수 있습니다. 스토어를 Microsoft Intune에 연결하면 Azure Portal에서 대량 구매 앱을 관리할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft 스토어에서 앱 관리](windows-store-for-business.md)를 참조하세요.
 
@@ -139,7 +139,7 @@ Intune 관리 앱은 등록 없이 앱 보호를 사용할 수도 있으므로 �
 앱을 추가하고 할당하기 전에 다음 사항을 고려하세요.
 
 - 스토어에서 앱을 추가하고 할당하는 경우 해당 스토어에 사용자 계정이 있어야 앱을 설치할 수 있습니다.
-- 할당한 앱 또는 항목 중 일부는 기본 제공 iOS 앱에 종속될 수 있습니다. 예를 들어 iOS 스토어에서 책을 할당하는 경우 iBooks 앱이 디바이스에 있어야 합니다. iBooks 기본 제공 앱을 제거한 경우에는 Intune을 사용하여 복구할 수 없습니다.
+- 할당한 앱 또는 항목 중 일부는 기본 제공 iOS/iPadOS 앱에 종속될 수 있습니다. 예를 들어 iOS/iPadOS 스토어에서 책을 할당하는 경우 iBooks 앱이 디바이스에 있어야 합니다. iBooks 기본 제공 앱을 제거한 경우에는 Intune을 사용하여 복구할 수 없습니다.
 
 > [!IMPORTANT]
 > 앱을 배포하고 설치한 뒤에 Intune Azure Portal에서 앱의 이름을 변경하면 더 이상 명령을 사용하여 앱을 대상으로 지정할 수 없습니다.
@@ -153,7 +153,7 @@ Intune 관리 앱은 등록 없이 앱 보호를 사용할 수도 있으므로 �
 - 업로드하는 파일의 최대 크기는 8GB입니다.
 
   > [!NOTE]
-  > Windows LOB(기간 업무) 앱(Win32, Windows 유니버설 AppX, Windows 유니버설 AppX 번들, Windows 유니버설 MSI X, Windows 유니버설 MSI X 번들 등)은 앱당 8GB의 최대 크기 제한이 있습니다. iOS LOB 앱을 비롯한 다른 모든 LOB 앱은 앱당 최대 크기가 2GB로 제한됩니다.
+  > Windows LOB(기간 업무) 앱(Win32, Windows 유니버설 AppX, Windows 유니버설 AppX 번들, Windows 유니버설 MSI X, Windows 유니버설 MSI X 번들 등)은 앱당 8GB의 최대 크기 제한이 있습니다. iOS/iPadOS LOB 앱을 비롯한 다른 모든 LOB 앱은 앱당 최대 크기가 2GB로 제한됩니다.
 
 ## <a name="create-and-edit-categories-for-apps"></a>앱의 범주 만들기 및 편집
 

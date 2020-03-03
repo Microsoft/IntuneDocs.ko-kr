@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966388"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514101"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Intune을 사용하여 SCEP를 지원하도록 인프라 구성
 
@@ -148,7 +148,7 @@ SCEP를 사용하는 경우 다음 인증서 및 템플릿이 사용됩니다.
        > [!IMPORTANT]
        > 필요한 애플리케이션 정책만 추가합니다. 보안 관리자와 선택 사항을 확인합니다.
 
-     - iOS 및 macOS 인증서 템플릿의 경우 **키 사용**을 편집하고 **서명이 원본 증명임**이 선택되어 있지 않은지 확인합니다.
+     - iOS/iPadOS 및 macOS 인증서 템플릿의 경우 **키 사용**을 편집하고 **서명이 원본 증명임**이 선택되어 있지 않은지 확인합니다.
 
      ![템플릿, 확장 탭](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Intune Certificate Connector에서 NDES 서버 **시스템 계정** 또는 **NDE
 기본적으로 Intune은 템플릿에 구성된 값을 사용합니다. 그러나 요청자가 다른 값을 입력할 수 있도록 CA를 구성할 수 있으며 해당 값은 Intune 콘솔 내에서 설정할 수 있습니다.
 
 > [!IMPORTANT]
-> iOS 및 macOS의 경우 항상 템플릿에 설정된 값을 사용합니다.
+> iOS/iPadOS 및 macOS의 경우 항상 템플릿에 설정된 값을 사용합니다.
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>Intune 콘솔 내에서 설정할 수 있는 값을 구성하려면
 

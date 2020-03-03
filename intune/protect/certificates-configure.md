@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410192"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576532"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune의 인증에 인증서 사용
 
@@ -38,7 +38,7 @@ Intune에서 인증서를 사용하여 VPN, Wi-Fi 또는 메일 프로필을 통
 
 이러한 인증서를 배포하려면 인증서 프로필을 만들어 디바이스에 할당합니다.
 
-사용자가 만드는 각 개별 인증서 프로필은 단일 플랫폼을 지원합니다. 예를 들어, PKCS 인증서를 사용하는 경우 Android용 PKCS 인증서 프로필과 별도의 iOS용 PKCS 인증서 프로필을 만듭니다. 또한 이러한 두 플랫폼에 SCEP 인증서를 사용하는 경우 Android용 SCEP 인증서 프로필과 iOS용 프로필을 따로 만듭니다.
+사용자가 만드는 각 개별 인증서 프로필은 단일 플랫폼을 지원합니다. 예를 들어 PKCS 인증서를 사용하는 경우 Android용 PKCS 인증서 프로필과 별도의 iOS/iPadOS용 PKCS 인증서 프로필을 만듭니다. 또한 이러한 두 플랫폼에 SCEP 인증서를 사용하는 경우 Android용 SCEP 인증서 프로필과 iOS/iPadOS용 프로필을 따로 만듭니다.
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Microsoft 인증 기관을 사용하는 경우의 일반적인 고려 사항
 
@@ -83,7 +83,7 @@ Microsoft CA(인증 기관)를 사용하는 경우:
 | Android Enterprise <br> - 완전 관리형(장치 소유자)   | ![지원됨](./media/certificates-configure/green-check.png) |   | ![지원됨](./media/certificates-configure/green-check.png) |   |
 | Android Enterprise <br> - 전용(장치 소유자)   | ![지원됨](./media/certificates-configure/green-check.png)  |   | ![지원됨](./media/certificates-configure/green-check.png)  |   |
 | Android Enterprise <br> - 회사 프로필    | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |
-| iOS                   | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |
+| iOS/iPadOS                   | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) | ![지원됨](./media/certificates-configure/green-check.png) |
 | macOS                 | ![지원됨](./media/certificates-configure/green-check.png) |  ![지원됨](./media/certificates-configure/green-check.png) |![지원됨](./media/certificates-configure/green-check.png)|![지원됨](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![지원됨](./media/certificates-configure/green-check.png)  |  | ![지원됨](./media/certificates-configure/green-check.png)| ![지원됨](./media/certificates-configure/green-check.png) |
 | Windows 8.1 이상 |![지원됨](./media/certificates-configure/green-check.png)  |  |![지원됨](./media/certificates-configure/green-check.png) |   |

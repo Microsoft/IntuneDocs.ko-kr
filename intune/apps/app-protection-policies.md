@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437905"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513727"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>앱 보호 정책을 만들고 할당하는 방법
 
@@ -74,21 +74,21 @@ iOS/iPadOS 및 Android 앱용 앱 보호 정책을 만드는 경우 최신 Intun
     이 페이지에서는 잘라내기, 복사, 붙여넣기 및 다른 이름으로 저장 제한을 포함한 DLP(데이터 손실 방지) 컨트롤의 설정을 제공합니다. 이 설정은 사용자가 이 앱 보호 정책이 적용되는 앱의 데이터와 상호 작용하는 방법을 결정합니다.
 
     **데이터 보호 설정**:<br>
-    - **iOS/iPadOS 데이터 보호** - 자세한 내용은 [iOS 앱 보호 정책 설정 - 데이터 보호](~/apps/app-protection-policy-settings-ios.md#data-protection)를 참조하세요.
+    - **iOS/iPadOS 데이터 보호** - 자세한 내용은 [iOS/iPadOS 앱 보호 정책 설정 - 데이터 보호](~/apps/app-protection-policy-settings-ios.md#data-protection)를 참조하세요.
     - **Android 데이터 보호** - 자세한 내용은 [Android 앱 보호 정책 설정 - 데이터 보호](~/apps/app-protection-policy-settings-android.md#data-protection)를 참조하세요.
 
 7. **다음**을 클릭하여 **액세스 요구 사항** 페이지를 표시합니다.<br>
     이 페이지에서는 사용자가 업무용으로 앱에 액세스하기 위해 충족해야 하는 PIN 및 자격 증명 요구 사항을 구성할 수 있는 설정을 제공합니다. 
  
     **액세스 요구 사항 설정**:<br>
-    - **iOS/iPadOS 액세스 요구 사항** - 자세한 내용은 [iOS 앱 보호 정책 설정 - 액세스 요구 사항](~/apps/app-protection-policy-settings-ios.md#access-requirements)을 참조하세요.
+    - **iOS/iPadOS 액세스 요구 사항** - 자세한 내용은 [iOS/iPadOS 앱 보호 정책 설정 - 액세스 요구 사항](~/apps/app-protection-policy-settings-ios.md#access-requirements)을 참조하세요.
     - **Android 액세스 요구 사항** - 자세한 내용은 [Android 앱 보호 정책 설정 - 액세스 요구 사항](~/apps/app-protection-policy-settings-android.md#access-requirements)을 참조하세요.
 
 8. **다음**을 클릭하여 **조건부 시작** 페이지를 표시합니다.<br>
     이 페이지에서는 앱 보호 정책에 대한 로그인 보안 요구 사항을 설정하는 설정을 제공합니다. **설정**을 선택하고 사용자가 회사 앱에 로그인하기 위해 충족해야 하는 **값**을 입력합니다. 그런 다음, 사용자가 요구 사항을 충족하지 않을 경우 **작업**을 선택합니다. 경우에 따라 단일 설정에 대해 여러 작업을 구성할 수 있습니다.
 
     **조건부 시작 설정**:<br>
-    - **iOS/iPadOS 조건부 시작** - 자세한 내용은 [iOS 앱 보호 정책 설정 - 조건부 시작](~/apps/app-protection-policy-settings-ios.md#conditional-launch)을 참조하세요.
+    - **iOS/iPadOS 조건부 시작** - 자세한 내용은 [iOS/iPadOS 앱 보호 정책 설정 - 조건부 시작](~/apps/app-protection-policy-settings-ios.md#conditional-launch)을 참조하세요.
     - **Android 조건부 시작** - 자세한 내용은 [Android 앱 보호 정책 설정 - 조건부 시작](~/apps/app-protection-policy-settings-android.md#conditional-launch)을 참조하세요.
 
 9. **다음**을 클릭하여 **할당** 페이지를 표시합니다.<br>
@@ -180,7 +180,7 @@ Intune 앱 보호 정책이 사용자의 ID를 대상으로 지정하기 때문�
 > [!NOTE]
 > Android 디바이스에는 선택한 디바이스 유형에 관계없이 Intune 회사 포털 앱을 설치하라는 메시지가 표시됩니다. 예를 들어 'Android 엔터프라이즈'를 선택하면 관리되지 않는 Android 디바이스 사용자에게는 계속 메시지가 표시됩니다.
 
-iOS의 경우 Intune에 등록된 디바이스의 앱에 APP(앱 보호 정책) 설정을 지정하려면 추가 앱 구성 설정이 필요합니다.
+iOS/iPadOS의 경우 Intune에 등록된 디바이스의 앱에 APP(앱 보호 정책) 설정을 지정하려면 추가 앱 구성 설정이 필요합니다.
 
 - 모든 MDM 관리되는 애플리케이션에 대해 **IntuneMAMUPN**을 구성해야 합니다. 자세한 내용은 [Microsoft Intune에서의 iOS/iPadOS 앱 간 데이터 전송 관리 방법](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)을 참조하세요.
 - 모든 타사 및 LOB MDM 관리 애플리케이션에 대해 **IntuneMAMDeviceID**를 구성해야 합니다. **IntuneMAMDeviceID**는 디바이스 ID 토큰으로 구성되어야 합니다. 예: `key=IntuneMAMDeviceID, value={{deviceID}}` 자세한 내용은 [관리되는 iOS/iPadOS 디바이스용 앱 구성 정책 추가](app-configuration-policies-use-ios.md)를 참조하세요.
@@ -192,7 +192,7 @@ iOS의 경우 Intune에 등록된 디바이스의 앱에 APP(앱 보호 정책) 
 ## <a name="policy-settings"></a>정책 설정
 iOS/iPadOS 및 Android에 대한 정책 설정의 전체 목록을 보려면 다음 링크 중 하나를 선택합니다.
 
-- [iOS 정책](app-protection-policy-settings-ios.md)
+- [iOS/iPadOS 정책](app-protection-policy-settings-ios.md)
 - [Android 정책](app-protection-policy-settings-android.md)
 
 ## <a name="next-steps"></a>다음 단계

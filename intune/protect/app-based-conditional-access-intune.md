@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b9fe275be3f7eccee7f60dc27e5068e5b91ca93d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713292"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514152"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune을 사용하는 앱 기반 조건부 액세스
 
@@ -34,7 +34,7 @@ ms.locfileid: "73713292"
 > [!NOTE]
 > 관리되는 앱은 앱 보호 정책이 적용되어 있으며 Intune을 통해 관리할 수 있는 앱입니다.
 
-Microsoft Outlook 앱만 Exchange Online에 액세스할 수 있도록 하려는 경우 iOS 및 Android에서 기본 제공 메일 앱을 차단할 수 있습니다. 또한 Intune 앱 보호 정책이 적용되지 않은 앱은 SharePoint Online에 액세스하지 못하도록 차단할 수 있습니다.
+Microsoft Outlook 앱만 Exchange Online에 액세스할 수 있도록 하려는 경우 iOS/iPadOS 및 Android에서 기본 제공 메일 앱을 차단할 수 있습니다. 또한 Intune 앱 보호 정책이 적용되지 않은 앱은 SharePoint Online에 액세스하지 못하도록 차단할 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 

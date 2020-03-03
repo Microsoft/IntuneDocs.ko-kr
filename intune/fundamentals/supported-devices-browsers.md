@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ea115810d604ce7ad49bd23b40951ee3f3da67fc
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437922"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609265"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune의 지원되는 운영 체제 및 브라우저
 
@@ -32,6 +32,9 @@ Microsoft Intune을 설정하기 전에 지원되는 운영 체제 및 브라우
 디바이스에 Intune을 설치하는 방법에 대한 도움말은 [관리 디바이스를 사용하여 작업 완료](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) 및 [Intune 네트워크 대역폭 사용](network-bandwidth-use.md)을 참조하세요.
 
 구성 서비스 공급자 지원에 대한 자세한 내용은 [구성 서비스 공급자 참조](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)를 참조하세요.
+
+> [!NOTE]
+> 이제 애플리케이션 및 디바이스가 Android용 회사 포털 앱 및 Android용 Intune 앱 SDK를 통해 회사 리소스에 액세스하려면 Intune에는 Android 5.x(롤리팝) 이상이 필요합니다. 4\.4를 실행하는 Polycom Android 기반 Teams 디바이스에는 이 요구 사항이 적용되지 않습니다. 해당 디바이스는 계속 지원됩니다. 
 
 ## <a name="intune-supported-operating-systems"></a>Intune에서 지원하는 운영 체제
 

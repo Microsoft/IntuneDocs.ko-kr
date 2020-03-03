@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune에서 암호화된 디바이스의 암호화 보고서
 titleSuffix: Microsoft Intune
-description: Microsoft Intune 포털 내에서 iOS 또는 Windows 디바이스 암호화 상태 보고서를 살펴보고, FileVault 및 BitLocker 복구 키에 액세스할 수 있습니다.
+description: Microsoft Intune 포털 내에서 iOS/iPadOS 또는 Windows 디바이스 암호화 상태 보고서를 살펴보고, FileVault 및 BitLocker 복구 키에 액세스할 수 있습니다.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: daa302813c7ea3ad35ecfa7dd8d70436bfe5e1a4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164661"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510506"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Intune에서 디바이스 암호화 모니터링
 

@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0232855773626693d848f77e561c51d281739215
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691814"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514611"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>단계별 시나리오 - 보안 Microsoft Office 모바일 앱 
 
-장치 관리 포털에서 이 단계별 시나리오에 따라 iOS 및 Android 디바이스에서 기본 Intune 앱 보호를 사용하도록 설정할 수 있습니다.
+디바이스 관리 포털에서 이 단계별 시나리오에 따라 iOS/iPadOS 및 Android 디바이스에서 기본 Intune 앱 보호를 사용하도록 설정할 수 있습니다.
 
 사용하도록 설정한 앱 보호는 다음 작업을 적용합니다. 
 - 작업 파일을 암호화합니다.
@@ -51,7 +51,7 @@ Office 모바일 앱 및 모바일용 Microsoft Edge는 이중 ID를 지원합�
 
 앱 기반 조건부 액세스 및 클라이언트 앱 관리는 Intune 앱 보호 정책을 지원하는 클라이언트 앱만 Exchange Online 및 기타 Office 365 서비스에 액세스할 수 있도록 함으로써 보안 계층을 추가합니다.
 
-Microsoft Outlook 앱만 Exchange Online에 액세스할 수 있도록 하려는 경우 iOS 및 Android에서 기본 제공 메일 앱을 차단할 수 있습니다. 또한 Intune 앱 보호 정책이 적용되지 않은 앱은 SharePoint Online에 액세스하지 못하도록 차단할 수 있습니다.
+Microsoft Outlook 앱만 Exchange Online에 액세스할 수 있도록 하려는 경우 iOS/iPadOS 및 Android에서 기본 제공 메일 앱을 차단할 수 있습니다. 또한 Intune 앱 보호 정책이 적용되지 않은 앱은 SharePoint Online에 액세스하지 못하도록 차단할 수 있습니다.
 
 이 예에서는 관리자가 앱 보호 정책을 Outlook 앱에 적용한 다음, 회사 전자 메일에 액세스할 때 사용할 수 있는 승인된 앱 목록에 Outlook 앱을 추가하는 조건부 액세스 규칙을 적용합니다.
 
@@ -69,7 +69,7 @@ Microsoft Outlook 앱만 Exchange Online에 액세스할 수 있도록 하려는
 
 **Intune 앱 보호** 단계별 시나리오에 따라 데이터가 조직 외부에서 공유되거나 누출되지 않도록 합니다. 
 
-할당된 iOS 및 Android 사용자는 Office 앱을 열 때마다 PIN을 입력해야 합니다. 시도가 5번 실패한 후 사용자는 PIN을 다시 설정해야 합니다. 이미 디바이스 PIN을 요구한 경우 사용자는 영향을 받지 않습니다.
+할당된 iOS/iPadOS 및 Android 사용자는 Office 앱을 열 때마다 PIN을 입력해야 합니다. 시도가 5번 실패한 후 사용자는 PIN을 다시 설정해야 합니다. 이미 디바이스 PIN을 요구한 경우 사용자는 영향을 받지 않습니다.
 
 ### <a name="what-you-will-need-to-continue"></a>계속해야 하는 작업
 
@@ -86,7 +86,7 @@ Microsoft Outlook 앱만 Exchange Online에 액세스할 수 있도록 하려는
 
 ## <a name="step-3---apps"></a>3단계 - 앱
 
-시작하는 데 도움이 되도록 이 단계별 시나리오에는 iOS 및 Android 디바이스를 보호하기 위해 다음 모바일 앱이 미리 선택되어 있습니다.
+시작하는 데 도움이 되도록 이 단계별 시나리오에는 iOS/iPadOS 및 Android 디바이스를 보호하기 위해 다음 모바일 앱이 미리 선택되어 있습니다.
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 

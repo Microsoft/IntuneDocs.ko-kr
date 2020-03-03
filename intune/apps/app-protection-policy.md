@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0f36e648c404858332245c5b1b457c9f6824614
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: d2d8d50f7ac5d79d4d0081e7eee2169e9ff45d49
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971889"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512078"
 ---
 # <a name="app-protection-policies-overview"></a>앱 보호 정책 개요
 
@@ -52,7 +52,7 @@ MAM(모바일 애플리케이션 관리) 앱 보호 정책을 사용하면 애�
 - **모바일 디바이스 관리 솔루션에 등록되지 않음:** 이 디바이스는 일반적으로 직원이 소유한 디바이스로서 Intune 또는 기타 MDM 솔루션에서 관리 또는 등록되지 않습니다.
 
 > [!IMPORTANT]
-> Office 365 서비스에 연결되는 Office 모바일 앱에 대한 모바일 앱 관리 정책을 만들 수 있습니다. 하이브리드 모던 인증이 활성화된 iOS 및 Android용 Outlook의 Intune 앱 보호 정책을 생성하여 Exchange 온-프레미스 사서함에 대한 액세스를 보호할 수도 있습니다. 이 기능을 사용하기 전에 [iOS 및 Android 요구 사항에 대한 Outlook](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)을 충족하는지 확인합니다. 온-프레미스 Exchange 또는 SharePoint 서비스에 연결하는 다른 앱에는 앱 보호 정책이 지원되지 않습니다.
+> Office 365 서비스에 연결되는 Office 모바일 앱에 대한 모바일 앱 관리 정책을 만들 수 있습니다. 하이브리드 모던 인증이 활성화된 iOS/iPadOS 및 Android용 Outlook의 Intune 앱 보호 정책을 생성하여 Exchange 온-프레미스 사서함에 대한 액세스를 보호할 수도 있습니다. 이 기능을 사용하기 전에 [iOS/iPadOS 및 Android 요구 사항에 대한 Outlook](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)을 충족하는지 확인합니다. 온-프레미스 Exchange 또는 SharePoint 서비스에 연결하는 다른 앱에는 앱 보호 정책이 지원되지 않습니다.
 
 ## <a name="benefits-of-using-app-protection-policies"></a>앱 보호 정책을 사용할 경우의 이점
 
@@ -79,7 +79,7 @@ MAM(모바일 애플리케이션 관리) 앱 보호 정책을 사용하면 애�
 
 Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 도와주는 다양한 기능을 제공합니다. 자세한 내용은 [플랫폼별 앱 관리 기능](app-management.md#app-management-capabilities-by-platform)을 참조하십시오.
 
-Intune 앱 보호 정책 플랫폼 지원은 Android 및 iOS 디바이스용 Office 모바일 애플리케이션 플랫폼 지원에 맞춰 조정됩니다. 자세한 내용은 [Office 시스템 요구 사항](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)의 **모바일 앱** 섹션을 참조하세요.
+Intune 앱 보호 정책 플랫폼 지원은 Android 및 iOS/iPadOS 디바이스용 Office 모바일 애플리케이션 플랫폼 지원에 맞춰 조정됩니다. 자세한 내용은 [Office 시스템 요구 사항](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)의 **모바일 앱** 섹션을 참조하세요.
 
 > [!IMPORTANT]
 > Android에서 앱 보호 정책을 받으려면 디바이스에 Intune 회사 포털이 필요합니다. 자세한 내용은 [Intune 회사 포털 액세스 앱 요구 사항](../fundamentals/end-user-mam-apps-android.md#access-apps)을 참조하세요.
@@ -135,7 +135,7 @@ MDM 솔루션에 등록되지 않은 BYOD 디바이스의 경우 앱 보호 정�
 
 [Intune SDK](../developer/app-sdk.md)와 통합되었거나 [Intune 앱 래핑 도구](../developer/apps-prepare-mobile-application-management.md)로 래핑된 모든 앱은 Intune 앱 보호 정책을 사용하여 관리할 수 있습니다. 이러한 도구를 사용하여 작성되었으며 공용으로 사용할 수 있는 [Microsoft Intune 보호 앱](apps-supported-intune-apps.md)의 공식 목록을 참조하세요.
 
-Intune SDK 개발 팀에서는 네이티브 Android, iOS(Obj-C, Swift), Xamarin, Xamarin.Forms 및 Cordova 플랫폼으로 빌드된 앱을 적극적으로 테스트하고 해당 앱에 대한 지원을 유지합니다. 일부 고객은 React Native와 NativeScript 같은 다른 플랫폼과 Intune SDK 통합에 성공했지만, Microsoft는 지원되는 플랫폼 외에 다른 플랫폼을 사용하는 앱 개발자를 위한 명확한 지침이나 플러그 인을 제공하지 않습니다.
+Intune SDK 개발 팀에서는 네이티브 Android, iOS/iPadOS(Obj-C, Swift), Xamarin, Xamarin.Forms 및 Cordova 플랫폼으로 빌드된 앱을 적극적으로 테스트하고 해당 앱에 대한 지원을 유지합니다. 일부 고객은 React Native와 NativeScript 같은 다른 플랫폼과 Intune SDK 통합에 성공했지만, Microsoft는 지원되는 플랫폼 외에 다른 플랫폼을 사용하는 앱 개발자를 위한 명확한 지침이나 플러그 인을 제공하지 않습니다.
 
 [Intune SDK](../developer/app-sdk.md)는 자사와 타사 버전 SDK 모두에 대해 [ADAL(Azure Active Directory Authentication Library)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)의 일부 고급 인증 기능을 사용합니다. 따라서 [MSAL(Microsoft Authenticiation Library)](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries)은 Intune 앱 보호 서비스 인증 및 조건부 실행과 같은 여러 핵심 시나리오에서 잘 작동하지 않습니다. Microsoft의 Identity 팀에서 제공하는 전반적인 지침이 모든 Microsoft Office 앱의 경우 MSAL로 전환하는 것임을 고려하면, [Intune SDK](../developer/app-sdk.md)는 결국 MSAL을 지원해야 하겠지만 현재로서는 계획이 없습니다.
 
@@ -188,7 +188,7 @@ OneDrive 관리자가 **admin.onedrive.com**을 탐색하고 **디바이스 액�
 
 OneDrive 관리자 콘솔에 사용 가능하게 만든 설정은 **글로벌** 정책이라는 특별한 Intune 앱 보호 정책을 구성합니다. 이 글로벌 정책은 테넌트의 모든 사용자에게 적용할 수 있으므로 정책 대상을 제어할 방법이 없습니다. 
 
-사용하도록 설정되면 iOS 및 Android용 OneDrive 및 SharePoint 앱은 기본적으로 선택한 설정을 통해 보호됩니다. IT Pro는 대상 앱을 더 많이 추가하고, 모든 정책 설정을 수정할 수 있도록 Intune 콘솔에서 이 정책을 편집할 수 있습니다. 
+사용하도록 설정되면 iOS/iPadOS 및 Android용 OneDrive 및 SharePoint 앱은 기본적으로 선택한 설정을 통해 보호됩니다. IT Pro는 대상 앱을 더 많이 추가하고, 모든 정책 설정을 수정할 수 있도록 Intune 콘솔에서 이 정책을 편집할 수 있습니다. 
 
 기본적으로 테넌트당 한 개의 **글로벌** 정책만 있을 수 있습니다. 그러나 [Intune Graph API](../developer/intune-graph-apis.md)를 사용하여 테넌트당 추가 글로벌 정책을 만들 수 있지만 권장되지는 않습니다. 이러한 정책 구현의 문제 해결이 복잡해질 수 있으므로 추가 글로벌 정책 만들기는 권장되지 않습니다.
 
@@ -218,11 +218,11 @@ PIN(개인 식별 번호)은 올바른 사용자가 애플리케이션에서 조
 **PIN 프롬프트 또는 회사 자격 증명 프롬프트, 빈도**<br>
 IT 관리자는 Intune 관리 콘솔에서 Intune 앱 보호 정책 설정인 **다음 시간(분) 후에 액세스 요구 사항 다시 확인**을 정의할 수 있습니다. 이 설정은 디바이스에서 액세스 요구 사항을 확인하고 애플리케이션 PIN 화면 또는 회사 자격 증명 프롬프트가 다시 표시되기까지의 시간을 지정합니다. 그러나 사용자에게 표시되는 빈도에 영향을 미치는 PIN에 대한 중요한 세부 정보는 다음과 같습니다.
 
-- **The PIN is shared among apps of the same publisher to improve usability**(유용성 향상을 위해 동일한 게시자의 앱 간에 PIN 공유):<br> iOS에서 **동일한 앱 게시자**의 모든 앱에서 하나의 앱 PIN을 공유합니다. 예를 들어 모든 Microsoft 앱은 동일한 PIN을 공유합니다. Android의 경우 하나의 앱 PIN이 모든 앱 간에서 공유됩니다.
-- **디바이스 재부팅 후에 *다음 시간(분) 후에 액세스 요구 사항 다시 확인* 동작:**<br> 타이머는 다음번에 Intune 앱 PIN 또는 회사 자격 증명 프롬프트를 표시할 시기를 결정하는 비활성 시간(분)을 추적합니다. iOS에서 타이머는 디바이스 재부팅에 영향을 받지 않습니다. 따라서 디바이스 재부팅은 Intune PIN(또는 대상 회사 자격 증명) 정책을 사용하는 iOS 앱에서 사용자가 비활성화된 시간(분)에 영향을 주지 않습니다. Android에서는 타이머가 디바이스 재부팅 시 다시 설정됩니다. 따라서 Intune PIN(또는 회사 자격 증명) 정책을 사용하는 Android 앱은 **디바이스 재부팅 후** ‘다음 시간(분) 후에 액세스 요구 사항 다시 확인’ 설정 값에 상관없이 앱 PIN 또는 회사 자격 증명 프롬프트를 묻는 메시지를 표시합니다.  
+- **The PIN is shared among apps of the same publisher to improve usability**(유용성 향상을 위해 동일한 게시자의 앱 간에 PIN 공유):<br> iOS/iPadOS에서 **동일한 앱 게시자의** 모든 앱에서 하나의 앱 PIN을 공유합니다. 예를 들어 모든 Microsoft 앱은 동일한 PIN을 공유합니다. Android의 경우 하나의 앱 PIN이 모든 앱 간에서 공유됩니다.
+- **디바이스 재부팅 후에 *다음 시간(분) 후에 액세스 요구 사항 다시 확인* 동작:**<br> 타이머는 다음번에 Intune 앱 PIN 또는 회사 자격 증명 프롬프트를 표시할 시기를 결정하는 비활성 시간(분)을 추적합니다. iOS/iPadOS에서 타이머는 디바이스 재부팅에 영향을 받지 않습니다. 따라서 디바이스 재부팅은 Intune PIN(또는 대상 회사 자격 증명) 정책을 사용하는 iOS/iPadOS 앱에서 사용자가 비활성화된 시간(분)에 영향을 주지 않습니다. Android에서는 타이머가 디바이스 재부팅 시 다시 설정됩니다. 따라서 Intune PIN(또는 회사 자격 증명) 정책을 사용하는 Android 앱은 **디바이스 재부팅 후** ‘다음 시간(분) 후에 액세스 요구 사항 다시 확인’ 설정 값에 상관없이 앱 PIN 또는 회사 자격 증명 프롬프트를 묻는 메시지를 표시합니다.  
 - **PIN과 관련된 타이머의 롤링 특성:**<br> 앱(앱 A)에 액세스하기 위해 PIN을 입력하고 앱이 디바이스에서 전경(기본 입력 포커스)을 나가면, 타이머가 해당 PIN을 재설정합니다. 이 PIN을 공유하는 어떠한 앱(앱 B)도 타이머가 재설정되었기 때문에 사용자에게 PIN 입력을 요구하지는 않습니다. '다음 시간(분) 후에 액세스 요구 사항 다시 확인' 값이 다시 충족되면 메시지가 다시 나타납니다.
 
-iOS 디바이스의 경우 PIN이 다른 게시자의 앱 간에 공유되는 경우에도 **다음 시간(분) 후에 액세스 요구 사항 다시 확인** 값이 주 입력 포커스가 아닌 앱에 다시 충족할 때 프롬프트가 다시 표시됩니다. 따라서 예를 들어 사용자에게 게시자 _X_의 앱 _A_와 게시자 _Y_의 앱 _B_가 있는 경우 이러한 두 앱은 동일한 PIN을 공유합니다. 사용자는 앱 _A_(전경)에 중점을 두고, 앱 _B_는 최소화됩니다. **다음 시간(분) 후에 액세스 요구 사항 다시 확인** 값이 충족되고 사용자가 앱 _B_로 전환한 후 PIN이 필요합니다.
+iOS/iPadOS 디바이스의 경우 PIN이 다른 게시자의 앱 간에 공유되는 경우에도 **다음 시간(분) 후에 액세스 요구 사항 다시 확인** 값이 주 입력 포커스가 아닌 앱에 다시 충족할 때 프롬프트가 다시 표시됩니다. 따라서 예를 들어 사용자에게 게시자 _X_의 앱 _A_와 게시자 _Y_의 앱 _B_가 있는 경우 이러한 두 앱은 동일한 PIN을 공유합니다. 사용자는 앱 _A_(전경)에 중점을 두고, 앱 _B_는 최소화됩니다. **다음 시간(분) 후에 액세스 요구 사항 다시 확인** 값이 충족되고 사용자가 앱 _B_로 전환한 후 PIN이 필요합니다.
 
   >[!NOTE]
   > 특히 자주 사용하는 앱의 경우 사용자의 액세스 요구 사항을 보다 자주 확인하려면(즉, PIN 프롬프트) ‘다음 시간(분) 후에 액세스 요구 사항 다시 확인’ 설정 값을 줄이는 것이 좋습니다.
@@ -237,7 +237,7 @@ PIN을 사용하면 올바른 사용자만 앱에서 조직의 데이터에 액�
 앱 PIN 정책의 일환으로, IT 관리자는 앱을 잠그기 전에 사용자가 PIN 인증을 시도할 수 있는 최대 횟수를 설정할 수 있습니다. 이 시도 횟수가 충족되면 [Intune SDK](../developer/app-sdk.md)는 앱에서 "회사" 데이터를 초기화할 수 있습니다.
 
 **Intune PIN 및 선택적 초기화**<br>
-iOS에서 앱 수준의 PIN 정보는 앱과 동일 게시자 간에 공유되는 키 집합에 저장됩니다(예: 모든 제1 당사자 Microsoft 앱). 이 PIN 정보는 최종 사용자 계정에도 연결됩니다. 한 앱의 선택적 초기화는 다른 앱에 영향을 주지 않아야 합니다. 
+iOS/iPadOS에서 앱 수준의 PIN 정보는 앱과 동일 게시자 간에 공유되는 키 집합에 저장됩니다(예: 모든 제1 당사자 Microsoft 앱). 이 PIN 정보는 최종 사용자 계정에도 연결됩니다. 한 앱의 선택적 초기화는 다른 앱에 영향을 주지 않아야 합니다. 
 
 예를 들어 로그인한 사용자의 Outlook 설정 PIN은 공유된 키 집합에 저장됩니다. 사용자가 OneDrive에 로그인할 때는(Microsoft에서도 게시) 동일한 공유 키 집합을 사용하기 때문에 Outlook과 동일한 PIN이 표시됩니다. Outlook에서 로그아웃하거나 사용자 데이터를 초기화하는 경우 Intune SDK는 OneDrive에서 그 PIN을 계속 사용할 수 있으므로 해당 키 집합을 지우지 않습니다. 그와 같은 이유로 선택적 초기화에서는 공유된 키 집합(PIN 포함)이 지워지지 않습니다. 이러한 동작은 디바이스에 게시자의 앱이 하나만 존재할 때라도 동일하게 유지됩니다. 
 
@@ -246,21 +246,21 @@ PIN은 동일한 게시자의 앱 간에 공유되므로 단일 앱이 초기화
 일부 디바이스에서 PIN이 초기화되는 것으로 보일 경우엔 다음과 같은 상황이 발생할 수 있습니다. PIN이 ID와 연결되어 있으므로 초기화 이후 다른 계정에 사용자가 로그인되어 있다면 새 PIN을 입력하라는 메시지가 표시됩니다. 그러나 이전에 있던 계정으로 로그인하는 경우에는 키 집합에 이미 저장되어 있는 PIN을 사용하여 로그인할 수 있습니다.
 
 **동일한 게시자의 앱에서 PIN을 두 번 설정하시겠습니까?**<br>
-MAM(iOS)은 현재 영숫자 및 특수 문자를 사용하는 애플리케이션 수준 PIN('암호'라 함)을 허용합니다. 이 경우 [iOS용 Intune SDK](../developer/app-sdk-ios.md)를 통합하려면 애플리케이션(예: WXP, Outlook, Managed Browser, Yammer)이 참가해야 합니다. 이렇게 하지 않으면 대상 애플리케이션에 암호 설정이 제대로 적용되지 않습니다. 이는 iOS용 Intune SDK 버전 7.1.12에서 출시된 기능입니다.
+MAM(iOS/iPadOS)은 현재 영숫자 및 특수 문자를 사용하는 애플리케이션 수준 PIN('암호'라 함)을 허용합니다. 이 경우 [iOS용 Intune SDK](../developer/app-sdk-ios.md)를 통합하려면 애플리케이션(예: WXP, Outlook, Managed Browser, Yammer)이 참가해야 합니다. 이렇게 하지 않으면 대상 애플리케이션에 암호 설정이 제대로 적용되지 않습니다. 이는 iOS용 Intune SDK 버전 7.1.12에서 출시된 기능입니다.
 
-이 기능을 지원하고 이전 버전의 iOS용 Intune SDK와 호환성을 보장하기 위해 7.1.12 이상의 모든 PIN(숫자 또는 암호)은 이전 SDK 버전의 숫자 PIN과 별도로 처리됩니다. 따라서 동일한 게시자의 iOS용 Intune SDK 7.1.12 이전 버전과 7.1.12 이상 버전을 사용하는 애플리케이션이 디바이스에 있는 경우 두 개의 PIN을 설정해야 합니다. 두 개의 PIN(각 앱용)은 어떤 방식으로든 서로 관련이 없습니다(즉, 앱에 적용되는 앱 보호 정책을 준수해야 합니다). 따라서 PIN과 관련하여 앱 A와 B에 동일한 정책이 적용되는 *경우에만* 사용자가 동일한 PIN을 두 번 설정할 수 있습니다. 
+이 기능을 지원하고 이전 버전의 iOS/iPadOS용 Intune SDK와 호환성을 보장하기 위해 7.1.12 이상의 모든 PIN(숫자 또는 암호)은 이전 SDK 버전의 숫자 PIN과 별도로 처리됩니다. 따라서 동일한 게시자의 iOS용 Intune SDK 7.1.12 이전 버전과 7.1.12 이상 버전을 사용하는 애플리케이션이 디바이스에 있는 경우 두 개의 PIN을 설정해야 합니다. 두 개의 PIN(각 앱용)은 어떤 방식으로든 서로 관련이 없습니다(즉, 앱에 적용되는 앱 보호 정책을 준수해야 합니다). 따라서 PIN과 관련하여 앱 A와 B에 동일한 정책이 적용되는 *경우에만* 사용자가 동일한 PIN을 두 번 설정할 수 있습니다. 
 
-이 동작은 Intune 모바일 앱 관리에서 사용하도록 설정된 iOS 애플리케이션의 PIN과 관련이 있습니다. 시간이 지나 애플리케이션이 최신 버전의 iOS용 Intune SDK를 채택하면서 동일한 게시자의 앱에서 PIN을 두 번 설정해야 하는 문제는 완화됩니다. 예를 보려면 아래 참고를 참조하세요.
+이 동작은 Intune 모바일 앱 관리에서 사용하도록 설정된 iOS/iPadOS 애플리케이션의 PIN과 관련이 있습니다. 시간이 지나 애플리케이션이 최신 버전의 iOS/iPadOS용 Intune SDK를 채택하면서 동일한 게시자의 앱에서 PIN을 두 번 설정해야 하는 문제는 완화됩니다. 예를 보려면 아래 참고를 참조하세요.
 
   >[!NOTE]
-  > 예를 들어 앱 A는 7.1.12 이전 버전으로 빌드되고 앱 B는 동일한 게시자의 7.1.12 이상 버전으로 빌드된 경우, iOS 디바이스에 두 앱이 모두 설치되어 있으면 최종 사용자가 A와 B에 대해 별도로 PIN을 설정해야 합니다.
+  > 예를 들어 앱 A는 7.1.12 이전 버전으로 빌드되고 앱 B는 동일한 게시자의 7.1.12 이상 버전으로 빌드된 경우, iOS/iPadOS 디바이스에 두 앱이 모두 설치되어 있으면 최종 사용자가 A와 B에 대해 별도로 PIN을 설정해야 합니다.
   > SDK 버전 7.1.9를 사용하는 앱 C가 디바이스에 설치되면 앱 A와 동일한 PIN을 공유합니다. 7.1.14를 사용하는 앱 D는 앱 B와 동일한 PIN을 공유하게 됩니다.  
   > 앱 A와 C만 디바이스에 설치된 경우 하나의 PIN만 설정하면 됩니다. 앱 B와 D만 디바이스에 설치된 경우에도 마찬가지입니다.
 
 ### <a name="app-data-encryption"></a>앱 데이터 암호화
 IT 관리자는 앱 데이터 암호화를 요구하는 앱 보호 정책을 배포할 수 있습니다. 이러한 정책의 일환으로, IT 관리자는 콘텐츠가 암호화되는 경우를 지정할 수도 있습니다.
 
-**Intune 데이터 암호화가 처리되는 방식**<br> 암호화 앱 보호 정책 설정에 대한 자세한 내용은 [Android 앱 보호 정책 설정](app-protection-policy-settings-android.md) 및 [iOS 앱 보호 정책 설정](app-protection-policy-settings-ios.md)을 참조하세요.
+**Intune 데이터 암호화가 처리되는 방식**<br> 암호화 앱 보호 정책 설정에 대한 자세한 내용은 [Android 앱 보호 정책 설정](app-protection-policy-settings-android.md) 및 [iOS/iPadOS 앱 보호 정책 설정](app-protection-policy-settings-ios.md)을 참조하세요.
 
 **암호화되는 데이터**<br>
 IT 관리자의 앱 보호 정책에 따라 "회사"로 표시된 데이터만 암호화됩니다. 데이터는 비즈니스 위치에서 시작될 경우 "회사" 데이터로 간주됩니다. Office 앱의 경우 Intune은 다음을 비즈니스 위치로 간주합니다.
@@ -304,15 +304,15 @@ IT 관리자는 Intune을 사용하여 쉽게 관리할 수 있는 Microsoft Int
 ### <a name="device-fingerprint-or-face-ids"></a>디바이스 지문 또는 얼굴 ID 
 Intune 앱 보호 정책을 사용하면 Intune의 사용이 허가된 사용자에 대해서만 앱 액세스를 제어할 수 있습니다. 앱에 대한 액세스를 제어하는 한 가지 방법으로, 지원되는 디바이스에서 Apple의 Touch ID 또는 Face ID를 요구하는 방법이 있습니다. Intune은 디바이스의 생체 인식 데이터베이스에 변경 사항이 있는 경우 동작을 구현하며, Intune은 다음 비활성 시간 제한 값이 충족될 때 사용자에게 PIN을 요구하는 메시지를 표시합니다. 생체 인식 데이터의 변경 사항에는 지문 또는 얼굴의 추가나 제거가 포함됩니다. Intune 사용자에게 설정한 PIN이 없는 경우 Intune PIN 설정으로 안내됩니다.
  
-이 프로세스의 목적은 앱 내의 조직 데이터를 앱 수준에서 보호하고 계속 안전하게 유지하기 위한 것입니다. 이 기능은 iOS에만 제공되고 iOS용 Intune SDK, 버전 9.0.1 이상을 통합하는 애플리케이션의 참여가 필요합니다. 대상 애플리케이션에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 애플리케이션 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
+이 프로세스의 목적은 앱 내의 조직 데이터를 앱 수준에서 보호하고 계속 안전하게 유지하기 위한 것입니다. 이 기능은 iOS/iPadOS에만 제공되고 iOS/iPadOS용 Intune SDK, 버전 9.0.1 이상을 통합하는 애플리케이션의 참여가 필요합니다. 대상 애플리케이션에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 애플리케이션 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
   
 ### <a name="ios-share-extension"></a>iOS 공유 확장
-데이터 전송 정책이 **관리되는 앱만** 또는 **앱 없음**으로 설정된 경우에도 사용자가 iOS 공유 확장을 사용하여 관리되지 않는 앱에서 회사 또는 학교 데이터를 열 수 있습니다. Intune 앱 보호 정책은 디바이스를 관리하지 않고는 iOS 공유 확장을 제어할 수 없습니다. 따라서 Intune은 _**"회사" 데이터를 앱 외부에서 공유하기 전에 먼저 암호화합니다**_ . 관리되는 앱 외부에서 "회사" 파일 열기를 시도하여 이 암호화 동작의 유효성을 검사할 수 있습니다. 파일이 암호화되어야 하며, 관리되는 앱 외부에서 파일을 열 수 없어야 합니다.
+데이터 전송 정책이 **관리형 앱만** 또는 **앱 없음**으로 설정된 경우에도 사용자가 iOS/iPadOS 공유 확장을 사용하여 관리되지 않는 앱에서 회사 또는 학교 데이터를 열 수 있습니다. Intune 앱 보호 정책은 디바이스를 관리하지 않고는 iOS/iPadOS 공유 확장을 제어할 수 없습니다. 따라서 Intune은 _**"회사" 데이터를 앱 외부에서 공유하기 전에 먼저 암호화합니다**_ . 관리되는 앱 외부에서 "회사" 파일 열기를 시도하여 이 암호화 동작의 유효성을 검사할 수 있습니다. 파일이 암호화되어야 하며, 관리되는 앱 외부에서 파일을 열 수 없어야 합니다.
 
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>동일한 앱 및 사용자 집합에 대한 여러 Intune 앱 보호 액세스 설정
-액세스에 대한 Intune 앱 보호 정책은 최종 사용자 디바이스가 회사 계정에서 대상 앱에 액세스하려 하기 때문에 지정된 순서에 따라 적용됩니다. 일반적으로 초기화가 우선 적용되고, 차단이 적용된 다음, 무시할 수 있는 경고가 적용됩니다. 예를 들어 특정 사용자/앱에 적용되는 경우 사용자의 액세스를 차단하는 최소 iOS 운영 체제 설정 적용 후 iOS 버전을 업그레이드하도록 사용자에게 경고하는 최소 iOS 운영 체제 설정이 적용됩니다. 따라서 IT 관리자가 최소 iOS 운영 체제를 11.0.0.0으로, 최소 iOS 운영 체제(경고에서만 해당)를 11.1.0.0으로 구성하는 반면 앱에 액세스하려는 디바이스는 iOS 10인 시나리오에서 최종 사용자는 결국 액세스 차단을 야기하는 최소 iOS 운영 체제에 대한 더 제한적인 설정을 기반으로 차단되게 됩니다.
+액세스에 대한 Intune 앱 보호 정책은 최종 사용자 디바이스가 회사 계정에서 대상 앱에 액세스하려 하기 때문에 지정된 순서에 따라 적용됩니다. 일반적으로 초기화가 우선 적용되고, 차단이 적용된 다음, 무시할 수 있는 경고가 적용됩니다. 예를 들어 특정 사용자/앱에 적용되는 경우 사용자의 액세스를 차단하는 최소 iOS/iPadOS 운영 체제 설정 적용 후 iOS/iPadOS 버전을 업데이트하도록 사용자에게 경고하는 최소 iOS/iPadOS 운영 체제 설정이 적용됩니다. 따라서 IT 관리자가 최소 iOS 운영 체제를 11.0.0.0으로, 최소 iOS 운영 체제(경고에서만 해당)를 11.1.0.0으로 구성하는 반면 앱에 액세스하려는 디바이스는 iOS 10인 시나리오에서 최종 사용자는 결국 액세스 차단을 야기하는 최소 iOS 운영 체제에 대한 더 제한적인 설정을 기반으로 차단되게 됩니다.
 
-다른 유형의 설정을 처리할 경우 Intune SDK 버전 요구 사항이 우선하고 이어 앱 버전 요구 사항, iOS 운영 체제 버전 요구 사항이 처리됩니다. 그런 다음, 동일한 순서로 설정의 모든 형식에 대한 모든 경고를 확인합니다. Intune SDK 버전 요구 사항은 필수 차단 시나리오의 경우 Intune 제품 팀의 안내에 따라 구성하는 것이 좋습니다.
+다른 유형의 설정을 처리할 경우 Intune SDK 버전 요구 사항이 우선하고 이어 앱 버전 요구 사항, iOS/iPadOS 운영 체제 버전 요구 사항이 처리됩니다. 그런 다음, 동일한 순서로 설정의 모든 형식에 대한 모든 경고를 확인합니다. Intune SDK 버전 요구 사항은 필수 차단 시나리오의 경우 Intune 제품 팀의 안내에 따라 구성하는 것이 좋습니다.
 
 ## <a name="app-protection-experience-for-android-devices"></a>Android 디바이스에 대한 앱 보호 환경
 
@@ -354,7 +354,7 @@ Google Play 보호 API를 활용하는 앱 보호 정책 설정을 적용하려�
 
 [Microsoft Intune에서 사용 가능한 Android 앱 보호 정책 설정](app-protection-policy-settings-android.md)
 
-[Microsoft Intune에서 사용 가능한 iOS 앱 보호 정책 설정](app-protection-policy-settings-ios.md)
+[Microsoft Intune에서 사용 가능한 iOS/iPadOS 앱 보호 정책 설정](app-protection-policy-settings-ios.md)
 
 ## <a name="see-also"></a>참고 항목
 Salesforce 모바일 앱과 같은 타사 앱은 Intune을 특정 방식으로 사용하여 회사 데이터를 보호합니다. 특히 Salesforce 앱이 Intune에서 작동하는 방식(MDM 앱 구성 설정 포함)에 대한 자세한 내용은 [Salesforce 앱 및 Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf)을 참조하세요.

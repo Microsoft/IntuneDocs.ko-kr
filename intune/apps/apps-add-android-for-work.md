@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755394"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609192"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune을 사용하여 Android Enterprise 디바이스에 관리되는 Google Play 앱 추가
 
@@ -80,20 +80,6 @@ Android 엔터프라이즈 관리를 더 쉽게 구성하고 사용할 수 있�
 9. **선택**을 클릭하여 앱을 선택합니다.
 10. 블레이드 맨 위에서 **동기화**를 클릭하여 관리되는 Google Play 서비스와 앱을 동기화합니다.
 11. **새로 고침**을 클릭하여 앱 목록을 업데이트하고 새로 추가된 앱을 표시합니다.
-
-### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>관리되는 Google Play 스토어 앱에 추가 앱 설정 추가
-1. 추가 앱 세부 정보를 추가해야 하는 경우 앱 목록에서 앱을 선택합니다.
-2. **앱 정보** 옆의 **속성** > **편집**을 클릭합니다. **앱 정보** 페이지가 표시됩니다.
-3. **앱 정보** 페이지에서 앱 세부 정보를 추가합니다.
-    - **범주**: 필요한 경우, 기본 제공 앱 범주 중 하나 이상 또는 사용자가 만든 범주를 선택합니다. 이렇게 하면 사용자가 회사 포털을 찾아볼 때 앱을 더 쉽게 찾을 수 있습니다.
-    - **회사 포털에서 이 항목을 추천 앱으로 표시**: 사용자가 앱을 찾아볼 때 회사 포털의 기본 페이지에 앱 제품군을 눈에 띄게 표시하려면 이 옵션을 선택합니다.
-    - **정보 URL**: 필요에 따라 이 앱에 대한 정보를 포함하는 웹 사이트의 URL을 입력합니다. URL은 회사 포털에서 사용자에게 표시됩니다.
-    - **개인정보취급방침 URL**: 필요에 따라 이 앱에 대한 개인정보 관련 정보를 포함하는 웹 사이트의 URL을 입력합니다. URL은 회사 포털에서 사용자에게 표시됩니다.
-    - **개발자**: 선택적으로, 앱 개발자의 이름을 입력합니다.
-    - **소유자**: 필요한 경우 이 앱의 소유자 이름을 입력합니다(예: *HR 부서*).
-    - **메모**: 선택 사항으로, 이 앱과 연결할 모든 메모를 입력합니다.
-4. **검토 + 저장** 페이지를 보려면 **검토 + 저장**을 클릭합니다. 
-5. 작업이 완료되면 **저장**을 클릭하여 Intune에서 앱을 업데이트합니다.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>관리되는 Google Play 콘솔에서 관리되는 Google Play 스토어 앱 추가(대안)
 Intune을 사용하여 직접 추가하는 것이 아니라 Intune을 사용하여 관리되는 Google Play 앱을 동기화하려는 경우 다음 단계를 사용합니다.
@@ -238,6 +224,9 @@ Android Enterprise 회사 프로필 디바이스에 배포된 관리형 Google P
 
 ## <a name="delete-managed-google-play-apps"></a>관리되는 Google Play 앱 삭제
 필요한 경우 Microsoft Intune에서 관리되는 Google Play 앱을 삭제할 수 있습니다. 관리형 Google Play 앱을 삭제하려면 Azure Portal에서 Microsoft Intune을 열고 **앱** > **모든 앱**을 선택합니다. 앱 목록에서 관리되는 Google Play 앱의 오른쪽에 있는 줄임표(...)를 선택한 다음, 표시된 목록에서 **삭제**를 선택합니다. 앱 목록에서 관리되는 Google Play 앱을 삭제하면 관리되는 Google Play 앱이 자동으로 승인되지 않습니다.
+
+> [!NOTE]
+> 앱이 관리형 Google Play 스토어에서 승인되지 않거나 삭제된 경우에도 Intune 클라이언트 앱 목록에서 제거되지 않습니다. 따라서 앱이 승인되지 않은 경우에도 제거 정책 대상을 사용자로 지정할 수 있습니다.
 
 ## <a name="android-enterprise-system-apps"></a>Android Enterprise 시스템 앱
 

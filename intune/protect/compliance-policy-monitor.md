@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 128f615a9551c31e6b0e0de4f1d269083874bf48
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206077"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515121"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune 디바이스 준수 정책 모니터링
 
@@ -77,7 +77,7 @@ ms.locfileid: "75206077"
   - 디바이스가 규정 준수 정책이 할당되지 않고 규정 준수 여부를 확인하는 트리거가 없습니다.
   - 규정 준수 정책을 마지막으로 업데이트한 후 디바이스를 체크 인하지 않았습니다.
   - 특정 사용자에게 연결되지 않은 디바이스, 예:
-    - 사용자 선호도가 없는 Apple의 DEP(장비 등록 프로그램)를 통해 구매한 iOS 디바이스
+    - 사용자 선호도가 없는 Apple의 DEP(장비 등록 프로그램)를 통해 구매한 iOS/iPadOS 디바이스
     - Android 키오스크 또는 Android Enterprise 전용 디바이스
   - 디바이스를 DEM(디바이스 등록 관리자) 계정을 사용하여 등록했습니다.
 

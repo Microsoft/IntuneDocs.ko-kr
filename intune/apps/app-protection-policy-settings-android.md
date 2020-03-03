@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11f194d702d0de123ec010409874eb40ab38a9fa
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 81554f03063269ff6bdca30e23a1ad135a2a1b77
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971826"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512061"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune의 Android 앱 보호 정책 설정
 이 문서에서는 Android 디바이스에 대한 앱 보호 정책 설정을 설명합니다. 설명된 정책 설정은 Azure Portal의 **설정** 창에서 앱 보호 정책에 대해 [구성](app-protection-policies.md)될 수 있습니다.
@@ -63,7 +63,7 @@ ms.locfileid: "76971826"
 |------|------|------|
 | **네이티브 연락처 앱과 앱 동기화** | 앱에서 디바이스의 기본 연락처 앱에 데이터를 저장하는 것을 방지하려면 **차단**을 선택합니다. **허용**을 선택하면 앱에서 디바이스의 기본 연락처 앱에 데이터를 저장할 수 있습니다. <br><br>선택적 초기화를 수행하여 앱에서 회사 또는 학교 데이터를 제거할 경우 앱에서 네이티브 연락처 앱으로 직접 동기화된 연락처가 제거됩니다. 기본 주소록에서 다른 외부 소스에 동기화된 연락처는 초기화할 수 없습니다. 현재 Microsoft Outlook 앱에만 적용됩니다. | **허용** |
 | **조직 데이터 인쇄** | 앱에서 회사 또는 학교 데이터를 인쇄하는 것을 방지하려면 **차단**을 선택합니다. 이 설정에서 **허용**을 기본값으로 두면 사용자가 모든 조직 데이터를 내보내고 인쇄할 수 있습니다. | **허용** |
-|**다른 앱을 사용한 웹 콘텐츠 전송 제한** | 정책 관리 애플리케이션에서 웹 콘텐츠(http/https 링크)를 여는 방법을 지정합니다. 다음 중에서 선택합니다. <ul><li>**모든 앱**: 모든 앱의 웹 링크를 허용합니다.</li><li>**Intune Managed Browser**: Intune Managed Browser에서만 웹 콘텐츠를 열 수 있습니다. 이 브라우저는 정책 관리형 브라우저입니다.</li><li>**Microsoft Edge**: Microsoft Edge에서만 웹 콘텐츠를 열 수 있습니다. 이 브라우저는 정책 관리형 브라우저입니다.</li><li>**비관리형 브라우저**: 웹 콘텐츠를 **비관리형 브라우저 프로토콜** 설정으로 정의된 비관리형 브라우저에서만 열도록 허용합니다. 웹 콘텐츠가 대상 브라우저에서 관리되지 않습니다.<br>**참고**: Intune 회사 포털 버전 5.0.4415.0 이상이 필요합니다.</li><br><br>**정책 관리 브라우저**<br>Android에서 최종 사용자는 Intune Managed Browser와 Microsoft Edge가 설치되지 않은 경우 http/https 링크를 지원하는 다른 정책 관리 앱에서 선택할 수 있습니다.<p>정책 관리 브라우저가 필요하지만 설치되지 않은 경우 최종 사용자에게 Microsoft Edge를 설치하라는 메시지가 표시됩니다.<p>정책 관리 브라우저가 필요한 경우 **앱에서 다른 앱으로 데이터 전송 허용** 정책 설정에 의해 관리됩니다.<p>**Intune 디바이스 등록**<br>Intune을 사용하여 디바이스를 관리하는 경우 [Microsoft Intune에서 Managed Browser 정책을 사용하여 인터넷 액세스 관리](app-configuration-managed-browser.md)를 참조하세요.<p>**정책 관리 Microsoft Edge**<br>모바일 디바이스(iOS 및 Android)용 Microsoft Edge 브라우저는 Intune 앱 보호 정책을 지원합니다. Microsoft Edge 브라우저 애플리케이션에서 회사 Azure AD 계정으로 로그인하는 사용자는 Intune에서 보호됩니다. Microsoft Edge 브라우저는 APP SDK를 통합하고, 다음과 같은 방지를 제외하고는 모든 데이터 보호 정책을 지원합니다.<br><ul><li>**다른 이름으로 저장**: Microsoft Edge 브라우저에서 사용자가 클라우드 스토리지 공급자(예: OneDrive)에 앱 내 연결을 직접 추가할 수 없습니다.</li><li>**연락처 동기화**: Microsoft Edge 브라우저는 기본 연락처 목록에 저장하지 않습니다.</li></ul>**참고:** *APP SDK는 대상 앱이 브라우저인지 확인할 수 없습니다. Android 디바이스에서는 http/https 의도를 지원하는 다른 관리형 브라우저 앱이 허용됩니다.* | **구성되지 않음** |
+|**다른 앱을 사용한 웹 콘텐츠 전송 제한** | 정책 관리 애플리케이션에서 웹 콘텐츠(http/https 링크)를 여는 방법을 지정합니다. 다음 중에서 선택합니다. <ul><li>**모든 앱**: 모든 앱의 웹 링크를 허용합니다.</li><li>**Intune Managed Browser**: Intune Managed Browser에서만 웹 콘텐츠를 열 수 있습니다. 이 브라우저는 정책 관리형 브라우저입니다.</li><li>**Microsoft Edge**: Microsoft Edge에서만 웹 콘텐츠를 열 수 있습니다. 이 브라우저는 정책 관리형 브라우저입니다.</li><li>**비관리형 브라우저**: 웹 콘텐츠를 **비관리형 브라우저 프로토콜** 설정으로 정의된 비관리형 브라우저에서만 열도록 허용합니다. 웹 콘텐츠가 대상 브라우저에서 관리되지 않습니다.<br>**참고**: Intune 회사 포털 버전 5.0.4415.0 이상이 필요합니다.</li><br><br>**정책 관리 브라우저**<br>Android에서 최종 사용자는 Intune Managed Browser와 Microsoft Edge가 설치되지 않은 경우 http/https 링크를 지원하는 다른 정책 관리 앱에서 선택할 수 있습니다.<p>정책 관리 브라우저가 필요하지만 설치되지 않은 경우 최종 사용자에게 Microsoft Edge를 설치하라는 메시지가 표시됩니다.<p>정책 관리 브라우저가 필요한 경우 **앱에서 다른 앱으로 데이터 전송 허용** 정책 설정에 의해 관리됩니다.<p>**Intune 디바이스 등록**<br>Intune을 사용하여 디바이스를 관리하는 경우 [Microsoft Intune에서 Managed Browser 정책을 사용하여 인터넷 액세스 관리](app-configuration-managed-browser.md)를 참조하세요.<p>**정책 관리 Microsoft Edge**<br>모바일 디바이스(iOS/iPadOS 및 Android)용 Microsoft Edge 브라우저는 Intune 앱 보호 정책을 지원합니다. Microsoft Edge 브라우저 애플리케이션에서 회사 Azure AD 계정으로 로그인하는 사용자는 Intune에서 보호됩니다. Microsoft Edge 브라우저는 APP SDK를 통합하고, 다음과 같은 방지를 제외하고는 모든 데이터 보호 정책을 지원합니다.<br><ul><li>**다른 이름으로 저장**: Microsoft Edge 브라우저에서 사용자가 클라우드 스토리지 공급자(예: OneDrive)에 앱 내 연결을 직접 추가할 수 없습니다.</li><li>**연락처 동기화**: Microsoft Edge 브라우저는 기본 연락처 목록에 저장하지 않습니다.</li></ul>**참고:** *APP SDK는 대상 앱이 브라우저인지 확인할 수 없습니다. Android 디바이스에서는 http/https 의도를 지원하는 다른 관리형 브라우저 앱이 허용됩니다.* | **구성되지 않음** |
 |<ul><ui>**비관리형 브라우저 ID** | 단일 브라우저의 애플리케이션 ID를 입력합니다. 정책 관리형 애플리케이션의 웹 콘텐츠(http/https 링크)가 지정된 브라우저에서 열립니다.  웹 콘텐츠가 대상 브라우저에서 관리되지 않습니다. | **비어 있음** |
 |<ul><ui>**비관리형 브라우저 이름** | **비관리형 브라우저 ID**와 연결된 브라우저의 애플리케이션 이름을 입력합니다. 지정된 브라우저가 설치되지 않은 경우 사용자에게 이 이름이 표시됩니다.  | **비어 있음** |
 | **조직 데이터 알림** | 조직 계정에 대해 OS 알림을 통해 공유되는 조직 데이터의 양을 지정합니다. 이 정책 설정은 로컬 디바이스 및 연결된 디바이스(예: 착용식 및 스마트 스피커)에 영향을 줍니다. 앱은 알림 동작을 사용자 지정하는 추가 컨트롤을 제공하거나 일부 값만 적용하도록 선택할 수 있습니다. 다음 중에서 선택합니다. <ul><li>**차단**:  알림을 공유하지 않습니다.</li><ul><li>애플리케이션에서 지원하지 않는 경우 알림이 허용됩니다.</li></ul><li>**조직 데이터 차단**: 알림에서 조직 데이터를 공유하지 않습니다. 예: "새 메일이 있습니다.", "회의가 있습니다.”</li><UL><li>애플리케이션에서 지원하지 않는 경우 알림이 차단됩니다.</li></ul><li>**허용**: 알림에서 조직 데이터 공유</li><li>**모든 앱**: 이 앱과 다른 앱 간의 잘라내기, 복사 및 붙여넣기에 대한 제한이 없습니다.</ul> <p>**참고**: *이 설정에는 앱 지원이 필요합니다. 현재, 2019년 12월 16일 주에 출시될 예정인 Android용 Outlook 버전 4.95.0 이상에서 이 설정을 지원합니다.* | **허용**   |

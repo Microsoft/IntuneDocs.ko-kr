@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: aab10058fe507a956bb793902e6f7b09d8579966
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125050"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576552"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 최종 사용자 앱 UI 업데이트
 
@@ -59,7 +59,7 @@ macOS용 회사 포털 등록 환경은 iOS용 회사 포털 등록 환경과 �
 ## <a name="week-of-october-28-2019"></a>2019년 10월 28일이 있는 주  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Android용 회사 포털 앱의 향상된 검사 목록 디자인 <!-- 5550857 -->  
-Android용 회사 포털 앱의 설정 검사 목록이 간단한 디자인과 새로운 아이콘을 갖춰 업데이트되었습니다. 변경 내용은 iOS용 회사 포털 앱에 대한 최근 업데이트와 동일합니다. 업데이트된 등록 단계에 대한 자세한 내용은 [Android 회사 프로필로 등록](/intune-user-help/enroll-device-android-work-profile) 및 [Android 디바이스 등록](/intune-user-help/enroll-device-android-company-portal)을 참조하세요.  
+Android용 회사 포털 앱의 설정 검사 목록이 간단한 디자인과 새로운 아이콘을 갖춰 업데이트되었습니다. 변경 내용은 iOS/iPadOS용 회사 포털 앱에 대한 최근 업데이트와 동일합니다. 업데이트된 등록 단계에 대한 자세한 내용은 [Android 회사 프로필로 등록](/intune-user-help/enroll-device-android-work-profile) 및 [Android 디바이스 등록](/intune-user-help/enroll-device-android-company-portal)을 참조하세요.  
 
 다음 화면에는 Android 회사 프로필 등록에 대한 업데이트된 검사 목록이 표시됩니다.
 
@@ -216,7 +216,7 @@ Windows 10용 Intune 회사 포털 앱이 [Fluent Design System의 탐색 보기
 ## <a name="week-of-april-2-2018"></a>2018년 4월 2일의 주간
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS용 회사 포털 앱의 사용자 환경 업데이트 <!-- 1412866 -->
-iOS용 회사 포털 앱에 대한 주요 사용자 환경 업데이트가 릴리스되었습니다. 이 업데이트는 현대적인 모양과 느낌을 포함하여 시각적으로 완전히 새롭게 설계했습니다. 앱의 기능은 유지하면서도 유용성과 접근성을 향상시켰습니다.  
+iOS/iPadOS용 회사 포털 앱에 대한 주요 사용자 환경 업데이트가 릴리스되었습니다. 이 업데이트는 현대적인 모양과 느낌을 포함하여 시각적으로 완전히 새롭게 설계했습니다. 앱의 기능은 유지하면서도 유용성과 접근성을 향상시켰습니다.  
 
 또한 다음을 확인할 수 있습니다.
 - iPhone X 지원
@@ -267,7 +267,7 @@ Android의 [자료 디자인](https://material.io/) 지침에 따르도록 Andro
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>버전 2.9.0에 대한 iOS 회사 포털의 향상된 디바이스 설정 워크플로 기능 <!-- 1417174 -->
 
-iOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습니다. 언어는 더욱 친숙하게 변경되었으며, 최대한 화면을 결합했습니다. 또한 설정 텍스트 전체에서 회사 이름을 사용하여 회사에 대한 언어의 관련성을 높였습니다.
+iOS/iPadOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습니다. 언어가 사용자에게 더 친숙하고 가능한 경우 화면을 합쳤습니다. 또한 설정 텍스트 전체에서 회사 이름을 사용하여 회사에 대한 언어의 관련성을 높였습니다.
 
 > [!NOTE]
 > **Microsoft Intune** > **클라이언트 앱** > **회사 포털 브랜딩** > **회사 이름**에는 Azure Portal에서 설정한 회사 이름이 사용됩니다. 이 값을 설정하지 않으면 **Azure Active Directory** > **속성** > **이름**에 설정된 테넌트 이름이 사용됩니다. 회사 포털 브랜딩에서 회사 이름을 설정하지 않았고 테넌트 이름을 표시하지 않으려면 [회사 포털 브랜딩] 탭에서 회사 이름을 설정하는 것이 좋습니다. 이 문자열을 회사 포털의 헤더에 표시하지 않으려면 “로고 옆에 회사 이름 표시” 확인란을 선택 취소하면 됩니다.
@@ -303,7 +303,7 @@ iOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습�
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>회사 포털 웹 사이트의 향상된 검색 기능 <!-- 1331697 -->
 [회사 포털 웹 사이트](https://portal.manage.microsoft.com)부터는 앱 검색 기능을 개선했습니다. 이제 검색은 이름 및 설명 필드 외에도 앱 범주에서 수행됩니다. 결과는 기본적으로 정렬 관련도의 내림차순으로 정렬됩니다. 
 
-회사 포털 웹 사이트가 iOS용 회사 포털 앱의 일부로 사용되므로 iOS 사용자는 이 변경 내용을 수용합니다. Android 및 Windows용 회사 포털 앱은 향후 몇 개월 내에 유사한 업데이트를 수용하게 됩니다.
+회사 포털 웹 사이트가 iOS/iPadOS용 회사 포털 앱의 일부로 사용되므로 iOS 사용자는 이 변경 내용을 수용합니다. Android 및 Windows용 회사 포털 앱은 향후 몇 개월 내에 유사한 업데이트를 수용하게 됩니다.
 
 관련성을 추적하는 방법은 여전히 미세 조정 중이므로 회사 포털 웹 사이트의 맨 아래에서 "피드백" 링크를 사용하여 작동 방식에 대해 알려주세요.
 
@@ -407,7 +407,7 @@ Android용 회사 포털 앱의 앱 세부 정보 페이지에는 이제 IT 관�
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>모든 플랫폼에 대해 회사 포털 앱 전체의 로그인 환경 개선 <!--User Story 1132123-->
 
-Android, iOS 및 Windows용 Intune 회사 포털 앱에 대한 로그인 환경을 개선하게 될 향후 몇 개월 내에 제공될 변경이 있음을 알려드립니다. Azure AD에서 이 변경 내용을 적용할 경우 회사 포털 앱에 대한 모든 플랫폼에서 새로운 사용자 환경이 자동으로 나타나게 됩니다. 또한 사용자가 이제 생성된 일회용 코드를 사용하여 다른 디바이스에서 회사 포털에 로그인할 수도 있습니다. 이 기능은 사용자가 자격 증명 없이 로그인해야 할 경우에 특히 유용합니다.  
+Android, iOS/iPadOS 및 Windows용 Intune 회사 포털 앱에 대한 로그인 환경을 개선하게 될 향후 몇 개월 내에 제공될 변경이 있음을 알려드립니다. Azure AD에서 이 변경 내용을 적용할 경우 회사 포털 앱에 대한 모든 플랫폼에서 새로운 사용자 환경이 자동으로 나타나게 됩니다. 또한 사용자가 이제 생성된 일회용 코드를 사용하여 다른 디바이스에서 회사 포털에 로그인할 수도 있습니다. 이 기능은 사용자가 자격 증명 없이 로그인해야 할 경우에 특히 유용합니다.  
 
 아래에서 이전 로그인 환경, 자격 증명을 사용하는 새 로그인 환경, 그리고 다른 디바이스로부터의 새 로그인 환경을 볼 수 있습니다.
 

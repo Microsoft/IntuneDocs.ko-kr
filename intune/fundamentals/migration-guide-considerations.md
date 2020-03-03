@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cef30c31b53c6bfd1873390fb7546cbeab2a53
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 936e4836938ddddc8e795d85de5a449ee77edaa4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510029"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515002"
 ---
 # <a name="special-migration-considerations"></a>특별 마이그레이션 고려 사항
 
@@ -32,7 +32,7 @@ ms.locfileid: "72510029"
 
 Apple DEP(디바이스 등록 프로그램)는 최종 사용자가 제거할 수 없는 디바이스 구성을 설정합니다. DEP의 고급 관리 기능을 유지하려면 초기화를 통해 디바이스를 기본(신규) 상태로 되돌리고 Intune에 등록해야 합니다.
 
-계속해서 DEP를 사용하여 Intune에서 디바이스를 관리하려면 [디바이스 등록 프로그램을 사용하여 iOS 디바이스 등록을 설정](../enrollment/device-enrollment-program-enroll-ios.md)합니다.
+계속해서 DEP를 사용하여 Intune에서 디바이스를 관리하려면 [장비 등록 프로그램을 사용하여 iOS/iPadOS 디바이스 등록을 설정](../enrollment/device-enrollment-program-enroll-ios.md)합니다.
 
 
 ## <a name="next-steps"></a>다음 단계

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 68fcdb66591ec0e566aa702b3ca4d6c5c5448859
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860233"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514016"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 준수 정책 만들기
 
@@ -67,7 +67,7 @@ ms.locfileid: "74860233"
 
 3. 다음 속성을 지정합니다.
 
-   - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 **iOS 무단 해제 디바이스를 비준수로 표시**는 좋은 정책 이름입니다.
+   - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 **iOS/iPadOS 무단 해제 디바이스를 비준수로 표시**는 좋은 정책 이름입니다.
 
    - **설명**: 정책에 대한 설명을 입력합니다. 이 설정은 선택 사항이지만 권장됩니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "74860233"
      - [Windows Phone 8.1, Windows 8.1 이상](compliance-policy-create-windows-8-1.md)
      - [Windows 10 이상](compliance-policy-create-windows.md)  
 
-   - **위치**’(Android 디바이스 관리자)’:  정책에서 디바이스의 위치에 따라 규정 준수를 강제 적용할 수 있습니다. 기존 위치에서 선택합니다. 아직 위치가 없나요? Intune에서 [위치(네트워크 펜스) 사용](use-network-locations.md)에는 몇 가지 지침이 제공됩니다.  
+   - **위치** *(Android 디바이스 관리자)* : 정책에서 디바이스의 위치에 따라 규정 준수를 강제 적용할 수 있습니다. 기존 위치에서 선택합니다. 아직 위치가 없나요? Intune에서 [위치(네트워크 펜스) 사용](use-network-locations.md)에는 몇 가지 지침이 제공됩니다.  
 
    - **비준수에 대한 작업**: 준수 정책을 따르지 않는 디바이스의 경우 자동으로 적용할 작업 시퀀스를 추가할 수 있습니다. 디바이스가 비준수로 표시되면 일정을 변경할 수 있습니다(예: 하루 후). 디바이스가 준수하지 않으면 사용자에게 이메일을 보내는 두 번째 작업을 구성할 수도 있습니다.
 

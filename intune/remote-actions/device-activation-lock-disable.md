@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 65a13c2690f08c2244f31854556a88b6301c6ac5
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438058"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576016"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Intune을 사용하여 감독된 iOS/iPadOS 디바이스에서 활성화 잠금 사용 안 함
 
@@ -63,7 +63,7 @@ Intune에서는 iOS/iPadOS 8.0 이상을 실행하는 감독된 디바이스의 
 디바이스에서 활성화 잠금을 사용하지 않으려면 먼저 다음 지침에 따라 활성화 잠금을 사용하도록 설정해야 합니다.
 
 1. [디바이스 제한 설정을 구성하는 방법](/intune-azure/configure-devices/how-to-configure-device-restrictions)의 정보를 참조하여 iOS/iPadOS용 Intune 디바이스 제한 프로필을 구성합니다.
-2. [iOS에 대한 디바이스 제한 설정](../configuration/device-restrictions-ios.md)에서 **일반** 설정 아래의 **활성화 잠금** 옵션을 사용합니다.
+2. [iOS/iPadOS에 대한 디바이스 제한 설정](../configuration/device-restrictions-ios.md)에서 **일반** 설정 아래의 **활성화 잠금** 옵션을 사용합니다.
 3. 프로필을 저장한 다음 활성화 잠금 사용 안 함을 관리하려는 디바이스에 [할당](../configuration/device-profile-assign.md)합니다.
 
 

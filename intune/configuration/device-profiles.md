@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206621"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513075"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune에서 디바이스 프로필을 사용하여 디바이스에서 기능 및 설정 적용
 
 
 
-Microsoft Intune은 조직 내의 다른 디바이스에서 사용하거나 사용하지 않게 할 수 있는 설정 및 기능을 포함합니다. 이러한 설정 및 기능을 "구성 프로필"에 추가합니다. iOS, Android 및 Windows를 포함하여 다양한 디바이스 및 플랫폼에 대한 프로필을 만들 수 있습니다. 그런 다음, Intune을 사용하여 디바이스에 프로필을 적용 또는 “할당”합니다.
+Microsoft Intune은 조직 내의 다른 디바이스에서 사용하거나 사용하지 않게 할 수 있는 설정 및 기능을 포함합니다. 이러한 설정 및 기능을 "구성 프로필"에 추가합니다. iOS/iPadOS, Android 및 Windows를 포함하여 다양한 디바이스 및 플랫폼에 대한 프로필을 만들 수 있습니다. 그런 다음, Intune을 사용하여 디바이스에 프로필을 적용 또는 “할당”합니다.
 
 MDM(모바일 디바이스 관리) 솔루션의 일부로 이 구성 프로필을 사용하여 다른 작업을 완료합니다. 프리필의 예를 들면 다음과 같습니다.
 
 - Windows 10 디바이스에서 프로필 템플릿을 사용하여 Internet Explorer의 ActiveX 컨트롤을 차단합니다.
-- iOS 및 macOS 디바이스에서 사용자가 조직의 AirPrint 프린터를 사용하게 할 수 있습니다.
+- iOS/iPadOS 및 macOS 디바이스에서 사용자가 조직의 AirPrint 프린터를 사용하게 할 수 있습니다.
 - 디바이스에서 bluetooth에 대한 액세스를 허용하거나 방지합니다.
 - 회사 네트워크에 다양한 디바이스가 액세스하게 하는 WiFi 또는 VPN 프로필을 만듭니다.
 - 소프트웨어 업데이트가 설치된 경우를 포함하여 해당 업데이트를 관리합니다.
@@ -67,7 +67,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이 구성 프로필�
 
 ## <a name="custom-profile"></a>사용자 지정 프로필
 
-[사용자 지정 설정](custom-settings-configure.md)을 사용하면 관리자가 Intune에 기본 제공되지 않는 디바이스 설정을 할당할 수 있습니다. Android 디바이스에서는 OMA-URI 값을 입력할 수 있습니다. IOS 디바이스의 경우 Apple Configurator에서 만든 구성 파일을 가져올 수 있습니다.
+[사용자 지정 설정](custom-settings-configure.md)을 사용하면 관리자가 Intune에 기본 제공되지 않는 디바이스 설정을 할당할 수 있습니다. Android 디바이스에서는 OMA-URI 값을 입력할 수 있습니다. iOS/iPadOS 디바이스의 경우 Apple Configurator에서 만든 구성 파일을 가져올 수 있습니다.
 
 이 기능은 다음을 지원합니다.
 
@@ -89,7 +89,7 @@ MDM(모바일 디바이스 관리) 솔루션의 일부로 이 구성 프로필�
 
 ## <a name="device-features"></a>디바이스 기능
 
-[디바이스 기능](device-features-configure.md)을 통해 iOS 및 macOS 디바이스에서 AirPrint, 알림 및 잠금 화면 메시지와 같은 기능을 제어합니다.
+[디바이스 기능](device-features-configure.md)을 통해 iOS/iPadOS 및 macOS 디바이스에서 AirPrint, 알림 및 잠금 화면 메시지와 같은 기능을 제어합니다.
 
 이 기능은 다음을 지원합니다.
 
@@ -106,7 +106,7 @@ DFCI([디바이스 펌웨어 구성 인터페이스](device-firmware-configurati
 
 ## <a name="device-restrictions"></a>디바이스 제한 사항
 
-[디바이스 제한](device-restrictions-configure.md)은 디바이스에서 보안, 하드웨어, 데이터 공유 및 많은 설정을 제어합니다. 예를 들어 iOS 디바이스의 사용자가 디바이스 카메라를 사용하지 못하도록 하는 디바이스 제한 프로필을 만듭니다. 
+[디바이스 제한](device-restrictions-configure.md)은 디바이스에서 보안, 하드웨어, 데이터 공유 및 많은 설정을 제어합니다. 예를 들어 iOS/iPadOS 디바이스의 사용자가 디바이스 카메라를 사용하지 못하도록 하는 디바이스 제한 프로필을 만듭니다. 
 
 이 기능은 다음을 지원합니다.
 
@@ -129,7 +129,7 @@ DFCI([디바이스 펌웨어 구성 인터페이스](device-firmware-configurati
 
 [교육 설정 - Windows 10](education-settings-configure.md)은 [Windows Take a Test(Windows 시험 응시) 앱](https://education.microsoft.com/gettrained/win10takeatest)에 대한 옵션을 구성합니다. 이 설정을 구성할 경우 테스트가 완료될 때까지 디바이스에서 다른 앱을 실행할 수 없습니다.
 
-[교육 설정 - iOS](../fundamentals/education-settings-configure-ios-shared.md)는 iOS 교실 앱을 사용하여 학습을 지도하고 교실에서 학생 디바이스를 제어합니다. 여러 학생이 하나의 디바이스를 공유할 수 있도록 iPad 디바이스를 구성할 수 있습니다.
+[교육 설정 - iOS/iPadOS](../fundamentals/education-settings-configure-ios-shared.md)는 iOS/iPadOS 교실 앱을 사용하여 학습을 지도하고 교실에서 학생 디바이스를 제어합니다. 여러 학생이 하나의 디바이스를 공유할 수 있도록 iPad 디바이스를 구성할 수 있습니다.
 
 ## <a name="email"></a>메일
 
@@ -186,7 +186,7 @@ Microsoft Intune에서 WDATP(Microsoft Defender Advanced Threat Protection)를 �
 
 - Windows 10 이상
 
-키오스크 설정은 [Android](device-restrictions-android.md#kiosk), [Android 엔터프라이즈](device-restrictions-android-for-work.md#dedicated-device-settings) 및 [iOS](device-restrictions-ios.md#kiosk)의 디바이스 제한 사항으로도 사용할 수 있습니다.
+키오스크 설정은 [Android](device-restrictions-android.md#kiosk), [Android 엔터프라이즈](device-restrictions-android-for-work.md#dedicated-device-settings) 및 [iOS/iPadOS](device-restrictions-ios.md#kiosk)의 디바이스 제한 사항으로도 사용할 수 있습니다.
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -219,7 +219,7 @@ Microsoft Intune에서 WDATP(Microsoft Defender Advanced Threat Protection)를 �
 
 ## <a name="update-policies"></a>업데이트 정책
 
-[iOS 업데이트 정책](../protect/software-updates-ios.md)은 iOS 디바이스에 소프트웨어 업데이트를 설치하기 위한 iOS 정책을 만들고 할당하는 방법을 보여 줍니다. 설치 상태를 검토할 수도 있습니다.
+[iOS/iPadOS 업데이트 정책](../protect/software-updates-ios.md)은 iOS/iPadOS 디바이스에 소프트웨어 업데이트를 설치하기 위한 iOS/iPadOS 정책을 만들고 할당하는 방법을 보여 줍니다. 설치 상태를 검토할 수도 있습니다.
 
 Windows 디바이스의 업데이트 정책은 [배달 최적화](delivery-optimization-windows.md)를 참조하세요. 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 2a1ba4a5e6096f77c87560554fd2c9cd601a33e4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414881"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511721"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune에서 iOS 앱 간의 데이터 전송 관리 방법
 
@@ -81,7 +81,7 @@ iOS **관리에서 열기** 기능과 함께 앱 보호 정책을 사용하여 �
    |ManageEngine 모바일 디바이스 관리자 | IntuneMAMUPN | 문자열 | %upn% |
 
 > [!NOTE]  
-> iOS용 Outlook 앱의 경우 “구성 디자이너 사용” 옵션으로 관리 디바이스 앱 구성 정책을 배포하고 **회사 또는 학교 계정만 허용**을 사용하도록 설정하는 경우 정책의 구성 키 IntuneMAMUPN이 백그라운드에서 자동으로 구성됩니다. 자세한 내용은 [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481)(새 iOS 및 Android용 Outlook 앱 구성 정책 환경 – 일반 앱 구성)의 FAQ 섹션에서 확인할 수 있습니다. 
+> iOS/iPadOS용 Outlook 앱의 경우 “구성 디자이너 사용” 옵션으로 관리 디바이스 앱 구성 정책을 배포하고 **회사 또는 학교 계정만 허용**을 사용하도록 설정하는 경우 정책의 구성 키 IntuneMAMUPN이 백그라운드에서 자동으로 구성됩니다. 자세한 내용은 [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481)(새 iOS 및 Android용 Outlook 앱 구성 정책 환경 – 일반 앱 구성)의 FAQ 섹션에서 확인할 수 있습니다. 
 
 
 ### <a name="example-2-end-user-experience"></a>예제 2: 최종 사용자 환경

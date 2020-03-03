@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 183e8cc5924f6ce1f002225150d808841924e20c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956271"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514645"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>사용자 및 디바이스를 구성하기 위한 그룹 추가
 
@@ -34,7 +34,7 @@ Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사
 - **할당된 그룹** - 수동으로 정적 그룹에 사용자 또는 디바이스를 추가합니다. 
 - **동적 그룹**(Azure AD Premium 필요) - 만든 식에 따라, 사용자 또는 디바이스를 사용자 그룹 또는 디바이스 그룹에 자동으로 추가합니다.
 
-  예를 들어, 제목이 관리자인 사용자를 추가하는 경우 해당 사용자는 **모든 관리자** 사용자 그룹에 자동으로 추가됩니다. 또는 디바이스에 iOS 디바이스 OS 유형이 있는 경우 해당 디바이스는 **모든 iOS 디바이스** 디바이스 그룹에 자동으로 추가됩니다.
+  예를 들어, 제목이 관리자인 사용자를 추가하는 경우 해당 사용자는 **모든 관리자** 사용자 그룹에 자동으로 추가됩니다. 또는 디바이스에 iOS/iPadOS 디바이스 OS 유형이 있는 경우 해당 디바이스는 **모든 iOS/iPadOS 디바이스** 디바이스 그룹에 자동으로 추가됩니다.
 
 ## <a name="add-a-new-group"></a>새 그룹 추가
 
@@ -47,7 +47,7 @@ Intune은 Azure AD(Active Directory) 그룹을 사용하여 디바이스 및 사
 
 3. **그룹 유형**에서 다음 옵션 중 하나를 선택합니다.
 
-    - **보안**: 보안 그룹은 리소스에 액세스할 수 있는 사용자를 정의하며, Intune의 그룹에 권장됩니다. 예를 들어, **모든 Charlotte 직원** 또는 **원격 작업자** 등의 사용자 그룹을 만들 수 있습니다. **모든 iOS 디바이스** 또는 **모든 Windows 10 학생용 디바이스** 등의 디바이스 그룹도 만들 수 있습니다.
+    - **보안**: 보안 그룹은 리소스에 액세스할 수 있는 사용자를 정의하며, Intune의 그룹에 권장됩니다. 예를 들어, **모든 Charlotte 직원** 또는 **원격 작업자** 등의 사용자 그룹을 만들 수 있습니다. **모든 iOS/iPadOS 디바이스** 또는 **모든 Windows 10 학생용 디바이스** 등의 디바이스 그룹도 만들 수 있습니다.
 
         > [!TIP]
         > 만든 사용자 및 그룹은 [Microsoft 365 관리 센터](https://admin.microsoft.com), Azure Active Directory 관리 센터 및 [Azure Portal의 Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973)에도 표시될 수 있습니다. 조직 테넌트에서 이러한 모든 영역에서 그룹을 만들고 관리할 수 있습니다.

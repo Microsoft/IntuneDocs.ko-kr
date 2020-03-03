@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 49c629039c08c892c7d6b19422d79c9eb1a8d760
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755581"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510472"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Microsoft Intune으로 디바이스 보호
 
@@ -43,7 +43,7 @@ Intune [구성 정책](../configuration/device-profiles.md)을 사용하면 폭�
 
 ## <a name="require-devices-to-be-compliant"></a>디바이스가 규칙을 준수해야 하도록 지정
 Intune 기능에서는 지정한 규칙을 준수하지 않는 디바이스를 평가하고 경우에 따라 수정하는 데 사용할 수 있는 [디바이스 준수 정책](device-compliance-get-started.md)을 제공합니다. 예를 들어 다음에 대한 보고서를 가져올 수 있습니다.
-- 탈옥 iOS 디바이스
+- 무단 해제 iOS/iPadOS 디바이스
 - 암호화된 디바이스 또는 암호화되지 않은 디바이스
 - Windows 10 디바이스 상태(상태 증명 서비스에 의해 결정됨)
 
@@ -60,7 +60,7 @@ Intune에서는 앱과 해당 데이터를 보호하는 데 사용할 수 있는
 Active Directory를 사용하는 Windows 10 이상 버전 또는 Azure Active Directory 계정에서 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 로그인 방법인 [비즈니스용 Windows Hello](windows-hello.md)와 Intune을 통합할 수 있습니다.
 
 ## <a name="disable-activation-lock-on-ios-devices"></a>iOS 디바이스에서 활성화 잠금 사용 안 함
-활성화 잠금은 사용자 디바이스를 보호하는 데 도움이 되는 기능입니다. 이 기능은 누군가가 디바이스를 초기화하거나 다시 활성화하기 전에 사용자가 Apple ID와 암호를 입력하도록 요구합니다. 그러나 이 기능은 사용자가 잠금을 제거하지 않고 퇴사하는 경우 등에 문제가 발생할 수 있습니다. [iOS 활성화 잠금 사용 안 함](../remote-actions/device-activation-lock-disable.md)은 감독되는 iOS 디바이스에서 잠금을 제거하여 디바이스를 다시 할당하거나 지울 수 있도록 합니다.
+활성화 잠금은 사용자 디바이스를 보호하는 데 도움이 되는 기능입니다. 이 기능은 누군가가 디바이스를 초기화하거나 다시 활성화하기 전에 사용자가 Apple ID와 암호를 입력하도록 요구합니다. 그러나 이 기능은 사용자가 잠금을 제거하지 않고 퇴사하는 경우 등에 문제가 발생할 수 있습니다. [iOS/iPadOS 활성화 잠금 사용 안 함](../remote-actions/device-activation-lock-disable.md)은 감독되는 iOS/iPadOS 디바이스에서 잠금을 제거하여 디바이스를 다시 할당하거나 지울 수 있도록 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

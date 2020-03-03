@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune에서 Telecom Expense Management 서비스 설정 - Azure | Microsoft Docs
 titleSuffix: ''
-description: Microsoft Intune을 Saaswedo Telecom Expense Management 서비스와 통합하여 데이터 사용량을 모니터링하고 Android 및 iOS 디바이스에 대한 임계값 또는 제한을 설정합니다.
+description: Microsoft Intune을 Saaswedo Telecom Expense Management 서비스와 통합하여 데이터 사용량을 모니터링하고 Android, iOS 및 iPadOS 디바이스에 대한 임계값 또는 제한을 설정합니다.
 keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,16 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: e6c4d08d1010654a16e13981a0d3353b2418524a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207114"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512877"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune에서 Telecom Expense Management 서비스 설정
-
-
 
 Intune을 사용하여 조직 소유의 모바일 디바이스에서 데이터 사용량으로부터 통신 비용을 관리할 수 있습니다. Intune은 Saaswedo의 [Datalert Telecom Expense Management](http://datalert.biz/get-started)와 통합됩니다. Datalert는 통신 데이터 사용량을 관리할 수 있는 실시간 통신 비용 관리 솔루션입니다. 이 솔루션은 Intune 관리 디바이스에 대해 비용이 많이 들고 예기치 않은 데이터와 로밍 요금을 방지하게 해줍니다.
 
@@ -51,6 +49,7 @@ Intune과 함께 Datalert 서비스를 사용할 수 있도록 Datalert 및 Intu
   [Knox를 지원하는 Android 버전](https://seap.samsung.com/faq/what-versions-android-support-knox-standard-and-knox-premium-sdks-0)(삼성의 웹 사이트 열림)은 Knox 지원 버전을 나열합니다.
 
 - iOS 8.0 이상
+- iPadOS 13.0 이상
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -136,11 +135,11 @@ Intune에서 디바이스 범주를 만드는 방법은 [그룹에 디바이스 
 
 #### <a name="add-the-datalert-app-to-intune"></a>Intune에서 Datalert 앱 추가
 
-다음은 Datalert 앱을 추가하는 단계입니다. 예를 들어, iOS가 사용됩니다. [앱 추가](../apps/apps-add.md) 및 [범위 태그 사용](../fundamentals/scope-tags.md)에 이러한 단계에 대한 보다 구체적인 정보가 있습니다.
+다음은 Datalert 앱을 추가하는 단계입니다. 예를 들어 iOS/iPadOS가 사용됩니다. [앱 추가](../apps/apps-add.md) 및 [범위 태그 사용](../fundamentals/scope-tags.md)에 이러한 단계에 대한 보다 구체적인 정보가 있습니다.
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **앱** > **모든 앱** > **추가**를 선택합니다.
 
-2. **앱 유형**을 선택합니다. 예를 들어 iOS의 경우 **스토어 앱 - iOS**를 선택합니다.
+2. **앱 유형**을 선택합니다. 예를 들어 iOS/iPadOS의 경우 **스토어 앱 - iOS/iPadOS**를 선택합니다.
 
 3. **앱 스토어를 검색하고** **Datalert**를 입력하여 Dalert 앱을 찾습니다.
 
@@ -178,7 +177,7 @@ Intune에서 디바이스 범주를 만드는 방법은 [그룹에 디바이스 
 
 최종 사용자 환경에서는 다음 문서를 참조하세요.
 
-- [TEM(Telecom Expense Management)에 iOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+- [TEM(Telecom Expense Management)에 iOS/iPadOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
 - [TEM(Telecom Expense Management)에 Android 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turn-off-the-datalert-service"></a>Datalert 서비스 해제

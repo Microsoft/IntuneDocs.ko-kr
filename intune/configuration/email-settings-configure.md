@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune에서 이메일 설정 구성 - Azure | Microsoft Docs
 titleSuffix: ''
-description: Microsoft Intune에서 이메일 프로필을 만들고 Android Enterprise, iOS 및 Windows 디바이스에 이 프로필을 배포합니다. 이메일 프로필을 사용하여 관리 대상 디바이스에서 회사 이메일에 연결하는 데 사용할 인증 방법과 이메일 서버를 비롯한 일반적인 이메일 설정을 구성합니다.
+description: Microsoft Intune에서 메일 프로필을 만들고 Android Enterprise, iOS, iPadOS 및 Windows 디바이스에 이 프로필을 배포합니다. 이메일 프로필을 사용하여 관리 대상 디바이스에서 회사 이메일에 연결하는 데 사용할 인증 방법과 이메일 서버를 비롯한 일반적인 이메일 설정을 구성합니다.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 110db564dce5ad68d3c2a26b85e60ecbe99e7335
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 908a20098917540e6f823d94c6643d15f13ecf68
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059421"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511088"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Intune을 사용하여 디바이스에 이메일 설정 추가
 
@@ -32,6 +32,7 @@ Microsoft Intune에는 조직의 디바이스에 배포할 수 있는 여러 이
 - Android Samsung Knox Standard 4.0 이상
 - Android Enterprise
 - iOS 8.0 이상
+- iPadOS 13.0 이상
 - Windows Phone 8.1 이상
 - Windows 10(데스크톱) 및 Windows 10 Mobile
 
@@ -89,7 +90,7 @@ Microsoft Intune에는 조직의 디바이스에 배포할 수 있는 여러 이
 
 사용자가 이메일 계정을 이미 구성한 경우 플랫폼에 따라 이메일 프로필이 다르게 할당됩니다.
 
-- **iOS**: 호스트 이름 및 전자 메일 주소를 기반으로 기존에 중복된 전자 메일 프로필이 검색됩니다. 중복된 이메일 프로필은 Intune 프로필 할당을 차단합니다. 이 경우 회사 포털 앱에서 최종 사용자에게 규정을 준수하지 않음을 알리고 수동으로 구성한 프로필을 제거하라는 메시지를 표시합니다. 이 시나리오를 방지하려면 이메일 프로필을 설치하기 *전에* 최종 사용자에게 등록하여 Intune의 프로필 설정을 허용하라고 안내합니다.
+- **iOS/iPadOS**: 호스트 이름 및 전자 메일 주소를 기반으로 기존에 중복된 전자 메일 프로필이 검색됩니다. 중복된 이메일 프로필은 Intune 프로필 할당을 차단합니다. 이 경우 회사 포털 앱에서 최종 사용자에게 규정을 준수하지 않음을 알리고 수동으로 구성한 프로필을 제거하라는 메시지를 표시합니다. 이 시나리오를 방지하려면 이메일 프로필을 설치하기 *전에* 최종 사용자에게 등록하여 Intune의 프로필 설정을 허용하라고 안내합니다.
 
 - **Windows:** 호스트 이름 및 전자 메일 주소를 기반으로 기존에 중복된 전자 메일 프로필이 검색됩니다. Intune은 최종 사용자가 만든 기존 이메일 프로필을 덮어씁니다.
 

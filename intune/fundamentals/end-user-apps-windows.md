@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ba79260891c1a26fcb9a92c25b46277c08c92908
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414590"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514373"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 사용자가 앱을 얻는 방법
 
@@ -39,4 +39,4 @@ ms.locfileid: "73414590"
 ## <a name="see-also"></a>참고 항목
 
 [Android 사용자가 앱을 얻는 방법](end-user-apps-android.md)
-[iOS 사용자가 앱을 얻는 방법](end-user-apps-android.md)
+[iOS/iPadOS 사용자가 앱을 얻는 방법](end-user-apps-android.md)

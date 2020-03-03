@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 9c2083d6f259b62b2856e08fec5ebcb696cbc0df
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755037"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576435"
 ---
-# <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 수동으로 추가
+# <a name="add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune을 사용하여 Windows 10 회사 포털 앱 추가
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-디바이스를 관리하고 앱을 설치하려는 사용자는 Microsoft Store에서 직접 회사 포털 앱을 설치하면 됩니다. 그러나 비즈니스 요구 사항에 따라 회사 포털 앱을 할당해야 하는 경우에는 Intune에서 바로 Windows 10 회사 포털 앱을 수동으로 할당할 수 있습니다. Intune을 Microsoft Store for Business와 통합하지 않은 경우 통합할 수 있습니다.
+디바이스를 관리하고 앱을 설치하려는 사용자는 Microsoft Store에서 직접 회사 포털 앱을 설치하면 됩니다. 그러나 비즈니스 요구 사항에 따라 회사 포털 앱을 할당해야 하는 경우에는 Intune에서 바로 Windows 10 회사 포털 앱을 할당할 수 있습니다. Intune을 Microsoft Store for Business와 통합하지 않은 경우 통합할 수 있습니다.
 
- > [!NOTE]
- > 이 문서에서 설명하는 옵션은 앱 업데이트가 발표될 때마다 수동 업데이트를 할당해야 합니다.
+ > [!IMPORTANT]
+ > 회사 포털 앱을 다운로드하는 경우 이 문서에서 설명하는 옵션은 앱 업데이트가 발표될 때마다 수동 업데이트를 할당해야 합니다. Windows 10 Autopilot 프로비저닝된 디바이스용 회사 포털 앱을 배포하려면 [Windows 10 회사 포털 앱 Autopilot 디바이스 추가](~/apps/store-apps-company-portal-autopilot.md)를 참조하세요.
 
 ## <a name="configure-settings-to-show-offline-apps"></a>오프라인 앱을 표시하도록 설정 구성
 1. 관리자 계정을 사용하여 [비즈니스용 Microsoft 스토어](https://www.microsoft.com/business-store)에 로그인합니다.

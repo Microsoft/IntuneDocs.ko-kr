@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415508"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609383"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>초기화, 사용 중지 또는 수동으로 디바이스 등록을 취소하여 디바이스 제거
 
@@ -47,7 +47,7 @@ ms.locfileid: "77415508"
 
 **등록 상태 및 사용자 계정 유지** 옵션은 Windows 10 버전 1709 이상에만 사용할 수 있습니다.
 
-**보호되는 초기화 수행** 옵션을 사용하면 디바이스를 꺼도 초기화 작업을 우회할 수 없습니다. 보호되는 초기화는 성공할 때까지 디바이스 재설정을 계속 시도합니다. 일부 구성에서 이 작업을 수행하면 디바이스를 다시 부팅할 수 없는 상태로 남을 수 있습니다.
+**보호되는 초기화 수행** 옵션을 사용하면 디바이스를 꺼도 초기화 작업을 우회할 수 없습니다. 보호되는 초기화는 성공할 때까지 디바이스 재설정을 계속 시도합니다. 일부 구성에서 이 작업을 수행하면 디바이스를 [다시 부팅할 수 없는 상태](troubleshoot-device-actions.md#wipe-action)로 남을 수 있습니다.
 
 MDM 정책은 다음에 디바이스가 Intune에 연결될 때 다시 적용됩니다.
 
@@ -196,6 +196,9 @@ Intune에서 Apple DEP 디바이스를 관리에서 완전히 제거하려면 �
 5. **재할당**을 선택합니다.
 
     ![Apple 재할당에 대한 스크린샷](./media/devices-wipe/apple-reassign.png)
+
+## <a name="device-states"></a>디바이스 상태
+디바이스 상태에 대한 설명은 [managementStates 컬렉션](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates)을 참조하세요.
 
 ## <a name="fresh-start"></a>새로 시작
 

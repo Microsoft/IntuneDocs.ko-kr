@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: d7edf84ada3c84b7ad31748909ef81a877237fd5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966286"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514475"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune에 대한 미국 정부 엔드포인트
 
@@ -74,8 +74,8 @@ MDM(모바일 장치 관리)을 사용하여 관리되는 Intune 관리 디바�
 자세한 내용은 다음을 참조하십시오.
 
 - [Apple 소프트웨어 제품에서 사용하는 TCP 및 UDP 포트](https://support.apple.com/HT202944)
-- [macOS, iOS 및 iTunes 서버 호스트 연결 및 iTunes 백그라운드 프로세스 정보](https://support.apple.com/HT201999)
-- [macOS 및 iOS 클라이언트가 Apple 푸시 알림을 받지 못하는 경우](https://support.apple.com/HT203609)
+- [macOS, iOS/iPadOS 및 iTunes 서버 호스트 연결 및 iTunes 백그라운드 프로세스 정보](https://support.apple.com/HT201999)
+- [macOS 및 iOS/iPadOS 클라이언트가 Apple 푸시 알림을 받지 못하는 경우](https://support.apple.com/HT203609)
 
 ## <a name="next-steps"></a>다음 단계
 [Microsoft Intune에 대한 네트워크 엔드포인트](intune-endpoints.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f2baf60fed2c6010e5ae0784cda166ac4fabfd57
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755003"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511738"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Microsoft Intune에 iOS 스토어 앱 추가
 
@@ -32,11 +32,11 @@ ms.locfileid: "76755003"
 이 아티클의 정보를 사용하면 Microsoft Intune에 iOS 스토어 앱을 추가하는 데 도움이 됩니다. iOS 스토어 앱은 Intune이 사용자 디바이스에 설치하는 앱입니다. 사용자는 회사의 직원입니다. iOS 스토어 앱은 자동으로 업데이트됩니다.
 
 >[!NOTE]
->iOS 디바이스 사용자는 주식, 지도 같은 일부 기본 제공 iOS 앱을 제거할 수 있으나 Intune을 사용하여 해당 앱을 다시 배포할 수는 없습니다. 사용자가 이러한 앱을 삭제하는 경우 앱 스토어로 이동해서 수동으로 다시 설치해야 합니다.
+>iOS/iPadOS 디바이스 사용자는 주식, 지도 같은 일부 기본 제공 iOS/iPadOS 앱을 제거할 수 있으나 Intune을 사용하여 해당 앱을 다시 배포할 수는 없습니다. 사용자가 이러한 앱을 삭제하는 경우 앱 스토어로 이동해서 수동으로 다시 설치해야 합니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-앱 스토어에서 무료인 경우에만 이 방법으로 앱을 할당할 수 있습니다. Intune을 사용하여 유료 앱을 할당하려면 [iOS 대량 구매 프로그램](vpp-apps-ios.md)을 사용하는 것이 좋습니다.
+앱 스토어에서 무료인 경우에만 이 방법으로 앱을 할당할 수 있습니다. Intune을 사용하여 유료 앱을 할당하려면 [iOS/iPadOS Volume-Purchase Program](vpp-apps-ios.md)을 사용하는 것이 좋습니다.
 
 >[!NOTE]
 >Microsoft Intune에서 작업하는 경우 Microsoft Edge 또는 Google Chrome 브라우저를 사용하는 것이 좋습니다.

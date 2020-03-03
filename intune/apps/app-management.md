@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6e00a2d3c245c1297f2ea28ab0184369e7d92980
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414692"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513948"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune 앱 관리란?
 
@@ -92,20 +92,20 @@ Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 �
   - [앱 모니터링](apps-monitor.md)
 - **앱 구성 정책**: 사용자가 앱을 실행할 때 필요할 수 있는 설정을 제공하려면 이 옵션을 선택합니다. 자세한 내용은 다음을 참조하십시오.
   - [Intune용 앱 구성 정책](app-configuration-policies-overview.md)
-    - [iOS 앱 구성 정책](app-configuration-policies-use-ios.md)
+    - [iOS/iPadOS 앱 구성 정책](app-configuration-policies-use-ios.md).
     - [Android 앱 구성 정책](app-configuration-policies-use-android.md)
 - **앱 보호 정책**: 설정을 앱에 연결하고 앱에서 사용하는 회사 데이터를 보호하려면 이 옵션을 선택합니다. 예를 들어 다른 앱과 통신하는 앱의 기능을 제한하거나, 사용자에게 회사 앱에 액세스하려면 PIN을 입력하도록 요구할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
   - [앱 보호 정책](app-protection-policies.md)
 - **앱 선택적 초기화**: 선택한 사용자의 디바이스에서 회사 데이터만 제거하려면 이 옵션을 선택합니다. 자세한 내용은 다음을 참조하십시오.
   - [앱 선택적 초기화](apps-selective-wipe.md)
 - **iOS 앱 프로비전 프로필**: iOS/iPadOS 앱에는 인증서로 서명된 프로비전 프로필 및 코드가 포함됩니다. 인증서가 만료되면 앱을 더 이상 실행할 수 없습니다. Intune은 만료가 임박한 앱이 있는 디바이스에 새 프로비전 프로필 정책을 미리 할당하기 위한 도구를 제공합니다. 자세한 내용은 다음을 참조하십시오.
-  - [iOS 앱 프로비전 프로필](app-provisioning-profile-ios.md)
+  - [iOS/iPadOS 앱 프로비저닝 프로필](app-provisioning-profile-ios.md)
 
 이 섹션에 대한 자세한 내용은 [앱 관리](app-management.md)를 참조하세요.
 
 ### <a name="monitor"></a>모니터
 - **앱 라이선스**: 앱 스토어에서 대량 구매 앱을 보고, 할당하고, 모니터링할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
-  - [iOS VPP(대량 구매 프로그램) 앱](vpp-apps-ios.md)
+  - [iOS/iPadOS VPP(Volume Purchase Program) 앱](vpp-apps-ios.md)
   - [비즈니스용 Microsoft Store 대량 구매 앱](windows-store-for-business.md)
 - **검색된 앱**: Intune에서 할당되었거나 디바이스에 설치된 앱을 표시합니다. 자세한 내용은 [Intune에서 검색된 앱](app-discovered-apps.md)을 참조하세요.
 - **앱 설치 상태**: 만든 앱 할당의 상태를 표시합니다. 자세한 내용은 [Microsoft Intune으로 앱 정보 및 할당을 모니터링 하는 방법](apps-monitor.md#device-and-user-status-graphs)을 참조하세요.
@@ -116,7 +116,7 @@ Intune은 앱을 실행하려는 디바이스에서 필요한 앱을 얻도록 �
 
 ### <a name="set-up"></a>설정
 - **iOS VPP 토큰**: iOS/iPadOS VPP(대량 구매 프로그램) 라이선스를 적용하고 볼 수 있습니다. 자세한 내용은 다음을 참조하십시오.
-  - [iOS 대량 구매 앱](vpp-apps-ios.md)
+  - [iOS/iPadOS 대량 구매 앱](vpp-apps-ios.md)
 - **Windows 엔터프라이즈 인증서**: 관리되는 Windows 디바이스에 기간 업무 앱을 배포하는 데 사용되는 코드 서명 인증서의 상태를 적용하거나 볼 수 있습니다.
 - **Windows Symantec 인증서**: Windows 10 Mobile 디바이스에 XAP 및 WP8.x appx 파일을 배포하는 데 필요한 Symantec 코드 서명 인증서의 상태를 적용하거나 볼 수 있습니다.
 - **비즈니스용 Microsoft Store**: 비즈니스용 Microsoft Store에 대한 통합을 설정합니다. 그런 다음, 구매한 애플리케이션을 Intune에 동기화하고 할당한 후 라이선스 사용 현황을 추적할 수 있습니다. 자세한 내용은 다음을 참조하십시오.

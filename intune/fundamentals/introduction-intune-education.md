@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ccea34694bde8ea80a779b36ef612fcefb1add
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 97177f91edea1205f6e8349ee1a7194d0f5300e5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510203"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514543"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Intune for Education은 Intune의 전체 디바이스 관리 환경과 어떤 차이가 있을까요?
 
@@ -29,7 +29,7 @@ Intune for Education을 사용하면 교사와 학생이 학교의 데이터를 
 
 ![Intune 콘솔과 비교되는 Intune for Education 콘솔](./media/introduction-intune-education/intune-azure-vs-intuneEDU.png)
 
-Intune for Education에서는 Intune에서 제공되는 전체 MDM 기능을 사용하여 Windows 10 및 iOS 디바이스를 관리할 수 있습니다. 전체 디바이스 관리 환경을 통해 Windows, iOS 및 Android 디바이스를 관리할 수 있습니다.  
+Intune for Education에서는 Intune에서 제공되는 전체 MDM 기능을 사용하여 Windows 10 및 iOS/iPadOS 디바이스를 관리할 수 있습니다. 전체 디바이스 관리 환경을 통해 Windows, iOS/iPadOS 및 Android 디바이스를 관리할 수 있습니다.  
 
 Intune for Education은 단독으로 사용되거나 [Intune에서 제공되는 전체 디바이스 관리 환경](what-is-intune.md) 과 함께 사용할 수 있습니다. [Microsoft Education](https://microsoft.com/education) 에서 제공되는 나머지 도구와 함께 사용할 수도 있으므로 Intune for Education을 Microsoft에서 제공하는 다른 유용한 교육 도구와 함께 손쉽게 사용할 수 있습니다.  
 
