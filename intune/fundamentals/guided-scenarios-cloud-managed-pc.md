@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9ddd59715a0730a52738088700a1f2b9166bfa80
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164572"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216209"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>단계별 시나리오 - 클라우드 관리 Modern Desktop
 
@@ -29,7 +29,7 @@ Modern Desktop은 정보 근로자를 위한 최신 생산성 플랫폼입니다
 
 클라우드에서 Modern Desktop을 관리하면 인터넷 전체 원격 작업을 추가로 활용할 수 있습니다. 클라우드 관리는 기본 제공 Windows 모바일 장치 관리 정책을 활용하고 로컬 Active Directory 그룹 정책에 대한 종속성을 제거합니다. 
 
-자체 조직에서 클라우드 관리 Modern Desktop을 평가하려는 경우 이 단계별 시나리오는 기본 배포에 필요한 모든 구성을 미리 정의합니다. 이 단계별 시나리오에서는 Intune 장치 관리 기능을 사용해 볼 수 있는 보안 환경을 만듭니다. 
+자체 조직에서 클라우드 관리 Modern Desktop을 평가하려는 경우 이 단계별 시나리오는 기본 배포에 필요한 모든 구성을 미리 정의합니다. 이 단계별 시나리오에서는 Intune 디바이스 관리 기능을 사용해 볼 수 있는 보안 환경을 만듭니다. 
 
 ## <a name="prerequisites"></a>전제 조건
 - [MDM 기관을 Intune으로 설정](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) - MDM(모바일 장치 관리) 기관 설정에 따라 디바이스를 관리하는 방법이 결정됩니다. IT 관리자가 MDM 기관을 설정해야 사용자가 관리를 위해 디바이스를 등록할 수 있습니다.

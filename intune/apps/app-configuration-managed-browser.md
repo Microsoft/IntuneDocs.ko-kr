@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/27/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 03b89225ee5691aea2653fb3ca19f99139a015aa
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414897"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181820"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune 정책에 따라 보호되는 브라우저를 사용하여 웹 액세스 관리
 

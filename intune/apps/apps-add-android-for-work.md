@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 126ea5a1798252f29e988553edfea462eff2fd7e
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609192"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256461"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune을 사용하여 Android Enterprise 디바이스에 관리되는 Google Play 앱 추가
 
@@ -155,9 +155,6 @@ FAQ를 비롯해 관리되는 Google Play 비공개 앱에 대한 자세한 내�
 관리되는 Google Play 웹 링크는 다른 Android 앱과 마찬가지로 설치 및 관리가 가능합니다. 디바이스에 설치된 경우 사용자가 설치한 다른 앱과 함께 사용자의 앱 목록에 표시됩니다. 웹 링크를 탭하면 디바이스의 브라우저에서 시작됩니다.
 
 웹 링크는 Microsoft Edge 또는 배포하도록 선택한 다른 브라우저 앱에서 열립니다. 웹 링크를 제대로 열려면 하나 이상의 브라우저 앱을 디바이스에 배포해야 합니다. 그러나 웹 링크(전체 화면, 독립 실행형 및 최소 UI)에서 사용할 수 있는 모든 **디스플레이** 옵션은 크롬 브라우저에서만 작동합니다. 
-
-> [!IMPORTANT]
-> 이 문서를 게시할 때 웹 링크가 디바이스에서 크롬 이외의 브라우저로는 열리지 않게 방해하는 알려진 Google 버그가 있습니다. Google은 이 버그를 수정하기로 약속했습니다.  이 알림은 Microsoft가 Google에서 수정을 게시했음을 확인하면 제거됩니다.
 
 1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 2. **앱** > **모든 앱** > **추가**를 선택합니다.

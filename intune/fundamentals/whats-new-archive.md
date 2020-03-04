@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313d9f470e9467cc80bae9c2400d4cc64aacc7ea
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: c0cfe99f022a5e5448bdee453fb0210f6b7195fc
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886769"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181819"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune의 새로운 기능 - 지난 달
 
@@ -407,7 +407,7 @@ Android Enterprise 디바이스에서 회사 프로필의 기능을 구성할 �
 ### <a name="device-enrollment"></a>디바이스 등록
 
 #### <a name="new-tenants-will-default-away-from-android-device-administrator-management---4869790-----"></a>Android 디바이스 관리자 관리에서 새 테넌트가 기본적으로 표시되지 않습니다.<!-- 4869790   -->
-Android의 디바이스 관리자 기능은 Android Enterprise로 대체되었습니다. 따라서 새로운 등록을 위해서는 Android Enterprise를 대신 사용하는 것이 좋습니다. 이후 업데이트에서는 디바이스 관리자 관리를 사용하기 위해 새 테넌트가 Android 등록의 다음 필수 단계를 완료해야 합니다. **Intune** > **디바이스 등록** > **Android 등록** > **디바이스 관리 권한이 있는 개인 및 회사 소유 디바이스** > **디바이스 관리자를 사용하여 디바이스를 관리합니다**로 이동합니다.
+Android의 디바이스 관리자 기능은 Android Enterprise로 대체되었습니다. 따라서 새로운 등록을 위해서는 Android Enterprise를 대신 사용하는 것이 좋습니다. 이후 업데이트에서는 디바이스 관리자 관리를 사용하기 위해서는 새 테넌트가 Android 등록의 다음 필수 단계를 완료해야 합니다. **Intune** > **디바이스 등록** > **Android 등록** > **디바이스 관리 권한이 있는 개인 및 회사 소유 디바이스** > **디바이스 관리자를 사용하여 디바이스를 관리합니다.** 로 이동합니다.
 
 작업 환경의 기존 테넌트는 변경되지 않습니다.
 
@@ -1002,7 +1002,7 @@ IT 관리자가 Android Enterprise 관리를 보다 쉽게 구성하고 사용�
 #### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices---4097904-----"></a>최종 사용자가 개인 핫스폿을 수정하지 못하게 하고 iOS 디바이스에서 Siri 서버 로깅을 사용하지 않음<!-- 4097904   -->  
 iOS 디바이스에서 디바이스 제한 프로필을 만듭니다[**디바이스 구성** > **프로필** > **프로필 만들기** > **iOS**(플랫폼) > **디바이스 제한**(프로필 유형)]. 이 업데이트는 사용자가 구성할 수 있는 다음과 같은 새 설정을 포함합니다.
 
-- **기본 제공 앱**: Siri용 서버 쪽 로깅 명령
+- **기본 제공 앱** Siri용 서버 쪽 로깅 명령
 - **무선**: 개인 핫스폿의 사용자 수정(감독 모드에서만 해당)
 
 이러한 설정을 보려면 [iOS용 기본 제공 앱 설정](../configuration/device-restrictions-ios.md#built-in-apps) 및 [iOS용 무선 설정](../configuration/device-restrictions-ios.md#wireless)로 이동합니다.
@@ -1444,7 +1444,7 @@ Windows 10 디바이스를 키오스크 모드에서 사용하여 하나 또는 
 
 - [키오스크로 실행되는 Windows 10 이상 디바이스 설정](../configuration/kiosk-settings-windows.md)
 - [Microsoft Edge 브라우저 디바이스 제한](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
-- [즐겨찾기 및 검색 디바이스 제한](../configuration/device-restrictions-windows-10.md##favorites-and-search)
+- [즐겨찾기 및 검색 디바이스 제한](../configuration/device-restrictions-windows-10.md#favorites-and-search)
 
 적용 대상: Windows 10 이상
 
@@ -1639,7 +1639,7 @@ iOS 디바이스용 구성 프로필을 만들 경우 **공유 디바이스 구�
 [잠금 화면에 메시지를 표시하기 위한 설정](../configuration/ios-device-features-settings.md#lock-screen-message)에는 설정이 나열됩니다.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>iOS 디바이스에 앱 스토어, 문서 보기, 게임 디바이스 제한 설정이 새로 추가됨<!-- 2827760-->
-**디바이스 구성** > **프로필** > **프로필 만들기** > **iOS** 플랫폼에 대해 > **디바이스 제한** 프로필 유형에 대해 > **앱 스토어, 문서 보기, 게임**에서 다음 설정이 추가되었습니다. 관리형 앱이 관리되지 않는 연락처 계정에 연락처를 쓸 수 있도록 허용. 관리되지 않는 앱이 관리형 연락처 계정에서 연락처를 읽을 수 있도록 허용. 이러한 설정을 보려면 [iOS 디바이스 제한 사항](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming)으로 이동합니다.
+**디바이스 구성** > **프로필** > **프로필 만들기** > **iOS** 플랫폼에 대해 > **디바이스 제한** 프로필 유형에 대해 > **앱 스토어, 문서 보기, 게임**에서 다음 설정이 추가되었습니다. 관리되는 앱이 관리되지 않는 연락처 계정에 연락처를 쓸 수 있도록 허용. 관리되지 않는 앱이 관리되는 연락처 계정에서 연락처를 읽을 수 있도록 허용. 이러한 설정을 보려면 [iOS 디바이스 제한 사항](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming)으로 이동합니다.
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Android Enterprise 디바이스 소유자 디바이스에 대한 새로운 알림, 힌트 및 keyguard 설정<!-- 3201839 3201843 -->
 이 업데이트에는 디바이스 소유자로 실행할 경우 Android 엔터프라이즈 디바이스의 여러 가지 새로운 기능이 포함됩니다. 이러한 기능을 사용하려면 **디바이스 구성** > **프로필** > **프로필 만들기** > **플랫폼**에서 **Android 엔터프라이즈** 선택 > **프로필 유형**에서 **디바이스 소유자만** 선택 > **디바이스 제한 사항**으로 이동합니다.
@@ -2099,7 +2099,7 @@ Intune 앱 보호 정책을 사용하면 Microsoft Outlook 및 Microsoft Word와
 #### <a name="intune-will-support-a-maximum-package-size-of-8-gb-for-lob-apps---1727158---"></a>Intune에서 LOB 앱에 대해 최대 8GB의 패키지 크기 지원<!-- 1727158 -->
 Intune에서 LOB(기간 업무) 앱의 최대 패키지 크기가 8GB로 늘어났습니다. 자세한 내용은 [Microsoft Intune에 앱 추가](../apps/apps-add.md)를 참조하세요.
 
-#### <a name="add-custom-brand-image-for-company-portal-app---1916266---"></a>회사 포털 앱에 대한 사용자 지정 브랜드 이미지 추가<!-- 1916266 -->
+#### <a name="add-custom-brand-image-for-company-portal-app---1916266---"></a>회사 포털 앱용 사용자 지정 브랜드 이미지 추가<!-- 1916266 -->
 Microsoft Intune 관리자는 iOS 회사 포털 앱의 사용자 프로필 페이지에 배경 이미지로 표시될 사용자 지정 브랜드 이미지를 업로드할 수 있습니다. 회사 포털 앱 구성에 대한 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성하는 방법](../apps/company-portal-app.md)을 참조하세요.
 
 #### <a name="intune-will-maintain-the-office-localized-language-when-updating-office-on-end-users-machines---2971030---"></a>최종 사용자 머신에서 Office를 업데이트할 때 Intune에서 지역화된 Office 언어 유지 관리<!-- 2971030 -->

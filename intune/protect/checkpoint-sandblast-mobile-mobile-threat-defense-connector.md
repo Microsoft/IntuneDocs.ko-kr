@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,18 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b740ed1e16f60b15991f1aa450e623cd20b62ea
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 2471a48a1222448a2a45c7813bbb513cefda5276
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515138"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782000"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune과 Check Point SandBlast Mobile Threat Defense 커넥터
 
 Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 Check Point SandBlast Mobile에서 수행한 위험 평가에 따라 조건부 액세스를 사용하여 회사 리소스에 대한 모바일 디바이스 액세스를 제어할 수 있습니다. Check Point SandBlast Mobile 앱을 실행하는 디바이스에서 수집된 원격 분석에 따라 위험이 평가됩니다.
 
 Intune 디바이스 준수 정책을 통해 사용하도록 설정된 Check Point SandBlast Mobile 위험 평가에 따라 조건부 액세스 정책을 구성할 수 있습니다. 이 정책을 사용하여 회사 리소스에 액세스하는 미준수 디바이스를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
+
+> [!NOTE]
+> 이 Mobile Threat Defense 공급업체는 등록되지 않은 디바이스에서 지원되지 않습니다.
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Intune과 Check Point SandBlast Mobile이 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 

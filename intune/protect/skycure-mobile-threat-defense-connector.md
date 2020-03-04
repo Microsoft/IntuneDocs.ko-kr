@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/09/2017
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 60bad9299a3751474ef01220a7c18f16be329448
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515274"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782072"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 커넥터
 
@@ -38,6 +38,9 @@ Microsoft Intune과 통합된 Mobile Threat Defense 솔루션인 SEP Mobile(Syma
 - 취약성 방어
 
 Intune 디바이스 준수 정책을 통해 SEP Mobile 위협 평가를 사용하도록 설정한 다음, 조건부 액세스 정책을 사용하여 회사 리소스에 액세스하는 비규격 디바이스를 감지된 위협에 따라 허용하거나 차단할 수 있습니다.
+
+> [!NOTE]
+> 이 Mobile Threat Defense 공급업체는 등록되지 않은 디바이스에서 지원되지 않습니다.
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune과 SEP Mobile이 회사 리소스를 보호하는 데 어떤 도움이 되나요?
 

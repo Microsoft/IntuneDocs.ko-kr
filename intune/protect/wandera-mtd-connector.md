@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ee253b50ea525f7d156c77a83f486cf990da030
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: f82a64cdb66528e3e1d3a81fd6119c4a99dff504
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517459"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782268"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Intune과 Wandera Mobile Threat Defense 커넥터 사용  
 
@@ -32,6 +32,8 @@ Wandera에서 수행한 위험 평가를 기반으로 조건부 액세스를 사
 
 Intune 디바이스 규정 준수 정책을 통해 사용하도록 설정된 Wandera 위험 평가에 따라 ‘조건부 액세스’ 정책을 구성할 수 있습니다.  위험 평가 정책은 비규격 디바이스가 감지한 위협에 따라 회사 리소스에 액세스하는 것을 허용하거나 차단할 수 있습니다.  
 
+> [!NOTE]
+> 이 Mobile Threat Defense 공급업체는 등록되지 않은 디바이스에서 지원되지 않습니다.
 
 ## <a name="how-do-intune-and-wandera-mobile-threat-defense-help-protect-your-company-resources"></a>Intune과 Wandera Mobile Threat Defense가 회사 리소스를 보호하는 데 어떤 도움이 되나요?  
 

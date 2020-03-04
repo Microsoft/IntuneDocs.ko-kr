@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52c8d10f0b8d06d68d75450c3d708f910bc5ddd4
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7650230e419a639adfe02cd6c01f6170a4eb878b
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415034"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181854"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>관리되는 Android 엔터프라이즈 디바이스용 앱 구성 정책 추가
 
@@ -132,7 +132,7 @@ Android 디바이스 기능에 액세스하기 위한 앱의 권한을 미리 �
 
 예를 들어 앱에서 디바이스의 마이크를 사용합니다. 앱에 마이크 사용 권한을 부여하라는 메시지가 사용자에게 표시됩니다.
 
-1. [Microsoft 엔드포인트 관리자 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **앱** > **앱 구성 정책** >  **추가** > **관리 디바이스**를 선택합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에서 **앱** > **앱 구성 정책** >  **추가** > **관리 디바이스**를 선택합니다.
 2. 다음 속성을 추가합니다.
 
     - **이름**: 정책에 대한 설명이 포함된 이름을 입력합니다. 나중에 쉽게 식별할 수 있도록 정책 이름을 지정합니다. 예를 들어 올바른 정책 이름은 **전체 회사에 대한 Android Enterprise 프롬프트 권한 앱 정책**입니다.

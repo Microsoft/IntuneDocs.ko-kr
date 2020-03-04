@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea0a60537bb488d3280990747d3e337e73fddc0
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 955d9931779752e8736435555db7f7aba777b430
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754561"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652405"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune에서 Android를 실행하는 디바이스의 Wi-Fi 설정 추가
 
@@ -57,19 +57,6 @@ Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정이라는 두 
 
     - **ID 개인 정보 사용(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
-    - **프록시 설정**: 조직에서 사용하는 프록시 구성을 지정합니다. 옵션은 다음과 같습니다.
-
-      - **없음** - 프록시 서버를 사용하지 않습니다.
-      - **자동** - *프록시 서버 URL* 설정을 사용할 수 있게 하려면 이 옵션을 선택합니다. 이 설정은 프록시 서버 또는 프록시 서버 목록이 포함된 PAC(프록시 자동 구성) 파일을 지정하는 데 사용합니다.
-
-    - **프록시 서버 URL**: *프록시 설정*을 *자동*으로 설정하면 이 설정을 사용할 수 있습니다. 다음 옵션 중 하나를 지정하여 디바이스를 프록시 서버로 전달합니다.
-
-      - IP 주소. 예, `10.0.0.11`
-      - URL. 예: `http://proxyserver.contoso.com`
-      - PAC(프록시 자동 구성) 파일의 URL. 예: `http://proxy.contoso.com/proxy.pac`.
-
-      PAC 파일에 대한 자세한 내용은 [PAC(프록시 자동 구성) 파일](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)(타사 사이트 열기)을 참조하세요.
-
   - **EAP-TTLS**: 또한 다음을 입력합니다.
 
     - **서버 신뢰** - **서버 유효성 검사에 대한 루트 인증서**: 기존의 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서는 클라이언트가 네트워크에 연결될 때 서버에 제공되며 연결을 인증합니다.
@@ -88,19 +75,6 @@ Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정이라는 두 
 
       - **ID 개인 정보 사용(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
 
-    - **프록시 설정**: 조직에서 사용하는 프록시 구성을 지정합니다. 옵션은 다음과 같습니다.
-
-      - **없음** - 프록시 서버를 사용하지 않습니다.
-      - **자동** - *프록시 서버 URL* 설정을 사용할 수 있게 하려면 이 옵션을 선택합니다. 이 설정은 프록시 서버 또는 프록시 서버 목록이 포함된 PAC(프록시 자동 구성) 파일을 지정하는 데 사용합니다.
-
-    - **프록시 서버 URL**: *프록시 설정*을 *자동*으로 설정하면 이 설정을 사용할 수 있습니다. 다음 옵션 중 하나를 지정하여 디바이스를 프록시 서버로 전달합니다.
-
-      - IP 주소. 예, `10.0.0.11`
-      - URL. 예: `http://proxyserver.contoso.com`
-      - PAC(프록시 자동 구성) 파일의 URL. 예: `http://proxy.contoso.com/proxy.pac`.
-
-      PAC 파일에 대한 자세한 내용은 [PAC(프록시 자동 구성) 파일](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)(타사 사이트 열기)을 참조하세요.
-
   - **PEAP**: 또한 다음을 입력합니다.
 
     - **서버 신뢰** - **서버 유효성 검사에 대한 루트 인증서**: 기존의 신뢰할 수 있는 루트 인증서 프로필을 선택합니다. 이 인증서는 클라이언트가 네트워크에 연결될 때 서버에 제공되며 연결을 인증합니다.
@@ -116,19 +90,6 @@ Wi-Fi 설정은 기본 설정 및 엔터프라이즈 수준 설정이라는 두 
       - **인증서**: 디바이스에도 배포되는 SCEP 또는 PKCS 클라이언트 인증서 프로필을 선택합니다. 이 인증서는 연결을 인증하기 위해 디바이스가 서버에 제공하는 ID입니다.
 
       - **ID 개인 정보 사용(외부 ID)** : EAP ID 요청에 대한 응답으로 전송되는 텍스트를 입력합니다. 이 텍스트에는 `anonymous`와 같은 값을 사용할 수 있습니다. 인증하는 동안 이 익명 ID가 먼저 전송된 다음 실제 ID가 보안 채널을 통해 전송됩니다.
-
-      - **프록시 설정**: 조직에서 사용하는 프록시 구성을 지정합니다. 옵션은 다음과 같습니다.
-
-        - **없음** - 프록시 서버를 사용하지 않습니다.
-        - **자동** - *프록시 서버 URL* 설정을 사용할 수 있게 하려면 이 옵션을 선택합니다. 이 설정은 프록시 서버 또는 프록시 서버 목록이 포함된 PAC(프록시 자동 구성) 파일을 지정하는 데 사용합니다.
-
-      - **프록시 서버 URL**: *프록시 설정*을 *자동*으로 설정하면 이 설정을 사용할 수 있습니다. 다음 옵션 중 하나를 지정하여 디바이스를 프록시 서버로 전달합니다.
-
-        - IP 주소. 예, `10.0.0.11`
-        - URL. 예: `http://proxyserver.contoso.com`
-        - PAC(프록시 자동 구성) 파일의 URL. 예: `http://proxy.contoso.com/proxy.pac`.
-
-        PAC 파일에 대한 자세한 내용은 [PAC(프록시 자동 구성) 파일](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)(타사 사이트 열기)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

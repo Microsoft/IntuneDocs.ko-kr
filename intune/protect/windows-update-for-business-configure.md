@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886808"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181724"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune에서 Windows 10 소프트웨어 업데이트 관리
 
@@ -77,14 +77,14 @@ Windows 10 업데이트 링은 [범위 태그](../fundamentals/scope-tags.md)를
 
 ### <a name="create-and-assign-update-rings"></a>업데이트 링 만들기 및 할당
 
-1. [Microsoft Endpoint Manager 관리 센터]( https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
+1. [Microsoft Endpoint Manager 관리 센터](https://go.microsoft.com/fwlink/?linkid=2109431)에 로그인합니다.
 
 2. **디바이스** > **Windows** > **Windows 10 업데이트 링** > **만들기**를 선택합니다.
 
 3. *기본 사항* 탭에서 이름, 설명(선택 사항)을 지정한 후 **다음**을 선택합니다.
-  ![업데이트 링 만들기]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. **업데이트 링 설정**에서 비즈니스 필요에 맞게 설정을 구성합니다. 사용할 수 있는 설정에 대한 자세한 내용은 Windows 업데이트 설정을 참조하세요. *업데이트 및 사용자 환경* 설정을 구성한 후 **다음**을 선택합니다.
+  ![업데이트 링 만들기](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. **업데이트 링 설정**에서 비즈니스 필요에 맞게 설정을 구성합니다. 사용할 수 있는 설정에 대한 자세한 내용은 [Windows 업데이트 설정](../protect/windows-update-settings.md)을 참조하세요. *업데이트 및 사용자 환경* 설정을 구성한 후 **다음**을 선택합니다.
 
 5. 업데이트 링에 범위 태그를 적용하려면 **범위 태그** 아래에서 **+ 범위 태그 선택**을 선택하여 *태그 선택* 창을 엽니다. 태그를 하나 이상 선택한 후 **선택**을 클릭하여 업데이트 링에 추가하고 *범위 태그* 페이지로 돌아갑니다.
 

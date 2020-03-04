@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/17/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9127ee06bc2125f476c18e9b8e46a127e48d0245
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: e3efa4a354a71846a5add46794ed853696d04560
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513404"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216087"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune을 사용하여 Apple Volume Purchase Program을 통해 구매한 iOS 및 macOS 앱을 관리하는 방법
 
@@ -88,7 +88,7 @@ Apple Business Manager나 Apple School Manager에서 구매된 기존 VPP 콘텐
 2. 진행 전에 조직 내의 모든 VPP 구매자가 1단계를 완료했는지 확인합니다.
 3. Apple Business Manager나 Apple School Manager에서 구매된 모든 앱과 라이선스가 앱과 책으로 마이그레이션되었는지 확인합니다.
 4. **Apple Business(또는 School) Manager** > **설정** > **앱 및 책** > **내 서버 토큰** 순서로 이동해 새 위치 토큰을 다운로드합니다.
-5. Microsoft 엔드포인트 관리자 관리 센터에서 **테넌트 관리** > **커넥터 및 토큰** > **Apple VPP 토큰** 순서로 이동해 토큰을 동기화해서 위치 토큰을 업데이트합니다.
+5. Microsoft Endpoint Manager 관리 센터에서 **테넌트 관리** > **커넥터 및 토큰** > **Apple VPP 토큰** 순서로 이동해 토큰을 동기화해서 위치 토큰을 업데이트합니다.
 
 ## <a name="upload-an-apple-vpp-or-location-token"></a>Apple VPP 또는 위치 토큰 업로드
 
