@@ -161,6 +161,8 @@
             - name: 앱 보호 정책 개요
               href: app-protection-policy.md
               displayName: app; protection; policy
+            - name: 앱을 사용하는 데이터 보호 프레임워크
+              href: app-protection-framework.md
             - name: 앱 보호 정책 만들기
               items:
                 - name: 일반 설정
